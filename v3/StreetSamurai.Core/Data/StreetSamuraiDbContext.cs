@@ -98,6 +98,9 @@ public class StreetSamuraiDbContext : DbContext
     public DbSet<CharacterTimelineBodyChange>     CharacterTimelineBodyChanges  => Set<CharacterTimelineBodyChange>();
     public DbSet<CharacterHomeTurf>               CharacterHomeTurfs            => Set<CharacterHomeTurf>();
     public DbSet<CharacterAffiliation>            CharacterAffiliations         => Set<CharacterAffiliation>();
+    // Derived read-model projection (CQRS-lite). NOT system-versioned — see
+    // CharacterReadModel + SystemVersionedTables note.
+    public DbSet<CharacterReadModel>              CharacterReadModels           => Set<CharacterReadModel>();
 
     // Other subtype tables
     public DbSet<Place>          Places          => Set<Place>();
@@ -578,6 +581,16 @@ public class StreetSamuraiDbContext : DbContext
             // Belongings indexes retired 2026-05-08 with the flat columns.
             // Equivalent lookups now go through CharacterBelongingsGear with
             // (CharacterId, Bucket) — already indexed by the bridge's PK.
+        });
+
+        // Derived read-model projection. PK = CharacterId (no FK / cascade: it's
+        // decoupled from the canonical row on purpose — orphans are harmless and
+        // pruned by `ss --rebuild-readmodel`). Intentionally NOT system-versioned.
+        b.Entity<CharacterReadModel>(e =>
+        {
+            e.HasKey(x => x.CharacterId);
+            // No HasMaxLength → nvarchar(max) on SQL Server; TEXT on SQLite tests.
+            e.HasIndex(x => x.Version);
         });
 
         // Per-character bridge tables — every list/dict/heterogeneous bag.

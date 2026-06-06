@@ -51,7 +51,10 @@ public class CharacterRepository : EfRepository<CharacterData>
             if (mappedCache != null) return mappedCache;
         }
         using var db = dbFactory.CreateDbContext();
-        var loaded = CharacterMapper.LoadAll(db, includeArchived: false);
+        // Read off the materialized projection (single column read + cheap
+        // tag/location overlay) instead of the 25-Include fan-out. Missing or
+        // stale-version rows self-heal via backfill inside this call.
+        var loaded = CharacterMapper.LoadAllFromReadModel(db, includeArchived: false);
         lock (mappedCacheLock) mappedCache = loaded;
         return loaded;
     }
@@ -92,7 +95,7 @@ public class CharacterRepository : EfRepository<CharacterData>
             else return null;
         }
         using var db = dbFactory.CreateDbContext();
-        return CharacterMapper.LoadOne(db, guid);
+        return CharacterMapper.LoadOneFromReadModel(db, guid);
     }
 
     public override List<CharacterData> GetAllIncludingArchived()
@@ -155,6 +158,11 @@ public class CharacterRepository : EfRepository<CharacterData>
         SyncTagsForEntity(db, id, item.Tags);
 
         db.SaveChanges();
+
+        // Enforced single-writer sync: regenerate this character's materialized
+        // read-model from the just-persisted relational record so GetAll/GetById
+        // (which read off the projection) never serve stale data after an edit.
+        CharacterMapper.RefreshReadModelAsync(db, id).GetAwaiter().GetResult();
 
         InvalidateCacheExternal();
         InvalidateMappedCache();

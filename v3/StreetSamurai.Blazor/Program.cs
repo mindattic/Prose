@@ -536,6 +536,20 @@ if (args.Contains("--coverage"))
     return;
 }
 
+// CLI mode: (re)build the materialized character read-model projection from the
+// relational source of truth. Run after a bulk import / relational migration,
+// or whenever ReadModelVersion is bumped. Backfills missing/stale rows, prunes
+// orphans. The steady-state path self-heals, so this is a one-time / maintenance op.
+//   ss --rebuild-readmodel [--archived]
+if (args.Contains("--rebuild-readmodel"))
+{
+    var cliBuilder = WebApplication.CreateBuilder(args);
+    cliBuilder.Services.AddStreetSamuraiServices();
+    var cliApp = cliBuilder.Build();
+    Environment.ExitCode = await RebuildReadModelCli.RunAsync(args, cliApp.Services);
+    return;
+}
+
 // CLI mode: sweep a strand's prose against canon (all entity types) and queue
 // contradictions as approval-gated findings — the self-correction pass.
 //   ss --check-canon (--slug <s> | --id <guid> | --all)

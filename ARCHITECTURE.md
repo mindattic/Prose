@@ -119,11 +119,13 @@ Everything legacy (chapters/episodes/books) was migrated into this so the true b
 
 **Canon** — a `Strand.IsCanon` flag set **only manually, by the author**, meaning: *"I feel this story is strong enough to be used to draw conclusions about the characters and events."* It is the trust gate. Only canon strands should be treated as authoritative for **learning character truth (voice-harvest), inferring continuity/world facts, and deciding what a character is capable of**; non-canon strands are hit-or-miss drafts the engine may read but must not treat as established truth. (So: voice-harvest, continuity extraction, and canon-grounded decisions should weight/filter to canon strands.)
 
-## 2b. Read performance (decided: materialized read-model, never files)
+## 2b. Read performance (✅ shipped: materialized read-model, never files)
 
-A full `Character` spans ~25 relational bridge tables; the deep `.Include()` load is **50–80 s** for 1,240 characters. **Decision (Legion quorum 0.75; files rejected):** never reintroduce on-disk entity JSON. Instead:
-- **Relational tables remain the source of truth.** A **materialized read-model JSON column** is regenerated from them *inside the save transaction* — joins happen once, on write. Reads become a single-row, single-column fetch + in-memory cache (file-speed, RAM-served, no filesystem). Rebuildable from canon via a command, so it can never drift (a derived index, per §2a).
-- **Immediate win, no new infra:** route all list/grid/retrieval reads through the existing `CharacterRepository.GetAllLite()` (~1 s) + the fast single-character fetch; deep-load one character only on demand.
+A full `Character` spans ~25 relational bridge tables; the deep `.Include()` load is **50–80 s** for 1,240 characters. **Decision (Legion quorum 0.75; files rejected):** never reintroduce on-disk entity JSON. Implemented:
+- **Relational tables remain the source of truth.** The materialized read-model is the **`CharacterReadModels` table** (`CharacterId` PK, `Json`, `Version`, `RefreshedAt`) — a separate, **non-system-versioned** projection (`CharacterReadModel.cs`; absent from `SystemVersionedTables` so regeneration never pollutes the canonical `Characters` temporal history). It caches the `CharacterMapper.Materialize` output as one blob; full reads become a single column read.
+- **Enforced single-writer sync (can't drift):** every `CharacterRepository.Save` calls `CharacterMapper.RefreshReadModelAsync` after its commit, regenerating the blob from the just-persisted relational record. The two fields sourced from *other* write paths — `Location` (EntityStateEvents) and `Tags` (EntityTags) — are blanked in the blob and **overlaid live on read**, so the projection can never go stale on dynamic state. `ReadModelVersion` bumps invalidate the whole store.
+- **Self-healing + rebuildable:** `GetAll`/`GetById` read off the projection (`LoadAllFromReadModel`/`LoadOneFromReadModel`); missing or stale-version rows are backfilled relationally on read and persisted. `ss --rebuild-readmodel` rebuilds all (the one-time slow path) and prunes orphans — run after a bulk import or a version bump. Migration: `create_character_readmodel_20260606.sql`.
+- **List views** keep using `CharacterRepository.GetAllLite()` (~1 s, lightweight projection); the read-model serves the *full*-record bulk/deep reads that previously took 50–80 s.
 
 ## 3. Status legend
 `✅ done` · `🟡 partial (core shipped, residual noted)` · `⬜ future`
