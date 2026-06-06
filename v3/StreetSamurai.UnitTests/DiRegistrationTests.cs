@@ -75,7 +75,6 @@ public class DiRegistrationTests
     [TestCase(typeof(ConsumerGoodRepository))]
     [TestCase(typeof(PharmaceuticalRepository))]
     [TestCase(typeof(MaterialRepository))]
-    [TestCase(typeof(SyntheticLifeRepository))]
     [TestCase(typeof(GenemodRepository))]
     [TestCase(typeof(TransportationRepository))]
     [TestCase(typeof(QuoteRepository))]

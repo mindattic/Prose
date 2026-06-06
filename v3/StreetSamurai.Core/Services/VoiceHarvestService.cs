@@ -109,6 +109,28 @@ public class VoiceHarvestService
         return results;
     }
 
+    /// <summary>Harvest every strand the author has marked Canon — the gold
+    /// standard for what the voice SHOULD be (ARCHITECTURE.md §2c). Canon is the
+    /// trust gate, so these are harvested unconditionally (force), and cross-strand
+    /// commonality across the canon set surfaces the strongest, most-trusted rules.</summary>
+    public async Task<List<HarvestResult>> HarvestCanonAsync(CancellationToken ct = default)
+    {
+        await using var db = await dbFactory.CreateDbContextAsync(ct);
+        var ids = await db.Strands.AsNoTracking()
+            .Where(s => s.IsCanon)
+            .OrderByDescending(s => s.CanonAt)
+            .Select(s => s.Id)
+            .ToListAsync(ct);
+
+        var results = new List<HarvestResult>();
+        foreach (var id in ids)
+        {
+            ct.ThrowIfCancellationRequested();
+            results.Add(await HarvestStrandAsync(id, force: true, peerCount: ids.Count - 1, ct));
+        }
+        return results;
+    }
+
     /// <summary>Mine one strand and write proposed voice rules. Throws if the
     /// strand is below 80% unless <paramref name="force"/> is set.</summary>
     public async Task<HarvestResult> HarvestStrandAsync(Guid strandId, bool force = false, int peerCount = 0, CancellationToken ct = default)

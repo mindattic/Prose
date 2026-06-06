@@ -44,6 +44,15 @@ public class Strand
     /// <summary>When <see cref="Score"/> was last computed (the run it reflects).</summary>
     public DateTime? ScoredAt { get; set; }
 
+    /// <summary>Author-only canon flag. Set true ONLY by hand once this strand's
+    /// voice and the characters' actions are true to what those characters are
+    /// capable of — the gold standard. The rest are hit-or-miss. The voice-harvest
+    /// prefers canon strands as the source of truth for the voice.</summary>
+    public bool IsCanon { get; set; }
+
+    /// <summary>When the author marked this strand canon (null = never).</summary>
+    public DateTime? CanonAt { get; set; }
+
     /// <summary>Optional parent strand. A book strand has chapter-strand
     /// children; a saga strand has book-strand children; a standalone
     /// vignette has none. Walking the tree in SortKey order gives the

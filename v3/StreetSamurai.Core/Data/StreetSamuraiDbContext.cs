@@ -57,6 +57,8 @@ public class StreetSamuraiDbContext : DbContext
     public DbSet<StrandReviewSummary>   StrandReviewSummaries  => Set<StrandReviewSummary>();
     // Append-only audit trail of voice-rule changes (directive / manual_edit / harvest).
     public DbSet<VoiceChangeLogEntry>   VoiceChangeLog         => Set<VoiceChangeLogEntry>();
+    // First-class species taxonomy for sentient life (human/ai/elf/synthetic/unknown).
+    public DbSet<Species>               Species                => Set<Species>();
     // Named, reusable persona panels (focus groups) + their membership.
     public DbSet<FocusGroup>            FocusGroups            => Set<FocusGroup>();
     public DbSet<FocusGroupMember>      FocusGroupMembers      => Set<FocusGroupMember>();
@@ -119,9 +121,6 @@ public class StreetSamuraiDbContext : DbContext
     public DbSet<FactionMemberRow>        FactionMembers        => Set<FactionMemberRow>();
     public DbSet<CorponationCommonName>   CorponationCommonNames => Set<CorponationCommonName>();
     public DbSet<SubsidiaryProduct>       SubsidiaryProducts     => Set<SubsidiaryProduct>();
-    public DbSet<SyntheticLifeAlias>      SyntheticLifeAliases   => Set<SyntheticLifeAlias>();
-    public DbSet<SyntheticLifeStoryHook>  SyntheticLifeStoryHooks => Set<SyntheticLifeStoryHook>();
-    public DbSet<SyntheticLifeKnownAssociation> SyntheticLifeKnownAssociations => Set<SyntheticLifeKnownAssociation>();
     public DbSet<AutomatonAlias>          AutomatonAliases       => Set<AutomatonAlias>();
     public DbSet<AutomatonArmament>       AutomatonArmament      => Set<AutomatonArmament>();
     public DbSet<AutomatonSensor>         AutomatonSensors       => Set<AutomatonSensor>();
@@ -200,7 +199,6 @@ public class StreetSamuraiDbContext : DbContext
     public DbSet<ChapterCharacter>         ChapterCharacters       => Set<ChapterCharacter>();
     public DbSet<Corponation>    Corponations    => Set<Corponation>();
     public DbSet<Subsidiary>     Subsidiaries    => Set<Subsidiary>();
-    public DbSet<SyntheticLife>  SyntheticLives  => Set<SyntheticLife>();
     public DbSet<Automaton>      Automata        => Set<Automaton>();
     public DbSet<Weapon>         Weapons         => Set<Weapon>();
     public DbSet<Equipment>      EquipmentItems  => Set<Equipment>();
@@ -385,6 +383,13 @@ public class StreetSamuraiDbContext : DbContext
             e.HasIndex(x => new { x.Status, x.CreatedAt });
             e.HasIndex(x => x.StrandId);
             // No FK to Strands: entries outlive the strands they were learned from.
+        });
+        b.Entity<Species>(e =>
+        {
+            e.HasKey(x => x.Id);
+            e.Property(x => x.Name).HasMaxLength(40).IsRequired();
+            e.Property(x => x.Label).HasMaxLength(80);
+            e.HasIndex(x => x.Name).IsUnique();
         });
         b.Entity<FocusGroup>(e =>
         {
@@ -952,50 +957,6 @@ public class StreetSamuraiDbContext : DbContext
                 .HasForeignKey(x => x.ProductEntityId).OnDelete(DeleteBehavior.Restrict);
             e.HasIndex(x => new { x.SubsidiaryId, x.Position });
             e.HasIndex(x => x.ProductEntityId);
-            e.HasIndex(x => x.Alias);
-        });
-
-        // SyntheticLife — fully relational. Includes Ceramic Man optional fields.
-        b.Entity<SyntheticLife>(e =>
-        {
-            e.HasKey(x => x.Id);
-            e.Property(x => x.KindOfBeing).HasMaxLength(40);
-            e.Property(x => x.Manufacturer).HasMaxLength(450);
-            e.Property(x => x.Name).HasMaxLength(450);
-            e.Property(x => x.Classification).HasMaxLength(120);
-            e.HasOne(x => x.Entity).WithOne()
-                .HasForeignKey<SyntheticLife>(x => x.Id).OnDelete(DeleteBehavior.Cascade);
-            e.HasIndex(x => x.KindOfBeing);
-            e.HasIndex(x => x.Manufacturer);
-            e.HasIndex(x => x.Classification);
-            e.HasIndex(x => x.Name);
-        });
-        b.Entity<SyntheticLifeAlias>(e =>
-        {
-            e.HasKey(x => x.Id);
-            e.Property(x => x.Value).HasMaxLength(450);
-            e.HasOne(x => x.SyntheticLife).WithMany(x => x.Aliases)
-                .HasForeignKey(x => x.SyntheticLifeId).OnDelete(DeleteBehavior.Cascade);
-            e.HasIndex(x => new { x.SyntheticLifeId, x.Position });
-            e.HasIndex(x => x.Value);
-        });
-        b.Entity<SyntheticLifeStoryHook>(e =>
-        {
-            e.HasKey(x => x.Id);
-            e.HasOne(x => x.SyntheticLife).WithMany(x => x.StoryHooks)
-                .HasForeignKey(x => x.SyntheticLifeId).OnDelete(DeleteBehavior.Cascade);
-            e.HasIndex(x => new { x.SyntheticLifeId, x.Position });
-        });
-        b.Entity<SyntheticLifeKnownAssociation>(e =>
-        {
-            e.HasKey(x => x.Id);
-            e.Property(x => x.Alias).HasMaxLength(450);
-            e.HasOne(x => x.SyntheticLife).WithMany(x => x.KnownAssociations)
-                .HasForeignKey(x => x.SyntheticLifeId).OnDelete(DeleteBehavior.Cascade);
-            e.HasOne(x => x.Associate).WithMany()
-                .HasForeignKey(x => x.AssociateEntityId).OnDelete(DeleteBehavior.Restrict);
-            e.HasIndex(x => new { x.SyntheticLifeId, x.Position });
-            e.HasIndex(x => x.AssociateEntityId);
             e.HasIndex(x => x.Alias);
         });
 
@@ -1804,7 +1765,6 @@ public class StreetSamuraiDbContext : DbContext
         // Corponation / Subsidiary / SyntheticLife / Automaton relational schemas.
         "Corponations", "CorponationCommonNames",
         "Subsidiaries", "SubsidiaryProducts",
-        "SyntheticLives", "SyntheticLifeAliases", "SyntheticLifeStoryHooks", "SyntheticLifeKnownAssociations",
         "Automata", "AutomatonAliases", "AutomatonArmament", "AutomatonSensors",
         "AutomatonDeployments", "AutomatonStoryHooks",
         // Gear cluster.

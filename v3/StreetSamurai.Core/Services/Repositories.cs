@@ -328,13 +328,6 @@ public class VocabularyRepository : EfRepository<VocabularyData>
         : base(TestDbFactory.For(paths, "vocabulary"), "vocabulary", v => v.Term) { }
 }
 
-public class SyntheticLifeRepository : EfRepository<SyntheticLifeData>
-{
-    public SyntheticLifeRepository(IDbContextFactory<StreetSamuraiDbContext> db)
-        : base(db, "synthetic", s => s.Name) { }
-    public SyntheticLifeRepository(IPathProvider paths)
-        : base(TestDbFactory.For(paths, "synthetic"), "synthetic", s => s.Name) { }
-}
 
 public class GenemodRepository : EfRepository<GenemodData>
 {
@@ -498,4 +491,44 @@ public class PsionicRepository : EfRepository<PsionicData>
         : base(db, "psionic", p => p.Name) { }
     public PsionicRepository(IPathProvider paths)
         : base(TestDbFactory.For(paths, "psionic"), "psionic", p => p.Name) { }
+}
+
+/// <summary>Read access to the first-class <see cref="Species"/> taxonomy (the
+/// controlled vocabulary Character.Species references). A small lookup table, not
+/// a canon entity — kept off the Records/embedding/graph machinery on purpose
+/// (separation of responsibilities, §2a). Cached after first read.</summary>
+public class SpeciesRepository
+{
+    private readonly IDbContextFactory<StreetSamuraiDbContext> dbFactory;
+    private List<Species>? cache;
+    private readonly object gate = new();
+
+    public SpeciesRepository(IDbContextFactory<StreetSamuraiDbContext> dbFactory) => this.dbFactory = dbFactory;
+
+    public List<Species> GetAll()
+    {
+        lock (gate)
+        {
+            if (cache != null) return cache;
+            using var db = dbFactory.CreateDbContext();
+            // Tolerate a not-yet-migrated DB (table absent) by returning the
+            // in-code canonical set rather than throwing.
+            try { cache = db.Species.AsNoTracking().OrderBy(s => s.Name).ToList(); }
+            catch { cache = Species.Canonical.ToList(); }
+            if (cache.Count == 0) cache = Species.Canonical.ToList();
+            return cache;
+        }
+    }
+
+    public Species? GetByName(string? name)
+    {
+        if (string.IsNullOrWhiteSpace(name)) return null;
+        var n = name.Trim().ToLowerInvariant();
+        return GetAll().FirstOrDefault(s => string.Equals(s.Name, n, StringComparison.OrdinalIgnoreCase));
+    }
+
+    /// <summary>The five valid species names — the allowed Character.Species values.</summary>
+    public IReadOnlyCollection<string> ValidNames() => GetAll().Select(s => s.Name).ToList();
+
+    public void Reload() { lock (gate) cache = null; }
 }

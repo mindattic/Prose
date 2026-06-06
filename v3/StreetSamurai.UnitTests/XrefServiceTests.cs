@@ -12,7 +12,6 @@ public class XrefServiceTests
     private string tempDir = "";
     private XrefService svc = null!;
     private CharacterRepository chars = null!;
-    private SyntheticLifeRepository synths = null!;
     private DistrictRepository districts = null!;
     private FactionRepository factions = null!;
     private CorponationRepository corps = null!;
@@ -41,7 +40,7 @@ public class XrefServiceTests
         tempDir = Path.Combine(Path.GetTempPath(), $"ss_xref_{Guid.NewGuid():N}");
         var engDir = Path.Combine(tempDir, "engine_data");
         foreach (var sub in new[] {
-            "people", "synthetics", "places", "factions", "corponations", "technology", "vocabulary",
+            "people", "places", "factions", "corponations", "technology", "vocabulary",
             "weaponry", "ammunition", "equipment", "cyberware", "genemods", "transportation", "automata",
             "subsidiaries", "entertainment", "apparel", "materials", "pharmaceuticals", "consumer_goods",
             "contracts", "lab_specimens", "psionics"
@@ -49,7 +48,7 @@ public class XrefServiceTests
             Directory.CreateDirectory(Path.Combine(engDir, sub));
 
         var paths = new TestPathProviderWithRoot(tempDir);
-        chars = new(paths); synths = new(paths); districts = new(paths);
+        chars = new(paths); districts = new(paths);
         factions = new(paths); corps = new(paths); technology = new(paths);
         vocabulary = new(paths); weaponry = new(paths); ammunition = new(paths);
         equipment = new(paths); cyberware = new(paths); genemods = new(paths);
@@ -61,7 +60,7 @@ public class XrefServiceTests
         var settings = new SettingsService(tempDir);
         settings.EnablePlainTextNer = true;
         svc = new XrefService(
-            chars, synths, districts, factions, corps, technology, vocabulary,
+            chars, districts, factions, corps, technology, vocabulary,
             weaponry, ammunition, equipment, cyberware, genemods, transportation,
             automata, subsidiaries, entertainment, apparel, materials,
             pharmaceuticals, consumerGoods, contracts, labSpecimens, psionics,
@@ -349,16 +348,6 @@ public class XrefServiceTests
         Assert.That(after, Is.Not.Null);
     }
 
-    [Test]
-    public void Index_Rebuild_SynthsIndexed()
-    {
-        synths.Save(new SyntheticLifeData { Name = "Unit Seven", Classification = "Security" });
-
-        var result = svc.Resolve("Unit Seven");
-
-        Assert.That(result, Is.Not.Null);
-        Assert.That(result!.Type, Is.EqualTo("synthetic"));
-    }
 
     // ── VocabularyData uses Term ─────────────────────────────────────────────
 

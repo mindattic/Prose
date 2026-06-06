@@ -59,10 +59,11 @@ public static class HarvestVoiceCli
         }
 
         // ── harvest ──
-        if (all80)
+        if (all80 || args.Contains("--canon"))
         {
-            var results = await harvest.HarvestAllAboveAsync();
-            if (results.Count == 0) { Console.WriteLine("[harvest-voice] No strands scored ≥80%."); return 0; }
+            var canonOnly = args.Contains("--canon");
+            var results = canonOnly ? await harvest.HarvestCanonAsync() : await harvest.HarvestAllAboveAsync();
+            if (results.Count == 0) { Console.WriteLine(canonOnly ? "[harvest-voice] No strands marked canon yet." : "[harvest-voice] No strands scored ≥80%."); return 0; }
             foreach (var r in results)
                 Console.WriteLine($"[harvest-voice] {r.Slug} ({r.Score:0.#}%): {r.EditCount} edits + {r.DirectiveCount} directives → {r.Proposals.Count} proposals.");
             Console.WriteLine();

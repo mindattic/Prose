@@ -120,6 +120,7 @@ public static class ServiceCollectionExtensions
         services.AddSingleton(sp => new CorponationRepository(Db(sp)));
         services.AddSingleton(sp => new DistrictRepository(Db(sp)));
         services.AddSingleton(sp => new FactionRepository(Db(sp)));
+        services.AddSingleton(sp => new SpeciesRepository(Db(sp)));
         services.AddSingleton(sp => new WorldbuildingDocRepository(Db(sp)));
         services.AddSingleton(sp => new WeaponryRepository(Db(sp)));
         services.AddSingleton(sp => new AmmunitionRepository(Db(sp)));
@@ -127,7 +128,6 @@ public static class ServiceCollectionExtensions
         services.AddSingleton(sp => new TechnologyRepository(Db(sp)));
         services.AddSingleton(sp => new CyberwareRepository(Db(sp)));
         services.AddSingleton(sp => new VocabularyRepository(Db(sp)));
-        services.AddSingleton(sp => new SyntheticLifeRepository(Db(sp)));
         services.AddSingleton(sp => new GenemodRepository(Db(sp)));
         services.AddSingleton(sp => new TransportationRepository(Db(sp)));
         services.AddSingleton(sp => new QuoteRepository(Db(sp)));
@@ -165,7 +165,6 @@ public static class ServiceCollectionExtensions
         services.AddSingleton<IExportableRepository>(sp => sp.GetRequiredService<TechnologyRepository>());
         services.AddSingleton<IExportableRepository>(sp => sp.GetRequiredService<CyberwareRepository>());
         services.AddSingleton<IExportableRepository>(sp => sp.GetRequiredService<VocabularyRepository>());
-        services.AddSingleton<IExportableRepository>(sp => sp.GetRequiredService<SyntheticLifeRepository>());
         services.AddSingleton<IExportableRepository>(sp => sp.GetRequiredService<GenemodRepository>());
         services.AddSingleton<IExportableRepository>(sp => sp.GetRequiredService<TransportationRepository>());
         services.AddSingleton<IExportableRepository>(sp => sp.GetRequiredService<QuoteRepository>());
@@ -339,9 +338,7 @@ public static class ServiceCollectionExtensions
         services.AddSingleton<AmbientAnomalyService>();
         services.AddSingleton<NarrativeSummaryService>();
         services.AddSingleton<ExportService>();
-        // services.AddSingleton<FtpPublishService>(); // disabled — deploying via Azure CI/CD
         services.AddSingleton<HtmlExportService>();
-        services.AddSingleton<StoryService>();
         services.AddSingleton<IChapterRepository>(sp => new ChapterRepository(
             sp.GetRequiredService<IDbContextFactory<StreetSamuraiDbContext>>(),
             sp.GetRequiredService<Microsoft.Extensions.Logging.ILogger<ChapterRepository>>()));
@@ -371,7 +368,6 @@ public static class ServiceCollectionExtensions
         services.AddSingleton<BeatFactExtractionService>();
         services.AddSingleton<StoryRepairService>();
         services.AddSingleton<WikiLinkService>();
-        services.AddScoped<ConversationalWriterService>();
         services.AddSingleton<IBookReviewService, BookReviewService>();
         services.AddSingleton<BookExportService>();
 

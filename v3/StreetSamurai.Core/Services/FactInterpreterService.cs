@@ -400,7 +400,6 @@ public class FactInterpreterService
             case "faction":        db.Factions       .Add(new Faction       { Id = id, Name = name }); break;
             case "corponation":    db.Corponations   .Add(new Corponation   { Id = id, Name = name }); break;
             case "subsidiary":     db.Subsidiaries   .Add(new Subsidiary    { Id = id, Name = name }); break;
-            case "synthetic":      db.SyntheticLives .Add(new SyntheticLife { Id = id, Name = name }); break;
             case "automaton":      db.Automata       .Add(new Automaton     { Id = id, Name = name }); break;
             case "weapon":         db.Weapons        .Add(new Weapon        { Id = id, Name = name }); break;
             case "equipment":      db.EquipmentItems .Add(new Equipment     { Id = id, Name = name }); break;

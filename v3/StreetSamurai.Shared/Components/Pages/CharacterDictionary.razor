@@ -272,7 +272,7 @@
         editing.StoryHooks = SplitLines(editStoryHooks);
 
         if (!isNew && originalName != editing.Name) Repo.Delete(originalName);
-        Repo.Save(editing); editing = null; items = Repo.GetAll();
+        Repo.Save(editing); editing = null; Repo.Reload(); items = Repo.GetAllLite();
     }
 
     private void DoDelete()
@@ -280,7 +280,7 @@
         if (editing == null) return;
         Graph.RemoveNode(editing.Name);
         Repo.Delete(editing.Name);
-        editing = null; _confirmDelete = false; items = Repo.GetAll();
+        editing = null; _confirmDelete = false; Repo.Reload(); items = Repo.GetAllLite();
     }
 
     private void ClearListFields()

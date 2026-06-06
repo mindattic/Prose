@@ -921,6 +921,41 @@ public class WorldGraphService : IWorldGraphService
         BuildEquipment();
         BuildTechnology();
         LinkDistrictFrequentedBy();
+        BuildRemainingEntities();
+    }
+
+    /// <summary>
+    /// Node every remaining active entity the bespoke builders above didn't cover
+    /// — cyberware, ammunition, materials, pharmaceuticals, transport, synthetics,
+    /// automatons, subsidiaries, consumer goods, genemods, apparel, psionics,
+    /// documents, etc. They get a basic node (name + type + description) so they
+    /// are reachable by neighbor-traversal and the type index, ending the
+    /// "graph only sees 7 types" gap. Rich types already added above win (we skip
+    /// any id already present), so this never clobbers a character/place node.
+    /// </summary>
+    private void BuildRemainingEntities()
+    {
+        if (sql == null) return;
+        using var ctx = sql.CreateDbContext();
+        var rows = ctx.Entities.AsNoTracking()
+            .Where(e => e.IsActive)
+            .Select(e => new { e.Name, e.EntityType, e.Description })
+            .ToList();
+        foreach (var e in rows)
+        {
+            if (string.IsNullOrWhiteSpace(e.Name)) continue;
+            var id = Slugify(e.Name);
+            if (_nodes.ContainsKey(id)) continue;   // a bespoke builder already modeled it
+            var props = new Dictionary<string, string>();
+            if (!string.IsNullOrWhiteSpace(e.Description)) props["description"] = e.Description!;
+            AddNode(new WorldNode
+            {
+                Id = id,
+                Name = e.Name,
+                NodeType = string.IsNullOrWhiteSpace(e.EntityType) ? EntityTypes.Unknown : e.EntityType,
+                Properties = props,
+            });
+        }
     }
 
     private void BuildCharacters()
