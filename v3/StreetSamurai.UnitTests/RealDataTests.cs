@@ -174,21 +174,6 @@ public class RealDataTests
     }
 
     [Test]
-    public void SyntheticLifeRepository_LoadsELFs()
-    {
-        var repo = new SyntheticLifeRepository(paths);
-        var all = repo.GetAll();
-        Assert.That(all.Count, Is.GreaterThan(200), "Should have 200+ synthetic life forms");
-        Assert.That(all.All(s => !string.IsNullOrWhiteSpace(s.Name)), "All synthetics should have names");
-
-        // Check disposition distribution
-        var brownies = all.Count(s => s.Disposition == "brownie");
-        var gremlins = all.Count(s => s.Disposition == "gremlin");
-        Assert.That(brownies, Is.GreaterThan(10), "Should have multiple brownies");
-        Assert.That(gremlins, Is.GreaterThan(10), "Should have multiple gremlins");
-    }
-
-    [Test]
     public void TransportationRepository_LoadsRealData()
     {
         var repo = new TransportationRepository(paths);
@@ -329,32 +314,6 @@ public class RealDataTests
 
     // â”€â”€ E.L.F. DATA INTEGRITY â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
 
-    [Test]
-    public void ELFs_HaveValidDispositions()
-    {
-        var repo = new SyntheticLifeRepository(paths);
-        var noDisposition = repo.GetAll().Where(s => string.IsNullOrWhiteSpace(s.Disposition)).Select(s => s.Name).ToList();
-        Assert.That(noDisposition.Count, Is.LessThan(repo.GetAll().Count / 4),
-            $"Too many synthetics without disposition: {string.Join(", ", noDisposition.Take(5))}");
-    }
-
-    [Test]
-    public void ELFs_HaveValidHabitats()
-    {
-        var repo = new SyntheticLifeRepository(paths);
-        var noHabitat = repo.GetAll().Where(s => string.IsNullOrWhiteSpace(s.Habitat)).Select(s => s.Name).ToList();
-        Assert.That(noHabitat.Count, Is.LessThan(repo.GetAll().Count / 4),
-            $"Too many synthetics without habitat: {string.Join(", ", noHabitat.Take(5))}");
-    }
-
-    [Test]
-    public void ELFs_HaveUniqueNames()
-    {
-        var repo = new SyntheticLifeRepository(paths);
-        var names = repo.GetAll().Select(e => e.Name).ToList();
-        var dupes = names.GroupBy(n => n).Where(g => g.Count() > 1).Select(g => g.Key).ToList();
-        Assert.That(dupes, Is.Empty, $"Duplicate E.L.F. names: {string.Join(", ", dupes)}");
-    }
 
     // â”€â”€ OUTLINE SERVICE (TRUNCATION REPAIR) â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
 

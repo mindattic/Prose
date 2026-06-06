@@ -10,7 +10,6 @@ namespace StreetSamurai.Core.Services;
 public class GlobalSearchService
 {
     private readonly CharacterRepository characters;
-    private readonly SyntheticLifeRepository synthetics;
     private readonly CorponationRepository corponations;
     private readonly DistrictRepository districts;
     private readonly FactionRepository factions;
@@ -42,7 +41,7 @@ public class GlobalSearchService
     private readonly object syncLock = new();
 
     public GlobalSearchService(
-        CharacterRepository characters, SyntheticLifeRepository synthetics,
+        CharacterRepository characters,
         CorponationRepository corponations, DistrictRepository districts,
         FactionRepository factions, WeaponryRepository weaponry,
         AmmunitionRepository ammunition, EquipmentRepository equipment,
@@ -58,7 +57,7 @@ public class GlobalSearchService
         FlyoverEntityRepository flyoverEntities,
         PsionicRepository psionics)
     {
-        this.characters = characters; this.synthetics = synthetics;
+        this.characters = characters;
         this.corponations = corponations; this.districts = districts;
         this.factions = factions; this.weaponry = weaponry;
         this.ammunition = ammunition; this.equipment = equipment;
@@ -77,7 +76,6 @@ public class GlobalSearchService
         // Note: OnItemSaved fires with the entity's name (not id), so we look up
         // by name to fetch the freshly-saved row and re-project a single entry.
         characters.OnItemSaved      += n => UpdateOrAdd(characters.GetByName(n) is { } c      ? ProjectCharacter(c)      : null);
-        synthetics.OnItemSaved      += n => UpdateOrAdd(synthetics.GetByName(n) is { } s      ? ProjectSynthetic(s)      : null);
         corponations.OnItemSaved    += n => UpdateOrAdd(corponations.GetByName(n) is { } c    ? ProjectCorponation(c)    : null);
         districts.OnItemSaved       += n => UpdateOrAdd(districts.GetByName(n) is { } d       ? ProjectDistrict(d)       : null);
         factions.OnItemSaved        += n => UpdateOrAdd(factions.GetByName(n) is { } f        ? ProjectFaction(f)        : null);
@@ -237,7 +235,6 @@ public class GlobalSearchService
         var entries = new List<SearchIndexEntry>(4096);
 
         foreach (var c in characters.GetAll())      entries.Add(ProjectCharacter(c));
-        foreach (var s in synthetics.GetAll())      entries.Add(ProjectSynthetic(s));
         foreach (var c in corponations.GetAll())    entries.Add(ProjectCorponation(c));
         foreach (var d in districts.GetAll())       entries.Add(ProjectDistrict(d));
         foreach (var f in factions.GetAll())        entries.Add(ProjectFaction(f));
@@ -273,16 +270,6 @@ public class GlobalSearchService
     private static SearchIndexEntry ProjectCharacter(CharacterData c)
         => new(c.Id, "character", c.Name, c.Role, c.Description, c.Tags, "/characters");
 
-    private static SearchIndexEntry ProjectSynthetic(SyntheticLifeData s)
-    {
-        var isCeramic = s.Type == "ceramic_man";
-        return new(s.Id, isCeramic ? "ceramic-man" : "synthetic", s.Name,
-            isCeramic ? s.CurrentRole ?? "" : s.Classification,
-            isCeramic
-                ? $"{s.OperatingHistory} {s.BehavioralNotes} {s.DiplomaticSpecialty}"
-                : $"{s.Description} {s.ObservedBehavior}",
-            s.Tags, "/synthetics");
-    }
 
     private static SearchIndexEntry ProjectCorponation(CorponationData c)
         => new(c.Id, "corponation", c.Name, c.Sector, $"{c.FoundingStory} {c.KeyDetail}", c.Tags, "/corps");

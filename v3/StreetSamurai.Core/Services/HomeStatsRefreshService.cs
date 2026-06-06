@@ -76,7 +76,6 @@ public class HomeStatsRefreshService : BackgroundService
             // GetAll().Count] in project memory — that fix cut cold load from
             // 42s to <1s). We just batch them here.
             cache.Characters      = s.GetRequiredService<CharacterRepository>().Count();
-            cache.SyntheticLife   = s.GetRequiredService<SyntheticLifeRepository>().Count();
             cache.Archetypes      = s.GetRequiredService<ArchetypeRepository>().Count();
 
             cache.Corponations    = s.GetRequiredService<CorponationRepository>().Count();

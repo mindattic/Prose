@@ -560,6 +560,18 @@ if (args.Contains("--canon-retrieve"))
     return;
 }
 
+// CLI mode: author-only Canon trust gate — mark a strand strong enough to draw
+// conclusions about its characters/events (the voice-harvest learns from canon).
+//   ss --mark-canon (--slug <s> | --id <guid>) [--off]
+if (args.Contains("--mark-canon"))
+{
+    var cliBuilder = WebApplication.CreateBuilder(args);
+    cliBuilder.Services.AddStreetSamuraiServices();
+    var cliApp = cliBuilder.Build();
+    Environment.ExitCode = await MarkCanonCli.RunAsync(args, cliApp.Services);
+    return;
+}
+
 // CLI mode: distill voice rules from winning (≥80%) strands into the codified
 // DB-backed rules the generator reads. Propose-then-approve.
 //   ss --harvest-voice (--slug <s> | --id <id> | --all-80 | --pending | --apply <guid> | --reject <guid>) [--force]

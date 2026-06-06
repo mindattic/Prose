@@ -13,6 +13,22 @@ public static class CoverageCli
     public static async Task<int> RunAsync(string[] args, IServiceProvider services)
     {
         var coverage = services.GetRequiredService<CoverageService>();
+
+        // coverage→action: embed any active entity missing/changed (closes gaps
+        // like motif 0% generically). Idempotent — skips already-fresh rows.
+        if (args.Contains("--backfill"))
+        {
+            var embeddings = services.GetRequiredService<EmbeddingService>();
+            Console.WriteLine("[coverage] Backfilling missing embeddings…");
+            var n = await embeddings.ReembedCorpusAsync(
+                progress: new Progress<(int done, int total)>(p =>
+                {
+                    if (p.total > 0 && (p.done % 256 == 0 || p.done == p.total))
+                        Console.WriteLine($"  embedded {p.done}/{p.total}");
+                }));
+            Console.WriteLine($"[coverage] Backfill embedded/updated {n} entit{(n == 1 ? "y" : "ies")}.\n");
+        }
+
         var rows = await coverage.ReportAsync();
         if (rows.Count == 0) { Console.WriteLine("[coverage] No active entities."); return 0; }
 

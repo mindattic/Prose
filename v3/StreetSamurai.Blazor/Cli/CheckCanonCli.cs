@@ -18,6 +18,7 @@ public static class CheckCanonCli
     {
         string? slug = null, id = null;
         bool all = args.Contains("--all");
+        bool fix = args.Contains("--fix");
         for (int i = 0; i < args.Length; i++)
         {
             switch (args[i])
@@ -58,7 +59,7 @@ public static class CheckCanonCli
         {
             try
             {
-                var r = await checker.CheckStrandAsync(sid);
+                var r = await checker.CheckStrandAsync(sid, proposeFixes: fix);
                 total += r.Contradictions.Count;
                 Console.WriteLine($"[check-canon] {r.Slug}: {r.ChunksChecked} chunk(s) → {r.Contradictions.Count} contradiction(s).");
                 foreach (var c in r.Contradictions)

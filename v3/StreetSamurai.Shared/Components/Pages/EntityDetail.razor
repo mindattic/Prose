@@ -3,7 +3,6 @@
 @using StreetSamurai.Core.Interfaces
 @inject IWriteAccessProvider Access
 @inject CharacterRepository CharRepo
-@inject SyntheticLifeRepository SynthRepo
 @inject DistrictRepository PlaceRepo
 @inject FactionRepository FactionRepo
 @inject CorponationRepository CorpRepo
@@ -403,65 +402,6 @@ else
             <div class="entity-section">
                 <div class="entity-section-label">Narrative Function</div>
                 <XrefText Text="@character.NarrativeFunction" Paragraphs="true" />
-            </div>
-        }
-    </div>
-}
-else if (CurrentTab == "record" && synthetic != null)
-{
-    <EntityDetailHeader Name="@synthetic.Name" Type="synthetic" TypeLabel="Synthetic"
-                        Subtitle="@synthetic.Classification" BackRoute="/synthetics"
-                        Tags="@synthetic.Tags" />
-    <div class="entity-detail-body">
-        @if (!string.IsNullOrWhiteSpace(synthetic.Description))
-        {
-            <div class="entity-section">
-                <div class="entity-section-label">Description</div>
-                <XrefText Text="@synthetic.Description" Paragraphs="true" />
-            </div>
-        }
-        <div class="entity-meta-row">
-            @if (!string.IsNullOrWhiteSpace(synthetic.Location))
-            {
-                <div class="entity-meta-item"><span class="entity-meta-label">Location</span> <XrefText Text="@synthetic.Location" /></div>
-            }
-            @if (!string.IsNullOrWhiteSpace(synthetic.Habitat))
-            {
-                <div class="entity-meta-item"><span class="entity-meta-label">Habitat</span> @synthetic.Habitat</div>
-            }
-            @if (!string.IsNullOrWhiteSpace(synthetic.Disposition))
-            {
-                <div class="entity-meta-item"><span class="entity-meta-label">Disposition</span> @synthetic.Disposition</div>
-            }
-            @if (synthetic.DtiRating > 0)
-            {
-                <div class="entity-meta-item"><span class="entity-meta-label">DTI</span> @synthetic.DtiRating.ToString("F1")</div>
-            }
-        </div>
-        @if (!string.IsNullOrWhiteSpace(synthetic.ObservedBehavior))
-        {
-            <div class="entity-section">
-                <div class="entity-section-label">Observed Behavior</div>
-                <XrefText Text="@synthetic.ObservedBehavior" />
-            </div>
-        }
-        @if (!string.IsNullOrWhiteSpace(synthetic.Origin))
-        {
-            <div class="entity-section">
-                <div class="entity-section-label">Origin</div>
-                <XrefText Text="@synthetic.Origin" />
-            </div>
-        }
-        @if (synthetic.StoryHooks.Any())
-        {
-            <div class="entity-section">
-                <div class="entity-section-label">Story Hooks</div>
-                <ul class="entity-list">
-                    @foreach (var h in synthetic.StoryHooks)
-                    {
-                        <li><XrefText Text="@h" /></li>
-                    }
-                </ul>
             </div>
         }
     </div>
@@ -1498,7 +1438,6 @@ else if (CurrentTab == "record" && document != null)
         try
         {
             if      (character     != null) CharRepo.Save(character);
-            else if (synthetic     != null) SynthRepo.Save(synthetic);
             else if (place         != null) PlaceRepo.Save(place);
             else if (faction       != null) FactionRepo.Save(faction);
             else if (corponation   != null) CorpRepo.Save(corponation);
@@ -1539,7 +1478,6 @@ else if (CurrentTab == "record" && document != null)
     {
         var opts = new System.Text.Json.JsonSerializerOptions { WriteIndented = false };
         if (character     != null) return System.Text.Json.JsonSerializer.Serialize(character, opts);
-        if (synthetic     != null) return System.Text.Json.JsonSerializer.Serialize(synthetic, opts);
         if (place         != null) return System.Text.Json.JsonSerializer.Serialize(place, opts);
         if (faction       != null) return System.Text.Json.JsonSerializer.Serialize(faction, opts);
         if (corponation   != null) return System.Text.Json.JsonSerializer.Serialize(corponation, opts);
@@ -1571,7 +1509,6 @@ else if (CurrentTab == "record" && document != null)
         try
         {
             if      (character     != null) character     = System.Text.Json.JsonSerializer.Deserialize<CharacterData>(json);
-            else if (synthetic     != null) synthetic     = System.Text.Json.JsonSerializer.Deserialize<SyntheticLifeData>(json);
             else if (place         != null) place         = System.Text.Json.JsonSerializer.Deserialize<DistrictData>(json);
             else if (faction       != null) faction       = System.Text.Json.JsonSerializer.Deserialize<FactionData>(json);
             else if (corponation   != null) corponation   = System.Text.Json.JsonSerializer.Deserialize<CorponationData>(json);
@@ -1645,7 +1582,6 @@ else if (CurrentTab == "record" && document != null)
     }
 
     private CharacterData? character;
-    private SyntheticLifeData? synthetic;
     private DistrictData? place;
     private FactionData? faction;
     private CorponationData? corponation;
@@ -1728,7 +1664,7 @@ else if (CurrentTab == "record" && document != null)
 
     protected override void OnParametersSet()
     {
-        character = null; synthetic = null; place = null; faction = null;
+        character = null; place = null; faction = null;
         corponation = null; technology = null; weapon = null; equipment = null;
         cyberware = null; vocabEntry = null;
         ammo = null; apparel = null; genemod = null; pharma = null; material = null;
@@ -1829,8 +1765,6 @@ else if (CurrentTab == "record" && document != null)
         // /entity/019d6143a648787696880f6d38d70075 and /entity/kyle-ellen-corbin-vasik work.
         character   = CharRepo.GetById(EntityId)    ?? CharRepo.GetBySlug(EntityId);
         if (character != null)    { resolvedId = character.Id;    resolvedName = character.Name;    resolvedMidjourneyPrompt = character.MidjourneyPrompt; resolvedDalle3Prompt = character.Dalle3Prompt; return; }
-        synthetic   = SynthRepo.GetById(EntityId)   ?? SynthRepo.GetBySlug(EntityId);
-        if (synthetic != null)    { resolvedId = synthetic.Id;    resolvedName = synthetic.Name;    return; }
         place       = PlaceRepo.GetById(EntityId)   ?? PlaceRepo.GetBySlug(EntityId);
         if (place != null)        { resolvedId = place.Id;        resolvedName = place.Name;        return; }
         faction     = FactionRepo.GetById(EntityId) ?? FactionRepo.GetBySlug(EntityId);

@@ -62,7 +62,6 @@ public class EmbeddingFallbackTests
     /// list to reflect the new requirement deliberately.
     /// </summary>
     [TestCase(typeof(EntityExtractionService))]
-    [TestCase(typeof(ConversationalWriterService))]
     [TestCase(typeof(StoryStarterService))]
     [TestCase(typeof(BookReviewService))]
     [TestCase(typeof(SuggestionEngineService))]

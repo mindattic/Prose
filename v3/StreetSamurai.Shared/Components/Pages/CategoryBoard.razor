@@ -5,7 +5,6 @@
 <div class="console-bg-host" aria-hidden="true"></div>
 
 @inject CharacterRepository CharRepo
-@inject SyntheticLifeRepository SynthRepo
 @inject ArchetypeRepository ArchetypeRepo
 @inject CorponationRepository CorpRepo
 @inject SubsidiaryRepository SubsidiaryRepo
@@ -81,8 +80,7 @@ else
         {
             "Characters" =>
             [
-                new("bi-people",              "/characters",      "People",          CharRepo.Count(), false, "Human characters with full psychology, speech patterns, behavioral rules, cyberware inventory, and timelines."),
-                new("bi-cpu-fill",            "/synthetics",      "Synthetic Life",  SynthRepo.Count(), false, "Non-biological persons: AIs, androids, robots, cyborg AIs, distributed AIs, emergent AIs, rogue AIs, corporate AIs. Includes Ceramic Men (Type == \"ceramic_man\")."),
+                new("bi-people",              "/characters",      "People",          CharRepo.Count(), false, "All sentient characters — human, AI, E.L.F. (Emergent Lifeform), and synthetic — with full psychology, speech patterns, behavioral rules, cyberware, and timelines. Browse and edit by species."),
                 new("bi-person-bounding-box", "/archetypes",      "Archetypes",      ArchetypeRepo.Count(), false, "Reusable character archetype templates with trait weights — seed for new character generation."),
             ],
             "Organizations" =>

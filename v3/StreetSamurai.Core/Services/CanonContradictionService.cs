@@ -51,9 +51,13 @@ public class CanonContradictionService
     public sealed record Contradiction(string Entity, string Issue, string? Snippet, string? SuggestedFix, string Severity);
     public sealed record CheckResult(string Slug, int ChunksChecked, List<Contradiction> Contradictions);
 
-    /// <summary>Sweep one strand. Each contradiction is also written as a
-    /// CANON-CONTRADICTION finding (approval-gated; nothing rewrites the prose).</summary>
-    public async Task<CheckResult> CheckStrandAsync(Guid strandId, CancellationToken ct = default)
+    /// <summary>Sweep one strand. Each contradiction is written as an
+    /// approval-gated CANON-CONTRADICTION finding (nothing rewrites the prose).
+    /// When <paramref name="proposeFixes"/> is set, high-severity contradictions
+    /// get a concrete canon-honoring rewrite of the offending span generated and
+    /// attached to the finding (the bounded self-correction loop — still
+    /// approval-gated; the writer applies it).</summary>
+    public async Task<CheckResult> CheckStrandAsync(Guid strandId, bool proposeFixes = false, CancellationToken ct = default)
     {
         await using var db = await dbFactory.CreateDbContextAsync(ct);
         var strand = await db.Strands.AsNoTracking().FirstOrDefaultAsync(s => s.Id == strandId, ct)
@@ -73,6 +77,28 @@ public class CanonContradictionService
             var canon = await retrieval.RetrieveContextBlockAsync(chunk, k: 24, charBudget: 3000, ct: ct);
             if (canon.Length == 0) continue;
             var found = await DetectAsync(canon, chunk, ct);
+
+            // Bounded self-correction: for high-severity hits with a located
+            // snippet, generate a canon-honoring rewrite of just that span and
+            // fold it into the suggested fix (using the canon in scope for this
+            // chunk). Nothing is auto-applied — the writer approves it.
+            if (proposeFixes)
+            {
+                var corrected = new List<Contradiction>(found.Count);
+                foreach (var c in found)
+                {
+                    if (ParseSeverity(c.Severity) == FindingSeverity.High && !string.IsNullOrWhiteSpace(c.Snippet))
+                    {
+                        var rewrite = await ProposeCorrectedSpanAsync(c.Snippet!, canon, c.Issue, ct);
+                        corrected.Add(string.IsNullOrWhiteSpace(rewrite)
+                            ? c
+                            : c with { SuggestedFix = $"REWRITE the span to: \"{rewrite!.Trim()}\"" + (string.IsNullOrWhiteSpace(c.SuggestedFix) ? "" : $"  (why: {c.SuggestedFix})") });
+                    }
+                    else corrected.Add(c);
+                }
+                found = corrected;
+            }
+
             all.AddRange(found);
         }
 
@@ -117,6 +143,28 @@ public class CanonContradictionService
         catch (Exception ex) { log.LogWarning(ex, "Contradiction LLM call failed"); return []; }
 
         return Parse(raw);
+    }
+
+    /// <summary>Rewrite just the offending span so it no longer contradicts canon,
+    /// changing as little as possible and keeping the prose voice. Returns the
+    /// corrected span text (no JSON), or null on failure. Approval-gated upstream.</summary>
+    internal async Task<string?> ProposeCorrectedSpanAsync(string snippet, string canon, string issue, CancellationToken ct)
+    {
+        var system =
+            "You are a careful line editor. Rewrite ONLY the given prose span so it no longer contradicts the canon, " +
+            "changing as little as possible and preserving the author's voice, tense, and rhythm. Do not add new facts. " +
+            "Return ONLY the rewritten span as plain prose — no quotes, no explanation, no markdown.";
+        var user = new StringBuilder()
+            .AppendLine(canon).AppendLine()
+            .AppendLine($"CONTRADICTION: {issue}").AppendLine()
+            .AppendLine("SPAN TO REWRITE:").AppendLine(snippet).ToString();
+        try
+        {
+            var rewrite = await llm.GenerateAsync(system, user, temperature: 0.3, maxTokens: 400, ct: ct);
+            rewrite = rewrite?.Trim().Trim('"');
+            return string.IsNullOrWhiteSpace(rewrite) ? null : rewrite;
+        }
+        catch (Exception ex) { log.LogWarning(ex, "Span rewrite failed"); return null; }
     }
 
     internal static List<Contradiction> Parse(string raw)

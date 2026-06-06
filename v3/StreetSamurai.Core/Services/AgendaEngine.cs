@@ -19,13 +19,16 @@ public class AgendaEngine
     private readonly ILlmService llm;
     private readonly DatabaseService db;
     private readonly WorldGraphService graph;
+    private readonly CanonRetrievalService canonRetrieval;
     private readonly ILogger<AgendaEngine> log;
 
-    public AgendaEngine(ILlmService llm, DatabaseService db, WorldGraphService graph, ILogger<AgendaEngine> log)
+    public AgendaEngine(ILlmService llm, DatabaseService db, WorldGraphService graph,
+        CanonRetrievalService canonRetrieval, ILogger<AgendaEngine> log)
     {
         this.llm = llm;
         this.db = db;
         this.graph = graph;
+        this.canonRetrieval = canonRetrieval;
         this.log = log;
     }
 
@@ -56,6 +59,13 @@ public class AgendaEngine
             stateBlock = string.Join("\n", parts);
         }
 
+        // Totality: pull relevant canon across ALL entity types (the orgs, gear,
+        // drugs, places, factions the cast is entangled with) so goals form from
+        // the whole world, not just the character dossiers.
+        var canonBlock = await canonRetrieval.RetrieveContextBlockAsync(
+            string.Join("\n", characterNames) + "\n" + (recentEvents ?? ""),
+            k: 12, excludeNames: characterNames, ct: ct);
+
         var system = $"""
             You are a character motivation engine for near-future fiction. Given character profiles
             and the current story state, determine what each character WANTS to do next.
@@ -68,6 +78,7 @@ public class AgendaEngine
 
             {(stateBlock.Length > 0 ? $"CURRENT STATE:\n{stateBlock}" : "")}
             {(recentEvents?.Length > 0 ? $"RECENT EVENTS:\n{recentEvents}" : "")}
+            {(canonBlock.Length > 0 ? $"\n{canonBlock}" : "")}
 
             For each character, return a JSON array of objects with fields:
             character, primary_goal, secondary_goal, obstacle, desperation (1-10),
@@ -135,9 +146,13 @@ public class AgendaEngine
             Return ONLY the JSON array.
             """;
 
+        // Ground the conflict invention in the relevant canon totality too.
+        var conflictCanon = await canonRetrieval.RetrieveContextBlockAsync(agendaText, k: 10, ct: ct);
+        var userMsg = conflictCanon.Length > 0 ? $"{conflictCanon}\n\n{agendaText}" : agendaText;
+
         try
         {
-            var response = await llm.GenerateAsync(system, agendaText, 0.7, 2048, ct: ct);
+            var response = await llm.GenerateAsync(system, userMsg, 0.7, 2048, ct: ct);
             var json = response.Trim();
             json = JsonDefaults.StripCodeFences(json);
 

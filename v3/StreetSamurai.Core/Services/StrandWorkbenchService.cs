@@ -311,6 +311,75 @@ public class StrandWorkbenchService
         return string.IsNullOrEmpty(ascii) ? "strand" : ascii;
     }
 
+    /// <summary>
+    /// Persist a generated story as a first-class <see cref="Strand"/> of
+    /// <see cref="Beat"/>s — the single story representation. The autonomous
+    /// generator and the writer both land here, so everything downstream
+    /// (validate → review → harvest → publish) operates on one model. Returns the
+    /// new strand id. Each non-empty text becomes one beat in order; the first
+    /// beat is marked a chapter start when <paramref name="chapterStartFirst"/>.
+    /// </summary>
+    public async Task<Guid> CreateStrandFromBeatsAsync(
+        string title, IReadOnlyList<string> beatTexts, string? synopsis = null,
+        string kind = "scene", string? seed = null, bool chapterStartFirst = false, CancellationToken ct = default)
+    {
+        await using var db = await dbFactory.CreateDbContextAsync(ct);
+        var strandId = Guid.CreateVersion7();
+        var slug = $"{Slugify(string.IsNullOrWhiteSpace(title) ? "untitled" : title)}-{strandId.ToString("N")[..8]}";
+
+        var maxSort = await db.Strands.Where(s => s.ParentStrandId == null)
+            .Select(s => (double?)s.SortKey).MaxAsync(ct) ?? 0;
+        db.Strands.Add(new Strand
+        {
+            Id = strandId, Slug = slug, Title = title, Kind = kind, Status = "draft",
+            Synopsis = synopsis, Seed = seed, SortKey = maxSort + 100.0,
+        });
+
+        var baseNumber = (await db.Beats.MaxAsync(b => (int?)b.Number, ct) ?? 0) + 1;
+        double sortKey = 100.0;
+        int i = 0;
+        foreach (var raw in beatTexts)
+        {
+            var text = (raw ?? "").Trim();
+            if (text.Length == 0) continue;
+            var beat = new Beat
+            {
+                Id = Guid.CreateVersion7(),
+                Number = baseNumber + i,
+                Text = text,
+                TextHash = ComputeTextHash(text),
+                Kind = "prose",
+                SceneType = "scene",
+                IsChapterStart = chapterStartFirst && i == 0,
+            };
+            db.Beats.Add(beat);
+            db.StrandBeats.Add(new StrandBeat { StrandId = strandId, BeatId = beat.Id, SortKey = sortKey });
+            sortKey += 100.0;
+            i++;
+        }
+
+        await db.SaveChangesAsync(ct);
+        log.LogInformation("Persisted generated story '{Title}' as strand {Slug} ({Beats} beats)", title, slug, i);
+        return strandId;
+    }
+
+    /// <summary>Mark a strand Canon (or clear it) — the author-only trust gate
+    /// (ARCHITECTURE.md §2c): "strong enough to draw conclusions about the
+    /// characters and events." Stamps <see cref="Strand.CanonAt"/> when set.
+    /// Returns false if the strand isn't found.</summary>
+    public async Task<bool> SetCanonAsync(Guid strandId, bool canon, CancellationToken ct = default)
+    {
+        await using var db = await dbFactory.CreateDbContextAsync(ct);
+        var strand = await db.Strands.FirstOrDefaultAsync(s => s.Id == strandId, ct);
+        if (strand == null) return false;
+        strand.IsCanon = canon;
+        strand.CanonAt = canon ? DateTime.UtcNow : null;
+        strand.UpdatedAt = DateTime.UtcNow;
+        await db.SaveChangesAsync(ct);
+        log.LogInformation("Strand {Slug} canon = {Canon}", strand.Slug, canon);
+        return true;
+    }
+
     /// <summary>Insert a brand-new empty beat into <paramref name="strandId"/>
     /// at a fractional SortKey just after <paramref name="afterBeatId"/>.
     /// Pass <c>null</c> for <paramref name="afterBeatId"/> to insert at the

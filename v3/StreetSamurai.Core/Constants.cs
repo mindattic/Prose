@@ -134,7 +134,7 @@ public static class Constants
     {
         public static readonly (string Group, string[] Repos)[] All =
         [
-            ("Characters", ["people", "synthetics", "archetypes"]),
+            ("Characters", ["people", "archetypes"]),
             ("Organizations", ["corponations", "subsidiaries", "factions", "contracts"]),
             ("Gear", ["weaponry", "ammunition", "cyberware", "equipment", "apparel", "genemods", "pharmaceuticals"]),
             ("World", ["places", "transportation", "materials", "technology", "automata"]),
