@@ -73,7 +73,6 @@ public class TestDatabaseService : DatabaseService
     private static readonly TestPathProvider tp = new();
     public TestDatabaseService() : base(
         new CharacterRepository(tp),
-        new FacetRepository(tp),
         new DistrictRepository(tp),
         new FactionRepository(tp),
         new CorponationRepository(tp),

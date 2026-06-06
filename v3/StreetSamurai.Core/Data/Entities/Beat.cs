@@ -80,10 +80,6 @@ public class Beat
     /// <summary>"scene" | "summary" | "transition" | "interstitial".</summary>
     public string SceneType { get; set; } = "scene";
 
-    /// <summary>Character voice facet — "WOUND", "IDEAL", "MASK", "SHADOW".
-    /// Drives narration tone.</summary>
-    public string? FacetTag { get; set; }
-
     /// <summary>Emotional charge: "tense", "wry", "tender", "violent", "quiet".</summary>
     public string? EmotionalTone { get; set; }
 

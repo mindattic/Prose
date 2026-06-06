@@ -209,7 +209,6 @@ public class StrandCliRoundTripTests
             Synopsis:       "Quiet open — set the mood",
             EmotionalTone:  "quiet",
             PaceHint:       "languorous",
-            FacetTag:       null,
             StructureRole:  "opening",
             Act:            1,
             SceneType:      "scene",

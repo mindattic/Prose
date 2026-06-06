@@ -6,6 +6,8 @@ StreetSamurai writes novels. Not snippets, not summaries — chapter-length pros
 
 Live at **[streetsamurai.azurewebsites.net](https://streetsamurai.azurewebsites.net/)**.
 
+> 📖 **[ARCHITECTURE.md](ARCHITECTURE.md) is the architecture bible** — the endpoint, how the engine interconnects, and every goal (past / present / future) in build order with acceptance tests. Start there for "what's left and in what order"; this README is the quick tour.
+
 ---
 
 ## Table of Contents

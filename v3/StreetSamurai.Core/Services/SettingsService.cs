@@ -141,6 +141,17 @@ public class SettingsService : IDisposable
     public double TtsSimilarityBoost { get => data.TtsSimilarityBoost; set { data.TtsSimilarityBoost = value; ScheduleSave(); } }
     public double TtsStyle { get => data.TtsStyle; set { data.TtsStyle = value; ScheduleSave(); } }
 
+    /// <summary>Final delivery format/quality for a published audiobook. The
+    /// source is always fetched at the highest fidelity the ElevenLabs tier
+    /// allows (lossless <c>pcm_44100</c> when available); this controls only how
+    /// the combined track is encoded for the file the user receives. One of the
+    /// keys in <see cref="AudiobookFormats"/>. Default: 320 kbps MP3.</summary>
+    public string AudiobookFormat
+    {
+        get => string.IsNullOrWhiteSpace(data.AudiobookFormat) ? "mp3_320" : data.AudiobookFormat;
+        set { data.AudiobookFormat = value; ScheduleSave(); }
+    }
+
     /// <summary>Where Publish drops the combined audio file so it's easy to
     /// find. Empty = the user's Downloads folder (the default). The in-app
     /// player still serves an internal copy; this is the user-facing export.</summary>
@@ -411,6 +422,37 @@ public class SettingsService : IDisposable
     // public bool FtpUseSsl { get => data.FtpUseSsl; set { data.FtpUseSsl = value; ScheduleSave(); } }
     // public bool FtpPassive { get => data.FtpPassive; set { data.FtpPassive = value; ScheduleSave(); } }
 
+    /// <summary>Selectable audiobook delivery formats: a stable key, a UI label,
+    /// and the container extension. The encode args live in
+    /// <see cref="ResolveAudiobookEncode"/>. MP3 first (universal), then lossless.</summary>
+    public static readonly (string Key, string Label, string Extension)[] AudiobookFormats =
+    [
+        ("mp3_320", "MP3 — 320 kbps (recommended)", "mp3"),
+        ("mp3_256", "MP3 — 256 kbps",               "mp3"),
+        ("mp3_192", "MP3 — 192 kbps",               "mp3"),
+        ("mp3_128", "MP3 — 128 kbps (smallest)",    "mp3"),
+        ("wav",     "WAV — lossless (largest)",      "wav"),
+        ("flac",    "FLAC — lossless (compressed)",  "flac"),
+    ];
+
+    /// <summary>Resolve the configured <see cref="AudiobookFormat"/> to the file
+    /// extension and the ffmpeg audio-codec argument list used to encode the
+    /// combined WAV. <c>Args == null</c> means "deliver the assembled WAV as-is"
+    /// (no re-encode). Unknown keys fall back to 320 kbps MP3.</summary>
+    public (string Extension, string[]? Args) ResolveAudiobookEncode()
+    {
+        return AudiobookFormat switch
+        {
+            "mp3_320" => ("mp3",  ["-codec:a", "libmp3lame", "-b:a", "320k"]),
+            "mp3_256" => ("mp3",  ["-codec:a", "libmp3lame", "-b:a", "256k"]),
+            "mp3_192" => ("mp3",  ["-codec:a", "libmp3lame", "-b:a", "192k"]),
+            "mp3_128" => ("mp3",  ["-codec:a", "libmp3lame", "-b:a", "128k"]),
+            "wav"     => ("wav",  null),
+            "flac"    => ("flac", ["-codec:a", "flac"]),
+            _         => ("mp3",  ["-codec:a", "libmp3lame", "-b:a", "320k"]),
+        };
+    }
+
     /// <summary>All supported timestamp formats, keyed by .NET format string with example display values.</summary>
     public static readonly (string Format, string Example)[] TimestampFormats =
     [
@@ -568,6 +610,9 @@ public class SettingsService : IDisposable
         public double TtsStability { get; set; } = 1.0;
         public double TtsSimilarityBoost { get; set; } = 0.75;
         public double TtsStyle { get; set; } = 0.0;
+        /// <summary>Final audiobook delivery format key (see <see cref="AudiobookFormats"/>).
+        /// Default 320 kbps MP3 — the source is fetched losslessly when the tier allows.</summary>
+        public string AudiobookFormat { get; set; } = "mp3_320";
         public bool TtsUseAudioTags { get; set; } = true;
         /// <summary>Empty = the user's Downloads folder.</summary>
         public string PublishOutputDirectory { get; set; } = "";

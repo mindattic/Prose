@@ -511,6 +511,93 @@ if (args.Contains("--publish-audiobook"))
     return;
 }
 
+// CLI mode: codify the GLMZ house voice + world rules from the memory rubric into
+// the DB stores the generator reads (literary_rules / tone_bible). De-fragilizes
+// the rules so they no longer depend on an .md file being parsed. Idempotent.
+//   ss --seed-voice-rules
+if (args.Contains("--seed-voice-rules"))
+{
+    var cliBuilder = WebApplication.CreateBuilder(args);
+    cliBuilder.Services.AddStreetSamuraiServices();
+    var cliApp = cliBuilder.Build();
+    Environment.ExitCode = await SeedVoiceRulesCli.RunAsync(args, cliApp.Services);
+    return;
+}
+
+// CLI mode: per-entity-type reachability matrix (how much canon is embedded and
+// thus pullable into prose). The standing gap-finder.
+//   ss --coverage
+if (args.Contains("--coverage"))
+{
+    var cliBuilder = WebApplication.CreateBuilder(args);
+    cliBuilder.Services.AddStreetSamuraiServices();
+    var cliApp = cliBuilder.Build();
+    Environment.ExitCode = await CoverageCli.RunAsync(args, cliApp.Services);
+    return;
+}
+
+// CLI mode: sweep a strand's prose against canon (all entity types) and queue
+// contradictions as approval-gated findings — the self-correction pass.
+//   ss --check-canon (--slug <s> | --id <guid> | --all)
+if (args.Contains("--check-canon"))
+{
+    var cliBuilder = WebApplication.CreateBuilder(args);
+    cliBuilder.Services.AddStreetSamuraiServices();
+    var cliApp = cliBuilder.Build();
+    Environment.ExitCode = await CheckCanonCli.RunAsync(args, cliApp.Services);
+    return;
+}
+
+// CLI mode: show what the universal canon reach pulls for a query, across ALL
+// entity types — verifies the full-interconnect retrieval path.
+//   ss --canon-retrieve "<query>" [--k N] [--types t1,t2]
+if (args.Contains("--canon-retrieve"))
+{
+    var cliBuilder = WebApplication.CreateBuilder(args);
+    cliBuilder.Services.AddStreetSamuraiServices();
+    var cliApp = cliBuilder.Build();
+    Environment.ExitCode = await CanonRetrieveCli.RunAsync(args, cliApp.Services);
+    return;
+}
+
+// CLI mode: distill voice rules from winning (≥80%) strands into the codified
+// DB-backed rules the generator reads. Propose-then-approve.
+//   ss --harvest-voice (--slug <s> | --id <id> | --all-80 | --pending | --apply <guid> | --reject <guid>) [--force]
+if (args.Contains("--harvest-voice"))
+{
+    var cliBuilder = WebApplication.CreateBuilder(args);
+    cliBuilder.Services.AddStreetSamuraiServices();
+    var cliApp = cliBuilder.Build();
+    Environment.ExitCode = await HarvestVoiceCli.RunAsync(args, cliApp.Services);
+    return;
+}
+
+// CLI mode: list every strand as a table (or JSON). Headless twin of /strands.
+//   ss --list-strands [--status <s>] [--kind <k>] [--search <text>] [--limit <n>] [--json]
+if (args.Contains("--list-strands"))
+{
+    var cliBuilder = WebApplication.CreateBuilder(args);
+    cliBuilder.Services.AddStreetSamuraiServices();
+    var cliApp = cliBuilder.Build();
+    Environment.ExitCode = await ListStrandsCli.RunAsync(args, cliApp.Services);
+    return;
+}
+
+// CLI mode: render a strand to Markdown / plain text / PDF in Downloads. The
+// headless twins of the writer page's Export dropdown items.
+//   ss (--publish-md | --publish-txt | --publish-pdf) (--id <guid|prefix> | --slug <slug>) [--author "Name"]
+if (args.Contains("--publish-md") || args.Contains("--publish-txt") || args.Contains("--publish-pdf"))
+{
+    var cliBuilder = WebApplication.CreateBuilder(args);
+    cliBuilder.Services.AddStreetSamuraiServices();
+    var cliApp = cliBuilder.Build();
+    var format = args.Contains("--publish-md") ? PublishManuscriptCli.Format.Markdown
+               : args.Contains("--publish-txt") ? PublishManuscriptCli.Format.Text
+               : PublishManuscriptCli.Format.Pdf;
+    Environment.ExitCode = await PublishManuscriptCli.RunAsync(args, cliApp.Services, format);
+    return;
+}
+
 // CLI mode: bounded copy-edit of a strand — proper paragraph/dialogue spacing, a
 // "?" on questions that lack one, and "asks"/"asked" (not "says") on question
 // dialogue. Dry-run by default; --apply commits. Beats edited beyond those bounds

@@ -120,7 +120,6 @@ public static class ServiceCollectionExtensions
         services.AddSingleton(sp => new CorponationRepository(Db(sp)));
         services.AddSingleton(sp => new DistrictRepository(Db(sp)));
         services.AddSingleton(sp => new FactionRepository(Db(sp)));
-        services.AddSingleton(sp => new FacetRepository(Db(sp)));
         services.AddSingleton(sp => new WorldbuildingDocRepository(Db(sp)));
         services.AddSingleton(sp => new WeaponryRepository(Db(sp)));
         services.AddSingleton(sp => new AmmunitionRepository(Db(sp)));
@@ -184,7 +183,6 @@ public static class ServiceCollectionExtensions
         services.AddSingleton<IExportableRepository>(sp => sp.GetRequiredService<FlyoverEntityRepository>());
         services.AddSingleton<IExportableRepository>(sp => sp.GetRequiredService<PsionicRepository>());
         services.AddSingleton<IExportableRepository>(sp => sp.GetRequiredService<MotifRepository>());
-        services.AddSingleton<IExportableRepository>(sp => sp.GetRequiredService<FacetRepository>());
 
         // Export discovery — auto-finds all IExportableRepository instances
         services.AddSingleton<ExportDiscoveryService>();
@@ -659,6 +657,11 @@ public static class ServiceCollectionExtensions
         // then synthesize the Amazon-style aggregate.
         services.AddSingleton<StrandMarkdownExporter>();
         services.AddSingleton<DocxExportService>();
+        services.AddSingleton<ManuscriptExportService>();
+        services.AddSingleton<VoiceHarvestService>();
+        services.AddSingleton<CanonRetrievalService>();
+        services.AddSingleton<CanonContradictionService>();
+        services.AddSingleton<CoverageService>();
         services.AddSingleton<ProseReflowService>();
         services.AddSingleton<StrandReviewService>();
         services.AddSingleton<StoryQualityService>();

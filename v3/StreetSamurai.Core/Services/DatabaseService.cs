@@ -12,7 +12,6 @@ namespace StreetSamurai.Core.Services;
 public class DatabaseService : IDatabaseService
 {
     private readonly CharacterRepository characters;
-    private readonly FacetRepository facets;
     private readonly DistrictRepository districts;
     private readonly FactionRepository factions;
     private readonly CorponationRepository corponations;
@@ -27,7 +26,7 @@ public class DatabaseService : IDatabaseService
     private readonly ToneBibleRepository toneBible;
 
     public DatabaseService(
-        CharacterRepository characters, FacetRepository facets,
+        CharacterRepository characters,
         DistrictRepository districts, FactionRepository factions,
         CorponationRepository corponations, WorldbuildingDocRepository docs,
         WeaponryRepository weaponry, EquipmentRepository equipment,
@@ -37,7 +36,6 @@ public class DatabaseService : IDatabaseService
         ToneBibleRepository toneBible)
     {
         this.characters = characters;
-        this.facets = facets;
         this.districts = districts;
         this.factions = factions;
         this.corponations = corponations;
@@ -55,7 +53,6 @@ public class DatabaseService : IDatabaseService
     // ── Typed Accessors ─────────────────────────────────
 
     public List<CharacterData> Characters => characters.GetAll();
-    public List<FacetData> Facets => facets.GetAll();
     public List<DistrictData> Districts => districts.GetAll();
     public List<FactionData> Factions => factions.GetAll();
     public List<CorponationData> Corponations => corponations.GetAll();
@@ -71,7 +68,6 @@ public class DatabaseService : IDatabaseService
     public void Reload()
     {
         characters.Reload();
-        facets.Reload();
         districts.Reload();
         factions.Reload();
         corponations.Reload();

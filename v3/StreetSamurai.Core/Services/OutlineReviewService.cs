@@ -76,7 +76,7 @@ public class OutlineReviewService
 
         var schemaExample = """
             The revised_outline must match this schema exactly:
-            {"title":"","logline":"","theme":"","premise":"","characters":[],"acts":[{"act_number":1,"name":"","purpose":"","beats":[{"beat_index":0,"title":"","goal":"","characters_present":[],"location":"","emotional_arc":"","stakes":"","seeds":[],"payoffs":[],"facet_hint":"","tension":5}]}],"character_arcs":[{"character":"","start_state":"","end_state":"","turning_point":"","cost":""}],"seeds_and_payoffs":[{"seed":"","planted_in_beat":0,"payoff":"","payoff_in_beat":0}]}
+            {"title":"","logline":"","theme":"","premise":"","characters":[],"acts":[{"act_number":1,"name":"","purpose":"","beats":[{"beat_index":0,"title":"","goal":"","characters_present":[],"location":"","emotional_arc":"","stakes":"","seeds":[],"payoffs":[],"tension":5}]}],"character_arcs":[{"character":"","start_state":"","end_state":"","turning_point":"","cost":""}],"seeds_and_payoffs":[{"seed":"","planted_in_beat":0,"payoff":"","payoff_in_beat":0}]}
             """;
 
         var system = $"""

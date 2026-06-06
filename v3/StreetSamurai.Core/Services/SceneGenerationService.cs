@@ -20,6 +20,7 @@ public class SceneGenerationService
     private readonly DialogueService dialogue;
     private readonly WorldStateService worldState;
     private readonly WorldStatePrecheckService precheck;
+    private readonly CanonRetrievalService canonRetrieval;
 
     public event Action<BeatGenerationProgress>? OnBeatProgress;
     public event Action<GeneratedBeat>? OnBeatCompleted;
@@ -31,8 +32,9 @@ public class SceneGenerationService
         SceneContextBuilder contextBuilder, ConsequenceService consequences,
         AmbientAnomalyService anomalies, NarrativeSummaryService summaries,
         DialogueService dialogue, WorldStateService worldState,
-        WorldStatePrecheckService precheck)
+        WorldStatePrecheckService precheck, CanonRetrievalService canonRetrieval)
     {
+        this.canonRetrieval = canonRetrieval;
         this.analyzer = analyzer;
         this.beatGen = beatGen;
         this.graph = graph;
@@ -99,6 +101,17 @@ public class SceneGenerationService
                 ? request.Themes[i]
                 : $"Continue the scene toward: {request.Goal}";
             var pacing = PacingService.GetPacing(i, request.NumBeats, beatGoal);
+
+            // Full-interconnect reach: pull the most relevant canon across ALL
+            // entity types (gear, drugs, materials, orgs, synthetics, …) for what
+            // this beat is about, so the writer is grounded in the totality, not
+            // just the graph's seven types. Excludes the POV cast (already in
+            // worldContext) to avoid duplication.
+            var sceneTail = sceneSoFar.Length > 1200 ? sceneSoFar[^1200..] : sceneSoFar;
+            var canonBlock = await canonRetrieval.RetrieveContextBlockAsync(
+                $"{request.Goal}\n{request.Location}\n{beatGoal}\n{sceneTail}",
+                k: 12, excludeNames: request.Characters, ct: ct);
+            if (canonBlock.Length > 0) worldContext = $"{worldContext}\n\n{canonBlock}";
 
             var analysis = await analyzer.AnalyzeAsync(
                 $"{request.Goal}\n\nScene so far:\n{sceneSoFar}",

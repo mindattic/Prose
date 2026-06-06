@@ -179,7 +179,6 @@ public class ChapterBeat
     public int Act            { get; set; }
     public string StructureRole { get; set; } = "";
     public string SceneType   { get; set; } = "scene";
-    public string FacetTag    { get; set; } = "";
 
     /// <summary>"tense" / "wry" / "tender" / "violent" / "quiet" — optional tone hint.</summary>
     public string? EmotionalTone { get; set; }

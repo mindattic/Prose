@@ -1,5 +1,5 @@
 @page "/strand/{IdOrSlug}"
-@attribute [Authorize(Roles = "Contributor,Administrator")]
+@attribute [Authorize(Policy = MaPolicies.Admin)]
 @using Microsoft.EntityFrameworkCore
 @using StreetSamurai.Core.Data
 @using StreetSamurai.Core.Data.Entities
@@ -18,6 +18,7 @@
 @inject StreetSamurai.Core.Interfaces.ILlmService Llm
 @inject ILogger<Strand> Log
 @inject DocxExportService Docx
+@inject ManuscriptExportService Manuscript
 @implements IDisposable
 
 @*
@@ -320,19 +321,36 @@ else
                 </div>
             </div>
 
-            <div class="d-flex gap-2 flex-wrap mt-2">
-                <button class="btn btn-sm btn-success" @onclick="PublishAudiobookAsync" disabled="@(publishing || docxBusy)"
-                        title="Render the whole strand as one continuous narration (one pass — no per-beat voice drift) and save the MP3 to your Downloads">
-                    @if (publishing) { <span class="spinner-border spinner-border-sm me-1"></span> }
-                    else { <i class="bi bi-headphones me-1"></i> }
-                    Publish Audiobook
-                </button>
-                <button class="btn btn-sm btn-outline-light" @onclick="PublishDocxAsync" disabled="@(publishing || docxBusy)"
-                        title="Export a KDP-ready Word .docx to your Downloads">
-                    @if (docxBusy) { <span class="spinner-border spinner-border-sm me-1"></span> }
-                    else { <i class="bi bi-file-earmark-word me-1"></i> }
-                    Publish Word Document
-                </button>
+            <div class="d-flex gap-2 flex-wrap mt-2 align-items-center">
+                <div class="dropdown">
+                    <button class="btn btn-sm btn-success dropdown-toggle" type="button" data-bs-toggle="dropdown"
+                            disabled="@(publishing || exportBusy)"
+                            title="Export this strand to your Downloads — audiobook, Word, PDF, Markdown, or plain text">
+                        @if (publishing || exportBusy) { <span class="spinner-border spinner-border-sm me-1"></span> }
+                        else { <i class="bi bi-download me-1"></i> }
+                        Export
+                    </button>
+                    <ul class="dropdown-menu dropdown-menu-dark">
+                        <li><h6 class="dropdown-header">Audio</h6></li>
+                        <li><button class="dropdown-item" @onclick="PublishAudiobookAsync"
+                                    title="Render the whole strand as one continuous narration (one pass — no per-beat voice drift)">
+                            <i class="bi bi-headphones me-2"></i>Audiobook (.mp3)</button></li>
+                        <li><hr class="dropdown-divider"></li>
+                        <li><h6 class="dropdown-header">Manuscript</h6></li>
+                        <li><button class="dropdown-item" @onclick="PublishDocxAsync"
+                                    title="KDP-ready Word .docx">
+                            <i class="bi bi-file-earmark-word me-2"></i>Word Document (.docx)</button></li>
+                        <li><button class="dropdown-item" @onclick="PublishPdfAsync"
+                                    title="KDP-style PDF">
+                            <i class="bi bi-file-pdf me-2"></i>PDF (.pdf)</button></li>
+                        <li><button class="dropdown-item" @onclick="PublishMarkdownAsync"
+                                    title="Markdown with chapter headings">
+                            <i class="bi bi-markdown me-2"></i>Markdown (.md)</button></li>
+                        <li><button class="dropdown-item" @onclick="PublishTextAsync"
+                                    title="Plain text">
+                            <i class="bi bi-file-text me-2"></i>Plain Text (.txt)</button></li>
+                    </ul>
+                </div>
                 <div class="ms-auto">
                     <a href="/strands" class="btn btn-sm btn-link text-muted">
                         <i class="bi bi-arrow-left me-1"></i>All strands
@@ -809,7 +827,6 @@ else
                             @{
                                 var tone  = b.EmotionalTone;
                                 var pace  = b.PaceHint;
-                                var facet = b.FacetTag;
                                 var btitle = b.BeatTitle;
                             }
                             @if (!string.IsNullOrEmpty(btitle))
@@ -825,11 +842,6 @@ else
                                   @onclick="() => ToggleMeta(bid)"
                                   title="Pace hint — biases narration stability (clipped/staccato → faster, languorous → slower).">
                                 @(string.IsNullOrEmpty(pace) ? "pace: —" : $"⏱ {pace}")
-                            </span>
-                            <span class="beat-meta-chip @(string.IsNullOrEmpty(facet) ? "unset" : "")"
-                                  @onclick="() => ToggleMeta(bid)"
-                                  title="Character facet — Kyle's psychological mode for this beat (WOUND/SHADOW/MASK/IDEAL). Used as a fallback narration cue when tone is blank.">
-                                @(string.IsNullOrEmpty(facet) ? "facet: —" : $"🎭 {facet}")
                             </span>
                             <span class="beat-meta-chip" @onclick="() => ToggleMeta(bid)" data-cy="beat-meta-toggle">
                                 @(metaOpenBeatId == bid ? "▲ details" : "▾ details")
@@ -896,16 +908,6 @@ else
                                             <option value="clipped">clipped</option>
                                             <option value="staccato">staccato</option>
                                             <option value="languorous">languorous</option>
-                                        </select>
-                                    </div>
-                                    <div class="col-md-4">
-                                        <label>Character facet</label>
-                                        <select class="form-select form-select-sm" @bind="metaForm.FacetTag">
-                                            <option value="">(none)</option>
-                                            <option value="WOUND">WOUND → [somber]</option>
-                                            <option value="SHADOW">SHADOW → [menacing]</option>
-                                            <option value="MASK">MASK → [deadpan]</option>
-                                            <option value="IDEAL">IDEAL → [resolute]</option>
                                         </select>
                                     </div>
                                     <div class="col-md-4">
@@ -1298,9 +1300,10 @@ else
     private int publishCurrent;
     private int publishTotal;
     private string? publishLabel;
-    /// <summary>True while a KDP Word .docx export is running (drives the
-    /// Publish Word Document button spinner). Cheap/synchronous-ish; no ring.</summary>
-    private bool docxBusy;
+    /// <summary>True while a file manuscript export (Word/PDF/Markdown/text) is
+    /// running (drives the Export button spinner). Cheap/synchronous-ish; no
+    /// ring — the audiobook is the only export that drives the progress ring.</summary>
+    private bool exportBusy;
     private const double PublishRingRadius = 54;
     private double PublishRingCircumference => 2 * Math.PI * PublishRingRadius;
     /// <summary>Capped at 99% on purpose — the ring never shows a full 100%
@@ -1745,7 +1748,6 @@ else
             Synopsis       = beat.Synopsis ?? "",
             EmotionalTone  = beat.EmotionalTone ?? "",
             PaceHint       = beat.PaceHint ?? "",
-            FacetTag       = beat.FacetTag ?? "",
             StructureRole  = beat.StructureRole ?? "",
             Act            = beat.Act,
             SceneType      = string.IsNullOrEmpty(beat.SceneType) ? "scene" : beat.SceneType,
@@ -1769,7 +1771,6 @@ else
                 Synopsis:       metaForm.Synopsis,
                 EmotionalTone:  metaForm.EmotionalTone,
                 PaceHint:       metaForm.PaceHint,
-                FacetTag:       metaForm.FacetTag,
                 StructureRole:  metaForm.StructureRole,
                 Act:            metaForm.Act,
                 SceneType:      metaForm.SceneType,
@@ -1792,7 +1793,6 @@ else
         public string Synopsis { get; set; } = "";
         public string EmotionalTone { get; set; } = "";
         public string PaceHint { get; set; } = "";
-        public string FacetTag { get; set; } = "";
         public string StructureRole { get; set; } = "";
         public int Act { get; set; }
         public string SceneType { get; set; } = "scene";
@@ -2154,7 +2154,7 @@ else
     /// the page stays responsive while the render is in flight.</summary>
     private async Task PublishAudiobookAsync()
     {
-        if (strand == null || publishing || docxBusy) return;
+        if (strand == null || publishing || exportBusy) return;
         publishing = true;
         publishCurrent = 0;
         publishTotal = beats.Count;
@@ -2185,18 +2185,35 @@ else
     }
 
     /// <summary>Export the strand to a KDP-ready Word .docx in Downloads.</summary>
-    private async Task PublishDocxAsync()
+    private Task PublishDocxAsync() =>
+        RunFileExportAsync("WORD", "Word .docx", id => Docx.ExportStrandAsync(id));
+
+    /// <summary>Export the strand to a KDP-style PDF in Downloads.</summary>
+    private Task PublishPdfAsync() =>
+        RunFileExportAsync("PDF", "PDF", id => Manuscript.ExportPdfAsync(id));
+
+    /// <summary>Export the strand to Markdown in Downloads.</summary>
+    private Task PublishMarkdownAsync() =>
+        RunFileExportAsync("MARKDOWN", "Markdown .md", id => Manuscript.ExportMarkdownAsync(id));
+
+    /// <summary>Export the strand to plain text in Downloads.</summary>
+    private Task PublishTextAsync() =>
+        RunFileExportAsync("TEXT", "plain text .txt", id => Manuscript.ExportTextAsync(id));
+
+    /// <summary>Shared runner for the file manuscript exports — flips the Export
+    /// spinner, runs the format-specific render, and toasts the outcome.</summary>
+    private async Task RunFileExportAsync(string tag, string label, Func<Guid, Task<string>> export)
     {
-        if (strand == null || publishing || docxBusy) return;
-        docxBusy = true;
+        if (strand == null || publishing || exportBusy) return;
+        exportBusy = true;
         await InvokeAsync(StateHasChanged);
         try
         {
-            await Docx.ExportStrandAsync(strand.Id);
-            Toast.Success("WORD", "Word .docx published — saved to your Downloads.");
+            await export(strand.Id);
+            Toast.Success(tag, $"{label} published — saved to your Downloads.");
         }
-        catch (Exception ex) { Toast.Error("WORD-FAIL", ex.Message); }
-        finally { docxBusy = false; await InvokeAsync(StateHasChanged); }
+        catch (Exception ex) { Toast.Error($"{tag}-FAIL", ex.Message); }
+        finally { exportBusy = false; await InvokeAsync(StateHasChanged); }
     }
 
     private async Task StopAsync()

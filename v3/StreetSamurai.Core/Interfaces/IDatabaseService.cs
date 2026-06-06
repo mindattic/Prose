@@ -7,7 +7,6 @@ namespace StreetSamurai.Core.Interfaces;
 public interface IDatabaseService
 {
     List<CharacterData> Characters { get; }
-    List<FacetData> Facets { get; }
     List<DistrictData> Districts { get; }
     List<FactionData> Factions { get; }
     List<CorponationData> Corponations { get; }

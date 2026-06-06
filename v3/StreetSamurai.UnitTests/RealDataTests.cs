@@ -449,7 +449,6 @@ public class RealDataTests
 
     private DatabaseService BuildDatabaseService() => new(
         new CharacterRepository(paths),
-        new FacetRepository(paths),
         new DistrictRepository(paths),
         new FactionRepository(paths),
         new CorponationRepository(paths),

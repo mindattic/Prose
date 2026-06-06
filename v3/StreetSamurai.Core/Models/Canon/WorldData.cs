@@ -90,7 +90,6 @@ public class CharacterProfileData
     [JsonPropertyName("genre")] public string Genre { get; set; } = "";
     [JsonPropertyName("arc")] public string Arc { get; set; } = "";
     [JsonPropertyName("augmentation")] public string Augmentation { get; set; } = "";
-    [JsonPropertyName("facets")] public List<string> Facets { get; set; } = [];
 }
 
 /// <summary>
@@ -153,7 +152,6 @@ public class Database
     [JsonPropertyName("version")] public int Version { get; set; } = 1;
     [JsonPropertyName("generated_at")] public DateTime GeneratedAt { get; set; }
     [JsonPropertyName("characters")] public List<CharacterData> Characters { get; set; } = [];
-    [JsonPropertyName("facets")] public List<FacetData> Facets { get; set; } = [];
     [JsonPropertyName("districts")] public List<DistrictData> Districts { get; set; } = [];
     [JsonPropertyName("factions")] public List<FactionData> Factions { get; set; } = [];
     [JsonPropertyName("corponations")] public List<CorponationData> Corponations { get; set; } = [];

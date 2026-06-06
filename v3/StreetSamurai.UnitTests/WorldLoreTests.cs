@@ -25,7 +25,6 @@ public class WorldLoreTests
     [TestCase(typeof(QuoteData))]
     [TestCase(typeof(VocabularyData))]
     [TestCase(typeof(ArchetypeData))]
-    [TestCase(typeof(FacetData))]
     [TestCase(typeof(MotifData))]
     public void WorldRecordTypes_ImplementIWorldRecord_NotICanonEntity(Type t)
     {
@@ -39,7 +38,6 @@ public class WorldLoreTests
     [TestCase(typeof(QuoteData))]
     [TestCase(typeof(VocabularyData))]
     [TestCase(typeof(ArchetypeData))]
-    [TestCase(typeof(FacetData))]
     [TestCase(typeof(MotifData))]
     public void WorldRecordTypes_DoNotHaveRating(Type t)
     {

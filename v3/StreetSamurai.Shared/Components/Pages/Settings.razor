@@ -557,12 +557,22 @@
                     </div>
                 </div>
                 <div class="row g-3 mt-2">
-                    <div class="col-md-12">
+                    <div class="col-md-8">
                         <label class="form-label text-muted">Publish output folder</label>
                         <input type="text" class="form-control bg-dark text-light border-secondary"
                                placeholder="Leave blank to use your Downloads folder"
                                @bind="SettingsSvc.PublishOutputDirectory" @bind:event="onchange" />
                         <div class="form-text text-muted">Where Publish drops the combined audio file so it's easy to find. Blank = your Downloads folder. The in-app player keeps its own internal copy.</div>
+                    </div>
+                    <div class="col-md-4">
+                        <label class="form-label text-muted">Audiobook quality</label>
+                        <select class="form-select bg-dark text-light border-secondary" @bind="SettingsSvc.AudiobookFormat">
+                            @foreach (var (key, label, _) in StreetSamurai.Core.Services.SettingsService.AudiobookFormats)
+                            {
+                                <option value="@key">@label</option>
+                            }
+                        </select>
+                        <div class="form-text text-muted">Format/bitrate of the published audiobook file. The narration is always fetched from ElevenLabs at the highest fidelity your tier allows (lossless when available); this controls the final encode you receive.</div>
                     </div>
                 </div>
                 <div class="row g-3 mt-2">
@@ -590,6 +600,69 @@
                             {
                                 <small class="ms-2 @(ttsTestSuccess ? "text-success" : "text-warning")">@ttsTestResult</small>
                             }
+                        }
+                    </div>
+                </div>
+
+                @* Tier & credits — what your ElevenLabs plan unlocks + characters remaining. *@
+                <div class="row g-3 mt-2">
+                    <div class="col-12">
+                        <div class="d-flex align-items-center gap-2 flex-wrap">
+                            <button class="btn btn-sm btn-outline-info" @onclick="CheckTier" disabled="@(!ttsConfigured || checkingTier)">
+                                @if (checkingTier) { <span class="spinner-border spinner-border-sm me-1"></span> }
+                                else { <i class="bi bi-clipboard-data me-1"></i> }
+                                Check tier &amp; credits
+                            </button>
+                            @if (tierError != null)
+                            {
+                                <small class="text-warning">@tierError</small>
+                            }
+                        </div>
+
+                        @if (subscription != null)
+                        {
+                            <div class="border border-secondary rounded p-3 mt-2 bg-black">
+                                <div class="d-flex flex-wrap align-items-center gap-3 mb-2">
+                                    <span>Tier: <span class="badge bg-info text-dark text-capitalize">@subscription.Tier</span></span>
+                                    @if (!string.IsNullOrWhiteSpace(subscription.Status))
+                                    {
+                                        <span class="text-muted small text-capitalize">Status: @subscription.Status</span>
+                                    }
+                                </div>
+
+                                <div class="d-flex justify-content-between small mb-1">
+                                    <span class="text-muted">Character credits <span class="text-secondary">(ElevenLabs bills per character, not per token)</span></span>
+                                    <span><strong>@subscription.CharactersRemaining.ToString("N0")</strong> remaining of @subscription.CharacterLimit.ToString("N0")</span>
+                                </div>
+                                <div class="progress bg-secondary" style="height:8px;">
+                                    <div class="progress-bar @(subscription.UsedFraction >= 0.9 ? "bg-danger" : subscription.UsedFraction >= 0.75 ? "bg-warning" : "bg-success")"
+                                         role="progressbar" style="width:@((subscription.UsedFraction * 100).ToString("F1", System.Globalization.CultureInfo.InvariantCulture))%"></div>
+                                </div>
+                                <div class="text-muted small mt-1">
+                                    @subscription.CharacterCount.ToString("N0") used
+                                    @if (subscription.NextResetUtc is { } reset)
+                                    {
+                                        <text> · resets @reset.ToLocalTime().ToString("yyyy-MM-dd")</text>
+                                    }
+                                </div>
+
+                                <hr class="border-secondary my-2" />
+                                <div class="small">
+                                    <div class="text-muted mb-1">Premium output formats your tier unlocks:</div>
+                                    @if (subscription.UnlockedPremiumFormats.Count == 0)
+                                    {
+                                        <span class="text-muted">Standard formats only (up to <code>mp3_44100_128</code>). Creator unlocks 192 kbps MP3; Pro unlocks lossless PCM.</span>
+                                    }
+                                    else
+                                    {
+                                        @foreach (var f in subscription.UnlockedPremiumFormats)
+                                        {
+                                            <span class="badge bg-success me-1">@f</span>
+                                        }
+                                        <span class="text-muted ms-1">— plus all standard formats. The audiobook publisher auto-picks the best of these.</span>
+                                    }
+                                </div>
+                            </div>
                         }
                     </div>
                 </div>
@@ -932,6 +1005,9 @@
     private bool testingTts;
     private string? ttsTestResult;
     private bool ttsTestSuccess;
+    private bool checkingTier;
+    private string? tierError;
+    private TtsSubscription? subscription;
     private bool confirmReset;
     private bool rebuilding;
     private bool validating;
@@ -1212,6 +1288,20 @@
         }
         catch (Exception ex) { ttsTestSuccess = false; ttsTestResult = ex.Message; }
         finally { testingTts = false; }
+    }
+
+    /// <summary>Query ElevenLabs for the account's tier, character credits, and
+    /// the premium output formats the plan unlocks.</summary>
+    private async Task CheckTier()
+    {
+        checkingTier = true; tierError = null;
+        try
+        {
+            subscription = await TtsSvc.GetSubscriptionAsync();
+            if (subscription == null) tierError = "Configure your ElevenLabs API key first.";
+        }
+        catch (Exception ex) { tierError = ex.Message; subscription = null; }
+        finally { checkingTier = false; }
     }
 
     private void SaveSettings() { _ = SettingsSvc.TtsModel; }
