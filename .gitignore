@@ -41,3 +41,6 @@ node_modules/
 cypress/screenshots/
 cypress/videos/
 cypress/downloads/
+
+# Local DB backups / large dumps (never commit)
+archives/

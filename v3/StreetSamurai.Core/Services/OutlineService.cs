@@ -63,7 +63,7 @@ public class OutlineService
             "beats":[{"beat_index":0,"title":"beat title","goal":"what happens","characters_present":["names"],
             "location":"where","emotional_arc":"reader feeling","stakes":"at risk",
             "seeds":["planted threads"],"payoffs":["resolved threads"],
-            "facet_hint":"wound/ideal/id/shadow/mask/ghost","tension":5,
+            "tension":5,
             "structure_role":"Catalyst","scene_type":"scene"}]}],
             "character_arcs":[{"character":"name","want":"external conscious goal","need":"internal unconscious truth",
             "start_state":"beginning","end_state":"end","turning_point":"the moment","cost":"the price"}],
@@ -201,8 +201,6 @@ public class OutlineService
             lines.Add($"  PLANT these seeds: {string.Join("; ", beat.Seeds)}");
         if (beat.Payoffs.Count > 0)
             lines.Add($"  PAY OFF these threads: {string.Join("; ", beat.Payoffs)}");
-        if (!string.IsNullOrEmpty(beat.FacetHint))
-            lines.Add($"  Suggested facet lead: {beat.FacetHint}");
 
         // Show what's coming (so the LLM can foreshadow)
         var nextBeat = GetNextBeat(outline, beatIndex);
@@ -444,7 +442,6 @@ public class OutlineBeat
     [JsonPropertyName("stakes")] public string Stakes { get; set; } = "";
     [JsonPropertyName("seeds")] public List<string> Seeds { get; set; } = [];
     [JsonPropertyName("payoffs")] public List<string> Payoffs { get; set; } = [];
-    [JsonPropertyName("facet_hint")] public string FacetHint { get; set; } = "";
     [JsonPropertyName("tension")] public int Tension { get; set; }
     [JsonPropertyName("structure_role")] public string StructureRole { get; set; } = "";
     [JsonPropertyName("scene_type")] public string SceneType { get; set; } = "scene";

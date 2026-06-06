@@ -21,16 +21,18 @@ public class CanonGroundingService
     private readonly XrefService xref;
     private readonly CharacterRepository characters;
     private readonly IPathProvider paths;
+    private readonly FindingsService findings;
     private readonly ILogger<CanonGroundingService> log;
 
     public CanonGroundingService(
         ILlmService llm, XrefService xref, CharacterRepository characters,
-        IPathProvider paths, ILogger<CanonGroundingService> log)
+        IPathProvider paths, FindingsService findings, ILogger<CanonGroundingService> log)
     {
         this.llm = llm;
         this.xref = xref;
         this.characters = characters;
         this.paths = paths;
+        this.findings = findings;
         this.log = log;
     }
 
@@ -70,8 +72,18 @@ public class CanonGroundingService
                     entity.ScaffoldedId = stub.Id;
                     result.EntitiesScaffolded++;
                     log.LogInformation(
-                        "Canon grounding: scaffolded stub for '{Name}' (id={Id}, source='{Source}')",
+                        "Canon grounding: scaffolded PROVISIONAL stub for '{Name}' (id={Id}, source='{Source}')",
                         entity.Name, stub.Id, sourceContext);
+                    // Don't grow canon silently — flag the provisional stub for review.
+                    TryFlag(entity.Name, sourceContext,
+                        $"PROVISIONAL-ENTITY [{entity.InferredType}] '{entity.Name}' was auto-created as a needs-review stub from prose. Confirm, merge into an existing entity, or remove.");
+                }
+                else
+                {
+                    // A non-character entity named in prose that isn't in canon — surface
+                    // it (previously dropped silently) so it can be created or corrected.
+                    TryFlag(entity.Name, sourceContext,
+                        $"PROVISIONAL-ENTITY [{entity.InferredType}] '{entity.Name}' appears in prose but isn't in canon. Add it, or fix the prose to use an existing entity.");
                 }
                 result.Unresolved.Add(entity);
             }
@@ -79,6 +91,24 @@ public class CanonGroundingService
 
         SaveLog(result);
         return result;
+    }
+
+    /// <summary>Raise a low-severity PROVISIONAL-ENTITY finding so unknown
+    /// entities are surfaced for review instead of silently scaffolded/dropped.</summary>
+    private void TryFlag(string name, string source, string summary)
+    {
+        try
+        {
+            findings.Upsert(
+                filePath:     string.IsNullOrWhiteSpace(source) ? "canon-grounding" : source,
+                chapterId:    null,
+                category:     FindingCategory.Other,
+                severity:     FindingSeverity.Low,
+                summary:      summary,
+                snippet:      null,
+                suggestedFix: "Review in /findings: confirm, merge into an existing entity, create it, or correct the prose.");
+        }
+        catch (Exception ex) { log.LogWarning(ex, "Failed to flag provisional entity {Name}", name); }
     }
 
     private async Task<List<ProposedEntity>> ExtractEntitiesAsync(

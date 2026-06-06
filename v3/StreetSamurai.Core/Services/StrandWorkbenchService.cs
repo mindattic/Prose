@@ -183,7 +183,6 @@ public class StrandWorkbenchService
         beat.Synopsis       = string.IsNullOrWhiteSpace(update.Synopsis)      ? null : update.Synopsis.Trim();
         beat.EmotionalTone  = string.IsNullOrWhiteSpace(update.EmotionalTone) ? null : update.EmotionalTone.Trim().ToLowerInvariant();
         beat.PaceHint       = string.IsNullOrWhiteSpace(update.PaceHint)      ? null : update.PaceHint.Trim().ToLowerInvariant();
-        beat.FacetTag       = string.IsNullOrWhiteSpace(update.FacetTag)      ? null : update.FacetTag.Trim().ToUpperInvariant();
         beat.StructureRole  = string.IsNullOrWhiteSpace(update.StructureRole) ? null : update.StructureRole.Trim();
         beat.Act            = update.Act;
         beat.SceneType      = string.IsNullOrWhiteSpace(update.SceneType)     ? "scene" : update.SceneType.Trim();
@@ -280,7 +279,6 @@ public class StrandWorkbenchService
                 StructureRole  = s.StructureRole,
                 Act            = s.Act,
                 SceneType      = s.SceneType,
-                FacetTag       = s.FacetTag,
                 EmotionalTone  = s.EmotionalTone,
                 PaceHint       = s.PaceHint,
                 GapAfterMs     = s.GapAfterMs,
@@ -560,7 +558,6 @@ public class StrandWorkbenchService
             Text          = secondHalf,
             TextHash      = ComputeTextHash(secondHalf),
             SceneType     = target.SceneType,
-            FacetTag      = target.FacetTag,
             EmotionalTone = target.EmotionalTone,
             PaceHint      = target.PaceHint,
             Act           = target.Act,
@@ -626,7 +623,6 @@ public class StrandWorkbenchService
             Text          = secondHalf,
             TextHash      = ComputeTextHash(secondHalf),
             SceneType     = target.SceneType,
-            FacetTag      = target.FacetTag,
             EmotionalTone = target.EmotionalTone,
             PaceHint      = target.PaceHint,
             Act           = target.Act,
@@ -703,7 +699,6 @@ public class StrandWorkbenchService
                 Text          = paragraphs[i],
                 TextHash      = ComputeTextHash(paragraphs[i]),
                 SceneType     = target.SceneType,
-                FacetTag      = target.FacetTag,
                 EmotionalTone = target.EmotionalTone,
                 PaceHint      = target.PaceHint,
                 Act           = target.Act,
@@ -1585,18 +1580,10 @@ public class StrandWorkbenchService
                 EpisodeAudioService.WriteWavHeader(fs, checked((int)pcmTotal), 44100, 1, 16);
             }
 
-            byte[] finalBytes; string ext;
-            if (!string.IsNullOrEmpty(ffmpeg))
-            {
-                var tmpMp3 = Path.Combine(Path.GetTempPath(), $"ss-audiobook-{Guid.CreateVersion7():N}.mp3");
-                try
-                {
-                    await TranscodeWavToMp3Async(ffmpeg, tmpWav, tmpMp3, ct);
-                    finalBytes = await File.ReadAllBytesAsync(tmpMp3, ct); ext = "mp3";
-                }
-                finally { try { File.Delete(tmpMp3); } catch { } }
-            }
-            else { finalBytes = await File.ReadAllBytesAsync(tmpWav, ct); ext = "wav"; }
+            // Encode the assembled lossless WAV to the user's configured delivery
+            // format (Settings → Audiobook quality; default 320 kbps MP3). Falls
+            // back to the lossless WAV when ffmpeg is unavailable.
+            var (finalBytes, ext) = await EncodeAudiobookAsync(ffmpeg, tmpWav, ct);
 
             await audioStore.WriteCombinedAsync(strand.Slug, ext, finalBytes, ct);
 
@@ -1810,28 +1797,13 @@ public class StrandWorkbenchService
                     db.StrandAudioEvents.Add(NewAudioEvent(strandId, null, pub.Id, "wav-exported",
                         $"intermediate combined WAV, {new FileInfo(tmp).Length} bytes"));
 
-                    if (!string.IsNullOrEmpty(ffmpeg))
-                    {
-                        var tmpMp3 = Path.Combine(Path.GetTempPath(), $"ss-combine-mp3-{Guid.CreateVersion7():N}.mp3");
-                        try
-                        {
-                            await TranscodeWavToMp3Async(ffmpeg, tmp, tmpMp3, ct);
-                            combinedBytes = await File.ReadAllBytesAsync(tmpMp3, ct);
-                            await audioStore.WriteCombinedAsync(strand.Slug, "mp3", combinedBytes, ct);
-                            finalExt = "mp3";
-                            db.StrandAudioEvents.Add(NewAudioEvent(strandId, null, pub.Id, "mp3-produced",
-                                $"{strand.Slug}/strand.mp3, {combinedBytes.Length} bytes"));
-                        }
-                        finally { try { File.Delete(tmpMp3); } catch { } }
-                    }
-                    else
-                    {
-                        // No ffmpeg → publish the lossless WAV as-is.
-                        log.LogWarning("ffmpeg not found — publishing lossless WAV instead of MP3 for strand {S}", strandId);
-                        combinedBytes = await File.ReadAllBytesAsync(tmp, ct);
-                        await audioStore.WriteCombinedAsync(strand.Slug, "wav", combinedBytes, ct);
-                        finalExt = "wav";
-                    }
+                    // Encode to the configured delivery format (default 320 kbps
+                    // MP3), or ship the lossless WAV when ffmpeg is unavailable or
+                    // WAV is the selected format.
+                    (combinedBytes, finalExt) = await EncodeAudiobookAsync(ffmpeg, tmp, ct);
+                    await audioStore.WriteCombinedAsync(strand.Slug, finalExt, combinedBytes, ct);
+                    db.StrandAudioEvents.Add(NewAudioEvent(strandId, null, pub.Id, "audio-produced",
+                        $"{strand.Slug}/strand.{finalExt}, {combinedBytes.Length} bytes"));
                 }
                 finally { try { File.Delete(tmp); } catch { } }
             }
@@ -1975,10 +1947,41 @@ public class StrandWorkbenchService
             Detail = detail is { Length: > 1000 } d ? d[..1000] : detail,
         };
 
-    /// <summary>Transcode a combined WAV to MP3 via ffmpeg (libmp3lame, VBR ~q2
-    /// ≈190 kbps). Throws on a non-zero exit so the publish run records the
-    /// failure rather than silently shipping a missing/partial file.</summary>
-    private async Task TranscodeWavToMp3Async(string ffmpegPath, string wavPath, string mp3Path, CancellationToken ct)
+    /// <summary>Encode the assembled combined WAV to the user's configured
+    /// audiobook delivery format (Settings → <see cref="SettingsService.AudiobookFormat"/>;
+    /// default 320 kbps MP3). Returns the encoded bytes and the file extension.
+    /// When ffmpeg is missing — or the chosen format is lossless WAV — the WAV is
+    /// delivered as-is with no re-encode. The ElevenLabs <em>source</em> is always
+    /// fetched at the best fidelity the tier allows; this controls only the final
+    /// container/bitrate the listener receives.</summary>
+    private async Task<(byte[] Bytes, string Ext)> EncodeAudiobookAsync(string? ffmpegPath, string wavPath, CancellationToken ct)
+    {
+        var (ext, args) = settings?.ResolveAudiobookEncode()
+            ?? ("mp3", new[] { "-codec:a", "libmp3lame", "-b:a", "320k" });
+
+        if (string.IsNullOrEmpty(ffmpegPath) || args is null)
+        {
+            // No encoder available, or lossless-WAV requested → ship the WAV.
+            if (string.IsNullOrEmpty(ffmpegPath) && ext != "wav")
+                log.LogWarning("ffmpeg not found — delivering lossless WAV instead of {Ext}", ext);
+            return (await File.ReadAllBytesAsync(wavPath, ct), "wav");
+        }
+
+        var outPath = Path.Combine(Path.GetTempPath(), $"ss-audiobook-{Guid.CreateVersion7():N}.{ext}");
+        try
+        {
+            await EncodeWavAsync(ffmpegPath, wavPath, outPath, args, ct);
+            return (await File.ReadAllBytesAsync(outPath, ct), ext);
+        }
+        finally { try { File.Delete(outPath); } catch { } }
+    }
+
+    /// <summary>Run ffmpeg to encode <paramref name="wavPath"/> into
+    /// <paramref name="outPath"/> with the given audio-codec argument list (e.g.
+    /// <c>-codec:a libmp3lame -b:a 320k</c>). Throws on a non-zero exit so the
+    /// publish run records the failure rather than silently shipping a
+    /// missing/partial file.</summary>
+    private async Task EncodeWavAsync(string ffmpegPath, string wavPath, string outPath, string[] codecArgs, CancellationToken ct)
     {
         var psi = new System.Diagnostics.ProcessStartInfo
         {
@@ -1990,18 +1993,17 @@ public class StrandWorkbenchService
         };
         psi.ArgumentList.Add("-y");
         psi.ArgumentList.Add("-i"); psi.ArgumentList.Add(wavPath);
-        psi.ArgumentList.Add("-codec:a"); psi.ArgumentList.Add("libmp3lame");
-        psi.ArgumentList.Add("-qscale:a"); psi.ArgumentList.Add("2");
-        psi.ArgumentList.Add(mp3Path);
+        foreach (var a in codecArgs) psi.ArgumentList.Add(a);
+        psi.ArgumentList.Add(outPath);
         using var proc = System.Diagnostics.Process.Start(psi)
-            ?? throw new InvalidOperationException("Failed to start ffmpeg for WAV->MP3 transcode.");
+            ?? throw new InvalidOperationException("Failed to start ffmpeg for audiobook encode.");
         // Drain both pipes concurrently before awaiting exit to avoid a deadlock.
         var outTask = proc.StandardOutput.ReadToEndAsync(ct);
         var errTask = proc.StandardError.ReadToEndAsync(ct);
         await proc.WaitForExitAsync(ct);
         await outTask; var stderr = await errTask;
         if (proc.ExitCode != 0)
-            throw new InvalidOperationException($"ffmpeg WAV->MP3 failed (exit {proc.ExitCode}): {stderr}");
+            throw new InvalidOperationException($"ffmpeg audiobook encode failed (exit {proc.ExitCode}): {stderr}");
     }
 
     /// <summary>Decode an MP3 segment (as returned by ElevenLabs on non-Pro tiers)
@@ -2636,7 +2638,6 @@ public class StrandWorkbenchService
         string? Synopsis,
         string? EmotionalTone,
         string? PaceHint,
-        string? FacetTag,
         string? StructureRole,
         int Act,
         string? SceneType,

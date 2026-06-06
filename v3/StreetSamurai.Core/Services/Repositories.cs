@@ -264,14 +264,6 @@ public class FactionRepository : EfRepository<FactionData>
         : base(TestDbFactory.For(paths, "faction"), "faction", f => f.Name) { }
 }
 
-public class FacetRepository : EfRepository<FacetData>
-{
-    public FacetRepository(IDbContextFactory<StreetSamuraiDbContext> db)
-        : base(db, "facet", f => f.Name) { }
-    public FacetRepository(IPathProvider paths)
-        : base(TestDbFactory.For(paths, "facet"), "facet", f => f.Name) { }
-}
-
 public class WorldbuildingDocRepository : EfRepository<WorldbuildingDocument>
 {
     public WorldbuildingDocRepository(IDbContextFactory<StreetSamuraiDbContext> db)

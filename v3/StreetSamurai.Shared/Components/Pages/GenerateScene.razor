@@ -1,5 +1,5 @@
 @page "/generate"
-@attribute [Authorize(Roles = "Contributor,Administrator")]
+@attribute [Authorize(Policy = MaPolicies.Admin)]
 @using StreetSamurai.Core.Models
 @using StreetSamurai.Core.Interfaces
 @inject SceneGenerationService SceneGen
@@ -50,9 +50,9 @@
                         <label class="form-label text-muted">Characters</label>
                         <input type="text" class="form-control bg-dark text-light border-secondary"
                                placeholder="Kyle, Sable, Pixel..."
-                               title="Comma-separated names — must match character YAML files. Facet weights are blended from their profiles."
+                               title="Comma-separated names — must match canon characters. Their documented psychology and speech patterns drive each beat's voice."
                                @bind="characterInput" />
-                        <small class="text-muted">Comma-separated. Their facet weights drive which psychological voice leads each beat.</small>
+                        <small class="text-muted">Comma-separated. Each character's documented psychology + speech patterns shape the narration.</small>
                     </div>
                     <div class="mb-3">
                         <label class="form-label text-muted">Themes / Beat Goals (optional)</label>

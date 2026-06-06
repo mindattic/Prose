@@ -4,7 +4,7 @@
 
 A cyberpunk narrative engine for literary fiction set in Meridian 88 -- the Great Lakes Metropolitan Zone, year 2200. A continuous 500km urban sprawl along the entire western Lake Michigan shoreline extending into Lake Superior and across the Canadian border, housing 100 million+ people in a tiered society where corponations (corporate nation-states) have replaced governments, and freelancers survive in the gaps between corporate territories.
 
-The system generates prose through a psychology-driven "facet" system -- six competing psychological voices per character that activate based on narrative context. Built on .NET 10 as a Blazor Server web application.
+The system generates prose grounded in documented canon -- each character's psychology, speech patterns, and narration voice drive how their beats read, retrieved from the world database and relationship graph. Built on .NET 10 as a Blazor Server web application.
 
 This is not a chatbot. It is a structured writing tool with a rich HTML editor, autonomous story generation, persistent world state, and a living relationship graph. The AI generates and refines text. You control what stays and what gets rewritten.
 
@@ -415,60 +415,11 @@ Cross-story consequence bleed. Actions in Story 1 affect Story 2:
 
 ---
 
-## The Six-Facet System
+## Character Voice (the facet system is retired)
 
-The core narrative engine. Every character has six psychological facets, each a competing voice that drives or colors the prose.
+> **Retired 2026.** The earlier six-facet system (Wound / Ideal / Id / Shadow / Mask / Ghost — competing psychological voices selected per beat) has been fully removed: the model, DB tables, `FacetTag`/`FacetHint` columns, selection service, and per-beat tags are all gone.
 
-### The Facets
-
-| Facet | Domain | What It Drives | Color |
-|-------|--------|----------------|-------|
-| **Wound** | Trauma, emotional pain | Vulnerability, flashbacks, self-destruction | #dc3545 |
-| **Ideal** | Aspirational self | Hope, sacrifice, moral clarity | #198754 |
-| **Id** | Raw desire, survival instinct | Hunger, rage, lust, self-preservation | #ffc107 |
-| **Shadow** | Denied aspects | Hypocrisy, projection, hidden cruelty | #6f42c1 |
-| **Mask** | Social facade | Performance, manipulation, charm | #0dcaf0 |
-| **Ghost** | Haunted past | Memory, regret, the weight of history | #6c757d |
-
-### Facet Definition Structure
-
-Each facet (from `engine_data/facets/`) has:
-- **Triggers** -- Context keywords that activate it (e.g., Wound triggers on `"violence"`, `"betrayal"`, `"loss"`)
-- **SystemPrompt** -- LLM personality directive when this facet leads
-- **VoiceTone** -- Prose style description (e.g., "raw, trembling, stripped bare")
-- **VoiceStyle** -- Narrative technique
-- **Prohibitions** -- What this voice must never do
-- **CoreMemories** -- Recurring memories the facet surfaces
-- **Model** -- LLM model override (default: `claude-sonnet-4-6`)
-- **Temperature** -- Generation temperature (default: 0.8)
-
-### Facet Weights
-
-Each character has a `FacetWeights` in their `Psychology`:
-
-```
-{ wound: 0.7, ideal: 0.4, id: 0.5, shadow: 0.6, mask: 0.3, ghost: 0.8 }
-```
-
-For ensemble casts (multiple characters in a scene), weights are averaged via `DatabaseService.GetBlendedWeights()`.
-
-### Facet Selection Algorithm
-
-`FacetService.SelectFacets(weights, contextTags, recentLeads)`:
-
-1. For each of the 6 facets, compute a score:
-   - Count how many of the facet's `Triggers` overlap with the current `contextTags`
-   - Multiply by the character's weight for that facet
-2. Sort by score descending
-3. **Rotation enforcement**: If the top-scoring facet has been the lead for 3+ consecutive beats, demote it and pick the next
-4. Return: `(leadFacet, [supporting1, supporting2])` -- one lead voice, two supporting
-
-The **lead facet** controls the system prompt tone, LLM model/temperature, and dominant voice. The **supporting facets** surface as brief interior interjections tagged with `[FACET_NAME]` or as tonal undercurrents.
-
-### Context Tag Sources
-
-1. **ContextAnalyzerService** (scene generation): Sends scene-so-far + character relationships to LLM at temperature 0.3. Returns structured JSON with `psychological_triggers`, `dominant_emotion`, `stakes`, `tension_source`.
-2. **StoryStarterService.InferTriggers** (story starters): Keyword matching on premise text. Maps words like "betray" to `betrayal`, "augment" to `transhumanism`. Falls back to `["unknown_danger", "moral_choice"]`.
+Character voice is now sourced directly from **documented canon**: each character's `Psychology` (core fears/desires, coping mechanisms, blind spots, secret), `SpeechPatterns` (vocabulary, cadence, verbal tics, subtext, under-pressure register, example lines), and `NarrationVoice`. Those structured fields are injected into the generation prompts (see `DatabaseService.GetLiteraryRulesPrompt` / `GetToneBiblePrompt`, `DialogueService`, `StoryDirectorService.BuildPovVoiceContext`). Inner monologue is italicized stand-alone prose drawn from psychology — never an archetype schema and never bracketed `[FACET]` tags.
 
 ---
 
@@ -1548,12 +1499,11 @@ Single `html` field with contenteditable div because:
 - Easy to add new providers
 - Provider-specific quirks isolated in their own service class
 
-### Why Facets Instead of Simple Prompts
+### Why Canon-Sourced Voice Instead of Simple Prompts
 
-- Characters respond differently to the same situation based on dominant facet
-- Rotation prevents monotonous voice across long scenes
-- The selection algorithm creates emergent narrative variety
-- Supporting facets add psychological depth without overwhelming the lead voice
+- Characters respond differently to the same situation because their documented psychology + speech patterns are injected as constraints
+- Voice stays consistent across long scenes because it's anchored to canon fields, not re-rolled per beat
+- New winning voice moves are harvested back into those fields (see the voice-harvest pass), so each strong strand sharpens the next
 
 ### Why Eager Graph Loading
 

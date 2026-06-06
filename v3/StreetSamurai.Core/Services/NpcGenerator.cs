@@ -119,7 +119,6 @@ public class NpcGenerator
               "daily_life": "what a normal day looks like",
               "narrative_function": "what role they play in stories",
               "psychology": {
-                "facet_weights": {"wound": 0.5, "ideal": 0.5, "id": 0.5, "shadow": 0.5, "mask": 0.5, "ghost": 0.5},
                 "core_fears": ["2-3 fears"],
                 "core_desires": ["2-3 desires"],
                 "coping_mechanisms": ["2-3 mechanisms"],

@@ -294,6 +294,82 @@ public class ElevenLabsTtsService : ITtsService
         return DefaultModels();
     }
 
+    /// <summary>
+    /// Fetch the account's subscription snapshot from <c>/v1/user/subscription</c>:
+    /// the tier, the character credit quota (ElevenLabs bills per character, not
+    /// per token), when it next resets, and — derived from the tier — the premium
+    /// output formats the account unlocks. Returns <c>null</c> when no API key is
+    /// configured; throws on an API error so the UI can surface the reason.
+    /// </summary>
+    public async Task<TtsSubscription?> GetSubscriptionAsync(CancellationToken ct = default)
+    {
+        if (string.IsNullOrWhiteSpace(settings.ElevenLabsApiKey)) return null;
+
+        using var request = new HttpRequestMessage(HttpMethod.Get, "https://api.elevenlabs.io/v1/user/subscription");
+        request.Headers.Add("xi-api-key", settings.ElevenLabsApiKey);
+
+        var response = await http.SendAsync(request, ct);
+        if (!response.IsSuccessStatusCode)
+        {
+            string body;
+            try { body = await response.Content.ReadAsStringAsync(ct); }
+            catch { body = "<unreadable response body>"; }
+            if (body.Length > 500) body = body[..500] + "…";
+            throw new HttpRequestException(
+                $"ElevenLabs subscription {(int)response.StatusCode} {response.StatusCode}: {body}",
+                inner: null, statusCode: response.StatusCode);
+        }
+
+        var json = await response.Content.ReadAsStringAsync(ct);
+        using var doc = JsonDocument.Parse(json);
+        var root = doc.RootElement;
+
+        var tier   = root.TryGetProperty("tier", out var t) ? t.GetString() ?? "" : "";
+        var status = root.TryGetProperty("status", out var s) ? s.GetString() ?? "" : "";
+        long count = root.TryGetProperty("character_count", out var cc) && cc.TryGetInt64(out var cv) ? cv : 0;
+        long limit = root.TryGetProperty("character_limit", out var cl) && cl.TryGetInt64(out var lv) ? lv : 0;
+        DateTimeOffset? reset =
+            root.TryGetProperty("next_character_count_reset_unix", out var nr)
+            && nr.TryGetInt64(out var unix) && unix > 0
+                ? DateTimeOffset.FromUnixTimeSeconds(unix)
+                : null;
+
+        return new TtsSubscription(tier, count, limit, status, reset, UnlockedPremiumFormats(tier));
+    }
+
+    /// <summary>
+    /// The premium <c>output_format</c> values an ElevenLabs tier unlocks beyond
+    /// the universally-available set (mp3 up to 44100_128, low-rate pcm, opus,
+    /// μ-law). <c>mp3_44100_192</c> needs Creator+, lossless <c>pcm_44100</c> /
+    /// <c>pcm_48000</c> need Pro+. Derived from the tier name so the check costs
+    /// no characters; the audiobook publisher still negotiates the real format
+    /// live and falls back on any rejection.
+    /// </summary>
+    private static IReadOnlyList<string> UnlockedPremiumFormats(string tier)
+    {
+        var rank = TierRank(tier);
+        var list = new List<string>();
+        if (rank >= TierRank("creator")) list.Add("mp3_44100_192");
+        if (rank >= TierRank("pro")) { list.Add("pcm_44100"); list.Add("pcm_48000"); }
+        return list;
+    }
+
+    /// <summary>Ordinal rank of the known ElevenLabs tiers (free lowest). An
+    /// unrecognised paid tier is assumed to be at least Starter so we don't
+    /// wrongly hide premium formats from a brand-new tier name.</summary>
+    private static int TierRank(string? tier) => (tier ?? "").Trim().ToLowerInvariant() switch
+    {
+        "free" or "free_v2" => 0,
+        "starter"           => 1,
+        "creator"           => 2,
+        "pro"               => 3,
+        "scale"             => 4,
+        "business"          => 5,
+        "enterprise"        => 6,
+        ""                  => 0,
+        _                   => 1,
+    };
+
     /// <summary>Known-good text-to-speech models, used when <c>/v1/models</c>
     /// is unavailable. v3 first (the default), then the v2 family.</summary>
     private static List<TtsModel> DefaultModels() =>
@@ -345,6 +421,25 @@ public record TtsVoice
     public List<string> HighQualityModelIds { get; init; } = [];
     /// <summary>True when the voice is flagged high-quality for an eleven_v3 model.</summary>
     public bool SupportsV3 => HighQualityModelIds.Any(m => m.StartsWith("eleven_v3", StringComparison.OrdinalIgnoreCase));
+}
+
+/// <summary>A snapshot of an ElevenLabs account. ElevenLabs meters usage in
+/// <em>characters</em> (its credit unit), not tokens, so the quota fields count
+/// characters. <paramref name="UnlockedPremiumFormats"/> are the premium
+/// <c>output_format</c> values the tier allows beyond the universal set.</summary>
+public record TtsSubscription(
+    string Tier,
+    long CharacterCount,
+    long CharacterLimit,
+    string Status,
+    DateTimeOffset? NextResetUtc,
+    IReadOnlyList<string> UnlockedPremiumFormats)
+{
+    /// <summary>Characters still available before the quota resets.</summary>
+    public long CharactersRemaining => Math.Max(0, CharacterLimit - CharacterCount);
+    /// <summary>Fraction of the quota consumed, clamped to [0,1].</summary>
+    public double UsedFraction => CharacterLimit > 0
+        ? Math.Clamp((double)CharacterCount / CharacterLimit, 0, 1) : 0;
 }
 
 /// <summary>One ElevenLabs TTS-capable model. <paramref name="IsV3"/> tells the

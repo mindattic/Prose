@@ -13,7 +13,6 @@ public record LiteraryRules
     public List<string> ParagraphRequirements { get; init; } = [];
     public List<string> Prohibitions { get; init; } = [];
     public StructuralRules Structural { get; init; } = new();
-    public FacetRules FacetRules { get; init; } = new();
 }
 
 public record StructuralRules
@@ -24,14 +23,6 @@ public record StructuralRules
     public string Consequence { get; init; } = "";
     public string Ending { get; init; } = "";
     public string Pace { get; init; } = "";
-}
-
-public record FacetRules
-{
-    public string Interjections { get; init; } = "";
-    public string Disagreement { get; init; } = "";
-    public string LeadVoice { get; init; } = "";
-    public string Rotation { get; init; } = "";
 }
 
 public record StoryBible

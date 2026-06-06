@@ -158,7 +158,6 @@ public class ChapterRepository : IChapterRepository
                 Act            = beat.Act,
                 StructureRole  = beat.StructureRole ?? "",
                 SceneType      = beat.SceneType ?? "scene",
-                FacetTag       = beat.FacetTag ?? "",
             });
 
         var rec = db.Records.FirstOrDefault(r => r.EntityId == id);

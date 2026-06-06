@@ -55,6 +55,8 @@ public class StreetSamuraiDbContext : DbContext
     // Persona reader-reviews + their Amazon-style aggregate summary.
     public DbSet<StrandReview>          StrandReviews          => Set<StrandReview>();
     public DbSet<StrandReviewSummary>   StrandReviewSummaries  => Set<StrandReviewSummary>();
+    // Append-only audit trail of voice-rule changes (directive / manual_edit / harvest).
+    public DbSet<VoiceChangeLogEntry>   VoiceChangeLog         => Set<VoiceChangeLogEntry>();
     // Named, reusable persona panels (focus groups) + their membership.
     public DbSet<FocusGroup>            FocusGroups            => Set<FocusGroup>();
     public DbSet<FocusGroupMember>      FocusGroupMembers      => Set<FocusGroupMember>();
@@ -181,10 +183,6 @@ public class StreetSamuraiDbContext : DbContext
     public DbSet<TechnologyBaseTechnology>  TechnologyBaseTechnologies => Set<TechnologyBaseTechnology>();
     public DbSet<TechnologyEnables>         TechnologyEnabledList     => Set<TechnologyEnables>();
     public DbSet<TechnologyStoryHook>       TechnologyStoryHooks      => Set<TechnologyStoryHook>();
-    public DbSet<Facet>                    Facets                  => Set<Facet>();
-    public DbSet<FacetTrigger>             FacetTriggers           => Set<FacetTrigger>();
-    public DbSet<FacetCoreMemory>          FacetCoreMemories       => Set<FacetCoreMemory>();
-    public DbSet<FacetVoiceProhibition>    FacetVoiceProhibitions  => Set<FacetVoiceProhibition>();
     public DbSet<Motif>                    Motifs                  => Set<Motif>();
     public DbSet<MotifAppearance>          MotifAppearances        => Set<MotifAppearance>();
     public DbSet<Entertainment>            EntertainmentItems      => Set<Entertainment>();
@@ -377,6 +375,16 @@ public class StreetSamuraiDbContext : DbContext
             e.HasIndex(x => x.StrandId).IsUnique();
             e.HasOne(x => x.Strand).WithMany()
                 .HasForeignKey(x => x.StrandId).OnDelete(DeleteBehavior.Cascade);
+        });
+        b.Entity<VoiceChangeLogEntry>(e =>
+        {
+            e.HasKey(x => x.Id);
+            e.Property(x => x.Source).HasMaxLength(20).IsRequired();
+            e.Property(x => x.RuleTarget).HasMaxLength(80);
+            e.Property(x => x.Status).HasMaxLength(20).IsRequired();
+            e.HasIndex(x => new { x.Status, x.CreatedAt });
+            e.HasIndex(x => x.StrandId);
+            // No FK to Strands: entries outlive the strands they were learned from.
         });
         b.Entity<FocusGroup>(e =>
         {
@@ -1435,19 +1443,6 @@ public class StreetSamuraiDbContext : DbContext
         b.Entity<TechnologyEnables>(e => { e.HasKey(x => x.Id); e.Property(x => x.Alias).HasMaxLength(450); e.HasOne(x => x.Technology).WithMany(x => x.Enables).HasForeignKey(x => x.TechnologyId).OnDelete(DeleteBehavior.Cascade); e.HasOne(x => x.Enabled).WithMany().HasForeignKey(x => x.EnabledEntityId).OnDelete(DeleteBehavior.Restrict); e.HasIndex(x => new { x.TechnologyId, x.Position }); e.HasIndex(x => x.EnabledEntityId); });
         b.Entity<TechnologyStoryHook>(e => { e.HasKey(x => x.Id); e.HasOne(x => x.Technology).WithMany(x => x.StoryHooks).HasForeignKey(x => x.TechnologyId).OnDelete(DeleteBehavior.Cascade); e.HasIndex(x => new { x.TechnologyId, x.Position }); });
 
-        // Facet
-        b.Entity<Facet>(e => {
-            e.HasKey(x => x.Id);
-            e.Property(x => x.Name).HasMaxLength(450);
-            e.Property(x => x.Label).HasMaxLength(200);
-            e.Property(x => x.Domain).HasMaxLength(120);
-            e.Property(x => x.Model).HasMaxLength(80);
-            e.HasOne(x => x.Entity).WithOne().HasForeignKey<Facet>(x => x.Id).OnDelete(DeleteBehavior.Cascade);
-            e.HasIndex(x => x.Domain); e.HasIndex(x => x.Name);
-        });
-        b.Entity<FacetTrigger>(e => { e.HasKey(x => x.Id); e.HasOne(x => x.Facet).WithMany(x => x.Triggers).HasForeignKey(x => x.FacetId).OnDelete(DeleteBehavior.Cascade); e.HasIndex(x => new { x.FacetId, x.Position }); });
-        b.Entity<FacetCoreMemory>(e => { e.HasKey(x => x.Id); e.HasOne(x => x.Facet).WithMany(x => x.CoreMemories).HasForeignKey(x => x.FacetId).OnDelete(DeleteBehavior.Cascade); e.HasIndex(x => new { x.FacetId, x.Position }); });
-        b.Entity<FacetVoiceProhibition>(e => { e.HasKey(x => x.Id); e.HasOne(x => x.Facet).WithMany(x => x.VoiceProhibitions).HasForeignKey(x => x.FacetId).OnDelete(DeleteBehavior.Cascade); e.HasIndex(x => new { x.FacetId, x.Position }); });
 
         // Motif
         b.Entity<Motif>(e => {
@@ -1838,7 +1833,6 @@ public class StreetSamuraiDbContext : DbContext
         "LabSpecimens", "LabSpecimenAliases", "LabSpecimenKnownLocations", "LabSpecimenStoryHooks",
         "Psionics", "PsionicAliases", "PsionicKnownPractitioners", "PsionicStoryHooks",
         "Technologies", "TechnologyAliases", "TechnologyDevelopers", "TechnologyBaseTechnologies", "TechnologyEnabledList", "TechnologyStoryHooks",
-        "Facets", "FacetTriggers", "FacetCoreMemories", "FacetVoiceProhibitions",
         "Motifs", "MotifAppearances",
         "EntertainmentItems", "EntertainmentAliases", "EntertainmentKnownFans", "EntertainmentStoryHooks",
         "FlyoverEntities", "FlyoverEntityAliases", "FlyoverEntityKnownLocations", "FlyoverEntityStoryHooks",

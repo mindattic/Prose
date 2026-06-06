@@ -97,17 +97,9 @@ public partial class MarkdownService
     private static string Slugify(string name) =>
         Regex.Replace(name.ToLowerInvariant().Trim(), @"[^a-z0-9]+", "_").Trim('_');
 
-    private static string GetFacetColor(string facet) => facet switch
-    {
-        "WOUND" => "#dc3545",
-        "IDEAL" => "#198754",
-        "ID" => "#ffc107",
-        "SHADOW" => "#6f42c1",
-        "MASK" => "#0dcaf0",
-        "GHOST" => "#6c757d",
-        _ => "#adb5bd",
-    };
-
+    // Legacy inline facet tags ([WOUND] [IDEAL] …) appear in older published
+    // prose; they're stripped on render (the facet system is retired — inner
+    // thoughts are now italicized prose). Kept only to clean that legacy text.
     [GeneratedRegex(@"\[(WOUND|IDEAL|ID|SHADOW|MASK|GHOST)\]", RegexOptions.IgnoreCase)]
     private static partial Regex FacetTagRegex();
 
