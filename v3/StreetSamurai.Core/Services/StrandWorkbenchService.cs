@@ -363,6 +363,84 @@ public class StrandWorkbenchService
         return strandId;
     }
 
+    /// <summary>
+    /// Convert a monolithic strand into a Collection (ARCHITECTURE.md §2c): split
+    /// its beats at <c>IsChapterStart</c> boundaries into child strands parented
+    /// under it via <c>ParentStrandId</c>. Beats are MOVED (re-pointed), never
+    /// copied or rewritten. The parent keeps its identity and becomes the
+    /// Collection (Kind='book'); each chapter becomes a child strand with its own
+    /// 100-step SortKey ladder. Any lead-in beats before the first chapter mark
+    /// form an implicit first child. Returns (childStrands, beatsMoved).
+    /// </summary>
+    public async Task<(int Children, int Beats)> SplitIntoCollectionAsync(Guid strandId, CancellationToken ct = default)
+    {
+        await using var db = await dbFactory.CreateDbContextAsync(ct);
+        var parent = await db.Strands.FirstOrDefaultAsync(s => s.Id == strandId, ct)
+            ?? throw new InvalidOperationException($"Strand {strandId} not found.");
+
+        // Guard: refuse to split a strand that is ALREADY a Collection (has child
+        // strands). Splitting its direct beats too would create a second, parallel
+        // set of chapters alongside the existing children — reconcile first.
+        var existingChildren = await db.Strands.CountAsync(s => s.ParentStrandId == strandId, ct);
+        if (existingChildren > 0)
+            throw new InvalidOperationException(
+                $"'{parent.Title}' already has {existingChildren} child strand(s) — it's already a Collection. " +
+                "Splitting its direct beats would duplicate chapters. Reconcile the existing children first.");
+
+        var rows = await db.StrandBeats.Where(sb => sb.StrandId == strandId)
+            .OrderBy(sb => sb.SortKey)
+            .Join(db.Beats, sb => sb.BeatId, b => b.Id,
+                  (sb, b) => new { sb.BeatId, sb.SortKey, b.IsChapterStart, b.BeatTitle })
+            .ToListAsync(ct);
+        if (rows.Count == 0) throw new InvalidOperationException("Strand has no beats to split.");
+
+        // Segment by chapter starts; lead-in beats (before the first mark) become chapter 1.
+        var segments = new List<(string Title, List<Guid> Beats)>();
+        foreach (var r in rows)
+        {
+            if (r.IsChapterStart || segments.Count == 0)
+            {
+                var t = (r.BeatTitle ?? "").Trim();
+                if (t.Length == 0) t = $"{parent.Title} — Chapter {segments.Count + 1}";
+                segments.Add((t, new List<Guid>()));
+            }
+            segments[^1].Beats.Add(r.BeatId);
+        }
+        if (segments.Count < 2)
+            throw new InvalidOperationException($"Strand has {segments.Count} chapter segment(s) — nothing to split. Mark IsChapterStart on beats first.");
+
+        // Drop the parent's direct beat links (beats themselves are kept and re-linked to children).
+        var oldLinks = await db.StrandBeats.Where(sb => sb.StrandId == strandId).ToListAsync(ct);
+        db.StrandBeats.RemoveRange(oldLinks);
+
+        double parentSort = 100.0;
+        int beatCount = 0;
+        foreach (var (title, beatIds) in segments)
+        {
+            var childId = Guid.CreateVersion7();
+            var slug = $"{Slugify(title)}-{childId.ToString("N")[..8]}";
+            db.Strands.Add(new Strand
+            {
+                Id = childId, Slug = slug, Title = title, Kind = "strand", Status = "draft",
+                ParentStrandId = strandId, SortKey = parentSort,
+            });
+            parentSort += 100.0;
+            double sk = 100.0;
+            foreach (var bid in beatIds)
+            {
+                db.StrandBeats.Add(new StrandBeat { StrandId = childId, BeatId = bid, SortKey = sk });
+                sk += 100.0;
+                beatCount++;
+            }
+        }
+
+        parent.Kind = "book";        // the Collection label (display only; structurally a parent strand)
+        parent.UpdatedAt = DateTime.UtcNow;
+        await db.SaveChangesAsync(ct);
+        log.LogInformation("Split '{Title}' into a Collection: {Children} child strands, {Beats} beats.", parent.Title, segments.Count, beatCount);
+        return (segments.Count, beatCount);
+    }
+
     /// <summary>Mark a strand Canon (or clear it) — the author-only trust gate
     /// (ARCHITECTURE.md §2c): "strong enough to draw conclusions about the
     /// characters and events." Stamps <see cref="Strand.CanonAt"/> when set.
