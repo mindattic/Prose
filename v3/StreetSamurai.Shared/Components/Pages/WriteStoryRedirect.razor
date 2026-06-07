@@ -1,5 +1,5 @@
 @page "/stories/write/{ProjectId}"
-@attribute [Authorize(Roles = "Contributor,Administrator")]
+@attribute [Authorize(Policy = MaPolicies.Admin)]
 @using StreetSamurai.Core.Interfaces
 @inject IChapterRepository Chapters
 @inject NavigationManager Nav

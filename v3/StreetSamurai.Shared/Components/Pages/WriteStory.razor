@@ -1,5 +1,5 @@
 @page "/stories/write-legacy/{ProjectId}"
-@attribute [Authorize(Roles = "Contributor,Administrator")]
+@attribute [Authorize(Policy = MaPolicies.Admin)]
 @using StreetSamurai.Core.Models
 @using StreetSamurai.Core.Interfaces
 @inject StoryStarterService Starter
