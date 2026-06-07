@@ -550,6 +550,20 @@ if (args.Contains("--rebuild-readmodel"))
     return;
 }
 
+// CLI mode: rebuild a strand's beats to the codified beat doctrine via LLM
+// re-segmentation (story beats + dialogue/'?' mechanics + gaps). Dry-run by
+// default; --apply backs up to markdown then replaces beats if the word-retention
+// guard passes. --all targets every doctrine-violating strand.
+//   ss --rebeat-strand (--slug <s> | --id <guid> | --all) [--apply]
+if (args.Contains("--rebeat-strand"))
+{
+    var cliBuilder = WebApplication.CreateBuilder(args);
+    cliBuilder.Services.AddStreetSamuraiServices();
+    var cliApp = cliBuilder.Build();
+    Environment.ExitCode = await RebeatStrandCli.RunAsync(args, cliApp.Services);
+    return;
+}
+
 // CLI mode: sweep a strand's prose against canon (all entity types) and queue
 // contradictions as approval-gated findings — the self-correction pass.
 //   ss --check-canon (--slug <s> | --id <guid> | --all)
