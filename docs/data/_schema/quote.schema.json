@@ -1,0 +1,17 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "$id": "ss://schema/quote",
+  "title": "StreetSamurai canon — Quote (engine_data/quotes/*.json)",
+  "description": "An in-world or out-of-world quotation. Has no name; identity is (attribution, source, quote). id derived as quote.<slug(attribution)>-<hash> at import; on disk keyed by filename.",
+  "type": "object",
+  "required": ["quote", "attribution"],
+  "additionalProperties": true,
+  "properties": {
+    "quote": { "type": "string" },
+    "attribution": { "type": "string" },
+    "source": { "type": "string" },
+    "context": { "type": "string" },
+    "category": { "type": "string" },
+    "in_world": { "type": "boolean" }
+  }
+}
