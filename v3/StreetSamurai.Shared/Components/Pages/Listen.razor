@@ -1,5 +1,5 @@
 @page "/listen"
-@attribute [Authorize(Roles = "Contributor,Administrator")]
+@attribute [Authorize(Policy = MaPolicies.Admin)]
 @using Microsoft.EntityFrameworkCore
 @using StreetSamurai.Core.Data
 @using StreetSamurai.Core.Data.Entities

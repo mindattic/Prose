@@ -1,5 +1,5 @@
 ﻿@page "/books"
-@attribute [Authorize(Roles = "Contributor,Administrator")]
+@attribute [Authorize(Policy = MaPolicies.Admin)]
 @using StreetSamurai.Core.Models
 @using StreetSamurai.Core.Interfaces
 @using StreetSamurai.Core.Services

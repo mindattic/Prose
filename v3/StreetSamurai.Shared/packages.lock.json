@@ -505,17 +505,6 @@
         "resolved": "1.0.0",
         "contentHash": "N4KeF3cpcm1PUHym1RmakkzfkEv3GRMyofVv40uXsQhCQeglr2OHNcUk2WOG51AKpGO8ynGpo9M/kFXSzghwug=="
       },
-      "MindAttic.Authentication": {
-        "type": "Transitive",
-        "resolved": "1.0.0",
-        "contentHash": "zJ79Zdj4MQwooHX2yU4I+elss+eemdVy3JGIC7+SlgA9ANu9YmRspBLasspVxTp82aQYyQD8ilr80TB+6FxQeA==",
-        "dependencies": {
-          "BCrypt.Net-Next": "4.0.3",
-          "Konscious.Security.Cryptography.Argon2": "1.3.1",
-          "Microsoft.EntityFrameworkCore.Relational": "10.0.8",
-          "MindAttic.Vault": "1.0.0"
-        }
-      },
       "MindAttic.Legion": {
         "type": "Transitive",
         "resolved": "3.0.0",
@@ -668,6 +657,15 @@
         "type": "Transitive",
         "resolved": "10.0.8",
         "contentHash": "uxrdoUKw+S1eBo0foyv3pQ13NKV4LhsgaD5FV1zya1JHoi+QveWXt6I5nrLhA4GeheRr+cjLfDy0hx7UXUyHnw=="
+      },
+      "mindattic.authentication": {
+        "type": "Project",
+        "dependencies": {
+          "BCrypt.Net-Next": "[4.0.3, )",
+          "Konscious.Security.Cryptography.Argon2": "[1.3.1, )",
+          "Microsoft.EntityFrameworkCore.Relational": "[10.0.8, )",
+          "MindAttic.Vault": "[1.0.0, )"
+        }
       },
       "streetsamurai.core": {
         "type": "Project",
