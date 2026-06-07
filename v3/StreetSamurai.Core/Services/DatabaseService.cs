@@ -233,6 +233,17 @@ public class DatabaseService : IDatabaseService
         var rules = LiteraryRules;
         var lines = new List<string>();
 
+        // What a beat IS — the codified story-beat doctrine. Emitted first so every
+        // generation/segmentation prompt is anchored on the unit it's producing.
+        var bd = rules.BeatDoctrine;
+        if (bd != null && !string.IsNullOrWhiteSpace(bd.Definition))
+        {
+            lines.Add("WHAT A BEAT IS:");
+            lines.Add($"  {bd.Definition}");
+            foreach (var r in bd.Rules)
+                lines.Add($"  - {r}");
+        }
+
         lines.Add($"SENTENCE MAX: {rules.SentenceMaxWords} words");
         if (rules.ParagraphRequirements.Any())
             lines.Add($"PARAGRAPH REQUIREMENTS: {string.Join("; ", rules.ParagraphRequirements)}");

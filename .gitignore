@@ -44,3 +44,6 @@ cypress/downloads/
 
 # Local DB backups / large dumps (never commit)
 archives/
+
+# Local CLI build output (lock-free runner)
+.cli-tmp/

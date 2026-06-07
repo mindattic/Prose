@@ -659,6 +659,7 @@ public static class ServiceCollectionExtensions
         services.AddSingleton<CanonContradictionService>();
         services.AddSingleton<CoverageService>();
         services.AddSingleton<ProseReflowService>();
+        services.AddSingleton<BeatRebuildService>();
         services.AddSingleton<StrandReviewService>();
         services.AddSingleton<StoryQualityService>();
         services.AddSingleton<StoryRefinementService>();
