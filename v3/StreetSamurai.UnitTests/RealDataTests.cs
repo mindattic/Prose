@@ -13,6 +13,15 @@ namespace StreetSamurai.UnitTests;
 [TestFixture]
 public class RealDataTests
 {
+    // Retired by the 2026-05-08 JSON→SQL canon migration: the file-based repositories below read
+    // engine/data/*.json, but the live types (people, corponations, districts, …) now live only in
+    // the SQL DB — e.g. engine/data/people/*.json is empty by design (the "no new JSON files" canon
+    // rule forbids regenerating it). Count-based assertions therefore see 0. The pure-logic tests in
+    // this fixture (Slugify, JSON-repair, graph) still run; only the file-corpus tests are ignored.
+    // To re-enable: point these at the SQL repositories / a seeded SQL test DB.
+    private const string RetiredCorpus =
+        "Retired file-based corpus (2026-05-08 JSON→SQL migration); canon is the SQL DB. See class comment.";
+
     private static readonly string EngineDataDir = Path.Combine(
         FindRepoRoot(), "engine", "data");
 
@@ -79,6 +88,7 @@ public class RealDataTests
     // â”€â”€ REPOSITORY LOADING â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
 
     [Test]
+    [Ignore(RetiredCorpus)]
     public void CharacterRepository_LoadsRealData()
     {
         var repo = new CharacterRepository(paths);
@@ -88,6 +98,7 @@ public class RealDataTests
     }
 
     [Test]
+    [Ignore(RetiredCorpus)]
     public void CharacterRepository_KyleExists()
     {
         var repo = new CharacterRepository(paths);
@@ -97,6 +108,7 @@ public class RealDataTests
     }
 
     [Test]
+    [Ignore(RetiredCorpus)]
     public void CorponationRepository_LoadsRealData()
     {
         var repo = new CorponationRepository(paths);
@@ -107,6 +119,7 @@ public class RealDataTests
     }
 
     [Test]
+    [Ignore(RetiredCorpus)]
     public void DistrictRepository_LoadsRealData()
     {
         var repo = new DistrictRepository(paths);
@@ -117,6 +130,7 @@ public class RealDataTests
     }
 
     [Test]
+    [Ignore(RetiredCorpus)]
     public void FactionRepository_LoadsRealData()
     {
         var repo = new FactionRepository(paths);
@@ -125,6 +139,7 @@ public class RealDataTests
     }
 
     [Test]
+    [Ignore(RetiredCorpus)]
     public void WeaponryRepository_LoadsRealData()
     {
         var repo = new WeaponryRepository(paths);
@@ -133,6 +148,7 @@ public class RealDataTests
     }
 
     [Test]
+    [Ignore(RetiredCorpus)]
     public void EquipmentRepository_LoadsRealData()
     {
         var repo = new EquipmentRepository(paths);
@@ -141,6 +157,7 @@ public class RealDataTests
     }
 
     [Test]
+    [Ignore(RetiredCorpus)]
     public void CyberwareRepository_LoadsRealData()
     {
         var repo = new CyberwareRepository(paths);
@@ -149,6 +166,7 @@ public class RealDataTests
     }
 
     [Test]
+    [Ignore(RetiredCorpus)]
     public void TechnologyRepository_LoadsRealData()
     {
         var repo = new TechnologyRepository(paths);
@@ -157,6 +175,7 @@ public class RealDataTests
     }
 
     [Test]
+    [Ignore(RetiredCorpus)]
     public void VocabularyRepository_LoadsRealData()
     {
         var repo = new VocabularyRepository(paths);
@@ -166,6 +185,7 @@ public class RealDataTests
     }
 
     [Test]
+    [Ignore(RetiredCorpus)]
     public void WorldbuildingDocRepository_LoadsRealData()
     {
         var repo = new WorldbuildingDocRepository(paths);
@@ -174,6 +194,7 @@ public class RealDataTests
     }
 
     [Test]
+    [Ignore(RetiredCorpus)]
     public void TransportationRepository_LoadsRealData()
     {
         var repo = new TransportationRepository(paths);
@@ -184,6 +205,7 @@ public class RealDataTests
     // â”€â”€ DATABASE SERVICE â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
 
     [Test]
+    [Ignore(RetiredCorpus)]
     public void DatabaseService_AggregatesAllRepositories()
     {
         var db = BuildDatabaseService();
@@ -194,6 +216,7 @@ public class RealDataTests
     }
 
     [Test]
+    [Ignore(RetiredCorpus)]
     public void DatabaseService_GetCharacterContext_ReturnsData()
     {
         var db = BuildDatabaseService();
@@ -215,6 +238,7 @@ public class RealDataTests
     }
 
     [Test]
+    [Ignore(RetiredCorpus)]
     public void DatabaseService_FindCharacter_CaseInsensitive()
     {
         var db = BuildDatabaseService();
@@ -356,6 +380,7 @@ public class RealDataTests
     // â”€â”€ CHARACTER DATA QUALITY â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
 
     [Test]
+    [Ignore(RetiredCorpus)]
     public void Characters_HaveDescriptions()
     {
         var repo = new CharacterRepository(paths);

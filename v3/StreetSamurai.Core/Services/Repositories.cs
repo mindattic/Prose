@@ -179,6 +179,17 @@ public class CharacterRepository : EfRepository<CharacterData>
         InvalidateMappedCache();
     }
 
+    /// <summary>Override of <see cref="EfRepository{T}.Delete"/> so archiving a
+    /// character also clears the mapper-cache. The base Delete only drops the
+    /// JSON-blob cache; without this the soft-deleted row stays visible in the
+    /// list/dictionary views (which read <see cref="GetAll"/>'s mappedCache)
+    /// until the next Save or Reload.</summary>
+    public override void Delete(string name)
+    {
+        base.Delete(name);
+        InvalidateMappedCache();
+    }
+
     private static Guid ParseGuid(string s)
     {
         if (string.IsNullOrEmpty(s)) return Guid.CreateVersion7();

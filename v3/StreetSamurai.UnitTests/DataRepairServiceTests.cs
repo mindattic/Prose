@@ -4,7 +4,13 @@ using StreetSamurai.Core.Services;
 
 namespace StreetSamurai.UnitTests;
 
+// RETIRED by the 2026-05-08 JSON→SQL canon migration. These tests seed file-based
+// engine_data/*.json fixtures and assert the service rewrites those files, but
+// DataRepairService now reads/writes the SQL DB (an empty in-memory TestDbFactory here),
+// so the temp files are never touched. The negative-assertion cases "pass" only vacuously.
+// To re-enable: rewrite to seed the SQL test DB instead of writing JSON files.
 [TestFixture]
+[Ignore("Retired file-based path (2026-05-08 JSON→SQL migration); rewrite to seed the SQL test DB. See class comment.")]
 public class DataRepairServiceTests
 {
     private string tempDir = "";
