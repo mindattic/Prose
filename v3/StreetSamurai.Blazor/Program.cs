@@ -550,6 +550,18 @@ if (args.Contains("--rebuild-readmodel"))
     return;
 }
 
+// CLI mode: split a monolithic strand into a Collection (parent + chapter
+// child strands) at IsChapterStart boundaries. Backs up to markdown first.
+//   ss --split-collection (--slug <s> | --id <guid>)
+if (args.Contains("--split-collection"))
+{
+    var cliBuilder = WebApplication.CreateBuilder(args);
+    cliBuilder.Services.AddStreetSamuraiServices();
+    var cliApp = cliBuilder.Build();
+    Environment.ExitCode = await SplitCollectionCli.RunAsync(args, cliApp.Services);
+    return;
+}
+
 // CLI mode: print the voice context the generator/re-beater receive — the
 // verification that the canon-trained voice is wired into prompts.
 //   ss --print-voice
