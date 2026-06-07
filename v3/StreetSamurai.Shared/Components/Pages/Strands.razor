@@ -1,5 +1,5 @@
 @page "/strands"
-@attribute [Authorize(Roles = "Contributor,Administrator")]
+@attribute [Authorize(Policy = MaPolicies.Admin)]
 @using Microsoft.EntityFrameworkCore
 @using StreetSamurai.Core.Data
 @using StreetSamurai.Shared.Services
@@ -71,43 +71,79 @@
                         var beatCount = beatCounts.GetValueOrDefault(s.Id, 0);
                         var childCount = childCounts.GetValueOrDefault(s.Id, 0);
                         <li class="list-group-item bg-dark text-light border-secondary">
-                            <div class="d-flex justify-content-between align-items-center">
-                                <a href="@($"/strand/{s.Slug}")" class="text-info text-decoration-none flex-grow-1">
-                                    <strong>@s.Title</strong>
-                                    @if (!string.IsNullOrEmpty(s.Synopsis))
-                                    {
-                                        <span class="text-muted small ms-2">— @(s.Synopsis.Length > 80 ? s.Synopsis[..80] + "…" : s.Synopsis)</span>
-                                    }
-                                </a>
-                                <div class="d-flex align-items-center gap-2 small">
-                                    @if (childCount > 0)
-                                    {
-                                        <span class="text-muted" title="Direct child strands (chapters, scenes, etc.)">
-                                            <i class="bi bi-diagram-3 me-1"></i>@childCount
-                                        </span>
-                                    }
-                                    @if (beatCount > 0)
-                                    {
-                                        <span class="text-muted" title="Direct beats in this strand">
-                                            <i class="bi bi-three-dots me-1"></i>@beatCount
-                                        </span>
-                                    }
-                                    @if (s.Score.HasValue)
-                                    {
-                                        <span class="badge @ScoreBadge((int)Math.Round(s.Score.Value))" title="Reader score (latest run)">
-                                            <i class="bi bi-star-half me-1"></i>@s.Score.Value.ToString("0")%
-                                        </span>
-                                    }
-                                    <span class="badge bg-@StatusColor(s.Status) text-uppercase">@StatusLabel(s.Status)</span>
-                                    <button class="btn btn-sm btn-outline-warning" title="Show reader reviews"
-                                            @onclick="() => OpenReviewsAsync(s)">
-                                        <i class="bi bi-star-half me-1"></i>Reviews
-                                    </button>
+                            @if (editingId == s.Id)
+                            {
+                                @* ── Inline edit: title + full description ───────────────── *@
+                                <div class="mb-2">
+                                    <label class="form-label small text-muted mb-1">Title</label>
+                                    <input class="form-control form-control-sm bg-black text-light border-secondary"
+                                           @bind="editTitle" @bind:event="oninput" />
                                 </div>
-                            </div>
-                            @* Full GUID — a stable handle to refer to this strand (CLI, conversation). Click to copy. *@
-                            <code class="text-muted strand-guid" title="Click to copy full id"
-                                  @onclick="() => CopyGuidAsync(s.Id)">@s.Id</code>
+                                <div class="mb-2">
+                                    <label class="form-label small text-muted mb-1">Description</label>
+                                    <textarea class="form-control form-control-sm bg-black text-light border-secondary"
+                                              rows="4" placeholder="What is this story about?"
+                                              @bind="editSynopsis" @bind:event="oninput"></textarea>
+                                </div>
+                                <div class="d-flex gap-2">
+                                    <button class="btn btn-sm btn-success" @onclick="SaveEditAsync"
+                                            disabled="@(savingEdit || string.IsNullOrWhiteSpace(editTitle))">
+                                        @if (savingEdit) { <span class="spinner-border spinner-border-sm me-1"></span> }
+                                        <i class="bi bi-check-lg me-1"></i>Save
+                                    </button>
+                                    <button class="btn btn-sm btn-outline-secondary" @onclick="CancelEdit" disabled="@savingEdit">Cancel</button>
+                                    <code class="text-muted strand-guid ms-auto align-self-center">@s.Id</code>
+                                </div>
+                            }
+                            else
+                            {
+                                <div class="d-flex justify-content-between align-items-center">
+                                    <a href="@($"/strand/{s.Slug}")" class="text-info text-decoration-none flex-grow-1">
+                                        <strong>@s.Title</strong>
+                                    </a>
+                                    <div class="d-flex align-items-center gap-2 small">
+                                        @if (childCount > 0)
+                                        {
+                                            <span class="text-muted" title="Direct child strands (chapters, scenes, etc.)">
+                                                <i class="bi bi-diagram-3 me-1"></i>@childCount
+                                            </span>
+                                        }
+                                        @if (beatCount > 0)
+                                        {
+                                            <span class="text-muted" title="Direct beats in this strand">
+                                                <i class="bi bi-three-dots me-1"></i>@beatCount
+                                            </span>
+                                        }
+                                        @if (s.Score.HasValue)
+                                        {
+                                            <span class="badge @ScoreBadge((int)Math.Round(s.Score.Value))" title="Reader score (latest run)">
+                                                <i class="bi bi-star-half me-1"></i>@s.Score.Value.ToString("0")%
+                                            </span>
+                                        }
+                                        <span class="badge bg-@StatusColor(s.Status) text-uppercase">@StatusLabel(s.Status)</span>
+                                        <button class="btn btn-sm btn-outline-light" title="Edit title &amp; description"
+                                                @onclick="() => BeginEdit(s)">
+                                            <i class="bi bi-pencil"></i>
+                                        </button>
+                                        <button class="btn btn-sm btn-outline-warning" title="Show reader reviews"
+                                                @onclick="() => OpenReviewsAsync(s)">
+                                            <i class="bi bi-star-half me-1"></i>Reviews
+                                        </button>
+                                    </div>
+                                </div>
+                                @* Full description — so you can see what each story is about at a glance. *@
+                                @if (!string.IsNullOrWhiteSpace(s.Synopsis))
+                                {
+                                    <div class="strand-synopsis-line mt-1">@s.Synopsis</div>
+                                }
+                                else
+                                {
+                                    <div class="strand-synopsis-line strand-synopsis-empty mt-1">No description yet — click the pencil to add one.</div>
+                                }
+                                @* Full GUID — a stable handle to refer to this strand (CLI, conversation). Click to copy. *@
+                                <code class="text-muted strand-guid" title="Click to copy full id"
+                                      @onclick="() => CopyGuidAsync(s.Id)">@s.Id</code>
+                            }
                         </li>
                     }
                 </ul>
@@ -201,6 +237,8 @@
 <style>
     .strand-guid { font-size: 0.68rem; color: #6c757d; cursor: pointer; }
     .strand-guid:hover { color: #0dcaf0; }
+    .strand-synopsis-line { font-size: 0.85rem; color: #adb5bd; white-space: pre-wrap; line-height: 1.35; }
+    .strand-synopsis-empty { font-style: italic; color: #5c636a; }
     .review-sheet-backdrop { position: fixed; inset: 0; background: rgba(0,0,0,0.55); z-index: 1080; }
     .review-sheet {
         position: fixed; left: 0; right: 0; bottom: 0; z-index: 1090;
@@ -239,6 +277,58 @@
     private Dictionary<Guid, int> childCounts = new();
     private string newTitle = "";
     private string newKind = "strand";
+
+    // ── Inline title/description editing ─────────────────────────────────
+    private Guid? editingId;
+    private string editTitle = "";
+    private string editSynopsis = "";
+    private bool savingEdit;
+
+    private void BeginEdit(StrandEntity s)
+    {
+        editingId = s.Id;
+        editTitle = s.Title;
+        editSynopsis = s.Synopsis ?? "";
+    }
+
+    private void CancelEdit()
+    {
+        editingId = null;
+        editTitle = editSynopsis = "";
+    }
+
+    private async Task SaveEditAsync()
+    {
+        if (editingId is not { } id || string.IsNullOrWhiteSpace(editTitle)) return;
+        savingEdit = true;
+        StateHasChanged();
+        try
+        {
+            await using var db = await DbFactory.CreateDbContextAsync();
+            var entity = await db.Strands.FirstOrDefaultAsync(x => x.Id == id);
+            if (entity == null) { Toast.Error("STRAND-EDIT", "Strand not found."); return; }
+            entity.Title = editTitle.Trim();
+            entity.Synopsis = string.IsNullOrWhiteSpace(editSynopsis) ? null : editSynopsis.Trim();
+            entity.UpdatedAt = DateTime.UtcNow;
+            await db.SaveChangesAsync();
+
+            // Reflect the change in the already-loaded list without a full reload.
+            var local = strands.FirstOrDefault(x => x.Id == id);
+            if (local != null) { local.Title = entity.Title; local.Synopsis = entity.Synopsis; }
+            grouped = strands.GroupBy(s => s.Kind).OrderBy(g => g.Key);
+            CancelEdit();
+            Toast.Info("SAVED", "Strand updated.");
+        }
+        catch (Exception ex)
+        {
+            Toast.Error("STRAND-EDIT-FAIL", ex.InnerException?.Message ?? ex.Message);
+        }
+        finally
+        {
+            savingEdit = false;
+            StateHasChanged();
+        }
+    }
 
     protected override async Task OnInitializedAsync()
     {
