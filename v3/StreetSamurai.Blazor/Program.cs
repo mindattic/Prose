@@ -550,6 +550,18 @@ if (args.Contains("--rebuild-readmodel"))
     return;
 }
 
+// CLI mode: print the voice context the generator/re-beater receive — the
+// verification that the canon-trained voice is wired into prompts.
+//   ss --print-voice
+if (args.Contains("--print-voice"))
+{
+    var cliBuilder = WebApplication.CreateBuilder(args);
+    cliBuilder.Services.AddStreetSamuraiServices();
+    var cliApp = cliBuilder.Build();
+    Environment.ExitCode = await PrintVoiceCli.RunAsync(args, cliApp.Services);
+    return;
+}
+
 // CLI mode: rebuild a strand's beats to the codified beat doctrine via LLM
 // re-segmentation (story beats + dialogue/'?' mechanics + gaps). Dry-run by
 // default; --apply backs up to markdown then replaces beats if the word-retention
