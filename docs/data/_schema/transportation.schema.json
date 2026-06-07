@@ -1,0 +1,22 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "$id": "ss://schema/transportation",
+  "title": "StreetSamurai canon — Transportation (engine_data/transportation/*.json)",
+  "description": "A vehicle / transit entity. Descriptive registration; id derived as transportation.<slug(name)>.",
+  "type": "object",
+  "required": ["type", "name"],
+  "additionalProperties": true,
+  "properties": {
+    "type": { "const": "transportation" },
+    "name": { "type": "string" },
+    "aliases": { "type": "array", "items": { "type": "string" } },
+    "category": { "type": "string" },
+    "manufacturer": { "type": "string" },
+    "description": { "type": "string" },
+    "propulsion": { "type": "string" },
+    "speed": { "type": "string" },
+    "range": { "type": "string" },
+    "tier_availability": { "type": "string" },
+    "story_hooks": { "type": "array", "items": { "type": "string" } }
+  }
+}
