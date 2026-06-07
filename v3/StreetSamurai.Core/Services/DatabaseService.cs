@@ -181,12 +181,16 @@ public class DatabaseService : IDatabaseService
     {
         var tb = ToneBible;
         var lines = new List<string> { "NARRATIVE TONE — THESE DEFINE HOW THE STORY FEELS:" };
-        foreach (var rule in tb.ToneRules.Take(8))
+        // Caps are headroom, not a hard 8/4 — the canon-harvested voice rules are
+        // appended to these lists and MUST reach the generator/re-beater prompt,
+        // not get truncated past an arbitrary cutoff (the whole point of training
+        // on canon is that the generator uses it).
+        foreach (var rule in tb.ToneRules.Take(40))
             lines.Add($"  - {rule}");
         if (tb.DialogueRules.Any())
         {
             lines.Add("DIALOGUE:");
-            foreach (var rule in tb.DialogueRules.Take(4))
+            foreach (var rule in tb.DialogueRules.Take(40))
                 lines.Add($"  - {rule}");
         }
         if (tb.StoryStructure.Any())

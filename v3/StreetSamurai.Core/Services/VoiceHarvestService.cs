@@ -131,6 +131,88 @@ public class VoiceHarvestService
         return results;
     }
 
+    /// <summary>
+    /// Prose-based canon harvest: read the FINISHED prose of every canon strand and
+    /// distill the voice directly from it — not from edit-history, which canon
+    /// strands often lack (imported/generated without workbench edits). Emits the
+    /// same proposed change-log rows as <see cref="HarvestStrandAsync"/>, applied
+    /// via <see cref="ApplyAsync"/>. This is how the canon voice is captured into
+    /// the codified stores the generator + re-beater read.
+    /// </summary>
+    public async Task<List<HarvestResult>> HarvestCanonProseAsync(CancellationToken ct = default)
+    {
+        await using var db = await dbFactory.CreateDbContextAsync(ct);
+        var canon = await db.Strands.AsNoTracking().Where(s => s.IsCanon)
+            .OrderByDescending(s => s.CanonAt)
+            .Select(s => new { s.Id, s.Slug, s.Title, s.Score }).ToListAsync(ct);
+
+        var results = new List<HarvestResult>();
+        foreach (var s in canon)
+        {
+            ct.ThrowIfCancellationRequested();
+            var ordered = await workbench.GetOrderedBeatsAsync(s.Id, ct);
+            var prose = string.Join("\n\n", ordered.Select(o => (o.Beat.Text ?? "").Trim()).Where(t => t.Length > 0));
+            if (prose.Length == 0) { results.Add(new HarvestResult(s.Slug, s.Title, s.Score ?? 0, 0, 0, [])); continue; }
+
+            var candidates = await DistillFromProseAsync(s.Title, s.Score ?? 0, prose, canon.Count - 1, ct);
+
+            var proposals = new List<VoiceChangeLogEntry>();
+            foreach (var c in candidates)
+            {
+                var target = NormalizeTarget(c.RuleTarget);
+                if (target == null) continue;
+                var entry = new VoiceChangeLogEntry
+                {
+                    Id = Guid.CreateVersion7(),
+                    Source = "harvest",
+                    StrandId = s.Id,
+                    Description = c.Description.Trim(),
+                    RuleTarget = target,
+                    Evidence = $"{s.Slug} (canon)" + (string.IsNullOrWhiteSpace(c.Evidence) ? "" : $" — {c.Evidence.Trim()}"),
+                    Before = c.ExampleBefore,
+                    After = c.ExampleAfter,
+                    Status = "proposed",
+                };
+                db.VoiceChangeLog.Add(entry);
+                proposals.Add(entry);
+            }
+            await db.SaveChangesAsync(ct);
+            log.LogInformation("Canon-prose harvest {Slug}: {N} proposals.", s.Slug, proposals.Count);
+            results.Add(new HarvestResult(s.Slug, s.Title, s.Score ?? 0, 0, 0, proposals));
+        }
+        return results;
+    }
+
+    private async Task<List<Candidate>> DistillFromProseAsync(string title, double score, string prose, int peerCount, CancellationToken ct)
+    {
+        var sample = prose.Length > 16000 ? prose[..16000] : prose;   // bound the model input
+        var sb = new StringBuilder();
+        sb.AppendLine($"CANON STRAND: \"{title}\"" + (score > 0 ? $" — reader score {score:0.#}%." : " — author-marked canon."));
+        if (peerCount > 0)
+            sb.AppendLine($"NOTE: {peerCount} other canon strands exist. Prefer rules that GENERALIZE across the canon voice, not one-offs.");
+        sb.AppendLine();
+        sb.AppendLine("FINISHED CANON PROSE (this is the voice to reproduce):");
+        sb.AppendLine(sample);
+
+        var system =
+            "You are a prose-voice analyst. Read this FINISHED, author-approved (canon) story and distill the SMALLEST set " +
+            "of concrete, verifiable writing rules that would make a generator reproduce THIS voice — cadence, sentence texture, " +
+            "dialogue habits, diction, and what it refuses to do. Each rule must be checkable " +
+            "(\"each line of dialogue is its own beat/line\"), not vague (\"write well\"). Cite a short evidence phrase. " +
+            "Return ONLY a JSON array; each item: " +
+            "{\"description\": string, \"rule_target\": one of [" + string.Join(", ", RuleTargets.Select(t => $"\"{t}\"")) + "], " +
+            "\"evidence\": short string, \"example_before\": null, \"example_after\": short verbatim line from the prose or null}. " +
+            "Pick rule_target by where the rule belongs: prose prohibitions → literary_rules.prohibitions; " +
+            "paragraph/structure musts → literary_rules.paragraph_requirements; narration tone/feel → tone_bible.tone_rules; " +
+            "dialogue habits → tone_bible.dialogue_rules; Kyle's narratorial register specifically → kyle.narration_voice. " +
+            "No prose, no markdown fences — just the JSON array.";
+
+        string raw;
+        try { raw = await llm.GenerateAsync(system, sb.ToString(), temperature: 0.2, maxTokens: 2500, ct: ct); }
+        catch (Exception ex) { log.LogWarning(ex, "Canon-prose distill LLM call failed for {Title}", title); return []; }
+        return ParseCandidates(raw);
+    }
+
     /// <summary>Mine one strand and write proposed voice rules. Throws if the
     /// strand is below 80% unless <paramref name="force"/> is set.</summary>
     public async Task<HarvestResult> HarvestStrandAsync(Guid strandId, bool force = false, int peerCount = 0, CancellationToken ct = default)
@@ -317,8 +399,11 @@ public class VoiceHarvestService
 
     private void ApplyToKyleNarrationVoice(string rule)
     {
-        var kyle = characters.GetAll().FirstOrDefault(c =>
-            string.Equals(c.Name, "Kyle", StringComparison.OrdinalIgnoreCase));
+        // Kyle's canonical Name is "Kyle Ellen Corbin-Vister", not "Kyle" — match
+        // the full name first, then fall back to a "Kyle …" given-name match.
+        var all = characters.GetAll();
+        var kyle = all.FirstOrDefault(c => string.Equals(c.Name, "Kyle Ellen Corbin-Vister", StringComparison.OrdinalIgnoreCase))
+                   ?? all.FirstOrDefault(c => c.Name != null && c.Name.StartsWith("Kyle", StringComparison.OrdinalIgnoreCase));
         if (kyle == null) { log.LogWarning("Kyle not found — narration_voice rule not applied"); return; }
         var nv = (kyle.NarrationVoice ?? "").TrimEnd();
         if (nv.Contains(rule, StringComparison.OrdinalIgnoreCase)) return;

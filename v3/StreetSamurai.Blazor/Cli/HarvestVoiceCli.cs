@@ -50,11 +50,37 @@ public static class HarvestVoiceCli
             return 0;
         }
 
+        // ── bulk apply every still-proposed rule (after curation/rejects) ──
+        if (args.Contains("--apply-all"))
+        {
+            var rows = await harvest.GetByStatusAsync("proposed");
+            int ok = 0;
+            foreach (var e in rows)
+                if (await harvest.ApplyAsync(e.Id)) { ok++; Console.WriteLine($"[harvest-voice] applied → {e.RuleTarget}: {e.Description[..Math.Min(70, e.Description.Length)]}"); }
+            Console.WriteLine($"\n[harvest-voice] Applied {ok}/{rows.Count} proposed rules to the live voice stores.");
+            return 0;
+        }
+
         // ── list pending proposals ──
         if (pending)
         {
             var rows = await harvest.GetByStatusAsync("proposed");
             PrintProposals(rows);
+            return 0;
+        }
+
+        // ── prose-based canon harvest: learn the voice from the finished canon
+        //    prose itself (not edit-history). This is what "train on the canon
+        //    voice" means when the canon strands have no workbench edit trail. ──
+        if (args.Contains("--canon-prose"))
+        {
+            var results = await harvest.HarvestCanonProseAsync();
+            if (results.Count == 0) { Console.WriteLine("[harvest-voice] No strands marked canon yet."); return 0; }
+            foreach (var r in results)
+                Console.WriteLine($"[harvest-voice] {r.Slug} (canon): → {r.Proposals.Count} proposals.");
+            Console.WriteLine();
+            PrintProposals(results.SelectMany(r => r.Proposals).ToList());
+            Console.WriteLine("\nReview, then apply: ss --harvest-voice --apply <entry-guid>");
             return 0;
         }
 
