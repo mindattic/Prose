@@ -5,133 +5,127 @@ _Axiom is sunsetting a hundred-story residential tower the way a corponation kil
 ## Half-Rate
 
 [Beat 1]
-Sable sends the contract the way she sends the ones she doesn't like — short, flat, no markup, which is Sable for *I'm sorry.* A name, a tower, a number, and the word AXIOM, which is its own weather report.
+Sable sends the contract the way she sends the ones she doesn't like — short and flat, with no markup on it, which is about as close as Sable ever comes to saying she's sorry. There's a name, a tower, a number, and the word AXIOM, and that last one is a weather report all by itself.
 
-The granddaughter meets him under the Ashland viaduct, because she does not have anywhere to bring a man like Kyle that isn't a sidewalk. She is maybe twenty, two jobs in the set of her shoulders, and she pays him in damp credits she peels off a roll thin enough to count by feel — Φ300, half his rate, counted twice, the second time slower, as if the number might have grown in her hand.
+The granddaughter meets him under the Ashland viaduct, because there is nowhere else she can think to bring a man like Kyle that isn't simply a stretch of sidewalk. She is maybe twenty, with two jobs sitting in the set of her shoulders, and she pays him with a credstick warm from being held too long, its balance ticked down to the last decimal — Φ300, half his usual rate, and she checks the readout twice, the second time more slowly, as though the number might have grown larger if she only gave it the chance.
 
 "They're sunsetting the Roost," she says.
 
-Kyle knows. Everyone in the Glooms knows. Axiom filed the clause a season ago and posted it in a font no one who lived there could read.
+Kyle already knows; everyone in the Glooms does. Axiom filed the clause a full season ago and posted the notice in a typeface no one who actually lived there could be expected to read.
 
-She means floor eighty-four. She means her grandmother, who has not answered her comm in two days, who will not take the buyout, who will not leave.
+What she means is floor eighty-four, and what she means by that is her grandmother — the one who has not answered her comm in two days, who will not take the buyout, and who will not leave.
 
-"Power comes off the top first," the granddaughter says. "Floor by floor. It's already past ninety." She does the arithmetic she has clearly been doing all night. "She's got maybe an hour of lights left. Then the lifts stop on her floor. Then the men come."
+"The power comes off the top first," the granddaughter says, "floor by floor, and it's already past ninety." She works through the arithmetic she has plainly been doing all night. "She's got maybe an hour of lights left. After that the lifts stop reaching her floor, and then the men come."
 
-Kyle pockets the credits without recounting them, because recounting them in front of her would be its own kind of theft.
+Kyle pockets the stick without checking the balance again, because reading it in front of her would be its own small theft.
 
 "What's her name?" he asks.
 
-"Comfort," the granddaughter says, and her face does something complicated around the word. "Mrs. Okwuosa-Brandt. She won't come for me. She told me not to send anyone." A beat. "I sent someone."
+"Comfort," the granddaughter says, and her face does something complicated around the word. "Mrs. Okwuosa-Brandt. She won't come down for me — she told me, specifically, not to send anyone." She pauses. "So I sent someone."
 
 "Yeah," Kyle says. "You did."
 
 ## Vertical Asset 9
 
 [Beat 2]
-The Roost is a hundred stories of public housing that Axiom bought for the land under it and the column of air above it, and has wanted gone ever since. Its people named it for the pigeons. Axiom's filings call it Vertical Asset 9, which is what you call a building when you have already decided to stop heating it.
+The Roost is a hundred stories of public housing that Axiom bought for the land beneath it and the column of air above it; they have been planning to take what was in between for a very long time, and it seems that their time has finally come. Its people named it for the pigeons. Axiom's filings call it Vertical Asset 9, which is the sort of name you give a building only after you have already decided to stop heating it.
 
-Tonight you can see the clause working from the street. The top of the tower is dark — eight, ten floors of black windows where there were lights last week — and the dark has a clean lower edge, a tide line, descending one room at a time. Below it the building still glows, crowded and stubborn, every lit window a person who has decided the floor of a corporation's patience is somewhere lower than this.
+Tonight you can watch the clause doing its work from the street. The top of the tower has gone dark — eight or ten floors of black windows where there were lights only last week — and the darkness has a clean lower edge to it, a tide line that descends one room at a time. Below that line the building still glows, crowded and stubborn, and every lit window is a person who has decided that the floor of a corporation's patience must lie somewhere lower than this.
 
-Kyle reads it the way his Neuretics reads everything — the bio-compute grown through his skull, worked by thought, no jack — for the part that's load-bearing and the part that's only confident. It counts the lit floors, clocks the rate the dark comes down, and hands him a number he doesn't like: the cut reaches eighty-four about the time he does, if nothing slows him. Something always slows him.
+Kyle reads it the way his Neuretics reads everything — the bio-compute grown through his skull and worked by thought alone, no jack required — sorting the part of the scene that is load-bearing from the part that is merely confident. It counts the lit floors, measures the rate at which the dark is coming down, and hands him a number he does not much care for: the cut will reach eighty-four at roughly the moment he does, assuming nothing slows him down, and something always slows him down.
 
-At the base, the scavengers are already parked. Not the building's people — the other kind. Vultures, and the fledglings who want to be: a hundred floors of old bodies kept alive on financed organs, all of it about to be relocated into a gray zone that keeps no records, is not a tragedy to them. It's a clearance sale. Two of them watch his bike come in and price it without much interest. It's the cargo they're waiting on.
+Down at the base, the scavengers have already gathered — not the building's own people, but the other kind. Vultures, and the fledglings who would like to become Vultures, because a hundred floors of old bodies kept alive on financed organs, all of it about to be relocated into a gray zone that keeps no records, is not a tragedy to them so much as a clearance sale. Two of them watch his bike roll in and price it without much interest; it is the cargo they are waiting on, not the machine.
 
-And between the scavengers and the door, an Arcturus relocation detail — Civil Security, the closest thing this city keeps to law, which is to say a service corporation that bills by the hour — loads the already-persuaded into a windowless coach. Soft helmets. Clipboards. The banality is the threat.
+And between the scavengers and the door stands an Arcturus relocation detail — Civil Security, the closest thing this city still keeps to law, which is to say a service corporation that happens to bill by the hour. There are soft helmets and clipboards and the unhurried manner of men doing paperwork, and the sheer banality of it is the threatening part.
 
 [Beat 3]
-He could fight his way through the lobby. He has the inventory for it and the night is young. But a fight at the door wakes the whole nest, and he has an old woman to bring back down through these same people, so he spends the smarter currency and goes around.
+He could fight his way in through the lobby. He has the inventory for it, and the night is still young. But a fight at the door would wake the whole nest, and he has an old woman to bring back down through these same people on the way out, so he spends the smarter currency instead and goes around.
 
-The smarter currency is Sparrow, who lives in the seam between what a corporation locks and what it forgets to lock — a whole economy, that seam, and Sparrow pays rent in it. Kyle pings a number that only works on alternate weeks and gets back a single line: a service door on the loading side, a freight car still hot on Axiom's own circuit because the sweep crew is using it, and a price that is fair, which from Sparrow is its own small miracle.
+The smarter currency is Sparrow, who lives in the seam between what a corporation bothers to lock and what it forgets to lock — a whole economy, that seam, and Sparrow pays the rent on a life inside it. Kyle pings a number that only works on alternate weeks and gets a single line back: a service door on the loading side, a freight car still drawing power on Axiom's own circuit because the sweep crew has been using it to carry people out, and a price that is fair, which from Sparrow is its own small miracle.
 
-The service door opens on the second wrong knock. The freight car is a steel room that smells of other people's lives being carried out of it — wet cardboard, a child's chalk drawing taped at toddler height that nobody came back for. Kyle thumbs the panel past the floors that still have power. The car climbs.
+The service door opens on the second wrong knock. The freight car is a steel room that smells of other people's lives being carried out of it — wet cardboard, and a child's chalk drawing taped at toddler height that nobody ever came back for. Kyle thumbs the panel past the floors that still have power, and the car begins to climb.
 
-It dies at sixty-one.
-
-The doors open on a hallway already half-dark, the corridor lights gone to the dim red of emergency cells, the air gone close and warm where the vents have already quit. Above him, eighty-four is twenty-three floors of stairwell and a clock.
-
-He climbs.
+It dies at sixty-one. The doors part on a hallway already gone half-dark, the corridor lights dropped to the dim red of emergency cells and the air turned close and warm where the vents have quit, and above him the remaining twenty-three floors to eighty-four are nothing but stairwell and a clock that is still running. So he starts up them on foot.
 
 [Beat 4]
-He meets the sweep on the seventy-second landing — two Arcturus in soft armor walking a floor's worth of people down ahead of them. An old man with a birdcage. A woman carrying a sewing machine she will be made to set down before the lobby. The Civil Security pair are not cruel; that's the part people never believe. They are polite, and bored, and certain, and they have a quota of floors to clear before the dark catches them too.
+He meets the sweep on the seventy-second landing — two Arcturus officers in soft armor, walking an entire floor's worth of residents down ahead of them. An old man carries a birdcage; a woman carries a sewing machine she will be made to set down somewhere before the lobby. The Civil Security pair are not cruel, which is the part people never quite believe. They are polite, and bored, and certain, and they have a quota of floors to clear before the dark catches up to them as well.
 
-The lead one puts a hand up. "Building's decommissioned, friend. You're going the wrong way."
+The lead officer raises a hand. "Building's decommissioned, friend. You're going the wrong way."
 
-Kyle lets him see the katana over his shoulder — matte black, no edge that takes the light, nothing to it but the hand that's had a long time to practice — and lets him do the math. Most of it ends here. This does.
+Kyle lets him see the katana riding over his shoulder — matte black, an edge that takes none of the light, nothing remarkable about it at all except the hand that has had a very long time to practice with it — and lets him do the arithmetic for himself. Most encounters end right about here, and this one does.
 
-"Medical retrieval," Kyle says, which is true the way he needs it to be true. "Eighty-four. I'll be down before you are."
+"Medical retrieval," Kyle says, which is true in the way he needs it to be true. "Eighty-four. I'll be back down before you are."
 
-The man looks at the blade, and at Kyle's face, and at the clipboard that does not have a line for this, and decides his contract does not pay enough to find out. "We cut eighty-four in forty minutes," he says, stepping aside. "Anything still up there at the cut is salvage. That's not me. That's the schedule."
+The officer looks at the blade, and then at Kyle's face, and then at the clipboard that has no line on it for any of this, and decides that his contract does not pay nearly enough to find out how the rest of it goes. "We cut eighty-four in forty minutes," he says, stepping aside. "Anything still up there when it goes is salvage. That's not me deciding that — that's just the schedule."
 
-"I know whose it is," Kyle says, and keeps climbing.
+"I know exactly whose schedule it is," Kyle says, and keeps climbing.
 
 [Beat 5]
-Floor eighty-four is hot and close and still has its lights, which means it still has its people. Doors stand open where the persuaded have already gone. Doors stand shut and chained where the rest have decided to make Axiom come and do it by hand.
+Floor eighty-four is hot and close and still has its lights, which means it still has its people. Some doors stand open, where the persuaded have already gone; others stand shut and chained, where the rest have decided to make Axiom come and do the work by hand.
 
-Behind 84-12, a man is talking to the door.
+Behind the door of 84-12, a man is talking to the door itself.
 
-"Is that the lift?" the voice asks — old, courteous, hopeful in a way that costs Kyle something to hear. "Wait — wait, just a moment, I can't find my other shoe. Tell them I'm coming. Tell them I just need my shoe."
+"Is that the lift?" the voice asks — old, and courteous, and hopeful in a way that costs Kyle something to stand there and hear. "Wait — wait just a moment, I can't find my other shoe. Tell them I'm coming. Tell them I only need my shoe."
 
-Kyle stops. The clock stands behind him with its hand on his shoulder. Twelve doors down there is a woman he was paid half-rate to carry, and below them a tide of dark coming to meet them all, and right here a closed door with a courteous voice behind it, asking the night to wait while he finds his shoe. The decision takes one heartbeat. It always takes one heartbeat. Then the code wins, the way it always wins, and he hates the shape of it tonight more than usual.
+Kyle stops, and the clock stands there at his back with its hand on his shoulder. Twelve doors down the hall there is a woman he has been paid half-rate to carry out of here, and below them both a tide of dark is coming up to meet everyone on the floor, and right here in front of him is a closed door with a courteous voice behind it, asking the night to please wait while an old man finds his shoe. The decision costs him exactly one heartbeat, the way it always costs him one heartbeat, and then the code wins the way it always wins — though tonight he hates the shape of the thing more than he usually lets himself.
 
-"I'm not the lift," Kyle says, to the door. "Stay inside. Lock it. Don't open for the soft helmets." It is the best he has, and it is not enough, and he knows the size of the difference exactly.
+"I'm not the lift," he says, to the door. "Stay inside, lock it, and don't open up for the soft helmets." It is the best he has to offer, and it is nowhere near enough, and he knows the precise size of the difference.
 
-"I just need my shoe," the voice says.
+"I only need my shoe," the voice says again, to no one in particular.
 
-Kyle goes to find Comfort.
+So Kyle leaves him there, and goes to find Comfort.
 
 ## Eighty-Four
 
 [Beat 6]
-Mrs. Okwuosa-Brandt's door is not chained. It is open, propped with a cinder block, because she has decided a woman who has done nothing wrong does not hide. She is small and upright in a chair that faces the door, dressed as if for church, a hard-sided case on her knees and her hands folded on top of it. The first thing Kyle's Neuretics does — the read he stopped saying out loud at nineteen and has never once been able to switch off — is tell him her people came from four places that have no business sharing a face: Igbo, German, somewhere Caribbean, somewhere cold. A whole century of the world's mixing, sitting in a chair in a tower a corporation is switching off.
+Mrs. Okwuosa-Brandt's door is not chained. It stands open, propped with a cinder block, because she has decided that a woman who has done nothing wrong does not hide behind her own door. She sits small and upright in a chair that faces the hallway, dressed as if for church, a hard-sided case balanced on her knees and her hands folded on top of it. The first thing Kyle's Neuretics does — the read he stopped saying out loud at nineteen and has never once managed to switch off — is tell him that her people came from four different places that have no earthly business sharing a single face: Igbo, German, somewhere in the Caribbean, and somewhere cold. A whole century of the world's mixing, sitting in a chair in a tower that a corporation is in the middle of switching off.
 
-The second thing he notices is the smell.
+The second thing he notices is the smell of citrus — green and bright and frankly impossible, eighty-four floors up a concrete column that has not smelled like anything but other people in forty years.
 
-Citrus. Green and bright and impossible, in a concrete column eighty-four floors up that hasn't smelled like anything but other people in forty years.
-
-Past the open balcony glass there is a tree. An actual tree — a Meyer lemon in a barrel she must have carried up in pieces, taller than she is, four fruit on it gone gold in the dark, leaves turning in the wind that this high up never stops.
+The source of it is out past the open balcony glass, where there is a tree. An actual tree: a Meyer lemon in a barrel she must have carried up here in pieces, taller than she is, with four fruit on it gone gold in the dark and its leaves turning in the wind that never quite stops at this height.
 
 "You're not my granddaughter," Comfort says. She has a voice like a closed door.
 
 "She sent me anyway," Kyle says. "She's stubborn. I can't think where she gets it."
 
 [Beat 7]
-"I'm not going," Comfort says, before he can open with whatever she expects him to open with. "I know what's coming. I have known since I was younger than you. They take the top, and they wait for the bottom to come down on its own, and they call it a clause." She says the word the way you'd hold something that bit you. "I am eighty-four years old. I have lived here longer than that boy downstairs has been alive. I will not be carried out of my own home so a company can put a number where my window was."
+"I'm not going," Comfort says, before he can open with whatever it is she expects him to open with. "I know what's coming. I've known since I was younger than you are now. They take the top of the building, and then they wait for the bottom to come down on its own, and they call the whole arrangement a clause." She says the word the way a person holds something that has bitten them. "I am eighty-four years old. I have lived in this building longer than that boy downstairs has been alive. I am not going to be carried out of my own home so that a company can put a number where my window used to be."
 
-"Okay," Kyle says, and sits down on the arm of the other chair — which surprises her, because men who climb eighty-four floors with swords on their backs do not usually sit.
+"Okay," Kyle says, and sits down on the arm of the other chair — which surprises her, because as a rule men who climb eighty-four floors with swords on their backs do not sit.
 
 "Okay?"
 
-"I'm not going to carry you anywhere you don't agree to go." He nods at the case on her knees. "What's in the box?"
+"I'm not going to carry you anywhere you haven't agreed to go." He nods at the case on her knees. "What's in the box?"
 
-She looks at him a long moment, deciding. "My husband," she says. "What's left of him that the city would let me keep."
+She studies him for a long moment, deciding. "My husband," she says at last. "What's left of him that the city would let me keep."
 
-Kyle does not say he's sorry. People say that to fill a silence, and the silence is hers. He waits.
+Kyle does not tell her he's sorry. People say that to fill a silence, and the silence belongs to her, so he waits.
 
-"And the tree," she says, and her voice changes on the tree — the only crack in the door all night. "He grew it from a pip in a coffee cup the year we moved in. It has been alive up here longer than half this building. I am not leaving it to be — relocated."
+"And the tree," she says, and her voice changes on the word — the only crack in the door all night. "He grew it from a pip in a coffee cup the year we moved in. It has been alive up here longer than half the people in this building. I am not going to leave it behind to be — relocated."
 
 [Beat 8]
-The lights brown out, hold, brown out again — the tide line, four floors up and coming. Kyle's Neuretics gives him the number with no maybe in it: the men who cut eighty-four will be in this corridor in under thirty minutes, and the dark beats them by ten.
+The lights brown out, hold, and brown out again — the tide line, four floors up and still coming. Kyle's Neuretics hands him the number with no maybe left in it: the men who cut eighty-four will be in this corridor in under thirty minutes, and the dark will beat them here by ten.
 
-There is no version of the night where the barrel goes down the stairs. He weighs it the way he weighs everything. The tree is two hundred pounds of wet soil and forty years, and the stairwell below is a black corkscrew full of people who would cut the cardiac assist out of her chest for the financing still owed on it. He cannot carry both her and the tree. He is not certain, with the clock reading what it reads, that he could carry the tree at all.
+There is no version of tonight in which that barrel goes down the stairs. He weighs it anyway, the way he weighs everything — two hundred pounds of wet soil and forty years of a dead man's care, against a stairwell that is a black corkscrew full of people who would cut the cardiac assist out of her chest for the financing still owed on it. He cannot carry both the woman and the tree, and he is not at all certain, with the clock reading what it reads, that he could carry the tree alone.
 
-So he does the thing he is worst at. He tells her the truth, and then he offers her the lie that might hold.
+So he does the thing he is worst at: he tells her the truth, and then he offers her the lie that might just hold it together.
 
-"I can't take the tree," he says. "I can take you. I can take him." The box. "And I can take that." He nods at the green new growth at the tip of the lowest branch. "A cutting. One branch. You start it in a cup of water the way he did, and in a year you've got the same tree in a different window. It isn't leaving anything behind. It's moving it."
+"I can't take the tree," he says. "I can take you, and I can take him" — the box — "and I can take that." He nods at the tip of the lowest branch, where the new growth has come in green. "A cutting. One branch. You start it in a cup of water the way he did, and inside a year you've got the same tree standing in a different window. You wouldn't be leaving anything behind. You'd just be moving it."
 
-She knows it is not that simple. He can see that she knows — a cutting is a coin toss a botanist would frown at, and they are both too old to pretend otherwise. She in fact. He in spirit.
+She knows it is not nearly that simple, and he can see that she knows; a cutting is a coin toss that would make a botanist wince, and they are both of them too old to pretend otherwise — she in years, and he in just about every other way there is.
 
 "Will it take?" she asks.
 
-"Yeah," Kyle says, which is the first lie he tells her, and he notices himself telling it. Some lines you say anyway.
+"Yeah," Kyle says, which is the first lie he has told her, and he catches himself in the telling of it. Some lines you say anyway.
 
 [Beat 9]
-She makes him do it properly. There is no time and she makes time — a clean knife from the kitchen, a cut on the angle below a node, the way her husband taught her, the way she will not let a stranger do badly even now. She wraps the cut end in a square of wet paper towel and a sandwich bag and holds it in both hands like the box, which she has refused to let Kyle carry. The box rides in a cloth sack on her back, knotted at the front. She has done this before, Kyle thinks. Not this. But the shape of this — leaving with only what your two arms can hold. The whole tower is full of people who learned that young.
+She makes him do it properly. There is no time and she makes time regardless — a clean knife from the kitchen, a cut taken on the angle just below a node, the way her husband taught her and the way she will not allow a stranger to do badly even now. She wraps the cut end in a square of wet paper towel and then a sandwich bag, and holds it cupped in both hands the way she holds the box, which she has refused to let Kyle carry. The box itself rides in a cloth sack knotted across the front of her. She has done some version of this before, Kyle thinks — not this exactly, but the shape of it, the leaving of a place with only what your two arms can hold around — and the whole tower is full of people who learned that particular lesson young.
 
-He gets her to the door, and the lights go.
+He gets her as far as the door, and the lights go.
 
-Not a brown-out this time. The floor goes black all at once, the way a held breath ends, and the warm dark fills with the sound of eighty-four's life spinning down — pumps, vents, the refrigerator hum you never hear until it isn't there. Somewhere down the corridor a chained door begins to rattle as the soft helmets test it. The tide has arrived, and they are standing in it.
+It is not a brown-out this time. The whole floor drops into black at once, the way a held breath ends, and the warm dark fills up with the sound of eighty-four's life spinning down — the pumps, the vents, the refrigerator hum you never once notice until the moment it isn't there. Somewhere down the corridor a chained door begins to rattle as the soft helmets test it. The tide has arrived, and the two of them are standing in it.
 
-"Stay on my left," Kyle says. His Neuretics floods the black with what it can — heat, motion, the geometry of a hallway it mapped on the way in. Her hand finds his coat. "Eyes on my back. Don't look at the doors."
+"Stay on my left," Kyle says, and his Neuretics floods the black with what it can still give him — heat, motion, the remembered geometry of a hallway it mapped on the way in. Her hand finds the back of his coat. "Keep your eyes on my back, and don't look at the doors."
 
 "Why not?" Comfort asks.
 
@@ -140,95 +134,91 @@ Not a brown-out this time. The floor goes black all at once, the way a held brea
 ## One Shoe
 
 [Beat 10]
-They pass 84-12 on the way to the stairwell.
+They pass 84-12 again on their way to the stairwell.
 
-The door is open. The cinder block that should have held it shut sits in the hall where someone kicked it aside, and the dark inside the unit is the specific empty dark of a room that has been cleared. On the floor by the threshold, where a man sat down to put his shoes on and got only one of them done, there is a single shoe.
+The door is open now. The cinder block that should have held it shut is sitting out in the hall where someone kicked it aside, and the dark inside the unit has the specific emptiness of a room that has been cleared. On the floor by the threshold, where a man sat down to put his shoes on and managed only one of them, there is a single shoe.
 
-Kyle's Neuretics, which has had an answer for everything tonight, has nothing to add. The soft helmets came while he was sitting on the arm of a chair being told about a lemon tree. Or the other ones came. Eighty-four is salvage now; the schedule said so on the stairs. He had told the man to lock the door. The man had wanted his shoe.
+Kyle's Neuretics, which has had an answer ready for everything tonight, has nothing at all to add. The soft helmets came while he was sitting on the arm of a chair being told about a lemon tree — or perhaps it was the other ones who came, since eighty-four is salvage now and the schedule said as much on the stairs. He had told the man to lock the door, and the man had wanted his shoe, and those two facts are not going to stop sitting next to each other any time soon.
 
-Comfort starts to turn toward the open door, toward the small wrong shape of the shoe on the floor, and Kyle puts his body between her and it, gently, the way you'd turn a child from a window.
+Comfort starts to turn toward the open door, toward the small wrong shape of the shoe on the floor, and Kyle puts his body between her and it, gently, the way you would turn a child away from a window. "Keep walking," he says, in the flat and low and deliberately boring read-out voice he keeps for exactly this. "Eyes on my back."
 
-"Keep walking," he says, flat and low and boring as a read-out, the voice he keeps for exactly this. "Eyes on my back."
-
-He does not tell her whose door it was. Something pulls tight under his sternum and stays tight — the old grip that has nothing to do with the hardware — and he files the shoe with the other things tonight has cost, in the account he never balances in front of anyone, and walks her to the stairs. The heartbeat he spent on the seventy-second landing, deciding to climb past a courteous voice, has a price now. The price has a name he never learned. That is the kind of arithmetic the night runs whether he asks it to or not.
+He does not tell her whose door it was. He walks her on to the stairs.
 
 [Beat 11]
-The stairwell is a black concrete throat with the emergency cells dying in it one landing at a time, and it is not empty. The fledglings have come up to meet the salvage halfway, because carrying a thing down is work and letting the building deliver it to your hands is not.
+The stairwell is a black concrete throat with the emergency cells dying in it one landing at a time, and it is not empty. The fledglings have come up to meet the salvage halfway, because carrying a thing all the way down is work, and letting the building deliver it into your hands is not.
 
-They take the stairs the way the young take everything — too fast, and from above. Kyle hears them before the read paints them: boots, and the particular eager quiet of people who think the dark is on their side. He puts Comfort against the inner wall, one flight below a landing, where the geometry does the work of a second man.
+They come down the stairs the way the young come at everything — too fast, and from above. Kyle hears them well before the read paints them in: boots, and the particular eager quiet of people who are certain the dark is on their side. He sets Comfort against the inner wall, one flight below a landing, where the geometry does the work of a second man for him. The shaft narrows to a single body's width at each switchback and the turns are all blind — a place built, without anyone meaning to build it that way, to be held by one man who never expected to have to hold it.
 
-"Don't move," he says. "Whatever you hear."
+"Don't move," he tells her. "Whatever you hear."
 
-The first one comes around the turn with a salvage hook and a headlamp, and the headlamp is a mistake, because it tells Kyle exactly where the rest of him is. He does not draw the katana for this. He takes the hook out of the kid's hands at the wrist-lock, turns him into the wall, and lets the next two trip over the lesson. Cacophony stays on his hip. The blade stays on his back. These are children with debts and bad ideas, and the code has a line about that he has never once crossed.
+The first one comes around the turn with a salvage hook in one hand and a headlamp on his brow, and the headlamp is a mistake, because it tells Kyle exactly where the rest of him is. He doesn't draw the katana for this; he takes the hook out of the boy's hands at the wrist-lock, turns him into the wall, and lets the next two trip over the lesson on their way down. Cacophony stays on his hip and the blade stays on his back, because these are children with debts and bad ideas, and the code has a line about children that he has never once crossed.
 
-The fourth one has a gun.
+And then the fourth one rounds the turn with a gun in his hand, which changes the shape of everything that comes next.
 
 [Beat 12]
-The fourth one has a gun, and a gun changes the cylinder the math runs in. He's young under the headlamp — a jacket too new for the work, the tag maybe still in a pocket — and his hands are not steady, which is worse, not better, because a scared hand pulls early. Kyle's Neuretics paints the shot before the trigger finishes the thought: a hard red line from the muzzle, down the landing, through the space where Kyle stands and on into the stairwell below, where Comfort is pressed to the inner wall one flight down. Precognition says the thing it always says — vacate the space the round will fill. But that space is the only thing standing between the line and her. Step off it and the round he dodges finds the old woman half a second later. For once in his overclocked life he cannot move out of the way. So he does the only thing the geometry leaves him: he moves the way instead.
+The fourth one has a gun, and a gun rewrites the next three seconds entirely. He's young under the headlamp — a jacket too new for the work, the price tag very possibly still tucked in a pocket — and his hands are not steady, which is worse rather than better, because a frightened hand pulls early. Kyle's Neuretics paints the shot before the trigger has finished the thought: a hard red line laid from the muzzle, down the length of the landing, through the space where Kyle is standing and on into the stairwell below, where Comfort is pressed against the inner wall a single flight down. Precognition tells him what it always tells him — vacate the space the round is going to fill — except that the space behind him is the only thing standing between that line and the old woman, and if he steps off it the round he so neatly dodges finds her half a second later. For once in his overclocked life he cannot simply move out of the way, and so he does the only thing the geometry leaves him: he moves the way instead.
 
-He draws Cacophony left-handed — the squat five-shot revolver shotgun clearing its throat off his hip — thumbs the cylinder to the breaching load, and puts a round into the stair-rail bracket beside the shooter's knee. The world up there comes apart in noise and orange sparks and a section of railing that was load-bearing a half-second ago. The kid does what a body does when the floor it trusts starts shouting; his shot goes wild into the ceiling. Kyle is up the flight before the echo finishes and takes the gun, and the fight, off him.
+He draws Cacophony left-handed, the squat five-shot revolver shotgun clearing its throat off his hip, thumbs the cylinder around to the breaching load, and puts a round straight into the stair-rail bracket beside the shooter's knee. The whole structure up there comes apart in noise and orange sparks and a length of railing that was load-bearing half a second ago, and the kid does what any body does when the floor it has been trusting starts to shout — his shot goes wild into the ceiling. Kyle is up the flight and on him before the echo has finished, and he takes the gun, and the fight, off the boy.
 
-It costs, the way it always costs. Behind his eyes the overclock runs hot enough to feel — a pressure at both temples, like a thumb pushed slow into each one — and a thin line of blood starts at his nose. He thumbs it off his lip without thinking. The white crowds in at the edges of his sight and he blinks it back by main force. He has been spending the read all night like a man who's sure he won't need it tomorrow.
+It costs him, the way it always costs him. Behind his eyes the overclock runs hot enough that he can feel it, a slow pressure building at both temples as though a thumb were being pushed into each one, and a thin line of blood starts from his nose. He thumbs it off his lip without thinking about it. The white crowds in at the edges of his sight and he blinks it back by main force. He has been spending the read all night like a man who is certain he will never need it again tomorrow.
 
-Below him, Comfort has not moved. The cutting is still in both her hands.
+Below him, Comfort has not moved an inch. The cutting is still cupped in both her hands.
 
 "Still with me?" he asks.
 
-"I buried a husband and outlived the state I was born in," she says, from the dark below. "A boy with a hook does not frighten me."
+"I buried a husband, and I outlived the state I was born in," she says, from the dark below him. "A boy with a hook is not going to frighten me."
 
 ## The Loading Side
 
 [Beat 13]
-They come out of the stairwell at the loading side, into the half-lit dark of a dock built for carrying lives out of buildings, and the night air after eighty-four floors of dead ventilation tastes like a second chance. It is not one. Two of them have moved off the bike and onto the dock, because they know the trade better than Kyle would like: salvage doesn't leave by the front. It leaves by the back, and they have been waiting at the back.
+They come out of the stairwell on the loading side, into the half-lit dark of a dock that was built for carrying lives out of buildings, and after eighty-four floors of dead ventilation the night air tastes almost like a second chance — though it turns out not to be one. Two of them have already moved off the bike and onto the dock, because they understand the trade rather better than Kyle would like: salvage doesn't leave a building by the front. It leaves by the back, and the back is exactly where they have been waiting.
 
-They are not children this time. One wears a patch — a Vulture grown past the fledgling stage on exactly this kind of evening — and carries the calm of a man who has done the cutting and slept fine after.
+These are not children this time. One of them wears a patch — a Vulture grown well past the fledgling stage on precisely this kind of evening — and he carries the calm of a man who has done the cutting before and slept soundly enough afterward.
 
-"That's a financed unit you're walking off with," the Vulture says, with a nod at Comfort, at the cardiac assist he can apparently read on her from here. "Cardiac, two genemod joints, corneas. She's underwater on all of it. By rights—"
+"That's a financed unit you're walking off with," the Vulture says, with a nod toward Comfort and toward the cardiac assist he can apparently read on her clear across a dark dock. "Cardiac, a couple of genemod joints, corneas. She's underwater on every bit of it. By rights—"
 
 "She's not a unit," Kyle says.
 
 [Beat 14]
-"By rights," the Vulture says again, and his hand drifts toward the hook on his belt — and that is the word, and the gesture, that draws Silence.
+"By rights," the Vulture says again, and his hand drifts toward the hook on his belt — and that word, together with the gesture, is what finally draws Silence.
 
-It comes off Kyle's back in the one motion he has practiced more than any other, matte and edgeless, and settles level. Here is what the Vulture cannot see in the dark: Kyle is white at the edges and down to the dregs of a battery he has overdrawn since the sixty-first floor, and his right hand wants to shake — the fine tremor of a man running on empty, the exact tell this Vulture has built a career on reading off marks and merchandise. A man who can price the cardiac assist on an old woman across a black dock can certainly read a shaking hand at four feet.
+It comes off Kyle's back in the one motion he has practiced more than any other, matte and edgeless, and settles level in front of him. Here is the thing the Vulture cannot see in the dark: Kyle is white at the edges and down to the dregs of a battery he has been overdrawing since the sixty-first floor, and his right hand wants very badly to shake — the fine tremor of a man running on empty, which happens to be the exact tell this particular Vulture has built an entire career on reading off of marks and merchandise. A man who can price the cardiac assist on an old woman from clear across a black dock can certainly read a shaking hand at four feet.
 
-So Kyle does not let it shake. He spends the last of something he does not have to hold the blade dead still — still as the flat of it, still as a man with all night and nothing to lose — and the stillness is the whole lie, and it is a good one.
+So Kyle simply does not let it shake. He spends the last of something he does not actually have left to spend, holding the blade dead still — as still as the flat of it, as still as a man with all the time in the world and nothing left to lose — and the stillness is the entire lie, and it is a very good one.
 
-The Vulture looks for the tremor, the way he looks for it on everyone. He does not find it. He weighs a steady blade against a financed corpse, runs the arithmetic he has run on a hundred easy nights, and takes his hand off the hook.
+The Vulture looks for the tremor, the way he looks for it on everyone he meets. And because he does not find it, he does something the easy marks never make him do: he takes a step. One unhurried foot forward, the hook coming off his belt now, his grip closing around the handle with the particular confidence of a man who has decided the body in front of him is already inventory. He has weighed it. He is coming.
 
-"Not worth the paperwork," he says, to keep his face, and steps back, and pulls the fledgling with him.
+The blade does not move. That is all Kyle has — the not-moving — and he holds it through the whole length of that step, through the half-second where the arithmetic could break either way, while every overdrawn cell in his right arm screams to betray him. The hook stops a foot short. The Vulture's eyes go to the edge of the katana, then to Kyle's wrist, then back, looking for the one twitch that would tell him he can afford this. He weighs a steady blade against a financed corpse one last time, runs the arithmetic he has run on a hundred easier nights — and finds, to his evident irritation, that it does not quite come out in his favor. He takes his hand back off the hook.
+
+"Not worth the paperwork," he says, to save his own face, and steps back, and pulls the fledgling along with him.
 
 "No," Kyle agrees. "It really isn't."
 
 [Beat 15]
-The granddaughter is waiting two blocks out, beyond the building's cordon, where Kyle told Sable to tell her to wait. She does not run when she sees them. She walks — fast, careful — the way you walk toward someone you are afraid to find changed from how you left them.
+The granddaughter is waiting two blocks out, beyond the building's cordon, where Kyle told Sable to tell her to wait. She doesn't run when she sees them; she walks, fast and careful, the way you walk toward someone you are afraid of finding changed from how you left them.
 
-She stops a foot short of her grandmother, like the last step is the hardest one. "Grandma." It is not an apology, and not quite not one. "I sent him anyway."
+She stops a foot short of her grandmother, as though that last step was the hardest one of all. "Grandma." It isn't quite an apology, and it isn't quite not one either. "I sent him anyway."
 
-"I know what you did," Comfort says. She lets the girl take the box from her back, and does not say thank you, because between the two of them thank you would be an insult. Letting her carry it is the thank you.
+"I know what you did," Comfort says. She lets the girl take the box from her back, and she does not say thank you, because between the two of them a thank you would land as an insult; letting her carry it is the thank you. What she does not let the girl take is the cutting. The girl's eyes go to the bundle — the one thing her grandmother will not hand over — and she does not reach for it, because she has learned, tonight or a long time before tonight, which things you do not ask for. The wet paper-towel bundle stays cupped in Comfort's own two hands, and Kyle understands that it will stay there until it is standing in a cup of water on some windowsill lower down, and safer, and not hers.
 
-She does not let her take the cutting. The wet paper-towel bundle stays in her own two hands, and Kyle understands it will stay there until it is standing in a cup of water on a windowsill somewhere lower, and safer, and not hers.
+"You came up for an old woman who told you not to," Comfort says to him.
 
-"You came for an old woman who told you not to," Comfort says to Kyle.
+"I was paid to," Kyle says, which is true, and is also the lie hiding underneath the true thing, and she is eighty-four years old and hears both of them.
 
-"I was paid to," Kyle says, which is true, and is the lie under the true thing, and she is eighty-four and hears both.
-
-"Mm," she says. She looks at him a moment longer — the reading-back look, the one he usually only gets from Sable — and then she says the thing he will keep. "There was a boy on my floor. Twelve doors down. Some nights I heard him through the wall, talking to his radio." She does not make it a question. "You couldn't carry everyone."
+"Mm," she says. She looks at him a moment longer — the reading-back look, the one he usually only gets from Sable — and then she says the thing he is going to keep. "There was a boy on my floor. Twelve doors down from me. Some nights I could hear him through the wall, talking to his radio." She does not bother to make it a question. "You couldn't carry everyone."
 
 "No," Kyle says. "I couldn't."
 
-"I know," she says. It is not forgiveness, because she is not the one who could give it, and they both know that too.
+"I know," she says — and it is not forgiveness, because she is not the one with the standing to give it, and they both understand that too.
 
-## The Long Block Home
+## The Receipt
 
 [Beat 16]
-He watches them go — two women, a box, and a branch in a sandwich bag, walking south into the part of the Glooms that still has its lights — and then he turns back to look at the thing he climbed.
+He watches them go — two women, a box, and a branch sealed in a sandwich bag, walking south into the part of the Glooms that still has its lights — and then he turns back to look at the thing he climbed.
 
-The Roost is most of the way dark now. The tide has come down past eighty-four; her window is black with all the others, and on the balcony behind that black glass a lemon tree he could not carry stands in the wind that never stops up there, four gold fruit on it, waiting on a power that isn't coming back and a cold that will find it by morning. Forty years. He thinks about the boy with one shoe, and the tree, and the distance between what he was paid to save and everything there was to save.
+The Roost is most of the way dark now. The tide has come down past eighty-four, so that her window is black along with all the others, and on the balcony behind that black glass a lemon tree he could not carry stands in the wind that never stops at that height, four gold fruit still on it, waiting on a power that is not coming back and a cold that will find it by morning. Forty years of a dead man's patience, and it ends tonight. He thinks about the boy with the one shoe, and about the tree, and about the distance between what he was paid to save and everything there actually was to save.
 
-His Neuretics, slow and shaky and coming back online, offers him the only comfort it has, which is a number. The small light in the corner of his mind's eye is still red from the stairwell — one flash, the man who put this hardware in a child too young to refuse once told him, for about a year off the far end. He spent a year tonight. He got an old woman, a box, and a coin-toss of a branch for it.
+His Neuretics, slow and shaky and only now coming back online, offers him the one comfort it has to give, which is a number. The small light in the corner of his mind's eye is still red from the stairwell — one flash, the man who seeded this hardware in a child too young to be asked once told him, for about a year off the far end of his life. He spent a year tonight, and what he got for it was an old woman, a box, and the coin-toss of a branch.
 
-He runs the arithmetic, and finds — the part that should trouble him and doesn't — that the branch alone would have been enough.
-
-Then he gets on the bike and turns south, and in the dark he names the next ordinary thing, and the next. The curb. The corner. The long block home.
+He runs the arithmetic, and finds — and this is the part that ought to trouble him and somehow doesn't — that the branch alone would have been enough. Then he gets back on the bike and turns south, and in the dark he does the thing he would tell anyone to do in it: he names the next ordinary thing for himself, and then the next, the curb and the corner and the long block home, and he keeps on naming them until the tower is finally behind him and the street is only a street again.
 

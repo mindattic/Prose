@@ -1,0 +1,261 @@
+# Part I: Teeth
+
+_A mother three doors down hires a dying freelancer at half rate to settle a debt against the men who wired her husband's jaw shut. He takes the work whole, descends into the Gray Zone's welded grief, and learns the difference between math, a duel, and a discipline that knows what it pays for._
+
+## Part I: Teeth
+
+[Beat 1]
+She said his name wrong. Three times, and Kyle didn't correct her. The apartment smelled like camphor and fear-sweat and something frying in old oil three doors down, the smell coming through the airshaft because the airshaft was the only thing this building had that worked. Her husband sat in the corner with his jaw wired into a shape that wasn't a jaw anymore. He breathed through his nose like a man learning a new language. She pressed the credits into Kyle's hand — a physical transfer, warm chip, slightly damp. He felt what she'd paid. He felt what she hadn't kept.
+
+[Beat 2]
+He took the job at half rate. He told himself it was the jaw. The jaw, wired shut, a man reduced to breathing and waiting. He didn't think about the girl standing in the hallway behind the curtain, watching him the way children watch things they've already decided to memorize.
+
+[Beat 3]
+The building was the kind that pretended not to be a building. A welded conversion between two towers, slotted in twelve stories above ground level and forgotten by the corponation property registry sometime in the 2190s. Kyle had ridden the freight elevator up because the resident elevator did not exist anymore. Looking out the apartment's one window: the canyon between the towers, the rain coming straight down in the cold pillar of air between two structures that had not been designed to leave a gap and had been forced to leave one anyway. A VTOL crossed the gap forty stories up, running lights amber, moving toward something on the south face. Some board director was late to dinner. Some kid was getting their first cyberware. Kyle filed the running lights and didn't look up again.
+
+[Beat 4]
+The motorcycle was three blocks east, parked under an overhang that did most of the work of keeping it dry. Matte black, unbranded, plate magnetized to the underside of the rear cowl. The kind of bike that disappears into the visual noise of any GLMZ block; the kind that's there when you get back because you didn't make it interesting enough for anyone to steal.
+
+[Beat 5]
+He rode south to the Gray Zone's eastern strut. The route was twenty-two minutes of switchbacks down through tiers the architecture stopped pretending about somewhere around the fortieth floor. By the time he was at the bottom of the strut the rain was warmer and the buildings overhead had closed the sky to a strip. He didn't think about that either. He thought about the jaw. He thought about the camphor smell. He thought about what half-rate meant when half-rate had been pressed warm and damp into a stranger's hand.
+
+[Beat 6]
+He parked the bike a block out and walked the rest. Four men on the loading dock would not be expecting him; six would not be expecting him either. Surprise was free. Surprise was always free. The street's working theory on surprise was that you had to spend something to get it, and the street was wrong about a lot of things, but it was specifically wrong about that.
+
+[Beat 7]
+The loading dock sat at the bottom of the Gray Zone's eastern strut, where the architecture stopped pretending to be architecture and became what it actually was: welded industrial grief. Kyle came in through the front. No hood. No approach angle. He walked in through the front because he wanted the moment — that specific, clarifying moment when six men who have spent weeks feeling like weather look up and see something worse than weather standing in their doorway.
+
+[Beat 8]
+He is six feet of nothing. That's the first thing. A swimmer's build stripped past lean into something the body shouldn't sustain. His cheekbones throw shadows in low light. His forearms, emerging from rolled sleeves, are rope and tendon and zero forgiveness — no softness anywhere, no insulation, as if the hardware in his skull has been running a slow auction on his body mass for years and winning. Thirty-two thousand electrodes don't come free. The array bills him in calories and he has been paying the invoice in flesh since he was sixteen. He looks like a man who forgot to eat in 2031 and has been catching up badly ever since.
+
+[Beat 9]
+The katana is across his back in a matte-black friction sheath — a 102-centimeter draw, hilt over the right shoulder, the ito wrapping dark with use. The blade is called Silence and the name was not his idea. There are three competing theories on the street about what the blade does. None of them are correct. The blade is a sword. Kyle has stopped explaining this to people because the explanation, when it comes, never quite lands the way the explanation needs to land, and the people he's explained it to have shown a remarkable tendency to die before the explanation has fully settled.
+
+[Beat 10]
+On his low left hip, holstered but not secured, sits the Torii TSS-3 — bird's-head grip, no stock, the silhouette of an oversized revolver under a coat. Five chambers in the cylinder. Four buckshot, one slug. Cacophony. He named it himself. Silence was for the rooms he could cross. Cacophony was for the ones he couldn't — the distance the body couldn't eat fast enough, the angle the blade couldn't reach. He kept the count the way other men kept time. Five shells was five chances to discover you should have planned better, and Kyle planned for a living, which meant Cacophony mostly stayed quiet, which suited the joke of the thing — the loudest object in his loadout was the one he most preferred not to use.
+
+[Beat 11]
+He crossed the threshold and stood still and let them look.
+
+[Beat 12]
+*They laughed. You remember that. They laughed first.*
+
+[Beat 13]
+Two of them had chrome arms — full replacement, the shoulder socket kind, myomer-bundled, hydraulic-assisted, capable of punching through light vehicle plating. One had sub-dermal thoracic plating, the seams visible at his collar like a man wearing himself wrong. One had a facial modification at the jaw that had been done badly enough to pull the skin tight on the left side — someone who'd needed it fast and cheap, who had a history of getting his face broken and had run out of the original parts. A fifth had chrome at the knuckles only, younger, already reaching for something at his waistband and doing it badly, telegraphing it with his shoulder before his hand moved. The sixth was the one Kyle tracked first — no visible augmentation, which meant internal, which meant expensive, which meant he was the one who'd made decisions.
+
+[Beat 14]
+They were playing cards. Drinking something amber from unlabeled bottles. The laughter died at the pace that laughter always dies when the math changes in a room.
+
+[Beat 15]
+Kyle's chest warmed — not Silence, not anything in his loadout, the array. A deep, cellular warmth behind the sternum, like a coal being blown to life, the firmware coming up from idle into the resolution it lived in when it had a reason. Thirty-two thousand electrodes, two hundred and fifty-six threads, processing at a speed his mouth could not keep up with. The room rendered itself. Six bodies. Heat signatures. The micro-contraction of a forearm flexor at the card table. The specific angle of a barrel rotating inside a waistband in a hand not yet raised. The younger one's shoulder telegraphing its intention before the intention had finished forming. Not prediction. *Precedence.* The array read the half-second before the action and put it on the page where Kyle could read it too, and his body responded before his mind was done receiving it, and that is the part he cannot explain and has stopped trying to.
+
+[Beat 16]
+*Ballistic precognition. That's what NeoCortex called it on the intake form. They didn't put it on the discharge papers because there were no discharge papers.*
+
+[Beat 17]
+*There is a word for what happened next. The word is beautiful. You hate that you know it.*
+
+[Beat 18]
+Silence cleared the saya in one continuous draw — right hand over the right shoulder, the carbon-nanotube blade alive in the air at the bottom of the motion. No glow. No flourish. The kawagane was matte black and stayed matte black and the dock's amber overheads found nothing on the blade to reflect because reflection was not what the blade did. He brought it across his body and settled into the stance and his right foot slid back a quarter step into the line Seo had drilled him into for nine years before letting him work alone, and the stance was the stance and the audience was responsible for their own categories.
+
+[Beat 19]
+Cacophony spoke. Four times. The bird's-head grip cleared the holster in his left hand and the recoil came up the wrist instead of around it — that was the whole point of the bird's-head configuration, the reason he had ordered it from Torii, the reason he could fire one-handed without losing the line on Silence. The sound was not a crack and not a series of cracks. It was concussion, four times in three seconds, twelve-gauge in a concrete room with no acoustic mercy, the pressure stacking against the eardrums and the sternum and the fillings in the back teeth. The cylinder rotated under his trigger finger between each shot with the slow deliberate click of a revolver action that had been polished by every cleaning since he'd owned the gun and that would still feel exactly the same the next time he reloaded it.
+
+[Beat 20]
+The first slug took the chrome-knuckles boy at six feet. Right knee. The joint did not bend; it separated. He went down sideways and the sound he made was not screaming because screaming required a kind of composure he no longer had.
+
+[Beat 21]
+The second took the sub-dermal plating man at nine feet. Left knee. The man had organized his entire fighting philosophy around the assumption that nothing would penetrate his chest, and the assumption had not extended to the kneecap, and the kneecap was where Kyle had been intending to put a slug since he had walked in through the front. He folded.
+
+[Beat 22]
+The third took the nearer of the two chrome-arm men in the right knee. The hydraulics in the arm were not load-bearing on the leg; the leg was still flesh; the leg was still where the body's weight had to go. He sat down hard against a stack of crates and did not get back up.
+
+[Beat 23]
+The fourth took the badly-done jaw man. Left knee. Kyle had saved this one for the count's last beat because the array had already mapped what would happen — the man's center of gravity, the angle of the impact, the way his face would meet the corrugated steel of the drainage channel when the leg gave out — and the array had been correct in the way the array was always correct about the small physics of falling bodies. The badly-done jaw met the floor with a sound Kyle filed without comment. Two teeth came loose on impact. The third would not.
+
+[Beat 24]
+Three seconds. Four shots. Four men down and not getting up. One round left in the cylinder. The slug. Held in reserve because the array had already read the chrome-arm man's swing in the half-second between the first shot and the second, and Kyle did not need the fifth shell for him, and Kyle did not yet know whether he needed it for what came after.
+
+[Beat 25]
+*Math. That was math. You did not have to call it anything else.*
+
+[Beat 26]
+The remaining chrome-arm man had begun his swing in the half-second between the first shot and the second, which was the correct response from a fighter with hydraulic-assisted reach and a head start on the geometry. The arm was already coming around at the height where Kyle's collarbone had been. The array read the motor bus the way it had read the others — clean electromagnetic bloom, full lateral extension, intercept point at the throat — and Kyle, who had not put Silence away because Silence had never been the point of putting away, stepped under the arc and brought the blade up.
+
+[Beat 27]
+Not a parry. He stepped under the arc and let the chrome forearm pass over his head, and as it passed he brought Silence's edge down across the shoulder seam where chrome met flesh and where the motor bus surfaced in a thumb-wide gap of unprotected actuator housing. The edge passed through the gap the way it passed through anything when the angle was right and the line was committed. The arm did not stop; the arm finished its swing into empty air; but the motor bus stopped, because the motor bus was severed at the shoulder, and the rest of the man's body did what bodies do when the load-bearing chrome stops sending signals. He sat. He did not get up. He looked at his arm, which was still moving on residual hydraulic pressure but no longer responding to him, and he made a sound that was less than screaming and more than nothing.
+
+[Beat 28]
+The street will say later that Silence shorted the implant. Kyle will not correct them. Silence found the seam. Silence is a sword. A sword that finds the seam is the only kind of sword that matters in a room full of chrome, and that is the joke nobody on the street wants to write down.
+
+[Beat 29]
+Kyle was already turning.
+
+[Beat 30]
+The boss had stood up.
+
+[Beat 31]
+He had not drawn during the four-shot count. He had not drawn during the chrome-arm collapse. He had stood up with the unhurried economy of a man who had sat at a table and watched his crew dismantle and had decided, calmly, that it was now his turn — and the hand that went to his hip was not reaching for a sidearm. He carried his own katana. Kyle had not registered the weapon earlier because the saya was inside the long coat, no protrusion, no tell, no detail the array had a category for in a room full of chrome.
+
+[Beat 32]
+The boss drew. Clean. The blade came out at the right angle in the right tempo, point neither high nor low, weight settling into a guard that was not borrowed from any school Kyle could name and which therefore was not a school's guard at all but a man's. He had been trained. Specifically, somewhere expensive, against blades of the kind he had been told Silence was. The literature on Silence was loud. The boss had read it. Kyle could see it in the way his weight stayed off his front foot, in the way he was holding the line, in the way he was already accounting for an exotic countermeasure that did not exist.
+
+[Beat 33]
+*The duel. He has been waiting for the duel. The four kneecaps were the ticket price.*
+
+[Beat 34]
+*He thinks the blade does something. He has spent money to prepare for it. He is about to discover that his preparation cost more than the blade did.*
+
+[Beat 35]
+They closed.
+
+[Beat 36]
+First exchange — the boss tested the line. A short measured cut at Kyle's right shoulder, no commitment in it, the kind of strike a swordsman uses to read his opponent's reach and tempo and the specific way he holds his weight. Silence rose to meet it. The blades touched edge to flat at a shallow angle. Steel rang, a clean sustained note in the concrete, and Kyle felt the impact in his palm and absolutely nowhere else — no flicker along the spine of the blade, no warmth in the tsuka, no signal of any kind, because the blade was a sword and what swords did was meet the other blade and transfer the force back through Kyle's wrist into Kyle's shoulder into Kyle's stance the way they had been doing since the iron age. The boss recognized the read he had been given — Kyle's reach, Kyle's tempo — and stepped back without expression. He had wanted that information and he had paid one exchange for it. He had also wanted to confirm something else — some signature he had been told to watch for, some flare or pulse or visible change in the blade — and he had not seen what he had been told to watch for. His face did not show this. His weight stayed off the front foot. But his guard moved a quarter inch in a way that the array catalogued and filed.
+
+[Beat 37]
+*He's watching for the wrong thing. He's been told what to watch for and what to watch for isn't there. Use it.*
+
+[Beat 38]
+Second exchange — Kyle pressed. A two-step advance, the cut coming high and right, and the boss met it with a parry that was not a parry but a deflection, his blade sliding along Silence's flat to redirect the energy past his shoulder. Smart. Conservative. He had read the literature, and the literature said you didn't take edge-to-edge contact with Silence because edge-to-edge contact was when the bad thing happened. There was no bad thing. The boss did not know there was no bad thing. The boss was conducting a duel against a sword whose specifications existed only on three different paid technical papers, none of which had been peer-reviewed, none of which had been written by anyone who had actually seen the blade work. Kyle adjusted. The boss had told him something in return: *I will not let you charge me cleanly. I will work the angles.*
+
+[Beat 39]
+*He's fighting the literature. You are fighting him. These are different fights.*
+
+[Beat 40]
+Third exchange — the boss came in committed. He had read enough. He cut high left, fast, and Kyle's parry was a fraction late because the array's micro-tremor read on the boss had been clean but the boss's body had been clean in return, no telegraph, no shoulder bloom, just a man who had decided to commit and committed. Silence took the cut at the proper angle but the boss had already let the blade slide off the parry into a follow-through, and the follow-through grazed Kyle's left forearm — three inches of skin opened, not deep, the cut shallow enough that the subdermal mesh registered the pressure and decided not to engage. Blood came up immediately. Kyle's interior catalogue tagged it without comment: *vein not artery, two centimeters lateral of the radial, will not bleed out, will impair grip on the shotgun side in approximately ninety seconds.*
+
+[Beat 41]
+The boss saw the blood. He understood what the cut meant — that he was inside Kyle's range, that he had landed first, that whatever exotic countermeasure the literature had warned him about either had a tell he had successfully avoided or did not work the way the literature said it worked or did not work at all. He chose to interpret the absence of a flash, an arc, a glow, a hum, as evidence that he had timed it correctly. He chose this because the alternative — that he had spent money on training against a weapon whose myth had outrun its mechanism by thirty years — was not the kind of interpretation a man chose mid-duel.
+
+[Beat 42]
+*Laugh or you'd cry. He's still fighting the literature. He's about to find out what the literature was wrong about.*
+
+[Beat 43]
+Fourth exchange — the boss thrust. A straight committed thrust at Kyle's center mass, the kind of strike that asked everything of the blade and the arm and the line, and Silence came down to meet it not at the edge and not at the flat but at the seppa — the small collar between the tsuba and the blade, the part of the sword that classical schools said you should never use — and the thrust caught there, blade to blade, locked. Kyle drove forward. He kept the lock. He let Silence's edge ride along the flat of the boss's blade like a skate on ice, the edge tracking down the boss's steel from the tip toward the middle toward the tsuba, and where the boss's blade met the boss's hand, the edge of Silence met the boss's right wrist.
+
+[Beat 44]
+The edge passed through the wrist the way the edge passed through anything when the angle was right and the line was committed. Bone, tendon, the radial and ulnar arteries, the median nerve, the carpal architecture that had held a sword for whatever number of years the boss had been training for this duel — Silence did not care about any of it because Silence was a sword and what swords cared about was the geometry of where the edge met the body and the geometry was correct.
+
+[Beat 45]
+The boss's right hand and the boss's katana fell together to the corrugated steel. The boss looked at his wrist. The boss looked at his sword on the floor. The boss looked at Kyle. The boss said something in a language Kyle did not speak — three words, very quiet, possibly a name, possibly a prayer, possibly an instruction to whoever had trained him about a blade he had been told to expect to do something it had never been able to do — and then his knees gave and he went down sideways across the corrugated steel with the unhurried calm of a man whose body had decided the engagement was complete twenty seconds before his mind had finished writing the report.
+
+[Beat 46]
+He bled out in nineteen seconds. The array timed it. The array timed everything. The brachial artery did most of the work; the body did the rest.
+
+[Beat 47]
+Twenty-three seconds for the duel. Twenty-six on the dock floor end to end.
+
+[Beat 48]
+Kyle sheathed Silence. The blade went home dry — almost dry, a thin line of red on the edge near the kissaki where it had met the boss's wrist, and Kyle wiped that against the boss's coat before the saya took it. He felt for the edge with three fingers along the flat as the blade seated. No new fractures. Cacophony went back into the holster on his low left hip, four chambers spent, one slug still in the cylinder, the cylinder closed and locked. He registered the count the way other people registered the time.
+
+[Beat 49]
+*Kneecaps are math. Duel is discipline. The blade is just a sword. The literature is what they spent the money on. The bushido coda is what you call a discipline that knows what it is paying for and does not advertise.*
+
+[Beat 50]
+Kyle's hands were steady. They would shake in four minutes. He had learned to use the window.
+
+[Beat 51]
+He moved through the bodies. Methodical. The badly-done jaw man was face-down in the drainage channel where the fourth shot had put him, cheek against the corrugated steel, breath fogging in the runoff. Kyle crouched beside him. He found the teeth — two loosened when the man's face had met the floor, one still seated and requiring grip and twist and a specific application of force that Kyle performed without expression. He collected them in his left hand, warm and slick and smelling of blood and saliva, and he did not think about what he was doing in terms that required examination.
+
+[Beat 52]
+*You are thinking about her father's jaw. Wired shut. A man reduced to breathing. You are building a correspondence. You know exactly what you're doing.*
+
+[Beat 53]
+He was crouched over the fourth man when he registered the breathing behind the ventilation unit. Quick. Shallow. Not panic — panic doesn't hold that long without breaking. This was something controlled. Something stubborn. He'd tracked it since the threshold. He'd known it was there. He'd worked around it with the same automatic precision with which he'd worked around the drainage channels — the girl was infrastructure, she was fixed, she was not a variable.
+
+[Beat 54]
+Her father's daughter.
+
+[Beat 55]
+He stood. He walked to the ventilation unit. He did not go behind it. He stood where she could see him — a tall, emaciated, blood-misted shape in the dock's bad light — and he waited. The breathing stopped. Then a lean, slow movement. A face. Twelve, maybe thirteen, with her father's jaw and her mother's eyes and an expression that had no name because it was composed entirely of things a child her age should not have had to feel simultaneously.
+
+[Beat 56]
+Kyle opened his hand.
+
+[Beat 57]
+"Present these to your father. I think he will appreciate the gesture."
+
+[Beat 58]
+The teeth fell into her cupped palms. She shrieked — high, thin, a sound that bounced off every hard surface in the dock and came back changed — but she did not drop them. Her fingers closed. She looked at her closed hands. She bowed, a full-body convulsion of terror and something that was not gratitude exactly but was shaped like it, and then she was gone, swallowed by the dark beyond the door.
+
+[Beat 59]
+Kyle watched the dark for three seconds.
+
+[Beat 60]
+*She didn't drop them. Note that. She didn't drop them.*
+
+[Beat 61]
+He cleaned the blade. The tremor started in his right hand, moved to his left, became briefly bilateral — the crash, the array's invoice, thousands of calories called in twenty seconds and now the body presenting the bill. His stomach was a closed fist. He needed protein, carbohydrate, something hot in a bowl, something that required no decisions. He needed to sit somewhere that smelled like something other than what this smelled like.
+
+[Beat 62]
+He walked back to the bike. The Gray Zone's night-architecture closed around him — the flickering overheads, the drip of recycled water from the tier above, the distant music from some bar that had no business being optimistic. The towers leaned over the street the way they did this far down. A second VTOL crossed the gap forty stories up, running lights amber, moving north. Some board director was still late to dinner. Kyle did not file the running lights. He had stopped filing the running lights at some point in his twenties. The rich travelled rich, and Kyle travelled the way Kyle travelled, and the gap between those two transit modes was now part of the city the way the rain was part of the city, weather you accepted because the alternative was useless.
+
+[Beat 63]
+The bike was where he had left it. The plate was the one he'd ridden down on; he'd swap it before he rode home, two streets short of West Town, where the Tier read changed and the plate that worked in the Gray Zone was the wrong plate for the surveillance grid the corponations ran across the Wicker boundary. He started the bike. He rode the long way north toward Chen's. Eight minutes. He was hungry. He was tired. He was alive.
+
+[Beat 64]
+Chen's stall is two blocks south of the freight tier and one alley off the main, the warm orange glow of its hood lamp visible through the rain from a block away. He has eaten what comes out of her kitchen once — the smell that pushed through the camphor in the apartment six hours ago, fried oil and chili and pork bone — but he has not been to the stall itself. He walks the bike to it. The bike rolls easier than it rides at walking pace because the front wheel is true and the bearings are clean, and Kyle has put more time into the bike than he has put into most of the people he has known, and the bike has rewarded him for it, which is more than he can say for most of the people he has known.
+
+[Beat 65]
+She is at the counter when he arrives. The apron is fresh; the hands are washed; the small scar at the base of her left thumb catches the lamp light at an angle Kyle catalogues without making the catalogue mean anything yet. The daughter is somewhere he cannot see. The husband is somewhere he cannot see either. The teeth, the array confirms by absence — no second delivery to make — have already arrived where they were going. The smell of the stall is what the apartment smelled like, transposed into a place where the smell is the work and not the wound.
+
+[Beat 66]
+She does not greet him. She sets a bowl down on the counter — pork bone broth, the long-simmered kind, chili oil already added the way she will remember he likes it for the next four years. He sits on the stool. The stool is the right height for him. She has not adjusted it; he has not adjusted it; the geometry simply is what it is the first time, and the first time is the way it will be from now on.
+
+[Beat 67]
+He eats. The broth is hot. He eats the whole bowl and does not speak. She does not refill it. She does not move. When he sets the chopsticks down she is still standing exactly where she was when she set the bowl, and she is looking at him the way she had looked at the chips she had pressed into his hand at half rate six hours ago — she has more she wants to give and no language for the giving, and she is now finding the language.
+
+[Beat 68]
+Mandarin first, low. *Xie xie.* The two syllables doing the work of an entire ledger. Then, more deliberately, in the tongue she has chosen to run this stall in, the one she gives the customers because the customers do not all know hers: *Free. Always. For you. Forever.* Her hands are flat on the counter beside the bowl. Her thumb with the scar is the closest thing to him on the wood. She has just offered him the only thing she owns.
+
+[Beat 69]
+The NeoCortex catalogues her offer with the precision it catalogues exits. *She means it. She is not negotiating. She does not understand that she is offering you a thing you cannot accept.*
+
+[Beat 70]
+Kyle reaches into his coat and sets a credit chip on the counter beside her hand. Standard rate. The kind of standard rate a man pays when he wants the transaction to be a transaction and not the beginning of an obligation he has spent his life refusing to accumulate.
+
+[Beat 71]
+*I pay,* he said. His voice is level. He has practiced level for a long time. *Every bowl. Standard rate. Every time.*
+
+[Beat 72]
+She does not pick up the chip. He does not pick up the bowl. The standoff lasts perhaps four seconds and is the most important four seconds of their relationship, and they both know it without naming it.
+
+[Beat 73]
+She tries again. Slower this time, the way you try again with a man you have decided not to insult by giving up on the first refusal. *You took the contract at half. You did the work whole. The bowl is nothing. Forever is nothing.*
+
+[Beat 74]
+*Forever is everything,* the NeoCortex flags, in the catalogue. *Forever is the largest thing she has, and she is offering it because she does not yet know how large it is.*
+
+[Beat 75]
+Kyle does not move the chip. He looks at her the way the discipline allows him to look at a woman who has just tried to give him something he cannot, in good conscience, accept. The blade is the discipline. The bowl is the discipline. The credit chip is the discipline. He does not say that aloud. He says, aloud, what he can: *If I do not pay, I do not eat. If I do not eat here, I do not eat. I would rather pay you than not see you again. The chip stays.*
+
+[Beat 76]
+The four seconds become five. Then her hand closes over the chip the way her daughter's hand had closed over the teeth — not refusing the gift, accepting that the gift is the form the man in front of her needs the gift to take. She bows. Not the convulsive bow of the apartment six hours ago. A smaller bow. The bow of a vendor accepting a customer's price. The kind of bow she will give him every night, roughly three hundred nights a year — barring the occasional distant contract, grievous injury, or recon — for the next four years and longer.
+
+[Beat 77]
+He stands. He bows back, smaller still, the bow of a man who has just successfully refused a kindness larger than he can carry. *Tomorrow,* he says. *Same bowl. Same price.*
+
+[Beat 78]
+*Same price,* she said. The agreement is the contract. The contract is the bond.
+
+[Beat 79]
+He turns and walks the bike out of the stall's lamp circle. The rain has not stopped. It will not stop tonight. The towers overhead lean in the way they do this far down, and the gap between them is full of the city's wet patient light, and Kyle thinks, briefly, that this is a fine city for the discipline he has, and the discipline he has is what this city is asking him to spend, and the world is not getting better and is not going to get better and he is, this evening, between contracts, eating a hot bowl of soup that he has insisted on paying for, and the rain is not going to stop.
+
+[Beat 80]
+*Laugh or you'd cry. He laughed.*
+
+[Beat 81]
+Quietly, to himself, walking the bike up the slope toward Wicker. Not a sound anyone could hear. A single tight exhalation, the laugh of a man who has just seen the joke and decided the joke is funny anyway.
+
+[Beat 82]
+Someone had been watching the loading-dock work. Someone had stayed to watch the walk back. Someone had watched the bike pick-up and would watch the route home, partially, before the route home crossed into a tier where their telemetry stopped working. The watching was professional — the camera position chosen for the angle, the timing chosen for the moment a man's discipline relaxes after the work is done. Kyle felt the watching the way you feel a draft you cannot find the source of. He did not turn his head. Turning his head would tell the watcher what kind of read his array had performed and he was not yet willing to give the watcher that data. The boy from the Grind, who had spent his childhood being measured by people whose names he was never told, had grown into a man who did the measuring back without announcing he was doing it.
+
+[Beat 83]
+The watcher noted the pace. The watcher noted that the pace did not change. The watcher noted that Kyle's hand did not move toward the saya at any point during the walk, and that his shoulders did not square, and that the breathing read on whatever telemetry the watcher had access to — and they had access, organizations like the one this watcher worked for had access — stayed at the rest cycle. The watcher noted, in particular, the moment Kyle had walked Silence's edge through the chrome-arm man's shoulder seam without any visible flare, glow, or arc, and the watcher's report would treat this as a calibration data point, because the literature on Silence had been wrong about a lot of things, and the watcher's organization had been paying for the literature, and the watcher's organization preferred their literature to be correct.
+
+[Beat 84]
+The watcher filed all of this in a report Kyle would never read. The report would be reviewed two months later by Hua, the south-arm cell captain, who would close the file and pass it to her gang lieutenant Mira along with a second one labeled *Bucktown — first interview — fourteen-piece*, and the second file would lead to the third, and the third to the fourth, and Kyle did not know any of that yet, riding north through the rain toward Wicker because the noodles had been the right temperature and the chip had stayed on the counter and the bike was running clean and the world was still fucked but it was, this evening, fucked at a tempo he could ride.
+
+[Beat 85]
+Kyle rode home. The noodles would be cold by morning. They always were.
+

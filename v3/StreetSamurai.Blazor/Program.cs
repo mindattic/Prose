@@ -1,3 +1,4 @@
+using System.Net;
 using System.Threading.RateLimiting;
 using Microsoft.AspNetCore.Antiforgery;
 using Microsoft.AspNetCore.DataProtection;
@@ -913,6 +914,10 @@ var forwardedHeaders = new ForwardedHeadersOptions
 };
 forwardedHeaders.KnownIPNetworks.Clear();
 forwardedHeaders.KnownProxies.Clear();
+// Trust RFC-1918 private address space so App Service's X-Forwarded-Proto is honored.
+forwardedHeaders.KnownIPNetworks.Add(new IPNetwork(IPAddress.Parse("10.0.0.0"), 8));
+forwardedHeaders.KnownIPNetworks.Add(new IPNetwork(IPAddress.Parse("172.16.0.0"), 12));
+forwardedHeaders.KnownIPNetworks.Add(new IPNetwork(IPAddress.Parse("192.168.0.0"), 16));
 app.UseForwardedHeaders(forwardedHeaders);
 
 app.UseRateLimiter();
@@ -934,7 +939,7 @@ app.MapRazorComponents<App>()
 // MindAttic.Authentication HTTP endpoints — /_ma-auth/{login,mfa-challenge,logout,
 // change-password,reset/request,reset/confirm}. These OWN sign-in (the Razor components
 // only render the antiforgery-protected forms that post here).
-app.MapMindAtticAuthEndpoints();
+app.MapMindAtticAuthEndpoints(group => group.RequireRateLimiting("login"));
 
 // Episode audio: serve the per-beat MP3 files the /listen page plays.
 // File path is engine/audio/episodes/{episodeId}/{index:D3}.mp3 — bound to the
