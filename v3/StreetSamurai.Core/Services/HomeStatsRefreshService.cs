@@ -1,5 +1,6 @@
 using System.Diagnostics;
 using Microsoft.EntityFrameworkCore;
+using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
 using Microsoft.Extensions.Logging;
@@ -32,6 +33,9 @@ public class HomeStatsRefreshService : BackgroundService
     /// indirectly).</summary>
     public static readonly TimeSpan RefreshInterval = TimeSpan.FromMinutes(5);
 
+    // Set BackgroundServices:Enabled=false in App Service config to stop DB keep-alive on zero-user deployments.
+    public bool Enabled { get; }
+
     private readonly IServiceProvider sp;
     private readonly HomeStatsCache cache;
     private readonly ILogger<HomeStatsRefreshService> log;
@@ -39,15 +43,23 @@ public class HomeStatsRefreshService : BackgroundService
     public HomeStatsRefreshService(
         IServiceProvider sp,
         HomeStatsCache cache,
-        ILogger<HomeStatsRefreshService> log)
+        ILogger<HomeStatsRefreshService> log,
+        IConfiguration configuration)
     {
         this.sp = sp;
         this.cache = cache;
         this.log = log;
+        Enabled = configuration.GetValue<bool>("BackgroundServices:Enabled", defaultValue: true);
     }
 
     protected override async Task ExecuteAsync(CancellationToken stoppingToken)
     {
+        if (!Enabled)
+        {
+            log.LogInformation("HomeStatsRefreshService disabled (BackgroundServices:Enabled=false).");
+            return;
+        }
+
         // Run an immediate refresh so the first home-page hit after startup
         // doesn't see all zeros. Subsequent refreshes are interval-paced.
         await RefreshAsync(stoppingToken);
