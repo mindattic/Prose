@@ -296,10 +296,48 @@ public static class CharacterMapper
             entityById.TryGetValue(c.Id, out var entity);
             var data = Materialize(c, entity, tags: null, currentLocation: "");
             rebuilt.Add(data);
-            UpsertReadModelAsync(db, c.Id, data, default).GetAwaiter().GetResult();
+            SaveReadModelSafe(db, c.Id, data);
         }
-        if (rebuilt.Count > 0) db.SaveChanges();
         return rebuilt;
+    }
+
+    // Saves one read-model row, handling the concurrent-insert race: two requests can
+    // both see no row, both queue an Add, and the second SaveChanges blows up on PK.
+    // On collision we clear the tracker and flip to an update.
+    private static void SaveReadModelSafe(StreetSamuraiDbContext db, Guid id, CharacterData data)
+    {
+        var json = SerializeReadModel(data);
+        var existing = db.CharacterReadModels.FirstOrDefault(r => r.CharacterId == id);
+        if (existing == null)
+        {
+            db.CharacterReadModels.Add(new CharacterReadModel
+            {
+                CharacterId = id, Json = json, Version = ReadModelVersion, RefreshedAt = DateTime.UtcNow,
+            });
+            try
+            {
+                db.SaveChanges();
+            }
+            catch (Microsoft.EntityFrameworkCore.DbUpdateException ex)
+                when (ex.InnerException is Microsoft.Data.SqlClient.SqlException sql
+                      && (sql.Number == 2627 || sql.Number == 2601))
+            {
+                // Another concurrent request inserted first — clear and update instead.
+                db.ChangeTracker.Clear();
+                existing = db.CharacterReadModels.First(r => r.CharacterId == id);
+                existing.Json = json;
+                existing.Version = ReadModelVersion;
+                existing.RefreshedAt = DateTime.UtcNow;
+                db.SaveChanges();
+            }
+        }
+        else
+        {
+            existing.Json = json;
+            existing.Version = ReadModelVersion;
+            existing.RefreshedAt = DateTime.UtcNow;
+            db.SaveChanges();
+        }
     }
 
     /// <summary>Overlay the live Tags + Location onto a batch of read-model-sourced records (one query each).</summary>

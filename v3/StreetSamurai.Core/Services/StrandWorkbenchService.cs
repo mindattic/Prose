@@ -149,6 +149,8 @@ public class StrandWorkbenchService
         beat.TextHash      = ComputeTextHash(trimmed);
         beat.WasCorrected  = true;
         beat.Stale         = true;
+        beat.Score         = null;  // text changed → prior score is for the old version
+        beat.ScoredAt      = null;
         InvalidateAudioOnBeat(beat);
         beat.UpdatedAt = DateTime.UtcNow;
         try
