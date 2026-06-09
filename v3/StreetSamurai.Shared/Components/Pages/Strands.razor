@@ -11,6 +11,7 @@
 @inject StreetSamurai.Core.Services.StrandWorkbenchService Workbench
 @inject StreetSamurai.Core.Services.DocxExportService Docx
 @inject StreetSamurai.Core.Services.ManuscriptExportService Manuscript
+@implements IDisposable
 
 @*
    Strand index. Lists every strand grouped by kind. Click to open in the
@@ -18,7 +19,7 @@
    creates a blank top-level strand and routes you there.
 *@
 
-<div class="container py-3" style="max-width: 1100px;">
+<div class="container py-3" style="max-width: 1100px;" id="strands-list-root">
     <div class="d-flex justify-content-between align-items-center mb-3">
         <div>
             <h4 class="text-danger mb-0"><i class="bi bi-collection me-2"></i>Strands</h4>
@@ -73,7 +74,7 @@
                     {
                         var beatCount = beatCounts.GetValueOrDefault(s.Id, 0);
                         var childCount = childCounts.GetValueOrDefault(s.Id, 0);
-                        <li class="list-group-item bg-dark text-light border-secondary">
+                        <li class="list-group-item bg-dark text-light border-secondary" data-strand-id="@s.Id" data-has-children="@(childCount > 0 ? "true" : "false")">
                             @if (editingId == s.Id)
                             {
                                 @* ── Inline edit: title + full description ───────────────── *@
@@ -101,6 +102,9 @@
                             else
                             {
                                 <div class="d-flex justify-content-between align-items-center">
+                                    <span class="strand-drag-handle me-2" title="Drag to reorder or move into a collection">
+                                        <i class="bi bi-grip-vertical"></i>
+                                    </span>
                                     <a href="@($"/strand/{s.Slug}")" class="text-info text-decoration-none flex-grow-1">
                                         <strong>@s.Title</strong>
                                     </a>
@@ -206,9 +210,12 @@
                             @foreach (var kid in kids.OrderBy(k => k.SortKey).ThenBy(k => k.Title))
                             {
                                 var kidBeats = beatCounts.GetValueOrDefault(kid.Id, 0);
-                                <li class="list-group-item bg-dark text-light border-secondary strand-child-row">
+                                <li class="list-group-item bg-dark text-light border-secondary strand-child-row" data-strand-id="@kid.Id" data-has-children="false">
                                     <div class="d-flex justify-content-between align-items-center">
-                                        <a href="@($"/strand/{kid.Slug}")" class="text-info text-decoration-none flex-grow-1 ms-3">
+                                        <span class="strand-drag-handle me-1" title="Drag to reorder or move to a different collection">
+                                            <i class="bi bi-grip-vertical"></i>
+                                        </span>
+                                        <a href="@($"/strand/{kid.Slug}")" class="text-info text-decoration-none flex-grow-1 ms-2">
                                             <i class="bi bi-arrow-return-right me-2 text-secondary" style="font-size:0.75rem;"></i>@kid.Title
                                         </a>
                                         <div class="d-flex align-items-center gap-2 small">
@@ -352,12 +359,21 @@
     .review-fixes li { margin-bottom: 0.15rem; }
     .strand-child-row { background: #0d0d0d !important; border-left: 2px solid #1a3a2a !important; }
     .strand-child-row:hover { background: #111 !important; }
+    .strand-drag-handle { cursor: grab; color: #4a4a4a; user-select: none; flex-shrink: 0; }
+    .strand-drag-handle:hover { color: #0dcaf0; }
+    .strand-drag-handle:active { cursor: grabbing; }
+    [data-strand-id].strand-dragging { opacity: 0.45; }
+    [data-strand-id].strand-drop-before { box-shadow: inset 0 3px 0 0 #0dcaf0 !important; }
+    [data-strand-id].strand-drop-after  { box-shadow: inset 0 -3px 0 0 #0dcaf0 !important; }
+    [data-strand-id].strand-drop-child  { background: rgba(13,202,240,0.07) !important; outline: 2px solid rgba(13,202,240,0.45); outline-offset: -2px; }
 </style>
 
 @code {
     private bool loading = true;
     private List<StrandEntity> strands = new();
     private IEnumerable<IGrouping<string, StrandEntity>> grouped = Array.Empty<IGrouping<string, StrandEntity>>();
+    private DotNetObjectReference<Strands>? selfRef;
+    private bool dragAttached;
     /// <summary>Direct-beat count per top-level strand id. Lets the index
     /// show a "this has stuff" cue without opening every strand.</summary>
     private Dictionary<Guid, int> beatCounts = new();
@@ -428,6 +444,83 @@
     protected override async Task OnInitializedAsync()
     {
         await LoadAsync();
+    }
+
+    protected override async Task OnAfterRenderAsync(bool firstRender)
+    {
+        if (!dragAttached && !loading)
+        {
+            try
+            {
+                selfRef ??= DotNetObjectReference.Create(this);
+                await JS.InvokeVoidAsync("streetsamurai.attachStrandDragHandlers", "strands-list-root", selfRef);
+                dragAttached = true;
+            }
+            catch { /* JS not loaded yet — will retry on next render */ }
+        }
+    }
+
+    [Microsoft.JSInterop.JSInvokable]
+    public async Task OnStrandDropped(string draggedId, string targetId, string mode)
+    {
+        if (!Guid.TryParse(draggedId, out var dragId) ||
+            !Guid.TryParse(targetId, out var targetGuid)) return;
+
+        await using var db = await DbFactory.CreateDbContextAsync();
+        var dragged = await db.Strands.FirstOrDefaultAsync(s => s.Id == dragId);
+        var target  = await db.Strands.FirstOrDefaultAsync(s => s.Id == targetGuid);
+        if (dragged == null || target == null) return;
+
+        Guid? newParentId;
+        double newSortKey;
+
+        if (mode == "child")
+        {
+            // Append as last child of the target collection.
+            newParentId = target.Id;
+            var maxSk = await db.Strands
+                .Where(s => s.ParentStrandId == target.Id && s.Id != dragId)
+                .MaxAsync(s => (double?)s.SortKey) ?? 0.0;
+            newSortKey = maxSk + 100.0;
+        }
+        else
+        {
+            // "before" or "after" — insert as sibling of target at target's parent level.
+            newParentId = target.ParentStrandId;
+            var siblings = await db.Strands
+                .Where(s => s.ParentStrandId == newParentId && s.Id != dragId)
+                .OrderBy(s => s.SortKey)
+                .Select(s => new { s.Id, s.SortKey })
+                .ToListAsync();
+            var targetIdx = siblings.FindIndex(s => s.Id == targetGuid);
+
+            if (mode == "after")
+            {
+                var prevSk = targetIdx >= 0 ? siblings[targetIdx].SortKey : 0.0;
+                var nextSk = (targetIdx >= 0 && targetIdx + 1 < siblings.Count)
+                    ? siblings[targetIdx + 1].SortKey : prevSk + 200.0;
+                newSortKey = (prevSk + nextSk) / 2.0;
+            }
+            else // "before"
+            {
+                var nextSk = targetIdx >= 0 ? siblings[targetIdx].SortKey : 100.0;
+                var prevSk = targetIdx > 0 ? siblings[targetIdx - 1].SortKey : nextSk - 200.0;
+                newSortKey = (prevSk + nextSk) / 2.0;
+            }
+        }
+
+        dragged.ParentStrandId = newParentId;
+        dragged.SortKey = newSortKey;
+        dragged.UpdatedAt = DateTime.UtcNow;
+        await db.SaveChangesAsync();
+
+        dragAttached = false;
+        await InvokeAsync(LoadAsync);
+    }
+
+    public void Dispose()
+    {
+        selfRef?.Dispose();
     }
 
     private async Task LoadAsync()

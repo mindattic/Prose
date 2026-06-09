@@ -128,6 +128,22 @@
     .chapter-index-link { color: #79d2e8; text-decoration: none; font-size: 0.9rem; padding: 0.15rem 0; }
     .chapter-index-link:hover { color: #f8f9fa; text-decoration: underline; }
     .chapter-index-link .ci-pos { color: #6c757d; font-variant-numeric: tabular-nums; margin-right: 0.5rem; font-size: 0.8rem; }
+
+    /* Children nav — shown on collection strands (those with direct children).
+       Each child strand is a row: kind badge · title · score/status · arrow.
+       Clicking navigates to /strand/{child.Slug} to edit that strand alone. */
+    .strand-children-nav { border: 1px solid #2a2a2a; border-radius: 6px; background: #0f0f0f; margin-bottom: 1rem; }
+    .strand-children-nav-head { font-size: 0.7rem; text-transform: uppercase; letter-spacing: 0.1em; color: #8b949e; padding: 0.45rem 0.9rem 0.3rem; border-bottom: 1px solid #1a1a1a; }
+    .strand-children-nav-list { display: flex; flex-direction: column; }
+    .strand-children-nav-item { display: flex; align-items: center; gap: 0.4rem; padding: 0.45rem 0.9rem; text-decoration: none; color: #e9ecef; border-bottom: 1px solid #1a1a1a; transition: background 0.1s ease; }
+    .strand-children-nav-item:last-child { border-bottom: none; border-radius: 0 0 5px 5px; }
+    .strand-children-nav-item:hover { background: rgba(13,202,240,0.06); color: #f8f9fa; }
+    .strand-children-nav-item:hover .scn-arrow { color: #0dcaf0; }
+    .scn-kind { font-size: 0.6rem; flex-shrink: 0; }
+    .scn-title { font-size: 0.92rem; font-weight: 500; flex-grow: 1; }
+    .scn-status { font-size: 0.6rem; flex-shrink: 0; }
+    .scn-arrow { color: #495057; font-size: 1.1rem; flex-shrink: 0; }
+    .scn-synopsis { font-size: 0.78rem; color: #8b949e; margin-left: 0.2rem; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; max-width: 40ch; }
     .beat-gap-inline { display: inline-flex; gap: 0.4rem; align-items: center; font-size: 0.72rem; color: #adb5bd; }
     .beat-gap-inline.custom { color: #ffc107; }
     .beat-gap-input { width: 70px; background: #161616; color: #f8f9fa; border: 1px solid #2a2a2a; padding: 0 0.3rem; font-size: 0.72rem; border-radius: 3px; }
@@ -559,31 +575,79 @@ else
             }
         }
 
-        @* Nested-strands list removed: a strand is now a single flat list of
-           beats, with section divisions marked by Beat.IsChapterStart.
-
-           In its place, render a chapter index — one jump-link per beat
-           with IsChapterStart=true. Click jumps to the beat's row via
-           anchor scroll. Built from the in-memory beats list so the count
-           updates immediately when the user toggles IsChapterStart. *@
-        @{
-            var chapterStops = beats
-                .Select((entry, idx) => (entry.Beat, position: idx + 1))
-                .Where(x => x.Beat.IsChapterStart)
-                .ToList();
+        @* Children navigation — when this is a collection, list direct child strands
+           so the user can click into each one to edit it in isolation. *@
+        @if (children.Count > 0)
+        {
+            <div class="strand-children-nav">
+                <div class="strand-children-nav-head">
+                    <i class="bi bi-diagram-3 me-1"></i>@children.Count contained strand(s) — click to open and edit
+                </div>
+                <div class="strand-children-nav-list">
+                    @foreach (var child in children)
+                    {
+                        <a href="/strand/@child.Slug" class="strand-children-nav-item">
+                            <span class="badge bg-secondary text-uppercase scn-kind">@child.Kind</span>
+                            <span class="scn-title">@child.Title</span>
+                            @if (!string.IsNullOrWhiteSpace(child.Synopsis))
+                            {
+                                <span class="scn-synopsis" title="@child.Synopsis">@child.Synopsis</span>
+                            }
+                            @if (child.Score.HasValue)
+                            {
+                                <span class="badge @ScorePctColor(child.Score.Value) ms-1">@child.Score.Value.ToString("0")%</span>
+                            }
+                            <span class="badge bg-@StatusColor(child.Status) text-uppercase ms-1 scn-status">@StatusLabel(child.Status)</span>
+                            <i class="bi bi-arrow-right-short scn-arrow"></i>
+                        </a>
+                    }
+                </div>
+            </div>
         }
-        @if (chapterStops.Count > 1)
+
+        @* Chapter index: when this strand has direct children, each child strand
+           is a section — anchor to its first beat in the merged flat list so
+           clicking the TOC entry scrolls to where that strand's content begins.
+           When no children, use IsChapterStart beats as before. *@
+        @{
+            var hasTocChildren = children.Count > 0;
+            List<(string Label, string Href)> tocEntries;
+            if (hasTocChildren)
+            {
+                tocEntries = children
+                    .Select(c =>
+                    {
+                        var firstBeat = beats.FirstOrDefault(b => b.StrandId == c.Id);
+                        var href = firstBeat != null
+                            ? $"#beat-{firstBeat.Beat.Id:N}"
+                            : $"/strand/{c.Slug}";
+                        return (Label: c.Title, Href: href);
+                    })
+                    .ToList();
+            }
+            else
+            {
+                tocEntries = beats
+                    .Where(b => b.Beat.IsChapterStart)
+                    .Select(b => (
+                        Label: string.IsNullOrEmpty(b.Beat.BeatTitle) ? "(untitled chapter)" : b.Beat.BeatTitle,
+                        Href: $"#beat-{b.Beat.Id:N}"))
+                    .ToList();
+            }
+        }
+        @if (tocEntries.Count > 1)
         {
             <div class="chapter-index">
                 <div class="chapter-index-head">
-                    <i class="bi bi-list-ol me-1"></i>@chapterStops.Count chapter(s)
+                    <i class="bi bi-list-ol me-1"></i>@tocEntries.Count @(hasTocChildren ? "strand(s)" : "chapter(s)")
                 </div>
                 <div class="chapter-index-list">
-                    @foreach (var stop in chapterStops)
+                    @for (var toci = 0; toci < tocEntries.Count; toci++)
                     {
-                        var label = string.IsNullOrEmpty(stop.Beat.BeatTitle) ? "(untitled chapter)" : stop.Beat.BeatTitle;
-                        <a href="@($"#beat-{stop.Beat.Id:N}")" class="chapter-index-link">
-                            <span class="ci-pos">#@stop.position</span>@label
+                        var entry = tocEntries[toci];
+                        var pos = toci + 1;
+                        <a href="@entry.Href" class="chapter-index-link">
+                            <span class="ci-pos">#@pos.ToString("D2")</span>@entry.Label
                         </a>
                     }
                 </div>
@@ -1277,7 +1341,13 @@ else
     /// <summary>Working copy of the meta panel form. Re-populated from the
     /// beat each time the panel opens; not persisted until Save.</summary>
     private MetaForm metaForm = new();
-    private Guid? pendingDelete;
+    /// <summary>Beat id + owning strand id captured at the moment the user
+    /// clicks Delete. The owning strand may differ from the top-level
+    /// <see cref="strand"/> when we are viewing a collection whose beats
+    /// come from child strands — passing the wrong strand id to
+    /// <see cref="StrandWorkbenchService.DeleteBeatAsync"/> would silently
+    /// no-op because the junction lookup finds nothing.</summary>
+    private (Guid BeatId, Guid OwningStrandId)? pendingDelete;
     private System.Threading.Timer? poll;
     private string? lastIdOrSlug;
 
@@ -1908,23 +1978,27 @@ else
 
     private void RequestDeleteAsync(Guid beatId)
     {
-        // Escape handler is installed once on first render via
-        // streetsamurai.installPageEscape and torn down in Dispose. No
-        // per-modal re-wiring required.
-        pendingDelete = beatId;
+        // Capture the owning strand from the in-memory beat list — when
+        // viewing a collection, beats from child strands carry that child's
+        // strand id, NOT the parent's. Passing the wrong id to DeleteBeatAsync
+        // would silently no-op because the junction WHERE StrandId=X finds
+        // nothing. Escape handler is installed once on first render.
+        var owning = beats.FirstOrDefault(b => b.Beat.Id == beatId)?.StrandId
+                     ?? strand!.Id;
+        pendingDelete = (beatId, owning);
     }
     private void CancelDelete() => pendingDelete = null;
 
     private async Task ConfirmDeleteAsync()
     {
         if (strand == null || pendingDelete == null) return;
-        var bid = pendingDelete.Value;
+        var (bid, owningStrandId) = pendingDelete.Value;
         pendingDelete = null;
         working = true;
         StateHasChanged();
         try
         {
-            await Workbench.DeleteBeatAsync(strand.Id, bid);
+            await Workbench.DeleteBeatAsync(owningStrandId, bid);
             await ReloadBeatsAsync();
             Toast.Success("DELETE", "Beat removed.");
         }
