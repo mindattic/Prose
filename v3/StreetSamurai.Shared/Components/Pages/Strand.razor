@@ -236,7 +236,9 @@
        the read-mode copy/llm/mic/delete buttons — conditional swap, so
        they can never overlap. The absolute-positioned .beat-edit-actions
        overlay is gone. */
-    .insert-bar { display: flex; align-items: center; gap: 0.5rem; opacity: 0; transition: opacity 0.15s ease; padding: 0.25rem 0; }
+    /* Gutter insert: faintly visible at rest so the affordance is
+       discoverable, full strength when the pointer enters the gutter. */
+    .insert-bar { display: flex; align-items: center; gap: 0.5rem; opacity: 0.22; transition: opacity 0.15s ease; padding: 0.25rem 0; }
     .insert-bar:hover, .insert-bar:focus-within { opacity: 1; }
     .insert-bar-line { flex-grow: 1; height: 1px; background: #2a2a2a; }
     .beat-meta-chips { display: flex; flex-wrap: wrap; gap: 0.25rem; margin-top: 0.35rem; font-size: 0.7rem; }
@@ -881,13 +883,13 @@ else
                                     </button>
                                     @if (entry.IsEnabled)
                                     {
-                                        <button class="btn btn-sm btn-outline-danger"
-                                                title="Disable this beat (soft-delete — recoverable via the closed-eye toggle)"
+                                        <button class="btn btn-sm btn-outline-warning"
+                                                title="Archive this beat — it leaves the strand but stays recoverable via the disabled-beats toggle"
                                                 @onclick="() => RequestDeleteAsync(bid)"
                                                 @onclick:stopPropagation
                                                 disabled="@working"
                                                 data-cy="beat-delete">
-                                            <i class="bi bi-trash"></i>
+                                            <i class="bi bi-archive"></i>
                                         </button>
                                     }
                                     else
@@ -1086,16 +1088,18 @@ else
     <div class="modal d-block" style="background:rgba(0,0,0,0.6);" tabindex="-1"
          @onclick="CancelDelete">
         <div class="modal-dialog modal-dialog-centered" @onclick:stopPropagation>
-            <div class="modal-content bg-dark border-danger">
+            <div class="modal-content bg-dark border-warning">
                 <div class="modal-header border-secondary">
-                    <h5 class="modal-title text-danger"><i class="bi bi-exclamation-triangle me-2"></i>Delete this beat?</h5>
+                    <h5 class="modal-title text-warning"><i class="bi bi-archive me-2"></i>Archive this beat?</h5>
                 </div>
                 <div class="modal-body text-light small">
-                    The beat will be removed from this strand. If no other strand references it, the beat itself (text + audio) is deleted.
+                    The beat leaves this strand but is not deleted — its text and full version history are kept,
+                    and you can bring it back any time via the disabled-beats toggle above the beat list.
+                    Audio is invalidated so a restore re-narrates fresh.
                 </div>
                 <div class="modal-footer border-secondary">
                     <button class="btn btn-outline-secondary" @onclick="CancelDelete">Cancel <span class="text-muted ms-1">(Esc)</span></button>
-                    <button class="btn btn-danger" @onclick="ConfirmDeleteAsync" data-cy="confirm-delete">Delete</button>
+                    <button class="btn btn-warning" @onclick="ConfirmDeleteAsync" data-cy="confirm-delete"><i class="bi bi-archive me-1"></i>Archive</button>
                 </div>
             </div>
         </div>
