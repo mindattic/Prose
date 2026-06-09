@@ -218,19 +218,41 @@ public class StrandWorkbenchServiceTests
     }
 
     [Test]
-    public async Task DeleteBeat_LastMembership_RemovesBeatRow()
+    public async Task DeleteBeat_SoftDeletes_BeatAndJunctionPreserved()
     {
         var s = await MakeStrandAsync();
         var b = await svc.InsertBeatAsync(s.Id, null, "doomed");
         await svc.DeleteBeatAsync(s.Id, b.Id);
 
         await using var db = await dbFactory.CreateDbContextAsync();
-        Assert.That(await db.Beats.AnyAsync(x => x.Id == b.Id), Is.False);
-        Assert.That(await db.StrandBeats.AnyAsync(sb => sb.BeatId == b.Id), Is.False);
+        // Beat row survives (soft-delete preserves history).
+        Assert.That(await db.Beats.AnyAsync(x => x.Id == b.Id), Is.True, "Beat row must survive soft-delete");
+        // Junction survives but IsEnabled = false.
+        var junction = await db.StrandBeats.FirstOrDefaultAsync(sb => sb.BeatId == b.Id && sb.StrandId == s.Id);
+        Assert.That(junction, Is.Not.Null);
+        Assert.That(junction!.IsEnabled, Is.False);
+        // Excluded from default ordered list.
+        var ordered = await svc.GetOrderedBeatsAsync(s.Id);
+        Assert.That(ordered.Any(ob => ob.Beat.Id == b.Id), Is.False, "Disabled beat hidden from default view");
+        // Visible with includeDisabled.
+        var withDisabled = await svc.GetOrderedBeatsAsync(s.Id, includeDisabled: true);
+        Assert.That(withDisabled.Any(ob => ob.Beat.Id == b.Id && !ob.IsEnabled), Is.True, "Disabled beat visible with includeDisabled");
     }
 
     [Test]
-    public async Task DeleteBeat_OtherStrandReferences_KeepsBeatRow()
+    public async Task RestoreBeat_ReEnablesSoftDeletedBeat()
+    {
+        var s = await MakeStrandAsync();
+        var b = await svc.InsertBeatAsync(s.Id, null, "doomed");
+        await svc.DeleteBeatAsync(s.Id, b.Id);
+        await svc.RestoreBeatAsync(s.Id, b.Id);
+
+        var ordered = await svc.GetOrderedBeatsAsync(s.Id);
+        Assert.That(ordered.Any(ob => ob.Beat.Id == b.Id && ob.IsEnabled), Is.True, "Restored beat visible again");
+    }
+
+    [Test]
+    public async Task DeleteBeat_OtherStrandReferences_OtherStrandUnaffected()
     {
         var s1 = await MakeStrandAsync("S1");
         var s2 = await MakeStrandAsync("S2");
@@ -246,8 +268,15 @@ public class StrandWorkbenchServiceTests
         await svc.DeleteBeatAsync(s1.Id, b.Id);
 
         await using var db2 = await dbFactory.CreateDbContextAsync();
-        Assert.That(await db2.Beats.AnyAsync(x => x.Id == b.Id), Is.True, "Beat row must survive when another strand still references it");
-        Assert.That(await db2.StrandBeats.CountAsync(sb => sb.BeatId == b.Id), Is.EqualTo(1));
+        Assert.That(await db2.Beats.AnyAsync(x => x.Id == b.Id), Is.True, "Beat row must survive in both cases");
+        // s1's junction is disabled; s2's junction is untouched (IsEnabled=true).
+        var j1 = await db2.StrandBeats.FirstOrDefaultAsync(sb => sb.BeatId == b.Id && sb.StrandId == s1.Id);
+        var j2 = await db2.StrandBeats.FirstOrDefaultAsync(sb => sb.BeatId == b.Id && sb.StrandId == s2.Id);
+        Assert.That(j1!.IsEnabled, Is.False, "s1 junction disabled");
+        Assert.That(j2!.IsEnabled, Is.True, "s2 junction unaffected");
+        // Beat still visible in s2.
+        var s2Beats = await svc.GetOrderedBeatsAsync(s2.Id);
+        Assert.That(s2Beats.Any(ob => ob.Beat.Id == b.Id), Is.True, "Beat visible in s2");
     }
 
     [Test]

@@ -11,11 +11,11 @@ namespace StreetSamurai.Core.Services;
 /// <summary>
 /// Renders a strand's ordered beats to the human-readable manuscript formats that
 /// sit alongside the Word <c>.docx</c> (<see cref="DocxExportService"/>) and the
-/// audiobook: Markdown, plain text, and PDF. Every output lands in the user's
-/// Downloads folder and follows the same shape — a title (and optional author),
-/// each chapter under its own heading, beats split into paragraphs. The PDF
-/// mirrors the KDP layout the .docx uses (title page, fresh page per chapter,
-/// justified serif body) via QuestPDF.
+/// audiobook: Markdown and PDF. Every output lands in the user's Downloads folder.
+/// The Markdown output embeds <c>&lt;!-- beat:N:id7 --&gt;</c> markers above each
+/// beat so the file can be edited offline and reimported via <c>ss --import-md</c>.
+/// The PDF mirrors the KDP layout the .docx uses (title page, fresh page per
+/// chapter, justified serif body) via QuestPDF.
 /// </summary>
 public class ManuscriptExportService
 {
@@ -33,70 +33,60 @@ public class ManuscriptExportService
         this.log = log;
     }
 
-    /// <summary>Export the strand as Markdown to Downloads; returns the path.</summary>
+    /// <summary>
+    /// Export the strand as Markdown to Downloads; returns the path.
+    /// Each beat is prefixed with a <c>&lt;!-- beat:N:id7 --&gt;</c> marker
+    /// (invisible in rendered MD, unambiguous for <c>ss --import-md</c> reimport).
+    /// </summary>
     public async Task<string> ExportMarkdownAsync(Guid strandId, string? author = null, CancellationToken ct = default)
     {
-        var (manuscript, path) = await LoadAsync(strandId, "md", ct);
+        await using var db = await dbFactory.CreateDbContextAsync(ct);
+        var strand = await db.Strands.AsNoTracking().FirstOrDefaultAsync(s => s.Id == strandId, ct)
+            ?? throw new InvalidOperationException($"Strand {strandId} not found.");
+        var ordered = await workbench.GetOrderedBeatsAsync(strandId, ct);
 
         var md = new StringBuilder();
-        md.AppendLine($"# {manuscript.Title}");
+        md.AppendLine($"# {strand.Title}");
         md.AppendLine();
         if (!string.IsNullOrWhiteSpace(author))
         {
             md.AppendLine($"_by {author!.Trim()}_");
             md.AppendLine();
         }
-        if (!string.IsNullOrWhiteSpace(manuscript.Synopsis))
+        if (!string.IsNullOrWhiteSpace(strand.Synopsis))
         {
-            md.AppendLine($"_{manuscript.Synopsis!.Trim()}_");
+            md.AppendLine($"_{strand.Synopsis!.Trim()}_");
             md.AppendLine();
         }
-        foreach (var chapter in manuscript.Chapters)
+
+        int beatNo = 0;
+        int chapterNo = 0;
+        foreach (var ob in ordered)
         {
-            if (!string.IsNullOrWhiteSpace(chapter.Heading))
+            var beat = ob.Beat;
+            if (beat.IsChapterStart)
             {
-                md.AppendLine($"## {chapter.Heading}");
+                chapterNo++;
+                var heading = !string.IsNullOrWhiteSpace(beat.BeatTitle) ? beat.BeatTitle!.Trim() : $"Chapter {chapterNo}";
+                md.AppendLine($"## {heading}");
                 md.AppendLine();
             }
-            foreach (var para in chapter.Paragraphs)
+            var text = (beat.Text ?? "").Trim();
+            if (text.Length == 0) continue;
+            beatNo++;
+            md.AppendLine($"<!-- beat:{beatNo}:{beat.Id.ToString("N")[..7]} -->");
+            foreach (var para in SplitParagraphs(text))
             {
                 md.AppendLine(para);
                 md.AppendLine();
             }
         }
 
+        var dir = CanonExportService.DownloadsDir;
+        Directory.CreateDirectory(dir);
+        var path = Path.Combine(dir, $"{strand.Slug}.{strand.Id.ToString("N")[..8]}.md");
         await File.WriteAllTextAsync(path, md.ToString().TrimEnd() + "\n", new UTF8Encoding(false), ct);
-        log.LogInformation("Exported strand {Strand} to Markdown {Path}", manuscript.Slug, path);
-        return path;
-    }
-
-    /// <summary>Export the strand as plain text to Downloads; returns the path.</summary>
-    public async Task<string> ExportTextAsync(Guid strandId, string? author = null, CancellationToken ct = default)
-    {
-        var (manuscript, path) = await LoadAsync(strandId, "txt", ct);
-
-        var txt = new StringBuilder();
-        txt.AppendLine(manuscript.Title);
-        if (!string.IsNullOrWhiteSpace(author)) txt.AppendLine($"by {author!.Trim()}");
-        txt.AppendLine();
-        foreach (var chapter in manuscript.Chapters)
-        {
-            if (!string.IsNullOrWhiteSpace(chapter.Heading))
-            {
-                txt.AppendLine();
-                txt.AppendLine(chapter.Heading);
-                txt.AppendLine(new string('-', chapter.Heading.Length));
-                txt.AppendLine();
-            }
-            foreach (var para in chapter.Paragraphs)
-            {
-                txt.AppendLine(StripMarkdownEmphasis(para));
-                txt.AppendLine();
-            }
-        }
-
-        await File.WriteAllTextAsync(path, txt.ToString().TrimEnd() + "\n", new UTF8Encoding(false), ct);
-        log.LogInformation("Exported strand {Strand} to plain text {Path}", manuscript.Slug, path);
+        log.LogInformation("Exported strand {Strand} to Markdown {Path}", strand.Slug, path);
         return path;
     }
 
@@ -205,7 +195,6 @@ public class ManuscriptExportService
         return lead;
     }
 
-    /// <summary>Split a beat into paragraphs on hard line breaks (most beats are one).</summary>
     private static IEnumerable<string> SplitParagraphs(string text) =>
         text.Replace("\r\n", "\n").Split('\n', StringSplitOptions.RemoveEmptyEntries | StringSplitOptions.TrimEntries);
 
@@ -226,6 +215,4 @@ public class ManuscriptExportService
         }
     }
 
-    /// <summary>Drop <c>*</c> emphasis markers for plain text output.</summary>
-    private static string StripMarkdownEmphasis(string text) => text.Replace("*", "");
 }
