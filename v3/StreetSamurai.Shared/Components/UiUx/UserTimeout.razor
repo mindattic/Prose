@@ -1,0 +1,33 @@
+@namespace MindAttic.UiUx.Components
+@using Microsoft.AspNetCore.Components.Authorization
+@using Microsoft.AspNetCore.Components.Forms
+
+@* Renders ONLY when authenticated — the #ut-root host element is what arms user-timeout.js, so an
+   anonymous page has no timer. 30m default ties to AuthSessionOptions.IdleTimeout. Logout is a native
+   antiforgery form POST, submitted by user-timeout.js (requestSubmit). Place once in the app shell. *@
+<AuthorizeView>
+    <Authorized>
+        <div id="ut-root" data-idle-ms="@IdleMs" data-warn-ms="@WarnMs" data-logout-action="/_ma-auth/logout"></div>
+        <div class="ut-overlay">
+            <div class="ut-modal">
+                <h2>Still there?</h2>
+                <p>You'll be signed out due to inactivity in</p>
+                <div class="ut-count">60</div>
+                <div class="ut-actions">
+                    <button type="button" class="ut-btn ut-stay">Stay signed in</button>
+                    <button type="button" class="ut-btn ut-logout">Log out now</button>
+                </div>
+            </div>
+        </div>
+        <form id="ut-logout-form" method="post" action="/_ma-auth/logout">
+            <AntiforgeryToken />
+        </form>
+    </Authorized>
+</AuthorizeView>
+
+@code {
+    /// <summary>Idle window in ms before auto-logout. Default 1,800,000 (30m) — keep == AuthSessionOptions.IdleTimeout.</summary>
+    [Parameter] public int IdleMs { get; set; } = 1800000;
+    /// <summary>How long before expiry to show the warning modal. Default 60,000 (60s).</summary>
+    [Parameter] public int WarnMs { get; set; } = 60000;
+}

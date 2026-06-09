@@ -37,6 +37,25 @@ public static class ServiceCollectionExtensions
         services.AddScoped<StreetSamuraiDbContext>(sp =>
             sp.GetRequiredService<IDbContextFactory<StreetSamuraiDbContext>>().CreateDbContext());
 
+        // ── EF Core: MindAttic.Authentication identity tables (auth schema) ──────
+        // SAME SQL database as StreetSamuraiDbContext (same connection-string
+        // resolution chain). Registered SCOPED — the library's data seam is
+        // AddScoped<IAuthDataContext>(sp => sp.GetRequiredService<StreetSamuraiAuthDbContext>()),
+        // so a scoped resolve must exist. A SEPARATE context so the auth tables ride
+        // clean EF migrations while the world tables stay on hand-written temporal SQL.
+        services.AddDbContext<StreetSamuraiAuthDbContext>((sp, opts) =>
+        {
+            var cfg = sp.GetService<IConfiguration>();
+            var connStr =
+                Environment.GetEnvironmentVariable("ConnectionStrings__StreetSamurai")
+                ?? cfg?.GetConnectionString("StreetSamurai")
+                ?? @"Server=(localdb)\MSSQLLocalDB;Database=StreetSamurai;Trusted_Connection=True;TrustServerCertificate=True;";
+            opts.UseSqlServer(connStr);
+        });
+        // Idempotent legacy UserAccount → AuthUser migration (bcrypt carry +
+        // upgrade-on-login). Scoped: depends on the scoped auth context.
+        services.AddScoped<AuthUserImportService>();
+
         // Home-page stats cache: a singleton holding pre-computed entity
         // counts for the tile board + /board sub-tiles. Populated by the
         // background refresh service below. The request path reads from
@@ -101,7 +120,7 @@ public static class ServiceCollectionExtensions
         services.AddSingleton(sp => new CorponationRepository(Db(sp)));
         services.AddSingleton(sp => new DistrictRepository(Db(sp)));
         services.AddSingleton(sp => new FactionRepository(Db(sp)));
-        services.AddSingleton(sp => new FacetRepository(Db(sp)));
+        services.AddSingleton(sp => new SpeciesRepository(Db(sp)));
         services.AddSingleton(sp => new WorldbuildingDocRepository(Db(sp)));
         services.AddSingleton(sp => new WeaponryRepository(Db(sp)));
         services.AddSingleton(sp => new AmmunitionRepository(Db(sp)));
@@ -109,7 +128,6 @@ public static class ServiceCollectionExtensions
         services.AddSingleton(sp => new TechnologyRepository(Db(sp)));
         services.AddSingleton(sp => new CyberwareRepository(Db(sp)));
         services.AddSingleton(sp => new VocabularyRepository(Db(sp)));
-        services.AddSingleton(sp => new SyntheticLifeRepository(Db(sp)));
         services.AddSingleton(sp => new GenemodRepository(Db(sp)));
         services.AddSingleton(sp => new TransportationRepository(Db(sp)));
         services.AddSingleton(sp => new QuoteRepository(Db(sp)));
@@ -147,7 +165,6 @@ public static class ServiceCollectionExtensions
         services.AddSingleton<IExportableRepository>(sp => sp.GetRequiredService<TechnologyRepository>());
         services.AddSingleton<IExportableRepository>(sp => sp.GetRequiredService<CyberwareRepository>());
         services.AddSingleton<IExportableRepository>(sp => sp.GetRequiredService<VocabularyRepository>());
-        services.AddSingleton<IExportableRepository>(sp => sp.GetRequiredService<SyntheticLifeRepository>());
         services.AddSingleton<IExportableRepository>(sp => sp.GetRequiredService<GenemodRepository>());
         services.AddSingleton<IExportableRepository>(sp => sp.GetRequiredService<TransportationRepository>());
         services.AddSingleton<IExportableRepository>(sp => sp.GetRequiredService<QuoteRepository>());
@@ -165,7 +182,6 @@ public static class ServiceCollectionExtensions
         services.AddSingleton<IExportableRepository>(sp => sp.GetRequiredService<FlyoverEntityRepository>());
         services.AddSingleton<IExportableRepository>(sp => sp.GetRequiredService<PsionicRepository>());
         services.AddSingleton<IExportableRepository>(sp => sp.GetRequiredService<MotifRepository>());
-        services.AddSingleton<IExportableRepository>(sp => sp.GetRequiredService<FacetRepository>());
 
         // Export discovery — auto-finds all IExportableRepository instances
         services.AddSingleton<ExportDiscoveryService>();
@@ -197,11 +213,13 @@ public static class ServiceCollectionExtensions
         // Media files — images, video, 3D models named {entityId}.{index:D2}.{ext}
         services.AddSingleton<MediaService>();
 
-        // User accounts and authentication
+        // User accounts and authentication. AuthService + PasswordResetService were
+        // retired in favor of MindAttic.Authentication (wired in the Blazor host via
+        // AddMindAtticAuthentication). UserRepository is retained for one release as the
+        // sole data source for AuthUserImportService (its 'users.accounts' Settings blob
+        // is the rollback artifact); ProfileService (avatars) + EmailService (SMTP) stay.
         services.AddSingleton<UserRepository>();
-        services.AddSingleton<AuthService>();
         services.AddSingleton<ProfileService>();
-        services.AddSingleton<PasswordResetService>();
         services.AddSingleton<EmailService>();
 
         services.AddSingleton<DatabaseService>();
@@ -320,9 +338,7 @@ public static class ServiceCollectionExtensions
         services.AddSingleton<AmbientAnomalyService>();
         services.AddSingleton<NarrativeSummaryService>();
         services.AddSingleton<ExportService>();
-        // services.AddSingleton<FtpPublishService>(); // disabled — deploying via Azure CI/CD
         services.AddSingleton<HtmlExportService>();
-        services.AddSingleton<StoryService>();
         services.AddSingleton<IChapterRepository>(sp => new ChapterRepository(
             sp.GetRequiredService<IDbContextFactory<StreetSamuraiDbContext>>(),
             sp.GetRequiredService<Microsoft.Extensions.Logging.ILogger<ChapterRepository>>()));
@@ -352,7 +368,6 @@ public static class ServiceCollectionExtensions
         services.AddSingleton<BeatFactExtractionService>();
         services.AddSingleton<StoryRepairService>();
         services.AddSingleton<WikiLinkService>();
-        services.AddScoped<ConversationalWriterService>();
         services.AddSingleton<IBookReviewService, BookReviewService>();
         services.AddSingleton<BookExportService>();
 
@@ -638,7 +653,13 @@ public static class ServiceCollectionExtensions
         // then synthesize the Amazon-style aggregate.
         services.AddSingleton<StrandMarkdownExporter>();
         services.AddSingleton<DocxExportService>();
+        services.AddSingleton<ManuscriptExportService>();
+        services.AddSingleton<VoiceHarvestService>();
+        services.AddSingleton<CanonRetrievalService>();
+        services.AddSingleton<CanonContradictionService>();
+        services.AddSingleton<CoverageService>();
         services.AddSingleton<ProseReflowService>();
+        services.AddSingleton<BeatRebuildService>();
         services.AddSingleton<StrandReviewService>();
         services.AddSingleton<StoryQualityService>();
         services.AddSingleton<StoryRefinementService>();

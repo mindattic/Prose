@@ -67,22 +67,26 @@
         <a class="topnav-link" href="/strands" title="Strands — writer + recorder + listener">
             <i class="bi bi-headphones"></i>
         </a>
-        <a class="topnav-link" href="/strands" title="Strands — writer + recorder + listener">
-            <i class="bi bi-pencil-square"></i>
-        </a>
+        <AuthorizeView Policy="@MaPolicies.Admin">
+            <a class="topnav-link" href="/strands" title="Strands — writer + recorder + listener">
+                <i class="bi bi-pencil-square"></i>
+            </a>
+        </AuthorizeView>
         <a class="topnav-link" href="/timeline" title="Story timeline">
             <i class="bi bi-clock-history"></i>
         </a>
         <a class="topnav-link" href="/schema" title="Database schema viewer">
             <i class="bi bi-diagram-3"></i>
         </a>
-        <a class="topnav-link position-relative" href="/findings" title="@(inboxCount > 0 ? inboxTooltip : "Inbox — findings & continuity contradictions")">
-            <i class="bi bi-inbox"></i>
-            @if (inboxCount > 0)
-            {
-                <span class="badge bg-warning text-dark inbox-count start-100 translate-middle">@inboxCount</span>
-            }
-        </a>
+        <AuthorizeView Policy="@MaPolicies.Admin">
+            <a class="topnav-link position-relative" href="/findings" title="@(inboxCount > 0 ? inboxTooltip : "Inbox — findings & continuity contradictions")">
+                <i class="bi bi-inbox"></i>
+                @if (inboxCount > 0)
+                {
+                    <span class="badge bg-warning text-dark inbox-count start-100 translate-middle">@inboxCount</span>
+                }
+            </a>
+        </AuthorizeView>
         <div class="topnav-controls d-flex align-items-center gap-1">
             <UserBoard />
         </div>
@@ -99,16 +103,20 @@
                 <a class="topnav-link" href="/listen" title="Tonight's adventure">
                     <i class="bi bi-headphones"></i>
                 </a>
-                <a class="topnav-link" href="/write" title="Write">
-                    <i class="bi bi-pencil-square"></i>
-                </a>
-                <a class="topnav-link position-relative" href="/findings" title="@(inboxCount > 0 ? inboxTooltip : "Inbox — findings & continuity contradictions")">
-                    <i class="bi bi-inbox"></i>
-                    @if (inboxCount > 0)
-                    {
-                        <span class="badge bg-warning text-dark inbox-count start-100 translate-middle">@inboxCount</span>
-                    }
-                </a>
+                <AuthorizeView Policy="@MaPolicies.Admin">
+                    <a class="topnav-link" href="/write" title="Write">
+                        <i class="bi bi-pencil-square"></i>
+                    </a>
+                </AuthorizeView>
+                <AuthorizeView Policy="@MaPolicies.Admin">
+                    <a class="topnav-link position-relative" href="/findings" title="@(inboxCount > 0 ? inboxTooltip : "Inbox — findings & continuity contradictions")">
+                        <i class="bi bi-inbox"></i>
+                        @if (inboxCount > 0)
+                        {
+                            <span class="badge bg-warning text-dark inbox-count start-100 translate-middle">@inboxCount</span>
+                        }
+                    </a>
+                </AuthorizeView>
                 <UserBoard />
             </div>
         </div>
@@ -252,7 +260,6 @@
                                      "Tools",          "/board/tools",          "bi-grid-3x3-gap"),
             "contracts"       => new(null,            null,                   "Contracts",       null,                   "bi-file-earmark-text"),
             "characters"      => new("Characters",    "/board/characters",    "People",          "bi-people-fill",       "bi-person"),
-            "synthetics"      => new("Characters",    "/board/characters",    "Synthetic Life",  "bi-people-fill",       "bi-cpu-fill"),
             "archetypes"      => new("Characters",    "/board/characters",    "Archetypes",      "bi-people-fill",       "bi-person-bounding-box"),
             "corps"           => new("Organizations", "/board/organizations", "Corponations",    "bi-buildings",         "bi-building"),
             "subsidiaries"    => new("Organizations", "/board/organizations", "Subsidiaries",    "bi-buildings",         "bi-diagram-3"),

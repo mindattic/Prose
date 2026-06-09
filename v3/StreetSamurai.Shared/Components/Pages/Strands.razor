@@ -1,5 +1,5 @@
 @page "/strands"
-@attribute [Authorize(Roles = "Contributor,Administrator")]
+@attribute [Authorize(Policy = MaPolicies.Admin)]
 @using Microsoft.EntityFrameworkCore
 @using StreetSamurai.Core.Data
 @using StreetSamurai.Shared.Services
@@ -8,6 +8,10 @@
 @inject NavigationManager Nav
 @inject ToastNotifier Toast
 @inject IJSRuntime JS
+@inject StreetSamurai.Core.Services.StrandWorkbenchService Workbench
+@inject StreetSamurai.Core.Services.DocxExportService Docx
+@inject StreetSamurai.Core.Services.ManuscriptExportService Manuscript
+@implements IDisposable
 
 @*
    Strand index. Lists every strand grouped by kind. Click to open in the
@@ -15,7 +19,7 @@
    creates a blank top-level strand and routes you there.
 *@
 
-<div class="container py-3" style="max-width: 1100px;">
+<div class="container py-3" style="max-width: 1100px;" id="strands-list-root">
     <div class="d-flex justify-content-between align-items-center mb-3">
         <div>
             <h4 class="text-danger mb-0"><i class="bi bi-collection me-2"></i>Strands</h4>
@@ -70,45 +74,166 @@
                     {
                         var beatCount = beatCounts.GetValueOrDefault(s.Id, 0);
                         var childCount = childCounts.GetValueOrDefault(s.Id, 0);
-                        <li class="list-group-item bg-dark text-light border-secondary">
-                            <div class="d-flex justify-content-between align-items-center">
-                                <a href="@($"/strand/{s.Slug}")" class="text-info text-decoration-none flex-grow-1">
-                                    <strong>@s.Title</strong>
-                                    @if (!string.IsNullOrEmpty(s.Synopsis))
-                                    {
-                                        <span class="text-muted small ms-2">— @(s.Synopsis.Length > 80 ? s.Synopsis[..80] + "…" : s.Synopsis)</span>
-                                    }
-                                </a>
-                                <div class="d-flex align-items-center gap-2 small">
-                                    @if (childCount > 0)
-                                    {
-                                        <span class="text-muted" title="Direct child strands (chapters, scenes, etc.)">
-                                            <i class="bi bi-diagram-3 me-1"></i>@childCount
-                                        </span>
-                                    }
-                                    @if (beatCount > 0)
-                                    {
-                                        <span class="text-muted" title="Direct beats in this strand">
-                                            <i class="bi bi-three-dots me-1"></i>@beatCount
-                                        </span>
-                                    }
-                                    @if (s.Score.HasValue)
-                                    {
-                                        <span class="badge @ScoreBadge((int)Math.Round(s.Score.Value))" title="Reader score (latest run)">
-                                            <i class="bi bi-star-half me-1"></i>@s.Score.Value.ToString("0")%
-                                        </span>
-                                    }
-                                    <span class="badge bg-@StatusColor(s.Status) text-uppercase">@StatusLabel(s.Status)</span>
-                                    <button class="btn btn-sm btn-outline-warning" title="Show reader reviews"
-                                            @onclick="() => OpenReviewsAsync(s)">
-                                        <i class="bi bi-star-half me-1"></i>Reviews
-                                    </button>
+                        <li class="list-group-item bg-dark text-light border-secondary" data-strand-id="@s.Id" data-has-children="@(childCount > 0 ? "true" : "false")">
+                            @if (editingId == s.Id)
+                            {
+                                @* ── Inline edit: title + full description ───────────────── *@
+                                <div class="mb-2">
+                                    <label class="form-label small text-muted mb-1">Title</label>
+                                    <input class="form-control form-control-sm bg-black text-light border-secondary"
+                                           @bind="editTitle" @bind:event="oninput" />
                                 </div>
-                            </div>
-                            @* Full GUID — a stable handle to refer to this strand (CLI, conversation). Click to copy. *@
-                            <code class="text-muted strand-guid" title="Click to copy full id"
-                                  @onclick="() => CopyGuidAsync(s.Id)">@s.Id</code>
+                                <div class="mb-2">
+                                    <label class="form-label small text-muted mb-1">Description</label>
+                                    <textarea class="form-control form-control-sm bg-black text-light border-secondary"
+                                              rows="4" placeholder="What is this story about?"
+                                              @bind="editSynopsis" @bind:event="oninput"></textarea>
+                                </div>
+                                <div class="d-flex gap-2">
+                                    <button class="btn btn-sm btn-success" @onclick="SaveEditAsync"
+                                            disabled="@(savingEdit || string.IsNullOrWhiteSpace(editTitle))">
+                                        @if (savingEdit) { <span class="spinner-border spinner-border-sm me-1"></span> }
+                                        <i class="bi bi-check-lg me-1"></i>Save
+                                    </button>
+                                    <button class="btn btn-sm btn-outline-secondary" @onclick="CancelEdit" disabled="@savingEdit">Cancel</button>
+                                    <code class="text-muted strand-guid ms-auto align-self-center">@s.Id</code>
+                                </div>
+                            }
+                            else
+                            {
+                                <div class="d-flex justify-content-between align-items-center">
+                                    <span class="strand-drag-handle me-2" title="Drag to reorder or move into a collection">
+                                        <i class="bi bi-grip-vertical"></i>
+                                    </span>
+                                    <a href="@($"/strand/{s.Slug}")" class="text-info text-decoration-none flex-grow-1">
+                                        <strong>@s.Title</strong>
+                                    </a>
+                                    <div class="d-flex align-items-center gap-2 small">
+                                        @if (childCount > 0)
+                                        {
+                                            <button class="btn btn-sm btn-link text-muted p-0 border-0"
+                                                    title="@(expandedParents.Contains(s.Id) ? "Collapse episodes" : "Expand episodes")"
+                                                    @onclick="() => ToggleExpand(s.Id)">
+                                                <i class="bi bi-diagram-3 me-1"></i>@childCount
+                                                <i class="bi bi-chevron-@(expandedParents.Contains(s.Id) ? "up" : "down") ms-1" style="font-size:0.65rem;"></i>
+                                            </button>
+                                        }
+                                        @if (beatCount > 0)
+                                        {
+                                            <span class="text-muted" title="Beats across all episodes">
+                                                <i class="bi bi-three-dots me-1"></i>@beatCount
+                                            </span>
+                                        }
+                                        @if (s.Score.HasValue)
+                                        {
+                                            <span class="badge @ScoreBadge((int)Math.Round(s.Score.Value))" title="Reader score (latest run)">
+                                                <i class="bi bi-star-half me-1"></i>@s.Score.Value.ToString("0")%
+                                            </span>
+                                        }
+                                        <span class="badge bg-@StatusColor(s.Status) text-uppercase">@StatusLabel(s.Status)</span>
+                                        <button class="btn btn-sm btn-outline-light" title="Edit title &amp; description"
+                                                @onclick="() => BeginEdit(s)">
+                                            <i class="bi bi-pencil"></i>
+                                        </button>
+                                        <button class="btn btn-sm btn-outline-warning" title="Show reader reviews"
+                                                @onclick="() => OpenReviewsAsync(s)">
+                                            <i class="bi bi-star-half me-1"></i>Reviews
+                                        </button>
+                                        @if (childCount > 0)
+                                        {
+                                            <div class="dropdown">
+                                                <button class="btn btn-sm btn-outline-success dropdown-toggle" type="button"
+                                                        data-bs-toggle="dropdown"
+                                                        disabled="@(exportingCollectionId == s.Id)"
+                                                        title="Export the full collection — all episodes concatenated">
+                                                    @if (exportingCollectionId == s.Id)
+                                                    {
+                                                        <span class="spinner-border spinner-border-sm me-1"></span>
+                                                    }
+                                                    else
+                                                    {
+                                                        <i class="bi bi-collection-play me-1"></i>
+                                                    }
+                                                    Export Collection
+                                                </button>
+                                                <ul class="dropdown-menu dropdown-menu-dark dropdown-menu-end">
+                                                    <li><h6 class="dropdown-header">Audio</h6></li>
+                                                    <li>
+                                                        <button class="dropdown-item" @onclick="() => ExportCollectionAudiobookAsync(s.Id)">
+                                                            <i class="bi bi-headphones me-2"></i>Audiobook (.mp3)
+                                                        </button>
+                                                    </li>
+                                                    <li><hr class="dropdown-divider"></li>
+                                                    <li><h6 class="dropdown-header">Manuscript</h6></li>
+                                                    <li>
+                                                        <button class="dropdown-item" @onclick='() => ExportCollectionAsync(s.Id, "WORD", "Word .docx", id => Docx.ExportStrandAsync(id))'>
+                                                            <i class="bi bi-file-earmark-word me-2"></i>Word Document (.docx)
+                                                        </button>
+                                                    </li>
+                                                    <li>
+                                                        <button class="dropdown-item" @onclick='() => ExportCollectionAsync(s.Id, "PDF", "PDF", id => Manuscript.ExportPdfAsync(id))'>
+                                                            <i class="bi bi-file-pdf me-2"></i>PDF (.pdf)
+                                                        </button>
+                                                    </li>
+                                                    <li>
+                                                        <button class="dropdown-item" @onclick='() => ExportCollectionAsync(s.Id, "MARKDOWN", "Markdown .md", id => Manuscript.ExportMarkdownAsync(id))'>
+                                                            <i class="bi bi-markdown me-2"></i>Markdown (.md)
+                                                        </button>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                        }
+                                    </div>
+                                </div>
+                                @* Full description — so you can see what each story is about at a glance. *@
+                                @if (!string.IsNullOrWhiteSpace(s.Synopsis))
+                                {
+                                    <div class="strand-synopsis-line mt-1">@s.Synopsis</div>
+                                }
+                                else
+                                {
+                                    <div class="strand-synopsis-line strand-synopsis-empty mt-1">No description yet — click the pencil to add one.</div>
+                                }
+                                @* Full GUID — a stable handle to refer to this strand (CLI, conversation). Click to copy. *@
+                                <code class="text-muted strand-guid" title="Click to copy full id"
+                                      @onclick="() => CopyGuidAsync(s.Id)">@s.Id</code>
+                            }
                         </li>
+                        @* ── Inline child strands (expanded when the episode count badge is clicked) ── *@
+                        @if (expandedParents.Contains(s.Id) && childStrands.TryGetValue(s.Id, out var kids))
+                        {
+                            @foreach (var kid in kids.OrderBy(k => k.SortKey).ThenBy(k => k.Title))
+                            {
+                                var kidBeats = beatCounts.GetValueOrDefault(kid.Id, 0);
+                                <li class="list-group-item bg-dark text-light border-secondary strand-child-row" data-strand-id="@kid.Id" data-has-children="false">
+                                    <div class="d-flex justify-content-between align-items-center">
+                                        <span class="strand-drag-handle me-1" title="Drag to reorder or move to a different collection">
+                                            <i class="bi bi-grip-vertical"></i>
+                                        </span>
+                                        <a href="@($"/strand/{kid.Slug}")" class="text-info text-decoration-none flex-grow-1 ms-2">
+                                            <i class="bi bi-arrow-return-right me-2 text-secondary" style="font-size:0.75rem;"></i>@kid.Title
+                                        </a>
+                                        <div class="d-flex align-items-center gap-2 small">
+                                            @if (kidBeats > 0)
+                                            {
+                                                <span class="text-muted"><i class="bi bi-three-dots me-1"></i>@kidBeats</span>
+                                            }
+                                            @if (kid.Score.HasValue)
+                                            {
+                                                <span class="badge @ScoreBadge((int)Math.Round(kid.Score.Value))">
+                                                    <i class="bi bi-star-half me-1"></i>@kid.Score.Value.ToString("0")%
+                                                </span>
+                                            }
+                                            <span class="badge bg-@StatusColor(kid.Status) text-uppercase">@StatusLabel(kid.Status)</span>
+                                        </div>
+                                    </div>
+                                    @if (!string.IsNullOrWhiteSpace(kid.Synopsis))
+                                    {
+                                        <div class="strand-synopsis-line mt-1 ms-4">@kid.Synopsis</div>
+                                    }
+                                </li>
+                            }
+                        }
                     }
                 </ul>
             </div>
@@ -201,6 +326,8 @@
 <style>
     .strand-guid { font-size: 0.68rem; color: #6c757d; cursor: pointer; }
     .strand-guid:hover { color: #0dcaf0; }
+    .strand-synopsis-line { font-size: 0.85rem; color: #adb5bd; white-space: pre-wrap; line-height: 1.35; }
+    .strand-synopsis-empty { font-style: italic; color: #5c636a; }
     .review-sheet-backdrop { position: fixed; inset: 0; background: rgba(0,0,0,0.55); z-index: 1080; }
     .review-sheet {
         position: fixed; left: 0; right: 0; bottom: 0; z-index: 1090;
@@ -225,24 +352,170 @@
     .review-text { color: #ced4da; font-size: 0.88rem; white-space: pre-wrap; }
     .review-fixes { margin: 0.4rem 0 0; padding-left: 1.1rem; color: #9fb6c2; font-size: 0.82rem; }
     .review-fixes li { margin-bottom: 0.15rem; }
+    .strand-child-row { background: #0d0d0d !important; border-left: 2px solid #1a3a2a !important; }
+    .strand-child-row:hover { background: #111 !important; }
+    .strand-drag-handle { cursor: grab; color: #4a4a4a; user-select: none; flex-shrink: 0; }
+    .strand-drag-handle:hover { color: #0dcaf0; }
+    .strand-drag-handle:active { cursor: grabbing; }
+    [data-strand-id].strand-dragging { opacity: 0.45; }
+    [data-strand-id].strand-drop-before { box-shadow: inset 0 3px 0 0 #0dcaf0 !important; }
+    [data-strand-id].strand-drop-after  { box-shadow: inset 0 -3px 0 0 #0dcaf0 !important; }
+    [data-strand-id].strand-drop-child  { background: rgba(13,202,240,0.07) !important; outline: 2px solid rgba(13,202,240,0.45); outline-offset: -2px; }
 </style>
 
 @code {
     private bool loading = true;
     private List<StrandEntity> strands = new();
     private IEnumerable<IGrouping<string, StrandEntity>> grouped = Array.Empty<IGrouping<string, StrandEntity>>();
+    private DotNetObjectReference<Strands>? selfRef;
+    private bool dragAttached;
     /// <summary>Direct-beat count per top-level strand id. Lets the index
     /// show a "this has stuff" cue without opening every strand.</summary>
     private Dictionary<Guid, int> beatCounts = new();
     /// <summary>Number of direct child strands per top-level strand id —
     /// e.g. a book strand reports its chapter count here.</summary>
     private Dictionary<Guid, int> childCounts = new();
+    /// <summary>Full child strand entities per top-level strand id — populated for inline expansion.</summary>
+    private Dictionary<Guid, List<StrandEntity>> childStrands = new();
+    /// <summary>Top-level strand ids whose children are currently expanded inline.</summary>
+    private HashSet<Guid> expandedParents = new();
+    /// <summary>Id of the parent strand currently running a collection export. Null when idle.</summary>
+    private Guid? exportingCollectionId;
     private string newTitle = "";
     private string newKind = "strand";
+
+    // ── Inline title/description editing ─────────────────────────────────
+    private Guid? editingId;
+    private string editTitle = "";
+    private string editSynopsis = "";
+    private bool savingEdit;
+
+    private void BeginEdit(StrandEntity s)
+    {
+        editingId = s.Id;
+        editTitle = s.Title;
+        editSynopsis = s.Synopsis ?? "";
+    }
+
+    private void CancelEdit()
+    {
+        editingId = null;
+        editTitle = editSynopsis = "";
+    }
+
+    private async Task SaveEditAsync()
+    {
+        if (editingId is not { } id || string.IsNullOrWhiteSpace(editTitle)) return;
+        savingEdit = true;
+        StateHasChanged();
+        try
+        {
+            await using var db = await DbFactory.CreateDbContextAsync();
+            var entity = await db.Strands.FirstOrDefaultAsync(x => x.Id == id);
+            if (entity == null) { Toast.Error("STRAND-EDIT", "Strand not found."); return; }
+            entity.Title = editTitle.Trim();
+            entity.Synopsis = string.IsNullOrWhiteSpace(editSynopsis) ? null : editSynopsis.Trim();
+            entity.UpdatedAt = DateTime.UtcNow;
+            await db.SaveChangesAsync();
+
+            // Reflect the change in the already-loaded list without a full reload.
+            var local = strands.FirstOrDefault(x => x.Id == id);
+            if (local != null) { local.Title = entity.Title; local.Synopsis = entity.Synopsis; }
+            grouped = strands.GroupBy(s => s.Kind).OrderBy(g => g.Key);
+            CancelEdit();
+            Toast.Info("SAVED", "Strand updated.");
+        }
+        catch (Exception ex)
+        {
+            Toast.Error("STRAND-EDIT-FAIL", ex.InnerException?.Message ?? ex.Message);
+        }
+        finally
+        {
+            savingEdit = false;
+            StateHasChanged();
+        }
+    }
 
     protected override async Task OnInitializedAsync()
     {
         await LoadAsync();
+    }
+
+    protected override async Task OnAfterRenderAsync(bool firstRender)
+    {
+        if (!dragAttached && !loading)
+        {
+            try
+            {
+                selfRef ??= DotNetObjectReference.Create(this);
+                await JS.InvokeVoidAsync("streetsamurai.attachStrandDragHandlers", "strands-list-root", selfRef);
+                dragAttached = true;
+            }
+            catch { /* JS not loaded yet — will retry on next render */ }
+        }
+    }
+
+    [Microsoft.JSInterop.JSInvokable]
+    public async Task OnStrandDropped(string draggedId, string targetId, string mode)
+    {
+        if (!Guid.TryParse(draggedId, out var dragId) ||
+            !Guid.TryParse(targetId, out var targetGuid)) return;
+
+        await using var db = await DbFactory.CreateDbContextAsync();
+        var dragged = await db.Strands.FirstOrDefaultAsync(s => s.Id == dragId);
+        var target  = await db.Strands.FirstOrDefaultAsync(s => s.Id == targetGuid);
+        if (dragged == null || target == null) return;
+
+        Guid? newParentId;
+        double newSortKey;
+
+        if (mode == "child")
+        {
+            // Append as last child of the target collection.
+            newParentId = target.Id;
+            var maxSk = await db.Strands
+                .Where(s => s.ParentStrandId == target.Id && s.Id != dragId)
+                .MaxAsync(s => (double?)s.SortKey) ?? 0.0;
+            newSortKey = maxSk + 100.0;
+        }
+        else
+        {
+            // "before" or "after" — insert as sibling of target at target's parent level.
+            newParentId = target.ParentStrandId;
+            var siblings = await db.Strands
+                .Where(s => s.ParentStrandId == newParentId && s.Id != dragId)
+                .OrderBy(s => s.SortKey)
+                .Select(s => new { s.Id, s.SortKey })
+                .ToListAsync();
+            var targetIdx = siblings.FindIndex(s => s.Id == targetGuid);
+
+            if (mode == "after")
+            {
+                var prevSk = targetIdx >= 0 ? siblings[targetIdx].SortKey : 0.0;
+                var nextSk = (targetIdx >= 0 && targetIdx + 1 < siblings.Count)
+                    ? siblings[targetIdx + 1].SortKey : prevSk + 200.0;
+                newSortKey = (prevSk + nextSk) / 2.0;
+            }
+            else // "before"
+            {
+                var nextSk = targetIdx >= 0 ? siblings[targetIdx].SortKey : 100.0;
+                var prevSk = targetIdx > 0 ? siblings[targetIdx - 1].SortKey : nextSk - 200.0;
+                newSortKey = (prevSk + nextSk) / 2.0;
+            }
+        }
+
+        dragged.ParentStrandId = newParentId;
+        dragged.SortKey = newSortKey;
+        dragged.UpdatedAt = DateTime.UtcNow;
+        await db.SaveChangesAsync();
+
+        dragAttached = false;
+        await InvokeAsync(LoadAsync);
+    }
+
+    public void Dispose()
+    {
+        selfRef?.Dispose();
     }
 
     private async Task LoadAsync()
@@ -296,9 +569,67 @@
         childCounts = byParent
             .Where(kvp => ids.Contains(kvp.Key))
             .ToDictionary(kvp => kvp.Key, kvp => kvp.Value.Count);
+
+        // Load full child strand entities for top-level parents that have children,
+        // so the inline expansion view can render them without an extra round-trip.
+        var parentIds = childCounts.Keys.ToHashSet();
+        if (parentIds.Count > 0)
+        {
+            var childList = await db.Strands
+                .Where(s => s.ParentStrandId != null && parentIds.Contains(s.ParentStrandId.Value))
+                .AsNoTracking()
+                .ToListAsync();
+            childStrands = childList
+                .GroupBy(s => s.ParentStrandId!.Value)
+                .ToDictionary(g => g.Key, g => g.ToList());
+
+            // Also seed beat counts for children so the expanded rows show accurate counts.
+            foreach (var kid in childList)
+                if (!beatCounts.ContainsKey(kid.Id))
+                    beatCounts[kid.Id] = perStrandBeatCount.GetValueOrDefault(kid.Id, 0);
+        }
+        else
+        {
+            childStrands = new();
+        }
+
         grouped = strands.GroupBy(s => s.Kind).OrderBy(g => g.Key);
         loading = false;
         StateHasChanged();
+    }
+
+    private void ToggleExpand(Guid id)
+    {
+        if (!expandedParents.Add(id)) expandedParents.Remove(id);
+        StateHasChanged();
+    }
+
+    private async Task ExportCollectionAudiobookAsync(Guid strandId)
+    {
+        if (exportingCollectionId != null) return;
+        exportingCollectionId = strandId;
+        await InvokeAsync(StateHasChanged);
+        try
+        {
+            await Workbench.PublishAudiobookAsync(strandId);
+            Toast.Success("AUDIOBOOK", "Audiobook published — MP3 saved to Downloads.");
+        }
+        catch (Exception ex) { Toast.Error("AUDIOBOOK-FAIL", ex.Message); }
+        finally { exportingCollectionId = null; await InvokeAsync(StateHasChanged); }
+    }
+
+    private async Task ExportCollectionAsync(Guid strandId, string tag, string label, Func<Guid, Task<string>> export)
+    {
+        if (exportingCollectionId != null) return;
+        exportingCollectionId = strandId;
+        await InvokeAsync(StateHasChanged);
+        try
+        {
+            await export(strandId);
+            Toast.Success(tag, $"{label} saved to Downloads.");
+        }
+        catch (Exception ex) { Toast.Error($"{tag}-FAIL", ex.Message); }
+        finally { exportingCollectionId = null; await InvokeAsync(StateHasChanged); }
     }
 
     private async Task CreateAsync()

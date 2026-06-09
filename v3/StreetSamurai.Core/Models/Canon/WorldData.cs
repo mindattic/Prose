@@ -30,6 +30,37 @@ public class LiteraryRulesData
     [JsonPropertyName("pov_voice_rules")] public PovVoiceRules PovVoice { get; set; } = new();
     [JsonPropertyName("paragraph_economy")] public ParagraphEconomyRules ParagraphEconomy { get; set; } = new();
     [JsonPropertyName("register_permissions")] public RegisterPermissions RegisterPermissions { get; set; } = new();
+    [JsonPropertyName("beat_doctrine")] public BeatDoctrineRules BeatDoctrine { get; set; } = new();
+}
+
+/// <summary>
+/// The canonical, codified definition of what a Beat is — the single source the
+/// story generator AND the re-beater both read (surfaced by
+/// <see cref="StreetSamurai.Core.Services.DatabaseService.GetLiteraryRulesPrompt"/>).
+/// A beat is a STORY BEAT, not a typographic paragraph: one unit of story that
+/// leads to the next. Defaults are baked in here so the doctrine is always
+/// present even against a DB literary_rules row that predates it; the stored
+/// setting may override.
+/// </summary>
+public class BeatDoctrineRules
+{
+    [JsonPropertyName("definition")]
+    public string Definition { get; set; } =
+        "A beat is a STORY BEAT: one discrete unit of story that moves it forward and hands off to the next. " +
+        "It is USUALLY a single paragraph, but it can be a line of dialogue, a moment of action, an image, or a " +
+        "realization — judged by narrative function, not by length.";
+
+    [JsonPropertyName("rules")]
+    public List<string> Rules { get; set; } =
+    [
+        "One beat does ONE thing: a moment of action, a line (or one tight exchange) of dialogue, an image, a realization, or a turn. When the story turns to the next thing, that is the next beat.",
+        "Usually a beat is one paragraph; sometimes a single line, sometimes a few sentences that form one moment. Never a fixed line count.",
+        "Beats CHAIN — each leads into the next so the sequence reads as continuous momentum, not disconnected fragments.",
+        "NOT a run-on block: never cram a whole scene into one beat.",
+        "NOT sentence-shrapnel: never split one continuous moment across many tiny beats.",
+        "Inside a beat: real sentences; each speaker's dialogue on its own line; questions end with '?'; question attribution uses asks/asked, not says/said; inner monologue is italic on its own line, never labeled.",
+        "Between beats there is a GAP of narration silence: short after a line of dialogue, longer after a narration beat, longest at a scene or section break.",
+    ];
 }
 
 public class PovVoiceRules
@@ -90,7 +121,6 @@ public class CharacterProfileData
     [JsonPropertyName("genre")] public string Genre { get; set; } = "";
     [JsonPropertyName("arc")] public string Arc { get; set; } = "";
     [JsonPropertyName("augmentation")] public string Augmentation { get; set; } = "";
-    [JsonPropertyName("facets")] public List<string> Facets { get; set; } = [];
 }
 
 /// <summary>
@@ -153,7 +183,6 @@ public class Database
     [JsonPropertyName("version")] public int Version { get; set; } = 1;
     [JsonPropertyName("generated_at")] public DateTime GeneratedAt { get; set; }
     [JsonPropertyName("characters")] public List<CharacterData> Characters { get; set; } = [];
-    [JsonPropertyName("facets")] public List<FacetData> Facets { get; set; } = [];
     [JsonPropertyName("districts")] public List<DistrictData> Districts { get; set; } = [];
     [JsonPropertyName("factions")] public List<FactionData> Factions { get; set; } = [];
     [JsonPropertyName("corponations")] public List<CorponationData> Corponations { get; set; } = [];

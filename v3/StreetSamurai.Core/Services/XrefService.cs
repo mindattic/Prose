@@ -50,7 +50,6 @@ public class XrefService
     };
 
     private readonly CharacterRepository characters;
-    private readonly SyntheticLifeRepository synthetics;
     private readonly DistrictRepository districts;
     private readonly FactionRepository factions;
     private readonly CorponationRepository corponations;
@@ -83,7 +82,6 @@ public class XrefService
 
     public XrefService(
         CharacterRepository characters,
-        SyntheticLifeRepository synthetics,
         DistrictRepository districts,
         FactionRepository factions,
         CorponationRepository corponations,
@@ -112,7 +110,6 @@ public class XrefService
         this.logger = logger;
         this.settings = settings;
         this.characters = characters;
-        this.synthetics = synthetics;
         this.districts = districts;
         this.factions = factions;
         this.corponations = corponations;
@@ -135,7 +132,6 @@ public class XrefService
         this.labSpecimens = labSpecimens;
         this.psionics = psionics;
         characters.OnItemSaved     += _ => Invalidate();
-        synthetics.OnItemSaved     += _ => Invalidate();
         districts.OnItemSaved      += _ => Invalidate();
         factions.OnItemSaved       += _ => Invalidate();
         corponations.OnItemSaved   += _ => Invalidate();
@@ -218,11 +214,6 @@ public class XrefService
         {
             Add(c.Name, c.Id, "character", "/characters", c.Role);
             foreach (var a in c.Aliases) Add(a, c.Id, "character", "/characters", c.Role);
-        }
-        foreach (var s in synthetics.GetAll())
-        {
-            Add(s.Name, s.Id, "synthetic", "/synthetics", s.Classification);
-            foreach (var a in s.Aliases) Add(a, s.Id, "synthetic", "/synthetics", s.Classification);
         }
         foreach (var d in districts.GetAll())
         {

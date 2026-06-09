@@ -83,7 +83,6 @@ public class StrandTools
                 duration_sec = b.Beat.DurationSec,
                 beat_title = b.Beat.BeatTitle,
                 synopsis = b.Beat.Synopsis,
-                facet_tag = b.Beat.FacetTag,
             }),
         }, CanonTools.JsonOpts);
     }
@@ -206,7 +205,6 @@ public class StrandTools
             structure_role  = beat.StructureRole,
             act             = beat.Act,
             scene_type      = beat.SceneType,
-            facet_tag       = beat.FacetTag,
             emotional_tone  = beat.EmotionalTone,
             pace_hint       = beat.PaceHint,
             gap_after_ms    = beat.GapAfterMs,
@@ -228,14 +226,13 @@ public class StrandTools
         return JsonSerializer.Serialize(new { ok = true, id = bid.Value }, CanonTools.JsonOpts);
     }
 
-    [McpServerTool, Description("Update a beat's metadata: BeatTitle, Synopsis, EmotionalTone, PaceHint, FacetTag, StructureRole, Act, SceneType, IsChapterStart, Kind. Pass empty strings to clear nullable fields. Does NOT touch prose or audio. Use to mark a beat as a chapter start, change its kind to quote/dedication/book-title, or set the tone the next re-record uses.")]
+    [McpServerTool, Description("Update a beat's metadata: BeatTitle, Synopsis, EmotionalTone, PaceHint, StructureRole, Act, SceneType, IsChapterStart, Kind. Pass empty strings to clear nullable fields. Does NOT touch prose or audio. Use to mark a beat as a chapter start, change its kind to quote/dedication/book-title, or set the tone the next re-record uses.")]
     public async Task<string> UpdateBeatMetadata(
         [Description("Beat Guid OR 'strand-guid.beat-guid' handle.")] string beatHandle,
         [Description("Short label. When IsChapterStart=true this is the chapter heading; when Kind=quote this is the attribution.")] string beatTitle = "",
         [Description("One-line synopsis fed to LLM regenerations.")] string synopsis = "",
         [Description("Emotional tone, e.g. 'quiet' / 'tense' / 'wry'.")] string emotionalTone = "",
         [Description("Pace hint, e.g. 'flowing' / 'clipped' / 'staccato' / 'languorous'.")] string paceHint = "",
-        [Description("Character facet: WOUND / SHADOW / MASK / IDEAL.")] string facetTag = "",
         [Description("Structure role, e.g. 'inciting-incident' / 'rising-action' / 'climax'.")] string structureRole = "",
         [Description("Plot-act number 0–5. 0 = unassigned.")] int act = 0,
         [Description("Scene type: scene | summary | transition | interstitial.")] string sceneType = "scene",
@@ -249,7 +246,6 @@ public class StrandTools
             Synopsis:       synopsis,
             EmotionalTone:  emotionalTone,
             PaceHint:       paceHint,
-            FacetTag:       facetTag,
             StructureRole:  structureRole,
             Act:            act,
             SceneType:      sceneType,

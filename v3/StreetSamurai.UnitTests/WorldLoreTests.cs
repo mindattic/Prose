@@ -25,7 +25,6 @@ public class WorldLoreTests
     [TestCase(typeof(QuoteData))]
     [TestCase(typeof(VocabularyData))]
     [TestCase(typeof(ArchetypeData))]
-    [TestCase(typeof(FacetData))]
     [TestCase(typeof(MotifData))]
     public void WorldRecordTypes_ImplementIWorldRecord_NotICanonEntity(Type t)
     {
@@ -39,7 +38,6 @@ public class WorldLoreTests
     [TestCase(typeof(QuoteData))]
     [TestCase(typeof(VocabularyData))]
     [TestCase(typeof(ArchetypeData))]
-    [TestCase(typeof(FacetData))]
     [TestCase(typeof(MotifData))]
     public void WorldRecordTypes_DoNotHaveRating(Type t)
     {
@@ -55,7 +53,6 @@ public class WorldLoreTests
     [TestCase(typeof(TechnologyData))]
     [TestCase(typeof(CyberwareData))]
     [TestCase(typeof(FactionData))]
-    [TestCase(typeof(SyntheticLifeData))]
     [TestCase(typeof(GenemodData))]
     [TestCase(typeof(TransportationData))]
     [TestCase(typeof(PharmaceuticalData))]
@@ -302,7 +299,7 @@ public class WorldLoreTests
         xrefTempDir = Path.Combine(Path.GetTempPath(), $"ss_ner_{Guid.NewGuid():N}");
         var engDir = Path.Combine(xrefTempDir, "engine_data");
         foreach (var sub in new[] {
-            "people", "synthetics", "places", "factions", "corponations", "technology", "vocabulary",
+            "people", "places", "factions", "corponations", "technology", "vocabulary",
             "weaponry", "ammunition", "equipment", "cyberware", "genemods", "transportation", "automata",
             "subsidiaries", "entertainment", "apparel", "materials", "pharmaceuticals", "consumer_goods",
             "contracts", "lab_specimens", "psionics"
@@ -315,7 +312,7 @@ public class WorldLoreTests
         xrefSettings = new SettingsService(xrefTempDir);
         xrefSettings.EnablePlainTextNer = true;
         xrefSvc = new XrefService(
-            xrefChars, new(paths), new(paths), xrefFactions, new(paths), new(paths),
+            xrefChars, new(paths), xrefFactions, new(paths), new(paths),
             new(paths), new(paths), new(paths), new(paths), new(paths), new(paths),
             new(paths), new(paths), new(paths), new(paths), new(paths), new(paths),
             new(paths), new(paths), new(paths), new(paths), new(paths),

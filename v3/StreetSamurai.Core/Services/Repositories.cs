@@ -51,7 +51,10 @@ public class CharacterRepository : EfRepository<CharacterData>
             if (mappedCache != null) return mappedCache;
         }
         using var db = dbFactory.CreateDbContext();
-        var loaded = CharacterMapper.LoadAll(db, includeArchived: false);
+        // Read off the materialized projection (single column read + cheap
+        // tag/location overlay) instead of the 25-Include fan-out. Missing or
+        // stale-version rows self-heal via backfill inside this call.
+        var loaded = CharacterMapper.LoadAllFromReadModel(db, includeArchived: false);
         lock (mappedCacheLock) mappedCache = loaded;
         return loaded;
     }
@@ -92,7 +95,7 @@ public class CharacterRepository : EfRepository<CharacterData>
             else return null;
         }
         using var db = dbFactory.CreateDbContext();
-        return CharacterMapper.LoadOne(db, guid);
+        return CharacterMapper.LoadOneFromReadModel(db, guid);
     }
 
     public override List<CharacterData> GetAllIncludingArchived()
@@ -156,6 +159,11 @@ public class CharacterRepository : EfRepository<CharacterData>
 
         db.SaveChanges();
 
+        // Enforced single-writer sync: regenerate this character's materialized
+        // read-model from the just-persisted relational record so GetAll/GetById
+        // (which read off the projection) never serve stale data after an edit.
+        CharacterMapper.RefreshReadModelAsync(db, id).GetAwaiter().GetResult();
+
         InvalidateCacheExternal();
         InvalidateMappedCache();
         // Tell index services (XrefService, GlobalSearchService) the canon moved.
@@ -168,6 +176,17 @@ public class CharacterRepository : EfRepository<CharacterData>
     public new void Reload()
     {
         base.Reload();
+        InvalidateMappedCache();
+    }
+
+    /// <summary>Override of <see cref="EfRepository{T}.Delete"/> so archiving a
+    /// character also clears the mapper-cache. The base Delete only drops the
+    /// JSON-blob cache; without this the soft-deleted row stays visible in the
+    /// list/dictionary views (which read <see cref="GetAll"/>'s mappedCache)
+    /// until the next Save or Reload.</summary>
+    public override void Delete(string name)
+    {
+        base.Delete(name);
         InvalidateMappedCache();
     }
 
@@ -264,14 +283,6 @@ public class FactionRepository : EfRepository<FactionData>
         : base(TestDbFactory.For(paths, "faction"), "faction", f => f.Name) { }
 }
 
-public class FacetRepository : EfRepository<FacetData>
-{
-    public FacetRepository(IDbContextFactory<StreetSamuraiDbContext> db)
-        : base(db, "facet", f => f.Name) { }
-    public FacetRepository(IPathProvider paths)
-        : base(TestDbFactory.For(paths, "facet"), "facet", f => f.Name) { }
-}
-
 public class WorldbuildingDocRepository : EfRepository<WorldbuildingDocument>
 {
     public WorldbuildingDocRepository(IDbContextFactory<StreetSamuraiDbContext> db)
@@ -336,13 +347,6 @@ public class VocabularyRepository : EfRepository<VocabularyData>
         : base(TestDbFactory.For(paths, "vocabulary"), "vocabulary", v => v.Term) { }
 }
 
-public class SyntheticLifeRepository : EfRepository<SyntheticLifeData>
-{
-    public SyntheticLifeRepository(IDbContextFactory<StreetSamuraiDbContext> db)
-        : base(db, "synthetic", s => s.Name) { }
-    public SyntheticLifeRepository(IPathProvider paths)
-        : base(TestDbFactory.For(paths, "synthetic"), "synthetic", s => s.Name) { }
-}
 
 public class GenemodRepository : EfRepository<GenemodData>
 {
@@ -506,4 +510,44 @@ public class PsionicRepository : EfRepository<PsionicData>
         : base(db, "psionic", p => p.Name) { }
     public PsionicRepository(IPathProvider paths)
         : base(TestDbFactory.For(paths, "psionic"), "psionic", p => p.Name) { }
+}
+
+/// <summary>Read access to the first-class <see cref="Species"/> taxonomy (the
+/// controlled vocabulary Character.Species references). A small lookup table, not
+/// a canon entity — kept off the Records/embedding/graph machinery on purpose
+/// (separation of responsibilities, §2a). Cached after first read.</summary>
+public class SpeciesRepository
+{
+    private readonly IDbContextFactory<StreetSamuraiDbContext> dbFactory;
+    private List<Species>? cache;
+    private readonly object gate = new();
+
+    public SpeciesRepository(IDbContextFactory<StreetSamuraiDbContext> dbFactory) => this.dbFactory = dbFactory;
+
+    public List<Species> GetAll()
+    {
+        lock (gate)
+        {
+            if (cache != null) return cache;
+            using var db = dbFactory.CreateDbContext();
+            // Tolerate a not-yet-migrated DB (table absent) by returning the
+            // in-code canonical set rather than throwing.
+            try { cache = db.Species.AsNoTracking().OrderBy(s => s.Name).ToList(); }
+            catch { cache = Species.Canonical.ToList(); }
+            if (cache.Count == 0) cache = Species.Canonical.ToList();
+            return cache;
+        }
+    }
+
+    public Species? GetByName(string? name)
+    {
+        if (string.IsNullOrWhiteSpace(name)) return null;
+        var n = name.Trim().ToLowerInvariant();
+        return GetAll().FirstOrDefault(s => string.Equals(s.Name, n, StringComparison.OrdinalIgnoreCase));
+    }
+
+    /// <summary>The five valid species names — the allowed Character.Species values.</summary>
+    public IReadOnlyCollection<string> ValidNames() => GetAll().Select(s => s.Name).ToList();
+
+    public void Reload() { lock (gate) cache = null; }
 }

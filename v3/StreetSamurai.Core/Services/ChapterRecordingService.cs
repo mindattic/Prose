@@ -80,7 +80,7 @@ public class ChapterRecordingService
         //
         // The first path is the better one because it carries the narrative
         // metadata into the recording (Synopsis, StructureRole, Act,
-        // SceneType, FacetTag) which then flows into BeatContext briefs and
+        // SceneType) which then flows into BeatContext briefs and
         // ElevenLabs tone hints.
         var inputs = new List<RecordingBeatInput>();
         if (chapter.Beats is { Count: > 0 } && chapter.Beats.Any(b => !string.IsNullOrWhiteSpace(b.Text)))
@@ -95,15 +95,14 @@ public class ChapterRecordingService
                     Synopsis:       string.IsNullOrWhiteSpace(cb.Synopsis) ? null : cb.Synopsis,
                     StructureRole:  string.IsNullOrWhiteSpace(cb.StructureRole) ? null : cb.StructureRole,
                     Act:            cb.Act,
-                    SceneType:      string.IsNullOrWhiteSpace(cb.SceneType) ? "scene" : cb.SceneType,
-                    FacetTag:       string.IsNullOrWhiteSpace(cb.FacetTag) ? null : cb.FacetTag));
+                    SceneType:      string.IsNullOrWhiteSpace(cb.SceneType) ? "scene" : cb.SceneType));
             }
         }
         if (inputs.Count == 0)
         {
             var plain = markdown.StripToPlainText(chapter.Html ?? "");
             foreach (var p in SplitToParagraphs(plain))
-                inputs.Add(new RecordingBeatInput(p, null, null, null, null, 0, "scene", null));
+                inputs.Add(new RecordingBeatInput(p, null, null, null, null, 0, "scene"));
         }
         if (inputs.Count == 0)
             throw new InvalidOperationException($"Chapter {chapter.Title} has no prose to record.");
@@ -141,7 +140,6 @@ public class ChapterRecordingService
                 StructureRole  = input.StructureRole,
                 Act            = input.Act,
                 SceneType      = input.SceneType,
-                FacetTag       = input.FacetTag,
             });
         }
 
@@ -382,6 +380,5 @@ internal record RecordingBeatInput(
     string? Synopsis,
     string? StructureRole,
     int Act,
-    string SceneType,
-    string? FacetTag);
+    string SceneType);
 

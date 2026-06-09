@@ -117,7 +117,7 @@ public class StrandMigrationService
     {
         var rows = await db.Database
             .SqlQueryRaw<ChapterBeatRow>(@"
-                SELECT BeatGuid, ChapterId, [Index], Title, Synopsis, Text, Act, StructureRole, SceneType, FacetTag,
+                SELECT BeatGuid, ChapterId, [Index], Title, Synopsis, Text, Act, StructureRole, SceneType,
                        SortKey, EmotionalTone, PaceHint, AudioPath, DurationSec, NarratedAt, LastRequestId, WasCorrected
                 FROM ChapterBeats")
             .ToListAsync(ct);
@@ -150,7 +150,6 @@ public class StrandMigrationService
                     StructureRole = cb.StructureRole,
                     Act           = cb.Act,
                     SceneType     = string.IsNullOrEmpty(cb.SceneType) ? "scene" : cb.SceneType,
-                    FacetTag      = cb.FacetTag,
                     EmotionalTone = cb.EmotionalTone,
                     PaceHint      = cb.PaceHint,
                     AudioPath     = cb.AudioPath,
@@ -249,7 +248,7 @@ public class StrandMigrationService
         var rows = await db.Database
             .SqlQueryRaw<EpisodeBeatRow>(@"
                 SELECT EpisodeId, [Index], Text, AudioPath, NarratedAt, DurationSec, WasCorrected, SortKey,
-                       BeatTitle, Synopsis, StructureRole, Act, SceneType, FacetTag, EmotionalTone, PaceHint,
+                       BeatTitle, Synopsis, StructureRole, Act, SceneType, EmotionalTone, PaceHint,
                        TextHash, SourceBeatGuid, Stale, LastRequestId
                 FROM EpisodeBeats")
             .ToListAsync(ct);
@@ -298,7 +297,6 @@ public class StrandMigrationService
                     StructureRole = eb.StructureRole,
                     Act           = eb.Act,
                     SceneType     = string.IsNullOrEmpty(eb.SceneType) ? "scene" : eb.SceneType,
-                    FacetTag      = eb.FacetTag,
                     EmotionalTone = eb.EmotionalTone,
                     PaceHint      = eb.PaceHint,
                     AudioPath     = eb.AudioPath,
@@ -365,7 +363,7 @@ public class StrandMigrationService
     public record ChapterRow(Guid Id, Guid BookId, int Number, string? Title, string? Synopsis, string? Status);
     public record ChapterBeatRow(
         Guid BeatGuid, Guid ChapterId, int Index, string? Title, string? Synopsis, string? Text,
-        int Act, string? StructureRole, string? SceneType, string? FacetTag, double SortKey,
+        int Act, string? StructureRole, string? SceneType, double SortKey,
         string? EmotionalTone, string? PaceHint, string? AudioPath, double? DurationSec,
         DateTime? NarratedAt, string? LastRequestId, bool WasCorrected);
     public record EpisodeRow(
@@ -377,7 +375,7 @@ public class StrandMigrationService
     public record EpisodeBeatRow(
         Guid EpisodeId, int Index, string? Text, string? AudioPath, DateTime? NarratedAt,
         double? DurationSec, bool WasCorrected, double SortKey, string? BeatTitle,
-        string? Synopsis, string? StructureRole, int Act, string? SceneType, string? FacetTag,
+        string? Synopsis, string? StructureRole, int Act, string? SceneType,
         string? EmotionalTone, string? PaceHint, string? TextHash, string? SourceBeatGuid,
         bool Stale, string? LastRequestId);
 }

@@ -76,7 +76,6 @@ public static class TestDatabaseFactory
         var paths = new TestPathProviderWithRoot(rootDir);
         var db = new StreetSamurai.Core.Services.DatabaseService(
             new StreetSamurai.Core.Services.CharacterRepository(paths),
-            new StreetSamurai.Core.Services.FacetRepository(paths),
             new StreetSamurai.Core.Services.DistrictRepository(paths),
             new StreetSamurai.Core.Services.FactionRepository(paths),
             new StreetSamurai.Core.Services.CorponationRepository(paths),

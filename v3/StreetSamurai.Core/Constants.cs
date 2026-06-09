@@ -45,7 +45,6 @@ public static class Constants
         public const string Quote = "quote";
         public const string Motif = "motif";
         public const string Document = "document";
-        public const string Facet = "facet";
         public const string Corponation = "corponation";
     }
 
@@ -135,7 +134,7 @@ public static class Constants
     {
         public static readonly (string Group, string[] Repos)[] All =
         [
-            ("Characters", ["people", "synthetics", "archetypes", "facets"]),
+            ("Characters", ["people", "archetypes"]),
             ("Organizations", ["corponations", "subsidiaries", "factions", "contracts"]),
             ("Gear", ["weaponry", "ammunition", "cyberware", "equipment", "apparel", "genemods", "pharmaceuticals"]),
             ("World", ["places", "transportation", "materials", "technology", "automata"]),

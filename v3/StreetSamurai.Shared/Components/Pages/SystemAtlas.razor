@@ -1,5 +1,5 @@
 @page "/atlas"
-@attribute [Authorize(Roles = "Contributor,Administrator")]
+@attribute [Authorize(Policy = MaPolicies.Admin)]
 @inject SemanticIndexService SemIdx
 @inject WorldGraphService Graph
 @inject LastPromptStore Prompts

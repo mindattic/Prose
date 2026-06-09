@@ -46,7 +46,7 @@ public static class BeatPromptBuilder
         var supportsTags = tagsEnabled && ModelSupportsAudioTags(modelId);
 
         var tagPrefix = supportsTags
-            ? AudioTagFor(beat.EmotionalTone, beat.FacetTag, beat.PaceHint)
+            ? AudioTagFor(beat.EmotionalTone, beat.PaceHint)
             : null;
         // Trailing silence tag is bound to SceneType. The voice model
         // tapers off into the pause naturally, then the concat-time
@@ -100,10 +100,10 @@ public static class BeatPromptBuilder
 
     /// <summary>
     /// Pick the most appropriate inline audio tag. EmotionalTone is the
-    /// primary driver; FacetTag and PaceHint fill in where tone is unset.
-    /// Returns null when nothing maps — caller should use plain text.
+    /// primary driver; PaceHint fills in where tone is unset. Returns null when
+    /// nothing maps — caller should use plain text.
     /// </summary>
-    public static string? AudioTagFor(string? emotionalTone, string? facetTag, string? paceHint)
+    public static string? AudioTagFor(string? emotionalTone, string? paceHint)
     {
         // Tone is the strongest signal — try it first.
         var fromTone = emotionalTone?.ToLowerInvariant() switch
@@ -123,17 +123,6 @@ public static class BeatPromptBuilder
             _            => null,
         };
         if (fromTone != null) return fromTone;
-
-        // Facet (Kyle's psychological mode) — a useful secondary cue.
-        var fromFacet = facetTag?.ToUpperInvariant() switch
-        {
-            "WOUND"  => "[somber]",
-            "SHADOW" => "[menacing]",
-            "MASK"   => "[deadpan]",
-            "IDEAL"  => "[resolute]",
-            _        => null,
-        };
-        if (fromFacet != null) return fromFacet;
 
         // Pace as a last resort. "[pause]"-style tags are inline directives
         // that the model honours rhythmically even on plain narration.

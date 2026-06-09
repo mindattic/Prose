@@ -306,6 +306,109 @@
     }
     window.streetsamurai.attachBeatDragHandlers = attachBeatDragHandlers;
 
+    // Strand-level drag-reorder on the /strands index page.
+    // Three drop modes:
+    //   "before"  — insert dragged strand before the target (as sibling)
+    //   "after"   — insert dragged strand after  the target (as sibling)
+    //   "child"   — add dragged strand as last child of the target collection
+    //              (only offered when target has data-has-children="true" AND
+    //               the pointer is in the middle third of the row)
+    function attachStrandDragHandlers(rootId, callbackRef) {
+        const root = document.getElementById(rootId);
+        if (!root || !callbackRef) return;
+        if (root.__ssStrandDragAttached) return;
+        root.__ssStrandDragAttached = true;
+
+        let draggingRow = null;
+
+        function clearVisuals() {
+            root.querySelectorAll('[data-strand-id]').forEach(el =>
+                el.classList.remove('strand-drop-before', 'strand-drop-after', 'strand-drop-child', 'strand-dragging'));
+        }
+
+        function disarmAllRows() {
+            root.querySelectorAll('[data-strand-id][draggable="true"]').forEach(r =>
+                r.removeAttribute('draggable'));
+        }
+
+        root.addEventListener('pointerdown', function (e) {
+            disarmAllRows();
+            const handle = e.target.closest('.strand-drag-handle');
+            if (!handle) return;
+            const row = handle.closest('[data-strand-id]');
+            if (row) row.setAttribute('draggable', 'true');
+        });
+        root.addEventListener('pointerup', disarmAllRows);
+
+        root.addEventListener('dragstart', function (e) {
+            const row = e.target.closest('[data-strand-id]');
+            if (!row) return;
+            const id = row.getAttribute('data-strand-id');
+            if (!id) return;
+            e.dataTransfer.setData('text/x-strand-id', id);
+            e.dataTransfer.effectAllowed = 'move';
+            draggingRow = row;
+            setTimeout(() => row.classList.add('strand-dragging'), 0);
+        });
+
+        root.addEventListener('dragend', function (e) {
+            clearVisuals();
+            disarmAllRows();
+            draggingRow = null;
+        });
+
+        root.addEventListener('dragover', function (e) {
+            const row = e.target.closest('[data-strand-id]');
+            if (!row || row === draggingRow) return;
+            e.preventDefault();
+            e.dataTransfer.dropEffect = 'move';
+
+            // Clear other rows' visuals first
+            root.querySelectorAll('[data-strand-id]').forEach(el => {
+                if (el !== row) el.classList.remove('strand-drop-before', 'strand-drop-after', 'strand-drop-child');
+            });
+
+            const hasChildren  = row.getAttribute('data-has-children') === 'true';
+            const rect = row.getBoundingClientRect();
+            const pct  = (e.clientY - rect.top) / rect.height;
+
+            if (hasChildren && pct >= 0.3 && pct <= 0.7) {
+                row.classList.remove('strand-drop-before', 'strand-drop-after');
+                row.classList.add('strand-drop-child');
+            } else if (pct < 0.5) {
+                row.classList.remove('strand-drop-after', 'strand-drop-child');
+                row.classList.add('strand-drop-before');
+            } else {
+                row.classList.remove('strand-drop-before', 'strand-drop-child');
+                row.classList.add('strand-drop-after');
+            }
+        });
+
+        root.addEventListener('dragleave', function (e) {
+            const row = e.target.closest('[data-strand-id]');
+            if (row && !row.contains(e.relatedTarget))
+                row.classList.remove('strand-drop-before', 'strand-drop-after', 'strand-drop-child');
+        });
+
+        root.addEventListener('drop', function (e) {
+            const row = e.target.closest('[data-strand-id]');
+            if (!row) return;
+            e.preventDefault();
+            const draggedId = e.dataTransfer.getData('text/x-strand-id');
+            const targetId  = row.getAttribute('data-strand-id');
+            if (!draggedId || !targetId || draggedId === targetId) { clearVisuals(); return; }
+
+            let mode = 'before';
+            if (row.classList.contains('strand-drop-child'))  mode = 'child';
+            else if (row.classList.contains('strand-drop-after')) mode = 'after';
+
+            clearVisuals();
+            try { callbackRef.invokeMethodAsync('OnStrandDropped', draggedId, targetId, mode); }
+            catch (err) { /* Blazor logs */ }
+        });
+    }
+    window.streetsamurai.attachStrandDragHandlers = attachStrandDragHandlers;
+
     // Scroll a beat into view by guid. No-op when the row hasn't rendered
     // yet (page still loading). Used by the resume-from-here feature.
     function scrollBeatIntoView(beatGuid) {

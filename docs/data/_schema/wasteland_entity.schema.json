@@ -1,0 +1,25 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "$id": "ss://schema/wasteland_entity",
+  "title": "StreetSamurai canon — Wasteland Entity (engine_data/wasteland_entities/*.json)",
+  "description": "A wasteland-origin organism/phenomenon beyond the GLMZ. Carries its own opaque hex id on disk.",
+  "type": "object",
+  "required": ["id", "type", "name"],
+  "additionalProperties": true,
+  "properties": {
+    "id": { "type": "string" },
+    "type": { "const": "wasteland_entity" },
+    "name": { "type": "string" },
+    "aliases": { "type": "array", "items": { "type": "string" } },
+    "classification": { "type": "string" },
+    "origin": { "type": "string" },
+    "substrate": { "type": "string" },
+    "territory": { "type": "string" },
+    "physical_description": { "type": "string" },
+    "behavioral_profile": { "type": "string" },
+    "threat_level": { "type": "string" },
+    "known_locations": { "type": "array" },
+    "story_hooks": { "type": "array", "items": { "type": "string" } },
+    "tags": { "type": "array", "items": { "type": "string" } }
+  }
+}

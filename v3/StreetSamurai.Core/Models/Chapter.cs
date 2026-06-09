@@ -99,8 +99,4 @@ public class ChapterBeat
 
     [JsonPropertyName("scene_type")]
     public string SceneType { get; set; } = "scene";
-
-    /// <summary>Facet rotation tag for this beat — [SHADOW], [WOUND], [IDEAL], [GHOST] — drives voice.</summary>
-    [JsonPropertyName("facet_tag")]
-    public string FacetTag { get; set; } = "";
 }

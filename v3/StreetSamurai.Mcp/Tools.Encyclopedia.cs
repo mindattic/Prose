@@ -34,7 +34,6 @@ public class EncyclopediaTools
     private readonly ApparelRepository apparel;
     private readonly PharmaceuticalRepository pharmaceuticals;
     private readonly AutomatonRepository automata;
-    private readonly SyntheticLifeRepository synthetics;
     private readonly ArchetypeRepository archetypes;
     private readonly MaterialRepository materials;
     private readonly TransportationRepository transportation;
@@ -51,7 +50,7 @@ public class EncyclopediaTools
         EquipmentRepository equipment, TechnologyRepository technology,
         CyberwareRepository cyberware, ApparelRepository apparel,
         PharmaceuticalRepository pharmaceuticals,
-        AutomatonRepository automata, SyntheticLifeRepository synthetics,
+        AutomatonRepository automata,
         ArchetypeRepository archetypes, MaterialRepository materials,
         TransportationRepository transportation,
         ConsumerGoodRepository consumerGoods,
@@ -67,7 +66,6 @@ public class EncyclopediaTools
         this.apparel = apparel;
         this.pharmaceuticals = pharmaceuticals;
         this.automata = automata;
-        this.synthetics = synthetics;
         this.archetypes = archetypes;
         this.materials = materials;
         this.transportation = transportation;
@@ -238,26 +236,6 @@ public class EncyclopediaTools
         var a = automata.GetByName(name);
         if (a == null) return JsonSerializer.Serialize(new { error = "not_found", name }, CanonTools.JsonOpts);
         return JsonSerializer.Serialize(a, CanonTools.JsonOpts);
-    }
-
-    /// <summary>List every synthetic life entry: Emergent Life Forms (ELFs), constructs, distributed AIs treated as persons.</summary>
-    [McpServerTool, Description("List every synthetic life entry: Emergent Life Forms (ELFs), constructs, distributed AIs treated as persons.")]
-    public string ListSynthetics()
-    {
-        synthetics.Reload();
-        var list = synthetics.GetAll()
-            .Select(s => new { name = s.Name, type = s.Type })
-            .OrderBy(x => x.name).ToList();
-        return JsonSerializer.Serialize(list, CanonTools.JsonOpts);
-    }
-
-    /// <summary>Load a synthetic life record by name.</summary>
-    [McpServerTool, Description("Load a synthetic life record.")]
-    public string GetSynthetic([Description("Synthetic name.")] string name)
-    {
-        var s = synthetics.GetByName(name);
-        if (s == null) return JsonSerializer.Serialize(new { error = "not_found", name }, CanonTools.JsonOpts);
-        return JsonSerializer.Serialize(s, CanonTools.JsonOpts);
     }
 
     /// <summary>List every archetype: occupational/social roles in the world (street samurai, fixer, runner, gleaner, etc).</summary>

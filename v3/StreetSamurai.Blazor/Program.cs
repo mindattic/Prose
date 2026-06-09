@@ -1,12 +1,15 @@
-using System.Security.Claims;
+using System.Net;
 using System.Threading.RateLimiting;
 using Microsoft.AspNetCore.Antiforgery;
-using Microsoft.AspNetCore.Authentication;
-using Microsoft.AspNetCore.Authentication.Cookies;
+using Microsoft.AspNetCore.DataProtection;
+using Microsoft.AspNetCore.HttpOverrides;
 using Microsoft.AspNetCore.RateLimiting;
+using Microsoft.EntityFrameworkCore;
+using MindAttic.Authentication;
+using MindAttic.Authentication.Web;
+using StreetSamurai.Core.Data;
 using Serilog;
 using Serilog.Events;
-using StreetSamurai.Blazor.Auth;
 using StreetSamurai.Blazor.Cli;
 using StreetSamurai.Blazor.Components;
 using StreetSamurai.Blazor.Services;
@@ -33,6 +36,24 @@ if (args.Contains("--rebuild-graph"))
     Console.WriteLine("[rebuild-graph] Rebuilding world graph from source data...");
     graph.Rebuild();
     Console.WriteLine($"[rebuild-graph] Done: {graph.NodeCount} nodes, {graph.EdgeCount} edges saved to world_graph.json");
+    return;
+}
+
+// CLI mode: ss --reset-password --email <e> --password <p> [--require-change]
+// Operator password reset over the MindAttic.Authentication store, no web server.
+if (args.Contains("--reset-password"))
+{
+    var cliBuilder = WebApplication.CreateBuilder(args);
+    // Security bucket surfaces the Argon2id pepper from Vault so the hash the
+    // reset writes is verifiable by the login flow (same as the live host).
+    cliBuilder.Configuration.AddMindAtticVaultFiles(o => o.Buckets = new[]
+        { "LLM", "Brokers", "Tokens", "Subtitles", "Notifications", "AudioStore", "Security" });
+    cliBuilder.Services.AddStreetSamuraiServices();
+    cliBuilder.Services.AddMindAtticAuthentication<StreetSamuraiAuthDbContext>(
+        cliBuilder.Configuration,
+        o => { o.AppName = "StreetSamurai"; o.IsProduction = !cliBuilder.Environment.IsDevelopment(); });
+    var cliApp = cliBuilder.Build();
+    Environment.ExitCode = await ResetPasswordCli.RunAsync(args, cliApp.Services);
     return;
 }
 
@@ -478,6 +499,18 @@ if (args.Contains("--publish-docx"))
     return;
 }
 
+// CLI mode: set the ParentStrandId on an existing strand (move it into a collection).
+//   ss --reparent-strand (--slug <slug> | --id <id>) (--parent-slug <slug> | --parent-id <id>)
+//   ss --reparent-strand --slug <slug> --clear   — detach from parent
+if (args.Contains("--reparent-strand"))
+{
+    var cliBuilder = WebApplication.CreateBuilder(args);
+    cliBuilder.Services.AddStreetSamuraiServices();
+    var cliApp = cliBuilder.Build();
+    Environment.ExitCode = await ReparentStrandCli.RunAsync(args, cliApp.Services);
+    return;
+}
+
 // CLI mode: render the WHOLE strand as one continuous audiobook (one TTS pass,
 // tiered to ElevenLabs limits — one request, else per-chapter, else split) and
 // drop the MP3 in Downloads. The headless twin of the "Publish Audiobook" button.
@@ -488,6 +521,168 @@ if (args.Contains("--publish-audiobook"))
     cliBuilder.Services.AddStreetSamuraiServices();
     var cliApp = cliBuilder.Build();
     Environment.ExitCode = await PublishAudiobookCli.RunAsync(args, cliApp.Services);
+    return;
+}
+
+// CLI mode: codify the GLMZ house voice + world rules from the memory rubric into
+// the DB stores the generator reads (literary_rules / tone_bible). De-fragilizes
+// the rules so they no longer depend on an .md file being parsed. Idempotent.
+//   ss --seed-voice-rules
+if (args.Contains("--seed-voice-rules"))
+{
+    var cliBuilder = WebApplication.CreateBuilder(args);
+    cliBuilder.Services.AddStreetSamuraiServices();
+    var cliApp = cliBuilder.Build();
+    Environment.ExitCode = await SeedVoiceRulesCli.RunAsync(args, cliApp.Services);
+    return;
+}
+
+// CLI mode: per-entity-type reachability matrix (how much canon is embedded and
+// thus pullable into prose). The standing gap-finder.
+//   ss --coverage
+if (args.Contains("--coverage"))
+{
+    var cliBuilder = WebApplication.CreateBuilder(args);
+    cliBuilder.Services.AddStreetSamuraiServices();
+    var cliApp = cliBuilder.Build();
+    Environment.ExitCode = await CoverageCli.RunAsync(args, cliApp.Services);
+    return;
+}
+
+// CLI mode: (re)build the materialized character read-model projection from the
+// relational source of truth. Run after a bulk import / relational migration,
+// or whenever ReadModelVersion is bumped. Backfills missing/stale rows, prunes
+// orphans. The steady-state path self-heals, so this is a one-time / maintenance op.
+//   ss --rebuild-readmodel [--archived]
+if (args.Contains("--rebuild-readmodel"))
+{
+    var cliBuilder = WebApplication.CreateBuilder(args);
+    cliBuilder.Services.AddStreetSamuraiServices();
+    var cliApp = cliBuilder.Build();
+    Environment.ExitCode = await RebuildReadModelCli.RunAsync(args, cliApp.Services);
+    return;
+}
+
+// CLI mode: split a monolithic strand into a Collection (parent + chapter
+// child strands) at IsChapterStart boundaries. Backs up to markdown first.
+//   ss --split-collection (--slug <s> | --id <guid>)
+if (args.Contains("--split-collection"))
+{
+    var cliBuilder = WebApplication.CreateBuilder(args);
+    cliBuilder.Services.AddStreetSamuraiServices();
+    var cliApp = cliBuilder.Build();
+    Environment.ExitCode = await SplitCollectionCli.RunAsync(args, cliApp.Services);
+    return;
+}
+
+// CLI mode: print the voice context the generator/re-beater receive — the
+// verification that the canon-trained voice is wired into prompts.
+//   ss --print-voice
+if (args.Contains("--print-voice"))
+{
+    var cliBuilder = WebApplication.CreateBuilder(args);
+    cliBuilder.Services.AddStreetSamuraiServices();
+    var cliApp = cliBuilder.Build();
+    Environment.ExitCode = await PrintVoiceCli.RunAsync(args, cliApp.Services);
+    return;
+}
+
+// CLI mode: rebuild a strand's beats to the codified beat doctrine via LLM
+// re-segmentation (story beats + dialogue/'?' mechanics + gaps). Dry-run by
+// default; --apply backs up to markdown then replaces beats if the word-retention
+// guard passes. --all targets every doctrine-violating strand.
+//   ss --rebeat-strand (--slug <s> | --id <guid> | --all) [--apply]
+if (args.Contains("--rebeat-strand"))
+{
+    var cliBuilder = WebApplication.CreateBuilder(args);
+    cliBuilder.Services.AddStreetSamuraiServices();
+    var cliApp = cliBuilder.Build();
+    Environment.ExitCode = await RebeatStrandCli.RunAsync(args, cliApp.Services);
+    return;
+}
+
+// CLI mode: sweep a strand's prose against canon (all entity types) and queue
+// contradictions as approval-gated findings — the self-correction pass.
+//   ss --check-canon (--slug <s> | --id <guid> | --all)
+if (args.Contains("--check-canon"))
+{
+    var cliBuilder = WebApplication.CreateBuilder(args);
+    cliBuilder.Services.AddStreetSamuraiServices();
+    var cliApp = cliBuilder.Build();
+    Environment.ExitCode = await CheckCanonCli.RunAsync(args, cliApp.Services);
+    return;
+}
+
+// CLI mode: show what the universal canon reach pulls for a query, across ALL
+// entity types — verifies the full-interconnect retrieval path.
+//   ss --canon-retrieve "<query>" [--k N] [--types t1,t2]
+if (args.Contains("--canon-retrieve"))
+{
+    var cliBuilder = WebApplication.CreateBuilder(args);
+    cliBuilder.Services.AddStreetSamuraiServices();
+    var cliApp = cliBuilder.Build();
+    Environment.ExitCode = await CanonRetrieveCli.RunAsync(args, cliApp.Services);
+    return;
+}
+
+// CLI mode: author-only Canon trust gate — mark a strand strong enough to draw
+// conclusions about its characters/events (the voice-harvest learns from canon).
+//   ss --mark-canon (--slug <s> | --id <guid>) [--off]
+if (args.Contains("--mark-canon"))
+{
+    var cliBuilder = WebApplication.CreateBuilder(args);
+    cliBuilder.Services.AddStreetSamuraiServices();
+    var cliApp = cliBuilder.Build();
+    Environment.ExitCode = await MarkCanonCli.RunAsync(args, cliApp.Services);
+    return;
+}
+
+// CLI mode: distill voice rules from winning (≥80%) strands into the codified
+// DB-backed rules the generator reads. Propose-then-approve.
+//   ss --harvest-voice (--slug <s> | --id <id> | --all-80 | --pending | --apply <guid> | --reject <guid>) [--force]
+if (args.Contains("--harvest-voice"))
+{
+    var cliBuilder = WebApplication.CreateBuilder(args);
+    cliBuilder.Services.AddStreetSamuraiServices();
+    var cliApp = cliBuilder.Build();
+    Environment.ExitCode = await HarvestVoiceCli.RunAsync(args, cliApp.Services);
+    return;
+}
+
+// CLI mode: list every strand as a table (or JSON). Headless twin of /strands.
+//   ss --list-strands [--status <s>] [--kind <k>] [--search <text>] [--limit <n>] [--json]
+if (args.Contains("--list-strands"))
+{
+    var cliBuilder = WebApplication.CreateBuilder(args);
+    cliBuilder.Services.AddStreetSamuraiServices();
+    var cliApp = cliBuilder.Build();
+    Environment.ExitCode = await ListStrandsCli.RunAsync(args, cliApp.Services);
+    return;
+}
+
+// CLI mode: render a strand to Markdown or PDF in Downloads.
+// Markdown output embeds <!-- beat:N:id7 --> markers for ss --import-md round-trip.
+//   ss (--publish-md | --publish-pdf) (--id <guid|prefix> | --slug <slug>) [--author "Name"]
+if (args.Contains("--publish-md") || args.Contains("--publish-pdf"))
+{
+    var cliBuilder = WebApplication.CreateBuilder(args);
+    cliBuilder.Services.AddStreetSamuraiServices();
+    var cliApp = cliBuilder.Build();
+    var format = args.Contains("--publish-md") ? PublishManuscriptCli.Format.Markdown
+               : PublishManuscriptCli.Format.Pdf;
+    Environment.ExitCode = await PublishManuscriptCli.RunAsync(args, cliApp.Services, format);
+    return;
+}
+
+// CLI mode: reimport an edited --publish-md Markdown file back into the DB. Each
+// <!-- beat:N:id7 --> marker identifies the beat; prose between markers updates Beat.Text.
+//   ss --import-md --file path.md [--dry-run]
+if (args.Contains("--import-md"))
+{
+    var cliBuilder = WebApplication.CreateBuilder(args);
+    cliBuilder.Services.AddStreetSamuraiServices();
+    var cliApp = cliBuilder.Build();
+    Environment.ExitCode = await ImportMarkdownCli.RunAsync(args, cliApp.Services);
     return;
 }
 
@@ -576,7 +771,14 @@ var builder = WebApplication.CreateBuilder(args);
 //   AddEnvironmentVariables (already present) picks up App Service Application
 //     Settings + Azure Key Vault references in production.
 builder.Configuration
-    .AddMindAtticVaultFiles();
+    .AddMindAtticVaultFiles(o => o.Buckets = new[]
+    {
+        // Default credential buckets PLUS "Security" — the MindAttic.Authentication
+        // trust domain (pepper, bootstrap-token, reset-token-key). Without adding it
+        // here the auth secrets at %APPDATA%\MindAttic\Security\providers.json would
+        // not surface under MindAttic:Vault:Security in dev (env vars cover prod).
+        "LLM", "Brokers", "Tokens", "Subtitles", "Notifications", "AudioStore", "Security",
+    });
 
 // Hand the host's IConfiguration to SettingsService BEFORE it's constructed so
 // the very first ResolveApiKey() call sees Vault values. Static-field injection
@@ -621,46 +823,37 @@ builder.Services.AddStreetSamuraiServices();
 var readOnlyState = new ReadOnlyState { IsReadOnly = builder.Configuration.GetValue<bool>("ReadOnly") };
 builder.Services.AddSingleton(readOnlyState);
 
-// Cookie authentication — hardened for production
-builder.Services.AddAuthentication(CookieAuthenticationDefaults.AuthenticationScheme)
-    .AddCookie(options =>
+// MindAttic.Authentication — replaces the bespoke cookie/AuthService stack. The
+// library internally registers the cookie schemes (__Host-MindAttic.Auth + MfaPending),
+// MaPolicies.Admin (role-only here — MFA is off), Data Protection, cascading auth state +
+// a revalidating AuthenticationStateProvider, and every auth/user-admin service over
+// StreetSamuraiAuthDbContext. Do NOT also call AddAuthentication/AddCookie/AddAuthorization/
+// AddCascadingAuthenticationState — that would double-register and clobber the cookie.
+builder.Services.AddMindAtticAuthentication<StreetSamuraiAuthDbContext>(
+    builder.Configuration,
+    o =>
     {
-        options.LoginPath = "/login";
-        options.LogoutPath = "/api/auth/logout";
-        options.ExpireTimeSpan = TimeSpan.FromDays(30);
-        options.SlidingExpiration = true;
-        options.Cookie.HttpOnly = true;                              // No JS access
-        options.Cookie.SecurePolicy = CookieSecurePolicy.Always;     // HTTPS only
-        options.Cookie.SameSite = SameSiteMode.Strict;               // No cross-site requests
-        options.Cookie.Name = "__Host-SS-Auth";                       // __Host- prefix: browser enforces Secure+Path=/
-
-        // Validate SecurityStamp on every request — rejects sessions after password/role change
-        options.Events.OnValidatePrincipal = async context =>
+        o.AppName = "StreetSamurai";                          // per-app Data Protection trust boundary
+        o.IsProduction = !builder.Environment.IsDevelopment();
+        if (o.IsProduction)
         {
-            var userId = context.Principal?.FindFirstValue("UserId");
-            var stamp = context.Principal?.FindFirstValue("SecurityStamp");
-            if (userId == null || stamp == null)
+            // PROD: persist + protect the Data Protection key ring (the library fail-closes
+            // if this isn't supplied in prod). Blob holds the ring; Key Vault wraps it.
+            // DataProtection:BlobUri / DataProtection:KeyVaultKeyId come from App Service
+            // settings, resolved via the same managed identity used for SQL.
+            o.ConfigureDataProtection = dp =>
             {
-                context.RejectPrincipal();
-                await context.HttpContext.SignOutAsync();
-                return;
-            }
-
-            // Dev auto-login pseudo-user — skip DB validation.
-            // DevAutoLoginMiddleware only runs in Development; in production only real users exist.
-            if (userId == "dev-auto-login") return;
-
-            var userRepo = context.HttpContext.RequestServices.GetRequiredService<UserRepository>();
-            var user = userRepo.GetById(userId);
-            if (user == null || user.SecurityStamp != stamp)
-            {
-                context.RejectPrincipal();
-                await context.HttpContext.SignOutAsync();
-            }
-        };
+                var cred = new Azure.Identity.DefaultAzureCredential();
+                var blobUri = builder.Configuration["DataProtection:BlobUri"]
+                    ?? throw new InvalidOperationException("DataProtection:BlobUri is required in production.");
+                var kvKeyId = builder.Configuration["DataProtection:KeyVaultKeyId"]
+                    ?? throw new InvalidOperationException("DataProtection:KeyVaultKeyId is required in production.");
+                dp.PersistKeysToAzureBlobStorage(new Uri(blobUri), cred)
+                  .ProtectKeysWithAzureKeyVault(new Uri(kvKeyId), cred);
+            };
+        }
+        // DEV: the library persists the key ring to %APPDATA%\MindAttic\DataProtection\StreetSamurai.
     });
-builder.Services.AddAuthorization();
-builder.Services.AddCascadingAuthenticationState();
 
 // Per-IP rate limiting on login endpoint — prevents credential stuffing without DoS'ing legit users
 builder.Services.AddRateLimiter(options =>
@@ -685,6 +878,25 @@ builder.Services.AddScoped<IWriteAccessProvider, BlazorWriteAccessProvider>();
 builder.Services.AddScoped<ToastNotifier>();
 
 var app = builder.Build();
+
+// ── Auth startup orchestration ───────────────────────────────────────────
+// Strict order: migrate (schema) → import (legacy UserAccount → AuthUser) → seed
+// (bootstrap admin, only if NO users exist). MigrateAsync is DEV-ONLY: in prod the
+// App Service managed identity cannot run DDL, so the auth EF migration rides the CI
+// migrate job (ApplyMigrations) under db_ddladmin; import + seed are DDL-free and safe
+// at prod startup over the already-migrated schema.
+using (var scope = app.Services.CreateScope())
+{
+    var sp = scope.ServiceProvider;
+    if (app.Environment.IsDevelopment())
+    {
+        var authDb = sp.GetRequiredService<StreetSamuraiAuthDbContext>();
+        await authDb.Database.MigrateAsync();
+    }
+    var imported = await sp.GetRequiredService<StreetSamurai.Core.Services.AuthUserImportService>().ImportAsync();
+    Log.Information("Auth user import: {Count} legacy account(s) migrated.", imported);
+    await sp.GetRequiredService<MindAttic.Authentication.Services.AuthBootstrapper>().SeedAdminAsync();
+}
 
 // Background-instantiate services that subscribe to events at construction.
 // Doing this synchronously on the startup path used to block app.Run() for
@@ -716,42 +928,28 @@ if (!app.Environment.IsDevelopment())
 app.UseStatusCodePagesWithReExecute("/not-found", createScopeForStatusCodePages: true);
 app.UseHttpsRedirection();
 
+// Honor the App Service reverse proxy's forwarded scheme/IP so Request.Scheme is
+// https (secure cookie issuance + no redirect loop) and the rate limiter / audit see
+// the real client IP. Must run before the auth middleware.
+var forwardedHeaders = new ForwardedHeadersOptions
+{
+    ForwardedHeaders = ForwardedHeaders.XForwardedFor | ForwardedHeaders.XForwardedProto,
+};
+forwardedHeaders.KnownIPNetworks.Clear();
+forwardedHeaders.KnownProxies.Clear();
+// Trust RFC-1918 private address space so App Service's X-Forwarded-Proto is honored.
+forwardedHeaders.KnownIPNetworks.Add(new System.Net.IPNetwork(IPAddress.Parse("10.0.0.0"), 8));
+forwardedHeaders.KnownIPNetworks.Add(new System.Net.IPNetwork(IPAddress.Parse("172.16.0.0"), 12));
+forwardedHeaders.KnownIPNetworks.Add(new System.Net.IPNetwork(IPAddress.Parse("192.168.0.0"), 16));
+app.UseForwardedHeaders(forwardedHeaders);
+
 app.UseRateLimiter();
-app.UseAuthentication();
-app.UseAuthorization();
 
-// Dev-only: auto-login as admin (reads DevAuth section from appsettings.Development.json)
-if (app.Environment.IsDevelopment() && app.Configuration.GetSection("DevAuth").Exists())
-{
-    app.UseMiddleware<DevAutoLoginMiddleware>();
-}
-
-// Enforce MustChangePassword: redirect users who haven't changed their forced password.
-// Without this, a user could navigate directly to any page and bypass the requirement.
-app.Use(async (context, next) =>
-{
-    var path = context.Request.Path.Value ?? "";
-    // Skip enforcement for: static files, API endpoints, the change-password page itself, and login
-    if (path.StartsWith("/_") || path.StartsWith("/api/") || path == "/change-password" || path == "/login")
-    {
-        await next();
-        return;
-    }
-
-    var userId = context.User?.FindFirst("UserId")?.Value;
-    if (!string.IsNullOrEmpty(userId))
-    {
-        var userRepo = context.RequestServices.GetRequiredService<UserRepository>();
-        var user = userRepo.GetById(userId);
-        if (user?.MustChangePassword == true)
-        {
-            context.Response.Redirect("/change-password");
-            return;
-        }
-    }
-
-    await next();
-});
+// MindAttic.Authentication: UseAuthentication + UseAuthorization + the forced-step
+// redirect (MustChangePassword → /account/change-password, claim-driven, no DB hit) +
+// a scoped CSP on the auth surface. Replaces the bespoke UseAuthentication/UseAuthorization
+// and the hand-rolled MustChangePassword middleware.
+app.UseMindAtticAuthentication();
 
 app.UseAntiforgery();
 
@@ -760,6 +958,11 @@ app.MapStaticAssets();
 app.MapRazorComponents<App>()
     .AddInteractiveServerRenderMode()
     .AddAdditionalAssemblies(typeof(StreetSamurai.Shared.Components.Pages.Home).Assembly);
+
+// MindAttic.Authentication HTTP endpoints — /_ma-auth/{login,mfa-challenge,logout,
+// change-password,reset/request,reset/confirm}. These OWN sign-in (the Razor components
+// only render the antiforgery-protected forms that post here).
+app.MapMindAtticAuthEndpoints(group => group.RequireRateLimiting("login"));
 
 // Episode audio: serve the per-beat MP3 files the /listen page plays.
 // File path is engine/audio/episodes/{episodeId}/{index:D3}.mp3 — bound to the
@@ -949,73 +1152,6 @@ app.MapGet("/api/strands/{strandId:guid}/strand.wav", async (
     return Results.File(stream, contentType!, fileDownloadName, enableRangeProcessing: true);
 }).RequireAuthorization();
 
-// Login endpoint — form POST from Login.razor, with antiforgery + open redirect + rate limiting
-app.MapPost("/api/auth/login", async (HttpContext ctx, AuthService auth, IAntiforgery antiforgery) =>
-{
-    // Validate CSRF token
-    try { await antiforgery.ValidateRequestAsync(ctx); }
-    catch (AntiforgeryValidationException)
-    {
-        ctx.Response.StatusCode = 400;
-        return;
-    }
-
-    var form = await ctx.Request.ReadFormAsync();
-    var email = form["email"].ToString();
-    var password = form["password"].ToString();
-    var returnUrl = form["returnUrl"].ToString();
-
-    // Open redirect protection: only allow local paths
-    if (!AuthService.IsLocalUrl(returnUrl)) returnUrl = "/";
-
-    var user = auth.Authenticate(email, password);
-    if (user == null)
-    {
-        ctx.Response.Redirect("/login?error=invalid");
-        return;
-    }
-
-    var claims = new[]
-    {
-        new Claim(ClaimTypes.Name, user.DisplayName),
-        new Claim(ClaimTypes.Email, user.Email),
-        new Claim(ClaimTypes.Role, user.Role),
-        new Claim("UserId", user.Id),
-        new Claim("SecurityStamp", user.SecurityStamp),
-    };
-    var identity = new ClaimsIdentity(claims, CookieAuthenticationDefaults.AuthenticationScheme);
-    var principal = new ClaimsPrincipal(identity);
-
-    await ctx.SignInAsync(CookieAuthenticationDefaults.AuthenticationScheme, principal);
-
-    // Clear the dev-logout cookie so DevAutoLoginMiddleware works again if needed
-    if (app.Environment.IsDevelopment())
-        ctx.Response.Cookies.Delete("ss-dev-logout");
-
-    // Force password change on first login (seeded admin, or admin-flagged accounts)
-    if (user.MustChangePassword)
-        ctx.Response.Redirect("/change-password");
-    else
-        ctx.Response.Redirect(returnUrl);
-}).RequireRateLimiting("login");
-
-// Logout endpoint — with antiforgery
-app.MapPost("/api/auth/logout", async (HttpContext ctx, IAntiforgery antiforgery) =>
-{
-    try { await antiforgery.ValidateRequestAsync(ctx); }
-    catch (AntiforgeryValidationException)
-    {
-        ctx.Response.StatusCode = 400;
-        return;
-    }
-
-    await ctx.SignOutAsync(CookieAuthenticationDefaults.AuthenticationScheme);
-    // In dev mode, set a cookie so DevAutoLoginMiddleware doesn't immediately re-login
-    if (app.Environment.IsDevelopment())
-        ctx.Response.Cookies.Append("ss-dev-logout", "1", new CookieOptions { Path = "/" });
-    ctx.Response.Redirect("/");
-});
-
 // Media file endpoint — serves {entityId}.{index}.{ext} files from engine/data/media/
 app.MapGet("/api/media/{filename}", (string filename, MediaService media) =>
 {
@@ -1024,8 +1160,6 @@ app.MapGet("/api/media/{filename}", (string filename, MediaService media) =>
     var mime = MediaService.GetMimeType(filename);
     return Results.File(path, mime, enableRangeProcessing: true);
 });
-
-// Open redirect protection is now in AuthService.IsLocalUrl() — single source of truth, unit-testable.
 
 Log.Information("StreetSamurai Blazor host started");
 

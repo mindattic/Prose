@@ -1,5 +1,5 @@
 @page "/strand/{IdOrSlug}"
-@attribute [Authorize(Roles = "Contributor,Administrator")]
+@attribute [Authorize(Policy = MaPolicies.Admin)]
 @using Microsoft.EntityFrameworkCore
 @using StreetSamurai.Core.Data
 @using StreetSamurai.Core.Data.Entities
@@ -18,6 +18,7 @@
 @inject StreetSamurai.Core.Interfaces.ILlmService Llm
 @inject ILogger<Strand> Log
 @inject DocxExportService Docx
+@inject ManuscriptExportService Manuscript
 @implements IDisposable
 
 @*
@@ -127,6 +128,22 @@
     .chapter-index-link { color: #79d2e8; text-decoration: none; font-size: 0.9rem; padding: 0.15rem 0; }
     .chapter-index-link:hover { color: #f8f9fa; text-decoration: underline; }
     .chapter-index-link .ci-pos { color: #6c757d; font-variant-numeric: tabular-nums; margin-right: 0.5rem; font-size: 0.8rem; }
+
+    /* Children nav — shown on collection strands (those with direct children).
+       Each child strand is a row: kind badge · title · score/status · arrow.
+       Clicking navigates to /strand/{child.Slug} to edit that strand alone. */
+    .strand-children-nav { border: 1px solid #2a2a2a; border-radius: 6px; background: #0f0f0f; margin-bottom: 1rem; }
+    .strand-children-nav-head { font-size: 0.7rem; text-transform: uppercase; letter-spacing: 0.1em; color: #8b949e; padding: 0.45rem 0.9rem 0.3rem; border-bottom: 1px solid #1a1a1a; }
+    .strand-children-nav-list { display: flex; flex-direction: column; }
+    .strand-children-nav-item { display: flex; align-items: center; gap: 0.4rem; padding: 0.45rem 0.9rem; text-decoration: none; color: #e9ecef; border-bottom: 1px solid #1a1a1a; transition: background 0.1s ease; }
+    .strand-children-nav-item:last-child { border-bottom: none; border-radius: 0 0 5px 5px; }
+    .strand-children-nav-item:hover { background: rgba(13,202,240,0.06); color: #f8f9fa; }
+    .strand-children-nav-item:hover .scn-arrow { color: #0dcaf0; }
+    .scn-kind { font-size: 0.6rem; flex-shrink: 0; }
+    .scn-title { font-size: 0.92rem; font-weight: 500; flex-grow: 1; }
+    .scn-status { font-size: 0.6rem; flex-shrink: 0; }
+    .scn-arrow { color: #495057; font-size: 1.1rem; flex-shrink: 0; }
+    .scn-synopsis { font-size: 0.78rem; color: #8b949e; margin-left: 0.2rem; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; max-width: 40ch; }
     .beat-gap-inline { display: inline-flex; gap: 0.4rem; align-items: center; font-size: 0.72rem; color: #adb5bd; }
     .beat-gap-inline.custom { color: #ffc107; }
     .beat-gap-input { width: 70px; background: #161616; color: #f8f9fa; border: 1px solid #2a2a2a; padding: 0 0.3rem; font-size: 0.72rem; border-radius: 3px; }
@@ -219,7 +236,9 @@
        the read-mode copy/llm/mic/delete buttons — conditional swap, so
        they can never overlap. The absolute-positioned .beat-edit-actions
        overlay is gone. */
-    .insert-bar { display: flex; align-items: center; gap: 0.5rem; opacity: 0; transition: opacity 0.15s ease; padding: 0.25rem 0; }
+    /* Gutter insert: faintly visible at rest so the affordance is
+       discoverable, full strength when the pointer enters the gutter. */
+    .insert-bar { display: flex; align-items: center; gap: 0.5rem; opacity: 0.22; transition: opacity 0.15s ease; padding: 0.25rem 0; }
     .insert-bar:hover, .insert-bar:focus-within { opacity: 1; }
     .insert-bar-line { flex-grow: 1; height: 1px; background: #2a2a2a; }
     .beat-meta-chips { display: flex; flex-wrap: wrap; gap: 0.25rem; margin-top: 0.35rem; font-size: 0.7rem; }
@@ -238,6 +257,14 @@
        current) version is showing, the cluster glows so it's clear the editor
        is previewing history, not the live text. */
     .beat-history-nav.cycling .btn { border-color: #0dcaf0; color: #0dcaf0; }
+    .beat-history-nav .beat-version-ts { font-size: 0.7rem; color: #6c757d; white-space: nowrap; padding: 0 0.3rem; }
+    .beat-history-nav.cycling .beat-version-ts { color: #0dcaf0; }
+
+    /* Soft-deleted (disabled) beat: dimmed border, reduced opacity on the body,
+       a strikethrough badge. The card is still interactive (history cycler, restore). */
+    .beat-card.beat-disabled { border-color: #3a3a3a; opacity: 0.55; }
+    .beat-card.beat-disabled:hover { border-color: #555; box-shadow: none; opacity: 0.75; }
+    .beat-disabled-badge { font-size: 0.65rem; color: #dc3545; border: 1px solid #dc354560; border-radius: 3px; padding: 0.05rem 0.3rem; }
 </style>
 
 @if (loading)
@@ -299,39 +326,209 @@ else
                             <i class="bi @(copiedGuid == strand.Id ? "bi-check-lg" : "bi-clipboard")"></i>
                         </button>
                     </div>
-                    <textarea class="strand-synopsis mt-1" rows="1" placeholder="Synopsis (optional)"
+                    <textarea class="strand-synopsis mt-1" rows="5" placeholder="Synopsis (optional)"
+                              style="width:100%; resize:none; overflow-y:auto;"
                               @bind="strand.Synopsis" @bind:event="oninput" @onblur="SaveStrandHeaderAsync"></textarea>
                 </div>
                 <div style="min-width:200px;">
                     <label class="form-label small text-muted mb-1">Voice</label>
-                    <select class="form-select form-select-sm bg-black text-light border-secondary" @bind="strand.VoiceId" @bind:after="SaveStrandHeaderAsync">
-                        @foreach (var v in voices)
-                        {
-                            <option value="@v.VoiceId">@v.Name</option>
-                        }
-                    </select>
+                    <div class="d-flex gap-1">
+                        <select class="form-select form-select-sm bg-black text-light border-secondary" @bind="strand.VoiceId" @bind:after="SaveStrandHeaderAsync">
+                            @foreach (var v in voices)
+                            {
+                                <option value="@v.VoiceId">@v.Name</option>
+                            }
+                        </select>
+                        <button class="btn btn-sm btn-outline-info" type="button" @onclick="() => showVoiceStudio = !showVoiceStudio"
+                                title="Open the Voice Studio — pick any v2/v3 voice, turn its dials, audition Beat 001, save it as a profile">
+                            <i class="bi bi-sliders"></i>
+                        </button>
+                    </div>
                 </div>
             </div>
 
-            <div class="d-flex gap-2 flex-wrap mt-2">
-                <button class="btn btn-sm btn-success" @onclick="PublishAudiobookAsync" disabled="@(publishing || docxBusy)"
-                        title="Render the whole strand as one continuous narration (one pass — no per-beat voice drift) and save the MP3 to your Downloads">
-                    @if (publishing) { <span class="spinner-border spinner-border-sm me-1"></span> }
-                    else { <i class="bi bi-headphones me-1"></i> }
-                    Publish Audiobook
-                </button>
-                <button class="btn btn-sm btn-outline-light" @onclick="PublishDocxAsync" disabled="@(publishing || docxBusy)"
-                        title="Export a KDP-ready Word .docx to your Downloads">
-                    @if (docxBusy) { <span class="spinner-border spinner-border-sm me-1"></span> }
-                    else { <i class="bi bi-file-earmark-word me-1"></i> }
-                    Publish Word Document
-                </button>
+            <div class="d-flex gap-2 flex-wrap mt-2 align-items-center">
+                <div class="dropdown">
+                    <button class="btn btn-sm btn-success dropdown-toggle" type="button" data-bs-toggle="dropdown"
+                            disabled="@(publishing || exportBusy)"
+                            title="Export this strand to your Downloads — audiobook, Word, PDF, or Markdown">
+                        @if (publishing || exportBusy) { <span class="spinner-border spinner-border-sm me-1"></span> }
+                        else { <i class="bi bi-download me-1"></i> }
+                        Export
+                    </button>
+                    <ul class="dropdown-menu dropdown-menu-dark">
+                        <li><h6 class="dropdown-header">Audio</h6></li>
+                        <li><button class="dropdown-item" @onclick="PublishAudiobookAsync"
+                                    title="Render the whole strand as one continuous narration (one pass — no per-beat voice drift)">
+                            <i class="bi bi-headphones me-2"></i>Audiobook (.mp3)</button></li>
+                        <li><hr class="dropdown-divider"></li>
+                        <li><h6 class="dropdown-header">Manuscript</h6></li>
+                        <li><button class="dropdown-item" @onclick="PublishDocxAsync"
+                                    title="KDP-ready Word .docx">
+                            <i class="bi bi-file-earmark-word me-2"></i>Word Document (.docx)</button></li>
+                        <li><button class="dropdown-item" @onclick="PublishPdfAsync"
+                                    title="KDP-style PDF">
+                            <i class="bi bi-file-pdf me-2"></i>PDF (.pdf)</button></li>
+                        <li><button class="dropdown-item" @onclick="PublishMarkdownAsync"
+                                    title="Markdown with beat markers — editable and reimportable via ss --import-md">
+                            <i class="bi bi-markdown me-2"></i>Markdown (.md)</button></li>
+                    </ul>
+                </div>
                 <div class="ms-auto">
                     <a href="/strands" class="btn btn-sm btn-link text-muted">
                         <i class="bi bi-arrow-left me-1"></i>All strands
                     </a>
                 </div>
             </div>
+
+            @if (showVoiceStudio)
+            {
+                <div class="border border-secondary rounded p-3 mt-2 bg-black">
+                    <div class="d-flex align-items-center mb-2">
+                        <i class="bi bi-sliders text-info me-2"></i>
+                        <span class="fw-semibold">Voice Studio</span>
+                        <span class="text-muted small ms-2">— pick a voice + model, turn the dials, audition a sample line, then pin it to this strand or save it as a reusable profile.</span>
+                        <button class="btn btn-sm btn-link text-muted ms-auto p-0" @onclick="() => showVoiceStudio = false"><i class="bi bi-x-lg"></i></button>
+                    </div>
+
+                    @* Pick the voice first; everything below adapts to it. The
+                       model list is filtered to what THIS voice supports, and only
+                       the dials that apply to the chosen model's engine are shown —
+                       no v2/v3 tab to get lost in. *@
+                    <div class="row g-3 mb-2">
+                        <div class="col-md-6">
+                            <label class="form-label small text-muted mb-1">Voice</label>
+                            <select class="form-select form-select-sm bg-black text-light border-secondary"
+                                    title="The ElevenLabs voice that narrates this strand. Voices tagged (v3✓) can also use the newer, more expressive v3 engine."
+                                    @bind="editorProfile.VoiceId" @bind:after="OnStudioVoiceChanged">
+                                <option value="">— pick a voice —</option>
+                                @foreach (var v in voices)
+                                {
+                                    <option value="@v.VoiceId">@v.Name@(v.SupportsV3 ? "  (v3✓)" : "")</option>
+                                }
+                            </select>
+                        </div>
+                        <div class="col-md-6">
+                            <label class="form-label small text-muted mb-1">Engine &amp; model</label>
+                            <select class="form-select form-select-sm bg-black text-light border-secondary"
+                                    title="Which ElevenLabs model renders this voice. v3 = newest and most expressive, driven by inline emotion tags set per beat. v2 = classic, tuned with continuous stability/similarity/style dials. Only models this voice supports are listed."
+                                    @bind="editorProfile.Model" @bind:after="OnStudioModelChanged">
+                                @foreach (var m in CompatibleModels())
+                                {
+                                    <option value="@m.ModelId">@m.Name @(m.IsV3 ? "· v3" : "· v2")</option>
+                                }
+                            </select>
+                        </div>
+                    </div>
+
+                    @if (IsV3Model(editorProfile.Model))
+                    {
+                        @* v3: discrete stability presets + inline tags. Similarity
+                           and style do nothing on v3, so they are not shown. *@
+                        <div class="row g-3 align-items-end">
+                            <div class="col-md-8">
+                                <label class="form-label small text-muted mb-1">Stability</label>
+                                <div class="btn-group d-flex" role="group"
+                                     title="v3 accepts only three stability settings. Robust = most consistent across the whole strand (fights v3 accent drift); Natural = balanced; Creative = most expressive but more variable take-to-take.">
+                                    @foreach (var preset in V3Presets)
+                                    {
+                                        <button type="button"
+                                                class="btn btn-sm @(Math.Abs(editorProfile.Stability - preset.Value) < 0.01 ? "btn-info" : "btn-outline-info")"
+                                                @onclick="() => editorProfile.Stability = preset.Value">@preset.Name</button>
+                                    }
+                                </div>
+                            </div>
+                            <div class="col-md-4">
+                                <div class="form-check" title="Boosts how closely the output resembles the original speaker. Safe to leave on.">
+                                    <input class="form-check-input" type="checkbox" id="vsSpeakerBoost" @bind="editorProfile.UseSpeakerBoost" />
+                                    <label class="form-check-label small text-muted" for="vsSpeakerBoost">Speaker boost</label>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="form-text text-muted small mt-1">
+                            v3 expresses emotion through inline audio tags (e.g. <code>[whispering]</code>) set per beat in the beat details — it ignores the similarity &amp; style dials, so they are hidden here.
+                        </div>
+                    }
+                    else
+                    {
+                        @* v2: continuous dials. *@
+                        <div class="row g-3 align-items-end">
+                            <div class="col-md-3">
+                                <label class="form-label small text-muted mb-1" title="How consistent the delivery is take-to-take. Higher = steadier and more uniform; lower = more expressive but more variable.">Stability: @editorProfile.Stability.ToString("F2")</label>
+                                <input type="range" class="form-range" min="0" max="1" step="0.05" @bind="editorProfile.Stability" @bind:event="oninput" />
+                            </div>
+                            <div class="col-md-3">
+                                <label class="form-label small text-muted mb-1" title="How closely the output hews to the original voice's timbre. Higher = more faithful to the source voice.">Similarity: @editorProfile.SimilarityBoost.ToString("F2")</label>
+                                <input type="range" class="form-range" min="0" max="1" step="0.05" @bind="editorProfile.SimilarityBoost" @bind:event="oninput" />
+                            </div>
+                            <div class="col-md-3">
+                                <label class="form-label small text-muted mb-1" title="Style exaggeration. Higher pushes the voice's characteristic delivery; 0 is neutral and most stable.">Style: @editorProfile.Style.ToString("F2")</label>
+                                <input type="range" class="form-range" min="0" max="1" step="0.05" @bind="editorProfile.Style" @bind:event="oninput" />
+                            </div>
+                            <div class="col-md-3">
+                                <div class="form-check" title="Boosts how closely the output resembles the original speaker. Safe to leave on.">
+                                    <input class="form-check-input" type="checkbox" id="vsSpeakerBoostV2" @bind="editorProfile.UseSpeakerBoost" />
+                                    <label class="form-check-label small text-muted" for="vsSpeakerBoostV2">Speaker boost</label>
+                                </div>
+                            </div>
+                        </div>
+                    }
+
+                    @if (Settings.VoiceProfiles.Count > 0)
+                    {
+                        <div class="mt-3" style="max-width:360px;">
+                            <label class="form-label small text-muted mb-1">Load a saved profile into the editor</label>
+                            <select class="form-select form-select-sm bg-black text-light border-secondary"
+                                    @onchange="e => LoadProfileIntoEditor(e.Value?.ToString() ?? string.Empty)">
+                                <option value="">— @Settings.VoiceProfiles.Count saved profiles —</option>
+                                @foreach (var p in Settings.VoiceProfiles)
+                                {
+                                    <option value="@p.Id">@p.Label</option>
+                                }
+                            </select>
+                        </div>
+                    }
+
+                    <div class="d-flex gap-2 flex-wrap align-items-end mt-3">
+                        <button class="btn btn-sm btn-info" @onclick="AuditionVoiceAsync" disabled="@(auditioning || string.IsNullOrWhiteSpace(editorProfile.VoiceId))"
+                                title='Speak "The quick brown fox jumped over the lazy dog." with these dials and play it — nothing is saved'>
+                            @if (auditioning) { <span class="spinner-border spinner-border-sm me-1"></span> }
+                            else { <i class="bi bi-play-fill me-1"></i> }
+                            Audition voice
+                        </button>
+                        <button class="btn btn-sm btn-outline-success" @onclick="ApplyVoiceToStrandAsync" disabled="@string.IsNullOrWhiteSpace(editorProfile.VoiceId)"
+                                title="Pin these dials to THIS strand — the next record/publish uses them">
+                            <i class="bi bi-pin-angle me-1"></i>Apply to this strand
+                        </button>
+                        <div class="d-flex gap-1 align-items-end">
+                            <div>
+                                <label class="form-label small text-muted mb-1">New profile name</label>
+                                <input class="form-control form-control-sm bg-black text-light border-secondary" style="min-width:200px;"
+                                       placeholder="e.g. Oliver Silk — gravelly v3" @bind="newProfileLabel" />
+                            </div>
+                            <button class="btn btn-sm btn-outline-success" @onclick="SaveAsNewProfile"
+                                    disabled="@(string.IsNullOrWhiteSpace(editorProfile.VoiceId) || string.IsNullOrWhiteSpace(newProfileLabel))"
+                                    title="Save these dials as a new profile (never overwrites an existing one)">
+                                <i class="bi bi-save me-1"></i>Save as profile
+                            </button>
+                        </div>
+                        <button class="btn btn-sm btn-outline-light ms-auto" @onclick="ImportAllVoicesAsync" disabled="@importingVoices"
+                                title="Create baseline v2 + v3 profiles for every ElevenLabs voice so they're always in your list">
+                            @if (importingVoices) { <span class="spinner-border spinner-border-sm me-1"></span> }
+                            else { <i class="bi bi-cloud-download me-1"></i> }
+                            Import all voices
+                        </button>
+                    </div>
+
+                    @if (!string.IsNullOrEmpty(auditionAudioUrl))
+                    {
+                        <div class="mt-3">
+                            <label class="form-label small text-muted mb-1">Audition — “The quick brown fox jumped over the lazy dog.”</label>
+                            <audio controls autoplay src="@auditionAudioUrl" class="w-100" style="height:34px;"></audio>
+                        </div>
+                    }
+                </div>
+            }
         </div>
 
         @if (publishing)
@@ -385,31 +582,79 @@ else
             }
         }
 
-        @* Nested-strands list removed: a strand is now a single flat list of
-           beats, with section divisions marked by Beat.IsChapterStart.
-
-           In its place, render a chapter index — one jump-link per beat
-           with IsChapterStart=true. Click jumps to the beat's row via
-           anchor scroll. Built from the in-memory beats list so the count
-           updates immediately when the user toggles IsChapterStart. *@
-        @{
-            var chapterStops = beats
-                .Select((entry, idx) => (entry.Beat, position: idx + 1))
-                .Where(x => x.Beat.IsChapterStart)
-                .ToList();
+        @* Children navigation — when this is a collection, list direct child strands
+           so the user can click into each one to edit it in isolation. *@
+        @if (children.Count > 0)
+        {
+            <div class="strand-children-nav">
+                <div class="strand-children-nav-head">
+                    <i class="bi bi-diagram-3 me-1"></i>@children.Count contained strand(s) — click to open and edit
+                </div>
+                <div class="strand-children-nav-list">
+                    @foreach (var child in children)
+                    {
+                        <a href="/strand/@child.Slug" class="strand-children-nav-item">
+                            <span class="badge bg-secondary text-uppercase scn-kind">@child.Kind</span>
+                            <span class="scn-title">@child.Title</span>
+                            @if (!string.IsNullOrWhiteSpace(child.Synopsis))
+                            {
+                                <span class="scn-synopsis" title="@child.Synopsis">@child.Synopsis</span>
+                            }
+                            @if (child.Score.HasValue)
+                            {
+                                <span class="badge @ScorePctColor(child.Score.Value) ms-1">@child.Score.Value.ToString("0")%</span>
+                            }
+                            <span class="badge bg-@StatusColor(child.Status) text-uppercase ms-1 scn-status">@StatusLabel(child.Status)</span>
+                            <i class="bi bi-arrow-right-short scn-arrow"></i>
+                        </a>
+                    }
+                </div>
+            </div>
         }
-        @if (chapterStops.Count > 1)
+
+        @* Chapter index: when this strand has direct children, each child strand
+           is a section — anchor to its first beat in the merged flat list so
+           clicking the TOC entry scrolls to where that strand's content begins.
+           When no children, use IsChapterStart beats as before. *@
+        @{
+            var hasTocChildren = children.Count > 0;
+            List<(string Label, string Href)> tocEntries;
+            if (hasTocChildren)
+            {
+                tocEntries = children
+                    .Select(c =>
+                    {
+                        var firstBeat = beats.FirstOrDefault(b => b.StrandId == c.Id);
+                        var href = firstBeat != null
+                            ? $"#beat-{firstBeat.Beat.Id:N}"
+                            : $"/strand/{c.Slug}";
+                        return (Label: c.Title, Href: href);
+                    })
+                    .ToList();
+            }
+            else
+            {
+                tocEntries = beats
+                    .Where(b => b.Beat.IsChapterStart)
+                    .Select(b => (
+                        Label: string.IsNullOrEmpty(b.Beat.BeatTitle) ? "(untitled chapter)" : b.Beat.BeatTitle,
+                        Href: $"#beat-{b.Beat.Id:N}"))
+                    .ToList();
+            }
+        }
+        @if (tocEntries.Count > 1)
         {
             <div class="chapter-index">
                 <div class="chapter-index-head">
-                    <i class="bi bi-list-ol me-1"></i>@chapterStops.Count chapter(s)
+                    <i class="bi bi-list-ol me-1"></i>@tocEntries.Count @(hasTocChildren ? "strand(s)" : "chapter(s)")
                 </div>
                 <div class="chapter-index-list">
-                    @foreach (var stop in chapterStops)
+                    @for (var toci = 0; toci < tocEntries.Count; toci++)
                     {
-                        var label = string.IsNullOrEmpty(stop.Beat.BeatTitle) ? "(untitled chapter)" : stop.Beat.BeatTitle;
-                        <a href="@($"#beat-{stop.Beat.Id:N}")" class="chapter-index-link">
-                            <span class="ci-pos">#@stop.position</span>@label
+                        var entry = tocEntries[toci];
+                        var pos = toci + 1;
+                        <a href="@entry.Href" class="chapter-index-link">
+                            <span class="ci-pos">#@pos.ToString("D2")</span>@entry.Label
                         </a>
                     }
                 </div>
@@ -433,6 +678,21 @@ else
         else
         {
             <div class="d-flex flex-column" id="strand-beats-root">
+                @{
+                    var disabledCount = beats.Count(b => !b.IsEnabled);
+                }
+                @if (disabledCount > 0 || showDisabledBeats)
+                {
+                    <div class="d-flex justify-content-end mb-1">
+                        <button class="btn btn-sm @(showDisabledBeats ? "btn-outline-warning" : "btn-outline-secondary")"
+                                @onclick="ToggleShowDisabledAsync"
+                                title="@(showDisabledBeats ? "Hide disabled beats" : $"Show {disabledCount} disabled beat{(disabledCount == 1 ? "" : "s")}")">
+                            <i class="bi @(showDisabledBeats ? "bi-eye-slash" : "bi-eye") me-1"></i>
+                            @if (showDisabledBeats) { <span>Hide disabled (@disabledCount)</span> }
+                            else { <span>@disabledCount disabled</span> }
+                        </button>
+                    </div>
+                }
                 <div class="insert-bar">
                     <div class="insert-bar-line"></div>
                     <button class="insert-bar-btn" @onclick="() => InsertBeatAsync(null)" disabled="@working" data-cy="insert-top">
@@ -453,6 +713,7 @@ else
                     // action buttons visible until the user saves or reverts.
                     var isDirty = IsDirty(b);
                     var rowClass = "beat-card mb-1";
+                    if (!entry.IsEnabled) rowClass += " beat-disabled";
                     if (isDirty) rowClass += " editing";
                     if (resumeBeatId == bid) rowClass += " resume-here";
                     var rowPosition = position;
@@ -493,6 +754,10 @@ else
                                 <i class="bi bi-grip-vertical"></i>
                             </span>
                             <span class="beat-id-chip" data-cy="beat-id" title="@($"Position {rowPosition} in strand — Beat guid {bid}")">Beat #@rowPosition.ToString("D3")</span>
+                            @if (!entry.IsEnabled)
+                            {
+                                <span class="beat-disabled-badge">disabled</span>
+                            }
                             <button class="btn btn-sm beat-guid-copy p-0" title="@($"Copy beat id {bid}")"
                                     @onclick='() => CopyGuidAsync(bid, "Beat id")' @onclick:stopPropagation>
                                 <i class="bi @(copiedGuid == bid ? "bi-check-lg" : "bi-hash")"></i>
@@ -574,6 +839,10 @@ else
                                    history (Beats_History). ◀ older, ▶ newer; ▶ is
                                    disabled on the current version. Land on the one you
                                    want, then Save to keep it (a new current version). *@
+                                @{
+                                    var histTs = historyTimestamps.TryGetValue(bid, out var ts) ? ts : (DateTime?)null;
+                                    var histTsLabel = histTs.HasValue ? histTs.Value.ToLocalTime().ToString("MM/dd HH:mm") : "";
+                                }
                                 <span class="beat-history-nav d-flex align-items-center @(histCycling ? "cycling" : "")">
                                     <button class="btn btn-sm btn-outline-secondary"
                                             @onclick="() => StepHistoryAsync(bid, +1)"
@@ -583,6 +852,10 @@ else
                                             data-cy="beat-history-older">
                                         <i class="bi bi-chevron-left"></i>
                                     </button>
+                                    @if (histCycling && histTsLabel != "")
+                                    {
+                                        <span class="beat-version-ts" title="This version was current on @histTs!.Value.ToLocalTime().ToString("yyyy-MM-dd HH:mm")">@histTsLabel</span>
+                                    }
                                     <button class="btn btn-sm btn-outline-secondary"
                                             @onclick="() => StepHistoryAsync(bid, -1)"
                                             @onclick:stopPropagation
@@ -608,14 +881,28 @@ else
                                             data-cy="beat-llm">
                                         <i class="bi bi-stars"></i>
                                     </button>
-                                    <button class="btn btn-sm btn-outline-danger"
-                                            title="Delete this beat (confirmation prompt)"
-                                            @onclick="() => RequestDeleteAsync(bid)"
-                                            @onclick:stopPropagation
-                                            disabled="@working"
-                                            data-cy="beat-delete">
-                                        <i class="bi bi-trash"></i>
-                                    </button>
+                                    @if (entry.IsEnabled)
+                                    {
+                                        <button class="btn btn-sm btn-outline-warning"
+                                                title="Archive this beat — it leaves the strand but stays recoverable via the disabled-beats toggle"
+                                                @onclick="() => RequestDeleteAsync(bid)"
+                                                @onclick:stopPropagation
+                                                disabled="@working"
+                                                data-cy="beat-delete">
+                                            <i class="bi bi-archive"></i>
+                                        </button>
+                                    }
+                                    else
+                                    {
+                                        <button class="btn btn-sm btn-outline-success"
+                                                title="Restore this beat"
+                                                @onclick="() => RestoreBeatAsync(bid)"
+                                                @onclick:stopPropagation
+                                                disabled="@working"
+                                                data-cy="beat-restore">
+                                            <i class="bi bi-arrow-counterclockwise"></i>
+                                        </button>
+                                    }
                             </div>
                         </div>
 
@@ -647,7 +934,6 @@ else
                             @{
                                 var tone  = b.EmotionalTone;
                                 var pace  = b.PaceHint;
-                                var facet = b.FacetTag;
                                 var btitle = b.BeatTitle;
                             }
                             @if (!string.IsNullOrEmpty(btitle))
@@ -663,11 +949,6 @@ else
                                   @onclick="() => ToggleMeta(bid)"
                                   title="Pace hint — biases narration stability (clipped/staccato → faster, languorous → slower).">
                                 @(string.IsNullOrEmpty(pace) ? "pace: —" : $"⏱ {pace}")
-                            </span>
-                            <span class="beat-meta-chip @(string.IsNullOrEmpty(facet) ? "unset" : "")"
-                                  @onclick="() => ToggleMeta(bid)"
-                                  title="Character facet — Kyle's psychological mode for this beat (WOUND/SHADOW/MASK/IDEAL). Used as a fallback narration cue when tone is blank.">
-                                @(string.IsNullOrEmpty(facet) ? "facet: —" : $"🎭 {facet}")
                             </span>
                             <span class="beat-meta-chip" @onclick="() => ToggleMeta(bid)" data-cy="beat-meta-toggle">
                                 @(metaOpenBeatId == bid ? "▲ details" : "▾ details")
@@ -734,16 +1015,6 @@ else
                                             <option value="clipped">clipped</option>
                                             <option value="staccato">staccato</option>
                                             <option value="languorous">languorous</option>
-                                        </select>
-                                    </div>
-                                    <div class="col-md-4">
-                                        <label>Character facet</label>
-                                        <select class="form-select form-select-sm" @bind="metaForm.FacetTag">
-                                            <option value="">(none)</option>
-                                            <option value="WOUND">WOUND → [somber]</option>
-                                            <option value="SHADOW">SHADOW → [menacing]</option>
-                                            <option value="MASK">MASK → [deadpan]</option>
-                                            <option value="IDEAL">IDEAL → [resolute]</option>
                                         </select>
                                     </div>
                                     <div class="col-md-4">
@@ -817,16 +1088,18 @@ else
     <div class="modal d-block" style="background:rgba(0,0,0,0.6);" tabindex="-1"
          @onclick="CancelDelete">
         <div class="modal-dialog modal-dialog-centered" @onclick:stopPropagation>
-            <div class="modal-content bg-dark border-danger">
+            <div class="modal-content bg-dark border-warning">
                 <div class="modal-header border-secondary">
-                    <h5 class="modal-title text-danger"><i class="bi bi-exclamation-triangle me-2"></i>Delete this beat?</h5>
+                    <h5 class="modal-title text-warning"><i class="bi bi-archive me-2"></i>Archive this beat?</h5>
                 </div>
                 <div class="modal-body text-light small">
-                    The beat will be removed from this strand. If no other strand references it, the beat itself (text + audio) is deleted.
+                    The beat leaves this strand but is not deleted — its text and full version history are kept,
+                    and you can bring it back any time via the disabled-beats toggle above the beat list.
+                    Audio is invalidated so a restore re-narrates fresh.
                 </div>
                 <div class="modal-footer border-secondary">
                     <button class="btn btn-outline-secondary" @onclick="CancelDelete">Cancel <span class="text-muted ms-1">(Esc)</span></button>
-                    <button class="btn btn-danger" @onclick="ConfirmDeleteAsync" data-cy="confirm-delete">Delete</button>
+                    <button class="btn btn-warning" @onclick="ConfirmDeleteAsync" data-cy="confirm-delete"><i class="bi bi-archive me-1"></i>Archive</button>
                 </div>
             </div>
         </div>
@@ -1047,8 +1320,10 @@ else
     // which version the editor is previewing — 0 = current/most-recent edit,
     // higher = further back in history. Capture is automatic (every UPDATE is
     // versioned by SQL Server), so there's nothing to push from the client.
-    private readonly Dictionary<Guid, int> historyCounts = new();
-    private readonly Dictionary<Guid, int> historyCursor = new();
+    private readonly Dictionary<Guid, int>      historyCounts     = new();
+    private readonly Dictionary<Guid, int>      historyCursor     = new();
+    private readonly Dictionary<Guid, DateTime> historyTimestamps = new();
+    private bool showDisabledBeats;
 
     /// <summary>Return this beat's live draft text, seeding it from the
     /// canonical Beat.Text on first access. Called from the textarea's
@@ -1119,7 +1394,13 @@ else
     /// <summary>Working copy of the meta panel form. Re-populated from the
     /// beat each time the panel opens; not persisted until Save.</summary>
     private MetaForm metaForm = new();
-    private Guid? pendingDelete;
+    /// <summary>Beat id + owning strand id captured at the moment the user
+    /// clicks Delete. The owning strand may differ from the top-level
+    /// <see cref="strand"/> when we are viewing a collection whose beats
+    /// come from child strands — passing the wrong strand id to
+    /// <see cref="StrandWorkbenchService.DeleteBeatAsync"/> would silently
+    /// no-op because the junction lookup finds nothing.</summary>
+    private (Guid BeatId, Guid OwningStrandId)? pendingDelete;
     private System.Threading.Timer? poll;
     private string? lastIdOrSlug;
 
@@ -1136,9 +1417,10 @@ else
     private int publishCurrent;
     private int publishTotal;
     private string? publishLabel;
-    /// <summary>True while a KDP Word .docx export is running (drives the
-    /// Publish Word Document button spinner). Cheap/synchronous-ish; no ring.</summary>
-    private bool docxBusy;
+    /// <summary>True while a file manuscript export (Word/PDF/Markdown/text) is
+    /// running (drives the Export button spinner). Cheap/synchronous-ish; no
+    /// ring — the audiobook is the only export that drives the progress ring.</summary>
+    private bool exportBusy;
     private const double PublishRingRadius = 54;
     private double PublishRingCircumference => 2 * Math.PI * PublishRingRadius;
     /// <summary>Capped at 99% on purpose — the ring never shows a full 100%
@@ -1164,6 +1446,165 @@ else
 
     private string defaultVoiceId = "";
     private List<TtsVoice> voices = new();
+
+    // ── Voice Studio ───────────────────────────────────────────────────────
+    // Pick any v2/v3 voice, turn its dials, audition Beat 001 (throwaway), then
+    // pin it to this strand and/or save it as a reusable profile. editorProfile
+    // is the live dial set being tuned; it is seeded from the strand's current
+    // voice snapshot whenever a strand loads.
+    private List<TtsModel> models = new();
+    private bool showVoiceStudio;
+    private StreetSamurai.Core.Models.VoiceProfile editorProfile = new() { Model = "eleven_v3", Stability = 1.0, SimilarityBoost = 0.75, Style = 0.0, UseSpeakerBoost = true };
+    private bool auditioning;
+    private string? auditionAudioUrl;
+    private string newProfileLabel = "";
+    private bool importingVoices;
+
+    /// <summary>The only three stability values eleven_v3 accepts.</summary>
+    private static readonly (double Value, string Name)[] V3Presets =
+        [ (0.0, "Creative"), (0.5, "Natural"), (1.0, "Robust") ];
+
+    private static bool IsV3Model(string? model) =>
+        model?.StartsWith("eleven_v3", StringComparison.OrdinalIgnoreCase) ?? false;
+
+    private static double SnapV3Stability(double v) => v <= 0.25 ? 0.0 : v >= 0.75 ? 1.0 : 0.5;
+
+    /// <summary>Does the currently selected voice support the v3 engine? Drives
+    /// which models are offered. Unknown/blank voice → assume yes so options
+    /// aren't hidden before a voice is picked.</summary>
+    private bool SelectedVoiceSupportsV3() =>
+        voices.FirstOrDefault(v => v.VoiceId == editorProfile.VoiceId)?.SupportsV3 ?? true;
+
+    /// <summary>Models offered for the selected voice. v3 models only appear for
+    /// voices that support v3, so the operator never sees a model the voice can't
+    /// use — the studio shows only what's applicable to the current selection.</summary>
+    private IEnumerable<TtsModel> CompatibleModels() =>
+        SelectedVoiceSupportsV3() ? models : models.Where(m => !m.IsV3);
+
+    /// <summary>Voice changed: if the new voice can't do v3 but a v3 model is
+    /// currently selected, fall back to a v2 model so the controls stay valid.</summary>
+    private void OnStudioVoiceChanged()
+    {
+        if (!SelectedVoiceSupportsV3() && IsV3Model(editorProfile.Model))
+            editorProfile.Model = models.FirstOrDefault(m => !m.IsV3)?.ModelId ?? "eleven_multilingual_v2";
+        auditionAudioUrl = null;
+    }
+
+    /// <summary>Model changed: snap stability to a legal v3 preset when switching
+    /// to a v3 model (an arbitrary v2 value would be invalid on v3).</summary>
+    private void OnStudioModelChanged()
+    {
+        if (IsV3Model(editorProfile.Model)) editorProfile.Stability = SnapV3Stability(editorProfile.Stability);
+        auditionAudioUrl = null;
+    }
+
+    /// <summary>Copy the strand's pinned voice snapshot into the editor so the
+    /// studio opens showing what the strand currently uses.</summary>
+    private void SeedVoiceEditorFromStrand()
+    {
+        if (strand == null) return;
+        editorProfile = new StreetSamurai.Core.Models.VoiceProfile
+        {
+            Id              = "",
+            Label           = "",
+            VoiceId         = string.IsNullOrEmpty(strand.VoiceId) ? defaultVoiceId : strand.VoiceId,
+            Model           = string.IsNullOrEmpty(strand.VoiceModel) ? (Settings.TtsModel ?? "eleven_v3") : strand.VoiceModel,
+            Stability       = strand.VoiceStability  ?? Settings.TtsStability,
+            SimilarityBoost = strand.VoiceSimilarity ?? Settings.TtsSimilarityBoost,
+            Style           = strand.VoiceStyle      ?? Settings.TtsStyle,
+            UseSpeakerBoost = true,
+        };
+        auditionAudioUrl = null;
+    }
+
+    private void LoadProfileIntoEditor(string profileId)
+    {
+        var p = Settings.VoiceProfiles.FirstOrDefault(x => x.Id == profileId);
+        if (p == null) return;
+        editorProfile = new StreetSamurai.Core.Models.VoiceProfile
+        {
+            Id = "", Label = "", VoiceId = p.VoiceId, Model = p.Model,
+            Stability = p.Stability, SimilarityBoost = p.SimilarityBoost,
+            Style = p.Style, UseSpeakerBoost = p.UseSpeakerBoost,
+        };
+        newProfileLabel = $"{p.Label} (copy)";
+        auditionAudioUrl = null;
+    }
+
+    private async Task AuditionVoiceAsync()
+    {
+        if (strand == null || auditioning) return;
+        if (string.IsNullOrWhiteSpace(editorProfile.VoiceId)) { Toast.Error("AUDITION", "Pick a voice first."); return; }
+        auditioning = true;
+        auditionAudioUrl = null;
+        StateHasChanged();
+        try
+        {
+            var bytes = await Workbench.AuditionVoiceAsync(strand.Id, editorProfile);
+            auditionAudioUrl = "data:audio/mpeg;base64," + Convert.ToBase64String(bytes);
+        }
+        catch (Exception ex)
+        {
+            Log.LogError(ex, "Audition failed for strand {S}", strand.Id);
+            Toast.Error("AUDITION", ex.Message);
+        }
+        finally { auditioning = false; StateHasChanged(); }
+    }
+
+    private async Task ApplyVoiceToStrandAsync()
+    {
+        if (strand == null) return;
+        if (string.IsNullOrWhiteSpace(editorProfile.VoiceId)) { Toast.Error("VOICE", "Pick a voice first."); return; }
+        try
+        {
+            await Workbench.SetStrandVoiceAsync(strand.Id, editorProfile);
+            strand.VoiceId = editorProfile.VoiceId;
+            Toast.Success("VOICE", "Pinned to this strand — the next record/publish uses these dials.");
+        }
+        catch (Exception ex)
+        {
+            Log.LogError(ex, "Apply voice failed for strand {S}", strand.Id);
+            Toast.Error("VOICE", ex.Message);
+        }
+    }
+
+    private void SaveAsNewProfile()
+    {
+        if (string.IsNullOrWhiteSpace(editorProfile.VoiceId)) { Toast.Error("PROFILE", "Pick a voice first."); return; }
+        if (string.IsNullOrWhiteSpace(newProfileLabel)) { Toast.Error("PROFILE", "Give the profile a name."); return; }
+        // Blank Id forces UpsertVoiceProfile to mint a fresh one — copy-on-save,
+        // so a baseline or earlier custom profile is never overwritten.
+        var copy = new StreetSamurai.Core.Models.VoiceProfile
+        {
+            Id = "", Label = newProfileLabel.Trim(), VoiceId = editorProfile.VoiceId,
+            Model = editorProfile.Model, Stability = editorProfile.Stability,
+            SimilarityBoost = editorProfile.SimilarityBoost, Style = editorProfile.Style,
+            UseSpeakerBoost = editorProfile.UseSpeakerBoost,
+        };
+        var saved = Settings.UpsertVoiceProfile(copy);
+        Toast.Success("PROFILE", $"Saved “{saved.Label}” — it'll always be in your profile list.");
+        newProfileLabel = "";
+    }
+
+    private async Task ImportAllVoicesAsync()
+    {
+        if (importingVoices) return;
+        importingVoices = true;
+        StateHasChanged();
+        try
+        {
+            var live = (await Tts.ListVoicesAsync()).Where(v => !string.IsNullOrWhiteSpace(v.VoiceId)).ToList();
+            if (live.Count == 0) { Toast.Error("IMPORT", "No voices returned — check the ElevenLabs API key."); return; }
+            var n = Settings.ImportAllVoicesAsProfiles(live);
+            Toast.Success("IMPORT", $"Imported {n} voices as {n * 2} baseline profiles (v2 + v3).");
+        }
+        catch (Exception ex)
+        {
+            Log.LogError(ex, "Voice import failed");
+            Toast.Error("IMPORT", ex.Message);
+        }
+        finally { importingVoices = false; StateHasChanged(); }
+    }
 
     /// <summary>Last beat the listener was playing, surfaced as a "resume here"
     /// banner + a green highlight ring on the row. Backed by
@@ -1200,6 +1641,8 @@ else
         {
             voices = new() { new TtsVoice { VoiceId = defaultVoiceId, Name = "Default" } };
         }
+        try { models = await Tts.ListModelsAsync(); }
+        catch { models = new() { new TtsModel("eleven_v3", "Eleven v3", true) }; }
     }
 
     protected override async Task OnParametersSetAsync()
@@ -1288,7 +1731,8 @@ else
             {
                 strandLoadedUpdatedAt = strand.UpdatedAt;
                 if (string.IsNullOrEmpty(strand.VoiceId)) strand.VoiceId = defaultVoiceId;
-                beats = await Workbench.GetOrderedBeatsAsync(strand.Id);
+                SeedVoiceEditorFromStrand();
+                beats = await Workbench.GetOrderedBeatsAsync(strand.Id, includeDisabled: showDisabledBeats);
                 SyncDraftsAfterReload();
                 await RefreshHistoryCountsAsync();
 
@@ -1359,7 +1803,7 @@ else
                 strand.Status = fresh.Status;
                 strand.CombinedAudioPath = fresh.CombinedAudioPath;
                 strand.CharsNarrated = fresh.CharsNarrated;
-                beats = await Workbench.GetOrderedBeatsAsync(strand.Id);
+                beats = await Workbench.GetOrderedBeatsAsync(strand.Id, includeDisabled: showDisabledBeats);
                 SyncDraftsAfterReload();
                 await InvokeAsync(StateHasChanged);
                 if (strand.Status is "ready" or "failed" or "stopped")
@@ -1429,7 +1873,6 @@ else
             Synopsis       = beat.Synopsis ?? "",
             EmotionalTone  = beat.EmotionalTone ?? "",
             PaceHint       = beat.PaceHint ?? "",
-            FacetTag       = beat.FacetTag ?? "",
             StructureRole  = beat.StructureRole ?? "",
             Act            = beat.Act,
             SceneType      = string.IsNullOrEmpty(beat.SceneType) ? "scene" : beat.SceneType,
@@ -1453,7 +1896,6 @@ else
                 Synopsis:       metaForm.Synopsis,
                 EmotionalTone:  metaForm.EmotionalTone,
                 PaceHint:       metaForm.PaceHint,
-                FacetTag:       metaForm.FacetTag,
                 StructureRole:  metaForm.StructureRole,
                 Act:            metaForm.Act,
                 SceneType:      metaForm.SceneType,
@@ -1476,7 +1918,6 @@ else
         public string Synopsis { get; set; } = "";
         public string EmotionalTone { get; set; } = "";
         public string PaceHint { get; set; } = "";
-        public string FacetTag { get; set; } = "";
         public string StructureRole { get; set; } = "";
         public int Act { get; set; }
         public string SceneType { get; set; } = "scene";
@@ -1537,6 +1978,7 @@ else
             var counts = await Workbench.GetBeatVersionCountsAsync(strand.Id);
             historyCounts.Clear();
             historyCursor.Clear();
+            historyTimestamps.Clear();
             foreach (var kv in counts) historyCounts[kv.Key] = kv.Value;
         }
         catch (Exception ex) { Console.Error.WriteLine($"[strand-history] count refresh failed: {ex.Message}"); }
@@ -1544,9 +1986,8 @@ else
 
     /// <summary>Step the version cycler for one beat. delta +1 = older, -1 =
     /// newer; cursor 0 is the current/most-recent edit. Pulls the selected
-    /// version's prose from the temporal history and loads it into the beat's
-    /// draft so the editor previews it — the user then Saves to keep it (which
-    /// becomes a new current version) or Reverts to drop back to the live text.
+    /// version's prose and its timestamp from the temporal history and loads
+    /// them so the editor previews the version with its edit date shown.
     /// No-op when the move would run past either end.</summary>
     private async Task StepHistoryAsync(Guid beatId, int delta)
     {
@@ -1554,14 +1995,37 @@ else
         var cursor = historyCursor.TryGetValue(beatId, out var c) ? c : 0;
         var next = Math.Clamp(cursor + delta, 0, count - 1);
         if (next == cursor) return;
-        string? text;
-        try { text = await Workbench.GetBeatVersionTextAsync(beatId, next); }
+        StrandWorkbenchService.BeatVersion? version;
+        try { version = await Workbench.GetBeatVersionAsync(beatId, next); }
         catch (Exception ex) { Toast.Error("BEAT-HISTORY", ex.Message); return; }
-        if (text is null) return; // version vanished (e.g. history trimmed) — leave the editor as-is
+        if (version is null) return; // version vanished — leave the editor as-is
         historyCursor[beatId] = next;
-        drafts[beatId] = text;
-        autoSizePendingBeatId = beatId; // resize + focus the textarea to the loaded version
+        historyTimestamps[beatId] = version.ValidFrom;
+        drafts[beatId] = version.Text;
+        autoSizePendingBeatId = beatId;
         await InvokeAsync(StateHasChanged);
+    }
+
+    private async Task ToggleShowDisabledAsync()
+    {
+        showDisabledBeats = !showDisabledBeats;
+        await ReloadBeatsAsync();
+    }
+
+    private async Task RestoreBeatAsync(Guid beatId)
+    {
+        if (strand == null || working) return;
+        var owning = beats.FirstOrDefault(b => b.Beat.Id == beatId)?.StrandId ?? strand.Id;
+        working = true;
+        StateHasChanged();
+        try
+        {
+            await Workbench.RestoreBeatAsync(owning, beatId);
+            await ReloadBeatsAsync();
+            Toast.Success("RESTORE", "Beat restored.");
+        }
+        catch (Exception ex) { Toast.Error("RESTORE-FAIL", ex.Message); }
+        finally { working = false; await InvokeAsync(StateHasChanged); }
     }
 
     private async Task InsertBeatAsync(Guid? afterBeatId)
@@ -1590,23 +2054,27 @@ else
 
     private void RequestDeleteAsync(Guid beatId)
     {
-        // Escape handler is installed once on first render via
-        // streetsamurai.installPageEscape and torn down in Dispose. No
-        // per-modal re-wiring required.
-        pendingDelete = beatId;
+        // Capture the owning strand from the in-memory beat list — when
+        // viewing a collection, beats from child strands carry that child's
+        // strand id, NOT the parent's. Passing the wrong id to DeleteBeatAsync
+        // would silently no-op because the junction WHERE StrandId=X finds
+        // nothing. Escape handler is installed once on first render.
+        var owning = beats.FirstOrDefault(b => b.Beat.Id == beatId)?.StrandId
+                     ?? strand!.Id;
+        pendingDelete = (beatId, owning);
     }
     private void CancelDelete() => pendingDelete = null;
 
     private async Task ConfirmDeleteAsync()
     {
         if (strand == null || pendingDelete == null) return;
-        var bid = pendingDelete.Value;
+        var (bid, owningStrandId) = pendingDelete.Value;
         pendingDelete = null;
         working = true;
         StateHasChanged();
         try
         {
-            await Workbench.DeleteBeatAsync(strand.Id, bid);
+            await Workbench.DeleteBeatAsync(owningStrandId, bid);
             await ReloadBeatsAsync();
             Toast.Success("DELETE", "Beat removed.");
         }
@@ -1838,7 +2306,7 @@ else
     /// the page stays responsive while the render is in flight.</summary>
     private async Task PublishAudiobookAsync()
     {
-        if (strand == null || publishing || docxBusy) return;
+        if (strand == null || publishing || exportBusy) return;
         publishing = true;
         publishCurrent = 0;
         publishTotal = beats.Count;
@@ -1869,18 +2337,31 @@ else
     }
 
     /// <summary>Export the strand to a KDP-ready Word .docx in Downloads.</summary>
-    private async Task PublishDocxAsync()
+    private Task PublishDocxAsync() =>
+        RunFileExportAsync("WORD", "Word .docx", id => Docx.ExportStrandAsync(id));
+
+    /// <summary>Export the strand to a KDP-style PDF in Downloads.</summary>
+    private Task PublishPdfAsync() =>
+        RunFileExportAsync("PDF", "PDF", id => Manuscript.ExportPdfAsync(id));
+
+    /// <summary>Export the strand to Markdown in Downloads.</summary>
+    private Task PublishMarkdownAsync() =>
+        RunFileExportAsync("MARKDOWN", "Markdown .md", id => Manuscript.ExportMarkdownAsync(id));
+
+    /// <summary>Shared runner for the file manuscript exports — flips the Export
+    /// spinner, runs the format-specific render, and toasts the outcome.</summary>
+    private async Task RunFileExportAsync(string tag, string label, Func<Guid, Task<string>> export)
     {
-        if (strand == null || publishing || docxBusy) return;
-        docxBusy = true;
+        if (strand == null || publishing || exportBusy) return;
+        exportBusy = true;
         await InvokeAsync(StateHasChanged);
         try
         {
-            await Docx.ExportStrandAsync(strand.Id);
-            Toast.Success("WORD", "Word .docx published — saved to your Downloads.");
+            await export(strand.Id);
+            Toast.Success(tag, $"{label} published — saved to your Downloads.");
         }
-        catch (Exception ex) { Toast.Error("WORD-FAIL", ex.Message); }
-        finally { docxBusy = false; await InvokeAsync(StateHasChanged); }
+        catch (Exception ex) { Toast.Error($"{tag}-FAIL", ex.Message); }
+        finally { exportBusy = false; await InvokeAsync(StateHasChanged); }
     }
 
     private async Task StopAsync()
@@ -1904,7 +2385,7 @@ else
             strand.CombinedAudioPath = fresh.CombinedAudioPath;
             strand.CharsNarrated = fresh.CharsNarrated;
         }
-        beats = await Workbench.GetOrderedBeatsAsync(strand.Id);
+        beats = await Workbench.GetOrderedBeatsAsync(strand.Id, includeDisabled: showDisabledBeats);
         SyncDraftsAfterReload();
         await RefreshHistoryCountsAsync();
     }

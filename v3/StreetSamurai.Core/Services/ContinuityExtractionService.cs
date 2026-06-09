@@ -415,6 +415,19 @@ public class ContinuityExtractionService
         var c = corponationsRepo.GetByName(clean) ?? corponationsRepo.GetByName(rawName);
         if (c != null) return (c.Id, c.Name, "corponation");
 
+        // Universal fallback: resolve against the Entities table so a fact about
+        // ANY entity type (gear, drugs, materials, orgs, synthetics, documents, …)
+        // becomes a continuity claim — not just the four typed repos above. This is
+        // what makes contradiction-checking corpus-wide instead of character-deep.
+        using var ctx = dbFactory.CreateDbContext();
+        var lower = clean.ToLowerInvariant();
+        var rawLower = rawName.Trim().ToLowerInvariant();
+        var hit = ctx.Entities.AsNoTracking()
+            .Where(e => e.IsActive && (e.Name.ToLower() == lower || e.Name.ToLower() == rawLower))
+            .Select(e => new { e.Id, e.Name, e.EntityType })
+            .FirstOrDefault();
+        if (hit != null) return (hit.Id.ToString("N"), hit.Name, InferKindFromEntityType(hit.EntityType));
+
         return null;
     }
 

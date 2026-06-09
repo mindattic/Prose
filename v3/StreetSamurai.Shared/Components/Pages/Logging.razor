@@ -1,5 +1,5 @@
 @page "/logging"
-@attribute [Authorize(Roles = "Administrator")]
+@attribute [Authorize(Policy = MaPolicies.Admin)]
 @inject LoggingService LogSvc
 @inject SettingsService SettingsSvc
 

@@ -25,7 +25,6 @@ public class EntityRatingService
     private readonly ILogger<EntityRatingService> log;
 
     private readonly CharacterRepository characters;
-    private readonly SyntheticLifeRepository synthetics;
     private readonly TechnologyRepository technology;
     private readonly WeaponryRepository weaponry;
     private readonly AmmunitionRepository ammunition;
@@ -85,7 +84,6 @@ public class EntityRatingService
         LlmVotingService llmVoting,
         ILogger<EntityRatingService> log,
         CharacterRepository characters,
-        SyntheticLifeRepository synthetics,
         TechnologyRepository technology,
         WeaponryRepository weaponry,
         AmmunitionRepository ammunition,
@@ -109,7 +107,6 @@ public class EntityRatingService
         this.llmVoting      = llmVoting;
         this.log            = log;
         this.characters     = characters;
-        this.synthetics     = synthetics;
         this.technology     = technology;
         this.weaponry       = weaponry;
         this.ammunition     = ammunition;
@@ -166,7 +163,6 @@ public class EntityRatingService
         }
 
         Collect(characters.GetAll(),     e => e.Name,     "character",     "/characters");
-        Collect(synthetics.GetAll(),     e => e.Name,     "synthetic",     "/synthetics");
         Collect(technology.GetAll(),     e => e.Name,     "technology",    "/technology");
         Collect(weaponry.GetAll(),       e => e.Name,     "weapon",        "/weaponry");
         Collect(ammunition.GetAll(),     e => e.Name,     "ammunition",    "/ammunition");
@@ -195,7 +191,6 @@ public class EntityRatingService
     private async Task RunBatches(bool skipRated, CancellationToken ct)
     {
         await RateBatch(characters.GetAll(),     e => (e.Name, e.Description),        e => characters.Save(e),     "character",     skipRated, ct);
-        await RateBatch(synthetics.GetAll(),     e => (e.Name, e.Description),        e => synthetics.Save(e),     "synthetic",     skipRated, ct);
         await RateBatch(technology.GetAll(),     e => (e.Name, e.Description),        e => technology.Save(e),     "technology",    skipRated, ct);
         await RateBatch(weaponry.GetAll(),       e => (e.Name, e.Description),        e => weaponry.Save(e),       "weaponry",      skipRated, ct);
         await RateBatch(ammunition.GetAll(),     e => (e.Name, e.Description),        e => ammunition.Save(e),     "ammunition",    skipRated, ct);

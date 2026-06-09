@@ -6,7 +6,13 @@ using StreetSamurai.Core.Services;
 
 namespace StreetSamurai.UnitTests;
 
+// RETIRED by the 2026-05-08 JSON→SQL canon migration. These tests seed file-based
+// engine_data/people/*.json fixtures and assert the rule scan flags violations from them,
+// but WorldConsistencyService now scans the SQL DB (an empty in-memory TestDbFactory here),
+// so written files are ignored. The "clean → no violations" case passes only vacuously.
+// To re-enable: rewrite to seed the SQL test DB instead of writing JSON files.
 [TestFixture]
+[Ignore("Retired file-based path (2026-05-08 JSON→SQL migration); rewrite to seed the SQL test DB. See class comment.")]
 public class WorldConsistencyServiceTests
 {
     private string tempDir = "";

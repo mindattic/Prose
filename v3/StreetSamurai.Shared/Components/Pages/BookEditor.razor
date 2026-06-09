@@ -1,5 +1,5 @@
 @page "/books/{BookId}"
-@attribute [Authorize(Roles = "Contributor,Administrator")]
+@attribute [Authorize(Policy = MaPolicies.Admin)]
 @inject NavigationManager Nav
 
 @code {
