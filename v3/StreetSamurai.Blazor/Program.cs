@@ -660,18 +660,29 @@ if (args.Contains("--list-strands"))
     return;
 }
 
-// CLI mode: render a strand to Markdown / plain text / PDF in Downloads. The
-// headless twins of the writer page's Export dropdown items.
-//   ss (--publish-md | --publish-txt | --publish-pdf) (--id <guid|prefix> | --slug <slug>) [--author "Name"]
-if (args.Contains("--publish-md") || args.Contains("--publish-txt") || args.Contains("--publish-pdf"))
+// CLI mode: render a strand to Markdown or PDF in Downloads.
+// Markdown output embeds <!-- beat:N:id7 --> markers for ss --import-md round-trip.
+//   ss (--publish-md | --publish-pdf) (--id <guid|prefix> | --slug <slug>) [--author "Name"]
+if (args.Contains("--publish-md") || args.Contains("--publish-pdf"))
 {
     var cliBuilder = WebApplication.CreateBuilder(args);
     cliBuilder.Services.AddStreetSamuraiServices();
     var cliApp = cliBuilder.Build();
     var format = args.Contains("--publish-md") ? PublishManuscriptCli.Format.Markdown
-               : args.Contains("--publish-txt") ? PublishManuscriptCli.Format.Text
                : PublishManuscriptCli.Format.Pdf;
     Environment.ExitCode = await PublishManuscriptCli.RunAsync(args, cliApp.Services, format);
+    return;
+}
+
+// CLI mode: reimport an edited --publish-md Markdown file back into the DB. Each
+// <!-- beat:N:id7 --> marker identifies the beat; prose between markers updates Beat.Text.
+//   ss --import-md --file path.md [--dry-run]
+if (args.Contains("--import-md"))
+{
+    var cliBuilder = WebApplication.CreateBuilder(args);
+    cliBuilder.Services.AddStreetSamuraiServices();
+    var cliApp = cliBuilder.Build();
+    Environment.ExitCode = await ImportMarkdownCli.RunAsync(args, cliApp.Services);
     return;
 }
 

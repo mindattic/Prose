@@ -6,20 +6,20 @@ using StreetSamurai.Core.Services;
 namespace StreetSamurai.Blazor.Cli;
 
 /// <summary>
-/// <c>ss (--publish-md | --publish-txt | --publish-pdf) (--id &lt;guid|prefix&gt; | --slug &lt;slug&gt;) [--author "Name"]</c>
-/// — render a strand to Markdown, plain text, or PDF in the user's Downloads
-/// folder. The headless twin of the writer page's Export dropdown items.
+/// <c>ss (--publish-md | --publish-pdf) (--id &lt;guid|prefix&gt; | --slug &lt;slug&gt;) [--author "Name"]</c>
+/// — render a strand to Markdown or PDF in the user's Downloads folder.
+/// Markdown output embeds <c>&lt;!-- beat:N:id7 --&gt;</c> markers enabling
+/// <c>ss --import-md</c> round-trip. The headless twin of the writer page's Export items.
 /// </summary>
 public static class PublishManuscriptCli
 {
-    public enum Format { Markdown, Text, Pdf }
+    public enum Format { Markdown, Pdf }
 
     public static async Task<int> RunAsync(string[] args, IServiceProvider services, Format format)
     {
         var (tag, ext) = format switch
         {
             Format.Markdown => ("publish-md", "Markdown .md"),
-            Format.Text     => ("publish-txt", "plain text .txt"),
             _               => ("publish-pdf", "PDF"),
         };
 
@@ -61,7 +61,6 @@ public static class PublishManuscriptCli
             var path = format switch
             {
                 Format.Markdown => await export.ExportMarkdownAsync(strandId, author),
-                Format.Text     => await export.ExportTextAsync(strandId, author),
                 _               => await export.ExportPdfAsync(strandId, author),
             };
             Console.WriteLine($"[{tag}] Wrote: {path}");

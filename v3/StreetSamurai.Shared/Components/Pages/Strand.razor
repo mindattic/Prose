@@ -255,6 +255,14 @@
        current) version is showing, the cluster glows so it's clear the editor
        is previewing history, not the live text. */
     .beat-history-nav.cycling .btn { border-color: #0dcaf0; color: #0dcaf0; }
+    .beat-history-nav .beat-version-ts { font-size: 0.7rem; color: #6c757d; white-space: nowrap; padding: 0 0.3rem; }
+    .beat-history-nav.cycling .beat-version-ts { color: #0dcaf0; }
+
+    /* Soft-deleted (disabled) beat: dimmed border, reduced opacity on the body,
+       a strikethrough badge. The card is still interactive (history cycler, restore). */
+    .beat-card.beat-disabled { border-color: #3a3a3a; opacity: 0.55; }
+    .beat-card.beat-disabled:hover { border-color: #555; box-shadow: none; opacity: 0.75; }
+    .beat-disabled-badge { font-size: 0.65rem; color: #dc3545; border: 1px solid #dc354560; border-radius: 3px; padding: 0.05rem 0.3rem; }
 </style>
 
 @if (loading)
@@ -341,7 +349,7 @@ else
                 <div class="dropdown">
                     <button class="btn btn-sm btn-success dropdown-toggle" type="button" data-bs-toggle="dropdown"
                             disabled="@(publishing || exportBusy)"
-                            title="Export this strand to your Downloads — audiobook, Word, PDF, Markdown, or plain text">
+                            title="Export this strand to your Downloads — audiobook, Word, PDF, or Markdown">
                         @if (publishing || exportBusy) { <span class="spinner-border spinner-border-sm me-1"></span> }
                         else { <i class="bi bi-download me-1"></i> }
                         Export
@@ -360,11 +368,8 @@ else
                                     title="KDP-style PDF">
                             <i class="bi bi-file-pdf me-2"></i>PDF (.pdf)</button></li>
                         <li><button class="dropdown-item" @onclick="PublishMarkdownAsync"
-                                    title="Markdown with chapter headings">
+                                    title="Markdown with beat markers — editable and reimportable via ss --import-md">
                             <i class="bi bi-markdown me-2"></i>Markdown (.md)</button></li>
-                        <li><button class="dropdown-item" @onclick="PublishTextAsync"
-                                    title="Plain text">
-                            <i class="bi bi-file-text me-2"></i>Plain Text (.txt)</button></li>
                     </ul>
                 </div>
                 <div class="ms-auto">
@@ -671,6 +676,21 @@ else
         else
         {
             <div class="d-flex flex-column" id="strand-beats-root">
+                @{
+                    var disabledCount = beats.Count(b => !b.IsEnabled);
+                }
+                @if (disabledCount > 0 || showDisabledBeats)
+                {
+                    <div class="d-flex justify-content-end mb-1">
+                        <button class="btn btn-sm @(showDisabledBeats ? "btn-outline-warning" : "btn-outline-secondary")"
+                                @onclick="ToggleShowDisabledAsync"
+                                title="@(showDisabledBeats ? "Hide disabled beats" : $"Show {disabledCount} disabled beat{(disabledCount == 1 ? "" : "s")}")">
+                            <i class="bi @(showDisabledBeats ? "bi-eye-slash" : "bi-eye") me-1"></i>
+                            @if (showDisabledBeats) { <span>Hide disabled (@disabledCount)</span> }
+                            else { <span>@disabledCount disabled</span> }
+                        </button>
+                    </div>
+                }
                 <div class="insert-bar">
                     <div class="insert-bar-line"></div>
                     <button class="insert-bar-btn" @onclick="() => InsertBeatAsync(null)" disabled="@working" data-cy="insert-top">
@@ -691,6 +711,7 @@ else
                     // action buttons visible until the user saves or reverts.
                     var isDirty = IsDirty(b);
                     var rowClass = "beat-card mb-1";
+                    if (!entry.IsEnabled) rowClass += " beat-disabled";
                     if (isDirty) rowClass += " editing";
                     if (resumeBeatId == bid) rowClass += " resume-here";
                     var rowPosition = position;
@@ -731,6 +752,10 @@ else
                                 <i class="bi bi-grip-vertical"></i>
                             </span>
                             <span class="beat-id-chip" data-cy="beat-id" title="@($"Position {rowPosition} in strand — Beat guid {bid}")">Beat #@rowPosition.ToString("D3")</span>
+                            @if (!entry.IsEnabled)
+                            {
+                                <span class="beat-disabled-badge">disabled</span>
+                            }
                             <button class="btn btn-sm beat-guid-copy p-0" title="@($"Copy beat id {bid}")"
                                     @onclick='() => CopyGuidAsync(bid, "Beat id")' @onclick:stopPropagation>
                                 <i class="bi @(copiedGuid == bid ? "bi-check-lg" : "bi-hash")"></i>
@@ -812,6 +837,10 @@ else
                                    history (Beats_History). ◀ older, ▶ newer; ▶ is
                                    disabled on the current version. Land on the one you
                                    want, then Save to keep it (a new current version). *@
+                                @{
+                                    var histTs = historyTimestamps.TryGetValue(bid, out var ts) ? ts : (DateTime?)null;
+                                    var histTsLabel = histTs.HasValue ? histTs.Value.ToLocalTime().ToString("MM/dd HH:mm") : "";
+                                }
                                 <span class="beat-history-nav d-flex align-items-center @(histCycling ? "cycling" : "")">
                                     <button class="btn btn-sm btn-outline-secondary"
                                             @onclick="() => StepHistoryAsync(bid, +1)"
@@ -821,6 +850,10 @@ else
                                             data-cy="beat-history-older">
                                         <i class="bi bi-chevron-left"></i>
                                     </button>
+                                    @if (histCycling && histTsLabel != "")
+                                    {
+                                        <span class="beat-version-ts" title="This version was current on @histTs!.Value.ToLocalTime().ToString("yyyy-MM-dd HH:mm")">@histTsLabel</span>
+                                    }
                                     <button class="btn btn-sm btn-outline-secondary"
                                             @onclick="() => StepHistoryAsync(bid, -1)"
                                             @onclick:stopPropagation
@@ -846,14 +879,28 @@ else
                                             data-cy="beat-llm">
                                         <i class="bi bi-stars"></i>
                                     </button>
-                                    <button class="btn btn-sm btn-outline-danger"
-                                            title="Delete this beat (confirmation prompt)"
-                                            @onclick="() => RequestDeleteAsync(bid)"
-                                            @onclick:stopPropagation
-                                            disabled="@working"
-                                            data-cy="beat-delete">
-                                        <i class="bi bi-trash"></i>
-                                    </button>
+                                    @if (entry.IsEnabled)
+                                    {
+                                        <button class="btn btn-sm btn-outline-danger"
+                                                title="Disable this beat (soft-delete — recoverable via the closed-eye toggle)"
+                                                @onclick="() => RequestDeleteAsync(bid)"
+                                                @onclick:stopPropagation
+                                                disabled="@working"
+                                                data-cy="beat-delete">
+                                            <i class="bi bi-trash"></i>
+                                        </button>
+                                    }
+                                    else
+                                    {
+                                        <button class="btn btn-sm btn-outline-success"
+                                                title="Restore this beat"
+                                                @onclick="() => RestoreBeatAsync(bid)"
+                                                @onclick:stopPropagation
+                                                disabled="@working"
+                                                data-cy="beat-restore">
+                                            <i class="bi bi-arrow-counterclockwise"></i>
+                                        </button>
+                                    }
                             </div>
                         </div>
 
@@ -1269,8 +1316,10 @@ else
     // which version the editor is previewing — 0 = current/most-recent edit,
     // higher = further back in history. Capture is automatic (every UPDATE is
     // versioned by SQL Server), so there's nothing to push from the client.
-    private readonly Dictionary<Guid, int> historyCounts = new();
-    private readonly Dictionary<Guid, int> historyCursor = new();
+    private readonly Dictionary<Guid, int>      historyCounts     = new();
+    private readonly Dictionary<Guid, int>      historyCursor     = new();
+    private readonly Dictionary<Guid, DateTime> historyTimestamps = new();
+    private bool showDisabledBeats;
 
     /// <summary>Return this beat's live draft text, seeding it from the
     /// canonical Beat.Text on first access. Called from the textarea's
@@ -1679,7 +1728,7 @@ else
                 strandLoadedUpdatedAt = strand.UpdatedAt;
                 if (string.IsNullOrEmpty(strand.VoiceId)) strand.VoiceId = defaultVoiceId;
                 SeedVoiceEditorFromStrand();
-                beats = await Workbench.GetOrderedBeatsAsync(strand.Id);
+                beats = await Workbench.GetOrderedBeatsAsync(strand.Id, includeDisabled: showDisabledBeats);
                 SyncDraftsAfterReload();
                 await RefreshHistoryCountsAsync();
 
@@ -1750,7 +1799,7 @@ else
                 strand.Status = fresh.Status;
                 strand.CombinedAudioPath = fresh.CombinedAudioPath;
                 strand.CharsNarrated = fresh.CharsNarrated;
-                beats = await Workbench.GetOrderedBeatsAsync(strand.Id);
+                beats = await Workbench.GetOrderedBeatsAsync(strand.Id, includeDisabled: showDisabledBeats);
                 SyncDraftsAfterReload();
                 await InvokeAsync(StateHasChanged);
                 if (strand.Status is "ready" or "failed" or "stopped")
@@ -1925,6 +1974,7 @@ else
             var counts = await Workbench.GetBeatVersionCountsAsync(strand.Id);
             historyCounts.Clear();
             historyCursor.Clear();
+            historyTimestamps.Clear();
             foreach (var kv in counts) historyCounts[kv.Key] = kv.Value;
         }
         catch (Exception ex) { Console.Error.WriteLine($"[strand-history] count refresh failed: {ex.Message}"); }
@@ -1932,9 +1982,8 @@ else
 
     /// <summary>Step the version cycler for one beat. delta +1 = older, -1 =
     /// newer; cursor 0 is the current/most-recent edit. Pulls the selected
-    /// version's prose from the temporal history and loads it into the beat's
-    /// draft so the editor previews it — the user then Saves to keep it (which
-    /// becomes a new current version) or Reverts to drop back to the live text.
+    /// version's prose and its timestamp from the temporal history and loads
+    /// them so the editor previews the version with its edit date shown.
     /// No-op when the move would run past either end.</summary>
     private async Task StepHistoryAsync(Guid beatId, int delta)
     {
@@ -1942,14 +1991,37 @@ else
         var cursor = historyCursor.TryGetValue(beatId, out var c) ? c : 0;
         var next = Math.Clamp(cursor + delta, 0, count - 1);
         if (next == cursor) return;
-        string? text;
-        try { text = await Workbench.GetBeatVersionTextAsync(beatId, next); }
+        StrandWorkbenchService.BeatVersion? version;
+        try { version = await Workbench.GetBeatVersionAsync(beatId, next); }
         catch (Exception ex) { Toast.Error("BEAT-HISTORY", ex.Message); return; }
-        if (text is null) return; // version vanished (e.g. history trimmed) — leave the editor as-is
+        if (version is null) return; // version vanished — leave the editor as-is
         historyCursor[beatId] = next;
-        drafts[beatId] = text;
-        autoSizePendingBeatId = beatId; // resize + focus the textarea to the loaded version
+        historyTimestamps[beatId] = version.ValidFrom;
+        drafts[beatId] = version.Text;
+        autoSizePendingBeatId = beatId;
         await InvokeAsync(StateHasChanged);
+    }
+
+    private async Task ToggleShowDisabledAsync()
+    {
+        showDisabledBeats = !showDisabledBeats;
+        await ReloadBeatsAsync();
+    }
+
+    private async Task RestoreBeatAsync(Guid beatId)
+    {
+        if (strand == null || working) return;
+        var owning = beats.FirstOrDefault(b => b.Beat.Id == beatId)?.StrandId ?? strand.Id;
+        working = true;
+        StateHasChanged();
+        try
+        {
+            await Workbench.RestoreBeatAsync(owning, beatId);
+            await ReloadBeatsAsync();
+            Toast.Success("RESTORE", "Beat restored.");
+        }
+        catch (Exception ex) { Toast.Error("RESTORE-FAIL", ex.Message); }
+        finally { working = false; await InvokeAsync(StateHasChanged); }
     }
 
     private async Task InsertBeatAsync(Guid? afterBeatId)
@@ -2272,10 +2344,6 @@ else
     private Task PublishMarkdownAsync() =>
         RunFileExportAsync("MARKDOWN", "Markdown .md", id => Manuscript.ExportMarkdownAsync(id));
 
-    /// <summary>Export the strand to plain text in Downloads.</summary>
-    private Task PublishTextAsync() =>
-        RunFileExportAsync("TEXT", "plain text .txt", id => Manuscript.ExportTextAsync(id));
-
     /// <summary>Shared runner for the file manuscript exports — flips the Export
     /// spinner, runs the format-specific render, and toasts the outcome.</summary>
     private async Task RunFileExportAsync(string tag, string label, Func<Guid, Task<string>> export)
@@ -2313,7 +2381,7 @@ else
             strand.CombinedAudioPath = fresh.CombinedAudioPath;
             strand.CharsNarrated = fresh.CharsNarrated;
         }
-        beats = await Workbench.GetOrderedBeatsAsync(strand.Id);
+        beats = await Workbench.GetOrderedBeatsAsync(strand.Id, includeDisabled: showDisabledBeats);
         SyncDraftsAfterReload();
         await RefreshHistoryCountsAsync();
     }

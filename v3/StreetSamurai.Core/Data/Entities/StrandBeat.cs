@@ -17,4 +17,10 @@ public class StrandBeat
     /// <summary>Fractional sort key within the strand. Inserts between
     /// existing siblings find a midpoint — no downstream renumbering.</summary>
     public double SortKey { get; set; }
+
+    /// <summary>False when the beat has been soft-deleted from this strand.
+    /// The Beat row is never hard-deleted so all text and temporal history
+    /// remain accessible. <see cref="StrandWorkbenchService.RestoreBeatAsync"/>
+    /// sets this back to true.</summary>
+    public bool IsEnabled { get; set; } = true;
 }

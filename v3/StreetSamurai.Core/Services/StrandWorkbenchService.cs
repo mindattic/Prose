@@ -71,7 +71,10 @@ public class StrandWorkbenchService
     /// return its beats in reading order. Each entry includes its source
     /// strand so the UI can group beats under sub-strand headers when the
     /// caller wants to render a multi-level page.</summary>
-    public async Task<List<OrderedBeat>> GetOrderedBeatsAsync(Guid strandId, CancellationToken ct = default)
+    /// <param name="includeDisabled">When true, soft-deleted (IsEnabled=false) beats
+    /// are included in the result with <see cref="OrderedBeat.IsEnabled"/> = false.
+    /// Default false — the normal writing view only shows live beats.</param>
+    public async Task<List<OrderedBeat>> GetOrderedBeatsAsync(Guid strandId, CancellationToken ct = default, bool includeDisabled = false)
     {
         await using var db = await dbFactory.CreateDbContextAsync(ct);
         var result = new List<OrderedBeat>();
@@ -79,22 +82,23 @@ public class StrandWorkbenchService
         // data import could close a loop. We track visited strands so we
         // bail out cleanly instead of blowing the stack.
         var visited = new HashSet<Guid>();
-        await WalkAsync(db, strandId, result, visited, ct);
+        await WalkAsync(db, strandId, result, visited, includeDisabled, ct);
         return result;
     }
 
-    private static async Task WalkAsync(StreetSamuraiDbContext db, Guid strandId, List<OrderedBeat> acc, HashSet<Guid> visited, CancellationToken ct)
+    private static async Task WalkAsync(StreetSamuraiDbContext db, Guid strandId, List<OrderedBeat> acc, HashSet<Guid> visited, bool includeDisabled, CancellationToken ct)
     {
         if (!visited.Add(strandId)) return; // cycle — already walked this strand once.
 
-        // Direct beats first, in SortKey order.
+        // Direct beats first, in SortKey order. Soft-deleted beats are excluded
+        // by default; pass includeDisabled=true to make them visible (grey + restore button).
         var direct = await db.StrandBeats
-            .Where(sb => sb.StrandId == strandId)
+            .Where(sb => sb.StrandId == strandId && (includeDisabled || sb.IsEnabled))
             .OrderBy(sb => sb.SortKey)
-            .Join(db.Beats, sb => sb.BeatId, b => b.Id, (sb, b) => new { sb.SortKey, Beat = b })
+            .Join(db.Beats, sb => sb.BeatId, b => b.Id, (sb, b) => new { sb.SortKey, sb.IsEnabled, Beat = b })
             .ToListAsync(ct);
         foreach (var d in direct)
-            acc.Add(new OrderedBeat(d.Beat, strandId, d.SortKey));
+            acc.Add(new OrderedBeat(d.Beat, strandId, d.SortKey, d.IsEnabled));
 
         // Then child strands in SortKey order (recursive).
         var children = await db.Strands
@@ -103,14 +107,15 @@ public class StrandWorkbenchService
             .Select(s => s.Id)
             .ToListAsync(ct);
         foreach (var c in children)
-            await WalkAsync(db, c, acc, visited, ct);
+            await WalkAsync(db, c, acc, visited, includeDisabled, ct);
     }
 
-    /// <summary>Cheap count without loading the beats — for tile/badge displays.</summary>
+    /// <summary>Cheap count without loading the beats — for tile/badge displays.
+    /// Only counts enabled beats (soft-deleted excluded).</summary>
     public async Task<int> CountBeatsAsync(Guid strandId, CancellationToken ct = default)
     {
         await using var db = await dbFactory.CreateDbContextAsync(ct);
-        return await db.StrandBeats.CountAsync(sb => sb.StrandId == strandId, ct);
+        return await db.StrandBeats.CountAsync(sb => sb.StrandId == strandId && sb.IsEnabled, ct);
     }
 
     // ── Edits ────────────────────────────────────────────────────────────
@@ -1145,26 +1150,37 @@ public class StrandWorkbenchService
         log.LogInformation("Joined beat {Beat} into {Prev} in strand {Strand}", beatId, prevId, strandId);
     }
 
-    /// <summary>Remove a beat from a strand. If the beat is not in any other
-    /// strand, delete it entirely (and its audio file). Otherwise leave the
-    /// Beat row alone — other strands still reference it.</summary>
+    /// <summary>Soft-delete a beat from a strand: sets <c>StrandBeat.IsEnabled = false</c>
+    /// on the junction row. The Beat row and all its temporal history are preserved;
+    /// <see cref="RestoreBeatAsync"/> can un-hide it. Audio is invalidated so a restore
+    /// triggers re-narration rather than playing stale audio.</summary>
     public async Task DeleteBeatAsync(Guid strandId, Guid beatId, CancellationToken ct = default)
     {
         await using var db = await dbFactory.CreateDbContextAsync(ct);
         var junction = await db.StrandBeats
             .FirstOrDefaultAsync(sb => sb.StrandId == strandId && sb.BeatId == beatId, ct);
         if (junction == null) return;
-        db.StrandBeats.Remove(junction);
+        if (!junction.IsEnabled) return; // already disabled — no-op
 
-        var otherMemberships = await db.StrandBeats
-            .Where(sb => sb.BeatId == beatId && sb.StrandId != strandId)
-            .AnyAsync(ct);
-        if (!otherMemberships)
-        {
-            var beat = await db.Beats.FirstAsync(b => b.Id == beatId, ct);
-            InvalidateAudioOnBeat(beat);
-            db.Beats.Remove(beat);
-        }
+        junction.IsEnabled = false;
+
+        // Invalidate audio so a future restore triggers fresh narration.
+        var beat = await db.Beats.FirstOrDefaultAsync(b => b.Id == beatId, ct);
+        if (beat != null) InvalidateAudioOnBeat(beat);
+
+        await db.SaveChangesAsync(ct);
+    }
+
+    /// <summary>Restore a previously soft-deleted beat: sets <c>StrandBeat.IsEnabled = true</c>.
+    /// The beat re-appears in the normal (non-disabled) view. Audio remains stale until
+    /// re-narrated.</summary>
+    public async Task RestoreBeatAsync(Guid strandId, Guid beatId, CancellationToken ct = default)
+    {
+        await using var db = await dbFactory.CreateDbContextAsync(ct);
+        var junction = await db.StrandBeats
+            .FirstOrDefaultAsync(sb => sb.StrandId == strandId && sb.BeatId == beatId, ct);
+        if (junction == null || junction.IsEnabled) return;
+        junction.IsEnabled = true;
         await db.SaveChangesAsync(ct);
     }
 
@@ -1204,19 +1220,32 @@ public class StrandWorkbenchService
     /// by the writer's ◀ ▶ cycler to preview a past version in the editor.</summary>
     public async Task<string?> GetBeatVersionTextAsync(Guid beatId, int index, CancellationToken ct = default)
     {
+        var v = await GetBeatVersionAsync(beatId, index, ct);
+        return v?.Text;
+    }
+
+    /// <summary>The beat's prose AND its <c>SysStart</c> timestamp at a newest-first
+    /// version index. Null when the index is past the end or on a non-temporal provider.
+    /// Used by the version cycler to show "last edited at …" alongside the preview.</summary>
+    public async Task<BeatVersion?> GetBeatVersionAsync(Guid beatId, int index, CancellationToken ct = default)
+    {
         if (index < 0) return null;
         await using var db = await dbFactory.CreateDbContextAsync(ct);
         if (!db.Database.IsSqlServer()) return null;
-        var rows = await db.Database.SqlQueryRaw<string>(
+        var rows = await db.Database.SqlQueryRaw<BeatVersionRow>(
             """
-            SELECT b.[Text] AS [Value]
+            SELECT b.[Text] AS [Text], b.[SysStart] AS [ValidFrom]
             FROM [Beats] FOR SYSTEM_TIME ALL AS b
             WHERE b.Id = {0}
             ORDER BY b.SysStart DESC
             OFFSET {1} ROWS FETCH NEXT 1 ROWS ONLY
             """, beatId, index).ToListAsync(ct);
-        return rows.FirstOrDefault();
+        var r = rows.FirstOrDefault();
+        return r == null ? null : new BeatVersion(r.Text ?? "", r.ValidFrom);
     }
+
+    public sealed record BeatVersion(string Text, DateTime ValidFrom);
+    private sealed class BeatVersionRow { public string? Text { get; set; } public DateTime ValidFrom { get; set; } }
 
     // ── Audio ────────────────────────────────────────────────────────────
 
@@ -2777,7 +2806,7 @@ public class StrandWorkbenchService
 
     /// <summary>A beat in reading-order context. Carries the parent strand id
     /// so multi-level UIs can group beats by source.</summary>
-    public record OrderedBeat(Beat Beat, Guid StrandId, double SortKey);
+    public record OrderedBeat(Beat Beat, Guid StrandId, double SortKey, bool IsEnabled = true);
 
     /// <summary>The fields the UI's per-beat "details" panel can edit. None
     /// of these touch prose or audio — they just steer the narration's
