@@ -35,7 +35,7 @@ public class ManuscriptExportService
 
     /// <summary>
     /// Export the strand as Markdown to Downloads; returns the path.
-    /// Each beat is prefixed with a <c>&lt;!-- beat:N:id7 --&gt;</c> marker
+    /// Each beat is prefixed with a <c>&lt;!-- beat:N:id32 --&gt;</c> marker
     /// (invisible in rendered MD, unambiguous for <c>ss --import-md</c> reimport).
     /// </summary>
     public async Task<string> ExportMarkdownAsync(Guid strandId, string? author = null, CancellationToken ct = default)
@@ -74,7 +74,9 @@ public class ManuscriptExportService
             var text = (beat.Text ?? "").Trim();
             if (text.Length == 0) continue;
             beatNo++;
-            md.AppendLine($"<!-- beat:{beatNo}:{beat.Id.ToString("N")[..7]} -->");
+            // Full 32-char id: batch-created GUIDv7 beats share long time-ordered
+            // prefixes, so a 7-char prefix is ambiguous for --import-md.
+            md.AppendLine($"<!-- beat:{beatNo}:{beat.Id:N} -->");
             foreach (var para in SplitParagraphs(text))
             {
                 md.AppendLine(para);

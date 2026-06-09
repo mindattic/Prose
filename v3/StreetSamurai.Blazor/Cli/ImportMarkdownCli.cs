@@ -25,9 +25,11 @@ namespace StreetSamurai.Blazor.Cli;
 /// </summary>
 public static class ImportMarkdownCli
 {
-    // Matches <!-- beat:1:019ea02 --> (case-insensitive on hex)
+    // Matches <!-- beat:1:019ea02 --> (legacy 7-char prefix) or a full 32-char
+    // N-format guid (case-insensitive on hex). Batch-created GUIDv7 beats share
+    // long time-ordered prefixes, so new exports write the full id.
     private static readonly Regex BeatMarker =
-        new(@"^<!--\s*beat:(\d+):([0-9a-f]{7})\s*-->$", RegexOptions.IgnoreCase | RegexOptions.Compiled);
+        new(@"^<!--\s*beat:(\d+):([0-9a-f]{7}|[0-9a-f]{32})\s*-->$", RegexOptions.IgnoreCase | RegexOptions.Compiled);
 
     // Matches markdown heading lines: ## Title, # Title, etc.
     private static readonly Regex HeadingLine =
@@ -82,12 +84,18 @@ public static class ImportMarkdownCli
             Guid? beatId = null;
             await using (var db = await dbFactory.CreateDbContextAsync())
             {
-                // Prefix match: first 7 hex chars are identical in dashed and N GUID formats.
-                var candidates = await db.Beats
-                    .Where(b => b.Id.ToString().StartsWith(id7))
-                    .Take(2)
-                    .Select(b => new { b.Id, b.Text })
-                    .ToListAsync();
+                // Full 32-char N-format id → exact lookup; legacy 7-char marker →
+                // prefix match (first 7 hex chars are identical in dashed and N formats).
+                var candidates = Guid.TryParseExact(id7, "N", out var exactId)
+                    ? await db.Beats
+                        .Where(b => b.Id == exactId)
+                        .Select(b => new { b.Id, b.Text })
+                        .ToListAsync()
+                    : await db.Beats
+                        .Where(b => b.Id.ToString().StartsWith(id7))
+                        .Take(2)
+                        .Select(b => new { b.Id, b.Text })
+                        .ToListAsync();
 
                 if (candidates.Count == 0)
                 {

@@ -78,6 +78,12 @@ var migrations = new[]
     "create_focus_groups_20260531.sql",
     "create_strand_beat_scores_20260531.sql",
     "add_strand_beat_score_columns_20260604.sql",
+    // 2026-06-06 batch
+    "add_strand_canon_20260606.sql",
+    "create_character_readmodel_20260606.sql",
+    "create_species_20260606.sql",
+    "create_voice_change_log_20260606.sql",
+    "drop_facet_system_20260606.sql",
 };
 
 await using var db = await dbFactory.CreateDbContextAsync();
