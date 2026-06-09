@@ -499,6 +499,18 @@ if (args.Contains("--publish-docx"))
     return;
 }
 
+// CLI mode: set the ParentStrandId on an existing strand (move it into a collection).
+//   ss --reparent-strand (--slug <slug> | --id <id>) (--parent-slug <slug> | --parent-id <id>)
+//   ss --reparent-strand --slug <slug> --clear   — detach from parent
+if (args.Contains("--reparent-strand"))
+{
+    var cliBuilder = WebApplication.CreateBuilder(args);
+    cliBuilder.Services.AddStreetSamuraiServices();
+    var cliApp = cliBuilder.Build();
+    Environment.ExitCode = await ReparentStrandCli.RunAsync(args, cliApp.Services);
+    return;
+}
+
 // CLI mode: render the WHOLE strand as one continuous audiobook (one TTS pass,
 // tiered to ElevenLabs limits — one request, else per-chapter, else split) and
 // drop the MP3 in Downloads. The headless twin of the "Publish Audiobook" button.
@@ -915,9 +927,9 @@ var forwardedHeaders = new ForwardedHeadersOptions
 forwardedHeaders.KnownIPNetworks.Clear();
 forwardedHeaders.KnownProxies.Clear();
 // Trust RFC-1918 private address space so App Service's X-Forwarded-Proto is honored.
-forwardedHeaders.KnownIPNetworks.Add(new IPNetwork(IPAddress.Parse("10.0.0.0"), 8));
-forwardedHeaders.KnownIPNetworks.Add(new IPNetwork(IPAddress.Parse("172.16.0.0"), 12));
-forwardedHeaders.KnownIPNetworks.Add(new IPNetwork(IPAddress.Parse("192.168.0.0"), 16));
+forwardedHeaders.KnownIPNetworks.Add(new System.Net.IPNetwork(IPAddress.Parse("10.0.0.0"), 8));
+forwardedHeaders.KnownIPNetworks.Add(new System.Net.IPNetwork(IPAddress.Parse("172.16.0.0"), 12));
+forwardedHeaders.KnownIPNetworks.Add(new System.Net.IPNetwork(IPAddress.Parse("192.168.0.0"), 16));
 app.UseForwardedHeaders(forwardedHeaders);
 
 app.UseRateLimiter();

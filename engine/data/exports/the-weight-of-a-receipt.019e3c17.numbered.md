@@ -3,10 +3,10 @@
 _A handwritten note on courier-receipt paper pulls a burned-out freelancer to a welded-container community on a deteriorating tier, where a corporation offers to "preserve" their home in exchange for owning their stories and the right to evict them. He has until Friday to read the fine print no one else can._
 
 [Beat 1]
-Mrs. Chen Wei-Lin's stall smelled like star anise and honest work.
+Mrs. Chen Wei-Lin's stall smelled like star anise and long-cooked pork.
 
 [Beat 2]
-Kyle sat on the third stool from the left, the one with the wobble. He ate slow. The array behind his sternum was quiet.
+Kyle sat on the third stool from the left, the one with the wobble. He ate slow. The implanted array behind his sternum was quiet.
 
 [Beat 3]
 The street outside Tier 7's public promenade moved the way it always moved after shift-change: shoulders down, eyes on the grating, everyone calculating what the next twelve hours would cost.
@@ -39,7 +39,7 @@ He took the paper. The handwriting was careful. Someone had taken time with it.
 *To whoever Mr. Corbin-Vister is — my name is Miriam. I was told you are fair. We have a problem with a company called Tessera and I do not know if I am being helped or eaten. The congregation at the container complex on Tier 4 North, berth 9-through-14. Tonight if you can. — Ayushmaan Horváth sends his regards and says you will understand.*
 
 [Beat 13]
-Kyle read it twice. The array warmed a degree. Not threat-heat. Something else.
+Kyle read it twice. The array warmed a degree. Not threat-heat. Something else. Horváth had once given Kyle a way out of a Pinnacle Civil inquiry and never mentioned it afterward. When Horváth sent regards, it wasn't social.
 
 [Beat 14]
 He looked at the kid.
@@ -189,179 +189,170 @@ Miriam was quiet for a long moment.
 Kyle looked at the brochure again. Then at the room. A woman near the wall was holding a sleeping infant. The man with the torn-off NeoCortex badge had his jaw tight. An older man in the back had his eyes closed, either praying or calculating.
 
 [Beat 63]
-Kyle thought about the marigold in the window box.
-
-[Beat 64]
 "Who's the rep," he said. "Name."
 
-[Beat 65]
+[Beat 64]
 "She said her name was Cass Inoue. She works out of Tessera's Tier 9 office."
 
-[Beat 66]
+[Beat 65]
 "You have her contact?" he asked.
 
-[Beat 67]
+[Beat 66]
 Miriam nodded.
 
-[Beat 68]
+[Beat 67]
 "Don't sign anything," Kyle said. "And don't tell her you've talked to me."
 
-[Beat 69]
+[Beat 68]
 Tier 9 was the kind of tier where the ambient light was better because the corporations that owned it had decided good light reflected well on them. Tessera's office was in a Hyacinth-managed mixed-use building, which meant Hyacinth collected the rent and Tessera paid it and both of them wrote the transaction off as a *community investment*.
 
-[Beat 70]
+[Beat 69]
 The building's lobby had a mural of a GLMZ sunrise. The mural had been painted by an artist Hyacinth had contracted for a flat fee and then retained the copyright of. The artist's name was not on the mural.
 
-[Beat 71]
+[Beat 70]
 Kyle arrived at 2200 and found Cass Inoue still at her desk. She was in her thirties, polished, the kind of tired that got concealed by good skincare. Her jacket was Arcturus executive-line. Not Tessera.
 
-[Beat 72]
+[Beat 71]
 He noted that.
 
-[Beat 73]
+[Beat 72]
 The array warmed. She had augmentation — low-grade Helix social-calibration implant, the kind that read microexpressions and fed you prompts. Sales tool. Negotiation tool. She would know he was reading her and she wouldn't know what he was reading with.
 
-[Beat 74]
+[Beat 73]
 "Mr. Corbin-Vister," she said, without looking surprised.
 
-[Beat 75]
+[Beat 74]
 Someone had told her to expect him or she was good at not being surprised. He filed both.
 
-[Beat 76]
+[Beat 75]
 "Inoue."
 
-[Beat 77]
+[Beat 76]
 "Sit down."
 
-[Beat 78]
+[Beat 77]
 He sat.
 
-[Beat 79]
+[Beat 78]
 "The congregation sent you," she said.
 
-[Beat 80]
+[Beat 79]
 "I came to ask a question."
 
-[Beat 81]
+[Beat 80]
 "Ask."
 
-[Beat 82]
+[Beat 81]
 "Arcturus filed the demolition order," Kyle said. "Tessera is Arcturus's heritage division."
 
-[Beat 83]
+[Beat 82]
 He watched her face. The Helix implant would be telling her: *maintain neutral expression, rephrase toward benefit framing.* He watched her decide whether to follow it. She followed it.
 
-[Beat 84]
+[Beat 83]
 "Tessera operates independently from—"
 
-[Beat 85]
+[Beat 84]
 "They're the same corp," Kyle said.
 
-[Beat 86]
+[Beat 85]
 She stopped. The array gave him her tells: a 0.4-second lag before the next breath, a micro-contraction around the left eye. Not anger. Calculation. She was deciding how much he knew and whether it mattered.
 
-[Beat 87]
+[Beat 86]
 "The designation is real," she said. "The protection is real."
 
-[Beat 88]
+[Beat 87]
 "For the containers," Kyle said. "Not the people."
 
-[Beat 89]
+[Beat 88]
 "Residency rights are a separate—"
 
-[Beat 90]
+[Beat 89]
 "Separate department," Kyle said.
 
-[Beat 91]
+[Beat 90]
 "Same corp," Kyle said. She was quiet.
 
-[Beat 92]
+[Beat 91]
 "What do you want?" she asked.
 
-[Beat 93]
+[Beat 92]
 "Amended contract," Kyle said. "Three changes. One: narrative rights stay with the congregation."
 
-[Beat 94]
+[Beat 93]
 "Tessera gets filming rights, non-exclusive, for seven years. Two: Heritage designation protects residency, not just structure. You add a clause, you get it co-signed by a GLMZ civil registrar, not just your own committee. Three: revocation requires independent review, not Tessera's panel."
 
+[Beat 94]
+"The first two I can get approved," she said. "Narrative rights, non-exclusive. Independent review on revocation. I have the authority." She set the tablet down. "The third — residency protection against Arcturus's order — that's outside Tessera's scope. That's a different legal entity."
+
 [Beat 95]
-"Those terms would require—"
+"Then get the first two done by 0600," Kyle said. "In writing."
 
 [Beat 96]
-"I know what they'd require."
+She was quiet. Then she turned her own copy of the contract to the last page. "Clause 23," she said. "Twelve-month renegotiation window. The two amendments hold until they don't." She closed the contract. "Mr. Corbin-Vister. The Pivot. Tier 8 South." She said it the way you confirm an address — not to inform, but to establish. His array ran a read: the Helix implant was prompting her to hold eye contact. She was following the prompt. "You know this won't hold," she said. "They find another mechanism inside a year." Kyle had nothing to dispute in that. "Probably," he said. "But not before Friday."
 
 [Beat 97]
-She looked at him for a long moment.
+"And the residency order?" she asked.
 
 [Beat 98]
-"And if we don't amend?" she asked.
-
-[Beat 99]
 Kyle stood.
 
-[Beat 100]
-"Then the congregation doesn't sign," he said. "And I spend the next week making sure every community org on Tiers 3 through 6 knows what the contract actually says."
+[Beat 99]
+"That fight is separate," Kyle said. "But if I don't see the two amendments by 0600, I spend the rest of the week making sure every community org on Tiers 3 through 6 knows exactly what the demolition order says and which corporate entity filed it."
 
-[Beat 101]
+[Beat 100]
 He put the original brochure on her desk.
 
-[Beat 102]
+[Beat 101]
 "You have until Friday," he said. "Same deadline you gave them."
 
-[Beat 103]
+[Beat 102]
 He left.
 
-[Beat 104]
+[Beat 103]
 He was back at the container complex by 2300. Miriam met him at the painted door.
 
-[Beat 105]
+[Beat 104]
 He told her what he'd said and what he'd asked for. She listened without interrupting.
 
-[Beat 106]
-When he finished she was quiet for a moment, her hands folded in front of her. Behind her, through the open door, he could hear voices, the kettle, the sound of the Hyacinth filter doing its small work.
+[Beat 105]
+When he finished she was quiet for a moment. Her thumb moved slowly across the back of her other hand — the patient motion of someone who had practiced waiting for a long time. Behind her, through the open door, he could hear voices, the kettle, the sound of the Hyacinth filter doing its small work.
 
-[Beat 107]
+[Beat 106]
 "Will she do it?" Miriam asked.
 
+[Beat 107]
+"She'll amend two of the three," Kyle said. "Narrative rights are yours. Independent review on revocation. You'll have the language by 0600." He looked at her. "Have a civil attorney check the wording before you sign. Legal aid on Tier 5."
+
 [Beat 108]
-"Don't know," Kyle said. "If she does, have a civil attorney look at the language before you sign. Doesn't have to be expensive. There are legal aid orgs on Tier 5."
+"And the residency?" Miriam asked.
 
 [Beat 109]
-"And if she doesn't?" Miriam asked.
+"That fight is with Arcturus directly," Kyle said. "The demolition order. If Tessera sends the amendments, you'll have the stories and the review protection. The residency — that's different. I'll help you find the right people if you want to go that route."
 
 [Beat 110]
-"Then you've got two days to decide if you're going to fight the demolition order directly," Kyle said. "That's a different conversation."
-
-[Beat 111]
 Miriam nodded slowly.
 
-[Beat 112]
+[Beat 111]
 "What do I owe you?" she asked.
 
-[Beat 113]
+[Beat 112]
 Kyle looked at the mural on the door. The upside-down skyline. The handprint border.
 
-[Beat 114]
+[Beat 113]
 "Nothing," he said.
 
-[Beat 115]
+[Beat 114]
 She started to speak.
 
-[Beat 116]
+[Beat 115]
 "Ayushmaan sent his regards," Kyle said. "That's enough."
 
-[Beat 117]
+[Beat 116]
 He turned and walked back toward the tier ramp.
 
-[Beat 118]
+[Beat 117]
 Behind him the container complex stood the way it had stood for thirty years: unlevel, repaired, lit from inside, leaning south the way everything here leaned south.
 
-[Beat 119]
+[Beat 118]
 The marigold in the fourth-level window box was still there.
-
-[Beat 120]
-It was the only thing on Tier 4 North that didn't belong to anyone.
-
-[Beat 121]
-He took the ramp up. The receipt was still in his pocket. The broth had been correct.
 

@@ -421,7 +421,9 @@ Kyle eats. Pixel eats. Outside, the rain does not come back. The hardware is qui
 ## Bucktown Pickup
 
 [Beat 139]
-The warehouse was on a side street off Milwaukee, between a water reclamation substation and a building that had stopped being anything in particular sometime in the previous decade. Flat-roof composite, the municipal seals on the doors showing the pale blue of the GLMZ bonded logistics registry, the kind of seals that meant the contents had been certified and the certification had been paid for and no one was going to ask what was inside because asking was not the service that had been purchased. Kyle arrived seven minutes before the contracted hour. He stood across the street and watched the entrance for four of those minutes — not because he expected anything, but because the NeoCortex had clocked the route from the parts shop and the route had three Lotus-adjacent transit nodes and his body had decided to spend four minutes being certain before it decided to be relaxed.
+The warehouse was on a side street off Milwaukee, between a water reclamation substation and a building that had stopped being anything in particular sometime in the previous decade. Flat-roof composite, the municipal seals on the doors showing the pale blue of the GLMZ bonded logistics registry — the kind of seals that meant the contents had been certified and the certification had been paid for and no one was going to ask what was inside because asking was not the service that had been purchased.
+
+Kyle arrived seven minutes before the contracted hour. He stood across the street and watched the entrance for four of those minutes. The NeoCortex had clocked three Lotus-adjacent transit nodes on the route from the parts shop, and his body had done its math without being asked. His hands stayed loose. His weight stayed back. Four minutes of doing nothing, which was the same as paying for the right to do nothing after.
 
 [Beat 140]
 The terminal confirmed. Thirty-one thousand, minus Sable's margin, which she had never told him and which he had never asked because asking would have required him to care about the number more than the work, and caring about the number was how you started making different decisions. He reached for his jacket from the hook beside the counter. The katana's weight settled against his hip as he shrugged into the sleeves — familiar, specific, the weight of something Seo had handed him in a room that smelled like machine oil and consequence.
@@ -436,7 +438,13 @@ Sable's voice, before the terminal closed the channel: "Kyle."
 The breach was louder than they wanted. The shock-baton strike against the door frame left a burn in the composite that Kyle would smell for three days, the specific sweetness of scorched structural material, and the electromag pulse took the corridor lighting at the same moment the door opened, and for eleven seconds the room existed only in the frequencies the NeoCortex could still parse without optical input: the four pressure signatures resolving into positions, the nearest one already inside the threshold, the shock-baton's charge cycling in the dark with a sound like a single held breath. Kyle was upright by the time the first strike landed. Not defensive. Upright — the hardware had gotten him that far and no further, and the baton caught him at the chrome bracket in his jaw, the subdermal augment that ran along the left mandible, and the pain was a specific frequency, sharp and then radiating, the kind of pain that the NeoCortex logged with the same clinical notation it used for everything: *IMPACT — LEFT MANDIBLE — CHROME BRACKET CONTACT — SEVERITY: MODERATE.* The second strike put him on the floor. He noted, from the floor, that the corridor lighting had come back on. Eleven seconds. The hood was already going over his head.
 
 [Beat 144]
-The Pulse station entrance was a hundred meters from the warehouse bay door. Kyle walked the freelancer cart at the pace of someone who had somewhere to be and was not late, which was the only pace that moved through transit infrastructure without generating the specific quality of attention that security systems were calibrated to notice. The cart's wheels were rubberized, designed for warehouse floors, and they tracked slightly left on the station's composite decking. He loaded the crate into the freight compartment of car seven. The compartment's temperature monitor read the cold-chain unit's output and displayed minus four point two, one tenth colder than the warehouse gauge, which was within the sensor variance for this model of compartment monitor and not a flag. He noted it and moved forward to car five and sat down.
+The Pulse station entrance was a hundred meters from the warehouse bay door.
+
+Kyle walked the freelancer cart at the pace of someone who had somewhere to be and was not late — the only pace that moved through transit infrastructure without generating the specific quality of attention that security systems were calibrated to notice. The cart's wheels were rubberized, built for warehouse floors, and they tracked slightly left on the station's composite decking, a small drag he corrected without thinking, the way you correct for a crosswind.
+
+He loaded the crate into the freight compartment of car seven. The temperature monitor read minus four point two — one tenth colder than the warehouse gauge, within sensor variance for this model, not a flag. He noted it. He moved forward to car five and sat down.
+
+The Pulse left the station on schedule. He watched the city drop away through the scratched transit window and thought about nothing in particular, which was a skill he had gotten good at the hard way.
 
 [Beat 145]
 Kyle watched the water recycler sweat against the back wall. A drop formed at the lower seam, grew fat, fell. He counted two more before he spoke.
@@ -450,13 +458,13 @@ The receiving dock was on the building's east face, a recessed bay with a rollin
 [Beat 148]
 The accounting window closed at twenty-two hundred, which was when it always closed, which was why the ledger ran at twenty-two hundred and not before.
 
-The accountant on duty was not named in the protocol. The protocol did not require a name — it required a certification number, and the certification number was current, and the terminal accepted it, and the reconciliation began.
+Forty-one contracted routes for the cycle. Forty collected fees.
 
-Contracted routes for the cycle: forty-one entries. Collected fees: forty entries.
+The delta was not a mystery. It was a line item: ROUTE FEE UNRECOVERED — VÁSQUEZ HOLDINGS CONSIGNMENT 0431-A — Φ31,000 — FREELANCER AUTH TAG [CORBIN-VASIK/NEO-A7].
 
-The delta was not a mystery. The delta was a line item: ROUTE FEE UNRECOVERED — VÁSQUEZ HOLDINGS CONSIGNMENT 0431-A — Φ31,000 — FREELANCER AUTH TAG [CORBIN-VASIK/NEO-A7].
+Kyle had handed that tag to every system that asked for it, the way you hand a name to a border crossing — because the bond required a real signature and a real signature required a name that couldn't disappear. The NeoCortex generated it. He used it. He had not thought about where it ended up, because the facility had taught him early that systems required authentication and he had learned that lesson completely and never learned the next one.
 
-The accountant appended the authentication tag — the same tag the warehouse terminal had written into the chain-of-custody record nine hours earlier, the same tag the NeoCortex had handed to every system that asked for it, the same tag that had been identifying Kyle in ledgers he had never been shown, since the facility taught him that systems required authentication and authentication required disclosure — and routed the flag up the chain.
+The flag routed up the chain at twenty-two hundred and four minutes. Somewhere in Pilsen, a collection window that had been a courtesy became a debt.
 
 [Beat 149]
 *Worse odds on shorter windows. The work is the work.*
@@ -533,11 +541,9 @@ The nine hours began.
 She did not ask for authentication. She said: "Consignment 0431-A," and it was not a question. She pressed her thumb to the chain-of-custody terminal and countersigned without reading the form, because she had read the form already, in the sense that her augmentations had read it when the cart crossed the dock threshold. The crate went through the interior doors on a warehouse system's automated track, and the doors closed behind it with the soft pressure-seal sound of a cold room accepting cargo, and then the crate was gone and Kyle was standing at an empty counter. The clerk tore the receipt strip from the terminal and held it out. He took it and pressed his temple to the reader at the strip's confirmation point, and the NeoCortex took the data and the data populated across his feed: *DELIVERY CONFIRMED — VÁSQUEZ HOLDINGS RECEIVING DOCK 4-EAST — CONSIGNMENT 0431-A — COLD CHAIN HELD — RELEASE PAYMENT PENDING REGULATORY CLEAR.*
 
 [Beat 169]
-The terminal at customs processing station eleven ran a queue of forty-three cases, and consignment 0431-A was thirty-ninth. The reviewer had been on shift since nineteen hundred. She was not named in the protocol, which was standard — the protocol required a certification number, not a name, because the protocol was designed to process cases and not people. She opened the case at 04:38. Shen Pharmaceuticals, Class A pharmaceutical transit, Vásquez Holdings consignment, chain-of-custody timestamped and signed at both ends. Temperature log attached: minus four point one at origin, minus four point one at receipt, the transit variance within acceptable parameters. She read the second line of the chain-of-custody record — the authentication tag, the NeoCortex signature in the specific format that bonded pharmaceutical transit required, the string that read CORBIN-VASIK/NEO-A7 — and she stopped. A half-second. The kind of stop that has no legal weight. Then she continued, because the paperwork was in order.
+At 05:12, at the base of the Pilsen transfer stairwell, the Lotus network filed its own kind of paperwork — a blade that understood the difference between an account that could be kept open and one that couldn't.
 
-Kyle's paperwork was also in order. That was the part nobody filed. The Lotus network filed its own kind: at 05:12, at the base of the Pilsen transfer stairwell, with a blade that understood the difference between an account that could be kept open and one that couldn't.
-
-By the time the morning had gone the flat gray of a city that never quite got dark, he was in Hua's chair, which was a dentist's chair she'd bought at a liquidation and reupholstered badly. She had two fingers spread inside the seam below his ribs, a clean six-inch draw the collector's blade had opened just under the floating rib, deep enough that she had to lift the lip of it to get the suture started. The Lotus collector had marked him the way you mark a delivery. The cold chain held all the way to receipt, he thought. It was his own that broke.
+By the time the morning had gone the flat gray of a city that never quite got dark, Kyle was in Hua's chair. It was a dentist's chair she'd bought at a liquidation and reupholstered badly, and he was in it in the specific way that meant horizontal and staying there. She had two fingers spread inside the seam below his ribs — a clean six-inch draw the collector's blade had opened just under the floating rib, deep enough that she had to lift the lip of it to get the suture started.
 
 "You used the tag," Hua said. Not a question. She didn't ask questions when the answer was already weeping into the gauze.
 
@@ -545,9 +551,11 @@ By the time the morning had gone the flat gray of a city that never quite got da
 
 "And now they know which Atlas-grade ghost ran their route." She pulled the suture tight, matter-of-fact, the way she closed everything. "Hold still. You bleed when you talk."
 
-He watched the ceiling. There was a water stain up there shaped a little like the dog his neighbor used to have, two doors down, when he was small enough to be told the dog's name and to forget it. He kept looking at it. The job had run clean. The system had worked exactly as designed.
+He watched the ceiling. There was a water stain up there shaped a little like the dog his neighbor used to have, two doors down, when he was small enough to be told the dog's name and to forget it. He kept looking at it.
 
-That was the tax. Nobody filed that either.
+The job had run clean. The system had worked exactly as designed. That was the tax.
+
+Nobody filed that either.
 
 [Beat 170]
 He paid. He did not say goodbye because he never said goodbye here — goodbye implied a departure that required acknowledgment, and what this stall offered was the specific mercy of continuity, the understanding that he would leave and return and neither event would be marked. He walked the four blocks to The Pivot, the freelancer cart folded and collapsed under his arm, the receipt strip in his jacket pocket with the flag still on it. The hardware metabolism flag cleared when he turned onto Chicago Ave, because he had eaten, and the hardware did not care why. The stairs to 2F had twenty-two steps. He climbed them and did not count them, which was not the same as not knowing.
@@ -600,10 +608,18 @@ The crate was on a pallet in bay three. Forty-three units, cold-chain sealed, th
 ## Bucktown Pickup
 
 [Beat 186]
-The warehouse was on a side street off Milwaukee, between a water reclamation substation and a building that had stopped being anything in particular sometime in the previous decade. Flat-roof composite, the municipal seals on the doors showing the pale blue of the GLMZ bonded logistics registry, the kind of seals that meant the contents had been certified and the certification had been paid for and no one was going to ask what was inside because asking was not the service that had been purchased. Kyle arrived seven minutes before the contracted hour. He stood across the street and watched the entrance for four of those minutes — not because he expected anything, but because the NeoCortex had clocked the route from the parts shop and the route had three Lotus-adjacent transit nodes and his body had decided to spend four minutes being certain before it decided to be relaxed.
+The warehouse was on a side street off Milwaukee, between a water reclamation substation and a building that had stopped being anything in particular sometime in the previous decade. Flat-roof composite, the municipal seals on the doors showing the pale blue of the GLMZ bonded logistics registry — the kind of seals that meant the contents had been certified and the certification had been paid for and no one was going to ask what was inside because asking was not the service that had been purchased.
+
+Kyle arrived seven minutes before the contracted hour. He stood across the street and watched the entrance for four of those minutes. The NeoCortex had clocked three Lotus-adjacent transit nodes on the route from the parts shop, and his body had done its math without being asked. His hands stayed loose. His weight stayed back. Four minutes of doing nothing, which was the same as paying for the right to do nothing after.
 
 [Beat 187]
-The Pulse station entrance was a hundred meters from the warehouse bay door. Kyle walked the freelancer cart at the pace of someone who had somewhere to be and was not late, which was the only pace that moved through transit infrastructure without generating the specific quality of attention that security systems were calibrated to notice. The cart's wheels were rubberized, designed for warehouse floors, and they tracked slightly left on the station's composite decking. He loaded the crate into the freight compartment of car seven. The compartment's temperature monitor read the cold-chain unit's output and displayed minus four point two, one tenth colder than the warehouse gauge, which was within the sensor variance for this model of compartment monitor and not a flag. He noted it and moved forward to car five and sat down.
+The Pulse station entrance was a hundred meters from the warehouse bay door.
+
+Kyle walked the freelancer cart at the pace of someone who had somewhere to be and was not late — the only pace that moved through transit infrastructure without generating the specific quality of attention that security systems were calibrated to notice. The cart's wheels were rubberized, built for warehouse floors, and they tracked slightly left on the station's composite decking, a small drag he corrected without thinking, the way you correct for a crosswind.
+
+He loaded the crate into the freight compartment of car seven. The temperature monitor read minus four point two — one tenth colder than the warehouse gauge, within sensor variance for this model, not a flag. He noted it. He moved forward to car five and sat down.
+
+The Pulse left the station on schedule. He watched the city drop away through the scratched transit window and thought about nothing in particular, which was a skill he had gotten good at the hard way.
 
 [Beat 188]
 The receiving dock was on the building's east face, a recessed bay with a rolling door that was open two-thirds of the way and had been open two-thirds of the way long enough that the composite floor had a pale line where the light hit and stopped. Kyle rolled the cart in at nine hours and forty-one minutes, eight minutes ahead of the window, and the clerk was already at the inspection counter. Mid-thirties, Vásquez-gray vest over a thermal underlayer, the eye augmentations running warm the way the cheap models always did, a colder blue than the warehouse clerk's amber. Her eyes tracked the cart before the rest of her did. He watched them move across the crate in a sequence that was not random: seals, diagnostic strip, lid label, consignment numbers. The sequence lasted four seconds. It was faster than intuition and slower than nothing, and it had the specific quality of a motion that had been optimized until it no longer felt like looking.
@@ -611,13 +627,13 @@ The receiving dock was on the building's east face, a recessed bay with a rollin
 [Beat 189]
 The accounting window closed at twenty-two hundred, which was when it always closed, which was why the ledger ran at twenty-two hundred and not before.
 
-The accountant on duty was not named in the protocol. The protocol did not require a name — it required a certification number, and the certification number was current, and the terminal accepted it, and the reconciliation began.
+Forty-one contracted routes for the cycle. Forty collected fees.
 
-Contracted routes for the cycle: forty-one entries. Collected fees: forty entries.
+The delta was not a mystery. It was a line item: ROUTE FEE UNRECOVERED — VÁSQUEZ HOLDINGS CONSIGNMENT 0431-A — Φ31,000 — FREELANCER AUTH TAG [CORBIN-VASIK/NEO-A7].
 
-The delta was not a mystery. The delta was a line item: ROUTE FEE UNRECOVERED — VÁSQUEZ HOLDINGS CONSIGNMENT 0431-A — Φ31,000 — FREELANCER AUTH TAG [CORBIN-VASIK/NEO-A7].
+Kyle had handed that tag to every system that asked for it, the way you hand a name to a border crossing — because the bond required a real signature and a real signature required a name that couldn't disappear. The NeoCortex generated it. He used it. He had not thought about where it ended up, because the facility had taught him early that systems required authentication and he had learned that lesson completely and never learned the next one.
 
-The accountant appended the authentication tag — the same tag the warehouse terminal had written into the chain-of-custody record nine hours earlier, the same tag the NeoCortex had handed to every system that asked for it, the same tag that had been identifying Kyle in ledgers he had never been shown, since the facility taught him that systems required authentication and authentication required disclosure — and routed the flag up the chain.
+The flag routed up the chain at twenty-two hundred and four minutes. Somewhere in Pilsen, a collection window that had been a courtesy became a debt.
 
 [Beat 190]
 The parts shop smelled like burnt flux and the particular sweetness of coolant that had been leaking for so long it had become furniture. Kyle stood at the counter with his left hand flat on the scratched composite surface and his right thumb hooked in his belt, three centimeters from the katana's guard, which was not a threat so much as a habit his body had developed without consulting him. The terminal behind the counter had a crack running diagonal across the lower third of its screen, taped with yellowed film that made the bottom lines of text swim. Sable's voice came through the speaker at a volume calibrated for exactly this counter, exactly this ambient noise floor. He had never asked how she knew the acoustics. He had decided not to.
@@ -640,11 +656,9 @@ He pulled the coat back over his shoulders and opened a line to Hua.
 "You're going to want to be somewhere else," he said, when she picked up. "And I'm going to want you to leave the kit by the door."
 
 [Beat 192]
-The terminal at customs processing station eleven ran a queue of forty-three cases, and consignment 0431-A was thirty-ninth. The reviewer had been on shift since nineteen hundred. She was not named in the protocol, which was standard — the protocol required a certification number, not a name, because the protocol was designed to process cases and not people. She opened the case at 04:38. Shen Pharmaceuticals, Class A pharmaceutical transit, Vásquez Holdings consignment, chain-of-custody timestamped and signed at both ends. Temperature log attached: minus four point one at origin, minus four point one at receipt, the transit variance within acceptable parameters. She read the second line of the chain-of-custody record — the authentication tag, the NeoCortex signature in the specific format that bonded pharmaceutical transit required, the string that read CORBIN-VASIK/NEO-A7 — and she stopped. A half-second. The kind of stop that has no legal weight. Then she continued, because the paperwork was in order.
+At 05:12, at the base of the Pilsen transfer stairwell, the Lotus network filed its own kind of paperwork — a blade that understood the difference between an account that could be kept open and one that couldn't.
 
-Kyle's paperwork was also in order. That was the part nobody filed. The Lotus network filed its own kind: at 05:12, at the base of the Pilsen transfer stairwell, with a blade that understood the difference between an account that could be kept open and one that couldn't.
-
-By the time the morning had gone the flat gray of a city that never quite got dark, he was in Hua's chair, which was a dentist's chair she'd bought at a liquidation and reupholstered badly. She had two fingers spread inside the seam below his ribs, a clean six-inch draw the collector's blade had opened just under the floating rib, deep enough that she had to lift the lip of it to get the suture started. The Lotus collector had marked him the way you mark a delivery. The cold chain held all the way to receipt, he thought. It was his own that broke.
+By the time the morning had gone the flat gray of a city that never quite got dark, Kyle was in Hua's chair. It was a dentist's chair she'd bought at a liquidation and reupholstered badly, and he was in it in the specific way that meant horizontal and staying there. She had two fingers spread inside the seam below his ribs — a clean six-inch draw the collector's blade had opened just under the floating rib, deep enough that she had to lift the lip of it to get the suture started.
 
 "You used the tag," Hua said. Not a question. She didn't ask questions when the answer was already weeping into the gauze.
 
@@ -652,7 +666,9 @@ By the time the morning had gone the flat gray of a city that never quite got da
 
 "And now they know which Atlas-grade ghost ran their route." She pulled the suture tight, matter-of-fact, the way she closed everything. "Hold still. You bleed when you talk."
 
-He watched the ceiling. There was a water stain up there shaped a little like the dog his neighbor used to have, two doors down, when he was small enough to be told the dog's name and to forget it. He kept looking at it. The job had run clean. The system had worked exactly as designed.
+He watched the ceiling. There was a water stain up there shaped a little like the dog his neighbor used to have, two doors down, when he was small enough to be told the dog's name and to forget it. He kept looking at it.
 
-That was the tax. Nobody filed that either.
+The job had run clean. The system had worked exactly as designed. That was the tax.
+
+Nobody filed that either.
 

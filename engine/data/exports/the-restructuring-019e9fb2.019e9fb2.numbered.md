@@ -27,7 +27,7 @@ Beatrix offered Rhea coffee. Rhea declined. Beatrix asked her to sit. Rhea sat.
 "We have a discrepancy in our access logs."
 
 [Beat 9]
-Rhea did not move. She had counted her breaths in the elevator. The trust had not arrived in the elevator either, but the breath count had held.
+Rhea did not move. She had counted her breaths in the elevator. The count had held.
 
 [Beat 10]
 "I see."
@@ -78,11 +78,9 @@ She looked up.
 "Is it OPTIC-7?" she asked.
 
 [Beat 26]
-Beatrix did not flinch. The Security Division colleague did not flinch. Rhea had given them, in the question, the only piece of leverage they had not yet confirmed they had, and she had given it to them on purpose.
+Beatrix did not flinch. The Security Division colleague did not flinch. Rhea had given them the only piece of leverage they had not yet confirmed, and she had done it on purpose.
 
 [Beat 27]
-She had decided in the elevator that the elevator was not the place for a strategic question, and the seventh-floor break room was not the place for a strategic question, and the eighth-floor conference room — surveilled, recorded, witnessed by two — was the only place she could ask the question and have the answer be, by procedure, a recorded one.
-
 Beatrix said, "It's a derivative."
 
 "A derivative of OPTIC-7."
@@ -113,9 +111,7 @@ Beatrix raised a hand a half-inch off the table. The Security Division colleague
 
 "Rhea," Beatrix said. "Please understand. We do not want to do this any differently than this. You have been a valued contributor. We are offering the cleanest available exit. The package is generous. The continued benefits are real. The Axiom-approved implant provider is one of the best in the city — the Aurum line, paired ocular, Tier 3 spec. You will see again. You will see well. The provider is in the corporate residential block. The procedure with them is also fifteen minutes. The implants are state of the art."
 
-Rhea looked at the third page of the package. The bearer credit was specified: *AURUM OCULAR, paired ocular implant, Tier 3 spec, retail value Φ440,000, redeemable through provider network only.* The provider list contained six clinics, all in Axiom-zoned residential blocks. The Aurum implant was a closed-firmware product. The firmware was maintained by Axiom Health Sciences. The biometric handshake — Rhea would learn this from the black-market technician on Friday night, the technician who would, in fourteen years, train Pixel on the same intake protocols — was identical to the biometric handshake that had been stripped from her in the procedure.
-
-She would walk out with new eyes that talked to the same backend as the old ones.
+Rhea looked at the third page of the package. The bearer credit was specified: *AURUM OCULAR, paired ocular implant, Tier 3 spec, retail value Φ440,000, redeemable through provider network only.* The provider list contained six clinics, all in Axiom-zoned residential blocks. The Aurum implant was a closed-firmware product. The firmware was maintained by Axiom Health Sciences.
 
 "I'd like a day to read the package," she said.
 
@@ -123,9 +119,9 @@ She would walk out with new eyes that talked to the same backend as the old ones
 
 "Thank you."
 
-"Rhea." Beatrix folded her hands again. The folding was the same physiological gesture Marcus made on the talkback at the moment the segment was done. "We don't want to do this any other way."
+"Rhea." Beatrix folded her hands again. The folding was the same physiological gesture Marcus made on the talkback at the moment the segment was done.
 
-Rhea did not say *I know.* She stood up. She walked to the door. The Security Division colleague did not move.
+Rhea did not say I know. She stood up. She walked to the door. The Security Division colleague did not move.
 
 She did not return to the office.
 
@@ -145,10 +141,10 @@ She took the elevator to the lobby. She did not look back at the man with the wa
 She walked through the lobby and out onto State Street and turned south, away from the Spine, away from the Pulse station, away from the Glooms — the wrong direction on purpose, the surveillance-shedding pattern she had read about in the Andean Remnants segment, the pattern she had told herself she was unlikely ever to need.
 
 [Beat 33]
-She slept eight hours in a transient hotel in Z6. She woke at 0700. She ate a piece of bread and drank tap water.
+The transient hotel room in Z6 had a coin-operated heater and a ceiling she could map in the dark. She lay on the bed for most of eight hours and did not sleep much of it. In the morning she ate a piece of bread and drank tap water from the bathroom tap.
 
 [Beat 34]
-She walked back to State Street at 0830 because the contract had a deadline of end of business and she had decided, the night before, that the deadline could not be missed.
+She had mapped the options the way she had learned to map them: with the same care she applied to fact-checks, to access log timestamps, to the specific language of a data-hygiene clause. The alternative was what Beatrix had called a different conversation — legal proceedings, Axiom choosing what evidence to surface and in what sequence, and Rhea had read enough case-study documents to know what that looked like from the inside. The severance was real. The cipher seed was memorized. The safe-deposit box was paid through to 2228, which was time. She walked back to State Street at 0830.
 
 [Beat 35]
 She walked into the Meridian Core at 0941. Her badge declined.
@@ -172,10 +168,10 @@ The local anaesthesia was administered to the periorbital tissue at 0959. The pr
 The Security Division colleague did not speak. The technician did not speak.
 
 [Beat 42]
-The chemical agent was administered via a curved applicator at 1006, and Rhea felt the dosing — at the concentration Mira Quintero had stood in at two and a half meters from the podium — for a fraction of a second before the local anaesthesia caught up with the pain receptors it had not fully covered.
+The chemical agent was administered via a curved applicator at 1006, and Rhea felt the dosing — the exact concentration from the OPTIC-7 case study she had read on the seventh floor — for a fraction of a second before the local anaesthesia caught up with the pain receptors it had not fully covered.
 
 [Beat 43]
-The pain was the data. The pain was the unredacted footnote. The pain was Axiom's case study in its native medium, applied to her face, and she did not scream because she had decided in the chair, while the anaesthesia was being administered, that she would not scream, and she did not.
+There was a pressure change in the orbital socket at 1006 — a shift at the boundary where the local anaesthesia ended and the tissue beyond it began. She counted the beats before the anaesthesia caught up. She had decided in the chair that she would not scream, and she did not.
 
 [Beat 44]
 The procedure ended at 1041.
@@ -202,8 +198,8 @@ She heard him walk back the way they had come.
 She stood at the corner for ninety-one seconds.
 
 [Beat 52]
-She counted them, because counting was the one thing she had left, and the count held the way the breath had held in the elevator, and the count was the first thing that came with her into what would come next.
+She counted them, because counting was the one thing she had left, and the count held the way the breath had held in the elevator.
 
 [Beat 53]
-At second ninety-two, she walked.
+At second ninety-two, she walked. She had the transit token. She knew where it went. The entrance to the Circuit was unmarked. She memorized its corner the way she had memorized the cipher seed — because it was the first thing in fourteen months that no one had given her permission to remember.
 
