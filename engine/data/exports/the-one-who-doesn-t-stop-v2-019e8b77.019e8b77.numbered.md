@@ -53,7 +53,7 @@ He thumbs the emergency contact on the tag. It rings once.
 
 A pause on the line — not shock, recognition. "Kyle." Vance says it flat, the way you say the name of a problem you already know by heart. "Of course it's you."
 
-"What's the brace reading?" Vance asked.
+"What's the brace reading?" Vance asks.
 
 Kyle looks. "Sinus, ninety-two, paced."
 
@@ -88,7 +88,7 @@ Her cheek finds the back of his shoulder like it has been there before.
 
 "Good."
 
-The kid is the only new weight he's carrying, and the only one he is doing math about. The bike turns over and catches. Eight cylinders' worth of pure audacity.
+The kid is the only new weight he's carrying, and the only one he is doing math about. The bike turns over and catches.
 
 [Beat 7]
 The first mile is gray zone. Hegewisch sprawl, no sovereign in residence, nobody to answer to and nobody to answer for you. Kyle takes Avenue O at eighty. Two long rows of collapsed light poles lie across the road like felled trees, and his Neuretics flags them and lines up the gap before his eyes have finished arriving at the problem, so that the threading of it feels less like a decision than a memory. Imani's breathing is a small warm patch against the back of his shoulder, even and slow and deliberately, carefully controlled.
@@ -301,7 +301,7 @@ Behind him, Imani makes a sound he has never heard a child make. Not fear. Not p
 Recognition.
 
 [Beat 21]
-It has a name on the forecasts and an exclusion flag on the maps. Kyle knows the names are a courtesy. Whatever this is, it isn't bad air and it isn't radiation — it is a wound in the stuff that minds are made to run on, and it is, faintly and patiently, aware of him. That is how it knew his corner.
+It has a name on the forecasts and an exclusion flag on the maps. Kyle knows the names are a courtesy. Whatever this is, it isn't bad air and it isn't radiation. It is faintly and patiently aware of him. That is how it knew his corner.
 
 His Neuretics tries to map it and gets back nothing but garbage: distances that won't hold still, a clock running three directions at once, his own engine note reaching his ears a half-second late, off a street he's already left. So for once in his overclocked life he flies on the one instrument no build has ever managed to improve — the old animal at the base of the skull, the part of him that feared the dark before there were words for dark.
 
@@ -312,7 +312,7 @@ He fixes on a single streetlamp out on the far rim and keeps the only rules anyo
 "I already wasn't," Imani says.
 
 [Beat 22]
-At the far edge of his vision something moves that shouldn't be able to: a shape carrying one shadow too many, and the extra shadow arrives a half-beat ahead of the shape that throws it. Where it passes, the air holds the wrong temperature — the cold of a room that has been sealed since before he was born — and the sound it makes is not a sound at all; it is sound's absence, a pressure in the ear like water at depth, like a held breath that has no mouth to release it.
+At the far edge of his vision something moves that shouldn't be able to: a shape carrying one shadow too many, and the extra shadow arrives a half-beat ahead of the shape that throws it. Where it passes, the air holds the wrong temperature — a cold without season or source — and the sound it makes is not a sound at all; it is sound's absence, a pressure in the ear like water at depth, like a held breath that has no mouth to release it.
 
 He does not look at it directly. Some animal floor of him knows that looking straight at the thing is not something a mind comes back from. Imani's breath catches against his back — his only warning — and he throws the bike right, which is the wrong word for the direction it actually goes. The miss should have cleared a foot. It clears less than an inch. He feels it pass like a current turning in deep water, and a line of cold opens along his ribs under the coat — deep, clean, not yet bleeding, because in here the blood runs half a second behind everything else.
 
@@ -464,9 +464,9 @@ The bay door drops shut behind him and its red light goes white, which is the ho
 [Beat 32]
 He turns south, on foot, the long way, because south is no longer urgent and there's no bike left to make it quick. The read has come back — slow, shaky, but back. The white that rode the edges of his sight all night is pulling away, the bleed at his nose gone tacky and dry. The body, at least, has stopped sending up its bills for the evening.
 
-The bad news keeps its own count. Where a civilian rig would show a battery bar, the build in his skull shows one small light. Every time he runs the read past the red, that light goes red with it. One flash, the man who put it in a child too young to be asked once told him, is about a year off the far end of his life.
+The bad news keeps its own count. Where a civilian rig would show a battery bar, the build in his skull shows one small light. Every time he runs the read past the red, that light goes red with it.
 
-He doesn't look at it while he's working. He looks now, and counts what he can stand of tonight's — and the thin spot alone is most of it. He files the rest under the cost of the evening.
+He doesn't look at it while he's working. He looks now, and counts what he can stand of tonight's — and the thin spot alone is most of it. He files the rest under the cost of the evening, starting with a name he still doesn't have.
 
-Then he does the thing he taught her to do in the dark. Names the next ordinary thing, and the next. The curb. The corner. The long block south. Until the street is just a street again.
+He names the next ordinary thing, and the next. The curb. The corner. The long block south. Until the street is just a street again.
 

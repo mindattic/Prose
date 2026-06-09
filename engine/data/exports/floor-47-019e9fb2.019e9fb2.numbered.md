@@ -69,7 +69,7 @@ She began, in the fifth week, to do small things.
 She read the operations reports more carefully than she needed to. The reports referenced source documents — chemical inventories, deployment logs, transit movement orders — and the source documents lived on a parallel directory she was not credentialed to read.
 
 [Beat 23]
-She read them anyway. The credential system was rigorous about logging *access denied;* it was less rigorous about logging *access by proximity,* which was the term for what happened when an analyst's clipboard, left open on the shared workstation in the seventh-floor break room, contained an inherited token from a directory she would not otherwise have seen. The break room workstation was, she had noticed her second week, the most-trafficked machine on the floor and the least-watched.
+She read them anyway. The credential system was rigorous about logging *access denied;* it was less rigorous about *access by proximity* — a colleague's clipboard, left open on the shared workstation with a session still live. The break room workstation was the most-trafficked machine on the floor and the least-watched. Her cover was a legitimate archive search, a Senior Narrative Architect function, run on a screen she positioned so the coffee queue would see her at the terminal. The time she had was as long as it took Joaquim to refill his mug at the far station. She learned, the third visit, to estimate that window by the sound of the coffee dispenser.
 
 [Beat 24]
 She read about the Z3 deployment. *Twenty-seven transient morbidity events* meant twenty-seven people had walked into a Sunday-evening community assembly in Pilsen and walked out, three hours later, into an emergency-medical intake at the Aurochs trauma complex with chemical exposure to the eyes.
@@ -90,7 +90,7 @@ The chemical agent, identified by lot number in the deployment log, was a Tier-r
 The client's name was on the lot label. The client was Axiom Industries Security Division.
 
 [Beat 30]
-Rhea did not write any of this down. She read it the way a journalist reads a document, which is to say she read it once, fully, then closed the directory, then walked back to her office, then sat in her chair for nine minutes, then went home and cooked yam pottage because the grandmother had wanted yam pottage that night.
+Rhea did not write any of this down. She read it the way a journalist reads a document — once, fully — then closed the directory, then walked back to her office, then sat in her chair. She could not entirely control her hands. *Mira Quintero,* she thought. *Fifty-two years old. Retired transit dispatcher.* She held the name until the shaking stopped, which was nine minutes, and then she went home and cooked yam pottage because the grandmother had wanted yam pottage that night.
 
 [Beat 31]
 In the seventh week she did the first thing.
@@ -138,17 +138,17 @@ The director nodded. "That's my read too."
 "Not yet. We're going to let them ask. The right response right now is silence and a slightly improved community-relations outreach in Z3. Draft me three paragraphs for the local liaison."
 
 [Beat 46]
-"Yes."
+She held a pause — one beat longer than a professional should, not quite long enough to flag — and said yes.
 
 [Beat 47]
 She walked back to her office. She drafted the three paragraphs in fourteen minutes. The director's blue pencil came back in nineteen. The communication shipped. The independent outlet ran a follow-up on Friday, less careful than the first piece, citing a source the outlet did not have. The piece died in three news cycles.
 
 [Beat 48]
-Rhea cooked that night. Yam pottage again. The grandmother had wanted it twice in one week.
+Rhea cooked that night. Yam pottage again. The grandmother had not wanted it this time. She made it anyway and finished it standing at the counter.
 
 [Beat 49]
-She did not feel proud. She did not feel guilty. She felt, for the first time since the acquisition, that she had not lost something she had not already chosen to lose. The voice they trusted was still in her throat. It was still working. It was now working slightly more for her than for them. The trade was small. The trade was real. The trade was, she understood at the kitchen counter with the spoon in her hand, the only trade Floor 47 was going to offer her.
+She did not feel proud. She did not feel guilty. She felt, for the first time since the acquisition, that she had made a decision instead of absorbed one. She stood at the kitchen counter with the spoon in her hand.
 
 [Beat 50]
-She would learn to take it.
+She set the spoon down. *Mira Quintero,* she thought again. She would learn to take it.
 
