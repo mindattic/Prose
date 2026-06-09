@@ -119,7 +119,6 @@ public static class ImportStrandCli
             if (b.IsChapterStart) meta.Add("chapter-start");
             if (!string.IsNullOrEmpty(b.EmotionalTone)) meta.Add($"tone={b.EmotionalTone}");
             if (!string.IsNullOrEmpty(b.PaceHint)) meta.Add($"pace={b.PaceHint}");
-            if (!string.IsNullOrEmpty(b.FacetTag)) meta.Add($"facet={b.FacetTag}");
             if (b.GapAfterMs.HasValue) meta.Add($"gap={b.GapAfterMs}ms");
             if (b.SceneType != "scene") meta.Add($"scene={b.SceneType}");
             var metaStr = meta.Count > 0 ? "  [" + string.Join(' ', meta) + "]" : "";
@@ -188,7 +187,6 @@ public static class ImportStrandCli
                 StructureRole  = pb.StructureRole,
                 Act            = pb.Act,
                 SceneType      = string.IsNullOrEmpty(pb.SceneType) ? "scene" : pb.SceneType,
-                FacetTag       = pb.FacetTag,
                 EmotionalTone  = pb.EmotionalTone,
                 PaceHint       = pb.PaceHint,
                 GapAfterMs     = pb.GapAfterMs,
@@ -244,7 +242,6 @@ public sealed class ParsedBeat
     public string? StructureRole { get; set; }
     public int Act { get; set; }
     public string SceneType { get; set; } = "scene";
-    public string? FacetTag { get; set; }
     public string? EmotionalTone { get; set; }
     public string? PaceHint { get; set; }
     public int? GapAfterMs { get; set; }
@@ -367,7 +364,6 @@ public static class StrandFileParser
                 case "synopsis":      beat.Synopsis = val; break;
                 case "tone":          beat.EmotionalTone = val.ToLowerInvariant(); break;
                 case "pace":          beat.PaceHint = val.ToLowerInvariant(); break;
-                case "facet":         beat.FacetTag = val.ToUpperInvariant(); break;
                 case "kind":          beat.Kind = val.ToLowerInvariant(); break;
                 case "scene-type":
                 case "scene":         beat.SceneType = val.ToLowerInvariant(); break;

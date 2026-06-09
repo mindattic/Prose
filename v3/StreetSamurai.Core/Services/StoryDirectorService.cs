@@ -26,7 +26,7 @@ namespace StreetSamurai.Core.Services;
 /// CALLS: DatabaseService (canon entities), OutlineService (arc planning),
 ///        AgendaEngine (conflict discovery), StoryStarterService (prose generation),
 ///        StoryStateService (continuity tracking), EventLogService (event extraction),
-///        KnowledgeMapService (POV constraints), FacetService (character facets),
+///        KnowledgeMapService (POV constraints),
 ///        WorldGraphService (entity relationships), SemanticIndexService + InferenceService
 ///        (context enrichment via NarrativeSessionContext).
 /// CALLED BY: UI layer (Blazor page) — the single entry point for "generate a story."
@@ -53,6 +53,7 @@ public class StoryDirectorService : IStoryDirectorService
     private readonly ILlmService llm;
     private readonly DatabaseService db;
     private readonly WorldGraphService graph;
+    private readonly CanonRetrievalService canonRetrieval;
     private readonly OutlineService outlineSvc;
     private readonly AgendaEngine agenda;
     private readonly StoryStateService storyState;
@@ -96,13 +97,14 @@ public class StoryDirectorService : IStoryDirectorService
         DialogueService dialogue, ArcTrackerService arcTracker,
         ContinuityValidatorService continuityValidator, SuggestionEngineService suggestions,
         OutlineReviewService outlineReview, StoryQualityService quality,
-        CanonGroundingService canonGrounding,
+        CanonGroundingService canonGrounding, CanonRetrievalService canonRetrieval,
         IDbContextFactory<StreetSamuraiDbContext>? dbFactory = null,
         BookOutlineService? bookOutline = null, IChapterRepository? chapterRepo = null)
     {
         this.llm = llm;
         this.db = db;
         this.graph = graph;
+        this.canonRetrieval = canonRetrieval;
         this.outlineSvc = outline;
         this.agenda = agenda;
         this.storyState = storyState;
@@ -647,9 +649,6 @@ public class StoryDirectorService : IStoryDirectorService
                     log.LogWarning(ex, "State extraction failed for beat {BeatIndex} — continuing with stale state", beat.BeatIndex);
                 }
 
-                // (Facet evolution removed 2026-04-26 — facet system retired. Character interior
-                // is now sourced from documented psychology fields, not from drifting weights.)
-
                 // Arc validation (best-effort — don't block story on validation failures)
                 try
                 {
@@ -844,7 +843,7 @@ public class StoryDirectorService : IStoryDirectorService
         var behaviorContext = behaviorPredict.BuildBehaviorContext(
             projectId, charsInBeat, beat.Location ?? location, beat.Goal, beat.Tension);
 
-        var canonFacts = BuildCanonFacts(charsForBeat, beat.Location ?? location);
+        var canonFacts = await BuildCanonFactsAsync(charsForBeat, beat.Location ?? location, beat.Goal);
         var paragraphs = allText.ToList();
         var beatGoal = goalOverride ?? beat.Goal;
         if (!string.IsNullOrEmpty(dialogueConstraints))
@@ -891,7 +890,7 @@ public class StoryDirectorService : IStoryDirectorService
     /// Build a hard-constraint canon facts block for the given characters and location.
     /// Injected into every beat prompt so the LLM cannot invent undocumented relationships.
     /// </summary>
-    private string BuildCanonFacts(List<string> characterNames, string location)
+    private async Task<string> BuildCanonFactsAsync(List<string> characterNames, string location, string beatGoal)
     {
         var sb = new System.Text.StringBuilder();
         sb.AppendLine("== CANON FACTS — HARD CONSTRAINTS ==");
@@ -918,6 +917,15 @@ public class StoryDirectorService : IStoryDirectorService
             if (!string.IsNullOrWhiteSpace(locBrief))
                 sb.AppendLine(locBrief).AppendLine();
         }
+
+        // Totality: pull relevant canon across ALL entity types (gear, drugs,
+        // materials, orgs, synthetics, …) for what this beat is about, so the
+        // decision is grounded in the whole world, not just the cast + location
+        // the graph happens to model. Excludes the cast already briefed above.
+        var canonBlock = await canonRetrieval.RetrieveContextBlockAsync(
+            $"{beatGoal}\n{location}\n{string.Join(", ", characterNames)}",
+            k: 10, excludeNames: characterNames);
+        if (canonBlock.Length > 0) sb.AppendLine(canonBlock);
 
         return sb.ToString();
     }
@@ -1113,7 +1121,6 @@ public class StoryDirectorService : IStoryDirectorService
             var beat = act2.Beats[midpoint];
             beat.Goal = "BATTLE: " + beat.Goal + ". Violence erupts — GLMZ is a dangerous place. The conflict should feel sudden, visceral, and have consequences for the characters involved.";
             beat.Tension = Math.Max(beat.Tension, 8);
-            beat.FacetHint = "id";
         }
     }
 

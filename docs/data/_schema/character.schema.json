@@ -1,0 +1,24 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "$id": "ss://schema/character",
+  "title": "StreetSamurai canon — Character (engine_data/people/*.json)",
+  "description": "Sentient being living in the Characters repo (SS-LAW-4). Registers the existing on-disk shape; descriptive, not restrictive. id derived as character.<slug(name)>; on disk the row is keyed by filename + name.",
+  "type": "object",
+  "required": ["type", "name"],
+  "additionalProperties": true,
+  "properties": {
+    "type": { "const": "character" },
+    "name": { "type": "string" },
+    "aliases": { "type": "array", "items": { "type": "string" } },
+    "species": { "type": "string", "enum": ["human", "ai", "elf", "synthetic", "unknown"] },
+    "role": { "type": "string" },
+    "status": { "type": "string" },
+    "location": { "type": "string" },
+    "description": { "type": "string" },
+    "psychology": { "type": "object" },
+    "speech_patterns": { "type": "object" },
+    "behavioral": { "type": "object" },
+    "stats": { "type": "object" },
+    "story_hooks": { "type": "array", "items": { "type": "string" } }
+  }
+}

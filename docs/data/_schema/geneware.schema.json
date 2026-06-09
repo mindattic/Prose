@@ -1,0 +1,22 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "$id": "ss://schema/geneware",
+  "title": "StreetSamurai canon — Geneware (engine_data/geneware/*.json)",
+  "description": "Genetic/biotech modification. Descriptive registration of the on-disk shape; id derived as geneware.<slug(name)>.",
+  "type": "object",
+  "required": ["type", "name"],
+  "additionalProperties": true,
+  "properties": {
+    "type": { "const": "geneware" },
+    "name": { "type": "string" },
+    "aliases": { "type": "array", "items": { "type": "string" } },
+    "category": { "type": "string" },
+    "target_system": { "type": "string" },
+    "description": { "type": "string" },
+    "manufacturer": { "type": "string" },
+    "tier_availability": { "type": "string" },
+    "legality": { "type": "string" },
+    "side_effects": { "type": "array", "items": { "type": "string" } },
+    "story_hooks": { "type": "array", "items": { "type": "string" } }
+  }
+}

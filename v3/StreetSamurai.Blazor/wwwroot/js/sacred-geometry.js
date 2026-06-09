@@ -8,9 +8,9 @@
  * Everything is pure math: no DOM, no RNG, no Date. sample(i, t) is a pure function of
  * (index, phase), so the Node-built SVG posters and the browser canvas agree by construction.
  *
- * Indices 0..84 reproduce Cyberspace's original 85-shape catalog verbatim (band 0); the
+ * Indices 0..83 reproduce Cyberspace's original catalog verbatim minus the harmonograph (band 0); the
  * remaining bands sweep parametric families (prisms, antiprisms, star polygons, rose/Lissajous/
- * cycloid curves, torus knots, the Gielis superformula, harmonographs, fractals) up to 1024.
+ * cycloid curves, torus knots, the Gielis superformula, fractals) up to 1024.
  *
  * Classic browser <script> AND require()-able under Node (UMD), no bundler.
  */
@@ -481,13 +481,6 @@
         p.stroke();
     }
     function drawSierpinski(p, t) { drawSierpinskiN(p, t, 4); }
-    function drawHarmono(p, t) {
-        var R = 38, dec = 0.0008, i, u, env, x, y;
-        p.strokeStyle = TEAL_STRONG; p.lineWidth = 0.7;
-        p.beginPath();
-        for (i = 0; i <= 800; i++) { u = i * 0.04; env = Math.exp(-u * dec * 40); x = R * env * (Math.sin(2.01 * u + t * 0.012) + 0.6 * Math.sin(3.03 * u + t * 0.018)); y = R * env * (Math.cos(2.99 * u + t * 0.014) + 0.6 * Math.cos(2.0 * u - t * 0.016)); if (i === 0) p.moveTo(x, y); else p.lineTo(x, y); }
-        p.stroke();
-    }
     function drawKlein(p, t) {
         var rot = t * 0.02, S = 16, ui, u, vi, v, q;
         function K(u, v) {
@@ -551,7 +544,7 @@
         lissajous: drawLissajous, star5: drawStar5, torus: drawTorus, helix: drawHelix,
         rose: drawRose, cardioid: drawCardioid, asteroid: drawAsteroid, epicycloid: drawEpicycloid,
         web: drawWeb, trefoil: drawTrefoil, fig8knot: drawFig8Knot, koch: drawKoch,
-        sierpinski: drawSierpinski, harmono: drawHarmono, klein: drawKlein, hyperpara: drawHyperPara,
+        sierpinski: drawSierpinski, klein: drawKlein, hyperpara: drawHyperPara,
         trochoid: drawTrochoid, butterfly: drawButterfly, hypocy: drawHypocy
     };
     var LEGACY_PARAM_LABEL = {
@@ -559,7 +552,7 @@
         lissajous: 'lissajous 3:2', star5: 'pentagram', torus: 'torus rings', helix: 'helix',
         rose: 'rose k=3', cardioid: 'cardioid', asteroid: 'astroid', epicycloid: 'epicycloid',
         web: 'radial web', trefoil: 'trefoil knot', fig8knot: 'figure-8 knot', koch: 'koch snowflake',
-        sierpinski: 'sierpinski triangle', harmono: 'harmonograph', klein: 'klein bottle', hyperpara: 'hyperbolic paraboloid',
+        sierpinski: 'sierpinski triangle', klein: 'klein bottle', hyperpara: 'hyperbolic paraboloid',
         trochoid: 'epitrochoid', butterfly: 'butterfly curve', hypocy: 'hypocycloid'
     };
     // The original GEO_KEYS, verbatim — defines band 0 (indices 0..84).
@@ -572,7 +565,7 @@
         'tesseract','compoundCO','obelisk','spire','wedge','lattice3','crystalPair',
         'hendecaprism','tridecaprism','pentadecaprism','hendecanti','tridecanti',
         'octapy','decapy','trunccube','gyropy','dnahelix',
-        'trefoil','fig8knot','koch','sierpinski','harmono',
+        'trefoil','fig8knot','koch','sierpinski',
         'klein','hyperpara','trochoid','butterfly','hypocy'];
 
     // ── Generic parametric-curve painter for the new bands ──────────────────────────────────────
@@ -632,7 +625,8 @@
     function add(spec) { var f = fpOf(spec); if (seenFp[f]) return false; seenFp[f] = 1; catalog.push(spec); return true; }
     function addForce(spec) { seenFp[fpOf(spec)] = 1; catalog.push(spec); }   // band 0: always include
 
-    // Band 0 — the 85 legacy shapes, in original order. addForce: every legacy shape is included.
+    // Band 0 — the 84 legacy shapes (original 85 minus the removed harmonograph), in original order.
+    // addForce: every legacy shape is included.
     GEO_KEYS.forEach(function (key) {
         if (GEO[key]) addForce(specPoly3d(GEO[key].label, GEO[key]));
         else addForce({ kind: 'param', label: LEGACY_PARAM_LABEL[key] || key, posterT: 0,
@@ -652,24 +646,24 @@
             }
             return { verts: v, edges: e };
         }
-        var target = catalog.length + 40, n = 3;
+        var target = catalog.length + 41, n = 3;   // +1: absorbs a freed harmonograph slot
         while (catalog.length < target && n < 400) { add(specPoly3d(n + '-gon elongated bipyramid', ngElongBipy(n, 1, 0.7, 0.8))); n++; }
     })();
 
     // Band 2 — n-gonal prisms, n = 3..
-    (function () { var target = catalog.length + 100, n = 3; while (catalog.length < target) { add(specPoly3d(n + '-gon prism', ngPrism(n, 1, 1))); n++; if (n > 600) break; } })();
+    (function () { var target = catalog.length + 101, n = 3; while (catalog.length < target) { add(specPoly3d(n + '-gon prism', ngPrism(n, 1, 1))); n++; if (n > 600) break; } })();
     // Band 3 — antiprisms
-    (function () { var target = catalog.length + 90, n = 3; while (catalog.length < target) { add(specPoly3d(n + '-gon antiprism', ngAnti(n, 1, 0.85))); n++; if (n > 600) break; } })();
+    (function () { var target = catalog.length + 91, n = 3; while (catalog.length < target) { add(specPoly3d(n + '-gon antiprism', ngAnti(n, 1, 0.85))); n++; if (n > 600) break; } })();
     // Band 4 — bipyramids
-    (function () { var target = catalog.length + 80, n = 3; while (catalog.length < target) { add(specPoly3d(n + '-gon bipyramid', ngBipy(n, 1, 1.3))); n++; if (n > 600) break; } })();
+    (function () { var target = catalog.length + 81, n = 3; while (catalog.length < target) { add(specPoly3d(n + '-gon bipyramid', ngBipy(n, 1, 1.3))); n++; if (n > 600) break; } })();
     // Band 5 — pyramids
-    (function () { var target = catalog.length + 70, n = 3; while (catalog.length < target) { add(specPoly3d(n + '-gon pyramid', ngPy(n, 1, 1))); n++; if (n > 600) break; } })();
+    (function () { var target = catalog.length + 71, n = 3; while (catalog.length < target) { add(specPoly3d(n + '-gon pyramid', ngPy(n, 1, 1))); n++; if (n > 600) break; } })();
     // Band 6 — star prisms {n/k}, coprime, 1 < k < n/2
-    (function () { var target = catalog.length + 100, n = 5; while (catalog.length < target && n < 400) { for (var k = 2; k < n / 2 && catalog.length < target; k++) { if (gcd(n, k) === 1) add(specPoly3d(n + '/' + k + ' star prism', starPoly(n, k, 1, 0.4))); } n++; } })();
+    (function () { var target = catalog.length + 101, n = 5; while (catalog.length < target && n < 400) { for (var k = 2; k < n / 2 && catalog.length < target; k++) { if (gcd(n, k) === 1) add(specPoly3d(n + '/' + k + ' star prism', starPoly(n, k, 1, 0.4))); } n++; } })();
 
     // Band 7 — rose curves r = 38·cos((n/d)θ), coprime n≠d
     (function () {
-        var target = catalog.length + 90, sum = 4;
+        var target = catalog.length + 91, sum = 4;
         while (catalog.length < target && sum < 60) {
             for (var n = 1; n < sum && catalog.length < target; n++) {
                 var d = sum - n; if (d < 1 || n === d || gcd(n, d) !== 1) continue;
@@ -685,7 +679,7 @@
     })();
     // Band 8 — Lissajous, coprime (a,b), a≤b, δ∈{0,π/4,π/2}
     (function () {
-        var target = catalog.length + 70, deltas = [0, Math.PI / 4, Math.PI / 2], di = 0;
+        var target = catalog.length + 71, deltas = [0, Math.PI / 4, Math.PI / 2], di = 0;
         outer: for (var b = 2; b < 30; b++) for (var a = 1; a <= b; a++) {
             if (gcd(a, b) !== 1) continue; if (a === 1 && b === 1) continue;
             for (di = 0; di < deltas.length; di++) {
@@ -700,7 +694,7 @@
     })();
     // Band 9 — epicycloid / hypocycloid, lowest-terms (R,r), alternating
     (function () {
-        var target = catalog.length + 70, R = 2, mode = 0;
+        var target = catalog.length + 71, R = 2, mode = 0;
         while (catalog.length < target && R < 60) {
             for (var r = 1; r < R && catalog.length < target; r++) {
                 if (gcd(R, r) !== 1) continue;
@@ -721,7 +715,7 @@
     })();
     // Band 10 — epitrochoid (R,r,d), lowest-terms
     (function () {
-        var target = catalog.length + 60, R = 2, ds = [0.5, 1.5, 2.5];
+        var target = catalog.length + 61, R = 2, ds = [0.5, 1.5, 2.5];
         while (catalog.length < target && R < 40) {
             for (var r = 1; r < R && catalog.length < target; r++) {
                 if (gcd(R, r) !== 1) continue;
@@ -739,7 +733,7 @@
     })();
     // Band 11 — torus knots (p,q), gcd=1, 2≤p<q ; projected 3D with depth alpha
     (function () {
-        var target = catalog.length + 40;
+        var target = catalog.length + 41;
         outer: for (var q = 3; q < 30; q++) for (var pp = 2; pp < q; pp++) {
             if (gcd(pp, q) !== 1) continue;
             if (catalog.length >= target) break outer;
@@ -760,21 +754,8 @@
             })(pp, q);
         }
     })();
-    // Band 13 — harmonographs + extra fractal depths (the 10 just before the superformula fill).
+    // Band 13 — extra fractal depths (harmonographs removed; the 5 fractals just before the superformula fill).
     (function () {
-        var harm = [
-            [2.01, 3.03, 2.99, 2.0], [3.0, 2.0, 2.0, 3.0], [5.0, 4.0, 3.0, 2.0],
-            [2.0, 2.01, 3.0, 3.01], [4.0, 3.0, 2.0, 5.0]
-        ];
-        harm.forEach(function (h, idx) {
-            add({ kind: 'param2d', label: 'harmonograph ' + (idx + 1), posterT: 0,
-                paint: function (p, t) {
-                    var R = 38, dec = 0.0008, i, u, env, x, y;
-                    p.strokeStyle = TEAL_STRONG; p.lineWidth = 0.7; p.beginPath();
-                    for (i = 0; i <= 800; i++) { u = i * 0.04; env = Math.exp(-u * dec * 40); x = R * env * (Math.sin(h[0] * u + t * 0.012) + 0.6 * Math.sin(h[1] * u + t * 0.018)); y = R * env * (Math.cos(h[2] * u + t * 0.014) + 0.6 * Math.cos(h[3] * u - t * 0.016)); if (i === 0) p.moveTo(x, y); else p.lineTo(x, y); }
-                    p.stroke();
-                } });
-        });
         [['koch depth 2', 2], ['koch depth 4', 4]].forEach(function (g) { add({ kind: 'fractal', label: g[0], posterT: 0, paint: (function (d) { return function (p, t) { drawKochN(p, t, d); }; })(g[1]) }); });
         [['sierpinski depth 3', 3], ['sierpinski depth 5', 5], ['sierpinski depth 6', 6]].forEach(function (g) { add({ kind: 'fractal', label: g[0], posterT: 0, paint: (function (d) { return function (p, t) { drawSierpinskiN(p, t, d); }; })(g[1]) }); });
     })();

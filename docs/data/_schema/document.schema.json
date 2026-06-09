@@ -1,0 +1,17 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "$id": "ss://schema/document",
+  "title": "StreetSamurai canon — Document (engine_data/documents/*.json)",
+  "description": "An in-world reference document (lore article). Keyed by file_name; id derived as document.<file_name>.",
+  "type": "object",
+  "required": ["file_name", "title"],
+  "additionalProperties": true,
+  "properties": {
+    "file_name": { "type": "string" },
+    "title": { "type": "string" },
+    "category": { "type": "string" },
+    "body": { "type": "string" },
+    "line_count": { "type": "integer" },
+    "headings": { "type": "array", "items": { "type": "string" } }
+  }
+}

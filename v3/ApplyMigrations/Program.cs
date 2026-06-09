@@ -27,6 +27,20 @@ services.AddLogging(b =>
 services.AddStreetSamuraiServices();
 using var sp = services.BuildServiceProvider();
 
+// ── MindAttic.Authentication EF migrations ──────────────────────────────
+// The 'auth' schema tables are EF-migration-managed (StreetSamuraiAuthDbContext).
+// In prod the App Service managed identity CANNOT run DDL, so the auth migration
+// runs HERE under the CI OIDC db_ddladmin principal — BEFORE the raw-SQL world
+// migrations. Idempotent via __EFMigrationsHistory; the connection string is the
+// same ConnectionStrings__StreetSamurai the world migrations use.
+Console.WriteLine("-> Applying MindAttic.Authentication EF migrations...");
+using (var authScope = sp.CreateScope())
+{
+    var authDb = authScope.ServiceProvider.GetRequiredService<StreetSamuraiAuthDbContext>();
+    await authDb.Database.MigrateAsync();
+}
+Console.WriteLine("   auth EF migrations applied");
+
 var dbFactory = sp.GetRequiredService<IDbContextFactory<StreetSamuraiDbContext>>();
 
 // Resolve the Sql folder via the same logic as SqlSeedService: walk up
@@ -64,6 +78,12 @@ var migrations = new[]
     "create_focus_groups_20260531.sql",
     "create_strand_beat_scores_20260531.sql",
     "add_strand_beat_score_columns_20260604.sql",
+    // 2026-06-06 batch
+    "add_strand_canon_20260606.sql",
+    "create_character_readmodel_20260606.sql",
+    "create_species_20260606.sql",
+    "create_voice_change_log_20260606.sql",
+    "drop_facet_system_20260606.sql",
 };
 
 await using var db = await dbFactory.CreateDbContextAsync();

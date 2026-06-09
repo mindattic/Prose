@@ -4,7 +4,10 @@
     <TargetFramework>net10.0</TargetFramework>
     <Nullable>enable</Nullable>
     <ImplicitUsings>enable</ImplicitUsings>
-    <RestorePackagesWithLockFile>true</RestorePackagesWithLockFile>
+    <!-- No packages.lock.json here: StreetSamurai.Core references MindAttic.Authentication as a
+         Debug-only source ProjectReference but a Release NuGet PackageReference (the dev-auth-bypass
+         pattern). A single lock file cannot hold both the "Project" (Debug) and "Package" (Release)
+         identity of that transitive dependency, which broke Release restore with NU1101. -->
   </PropertyGroup>
 
 

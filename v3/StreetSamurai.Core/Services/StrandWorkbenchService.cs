@@ -71,7 +71,10 @@ public class StrandWorkbenchService
     /// return its beats in reading order. Each entry includes its source
     /// strand so the UI can group beats under sub-strand headers when the
     /// caller wants to render a multi-level page.</summary>
-    public async Task<List<OrderedBeat>> GetOrderedBeatsAsync(Guid strandId, CancellationToken ct = default)
+    /// <param name="includeDisabled">When true, soft-deleted (IsEnabled=false) beats
+    /// are included in the result with <see cref="OrderedBeat.IsEnabled"/> = false.
+    /// Default false — the normal writing view only shows live beats.</param>
+    public async Task<List<OrderedBeat>> GetOrderedBeatsAsync(Guid strandId, CancellationToken ct = default, bool includeDisabled = false)
     {
         await using var db = await dbFactory.CreateDbContextAsync(ct);
         var result = new List<OrderedBeat>();
@@ -79,22 +82,23 @@ public class StrandWorkbenchService
         // data import could close a loop. We track visited strands so we
         // bail out cleanly instead of blowing the stack.
         var visited = new HashSet<Guid>();
-        await WalkAsync(db, strandId, result, visited, ct);
+        await WalkAsync(db, strandId, result, visited, includeDisabled, ct);
         return result;
     }
 
-    private static async Task WalkAsync(StreetSamuraiDbContext db, Guid strandId, List<OrderedBeat> acc, HashSet<Guid> visited, CancellationToken ct)
+    private static async Task WalkAsync(StreetSamuraiDbContext db, Guid strandId, List<OrderedBeat> acc, HashSet<Guid> visited, bool includeDisabled, CancellationToken ct)
     {
         if (!visited.Add(strandId)) return; // cycle — already walked this strand once.
 
-        // Direct beats first, in SortKey order.
+        // Direct beats first, in SortKey order. Soft-deleted beats are excluded
+        // by default; pass includeDisabled=true to make them visible (grey + restore button).
         var direct = await db.StrandBeats
-            .Where(sb => sb.StrandId == strandId)
+            .Where(sb => sb.StrandId == strandId && (includeDisabled || sb.IsEnabled))
             .OrderBy(sb => sb.SortKey)
-            .Join(db.Beats, sb => sb.BeatId, b => b.Id, (sb, b) => new { sb.SortKey, Beat = b })
+            .Join(db.Beats, sb => sb.BeatId, b => b.Id, (sb, b) => new { sb.SortKey, sb.IsEnabled, Beat = b })
             .ToListAsync(ct);
         foreach (var d in direct)
-            acc.Add(new OrderedBeat(d.Beat, strandId, d.SortKey));
+            acc.Add(new OrderedBeat(d.Beat, strandId, d.SortKey, d.IsEnabled));
 
         // Then child strands in SortKey order (recursive).
         var children = await db.Strands
@@ -103,14 +107,15 @@ public class StrandWorkbenchService
             .Select(s => s.Id)
             .ToListAsync(ct);
         foreach (var c in children)
-            await WalkAsync(db, c, acc, visited, ct);
+            await WalkAsync(db, c, acc, visited, includeDisabled, ct);
     }
 
-    /// <summary>Cheap count without loading the beats — for tile/badge displays.</summary>
+    /// <summary>Cheap count without loading the beats — for tile/badge displays.
+    /// Only counts enabled beats (soft-deleted excluded).</summary>
     public async Task<int> CountBeatsAsync(Guid strandId, CancellationToken ct = default)
     {
         await using var db = await dbFactory.CreateDbContextAsync(ct);
-        return await db.StrandBeats.CountAsync(sb => sb.StrandId == strandId, ct);
+        return await db.StrandBeats.CountAsync(sb => sb.StrandId == strandId && sb.IsEnabled, ct);
     }
 
     // ── Edits ────────────────────────────────────────────────────────────
@@ -149,6 +154,8 @@ public class StrandWorkbenchService
         beat.TextHash      = ComputeTextHash(trimmed);
         beat.WasCorrected  = true;
         beat.Stale         = true;
+        beat.Score         = null;  // text changed → prior score is for the old version
+        beat.ScoredAt      = null;
         InvalidateAudioOnBeat(beat);
         beat.UpdatedAt = DateTime.UtcNow;
         try
@@ -183,7 +190,6 @@ public class StrandWorkbenchService
         beat.Synopsis       = string.IsNullOrWhiteSpace(update.Synopsis)      ? null : update.Synopsis.Trim();
         beat.EmotionalTone  = string.IsNullOrWhiteSpace(update.EmotionalTone) ? null : update.EmotionalTone.Trim().ToLowerInvariant();
         beat.PaceHint       = string.IsNullOrWhiteSpace(update.PaceHint)      ? null : update.PaceHint.Trim().ToLowerInvariant();
-        beat.FacetTag       = string.IsNullOrWhiteSpace(update.FacetTag)      ? null : update.FacetTag.Trim().ToUpperInvariant();
         beat.StructureRole  = string.IsNullOrWhiteSpace(update.StructureRole) ? null : update.StructureRole.Trim();
         beat.Act            = update.Act;
         beat.SceneType      = string.IsNullOrWhiteSpace(update.SceneType)     ? "scene" : update.SceneType.Trim();
@@ -280,7 +286,6 @@ public class StrandWorkbenchService
                 StructureRole  = s.StructureRole,
                 Act            = s.Act,
                 SceneType      = s.SceneType,
-                FacetTag       = s.FacetTag,
                 EmotionalTone  = s.EmotionalTone,
                 PaceHint       = s.PaceHint,
                 GapAfterMs     = s.GapAfterMs,
@@ -311,6 +316,153 @@ public class StrandWorkbenchService
         if (string.IsNullOrWhiteSpace(s)) return "strand";
         var ascii = Regex.Replace(s.ToLowerInvariant(), "[^a-z0-9]+", "-").Trim('-');
         return string.IsNullOrEmpty(ascii) ? "strand" : ascii;
+    }
+
+    /// <summary>
+    /// Persist a generated story as a first-class <see cref="Strand"/> of
+    /// <see cref="Beat"/>s — the single story representation. The autonomous
+    /// generator and the writer both land here, so everything downstream
+    /// (validate → review → harvest → publish) operates on one model. Returns the
+    /// new strand id. Each non-empty text becomes one beat in order; the first
+    /// beat is marked a chapter start when <paramref name="chapterStartFirst"/>.
+    /// </summary>
+    public async Task<Guid> CreateStrandFromBeatsAsync(
+        string title, IReadOnlyList<string> beatTexts, string? synopsis = null,
+        string kind = "scene", string? seed = null, bool chapterStartFirst = false, CancellationToken ct = default)
+    {
+        await using var db = await dbFactory.CreateDbContextAsync(ct);
+        var strandId = Guid.CreateVersion7();
+        var slug = $"{Slugify(string.IsNullOrWhiteSpace(title) ? "untitled" : title)}-{strandId.ToString("N")[..8]}";
+
+        var maxSort = await db.Strands.Where(s => s.ParentStrandId == null)
+            .Select(s => (double?)s.SortKey).MaxAsync(ct) ?? 0;
+        db.Strands.Add(new Strand
+        {
+            Id = strandId, Slug = slug, Title = title, Kind = kind, Status = "draft",
+            Synopsis = synopsis, Seed = seed, SortKey = maxSort + 100.0,
+        });
+
+        var baseNumber = (await db.Beats.MaxAsync(b => (int?)b.Number, ct) ?? 0) + 1;
+        double sortKey = 100.0;
+        int i = 0;
+        foreach (var raw in beatTexts)
+        {
+            var text = (raw ?? "").Trim();
+            if (text.Length == 0) continue;
+            var beat = new Beat
+            {
+                Id = Guid.CreateVersion7(),
+                Number = baseNumber + i,
+                Text = text,
+                TextHash = ComputeTextHash(text),
+                Kind = "prose",
+                SceneType = "scene",
+                IsChapterStart = chapterStartFirst && i == 0,
+            };
+            db.Beats.Add(beat);
+            db.StrandBeats.Add(new StrandBeat { StrandId = strandId, BeatId = beat.Id, SortKey = sortKey });
+            sortKey += 100.0;
+            i++;
+        }
+
+        await db.SaveChangesAsync(ct);
+        log.LogInformation("Persisted generated story '{Title}' as strand {Slug} ({Beats} beats)", title, slug, i);
+        return strandId;
+    }
+
+    /// <summary>
+    /// Convert a monolithic strand into a Collection (ARCHITECTURE.md §2c): split
+    /// its beats at <c>IsChapterStart</c> boundaries into child strands parented
+    /// under it via <c>ParentStrandId</c>. Beats are MOVED (re-pointed), never
+    /// copied or rewritten. The parent keeps its identity and becomes the
+    /// Collection (Kind='book'); each chapter becomes a child strand with its own
+    /// 100-step SortKey ladder. Any lead-in beats before the first chapter mark
+    /// form an implicit first child. Returns (childStrands, beatsMoved).
+    /// </summary>
+    public async Task<(int Children, int Beats)> SplitIntoCollectionAsync(Guid strandId, CancellationToken ct = default)
+    {
+        await using var db = await dbFactory.CreateDbContextAsync(ct);
+        var parent = await db.Strands.FirstOrDefaultAsync(s => s.Id == strandId, ct)
+            ?? throw new InvalidOperationException($"Strand {strandId} not found.");
+
+        // Guard: refuse to split a strand that is ALREADY a Collection (has child
+        // strands). Splitting its direct beats too would create a second, parallel
+        // set of chapters alongside the existing children — reconcile first.
+        var existingChildren = await db.Strands.CountAsync(s => s.ParentStrandId == strandId, ct);
+        if (existingChildren > 0)
+            throw new InvalidOperationException(
+                $"'{parent.Title}' already has {existingChildren} child strand(s) — it's already a Collection. " +
+                "Splitting its direct beats would duplicate chapters. Reconcile the existing children first.");
+
+        var rows = await db.StrandBeats.Where(sb => sb.StrandId == strandId)
+            .OrderBy(sb => sb.SortKey)
+            .Join(db.Beats, sb => sb.BeatId, b => b.Id,
+                  (sb, b) => new { sb.BeatId, sb.SortKey, b.IsChapterStart, b.BeatTitle })
+            .ToListAsync(ct);
+        if (rows.Count == 0) throw new InvalidOperationException("Strand has no beats to split.");
+
+        // Segment by chapter starts; lead-in beats (before the first mark) become chapter 1.
+        var segments = new List<(string Title, List<Guid> Beats)>();
+        foreach (var r in rows)
+        {
+            if (r.IsChapterStart || segments.Count == 0)
+            {
+                var t = (r.BeatTitle ?? "").Trim();
+                if (t.Length == 0) t = $"{parent.Title} — Chapter {segments.Count + 1}";
+                segments.Add((t, new List<Guid>()));
+            }
+            segments[^1].Beats.Add(r.BeatId);
+        }
+        if (segments.Count < 2)
+            throw new InvalidOperationException($"Strand has {segments.Count} chapter segment(s) — nothing to split. Mark IsChapterStart on beats first.");
+
+        // Drop the parent's direct beat links (beats themselves are kept and re-linked to children).
+        var oldLinks = await db.StrandBeats.Where(sb => sb.StrandId == strandId).ToListAsync(ct);
+        db.StrandBeats.RemoveRange(oldLinks);
+
+        double parentSort = 100.0;
+        int beatCount = 0;
+        foreach (var (title, beatIds) in segments)
+        {
+            var childId = Guid.CreateVersion7();
+            var slug = $"{Slugify(title)}-{childId.ToString("N")[..8]}";
+            db.Strands.Add(new Strand
+            {
+                Id = childId, Slug = slug, Title = title, Kind = "strand", Status = "draft",
+                ParentStrandId = strandId, SortKey = parentSort,
+            });
+            parentSort += 100.0;
+            double sk = 100.0;
+            foreach (var bid in beatIds)
+            {
+                db.StrandBeats.Add(new StrandBeat { StrandId = childId, BeatId = bid, SortKey = sk });
+                sk += 100.0;
+                beatCount++;
+            }
+        }
+
+        parent.Kind = "book";        // the Collection label (display only; structurally a parent strand)
+        parent.UpdatedAt = DateTime.UtcNow;
+        await db.SaveChangesAsync(ct);
+        log.LogInformation("Split '{Title}' into a Collection: {Children} child strands, {Beats} beats.", parent.Title, segments.Count, beatCount);
+        return (segments.Count, beatCount);
+    }
+
+    /// <summary>Mark a strand Canon (or clear it) — the author-only trust gate
+    /// (ARCHITECTURE.md §2c): "strong enough to draw conclusions about the
+    /// characters and events." Stamps <see cref="Strand.CanonAt"/> when set.
+    /// Returns false if the strand isn't found.</summary>
+    public async Task<bool> SetCanonAsync(Guid strandId, bool canon, CancellationToken ct = default)
+    {
+        await using var db = await dbFactory.CreateDbContextAsync(ct);
+        var strand = await db.Strands.FirstOrDefaultAsync(s => s.Id == strandId, ct);
+        if (strand == null) return false;
+        strand.IsCanon = canon;
+        strand.CanonAt = canon ? DateTime.UtcNow : null;
+        strand.UpdatedAt = DateTime.UtcNow;
+        await db.SaveChangesAsync(ct);
+        log.LogInformation("Strand {Slug} canon = {Canon}", strand.Slug, canon);
+        return true;
     }
 
     /// <summary>Insert a brand-new empty beat into <paramref name="strandId"/>
@@ -560,7 +712,6 @@ public class StrandWorkbenchService
             Text          = secondHalf,
             TextHash      = ComputeTextHash(secondHalf),
             SceneType     = target.SceneType,
-            FacetTag      = target.FacetTag,
             EmotionalTone = target.EmotionalTone,
             PaceHint      = target.PaceHint,
             Act           = target.Act,
@@ -626,7 +777,6 @@ public class StrandWorkbenchService
             Text          = secondHalf,
             TextHash      = ComputeTextHash(secondHalf),
             SceneType     = target.SceneType,
-            FacetTag      = target.FacetTag,
             EmotionalTone = target.EmotionalTone,
             PaceHint      = target.PaceHint,
             Act           = target.Act,
@@ -703,7 +853,6 @@ public class StrandWorkbenchService
                 Text          = paragraphs[i],
                 TextHash      = ComputeTextHash(paragraphs[i]),
                 SceneType     = target.SceneType,
-                FacetTag      = target.FacetTag,
                 EmotionalTone = target.EmotionalTone,
                 PaceHint      = target.PaceHint,
                 Act           = target.Act,
@@ -1001,26 +1150,37 @@ public class StrandWorkbenchService
         log.LogInformation("Joined beat {Beat} into {Prev} in strand {Strand}", beatId, prevId, strandId);
     }
 
-    /// <summary>Remove a beat from a strand. If the beat is not in any other
-    /// strand, delete it entirely (and its audio file). Otherwise leave the
-    /// Beat row alone — other strands still reference it.</summary>
+    /// <summary>Soft-delete a beat from a strand: sets <c>StrandBeat.IsEnabled = false</c>
+    /// on the junction row. The Beat row and all its temporal history are preserved;
+    /// <see cref="RestoreBeatAsync"/> can un-hide it. Audio is invalidated so a restore
+    /// triggers re-narration rather than playing stale audio.</summary>
     public async Task DeleteBeatAsync(Guid strandId, Guid beatId, CancellationToken ct = default)
     {
         await using var db = await dbFactory.CreateDbContextAsync(ct);
         var junction = await db.StrandBeats
             .FirstOrDefaultAsync(sb => sb.StrandId == strandId && sb.BeatId == beatId, ct);
         if (junction == null) return;
-        db.StrandBeats.Remove(junction);
+        if (!junction.IsEnabled) return; // already disabled — no-op
 
-        var otherMemberships = await db.StrandBeats
-            .Where(sb => sb.BeatId == beatId && sb.StrandId != strandId)
-            .AnyAsync(ct);
-        if (!otherMemberships)
-        {
-            var beat = await db.Beats.FirstAsync(b => b.Id == beatId, ct);
-            InvalidateAudioOnBeat(beat);
-            db.Beats.Remove(beat);
-        }
+        junction.IsEnabled = false;
+
+        // Invalidate audio so a future restore triggers fresh narration.
+        var beat = await db.Beats.FirstOrDefaultAsync(b => b.Id == beatId, ct);
+        if (beat != null) InvalidateAudioOnBeat(beat);
+
+        await db.SaveChangesAsync(ct);
+    }
+
+    /// <summary>Restore a previously soft-deleted beat: sets <c>StrandBeat.IsEnabled = true</c>.
+    /// The beat re-appears in the normal (non-disabled) view. Audio remains stale until
+    /// re-narrated.</summary>
+    public async Task RestoreBeatAsync(Guid strandId, Guid beatId, CancellationToken ct = default)
+    {
+        await using var db = await dbFactory.CreateDbContextAsync(ct);
+        var junction = await db.StrandBeats
+            .FirstOrDefaultAsync(sb => sb.StrandId == strandId && sb.BeatId == beatId, ct);
+        if (junction == null || junction.IsEnabled) return;
+        junction.IsEnabled = true;
         await db.SaveChangesAsync(ct);
     }
 
@@ -1060,19 +1220,32 @@ public class StrandWorkbenchService
     /// by the writer's ◀ ▶ cycler to preview a past version in the editor.</summary>
     public async Task<string?> GetBeatVersionTextAsync(Guid beatId, int index, CancellationToken ct = default)
     {
+        var v = await GetBeatVersionAsync(beatId, index, ct);
+        return v?.Text;
+    }
+
+    /// <summary>The beat's prose AND its <c>SysStart</c> timestamp at a newest-first
+    /// version index. Null when the index is past the end or on a non-temporal provider.
+    /// Used by the version cycler to show "last edited at …" alongside the preview.</summary>
+    public async Task<BeatVersion?> GetBeatVersionAsync(Guid beatId, int index, CancellationToken ct = default)
+    {
         if (index < 0) return null;
         await using var db = await dbFactory.CreateDbContextAsync(ct);
         if (!db.Database.IsSqlServer()) return null;
-        var rows = await db.Database.SqlQueryRaw<string>(
+        var rows = await db.Database.SqlQueryRaw<BeatVersionRow>(
             """
-            SELECT b.[Text] AS [Value]
+            SELECT b.[Text] AS [Text], b.[SysStart] AS [ValidFrom]
             FROM [Beats] FOR SYSTEM_TIME ALL AS b
             WHERE b.Id = {0}
             ORDER BY b.SysStart DESC
             OFFSET {1} ROWS FETCH NEXT 1 ROWS ONLY
             """, beatId, index).ToListAsync(ct);
-        return rows.FirstOrDefault();
+        var r = rows.FirstOrDefault();
+        return r == null ? null : new BeatVersion(r.Text ?? "", r.ValidFrom);
     }
+
+    public sealed record BeatVersion(string Text, DateTime ValidFrom);
+    private sealed class BeatVersionRow { public string? Text { get; set; } public DateTime ValidFrom { get; set; } }
 
     // ── Audio ────────────────────────────────────────────────────────────
 
@@ -1284,6 +1457,64 @@ public class StrandWorkbenchService
             try { cts.Cancel(); return true; } catch { return false; }
         }
         return false;
+    }
+
+    /// <summary>The fixed audition line. A pangram exercises a broad phoneme
+    /// spread in one short clip, so the operator hears a voice's character
+    /// without depending on whatever the strand's first beat happens to say.</summary>
+    public const string AuditionSampleText = "The quick brown fox jumped over the lazy dog.";
+
+    /// <summary>
+    /// Render the fixed <see cref="AuditionSampleText"/> with an arbitrary voice
+    /// profile and return the MP3 bytes — a throwaway preview for the voice
+    /// studio. NOTHING is persisted: this never touches the strand's pinned
+    /// voice, any beat's stored audio, or the audio-event ledger. Uses the
+    /// strand's deterministic seed so the sample previews how THIS strand's
+    /// voice realization would actually sound on these dials.
+    /// </summary>
+    public async Task<byte[]> AuditionVoiceAsync(Guid strandId, Models.VoiceProfile dials, CancellationToken ct = default)
+    {
+        ArgumentNullException.ThrowIfNull(dials);
+        if (string.IsNullOrWhiteSpace(dials.VoiceId))
+            throw new InvalidOperationException("Pick a voice to audition.");
+        if (!await tts.IsConfiguredAsync())
+            throw new InvalidOperationException("TTS is not configured (no ElevenLabs API key).");
+
+        // A plain fixed line carries no beat metadata, so synthesize it directly
+        // with the dials. The TTS layer snaps stability and drops similarity/style
+        // for v3; the strand seed anchors the voice realization.
+        var vs = new TtsVoiceSettings(dials.Stability, dials.SimilarityBoost, dials.Style,
+            Seed: DeriveSeed(strandId), ModelId: dials.Model);
+        var result = await tts.SynthesizeWithIdAsync(
+            AuditionSampleText, dials.VoiceId, outputFormat: "mp3_44100_128",
+            previousRequestIds: null, previousText: null, nextText: null,
+            voiceSettings: vs, ct);
+        return result.Bytes;
+    }
+
+    /// <summary>
+    /// Pin a voice profile's full dial set onto the strand's snapshot columns so
+    /// every later (re)record and publish renders through it — the durable
+    /// "tweak the voice for THIS strand" path. Overwrites VoiceId/VoiceModel and
+    /// the three voice_settings dials; leaves VoiceSeed intact so the strand
+    /// stays deterministic across the change.
+    /// </summary>
+    public async Task SetStrandVoiceAsync(Guid strandId, Models.VoiceProfile dials, CancellationToken ct = default)
+    {
+        ArgumentNullException.ThrowIfNull(dials);
+        await using var db = await dbFactory.CreateDbContextAsync(ct);
+        var strand = await db.Strands.FirstOrDefaultAsync(s => s.Id == strandId, ct)
+            ?? throw new InvalidOperationException($"Strand {strandId} not found.");
+
+        strand.VoiceId         = dials.VoiceId;
+        strand.VoiceModel      = dials.Model;
+        strand.VoiceStability  = dials.Stability;
+        strand.VoiceSimilarity = dials.SimilarityBoost;
+        strand.VoiceStyle      = dials.Style;
+        strand.VoiceSeed     ??= DeriveSeed(strandId);
+        db.StrandAudioEvents.Add(NewAudioEvent(strandId, null, null, "voice-set",
+            $"voice {dials.VoiceId}, model {dials.Model}, stability {dials.Stability}"));
+        await db.SaveChangesAsync(ct);
     }
 
     /// <summary>Render a SINGLE beat's audio in isolation — the unit of work
@@ -1527,18 +1758,10 @@ public class StrandWorkbenchService
                 EpisodeAudioService.WriteWavHeader(fs, checked((int)pcmTotal), 44100, 1, 16);
             }
 
-            byte[] finalBytes; string ext;
-            if (!string.IsNullOrEmpty(ffmpeg))
-            {
-                var tmpMp3 = Path.Combine(Path.GetTempPath(), $"ss-audiobook-{Guid.CreateVersion7():N}.mp3");
-                try
-                {
-                    await TranscodeWavToMp3Async(ffmpeg, tmpWav, tmpMp3, ct);
-                    finalBytes = await File.ReadAllBytesAsync(tmpMp3, ct); ext = "mp3";
-                }
-                finally { try { File.Delete(tmpMp3); } catch { } }
-            }
-            else { finalBytes = await File.ReadAllBytesAsync(tmpWav, ct); ext = "wav"; }
+            // Encode the assembled lossless WAV to the user's configured delivery
+            // format (Settings → Audiobook quality; default 320 kbps MP3). Falls
+            // back to the lossless WAV when ffmpeg is unavailable.
+            var (finalBytes, ext) = await EncodeAudiobookAsync(ffmpeg, tmpWav, ct);
 
             await audioStore.WriteCombinedAsync(strand.Slug, ext, finalBytes, ct);
 
@@ -1752,28 +1975,13 @@ public class StrandWorkbenchService
                     db.StrandAudioEvents.Add(NewAudioEvent(strandId, null, pub.Id, "wav-exported",
                         $"intermediate combined WAV, {new FileInfo(tmp).Length} bytes"));
 
-                    if (!string.IsNullOrEmpty(ffmpeg))
-                    {
-                        var tmpMp3 = Path.Combine(Path.GetTempPath(), $"ss-combine-mp3-{Guid.CreateVersion7():N}.mp3");
-                        try
-                        {
-                            await TranscodeWavToMp3Async(ffmpeg, tmp, tmpMp3, ct);
-                            combinedBytes = await File.ReadAllBytesAsync(tmpMp3, ct);
-                            await audioStore.WriteCombinedAsync(strand.Slug, "mp3", combinedBytes, ct);
-                            finalExt = "mp3";
-                            db.StrandAudioEvents.Add(NewAudioEvent(strandId, null, pub.Id, "mp3-produced",
-                                $"{strand.Slug}/strand.mp3, {combinedBytes.Length} bytes"));
-                        }
-                        finally { try { File.Delete(tmpMp3); } catch { } }
-                    }
-                    else
-                    {
-                        // No ffmpeg → publish the lossless WAV as-is.
-                        log.LogWarning("ffmpeg not found — publishing lossless WAV instead of MP3 for strand {S}", strandId);
-                        combinedBytes = await File.ReadAllBytesAsync(tmp, ct);
-                        await audioStore.WriteCombinedAsync(strand.Slug, "wav", combinedBytes, ct);
-                        finalExt = "wav";
-                    }
+                    // Encode to the configured delivery format (default 320 kbps
+                    // MP3), or ship the lossless WAV when ffmpeg is unavailable or
+                    // WAV is the selected format.
+                    (combinedBytes, finalExt) = await EncodeAudiobookAsync(ffmpeg, tmp, ct);
+                    await audioStore.WriteCombinedAsync(strand.Slug, finalExt, combinedBytes, ct);
+                    db.StrandAudioEvents.Add(NewAudioEvent(strandId, null, pub.Id, "audio-produced",
+                        $"{strand.Slug}/strand.{finalExt}, {combinedBytes.Length} bytes"));
                 }
                 finally { try { File.Delete(tmp); } catch { } }
             }
@@ -1917,10 +2125,41 @@ public class StrandWorkbenchService
             Detail = detail is { Length: > 1000 } d ? d[..1000] : detail,
         };
 
-    /// <summary>Transcode a combined WAV to MP3 via ffmpeg (libmp3lame, VBR ~q2
-    /// ≈190 kbps). Throws on a non-zero exit so the publish run records the
-    /// failure rather than silently shipping a missing/partial file.</summary>
-    private async Task TranscodeWavToMp3Async(string ffmpegPath, string wavPath, string mp3Path, CancellationToken ct)
+    /// <summary>Encode the assembled combined WAV to the user's configured
+    /// audiobook delivery format (Settings → <see cref="SettingsService.AudiobookFormat"/>;
+    /// default 320 kbps MP3). Returns the encoded bytes and the file extension.
+    /// When ffmpeg is missing — or the chosen format is lossless WAV — the WAV is
+    /// delivered as-is with no re-encode. The ElevenLabs <em>source</em> is always
+    /// fetched at the best fidelity the tier allows; this controls only the final
+    /// container/bitrate the listener receives.</summary>
+    private async Task<(byte[] Bytes, string Ext)> EncodeAudiobookAsync(string? ffmpegPath, string wavPath, CancellationToken ct)
+    {
+        var (ext, args) = settings?.ResolveAudiobookEncode()
+            ?? ("mp3", new[] { "-codec:a", "libmp3lame", "-b:a", "320k" });
+
+        if (string.IsNullOrEmpty(ffmpegPath) || args is null)
+        {
+            // No encoder available, or lossless-WAV requested → ship the WAV.
+            if (string.IsNullOrEmpty(ffmpegPath) && ext != "wav")
+                log.LogWarning("ffmpeg not found — delivering lossless WAV instead of {Ext}", ext);
+            return (await File.ReadAllBytesAsync(wavPath, ct), "wav");
+        }
+
+        var outPath = Path.Combine(Path.GetTempPath(), $"ss-audiobook-{Guid.CreateVersion7():N}.{ext}");
+        try
+        {
+            await EncodeWavAsync(ffmpegPath, wavPath, outPath, args, ct);
+            return (await File.ReadAllBytesAsync(outPath, ct), ext);
+        }
+        finally { try { File.Delete(outPath); } catch { } }
+    }
+
+    /// <summary>Run ffmpeg to encode <paramref name="wavPath"/> into
+    /// <paramref name="outPath"/> with the given audio-codec argument list (e.g.
+    /// <c>-codec:a libmp3lame -b:a 320k</c>). Throws on a non-zero exit so the
+    /// publish run records the failure rather than silently shipping a
+    /// missing/partial file.</summary>
+    private async Task EncodeWavAsync(string ffmpegPath, string wavPath, string outPath, string[] codecArgs, CancellationToken ct)
     {
         var psi = new System.Diagnostics.ProcessStartInfo
         {
@@ -1932,18 +2171,17 @@ public class StrandWorkbenchService
         };
         psi.ArgumentList.Add("-y");
         psi.ArgumentList.Add("-i"); psi.ArgumentList.Add(wavPath);
-        psi.ArgumentList.Add("-codec:a"); psi.ArgumentList.Add("libmp3lame");
-        psi.ArgumentList.Add("-qscale:a"); psi.ArgumentList.Add("2");
-        psi.ArgumentList.Add(mp3Path);
+        foreach (var a in codecArgs) psi.ArgumentList.Add(a);
+        psi.ArgumentList.Add(outPath);
         using var proc = System.Diagnostics.Process.Start(psi)
-            ?? throw new InvalidOperationException("Failed to start ffmpeg for WAV->MP3 transcode.");
+            ?? throw new InvalidOperationException("Failed to start ffmpeg for audiobook encode.");
         // Drain both pipes concurrently before awaiting exit to avoid a deadlock.
         var outTask = proc.StandardOutput.ReadToEndAsync(ct);
         var errTask = proc.StandardError.ReadToEndAsync(ct);
         await proc.WaitForExitAsync(ct);
         await outTask; var stderr = await errTask;
         if (proc.ExitCode != 0)
-            throw new InvalidOperationException($"ffmpeg WAV->MP3 failed (exit {proc.ExitCode}): {stderr}");
+            throw new InvalidOperationException($"ffmpeg audiobook encode failed (exit {proc.ExitCode}): {stderr}");
     }
 
     /// <summary>Decode an MP3 segment (as returned by ElevenLabs on non-Pro tiers)
@@ -2568,7 +2806,7 @@ public class StrandWorkbenchService
 
     /// <summary>A beat in reading-order context. Carries the parent strand id
     /// so multi-level UIs can group beats by source.</summary>
-    public record OrderedBeat(Beat Beat, Guid StrandId, double SortKey);
+    public record OrderedBeat(Beat Beat, Guid StrandId, double SortKey, bool IsEnabled = true);
 
     /// <summary>The fields the UI's per-beat "details" panel can edit. None
     /// of these touch prose or audio — they just steer the narration's
@@ -2578,7 +2816,6 @@ public class StrandWorkbenchService
         string? Synopsis,
         string? EmotionalTone,
         string? PaceHint,
-        string? FacetTag,
         string? StructureRole,
         int Act,
         string? SceneType,

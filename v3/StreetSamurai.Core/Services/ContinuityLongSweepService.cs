@@ -1,3 +1,4 @@
+using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.Hosting;
 using Microsoft.Extensions.Logging;
 
@@ -31,13 +32,18 @@ public class ContinuityLongSweepService : BackgroundService
     // the home-page cold-start for SQL connections.
     private static readonly TimeSpan StartupDelay        = TimeSpan.FromMinutes(2);
 
+    // Set BackgroundServices:Enabled=false in App Service config to stop DB keep-alive on zero-user deployments.
+    public bool Enabled { get; }
+
     private readonly ContinuityService continuity;
     private readonly ILogger<ContinuityLongSweepService> log;
 
-    public ContinuityLongSweepService(ContinuityService continuity, ILogger<ContinuityLongSweepService> log)
+    public ContinuityLongSweepService(ContinuityService continuity, ILogger<ContinuityLongSweepService> log,
+        IConfiguration configuration)
     {
         this.continuity = continuity;
         this.log        = log;
+        Enabled = configuration.GetValue<bool>("BackgroundServices:Enabled", defaultValue: true);
     }
 
     /// <summary>Last sweep result, surfaced for diagnostic / status pages.</summary>
@@ -50,6 +56,12 @@ public class ContinuityLongSweepService : BackgroundService
 
     protected override async Task ExecuteAsync(CancellationToken stoppingToken)
     {
+        if (!Enabled)
+        {
+            log.LogInformation("ContinuityLongSweepService disabled (BackgroundServices:Enabled=false).");
+            return;
+        }
+
         try { await Task.Delay(StartupDelay, stoppingToken); }
         catch (OperationCanceledException) { return; }
 

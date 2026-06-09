@@ -1,5 +1,5 @@
 @page "/entity/stub/{Slug}"
-@attribute [Authorize(Roles = "Contributor,Administrator")]
+@attribute [Authorize(Policy = MaPolicies.Admin)]
 @using StreetSamurai.Core.Models.Canon
 @using StreetSamurai.Core.Services
 @inject CharacterRepository Characters

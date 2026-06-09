@@ -1,5 +1,5 @@
 @page "/findings"
-@attribute [Authorize]
+@attribute [Authorize(Policy = MaPolicies.Admin)]
 @using Microsoft.AspNetCore.Authorization
 @using StreetSamurai.Core.Services
 @inject FindingsService Store

@@ -171,11 +171,11 @@ public class OutlineServiceTests
                 Beats =
                 [
                     new OutlineBeat { BeatIndex = 0, Title = "Opening", Goal = "Introduce Kyle on the Shelf",
-                        Seeds = ["katana's origin"], Tension = 3, FacetHint = "ghost", EmotionalArc = "melancholy" },
+                        Seeds = ["katana's origin"], Tension = 3, EmotionalArc = "melancholy" },
                     new OutlineBeat { BeatIndex = 1, Title = "The Contract", Goal = "Sable offers a job",
-                        Tension = 5, FacetHint = "mask" },
+                        Tension = 5 },
                     new OutlineBeat { BeatIndex = 2, Title = "Discovery", Goal = "Kyle finds evidence",
-                        Payoffs = ["katana's origin"], Tension = 7, FacetHint = "wound" },
+                        Payoffs = ["katana's origin"], Tension = 7 },
                 ]
             }
         ],

@@ -42,8 +42,13 @@ jobs:
       # Restore picks them up alongside nuget.org. The `--locked-mode`
       # flag is intentionally NOT set — bundled .nupkg files mean
       # packages.lock.json isn't a meaningful source of truth here.
+      # Restore with Release configuration so MindAttic.Authentication resolves as
+      # a NuGet package (PackageReference), not as a ProjectReference. The csproj
+      # conditionally includes a ProjectReference in Debug only; restoring without
+      # --property:Configuration=Release bakes the project path into project.assets.json
+      # and causes CS0234/CS0246 on every Release build.
       - name: Restore dependencies
-        run: dotnet restore v3/StreetSamurai.Blazor/StreetSamurai.Blazor.csproj
+        run: dotnet restore v3/StreetSamurai.Blazor/StreetSamurai.Blazor.csproj --property:Configuration=Release
 
       - name: Publish
         run: dotnet publish v3/StreetSamurai.Blazor/StreetSamurai.Blazor.csproj -c Release -o publish --no-restore
@@ -84,7 +89,7 @@ jobs:
       # Same NuGet.config / bundled-package setup as the build job; restore so
       # ApplyMigrations' transitive Core deps (Legion / Vault) resolve.
       - name: Restore ApplyMigrations
-        run: dotnet restore v3/ApplyMigrations/ApplyMigrations.csproj
+        run: dotnet restore v3/ApplyMigrations/ApplyMigrations.csproj --property:Configuration=Release
 
       # ApplyMigrations resolves the connection string from
       # ConnectionStrings__StreetSamurai (env wins over appsettings/LocalDB).

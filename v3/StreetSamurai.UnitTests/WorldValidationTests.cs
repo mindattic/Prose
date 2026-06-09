@@ -42,7 +42,6 @@ public class WorldValidationTests
 
         // All repositories consumed by XrefService
         services.AddSingleton<CharacterRepository>();
-        services.AddSingleton<SyntheticLifeRepository>();
         services.AddSingleton<DistrictRepository>();
         services.AddSingleton<FactionRepository>();
         services.AddSingleton<CorponationRepository>();

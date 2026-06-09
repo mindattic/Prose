@@ -160,10 +160,6 @@ public class EpisodeBeat
     /// <summary>"scene" | "summary" | "transition" | "interstitial".</summary>
     public string SceneType { get; set; } = "scene";
 
-    /// <summary>Character voice facet driving this beat — "WOUND", "IDEAL",
-    /// "MASK", "SHADOW", etc. Carries into narration tone.</summary>
-    public string? FacetTag { get; set; }
-
     /// <summary>Emotional charge tag: "tense", "wry", "tender", "violent",
     /// "quiet". Optional; helps TTS direction.</summary>
     public string? EmotionalTone { get; set; }

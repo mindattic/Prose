@@ -16,13 +16,12 @@ public class BeatPromptBuilderTests
     private const double BaseSimilarity = 0.75;
     private const double BaseStyle = 0.0;
 
-    private static Beat B(string? tone = null, string? facet = null, string? pace = null, string text = "Hello.") =>
+    private static Beat B(string? tone = null, string? pace = null, string text = "Hello.") =>
         new()
         {
             Id = Guid.NewGuid(),
             Text = text,
             EmotionalTone = tone,
-            FacetTag = facet,
             PaceHint = pace,
         };
 
@@ -49,35 +48,28 @@ public class BeatPromptBuilderTests
     [TestCase("tense", "[tense]")]
     public void AudioTagFor_KnownTone_ReturnsCanonicalTag(string tone, string expected)
     {
-        Assert.That(BeatPromptBuilder.AudioTagFor(tone, null, null), Is.EqualTo(expected));
-    }
-
-    [Test]
-    public void AudioTagFor_FacetTag_UsedWhenToneEmpty()
-    {
-        Assert.That(BeatPromptBuilder.AudioTagFor(null, "SHADOW", null), Is.EqualTo("[menacing]"));
-        Assert.That(BeatPromptBuilder.AudioTagFor(null, "WOUND", null),  Is.EqualTo("[somber]"));
+        Assert.That(BeatPromptBuilder.AudioTagFor(tone, null), Is.EqualTo(expected));
     }
 
     [Test]
     public void AudioTagFor_PaceHint_FallbackWhenNothingElse()
     {
-        Assert.That(BeatPromptBuilder.AudioTagFor(null, null, "languorous"), Is.EqualTo("[slowly]"));
-        Assert.That(BeatPromptBuilder.AudioTagFor(null, null, "staccato"),   Is.EqualTo("[clipped]"));
+        Assert.That(BeatPromptBuilder.AudioTagFor(null, "languorous"), Is.EqualTo("[slowly]"));
+        Assert.That(BeatPromptBuilder.AudioTagFor(null, "staccato"),   Is.EqualTo("[clipped]"));
     }
 
     [Test]
-    public void AudioTagFor_TonePrecedesFacet()
+    public void AudioTagFor_TonePrecedesPace()
     {
-        // EmotionalTone is the strongest signal — must win over Facet.
-        Assert.That(BeatPromptBuilder.AudioTagFor("tender", "SHADOW", null), Is.EqualTo("[softly]"));
+        // EmotionalTone is the strongest signal — must win over PaceHint.
+        Assert.That(BeatPromptBuilder.AudioTagFor("tender", "languorous"), Is.EqualTo("[softly]"));
     }
 
     [Test]
     public void AudioTagFor_NothingMaps_ReturnsNull()
     {
-        Assert.That(BeatPromptBuilder.AudioTagFor(null, null, null), Is.Null);
-        Assert.That(BeatPromptBuilder.AudioTagFor("plain", "neutral", "normal"), Is.Null);
+        Assert.That(BeatPromptBuilder.AudioTagFor(null, null), Is.Null);
+        Assert.That(BeatPromptBuilder.AudioTagFor("plain", "normal"), Is.Null);
     }
 
     // ── Build: prompt + voice settings together ──────────────────────────

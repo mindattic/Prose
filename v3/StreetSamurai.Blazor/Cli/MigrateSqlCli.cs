@@ -31,10 +31,14 @@ public static class MigrateSqlCli
         var charDropLegacy  = args.Contains("--drop-legacy-json");
         var charNoBackfill  = args.Contains("--no-backfill");
 
-        if (!schema && !charRelational && !charDropLegacy)
+        // Beat soft-delete: add IsEnabled to StrandBeats (and its history table).
+        var strandBeatSoftDelete = args.Contains("--strand-beat-soft-delete");
+
+        if (!schema && !charRelational && !charDropLegacy && !strandBeatSoftDelete)
         {
             Console.WriteLine("Usage:");
-            Console.WriteLine("  ss --migrate-sql --schema                  apply EF migrations + enable SYSTEM_VERSIONING");
+            Console.WriteLine("  ss --migrate-sql --schema                    apply EF migrations + enable SYSTEM_VERSIONING");
+            Console.WriteLine("  ss --migrate-sql --strand-beat-soft-delete   add IsEnabled column to StrandBeats/StrandBeats_History");
             Console.WriteLine();
             Console.WriteLine("  ss --migrate-sql --character-relational    add relational columns + bridges to Characters,");
             Console.WriteLine("                                             then backfill from Records.Json (--no-backfill skips Phase C)");
@@ -138,6 +142,39 @@ public static class MigrateSqlCli
             foreach (var s in rD.SchemaActions) Console.WriteLine($"  {s}");
             foreach (var e in rD.Errors) Console.WriteLine($"  ✘ {e}");
             failures += rD.Errors.Count > 0 ? 1 : 0;
+        }
+
+        if (strandBeatSoftDelete)
+        {
+            using var scope = sp.CreateScope();
+            var db = scope.ServiceProvider.GetRequiredService<StreetSamuraiDbContext>();
+
+            Console.WriteLine();
+            Console.WriteLine("[strand-beat-soft-delete]");
+            try
+            {
+                // StrandBeats and StrandBeats_History are temporal tables.
+                // To add a column we must briefly disable system versioning,
+                // alter both tables, then re-enable it.
+                await db.Database.ExecuteSqlRawAsync("""
+                    IF NOT EXISTS (SELECT 1 FROM sys.columns
+                                   WHERE object_id = OBJECT_ID('StrandBeats') AND name = 'IsEnabled')
+                    BEGIN
+                        ALTER TABLE [dbo].[StrandBeats] SET (SYSTEM_VERSIONING = OFF);
+                        ALTER TABLE [dbo].[StrandBeats]         ADD [IsEnabled] bit NOT NULL DEFAULT 1;
+                        ALTER TABLE [dbo].[StrandBeats_History] ADD [IsEnabled] bit NOT NULL DEFAULT 1;
+                        ALTER TABLE [dbo].[StrandBeats]
+                            SET (SYSTEM_VERSIONING = ON (HISTORY_TABLE = [dbo].[StrandBeats_History],
+                                                         DATA_CONSISTENCY_CHECK = OFF));
+                    END;
+                    """);
+                Console.WriteLine("  ✔ IsEnabled column added to StrandBeats (+ history table).");
+            }
+            catch (Exception ex)
+            {
+                Console.WriteLine($"  ✘ failed: {ex.Message}");
+                failures++;
+            }
         }
 
         return failures > 0 ? 1 : 0;

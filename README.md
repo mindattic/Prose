@@ -6,6 +6,8 @@ StreetSamurai writes novels. Not snippets, not summaries — chapter-length pros
 
 Live at **[streetsamurai.azurewebsites.net](https://streetsamurai.azurewebsites.net/)**.
 
+> 📖 **[docs/BIBLE.md](docs/BIBLE.md) is the architecture bible** (Codex L0) — the endpoint, laws, and architecture canon. [docs/USER_STORIES.md](docs/USER_STORIES.md) is the goal table with acceptance tests. [ARCHITECTURE.md](ARCHITECTURE.md) is now a pointer to the Bible. This README is the quick tour.
+
 ---
 
 ## Table of Contents
@@ -108,7 +110,7 @@ The writing surface is built on two entities: **Strand** (a work — book, story
 | `Kind` | `string` | `prose` (default), `book-title` (front-matter), `dedication` (centered italic), `quote` (blockquote, `BeatTitle` is the attribution). Free-form so new kinds need no schema migration. |
 | `GapAfterMs` | `int?` | Explicit silence in ms after this beat, before the next. `null` = use the auto-computed default (`ComputeTrailingSilenceMs`, 200 / 400 / 1000 / 1800ms by SceneType + terminator). `0` is a valid override (no silence). |
 | `GapAfterAudioPath` | `string?` | Optional recorded clip (rain, sigh, ambient) to play in the gap instead of digital silence. |
-| `BeatTitle / Synopsis / EmotionalTone / PaceHint / FacetTag / StructureRole / Act / SceneType` | various | Narrative metadata feeding the TTS prompt builder. |
+| `BeatTitle / Synopsis / EmotionalTone / PaceHint / StructureRole / Act / SceneType` | various | Narrative metadata feeding the TTS prompt builder. (`FacetTag` was a beat field — retired and eradicated; see §6.) |
 
 **The `/strand/{idOrSlug}` page** unifies writer, recorder, and listener:
 
@@ -116,7 +118,7 @@ The writing surface is built on two entities: **Strand** (a work — book, story
 - Each beat-card uses a **three-row layout**:
   - **Row 1 — header band.** Inline checkbox · `Beat #001` (zero-padded positional rank) · status/char chips · **format toolbar** (Bold / Italic / Underline / Strikethrough, icon-only, enabled only while editing) · right-aligned hover actions (copy-text · ✨ LLM · 🎙 re-record · 🗑 delete).
   - **Row 2 — body.** Click-to-edit toggle between the rendered read view (markdown + emoji-replaced tone tags) and a textarea that exposes the raw markers. The two states share the same box — no padding / border / font shift on switch, just a 3-pixel left rule appears on focus.
-  - **Row 3 — footer.** Audio player (if recorded) · meta chips (tone / pace / facet / details) · meta-panel (when open) · inline **gap-after editor** (`gap after  N ms (auto|custom) ✓ ↺`).
+  - **Row 3 — footer.** Audio player (if recorded) · meta chips (tone / pace / details) · meta-panel (when open) · inline **gap-after editor** (`gap after  N ms (auto|custom) ✓ ↺`).
 - Clicking the prose body opens the inline editor; the standalone "Edit" button was retired. Save / Cancel during edit are icon-only and float in the top-right corner so they don't push the body.
 - The ✨ button opens a **bottom-sheet LLM panel** seeded with the `strand-guid.beat-guid` handle and the current beat text. Header has an `id` copy button (CLI-friendly handle). Free-text instruction → preview → Apply (replaces the beat text and invalidates audio) or Discard.
 - The meta-panel exposes the `Kind` dropdown and `IsChapterStart` checkbox alongside the narrative-tone fields.
@@ -188,7 +190,7 @@ Point an MCP client (Claude Desktop / Claude Code / any MCP-compatible tool) at 
 | `get_beat`            | Pull one beat by handle. Returns every authoring field — text, kind, IsChapterStart, BeatTitle, gap-after, tone metadata, position in strand, and the prev/next beat ids so the caller can place new beats relative to it. |
 | `insert_beat`         | Add a new beat (top-of-strand or after a given beat). |
 | `update_beat_text`    | Replace the prose. Accepts the inline markdown + tone-tag conventions above; stored verbatim. |
-| `update_beat_metadata`| Set BeatTitle, Synopsis, EmotionalTone, PaceHint, FacetTag, StructureRole, Act, SceneType, **IsChapterStart**, **Kind** (`prose` / `book-title` / `dedication` / `quote`). |
+| `update_beat_metadata`| Set BeatTitle, Synopsis, EmotionalTone, PaceHint, StructureRole, Act, SceneType, **IsChapterStart**, **Kind** (`prose` / `book-title` / `dedication` / `quote`). (`FacetTag` was removed from the Beat model — eradicated.) |
 | `set_beat_gap_after` / `clear_beat_gap_after` | Override or clear the silence the audio engine inserts after this beat. |
 | `split_beat` / `join_beat` / `delete_beat` | Standard beat manipulation. |
 | `narrate_strand`      | Kick off TTS for every un-narrated beat in the strand. |

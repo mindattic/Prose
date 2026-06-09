@@ -366,29 +366,6 @@ public class TechnologyEnables
 }
 public class TechnologyStoryHook { public long Id { get; set; } public Guid TechnologyId { get; set; } public int Position { get; set; } public string Hook { get; set; } = ""; public Technology? Technology { get; set; } }
 
-// ── Facet ──────────────────────────────────────────────────────────────────
-
-public class Facet
-{
-    public Guid Id { get; set; }
-    /// <summary>Canonical name. Mirrors Entity.Name.</summary>
-    public string Name { get; set; } = "";
-    public string Label { get; set; } = "";
-    public string Domain { get; set; } = "";
-    public string Model { get; set; } = "";
-    public double Temperature { get; set; }
-    public string SystemPrompt { get; set; } = "";
-    // Voice (1:1) flattened.
-    public string VoiceTone { get; set; } = "";
-    public string VoiceStyle { get; set; } = "";
-    public Entity? Entity { get; set; }
-    public ICollection<FacetTrigger>      Triggers           { get; set; } = new List<FacetTrigger>();
-    public ICollection<FacetCoreMemory>   CoreMemories       { get; set; } = new List<FacetCoreMemory>();
-    public ICollection<FacetVoiceProhibition> VoiceProhibitions { get; set; } = new List<FacetVoiceProhibition>();
-}
-public class FacetTrigger     { public long Id { get; set; } public Guid FacetId { get; set; } public int Position { get; set; } public string Trigger { get; set; } = ""; public Facet? Facet { get; set; } }
-public class FacetCoreMemory  { public long Id { get; set; } public Guid FacetId { get; set; } public int Position { get; set; } public string Memory { get; set; } = ""; public Facet? Facet { get; set; } }
-public class FacetVoiceProhibition { public long Id { get; set; } public Guid FacetId { get; set; } public int Position { get; set; } public string Prohibition { get; set; } = ""; public Facet? Facet { get; set; } }
 
 // ── Motif ──────────────────────────────────────────────────────────────────
 

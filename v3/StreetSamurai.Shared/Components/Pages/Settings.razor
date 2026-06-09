@@ -8,12 +8,9 @@
 @inject XrefService XrefSvc
 @inject ExportDiscoveryService ExportDiscovery
 @inject CanonExportService CanonExport
-@* @inject FtpPublishService FtpSvc *@
 @inject HtmlExportService HtmlExportSvc
-@inject AuthService Auth
 @inject EmailService EmailSvc
-@inject PasswordResetService PwdReset
-@inject UserRepository UserRepo
+@inject PasswordPolicyDescriptor Policy
 @inject AuthenticationStateProvider AuthStateProvider
 @inject StreetSamurai.Core.Services.AudioReconciliationService AudioReconciler
 @inject StreetSamurai.Core.Interfaces.IAudioStore RuntimeAudioStore
@@ -559,12 +556,22 @@
                     </div>
                 </div>
                 <div class="row g-3 mt-2">
-                    <div class="col-md-12">
+                    <div class="col-md-8">
                         <label class="form-label text-muted">Publish output folder</label>
                         <input type="text" class="form-control bg-dark text-light border-secondary"
                                placeholder="Leave blank to use your Downloads folder"
                                @bind="SettingsSvc.PublishOutputDirectory" @bind:event="onchange" />
                         <div class="form-text text-muted">Where Publish drops the combined audio file so it's easy to find. Blank = your Downloads folder. The in-app player keeps its own internal copy.</div>
+                    </div>
+                    <div class="col-md-4">
+                        <label class="form-label text-muted">Audiobook quality</label>
+                        <select class="form-select bg-dark text-light border-secondary" @bind="SettingsSvc.AudiobookFormat">
+                            @foreach (var (key, label, _) in StreetSamurai.Core.Services.SettingsService.AudiobookFormats)
+                            {
+                                <option value="@key">@label</option>
+                            }
+                        </select>
+                        <div class="form-text text-muted">Format/bitrate of the published audiobook file. The narration is always fetched from ElevenLabs at the highest fidelity your tier allows (lossless when available); this controls the final encode you receive.</div>
                     </div>
                 </div>
                 <div class="row g-3 mt-2">
@@ -592,6 +599,69 @@
                             {
                                 <small class="ms-2 @(ttsTestSuccess ? "text-success" : "text-warning")">@ttsTestResult</small>
                             }
+                        }
+                    </div>
+                </div>
+
+                @* Tier & credits — what your ElevenLabs plan unlocks + characters remaining. *@
+                <div class="row g-3 mt-2">
+                    <div class="col-12">
+                        <div class="d-flex align-items-center gap-2 flex-wrap">
+                            <button class="btn btn-sm btn-outline-info" @onclick="CheckTier" disabled="@(!ttsConfigured || checkingTier)">
+                                @if (checkingTier) { <span class="spinner-border spinner-border-sm me-1"></span> }
+                                else { <i class="bi bi-clipboard-data me-1"></i> }
+                                Check tier &amp; credits
+                            </button>
+                            @if (tierError != null)
+                            {
+                                <small class="text-warning">@tierError</small>
+                            }
+                        </div>
+
+                        @if (subscription != null)
+                        {
+                            <div class="border border-secondary rounded p-3 mt-2 bg-black">
+                                <div class="d-flex flex-wrap align-items-center gap-3 mb-2">
+                                    <span>Tier: <span class="badge bg-info text-dark text-capitalize">@subscription.Tier</span></span>
+                                    @if (!string.IsNullOrWhiteSpace(subscription.Status))
+                                    {
+                                        <span class="text-muted small text-capitalize">Status: @subscription.Status</span>
+                                    }
+                                </div>
+
+                                <div class="d-flex justify-content-between small mb-1">
+                                    <span class="text-muted">Character credits <span class="text-secondary">(ElevenLabs bills per character, not per token)</span></span>
+                                    <span><strong>@subscription.CharactersRemaining.ToString("N0")</strong> remaining of @subscription.CharacterLimit.ToString("N0")</span>
+                                </div>
+                                <div class="progress bg-secondary" style="height:8px;">
+                                    <div class="progress-bar @(subscription.UsedFraction >= 0.9 ? "bg-danger" : subscription.UsedFraction >= 0.75 ? "bg-warning" : "bg-success")"
+                                         role="progressbar" style="width:@((subscription.UsedFraction * 100).ToString("F1", System.Globalization.CultureInfo.InvariantCulture))%"></div>
+                                </div>
+                                <div class="text-muted small mt-1">
+                                    @subscription.CharacterCount.ToString("N0") used
+                                    @if (subscription.NextResetUtc is { } reset)
+                                    {
+                                        <text> · resets @reset.ToLocalTime().ToString("yyyy-MM-dd")</text>
+                                    }
+                                </div>
+
+                                <hr class="border-secondary my-2" />
+                                <div class="small">
+                                    <div class="text-muted mb-1">Premium output formats your tier unlocks:</div>
+                                    @if (subscription.UnlockedPremiumFormats.Count == 0)
+                                    {
+                                        <span class="text-muted">Standard formats only (up to <code>mp3_44100_128</code>). Creator unlocks 192 kbps MP3; Pro unlocks lossless PCM.</span>
+                                    }
+                                    else
+                                    {
+                                        @foreach (var f in subscription.UnlockedPremiumFormats)
+                                        {
+                                            <span class="badge bg-success me-1">@f</span>
+                                        }
+                                        <span class="text-muted ms-1">— plus all standard formats. The audiobook publisher auto-picks the best of these.</span>
+                                    }
+                                </div>
+                            </div>
                         }
                     </div>
                 </div>
@@ -881,85 +951,19 @@
         <div class="card bg-dark text-light border-secondary">
             <div class="card-header text-muted">Account</div>
             <div class="card-body">
-                @if (acctStep == AcctStep.Request)
-                {
-                    <div class="d-flex flex-column gap-3" style="max-width: 400px;">
-                        <p class="text-muted small mb-0">Change your admin account password. A 6-digit code will be sent to <strong>@acctEmail</strong>.</p>
-                        @if (!string.IsNullOrEmpty(acctError))
+                <div class="d-flex flex-column gap-3" style="max-width: 400px;">
+                    @* Presentation-only form; the MindAttic.Authentication endpoint
+                       (/_ma-auth/change-password) owns the change with current-password
+                       verification, then redirects to /account (the Profile page) where
+                       the success/error status surfaces. *@
+                    <MaChangePassword />
+                    <div class="text-muted" style="font-size: 0.72rem; line-height: 1.6;">
+                        @foreach (var req in Policy.Requirements)
                         {
-                            <div class="alert alert-danger py-2 small">@acctError</div>
+                            <div><i class="bi bi-dot"></i> @req</div>
                         }
-                        <button class="btn btn-sm btn-outline-danger" @onclick="AcctSendCode" disabled="@acctBusy">
-                            @if (acctBusy) { <span class="spinner-border spinner-border-sm me-1"></span> }
-                            <i class="bi bi-key"></i><div class="btn-lbl"> Change Password</div>
-                        </button>
                     </div>
-                }
-                else if (acctStep == AcctStep.Verify)
-                {
-                    <div class="d-flex flex-column gap-3" style="max-width: 400px;">
-                        <p class="text-muted small mb-0">Enter the 6-digit code sent to <strong>@acctEmail</strong>. Expires in 15 minutes.</p>
-                        @if (!string.IsNullOrEmpty(acctError))
-                        {
-                            <div class="alert alert-danger py-2 small">@acctError</div>
-                        }
-                        <div>
-                            <label class="form-label small text-muted">Verification Code</label>
-                            <input type="text" maxlength="6" inputmode="numeric" pattern="[0-9]*"
-                                   class="form-control form-control-sm bg-dark text-light border-secondary"
-                                   style="max-width: 160px;"
-                                   @bind="acctCode" @bind:event="oninput" placeholder="000000" />
-                        </div>
-                        <div class="d-flex gap-2">
-                            <button class="btn btn-sm btn-danger" @onclick="AcctVerifyCode"><div class="btn-lbl">Verify Code</div></button>
-                            <button class="btn btn-sm btn-link text-muted" @onclick="AcctCancel"><div class="btn-lbl">Cancel</div></button>
-                        </div>
-                    </div>
-                }
-                else if (acctStep == AcctStep.SetPassword)
-                {
-                    <div class="d-flex flex-column gap-3" style="max-width: 400px;">
-                        @if (!string.IsNullOrEmpty(acctError))
-                        {
-                            <div class="alert alert-danger py-2 small">@acctError</div>
-                        }
-                        <div>
-                            <label class="form-label small text-muted">New Password</label>
-                            <input type="password" class="form-control form-control-sm bg-dark text-light border-secondary"
-                                   @bind="acctNewPwd" @bind:event="oninput" />
-                        </div>
-                        <div>
-                            <label class="form-label small text-muted">Confirm New Password</label>
-                            <input type="password" class="form-control form-control-sm bg-dark text-light border-secondary"
-                                   @bind="acctConfirmPwd" @bind:event="oninput" />
-                        </div>
-                        <div class="text-muted" style="font-size: 0.72rem; line-height: 1.5;">
-                            @foreach (var req in PasswordRequirements(acctNewPwd))
-                            {
-                                <div>
-                                    <i class="bi @(req.Met ? "bi-check-circle-fill text-success" : "bi-circle text-secondary")"></i>
-                                    <span class="@(req.Met ? "text-success" : "text-secondary")"> @req.Label</span>
-                                </div>
-                            }
-                        </div>
-                        <div class="d-flex gap-2">
-                            <button class="btn btn-sm btn-success" @onclick="AcctSubmitPassword"
-                                    disabled="@(AuthService.GetPasswordError(acctNewPwd) != null || acctNewPwd != acctConfirmPwd)">
-                                <i class="bi bi-floppy"></i><div class="btn-lbl"> Save New Password</div>
-                            </button>
-                            <button class="btn btn-sm btn-link text-muted" @onclick="AcctCancel"><div class="btn-lbl">Cancel</div></button>
-                        </div>
-                    </div>
-                }
-                else if (acctStep == AcctStep.Done)
-                {
-                    <div class="d-flex flex-column gap-3" style="max-width: 400px;">
-                        <div class="alert alert-success py-2 small">
-                            <i class="bi bi-check-circle-fill"></i> Password changed successfully.
-                        </div>
-                        <button class="btn btn-sm btn-outline-secondary" @onclick="AcctCancel"><div class="btn-lbl">Done</div></button>
-                    </div>
-                }
+                </div>
             </div>
         </div>
     </div>
@@ -1000,6 +1004,9 @@
     private bool testingTts;
     private string? ttsTestResult;
     private bool ttsTestSuccess;
+    private bool checkingTier;
+    private string? tierError;
+    private TtsSubscription? subscription;
     private bool confirmReset;
     private bool rebuilding;
     private bool validating;
@@ -1142,15 +1149,9 @@
         // Repo dropdown for canon export — auto-discovered, ordered by name.
         repoCounts = ExportDiscovery.GetRepoCounts();
 
-        var authState = await AuthStateProvider.GetAuthenticationStateAsync();
-        var uid = authState.User.FindFirst("UserId")?.Value ?? "";
-        if (!string.IsNullOrEmpty(uid))
-        {
-            var user = UserRepo.GetById(uid);
-            acctUserId = uid;
-            acctEmail = user?.Email ?? "";
-            smtpTestTarget = acctEmail;
-        }
+        // Default the SMTP self-test recipient to the signed-in account. Under
+        // MindAttic.Authentication the username IS the email (login is by username).
+        smtpTestTarget = Access.CurrentUserName == "Visitor" ? "" : Access.CurrentUserName;
 
         _ = TestAllProviders();
     }
@@ -1286,6 +1287,20 @@
         }
         catch (Exception ex) { ttsTestSuccess = false; ttsTestResult = ex.Message; }
         finally { testingTts = false; }
+    }
+
+    /// <summary>Query ElevenLabs for the account's tier, character credits, and
+    /// the premium output formats the plan unlocks.</summary>
+    private async Task CheckTier()
+    {
+        checkingTier = true; tierError = null;
+        try
+        {
+            subscription = await TtsSvc.GetSubscriptionAsync();
+            if (subscription == null) tierError = "Configure your ElevenLabs API key first.";
+        }
+        catch (Exception ex) { tierError = ex.Message; subscription = null; }
+        finally { checkingTier = false; }
     }
 
     private void SaveSettings() { _ = SettingsSvc.TtsModel; }
@@ -1524,97 +1539,7 @@
         finally { smtpTesting = false; }
     }
 
-    // ── Account — admin password change ───────────────────
-    private enum AcctStep { Request, Verify, SetPassword, Done }
-    private AcctStep acctStep = AcctStep.Request;
-    private string acctUserId = "";
-    private string acctEmail = "";
-    private string acctCode = "";
-    private string acctNewPwd = "";
-    private string acctConfirmPwd = "";
-    private string acctError = "";
-    private bool acctBusy;
-
-    private async Task AcctSendCode()
-    {
-        acctError = "";
-        acctBusy = true;
-        try
-        {
-            if (!EmailSvc.IsConfigured)
-            {
-                acctError = "SMTP is not configured. Fill in the SMTP section above and save first.";
-                return;
-            }
-            if (string.IsNullOrWhiteSpace(acctEmail))
-            {
-                acctError = "Your account has no email address. Contact system support.";
-                return;
-            }
-            var code = PwdReset.GenerateCode(acctUserId);
-            await EmailSvc.SendAsync(
-                acctEmail,
-                "Street Samurai — Password Reset Code",
-                $"Your password reset code is: {code}\n\nThis code expires in 15 minutes.\nIf you did not request this, ignore this email.");
-            acctStep = AcctStep.Verify;
-        }
-        catch (Exception ex)
-        {
-            acctError = $"Failed to send code: {ex.Message}";
-        }
-        finally { acctBusy = false; }
-    }
-
-    private void AcctVerifyCode()
-    {
-        acctError = "";
-        if (string.IsNullOrWhiteSpace(acctCode)) { acctError = "Enter the 6-digit code."; return; }
-        if (!PwdReset.ValidateCode(acctUserId, acctCode))
-        {
-            acctError = "Invalid or expired code. Request a new one.";
-            acctStep = AcctStep.Request;
-            acctCode = "";
-            return;
-        }
-        acctNewPwd = "";
-        acctConfirmPwd = "";
-        acctStep = AcctStep.SetPassword;
-    }
-
-    private void AcctSubmitPassword()
-    {
-        acctError = "";
-        var err = AuthService.GetPasswordError(acctNewPwd);
-        if (err != null) { acctError = err; return; }
-        if (acctNewPwd != acctConfirmPwd) { acctError = "Passwords do not match."; return; }
-        try
-        {
-            Auth.ChangePassword(acctUserId, acctNewPwd);
-            acctNewPwd = "";
-            acctConfirmPwd = "";
-            acctStep = AcctStep.Done;
-        }
-        catch (Exception ex) { acctError = ex.Message; }
-    }
-
-    private void AcctCancel()
-    {
-        PwdReset.CancelCode(acctUserId);
-        acctStep = AcctStep.Request;
-        acctCode = "";
-        acctNewPwd = "";
-        acctConfirmPwd = "";
-        acctError = "";
-    }
-
-    private record PasswordReq(string Label, bool Met);
-
-    private static IEnumerable<PasswordReq> PasswordRequirements(string pwd) =>
-    [
-        new("At least 8 characters", pwd.Length >= 8),
-        new("One uppercase letter", pwd.Any(char.IsUpper)),
-        new("One lowercase letter", pwd.Any(char.IsLower)),
-        new("One number", pwd.Any(char.IsDigit)),
-        new($"One special character ({AuthService.SpecialChars})", pwd.Any(c => AuthService.SpecialChars.Contains(c))),
-    ];
+    // Account password change is handled by the MindAttic.Authentication
+    // /_ma-auth/change-password endpoint (rendered by <MaChangePassword/> above),
+    // which redirects to /account (the Profile page) where status surfaces.
 }

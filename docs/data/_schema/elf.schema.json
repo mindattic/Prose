@@ -1,0 +1,24 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "$id": "ss://schema/elf",
+  "title": "StreetSamurai canon — E.L.F. (engine_data/elfs/*.json)",
+  "description": "Emergent/Electronic Life Form. A sentient species that lives in Characters (SS-LAW-4) once promoted; the engine_data/elfs corpus is the seed shape. id derived as elf.<slug(name)>.",
+  "type": "object",
+  "required": ["type", "name"],
+  "additionalProperties": true,
+  "properties": {
+    "type": { "const": "elf" },
+    "name": { "type": "string" },
+    "aliases": { "type": "array", "items": { "type": "string" } },
+    "classification": { "type": "string" },
+    "disposition": { "type": "string" },
+    "habitat": { "type": "string" },
+    "origin": { "type": "string" },
+    "status": { "type": "string" },
+    "description": { "type": "string" },
+    "observed_behavior": { "type": "string" },
+    "encounter_frequency": { "type": "string" },
+    "location": { "type": "string" },
+    "story_hooks": { "type": "array", "items": { "type": "string" } }
+  }
+}

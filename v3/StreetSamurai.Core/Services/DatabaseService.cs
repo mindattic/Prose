@@ -12,7 +12,6 @@ namespace StreetSamurai.Core.Services;
 public class DatabaseService : IDatabaseService
 {
     private readonly CharacterRepository characters;
-    private readonly FacetRepository facets;
     private readonly DistrictRepository districts;
     private readonly FactionRepository factions;
     private readonly CorponationRepository corponations;
@@ -27,7 +26,7 @@ public class DatabaseService : IDatabaseService
     private readonly ToneBibleRepository toneBible;
 
     public DatabaseService(
-        CharacterRepository characters, FacetRepository facets,
+        CharacterRepository characters,
         DistrictRepository districts, FactionRepository factions,
         CorponationRepository corponations, WorldbuildingDocRepository docs,
         WeaponryRepository weaponry, EquipmentRepository equipment,
@@ -37,7 +36,6 @@ public class DatabaseService : IDatabaseService
         ToneBibleRepository toneBible)
     {
         this.characters = characters;
-        this.facets = facets;
         this.districts = districts;
         this.factions = factions;
         this.corponations = corponations;
@@ -55,7 +53,6 @@ public class DatabaseService : IDatabaseService
     // ── Typed Accessors ─────────────────────────────────
 
     public List<CharacterData> Characters => characters.GetAll();
-    public List<FacetData> Facets => facets.GetAll();
     public List<DistrictData> Districts => districts.GetAll();
     public List<FactionData> Factions => factions.GetAll();
     public List<CorponationData> Corponations => corponations.GetAll();
@@ -71,7 +68,6 @@ public class DatabaseService : IDatabaseService
     public void Reload()
     {
         characters.Reload();
-        facets.Reload();
         districts.Reload();
         factions.Reload();
         corponations.Reload();
@@ -185,12 +181,16 @@ public class DatabaseService : IDatabaseService
     {
         var tb = ToneBible;
         var lines = new List<string> { "NARRATIVE TONE — THESE DEFINE HOW THE STORY FEELS:" };
-        foreach (var rule in tb.ToneRules.Take(8))
+        // Caps are headroom, not a hard 8/4 — the canon-harvested voice rules are
+        // appended to these lists and MUST reach the generator/re-beater prompt,
+        // not get truncated past an arbitrary cutoff (the whole point of training
+        // on canon is that the generator uses it).
+        foreach (var rule in tb.ToneRules.Take(40))
             lines.Add($"  - {rule}");
         if (tb.DialogueRules.Any())
         {
             lines.Add("DIALOGUE:");
-            foreach (var rule in tb.DialogueRules.Take(4))
+            foreach (var rule in tb.DialogueRules.Take(40))
                 lines.Add($"  - {rule}");
         }
         if (tb.StoryStructure.Any())
@@ -236,6 +236,17 @@ public class DatabaseService : IDatabaseService
     {
         var rules = LiteraryRules;
         var lines = new List<string>();
+
+        // What a beat IS — the codified story-beat doctrine. Emitted first so every
+        // generation/segmentation prompt is anchored on the unit it's producing.
+        var bd = rules.BeatDoctrine;
+        if (bd != null && !string.IsNullOrWhiteSpace(bd.Definition))
+        {
+            lines.Add("WHAT A BEAT IS:");
+            lines.Add($"  {bd.Definition}");
+            foreach (var r in bd.Rules)
+                lines.Add($"  - {r}");
+        }
 
         lines.Add($"SENTENCE MAX: {rules.SentenceMaxWords} words");
         if (rules.ParagraphRequirements.Any())

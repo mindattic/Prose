@@ -10,7 +10,6 @@ namespace StreetSamurai.Core.Services;
 public class ThematicIndexService
 {
     private readonly DatabaseService db;
-    private readonly SyntheticLifeRepository synthRepo;
     private readonly GenemodRepository genewareRepo;
     private readonly TransportationRepository transportRepo;
     private readonly VocabularyRepository vocabRepo;
@@ -25,14 +24,13 @@ public class ThematicIndexService
     private bool built;
 
     public ThematicIndexService(
-        DatabaseService db, SyntheticLifeRepository synthRepo,
+        DatabaseService db,
         GenemodRepository genewareRepo, TransportationRepository transportRepo,
         VocabularyRepository vocabRepo, QuoteRepository quoteRepo,
         ConsumerGoodRepository goodsRepo, PharmaceuticalRepository pharmaRepo,
         MaterialRepository substrateRepo, AmmunitionRepository ammoRepo)
     {
         this.db = db;
-        this.synthRepo = synthRepo;
         this.genewareRepo = genewareRepo;
         this.transportRepo = transportRepo;
         this.vocabRepo = vocabRepo;
@@ -62,8 +60,6 @@ public class ThematicIndexService
             IndexByTags(newIndex, t.Name, "technology", FirstSentence(t.Description), t.Tags);
         foreach (var e in db.Equipment)
             IndexByTags(newIndex, e.Name, "equipment", FirstSentence(e.Description), e.Tags);
-        foreach (var s in synthRepo.GetAll())
-            IndexByTags(newIndex, s.Name, "synthetic", FirstSentence(s.Description), s.Tags);
         foreach (var g in genewareRepo.GetAll())
             IndexByTags(newIndex, g.Name, "genemods", FirstSentence(g.Description), g.Tags);
         foreach (var t in transportRepo.GetAll())

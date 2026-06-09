@@ -23,6 +23,7 @@ public class StrandReviewService
     private readonly VotingConfiguration cfg;
     private readonly StrandMarkdownExporter exporter;
     private readonly IDbContextFactory<StreetSamuraiDbContext> dbFactory;
+    private readonly FindingsService findings;
     private readonly ILogger<StrandReviewService> log;
 
     private const int MaxConcurrency = 10;
@@ -32,12 +33,14 @@ public class StrandReviewService
         VotingConfiguration cfg,
         StrandMarkdownExporter exporter,
         IDbContextFactory<StreetSamuraiDbContext> dbFactory,
+        FindingsService findings,
         ILogger<StrandReviewService> log)
     {
         this.legion = legion;
         this.cfg = cfg;
         this.exporter = exporter;
         this.dbFactory = dbFactory;
+        this.findings = findings;
         this.log = log;
     }
 
@@ -967,6 +970,10 @@ Be specific; do not invent praise the reviews don't support.";
         var strand = await db.Strands.FirstOrDefaultAsync(s => s.Id == strandId, ct);
         if (strand == null) return;
 
+        // Remember the score before this recompute so we can detect a strand
+        // crossing the 80% "winner" threshold and auto-flag it for a voice harvest.
+        var previousScore = strand.Score;
+
         var latestHash = await db.StrandReviews
             .Where(r => r.StrandId == strandId)
             .OrderByDescending(r => r.ReviewedAt)
@@ -1023,6 +1030,27 @@ Be specific; do not invent praise the reviews don't support.";
         }
 
         await db.SaveChangesAsync(ct);
+
+        // Auto-flag a freshly-crowned winner (crossed <80 → ≥80) for a voice
+        // harvest. Lightweight on purpose — it raises a VOICE-HARVEST finding for
+        // visibility; the actual (LLM-heavy) harvest runs on demand via
+        // `ss --harvest-voice`, keeping the review loop cheap.
+        if ((previousScore ?? 0) < 80 && (strand.Score ?? 0) >= 80)
+        {
+            try
+            {
+                findings.Upsert(
+                    filePath:     $"strand:{strand.Slug}",
+                    chapterId:    null,
+                    category:     FindingCategory.Voice,
+                    severity:     FindingSeverity.Medium,
+                    summary:      $"VOICE-HARVEST: \"{strand.Title}\" reached {strand.Score:0.#}% — harvest its voice into the rules ( ss --harvest-voice --slug {strand.Slug} ).",
+                    snippet:      null,
+                    suggestedFix: "Run the voice harvest, then approve the proposed rules.");
+                log.LogInformation("Strand {Slug} crossed 80% ({Score:0.#}) — raised VOICE-HARVEST finding.", strand.Slug, strand.Score);
+            }
+            catch (Exception ex) { log.LogWarning(ex, "Failed to raise VOICE-HARVEST finding for {Slug}", strand.Slug); }
+        }
     }
 
     // ── helpers ──────────────────────────────────────────────────────────

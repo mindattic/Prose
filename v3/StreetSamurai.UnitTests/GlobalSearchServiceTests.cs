@@ -14,7 +14,6 @@ public class GlobalSearchServiceTests
 
     // All repos needed by GlobalSearchService
     private CharacterRepository chars = null!;
-    private SyntheticLifeRepository synths = null!;
     private CorponationRepository corps = null!;
     private DistrictRepository districts = null!;
     private FactionRepository factions = null!;
@@ -48,7 +47,7 @@ public class GlobalSearchServiceTests
         tempDir = Path.Combine(Path.GetTempPath(), $"ss_search_{Guid.NewGuid():N}");
         var engDir = Path.Combine(tempDir, "engine_data");
         foreach (var sub in new[] {
-            "people", "synthetics", "corponations", "places", "factions",
+            "people", "corponations", "places", "factions",
             "weaponry", "ammunition", "equipment", "technology", "cyberware",
             "apparel", "genemods", "pharmaceuticals", "materials", "transportation",
             "automata", "archetypes", "subsidiaries", "entertainment", "consumer_goods",
@@ -57,7 +56,7 @@ public class GlobalSearchServiceTests
         }) Directory.CreateDirectory(Path.Combine(engDir, sub));
 
         var paths = new TestPathProviderWithRoot(tempDir);
-        chars = new(paths); synths = new(paths);
+        chars = new(paths);
         corps = new(paths); districts = new(paths); factions = new(paths);
         weaponry = new(paths); ammunition = new(paths); equipment = new(paths);
         technology = new(paths); cyberware = new(paths); apparel = new(paths);
@@ -69,7 +68,7 @@ public class GlobalSearchServiceTests
         labSpecimens = new(paths); flyoverEntities = new(paths); psionics = new(paths);
 
         svc = new GlobalSearchService(
-            chars, synths, corps, districts, factions,
+            chars, corps, districts, factions,
             weaponry, ammunition, equipment, technology, cyberware,
             apparel, genemods, pharmaceuticals, materials, transportation,
             automata, archetypes, subsidiaries, entertainment, consumerGoods,

@@ -1,0 +1,24 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "$id": "ss://schema/lab_specimen",
+  "title": "StreetSamurai canon — Lab Specimen (engine_data/lab_specimens/*.json)",
+  "description": "A contained/escaped lab-origin entity. Carries its own opaque hex id on disk.",
+  "type": "object",
+  "required": ["id", "type", "name"],
+  "additionalProperties": true,
+  "properties": {
+    "id": { "type": "string" },
+    "type": { "const": "lab_specimen" },
+    "name": { "type": "string" },
+    "aliases": { "type": "array", "items": { "type": "string" } },
+    "classification": { "type": "string" },
+    "origin_lab": { "type": "string" },
+    "substrate": { "type": "string" },
+    "physical_description": { "type": "string" },
+    "behavioral_profile": { "type": "string" },
+    "threat_level": { "type": "string" },
+    "containment_status": { "type": "string" },
+    "story_hooks": { "type": "array", "items": { "type": "string" } },
+    "tags": { "type": "array", "items": { "type": "string" } }
+  }
+}
