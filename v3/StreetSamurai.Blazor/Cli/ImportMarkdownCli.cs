@@ -180,7 +180,10 @@ public static class ImportMarkdownCli
         {
             // Drop heading lines that appear between beats (chapter markers from export).
             if (HeadingLine.IsMatch(line)) continue;
-            sb.AppendLine(line);
+            // '\n' rather than AppendLine: beats are stored with LF endings, and
+            // Environment.NewLine (CRLF) makes every multi-line beat compare as
+            // "changed" on a no-op round-trip.
+            sb.Append(line).Append('\n');
         }
         return sb.ToString().Trim();
     }
