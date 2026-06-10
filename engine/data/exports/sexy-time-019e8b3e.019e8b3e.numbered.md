@@ -5,7 +5,9 @@ _Kyle comes home bleeding; Pixel patches him up, and for once he doesn't pull aw
 ## Across the Hall
 
 [Beat 1]
-He makes it up the stairs of The Pivot on a banister and a bad idea, leaving a dark smear on the wall that he'll feel guilty about later. The second floor announces Pixel the way it always does — bass through her door at a volume that should bother the building more than it does, the clatter of something being tested and found wanting. Kyle stands in the hall with his hand pressed to his side and the dark coming up between his fingers, and he does the math he always does: knock, or bleed quietly and not be a problem.
+The Pivot sits two blocks past the Arcturus checkpoint that bleeds amber across the wet street all night, the booth that scans you for plate and intent and waves you through if you're nobody worth stopping, and tonight Kyle is gloriously nobody. He leaves the slug-rail hum of the gray zone behind him at the door — that low ferrocrete thrum the Pulse pushes up through everything this close to the lake — and trades it for the warmer ruin of home.
+
+He makes it up the stairs of The Pivot on a banister and a bad idea, leaving a dark smear on the wall that he'll feel guilty about later. The second floor announces Pixel the way it always does — bass through her door at a volume that should bother the building more than it does, the clatter of something being tested and found wanting. Kyle stands in the hall with his hand pressed to his side, blood dark between his fingers, and he does the math he always does: knock, or bleed quietly and not be a problem.
 
 He knocks. It comes out softer than a knock should.
 
@@ -24,7 +26,7 @@ She clears the kitchen table with her forearm — a soldering iron, a half-flaye
 
 He gets it half over his head before the wound files a complaint, and she's there, peeling the rest of it off him like a bandage from skin, brisk, no ceremony. Then she stops being brisk.
 
-She has seen Kyle hurt before. She has not, somehow, seen *this* much of him — the whole spread of it under the kitchen light. A long pale seam under his ribs, white with age. A burn that climbs his left shoulder in the shape of a decision that wasn't his.
+She has seen Kyle hurt before. She has not, somehow, seen *this* much of him — the whole spread of it under the kitchen light. A long pale seam under his ribs, white with age. A burn that climbs his left shoulder, old and uneven.
 
 "Stop cataloguing me," he says.
 
@@ -46,7 +48,7 @@ She should be done. The wound is closed; the forearm is wrapped; the shoulder is
 
 Her hand is still flat on his stomach where she braced to stitch him, and it stays, and then it doesn't stay still — it moves, slow, down the ridges and over the old burn and along the pale seam under his ribs, reading him the way her eyes read everything, except her eyes are closed now. She traces a scar from end to end like she's deciding whether to forgive it.
 
-This is the part where Kyle pulls away. He always pulls away. There is a reason — a long, cold, true reason about what he is and what people think they're touching when they touch him — and it lives right here, in the half-second before contact becomes something he'd have to mean.
+This is the part where Kyle pulls away. He always pulls away. There is a reason — fourteen years and every name he's carried and all the ways being found has never once gone clean — and it lives right here, in the half-second before contact becomes something he'd have to mean.
 
 He doesn't pull away.
 
