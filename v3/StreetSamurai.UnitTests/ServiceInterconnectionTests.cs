@@ -177,6 +177,31 @@ public class BookOutlineSyncTests
     }
 
     [Test]
+    public void Load_WithDashedBookId_FindsOutlineSavedUnderDashlessId()
+    {
+        // Regression: outline KV keys are derived from the bookId string verbatim, and
+        // callers pass both GUID forms. A dashed lookup against a dashless-keyed row used
+        // to miss silently and fall back to BuildFromCanon with empty threads.
+        var book = new Book { Title = "B" };
+        books.SaveBook(book);
+
+        var dashless = Guid.Parse(book.Id).ToString("N");
+        var dashed   = Guid.Parse(book.Id).ToString("D");
+
+        var written = new BookOutline
+        {
+            BookId  = dashless,
+            Premise = "saved-doc",
+            Threads = [new BookThread { Name = "series spine" }],
+        };
+        outline.Save(written);
+
+        var read = outline.Load(dashed);
+        Assert.That(read.Premise, Is.EqualTo("saved-doc"));
+        Assert.That(read.Threads.Select(t => t.Name), Does.Contain("series spine"));
+    }
+
+    [Test]
     public void SaveAndLoad_RoundTripsAllOutlineFields()
     {
         var book = new Book { Title = "B" };

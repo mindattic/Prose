@@ -49,8 +49,12 @@ public class BookOutlineService
                new SettingsKvStore(StreetSamurai.Core.Data.TestDbFactory.For(paths, "settings")),
                llmVoting, db, log) { }
 
-    /// <summary>Settings key for a per-book outline document.</summary>
-    private static string Key(string bookId) => $"book_outline:{bookId}";
+    /// <summary>Settings key for a per-book outline document. Book ids arrive both dashed
+    /// (GUID form) and dashless (32-hex book file form); stored keys use the dashless form,
+    /// so normalize here — a dashed lookup must not silently miss the row and fall back to
+    /// BuildFromCanon with empty threads.</summary>
+    private static string Key(string bookId) =>
+        $"book_outline:{bookId.Trim().Replace("-", "").ToLowerInvariant()}";
 
     public BookOutline Load(string bookId)
     {
