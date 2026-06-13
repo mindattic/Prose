@@ -640,7 +640,8 @@ Return ONLY a JSON object, nothing else:
         var system = studyMode
             ? BuildStudyReviewerSystemPrompt(persona, export.Title, export.BeatCount)
             : BuildReviewerSystemPrompt(persona, export.Title);
-        var maxTok = studyMode ? 2400 : 1400; // study mode also returns a per-beat score object
+        // study mode also returns a per-beat score object — budget grows with beat count
+        var maxTok = studyMode ? Math.Min(8000, Math.Max(2400, 900 + export.BeatCount * 6)) : 1400;
         var raw = await legion.CallAsync(provider, key!, model, system, export.Markdown, maxTokens: maxTok, temperature: 0.85, ct);
 
         int score; string reviewText; List<string> improvements;
@@ -696,7 +697,10 @@ Return ONLY a JSON object, nothing else:
             ? m : LegionClient.DefaultModels.GetValueOrDefault(provider, "");
 
         var system = BuildBallotSystemPrompt(persona, export.Title, export.BeatCount);
-        var raw = await legion.CallAsync(provider, key!, model, system, export.Markdown, maxTokens: 900, temperature: 0.85, ct);
+        // beat_scores must cover every beat — the JSON grows with beat count, so the
+        // output budget must too (a 535-beat book strand needs ~4k tokens of ballot).
+        var maxTok = Math.Min(8000, 900 + export.BeatCount * 6);
+        var raw = await legion.CallAsync(provider, key!, model, system, export.Markdown, maxTokens: maxTok, temperature: 0.85, ct);
         if (!TryParseBallot(raw, export.BeatCount, out var score, out var flow, out var weakness, out var beatScores))
         {
             log.LogWarning("Unparseable ballot from {Persona} via {Provider}", persona.Id, provider);
@@ -778,6 +782,14 @@ $@"
 
 YOUR MEASURED PSYCHOMETRIC PROFILE — let it genuinely shape what you notice, what bothers you, and how you score: {profile.Summary()}.
 Read through this psychology, not a generic critic's: high Openness welcomes the strange, lyrical, and rule-breaking; low Openness wants clarity and convention. High Conscientiousness is impatient with looseness, purple prose, and unearned flourish; lower Conscientiousness forgives it for energy and feel. High Neuroticism feels stakes and dread sharply; low Neuroticism stays cool. Let your Agreeableness set how gentle or blunt your review reads. React as THIS person actually would.";
+
+        // Every reviewer is a die-hard cyberpunk fan on top of who they are (user
+        // ruling 2026-06-10): genre-literate readers punish pseudo-profundity and
+        // reward concrete tech-noir; random demographics reward safe mood-soup.
+        who +=
+$@"
+
+ONE MORE THING ABOUT YOU, layered on top of everything above: you are a DIE-HARD cyberpunk fan. You have read Neuromancer, Count Zero, Snow Crash, The Diamond Age, and Hardwired more times than you can count, and you can quote The Matrix and Johnny Mnemonic from memory. You picked this story up BECAUSE it is cyberpunk, you hold it to the standard of those classics, and you know the difference between earned tech-noir — concrete, propulsive, witty — and imitation mood-soup that performs profundity without containing any. Your psychometric profile shapes HOW you read; this fandom shapes WHAT you measure the story against.";
         return who;
     }
 

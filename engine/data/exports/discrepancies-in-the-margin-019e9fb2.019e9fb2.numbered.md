@@ -33,7 +33,7 @@ The case study identified the operation's *target population* as *the attendee c
 Priority weighting.
 
 [Beat 11]
-Rhea read the footnote. The sentence ended. She read it again, and by the second time her mouth had closed fully — she had not known it was open — and her hand had moved to the edge of Joaquim's clipboard, a small adjustment, as if steadying it, and she was aware, in a precise and useless way, that the movement had not been a decision. She read it a third time with her hand there. The case study did not say *kill Mira Quintero.* The case study said *priority weighting,* which meant the agent had been dosed, in the target zone, in a concentration calibrated to produce maximum tissue damage at the location of one specific attendee. Mira had been standing, the deployment log noted, two and a half meters from the assembly's improvised podium. The dosing concentration at two and a half meters from the podium had been four-point-eight times the median concentration in the rest of the room.
+Rhea read the footnote. The sentence ended. She read it again, and by the second time her mouth had closed fully — she had not known it was open — and her hand had moved to the edge of Joaquim's clipboard, a small adjustment, as if steadying it, and she was aware, in a precise and useless way, that the movement had not been a decision. She read it a third time with her hand there. The case study did not say *kill Mira Quintero.* The case study said *priority weighting,* which meant the agent had been dosed, in the target zone, in a concentration calibrated to produce maximum tissue damage at the location of one specific attendee. Mira had been standing, the deployment log noted, eight feet from the assembly's improvised podium. The dosing concentration at eight feet from the podium had been four-point-eight times the median concentration in the rest of the room.
 
 [Beat 12]
 The director thanked her. He said *exceptional work.* He said *the kind of analysis we hire for.* He gave her bad coffee.
@@ -54,10 +54,10 @@ She sat down anyway. She opened the white paper draft. She wrote, with the curso
 She went home. She did not cook. She drank a glass of cold water from the tap and stood at the balcony and watched the Pulse transit station's slugs surface and vanish at thirty-second intervals. The thrumline — the low hum the Pulse ran through everything within a block — was perceptible through the balcony floor.
 
 [Beat 18]
-The Glooms — the Tier 1 fringe where the checkpoint grid ended — ten kilometers east. The bank she would, in four days, walk into for the first time.
+The Glooms — the Tier 1 fringe where the checkpoint grid ended — six miles east. The bank she would, in four days, walk into for the first time.
 
 [Beat 19]
-The bank was called Pacific Edge Mutual. It did not advertise. It served the Tier 1 residents the corponations did not. Its lobby was three meters wide and lit by a single yellowed fixture. Its safe-deposit boxes were the smallest size the city's deposit-box industry made. She rented a box for eleven years' prepaid, paid in cash, and gave a name that was not Rhea Adesanya-MacGregor and was not yet Sable.
+The bank was called Pacific Edge Mutual. It did not advertise. It served the Tier 1 residents the corponations did not. Its lobby was ten feet wide and lit by a single yellowed fixture. Its safe-deposit boxes were the smallest size the city's deposit-box industry made. She rented a box for eleven years' prepaid, paid in cash, and gave a name that was not Rhea Adesanya-MacGregor and was not yet Sable.
 
 [Beat 20]
 She had spent two days, before walking to the bank, copying the OPTIC-7 document onto thermal paper in a cipher of her own design. The cipher's seed was a page from a book her grandmother had kept on the windowsill in the spare room — a page she had memorized at fourteen, for reasons she had never been able to name. The cipher was simple; it was not intended to survive a serious cryptanalytic attack. It was intended to survive long enough for her to be elsewhere.

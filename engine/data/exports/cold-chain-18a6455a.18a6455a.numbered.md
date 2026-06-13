@@ -10,7 +10,7 @@ The warehouse was on a side street off Milwaukee, between a water reclamation su
 Kyle arrived seven minutes before the contracted hour. He stood across the street and watched the entrance for four of those minutes. The NeoCortex had clocked three Lotus-adjacent transit nodes on the route from the parts shop, and his body had done its math without being asked. His hands stayed loose. His weight stayed back. Four minutes of doing nothing, which was the same as paying for the right to do nothing after.
 
 [Beat 2]
-The Pulse station entrance was a hundred meters from the warehouse bay door.
+The Pulse station entrance was a a hundred yards from the warehouse bay door.
 
 Kyle walked the freelancer cart at the pace of someone who had somewhere to be and was not late — the only pace that moved through transit infrastructure without generating the specific quality of attention that security systems were calibrated to notice.
 
@@ -33,7 +33,7 @@ The tag had done what tags do: it had answered honestly, and honest answers have
 The flag routed up the chain at twenty-two hundred and four minutes. Somewhere in Pilsen, a collection window that had been a courtesy became a debt.
 
 [Beat 5]
-The parts shop smelled like burnt flux and the particular sweetness of coolant that had been leaking for so long it had become furniture. Kyle stood at the counter with his left hand flat on the scratched composite surface and his right thumb hooked in his belt, three centimeters from the katana's guard, which was not a threat so much as a habit his body had developed without consulting him. The terminal behind the counter had a crack running diagonal across the lower third of its screen, taped with yellowed film that made the bottom lines of text swim. Sable's voice came through the speaker at a volume calibrated for exactly this counter, exactly this ambient noise floor. He had never asked how she knew the acoustics. He had decided not to.
+The parts shop smelled like burnt flux and the particular sweetness of coolant that had been leaking for so long it had become furniture. Kyle stood at the counter with his left hand flat on the scratched composite surface and his right thumb hooked in his belt, an inch from the katana's guard, which was not a threat so much as a habit his body had developed without consulting him. The terminal behind the counter had a crack running diagonal across the lower third of its screen, taped with yellowed film that made the bottom lines of text swim. Sable's voice came through the speaker at a volume calibrated for exactly this counter, exactly this ambient noise floor. He had never asked how she knew the acoustics. He had decided not to.
 
 When she said the number — thirty-one thousand — something reached for the composite before he had decided to move, and the flat of his palm pressed against the cold surface and held there. The brace answered with the half-second lag it had started giving him last week, the lag that meant 94% and falling. Φ31,000 was a new actuator cuff and the clean-room hours to seat it, with enough left over to put the NeoCortex back under a real tech instead of letting it run hot and self-diagnose into the dark. It was the difference between a hand that closed when he told it to and one that closed eventually. He kept his face at the counter. The brace did not get a vote either.
 

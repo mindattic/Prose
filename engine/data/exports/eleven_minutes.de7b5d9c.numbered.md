@@ -33,7 +33,7 @@ Kyle had chosen. He was still holding that choice upright, the way you hold some
 He finally looked at his hand. The gash ran from the base of his thumb to somewhere he couldn't see without moving fabric. Not deep enough to be serious. Deep enough to be a reminder. He pressed it against his jacket and walked.
 
 [Beat 11]
-The corridor opened onto a maintenance catwalk above the district's lower tier — forty meters of vertical city, neon and rain and the low industrial hum of a megastructure that had long since stopped distinguishing between its working parts and its failing ones.
+The corridor opened onto a maintenance catwalk above the district's lower tier — a hundred and thirty feet of vertical city, neon and rain and the low industrial hum of a megastructure that had long since stopped distinguishing between its working parts and its failing ones.
 
 [Beat 12]
 Somewhere in that vertical mile, Deshi Okafor was telling someone what Kyle had done. Or what Kyle hadn't done. Kyle wasn't sure which version was worse.

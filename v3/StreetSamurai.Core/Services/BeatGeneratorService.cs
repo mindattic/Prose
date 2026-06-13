@@ -66,6 +66,7 @@ public class BeatGeneratorService
 
             WORLD CONTEXT (characters, locations, equipment, relationships — use as canon facts):
             {context.RelationshipContext}
+            {(context.XRayContext.Length > 0 ? "\nSCENE X-RAY — entities on screen RIGHT NOW. Every character below speaks in THEIR OWN documented register, not the narrator's:\n" + context.XRayContext : "")}
             {(context.LocationContext.Length > 0 ? "\nADDITIONAL LOCATION DETAIL:\n" + context.LocationContext : "")}{dialogueBlock}{anchorBlock}
             """;
 
@@ -693,6 +694,9 @@ public record BeatContext
     public string LocationContext { get; init; } = "";
     /// <summary>Per-character voice profiles and cross-character relationship dynamics from DialogueService.</summary>
     public string DialogueContext { get; init; } = "";
+    /// <summary>X-Ray scene assembly block (RFC 0002, SceneContextAssembler): the entities
+    /// on screen with their voice/psychology fields. Empty when no roster resolved.</summary>
+    public string XRayContext { get; init; } = "";
     public string SceneSoFar { get; init; } = "";
     public string BeatGoal { get; init; } = "";
 }

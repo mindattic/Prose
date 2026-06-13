@@ -47,3 +47,10 @@ archives/
 
 # Local CLI build output (lock-free runner)
 .cli-tmp/
+
+# Python virtual environments (never commit — too large, regenerated locally)
+.venv/
+venv/
+
+# Large ML model files (download separately)
+*.onnx

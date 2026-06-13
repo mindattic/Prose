@@ -330,6 +330,13 @@ public static class ServiceCollectionExtensions
         // EntityEmbeddings; exact-NN cosine in C# at this corpus size.
         services.AddHttpClient(nameof(EmbeddingService));
         services.AddSingleton<EmbeddingService>();
+
+        // X-Ray scene assembly (RFC 0002): entity roster + voice/psychology context
+        // block for the entities present in a beat. Complements SceneContextBuilder
+        // (ambient texture) — this one carries WHO is on screen and how they speak.
+        services.AddSingleton<SceneContextAssembler>();
+        services.AddSingleton<WoundLedgerService>();
+
         services.AddSingleton<CharacterStateBackfillService>();
         services.AddSingleton<DriftAuditService>();
         services.AddSingleton<AskService>();

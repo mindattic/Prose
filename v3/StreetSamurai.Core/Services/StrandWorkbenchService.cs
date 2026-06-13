@@ -1601,10 +1601,26 @@ public class StrandWorkbenchService
     /// pacing); segment boundaries get exact PCM silence. The combined MP3 is
     /// written to the audio store AND copied to the user's Downloads folder.
     /// </summary>
-    public async Task<string?> PublishAudiobookAsync(Guid strandId, bool retuneRobust = false, CancellationToken ct = default)
+    public async Task<string?> PublishAudiobookAsync(Guid strandId, bool retuneRobust = false, string? ttsProvider = null, CancellationToken ct = default)
     {
-        if (!await tts.IsConfiguredAsync())
-            throw new InvalidOperationException("TTS is not configured (no ElevenLabs API key).");
+        // --tts <engine>: free, fully-local narration (no API key, no per-char cost) —
+        // piper | kokoro | chatterbox. Same segment/silence/encode assembly; the local
+        // engine supplies the PCM. Omitted (or "elevenlabs") = the ElevenLabs path.
+        ILocalTtsEngine? local = null;
+        if (!string.IsNullOrWhiteSpace(ttsProvider) &&
+            !string.Equals(ttsProvider, "elevenlabs", StringComparison.OrdinalIgnoreCase) &&
+            !string.Equals(ttsProvider, "eleven", StringComparison.OrdinalIgnoreCase))
+        {
+            local = LocalTts.Resolve(ttsProvider!, log)
+                ?? throw new InvalidOperationException(
+                    $"Unknown TTS engine '{ttsProvider}'. Options: elevenlabs, {string.Join(", ", LocalTts.KnownEngines)}.");
+            if (!local.IsAvailable)
+                throw new InvalidOperationException(
+                    $"TTS engine '{ttsProvider}' is not installed. See tools\\{ttsProvider}\\README for one-time setup.");
+        }
+        if (local is null && !await tts.IsConfiguredAsync())
+            throw new InvalidOperationException(
+                "TTS is not configured (no ElevenLabs API key). For a free local narrator, pass --tts piper|kokoro|chatterbox.");
 
         await using var db = await dbFactory.CreateDbContextAsync(ct);
         var strand = await db.Strands.FirstOrDefaultAsync(s => s.Id == strandId, ct)
@@ -1628,9 +1644,10 @@ public class StrandWorkbenchService
             voice = voice with { Stability = 1.0 };
             log.LogInformation("Strand {S} retuned to Robust (stability 1.0)", strandId);
         }
-        bool isV3 = voice.Model.Contains("v3", StringComparison.OrdinalIgnoreCase);
+        bool isV3 = local is null && voice.Model.Contains("v3", StringComparison.OrdinalIgnoreCase);
         // eleven_v3 caps a request far lower than the v2 family; budget per model.
-        int limit = isV3 ? 2800 : 9000;
+        // Local engines are uncapped — chapter-sized segments keep memory sane.
+        int limit = local != null ? local.CharBudget : isV3 ? 2800 : 9000;
         var segments = BuildAudiobookSegments(ordered, limit);
 
         var pub = new StrandPublication
@@ -1640,7 +1657,7 @@ public class StrandWorkbenchService
         };
         db.StrandPublications.Add(pub);
         db.StrandAudioEvents.Add(NewAudioEvent(strandId, null, pub.Id, "publish-started",
-            $"one-pass audiobook: {ordered.Count} beats in {segments.Count} segment(s), model {voice.Model}"));
+            $"one-pass audiobook: {ordered.Count} beats in {segments.Count} segment(s), model {(local != null ? local.Label : voice.Model)}"));
         await db.SaveChangesAsync(ct);
 
         exportProgress[strandId] = new ExportProgress(0, segments.Count, "narrating");
@@ -1667,6 +1684,8 @@ public class StrandWorkbenchService
         async Task<(byte[] Pcm, string? RequestId)> FetchPcmAsync(
             string chunk, IList<string>? stitchIds, string? pText, string? nText)
         {
+            if (local != null)
+                return (await local.SynthesizeToPcmAsync(chunk, ffmpeg!, ct), null);
             var prefs = fetchFormat is not null
                 ? new[] { fetchFormat }
                 : new[] { "pcm_44100", "mp3_44100_192", "mp3_44100_128" };

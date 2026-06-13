@@ -69,7 +69,7 @@ Rhea would, in three weeks, recognize the same hand on a piece of paper that arr
 Five weeks and four days later, she walked back into the basement of the hat-repair shop with one hundred and eighty thousand quanta in a folded envelope in her coat pocket. She handed Dr. Kovalenko-Hassan the envelope. Dr. Kovalenko-Hassan did not count the envelope.
 
 [Beat 21]
-The procedure began at 0900 on a Tuesday and ended at 1415 on the following Wednesday, with a fourteen-hour interval during which Rhea slept on a cot in a back room, woke at intervals, and listened to the eight-hertz thrumline of a Pulse corridor three meters below the basement floor.
+The procedure began at 0900 on a Tuesday and ended at 1415 on the following Wednesday, with a fourteen-hour interval during which Rhea slept on a cot in a back room, woke at intervals, and listened to the eight-hertz thrumline of a Pulse corridor ten feet below the basement floor.
 
 [Beat 22]
 She had heard the thrumline from the balcony on Level 30. It had sounded the same. It had meant something different.
@@ -80,7 +80,7 @@ At 1422 on Wednesday she sat up in the surgical chair. The aperture mechanism in
 She saw the room.
 
 [Beat 24]
-It was the first information she had received through any optical channel in forty-two days. The room was beige, low-lit, three by four meters, surgical chair in the center, instrument trolley to the right, doorway with a heavy gasket to the left. The doorway gasket was brass. The brass was recently oiled. The recently-oiled hinges were a Faraday-shielded Tier 4 spec. The room was, she understood, a room that did not appear on any Axiom map.
+It was the first information she had received through any optical channel in forty-two days. The room was beige, low-lit, ten by thirteen feet, surgical chair in the center, instrument trolley to the right, doorway with a heavy gasket to the left. The doorway gasket was brass. The brass was recently oiled. The recently-oiled hinges were a Faraday-shielded Tier 4 spec. The room was, she understood, a room that did not appear on any Axiom map.
 
 [Beat 25]
 She did not cry. She had decided in the chair on Tuesday morning, while the anaesthesia was being administered, that she would not cry, and she did not.
@@ -102,7 +102,7 @@ She walked five blocks west, and three blocks north, and stood at the corner of 
 
 The Tessera Media Group building was no longer the Tessera Media Group building. It was, as of nineteen days ago, a restaurant. The restaurant was called *Forty-Seven North.* The restaurant served *deconstructed regional menus* on slate. The corner table — which Rhea, in the editing booth in the basement, five years and three months ago, had not yet known to think of as the corner table — was visible through the window. A man was sitting at the corner table. He was eating a deconstructed mole on a piece of slate.
 
-She stood across the street. She did not cross. She did not look away. The aperture mechanisms adjusted, and adjusted again, and a man twenty meters down the pavement turned at the sound, which only he heard, because the rain at this distance covered the implants for any normal listener.
+She stood across the street. She did not cross. She did not look away. The aperture mechanisms adjusted, and adjusted again, and a man sixty-five feet down the pavement turned at the sound, which only he heard, because the rain at this distance covered the implants for any normal listener.
 
 She stood for one hour. The hour was her decision. She had decided it on Wednesday morning, in the chair, before the second session began, and she had not changed her mind in the seven hours between the decision and the moment she stood at the corner of State and Madison and began to count. She would stand for one hour. She would stand for one hour every year. She would not approach the building. She would not enter the restaurant. She would not, at any point in the hour, take her hands out of the pockets of the tan coat.
 
