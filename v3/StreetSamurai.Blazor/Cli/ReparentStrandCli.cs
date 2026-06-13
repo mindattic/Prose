@@ -7,6 +7,7 @@ namespace StreetSamurai.Blazor.Cli;
 /// ss --reparent-strand (--slug &lt;slug&gt; | --id &lt;id&gt;) (--parent-slug &lt;slug&gt; | --parent-id &lt;id&gt;)
 /// — sets ParentStrandId on an existing strand.
 /// Use --clear to detach from any parent.
+/// Use --sort-key N to set the strand's SortKey (can combine with parent change or use standalone).
 /// </summary>
 public static class ReparentStrandCli
 {
@@ -14,6 +15,7 @@ public static class ReparentStrandCli
     {
         string? id = null, slug = null, parentId = null, parentSlug = null;
         bool clear = false;
+        double? sortKey = null;
         for (int i = 0; i < args.Length; i++)
         {
             switch (args[i])
@@ -23,6 +25,7 @@ public static class ReparentStrandCli
                 case "--parent-id":   if (i + 1 < args.Length) parentId = args[++i]; break;
                 case "--parent-slug": if (i + 1 < args.Length) parentSlug = args[++i]; break;
                 case "--clear":       clear = true; break;
+                case "--sort-key":    if (i + 1 < args.Length && double.TryParse(args[++i], out var sk)) sortKey = sk; break;
             }
         }
 
@@ -31,9 +34,9 @@ public static class ReparentStrandCli
             Console.Error.WriteLine("[reparent-strand] --id or --slug required to identify the child strand.");
             return 1;
         }
-        if (!clear && string.IsNullOrWhiteSpace(parentId) && string.IsNullOrWhiteSpace(parentSlug))
+        if (!clear && sortKey == null && string.IsNullOrWhiteSpace(parentId) && string.IsNullOrWhiteSpace(parentSlug))
         {
-            Console.Error.WriteLine("[reparent-strand] --parent-id or --parent-slug required (or --clear to detach).");
+            Console.Error.WriteLine("[reparent-strand] --parent-id or --parent-slug required (or --clear to detach, or --sort-key N to reorder).");
             return 1;
         }
 
@@ -53,9 +56,20 @@ public static class ReparentStrandCli
         if (clear)
         {
             child.ParentStrandId = null;
+            if (sortKey.HasValue) child.SortKey = sortKey.Value;
             child.UpdatedAt = DateTime.UtcNow;
             await db.SaveChangesAsync();
-            Console.WriteLine($"[reparent-strand] \"{child.Title}\" detached from parent.");
+            Console.WriteLine($"[reparent-strand] \"{child.Title}\" detached from parent." + (sortKey.HasValue ? $" SortKey={sortKey}" : ""));
+            return 0;
+        }
+
+        // Sort-key-only update (no parent change needed).
+        if (sortKey.HasValue && string.IsNullOrWhiteSpace(parentId) && string.IsNullOrWhiteSpace(parentSlug))
+        {
+            child.SortKey = sortKey.Value;
+            child.UpdatedAt = DateTime.UtcNow;
+            await db.SaveChangesAsync();
+            Console.WriteLine($"[reparent-strand] \"{child.Title}\" SortKey={sortKey}.");
             return 0;
         }
 
@@ -71,9 +85,10 @@ public static class ReparentStrandCli
         if (parent.Id == child.Id) { Console.Error.WriteLine("[reparent-strand] A strand cannot be its own parent."); return 1; }
 
         child.ParentStrandId = parent.Id;
+        if (sortKey.HasValue) child.SortKey = sortKey.Value;
         child.UpdatedAt = DateTime.UtcNow;
         await db.SaveChangesAsync();
-        Console.WriteLine($"[reparent-strand] \"{child.Title}\" → parent \"{parent.Title}\".");
+        Console.WriteLine($"[reparent-strand] \"{child.Title}\" → parent \"{parent.Title}\"." + (sortKey.HasValue ? $" SortKey={sortKey}" : ""));
         return 0;
     }
 }

@@ -753,11 +753,11 @@ Mei-Lin's car arrived four minutes later. A rental, neutral in color, the kind o
 
 She saw Celeste on the sidewalk outside the shop and stopped walking.
 
-Fifteen meters of sidewalk between them, and neither of them moved into it.
+Fifty feet of sidewalk between them, and neither of them moved into it.
 
 Kyle read their posture from across the street. Mei-Lin's hands were at her sides — still, but the stillness of hands that wanted to rise and hadn't yet resolved the question of whether rising was the right response or the premature one. Her chin was level. She was taking in the ears, which were visible above the collar of Celeste's jacket, and she did not look away from them. She was looking at her daughter. She was looking at the ears as part of her daughter.
 
-Celeste's chin was slightly elevated — the posture of someone who has braced for a verdict and cannot yet read the expression across fifteen meters of street.
+Celeste's chin was slightly elevated — the posture of someone who has braced for a verdict and cannot yet read the expression across fifty feet of street.
 
 Something in Mei-Lin's posture decided. Kyle could not have said exactly what changed. Some small configuration in the shoulders, the hands. Whatever it was, it was the thing.
 
@@ -867,7 +867,7 @@ She made something while he sat at the table. He didn't ask what, because asking
 
 She talked while she cooked, not at him but near him, which was the distinction she made between the two modes and which he had learned to read correctly. Near-him talking was thinking out loud at someone who was present and not going to interrupt. It was the same register she used at the workbench when she was working through a problem. He was furniture, but specifically the kind of furniture that was there by agreement.
 
-She said: the commission she'd taken today — a client who wanted subcutaneous lighting installed, a pattern that went up the forearm and wrapped around the wrist. The power cells needed to be routed around an existing neuretics cluster that sat in a location she hadn't run into before, in the space between the radius and the ulna about thirty millimeters distal from the standard cluster position. The available space for the routing at that position was approximately fourteen millimeters. The power cells at standard spec were sixteen.
+She said: the commission she'd taken today — a client who wanted subcutaneous lighting installed, a pattern that went up the forearm and wrapped around the wrist. The power cells needed to be routed around an existing neuretics cluster that sat in a location she hadn't run into before, in the space between the radius and the ulna about about an inch distal from the standard cluster position. The available space for the routing at that position was approximately half an inch. The power cells at standard spec were sixteen.
 
 She said: so I need to either find a narrower gauge cell or find a routing that goes around the cluster rather than past it, which adds path length, which affects current consistency, which affects the evenness of the glow pattern.
 

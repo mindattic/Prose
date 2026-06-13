@@ -9,7 +9,7 @@ The corporate residential block had a balcony. Most of the units on Level 30 did
 From the balcony she could see the eight blocks of the Meridian Core that Axiom had quietly absorbed in the four years before her hire, and the two blocks they were absorbing now. The Pulse station roof was visible to the southwest, a slab of brushed graphite the size of a city block, and below it the cross-street where the slugs surfaced and dipped at thirty-second intervals.
 
 [Beat 3]
-The thrumline was perceptible through the balcony floor — an eight-hertz vibration that Tier 4 residents were told was *infrastructure,* that Tier 1 residents in the Glooms ten kilometers east called *the city talking to itself.*
+The thrumline was perceptible through the balcony floor — an eight-hertz vibration that Tier 4 residents were told was *infrastructure,* that Tier 1 residents in the Glooms six miles east called *the city talking to itself.*
 
 [Beat 4]
 Floor 47 of the Meridian Core was Axiom Security Division's Communications Integration department. Rhea's office did not have a window. Tier 3+ at Axiom got the apartment with the balcony. Tier 4 got the office with the window.

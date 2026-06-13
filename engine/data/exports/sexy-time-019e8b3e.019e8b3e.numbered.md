@@ -73,16 +73,16 @@ They move together, against the wall and then down onto the cleared floor — hi
 [Beat 7]
 After, the floor is hard and they don't care.
 
-She lies half on his good side, and the apartment ticks and cools around them, and the bass from someone else's unit thumps faintly through the brick. His chest goes up and down too fast and then slower. Her pink hair is stuck to her cheek. There's a screw embedded in his shoulder blade that he'll find tomorrow and not mention.
+She lies half on his good side, and the apartment ticks and cools around them, and the bass from someone else's unit thumps faintly through the brick. Down where the wall meets the floor, a thin green pulse runs the length of the baseboard seam and goes still, lumen mice settling back into the dark, and neither of them turns to look. His chest goes up and down too fast and then slower. Her pink hair is stuck to her cheek. There's a screw embedded in his shoulder blade that he'll find tomorrow and not mention.
 
 She runs a finger along the contours of him — not triage now, not a medic's inventory, just the same practiced palpation she'd use to find what was broken, only this time pressed slow and asking nothing, learning a body she intends to come back to. The burn on his shoulder. The new line of her own stitches in his side, neat as a hem. The dip of his sternum.
 
-He does the same to her, because for once his hands are not on a weapon — the freckles across her collarbone, the small old scar through one eyebrow, the strong unglamorous lines of the forearms that put him back together an hour ago. His thumb finds the pulse at the base of her throat and just stays there, not counting it, only feeling it move, which is a thing he has never once let his hands do — rest on something living and leave it whole. She lets him. She watches him do it with her grey-blue eyes gone soft, and says nothing, which for Pixel is the loudest thing she owns.
+He does the same to her, because for once his hands are not on a weapon — the freckles across her collarbone, the small old scar through one eyebrow, the strong unglamorous lines of the forearms that put him back together an hour ago. He traces her like she's a map to somewhere he might actually want to go. His thumb finds the pulse at the base of her throat and just stays there, not counting it, only feeling it move. She lets him. She watches him do it with her grey-blue eyes gone soft, and says nothing, which for Pixel is the loudest thing she owns.
 
 [Beat 8]
 "This can't happen again," Kyle says. He's looking at the ceiling when he says it, which is how she knows he doesn't entirely mean it.
 
-Pixel props herself up on one elbow, forearm flat on the concrete, and considers him with the particular patience of a person who has just won an argument the other party doesn't know is over. She doesn't answer. She picks a screw up off the floor and turns it once in the low light, the way she looks at things she's decided to understand. Then she sets it down.
+Pixel props herself up on one elbow, forearm flat on the concrete, and considers him with the particular patience of a person who has just won an argument the other party doesn't know is over. She doesn't answer. She picks a screw up off the floor and turns it once in the low light. Then she sets it down.
 
 His thumb is still at the base of her throat, where he left it. He doesn't move it.
 

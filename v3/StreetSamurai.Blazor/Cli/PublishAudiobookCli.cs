@@ -6,10 +6,15 @@ using StreetSamurai.Core.Services;
 namespace StreetSamurai.Blazor.Cli;
 
 /// <summary>
-/// <c>ss --publish-audiobook (--id &lt;guid|prefix&gt; | --slug &lt;slug&gt;) [--robust]</c>
+/// <c>ss --publish-audiobook (--id &lt;guid|prefix&gt; | --slug &lt;slug&gt;) [--robust] [--tts ENGINE]</c>
 /// — render the whole strand as ONE continuous narration (no per-beat voice
-/// drift), tiered to ElevenLabs' per-request limits, and write the MP3 to the
-/// user's Downloads folder. The headless twin of the "Publish Audiobook" button.
+/// drift) and write the MP3 to the user's Downloads folder. The headless twin of
+/// the "Publish Audiobook" button.
+/// <para><c>--tts</c> selects the engine: <c>elevenlabs</c> (default, paid, highest
+/// fidelity) or a FREE fully-local engine — <c>piper</c> (bundled exe, fastest),
+/// <c>kokoro</c> (Python, CPU-friendly, recommended free default), or <c>chatterbox</c>
+/// (Python, Resemble Chatterbox-Turbo, most expressive). Local engines need no API key
+/// and cost nothing per character — built for bedtime/draft listens.</para>
 /// <para><c>--robust</c> retunes this strand's frozen voice snapshot to Robust
 /// stability (1.0) before recording — the explicit opt-in that lets a strand
 /// first narrated at Natural (0.5) adopt the most consistent v3 narrator on
@@ -19,7 +24,7 @@ public static class PublishAudiobookCli
 {
     public static async Task<int> RunAsync(string[] args, IServiceProvider services)
     {
-        string? id = null, slug = null;
+        string? id = null, slug = null, tts = null;
         bool robust = false;
         for (int i = 0; i < args.Length; i++)
         {
@@ -28,6 +33,7 @@ public static class PublishAudiobookCli
                 case "--id":     if (i + 1 < args.Length) id = args[++i]; break;
                 case "--slug":   if (i + 1 < args.Length) slug = args[++i]; break;
                 case "--robust": robust = true; break;
+                case "--tts":    if (i + 1 < args.Length) tts = args[++i]; break;
             }
         }
         if (string.IsNullOrWhiteSpace(id) && string.IsNullOrWhiteSpace(slug))
@@ -52,10 +58,10 @@ public static class PublishAudiobookCli
             strandId = strand.Id; strandTitle = strand.Title;
         }
 
-        Console.WriteLine($"[publish-audiobook] Narrating \"{strandTitle}\" in one pass{(robust ? " (retuning to Robust stability)" : "")}…");
+        Console.WriteLine($"[publish-audiobook] Narrating \"{strandTitle}\" in one pass{(robust ? " (retuning to Robust stability)" : "")}{(tts != null ? $" via {tts}" : "")}…");
         try
         {
-            var path = await workbench.PublishAudiobookAsync(strandId, robust);
+            var path = await workbench.PublishAudiobookAsync(strandId, robust, tts);
             if (path == null) { Console.Error.WriteLine("[publish-audiobook] Nothing to narrate — the strand has no beat text."); return 1; }
             Console.WriteLine($"[publish-audiobook] Wrote: {path}");
             return 0;

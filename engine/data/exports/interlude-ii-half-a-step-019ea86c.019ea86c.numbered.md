@@ -25,7 +25,7 @@ He sat in the chair at the corner of her kitchen table — not the one that face
 The tea was not a blend Kyle would have chosen. It was something she made when she was tired — he knew this now — something her mother had made, from a region that no longer existed as a political entity, which she'd once described as tasting like an argument about whether you should go back to bed. It tasted like that now. He found it acceptable.
 
 [Beat 5]
-They sat. The near-dark of her kitchen at two in the morning had a specific quality — the workbench lamp still on in the other room, a sliver of light from under her bathroom door, the city doing something low and industrial two kilometers away.
+They sat. The near-dark of her kitchen at two in the morning had a specific quality — the workbench lamp still on in the other room, a sliver of light from under her bathroom door, the city doing something low and industrial a mile and a quarter away.
 
 His cup was already on the table when he sat down.
 

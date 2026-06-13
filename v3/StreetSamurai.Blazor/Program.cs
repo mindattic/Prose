@@ -500,6 +500,18 @@ if (args.Contains("--publish-docx"))
 }
 
 // CLI mode: set the ParentStrandId on an existing strand (move it into a collection).
+// X-Ray scene assembly (RFC 0002): print the entity roster + voice context block
+// for a beat or raw prose. CLI twin of the MCP tool assemble_scene_context.
+//   ss --assemble-scene (--beat <guid> | --text "<prose>") [--budget N]
+if (args.Contains("--assemble-scene"))
+{
+    var cliBuilder = WebApplication.CreateBuilder(args);
+    cliBuilder.Services.AddStreetSamuraiServices();
+    var cliApp = cliBuilder.Build();
+    Environment.ExitCode = await AssembleSceneCli.RunAsync(args, cliApp.Services);
+    return;
+}
+
 //   ss --reparent-strand (--slug <slug> | --id <id>) (--parent-slug <slug> | --parent-id <id>)
 //   ss --reparent-strand --slug <slug> --clear   — detach from parent
 if (args.Contains("--reparent-strand"))

@@ -613,22 +613,25 @@ else
         }
 
         @* Chapter index: when this strand has direct children, each child strand
-           is a section — anchor to its first beat in the merged flat list so
-           clicking the TOC entry scrolls to where that strand's content begins.
+           is a section — clicking the TOC entry smooth-scrolls to where that
+           strand's content begins in the merged flat list. Plain #fragment
+           hrefs don't scroll in interactive Blazor (the router swallows
+           same-page fragment navigation), so entries with a beat target drive
+           the same JS helper the resume banner uses; entries without beats
+           fall back to navigating to the child strand.
            When no children, use IsChapterStart beats as before. *@
         @{
             var hasTocChildren = children.Count > 0;
-            List<(string Label, string Href)> tocEntries;
+            List<(string Label, Guid? BeatId, string? Href)> tocEntries;
             if (hasTocChildren)
             {
                 tocEntries = children
                     .Select(c =>
                     {
                         var firstBeat = beats.FirstOrDefault(b => b.StrandId == c.Id);
-                        var href = firstBeat != null
-                            ? $"#beat-{firstBeat.Beat.Id:N}"
-                            : $"/strand/{c.Slug}";
-                        return (Label: c.Title, Href: href);
+                        return firstBeat != null
+                            ? (Label: c.Title, BeatId: (Guid?)firstBeat.Beat.Id, Href: (string?)null)
+                            : (Label: c.Title, BeatId: (Guid?)null, Href: (string?)$"/strand/{c.Slug}");
                     })
                     .ToList();
             }
@@ -638,7 +641,8 @@ else
                     .Where(b => b.Beat.IsChapterStart)
                     .Select(b => (
                         Label: string.IsNullOrEmpty(b.Beat.BeatTitle) ? "(untitled chapter)" : b.Beat.BeatTitle,
-                        Href: $"#beat-{b.Beat.Id:N}"))
+                        BeatId: (Guid?)b.Beat.Id,
+                        Href: (string?)null))
                     .ToList();
             }
         }
@@ -653,9 +657,19 @@ else
                     {
                         var entry = tocEntries[toci];
                         var pos = toci + 1;
-                        <a href="@entry.Href" class="chapter-index-link">
-                            <span class="ci-pos">#@pos.ToString("D2")</span>@entry.Label
-                        </a>
+                        @if (entry.BeatId is Guid tocTarget)
+                        {
+                            <a href="#beat-@tocTarget.ToString("N")" class="chapter-index-link"
+                               @onclick="() => ScrollToBeatAsync(tocTarget)" @onclick:preventDefault>
+                                <span class="ci-pos">#@pos.ToString("D2")</span>@entry.Label
+                            </a>
+                        }
+                        else
+                        {
+                            <a href="@entry.Href" class="chapter-index-link">
+                                <span class="ci-pos">#@pos.ToString("D2")</span>@entry.Label
+                            </a>
+                        }
                     }
                 </div>
             </div>
@@ -872,6 +886,30 @@ else
                                             @onclick:stopPropagation
                                             data-cy="beat-copy-text">
                                         <i class="bi @(copiedTextBeatId == bid ? "bi-check-lg" : "bi-clipboard")"></i>
+                                    </button>
+                                    @{
+                                        var isNarrating = narratingBeatId == bid;
+                                        var isPlaying   = playingBeatId == bid && !beatPreviewPaused;
+                                        var isPaused    = playingBeatId == bid && beatPreviewPaused;
+                                    }
+                                    <button class="btn btn-sm @(isPlaying ? "btn-warning" : isPaused ? "btn-outline-warning" : "btn-outline-info")"
+                                            title="@(isNarrating ? "Synthesising…" : isPlaying ? "Pause narration preview" : isPaused ? "Resume narration preview" : "Preview narration (synthesises if needed)")"
+                                            @onclick="() => ToggleBeatPreviewAsync(bid)"
+                                            @onclick:stopPropagation
+                                            disabled="@(working || (narratingBeatId.HasValue && narratingBeatId != bid))"
+                                            data-cy="beat-preview">
+                                        @if (isNarrating)
+                                        {
+                                            <span class="spinner-border spinner-border-sm"></span>
+                                        }
+                                        else if (isPlaying)
+                                        {
+                                            <i class="bi bi-pause-fill"></i>
+                                        }
+                                        else
+                                        {
+                                            <i class="bi bi-play-fill"></i>
+                                        }
                                     </button>
                                     <button class="btn btn-sm btn-outline-primary"
                                             title="Ask the LLM to rewrite this beat"
@@ -1404,6 +1442,10 @@ else
     private System.Threading.Timer? poll;
     private string? lastIdOrSlug;
 
+    /// <summary>One-shot guard for the deep-link #beat-… fragment scroll —
+    /// fire it on the first render where beat rows exist, never again.</summary>
+    private bool fragmentScrolled;
+
     /// <summary>Per-beat "just copied to clipboard" flash state. The copy-text
     /// button toggles to a check icon for ~1.4s after a successful copy.</summary>
     private Guid? copiedTextBeatId;
@@ -1622,6 +1664,18 @@ else
     /// collect the page after navigation.</summary>
     private DotNetObjectReference<Strand>? selfRef;
 
+    /// <summary>Beat currently being synthesised by the per-beat preview
+    /// button. Drives the spinner on that row; disables the play button
+    /// on all other rows while the TTS call is in flight.</summary>
+    private Guid? narratingBeatId;
+
+    /// <summary>Beat whose preview audio is active (playing or paused).
+    /// Null when no preview is running.</summary>
+    private Guid? playingBeatId;
+
+    /// <summary>True when the active preview beat is paused mid-playback.</summary>
+    private bool beatPreviewPaused;
+
     /// <summary>True once JS has been told about the beat-row container.
     /// Drag handlers attach once and are idempotent on the JS side.</summary>
     private bool dragHandlersAttached;
@@ -1662,6 +1716,20 @@ else
             try { escapeToken = await JS.InvokeAsync<string>("streetsamurai.installPageEscape"); }
             catch { /* JS not loaded yet — selection-bar Esc just won't fire */ }
         }
+        // Honor a #beat-… fragment once the beat rows exist. Blazor's router
+        // doesn't scroll to fragments on its own, so deep links into a long
+        // (book) strand would otherwise land at the top.
+        if (!fragmentScrolled && beats.Count > 0)
+        {
+            fragmentScrolled = true;
+            var frag = new Uri(Nav.Uri).Fragment;
+            if (frag.StartsWith("#beat-") && Guid.TryParseExact(frag["#beat-".Length..], "N", out var fragBeat))
+            {
+                try { await JS.InvokeVoidAsync("streetsamurai.scrollBeatIntoView", fragBeat.ToString()); }
+                catch { /* JS not loaded yet — non-fatal, TOC click still works */ }
+            }
+        }
+
         // Wire drag-and-drop reorder handlers as soon as the beats container
         // exists. Idempotent on the JS side; the C# guard avoids the extra
         // interop hop on every re-render.
@@ -2487,6 +2555,13 @@ else
         catch { /* JS race — banner stays visible, user can click again */ }
     }
 
+    /// <summary>TOC click → smooth-scroll to the section's first beat.</summary>
+    private async Task ScrollToBeatAsync(Guid beatId)
+    {
+        try { await JS.InvokeVoidAsync("streetsamurai.scrollBeatIntoView", beatId.ToString()); }
+        catch { /* JS race — user can click the entry again */ }
+    }
+
     /// <summary>Forget the saved listening position. Updates the strand row
     /// AND the in-memory resume marker so the banner disappears immediately.</summary>
     private async Task ClearResumeAsync()
@@ -2509,6 +2584,80 @@ else
         catch (Exception ex) { Toast.Error("RESUME-CLEAR-FAIL", ex.Message); }
     }
 
+    /// <summary>Play or pause/resume the per-beat narration preview.
+    /// First call synthesises via ElevenLabs and caches the result in
+    /// Beat.AudioPath; re-clicking the same beat toggles pause/resume;
+    /// clicking a different beat stops the current one and starts the new one.
+    /// NarrateBeatAsync is idempotent — it skips TTS when audio is already
+    /// cached and Beat.Stale is false.</summary>
+    private async Task ToggleBeatPreviewAsync(Guid beatId)
+    {
+        if (strand == null) return;
+
+        // Toggle pause/resume when this beat is already active.
+        if (playingBeatId == beatId && narratingBeatId == null)
+        {
+            beatPreviewPaused = await JS.InvokeAsync<bool>("streetsamurai.pauseBeatPreview");
+            StateHasChanged();
+            return;
+        }
+
+        // Stop any currently active preview before starting a new one.
+        if (playingBeatId.HasValue)
+        {
+            try { _ = JS.InvokeVoidAsync("streetsamurai.stopBeatPreview"); } catch { }
+            playingBeatId     = null;
+            beatPreviewPaused = false;
+        }
+
+        narratingBeatId = beatId;
+        StateHasChanged();
+        try
+        {
+            await Workbench.NarrateBeatAsync(strand.Id, beatId, force: false);
+
+            await using var db = await DbFactory.CreateDbContextAsync();
+            var refreshed = await db.Beats.AsNoTracking().FirstOrDefaultAsync(b => b.Id == beatId);
+            if (refreshed == null || string.IsNullOrEmpty(refreshed.AudioPath)) return;
+
+            // Push updated audio metadata into the live list so Stale chips refresh.
+            var entry = beats.FirstOrDefault(e => e.Beat.Id == beatId);
+            if (entry != null)
+            {
+                entry.Beat.AudioPath  = refreshed.AudioPath;
+                entry.Beat.NarratedAt = refreshed.NarratedAt;
+                entry.Beat.Stale      = refreshed.Stale;
+                entry.Beat.TextHash   = refreshed.TextHash;
+            }
+
+            var url = $"/api/strands/{strand.Id}/beat/{beatId}/audio?v={refreshed.NarratedAt?.Ticks ?? 0}";
+            playingBeatId     = beatId;
+            beatPreviewPaused = false;
+            selfRef ??= DotNetObjectReference.Create(this);
+            await JS.InvokeVoidAsync("streetsamurai.playBeatPreview", url, selfRef);
+        }
+        catch (Exception ex)
+        {
+            Toast.Error("BEAT-PREVIEW", ex.Message);
+            playingBeatId = null;
+        }
+        finally
+        {
+            narratingBeatId = null;
+            StateHasChanged();
+        }
+    }
+
+    /// <summary>Called from JS when the preview audio finishes playing naturally.
+    /// Resets the play button back to the idle state.</summary>
+    [JSInvokable]
+    public void OnBeatPreviewEnded()
+    {
+        playingBeatId     = null;
+        beatPreviewPaused = false;
+        InvokeAsync(StateHasChanged);
+    }
+
     public void Dispose()
     {
         poll?.Dispose();
@@ -2519,6 +2668,7 @@ else
             try { _ = JS.InvokeVoidAsync("streetsamurai.uninstallPageEscape", escapeToken); }
             catch { /* circuit may already be torn down */ }
         }
+        try { _ = JS.InvokeVoidAsync("streetsamurai.stopBeatPreview"); } catch { }
         selfRef?.Dispose();
     }
 }

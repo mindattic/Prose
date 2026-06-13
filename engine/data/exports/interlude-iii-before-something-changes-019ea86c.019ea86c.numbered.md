@@ -2,8 +2,12 @@
 
 _An ordinary evening in Pixel's apartment. She's recalibrating a prosthetic arm; he's staying for soup._
 
+## Interlude III: Before Something Changes
+
 [Beat 1]
 The arm was a Nakamura-Brecht Series 7, upper-limb replacement, pediatric fitting — made for a twelve-year-old whose family had come to Pixel through the gray-zone referral network that Pixel was not officially part of and had never signed anything to join. Wren had passed the name down the channel — Wren took the surgical work and let the calibration land where calibration landed, which meant Pixel, which meant unpaid, which meant nobody put it in writing. The calibration on the proprioceptive feedback array was off by about eight degrees on the ulnar axis, which meant the kid was overshooting on every rightward reach and compensating with her shoulder in a way that was going to cause problems in six months if not corrected now.
+
+The ascenders down in the Loop ateliers paid triple for exactly this kind of proprioceptive tuning — bodies edited like manuscripts, every correction a doctrinal event, the work signed and published and argued over at chapter — and Pixel turned that money down often enough that the referral network had stopped passing those names to her. The kid needed the arm to stop overshooting before her shoulder learned the wrong lesson permanently. That was the whole doctrine.
 
 Pixel had been on it for an hour when Kyle arrived with soup.
 
@@ -55,6 +59,18 @@ She said: "I've been meaning to ask you something."
 
 He waited.
 
+"Your last tier-two check. There's a background harmonic in your array I can't source. Low, steady, old — the calibration history says it predates every piece of hardware I have specs for." She held the probe without looking at it. "It doesn't match anything you're carrying. I went through the manifests twice."
+
+"How old?" he asked.
+
+"Years. Maybe longer than I've known you." She watched him the way she watched a reading settle. "It's not hurting anything. It's just there. I like to know what's in the things I maintain."
+
+He looked at the arm in the jig, at the clean line of its wrist, at the work of her hands.
+
+"Some of the facility hardware never came with specs," he said, which was true, and was not an answer, and they both heard the difference.
+
+She held the gap for three seconds — the length of a reading she was choosing not to take twice — and then she turned back to it being about the arm.
+
 "The arm. When you carry Silence — the weight distribution. Does it shift how you read a grip?"
 
 It was about the arm. He answered about the arm. She listened and asked a follow-up that was still about the arm. He answered. She turned back to the workbench and made a small, precise correction to the ulnar axis setting and the arm moved in its clamp and stopped cleanly, no deviation, and she said *there* in the same quiet tone she used for the arm itself.
@@ -67,4 +83,3 @@ She noticed it at the same time. He could tell she noticed it by the quality of 
 Nothing was said.
 
 He left at eleven. She said *tell Mrs. Chen the soup was good* and he said *she knows* and closed the door, and the specific sound of the latch catching was different from every other latch in the building and he'd known that for months and now he'd said the word *months* to himself in the stairwell and made himself not stop on the landing to look back at her door.
-

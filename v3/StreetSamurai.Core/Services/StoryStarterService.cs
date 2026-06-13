@@ -41,7 +41,8 @@ public class StoryStarterService
         SemanticIndexService semanticIndex, InferenceService inference,
         WorldStateService worldState,
         ILogger<StoryStarterService> log,
-        EmbeddingService? embeddings = null)
+        EmbeddingService? embeddings = null,
+        SceneContextAssembler? xray = null)
     {
         this.llm = llm;
         this.graph = graph;
@@ -52,7 +53,29 @@ public class StoryStarterService
         this.inference = inference;
         this.worldState = worldState;
         this.embeddings = embeddings;
+        this.xray = xray;
         this.log = log;
+    }
+
+    private readonly SceneContextAssembler? xray;
+
+    /// <summary>X-Ray block (RFC 0002) for whatever entities the seed text names.
+    /// Nullable-service + try/catch: the starter must work even when assembly can't.</summary>
+    private async Task<string> BuildXRayBlockAsync(string seedText, CancellationToken ct)
+    {
+        if (xray == null) return "";
+        try
+        {
+            var ctx = await xray.AssembleAsync(seedText, tokenBudget: 1200, ct);
+            return ctx.ContextBlock.Length > 0
+                ? "\nSCENE X-RAY — entities on screen, each character speaks in THEIR OWN documented register:\n" + ctx.ContextBlock
+                : "";
+        }
+        catch (Exception ex)
+        {
+            log.LogWarning(ex, "X-Ray assembly failed; continuing without roster");
+            return "";
+        }
     }
 
     /// <summary>
@@ -133,6 +156,8 @@ public class StoryStarterService
         }
 
         var worldFlavor = BuildWorldFlavor();
+        var xrayBlock = await BuildXRayBlockAsync(
+            $"{string.Join(", ", request.Characters)}\n{request.Location}\n{request.Premise}", ct);
 
         // Voice and inner-thought guidance now come from each character's documented psychology
         // and speech_patterns blocks (injected via {characterContext} below). Italicized inner
@@ -163,7 +188,7 @@ public class StoryStarterService
 
             CHARACTERS:
             {characterContext}
-
+            {xrayBlock}
             {adjacentCanon}
 
             {(!string.IsNullOrWhiteSpace(request.CanonFacts) ? request.CanonFacts : "")}
@@ -355,6 +380,8 @@ public class StoryStarterService
 
         var characterContext = session.BuildContext();
         var locationContext = "";
+        var tailForXray = storySoFar.Length > 1500 ? storySoFar[^1500..] : storySoFar;
+        var xrayBlock = await BuildXRayBlockAsync($"{string.Join(", ", characters)}\n{tailForXray}", ct);
 
         // Voice and inner-thought guidance come from each character's documented psychology
         // and speech_patterns blocks (in characterContext below). No facet-based selection.
@@ -380,7 +407,7 @@ public class StoryStarterService
             {(locationContext.Length > 0 ? $"LOCATION:\n{locationContext}" : "")}
 
             {(characterContext.Length > 0 ? $"CHARACTERS:\n{characterContext}" : "")}
-
+            {xrayBlock}
             {(canonFacts?.Length > 0 ? canonFacts : "")}
 
             {(storyConstraints?.Length > 0 ? storyConstraints : "")}
@@ -485,6 +512,7 @@ public class StoryStarterService
             : direction;
 
         var moodLine = string.IsNullOrWhiteSpace(mood) ? "" : $"\nMOOD/TONE: {mood}";
+        var xrayBlock = await BuildXRayBlockAsync(selectedText, ct);
 
         var system = $"""
             You are a literary editor rewriting near-future fiction set in Meridian City.
@@ -495,6 +523,7 @@ public class StoryStarterService
             {literaryRules}
 
             {(characterContext.Length > 0 ? $"CHARACTERS:\n{characterContext}" : "")}
+            {xrayBlock}
             """;
 
         var user = $"""

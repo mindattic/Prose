@@ -163,6 +163,46 @@
     window.streetsamurai.playClip = playClip;
     window.streetsamurai.stopClip = stopClip;
 
+    // ── Per-beat narration preview ─────────────────────────────────────────
+    // Independent single-beat player for the writer's play button.
+    // Completely separate from playBeatsInSequence (the publish sequence).
+
+    let previewAudio       = null;
+    let previewCallbackRef = null;
+
+    function playBeatPreview(url, callbackRef) {
+        stopBeatPreview();
+        previewCallbackRef = callbackRef;
+        const audio = new Audio(url);
+        audio.preload = 'auto';
+        previewAudio = audio;
+        const done = () => {
+            if (previewAudio === audio) previewAudio = null;
+            try { if (previewCallbackRef) previewCallbackRef.invokeMethodAsync('OnBeatPreviewEnded'); }
+            catch (e) { }
+        };
+        audio.addEventListener('ended', done);
+        audio.addEventListener('error', done);
+        audio.play().catch(done);
+    }
+
+    // Toggle pause/resume. Returns true when now paused, false when now playing.
+    function pauseBeatPreview() {
+        if (!previewAudio) return true;
+        if (previewAudio.paused) { previewAudio.play().catch(() => {}); return false; }
+        previewAudio.pause();
+        return true;
+    }
+
+    function stopBeatPreview() {
+        if (previewAudio) { try { previewAudio.pause(); } catch (e) {} previewAudio = null; }
+        previewCallbackRef = null;
+    }
+
+    window.streetsamurai.playBeatPreview  = playBeatPreview;
+    window.streetsamurai.pauseBeatPreview = pauseBeatPreview;
+    window.streetsamurai.stopBeatPreview  = stopBeatPreview;
+
     window.streetsamurai.playBeatsInSequence = playBeatsInSequence;
     window.streetsamurai.stopSequence         = stopSequence;
     window.streetsamurai.readInput            = readInput;

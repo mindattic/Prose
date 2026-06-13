@@ -21,6 +21,7 @@ public class SceneGenerationService
     private readonly WorldStateService worldState;
     private readonly WorldStatePrecheckService precheck;
     private readonly CanonRetrievalService canonRetrieval;
+    private readonly SceneContextAssembler xray;
 
     public event Action<BeatGenerationProgress>? OnBeatProgress;
     public event Action<GeneratedBeat>? OnBeatCompleted;
@@ -32,8 +33,10 @@ public class SceneGenerationService
         SceneContextBuilder contextBuilder, ConsequenceService consequences,
         AmbientAnomalyService anomalies, NarrativeSummaryService summaries,
         DialogueService dialogue, WorldStateService worldState,
-        WorldStatePrecheckService precheck, CanonRetrievalService canonRetrieval)
+        WorldStatePrecheckService precheck, CanonRetrievalService canonRetrieval,
+        SceneContextAssembler xray)
     {
+        this.xray = xray;
         this.canonRetrieval = canonRetrieval;
         this.analyzer = analyzer;
         this.beatGen = beatGen;
@@ -125,12 +128,26 @@ public class SceneGenerationService
                 Status = "generating",
             });
 
+            // X-Ray scene assembly (RFC 0002): who is on screen for THIS beat —
+            // requested characters + whatever the goal/recent prose names — with
+            // their voice fields, so each character speaks in their own register.
+            string xrayBlock = "";
+            try
+            {
+                var xrayCtx = await xray.AssembleAsync(
+                    $"{string.Join(", ", request.Characters)}\n{request.Location}\n{beatGoal}\n{sceneTail}",
+                    tokenBudget: 1200, ct);
+                xrayBlock = xrayCtx.ContextBlock;
+            }
+            catch { /* X-Ray is an enhancer — generation proceeds without the roster */ }
+
             var beatContext = new BeatContext
             {
                 StoryBibleContext = storyBible,
                 RelationshipContext = worldContext,
                 LocationContext = $"{ambientContext}\n{anomalyHints}\n{characterConstraints}\n{precheckConstraints}\n{summaryContext}\n{pacing.ProseGuidance}",
                 DialogueContext = dialogueContext,
+                XRayContext = xrayBlock,
                 SceneSoFar = sceneSoFar,
                 BeatGoal = beatGoal,
             };
