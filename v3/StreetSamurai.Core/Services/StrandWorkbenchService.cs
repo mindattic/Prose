@@ -1795,7 +1795,7 @@ public class StrandWorkbenchService
 
             var dlDir = CanonExportService.DownloadsDir;
             Directory.CreateDirectory(dlDir);
-            var dl = Path.Combine(dlDir, $"{strand.Slug}.{strand.Id.ToString("N")[..8]}.{ext}");
+            var dl = Path.Combine(dlDir, $"{SafeFileName(string.IsNullOrWhiteSpace(strand.Title) ? strand.Slug : strand.Title)} V{strand.Version}.{ext}");
             await File.WriteAllBytesAsync(dl, finalBytes, ct);
 
             strand.CombinedAudioPath = $"{strand.Slug}/strand.{ext}";
@@ -2095,7 +2095,7 @@ public class StrandWorkbenchService
                 {
                     var outDir = settings?.ResolvePublishOutputDirectory()
                                  ?? Path.Combine(Environment.GetFolderPath(Environment.SpecialFolder.UserProfile), "Downloads");
-                    var friendly = $"{SafeFileName(string.IsNullOrWhiteSpace(strand.Title) ? strand.Slug : strand.Title)}.{finalExt}";
+                    var friendly = $"{SafeFileName(string.IsNullOrWhiteSpace(strand.Title) ? strand.Slug : strand.Title)} V{strand.Version}.{finalExt}";
                     var outPath = Path.Combine(outDir, friendly);
                     await File.WriteAllBytesAsync(outPath, combinedBytes, ct);
                     exportedTo = outPath;
