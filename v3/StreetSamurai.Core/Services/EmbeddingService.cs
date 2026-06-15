@@ -33,6 +33,11 @@ public class EmbeddingService
     private const string Model = "text-embedding-3-small";
     private const int    Dimensions = 1536;
 
+    /// <summary>ProseEmbeddings ScopeKind for a strand beat (Beat.Id keyed). Distinct
+    /// from 'beat' (which keys ChapterBeat.BeatGuid) so the two content models
+    /// never collide in the polymorphic prose table.</summary>
+    private const string ScopeStrandBeat = "strandbeat";
+
     private readonly IDbContextFactory<StreetSamuraiDbContext> dbFactory;
     private readonly SettingsService settings;
     private readonly IHttpClientFactory httpFactory;
@@ -252,6 +257,124 @@ public class EmbeddingService
         return rows
             .Select(r => new ProseEmbeddingHit(r.ScopeKind ?? "", r.ScopeId, r.Similarity))
             .ToList();
+    }
+
+    // ── Strand-beat prose (the live writer/strand model) ──────────────────
+
+    /// <summary>
+    /// Embed the enabled beats of one strand into <c>ProseEmbeddings</c> under
+    /// the <see cref="ScopeStrandBeat"/> scope (keyed on <c>Beat.Id</c>). This
+    /// is the live strand/Beats model — distinct from <see cref="ReembedProseCorpusAsync"/>,
+    /// which embeds the older Chapter/ChapterBeat model. Drift-skipped; returns
+    /// the count newly (re)embedded. Cheap: a novella is a few cents.
+    /// </summary>
+    public async Task<int> ReembedStrandBeatsAsync(Guid strandId, CancellationToken ct = default)
+    {
+        await EnsureSchemaOnceAsync(ct);
+        await using var db = await dbFactory.CreateDbContextAsync(ct);
+
+        var beats = await (from sb in db.StrandBeats.AsNoTracking()
+                           join b in db.Beats.AsNoTracking() on sb.BeatId equals b.Id
+                           where sb.StrandId == strandId && sb.IsEnabled
+                           orderby sb.SortKey
+                           select new { b.Id, b.BeatTitle, b.Synopsis, b.Text }).ToListAsync(ct);
+        if (beats.Count == 0) return 0;
+
+        var prepped = beats
+            .Select(b => { var t = BuildBeatSourceText(b.BeatTitle, b.Synopsis, b.Text); return (b.Id, Text: t, Hash: Hash(t)); })
+            .Where(p => !string.IsNullOrWhiteSpace(p.Text))
+            .ToList();
+
+        var existing = await db.ProseEmbeddings.AsNoTracking()
+            .Where(x => x.ScopeKind == ScopeStrandBeat)
+            .Select(x => new { x.ScopeId, x.SourceHash })
+            .ToListAsync(ct);
+        var existingDict = existing.ToDictionary(x => x.ScopeId, x => x.SourceHash);
+
+        var toEmbed = prepped
+            .Where(p => !(existingDict.TryGetValue(p.Id, out var h) && h.AsSpan().SequenceEqual(p.Hash)))
+            .ToList();
+        if (toEmbed.Count == 0) return 0;
+
+        const int BatchSize = 64;
+        int touched = 0;
+        for (int start = 0; start < toEmbed.Count; start += BatchSize)
+        {
+            if (ct.IsCancellationRequested) break;
+            var slice = toEmbed.Skip(start).Take(BatchSize).ToList();
+            var texts = slice.Select(s => TruncateForEmbed(s.Text)).ToList();
+
+            float[][] vectors;
+            try { vectors = await EmbedBatchAsync(texts, ct); }
+            catch (Exception ex) { log.LogWarning(ex, "Strand-beat embed batch failed at offset {Offset}", start); continue; }
+            if (vectors.Length != slice.Count) { log.LogWarning("Strand-beat batch returned {Got}/{Sent}", vectors.Length, slice.Count); continue; }
+
+            await using var batchDb = await dbFactory.CreateDbContextAsync(ct);
+            for (int i = 0; i < slice.Count; i++)
+            {
+                var v = vectors[i];
+                if (v.Length == 0) continue;
+                await UpsertProseVectorRawAsync(batchDb, ScopeStrandBeat, slice[i].Id, slice[i].Hash, v, ct);
+                touched++;
+            }
+        }
+        return touched;
+    }
+
+    /// <summary>
+    /// Top-<paramref name="k"/> strand beats most similar to <paramref name="queryText"/>,
+    /// optionally restricted to a single strand. Only enabled beats are searched
+    /// (the StrandBeats join filters soft-deletes). Returns hits keyed on Beat.Id.
+    /// </summary>
+    public async Task<IReadOnlyList<ProseEmbeddingHit>> FindSimilarStrandBeatsAsync(
+        string queryText, int k = 6, Guid? strandScope = null, CancellationToken ct = default)
+    {
+        if (string.IsNullOrWhiteSpace(queryText)) return Array.Empty<ProseEmbeddingHit>();
+        await EnsureSchemaOnceAsync(ct);
+
+        var queryVector = await EmbedAsync(TruncateForEmbed(queryText), ct);
+        if (queryVector.Length == 0) return Array.Empty<ProseEmbeddingHit>();
+        var queryJson = JsonSerializer.Serialize(queryVector);
+
+        // Pull 2x then dedupe in C# — a beat can live in more than one strand,
+        // so the StrandBeats join can surface the same Beat.Id twice.
+        var parameters = new List<Microsoft.Data.SqlClient.SqlParameter>
+        {
+            new("@p_k", Math.Max(1, k) * 2),
+            new("@p_query", queryJson),
+        };
+        var scopeFilter = "";
+        if (strandScope is Guid sid)
+        {
+            scopeFilter = " AND sb.StrandId = @p_strand";
+            parameters.Add(new Microsoft.Data.SqlClient.SqlParameter("@p_strand", sid));
+        }
+
+        var sql = $"""
+            SELECT TOP (@p_k)
+                pe.ScopeId AS ScopeId,
+                1.0 - VECTOR_DISTANCE('cosine', pe.Vector, CAST(@p_query AS VECTOR(1536))) AS Similarity
+            FROM dbo.ProseEmbeddings pe
+            JOIN dbo.StrandBeats sb ON sb.BeatId = pe.ScopeId AND sb.IsEnabled = 1
+            WHERE pe.ScopeKind = '{ScopeStrandBeat}'{scopeFilter}
+            ORDER BY VECTOR_DISTANCE('cosine', pe.Vector, CAST(@p_query AS VECTOR(1536))) ASC;
+            """;
+
+        await using var db = await dbFactory.CreateDbContextAsync(ct);
+        var rows = await db.Database.SqlQueryRaw<ProseScopeRow>(sql, parameters.ToArray<object>())
+            .ToListAsync(ct);
+        return rows
+            .GroupBy(r => r.ScopeId).Select(g => g.First())
+            .Take(Math.Max(1, k))
+            .Select(r => new ProseEmbeddingHit(ScopeStrandBeat, r.ScopeId, r.Similarity))
+            .ToList();
+    }
+
+    /// <summary>Row shape for the strand-beat VECTOR_DISTANCE query.</summary>
+    private sealed class ProseScopeRow
+    {
+        public Guid   ScopeId    { get; set; }
+        public double Similarity { get; set; }
     }
 
     /// <summary>Bulk re-embed every chapter + beat in canon. Idempotent (drift-skipped).</summary>

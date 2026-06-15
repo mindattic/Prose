@@ -156,6 +156,7 @@ public class StrandWorkbenchService
         beat.Stale         = true;
         beat.Score         = null;  // text changed → prior score is for the old version
         beat.ScoredAt      = null;
+        beat.Version++;
         InvalidateAudioOnBeat(beat);
         beat.UpdatedAt = DateTime.UtcNow;
         try
@@ -1459,20 +1460,31 @@ public class StrandWorkbenchService
         return false;
     }
 
-    /// <summary>The fixed audition line. A pangram exercises a broad phoneme
-    /// spread in one short clip, so the operator hears a voice's character
-    /// without depending on whatever the strand's first beat happens to say.</summary>
+    /// <summary>Quick pangram for the Audition button — exercises a broad phoneme
+    /// spread in one short clip.</summary>
     public const string AuditionSampleText = "The quick brown fox jumped over the lazy dog.";
 
+    /// <summary>Longer dramatic passage for the Demo button — exercises normal
+    /// narration, tension, urgency, and a beat of joy in about 150 words so the
+    /// listener hears the voice's full emotional range, not just its timbre.</summary>
+    public const string DemoSampleText =
+        "The city breathed at 3 AM with a sound no one had named yet. " +
+        "Kyle moved through it the way water moves through cracks — not forcing, just finding. " +
+        "The job was simple: retrieve the drive before anyone else knew it was missing. " +
+        "Simple. He almost laughed. Forty feet up, balanced on a ledge that had no business " +
+        "supporting his weight, with a sweep team two blocks out and closing — simple was not " +
+        "the word. But then the lock clicked open, the data was in his hand, and somewhere below " +
+        "his partner sent a single pulse through his neuretics: got them. Run. " +
+        "He ran. And for exactly three seconds, before the shooting started, it felt like joy.";
+
     /// <summary>
-    /// Render the fixed <see cref="AuditionSampleText"/> with an arbitrary voice
-    /// profile and return the MP3 bytes — a throwaway preview for the voice
-    /// studio. NOTHING is persisted: this never touches the strand's pinned
-    /// voice, any beat's stored audio, or the audio-event ledger. Uses the
-    /// strand's deterministic seed so the sample previews how THIS strand's
-    /// voice realization would actually sound on these dials.
+    /// Synthesize a sample passage with an arbitrary voice profile and return
+    /// the MP3 bytes — a throwaway preview for the voice studio. NOTHING is
+    /// persisted. Uses the strand's deterministic seed. Pass <paramref name="text"/>
+    /// to override the default <see cref="AuditionSampleText"/>.
     /// </summary>
-    public async Task<byte[]> AuditionVoiceAsync(Guid strandId, Models.VoiceProfile dials, CancellationToken ct = default)
+    public async Task<byte[]> AuditionVoiceAsync(Guid strandId, Models.VoiceProfile dials,
+        string? text = null, CancellationToken ct = default)
     {
         ArgumentNullException.ThrowIfNull(dials);
         if (string.IsNullOrWhiteSpace(dials.VoiceId))
@@ -1480,13 +1492,10 @@ public class StrandWorkbenchService
         if (!await tts.IsConfiguredAsync())
             throw new InvalidOperationException("TTS is not configured (no ElevenLabs API key).");
 
-        // A plain fixed line carries no beat metadata, so synthesize it directly
-        // with the dials. The TTS layer snaps stability and drops similarity/style
-        // for v3; the strand seed anchors the voice realization.
         var vs = new TtsVoiceSettings(dials.Stability, dials.SimilarityBoost, dials.Style,
             Seed: DeriveSeed(strandId), ModelId: dials.Model);
         var result = await tts.SynthesizeWithIdAsync(
-            AuditionSampleText, dials.VoiceId, outputFormat: "mp3_44100_128",
+            text ?? AuditionSampleText, dials.VoiceId, outputFormat: "mp3_44100_128",
             previousRequestIds: null, previousText: null, nextText: null,
             voiceSettings: vs, ct);
         return result.Bytes;
@@ -1647,7 +1656,7 @@ public class StrandWorkbenchService
         bool isV3 = local is null && voice.Model.Contains("v3", StringComparison.OrdinalIgnoreCase);
         // eleven_v3 caps a request far lower than the v2 family; budget per model.
         // Local engines are uncapped — chapter-sized segments keep memory sane.
-        int limit = local != null ? local.CharBudget : isV3 ? 2800 : 9000;
+        int limit = local != null ? local.CharBudget : isV3 ? 4800 : 9000;
         var segments = BuildAudiobookSegments(ordered, limit);
 
         var pub = new StrandPublication

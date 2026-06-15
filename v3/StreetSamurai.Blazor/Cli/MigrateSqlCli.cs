@@ -34,11 +34,24 @@ public static class MigrateSqlCli
         // Beat soft-delete: add IsEnabled to StrandBeats (and its history table).
         var strandBeatSoftDelete = args.Contains("--strand-beat-soft-delete");
 
-        if (!schema && !charRelational && !charDropLegacy && !strandBeatSoftDelete)
+        // Strand + Beat version counter: add Version INT to Beats, Strands (and history tables).
+        var strandBeatVersion = args.Contains("--strand-beat-version");
+
+        // Entity grammar notes: add GrammarNote NVARCHAR(MAX) to Entities (and history table).
+        var entityGrammarNote = args.Contains("--entity-grammar-note");
+
+        // Strand short reference code: add StrandCode NVARCHAR(20) to Strands (+ history) with a
+        // unique filtered index (enforced for non-null values only).
+        var strandCode = args.Contains("--strand-code");
+
+        if (!schema && !charRelational && !charDropLegacy && !strandBeatSoftDelete && !strandBeatVersion && !entityGrammarNote && !strandCode)
         {
             Console.WriteLine("Usage:");
             Console.WriteLine("  ss --migrate-sql --schema                    apply EF migrations + enable SYSTEM_VERSIONING");
             Console.WriteLine("  ss --migrate-sql --strand-beat-soft-delete   add IsEnabled column to StrandBeats/StrandBeats_History");
+            Console.WriteLine("  ss --migrate-sql --strand-beat-version       add Version INT counter to Beats+Strands (and history tables)");
+            Console.WriteLine("  ss --migrate-sql --entity-grammar-note       add GrammarNote column to Entities (and history table)");
+            Console.WriteLine("  ss --migrate-sql --strand-code               add StrandCode NVARCHAR(20) to Strands (unique per non-null value)");
             Console.WriteLine();
             Console.WriteLine("  ss --migrate-sql --character-relational    add relational columns + bridges to Characters,");
             Console.WriteLine("                                             then backfill from Records.Json (--no-backfill skips Phase C)");
@@ -173,6 +186,113 @@ public static class MigrateSqlCli
             catch (Exception ex)
             {
                 Console.WriteLine($"  ✘ failed: {ex.Message}");
+                failures++;
+            }
+        }
+
+        if (strandBeatVersion)
+        {
+            using var scope = sp.CreateScope();
+            var db = scope.ServiceProvider.GetRequiredService<StreetSamuraiDbContext>();
+
+            Console.WriteLine();
+            Console.WriteLine("[strand-beat-version]");
+            foreach (var (table, hist) in new[] { ("Beats", "Beats_History"), ("Strands", "Strands_History") })
+            {
+                try
+                {
+                    await db.Database.ExecuteSqlRawAsync($"""
+                        IF NOT EXISTS (SELECT 1 FROM sys.columns
+                                       WHERE object_id = OBJECT_ID('{table}') AND name = 'Version')
+                        BEGIN
+                            ALTER TABLE [dbo].[{table}] SET (SYSTEM_VERSIONING = OFF);
+                            ALTER TABLE [dbo].[{table}]         ADD [Version] INT NOT NULL DEFAULT 0;
+                            ALTER TABLE [dbo].[{hist}] ADD [Version] INT NOT NULL DEFAULT 0;
+                            ALTER TABLE [dbo].[{table}]
+                                SET (SYSTEM_VERSIONING = ON (HISTORY_TABLE = [dbo].[{hist}],
+                                                             DATA_CONSISTENCY_CHECK = OFF));
+                        END;
+                        """);
+                    Console.WriteLine($"  ✔ Version column added to {table} (+ {hist}).");
+                }
+                catch (Exception ex)
+                {
+                    Console.WriteLine($"  ✘ {table} failed: {ex.Message}");
+                    failures++;
+                }
+            }
+        }
+
+        if (entityGrammarNote)
+        {
+            using var scope = sp.CreateScope();
+            var db = scope.ServiceProvider.GetRequiredService<StreetSamuraiDbContext>();
+
+            Console.WriteLine();
+            Console.WriteLine("[entity-grammar-note]");
+            try
+            {
+                await db.Database.ExecuteSqlRawAsync("""
+                    IF NOT EXISTS (SELECT 1 FROM sys.columns
+                                   WHERE object_id = OBJECT_ID('Entities') AND name = 'GrammarNote')
+                    BEGIN
+                        ALTER TABLE [dbo].[Entities] SET (SYSTEM_VERSIONING = OFF);
+                        ALTER TABLE [dbo].[Entities]         ADD [GrammarNote] NVARCHAR(MAX) NULL;
+                        ALTER TABLE [dbo].[Entities_History] ADD [GrammarNote] NVARCHAR(MAX) NULL;
+                        ALTER TABLE [dbo].[Entities]
+                            SET (SYSTEM_VERSIONING = ON (HISTORY_TABLE = [dbo].[Entities_History],
+                                                         DATA_CONSISTENCY_CHECK = OFF));
+                    END;
+                    """);
+                Console.WriteLine("  ✔ GrammarNote column added to Entities (+ Entities_History).");
+            }
+            catch (Exception ex)
+            {
+                Console.WriteLine($"  ✘ Entities failed: {ex.Message}");
+                failures++;
+            }
+        }
+
+        if (strandCode)
+        {
+            using var scope = sp.CreateScope();
+            var db = scope.ServiceProvider.GetRequiredService<StreetSamuraiDbContext>();
+
+            Console.WriteLine();
+            Console.WriteLine("[strand-code]");
+            try
+            {
+                // Add the column to the temporal table + its history shadow.
+                await db.Database.ExecuteSqlRawAsync("""
+                    IF NOT EXISTS (SELECT 1 FROM sys.columns
+                                   WHERE object_id = OBJECT_ID('Strands') AND name = 'StrandCode')
+                    BEGIN
+                        ALTER TABLE [dbo].[Strands] SET (SYSTEM_VERSIONING = OFF);
+                        ALTER TABLE [dbo].[Strands]         ADD [StrandCode] NVARCHAR(20) NULL;
+                        ALTER TABLE [dbo].[Strands_History] ADD [StrandCode] NVARCHAR(20) NULL;
+                        ALTER TABLE [dbo].[Strands]
+                            SET (SYSTEM_VERSIONING = ON (HISTORY_TABLE = [dbo].[Strands_History],
+                                                         DATA_CONSISTENCY_CHECK = OFF));
+                    END;
+                    """);
+                Console.WriteLine("  ✔ StrandCode column added to Strands (+ Strands_History).");
+
+                // Unique filtered index: enforces no two non-null codes can match.
+                // Filtered indexes are not temporal-table-gated, so no SYSTEM_VERSIONING dance needed.
+                await db.Database.ExecuteSqlRawAsync("""
+                    IF NOT EXISTS (SELECT 1 FROM sys.indexes
+                                   WHERE object_id = OBJECT_ID('Strands') AND name = 'IX_Strands_StrandCode')
+                    BEGIN
+                        CREATE UNIQUE INDEX [IX_Strands_StrandCode]
+                            ON [dbo].[Strands] ([StrandCode])
+                            WHERE [StrandCode] IS NOT NULL;
+                    END;
+                    """);
+                Console.WriteLine("  ✔ Unique filtered index IX_Strands_StrandCode created.");
+            }
+            catch (Exception ex)
+            {
+                Console.WriteLine($"  ✘ StrandCode migration failed: {ex.Message}");
                 failures++;
             }
         }

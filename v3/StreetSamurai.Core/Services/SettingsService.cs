@@ -173,6 +173,18 @@ public class SettingsService : IDisposable
         return dir;
     }
 
+    /// <summary>The literal output folder for the published manuscript <c>.docx</c> export
+    /// (typically the book's own folder). When set, <c>publish-docx</c> writes
+    /// <c>&lt;PublishExportDirectory&gt;\&lt;Hyphenated-Title&gt;.docx</c> and clears any existing
+    /// <c>.docx</c> in that folder first. Empty = the user's Downloads folder (legacy
+    /// slug-based naming, no clearing). Stray wrapping quotes/whitespace are tolerated by
+    /// the exporter.</summary>
+    public string PublishExportDirectory
+    {
+        get => data.PublishExportDirectory;
+        set { data.PublishExportDirectory = value ?? ""; ScheduleSave(); }
+    }
+
     // ── Inter-beat silence pacing (combined-audio export) ──────────────────
     // When the per-beat audio files are concatenated into the combined strand
     // audio, the StrandWorkbenchService.ExportCombinedAsync injects a brief
@@ -262,13 +274,10 @@ public class SettingsService : IDisposable
     }
 
     /// <summary>
-    /// Bulk-import every ElevenLabs voice as TWO baseline profiles — a v3
-    /// variant (Robust 1.0, the project default that fights v3 accent drift)
-    /// and a v2 variant (factory 0.5). Deterministic ids
-    /// (<c>vox-{slug}-v3</c> / <c>vox-{slug}-v2</c>) make re-import idempotent:
-    /// baselines refresh in place rather than duplicating, and user-saved tuned
-    /// copies (which carry Guid-suffixed ids) are never touched. Returns the
-    /// number of voices imported (one count per voice, not per profile).
+    /// Bulk-import every ElevenLabs voice as a v2 baseline profile. Deterministic
+    /// id (<c>vox-{slug}-v2</c>) makes re-import idempotent: baselines refresh in
+    /// place rather than duplicating, and user-saved tuned copies (which carry
+    /// Guid-suffixed ids) are never touched. Returns the number of voices imported.
     /// </summary>
     public int ImportAllVoicesAsProfiles(IEnumerable<TtsVoice> voices)
     {
@@ -281,15 +290,10 @@ public class SettingsService : IDisposable
             var slug = Slugify(name);
             UpsertVoiceProfile(new Models.VoiceProfile
             {
-                Id = $"vox-{slug}-v3", Label = $"{name} · v3",
-                VoiceId = v.VoiceId, Model = "eleven_v3",
-                Stability = 1.0, SimilarityBoost = 0.75, Style = 0.0, UseSpeakerBoost = true,
-            });
-            UpsertVoiceProfile(new Models.VoiceProfile
-            {
-                Id = $"vox-{slug}-v2", Label = $"{name} · v2",
+                Id = $"vox-{slug}-v2", Label = name,
                 VoiceId = v.VoiceId, Model = "eleven_multilingual_v2",
                 Stability = 0.5, SimilarityBoost = 0.75, Style = 0.0, UseSpeakerBoost = true,
+                Description = v.Description,
             });
             count++;
         }
@@ -602,12 +606,8 @@ public class SettingsService : IDisposable
         public string ElevenLabsApiKey { get; set; } = "";
         public string ElevenLabsVoiceId { get; set; } = "jfIS2w2yJi0grJZPyEsk";
         public string NarratorVoiceName { get; set; } = "Oliver Silk - Deep Gravel Narrative";
-        public string TtsModel { get; set; } = "eleven_v3";
-        // Robust (1.0) on eleven_v3 — snapped to the highest of v3's three
-        // discrete presets so the narrator stays one continuous performance
-        // across beats. v3 ignores similarity_boost/style, so stability + the
-        // constant per-strand seed are the whole cross-beat consistency lever.
-        public double TtsStability { get; set; } = 1.0;
+        public string TtsModel { get; set; } = "eleven_multilingual_v2";
+        public double TtsStability { get; set; } = 0.5;
         public double TtsSimilarityBoost { get; set; } = 0.75;
         public double TtsStyle { get; set; } = 0.0;
         /// <summary>Final audiobook delivery format key (see <see cref="AudiobookFormats"/>).
@@ -616,6 +616,8 @@ public class SettingsService : IDisposable
         public bool TtsUseAudioTags { get; set; } = true;
         /// <summary>Empty = the user's Downloads folder.</summary>
         public string PublishOutputDirectory { get; set; } = "";
+        /// <summary>Base dir for the manuscript .docx export. Empty = Downloads.</summary>
+        public string PublishExportDirectory { get; set; } = "";
         public int TtsPauseSectionMs { get; set; } = 1800;
         public int TtsPauseSceneMs { get; set; } = 1000;
         public int TtsPauseParagraphMs { get; set; } = 400;

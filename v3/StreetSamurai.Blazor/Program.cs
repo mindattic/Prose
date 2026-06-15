@@ -549,6 +549,18 @@ if (args.Contains("--seed-voice-rules"))
     return;
 }
 
+// CLI mode: extract a time / elapsed-duration timeline from all beats in a strand.
+// Flags clock anchors, infers story-relative timestamps, and surfaces conflicts.
+//   ss --timeline (--slug <slug> | --id <id>)
+if (args.Contains("--timeline"))
+{
+    var cliBuilder = WebApplication.CreateBuilder(args);
+    cliBuilder.Services.AddStreetSamuraiServices();
+    var cliApp = cliBuilder.Build();
+    Environment.ExitCode = await TimelineCli.RunAsync(args, cliApp.Services);
+    return;
+}
+
 // CLI mode: per-entity-type reachability matrix (how much canon is embedded and
 // thus pullable into prose). The standing gap-finder.
 //   ss --coverage
