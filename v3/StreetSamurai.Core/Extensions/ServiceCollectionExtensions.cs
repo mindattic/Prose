@@ -672,6 +672,7 @@ public static class ServiceCollectionExtensions
         services.AddSingleton<StoryRefinementService>();
         services.AddSingleton<CanonGroundingService>();
         services.AddSingleton<EntityRatingService>();
+        services.AddSingleton<EntityReviewService>();
 
         return services;
     }
