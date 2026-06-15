@@ -449,6 +449,19 @@ if (args.Contains("--make-group"))
     return;
 }
 
+// CLI mode: run Legion persona quality voting across canon entity repos.
+// Replaces the old LlmVoting (10 GLMZ residents) with the full 1000-persona library,
+// 1-100 scale, and append-only EntityReview rows (same process as strand reviews).
+//   ss --review-entity [--type <type>] [--ballots N] [--prose N] [--unrated]
+if (args.Contains("--review-entity"))
+{
+    var cliBuilder = WebApplication.CreateBuilder(args);
+    cliBuilder.Services.AddStreetSamuraiServices();
+    var cliApp = cliBuilder.Build();
+    Environment.ExitCode = await ReviewEntityCli.RunAsync(args, cliApp.Services);
+    return;
+}
+
 // CLI mode: have N Legion personas each read an EXISTING strand and write an
 // honest, scored reader review (saved to StrandReviews), then synthesize the
 // Amazon-style aggregate summary. Round-robins reviewers across the trusted-4.

@@ -44,7 +44,10 @@ public static class MigrateSqlCli
         // unique filtered index (enforced for non-null values only).
         var strandCode = args.Contains("--strand-code");
 
-        if (!schema && !charRelational && !charDropLegacy && !strandBeatSoftDelete && !strandBeatVersion && !entityGrammarNote && !strandCode)
+        // Entity quality reviews: create EntityReviews + EntityReviewSummaries tables.
+        var entityReviews = args.Contains("--entity-reviews");
+
+        if (!schema && !charRelational && !charDropLegacy && !strandBeatSoftDelete && !strandBeatVersion && !entityGrammarNote && !strandCode && !entityReviews)
         {
             Console.WriteLine("Usage:");
             Console.WriteLine("  ss --migrate-sql --schema                    apply EF migrations + enable SYSTEM_VERSIONING");
@@ -52,6 +55,7 @@ public static class MigrateSqlCli
             Console.WriteLine("  ss --migrate-sql --strand-beat-version       add Version INT counter to Beats+Strands (and history tables)");
             Console.WriteLine("  ss --migrate-sql --entity-grammar-note       add GrammarNote column to Entities (and history table)");
             Console.WriteLine("  ss --migrate-sql --strand-code               add StrandCode NVARCHAR(20) to Strands (unique per non-null value)");
+            Console.WriteLine("  ss --migrate-sql --entity-reviews            create EntityReviews + EntityReviewSummaries tables");
             Console.WriteLine();
             Console.WriteLine("  ss --migrate-sql --character-relational    add relational columns + bridges to Characters,");
             Console.WriteLine("                                             then backfill from Records.Json (--no-backfill skips Phase C)");
@@ -293,6 +297,71 @@ public static class MigrateSqlCli
             catch (Exception ex)
             {
                 Console.WriteLine($"  ✘ StrandCode migration failed: {ex.Message}");
+                failures++;
+            }
+        }
+
+        if (entityReviews)
+        {
+            using var erScope = sp.CreateScope();
+            var erDb = erScope.ServiceProvider.GetRequiredService<StreetSamuraiDbContext>();
+            Console.WriteLine();
+            Console.WriteLine("[entity-reviews]");
+            try
+            {
+                await erDb.Database.ExecuteSqlRawAsync("""
+                    IF NOT EXISTS (SELECT 1 FROM sys.tables WHERE name = 'EntityReviews')
+                    BEGIN
+                        CREATE TABLE [dbo].[EntityReviews] (
+                            [Id]           UNIQUEIDENTIFIER NOT NULL DEFAULT NEWSEQUENTIALID() PRIMARY KEY,
+                            [EntityId]     NVARCHAR(200)    NOT NULL,
+                            [EntityType]   NVARCHAR(40)     NOT NULL,
+                            [EntityName]   NVARCHAR(400)    NOT NULL DEFAULT '',
+                            [PersonaId]    NVARCHAR(40)     NOT NULL DEFAULT '',
+                            [PersonaName]  NVARCHAR(80)     NOT NULL DEFAULT '',
+                            [PersonaBlurb] NVARCHAR(400)    NULL,
+                            [ProviderId]   NVARCHAR(40)     NOT NULL DEFAULT '',
+                            [Model]        NVARCHAR(80)     NULL,
+                            [Score]        INT              NOT NULL DEFAULT 0,
+                            [ReviewText]   NVARCHAR(MAX)    NOT NULL DEFAULT '',
+                            [Improvements] NVARCHAR(MAX)    NULL,
+                            [ContentHash]  NVARCHAR(64)     NOT NULL DEFAULT '',
+                            [ReviewedAt]   DATETIME2        NOT NULL DEFAULT SYSUTCDATETIME(),
+                            [CreatedAt]    DATETIME2        NOT NULL DEFAULT SYSUTCDATETIME(),
+                            [UpdatedAt]    DATETIME2        NOT NULL DEFAULT SYSUTCDATETIME()
+                        );
+                        CREATE INDEX [IX_EntityReviews_EntityId_Type_ReviewedAt]
+                            ON [dbo].[EntityReviews] ([EntityId], [EntityType], [ReviewedAt] DESC);
+                        CREATE INDEX [IX_EntityReviews_EntityType_ReviewedAt]
+                            ON [dbo].[EntityReviews] ([EntityType], [ReviewedAt] DESC);
+                    END;
+                    """);
+                Console.WriteLine("  ✔ EntityReviews table created (or already exists).");
+
+                await erDb.Database.ExecuteSqlRawAsync("""
+                    IF NOT EXISTS (SELECT 1 FROM sys.tables WHERE name = 'EntityReviewSummaries')
+                    BEGIN
+                        CREATE TABLE [dbo].[EntityReviewSummaries] (
+                            [Id]                    UNIQUEIDENTIFIER NOT NULL DEFAULT NEWSEQUENTIALID() PRIMARY KEY,
+                            [EntityId]              NVARCHAR(200)    NOT NULL,
+                            [EntityType]            NVARCHAR(40)     NOT NULL,
+                            [EntityName]            NVARCHAR(400)    NOT NULL DEFAULT '',
+                            [ReviewCount]           INT              NOT NULL DEFAULT 0,
+                            [AvgScore]              FLOAT            NOT NULL DEFAULT 0,
+                            [ScoreDistributionJson] NVARCHAR(MAX)    NULL,
+                            [SummaryMarkdown]       NVARCHAR(MAX)    NULL,
+                            [ContentHash]           NVARCHAR(64)     NOT NULL DEFAULT '',
+                            [GeneratedAt]           DATETIME2        NOT NULL DEFAULT SYSUTCDATETIME()
+                        );
+                        CREATE UNIQUE INDEX [IX_EntityReviewSummaries_EntityId_Type]
+                            ON [dbo].[EntityReviewSummaries] ([EntityId], [EntityType]);
+                    END;
+                    """);
+                Console.WriteLine("  ✔ EntityReviewSummaries table created (or already exists).");
+            }
+            catch (Exception ex)
+            {
+                Console.WriteLine($"  ✘ entity-reviews migration failed: {ex.Message}");
                 failures++;
             }
         }

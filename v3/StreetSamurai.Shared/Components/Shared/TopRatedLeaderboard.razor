@@ -1,5 +1,5 @@
 @using StreetSamurai.Core.Services
-@inject EntityRatingService Rater
+@inject EntityReviewService Reviewer
 @inject IWriteAccessProvider Access
 @implements IDisposable
 
@@ -26,11 +26,11 @@
                 }
                 else
                 {
-                    <button class="btn btn-sm btn-outline-danger" @onclick="RunAll" title="Add 10 more votes per entity — accumulates over time">
-                        <i class="bi bi-stars"></i> Add Votes
+                    <button class="btn btn-sm btn-outline-danger" @onclick="RunAll" title="Run Legion persona voting on all entities">
+                        <i class="bi bi-stars"></i> Vote All
                     </button>
-                    <button class="btn btn-sm btn-outline-secondary" @onclick="RunUnrated" title="Rate only entries with no votes yet">
-                        <i class="bi bi-plus-circle"></i> Rate New
+                    <button class="btn btn-sm btn-outline-secondary" @onclick="RunUnrated" title="Run voting only on entities with no score yet">
+                        <i class="bi bi-plus-circle"></i> Vote New
                     </button>
                 }
             </div>
@@ -91,7 +91,7 @@
 
     private void Reload()
     {
-        entries = Rater.GetAllRated().Take(100).ToList();
+        entries = Reviewer.GetAllReviewed().Take(100).ToList();
         totalVotes = entries.Sum(e => e.VoteCount);
     }
 
@@ -103,7 +103,7 @@
         StateHasChanged();
         try
         {
-            await Rater.RateAllAsync(cts.Token);
+            await Reviewer.ReviewAllAsync(skipRated: false, ct: cts.Token);
         }
         finally
         {
@@ -118,11 +118,11 @@
     {
         cts = new CancellationTokenSource();
         running = true;
-        statusMsg = "Rating new entries…";
+        statusMsg = "Voting new entries…";
         StateHasChanged();
         try
         {
-            await Rater.RateUnratedAsync(cts.Token);
+            await Reviewer.ReviewAllAsync(skipRated: true, ct: cts.Token);
         }
         finally
         {

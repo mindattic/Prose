@@ -52,9 +52,12 @@ public class StreetSamuraiDbContext : DbContext
     public DbSet<StrandBeat>         StrandBeats         => Set<StrandBeat>();
     public DbSet<StrandPublication>  StrandPublications  => Set<StrandPublication>();
     public DbSet<StrandAudioEvent>   StrandAudioEvents   => Set<StrandAudioEvent>();
-    // Persona reader-reviews + their Amazon-style aggregate summary.
+    // Persona reader-reviews + their Amazon-style aggregate summary (strands).
     public DbSet<StrandReview>          StrandReviews          => Set<StrandReview>();
     public DbSet<StrandReviewSummary>   StrandReviewSummaries  => Set<StrandReviewSummary>();
+    // Persona quality-reviews for canon entities (characters, weapons, tech, etc.).
+    public DbSet<EntityReview>          EntityReviews          => Set<EntityReview>();
+    public DbSet<EntityReviewSummary>   EntityReviewSummaries  => Set<EntityReviewSummary>();
     // Append-only audit trail of voice-rule changes (directive / manual_edit / harvest).
     public DbSet<VoiceChangeLogEntry>   VoiceChangeLog         => Set<VoiceChangeLogEntry>();
     // First-class species taxonomy for sentient life (human/ai/elf/synthetic/unknown).
@@ -415,6 +418,32 @@ public class StreetSamuraiDbContext : DbContext
             e.HasKey(x => new { x.ReviewId, x.BeatNumber });
             e.HasOne(x => x.Review).WithMany(r => r.BeatScores)
                 .HasForeignKey(x => x.ReviewId).OnDelete(DeleteBehavior.Cascade);
+        });
+
+        b.Entity<EntityReview>(e =>
+        {
+            e.HasKey(x => x.Id);
+            e.Property(x => x.EntityId).HasMaxLength(200).IsRequired();
+            e.Property(x => x.EntityType).HasMaxLength(40).IsRequired();
+            e.Property(x => x.EntityName).HasMaxLength(400).IsRequired();
+            e.Property(x => x.PersonaId).HasMaxLength(40).IsRequired();
+            e.Property(x => x.PersonaName).HasMaxLength(80).IsRequired();
+            e.Property(x => x.PersonaBlurb).HasMaxLength(400);
+            e.Property(x => x.ProviderId).HasMaxLength(40).IsRequired();
+            e.Property(x => x.Model).HasMaxLength(80);
+            e.Property(x => x.ContentHash).HasMaxLength(64);
+            e.HasIndex(x => new { x.EntityId, x.EntityType, x.ReviewedAt });
+            e.HasIndex(x => new { x.EntityType, x.ReviewedAt });
+        });
+
+        b.Entity<EntityReviewSummary>(e =>
+        {
+            e.HasKey(x => x.Id);
+            e.Property(x => x.EntityId).HasMaxLength(200).IsRequired();
+            e.Property(x => x.EntityType).HasMaxLength(40).IsRequired();
+            e.Property(x => x.EntityName).HasMaxLength(400).IsRequired();
+            e.Property(x => x.ContentHash).HasMaxLength(64);
+            e.HasIndex(x => new { x.EntityId, x.EntityType }).IsUnique();
         });
 
         // ── Entity (universal) ───────────────────────────────────────────────
