@@ -152,6 +152,11 @@ public class Beat
     /// The workbench also exposes an <c>expectedUpdatedAt</c> parameter so
     /// the UI can detect the longer "user opened the editor, walked away,
     /// another tab edited it" race window.</summary>
+    /// <summary>Monotonic edit counter. Incremented by one each time the beat's
+    /// prose is saved via <c>UpdateBeatTextAsync</c>. Zero = never edited after
+    /// creation. Surfaces in the writer's version cycler as a stable label.</summary>
+    public int Version { get; set; }
+
     [ConcurrencyCheck]
     public DateTime UpdatedAt { get; set; } = DateTime.UtcNow;
 

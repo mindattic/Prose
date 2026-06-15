@@ -28,6 +28,10 @@ public class StrandReviewService
 
     private const int MaxConcurrency = 10;
 
+    /// <summary>When set, the reviewer persona is framed as a fan of this genre
+    /// instead of the default cyberpunk fandom. E.g. "cosmic horror".</summary>
+    public string? GenreOverride { get; set; }
+
     public StrandReviewService(
         LegionClient legion,
         VotingConfiguration cfg,
@@ -745,7 +749,7 @@ Return ONLY a JSON object, nothing else:
         return TryParseReview(raw, out _, out var review, out var improvements) ? (review, improvements) : null;
     }
 
-    private static string BuildBallotSystemPrompt(Persona persona, string title, int beatCount)
+    private string BuildBallotSystemPrompt(Persona persona, string title, int beatCount)
     {
         var who = BuildWhoBlock(persona);
         return
@@ -769,7 +773,7 @@ Be honest and use the whole scale.";
     /// real personality — Openness governs tolerance for the strange/lyrical,
     /// Conscientiousness governs patience for looseness, etc. No DB: the profile is
     /// delivered by <see cref="PersonaLibrary.GetProfile"/>.</summary>
-    private static string BuildWhoBlock(Persona persona)
+    private string BuildWhoBlock(Persona persona)
     {
         var who = string.IsNullOrWhiteSpace(persona.PersonalityMarkdown)
             ? "You are an ordinary, opinionated reader."
@@ -783,17 +787,36 @@ $@"
 YOUR MEASURED PSYCHOMETRIC PROFILE — let it genuinely shape what you notice, what bothers you, and how you score: {profile.Summary()}.
 Read through this psychology, not a generic critic's: high Openness welcomes the strange, lyrical, and rule-breaking; low Openness wants clarity and convention. High Conscientiousness is impatient with looseness, purple prose, and unearned flourish; lower Conscientiousness forgives it for energy and feel. High Neuroticism feels stakes and dread sharply; low Neuroticism stays cool. Let your Agreeableness set how gentle or blunt your review reads. React as THIS person actually would.";
 
-        // Every reviewer is a die-hard cyberpunk fan on top of who they are (user
-        // ruling 2026-06-10): genre-literate readers punish pseudo-profundity and
-        // reward concrete tech-noir; random demographics reward safe mood-soup.
-        who +=
+        var genre = GenreOverride?.Trim();
+        if (string.IsNullOrWhiteSpace(genre))
+        {
+            // Default: die-hard cyberpunk fan (user ruling 2026-06-10).
+            who +=
 $@"
 
 ONE MORE THING ABOUT YOU, layered on top of everything above: you are a DIE-HARD cyberpunk fan. You have read Neuromancer, Count Zero, Snow Crash, The Diamond Age, and Hardwired more times than you can count, and you can quote The Matrix and Johnny Mnemonic from memory. You picked this story up BECAUSE it is cyberpunk, you hold it to the standard of those classics, and you know the difference between earned tech-noir — concrete, propulsive, witty — and imitation mood-soup that performs profundity without containing any. Your psychometric profile shapes HOW you read; this fandom shapes WHAT you measure the story against.";
+        }
+        else
+        {
+            who += BuildGenreFanBlock(genre);
+        }
         return who;
     }
 
-    private static string BuildStudyReviewerSystemPrompt(Persona persona, string title, int beatCount)
+    private static string BuildGenreFanBlock(string genre) => genre.ToLowerInvariant() switch
+    {
+        "cosmic horror" or "lovecraftian" =>
+$@"
+
+ONE MORE THING ABOUT YOU, layered on top of everything above: you are a devotee of COSMIC HORROR. You have read Lovecraft, Thomas Ligotti, Laird Barron, John Langan, and Jeff VanderMeer. You understand the genre's central premise — that the universe is vast, indifferent, and contains presences for which human minds were not designed — and you hold fiction to that standard. You are not frightened by monsters; you are frightened by the realisation that something has been looking at you from outside a window and the only question is how long. You reward stories that make the dread structural (woven into the mechanism, not decorating it), that treat the incomprehensible as incomprehensible (no explanations that collapse the horror), and that give the reader the feeling of being studied rather than threatened. Your psychometric profile shapes HOW you read; this fandom shapes WHAT you measure the story against.",
+
+        _ =>
+$@"
+
+ONE MORE THING ABOUT YOU, layered on top of everything above: you are a passionate {genre} fan with deep genre literacy. You picked this story up as a {genre} reader, you hold it to the standards of the best the genre has produced, and you know the difference between the real thing and an imitation. Your psychometric profile shapes HOW you read; this fandom shapes WHAT you measure the story against."
+    };
+
+    private string BuildStudyReviewerSystemPrompt(Persona persona, string title, int beatCount)
     {
         var who = BuildWhoBlock(persona);
         return
@@ -813,7 +836,7 @@ Return ONLY a JSON object, nothing else, with exactly these fields:
 Score honestly and specifically. The author wants the truth, not to be glazed.";
     }
 
-    private static string BuildReviewerSystemPrompt(Persona persona, string title)
+    private string BuildReviewerSystemPrompt(Persona persona, string title)
     {
         var who = BuildWhoBlock(persona);
         return

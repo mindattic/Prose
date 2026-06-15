@@ -25,6 +25,9 @@ public static class SeedVoiceRulesCli
         "Φ is the QUANTA currency symbol, never the Greek letter phi.",
         "Iowan Behemoths are autonomous machines, not synthetic life — they are not alive.",
         "Reserved terms: gun = Cacophony, katana = Silence, the merged-minds AI = Consensus; Choir/Concordance/Chorus are reserved for psionics.",
+        "Never render a Resonance Zone or psionic event as wonder or magic. Render it as physical wrongness the body registers before the mind names it — a frequency in the teeth, a cold with a clean vertical edge, air doing something that cannot be written into a report.",
+        "Never make ensemble-scene characters interchangeable voices. Each character's register is their method: the one who costs things, the one who marks the fact/inference seam, the one who works on foot. Method is character.",
+        "Never name an extreme emotion in narration. Render duration and physical specificity — the sound, the posture, the hands — and let the reader name it.",
     ];
 
     // Tone rules — how the narration feels.
@@ -41,6 +44,10 @@ public static class SeedVoiceRulesCli
         "Mysteries stay open: encode the event, not the culprit.",
         "The Noticing: salt scenes with one small, concrete, unexplained tableau — sixteen cigarette butts arranged filters-inward in a circle under a flickering lamp; a finch nest in the codpiece of a pawnshop's bolted-up tactical armor; a cat watching backward from a ledge. Characters register it without remarking; the world is ordinary to them and weird to the reader. Never explain the tableau.",
         "Notice with every sense, not just the eyes: each scene grounds at least one non-visual sense — what the stairwell smells like, what the rail feels like under the palm, the pitch of the rain on this particular roof.",
+        "The count is the body, not the worst number on the board. Quantify the case (forty-seven results, twenty-two months, sixty-one messages). Then name the number the count doesn't show — the gap between two figures is where the horror lives.",
+        "Standardized harm is worse than improvised harm. A catalog part bought through a company account, an account class that requires discretion, a manifest where the number beside each name is never zero: the procedure around atrocity is the horror, not the act.",
+        "Official language — manifests, incident reports, case registries — frames the world as legible. Name the form, then name what falls outside it. The gap between bureaucratic legibility and lived reality is always present in GLMZ.",
+        "Moral weight is carried by what a character chooses not to do, stated by naming what the ordinary thing would have been. Never editorialize the choice; let the alternative speak for itself.",
     ];
 
     // Dialogue rules.
@@ -50,6 +57,9 @@ public static class SeedVoiceRulesCli
         "Each speaker's dialogue goes on its own line; real paragraphs, never run-on blocks.",
         "Every question ends in \"?\"; question dialogue is attributed with \"asks\"/\"asked\", never \"says\"/\"said\".",
         "Balance a clever character's wit with at least one plain, unclever line of real feeling.",
+        "In ensemble scenes, each speaker's first word establishes their method. The one who costs things prices first. The one who works facts marks the seam between fact and inference. The one who works on foot routes before talking. Never write two ensemble speakers in the same register.",
+        "A witness's description of an uncanny event should differ in words but converge in sensation. The character who has heard it before confirms with 'I've heard it before' — not 'I believe you.'",
+        "When a character speaks to themselves, to a room, to their hands — it is a genuine attempt to make the thing real by naming it aloud. Write it as a statement, not a musing.",
     ];
 
     // Sensory palette — the texture bank GetSensoryPalettePrompt samples from on every

@@ -330,12 +330,13 @@ public class SceneContextAssembler(
     private async Task<string> FormatCharacterAsync(StreetSamuraiDbContext db, SceneEntityRef r, CancellationToken ct)
     {
         var c = await db.Set<Character>().AsNoTracking().FirstOrDefaultAsync(x => x.Id == r.EntityId, ct);
-        var desc = await db.Set<Entity>().AsNoTracking()
-            .Where(e => e.Id == r.EntityId).Select(e => e.Description).FirstOrDefaultAsync(ct);
+        var entity = await db.Set<Entity>().AsNoTracking()
+            .Where(e => e.Id == r.EntityId).FirstOrDefaultAsync(ct);
 
         var sb = new StringBuilder();
         sb.AppendLine($"## {r.Name}  (character, in scene via {r.MatchSource})");
-        if (!string.IsNullOrWhiteSpace(desc)) sb.AppendLine(Clip(desc, 400));
+        if (!string.IsNullOrWhiteSpace(entity?.Description)) sb.AppendLine(Clip(entity.Description, 400));
+        if (!string.IsNullOrWhiteSpace(entity?.GrammarNote))  sb.AppendLine($"GRAMMAR: {entity.GrammarNote}");
         if (c != null)
         {
             AppendField(sb, "VOICE — vocabulary", c.SpeechVocabulary);
@@ -359,11 +360,12 @@ public class SceneContextAssembler(
 
     private static async Task<string> FormatGenericAsync(StreetSamuraiDbContext db, SceneEntityRef r, CancellationToken ct)
     {
-        var desc = await db.Set<Entity>().AsNoTracking()
-            .Where(e => e.Id == r.EntityId).Select(e => e.Description).FirstOrDefaultAsync(ct);
+        var entity = await db.Set<Entity>().AsNoTracking()
+            .Where(e => e.Id == r.EntityId).FirstOrDefaultAsync(ct);
         var sb = new StringBuilder();
         sb.AppendLine($"## {r.Name}  ({r.EntityType}, in scene via {r.MatchSource})");
-        if (!string.IsNullOrWhiteSpace(desc)) sb.AppendLine(Clip(desc, 500));
+        if (!string.IsNullOrWhiteSpace(entity?.Description)) sb.AppendLine(Clip(entity.Description, 500));
+        if (!string.IsNullOrWhiteSpace(entity?.GrammarNote))  sb.AppendLine($"GRAMMAR: {entity.GrammarNote}");
         sb.AppendLine();
         return sb.ToString();
     }

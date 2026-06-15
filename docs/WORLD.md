@@ -53,10 +53,14 @@ updated: 2026-06-11
   FIRST mention with one in-voice clause about what it does. Mid-tier corpos run playbooks,
   not armies: paperwork, inspections, supplier squeezes, bought petitions (see Tessaline
   Foods).
-- **Syndicates**: the Lotus Syndicate (the Iron Lotus) is the closest thing the GLMZ has to a
+- **Syndicates**: the Lotus Syndicate is the closest thing the GLMZ has to a
   samurai culture — a code kept to the letter (they pay for what they break), beauty built on
   purpose with money that has blood in it, truce counters where rival crews eat in a row,
-  craft trades on retainer. Belonging is their product and the bill is the self.
+  craft trades on retainer. Belonging is their product and the bill is the self. The honor is a
+  veneer over the rot: the Syndicate is an East/Southeast Asian blood-purity supremacist order —
+  you are born Lotus (heritage "pure enough" for the Stems) or you never belong; everyone else may
+  pay, fear, and even work for them, but the impure are used and never seated. In the Ubiquitous
+  Diaspora that is a deliberate, hateful refusal of the century, and the sprawl knows it.
 
 ### 1.3 Infrastructure
 - **The Pulse**: global magnetic vacuum-tube transit at Mach 6; pods are "slugs"; Chicago is
@@ -76,10 +80,22 @@ updated: 2026-06-11
   judgment — it is ambient texture, not a Very Special Episode.
 
 ### 1.4 The strange (and its rules)
-- **Thin spots / the Warpature**: blocks that take eleven steps when geometry says nine; a hum
-  at 19Hz from no direction; water striking something vast and metal far below. Rendered as
-  sensory wrongness PLUS survival rules ("constant speed, eyes on the light, don't look at the
-  edges") and NEVER explained. Locals are matter-of-fact; the reader does the shivering.
+- **Resonances / Bleeds**: blocks that take eleven steps when geometry says
+  nine; a hum at 19Hz from no direction; water striking something vast and metal far below.
+  Official term: **resonance** (count noun — "a resonance," "a Class-3 resonance"; named for the
+  measurable 19Hz carrier signal, classified by the Resonance Monitoring Authority). Street term:
+  **bleed** ("the Halsted bleed," "the bleeds on West Lawn"). Classified Class-1 through Class-5
+  by anomaly intensity (Class-3+ require RMA permit to enter). Rendered as sensory wrongness PLUS
+  survival rules ("constant speed, eyes on the light, don't look at the edges") and NEVER
+  explained. Locals are matter-of-fact; the reader does the shivering. What they actually are:
+  cross-sections of higher-dimensional shapes pressing into 3D space — occupied, contested, with
+  at least two intelligences operating through the Class-3 threshold at 35th-and-Halsted (see
+  canon doc `rz_intelligences_35th_halsted`). The RMA does not know this.
+  Alternative terms used by different institutions (see canon docs):
+    - *Topological Anomaly* / *Spatial Anomaly* — the physics team's first-report term
+    - *Geodetic Drift* — the infrastructure authority's measurement term (still used on permits)
+    - *Threshold Event* — the Threshold Events Bureau framing (stresses the transitional quality)
+    - *Phase Discontinuity* (PDS) — theoretical: entanglement-comm root cause (Concordance bleed)
 - **Psionics is real. Magic is not.** Psychic ability exists: biological, registered, feared,
   measured since 2144. Nothing is ever rendered as magical; the ability is written as ability
   — sensory, bounded, costly. **Vocabulary ladder (word choice marks the speaker):**
@@ -96,6 +112,11 @@ updated: 2026-06-11
   never explained.
 - **Heritage** defaults to mixed, from unexpected global combinations (the Ubiquitous
   Diaspora). Cliché is rejected on contact.
+- **Names are plain: first + last, one root each.** The diaspora shows in the combination —
+  Yoruba first name, Polish surname; Korean given name, Colombian family name — not in the
+  format. Hyphenated surnames are rare (~10% of characters) and mark a specific family-history
+  reason, not mixed heritage in general. Middle names and honorifics (Dr., etc.) are used
+  sparingly. Default: one first name, one last name.
 
 ---
 
@@ -182,10 +203,13 @@ Writing rules per recurring character — register, function, and the line they 
 - **Ledger** (synthetic operator): writes the after-action nobody asked for; cannot model
   self-deception — he is honest the way gravity is, which makes him both incorruptible and
   exploitable by curated truth. Irises hold a beat too long when recording.
-- **The Lotus Syndicate**: courtesy as power. The Branch Manager speaks consequence as
-  architecture and pays for what the house breaks, at list. Mira measures people and respects
-  the measurements. The togishi handles steel like patients. Lotus scenes run on manners,
-  tea, and exactly one millimeter of unprofessional feeling, put away.
+- **The Lotus Syndicate**: courtesy as power — and courtesy as a gate. The Branch Manager speaks
+  consequence as architecture and pays for what the house breaks, at list. Mira measures people and
+  respects the measurements. The togishi handles steel like patients. Lotus scenes run on manners,
+  tea, and exactly one millimeter of unprofessional feeling, put away. But the manners extend only
+  to the bloodline and to outsiders they find useful: the Syndicate is a blood-purity supremacist
+  order, and the skilled impure (the hunter Casimir Mwamba among them) are the dogs it sends when a
+  bone goes missing — valued for craft, despised for ancestry, never seated at the table after.
 - **The entity (the rogue AI)**: never on-page except through WORK PRODUCT — shell-of-shells
   clients, exact pre-paid fees, almost-human handwriting (every *e* identical), one letter
   per book, a hum that is felt and never speaks. It is polite, patient, punctual, and

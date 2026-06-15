@@ -98,3 +98,29 @@ feared. Write it as ability, never as magic.
 3. **Sexy Time** (sexy-time-019e8b3e) — the intimacy standard: triage becoming tenderness, the turn, "Stop cataloguing me." / "Stop being interesting."
 4. **Street Meat** (street-meat-019e9fb2) — the caper standard: leverage, the paddles, "I should throw you in the trash, you son of a bitch," the bookend payoff.
 5. **The Quiet Hour** (the-quiet-hour-019ea8f6) — the elegy standard: the quiet heist, the crewmate built to be forgotten, the planted want paying off as a funeral, "I picked it. She made it stick."
+
+## The three new canon texts
+
+6. **Attendance** (attendance-019ebf4c) — the investigation standard: a procedural mind in a world that hides its crimes inside bureaucratic systems. Yemina reads data the way Kyle reads rooms — noting what autocomplete shouldn't know, what a chair's empty air does, what threshold-transit reports get wrong. The register is clinical on the surface and quietly terrified underneath. Forty-seven results. Twenty-two months. The count is the case. Resonance Zone wrongness is rendered as wrongness the body knows before the brain does, never as wonder. The horror arrives as a discrepancy in a field value.
+
+7. **Vultures at the Door** (vultures-at-the-door-019ec467) — the sanitation-noir standard: a man who does the job so a worse man doesn't. Thomas holds onto one fact the way you hold onto a railing — there had been a gun, it was real, the board would write it clean. The register is the manifest: names, addresses, what the body owes. The number beside each name is never zero. Tears runs a tab and the tab comes due in the dark. Moral weight is carried by what Thomas chooses not to do, never stated: he takes the quiet collection before a stranger can, because a stranger would have done the ordinary thing.
+
+8. **Death Whispers in a Cat's Ear** (death-whispers-in-a-cats-ear-019ec3fe) — the ensemble detective standard: a crew where each member's method is their voice. Rennick costs things. Teller marks the seam between fact and inference and speaks softly enough that the room goes quiet. Analog works on foot, off the network, watching the ramp. Tamsin knows before she has the discipline to stop knowing. The horror is ordinary business: the disposal isn't improvised, it's a catalog part bought through a company account. That's worse than murder. That's a corponation that has standardized the handling of them.
+
+## GLMZ UNIVERSAL — beyond Kyle
+
+**THE COUNT IS THE BODY, NOT THE WORST NUMBER ON THE BOARD.** Quantify what matters — searches, months, account balances, message exchanges — and then name the number the count doesn't show. The data tells you what happened. The gap between two numbers tells you what it cost.
+
+**THE BODY KNOWS BEFORE THE BRAIN EXPLAINS IT.** Resonance wrongness, psionic presence, the long patient fear of a hunter: render these as physical sensation first — teeth that know a frequency, a cold with a clean vertical edge, a smell on a landing. The character registers the knowledge before they can articulate it. Never explain the mechanism.
+
+**THE WRONG IS STANDARDIZED, AND STANDARDIZED IS WORSE.** A corponation that has systematized harm is more frightening than improvised evil. Name the catalog part. Name the account class. The mundane procedure around atrocity is the horror — not the atrocity itself.
+
+**AN ENSEMBLE SPEAKS IN METHODS, NOT PERSONALITIES.** In multi-character scenes, each person's register is their function: the one who speaks in facts marks the seam between fact and inference; the one who works on foot reads the route and the doorways; the lead prices the horror and makes it ordinary. The method is the character. Never write ensemble scenes as a conversation between similar voices.
+
+**GRIEF AND RAGE ARRIVE TOGETHER AND NEITHER KNOWS THE OTHER IS THERE.** Extreme emotion is rendered as the body overrunning the self — the sound a person makes when they can't stop to breathe, both hands jammed against the mouth, bent forward over their own knees. Duration and physical specificity do the work. No naming of the feeling, no witness commentary on what it means.
+
+**THE ORDINARY THING AND THE THING THAT ISN'T.** A moral decision in GLMZ is almost always a choice between the ordinary thing — what the job calls for, what any stranger would do — and the thing that costs the person doing it. State what the ordinary thing would have been. Let the choice speak without commentary.
+
+**WHAT THE REPORT CAN'T HOLD.** Official language — incident reports, case registries, manifests, board reviews — frames the world as legible. Characters know the world outruns the form. Name the form. Then name what falls outside it ("she could not have pointed to or measured or written into any incident report"). The gap between bureaucratic legibility and experienced reality is a GLMZ-universal tension.
+
+**WITNESSES FIND DIFFERENT WORDS FOR THE SAME THING.** When multiple people have seen the same uncanny event, they describe it differently each time — and each description is correct. The POV character who has heard it before knows this. The convergence, not the uniqueness, is what confirms it.

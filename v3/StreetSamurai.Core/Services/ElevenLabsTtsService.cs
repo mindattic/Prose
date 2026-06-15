@@ -242,6 +242,8 @@ public class ElevenLabsTtsService : ITtsService
                     Name = v.GetProperty("name").GetString() ?? "",
                     Category = v.TryGetProperty("category", out var cat) ? cat.GetString() ?? "" : "",
                     PreviewUrl = v.TryGetProperty("preview_url", out var pu) ? pu.GetString() ?? "" : "",
+                    Description = v.TryGetProperty("description", out var desc) && desc.ValueKind == JsonValueKind.String
+                        ? desc.GetString() ?? "" : "",
                     HighQualityModelIds = modelIds,
                 });
             }
@@ -415,6 +417,9 @@ public record TtsVoice
     public string Category { get; init; } = "";
     /// <summary>Preview clip URL ElevenLabs hosts for this voice (may be empty).</summary>
     public string PreviewUrl { get; init; } = "";
+    /// <summary>Short description of the voice character/tone from the ElevenLabs API
+    /// (the <c>description</c> field). Empty when absent.</summary>
+    public string Description { get; init; } = "";
     /// <summary>Base model ids this voice is flagged high-quality for. Used as a
     /// UI hint (e.g. a v3✓ badge) — never as a hard gate, since most voices
     /// render acceptably on any model.</summary>

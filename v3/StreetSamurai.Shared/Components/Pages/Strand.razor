@@ -1,4 +1,4 @@
-@page "/strand/{IdOrSlug}"
+﻿@page "/strand/{IdOrSlug}"
 @attribute [Authorize(Policy = MaPolicies.Admin)]
 @using Microsoft.EntityFrameworkCore
 @using StreetSamurai.Core.Data
@@ -387,92 +387,49 @@ else
                     <div class="d-flex align-items-center mb-2">
                         <i class="bi bi-sliders text-info me-2"></i>
                         <span class="fw-semibold">Voice Studio</span>
-                        <span class="text-muted small ms-2">— pick a voice + model, turn the dials, audition a sample line, then pin it to this strand or save it as a reusable profile.</span>
+                        <span class="text-muted small ms-2">— pick a voice, turn the dials, preview it, then pin it to this strand or save it as a reusable profile.</span>
                         <button class="btn btn-sm btn-link text-muted ms-auto p-0" @onclick="() => showVoiceStudio = false"><i class="bi bi-x-lg"></i></button>
                     </div>
 
-                    @* Pick the voice first; everything below adapts to it. The
-                       model list is filtered to what THIS voice supports, and only
-                       the dials that apply to the chosen model's engine are shown —
-                       no v2/v3 tab to get lost in. *@
                     <div class="row g-3 mb-2">
-                        <div class="col-md-6">
+                        <div class="col-12">
                             <label class="form-label small text-muted mb-1">Voice</label>
                             <select class="form-select form-select-sm bg-black text-light border-secondary"
-                                    title="The ElevenLabs voice that narrates this strand. Voices tagged (v3✓) can also use the newer, more expressive v3 engine."
+                                    title="The ElevenLabs voice that narrates this strand."
                                     @bind="editorProfile.VoiceId" @bind:after="OnStudioVoiceChanged">
                                 <option value="">— pick a voice —</option>
                                 @foreach (var v in voices)
                                 {
-                                    <option value="@v.VoiceId">@v.Name@(v.SupportsV3 ? "  (v3✓)" : "")</option>
+                                    <option value="@v.VoiceId">@v.Name</option>
                                 }
                             </select>
-                        </div>
-                        <div class="col-md-6">
-                            <label class="form-label small text-muted mb-1">Engine &amp; model</label>
-                            <select class="form-select form-select-sm bg-black text-light border-secondary"
-                                    title="Which ElevenLabs model renders this voice. v3 = newest and most expressive, driven by inline emotion tags set per beat. v2 = classic, tuned with continuous stability/similarity/style dials. Only models this voice supports are listed."
-                                    @bind="editorProfile.Model" @bind:after="OnStudioModelChanged">
-                                @foreach (var m in CompatibleModels())
-                                {
-                                    <option value="@m.ModelId">@m.Name @(m.IsV3 ? "· v3" : "· v2")</option>
-                                }
-                            </select>
+                            @if (!string.IsNullOrWhiteSpace(StudioVoiceDescription))
+                            {
+                                <div class="form-text text-muted small mt-1">@StudioVoiceDescription</div>
+                            }
                         </div>
                     </div>
 
-                    @if (IsV3Model(editorProfile.Model))
-                    {
-                        @* v3: discrete stability presets + inline tags. Similarity
-                           and style do nothing on v3, so they are not shown. *@
-                        <div class="row g-3 align-items-end">
-                            <div class="col-md-8">
-                                <label class="form-label small text-muted mb-1">Stability</label>
-                                <div class="btn-group d-flex" role="group"
-                                     title="v3 accepts only three stability settings. Robust = most consistent across the whole strand (fights v3 accent drift); Natural = balanced; Creative = most expressive but more variable take-to-take.">
-                                    @foreach (var preset in V3Presets)
-                                    {
-                                        <button type="button"
-                                                class="btn btn-sm @(Math.Abs(editorProfile.Stability - preset.Value) < 0.01 ? "btn-info" : "btn-outline-info")"
-                                                @onclick="() => editorProfile.Stability = preset.Value">@preset.Name</button>
-                                    }
-                                </div>
-                            </div>
-                            <div class="col-md-4">
-                                <div class="form-check" title="Boosts how closely the output resembles the original speaker. Safe to leave on.">
-                                    <input class="form-check-input" type="checkbox" id="vsSpeakerBoost" @bind="editorProfile.UseSpeakerBoost" />
-                                    <label class="form-check-label small text-muted" for="vsSpeakerBoost">Speaker boost</label>
-                                </div>
+                    <div class="row g-3 align-items-end">
+                        <div class="col-md-3">
+                            <label class="form-label small text-muted mb-1" title="How consistent the delivery is take-to-take. Higher = steadier and more uniform; lower = more expressive but more variable.">Stability: @(editorProfile.Stability.ToString("F2"))</label>
+                            <input type="range" class="form-range" min="0" max="1" step="0.05" @bind="editorProfile.Stability" @bind:event="oninput" />
+                        </div>
+                        <div class="col-md-3">
+                            <label class="form-label small text-muted mb-1" title="How closely the output hews to the original voice's timbre. Higher = more faithful to the source voice.">Similarity: @(editorProfile.SimilarityBoost.ToString("F2"))</label>
+                            <input type="range" class="form-range" min="0" max="1" step="0.05" @bind="editorProfile.SimilarityBoost" @bind:event="oninput" />
+                        </div>
+                        <div class="col-md-3">
+                            <label class="form-label small text-muted mb-1" title="Style exaggeration. Higher pushes the voice's characteristic delivery; 0 is neutral and most stable.">Style: @(editorProfile.Style.ToString("F2"))</label>
+                            <input type="range" class="form-range" min="0" max="1" step="0.05" @bind="editorProfile.Style" @bind:event="oninput" />
+                        </div>
+                        <div class="col-md-3">
+                            <div class="form-check" title="Boosts how closely the output resembles the original speaker. Safe to leave on.">
+                                <input class="form-check-input" type="checkbox" id="vsSpeakerBoostV2" @bind="editorProfile.UseSpeakerBoost" />
+                                <label class="form-check-label small text-muted" for="vsSpeakerBoostV2">Speaker boost</label>
                             </div>
                         </div>
-                        <div class="form-text text-muted small mt-1">
-                            v3 expresses emotion through inline audio tags (e.g. <code>[whispering]</code>) set per beat in the beat details — it ignores the similarity &amp; style dials, so they are hidden here.
-                        </div>
-                    }
-                    else
-                    {
-                        @* v2: continuous dials. *@
-                        <div class="row g-3 align-items-end">
-                            <div class="col-md-3">
-                                <label class="form-label small text-muted mb-1" title="How consistent the delivery is take-to-take. Higher = steadier and more uniform; lower = more expressive but more variable.">Stability: @editorProfile.Stability.ToString("F2")</label>
-                                <input type="range" class="form-range" min="0" max="1" step="0.05" @bind="editorProfile.Stability" @bind:event="oninput" />
-                            </div>
-                            <div class="col-md-3">
-                                <label class="form-label small text-muted mb-1" title="How closely the output hews to the original voice's timbre. Higher = more faithful to the source voice.">Similarity: @editorProfile.SimilarityBoost.ToString("F2")</label>
-                                <input type="range" class="form-range" min="0" max="1" step="0.05" @bind="editorProfile.SimilarityBoost" @bind:event="oninput" />
-                            </div>
-                            <div class="col-md-3">
-                                <label class="form-label small text-muted mb-1" title="Style exaggeration. Higher pushes the voice's characteristic delivery; 0 is neutral and most stable.">Style: @editorProfile.Style.ToString("F2")</label>
-                                <input type="range" class="form-range" min="0" max="1" step="0.05" @bind="editorProfile.Style" @bind:event="oninput" />
-                            </div>
-                            <div class="col-md-3">
-                                <div class="form-check" title="Boosts how closely the output resembles the original speaker. Safe to leave on.">
-                                    <input class="form-check-input" type="checkbox" id="vsSpeakerBoostV2" @bind="editorProfile.UseSpeakerBoost" />
-                                    <label class="form-check-label small text-muted" for="vsSpeakerBoostV2">Speaker boost</label>
-                                </div>
-                            </div>
-                        </div>
-                    }
+                    </div>
 
                     @if (Settings.VoiceProfiles.Count > 0)
                     {
@@ -490,41 +447,45 @@ else
                     }
 
                     <div class="d-flex gap-2 flex-wrap align-items-end mt-3">
-                        <button class="btn btn-sm btn-info" @onclick="AuditionVoiceAsync" disabled="@(auditioning || string.IsNullOrWhiteSpace(editorProfile.VoiceId))"
-                                title='Speak "The quick brown fox jumped over the lazy dog." with these dials and play it — nothing is saved'>
-                            @if (auditioning) { <span class="spinner-border spinner-border-sm me-1"></span> }
+                        <button class="btn btn-sm btn-outline-secondary" @onclick="PreviewVoiceAsync" disabled="@string.IsNullOrWhiteSpace(StudioPreviewUrl)"
+                                title='Play the ElevenLabs static sample clip for this voice (free, instant)'>
+                            <i class="bi bi-play me-1"></i>Preview
+                        </button>
+                        <button class="btn btn-sm btn-info" @onclick="DemoVoiceAsync" disabled="@(demoing || string.IsNullOrWhiteSpace(editorProfile.VoiceId))"
+                                title='Synthesize a passage with your actual dials'>
+                            @if (demoing) { <span class="spinner-border spinner-border-sm me-1"></span> }
                             else { <i class="bi bi-play-fill me-1"></i> }
-                            Audition voice
+                            Demo
                         </button>
                         <button class="btn btn-sm btn-outline-success" @onclick="ApplyVoiceToStrandAsync" disabled="@string.IsNullOrWhiteSpace(editorProfile.VoiceId)"
-                                title="Pin these dials to THIS strand — the next record/publish uses them">
+                                title='Pin these dials to THIS strand'>
                             <i class="bi bi-pin-angle me-1"></i>Apply to this strand
                         </button>
                         <div class="d-flex gap-1 align-items-end">
                             <div>
                                 <label class="form-label small text-muted mb-1">New profile name</label>
                                 <input class="form-control form-control-sm bg-black text-light border-secondary" style="min-width:200px;"
-                                       placeholder="e.g. Oliver Silk — gravelly v3" @bind="newProfileLabel" />
+                                       placeholder="e.g. Oliver Silk" @bind="newProfileLabel" />
                             </div>
                             <button class="btn btn-sm btn-outline-success" @onclick="SaveAsNewProfile"
                                     disabled="@(string.IsNullOrWhiteSpace(editorProfile.VoiceId) || string.IsNullOrWhiteSpace(newProfileLabel))"
-                                    title="Save these dials as a new profile (never overwrites an existing one)">
+                                    title='Save as a new profile'>
                                 <i class="bi bi-save me-1"></i>Save as profile
                             </button>
                         </div>
                         <button class="btn btn-sm btn-outline-light ms-auto" @onclick="ImportAllVoicesAsync" disabled="@importingVoices"
-                                title="Create baseline v2 + v3 profiles for every ElevenLabs voice so they're always in your list">
+                                title='Create a baseline v2 profile for every voice'>
                             @if (importingVoices) { <span class="spinner-border spinner-border-sm me-1"></span> }
                             else { <i class="bi bi-cloud-download me-1"></i> }
                             Import all voices
                         </button>
                     </div>
 
-                    @if (!string.IsNullOrEmpty(auditionAudioUrl))
+                    @if (!string.IsNullOrEmpty(studioAudioUrl))
                     {
                         <div class="mt-3">
-                            <label class="form-label small text-muted mb-1">Audition — “The quick brown fox jumped over the lazy dog.”</label>
-                            <audio controls autoplay src="@auditionAudioUrl" class="w-100" style="height:34px;"></audio>
+                            <label class="form-label small text-muted mb-1">@studioAudioLabel</label>
+                            <audio controls autoplay src="@studioAudioUrl" class="w-100" style="height:34px;"></audio>
                         </div>
                     }
                 </div>
@@ -1494,51 +1455,20 @@ else
     // pin it to this strand and/or save it as a reusable profile. editorProfile
     // is the live dial set being tuned; it is seeded from the strand's current
     // voice snapshot whenever a strand loads.
-    private List<TtsModel> models = new();
     private bool showVoiceStudio;
-    private StreetSamurai.Core.Models.VoiceProfile editorProfile = new() { Model = "eleven_v3", Stability = 1.0, SimilarityBoost = 0.75, Style = 0.0, UseSpeakerBoost = true };
-    private bool auditioning;
-    private string? auditionAudioUrl;
+    private StreetSamurai.Core.Models.VoiceProfile editorProfile = new() { Model = "eleven_multilingual_v2", Stability = 0.5, SimilarityBoost = 0.75, Style = 0.0, UseSpeakerBoost = true };
+    private bool demoing;
+    private string? studioAudioUrl;
+    private string studioAudioLabel = "";
     private string newProfileLabel = "";
     private bool importingVoices;
 
-    /// <summary>The only three stability values eleven_v3 accepts.</summary>
-    private static readonly (double Value, string Name)[] V3Presets =
-        [ (0.0, "Creative"), (0.5, "Natural"), (1.0, "Robust") ];
+    private string StudioPreviewUrl =>
+        voices.FirstOrDefault(v => v.VoiceId == editorProfile.VoiceId)?.PreviewUrl ?? "";
+    private string StudioVoiceDescription =>
+        voices.FirstOrDefault(v => v.VoiceId == editorProfile.VoiceId)?.Description ?? "";
 
-    private static bool IsV3Model(string? model) =>
-        model?.StartsWith("eleven_v3", StringComparison.OrdinalIgnoreCase) ?? false;
-
-    private static double SnapV3Stability(double v) => v <= 0.25 ? 0.0 : v >= 0.75 ? 1.0 : 0.5;
-
-    /// <summary>Does the currently selected voice support the v3 engine? Drives
-    /// which models are offered. Unknown/blank voice → assume yes so options
-    /// aren't hidden before a voice is picked.</summary>
-    private bool SelectedVoiceSupportsV3() =>
-        voices.FirstOrDefault(v => v.VoiceId == editorProfile.VoiceId)?.SupportsV3 ?? true;
-
-    /// <summary>Models offered for the selected voice. v3 models only appear for
-    /// voices that support v3, so the operator never sees a model the voice can't
-    /// use — the studio shows only what's applicable to the current selection.</summary>
-    private IEnumerable<TtsModel> CompatibleModels() =>
-        SelectedVoiceSupportsV3() ? models : models.Where(m => !m.IsV3);
-
-    /// <summary>Voice changed: if the new voice can't do v3 but a v3 model is
-    /// currently selected, fall back to a v2 model so the controls stay valid.</summary>
-    private void OnStudioVoiceChanged()
-    {
-        if (!SelectedVoiceSupportsV3() && IsV3Model(editorProfile.Model))
-            editorProfile.Model = models.FirstOrDefault(m => !m.IsV3)?.ModelId ?? "eleven_multilingual_v2";
-        auditionAudioUrl = null;
-    }
-
-    /// <summary>Model changed: snap stability to a legal v3 preset when switching
-    /// to a v3 model (an arbitrary v2 value would be invalid on v3).</summary>
-    private void OnStudioModelChanged()
-    {
-        if (IsV3Model(editorProfile.Model)) editorProfile.Stability = SnapV3Stability(editorProfile.Stability);
-        auditionAudioUrl = null;
-    }
+    private void OnStudioVoiceChanged() => studioAudioUrl = null;
 
     /// <summary>Copy the strand's pinned voice snapshot into the editor so the
     /// studio opens showing what the strand currently uses.</summary>
@@ -1550,13 +1480,13 @@ else
             Id              = "",
             Label           = "",
             VoiceId         = string.IsNullOrEmpty(strand.VoiceId) ? defaultVoiceId : strand.VoiceId,
-            Model           = string.IsNullOrEmpty(strand.VoiceModel) ? (Settings.TtsModel ?? "eleven_v3") : strand.VoiceModel,
+            Model           = string.IsNullOrEmpty(strand.VoiceModel) ? (Settings.TtsModel ?? "eleven_multilingual_v2") : strand.VoiceModel,
             Stability       = strand.VoiceStability  ?? Settings.TtsStability,
             SimilarityBoost = strand.VoiceSimilarity ?? Settings.TtsSimilarityBoost,
             Style           = strand.VoiceStyle      ?? Settings.TtsStyle,
             UseSpeakerBoost = true,
         };
-        auditionAudioUrl = null;
+        studioAudioUrl = null;
     }
 
     private void LoadProfileIntoEditor(string profileId)
@@ -1570,27 +1500,36 @@ else
             Style = p.Style, UseSpeakerBoost = p.UseSpeakerBoost,
         };
         newProfileLabel = $"{p.Label} (copy)";
-        auditionAudioUrl = null;
+        studioAudioUrl = null;
     }
 
-    private async Task AuditionVoiceAsync()
+    private void PreviewVoiceAsync()
     {
-        if (strand == null || auditioning) return;
-        if (string.IsNullOrWhiteSpace(editorProfile.VoiceId)) { Toast.Error("AUDITION", "Pick a voice first."); return; }
-        auditioning = true;
-        auditionAudioUrl = null;
+        if (string.IsNullOrWhiteSpace(StudioPreviewUrl)) { Toast.Error("PREVIEW", "No preview clip available for this voice."); return; }
+        studioAudioLabel = "Preview — ElevenLabs static sample clip";
+        studioAudioUrl = StudioPreviewUrl;
+    }
+
+    private async Task DemoVoiceAsync()
+    {
+        if (strand == null || demoing) return;
+        if (string.IsNullOrWhiteSpace(editorProfile.VoiceId)) { Toast.Error("DEMO", "Pick a voice first."); return; }
+        demoing = true;
+        studioAudioUrl = null;
         StateHasChanged();
         try
         {
-            var bytes = await Workbench.AuditionVoiceAsync(strand.Id, editorProfile);
-            auditionAudioUrl = "data:audio/mpeg;base64," + Convert.ToBase64String(bytes);
+            var bytes = await Workbench.AuditionVoiceAsync(strand.Id, editorProfile,
+                text: StrandWorkbenchService.DemoSampleText);
+            studioAudioLabel = "Demo — synthesized with your dials";
+            studioAudioUrl = "data:audio/mpeg;base64," + Convert.ToBase64String(bytes);
         }
         catch (Exception ex)
         {
-            Log.LogError(ex, "Audition failed for strand {S}", strand.Id);
-            Toast.Error("AUDITION", ex.Message);
+            Log.LogError(ex, "Demo failed for strand {S}", strand.Id);
+            Toast.Error("DEMO", ex.Message);
         }
-        finally { auditioning = false; StateHasChanged(); }
+        finally { demoing = false; StateHasChanged(); }
     }
 
     private async Task ApplyVoiceToStrandAsync()
@@ -1624,7 +1563,7 @@ else
             UseSpeakerBoost = editorProfile.UseSpeakerBoost,
         };
         var saved = Settings.UpsertVoiceProfile(copy);
-        Toast.Success("PROFILE", $"Saved “{saved.Label}” — it'll always be in your profile list.");
+        Toast.Success("PROFILE", $"Saved \"{saved.Label}\" — it'll always be in your profile list.");
         newProfileLabel = "";
     }
 
@@ -1638,7 +1577,7 @@ else
             var live = (await Tts.ListVoicesAsync()).Where(v => !string.IsNullOrWhiteSpace(v.VoiceId)).ToList();
             if (live.Count == 0) { Toast.Error("IMPORT", "No voices returned — check the ElevenLabs API key."); return; }
             var n = Settings.ImportAllVoicesAsProfiles(live);
-            Toast.Success("IMPORT", $"Imported {n} voices as {n * 2} baseline profiles (v2 + v3).");
+            Toast.Success("IMPORT", $"Imported {n} v2 baseline profiles.");
         }
         catch (Exception ex)
         {
@@ -1695,8 +1634,6 @@ else
         {
             voices = new() { new TtsVoice { VoiceId = defaultVoiceId, Name = "Default" } };
         }
-        try { models = await Tts.ListModelsAsync(); }
-        catch { models = new() { new TtsModel("eleven_v3", "Eleven v3", true) }; }
     }
 
     protected override async Task OnParametersSetAsync()

@@ -25,12 +25,17 @@ public class VoiceProfile
     /// voice picker.</summary>
     public string Label { get; set; } = "";
 
+    /// <summary>Short description of the voice character/tone, sourced from
+    /// ElevenLabs at import time. Empty string when the voice has no description
+    /// in the API response.</summary>
+    public string Description { get; set; } = "";
+
     /// <summary>The ElevenLabs voice_id this profile resolves to.</summary>
     public string VoiceId { get; set; } = "";
 
-    /// <summary>ElevenLabs model id. Defaults to <c>eleven_v3</c> — the only
-    /// model that supports inline performance tags (<c>[whispering]</c> etc.).</summary>
-    public string Model { get; set; } = "eleven_v3";
+    /// <summary>ElevenLabs model id. Defaults to <c>eleven_multilingual_v2</c>
+    /// which supports cross-request stitching for seamless audiobook transitions.</summary>
+    public string Model { get; set; } = "eleven_multilingual_v2";
 
     /// <summary>voice_settings.stability — 0 (high range, expressive) to 1
     /// (very controlled). ElevenLabs default 0.5.</summary>

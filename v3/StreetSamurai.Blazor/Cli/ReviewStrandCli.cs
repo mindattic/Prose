@@ -26,7 +26,7 @@ public static class ReviewStrandCli
 {
     public static async Task<int> RunAsync(string[] args, IServiceProvider services)
     {
-        string? id = null, slug = null, group = null;
+        string? id = null, slug = null, code = null, group = null, genre = null;
         int readers = 50, panel = 128, ballots = 120, prose = 10;
         bool samePersonas = false, study = false, census = false;
         for (int i = 0; i < args.Length; i++)
@@ -35,9 +35,11 @@ public static class ReviewStrandCli
             {
                 case "--id":            if (i + 1 < args.Length) id = args[++i]; break;
                 case "--slug":          if (i + 1 < args.Length) slug = args[++i]; break;
+                case "--code":          if (i + 1 < args.Length) code = args[++i]; break;
                 case "--readers":       if (i + 1 < args.Length && int.TryParse(args[++i], out var n)) readers = n; break;
                 case "--same-personas": samePersonas = true; break;
                 case "--group":         if (i + 1 < args.Length) group = args[++i]; break;
+                case "--genre":         if (i + 1 < args.Length) genre = args[++i]; break;
                 case "--study":         study = true; break;
                 case "--panel":         if (i + 1 < args.Length && int.TryParse(args[++i], out var pn)) panel = pn; break;
                 case "--ballots":       if (i + 1 < args.Length && int.TryParse(args[++i], out var bn)) ballots = bn; break;
@@ -46,23 +48,30 @@ public static class ReviewStrandCli
             }
         }
 
-        if (string.IsNullOrWhiteSpace(id) && string.IsNullOrWhiteSpace(slug))
+        if (string.IsNullOrWhiteSpace(id) && string.IsNullOrWhiteSpace(slug) && string.IsNullOrWhiteSpace(code))
         {
-            Console.Error.WriteLine("[review-strand] One of --id or --slug is required.");
-            Console.Error.WriteLine("Usage: ss --review-strand (--id <guid|prefix> | --slug <slug>) [--readers N]");
+            Console.Error.WriteLine("[review-strand] One of --id, --slug, or --code is required.");
+            Console.Error.WriteLine("Usage: ss --review-strand (--id <guid|prefix> | --slug <slug> | --code <code>) [--readers N]");
             return 1;
         }
         if (readers <= 0) readers = 50;
 
         var dbFactory = services.GetRequiredService<IDbContextFactory<StreetSamuraiDbContext>>();
         var reviewer  = services.GetRequiredService<StrandReviewService>();
+        if (!string.IsNullOrWhiteSpace(genre))
+        {
+            reviewer.GenreOverride = genre;
+            Console.WriteLine($"[review-strand] Genre override: \"{genre}\" — reviewers are {genre} fans, not cyberpunk.");
+        }
 
         Guid strandId; string strandSlug, strandTitle;
         await using (var db = await dbFactory.CreateDbContextAsync())
         {
             var query = db.Strands.AsNoTracking();
             Strand? strand;
-            if (!string.IsNullOrWhiteSpace(slug))
+            if (!string.IsNullOrWhiteSpace(code))
+                strand = await query.FirstOrDefaultAsync(s => s.StrandCode == code.ToUpperInvariant());
+            else if (!string.IsNullOrWhiteSpace(slug))
                 strand = await query.FirstOrDefaultAsync(s => s.Slug == slug);
             else if (Guid.TryParse(id, out var exact))
                 strand = await query.FirstOrDefaultAsync(s => s.Id == exact);
@@ -79,7 +88,8 @@ public static class ReviewStrandCli
             }
             if (strand == null)
             {
-                Console.Error.WriteLine($"[review-strand] No strand found for {(slug != null ? $"slug '{slug}'" : $"id '{id}'")}.");
+                var locator = code != null ? $"code '{code}'" : slug != null ? $"slug '{slug}'" : $"id '{id}'";
+                Console.Error.WriteLine($"[review-strand] No strand found for {locator}.");
                 return 1;
             }
             strandId = strand.Id; strandSlug = strand.Slug; strandTitle = strand.Title;

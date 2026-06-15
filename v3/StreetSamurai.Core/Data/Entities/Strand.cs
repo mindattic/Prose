@@ -21,6 +21,11 @@ public class Strand
     /// the on-disk directory name under <c>engine/strands/{slug}/</c>.</summary>
     public string Slug { get; set; } = "";
 
+    /// <summary>Short author-assigned reference code for quick CLI/prose lookup
+    /// (e.g. "ATTE", "VATD", "DWIACE"). Unique across non-null values; not every
+    /// strand needs one. Use <c>ss --timeline --code ATTE</c> etc.</summary>
+    public string? StrandCode { get; set; }
+
     public string Title { get; set; } = "";
 
     /// <summary>Short synopsis — what this strand is about. Surfaces in
@@ -146,6 +151,12 @@ public class Strand
 
     /// <summary>Notes about why a run failed, if it did.</summary>
     public string? Error { get; set; }
+
+    /// <summary>Monotonic publish counter. Incremented by one each time a docx
+    /// is exported via <c>DocxExportService</c>. Zero = never published.
+    /// Used to build versioned filenames (e.g. "Attendance V3.docx") so the
+    /// author can keep copies without relying on timestamps.</summary>
+    public int Version { get; set; }
 
     public DateTime CreatedAt { get; set; } = DateTime.UtcNow;
     public DateTime UpdatedAt { get; set; } = DateTime.UtcNow;

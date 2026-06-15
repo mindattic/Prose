@@ -44,6 +44,11 @@ public class Entity
     /// <summary>23rd-century in-world date this entity came into being, when known.</summary>
     public DateTime? InWorldCreatedDate { get; set; }
 
+    /// <summary>Grammatical quirks the writer must honor — e.g. plurale tantum nouns,
+    /// irregular verb agreement, or pronunciation glosses. Injected into X-Ray prompts
+    /// so the LLM never generates a grammatically wrong construction for this entity.</summary>
+    public string? GrammarNote { get; set; }
+
     // Navigation
     public ICollection<EntityProperty> Properties { get; set; } = new List<EntityProperty>();
     public ICollection<EntityTaxonomy> Taxonomies { get; set; } = new List<EntityTaxonomy>();
