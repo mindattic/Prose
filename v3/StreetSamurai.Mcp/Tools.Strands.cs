@@ -92,7 +92,8 @@ public class StrandTools
         [Description("Strand title. Required.")] string title,
         [Description("Free-form kind label: 'book', 'chapter', 'episode', 'scene', 'saga', 'anthology', or anything you want. Default 'strand'.")] string kind = "strand",
         [Description("Optional synopsis.")] string synopsis = "",
-        [Description("Optional parent strand Guid id (or slug). Empty = top-level.")] string parentStrandIdOrSlug = "")
+        [Description("Optional parent strand Guid id (or slug). Empty = top-level.")] string parentStrandIdOrSlug = "",
+        [Description("Optional short author-assigned reference code (e.g. 'ATTE', 'VATD', 'GLMZCODEX'). Uppercased and stored as a unique lookup key. Leave empty to skip.")] string code = "")
     {
         Guid? parentId = null;
         if (!string.IsNullOrWhiteSpace(parentStrandIdOrSlug))
@@ -123,6 +124,7 @@ public class StrandTools
             Status = "draft",
             ParentStrandId = parentId,
             SortKey = maxSort + 100.0,
+            StrandCode = string.IsNullOrWhiteSpace(code) ? null : code.Trim().ToUpperInvariant(),
         });
         await db.SaveChangesAsync();
         return JsonSerializer.Serialize(new { ok = true, id, slug, url = $"/strand/{slug}" }, CanonTools.JsonOpts);
