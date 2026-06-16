@@ -121,6 +121,20 @@ public class Strand
     /// which is the LLM generator's text prompt — unrelated.</summary>
     public int? VoiceSeed { get; set; }
 
+    /// <summary>Which TTS backend narrates this strand.
+    /// NULL/"elevenlabs" → ElevenLabs (default, all legacy rows).
+    /// "kokoro"          → Kokoro-82M (PythonTtsService).
+    /// "piper"           → Piper (PiperTtsService).
+    ///
+    /// Column re-use for non-ElevenLabs engines (no extra columns needed):
+    ///   VoiceId         → engine voice id (e.g. "af_sky" for kokoro, "en_US-ryan-high" for piper)
+    ///   VoiceStyle      → piper: noise_scale (0.0–1.0); kokoro: speed (0.5–2.0)
+    ///   VoiceStability  → piper: length_scale / speed (0.5–2.0); kokoro: unused
+    ///   VoiceSimilarity → unused for local engines
+    ///   VoiceModel      → unused for local engines
+    /// </summary>
+    public string? TtsEngine { get; set; }
+
     // ── Generation / cost / resume state ─────────────────────────────────
 
     /// <summary>For LLM-generated strands, the one-line seed that fed the

@@ -329,20 +329,96 @@ else
                     <textarea class="strand-synopsis mt-1" rows="5" placeholder="Synopsis (optional)"
                               style="width:100%; resize:none; overflow-y:auto;"
                               @bind="strand.Synopsis" @bind:event="oninput" @onblur="SaveStrandHeaderAsync"></textarea>
-                </div>
-                <div style="min-width:200px;">
-                    <label class="form-label small text-muted mb-1">Voice</label>
-                    <div class="d-flex gap-1">
-                        <select class="form-select form-select-sm bg-black text-light border-secondary" @bind="strand.VoiceId" @bind:after="SaveStrandHeaderAsync">
-                            @foreach (var v in voices)
+
+                    @* ── TTS Engine selector + per-engine dials ── *@
+                    <div class="tts-engine-row mt-2 p-2 rounded border border-secondary bg-black">
+                        <div class="d-flex align-items-center gap-2 flex-wrap">
+                            <label class="form-label small text-muted mb-0 me-1">TTS Engine</label>
+                            <select class="form-select form-select-sm bg-black text-light border-secondary"
+                                    style="max-width:160px;"
+                                    @bind="selectedEngine" @bind:after="OnEngineChangedAsync">
+                                <option value="elevenlabs">ElevenLabs</option>
+                                <option value="kokoro">Kokoro</option>
+                                <option value="piper">Piper</option>
+                            </select>
+
+                            @if (selectedEngine == "elevenlabs")
                             {
-                                <option value="@v.VoiceId">@v.Name</option>
+                                @* ElevenLabs: reuse the existing Voice selector + Voice Studio toggle *@
+                                <select class="form-select form-select-sm bg-black text-light border-secondary"
+                                        style="max-width:220px;"
+                                        @bind="strand.VoiceId" @bind:after="SaveStrandHeaderAsync">
+                                    @foreach (var v in voices)
+                                    {
+                                        <option value="@v.VoiceId">@v.Name</option>
+                                    }
+                                </select>
+                                <button class="btn btn-sm btn-outline-info" type="button"
+                                        @onclick="() => showVoiceStudio = !showVoiceStudio"
+                                        title="Open Voice Studio — pick voice, turn dials, audition, save profile">
+                                    <i class="bi bi-sliders"></i>
+                                </button>
                             }
-                        </select>
-                        <button class="btn btn-sm btn-outline-info" type="button" @onclick="() => showVoiceStudio = !showVoiceStudio"
-                                title="Open the Voice Studio — pick any v2/v3 voice, turn its dials, audition Beat 001, save it as a profile">
-                            <i class="bi bi-sliders"></i>
-                        </button>
+                            else if (selectedEngine == "kokoro")
+                            {
+                                @* Kokoro: voice id + speed *@
+                                <input class="form-control form-control-sm bg-black text-light border-secondary"
+                                       style="max-width:180px;"
+                                       placeholder="Voice id (e.g. af_sky)"
+                                       title="Kokoro voice id — stored as VoiceId"
+                                       @bind="localVoiceId" @bind:event="oninput" @onblur="SaveLocalEngineAsync" />
+                                <div class="d-flex align-items-center gap-1">
+                                    <label class="form-label small text-muted mb-0"
+                                           title="Playback speed (0.5–2.0). Stored as VoiceStyle.">Speed: @localSpeed.ToString("F2")</label>
+                                    <input type="range" class="form-range" style="width:100px;"
+                                           min="0.5" max="2.0" step="0.05"
+                                           @bind="localSpeed" @bind:event="oninput" @onchange="SaveLocalEngineAsync" />
+                                </div>
+                                <button class="btn btn-sm btn-info" @onclick="DemoLocalAsync" disabled="@localDemoing"
+                                        title="Synthesize a demo passage with Kokoro">
+                                    @if (localDemoing) { <span class="spinner-border spinner-border-sm me-1"></span> }
+                                    else { <i class="bi bi-play-fill me-1"></i> }
+                                    Demo
+                                </button>
+                            }
+                            else if (selectedEngine == "piper")
+                            {
+                                @* Piper: voice id + length-scale (speed) + noise *@
+                                <input class="form-control form-control-sm bg-black text-light border-secondary"
+                                       style="max-width:200px;"
+                                       placeholder="Voice id (e.g. en_US-ryan-high)"
+                                       title="Piper voice id — stored as VoiceId"
+                                       @bind="localVoiceId" @bind:event="oninput" @onblur="SaveLocalEngineAsync" />
+                                <div class="d-flex align-items-center gap-1">
+                                    <label class="form-label small text-muted mb-0"
+                                           title="Playback speed / length scale (0.5–2.0). Stored as VoiceStability.">Speed: @localLengthScale.ToString("F2")</label>
+                                    <input type="range" class="form-range" style="width:90px;"
+                                           min="0.5" max="2.0" step="0.05"
+                                           @bind="localLengthScale" @bind:event="oninput" @onchange="SaveLocalEngineAsync" />
+                                </div>
+                                <div class="d-flex align-items-center gap-1">
+                                    <label class="form-label small text-muted mb-0"
+                                           title="Noise scale — expressiveness (0.0–1.0). Stored as VoiceStyle.">Noise: @localSpeed.ToString("F2")</label>
+                                    <input type="range" class="form-range" style="width:90px;"
+                                           min="0.0" max="1.0" step="0.05"
+                                           @bind="localSpeed" @bind:event="oninput" @onchange="SaveLocalEngineAsync" />
+                                </div>
+                                <button class="btn btn-sm btn-info" @onclick="DemoLocalAsync" disabled="@localDemoing"
+                                        title="Synthesize a demo passage with Piper">
+                                    @if (localDemoing) { <span class="spinner-border spinner-border-sm me-1"></span> }
+                                    else { <i class="bi bi-play-fill me-1"></i> }
+                                    Demo
+                                </button>
+                            }
+                        </div>
+
+                        @if (!string.IsNullOrEmpty(studioAudioUrl) && selectedEngine != "elevenlabs")
+                        {
+                            <div class="mt-2">
+                                <label class="form-label small text-muted mb-1">@studioAudioLabel</label>
+                                <audio controls autoplay src="@studioAudioUrl" class="w-100" style="height:34px;"></audio>
+                            </div>
+                        }
                     </div>
                 </div>
             </div>
@@ -1463,6 +1539,19 @@ else
     private string newProfileLabel = "";
     private bool importingVoices;
 
+    // ── Per-strand TTS engine selector ────────────────────────────────────
+    // selectedEngine mirrors Strand.TtsEngine on the page (null/"elevenlabs",
+    // "kokoro", "piper"). The local-engine dials below are stored compactly in
+    // the existing Voice* columns (see Strand.TtsEngine XML doc for the mapping):
+    //   localVoiceId    → Strand.VoiceId  (engine voice identifier)
+    //   localSpeed      → Strand.VoiceStyle  (kokoro speed; piper noise_scale)
+    //   localLengthScale→ Strand.VoiceStability (piper length_scale / speed)
+    private string selectedEngine = "elevenlabs";   // "elevenlabs"|"kokoro"|"piper"
+    private string localVoiceId   = "";             // engine voice id
+    private double localSpeed     = 1.0;            // kokoro: speed; piper: noise_scale
+    private double localLengthScale = 1.0;          // piper only: length_scale (playback speed)
+    private bool   localDemoing;                    // spinner while local demo synthesises
+
     private string StudioPreviewUrl =>
         voices.FirstOrDefault(v => v.VoiceId == editorProfile.VoiceId)?.PreviewUrl ?? "";
     private string StudioVoiceDescription =>
@@ -1471,10 +1560,24 @@ else
     private void OnStudioVoiceChanged() => studioAudioUrl = null;
 
     /// <summary>Copy the strand's pinned voice snapshot into the editor so the
-    /// studio opens showing what the strand currently uses.</summary>
+    /// studio opens showing what the strand currently uses. Also seeds the
+    /// TTS engine selector and local-engine dials.</summary>
     private void SeedVoiceEditorFromStrand()
     {
         if (strand == null) return;
+
+        // Seed engine selector
+        selectedEngine = string.IsNullOrEmpty(strand.TtsEngine) ? "elevenlabs" : strand.TtsEngine;
+
+        if (selectedEngine != "elevenlabs")
+        {
+            // Local engine — seed the local dials from the re-used Voice* columns
+            localVoiceId    = strand.VoiceId ?? "";
+            localSpeed      = strand.VoiceStyle      ?? 1.0;   // kokoro speed / piper noise_scale
+            localLengthScale = strand.VoiceStability ?? 1.0;   // piper length_scale
+        }
+
+        // ElevenLabs profile (always kept in sync for when user switches back)
         editorProfile = new StreetSamurai.Core.Models.VoiceProfile
         {
             Id              = "",
@@ -1530,6 +1633,37 @@ else
             Toast.Error("DEMO", ex.Message);
         }
         finally { demoing = false; StateHasChanged(); }
+    }
+
+    /// <summary>Synthesize a demo passage through the selected local engine
+    /// (Kokoro or Piper) and play it in the engine-row audio element.</summary>
+    private async Task DemoLocalAsync()
+    {
+        if (strand == null || localDemoing) return;
+        localDemoing = true;
+        studioAudioUrl = null;
+        StateHasChanged();
+        try
+        {
+            var wav = await Workbench.SynthesizeLocalBeatAsync(
+                StrandWorkbenchService.DemoSampleText, selectedEngine);
+            if (wav == null)
+            {
+                Toast.Error("LOCAL-DEMO", "ffmpeg not found on PATH — required for local TTS preview.");
+                return;
+            }
+            studioAudioLabel = $"Demo — {selectedEngine} synthesis";
+            studioAudioUrl = "data:audio/wav;base64," + Convert.ToBase64String(wav);
+        }
+        catch (Exception ex)
+        {
+            Log.LogError(ex, "Local demo failed for strand {S} engine {E}", strand.Id, selectedEngine);
+            var engineHint = selectedEngine == "kokoro"
+                ? "Kokoro not installed — see tools/kokoro/README for one-time setup."
+                : "Piper not installed — see tools/piper/README for one-time setup.";
+            Toast.Error("LOCAL-DEMO", ex.Message.Contains("not installed") ? engineHint : ex.Message);
+        }
+        finally { localDemoing = false; StateHasChanged(); }
     }
 
     private async Task ApplyVoiceToStrandAsync()
@@ -1843,9 +1977,42 @@ else
         s.Title = strand.Title;
         s.Synopsis = strand.Synopsis;
         s.VoiceId = strand.VoiceId;
+        s.TtsEngine = selectedEngine == "elevenlabs" ? null : selectedEngine;
         s.UpdatedAt = DateTime.UtcNow;
         await db.SaveChangesAsync();
         strandLoadedUpdatedAt = s.UpdatedAt;
+    }
+
+    /// <summary>Persist the local-engine dials (VoiceId, VoiceStyle, VoiceStability)
+    /// for Kokoro/Piper without touching other ElevenLabs-specific columns.</summary>
+    private async Task SaveLocalEngineAsync()
+    {
+        if (strand == null) return;
+        await using var db = await DbFactory.CreateDbContextAsync();
+        var s = await db.Strands.FirstOrDefaultAsync(x => x.Id == strand.Id);
+        if (s == null) return;
+        s.TtsEngine    = selectedEngine;
+        s.VoiceId      = localVoiceId;
+        // VoiceStyle  → kokoro speed; piper noise_scale
+        s.VoiceStyle   = localSpeed;
+        // VoiceStability → piper length_scale; null for kokoro
+        s.VoiceStability = selectedEngine == "piper" ? localLengthScale : null;
+        s.UpdatedAt    = DateTime.UtcNow;
+        await db.SaveChangesAsync();
+        strandLoadedUpdatedAt = s.UpdatedAt;
+        // Sync back the in-memory strand so the right-column Voice selector stays consistent
+        strand.TtsEngine = s.TtsEngine;
+        strand.VoiceId   = s.VoiceId;
+    }
+
+    /// <summary>Called when the engine dropdown changes. Persists immediately.</summary>
+    private async Task OnEngineChangedAsync()
+    {
+        studioAudioUrl = null;
+        if (selectedEngine == "elevenlabs")
+            await SaveStrandHeaderAsync();
+        else
+            await SaveLocalEngineAsync();
     }
 
     /// <summary>Seed a beat's draft and queue focus + autosize on its

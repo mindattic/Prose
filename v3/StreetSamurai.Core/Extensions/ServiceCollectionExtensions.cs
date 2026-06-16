@@ -262,6 +262,7 @@ public static class ServiceCollectionExtensions
         // Universal KV façade over the Settings table — used by every per-book /
         // per-world JSON store that previously wrote to engine_data/*.json.
         services.AddSingleton<SettingsKvStore>();
+        services.AddSingleton<RepositoryDefinitionService>();
 
         // Multi-universe tenancy. The ambient current-universe selector (SS-LAW-15).
         // Singleton because the DbContext factory + repositories are singletons; the

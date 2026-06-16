@@ -58,6 +58,16 @@
             <div class="card-header text-muted">Display</div>
             <div class="card-body">
                 <div class="row g-3 align-items-end">
+                    <div class="col-md-2">
+                        <label class="form-label text-muted">Theme</label>
+                        <select class="form-select bg-dark text-light border-secondary" @bind="SettingsSvc.Theme">
+                            <option value="auto">Auto (Universe)</option>
+                            <option value="glmz">GLMZ</option>
+                            <option value="fantasy">Fantasy</option>
+                            <option value="dark">Dark</option>
+                            <option value="light">Light</option>
+                        </select>
+                    </div>
                     <div class="col-md-3">
                         <label class="form-label text-muted">UI Font</label>
                         <select class="form-select bg-dark text-light border-secondary" @bind="SettingsSvc.FontFamily">

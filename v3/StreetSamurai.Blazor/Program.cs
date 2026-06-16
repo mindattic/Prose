@@ -625,6 +625,26 @@ if (args.Contains("--rebuild-readmodel"))
     return;
 }
 
+// CLI mode: create a runtime-defined repository (custom entity type).
+//   ss --create-repository --name "Artifacts" [--category World] [--icon bi-box] [--description "..."]
+if (args.Contains("--create-repository"))
+{
+    string ArgVal(string flag) { var i = Array.IndexOf(args, flag); return i >= 0 && i + 1 < args.Length ? args[i + 1] : ""; }
+    var repoName = ArgVal("--name");
+    if (string.IsNullOrWhiteSpace(repoName)) { Console.Error.WriteLine("[create-repository] --name is required."); Environment.ExitCode = 1; return; }
+    var cliBuilder = WebApplication.CreateBuilder(args);
+    cliBuilder.Services.AddStreetSamuraiServices();
+    var cliApp = cliBuilder.Build();
+    var svc = cliApp.Services.GetRequiredService<StreetSamurai.Core.Services.RepositoryDefinitionService>();
+    try
+    {
+        var def = svc.Create(repoName, ArgVal("--category"), ArgVal("--icon"), ArgVal("--description"));
+        Console.WriteLine($"[create-repository] Created '{def.Name}' — slug '{def.Slug}', category {def.Category}, route {def.RoutePath}.");
+    }
+    catch (Exception ex) { Console.Error.WriteLine($"[create-repository] FAILED: {ex.Message}"); Environment.ExitCode = 1; }
+    return;
+}
+
 // CLI mode: backfill the Factions relational schema from Records.Json blobs.
 // Run once after applying add_faction_relationship_tags_20260615.sql.
 // ADDITIVE — Records.Json is never modified. (RFC 0007)

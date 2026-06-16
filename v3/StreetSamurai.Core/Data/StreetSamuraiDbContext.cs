@@ -84,7 +84,11 @@ public class StreetSamuraiDbContext : DbContext
 
     // Multi-universe tenancy — every universe-scoped root (Entity, Strand, Book)
     // carries a UniverseId; reads are filtered to the current universe (SS-LAW-15).
-    public DbSet<Universe>        Universes        => Set<Universe>();
+    public DbSet<Universe>               Universes              => Set<Universe>();
+
+    // Runtime-defined entity types (custom repos). Global (not universe-scoped);
+    // board display is filtered by active-entity-count in the current universe.
+    public DbSet<RepositoryDefinition>   RepositoryDefinitions  => Set<RepositoryDefinition>();
 
     // Universal layer
     public DbSet<Entity>          Entities         => Set<Entity>();
@@ -1254,6 +1258,20 @@ public class StreetSamuraiDbContext : DbContext
                 ScopedUniverseId == Guid.Empty
                 || x.UniverseId == ScopedUniverseId
                 || x.UniverseId == SharedUniverseId);
+        });
+
+        // Runtime-defined repositories — global lookup, NOT universe-scoped (no query filter):
+        // the definition is shared; universe separation happens on the Entity spine.
+        b.Entity<RepositoryDefinition>(e =>
+        {
+            e.ToTable("RepositoryDefinitions");
+            e.HasKey(x => x.Id);
+            e.Property(x => x.Slug).HasMaxLength(120);
+            e.Property(x => x.Name).HasMaxLength(200);
+            e.Property(x => x.Category).HasMaxLength(50);
+            e.Property(x => x.Icon).HasMaxLength(60);
+            e.Property(x => x.RoutePath).HasMaxLength(120);
+            e.HasIndex(x => x.Slug).IsUnique();
         });
 
         // ── WeaponSpec (per-weapon structured key/value spec rows) ───────────

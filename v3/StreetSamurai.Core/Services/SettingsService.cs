@@ -600,7 +600,7 @@ public class SettingsService : IDisposable
     {
         public string ApiKey { get; set; } = "";
         public string Model { get; set; } = Constants.Defaults.DefaultModel;
-        public string Theme { get; set; } = "dark";
+        public string Theme { get; set; } = "auto";
         public string CanonRootPath { get; set; } = "";
         public int MaxTokens { get; set; } = 2048;
         public string ElevenLabsApiKey { get; set; } = "";

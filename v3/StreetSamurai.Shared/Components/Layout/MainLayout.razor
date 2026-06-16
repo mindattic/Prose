@@ -23,24 +23,59 @@
 }
 *@
 
-@* Auth chrome (MindAttic.UiUx) — AuthorizeView-gated, so invisible to anonymous/readonly visitors.
-   UserCircle (upper-right) gives sign-out; UserTimeout arms the 30-min idle auto-logout. *@
-<div style="position:fixed;top:.6rem;right:.75rem;z-index:1100;">
-    <UserCircle />
-</div>
+@* Auth chrome (MindAttic.UiUx) — UserTimeout arms the 30-min idle auto-logout. The user identity
+   lives in NavMenu's UserBoard (bound to Access.CurrentUserName); the old upper-right UserCircle
+   was redundant and has been removed. *@
 <UserTimeout />
 
-<div class="app-shell @(!Access.IsContributor ? "readonly-mode" : "") @(SettingsSvc.RepoListOnRight ? "list-right" : "")"
-     data-theme="@currentTheme"
-     @onkeydown="OnGlobalKeyDown" tabindex="-1">
-    <AppBanner OnThemeChanged="OnThemeChanged" />
-    <NavMenu />
-    <main class="topnav-main">
-        <div class="container-fluid">
-            @Body
+@if (embed)
+{
+    @* Embedded mode (the writer iframe loads /strand/{id}?embed=1): render bare so the persistent
+       two-pane shell does NOT recurse into itself. *@
+    <div class="app-shell app-embed" data-theme="@currentTheme">
+        <main class="topnav-main"><div class="container-fluid">@Body</div></main>
+    </div>
+}
+else
+{
+    <div class="app-shell @(!Access.IsContributor ? "readonly-mode" : "") @(SettingsSvc.RepoListOnRight ? "list-right" : "")"
+         data-theme="@currentTheme"
+         @onkeydown="OnGlobalKeyDown" tabindex="-1">
+        <AppBanner OnThemeChanged="OnThemeChanged" />
+        <div class="app-split-controls">
+            <button class="btn btn-sm btn-outline-secondary" title="Swap sides (writer ↔ repositories)" @onclick="ToggleSwap">
+                <i class="bi bi-arrow-left-right"></i>
+            </button>
+            <button class="btn btn-sm btn-outline-secondary" title="@SplitTitle" @onclick="CycleSplit">
+                <i class="bi @SplitIcon"></i>
+            </button>
         </div>
-    </main>
-</div>
+        @* Left = strand selection + writer; Right = repositories & tools (@Body). Swap flips them. *@
+        <div class="app-split layout-@(splitLayout)">
+            @if (splitSwapped)
+            {
+                <main class="topnav-main app-pane app-pane-repos">
+                    <div class="container-fluid">
+                        <AutoBreadcrumb />
+                        @Body
+                    </div>
+                </main>
+                <div class="app-pane app-pane-writer"><WriterPane /></div>
+            }
+            else
+            {
+                <div class="app-pane app-pane-writer"><WriterPane /></div>
+                <main class="topnav-main app-pane app-pane-repos">
+                    <div class="container-fluid">
+                        <AutoBreadcrumb />
+                        @Body
+                    </div>
+                </main>
+            }
+        </div>
+        <AppStatusBar />
+    </div>
+}
 
 <SearchOverlay />
 
@@ -57,15 +92,52 @@
 
     private bool navPending = false;
     private string? bgImage;
-    private string currentTheme = "dark"; // default; overridden by universe on init
+    private string currentTheme = "glmz"; // default; overridden by universe on init
+
+    // Persistent two-pane shell: left = strand selection + writer, right = repositories & tools
+    // (@Body). Swap flips them; the cycle button collapses left / right / neither. State persists
+    // to localStorage. `embed` renders bare so the writer iframe (which loads a real page) can't
+    // recurse into the shell.
+    private bool embed;
+    private bool splitSwapped;
+    private string splitLayout = "equal"; // equal | left (left pane collapsed) | right
+
+    private bool IsEmbed() => Nav.Uri.Contains("embed=1", StringComparison.OrdinalIgnoreCase);
+
+    private string SplitIcon => splitLayout switch
+    {
+        "left"  => "bi-layout-sidebar-inset-reverse",
+        "right" => "bi-layout-sidebar-inset",
+        _       => "bi-layout-split",
+    };
+    private string SplitTitle => splitLayout switch
+    {
+        "left"  => "Left pane collapsed — click to collapse right",
+        "right" => "Right pane collapsed — click for equal width",
+        _       => "Equal width — click to collapse left",
+    };
 
     protected override void OnInitialized()
     {
         bgImage = Media.GetRandomImage();
-        currentTheme = AppBanner.ThemeFor(Universe);
+        var universeTheme = AppBanner.ThemeFor(Universe);
+        currentTheme = SettingsSvc.Theme == "auto" ? universeTheme : SettingsSvc.Theme;
+        embed = IsEmbed();
     }
 
     private void OnThemeChanged(string theme) => currentTheme = theme;
+
+    private async Task ToggleSwap()
+    {
+        splitSwapped = !splitSwapped;
+        try { await JS.InvokeVoidAsync("localStorage.setItem", "app.split.swapped", splitSwapped ? "1" : "0"); } catch { }
+    }
+
+    private async Task CycleSplit()
+    {
+        splitLayout = splitLayout switch { "equal" => "left", "left" => "right", _ => "equal" };
+        try { await JS.InvokeVoidAsync("localStorage.setItem", "app.split.layout", splitLayout); } catch { }
+    }
 
     protected override async Task OnAfterRenderAsync(bool firstRender)
     {
@@ -74,6 +146,17 @@
             Nav.LocationChanged += OnLocationChanged;
             Nav.RegisterLocationChangingHandler(OnLocationChanging);
             CheckMissingEnvVars();
+            if (!embed)
+            {
+                try
+                {
+                    splitSwapped = (await JS.InvokeAsync<string>("localStorage.getItem", "app.split.swapped")) == "1";
+                    var l = await JS.InvokeAsync<string>("localStorage.getItem", "app.split.layout");
+                    if (l is "equal" or "left" or "right") splitLayout = l;
+                    StateHasChanged();
+                }
+                catch { /* prerender / JS unavailable */ }
+            }
             // List-item neon flicker DISABLED 2026-05-09 — too distracting in
             // the dictionary UIs. JS (`cyberspaceStartListItemFlicker` in console-bg.js)
             // and CSS (`.neon-flicker-loop` in app.css) are intact for later
@@ -129,7 +212,11 @@
 
     private void OnLocationChanged(object? sender, Microsoft.AspNetCore.Components.Routing.LocationChangedEventArgs e)
     {
-        // Location changed — OnAfterRenderAsync will fire next and hide the loader
+        // Recompute embed mode (the writer iframe vs the full shell) on navigation.
+        var wasEmbed = embed;
+        embed = IsEmbed();
+        if (wasEmbed != embed) StateHasChanged();
+        // OnAfterRenderAsync will fire next and hide the loader
     }
 
     public void Dispose()
