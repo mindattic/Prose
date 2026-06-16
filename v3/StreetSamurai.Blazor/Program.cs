@@ -25,6 +25,12 @@ using MindAttic.Vault.DependencyInjection;
 // This project is the non-commercial indie use case the Community tier exists for.
 QuestPDF.Settings.License = QuestPDF.Infrastructure.LicenseType.Community;
 
+// Multi-universe: a global `--universe <slug>` flag selects which universe this
+// process targets (SS-LAW-15). UniverseContext also honors the SS_UNIVERSE env
+// var (per terminal), so two CLIs can write different universes at once. Parsed
+// here before the dispatch chain so every CLI block + the web host inherit it.
+UniverseBootstrap.RequestedSlug ??= UniverseBootstrap.ParseSlug(args);
+
 // CLI mode: dotnet run --project ... -- --rebuild-graph
 // Rebuilds world_graph.json from source data without starting the web server.
 if (args.Contains("--rebuild-graph"))
@@ -32,6 +38,12 @@ if (args.Contains("--rebuild-graph"))
     var cliBuilder = WebApplication.CreateBuilder(args);
     cliBuilder.Services.AddStreetSamuraiServices();
     var cliApp = cliBuilder.Build();
+    // Pin the universe scope BEFORE building so it can't shift mid-rebuild. Resolving the context
+    // forces its lazy catalog load + applies the --universe/SS_UNIVERSE/default selection, so every
+    // builder in this rebuild sees one stable scope (the non-deterministic node/edge counts came
+    // from the scope resolving partway through the multi-builder pass). Defaults to GLMZ.
+    var cliUniverse = cliApp.Services.GetRequiredService<StreetSamurai.Core.Services.IUniverseContext>();
+    Console.WriteLine($"[rebuild-graph] Universe scope: {cliUniverse.CurrentSlug} ({cliUniverse.CurrentId})");
     var graph = cliApp.Services.GetRequiredService<WorldGraphService>();
     Console.WriteLine("[rebuild-graph] Rebuilding world graph from source data...");
     graph.Rebuild();
@@ -600,6 +612,199 @@ if (args.Contains("--rebuild-readmodel"))
     return;
 }
 
+// CLI mode: backfill the Factions relational schema from Records.Json blobs.
+// Run once after applying add_faction_relationship_tags_20260615.sql.
+// ADDITIVE — Records.Json is never modified. (RFC 0007)
+//   ss --rebuild-faction-relational
+if (args.Contains("--rebuild-faction-relational"))
+{
+    var cliBuilder = WebApplication.CreateBuilder(args);
+    cliBuilder.Services.AddStreetSamuraiServices();
+    var cliApp = cliBuilder.Build();
+    Environment.ExitCode = await RebuildFactionRelationalCli.RunAsync(args, cliApp.Services);
+    return;
+}
+
+// CLI mode: materialize relational rows for active characters that are blob-only
+// (no Characters row) — the no-data-loss gate before dropping the Character blob. (RFC 0007)
+//   ss --backfill-missing-characters
+if (args.Contains("--backfill-missing-characters"))
+{
+    var cliBuilder = WebApplication.CreateBuilder(args);
+    cliBuilder.Services.AddStreetSamuraiServices();
+    var cliApp = cliBuilder.Build();
+    Environment.ExitCode = await BackfillMissingCharactersCli.RunAsync(args, cliApp.Services);
+    return;
+}
+
+// CLI mode: backfill the Quotes relational schema from Records.Json blobs.
+// ADDITIVE — Records.Json is never modified. (RFC 0007)
+//   ss --rebuild-quote-relational
+if (args.Contains("--rebuild-quote-relational"))
+{
+    var cliBuilder = WebApplication.CreateBuilder(args);
+    cliBuilder.Services.AddStreetSamuraiServices();
+    var cliApp = cliBuilder.Build();
+    Environment.ExitCode = await RebuildQuoteRelationalCli.RunAsync(args, cliApp.Services);
+    return;
+}
+
+// CLI mode: backfill the News relational schema from Records.Json blobs.
+// ADDITIVE — Records.Json is never modified. (RFC 0007)
+//   ss --rebuild-news-relational
+if (args.Contains("--rebuild-news-relational"))
+{
+    var cliBuilder = WebApplication.CreateBuilder(args);
+    cliBuilder.Services.AddStreetSamuraiServices();
+    var cliApp = cliBuilder.Build();
+    Environment.ExitCode = await RebuildNewsRelationalCli.RunAsync(args, cliApp.Services);
+    return;
+}
+
+// CLI mode: backfill the Contracts relational schema from Records.Json blobs.
+// ADDITIVE — Records.Json is never modified. (RFC 0007)
+//   ss --rebuild-contract-relational
+if (args.Contains("--rebuild-contract-relational"))
+{
+    var cliBuilder = WebApplication.CreateBuilder(args);
+    cliBuilder.Services.AddStreetSamuraiServices();
+    var cliApp = cliBuilder.Build();
+    Environment.ExitCode = await RebuildContractRelationalCli.RunAsync(args, cliApp.Services);
+    return;
+}
+
+// CLI mode: backfill the VocabularyEntries relational schema from Records.Json blobs.
+// ADDITIVE — Records.Json is never modified. (RFC 0007)
+//   ss --rebuild-vocabulary-relational
+if (args.Contains("--rebuild-vocabulary-relational"))
+{
+    var cliBuilder = WebApplication.CreateBuilder(args);
+    cliBuilder.Services.AddStreetSamuraiServices();
+    var cliApp = cliBuilder.Build();
+    Environment.ExitCode = await RebuildVocabularyRelationalCli.RunAsync(args, cliApp.Services);
+    return;
+}
+
+// CLI mode: backfill the Archetypes relational schema from Records.Json blobs.
+// ADDITIVE — Records.Json is never modified. (RFC 0007)
+//   ss --rebuild-archetype-relational
+if (args.Contains("--rebuild-archetype-relational"))
+{
+    var cliBuilder = WebApplication.CreateBuilder(args);
+    cliBuilder.Services.AddStreetSamuraiServices();
+    var cliApp = cliBuilder.Build();
+    Environment.ExitCode = await RebuildArchetypeRelationalCli.RunAsync(args, cliApp.Services);
+    return;
+}
+
+// CLI mode: backfill the Genemods relational schema from Records.Json blobs.
+// ADDITIVE — Records.Json is never modified. (RFC 0007)
+//   ss --rebuild-genemod-relational
+if (args.Contains("--rebuild-genemod-relational"))
+{
+    var cliBuilder = WebApplication.CreateBuilder(args);
+    cliBuilder.Services.AddStreetSamuraiServices();
+    var cliApp = cliBuilder.Build();
+    Environment.ExitCode = await RebuildGenemodRelationalCli.RunAsync(args, cliApp.Services);
+    return;
+}
+
+// CLI mode: backfill the Materials relational schema from Records.Json blobs.
+// ADDITIVE — Records.Json is never modified. (RFC 0007)
+//   ss --rebuild-material-relational
+if (args.Contains("--rebuild-material-relational"))
+{
+    var cliBuilder = WebApplication.CreateBuilder(args);
+    cliBuilder.Services.AddStreetSamuraiServices();
+    var cliApp = cliBuilder.Build();
+    Environment.ExitCode = await RebuildMaterialRelationalCli.RunAsync(args, cliApp.Services);
+    return;
+}
+
+// CLI mode: backfill the Psionics relational schema from Records.Json blobs.
+// ADDITIVE — Records.Json is never modified. (RFC 0007)
+//   ss --rebuild-psionic-relational
+if (args.Contains("--rebuild-psionic-relational"))
+{
+    var cliBuilder = WebApplication.CreateBuilder(args);
+    cliBuilder.Services.AddStreetSamuraiServices();
+    var cliApp = cliBuilder.Build();
+    Environment.ExitCode = await RebuildPsionicRelationalCli.RunAsync(args, cliApp.Services);
+    return;
+}
+
+// CLI mode: backfill the Motifs relational schema from Records.Json blobs.
+// ADDITIVE — Records.Json is never modified. (RFC 0007)
+//   ss --rebuild-motif-relational
+if (args.Contains("--rebuild-motif-relational"))
+{
+    var cliBuilder = WebApplication.CreateBuilder(args);
+    cliBuilder.Services.AddStreetSamuraiServices();
+    var cliApp = cliBuilder.Build();
+    Environment.ExitCode = await RebuildMotifRelationalCli.RunAsync(args, cliApp.Services);
+    return;
+}
+
+// CLI mode: backfill the LabSpecimens relational schema from Records.Json blobs.
+// ADDITIVE — Records.Json is never modified. (RFC 0007)
+//   ss --rebuild-lab-specimen-relational
+if (args.Contains("--rebuild-lab-specimen-relational"))
+{
+    var cliBuilder = WebApplication.CreateBuilder(args);
+    cliBuilder.Services.AddStreetSamuraiServices();
+    var cliApp = cliBuilder.Build();
+    Environment.ExitCode = await RebuildLabSpecimenRelationalCli.RunAsync(args, cliApp.Services);
+    return;
+}
+
+// CLI mode: backfill the FlyoverEntities relational schema from Records.Json blobs.
+// ADDITIVE — Records.Json is never modified. (RFC 0007)
+//   ss --rebuild-flyover-entity-relational
+if (args.Contains("--rebuild-flyover-entity-relational"))
+{
+    var cliBuilder = WebApplication.CreateBuilder(args);
+    cliBuilder.Services.AddStreetSamuraiServices();
+    var cliApp = cliBuilder.Build();
+    Environment.ExitCode = await RebuildFlyoverEntityRelationalCli.RunAsync(args, cliApp.Services);
+    return;
+}
+
+// CLI mode: backfill the Automata relational schema from Records.Json blobs.
+// ADDITIVE — Records.Json is never modified. (RFC 0007)
+//   ss --rebuild-automaton-relational
+if (args.Contains("--rebuild-automaton-relational"))
+{
+    var cliBuilder = WebApplication.CreateBuilder(args);
+    cliBuilder.Services.AddStreetSamuraiServices();
+    var cliApp = cliBuilder.Build();
+    Environment.ExitCode = await RebuildAutomatonRelationalCli.RunAsync(args, cliApp.Services);
+    return;
+}
+
+// CLI mode: backfill the Ammunitions relational schema from Records.Json blobs.
+// ADDITIVE — Records.Json is never modified. (RFC 0007)
+//   ss --rebuild-ammunition-relational
+if (args.Contains("--rebuild-ammunition-relational"))
+{
+    var cliBuilder = WebApplication.CreateBuilder(args);
+    cliBuilder.Services.AddStreetSamuraiServices();
+    var cliApp = cliBuilder.Build();
+    Environment.ExitCode = await RebuildAmmunitionRelationalCli.RunAsync(args, cliApp.Services);
+    return;
+}
+
+// CLI mode: backfill the Transportations relational schema from Records.Json blobs.
+// ADDITIVE — Records.Json is never modified. (RFC 0007)
+//   ss --rebuild-transportation-relational
+if (args.Contains("--rebuild-transportation-relational"))
+{
+    var cliBuilder = WebApplication.CreateBuilder(args);
+    cliBuilder.Services.AddStreetSamuraiServices();
+    var cliApp = cliBuilder.Build();
+    Environment.ExitCode = await RebuildTransportationRelationalCli.RunAsync(args, cliApp.Services);
+    return;
+}
+
 // CLI mode: split a monolithic strand into a Collection (parent + chapter
 // child strands) at IsChapterStart boundaries. Backs up to markdown first.
 //   ss --split-collection (--slug <s> | --id <guid>)
@@ -915,6 +1120,11 @@ builder.Services.AddScoped<IWriteAccessProvider, BlazorWriteAccessProvider>();
 builder.Services.AddScoped<ToastNotifier>();
 
 var app = builder.Build();
+
+// Multi-universe: construct the universe context now so UniverseScope.Current is
+// live before the first request or background service queries canon — otherwise
+// early reads would run unscoped. Honors a --universe flag / SS_UNIVERSE on the host.
+app.Services.GetRequiredService<IUniverseContext>();
 
 // ── Auth startup orchestration ───────────────────────────────────────────
 // Strict order: migrate (schema) → import (legacy UserAccount → AuthUser) → seed
