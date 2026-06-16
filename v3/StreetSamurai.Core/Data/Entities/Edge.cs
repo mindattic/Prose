@@ -9,6 +9,11 @@ namespace StreetSamurai.Core.Data.Entities;
 public class Edge
 {
     public long Id { get; set; }
+
+    /// <summary>The universe this relation belongs to (denormalized from the source entity). Source
+    /// and target always share a universe — a cross-universe edge is a bug (RFC 0006).</summary>
+    public Guid UniverseId { get; set; }
+
     public Guid SourceId { get; set; }
     public Guid TargetId { get; set; }
 

@@ -1,8 +1,6 @@
 @page "/board/{slug}"
 
-<div class="cyberspace-sl-fine"    aria-hidden="true"></div>
-<div class="cyberspace-sl-coarse"  aria-hidden="true"></div>
-<div class="console-bg-host" aria-hidden="true"></div>
+@* CyberSpace animated background removed 2026-06-15 — plain dark mode (universe-neutral shell). *@
 
 @inject CharacterRepository CharRepo
 @inject ArchetypeRepository ArchetypeRepo
@@ -109,7 +107,7 @@ else
                 new("bi-robot",               "/automata",        "Automata",        AutomatonRepo.Count(), false, "Autonomous machines — NOT synthetic life. Iowan Behemoths, security drones, factory units."),
                 new("bi-eyedropper",          "/specimens",       "Lab Specimens",   LabSpecimenRepo.Count(), false, "Captured / cataloged biological samples studied in corp labs and academic facilities. The strange biology of the post-Collapse world."),
                 new("bi-bug",                 "/wasteland",       "Wasteland",       FlyoverRepo.Count(), false, "Flyover entities — the wildlife (and worse) that survives outside the corridor. Mutated fauna, drift-zone creatures, undocumented species."),
-                new("bi-book",                "/rules",           "World Rules",     0, true, "Hard prose constraints (literary_rules.json) injected into every generation call as NON-NEGOTIABLE."),
+                new("bi-book",                "/rules",           "Universe Rules",     0, true, "Hard prose constraints (literary_rules.json) injected into every generation call as NON-NEGOTIABLE."),
             ],
             "Culture" =>
             [

@@ -235,13 +235,13 @@ public class CharacterPipelineService : PipelineServiceBase
                 };
             });
 
-            var prompt = $$"""
-                Generate physical descriptions for these GLMZ entities. Cyberpunk near-future aesthetic.
+            var prompt = $"""
+                {(UniverseScope.Current?.UniverseGroundingOr("Generate physical descriptions for these GLMZ entities. Cyberpunk near-future aesthetic.") ?? "Generate physical descriptions for these GLMZ entities. Cyberpunk near-future aesthetic.")}
                 For each, return a JSON object with keys: name, height, build, hair, eyes, skin, distinguishing_marks, augmentations (array), image_prompt (Midjourney-style string).
                 Return a JSON array of these objects.
 
                 Entities:
-                {{JsonSerializer.Serialize(entityList)}}
+                {JsonSerializer.Serialize(entityList)}
                 """;
 
             try

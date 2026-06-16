@@ -45,7 +45,9 @@ public class EntityRatingService
     private readonly LabSpecimenRepository labSpecimens;
     private readonly PsionicRepository psionics;
 
-    private const string Question = "How genuinely interesting is this world-building entry? Would a resident of GLMZ care about this?";
+    private static string Question =>
+        UniverseScope.Current?.UniverseGroundingOr("How genuinely interesting is this world-building entry? Would a resident of GLMZ care about this?")
+        ?? "How genuinely interesting is this world-building entry? Would a resident of GLMZ care about this?";
     private const int VotersPerEntity = 10;
 
     // Pool of GLMZ resident personas — randomly sampled to form a crowd of 10 per vote
@@ -242,7 +244,14 @@ public class EntityRatingService
                 Dimensions       = ["INTEREST"],
                 MaxTokens        = 256,
                 SynthesizeNarrative = false,
-                EvaluatorContext = """
+                EvaluatorContext = UniverseScope.Current?.UniverseGroundingOr("""
+                    You are a resident of GLMZ, a near-future city in the United States that has been
+                    ceded to corporate sovereignty. Rate how genuinely interesting this world-building
+                    entry is — not just factually, but as something that matters, surprises, or reveals
+                    something true about how this city works. Score INTEREST 1–10 from your character's
+                    perspective. Be honest. Mediocre entries are common; reserve high scores for entries
+                    that feel truly alive or reveal something unexpected.
+                    """) ?? """
                     You are a resident of GLMZ, a near-future city in the United States that has been
                     ceded to corporate sovereignty. Rate how genuinely interesting this world-building
                     entry is — not just factually, but as something that matters, surprises, or reveals

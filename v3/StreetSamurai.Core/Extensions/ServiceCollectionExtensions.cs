@@ -33,6 +33,12 @@ public static class ServiceCollectionExtensions
                 ?? cfg?.GetConnectionString("StreetSamurai")
                 ?? @"Server=(localdb)\MSSQLLocalDB;Database=StreetSamurai;Trusted_Connection=True;TrustServerCertificate=True;";
             opts.UseSqlServer(connStr);
+            // The multi-universe global query filters live on the Entity/Strand/Book PRINCIPALS;
+            // their dependents inherit the universe and intentionally carry no filter. EF logs a
+            // "required end of a relationship" warning for each such navigation — expected and
+            // correct here, so suppress the noise (it would fire on every model build).
+            opts.ConfigureWarnings(w => w.Ignore(
+                Microsoft.EntityFrameworkCore.Diagnostics.CoreEventId.PossibleIncorrectRequiredNavigationWithQueryFilterInteractionWarning));
         }, ServiceLifetime.Singleton);
         services.AddScoped<StreetSamuraiDbContext>(sp =>
             sp.GetRequiredService<IDbContextFactory<StreetSamuraiDbContext>>().CreateDbContext());
@@ -256,6 +262,13 @@ public static class ServiceCollectionExtensions
         // Universal KV façade over the Settings table — used by every per-book /
         // per-world JSON store that previously wrote to engine_data/*.json.
         services.AddSingleton<SettingsKvStore>();
+
+        // Multi-universe tenancy. The ambient current-universe selector (SS-LAW-15).
+        // Singleton because the DbContext factory + repositories are singletons; the
+        // selection rides UniverseScope (set in the ctor) rather than a DI scope.
+        // CLI/MCP/UI set it per process via UseUniverse / UseUniverseBySlug.
+        services.AddSingleton<UniverseContext>();
+        services.AddSingleton<IUniverseContext>(sp => sp.GetRequiredService<UniverseContext>());
 
         // Reusable expert-archetype voters for beat generation. ListAll() seeds
         // from ExpertPersonaCatalog on first read; SelectPertinentAsync uses a

@@ -24,8 +24,14 @@ public class WorldGraphService : IWorldGraphService
     // Populated by RebuildIndexes; lets /dashboard's "top connected" widget
     // skip the O(N×E) GetAllEdges loop and do a hash lookup instead.
     private readonly Dictionary<string, int> edgeCountIndex = new(StringComparer.OrdinalIgnoreCase);
+    private readonly object rebuildLock = new();
     private bool loaded;
     private bool loading;
+    private int builtEpoch = -1;
+    // Set while a Rebuild() is in flight so the DI-factory background RefreshIfStale (Task.Run)
+    // doesn't pile a second, differently-scoped rebuild on top of an explicit one (the source of
+    // the non-deterministic node/edge counts seen when a CLI --rebuild-graph raced the background probe).
+    private volatile bool rebuilding;
 
     public WorldGraphService(IPathProvider paths, DatabaseService db)
     {
@@ -47,6 +53,11 @@ public class WorldGraphService : IWorldGraphService
 
     public void EnsureLoaded()
     {
+        // If the universe has changed since the last build, force a full rebuild.
+        if (loaded && builtEpoch != UniverseScope.Epoch)
+        {
+            loaded = false;
+        }
         if (loaded) return;
         // Reentrance guard: Rebuild() invokes builders that read back through query
         // methods (e.g. GetRelationshipsBetween → EnsureLoaded). Without this, those
@@ -57,10 +68,11 @@ public class WorldGraphService : IWorldGraphService
         {
             Load();
             // Empty cache (first run) → must rebuild synchronously, there's no data
-            // to serve. Otherwise we trust the cache and let RefreshIfStale handle
+            // to serve. On universe switch, also rebuild so we serve the new universe's
+            // graph. Otherwise we trust the cache and let RefreshIfStale handle
             // the SQL freshness probe in the background — that probe used to block
             // the startup path for 30-60 s on the eager-instantiate chain.
-            if (_nodes.Count == 0) Rebuild();
+            if (_nodes.Count == 0 || builtEpoch != UniverseScope.Epoch) Rebuild();
             RebuildIndexes();
             loaded = true;
         }
@@ -82,6 +94,7 @@ public class WorldGraphService : IWorldGraphService
     {
         try
         {
+            if (rebuilding) return;   // an explicit Rebuild() is in flight — don't race it
             if (!loaded) EnsureLoaded();
             if (IsStale())
             {
@@ -131,11 +144,23 @@ public class WorldGraphService : IWorldGraphService
             }
 
             using var ctx = sql.CreateDbContext();
-            var maxUpdated = ctx.Records
-                .OrderByDescending(r => r.UpdatedAt)
-                .Select(r => (DateTime?)r.UpdatedAt)
-                .FirstOrDefault();
-            return maxUpdated.HasValue && maxUpdated.Value.ToUniversalTime() > graphTime;
+            // Honest staleness probe. Canon no longer lives only in Records blobs: after the
+            // relationalization program (RFC 0007) most attributes live in typed tables, and
+            // renames / deactivations touch Entities.ModifiedAt — NOT Records.UpdatedAt. The old
+            // Records-only probe therefore went blind to renames and relational edits, leaving the
+            // graph silently stale (the class of bug that left phantom / old-name nodes around).
+            // Probe the latest write across every surface a canon change can land on, so any of
+            // them re-stamps the graph as stale and forces a rebuild. (SS-LAW-15 graph safeguard.)
+            const string sqlText = @"SELECT MAX(t) AS [Value] FROM (
+                SELECT MAX(ModifiedAt) t FROM Entities
+                UNION ALL SELECT MAX(UpdatedAt) FROM Records
+                UNION ALL SELECT MAX(UpdatedAt) FROM Beats
+                UNION ALL SELECT MAX(UpdatedAt) FROM Strands
+                UNION ALL SELECT MAX(SysStart) FROM Edges
+                UNION ALL SELECT MAX(SysStart) FROM Characters
+            ) x";
+            var maxUpdated = ctx.Database.SqlQueryRaw<DateTime?>(sqlText).AsEnumerable().FirstOrDefault();
+            return maxUpdated.HasValue && DateTime.SpecifyKind(maxUpdated.Value, DateTimeKind.Utc) > graphTime;
         }
         catch (Exception ex)
         {
@@ -146,11 +171,15 @@ public class WorldGraphService : IWorldGraphService
 
     // ── Queries (current edges only by default) ───────────────
 
-    public WorldNode? GetNode(string id) =>
-        _nodes.GetValueOrDefault(id);
+    public WorldNode? GetNode(string id)
+    {
+        EnsureLoaded();
+        return _nodes.GetValueOrDefault(id);
+    }
 
     public List<WorldNode> GetNodesByType(string nodeType)
     {
+        EnsureLoaded();
         if (typeIndex.TryGetValue(nodeType, out var ids))
             return ids.Select(id => _nodes.GetValueOrDefault(id)).Where(n => n != null).ToList()!;
         return [];
@@ -159,12 +188,17 @@ public class WorldGraphService : IWorldGraphService
     /// <summary>Get all nodes in a territory/location. Fast spatial query.</summary>
     public List<WorldNode> GetNodesByTerritory(string territory)
     {
+        EnsureLoaded();
         if (territoryIndex.TryGetValue(territory, out var ids))
             return ids.Select(id => _nodes.GetValueOrDefault(id)).Where(n => n != null).ToList()!;
         return [];
     }
 
-    public List<WorldNode> AllNodes() => _nodes.Values.ToList();
+    public List<WorldNode> AllNodes()
+    {
+        EnsureLoaded();
+        return _nodes.Values.ToList();
+    }
 
     /// <summary>All edges including invalidated ones — for history views.</summary>
     public List<WorldEdge> AllEdgesRaw() => _graph.Edges.ToList();
@@ -892,21 +926,30 @@ public class WorldGraphService : IWorldGraphService
 
     public void Rebuild()
     {
-        _graph.Clear();
-        _nodes.Clear();
-        typeIndex.Clear();
-        territoryIndex.Clear();
+        lock (rebuildLock)
+        {
+          rebuilding = true;
+          try
+          {
+            _graph.Clear();
+            _nodes.Clear();
+            typeIndex.Clear();
+            territoryIndex.Clear();
 
-        BuildFromDatabase();
-        InferCorpRelationships();
+            BuildFromDatabase();
+            InferCorpRelationships();
 
-        // Optimize: deduplicate edges and rebuild indexes
-        var deduped = DeduplicateEdges();
-        RebuildIndexes();
+            // Optimize: deduplicate edges and rebuild indexes
+            var deduped = DeduplicateEdges();
+            RebuildIndexes();
 
-        System.Diagnostics.Debug.WriteLine($"[WorldGraph] Rebuild complete: {_nodes.Count} nodes, {_graph.EdgeCount} edges, {deduped} duplicates removed, {typeIndex.Count} type indexes, {territoryIndex.Count} territory indexes");
+            System.Diagnostics.Debug.WriteLine($"[WorldGraph] Rebuild complete: {_nodes.Count} nodes, {_graph.EdgeCount} edges, {deduped} duplicates removed, {typeIndex.Count} type indexes, {territoryIndex.Count} territory indexes");
 
-        Save();
+            builtEpoch = UniverseScope.Epoch;
+            Save();
+          }
+          finally { rebuilding = false; }
+        }
     }
 
     // ── Graph Builders (from canon.json) ────────────────────

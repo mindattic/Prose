@@ -22,6 +22,7 @@ public class EfRepository<T> : IExportableRepository, IJsonImportable where T : 
     protected readonly JsonSerializerOptions jsonOpts;
 
     private List<T>? cache;
+    private int cacheEpoch = -1;
     private readonly object cacheLock = new();
 
     /// <summary>
@@ -102,7 +103,9 @@ public class EfRepository<T> : IExportableRepository, IJsonImportable where T : 
     {
         lock (cacheLock)
         {
-            if (cache != null) return cache;
+            // Invalidate the cache when the current universe changes (SwitchUniverse), so a list
+            // built under GLMZ is never served while Fantasy is active (RFC 0006).
+            if (cache != null && cacheEpoch == UniverseScope.Epoch) return cache;
         }
 
         using var db = dbFactory.CreateDbContext();
@@ -127,7 +130,7 @@ public class EfRepository<T> : IExportableRepository, IJsonImportable where T : 
             }
         }
 
-        lock (cacheLock) cache = list;
+        lock (cacheLock) { cache = list; cacheEpoch = UniverseScope.Epoch; }
         return list;
     }
 

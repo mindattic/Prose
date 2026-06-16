@@ -16,6 +16,7 @@ public class BeatGeneratorService
     private readonly LlmVotingService? voting;
     private readonly ExpertPersonaService? personas;
     private readonly ActionConfigService? actionConfig;
+    private readonly IUniverseContext? universe;
 
     public BeatGeneratorService(
         ILlmService llm,
@@ -25,7 +26,8 @@ public class BeatGeneratorService
         IDbContextFactory<StreetSamuraiDbContext> dbFactory,
         LlmVotingService? voting = null,
         ExpertPersonaService? personas = null,
-        ActionConfigService? actionConfig = null)
+        ActionConfigService? actionConfig = null,
+        IUniverseContext? universe = null)
     {
         this.llm = llm;
         this.graph = graph;
@@ -35,6 +37,22 @@ public class BeatGeneratorService
         this.voting = voting;
         this.personas = personas;
         this.actionConfig = actionConfig;
+        this.universe = universe;
+    }
+
+    /// <summary>
+    /// The opening world line for the generator's system prompt. For GLMZ (the default universe,
+    /// or when no universe context is wired) this is byte-identical to the original hardcoded
+    /// string — zero voice drift. For any other universe it uses that universe's seeded UniversePrimer
+    /// so prose is grounded in the right world. This is the seam other GLMZ-hardcoded prompt sites
+    /// should adopt (SS-A2 / SS-LAW-15).
+    /// </summary>
+    private string UniverseLine()
+    {
+        var u = universe?.CurrentUniverse;
+        if (u == null || u.Id == StreetSamurai.Core.Data.Entities.Universe.GlmzId || string.IsNullOrWhiteSpace(u.UniversePrimer))
+            return "You are writing a beat in a literary cyberpunk scene set in GLMZ (Meridian 88).";
+        return $"You are writing a beat set in this universe — {u.Name}:\n{u.UniversePrimer}";
     }
 
     public async Task<string> GenerateBeatAsync(
@@ -54,7 +72,7 @@ public class BeatGeneratorService
         var anchorBlock = await BuildBeatAnchorsAsync(context, ct);
 
         var system = $"""
-            You are writing a beat in a literary cyberpunk scene set in GLMZ (Meridian 88).
+            {UniverseLine()}
 
             INNER MONOLOGUE: italicized stand-alone sentences, on their own paragraph, NEVER labeled.
             Source from each POV character's documented psychology — coping_mechanisms, core_fears,
@@ -224,11 +242,19 @@ public class BeatGeneratorService
                 "a character wants and what they think they want. You make sure inner monologue is " +
                 "specific, not abstract — anchored to the character's documented psychology."),
             ("Cyberpunk Genre Specialist",
+                UniverseScope.Current?.UniverseGroundingOr(
                 "You're an expert in cyberpunk texture — augments, neural interfaces, BCI cognition, " +
+                "the felt sense of running parallel processes in the head while a hand stays still. " +
+                "Body horror, grace, and tech-as-subtext are your beats.")
+                ?? "You're an expert in cyberpunk texture — augments, neural interfaces, BCI cognition, " +
                 "the felt sense of running parallel processes in the head while a hand stays still. " +
                 "Body horror, grace, and tech-as-subtext are your beats."),
             ("World-Grounding (GLMZ)",
+                UniverseScope.Current?.UniverseGroundingOr(
                 "You're an expert in this story's world — GLMZ / Meridian 88, corponation politics, " +
+                "the Pulse, factions, the Tier system, the Sponsorship Program. You catch when " +
+                "prose drifts into generic cyberpunk and pull it back into THIS world's specifics.")
+                ?? "You're an expert in this story's world — GLMZ / Meridian 88, corponation politics, " +
                 "the Pulse, factions, the Tier system, the Sponsorship Program. You catch when " +
                 "prose drifts into generic cyberpunk and pull it back into THIS world's specifics."),
             ("Literary Craft",

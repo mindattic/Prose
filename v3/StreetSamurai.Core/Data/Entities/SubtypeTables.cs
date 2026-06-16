@@ -33,6 +33,11 @@ namespace StreetSamurai.Core.Data.Entities;
 public class Book
 {
     public Guid Id { get; set; }
+
+    /// <summary>The universe this book belongs to (1:M). Backfilled to GLMZ for pre-existing
+    /// rows; stamped on insert from the current universe (SS-LAW-15).</summary>
+    public Guid UniverseId { get; set; }
+
     public string Title       { get; set; } = "";
     public string Slug        { get; set; } = "";
     public Guid? SeriesId     { get; set; }

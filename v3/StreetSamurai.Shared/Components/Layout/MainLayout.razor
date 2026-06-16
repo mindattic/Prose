@@ -6,15 +6,14 @@
 @inject SearchTriggerService SearchTrigger
 @inject ToastNotifier Toast
 @inject MediaService Media
+@inject StreetSamurai.Core.Services.IUniverseContext Universe
 @implements IDisposable
 
 <style>
     html, body { font-family: '@SettingsSvc.FontFamily', 'Helvetica Neue', Helvetica, Arial, sans-serif; }
 </style>
 
-@* <div class="cyberspace-sl-fine"        aria-hidden="true"></div> *@
-@* <div class="cyberspace-sl-coarse"       aria-hidden="true"></div> *@
-@* <div class="console-bg-host"     aria-hidden="true"></div> *@
+@* CyberSpace background removed 2026-06-15 — plain dark mode (universe-neutral shell). *@
 
 @* portrait disabled
 @if (bgImage != null)
@@ -32,7 +31,9 @@
 <UserTimeout />
 
 <div class="app-shell @(!Access.IsContributor ? "readonly-mode" : "") @(SettingsSvc.RepoListOnRight ? "list-right" : "")"
+     data-theme="@currentTheme"
      @onkeydown="OnGlobalKeyDown" tabindex="-1">
+    <AppBanner OnThemeChanged="OnThemeChanged" />
     <NavMenu />
     <main class="topnav-main">
         <div class="container-fluid">
@@ -56,8 +57,15 @@
 
     private bool navPending = false;
     private string? bgImage;
+    private string currentTheme = "dark"; // default; overridden by universe on init
 
-    protected override void OnInitialized() => bgImage = Media.GetRandomImage();
+    protected override void OnInitialized()
+    {
+        bgImage = Media.GetRandomImage();
+        currentTheme = AppBanner.ThemeFor(Universe);
+    }
+
+    private void OnThemeChanged(string theme) => currentTheme = theme;
 
     protected override async Task OnAfterRenderAsync(bool firstRender)
     {
@@ -114,10 +122,7 @@
                        || Nav.Uri.Contains("/stories/write/", StringComparison.OrdinalIgnoreCase);
         if (!isWritePage)
         {
-            if (Random.Shared.NextDouble() < 0.10)
-            {
-                try { await JS.InvokeVoidAsync("__tvStaticShow"); } catch { }
-            }
+            // TV-static navigation flourish removed 2026-06-15 (CyberSpace theme retired).
             try { await JS.InvokeVoidAsync("__loaderShow", 0); } catch { }
         }
     }

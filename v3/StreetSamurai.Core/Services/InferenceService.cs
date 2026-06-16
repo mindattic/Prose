@@ -23,6 +23,7 @@ public class InferenceService
     // Replaced wholesale (never mutated in place) so readers can capture a stable snapshot.
     private Dictionary<(string key, string value), List<string>> propertyIndex = new();
     private volatile bool indexBuilt;
+    private int builtEpoch = -1;
 
     // Cache of computed inferences per node.
     private readonly ConcurrentDictionary<string, List<InferredEdge>> cache = new();
@@ -76,13 +77,14 @@ public class InferenceService
         {
             propertyIndex = index;
             indexBuilt = true;
+            builtEpoch = UniverseScope.Epoch;
             cache.Clear();
         }
     }
 
     private void EnsureIndexBuilt()
     {
-        if (!indexBuilt) RebuildPropertyIndex();
+        if (!indexBuilt || builtEpoch != UniverseScope.Epoch) RebuildPropertyIndex();
     }
 
     /// <summary>

@@ -230,6 +230,20 @@ html, body {
 .topnav-link:hover { background: #21262d; color: #e6edf3 !important; }
 .topnav-link:focus, .topnav-link:active, .topnav-link.show { outline: none !important; box-shadow: none !important; border-color: transparent !important; background: #21262d; }
 .topnav-link.active { color: #dc3545 !important; background: none; }
+/* SwitchUniverse dropdown (SS-LAW-15) — compact, dark, fits the topnav. */
+.topnav-universe {
+    width: auto;
+    max-width: 11rem;
+    height: 30px;
+    padding: 2px 1.6rem 2px 8px;
+    font-size: 0.8rem;
+    background-color: #161b22;
+    color: #e6edf3;
+    border: 1px solid #30363d;
+    border-radius: 6px;
+}
+.topnav-universe:focus { border-color: #58a6ff; box-shadow: none; outline: none; background-color: #161b22; color: #e6edf3; }
+.topnav-universe option { background-color: #161b22; color: #e6edf3; }
 /* ── Toasts (bottom-center, level-styled) ─────────────────────────────────
    Counterpart of wwwroot/js/toasts.js. Container is fixed at the bottom
    center; toasts stack upward as they accumulate. Errors get a red accent

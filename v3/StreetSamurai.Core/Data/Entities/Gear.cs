@@ -116,6 +116,11 @@ public class Apparel
     public string Manufacturer { get; set; } = "";
     public string Category    { get; set; } = "";
     public string Tier        { get; set; } = "";
+    public string Functionality  { get; set; } = "";
+    public string WhatItSays     { get; set; } = "";
+    public string PriceRange     { get; set; } = "";
+    public bool   AugCompatible  { get; set; }
+    public bool   GeneCompatible { get; set; }
     public double Rating { get; set; }
     public int    VoteCount { get; set; }
     public string Description { get; set; } = "";
@@ -123,9 +128,13 @@ public class Apparel
     public string Dalle3Prompt { get; set; } = "";
     public Entity? Entity { get; set; }
     public ICollection<ApparelAlias>      Aliases    { get; set; } = new List<ApparelAlias>();
+    public ICollection<ApparelMaterial>   Materials  { get; set; } = new List<ApparelMaterial>();
+    public ICollection<ApparelWornBy>     WornBy     { get; set; } = new List<ApparelWornBy>();
     public ICollection<ApparelStoryHook>  StoryHooks { get; set; } = new List<ApparelStoryHook>();
 }
 public class ApparelAlias { public long Id { get; set; } public Guid ApparelId { get; set; } public int Position { get; set; } public string Value { get; set; } = ""; public Apparel? Apparel { get; set; } }
+public class ApparelMaterial { public long Id { get; set; } public Guid ApparelId { get; set; } public int Position { get; set; } public string Value { get; set; } = ""; public Apparel? Apparel { get; set; } }
+public class ApparelWornBy { public long Id { get; set; } public Guid ApparelId { get; set; } public int Position { get; set; } public string Alias { get; set; } = ""; public Guid? CharacterEntityId { get; set; } public Apparel? Apparel { get; set; } public Entity? Character { get; set; } }
 public class ApparelStoryHook { public long Id { get; set; } public Guid ApparelId { get; set; } public int Position { get; set; } public string Hook { get; set; } = ""; public Apparel? Apparel { get; set; } }
 
 public class Ammunition
@@ -192,19 +201,31 @@ public class Genemod
     public Guid Id { get; set; }
     /// <summary>Canonical name. Mirrors Entity.Name.</summary>
     public string Name { get; set; } = "";
+    public string BrandName { get; set; } = "";
+    public string ProductName { get; set; } = "";
     public string Manufacturer { get; set; } = "";
     public string Category    { get; set; } = "";
     public string Tier        { get; set; } = "";
+    public string TargetSystem { get; set; } = "";
+    public string SourceOrganism { get; set; } = "";
+    public string Legality { get; set; } = "";
+    public string Procedure { get; set; } = "";
+    public string ExpressionTime { get; set; } = "";
+    public string Reversibility { get; set; } = "";
+    public string SocialPerception { get; set; } = "";
+    public string TierAvailability { get; set; } = "";
     public double Rating { get; set; }
     public int    VoteCount { get; set; }
     public string Description { get; set; } = "";
     public string MidjourneyPrompt { get; set; } = "";
     public string Dalle3Prompt { get; set; } = "";
     public Entity? Entity { get; set; }
-    public ICollection<GenemodAlias>     Aliases    { get; set; } = new List<GenemodAlias>();
-    public ICollection<GenemodStoryHook> StoryHooks { get; set; } = new List<GenemodStoryHook>();
+    public ICollection<GenemodAlias>      Aliases     { get; set; } = new List<GenemodAlias>();
+    public ICollection<GenemodSideEffect> SideEffects { get; set; } = new List<GenemodSideEffect>();
+    public ICollection<GenemodStoryHook>  StoryHooks  { get; set; } = new List<GenemodStoryHook>();
 }
 public class GenemodAlias { public long Id { get; set; } public Guid GenemodId { get; set; } public int Position { get; set; } public string Value { get; set; } = ""; public Genemod? Genemod { get; set; } }
+public class GenemodSideEffect { public long Id { get; set; } public Guid GenemodId { get; set; } public int Position { get; set; } public string Effect { get; set; } = ""; public Genemod? Genemod { get; set; } }
 public class GenemodStoryHook { public long Id { get; set; } public Guid GenemodId { get; set; } public int Position { get; set; } public string Hook { get; set; } = ""; public Genemod? Genemod { get; set; } }
 
 public class Material
@@ -212,18 +233,28 @@ public class Material
     public Guid Id { get; set; }
     /// <summary>Canonical name. Mirrors Entity.Name.</summary>
     public string Name { get; set; } = "";
+    public string BrandName { get; set; } = "";
+    public string ProductName { get; set; } = "";
     public string Category    { get; set; } = "";
     public string Tier        { get; set; } = "";
+    public string TierAvailability { get; set; } = "";
+    public string Cost { get; set; } = "";
     public double Rating { get; set; }
     public int    VoteCount { get; set; }
     public string Description { get; set; } = "";
     public string MidjourneyPrompt { get; set; } = "";
     public string Dalle3Prompt { get; set; } = "";
     public Entity? Entity { get; set; }
-    public ICollection<MaterialAlias>     Aliases    { get; set; } = new List<MaterialAlias>();
-    public ICollection<MaterialStoryHook> StoryHooks { get; set; } = new List<MaterialStoryHook>();
+    public ICollection<MaterialAlias>       Aliases      { get; set; } = new List<MaterialAlias>();
+    public ICollection<MaterialProperty>    Properties   { get; set; } = new List<MaterialProperty>();
+    public ICollection<MaterialDeveloper>   Developers   { get; set; } = new List<MaterialDeveloper>();
+    public ICollection<MaterialApplication> Applications { get; set; } = new List<MaterialApplication>();
+    public ICollection<MaterialStoryHook>   StoryHooks   { get; set; } = new List<MaterialStoryHook>();
 }
 public class MaterialAlias { public long Id { get; set; } public Guid MaterialId { get; set; } public int Position { get; set; } public string Value { get; set; } = ""; public Material? Material { get; set; } }
+public class MaterialProperty { public long Id { get; set; } public Guid MaterialId { get; set; } public int Position { get; set; } public string Value { get; set; } = ""; public Material? Material { get; set; } }
+public class MaterialDeveloper { public long Id { get; set; } public Guid MaterialId { get; set; } public int Position { get; set; } public string Value { get; set; } = ""; public Material? Material { get; set; } }
+public class MaterialApplication { public long Id { get; set; } public Guid MaterialId { get; set; } public int Position { get; set; } public string Value { get; set; } = ""; public Material? Material { get; set; } }
 public class MaterialStoryHook { public long Id { get; set; } public Guid MaterialId { get; set; } public int Position { get; set; } public string Hook { get; set; } = ""; public Material? Material { get; set; } }
 
 public class Transportation
@@ -234,6 +265,15 @@ public class Transportation
     public string Manufacturer { get; set; } = "";
     public string Category    { get; set; } = "";
     public string Tier        { get; set; } = "";
+    public string Propulsion { get; set; } = "";
+    public string Speed { get; set; } = "";
+    public string Capacity { get; set; } = "";
+    public string Range { get; set; } = "";
+    public string TierAvailability { get; set; } = "";
+    public string Cost { get; set; } = "";
+    public string Autonomy { get; set; } = "";
+    public string Armament { get; set; } = "";
+    public string CommonUsage { get; set; } = "";
     public double Rating { get; set; }
     public int    VoteCount { get; set; }
     public string Description { get; set; } = "";
@@ -254,6 +294,14 @@ public class ConsumerGood
     public string Manufacturer { get; set; } = "";
     public string Category    { get; set; } = "";
     public string Tier        { get; set; } = "";
+    public string BrandName   { get; set; } = "";
+    public string ProductName { get; set; } = "";
+    public string Subcategory { get; set; } = "";
+    public string FlavorProfile { get; set; } = "";
+    public string Price       { get; set; } = "";
+    public int    PopularityRank { get; set; }
+    public string Slogan      { get; set; } = "";
+    public string CulturalContext { get; set; } = "";
     public double Rating { get; set; }
     public int    VoteCount { get; set; }
     public string Description { get; set; } = "";

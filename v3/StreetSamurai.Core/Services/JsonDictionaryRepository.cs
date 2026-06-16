@@ -15,6 +15,7 @@ public class JsonSingletonRepository<T> where T : class, new()
     private readonly string key;
     private readonly JsonSerializerOptions jsonOptions;
     private T? cache;
+    private int cacheEpoch = -1;
 
     public JsonSingletonRepository(Microsoft.EntityFrameworkCore.IDbContextFactory<Data.StreetSamuraiDbContext> dbFactory, string key)
     {
@@ -30,7 +31,10 @@ public class JsonSingletonRepository<T> where T : class, new()
 
     public T Get()
     {
-        if (cache != null) return cache;
+        // Cache is per-universe: a SwitchUniverse bumps the epoch so the voice/lore document is
+        // re-read for the new universe instead of serving the previous one's (RFC 0006).
+        if (cache != null && cacheEpoch == UniverseScope.Epoch) return cache;
+        cacheEpoch = UniverseScope.Epoch;
         try
         {
             using var db = dbFactory.CreateDbContext();
@@ -49,6 +53,7 @@ public class JsonSingletonRepository<T> where T : class, new()
     public void Save(T item)
     {
         cache = item;
+        cacheEpoch = UniverseScope.Epoch;
         var json = JsonSerializer.Serialize(item, jsonOptions);
         try
         {

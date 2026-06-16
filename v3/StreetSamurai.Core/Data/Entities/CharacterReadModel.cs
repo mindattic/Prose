@@ -26,6 +26,10 @@ public class CharacterReadModel
     /// <summary>PK; equals <see cref="Character.Id"/> / <see cref="Entity.Id"/>.</summary>
     public Guid CharacterId { get; set; }
 
+    /// <summary>The universe this character belongs to (denormalized from the entity). Backfilled to
+    /// GLMZ; refreshed from the entity on read-model rebuild (RFC 0006).</summary>
+    public Guid UniverseId { get; set; }
+
     /// <summary>
     /// Serialized <c>CharacterData</c> with the volatile <c>Tags</c> and
     /// <c>Location</c> fields cleared (overlaid live on read). NVARCHAR(MAX).

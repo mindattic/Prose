@@ -6,9 +6,11 @@
 ## 1. The one sentence {#SS-§1}
 
 StreetSamurai is a canon-grounded, voice-disciplined story-generation engine that takes a
-one-line seed to a published, reader-reviewed, canon-consistent audiobook + manuscript set in the
-GLMZ (Greater Lake Michigan Zone, 2225) cyberpunk universe — with the human approving, not
-authoring, canon and voice changes.
+one-line seed to a published, reader-reviewed, canon-consistent audiobook + manuscript **in any
+registered Universe** — with the human approving, not authoring, canon and voice changes. The
+flagship Universe is **GLMZ** (Greater Lake Michigan Zone, 2225, cyberpunk; the *Bushido Coda*); a
+second, **Fantasy/Steampunk**, is being stood up alongside it on the same engine. Every canon and
+story row belongs to exactly one Universe ([SS-LAW-15](#SS-§5)).
 
 ## 3. What it is NOT {#SS-§3}
 
@@ -20,11 +22,14 @@ authoring, canon and voice changes.
 - **NOT substring-grounded.** Substring search is retired wherever it touched generation; semantic
   embeddings ground prompts in the real corpus.
 - **NOT a MAUI / desktop app.** Web-only, Blazor Server. No MAUI host.
-- **NOT cyberpunk cliché.** Currency is Φ (QUANTA = quantum compute-time), never the Greek letter
-  phi. Iowan Behemoths are autonomous machines, *not* alive. Heritage is mixed (Ubiquitous
+- **NOT single-universe.** GLMZ is one **Universe** among several, not *the* universe. The engine
+  is the product; a Universe is content. The two are decoupled: the rules below marked *(GLMZ)*
+  are that Universe's content, not engine truths.
+- **NOT cyberpunk cliché** *(GLMZ)*. Currency is Φ (QUANTA = quantum compute-time), never the Greek
+  letter phi. Iowan Behemoths are autonomous machines, *not* alive. Heritage is mixed (Ubiquitous
   Diaspora). Cliché is rejected on contact.
-- **NOT energy-weapon fantasy.** *Silence* is just a sword; *Chorus* is just a five-shot revolver
-  shotgun. See the narrative laws in [§5](#SS-§5).
+- **NOT energy-weapon fantasy** *(GLMZ)*. *Silence* is just a sword; *Chorus* is just a five-shot
+  revolver shotgun. See the GLMZ narrative laws in [§5](#SS-§5).
 
 ## 5. The Laws {#SS-§5}
 
@@ -47,9 +52,10 @@ authoring, canon and voice changes.
    canonical entity tables; story-state (location, ammo, life status) lives in the
    `EntityStateEvents` ledger. No denorm "convenience copies."
 4. **One home per kind of being (the sentience test).** {#SS-LAW-4} All sentient life — anything
-   with feelings/agency — lives in the **Characters** repo, classified by `Species` (exactly
-   `human`, `ai`, `elf`, `synthetic`, `unknown`). Non-sentient machines live in the **Automaton**
-   repo. A being is never in both.
+   with feelings/agency — lives in the **Characters** repo, classified by `Species`. Non-sentient
+   machines live in the **Automaton** repo. A being is never in both. *The sentience test is an
+   engine invariant; the `Species` value set is **per-Universe** — GLMZ's set is exactly `human`,
+   `ai`, `elf`, `synthetic`, `unknown`, and another universe defines its own.*
 5. **Characters deepen over time.** {#SS-LAW-5} A character's metadata accretes, never resets:
    continuity claims upsert true facts; voice-harvest folds winning prose moves into
    `SpeechPatterns`/`NarrationVoice` (propose-then-approve); state events record change without
@@ -60,11 +66,18 @@ authoring, canon and voice changes.
    `LiteraryRulesData.BeatDoctrine` and emitted by `GetLiteraryRulesPrompt()`.
 7. **No underscore-prefixed fields.** {#SS-LAW-7} Private fields are `camelCase` without the
    leading underscore.
-8. **Φ is QUANTA, never phi.** {#SS-LAW-8} The symbol Φ is the QUANTA currency symbol (quantum
-   compute-time), *never* the Greek letter phi.
+8. **Φ is QUANTA, never phi.** {#SS-LAW-8} *(GLMZ.)* The symbol Φ is the QUANTA currency symbol
+   (quantum compute-time), *never* the Greek letter phi. (Listed among the engine invariants for
+   historical id stability, but it is **GLMZ-universe content**, not an engine truth.)
+15. **Every row belongs to exactly one Universe.** {#SS-LAW-15} Every canon/story root
+   (`Entities`, `Strands`, `Books`) carries a non-null `UniverseId`; all generation and retrieval
+   is universe-scoped. An entity that must appear in two universes is **duplicated** (one row per
+   Universe) — never a shared row and never an M:M bridge. (Id 15 is the next free number; the
+   narrative laws 9–14 below were allocated earlier.)
 
-**Narrative continuity laws (Bushido Coda — validate any rewrite against these; from
-`v3/canon_writes/story_state.md`):**
+**GLMZ / Bushido Coda narrative laws (Universe: GLMZ — validate any GLMZ rewrite against these;
+from `v3/canon_writes/story_state.md`). Other universes (e.g. Fantasy/Steampunk) get their own
+narrative-law block here when stood up:**
 
 9. **Canon is author-only.** {#SS-LAW-9} `Strand.IsCanon` is set only manually by the author and
    means "strong enough to draw conclusions from." Only canon strands are authoritative for
@@ -87,24 +100,30 @@ authoring, canon and voice changes.
 
 ## 9. Glossary {#SS-§9}
 
-- **GLMZ** — Greater Lake Michigan Zone (a.k.a. Meridian 88, *The Glooms*); a 500-km vertical
-  megacity on the western shore of Lake Michigan, year 2225.
-- **Φ / QUANTA** — the currency: one Φ = one second of certified error-corrected quantum coherence.
-  Never the Greek letter phi ([SS-LAW-8](#SS-§5)).
+- **Universe** — the top-level tenant: one self-contained fictional world (e.g. GLMZ,
+  Fantasy/Steampunk). Every canon/story row belongs to exactly one ([SS-LAW-15](#SS-§5)). The
+  **current Universe** is selected *per CLI process and per UI session* (not a single shared
+  global), so two CLIs — or two browser tabs — can target different universes simultaneously
+  ("SwitchUniverse"). Engine terms below are universe-neutral; terms tagged *(GLMZ)* are GLMZ
+  content.
+- **GLMZ** *(GLMZ)* — Greater Lake Michigan Zone (a.k.a. Meridian 88, *The Glooms*); a 500-km
+  vertical megacity on the western shore of Lake Michigan, year 2225. Universe #1.
+- **Φ / QUANTA** *(GLMZ)* — the currency: one Φ = one second of certified error-corrected quantum
+  coherence. Never the Greek letter phi ([SS-LAW-8](#SS-§5)).
 - **Beat** — a discrete unit of story function (not a paragraph); the atom of prose + audio.
 - **Strand** — an ordered set of beats; the unit generated, validated, reviewed, narrated, published.
 - **Collection / Series** — ordered sets of strands / of collections, on the `ParentStrandId` tree.
 - **Canon** — author-only `Strand.IsCanon` trust gate ([SS-LAW-9](#SS-§5)).
-- **E.L.F.** — Emergent/Electronic Life Form; a sentient `Species` living in Characters.
-- **Automaton** — non-sentient machine repo (Iowan Behemoths, robots, drones) — *not alive*.
+- **E.L.F.** *(GLMZ)* — Emergent/Electronic Life Form; a sentient `Species` living in Characters.
+- **Automaton** *(GLMZ)* — non-sentient machine repo (Iowan Behemoths, robots, drones) — *not alive*.
 - **Facet** — a retired psychology-weighting system, **100% eradicated** ([§6](#SS-§6)).
 - **Voice harvest** — distilling a ≥80%-scoring strand's winning edits into the codified
   `literary_rules`/`tone_bible`/character voice fields (propose-then-approve).
-- **Silence** — Kyle's katana; *just a sword* ([SS-LAW-10](#SS-§5)).
-- **Chorus** — Kyle's five-shot revolver shotgun ([SS-LAW-11](#SS-§5)).
-- **Bushido Coda** — the flagship narrative work; Book One is an 8-chapter spine.
-- **The Pulse** — Mach-6 magnetic vacuum transit network. **The Network** — the ambient
-  proprioceptive information field BCI-augmented people sense (see `network_doc.md`).
+- **Silence** *(GLMZ)* — Kyle's katana; *just a sword* ([SS-LAW-10](#SS-§5)).
+- **Chorus** *(GLMZ)* — Kyle's five-shot revolver shotgun ([SS-LAW-11](#SS-§5)).
+- **Bushido Coda** *(GLMZ)* — GLMZ's flagship narrative work; Book One is an 8-chapter spine.
+- **The Pulse** *(GLMZ)* — Mach-6 magnetic vacuum transit network. **The Network** *(GLMZ)* — the
+  ambient proprioceptive information field BCI-augmented people sense (see `network_doc.md`).
 
 ---
 
@@ -114,35 +133,29 @@ source of truth for "what's left and in what order." Amendments are append-only 
 [AMENDMENTS.md](AMENDMENTS.md) and win over this file.*
 
 ## Status index (from USER_STORIES.md)
-- done: 31  partial: 7  planned: 11  cut: 1
+- done: 40  partial: 8  planned: 11  cut: 1
 
 ## Latest amendment
-## SS-A1 — Adopt the Codex documentation standard (supersedes —)
+## SS-A5 — Fully relational canon: `Records.Json` retired per type (supersedes the blob-as-canonical framing)
 
-**What changed.** Installed the MindAttic Codex standard. `ARCHITECTURE.md` (the prior software
-source of truth) was migrated into [docs/BIBLE.md](BIBLE.md) (L0). Its goal tables became
-[docs/USER_STORIES.md](USER_STORIES.md) (L2). The continuity-invariants list from
-`v3/canon_writes/story_state.md` was promoted into BIBLE §5 as narrative laws
-[SS-LAW-9](BIBLE.md#SS-§5)…[SS-LAW-14](BIBLE.md#SS-§5); the engine invariants from `ARCHITECTURE.md`
-§2a became [SS-LAW-1](BIBLE.md#SS-§5)…[SS-LAW-6](BIBLE.md#SS-§5); CLAUDE.md code/world rules became
-[SS-LAW-7](BIBLE.md#SS-§5)/[SS-LAW-8](BIBLE.md#SS-§5).
+**What changed.** Author directive: *"any JSON fields should be broken out to tables and bridge
+tables for maximum relational data management — every repository must be relational, not use JSON
+blobs."* Canon entities move off the `Records.Json` blob onto typed tables + bridges (the way
+**Character** already was). See [RFC 0007](rfc/0007-fully-relational-canon.md) for the per-type
+recipe + parity gate. This supersedes BIBLE §4.2's framing of `Records.Json` as *the* canonical
+store — the relational tables become canonical; the blob is a per-type rollback artifact retired
+once parity passes.
 
-**Why.** One source of truth, stable IDs, a doctor that catches drift, and a SessionStart digest so
-every Claude session loads the canon. Replaces ad-hoc, scattered docs.
+**Why.** The point of a relational DB is queryable, joinable, integrity-checked relationships —
+not deserializing blobs to read them. (Note: cross-entity *relationships* already live relationally
+in `Edges` + the WorldGraph, and *semantic* similarity in the `VECTOR` embedding tables; this
+amendment relationalizes the remaining *attributes* + embedded lists, and projects blob relationship-
+lists into real `Edges`/bridges — the edge-completeness prong that actually prevents missing-link
+bugs like the cat-ear genemod.)
 
-**Migration / preservation (no content deleted).**
-- `ARCHITECTURE.md` is retained as a 1-line pointer to `docs/BIBLE.md` (README links it; tooling may
-  still read the path).
-- `v3/canon_writes/story_state.md` remains the **session/state scratch notes**; its *invariants*
-  now also live (authoritatively) in BIBLE §5.
-- `engine_data/*.json` is registered as the **L5 data layer** via schemas under `docs/data/_schema/`
-  and the master entity-identity table [docs/data/ENTITY_IDENTITY.md](data/ENTITY_IDENTITY.md). Its
-  canon *values were not rewritten*; per [SS-LAW-1](BIBLE.md#SS-§5) it is the seed/export mirror,
-  not the live read path.
-- Prose draft sprawl recorded, not deleted: the canon prose register is **v8**
-  (`engine/bushido_coda_v3/01_bearing_teeth_v8.md` + `00_style_guide.md`). Earlier drafts
-  (`engine/bushido_coda_v2/*_v2..v6`, `*_v7`) are superseded historical drafts kept on disk. Prose
-  HTML bodies are treated as `generatedFrom` the chapter beats.
-- The project rule "no Markdown files except README" (CLAUDE.md) is amended: the Codex `docs/*.md`
-  set is the documented exception (it is documentation, not app data). Data files remain JSON.
+**Progress.** ✅ **Faction** converted end-to-end (FactionMapper + `FactionRelationshipTags` bridge +
+faction tags → `EntityTags` + backfill CLI + 13 parity tests; live 163/0 parity; blob retired;
+backup `backups/StreetSamurai_preFactionBlobDrop_20260615.bak`). Character was already relational.
+⬜ ~24 types remain, each following the RFC 0007 recipe; the blob stays source-of-truth per type
+until that type flips, so the engine is always consistent.
 

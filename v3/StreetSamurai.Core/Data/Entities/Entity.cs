@@ -13,6 +13,11 @@ public class Entity
     /// <summary>guid7 — same id used across the entire codebase.</summary>
     public Guid Id { get; set; } = Guid.CreateVersion7();
 
+    /// <summary>The universe this entity belongs to (1:M). Stamped on insert by
+    /// <see cref="StreetSamuraiDbContext"/> from the current universe; backfilled to GLMZ for all
+    /// pre-existing rows. A crossover entity is duplicated, one row per universe (SS-LAW-15).</summary>
+    public Guid UniverseId { get; set; }
+
     /// <summary>character | place | faction | corponation | weapon | …</summary>
     public string EntityType { get; set; } = "";
 
