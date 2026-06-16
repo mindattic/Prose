@@ -29,6 +29,17 @@ public class JsonSingletonRepository<T> where T : class, new()
         };
     }
 
+    /// <summary>The universe this key's row belongs to: SHARED for the operational allow-list,
+    /// else the current universe (GLMZ fallback when no context is wired). Ensures a per-universe
+    /// voice/lore document (tone_bible, literary_rules, …) NEVER resolves to another universe's
+    /// row — the seam that stops GLMZ's Kyle voice bleeding into Fantasy (RFC 0006).</summary>
+    private static Guid TargetUniverse()
+    {
+        // 'key' is per-instance; SharedConfigKeys is the operational allow-list.
+        var scoped = UniverseScope.EffectiveId;
+        return scoped != Guid.Empty ? scoped : Data.Entities.Universe.GlmzId;
+    }
+
     public T Get()
     {
         // Cache is per-universe: a SwitchUniverse bumps the epoch so the voice/lore document is
@@ -38,7 +49,10 @@ public class JsonSingletonRepository<T> where T : class, new()
         try
         {
             using var db = dbFactory.CreateDbContext();
-            var row = db.Settings.AsNoTracking().FirstOrDefault(s => s.Key == key);
+            var target = UniverseScope.SharedConfigKeys.Contains(key) ? Data.Entities.Universe.SharedId : TargetUniverse();
+            var rows = db.Settings.AsNoTracking().Where(s => s.Key == key).ToList();
+            var row = rows.FirstOrDefault(s => s.UniverseId == target)
+                   ?? rows.FirstOrDefault(s => s.UniverseId == Data.Entities.Universe.SharedId);
             if (row == null || string.IsNullOrEmpty(row.Json)) return cache = new T();
             cache = JsonSerializer.Deserialize<T>(row.Json, jsonOptions) ?? new T();
         }
@@ -58,8 +72,9 @@ public class JsonSingletonRepository<T> where T : class, new()
         try
         {
             using var db = dbFactory.CreateDbContext();
-            var row = db.Settings.FirstOrDefault(s => s.Key == key);
-            if (row == null) db.Settings.Add(new Data.Entities.Setting { Key = key, Json = json, UpdatedAt = DateTime.UtcNow });
+            var target = UniverseScope.SharedConfigKeys.Contains(key) ? Data.Entities.Universe.SharedId : TargetUniverse();
+            var row = db.Settings.FirstOrDefault(s => s.Key == key && s.UniverseId == target);
+            if (row == null) db.Settings.Add(new Data.Entities.Setting { Key = key, Json = json, UniverseId = target, UpdatedAt = DateTime.UtcNow });
             else { row.Json = json; row.UpdatedAt = DateTime.UtcNow; }
             db.SaveChanges();
         }

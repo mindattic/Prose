@@ -3,6 +3,9 @@ using Microsoft.JSInterop;
 
 namespace StreetSamurai.Shared.Services;
 
+/// <summary>Payload for a toast raised by <see cref="ToastNotifier"/>.</summary>
+public sealed record ToastMessage(string Level, string Code, string Message);
+
 /// <summary>
 /// App-level notifications. Logs to the browser console (with the [SS CODE]
 /// prefix) AND surfaces a visible toast at the bottom of the viewport so
@@ -11,11 +14,19 @@ namespace StreetSamurai.Shared.Services;
 /// Errors and warnings are server-side logged through <see cref="ILogger"/>
 /// so they end up in Serilog as well as the browser; info and success only
 /// log to the browser to avoid log-spamming on routine UX feedback.
+///
+/// Subscribers (e.g. the status bar component) can listen to <see cref="ToastRaised"/>.
 /// </summary>
 public class ToastNotifier
 {
     private readonly IJSRuntime js;
     private readonly ILogger<ToastNotifier> log;
+
+    /// <summary>
+    /// Fired on every Show call so Blazor components (e.g. AppStatusBar) can
+    /// react without going through the JS layer.
+    /// </summary>
+    public event Action<ToastMessage>? ToastRaised;
 
     public ToastNotifier(IJSRuntime js, ILogger<ToastNotifier> log)
     {
@@ -38,6 +49,7 @@ public class ToastNotifier
 
     private void Show(string level, string code, string message)
     {
+        ToastRaised?.Invoke(new ToastMessage(level, code, message));
         _ = ShowAsync(level, code, message);
     }
 

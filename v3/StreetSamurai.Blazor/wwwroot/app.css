@@ -2242,3 +2242,273 @@ hr {
 .ut-logout { background: #2a2f37; color: #e7eaf0; }
 
 /* == END MINDATTIC.UIUX:USERTIMEOUT.CSS == */
+
+/* ── Home split workspace (Writer | Repositories) ─────────────────────────── */
+.home-split { display: flex; gap: 1rem; align-items: stretch; width: 100%; }
+.home-split .home-pane {
+    flex: 1 1 0; min-width: 0; display: flex; flex-direction: column;
+    border: 1px solid rgba(255,255,255,.08); border-radius: .5rem; overflow: hidden;
+}
+.home-split .home-pane-head {
+    display: flex; align-items: center; justify-content: space-between;
+    padding: .5rem .75rem; border-bottom: 1px solid rgba(255,255,255,.08);
+    font-weight: 600; flex: 0 0 auto;
+}
+.home-split .home-pane-controls { display: inline-flex; gap: .35rem; }
+.home-split .home-pane-body { padding: .9rem; overflow: auto; flex: 1 1 auto; }
+.home-split .home-pane-reveal { display: none; }
+
+/* Swap left/right */
+.home-split.swapped .home-pane-writer { order: 2; }
+.home-split.swapped .home-pane-repos  { order: 1; }
+
+/* Collapsed pane → thin vertical reveal strip; sibling fills the row */
+.home-split.writer-collapsed .home-pane-writer,
+.home-split.repos-collapsed  .home-pane-repos {
+    flex: 0 0 2.6rem; min-width: 2.6rem; cursor: pointer;
+}
+.home-split.writer-collapsed .home-pane-writer > .home-pane-head,
+.home-split.writer-collapsed .home-pane-writer > .home-pane-body,
+.home-split.repos-collapsed  .home-pane-repos  > .home-pane-head,
+.home-split.repos-collapsed  .home-pane-repos  > .home-pane-body { display: none; }
+.home-split.writer-collapsed .home-pane-writer > .home-pane-reveal,
+.home-split.repos-collapsed  .home-pane-repos  > .home-pane-reveal {
+    display: flex; flex-direction: column; align-items: center; gap: .5rem;
+    width: 100%; height: 100%; padding: .75rem .25rem; background: none;
+    border: none; color: inherit; cursor: pointer;
+}
+.home-split .home-pane-reveal span {
+    writing-mode: vertical-rl; text-orientation: mixed; font-weight: 600; letter-spacing: .04em;
+}
+
+/* Writing pane content (shared with former tab styling) */
+.home-writing-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(190px, 1fr)); gap: .75rem; }
+.home-writing-card {
+    display: block; padding: .85rem; border: 1px solid rgba(255,255,255,.10); border-radius: .5rem;
+    text-decoration: none; color: inherit; transition: border-color .15s, transform .15s;
+}
+.home-writing-card:hover { border-color: rgba(220,53,69,.6); transform: translateY(-1px); }
+.home-writing-card-icon { font-size: 1.5rem; display: block; margin-bottom: .35rem; }
+.home-writing-card-name { font-weight: 600; }
+.home-writing-card-desc { font-size: .82rem; opacity: .7; margin-top: .2rem; }
+
+/* Light theme (Fantasy) tweaks for the split panes */
+.app-shell[data-theme="fantasy"] .home-split .home-pane { border-color: rgba(0,0,0,.12); }
+.app-shell[data-theme="fantasy"] .home-split .home-pane-head { border-bottom-color: rgba(0,0,0,.12); }
+
+/* New-repository inline form (Custom Repositories board section) */
+.board-newrepo { display: flex; flex-wrap: wrap; gap: .5rem; align-items: center; margin: .5rem 0 .75rem; max-width: 720px; }
+.board-newrepo .form-control, .board-newrepo .form-select { width: auto; flex: 0 1 200px; }
+
+/* ── App banner (brand + universe switch) ─────────────────────────────────── */
+.app-banner {
+    display: flex; align-items: center; justify-content: space-between;
+    padding: .35rem .9rem; border-bottom: 1px solid rgba(255,255,255,.08);
+    background: #0c0e12;
+}
+.app-banner-brand { display: inline-flex; align-items: baseline; gap: .5rem; }
+.app-banner-title { font-weight: 700; letter-spacing: .02em; }
+.app-banner-subtitle { font-size: .8rem; opacity: .6; }
+.app-banner-controls { display: inline-flex; align-items: center; gap: .5rem; }
+/* compact, theme-aware universe dropdown (not page-width, not white-on-dark) */
+.app-banner-universe.form-select {
+    width: auto; min-width: 150px; max-width: 230px;
+    background-color: #1a1d23; color: #e6e6e6; border-color: rgba(255,255,255,.15);
+    background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16'%3e%3cpath fill='none' stroke='%23999' stroke-linecap='round' stroke-linejoin='round' stroke-width='2' d='M2 5l6 6 6-6'/%3e%3c/svg%3e");
+}
+/* Fantasy theme: stone-gray shell, dark charcoal text, gold + cyan accents */
+.app-shell[data-theme="fantasy"] .app-banner { background: #e8e5e1; border-bottom-color: rgba(0,0,0,.15); color: #1c1a1a; }
+.app-shell[data-theme="fantasy"] .app-banner-universe.form-select {
+    background-color: #f2efea; color: #1c1a1a; border-color: rgba(0,0,0,.22);
+    background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16'%3e%3cpath fill='none' stroke='%23444' stroke-linecap='round' stroke-linejoin='round' stroke-width='2' d='M2 5l6 6 6-6'/%3e%3c/svg%3e");
+}
+
+/* ── Home split controls row (single swap + single collapse-cycle) ────────── */
+.home-split-controls { display: flex; justify-content: flex-end; gap: .4rem; margin-bottom: .6rem; }
+
+/* Home split — position-based collapse (swap is DOM-ordered; layout-left/right collapse the
+   physically first/last pane). Supersedes the earlier component-based collapse rules. */
+.home-split.layout-left  > .home-pane:first-child,
+.home-split.layout-right > .home-pane:last-child {
+    flex: 0 0 2.6rem; min-width: 2.6rem; cursor: pointer;
+}
+.home-split.layout-left  > .home-pane:first-child > .home-pane-head,
+.home-split.layout-left  > .home-pane:first-child > .home-pane-body,
+.home-split.layout-right > .home-pane:last-child  > .home-pane-head,
+.home-split.layout-right > .home-pane:last-child  > .home-pane-body { display: none; }
+.home-split.layout-left  > .home-pane:first-child > .home-pane-reveal,
+.home-split.layout-right > .home-pane:last-child  > .home-pane-reveal {
+    display: flex; flex-direction: column; align-items: center; gap: .5rem;
+    width: 100%; height: 100%; padding: .75rem .25rem; background: none; border: none; color: inherit; cursor: pointer;
+}
+
+/* ── Persistent two-pane app shell (Writer | Repositories) ────────────────── */
+.app-split-controls { display: flex; justify-content: flex-end; gap: .4rem; padding: .35rem .75rem 0; }
+.app-split { display: flex; align-items: stretch; gap: .5rem; padding: .5rem .75rem; min-height: 0; }
+.app-split > .app-pane { flex: 1 1 0; min-width: 0; display: flex; flex-direction: column; overflow: auto;
+    border: 1px solid rgba(255,255,255,.08); border-radius: .5rem; }
+.app-split > main.app-pane > .container-fluid { padding: .5rem; }
+
+/* collapse the physically first / last pane (swap is DOM-ordered) */
+.app-split.layout-left  > .app-pane:first-child,
+.app-split.layout-right > .app-pane:last-child { flex: 0 0 0; width: 0; min-width: 0; padding: 0; border: none; overflow: hidden; }
+
+/* Writer pane */
+.writer-pane { display: flex; flex-direction: column; height: 100%; min-height: 70vh; }
+.writer-pane-head { display: flex; align-items: center; gap: .5rem; padding: .5rem .6rem; border-bottom: 1px solid rgba(255,255,255,.08); }
+.writer-pane-title { font-weight: 600; white-space: nowrap; }
+.writer-pane-select { flex: 1 1 auto; min-width: 0; }
+.writer-pane-body { flex: 1 1 auto; min-height: 0; }
+.writer-pane-frame { width: 100%; height: 100%; min-height: 70vh; border: 0; }
+.writer-pane-empty { display: flex; flex-direction: column; align-items: center; justify-content: center; gap: .6rem; height: 100%; min-height: 50vh; opacity: .6; text-align: center; }
+.writer-pane-empty i { font-size: 2rem; }
+
+/* Embedded (iframe) mode: the strand page renders bare, no shell chrome */
+.app-shell.app-embed { padding: 0; }
+.app-shell.app-embed .topnav-main { margin: 0; }
+
+/* Light theme (Fantasy) borders for the shell panes */
+.app-shell[data-theme="fantasy"] .app-split > .app-pane { border-color: rgba(0,0,0,.12); }
+.app-shell[data-theme="fantasy"] .writer-pane-head { border-bottom-color: rgba(0,0,0,.12); }
+
+/* ── AppBanner consolidated control row ──────────────────────────────────── */
+.app-banner { justify-content: space-between; }
+.app-banner-left { display: inline-flex; align-items: center; gap: .5rem; }
+.app-banner-right {
+    display: inline-flex; align-items: center; gap: .4rem; flex-wrap: nowrap;
+}
+/* Search box inside the banner (desktop) */
+.app-banner-search-wrap { display: flex; align-items: center; }
+.app-banner-search {
+    height: 28px; padding: 0 .55rem; border-radius: 6px;
+    border: 1px solid rgba(255,255,255,.15); background: #1a1d23; color: #e6e6e6;
+    font-size: .8rem; outline: none; width: 160px; transition: width .2s, border-color .2s;
+}
+.app-banner-search:focus { border-color: #dc3545; width: 220px; }
+.app-banner-search::placeholder { color: #484f58; }
+.app-banner-search::-webkit-search-cancel-button,
+.app-banner-search::-ms-clear { display: none; }
+
+/* Fantasy theme overrides */
+.app-shell[data-theme="fantasy"] .app-banner-search {
+    background: #f2efea; color: #1c1a1a; border-color: rgba(0,0,0,.20);
+}
+.app-shell[data-theme="fantasy"] .app-banner-search:focus { border-color: #c9a227; }
+.app-shell[data-theme="fantasy"] .app-banner-search::placeholder { color: #9a8e82; }
+
+/* ── In-pane breadcrumb ───────────────────────────────────────────────────── */
+.auto-breadcrumb {
+    display: flex; align-items: center; gap: 0;
+    padding: .3rem .1rem .4rem; margin-bottom: .35rem;
+    border-bottom: 1px solid rgba(255,255,255,.07); font-size: .82rem;
+}
+.auto-breadcrumb-sep { color: #8b949e; flex-shrink: 0; margin: 0 .25rem; }
+.auto-breadcrumb-link { color: #8b949e; text-decoration: none; flex-shrink: 0; }
+.auto-breadcrumb-link:hover { color: #e6edf3; }
+.auto-breadcrumb-current { color: #e6edf3; font-weight: 500; overflow: hidden; text-overflow: ellipsis; }
+.auto-breadcrumb-icon-link { color: inherit; text-decoration: none; line-height: 1; }
+.auto-breadcrumb-icon-link:hover .auto-breadcrumb-icon { color: #e6edf3; }
+.auto-breadcrumb-icon { font-size: .88rem; color: #8b949e; }
+.auto-breadcrumb-icon-cur { color: #e6edf3; }
+
+/* Fantasy theme */
+.app-shell[data-theme="fantasy"] .auto-breadcrumb { border-bottom-color: rgba(0,0,0,.10); }
+.app-shell[data-theme="fantasy"] .auto-breadcrumb-link { color: #7a7268; }
+.app-shell[data-theme="fantasy"] .auto-breadcrumb-link:hover { color: #1c1a1a; }
+.app-shell[data-theme="fantasy"] .auto-breadcrumb-current { color: #1c1a1a; }
+.app-shell[data-theme="fantasy"] .auto-breadcrumb-icon { color: #7a7268; }
+.app-shell[data-theme="fantasy"] .auto-breadcrumb-icon-cur { color: #1c1a1a; }
+.app-shell[data-theme="fantasy"] .auto-breadcrumb-sep { color: #7a7268; }
+
+/* ── Bottom status bar ────────────────────────────────────────────────────── */
+.app-statusbar {
+    display: flex; align-items: center; gap: .4rem;
+    padding: .18rem .75rem; min-height: 22px;
+    font-size: .73rem; border-top: 1px solid rgba(255,255,255,.07);
+    background: #0c0e12; color: #8b949e; flex-shrink: 0;
+    overflow: hidden; white-space: nowrap;
+}
+.app-statusbar-icon { flex-shrink: 0; font-style: normal; }
+.app-statusbar-text { overflow: hidden; text-overflow: ellipsis; }
+.app-statusbar-idle { opacity: .45; }
+.app-statusbar--error   { color: #ff5577; border-top-color: rgba(255,0,51,.25); }
+.app-statusbar--warn    { color: #ffd766; border-top-color: rgba(255,193,7,.2); }
+.app-statusbar--success { color: #6fdc99; border-top-color: rgba(46,204,113,.2); }
+.app-statusbar--info    { color: #88c5ee; }
+
+/* Fantasy theme */
+.app-shell[data-theme="fantasy"] .app-statusbar {
+    background: #e8e5e1; border-top-color: rgba(0,0,0,.12); color: #6a6460;
+}
+.app-shell[data-theme="fantasy"] .app-statusbar--error   { color: #9b1c1c; }
+.app-shell[data-theme="fantasy"] .app-statusbar--warn    { color: #7a6500; }
+.app-shell[data-theme="fantasy"] .app-statusbar--success { color: #1a6e3f; }
+.app-shell[data-theme="fantasy"] .app-statusbar--info    { color: #1a4e7a; }
+
+/* ── Banner hamburger menu (user + actions + settings + logout) ───────────── */
+.ab-menu-wrap { position: relative; }
+.ab-menu-backdrop { position: fixed; inset: 0; z-index: 1090; }
+.ab-menu-trigger { font-size: 1.2rem; background: none; border: none; color: inherit; cursor: pointer; padding: .25rem .5rem; }
+.ab-menu-trigger.open { color: #dc3545; }
+.ab-menu-panel {
+    position: absolute; right: 0; top: calc(100% + .35rem); z-index: 1095;
+    min-width: 230px; background: #14171c; border: 1px solid rgba(255,255,255,.12);
+    border-radius: .5rem; box-shadow: 0 8px 28px rgba(0,0,0,.5); padding: .35rem; display: flex; flex-direction: column;
+}
+.ab-menu-user { display: flex; align-items: center; gap: .6rem; padding: .5rem .6rem; }
+.ab-menu-user-avatar { font-size: 1.8rem; opacity: .8; }
+.ab-menu-user-name { font-weight: 600; }
+.ab-menu-user-role { font-size: .78rem; opacity: .6; }
+.ab-menu-divider { height: 1px; background: rgba(255,255,255,.10); margin: .35rem .2rem; }
+.ab-menu-item {
+    display: flex; align-items: center; gap: .6rem; width: 100%; text-align: left;
+    padding: .5rem .6rem; border: none; background: none; color: inherit; text-decoration: none;
+    border-radius: .35rem; cursor: pointer; font-size: .9rem;
+}
+.ab-menu-item:hover { background: rgba(255,255,255,.07); color: inherit; text-decoration: none; }
+.ab-menu-item .badge { margin-left: auto; }
+.ab-menu-logout { margin: 0; }
+.ab-menu-logout-btn { color: #ff6b6b; }
+.ab-menu-logout-btn:hover { background: rgba(220,53,69,.12); }
+
+/* Fantasy theme */
+.app-shell[data-theme="fantasy"] .ab-menu-panel { background: #f2efea; border-color: rgba(0,0,0,.20); box-shadow: 0 8px 28px rgba(0,0,0,.22); }
+.app-shell[data-theme="fantasy"] .ab-menu-trigger.open { color: #c9a227; }
+.app-shell[data-theme="fantasy"] .ab-menu-divider { background: rgba(0,0,0,.10); }
+.app-shell[data-theme="fantasy"] .ab-menu-item:hover { background: rgba(0,0,0,.06); }
+
+/* ── Light theme (warm parchment / generic override) ─────────────────────── */
+.app-shell[data-theme="light"] .home-split .home-pane { border-color: rgba(0,0,0,.12); }
+.app-shell[data-theme="light"] .home-split .home-pane-head { border-bottom-color: rgba(0,0,0,.12); }
+.app-shell[data-theme="light"] .app-banner { background: #efe7da; border-bottom-color: rgba(0,0,0,.12); color: #2c2018; }
+.app-shell[data-theme="light"] .app-banner-universe.form-select {
+    background-color: #fbf7f0; color: #2c2018; border-color: rgba(0,0,0,.2);
+    background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16'%3e%3cpath fill='none' stroke='%23666' stroke-linecap='round' stroke-linejoin='round' stroke-width='2' d='M2 5l6 6 6-6'/%3e%3c/svg%3e");
+}
+.app-shell[data-theme="light"] .app-split > .app-pane { border-color: rgba(0,0,0,.12); }
+.app-shell[data-theme="light"] .writer-pane-head { border-bottom-color: rgba(0,0,0,.12); }
+.app-shell[data-theme="light"] .app-banner-search { background: #fbf7f0; color: #2c2018; border-color: rgba(0,0,0,.2); }
+.app-shell[data-theme="light"] .app-banner-search:focus { border-color: #8b5e3c; }
+.app-shell[data-theme="light"] .app-banner-search::placeholder { color: #a09080; }
+.app-shell[data-theme="light"] .auto-breadcrumb { border-bottom-color: rgba(0,0,0,.1); }
+.app-shell[data-theme="light"] .auto-breadcrumb-link { color: #8b6f5a; }
+.app-shell[data-theme="light"] .auto-breadcrumb-link:hover { color: #2c2018; }
+.app-shell[data-theme="light"] .auto-breadcrumb-current { color: #2c2018; }
+.app-shell[data-theme="light"] .auto-breadcrumb-icon { color: #8b6f5a; }
+.app-shell[data-theme="light"] .auto-breadcrumb-icon-cur { color: #2c2018; }
+.app-shell[data-theme="light"] .auto-breadcrumb-sep { color: #8b6f5a; }
+.app-shell[data-theme="light"] .app-statusbar { background: #efe7da; border-top-color: rgba(0,0,0,.1); color: #7a6555; }
+.app-shell[data-theme="light"] .app-statusbar--error   { color: #c0392b; }
+.app-shell[data-theme="light"] .app-statusbar--warn    { color: #8b6f00; }
+.app-shell[data-theme="light"] .app-statusbar--success { color: #1e8449; }
+.app-shell[data-theme="light"] .app-statusbar--info    { color: #1a5276; }
+.app-shell[data-theme="light"] .ab-menu-panel { background: #fbf7f0; border-color: rgba(0,0,0,.18); box-shadow: 0 8px 28px rgba(0,0,0,.18); }
+.app-shell[data-theme="light"] .ab-menu-divider { background: rgba(0,0,0,.10); }
+.app-shell[data-theme="light"] .ab-menu-item:hover { background: rgba(0,0,0,.06); }
+
+/* ── Dark theme (explicit alias for the default dark/GLMZ look) ──────────── */
+/* No overrides needed — base CSS styles are the dark theme. */
+
+/* ── TTS engine selector row (Strand editor) ── */
+.tts-engine-row { background: #0d0d0d; }
+.tts-engine-row .form-range { accent-color: #0dcaf0; }

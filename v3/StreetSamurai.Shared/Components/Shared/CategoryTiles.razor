@@ -28,6 +28,7 @@
 @inject Microsoft.EntityFrameworkCore.IDbContextFactory<StreetSamurai.Core.Data.StreetSamuraiDbContext> DbFactory
 @inject IWriteAccessProvider Access
 @inject StreetSamurai.Core.Services.HomeStatsCache Stats
+@inject StreetSamurai.Core.Services.RepositoryDefinitionService RepoDefs
 
 <div class="home-sections">
 
@@ -124,6 +125,25 @@
         </div>
     </div>
 
+    @* ── Custom Repositories (runtime-defined; only those with entities in THIS universe) ─ *@
+    <div class="board-section">
+        <div class="board-section-label">Custom Repositories</div>
+        <div class="board-grid">
+            @foreach (var r in customRepos)
+            {
+                <a href="@r.RoutePath" class="board-tile" title="@r.Description">
+                    <i class="bi @r.Icon board-tile-icon"></i>
+                    <div class="board-tile-name">@r.Name</div>
+                    <span class="board-tile-count">@r.Count</span>
+                </a>
+            }
+            @if (customRepos.Count == 0)
+            {
+                <div class="text-muted small" style="padding:.5rem;">No custom repositories with entities in this universe yet.</div>
+            }
+        </div>
+    </div>
+
     @* ── Visualizations ─────────────────────────────────────────────── *@
     <div class="board-section">
         <div class="board-section-label">Visualizations</div>
@@ -212,4 +232,18 @@
     /// warms; otherwise the number. Avoids the "0 Characters" lie on
     /// the very first page load after a deploy.</summary>
     string Tile(int n) => Stats.IsWarm ? n.ToString() : "—";
+
+    // Custom (runtime-defined) repositories. Definitions are global; we only show those with at
+    // least one active entity in the CURRENT universe (CountInCurrentUniverse is universe-filtered),
+    // so an empty repo simply isn't printed here.
+    record CustomRepo(string Name, string Icon, string RoutePath, string? Description, int Count);
+    List<CustomRepo> customRepos = new();
+
+    protected override void OnInitialized()
+    {
+        customRepos = RepoDefs.List()
+            .Select(d => new CustomRepo(d.Name, d.Icon, d.RoutePath, d.Description, RepoDefs.CountInCurrentUniverse(d.Slug)))
+            .Where(r => r.Count > 0)   // empty repo in this universe is simply not shown
+            .ToList();
+    }
 }

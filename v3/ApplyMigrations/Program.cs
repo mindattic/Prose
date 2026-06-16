@@ -98,6 +98,12 @@ var migrations = new[]
     "relationalize_consumer_goods_20260616.sql",
     // 2026-06-16 — RFC 0007: Apparel — add 5 missing scalar columns + 2 bridge tables
     "relationalize_apparel_20260616.sql",
+    // 2026-06-16 — per-universe species FK on Characters
+    "add_character_species_fk_20260616.sql",
+    // 2026-06-16 — runtime-defined repositories (custom entity types)
+    "add_repository_definitions_20260616.sql",
+    // 2026-06-16 — per-strand TTS engine selector (ElevenLabs / Kokoro / Piper)
+    "add_strand_tts_engine_20260616.sql",
 };
 
 await using var db = await dbFactory.CreateDbContextAsync();

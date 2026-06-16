@@ -1502,6 +1502,31 @@ public class StrandWorkbenchService
     }
 
     /// <summary>
+    /// Synthesize <paramref name="text"/> through a local engine (kokoro/piper)
+    /// and return the result as a WAV byte array (44.1 kHz mono 16-bit).
+    /// Used by the strand editor for per-beat preview and Voice Studio demo when
+    /// the strand's TtsEngine is set to a local engine.
+    /// Returns null when ffmpeg is not found; throws when the engine is not installed.
+    /// </summary>
+    public async Task<byte[]?> SynthesizeLocalBeatAsync(string text, string engine, CancellationToken ct = default)
+    {
+        var local = LocalTts.Resolve(engine, log)
+            ?? throw new InvalidOperationException(
+                $"Unknown local TTS engine '{engine}'. Options: {string.Join(", ", LocalTts.KnownEngines)}.");
+        if (!local.IsAvailable)
+            throw new InvalidOperationException(
+                $"Local TTS engine '{engine}' is not installed. " +
+                $"See tools\\{engine}\\README for one-time setup.");
+
+        var ffmpeg = ResolveFfmpegPath();
+        if (string.IsNullOrEmpty(ffmpeg))
+            return null; // caller shows friendly message
+
+        var pcm = await local.SynthesizeToPcmAsync(text, ffmpeg, ct);
+        return EpisodeAudioService.WrapPcmAsWav(pcm, 44100, 1, 16);
+    }
+
+    /// <summary>
     /// Pin a voice profile's full dial set onto the strand's snapshot columns so
     /// every later (re)record and publish renders through it — the durable
     /// "tweak the voice for THIS strand" path. Overwrites VoiceId/VoiceModel and
@@ -1539,9 +1564,6 @@ public class StrandWorkbenchService
     /// look-ahead can call it on every tick without re-billing TTS.</summary>
     public async Task<bool> NarrateBeatAsync(Guid strandId, Guid beatId, bool force = false, CancellationToken ct = default)
     {
-        if (!await tts.IsConfiguredAsync())
-            throw new InvalidOperationException("TTS is not configured. Set ElevenLabs API key in Settings.");
-
         await using var db = await dbFactory.CreateDbContextAsync(ct);
         var strand = await db.Strands.FirstOrDefaultAsync(s => s.Id == strandId, ct)
             ?? throw new InvalidOperationException($"Strand {strandId} not found.");
@@ -1556,6 +1578,30 @@ public class StrandWorkbenchService
         // Idempotent fast-path: already voiced for the current text → nothing to do.
         if (!force && !tracked.Stale && !string.IsNullOrEmpty(tracked.AudioPath))
             return true;
+
+        // ── Local engine path (kokoro / piper) ─────────────────────────────
+        var engineName = strand.TtsEngine;
+        bool isLocal = !string.IsNullOrEmpty(engineName)
+            && !string.Equals(engineName, "elevenlabs", StringComparison.OrdinalIgnoreCase);
+        if (isLocal)
+        {
+            var wav = await SynthesizeLocalBeatAsync(tracked.Text, engineName!, ct)
+                ?? throw new InvalidOperationException(
+                    "ffmpeg is required for local TTS preview but was not found on PATH.");
+            var rel = await audioStore.WriteBeatAsync(strand.Slug, tracked.Id, "wav", wav, ct);
+            tracked.AudioPath  = rel;
+            tracked.NarratedAt = DateTime.UtcNow;
+            tracked.Stale      = false;
+            tracked.TextHash   = ComputeTextHash(tracked.Text);
+            db.StrandAudioEvents.Add(NewAudioEvent(strandId, beatId, null, "beat-recorded",
+                $"{tracked.Text.Length} chars, engine {engineName}"));
+            await db.SaveChangesAsync(ct);
+            return true;
+        }
+
+        // ── ElevenLabs path ────────────────────────────────────────────────
+        if (!await tts.IsConfiguredAsync())
+            throw new InvalidOperationException("TTS is not configured. Set ElevenLabs API key in Settings.");
 
         // Reuse the strand's LOCKED voice snapshot — this is the key to a
         // single-beat re-record sounding like the rest of the strand: same

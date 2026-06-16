@@ -19,9 +19,21 @@ BEGIN
     );
 END;
 
-IF NOT EXISTS (SELECT 1 FROM sys.indexes WHERE name = N'IX_Species_Name' AND object_id = OBJECT_ID(N'[dbo].[Species]'))
+-- Only the single-universe Name-only unique index (fresh DB, pre-universe). Once Species.UniverseId
+-- exists, uniqueness is per-universe (a composite index), so a Name-only UNIQUE index would fail on
+-- duplicate Names across universes (GLMZ + Fantasy 'human') — skip it.
+IF COL_LENGTH(N'dbo.Species', N'UniverseId') IS NULL
+   AND NOT EXISTS (SELECT 1 FROM sys.indexes WHERE name = N'IX_Species_Name' AND object_id = OBJECT_ID(N'[dbo].[Species]'))
     CREATE UNIQUE INDEX [IX_Species_Name] ON [dbo].[Species]([Name]);
 
+-- Idempotency guard: the original seed MERGE matches on [Name] alone. Once the multi-universe
+-- migration adds Species.UniverseId, a single Name (e.g. 'human') can exist in MORE than one
+-- universe (GLMZ + Fantasy), and a Name-only MERGE then matches multiple target rows → a
+-- "MERGE attempted to UPDATE the same row more than once" error on re-run. On a fresh DB this
+-- migration runs BEFORE add_universe_*, so no UniverseId column exists yet → seed the canonical 5
+-- (add_universe later stamps them GLMZ). On an already-migrated DB the column exists and the 5 are
+-- already seeded + universe-scoped, so skip (no-op) rather than fire the unsafe Name-only MERGE.
+IF COL_LENGTH(N'dbo.Species', N'UniverseId') IS NULL
 MERGE [dbo].[Species] AS t
 USING (VALUES
     (N'human', N'Human',

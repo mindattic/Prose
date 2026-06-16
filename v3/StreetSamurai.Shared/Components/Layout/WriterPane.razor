@@ -1,0 +1,73 @@
+@using Microsoft.EntityFrameworkCore
+@inject Microsoft.EntityFrameworkCore.IDbContextFactory<StreetSamurai.Core.Data.StreetSamuraiDbContext> DbFactory
+@inject IJSRuntime JS
+
+@* The persistent Writer pane: pick a strand up top, write in the embedded editor below. The editor
+   is the real /strand page loaded in an iframe (?embed=1 renders it bare) so its heavy, route-driven
+   state is fully isolated and it survives navigation in the repositories pane beside it. *@
+<div class="writer-pane">
+    <div class="writer-pane-head">
+        <span class="writer-pane-title"><i class="bi bi-pencil-square me-2"></i>Writer</span>
+        <select class="form-select form-select-sm writer-pane-select" @bind="selectedSlug" @bind:after="OnSelected">
+            <option value="">— select a strand —</option>
+            @foreach (var s in strands)
+            {
+                <option value="@s.Slug">@s.Title</option>
+            }
+        </select>
+        @if (!string.IsNullOrEmpty(selectedSlug))
+        {
+            <a class="btn btn-sm btn-outline-secondary" href="/strand/@selectedSlug" target="_blank" title="Open full-screen"><i class="bi bi-arrows-fullscreen"></i></a>
+        }
+    </div>
+    <div class="writer-pane-body">
+        @if (string.IsNullOrEmpty(selectedSlug))
+        {
+            <div class="writer-pane-empty">
+                <i class="bi bi-pencil-square"></i>
+                <div>Select a strand above to start writing, or <a href="/strands">browse all strands</a>.</div>
+            </div>
+        }
+        else
+        {
+            <iframe class="writer-pane-frame" src="@($"/strand/{selectedSlug}?embed=1")" title="Writer"></iframe>
+        }
+    </div>
+</div>
+
+@code {
+    private record StrandRow(string Slug, string Title);
+    private List<StrandRow> strands = new();
+    private string selectedSlug = "";
+
+    protected override void OnInitialized()
+    {
+        using var db = DbFactory.CreateDbContext();
+        strands = db.Strands.AsNoTracking()
+            .Where(s => s.Slug != null && s.Slug != "")
+            .OrderByDescending(s => s.UpdatedAt)
+            .Select(s => new StrandRow(s.Slug, s.Title))
+            .Take(100)
+            .ToList();
+    }
+
+    protected override async Task OnAfterRenderAsync(bool firstRender)
+    {
+        if (!firstRender) return;
+        try
+        {
+            var saved = await JS.InvokeAsync<string>("localStorage.getItem", "writer.strand");
+            if (!string.IsNullOrEmpty(saved) && strands.Any(s => s.Slug == saved))
+            {
+                selectedSlug = saved;
+                StateHasChanged();
+            }
+        }
+        catch { /* prerender / JS unavailable */ }
+    }
+
+    private async Task OnSelected()
+    {
+        try { await JS.InvokeVoidAsync("localStorage.setItem", "writer.strand", selectedSlug ?? ""); } catch { }
+    }
+}
