@@ -4,6 +4,7 @@
 @inject SearchTriggerService SearchTrigger
 @inject StreetSamurai.Core.Services.FindingsService Findings
 @inject StreetSamurai.Core.Services.ContinuityService Continuity
+@inject StreetSamurai.Core.Services.IUniverseContext Universe
 
 <nav class="topnav navbar navbar-expand-md">
 
@@ -100,6 +101,18 @@
                        value="@searchInput" @oninput="OnSearchInput" @onkeydown="HandleKey" />
             </div>
             <div class="topnav-controls d-flex align-items-center gap-1">
+                <AuthorizeView Policy="@MaPolicies.Admin">
+                    @if (universes.Count > 1)
+                    {
+                        <select class="topnav-universe form-select form-select-sm" title="Switch universe"
+                                @onchange="OnUniverseChanged">
+                            @foreach (var u in universes)
+                            {
+                                <option value="@u.Id" selected="@(u.Id == currentUniverseId)">@u.Name</option>
+                            }
+                        </select>
+                    }
+                </AuthorizeView>
                 <a class="topnav-link" href="/listen" title="Tonight's adventure">
                     <i class="bi bi-headphones"></i>
                 </a>
@@ -137,11 +150,19 @@
     private string inboxTooltip = "";
     private System.Threading.Timer? inboxPoll;
 
+    // SwitchUniverse dropdown (SS-LAW-15). Lists registered universes; selecting
+    // one changes the active universe for this process and persists it as the
+    // default, then force-reloads so every component re-queries under the new scope.
+    private IReadOnlyList<StreetSamurai.Core.Services.UniverseInfo> universes = new List<StreetSamurai.Core.Services.UniverseInfo>();
+    private Guid currentUniverseId;
+
     protected override void OnInitialized()
     {
         Nav.LocationChanged += OnLocationChanged;
         SyncSearchFromUrl();
         RefreshInboxCount();
+        try { universes = Universe.ListUniverses(); currentUniverseId = Universe.CurrentId; }
+        catch { universes = new List<StreetSamurai.Core.Services.UniverseInfo>(); }
         // Poll every 15s so the badge picks up findings/contradictions posted
         // by the autonomous monitor + the daily continuity sweep without
         // requiring the user to navigate.
@@ -205,6 +226,16 @@
     }
 
     private async Task OpenSearch() => await SearchTrigger.RequestOpenAsync();
+
+    private void OnUniverseChanged(ChangeEventArgs e)
+    {
+        if (!Guid.TryParse(e.Value?.ToString(), out var id) || id == currentUniverseId) return;
+        Universe.UseUniverse(id);
+        Universe.PersistAsDefault(id);
+        currentUniverseId = id;
+        // Full reload so every component re-queries canon/strands under the new universe filter.
+        Nav.NavigateTo(Nav.Uri, forceLoad: true);
+    }
 
     // ── Breadcrumb ───────────────────────────────────────────
 
@@ -279,7 +310,7 @@
             "specimens"       => new("World",         "/board/world",         "Lab Specimens",   "bi-globe2",            "bi-radioactive"),
             "flyover"         => new("World",         "/board/world",         "The Gap",         "bi-globe2",            "bi-tree"),
             "psionics"        => new("World",         "/board/world",         "Psionics",        "bi-globe2",            "bi-eye"),
-            "rules"           => new("World",         "/board/world",         "World Rules",     "bi-globe2",            "bi-book"),
+            "rules"           => new("World",         "/board/world",         "Universe Rules",     "bi-globe2",            "bi-book"),
             "documents"       => new("Culture",       "/board/culture",       "Documents",       "bi-palette2",          "bi-file-earmark-text"),
             "quotes"          => new("Culture",       "/board/culture",       "Quotes",          "bi-palette2",          "bi-quote"),
             "vocabulary"      => new("Culture",       "/board/culture",       "Vocabulary",      "bi-palette2",          "bi-chat-quote"),

@@ -22,6 +22,7 @@ public class ThematicIndexService
     // tag -> list of hits with snippets
     private Dictionary<string, List<ThematicHit>> index = new(StringComparer.OrdinalIgnoreCase);
     private bool built;
+    private int builtEpoch = -1;
 
     public ThematicIndexService(
         DatabaseService db,
@@ -79,12 +80,13 @@ public class ThematicIndexService
 
         index = newIndex;
         built = true;
+        builtEpoch = UniverseScope.Epoch;
     }
 
     /// <summary>Get entities relevant to tags, ranked by match count. Returns snippets.</summary>
     public List<ThematicHit> GetRelevantEntities(IEnumerable<string> themes, int count = 15)
     {
-        if (!built) RebuildIndex();
+        if (!built || builtEpoch != UniverseScope.Epoch) RebuildIndex();
 
         var scores = new Dictionary<string, ThematicHit>();
         foreach (var theme in themes)
@@ -122,7 +124,7 @@ public class ThematicIndexService
     /// <summary>Get vocabulary terms matching tags. Returns term + definition pairs.</summary>
     public List<(string term, string definition)> GetRelevantVocabulary(IEnumerable<string> themes, int count = 8)
     {
-        if (!built) RebuildIndex();
+        if (!built || builtEpoch != UniverseScope.Epoch) RebuildIndex();
         var hits = GetRelevantEntities(themes, count * 3)
             .Where(h => h.EntityType == "vocabulary")
             .Take(count);
@@ -132,7 +134,7 @@ public class ThematicIndexService
     /// <summary>Get quotes matching tags.</summary>
     public List<string> GetRelevantQuotes(IEnumerable<string> themes, int count = 2)
     {
-        if (!built) RebuildIndex();
+        if (!built || builtEpoch != UniverseScope.Epoch) RebuildIndex();
         return GetRelevantEntities(themes, count * 5)
             .Where(h => h.EntityType == "quote")
             .Take(count)

@@ -316,12 +316,13 @@ function Build-DigestText {
     $counts.cut     = ([regex]::Matches($stext, [regex]::Escape($gCut))).Count
   }
 
-  # latest amendment head (first "## CODE-A..." block heading + first paragraph)
+  # latest amendment head: amendments are append-only (CODE-A1, CODE-A2, ...), so the LAST
+  # "## CODE-A..." block in file order is the most recent. Take all matches and keep the last.
   $amHead = ''
   if (Test-Path $Amend) {
     $atext = Get-Content -LiteralPath $Amend -Raw -Encoding UTF8
-    $am = [regex]::Match($atext, "(?ms)^##\s+$Code-A\d+.*?(?=^##\s+$Code-A\d+|\z)")
-    if ($am.Success) { $amHead = $am.Value.Trim() }
+    $ams = [regex]::Matches($atext, "(?ms)^##\s+$Code-A\d+.*?(?=^##\s+$Code-A\d+|\z)")
+    if ($ams.Count -gt 0) { $amHead = $ams[$ams.Count - 1].Value.Trim() }
   }
 
   $nl = "`n"

@@ -402,6 +402,19 @@ if (args.Contains("--write-strand"))
     return;
 }
 
+// CLI mode: delete the 44 legacy book/chapter Entity+Records blobs whose
+// content already lives in the Strands/Beats model. Classifies each as JUNK,
+// REDUNDANT, or ORPHAN (converts orphans to Strands before deleting).
+//   ss --migrate-legacy-book-chapter
+if (args.Contains("--migrate-legacy-book-chapter"))
+{
+    var cliBuilder = WebApplication.CreateBuilder(args);
+    cliBuilder.Services.AddStreetSamuraiServices();
+    var cliApp = cliBuilder.Build();
+    Environment.ExitCode = await MigrateLegacyBookChapterCli.RunAsync(args, cliApp.Services);
+    return;
+}
+
 // CLI mode: migrate legacy Books/Chapters/ChapterBeats/Episodes/EpisodeBeats
 // data into the unified Beat/Strand schema. Idempotent — safe to re-run.
 //   ss --migrate-strands
@@ -802,6 +815,162 @@ if (args.Contains("--rebuild-transportation-relational"))
     cliBuilder.Services.AddStreetSamuraiServices();
     var cliApp = cliBuilder.Build();
     Environment.ExitCode = await RebuildTransportationRelationalCli.RunAsync(args, cliApp.Services);
+    return;
+}
+
+// CLI mode: backfill the Corponations relational schema from Records.Json blobs.
+// ADDITIVE — Records.Json is never modified. (RFC 0007)
+//   ss --rebuild-corponation-relational
+if (args.Contains("--rebuild-corponation-relational"))
+{
+    var cliBuilder = WebApplication.CreateBuilder(args);
+    cliBuilder.Services.AddStreetSamuraiServices();
+    var cliApp = cliBuilder.Build();
+    Environment.ExitCode = await RebuildCorponationRelationalCli.RunAsync(args, cliApp.Services);
+    return;
+}
+
+// CLI mode: backfill the EquipmentItems relational schema from Records.Json blobs.
+// ADDITIVE — Records.Json is never modified. (RFC 0007)
+//   ss --rebuild-equipment-relational
+if (args.Contains("--rebuild-equipment-relational"))
+{
+    var cliBuilder = WebApplication.CreateBuilder(args);
+    cliBuilder.Services.AddStreetSamuraiServices();
+    var cliApp = cliBuilder.Build();
+    Environment.ExitCode = await RebuildEquipmentRelationalCli.RunAsync(args, cliApp.Services);
+    return;
+}
+
+// CLI mode: backfill the Technologies relational schema from Records.Json blobs.
+// ADDITIVE — Records.Json is never modified. (RFC 0007)
+//   ss --rebuild-technology-relational
+if (args.Contains("--rebuild-technology-relational"))
+{
+    var cliBuilder = WebApplication.CreateBuilder(args);
+    cliBuilder.Services.AddStreetSamuraiServices();
+    var cliApp = cliBuilder.Build();
+    Environment.ExitCode = await RebuildTechnologyRelationalCli.RunAsync(args, cliApp.Services);
+    return;
+}
+
+// CLI mode: backfill the Pharmaceuticals relational schema from Records.Json blobs.
+// ADDITIVE — Records.Json is never modified. (RFC 0007)
+//   ss --rebuild-pharmaceutical-relational
+if (args.Contains("--rebuild-pharmaceutical-relational"))
+{
+    var cliBuilder = WebApplication.CreateBuilder(args);
+    cliBuilder.Services.AddStreetSamuraiServices();
+    var cliApp = cliBuilder.Build();
+    Environment.ExitCode = await RebuildPharmaceuticalRelationalCli.RunAsync(args, cliApp.Services);
+    return;
+}
+
+// CLI mode: backfill the CyberwareItems relational schema from Records.Json blobs.
+// ADDITIVE — Records.Json is never modified. (RFC 0007)
+//   ss --rebuild-cyberware-relational
+if (args.Contains("--rebuild-cyberware-relational"))
+{
+    var cliBuilder = WebApplication.CreateBuilder(args);
+    cliBuilder.Services.AddStreetSamuraiServices();
+    var cliApp = cliBuilder.Build();
+    Environment.ExitCode = await RebuildCyberwareRelationalCli.RunAsync(args, cliApp.Services);
+    return;
+}
+
+// CLI mode: backfill the ConsumerGoods relational schema from Records.Json blobs.
+// ADDITIVE — Records.Json is never modified. (RFC 0007)
+//   ss --rebuild-consumer-good-relational
+if (args.Contains("--rebuild-consumer-good-relational"))
+{
+    var cliBuilder = WebApplication.CreateBuilder(args);
+    cliBuilder.Services.AddStreetSamuraiServices();
+    var cliApp = cliBuilder.Build();
+    Environment.ExitCode = await RebuildConsumerGoodRelationalCli.RunAsync(args, cliApp.Services);
+    return;
+}
+
+// CLI mode: backfill the SyntheticLives relational schema from Records.Json blobs.
+// ADDITIVE — Records.Json is never modified. (RFC 0007)
+//   ss --rebuild-synthetic-relational
+if (args.Contains("--rebuild-synthetic-relational"))
+{
+    var cliBuilder = WebApplication.CreateBuilder(args);
+    cliBuilder.Services.AddStreetSamuraiServices();
+    var cliApp = cliBuilder.Build();
+    Environment.ExitCode = await RebuildSyntheticRelationalCli.RunAsync(args, cliApp.Services);
+    return;
+}
+
+// CLI mode: backfill the Places relational schema from Records.Json blobs.
+// ADDITIVE — Records.Json is never modified. (RFC 0007)
+//   ss --rebuild-place-relational
+if (args.Contains("--rebuild-place-relational"))
+{
+    var cliBuilder = WebApplication.CreateBuilder(args);
+    cliBuilder.Services.AddStreetSamuraiServices();
+    var cliApp = cliBuilder.Build();
+    Environment.ExitCode = await RebuildPlaceRelationalCli.RunAsync(args, cliApp.Services);
+    return;
+}
+
+// CLI mode: backfill the Documents relational schema from Records.Json blobs.
+// ADDITIVE — Records.Json is never modified. (RFC 0007)
+//   ss --rebuild-document-relational
+if (args.Contains("--rebuild-document-relational"))
+{
+    var cliBuilder = WebApplication.CreateBuilder(args);
+    cliBuilder.Services.AddStreetSamuraiServices();
+    var cliApp = cliBuilder.Build();
+    Environment.ExitCode = await RebuildDocumentRelationalCli.RunAsync(args, cliApp.Services);
+    return;
+}
+
+// CLI mode: backfill the EntertainmentItems relational schema from Records.Json blobs.
+// ADDITIVE — Records.Json is never modified. (RFC 0007)
+//   ss --rebuild-entertainment-relational
+if (args.Contains("--rebuild-entertainment-relational"))
+{
+    var cliBuilder = WebApplication.CreateBuilder(args);
+    cliBuilder.Services.AddStreetSamuraiServices();
+    var cliApp = cliBuilder.Build();
+    Environment.ExitCode = await RebuildEntertainmentRelationalCli.RunAsync(args, cliApp.Services);
+    return;
+}
+
+// CLI mode: backfill the Weapons relational schema from Records.Json blobs.
+// ADDITIVE — Records.Json is never modified. (RFC 0007)
+//   ss --rebuild-weapon-relational
+if (args.Contains("--rebuild-weapon-relational"))
+{
+    var cliBuilder = WebApplication.CreateBuilder(args);
+    cliBuilder.Services.AddStreetSamuraiServices();
+    var cliApp = cliBuilder.Build();
+    Environment.ExitCode = await RebuildWeaponRelationalCli.RunAsync(args, cliApp.Services);
+    return;
+}
+
+// CLI mode: backfill the Apparels relational schema from Records.Json blobs.
+// ADDITIVE — Records.Json is never modified. (RFC 0007)
+//   ss --rebuild-apparel-relational
+if (args.Contains("--rebuild-apparel-relational"))
+{
+    var cliBuilder = WebApplication.CreateBuilder(args);
+    cliBuilder.Services.AddStreetSamuraiServices();
+    var cliApp = cliBuilder.Build();
+    Environment.ExitCode = await RebuildApparelRelationalCli.RunAsync(args, cliApp.Services);
+    return;
+}
+
+// CLI mode: backfill the Subsidiaries relational schema from Records.Json blobs.
+// ADDITIVE — Records.Json is never modified. (RFC 0007)
+//   ss --rebuild-subsidiary-relational
+if (args.Contains("--rebuild-subsidiary-relational"))
+{
+    var cliBuilder = WebApplication.CreateBuilder(args);
+    cliBuilder.Services.AddStreetSamuraiServices();
+    var cliApp = cliBuilder.Build();
+    Environment.ExitCode = await RebuildSubsidiaryRelationalCli.RunAsync(args, cliApp.Services);
     return;
 }
 

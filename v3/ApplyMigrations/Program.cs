@@ -84,6 +84,20 @@ var migrations = new[]
     "create_species_20260606.sql",
     "create_voice_change_log_20260606.sql",
     "drop_facet_system_20260606.sql",
+    // 2026-06-15 — multi-universe foundation (SS-A2 / SS-LAW-15)
+    "add_universe_20260615.sql",
+    // 2026-06-15 — RFC 0006 universe segregation (config + embeddings)
+    "add_universe_config_20260615.sql",
+    "add_universe_embeddings_20260615.sql",
+    "add_universe_graph_20260615.sql",
+    // 2026-06-15 — RFC 0007 Faction relational: FactionRelationshipTags bridge
+    "add_faction_relationship_tags_20260615.sql",
+    // 2026-06-15 — RFC 0007 Gear: Genemod / Material / Transportation full lossless columns + bridges
+    "add_gear_full_columns_20260615.sql",
+    // 2026-06-16 — RFC 0007: ConsumerGoods — add 8 missing lossless columns
+    "relationalize_consumer_goods_20260616.sql",
+    // 2026-06-16 — RFC 0007: Apparel — add 5 missing scalar columns + 2 bridge tables
+    "relationalize_apparel_20260616.sql",
 };
 
 await using var db = await dbFactory.CreateDbContextAsync();

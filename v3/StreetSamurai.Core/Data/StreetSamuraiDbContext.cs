@@ -27,6 +27,65 @@ public class StreetSamuraiDbContext : DbContext
 {
     public StreetSamuraiDbContext(DbContextOptions<StreetSamuraiDbContext> options) : base(options) { }
 
+    /// <summary>
+    /// The universe the global query filters scope to, read from the ambient
+    /// <see cref="UniverseScope"/>. <c>Guid.Empty</c> (no universe context wired — tests /
+    /// design-time / pre-migration) makes every universe filter a no-op. Referenced by the
+    /// <c>HasQueryFilter</c> lambdas in <see cref="OnModelCreating"/>; EF re-evaluates it per query.
+    /// </summary>
+    public Guid ScopedUniverseId => StreetSamurai.Core.Services.UniverseScope.EffectiveId;
+
+    /// <summary>The "visible from every universe" sentinel for shared operational config rows
+    /// (Settings query filter). Constant — EF inlines it into the filter.</summary>
+    public static Guid SharedUniverseId => Universe.SharedId;
+
+    /// <summary>
+    /// Stamp <c>UniverseId</c> on freshly-added universe-scoped roots (Entity / Strand / Book) so
+    /// new rows land in the current universe without every call site having to set it. Falls back
+    /// to GLMZ when no universe context is active (tests), keeping the NOT NULL column valid.
+    /// </summary>
+    private void StampUniverseOnAdded()
+    {
+        var current = StreetSamurai.Core.Services.UniverseScope.EffectiveId;
+        var target = current != Guid.Empty ? current : Universe.GlmzId;
+        foreach (var entry in ChangeTracker.Entries())
+        {
+            if (entry.State != EntityState.Added) continue;
+            switch (entry.Entity)
+            {
+                case Entity e when e.UniverseId == Guid.Empty: e.UniverseId = target; break;
+                case Strand s when s.UniverseId == Guid.Empty: s.UniverseId = target; break;
+                case Book bk when bk.UniverseId == Guid.Empty: bk.UniverseId = target; break;
+                case Species sp when sp.UniverseId == Guid.Empty: sp.UniverseId = target; break;
+                case Edge ed when ed.UniverseId == Guid.Empty: ed.UniverseId = target; break;
+                case EntityStateEvent ev when ev.UniverseId == Guid.Empty: ev.UniverseId = target; break;
+                case CharacterReadModel rm when rm.UniverseId == Guid.Empty: rm.UniverseId = target; break;
+                // Config rows: operational/shared keys are tagged with the SHARED sentinel so every
+                // universe sees the one copy; all other keys are scoped to the current universe.
+                case Setting st when st.UniverseId == Guid.Empty:
+                    st.UniverseId = StreetSamurai.Core.Services.UniverseScope.SharedConfigKeys.Contains(st.Key)
+                        ? Universe.SharedId : target;
+                    break;
+            }
+        }
+    }
+
+    public override int SaveChanges(bool acceptAllChangesOnSuccess)
+    {
+        StampUniverseOnAdded();
+        return base.SaveChanges(acceptAllChangesOnSuccess);
+    }
+
+    public override Task<int> SaveChangesAsync(bool acceptAllChangesOnSuccess, CancellationToken cancellationToken = default)
+    {
+        StampUniverseOnAdded();
+        return base.SaveChangesAsync(acceptAllChangesOnSuccess, cancellationToken);
+    }
+
+    // Multi-universe tenancy — every universe-scoped root (Entity, Strand, Book)
+    // carries a UniverseId; reads are filtered to the current universe (SS-LAW-15).
+    public DbSet<Universe>        Universes        => Set<Universe>();
+
     // Universal layer
     public DbSet<Entity>          Entities         => Set<Entity>();
     public DbSet<Record>          Records          => Set<Record>();
@@ -123,8 +182,9 @@ public class StreetSamuraiDbContext : DbContext
     public DbSet<FactionResource>         FactionResources      => Set<FactionResource>();
     public DbSet<FactionGoal>             FactionGoals          => Set<FactionGoal>();
     public DbSet<FactionStoryHook>        FactionStoryHooks     => Set<FactionStoryHook>();
-    public DbSet<FactionRelationshipRow>  FactionRelationships  => Set<FactionRelationshipRow>();
-    public DbSet<FactionMemberRow>        FactionMembers        => Set<FactionMemberRow>();
+    public DbSet<FactionRelationshipRow>  FactionRelationships      => Set<FactionRelationshipRow>();
+    public DbSet<FactionRelationshipTag>  FactionRelationshipTags   => Set<FactionRelationshipTag>();
+    public DbSet<FactionMemberRow>        FactionMembers            => Set<FactionMemberRow>();
     public DbSet<CorponationCommonName>   CorponationCommonNames => Set<CorponationCommonName>();
     public DbSet<SubsidiaryProduct>       SubsidiaryProducts     => Set<SubsidiaryProduct>();
     public DbSet<AutomatonAlias>          AutomatonAliases       => Set<AutomatonAlias>();
@@ -148,6 +208,8 @@ public class StreetSamuraiDbContext : DbContext
     public DbSet<CyberwareItemKnownUser>  CyberwareItemKnownUsers   => Set<CyberwareItemKnownUser>();
     public DbSet<CyberwareItemStoryHook>  CyberwareItemStoryHooks   => Set<CyberwareItemStoryHook>();
     public DbSet<ApparelAlias>            ApparelAliases            => Set<ApparelAlias>();
+    public DbSet<ApparelMaterial>         ApparelMaterials          => Set<ApparelMaterial>();
+    public DbSet<ApparelWornBy>           ApparelWornByRows         => Set<ApparelWornBy>();
     public DbSet<ApparelStoryHook>        ApparelStoryHooks         => Set<ApparelStoryHook>();
     public DbSet<AmmunitionAlias>            AmmunitionAliases            => Set<AmmunitionAlias>();
     public DbSet<AmmunitionCompatibleWeapon> AmmunitionCompatibleWeapons  => Set<AmmunitionCompatibleWeapon>();
@@ -157,10 +219,14 @@ public class StreetSamuraiDbContext : DbContext
     public DbSet<PharmEffect>     PharmaceuticalEffects     => Set<PharmEffect>();
     public DbSet<PharmSideEffect> PharmaceuticalSideEffects => Set<PharmSideEffect>();
     public DbSet<PharmStoryHook>  PharmaceuticalStoryHooks  => Set<PharmStoryHook>();
-    public DbSet<GenemodAlias>     GenemodAliases     => Set<GenemodAlias>();
-    public DbSet<GenemodStoryHook> GenemodStoryHooks  => Set<GenemodStoryHook>();
-    public DbSet<MaterialAlias>     MaterialAliases     => Set<MaterialAlias>();
-    public DbSet<MaterialStoryHook> MaterialStoryHooks  => Set<MaterialStoryHook>();
+    public DbSet<GenemodAlias>      GenemodAliases      => Set<GenemodAlias>();
+    public DbSet<GenemodSideEffect> GenemodSideEffects  => Set<GenemodSideEffect>();
+    public DbSet<GenemodStoryHook>  GenemodStoryHooks   => Set<GenemodStoryHook>();
+    public DbSet<MaterialAlias>       MaterialAliases       => Set<MaterialAlias>();
+    public DbSet<MaterialProperty>    MaterialProperties    => Set<MaterialProperty>();
+    public DbSet<MaterialDeveloper>   MaterialDevelopers    => Set<MaterialDeveloper>();
+    public DbSet<MaterialApplication> MaterialApplications  => Set<MaterialApplication>();
+    public DbSet<MaterialStoryHook>   MaterialStoryHooks    => Set<MaterialStoryHook>();
     public DbSet<TransportationAlias>     TransportationAliases     => Set<TransportationAlias>();
     public DbSet<TransportationStoryHook> TransportationStoryHooks  => Set<TransportationStoryHook>();
     public DbSet<ConsumerGoodAlias>     ConsumerGoodAliases     => Set<ConsumerGoodAlias>();
@@ -198,6 +264,10 @@ public class StreetSamuraiDbContext : DbContext
     public DbSet<FlyoverEntityAlias>       FlyoverEntityAliases    => Set<FlyoverEntityAlias>();
     public DbSet<FlyoverEntityKnownLocation> FlyoverEntityKnownLocations => Set<FlyoverEntityKnownLocation>();
     public DbSet<FlyoverEntityStoryHook>   FlyoverEntityStoryHooks => Set<FlyoverEntityStoryHook>();
+    public DbSet<SyntheticLife>                 SyntheticLives              => Set<SyntheticLife>();
+    public DbSet<SyntheticLifeAlias>            SyntheticLifeAliases        => Set<SyntheticLifeAlias>();
+    public DbSet<SyntheticLifeKnownAssociation> SyntheticLifeKnownAssociations => Set<SyntheticLifeKnownAssociation>();
+    public DbSet<SyntheticLifeStoryHook>        SyntheticLifeStoryHooks     => Set<SyntheticLifeStoryHook>();
     // CeramicMan tables retired 2026-05-06 — folded into SyntheticLives (Type == "ceramic_man").
     // Book / chapter relational bridges
     public DbSet<BookProtagonist>          BookProtagonists        => Set<BookProtagonist>();
@@ -259,6 +329,21 @@ public class StreetSamuraiDbContext : DbContext
     protected override void OnModelCreating(ModelBuilder b)
     {
         base.OnModelCreating(b);
+
+        // ── Universe (multi-tenant root) ────────────────────────────────────
+        // Singular table name to match add_universe_20260615.sql. The scoped
+        // roots carry a plain UniverseId column (no navigation / no enforced FK):
+        // integrity is kept by StampUniverseOnAdded, which keeps test/clean-build
+        // DBs from tripping on an unseeded Universe table.
+        b.Entity<Universe>(e =>
+        {
+            e.ToTable("Universe");
+            e.HasKey(x => x.Id);
+            e.Property(x => x.Slug).HasMaxLength(200).IsRequired();
+            e.Property(x => x.Name).HasMaxLength(400).IsRequired();
+            e.Property(x => x.Theme).HasMaxLength(100);
+            e.HasIndex(x => x.Slug).IsUnique();
+        });
 
         // ── Episode (bedtime-adventure domain) ──────────────────────────────
         b.Entity<Episode>(e =>
@@ -322,11 +407,15 @@ public class StreetSamuraiDbContext : DbContext
             e.Property(x => x.Status).HasMaxLength(40).IsRequired();
             e.Property(x => x.VoiceId).HasMaxLength(80);
             e.Property(x => x.CombinedAudioPath).HasMaxLength(400);
-            e.HasIndex(x => x.Slug).IsUnique();
+            // Slug unique per universe (the same strand slug may recur in another universe).
+            e.HasIndex(x => new { x.UniverseId, x.Slug }).IsUnique().HasDatabaseName("UX_Strands_Universe_Slug");
             e.HasIndex(x => x.Kind);
             e.HasIndex(x => new { x.ParentStrandId, x.SortKey });
+            e.HasIndex(x => x.UniverseId);
             e.HasOne(x => x.ParentStrand).WithMany(x => x.Children)
                 .HasForeignKey(x => x.ParentStrandId).OnDelete(DeleteBehavior.Restrict);
+            // Universe scoping (SS-LAW-15). No-op when ScopedUniverseId is Guid.Empty.
+            e.HasQueryFilter(x => ScopedUniverseId == Guid.Empty || x.UniverseId == ScopedUniverseId);
         });
         b.Entity<StrandBeat>(e =>
         {
@@ -395,7 +484,9 @@ public class StreetSamuraiDbContext : DbContext
             e.HasKey(x => x.Id);
             e.Property(x => x.Name).HasMaxLength(40).IsRequired();
             e.Property(x => x.Label).HasMaxLength(80);
-            e.HasIndex(x => x.Name).IsUnique();
+            // Species set is per-universe (SS-LAW-4): Name unique within a universe.
+            e.HasIndex(x => new { x.UniverseId, x.Name }).IsUnique().HasDatabaseName("UX_Species_Universe_Name");
+            e.HasQueryFilter(x => ScopedUniverseId == Guid.Empty || x.UniverseId == ScopedUniverseId);
         });
         b.Entity<FocusGroup>(e =>
         {
@@ -454,10 +545,11 @@ public class StreetSamuraiDbContext : DbContext
             e.Property(x => x.Name).HasMaxLength(400).IsRequired();
             e.Property(x => x.Slug).HasMaxLength(400).IsRequired();
             e.Property(x => x.Status).HasMaxLength(40);
-            // Slug is unique per type — two entities with the same name across kinds
-            // (a place "Silence" and a weapon "Silence") are valid. Wiki-link
-            // resolution disambiguates by type or by checking the most-canonical match.
-            e.HasIndex(x => new { x.EntityType, x.Slug }).IsUnique();
+            // Slug is unique per (universe, type) — a place "Silence" and a weapon
+            // "Silence" are valid, AND the same (type, slug) may recur in another
+            // universe (SS-LAW-15). Wiki-link resolution disambiguates by type.
+            e.HasIndex(x => new { x.UniverseId, x.EntityType, x.Slug })
+                .IsUnique().HasDatabaseName("UX_Entities_Universe_Type_Slug");
             e.HasIndex(x => x.Slug);
             e.HasIndex(x => x.EntityType);
             // Filtered index — most pages query active rows only; archived rows
@@ -472,6 +564,11 @@ public class StreetSamuraiDbContext : DbContext
             e.HasIndex(x => x.ModifiedAt)
                 .HasDatabaseName("IX_Entities_ModifiedAt_Active")
                 .HasFilter("[IsActive] = 1");
+            e.HasIndex(x => x.UniverseId);
+            // Universe scoping (SS-LAW-15) — the single point that transitively scopes EVERY
+            // entity type: EfRepository reads via Records→Entity, and the character read paths
+            // derive their id-set from Entities. No-op when ScopedUniverseId is Guid.Empty.
+            e.HasQueryFilter(x => ScopedUniverseId == Guid.Empty || x.UniverseId == ScopedUniverseId);
         });
 
         // ── Record (1:1 canonical JSON for an entity) ────────────────────────
@@ -513,6 +610,9 @@ public class StreetSamuraiDbContext : DbContext
                 .HasForeignKey(x => x.TargetId).OnDelete(DeleteBehavior.Restrict);
             e.HasIndex(x => new { x.SourceId, x.RelationType, x.StoryValidFrom });
             e.HasIndex(x => new { x.TargetId, x.RelationType, x.StoryValidFrom });
+            e.HasIndex(x => x.UniverseId);
+            // Universe scoping (RFC 0006). Source/target share a universe; no-op when unscoped.
+            e.HasQueryFilter(x => ScopedUniverseId == Guid.Empty || x.UniverseId == ScopedUniverseId);
             // Filtered indexes — "current edges only" is the hot read path
             // (family ties, lives_at, member_of, deployed_at all use
             // StoryValidUntil IS NULL). Without the filter SQL Server scans the
@@ -620,6 +720,10 @@ public class StreetSamuraiDbContext : DbContext
             e.HasKey(x => x.CharacterId);
             // No HasMaxLength → nvarchar(max) on SQL Server; TEXT on SQLite tests.
             e.HasIndex(x => x.Version);
+            e.HasIndex(x => x.UniverseId);
+            // Universe scoping (RFC 0006). Defense-in-depth — read-model ids already come from the
+            // filtered Entities set; this guards direct CharacterReadModels scans. No-op when unscoped.
+            e.HasQueryFilter(x => ScopedUniverseId == Guid.Empty || x.UniverseId == ScopedUniverseId);
         });
 
         // Per-character bridge tables — every list/dict/heterogeneous bag.
@@ -1077,8 +1181,10 @@ public class StreetSamuraiDbContext : DbContext
             e.HasKey(x => x.Id);
             e.Property(x => x.Title).HasMaxLength(400);
             e.Property(x => x.Slug).HasMaxLength(400);
-            e.HasIndex(x => x.Slug).IsUnique();
+            e.HasIndex(x => new { x.UniverseId, x.Slug }).IsUnique().HasDatabaseName("UX_Books_Universe_Slug");
             e.HasIndex(x => x.SeriesId);
+            // Universe scoping (SS-LAW-15). No-op when ScopedUniverseId is Guid.Empty.
+            e.HasQueryFilter(x => ScopedUniverseId == Guid.Empty || x.UniverseId == ScopedUniverseId);
         });
         b.Entity<BookProtagonist>(e => {
             e.HasKey(x => x.Id);
@@ -1138,8 +1244,16 @@ public class StreetSamuraiDbContext : DbContext
         // ── Settings (single-document) ────────────────────────────────────────
         b.Entity<Setting>(e =>
         {
-            e.HasKey(x => x.Key);
+            // Composite key so the same config Key recurs once per universe (RFC 0006).
+            e.HasKey(x => new { x.Key, x.UniverseId });
             e.Property(x => x.Key).HasMaxLength(120);
+            // Universe scoping: a row is visible when it belongs to the current universe OR is a
+            // SHARED operational row (action_configs / tts.rules / users.accounts). No-op when
+            // ScopedUniverseId is Guid.Empty (tests / pre-migration).
+            e.HasQueryFilter(x =>
+                ScopedUniverseId == Guid.Empty
+                || x.UniverseId == ScopedUniverseId
+                || x.UniverseId == SharedUniverseId);
         });
 
         // ── WeaponSpec (per-weapon structured key/value spec rows) ───────────
@@ -1218,6 +1332,9 @@ public class StreetSamuraiDbContext : DbContext
             // "All events tied to chapter X" rollups.
             e.HasIndex(x => x.ChapterId);
             e.HasIndex(x => x.BeatGuid);
+            e.HasIndex(x => x.UniverseId);
+            // Universe scoping (RFC 0006). No-op when unscoped.
+            e.HasQueryFilter(x => ScopedUniverseId == Guid.Empty || x.UniverseId == ScopedUniverseId);
         });
 
         // ── Continuity store (migrated from SQLite continuity.db) ────────────
@@ -1479,6 +1596,46 @@ public class StreetSamuraiDbContext : DbContext
         b.Entity<FlyoverEntityAlias>(e => { e.HasKey(x => x.Id); e.Property(x => x.Value).HasMaxLength(450); e.HasOne(x => x.FlyoverEntity).WithMany(x => x.Aliases).HasForeignKey(x => x.FlyoverEntityId).OnDelete(DeleteBehavior.Cascade); e.HasIndex(x => new { x.FlyoverEntityId, x.Position }); e.HasIndex(x => x.Value); });
         b.Entity<FlyoverEntityKnownLocation>(e => { e.HasKey(x => x.Id); e.Property(x => x.Alias).HasMaxLength(450); e.HasOne(x => x.FlyoverEntity).WithMany(x => x.KnownLocations).HasForeignKey(x => x.FlyoverEntityId).OnDelete(DeleteBehavior.Cascade); e.HasOne(x => x.Place).WithMany().HasForeignKey(x => x.PlaceId).OnDelete(DeleteBehavior.Restrict); e.HasIndex(x => new { x.FlyoverEntityId, x.Position }); e.HasIndex(x => x.PlaceId); });
         b.Entity<FlyoverEntityStoryHook>(e => { e.HasKey(x => x.Id); e.HasOne(x => x.FlyoverEntity).WithMany(x => x.StoryHooks).HasForeignKey(x => x.FlyoverEntityId).OnDelete(DeleteBehavior.Cascade); e.HasIndex(x => new { x.FlyoverEntityId, x.Position }); });
+
+        // SyntheticLife (ELFs / rogue AI / firmware-evolved entities)
+        b.Entity<SyntheticLife>(e => {
+            e.ToTable("SyntheticLives");
+            e.HasKey(x => x.Id);
+            e.Property(x => x.Name).HasMaxLength(450);
+            e.Property(x => x.KindOfBeing).HasMaxLength(120);
+            e.Property(x => x.Classification).HasMaxLength(120);
+            e.Property(x => x.Disposition).HasMaxLength(120);
+            e.Property(x => x.Habitat).HasMaxLength(120);
+            e.Property(x => x.Origin).HasMaxLength(120);
+            e.Property(x => x.LifeStatus).HasMaxLength(120);
+            e.Property(x => x.EncounterFrequency).HasMaxLength(120);
+            e.Property(x => x.Manufacturer).HasMaxLength(450);
+            e.Property(x => x.Tier).HasMaxLength(80);
+            e.Property(x => x.Location).HasMaxLength(450);
+            e.HasOne(x => x.Entity).WithOne().HasForeignKey<SyntheticLife>(x => x.Id).OnDelete(DeleteBehavior.Cascade);
+            e.HasIndex(x => x.Classification); e.HasIndex(x => x.Disposition); e.HasIndex(x => x.Name);
+        });
+        b.Entity<SyntheticLifeAlias>(e => {
+            e.ToTable("SyntheticLifeAliases");
+            e.HasKey(x => x.Id);
+            e.Property(x => x.Value).HasMaxLength(450);
+            e.HasOne(x => x.SyntheticLife).WithMany(x => x.Aliases).HasForeignKey(x => x.SyntheticLifeId).OnDelete(DeleteBehavior.Cascade);
+            e.HasIndex(x => new { x.SyntheticLifeId, x.Position }); e.HasIndex(x => x.Value);
+        });
+        b.Entity<SyntheticLifeKnownAssociation>(e => {
+            e.ToTable("SyntheticLifeKnownAssociations");
+            e.HasKey(x => x.Id);
+            e.Property(x => x.Alias).HasMaxLength(450);
+            e.HasOne(x => x.SyntheticLife).WithMany(x => x.KnownAssociations).HasForeignKey(x => x.SyntheticLifeId).OnDelete(DeleteBehavior.Cascade);
+            e.HasOne(x => x.Associate).WithMany().HasForeignKey(x => x.AssociateEntityId).OnDelete(DeleteBehavior.Restrict);
+            e.HasIndex(x => new { x.SyntheticLifeId, x.Position }); e.HasIndex(x => x.AssociateEntityId); e.HasIndex(x => x.Alias);
+        });
+        b.Entity<SyntheticLifeStoryHook>(e => {
+            e.ToTable("SyntheticLifeStoryHooks");
+            e.HasKey(x => x.Id);
+            e.HasOne(x => x.SyntheticLife).WithMany(x => x.StoryHooks).HasForeignKey(x => x.SyntheticLifeId).OnDelete(DeleteBehavior.Cascade);
+            e.HasIndex(x => new { x.SyntheticLifeId, x.Position });
+        });
     }
 
     /// <summary>Configures all 10 gear types and their bridge tables in one pass.</summary>
@@ -1539,10 +1696,13 @@ public class StreetSamuraiDbContext : DbContext
             e.Property(x => x.Manufacturer).HasMaxLength(450);
             e.Property(x => x.Category).HasMaxLength(120);
             e.Property(x => x.Name).HasMaxLength(450);
+            e.Property(x => x.PriceRange).HasMaxLength(200);
             e.HasOne(x => x.Entity).WithOne().HasForeignKey<Apparel>(x => x.Id).OnDelete(DeleteBehavior.Cascade);
             e.HasIndex(x => x.Manufacturer); e.HasIndex(x => x.Category); e.HasIndex(x => x.Name);
         });
         b.Entity<ApparelAlias>(e => { e.HasKey(x => x.Id); e.Property(x => x.Value).HasMaxLength(450); e.HasOne(x => x.Apparel).WithMany(x => x.Aliases).HasForeignKey(x => x.ApparelId).OnDelete(DeleteBehavior.Cascade); e.HasIndex(x => new { x.ApparelId, x.Position }); e.HasIndex(x => x.Value); });
+        b.Entity<ApparelMaterial>(e => { e.HasKey(x => x.Id); e.ToTable("ApparelMaterials"); e.HasOne(x => x.Apparel).WithMany(x => x.Materials).HasForeignKey(x => x.ApparelId).OnDelete(DeleteBehavior.Cascade); e.HasIndex(x => new { x.ApparelId, x.Position }); });
+        b.Entity<ApparelWornBy>(e => { e.HasKey(x => x.Id); e.ToTable("ApparelWornBy"); e.Property(x => x.Alias).HasMaxLength(450); e.HasOne(x => x.Apparel).WithMany(x => x.WornBy).HasForeignKey(x => x.ApparelId).OnDelete(DeleteBehavior.Cascade); e.HasOne(x => x.Character).WithMany().HasForeignKey(x => x.CharacterEntityId).OnDelete(DeleteBehavior.NoAction); e.HasIndex(x => new { x.ApparelId, x.Position }); e.HasIndex(x => x.CharacterEntityId); e.HasIndex(x => x.Alias); });
         b.Entity<ApparelStoryHook>(e => { e.HasKey(x => x.Id); e.HasOne(x => x.Apparel).WithMany(x => x.StoryHooks).HasForeignKey(x => x.ApparelId).OnDelete(DeleteBehavior.Cascade); e.HasIndex(x => new { x.ApparelId, x.Position }); });
 
         // Ammunition
@@ -1579,34 +1739,63 @@ public class StreetSamuraiDbContext : DbContext
         // Genemod
         b.Entity<Genemod>(e => {
             e.HasKey(x => x.Id);
+            e.Property(x => x.Name).HasMaxLength(450);
+            e.Property(x => x.BrandName).HasMaxLength(450);
+            e.Property(x => x.ProductName).HasMaxLength(450);
             e.Property(x => x.Manufacturer).HasMaxLength(450);
             e.Property(x => x.Category).HasMaxLength(120);
-            e.Property(x => x.Name).HasMaxLength(450);
+            e.Property(x => x.TargetSystem).HasMaxLength(450);
+            e.Property(x => x.SourceOrganism).HasMaxLength(450);
+            e.Property(x => x.Legality).HasMaxLength(200);
+            e.Property(x => x.Procedure).HasMaxLength(1000);
+            e.Property(x => x.ExpressionTime).HasMaxLength(200);
+            e.Property(x => x.Reversibility).HasMaxLength(200);
+            e.Property(x => x.SocialPerception).HasMaxLength(1000);
+            e.Property(x => x.TierAvailability).HasMaxLength(450);
             e.HasOne(x => x.Entity).WithOne().HasForeignKey<Genemod>(x => x.Id).OnDelete(DeleteBehavior.Cascade);
             e.HasIndex(x => x.Manufacturer); e.HasIndex(x => x.Category); e.HasIndex(x => x.Name);
+            e.HasIndex(x => x.TargetSystem);
         });
         b.Entity<GenemodAlias>(e => { e.HasKey(x => x.Id); e.Property(x => x.Value).HasMaxLength(450); e.HasOne(x => x.Genemod).WithMany(x => x.Aliases).HasForeignKey(x => x.GenemodId).OnDelete(DeleteBehavior.Cascade); e.HasIndex(x => new { x.GenemodId, x.Position }); e.HasIndex(x => x.Value); });
+        b.Entity<GenemodSideEffect>(e => { e.HasKey(x => x.Id); e.HasOne(x => x.Genemod).WithMany(x => x.SideEffects).HasForeignKey(x => x.GenemodId).OnDelete(DeleteBehavior.Cascade); e.HasIndex(x => new { x.GenemodId, x.Position }); });
         b.Entity<GenemodStoryHook>(e => { e.HasKey(x => x.Id); e.HasOne(x => x.Genemod).WithMany(x => x.StoryHooks).HasForeignKey(x => x.GenemodId).OnDelete(DeleteBehavior.Cascade); e.HasIndex(x => new { x.GenemodId, x.Position }); });
 
         // Material
         b.Entity<Material>(e => {
             e.HasKey(x => x.Id);
-            e.Property(x => x.Category).HasMaxLength(120);
             e.Property(x => x.Name).HasMaxLength(450);
+            e.Property(x => x.BrandName).HasMaxLength(450);
+            e.Property(x => x.ProductName).HasMaxLength(450);
+            e.Property(x => x.Category).HasMaxLength(120);
+            e.Property(x => x.TierAvailability).HasMaxLength(450);
+            e.Property(x => x.Cost).HasMaxLength(200);
             e.HasOne(x => x.Entity).WithOne().HasForeignKey<Material>(x => x.Id).OnDelete(DeleteBehavior.Cascade);
             e.HasIndex(x => x.Category); e.HasIndex(x => x.Name);
         });
         b.Entity<MaterialAlias>(e => { e.HasKey(x => x.Id); e.Property(x => x.Value).HasMaxLength(450); e.HasOne(x => x.Material).WithMany(x => x.Aliases).HasForeignKey(x => x.MaterialId).OnDelete(DeleteBehavior.Cascade); e.HasIndex(x => new { x.MaterialId, x.Position }); e.HasIndex(x => x.Value); });
+        b.Entity<MaterialProperty>(e => { e.HasKey(x => x.Id); e.HasOne(x => x.Material).WithMany(x => x.Properties).HasForeignKey(x => x.MaterialId).OnDelete(DeleteBehavior.Cascade); e.HasIndex(x => new { x.MaterialId, x.Position }); });
+        b.Entity<MaterialDeveloper>(e => { e.HasKey(x => x.Id); e.HasOne(x => x.Material).WithMany(x => x.Developers).HasForeignKey(x => x.MaterialId).OnDelete(DeleteBehavior.Cascade); e.HasIndex(x => new { x.MaterialId, x.Position }); });
+        b.Entity<MaterialApplication>(e => { e.HasKey(x => x.Id); e.HasOne(x => x.Material).WithMany(x => x.Applications).HasForeignKey(x => x.MaterialId).OnDelete(DeleteBehavior.Cascade); e.HasIndex(x => new { x.MaterialId, x.Position }); });
         b.Entity<MaterialStoryHook>(e => { e.HasKey(x => x.Id); e.HasOne(x => x.Material).WithMany(x => x.StoryHooks).HasForeignKey(x => x.MaterialId).OnDelete(DeleteBehavior.Cascade); e.HasIndex(x => new { x.MaterialId, x.Position }); });
 
         // Transportation
         b.Entity<Transportation>(e => {
             e.HasKey(x => x.Id);
+            e.Property(x => x.Name).HasMaxLength(450);
             e.Property(x => x.Manufacturer).HasMaxLength(450);
             e.Property(x => x.Category).HasMaxLength(120);
-            e.Property(x => x.Name).HasMaxLength(450);
+            e.Property(x => x.Propulsion).HasMaxLength(450);
+            e.Property(x => x.Speed).HasMaxLength(200);
+            e.Property(x => x.Capacity).HasMaxLength(200);
+            e.Property(x => x.Range).HasMaxLength(200);
+            e.Property(x => x.TierAvailability).HasMaxLength(450);
+            e.Property(x => x.Cost).HasMaxLength(200);
+            e.Property(x => x.Autonomy).HasMaxLength(450);
+            e.Property(x => x.Armament).HasMaxLength(1000);
+            e.Property(x => x.CommonUsage).HasMaxLength(1000);
             e.HasOne(x => x.Entity).WithOne().HasForeignKey<Transportation>(x => x.Id).OnDelete(DeleteBehavior.Cascade);
             e.HasIndex(x => x.Manufacturer); e.HasIndex(x => x.Category); e.HasIndex(x => x.Name);
+            e.HasIndex(x => x.Propulsion);
         });
         b.Entity<TransportationAlias>(e => { e.HasKey(x => x.Id); e.Property(x => x.Value).HasMaxLength(450); e.HasOne(x => x.Transportation).WithMany(x => x.Aliases).HasForeignKey(x => x.TransportationId).OnDelete(DeleteBehavior.Cascade); e.HasIndex(x => new { x.TransportationId, x.Position }); e.HasIndex(x => x.Value); });
         b.Entity<TransportationStoryHook>(e => { e.HasKey(x => x.Id); e.HasOne(x => x.Transportation).WithMany(x => x.StoryHooks).HasForeignKey(x => x.TransportationId).OnDelete(DeleteBehavior.Cascade); e.HasIndex(x => new { x.TransportationId, x.Position }); });
@@ -1738,6 +1927,13 @@ public class StreetSamuraiDbContext : DbContext
             e.HasIndex(x => x.TargetFactionId);
             e.HasIndex(x => x.Alias);
         });
+        b.Entity<FactionRelationshipTag>(e => {
+            e.HasKey(x => x.Id);
+            e.Property(x => x.Value).HasMaxLength(450);
+            e.HasOne(x => x.FactionRelationshipRow).WithMany(x => x.Tags)
+                .HasForeignKey(x => x.FactionRelationshipRowId).OnDelete(DeleteBehavior.Cascade);
+            e.HasIndex(x => new { x.FactionRelationshipRowId, x.Position });
+        });
         b.Entity<FactionMemberRow>(e => {
             e.HasKey(x => x.Id);
             e.Property(x => x.Alias).HasMaxLength(450);
@@ -1803,10 +1999,11 @@ public class StreetSamuraiDbContext : DbContext
         // Faction relational schema.
         "Factions",
         "FactionAliases", "FactionMethods", "FactionResources", "FactionGoals",
-        "FactionStoryHooks", "FactionRelationships", "FactionMembers",
+        "FactionStoryHooks", "FactionRelationships", "FactionRelationshipTags", "FactionMembers",
         // Corponation / Subsidiary / SyntheticLife / Automaton relational schemas.
         "Corponations", "CorponationCommonNames",
         "Subsidiaries", "SubsidiaryProducts",
+        "SyntheticLives", "SyntheticLifeAliases", "SyntheticLifeKnownAssociations", "SyntheticLifeStoryHooks",
         "Automata", "AutomatonAliases", "AutomatonArmament", "AutomatonSensors",
         "AutomatonDeployments", "AutomatonStoryHooks",
         // Gear cluster.
@@ -1816,13 +2013,14 @@ public class StreetSamuraiDbContext : DbContext
         "EquipmentKnownUsers", "EquipmentSpecifications", "EquipmentStoryHooks",
         "CyberwareItems", "CyberwareItemAliases", "CyberwareItemSideEffects",
         "CyberwareItemKnownUsers", "CyberwareItemStoryHooks",
-        "Apparels", "ApparelAliases", "ApparelStoryHooks",
+        "Apparels", "ApparelAliases", "ApparelMaterials", "ApparelWornBy", "ApparelStoryHooks",
         "Ammunitions", "AmmunitionAliases", "AmmunitionCompatibleWeapons",
         "AmmunitionVariants", "AmmunitionStoryHooks",
         "Pharmaceuticals", "PharmaceuticalAliases", "PharmaceuticalEffects",
         "PharmaceuticalSideEffects", "PharmaceuticalStoryHooks",
-        "Genemods", "GenemodAliases", "GenemodStoryHooks",
-        "Materials", "MaterialAliases", "MaterialStoryHooks",
+        "Genemods", "GenemodAliases", "GenemodSideEffects", "GenemodStoryHooks",
+        "Materials", "MaterialAliases", "MaterialProperties", "MaterialDevelopers",
+        "MaterialApplications", "MaterialStoryHooks",
         "Transportations", "TransportationAliases", "TransportationStoryHooks",
         "ConsumerGoods", "ConsumerGoodAliases", "ConsumerGoodStoryHooks",
         // Misc cluster

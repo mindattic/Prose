@@ -52,7 +52,7 @@ public class RandomEncounterService
         var dangerLevel = currentTension < 4 ? "low" : currentTension < 7 ? "medium" : "high";
 
         var system = $"""
-            You are generating a random street encounter for near-future fiction in GLMZ.
+            {(UniverseScope.Current?.UniverseGroundingOr("You are generating a random street encounter for near-future fiction in GLMZ.") ?? "You are generating a random street encounter for near-future fiction in GLMZ.")}
             This interrupts the current scene — it should feel sudden, organic, and have
             consequences even if the protagonists choose to walk away.
 

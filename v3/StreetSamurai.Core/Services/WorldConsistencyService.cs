@@ -52,7 +52,7 @@ public class WorldConsistencyService : PipelineServiceBase
     ];
 
     // Hardcoded world rules — each rule has a label and patterns that indicate a violation
-    private static readonly (string Rule, string[] Patterns)[] WorldRules =
+    private static readonly (string Rule, string[] Patterns)[] UniverseRules =
     [
         ("No city police",
             ["metro police", "meridian pd", "meridian police department", "glmz police",
@@ -137,7 +137,7 @@ public class WorldConsistencyService : PipelineServiceBase
                 var text = (rec.Json ?? "").ToLowerInvariant();
                 var name = ExtractName(rec.Json);
 
-                foreach (var (rule, patterns) in WorldRules)
+                foreach (var (rule, patterns) in UniverseRules)
                 {
                     foreach (var pattern in patterns)
                     {
@@ -187,7 +187,7 @@ public class WorldConsistencyService : PipelineServiceBase
         if (string.IsNullOrWhiteSpace(text)) return hits;
         var lower = text.ToLowerInvariant();
 
-        foreach (var (rule, patterns) in WorldRules)
+        foreach (var (rule, patterns) in UniverseRules)
         {
             foreach (var pattern in patterns)
             {
@@ -217,8 +217,10 @@ public class WorldConsistencyService : PipelineServiceBase
             Notify("Phase 2 — Conflict Check", i, entities.Count, $"window {i / windowSize + 1}");
 
             var window = entities.Skip(i).Take(windowSize).ToList();
+            var conflictLead = UniverseScope.Current?.UniverseGroundingOr("Review these GLMZ worldbuilding entities for internal contradictions.")
+                ?? "Review these GLMZ worldbuilding entities for internal contradictions.";
             var prompt = $$"""
-                Review these GLMZ worldbuilding entities for internal contradictions.
+                {{conflictLead}}
                 Look for: factual conflicts between entities, impossible affiliations, timeline contradictions,
                 zone/location inconsistencies, or violations of established world logic.
 
@@ -240,7 +242,8 @@ public class WorldConsistencyService : PipelineServiceBase
             try
             {
                 var response = await claude.GenerateAsync(
-                    system: "You are a world-consistency checker for cyberpunk fiction. Return valid JSON only.",
+                    system: UniverseScope.Current?.UniverseGroundingOr("You are a world-consistency checker for cyberpunk fiction. Return valid JSON only.")
+                        ?? "You are a world-consistency checker for cyberpunk fiction. Return valid JSON only.",
                     user: prompt,
                     temperature: 0,
                     maxTokens: 1024,

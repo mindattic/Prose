@@ -41,6 +41,11 @@ Log.Logger = new LoggerConfiguration()
         shared: true)
     .CreateLogger();
 
+// Multi-universe: honor a `--universe <slug>` arg (and the SS_UNIVERSE env var)
+// so an MCP session can target GLMZ or Fantasy independently of other processes
+// (SS-LAW-15). A switch_universe tool can also change it mid-session.
+UniverseBootstrap.RequestedSlug ??= UniverseBootstrap.ParseSlug(args);
+
 var builder = Host.CreateApplicationBuilder(args);
 
 // Route the framework log pipeline through Serilog (file-only, no console).
@@ -58,4 +63,8 @@ builder.Services
     .WithStdioServerTransport()
     .WithToolsFromAssembly();
 
-await builder.Build().RunAsync();
+var mcpHost = builder.Build();
+// Construct the universe context up front so canon reads are scoped to the
+// requested universe (--universe / SS_UNIVERSE) from the first tool call.
+mcpHost.Services.GetRequiredService<IUniverseContext>();
+await mcpHost.RunAsync();

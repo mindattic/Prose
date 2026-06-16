@@ -1,6 +1,6 @@
 namespace StreetSamurai.Core.Models;
 
-public record WorldRules
+public record UniverseRules
 {
     public LiteraryRules Literary { get; init; } = new();
     public StoryBible Bible { get; init; } = new();

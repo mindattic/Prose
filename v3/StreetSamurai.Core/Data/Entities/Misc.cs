@@ -466,3 +466,80 @@ public class FlyoverEntityKnownLocation
 }
 public class FlyoverEntityStoryHook { public long Id { get; set; } public Guid FlyoverEntityId { get; set; } public int Position { get; set; } public string Hook { get; set; } = ""; public FlyoverEntity? FlyoverEntity { get; set; } }
 
+// ── SyntheticLife (ELFs / rogue AI / firmware-evolved entities) ───────────
+
+public class SyntheticLife
+{
+    public Guid Id { get; set; }
+    /// <summary>Canonical name. Mirrors Entity.Name.</summary>
+    public string Name { get; set; } = "";
+
+    public string KindOfBeing       { get; set; } = "";
+    public string Manufacturer      { get; set; } = "";
+    public string Tier              { get; set; } = "";
+    public double Rating            { get; set; }
+    public int    VoteCount         { get; set; }
+
+    public string Classification    { get; set; } = "";
+    public string Disposition       { get; set; } = "";
+    public string Habitat           { get; set; } = "";
+    public string Origin            { get; set; } = "";
+    public string LifeStatus        { get; set; } = "";
+    public string Description       { get; set; } = "";
+    public string ObservedBehavior  { get; set; } = "";
+    public string EncounterFrequency{ get; set; } = "";
+    public int    ConfirmedSightings{ get; set; }
+    public string Location          { get; set; } = "";
+    public double DtiRating         { get; set; }
+    public bool   Paratechnological { get; set; }
+
+    public string? KnownAge            { get; set; }
+    public string? CrackPattern        { get; set; }
+    public string? CurrentRole         { get; set; }
+    public string? KnownLocation       { get; set; }
+    public string? DiplomaticSpecialty { get; set; }
+    public string? OperatingHistory    { get; set; }
+    public string? BehavioralNotes     { get; set; }
+    public string? DamageHistory       { get; set; }
+    public string? FaceDecoration      { get; set; }
+
+    public string MidjourneyPrompt { get; set; } = "";
+    public string Dalle3Prompt     { get; set; } = "";
+
+    public Entity? Entity { get; set; }
+    public ICollection<SyntheticLifeAlias>            Aliases            { get; set; } = new List<SyntheticLifeAlias>();
+    public ICollection<SyntheticLifeKnownAssociation> KnownAssociations  { get; set; } = new List<SyntheticLifeKnownAssociation>();
+    public ICollection<SyntheticLifeStoryHook>        StoryHooks         { get; set; } = new List<SyntheticLifeStoryHook>();
+}
+
+public class SyntheticLifeAlias
+{
+    public long Id             { get; set; }
+    public Guid SyntheticLifeId { get; set; }
+    public int  Position       { get; set; }
+    public string Value        { get; set; } = "";
+    public SyntheticLife? SyntheticLife { get; set; }
+}
+
+public class SyntheticLifeKnownAssociation
+{
+    public long Id              { get; set; }
+    public Guid SyntheticLifeId { get; set; }
+    public int  Position        { get; set; }
+    /// <summary>Alias string preserved from blob; resolved to FK when entity found.</summary>
+    public string Alias         { get; set; } = "";
+    /// <summary>Nullable FK to an Entity (character, faction, etc.) when resolved.</summary>
+    public Guid? AssociateEntityId { get; set; }
+    public SyntheticLife? SyntheticLife { get; set; }
+    public Entity? Associate    { get; set; }
+}
+
+public class SyntheticLifeStoryHook
+{
+    public long Id              { get; set; }
+    public Guid SyntheticLifeId { get; set; }
+    public int  Position        { get; set; }
+    public string Hook          { get; set; } = "";
+    public SyntheticLife? SyntheticLife { get; set; }
+}
+

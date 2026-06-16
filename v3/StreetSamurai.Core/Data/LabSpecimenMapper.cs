@@ -253,8 +253,10 @@ public static class LabSpecimenMapper
             DefaultIgnoreCondition = System.Text.Json.Serialization.JsonIgnoreCondition.WhenWritingNull,
         };
 
+        // Include INACTIVE entities too: every blob-bearing entity must get a relational row so
+        // the Records blob can be retired without losing archived/soft-deleted canon (RFC 0007 gate).
         var specimenEntityIds = db.Entities.AsNoTracking()
-            .Where(e => e.EntityType == "lab_specimen" && e.IsActive)
+            .Where(e => e.EntityType == "lab_specimen")
             .Select(e => e.Id)
             .ToHashSet();
 

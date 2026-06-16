@@ -237,7 +237,7 @@ public class StoryQualityService
                     .ToList();
 
                 if (lowDims.Contains("WORLD_SPECIFICITY"))
-                    directives.Add("WORLD SPECIFICITY IS LOW: Name specific corponation brands, tier levels, locations, and QUANTA prices. Make GLMZ feel textured, not generic.");
+                    directives.Add(UniverseScope.Current?.UniverseGroundingOr("WORLD SPECIFICITY IS LOW: Name specific corponation brands, tier levels, locations, and QUANTA prices. Make GLMZ feel textured, not generic.") ?? "WORLD SPECIFICITY IS LOW: Name specific corponation brands, tier levels, locations, and QUANTA prices. Make GLMZ feel textured, not generic.");
                 if (lowDims.Contains("MORAL_COMPLEXITY"))
                     directives.Add("MORAL COMPLEXITY IS LOW: Give the antagonist a coherent worldview. Make the protagonist's 'win' cost something real. Avoid clean resolutions.");
                 if (lowDims.Contains("DIALOGUE_QUALITY"))
@@ -293,7 +293,8 @@ public class StoryQualityService
     /// Domain-specific evaluator context injected into LLMVoting's ScoredVoteRequest.
     /// Provides the rubric framing; LLMVoting enforces the JSON output schema.
     /// </summary>
-    private static string BuildEvaluatorContext() => """
+    private static string BuildEvaluatorContext() =>
+        (UniverseScope.Current?.IsGlmz ?? true) ? """
         You are a literary critic evaluating a neo-noir short story set in GLMZ
         (also called Meridian 88 by informed characters, or The Glooms by Gray Zone residents).
         The city is consumed by corporate sovereignty, aug-culture, and institutional collapse.
@@ -341,7 +342,7 @@ public class StoryQualityService
 
         In flags_bad, include specific genre clichés found with quotes from the text.
         In flags_good, include specific strengths with quotes from the text.
-        """;
+        """ : (UniverseScope.Current?.UniverseGroundingOr("") ?? "");
 
 
     private void Save(string projectId, StoryQualityReport report)

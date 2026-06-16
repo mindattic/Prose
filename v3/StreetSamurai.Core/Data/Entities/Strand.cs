@@ -17,6 +17,11 @@ public class Strand
     /// <summary>UUIDv7.</summary>
     public Guid Id { get; set; }
 
+    /// <summary>The universe this strand belongs to (1:M). A story lives in exactly one universe;
+    /// stamped on insert from the current universe, backfilled to GLMZ for pre-existing rows
+    /// (SS-LAW-15).</summary>
+    public Guid UniverseId { get; set; }
+
     /// <summary>URL-safe slug, used as <c>/strand/{slug}</c> route key and as
     /// the on-disk directory name under <c>engine/strands/{slug}/</c>.</summary>
     public string Slug { get; set; } = "";

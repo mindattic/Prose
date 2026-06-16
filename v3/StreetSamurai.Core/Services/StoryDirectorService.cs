@@ -99,7 +99,8 @@ public class StoryDirectorService : IStoryDirectorService
         OutlineReviewService outlineReview, StoryQualityService quality,
         CanonGroundingService canonGrounding, CanonRetrievalService canonRetrieval,
         IDbContextFactory<StreetSamuraiDbContext>? dbFactory = null,
-        BookOutlineService? bookOutline = null, IChapterRepository? chapterRepo = null)
+        BookOutlineService? bookOutline = null, IChapterRepository? chapterRepo = null,
+        IUniverseContext? universe = null)
     {
         this.llm = llm;
         this.db = db;
@@ -128,9 +129,21 @@ public class StoryDirectorService : IStoryDirectorService
         this.dbFactory = dbFactory;
         this.bookOutline = bookOutline;
         this.chapterRepo = chapterRepo;
+        this.universe = universe;
     }
 
     private readonly IDbContextFactory<StreetSamuraiDbContext>? dbFactory;
+    private readonly IUniverseContext? universe;
+
+    /// <summary>
+    /// The "ensure a violent conflict" outline directive — GLMZ canon (a dangerous world). Empty for
+    /// any other universe (a cozy/steampunk world isn't forced into combat), so this GLMZ card never
+    /// bleeds across universes (RFC 0006). Trailing-space-free; callers prepend their own separator.
+    /// </summary>
+    private string CombatMandate =>
+        (universe?.IsGlmz ?? true)
+            ? "IMPORTANT: GLMZ is a dangerous world. This story MUST include at least one battle/combat/violent conflict scene. Random crime and violence can erupt at any time. Include at least one beat specifically tagged for combat."
+            : "";
 
     /// <summary>
     /// Idempotent column-add. Wired into <c>--repair</c>'s schema-bootstrap.
@@ -186,7 +199,7 @@ public class StoryDirectorService : IStoryDirectorService
             // Phase 4: Generate outline with mandatory battle beat + world consequences.
             Report("Architecting story arc...");
             var consequenceContext = consequences.BuildConsequenceContext(cast.protagonist);
-            var battlePremise = premise + "\n\nIMPORTANT: GLMZ is a dangerous world. This story MUST include at least one battle/combat/violent conflict scene. Random crime and violence can erupt at any time. Include at least one beat specifically tagged for combat."
+            var battlePremise = premise + (CombatMandate.Length > 0 ? "\n\nIMPORTANT: GLMZ is a dangerous world. This story MUST include at least one battle/combat/violent conflict scene. Random crime and violence can erupt at any time. Include at least one beat specifically tagged for combat." : "")
                 + (consequenceContext.Length > 0 ? $"\n\nWORLD CONSEQUENCES FROM PREVIOUS STORIES:\n{consequenceContext}" : "");
             var outline = await outlineSvc.GenerateOutlineAsync(battlePremise, cast.all, location, 8, ct);
             story.Outline = outline;
@@ -306,7 +319,7 @@ public class StoryDirectorService : IStoryDirectorService
             Report("Architecting story arc...");
             var consequenceContext = consequences.BuildConsequenceContext(cast.protagonist);
             var battlePremise = premise
-                + "\n\nIMPORTANT: GLMZ is a dangerous world. This story MUST include at least one battle/combat/violent conflict scene."
+                + (CombatMandate.Length > 0 ? "\n\nIMPORTANT: GLMZ is a dangerous world. This story MUST include at least one battle/combat/violent conflict scene." : "")
                 + (consequenceContext.Length > 0 ? $"\n\nWORLD CONSEQUENCES FROM PREVIOUS STORIES:\n{consequenceContext}" : "");
             var outline = await outlineSvc.GenerateOutlineAsync(battlePremise, cast.all, location, 8, ct);
             story.Outline = outline;
@@ -428,7 +441,7 @@ public class StoryDirectorService : IStoryDirectorService
             var consequenceContext = consequences.BuildConsequenceContext(primary.Name);
             var guidedPremise =
                 $"USER-SUPPLIED SYNOPSIS (this is the story the user asked for — honor its premise, characters, and direction):\n{synopsis.Trim()}"
-                + "\n\nIMPORTANT: GLMZ is a dangerous world. This story MUST include at least one battle/combat/violent conflict scene. Random crime and violence can erupt at any time. Include at least one beat specifically tagged for combat."
+                + (CombatMandate.Length > 0 ? "\n\nIMPORTANT: GLMZ is a dangerous world. This story MUST include at least one battle/combat/violent conflict scene. Random crime and violence can erupt at any time. Include at least one beat specifically tagged for combat." : "")
                 + (consequenceContext.Length > 0 ? $"\n\nWORLD CONSEQUENCES FROM PREVIOUS STORIES:\n{consequenceContext}" : "");
 
             var outline = await outlineSvc.GenerateOutlineAsync(guidedPremise, cast, chosenLocation, targetBeats, ct);
@@ -1119,7 +1132,11 @@ public class StoryDirectorService : IStoryDirectorService
         if (midpoint < act2.Beats.Count)
         {
             var beat = act2.Beats[midpoint];
-            beat.Goal = "BATTLE: " + beat.Goal + ". Violence erupts — GLMZ is a dangerous place. The conflict should feel sudden, visceral, and have consequences for the characters involved.";
+            var inGlmz = UniverseScope.EffectiveId == Data.Entities.Universe.GlmzId
+                         || UniverseScope.EffectiveId == Guid.Empty;
+            beat.Goal = "BATTLE: " + beat.Goal + ". Violence erupts"
+                + (inGlmz ? " — GLMZ is a dangerous place" : "")
+                + ". The conflict should feel sudden, visceral, and have consequences for the characters involved.";
             beat.Tension = Math.Max(beat.Tension, 8);
         }
     }
@@ -1280,7 +1297,7 @@ public class StoryDirectorService : IStoryDirectorService
                 var consequenceContext = consequences.BuildConsequenceContext(primary);
                 var premise =
                     $"USER-SUPPLIED SYNOPSIS (this is the story the user asked for — honor its premise, characters, and direction):\n{story.Premise.Trim()}"
-                    + "\n\nIMPORTANT: GLMZ is a dangerous world. This story MUST include at least one battle/combat/violent conflict scene. Random crime and violence can erupt at any time. Include at least one beat specifically tagged for combat."
+                    + (CombatMandate.Length > 0 ? "\n\nIMPORTANT: GLMZ is a dangerous world. This story MUST include at least one battle/combat/violent conflict scene. Random crime and violence can erupt at any time. Include at least one beat specifically tagged for combat." : "")
                     + (consequenceContext.Length > 0 ? $"\n\nWORLD CONSEQUENCES FROM PREVIOUS STORIES:\n{consequenceContext}" : "");
 
                 var outline = await outlineSvc.GenerateOutlineAsync(premise, cast, location, targetBeats: 8, ct);

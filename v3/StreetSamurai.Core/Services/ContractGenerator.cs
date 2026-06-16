@@ -96,7 +96,7 @@ public class ContractGenerator
         var payout = $"Φ{payoutBase:N0}";
 
         var system = $"""
-            You are a contract designer for neo-noir freelancer fiction set in GLMZ.
+            {(UniverseScope.Current?.UniverseGroundingOr("You are a contract designer for neo-noir freelancer fiction set in GLMZ.") ?? "You are a contract designer for neo-noir freelancer fiction set in GLMZ.")}
             Design a job contract that a fixer would offer to a street operator.
 
             AVAILABLE WORLD ELEMENTS:

@@ -85,6 +85,7 @@ public class EmbeddingService
             BEGIN
                 CREATE TABLE [dbo].[EntityEmbeddings] (
                     [EntityId]   UNIQUEIDENTIFIER NOT NULL,
+                    [UniverseId] UNIQUEIDENTIFIER NOT NULL CONSTRAINT [DF_EntityEmbeddings_UniverseId] DEFAULT '0197e9c9-0001-7000-8000-000000000001',
                     [SourceHash] VARBINARY(32)    NOT NULL,
                     [Vector]     VECTOR(1536)     NOT NULL,
                     [Dimensions] INT              NOT NULL,
@@ -103,6 +104,7 @@ public class EmbeddingService
                 CREATE TABLE [dbo].[ProseEmbeddings] (
                     [ScopeKind]  NVARCHAR(20)     NOT NULL,
                     [ScopeId]    UNIQUEIDENTIFIER NOT NULL,
+                    [UniverseId] UNIQUEIDENTIFIER NOT NULL CONSTRAINT [DF_ProseEmbeddings_UniverseId] DEFAULT '0197e9c9-0001-7000-8000-000000000001',
                     [SourceHash] VARBINARY(32)    NOT NULL,
                     [Vector]     VECTOR(1536)     NOT NULL,
                     [Dimensions] INT              NOT NULL,
@@ -198,12 +200,14 @@ public class EmbeddingService
                            Vector     = CAST(@p_json AS VECTOR(1536)),
                            Dimensions = @p_dims,
                            EmbeddedAt = @p_at,
-                           Model      = @p_model
+                           Model      = @p_model,
+                           UniverseId = @p_universe
             WHEN NOT MATCHED THEN
-                INSERT (ScopeKind, ScopeId, SourceHash, Vector, Dimensions, EmbeddedAt, Model)
-                VALUES (@p_kind, @p_id, @p_hash, CAST(@p_json AS VECTOR(1536)), @p_dims, @p_at, @p_model);
+                INSERT (ScopeKind, ScopeId, UniverseId, SourceHash, Vector, Dimensions, EmbeddedAt, Model)
+                VALUES (@p_kind, @p_id, @p_universe, @p_hash, CAST(@p_json AS VECTOR(1536)), @p_dims, @p_at, @p_model);
             """;
         await db.Database.ExecuteSqlRawAsync(sql,
+            new Microsoft.Data.SqlClient.SqlParameter("@p_universe", EmbedUniverseId()),
             new Microsoft.Data.SqlClient.SqlParameter("@p_kind", scopeKind),
             new Microsoft.Data.SqlClient.SqlParameter("@p_id", scopeId),
             new Microsoft.Data.SqlClient.SqlParameter("@p_hash", hash),
@@ -235,6 +239,7 @@ public class EmbeddingService
         {
             new("@p_k", Math.Max(1, k)),
             new("@p_query", queryJson),
+            new("@p_universe", QueryUniverseId()),
         };
         var scopeFilter = "";
         if (!string.IsNullOrWhiteSpace(scopeKind))
@@ -243,11 +248,15 @@ public class EmbeddingService
             parameters.Add(new Microsoft.Data.SqlClient.SqlParameter("@p_kind", scopeKind));
         }
 
+        // Universe scope is always applied; the optional ScopeKind filter is ANDed onto it.
+        var universeClause = scopeFilter.Length > 0
+            ? scopeFilter + " AND (@p_universe = '00000000-0000-0000-0000-000000000000' OR UniverseId = @p_universe)"
+            : " WHERE (@p_universe = '00000000-0000-0000-0000-000000000000' OR UniverseId = @p_universe)";
         var sql = $"""
             SELECT TOP (@p_k)
                 ScopeKind, ScopeId,
                 1.0 - VECTOR_DISTANCE('cosine', Vector, CAST(@p_query AS VECTOR(1536))) AS Similarity
-            FROM dbo.ProseEmbeddings{scopeFilter}
+            FROM dbo.ProseEmbeddings{universeClause}
             ORDER BY VECTOR_DISTANCE('cosine', Vector, CAST(@p_query AS VECTOR(1536))) ASC;
             """;
 
@@ -342,6 +351,7 @@ public class EmbeddingService
         {
             new("@p_k", Math.Max(1, k) * 2),
             new("@p_query", queryJson),
+            new("@p_universe", QueryUniverseId()),
         };
         var scopeFilter = "";
         if (strandScope is Guid sid)
@@ -356,7 +366,8 @@ public class EmbeddingService
                 1.0 - VECTOR_DISTANCE('cosine', pe.Vector, CAST(@p_query AS VECTOR(1536))) AS Similarity
             FROM dbo.ProseEmbeddings pe
             JOIN dbo.StrandBeats sb ON sb.BeatId = pe.ScopeId AND sb.IsEnabled = 1
-            WHERE pe.ScopeKind = '{ScopeStrandBeat}'{scopeFilter}
+            WHERE pe.ScopeKind = '{ScopeStrandBeat}'
+              AND (@p_universe = '00000000-0000-0000-0000-000000000000' OR pe.UniverseId = @p_universe){scopeFilter}
             ORDER BY VECTOR_DISTANCE('cosine', pe.Vector, CAST(@p_query AS VECTOR(1536))) ASC;
             """;
 
@@ -534,6 +545,15 @@ public class EmbeddingService
     /// VECTOR(1536) column is populated server-side via CAST. EF Core can't
     /// bind the VECTOR type natively yet; this is the workaround.
     /// </summary>
+    /// <summary>The universe to stamp on a freshly-written embedding (RFC 0006). Embedding runs
+    /// under the current universe scope; fall back to GLMZ when no scope is wired.</summary>
+    private static Guid EmbedUniverseId()
+        => UniverseScope.EffectiveId == Guid.Empty ? Universe.GlmzId : UniverseScope.EffectiveId;
+
+    /// <summary>Universe id used to FILTER a similarity query — the raw <see cref="UniverseScope.EffectiveId"/>;
+    /// <c>Guid.Empty</c> means "no scope" and the SQL predicate lets every universe through.</summary>
+    private static Guid QueryUniverseId() => UniverseScope.EffectiveId;
+
     private static async Task UpsertVectorRawAsync(
         StreetSamuraiDbContext db, Guid entityId, byte[] hash, float[] vector, CancellationToken ct)
     {
@@ -547,13 +567,15 @@ public class EmbeddingService
                            Vector     = CAST(@p_json AS VECTOR(1536)),
                            Dimensions = @p_dims,
                            EmbeddedAt = @p_at,
-                           Model      = @p_model
+                           Model      = @p_model,
+                           UniverseId = @p_universe
             WHEN NOT MATCHED THEN
-                INSERT (EntityId, SourceHash, Vector, Dimensions, EmbeddedAt, Model)
-                VALUES (@p_id, @p_hash, CAST(@p_json AS VECTOR(1536)), @p_dims, @p_at, @p_model);
+                INSERT (EntityId, UniverseId, SourceHash, Vector, Dimensions, EmbeddedAt, Model)
+                VALUES (@p_id, @p_universe, @p_hash, CAST(@p_json AS VECTOR(1536)), @p_dims, @p_at, @p_model);
             """;
         await db.Database.ExecuteSqlRawAsync(sql,
             new Microsoft.Data.SqlClient.SqlParameter("@p_id", entityId),
+            new Microsoft.Data.SqlClient.SqlParameter("@p_universe", EmbedUniverseId()),
             new Microsoft.Data.SqlClient.SqlParameter("@p_hash", hash),
             new Microsoft.Data.SqlClient.SqlParameter("@p_json", json),
             new Microsoft.Data.SqlClient.SqlParameter("@p_dims", vector.Length),
@@ -590,6 +612,7 @@ public class EmbeddingService
         {
             new("@p_k", Math.Max(1, k)),
             new("@p_query", queryJson),
+            new("@p_universe", QueryUniverseId()),
         };
         if (entityTypes is { Count: > 0 })
         {
@@ -612,7 +635,8 @@ public class EmbeddingService
                 1.0 - VECTOR_DISTANCE('cosine', emb.Vector, CAST(@p_query AS VECTOR(1536))) AS Similarity
             FROM dbo.EntityEmbeddings emb
             JOIN dbo.Entities ent ON ent.Id = emb.EntityId
-            WHERE ent.IsActive = 1{typeFilter}
+            WHERE ent.IsActive = 1
+              AND (@p_universe = '00000000-0000-0000-0000-000000000000' OR emb.UniverseId = @p_universe){typeFilter}
             ORDER BY VECTOR_DISTANCE('cosine', emb.Vector, CAST(@p_query AS VECTOR(1536))) ASC;
             """;
 

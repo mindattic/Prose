@@ -262,20 +262,320 @@ public class CharacterRepository : EfRepository<CharacterData>
     }
 }
 
+/// <summary>
+/// Fully relational CorponationRepository. Reads materialize CorponationData from the
+/// Corponations table + CorponationCommonNames bridge — never from Records.Json. Writes
+/// persist via <see cref="CorponationMapper"/>. Records.Json is left intact (additive-only).
+/// </summary>
 public class CorponationRepository : EfRepository<CorponationData>
 {
     public CorponationRepository(IDbContextFactory<StreetSamuraiDbContext> db)
         : base(db, "corponation", c => c.Name) { }
     public CorponationRepository(IPathProvider paths)
         : base(TestDbFactory.For(paths, "corponation"), "corponation", c => c.Name) { }
+
+    private List<CorponationData>? mappedCache;
+    private int mappedCacheEpoch = -1;
+    private readonly object mappedCacheLock = new();
+
+    private List<CorponationData>? mappedCacheLite;
+    private int mappedCacheLiteEpoch = -1;
+    private readonly object mappedCacheLiteLock = new();
+
+    public override List<CorponationData> GetAll()
+    {
+        lock (mappedCacheLock)
+        {
+            if (mappedCache != null && mappedCacheEpoch == UniverseScope.Epoch) return mappedCache;
+        }
+        using var db = dbFactory.CreateDbContext();
+        var loaded = CorponationMapper.LoadAll(db, includeArchived: false);
+        lock (mappedCacheLock) { mappedCache = loaded; mappedCacheEpoch = UniverseScope.Epoch; }
+        return loaded;
+    }
+
+    public List<CorponationData> GetAllLite()
+    {
+        lock (mappedCacheLiteLock)
+        {
+            if (mappedCacheLite != null && mappedCacheLiteEpoch == UniverseScope.Epoch) return mappedCacheLite;
+        }
+        using var db = dbFactory.CreateDbContext();
+        var loaded = CorponationMapper.LoadAllLite(db);
+        lock (mappedCacheLiteLock) { mappedCacheLite = loaded; mappedCacheLiteEpoch = UniverseScope.Epoch; }
+        return loaded;
+    }
+
+    public new CorponationData? GetById(string id)
+    {
+        if (string.IsNullOrEmpty(id)) return null;
+        if (!Guid.TryParse(id, out var guid))
+        {
+            if (id.Length == 32 && Guid.TryParseExact(id, "N", out guid)) { /* ok */ }
+            else return null;
+        }
+        using var db = dbFactory.CreateDbContext();
+        return CorponationMapper.LoadOne(db, guid);
+    }
+
+    public new CorponationData? GetBySlug(string slug)
+    {
+        if (string.IsNullOrWhiteSpace(slug)) return null;
+        using var db = dbFactory.CreateDbContext();
+        var entity = db.Entities.AsNoTracking()
+            .FirstOrDefault(e => e.EntityType == "corponation" && e.IsActive && e.Slug == slug);
+        if (entity == null) return null;
+        return CorponationMapper.LoadOne(db, entity.Id);
+    }
+
+    public override List<CorponationData> GetAllIncludingArchived()
+    {
+        using var db = dbFactory.CreateDbContext();
+        return CorponationMapper.LoadAll(db, includeArchived: true);
+    }
+
+    private void InvalidateMappedCache()
+    {
+        lock (mappedCacheLock) mappedCache = null;
+        lock (mappedCacheLiteLock) mappedCacheLite = null;
+    }
+
+    public override void Save(CorponationData item)
+    {
+        var id = ParseGuid(item.Id);
+        if (string.IsNullOrEmpty(item.Id)) item.Id = id.ToString("N");
+
+        using var db = dbFactory.CreateDbContext();
+
+        var name = item.Name ?? "";
+        var existingEntity = db.Entities.FirstOrDefault(e => e.Id == id);
+        if (existingEntity == null)
+        {
+            existingEntity = new Entity
+            {
+                Id         = id,
+                EntityType = entityType,
+                Name       = name,
+                Slug       = ResolveSlug(db, name, id, currentSlug: null),
+                Status     = "canon",
+                CreatedAt  = DateTime.UtcNow,
+                ModifiedAt = DateTime.UtcNow,
+            };
+            db.Entities.Add(existingEntity);
+        }
+        else if (!string.Equals(existingEntity.Name, name, StringComparison.Ordinal))
+        {
+            existingEntity.Name       = name;
+            existingEntity.Slug       = ResolveSlug(db, name, id, existingEntity.Slug);
+            existingEntity.ModifiedAt = DateTime.UtcNow;
+        }
+        else
+        {
+            existingEntity.ModifiedAt = DateTime.UtcNow;
+        }
+
+        CorponationMapper.PersistAsync(db, id, item).GetAwaiter().GetResult();
+        FactionMapper.SyncTagsForEntity(db, id, item.Tags);
+        db.SaveChanges();
+
+        InvalidateCacheExternal();
+        InvalidateMappedCache();
+        RaiseOnItemSaved(name);
+    }
+
+    public new void Reload()
+    {
+        base.Reload();
+        InvalidateMappedCache();
+    }
+
+    public override void Delete(string name)
+    {
+        base.Delete(name);
+        InvalidateMappedCache();
+    }
+
+    private static Guid ParseGuid(string s)
+    {
+        if (string.IsNullOrEmpty(s)) return Guid.CreateVersion7();
+        if (Guid.TryParse(s, out var g)) return g;
+        if (s.Length == 32 && Guid.TryParseExact(s, "N", out g)) return g;
+        var hash = System.Security.Cryptography.SHA1.HashData(System.Text.Encoding.UTF8.GetBytes(s));
+        var bytes = new byte[16];
+        Array.Copy(hash, bytes, 16);
+        return new Guid(bytes);
+    }
+
+    private string ResolveSlug(StreetSamuraiDbContext db, string name, Guid id, string? currentSlug)
+    {
+        var plain = WorldGraphService.Slugify(name);
+        var disambig = $"{plain}-{id:N}";
+        if (!string.IsNullOrEmpty(currentSlug)
+            && string.Equals(currentSlug, disambig, StringComparison.Ordinal))
+            return currentSlug;
+        var collision = db.Entities.Any(e =>
+            e.EntityType == entityType && e.Slug == plain && e.Id != id);
+        return collision ? disambig : plain;
+    }
 }
 
+/// <summary>
+/// Fully relational DistrictRepository. Reads materialize DistrictData from the
+/// Places table + all 10 child bridges (Aliases / Dangers / Opportunities /
+/// StoryHooks / AtmosphereItems / Adjacencies / Exits / FrequentedBy /
+/// NotableLocations / RelatedEntities) — never from Records.Json. Writes persist
+/// via <see cref="PlaceMapper"/>. Records.Json is left intact (additive-only).
+/// </summary>
 public class DistrictRepository : EfRepository<DistrictData>
 {
     public DistrictRepository(IDbContextFactory<StreetSamuraiDbContext> db)
         : base(db, "place", d => d.Name) { }
     public DistrictRepository(IPathProvider paths)
         : base(TestDbFactory.For(paths, "place"), "place", d => d.Name) { }
+
+    private List<DistrictData>? mappedCache;
+    private int mappedCacheEpoch = -1;
+    private readonly object mappedCacheLock = new();
+
+    private List<DistrictData>? mappedCacheLite;
+    private int mappedCacheLiteEpoch = -1;
+    private readonly object mappedCacheLiteLock = new();
+
+    public override List<DistrictData> GetAll()
+    {
+        lock (mappedCacheLock)
+        {
+            if (mappedCache != null && mappedCacheEpoch == UniverseScope.Epoch) return mappedCache;
+        }
+        using var db = dbFactory.CreateDbContext();
+        var loaded = PlaceMapper.LoadAll(db, includeArchived: false);
+        lock (mappedCacheLock) { mappedCache = loaded; mappedCacheEpoch = UniverseScope.Epoch; }
+        return loaded;
+    }
+
+    public List<DistrictData> GetAllLite()
+    {
+        lock (mappedCacheLiteLock)
+        {
+            if (mappedCacheLite != null && mappedCacheLiteEpoch == UniverseScope.Epoch) return mappedCacheLite;
+        }
+        using var db = dbFactory.CreateDbContext();
+        var loaded = PlaceMapper.LoadAllLite(db);
+        lock (mappedCacheLiteLock) { mappedCacheLite = loaded; mappedCacheLiteEpoch = UniverseScope.Epoch; }
+        return loaded;
+    }
+
+    public new DistrictData? GetById(string id)
+    {
+        if (string.IsNullOrEmpty(id)) return null;
+        if (!Guid.TryParse(id, out var guid))
+        {
+            if (id.Length == 32 && Guid.TryParseExact(id, "N", out guid)) { /* ok */ }
+            else return null;
+        }
+        using var db = dbFactory.CreateDbContext();
+        return PlaceMapper.LoadOne(db, guid);
+    }
+
+    public new DistrictData? GetBySlug(string slug)
+    {
+        if (string.IsNullOrWhiteSpace(slug)) return null;
+        using var db = dbFactory.CreateDbContext();
+        var entity = db.Entities.AsNoTracking()
+            .FirstOrDefault(e => e.EntityType == "place" && e.IsActive && e.Slug == slug);
+        if (entity == null) return null;
+        return PlaceMapper.LoadOne(db, entity.Id);
+    }
+
+    public override List<DistrictData> GetAllIncludingArchived()
+    {
+        using var db = dbFactory.CreateDbContext();
+        return PlaceMapper.LoadAll(db, includeArchived: true);
+    }
+
+    private void InvalidateMappedCache()
+    {
+        lock (mappedCacheLock) mappedCache = null;
+        lock (mappedCacheLiteLock) mappedCacheLite = null;
+    }
+
+    public override void Save(DistrictData item)
+    {
+        var id = ParsePlaceGuid(item.Id);
+        if (string.IsNullOrEmpty(item.Id)) item.Id = id.ToString("N");
+
+        using var db = dbFactory.CreateDbContext();
+
+        var name = item.Name ?? "";
+        var existingEntity = db.Entities.FirstOrDefault(e => e.Id == id);
+        if (existingEntity == null)
+        {
+            existingEntity = new Entity
+            {
+                Id         = id,
+                EntityType = entityType,
+                Name       = name,
+                Slug       = ResolvePlaceSlug(db, name, id, currentSlug: null),
+                Status     = "canon",
+                CreatedAt  = DateTime.UtcNow,
+                ModifiedAt = DateTime.UtcNow,
+            };
+            db.Entities.Add(existingEntity);
+        }
+        else if (!string.Equals(existingEntity.Name, name, StringComparison.Ordinal))
+        {
+            existingEntity.Name       = name;
+            existingEntity.Slug       = ResolvePlaceSlug(db, name, id, existingEntity.Slug);
+            existingEntity.ModifiedAt = DateTime.UtcNow;
+        }
+        else
+        {
+            existingEntity.ModifiedAt = DateTime.UtcNow;
+        }
+
+        PlaceMapper.PersistAsync(db, id, item).GetAwaiter().GetResult();
+        FactionMapper.SyncTagsForEntity(db, id, item.Tags);
+        db.SaveChanges();
+
+        InvalidateCacheExternal();
+        InvalidateMappedCache();
+        RaiseOnItemSaved(name);
+    }
+
+    public new void Reload()
+    {
+        base.Reload();
+        InvalidateMappedCache();
+    }
+
+    public override void Delete(string name)
+    {
+        base.Delete(name);
+        InvalidateMappedCache();
+    }
+
+    private static Guid ParsePlaceGuid(string s)
+    {
+        if (string.IsNullOrEmpty(s)) return Guid.CreateVersion7();
+        if (Guid.TryParse(s, out var g)) return g;
+        if (s.Length == 32 && Guid.TryParseExact(s, "N", out g)) return g;
+        var hash = System.Security.Cryptography.SHA1.HashData(System.Text.Encoding.UTF8.GetBytes(s));
+        var bytes = new byte[16];
+        Array.Copy(hash, bytes, 16);
+        return new Guid(bytes);
+    }
+
+    private string ResolvePlaceSlug(StreetSamuraiDbContext db, string name, Guid id, string? currentSlug)
+    {
+        var plain = WorldGraphService.Slugify(name);
+        var disambig = $"{plain}-{id:N}";
+        if (!string.IsNullOrEmpty(currentSlug)
+            && string.Equals(currentSlug, disambig, StringComparison.Ordinal))
+            return currentSlug;
+        var collision = db.Entities.Any(e =>
+            e.EntityType == entityType && e.Slug == plain && e.Id != id);
+        return collision ? disambig : plain;
+    }
 }
 
 /// <summary>
@@ -442,12 +742,164 @@ public class FactionRepository : EfRepository<FactionData>
     }
 }
 
+/// <summary>
+/// Fully relational WorldbuildingDocRepository. Reads materialize WorldbuildingDocument
+/// from the Documents table + DocumentHeadings bridge — never from Records.Json. Writes
+/// persist via <see cref="DocumentMapper"/>. Records.Json is left intact (additive-only).
+/// Note: Entity.Name mirrors FileName (or Title as fallback), matching the original
+/// EfRepository nameSelector <c>d => d.FileName</c>.
+/// </summary>
 public class WorldbuildingDocRepository : EfRepository<WorldbuildingDocument>
 {
     public WorldbuildingDocRepository(IDbContextFactory<StreetSamuraiDbContext> db)
         : base(db, "document", d => d.FileName) { }
     public WorldbuildingDocRepository(IPathProvider paths)
         : base(TestDbFactory.For(paths, "document"), "document", d => d.FileName) { }
+
+    private List<WorldbuildingDocument>? mappedCache;
+    private int mappedCacheEpoch = -1;
+    private readonly object mappedCacheLock = new();
+
+    private List<WorldbuildingDocument>? mappedCacheLite;
+    private int mappedCacheLiteEpoch = -1;
+    private readonly object mappedCacheLiteLock = new();
+
+    public override List<WorldbuildingDocument> GetAll()
+    {
+        lock (mappedCacheLock)
+        {
+            if (mappedCache != null && mappedCacheEpoch == UniverseScope.Epoch) return mappedCache;
+        }
+        using var db = dbFactory.CreateDbContext();
+        var loaded = DocumentMapper.LoadAll(db, includeArchived: false);
+        lock (mappedCacheLock) { mappedCache = loaded; mappedCacheEpoch = UniverseScope.Epoch; }
+        return loaded;
+    }
+
+    public List<WorldbuildingDocument> GetAllLite()
+    {
+        lock (mappedCacheLiteLock)
+        {
+            if (mappedCacheLite != null && mappedCacheLiteEpoch == UniverseScope.Epoch) return mappedCacheLite;
+        }
+        using var db = dbFactory.CreateDbContext();
+        var loaded = DocumentMapper.LoadAllLite(db);
+        lock (mappedCacheLiteLock) { mappedCacheLite = loaded; mappedCacheLiteEpoch = UniverseScope.Epoch; }
+        return loaded;
+    }
+
+    public new WorldbuildingDocument? GetById(string id)
+    {
+        if (string.IsNullOrEmpty(id)) return null;
+        if (!Guid.TryParse(id, out var guid))
+        {
+            if (id.Length == 32 && Guid.TryParseExact(id, "N", out guid)) { /* ok */ }
+            else return null;
+        }
+        using var db = dbFactory.CreateDbContext();
+        return DocumentMapper.LoadOne(db, guid);
+    }
+
+    public new WorldbuildingDocument? GetBySlug(string slug)
+    {
+        if (string.IsNullOrWhiteSpace(slug)) return null;
+        using var db = dbFactory.CreateDbContext();
+        var entity = db.Entities.AsNoTracking()
+            .FirstOrDefault(e => e.EntityType == "document" && e.IsActive && e.Slug == slug);
+        if (entity == null) return null;
+        return DocumentMapper.LoadOne(db, entity.Id);
+    }
+
+    public override List<WorldbuildingDocument> GetAllIncludingArchived()
+    {
+        using var db = dbFactory.CreateDbContext();
+        return DocumentMapper.LoadAll(db, includeArchived: true);
+    }
+
+    private void InvalidateMappedCache()
+    {
+        lock (mappedCacheLock) mappedCache = null;
+        lock (mappedCacheLiteLock) mappedCacheLite = null;
+    }
+
+    public override void Save(WorldbuildingDocument item)
+    {
+        var id = ParseDocumentGuid(item.Id);
+        if (string.IsNullOrEmpty(item.Id)) item.Id = id.ToString("N");
+
+        using var db = dbFactory.CreateDbContext();
+
+        // Entity.Name mirrors FileName (per DocumentMapper.FillScalars contract)
+        var name = item.FileName?.Length > 0 ? item.FileName : (item.Title ?? "");
+        var existingEntity = db.Entities.FirstOrDefault(e => e.Id == id);
+        if (existingEntity == null)
+        {
+            existingEntity = new Entity
+            {
+                Id         = id,
+                EntityType = entityType,
+                Name       = name,
+                Slug       = ResolveDocumentSlug(db, name, id, currentSlug: null),
+                Status     = "canon",
+                CreatedAt  = DateTime.UtcNow,
+                ModifiedAt = DateTime.UtcNow,
+            };
+            db.Entities.Add(existingEntity);
+        }
+        else if (!string.Equals(existingEntity.Name, name, StringComparison.Ordinal))
+        {
+            existingEntity.Name       = name;
+            existingEntity.Slug       = ResolveDocumentSlug(db, name, id, existingEntity.Slug);
+            existingEntity.ModifiedAt = DateTime.UtcNow;
+        }
+        else
+        {
+            existingEntity.ModifiedAt = DateTime.UtcNow;
+        }
+
+        DocumentMapper.PersistAsync(db, id, item).GetAwaiter().GetResult();
+        FactionMapper.SyncTagsForEntity(db, id, item.Tags);
+        db.SaveChanges();
+
+        InvalidateCacheExternal();
+        InvalidateMappedCache();
+        RaiseOnItemSaved(name);
+    }
+
+    public new void Reload()
+    {
+        base.Reload();
+        InvalidateMappedCache();
+    }
+
+    public override void Delete(string name)
+    {
+        base.Delete(name);
+        InvalidateMappedCache();
+    }
+
+    private static Guid ParseDocumentGuid(string s)
+    {
+        if (string.IsNullOrEmpty(s)) return Guid.CreateVersion7();
+        if (Guid.TryParse(s, out var g)) return g;
+        if (s.Length == 32 && Guid.TryParseExact(s, "N", out g)) return g;
+        var hash = System.Security.Cryptography.SHA1.HashData(System.Text.Encoding.UTF8.GetBytes(s));
+        var bytes = new byte[16];
+        Array.Copy(hash, bytes, 16);
+        return new Guid(bytes);
+    }
+
+    private string ResolveDocumentSlug(StreetSamuraiDbContext db, string name, Guid id, string? currentSlug)
+    {
+        var plain = WorldGraphService.Slugify(name);
+        var disambig = $"{plain}-{id:N}";
+        if (!string.IsNullOrEmpty(currentSlug)
+            && string.Equals(currentSlug, disambig, StringComparison.Ordinal))
+            return currentSlug;
+        var collision = db.Entities.Any(e =>
+            e.EntityType == entityType && e.Slug == plain && e.Id != id);
+        return collision ? disambig : plain;
+    }
 }
 
 /// <summary>
@@ -607,12 +1059,162 @@ public class MotifRepository : EfRepository<MotifData>
     }
 }
 
+/// <summary>
+/// Fully relational WeaponryRepository. Reads materialize WeaponryData from the
+/// Weapons table + all child bridges (Aliases / BaseTechnologies / KnownUsers /
+/// AmmunitionTypes / StoryHooks) — never from Records.Json. Writes persist
+/// via <see cref="WeaponMapper"/>. Records.Json is left intact (additive-only).
+/// </summary>
 public class WeaponryRepository : EfRepository<WeaponryData>
 {
     public WeaponryRepository(IDbContextFactory<StreetSamuraiDbContext> db)
         : base(db, "weapon", w => w.Name) { }
     public WeaponryRepository(IPathProvider paths)
         : base(TestDbFactory.For(paths, "weapon"), "weapon", w => w.Name) { }
+
+    private List<WeaponryData>? mappedCache;
+    private int mappedCacheEpoch = -1;
+    private readonly object mappedCacheLock = new();
+
+    private List<WeaponryData>? mappedCacheLite;
+    private int mappedCacheLiteEpoch = -1;
+    private readonly object mappedCacheLiteLock = new();
+
+    public override List<WeaponryData> GetAll()
+    {
+        lock (mappedCacheLock)
+        {
+            if (mappedCache != null && mappedCacheEpoch == UniverseScope.Epoch) return mappedCache;
+        }
+        using var db = dbFactory.CreateDbContext();
+        var loaded = WeaponMapper.LoadAll(db, includeArchived: false);
+        lock (mappedCacheLock) { mappedCache = loaded; mappedCacheEpoch = UniverseScope.Epoch; }
+        return loaded;
+    }
+
+    public List<WeaponryData> GetAllLite()
+    {
+        lock (mappedCacheLiteLock)
+        {
+            if (mappedCacheLite != null && mappedCacheLiteEpoch == UniverseScope.Epoch) return mappedCacheLite;
+        }
+        using var db = dbFactory.CreateDbContext();
+        var loaded = WeaponMapper.LoadAllLite(db);
+        lock (mappedCacheLiteLock) { mappedCacheLite = loaded; mappedCacheLiteEpoch = UniverseScope.Epoch; }
+        return loaded;
+    }
+
+    public new WeaponryData? GetById(string id)
+    {
+        if (string.IsNullOrEmpty(id)) return null;
+        if (!Guid.TryParse(id, out var guid))
+        {
+            if (id.Length == 32 && Guid.TryParseExact(id, "N", out guid)) { /* ok */ }
+            else return null;
+        }
+        using var db = dbFactory.CreateDbContext();
+        return WeaponMapper.LoadOne(db, guid);
+    }
+
+    public new WeaponryData? GetBySlug(string slug)
+    {
+        if (string.IsNullOrWhiteSpace(slug)) return null;
+        using var db = dbFactory.CreateDbContext();
+        var entity = db.Entities.AsNoTracking()
+            .FirstOrDefault(e => e.EntityType == "weapon" && e.IsActive && e.Slug == slug);
+        if (entity == null) return null;
+        return WeaponMapper.LoadOne(db, entity.Id);
+    }
+
+    public override List<WeaponryData> GetAllIncludingArchived()
+    {
+        using var db = dbFactory.CreateDbContext();
+        return WeaponMapper.LoadAll(db, includeArchived: true);
+    }
+
+    private void InvalidateMappedCache()
+    {
+        lock (mappedCacheLock) mappedCache = null;
+        lock (mappedCacheLiteLock) mappedCacheLite = null;
+    }
+
+    public override void Save(WeaponryData item)
+    {
+        var id = ParseWeaponGuid(item.Id);
+        if (string.IsNullOrEmpty(item.Id)) item.Id = id.ToString("N");
+
+        using var db = dbFactory.CreateDbContext();
+
+        var name = item.Name ?? "";
+        var existingEntity = db.Entities.FirstOrDefault(e => e.Id == id);
+        if (existingEntity == null)
+        {
+            existingEntity = new Entity
+            {
+                Id         = id,
+                EntityType = entityType,
+                Name       = name,
+                Slug       = ResolveWeaponSlug(db, name, id, currentSlug: null),
+                Status     = "canon",
+                CreatedAt  = DateTime.UtcNow,
+                ModifiedAt = DateTime.UtcNow,
+            };
+            db.Entities.Add(existingEntity);
+        }
+        else if (!string.Equals(existingEntity.Name, name, StringComparison.Ordinal))
+        {
+            existingEntity.Name       = name;
+            existingEntity.Slug       = ResolveWeaponSlug(db, name, id, existingEntity.Slug);
+            existingEntity.ModifiedAt = DateTime.UtcNow;
+        }
+        else
+        {
+            existingEntity.ModifiedAt = DateTime.UtcNow;
+        }
+
+        WeaponMapper.PersistAsync(db, id, item).GetAwaiter().GetResult();
+        FactionMapper.SyncTagsForEntity(db, id, item.Tags);
+        db.SaveChanges();
+
+        InvalidateCacheExternal();
+        InvalidateMappedCache();
+        RaiseOnItemSaved(name);
+    }
+
+    public new void Reload()
+    {
+        base.Reload();
+        InvalidateMappedCache();
+    }
+
+    public override void Delete(string name)
+    {
+        base.Delete(name);
+        InvalidateMappedCache();
+    }
+
+    private static Guid ParseWeaponGuid(string s)
+    {
+        if (string.IsNullOrEmpty(s)) return Guid.CreateVersion7();
+        if (Guid.TryParse(s, out var g)) return g;
+        if (s.Length == 32 && Guid.TryParseExact(s, "N", out g)) return g;
+        var hash = System.Security.Cryptography.SHA1.HashData(System.Text.Encoding.UTF8.GetBytes(s));
+        var bytes = new byte[16];
+        Array.Copy(hash, bytes, 16);
+        return new Guid(bytes);
+    }
+
+    private string ResolveWeaponSlug(StreetSamuraiDbContext db, string name, Guid id, string? currentSlug)
+    {
+        var plain = WorldGraphService.Slugify(name);
+        var disambig = $"{plain}-{id:N}";
+        if (!string.IsNullOrEmpty(currentSlug)
+            && string.Equals(currentSlug, disambig, StringComparison.Ordinal))
+            return currentSlug;
+        var collision = db.Entities.Any(e =>
+            e.EntityType == entityType && e.Slug == plain && e.Id != id);
+        return collision ? disambig : plain;
+    }
 }
 
 /// <summary>
@@ -773,28 +1375,475 @@ public class AmmunitionRepository : EfRepository<AmmunitionData>
     }
 }
 
+/// <summary>
+/// Fully relational EquipmentRepository. Reads materialize EquipmentData from the
+/// EquipmentItems table + all child bridges — never from Records.Json. Writes persist
+/// via <see cref="EquipmentMapper"/>. Records.Json is left intact (additive-only).
+/// </summary>
 public class EquipmentRepository : EfRepository<EquipmentData>
 {
     public EquipmentRepository(IDbContextFactory<StreetSamuraiDbContext> db)
         : base(db, "equipment", e => e.ProductName.Length > 0 ? e.ProductName : e.Name) { }
     public EquipmentRepository(IPathProvider paths)
         : base(TestDbFactory.For(paths, "equipment"), "equipment", e => e.ProductName.Length > 0 ? e.ProductName : e.Name) { }
+
+    private List<EquipmentData>? mappedCache;
+    private int mappedCacheEpoch = -1;
+    private readonly object mappedCacheLock = new();
+
+    private List<EquipmentData>? mappedCacheLite;
+    private int mappedCacheLiteEpoch = -1;
+    private readonly object mappedCacheLiteLock = new();
+
+    public override List<EquipmentData> GetAll()
+    {
+        lock (mappedCacheLock)
+        {
+            if (mappedCache != null && mappedCacheEpoch == UniverseScope.Epoch) return mappedCache;
+        }
+        using var db = dbFactory.CreateDbContext();
+        var loaded = EquipmentMapper.LoadAll(db, includeArchived: false);
+        lock (mappedCacheLock) { mappedCache = loaded; mappedCacheEpoch = UniverseScope.Epoch; }
+        return loaded;
+    }
+
+    public List<EquipmentData> GetAllLite()
+    {
+        lock (mappedCacheLiteLock)
+        {
+            if (mappedCacheLite != null && mappedCacheLiteEpoch == UniverseScope.Epoch) return mappedCacheLite;
+        }
+        using var db = dbFactory.CreateDbContext();
+        var loaded = EquipmentMapper.LoadAllLite(db);
+        lock (mappedCacheLiteLock) { mappedCacheLite = loaded; mappedCacheLiteEpoch = UniverseScope.Epoch; }
+        return loaded;
+    }
+
+    public new EquipmentData? GetById(string id)
+    {
+        if (string.IsNullOrEmpty(id)) return null;
+        if (!Guid.TryParse(id, out var guid))
+        {
+            if (id.Length == 32 && Guid.TryParseExact(id, "N", out guid)) { /* ok */ }
+            else return null;
+        }
+        using var db = dbFactory.CreateDbContext();
+        return EquipmentMapper.LoadOne(db, guid);
+    }
+
+    public new EquipmentData? GetBySlug(string slug)
+    {
+        if (string.IsNullOrWhiteSpace(slug)) return null;
+        using var db = dbFactory.CreateDbContext();
+        var entity = db.Entities.AsNoTracking()
+            .FirstOrDefault(e => e.EntityType == "equipment" && e.IsActive && e.Slug == slug);
+        if (entity == null) return null;
+        return EquipmentMapper.LoadOne(db, entity.Id);
+    }
+
+    public override List<EquipmentData> GetAllIncludingArchived()
+    {
+        using var db = dbFactory.CreateDbContext();
+        return EquipmentMapper.LoadAll(db, includeArchived: true);
+    }
+
+    private void InvalidateMappedCache()
+    {
+        lock (mappedCacheLock) mappedCache = null;
+        lock (mappedCacheLiteLock) mappedCacheLite = null;
+    }
+
+    public override void Save(EquipmentData item)
+    {
+        var id = ParseGuid(item.Id);
+        if (string.IsNullOrEmpty(item.Id)) item.Id = id.ToString("N");
+
+        using var db = dbFactory.CreateDbContext();
+
+        var name = item.Name ?? "";
+        var existingEntity = db.Entities.FirstOrDefault(e => e.Id == id);
+        if (existingEntity == null)
+        {
+            existingEntity = new Entity
+            {
+                Id         = id,
+                EntityType = entityType,
+                Name       = name,
+                Slug       = ResolveSlug(db, name, id, currentSlug: null),
+                Status     = "canon",
+                CreatedAt  = DateTime.UtcNow,
+                ModifiedAt = DateTime.UtcNow,
+            };
+            db.Entities.Add(existingEntity);
+        }
+        else if (!string.Equals(existingEntity.Name, name, StringComparison.Ordinal))
+        {
+            existingEntity.Name       = name;
+            existingEntity.Slug       = ResolveSlug(db, name, id, existingEntity.Slug);
+            existingEntity.ModifiedAt = DateTime.UtcNow;
+        }
+        else
+        {
+            existingEntity.ModifiedAt = DateTime.UtcNow;
+        }
+
+        EquipmentMapper.PersistAsync(db, id, item).GetAwaiter().GetResult();
+        FactionMapper.SyncTagsForEntity(db, id, item.Tags);
+        db.SaveChanges();
+
+        InvalidateCacheExternal();
+        InvalidateMappedCache();
+        RaiseOnItemSaved(name);
+    }
+
+    public new void Reload()
+    {
+        base.Reload();
+        InvalidateMappedCache();
+    }
+
+    public override void Delete(string name)
+    {
+        base.Delete(name);
+        InvalidateMappedCache();
+    }
+
+    private static Guid ParseGuid(string s)
+    {
+        if (string.IsNullOrEmpty(s)) return Guid.CreateVersion7();
+        if (Guid.TryParse(s, out var g)) return g;
+        if (s.Length == 32 && Guid.TryParseExact(s, "N", out g)) return g;
+        var hash = System.Security.Cryptography.SHA1.HashData(System.Text.Encoding.UTF8.GetBytes(s));
+        var bytes = new byte[16];
+        Array.Copy(hash, bytes, 16);
+        return new Guid(bytes);
+    }
+
+    private string ResolveSlug(StreetSamuraiDbContext db, string name, Guid id, string? currentSlug)
+    {
+        var plain = WorldGraphService.Slugify(name);
+        var disambig = $"{plain}-{id:N}";
+        if (!string.IsNullOrEmpty(currentSlug)
+            && string.Equals(currentSlug, disambig, StringComparison.Ordinal))
+            return currentSlug;
+        var collision = db.Entities.Any(e =>
+            e.EntityType == entityType && e.Slug == plain && e.Id != id);
+        return collision ? disambig : plain;
+    }
 }
 
+/// <summary>
+/// Fully relational TechnologyRepository. Reads materialize TechnologyData from the
+/// Technologies table + all child bridges — never from Records.Json. Writes persist
+/// via <see cref="TechnologyMapper"/>. Records.Json is left intact (additive-only).
+/// </summary>
 public class TechnologyRepository : EfRepository<TechnologyData>
 {
     public TechnologyRepository(IDbContextFactory<StreetSamuraiDbContext> db)
         : base(db, "technology", t => t.ProductName.Length > 0 ? t.ProductName : t.Name) { }
     public TechnologyRepository(IPathProvider paths)
         : base(TestDbFactory.For(paths, "technology"), "technology", t => t.ProductName.Length > 0 ? t.ProductName : t.Name) { }
+
+    private List<TechnologyData>? mappedCache;
+    private int mappedCacheEpoch = -1;
+    private readonly object mappedCacheLock = new();
+
+    private List<TechnologyData>? mappedCacheLite;
+    private int mappedCacheLiteEpoch = -1;
+    private readonly object mappedCacheLiteLock = new();
+
+    public override List<TechnologyData> GetAll()
+    {
+        lock (mappedCacheLock)
+        {
+            if (mappedCache != null && mappedCacheEpoch == UniverseScope.Epoch) return mappedCache;
+        }
+        using var db = dbFactory.CreateDbContext();
+        var loaded = TechnologyMapper.LoadAll(db, includeArchived: false);
+        lock (mappedCacheLock) { mappedCache = loaded; mappedCacheEpoch = UniverseScope.Epoch; }
+        return loaded;
+    }
+
+    public List<TechnologyData> GetAllLite()
+    {
+        lock (mappedCacheLiteLock)
+        {
+            if (mappedCacheLite != null && mappedCacheLiteEpoch == UniverseScope.Epoch) return mappedCacheLite;
+        }
+        using var db = dbFactory.CreateDbContext();
+        var loaded = TechnologyMapper.LoadAllLite(db);
+        lock (mappedCacheLiteLock) { mappedCacheLite = loaded; mappedCacheLiteEpoch = UniverseScope.Epoch; }
+        return loaded;
+    }
+
+    public new TechnologyData? GetById(string id)
+    {
+        if (string.IsNullOrEmpty(id)) return null;
+        if (!Guid.TryParse(id, out var guid))
+        {
+            if (id.Length == 32 && Guid.TryParseExact(id, "N", out guid)) { /* ok */ }
+            else return null;
+        }
+        using var db = dbFactory.CreateDbContext();
+        return TechnologyMapper.LoadOne(db, guid);
+    }
+
+    public new TechnologyData? GetBySlug(string slug)
+    {
+        if (string.IsNullOrWhiteSpace(slug)) return null;
+        using var db = dbFactory.CreateDbContext();
+        var entity = db.Entities.AsNoTracking()
+            .FirstOrDefault(e => e.EntityType == "technology" && e.IsActive && e.Slug == slug);
+        if (entity == null) return null;
+        return TechnologyMapper.LoadOne(db, entity.Id);
+    }
+
+    public override List<TechnologyData> GetAllIncludingArchived()
+    {
+        using var db = dbFactory.CreateDbContext();
+        return TechnologyMapper.LoadAll(db, includeArchived: true);
+    }
+
+    private void InvalidateMappedCache()
+    {
+        lock (mappedCacheLock) mappedCache = null;
+        lock (mappedCacheLiteLock) mappedCacheLite = null;
+    }
+
+    public override void Save(TechnologyData item)
+    {
+        var id = ParseGuid(item.Id);
+        if (string.IsNullOrEmpty(item.Id)) item.Id = id.ToString("N");
+
+        using var db = dbFactory.CreateDbContext();
+
+        var name = item.Name ?? "";
+        var existingEntity = db.Entities.FirstOrDefault(e => e.Id == id);
+        if (existingEntity == null)
+        {
+            existingEntity = new Entity
+            {
+                Id         = id,
+                EntityType = entityType,
+                Name       = name,
+                Slug       = ResolveSlug(db, name, id, currentSlug: null),
+                Status     = "canon",
+                CreatedAt  = DateTime.UtcNow,
+                ModifiedAt = DateTime.UtcNow,
+            };
+            db.Entities.Add(existingEntity);
+        }
+        else if (!string.Equals(existingEntity.Name, name, StringComparison.Ordinal))
+        {
+            existingEntity.Name       = name;
+            existingEntity.Slug       = ResolveSlug(db, name, id, existingEntity.Slug);
+            existingEntity.ModifiedAt = DateTime.UtcNow;
+        }
+        else
+        {
+            existingEntity.ModifiedAt = DateTime.UtcNow;
+        }
+
+        TechnologyMapper.PersistAsync(db, id, item).GetAwaiter().GetResult();
+        FactionMapper.SyncTagsForEntity(db, id, item.Tags);
+        db.SaveChanges();
+
+        InvalidateCacheExternal();
+        InvalidateMappedCache();
+        RaiseOnItemSaved(name);
+    }
+
+    public new void Reload()
+    {
+        base.Reload();
+        InvalidateMappedCache();
+    }
+
+    public override void Delete(string name)
+    {
+        base.Delete(name);
+        InvalidateMappedCache();
+    }
+
+    private static Guid ParseGuid(string s)
+    {
+        if (string.IsNullOrEmpty(s)) return Guid.CreateVersion7();
+        if (Guid.TryParse(s, out var g)) return g;
+        if (s.Length == 32 && Guid.TryParseExact(s, "N", out g)) return g;
+        var hash = System.Security.Cryptography.SHA1.HashData(System.Text.Encoding.UTF8.GetBytes(s));
+        var bytes = new byte[16];
+        Array.Copy(hash, bytes, 16);
+        return new Guid(bytes);
+    }
+
+    private string ResolveSlug(StreetSamuraiDbContext db, string name, Guid id, string? currentSlug)
+    {
+        var plain = WorldGraphService.Slugify(name);
+        var disambig = $"{plain}-{id:N}";
+        if (!string.IsNullOrEmpty(currentSlug)
+            && string.Equals(currentSlug, disambig, StringComparison.Ordinal))
+            return currentSlug;
+        var collision = db.Entities.Any(e =>
+            e.EntityType == entityType && e.Slug == plain && e.Id != id);
+        return collision ? disambig : plain;
+    }
 }
 
+/// <summary>
+/// Fully relational CyberwareRepository. Reads materialize CyberwareData from the
+/// CyberwareItems table + all child bridges — never from Records.Json. Writes persist
+/// via <see cref="CyberwareMapper"/>. Records.Json is left intact (additive-only).
+/// </summary>
 public class CyberwareRepository : EfRepository<CyberwareData>
 {
     public CyberwareRepository(IDbContextFactory<StreetSamuraiDbContext> db)
         : base(db, "cyberware", c => c.ProductName.Length > 0 ? c.ProductName : c.Name) { }
     public CyberwareRepository(IPathProvider paths)
         : base(TestDbFactory.For(paths, "cyberware"), "cyberware", c => c.ProductName.Length > 0 ? c.ProductName : c.Name) { }
+
+    private List<CyberwareData>? mappedCache;
+    private int mappedCacheEpoch = -1;
+    private readonly object mappedCacheLock = new();
+
+    private List<CyberwareData>? mappedCacheLite;
+    private int mappedCacheLiteEpoch = -1;
+    private readonly object mappedCacheLiteLock = new();
+
+    public override List<CyberwareData> GetAll()
+    {
+        lock (mappedCacheLock)
+        {
+            if (mappedCache != null && mappedCacheEpoch == UniverseScope.Epoch) return mappedCache;
+        }
+        using var db = dbFactory.CreateDbContext();
+        var loaded = CyberwareMapper.LoadAll(db, includeArchived: false);
+        lock (mappedCacheLock) { mappedCache = loaded; mappedCacheEpoch = UniverseScope.Epoch; }
+        return loaded;
+    }
+
+    public List<CyberwareData> GetAllLite()
+    {
+        lock (mappedCacheLiteLock)
+        {
+            if (mappedCacheLite != null && mappedCacheLiteEpoch == UniverseScope.Epoch) return mappedCacheLite;
+        }
+        using var db = dbFactory.CreateDbContext();
+        var loaded = CyberwareMapper.LoadAllLite(db);
+        lock (mappedCacheLiteLock) { mappedCacheLite = loaded; mappedCacheLiteEpoch = UniverseScope.Epoch; }
+        return loaded;
+    }
+
+    public new CyberwareData? GetById(string id)
+    {
+        if (string.IsNullOrEmpty(id)) return null;
+        if (!Guid.TryParse(id, out var guid))
+        {
+            if (id.Length == 32 && Guid.TryParseExact(id, "N", out guid)) { /* ok */ }
+            else return null;
+        }
+        using var db = dbFactory.CreateDbContext();
+        return CyberwareMapper.LoadOne(db, guid);
+    }
+
+    public new CyberwareData? GetBySlug(string slug)
+    {
+        if (string.IsNullOrWhiteSpace(slug)) return null;
+        using var db = dbFactory.CreateDbContext();
+        var entity = db.Entities.AsNoTracking()
+            .FirstOrDefault(e => e.EntityType == "cyberware" && e.IsActive && e.Slug == slug);
+        if (entity == null) return null;
+        return CyberwareMapper.LoadOne(db, entity.Id);
+    }
+
+    public override List<CyberwareData> GetAllIncludingArchived()
+    {
+        using var db = dbFactory.CreateDbContext();
+        return CyberwareMapper.LoadAll(db, includeArchived: true);
+    }
+
+    private void InvalidateMappedCache()
+    {
+        lock (mappedCacheLock) mappedCache = null;
+        lock (mappedCacheLiteLock) mappedCacheLite = null;
+    }
+
+    public override void Save(CyberwareData item)
+    {
+        var id = ParseGuid(item.Id);
+        if (string.IsNullOrEmpty(item.Id)) item.Id = id.ToString("N");
+
+        using var db = dbFactory.CreateDbContext();
+
+        var name = item.Name ?? "";
+        var existingEntity = db.Entities.FirstOrDefault(e => e.Id == id);
+        if (existingEntity == null)
+        {
+            existingEntity = new Entity
+            {
+                Id         = id,
+                EntityType = entityType,
+                Name       = name,
+                Slug       = ResolveSlug(db, name, id, currentSlug: null),
+                Status     = "canon",
+                CreatedAt  = DateTime.UtcNow,
+                ModifiedAt = DateTime.UtcNow,
+            };
+            db.Entities.Add(existingEntity);
+        }
+        else if (!string.Equals(existingEntity.Name, name, StringComparison.Ordinal))
+        {
+            existingEntity.Name       = name;
+            existingEntity.Slug       = ResolveSlug(db, name, id, existingEntity.Slug);
+            existingEntity.ModifiedAt = DateTime.UtcNow;
+        }
+        else
+        {
+            existingEntity.ModifiedAt = DateTime.UtcNow;
+        }
+
+        CyberwareMapper.PersistAsync(db, id, item).GetAwaiter().GetResult();
+        FactionMapper.SyncTagsForEntity(db, id, item.Tags);
+        db.SaveChanges();
+
+        InvalidateCacheExternal();
+        InvalidateMappedCache();
+        RaiseOnItemSaved(name);
+    }
+
+    public new void Reload()
+    {
+        base.Reload();
+        InvalidateMappedCache();
+    }
+
+    public override void Delete(string name)
+    {
+        base.Delete(name);
+        InvalidateMappedCache();
+    }
+
+    private static Guid ParseGuid(string s)
+    {
+        if (string.IsNullOrEmpty(s)) return Guid.CreateVersion7();
+        if (Guid.TryParse(s, out var g)) return g;
+        if (s.Length == 32 && Guid.TryParseExact(s, "N", out g)) return g;
+        var hash = System.Security.Cryptography.SHA1.HashData(System.Text.Encoding.UTF8.GetBytes(s));
+        var bytes = new byte[16];
+        Array.Copy(hash, bytes, 16);
+        return new Guid(bytes);
+    }
+
+    private string ResolveSlug(StreetSamuraiDbContext db, string name, Guid id, string? currentSlug)
+    {
+        var plain = WorldGraphService.Slugify(name);
+        var disambig = $"{plain}-{id:N}";
+        if (!string.IsNullOrEmpty(currentSlug)
+            && string.Equals(currentSlug, disambig, StringComparison.Ordinal))
+            return currentSlug;
+        var collision = db.Entities.Any(e =>
+            e.EntityType == entityType && e.Slug == plain && e.Id != id);
+        return collision ? disambig : plain;
+    }
 }
 
 /// <summary>
@@ -1592,28 +2641,477 @@ public class AutomatonRepository : EfRepository<AutomatonData>
     }
 }
 
+/// <summary>
+/// Fully relational SubsidiaryRepository. Reads materialize SubsidiaryData from the
+/// Subsidiaries table + SubsidiaryProducts bridge — never from Records.Json. Writes
+/// persist via <see cref="SubsidiaryMapper"/>. Records.Json is left intact (additive-only).
+/// </summary>
 public class SubsidiaryRepository : EfRepository<SubsidiaryData>
 {
     public SubsidiaryRepository(IDbContextFactory<StreetSamuraiDbContext> db)
         : base(db, "subsidiary", s => s.Name) { }
     public SubsidiaryRepository(IPathProvider paths)
         : base(TestDbFactory.For(paths, "subsidiary"), "subsidiary", s => s.Name) { }
+
+    private List<SubsidiaryData>? mappedCache;
+    private int mappedCacheEpoch = -1;
+    private readonly object mappedCacheLock = new();
+
+    private List<SubsidiaryData>? mappedCacheLite;
+    private int mappedCacheLiteEpoch = -1;
+    private readonly object mappedCacheLiteLock = new();
+
+    public override List<SubsidiaryData> GetAll()
+    {
+        lock (mappedCacheLock)
+        {
+            if (mappedCache != null && mappedCacheEpoch == UniverseScope.Epoch) return mappedCache;
+        }
+        using var db = dbFactory.CreateDbContext();
+        var loaded = SubsidiaryMapper.LoadAll(db, includeArchived: false);
+        lock (mappedCacheLock) { mappedCache = loaded; mappedCacheEpoch = UniverseScope.Epoch; }
+        return loaded;
+    }
+
+    public List<SubsidiaryData> GetAllLite()
+    {
+        lock (mappedCacheLiteLock)
+        {
+            if (mappedCacheLite != null && mappedCacheLiteEpoch == UniverseScope.Epoch) return mappedCacheLite;
+        }
+        using var db = dbFactory.CreateDbContext();
+        var loaded = SubsidiaryMapper.LoadAllLite(db);
+        lock (mappedCacheLiteLock) { mappedCacheLite = loaded; mappedCacheLiteEpoch = UniverseScope.Epoch; }
+        return loaded;
+    }
+
+    public new SubsidiaryData? GetById(string id)
+    {
+        if (string.IsNullOrEmpty(id)) return null;
+        if (!Guid.TryParse(id, out var guid))
+        {
+            if (id.Length == 32 && Guid.TryParseExact(id, "N", out guid)) { /* ok */ }
+            else return null;
+        }
+        using var db = dbFactory.CreateDbContext();
+        return SubsidiaryMapper.LoadOne(db, guid);
+    }
+
+    public new SubsidiaryData? GetBySlug(string slug)
+    {
+        if (string.IsNullOrWhiteSpace(slug)) return null;
+        using var db = dbFactory.CreateDbContext();
+        var entity = db.Entities.AsNoTracking()
+            .FirstOrDefault(e => e.EntityType == "subsidiary" && e.IsActive && e.Slug == slug);
+        if (entity == null) return null;
+        return SubsidiaryMapper.LoadOne(db, entity.Id);
+    }
+
+    public override List<SubsidiaryData> GetAllIncludingArchived()
+    {
+        using var db = dbFactory.CreateDbContext();
+        return SubsidiaryMapper.LoadAll(db, includeArchived: true);
+    }
+
+    private void InvalidateMappedCache()
+    {
+        lock (mappedCacheLock) mappedCache = null;
+        lock (mappedCacheLiteLock) mappedCacheLite = null;
+    }
+
+    public override void Save(SubsidiaryData item)
+    {
+        var id = ParseGuid(item.Id);
+        if (string.IsNullOrEmpty(item.Id)) item.Id = id.ToString("N");
+
+        using var db = dbFactory.CreateDbContext();
+
+        var name = item.Name ?? "";
+        var existingEntity = db.Entities.FirstOrDefault(e => e.Id == id);
+        if (existingEntity == null)
+        {
+            existingEntity = new Entity
+            {
+                Id         = id,
+                EntityType = entityType,
+                Name       = name,
+                Slug       = ResolveSlug(db, name, id, currentSlug: null),
+                Status     = "canon",
+                CreatedAt  = DateTime.UtcNow,
+                ModifiedAt = DateTime.UtcNow,
+            };
+            db.Entities.Add(existingEntity);
+        }
+        else if (!string.Equals(existingEntity.Name, name, StringComparison.Ordinal))
+        {
+            existingEntity.Name       = name;
+            existingEntity.Slug       = ResolveSlug(db, name, id, existingEntity.Slug);
+            existingEntity.ModifiedAt = DateTime.UtcNow;
+        }
+        else
+        {
+            existingEntity.ModifiedAt = DateTime.UtcNow;
+        }
+
+        SubsidiaryMapper.PersistAsync(db, id, item).GetAwaiter().GetResult();
+        FactionMapper.SyncTagsForEntity(db, id, item.Tags);
+        db.SaveChanges();
+
+        InvalidateCacheExternal();
+        InvalidateMappedCache();
+        RaiseOnItemSaved(name);
+    }
+
+    public new void Reload()
+    {
+        base.Reload();
+        InvalidateMappedCache();
+    }
+
+    public override void Delete(string name)
+    {
+        base.Delete(name);
+        InvalidateMappedCache();
+    }
+
+    private static Guid ParseGuid(string s)
+    {
+        if (string.IsNullOrEmpty(s)) return Guid.CreateVersion7();
+        if (Guid.TryParse(s, out var g)) return g;
+        if (s.Length == 32 && Guid.TryParseExact(s, "N", out g)) return g;
+        var hash = System.Security.Cryptography.SHA1.HashData(System.Text.Encoding.UTF8.GetBytes(s));
+        var bytes = new byte[16];
+        Array.Copy(hash, bytes, 16);
+        return new Guid(bytes);
+    }
+
+    private string ResolveSlug(StreetSamuraiDbContext db, string name, Guid id, string? currentSlug)
+    {
+        var plain = WorldGraphService.Slugify(name);
+        var disambig = $"{plain}-{id:N}";
+        if (!string.IsNullOrEmpty(currentSlug)
+            && string.Equals(currentSlug, disambig, StringComparison.Ordinal))
+            return currentSlug;
+        var collision = db.Entities.Any(e =>
+            e.EntityType == entityType && e.Slug == plain && e.Id != id);
+        return collision ? disambig : plain;
+    }
 }
 
+/// <summary>
+/// Fully relational EntertainmentRepository. Reads materialize EntertainmentData from
+/// the EntertainmentItems table + all child bridges (Aliases / KnownFans / StoryHooks)
+/// — never from Records.Json. Writes persist via <see cref="EntertainmentMapper"/>.
+/// Records.Json is left intact (additive-only).
+/// </summary>
 public class EntertainmentRepository : EfRepository<EntertainmentData>
 {
     public EntertainmentRepository(IDbContextFactory<StreetSamuraiDbContext> db)
         : base(db, "entertainment", e => e.Name) { }
     public EntertainmentRepository(IPathProvider paths)
         : base(TestDbFactory.For(paths, "entertainment"), "entertainment", e => e.Name) { }
+
+    private List<EntertainmentData>? mappedCache;
+    private int mappedCacheEpoch = -1;
+    private readonly object mappedCacheLock = new();
+
+    private List<EntertainmentData>? mappedCacheLite;
+    private int mappedCacheLiteEpoch = -1;
+    private readonly object mappedCacheLiteLock = new();
+
+    public override List<EntertainmentData> GetAll()
+    {
+        lock (mappedCacheLock)
+        {
+            if (mappedCache != null && mappedCacheEpoch == UniverseScope.Epoch) return mappedCache;
+        }
+        using var db = dbFactory.CreateDbContext();
+        var loaded = EntertainmentMapper.LoadAll(db, includeArchived: false);
+        lock (mappedCacheLock) { mappedCache = loaded; mappedCacheEpoch = UniverseScope.Epoch; }
+        return loaded;
+    }
+
+    public List<EntertainmentData> GetAllLite()
+    {
+        lock (mappedCacheLiteLock)
+        {
+            if (mappedCacheLite != null && mappedCacheLiteEpoch == UniverseScope.Epoch) return mappedCacheLite;
+        }
+        using var db = dbFactory.CreateDbContext();
+        var loaded = EntertainmentMapper.LoadAllLite(db);
+        lock (mappedCacheLiteLock) { mappedCacheLite = loaded; mappedCacheLiteEpoch = UniverseScope.Epoch; }
+        return loaded;
+    }
+
+    public new EntertainmentData? GetById(string id)
+    {
+        if (string.IsNullOrEmpty(id)) return null;
+        if (!Guid.TryParse(id, out var guid))
+        {
+            if (id.Length == 32 && Guid.TryParseExact(id, "N", out guid)) { /* ok */ }
+            else return null;
+        }
+        using var db = dbFactory.CreateDbContext();
+        return EntertainmentMapper.LoadOne(db, guid);
+    }
+
+    public new EntertainmentData? GetBySlug(string slug)
+    {
+        if (string.IsNullOrWhiteSpace(slug)) return null;
+        using var db = dbFactory.CreateDbContext();
+        var entity = db.Entities.AsNoTracking()
+            .FirstOrDefault(e => e.EntityType == "entertainment" && e.IsActive && e.Slug == slug);
+        if (entity == null) return null;
+        return EntertainmentMapper.LoadOne(db, entity.Id);
+    }
+
+    public override List<EntertainmentData> GetAllIncludingArchived()
+    {
+        using var db = dbFactory.CreateDbContext();
+        return EntertainmentMapper.LoadAll(db, includeArchived: true);
+    }
+
+    private void InvalidateMappedCache()
+    {
+        lock (mappedCacheLock) mappedCache = null;
+        lock (mappedCacheLiteLock) mappedCacheLite = null;
+    }
+
+    public override void Save(EntertainmentData item)
+    {
+        var id = ParseEntertainmentGuid(item.Id);
+        if (string.IsNullOrEmpty(item.Id)) item.Id = id.ToString("N");
+
+        using var db = dbFactory.CreateDbContext();
+
+        var name = item.Name ?? "";
+        var existingEntity = db.Entities.FirstOrDefault(e => e.Id == id);
+        if (existingEntity == null)
+        {
+            existingEntity = new Entity
+            {
+                Id         = id,
+                EntityType = entityType,
+                Name       = name,
+                Slug       = ResolveEntertainmentSlug(db, name, id, currentSlug: null),
+                Status     = "canon",
+                CreatedAt  = DateTime.UtcNow,
+                ModifiedAt = DateTime.UtcNow,
+            };
+            db.Entities.Add(existingEntity);
+        }
+        else if (!string.Equals(existingEntity.Name, name, StringComparison.Ordinal))
+        {
+            existingEntity.Name       = name;
+            existingEntity.Slug       = ResolveEntertainmentSlug(db, name, id, existingEntity.Slug);
+            existingEntity.ModifiedAt = DateTime.UtcNow;
+        }
+        else
+        {
+            existingEntity.ModifiedAt = DateTime.UtcNow;
+        }
+
+        EntertainmentMapper.PersistAsync(db, id, item).GetAwaiter().GetResult();
+        FactionMapper.SyncTagsForEntity(db, id, item.Tags);
+        db.SaveChanges();
+
+        InvalidateCacheExternal();
+        InvalidateMappedCache();
+        RaiseOnItemSaved(name);
+    }
+
+    public new void Reload()
+    {
+        base.Reload();
+        InvalidateMappedCache();
+    }
+
+    public override void Delete(string name)
+    {
+        base.Delete(name);
+        InvalidateMappedCache();
+    }
+
+    private static Guid ParseEntertainmentGuid(string s)
+    {
+        if (string.IsNullOrEmpty(s)) return Guid.CreateVersion7();
+        if (Guid.TryParse(s, out var g)) return g;
+        if (s.Length == 32 && Guid.TryParseExact(s, "N", out g)) return g;
+        var hash = System.Security.Cryptography.SHA1.HashData(System.Text.Encoding.UTF8.GetBytes(s));
+        var bytes = new byte[16];
+        Array.Copy(hash, bytes, 16);
+        return new Guid(bytes);
+    }
+
+    private string ResolveEntertainmentSlug(StreetSamuraiDbContext db, string name, Guid id, string? currentSlug)
+    {
+        var plain = WorldGraphService.Slugify(name);
+        var disambig = $"{plain}-{id:N}";
+        if (!string.IsNullOrEmpty(currentSlug)
+            && string.Equals(currentSlug, disambig, StringComparison.Ordinal))
+            return currentSlug;
+        var collision = db.Entities.Any(e =>
+            e.EntityType == entityType && e.Slug == plain && e.Id != id);
+        return collision ? disambig : plain;
+    }
 }
 
+/// <summary>
+/// Fully relational ApparelRepository. Reads materialize ApparelData from the
+/// Apparels table + all child bridges (Aliases / Materials / WornBy / StoryHooks) —
+/// never from Records.Json. Writes persist via <see cref="ApparelMapper"/>. Records.Json is
+/// left intact (additive-only).
+/// </summary>
 public class ApparelRepository : EfRepository<ApparelData>
 {
     public ApparelRepository(IDbContextFactory<StreetSamuraiDbContext> db)
         : base(db, "apparel", a => a.Name) { }
     public ApparelRepository(IPathProvider paths)
         : base(TestDbFactory.For(paths, "apparel"), "apparel", a => a.Name) { }
+
+    private List<ApparelData>? mappedCache;
+    private int mappedCacheEpoch = -1;
+    private readonly object mappedCacheLock = new();
+
+    private List<ApparelData>? mappedCacheLite;
+    private int mappedCacheLiteEpoch = -1;
+    private readonly object mappedCacheLiteLock = new();
+
+    public override List<ApparelData> GetAll()
+    {
+        lock (mappedCacheLock)
+        {
+            if (mappedCache != null && mappedCacheEpoch == UniverseScope.Epoch) return mappedCache;
+        }
+        using var db = dbFactory.CreateDbContext();
+        var loaded = ApparelMapper.LoadAll(db, includeArchived: false);
+        lock (mappedCacheLock) { mappedCache = loaded; mappedCacheEpoch = UniverseScope.Epoch; }
+        return loaded;
+    }
+
+    public List<ApparelData> GetAllLite()
+    {
+        lock (mappedCacheLiteLock)
+        {
+            if (mappedCacheLite != null && mappedCacheLiteEpoch == UniverseScope.Epoch) return mappedCacheLite;
+        }
+        using var db = dbFactory.CreateDbContext();
+        var loaded = ApparelMapper.LoadAllLite(db);
+        lock (mappedCacheLiteLock) { mappedCacheLite = loaded; mappedCacheLiteEpoch = UniverseScope.Epoch; }
+        return loaded;
+    }
+
+    public new ApparelData? GetById(string id)
+    {
+        if (string.IsNullOrEmpty(id)) return null;
+        if (!Guid.TryParse(id, out var guid))
+        {
+            if (id.Length == 32 && Guid.TryParseExact(id, "N", out guid)) { /* ok */ }
+            else return null;
+        }
+        using var db = dbFactory.CreateDbContext();
+        return ApparelMapper.LoadOne(db, guid);
+    }
+
+    public new ApparelData? GetBySlug(string slug)
+    {
+        if (string.IsNullOrWhiteSpace(slug)) return null;
+        using var db = dbFactory.CreateDbContext();
+        var entity = db.Entities.AsNoTracking()
+            .FirstOrDefault(e => e.EntityType == "apparel" && e.IsActive && e.Slug == slug);
+        if (entity == null) return null;
+        return ApparelMapper.LoadOne(db, entity.Id);
+    }
+
+    public override List<ApparelData> GetAllIncludingArchived()
+    {
+        using var db = dbFactory.CreateDbContext();
+        return ApparelMapper.LoadAll(db, includeArchived: true);
+    }
+
+    private void InvalidateMappedCache()
+    {
+        lock (mappedCacheLock) mappedCache = null;
+        lock (mappedCacheLiteLock) mappedCacheLite = null;
+    }
+
+    public override void Save(ApparelData item)
+    {
+        var id = ParseApparelGuid(item.Id);
+        if (string.IsNullOrEmpty(item.Id)) item.Id = id.ToString("N");
+
+        using var db = dbFactory.CreateDbContext();
+
+        var name = item.Name ?? "";
+        var existingEntity = db.Entities.FirstOrDefault(e => e.Id == id);
+        if (existingEntity == null)
+        {
+            existingEntity = new Entity
+            {
+                Id         = id,
+                EntityType = entityType,
+                Name       = name,
+                Slug       = ResolveApparelSlug(db, name, id, currentSlug: null),
+                Status     = "canon",
+                CreatedAt  = DateTime.UtcNow,
+                ModifiedAt = DateTime.UtcNow,
+            };
+            db.Entities.Add(existingEntity);
+        }
+        else if (!string.Equals(existingEntity.Name, name, StringComparison.Ordinal))
+        {
+            existingEntity.Name       = name;
+            existingEntity.Slug       = ResolveApparelSlug(db, name, id, existingEntity.Slug);
+            existingEntity.ModifiedAt = DateTime.UtcNow;
+        }
+        else
+        {
+            existingEntity.ModifiedAt = DateTime.UtcNow;
+        }
+
+        ApparelMapper.PersistAsync(db, id, item).GetAwaiter().GetResult();
+        FactionMapper.SyncTagsForEntity(db, id, item.Tags);
+        db.SaveChanges();
+
+        InvalidateCacheExternal();
+        InvalidateMappedCache();
+        RaiseOnItemSaved(name);
+    }
+
+    public new void Reload()
+    {
+        base.Reload();
+        InvalidateMappedCache();
+    }
+
+    public override void Delete(string name)
+    {
+        base.Delete(name);
+        InvalidateMappedCache();
+    }
+
+    private static Guid ParseApparelGuid(string s)
+    {
+        if (string.IsNullOrEmpty(s)) return Guid.CreateVersion7();
+        if (Guid.TryParse(s, out var g)) return g;
+        if (s.Length == 32 && Guid.TryParseExact(s, "N", out g)) return g;
+        var hash = System.Security.Cryptography.SHA1.HashData(System.Text.Encoding.UTF8.GetBytes(s));
+        var bytes = new byte[16];
+        Array.Copy(hash, bytes, 16);
+        return new Guid(bytes);
+    }
+
+    private string ResolveApparelSlug(StreetSamuraiDbContext db, string name, Guid id, string? currentSlug)
+    {
+        var plain = WorldGraphService.Slugify(name);
+        var disambig = $"{plain}-{id:N}";
+        if (!string.IsNullOrEmpty(currentSlug)
+            && string.Equals(currentSlug, disambig, StringComparison.Ordinal))
+            return currentSlug;
+        var collision = db.Entities.Any(e =>
+            e.EntityType == entityType && e.Slug == plain && e.Id != id);
+        return collision ? disambig : plain;
+    }
 }
 
 /// <summary>
@@ -2092,20 +3590,318 @@ public class MaterialRepository : EfRepository<MaterialData>
     }
 }
 
+/// <summary>
+/// Fully relational PharmaceuticalRepository. Reads materialize PharmaceuticalData from the
+/// Pharmaceuticals table + all child bridges — never from Records.Json. Writes persist
+/// via <see cref="PharmaceuticalMapper"/>. Records.Json is left intact (additive-only).
+/// </summary>
 public class PharmaceuticalRepository : EfRepository<PharmaceuticalData>
 {
     public PharmaceuticalRepository(IDbContextFactory<StreetSamuraiDbContext> db)
         : base(db, "pharmaceutical", p => p.Name) { }
     public PharmaceuticalRepository(IPathProvider paths)
         : base(TestDbFactory.For(paths, "pharmaceutical"), "pharmaceutical", p => p.Name) { }
+
+    private List<PharmaceuticalData>? mappedCache;
+    private int mappedCacheEpoch = -1;
+    private readonly object mappedCacheLock = new();
+
+    private List<PharmaceuticalData>? mappedCacheLite;
+    private int mappedCacheLiteEpoch = -1;
+    private readonly object mappedCacheLiteLock = new();
+
+    public override List<PharmaceuticalData> GetAll()
+    {
+        lock (mappedCacheLock)
+        {
+            if (mappedCache != null && mappedCacheEpoch == UniverseScope.Epoch) return mappedCache;
+        }
+        using var db = dbFactory.CreateDbContext();
+        var loaded = PharmaceuticalMapper.LoadAll(db, includeArchived: false);
+        lock (mappedCacheLock) { mappedCache = loaded; mappedCacheEpoch = UniverseScope.Epoch; }
+        return loaded;
+    }
+
+    public List<PharmaceuticalData> GetAllLite()
+    {
+        lock (mappedCacheLiteLock)
+        {
+            if (mappedCacheLite != null && mappedCacheLiteEpoch == UniverseScope.Epoch) return mappedCacheLite;
+        }
+        using var db = dbFactory.CreateDbContext();
+        var loaded = PharmaceuticalMapper.LoadAllLite(db);
+        lock (mappedCacheLiteLock) { mappedCacheLite = loaded; mappedCacheLiteEpoch = UniverseScope.Epoch; }
+        return loaded;
+    }
+
+    public new PharmaceuticalData? GetById(string id)
+    {
+        if (string.IsNullOrEmpty(id)) return null;
+        if (!Guid.TryParse(id, out var guid))
+        {
+            if (id.Length == 32 && Guid.TryParseExact(id, "N", out guid)) { /* ok */ }
+            else return null;
+        }
+        using var db = dbFactory.CreateDbContext();
+        return PharmaceuticalMapper.LoadOne(db, guid);
+    }
+
+    public new PharmaceuticalData? GetBySlug(string slug)
+    {
+        if (string.IsNullOrWhiteSpace(slug)) return null;
+        using var db = dbFactory.CreateDbContext();
+        var entity = db.Entities.AsNoTracking()
+            .FirstOrDefault(e => e.EntityType == "pharmaceutical" && e.IsActive && e.Slug == slug);
+        if (entity == null) return null;
+        return PharmaceuticalMapper.LoadOne(db, entity.Id);
+    }
+
+    public override List<PharmaceuticalData> GetAllIncludingArchived()
+    {
+        using var db = dbFactory.CreateDbContext();
+        return PharmaceuticalMapper.LoadAll(db, includeArchived: true);
+    }
+
+    private void InvalidateMappedCache()
+    {
+        lock (mappedCacheLock) mappedCache = null;
+        lock (mappedCacheLiteLock) mappedCacheLite = null;
+    }
+
+    public override void Save(PharmaceuticalData item)
+    {
+        var id = ParseGuid(item.Id);
+        if (string.IsNullOrEmpty(item.Id)) item.Id = id.ToString("N");
+
+        using var db = dbFactory.CreateDbContext();
+
+        var name = item.Name ?? "";
+        var existingEntity = db.Entities.FirstOrDefault(e => e.Id == id);
+        if (existingEntity == null)
+        {
+            existingEntity = new Entity
+            {
+                Id         = id,
+                EntityType = entityType,
+                Name       = name,
+                Slug       = ResolveSlug(db, name, id, currentSlug: null),
+                Status     = "canon",
+                CreatedAt  = DateTime.UtcNow,
+                ModifiedAt = DateTime.UtcNow,
+            };
+            db.Entities.Add(existingEntity);
+        }
+        else if (!string.Equals(existingEntity.Name, name, StringComparison.Ordinal))
+        {
+            existingEntity.Name       = name;
+            existingEntity.Slug       = ResolveSlug(db, name, id, existingEntity.Slug);
+            existingEntity.ModifiedAt = DateTime.UtcNow;
+        }
+        else
+        {
+            existingEntity.ModifiedAt = DateTime.UtcNow;
+        }
+
+        PharmaceuticalMapper.PersistAsync(db, id, item).GetAwaiter().GetResult();
+        FactionMapper.SyncTagsForEntity(db, id, item.Tags);
+        db.SaveChanges();
+
+        InvalidateCacheExternal();
+        InvalidateMappedCache();
+        RaiseOnItemSaved(name);
+    }
+
+    public new void Reload()
+    {
+        base.Reload();
+        InvalidateMappedCache();
+    }
+
+    public override void Delete(string name)
+    {
+        base.Delete(name);
+        InvalidateMappedCache();
+    }
+
+    private static Guid ParseGuid(string s)
+    {
+        if (string.IsNullOrEmpty(s)) return Guid.CreateVersion7();
+        if (Guid.TryParse(s, out var g)) return g;
+        if (s.Length == 32 && Guid.TryParseExact(s, "N", out g)) return g;
+        var hash = System.Security.Cryptography.SHA1.HashData(System.Text.Encoding.UTF8.GetBytes(s));
+        var bytes = new byte[16];
+        Array.Copy(hash, bytes, 16);
+        return new Guid(bytes);
+    }
+
+    private string ResolveSlug(StreetSamuraiDbContext db, string name, Guid id, string? currentSlug)
+    {
+        var plain = WorldGraphService.Slugify(name);
+        var disambig = $"{plain}-{id:N}";
+        if (!string.IsNullOrEmpty(currentSlug)
+            && string.Equals(currentSlug, disambig, StringComparison.Ordinal))
+            return currentSlug;
+        var collision = db.Entities.Any(e =>
+            e.EntityType == entityType && e.Slug == plain && e.Id != id);
+        return collision ? disambig : plain;
+    }
 }
 
+/// <summary>
+/// Fully relational ConsumerGoodRepository. Reads materialize ConsumerGoodData from the
+/// ConsumerGoods table + child bridges — never from Records.Json. Writes persist
+/// via <see cref="ConsumerGoodMapper"/>. Records.Json is left intact (additive-only).
+/// </summary>
 public class ConsumerGoodRepository : EfRepository<ConsumerGoodData>
 {
     public ConsumerGoodRepository(IDbContextFactory<StreetSamuraiDbContext> db)
         : base(db, "consumer_good", g => g.ProductName.Length > 0 ? g.ProductName : g.Name) { }
     public ConsumerGoodRepository(IPathProvider paths)
         : base(TestDbFactory.For(paths, "consumer_good"), "consumer_good", g => g.ProductName.Length > 0 ? g.ProductName : g.Name) { }
+
+    private List<ConsumerGoodData>? mappedCache;
+    private int mappedCacheEpoch = -1;
+    private readonly object mappedCacheLock = new();
+
+    private List<ConsumerGoodData>? mappedCacheLite;
+    private int mappedCacheLiteEpoch = -1;
+    private readonly object mappedCacheLiteLock = new();
+
+    public override List<ConsumerGoodData> GetAll()
+    {
+        lock (mappedCacheLock)
+        {
+            if (mappedCache != null && mappedCacheEpoch == UniverseScope.Epoch) return mappedCache;
+        }
+        using var db = dbFactory.CreateDbContext();
+        var loaded = ConsumerGoodMapper.LoadAll(db, includeArchived: false);
+        lock (mappedCacheLock) { mappedCache = loaded; mappedCacheEpoch = UniverseScope.Epoch; }
+        return loaded;
+    }
+
+    public List<ConsumerGoodData> GetAllLite()
+    {
+        lock (mappedCacheLiteLock)
+        {
+            if (mappedCacheLite != null && mappedCacheLiteEpoch == UniverseScope.Epoch) return mappedCacheLite;
+        }
+        using var db = dbFactory.CreateDbContext();
+        var loaded = ConsumerGoodMapper.LoadAllLite(db);
+        lock (mappedCacheLiteLock) { mappedCacheLite = loaded; mappedCacheLiteEpoch = UniverseScope.Epoch; }
+        return loaded;
+    }
+
+    public new ConsumerGoodData? GetById(string id)
+    {
+        if (string.IsNullOrEmpty(id)) return null;
+        if (!Guid.TryParse(id, out var guid))
+        {
+            if (id.Length == 32 && Guid.TryParseExact(id, "N", out guid)) { /* ok */ }
+            else return null;
+        }
+        using var db = dbFactory.CreateDbContext();
+        return ConsumerGoodMapper.LoadOne(db, guid);
+    }
+
+    public new ConsumerGoodData? GetBySlug(string slug)
+    {
+        if (string.IsNullOrWhiteSpace(slug)) return null;
+        using var db = dbFactory.CreateDbContext();
+        var entity = db.Entities.AsNoTracking()
+            .FirstOrDefault(e => e.EntityType == "consumer_good" && e.IsActive && e.Slug == slug);
+        if (entity == null) return null;
+        return ConsumerGoodMapper.LoadOne(db, entity.Id);
+    }
+
+    public override List<ConsumerGoodData> GetAllIncludingArchived()
+    {
+        using var db = dbFactory.CreateDbContext();
+        return ConsumerGoodMapper.LoadAll(db, includeArchived: true);
+    }
+
+    private void InvalidateMappedCache()
+    {
+        lock (mappedCacheLock) mappedCache = null;
+        lock (mappedCacheLiteLock) mappedCacheLite = null;
+    }
+
+    public override void Save(ConsumerGoodData item)
+    {
+        var id = ParseGuid(item.Id);
+        if (string.IsNullOrEmpty(item.Id)) item.Id = id.ToString("N");
+
+        using var db = dbFactory.CreateDbContext();
+
+        var name = item.Name ?? "";
+        var existingEntity = db.Entities.FirstOrDefault(e => e.Id == id);
+        if (existingEntity == null)
+        {
+            existingEntity = new Entity
+            {
+                Id         = id,
+                EntityType = entityType,
+                Name       = name,
+                Slug       = ResolveSlug(db, name, id, currentSlug: null),
+                Status     = "canon",
+                CreatedAt  = DateTime.UtcNow,
+                ModifiedAt = DateTime.UtcNow,
+            };
+            db.Entities.Add(existingEntity);
+        }
+        else if (!string.Equals(existingEntity.Name, name, StringComparison.Ordinal))
+        {
+            existingEntity.Name       = name;
+            existingEntity.Slug       = ResolveSlug(db, name, id, existingEntity.Slug);
+            existingEntity.ModifiedAt = DateTime.UtcNow;
+        }
+        else
+        {
+            existingEntity.ModifiedAt = DateTime.UtcNow;
+        }
+
+        ConsumerGoodMapper.PersistAsync(db, id, item).GetAwaiter().GetResult();
+        FactionMapper.SyncTagsForEntity(db, id, item.Tags);
+        db.SaveChanges();
+
+        InvalidateCacheExternal();
+        InvalidateMappedCache();
+        RaiseOnItemSaved(name);
+    }
+
+    public new void Reload()
+    {
+        base.Reload();
+        InvalidateMappedCache();
+    }
+
+    public override void Delete(string name)
+    {
+        base.Delete(name);
+        InvalidateMappedCache();
+    }
+
+    private static Guid ParseGuid(string s)
+    {
+        if (string.IsNullOrEmpty(s)) return Guid.CreateVersion7();
+        if (Guid.TryParse(s, out var g)) return g;
+        if (s.Length == 32 && Guid.TryParseExact(s, "N", out g)) return g;
+        var hash = System.Security.Cryptography.SHA1.HashData(System.Text.Encoding.UTF8.GetBytes(s));
+        var bytes = new byte[16];
+        Array.Copy(hash, bytes, 16);
+        return new Guid(bytes);
+    }
+
+    private string ResolveSlug(StreetSamuraiDbContext db, string name, Guid id, string? currentSlug)
+    {
+        var plain = WorldGraphService.Slugify(name);
+        var disambig = $"{plain}-{id:N}";
+        if (!string.IsNullOrEmpty(currentSlug)
+            && string.Equals(currentSlug, disambig, StringComparison.Ordinal))
+            return currentSlug;
+        var collision = db.Entities.Any(e =>
+            e.EntityType == entityType && e.Slug == plain && e.Id != id);
+        return collision ? disambig : plain;
+    }
 }
 
 /// <summary>
@@ -2810,4 +4606,162 @@ public class SpeciesRepository
     public IReadOnlyCollection<string> ValidNames() => GetAll().Select(s => s.Name).ToList();
 
     public void Reload() { lock (gate) cache = null; }
+}
+
+/// <summary>
+/// Fully relational SyntheticLifeRepository. Reads materialize SyntheticLifeData from
+/// the SyntheticLives table + all child bridges (Aliases / KnownAssociations / StoryHooks)
+/// — never from Records.Json. Writes persist via <see cref="SyntheticMapper"/>.
+/// Records.Json is left intact (additive-only).
+/// </summary>
+public class SyntheticLifeRepository : EfRepository<SyntheticLifeData>
+{
+    public SyntheticLifeRepository(IDbContextFactory<StreetSamuraiDbContext> db)
+        : base(db, "synthetic", s => s.Name) { }
+    public SyntheticLifeRepository(IPathProvider paths)
+        : base(TestDbFactory.For(paths, "synthetic"), "synthetic", s => s.Name) { }
+
+    private List<SyntheticLifeData>? mappedCache;
+    private int mappedCacheEpoch = -1;
+    private readonly object mappedCacheLock = new();
+
+    private List<SyntheticLifeData>? mappedCacheLite;
+    private int mappedCacheLiteEpoch = -1;
+    private readonly object mappedCacheLiteLock = new();
+
+    public override List<SyntheticLifeData> GetAll()
+    {
+        lock (mappedCacheLock)
+        {
+            if (mappedCache != null && mappedCacheEpoch == UniverseScope.Epoch) return mappedCache;
+        }
+        using var db = dbFactory.CreateDbContext();
+        var loaded = SyntheticMapper.LoadAll(db, includeArchived: false);
+        lock (mappedCacheLock) { mappedCache = loaded; mappedCacheEpoch = UniverseScope.Epoch; }
+        return loaded;
+    }
+
+    public List<SyntheticLifeData> GetAllLite()
+    {
+        lock (mappedCacheLiteLock)
+        {
+            if (mappedCacheLite != null && mappedCacheLiteEpoch == UniverseScope.Epoch) return mappedCacheLite;
+        }
+        using var db = dbFactory.CreateDbContext();
+        var loaded = SyntheticMapper.LoadAllLite(db);
+        lock (mappedCacheLiteLock) { mappedCacheLite = loaded; mappedCacheLiteEpoch = UniverseScope.Epoch; }
+        return loaded;
+    }
+
+    public new SyntheticLifeData? GetById(string id)
+    {
+        if (string.IsNullOrEmpty(id)) return null;
+        if (!Guid.TryParse(id, out var guid))
+        {
+            if (id.Length == 32 && Guid.TryParseExact(id, "N", out guid)) { /* ok */ }
+            else return null;
+        }
+        using var db = dbFactory.CreateDbContext();
+        return SyntheticMapper.LoadOne(db, guid);
+    }
+
+    public new SyntheticLifeData? GetBySlug(string slug)
+    {
+        if (string.IsNullOrWhiteSpace(slug)) return null;
+        using var db = dbFactory.CreateDbContext();
+        var entity = db.Entities.AsNoTracking()
+            .FirstOrDefault(e => e.EntityType == "synthetic" && e.IsActive && e.Slug == slug);
+        if (entity == null) return null;
+        return SyntheticMapper.LoadOne(db, entity.Id);
+    }
+
+    public override List<SyntheticLifeData> GetAllIncludingArchived()
+    {
+        using var db = dbFactory.CreateDbContext();
+        return SyntheticMapper.LoadAll(db, includeArchived: true);
+    }
+
+    private void InvalidateMappedCache()
+    {
+        lock (mappedCacheLock) mappedCache = null;
+        lock (mappedCacheLiteLock) mappedCacheLite = null;
+    }
+
+    public override void Save(SyntheticLifeData item)
+    {
+        var id = ParseSyntheticGuid(item.Id);
+        if (string.IsNullOrEmpty(item.Id)) item.Id = id.ToString("N");
+
+        using var db = dbFactory.CreateDbContext();
+
+        var name = item.Name ?? "";
+        var existingEntity = db.Entities.FirstOrDefault(e => e.Id == id);
+        if (existingEntity == null)
+        {
+            existingEntity = new Entity
+            {
+                Id         = id,
+                EntityType = entityType,
+                Name       = name,
+                Slug       = ResolveSyntheticSlug(db, name, id, currentSlug: null),
+                Status     = "canon",
+                CreatedAt  = DateTime.UtcNow,
+                ModifiedAt = DateTime.UtcNow,
+            };
+            db.Entities.Add(existingEntity);
+        }
+        else if (!string.Equals(existingEntity.Name, name, StringComparison.Ordinal))
+        {
+            existingEntity.Name       = name;
+            existingEntity.Slug       = ResolveSyntheticSlug(db, name, id, existingEntity.Slug);
+            existingEntity.ModifiedAt = DateTime.UtcNow;
+        }
+        else
+        {
+            existingEntity.ModifiedAt = DateTime.UtcNow;
+        }
+
+        SyntheticMapper.PersistAsync(db, id, item).GetAwaiter().GetResult();
+        FactionMapper.SyncTagsForEntity(db, id, item.Tags);
+        db.SaveChanges();
+
+        InvalidateCacheExternal();
+        InvalidateMappedCache();
+        RaiseOnItemSaved(name);
+    }
+
+    public new void Reload()
+    {
+        base.Reload();
+        InvalidateMappedCache();
+    }
+
+    public override void Delete(string name)
+    {
+        base.Delete(name);
+        InvalidateMappedCache();
+    }
+
+    private static Guid ParseSyntheticGuid(string s)
+    {
+        if (string.IsNullOrEmpty(s)) return Guid.CreateVersion7();
+        if (Guid.TryParse(s, out var g)) return g;
+        if (s.Length == 32 && Guid.TryParseExact(s, "N", out g)) return g;
+        var hash = System.Security.Cryptography.SHA1.HashData(System.Text.Encoding.UTF8.GetBytes(s));
+        var bytes = new byte[16];
+        Array.Copy(hash, bytes, 16);
+        return new Guid(bytes);
+    }
+
+    private string ResolveSyntheticSlug(StreetSamuraiDbContext db, string name, Guid id, string? currentSlug)
+    {
+        var plain = WorldGraphService.Slugify(name);
+        var disambig = $"{plain}-{id:N}";
+        if (!string.IsNullOrEmpty(currentSlug)
+            && string.Equals(currentSlug, disambig, StringComparison.Ordinal))
+            return currentSlug;
+        var collision = db.Entities.Any(e =>
+            e.EntityType == entityType && e.Slug == plain && e.Id != id);
+        return collision ? disambig : plain;
+    }
 }

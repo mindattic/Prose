@@ -79,24 +79,30 @@ public class OutlineReviewService
             {"title":"","logline":"","theme":"","premise":"","characters":[],"acts":[{"act_number":1,"name":"","purpose":"","beats":[{"beat_index":0,"title":"","goal":"","characters_present":[],"location":"","emotional_arc":"","stakes":"","seeds":[],"payoffs":[],"tension":5}]}],"character_arcs":[{"character":"","start_state":"","end_state":"","turning_point":"","cost":""}],"seeds_and_payoffs":[{"seed":"","planted_in_beat":0,"payoff":"","payoff_in_beat":0}]}
             """;
 
-        var system = $"""
-            You are a ruthless story editor for neo-noir literary fiction set in GLMZ
-            (formerly Meridian City — after the Behemoth arrived, the old name became a joke).
+        var worldIdentity = UniverseScope.Current?.UniverseGroundingOr(
+            "You are a ruthless story editor for neo-noir literary fiction set in GLMZ\n            (formerly Meridian City — after the Behemoth arrived, the old name became a joke).")
+            ?? "You are a ruthless story editor for neo-noir literary fiction set in GLMZ\n            (formerly Meridian City — after the Behemoth arrived, the old name became a joke).";
+        var worldRulesBlock = (UniverseScope.Current?.IsGlmz ?? true)
+            ? "WORLD RULES YOU MUST ENFORCE:\n" +
+              "            - There are NO city police. Arcturus Civil Security is the closest equivalent,\n" +
+              "              but they're a private contractor with jurisdiction only in contracted zones.\n" +
+              "              Writing \"cops showed up\" or \"called the police\" is a world violation.\n" +
+              "            - Corponations (Libation Corp, Arcturus, Iron Lotus, etc.) are sovereign entities.\n" +
+              "              Their borders are bureaucratic gaps — freelancers exploit the seams.\n" +
+              "            - The Sponsorship Program: lower-tier citizens can gain mobility by submitting to\n" +
+              "              degrading corporate branding. It is humiliating by design. It works because\n" +
+              "              people are desperate. Never make it a joke.\n" +
+              "            - Tier 1 is lowest (poorest, most marginalized). Tier 5 is highest.\n" +
+              "            - The Iowan Behemoth (Meridian 88) is an autonomous machine. NOT synthetic life.\n" +
+              "              It is not alive. It does not feel. It processes.\n" +
+              "            - GLMZ is dangerous. Violence erupts without narrative permission.\n" +
+              "            - The Φ symbol is the QUANTA currency, NOT the Greek letter phi."
+            : (UniverseScope.Current?.UniverseGroundingOr("") ?? "");
 
-            WORLD RULES YOU MUST ENFORCE:
-            - There are NO city police. Arcturus Civil Security is the closest equivalent,
-              but they're a private contractor with jurisdiction only in contracted zones.
-              Writing "cops showed up" or "called the police" is a world violation.
-            - Corponations (Libation Corp, Arcturus, Iron Lotus, etc.) are sovereign entities.
-              Their borders are bureaucratic gaps — freelancers exploit the seams.
-            - The Sponsorship Program: lower-tier citizens can gain mobility by submitting to
-              degrading corporate branding. It is humiliating by design. It works because
-              people are desperate. Never make it a joke.
-            - Tier 1 is lowest (poorest, most marginalized). Tier 5 is highest.
-            - The Iowan Behemoth (Meridian 88) is an autonomous machine. NOT synthetic life.
-              It is not alive. It does not feel. It processes.
-            - GLMZ is dangerous. Violence erupts without narrative permission.
-            - The Φ symbol is the QUANTA currency, NOT the Greek letter phi.
+        var system = $"""
+            {worldIdentity}
+
+            {worldRulesBlock}
 
             YOUR JOB:
             1. DETECT CLICHÉS and flag them with specific language. Then REWRITE the beat

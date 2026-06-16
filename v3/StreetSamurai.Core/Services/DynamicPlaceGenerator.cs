@@ -150,8 +150,10 @@ public class DynamicPlaceGenerator
     {
         if (places.GetByName(name) != null) return name;
 
-        var system = """
-            You are generating a place for near-future fiction set in GLMZ (2100).
+        var systemIdentity = UniverseScope.Current?.UniverseGroundingOr("You are generating a place for near-future fiction set in GLMZ (2100).")
+            ?? "You are generating a place for near-future fiction set in GLMZ (2100).";
+        var system = systemIdentity + """
+
             This place is being discovered during a story — describe what the characters see,
             hear, smell, and feel when they arrive. Be specific and atmospheric.
 

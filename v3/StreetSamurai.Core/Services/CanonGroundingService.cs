@@ -114,8 +114,10 @@ public class CanonGroundingService
     private async Task<List<ProposedEntity>> ExtractEntitiesAsync(
         string text, string context, CancellationToken ct)
     {
+        var systemIdentity = UniverseScope.Current?.UniverseGroundingOr(
+            "You are a canon consistency analyzer for a neo-noir worldbuilding project set in 2250s GLMZ.")
+            ?? "You are a canon consistency analyzer for a neo-noir worldbuilding project set in 2250s GLMZ.";
         const string system = """
-            You are a canon consistency analyzer for a neo-noir worldbuilding project set in 2250s GLMZ.
             Extract all named entities and relationship claims from the provided text.
 
             Return a JSON array — no other text. Each element:
@@ -134,6 +136,7 @@ public class CanonGroundingService
             - Human-sounding names with no clear type → use "character"
             - Return an empty array [] if no named entities are found
             """;
+        var systemPrompt = systemIdentity + "\n            " + system.TrimStart();
 
         var user = string.IsNullOrWhiteSpace(context)
             ? text
@@ -141,7 +144,7 @@ public class CanonGroundingService
 
         try
         {
-            var response = await llm.GenerateAsync(system, user, 0.1, 4096, ct: ct);
+            var response = await llm.GenerateAsync(systemPrompt, user, 0.1, 4096, ct: ct);
             var json = response.Trim();
             json = JsonDefaults.StripCodeFences(json);
 

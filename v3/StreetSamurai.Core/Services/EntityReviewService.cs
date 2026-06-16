@@ -337,10 +337,12 @@ public class EntityReviewService
     private string BuildBallotPrompt(Persona persona, string entityType, string name)
     {
         var who = BuildWhoBlock(persona);
+        var worldLine = UniverseScope.Current?.UniverseGroundingOr("You are rating a worldbuilding entry from GLMZ (Greater Lake Michigan Zone, 2225) — a cyberpunk city ceded to corporate sovereignty.")
+            ?? "You are rating a worldbuilding entry from GLMZ (Greater Lake Michigan Zone, 2225) — a cyberpunk city ceded to corporate sovereignty.";
         return
 $@"{who}
 
-You are rating a worldbuilding entry from GLMZ (Greater Lake Michigan Zone, 2225) — a cyberpunk city ceded to corporate sovereignty.
+{worldLine}
 
 The entry below describes a {entityType} called ""{name}"".
 
@@ -353,10 +355,12 @@ Return ONLY a JSON object, nothing else:
     private string BuildReviewPrompt(Persona persona, string entityType, string name)
     {
         var who = BuildWhoBlock(persona);
+        var worldLine = UniverseScope.Current?.UniverseGroundingOr("You are reviewing a worldbuilding entry from GLMZ (Greater Lake Michigan Zone, 2225) — a cyberpunk city ceded to corporate sovereignty.")
+            ?? "You are reviewing a worldbuilding entry from GLMZ (Greater Lake Michigan Zone, 2225) — a cyberpunk city ceded to corporate sovereignty.";
         return
 $@"{who}
 
-You are reviewing a worldbuilding entry from GLMZ (Greater Lake Michigan Zone, 2225) — a cyberpunk city ceded to corporate sovereignty.
+{worldLine}
 
 The entry below describes a {entityType} called ""{name}"".
 
@@ -383,7 +387,9 @@ React as THIS person: high Openness welcomes strange and original; low wants cla
         who +=
 @"
 
-ONE MORE THING: you are a die-hard cyberpunk reader (Neuromancer, Snow Crash, Count Zero, Diamond Age, Hardwired). You know the difference between world-building that feels earned — specific, lived-in, with real texture — and generic setting-filler that performs profundity without containing any. Judge accordingly.";
+" + (UniverseScope.Current?.UniverseGroundingOr(
+            "ONE MORE THING: you are a die-hard cyberpunk reader (Neuromancer, Snow Crash, Count Zero, Diamond Age, Hardwired). You know the difference between world-building that feels earned — specific, lived-in, with real texture — and generic setting-filler that performs profundity without containing any. Judge accordingly.")
+            ?? "ONE MORE THING: you are a die-hard cyberpunk reader (Neuromancer, Snow Crash, Count Zero, Diamond Age, Hardwired). You know the difference between world-building that feels earned — specific, lived-in, with real texture — and generic setting-filler that performs profundity without containing any. Judge accordingly.");
 
         return who;
     }

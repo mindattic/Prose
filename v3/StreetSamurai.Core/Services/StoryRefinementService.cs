@@ -253,26 +253,8 @@ public class StoryRefinementService
 
     // ── Private ────────────────────────────────────────────────────────
 
-    async Task<List<RefinementNote>> AnalyzeBeatAsync(
-        AutonomousStory story, GeneratedStoryBeat beat, string judgeId, CancellationToken ct)
-    {
-        var systemPrompt = BuildSystemPrompt();
-        var userMessage  = BuildBeatPrompt(story, beat);
-
-        var raw = await provider.CallAsync(
-            providerId:   judgeId,
-            systemPrompt: systemPrompt,
-            userMessage:  userMessage,
-            maxTokens:    2048,
-            temperature:  0.3,
-            ct:           ct);
-
-        return ParseNotes(beat.BeatIndex, raw);
-    }
-
-    static string BuildSystemPrompt() => """
-        You are a developmental editor reviewing one beat of a neo-noir short story
-        set in GLMZ (also called Meridian 88 or The Glooms). Your job is to flag
+    private const string SystemPromptSuffix = """
+         Your job is to flag
         specific moments the author should reconsider. You do not rewrite. You
         propose. The author decides.
 
@@ -304,6 +286,31 @@ public class StoryRefinementService
 
         Be sparing. Five notes across all kinds is plenty. Silence is fine.
         """;
+
+    async Task<List<RefinementNote>> AnalyzeBeatAsync(
+        AutonomousStory story, GeneratedStoryBeat beat, string judgeId, CancellationToken ct)
+    {
+        var systemPrompt = BuildSystemPrompt();
+        var userMessage  = BuildBeatPrompt(story, beat);
+
+        var raw = await provider.CallAsync(
+            providerId:   judgeId,
+            systemPrompt: systemPrompt,
+            userMessage:  userMessage,
+            maxTokens:    2048,
+            temperature:  0.3,
+            ct:           ct);
+
+        return ParseNotes(beat.BeatIndex, raw);
+    }
+
+    static string BuildSystemPrompt()
+    {
+        var identity = UniverseScope.Current?.UniverseGroundingOr(
+            "You are a developmental editor reviewing one beat of a neo-noir short story set in GLMZ (also called Meridian 88 or The Glooms).")
+            ?? "You are a developmental editor reviewing one beat of a neo-noir short story set in GLMZ (also called Meridian 88 or The Glooms).";
+        return identity + SystemPromptSuffix;
+    }
 
     string BuildBeatPrompt(AutonomousStory story, GeneratedStoryBeat beat)
     {

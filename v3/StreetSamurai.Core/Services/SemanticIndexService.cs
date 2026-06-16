@@ -19,6 +19,7 @@ public class SemanticIndexService
     // Total indexed documents
     private int docCount;
     private bool built;
+    private int builtEpoch = -1;
 
     private static readonly HashSet<string> StopWords = new(StringComparer.OrdinalIgnoreCase)
     {
@@ -119,6 +120,7 @@ public class SemanticIndexService
         }
 
         built = true;
+        builtEpoch = UniverseScope.Epoch;
     }
 
     /// <summary>
@@ -126,7 +128,7 @@ public class SemanticIndexService
     /// </summary>
     public void UpdateNode(string nodeId)
     {
-        if (!built) { RebuildIndex(); return; }
+        if (!built || builtEpoch != UniverseScope.Epoch) { RebuildIndex(); return; }
 
         var node = graph.GetNode(nodeId);
         if (node == null) { _vectors.Remove(nodeId); return; }
@@ -163,7 +165,7 @@ public class SemanticIndexService
     /// </summary>
     public List<(string nodeId, double score)> Search(string query, int topK = 10)
     {
-        if (!built) RebuildIndex();
+        if (!built || builtEpoch != UniverseScope.Epoch) RebuildIndex();
 
         var queryTokens = Tokenize(query);
         if (queryTokens.Count == 0) return [];

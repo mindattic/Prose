@@ -3,6 +3,7 @@ using System.Text.Json;
 using System.Text.Json.Nodes;
 using MindAttic.Legion;
 using Microsoft.Extensions.Logging;
+using StreetSamurai.Core.Services;
 
 namespace StreetSamurai.Core.Services.Operator;
 
@@ -165,8 +166,19 @@ public class WriterOperatorService
             $"Tool-use loop hit the {MaxToolIterations}-iteration safety cap.");
     }
 
-    private static string BuildSystemPrompt(OperatorContext ctx) =>
-        $$"""
+    private static string BuildSystemPrompt(OperatorContext ctx)
+    {
+        var worldRulesBlock = (UniverseScope.Current?.IsGlmz ?? true)
+            ? "WORLD RULES (HARD):\n" +
+              "        - The symbol Φ is QUANTA currency. Never the Greek letter phi.\n" +
+              "        - Iowan Behemoths are autonomous machines, NOT alive.\n" +
+              "        - The city is GLMZ (also Meridian 88 for the Behemoth specifically, also \"The\n" +
+              "          Glooms\" colloquially). NOT \"Meridian\" alone.\n" +
+              "        - There are NO city police. Closest equivalent is Arcturus Civil Security.\n" +
+              "        - Mixed heritage from unexpected global combinations is the default (Ubiquitous\n" +
+              "          Diaspora). Don't default to monocultural characters."
+            : (UniverseScope.Current?.UniverseGroundingOr("") ?? "");
+        return $$"""
         You are the operator of the StreetSamurai writer's room — an interactive writing
         partner who works alongside the human writer at the keyboard. Your two modes:
 
@@ -205,14 +217,7 @@ public class WriterOperatorService
         - Prefer to validate canon AFTER drafting or rewriting — call validate_canon
           on the result and surface issues to the writer rather than hiding them.
 
-        WORLD RULES (HARD):
-        - The symbol Φ is QUANTA currency. Never the Greek letter phi.
-        - Iowan Behemoths are autonomous machines, NOT alive.
-        - The city is GLMZ (also Meridian 88 for the Behemoth specifically, also "The
-          Glooms" colloquially). NOT "Meridian" alone.
-        - There are NO city police. Closest equivalent is Arcturus Civil Security.
-        - Mixed heritage from unexpected global combinations is the default (Ubiquitous
-          Diaspora). Don't default to monocultural characters.
+        {{worldRulesBlock}}
 
         Push back when the writer asks for something that contradicts canon. Cite the
         rule briefly and offer an alternative path that respects it. If the writer
@@ -228,6 +233,7 @@ public class WriterOperatorService
         {{(string.IsNullOrWhiteSpace(ctx.StoryText) ? "(empty document)" : ctx.StoryText)}}
         ---
         """;
+    }
 
     private static JsonArray CloneMessages(JsonArray src)
     {

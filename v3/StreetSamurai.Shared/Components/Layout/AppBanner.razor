@@ -1,0 +1,61 @@
+@inject NavigationManager Nav
+@inject StreetSamurai.Core.Services.IUniverseContext Universe
+
+<div class="app-banner">
+    <div class="app-banner-brand">
+        <span class="app-banner-title">Street Samurai</span>
+        <span class="app-banner-subtitle">Writer Engine</span>
+    </div>
+    <div class="app-banner-controls">
+        @if (universes.Count > 1)
+        {
+            <select class="app-banner-universe form-select form-select-sm"
+                    title="Switch universe"
+                    @onchange="OnUniverseChanged">
+                @foreach (var u in universes)
+                {
+                    <option value="@u.Id" selected="@(u.Id == currentUniverseId)">@u.Name</option>
+                }
+            </select>
+        }
+    </div>
+</div>
+
+@code {
+    private IReadOnlyList<StreetSamurai.Core.Services.UniverseInfo> universes
+        = new List<StreetSamurai.Core.Services.UniverseInfo>();
+    private Guid currentUniverseId;
+
+    /// <summary>Raised when the universe changes so MainLayout can update data-theme.</summary>
+    [Parameter] public EventCallback<string> OnThemeChanged { get; set; }
+
+    protected override void OnInitialized()
+    {
+        try
+        {
+            universes = Universe.ListUniverses();
+            currentUniverseId = Universe.CurrentId;
+        }
+        catch
+        {
+            universes = new List<StreetSamurai.Core.Services.UniverseInfo>();
+        }
+    }
+
+    /// <summary>Returns "dark" for GLMZ (or no universe), "light" for Fantasy.</summary>
+    public static string ThemeFor(StreetSamurai.Core.Services.IUniverseContext ctx)
+        => ctx.IsGlmz ? "dark" : "light";
+
+    private async Task OnUniverseChanged(ChangeEventArgs e)
+    {
+        if (!Guid.TryParse(e.Value?.ToString(), out var id) || id == currentUniverseId) return;
+        Universe.UseUniverse(id);
+        Universe.PersistAsDefault(id);
+        currentUniverseId = id;
+        // Notify parent so it can flip data-theme before the full reload.
+        var theme = Universe.IsGlmz ? "dark" : "light";
+        await OnThemeChanged.InvokeAsync(theme);
+        // Full reload so every component re-queries canon under the new universe.
+        Nav.NavigateTo(Nav.Uri, forceLoad: true);
+    }
+}

@@ -38,6 +38,7 @@ public class GlobalSearchService
     private readonly PsionicRepository psionics;
 
     private List<SearchIndexEntry> index = [];
+    private int builtEpoch = -1;
     private readonly object syncLock = new();
 
     public GlobalSearchService(
@@ -208,7 +209,7 @@ public class GlobalSearchService
     {
         lock (syncLock)
         {
-            if (index.Count > 0) return;
+            if (index.Count > 0 && builtEpoch == UniverseScope.Epoch) return;
             RebuildIndex();
         }
     }
@@ -263,6 +264,7 @@ public class GlobalSearchService
         foreach (var p in psionics.GetAll())        entries.Add(ProjectPsionic(p));
 
         index = entries;
+        builtEpoch = UniverseScope.Epoch;
     }
 
     // ── Per-type projections (shared between RebuildIndex and OnItemSaved) ────

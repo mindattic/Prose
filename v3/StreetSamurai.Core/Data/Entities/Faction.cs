@@ -95,6 +95,7 @@ public class FactionRelationshipRow
     public int Position { get; set; }
     public Faction? Faction { get; set; }
     public Entity? TargetFaction { get; set; }
+    public ICollection<FactionRelationshipTag> Tags { get; set; } = new List<FactionRelationshipTag>();
 }
 
 /// <summary>Faction member. CharacterId resolves to a Character Entity.</summary>
@@ -110,4 +111,20 @@ public class FactionMemberRow
     public int Position { get; set; }
     public Faction? Faction { get; set; }
     public Entity? Character { get; set; }
+}
+
+/// <summary>
+/// One tag on a <see cref="FactionRelationshipRow"/>. Mirrors the per-entity
+/// EntityTags pattern but scoped to a single relationship rather than the
+/// whole faction — needed because FactionRelationship.Tags (~178 values) has
+/// no column on the parent row and the universal EntityTags table is keyed to
+/// an Entity.Id, not a bridge row id.
+/// </summary>
+public class FactionRelationshipTag
+{
+    public long Id { get; set; }
+    public long FactionRelationshipRowId { get; set; }
+    public int Position { get; set; }
+    public string Value { get; set; } = "";
+    public FactionRelationshipRow? FactionRelationshipRow { get; set; }
 }

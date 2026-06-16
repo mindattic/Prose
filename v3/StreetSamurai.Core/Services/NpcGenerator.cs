@@ -83,8 +83,10 @@ public class NpcGenerator
         var preferredNames = namePool.SamplePreferredNames(40);
         var usedFirstNames = namePool.SampleUsedFirstNames(60);
 
-        var system = """
-            You are a character designer for near-future fiction set in GLMZ (2100).
+        var systemIdentity = UniverseScope.Current?.UniverseGroundingOr("You are a character designer for near-future fiction set in GLMZ (2100).")
+            ?? "You are a character designer for near-future fiction set in GLMZ (2100).";
+        var system = systemIdentity + """
+
             Create a COMPLETE character. This person is not disposable — they will persist
             in the world and may recur in future stories.
 
