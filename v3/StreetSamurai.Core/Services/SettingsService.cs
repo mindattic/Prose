@@ -128,7 +128,7 @@ public class SettingsService : IDisposable
     public string Model { get => data.Model; set { data.Model = value; ScheduleSave(); } }
     /// <summary>Raised when the theme changes so layout components can update without a full reload.</summary>
     public event Action<string>? ThemeChanged;
-    public string Theme { get => data.Theme; set { data.Theme = value; ScheduleSave(); ThemeChanged?.Invoke(value); } }
+    public string Theme { get => data.Theme; set { data.Theme = value; ScheduleSave(); try { ThemeChanged?.Invoke(value); } catch { /* subscriber fault must not abort remaining handlers or the setter caller */ } } }
     public string CanonRootPath { get => data.CanonRootPath; set { data.CanonRootPath = value; ScheduleSave(); } }
     public int MaxTokens { get => data.MaxTokens; set { data.MaxTokens = value; ScheduleSave(); } }
     public string ElevenLabsApiKey

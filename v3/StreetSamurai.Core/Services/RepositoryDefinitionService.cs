@@ -76,7 +76,9 @@ public class RepositoryDefinitionService
         };
         db.RepositoryDefinitions.Add(def);
         try { db.SaveChanges(); }
-        catch (Microsoft.EntityFrameworkCore.DbUpdateException)
+        catch (Microsoft.EntityFrameworkCore.DbUpdateException ex)
+            when (ex.InnerException?.Message.Contains("duplicate key", StringComparison.OrdinalIgnoreCase) == true
+               || ex.InnerException?.Message.Contains("UNIQUE KEY", StringComparison.OrdinalIgnoreCase) == true)
         {
             throw new InvalidOperationException($"A repository with slug '{slug}' already exists.");
         }
