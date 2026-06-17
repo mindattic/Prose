@@ -40,7 +40,7 @@
                 <div class="ab-menu-backdrop" @onclick="CloseMenu"></div>
             }
             <button class="topnav-link ab-menu-trigger position-relative @(menuOpen ? "open" : "")"
-                    type="button" @onclick="ToggleMenu" title="Menu">
+                    type="button" @onclick="ToggleMenu" title="@(inboxCount > 0 ? inboxTooltip : "Menu")">
                 <i class="bi bi-list"></i>
                 @if (inboxCount > 0)
                 {
@@ -106,6 +106,7 @@
     [Parameter] public EventCallback<string> OnThemeChanged { get; set; }
 
     // ── Hamburger menu ────────────────────────────────────────────────────
+    private bool disposed;
     private bool menuOpen;
     private void ToggleMenu() => menuOpen = !menuOpen;
     private void CloseMenu() => menuOpen = false;
@@ -139,6 +140,7 @@
 
         inboxPoll = new System.Threading.Timer(_ =>
         {
+            if (disposed) return;
             RefreshInboxCount();
             InvokeAsync(StateHasChanged);
         }, null, TimeSpan.FromSeconds(15), TimeSpan.FromSeconds(15));
@@ -220,6 +222,7 @@
 
     public void Dispose()
     {
+        disposed = true;
         Nav.LocationChanged -= OnLocationChanged;
         inboxPoll?.Dispose();
     }

@@ -36,11 +36,14 @@
 
     private void OnToast(ToastMessage msg)
     {
-        latestMessage = string.IsNullOrEmpty(msg.Code)
-            ? msg.Message
-            : $"[{msg.Code}] {msg.Message}";
-        latestLevel = msg.Level;
-        InvokeAsync(StateHasChanged);
+        InvokeAsync(() =>
+        {
+            latestMessage = string.IsNullOrEmpty(msg.Code)
+                ? msg.Message
+                : $"[{msg.Code}] {msg.Message}";
+            latestLevel = msg.Level;
+            StateHasChanged();
+        });
     }
 
     public void Dispose()

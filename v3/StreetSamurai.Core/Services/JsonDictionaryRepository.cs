@@ -35,7 +35,7 @@ public class JsonSingletonRepository<T> where T : class, new()
     /// row — the seam that stops GLMZ's Kyle voice bleeding into Fantasy (RFC 0006).</summary>
     private static Guid TargetUniverse()
     {
-        // 'key' is per-instance; SharedConfigKeys is the operational allow-list.
+        // Callers resolve SharedConfigKeys before calling; this method provides the universe fallback.
         var scoped = UniverseScope.EffectiveId;
         return scoped != Guid.Empty ? scoped : Data.Entities.Universe.GlmzId;
     }

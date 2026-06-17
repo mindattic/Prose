@@ -92,7 +92,7 @@ else
 
     private bool navPending = false;
     private string? bgImage;
-    private string currentTheme = "glmz"; // default; overridden by universe on init
+    private string currentTheme = ""; // always set in OnInitialized
 
     // Persistent two-pane shell: left = strand selection + writer, right = repositories & tools
     // (@Body). Swap flips them; the cycle button collapses left / right / neither. State persists
@@ -123,9 +123,17 @@ else
         var universeTheme = AppBanner.ThemeFor(Universe);
         currentTheme = SettingsSvc.Theme == "auto" ? universeTheme : SettingsSvc.Theme;
         embed = IsEmbed();
+        SettingsSvc.ThemeChanged += OnSettingsThemeChanged;
     }
 
-    private void OnThemeChanged(string theme) => currentTheme = theme;
+    private void OnThemeChanged(string theme)
+        => currentTheme = SettingsSvc.Theme == "auto" ? theme : SettingsSvc.Theme;
+
+    private void OnSettingsThemeChanged(string theme)
+    {
+        currentTheme = theme == "auto" ? AppBanner.ThemeFor(Universe) : theme;
+        InvokeAsync(StateHasChanged);
+    }
 
     private async Task ToggleSwap()
     {
@@ -222,5 +230,6 @@ else
     public void Dispose()
     {
         Nav.LocationChanged -= OnLocationChanged;
+        SettingsSvc.ThemeChanged -= OnSettingsThemeChanged;
     }
 }

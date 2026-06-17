@@ -75,7 +75,11 @@ public class RepositoryDefinitionService
             CreatedAt   = DateTime.UtcNow,
         };
         db.RepositoryDefinitions.Add(def);
-        db.SaveChanges();
+        try { db.SaveChanges(); }
+        catch (Microsoft.EntityFrameworkCore.DbUpdateException)
+        {
+            throw new InvalidOperationException($"A repository with slug '{slug}' already exists.");
+        }
         return def;
     }
 }

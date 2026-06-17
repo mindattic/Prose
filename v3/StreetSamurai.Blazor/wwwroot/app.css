@@ -2477,20 +2477,24 @@ hr {
 .app-shell[data-theme="fantasy"] .ab-menu-divider { background: rgba(0,0,0,.10); }
 .app-shell[data-theme="fantasy"] .ab-menu-item:hover { background: rgba(0,0,0,.06); }
 
-/* ── Light theme (warm parchment / generic override) ─────────────────────── */
-.app-shell[data-theme="light"] .home-split .home-pane { border-color: rgba(0,0,0,.12); }
-.app-shell[data-theme="light"] .home-split .home-pane-head { border-bottom-color: rgba(0,0,0,.12); }
+/* ── Shared structural rules: both light and fantasy override the same dark borders ── */
+.app-shell:is([data-theme="fantasy"], [data-theme="light"]) .home-split .home-pane { border-color: rgba(0,0,0,.12); }
+.app-shell:is([data-theme="fantasy"], [data-theme="light"]) .home-split .home-pane-head { border-bottom-color: rgba(0,0,0,.12); }
+.app-shell:is([data-theme="fantasy"], [data-theme="light"]) .app-split > .app-pane { border-color: rgba(0,0,0,.12); }
+.app-shell:is([data-theme="fantasy"], [data-theme="light"]) .writer-pane-head { border-bottom-color: rgba(0,0,0,.12); }
+.app-shell:is([data-theme="fantasy"], [data-theme="light"]) .auto-breadcrumb { border-bottom-color: rgba(0,0,0,.10); }
+.app-shell:is([data-theme="fantasy"], [data-theme="light"]) .ab-menu-divider { background: rgba(0,0,0,.10); }
+.app-shell:is([data-theme="fantasy"], [data-theme="light"]) .ab-menu-item:hover { background: rgba(0,0,0,.06); }
+
+/* ── Light theme (warm parchment — color values differ from fantasy) ─────── */
 .app-shell[data-theme="light"] .app-banner { background: #efe7da; border-bottom-color: rgba(0,0,0,.12); color: #2c2018; }
 .app-shell[data-theme="light"] .app-banner-universe.form-select {
     background-color: #fbf7f0; color: #2c2018; border-color: rgba(0,0,0,.2);
     background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16'%3e%3cpath fill='none' stroke='%23666' stroke-linecap='round' stroke-linejoin='round' stroke-width='2' d='M2 5l6 6 6-6'/%3e%3c/svg%3e");
 }
-.app-shell[data-theme="light"] .app-split > .app-pane { border-color: rgba(0,0,0,.12); }
-.app-shell[data-theme="light"] .writer-pane-head { border-bottom-color: rgba(0,0,0,.12); }
 .app-shell[data-theme="light"] .app-banner-search { background: #fbf7f0; color: #2c2018; border-color: rgba(0,0,0,.2); }
 .app-shell[data-theme="light"] .app-banner-search:focus { border-color: #8b5e3c; }
 .app-shell[data-theme="light"] .app-banner-search::placeholder { color: #a09080; }
-.app-shell[data-theme="light"] .auto-breadcrumb { border-bottom-color: rgba(0,0,0,.1); }
 .app-shell[data-theme="light"] .auto-breadcrumb-link { color: #8b6f5a; }
 .app-shell[data-theme="light"] .auto-breadcrumb-link:hover { color: #2c2018; }
 .app-shell[data-theme="light"] .auto-breadcrumb-current { color: #2c2018; }
@@ -2503,8 +2507,6 @@ hr {
 .app-shell[data-theme="light"] .app-statusbar--success { color: #1e8449; }
 .app-shell[data-theme="light"] .app-statusbar--info    { color: #1a5276; }
 .app-shell[data-theme="light"] .ab-menu-panel { background: #fbf7f0; border-color: rgba(0,0,0,.18); box-shadow: 0 8px 28px rgba(0,0,0,.18); }
-.app-shell[data-theme="light"] .ab-menu-divider { background: rgba(0,0,0,.10); }
-.app-shell[data-theme="light"] .ab-menu-item:hover { background: rgba(0,0,0,.06); }
 
 /* ── Dark theme (explicit alias for the default dark/GLMZ look) ──────────── */
 /* No overrides needed — base CSS styles are the dark theme. */

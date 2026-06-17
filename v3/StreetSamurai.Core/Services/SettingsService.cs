@@ -126,7 +126,9 @@ public class SettingsService : IDisposable
         set { MindAtticCredentialStore.SetKey("claude", value); data.ApiKey = value; ScheduleSave(); }
     }
     public string Model { get => data.Model; set { data.Model = value; ScheduleSave(); } }
-    public string Theme { get => data.Theme; set { data.Theme = value; ScheduleSave(); } }
+    /// <summary>Raised when the theme changes so layout components can update without a full reload.</summary>
+    public event Action<string>? ThemeChanged;
+    public string Theme { get => data.Theme; set { data.Theme = value; ScheduleSave(); ThemeChanged?.Invoke(value); } }
     public string CanonRootPath { get => data.CanonRootPath; set { data.CanonRootPath = value; ScheduleSave(); } }
     public int MaxTokens { get => data.MaxTokens; set { data.MaxTokens = value; ScheduleSave(); } }
     public string ElevenLabsApiKey
