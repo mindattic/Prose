@@ -6,7 +6,7 @@ using StreetSamurai.Core.Interfaces;
 
 namespace StreetSamurai.Core.Services;
 
-public enum FindingCategory { Contradiction, Cliche, Anachronism, Voice, OutlineDrift, Other }
+public enum FindingCategory { Contradiction, Cliche, Anachronism, Voice, OutlineDrift, GearContradiction, BehaviorContradiction, Other }
 public enum FindingSeverity { Low, Medium, High }
 public enum FindingStatus   { New, Triaged, Applied, Dismissed }
 
