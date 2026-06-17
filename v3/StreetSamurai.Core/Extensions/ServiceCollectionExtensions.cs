@@ -688,6 +688,15 @@ public static class ServiceCollectionExtensions
         services.AddSingleton<EntityRatingService>();
         services.AddSingleton<EntityReviewService>();
 
+        // Prose-continuity and world-modelling services (2026-06-16)
+        services.AddSingleton<EntityRelationshipService>();
+        services.AddSingleton<ProsePatternGuard>();
+        services.AddSingleton<AmbientDetailInjector>();
+        services.AddSingleton<WorldStateAtBeatService>();
+        services.AddSingleton<GearCarryEnforcer>();
+        services.AddSingleton<BehavioralInvariantEnforcer>();
+        services.AddSingleton<WeaponAmmoCompatibilityService>();
+
         return services;
     }
 
