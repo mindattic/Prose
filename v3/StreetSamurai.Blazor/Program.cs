@@ -1263,6 +1263,16 @@ if (args.Contains("--ambient-palette"))
     return;
 }
 
+// ss --seed-sensory-hints [--list] [--weapon "Name" --hints "hint1; hint2"] [--force]
+if (args.Contains("--seed-sensory-hints"))
+{
+    var cliBuilder = WebApplication.CreateBuilder(args);
+    cliBuilder.Services.AddStreetSamuraiServices();
+    var cliApp = cliBuilder.Build();
+    Environment.ExitCode = await SeedSensoryHintsCli.RunAsync(args, cliApp.Services);
+    return;
+}
+
 var builder = WebApplication.CreateBuilder(args);
 
 // Cloud-native configuration chain. Layered (later sources win):
