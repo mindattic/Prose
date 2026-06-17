@@ -49,7 +49,7 @@ public class ToastNotifier
 
     private void Show(string level, string code, string message)
     {
-        ToastRaised?.Invoke(new ToastMessage(level, code, message));
+        try { ToastRaised?.Invoke(new ToastMessage(level, code, message)); } catch { /* subscriber fault must not kill the JS toast */ }
         _ = ShowAsync(level, code, message);
     }
 
