@@ -7,34 +7,45 @@ using StreetSamurai.Core.Services;
 namespace StreetSamurai.Blazor.Cli;
 
 /// <summary>
-/// ss --seed-sensory-hints               Seed canonical hints for Silence + Chorus
+/// ss --seed-sensory-hints               Seed canonical hints for Silence + Cacophony
 /// ss --seed-sensory-hints --list        Show all current sensory_hints rows
 /// ss --seed-sensory-hints --weapon "Silence" --hints "hint1; hint2"   Set for any weapon
 /// ss --seed-sensory-hints --force       Overwrite existing rows (default: skip)
-/// ss --seed-sensory-hints --seed-carry-edges   Also seed Kyle's carry edges for Silence + Chorus
+/// ss --seed-sensory-hints --seed-carry-edges   Also seed Kyle's carry edges for Silence + Cacophony
+///
+/// Canonical weapon names and GUIDs come from AmmunitionLinkerService constants — do not
+/// duplicate them here. If a name changes, change it there once; this file picks it up.
 /// </summary>
 public static class SeedSensoryHintsCli
 {
     // Canonical sensory palettes for Kyle's signature weapons.
     // Semicolon-delimited — each segment is one injectable detail.
     // Keep it grounded, physical, non-poetic (the LLM poeticises; we just name the texture).
+    //
+    // Names + GUIDs referenced from AmmunitionLinkerService; never hardcode them here.
     private static readonly CanonWeapon[] CanonicalWeapons =
     [
-        new("Silence",   "silence-katana",  "melee",
-            "Kyle's matte-black carbon-nanotube composite katana. Plain steel-CNT construction — no piezo, no glow.",
+        new(AmmunitionLinkerService.SilenceWeaponName,
+            AmmunitionLinkerService.SilenceWeaponId,
+            "silence-katana", "melee",
+            "Kyle's matte-black carbon-nanotube composite katana. Plain steel-CNT — no piezo, no glow.",
             "weight at the hip; cloth-wrapped tsuka; lacquered saya; hiss of the draw; " +
             "balanced point in the hand; faint cedar from the saya lining"),
 
-        new("Chorus",    "chorus-revolver", "firearm",
+        new(AmmunitionLinkerService.CacophonyWeaponName,
+            AmmunitionLinkerService.CacophonyWeaponId,
+            "cacophony-revolver", "firearm",
             "Kyle's 5-shot revolver with a birds-head grip worn smooth from use.",
             "cylinder heft in the palm; birds-head grip worn smooth; " +
             "trigger pull weight; spent-powder smell after firing; " +
             "hammer click on cock; cold steel frame against the wrist"),
     ];
 
-    private static readonly Guid KyleId = Guid.Parse("019D6143-A648-7876-9688-0F6D38D70075");
+    private static readonly Guid KyleId = AmmunitionLinkerService.KyleCharacterId;
 
-    private sealed record CanonWeapon(string Name, string Slug, string Category, string Description, string Hints);
+    private sealed record CanonWeapon(
+        string Name, Guid KnownId, string Slug, string Category,
+        string Description, string Hints);
 
     public static async Task<int> RunAsync(string[] args, IServiceProvider services)
     {
@@ -69,6 +80,9 @@ public static class SeedSensoryHintsCli
             return 1;
         }
 
+        // One-time cleanup: remove the stale "Chorus" entity created before the rename.
+        await CleanupStaleChorusEntityAsync(db);
+
         var result = await SeedCanonical(db, force);
 
         if (seedEdges)
@@ -76,6 +90,43 @@ public static class SeedSensoryHintsCli
 
         return result;
     }
+
+    // ── one-time migration ────────────────────────────────────────────────────
+
+    /// <summary>
+    /// Removes the stale "Chorus" entity + its Weapons row, WeaponSpec, and carry edge
+    /// that were created before the Chorus→Cacophony rename. Idempotent; no-ops when
+    /// the entity is already gone.
+    /// </summary>
+    private static async Task CleanupStaleChorusEntityAsync(StreetSamuraiDbContext db)
+    {
+        var stale = await db.Entities
+            .FirstOrDefaultAsync(e => e.Slug == "chorus-revolver" && e.EntityType == "weapon");
+        if (stale == null) return;
+
+        Console.WriteLine($"  [cleanup] Removing stale 'chorus-revolver' entity ({stale.Id})…");
+
+        // carry edge Kyle → chorus-revolver
+        var edge = await db.Edges
+            .FirstOrDefaultAsync(e => e.SourceId == KyleId && e.TargetId == stale.Id && e.RelationType == "carries");
+        if (edge != null) db.Edges.Remove(edge);
+
+        // WeaponSpec rows
+        var specs = await db.WeaponSpecs.Where(s => s.WeaponId == stale.Id).ToListAsync();
+        db.WeaponSpecs.RemoveRange(specs);
+
+        // Weapons row
+        var weaponRow = await db.Weapons.FindAsync(stale.Id);
+        if (weaponRow != null) db.Weapons.Remove(weaponRow);
+
+        // Entity spine last (FK target)
+        db.Entities.Remove(stale);
+
+        await db.SaveChangesAsync();
+        Console.WriteLine("  [cleanup] Done.");
+    }
+
+    // ── canonical seed ────────────────────────────────────────────────────────
 
     private static async Task<int> ListHints(StreetSamuraiDbContext db)
     {
@@ -123,8 +174,7 @@ public static class SeedSensoryHintsCli
         foreach (var cw in CanonicalWeapons)
         {
             var weaponId = await FindOrCreateWeaponAsync(db, cw);
-
-            var written = await UpsertSpec(db, weaponId, cw.Hints, force, "seeded 2026-06-16");
+            var written  = await UpsertSpec(db, weaponId, cw.Hints, force, "seeded 2026-06-16");
             if (written == 0)
                 Console.WriteLine($"  {cw.Name}: already has sensory_hints (use --force to overwrite)");
             else
@@ -145,13 +195,16 @@ public static class SeedSensoryHintsCli
         Console.WriteLine("\nSeeding Kyle carry edges...");
         foreach (var cw in CanonicalWeapons)
         {
-            var weaponEntity = await db.Entities.AsNoTracking()
-                .FirstOrDefaultAsync(e => e.Slug == cw.Slug && e.EntityType == "weapon");
+            // Prefer known GUID; fall back to slug lookup.
+            var weaponEntity = cw.KnownId != Guid.Empty
+                ? await db.Entities.AsNoTracking().FirstOrDefaultAsync(e => e.Id == cw.KnownId)
+                : await db.Entities.AsNoTracking().FirstOrDefaultAsync(e => e.Slug == cw.Slug && e.EntityType == "weapon");
+
             if (weaponEntity == null) continue;
 
             var exists = await db.Edges.AnyAsync(
-                e => e.SourceId == KyleId && e.TargetId == weaponEntity.Id && e.RelationType == "carries"
-                  && e.InvalidatedAt == null);
+                e => e.SourceId == KyleId && e.TargetId == weaponEntity.Id
+                  && e.RelationType == "carries" && e.InvalidatedAt == null);
 
             if (exists)
             {
@@ -177,63 +230,78 @@ public static class SeedSensoryHintsCli
     // ── helpers ───────────────────────────────────────────────────────────────
 
     /// <summary>
-    /// Looks up by name in Weapons first, then Entities (EntityType='weapon').
-    /// Creates an Entity + Weapon row if neither exists.
-    /// Returns the Weapon.Id (= Entity.Id) guaranteed.
+    /// Resolves the Weapon.Id for a CanonWeapon:
+    ///   1. KnownId lookup (fast, by GUID)
+    ///   2. Entity name lookup (EntityType='weapon')
+    ///   3. Create Entity + Weapons rows if neither exists
     /// </summary>
     private static async Task<Guid> FindOrCreateWeaponAsync(StreetSamuraiDbContext db, CanonWeapon cw)
     {
-        // 1. Direct Weapons table hit
-        var weapon = await db.Weapons.FirstOrDefaultAsync(w => w.Name == cw.Name);
-        if (weapon != null)
+        // 1. GUID hit — preferred path for canonical weapons
+        if (cw.KnownId != Guid.Empty)
         {
-            Console.WriteLine($"  {cw.Name}: found in Weapons table");
-            return weapon.Id;
-        }
-
-        // 2. Entity spine exists but no Weapons row
-        var entity = await db.Entities
-            .FirstOrDefaultAsync(e => e.Name == cw.Name && e.EntityType == "weapon");
-
-        if (entity == null)
-        {
-            // 3. Create Entity + Weapon from scratch
-            entity = new Entity
+            var byId = await db.Weapons.FindAsync(cw.KnownId);
+            if (byId != null)
             {
-                Id         = Guid.CreateVersion7(),
-                UniverseId = Universe.GlmzId,
-                EntityType = "weapon",
-                Name       = cw.Name,
-                Slug       = cw.Slug,
-                Status     = "canon",
-                Description = cw.Description,
-                CreatedAt  = DateTime.UtcNow,
-                ModifiedAt = DateTime.UtcNow,
-            };
-            db.Entities.Add(entity);
-            await db.SaveChangesAsync();
-            Console.WriteLine($"  {cw.Name}: created Entity row ({entity.Id})");
+                Console.WriteLine($"  {cw.Name}: found by GUID in Weapons");
+                return byId.Id;
+            }
+
+            // Entity exists but no Weapons row yet
+            var entityById = await db.Entities.FindAsync(cw.KnownId);
+            if (entityById != null)
+            {
+                db.Weapons.Add(new Weapon { Id = entityById.Id, Name = entityById.Name, Category = cw.Category, Description = cw.Description });
+                await db.SaveChangesAsync();
+                Console.WriteLine($"  {cw.Name}: created Weapons row for existing entity ({cw.KnownId})");
+                return entityById.Id;
+            }
         }
 
-        // 4. Create the Weapons row (Id must match Entity.Id)
-        db.Weapons.Add(new Weapon
+        // 2. Name lookup
+        var weaponByName = await db.Weapons.FirstOrDefaultAsync(w => w.Name == cw.Name);
+        if (weaponByName != null)
         {
-            Id          = entity.Id,
-            Name        = cw.Name,
-            Category    = cw.Category,
+            Console.WriteLine($"  {cw.Name}: found by name in Weapons");
+            return weaponByName.Id;
+        }
+
+        var entityByName = await db.Entities.FirstOrDefaultAsync(e => e.Name == cw.Name && e.EntityType == "weapon");
+        if (entityByName != null)
+        {
+            db.Weapons.Add(new Weapon { Id = entityByName.Id, Name = cw.Name, Category = cw.Category, Description = cw.Description });
+            await db.SaveChangesAsync();
+            Console.WriteLine($"  {cw.Name}: created Weapons row for existing entity ({entityByName.Id})");
+            return entityByName.Id;
+        }
+
+        // 3. Create from scratch
+        var entity = new Entity
+        {
+            Id         = cw.KnownId != Guid.Empty ? cw.KnownId : Guid.CreateVersion7(),
+            UniverseId = Universe.GlmzId,
+            EntityType = "weapon",
+            Name       = cw.Name,
+            Slug       = cw.Slug,
+            Status     = "canon",
             Description = cw.Description,
-        });
+            CreatedAt  = DateTime.UtcNow,
+            ModifiedAt = DateTime.UtcNow,
+        };
+        db.Entities.Add(entity);
         await db.SaveChangesAsync();
-        Console.WriteLine($"  {cw.Name}: created Weapons row");
+
+        db.Weapons.Add(new Weapon { Id = entity.Id, Name = cw.Name, Category = cw.Category, Description = cw.Description });
+        await db.SaveChangesAsync();
+
+        Console.WriteLine($"  {cw.Name}: created Entity + Weapons rows ({entity.Id})");
         return entity.Id;
     }
 
-    /// <summary>Looks up an existing weapon by name without creating anything.</summary>
     private static async Task<Guid?> ResolveWeaponIdByName(StreetSamuraiDbContext db, string name)
     {
         var weapon = await db.Weapons.AsNoTracking().FirstOrDefaultAsync(w => w.Name == name);
         if (weapon != null) return weapon.Id;
-
         var entity = await db.Entities.AsNoTracking()
             .FirstOrDefaultAsync(e => e.Name == name && e.EntityType == "weapon");
         return entity?.Id;
@@ -256,10 +324,10 @@ public static class SeedSensoryHintsCli
 
         db.WeaponSpecs.Add(new WeaponSpec
         {
-            WeaponId = weaponId,
-            SpecKey  = AmbientDetailInjector.SensoryHintsKey,
+            WeaponId  = weaponId,
+            SpecKey   = AmbientDetailInjector.SensoryHintsKey,
             SpecValue = value,
-            Notes    = notes,
+            Notes     = notes,
         });
         await db.SaveChangesAsync();
         return 1;

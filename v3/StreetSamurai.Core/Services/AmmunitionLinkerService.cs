@@ -27,9 +27,12 @@ namespace StreetSamurai.Core.Services;
 /// </summary>
 public class AmmunitionLinkerService
 {
-    public static readonly Guid ChorusWeaponId = Guid.Parse("4AB24F74-61D4-4F45-B326-7C6B98C96279");
-    public static readonly Guid SilenceWeaponId = Guid.Empty; // looked up by name (multiple "Silence" entities)
-    public static readonly Guid KyleCharacterId = Guid.Parse("019D6143-A648-7876-9688-0F6D38D70075");
+    // Kyle's signature weapons — GUIDs are the single source of truth; names flow from here.
+    public static readonly Guid CacophonyWeaponId = Guid.Parse("4AB24F74-61D4-4F45-B326-7C6B98C96279");
+    public const string CacophonyWeaponName = "Cacophony"; // Kyle's 5-shot revolver; was "Chorus" before 2026-06-16
+    public static readonly Guid SilenceWeaponId  = Guid.Parse("019ED39C-6321-7C51-9691-F59B441B0BEC");
+    public const string SilenceWeaponName = "Silence";    // Kyle's matte-black katana
+    public static readonly Guid KyleCharacterId  = Guid.Parse("019D6143-A648-7876-9688-0F6D38D70075");
 
     private readonly IDbContextFactory<StreetSamuraiDbContext> dbFactory;
     private readonly ILlmService llm;
@@ -123,11 +126,11 @@ public class AmmunitionLinkerService
     // ── Chorus seed (one-shot, idempotent) ────────────────────────────────────
 
     /// <summary>
-    /// Insert canonical specs + ammo compatibility for Kyle's Chorus, plus
-    /// link Kyle's CharacterBelongingsGear row to the Chorus Weapon entity.
+    /// Insert canonical specs + ammo compatibility for Kyle's Cacophony, plus
+    /// link Kyle's CharacterBelongingsGear row to the Cacophony Weapon entity.
     /// Idempotent.
     /// </summary>
-    public async Task<LinkResult> SeedChorusAsync(CancellationToken ct = default)
+    public async Task<LinkResult> SeedCacophonyAsync(CancellationToken ct = default)
     {
         var result = new LinkResult();
         await EnsureWeaponSpecsSchemaAsync(ct);
@@ -143,34 +146,34 @@ public class AmmunitionLinkerService
             tags: new[] { "revolver", "handgun", "rimmed", "legacy_round" }, ct);
         var ammo410 = await UpsertAmmunitionAsync(db, ".410 Shotshell",
             ".410-bore shotshell. Smallest of the standard shotgun gauges. " +
-            "Chambered in revolver platforms (Taurus Judge analogues, Torii Chorus) for door, lock, and close-pattern crowd-stop work.",
+            "Chambered in revolver platforms (Taurus Judge analogues, Torii Cacophony) for door, lock, and close-pattern crowd-stop work.",
             tags: new[] { "shotshell", "shotgun", "revolver_compatible", "small_bore" }, ct);
         if (ammo45.Created)  result.AmmunitionsCreated++;
         if (ammo410.Created) result.AmmunitionsCreated++;
 
         // 2) WeaponAmmunitionTypes — Chorus chambers both.
-        result.CompatibilityRowsAdded += await UpsertWeaponAmmoAsync(db, ChorusWeaponId, ammo45.Id,  ".45 Long Colt", position: 0, ct);
-        result.CompatibilityRowsAdded += await UpsertWeaponAmmoAsync(db, ChorusWeaponId, ammo410.Id, ".410 Shotshell", position: 1, ct);
+        result.CompatibilityRowsAdded += await UpsertWeaponAmmoAsync(db, CacophonyWeaponId, ammo45.Id,  ".45 Long Colt", position: 0, ct);
+        result.CompatibilityRowsAdded += await UpsertWeaponAmmoAsync(db, CacophonyWeaponId, ammo410.Id, ".410 Shotshell", position: 1, ct);
 
         // 3) WeaponSpecs — every fact the user gave us.
         var specs = new (string key, string value, string? note)[]
         {
             ("chambering",    ".45 Long Colt + .410 Shotshell (interchangeable in same cylinder)", "Taurus-Judge-style multi-caliber"),
-            ("capacity",      "5-round cylinder", "Hard ceiling — track via ammo:chorus.shells in EntityStateEvents"),
+            ("capacity",      "5-round cylinder", "Hard ceiling — track via ammo:cacophony.shells in EntityStateEvents"),
             ("action",        "double-action revolver",                       null),
             ("grip",          "birds-head",                                    "Designed for one-handed use"),
             ("analogue",      "Taurus Judge",                                  "Real-world design reference"),
             ("handed",        "left",                                          "Cross-dominant from right-hand blade"),
             ("carry_position","low on left hip",                               null),
             ("manufacturer",  "Torii Security Group",                          null),
-            ("model",         "TSS-3 'Chorus'",                                null),
+            ("model",         "TSS-3 'Cacophony'",                             null),
         };
         foreach (var (k, v, note) in specs)
-            result.SpecsWritten += await UpsertWeaponSpecAsync(db, ChorusWeaponId, k, v, note, ct);
+            result.SpecsWritten += await UpsertWeaponSpecAsync(db, CacophonyWeaponId, k, v, note, ct);
 
         // 4) Kyle → Chorus link. Set GearEntityId on the matching gear row, or
         //    insert a new gear row when none exists.
-        await LinkCharacterToWeaponAsync(db, KyleCharacterId, ChorusWeaponId, "Chorus", ct);
+        await LinkCharacterToWeaponAsync(db, KyleCharacterId, CacophonyWeaponId, CacophonyWeaponName, ct);
 
         // 5) Same favor for Silence (Kyle's blade) — Kyle's "primary weapon"
         //    pointer lives in CharacterBelongingsGear.Bucket = 'primary_weapon'

@@ -81,7 +81,7 @@ public class CombatTools
             string tone = "Brutal",
         [Description(
             "Optional JSON object: { \"<character name>\": { \"ammo_by_weapon\": " +
-            "{ \"Chorus\": 4, \"XB-7 Silence\": 0 }, \"bio_battery_percent\": 80, " +
+            "{ \"Cacophony\": 4, \"XB-7 Silence\": 0 }, \"bio_battery_percent\": 80, " +
             "\"meal_context\": \"full meal 2h ago\" } }. When present, the " +
             "writer enforces ammo/charge limits across beats. Leave empty to " +
             "skip resource tracking for this scene.")]

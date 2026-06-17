@@ -190,7 +190,7 @@ public class EpisodeGeneratorService
         sb.AppendLine("- 27, lean, six feet of nothing, the hardware in his skull bills him in calories");
         sb.AppendLine("- NeoCortex Atlas array — ballistic precognition, augmentation signature read, the array warms behind his sternum like a coal blown to life");
         sb.AppendLine("- Carries a katana on his right shoulder in a matte friction sheath (102cm, carbon-edged steel forged by his dead mentor Seo). The street calls it Silence. It is a sword.");
-        sb.AppendLine("- Carries Chorus on his low left hip — bird's-head grip moon-clip revolver shotgun, 5 chambers, mixed loads of buckshot and slug");
+        sb.AppendLine("- Carries Cacophony on his low left hip — bird's-head grip moon-clip revolver shotgun, 5 chambers, mixed loads of buckshot and slug");
         sb.AppendLine("- Lives in The Pivot, Unit 2F. Across the hall: Pixel in 2E, his hardware tech and friend");
         sb.AppendLine("- Eats at Mrs. Chen Wei-Lin's noodle stall every night at standard rate");
         sb.AppendLine("- Works freelance for fixer Sable; on the Lotus Syndicate freelance roster after Mira's interview");
