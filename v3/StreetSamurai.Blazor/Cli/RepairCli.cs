@@ -22,7 +22,7 @@ public static class RepairCli
         var withDates      = args.Contains("--backfill-dates");
         var withMojibake   = args.Contains("--fix-mojibake");
         var withState      = args.Contains("--extract-state");
-        var withChorusSeed = args.Contains("--seed-chorus");
+        var withCacophonySeed = args.Contains("--seed-cacophony");
         var withLinkAmmo   = args.Contains("--link-ammunition");
         // --prune-json-* / --prune-types retired 2026-05-08 with JsonPruneService;
         // engine/data/*.json no longer exists, so there's nothing to prune.
@@ -70,7 +70,7 @@ public static class RepairCli
         }
 
         if (!withContinuity && !withBeatFacts && !withDates && !withMojibake
-            && !withState && !withChorusSeed && !withLinkAmmo)
+            && !withState && !withCacophonySeed && !withLinkAmmo)
         {
             Console.WriteLine();
             Console.WriteLine("Skipping LLM/repair phases. Add one of:");
@@ -79,17 +79,17 @@ public static class RepairCli
             Console.WriteLine("  --backfill-dates        populate Chapter/Beat InWorldDate via LLM");
             Console.WriteLine("  --fix-mojibake          reverse double-encoded UTF-8 in every NVARCHAR column");
             Console.WriteLine("  --extract-state         emit EntityStateEvents from chapter beats");
-            Console.WriteLine("  --seed-chorus           insert canonical specs + ammo + Kyle link for Chorus");
+            Console.WriteLine("  --seed-cacophony        insert canonical specs + ammo + Kyle link for Cacophony");
             Console.WriteLine("  --link-ammunition       bulk LLM pass: tie every firearm to compatible ammunition");
             return failures > 0 ? 1 : 0;
         }
 
-        if (withChorusSeed)
+        if (withCacophonySeed)
         {
             Console.WriteLine();
-            Console.WriteLine("[seed-chorus]");
+            Console.WriteLine("[seed-cacophony]");
             var linker = sp.GetRequiredService<StreetSamurai.Core.Services.AmmunitionLinkerService>();
-            var rs = await linker.SeedChorusAsync(ct);
+            var rs = await linker.SeedCacophonyAsync(ct);
             Console.WriteLine($"  ammunitions created    : {rs.AmmunitionsCreated}");
             Console.WriteLine($"  weapon→ammo rows added : {rs.CompatibilityRowsAdded}");
             Console.WriteLine($"  weapon specs written   : {rs.SpecsWritten}");

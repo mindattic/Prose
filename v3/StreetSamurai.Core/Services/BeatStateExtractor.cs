@@ -157,7 +157,7 @@ public class BeatStateExtractor
             "\"verb\": \"set|inc|dec|enter|leave|add|remove\", " +
             "\"old\": \"<prior value, or null>\", \"new\": \"<resulting value>\", \"delta\": <number or null>, " +
             "\"snippet\": \"<≤200-char exact quote that supports it>\", \"confidence\": \"low|medium|high\"}. " +
-            "Aspect examples: \"location\", \"ammo:chorus.shells\", \"inventory.bracelet\", " +
+            "Aspect examples: \"location\", \"ammo:cacophony.shells\", \"inventory.bracelet\", " +
             "\"companion.with\", \"intent\", \"condition.shoulder.severity\". " +
             "Use snake_case slugs in aspect keys. Quote names verbatim from the prose.";
 

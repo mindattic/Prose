@@ -109,7 +109,7 @@ public class MigrationSmokeTests
         var contradiction = new ContinuityClaim
         {
             EntityId = "kyle", EntityName = "Kyle", EntityKind = "character",
-            Predicate = "weapon", Object = "Chorus", SourceType = "prose",
+            Predicate = "weapon", Object = "Cacophony", SourceType = "prose",
         };
         var conflict = svc.Upsert(contradiction);
 
