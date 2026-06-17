@@ -1193,6 +1193,76 @@ if (args.Contains("--findings"))
     return;
 }
 
+// ss --entity-tree (--id <guid> | --slug <slug>) [--depth N] [--rel-types type1,type2] [--as-of date]
+if (args.Contains("--entity-tree"))
+{
+    var cliBuilder = WebApplication.CreateBuilder(args);
+    cliBuilder.Services.AddStreetSamuraiServices();
+    var cliApp = cliBuilder.Build();
+    Environment.ExitCode = await EntityTreeCli.RunAsync(args, cliApp.Services);
+    return;
+}
+
+// ss --prose-check (--slug <strandSlug> | --id <beatId>) [--all] [--json]
+if (args.Contains("--prose-check"))
+{
+    var cliBuilder = WebApplication.CreateBuilder(args);
+    cliBuilder.Services.AddStreetSamuraiServices();
+    var cliApp = cliBuilder.Build();
+    Environment.ExitCode = await ProseCheckCli.RunAsync(args, cliApp.Services);
+    return;
+}
+
+// ss --world-state --beat <beatId> [--story-time "date"] [--json]
+if (args.Contains("--world-state"))
+{
+    var cliBuilder = WebApplication.CreateBuilder(args);
+    cliBuilder.Services.AddStreetSamuraiServices();
+    var cliApp = cliBuilder.Build();
+    Environment.ExitCode = await WorldStateCli.RunAsync(args, cliApp.Services);
+    return;
+}
+
+// ss --gear-check --slug <strandSlug> --character <characterId> [--story-time date]
+if (args.Contains("--gear-check"))
+{
+    var cliBuilder = WebApplication.CreateBuilder(args);
+    cliBuilder.Services.AddStreetSamuraiServices();
+    var cliApp = cliBuilder.Build();
+    Environment.ExitCode = await GearCheckCli.RunAsync(args, cliApp.Services);
+    return;
+}
+
+// ss --behavior-check --slug <strandSlug> --character <characterId>
+if (args.Contains("--behavior-check"))
+{
+    var cliBuilder = WebApplication.CreateBuilder(args);
+    cliBuilder.Services.AddStreetSamuraiServices();
+    var cliApp = cliBuilder.Build();
+    Environment.ExitCode = await BehaviorCheckCli.RunAsync(args, cliApp.Services);
+    return;
+}
+
+// ss --weapon-network (--id <weaponId> | --character <characterId> [--as-of date])
+if (args.Contains("--weapon-network"))
+{
+    var cliBuilder = WebApplication.CreateBuilder(args);
+    cliBuilder.Services.AddStreetSamuraiServices();
+    var cliApp = cliBuilder.Build();
+    Environment.ExitCode = await WeaponNetworkCli.RunAsync(args, cliApp.Services);
+    return;
+}
+
+// ss --ambient-palette --character <characterId> [--as-of date]
+if (args.Contains("--ambient-palette"))
+{
+    var cliBuilder = WebApplication.CreateBuilder(args);
+    cliBuilder.Services.AddStreetSamuraiServices();
+    var cliApp = cliBuilder.Build();
+    Environment.ExitCode = await AmbientPaletteCli.RunAsync(args, cliApp.Services);
+    return;
+}
+
 var builder = WebApplication.CreateBuilder(args);
 
 // Cloud-native configuration chain. Layered (later sources win):
