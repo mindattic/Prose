@@ -77,8 +77,8 @@ public class RepositoryDefinitionService
         db.RepositoryDefinitions.Add(def);
         try { db.SaveChanges(); }
         catch (Microsoft.EntityFrameworkCore.DbUpdateException ex)
-            when (ex.InnerException?.Message.Contains("duplicate key", StringComparison.OrdinalIgnoreCase) == true
-               || ex.InnerException?.Message.Contains("UNIQUE KEY", StringComparison.OrdinalIgnoreCase) == true)
+            when (ex.InnerException is Microsoft.Data.SqlClient.SqlException sql && (sql.Number == 2627 || sql.Number == 2601)
+               || ex.InnerException?.Message.Contains("UNIQUE constraint", StringComparison.OrdinalIgnoreCase) == true)
         {
             throw new InvalidOperationException($"A repository with slug '{slug}' already exists.");
         }
