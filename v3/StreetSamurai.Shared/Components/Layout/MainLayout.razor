@@ -92,6 +92,7 @@ else
 
     private bool navPending = false;
     private string? bgImage;
+    private bool disposed;
     private string currentTheme = ""; // always set in OnInitialized
 
     // Persistent two-pane shell: left = strand selection + writer, right = repositories & tools
@@ -131,6 +132,7 @@ else
 
     private void OnSettingsThemeChanged(string theme)
     {
+        if (disposed) return;
         currentTheme = theme == "auto" ? AppBanner.ThemeFor(Universe) : theme;
         InvokeAsync(StateHasChanged);
     }
@@ -229,6 +231,7 @@ else
 
     public void Dispose()
     {
+        disposed = true;
         Nav.LocationChanged -= OnLocationChanged;
         SettingsSvc.ThemeChanged -= OnSettingsThemeChanged;
     }
