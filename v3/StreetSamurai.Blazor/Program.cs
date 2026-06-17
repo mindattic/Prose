@@ -994,6 +994,18 @@ if (args.Contains("--rebuild-subsidiary-relational"))
     return;
 }
 
+// CLI mode: RFC 0007 unified blob-retirement gate — backfill all 29 relational types
+// from Records.Json, validate, and delete the blobs in a single pass. (RFC 0007)
+//   ss --retire-records-blobs [--rebuild] [--validate] [--apply]
+if (args.Contains("--retire-records-blobs"))
+{
+    var cliBuilder = WebApplication.CreateBuilder(args);
+    cliBuilder.Services.AddStreetSamuraiServices();
+    var cliApp = cliBuilder.Build();
+    Environment.ExitCode = await RetireRecordsBlobsCli.RunAsync(args, cliApp.Services);
+    return;
+}
+
 // CLI mode: split a monolithic strand into a Collection (parent + chapter
 // child strands) at IsChapterStart boundaries. Backs up to markdown first.
 //   ss --split-collection (--slug <s> | --id <guid>)
