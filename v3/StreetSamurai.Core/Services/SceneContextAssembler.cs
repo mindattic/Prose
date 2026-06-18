@@ -344,6 +344,8 @@ public class SceneContextAssembler(
             AppendField(sb, "VOICE — subtext", c.SpeechSubtext);
             AppendField(sb, "VOICE — under pressure", c.SpeechUnderPressure);
             AppendField(sb, "VOICE — intimacy register", c.SpeechIntimacyRegister);
+            if (!string.IsNullOrWhiteSpace(c.NarrationVoice))
+                AppendField(sb, "NARRATION VOICE", c.NarrationVoice);
 
             var lines = await db.Set<CharacterSpeechPhrase>().AsNoTracking()
                 .Where(p => p.CharacterId == r.EntityId && p.Bucket == "example_lines")

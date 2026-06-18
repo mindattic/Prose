@@ -47,7 +47,10 @@ public static class MigrateSqlCli
         // Entity quality reviews: create EntityReviews + EntityReviewSummaries tables.
         var entityReviews = args.Contains("--entity-reviews");
 
-        if (!schema && !charRelational && !charDropLegacy && !strandBeatSoftDelete && !strandBeatVersion && !entityGrammarNote && !strandCode && !entityReviews)
+        // Strand Bible: add StrandBible + StrandBibleGeneratedAt to Strands (+ history table).
+        var strandBible = args.Contains("--strand-bible");
+
+        if (!schema && !charRelational && !charDropLegacy && !strandBeatSoftDelete && !strandBeatVersion && !entityGrammarNote && !strandCode && !entityReviews && !strandBible)
         {
             Console.WriteLine("Usage:");
             Console.WriteLine("  ss --migrate-sql --schema                    apply EF migrations + enable SYSTEM_VERSIONING");
@@ -56,6 +59,7 @@ public static class MigrateSqlCli
             Console.WriteLine("  ss --migrate-sql --entity-grammar-note       add GrammarNote column to Entities (and history table)");
             Console.WriteLine("  ss --migrate-sql --strand-code               add StrandCode NVARCHAR(20) to Strands (unique per non-null value)");
             Console.WriteLine("  ss --migrate-sql --entity-reviews            create EntityReviews + EntityReviewSummaries tables");
+            Console.WriteLine("  ss --migrate-sql --strand-bible              add StrandBible + StrandBibleGeneratedAt to Strands (+ history)");
             Console.WriteLine();
             Console.WriteLine("  ss --migrate-sql --character-relational    add relational columns + bridges to Characters,");
             Console.WriteLine("                                             then backfill from Records.Json (--no-backfill skips Phase C)");
@@ -362,6 +366,37 @@ public static class MigrateSqlCli
             catch (Exception ex)
             {
                 Console.WriteLine($"  ✘ entity-reviews migration failed: {ex.Message}");
+                failures++;
+            }
+        }
+
+        if (strandBible)
+        {
+            using var sbScope = sp.CreateScope();
+            var sbDb = sbScope.ServiceProvider.GetRequiredService<StreetSamuraiDbContext>();
+            Console.WriteLine();
+            Console.WriteLine("[strand-bible]");
+            try
+            {
+                await sbDb.Database.ExecuteSqlRawAsync("""
+                    IF NOT EXISTS (SELECT 1 FROM sys.columns
+                                   WHERE object_id = OBJECT_ID('Strands') AND name = 'StrandBible')
+                    BEGIN
+                        ALTER TABLE [dbo].[Strands] SET (SYSTEM_VERSIONING = OFF);
+                        ALTER TABLE [dbo].[Strands]         ADD [StrandBible]             NVARCHAR(MAX) NULL;
+                        ALTER TABLE [dbo].[Strands_History] ADD [StrandBible]             NVARCHAR(MAX) NULL;
+                        ALTER TABLE [dbo].[Strands]         ADD [StrandBibleGeneratedAt]  DATETIME2     NULL;
+                        ALTER TABLE [dbo].[Strands_History] ADD [StrandBibleGeneratedAt]  DATETIME2     NULL;
+                        ALTER TABLE [dbo].[Strands]
+                            SET (SYSTEM_VERSIONING = ON (HISTORY_TABLE = [dbo].[Strands_History],
+                                                         DATA_CONSISTENCY_CHECK = OFF));
+                    END;
+                    """);
+                Console.WriteLine("  ✔ StrandBible + StrandBibleGeneratedAt columns added to Strands (+ Strands_History).");
+            }
+            catch (Exception ex)
+            {
+                Console.WriteLine($"  ✘ strand-bible migration failed: {ex.Message}");
                 failures++;
             }
         }

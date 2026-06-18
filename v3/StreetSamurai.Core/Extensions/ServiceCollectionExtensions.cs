@@ -539,6 +539,7 @@ public static class ServiceCollectionExtensions
         services.AddSingleton<TextAnalysisService>();
         services.AddSingleton<ContextAnalyzerService>();
         services.AddSingleton<BeatGeneratorService>();
+        services.AddSingleton<StrandBibleService>();
         services.AddSingleton<SceneGenerationService>();
         services.AddSingleton<CombatSceneWriter>();
         services.AddSingleton<StoryStarterService>();
