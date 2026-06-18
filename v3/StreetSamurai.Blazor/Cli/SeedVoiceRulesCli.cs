@@ -35,6 +35,7 @@ public static class SeedVoiceRulesCli
     [
         "Close-third that is really Kyle's: dry, controlled, more present in his own head than in the room; meets catastrophe with a flat aside. Laugh-or-cry register — humor and grief in the same breath.",
         "Every metaphor does double duty: it reveals Kyle's read of the world AND paints the world. If a metaphor only decorates, cut it.",
+        "Every action beat must carry thematic weight; every contemplative beat must have physical immediacy. A fight that does not reveal character is choreography. A moment of thought without a body — cold metal, held breath, coat weight — is abstraction. A beat that only advances plot OR only reflects has failed half its job.",
         "Worldbuild by implication: name a thing, gloss it in ONE in-voice clause, move on. Gloss CorpoNations on first mention. Never lecture.",
         "Concrete over abstract: ground the strange in one specific sensory detail, not a statement that the world has changed.",
         "Cost is shown, never asserted — consequence is mechanical and visible (the read fails at the worst moment; the brace chirps; the wound degrades performance).",
