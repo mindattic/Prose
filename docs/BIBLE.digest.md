@@ -98,6 +98,10 @@ narrative-law block here when stood up:**
     Kyle's contracts, but the full reveal (it has orchestrated his life) lands many books later.
     Bushido Coda only lands the avatar misdirect (Kyle/Sable's *wrong* hypothesis), nothing more.
 
+**Fantasy/Steampunk narrative laws (Universe: fantasy-steampunk — validate any Fantasy/Steampunk rewrite against these):**
+
+16. **Action beats carry thematic weight; contemplative beats have physical immediacy.** {#SS-LAW-16} An action beat that doesn't advance or complicate the strand's central tension is stage business. A contemplative beat without a grounding sensory or physical anchor is abstraction. Both fail. *(Universal beat doctrine — applies to all universes.)*
+
 ## 9. Glossary {#SS-§9}
 
 - **Universe** — the top-level tenant: one self-contained fictional world (e.g. GLMZ,
