@@ -1,4 +1,4 @@
-// generate_everyday_weapons.js
+﻿// generate_everyday_weapons.js
 // Generates ~1000 everyday firearms + all standard ammunition types for StreetSamurai GLMZ 2200
 // Run: node generate_everyday_weapons.js [--dry-run] [--ammo-only] [--weapons-only] [--limit N]
 
@@ -145,7 +145,7 @@ WORLD RULES:
 - Caseless ammunition is the military standard by 2200, but brass-cased is still common civilian
 - LASER and PLASMA weapons: common but LESS RELIABLE than conventional firearms — batteries die, optics foul, plasma containment fails in wet/cold/EMP. Conventional and magnetic preferred in the field
 - COILGUN/MAGNETIC weapons: very reliable, no propellant fouling — more reliable than energy, roughly equivalent to conventional gunpowder weapons
-- Corponation sovereignty: Slagworks Industrial, Arcturus Defense Solutions, Crucible Genomics, Tessera Corponation, Zheng-dao Bioelectric
+- CorpoNation sovereignty: Slagworks Industrial, Arcturus Defense Solutions, Crucible Genomics, Tessera CorpoNation, Zheng-dao Bioelectric
 - Class tension: Shelf workers (Tier 1–2), Mids (Tier 2–3), Corps (Tier 3–5), Excluded (no tier, survival mode)
 - Weapon names follow pattern: "MANUFACTURER Model-Designation 'Nickname'" e.g. "Kang-Petrov KP-19 'Workhorse'"
 - DO NOT use real-world brand names (no Glock, Beretta, Sig Sauer, Smith & Wesson, etc.) — inspired by but rebranded
@@ -288,14 +288,14 @@ ${chunk.map(a => `- name: "${a.name}", category: "${a.category}", propulsion: "$
 
 // ── WEAPON BATCHES ─────────────────────────────────────────────────────────────
 // 100 batches × ~10 weapons = ~1000 weapons
-// Format: { batchId, manufacturer, corponation, count, type, inspiration, calibers, tiers, flavor }
+// Format: { batchId, manufacturer, CorpoNation, count, type, inspiration, calibers, tiers, flavor }
 
 const BATCHES = [
   // ── KANG-PETROV ARMS (Slagworks Industrial) — 7 batches ──────────────────
   {
     batchId: 1,
     manufacturer: 'KANG-PETROV ARMS',
-    corponation: 'Slagworks Industrial',
+    CorpoNation: 'Slagworks Industrial',
     count: 10,
     type: 'pistol',
     inspiration: 'Glock 17/19/43 family evolution — striker-fired polymer pistols, 200 years improved, the workhorse everyone owns',
@@ -306,7 +306,7 @@ const BATCHES = [
   {
     batchId: 2,
     manufacturer: 'KANG-PETROV ARMS',
-    corponation: 'Slagworks Industrial',
+    CorpoNation: 'Slagworks Industrial',
     count: 10,
     type: 'rifle',
     inspiration: 'AK-pattern rifle family — rotating bolt, stamped steel, brutal reliability, 200 years of iteration',
@@ -317,7 +317,7 @@ const BATCHES = [
   {
     batchId: 3,
     manufacturer: 'KANG-PETROV ARMS',
-    corponation: 'Slagworks Industrial',
+    CorpoNation: 'Slagworks Industrial',
     count: 10,
     type: 'rifle',
     inspiration: 'AR-pattern rifle family — direct impingement and piston variants, carbine-length and full, 200 years of evolution',
@@ -328,7 +328,7 @@ const BATCHES = [
   {
     batchId: 4,
     manufacturer: 'KANG-PETROV ARMS',
-    corponation: 'Slagworks Industrial',
+    CorpoNation: 'Slagworks Industrial',
     count: 10,
     type: 'smg',
     inspiration: 'MP5/UMP/Vector family evolution — compact SMGs for close-quarters, PDW-length stocks',
@@ -339,7 +339,7 @@ const BATCHES = [
   {
     batchId: 5,
     manufacturer: 'KANG-PETROV ARMS',
-    corponation: 'Slagworks Industrial',
+    CorpoNation: 'Slagworks Industrial',
     count: 10,
     type: 'shotgun',
     inspiration: 'Mossberg 500/590 and Remington 870 evolution — pump and semi-auto combat shotguns',
@@ -350,7 +350,7 @@ const BATCHES = [
   {
     batchId: 6,
     manufacturer: 'KANG-PETROV ARMS',
-    corponation: 'Slagworks Industrial',
+    CorpoNation: 'Slagworks Industrial',
     count: 8,
     type: 'revolver',
     inspiration: 'Ruger GP100/SP101 family — double-action revolvers, budget-tier reliability for civilians',
@@ -361,7 +361,7 @@ const BATCHES = [
   {
     batchId: 7,
     manufacturer: 'KANG-PETROV ARMS',
-    corponation: 'Slagworks Industrial',
+    CorpoNation: 'Slagworks Industrial',
     count: 8,
     type: 'coilgun',
     inspiration: 'Mass-market magnetic pistols and carbines — KP adapts coilgun tech for Tier 1–2 civilian market',
@@ -374,7 +374,7 @@ const BATCHES = [
   {
     batchId: 8,
     manufacturer: 'HEARTHSTONE FIREARMS',
-    corponation: 'Slagworks Industrial',
+    CorpoNation: 'Slagworks Industrial',
     count: 10,
     type: 'pistol',
     inspiration: 'Hi-Point / cheap polymer pistol family — bottom-end civilian market, basic defensive use',
@@ -385,7 +385,7 @@ const BATCHES = [
   {
     batchId: 9,
     manufacturer: 'HEARTHSTONE FIREARMS',
-    corponation: 'Slagworks Industrial',
+    CorpoNation: 'Slagworks Industrial',
     count: 8,
     type: 'revolver',
     inspiration: 'Charter Arms / Taurus budget revolver family — simple, cheap, no frills',
@@ -396,7 +396,7 @@ const BATCHES = [
   {
     batchId: 10,
     manufacturer: 'HEARTHSTONE FIREARMS',
-    corponation: 'Slagworks Industrial',
+    CorpoNation: 'Slagworks Industrial',
     count: 8,
     type: 'shotgun',
     inspiration: 'Single-shot and double-barrel break-action shotguns — cheapest possible scattergun',
@@ -407,7 +407,7 @@ const BATCHES = [
   {
     batchId: 11,
     manufacturer: 'HEARTHSTONE FIREARMS',
-    corponation: 'Slagworks Industrial',
+    CorpoNation: 'Slagworks Industrial',
     count: 8,
     type: 'rifle',
     inspiration: 'Single-shot and tube-fed .22 rifles, budget semi-auto rimfire carbines',
@@ -420,7 +420,7 @@ const BATCHES = [
   {
     batchId: 12,
     manufacturer: 'MERIDIAN MUNITIONS',
-    corponation: 'Slagworks Industrial',
+    CorpoNation: 'Slagworks Industrial',
     count: 8,
     type: 'pistol',
     inspiration: 'Jennings/Bryco-style ultra-budget zinc-alloy pistols — the absolute floor of firearms quality',
@@ -431,7 +431,7 @@ const BATCHES = [
   {
     batchId: 13,
     manufacturer: 'MERIDIAN MUNITIONS',
-    corponation: 'Slagworks Industrial',
+    CorpoNation: 'Slagworks Industrial',
     count: 8,
     type: 'pistol',
     inspiration: 'Sub-compact and pocket pistols for concealed carry by people with almost nothing',
@@ -442,7 +442,7 @@ const BATCHES = [
   {
     batchId: 14,
     manufacturer: 'MERIDIAN MUNITIONS',
-    corponation: 'Slagworks Industrial',
+    CorpoNation: 'Slagworks Industrial',
     count: 8,
     type: 'revolver',
     inspiration: 'Ultra-cheap small-frame revolvers — pot metal, minimal safety, maximum desperation',
@@ -453,7 +453,7 @@ const BATCHES = [
   {
     batchId: 15,
     manufacturer: 'MERIDIAN MUNITIONS',
-    corponation: 'Slagworks Industrial',
+    CorpoNation: 'Slagworks Industrial',
     count: 8,
     type: 'smg',
     inspiration: 'MAC-10/Sten-style open-bolt blowback SMGs — minimal parts count, extremely cheap production',
@@ -466,7 +466,7 @@ const BATCHES = [
   {
     batchId: 16,
     manufacturer: 'NKOMO-LINDQVIST',
-    corponation: 'Slagworks Industrial',
+    CorpoNation: 'Slagworks Industrial',
     count: 10,
     type: 'pistol',
     inspiration: 'SIG P365/Hellcat family — micro-compact carry pistols with higher capacity than their size suggests',
@@ -477,7 +477,7 @@ const BATCHES = [
   {
     batchId: 17,
     manufacturer: 'NKOMO-LINDQVIST',
-    corponation: 'Slagworks Industrial',
+    CorpoNation: 'Slagworks Industrial',
     count: 8,
     type: 'pistol',
     inspiration: 'Micro-compact and subcompact deep-concealment pistols — Ruger LCP, Smith Bodyguard lineage',
@@ -488,7 +488,7 @@ const BATCHES = [
   {
     batchId: 18,
     manufacturer: 'NKOMO-LINDQVIST',
-    corponation: 'Slagworks Industrial',
+    CorpoNation: 'Slagworks Industrial',
     count: 8,
     type: 'revolver',
     inspiration: 'S&W J-frame / Ruger LCR family — pocket revolvers for concealed carry',
@@ -499,7 +499,7 @@ const BATCHES = [
   {
     batchId: 19,
     manufacturer: 'NKOMO-LINDQVIST',
-    corponation: 'Slagworks Industrial',
+    CorpoNation: 'Slagworks Industrial',
     count: 8,
     type: 'smg',
     inspiration: 'B&T USW / Scorpion EVO 3 — compact PDW/SMG hybrids for personal protection professionals',
@@ -512,7 +512,7 @@ const BATCHES = [
   {
     batchId: 20,
     manufacturer: 'VOLKOV-SAITO PRECISION',
-    corponation: 'Zheng-dao Bioelectric',
+    CorpoNation: 'Zheng-dao Bioelectric',
     count: 10,
     type: 'pistol',
     inspiration: 'CZ Shadow 2 / Tanfoglio / Walther Q5 match — competition pistols with target triggers and match accuracy',
@@ -523,7 +523,7 @@ const BATCHES = [
   {
     batchId: 21,
     manufacturer: 'VOLKOV-SAITO PRECISION',
-    corponation: 'Zheng-dao Bioelectric',
+    CorpoNation: 'Zheng-dao Bioelectric',
     count: 8,
     type: 'pistol',
     inspiration: 'M1911 family evolution — single-action steel pistols, 200 years of refinement for the traditionalist',
@@ -534,7 +534,7 @@ const BATCHES = [
   {
     batchId: 22,
     manufacturer: 'VOLKOV-SAITO PRECISION',
-    corponation: 'Zheng-dao Bioelectric',
+    CorpoNation: 'Zheng-dao Bioelectric',
     count: 8,
     type: 'revolver',
     inspiration: 'Dan Wesson / Korth / Python lineage — match-grade target revolvers with adjustable triggers',
@@ -545,18 +545,18 @@ const BATCHES = [
   {
     batchId: 23,
     manufacturer: 'VOLKOV-SAITO PRECISION',
-    corponation: 'Zheng-dao Bioelectric',
+    CorpoNation: 'Zheng-dao Bioelectric',
     count: 10,
     type: 'sniper',
     inspiration: 'AI AXSR / Sako TRG / Accuracy International family — precision bolt-action rifles',
     calibers: ['6.5mm Precision Match', '6.5mm Caseless Match', '.338 Precision Long'],
     tiers: ['Tier 3+', 'Tier 4+'],
-    flavor: 'Volkov-Saito bolt guns are the choice of professional snipers who pay for their own equipment. When corponations issue scoped rifles, they issue Arcturus. When snipers buy their own, they buy VS.'
+    flavor: 'Volkov-Saito bolt guns are the choice of professional snipers who pay for their own equipment. When CorpoNations issue scoped rifles, they issue Arcturus. When snipers buy their own, they buy VS.'
   },
   {
     batchId: 24,
     manufacturer: 'VOLKOV-SAITO PRECISION',
-    corponation: 'Zheng-dao Bioelectric',
+    CorpoNation: 'Zheng-dao Bioelectric',
     count: 8,
     type: 'sniper',
     inspiration: 'CheyTac M200 / Barrett MRAD — extreme long range precision rifles at the edge of ballistic capability',
@@ -567,7 +567,7 @@ const BATCHES = [
   {
     batchId: 25,
     manufacturer: 'VOLKOV-SAITO PRECISION',
-    corponation: 'Zheng-dao Bioelectric',
+    CorpoNation: 'Zheng-dao Bioelectric',
     count: 8,
     type: 'dmr',
     inspiration: 'Mk 12 SPR / SR-25 / SCAR-H PR — designated marksman rifles for semi-auto precision',
@@ -580,7 +580,7 @@ const BATCHES = [
   {
     batchId: 26,
     manufacturer: 'ARCTURUS DEFENSE SOLUTIONS',
-    corponation: 'Arcturus Defense Solutions',
+    CorpoNation: 'Arcturus Defense Solutions',
     count: 10,
     type: 'pistol',
     inspiration: 'Beretta M9A3 / SIG P320 / Glock 17 MHS — full-size military service pistols',
@@ -591,7 +591,7 @@ const BATCHES = [
   {
     batchId: 27,
     manufacturer: 'ARCTURUS DEFENSE SOLUTIONS',
-    corponation: 'Arcturus Defense Solutions',
+    CorpoNation: 'Arcturus Defense Solutions',
     count: 8,
     type: 'pistol',
     inspiration: 'SIG P365 / HK P30SK — compact military and law enforcement sidearms',
@@ -602,7 +602,7 @@ const BATCHES = [
   {
     batchId: 28,
     manufacturer: 'ARCTURUS DEFENSE SOLUTIONS',
-    corponation: 'Arcturus Defense Solutions',
+    CorpoNation: 'Arcturus Defense Solutions',
     count: 10,
     type: 'rifle',
     inspiration: 'M4A1 / HK416 / CQBR family — standard military assault rifles and carbines',
@@ -613,7 +613,7 @@ const BATCHES = [
   {
     batchId: 29,
     manufacturer: 'ARCTURUS DEFENSE SOLUTIONS',
-    corponation: 'Arcturus Defense Solutions',
+    CorpoNation: 'Arcturus Defense Solutions',
     count: 8,
     type: 'rifle',
     inspiration: 'HK417 / M14 EBR / SCAR-H — battle rifles for harder targets',
@@ -624,7 +624,7 @@ const BATCHES = [
   {
     batchId: 30,
     manufacturer: 'ARCTURUS DEFENSE SOLUTIONS',
-    corponation: 'Arcturus Defense Solutions',
+    CorpoNation: 'Arcturus Defense Solutions',
     count: 8,
     type: 'heavy',
     inspiration: 'M249 SAW / M240B / PKM — light and medium machine guns',
@@ -635,7 +635,7 @@ const BATCHES = [
   {
     batchId: 31,
     manufacturer: 'ARCTURUS DEFENSE SOLUTIONS',
-    corponation: 'Arcturus Defense Solutions',
+    CorpoNation: 'Arcturus Defense Solutions',
     count: 8,
     type: 'shotgun',
     inspiration: 'Benelli M4 / Mossberg 590A1 / Remington 870 MCS — military combat shotguns',
@@ -646,20 +646,20 @@ const BATCHES = [
   {
     batchId: 32,
     manufacturer: 'ARCTURUS DEFENSE SOLUTIONS',
-    corponation: 'Arcturus Defense Solutions',
+    CorpoNation: 'Arcturus Defense Solutions',
     count: 8,
     type: 'sniper',
     inspiration: 'Barrett M82 / M107 / KSVK — anti-materiel rifles for vehicle, structure, and armor defeat',
     calibers: ['12.7mm Anti-Materiel', '.50 Heavy Machine Gun', '.338 Precision Long'],
     tiers: ['Tier 5', 'Military/law enforcement only'],
-    flavor: 'ADS anti-materiel platforms are for ending things at distance. Licensed to Arcturus Civil Security strike teams and corponation military forces. Nothing about them is subtle.'
+    flavor: 'ADS anti-materiel platforms are for ending things at distance. Licensed to Arcturus Civil Security strike teams and CorpoNation military forces. Nothing about them is subtle.'
   },
 
   // ── IRONSIDE ARMAMENTS (Arcturus Defense Solutions) — 4 batches ───────────
   {
     batchId: 33,
     manufacturer: 'IRONSIDE ARMAMENTS',
-    corponation: 'Arcturus Defense Solutions',
+    CorpoNation: 'Arcturus Defense Solutions',
     count: 10,
     type: 'rifle',
     inspiration: 'Dragunov SVD / PSG-1 / MSG-90 — heavy precision rifles and heavy-duty battle carbines',
@@ -670,7 +670,7 @@ const BATCHES = [
   {
     batchId: 34,
     manufacturer: 'IRONSIDE ARMAMENTS',
-    corponation: 'Arcturus Defense Solutions',
+    CorpoNation: 'Arcturus Defense Solutions',
     count: 8,
     type: 'shotgun',
     inspiration: 'USAS-12 / AA-12 / Kel-Tec KSG — heavy-duty and bullpup combat shotguns',
@@ -681,7 +681,7 @@ const BATCHES = [
   {
     batchId: 35,
     manufacturer: 'IRONSIDE ARMAMENTS',
-    corponation: 'Arcturus Defense Solutions',
+    CorpoNation: 'Arcturus Defense Solutions',
     count: 8,
     type: 'heavy',
     inspiration: 'M60E6 / MAG-58 / Negev NG7 — general purpose machine guns for extended suppression',
@@ -692,7 +692,7 @@ const BATCHES = [
   {
     batchId: 36,
     manufacturer: 'IRONSIDE ARMAMENTS',
-    corponation: 'Arcturus Defense Solutions',
+    CorpoNation: 'Arcturus Defense Solutions',
     count: 8,
     type: 'sniper',
     inspiration: 'M82A1 / Steyr HS .50 / PGM Hecate II — heavy anti-materiel rifles for long-range armor defeat',
@@ -705,7 +705,7 @@ const BATCHES = [
   {
     batchId: 37,
     manufacturer: 'CRUCIBLE INDUSTRIES',
-    corponation: 'Crucible Genomics',
+    CorpoNation: 'Crucible Genomics',
     count: 10,
     type: 'pistol',
     inspiration: 'HK USP / VP9 / P30 — quality tactical pistols for professionals',
@@ -716,7 +716,7 @@ const BATCHES = [
   {
     batchId: 38,
     manufacturer: 'CRUCIBLE INDUSTRIES',
-    corponation: 'Crucible Genomics',
+    CorpoNation: 'Crucible Genomics',
     count: 10,
     type: 'rifle',
     inspiration: 'HK G36 / XM8 / SL8 — polymer tactical rifles with modern design philosophy',
@@ -727,7 +727,7 @@ const BATCHES = [
   {
     batchId: 39,
     manufacturer: 'CRUCIBLE INDUSTRIES',
-    corponation: 'Crucible Genomics',
+    CorpoNation: 'Crucible Genomics',
     count: 8,
     type: 'rifle',
     inspiration: 'G3 / CETME / HK91 family — roller-delayed battle rifles, known for reliability in adverse conditions',
@@ -738,7 +738,7 @@ const BATCHES = [
   {
     batchId: 40,
     manufacturer: 'CRUCIBLE INDUSTRIES',
-    corponation: 'Crucible Genomics',
+    CorpoNation: 'Crucible Genomics',
     count: 8,
     type: 'shotgun',
     inspiration: 'HK FABARM / Benelli Nova — tactical semi-auto and pump shotguns for the professional civilian',
@@ -749,7 +749,7 @@ const BATCHES = [
   {
     batchId: 41,
     manufacturer: 'CRUCIBLE INDUSTRIES',
-    corponation: 'Crucible Genomics',
+    CorpoNation: 'Crucible Genomics',
     count: 8,
     type: 'smg',
     inspiration: 'MP7 / P90 / B&T APC9 — PDW-style SMGs with armor-defeating capability',
@@ -760,7 +760,7 @@ const BATCHES = [
   {
     batchId: 42,
     manufacturer: 'CRUCIBLE INDUSTRIES',
-    corponation: 'Crucible Genomics',
+    CorpoNation: 'Crucible Genomics',
     count: 8,
     type: 'smg',
     inspiration: 'MP5 SD / HK53 — suppressed SMG systems for low-observable operations',
@@ -773,7 +773,7 @@ const BATCHES = [
   {
     batchId: 43,
     manufacturer: 'FORGE-SMITH COLLECTIVE',
-    corponation: 'Crucible Genomics',
+    CorpoNation: 'Crucible Genomics',
     count: 10,
     type: 'revolver',
     inspiration: 'Ruger Redhawk / S&W 686 / Taurus Raging Hunter — working-class service revolvers',
@@ -784,7 +784,7 @@ const BATCHES = [
   {
     batchId: 44,
     manufacturer: 'FORGE-SMITH COLLECTIVE',
-    corponation: 'Crucible Genomics',
+    CorpoNation: 'Crucible Genomics',
     count: 8,
     type: 'revolver',
     inspiration: 'S&W Model 500 / Taurus Raging Bull / Freedom Arms — big-bore revolvers for heavy loads',
@@ -795,7 +795,7 @@ const BATCHES = [
   {
     batchId: 45,
     manufacturer: 'FORGE-SMITH COLLECTIVE',
-    corponation: 'Crucible Genomics',
+    CorpoNation: 'Crucible Genomics',
     count: 8,
     type: 'rifle',
     inspiration: 'Marlin 1895 / Winchester 1894 / Henry Big Boy — lever-action rifles, 200 years refined',
@@ -806,7 +806,7 @@ const BATCHES = [
   {
     batchId: 46,
     manufacturer: 'FORGE-SMITH COLLECTIVE',
-    corponation: 'Crucible Genomics',
+    CorpoNation: 'Crucible Genomics',
     count: 8,
     type: 'rifle',
     inspiration: 'Remington 700 / Winchester Model 70 / Savage 110 — workingman\'s bolt-action rifles',
@@ -817,7 +817,7 @@ const BATCHES = [
   {
     batchId: 47,
     manufacturer: 'FORGE-SMITH COLLECTIVE',
-    corponation: 'Crucible Genomics',
+    CorpoNation: 'Crucible Genomics',
     count: 8,
     type: 'shotgun',
     inspiration: 'Ithaca 37 / Mossberg 500 / Winchester Model 12 — pump shotguns as working tools',
@@ -830,7 +830,7 @@ const BATCHES = [
   {
     batchId: 48,
     manufacturer: 'CARRION DEFENSE WORKS',
-    corponation: 'Crucible Genomics',
+    CorpoNation: 'Crucible Genomics',
     count: 8,
     type: 'pistol',
     inspiration: 'Chiappa Rhino / Mateba autorevolver / exotic semi-autos — unconventional designs with real performance',
@@ -841,7 +841,7 @@ const BATCHES = [
   {
     batchId: 49,
     manufacturer: 'CARRION DEFENSE WORKS',
-    corponation: 'Crucible Genomics',
+    CorpoNation: 'Crucible Genomics',
     count: 8,
     type: 'rifle',
     inspiration: 'Kel-Tec RFB / RDB / bullpup designs — unconventional but functional configurations',
@@ -852,7 +852,7 @@ const BATCHES = [
   {
     batchId: 50,
     manufacturer: 'CARRION DEFENSE WORKS',
-    corponation: 'Crucible Genomics',
+    CorpoNation: 'Crucible Genomics',
     count: 8,
     type: 'shotgun',
     inspiration: 'SPAS-12 / SRM Arms 1216 / Neostead — exotic shotgun platforms with unique operating mechanisms',
@@ -865,7 +865,7 @@ const BATCHES = [
   {
     batchId: 51,
     manufacturer: 'VESPID DYNAMICS',
-    corponation: 'Crucible Genomics',
+    CorpoNation: 'Crucible Genomics',
     count: 8,
     type: 'rifle',
     inspiration: 'Experimental flechette rifles — O\'Dwyer VLE / SPIW lineage, 200 years of development',
@@ -876,7 +876,7 @@ const BATCHES = [
   {
     batchId: 52,
     manufacturer: 'VESPID DYNAMICS',
-    corponation: 'Crucible Genomics',
+    CorpoNation: 'Crucible Genomics',
     count: 8,
     type: 'pistol',
     inspiration: 'G11 pistol / exotic compact semi-autos — experimental compact platforms with unusual operating systems',
@@ -885,11 +885,11 @@ const BATCHES = [
     flavor: 'Vespid compact platforms are proof-of-concept weapons that made it to market. The kind of thing a well-funded freelancer or collector purchases when they want something nobody else has.'
   },
 
-  // ── TESSERA CORPONATION (Tessera Corponation) — 4 batches ─────────────────
+  // ── TESSERA CorpoNation (Tessera CorpoNation) — 4 batches ─────────────────
   {
     batchId: 53,
-    manufacturer: 'TESSERA CORPONATION',
-    corponation: 'Tessera Corponation',
+    manufacturer: 'TESSERA CorpoNation',
+    CorpoNation: 'Tessera CorpoNation',
     count: 10,
     type: 'pistol',
     inspiration: 'Walther PPQ / CZ P-10 — clean corporate-aesthetic service pistols',
@@ -899,8 +899,8 @@ const BATCHES = [
   },
   {
     batchId: 54,
-    manufacturer: 'TESSERA CORPONATION',
-    corponation: 'Tessera Corponation',
+    manufacturer: 'TESSERA CorpoNation',
+    CorpoNation: 'Tessera CorpoNation',
     count: 8,
     type: 'pistol',
     inspiration: 'SIG P239 / Walther PPS — discreet compact pistols for corporate executive protection',
@@ -910,8 +910,8 @@ const BATCHES = [
   },
   {
     batchId: 55,
-    manufacturer: 'TESSERA CORPONATION',
-    corponation: 'Tessera Corponation',
+    manufacturer: 'TESSERA CorpoNation',
+    CorpoNation: 'Tessera CorpoNation',
     count: 8,
     type: 'rifle',
     inspiration: 'Steyr AUG / FN F2000 — clean bullpup rifles with distinctive corporate design language',
@@ -921,8 +921,8 @@ const BATCHES = [
   },
   {
     batchId: 56,
-    manufacturer: 'TESSERA CORPONATION',
-    corponation: 'Tessera Corponation',
+    manufacturer: 'TESSERA CorpoNation',
+    CorpoNation: 'Tessera CorpoNation',
     count: 8,
     type: 'rifle',
     inspiration: 'Colt CM901 / Sig MCX — modular corporate carbines that change caliber and role',
@@ -931,11 +931,11 @@ const BATCHES = [
     flavor: 'Tessera modular carbines serve corporate security forces that operate across multiple threat environments. One rifle, multiple configurations, all under the same maintenance contract.'
   },
 
-  // ── STERLING-NAKAMURA (Tessera Corponation) — 4 batches ──────────────────
+  // ── STERLING-NAKAMURA (Tessera CorpoNation) — 4 batches ──────────────────
   {
     batchId: 57,
     manufacturer: 'STERLING-NAKAMURA',
-    corponation: 'Tessera Corponation',
+    CorpoNation: 'Tessera CorpoNation',
     count: 10,
     type: 'pistol',
     inspiration: 'Ruger-57 / FN Five-seveN — law enforcement pistols with enhanced penetration for body armor threats',
@@ -946,7 +946,7 @@ const BATCHES = [
   {
     batchId: 58,
     manufacturer: 'STERLING-NAKAMURA',
-    corponation: 'Tessera Corponation',
+    CorpoNation: 'Tessera CorpoNation',
     count: 8,
     type: 'rifle',
     inspiration: 'Ruger MPR / Rock River LAR — compliance-optimized semi-auto rifles for law enforcement licensing',
@@ -957,7 +957,7 @@ const BATCHES = [
   {
     batchId: 59,
     manufacturer: 'STERLING-NAKAMURA',
-    corponation: 'Tessera Corponation',
+    CorpoNation: 'Tessera CorpoNation',
     count: 8,
     type: 'shotgun',
     inspiration: 'Taurus Judge / S&W Governor — less-lethal compliance shotguns for law enforcement use',
@@ -968,7 +968,7 @@ const BATCHES = [
   {
     batchId: 60,
     manufacturer: 'STERLING-NAKAMURA',
-    corponation: 'Tessera Corponation',
+    CorpoNation: 'Tessera CorpoNation',
     count: 8,
     type: 'rifle',
     inspiration: 'SR-25 / Mk.17 SCAR — law enforcement precision rifles for hostage/sniper response',
@@ -977,11 +977,11 @@ const BATCHES = [
     flavor: 'SN precision rifles are issued to Tessera Civil Compliance snipers and sold to licensed security contractors. Proper documentation required — documentation that SN will verify, unlike other manufacturers.'
   },
 
-  // ── AXIOM SYSTEMS (Tessera Corponation) — 4 batches ──────────────────────
+  // ── AXIOM SYSTEMS (Tessera CorpoNation) — 4 batches ──────────────────────
   {
     batchId: 61,
     manufacturer: 'AXIOM SYSTEMS',
-    corponation: 'Tessera Corponation',
+    CorpoNation: 'Tessera CorpoNation',
     count: 10,
     type: 'pistol',
     inspiration: 'Smart pistols with BCI integration — Armatix-inspired but actually functional, networked weapons with user verification',
@@ -992,7 +992,7 @@ const BATCHES = [
   {
     batchId: 62,
     manufacturer: 'AXIOM SYSTEMS',
-    corponation: 'Tessera Corponation',
+    CorpoNation: 'Tessera CorpoNation',
     count: 8,
     type: 'rifle',
     inspiration: 'Networked smart rifles with digital scopes, target acquisition, and BCI fire control',
@@ -1003,7 +1003,7 @@ const BATCHES = [
   {
     batchId: 63,
     manufacturer: 'AXIOM SYSTEMS',
-    corponation: 'Tessera Corponation',
+    CorpoNation: 'Tessera CorpoNation',
     count: 8,
     type: 'energy',
     inspiration: 'BCI-integrated laser sidearms — energy weapons with neural trigger for faster response time',
@@ -1014,7 +1014,7 @@ const BATCHES = [
   {
     batchId: 64,
     manufacturer: 'AXIOM SYSTEMS',
-    corponation: 'Tessera Corponation',
+    CorpoNation: 'Tessera CorpoNation',
     count: 8,
     type: 'coilgun',
     inspiration: 'Precision-grade BCI-integrated coilguns — accurate magnetic weapons with networked targeting',
@@ -1027,7 +1027,7 @@ const BATCHES = [
   {
     batchId: 65,
     manufacturer: 'ZHENG-DAO HEAVY INDUSTRIES',
-    corponation: 'Zheng-dao Bioelectric',
+    CorpoNation: 'Zheng-dao Bioelectric',
     count: 10,
     type: 'pistol',
     inspiration: 'Desert Eagle / IMI Magnum Research lineage — massive frame semi-auto pistols for heavy calibers',
@@ -1038,7 +1038,7 @@ const BATCHES = [
   {
     batchId: 66,
     manufacturer: 'ZHENG-DAO HEAVY INDUSTRIES',
-    corponation: 'Zheng-dao Bioelectric',
+    CorpoNation: 'Zheng-dao Bioelectric',
     count: 8,
     type: 'revolver',
     inspiration: 'S&W Model 500 Competitor / Magnum Research BFR — industrial-grade large-frame revolvers',
@@ -1049,7 +1049,7 @@ const BATCHES = [
   {
     batchId: 67,
     manufacturer: 'ZHENG-DAO HEAVY INDUSTRIES',
-    corponation: 'Zheng-dao Bioelectric',
+    CorpoNation: 'Zheng-dao Bioelectric',
     count: 8,
     type: 'rifle',
     inspiration: 'KSVK / OSV-96 / heavy industrial carbines — Zheng-Dao adaptation of industrial tools to combat roles',
@@ -1060,18 +1060,18 @@ const BATCHES = [
   {
     batchId: 68,
     manufacturer: 'ZHENG-DAO HEAVY INDUSTRIES',
-    corponation: 'Zheng-dao Bioelectric',
+    CorpoNation: 'Zheng-dao Bioelectric',
     count: 8,
     type: 'heavy',
     inspiration: 'M2HB / NSV / KPV — heavy machine guns at the top end of conventional ballistics',
     calibers: ['.50 Heavy Machine Gun', '12.7mm Anti-Materiel', '7.62mm Caseless'],
     tiers: ['Tier 4+', 'Tier 5'],
-    flavor: 'Zheng-Dao heavy machine guns are vehicle and emplacement weapons. The kind of hardware that signals escalation — when Civil Security or corponation forces mount one, the situation has changed.'
+    flavor: 'Zheng-Dao heavy machine guns are vehicle and emplacement weapons. The kind of hardware that signals escalation — when Civil Security or CorpoNation forces mount one, the situation has changed.'
   },
   {
     batchId: 69,
     manufacturer: 'ZHENG-DAO HEAVY INDUSTRIES',
-    corponation: 'Zheng-dao Bioelectric',
+    CorpoNation: 'Zheng-dao Bioelectric',
     count: 8,
     type: 'coilgun',
     inspiration: 'Industrial-grade coilguns adapted from electromagnetic construction and demolition equipment',
@@ -1084,7 +1084,7 @@ const BATCHES = [
   {
     batchId: 70,
     manufacturer: 'BLACKWOOD COMMERCIAL GROUP',
-    corponation: 'Zheng-dao Bioelectric',
+    CorpoNation: 'Zheng-dao Bioelectric',
     count: 10,
     type: 'rifle',
     inspiration: 'Browning BAR / Winchester Model 70 Sporter — premium hunting rifles for the commercial market',
@@ -1095,7 +1095,7 @@ const BATCHES = [
   {
     batchId: 71,
     manufacturer: 'BLACKWOOD COMMERCIAL GROUP',
-    corponation: 'Zheng-dao Bioelectric',
+    CorpoNation: 'Zheng-dao Bioelectric',
     count: 8,
     type: 'shotgun',
     inspiration: 'Browning Citori / Beretta 686 — over-under and side-by-side sporting shotguns',
@@ -1106,7 +1106,7 @@ const BATCHES = [
   {
     batchId: 72,
     manufacturer: 'BLACKWOOD COMMERCIAL GROUP',
-    corponation: 'Zheng-dao Bioelectric',
+    CorpoNation: 'Zheng-dao Bioelectric',
     count: 8,
     type: 'pistol',
     inspiration: 'Springfield 1911 EMP / S&W SW1911 — premium commercial pistols for the sport-shooting civilian',
@@ -1117,7 +1117,7 @@ const BATCHES = [
   {
     batchId: 73,
     manufacturer: 'BLACKWOOD COMMERCIAL GROUP',
-    corponation: 'Zheng-dao Bioelectric',
+    CorpoNation: 'Zheng-dao Bioelectric',
     count: 8,
     type: 'rifle',
     inspiration: 'CZ 455 / Anschutz 1710 — precision target rifles for competitive sport shooting',
@@ -1130,7 +1130,7 @@ const BATCHES = [
   {
     batchId: 74,
     manufacturer: 'ARCTURUS DEFENSE SOLUTIONS',
-    corponation: 'Arcturus Defense Solutions',
+    CorpoNation: 'Arcturus Defense Solutions',
     count: 8,
     type: 'energy',
     inspiration: 'Military laser pistols — directed energy sidearms for specialized roles',
@@ -1141,7 +1141,7 @@ const BATCHES = [
   {
     batchId: 75,
     manufacturer: 'ARCTURUS DEFENSE SOLUTIONS',
-    corponation: 'Arcturus Defense Solutions',
+    CorpoNation: 'Arcturus Defense Solutions',
     count: 8,
     type: 'energy',
     inspiration: 'Military laser rifles — sustained-fire directed energy for area suppression',
@@ -1151,8 +1151,8 @@ const BATCHES = [
   },
   {
     batchId: 76,
-    manufacturer: 'TESSERA CORPONATION',
-    corponation: 'Tessera Corponation',
+    manufacturer: 'TESSERA CorpoNation',
+    CorpoNation: 'Tessera CorpoNation',
     count: 8,
     type: 'energy',
     inspiration: 'Corporate plasma pistols — elegant energy sidearms for Tessera corporate security aesthetic',
@@ -1162,8 +1162,8 @@ const BATCHES = [
   },
   {
     batchId: 77,
-    manufacturer: 'TESSERA CORPONATION',
-    corponation: 'Tessera Corponation',
+    manufacturer: 'TESSERA CorpoNation',
+    CorpoNation: 'Tessera CorpoNation',
     count: 8,
     type: 'energy',
     inspiration: 'Corporate plasma rifles — heavy energy weapons for Tessera security forces',
@@ -1174,7 +1174,7 @@ const BATCHES = [
   {
     batchId: 78,
     manufacturer: 'VESPID DYNAMICS',
-    corponation: 'Crucible Genomics',
+    CorpoNation: 'Crucible Genomics',
     count: 8,
     type: 'energy',
     inspiration: 'Experimental plasma weapons — pushing energy weapon technology further than established doctrine',
@@ -1185,7 +1185,7 @@ const BATCHES = [
   {
     batchId: 79,
     manufacturer: 'ZHENG-DAO HEAVY INDUSTRIES',
-    corponation: 'Zheng-dao Bioelectric',
+    CorpoNation: 'Zheng-dao Bioelectric',
     count: 8,
     type: 'energy',
     inspiration: 'Industrial laser weapons — adapted from heavy manufacturing and demolition tools',
@@ -1196,7 +1196,7 @@ const BATCHES = [
   {
     batchId: 80,
     manufacturer: 'AXIOM SYSTEMS',
-    corponation: 'Tessera Corponation',
+    CorpoNation: 'Tessera CorpoNation',
     count: 8,
     type: 'energy',
     inspiration: 'BCI-integrated laser weapons — neural aim assist for energy weapons',
@@ -1209,7 +1209,7 @@ const BATCHES = [
   {
     batchId: 81,
     manufacturer: 'ARCTURUS DEFENSE SOLUTIONS',
-    corponation: 'Arcturus Defense Solutions',
+    CorpoNation: 'Arcturus Defense Solutions',
     count: 8,
     type: 'coilgun',
     inspiration: 'Military-grade coilguns — standard-issue magnetic weapons for specialized Arcturus roles',
@@ -1220,7 +1220,7 @@ const BATCHES = [
   {
     batchId: 82,
     manufacturer: 'KANG-PETROV ARMS',
-    corponation: 'Slagworks Industrial',
+    CorpoNation: 'Slagworks Industrial',
     count: 8,
     type: 'coilgun',
     inspiration: 'Mass-market magnetic pistols — affordable coilgun for the civilian Tier 1–2 market',
@@ -1231,7 +1231,7 @@ const BATCHES = [
   {
     batchId: 83,
     manufacturer: 'FORGE-SMITH COLLECTIVE',
-    corponation: 'Crucible Genomics',
+    CorpoNation: 'Crucible Genomics',
     count: 8,
     type: 'coilgun',
     inspiration: 'Magnetically-boosted revolvers — hybrid magnetic/mechanical revolver mechanisms',
@@ -1242,7 +1242,7 @@ const BATCHES = [
   {
     batchId: 84,
     manufacturer: 'IRONSIDE ARMAMENTS',
-    corponation: 'Arcturus Defense Solutions',
+    CorpoNation: 'Arcturus Defense Solutions',
     count: 8,
     type: 'coilgun',
     inspiration: 'Heavy coilguns — large-bore magnetic weapons for vehicle and structure penetration',
@@ -1253,7 +1253,7 @@ const BATCHES = [
   {
     batchId: 85,
     manufacturer: 'CRUCIBLE INDUSTRIES',
-    corponation: 'Crucible Genomics',
+    CorpoNation: 'Crucible Genomics',
     count: 8,
     type: 'coilgun',
     inspiration: 'Tactical coilguns — professional-grade magnetic weapons for operator market',
@@ -1264,7 +1264,7 @@ const BATCHES = [
   {
     batchId: 86,
     manufacturer: 'AXIOM SYSTEMS',
-    corponation: 'Tessera Corponation',
+    CorpoNation: 'Tessera CorpoNation',
     count: 8,
     type: 'coilgun',
     inspiration: 'Precision BCI-integrated coilguns — the best smart weapon Axiom makes',
@@ -1275,20 +1275,20 @@ const BATCHES = [
   {
     batchId: 87,
     manufacturer: 'ZHENG-DAO HEAVY INDUSTRIES',
-    corponation: 'Zheng-dao Bioelectric',
+    CorpoNation: 'Zheng-dao Bioelectric',
     count: 8,
     type: 'coilgun',
     inspiration: 'Industrial-converted heavy coilguns — Zheng-Dao applies industrial electromagnetic tech to anti-armor roles',
     calibers: ['12mm Ferro Penetrator', '8mm Ferro Penetrator', 'Magnetic Composite Slug Standard'],
     tiers: ['Tier 3+', 'Tier 4+'],
-    flavor: 'Zheng-Dao coilguns exist because the same electromagnetics that drive their industrial equipment can drive a slug through 40mm of plate. The engineering conversion was trivial. The implications for corponation security arms races were not.'
+    flavor: 'Zheng-Dao coilguns exist because the same electromagnetics that drive their industrial equipment can drive a slug through 40mm of plate. The engineering conversion was trivial. The implications for CorpoNation security arms races were not.'
   },
 
   // ── MISC / ANTIQUE-PATTERN — 4 batches ───────────────────────────────────
   {
     batchId: 88,
     manufacturer: 'VOLKOV-SAITO PRECISION',
-    corponation: 'Zheng-dao Bioelectric',
+    CorpoNation: 'Zheng-dao Bioelectric',
     count: 8,
     type: 'pistol',
     inspiration: '1911 revival market — premium 1911-pattern pistols for collectors and traditionalists',
@@ -1299,7 +1299,7 @@ const BATCHES = [
   {
     batchId: 89,
     manufacturer: 'FORGE-SMITH COLLECTIVE',
-    corponation: 'Crucible Genomics',
+    CorpoNation: 'Crucible Genomics',
     count: 8,
     type: 'revolver',
     inspiration: 'Classic revolver revivals — Colt SAA / Python / Detective Special patterns carried forward',
@@ -1310,7 +1310,7 @@ const BATCHES = [
   {
     batchId: 90,
     manufacturer: 'BLACKWOOD COMMERCIAL GROUP',
-    corponation: 'Zheng-dao Bioelectric',
+    CorpoNation: 'Zheng-dao Bioelectric',
     count: 8,
     type: 'rifle',
     inspiration: 'Classic combination guns / drilling patterns — multi-barrel hunting rifles combining rifle and shotgun barrels',
@@ -1321,7 +1321,7 @@ const BATCHES = [
   {
     batchId: 91,
     manufacturer: 'BLACKWOOD COMMERCIAL GROUP',
-    corponation: 'Zheng-dao Bioelectric',
+    CorpoNation: 'Zheng-dao Bioelectric',
     count: 8,
     type: 'rifle',
     inspiration: 'Target pistols and sport rifles for competitive shooting — GLMZ organized competition circuit',
@@ -1334,7 +1334,7 @@ const BATCHES = [
   {
     batchId: 92,
     manufacturer: 'HEARTHSTONE FIREARMS',
-    corponation: 'Slagworks Industrial',
+    CorpoNation: 'Slagworks Industrial',
     count: 8,
     type: 'pistol',
     inspiration: 'Budget semi-auto pistols — additional Hearthstone variants for different Tier 1 niches',
@@ -1345,7 +1345,7 @@ const BATCHES = [
   {
     batchId: 93,
     manufacturer: 'CRUCIBLE INDUSTRIES',
-    corponation: 'Crucible Genomics',
+    CorpoNation: 'Crucible Genomics',
     count: 8,
     type: 'smg',
     inspiration: 'Additional Crucible SMG variants — suppressed and compact PDW configurations',
@@ -1356,7 +1356,7 @@ const BATCHES = [
   {
     batchId: 94,
     manufacturer: 'ARCTURUS DEFENSE SOLUTIONS',
-    corponation: 'Arcturus Defense Solutions',
+    CorpoNation: 'Arcturus Defense Solutions',
     count: 8,
     type: 'smg',
     inspiration: 'ADS service SMGs — military and law enforcement compact weapons',
@@ -1367,7 +1367,7 @@ const BATCHES = [
   {
     batchId: 95,
     manufacturer: 'STERLING-NAKAMURA',
-    corponation: 'Tessera Corponation',
+    CorpoNation: 'Tessera CorpoNation',
     count: 8,
     type: 'pistol',
     inspiration: 'Compliance-certified revolvers for civil enforcement — SN-branded revolvers for law enforcement backup use',
@@ -1378,7 +1378,7 @@ const BATCHES = [
   {
     batchId: 96,
     manufacturer: 'NKOMO-LINDQVIST',
-    corponation: 'Slagworks Industrial',
+    CorpoNation: 'Slagworks Industrial',
     count: 8,
     type: 'rifle',
     inspiration: 'Compact carbines and PDWs — NL applies compact carry philosophy to rifle-caliber platforms',
@@ -1389,7 +1389,7 @@ const BATCHES = [
   {
     batchId: 97,
     manufacturer: 'CARRION DEFENSE WORKS',
-    corponation: 'Crucible Genomics',
+    CorpoNation: 'Crucible Genomics',
     count: 8,
     type: 'smg',
     inspiration: 'Exotic compact weapons — Carrion applies its unconventional design philosophy to SMG platforms',
@@ -1399,8 +1399,8 @@ const BATCHES = [
   },
   {
     batchId: 98,
-    manufacturer: 'TESSERA CORPONATION',
-    corponation: 'Tessera Corponation',
+    manufacturer: 'TESSERA CorpoNation',
+    CorpoNation: 'Tessera CorpoNation',
     count: 8,
     type: 'smg',
     inspiration: 'Corporate compact security weapons — clean aesthetic SMGs for Tessera facility security',
@@ -1411,7 +1411,7 @@ const BATCHES = [
   {
     batchId: 99,
     manufacturer: 'KANG-PETROV ARMS',
-    corponation: 'Slagworks Industrial',
+    CorpoNation: 'Slagworks Industrial',
     count: 8,
     type: 'rifle',
     inspiration: 'KP precision and designated marksman rifles — budget precision options for the Tier 1–2 market',
@@ -1422,7 +1422,7 @@ const BATCHES = [
   {
     batchId: 100,
     manufacturer: 'FORGE-SMITH COLLECTIVE',
-    corponation: 'Crucible Genomics',
+    CorpoNation: 'Crucible Genomics',
     count: 8,
     type: 'pistol',
     inspiration: 'Forge-Smith working pistols — practical semi-autos for the trades and outer-zone economy',
@@ -1492,7 +1492,7 @@ async function generateWeaponBatch(batch, existingNames, batchIndex, totalBatche
 
   const user = `Generate ${batch.count} unique firearms for these parameters:
 
-MANUFACTURER: ${batch.manufacturer} (${batch.corponation})
+MANUFACTURER: ${batch.manufacturer} (${batch.CorpoNation})
 WEAPON TYPE: ${batch.type}
 CALIBERS (use at least these, may add variants): ${batch.calibers.join(', ')}
 TIER ACCESS: ${batch.tiers.join(', ')}

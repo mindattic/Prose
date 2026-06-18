@@ -1,4 +1,4 @@
-# Session Handoff — 2026-05-16
+﻿# Session Handoff — 2026-05-16
 
 This session was a creative-direction overhaul. The user issued ~14 cumulative directives across the session; foundational DB writes are committed; prose/outline work is started but mostly waiting for future sessions.
 
@@ -73,7 +73,7 @@ This session was a creative-direction overhaul. The user issued ~14 cumulative d
 
 ### Worldbuilding deepening
 - The network/AI ecosystem (directive #13) — develop into a full canon document: what the network feels like, how AIs interact with each other, the legal/economic mechanics of Φ-as-quantum-compute-time.
-- The synthetics legal-rights ruling — develop the court ruling details, dissenting jurisdictions, the corponation reorganization responses.
+- The synthetics legal-rights ruling — develop the court ruling details, dissenting jurisdictions, the CorpoNation reorganization responses.
 - The breakdown of physics — document specific anomaly types, where they cluster geographically in GLMZ.
 - Modification culture — document the spectrum from medical to functional to aesthetic, the cultural readings at each tier.
 

@@ -1,4 +1,4 @@
-const fs = require('fs');
+﻿const fs = require('fs');
 const path = require('path');
 const crypto = require('crypto');
 
@@ -213,7 +213,7 @@ const fragments = [
     name: "Fragment — Corporate Internal Memo, Partially Redacted",
     type: "document",
     document_type: "fragment",
-    author: "Unknown Corponation",
+    author: "Unknown CorpoNation",
     date: "unknown",
     classification: "classified",
     description: "RE: The [REDACTED] Protocol. As discussed in Tuesday's [REDACTED], the board has approved Phase [REDACTED] of the [REDACTED] initiative. All personnel assigned to Floor 13 are to report to [REDACTED] by [REDACTED]. Non-compliance will result in [REDACTED]. This memo will not be archived.",
@@ -374,7 +374,7 @@ const fragments = [
     author: "Old Harbor Port Authority",
     date: "unknown",
     classification: "restricted",
-    description: "A cargo manifest for a shipment that arrived at the Old Harbor docks from a port that doesn't exist. Contents listed as \"[CLASSIFICATION PENDING]\" — 47 sealed containers, each weighing exactly 73 kg. The containers were collected by a subsidiary that traces back to no parent corponation. The containers have not been opened.",
+    description: "A cargo manifest for a shipment that arrived at the Old Harbor docks from a port that doesn't exist. Contents listed as \"[CLASSIFICATION PENDING]\" — 47 sealed containers, each weighing exactly 73 kg. The containers were collected by a subsidiary that traces back to no parent CorpoNation. The containers have not been opened.",
     related_entities: [],
     credibility: "unconfirmed",
     story_hooks: ["What is in the 47 containers?", "73 kg again — is this weight significant?", "What is the phantom subsidiary?"],

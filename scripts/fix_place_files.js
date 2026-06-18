@@ -1,6 +1,6 @@
-#!/usr/bin/env node
+﻿#!/usr/bin/env node
 // fix_place_files.js
-// Phase 3: Add zoneType and controllingCorponation fields to place files.
+// Phase 3: Add zoneType and controllingCorpoNation fields to place files.
 // Also scrubs any remaining "the sprawl" / "Shelf" nickname references.
 
 import fs from 'fs';
@@ -85,9 +85,9 @@ for (const filename of files) {
       }
     }
 
-    // Add controllingCorponation field if missing (default null)
-    if (!Object.prototype.hasOwnProperty.call(doc, 'controllingCorponation')) {
-      doc.controllingCorponation = null;
+    // Add controllingCorpoNation field if missing (default null)
+    if (!Object.prototype.hasOwnProperty.call(doc, 'controllingCorpoNation')) {
+      doc.controllingCorpoNation = null;
       changed = true;
     }
 

@@ -1,4 +1,4 @@
-/**
+﻿/**
  * Populate Subsidiary Descriptions
  *
  * Reads all subsidiaries with empty descriptions and calls Claude to generate
@@ -83,14 +83,14 @@ World rules:
 - Currency is Φ (Quanta), never dollars
 - Tiers 1-5 (1=poorest Shelf districts, 5=corporate elite)
 - No city police — Arcturus Civil Security is enforcement
-- Corponations are sovereign entities, subsidiaries are their operating arms with separate branding
+- CorpoNations are sovereign entities, subsidiaries are their operating arms with separate branding
 - Tone: matter-of-fact worldbuilding prose, slightly cynical, specific and grounded
 - Do NOT mention brand names of real-world companies
-- Parent corponation names: use them exactly as given
+- Parent CorpoNation names: use them exactly as given
 
 For each subsidiary, write exactly 2 paragraphs (100-200 words total):
 - Paragraph 1: What the subsidiary does, what market it operates in, what it makes or provides
-- Paragraph 2: Its relationship to the parent corponation (why does the parent use a subsidiary brand for this?),
+- Paragraph 2: Its relationship to the parent CorpoNation (why does the parent use a subsidiary brand for this?),
   what tier of society it primarily serves, and one specific cultural or political detail that makes it interesting
 
 Return a JSON array. Each element: { "name": "<exact name>", "description": "<two paragraphs joined by \\n\\n>" }
@@ -115,7 +115,7 @@ async function main() {
   if (DRY_RUN) {
     console.log('DRY RUN — first 10:');
     toProcess.slice(0, 10).forEach(x =>
-      console.log(`  ${x.data.name} | ${x.data.parent_corponation} | ${x.data.line_of_business}`));
+      console.log(`  ${x.data.name} | ${x.data.parent_CorpoNation} | ${x.data.line_of_business}`));
     return;
   }
 
@@ -131,7 +131,7 @@ async function main() {
     console.log(`\nBatch ${batchNum}/${totalBatches} (${batch.length} subsidiaries)...`);
 
     const userPrompt = batch.map(x =>
-      `{ "name": ${JSON.stringify(x.data.name)}, "parent_corponation": ${JSON.stringify(x.data.parent_corponation)}, "line_of_business": ${JSON.stringify(x.data.line_of_business || '')}, "known_products": ${JSON.stringify(x.data.known_products || [])} }`
+      `{ "name": ${JSON.stringify(x.data.name)}, "parent_CorpoNation": ${JSON.stringify(x.data.parent_CorpoNation)}, "line_of_business": ${JSON.stringify(x.data.line_of_business || '')}, "known_products": ${JSON.stringify(x.data.known_products || [])} }`
     ).join('\n');
 
     let results = null;

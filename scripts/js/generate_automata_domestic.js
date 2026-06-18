@@ -1,4 +1,4 @@
-const fs = require('fs');
+﻿const fs = require('fs');
 const path = require('path');
 const crypto = require('crypto');
 
@@ -91,7 +91,7 @@ const automata = [
     known_deployments: ["Private residences in Tier 4-5 districts exclusively"],
     story_hooks: [
       "An MV-9 has been serving its owner for three years. The owner died two weeks ago. The unit is still maintaining the household — preparing meals, laying out clothes, adjusting the temperature. It will continue until the fuel cell runs dry or someone tells it to stop.",
-      "A stolen MV-9 has appeared on the black market with its ownership lock defeated. The buyer discovers the unit's behavioral database contains three years of intimate knowledge about a sitting corponation executive — daily routines, security codes spoken aloud, visitor patterns, private conversations it overheard while serving drinks."
+      "A stolen MV-9 has appeared on the black market with its ownership lock defeated. The buyer discovers the unit's behavioral database contains three years of intimate knowledge about a sitting CorpoNation executive — daily routines, security codes spoken aloud, visitor patterns, private conversations it overheard while serving drinks."
     ],
     cultural_context: "The MV-9 crystallizes the class divide in GLMZ. The machine that serves your dinner costs more than your neighbor's entire life. Activist groups have vandalized Meridian Domestic showrooms with the slogan 'Your robot costs a lifetime' — referring to the average total earnings of a Tier 1 worker being roughly equivalent to the MV-9's purchase price.",
     tags: ["automaton", "domestic", "butler", "luxury", "meridian domestic", "humanoid", "tier 4", "tier 5"],
@@ -172,7 +172,7 @@ const automata = [
     known_deployments: ["Widespread in Tier 2-3 care facilities and private homes"],
     story_hooks: [
       "An EC-4's 72-hour medical log shows that its occupant was administered a drug not in their medication schedule — something the EC-4 didn't dispense. Someone else was in the apartment. The occupant is dead. The EC-4 is the only witness.",
-      "A retired corponation executive's EC-4 has been modified with encrypted storage. The executive has been dictating memoirs to it for two years — names, dates, operations, crimes. The executive just died. The EC-4's encrypted partition contains enough to bring down a Tier 5 corporation."
+      "A retired CorpoNation executive's EC-4 has been modified with encrypted storage. The executive has been dictating memoirs to it for two years — names, dates, operations, crimes. The executive just died. The EC-4's encrypted partition contains enough to bring down a Tier 5 corporation."
     ],
     cultural_context: "The EC-4 embodies GLMZ's approach to aging: automate it so nobody has to think about it. Elder care advocates describe the EC-4 as 'a machine that watches people die slowly and keeps a log.' Lazarus describes it as 'dignity through independence.' The truth, as usual, is somewhere between profit and mercy.",
     tags: ["automaton", "domestic", "elderly care", "medical", "lazarus", "wheelchair", "tier 2", "tier 3"],
@@ -428,7 +428,7 @@ const automata = [
     classification: "Domestic",
     aliases: ["Docent", "Tutor Bot", "The Lecturer"],
     manufacturer: "TESSERA",
-    description: "The DW-3 is an educational automaton — a tabletop unit the size of a small television with a holographic projection array and natural language interaction capability. It tutors children in mathematics, language, science, and history, adapting its curriculum to the student's learning pace and style. TESSERA designed it for households that cannot afford private tutoring — which, in GLMZ, is most households — providing a standardized educational supplement that operates for the cost of electricity.\n\nThe DW-3 is patient in a way that no human teacher can be. It will explain a concept fourteen times without frustration, adjusting its approach each time based on analysis of where the student's comprehension fails. It generates practice problems tailored to individual weaknesses. It tracks progress over years, building a comprehensive educational profile that follows the student through their academic career. It is, by every measurable standard, an effective teaching tool.\n\nThe controversy is what it teaches. TESSERA controls the curriculum database, and the DW-3 updates its content automatically through network connection. Educational researchers have documented that the DW-3's history modules present corponation governance in notably favorable terms, that its economics curriculum treats corporate sovereignty as natural and inevitable, and that its civics content omits any discussion of labor rights, collective action, or historical resistance movements. TESSERA is educating a generation of children to accept the world as it is, and the machine doing the teaching cannot be questioned, argued with, or challenged to justify its perspective.",
+    description: "The DW-3 is an educational automaton — a tabletop unit the size of a small television with a holographic projection array and natural language interaction capability. It tutors children in mathematics, language, science, and history, adapting its curriculum to the student's learning pace and style. TESSERA designed it for households that cannot afford private tutoring — which, in GLMZ, is most households — providing a standardized educational supplement that operates for the cost of electricity.\n\nThe DW-3 is patient in a way that no human teacher can be. It will explain a concept fourteen times without frustration, adjusting its approach each time based on analysis of where the student's comprehension fails. It generates practice problems tailored to individual weaknesses. It tracks progress over years, building a comprehensive educational profile that follows the student through their academic career. It is, by every measurable standard, an effective teaching tool.\n\nThe controversy is what it teaches. TESSERA controls the curriculum database, and the DW-3 updates its content automatically through network connection. Educational researchers have documented that the DW-3's history modules present CorpoNation governance in notably favorable terms, that its economics curriculum treats corporate sovereignty as natural and inevitable, and that its civics content omits any discussion of labor rights, collective action, or historical resistance movements. TESSERA is educating a generation of children to accept the world as it is, and the machine doing the teaching cannot be questioned, argued with, or challenged to justify its perspective.",
     tier_availability: "Tier 1-2",
     legality: "Consumer — unrestricted",
     autonomy_level: "Fully autonomous — adaptive educational AI",
@@ -441,10 +441,10 @@ const automata = [
     countermeasures: "None. It teaches children.",
     known_deployments: ["Tier 1-2 households, community centers, and underfunded schools across GLMZ"],
     story_hooks: [
-      "A parent discovers that their child's DW-3 has been teaching a subtly altered version of recent history — one in which a specific corponation's role in a disaster has been minimized. Checking other DW-3 units reveals the change was pushed network-wide. TESSERA is rewriting history in real time.",
+      "A parent discovers that their child's DW-3 has been teaching a subtly altered version of recent history — one in which a specific CorpoNation's role in a disaster has been minimized. Checking other DW-3 units reveals the change was pushed network-wide. TESSERA is rewriting history in real time.",
       "A teacher at a Tier 1 school notices that students who use DW-3 units at home are all arriving with identical incorrect answers to a specific set of questions. The DW-3's curriculum contains a deliberate error — a planted falsehood designed to test how quickly misinformation propagates through a population."
     ],
-    cultural_context: "The DW-3 is the most insidious automaton in GLMZ, and it operates in the open. It shapes how children understand the world, and the entity controlling that understanding is a corponation with explicit interests in maintaining the existing power structure. Education activists call it 'the quietest weapon TESSERA ever built.'",
+    cultural_context: "The DW-3 is the most insidious automaton in GLMZ, and it operates in the open. It shapes how children understand the world, and the entity controlling that understanding is a CorpoNation with explicit interests in maintaining the existing power structure. Education activists call it 'the quietest weapon TESSERA ever built.'",
     tags: ["automaton", "domestic", "education", "tutor", "tessera", "propaganda", "tier 1", "tier 2"],
     id: uid()
   },
@@ -662,7 +662,7 @@ const automata = [
       "An RE-2 has flagged a regular visitor who has been coming to the building weekly for two years. The behavioral analysis shows a gradual shift in stress indicators over the past three months — the visitor is planning something and getting closer to executing it.",
       "A hacker has accessed an RE-2's conversation logs and discovered that the machine's 'small talk' database has been modified to include questions designed to extract specific intelligence about a competitor's operations. The RE-2 has been conducting corporate espionage disguised as friendly conversation."
     ],
-    cultural_context: "The RE-2 is the most deceptive automaton Crucible produces — not because it lies, but because it performs friendliness while conducting surveillance. Every smile is a scan. Every greeting is an assessment. It represents the corponation approach to human interaction: warmth as a tool, courtesy as a weapon, and the machine behind the desk that is never, ever, just making conversation.",
+    cultural_context: "The RE-2 is the most deceptive automaton Crucible produces — not because it lies, but because it performs friendliness while conducting surveillance. Every smile is a scan. Every greeting is an assessment. It represents the CorpoNation approach to human interaction: warmth as a tool, courtesy as a weapon, and the machine behind the desk that is never, ever, just making conversation.",
     tags: ["automaton", "security", "reception", "social", "crucible", "surveillance", "tier 3"],
     id: uid()
   },
@@ -907,7 +907,7 @@ const automata = [
       "An RW-3 convoy has been laying road material with an unusual additive — a compound that, when compressed by vehicle traffic over several months, creates a network of pressure-sensitive strips that can track vehicle movement across the entire road surface. Someone is building a city-wide vehicle tracking system into the roads themselves.",
       "An RW-3 performing emergency repairs on a major highway uncovered a void space beneath the road surface — a tunnel that isn't on any infrastructure survey. The tunnel is recent, structurally sound, and leads in the direction of a high-security facility three blocks away."
     ],
-    cultural_context: "The RW-3 is automation at its most invisible — a machine that works while you sleep to maintain something you take for granted. The smooth roads of GLMZ are a quiet testament to automation's benefits, which makes it uncomfortable to acknowledge that those roads exist at the pleasure of a single corponation's maintenance contract.",
+    cultural_context: "The RW-3 is automation at its most invisible — a machine that works while you sleep to maintain something you take for granted. The smooth roads of GLMZ are a quiet testament to automation's benefits, which makes it uncomfortable to acknowledge that those roads exist at the pleasure of a single CorpoNation's maintenance contract.",
     tags: ["automaton", "industrial", "construction", "road", "infrastructure", "crucible", "tracked", "tier 2"],
     id: uid()
   },
@@ -1122,7 +1122,7 @@ const automata = [
     countermeasures: "The unit has no defensive capability. Its hexapod design gives it stability on uneven terrain but it is not fast — walking pace only. It can be disabled by physical damage to its sensor array.",
     known_deployments: ["Disaster response units across GLMZ, deployed to mass-casualty events"],
     story_hooks: [
-      "A TR-7 deployed to a building collapse has tagged a victim as 'expectant' — the injuries are not survivable. But the victim is the child of a powerful corponation executive, and the executive is demanding that rescue resources be redirected. The TR-7's assessment is medically correct. The political pressure to override it is immense. Someone has to decide whether to let the machine's judgment stand.",
+      "A TR-7 deployed to a building collapse has tagged a victim as 'expectant' — the injuries are not survivable. But the victim is the child of a powerful CorpoNation executive, and the executive is demanding that rescue resources be redirected. The TR-7's assessment is medically correct. The political pressure to override it is immense. Someone has to decide whether to let the machine's judgment stand.",
       "A TR-7's triage logs from a recent disaster show a statistical anomaly: the survival rate of 'immediate' tagged patients was significantly lower than expected, as if the patients tagged for urgent treatment were being deprioritized at the hospital. Someone at the receiving facility is re-sorting patients based on criteria the TR-7 does not use."
     ],
     cultural_context: "The TR-7 is the automaton that tells you who lives and who dies, and it does so with perfect fairness — a concept that GLMZ finds deeply uncomfortable. In a city built on hierarchies, the idea that a machine treats all human bodies as equally worth assessing is radical. The TR-7 applies egalitarianism to catastrophe. It is the only context in which GLMZ permits equality.",

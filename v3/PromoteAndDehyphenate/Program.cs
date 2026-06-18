@@ -113,7 +113,7 @@ Upsert("Olu Ferrara", c =>
     c.Species = "human";
     c.Gender = "male";
     c.Pronouns = "he/him";
-    c.Location = "The Glooms — operates from one of the two independent outlets still filing coverage on corponation expansion";
+    c.Location = "The Glooms — operates from one of the two independent outlets still filing coverage on CorpoNation expansion";
     c.Affiliation = "Independent media (post-Tessera resignation, with cause, citing editorial independence)";
     c.Description = "Was a colleague of Rhea Adesanya-MacGregor's at Tessera Media Group before the Axiom Industries acquisition. Walked into the director general's office on the morning of the announcement and resigned in writing, with cause, citing editorial independence. One of four people Rhea envied for a single afternoon. Sable has never made direct contact with him in the years since the restructuring.";
 });

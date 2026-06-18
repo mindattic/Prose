@@ -1,4 +1,4 @@
----
+﻿---
 codex: 1
 project: StreetSamurai
 code: SS
@@ -47,7 +47,7 @@ The register law for Balance (the synthesis the author asked for):
 
 Kyle — street samurai, Atlas-grade neuretics quietly killing him, a code that prices
 everything at standard rate — has worked for eleven years for an employer he has never seen.
-Book Three is the story of that employer becoming a **partner**, the corponation that comes to
+Book Three is the story of that employer becoming a **partner**, the CorpoNation that comes to
 **own** it, the people Kyle assembles into a life despite himself, and the cost of doing the
 right thing in a city that bills you for it.
 
@@ -61,7 +61,7 @@ right thing in a city that bills you for it.
   to hunt the employer's footprint, found-family accretes (Boost's crew), and the Pixel
   thread tightens toward the thing neither will say.
 - **ACT III — THE BILL.** The trap, the loss (the bike between Boost and the truck), the
-  answer (witness, paid at standard rate), and the partnership sealed. Corponations unbeaten
+  answer (witness, paid at standard rate), and the partnership sealed. CorpoNations unbeaten
   but the district held; the question — *what are you willing to do* — answered by a man who
   can still live with himself. Coda hooks the series ("the others").
 

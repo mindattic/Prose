@@ -1,4 +1,4 @@
-// Entertainment generator batch 5: Subcultures & Social Phenomena
+﻿// Entertainment generator batch 5: Subcultures & Social Phenomena
 // Generates 200 JSON files in engine/data/entertainment/
 // Run: node generate_entertainment_5.js
 // Does NOT overwrite existing files.
@@ -136,7 +136,7 @@ Ubiquitous Diaspora: By 2200, humanity is fully racially interbred. There are no
 
 Technology: BCI (brain-computer interfaces) are common. Augmentation (cyberware/chrome) ranges from basic to military-grade. Geneware allows cosmetic and functional genetic modification (tails, bioluminescence, fur, horns, wings that don't work). Synthetics are artificial beings. E.L.F.s (Electronic Life Forms) are digital intelligences. The Underworld is the deep net / dark web equivalent.
 
-Corponations are sovereign corporate entities that function as nation-states. They control most infrastructure, media, and commerce. Street culture exists in resistance to and alongside corporate dominance.
+CorpoNations are sovereign corporate entities that function as nation-states. They control most infrastructure, media, and commerce. Street culture exists in resistance to and alongside corporate dominance.
 
 The Shelf (Tier 1) has its own vibrant culture — art collectives, underground markets, ghost markets (pop-up illegal bazaars), and a rich tradition of making do with less. Shelf art is raw, accumulative, imperfect — graffiti not gallery.
 
@@ -176,7 +176,7 @@ Each platform should have a distinct identity, user base, and cultural significa
     count: 15,
     prompt: `Generate {count} celebrities for GLMZ (2183-2226). Include:
 - Neural-feed stars (people famous for sharing their experiences/emotions via BCI)
-- Corporate spokespeople (the face of corponations — some willing, some contracted)
+- Corporate spokespeople (the face of CorpoNations — some willing, some contracted)
 - Synthetic celebrities (artificial beings who became famous)
 - Controversial public figures (activists, provocateurs, whistleblowers who became famous)
 Each celebrity needs a name reflecting the Ubiquitous Diaspora (mixed heritage from unexpected global combinations), a rise-to-fame story, and current cultural status.`
@@ -209,7 +209,7 @@ Each needs a name reflecting the Ubiquitous Diaspora, a platform/medium, and why
     category: 'tradition',
     count: 15,
     prompt: `Generate {count} traditions for GLMZ (2183-2226). Include:
-- Corporate-era holidays (mandatory celebration days created by corponations for productivity/morale)
+- Corporate-era holidays (mandatory celebration days created by CorpoNations for productivity/morale)
 - Remembrance days (marking disasters, wars, the founding of GLMZ, the Fall of old nations)
 - Shelf community celebrations (grassroots holidays born from Tier 1 culture — raw, genuine, defiant)
 - Synthetic awareness days (marking milestones in synthetic rights or synthetic-related events)
@@ -220,11 +220,11 @@ Each tradition should have a specific date or time of year, origin story, and ho
     category: 'holiday',
     count: 15,
     prompt: `Generate {count} holidays for GLMZ (2183-2226). Include:
-- Official corporate holidays (days off mandated by corponation charters — some genuine, some cynical)
+- Official corporate holidays (days off mandated by CorpoNation charters — some genuine, some cynical)
 - Underground holidays (not officially recognized but widely observed on the Shelf)
 - Memorial days for specific events in GLMZ history (2183-2226)
 - Celebration days for technological milestones (first BCI, first synthetic awakening, etc.)
-- Dark holidays (days that mark tragedies — observed quietly, some suppressed by corponations)
+- Dark holidays (days that mark tragedies — observed quietly, some suppressed by CorpoNations)
 Each needs a name, date, origin, and how people actually observe it across tiers.`
   },
   {
@@ -244,7 +244,7 @@ Each term needs the word/phrase, definition, usage example, tier of origin, and 
     category: 'conspiracy',
     count: 20,
     prompt: `Generate {count} conspiracy theories and popular beliefs for GLMZ (2183-2226). Include:
-- Corponation conspiracies (what people believe corps are secretly doing — some true, some not)
+- CorpoNation conspiracies (what people believe corps are secretly doing — some true, some not)
 - Underworld myths (what the deep net supposedly contains or connects to)
 - E.L.F. theories (fears and beliefs about emergent digital life forms)
 - BCI paranoia (what people think BCIs really do to your brain — some concerns are valid)

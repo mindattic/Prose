@@ -1,4 +1,4 @@
-# StreetSamurai SQL Schema
+﻿# StreetSamurai SQL Schema
 
 Database name: **StreetSamurai**.
 Engine: SQL Server (matches the `FractionsOfACenter` / `TaxRateCollector` infra).
@@ -22,7 +22,7 @@ Provider: EF Core (`Microsoft.EntityFrameworkCore.SqlServer`).
 | column | type | notes |
 |---|---|---|
 | `Id` | `UNIQUEIDENTIFIER` | guid7, PK |
-| `EntityType` | `NVARCHAR(40)` | `character`, `place`, `faction`, `corponation`, `subsidiary`, `synthetic`, `automaton`, `weapon`, `equipment`, `cyberware`, `apparel`, `ammunition`, `pharmaceutical`, `genemod`, `material`, `transportation`, `consumer_good`, `archetype`, `quote`, `news`, `contract`, `document`, `vocabulary`, `lab_specimen`, `psionic` |
+| `EntityType` | `NVARCHAR(40)` | `character`, `place`, `faction`, `CorpoNation`, `subsidiary`, `synthetic`, `automaton`, `weapon`, `equipment`, `cyberware`, `apparel`, `ammunition`, `pharmaceutical`, `genemod`, `material`, `transportation`, `consumer_good`, `archetype`, `quote`, `news`, `contract`, `document`, `vocabulary`, `lab_specimen`, `psionic` |
 | `Name` | `NVARCHAR(400)` | display name |
 | `Slug` | `NVARCHAR(400)` | derived once from name; **UNIQUE** |
 | `Status` | `NVARCHAR(40)` | `canon`, `stub`, `archived` |
@@ -132,7 +132,7 @@ Sub-tables:
 - `CharacterNeuralAbility` — name + cost + passive flag.
 - `CharacterBioBattery` — capacity + thresholds + recovery (1:1).
 
-### `Place`, `Faction`, `Corponation`, `Subsidiary`, `Synthetic`, `Automaton`
+### `Place`, `Faction`, `CorpoNation`, `Subsidiary`, `Synthetic`, `Automaton`
 
 Each gets a typed table with the structured fields the JSON model has today. Same pattern as `Character`.
 

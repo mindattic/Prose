@@ -1,4 +1,4 @@
----
+﻿---
 codex: 1
 project: StreetSamurai
 code: SS
@@ -47,9 +47,9 @@ updated: 2026-06-11
   locked inside a week.
 - **Standard rate** is a moral technology: exact payment, no debt either direction. Paid work
   is owned work.
-- **Corponations are sovereigns**, not companies: they hold territory, fly flags over
+- **CorpoNations are sovereigns**, not companies: they hold territory, fly flags over
   substations, field security, die — and when they die the substrate stays (Axiom Industrial's
-  mounting collars are everywhere thirty years after its death). Gloss every corponation on
+  mounting collars are everywhere thirty years after its death). Gloss every CorpoNation on
   FIRST mention with one in-voice clause about what it does. Mid-tier corpos run playbooks,
   not armies: paperwork, inspections, supplier squeezes, bought petitions (see Tessaline
   Foods).
@@ -288,7 +288,7 @@ The Quiet Hour) outrank this section; these are the rules those pages follow.
 ### 5.4 Interiority and information
 10. **INTERIORITY BUDGET: one or two flat lines per scene, maximum.** Italic inner monologue
     is rare — a sentence, never a paragraph, never a conversation.
-11. Tech and corponations are explained by what they DO, in-line, once. Superminds are
+11. Tech and CorpoNations are explained by what they DO, in-line, once. Superminds are
     weather. Never lecture; never tour-guide. Worldbuild by implication: name, gloss in one
     in-voice clause, move on.
 12. **VERBS DO THE DESCRIBING.** "Cacophony clears its throat." "The actuator gives up its

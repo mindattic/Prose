@@ -1,4 +1,4 @@
-// Entertainment generator (batch 2) for StreetSamurai
+﻿// Entertainment generator (batch 2) for StreetSamurai
 // Generates 200 film/TV/entertainment JSON files in engine/data/entertainment/
 // Run: node generate_entertainment_2.js
 // Does NOT overwrite existing files.
@@ -116,9 +116,9 @@ function getExistingByCategory() {
 // ── World Context ──
 const WORLD_CONTEXT = `Setting: GLMZ, years 2183-2226. A megacity in the Great Lakes corridor (Chicago-Milwaukee). Currency is Phi (\u03A6) — the QUANTA currency symbol. Society is tiered: Tier 1 (the Shelf — poorest, most dangerous), Tier 2 (working class), Tier 3 (middle), Tier 4 (corporate comfort), Tier 5 (the Spire — ultra-elite).
 
-Vantablack Media controls 73% of all licensed neural-feed content. They are the dominant entertainment corponation. Their subsidiaries produce most mainstream content. Independent studios operate in the margins, sometimes illegally.
+Vantablack Media controls 73% of all licensed neural-feed content. They are the dominant entertainment CorpoNation. Their subsidiaries produce most mainstream content. Independent studios operate in the margins, sometimes illegally.
 
-Corponations are sovereign corporate entities with their own laws. Some content is banned by specific corponations — watching it in their territory is a crime. Underground content circulates via dead drops, pirate mesh networks, and physical media.
+CorpoNations are sovereign corporate entities with their own laws. Some content is banned by specific CorpoNations — watching it in their territory is a crime. Underground content circulates via dead drops, pirate mesh networks, and physical media.
 
 Technology: BCI (brain-computer interfaces) are common. Neural-feed entertainment lets you LIVE as the character — full sensory immersion. Holographic projection is standard for Tier 3+. Flat-screen is retro/cheap (Tier 1-2). Underground broadcasts use encrypted mesh networks.
 
@@ -135,7 +135,7 @@ const SCHEMA_DESC = `Each entry MUST have exactly these fields:
   "year": number (2183-2226),
   "description": "2-3 sentence description of the content/entity",
   "corporate_status": "licensed|independent|banned|underground|corporate_owned",
-  "associated_corp": "name of associated corponation or 'Independent' or 'Various'",
+  "associated_corp": "name of associated CorpoNation or 'Independent' or 'Various'",
   "tier_availability": "Tier 1-2|Tier 2-3|Tier 3-4|Tier 4-5|All tiers|Underground only",
   "controversy": "any controversy or banned status, or null",
   "cultural_impact": "1 sentence on how this affected GLMZ culture",
@@ -148,10 +148,10 @@ const CATEGORIES = [
     category: 'movie',
     count: 60,
     prompt: `Generate {count} MOVIES for the GLMZ entertainment landscape, spanning years 2183-2226. Include a diverse mix:
-- Blockbusters: Vantablack Media tentpoles, massive neural-feed spectacles, corponation-funded epics
+- Blockbusters: Vantablack Media tentpoles, massive neural-feed spectacles, CorpoNation-funded epics
 - Indie films: Low-budget flat-screen or basic neural-feed, often politically charged
-- Propaganda films: Corporate-commissioned content glorifying corponation life, demonizing runners/street life
-- Banned films: Content outlawed in specific corponation territories — showing corporate atrocities, exposing experiments, documenting the Shelf
+- Propaganda films: Corporate-commissioned content glorifying CorpoNation life, demonizing runners/street life
+- Banned films: Content outlawed in specific CorpoNation territories — showing corporate atrocities, exposing experiments, documenting the Shelf
 - Art house: Experimental neural-feed that pushes the medium (you experience synesthesia, time dilation, perspective shifts)
 
 Some movies are neural-feed (you ARE the protagonist), some are holographic (3D projection), some are flat-screen (retro/Shelf). Mix corporate-approved with underground. Some are legendary — the "Citizen Kane" or "Blade Runner" of GLMZ. Some are trash that everyone watched anyway.`
@@ -163,8 +163,8 @@ Some movies are neural-feed (you ARE the protagonist), some are holographic (3D 
 - Serialized dramas: Crime dramas set on the Shelf, corporate intrigue in the Spire, runner crew adventures
 - Reality shows: "Augment Swap" (trade chrome for a week), "Shelf Life" (Spire residents try to survive Tier 1), corpo dating shows
 - News programs: Corporate-owned news (propaganda), independent news (dangerous), pirate news (underground mesh broadcasts)
-- Corporate propaganda shows: Cheerful content about how great corponation life is, subtly discouraging independent thought
-- Underground broadcasts: Pirate shows that air on mesh networks, exposing corporate crimes, teaching self-defense against corponation security
+- Corporate propaganda shows: Cheerful content about how great CorpoNation life is, subtly discouraging independent thought
+- Underground broadcasts: Pirate shows that air on mesh networks, exposing corporate crimes, teaching self-defense against CorpoNation security
 
 Some shows are neural-feed experiences (you LIVE as a character for the episode). Some have been running for decades. Some were cancelled after the corp found out what they were really saying.`
   },
@@ -174,11 +174,11 @@ Some shows are neural-feed experiences (you LIVE as a character for the episode)
     prompt: `Generate {count} DOCUMENTARIES for GLMZ, spanning years 2183-2226. Include:
 - Corporate-funded whitewashes: "The Benevolent Hand: How [Corp] Saved GLMZ" — slick, well-produced lies
 - Underground exposes: Dangerous to own, dangerous to watch, documenting corporate experiments on Shelf populations, illegal chrome testing, forced substrate migration
-- Historical: Documenting the rise of corponation sovereignty, the collapse of nation-states, the Great Lakes corridor formation
+- Historical: Documenting the rise of CorpoNation sovereignty, the collapse of nation-states, the Great Lakes corridor formation
 - Scientific: BCI development history, geneware ethics debates, the synthetic food revolution
 - Cultural: The death of ethnic cuisine as a concept, the evolution of language in GLMZ, street art movements
 
-Some documentaries got their makers killed. Some are required viewing in corporate orientation. Some circulate only on physical media because streaming them triggers corponation surveillance.`
+Some documentaries got their makers killed. Some are required viewing in corporate orientation. Some circulate only on physical media because streaming them triggers CorpoNation surveillance.`
   },
   {
     category: 'personality',
@@ -187,7 +187,7 @@ Some documentaries got their makers killed. Some are required viewing in corpora
 - Corporate-owned talent: Actors under exclusive Vantablack contracts, unable to work outside the corp
 - Independent auteurs: Directors who refuse corporate money, work in flat-screen or underground neural-feed
 - Neural-feed stars: Actors whose neural signatures are so distinctive that audiences crave their "feel" — their emotional texture in neural-feed is unmistakable
-- Controversial figures: Performers who crossed corponation lines, disappeared, or went underground
+- Controversial figures: Performers who crossed CorpoNation lines, disappeared, or went underground
 - Legacy figures: The legends — directors who defined neural-feed cinema, actors who became icons
 
 Remember Ubiquitous Diaspora — names and heritage should be globally mixed. Some personalities are human, some have notable geneware or chrome. For category use "personality". For medium, use the medium they primarily work in.`
@@ -200,7 +200,7 @@ Remember Ubiquitous Diaspora — names and heritage should be globally mixed. So
 - Independent studios: Smaller operations producing content outside corporate control, often at legal risk
 - Underground production houses: Illegal studios producing banned content, operating from Shelf basements and abandoned infrastructure
 
-For category use "studio". For medium, use the primary medium they produce content for. Studios should have distinct identities — what they are known for, their reputation, their relationship with corponation power.`
+For category use "studio". For medium, use the primary medium they produce content for. Studios should have distinct identities — what they are known for, their reputation, their relationship with CorpoNation power.`
   },
   {
     category: 'network',
@@ -208,9 +208,9 @@ For category use "studio". For medium, use the primary medium they produce conte
     prompt: `Generate {count} NETWORKS and distribution channels for GLMZ, active between 2183-2226. Include:
 - Vantablack-owned broadcast networks: The dominant neural-feed and holographic channels
 - Independent networks: Smaller channels surviving on niche content and specific tier audiences
-- Pirate channels: Underground mesh-network broadcasters, moving frequencies to avoid corponation jamming
+- Pirate channels: Underground mesh-network broadcasters, moving frequencies to avoid CorpoNation jamming
 
-For category use "network". For medium, use their primary distribution medium. Networks control what people see — or in the case of pirate channels, what corponations don't want them to see.`
+For category use "network". For medium, use their primary distribution medium. Networks control what people see — or in the case of pirate channels, what CorpoNations don't want them to see.`
   },
 ];
 

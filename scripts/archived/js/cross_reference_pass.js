@@ -1,4 +1,4 @@
-/**
+﻿/**
  * Cross-Reference Pass
  *
  * Reads all JSON files across engine/data/ repos, builds a name index,
@@ -13,7 +13,7 @@ const DATA_ROOT = path.resolve(__dirname, '..', 'engine', 'data');
 
 // Repos to index entity names from
 const INDEX_REPOS = [
-  'people', 'corponations', 'factions', 'places', 'technology',
+  'people', 'CorpoNations', 'factions', 'places', 'technology',
   'weaponry', 'cyberware', 'equipment', 'automata', 'synthetics',
   'entertainment', 'subsidiaries', 'materials'
 ];
@@ -174,7 +174,7 @@ function main() {
         }
       }
 
-      // Index common_names for corponations
+      // Index common_names for CorpoNations
       if (Array.isArray(data.common_names)) {
         for (const cn of data.common_names) {
           if (!cn || typeof cn !== 'string') continue;

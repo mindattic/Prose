@@ -1,4 +1,4 @@
-// Consumer goods generator for StreetSamurai
+﻿// Consumer goods generator for StreetSamurai
 // Generates 1024 consumer good JSON files in engine_data/consumer_goods/
 // Run: node generate_consumer_goods.js
 // Does NOT overwrite existing files.
@@ -123,7 +123,7 @@ CRITICAL FLAVOR CONTEXT — Ubiquitous Diaspora: By 2200, humanity is fully raci
 
 Technology: BCI (brain-computer interfaces) are common. Augmentation (cyberware/chrome) ranges from basic to military-grade. Geneware allows cosmetic and functional genetic modification (tails, bioluminescence, fur, horns, wings that don't work). Synth-protein is the primary food source for Tiers 1-3. Real ingredients (real cocoa, real coffee, real meat) are luxury items.
 
-Corponations are sovereign corporate entities. They manufacture most goods. Street brands also exist — unlicensed, often better quality for specific niches, always with an underground cachet.
+CorpoNations are sovereign corporate entities. They manufacture most goods. Street brands also exist — unlicensed, often better quality for specific niches, always with an underground cachet.
 
 Products should feel REAL — not parodies. Brand names should sound like actual brand names, not jokes. Think how Samsung, Unilever, Nestle, or craft brands sound — professional, sometimes evocative, sometimes just a name.`;
 

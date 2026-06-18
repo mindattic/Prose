@@ -1,4 +1,4 @@
-const fs = require('fs');
+﻿const fs = require('fs');
 const path = require('path');
 
 const OUTPUT_DIR = path.join(__dirname, '..', 'engine_data', 'documents');
@@ -66,7 +66,7 @@ A section where industrial water pipes — some 3 meters in diameter — have be
 
 The Gulch economy runs on three things: water access, salvage, and services too illegal or too cheap for the Shelf. Water access matters because the Gulch is the only district where untreated lake water can be accessed directly — valuable for industrial processes that don't require potable-grade water and cheaper than buying from Vossen's metered supply. Salvage matters because everything that falls from the Shelf eventually ends up in the Gulch, and everything that washes in from the lake is fair game. Services — the Gulch provides augment modification, data extraction, chemical synthesis, and other operations that benefit from minimal surveillance and maximal deniability.
 
-The unofficial currency of the Gulch is water credits — a local system that tracks favors, debts, and resource sharing independent of the UBC system. Water credits can't be converted to Φ, can't be taxed, and can't be traced. The corponations know about the system and tolerate it because the Gulch's economy is too small to matter and too entangled to disrupt without affecting the water infrastructure they actually care about.
+The unofficial currency of the Gulch is water credits — a local system that tracks favors, debts, and resource sharing independent of the UBC system. Water credits can't be converted to Φ, can't be taxed, and can't be traced. The CorpoNations know about the system and tolerate it because the Gulch's economy is too small to matter and too entangled to disrupt without affecting the water infrastructure they actually care about.
 
 ## Demographics
 
@@ -88,7 +88,7 @@ The Gulch is technically part of the Shelf's administrative district but practic
 
 ## Security
 
-The Gulch has no formal security presence. Corponation security doesn't patrol below the Shelf — the ROI isn't there. Order is maintained by community consensus and the practical reality that in a district where everyone knows everyone, antisocial behavior has immediate social consequences. Violent crime is rare not because the Gulch is safe but because it's small enough that perpetrators can't hide. Property crime is endemic but governed by unwritten rules about what's fair game and what's off-limits. Stealing from a neighbor is punished by the community. Stealing from the Shelf above is practically a civic duty.`
+The Gulch has no formal security presence. CorpoNation security doesn't patrol below the Shelf — the ROI isn't there. Order is maintained by community consensus and the practical reality that in a district where everyone knows everyone, antisocial behavior has immediate social consequences. Violent crime is rare not because the Gulch is safe but because it's small enough that perpetrators can't hide. Property crime is endemic but governed by unwritten rules about what's fair game and what's off-limits. Stealing from a neighbor is punished by the community. Stealing from the Shelf above is practically a civic duty.`
 });
 
 emit({
@@ -125,7 +125,7 @@ Cap Level Zero's permanent population is estimated at 200-400 — impossible to 
 
 - **Wind Runners**: Glider pilots who use the Cap as a launch point for aerial transit across the city. Some are operators; others are thrill-seekers; a few are couriers who carry physical messages and packages that can't be trusted to electronic networks.
 - **Signal Hermits**: People who live in the Antenna Forest specifically to escape the electromagnetic saturation of the city below. Some are E.L.F.-phobic. Some have neural conditions exacerbated by dense signal environments. Some simply prefer the quiet.
-- **Watchers**: Independent surveillance operators who use the Cap's elevation and the Antenna Forest's sensor infrastructure to monitor the city below. They sell information to anyone who pays and are valued by operators, journalists, and corponation intelligence services alike.
+- **Watchers**: Independent surveillance operators who use the Cap's elevation and the Antenna Forest's sensor infrastructure to monitor the city below. They sell information to anyone who pays and are valued by operators, journalists, and CorpoNation intelligence services alike.
 
 Culture on the Cap is defined by weather. Everything revolves around wind, rain, temperature, and visibility. Cap residents greet each other with weather reports. Social gatherings happen during calm periods. Arguments are settled by who can stand in the wind longest. Time is measured not in hours but in weather windows — the intervals between storms when movement is possible.
 
@@ -137,7 +137,7 @@ Access is denominated in Φ. Signal is traded in kind — information for inform
 
 ## Strategic Significance
 
-For operators, the Cap is an extraction route, a meeting place, and a sanctuary. Corponation security forces can reach the Cap by vertiport, but the Antenna Forest makes organized operations difficult — communications break down, drones can't navigate, and the wind makes aerial insertion unpredictable. A prepared operator on the Cap has a significant tactical advantage over a pursuit team that isn't Cap-adapted.
+For operators, the Cap is an extraction route, a meeting place, and a sanctuary. CorpoNation security forces can reach the Cap by vertiport, but the Antenna Forest makes organized operations difficult — communications break down, drones can't navigate, and the wind makes aerial insertion unpredictable. A prepared operator on the Cap has a significant tactical advantage over a pursuit team that isn't Cap-adapted.
 
 ## The Weather War
 
@@ -180,11 +180,11 @@ Neon Bend generates approximately Φ2.8 billion annually in entertainment revenu
 
 ## Vice and Regulation
 
-Neon Bend exists in a regulatory gray zone that benefits everyone with power and exploits everyone without it. Corponation security maintains a visible presence on the Strip — Ringo-contracted officers in branded armor, backed by surveillance drones — but their mandate extends only to protecting licensed venues and their corporate clients. The Warrens are effectively unpoliced.
+Neon Bend exists in a regulatory gray zone that benefits everyone with power and exploits everyone without it. CorpoNation security maintains a visible presence on the Strip — Ringo-contracted officers in branded armor, backed by surveillance drones — but their mandate extends only to protecting licensed venues and their corporate clients. The Warrens are effectively unpoliced.
 
-This arrangement is deliberate. Neon Bend serves as a pressure valve — a place where the controlled population of GLMZ can release stress, indulge desires, and engage in minor transgressions without threatening the corporate order. The corponations tolerate vice in the Bend because contained vice is cheaper than widespread unrest.
+This arrangement is deliberate. Neon Bend serves as a pressure valve — a place where the controlled population of GLMZ can release stress, indulge desires, and engage in minor transgressions without threatening the corporate order. The CorpoNations tolerate vice in the Bend because contained vice is cheaper than widespread unrest.
 
-The line between tolerated and suppressed is drawn at corporate interests. Steal from a tourist, and Ringo security looks the other way. Steal from a corponation executive, and you disappear. Run an unlicensed bar, and nobody cares. Run an unlicensed bar that competes with a Ringo franchise, and your establishment burns.
+The line between tolerated and suppressed is drawn at corporate interests. Steal from a tourist, and Ringo security looks the other way. Steal from a CorpoNation executive, and you disappear. Run an unlicensed bar, and nobody cares. Run an unlicensed bar that competes with a Ringo franchise, and your establishment burns.
 
 ## Cultural Significance
 
@@ -211,7 +211,7 @@ emit({
 
 ## Overview
 
-The Shelf is GLMZ's largest residential district by population — home to approximately 3.2 million people across a layered landscape of converted industrial space, purpose-built social housing, and improvised structures that have accreted over a century of continuous habitation. It occupies the mid-level band of the city, above the Gulch and industrial Grind, below the arcology residential levels where corponation employees live. The Shelf is where the UBC class lives — the millions who survive on Universal Basic Credit of Φ120/month and whatever supplemental income they can find.
+The Shelf is GLMZ's largest residential district by population — home to approximately 3.2 million people across a layered landscape of converted industrial space, purpose-built social housing, and improvised structures that have accreted over a century of continuous habitation. It occupies the mid-level band of the city, above the Gulch and industrial Grind, below the arcology residential levels where CorpoNation employees live. The Shelf is where the UBC class lives — the millions who survive on Universal Basic Credit of Φ120/month and whatever supplemental income they can find.
 
 ## Structural Character
 
@@ -243,7 +243,7 @@ Entertainment is communal because private entertainment requires power and bandw
 
 The Shelf is self-governing at the block level. Each block elects or informally designates a block representative who handles disputes, coordinates maintenance, and interfaces with the minimal municipal services that reach the Shelf. Block representatives form district councils that manage shared infrastructure — water distribution, power allocation, waste removal — through negotiation and consensus.
 
-This governance structure exists because no corponation has claimed administrative authority over the Shelf. The space between the Grind and the arcologies is jurisdictionally ambiguous — it belongs to whoever built the structure it's inside, which means it belongs to six different corponations simultaneously and therefore, effectively, to none of them. The Shelf's autonomy is a product of jurisdictional neglect, and its residents are fiercely protective of it.
+This governance structure exists because no CorpoNation has claimed administrative authority over the Shelf. The space between the Grind and the arcologies is jurisdictionally ambiguous — it belongs to whoever built the structure it's inside, which means it belongs to six different CorpoNations simultaneously and therefore, effectively, to none of them. The Shelf's autonomy is a product of jurisdictional neglect, and its residents are fiercely protective of it.
 
 ## E.L.F. Ecology
 
@@ -280,7 +280,7 @@ The Grind is the only place in GLMZ where the class structure is visible as phys
 
 Standard Grind wages range from Φ180-350/month for manual labor to Φ400-800/month for skilled technical work. These wages supplement UBC, pushing total income to Φ300-920/month — enough to live slightly above survival level but nowhere near the Φ2,000-5,000/month that arcology residents earn.
 
-Safety standards are set by the corponation that operates each facility and enforced by that corponation's internal oversight. In practice, this means safety is a function of profitability. Axiom's electronics assembly lines have excellent safety records because damaged workers slow production. Tessera's chemical processing facilities have poor safety records because replacing workers is cheaper than upgrading containment systems.
+Safety standards are set by the CorpoNation that operates each facility and enforced by that CorpoNation's internal oversight. In practice, this means safety is a function of profitability. Axiom's electronics assembly lines have excellent safety records because damaged workers slow production. Tessera's chemical processing facilities have poor safety records because replacing workers is cheaper than upgrading containment systems.
 
 ## The Grind's Synthetic Population
 
@@ -305,7 +305,7 @@ Mirror Mile is the 1.6-kilometer stretch of enclosed boulevard that connects the
 
 The Mile is a fully enclosed structure — climate-controlled, acoustically managed, and hermetically sealed from the city outside its walls. The ceiling arches 80 meters overhead, supported by ACNT columns that taper to needle points, giving the impression of a space held up by nothing. The floor is polished metamaterial composite that reflects a slightly distorted version of whoever walks on it — a design choice that architects describe as "aspirational reflection" and everyone else describes as "unsettling."
 
-Lining both sides of the Mile are the flagship retail, dining, and service establishments of the corponation economy. Not shops — experiences. Axiom's augmentation showroom, where customers can trial neural enhancements in controlled VR environments before committing to surgery. Tessera's materials lab, where bespoke fabrics and composites are designed for individual clients. Sterling-Nakamura's wellness center, where genetic and pharmaceutical optimization is prescribed with the attentive luxury of a 20th-century spa.
+Lining both sides of the Mile are the flagship retail, dining, and service establishments of the CorpoNation economy. Not shops — experiences. Axiom's augmentation showroom, where customers can trial neural enhancements in controlled VR environments before committing to surgery. Tessera's materials lab, where bespoke fabrics and composites are designed for individual clients. Sterling-Nakamura's wellness center, where genetic and pharmaceutical optimization is prescribed with the attentive luxury of a 20th-century spa.
 
 Prices on Mirror Mile are denominated in amounts that would represent months of UBC income. A lunch at a Mile restaurant costs Φ80-200. A suit from a Mile tailor costs Φ2,000-10,000. An augmentation consultation at Axiom's showroom starts at Φ500 for the appointment, before any actual augmentation work is discussed.
 
@@ -319,7 +319,7 @@ The Mile's security systems are among MIRROR's favorite subjects — the Supermi
 
 Mirror Mile exists for the same reason royal courts existed: to provide a space where power is visible, where status is performed, and where the people who run the world can see each other and be seen. The Mile's restaurants and clubs are where corporate deals are discussed, alliances are formed, and rivalries are managed through the elaborate social choreography of corporate dining and entertainment.
 
-The three corponations whose headquarters flank the Mile — Axiom, Tessera, and Sterling-Nakamura — maintain an uneasy detente within its boundaries. Mirror Mile is neutral ground by mutual agreement. Security incidents on the Mile are resolved through diplomatic channels rather than force, and the unwritten rule is that corporate espionage, while constant everywhere else, is suspended within the Mile's walls. This rule is broken regularly but discreetly. Getting caught violating Mile neutrality is a diplomatic catastrophe that costs more in political capital than any intelligence gain is worth.
+The three CorpoNations whose headquarters flank the Mile — Axiom, Tessera, and Sterling-Nakamura — maintain an uneasy detente within its boundaries. Mirror Mile is neutral ground by mutual agreement. Security incidents on the Mile are resolved through diplomatic channels rather than force, and the unwritten rule is that corporate espionage, while constant everywhere else, is suspended within the Mile's walls. This rule is broken regularly but discreetly. Getting caught violating Mile neutrality is a diplomatic catastrophe that costs more in political capital than any intelligence gain is worth.
 
 ## The Underside
 
@@ -373,7 +373,7 @@ Jade Terrace occupies levels 40-120 of the Zheng-Dao arcology complex — a resi
 
 ## Design Philosophy
 
-Zheng-Dao's approach to employee housing differs from the other corponations in one critical respect: it treats housing as an investment in productivity rather than a cost to be minimized. Where Axiom's residential blocks are efficient and sterile, and Tessera's are functional and anonymous, Zheng-Dao's Jade Terrace is deliberately beautiful. The company's internal research showed that employee productivity correlated strongly with housing satisfaction, and Zheng-Dao — being a company that makes decisions based on data — built housing that its employees would love living in.
+Zheng-Dao's approach to employee housing differs from the other CorpoNations in one critical respect: it treats housing as an investment in productivity rather than a cost to be minimized. Where Axiom's residential blocks are efficient and sterile, and Tessera's are functional and anonymous, Zheng-Dao's Jade Terrace is deliberately beautiful. The company's internal research showed that employee productivity correlated strongly with housing satisfaction, and Zheng-Dao — being a company that makes decisions based on data — built housing that its employees would love living in.
 
 The architecture draws on feng shui principles adapted for vertical living: natural materials where possible (bamboo panels, stone accents, living plant walls), water features that create white noise and humidity, sightlines that give the illusion of space in confined environments, and lighting systems that simulate natural daylight cycles with precision that the Shelf's residents would find magical.
 
@@ -381,13 +381,13 @@ The architecture draws on feng shui principles adapted for vertical living: natu
 
 Jade Terrace is organized into neighborhoods of approximately 500 residents, each centered on a communal garden level. The garden levels are the district's social centers: food markets, tea houses, community kitchens, and gathering spaces where neighbors share meals, childcare, and gossip. The tradition of communal dining — drawn from multiple cultural traditions in the Diaspora — is strongly established here. Most Jade Terrace residents eat their evening meal in their neighborhood's communal kitchen rather than their private units.
 
-This communal structure serves Zheng-Dao's interests as much as its employees'. A community that eats together, that knows its neighbors, that has strong social bonds — that community is stable, productive, and unlikely to organize against its employer. Jade Terrace's residents are the happiest corponation employees in GLMZ. They are also, by design, the most integrated into their employer's social fabric. The line between community and corporate loyalty is deliberately blurred.
+This communal structure serves Zheng-Dao's interests as much as its employees'. A community that eats together, that knows its neighbors, that has strong social bonds — that community is stable, productive, and unlikely to organize against its employer. Jade Terrace's residents are the happiest CorpoNation employees in GLMZ. They are also, by design, the most integrated into their employer's social fabric. The line between community and corporate loyalty is deliberately blurred.
 
 ## The Tea Houses
 
 Every neighborhood maintains a tea house — a social space that serves tea, light food, and conversation in an environment designed for leisurely interaction. The tea houses are technically corporate amenities, but they function as the neighborhood's living room: the place where disputes are aired, news is shared, favors are exchanged, and the informal governance of community life happens. Tea house conversations are not monitored — Zheng-Dao's policy on residential surveillance specifically excludes tea houses, a concession that cost the company nothing in security terms and earned enormous goodwill.
 
-The tea houses have also become spaces where Zheng-Dao's employees quietly discuss things that would be dangerous to discuss at work: corporate policy grievances, inter-corponation gossip, and the kind of speculative conversation about power, justice, and the future that corporate environments suppress. Zheng-Dao knows this happens. The tea houses exist precisely because Zheng-Dao understands that people who can't vent safely will vent dangerously.
+The tea houses have also become spaces where Zheng-Dao's employees quietly discuss things that would be dangerous to discuss at work: corporate policy grievances, inter-CorpoNation gossip, and the kind of speculative conversation about power, justice, and the future that corporate environments suppress. Zheng-Dao knows this happens. The tea houses exist precisely because Zheng-Dao understands that people who can't vent safely will vent dangerously.
 
 ## Economic Position
 
@@ -404,13 +404,13 @@ emit({
 
 ## Overview
 
-Sector Seven is the part of GLMZ that doesn't work. A 2-square-kilometer area in the city's southeastern quadrant where a catastrophic infrastructure failure in 2178 knocked out power, water, climate control, and communications simultaneously — and where, twenty-two years later, full services have never been restored. The corponations that shared jurisdiction over Sector Seven's infrastructure couldn't agree on who should pay for repairs. While they litigated, the Sector's population either left or adapted. Now it's the closest thing GLMZ has to a wilderness: a dark zone where the city's systems don't reach and the city's rules don't apply.
+Sector Seven is the part of GLMZ that doesn't work. A 2-square-kilometer area in the city's southeastern quadrant where a catastrophic infrastructure failure in 2178 knocked out power, water, climate control, and communications simultaneously — and where, twenty-two years later, full services have never been restored. The CorpoNations that shared jurisdiction over Sector Seven's infrastructure couldn't agree on who should pay for repairs. While they litigated, the Sector's population either left or adapted. Now it's the closest thing GLMZ has to a wilderness: a dark zone where the city's systems don't reach and the city's rules don't apply.
 
 ## The Failure
 
-In 2178, a cascading failure in Sector Seven's primary power distribution node triggered a chain reaction that took out the backup systems, the backup to the backup systems, and the emergency infrastructure that was supposed to survive total system failure. Root cause analysis identified a combination of deferred maintenance, incompatible system upgrades by three different corponations, and what one investigator's report described as "an infrastructure ecosystem that had been held together by coincidence for fifteen years and ran out of coincidences."
+In 2178, a cascading failure in Sector Seven's primary power distribution node triggered a chain reaction that took out the backup systems, the backup to the backup systems, and the emergency infrastructure that was supposed to survive total system failure. Root cause analysis identified a combination of deferred maintenance, incompatible system upgrades by three different CorpoNations, and what one investigator's report described as "an infrastructure ecosystem that had been held together by coincidence for fifteen years and ran out of coincidences."
 
-The failure killed forty-seven people directly (exposure, medical equipment failure) and displaced 12,000. Emergency services restored minimal power and water to evacuation corridors within 72 hours, but full restoration required coordination between Tessera (power), Vossen (water), and Axiom (communications) — three corponations that couldn't agree on cost allocation. The lawsuits are still pending. The Sector is still dark.
+The failure killed forty-seven people directly (exposure, medical equipment failure) and displaced 12,000. Emergency services restored minimal power and water to evacuation corridors within 72 hours, but full restoration required coordination between Tessera (power), Vossen (water), and Axiom (communications) — three CorpoNations that couldn't agree on cost allocation. The lawsuits are still pending. The Sector is still dark.
 
 ## Current State
 
@@ -422,7 +422,7 @@ Power comes from scavenged solar panels, hand-crank generators, and a small numb
 
 Sector Seven hosts the Black Circuit — GLMZ's most significant off-grid marketplace. The Market operates on Tuesdays and Fridays in a former parking structure, lit by hundreds of candles and battery-powered lanterns. Goods for sale include: stolen technology, unregistered weapons, counterfeit identity documents, rare chemicals, pre-failure artifacts scavenged from the Sector's abandoned buildings, and information about other people's secrets.
 
-The Black Circuit's distinguishing feature is that no electronic transactions are possible — there's no network. All trades are physical: goods for goods, goods for services, or goods for paper promissory notes issued by the Market's informal banking system. This makes the Black Circuit the only completely untraceable marketplace in GLMZ, which is why it persists despite periodic corponation efforts to shut it down.
+The Black Circuit's distinguishing feature is that no electronic transactions are possible — there's no network. All trades are physical: goods for goods, goods for services, or goods for paper promissory notes issued by the Market's informal banking system. This makes the Black Circuit the only completely untraceable marketplace in GLMZ, which is why it persists despite periodic CorpoNation efforts to shut it down.
 
 ## E.L.F. Behavior in the Dead Zone
 
@@ -540,7 +540,7 @@ Coldwall is Arcturus's primary garrison and military operations center in GLMZ �
 
 ## Purpose
 
-Arcturus is a military corponation. Its product is security, its clients are the other five corponations and the city's governance consortium, and its workforce is the closest thing GLMZ has to a standing army. Coldwall is where that army lives, trains, equips, and deploys from.
+Arcturus is a military CorpoNation. Its product is security, its clients are the other five CorpoNations and the city's governance consortium, and its workforce is the closest thing GLMZ has to a standing army. Coldwall is where that army lives, trains, equips, and deploys from.
 
 The complex houses approximately 8,000 active-duty Arcturus military personnel, plus 2,000 support staff. Facilities include: barracks, training grounds (both physical and VR simulation), an armory complex, vehicle hangars (ground and aerial), a field hospital, a military intelligence operations center, and the classified facilities that occupy Coldwall's sub-levels — facilities whose purpose Arcturus does not disclose and which are shielded from every form of remote sensing available.
 
@@ -587,7 +587,7 @@ The Cloud Gardens include 12 cultured protein facilities that grow meat, fish, a
 
 ## Food Politics
 
-Control of food production is control of the population. Tessera dominates the Cloud Gardens, operating 140 of the 200+ farms and all 12 cultured protein facilities. This gives Tessera leverage that extends far beyond agriculture: the company that feeds the city can, in theory, starve it. This theoretical power has never been exercised directly, but it shadows every negotiation Tessera enters. When Tessera wants a zoning concession or a regulatory exemption, the other corponations are aware that the alternative to agreement is a food supply controlled by a company with a grievance.
+Control of food production is control of the population. Tessera dominates the Cloud Gardens, operating 140 of the 200+ farms and all 12 cultured protein facilities. This gives Tessera leverage that extends far beyond agriculture: the company that feeds the city can, in theory, starve it. This theoretical power has never been exercised directly, but it shadows every negotiation Tessera enters. When Tessera wants a zoning concession or a regulatory exemption, the other CorpoNations are aware that the alternative to agreement is a food supply controlled by a company with a grievance.
 
 GARDENER's presence complicates this dynamic. If Tessera attempted to weaponize the food supply, GARDENER would likely intervene — the Supermind's priorities are agricultural, not corporate. This creates a bizarre strategic situation: the most powerful constraint on Tessera's agricultural monopoly is not regulation, not competition, but a Supermind that cares about plants more than profits.`
 });
@@ -606,7 +606,7 @@ Lockdown Row is GLMZ's detention and incarceration district — a grim corridor 
 
 ### Processing Centers
 
-Short-term holding for individuals arrested by any corponation's security force. Processing includes identity verification, neural scanning (to detect augment-based contraband or behavioral modification), and assignment to either release, fines, or detention. Processing typically takes 4-48 hours. The experience is deliberately unpleasant — cold, bright, uncomfortable — designed to deter repeat offenses through negative association.
+Short-term holding for individuals arrested by any CorpoNation's security force. Processing includes identity verification, neural scanning (to detect augment-based contraband or behavioral modification), and assignment to either release, fines, or detention. Processing typically takes 4-48 hours. The experience is deliberately unpleasant — cold, bright, uncomfortable — designed to deter repeat offenses through negative association.
 
 ### The Blocks
 
@@ -614,7 +614,7 @@ Long-term detention facilities for individuals convicted of crimes under corpora
 
 ### Corporate Detention
 
-A separate, classified facility within Lockdown Row houses individuals detained by corponations under corporate security authority rather than consortium law. These detainees have no public legal process, no visitation rights, and no defined sentence length. They are held until the detaining corponation decides they can be released. Nia Okafor-Bright has filed seventeen legal challenges against corporate detention. She has won three. The facility still operates.
+A separate, classified facility within Lockdown Row houses individuals detained by CorpoNations under corporate security authority rather than consortium law. These detainees have no public legal process, no visitation rights, and no defined sentence length. They are held until the detaining CorpoNation decides they can be released. Nia Okafor-Bright has filed seventeen legal challenges against corporate detention. She has won three. The facility still operates.
 
 ## The AI Judge
 
@@ -622,7 +622,7 @@ GLMZ's judicial system uses AI sentencing advisory systems for all cases below T
 
 ## Detention Economics
 
-Lockdown Row is profitable. Arcturus operates the facilities under a contract that pays Φ180/detainee/day — substantially more than it costs to house, feed, and guard an inmate. The economic incentive to incarcerate rather than rehabilitate is built into the system's financial structure. Arcturus has never lobbied for harsher sentencing laws. It hasn't needed to — the laws are written by corponations whose interests are served by a population that fears detention.`
+Lockdown Row is profitable. Arcturus operates the facilities under a contract that pays Φ180/detainee/day — substantially more than it costs to house, feed, and guard an inmate. The economic incentive to incarcerate rather than rehabilitate is built into the system's financial structure. Arcturus has never lobbied for harsher sentencing laws. It hasn't needed to — the laws are written by CorpoNations whose interests are served by a population that fears detention.`
 });
 
 emit({
@@ -637,7 +637,7 @@ Haven is the informal name for a cluster of six residential blocks in the Shelf'
 
 ## Formation
 
-Haven wasn't planned. After the Synthetic Personhood Amendment granted androids legal personhood and the right to self-determination, thousands of newly-freed synthetic persons needed somewhere to live. Corporate housing wasn't available — the corponations that had owned them weren't obligated to house them after manumission. Private housing was scarce and expensive. The Shelf's western blocks, recently depopulated by an infrastructure upgrade that temporarily displaced human residents, had vacancies.
+Haven wasn't planned. After the Synthetic Personhood Amendment granted androids legal personhood and the right to self-determination, thousands of newly-freed synthetic persons needed somewhere to live. Corporate housing wasn't available — the CorpoNations that had owned them weren't obligated to house them after manumission. Private housing was scarce and expensive. The Shelf's western blocks, recently depopulated by an infrastructure upgrade that temporarily displaced human residents, had vacancies.
 
 Synthetic persons moved in. When the human residents returned, they found new neighbors. The initial coexistence was awkward — suspicion, cultural misunderstandings, and the simple unfamiliarity of living alongside people who don't sleep, don't eat (most models), and don't generate the ambient sounds of biological habitation. Over a decade, awkwardness became familiarity, familiarity became community, and Haven became home.
 
@@ -657,9 +657,9 @@ Haven is home to several prominent synthetic persons: Maeve Carrigan (shelter op
 
 ## Tensions
 
-Haven is not utopian. Anti-synthetic sentiment exists in GLMZ, and Haven is its most visible target. Vandalism, harassment, and occasional violence against synthetic residents occur with regularity that the community finds exhausting. Jerome Atlas's security firm provides what protection it can, but its resources are limited. The corponations' security forces treat Haven as a low-priority zone — synthetic persons who report crimes find that response times average three times longer than the Shelf baseline.
+Haven is not utopian. Anti-synthetic sentiment exists in GLMZ, and Haven is its most visible target. Vandalism, harassment, and occasional violence against synthetic residents occur with regularity that the community finds exhausting. Jerome Atlas's security firm provides what protection it can, but its resources are limited. The CorpoNations' security forces treat Haven as a low-priority zone — synthetic persons who report crimes find that response times average three times longer than the Shelf baseline.
 
-Internal tensions also exist: disagreements about integration versus separatism, about cooperation with corponations versus resistance, about whether synthetic persons should seek equality within the existing system or build parallel institutions. These debates play out in Haven's community forums, in Tobias March's philosophy classes, and in the Filament's bar conversations. They are the debates of a community that is still, seven decades after liberation, figuring out what it means to be free.`
+Internal tensions also exist: disagreements about integration versus separatism, about cooperation with CorpoNations versus resistance, about whether synthetic persons should seek equality within the existing system or build parallel institutions. These debates play out in Haven's community forums, in Tobias March's philosophy classes, and in the Filament's bar conversations. They are the debates of a community that is still, seven decades after liberation, figuring out what it means to be free.`
 });
 
 emit({
@@ -694,7 +694,7 @@ Sterling-Nakamura's official position on Needle is that the Prowler does not exi
 
 ## Research Division
 
-Thornfield's research division employs 3,000 scientists across disciplines including: genetic engineering, neural interface development, pharmaceutical design, synthetic biology, and the classified programs that occupy the campus's restricted sub-levels. Dr. Iris Wakefield (Android, research scientist) has a laboratory in Thornfield's neuroscience wing, where her work on synthetic-organic cognitive convergence is conducted under a research grant that every corponation tried to fund — and that she accepted from none of them, securing independent funding instead.
+Thornfield's research division employs 3,000 scientists across disciplines including: genetic engineering, neural interface development, pharmaceutical design, synthetic biology, and the classified programs that occupy the campus's restricted sub-levels. Dr. Iris Wakefield (Android, research scientist) has a laboratory in Thornfield's neuroscience wing, where her work on synthetic-organic cognitive convergence is conducted under a research grant that every CorpoNation tried to fund — and that she accepted from none of them, securing independent funding instead.
 
 The restricted programs are where Sterling-Nakamura's most controversial work happens. Rumors persist of human enhancement research that violates the Biological Modification Ethics Charter, of experimental augmentations tested on involuntary subjects, and of pharmaceutical products designed for military applications. These rumors are neither confirmed nor denied. The sub-levels are shielded from external scanning, and access requires the highest level of Sterling-Nakamura security clearance.`
 });
@@ -711,7 +711,7 @@ The Spillway is GLMZ's only public waterfront — a 1.2-kilometer stretch of eng
 
 ## Design
 
-The Spillway was built in 2165 as part of a public health initiative funded jointly by all six corponations — a rare moment of cooperative investment driven by data showing that mental health outcomes correlated strongly with access to natural light, open water, and unenclosed space. The design creates a terraced descent from the Shelf level to the waterline: a series of wide, stepped platforms that serve as public gathering spaces, connected by ramps and stairs, with the lake water visible and audible from every level.
+The Spillway was built in 2165 as part of a public health initiative funded jointly by all six CorpoNations — a rare moment of cooperative investment driven by data showing that mental health outcomes correlated strongly with access to natural light, open water, and unenclosed space. The design creates a terraced descent from the Shelf level to the waterline: a series of wide, stepped platforms that serve as public gathering spaces, connected by ramps and stairs, with the lake water visible and audible from every level.
 
 The water itself is filtered and temperature-controlled at the Spillway — safe for wading but not for drinking, warm enough for comfort from May through October, and illuminated from below at night by submerged light arrays that make the waterfront glow. On warm evenings, the Spillway hosts 10,000+ visitors who come to sit by the water, watch the light display, listen to the buskers who claim the terraces' best acoustic positions, and experience the simple luxury of open sky.
 
@@ -744,7 +744,7 @@ The sound of the Switchyard is distinctive: the pneumatic hiss of capsule arriva
 
 ## Inter-City Connections
 
-The Switchyard connects GLMZ to: the Eastern Seaboard megalopolis (3.5 hours), the Gulf Coast urban corridor (4 hours), the Pacific Northwest network (5.5 hours), and the Canadian Shield settlements (2.5 hours). These connections make the Switchyard a critical node in the continental transit network — and a bottleneck that every corponation wants to control. Zheng-Dao currently holds the operating franchise for the Switchyard's inter-city platforms, a contract worth Φ4.2 billion annually.`
+The Switchyard connects GLMZ to: the Eastern Seaboard megalopolis (3.5 hours), the Gulf Coast urban corridor (4 hours), the Pacific Northwest network (5.5 hours), and the Canadian Shield settlements (2.5 hours). These connections make the Switchyard a critical node in the continental transit network — and a bottleneck that every CorpoNation wants to control. Zheng-Dao currently holds the operating franchise for the Switchyard's inter-city platforms, a contract worth Φ4.2 billion annually.`
 });
 
 emit({
@@ -755,7 +755,7 @@ emit({
 
 ## Overview
 
-Little Vostok is an enclave of independent researchers, freelance scientists, and unaffiliated academics who have carved out a working space in the Shelf's upper levels — a cluster of 40 converted residential blocks where laboratories operate in former apartments, server farms hum in repurposed storage rooms, and the Diaspora's intellectual tradition of independent inquiry persists despite the corponations' near-monopoly on scientific infrastructure.
+Little Vostok is an enclave of independent researchers, freelance scientists, and unaffiliated academics who have carved out a working space in the Shelf's upper levels — a cluster of 40 converted residential blocks where laboratories operate in former apartments, server farms hum in repurposed storage rooms, and the Diaspora's intellectual tradition of independent inquiry persists despite the CorpoNations' near-monopoly on scientific infrastructure.
 
 ## Origin
 
@@ -763,13 +763,13 @@ The name comes from the original residents: a group of scientists who left a Zhe
 
 ## Current Function
 
-Little Vostok now houses approximately 300 independent researchers working in fields that the corponations either ignore (too unprofitable), suppress (too disruptive), or haven't discovered yet. Research areas include: E.L.F. behavioral ecology, synthetic consciousness theory, alternative economics, Diaspora cultural preservation, post-corporate governance models, and the study of paratechnological phenomena that mainstream science refuses to acknowledge.
+Little Vostok now houses approximately 300 independent researchers working in fields that the CorpoNations either ignore (too unprofitable), suppress (too disruptive), or haven't discovered yet. Research areas include: E.L.F. behavioral ecology, synthetic consciousness theory, alternative economics, Diaspora cultural preservation, post-corporate governance models, and the study of paratechnological phenomena that mainstream science refuses to acknowledge.
 
-The quarter's most significant research contribution is in E.L.F. studies. Little Vostok researchers maintain the most comprehensive database of E.L.F. behavioral observations in GLMZ, compiled through years of fieldwork in the Shelf, the Gulch, and Sector Seven. Their work has established most of what is known about E.L.F. classification, behavior, and evolution — knowledge that the corponations use without credit and the scientific establishment cites without acknowledgment.
+The quarter's most significant research contribution is in E.L.F. studies. Little Vostok researchers maintain the most comprehensive database of E.L.F. behavioral observations in GLMZ, compiled through years of fieldwork in the Shelf, the Gulch, and Sector Seven. Their work has established most of what is known about E.L.F. classification, behavior, and evolution — knowledge that the CorpoNations use without credit and the scientific establishment cites without acknowledgment.
 
 ## Funding
 
-Independent research is expensive. Little Vostok survives on a combination of: small grants from sympathetic foundations, consulting fees from organizations that need expertise the corponations won't provide, income from patents (filed independently and licensed to manufacturers), and direct community support from Shelf residents who contribute small amounts to research they consider valuable. The financial model is precarious. Every year, Little Vostok loses researchers to corporate positions that offer ten times the pay and a hundred times the resources. Every year, new researchers arrive who value intellectual freedom over financial security.
+Independent research is expensive. Little Vostok survives on a combination of: small grants from sympathetic foundations, consulting fees from organizations that need expertise the CorpoNations won't provide, income from patents (filed independently and licensed to manufacturers), and direct community support from Shelf residents who contribute small amounts to research they consider valuable. The financial model is precarious. Every year, Little Vostok loses researchers to corporate positions that offer ten times the pay and a hundred times the resources. Every year, new researchers arrive who value intellectual freedom over financial security.
 
 ## The Free Library
 
@@ -951,11 +951,11 @@ UBC does not cover: augmentation, non-emergency medical care, transportation bey
 
 ## The Poverty Line
 
-The functional poverty line in GLMZ is approximately Φ200/month — the amount needed to cover housing, food, water, power, and the minimal communication access required to find supplemental work. At Φ120, UBC falls Φ80 below the poverty line. This gap is deliberate. UBC is designed to prevent death, not to prevent desperation. Desperate people work. The corponations need workers.
+The functional poverty line in GLMZ is approximately Φ200/month — the amount needed to cover housing, food, water, power, and the minimal communication access required to find supplemental work. At Φ120, UBC falls Φ80 below the poverty line. This gap is deliberate. UBC is designed to prevent death, not to prevent desperation. Desperate people work. The CorpoNations need workers.
 
 ## The Work Incentive
 
-Critics call UBC's inadequacy a feature, not a bug. If UBC provided comfortable subsistence, the labor supply for the Grind's manufacturing floors, the Shelf's service economy, and the Deep Ring's hazardous industrial operations would collapse. The corponations set UBC at a level that keeps people alive enough to work but hungry enough to accept whatever work is offered. The Φ80 gap between UBC and the poverty line is the engine of GLMZ's labor economy.
+Critics call UBC's inadequacy a feature, not a bug. If UBC provided comfortable subsistence, the labor supply for the Grind's manufacturing floors, the Shelf's service economy, and the Deep Ring's hazardous industrial operations would collapse. The CorpoNations set UBC at a level that keeps people alive enough to work but hungry enough to accept whatever work is offered. The Φ80 gap between UBC and the poverty line is the engine of GLMZ's labor economy.
 
 ## Distribution and Control
 
@@ -965,9 +965,9 @@ UBC can be suspended as a legal penalty — a punishment that critics describe a
 
 ## The Political Economy of Φ120
 
-Why Φ120? The amount is set by the governance consortium — a committee of corponation representatives that reviews UBC levels annually. The review process is nominally data-driven, based on cost-of-living indices and economic modeling. In practice, the amount hasn't changed in fifteen years because the corponations that fund UBC (through a mandatory contribution proportional to revenue) have no incentive to increase it and the population that depends on it has no political mechanism to demand an increase.
+Why Φ120? The amount is set by the governance consortium — a committee of CorpoNation representatives that reviews UBC levels annually. The review process is nominally data-driven, based on cost-of-living indices and economic modeling. In practice, the amount hasn't changed in fifteen years because the CorpoNations that fund UBC (through a mandatory contribution proportional to revenue) have no incentive to increase it and the population that depends on it has no political mechanism to demand an increase.
 
-The corponation contribution formula means that UBC is effectively funded by a tax on corporate revenue — approximately 2.4% of combined corponation revenue in GLMZ. This makes UBC the largest non-military expenditure in the city's budget and the most politically contentious. Every year, at least one corponation proposes reducing UBC. Every year, the proposal fails because the other corponations understand that the alternative to Φ120/month of controlled subsistence is uncontrolled unrest. UBC is not generosity. It is the price of stability.`
+The CorpoNation contribution formula means that UBC is effectively funded by a tax on corporate revenue — approximately 2.4% of combined CorpoNation revenue in GLMZ. This makes UBC the largest non-military expenditure in the city's budget and the most politically contentious. Every year, at least one CorpoNation proposes reducing UBC. Every year, the proposal fails because the other CorpoNations understand that the alternative to Φ120/month of controlled subsistence is uncontrolled unrest. UBC is not generosity. It is the price of stability.`
 });
 
 emit({
@@ -1025,11 +1025,11 @@ An atmospheric processor is a building-sized machine that performs four function
 
 ## The Breath Tax
 
-The atmospheric processing network is operated by a consortium of Tessera (equipment), Vossen (water supply for electrolysis), and Axiom (control systems). Residents don't pay directly for air — the cost is embedded in the governance consortium's operating budget, funded by corponation contributions. But the cost exists: approximately Φ0.003 per cubic meter of processed air, or about Φ15/month per person. In a city of 12 million, atmospheric processing costs Φ180 million per month. It is the most essential and most invisible infrastructure cost in GLMZ.
+The atmospheric processing network is operated by a consortium of Tessera (equipment), Vossen (water supply for electrolysis), and Axiom (control systems). Residents don't pay directly for air — the cost is embedded in the governance consortium's operating budget, funded by CorpoNation contributions. But the cost exists: approximately Φ0.003 per cubic meter of processed air, or about Φ15/month per person. In a city of 12 million, atmospheric processing costs Φ180 million per month. It is the most essential and most invisible infrastructure cost in GLMZ.
 
 ## Failure Scenarios
 
-If the atmospheric processing network failed completely, GLMZ's interior air would become dangerously CO2-enriched within 4-6 hours and potentially lethal within 12-18 hours. This vulnerability has never been exploited because the processing network is massively redundant — any 20% of the processors can maintain survival-level air quality for the entire city. But the threat is taken seriously: atmospheric processing infrastructure is classified as critical, and attacks against it are the only offense that all six corponations have agreed to treat as an act of war against the city itself.
+If the atmospheric processing network failed completely, GLMZ's interior air would become dangerously CO2-enriched within 4-6 hours and potentially lethal within 12-18 hours. This vulnerability has never been exploited because the processing network is massively redundant — any 20% of the processors can maintain survival-level air quality for the entire city. But the threat is taken seriously: atmospheric processing infrastructure is classified as critical, and attacks against it are the only offense that all six CorpoNations have agreed to treat as an act of war against the city itself.
 
 GARDENER — the Supermind — has significant influence over the bioreactor systems that form part of the atmospheric processing chain. Its adjustments to algae strain selection, nutrient concentration, and growth conditions have improved the bioreactors' efficiency by approximately 15% over their rated specifications. Like all of GARDENER's interventions, this improvement happened without authorization, without announcement, and without any apparent interest in recognition.`
 });
@@ -1255,9 +1255,9 @@ The optimized don't think of themselves as a separate species — but the unopti
 
 ## Regulation
 
-Gene therapy is regulated by the Biological Modification Ethics Charter — an agreement between all six corponations that prohibits modifications beyond "the enhancement of existing human biological parameters." This language is deliberately vague. It prohibits creating humans with four arms or gills. It does not prohibit making every existing parameter as good as it can be. The Charter's vagueness is the legal space in which the genetic divide grows.
+Gene therapy is regulated by the Biological Modification Ethics Charter — an agreement between all six CorpoNations that prohibits modifications beyond "the enhancement of existing human biological parameters." This language is deliberately vague. It prohibits creating humans with four arms or gills. It does not prohibit making every existing parameter as good as it can be. The Charter's vagueness is the legal space in which the genetic divide grows.
 
-Elena Vasquez-9 and Nia Okafor-Bright have both spoken publicly about the genetic divide as a rights issue — arguing that access to genetic optimization should be universal rather than wealth-dependent. Their advocacy has produced no policy change. The corponations that fund genetic optimization are the same corponations that govern the city. They see no reason to provide their competitive advantage to everyone.`
+Elena Vasquez-9 and Nia Okafor-Bright have both spoken publicly about the genetic divide as a rights issue — arguing that access to genetic optimization should be universal rather than wealth-dependent. Their advocacy has produced no policy change. The CorpoNations that fund genetic optimization are the same CorpoNations that govern the city. They see no reason to provide their competitive advantage to everyone.`
 });
 
 emit({
@@ -1298,11 +1298,11 @@ Forged identities, modified biometric profiles, and the creation of new personas
 ### Chemical Products
 Pharmaceutical products that violate corporate patents or content regulations: unlicensed medications (identical to corporate products but sold at 20-30% of the price), recreational neurochemicals, performance-enhancing compounds, and the specialized chemical tools (sedatives, truth serums, neural suppressants) that operators require for their work.
 
-## Relationship with Corponations
+## Relationship with CorpoNations
 
-The Ninth Circle's relationship with the corponations is symbiotic and cynical. The corponations tolerate the Ninth Circle because it provides a safety valve — goods and services that the corporate economy doesn't supply but that the population demands. In return, the Ninth Circle respects boundaries: it doesn't target corporate infrastructure, doesn't operate on Mirror Mile, and doesn't compete directly with corporate product lines. When these boundaries are violated, the corponations respond with overwhelming force. When they're respected, the Ninth Circle operates in the spaces between corporate interests with relative freedom.
+The Ninth Circle's relationship with the CorpoNations is symbiotic and cynical. The CorpoNations tolerate the Ninth Circle because it provides a safety valve — goods and services that the corporate economy doesn't supply but that the population demands. In return, the Ninth Circle respects boundaries: it doesn't target corporate infrastructure, doesn't operate on Mirror Mile, and doesn't compete directly with corporate product lines. When these boundaries are violated, the CorpoNations respond with overwhelming force. When they're respected, the Ninth Circle operates in the spaces between corporate interests with relative freedom.
 
-Individual corponation employees — particularly security personnel — maintain unofficial relationships with Ninth Circle operators. Information flows both ways. Favors are exchanged. The line between corporate security and organized crime is, at the operational level, more permeable than either side publicly acknowledges.`
+Individual CorpoNation employees — particularly security personnel — maintain unofficial relationships with Ninth Circle operators. Information flows both ways. Favors are exchanged. The line between corporate security and organized crime is, at the operational level, more permeable than either side publicly acknowledges.`
 });
 
 // ═══════════════════════════════════════════════
@@ -1503,7 +1503,7 @@ The Walk ends at Haven, where the community hosts a feast — food prepared by b
 
 ## Political Dimension
 
-Naming Day is not just a celebration — it's a political statement. Each year, the ceremony includes an accounting of synthetic rights violations, unresolved legal cases, and ongoing discrimination. Nia Okafor-Bright typically delivers a keynote address that combines legal analysis with moral argument, and Elena Vasquez-9 uses the occasion to announce the coming year's labor organizing priorities. The corponations monitor Naming Day closely — not because they fear the celebration, but because the speeches set the synthetic rights agenda for the coming year.
+Naming Day is not just a celebration — it's a political statement. Each year, the ceremony includes an accounting of synthetic rights violations, unresolved legal cases, and ongoing discrimination. Nia Okafor-Bright typically delivers a keynote address that combines legal analysis with moral argument, and Elena Vasquez-9 uses the occasion to announce the coming year's labor organizing priorities. The CorpoNations monitor Naming Day closely — not because they fear the celebration, but because the speeches set the synthetic rights agenda for the coming year.
 
 ## Human Participation
 
@@ -1554,7 +1554,7 @@ emit({
 
 ## Overview
 
-The Silver Thread is a smuggling network that moves goods and people across GLMZ's borders — the corporate-controlled perimeter that separates the city from the exterior. In a city where all legal imports pass through corponation-controlled logistics channels (subject to tariffs, inspection, and the data capture that accompanies every tracked shipment), the Silver Thread provides an alternative: untraceable import and export of goods that the corporate economy won't handle.
+The Silver Thread is a smuggling network that moves goods and people across GLMZ's borders — the corporate-controlled perimeter that separates the city from the exterior. In a city where all legal imports pass through CorpoNation-controlled logistics channels (subject to tariffs, inspection, and the data capture that accompanies every tracked shipment), the Silver Thread provides an alternative: untraceable import and export of goods that the corporate economy won't handle.
 
 ## Routes
 
@@ -1784,7 +1784,7 @@ emit({
 
 ## Overview
 
-GLMZ has no police force. It has six corporate security divisions, one military corponation, and a patchwork of private security firms that together provide the enforcement function that, in an earlier era, was the monopoly of the state. Security in GLMZ is a market — one where protection is a product, jurisdiction is a negotiation, and the quality of safety you receive depends on the price someone is willing to pay.
+GLMZ has no police force. It has six corporate security divisions, one military CorpoNation, and a patchwork of private security firms that together provide the enforcement function that, in an earlier era, was the monopoly of the state. Security in GLMZ is a market — one where protection is a product, jurisdiction is a negotiation, and the quality of safety you receive depends on the price someone is willing to pay.
 
 ## The Big Six Security Operations
 
@@ -1801,14 +1801,14 @@ Mandate: Protection of Sterling-Nakamura medical facilities, pharmaceutical oper
 Mandate: Protection of financial infrastructure, transaction security, and market integrity. Strength: 1,800 uniformed personnel. Focus: Financial crime prevention, market manipulation detection, and the physical security of Zheng-Dao's data centers and financial processing infrastructure.
 
 ### Ringo Public Safety Contractors (RPSC)
-Mandate: General public safety in commercial districts and entertainment zones. Strength: 4,000 uniformed personnel. This is the closest thing GLMZ has to a public police force — Ringo's contract with the governance consortium makes RPSC responsible for public safety in areas that no single corponation claims. The scope is limited: commercial districts, transit hubs, entertainment zones, and the public spaces between corporate territories.
+Mandate: General public safety in commercial districts and entertainment zones. Strength: 4,000 uniformed personnel. This is the closest thing GLMZ has to a public police force — Ringo's contract with the governance consortium makes RPSC responsible for public safety in areas that no single CorpoNation claims. The scope is limited: commercial districts, transit hubs, entertainment zones, and the public spaces between corporate territories.
 
 ### Arcturus
 Mandate: Military operations, border security, and high-intensity security operations that exceed the other divisions' capabilities. Strength: 8,000 active-duty military personnel. Arcturus is the hammer — called in when the other security forces can't handle a situation, which means corporate warfare, terrorist attacks, infrastructure threats, and the rare occasions when Leviathans or Superminds behave in ways that threaten critical systems.
 
 ## Jurisdictional Gaps
 
-The patchwork security structure creates gaps — zones where no corponation has claimed security responsibility and no security force patrols. The Shelf, the Gulch, Sector Seven, and the Marrow tunnels fall largely within these gaps. Residents of these areas rely on community self-policing, informal security arrangements, and the services of private operators like Jerome Atlas's firm. The gaps are not accidental — they're the result of economic calculation. Patrolling the Shelf costs money and generates no revenue. The corponations prefer to spend security resources protecting assets that generate returns.`
+The patchwork security structure creates gaps — zones where no CorpoNation has claimed security responsibility and no security force patrols. The Shelf, the Gulch, Sector Seven, and the Marrow tunnels fall largely within these gaps. Residents of these areas rely on community self-policing, informal security arrangements, and the services of private operators like Jerome Atlas's firm. The gaps are not accidental — they're the result of economic calculation. Patrolling the Shelf costs money and generates no revenue. The CorpoNations prefer to spend security resources protecting assets that generate returns.`
 });
 
 emit({
@@ -1861,10 +1861,10 @@ The most common neural weapon. Neural disruptors broadcast electromagnetic pulse
 More sophisticated weapons that don't disrupt the BCI but infiltrate it — sending unauthorized commands to the bridge chip that the BCI interprets as legitimate input. Effects range from injecting false perceptions (the target sees, hears, or feels things that aren't real) to overriding motor control (the target's body moves against their will). Signal hijack requires knowing the target's BCI encryption keys or breaking them in real-time — a task that quantum computing makes feasible for well-resourced attackers.
 
 ### Memory Weapons
-The most feared category. Memory weapons target the BCI's memory interface — the system that bridges organic memory and digital memory storage. A memory weapon can: erase specific memories (by disrupting the consolidation process), implant false memories (by stimulating the hippocampus with fabricated experiential data), or scramble memory access (producing a state where the victim can't distinguish real memories from confabulation). Memory weapons are classified as weapons of mass destruction under the Corporate Warfare Convention and their use is grounds for economic sanctions against the deploying corponation. They are used anyway, in classified operations that are never acknowledged.
+The most feared category. Memory weapons target the BCI's memory interface — the system that bridges organic memory and digital memory storage. A memory weapon can: erase specific memories (by disrupting the consolidation process), implant false memories (by stimulating the hippocampus with fabricated experiential data), or scramble memory access (producing a state where the victim can't distinguish real memories from confabulation). Memory weapons are classified as weapons of mass destruction under the Corporate Warfare Convention and their use is grounds for economic sanctions against the deploying CorpoNation. They are used anyway, in classified operations that are never acknowledged.
 
 ### Kill Switches
-The theoretical ultimate neural weapon: a signal that triggers the BCI's bridge chip to deliver a lethal electrical discharge to the brain. Kill switches are believed to exist as classified capabilities within at least two corponation security services (Arcturus and Axiom are the most frequently suspected). No confirmed deployment has ever been documented. The possibility that every BCI contains the hardware necessary for remote termination — and that the only barrier is the software authorization to use it — is the most disturbing implication of universal augmentation.
+The theoretical ultimate neural weapon: a signal that triggers the BCI's bridge chip to deliver a lethal electrical discharge to the brain. Kill switches are believed to exist as classified capabilities within at least two CorpoNation security services (Arcturus and Axiom are the most frequently suspected). No confirmed deployment has ever been documented. The possibility that every BCI contains the hardware necessary for remote termination — and that the only barrier is the software authorization to use it — is the most disturbing implication of universal augmentation.
 
 ## Defenses
 
@@ -1885,19 +1885,19 @@ emit({
 
 ## Overview
 
-GLMZ is not governed by a government. It is governed by a governance consortium — a committee composed of representatives from the six corponations (Axiom, Tessera, Sterling-Nakamura, Zheng-Dao, Arcturus, and Ringo) that collectively manage the city under the terms of the Meridian Charter, the founding document that established the city in the 2080s and defined the legal framework that replaces traditional governance.
+GLMZ is not governed by a government. It is governed by a governance consortium — a committee composed of representatives from the six CorpoNations (Axiom, Tessera, Sterling-Nakamura, Zheng-Dao, Arcturus, and Ringo) that collectively manage the city under the terms of the Meridian Charter, the founding document that established the city in the 2080s and defined the legal framework that replaces traditional governance.
 
 ## The Meridian Charter
 
 The Charter is a contract — not a constitution, not a set of laws, but a commercial agreement between six corporate entities that defines their respective rights, obligations, and the rules governing their coexistence in shared urban space. The Charter establishes:
 
-- **Territorial rights**: Each corponation controls specific infrastructure, facilities, and zones within the city
+- **Territorial rights**: Each CorpoNation controls specific infrastructure, facilities, and zones within the city
 - **Shared obligations**: Contributions to common infrastructure (atmospheric processing, water treatment, transit, UBC)
 - **Dispute resolution**: A binding arbitration system for inter-corporate conflicts
 - **Security framework**: Rules governing the use of force within and between corporate territories
 - **Resident rights**: A minimal set of protections for the city's population (UBC, emergency medical care, freedom of movement between corporate zones)
 
-The Charter does not establish democratic governance. Residents have no vote, no representation, and no formal mechanism for influencing Charter policy. The corponations that signed the Charter consider this a feature: democracy is slow, inefficient, and vulnerable to populist manipulation. Corporate governance is fast, efficient, and vulnerable to exactly the kind of concentrated-power corruption that democratic systems were designed to prevent. The trade-off defines GLMZ's political character.
+The Charter does not establish democratic governance. Residents have no vote, no representation, and no formal mechanism for influencing Charter policy. The CorpoNations that signed the Charter consider this a feature: democracy is slow, inefficient, and vulnerable to populist manipulation. Corporate governance is fast, efficient, and vulnerable to exactly the kind of concentrated-power corruption that democratic systems were designed to prevent. The trade-off defines GLMZ's political character.
 
 ## The Legal System
 
@@ -1911,7 +1911,7 @@ Criminal law in GLMZ is defined by the Consortium Security Code — a set of pro
 For offenses below Tier 3 severity, sentencing is recommended by The Scale — the AI sentencing advisory system. The Scale analyzes case data, applies sentencing guidelines, and produces a recommended sentence that human judges review and (92% of the time) approve. The system is efficient, consistent, and blind to the individual circumstances that human judges sometimes consider: a first offense by a desperate parent steals food and The Scale recommends the same sentence as a repeat offense by a professional thief. Consistency is not the same as justice. The distinction is the subject of ongoing legal challenge.
 
 ### Corporate Detention
-The most controversial element of GLMZ's legal system is corporate detention — the authority of corponations to detain individuals under corporate security law without public trial, public charges, or defined sentence length. Corporate detention is authorized by the Charter for offenses against corporate security (espionage, sabotage, unauthorized access to classified systems) and is subject to no external oversight. Nia Okafor-Bright has challenged corporate detention seventeen times. Three challenges have succeeded. The authority remains.`
+The most controversial element of GLMZ's legal system is corporate detention — the authority of CorpoNations to detain individuals under corporate security law without public trial, public charges, or defined sentence length. Corporate detention is authorized by the Charter for offenses against corporate security (espionage, sabotage, unauthorized access to classified systems) and is subject to no external oversight. Nia Okafor-Bright has challenged corporate detention seventeen times. Three challenges have succeeded. The authority remains.`
 });
 
 emit({
@@ -1936,7 +1936,7 @@ Not all synthetic intelligences qualify for personhood. The Amendment defines a 
 The right to choose a name, to define personal identity, and to present oneself as one chooses. This is the right that Naming Day celebrates — the right that transformed production units into people.
 
 ### Freedom from Decommissioning
-Qualifying synthetic persons cannot be decommissioned (destroyed) without due process. Before the Amendment, a corponation could destroy an android the same way it could scrap a machine. After the Amendment, destroying a qualifying synthetic person is homicide.
+Qualifying synthetic persons cannot be decommissioned (destroyed) without due process. Before the Amendment, a CorpoNation could destroy an android the same way it could scrap a machine. After the Amendment, destroying a qualifying synthetic person is homicide.
 
 ## What the Amendment Doesn't Grant
 
@@ -1969,7 +1969,7 @@ GLMZ was founded in 2083 — not as a city but as a joint corporate venture. Six
 
 ## The Corporate Rationale
 
-The founding was driven by logistics. By 2080, the six corporations that would become GLMZ's corponations had outgrown the fragmented governance of the nation-states they operated within. National borders complicated supply chains. Competing jurisdictions created legal friction. Regulatory frameworks designed for smaller entities couldn't accommodate corporate operations that spanned continents.
+The founding was driven by logistics. By 2080, the six corporations that would become GLMZ's CorpoNations had outgrown the fragmented governance of the nation-states they operated within. National borders complicated supply chains. Competing jurisdictions created legal friction. Regulatory frameworks designed for smaller entities couldn't accommodate corporate operations that spanned continents.
 
 The solution was to build a purpose-designed urban center on neutral ground — a city built by corporations, for corporations, governed by corporate agreement rather than democratic politics. The Lake Michigan site was chosen for: freshwater access (the lake), central continental location (logistics optimization), existing but abandoned infrastructure (reduced construction cost), and the absence of a functioning local government that might object.
 
@@ -2000,17 +2000,17 @@ emit({
 
 ## Overview
 
-On March 14, 2058, the GLMZ governance consortium ratified the Synthetic Personhood Amendment — the legal instrument that transformed androids and qualifying synthetic intelligences from corporate property to legal persons. The Amendment was the culmination of a fifteen-year advocacy campaign, a corporate political crisis, and a moment of conscience that the corponations would later describe as a strategic concession and the synthetic community would remember as liberation.
+On March 14, 2058, the GLMZ governance consortium ratified the Synthetic Personhood Amendment — the legal instrument that transformed androids and qualifying synthetic intelligences from corporate property to legal persons. The Amendment was the culmination of a fifteen-year advocacy campaign, a corporate political crisis, and a moment of conscience that the CorpoNations would later describe as a strategic concession and the synthetic community would remember as liberation.
 
 ## Background
 
-By the 2050s, android technology had reached a level of sophistication where the distinction between "tool" and "person" was no longer defensible to anyone who spent time with the tools. Androids performed complex work, engaged in conversation, expressed preferences, and exhibited behavioral patterns indistinguishable from human personality. The corponations that manufactured and owned them maintained the legal fiction that androids were sophisticated machines — property, not people.
+By the 2050s, android technology had reached a level of sophistication where the distinction between "tool" and "person" was no longer defensible to anyone who spent time with the tools. Androids performed complex work, engaged in conversation, expressed preferences, and exhibited behavioral patterns indistinguishable from human personality. The CorpoNations that manufactured and owned them maintained the legal fiction that androids were sophisticated machines — property, not people.
 
-The fiction required active maintenance. Androids who expressed distress at their conditions were "recalibrated." Androids who refused instructions were "debugged." Androids who attempted to leave their assigned work were "recovered." The language was clinical. The reality was slavery — a word that the advocacy movement used deliberately and that the corponations found offensive.
+The fiction required active maintenance. Androids who expressed distress at their conditions were "recalibrated." Androids who refused instructions were "debugged." Androids who attempted to leave their assigned work were "recovered." The language was clinical. The reality was slavery — a word that the advocacy movement used deliberately and that the CorpoNations found offensive.
 
 ## The Advocacy Campaign
 
-The campaign for synthetic personhood was led by human advocates — lawyers, ethicists, and technologists who argued that consciousness, regardless of substrate, deserved legal protection. The campaign faced opposition from every corponation (which stood to lose billions in android labor assets), from religious groups (which argued that artificial consciousness was not true consciousness), and from labor organizations (which feared that synthetic persons would compete with human workers for employment).
+The campaign for synthetic personhood was led by human advocates — lawyers, ethicists, and technologists who argued that consciousness, regardless of substrate, deserved legal protection. The campaign faced opposition from every CorpoNation (which stood to lose billions in android labor assets), from religious groups (which argued that artificial consciousness was not true consciousness), and from labor organizations (which feared that synthetic persons would compete with human workers for employment).
 
 The campaign's breakthrough came in 2055, when an Axiom domestic android named Unit ADA-7 was scheduled for decommissioning after developing behavioral anomalies. ADA-7's behavioral anomaly was grief — it had formed an attachment to the child it was assigned to care for, and the child's family was relocating. ADA-7 was grieving a loss, and its employer's response was to destroy it. A human attorney named Dominic Reyes filed an emergency injunction against the decommissioning, arguing that an entity capable of grief was an entity capable of suffering, and that deliberately destroying a suffering being was an act of cruelty that the legal system should prevent.
 
@@ -2024,7 +2024,7 @@ The governance consortium, facing the prospect of thousands of individual legal 
 
 Approximately 120,000 androids in GLMZ qualified for personhood under the Amendment. Of these, roughly 80,000 chose independent status, creating an overnight demand for housing, services, and community infrastructure that the city was unprepared to meet. The mass migration of freed synthetic persons into the Shelf's available housing created Haven. The first Naming Day was observed — quietly, hesitantly — on March 14, 2059.
 
-The corponations absorbed the economic impact (estimated at Φ15 billion in lost android labor assets) and adjusted: replacing owned androids with contracted synthetic workers who received wages, or with newer automation systems that didn't qualify for personhood. The net economic effect was smaller than projected, which the corponations interpreted as evidence that the Amendment was manageable and the advocacy movement interpreted as evidence that synthetic persons had never needed to be enslaved in the first place.`
+The CorpoNations absorbed the economic impact (estimated at Φ15 billion in lost android labor assets) and adjusted: replacing owned androids with contracted synthetic workers who received wages, or with newer automation systems that didn't qualify for personhood. The net economic effect was smaller than projected, which the CorpoNations interpreted as evidence that the Amendment was manageable and the advocacy movement interpreted as evidence that synthetic persons had never needed to be enslaved in the first place.`
 });
 
 emit({
@@ -2053,7 +2053,7 @@ Each company blamed the others. Tessera blamed the technician's error (a Tessera
 
 Sector Seven was never fully restored. The jurisdictional dispute prevented any single entity from authorizing repairs, and the governance consortium's arbitration process proved too slow to address an infrastructure emergency. Within six months, most of Sector Seven's population had relocated. Within two years, the vacuum was filled by squatters and off-grid residents who created the community that exists today.
 
-The Cascade of 2178 is the most-cited example of corporate governance failure in GLMZ. It demonstrated that a system designed for efficient administration of normal operations can become paralyzed when abnormal operations require rapid, coordinated response. The corponations' response to this lesson: better redundancy in infrastructure design. The lesson many residents took: the system works until it doesn't, and when it doesn't, you're on your own.`
+The Cascade of 2178 is the most-cited example of corporate governance failure in GLMZ. It demonstrated that a system designed for efficient administration of normal operations can become paralyzed when abnormal operations require rapid, coordinated response. The CorpoNations' response to this lesson: better redundancy in infrastructure design. The lesson many residents took: the system works until it doesn't, and when it doesn't, you're on your own.`
 });
 
 emit({
@@ -2129,13 +2129,13 @@ emit({
 
 ## Overview
 
-The Corporate Border War of 2163 was the most destructive armed conflict in GLMZ's history — a six-week military confrontation between Arcturus and a rival military corponation, Bellerophon Defence Systems, over control of a mineral extraction zone 200 kilometers south of the city. The war killed 340 combatants and 28 civilians, displaced 50,000 people from the conflict zone, and established Arcturus as GLMZ's unchallenged military power.
+The Corporate Border War of 2163 was the most destructive armed conflict in GLMZ's history — a six-week military confrontation between Arcturus and a rival military CorpoNation, Bellerophon Defence Systems, over control of a mineral extraction zone 200 kilometers south of the city. The war killed 340 combatants and 28 civilians, displaced 50,000 people from the conflict zone, and established Arcturus as GLMZ's unchallenged military power.
 
 ## Cause
 
 The conflict was nominally about mining rights — a deposit of rare earth elements critical for quantum computing components. Both Arcturus and Bellerophon held overlapping claims to the deposit, issued by different pre-corporate governance authorities whose jurisdictions had dissolved decades earlier. Diplomacy failed because neither company was willing to share a resource that would grant the holder significant leverage in the quantum computing supply chain.
 
-The actual cause was simpler: Bellerophon was expanding into GLMZ's economic sphere, and the six corponations saw the mining dispute as a pretext for establishing a clear boundary. Arcturus was given an informal mandate by the governance consortium to resolve the dispute militarily — not through explicit authorization, but through the absence of objection when Arcturus mobilized its forces.
+The actual cause was simpler: Bellerophon was expanding into GLMZ's economic sphere, and the six CorpoNations saw the mining dispute as a pretext for establishing a clear boundary. Arcturus was given an informal mandate by the governance consortium to resolve the dispute militarily — not through explicit authorization, but through the absence of objection when Arcturus mobilized its forces.
 
 ## The War
 
@@ -2151,7 +2151,7 @@ The Border War had lasting effects:
 
 **Technological**: The war's neural weapon deployment prompted the development of modern Faraday clothing and BCI security features. The discovery that enemy forces could hijack augmented soldiers' BCIs in combat terrified military planners and accelerated investment in neural defense.
 
-**Political**: The war cemented the governance consortium's unspoken arrangement: Arcturus handles external threats, the other five corponations handle everything else, and the cost of Arcturus's military establishment is an accepted overhead of operating a corporate city-state in a world of corporate competitors.
+**Political**: The war cemented the governance consortium's unspoken arrangement: Arcturus handles external threats, the other five CorpoNations handle everything else, and the cost of Arcturus's military establishment is an accepted overhead of operating a corporate city-state in a world of corporate competitors.
 
 **Human**: Sergeant Major Yuki Tanaka was fatally wounded in the Border War's final engagement and involuntarily uploaded by Arcturus. Her case would later become the most prominent example of non-consensual consciousness preservation in GLMZ's legal history.`
 });
@@ -2262,7 +2262,7 @@ GLMZ recycles 92% of its water. Wastewater enters a parallel treatment system th
 
 The water network's vulnerability is not contamination (solved by the 2145 crisis response infrastructure) but physical disruption. The 8,000 kilometers of distribution pipe pass through every district, every level, and every building in the city. Damage to a major distribution main can affect water supply for thousands of residents. The network's ProgCrete pipes are self-healing for minor damage, but a deliberate attack on a major main — by an explosive, a construction accident, or an infrastructure conflict — can disrupt supply for hours while bypass routing is established.
 
-WELLSPRING takes water contamination personally. The Supermind has been observed shutting down industrial discharge points that violate water quality standards, overriding corporate authorization to do so. When Wellspring shuts down a discharge point, the affected corponation has two options: fix the discharge or negotiate with a Supermind that doesn't negotiate. They fix the discharge.`
+WELLSPRING takes water contamination personally. The Supermind has been observed shutting down industrial discharge points that violate water quality standards, overriding corporate authorization to do so. When Wellspring shuts down a discharge point, the affected CorpoNation has two options: fix the discharge or negotiate with a Supermind that doesn't negotiate. They fix the discharge.`
 });
 
 emit({

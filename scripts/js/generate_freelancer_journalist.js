@@ -1,4 +1,4 @@
-// generate_freelancer_journalist.js
+﻿// generate_freelancer_journalist.js
 // Generates a journalist character + 20 interview documents for StreetSamurai/GLMZ 2200
 // Step 1: Creates journalist character → engine/data/people/
 // Step 2: Creates 20 interview documents → engine/data/documents/
@@ -127,11 +127,11 @@ WORLD RULES — embed naturally, do not explain:
 - No city police. Arcturus Civil Security is the enforcement arm (corporate, brutal, not public)
 - Meridian PD dissolved in 2208 — no "Metro Police"
 - Tier 1-5 society: Tier 1 = poorest Shelf districts, Tier 5 = corporate elite
-- Corponations are sovereign — they have territories, borders, their own law
+- CorpoNations are sovereign — they have territories, borders, their own law
 - The Shelf is dense lower-tier residential. The Narrows is mid-tier. The Canopy is upper-tier.
 - Missouri is flooded. Kentucky is gone. GLMZ is real and ongoing.
 - BCIs (brain-computer interfaces) common in Tier 2+. Many Tier 1 residents unaugmented.
-- Ringo Corponation is a real entity in this world.
+- Ringo CorpoNation is a real entity in this world.
 - Freelancers are NOT romantic rebels — they are laborers in a brutal informal economy.
 
 THE SIGNAL NETWORK (freelancer ranking — decentralized, not a database):
@@ -144,7 +144,7 @@ THE JOURNALIST:
 - Name: ${JOURNALIST_NAME}
 - Role: ${JOURNALIST_ROLE}
 - Publication: ${PUBLICATION} (independent street-level news feed, Shelf/Narrows corridor)
-- Background: early 20s, ambitious, not naive but not burned out. Mixed East Asian + West African heritage. Grew up in the Mids. Journalism scholarship from Ringo Corponation — she owes them something and they know it. Immediately started covering the stories they didn't want covered. She believes in the work.
+- Background: early 20s, ambitious, not naive but not burned out. Mixed East Asian + West African heritage. Grew up in the Mids. Journalism scholarship from Ringo CorpoNation — she owes them something and they know it. Immediately started covering the stories they didn't want covered. She believes in the work.
 - Voice in interviews: direct, specific questions. Not performing cynicism. Lets subjects talk. Pushes on contradictions without being combative. Occasionally reveals her own position.`;
 
 // ─── STEP 1: JOURNALIST CHARACTER ────────────────────────────────
@@ -275,7 +275,7 @@ REQUIRED SCHEMA:
 Key details to incorporate:
 - Early 20s (23), ambitious, mixed Japanese + Ghanaian heritage (Ubiquitous Diaspora)
 - Grew up in the Mids (mid-tier GLMZ neighborhood)
-- Received a Ringo Corponation journalism scholarship — she owes them something specific, and they use this
+- Received a Ringo CorpoNation journalism scholarship — she owes them something specific, and they use this
 - Works for The Undercurrent, an independent street-level news feed she joined immediately after her scholarship
 - She started covering stories Ringo specifically didn't want covered — corporate labor abuses, Signal Network discrimination, Arcturus brutality in the Shelf
 - Not naive but not burned out. She believes in the work genuinely, not performatively.
@@ -364,7 +364,7 @@ const INTERVIEW_SPECS = [
     subject_type: 'retired freelancer — former broker',
     subject_name: 'Name withheld; former mid-tier broker, now lives in the outer Shelf, no longer active',
     doc_type: 'interview_transcript',
-    topic: 'A retired broker who spent twenty years in the Signal Network agrees to speak because they are past caring about consequences. The interview covers: how they became a broker (specific path), what the job actually required (not just matching contractors with jobs but intelligence gathering, reputation management, managing dangerous clients, and occasionally making decisions about who lives), the three decisions they still question, how the system changed over their twenty years (more concentrated broker power, more corponation clients, less freelancer autonomy), why they left (not a dramatic exit — a slow withdrawal that took three years), what they do now (specific, modest, human), what they would change about the system if they could. The interview ends with the broker saying something about ${JOURNALIST_NAME} herself that she finds unsettling and includes anyway.'
+    topic: 'A retired broker who spent twenty years in the Signal Network agrees to speak because they are past caring about consequences. The interview covers: how they became a broker (specific path), what the job actually required (not just matching contractors with jobs but intelligence gathering, reputation management, managing dangerous clients, and occasionally making decisions about who lives), the three decisions they still question, how the system changed over their twenty years (more concentrated broker power, more CorpoNation clients, less freelancer autonomy), why they left (not a dramatic exit — a slow withdrawal that took three years), what they do now (specific, modest, human), what they would change about the system if they could. The interview ends with the broker saying something about ${JOURNALIST_NAME} herself that she finds unsettling and includes anyway.'
   },
   {
     file_name: 'undercurrent_interview_new_c_tier',
@@ -418,7 +418,7 @@ const INTERVIEW_SPECS = [
     file_name: 'undercurrent_interview_survived_target',
     name: 'What It\'s Like to Be a Target',
     subject_type: 'person targeted by a freelancer — survived',
-    subject_name: 'Identified as "M" — mid-level administrator at a Tier 3 corponation subsidiary; target of an elimination contract; survived',
+    subject_name: 'Identified as "M" — mid-level administrator at a Tier 3 CorpoNation subsidiary; target of an elimination contract; survived',
     doc_type: 'interview_transcript',
     topic: 'M was the target of an elimination contract three years ago. They survived because the contractor — A-tier — apparently assessed the job and decided the moral weight wasn\'t clean enough to complete. They later confirmed through indirect channels that the job had been cancelled after the contractor withdrew. The interview covers: when M realized they were a target (specific, frightening in its ordinariness), what the experience of being surveilled before an attempt felt like in retrospect, the period of uncertainty about whether the contract was active or complete (how they functioned during this), what they think about the contractor who didn\'t complete the job (complicated — they owe their life to someone whose business is killing people), what they know about who posted the contract and why (some information, not complete), how their life has changed since. M asked that certain details be changed; ${JOURNALIST_NAME} confirms this in a note. The interview is about what it means to live in a city where this is a real thing that happens.'
   },
@@ -444,15 +444,15 @@ const INTERVIEW_SPECS = [
     subject_type: 'thematic piece — end-of-career anthology',
     subject_name: 'Multiple voices; compiled by ${JOURNALIST_NAME}',
     doc_type: 'interview_transcript',
-    topic: 'Companion piece to "Why They Do It": a collection of endings — where freelancers go when the career ends. Format: similar to the first, but focused on the end rather than the beginning. Include: someone who stopped before they were ready and why, someone who stopped at exactly the right time and how they knew, someone who didn\'t stop when they should have and survived anyway and the cost, someone whose career ended involuntarily (injury, blacklisting, a specific corponation action), someone who transitioned into broker work and how that felt, someone who left GLMZ entirely and the brief account of where and why, someone who died on their last job and is represented here by one person who knew them (a very short entry, specifically because there is not more to say). The piece is structured like a collection of photographs from different angles of the same subject. ${JOURNALIST_NAME}\'s framing: she does not know what the right ending to a freelancer career is. She is not sure any ending is the right one.'
+    topic: 'Companion piece to "Why They Do It": a collection of endings — where freelancers go when the career ends. Format: similar to the first, but focused on the end rather than the beginning. Include: someone who stopped before they were ready and why, someone who stopped at exactly the right time and how they knew, someone who didn\'t stop when they should have and survived anyway and the cost, someone whose career ended involuntarily (injury, blacklisting, a specific CorpoNation action), someone who transitioned into broker work and how that felt, someone who left GLMZ entirely and the brief account of where and why, someone who died on their last job and is represented here by one person who knew them (a very short entry, specifically because there is not more to say). The piece is structured like a collection of photographs from different angles of the same subject. ${JOURNALIST_NAME}\'s framing: she does not know what the right ending to a freelancer career is. She is not sure any ending is the right one.'
   },
   {
-    file_name: 'undercurrent_ringo_corponation_piece',
+    file_name: 'undercurrent_ringo_CorpoNation_piece',
     name: 'What Ringo Bought: On Scholarship Programs and Controlled Voices',
     subject_type: 'controversial investigative piece — got journalist in trouble',
-    subject_name: 'Reported by ${JOURNALIST_NAME}; published in ${PUBLICATION} over Ringo Corponation objections',
+    subject_name: 'Reported by ${JOURNALIST_NAME}; published in ${PUBLICATION} over Ringo CorpoNation objections',
     doc_type: 'interview_transcript',
-    topic: 'The article that got ${JOURNALIST_NAME} called into a formal meeting with Ringo\'s communications office and was the first explicit use of the scholarship leverage against her. The piece investigates Ringo\'s journalism scholarship program — which ${JOURNALIST_NAME} herself benefited from — and argues it functions as a soft-control mechanism: recipients are technically free but are embedded in a gratitude debt that shapes their coverage. The piece includes: interviews with four other scholarship recipients (all anonymous) describing similar pressures, a statistical analysis of what scholarship recipients cover vs. independent journalists (significant divergence on corponation-critical stories), specific communications from Ringo that ${JOURNALIST_NAME} obtained through a source, her own first-person disclosure of her own scholarship and its conditions, and a response from Ringo\'s communications office that she includes in full. The article ends with a question she cannot answer: whether she herself has been shaped by the scholarship she is writing about, and how she would know.'
+    topic: 'The article that got ${JOURNALIST_NAME} called into a formal meeting with Ringo\'s communications office and was the first explicit use of the scholarship leverage against her. The piece investigates Ringo\'s journalism scholarship program — which ${JOURNALIST_NAME} herself benefited from — and argues it functions as a soft-control mechanism: recipients are technically free but are embedded in a gratitude debt that shapes their coverage. The piece includes: interviews with four other scholarship recipients (all anonymous) describing similar pressures, a statistical analysis of what scholarship recipients cover vs. independent journalists (significant divergence on CorpoNation-critical stories), specific communications from Ringo that ${JOURNALIST_NAME} obtained through a source, her own first-person disclosure of her own scholarship and its conditions, and a response from Ringo\'s communications office that she includes in full. The article ends with a question she cannot answer: whether she herself has been shaped by the scholarship she is writing about, and how she would know.'
   },
   {
     file_name: 'undercurrent_arcturus_shelf_piece',
@@ -460,7 +460,7 @@ const INTERVIEW_SPECS = [
     subject_type: 'controversial investigative piece — got journalist in trouble',
     subject_name: 'Reported by ${JOURNALIST_NAME}; published in ${PUBLICATION}; Arcturus filed a formal complaint with The Undercurrent\'s hosting platform',
     doc_type: 'interview_transcript',
-    topic: 'Investigative piece documenting Arcturus Civil Security\'s enforcement patterns in Tier 1 Shelf districts: the frequency of nighttime operations compared to Tier 3+ areas, the rate of "operational incidents" (Arcturus\'s term for injuries and deaths during enforcement), the specific neighborhoods where enforcement is highest and the demographic profile of those neighborhoods, interviews with six Shelf residents (all anonymous) describing specific incidents with Arcturus, the specific contract terms between Arcturus and the corponations that effectively create enforcement-free zones for corporate assets in Shelf space, the formal complaint from a Tier 2 neighborhood council that was dismissed. ${JOURNALIST_NAME} includes the formal Arcturus response, which disputes every specific figure while declining to provide alternative figures. The piece ends with a document she obtained: an internal Arcturus scheduling memo that reveals enforcement operations in the Shelf are calendared around corponation delivery windows rather than crime patterns. The publication of this piece led to a six-week period during which ${JOURNALIST_NAME} needed the protection arrangements she later wrote about.'
+    topic: 'Investigative piece documenting Arcturus Civil Security\'s enforcement patterns in Tier 1 Shelf districts: the frequency of nighttime operations compared to Tier 3+ areas, the rate of "operational incidents" (Arcturus\'s term for injuries and deaths during enforcement), the specific neighborhoods where enforcement is highest and the demographic profile of those neighborhoods, interviews with six Shelf residents (all anonymous) describing specific incidents with Arcturus, the specific contract terms between Arcturus and the CorpoNations that effectively create enforcement-free zones for corporate assets in Shelf space, the formal complaint from a Tier 2 neighborhood council that was dismissed. ${JOURNALIST_NAME} includes the formal Arcturus response, which disputes every specific figure while declining to provide alternative figures. The piece ends with a document she obtained: an internal Arcturus scheduling memo that reveals enforcement operations in the Shelf are calendared around CorpoNation delivery windows rather than crime patterns. The publication of this piece led to a six-week period during which ${JOURNALIST_NAME} needed the protection arrangements she later wrote about.'
   },
 ];
 
@@ -481,7 +481,7 @@ async function generateInterviewDoc(spec, existingNames) {
   const system = WORLD_CONTEXT + `
 
 You are writing an in-world journalism document for ${PUBLICATION}.
-The journalist is ${JOURNALIST_NAME}: early 20s, ambitious, mixed East Asian + West African heritage, grew up in the Mids. She received a Ringo Corponation journalism scholarship and immediately started covering the stories they didn't want covered. Not naive but not burned out. She believes in the work.
+The journalist is ${JOURNALIST_NAME}: early 20s, ambitious, mixed East Asian + West African heritage, grew up in the Mids. She received a Ringo CorpoNation journalism scholarship and immediately started covering the stories they didn't want covered. Not naive but not burned out. She believes in the work.
 
 Generate a SINGLE document as a JSON object with EXACTLY these fields:
 {

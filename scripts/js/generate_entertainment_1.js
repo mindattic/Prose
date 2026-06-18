@@ -1,4 +1,4 @@
-// Entertainment music generator for StreetSamurai
+﻿// Entertainment music generator for StreetSamurai
 // Generates 200 music JSON files in engine/data/entertainment/
 // Run: node generate_entertainment_1.js
 // Does NOT overwrite existing files.
@@ -214,7 +214,7 @@ Mix of:
 - Circuit working-class bands (blues, folk, comfort, solidarity anthems)
 - Spire elite artists (polished, expensive, exclusive, avant-garde)
 - Cross-tier phenomena (artists who transcend class boundaries)
-- Banned/suppressed acts (censored by Vantablack Media or corponation security)
+- Banned/suppressed acts (censored by Vantablack Media or CorpoNation security)
 - AI-generated or BCI-composed artists (some controversial, some celebrated)
 - Solo artists and full bands
 

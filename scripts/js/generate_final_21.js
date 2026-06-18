@@ -1,4 +1,4 @@
-const fs = require('fs');
+﻿const fs = require('fs');
 const path = require('path');
 const crypto = require('crypto');
 
@@ -148,7 +148,7 @@ const w1 = {
   ],
   ammunition_type: [],
   tags: ["weapon", "melee", "anomaly", "shelf", "knife", "new_weird", "protection", "city_agency", "unknown_origin"],
-  parent_corponation: ""
+  parent_CorpoNation: ""
 };
 if (writeEntity('weaponry', w1)) count++;
 
@@ -181,7 +181,7 @@ const c1 = {
   street_price: "",
   licensed_price: "",
   tags: ["cyberware", "anomaly", "bci", "phenomenon", "new_weird", "shelf", "voice", "advice", "lazarus", "ghost_weight"],
-  parent_corponation: ""
+  parent_CorpoNation: ""
 };
 if (writeEntity('cyberware', c1)) count++;
 
@@ -212,7 +212,7 @@ const a1 = {
   ],
   cultural_context: "Plot 17 is Block 9's quiet miracle. The residents don't understand it. They don't try to. They eat the food it grows, they walk the paths it built, and they leave drawings on the railing sometimes. Plot 17 is proof that something in the city wants people to be fed.",
   tags: ["automaton", "agricultural", "anomaly", "shelf", "ringo", "garden", "new_weird", "community", "block_9", "children"],
-  parent_corponation: ""
+  parent_CorpoNation: ""
 };
 if (writeEntity('automata', a1)) count++;
 
@@ -286,7 +286,7 @@ const f1 = {
   ],
   narrative_function: "The Cartographers provide a framework for understanding the city's anomalies — not as supernatural events but as structural features of a living city. They are the faction that says: the weird things are not bugs, they are features, and if you remove them, you will regret it.",
   story_hooks: [
-    "A corponation has acquired a piece of the Atlas — a single page, stolen. The page describes an anomaly beneath a building they want to demolish. Emile needs it back before they read it and do something irreversible.",
+    "A CorpoNation has acquired a piece of the Atlas — a single page, stolen. The page describes an anomaly beneath a building they want to demolish. Emile needs it back before they read it and do something irreversible.",
     "A new Cartographer has broken the rule. They interfered with an anomaly. Something has changed, and only the other Cartographers can tell what's different — a street that was 200 meters long is now 180. Twenty meters of city have simply ceased to exist."
   ],
   tags: ["faction", "cartography", "anomaly", "observation", "new_weird", "atlas", "paper", "underworld", "city"],
@@ -422,7 +422,7 @@ const ch1 = {
   ],
   story_hooks: [
     "The Atlas has written its own entry. Emile needs someone he trusts to visit the location it describes and tell him what they find.",
-    "A corponation has learned about the Atlas and wants to acquire it — not to destroy it, but to use it. They believe the anomalies are exploitable resources. Emile knows what happens when you exploit a load-bearing structure.",
+    "A CorpoNation has learned about the Atlas and wants to acquire it — not to destroy it, but to use it. They believe the anomalies are exploitable resources. Emile knows what happens when you exploit a load-bearing structure.",
     "Emile's whisper is getting quieter. He says the city is listening harder."
   ],
   narrative_function: "Emile is the city's witness — the person who observes what cannot be explained and insists on recording it without explanation. He provides a framework for anomalies that is neither supernatural nor scientific but structural: the city has an architecture that includes the impossible, and someone needs to map it.",

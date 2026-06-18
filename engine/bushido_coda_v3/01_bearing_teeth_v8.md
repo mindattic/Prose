@@ -1,4 +1,4 @@
----
+﻿---
 title: Bearing Teeth
 book: Bushido Coda
 chapter: 1
@@ -140,7 +140,7 @@ She bowed. He bowed. He left.
 
 The bike was matte black under a tier-six awning that did half the work of keeping it dry.
 
-Three plates magnetized to the underside of the rear cowl. He chose the one issued to a Carrion subcontractor in 2206 that had never been cancelled. The Gray Zone surveillance grid was Pinnacle Civic Vision hardware, forty years old, cast off when Pinnacle had moved its product line to the corponation district. A Carrion plate went where a Carrion plate had ever been. Carrion plates had been most places.
+Three plates magnetized to the underside of the rear cowl. He chose the one issued to a Carrion subcontractor in 2206 that had never been cancelled. The Gray Zone surveillance grid was Pinnacle Civic Vision hardware, forty years old, cast off when Pinnacle had moved its product line to the CorpoNation district. A Carrion plate went where a Carrion plate had ever been. Carrion plates had been most places.
 
 He rode south.
 
@@ -276,7 +276,7 @@ The blade cleared the saya in one continuous draw. Right hand over the right sho
 
 He put the edge into the shoulder seam where chrome met flesh.
 
-Three and a half centimeters of unprotected actuator housing exposed at the cooling vent. A gap Helix had designed into the ARM-9 in 2221 because the cooling-vent redesign that would have closed it had been over budget. The corponation accountants had filed the over-budget under *unfunded improvement opportunity,* a term that meant the corp had priced the fix and elected not to perform it.
+Three and a half centimeters of unprotected actuator housing exposed at the cooling vent. A gap Helix had designed into the ARM-9 in 2221 because the cooling-vent redesign that would have closed it had been over budget. The CorpoNation accountants had filed the over-budget under *unfunded improvement opportunity,* a term that meant the corp had priced the fix and elected not to perform it.
 
 Helix had decided, in 2221, that his shoulder was the cheaper option.
 
@@ -336,7 +336,7 @@ The note rang clean and sustained in the concrete. The man read his information 
 
 *He is not going to give you anything until he has decided you are worth giving it to.*
 
-*Second exchange.* Kyle pressed. Two-step advance, cut high right. The man deflected rather than parried — slid Kyle's flat past his shoulder. Smart. Conservative. He had been trained against blades that did things the corponations had been telling buyers about for thirty years, and none of what he had been told to expect was going to arrive.
+*Second exchange.* Kyle pressed. Two-step advance, cut high right. The man deflected rather than parried — slid Kyle's flat past his shoulder. Smart. Conservative. He had been trained against blades that did things the CorpoNations had been telling buyers about for thirty years, and none of what he had been told to expect was going to arrive.
 
 *Third exchange.* The man committed. Cut high left, fast, clean, no telegraph. Kyle's parry was a fraction late because the man had given him nothing to read. The follow-through grazed Kyle's left forearm. Three inches of skin opened.
 
@@ -520,7 +520,7 @@ He had not.
 
 He was the exception to the rule.
 
-The rule said a man performing samurai discipline in 2226 would be killed for it inside a year. The rule was correct about almost everybody. It was not correct about him. The city had built counters for many things. The corponations had paid for most of them.
+The rule said a man performing samurai discipline in 2226 would be killed for it inside a year. The rule was correct about almost everybody. It was not correct about him. The city had built counters for many things. The CorpoNations had paid for most of them.
 
 They had not yet decided he was the kind of problem worth paying for.
 
@@ -590,7 +590,7 @@ Hira put another apricot in her mouth. She chewed it without enthusiasm. She wat
 
 The city continued.
 
-The corponations continued.
+The CorpoNations continued.
 
 The trail continued upstream.
 

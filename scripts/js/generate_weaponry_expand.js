@@ -1,4 +1,4 @@
-const fs = require('fs');
+﻿const fs = require('fs');
 const path = require('path');
 const crypto = require('crypto');
 
@@ -77,7 +77,7 @@ const weapons = [
     specifications: "caliber: 40mm standard casings\ncapacity: 1 round\neffective range: 50-350 meters\nweight: 1.8 kg\nlength: 305mm\nmounting: Universal accessory rail",
     tactical_use: "Squad-level explosive support. Operators carry 4-6 rounds in belt pouches and reload between engagements. Used primarily for breaching reinforced doors, disabling vehicles, and flushing targets from cover.",
     cultural_context: "The Understudy is so common in GLMZ's security ecosystem that 'checking for understudies' has become standard practice when disarming a suspect — the launcher sits flush beneath a rifle barrel and can be missed on visual inspection if you're not looking for it.",
-    known_users: ["Corporate security teams across all major corponations", "GLMZ Tactical Response", "Licensed private military contractors"],
+    known_users: ["Corporate security teams across all major CorpoNations", "GLMZ Tactical Response", "Licensed private military contractors"],
     story_hooks: [
       "A batch of UGL-2 launchers has been modified to fire a proprietary 40mm round that deploys a localized EMP on detonation — turning a common infantry attachment into a cyberware killer.",
       "An operator's Understudy misfired during a corporate raid, sending a fragmentation round into a residential floor. Crucible claims manufacturing defect. The operator claims the weapon was sabotaged."
@@ -100,7 +100,7 @@ const weapons = [
     specifications: "caliber: 40mm standard casings\nfeed: 32-round disintegrating belt\ncyclic rate: 300 rounds per minute\neffective range: 75-1,500 meters\nweight: 28 kg (weapon only)\nmounting: Vehicle turret or tripod emplacement",
     tactical_use: "Area suppression, defensive perimeter enforcement, vehicle convoy protection. Requires a two-person crew for sustained operation — one gunner, one ammunition handler. Effective against light vehicles, personnel in the open, and structures up to reinforced concrete.",
     cultural_context: "The Thresher represents the point where corporate 'security operations' become indistinguishable from warfare. When a Thresher appears, the pretense of proportional response has been abandoned. Journalists covering corporate conflicts use 'Thresher deployment' as shorthand for 'war crime in progress.'",
-    known_users: ["Zheng-Dao corporate military forces", "Multiple corponation private armies (officially denied)", "GLMZ military reserve (emergency stockpile)"],
+    known_users: ["Zheng-Dao corporate military forces", "Multiple CorpoNation private armies (officially denied)", "GLMZ military reserve (emergency stockpile)"],
     story_hooks: [
       "A Thresher has gone missing from a Zheng-Dao armory. The weapon is crew-served, belt-fed, and weighs 28 kg — not something you tuck under your coat. Someone had logistical support to steal it, and logistical support to use it.",
       "A vehicle mounting a Thresher has been spotted on a freight elevator heading toward the upper tiers. Whoever has it is moving it into position for something, and the target area contains 40,000 residents."
@@ -148,7 +148,7 @@ const weapons = [
     cultural_context: "The Thumper is a symbol of the Shelf's resourcefulness and desperation in equal measure. Building one is a community activity — neighbors contribute pipe, propellant, and scrap. Using one is a statement that the situation has become bad enough to risk blowing off your own hands. Thumper builders are respected in the Shelf the way gunsmiths were respected on historical frontiers.",
     known_users: ["Shelf district block defense groups", "Improvised resistance cells", "Anyone desperate enough"],
     story_hooks: [
-      "A Thumper round landed in a corporate security checkpoint and killed two guards. The improvised munition contained fragments of a specific alloy used only in one corponation's manufacturing process — the shrapnel was a message as much as a weapon.",
+      "A Thumper round landed in a corporate security checkpoint and killed two guards. The improvised munition contained fragments of a specific alloy used only in one CorpoNation's manufacturing process — the shrapnel was a message as much as a weapon.",
       "Someone in the Shelf has figured out how to build Thumper rounds that deploy a chemical smoke screen instead of fragmentation — non-lethal area denial for Φ20 per shot. The recipe is spreading through the community, and corporate security is terrified of an entire district that can vanish behind smoke on command."
     ],
     ammunition_type: ["improvised"],
@@ -241,8 +241,8 @@ const weapons = [
     base_technologies: ["Adaptive impedance analysis", "Microfilament probe delivery", "Cyberware-profile exploitation firmware"],
     specifications: "range: 10 meters (probe delivery)\ndischarge: 50,000 volts, adaptive amperage\nincapacitation duration: 5-15 seconds\nprobe type: Barbed titanium with microfilament tether\ncharges per cartridge: 3 firings\nweight: 0.6 kg\nlength: 195mm",
     tactical_use: "Subject incapacitation in corporate security operations, arrest support, and crowd control. Security teams use the SC-7 as a first-response tool before escalating to ballistic weapons. The cyberware exploitation feature makes it particularly effective against augmented targets who might otherwise resist conventional stun weapons.",
-    cultural_context: "The SC-7 is standard issue for corporate security across GLMZ, and its nickname 'Corporate Handshake' reflects public perception of how corponations greet people who disagree with them. The weapon's cyberware exploitation feature has drawn protests from augmentation rights groups who argue it constitutes targeted violence against the augmented community.",
-    known_users: ["Corporate security forces (all major corponations)", "GLMZ law enforcement", "Licensed private security firms"],
+    cultural_context: "The SC-7 is standard issue for corporate security across GLMZ, and its nickname 'Corporate Handshake' reflects public perception of how CorpoNations greet people who disagree with them. The weapon's cyberware exploitation feature has drawn protests from augmentation rights groups who argue it constitutes targeted violence against the augmented community.",
+    known_users: ["Corporate security forces (all major CorpoNations)", "GLMZ law enforcement", "Licensed private security firms"],
     story_hooks: [
       "The SC-7's cyberware profiling database has been leaked, revealing that TESSERA has cataloged the electrical vulnerabilities of every major cyberware platform on the market — including experimental military augmentations that aren't supposed to exist in civilian populations.",
       "A modified SC-7 has surfaced that inverts the calibration — instead of staying below lethality thresholds, it maximizes discharge through cyberware systems to cause permanent implant damage. Someone is turning a compliance tool into a cyberware destroyer."
@@ -334,7 +334,7 @@ const weapons = [
     specifications: "range: 50 meters effective\nbeam width: 2 meters at 30 meters\neffect: Intense skin heating (54°C surface temperature)\npower source: Heavy-duty battery pack, 30 minutes continuous operation\nweight: 8.5 kg with battery\nlength: 900mm",
     tactical_use: "Crowd dispersal, perimeter defense, and area denial. Operators sweep the beam across groups to force retreat. Effective against unarmed civilians and lightly equipped targets. Ineffective against prepared opponents with reflective or wet barrier materials.",
     cultural_context: "The Pacifier is the weapon that labor organizers fear most — not because it is the most dangerous, but because it leaves no evidence. Workers hit by Pacifier beams during strike actions cannot prove they were attacked. Medical records show no injuries. Security footage shows people running away from nothing. The weapon's name is a cruel joke: it pacifies by causing invisible agony.",
-    known_users: ["Vantablack corporate security", "Multiple corponation crowd control units", "GLMZ riot suppression teams (denied)"],
+    known_users: ["Vantablack corporate security", "Multiple CorpoNation crowd control units", "GLMZ riot suppression teams (denied)"],
     story_hooks: [
       "A Pacifier has been modified to operate at higher power, causing second-degree burns instead of surface heating. The modification makes the weapon's effects visible and documentable — someone is deliberately creating evidence of corporate violence that the original weapon was designed to conceal.",
       "Medical researchers have identified a cluster of cancer cases in a district where Pacifier deployments were frequent during a prolonged labor dispute. Vantablack insists the technology is safe. The epidemiological data suggests otherwise."
@@ -548,7 +548,7 @@ const weapons = [
     known_users: ["Vantablack executive protection details", "Corporate security teams requiring covert firepower", "At least one documented use in a corporate boardroom massacre"],
     story_hooks: [
       "Security footage from a corporate massacre shows the attacker walking calmly through a lobby, firing a BC-1 from their briefcase without breaking stride. Thirty people died in 90 seconds. The attacker passed through the building's security screening without incident.",
-      "A BC-1 has been found in the luggage of a diplomat entering GLMZ — complete with Vantablack manufacturing stamps and a serial number that traces to an order placed by a corponation that claims it was never delivered."
+      "A BC-1 has been found in the luggage of a diplomat entering GLMZ — complete with Vantablack manufacturing stamps and a serial number that traces to an order placed by a CorpoNation that claims it was never delivered."
     ],
     ammunition_type: ["9mm"],
     tags: ["concealed", "weapon", "disguised", "briefcase", "submachine gun", "automatic", "vantablack", "corporate", "tier 5"]
@@ -804,7 +804,7 @@ const weapons = [
     specifications: "caliber: 12 gauge less-lethal\naction: Pump-action\nmagazine: 7 rounds tubular\neffective range: 10-40 meters\nminimum safe range: 5 meters (closer risks lethal impact)\nweight: 3.4 kg\nlength: 840mm\nfinish: High-visibility orange",
     tactical_use: "Crowd dispersal, subject compliance, and riot suppression. Operators fire bean bag rounds at center mass to create pain compliance, or deploy tear gas canisters for area denial. The weapon's less-lethal classification allows deployment in scenarios where ballistic weapons would escalate political consequences.",
     cultural_context: "The Peacekeeper's orange finish has become GLMZ's most recognizable symbol of corporate crowd control. Protest art frequently features the orange shotgun, and 'getting peaced' is slang for being hit by a bean bag round. The weapon's name is regarded as darkly ironic by communities that have experienced its 'peacekeeping' firsthand.",
-    known_users: ["Corporate security across all major corponations", "GLMZ law enforcement", "Private security firms", "Event security at large gatherings"],
+    known_users: ["Corporate security across all major CorpoNations", "GLMZ law enforcement", "Private security firms", "Event security at large gatherings"],
     story_hooks: [
       "A protester was killed by a Peacekeeper round at a labor demonstration — the official report claims a minimum-distance violation, but the forensic evidence shows the round was fired from maximum range. The round was modified to be lethal at any distance, disguised as standard less-lethal ammunition.",
       "A stockpile of LL-4 Peacekeepers has been stolen from a security depot. The weapons are being given away free in the Shelf — but the ammunition that came with them is live 12-gauge, not less-lethal. Someone is arming a community while maintaining plausible deniability."
@@ -850,7 +850,7 @@ const weapons = [
     specifications: "caliber: 18mm rubber composite\naction: Semi-automatic, gas-operated\nmagazine: 20 rounds\neffective range: 50 meters\nmuzzle velocity: 90 m/s\nimpact energy: 35 joules (designed threshold)\nweight: 3.1 kg\nlength: 680mm",
     tactical_use: "Sustained riot suppression and crowd control. Operators engage crowds with rapid semi-automatic fire, targeting center mass to create pain compliance at volume. The 20-round magazine and semi-automatic action allow a tempo of fire that keeps crowds moving and prevents reorganization.",
     cultural_context: "The Bouncer is the weapon that GLMZ's lower tiers encounter most frequently. It is the sound of a protest ending, the impact of a labor action being suppressed, the bruise that tells you the system noticed your dissent. Its rubber rounds don't kill often enough to make headlines, but they hurt consistently enough to make a point.",
-    known_users: ["Corporate security riot teams (all major corponations)", "GLMZ law enforcement crowd control units", "Event security teams", "Private security at labor dispute sites"],
+    known_users: ["Corporate security riot teams (all major CorpoNations)", "GLMZ law enforcement crowd control units", "Event security teams", "Private security at labor dispute sites"],
     story_hooks: [
       "Autopsy records from a protest suppression operation show that 12 of the RL-2 rounds recovered from casualties were not rubber-composite — they were lead-core rounds in rubber jackets, designed to look less-lethal while delivering ballistic impacts. Someone in the supply chain is loading kill rounds into riot guns.",
       "An RL-2 has been modified to fire at twice the standard velocity — 180 m/s instead of 90 — turning every round into a potential skull-fracture. The modification is a simple spring swap that takes 30 seconds. Instructions have been posted on security forums, and someone is distributing modified springs to operators."

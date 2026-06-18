@@ -1,4 +1,4 @@
-// Civilian population generator for StreetSamurai
+﻿// Civilian population generator for StreetSamurai
 // Generates 1024 non-runner character JSON files in engine_data/characters/
 // Run: node generate_civilians.js
 // Resumes from where it left off — skips existing files.
@@ -111,7 +111,7 @@ const CATEGORIES = [
     roles: 'middle managers, engineers, scientists, HR specialists, marketing analysts, security analysts, corporate lawyers, accountants, lab techs, executives, interns, data architects, compliance officers, logistics coordinators, project managers, biotech researchers, supply chain managers, procurement specialists, corporate trainers, quality assurance',
     ageRange: [22, 62],
     tierRange: [2, 5],
-    affiliations: 'Axiom, Tessera, Sterling-Nakamura, Zheng-Dao, Arcturus, Ringo, Palladian, Helix Biosystems, Ferrogate Transit, or smaller subsidiary corponations',
+    affiliations: 'Axiom, Tessera, Sterling-Nakamura, Zheng-Dao, Arcturus, Ringo, Palladian, Helix Biosystems, Ferrogate Transit, or smaller subsidiary CorpoNations',
     locationHint: 'corporate districts, The Circuit, Meridian Core, Vantage Meridian Corporate Campus, Lincoln Fortress, Grand Corridor, Kenwood Gate, The Spire',
   },
   {
@@ -138,7 +138,7 @@ const CATEGORIES = [
     roles: 'musicians, painters, holographic artists, street performers, writers, DJs, tattoo artists, gene-mod body artists, actors, comedians, poets, VR experience designers, graffiti artists, sound sculptors, underground filmmakers, puppet makers, neon artists, choreographers',
     ageRange: [16, 75],
     tierRange: [1, 4],
-    affiliations: 'Independent, art collectives, underground venues, corponation-sponsored (a few)',
+    affiliations: 'Independent, art collectives, underground venues, CorpoNation-sponsored (a few)',
     locationHint: 'The Ferment Quarter, The Loft, Pilsen Veil, The Canopy, Hamtramck Enclave, Mexicantown Libre, Highland Park Autonomous Zone, The Garret',
   },
   {
@@ -192,7 +192,7 @@ const CATEGORIES = [
     roles: 'professors, AI researchers, historians, linguists, sociologists studying the Shelf, climate scientists, data archaeologists, xenolinguists, ethics researchers, urban planners, gene-sequence archivists, computational theorists',
     ageRange: [28, 72],
     tierRange: [2, 4],
-    affiliations: 'University Spine institutions, corponation R&D divisions, independent researchers, think tanks',
+    affiliations: 'University Spine institutions, CorpoNation R&D divisions, independent researchers, think tanks',
     locationHint: 'University Spine, The Circuit, Meridian Core, research labs, The Conservatory',
   },
   {
@@ -243,7 +243,7 @@ GENEWARE: Cat ears, tails, color-changing hair, bioluminescent skin, patterned i
 
 E.L.F.s (Electronic Life Forms): Digital spirits that inhabit devices. People pray to them, leave data offerings, seek their favor.
 
-Corponations (sovereign corporate entities): Axiom, Tessera, Sterling-Nakamura, Zheng-Dao, Arcturus, Ringo, Palladian, Helix Biosystems, Ferrogate Transit.
+CorpoNations (sovereign corporate entities): Axiom, Tessera, Sterling-Nakamura, Zheng-Dao, Arcturus, Ringo, Palladian, Helix Biosystems, Ferrogate Transit.
 
 These characters are NOT runners/freelancers/shadowrunners. They are the civilian population — ordinary people living in a near-future world.
 

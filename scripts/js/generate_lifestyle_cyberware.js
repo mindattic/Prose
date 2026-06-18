@@ -1,4 +1,4 @@
-// Lifestyle/quality-of-life cyberware generator for StreetSamurai
+﻿// Lifestyle/quality-of-life cyberware generator for StreetSamurai
 // Generates 100 lifestyle cyberware JSON files in engine/data/cyberware/
 // Run: node generate_lifestyle_cyberware.js
 // Does NOT overwrite existing files.
@@ -149,7 +149,7 @@ const WORLD_CONTEXT = `Setting: GLMZ, year 2200. A megacity in the Great Lakes c
 
 Ubiquitous Diaspora: By 2200, humanity is fully racially interbred. Default to mixed heritage from unexpected global combinations. There is no dominant ethnicity.
 
-Corponations are sovereign corporate entities that manufacture most goods. Key cyberware/biotech companies include:
+CorpoNations are sovereign corporate entities that manufacture most goods. Key cyberware/biotech companies include:
 - Lazarus Pharmaceuticals (and its subsidiaries) — medical-grade implants, health cyberware
 - MindBridge — cognitive and neural enhancement consumer brand
 - VitaCore — health and wellness implants, affordable medical cyberware
@@ -158,7 +158,7 @@ Corponations are sovereign corporate entities that manufacture most goods. Key c
 - LifeWire — convenience and lifestyle implants, the "Apple" of consumer cyberware
 - PulsePoint — fitness/health monitoring implants, sports and wellness
 - Helix Biosystems — already exists in the world, premium biotech
-- Tessera Corponation — already exists, high-end enterprise
+- Tessera CorpoNation — already exists, high-end enterprise
 - Zheng Dao Bioelectric — already exists, industrial/professional grade
 
 These are NOT combat cyberware. These are everyday enhancements that regular people get — the cyberware equivalent of smartphones, fitness trackers, and cosmetic procedures. Most are affordable (Tier 1-3 availability). They are ubiquitous. Getting a sleep optimizer or payment chip is like getting braces or a smartphone in 2024.
@@ -266,7 +266,7 @@ const SCHEMA_INSTRUCTIONS = `Each item MUST conform to this exact JSON schema:
   "category": "{category}",
   "body_location": "where in the body this is installed (e.g., 'subdermal forearm', 'cranial', 'spinal', 'retinal', 'laryngeal', 'dermal full-body')",
   "description": "2 full paragraphs. Paragraph 1: What it does technically, how it works. Paragraph 2: Who gets it, what daily life is like with it, why it matters to ordinary people.",
-  "manufacturer": "FULL CORPONATION NAME IN CAPS",
+  "manufacturer": "FULL CorpoNation NAME IN CAPS",
   "tier_availability": "Tier X-Y (most should be Tier 1-3, some Tier 2-4, very few Tier 3-5)",
   "legality": "Unrestricted or Licensed (most lifestyle cyberware is Unrestricted; medical ones may be Licensed)",
   "installation_requirements": "Brief description — outpatient clinic, pharmacy kiosk, or requires specialist",

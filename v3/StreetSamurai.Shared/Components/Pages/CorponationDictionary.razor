@@ -24,7 +24,7 @@
     <div class="dict-editor">
         @if (editing != null)
         {
-            <EditViewToggle RepoName="corps" Title="@(isNew ? "New Corponation" : editing.Name)" Json="@System.Text.Json.JsonSerializer.Serialize(editing)" HideToggle="@_confirmDelete" Rating="@(editing?.Rating ?? 0)" RatingChanged="OnRatingChanged">
+            <EditViewToggle RepoName="corps" Title="@(isNew ? "New CorpoNation" : editing.Name)" Json="@System.Text.Json.JsonSerializer.Serialize(editing)" HideToggle="@_confirmDelete" Rating="@(editing?.Rating ?? 0)" RatingChanged="OnRatingChanged">
                 <HeaderButtons>
                     @if (!_confirmDelete)
                     {
@@ -61,7 +61,7 @@
                 </ChildContent>
             </EditViewToggle>
         }
-        else { <div class="text-muted d-flex align-items-center justify-content-center h-100">Select a corponation or create a new one</div> }
+        else { <div class="text-muted d-flex align-items-center justify-content-center h-100">Select a CorpoNation or create a new one</div> }
     </div>
 </div>
 

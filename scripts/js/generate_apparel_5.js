@@ -1,4 +1,4 @@
-// Apparel outfit generator for StreetSamurai
+﻿// Apparel outfit generator for StreetSamurai
 // Generates 200 complete outfit JSON files in engine/data/apparel/
 // Run: node generate_apparel_5.js
 // Does NOT overwrite existing files.
@@ -127,13 +127,13 @@ const WORLD_CONTEXT = `Setting: GLMZ (GLMZ), year 2200. A megacity in the Great 
 - Tier 2 "Circuit" — working class. Factory workers, transit operators, street vendors. Clean but functional.
 - Tier 3 — middle management, cubicle workers, small business owners.
 - Tier 4 — corporate comfort. Junior execs, specialists, skilled professionals.
-- Tier 5 "The Spire" — ultra-elite. Corponation C-suite, power brokers, old money.
+- Tier 5 "The Spire" — ultra-elite. CorpoNation C-suite, power brokers, old money.
 
 Ubiquitous Diaspora: By 2200, humanity is fully racially interbred. Default to mixed heritage from unexpected global combinations. Fashion reflects global fusion — no single cultural tradition dominates.
 
 Technology: BCI (brain-computer interfaces) are common. Augmentation (cyberware/chrome) ranges from basic to military-grade. Geneware allows cosmetic and functional genetic modification (tails, bioluminescence, fur, horns, non-functional wings). Synthetics are artificial beings with non-human body proportions.
 
-Corponations are sovereign corporate entities. They manufacture most goods. Street brands also exist — unlicensed, often better for specific niches, always with underground cachet.
+CorpoNations are sovereign corporate entities. They manufacture most goods. Street brands also exist — unlicensed, often better for specific niches, always with underground cachet.
 
 Fashion notes: Clothing must accommodate augmentation (chrome arms, leg prosthetics, spinal rigs, neural ports) and geneware (tails, horns, wings, fur, scales). Aug-compatible means openings, channels, or adaptive seams for chrome. Gene-compatible means accommodation for biological modifications.`;
 
@@ -147,7 +147,7 @@ const CATEGORIES = [
   {
     tag: 'circuit_working',
     count: 30,
-    prompt: `Generate {count} COMPLETE OUTFIT SETS for Circuit (Tier 2) working class. Clean but practical. Factory workers, transit operators, street food vendors, dock workers, maintenance crews. Durable synth-fabrics, steel-toe boots, hi-vis elements, tool loops, name patches. Some have company logos (corponation branding). Better construction than Shelf wear but still utilitarian. Colors: navy, charcoal, safety orange accents, company colors. Some incorporate basic aug-accommodation. Each outfit should be a complete head-to-toe look.`
+    prompt: `Generate {count} COMPLETE OUTFIT SETS for Circuit (Tier 2) working class. Clean but practical. Factory workers, transit operators, street food vendors, dock workers, maintenance crews. Durable synth-fabrics, steel-toe boots, hi-vis elements, tool loops, name patches. Some have company logos (CorpoNation branding). Better construction than Shelf wear but still utilitarian. Colors: navy, charcoal, safety orange accents, company colors. Some incorporate basic aug-accommodation. Each outfit should be a complete head-to-toe look.`
   },
   {
     tag: 'corporate_office',
@@ -167,12 +167,12 @@ const CATEGORIES = [
   {
     tag: 'military_corpsec',
     count: 15,
-    prompt: `Generate {count} COMPLETE OUTFIT/KIT SETS for military and CorpSec (corporate security) personnel. Full tactical kits: armor, boots, helmets/headgear, load-bearing gear, identification markings. Corponation security has branded tactical gear — corporate colors and logos on military hardware. National military remnants have their own look. Private security contractors have mixed gear. Some are intimidation-forward (Tier 5 penthouse guards), some are utilitarian (Tier 2 factory security). Include full aug-integration rigs for heavily augmented soldiers.`
+    prompt: `Generate {count} COMPLETE OUTFIT/KIT SETS for military and CorpSec (corporate security) personnel. Full tactical kits: armor, boots, helmets/headgear, load-bearing gear, identification markings. CorpoNation security has branded tactical gear — corporate colors and logos on military hardware. National military remnants have their own look. Private security contractors have mixed gear. Some are intimidation-forward (Tier 5 penthouse guards), some are utilitarian (Tier 2 factory security). Include full aug-integration rigs for heavily augmented soldiers.`
   },
   {
     tag: 'medical_scientific',
     count: 15,
-    prompt: `Generate {count} COMPLETE OUTFIT SETS for medical and scientific professionals. Hospital scrubs have evolved — antimicrobial smart-fabric, haptic feedback gloves built into sleeves, biometric monitoring woven in. Lab coats with integrated displays. Surgical attire for augmentation technicians (chrome installers). Gene clinic staff wear (adapted for handling geneware procedures). Field medic kits. Corponation R&D lab attire. Tier 1 street clinic ripperdoc gear vs Tier 5 pristine surgical suites. Each a complete look.`
+    prompt: `Generate {count} COMPLETE OUTFIT SETS for medical and scientific professionals. Hospital scrubs have evolved — antimicrobial smart-fabric, haptic feedback gloves built into sleeves, biometric monitoring woven in. Lab coats with integrated displays. Surgical attire for augmentation technicians (chrome installers). Gene clinic staff wear (adapted for handling geneware procedures). Field medic kits. CorpoNation R&D lab attire. Tier 1 street clinic ripperdoc gear vs Tier 5 pristine surgical suites. Each a complete look.`
   },
   {
     tag: 'underworld_criminal',
@@ -187,7 +187,7 @@ const CATEGORIES = [
   {
     tag: 'mixed_unique',
     count: 20,
-    prompt: `Generate {count} COMPLETE OUTFIT SETS that are unique, character-defining looks. Each should be specific enough to define a character the moment you describe what they're wearing. A retired Spire exec slumming on the Shelf. A geneware-modded street preacher. A synth jazz musician. A Tier 3 office worker moonlighting as a runner. A combat medic turned bartender. A corponation whistleblower in hiding. Each outfit tells a story — it's the intersection of who someone was, who they are, and who they're pretending to be. Wildly varied. No two should feel similar.`
+    prompt: `Generate {count} COMPLETE OUTFIT SETS that are unique, character-defining looks. Each should be specific enough to define a character the moment you describe what they're wearing. A retired Spire exec slumming on the Shelf. A geneware-modded street preacher. A synth jazz musician. A Tier 3 office worker moonlighting as a runner. A combat medic turned bartender. A CorpoNation whistleblower in hiding. Each outfit tells a story — it's the intersection of who someone was, who they are, and who they're pretending to be. Wildly varied. No two should feel similar.`
   },
 ];
 
@@ -245,7 +245,7 @@ Each outfit MUST have exactly these fields:
   "functionality": "practical features of the outfit",
   "what_it_says": "what this outfit communicates about the wearer — social class, occupation, attitude, history",
   "worn_by": ["types of people who wear this"],
-  "manufacturer": "brand or maker — corponation, street label, self-made, etc.",
+  "manufacturer": "brand or maker — CorpoNation, street label, self-made, etc.",
   "price_range": "price range using the \u03A6 (QUANTA) symbol",
   "aug_compatible": true or false,
   "gene_compatible": true or false,

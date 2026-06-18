@@ -1,4 +1,4 @@
-#!/usr/bin/env node
+﻿#!/usr/bin/env node
 // scrub_shelf_proper_noun.js
 // Final pass: cleans up remaining proper-noun "The Shelf" references in
 // people/, entertainment/, apparel/, and remaining directories.
@@ -15,8 +15,8 @@ const replacements = [
   // "The Shelf" / "the Shelf" proper noun → "the Gray Zone"
   [/\bThe Shelf\b/g, 'the Gray Zone'],
   [/\bthe [Ss]helf(?= [Cc]ommunity| [Cc]ommunities| [Cc]ompact| [Dd]ispensary| [Dd]ispensaries| [Gg]enerate| [Ww]as| [Hh]as| [Ii]s| [Aa]re| [Ww]here| [Tt]hat| [Ww]hose| [Oo]f)\b/g, 'the Gray Zone'],
-  // "upper Shelf" → "corponation territory"
-  [/\bupper [Ss]helf\b/g, 'corponation territory'],
+  // "upper Shelf" → "CorpoNation territory"
+  [/\bupper [Ss]helf\b/g, 'CorpoNation territory'],
   // "in The Shelf" / "in the Shelf"
   [/\bin [Tt]he [Ss]helf\b/g, 'in the Gray Zone'],
   // "Shelf communities" / "Shelf community"

@@ -1,4 +1,4 @@
-==BEAT 1==
+﻿==BEAT 1==
 TITLE: The Brief
 TEXT:
 Hua handed him the contract in the back of a kitchen Kyle had not previously known belonged to her. The kitchen was on the second floor of a noodle-and-soup operation in the corner of a Tier 3 corridor four blocks from Mrs. Chen's stall, which was a piece of geography Kyle filed without commenting on, because the geography meant that Hua had been running operations within shouting distance of Mrs. Chen for at least the four years Kyle had been eating at Mrs. Chen's, and Mrs. Chen had never mentioned this, which meant either Mrs. Chen did not know, which Kyle did not believe, or Mrs. Chen had decided Kyle did not need to know, which Kyle also did not entirely believe, or there was a third explanation, which Kyle had not yet identified.
@@ -7,7 +7,7 @@ The kitchen was hot. The wok burner under the right unit was running. The smell 
 
 "Extraction," she said. "Atlas-program continuation lab. Sealed cargo. Out."
 
-He read the brief. The brief was eight lines on a piece of paper. The brief did not name the cargo. The brief named the facility — a sub-tier complex in the northern outskirts that the corponation registry listed as a *long-term storage* facility and which Kyle's preliminary read flagged as something with a higher security envelope than long-term-storage facilities generally carried. The brief named the delivery method. The delivery method was the part Kyle read twice.
+He read the brief. The brief was eight lines on a piece of paper. The brief did not name the cargo. The brief named the facility — a sub-tier complex in the northern outskirts that the CorpoNation registry listed as a *long-term storage* facility and which Kyle's preliminary read flagged as something with a higher security envelope than long-term-storage facilities generally carried. The brief named the delivery method. The delivery method was the part Kyle read twice.
 
 "False Death Protocol," he said. Not a question.
 
@@ -38,7 +38,7 @@ The Vultures van that came to pick him up was the standard Vultures rig — matt
 
 Kyle changed in the back of the van. The clothes he had ridden over in went into a sealed bag. The clothes he changed into were the kind the Vultures pickup-bodies wore, which was no clothes at all — the morgue intake protocols stripped the bodies for processing and the Vultures had standardized on delivering bodies pre-stripped to save the intake nurses a step. He had brought Silence and Chorus in a separate sealed case that Stash placed in the rig's lockbox under the floor of the cargo bay. The case would arrive at the morgue intake but would not be processed with the body. The case would, by the operational plan Hua had laid out, be retrievable from the facility's external supply intake on the secondary timeline.
 
-Stash did the IV insertion himself. The IV carried the protocol's hibernation cocktail — a calibrated mix that, when run through Kyle's NeoCortex's intake-recognition subroutine, produced the signature the facility's morgue intake was looking for. The protocol did not put Kyle into hibernation in the way the corponation medical literature defined hibernation. It put Kyle into a state the NeoCortex had been built to enter on command — a complete partition between the conscious cortex and the body's surface-level autonomic functions, with the autonomic functions calibrated to register as *recently deceased* on every standard scan.
+Stash did the IV insertion himself. The IV carried the protocol's hibernation cocktail — a calibrated mix that, when run through Kyle's NeoCortex's intake-recognition subroutine, produced the signature the facility's morgue intake was looking for. The protocol did not put Kyle into hibernation in the way the CorpoNation medical literature defined hibernation. It put Kyle into a state the NeoCortex had been built to enter on command — a complete partition between the conscious cortex and the body's surface-level autonomic functions, with the autonomic functions calibrated to register as *recently deceased* on every standard scan.
 
 Stash's hand on his shoulder before he started the drip was the only gentleness Kyle was going to get for the next several hours. It was not, in Stash's framing, gentleness. It was operational reassurance. Stash had not delivered a False Death body in eleven months and he was going to be careful, and he wanted Kyle to know it. Kyle knew it. Kyle had filed Stash's eleven-month gap before he got in the van.
 
@@ -53,7 +53,7 @@ The drip started. The thirty seconds did what they did.
 ==BEAT 3==
 TITLE: Waking on the Slab
 TEXT:
-He came up on a slab in a room he had not previously seen and which his interior catalog began assembling within the first two seconds of consciousness — temperature seventeen Celsius, humidity controlled, the specific cold-storage smell of a Tier 4 corponation morgue intake, the LED overhead at the angle that meant the room had been retrofitted from a different use within the past decade. The body's autonomic functions were resuming. The NeoCortex was bringing the conscious cortex back online in the calibrated sequence the Atlas engineers had designed for exactly this transition.
+He came up on a slab in a room he had not previously seen and which his interior catalog began assembling within the first two seconds of consciousness — temperature seventeen Celsius, humidity controlled, the specific cold-storage smell of a Tier 4 CorpoNation morgue intake, the LED overhead at the angle that meant the room had been retrofitted from a different use within the past decade. The body's autonomic functions were resuming. The NeoCortex was bringing the conscious cortex back online in the calibrated sequence the Atlas engineers had designed for exactly this transition.
 
 He did not move. The Atlas engineers had also been clear, in the protocol's documentation Kyle had read once nineteen years ago and which he had retained in the way he retained things he did not want to need: do not move until the conscious cortex has come fully back online. Movement before full re-integration produced confusion the body could not resolve, and confusion at the morgue stage of the protocol was the difference between a successful extraction and a failed one.
 

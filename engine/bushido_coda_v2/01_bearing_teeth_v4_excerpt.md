@@ -1,4 +1,4 @@
----
+﻿---
 title: Bearing Teeth — v4 EXCERPT (proof of direction)
 book: Bushido Coda
 chapter: 1
@@ -16,12 +16,12 @@ The freight elevator was the only thing in the building that worked.
 
 The resident elevator had been there once. There was a shaft, and there were doors on
 every floor, and a piece of paper taped to one of them that said OUT OF SERVICE in three
-languages, none of them recent. The corponation that had built the resident elevator
-had filed for bankruptcy in 2207 and the corponation that had bought the bankrupt
-corponation had been bought by a third corponation, which was, by 2226, the body-pickup
+languages, none of them recent. The CorpoNation that had built the resident elevator
+had filed for bankruptcy in 2207 and the CorpoNation that had bought the bankrupt
+CorpoNation had been bought by a third CorpoNation, which was, by 2226, the body-pickup
 federation Carrion Logistics LLC. Carrion Logistics LLC did not maintain the resident
 elevator. Carrion Logistics LLC also did not maintain the bodies. The naming conventions
-of the late corponation era are best left to the historians, but suffice it to say
+of the late CorpoNation era are best left to the historians, but suffice it to say
 that the people in charge of carrying you home alive turned out, fifteen years later, to
 also be the people in charge of carrying you home dead, and the freight elevator was
 the only thing in the building that worked.
@@ -157,9 +157,9 @@ itemized on the invoice as *Compliance Verification* and which Carrion Logistics
 billing department did not, in this writer's opinion, name with sufficient honesty.
 
 (Carrion Logistics LLC was at the time of this writing the second-largest single
-employer in the GLMZ Lower Tiers, the largest being the corponation health system,
-which was a separate corponation that had been bought by the same parent corponation,
-which was a third corponation, which was Carrion Logistics LLC's grandparent
+employer in the GLMZ Lower Tiers, the largest being the CorpoNation health system,
+which was a separate CorpoNation that had been bought by the same parent CorpoNation,
+which was a third CorpoNation, which was Carrion Logistics LLC's grandparent
 corporation, which is to say that in the Gray Zone the people you bought your stall
 license from and the people who set your jaw afterwards were, ultimately, the same
 people, which was the kind of arrangement late capitalism produced with the same

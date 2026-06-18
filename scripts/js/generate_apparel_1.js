@@ -1,4 +1,4 @@
-// Apparel generator (footwear + pants/legwear) for StreetSamurai
+﻿// Apparel generator (footwear + pants/legwear) for StreetSamurai
 // Generates 200 apparel items as JSON files in engine/data/apparel/
 // Run: node generate_apparel_1.js
 // Does NOT overwrite existing files.
@@ -111,7 +111,7 @@ const WORLD_CONTEXT = `Setting: GLMZ, year 2200. A megacity in the Great Lakes c
 
 Technology: BCI (brain-computer interfaces) are common. Augmentation (cyberware/chrome) ranges from basic to military-grade. Geneware allows cosmetic and functional genetic modification (tails, bioluminescence, fur, horns, wings that don't work). Most people have some degree of augmentation or geneware — clothing must accommodate these body modifications.
 
-Corponations are sovereign corporate entities. They manufacture most goods. Street brands also exist — unlicensed, often better quality for specific niches, always with underground cachet.
+CorpoNations are sovereign corporate entities. They manufacture most goods. Street brands also exist — unlicensed, often better quality for specific niches, always with underground cachet.
 
 Ubiquitous Diaspora: By 2200, humanity is fully racially interbred. Fashion draws from every global tradition freely — no single culture dominates.
 
@@ -239,7 +239,7 @@ const BATCHES = [
   {
     label: 'Pants Batch 8 — Tier 3-4 Corporate/Dress',
     count: 10,
-    prompt: `Generate {count} PANTS/LEGWEAR items: Tier 3-4 corporate and dress pants. Suit trousers, corporate uniform pants, business-casual slacks, smart-fabric pencil skirts, formal kilts (fashion statement in 2200), dress shorts for warm-weather offices. What people wear to corponation offices. Prices Φ60-Φ300.`
+    prompt: `Generate {count} PANTS/LEGWEAR items: Tier 3-4 corporate and dress pants. Suit trousers, corporate uniform pants, business-casual slacks, smart-fabric pencil skirts, formal kilts (fashion statement in 2200), dress shorts for warm-weather offices. What people wear to CorpoNation offices. Prices Φ60-Φ300.`
   },
   {
     label: 'Pants Batch 9 — Tier 4-5 Luxury Legwear',

@@ -1,13 +1,13 @@
-#!/usr/bin/env node
-// Adds glmzTerritory field to all corponation JSON files.
-// Corponations with no GLMZ presence are skipped (no field added).
+﻿#!/usr/bin/env node
+// Adds glmzTerritory field to all CorpoNation JSON files.
+// CorpoNations with no GLMZ presence are skipped (no field added).
 
 const fs = require('fs');
 const path = require('path');
 
-const CORP_DIR = path.join(__dirname, '..', 'engine', 'data', 'corponations');
+const CORP_DIR = path.join(__dirname, '..', 'engine', 'data', 'CorpoNations');
 
-// Full territory map. Key = exact corponation name field.
+// Full territory map. Key = exact CorpoNation name field.
 const TERRITORY_MAP = {
 
   "Arcturus Defense Solutions": {
@@ -15,7 +15,7 @@ const TERRITORY_MAP = {
     primaryZone: "Z1",
     lakefrontAccess: false,
     description: "The Coldwall Quarter — former federal district south of the Chicago Loop, now Arcturus's primary GLMZ installation and home of the Civil Security Division. Provides contracted civil security across all Zone 1 sovereign territories; secondary monitoring presence in every zone via facility security contracts.",
-    grayZoneRelationship: "Active perimeter monitoring on all Zone 1 Gray Zone margins. Does not patrol Gray Zone interiors except under corponation contract."
+    grayZoneRelationship: "Active perimeter monitoring on all Zone 1 Gray Zone margins. Does not patrol Gray Zone interiors except under CorpoNation contract."
   },
 
   "Ashford Signal": {
@@ -23,14 +23,14 @@ const TERRITORY_MAP = {
     primaryZone: "Z4",
     lakefrontAccess: true,
     description: "Headquarters at the former Great Lakes Naval Station complex in Waukegan (Zone 4), plus 140 hardened relay stations distributed throughout every GLMZ zone. Sovereign territory is the 22-floor Ashford Pinnacle tower plus air rights to 400 meters above each relay station.",
-    grayZoneRelationship: "Relay stations are positioned in both corponation territory and Gray Zones. Gray Zone informal governance bodies do not challenge Ashford installations because losing the signal would cost them more than tolerating the presence."
+    grayZoneRelationship: "Relay stations are positioned in both CorpoNation territory and Gray Zones. Gray Zone informal governance bodies do not challenge Ashford installations because losing the signal would cost them more than tolerating the presence."
   },
 
   "Ashgrave Materials": {
     zones: ["Z6", "Z11"],
     primaryZone: "Z6",
     lakefrontAccess: true,
-    description: "The Ashgrave Synthesis Corridor — continuous industrial zone from South Chicago through Gary and Hammond along the southern Lake Michigan shore, extending east through Michigan City into the Zone 11 southern wrap. The largest single contiguous corponation territory in the GLMZ by land area. Most polluted sovereign zone in the Corridor.",
+    description: "The Ashgrave Synthesis Corridor — continuous industrial zone from South Chicago through Gary and Hammond along the southern Lake Michigan shore, extending east through Michigan City into the Zone 11 southern wrap. The largest single contiguous CorpoNation territory in the GLMZ by land area. Most polluted sovereign zone in the Corridor.",
     grayZoneRelationship: "Ashgrave territory is the lakefront industrial strip. The neighborhoods behind their facilities are Zone 6 Gray Zones — the most dangerous in the Corridor. Ashgrave maintains no formal relationship with these communities."
   },
 
@@ -38,7 +38,7 @@ const TERRITORY_MAP = {
     zones: ["Z∞"],
     primaryZone: "Z∞",
     lakefrontAccess: true,
-    description: "The Bathysphere Deep Territories — 12,000 square kilometers of sovereign subsurface space beneath Lake Michigan, extending 40 meters below the lake bed. Bathysphere Hub primary installation sits 40 meters below the lake surface near the former Chicago lakefront. The sole sovereign entity of Zone ∞ and the most strategically critical infrastructure corponation in the Corridor.",
+    description: "The Bathysphere Deep Territories — 12,000 square kilometers of sovereign subsurface space beneath Lake Michigan, extending 40 meters below the lake bed. Bathysphere Hub primary installation sits 40 meters below the lake surface near the former Chicago lakefront. The sole sovereign entity of Zone ∞ and the most strategically critical infrastructure CorpoNation in the Corridor.",
     grayZoneRelationship: "Operates below-market access agreements with Gray Zone councils for subsurface data and power connectivity. The fees are modest; the dependency is absolute."
   },
 
@@ -46,7 +46,7 @@ const TERRITORY_MAP = {
     zones: ["Z12"],
     primaryZone: "Z12",
     lakefrontAccess: true,
-    description: "The Carrion Yards — fortified industrial peninsula on the Lake Erie shore in the Cleveland tendril corridor. Produces autonomous defense platforms and hardened perimeter systems sold to both GLMZ corponations and the independent Cleveland corponation ecosystem.",
+    description: "The Carrion Yards — fortified industrial peninsula on the Lake Erie shore in the Cleveland tendril corridor. Produces autonomous defense platforms and hardened perimeter systems sold to both GLMZ CorpoNations and the independent Cleveland CorpoNation ecosystem.",
     grayZoneRelationship: "The Carrion Yards perimeter is aggressively defended by automated systems. Adjacent Gray Zone communities have learned not to test it."
   },
 
@@ -78,15 +78,15 @@ const TERRITORY_MAP = {
     zones: ["Z3"],
     primaryZone: "Z3",
     lakefrontAccess: false,
-    description: "The Veil Campus — fortified intelligence and behavioral analysis complex in the Evanston buffer zone of Zone 3. Sells corponation intelligence to other corponations; their neutral-zone position between Zone 1-2 power centers and Zone 4+ infrastructure allows independent operation without becoming a client of any single power.",
-    grayZoneRelationship: "Pays premium rates for intelligence sourced from Gray Zone networks. Their most reliable assets are people the corponations do not bother to watch."
+    description: "The Veil Campus — fortified intelligence and behavioral analysis complex in the Evanston buffer zone of Zone 3. Sells CorpoNation intelligence to other CorpoNations; their neutral-zone position between Zone 1-2 power centers and Zone 4+ infrastructure allows independent operation without becoming a client of any single power.",
+    grayZoneRelationship: "Pays premium rates for intelligence sourced from Gray Zone networks. Their most reliable assets are people the CorpoNations do not bother to watch."
   },
 
   "Cormorant Naval Systems": {
     zones: ["Z∞", "Z12"],
     primaryZone: "Z∞",
     lakefrontAccess: true,
-    description: "Network of fortified offshore platforms and reclaimed lake infrastructure spanning the Great Lakes, with primary operations in Lake Michigan and Lake Erie (Zone 12 tendril). Manufactures and maintains the autonomous naval platforms that patrol corponation maritime territories throughout the Corridor.",
+    description: "Network of fortified offshore platforms and reclaimed lake infrastructure spanning the Great Lakes, with primary operations in Lake Michigan and Lake Erie (Zone 12 tendril). Manufactures and maintains the autonomous naval platforms that patrol CorpoNation maritime territories throughout the Corridor.",
     grayZoneRelationship: "No formal Gray Zone relationships. Operates exclusively in water."
   },
 
@@ -118,8 +118,8 @@ const TERRITORY_MAP = {
     zones: ["Z7", "Z1", "Z2", "Z3", "Z4", "Z5", "Z6", "Z8", "Z9", "Z10", "Z11", "Z12"],
     primaryZone: "Z7",
     lakefrontAccess: false,
-    description: "No consolidated physical territory. Distributed sensor network spanning the entire GLMZ — sovereign claim consists of the sensor installations plus a 10-meter exclusion radius around each. Headquarters in Kenosha interior, Zone 7. Sells environmental, structural, and atmospheric data to all GLMZ corponations simultaneously, maintaining technical neutrality that has survived three major corponation conflicts.",
-    grayZoneRelationship: "Sensor arrays blanket Gray Zones as thoroughly as corponation territories. Emberlace does not share Gray Zone sensor data with corponations without Gray Zone council consent — this policy has been tested twice in arbitration and held both times."
+    description: "No consolidated physical territory. Distributed sensor network spanning the entire GLMZ — sovereign claim consists of the sensor installations plus a 10-meter exclusion radius around each. Headquarters in Kenosha interior, Zone 7. Sells environmental, structural, and atmospheric data to all GLMZ CorpoNations simultaneously, maintaining technical neutrality that has survived three major CorpoNation conflicts.",
+    grayZoneRelationship: "Sensor arrays blanket Gray Zones as thoroughly as CorpoNation territories. Emberlace does not share Gray Zone sensor data with CorpoNations without Gray Zone council consent — this policy has been tested twice in arbitration and held both times."
   },
 
   "Fascia Global": {
@@ -134,7 +134,7 @@ const TERRITORY_MAP = {
     zones: ["Z5", "Z1", "Z2", "Z3", "Z4", "Z6", "Z7", "Z8", "Z9", "Z10", "Z11", "Z12"],
     primaryZone: "Z5",
     lakefrontAccess: false,
-    description: "The Ferrogate Corridor — 1,400 kilometers of sovereign right-of-way encompassing all operated rail lines plus 50-meter exclusion zones on each side, threading through every GLMZ zone. Primary hub at the former O'Hare International Airport (now GLMZ Interzone Freight Exchange) and Union Station. The only corponation in the Corridor whose territory is formally topological rather than geographic.",
+    description: "The Ferrogate Corridor — 1,400 kilometers of sovereign right-of-way encompassing all operated rail lines plus 50-meter exclusion zones on each side, threading through every GLMZ zone. Primary hub at the former O'Hare International Airport (now GLMZ Interzone Freight Exchange) and Union Station. The only CorpoNation in the Corridor whose territory is formally topological rather than geographic.",
     grayZoneRelationship: "Rail lines pass through Gray Zones without stopping — the corridor is sovereign regardless of what surrounds it. Gray Zone communities near Ferrogate lines use proximity for unofficial loading, which Ferrogate tolerates below a volume threshold they have never published."
   },
 
@@ -142,7 +142,7 @@ const TERRITORY_MAP = {
     zones: ["Z8"],
     primaryZone: "Z8",
     lakefrontAccess: true,
-    description: "The Ferment Quarter — 14-square-kilometer wetland-industrial zone on the southern Milwaukee lakefront, Zone 8. Experimental biotechnology research; one of the few corponation laboratories in the GLMZ that publishes research findings. Maintains formal collaboration agreements with Vellichor Institute.",
+    description: "The Ferment Quarter — 14-square-kilometer wetland-industrial zone on the southern Milwaukee lakefront, Zone 8. Experimental biotechnology research; one of the few CorpoNation laboratories in the GLMZ that publishes research findings. Maintains formal collaboration agreements with Vellichor Institute.",
     grayZoneRelationship: "The Ferment Quarter's edges are permeable by Zone 8 standards. Gravemoss recruits from Milwaukee Gray Zone communities — unusual enough to be noteworthy."
   },
 
@@ -166,8 +166,8 @@ const TERRITORY_MAP = {
     zones: ["Z9", "Z10"],
     primaryZone: "Z9",
     lakefrontAccess: true,
-    description: "Irontide Anchor Platform — primary floating sovereign installation anchored 4.7 kilometers off the Wisconsin shoreline, Zone 9, with additional platforms distributed through Zone 10 Door Peninsula waters. Lake current generation sold to Zone 8-10 corponations and Gray Zone councils.",
-    grayZoneRelationship: "Zone 9 Gray Zone communities access Irontide power at the same pricing tier as small corponations. The generosity is strategic: hostile Gray Zone communities would interfere with shore access corridors."
+    description: "Irontide Anchor Platform — primary floating sovereign installation anchored 4.7 kilometers off the Wisconsin shoreline, Zone 9, with additional platforms distributed through Zone 10 Door Peninsula waters. Lake current generation sold to Zone 8-10 CorpoNations and Gray Zone councils.",
+    grayZoneRelationship: "Zone 9 Gray Zone communities access Irontide power at the same pricing tier as small CorpoNations. The generosity is strategic: hostile Gray Zone communities would interfere with shore access corridors."
   },
 
   "Kelpline Logistics": {
@@ -175,7 +175,7 @@ const TERRITORY_MAP = {
     primaryZone: "Z9",
     lakefrontAccess: true,
     description: "Coastal freight distribution network operating shallow-draft vessels along the Zone 8-10 shoreline — the Zone 9 equivalent of Ferrogate's rail network. Sovereign territory consists of the vessels and their documented routes plus berthing rights at 34 recognized ports.",
-    grayZoneRelationship: "Delivers to Gray Zone coastal communities on the same schedule as corponation clients, at higher rates. The premium is not negotiable. Neither is the access."
+    grayZoneRelationship: "Delivers to Gray Zone coastal communities on the same schedule as CorpoNation clients, at higher rates. The premium is not negotiable. Neither is the access."
   },
 
   "Lacuna Genomics": {
@@ -199,7 +199,7 @@ const TERRITORY_MAP = {
     primaryZone: "Z7",
     lakefrontAccess: true,
     description: "GLMZ operations centered on the Racine port complex, Zone 7 — petrochemical processing and distribution hub for the northern Corridor. Primary sovereign territory is the Shanghai-Vladivostok Free Economic Zone; the Racine installation is the Consortium's primary Western Hemisphere operation, reflecting the founding families' need for Great Lakes access to the global supply chain.",
-    grayZoneRelationship: "Proximity to the Zone 7 Gray Zone interior has produced informal labor arrangements that the Consortium's founding families view as pragmatic and Zone 1 corponations view as a governance failure."
+    grayZoneRelationship: "Proximity to the Zone 7 Gray Zone interior has produced informal labor arrangements that the Consortium's founding families view as pragmatic and Zone 1 CorpoNations view as a governance failure."
   },
 
   "Libation Corporation": {
@@ -214,7 +214,7 @@ const TERRITORY_MAP = {
     zones: ["Z5"],
     primaryZone: "Z5",
     lakefrontAccess: false,
-    description: "The Marrowvault Preserve — vast underground sovereign facility beneath the western Chicago suburbs of Zone 5. Long-term biological preservation for corponation executives and high-tier citizens. The most secure and least visible sovereign territory in the GLMZ — most Zone 5 residents above it have no idea it exists.",
+    description: "The Marrowvault Preserve — vast underground sovereign facility beneath the western Chicago suburbs of Zone 5. Long-term biological preservation for CorpoNation executives and high-tier citizens. The most secure and least visible sovereign territory in the GLMZ — most Zone 5 residents above it have no idea it exists.",
     grayZoneRelationship: "No interface with Gray Zone communities. The Marrowvault's surface footprint is a parking structure."
   },
 
@@ -230,7 +230,7 @@ const TERRITORY_MAP = {
     zones: ["Z12"],
     primaryZone: "Z12",
     lakefrontAccess: false,
-    description: "Nightshade Campus — 9-square-kilometer pharmaceutical research facility embedded within the Detroit Reclamation Zone of Zone 12's Michigan tendril corridor. Operates in Detroit's regulatory ambiguity, conducting research that Zone 1-3 corponation governance would not permit.",
+    description: "Nightshade Campus — 9-square-kilometer pharmaceutical research facility embedded within the Detroit Reclamation Zone of Zone 12's Michigan tendril corridor. Operates in Detroit's regulatory ambiguity, conducting research that Zone 1-3 CorpoNation governance would not permit.",
     grayZoneRelationship: "Detroit's Gray Zone communities are Nightshade's primary clinical test population. The relationship is transactional and not voluntary in any meaningful sense."
   },
 
@@ -254,7 +254,7 @@ const TERRITORY_MAP = {
     zones: ["Z8", "Z7", "Z9"],
     primaryZone: "Z8",
     lakefrontAccess: false,
-    description: "The Ouroboros Ring — continuous sovereign energy corridor running the Zone 7-9 power infrastructure, centered on the Milwaukee Menomonee River campus. Controls power distribution for Zones 7, 8, and 9. Every corponation in these zones pays Ouroboros for electricity; the leverage this creates is Ouroboros's primary political instrument.",
+    description: "The Ouroboros Ring — continuous sovereign energy corridor running the Zone 7-9 power infrastructure, centered on the Milwaukee Menomonee River campus. Controls power distribution for Zones 7, 8, and 9. Every CorpoNation in these zones pays Ouroboros for electricity; the leverage this creates is Ouroboros's primary political instrument.",
     grayZoneRelationship: "Gray Zone communities in Zones 7-9 access Ouroboros power through informal tap agreements that Ouroboros monitors but does not enforce against, because the load is trivial and the political cost of enforcement is not."
   },
 
@@ -262,15 +262,15 @@ const TERRITORY_MAP = {
     zones: ["Z12"],
     primaryZone: "Z12",
     lakefrontAccess: false,
-    description: "Lantern Quarter — 0.8-square-kilometer neutral-zone enclave in the Detroit tendril corridor of Zone 12. Provides independent bioethics review services for corponation research programs seeking ethical certification without Zone 1-3 regulatory scrutiny. The certification is genuine. The regulatory environment that makes the distinction meaningful is not.",
-    grayZoneRelationship: "Occasionally represents Gray Zone communities in disputes with corponations over research practices. This is genuinely unusual and makes Pale Lantern enemies in Zone 1."
+    description: "Lantern Quarter — 0.8-square-kilometer neutral-zone enclave in the Detroit tendril corridor of Zone 12. Provides independent bioethics review services for CorpoNation research programs seeking ethical certification without Zone 1-3 regulatory scrutiny. The certification is genuine. The regulatory environment that makes the distinction meaningful is not.",
+    grayZoneRelationship: "Occasionally represents Gray Zone communities in disputes with CorpoNations over research practices. This is genuinely unusual and makes Pale Lantern enemies in Zone 1."
   },
 
   "Palladian Construction": {
     zones: ["Z6", "Z11"],
     primaryZone: "Z6",
     lakefrontAccess: false,
-    description: "Palladian Prime — sovereign industrial zone in the Gary, Indiana ruins and extending into Zone 11's southern wrap. Materials warehousing, fabrication facilities, and the largest crane fleet in the Corridor. Palladian built most of the GLMZ's corponation facilities during the 2150-2190 construction surge and retained the territory they built on.",
+    description: "Palladian Prime — sovereign industrial zone in the Gary, Indiana ruins and extending into Zone 11's southern wrap. Materials warehousing, fabrication facilities, and the largest crane fleet in the Corridor. Palladian built most of the GLMZ's CorpoNation facilities during the 2150-2190 construction surge and retained the territory they built on.",
     grayZoneRelationship: "Palladian's Gary territory borders some of Zone 6's most dangerous Gray Zones. They maintain a private security force of 2,400 personnel specifically for perimeter enforcement."
   },
 
@@ -302,16 +302,16 @@ const TERRITORY_MAP = {
     zones: ["Z2"],
     primaryZone: "Z2",
     lakefrontAccess: false,
-    description: "The Rictus Pleasure Corridor — 14-kilometer strip of sovereign entertainment territory in the Lakeview district, Zone 2, anchored by the Wrigley Field Entertainment Complex. The GLMZ's dominant entertainment corponation engineers spaces that feel open and permissive while maintaining comprehensive surveillance. The feeling of permission is the product.",
+    description: "The Rictus Pleasure Corridor — 14-kilometer strip of sovereign entertainment territory in the Lakeview district, Zone 2, anchored by the Wrigley Field Entertainment Complex. The GLMZ's dominant entertainment CorpoNation engineers spaces that feel open and permissive while maintaining comprehensive surveillance. The feeling of permission is the product.",
     grayZoneRelationship: "Operates content-gathering operations in Gray Zones that feed their 'authentic experience' product lines. Gray Zone residents are frequently unaware they are being filmed for commercial distribution."
   },
 
-  "Ringo Corponation": {
+  "Ringo CorpoNation": {
     zones: ["Z4", "Z1", "Z2", "Z3", "Z8"],
     primaryZone: "Z4",
     lakefrontAccess: false,
     description: "28 chartered zones globally; GLMZ presence concentrated in Zone 4's Northern Operations augmentation service corridor, Zone 1 financial and executive services, and Zone 8 Milwaukee distribution. Ringo's GLMZ operations function as a consumer access corridor for augmentation and transit services rather than a primary territorial holding.",
-    grayZoneRelationship: "Ringo augmentation service centers at Zone 4's fringes accept Tier 2 walk-in clients — functionally serving the better-resourced Gray Zone residents. These centers are the most accessible point of the corponation system for Gray Zone populations in Zones 3-5."
+    grayZoneRelationship: "Ringo augmentation service centers at Zone 4's fringes accept Tier 2 walk-in clients — functionally serving the better-resourced Gray Zone residents. These centers are the most accessible point of the CorpoNation system for Gray Zone populations in Zones 3-5."
   },
 
   "Saltmarsh Telecom": {
@@ -334,8 +334,8 @@ const TERRITORY_MAP = {
     zones: ["Z8"],
     primaryZone: "Z8",
     lakefrontAccess: true,
-    description: "Climate-controlled arcology tower cluster on the Milwaukee lakefront, Zone 8. Data storage, processing, and logistics for the northern Corridor. Silkworm grew from local Milwaukee capital during the city's industrial data infrastructure buildout — one of the few Zone 8 corponations that was not assembled by Chicago expansion.",
-    grayZoneRelationship: "Provides data storage services to Zone 8 Gray Zone mutual organizations at cost — the most significant example of cooperative corponation-Gray Zone infrastructure in the northern Corridor."
+    description: "Climate-controlled arcology tower cluster on the Milwaukee lakefront, Zone 8. Data storage, processing, and logistics for the northern Corridor. Silkworm grew from local Milwaukee capital during the city's industrial data infrastructure buildout — one of the few Zone 8 CorpoNations that was not assembled by Chicago expansion.",
+    grayZoneRelationship: "Provides data storage services to Zone 8 Gray Zone mutual organizations at cost — the most significant example of cooperative CorpoNation-Gray Zone infrastructure in the northern Corridor."
   },
 
   "Slagworks Industrial": {
@@ -362,7 +362,7 @@ const TERRITORY_MAP = {
     grayZoneRelationship: "Employs Gray Zone labor from Zones 8-10 on short-term contracts that are technically renewable and practically permanent."
   },
 
-  "Tessera Corponation": {
+  "Tessera CorpoNation": {
     zones: ["Z1"],
     primaryZone: "Z1",
     lakefrontAccess: true,
@@ -375,7 +375,7 @@ const TERRITORY_MAP = {
     primaryZone: "Z10",
     lakefrontAccess: true,
     description: "The Thornback Basin — 4,200 square kilometers of sovereign agricultural and industrial territory across the Door Peninsula and Fox River Valley, Zone 10. Agricultural chemistry, soil science, and specialty compound production derived from northern Great Lakes microbial ecosystems. Thornback maintains the Door Peninsula's farming communities as a managed resource under long-term supply agreements.",
-    grayZoneRelationship: "Door Peninsula rural communities exist in an ambiguous relationship with Thornback that resembles corponation tenancy without formal tier classification. Thornback prefers the ambiguity; it costs less than the alternative."
+    grayZoneRelationship: "Door Peninsula rural communities exist in an ambiguous relationship with Thornback that resembles CorpoNation tenancy without formal tier classification. Thornback prefers the ambiguity; it costs less than the alternative."
   },
 
   "Tollgate Systems": {
@@ -383,7 +383,7 @@ const TERRITORY_MAP = {
     primaryZone: "Z1",
     lakefrontAccess: false,
     description: "Distributed sovereign access-control infrastructure throughout the southern GLMZ. Tollgate holds sovereign rights-of-way at key transit choke points and levies access fees that function as informal taxation without the political liabilities of formal governance. No contiguous territory; control exercised through infrastructure rather than land.",
-    grayZoneRelationship: "Tollgate systems at Gray Zone entry points are the primary physical manifestation of corponation authority that most Gray Zone residents encounter in daily movement."
+    grayZoneRelationship: "Tollgate systems at Gray Zone entry points are the primary physical manifestation of CorpoNation authority that most Gray Zone residents encounter in daily movement."
   },
 
   "Vantablack Media": {
@@ -391,7 +391,7 @@ const TERRITORY_MAP = {
     primaryZone: "Z2",
     lakefrontAccess: true,
     description: "The Vantablack Spire — Chicago Lakeshore Sector 7 in northern Zone 2, plus seventeen embedded broadcast installations throughout the Corridor. Produces the GLMZ's most politically aggressive content slate. Vantablack's adversarial positioning relative to Waxwing and Mirrorwell is deliberate — their audience exists because they show what the other two will not.",
-    grayZoneRelationship: "Vantablack Gray Zone coverage is the most extensive and least exploitative of any media corponation in the GLMZ. This is their brand as much as their ethics."
+    grayZoneRelationship: "Vantablack Gray Zone coverage is the most extensive and least exploitative of any media CorpoNation in the GLMZ. This is their brand as much as their ethics."
   },
 
   "Vellichor Institute": {
@@ -457,4 +457,4 @@ for (const file of files) {
   console.log(`  ✓ ${name} → ${TERRITORY_MAP[name].primaryZone}`);
 }
 
-console.log(`\nDone. ${patched} corponations patched, ${skipped} skipped (no GLMZ presence).`);
+console.log(`\nDone. ${patched} CorpoNations patched, ${skipped} skipped (no GLMZ presence).`);

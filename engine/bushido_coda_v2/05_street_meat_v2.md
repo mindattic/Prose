@@ -1,4 +1,4 @@
----
+﻿---
 title: Street Meat
 book: Bushido Coda
 chapter: 5
@@ -58,7 +58,7 @@ He sat. The chair across from her was the one for visitors. The bolted chair aga
 
 She slid a single sheet across the table.
 
-The sheet had a manifest code, a payment figure (Φ47,000, half on accept, half on confirmation of delivery), a window (03:00 to 06:00, firm), and an address. The address was a corponation facility on the buffer-zone perimeter — Atlas-program continuation lab, Helix-subcontracted intake. He had run two extractions inside facilities of this taxonomy before. The taxonomy was on the page. The cargo was not.
+The sheet had a manifest code, a payment figure (Φ47,000, half on accept, half on confirmation of delivery), a window (03:00 to 06:00, firm), and an address. The address was a CorpoNation facility on the buffer-zone perimeter — Atlas-program continuation lab, Helix-subcontracted intake. He had run two extractions inside facilities of this taxonomy before. The taxonomy was on the page. The cargo was not.
 
 "Cargo."
 

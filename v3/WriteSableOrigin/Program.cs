@@ -210,7 +210,7 @@ She took a careful sip of the coffee. It was bad coffee. He brought her bad coff
 
 She did not. She drank the bad coffee and read the next slug — a four-minute filler segment on the Pulse's new direct service to Reykjavík. The numbers were boring, the script was boring, the engineering was a marvel, nobody would remember it by 0900. She made the engineering sound like the marvel it was. The red light went off.
 
-At 1015 the floor manager came into the booth and said the morning meeting had been moved to the eighth-floor conference room, and could she stop by. Rhea said she could. The floor manager did not meet her eyes. The floor manager was a woman named Imani who had two daughters, both in the West Lakeshore school district, and who would in fourteen years have lost the school district to a private corponation-academy contract Axiom would write the day before bid lock; on this Tuesday in October, Imani did not look at Rhea because she had been told what the eighth-floor meeting was about, and Imani was not good at small lies.
+At 1015 the floor manager came into the booth and said the morning meeting had been moved to the eighth-floor conference room, and could she stop by. Rhea said she could. The floor manager did not meet her eyes. The floor manager was a woman named Imani who had two daughters, both in the West Lakeshore school district, and who would in fourteen years have lost the school district to a private CorpoNation-academy contract Axiom would write the day before bid lock; on this Tuesday in October, Imani did not look at Rhea because she had been told what the eighth-floor meeting was about, and Imani was not good at small lies.
 
 The eighth-floor conference room held forty people. Tessera had thirty-eight employees on that floor. The two additional chairs were taken by men Rhea did not recognize, and one of them was wearing a watch she had described in a segment four months ago. The segment had been about Axiom Industries' executive culture. The watch was real and worth, she remembered cleanly, four hundred and twenty thousand quanta — Φ420,000 — and the man wearing it was smiling at her as if she had complimented him personally.
 
@@ -358,7 +358,7 @@ She sat down anyway. She opened the white paper draft. She wrote, with the curso
 
 She went home. She did not cook. She drank a glass of cold water from the tap and stood at the balcony and watched the Pulse station's slugs surface and dip at thirty-second intervals. The thrumline was perceptible through the balcony floor. *The city talking to itself.* The Glooms ten kilometers east. The Tier 1 bank she would, in four days, walk into for the first time.
 
-The bank was called Pacific Edge Mutual. It did not advertise. It served the Tier 1 residents the corponations did not. Its lobby was three meters wide and lit by a single yellowed fixture. Its safe-deposit boxes were the smallest size the city's deposit-box industry made. She rented a box for eleven years' prepaid, paid in cash, and gave a name that was not Rhea Adesanya-MacGregor and was not yet Sable.
+The bank was called Pacific Edge Mutual. It did not advertise. It served the Tier 1 residents the CorpoNations did not. Its lobby was three meters wide and lit by a single yellowed fixture. Its safe-deposit boxes were the smallest size the city's deposit-box industry made. She rented a box for eleven years' prepaid, paid in cash, and gave a name that was not Rhea Adesanya-MacGregor and was not yet Sable.
 
 She had spent two days, before walking to the bank, copying the OPTIC-7 document onto thermal paper in a cipher of her own design. The cipher was simple — a transposition with a seed she had memorized at fourteen, from a children's book her grandmother had loved. The transposition would not survive a serious cryptanalytic attack. It would survive a casual one. It would survive long enough for her to be elsewhere by the time anyone found the box.
 
@@ -546,7 +546,7 @@ She walked out of the basement at 1611. It was raining. The GLMZ had scheduled r
 
 She walked three corridors over and bought a coat.
 
-The coat was tan. It was knee-length. It was well-cut. It had deep pockets. The stall-keeper, an old man who had not asked her name and had not commented on the implants, had it on a rack of three identical coats, all in tan, all knee-length, all well-cut, all with deep pockets. He had been a tailor at a Tier 3 firm in his thirties. The firm had gone under in a corponation consolidation in his fifties. He had moved to the Circuit and sold coats. The coats were the work he had done at the firm; the prices were the only thing the consolidation had changed.
+The coat was tan. It was knee-length. It was well-cut. It had deep pockets. The stall-keeper, an old man who had not asked her name and had not commented on the implants, had it on a rack of three identical coats, all in tan, all knee-length, all well-cut, all with deep pockets. He had been a tailor at a Tier 3 firm in his thirties. The firm had gone under in a CorpoNation consolidation in his fifties. He had moved to the Circuit and sold coats. The coats were the work he had done at the firm; the prices were the only thing the consolidation had changed.
 
 She paid in cash. She put the coat on. She put her hands in the pockets. She left the stall.
 

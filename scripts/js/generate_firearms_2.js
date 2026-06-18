@@ -1,4 +1,4 @@
-const fs = require('fs');
+﻿const fs = require('fs');
 const path = require('path');
 const crypto = require('crypto');
 
@@ -101,7 +101,7 @@ const assaultRifles = [
     cultural_context: "The Ironmonger has a cult following among anti-corporate frontier communities and old-school operators who view BCI-linked weapons as surveillance tools with triggers. Crucible cultivates this identity deliberately — their marketing emphasizes independence, self-reliance, and freedom from corporate ecosystems. In Tier 1-2 settlements, the FR-9 is often the most advanced weapon available and the most trusted.",
     known_users: ["Frontier security forces", "Independent mining operations", "Anti-corporate militia groups", "Tier 2 settlement defense"],
     story_hooks: [
-      "A Crucible Industries factory has been producing FR-9s with hidden RFID trackers at the request of a corponation that wants to map militia supply chains.",
+      "A Crucible Industries factory has been producing FR-9s with hidden RFID trackers at the request of a CorpoNation that wants to map militia supply chains.",
       "An FR-9 recovered from a crime scene has serial numbers that trace back to a batch supposedly destroyed in a factory fire — someone faked the destruction records."
     ],
     ammunition_type: ["7.62mm caseless standard", "7.62mm caseless heavy"],
@@ -124,7 +124,7 @@ const assaultRifles = [
     known_users: ["Community defense militias", "Tier 1-2 security forces", "Corporate auxiliary units", "Refugee defense networks"],
     story_hooks: [
       "One of the fourteen licensed KPA-15 manufacturers has been producing weapons with deliberately weakened firing pins — the rifles function for approximately 200 rounds before catastrophic failure.",
-      "A community militia discovers that the BCI-link modules on their Diasporas are transmitting location data to a corponation that plans to annex their territory."
+      "A community militia discovers that the BCI-link modules on their Diasporas are transmitting location data to a CorpoNation that plans to annex their territory."
     ],
     ammunition_type: ["5.56mm standard", "5.56mm tracer"],
     tags: ["weapon", "assault_rifle", "mass_production", "affordable", "ubiquitous", "militia", "tier 1"]
@@ -274,7 +274,7 @@ const assaultRifles = [
     base_technologies: ["Single-stage electromagnetic acceleration", "Gravity-fed hopper magazine", "Integrated capacitor stock"],
     specifications: "caliber: 3mm steel-core projectile\neffective_range: 400m\nrate_of_fire: 200 rpm (capacitor-limited)\nmagazine_capacity: 40 projectiles per charge\nweight: 3.8 kg",
     tactical_use: "The KPA-20E provides electromagnetic capability at a fraction of military cost. While it cannot match the MAR-8X's penetration or range, the Thunderclap's steel-core projectiles defeat Level II body armor and most personal barriers. The lack of chemical propellant means no muzzle flash and minimal sound signature — the electromagnetic hum and supersonic crack are the only signatures. Useful for operators who need the advantages of EM acceleration without the expense.",
-    cultural_context: "The Thunderclap represents Kang-Petrov's mission to democratize weapons technology. Corporate arms manufacturers have lobbied for restrictions on civilian electromagnetic weapons, arguing that the technology is inherently military-grade. Kang-Petrov's legal team has fought every restriction, positioning the KPA-20E as a test case for whether corponations can monopolize entire categories of arms technology.",
+    cultural_context: "The Thunderclap represents Kang-Petrov's mission to democratize weapons technology. Corporate arms manufacturers have lobbied for restrictions on civilian electromagnetic weapons, arguing that the technology is inherently military-grade. Kang-Petrov's legal team has fought every restriction, positioning the KPA-20E as a test case for whether CorpoNations can monopolize entire categories of arms technology.",
     known_users: ["Independent operators", "Tech-forward militia groups", "Tier 2-3 security contractors"],
     story_hooks: [
       "Arcturus Defense Solutions is funding a legal campaign to classify all electromagnetic weapons as military-exclusive technology — if they succeed, every KPA-20E owner becomes a felon overnight.",
@@ -431,7 +431,7 @@ const assaultRifles = [
     cultural_context: "The Solidarity is a symbol of armed labor resistance. Its very existence challenges the corporate monopoly on organized violence, and Kang-Petrov's willingness to face corporate retaliation to produce it has elevated the company to near-mythical status among worker movements. Union halls prominently display Solidarity rifles, and the weapon's profile appears on labor movement flags and patches across GLMZ.",
     known_users: ["Worker cooperative defense forces", "Trade union security", "Labor movement militias", "Community mutual defense organizations"],
     story_hooks: [
-      "A major corponation has placed a bounty on the source code repository for the Solidarity's open-source BCI software — destroying it would leave thousands of rifles without fire-control updates.",
+      "A major CorpoNation has placed a bounty on the source code repository for the Solidarity's open-source BCI software — destroying it would leave thousands of rifles without fire-control updates.",
       "Kang-Petrov is secretly shipping Solidarity rifles to workers inside a corporate enclave preparing for a strike. If the shipment is intercepted, it will be treated as an act of war."
     ],
     ammunition_type: ["5.56mm standard", "5.56mm AP"],
@@ -745,7 +745,7 @@ const smgs = [
     cultural_context: "The Hearth Guard is the weapon of shopkeepers, teachers, and parents. It lives in bedroom closets and behind store counters, and most of them are never fired outside of basic familiarization. Hearthstone markets the HDS-5 with images of ordinary people in ordinary spaces — a deliberate contrast to the operator-focused marketing of corporate arms. The message is clear: this weapon is for you, not for soldiers.",
     known_users: ["Civilian homeowners", "Small business owners", "Residential cooperatives", "Community watch groups"],
     story_hooks: [
-      "A shopkeeper defended their business with a Hearth Guard during a riot and is now facing legal consequences — the jurisdiction's self-defense laws were written by the corponation that instigated the unrest.",
+      "A shopkeeper defended their business with a Hearth Guard during a riot and is now facing legal consequences — the jurisdiction's self-defense laws were written by the CorpoNation that instigated the unrest.",
       "Hearthstone's bulk shipment of 5,000 Hearth Guards to a Tier 1 settlement was intercepted by corporate security, who classify the semi-automatic carbines as military weapons under a newly enacted regulation."
     ],
     ammunition_type: ["9mm brass-cased standard"],
@@ -834,7 +834,7 @@ const smgs = [
     known_users: ["Urban security contractors", "Shop owners", "Commuters in contested zones", "Personal defense carriers"],
     story_hooks: [
       "An Alleycat's biometric lock was hacked, and the weapon was used in a crime while still registered to its original owner. The forensic trail leads back to the victim, not the perpetrator.",
-      "Meridian's companion app usage data was subpoenaed by a corponation, revealing the locations and weapon-handling habits of thousands of Alleycat owners — a privacy nightmare."
+      "Meridian's companion app usage data was subpoenaed by a CorpoNation, revealing the locations and weapon-handling habits of thousands of Alleycat owners — a privacy nightmare."
     ],
     ammunition_type: ["5.7mm caseless standard", "5.7mm caseless hollow-point"],
     tags: ["weapon", "smg", "PDW", "urban", "biometric", "Meridian", "tier 2"]
@@ -1031,7 +1031,7 @@ const smgs = [
     cultural_context: "The Locust is a weapon that provokes horror in medical professionals. Micro-flechette wounds are nightmarish to treat — dozens of 1mm tungsten needles embedded in tissue, many too small to image on standard medical scanners, each one a potential infection vector or delayed hemorrhage source. Anti-weapons campaigners have targeted the Locust specifically, calling it a weapon designed to maximize suffering. Tessera responds that the weapon is designed to minimize collateral damage. Both are correct.",
     known_users: ["Close-protection specialists", "VIP security details", "Tessera special operations"],
     story_hooks: [
-      "A Locust victim survived the initial engagement but is dying slowly as embedded micro-flechettes migrate through tissue toward vital organs. The only scanner capable of locating them all belongs to the corponation that ordered the hit.",
+      "A Locust victim survived the initial engagement but is dying slowly as embedded micro-flechettes migrate through tissue toward vital organs. The only scanner capable of locating them all belongs to the CorpoNation that ordered the hit.",
       "Someone has reverse-engineered the Locust's proprietary flechette cassettes and is manufacturing bootleg ammunition. The bootleg flechettes are made from surgical steel instead of tungsten — they're magnetic, which makes them detectable but also means they interact unpredictably with anyone carrying ferromagnetic cyberware."
     ],
     ammunition_type: ["1mm tungsten micro-flechette cassette"],
@@ -1389,7 +1389,7 @@ const dmrs = [
     cultural_context: "The AMDMR-5 represents escalation. When someone deploys a 12.7mm DMR, the message is that vehicles, equipment, and cover are all valid targets. The weapon's presence on a battlefield changes the tactical calculus — nothing short of hardened bunker construction provides safety. In asymmetric conflicts, a single AMDMR-5 can deny an entire road to vehicle traffic, making it a strategic asset for forces that lack anti-vehicle weapons.",
     known_users: ["Anti-materiel specialists", "Vehicle denial teams", "Heavy marksmen", "Siege warfare operators"],
     story_hooks: [
-      "A single AMDMR-5 operator has been systematically disabling a corponation's supply vehicles along a trade route, costing them millions in delayed shipments. The corponation wants the shooter found — but the 1,200-meter engagement range means no one has seen them.",
+      "A single AMDMR-5 operator has been systematically disabling a CorpoNation's supply vehicles along a trade route, costing them millions in delayed shipments. The CorpoNation wants the shooter found — but the 1,200-meter engagement range means no one has seen them.",
       "An AMDMR-5 was used to breach a safe room wall during a corporate extraction. The weapon's 12.7mm round penetrated the reinforced concrete that the safe room's designers guaranteed would stop any personal weapon."
     ],
     ammunition_type: ["12.7mm caseless AP", "12.7mm caseless explosive"],
@@ -1566,7 +1566,7 @@ const dmrs = [
     known_users: ["Urban resistance marksmen", "Clandestine precision operators", "Asymmetric warfare specialists"],
     story_hooks: [
       "A Reclaim marksman has been engaging corporate security from a different position each day for two weeks. The weapon breaks down so quickly that every search of the surrounding buildings finds nothing. Corporate security knows the weapon exists but cannot locate it between engagements.",
-      "Kang-Petrov's Reclaim production data was leaked, revealing the serial numbers of every unit shipped to a specific resistance movement. The corponation now knows exactly how many Reclaims the resistance has — but not where they are."
+      "Kang-Petrov's Reclaim production data was leaked, revealing the serial numbers of every unit shipped to a specific resistance movement. The CorpoNation now knows exactly how many Reclaims the resistance has — but not where they are."
     ],
     ammunition_type: ["7.62mm caseless standard", "7.62mm caseless AP"],
     tags: ["weapon", "dmr", "urban", "resistance", "displacement", "concealable", "Kang-Petrov", "tier 2"]

@@ -1,4 +1,4 @@
----
+﻿---
 codex: 1
 project: StreetSamurai
 code: SS
@@ -22,7 +22,7 @@ updated: 2026-06-11
    right thing. The world often punishes you for doing the right thing. But at the end of the
    day you have to live with yourself. Every book sharpens that question; the series finale
    ANSWERS it. No plot reveal outranks it.
-2. **The world is dying and it is the corponations' fault — and they have been winning for so
+2. **The world is dying and it is the CorpoNations' fault — and they have been winning for so
    long that even the IDEA of beating them is lost to legend.** They are never beaten on the
    page. They are not beatable. The series never cheats this.
 3. **Kyle is the anomaly — someone seemingly outside the will of fate.** He gets results where
@@ -45,7 +45,7 @@ updated: 2026-06-11
 **The big discovery is not the destination.** That the Superminds caused the thin spots — that
 the world's wound has authors, and the authors wiped their own conscience — remains TRUE and
 remains a tentpole discovery. It lands in Book IV, not Book V, and the series' coldest beat is
-what happens next: **knowing changes nothing.** The corponations are not arrested. The feeds
+what happens next: **knowing changes nothing.** The CorpoNations are not arrested. The feeds
 drown it in counterfeits (they own the substrate; publication is filing with the defendant).
 The world is not saved by the truth, because the world was never going to be saved — and that
 is precisely where the real question finally stands alone: when the right thing no longer
@@ -64,7 +64,7 @@ them has to be able to live with himself. That is the whole strategy, and it is 
 | II | **Full Freight** | The Body | The right thing costs the body — addiction is the easy thing winning; the carriers who did it right burned anyway; the world's first open punishments for Kyle's choices | Kyle learns there were NINE Atlas carriers and watches one die of his own future; the curriculum becomes legible; the clock is visible |
 | III | **House Colors** | The House | Institutions cannot stay good at scale — even the best house decays into the thing it was built against (Rome in miniature: decadence, stratification, the code outvoted by the ledger) | Sable's network is burned for doing the right thing; Lullaby is alive; the Lotus code loses a battle it should have won; Kyle refuses the chair |
 | IV | **False Death** | The Mind | What the world does to the one who keeps choosing right — it takes everything, and then the truth arrives and CHANGES NOTHING; the discovery lands here and the world shrugs | The thin-spot truth is KNOWN (Superminds did it) and proven unpublishable; Kyle is dead on every ledger; the hum goes silent |
-| V | **Standard Rate** | The Bill | The answer to "what are you willing to do?" — the fall arrives as promised, the corponations stand unbeaten, and the code is what deserves to survive into the dark | The meltdown begins and is NOT averted; the truth lives in people instead of feeds; the account is settled; Kyle can live with himself — quiet inside for the first time since sixteen |
+| V | **Standard Rate** | The Bill | The answer to "what are you willing to do?" — the fall arrives as promised, the CorpoNations stand unbeaten, and the code is what deserves to survive into the dark | The meltdown begins and is NOT averted; the truth lives in people instead of feeds; the account is settled; Kyle can live with himself — quiet inside for the first time since sixteen |
 
 Each book = 12–16 standalone adventures (the Bushido Coda chapter model: complete capers,
 setup + payoff in-chapter) with the season arc riding UNDER the adventures, never instead of
@@ -147,7 +147,7 @@ The series only works in sequence. The dependency skeleton:
    entanglement programs caused the thin spots; the authors wiped their own records and
    conscience. It is known. It is PROVEN. And it changes nothing — the Unanimity administers
    the substrate; publication is filing with the defendant; anything that slips through
-   drowns in manufactured counterfeits within the hour, and the corponations' courts, feeds,
+   drowns in manufactured counterfeits within the hour, and the CorpoNations' courts, feeds,
    and registries continue without a flicker. The apparent plan (deliver the data, win) dies
    here, and the hum goes silent. (The discovery MUST land a full book before the finale, and
    must visibly fail to matter, so that B5 stands on the question and not on the reveal.)
@@ -155,7 +155,7 @@ The series only works in sequence. The dependency skeleton:
    certainty-debt comes due, the lakefront thins, markets and feeds convulse — and it is NOT
    averted, because it was never avertable. Inside it, the inversion: the courier was never
    carrying data; he was BECOMING testimony. The run is to people, not servers — not because
-   it will defeat anyone (it won't; the corponations end the series unbeaten), but because
+   it will defeat anyone (it won't; the CorpoNations end the series unbeaten), but because
    people deserve to know what is coming, and the man telling them has to live with himself.
    The truth survives the substrate the only way anything true ever has: witness, paid at
    standard rate, owned by everyone who paid. The entity settles its courier's account in
@@ -407,9 +407,9 @@ priced at one deliverable: stop talking. Safety for the people he loves, bought 
 silence. What are you willing to do? Per the charter he is NOT defeated; he is only made
 to watch the one asset class his proceedings cannot attach: witness.
 **The frame:** the meltdown the series promised arrives ON SCHEDULE — Rome falling at last,
-decadence and stratification cashing out, the certainty-debt due, the corponations riding it
+decadence and stratification cashing out, the certainty-debt due, the CorpoNations riding it
 down from the upper hundred floors with their lights on. None of it is averted. The
-corponations end the series unbeaten, because beating them was always a legend and the series
+CorpoNations end the series unbeaten, because beating them was always a legend and the series
 does not lie to the reader.
 **The inversion inside the fall:** the courier never carried data. He IS the delivery. A
 decade of jobs did not train him to reach a server; it trained him to be believed — by
@@ -496,7 +496,7 @@ crew, and stray the series ever fed).
 - **Misdirect discipline (CANON LOCKS):** avatar theory never confirmed; composite secret
   (64 splices, not-a-person) NEVER on the page; Seo never unmasked; Silence never explained;
   whodunits stay open; the narrator is never wise.
-- **Charter locks (THEME LAW, author 2026-06-11):** the corponations are never beaten on the
+- **Charter locks (THEME LAW, author 2026-06-11):** the CorpoNations are never beaten on the
   page and the series never implies they could be; the dystopian meltdown arrives and is not
   averted; the thin-spot discovery is a Book IV event and visibly changes nothing; technology
   is never moralized (machines are symptoms; owners are causes); Kyle's outside-fate quality

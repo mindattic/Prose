@@ -1,4 +1,4 @@
-// Cyberlimbs generator for StreetSamurai
+﻿// Cyberlimbs generator for StreetSamurai
 // Generates 70 cyberware JSON files in engine/data/cyberware/
 // Run: node generate_cyberlimbs_2.js
 // Does NOT overwrite existing files.
@@ -184,7 +184,7 @@ Include a spread of:
 - Stealth eyes with recording, facial recognition scrambling, low-light amplification
 - A few hybrid models that cross categories (e.g., fashion eyes with hidden tactical features)
 
-Manufacturers: CHROMEWORKS, ARCTURUS DEFENSE SOLUTIONS, LAZARUS PHARMACEUTICALS, VESPER AESTHETICS, TESSERA CORPONATION, plus SynapTech for consumer models.
+Manufacturers: CHROMEWORKS, ARCTURUS DEFENSE SOLUTIONS, LAZARUS PHARMACEUTICALS, VESPER AESTHETICS, TESSERA CorpoNation, plus SynapTech for consumer models.
 Price range: \u03A64,000 - \u03A6180,000 depending on tier.
 Legality varies: fashion=Unrestricted, medical=Licensed, tactical=Restricted, stealth=Restricted/Prohibited.`
   },

@@ -1,4 +1,4 @@
----
+﻿---
 codex: 1
 project: StreetSamurai
 code: SS
@@ -472,6 +472,6 @@ the shape of an author behind the world's collapse — and that nobody has taken
 ## 7. Locks (do not violate in any draft) {#SS-SPINE-BC-7}
 Composite secret / Seo / Silence's origin / the avatar theory: NEVER confirmed; every beat
 survives both readings. Narrator never wise; dialogue quoted not italic; counts kept (Cacophony
-5); Φ = QUANTA. Corponations never beaten (Office defeated locally only). The cabal never named.
+5); Φ = QUANTA. CorpoNations never beaten (Office defeated locally only). The cabal never named.
 Kyle's outside-fate quality shown, never explained. Death budget: Ñu only. Pixel/Chen/Boost/Sable
 series-protected. See [[../rfc/0008-flagship-bushido-coda]] §7.

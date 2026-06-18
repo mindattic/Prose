@@ -1,4 +1,4 @@
----
+﻿---
 codex: 1
 project: StreetSamurai
 code: SS
@@ -46,7 +46,7 @@ No shared helper exists; each service hand-codes its own world identity + rules.
   Specialist") are still hard-coded.
 - `EpisodeGeneratorService.BuildSystemPrompt()` — the worst case: every line is Kyle/GLMZ canon
   (Silence, Chorus, Pixel, Mrs. Chen, Sable, Lotus, Bushido-Coda continuity). No seam at all.
-- `OutlineReviewService.ReviewAsync` — full "WORLD RULES YOU MUST ENFORCE" block (corponations,
+- `OutlineReviewService.ReviewAsync` — full "WORLD RULES YOU MUST ENFORCE" block (CorpoNations,
   Sponsorship Program, Tiers, Behemoth, Φ).
 - `StoryQualityService.BuildEvaluatorContext()` — full GLMZ world rubric sent to every quality voter.
 - `StoryDirectorService` — four copy-pasted `"IMPORTANT: GLMZ is a dangerous world…"` injections

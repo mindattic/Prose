@@ -1,4 +1,4 @@
-// Substrate/material generator for StreetSamurai
+﻿// Substrate/material generator for StreetSamurai
 // Generates 100 substrate JSON files in engine_data/substrates/
 // Run: node generate_substrates.js
 // Does NOT overwrite existing files.
@@ -115,7 +115,7 @@ const WORLD_CONTEXT = `Setting: GLMZ, year 2200. 200 years of materials science 
 
 Quantum-level manufacturing is available at Tier 4-5, enabling exotic alloys and materials impossible with conventional processes. Nano-assembly is routine. Self-healing and programmable matter exist but remain expensive.
 
-Major materials corponations: Crucible Industries (heavy metals and alloys), Tessera Materials (composites and smart materials), BioForge Labs (bio-hybrid substrates, SNT-derived materials), Apex Nanofabrication (nano-materials), Veilweave Textiles (advanced fabrics). Street-level fabricators work with salvage and knockoff formulations.
+Major materials CorpoNations: Crucible Industries (heavy metals and alloys), Tessera Materials (composites and smart materials), BioForge Labs (bio-hybrid substrates, SNT-derived materials), Apex Nanofabrication (nano-materials), Veilweave Textiles (advanced fabrics). Street-level fabricators work with salvage and knockoff formulations.
 
 Currency is Phi (Φ). Society is tiered: Tier 1 (the Shelf — poorest) to Tier 5 (the Spire — ultra-elite). Materials availability varies dramatically by tier.`;
 
@@ -204,7 +204,7 @@ Each substrate MUST have exactly these fields:
   "category": "${category}",
   "description": "2-3 sentence description of the material — what it is, what makes it special, how it's made",
   "properties": ["array of key material properties: strength, flexibility, conductivity, weight, thermal_resistance, self_healing, biocompatibility, etc."],
-  "developers": ["array of corponations/labs that produce this material"],
+  "developers": ["array of CorpoNations/labs that produce this material"],
   "applications": ["array of specific applications — where and how this material is used"],
   "tier_availability": "Tier 1-2|Tier 2-3|Tier 3-4|Tier 4-5|All tiers|Military only",
   "cost": "Φ per kg or per unit (be specific)",

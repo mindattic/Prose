@@ -1,4 +1,4 @@
-const fs = require('fs');
+﻿const fs = require('fs');
 const path = require('path');
 const crypto = require('crypto');
 
@@ -24,12 +24,12 @@ const headwear = [
   {
     name: "Kessler Optics ARC-7 AR Glasses",
     category: "headwear",
-    description: "Lightweight augmented-reality glasses with a titanium-alloy frame and photochromic lenses that shift from clear to smoke depending on ambient light. The ARC-7 overlays spatial data, comm feeds, and navigation waypoints directly onto the wearer's field of vision through micro-projected holographic layers.\n\nPopular with couriers, fixers, and mid-tier corponation analysts who need persistent data access without the commitment of ocular augmentation. The frames accept standard neural-port adapters for enhanced bandwidth.",
+    description: "Lightweight augmented-reality glasses with a titanium-alloy frame and photochromic lenses that shift from clear to smoke depending on ambient light. The ARC-7 overlays spatial data, comm feeds, and navigation waypoints directly onto the wearer's field of vision through micro-projected holographic layers.\n\nPopular with couriers, fixers, and mid-tier CorpoNation analysts who need persistent data access without the commitment of ocular augmentation. The frames accept standard neural-port adapters for enhanced bandwidth.",
     tier_association: "Tier 3",
     materials: ["titanium alloy", "photochromic polymer", "micro-holo projectors"],
     functionality: "AR overlay, comm integration, navigation HUD",
     what_it_says: "You need data faster than your eyes can find it, but you're not ready to let someone cut into your skull for it.",
-    worn_by: ["couriers", "fixers", "corponation analysts"],
+    worn_by: ["couriers", "fixers", "CorpoNation analysts"],
     manufacturer: "Kessler Optics",
     price_range: "Φ1,200",
     aug_compatible: true,
@@ -146,7 +146,7 @@ const headwear = [
     price_range: "Φ1,800",
     aug_compatible: true,
     gene_compatible: false,
-    story_hooks: ["A Blast Visor recovered from a failed bank heist has a name etched on the interior — belonging to a corponation security consultant who was supposedly on shift that night."],
+    story_hooks: ["A Blast Visor recovered from a failed bank heist has a name etched on the interior — belonging to a CorpoNation security consultant who was supposedly on shift that night."],
     tags: ["apparel", "headwear", "tier 3", "visor", "ballistic", "tactical", "protective"]
   },
   {
@@ -184,12 +184,12 @@ const headwear = [
   {
     name: "Pinnacle Security Riot Helm MkIV",
     category: "headwear",
-    description: "Full-coverage riot helmet with integrated comm systems, a retractable face shield rated for blunt impact, and mounting rails for auxiliary equipment — cameras, flashlights, gas filters. The shell is ceramic-composite over a shock-absorbing foam core. The interior features adjustable padding and a three-point chin strap.\n\nStandard issue for Pinnacle Security crowd-control units and licensed to several corponation internal security divisions. The MkIV's modular rail system means no two helmets in the field look identical — each operator customizes their loadout.",
+    description: "Full-coverage riot helmet with integrated comm systems, a retractable face shield rated for blunt impact, and mounting rails for auxiliary equipment — cameras, flashlights, gas filters. The shell is ceramic-composite over a shock-absorbing foam core. The interior features adjustable padding and a three-point chin strap.\n\nStandard issue for Pinnacle Security crowd-control units and licensed to several CorpoNation internal security divisions. The MkIV's modular rail system means no two helmets in the field look identical — each operator customizes their loadout.",
     tier_association: "Tier 3",
     materials: ["ceramic-composite shell", "shock-absorbing foam core", "modular rail system"],
     functionality: "Full head protection, integrated comms, modular accessory mounting, retractable face shield",
     what_it_says: "You're the one they send when the crowd stops listening to words.",
-    worn_by: ["riot control", "corponation security", "crowd management"],
+    worn_by: ["riot control", "CorpoNation security", "crowd management"],
     manufacturer: "Pinnacle Security",
     price_range: "Φ2,200",
     aug_compatible: true,
@@ -200,18 +200,18 @@ const headwear = [
   {
     name: "Drift Collective Scrapweave Cowl",
     category: "headwear",
-    description: "A hand-assembled cowl made from salvaged fabric scraps, wire, and repurposed industrial mesh. No two are identical. Each cowl is built by its wearer or traded within Drift Collective circles as a mark of membership and resourcefulness. The construction is rough, asymmetrical, and intentionally unfinished.\n\nThe Scrapweave Cowl has no technical function beyond basic weather protection. Its value is entirely social — wearing one in Shelf districts signals affiliation with the Drift Collective's philosophy of radical self-sufficiency and rejection of corponation consumer culture.",
+    description: "A hand-assembled cowl made from salvaged fabric scraps, wire, and repurposed industrial mesh. No two are identical. Each cowl is built by its wearer or traded within Drift Collective circles as a mark of membership and resourcefulness. The construction is rough, asymmetrical, and intentionally unfinished.\n\nThe Scrapweave Cowl has no technical function beyond basic weather protection. Its value is entirely social — wearing one in Shelf districts signals affiliation with the Drift Collective's philosophy of radical self-sufficiency and rejection of CorpoNation consumer culture.",
     tier_association: "Tier 1",
     materials: ["salvaged fabric scraps", "repurposed wire", "industrial mesh offcuts"],
     functionality: "Basic weather protection, social signaling",
     what_it_says: "You built this from what they threw away, and it means more to you than anything they sell.",
-    worn_by: ["Drift Collective members", "Shelf DIY culture", "anti-corponation activists"],
+    worn_by: ["Drift Collective members", "Shelf DIY culture", "anti-CorpoNation activists"],
     manufacturer: "Handmade (Drift Collective)",
     price_range: "Φ0 (built, not bought)",
     aug_compatible: false,
     gene_compatible: false,
     story_hooks: ["A high-profile Spire executive is photographed wearing what appears to be a Drift Collective Scrapweave Cowl — either slumming for fashion or hiding a dangerous secret affiliation."],
-    tags: ["apparel", "headwear", "tier 1", "cowl", "Drift Collective", "DIY", "handmade", "anti-corponation"]
+    tags: ["apparel", "headwear", "tier 1", "cowl", "Drift Collective", "DIY", "handmade", "anti-CorpoNation"]
   },
   {
     name: "Veridian Optics TrueSight Monocle",
@@ -232,7 +232,7 @@ const headwear = [
   {
     name: "Ashcroft Industries Welding Crown",
     category: "headwear",
-    description: "A heavy-duty auto-darkening welding helmet with a crown-mounted ventilation system that draws filtered air across the wearer's face. The viewing window transitions from transparent to near-opaque in 0.3 milliseconds when it detects arc light. The shell is heat-resistant ceramic over an impact-rated polymer frame.\n\nThe Welding Crown is standard equipment in Crucible fabrication yards and lower-tier repair shops. Its distinctive silhouette — bulky, angular, industrial — has made it an unlikely icon in Shelf district street art, where it represents honest labor in a world dominated by corponation abstraction.",
+    description: "A heavy-duty auto-darkening welding helmet with a crown-mounted ventilation system that draws filtered air across the wearer's face. The viewing window transitions from transparent to near-opaque in 0.3 milliseconds when it detects arc light. The shell is heat-resistant ceramic over an impact-rated polymer frame.\n\nThe Welding Crown is standard equipment in Crucible fabrication yards and lower-tier repair shops. Its distinctive silhouette — bulky, angular, industrial — has made it an unlikely icon in Shelf district street art, where it represents honest labor in a world dominated by CorpoNation abstraction.",
     tier_association: "Tier 1",
     materials: ["heat-resistant ceramic", "auto-darkening lens", "ventilation system", "polymer frame"],
     functionality: "Auto-darkening arc protection, ventilated breathing, impact resistance",
@@ -242,7 +242,7 @@ const headwear = [
     price_range: "Φ290",
     aug_compatible: false,
     gene_compatible: false,
-    story_hooks: ["A welder's helmet left behind at a sabotaged construction site contains DNA traces from someone listed as dead in corponation records for three years."],
+    story_hooks: ["A welder's helmet left behind at a sabotaged construction site contains DNA traces from someone listed as dead in CorpoNation records for three years."],
     tags: ["apparel", "headwear", "tier 1", "welding", "industrial", "Crucible", "protective"]
   },
   {
@@ -386,7 +386,7 @@ const gloves = [
     materials: ["conductive lace", "micro-capacitive threads", "silk-analog lining"],
     functionality: "Touch-through interface compatibility, full haptic conductivity",
     what_it_says: "You refuse to choose between elegance and functionality because you can afford not to.",
-    worn_by: ["Spire socialites", "corponation executives", "fashion-conscious professionals"],
+    worn_by: ["Spire socialites", "CorpoNation executives", "fashion-conscious professionals"],
     manufacturer: "Silhouette Fashion",
     price_range: "Φ2,800",
     aug_compatible: true,
@@ -487,7 +487,7 @@ const gloves = [
     price_range: "Φ240",
     aug_compatible: true,
     gene_compatible: false,
-    story_hooks: ["A pair of Streetfighter gloves turn up in evidence from a corponation executive's murder — the knuckle plate pattern matches the wounds exactly, but the gloves are three sizes too small for any known suspect."],
+    story_hooks: ["A pair of Streetfighter gloves turn up in evidence from a CorpoNation executive's murder — the knuckle plate pattern matches the wounds exactly, but the gloves are three sizes too small for any known suspect."],
     tags: ["apparel", "gloves", "tier 1", "combat", "fighting", "Shelf", "tungsten-carbide"]
   },
   {
@@ -695,7 +695,7 @@ const accessories = [
     materials: ["thermoformed polymer", "passive retention lock", "body-contour padding"],
     functionality: "Custom weapon retention, concealed carry, single-weapon thermoform lock",
     what_it_says: "You're armed and the first indication most people will have of that is the sound of the draw.",
-    worn_by: ["licensed carriers", "corponation security", "undercover operatives"],
+    worn_by: ["licensed carriers", "CorpoNation security", "undercover operatives"],
     manufacturer: "Sentinel Corp",
     price_range: "Φ280",
     aug_compatible: false,
@@ -754,12 +754,12 @@ const accessories = [
   {
     name: "Nimbus Fabrication Pulse Bracelet",
     category: "accessory",
-    description: "A slim wrist-worn band that monitors pulse, blood oxygen, stress hormones, and neural activity baseline in real time. The band's exterior is featureless matte black; all data is transmitted to a paired device or AR display. A panic-button feature sends the wearer's location and vitals to pre-designated contacts when double-tapped.\n\nUsed by corponation employees whose employers monitor their biometrics as a condition of employment, and independently by individuals who want a dead-man's switch — if the heart stops, the bracelet talks.",
+    description: "A slim wrist-worn band that monitors pulse, blood oxygen, stress hormones, and neural activity baseline in real time. The band's exterior is featureless matte black; all data is transmitted to a paired device or AR display. A panic-button feature sends the wearer's location and vitals to pre-designated contacts when double-tapped.\n\nUsed by CorpoNation employees whose employers monitor their biometrics as a condition of employment, and independently by individuals who want a dead-man's switch — if the heart stops, the bracelet talks.",
     tier_association: "Tier 2",
     materials: ["biometric sensor suite", "matte polymer band", "wireless transmitter"],
     functionality: "Real-time biometric monitoring, panic alert, dead-man's switch capability",
     what_it_says: "Your body's vital signs are being watched, either by your employer or by someone who cares whether you're still alive.",
-    worn_by: ["corponation employees", "high-risk operatives", "monitored workers"],
+    worn_by: ["CorpoNation employees", "high-risk operatives", "monitored workers"],
     manufacturer: "Nimbus Fabrication",
     price_range: "Φ520",
     aug_compatible: true,
@@ -770,18 +770,18 @@ const accessories = [
   {
     name: "Sable Luxe Identity Pendant",
     category: "accessory",
-    description: "A precision-machined pendant containing a holographic identity chip that stores the wearer's corponation credentials, financial access codes, and social standing verification. The pendant's exterior is platinum-iridium alloy polished to mirror finish, with the owner's corponation affiliation engraved in micro-text around the rim.\n\nIn Spire social environments, the Identity Pendant serves as both jewelry and passport. Entering certain establishments, accessing certain services, and attending certain events requires presenting the pendant for verification. It is beautiful, functional, and a leash.",
+    description: "A precision-machined pendant containing a holographic identity chip that stores the wearer's CorpoNation credentials, financial access codes, and social standing verification. The pendant's exterior is platinum-iridium alloy polished to mirror finish, with the owner's CorpoNation affiliation engraved in micro-text around the rim.\n\nIn Spire social environments, the Identity Pendant serves as both jewelry and passport. Entering certain establishments, accessing certain services, and attending certain events requires presenting the pendant for verification. It is beautiful, functional, and a leash.",
     tier_association: "Tier 5",
     materials: ["platinum-iridium alloy", "holographic identity chip", "micro-text engraving"],
     functionality: "Identity verification, financial access, social standing authentication",
     what_it_says: "You are exactly who the system says you are, and this pendant proves it to everyone who matters.",
-    worn_by: ["Spire executives", "corponation leadership", "social elite"],
+    worn_by: ["Spire executives", "CorpoNation leadership", "social elite"],
     manufacturer: "Sable Luxe",
     price_range: "Φ15,000",
     aug_compatible: false,
     gene_compatible: false,
     story_hooks: ["An Identity Pendant is found in a Shelf pawnshop, still active, still keyed to a living Spire executive — who hasn't reported it missing, raising the question of whether they know it's gone or whether they wanted it to end up here."],
-    tags: ["apparel", "accessory", "tier 5", "pendant", "identity", "Spire", "luxury", "corponation"]
+    tags: ["apparel", "accessory", "tier 5", "pendant", "identity", "Spire", "luxury", "CorpoNation"]
   },
   {
     name: "Meridian Tactical Solutions Quick-Draw Thigh Rig",
@@ -828,7 +828,7 @@ const accessories = [
     price_range: "Φ1,400",
     aug_compatible: true,
     gene_compatible: false,
-    story_hooks: ["A subvocal choker recovered from a crime scene is still transmitting — and the receiving end is inside a corponation building that officially has no intelligence operations."],
+    story_hooks: ["A subvocal choker recovered from a crime scene is still transmitting — and the receiving end is inside a CorpoNation building that officially has no intelligence operations."],
     tags: ["apparel", "accessory", "tier 3", "choker", "subvocal", "covert", "comm", "Tangent"]
   },
   {
@@ -850,7 +850,7 @@ const accessories = [
   {
     name: "Nexus Integration Data-Carry Ring",
     category: "accessory",
-    description: "A plain titanium ring with an embedded encrypted data storage core capable of holding 2TB of information. Data is transferred via skin-contact NFC when the wearer touches a compatible terminal. The ring has no external indicators — no lights, no markings, no visible technology. It looks like an ordinary band.\n\nThe preferred dead-drop medium for information brokers and corporate espionage operatives. A handshake can transfer gigabytes. A ring left on a bar counter can contain enough proprietary data to collapse a corponation's stock price.",
+    description: "A plain titanium ring with an embedded encrypted data storage core capable of holding 2TB of information. Data is transferred via skin-contact NFC when the wearer touches a compatible terminal. The ring has no external indicators — no lights, no markings, no visible technology. It looks like an ordinary band.\n\nThe preferred dead-drop medium for information brokers and corporate espionage operatives. A handshake can transfer gigabytes. A ring left on a bar counter can contain enough proprietary data to collapse a CorpoNation's stock price.",
     tier_association: "Tier 3",
     materials: ["titanium housing", "encrypted data core", "skin-contact NFC interface"],
     functionality: "2TB encrypted storage, contact-transfer data exchange, zero visual indicators",
@@ -988,7 +988,7 @@ const accessories = [
     price_range: "Φ95",
     aug_compatible: false,
     gene_compatible: false,
-    story_hooks: ["A Cable-Management Harness found in a restricted server room still has three cables clipped to it — each one spliced with data-intercept taps that were recording traffic from three separate corponation networks simultaneously."],
+    story_hooks: ["A Cable-Management Harness found in a restricted server room still has three cables clipped to it — each one spliced with data-intercept taps that were recording traffic from three separate CorpoNation networks simultaneously."],
     tags: ["apparel", "accessory", "tier 1", "harness", "cable management", "technician", "utility"]
   }
 ];
@@ -1191,7 +1191,7 @@ const baseLayers = [
   {
     name: "Sentinel Corp Biometric Integration Bodysuit",
     category: "base_layer",
-    description: "A full-body base layer that serves as the integration platform for Sentinel Corp's employee monitoring system. The suit tracks location, vital signs, stress hormones, sleep patterns, and caloric expenditure, transmitting continuous data to Sentinel's workforce management system. Employees are required to wear it during all active shifts.\n\nThe suit is comfortable, well-made, and provided free of charge. It is also a total surveillance garment that gives the corponation real-time awareness of every employee's physical and emotional state. Refusal to wear it is grounds for contract termination.",
+    description: "A full-body base layer that serves as the integration platform for Sentinel Corp's employee monitoring system. The suit tracks location, vital signs, stress hormones, sleep patterns, and caloric expenditure, transmitting continuous data to Sentinel's workforce management system. Employees are required to wear it during all active shifts.\n\nThe suit is comfortable, well-made, and provided free of charge. It is also a total surveillance garment that gives the CorpoNation real-time awareness of every employee's physical and emotional state. Refusal to wear it is grounds for contract termination.",
     tier_association: "Tier 3",
     materials: ["biometric sensor array", "location tracking module", "comfort-weave fabric"],
     functionality: "Full biometric monitoring, GPS tracking, workforce analytics integration",
@@ -1516,7 +1516,7 @@ const protective = [
   {
     name: "Korvain Dynamics Ballistic Assault Suit",
     category: "protective",
-    description: "A full-body armored suit rated for Level IIIA ballistic protection with ceramic plate inserts at vital zones that upgrade protection to Level IV. The suit covers torso, arms, and legs with articulated armor panels that allow combat mobility. An integrated communications suite and helmet mounting system complete the platform.\n\nIssued to high-threat response teams — corponation asset recovery, facility breach response, and the kind of private military operations that exist in legal grey zones. The Assault Suit costs more than a year's wages for most GLMZ residents and is worth every quanta to the organizations that field it.",
+    description: "A full-body armored suit rated for Level IIIA ballistic protection with ceramic plate inserts at vital zones that upgrade protection to Level IV. The suit covers torso, arms, and legs with articulated armor panels that allow combat mobility. An integrated communications suite and helmet mounting system complete the platform.\n\nIssued to high-threat response teams — CorpoNation asset recovery, facility breach response, and the kind of private military operations that exist in legal grey zones. The Assault Suit costs more than a year's wages for most GLMZ residents and is worth every quanta to the organizations that field it.",
     tier_association: "Tier 4",
     materials: ["Level IIIA ballistic fabric", "Level IV ceramic plate inserts", "articulated armor panels"],
     functionality: "Full-body ballistic protection, modular plate system, integrated comms, combat mobility",
@@ -1569,7 +1569,7 @@ const protective = [
     materials: ["powered exoskeletal frame", "hardpoint armor plates", "4-hour fuel cell"],
     functionality: "3x strength amplification, integrated crowd-control systems, full armor coverage",
     what_it_says: "You are the singular expression of overwhelming force, and the crowd will either disperse or discover what that means.",
-    worn_by: ["elite riot control", "corponation crisis response", "high-value asset protection"],
+    worn_by: ["elite riot control", "CorpoNation crisis response", "high-value asset protection"],
     manufacturer: "Pinnacle Security",
     price_range: "Φ85,000",
     aug_compatible: true,
@@ -1638,7 +1638,7 @@ const cultural = [
     materials: ["programmed-degradation fabric", "structural smart-fiber", "single-season dye"],
     functionality: "Seasonal fashion display, social currency, planned obsolescence",
     what_it_says: "You can afford to wear something designed to destroy itself, and you'll buy another when it does.",
-    worn_by: ["Spire socialites", "corponation elites", "fashion-industry insiders"],
+    worn_by: ["Spire socialites", "CorpoNation elites", "fashion-industry insiders"],
     manufacturer: "Spire Atelier (various houses)",
     price_range: "Φ8,000-25,000",
     aug_compatible: false,
@@ -1670,7 +1670,7 @@ const cultural = [
     materials: ["salvaged metal", "industrial rubber", "repurposed vehicle panels", "improvised fasteners"],
     functionality: "Variable protection (inconsistent), social statement, waste-stream utilization",
     what_it_says: "You built armor from their garbage because their garbage is all they left you, and you're still standing.",
-    worn_by: ["Drift Collective members", "Shelf fighters", "anti-corponation activists"],
+    worn_by: ["Drift Collective members", "Shelf fighters", "anti-CorpoNation activists"],
     manufacturer: "Handmade (individual)",
     price_range: "Φ0 (built from salvage)",
     aug_compatible: false,
@@ -1743,25 +1743,25 @@ const cultural = [
     tags: ["apparel", "cultural", "tier 2", "club", "collar", "electroluminescent", "Voltage District"]
   },
   {
-    name: "Corponation Loyalty Lanyard",
+    name: "CorpoNation Loyalty Lanyard",
     category: "cultural",
-    description: "A neck lanyard in corponation-specific colors carrying an employee ID badge, access cards, and a small RFID token. Every corponation in GLMZ issues their own variant — Crucible's is copper and charcoal, Sentinel's is steel blue, Cascade's is white and green. The lanyard is technically just a badge holder. In practice, it is the most visible indicator of who you belong to.\n\nWearing your lanyard outside work hours signals that your identity and your employment are the same thing. Some employees never take them off. Some discard them the instant they leave the building. The choice says everything about the wearer's relationship with their employer.",
+    description: "A neck lanyard in CorpoNation-specific colors carrying an employee ID badge, access cards, and a small RFID token. Every CorpoNation in GLMZ issues their own variant — Crucible's is copper and charcoal, Sentinel's is steel blue, Cascade's is white and green. The lanyard is technically just a badge holder. In practice, it is the most visible indicator of who you belong to.\n\nWearing your lanyard outside work hours signals that your identity and your employment are the same thing. Some employees never take them off. Some discard them the instant they leave the building. The choice says everything about the wearer's relationship with their employer.",
     tier_association: "Tier 2",
     materials: ["polyester webbing", "metal badge clip", "RFID token holder"],
-    functionality: "Employee identification, access control, corponation affiliation display",
-    what_it_says: "You belong to a corponation and you either wear that identity proudly or haven't bothered to take it off yet.",
-    worn_by: ["corponation employees (all levels)"],
-    manufacturer: "Issued by respective corponations",
+    functionality: "Employee identification, access control, CorpoNation affiliation display",
+    what_it_says: "You belong to a CorpoNation and you either wear that identity proudly or haven't bothered to take it off yet.",
+    worn_by: ["CorpoNation employees (all levels)"],
+    manufacturer: "Issued by respective CorpoNations",
     price_range: "Φ0 (employer-issued)",
     aug_compatible: false,
     gene_compatible: false,
     story_hooks: ["A Crucible loyalty lanyard is found in a Sentinel Corp restricted area — either a defector, a spy, or someone who got very lost in a building they shouldn't have been in."],
-    tags: ["apparel", "cultural", "tier 2", "corponation", "lanyard", "identity", "corporate", "badge"]
+    tags: ["apparel", "cultural", "tier 2", "CorpoNation", "lanyard", "identity", "corporate", "badge"]
   },
   {
     name: "Free Signal Pirate Radio Vest",
     category: "cultural",
-    description: "A tactical-style vest modified to carry a portable FM transmitter, antenna, battery pack, and microphone. The vest turns its wearer into a walking radio station, capable of broadcasting on hijacked frequencies within a 500-meter radius. The exterior is covered in hand-painted frequency numbers and anti-corponation slogans.\n\nFree Signal pirate radio operators broadcast unlicensed news, music, and commentary in Shelf districts where official media coverage is nonexistent. The vest is both toolkit and uniform — everyone recognizes the painted frequencies, and most people know to tune in.",
+    description: "A tactical-style vest modified to carry a portable FM transmitter, antenna, battery pack, and microphone. The vest turns its wearer into a walking radio station, capable of broadcasting on hijacked frequencies within a 500-meter radius. The exterior is covered in hand-painted frequency numbers and anti-CorpoNation slogans.\n\nFree Signal pirate radio operators broadcast unlicensed news, music, and commentary in Shelf districts where official media coverage is nonexistent. The vest is both toolkit and uniform — everyone recognizes the painted frequencies, and most people know to tune in.",
     tier_association: "Tier 1",
     materials: ["modified tactical vest", "portable FM transmitter", "battery pack", "hand-painted exterior"],
     functionality: "Mobile pirate radio broadcasting, 500m range, frequency-hopping capable",
@@ -1777,7 +1777,7 @@ const cultural = [
   {
     name: "Spire Heritage Society Ancestral Sash",
     category: "cultural",
-    description: "A formal sash worn diagonally across the torso, displaying the wearer's verified genealogical lineage through a sequence of embroidered family crests and corponation association symbols. The sash is issued by the Spire Heritage Society after a genealogical audit that costs more than most Shelf residents earn in a year. Each generation of verified lineage adds one crest.\n\nThe Ancestral Sash is worn at formal events to establish social hierarchy based on bloodline rather than achievement. In Spire social mathematics, old money outranks new money, and the sash quantifies exactly how old your claim to status really is.",
+    description: "A formal sash worn diagonally across the torso, displaying the wearer's verified genealogical lineage through a sequence of embroidered family crests and CorpoNation association symbols. The sash is issued by the Spire Heritage Society after a genealogical audit that costs more than most Shelf residents earn in a year. Each generation of verified lineage adds one crest.\n\nThe Ancestral Sash is worn at formal events to establish social hierarchy based on bloodline rather than achievement. In Spire social mathematics, old money outranks new money, and the sash quantifies exactly how old your claim to status really is.",
     tier_association: "Tier 5",
     materials: ["silk-analog fabric", "metallic-thread embroidery", "verified genealogical crests"],
     functionality: "Lineage display, social hierarchy establishment, heritage verification",
@@ -1819,7 +1819,7 @@ const cultural = [
     price_range: "Φ500-1,200",
     aug_compatible: true,
     gene_compatible: false,
-    story_hooks: ["A Burnout Circuit flame suit's sponsor logos include a corponation that publicly condemns illegal street racing — someone at the executive level is funding the very activity they campaign against."],
+    story_hooks: ["A Burnout Circuit flame suit's sponsor logos include a CorpoNation that publicly condemns illegal street racing — someone at the executive level is funding the very activity they campaign against."],
     tags: ["apparel", "cultural", "tier 2", "racing", "Burnout Circuit", "flame suit", "illegal", "sponsor"]
   },
   {

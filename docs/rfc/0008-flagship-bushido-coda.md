@@ -1,4 +1,4 @@
----
+﻿---
 codex: 1
 project: StreetSamurai
 code: SS
@@ -65,7 +65,7 @@ without temperature" — migrates onto Able, who is its better embodiment: a bur
 wearing a courteous man's face.)
 
 **The Continuity Office** — a deniable joint bureau chartered by a **Big-20 clearing
-consortium** (not one corponation; continuity-of-ownership is a cartel function). Its mandate
+consortium** (not one CorpoNation; continuity-of-ownership is a cartel function). Its mandate
 is **continuity-of-ownership**: nothing valuable in a district may lapse into the *unowned*.
 Its program — DISTRICT ACQUISITION, WEST TOWN WEST — exists to **catalog and absorb the
 GLMZ's unowned rogue intelligences**, with human beings booked as the handles. Its true,
@@ -209,7 +209,7 @@ before the next (ground-up doctrine). The jury is advisory; the **author is the 
   survives both readings. (Misdirect discipline, RFC 0003 §8.)
 - The **narrator is never wise** (WORLD.md RULE ZERO); dialogue is quoted, never italicized;
   counts are kept; Φ is QUANTA; metaphor survives literal scrutiny.
-- **Corponations are never beaten**; the Office is defeated *locally* (its West Town program
+- **CorpoNations are never beaten**; the Office is defeated *locally* (its West Town program
   burns) and "has other districts." The cabal is never named here.
 - **Kyle's outside-fate quality** is shown in results, never explained.
 - **Death budget:** Ñu (loss #1) is spent in this book, author-approved. The bike "dies"

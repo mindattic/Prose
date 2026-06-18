@@ -1,4 +1,4 @@
-// BCI cyberware generator for StreetSamurai
+﻿// BCI cyberware generator for StreetSamurai
 // Generates 70 BCI cyberware JSON files in engine/data/cyberware/
 // Run: node generate_bci_2.js
 // Does NOT overwrite existing files.
@@ -143,7 +143,7 @@ function getExistingNames() {
 // ── World Context ──
 const WORLD_CONTEXT = `GLMZ, year 2200. Great Lakes megacity. Currency: Φ (QUANTA). Tiers: 1 (Shelf/poorest) to 5 (Spire/elite). Ubiquitous Diaspora: fully interbred humanity. BCIs are as fundamental as smartphones. Iowan Behemoths are autonomous machines, NOT synthetic life.
 
-BCI Manufacturers: TESSERA CORPONATION (enterprise/security), ARCTURUS DEFENSE SOLUTIONS (military/combat), LAZARUS PHARMACEUTICALS (medical), NeuralPath (consumer "Samsung"), CortexDynamics (performance), MindBridge (budget), SynapTech (premium "Apple").`;
+BCI Manufacturers: TESSERA CorpoNation (enterprise/security), ARCTURUS DEFENSE SOLUTIONS (military/combat), LAZARUS PHARMACEUTICALS (medical), NeuralPath (consumer "Samsung"), CortexDynamics (performance), MindBridge (budget), SynapTech (premium "Apple").`;
 
 // ── Category Definitions ──
 const CATEGORIES = [
@@ -167,7 +167,7 @@ These are corporate-issue and specialist BCIs with enhanced capabilities:
 - Legal/financial BCIs with enhanced memory indexing and recall
 - Engineering BCIs with spatial processing and CAD neural overlay
 
-Manufacturers: TESSERA CORPONATION (corporate/security), LAZARUS PHARMACEUTICALS (medical), plus NeuralPath Pro line, CortexDynamics Enterprise, SynapTech Professional.
+Manufacturers: TESSERA CorpoNation (corporate/security), LAZARUS PHARMACEUTICALS (medical), plus NeuralPath Pro line, CortexDynamics Enterprise, SynapTech Professional.
 Price range: Φ8,000 - Φ35,000 street / Φ12,000 - Φ50,000 licensed.
 These are workplace tools — employer-provided or tax-deductible professional equipment.`
   },
@@ -186,7 +186,7 @@ These are combat-grade and elite neural interfaces:
 - Battlefield medical triage BCIs (monitor squad vitals, triage recommendations)
 - Electronic warfare BCIs (signal jamming, countermeasure deployment)
 
-Manufacturers: ARCTURUS DEFENSE SOLUTIONS (primary), TESSERA CORPONATION (some models).
+Manufacturers: ARCTURUS DEFENSE SOLUTIONS (primary), TESSERA CorpoNation (some models).
 Price range: Φ40,000 - Φ200,000 street / Φ60,000 - Φ300,000 licensed.
 Legality: Restricted or Military-Only. These are NOT consumer products. Civilian possession is illegal or heavily regulated. Note: Iowan Behemoths are autonomous machines, NOT synthetic life.`
   },
@@ -205,7 +205,7 @@ These are the pinnacle of BCI technology — custom, rare, and extraordinary:
 - Synesthetic BCIs (cross-wire senses — hear colors, taste music, genuinely experience synesthesia)
 - Dream architecture BCIs (construct and share lucid dream environments)
 
-Manufacturers: TESSERA CORPONATION (luxury line), artisan workshops (named), experimental labs. Some should have no clear manufacturer (black market origins).
+Manufacturers: TESSERA CorpoNation (luxury line), artisan workshops (named), experimental labs. Some should have no clear manufacturer (black market origins).
 Price range: Φ150,000 - Φ2,000,000+ street.
 Legality: Varies — Licensed to Prohibited. Some are one-of-a-kind prototypes.`
   },

@@ -1,4 +1,4 @@
----
+﻿---
 title: The Interview
 book: Bushido Coda
 chapter: 4
@@ -82,7 +82,7 @@ KT's arm came horizontal and he did not step back.
 
 He stepped *into* it. Not to meet it. To find the angle the arm could not intercept.
 
-The blade came up not to her chrome but to the shoulder seam where the chrome socket met flesh — three and a half centimeters of unprotected actuator housing exposed at the cooling vent, the same gap Helix had designed into the ARM-9 in 2221 because the cooling-vent redesign that would have closed it had been over budget and the corponation's accountants had filed the over-budget under *unfunded improvement opportunity,* a term that meant the corponation knew about the problem, had priced the fix, had elected not to perform it, and had cleared the elective non-fix through legal. Helix legal had taken eight months to clear it. The eight months were on the corporate calendar. The seam was on KT's body. Helix had decided, in 2221, that her shoulder was the cheaper option. Tonight Kyle was going to demonstrate the savings.
+The blade came up not to her chrome but to the shoulder seam where the chrome socket met flesh — three and a half centimeters of unprotected actuator housing exposed at the cooling vent, the same gap Helix had designed into the ARM-9 in 2221 because the cooling-vent redesign that would have closed it had been over budget and the CorpoNation's accountants had filed the over-budget under *unfunded improvement opportunity,* a term that meant the CorpoNation knew about the problem, had priced the fix, had elected not to perform it, and had cleared the elective non-fix through legal. Helix legal had taken eight months to clear it. The eight months were on the corporate calendar. The seam was on KT's body. Helix had decided, in 2221, that her shoulder was the cheaper option. Tonight Kyle was going to demonstrate the savings.
 
 *Tink.*
 
@@ -194,7 +194,7 @@ The captain had not moved.
 
 ## Part VI — The Dog Again
 
-He dropped off the sedan hood as the quadruped dragged itself the last two meters. Jaw still cycling. Front actuators grinding wet asphalt. The thing's persistence was purely mechanical — no calculation in it, just the forward instruction running until it ran out. The same dumb forward of every poorly-built consumer-grade product the corponations had pushed into a working person's hand and called *enterprise.*
+He dropped off the sedan hood as the quadruped dragged itself the last two meters. Jaw still cycling. Front actuators grinding wet asphalt. The thing's persistence was purely mechanical — no calculation in it, just the forward instruction running until it ran out. The same dumb forward of every poorly-built consumer-grade product the CorpoNations had pushed into a working person's hand and called *enterprise.*
 
 He let it close. At one meter he put the second round through the emitter housing at the angle the hardware gave him — not center-mass, not dramatic, the smallest aperture that ended the problem.
 
@@ -212,7 +212,7 @@ Rook fired from the structure entrance. Two rounds, tight, indexed at the lower 
 
 The Augmentation Signature Read had mapped Rook since the structure mouth. Augmented legs, Tier 3, interface points at both hips, BCI at the right temple, no cardiac.
 
-The corponation that had sold Rook his legs had marketed them as *flesh-compatible.* The marketing copy was true at the level of the marketing copy. The femoral artery, which the chrome intake bonded to but did not cover, was flesh. The corponation had calculated, with the kind of precision the corponation reserved for the things that made the corponation money, that *flesh-compatible* was a feature buyers would pay for. They had not asked which flesh. The flesh the marketing referred to was the flesh that survived the install. The femoral was the flesh that survived the install. The femoral was also exposed at the inside of the thigh by exactly the amount of skin the chrome did not cover. *Flesh-compatible* meant *the artery is still there and is still on you.* The corponation had not lied. The corponation had simply allowed the buyer to misunderstand.
+The CorpoNation that had sold Rook his legs had marketed them as *flesh-compatible.* The marketing copy was true at the level of the marketing copy. The femoral artery, which the chrome intake bonded to but did not cover, was flesh. The CorpoNation had calculated, with the kind of precision the CorpoNation reserved for the things that made the CorpoNation money, that *flesh-compatible* was a feature buyers would pay for. They had not asked which flesh. The flesh the marketing referred to was the flesh that survived the install. The femoral was the flesh that survived the install. The femoral was also exposed at the inside of the thigh by exactly the amount of skin the chrome did not cover. *Flesh-compatible* meant *the artery is still there and is still on you.* The CorpoNation had not lied. The CorpoNation had simply allowed the buyer to misunderstand.
 
 Kyle took the last two steps inside the barrel. The slide pressed against his ribs as Rook fired. The round went into concrete below his foot. The muzzle blast burned through his shirt in a clean circle he would find tomorrow and understand as the measurement of how close he had cut it.
 
@@ -226,7 +226,7 @@ Rook's left leg, bearing his weight in firing stance, did not collapse from the 
 
 The chrome was not the problem. The chrome had been advertised, accurately, as flesh-compatible. And the flesh was the part Kyle had asked for.
 
-Rook bled out at the curb in just over a minute. The leg above him kept twitching at the chrome — the corponation's product working as advertised on a man it was no longer attached to, the way a customer service line stayed on hold after the customer had died of the thing the customer service line had been holding them about.
+Rook bled out at the curb in just over a minute. The leg above him kept twitching at the chrome — the CorpoNation's product working as advertised on a man it was no longer attached to, the way a customer service line stayed on hold after the customer had died of the thing the customer service line had been holding them about.
 
 Kyle did not stay for it. He stepped past him. He turned from the structure entrance.
 
@@ -234,7 +234,7 @@ Kyle did not stay for it. He stepped past him. He turned from the structure entr
 
 ## Part VIII — Walking Toward The Captain
 
-The dog was down near the sedan, jaw dark, front actuators folded in the particular stillness of drained power rather than destroyed mechanism. It would cycle back if someone reset it. Carrion would, in the morning, retrieve it and add it to the recycling backlog at the Englewood depot, where some four hundred and seventy chassis ahead of it would suggest that the unit's afterlife had time to spare. The depot was, in this respect, like everywhere else the corponations kept what they no longer wanted to look at — the same model of inventory accountability that ran the public-housing waitlist in Wicker, where four thousand people had been on the list since 2218 for apartments that did not, by the corponation's reckoning, exist.
+The dog was down near the sedan, jaw dark, front actuators folded in the particular stillness of drained power rather than destroyed mechanism. It would cycle back if someone reset it. Carrion would, in the morning, retrieve it and add it to the recycling backlog at the Englewood depot, where some four hundred and seventy chassis ahead of it would suggest that the unit's afterlife had time to spare. The depot was, in this respect, like everywhere else the CorpoNations kept what they no longer wanted to look at — the same model of inventory accountability that ran the public-housing waitlist in Wicker, where four thousand people had been on the list since 2218 for apartments that did not, by the CorpoNation's reckoning, exist.
 
 Rook was at the curb. Nothing behind his eyes anymore. The body was doing the body's quiet work of letting the rest of itself follow the blood out.
 
@@ -286,7 +286,7 @@ The blade had not moved from low carry. It was the same matte-black blade it had
 
 A half-second. Her professional register found its footing. She dropped it. The machine pistol clattered on the wet asphalt the way every other piece of hardware on this street had clattered tonight.
 
-The cross-street was now carrying somewhere north of forty thousand Φ of dead and broken cyberware between the dog, KT, Rook, and the rifle that had fallen three stories. The cross-street had not been worth forty thousand Φ of anything five minutes ago. The corponations would still be unable to pay their property tax on it. The corponations would also be the ones billing Lotus, by the end of the week, for the cleanup of the dead and broken cyberware. Carrion would do the retrieval at their standard freelance-incident rate, would charge Lotus the rate plus a twelve-percent fee for the unscheduled call-out, would bill Hydraulic Solutions for the disposal of the recalled ARM-9 components, would bill Helix for the disposal of the Tier 3 leg residuals, and would book the whole revenue stream as Q1 enforcement-margin growth. Tonight's bodies were tonight's bodies. The bodies were also, somewhere upstream, this morning's projected earnings. Lotus had paid Carrion four thousand Φ in advance for the retrieval. The retrieval would cost Carrion two thousand four hundred Φ to perform. The margin on a six-position ambush failure was, by Kyle's rough estimate, the best margin Carrion would book this week. Everybody involved was, in one direction or another, making money off the bodies on the cross-street tonight. Some of them did not yet know it.
+The cross-street was now carrying somewhere north of forty thousand Φ of dead and broken cyberware between the dog, KT, Rook, and the rifle that had fallen three stories. The cross-street had not been worth forty thousand Φ of anything five minutes ago. The CorpoNations would still be unable to pay their property tax on it. The CorpoNations would also be the ones billing Lotus, by the end of the week, for the cleanup of the dead and broken cyberware. Carrion would do the retrieval at their standard freelance-incident rate, would charge Lotus the rate plus a twelve-percent fee for the unscheduled call-out, would bill Hydraulic Solutions for the disposal of the recalled ARM-9 components, would bill Helix for the disposal of the Tier 3 leg residuals, and would book the whole revenue stream as Q1 enforcement-margin growth. Tonight's bodies were tonight's bodies. The bodies were also, somewhere upstream, this morning's projected earnings. Lotus had paid Carrion four thousand Φ in advance for the retrieval. The retrieval would cost Carrion two thousand four hundred Φ to perform. The margin on a six-position ambush failure was, by Kyle's rough estimate, the best margin Carrion would book this week. Everybody involved was, in one direction or another, making money off the bodies on the cross-street tonight. Some of them did not yet know it.
 
 ---
 
@@ -358,13 +358,13 @@ The bike was still where he had left it behind the pharmacy on Ohio. He walked p
 
 Mrs. Chen's stall was dark. The fold-down counter was latched. The small propane burner under the left unit was cold — he knew this from three feet away because he knew the smell of it running and this was not that smell. She opened at four. He had two hours on her.
 
-He walked past and did not slow down. The bowl he had not finished was not waiting for him, not literally. She had thrown it out. She would put a new bowl down at 16:30 and the new bowl would be the new bowl, and she would not mention the one he had not finished, and the convention would hold. That was how the arrangement worked. The work was done by editorial restraint on both sides. The corponations had not, so far, found a way to monetize editorial restraint. They were working on it. They worked on everything.
+He walked past and did not slow down. The bowl he had not finished was not waiting for him, not literally. She had thrown it out. She would put a new bowl down at 16:30 and the new bowl would be the new bowl, and she would not mention the one he had not finished, and the convention would hold. That was how the arrangement worked. The work was done by editorial restraint on both sides. The CorpoNations had not, so far, found a way to monetize editorial restraint. They were working on it. They worked on everything.
 
 The Pivot was four blocks. The bio-battery read fifty-eight percent and cooling. The hardware was running at its ceiling and had been for twenty minutes and he knew what that meant the way you knew what a soft tire meant — that it meant something, and tonight was not the night to examine what.
 
 He climbed the stairs to 2F. The third step from the top made its sound.
 
-Pixel's sleep-suppression protocol came through the wall at 2E the way her music came through the wall — not loud, not intrusive, present. He read the hardware signature without meaning to. BCI at reduced draw, the rhythm of a protocol managing something rather than ending it. The protocol had cost her something to obtain through the gray-market channels she had to use because the corponation that had pulled the compound from pharmacies in 2223 had pulled it after deciding the compound was not profitable enough to defend. The compound worked. The corponation had withdrawn it from the people who needed it because the people who needed it were not the people whose insurance reimbursed at the rate the corponation preferred. Pixel paid for it out of pocket. So did everybody else she had introduced to the supplier. The corp had filed the withdrawal under *portfolio rationalization.* Pixel called it the only thing keeping her awake at three in the morning when she was supposed to be asleep, and asleep at three in the morning when she was supposed to be sleeping, and the laugh between the two definitions was the laugh of somebody whose only laugh that week was the difference.
+Pixel's sleep-suppression protocol came through the wall at 2E the way her music came through the wall — not loud, not intrusive, present. He read the hardware signature without meaning to. BCI at reduced draw, the rhythm of a protocol managing something rather than ending it. The protocol had cost her something to obtain through the gray-market channels she had to use because the CorpoNation that had pulled the compound from pharmacies in 2223 had pulled it after deciding the compound was not profitable enough to defend. The compound worked. The CorpoNation had withdrawn it from the people who needed it because the people who needed it were not the people whose insurance reimbursed at the rate the CorpoNation preferred. Pixel paid for it out of pocket. So did everybody else she had introduced to the supplier. The corp had filed the withdrawal under *portfolio rationalization.* Pixel called it the only thing keeping her awake at three in the morning when she was supposed to be asleep, and asleep at three in the morning when she was supposed to be sleeping, and the laugh between the two definitions was the laugh of somebody whose only laugh that week was the difference.
 
 He sat on the edge of the bed.
 
@@ -396,9 +396,9 @@ The cross-street, by 04:47, was clean. Carrion Logistics LLC had been efficient.
 
 By the time Mrs. Chen opened the stall at 04:00, there was nothing on the cross-street to suggest the cross-street had been the cross-street it had been at 02:14, except for a small notch in the concrete planter where the edge of an old katana had rung on stone. The notch would still be there in twenty years. The city would not, by then, remember which engagement had put it there. Mrs. Chen would not know to look. Sable would. Sable knew most things.
 
-The corponations would not.
+The CorpoNations would not.
 
-The corponations did not have a category for notches that were not on a maintenance schedule.
+The CorpoNations did not have a category for notches that were not on a maintenance schedule.
 
 They were working on one.
 

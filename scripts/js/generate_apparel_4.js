@@ -1,4 +1,4 @@
-// Apparel generator (batch 4) for StreetSamurai
+﻿// Apparel generator (batch 4) for StreetSamurai
 // Generates 200 apparel JSON files in engine/data/apparel/
 // Run: node generate_apparel_4.js
 // Does NOT overwrite existing files.
@@ -121,7 +121,7 @@ Ubiquitous Diaspora: By 2200, humanity is fully racially interbred. Default to m
 
 Technology: BCI (brain-computer interfaces) are common. Augmentation (cyberware/chrome) ranges from basic to military-grade. Geneware allows cosmetic and functional genetic modification (tails, bioluminescence, fur, horns, wings that don't work). Synthetics are artificial beings with full personhood debates ongoing.
 
-Corponations are sovereign corporate entities. Key corponations: Arcturus (defense/security), TESSERA (biotech/geneware), Ringo (media/entertainment), Ouroboros (finance/insurance), Vantablack (stealth tech/intelligence), Lazarus (medical/pharmaceuticals), Crucible (heavy industry/manufacturing).
+CorpoNations are sovereign corporate entities. Key CorpoNations: Arcturus (defense/security), TESSERA (biotech/geneware), Ringo (media/entertainment), Ouroboros (finance/insurance), Vantablack (stealth tech/intelligence), Lazarus (medical/pharmaceuticals), Crucible (heavy industry/manufacturing).
 
 Apparel must account for augment compatibility (chrome openings, port access), geneware accommodation (tail holes, horn clearance, wing slits, fur-friendly fabrics), and the full spectrum of body modification. Clothing in GLMZ is functional, political, and personal. What you wear signals tier, affiliation, and survival strategy.`;
 
@@ -151,8 +151,8 @@ const CATEGORIES = [
     category: 'uniform',
     count: 50,
     prompt: `Generate {count} UNIFORM apparel items for GLMZ, year 2200. These are work uniforms, corporate wear, and service clothing. Include a diverse mix of:
-- CorpSec tactical gear (body armor integrated, threat-response fabrics) for multiple corponations: Arcturus, TESSERA, Ringo, Ouroboros, Vantablack, Lazarus, Crucible — each with distinct design language
-- Corporate office wear by corponation (branded blazers, smart-fabric suits, company-mandated attire)
+- CorpSec tactical gear (body armor integrated, threat-response fabrics) for multiple CorpoNations: Arcturus, TESSERA, Ringo, Ouroboros, Vantablack, Lazarus, Crucible — each with distinct design language
+- Corporate office wear by CorpoNation (branded blazers, smart-fabric suits, company-mandated attire)
 - Medical scrubs and surgical gowns (aug-compatible, biohazard-rated)
 - Maintenance jumpsuits (industrial, self-cleaning, tool-loop integrated)
 - Kitchen and food service uniforms (heat-resistant, synth-proof, hairnet alternatives for horns/ears)
@@ -168,7 +168,7 @@ Each uniform should feel like something a real person wears to work. Brand names
 - Dresses and gowns (bioluminescent hems, geneware-accommodating cuts for tails/wings)
 - Tuxedos (classic and futuristic, some with integrated BCI-responsive color shifting)
 - Formal robes (cultural, corporate ceremony, synthetic personhood hearings)
-- Ceremonial garb (corponation investiture robes, tier-ascension formal wear)
+- Ceremonial garb (CorpoNation investiture robes, tier-ascension formal wear)
 - Diplomatic attire (neutral-signal clothing designed to offend no faction)
 The gap between Shelf-formal and Spire-formal should be viscerally clear. A Shelf person's best outfit costs what a Spire person spends on socks. Prices from Φ8 (Shelf thrift formal) to Φ5000+ (Spire couture).`
   },

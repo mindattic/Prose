@@ -6,7 +6,7 @@ using StreetSamurai.Core.Services;
 namespace StreetSamurai.Mcp;
 
 // ── Encyclopedia tools — list/get for every remaining canon repo ───────────
-// Same pattern as CanonTools (characters, places, factions, corponations) but
+// Same pattern as CanonTools (characters, places, factions, CorpoNations) but
 // for the production canon: weapons, equipment, automata, synthetics, etc.
 // All read-only. The list_X variants return a slim projection (name + a couple
 // of identity fields) so a tools/list call doesn't dump 50KB; get_X returns
@@ -407,8 +407,8 @@ public class EncyclopediaTools
         return JsonSerializer.Serialize(p, CanonTools.JsonOpts);
     }
 
-    /// <summary>List every subsidiary — child/holding companies of larger corponations.</summary>
-    [McpServerTool, Description("List every subsidiary — child/holding companies of larger corponations.")]
+    /// <summary>List every subsidiary — child/holding companies of larger CorpoNations.</summary>
+    [McpServerTool, Description("List every subsidiary — child/holding companies of larger CorpoNations.")]
     public string ListSubsidiaries()
     {
         subsidiaries.Reload();

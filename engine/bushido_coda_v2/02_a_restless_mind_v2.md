@@ -1,4 +1,4 @@
----
+﻿---
 title: A Restless Mind
 book: Bushido Coda
 chapter: 2
@@ -121,7 +121,7 @@ The relay station resolved out of the dark at the end of the block.
 
 Wartime construction. The brutalist vocabulary of a city that had once believed in infrastructure as ideology — poured concrete, no ornamentation, a deactivated antenna on the roof that still served its purpose as a story. *It is a relay station. It is empty. There is nothing here worth stopping for.* The kind of building that became invisible through its own explanation.
 
-(The relay station had been built in 2199 by Arcturus Communications during a brief and ill-fated experiment with municipal broadband partnership. The experiment had ended in 2203 when Arcturus had withdrawn from the residential market to focus on what its annual report had called *higher-margin verticals,* which was the corponation polite term for *anything that is not actually serving people who need it.* The relay station had been abandoned, leased to a shell company, leased onward to another shell company, and eventually purchased outright in 2218 by a fixer named Marcin who had bought it for the building's wartime concrete shell and had never used it for anything resembling its original purpose. Marcin had died in 2224. The station had passed, via the kind of inheritance ledger Marcin's heirs had not been informed of in advance, to Sable. Sable had used it once before tonight. Tonight was the second use. The station was, in this respect, the most expensive private meeting room in the Gray Zone, and the most invisible.)
+(The relay station had been built in 2199 by Arcturus Communications during a brief and ill-fated experiment with municipal broadband partnership. The experiment had ended in 2203 when Arcturus had withdrawn from the residential market to focus on what its annual report had called *higher-margin verticals,* which was the CorpoNation polite term for *anything that is not actually serving people who need it.* The relay station had been abandoned, leased to a shell company, leased onward to another shell company, and eventually purchased outright in 2218 by a fixer named Marcin who had bought it for the building's wartime concrete shell and had never used it for anything resembling its original purpose. Marcin had died in 2224. The station had passed, via the kind of inheritance ledger Marcin's heirs had not been informed of in advance, to Sable. Sable had used it once before tonight. Tonight was the second use. The station was, in this respect, the most expensive private meeting room in the Gray Zone, and the most invisible.)
 
 She produced a key.
 
@@ -409,7 +409,7 @@ He suspected the something knew.
 
 He suspected the something had known longer than he had.
 
-The bike's headlight crossed the canyon between buildings the way the city's headlights crossed everything at this hour — moving, not arriving, the architecture of motion that the GLMZ had been built around once the corponations had decided that arrival was a service rather than a destination. The sky was the bruise again — orange under, indigo over, the Pulse corridor scar across the middle. A fifth VTOL was crossing it, going north. Kyle did not file the running lights.
+The bike's headlight crossed the canyon between buildings the way the city's headlights crossed everything at this hour — moving, not arriving, the architecture of motion that the GLMZ had been built around once the CorpoNations had decided that arrival was a service rather than a destination. The sky was the bruise again — orange under, indigo over, the Pulse corridor scar across the middle. A fifth VTOL was crossing it, going north. Kyle did not file the running lights.
 
 He thought, briefly and without judgment, about what it had felt like in the cage. The silence. Eleven years.
 
@@ -463,7 +463,7 @@ Pixel did not ask.
 
 She sipped her tea. He sipped his.
 
-The mist outside was settling on the alley wall the way mist settled when the air below it was colder than the air above it, which was a meteorological condition the corponation weather processors three kilometers east had failed to predict for the fourth night running. Kyle had stopped checking the forecast roughly the same week he had stopped trying to keep up with Pixel's tea cabinet.
+The mist outside was settling on the alley wall the way mist settled when the air below it was colder than the air above it, which was a meteorological condition the CorpoNation weather processors three kilometers east had failed to predict for the fourth night running. Kyle had stopped checking the forecast roughly the same week he had stopped trying to keep up with Pixel's tea cabinet.
 
 "Bird's still out."
 

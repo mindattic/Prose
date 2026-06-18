@@ -1,4 +1,4 @@
-// generate_contracts_2.js
+﻿// generate_contracts_2.js
 // Generates 100 new contracts for StreetSamurai/GLMZ 2200
 // Output: engine/data/contracts/ (one JSON file per contract)
 // Resume-safe: skips contracts whose slugs already exist
@@ -160,7 +160,7 @@ const BATCHES = [
   {
     num: 2,
     label: 'Elimination targets',
-    detail: 'Contracts to remove someone or something. Targets range from: a mid-level Arcturus Civil Security commander running extortion on Shelf merchants, a data broker who sold the wrong list to the wrong buyer, a rival corponation\'s chief R&D director, a gang enforcer who has gone off-script, a blackmailer using synthetic-identity recordings. IMPORTANT: Some of these are morally ambiguous — the person being removed might have done something awful, or might be a scapegoat. Show both clean and dirty moral weights.'
+    detail: 'Contracts to remove someone or something. Targets range from: a mid-level Arcturus Civil Security commander running extortion on Shelf merchants, a data broker who sold the wrong list to the wrong buyer, a rival CorpoNation\'s chief R&D director, a gang enforcer who has gone off-script, a blackmailer using synthetic-identity recordings. IMPORTANT: Some of these are morally ambiguous — the person being removed might have done something awful, or might be a scapegoat. Show both clean and dirty moral weights.'
   },
   {
     num: 3,
@@ -170,7 +170,7 @@ const BATCHES = [
   {
     num: 4,
     label: 'Infiltration/recon',
-    detail: 'Find out what is happening inside something. No one will tell you; you have to go in and look. Include: documenting labor conditions inside a sealed manufacturing facility, finding out what a corponation is actually testing in a residential neighborhood, mapping security inside a property before another operation, confirming whether a missing person is being held at a specific location, discovering what a shell company actually does. Emphasis on information gathering over violence.'
+    detail: 'Find out what is happening inside something. No one will tell you; you have to go in and look. Include: documenting labor conditions inside a sealed manufacturing facility, finding out what a CorpoNation is actually testing in a residential neighborhood, mapping security inside a property before another operation, confirming whether a missing person is being held at a specific location, discovering what a shell company actually does. Emphasis on information gathering over violence.'
   },
   {
     num: 5,
@@ -180,17 +180,17 @@ const BATCHES = [
   {
     num: 6,
     label: 'Corporate warfare',
-    detail: 'One corponation hiring indirectly against another. The client never says who they are. The targets are always described in operational terms, never as employees of the real enemy. Include: disrupting a competitor\'s supply chain, seeding disinformation into a rival\'s internal communications, creating an incident that will trigger a regulatory audit of a competitor, recruiting a target\'s key technical asset to defect, ensuring a contract bid fails. The freelancer is a proxy weapon; they may or may not realize this.'
+    detail: 'One CorpoNation hiring indirectly against another. The client never says who they are. The targets are always described in operational terms, never as employees of the real enemy. Include: disrupting a competitor\'s supply chain, seeding disinformation into a rival\'s internal communications, creating an incident that will trigger a regulatory audit of a competitor, recruiting a target\'s key technical asset to defect, ensuring a contract bid fails. The freelancer is a proxy weapon; they may or may not realize this.'
   },
   {
     num: 7,
     label: 'Rescue/extraction',
-    detail: 'People who cannot get themselves out. The rescuer has to go in and bring them out. Include: a Tier 1 family trapped in a disputed zone during a corponation border dispute, a freelancer who took a job and is now being held by the client, a child who was taken as leverage in a debt dispute, someone in a corporate psychiatric facility who does not belong there, a person who went undercover three months ago and has not checked in. The obstacle to extraction is specific — legal, physical, political, or logistical.'
+    detail: 'People who cannot get themselves out. The rescuer has to go in and bring them out. Include: a Tier 1 family trapped in a disputed zone during a CorpoNation border dispute, a freelancer who took a job and is now being held by the client, a child who was taken as leverage in a debt dispute, someone in a corporate psychiatric facility who does not belong there, a person who went undercover three months ago and has not checked in. The obstacle to extraction is specific — legal, physical, political, or logistical.'
   },
   {
     num: 8,
     label: 'Sabotage',
-    detail: 'Infrastructure, supply chains, reputation. The damage is the point. Include: disabling the automated inspection system at a specific checkpoint for six hours, contaminating a batch of corporate PR data with false documentation before it goes public, ensuring a water processing relay has an outage on a specific night, destroying a corponation\'s public reputation around a product launch, burning a physical warehouse while ensuring the insurance fraud fails. Some are aimed at legitimate targets; some are aimed at civilian infrastructure. Moral weight matters.'
+    detail: 'Infrastructure, supply chains, reputation. The damage is the point. Include: disabling the automated inspection system at a specific checkpoint for six hours, contaminating a batch of corporate PR data with false documentation before it goes public, ensuring a water processing relay has an outage on a specific night, destroying a CorpoNation\'s public reputation around a product launch, burning a physical warehouse while ensuring the insurance fraud fails. Some are aimed at legitimate targets; some are aimed at civilian infrastructure. Moral weight matters.'
   },
   {
     num: 9,
@@ -200,7 +200,7 @@ const BATCHES = [
   {
     num: 10,
     label: 'Ghost-tier jobs',
-    detail: 'Things that would get an S-tier freelancer killed if done wrong. Ghost tier. The postings themselves are encoded; brokers only share them with people at Ghost tier. Include: removing evidence of a corponation atrocity that occurred twenty years ago and is still covered up, assassinating someone so protected by layered corponation security that even approaching them requires months of work, obtaining a specific piece of technology that a corponation has declared does not exist, ending something that has been ongoing for a decade and has killed everyone who previously tried to end it, a contract posted by unknown parties with a payout so large it is almost certainly a trap. These should feel genuinely dangerous — not just hard combat, but existentially threatening in terms of what getting caught means.'
+    detail: 'Things that would get an S-tier freelancer killed if done wrong. Ghost tier. The postings themselves are encoded; brokers only share them with people at Ghost tier. Include: removing evidence of a CorpoNation atrocity that occurred twenty years ago and is still covered up, assassinating someone so protected by layered CorpoNation security that even approaching them requires months of work, obtaining a specific piece of technology that a CorpoNation has declared does not exist, ending something that has been ongoing for a decade and has killed everyone who previously tried to end it, a contract posted by unknown parties with a payout so large it is almost certainly a trap. These should feel genuinely dangerous — not just hard combat, but existentially threatening in terms of what getting caught means.'
   }
 ];
 

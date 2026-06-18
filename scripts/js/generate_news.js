@@ -1,4 +1,4 @@
-// News article generator for StreetSamurai
+﻿// News article generator for StreetSamurai
 // Generates 100 news article JSON files in engine_data/news/
 // Run: node generate_news.js
 // Resumes from where it left off — skips existing files.
@@ -274,7 +274,7 @@ const SYSTEM_PROMPT = `You are a world-building assistant for the near-future me
 WORLD CONTEXT:
 - GLMZ is a megacity built on the ruins of the old Great Lakes region
 - Currency: phi (the Quanta system) — written as a number followed by phi, e.g. "2,400 phi"
-- Corponations (corporate nations with sovereignty): Axiom, Tessera, Sterling-Nakamura, Zheng-Dao, Arcturus Defense, Ringo, Palladian, Helix Biosystems, Ferrogate Transit, Ironclad
+- CorpoNations (corporate nations with sovereignty): Axiom, Tessera, Sterling-Nakamura, Zheng-Dao, Arcturus Defense, Ringo, Palladian, Helix Biosystems, Ferrogate Transit, Ironclad
 - Factions: Iron Lotus (criminal syndicate), The Collective (worker cooperative), Bore Rats (tunnel dwellers/smugglers), Graycloaks (information brokers), The Wishing Well (philosophical movement)
 - Districts: The Shelf (poor residential), The Spires (corporate towers), The Circuit (tech/commerce), Old Harbor (flooded ruins from sea wall failure), The Narrows (dense slums), Geartown (industrial), The Underworld (underground network)
 - Ubiquitous Diaspora: generations of migration and mixing mean most people have mixed heritage — names reflect this (e.g. "Kenji Okafor-Singh", "Lucia Tanaka-Reeves", "Dmitri Achebe-Park", "Amara Johanssen-Liang")
@@ -317,7 +317,7 @@ const ARTICLE_SCHEMA = `Each article must follow this exact schema:
   "body": "2-4 paragraph news report written as a broadcast transcript",
   "aftermath": "What happened next — 1 sentence",
   "casualties": "number or 'none' or 'unknown'",
-  "entities_involved": ["corponation names", "faction names", "character names as appropriate"],
+  "entities_involved": ["CorpoNation names", "faction names", "character names as appropriate"],
   "locations": ["specific place names from the world"],
   "runner_relevance": "Why this event matters to the freelance runner economy — how it created demand for runners, specific contract types it spawned",
   "tags": ["3-6 thematic tags"]

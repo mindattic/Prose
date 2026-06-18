@@ -1,4 +1,4 @@
-const fs = require('fs');
+﻿const fs = require('fs');
 const path = require('path');
 
 const OUTPUT_DIR = path.join(__dirname, '..', 'engine_data', 'documents');
@@ -30,7 +30,7 @@ emit({
 
 ## Overview
 
-The Red Ledger is not an organization — it is a mechanism. An anonymous, decentralized marketplace where contracts for violence are posted, bid on, and fulfilled without any party knowing the identity of any other party. The Red Ledger operates through a series of encrypted dead drops in Ghost Protocol's domain, using quantum-encrypted communications that even the corponations' intelligence services have failed to compromise.
+The Red Ledger is not an organization — it is a mechanism. An anonymous, decentralized marketplace where contracts for violence are posted, bid on, and fulfilled without any party knowing the identity of any other party. The Red Ledger operates through a series of encrypted dead drops in Ghost Protocol's domain, using quantum-encrypted communications that even the CorpoNations' intelligence services have failed to compromise.
 
 ## How It Works
 
@@ -133,11 +133,11 @@ The Circuit Breakers are a small, elite criminal crew specializing in infrastruc
 
 The Circuit Breakers' expertise lies not in destruction but in precision. Anyone can blow up a power conduit. The Circuit Breakers can disable a specific building's communications for exactly 47 minutes, then restore service as if nothing happened. They can reroute water flow to flood a specific basement. They can create a transit delay that strands a specific vehicle at a specific location. Their work is surgical: minimum visible damage, maximum operational effect, minimal collateral impact.
 
-This precision requires deep knowledge of GLMZ's infrastructure — the kind of knowledge that comes from years of working inside it. The Circuit Breakers' members are believed to be former infrastructure engineers from multiple corponations, pooling their insider knowledge into a capability that no single corponation can replicate or defend against.
+This precision requires deep knowledge of GLMZ's infrastructure — the kind of knowledge that comes from years of working inside it. The Circuit Breakers' members are believed to be former infrastructure engineers from multiple CorpoNations, pooling their insider knowledge into a capability that no single CorpoNation can replicate or defend against.
 
 ## Client Base
 
-The Circuit Breakers serve a small, wealthy client base: corporate espionage divisions that need infrastructure disruption for cover operations, operators who need specific systems disabled during missions, and (allegedly) corponation executives who use infrastructure sabotage as a weapon in internal corporate politics. Rates start at Φ50,000 for a simple disruption and scale to Φ500,000+ for complex, multi-system operations.
+The Circuit Breakers serve a small, wealthy client base: corporate espionage divisions that need infrastructure disruption for cover operations, operators who need specific systems disabled during missions, and (allegedly) CorpoNation executives who use infrastructure sabotage as a weapon in internal corporate politics. Rates start at Φ50,000 for a simple disruption and scale to Φ500,000+ for complex, multi-system operations.
 
 ## The Code
 
@@ -150,17 +150,17 @@ The Circuit Breakers' existence has driven investment in infrastructure redundan
 
 emit({
   file_name: "corporate_espionage_the_shadow_war",
-  title: "Corporate Espionage: The Shadow War Between Corponations",
+  title: "Corporate Espionage: The Shadow War Between CorpoNations",
   category: "Culture",
-  body: `# Corporate Espionage: The Shadow War Between Corponations
+  body: `# Corporate Espionage: The Shadow War Between CorpoNations
 
 ## Overview
 
-The six corponations of GLMZ are allies in governance and enemies in commerce. The governance consortium requires cooperation; the market requires competition. The result is a permanent state of covert conflict — corporate espionage operations that steal technology, compromise personnel, sabotage supply chains, and gather intelligence on competitors' strategies. This shadow war is the most significant source of employment for freelance operators in GLMZ.
+The six CorpoNations of GLMZ are allies in governance and enemies in commerce. The governance consortium requires cooperation; the market requires competition. The result is a permanent state of covert conflict — corporate espionage operations that steal technology, compromise personnel, sabotage supply chains, and gather intelligence on competitors' strategies. This shadow war is the most significant source of employment for freelance operators in GLMZ.
 
 ## The Players
 
-Every corponation maintains an intelligence division that officially doesn't exist:
+Every CorpoNation maintains an intelligence division that officially doesn't exist:
 
 - **Axiom's Signal Corps**: Specializes in electronic intelligence — intercepting communications, compromising networks, and deploying AI-driven analysis against competitors' data streams.
 - **Tessera's Commercial Intelligence Unit**: Focuses on supply chain intelligence — monitoring competitors' logistics, sourcing, and manufacturing for strategic advantage.
@@ -171,20 +171,20 @@ Every corponation maintains an intelligence division that officially doesn't exi
 
 ## The Operator Economy
 
-The corponations conduct most espionage operations through freelance operators rather than corporate personnel — maintaining deniability by using independent contractors who can be disavowed if caught. This creates the operator economy: a labor market of skilled individuals who conduct surveillance, infiltration, extraction, sabotage, and counter-intelligence operations for corporate clients.
+The CorpoNations conduct most espionage operations through freelance operators rather than corporate personnel — maintaining deniability by using independent contractors who can be disavowed if caught. This creates the operator economy: a labor market of skilled individuals who conduct surveillance, infiltration, extraction, sabotage, and counter-intelligence operations for corporate clients.
 
-An experienced operator earns Φ5,000-30,000 per job, depending on complexity and risk. The best operators are known by reputation, contracted through intermediaries (the Data Brokers Guild often serves this function), and maintain relationships with multiple corponations simultaneously — a mercenary arrangement that the corponations accept because the alternative is maintaining larger in-house intelligence divisions that are more expensive and more politically conspicuous.
+An experienced operator earns Φ5,000-30,000 per job, depending on complexity and risk. The best operators are known by reputation, contracted through intermediaries (the Data Brokers Guild often serves this function), and maintain relationships with multiple CorpoNations simultaneously — a mercenary arrangement that the CorpoNations accept because the alternative is maintaining larger in-house intelligence divisions that are more expensive and more politically conspicuous.
 
 ## Rules of Engagement
 
-The shadow war operates under unwritten rules that all six corponations observe because the consequences of violating them outweigh the benefits:
+The shadow war operates under unwritten rules that all six CorpoNations observe because the consequences of violating them outweigh the benefits:
 
 - **No killing of corporate executives**: Espionage targets intelligence, not leadership. Assassination escalates beyond what the governance consortium can manage.
-- **No attacks on critical infrastructure**: Corporate espionage targets corporate assets, not the shared infrastructure that all six corponations depend on.
+- **No attacks on critical infrastructure**: Corporate espionage targets corporate assets, not the shared infrastructure that all six CorpoNations depend on.
 - **Mirror Mile neutrality**: Espionage operations are suspended within Mirror Mile's boundaries. The diplomatic cost of violating this neutrality exceeds any intelligence gain.
 - **Proportional response**: If an operation is detected, the response is proportional — counter-intelligence, not military action.
 
-These rules are guidelines, not laws. They are violated when the stakes are high enough. But the general restraint is real: the corponations understand that unrestricted corporate warfare would destroy the system that benefits all of them.`
+These rules are guidelines, not laws. They are violated when the stakes are high enough. But the general restraint is real: the CorpoNations understand that unrestricted corporate warfare would destroy the system that benefits all of them.`
 });
 
 emit({
@@ -415,7 +415,7 @@ The atmospheric processors' filtration systems include real-time pathogen detect
 The augmented population's BCIs continuously monitor their hosts' biometric data. The first signs of infection — elevated temperature, altered white blood cell activity, inflammatory markers — are detected by the BCI and reported to the medical surveillance system automatically. This gives GLMZ a disease detection capability that operates at the individual level: every augmented citizen is a disease sensor, and the medical system can identify an outbreak hours or days before symptoms become clinically apparent.
 
 ### Quarantine Infrastructure
-Every district in GLMZ can be sealed from its neighbors through ventilation partitioning, transit suspension, and physical barrier activation. The quarantine infrastructure was designed for the Cascade of 2178 response but is maintained primarily for pandemic containment. A full city quarantine — sealing every district from every other district — can be implemented in 4 hours. The political will to implement it is a different question: quarantine imposes economic costs that the corponations resist even when the medical justification is clear.
+Every district in GLMZ can be sealed from its neighbors through ventilation partitioning, transit suspension, and physical barrier activation. The quarantine infrastructure was designed for the Cascade of 2178 response but is maintained primarily for pandemic containment. A full city quarantine — sealing every district from every other district — can be implemented in 4 hours. The political will to implement it is a different question: quarantine imposes economic costs that the CorpoNations resist even when the medical justification is clear.
 
 ## The Augment Plague of 2167
 
@@ -450,7 +450,7 @@ Operators come from three primary backgrounds:
 
 Operator contracts fall into several categories:
 
-**Extraction**: Removing a person or object from a secured location. The most common contract type. Clients include corponations seeking stolen assets, individuals seeking trapped family members, and criminals seeking imprisoned associates. Pay: Φ5,000-50,000 depending on target security.
+**Extraction**: Removing a person or object from a secured location. The most common contract type. Clients include CorpoNations seeking stolen assets, individuals seeking trapped family members, and criminals seeking imprisoned associates. Pay: Φ5,000-50,000 depending on target security.
 
 **Protection**: Defending a person, location, or asset against a specific threat. Close protection for executives, security augmentation for events, and the defense of fixed locations during expected attacks. Pay: Φ2,000-20,000 per day.
 
@@ -482,7 +482,7 @@ Electronic warfare (EW) in 2200 is not a military specialty — it's a dimension
 ### Signal Intelligence (SIGINT)
 The interception and analysis of electromagnetic communications — BCI transmissions, device communications, network traffic, and the ambient electromagnetic signatures that every electronic device produces. SIGINT provides the raw data for intelligence analysis: who is talking to whom, what they're saying, where they are, and what their devices reveal about their activities.
 
-Axiom's Signal Corps is the most capable SIGINT operation in GLMZ. Its monitoring infrastructure captures and processes a significant fraction of the city's electromagnetic output, using AI analysis systems to identify patterns, anomalies, and targets of interest. The Signal Corps' capability is officially classified. Unofficially, it is assumed by all other corponations that Axiom can intercept any non-quantum-encrypted communication in the city.
+Axiom's Signal Corps is the most capable SIGINT operation in GLMZ. Its monitoring infrastructure captures and processes a significant fraction of the city's electromagnetic output, using AI analysis systems to identify patterns, anomalies, and targets of interest. The Signal Corps' capability is officially classified. Unofficially, it is assumed by all other CorpoNations that Axiom can intercept any non-quantum-encrypted communication in the city.
 
 ### Electronic Attack
 The active disruption, degradation, or destruction of enemy electronic systems. Electronic attack tools include: neural disruptors (targeting BCIs), network jamming (flooding communications channels with noise), directed energy weapons (destroying electronic hardware through focused electromagnetic pulses), and the software weapons — viruses, worms, and exploit chains — that compromise digital systems from within.
@@ -525,7 +525,7 @@ Standard RRF loadout:
 
 The RRF has deployed 47 times in the last decade for scenarios including:
 
-- **Corporate warfare incidents**: Armed confrontations between corponation security forces that exceed containment capability
+- **Corporate warfare incidents**: Armed confrontations between CorpoNation security forces that exceed containment capability
 - **Infrastructure threats**: Attacks on critical systems (atmospheric processors, water treatment, power grid) that require armed response
 - **Terrorist actions**: Organized attacks against civilian populations or corporate assets
 - **Synthetic intelligence incidents**: Situations where E.L.F., Supermind, or Leviathan behavior threatens human safety or critical infrastructure
@@ -610,7 +610,7 @@ emit({
 
 ## Overview
 
-Information in GLMZ is stratified by access — a tier system that determines what each person is permitted to know, see, and access within the corporate infrastructure. The clearance system is managed by each corponation independently but follows a common framework established by the governance consortium, creating a city-wide hierarchy of information access that maps directly to social and economic power.
+Information in GLMZ is stratified by access — a tier system that determines what each person is permitted to know, see, and access within the corporate infrastructure. The clearance system is managed by each CorpoNation independently but follows a common framework established by the governance consortium, creating a city-wide hierarchy of information access that maps directly to social and economic power.
 
 ## The Tier System
 
@@ -621,16 +621,16 @@ Information available to all residents. Includes: public notices, basic wayfindi
 Information available to registered residents with verified identity. Includes: detailed city maps, public health advisories, community services, and the enhanced communications access that comes with identity verification. Approximately 95% of the population has Tier 1 access.
 
 ### Tier 2: Employee
-Information available to corporate employees. Includes: corporate internal communications, workplace systems, professional databases, and the company-specific information that employees need to do their jobs. Tier 2 access is granted by the employing corponation and revoked upon termination — a restriction that makes job loss equivalent to information exile.
+Information available to corporate employees. Includes: corporate internal communications, workplace systems, professional databases, and the company-specific information that employees need to do their jobs. Tier 2 access is granted by the employing CorpoNation and revoked upon termination — a restriction that makes job loss equivalent to information exile.
 
 ### Tier 3: Management
-Information available to corporate management. Includes: strategic planning data, financial projections, personnel files, and the inter-corponation communications that management uses to coordinate shared governance functions. Tier 3 access reveals the machinery of corporate governance — the decisions, negotiations, and compromises that produce the policies Tier 0-2 citizens experience as facts of life.
+Information available to corporate management. Includes: strategic planning data, financial projections, personnel files, and the inter-CorpoNation communications that management uses to coordinate shared governance functions. Tier 3 access reveals the machinery of corporate governance — the decisions, negotiations, and compromises that produce the policies Tier 0-2 citizens experience as facts of life.
 
 ### Tier 4: Executive
 Information available to senior corporate executives. Includes: classified research data, intelligence assessments, military planning, and the full picture of corporate strategy. Tier 4 is where the real decisions are made — where the comfortable fictions of Tier 0 are revealed as deliberate constructions and the city's actual operating parameters become visible.
 
 ### Tier 5: Restricted
-Information available only on a need-to-know basis to the most senior individuals in each corponation. Includes: weapons research, classified AI projects, strategic contingency plans, and the information about GLMZ's synthetic intelligences (particularly the Leviathans) that the governance consortium considers too sensitive for even Tier 4 access. Tier 5 clearance holders number in the low hundreds across all six corponations.
+Information available only on a need-to-know basis to the most senior individuals in each CorpoNation. Includes: weapons research, classified AI projects, strategic contingency plans, and the information about GLMZ's synthetic intelligences (particularly the Leviathans) that the governance consortium considers too sensitive for even Tier 4 access. Tier 5 clearance holders number in the low hundreds across all six CorpoNations.
 
 ## The Knowledge Gap
 
@@ -678,7 +678,7 @@ emit({
 
 ## Overview
 
-Labor law in GLMZ is defined by the Consortium Labor Code — a set of minimum standards governing the employment relationship between corponations and their workers. The Code establishes: minimum compensation (Φ4/hour for manual labor, Φ6/hour for skilled work), maximum shift duration (12 hours), mandatory rest periods (8 hours between shifts), workplace safety standards (defined by corponation, enforced by corponation), and the right to resign from employment (subject to contractual obligations, which can include financial penalties, non-compete restrictions, and the forfeiture of corporate housing).
+Labor law in GLMZ is defined by the Consortium Labor Code — a set of minimum standards governing the employment relationship between CorpoNations and their workers. The Code establishes: minimum compensation (Φ4/hour for manual labor, Φ6/hour for skilled work), maximum shift duration (12 hours), mandatory rest periods (8 hours between shifts), workplace safety standards (defined by CorpoNation, enforced by CorpoNation), and the right to resign from employment (subject to contractual obligations, which can include financial penalties, non-compete restrictions, and the forfeiture of corporate housing).
 
 ## What the Code Provides
 
@@ -694,7 +694,7 @@ The most binding provisions are:
 
 **Housing clauses**: Corporate housing is contingent on employment. Termination of employment triggers housing termination within 90 days. For a Jade Terrace resident, losing their job means losing their home.
 
-**Non-compete restrictions**: Former employees are prohibited from working for competing corponations for 1-3 years after departure. In a city with six employers, a 3-year non-compete effectively bars a person from their profession.
+**Non-compete restrictions**: Former employees are prohibited from working for competing CorpoNations for 1-3 years after departure. In a city with six employers, a 3-year non-compete effectively bars a person from their profession.
 
 **Knowledge restrictions**: Former employees are prohibited from using knowledge gained during employment at any subsequent job — a restriction so broadly written that it could theoretically prevent a former Axiom engineer from thinking about engineering.
 
@@ -717,26 +717,26 @@ emit({
 
 ## Overview
 
-Property in GLMZ is not owned in the traditional sense — it is licensed. The Meridian Charter vests ownership of all physical infrastructure in the corponation that built it. Residents, businesses, and organizations occupy space under license from the corponation that owns the structure. This means that no individual in GLMZ owns their home. They license it — under terms that the owning corponation defines and can modify.
+Property in GLMZ is not owned in the traditional sense — it is licensed. The Meridian Charter vests ownership of all physical infrastructure in the CorpoNation that built it. Residents, businesses, and organizations occupy space under license from the CorpoNation that owns the structure. This means that no individual in GLMZ owns their home. They license it — under terms that the owning CorpoNation defines and can modify.
 
 ## The License System
 
 ### Residential Licenses
-Residents occupy housing under licenses that define: the space they may use, the duration of the license (typically 1-5 years, renewable), the monthly fee (ranging from Φ80 for a Shelf unit to Φ5,000+ for an arcology apartment), and the conditions under which the license may be terminated. Termination conditions include: non-payment (30 days delinquent), criminal conviction (immediate), UBC suspension (30 days), and — most controversially — "operational necessity" (the corponation needs the space for other purposes).
+Residents occupy housing under licenses that define: the space they may use, the duration of the license (typically 1-5 years, renewable), the monthly fee (ranging from Φ80 for a Shelf unit to Φ5,000+ for an arcology apartment), and the conditions under which the license may be terminated. Termination conditions include: non-payment (30 days delinquent), criminal conviction (immediate), UBC suspension (30 days), and — most controversially — "operational necessity" (the CorpoNation needs the space for other purposes).
 
-The "operational necessity" clause gives the owning corponation the right to relocate residents with 90 days' notice and the provision of equivalent alternative housing. In practice, "equivalent" is interpreted loosely, and residents relocated under operational necessity frequently find themselves in inferior housing with no recourse.
+The "operational necessity" clause gives the owning CorpoNation the right to relocate residents with 90 days' notice and the provision of equivalent alternative housing. In practice, "equivalent" is interpreted loosely, and residents relocated under operational necessity frequently find themselves in inferior housing with no recourse.
 
 ### Commercial Licenses
-Businesses operate under commercial licenses that are more expensive, more restrictive, and more frequently revoked than residential licenses. A commercial license on the Strip in Neon Bend costs Φ2,000-10,000/month and includes provisions governing the type of business permitted, operating hours, noise levels, and the aesthetic standards that the owning corponation imposes on its commercial tenants.
+Businesses operate under commercial licenses that are more expensive, more restrictive, and more frequently revoked than residential licenses. A commercial license on the Strip in Neon Bend costs Φ2,000-10,000/month and includes provisions governing the type of business permitted, operating hours, noise levels, and the aesthetic standards that the owning CorpoNation imposes on its commercial tenants.
 
 ### The Shelf Exception
-The Shelf's jurisdictional ambiguity extends to property law. Because the Shelf occupies space between corponation-owned structures in a zone that no single corponation claims, property law in the Shelf is effectively customary — based on community recognition of occupancy rather than corporate license. A Shelf resident who has occupied a unit for five or more years is recognized by the community as having a legitimate claim to that space, regardless of the absence of formal licensing. This customary property system is legally unrecognized but practically enforced by community consensus.
+The Shelf's jurisdictional ambiguity extends to property law. Because the Shelf occupies space between CorpoNation-owned structures in a zone that no single CorpoNation claims, property law in the Shelf is effectively customary — based on community recognition of occupancy rather than corporate license. A Shelf resident who has occupied a unit for five or more years is recognized by the community as having a legitimate claim to that space, regardless of the absence of formal licensing. This customary property system is legally unrecognized but practically enforced by community consensus.
 
 ## Personal Property
 
 Personal property — goods, devices, currency, and intellectual property — is owned by individuals under the Charter's personal property provisions. These provisions are robust: personal property cannot be seized without due process, cannot be confiscated as a condition of employment, and is protected against corporate appropriation.
 
-The exception is intellectual property created during employment. Under standard corporate contracts, any intellectual property created by an employee during their employment belongs to the employer — a provision that has been used to claim ownership of everything from engineering innovations to personal artistic works created on company time. The provision is enforced aggressively by corponations and challenged continuously by workers who believe that the products of their minds belong to them.`
+The exception is intellectual property created during employment. Under standard corporate contracts, any intellectual property created by an employee during their employment belongs to the employer — a provision that has been used to claim ownership of everything from engineering innovations to personal artistic works created on company time. The provision is enforced aggressively by CorpoNations and challenged continuously by workers who believe that the products of their minds belong to them.`
 });
 
 emit({
@@ -747,26 +747,26 @@ emit({
 
 ## Overview
 
-The GLMZ Governance Consortium is the closest thing the city has to a government — a committee of twelve representatives (two from each corponation) that manages the shared functions of the city: infrastructure, UBC, security, and the regulatory framework that governs corponation interaction. The Consortium meets weekly in a chamber on Mirror Mile, and its decisions affect every one of the city's 12 million residents. None of those residents have any voice in the process.
+The GLMZ Governance Consortium is the closest thing the city has to a government — a committee of twelve representatives (two from each CorpoNation) that manages the shared functions of the city: infrastructure, UBC, security, and the regulatory framework that governs CorpoNation interaction. The Consortium meets weekly in a chamber on Mirror Mile, and its decisions affect every one of the city's 12 million residents. None of those residents have any voice in the process.
 
 ## Structure
 
 ### Representatives
-Each corponation appoints two representatives to the Consortium — typically a senior executive (who sets strategic direction) and a technical specialist (who understands the operational implications of decisions). Representatives serve at the pleasure of their appointing corponation and can be recalled and replaced at any time.
+Each CorpoNation appoints two representatives to the Consortium — typically a senior executive (who sets strategic direction) and a technical specialist (who understands the operational implications of decisions). Representatives serve at the pleasure of their appointing CorpoNation and can be recalled and replaced at any time.
 
 ### Voting
-Decisions require a four-corponation majority (8 of 12 votes). Each corponation's two representatives vote as a bloc. Abstention is permitted and counts as a non-vote. Deadlocked decisions (3-3 corponation split) are referred to binding arbitration, which can take months.
+Decisions require a four-CorpoNation majority (8 of 12 votes). Each CorpoNation's two representatives vote as a bloc. Abstention is permitted and counts as a non-vote. Deadlocked decisions (3-3 CorpoNation split) are referred to binding arbitration, which can take months.
 
 ### The Chair
-The Consortium Chair rotates annually between the six corponations. The Chair sets the meeting agenda, manages debate, and casts tie-breaking votes in the rare event of a single-vote deadlock (possible when one corponation abstains and the remaining five split 3-2). The Chair position is largely ceremonial — the real power lies in the bilateral negotiations between corponation representatives that happen before the formal meeting, where deals are made, concessions are traded, and the votes are decided before anyone sits down at the table.
+The Consortium Chair rotates annually between the six CorpoNations. The Chair sets the meeting agenda, manages debate, and casts tie-breaking votes in the rare event of a single-vote deadlock (possible when one CorpoNation abstains and the remaining five split 3-2). The Chair position is largely ceremonial — the real power lies in the bilateral negotiations between CorpoNation representatives that happen before the formal meeting, where deals are made, concessions are traded, and the votes are decided before anyone sits down at the table.
 
 ## Decision-Making Reality
 
 The Consortium's formal meetings are theater. The real governance happens in the informal negotiations that precede them:
 
-**Bilateral deals**: Two corponations agree to support each other's proposals, creating voting blocs that guarantee passage. The most common alignment is Axiom-Sterling-Nakamura versus Tessera-Zheng-Dao, with Arcturus and Ringo as swing votes.
+**Bilateral deals**: Two CorpoNations agree to support each other's proposals, creating voting blocs that guarantee passage. The most common alignment is Axiom-Sterling-Nakamura versus Tessera-Zheng-Dao, with Arcturus and Ringo as swing votes.
 
-**Issue trading**: Corponations trade votes on issues they care about for votes on issues their trading partner cares about. Tessera supports Axiom's proposal on data regulation in exchange for Axiom supporting Tessera's proposal on agricultural subsidies.
+**Issue trading**: CorpoNations trade votes on issues they care about for votes on issues their trading partner cares about. Tessera supports Axiom's proposal on data regulation in exchange for Axiom supporting Tessera's proposal on agricultural subsidies.
 
 **Threat dynamics**: Arcturus's military capability gives it implicit veto power over security-related decisions — voting against Arcturus on defense policy means risking a degradation of the military services that protect the city. Similarly, Tessera's control of food production gives it implicit leverage over any decision that might affect agricultural operations.
 
@@ -776,13 +776,13 @@ The Consortium's formal meetings are theater. The real governance happens in the
 
 **Infrastructure policy**: The Consortium authorizes major infrastructure projects, sets maintenance standards, and allocates shared infrastructure costs.
 
-**Security framework**: The Consortium defines the Security Code, authorizes Arcturus deployments, and manages the jurisdictional boundaries between corponation security forces.
+**Security framework**: The Consortium defines the Security Code, authorizes Arcturus deployments, and manages the jurisdictional boundaries between CorpoNation security forces.
 
-**Regulatory standards**: The Consortium sets environmental standards, labor minimums, and the regulatory framework within which the corponations operate.
+**Regulatory standards**: The Consortium sets environmental standards, labor minimums, and the regulatory framework within which the CorpoNations operate.
 
 ## What the Consortium Doesn't Control
 
-Each corponation retains sovereign authority over: its internal operations, its employees, its intellectual property, its security force (within the Consortium's framework), and its strategic direction. The Consortium governs the shared spaces between corponations, not the corponations themselves. This is the fundamental limitation of corporate governance: the entities that make the rules are also the entities the rules apply to, and they have written the rules to preserve their own autonomy.`
+Each CorpoNation retains sovereign authority over: its internal operations, its employees, its intellectual property, its security force (within the Consortium's framework), and its strategic direction. The Consortium governs the shared spaces between CorpoNations, not the CorpoNations themselves. This is the fundamental limitation of corporate governance: the entities that make the rules are also the entities the rules apply to, and they have written the rules to preserve their own autonomy.`
 });
 
 // ═══ HISTORY (2 more) ═══
@@ -838,7 +838,7 @@ The announcement triggered immediate protest. Community organizers in the Shelf 
 
 On the second day, Ringo Public Safety officers deployed crowd control measures — neural disruptors and chemical dispersants — against a demonstration at the Arcade that blocked transit access. The crowd control measures affected not only the protesters but hundreds of bystanders using the Arcade for normal transit. Images of children and elderly residents collapsing from neural disruptor exposure spread through the city's communications networks (CHORUS, already active at this point, may have facilitated their distribution) and transformed a localized protest into a citywide outrage.
 
-By day three, demonstrations had spread to every Shelf district and several Grind zones. Property destruction targeted Tessera facilities specifically: vertical farm access points, food distribution centers, and the corporate offices where Tessera's Shelf operations were managed. The destruction was not random — it was precisely targeted at the company responsible for the food reduction, leaving other corponation facilities untouched.
+By day three, demonstrations had spread to every Shelf district and several Grind zones. Property destruction targeted Tessera facilities specifically: vertical farm access points, food distribution centers, and the corporate offices where Tessera's Shelf operations were managed. The destruction was not random — it was precisely targeted at the company responsible for the food reduction, leaving other CorpoNation facilities untouched.
 
 ## The Response
 
@@ -848,13 +848,13 @@ The violence peaked on day four: twelve people were killed in confrontations bet
 
 ## The Resolution
 
-On day five, the governance consortium convened an emergency session and reversed Tessera's food reduction — the only time a consortium decision has been overruled by popular pressure. The reversal was accompanied by a Φ50 billion subsidy to the Cloud Gardens, funded by a special assessment on all six corponations, to address the production cost increase that had motivated the original reduction.
+On day five, the governance consortium convened an emergency session and reversed Tessera's food reduction — the only time a consortium decision has been overruled by popular pressure. The reversal was accompanied by a Φ50 billion subsidy to the Cloud Gardens, funded by a special assessment on all six CorpoNations, to address the production cost increase that had motivated the original reduction.
 
 ## Legacy
 
 The Food Riots established three principles in GLMZ's political culture:
 
-1. **The UBC floor is inviolable.** No reduction in UBC benefits has been attempted since 2152. The corponations understand that the population will tolerate poverty but not starvation, and that the cost of suppressing food riots exceeds the cost of maintaining food subsidies.
+1. **The UBC floor is inviolable.** No reduction in UBC benefits has been attempted since 2152. The CorpoNations understand that the population will tolerate poverty but not starvation, and that the cost of suppressing food riots exceeds the cost of maintaining food subsidies.
 
 2. **Collective action works.** Despite the absence of formal political mechanisms, the population demonstrated that organized, sustained, and disruptive collective action can force the governance consortium to respond. This lesson informed every subsequent popular movement, including Elena Vasquez-9's labor organizing.
 
@@ -886,7 +886,7 @@ The apex of manufacturing technology: systems that assemble materials at the ato
 
 ## The Democratization Problem
 
-Consumer-level fabrication has created what the corponations call "the democratization problem": when anyone can manufacture anything, controlling the production of restricted items becomes effectively impossible. A consumer printer can produce a gauss weapon receiver (the component that defines a weapon under GLMZ law) in 45 minutes from freely available design files and common metal feedstock. The Ninth Circle's weapons manufacturing operation leverages industrial printers to produce weapons at scale, but any individual with a consumer printer and the right design file can produce a single weapon in their apartment.
+Consumer-level fabrication has created what the CorpoNations call "the democratization problem": when anyone can manufacture anything, controlling the production of restricted items becomes effectively impossible. A consumer printer can produce a gauss weapon receiver (the component that defines a weapon under GLMZ law) in 45 minutes from freely available design files and common metal feedstock. The Ninth Circle's weapons manufacturing operation leverages industrial printers to produce weapons at scale, but any individual with a consumer printer and the right design file can produce a single weapon in their apartment.
 
 The governance consortium has attempted to address this through design file regulation — requiring that fabrication design files for restricted items be encrypted and available only through licensed channels. The regulation is technically enforceable (printers can be programmed to reject restricted design files) and practically futile (modified printer firmware that ignores file restrictions is widely available through the Ninth Circle's distribution network).
 

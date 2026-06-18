@@ -1,4 +1,4 @@
-const fs = require("fs");
+﻿const fs = require("fs");
 const path = require("path");
 const crypto = require("crypto");
 
@@ -43,7 +43,7 @@ MISSOURI. Flooded swamp. The Mississippi expanded in the 2140s, the levees faile
 
 KENTUCKY. All contact lost. Satellites show green. No structures. No heat signatures. No electromagnetic emissions. No movement. Just green. Unbroken canopy from border to border. The vegetation does not match any known species in our botanical database. Overflights have been attempted twice. Both aircraft returned with corrupted navigation data and flight recorders that contain only a low hum at 23.4 Hz. We do not send aircraft over Kentucky anymore. The entry for Kentucky has not changed in forty-one years.
 
-TENNESSEE. Fragmented. Nashville is controlled by Meridian Sound, a media corponation that broadcasts music continuously on every available frequency. Memphis is underwater. Knoxville reportedly declared itself a "free city" in 2198 and has maintained that status through means that are unclear. The eastern mountains are Appalachian territory. See: Virginia, West Virginia, North Carolina.
+TENNESSEE. Fragmented. Nashville is controlled by Meridian Sound, a media CorpoNation that broadcasts music continuously on every available frequency. Memphis is underwater. Knoxville reportedly declared itself a "free city" in 2198 and has maintained that status through means that are unclear. The eastern mountains are Appalachian territory. See: Virginia, West Virginia, North Carolina.
 
 VIRGINIA. The Appalachian states went feral. This is the clinical term we use because the actual term — "reverted to a pre-industrial social structure organized around kinship networks, oral tradition, and territorial violence" — is too long for a briefing. Virginia's coastal areas are submerged. The interior mountains sustain an estimated 200,000 to 400,000 people living in ways that would be recognizable to someone from the 1800s and completely alien to someone from GLMZ. They do not want contact. They have made this clear. Repeatedly.
 
@@ -53,7 +53,7 @@ NORTH CAROLINA. Coastal half submerged. Mountain half is Appalachian territory. 
 
 SOUTH CAROLINA. Underwater south of Columbia. Interior status unknown. A trading vessel that made port in GLMZ in 2224 carried cargo marked with South Carolina tax stamps dated 2225. Either South Carolina has a functioning tax authority or someone is very good at forgery. We have not determined which.
 
-GEORGIA. Atlanta is a corponation zone — Peachtree Meridian Holdings, a subsidiary of a subsidiary of something we cannot trace. They maintain a walled city with an estimated population of 300,000. They do not respond to diplomatic contact. They do respond to trade inquiries, but only via a specific frequency, only on Tuesdays, and only in a pidgin that mixes English, Mandarin, and something our linguists cannot identify. Southern Georgia is swamp. Savannah is a memory.
+GEORGIA. Atlanta is a CorpoNation zone — Peachtree Meridian Holdings, a subsidiary of a subsidiary of something we cannot trace. They maintain a walled city with an estimated population of 300,000. They do not respond to diplomatic contact. They do respond to trade inquiries, but only via a specific frequency, only on Tuesdays, and only in a pidgin that mixes English, Mandarin, and something our linguists cannot identify. Southern Georgia is swamp. Savannah is a memory.
 
 FLORIDA. Largely underwater. The peninsula south of Orlando is gone. What remains is a chain of islands where there used to be ridgelines. An estimated 50,000 people live on these islands in a loose confederation called the Florida Keys Compact, which is confusing because the actual Florida Keys have been underwater since 2130. Miami is an artificial reef. Jacksonville persists as a fortified port. The Everglades are the Atlantic Ocean now.
 
@@ -63,7 +63,7 @@ MISSISSIPPI. See Missouri, but worse. The river does what it wants now.
 
 LOUISIANA. New Orleans has a King. The surrounding bayou territory is navigable only by locals. Baton Rouge is a ruin. The Gulf Coast has retreated approximately forty kilometers inland. Trade with New Orleans is possible but requires knowledge of protocols that change seasonally. The King's authority is recognized by several Gulf trading networks. We do not recognize the King's authority. We do trade with the King's representatives. These two facts coexist.
 
-ARKANSAS. The Ozark settlements maintain contact with Missouri survivors. Little Rock is abandoned. Northwest Arkansas — the old Walmart corridor — is allegedly controlled by a logistics corponation that still moves goods along routes that no longer connect to functioning economies. They move cargo from warehouses to warehouses. The cargo does not appear to serve any purpose. The routes are maintained immaculately.
+ARKANSAS. The Ozark settlements maintain contact with Missouri survivors. Little Rock is abandoned. Northwest Arkansas — the old Walmart corridor — is allegedly controlled by a logistics CorpoNation that still moves goods along routes that no longer connect to functioning economies. They move cargo from warehouses to warehouses. The cargo does not appear to serve any purpose. The routes are maintained immaculately.
 
 --- NORTHEAST ---
 
@@ -99,11 +99,11 @@ NEBRASKA. Behemoth country. Omaha's last transmission was a weather report. The 
 
 KANSAS. Behemoth country, contested. There are reports of human settlements in the Flint Hills that subsist by scavenging Behemoth parts. These "machinists" allegedly maintain a nomadic lifestyle, following the Behemoth herds the way the Plains peoples once followed bison. This comparison has been noted by every analyst who has written about Kansas. We include it here because it is unavoidable. Wichita is a Behemoth graveyard — deactivated units arranged in rows stretching to the horizon. No one knows who arranged them or why they stopped.
 
-OKLAHOMA. Corponation territory. Specifically, Helios Extraction — an energy corponation that controls the old oil and gas infrastructure and has repurposed it for geothermal. Oklahoma City is a company town. Population: unknown, estimated 200,000. They export energy via a grid connection we cannot map. Tulsa is independent, fortified, and hostile to outside contact. A trader described Tulsa as "the most heavily armed city I have ever seen, and I have been to Pittsburgh."
+OKLAHOMA. CorpoNation territory. Specifically, Helios Extraction — an energy CorpoNation that controls the old oil and gas infrastructure and has repurposed it for geothermal. Oklahoma City is a company town. Population: unknown, estimated 200,000. They export energy via a grid connection we cannot map. Tulsa is independent, fortified, and hostile to outside contact. A trader described Tulsa as "the most heavily armed city I have ever seen, and I have been to Pittsburgh."
 
-TEXAS. Texas is a sovereign corponation-state. Lone Star Consolidated governs the entire territory from Houston, which is partially flooded but functional. Population estimates range from 2 to 5 million. They have their own military, their own currency (\u03a6-denominated but pegged to energy output rather than the GLMZ standard), their own BCI network, and their own space program, which is either a joke or not a joke depending on which intelligence source you trust. Dallas-Fort Worth is the manufacturing center. San Antonio is the military headquarters. Austin was abandoned after the water crisis of 2189 and is now a ruin that Lone Star uses for military exercises. El Paso is a border fortress. The Rio Grande is a border with what used to be Mexico and is now something else entirely. Texas does not discuss its southern border. Reliability: moderate to high. Texas wants to be known. That is part of the point.
+TEXAS. Texas is a sovereign CorpoNation-state. Lone Star Consolidated governs the entire territory from Houston, which is partially flooded but functional. Population estimates range from 2 to 5 million. They have their own military, their own currency (\u03a6-denominated but pegged to energy output rather than the GLMZ standard), their own BCI network, and their own space program, which is either a joke or not a joke depending on which intelligence source you trust. Dallas-Fort Worth is the manufacturing center. San Antonio is the military headquarters. Austin was abandoned after the water crisis of 2189 and is now a ruin that Lone Star uses for military exercises. El Paso is a border fortress. The Rio Grande is a border with what used to be Mexico and is now something else entirely. Texas does not discuss its southern border. Reliability: moderate to high. Texas wants to be known. That is part of the point.
 
-COLORADO. Denver is a high-altitude settlement that markets itself as "the last clean air city." Population 300,000. They have extensive greenhouse agriculture and a functional BCI network that they claim is superior to the GLMZ standard. They trade in water rights. The mountains west of Denver are uncontacted. The eastern plains are Behemoth-adjacent. Colorado Springs is a military installation of unknown allegiance — it responds to no governance compact, no corponation, and no external authority. It simply persists, defended, transmitting nothing, receiving everything.
+COLORADO. Denver is a high-altitude settlement that markets itself as "the last clean air city." Population 300,000. They have extensive greenhouse agriculture and a functional BCI network that they claim is superior to the GLMZ standard. They trade in water rights. The mountains west of Denver are uncontacted. The eastern plains are Behemoth-adjacent. Colorado Springs is a military installation of unknown allegiance — it responds to no governance compact, no CorpoNation, and no external authority. It simply persists, defended, transmitting nothing, receiving everything.
 
 WYOMING. Largely empty. Yellowstone is active — more active than historical norms. The caldera has not erupted but the geothermal activity has rendered much of the park uninhabitable. Eastern Wyoming was annexed by the Free Peoples Republic of Idaho. Cheyenne is a waystation on a trade route that connects Denver to the northern settlements. Population: minimal.
 
@@ -184,7 +184,7 @@ const doc = {
     "geography",
     "comprehensive",
     "behemoth",
-    "corponation",
+    "CorpoNation",
     "fifty_states",
     "restricted"
   ]

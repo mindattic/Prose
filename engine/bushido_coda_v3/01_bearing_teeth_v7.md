@@ -1,4 +1,4 @@
----
+﻿---
 title: Bearing Teeth
 book: Bushido Coda
 chapter: 1
@@ -137,7 +137,7 @@ The elevator ride down was a Carrion Logistics LLC inspection sticker dated last
 
 The bike was matte black under a tier-six awning that did half the work of keeping it dry.
 
-Three plates magnetized to the underside of the rear cowl. He chose the one issued to a Carrion subcontractor in 2206 that had never been cancelled. The Gray Zone surveillance grid was Pinnacle Civic Vision hardware, forty years old, cast off when Pinnacle had moved its product line to the corponation district. A Carrion plate went where a Carrion plate had ever been. Carrion plates had been most places.
+Three plates magnetized to the underside of the rear cowl. He chose the one issued to a Carrion subcontractor in 2206 that had never been cancelled. The Gray Zone surveillance grid was Pinnacle Civic Vision hardware, forty years old, cast off when Pinnacle had moved its product line to the CorpoNation district. A Carrion plate went where a Carrion plate had ever been. Carrion plates had been most places.
 
 He rode south.
 
@@ -147,7 +147,7 @@ Each ramp dropped him eight stories.
 
 By the third, the architecture stopped pretending. By the fifth, the rain was warm — upper-tier rain came from cloud, lower-tier rain had been through six tiers of Arcturus exhaust on the way down. He did not roll the visor up.
 
-A VTOL crossed the gap forty stories above. Amber lights. Climbing toward the corponation roof-traffic stratum. Some board director was late to dinner. Forty stories below the board director, in a stairwell that smelled like ammonia, a child whose grandmother had died because Hyacinth had reclassified stairwells as common-area-not-habitable to dodge the lighting code was learning to read the dark.
+A VTOL crossed the gap forty stories above. Amber lights. Climbing toward the CorpoNation roof-traffic stratum. Some board director was late to dinner. Forty stories below the board director, in a stairwell that smelled like ammonia, a child whose grandmother had died because Hyacinth had reclassified stairwells as common-area-not-habitable to dodge the lighting code was learning to read the dark.
 
 The grandmother had been ninety-one.
 
@@ -451,7 +451,7 @@ He had not.
 
 He was the exception to the rule.
 
-The rule said a man performing samurai discipline in 2226 would be killed for it inside a year. The rule was correct about almost everybody. It was not correct about him. The city had built counters for many things. The corponations had paid for most of them. They had not yet decided he was the kind of problem worth paying for.
+The rule said a man performing samurai discipline in 2226 would be killed for it inside a year. The rule was correct about almost everybody. It was not correct about him. The city had built counters for many things. The CorpoNations had paid for most of them. They had not yet decided he was the kind of problem worth paying for.
 
 He was going to die at some point.
 
@@ -517,7 +517,7 @@ Hira put another apricot in her mouth. She chewed it without enthusiasm. She wat
 
 The city continued.
 
-The corponations continued.
+The CorpoNations continued.
 
 The trail continued upstream.
 

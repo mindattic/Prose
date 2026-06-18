@@ -1,4 +1,4 @@
----
+﻿---
 codex: 1
 project: StreetSamurai
 code: SS
@@ -22,7 +22,7 @@ Two storage shapes exist today (measured on the live DB):
 - **557** (Character) are **fully relational** — `Characters` + ~30 bridge tables + `CharacterReadModels`,
   **no `Records.Json`**. This is the **proven template** (`CharacterMapper` + `CharacterRepository`).
 
-~25 types remain on the blob (faction, place, corponation, weapon, equipment, cyberware, apparel,
+~25 types remain on the blob (faction, place, CorpoNation, weapon, equipment, cyberware, apparel,
 ammunition, pharmaceutical, genemod, material, transportation, consumer_good, automaton, archetype,
 quote, news, contract, document, vocabulary, lab_specimen, psionic, technology, motif, entertainment,
 flyover_entity, subsidiary, …).
@@ -118,7 +118,7 @@ across all 8 lists; **the faction `Records.Json` blob has been retired** (0 rows
 
 ### Progress (2026-06-15)
 **✅ Fully relational + blob retired (10):** faction, quote, news, contract, vocabulary, genemod,
-material, transportation, **archetype, ammunition**. **⬜ Remaining (~14):** place, corponation,
+material, transportation, **archetype, ammunition**. **⬜ Remaining (~14):** place, CorpoNation,
 subsidiary, weapon, equipment, cyberware, apparel, pharmaceutical, consumer_good, automaton,
 document, motif, technology, entertainment, flyover_entity. (lab_specimen / psionic: no active
 data.) **Character:** read-path relational but its blob (1,242 rows) not yet dropped.

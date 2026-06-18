@@ -237,7 +237,7 @@ public class StoryQualityService
                     .ToList();
 
                 if (lowDims.Contains("WORLD_SPECIFICITY"))
-                    directives.Add(UniverseScope.Current?.UniverseGroundingOr("WORLD SPECIFICITY IS LOW: Name specific corponation brands, tier levels, locations, and QUANTA prices. Make GLMZ feel textured, not generic.") ?? "WORLD SPECIFICITY IS LOW: Name specific corponation brands, tier levels, locations, and QUANTA prices. Make GLMZ feel textured, not generic.");
+                    directives.Add(UniverseScope.Current?.UniverseGroundingOr("WORLD SPECIFICITY IS LOW: Name specific CorpoNation brands, tier levels, locations, and QUANTA prices. Make GLMZ feel textured, not generic.") ?? "WORLD SPECIFICITY IS LOW: Name specific CorpoNation brands, tier levels, locations, and QUANTA prices. Make GLMZ feel textured, not generic.");
                 if (lowDims.Contains("MORAL_COMPLEXITY"))
                     directives.Add("MORAL COMPLEXITY IS LOW: Give the antagonist a coherent worldview. Make the protagonist's 'win' cost something real. Avoid clean resolutions.");
                 if (lowDims.Contains("DIALOGUE_QUALITY"))
@@ -298,10 +298,10 @@ public class StoryQualityService
         You are a literary critic evaluating a neo-noir short story set in GLMZ
         (also called Meridian 88 by informed characters, or The Glooms by Gray Zone residents).
         The city is consumed by corporate sovereignty, aug-culture, and institutional collapse.
-        The Gray Zone between corponation territories is a structural DMZ — no police,
+        The Gray Zone between CorpoNation territories is a structural DMZ — no police,
         no government, designed to absorb border friction, which is why it has the most violence.
         There is no city police force (Meridian PD dissolved 2208). Arcturus Civil Security
-        holds private contracts but serves corponations, not citizens.
+        holds private contracts but serves CorpoNations, not citizens.
         Currency is Φ (QUANTA). Outside the GLMZ is called The Gap — a thousand little towns
         the Pulse passes through at Mach 6 without stopping.
 
@@ -324,11 +324,11 @@ public class StoryQualityService
            1 = characters make choices based on plot need, not who they are
 
         WORLD_SPECIFICITY (1-10): Is GLMZ textured and specific?
-          10 = specific corponations, tier levels, Φ prices, place names, Gray Zone slang,
+          10 = specific CorpoNations, tier levels, Φ prices, place names, Gray Zone slang,
                The Gap references, thrumline, The Spine, Arcturus presence or absence noted
            1 = generic cyberpunk backdrop with no world-specific texture
           Flag as bad: invoking city police that don't exist; treating Gray Zone violence
-          as surprising; calling the currency phi instead of Φ/QUANTA; adjacent corponation
+          as surprising; calling the currency phi instead of Φ/QUANTA; adjacent CorpoNation
           zones with no Gray Zone buffer; treating Behemoths as alive or sentient.
 
         CLICHE_AVOIDANCE (1-10): Does the story avoid the genre failure modes?

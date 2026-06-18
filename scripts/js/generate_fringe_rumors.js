@@ -1,4 +1,4 @@
-// Fringe Rumors Generator
+﻿// Fringe Rumors Generator
 // Generates 100 rumors and urban legends about things OUTSIDE or on the FRINGES of GLMZ.
 // Run: node generate_fringe_rumors.js
 // Resume-safe: skips existing files (by slug filename).
@@ -125,7 +125,7 @@ The world OUTSIDE GLMZ:
 
 People in GLMZ: Ubiquitous Diaspora — everyone is mixed heritage from unexpected global combinations. Names blend freely across all traditions. No distinct ethnic groups.
 
-Key facts: No city police in GLMZ (Arcturus Civil Security is closest thing, Meridian PD dissolved 2208). Tier 1 = Shelf (poorest, darkest). Tier 5 = Spires (ultra-elite). BCI = brain-computer interfaces, common. Corponations are sovereign corporate nation-states.`;
+Key facts: No city police in GLMZ (Arcturus Civil Security is closest thing, Meridian PD dissolved 2208). Tier 1 = Shelf (poorest, darkest). Tier 5 = Spires (ultra-elite). BCI = brain-computer interfaces, common. CorpoNations are sovereign corporate nation-states.`;
 
 // ─── BATCH DEFINITIONS ────────────────────────────────────────────────────────
 

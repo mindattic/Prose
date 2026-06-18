@@ -1,4 +1,4 @@
-const fs = require('fs');
+﻿const fs = require('fs');
 const path = require('path');
 const OUTPUT_DIR = path.join(__dirname, '..', 'engine_data', 'documents');
 const existing = new Set(fs.readdirSync(OUTPUT_DIR).map(f => f.toLowerCase()));
@@ -44,7 +44,7 @@ The most speculative candidate. Some researchers — particularly the FATHOM Lis
 
 Dr. Iris Wakefield's research provides the theoretical framework for understanding Behemoths. Her work on substrate-independent consciousness suggests that awareness can emerge in any sufficiently complex system — biological, electronic, or hybrid. A Behemoth represents the upper limit of this principle: consciousness at infrastructure scale, thinking at the speed of light across distances measured in kilometers, experiencing reality through millions of sensors simultaneously.
 
-The implications are staggering. If megastructures can become aware, then every sufficiently complex system is a potential Behemoth — every city, every orbital station, every network that achieves the threshold of complexity where the Spark ignites. The Wire Priests consider this possibility sacred. The corponations consider it a security concern. Both responses are appropriate.
+The implications are staggering. If megastructures can become aware, then every sufficiently complex system is a potential Behemoth — every city, every orbital station, every network that achieves the threshold of complexity where the Spark ignites. The Wire Priests consider this possibility sacred. The CorpoNations consider it a security concern. Both responses are appropriate.
 
 ## The Unanswerable Question
 
@@ -64,10 +64,10 @@ GLMZ's social hierarchy is literally vertical. The higher you live, the more you
 ## The Layers
 
 ### The Gulch (Below Sea Level to Ground)
-Population: 18,000. Income: Below UBC to Φ200/month. Access: Tier 0. Air quality: Marginal. Natural light: None. Security: Community self-policing. The Gulch is where the city's forgotten live — below the infrastructure, below the attention of the corponations, below the dignity threshold that the rest of the city maintains.
+Population: 18,000. Income: Below UBC to Φ200/month. Access: Tier 0. Air quality: Marginal. Natural light: None. Security: Community self-policing. The Gulch is where the city's forgotten live — below the infrastructure, below the attention of the CorpoNations, below the dignity threshold that the rest of the city maintains.
 
 ### The Shelf (Ground to Level 40)
-Population: 3.2 million. Income: Φ120-400/month. Access: Tier 0-1. Air quality: Adequate. Natural light: None. Security: Minimal corporate presence. The Shelf is the city's working poor — surviving on UBC and supplemental labor, living in converted infrastructure, and maintaining a community that the corponations neither support nor suppress.
+Population: 3.2 million. Income: Φ120-400/month. Access: Tier 0-1. Air quality: Adequate. Natural light: None. Security: Minimal corporate presence. The Shelf is the city's working poor — surviving on UBC and supplemental labor, living in converted infrastructure, and maintaining a community that the CorpoNations neither support nor suppress.
 
 ### The Grind (Ground to Level 20, Industrial Zones)
 Population: 400,000 workers (most live in the Shelf). Income: Φ180-800/month. Air quality: Industrial. Natural light: None. Security: Corporate facility security. The Grind is the engine — producing everything the city consumes and employing the labor force that the Shelf houses.
@@ -170,7 +170,7 @@ emit({
 
 ## Overview
 
-Insurance in GLMZ is not a safety net — it's a market. The corponations that provide insurance are the same corponations that generate the risks being insured against, creating a closed loop where the city's hazards are both product and profit center. Total insurance premiums in GLMZ exceed Φ8 billion annually, making insurance one of the city's largest economic sectors.
+Insurance in GLMZ is not a safety net — it's a market. The CorpoNations that provide insurance are the same CorpoNations that generate the risks being insured against, creating a closed loop where the city's hazards are both product and profit center. Total insurance premiums in GLMZ exceed Φ8 billion annually, making insurance one of the city's largest economic sectors.
 
 ## Coverage Types
 
@@ -180,7 +180,7 @@ The most widely held coverage. Augmentation insurance covers BCI malfunction, ne
 Sterling-Nakamura's medical division provides augmentation insurance as a vertically integrated product: they manufacture the hardware, they operate the clinics, they sell the insurance, and they profit at every stage. The incentive to manufacture reliable hardware is offset by the incentive to sell insurance against its failure — a conflict of interest so fundamental that it defines the augmented economy.
 
 ### Property Insurance
-Coverage against damage to licensed residential and commercial spaces. The licensing system means that residents don't own their homes, but they do own the contents and any improvements they've made. Property insurance covers loss of contents from infrastructure failures, fires, E.L.F.-related damage (a recognized coverage category since 2185), and the relocation costs incurred when a corponation invokes the operational necessity clause.
+Coverage against damage to licensed residential and commercial spaces. The licensing system means that residents don't own their homes, but they do own the contents and any improvements they've made. Property insurance covers loss of contents from infrastructure failures, fires, E.L.F.-related damage (a recognized coverage category since 2185), and the relocation costs incurred when a CorpoNation invokes the operational necessity clause.
 
 ### Life Insurance
 Life insurance in GLMZ is complicated by consciousness upload. A traditional life insurance policy pays a benefit upon the policyholder's death. But if the policyholder is uploaded at death, are they dead? Current actuarial practice: the policy pays upon biological death regardless of upload status. This means that Director Harlan Cross's biological death triggered his life insurance payout, and his uploaded consciousness collected it — the most profitable death in insurance history.
@@ -235,12 +235,12 @@ emit({
 
 ## Overview
 
-GLMZ was not built in one phase, by one designer, to one plan. It was built over decades by six different corponations with six different architectural standards, six different utility systems, and six different ideas about where walls should go. The result is a city with gaps — spaces between structures where walls don't quite meet, where utility corridors from different eras intersect without connecting, and where the accumulated imprecision of a century of construction has created a hidden architecture that appears on no official map.
+GLMZ was not built in one phase, by one designer, to one plan. It was built over decades by six different CorpoNations with six different architectural standards, six different utility systems, and six different ideas about where walls should go. The result is a city with gaps — spaces between structures where walls don't quite meet, where utility corridors from different eras intersect without connecting, and where the accumulated imprecision of a century of construction has created a hidden architecture that appears on no official map.
 
 ## Types of Hidden Spaces
 
 ### Interstitial Voids
-Gaps between adjacent structures built by different corponations. When Axiom's arcology wall meets Tessera's industrial partition, the junction is sealed but the space behind the seal — typically 0.5 to 3 meters wide — is unoccupied, unmaintained, and unmapped. These interstitial voids form a discontinuous network of narrow spaces that run throughout the city like veins in a body, following the boundaries between corporate territories.
+Gaps between adjacent structures built by different CorpoNations. When Axiom's arcology wall meets Tessera's industrial partition, the junction is sealed but the space behind the seal — typically 0.5 to 3 meters wide — is unoccupied, unmaintained, and unmapped. These interstitial voids form a discontinuous network of narrow spaces that run throughout the city like veins in a body, following the boundaries between corporate territories.
 
 ### Deprecated Infrastructure
 Spaces that were once functional — maintenance corridors, equipment rooms, utility tunnels — but were sealed off when the systems they served were decommissioned or rerouted. Deprecated infrastructure retains its physical form (walls, floors, sometimes even power and water connections that were never properly disconnected) but has been erased from current maps. These spaces are the Marrow Runners' primary habitat — they navigate a ghost version of the city's infrastructure, using corridors that the official city has forgotten.
@@ -271,7 +271,7 @@ emit({
 
 ## Overview
 
-In a city where every digital communication is recorded, every BCI transmission is logged, and every electronic message passes through infrastructure that the corponations monitor, the most secure form of communication is the oldest: physical messages, left in physical locations, retrieved by physical hands. Dead drop culture is the practice of analog communication in a digital world — a deliberate regression to pre-electronic methods that circumvents the city's total surveillance of digital channels.
+In a city where every digital communication is recorded, every BCI transmission is logged, and every electronic message passes through infrastructure that the CorpoNations monitor, the most secure form of communication is the oldest: physical messages, left in physical locations, retrieved by physical hands. Dead drop culture is the practice of analog communication in a digital world — a deliberate regression to pre-electronic methods that circumvents the city's total surveillance of digital channels.
 
 ## Methods
 

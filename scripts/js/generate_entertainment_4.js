@@ -1,4 +1,4 @@
-// Entertainment generator batch 4 for StreetSamurai
+﻿// Entertainment generator batch 4 for StreetSamurai
 // Generates 200 literary/art/cultural entries in engine/data/entertainment/
 // Run: node generate_entertainment_4.js
 // Does NOT overwrite existing files.
@@ -122,7 +122,7 @@ Ubiquitous Diaspora: By 2200, humanity is fully racially interbred. Culture is g
 
 Technology: BCI (brain-computer interfaces) are common. Augmentation (cyberware/chrome) ranges from basic to military-grade. Geneware allows cosmetic and functional genetic modification. Neural feeds are the primary media consumption channel — content streams directly through BCI. Physical media (books, vinyl, canvas) exists as premium/countercultural artifacts.
 
-Corponations are sovereign corporate entities that control most media production and distribution. Underground/pirate media thrives on the Shelf and in gray-market neural feed channels. Art and culture exist in tension between corporate-approved sanitized content and raw underground expression.
+CorpoNations are sovereign corporate entities that control most media production and distribution. Underground/pirate media thrives on the Shelf and in gray-market neural feed channels. Art and culture exist in tension between corporate-approved sanitized content and raw underground expression.
 
 The Iowa Autonomous Zone is home to Iowan Behemoths — massive autonomous machines, NOT living beings. The Zone is a no-go area for most.`;
 
