@@ -19,6 +19,7 @@
 @inject ILogger<Strand> Log
 @inject DocxExportService Docx
 @inject ManuscriptExportService Manuscript
+@inject StrandBibleService BibleService
 @implements IDisposable
 
 @*
@@ -34,6 +35,10 @@
     .strand-title:focus { box-shadow: none; border-bottom: 2px solid #0dcaf0; }
     .strand-synopsis { background: transparent; border: none; color: #adb5bd; font-size: 0.9rem; resize: none; padding: 0; outline: none; width: 100%; }
     .strand-synopsis:focus { color: #ced4da; }
+    .bible-panel { background: #0d1117; border: 1px solid #2a2a2a; border-radius: 6px; padding: 0.75rem 1rem; margin-top: 0.5rem; }
+    .bible-panel pre { white-space: pre-wrap; word-break: break-word; font-size: 0.82rem; color: #adb5bd; margin: 0; }
+    .bible-toggle { font-size: 0.8rem; color: #6c757d; cursor: pointer; user-select: none; }
+    .bible-toggle:hover { color: #adb5bd; }
     .beat-card { background: #161616; border: 1px solid #2a2a2a; border-radius: 8px; padding: 0.65rem 0.9rem; transition: border-color 0.15s ease, box-shadow 0.15s ease; position: relative; }
 
     /* 3-row layout: header bar (controls), body (prose ↔ textarea), footer
@@ -329,6 +334,42 @@ else
                     <textarea class="strand-synopsis mt-1" rows="5" placeholder="Synopsis (optional)"
                               style="width:100%; resize:none; overflow-y:auto;"
                               @bind="strand.Synopsis" @bind:event="oninput" @onblur="SaveStrandHeaderAsync"></textarea>
+
+                    @* ── Strand Bible ── *@
+                    <div class="mt-2">
+                        <div class="d-flex align-items-center gap-2">
+                            <span class="bible-toggle" @onclick="() => showBible = !showBible">
+                                <i class="bi @(showBible ? "bi-chevron-down" : "bi-chevron-right")"></i>
+                                Strand Bible@(strand.StrandBible != null ? "" : " (none)")
+                            </span>
+                            @if (bibleGenerating)
+                            {
+                                <span class="spinner-border spinner-border-sm text-info" style="width:.7rem;height:.7rem;"></span>
+                                <span class="text-muted small">generating…</span>
+                            }
+                            else
+                            {
+                                <button class="btn btn-sm btn-outline-secondary py-0 px-2"
+                                        style="font-size:0.75rem;"
+                                        @onclick="GenerateBibleAsync"
+                                        disabled="@working"
+                                        title="@(strand.StrandBible != null ? "Regenerate strand bible" : "Generate strand bible from seed/synopsis")">
+                                    <i class="bi bi-journal-text"></i>
+                                    @(strand.StrandBible != null ? "Regenerate" : "Generate Bible")
+                                </button>
+                            }
+                            @if (strand.StrandBibleGeneratedAt.HasValue)
+                            {
+                                <span class="text-muted small">@strand.StrandBibleGeneratedAt.Value.ToString("MMM d")</span>
+                            }
+                        </div>
+                        @if (showBible && strand.StrandBible != null)
+                        {
+                            <div class="bible-panel">
+                                <pre>@strand.StrandBible</pre>
+                            </div>
+                        }
+                    </div>
 
                     @* ── TTS Engine selector + per-engine dials ── *@
                     <div class="tts-engine-row mt-2 p-2 rounded border border-secondary bg-black">
@@ -1374,6 +1415,8 @@ else
     private List<StrandEntity> children = new();
     private bool loading = true;
     private bool working;
+    private bool showBible;
+    private bool bibleGenerating;
     /// <summary>The beat whose Save is mid-flight (drives the spinner on that
     /// one row's check button). Null when nothing is saving.</summary>
     private Guid? savingBeatId;
@@ -2363,6 +2406,40 @@ else
         catch (Exception ex) { Toast.Error("GAP-RESET-FAIL", ex.Message); }
     }
 
+    // ── Strand Bible ──────────────────────────────────────────────────────
+
+    private async Task GenerateBibleAsync()
+    {
+        if (strand == null || bibleGenerating) return;
+        var seed = strand.Seed ?? strand.Synopsis ?? strand.Title;
+        if (string.IsNullOrWhiteSpace(seed))
+        {
+            Toast.Info("BIBLE", "Set a Seed or Synopsis before generating the bible.");
+            return;
+        }
+
+        bibleGenerating = true;
+        showBible = true;
+        StateHasChanged();
+        try
+        {
+            var targetBeats = Math.Max(beats.Count, 12);
+            var bibleText   = await BibleService.GenerateAndSaveAsync(strand.Id, seed, strand.Title, targetBeats);
+            strand.StrandBible            = bibleText;
+            strand.StrandBibleGeneratedAt = DateTime.UtcNow;
+            Toast.Info("BIBLE", "Strand bible generated.");
+        }
+        catch (Exception ex)
+        {
+            Toast.Error("BIBLE-FAIL", ex.Message);
+        }
+        finally
+        {
+            bibleGenerating = false;
+            StateHasChanged();
+        }
+    }
+
     // ── LLM bottom sheet ──────────────────────────────────────────────────
     // Free-text instruction → calls ILlmService.GenerateAsync with the beat
     // text + neighbour context → previews the proposal → user picks Apply
@@ -2416,9 +2493,12 @@ else
         StateHasChanged();
         try
         {
+            var bibleBlock = !string.IsNullOrWhiteSpace(strand?.StrandBible)
+                ? $"\n\nSTRAND BIBLE (the full story plan — stay consistent with this arc):\n{strand!.StrandBible}"
+                : "";
             var system = "You are an assistant rewriting a single beat of prose for a noir/cyberpunk narrative. " +
                          "Return ONLY the rewritten beat text — no preamble, no commentary, no quotes around it. " +
-                         "Preserve the beat's voice and tense unless the instruction says otherwise.";
+                         $"Preserve the beat's voice and tense unless the instruction says otherwise.{bibleBlock}";
             var strandTitle = strand?.Title ?? "(unknown strand)";
             var user =
                 $"STRAND: {strandTitle}\n" +

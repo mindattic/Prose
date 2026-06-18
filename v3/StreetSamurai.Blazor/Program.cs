@@ -391,8 +391,19 @@ if (args.Contains("--seed"))
     return;
 }
 
-// CLI mode: generate a new strand from a user-supplied seed.
-//   ss --write-strand --seed "..." [--voice id] [--kind episode] [--title "..."] [--narrate]
+// CLI mode: (re)generate the strand bible for an existing strand.
+//   ss --bible-strand --slug <slug> [--beats N] [--replace-beats]
+if (args.Contains("--bible-strand"))
+{
+    var cliBuilder = WebApplication.CreateBuilder(args);
+    cliBuilder.Services.AddStreetSamuraiServices();
+    var cliApp = cliBuilder.Build();
+    Environment.ExitCode = await StrandBibleCli.RunAsync(args, cliApp.Services);
+    return;
+}
+
+// CLI mode: generate a new strand (bible-first: plan → planned beats → expand in UI).
+//   ss --write-strand --seed "..." [--title "..."] [--kind episode] [--beats 12] [--bible-only]
 if (args.Contains("--write-strand"))
 {
     var cliBuilder = WebApplication.CreateBuilder(args);

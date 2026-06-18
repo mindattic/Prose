@@ -41,7 +41,6 @@ public class VoiceHarvestService
         "literary_rules.paragraph_requirements",
         "tone_bible.tone_rules",
         "tone_bible.dialogue_rules",
-        "kyle.narration_voice",
     ];
 
     public VoiceHarvestService(
@@ -204,7 +203,7 @@ public class VoiceHarvestService
             "\"evidence\": short string, \"example_before\": null, \"example_after\": short verbatim line from the prose or null}. " +
             "Pick rule_target by where the rule belongs: prose prohibitions → literary_rules.prohibitions; " +
             "paragraph/structure musts → literary_rules.paragraph_requirements; narration tone/feel → tone_bible.tone_rules; " +
-            "dialogue habits → tone_bible.dialogue_rules; Kyle's narratorial register specifically → kyle.narration_voice. " +
+            "dialogue habits → tone_bible.dialogue_rules; a character's narrator register → <alias>.narration_voice (e.g. kyle.narration_voice, bear.narration_voice). " +
             "No prose, no markdown fences — just the JSON array.";
 
         string raw;
@@ -317,7 +316,7 @@ public class VoiceHarvestService
             "\"evidence\": short string, \"example_before\": string|null, \"example_after\": string|null}. " +
             "Pick rule_target by where the rule belongs: prose prohibitions → literary_rules.prohibitions; " +
             "paragraph/structure musts → literary_rules.paragraph_requirements; narration tone/feel → tone_bible.tone_rules; " +
-            "dialogue habits → tone_bible.dialogue_rules; Kyle's narratorial register specifically → kyle.narration_voice. " +
+            "dialogue habits → tone_bible.dialogue_rules; a character's narrator register → <alias>.narration_voice (e.g. kyle.narration_voice, bear.narration_voice). " +
             "No prose, no markdown fences — just the JSON array.";
 
         string raw;
@@ -346,8 +345,8 @@ public class VoiceHarvestService
                 MutateToneBible(tb => AddDistinct(tb.ToneRules, rule)); break;
             case "tone_bible.dialogue_rules":
                 MutateToneBible(tb => AddDistinct(tb.DialogueRules, rule)); break;
-            case "kyle.narration_voice":
-                ApplyToKyleNarrationVoice(rule); break;
+            case string t when t.EndsWith(".narration_voice"):
+                ApplyToCharacterNarrationVoice(t[..^".narration_voice".Length], rule); break;
             default:
                 log.LogWarning("Unknown rule target {Target} on entry {Id}", entry.RuleTarget, entryId);
                 return false;
@@ -397,18 +396,24 @@ public class VoiceHarvestService
         toneBible.Save(tb);
     }
 
-    private void ApplyToKyleNarrationVoice(string rule)
+    private void ApplyToCharacterNarrationVoice(string nameHint, string rule)
     {
-        // Kyle's canonical Name is "Kyle Ellen Corbin-Vister", not "Kyle" — match
-        // the full name first, then fall back to a "Kyle …" given-name match.
+        // nameHint is the alias prefix from the rule target (e.g. "kyle", "bear", "sparrow").
+        // Match aliases first (exact, case-insensitive), then name prefix as fallback.
         var all = characters.GetAll();
-        var kyle = all.FirstOrDefault(c => string.Equals(c.Name, "Kyle Ellen Corbin-Vister", StringComparison.OrdinalIgnoreCase))
-                   ?? all.FirstOrDefault(c => c.Name != null && c.Name.StartsWith("Kyle", StringComparison.OrdinalIgnoreCase));
-        if (kyle == null) { log.LogWarning("Kyle not found — narration_voice rule not applied"); return; }
-        var nv = (kyle.NarrationVoice ?? "").TrimEnd();
+        var ch = all.FirstOrDefault(c =>
+                c.Aliases.Any(a => string.Equals(a, nameHint, StringComparison.OrdinalIgnoreCase)))
+            ?? all.FirstOrDefault(c =>
+                c.Name != null && c.Name.StartsWith(nameHint, StringComparison.OrdinalIgnoreCase));
+        if (ch == null)
+        {
+            log.LogWarning("Character '{NameHint}' not found — narration_voice rule not applied", nameHint);
+            return;
+        }
+        var nv = (ch.NarrationVoice ?? "").TrimEnd();
         if (nv.Contains(rule, StringComparison.OrdinalIgnoreCase)) return;
-        kyle.NarrationVoice = string.IsNullOrEmpty(nv) ? rule : $"{nv}\n{rule}";
-        characters.Save(kyle);
+        ch.NarrationVoice = string.IsNullOrEmpty(nv) ? rule : $"{nv}\n{rule}";
+        characters.Save(ch);
     }
 
     internal static void AddDistinct(List<string> list, string rule)
@@ -423,7 +428,10 @@ public class VoiceHarvestService
     {
         if (string.IsNullOrWhiteSpace(t)) return null;
         var v = t.Trim().ToLowerInvariant();
-        return RuleTargets.Contains(v) ? v : null;
+        if (RuleTargets.Contains(v)) return v;
+        // Accept <alias>.narration_voice for any character (e.g. "kyle.narration_voice", "bear.narration_voice")
+        if (System.Text.RegularExpressions.Regex.IsMatch(v, @"^[a-z][a-z0-9_-]*\.narration_voice$")) return v;
+        return null;
     }
 
     private static string Clip(string s, int max = 280) =>

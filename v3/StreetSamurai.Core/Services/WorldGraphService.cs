@@ -444,6 +444,10 @@ public class WorldGraphService : IWorldGraphService
         if (node.Properties.TryGetValue("description", out var desc) && desc.Length > 0)
             lines.Add($"  description: {(desc.Length > 400 ? desc[..397] + "..." : desc)}");
 
+        // Narration voice rules (character-specific, harvested from high-scoring strands)
+        if (node.Properties.TryGetValue("narration_voice", out var nv) && nv.Length > 0)
+            lines.Add($"  narration_voice: {(nv.Length > 600 ? nv[..597] + "..." : nv)}");
+
         // Relationships (current only)
         var edges = GetAllEdges(nodeId);
         if (edges.Count > 0)
