@@ -315,6 +315,9 @@ The Quiet Hour) outrank this section; these are the rules those pages follow.
     strand. Series arcs ride UNDER the adventures, never instead of them.
 20. Interludes exist to remind the reader there is goodness in this world even between the
     violence.
+21. **ACTION BEATS CARRY THEMATIC WEIGHT; CONTEMPLATIVE BEATS HAVE PHYSICAL IMMEDIACY.** An
+    action beat that doesn't advance or complicate the strand's central tension is stage business.
+    A contemplative beat without a grounding sensory or physical anchor is abstraction. Both fail.
 
 ### 5.7 Hard prohibitions (compiled checklist)
 - No magic; psychic powers exist and are written as ability (see §1.4 ladder; the slur never
