@@ -23,12 +23,14 @@ public class StrandTools
     private readonly StrandWorkbenchService workbench;
     private readonly IDbContextFactory<StreetSamuraiDbContext> dbFactory;
     private readonly ElevenLabsTtsService tts;
+    private readonly StrandBibleService bible;
 
-    public StrandTools(StrandWorkbenchService workbench, IDbContextFactory<StreetSamuraiDbContext> dbFactory, ElevenLabsTtsService tts)
+    public StrandTools(StrandWorkbenchService workbench, IDbContextFactory<StreetSamuraiDbContext> dbFactory, ElevenLabsTtsService tts, StrandBibleService bible)
     {
         this.workbench = workbench;
         this.dbFactory = dbFactory;
         this.tts = tts;
+        this.bible = bible;
     }
 
     [McpServerTool, Description("List strands. Optional kind filter ('book', 'chapter', 'episode', etc.). Returns a flat list of id, slug, title, kind, status, beat-count, stale-count.")]
@@ -56,6 +58,7 @@ public class StrandTools
             kind = s.Kind,
             status = s.Status,
             beats = beatCounts.GetValueOrDefault(s.Id, 0),
+            has_bible = s.StrandBible != null,
             parent_strand_id = s.ParentStrandId,
         });
         return JsonSerializer.Serialize(result, CanonTools.JsonOpts);
@@ -71,8 +74,11 @@ public class StrandTools
         return JsonSerializer.Serialize(new
         {
             id = strand.Id, slug = strand.Slug, title = strand.Title, kind = strand.Kind,
-            status = strand.Status, synopsis = strand.Synopsis, voice_id = strand.VoiceId,
+            status = strand.Status, synopsis = strand.Synopsis, seed = strand.Seed,
+            voice_id = strand.VoiceId,
             parent_strand_id = strand.ParentStrandId, chars_narrated = strand.CharsNarrated,
+            has_bible = strand.StrandBible != null,
+            strand_bible_generated_at = strand.StrandBibleGeneratedAt,
             beats = beats.Select((b, i) => new
             {
                 position = i + 1,
@@ -87,11 +93,13 @@ public class StrandTools
         }, CanonTools.JsonOpts);
     }
 
-    [McpServerTool, Description("Create a new top-level strand. Returns the new strand's id, slug, and a relative URL to open it in the unified writer.")]
+    [McpServerTool, Description("Create a new top-level strand. Pass 'seed' to also generate a strand bible and planned beats immediately. Returns the new strand's id, slug, url, and (if bible was generated) the bible text.")]
     public async Task<string> CreateStrand(
         [Description("Strand title. Required.")] string title,
         [Description("Free-form kind label: 'book', 'chapter', 'episode', 'scene', 'saga', 'anthology', or anything you want. Default 'strand'.")] string kind = "strand",
         [Description("Optional synopsis.")] string synopsis = "",
+        [Description("One-line generation seed. When provided, the strand bible and planned beats are created immediately after the strand row is inserted.")] string seed = "",
+        [Description("Target beat count for the bible spine (only used when seed is provided). Default 12.")] int targetBeats = 12,
         [Description("Optional parent strand Guid id (or slug). Empty = top-level.")] string parentStrandIdOrSlug = "",
         [Description("Optional short author-assigned reference code (e.g. 'ATTE', 'VATD', 'GLMZCODEX'). Uppercased and stored as a unique lookup key. Leave empty to skip.")] string code = "")
     {
@@ -120,6 +128,7 @@ public class StrandTools
             Slug = slug,
             Title = title ?? "",
             Synopsis = string.IsNullOrEmpty(synopsis) ? null : synopsis,
+            Seed = string.IsNullOrEmpty(seed) ? null : seed,
             Kind = string.IsNullOrEmpty(kind) ? "strand" : kind,
             Status = "draft",
             ParentStrandId = parentId,
@@ -127,7 +136,16 @@ public class StrandTools
             StrandCode = string.IsNullOrWhiteSpace(code) ? null : code.Trim().ToUpperInvariant(),
         });
         await db.SaveChangesAsync();
-        return JsonSerializer.Serialize(new { ok = true, id, slug, url = $"/strand/{slug}" }, CanonTools.JsonOpts);
+
+        // If a seed was provided, generate the strand bible and planned beats immediately.
+        string? bibleText = null;
+        if (!string.IsNullOrWhiteSpace(seed))
+        {
+            try { bibleText = await bible.GenerateAndSaveAsync(id, seed, title, targetBeats <= 0 ? 12 : targetBeats); }
+            catch (Exception ex) { bibleText = $"[bible generation failed: {ex.Message}]"; }
+        }
+
+        return JsonSerializer.Serialize(new { ok = true, id, slug, url = $"/strand/{slug}", strand_bible = bibleText }, CanonTools.JsonOpts);
     }
 
     [McpServerTool, Description("Deep-duplicate a strand (and its sub-strand tree) into a fresh, independent copy. Every beat is cloned into a new row — prose and narration metadata are preserved, but audio, review scores, and the stale flag are reset. Editing the copy never affects the original. Accepts a Guid id OR a slug. Returns the new strand's id, slug, and writer URL.")]
@@ -331,6 +349,82 @@ public class StrandTools
             catch (Exception ex) { Console.Error.WriteLine($"[mcp:narrate_strand] {strand.Id}: {ex.Message}"); }
         });
         return JsonSerializer.Serialize(new { ok = true, id = strand.Id, status = "narrating" }, CanonTools.JsonOpts);
+    }
+
+    // ── Strand Bible tools ────────────────────────────────────────────────
+
+    [McpServerTool, Description("Get the strand bible for a strand — the dry structural plan (logline, premise, register, characters, beat spine, seeds & payoffs). Returns the raw markdown text plus the parsed beat spine entries so you can see the planned arc at a glance. Returns has_bible=false when no bible exists yet.")]
+    public async Task<string> GetStrandBible(
+        [Description("Strand Guid id or slug.")] string idOrSlug)
+    {
+        var strand = await ResolveStrandAsync(idOrSlug);
+        if (strand == null) return JsonSerializer.Serialize(new { error = "strand_not_found", idOrSlug }, CanonTools.JsonOpts);
+
+        if (string.IsNullOrEmpty(strand.StrandBible))
+            return JsonSerializer.Serialize(new { has_bible = false, id = strand.Id, slug = strand.Slug, title = strand.Title }, CanonTools.JsonOpts);
+
+        var spine = StrandBibleService.ParseBeatSpine(strand.StrandBible)
+            .Select(p => new { index = p.Index, title = p.Title, goal = p.Goal, structure_role = p.StructureRole });
+
+        return JsonSerializer.Serialize(new
+        {
+            has_bible = true,
+            id = strand.Id,
+            slug = strand.Slug,
+            title = strand.Title,
+            generated_at = strand.StrandBibleGeneratedAt,
+            bible = strand.StrandBible,
+            beat_spine = spine,
+        }, CanonTools.JsonOpts);
+    }
+
+    [McpServerTool, Description("Generate (or regenerate) the strand bible for a strand. Uses the strand's Seed field (falls back to Synopsis then Title) plus the literary rules to produce a dry structural plan: logline, premise, register, characters, numbered beat spine, seeds & payoffs. Creates planned Beat rows from the spine when the strand has no beats yet. Returns the generated bible text.")]
+    public async Task<string> GenerateStrandBible(
+        [Description("Strand Guid id or slug.")] string idOrSlug,
+        [Description("Target number of beats in the spine. 0 = auto (use existing beat count or 12).")] int targetBeats = 0)
+    {
+        var strand = await ResolveStrandAsync(idOrSlug);
+        if (strand == null) return JsonSerializer.Serialize(new { error = "strand_not_found", idOrSlug }, CanonTools.JsonOpts);
+
+        var seed = strand.Seed ?? strand.Synopsis ?? strand.Title;
+        if (string.IsNullOrWhiteSpace(seed))
+            return JsonSerializer.Serialize(new { error = "no_seed", message = "Strand has no Seed or Synopsis to drive generation. Set one first with SetStrandBible or UpdateBeatMetadata." }, CanonTools.JsonOpts);
+
+        if (targetBeats <= 0)
+        {
+            await using var db = await dbFactory.CreateDbContextAsync();
+            targetBeats = await db.StrandBeats.CountAsync(sb => sb.StrandId == strand.Id && sb.IsEnabled);
+            if (targetBeats <= 0) targetBeats = 12;
+        }
+
+        string bibleText;
+        try { bibleText = await bible.GenerateAndSaveAsync(strand.Id, seed, strand.Title, targetBeats); }
+        catch (Exception ex) { return JsonSerializer.Serialize(new { error = "generation_failed", message = ex.Message }, CanonTools.JsonOpts); }
+
+        var spine = StrandBibleService.ParseBeatSpine(bibleText)
+            .Select(p => new { index = p.Index, title = p.Title, goal = p.Goal, structure_role = p.StructureRole });
+
+        return JsonSerializer.Serialize(new { ok = true, id = strand.Id, slug = strand.Slug, bible = bibleText, beat_spine = spine }, CanonTools.JsonOpts);
+    }
+
+    [McpServerTool, Description("Manually set or replace the strand bible text. Use when you want to hand-write the plan instead of generating it. The text is saved verbatim; beat spine parsing still applies for planned-beat creation. Pass an empty string to clear the bible.")]
+    public async Task<string> SetStrandBible(
+        [Description("Strand Guid id or slug.")] string idOrSlug,
+        [Description("Full bible markdown text to store. Empty string clears the bible.")] string bibleText)
+    {
+        var strand = await ResolveStrandAsync(idOrSlug);
+        if (strand == null) return JsonSerializer.Serialize(new { error = "strand_not_found", idOrSlug }, CanonTools.JsonOpts);
+
+        await using var db = await dbFactory.CreateDbContextAsync();
+        var row = await db.Strands.FindAsync(strand.Id)
+            ?? throw new InvalidOperationException($"Strand {strand.Id} missing.");
+
+        row.StrandBible = string.IsNullOrEmpty(bibleText) ? null : bibleText;
+        row.StrandBibleGeneratedAt = DateTime.UtcNow;
+        row.UpdatedAt = DateTime.UtcNow;
+        await db.SaveChangesAsync();
+
+        return JsonSerializer.Serialize(new { ok = true, id = strand.Id, slug = strand.Slug, cleared = string.IsNullOrEmpty(bibleText) }, CanonTools.JsonOpts);
     }
 
     private async Task<Strand?> ResolveStrandAsync(string idOrSlug)
