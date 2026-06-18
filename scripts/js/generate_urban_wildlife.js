@@ -1,4 +1,4 @@
-const fs = require('fs');
+﻿const fs = require('fs');
 const path = require('path');
 const crypto = require('crypto');
 
@@ -313,7 +313,7 @@ And the honey is wrong. Not wrong in the sense of harmful — toxicological test
     story_hooks: [
       "The bees' foraging destination in the wasteland — what's growing there?",
       "The new dance patterns could be decoded — and might reveal something about the wasteland",
-      "The superior hive architecture attracts the attention of structural engineers — or corponations looking for biomimetic designs"
+      "The superior hive architecture attracts the attention of structural engineers — or CorpoNations looking for biomimetic designs"
     ],
     tags: ["document", "apicultural_report", "urban_wildlife", "bee", "hive", "architecture", "ecology", "meridian_88", "wasteland", "mystery"]
   },
@@ -329,7 +329,7 @@ This stability is statistically improbable. The GLMZ genetics lab has sequenced 
 
 In terms of behavior, the geese continue to exhibit the characteristics that have defined the species' relationship with human civilization since long before GLMZ existed. They occupy public spaces with proprietary confidence. They hiss at pedestrians, cyclists, automated vehicles, maintenance drones, and security automata with equal conviction. They nest in inconvenient locations and defend those nests with physical violence against anything that approaches, regardless of the approacher's size, capability, or legal authority. A Tier 3 security automaton was filmed retreating from a nesting goose in the Lakeshore Greenway in 2223. The video has been viewed nine million times.
 
-They are, in the considered assessment of this division, magnificent. They are the one organism in GLMZ that treats corponation executives, augmented mercenaries, and military-grade automata with identical contempt. They do not recognize hierarchy. They do not acknowledge threat. They have decided that every space they occupy belongs to them, and two hundred years of technological advancement has not produced a force capable of convincingly arguing otherwise.
+They are, in the considered assessment of this division, magnificent. They are the one organism in GLMZ that treats CorpoNation executives, augmented mercenaries, and military-grade automata with identical contempt. They do not recognize hierarchy. They do not acknowledge threat. They have decided that every space they occupy belongs to them, and two hundred years of technological advancement has not produced a force capable of convincingly arguing otherwise.
 
 The GLMZ Urban Wildlife Advisory issues its annual reminder that Canada geese are a protected species under Great Lakes Metropolitan Zone wildlife statutes, that interfering with nesting geese carries a fine of Φ500, and that the advisory takes no responsibility for injuries sustained by individuals who approach nesting geese despite posted warnings. The geese do not read the warnings either. But in their case, this is because they are geese, not because they are negligent. The advisory wishes to make this distinction clear.`,
     related_entities: ["GLMZ", "GLMZ", "Lakeshore Greenway"],
@@ -387,7 +387,7 @@ These are four cases from a file that contains over three hundred. Each case is 
     story_hooks: [
       "The dog that hears radio — could it detect covert communications?",
       "The rat with three geneware modifications: a tracker could follow the modification trail back to the contamination source",
-      "The vet's casebook becomes evidence in a corponation liability case"
+      "The vet's casebook becomes evidence in a CorpoNation liability case"
     ],
     tags: ["document", "medical_casebook", "urban_wildlife", "veterinary", "geneware", "contamination", "ecology", "meridian_88", "shelf"]
   }
@@ -537,7 +537,7 @@ const genewareEntries = [
     social_perception: "The bees' return is universally welcomed. The honey is popular at the Circuit night market. The architectural anomalies fascinate engineers and apiarists. The unanswered questions — where the bees came from, where they forage, what the new dances mean — generate more wonder than anxiety in most residents.",
     story_hooks: [
       "Following the bees to their wasteland foraging site reveals something unexpected",
-      "The new comb geometry inspires a structural innovation — or is reverse-engineered by a corponation",
+      "The new comb geometry inspires a structural innovation — or is reverse-engineered by a CorpoNation",
       "Decoding the new waggle dance patterns reveals information about the wasteland that no human survey has captured"
     ],
     tags: ["geneware", "urban_wildlife", "bee", "hive", "architecture", "contamination", "ecology", "wasteland", "mystery", "emergent"]

@@ -1,4 +1,4 @@
-// Entertainment generator (batch 3) for StreetSamurai
+﻿// Entertainment generator (batch 3) for StreetSamurai
 // Generates 200 gaming & sports entries as JSON in engine/data/entertainment/
 // Run: node generate_entertainment_3.js
 // Does NOT overwrite existing files.
@@ -118,7 +118,7 @@ const WORLD_CONTEXT = `Setting: GLMZ, years 2183-2226. A megacity in the Great L
 
 Technology: BCI (brain-computer interfaces) are common. Augmentation (cyberware/chrome) ranges from basic to military-grade. Geneware allows cosmetic and functional genetic modification. Synth-protein is the primary food source for Tiers 1-3.
 
-Corponations are sovereign corporate entities. They sponsor leagues, manufacture entertainment products, and run legal gambling. Underground scenes thrive on the Shelf and in Tier 2 districts.
+CorpoNations are sovereign corporate entities. They sponsor leagues, manufacture entertainment products, and run legal gambling. Underground scenes thrive on the Shelf and in Tier 2 districts.
 
 Ubiquitous Diaspora: By 2200, humanity is fully racially interbred. Names, cultures, and traditions blend freely across all global origins. Default to mixed heritage from unexpected global combinations.
 
@@ -137,7 +137,7 @@ const CATEGORIES = [
 - AR games played in real physical space (citywide manhunt games, territory capture, urban exploration challenges)
 - Competitive esports titles (corporate-sponsored leagues, neural reflex competitions, team-based combat sims)
 - Underground game circuits (illegal combat sims, reality-bleed games that push BCI safety limits)
-Mix AAA corponation releases with indie neural devs and underground mods. Some games are cultural phenomena, others are cult classics. Include the year each game launched.`
+Mix AAA CorpoNation releases with indie neural devs and underground mods. Some games are cultural phenomena, others are cult classics. Include the year each game launched.`
   },
   {
     category: 'sport',
@@ -159,7 +159,7 @@ Each sport should have a founding year, governing body or lack thereof, and tier
 - Purist league teams (zero-aug, traditional)
 - Underground fighting stables
 - Automaton fighting teams/workshops
-Each team needs: founding year, sport/league, home district in GLMZ, owner or sponsor (corponation or independent), notable achievements, rivalries. Team names should feel like real sports teams — not jokes.`
+Each team needs: founding year, sport/league, home district in GLMZ, owner or sponsor (CorpoNation or independent), notable achievements, rivalries. Team names should feel like real sports teams — not jokes.`
   },
   {
     category: 'athlete',
@@ -179,7 +179,7 @@ Each athlete needs: full name (Ubiquitous Diaspora — mixed heritage), sport, a
 - Legal corporate gambling platforms (BCI-integrated casino experiences, neural poker, virtual race betting)
 - Underground fighting ring betting operations (Tier 1 bookmakers, the Shelf's economy runs on this)
 - Automaton vs human betting markets (machine fighting odds, cross-category matchups)
-- Prediction markets (bet on corponation stock moves, political outcomes, weather events, crime statistics)
+- Prediction markets (bet on CorpoNation stock moves, political outcomes, weather events, crime statistics)
 - Lottery systems (corporate-run, district-level, underground number games)
 - Gambling dens and physical locations (bars, backrooms, floating games)
 Each needs: type of operation, legality, typical stakes, who runs it, tier availability.`
@@ -191,7 +191,7 @@ Each needs: type of operation, legality, typical stakes, who runs it, tier avail
 - AR-overlay board games (physical pieces + augmented reality layers visible through BCI or goggles)
 - Deliberately analog games (no tech, played as rebellion against constant connectivity — popular in Shelf bars)
 - Card games played in bars and gambling dens (some with smart-ink cards that shift)
-- Strategy games based on corponation warfare and territory control
+- Strategy games based on CorpoNation warfare and territory control
 - Children's games that have dark undertones reflecting GLMZ society
 - Collectible card games with physical and neural components
 - Dice games, tile games, abstract strategy
@@ -255,7 +255,7 @@ Each entry MUST have exactly these fields:
   "price": "\u03A6 amount or range (use \u03A6 symbol for QUANTA currency)",
   "popularity_rank": number (${rankStart} to ${rankEnd} within this category),
   "legal_status": "legal|gray_market|illegal|varies_by_district",
-  "corporate_ties": "associated corponation(s) or 'independent' or 'underground'",
+  "corporate_ties": "associated CorpoNation(s) or 'independent' or 'underground'",
   "cultural_context": "how this fits into GLMZ society, who engages with it and why",
   "controversy": "any scandal, danger, or debate surrounding this (or null if none)",
   "story_hooks": ["array of 2-3 narrative hooks for stories"]

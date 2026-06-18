@@ -1,14 +1,14 @@
-const fs = require("fs");
+﻿const fs = require("fs");
 const path = require("path");
 
 const BASE = path.resolve(__dirname, "..", "engine", "data");
 
 // Load subsidiary index
 const subsidiaryIndex = JSON.parse(
-  fs.readFileSync(path.join(BASE, "corponations", "subsidiary_index.json"), "utf8")
+  fs.readFileSync(path.join(BASE, "CorpoNations", "subsidiary_index.json"), "utf8")
 );
 
-// Major corponation names and their matching patterns
+// Major CorpoNation names and their matching patterns
 const majorCorpos = [
   "Arcturus Defense Solutions",
   "TESSERA",
@@ -24,8 +24,8 @@ function matchCorpo(value) {
   if (!value) return null;
   const lower = value.toLowerCase();
   if (lower.includes("arcturus")) return "Arcturus Defense Solutions";
-  if (lower.includes("tessera")) return "Tessera Corponation";
-  if (lower.includes("ringo")) return "Ringo Corponation";
+  if (lower.includes("tessera")) return "Tessera CorpoNation";
+  if (lower.includes("ringo")) return "Ringo CorpoNation";
   if (lower.includes("ouroboros")) return "Ouroboros Energy";
   if (lower.includes("vantablack")) return "Vantablack Media";
   if (lower.includes("lazarus")) return "Lazarus Pharmaceuticals";
@@ -142,7 +142,7 @@ for (const dirName of directories) {
       } else {
         // Entertainment without distributor field - mark independent, skip
         if (!data.manufacturer) {
-          data.parent_corponation = "";
+          data.parent_CorpoNation = "";
           fs.writeFileSync(filePath, JSON.stringify(data, null, 2) + "\n", "utf8");
           stats.independent++;
           continue;
@@ -152,7 +152,7 @@ for (const dirName of directories) {
 
     if (!fieldValue) {
       // No manufacturer/distributor field at all
-      data.parent_corponation = "";
+      data.parent_CorpoNation = "";
       fs.writeFileSync(filePath, JSON.stringify(data, null, 2) + "\n", "utf8");
       stats.independent++;
       continue;
@@ -161,29 +161,29 @@ for (const dirName of directories) {
     const parentMatch = matchCorpo(fieldValue);
 
     if (!parentMatch) {
-      // Independent - no major corponation match
-      data.parent_corponation = "";
+      // Independent - no major CorpoNation match
+      data.parent_CorpoNation = "";
       fs.writeFileSync(filePath, JSON.stringify(data, null, 2) + "\n", "utf8");
       stats.independent++;
       continue;
     }
 
-    // Matched a major corponation - decide whether to rebrand (60%) or keep parent (40%)
+    // Matched a major CorpoNation - decide whether to rebrand (60%) or keep parent (40%)
     if (Math.random() < 0.6) {
       // Rebrand to subsidiary
       const subsidiary = pickSubsidiary(parentMatch, dirName);
       if (subsidiary) {
         data[fieldName] = subsidiary;
-        data.parent_corponation = parentMatch;
+        data.parent_CorpoNation = parentMatch;
         stats.rebrandedPerCorpo[parentMatch]++;
       } else {
         // No subsidiary found, keep parent
-        data.parent_corponation = parentMatch;
+        data.parent_CorpoNation = parentMatch;
         stats.keptParentPerCorpo[parentMatch]++;
       }
     } else {
       // Keep parent branding
-      data.parent_corponation = parentMatch;
+      data.parent_CorpoNation = parentMatch;
       stats.keptParentPerCorpo[parentMatch]++;
     }
 
@@ -200,7 +200,7 @@ console.log();
 let totalRebranded = 0;
 let totalKept = 0;
 
-console.log("Per corponation:");
+console.log("Per CorpoNation:");
 console.log("-".repeat(70));
 for (const corpo of Object.keys(parentSubs)) {
   const rebranded = stats.rebrandedPerCorpo[corpo] || 0;

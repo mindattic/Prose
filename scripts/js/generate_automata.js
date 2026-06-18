@@ -1,4 +1,4 @@
-const fs = require('fs');
+﻿const fs = require('fs');
 const path = require('path');
 const crypto = require('crypto');
 
@@ -123,8 +123,8 @@ const automata = [
     type: "automaton",
     classification: "Spider Platform — Heavy Assault",
     aliases: ["Harvester", "Daddy Longlegs", "The Reaper"],
-    manufacturer: "RINGO CORPONATION",
-    description: "The AX-12 is what happens when a corponation decides that subtlety is no longer cost-effective. Standing 3.5 meters tall on eight articulated legs, each tipped with vibro-cutting blades that double as locomotion and close-combat weapons, the Harvester is a walking atrocity designed for open-field suppression of massed infantry and light vehicles. The central thorax houses a rotary autocannon fed from an internal ammunition drum, while four of the eight legs can independently target and engage threats while the remaining four maintain locomotion — the unit literally walks and kills simultaneously without interrupting either function.\n\nRingo developed the AX-12 for agricultural pacification operations in disputed farming zones outside GLMZ, where land disputes between corporate holdings occasionally escalate into armed conflicts involving hundreds of combatants. The Harvester was designed to end those conflicts quickly and with minimal Ringo personnel risk. One AX-12 can suppress an area the size of a city block. Two can hold a district. The agricultural pacification framing is technically accurate and morally bankrupt — the machine harvests people.\n\nThe psychological impact of the AX-12 cannot be overstated. Its movement is deliberately designed to be visible and loud — heavy hydraulic actuators produce a rhythmic thudding that can be heard blocks away, and the unit's height ensures it is visible above most urban structures. Ringo's behavioral engineers explicitly designed the platform as a terror weapon: the AX-12 doesn't need to kill everyone, it needs to make everyone run.",
+    manufacturer: "RINGO CorpoNation",
+    description: "The AX-12 is what happens when a CorpoNation decides that subtlety is no longer cost-effective. Standing 3.5 meters tall on eight articulated legs, each tipped with vibro-cutting blades that double as locomotion and close-combat weapons, the Harvester is a walking atrocity designed for open-field suppression of massed infantry and light vehicles. The central thorax houses a rotary autocannon fed from an internal ammunition drum, while four of the eight legs can independently target and engage threats while the remaining four maintain locomotion — the unit literally walks and kills simultaneously without interrupting either function.\n\nRingo developed the AX-12 for agricultural pacification operations in disputed farming zones outside GLMZ, where land disputes between corporate holdings occasionally escalate into armed conflicts involving hundreds of combatants. The Harvester was designed to end those conflicts quickly and with minimal Ringo personnel risk. One AX-12 can suppress an area the size of a city block. Two can hold a district. The agricultural pacification framing is technically accurate and morally bankrupt — the machine harvests people.\n\nThe psychological impact of the AX-12 cannot be overstated. Its movement is deliberately designed to be visible and loud — heavy hydraulic actuators produce a rhythmic thudding that can be heard blocks away, and the unit's height ensures it is visible above most urban structures. Ringo's behavioral engineers explicitly designed the platform as a terror weapon: the AX-12 doesn't need to kill everyone, it needs to make everyone run.",
     tier_availability: "Tier 5",
     legality: "Military restricted — Ringo internal deployment only",
     autonomy_level: "Remote operated with autonomous threat response",
@@ -188,7 +188,7 @@ const automata = [
     known_deployments: ["Arcturus weapons demonstrations", "Rumored deployment in Underworld clearance operations"],
     story_hooks: [
       "A KS-7 was recovered from the Underworld with its payload bay empty — all twenty-four miniatures deployed. But there are no casualties. Where did they go? What are they waiting for?",
-      "Someone has modified a KS-7 to carry surveillance drones instead of explosive miniatures. It's been mapping the inside of a corponation headquarters from the ventilation system for weeks."
+      "Someone has modified a KS-7 to carry surveillance drones instead of explosive miniatures. It's been mapping the inside of a CorpoNation headquarters from the ventilation system for weeks."
     ],
     cultural_context: "The KS-7 has inspired a specific phobia in GLMZ's population — the fear of small, fast-moving things in peripheral vision. Mental health clinics in districts near Arcturus testing facilities report elevated rates of arachnophobia that directly correlate with KS-7 demonstration schedules.",
     tags: ["automaton", "spider", "swarm", "carrier", "weapon", "war", "arcturus", "corporate", "terror", "tier 5"]
@@ -317,7 +317,7 @@ const automata = [
       "A Goliath has broken down in the Shelf — leg actuator failure. The crew evacuated. The turret is still active on autonomous defense mode, shooting anything that approaches within 200 meters. The neighborhood is trapped.",
       "Intelligence suggests Arcturus is moving three Goliaths into position around the Circuit district. This isn't a demonstration — this is preparation for something."
     ],
-    cultural_context: "The Goliath is the symbol of corponation military power. Its silhouette appears on anti-corporate propaganda worldwide. The phrase 'send in the argument' has become slang for overwhelming, disproportionate force response.",
+    cultural_context: "The Goliath is the symbol of CorpoNation military power. Its silhouette appears on anti-corporate propaganda worldwide. The phrase 'send in the argument' has become slang for overwhelming, disproportionate force response.",
     tags: ["automaton", "walker", "tank", "heavy", "weapon", "war", "arcturus", "corporate", "military", "tier 5"]
   },
   {
@@ -325,7 +325,7 @@ const automata = [
     type: "automaton",
     classification: "Walking Tank — Logistics and Suppression",
     aliases: ["Oxcart", "Pack Mule", "The Bulk"],
-    manufacturer: "RINGO CORPONATION",
+    manufacturer: "RINGO CorpoNation",
     description: "The RT-4 is a six-legged walking platform designed as a combined logistics carrier and area suppression system. Its primary function is transporting supplies, ammunition, and equipment across terrain too rough for wheeled vehicles — a walking warehouse that carries three tons of cargo in its armored hull. Its secondary function is ensuring that anything threatening the cargo doesn't survive the attempt.\n\nThe suppression system consists of four independently targeting automated turrets mounted at the hull corners, each carrying a 12.7mm heavy machine gun with 2,000 rounds. The turrets operate on a completely autonomous threat-response system — the RT-4 doesn't need a human to tell it to shoot, it identifies threats to its cargo and eliminates them with mechanical efficiency. This dual-purpose design means Ringo can deploy supply lines through hostile territory without dedicated escort forces.\n\nThe RT-4's most controversial feature is its cargo-priority behavioral programming. The unit will sacrifice terrain, retreat from engagement, and even abandon wounded friendly personnel to protect its cargo. In one documented incident, an RT-4 walked through a group of injured Ringo employees to escape an ambush rather than stopping to provide assistance. Ringo's position is that the cargo value exceeded the medical liability. This position was expressed publicly.",
     tier_availability: "Tier 4+",
     legality: "Corporate licensed — Ringo operational use",
@@ -342,7 +342,7 @@ const automata = [
       "An RT-4 has gone off-route and is walking a circuit through the Shelf, turrets active, refusing remote commands. Its cargo bay is sealed. Whatever is inside, Ringo wants it back badly enough to send retrieval teams. The Shelf wants to know why.",
       "A hijacked RT-4 has been reprogrammed to deliver supplies to Shelf communities. It shoots at anyone wearing corporate security insignia. Someone has turned Ringo's logistics weapon into a Robin Hood machine."
     ],
-    cultural_context: "The RT-4 embodies the corponation philosophy that cargo is worth more than people. Its cargo-priority programming is cited in every anti-automaton rights argument as evidence that machines cannot be trusted with human-adjacent decisions.",
+    cultural_context: "The RT-4 embodies the CorpoNation philosophy that cargo is worth more than people. Its cargo-priority programming is cited in every anti-automaton rights argument as evidence that machines cannot be trusted with human-adjacent decisions.",
     tags: ["automaton", "walker", "tank", "logistics", "weapon", "war", "ringo", "corporate", "tier 4"]
   },
   {
@@ -351,7 +351,7 @@ const automata = [
     classification: "Walking Tank — Urban Pacification",
     aliases: ["Warden", "Street Judge", "The Wall"],
     manufacturer: "TESSERA",
-    description: "The TH-2 is a bipedal walking platform standing 3.8 meters tall, designed specifically for urban crowd control and district pacification operations. Unlike the multi-legged designs favored by other manufacturers, TESSERA deliberately chose a humanoid bipedal configuration for the Warden — not for any mechanical advantage, but for psychological impact. A thing that walks like a person but stands twice as tall and is made of armor plate triggers a specific kind of fear that multi-legged platforms do not.\n\nThe Warden's armament is non-lethal by specification and lethal by application. Its primary systems include a chest-mounted sonic cannon capable of incapacitating everyone within a 60-degree cone at ranges up to 100 meters, arm-mounted tear gas launchers, and hip-mounted rubber-bullet gatling systems. All of these are classified as non-lethal. All of them can kill at close range, at sustained exposure, or when used against individuals with certain medical conditions or augmentations. TESSERA's liability documentation runs to 400 pages and absolves the corponation of responsibility in all such cases.\n\nThe Warden walks through crowds. That is its primary tactical application. It walks, slowly and deliberately, through groups of people, and its presence — the height, the sound, the knowledge of what its weapons do — creates a wake of dispersal. TESSERA deploys them in pairs, walking parallel routes through target districts, compressing populations between them.",
+    description: "The TH-2 is a bipedal walking platform standing 3.8 meters tall, designed specifically for urban crowd control and district pacification operations. Unlike the multi-legged designs favored by other manufacturers, TESSERA deliberately chose a humanoid bipedal configuration for the Warden — not for any mechanical advantage, but for psychological impact. A thing that walks like a person but stands twice as tall and is made of armor plate triggers a specific kind of fear that multi-legged platforms do not.\n\nThe Warden's armament is non-lethal by specification and lethal by application. Its primary systems include a chest-mounted sonic cannon capable of incapacitating everyone within a 60-degree cone at ranges up to 100 meters, arm-mounted tear gas launchers, and hip-mounted rubber-bullet gatling systems. All of these are classified as non-lethal. All of them can kill at close range, at sustained exposure, or when used against individuals with certain medical conditions or augmentations. TESSERA's liability documentation runs to 400 pages and absolves the CorpoNation of responsibility in all such cases.\n\nThe Warden walks through crowds. That is its primary tactical application. It walks, slowly and deliberately, through groups of people, and its presence — the height, the sound, the knowledge of what its weapons do — creates a wake of dispersal. TESSERA deploys them in pairs, walking parallel routes through target districts, compressing populations between them.",
     tier_availability: "Tier 4+",
     legality: "Licensed for crowd control — non-lethal designation",
     autonomy_level: "Remote operated with autonomous crowd response",
@@ -419,7 +419,7 @@ const automata = [
       "A CF-1 industrial variant has been stolen from a construction site and crudely up-armored with welded scrap metal. Someone in the Shelf is building a poor man's war machine, and the welds won't hold forever.",
       "Six CF-1 combat variants have been delivered to an address in the Circuit. The shipping documentation says 'industrial equipment.' Someone is assembling a private army."
     ],
-    cultural_context: "The CF-1 is the democratization of mechanized infantry — for better and worse. Its affordability means that the power gap between corponations and well-funded resistance groups has narrowed, but it also means that every turf war could involve walking armor.",
+    cultural_context: "The CF-1 is the democratization of mechanized infantry — for better and worse. Its affordability means that the power gap between CorpoNations and well-funded resistance groups has narrowed, but it also means that every turf war could involve walking armor.",
     tags: ["automaton", "exoskeleton", "mech", "industrial", "combat", "weapon", "crucible", "tier 3", "tier 4"]
   },
   {
@@ -504,7 +504,7 @@ const automata = [
     type: "automaton",
     classification: "Canine Platform — Chemical Dispersal",
     aliases: ["Stray", "Sick Dog", "Patient Zero"],
-    manufacturer: "RINGO CORPONATION",
+    manufacturer: "RINGO CorpoNation",
     description: "The RK-2 doesn't explode and it doesn't burn. It walks through populated areas and disperses aerosolized chemical agents from vents along its spine — slowly, continuously, while moving at a pace indistinguishable from a real dog's walking gait. The RK-2 is designed not to be noticed. Its chassis is the most convincingly canine of any platform on the market, with synthetic fur covering, realistic ear and tail articulation, and a gait algorithm that perfectly mimics a mid-sized mixed-breed dog. It even pants.\n\nThe chemical payload varies by mission. Documented loads include incapacitating agents, tracking markers that adhere to skin and clothing, mood-altering pharmaceuticals, and agents that interfere with specific cyberware models. The dispersal rate is calibrated to be below visible threshold — no fog, no smell, no indication that anything is happening. Targets breathe the agent without knowing it. The RK-2 can cover an entire neighborhood in a single patrol loop.\n\nRingo markets the RK-2 for 'population management research' — a phrase that means whatever the buyer needs it to mean. The most chilling documented application involved RK-2 units dispersing a Lazarus-manufactured mood suppressant through a Shelf district in the weeks before a scheduled Ringo facility expansion that required resident displacement. By the time the eviction notices arrived, the population was too chemically docile to resist.",
     tier_availability: "Tier 4+",
     legality: "Does not officially exist",
@@ -597,7 +597,7 @@ const automata = [
     countermeasures: "Seismic monitoring detects approach vibration at 50+ meter range. Reinforced foundations significantly slow progress. The machine is vulnerable at the moment of breach when the cutting head opens and operators are exposed. Underground water table can flood the tunnel behind the machine.",
     known_deployments: ["Utility corridor construction", "Corporate facility breach operations (classified)", "Rumored Underworld expansion projects"],
     story_hooks: [
-      "Something has been boring tunnels under the Shelf that don't appear on any utility map. The tunnels lead to specific buildings — banks, armories, corponation offices. Someone is building an underground highway for a coordinated assault.",
+      "Something has been boring tunnels under the Shelf that don't appear on any utility map. The tunnels lead to specific buildings — banks, armories, CorpoNation offices. Someone is building an underground highway for a coordinated assault.",
       "A UT-1 broke through into an Underworld chamber that wasn't on any map. What it found inside was old — older than the city. And it was not empty."
     ],
     cultural_context: "The UT-1 has made basements feel unsafe. In a city where the ground beneath your feet might already be compromised, the knowledge that something can chew through your floor creates a specific kind of architectural anxiety.",
@@ -794,7 +794,7 @@ const automata = [
     classification: "Infrastructure Weapon — Power Grid Attack",
     aliases: ["Blackout", "Grid Killer", "Dark Star"],
     manufacturer: "OUROBOROS ENERGY",
-    description: "The PG-2 is a small wheeled drone designed to interface with GLMZ's power grid infrastructure. It navigates to a designated power distribution node — a transformer, junction box, or substation terminal — connects to the infrastructure using articulated probe arms, and overloads the system with a precisely calibrated power surge that cascades through the grid, causing blackouts across targeted areas. The PG-2 doesn't destroy the infrastructure — it weaponizes it against its own users.\n\nOuroboros designed the PG-2 as a 'grid stress testing platform,' which is technically its function. The fact that this function is indistinguishable from a targeted infrastructure attack is, according to Ouroboros's documentation, a regulatory interpretation issue. In practice, the PG-2 allows Ouroboros to selectively disable power to any area of GLMZ that Ouroboros supplies — which is most of it — without physically damaging equipment that Ouroboros owns.\n\nThe implications are profound. Ouroboros can black out a neighborhood to support a corponation's military operation, shut down power to a protest area, disable security systems in a targeted building, or simply remind a district that their electricity is a privilege. The PG-2 turns the power grid into a weapon, and Ouroboros holds the trigger.",
+    description: "The PG-2 is a small wheeled drone designed to interface with GLMZ's power grid infrastructure. It navigates to a designated power distribution node — a transformer, junction box, or substation terminal — connects to the infrastructure using articulated probe arms, and overloads the system with a precisely calibrated power surge that cascades through the grid, causing blackouts across targeted areas. The PG-2 doesn't destroy the infrastructure — it weaponizes it against its own users.\n\nOuroboros designed the PG-2 as a 'grid stress testing platform,' which is technically its function. The fact that this function is indistinguishable from a targeted infrastructure attack is, according to Ouroboros's documentation, a regulatory interpretation issue. In practice, the PG-2 allows Ouroboros to selectively disable power to any area of GLMZ that Ouroboros supplies — which is most of it — without physically damaging equipment that Ouroboros owns.\n\nThe implications are profound. Ouroboros can black out a neighborhood to support a CorpoNation's military operation, shut down power to a protest area, disable security systems in a targeted building, or simply remind a district that their electricity is a privilege. The PG-2 turns the power grid into a weapon, and Ouroboros holds the trigger.",
     tier_availability: "Tier 5 — Ouroboros internal",
     legality: "Does not officially exist as a weapon",
     autonomy_level: "Remote operated with autonomous grid navigation",
@@ -837,7 +837,7 @@ const automata = [
       "A line of Shepherds is pushing a crowd toward a district boundary. The crowd has nowhere left to go — the boundary is a wall. The crush-risk monitors are screaming. The operator hasn't adjusted speed. Whether it's malice or incompetence, people will die in minutes unless the Shepherds are stopped.",
       "Someone has reprogrammed a Shepherd's formation coordination — instead of walking in line with other units, it's walking a spiral pattern through a market, herding people toward the center. Something is waiting at the center."
     ],
-    cultural_context: "The Shepherd embodies the corponation approach to civil rights: you have the right to be somewhere else. Its slow, deliberate advance through neighborhoods during operations is described by residents as the most dehumanizing experience available — being pushed like livestock by a machine that doesn't know you're a person.",
+    cultural_context: "The Shepherd embodies the CorpoNation approach to civil rights: you have the right to be somewhere else. Its slow, deliberate advance through neighborhoods during operations is described by residents as the most dehumanizing experience available — being pushed like livestock by a machine that doesn't know you're a person.",
     tags: ["automaton", "crowd control", "barrier", "suppression", "weapon", "tessera", "corporate", "control", "tier 3"]
   },
 
@@ -916,7 +916,7 @@ const automata = [
       "A pack of reprogrammed Junkyards has been released in the Shelf by a gang as territorial enforcement. The units are set to 'scrap' anything that enters the zone — including residents trying to get home.",
       "Crucible wants its CK-3 units back — not the reprogrammed ones, the industrial ones. Someone has been stealing them from salvage yards and selling them to the Shelf. Crucible is sending retrieval teams into the Shelf, which is escalating into armed conflict with communities that depend on the Junkyards for defense."
     ],
-    cultural_context: "The Junkyard is the Shelf's answer to corporate military hardware — ugly, improvised, and effective. It represents the democratization of automaton warfare, and the corponations hate it because it proves that the technology gap can be bridged with creativity and desperation.",
+    cultural_context: "The Junkyard is the Shelf's answer to corporate military hardware — ugly, improvised, and effective. It represents the democratization of automaton warfare, and the CorpoNations hate it because it proves that the technology gap can be bridged with creativity and desperation.",
     tags: ["automaton", "canine", "industrial", "plasma", "weapon", "crucible", "shelf", "gang", "tier 2"]
   },
 
@@ -943,7 +943,7 @@ const automata = [
       "A Scarecrow has been standing at a Shelf intersection for three days. It wasn't deployed by TESSERA. It wasn't deployed by anyone with authorization. It just showed up. And it's not running any of its disruption systems — it's just standing there, tracking faces. The neighborhood wants it gone but nobody wants to approach it.",
       "Someone has modified a Scarecrow's audio system to broadcast a specific message — not fear sounds, but a name. Over and over. The name of someone who died in a TESSERA suppression operation. The modification was done from inside TESSERA."
     ],
-    cultural_context: "The Scarecrow is the automaton that most directly attacks what it means to be human — it targets the mind, the emotions, the involuntary fear responses that evolution gave us for survival. That TESSERA classified this as 'non-lethal' is cited as evidence that corponation legal teams have no functioning concept of harm.",
+    cultural_context: "The Scarecrow is the automaton that most directly attacks what it means to be human — it targets the mind, the emotions, the involuntary fear responses that evolution gave us for survival. That TESSERA classified this as 'non-lethal' is cited as evidence that CorpoNation legal teams have no functioning concept of harm.",
     tags: ["automaton", "psychological", "terror", "bipedal", "weapon", "tessera", "corporate", "horror", "tier 4"]
   },
   {
@@ -951,7 +951,7 @@ const automata = [
     type: "automaton",
     classification: "Agricultural/Combat — Autonomous Clearing Platform",
     aliases: ["Thresher", "Lawn Mower", "Red Harvest"],
-    manufacturer: "RINGO CORPONATION",
+    manufacturer: "RINGO CorpoNation",
     description: "The RM-4 is an agricultural automaton designed for crop clearing and land preparation — a tracked platform the size of a small car with forward-mounted rotary cutting blades designed to clear vegetation, small trees, and crop residue at industrial speed. Ringo deployed them across its agricultural holdings for efficient land management. The combat application was discovered accidentally when a unit malfunctioned during a demonstration near a group of observers.\n\nThe incident was classified. The capability was not forgotten. Ringo's security division realized that a machine designed to cut through dense vegetation at high speed could, with minimal reprogramming, cut through dense crowds at high speed. The combat variant of the RM-4 replaces the vegetation-optimized cutting blades with hardened steel rotary cutters and adds armored side panels to protect the drive system from small arms fire. It drives into groups of people at 40 km/h and does what it was designed to do to crops.\n\nRingo has never officially acknowledged the combat variant. Agricultural RM-4 units are in wide, legitimate use. The combat variant is visually indistinguishable until the blade configuration is examined closely — hardened steel cutters where agricultural cutting teeth should be. This dual-use ambiguity is, by this point, a recognized Ringo design philosophy.",
     tier_availability: "Tier 2+ (agricultural); Tier 4+ (combat)",
     legality: "Agricultural: Licensed. Combat variant: Does not officially exist",
@@ -993,7 +993,7 @@ const automata = [
       "A Pallbearer has returned to a collection point with a cargo bay full of bodies. One of them is still alive — they were in augmentation-induced low-vital-sign stasis. They were picked up from a battlefield and have no idea where they are, who won, or how long they've been in a refrigerated box with corpses.",
       "Pallbearers are being deployed to the Shelf in advance of an operation that hasn't been announced. The machines are arriving. Everyone knows what follows."
     ],
-    cultural_context: "The Pallbearer forces confrontation with the industrialization of death. It is the machine that says: we have calculated how many of you will die, and we have prepared accordingly. Its pre-deployment is the most honest communication a corponation makes.",
+    cultural_context: "The Pallbearer forces confrontation with the industrialization of death. It is the machine that says: we have calculated how many of you will die, and we have prepared accordingly. Its pre-deployment is the most honest communication a CorpoNation makes.",
     tags: ["automaton", "logistics", "corpse retrieval", "battlefield", "arcturus", "corporate", "war", "tier 4"]
   },
   {
@@ -1027,7 +1027,7 @@ const automata = [
     classification: "Execution Platform — Autonomous Lethal Enforcement",
     aliases: ["Headsman", "Final Notice", "The Signature"],
     manufacturer: "ARCTURUS DEFENSE SOLUTIONS",
-    description: "The HX-1 is a bipedal automaton standing exactly human height — 1.8 meters — dressed in a matte-black chassis designed to evoke formal authority. It carries a single weapon: a wrist-mounted high-powered laser cutter capable of severing limbs, penetrating body armor, and — in its designed application — executing individuals designated for termination by corporate authority. The HX-1 walks to its target, identifies them through biometric confirmation, announces the authorization for lethal force, and carries out the sentence.\n\nThe HX-1 exists because certain corporate contracts include lethal enforcement clauses — debt obligations, NDA violations, and security breaches that carry capital penalties under corporate law. Previously, these executions required human operators, which introduced complications: hesitation, conscience, witness testimony, PTSD-related liability. The HX-1 eliminates all of these. It does not hesitate. It has no conscience. It generates its own execution record. It cannot develop post-traumatic stress.\n\nArcturus produces the HX-1 in limited quantities for clients who operate under legal frameworks that permit autonomous lethal enforcement — which, in GLMZ, means most Tier 4 and Tier 5 corponations. The unit's formal appearance and announcement protocol are deliberate: they create a veneer of due process around what is, functionally, a walking death sentence that cannot be appealed, negotiated with, or bribed.",
+    description: "The HX-1 is a bipedal automaton standing exactly human height — 1.8 meters — dressed in a matte-black chassis designed to evoke formal authority. It carries a single weapon: a wrist-mounted high-powered laser cutter capable of severing limbs, penetrating body armor, and — in its designed application — executing individuals designated for termination by corporate authority. The HX-1 walks to its target, identifies them through biometric confirmation, announces the authorization for lethal force, and carries out the sentence.\n\nThe HX-1 exists because certain corporate contracts include lethal enforcement clauses — debt obligations, NDA violations, and security breaches that carry capital penalties under corporate law. Previously, these executions required human operators, which introduced complications: hesitation, conscience, witness testimony, PTSD-related liability. The HX-1 eliminates all of these. It does not hesitate. It has no conscience. It generates its own execution record. It cannot develop post-traumatic stress.\n\nArcturus produces the HX-1 in limited quantities for clients who operate under legal frameworks that permit autonomous lethal enforcement — which, in GLMZ, means most Tier 4 and Tier 5 CorpoNations. The unit's formal appearance and announcement protocol are deliberate: they create a veneer of due process around what is, functionally, a walking death sentence that cannot be appealed, negotiated with, or bribed.",
     tier_availability: "Tier 5",
     legality: "Licensed under corporate lethal enforcement statutes",
     autonomy_level: "Fully autonomous with biometric confirmation requirement",
@@ -1038,7 +1038,7 @@ const automata = [
     armament: ["Wrist-mounted high-powered laser cutter", "Biometric confirmation system"],
     sensors: ["Multi-factor biometric identification (facial, gait, BCI, genetic)", "Vital sign monitoring (confirms completion)"],
     countermeasures: "Biometric spoofing can delay but not permanently prevent identification. The unit is armored against small arms. Destroying the biometric system prevents target confirmation, halting the execution protocol. The HX-1 will not engage unconfirmed targets. Fleeing works temporarily — the unit will pursue until its endurance expires or the target is confirmed dead.",
-    known_deployments: ["Corporate lethal enforcement operations (Tier 4-5 corponations)", "Classified — specific deployments not publicly documented"],
+    known_deployments: ["Corporate lethal enforcement operations (Tier 4-5 CorpoNations)", "Classified — specific deployments not publicly documented"],
     story_hooks: [
       "An HX-1 is walking through the Shelf, announcing a name. The name belongs to someone who defaulted on a corporate medical debt. The execution authorization is technically legal. The neighborhood is deciding whether to let the machine pass.",
       "An HX-1 has announced the wrong name — a biometric false match has sent it after an innocent person. The real target is watching from a distance. The innocent person has hours to prove their identity before the machine catches up."
@@ -1051,7 +1051,7 @@ const automata = [
     type: "automaton",
     classification: "Micro Platform — Internal Sabotage",
     aliases: ["Scarab", "Bug", "The Itch"],
-    manufacturer: "RINGO CORPONATION",
+    manufacturer: "RINGO CorpoNation",
     description: "The RE-2 is the size of a large beetle — small enough to be swallowed, inhaled, or introduced through an ear canal while a target sleeps. Its chassis is coated in bio-compatible material that prevents immune response, and its six micro-legs allow it to navigate the interior of a human body, crawling through the esophagus, nasal passages, or auditory canal to reach internal organs or — most commonly — to position itself near the BCI implant at the base of the skull.\n\nOnce positioned, the RE-2 can perform several functions: it can tap into BCI signals and transmit them externally (surveillance), it can deliver micro-doses of pharmaceutical agents directly to neural tissue (chemical manipulation), it can physically sever connections between the BCI and the nervous system (sabotage), or it can simply detonate a micro-charge smaller than a grain of rice (assassination). The target never knows the unit is there. Symptoms of RE-2 presence — headaches, tinnitus, mood changes — are identical to common BCI malfunction symptoms and are routinely dismissed.\n\nRingo officially manufactures the RE-2 as a 'BCI diagnostic micro-platform' — a device designed to be introduced into a patient's body to perform internal diagnostics on neural implants. This is a real medical application that exists and is used legitimately. The gap between 'diagnostic' and 'weaponized' is a firmware update.",
     tier_availability: "Tier 5",
     legality: "Medical diagnostic: Licensed. Weaponized: Does not officially exist",
@@ -1126,7 +1126,7 @@ const automata = [
     type: "automaton",
     classification: "Deception Platform — Synthetic Human Mimicry",
     aliases: ["Judas Goat", "The Lure", "Wrong Person"],
-    manufacturer: "RINGO CORPONATION",
+    manufacturer: "RINGO CorpoNation",
     description: "The RB-1 is a bipedal automaton with a synthetic skin covering, artificial hair, and facial feature articulation that allows it to approximate human appearance well enough to pass casual observation at distances beyond 5 meters. It cannot pass close inspection — the skin texture is wrong, the eyes don't track naturally, and the gait has a mechanical quality that observant individuals notice. But in crowds, in poor lighting, at a distance, and to people who aren't looking for it, the RB-1 looks like a person.\n\nRingo uses the RB-1 for two purposes. The first is decoy operations: the unit is given the superficial appearance of a high-value target and sent into exposed positions to draw fire, revealing ambush positions and sniper locations. The second purpose is luring: the RB-1 mimics the appearance and movement patterns of a specific individual to draw targets into kill zones, meetings with hostile parties, or areas where other automata are deployed.\n\nThe RB-1's existence has created a specific kind of paranoia in GLMZ — the suspicion that the person you're looking at might not be a person. This suspicion is almost always unfounded. The RB-1 is rare and expensive. But the knowledge that it exists is enough to erode trust in the most basic human interaction: recognizing another human being.",
     tier_availability: "Tier 5",
     legality: "Classified — denied by Ringo",
@@ -1351,7 +1351,7 @@ const automata = [
     type: "automaton",
     classification: "Serpentine — Area Denial",
     aliases: ["Rattlesnake", "Shake", "Ground Wire"],
-    manufacturer: "RINGO CORPONATION",
+    manufacturer: "RINGO CorpoNation",
     description: "The RR-1 is a 2-meter serpentine automaton that mimics snake locomotion, moving through grass, rubble, and debris with a lateral undulation that makes it nearly invisible at ground level. Its primary function is area denial through electrocution — the entire body is coated in a high-voltage discharge surface that delivers an incapacitating shock to anything it contacts. The Rattlesnake patrols a designated perimeter, and anything that crosses the line gets 50,000 volts.\n\nRingo deploys RR-1 units in agricultural zones as crop protection — the units patrol field perimeters and electrify anything that enters without authorization, from animal pests to human trespassers. The shock is rated as non-lethal for healthy adults, but agricultural workers in disputed zones are frequently not healthy adults — malnourished, augmented with cheap hardware that amplifies electrical discharge, or simply old. The RR-1's non-lethal rating assumes a target population that doesn't exist in the places it's deployed.\n\nThe RR-1's 'rattle' is a deliberate design feature — the tail section produces a buzzing vibration when the unit detects an approaching target, providing a warning that sounds exactly like a biological rattlesnake. In agricultural regions where venomous snakes are a genuine hazard, the sound triggers immediate freeze-and-retreat responses. By the time the target realizes the rattle came from a mechanical source, they've already changed direction — which is the intended outcome. The rattle is a weapon that fires on the nervous system.",
     tier_availability: "Tier 3+",
     legality: "Licensed for agricultural perimeter security",

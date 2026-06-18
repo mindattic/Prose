@@ -11,7 +11,7 @@ Tool surface (read-mostly; the only mutation is `plant_motif`):
 | `list_characters` / `get_character` | Character roster + full canon record (psychology, behavioral, speech_patterns, augmentations, story_hooks). |
 | `list_places` / `get_place` | Districts with atmosphere, sensory detail, story hooks. |
 | `list_factions` / `get_faction` | Gangs, syndicates, cells. |
-| `list_corponations` / `get_corponation` | Corporate sovereigns. |
+| `list_CorpoNations` / `get_CorpoNation` | Corporate sovereigns. |
 | `get_literary_rules` | Prohibitions, paragraph requirements, POV voice rules, register permissions. |
 | `list_books` / `get_book` / `get_chapter` | Bookshelf + per-chapter prose and beats. |
 | `get_book_outline` | Shared plot spine: per-chapter outlines, threads, pending adjustments. |

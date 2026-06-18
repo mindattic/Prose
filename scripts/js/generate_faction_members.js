@@ -1,4 +1,4 @@
-// generate_faction_members.js
+﻿// generate_faction_members.js
 // Adds known_members arrays to selected factions in engine/data/factions/
 // Run: node generate_faction_members.js from the v3/ directory
 
@@ -26,7 +26,7 @@ const FACTION_MEMBERS = {
       name: "Ade Kowalczyk-Ndiaye",
       role: "Legal Division / Neural Privacy Advocate",
       status: "active",
-      notes: "Filed eleven lawsuits against TESSERA's neural data collection practices. Won two. Lost seven. The remaining two are in appellate process and have been for three years. Has been disbarred twice, reinstated once, and is currently operating under a provisional license that three separate corponation legal teams are actively working to revoke. Keeps a paper journal because he doesn't trust anything digital and he wants to make sure there's a record."
+      notes: "Filed eleven lawsuits against TESSERA's neural data collection practices. Won two. Lost seven. The remaining two are in appellate process and have been for three years. Has been disbarred twice, reinstated once, and is currently operating under a provisional license that three separate CorpoNation legal teams are actively working to revoke. Keeps a paper journal because he doesn't trust anything digital and he wants to make sure there's a record."
     },
     {
       name: "The Sutler",

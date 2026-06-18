@@ -1,4 +1,4 @@
-// Apparel generator — Final Batch 2: 112 items (outfits, everyday, seasonal)
+﻿// Apparel generator — Final Batch 2: 112 items (outfits, everyday, seasonal)
 // Filenames: {id}.json where id is 32-char hex via crypto.randomBytes(16)
 // Run: node generate_apparel_final_2.js
 // Does NOT overwrite existing files.
@@ -104,13 +104,13 @@ const WORLD_CONTEXT = `Setting: GLMZ (GLMZ), year 2200. A megacity in the Great 
 - Tier 2 "Circuit" — working class. Factory workers, transit operators, street vendors. Clean but functional.
 - Tier 3 — middle management, cubicle workers, small business owners.
 - Tier 4 — corporate comfort. Junior execs, specialists, skilled professionals.
-- Tier 5 "The Spire" — ultra-elite. Corponation C-suite, power brokers, old money.
+- Tier 5 "The Spire" — ultra-elite. CorpoNation C-suite, power brokers, old money.
 
 Ubiquitous Diaspora: By 2200, humanity is fully racially interbred. Default to mixed heritage from unexpected global combinations. Fashion reflects global fusion — no single cultural tradition dominates.
 
 Technology: BCI (brain-computer interfaces) are common. Augmentation (cyberware/chrome) ranges from basic to military-grade. Geneware allows cosmetic and functional genetic modification (tails, bioluminescence, fur, horns, non-functional wings). Synthetics are artificial beings with non-human body proportions.
 
-Corponations are sovereign corporate entities. They manufacture most goods. Street brands also exist — unlicensed, often better for specific niches, always with underground cachet.
+CorpoNations are sovereign corporate entities. They manufacture most goods. Street brands also exist — unlicensed, often better for specific niches, always with underground cachet.
 
 Fashion notes: Clothing must accommodate augmentation (chrome arms, leg prosthetics, spinal rigs, neural ports) and geneware (tails, horns, wings, fur, scales). Aug-compatible means openings, channels, or adaptive seams for chrome. Gene-compatible means accommodation for biological modifications.
 
@@ -124,7 +124,7 @@ const CATEGORIES = [
     count: 8,
     category: 'outfit',
     tier: 'Tier 2-5',
-    prompt: `Generate {count} COMPLETE MILITARY/CORPSEC KITS — head-to-toe tactical outfits the narrator references as one item. Each for a DIFFERENT corponation: Crucible Genomics, Meridian Transit Authority, Stahl-Koenig Industries, Brightline, NovaChem, Yūrei Systems, Halcyon Dynamics, and one independent PMC. Full gear: helmet/headgear, armor/vest, fatigues, boots, load-bearing kit, ID markings. Corp-branded colors and insignia. Keep descriptions SHORT (2-4 sentences max).`
+    prompt: `Generate {count} COMPLETE MILITARY/CORPSEC KITS — head-to-toe tactical outfits the narrator references as one item. Each for a DIFFERENT CorpoNation: Crucible Genomics, Meridian Transit Authority, Stahl-Koenig Industries, Brightline, NovaChem, Yūrei Systems, Halcyon Dynamics, and one independent PMC. Full gear: helmet/headgear, armor/vest, fatigues, boots, load-bearing kit, ID markings. Corp-branded colors and insignia. Keep descriptions SHORT (2-4 sentences max).`
   },
   {
     tag: 'medical_scientific_kit',

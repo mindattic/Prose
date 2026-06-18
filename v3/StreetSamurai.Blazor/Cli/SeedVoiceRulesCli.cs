@@ -35,7 +35,7 @@ public static class SeedVoiceRulesCli
     [
         "Close-third that is really Kyle's: dry, controlled, more present in his own head than in the room; meets catastrophe with a flat aside. Laugh-or-cry register — humor and grief in the same breath.",
         "Every metaphor does double duty: it reveals Kyle's read of the world AND paints the world. If a metaphor only decorates, cut it.",
-        "Worldbuild by implication: name a thing, gloss it in ONE in-voice clause, move on. Gloss corponations on first mention. Never lecture.",
+        "Worldbuild by implication: name a thing, gloss it in ONE in-voice clause, move on. Gloss CorpoNations on first mention. Never lecture.",
         "Concrete over abstract: ground the strange in one specific sensory detail, not a statement that the world has changed.",
         "Cost is shown, never asserted — consequence is mechanical and visible (the read fails at the worst moment; the brace chirps; the wound degrades performance).",
         "Tenderness only through specifics — warmth via small concrete gestures, never stated sentiment.",

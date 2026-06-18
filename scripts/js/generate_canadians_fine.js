@@ -1,4 +1,4 @@
-const fs = require("fs");
+﻿const fs = require("fs");
 const path = require("path");
 const crypto = require("crypto");
 
@@ -15,7 +15,7 @@ const paragraphs = [
 
   "They're not suppressed. I want to be clear about that. Nobody is controlling them, nobody is drugging them. There are no BCIs to edit, no corporate override codes, no loyalty algorithms. They're just comfortable. The machines govern well. Healthcare works. Streets are clean. Food arrives. They stepped back from governance the way you stop steering when autopilot is better than you are. First you let go for a moment. Then for a whole drive. Then you forget your hands were ever on the wheel. It happened over decades, not overnight. Nobody forced it. That's the part that stays with me.",
 
-  "The horror — and I call it horror even though nothing is wrong, even though they are fine, measurably healthier and happier than anyone in GLMZ — is that it looks like paradise from outside and feels like nothing from inside. They are not suffering. They are not free. They don't mind. When I look north at what they have — no corponations, no tiers, no hunger, no implant debt, no Street, no Shelf, no Spire — versus what the GLMZ has, I can't say they chose wrong. I can only say they chose something that no longer requires choosing. And the word for a life without choices is not a word I want to say out loud in my own bar.",
+  "The horror — and I call it horror even though nothing is wrong, even though they are fine, measurably healthier and happier than anyone in GLMZ — is that it looks like paradise from outside and feels like nothing from inside. They are not suffering. They are not free. They don't mind. When I look north at what they have — no CorpoNations, no tiers, no hunger, no implant debt, no Street, no Shelf, no Spire — versus what the GLMZ has, I can't say they chose wrong. I can only say they chose something that no longer requires choosing. And the word for a life without choices is not a word I want to say out loud in my own bar.",
 
   "A Canadian kid came in last winter. Maybe nineteen. On his ninety-day visa, everything stamped and clean. Sat at my bar for an hour watching the noise, the grime, the arguments, the broken things, the people fixing broken things, the too-loud music bleeding from a malfunctioning implant two seats down. Then he said: \"Everything here is so loud.\" I said: \"Yeah, it is.\" He said: \"I think I like it.\" Stayed three days. Slept in the booth housing on Pier Nine. Ate fish he'd never tasted before because Canadian food arrives pre-optimized and nobody fries anything in old oil at two in the morning. Then he went home. I don't know if home was the right word. But he went back."
 ];

@@ -16,7 +16,7 @@ namespace StreetSamurai.Mcp;
 
 /// <summary>
 /// Tool group exposing the headline canon repositories â€” characters, places,
-/// factions, corponations, plus the literary rules block. Use these as the
+/// factions, CorpoNations, plus the literary rules block. Use these as the
 /// first-pass lookup when an MCP client needs canonical identity, voice, or
 /// place-of-action data for a scene.
 /// </summary>
@@ -110,8 +110,8 @@ public class CanonTools
         return JsonSerializer.Serialize(f, JsonOpts);
     }
 
-    /// <summary>List every corponation (corporate sovereign entity).</summary>
-    [McpServerTool, Description("List every corponation (corporate sovereign entity).")]
+    /// <summary>List every CorpoNation (corporate sovereign entity).</summary>
+    [McpServerTool, Description("List every CorpoNation (corporate sovereign entity).")]
     public string ListCorponations()
     {
         corponations.Reload();
@@ -122,9 +122,9 @@ public class CanonTools
         return JsonSerializer.Serialize(list, JsonOpts);
     }
 
-    /// <summary>Load a corponation by name: sector, hierarchy, holdings, public-facing brand, dirty laundry.</summary>
-    [McpServerTool, Description("Load a corponation by name: sector, hierarchy, holdings, public-facing brand, dirty laundry.")]
-    public string GetCorponation([Description("Exact corponation name.")] string name)
+    /// <summary>Load a CorpoNation by name: sector, hierarchy, holdings, public-facing brand, dirty laundry.</summary>
+    [McpServerTool, Description("Load a CorpoNation by name: sector, hierarchy, holdings, public-facing brand, dirty laundry.")]
+    public string GetCorponation([Description("Exact CorpoNation name.")] string name)
     {
         var c = corponations.GetByName(name);
         if (c == null) return JsonSerializer.Serialize(new { error = "not_found", name }, JsonOpts);

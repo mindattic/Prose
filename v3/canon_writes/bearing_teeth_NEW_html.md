@@ -1,4 +1,4 @@
-# Bearing Teeth
+﻿# Bearing Teeth
 
 *Protagonist: Kyle Ellen Corbin-Vister*
 
@@ -8,7 +8,7 @@ She said his name wrong. Three times, and Kyle didn't correct her. The apartment
 
 He took the job at half rate. He told himself it was the jaw. The jaw, wired shut, a man reduced to breathing and waiting. He didn't think about the girl standing in the hallway behind the curtain, watching him the way children watch things they've already decided to memorize.
 
-The building was the kind that pretended not to be a building. A welded conversion between two towers, slotted in twelve stories above ground level and forgotten by the corponation property registry sometime in the 2190s. Kyle had ridden the freight elevator up because the resident elevator did not exist anymore. Looking out the apartment's one window: the canyon between the towers, the rain coming straight down in the cold pillar of air between two structures that had not been designed to leave a gap and had been forced to leave one anyway. A VTOL crossed the gap forty stories up, running lights amber, moving toward something on the south face. Some board director was late to dinner. Some kid was getting their first cyberware. Kyle filed the running lights and didn't look up again.
+The building was the kind that pretended not to be a building. A welded conversion between two towers, slotted in twelve stories above ground level and forgotten by the CorpoNation property registry sometime in the 2190s. Kyle had ridden the freight elevator up because the resident elevator did not exist anymore. Looking out the apartment's one window: the canyon between the towers, the rain coming straight down in the cold pillar of air between two structures that had not been designed to leave a gap and had been forced to leave one anyway. A VTOL crossed the gap forty stories up, running lights amber, moving toward something on the south face. Some board director was late to dinner. Some kid was getting their first cyberware. Kyle filed the running lights and didn't look up again.
 
 ---
 
@@ -136,7 +136,7 @@ He cleaned the blade. The tremor started in his right hand, moved to his left, b
 
 He walked back to the bike. The Gray Zone's night-architecture closed around him — the flickering overheads, the drip of recycled water from the tier above, the distant music from some bar that had no business being optimistic. The towers leaned over the street the way they did this far down. A second VTOL crossed the gap forty stories up, running lights amber, moving north. Some board director was still late to dinner. Kyle did not file the running lights. He had stopped filing the running lights at some point in his twenties. The rich travelled rich, and Kyle travelled the way Kyle travelled, and the gap between those two transit modes was now part of the city the way the rain was part of the city, weather you accepted because the alternative was useless.
 
-The bike was where he had left it. The plate was the one he'd ridden down on; he'd swap it before he rode home, two streets short of West Town, where the Tier read changed and the plate that worked in the Gray Zone was the wrong plate for the surveillance grid the corponations ran across the Wicker boundary. He started the bike. He rode the long way north toward Chen's. Eight minutes. He was hungry. He was tired. He was alive.
+The bike was where he had left it. The plate was the one he'd ridden down on; he'd swap it before he rode home, two streets short of West Town, where the Tier read changed and the plate that worked in the Gray Zone was the wrong plate for the surveillance grid the CorpoNations ran across the Wicker boundary. He started the bike. He rode the long way north toward Chen's. Eight minutes. He was hungry. He was tired. He was alive.
 
 ---
 

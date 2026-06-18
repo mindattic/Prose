@@ -1,4 +1,4 @@
-const fs = require('fs');
+﻿const fs = require('fs');
 const path = require('path');
 
 const outDir = path.join(__dirname, '..', 'engine_data', 'geneware');
@@ -484,7 +484,7 @@ const geneware = [
     reversibility: "Irreversible (and why would you)",
     side_effects: ["Aggressive immune responses to pre-existing benign tumors (lipomas, moles) — can cause inflammation as the system attacks them", "Slightly impaired wound healing as the system scrutinizes all rapid cell growth", "Rare: autoimmune responses where the system misidentifies healthy tissue as cancerous"],
     social_perception: "The clearest example of medical inequality in GLMZ. Cancer immunity exists. It's available. It costs more than a Tier 1 resident earns in five years. Street clinics offer bootleg versions with inconsistent effectiveness.",
-    story_hooks: ["A Tier 1 community discovers that a batch of bootleg cancer immunity actually works — but it was stolen from a Helix Biosystems lab, and the corponation wants it back regardless of how many people it's already saving", "An oncogene suppression recipient's system begins attacking their own geneware modifications, treating the foreign DNA as cancerous — the cure is destroying the patient's other modifications one by one"]
+    story_hooks: ["A Tier 1 community discovers that a batch of bootleg cancer immunity actually works — but it was stolen from a Helix Biosystems lab, and the CorpoNation wants it back regardless of how many people it's already saving", "An oncogene suppression recipient's system begins attacking their own geneware modifications, treating the foreign DNA as cancerous — the cure is destroying the patient's other modifications one by one"]
   },
   {
     name: "Universal Pathogen Resistance",
@@ -500,7 +500,7 @@ const geneware = [
     expression_time: "6–8 weeks for enhanced immune function",
     reversibility: "Irreversible",
     side_effects: ["Intense inflammatory responses to minor infections — common colds produce high fevers", "Allergic sensitivity increases across the board", "Immune system may attack beneficial bacteria, requiring probiotic supplementation", "Rare: graft-versus-host-like reaction in first month"],
-    social_perception: "Considered basic healthcare at Tier 3+. The fact that Tier 1-2 residents lack pathogen resistance is viewed as a public health failure by progressives and a market reality by corponations. Epidemic death tolls track precisely along tier lines.",
+    social_perception: "Considered basic healthcare at Tier 3+. The fact that Tier 1-2 residents lack pathogen resistance is viewed as a public health failure by progressives and a market reality by CorpoNations. Epidemic death tolls track precisely along tier lines.",
     story_hooks: ["A new pathogen sweeps through the Shelf that specifically targets the pathogen resistance modification — it's engineered to attack enhanced immune systems, making the modified more vulnerable than the unmodified", "An Ironblood user's immune system becomes so aggressive it begins attacking other people's biological modifications through shed immune cells — they're a walking autoimmune weapon"]
   },
   {
@@ -715,7 +715,7 @@ const geneware = [
     aliases: ["Grass Eater", "Ruminant Gut", "Fiber Mod"],
     category: "agricultural/industrial",
     target_system: "digestive (cellulose fermentation capability)",
-    description: "Introduces a modified cecal chamber (a fermentation pouch between the small and large intestine) populated with termite-derived cellulase-producing bacteria. The user gains the ability to extract nutritional value from cellulose — plant fiber, paper, wood pulp, cotton, and other materials that are nutritionally useless to unmodified humans. The modification doesn't make these materials taste good — wood pulp is still wood pulp — but it makes them food. In a city where food supply chains are controlled by corponations and food insecurity drives Tier 1 desperation, the ability to eat grass, leaves, and waste paper is a survival modification. Gravemoss Biofoundry developed it during a food crisis in GLMZ's first century and has kept the price low as a public health measure — or, cynics note, to reduce pressure on the food supply chain that the corponations control.",
+    description: "Introduces a modified cecal chamber (a fermentation pouch between the small and large intestine) populated with termite-derived cellulase-producing bacteria. The user gains the ability to extract nutritional value from cellulose — plant fiber, paper, wood pulp, cotton, and other materials that are nutritionally useless to unmodified humans. The modification doesn't make these materials taste good — wood pulp is still wood pulp — but it makes them food. In a city where food supply chains are controlled by CorpoNations and food insecurity drives Tier 1 desperation, the ability to eat grass, leaves, and waste paper is a survival modification. Gravemoss Biofoundry developed it during a food crisis in GLMZ's first century and has kept the price low as a public health measure — or, cynics note, to reduce pressure on the food supply chain that the CorpoNations control.",
     source_organism: "Macrotermes bellicosus (African termite, cellulase bacteria), Bos taurus (cattle, cecal fermentation genes)",
     manufacturer: "Gravemoss Biofoundry",
     tier_availability: "Tier 1+ (subsidized by Gravemoss public health initiative)",
@@ -725,7 +725,7 @@ const geneware = [
     reversibility: "Reversible with bacterial colony ablation and cecal suppression",
     side_effects: ["Significant flatulence during initial adaptation and when processing cellulose", "Bloating from fermentation gas production", "Cellulose-heavy diet produces distinctively unpleasant body odor", "Nutritional content of cellulose is low — it supplements but doesn't replace normal food", "Rare: bacterial colony imbalance causing severe digestive distress"],
     social_perception: "The clearest poverty marker after photosynthetic skin. 'Grass eater' is used as both a description and a slur. Higher tiers find it repulsive. Tier 1 residents view it pragmatically — you eat what you can. Some activists eat cellulose publicly as protest performance.",
-    story_hooks: ["A Grass Eater discovers that the paper they've been eating contains chemical residues from a corponation document shredding operation — they're inadvertently consuming corporate secrets that their body is processing into metabolites detectable by corporate scanners", "Gravemoss Biofoundry's subsidized pricing is revealed to include a tracking compound in the bacterial colony — they've been monitoring the location and health of every Cellulose Mod user in the city"]
+    story_hooks: ["A Grass Eater discovers that the paper they've been eating contains chemical residues from a CorpoNation document shredding operation — they're inadvertently consuming corporate secrets that their body is processing into metabolites detectable by corporate scanners", "Gravemoss Biofoundry's subsidized pricing is revealed to include a tracking compound in the bacterial colony — they've been monitoring the location and health of every Cellulose Mod user in the city"]
   },
   {
     name: "Methane Processing Bioreactor",
@@ -759,7 +759,7 @@ const geneware = [
     reversibility: "Reversible with thermoelectric cell ablation; leaves faint grid-pattern scarring",
     side_effects: ["Skin feels noticeably warm to others — like a low-grade fever", "Electrical tingling sensation during high output", "Metal jewelry and accessories may cause discomfort from current flow", "Caloric demand increases with power output", "Rare: uncontrolled discharge during extreme cold causing minor burns at output points"],
     social_perception: "Practical and mildly admirable. Power Skin users are valued community members in low-infrastructure areas. The modification is unremarkable — useful without being flashy. Some users develop a sideline charging business.",
-    story_hooks: ["A Power Skin user discovers their output has doubled overnight — the thermoelectric cells are evolving, and their body temperature is dropping as the cells harvest more heat", "A network of Power Skin users in the Shelf is organized into a biological power grid by a community leader — until a corponation utility company sues them for unlicensed power distribution"]
+    story_hooks: ["A Power Skin user discovers their output has doubled overnight — the thermoelectric cells are evolving, and their body temperature is dropping as the cells harvest more heat", "A network of Power Skin users in the Shelf is organized into a biological power grid by a community leader — until a CorpoNation utility company sues them for unlicensed power distribution"]
   },
   // ── ADDITIONAL COSMETIC ───────────────────────────────
   {
@@ -1045,7 +1045,7 @@ const geneware = [
     aliases: ["Junkgene", "Mixblood", "Street Splice"],
     category: "radical body modification",
     target_system: "systemic (multi-species gene integration, uncontrolled)",
-    description: "Not a specific product but a category: the accumulated result of multiple cheap, poorly sequenced gene modifications from black-market clinics layered on top of each other without compatibility testing. Chimeric splice users display a patchwork of partially expressed traits — a patch of scales here, a tuft of fur there, one eye with a tapetum and one without, a partial tail that never finished growing, teeth that can't decide if they're fangs or molars. The black-market gene clinics of the Shelf use bulk gene stock purchased from corponation waste streams, expired retroviral batches, and outright counterfeits. The results are unpredictable. Some chimeric individuals develop functional modifications; most develop a cosmetic chaos of half-expressed traits. A few develop dangerous incompatibilities — organs that fight each other, immune systems that attack their own modifications, or runaway gene expression that doesn't stop. Chimeric splice is the geneware of the desperate — people who can't afford Tier 2+ installations but want modification badly enough to accept the risk.",
+    description: "Not a specific product but a category: the accumulated result of multiple cheap, poorly sequenced gene modifications from black-market clinics layered on top of each other without compatibility testing. Chimeric splice users display a patchwork of partially expressed traits — a patch of scales here, a tuft of fur there, one eye with a tapetum and one without, a partial tail that never finished growing, teeth that can't decide if they're fangs or molars. The black-market gene clinics of the Shelf use bulk gene stock purchased from CorpoNation waste streams, expired retroviral batches, and outright counterfeits. The results are unpredictable. Some chimeric individuals develop functional modifications; most develop a cosmetic chaos of half-expressed traits. A few develop dangerous incompatibilities — organs that fight each other, immune systems that attack their own modifications, or runaway gene expression that doesn't stop. Chimeric splice is the geneware of the desperate — people who can't afford Tier 2+ installations but want modification badly enough to accept the risk.",
     source_organism: "Multiple, uncontrolled, and often unidentified",
     manufacturer: "Black-market gene clinics (no consistent manufacturer)",
     tier_availability: "Tier 1 (this IS the Tier 1 option for complex modifications)",
@@ -1055,7 +1055,7 @@ const geneware = [
     reversibility: "Theoretically reversible on a trait-by-trait basis; practically, the layered modifications are too entangled to separate cleanly",
     side_effects: ["Unpredictable trait expression — modifications may manifest differently than intended", "Immune system conflicts between incompatible gene packages", "Chronic inflammation at sites of competing modifications", "Psychological stress from uncontrolled body changes", "Rare but terrifying: runaway gene expression causing continuous, uncontrolled morphological change"],
     social_perception: "The visible face of genetic inequality. Chimeric individuals are immediately recognizable and heavily stigmatized outside Tier 1 communities. Within the Shelf, chimeric modification is accepted as a fact of life — everyone knows someone who took the risk. Some chimeric individuals develop a unique aesthetic that becomes celebrated in Shelf culture.",
-    story_hooks: ["A chimeric individual's patchwork modifications spontaneously integrate into something coherent and functional — their body has solved the compatibility problem that legitimate genomics couldn't, and every corponation wants to know how", "A black-market clinic's gene stock is traced to a deliberate corponation dump — they're feeding expired and experimental gene packages to the street to use Tier 1 populations as unpaid test subjects"]
+    story_hooks: ["A chimeric individual's patchwork modifications spontaneously integrate into something coherent and functional — their body has solved the compatibility problem that legitimate genomics couldn't, and every CorpoNation wants to know how", "A black-market clinic's gene stock is traced to a deliberate CorpoNation dump — they're feeding expired and experimental gene packages to the street to use Tier 1 populations as unpaid test subjects"]
   },
   {
     name: "Feral Regression Syndrome Package",
@@ -1106,7 +1106,7 @@ const geneware = [
     reversibility: "Irreversible",
     side_effects: ["Accidental activation during extreme cold or dehydration — user enters suspension unintentionally", "Revival is not guaranteed — each suspension carries a 2–5% failure-to-revive risk", "Memory loss of the 30–60 minutes before suspension", "Post-revival confusion and weakness lasting 2–7 days", "Legal complications — suspended users have been declared dead, their assets distributed, their identities reassigned", "Psychological trauma from experiencing death-like unconsciousness"],
     social_perception: "Exotic, unsettling, and legally nightmarish. The modification raises questions about the definition of death that GLMZ's legal system has not resolved. Users who have been suspended and revived report existential disorientation. Family members who have watched a loved one 'die' and then return report lasting psychological damage.",
-    story_hooks: ["A Tun State user is declared legally dead during an accidental suspension, and when they revive three weeks later, they discover their identity has been erased and their assets seized by a corponation that was waiting for exactly this", "A series of 'dead' bodies in a Shelf morgue begin reviving simultaneously — someone installed cryptobiosis modifications without the recipients' knowledge, suspended them, and stored them for a purpose that's now becoming clear"]
+    story_hooks: ["A Tun State user is declared legally dead during an accidental suspension, and when they revive three weeks later, they discover their identity has been erased and their assets seized by a CorpoNation that was waiting for exactly this", "A series of 'dead' bodies in a Shelf morgue begin reviving simultaneously — someone installed cryptobiosis modifications without the recipients' knowledge, suspended them, and stored them for a purpose that's now becoming clear"]
   },
   {
     name: "Symbiotic Bioluminescent Colony",

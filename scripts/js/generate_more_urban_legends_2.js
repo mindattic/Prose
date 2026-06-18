@@ -1,4 +1,4 @@
-const fs = require('fs');
+﻿const fs = require('fs');
 const path = require('path');
 
 const OUTPUT_DIR = path.join(__dirname, '..', 'engine_data', 'documents');
@@ -563,9 +563,9 @@ The submersible encounter is the most dramatic claim and also the least verifiab
 
 ## What Believers Think
 
-The faithful believe that something lives in Lake Michigan — something large, something ancient, something that the corponations know about and have chosen not to reveal. They point to the fact that the monitoring array data was classified in 2158, two years after installation, under a corporate security order issued jointly by Axiom and Sterling-Nakamura. They point to the fact that no further submersible dives to the Basin have been authorized despite ongoing scientific interest. They point to the fact that the lakefront industrial zone's deep-water exclusion perimeter — a 50-square-kilometer area where unauthorized vessels are prohibited — was expanded in 2173, two years after the submersible incident, without public explanation.
+The faithful believe that something lives in Lake Michigan — something large, something ancient, something that the CorpoNations know about and have chosen not to reveal. They point to the fact that the monitoring array data was classified in 2158, two years after installation, under a corporate security order issued jointly by Axiom and Sterling-Nakamura. They point to the fact that no further submersible dives to the Basin have been authorized despite ongoing scientific interest. They point to the fact that the lakefront industrial zone's deep-water exclusion perimeter — a 50-square-kilometer area where unauthorized vessels are prohibited — was expanded in 2173, two years after the submersible incident, without public explanation.
 
-The most radical believers argue that the God in the Lake is not a biological entity at all but something else entirely — something geological, or technological, or something for which human language has no adequate category. They argue that the corponations' silence is not merely protective but reverent — that the Tier 5 executives who know the truth have encountered something that redefines their understanding of what is possible, and that silence is the only rational response.
+The most radical believers argue that the God in the Lake is not a biological entity at all but something else entirely — something geological, or technological, or something for which human language has no adequate category. They argue that the CorpoNations' silence is not merely protective but reverent — that the Tier 5 executives who know the truth have encountered something that redefines their understanding of what is possible, and that silence is the only rational response.
 
 ---
 
@@ -585,7 +585,7 @@ She was fined Φ5,000. The sonar data was confiscated. The regulation she suppos
 
 Something 400 meters across, at the bottom of Lake Michigan. Biological. Stationary. Warm.
 
-The corponations know what it is. They won't say. And perhaps that is the most terrifying thing of all — not that there is a god in the lake, but that the gods of the Spires have decided we don't need to know about it.
+The CorpoNations know what it is. They won't say. And perhaps that is the most terrifying thing of all — not that there is a god in the lake, but that the gods of the Spires have decided we don't need to know about it.
 
 ---
 
@@ -641,7 +641,7 @@ A minority theory, popular among the more paranoid Shelf communities, holds that
 
 ## What Skeptics Say
 
-"If the corponations wanted to harvest data from augments, they wouldn't need a dramatic yearly event. They collect data continuously. That's what the terms of service are for." — Tech journalist Amira Petrov-Obi, writing in The Meridian Independent, 2198.
+"If the CorpoNations wanted to harvest data from augments, they wouldn't need a dramatic yearly event. They collect data continuously. That's what the terms of service are for." — Tech journalist Amira Petrov-Obi, writing in The Meridian Independent, 2198.
 
 ---
 
@@ -829,7 +829,7 @@ The BCI anomalies, while suggestive, have not been independently verified. Aches
 
 ## What Believers Think
 
-The Shelf is divided on the Kindness Virus. Some view it as a weapon — a tool designed by someone (the corponations? an E.L.F.? a social engineer?) to destroy individuals by weaponizing their own goodness. In this reading, the virus is cruelty disguised as compassion, a mechanism that uses the victim's own moral impulses as the instrument of their destruction.
+The Shelf is divided on the Kindness Virus. Some view it as a weapon — a tool designed by someone (the CorpoNations? an E.L.F.? a social engineer?) to destroy individuals by weaponizing their own goodness. In this reading, the virus is cruelty disguised as compassion, a mechanism that uses the victim's own moral impulses as the instrument of their destruction.
 
 Others view it more ambiguously. If someone created a virus that makes people kind — compulsively, destructively, but genuinely kind — what does that say about kindness? Is generosity still virtuous if it's compelled? Is self-sacrifice still noble if it's programmed?
 
@@ -1015,7 +1015,7 @@ The two-meter disruption zone could be explained by an unusual metabolic conditi
 
 The Null Child has become a symbol on the Shelf — a living argument that technology is not inevitable, that the human body can exist without augmentation, without modification, without the digital infrastructure that defines life in GLMZ. To the anti-augmentation movement, the Null Child is proof that nature resists the machine. To parents who worry about their children's dependence on technology, the Null Child is a reassurance that humanity exists independent of its tools.
 
-To the corponations, the Null Child is a threat. If a human being can be inherently immune to technology, the implications for the augmentation industry — which depends on universal compatibility — are existential. If immunity is genetic, it could spread. If it is replicable, it could be weaponized. If it is natural, it could represent the beginning of an evolutionary divergence that renders the entire technological infrastructure of GLMZ irrelevant.
+To the CorpoNations, the Null Child is a threat. If a human being can be inherently immune to technology, the implications for the augmentation industry — which depends on universal compatibility — are existential. If immunity is genetic, it could spread. If it is replicable, it could be weaponized. If it is natural, it could represent the beginning of an evolutionary divergence that renders the entire technological infrastructure of GLMZ irrelevant.
 
 ---
 

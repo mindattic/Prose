@@ -1,10 +1,10 @@
-const fs = require("fs");
+﻿const fs = require("fs");
 const path = require("path");
 
 const documentsDir = path.resolve(__dirname, "../engine/data/documents");
 
 // Known entities and themes to look for in content
-const corponations = [
+const CorpoNations = [
   "arcturus", "tessera", "ringo", "ouroboros", "vantablack", "lazarus", "crucible",
   "axiom", "palladian", "ironclad", "pinnacle", "solace", "kindred", "calyx",
   "veridian", "helix", "stratos", "dominion", "bastion", "ninth_circle",
@@ -183,8 +183,8 @@ function extractTags(doc) {
   ];
   const fullText = textParts.join(" ").toLowerCase();
 
-  // Check for corponation mentions
-  for (const corp of corponations) {
+  // Check for CorpoNation mentions
+  for (const corp of CorpoNations) {
     if (fullText.includes(corp)) {
       tags.add(corp);
     }
@@ -228,7 +228,7 @@ function extractTags(doc) {
     if (tags.size >= 15) break;
     if (word.length >= 5 && !tags.has(word)) {
       // Only add if it somewhat relates to known themes
-      for (const theme of [...themes, ...corponations, ...locations]) {
+      for (const theme of [...themes, ...CorpoNations, ...locations]) {
         if (word.includes(theme) || theme.includes(word)) {
           tags.add(word);
           break;

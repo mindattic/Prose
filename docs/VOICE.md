@@ -1,4 +1,4 @@
-# THE VOICE — derived from the five canon texts {#SS-VOICE}
+﻿# THE VOICE — derived from the five canon texts {#SS-VOICE}
 
 > **v3 — 2026-06-10. The Quiet Hour added as the fifth canon text (author-approved).**
 > Derived by reading With Teeth, The One That Doesn't Stop, Sexy Time, Street Meat, and
@@ -43,7 +43,7 @@ speech. People say the smaller, drier thing when the larger thing is available.
 against every instinct he owns, to take this kid personally.") Italic inner monologue is
 rare — a sentence, never a paragraph, never a conversation.
 
-**TECH AND CORPONATIONS ARE EXPLAINED BY WHAT THEY DO, IN-LINE, ONCE.** ("Crucible
+**TECH AND CorpoNations ARE EXPLAINED BY WHAT THEY DO, IN-LINE, ONCE.** ("Crucible
 Genomics prints organs to order, which means the kid is six hours into living on one of
 them.") Superminds are mentioned the way people mention weather — by name, possessively,
 never explained ("CONDUCTOR's running them slow tonight"). Never lecture. Never tour-guide.
@@ -105,7 +105,7 @@ feared. Write it as ability, never as magic.
 
 7. **Vultures at the Door** (vultures-at-the-door-019ec467) — the sanitation-noir standard: a man who does the job so a worse man doesn't. Thomas holds onto one fact the way you hold onto a railing — there had been a gun, it was real, the board would write it clean. The register is the manifest: names, addresses, what the body owes. The number beside each name is never zero. Tears runs a tab and the tab comes due in the dark. Moral weight is carried by what Thomas chooses not to do, never stated: he takes the quiet collection before a stranger can, because a stranger would have done the ordinary thing.
 
-8. **Death Whispers in a Cat's Ear** (death-whispers-in-a-cats-ear-019ec3fe) — the ensemble detective standard: a crew where each member's method is their voice. Rennick costs things. Teller marks the seam between fact and inference and speaks softly enough that the room goes quiet. Analog works on foot, off the network, watching the ramp. Tamsin knows before she has the discipline to stop knowing. The horror is ordinary business: the disposal isn't improvised, it's a catalog part bought through a company account. That's worse than murder. That's a corponation that has standardized the handling of them.
+8. **Death Whispers in a Cat's Ear** (death-whispers-in-a-cats-ear-019ec3fe) — the ensemble detective standard: a crew where each member's method is their voice. Rennick costs things. Teller marks the seam between fact and inference and speaks softly enough that the room goes quiet. Analog works on foot, off the network, watching the ramp. Tamsin knows before she has the discipline to stop knowing. The horror is ordinary business: the disposal isn't improvised, it's a catalog part bought through a company account. That's worse than murder. That's a CorpoNation that has standardized the handling of them.
 
 ## GLMZ UNIVERSAL — beyond Kyle
 
@@ -113,7 +113,7 @@ feared. Write it as ability, never as magic.
 
 **THE BODY KNOWS BEFORE THE BRAIN EXPLAINS IT.** Resonance wrongness, psionic presence, the long patient fear of a hunter: render these as physical sensation first — teeth that know a frequency, a cold with a clean vertical edge, a smell on a landing. The character registers the knowledge before they can articulate it. Never explain the mechanism.
 
-**THE WRONG IS STANDARDIZED, AND STANDARDIZED IS WORSE.** A corponation that has systematized harm is more frightening than improvised evil. Name the catalog part. Name the account class. The mundane procedure around atrocity is the horror — not the atrocity itself.
+**THE WRONG IS STANDARDIZED, AND STANDARDIZED IS WORSE.** A CorpoNation that has systematized harm is more frightening than improvised evil. Name the catalog part. Name the account class. The mundane procedure around atrocity is the horror — not the atrocity itself.
 
 **AN ENSEMBLE SPEAKS IN METHODS, NOT PERSONALITIES.** In multi-character scenes, each person's register is their function: the one who speaks in facts marks the seam between fact and inference; the one who works on foot reads the route and the doorways; the lead prices the horror and makes it ordinary. The method is the character. Never write ensemble scenes as a conversation between similar voices.
 

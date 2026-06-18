@@ -1,4 +1,4 @@
-// Spray weapons & electric shock rod generator for StreetSamurai
+﻿// Spray weapons & electric shock rod generator for StreetSamurai
 // Generates 40 weapon JSON files in engine/data/weaponry/
 // Run: node generate_sprays_and_rods.js
 // Does NOT overwrite existing files.
@@ -102,7 +102,7 @@ const WORLD_CONTEXT = `Setting: GLMZ, year 2200. A megacity in the Great Lakes c
 
 Technology: BCI (brain-computer interfaces) are common. Augmentation (cyberware/chrome) ranges from basic to military-grade. Geneware allows cosmetic and functional genetic modification. Synthetics (artificial humans) exist but are socially marginalized.
 
-Corponations are sovereign corporate entities — Arcturus Defense Solutions (military/security), TESSERA Corponation (biotech/consumer tech), Lazarus Pharmaceutical (pharma/bioweapons). Consumer brands also exist: SafeStep, Guardian, ShieldTech, Meridian Municipal Supply, etc.
+CorpoNations are sovereign corporate entities — Arcturus Defense Solutions (military/security), TESSERA CorpoNation (biotech/consumer tech), Lazarus Pharmaceutical (pharma/bioweapons). Consumer brands also exist: SafeStep, Guardian, ShieldTech, Meridian Municipal Supply, etc.
 
 Products should feel REAL — not parodies. Think how real defense contractors (Taser/Axon, Safariland, Defense Technology) name their products. Professional, sometimes clinical, sometimes evocative.
 
@@ -154,7 +154,7 @@ Include in this batch:
 9. A hallucinogenic spray — causes 30-60 seconds of confusion and disorientation, synth-compound based
 10. A cryo spray — flash-freeze contact agent, causes intense pain and numbness on exposed skin
 
-Mix manufacturers: SafeStep (consumer), Guardian (consumer), ARCTURUS DEFENSE SOLUTIONS (military), TESSERA CORPONATION (tech), LAZARUS PHARMACEUTICAL (pharma), ShieldTech (security), plus 1-2 street/unlicensed brands.
+Mix manufacturers: SafeStep (consumer), Guardian (consumer), ARCTURUS DEFENSE SOLUTIONS (military), TESSERA CorpoNation (tech), LAZARUS PHARMACEUTICAL (pharma), ShieldTech (security), plus 1-2 street/unlicensed brands.
 
 Price range: Φ5 (cheapest) to Φ2,500 (military nerve agent).
 Tier range: Tier 1 through Tier 4.
@@ -214,7 +214,7 @@ Include in this batch:
 9. A shock lance — long-reach polearm-style weapon with electrified tip
 10. A micro stun rod — pen-sized concealed weapon, single-use or limited charges
 
-Mix manufacturers: ARCTURUS DEFENSE SOLUTIONS (military-grade), ShieldTech (security), Guardian (consumer), TESSERA CORPONATION (tech), street/improvised brands, agricultural equipment companies.
+Mix manufacturers: ARCTURUS DEFENSE SOLUTIONS (military-grade), ShieldTech (security), Guardian (consumer), TESSERA CorpoNation (tech), street/improvised brands, agricultural equipment companies.
 
 Price range: Φ15 (repurposed cattle prod) to Φ8,000 (military shock lance).
 Tier range: Tier 1 through Tier 4.
@@ -244,7 +244,7 @@ Include in this batch:
 9. A street-improvised shock club — car battery + pipe, dangerous to user and target alike
 10. A corporate executive defense rod — sleek, expensive, concealed in a briefcase or umbrella
 
-Mix manufacturers: ARCTURUS DEFENSE SOLUTIONS, TESSERA CORPONATION, ShieldTech, Crucible Industries, street/improvised, luxury brands.
+Mix manufacturers: ARCTURUS DEFENSE SOLUTIONS, TESSERA CorpoNation, ShieldTech, Crucible Industries, street/improvised, luxury brands.
 
 Price range: Φ20 (improvised) to Φ25,000 (plasma-edge sword).
 Tier range: Tier 1 through Tier 5.

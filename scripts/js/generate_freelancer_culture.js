@@ -1,4 +1,4 @@
-// generate_freelancer_culture.js
+﻿// generate_freelancer_culture.js
 // Generates 40 in-world documents about freelancer life in GLMZ 2200
 // Output: engine/data/documents/ (one JSON file per document)
 // Resume-safe: skips documents whose file_name already exists
@@ -165,7 +165,7 @@ const DOCUMENT_SPECS = [
     name: 'Protection Detail Log: 72 Hours',
     doc_type: 'personal_log',
     author: 'B-tier freelancer, name redacted per request',
-    topic: 'First-person log of a 72-hour protection detail. The client is a mid-level Shelf-district community organizer who is trying to stop a corponation rezoning. The freelancer is professional but tired. Cover: the first meeting with the client and establishing protocols, the first threat (not what was expected), hours 14-26 where nothing happens and the boredom is its own problem, the real threat that arrives on hour 51, the negotiation that happens instead of violence, the end of the job and the moral residue. Written in a log format, timestamped, honest about exhaustion and doubt.'
+    topic: 'First-person log of a 72-hour protection detail. The client is a mid-level Shelf-district community organizer who is trying to stop a CorpoNation rezoning. The freelancer is professional but tired. Cover: the first meeting with the client and establishing protocols, the first threat (not what was expected), hours 14-26 where nothing happens and the boredom is its own problem, the real threat that arrives on hour 51, the negotiation that happens instead of violence, the end of the job and the moral residue. Written in a log format, timestamped, honest about exhaustion and doubt.'
   },
   {
     file_name: 'jobs_you_never_take',
@@ -382,7 +382,7 @@ const DOCUMENT_SPECS = [
     name: 'The Missing: Freelancers Who Disappeared Without a Record',
     doc_type: 'guide',
     author: 'Signal Network community archive project, 2199',
-    topic: 'Community archive documenting freelancers who disappeared — not died on jobs with witnesses, but simply stopped. No body, no final Dead Drop, no last contact. The document is part practical (the Signal Network\'s informal protocols for declaring someone missing versus dead versus gone dark deliberately), part memorial, part warning. Include: the statistical baseline for disappearances vs. expected deaths by tier, the three most common explanations (went deep cover deliberately, taken by a corponation they worked against, failed a Ghost-tier job), several specific case summaries (names changed or coded), the community debate about what obligations exist to missing freelancers\' dependents when cause of disappearance is unknown, a section on how to make disappearing easier if you have to (operational notes, not morbid — practical). The document is maintained by people who think this history matters.'
+    topic: 'Community archive documenting freelancers who disappeared — not died on jobs with witnesses, but simply stopped. No body, no final Dead Drop, no last contact. The document is part practical (the Signal Network\'s informal protocols for declaring someone missing versus dead versus gone dark deliberately), part memorial, part warning. Include: the statistical baseline for disappearances vs. expected deaths by tier, the three most common explanations (went deep cover deliberately, taken by a CorpoNation they worked against, failed a Ghost-tier job), several specific case summaries (names changed or coded), the community debate about what obligations exist to missing freelancers\' dependents when cause of disappearance is unknown, a section on how to make disappearing easier if you have to (operational notes, not morbid — practical). The document is maintained by people who think this history matters.'
   },
   {
     file_name: 'client_horror_stories',
@@ -410,7 +410,7 @@ const DOCUMENT_SPECS = [
     name: 'Rating Clients: How the Back Channel Works',
     doc_type: 'guide',
     author: 'A broker writing as "Secondary Source"',
-    topic: 'Guide to how freelancers and brokers share informal intelligence about clients — outside the Signal Network\'s formal structure. Cover: the informal channels where client reputations are discussed (specific in-world venues and communication methods), how freelancers flag problem clients without creating legal liability for themselves, the broker\'s role in aggregating client intelligence (they know more than they share, and why), the specific signals that indicate a client is worth avoiding (patterns, not single incidents), the cases where a bad client gets protected because of their corponation affiliation, and the cases where even powerful clients get effectively blacklisted through informal consensus. Includes a section on the reverse: how clients evaluate brokers, and what makes a broker trustworthy to a client who needs genuine operational security. The document is practical and also quietly describes a shadow governance structure operating in the gaps of corporate law.'
+    topic: 'Guide to how freelancers and brokers share informal intelligence about clients — outside the Signal Network\'s formal structure. Cover: the informal channels where client reputations are discussed (specific in-world venues and communication methods), how freelancers flag problem clients without creating legal liability for themselves, the broker\'s role in aggregating client intelligence (they know more than they share, and why), the specific signals that indicate a client is worth avoiding (patterns, not single incidents), the cases where a bad client gets protected because of their CorpoNation affiliation, and the cases where even powerful clients get effectively blacklisted through informal consensus. Includes a section on the reverse: how clients evaluate brokers, and what makes a broker trustworthy to a client who needs genuine operational security. The document is practical and also quietly describes a shadow governance structure operating in the gaps of corporate law.'
   },
   {
     file_name: 's_tier_interview_fragments',

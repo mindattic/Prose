@@ -1,4 +1,4 @@
-// Apparel generator for StreetSamurai — Tops & Jackets/Outerwear
+﻿// Apparel generator for StreetSamurai — Tops & Jackets/Outerwear
 // Generates 200 apparel JSON files in engine/data/apparel/
 // Run: node generate_apparel_2.js
 // Does NOT overwrite existing files.
@@ -145,7 +145,7 @@ Ubiquitous Diaspora: By 2200, humanity is fully racially interbred. Heritage com
 
 Technology: BCI (brain-computer interfaces) are common. Augmentation (cyberware/chrome) ranges from basic to military-grade. Geneware allows cosmetic and functional genetic modification (tails, bioluminescence, fur, horns, non-functional wings). Most people dress NORMALLY — jeans, t-shirts, jackets. Tech-enhanced clothing exists but is not the default.
 
-Corponations are sovereign corporate entities. They manufacture most goods. Street brands also exist — unlicensed, often higher quality for specific niches, always with underground cachet.
+CorpoNations are sovereign corporate entities. They manufacture most goods. Street brands also exist — unlicensed, often higher quality for specific niches, always with underground cachet.
 
 Brand names should sound like real brand names — not jokes or parodies. Think how Nike, Carhartt, Patagonia, Uniqlo, Arc'teryx sound — professional, sometimes evocative, sometimes just a name. Mix corp mega-brands with mid-tier labels and street/independent brands.
 
@@ -163,7 +163,7 @@ const SCHEMA_REF = `{
   "functionality": "what tech features it has, if any (empty string for normal clothes)",
   "what_it_says": "what wearing this item says about the person",
   "worn_by": ["types of people who wear this"],
-  "manufacturer": "Brand or corponation name",
+  "manufacturer": "Brand or CorpoNation name",
   "price_range": "price in currency symbol + amount",
   "aug_compatible": true or false,
   "gene_compatible": true or false,

@@ -1,4 +1,4 @@
-/**
+﻿/**
  * generate_lab_specimens.js
  * Writes 50 lab specimen entries to engine_data/lab_specimens/
  * Run from: v3/ directory
@@ -123,7 +123,7 @@ write({
   containment_status: "Widely distributed in the lower residential tiers. Population unknown and uncountable.",
   known_locations: ["Transit seating surfaces in lower tier corridors", "Any heavily-used sleeping space in the lower tiers", "Waste heat vents in sub-level infrastructure"],
   contamination_risk: "Low — they are not transmissible in any biological sense. The wound they produce is their contamination: an open flesh wound that, if the Patch is not removed, progresses.",
-  pacification_protocol: "Medical: cryogenic spot treatment disrupts the adhesive compound and allows removal. Individual Patches are not a DPS concern. Infested spaces are a public health issue that falls under a regulatory gap — no single corponation claims ownership of the lower-tier transit infrastructure where they cluster.",
+  pacification_protocol: "Medical: cryogenic spot treatment disrupts the adhesive compound and allows removal. Individual Patches are not a DPS concern. Infested spaces are a public health issue that falls under a regulatory gap — no single CorpoNation claims ownership of the lower-tier transit infrastructure where they cluster.",
   pitiable_qualities: "None accessible. They are a flat disk that eats skin. They have no interiority.",
   story_hooks: ["A runner wakes up with one on their back, under their armor, where they couldn't have felt it attach. It has been there since yesterday.", "A child in the lower tiers has seven of them on their torso and the parent cannot afford the clinic that can remove them."],
   tags: ["lab_specimen", "parasite", "dermal", "no_cognition", "lower_tiers", "uncontained", "medical_accident", "moderate_threat"]

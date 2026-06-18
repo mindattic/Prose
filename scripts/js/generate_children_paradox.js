@@ -1,4 +1,4 @@
-const crypto = require('crypto');
+﻿const crypto = require('crypto');
 const fs = require('fs');
 const path = require('path');
 
@@ -226,9 +226,9 @@ The document concludes with a question: "If you were dying and you were rich, wo
     author: "Kai Nakamura-Obi, The Meridian Independent",
     date: "2226-05-30",
     classification: "public",
-    description: `The Children Paradox is the most open secret in GLMZ. Everyone who works with population data knows about it. Everyone who works with children in the Shelf knows about it. The Bureau of Census published a restricted report documenting a 14.3% surplus in the under-12 population. Investigative journalists have written about it. Academics have theorized about it. And yet no institution — not the Bureau, not CorpSec, not the Governance Council, not any corponation — has launched a formal investigation. The question is not why the anomaly exists. The question is why nobody in a position of authority wants to know why it exists.
+    description: `The Children Paradox is the most open secret in GLMZ. Everyone who works with population data knows about it. Everyone who works with children in the Shelf knows about it. The Bureau of Census published a restricted report documenting a 14.3% surplus in the under-12 population. Investigative journalists have written about it. Academics have theorized about it. And yet no institution — not the Bureau, not CorpSec, not the Governance Council, not any CorpoNation — has launched a formal investigation. The question is not why the anomaly exists. The question is why nobody in a position of authority wants to know why it exists.
 
-The answer is that the Children Paradox is an equilibrium. Every major institutional actor in GLMZ benefits from not knowing its cause. The corponations benefit because more children mean more future consumers, more future workers, more future BCI subscribers. Population growth is good for the bottom line, and corponations do not ask where growth comes from — they monetize it. If the surplus children are clones, or migrants, or something else entirely, the revenue they generate as adults will be identical regardless of origin.
+The answer is that the Children Paradox is an equilibrium. Every major institutional actor in GLMZ benefits from not knowing its cause. The CorpoNations benefit because more children mean more future consumers, more future workers, more future BCI subscribers. Population growth is good for the bottom line, and CorpoNations do not ask where growth comes from — they monetize it. If the surplus children are clones, or migrants, or something else entirely, the revenue they generate as adults will be identical regardless of origin.
 
 CorpSec benefits because investigating the paradox would require acknowledging a massive gap in their surveillance and identity infrastructure — a gap that calls into question the fundamental premise of their authority. CorpSec's power derives from the claim that they know who everyone is and where everyone is at all times. Admitting that 12,000 children appeared without being detected would be an institutional humiliation. It is easier to not count them than to explain how they were missed.
 
@@ -241,7 +241,7 @@ The only people who do not benefit from this equilibrium are the children themse
       "The 'equilibrium' framing suggests that any disruption to the paradox would destabilize multiple institutions simultaneously",
       "CorpSec's reluctance to investigate implies they may already know the answer"
     ],
-    tags: ["document", "children_paradox", "opinion_piece", "corpsec", "corponation", "shelf", "institutional", "surveillance", "cover_up"]
+    tags: ["document", "children_paradox", "opinion_piece", "corpsec", "CorpoNation", "shelf", "institutional", "surveillance", "cover_up"]
   },
   {
     name: "The Playground Recordings",

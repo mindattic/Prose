@@ -1,4 +1,4 @@
-#!/usr/bin/env node
+﻿#!/usr/bin/env node
 /**
  * Deduplicates entity JSON files within each data directory.
  * Groups files by their display name (name or product_name) within each folder.
@@ -16,7 +16,7 @@ const DRY_RUN = process.argv.includes('--dry-run');
 
 const SCAN_DIRS = [
     'ammunition', 'apparel', 'automata', 'consumer_goods', 'contracts',
-    'corponations', 'cyberware', 'entertainment', 'equipment', 'factions',
+    'CorpoNations', 'cyberware', 'entertainment', 'equipment', 'factions',
     'genemods', 'lab_specimens', 'materials', 'people', 'pharmaceuticals',
     'places', 'psionics', 'subsidiaries', 'synthetics', 'technology',
     'transportation', 'vocabulary', 'weaponry',

@@ -1,4 +1,4 @@
-const fs = require('fs');
+﻿const fs = require('fs');
 const path = require('path');
 const crypto = require('crypto');
 
@@ -266,19 +266,19 @@ const swords = [
   },
   {
     id: id(),
-    name: "Tessera Corponation Phase Blade PB-3 'Flicker'",
+    name: "Tessera CorpoNation Phase Blade PB-3 'Flicker'",
     type: "weapon",
     aliases: ["Flicker", "PB-3", "Phase Blade", "Ghost Sword"],
     category: "melee",
     description: "An experimental blade weapon that uses a rapidly cycling electromagnetic field to alter the molecular alignment of its cutting edge 600 times per second, shifting between rigid and semi-fluid states. When rigid, the blade strikes with the hardness of diamond. When semi-fluid, the edge deforms around defensive contact and reforms on the other side, effectively flowing past blocks and parries. To an observer, the blade appears to flicker between solid and translucent, giving the weapon its name.\n\nTessera developed the Phase Blade using proprietary shape-memory alloy technology that responds to electromagnetic field cycling. The effect is visually unsettling and tactically devastating — an opponent attempting to block a Flicker strike feels their parry connect with something that has the consistency of heavy liquid before the blade resolidifies inside their guard. Traditional sword defense techniques become unreliable against a weapon that does not obey consistent physical rules.\n\nThe PB-3 is phenomenally expensive and mechanically fragile. The electromagnetic cycling system requires precise calibration, and physical shock from impacts gradually degrades the alignment until the blade begins phase-cycling erratically — sometimes remaining fluid when it should be rigid, or rigid when flow-through is needed. Each weapon has a rated operational life of approximately 200 engagements before requiring factory recalibration. Tessera charges Φ15,000 for each recalibration, ensuring a continuous revenue stream.",
-    manufacturer: "TESSERA CORPONATION",
+    manufacturer: "TESSERA CorpoNation",
     tier_availability: "Tier 4+",
     legality: "Restricted — experimental weapon classification",
     base_technologies: ["Electromagnetic molecular phase cycling", "Shape-memory alloy rapid-state transition", "Adaptive edge rigidity control"],
     specifications: "blade_length: 75 cm\ntotal_length: 100 cm\nweight: 1.2 kg\nphase_cycle_rate: 600 Hz\npower_source: Pommel-integrated quantum cell, 3 hours active cycling\nblade_material: Tessera proprietary shape-memory alloy\noperational_life: ~200 engagements between recalibrations\nrecalibration_cost: Φ15,000",
     tactical_use: "The Flicker negates conventional melee defense by passing through blocks and parries during its semi-fluid phase. Opponents must develop entirely new defensive strategies, typically based on evasion rather than contact. The weapon is most effective in one-on-one engagements where the operator can exploit confusion and unfamiliarity. Against multiple opponents or in chaotic melee, the phase cycling becomes less advantageous as the weapon's fragility and power dependency become liabilities. Experienced Flicker users learn to time their strikes to the rigid phase for maximum damage while using the fluid phase to defeat incoming defense.",
     cultural_context: "The Flicker has become the ultimate prestige weapon in GLMZ's high-tier dueling circles — owning one signals both extraordinary wealth and commitment to melee combat at its most technical. The weapon has also generated philosophical debate about what constitutes a 'fair' weapon in dueling contexts, as many traditionalists argue that a blade that ignores parries violates the fundamental compact of swordfighting. Tessera has leaned into the controversy, marketing the PB-3 as 'the future of the edge.'",
-    known_users: ["Tessera Corponation elite security", "Tier 4+ duelists", "Experimental weapons collectors"],
+    known_users: ["Tessera CorpoNation elite security", "Tier 4+ duelists", "Experimental weapons collectors"],
     story_hooks: [
       "A Flicker's phase cycling has begun synchronizing with its wielder's BCI implant, responding to intent rather than pre-programmed timing. Tessera wants the weapon back for study — the wielder considers it their property.",
       "A duelist was killed when their opponent's Flicker malfunctioned mid-bout, remaining in rigid phase during what should have been a non-lethal fluid-phase touch. The death is ruled an accident, but the weapon's maintenance logs have been erased."
@@ -518,12 +518,12 @@ const daggers = [
   },
   {
     id: id(),
-    name: "Tessera Corponation Neural-Edge Tanto NT-1 'Whisper Cut'",
+    name: "Tessera CorpoNation Neural-Edge Tanto NT-1 'Whisper Cut'",
     type: "weapon",
     aliases: ["Whisper Cut", "NT-1", "Neural Tanto", "The Quiet"],
     category: "melee",
     description: "A tanto-profile fixed blade with an edge coated in a piezoelectric polymer that generates a localized electrical field on contact with biological tissue. The field is precisely calibrated to interfere with peripheral nerve signaling, causing immediate localized numbness that spreads outward from the wound site. Victims of a Whisper Cut do not feel the injury for 15-30 seconds — by which time the operator has typically inflicted multiple wounds that the target was unaware of receiving.\n\nTessera developed the neural-edge coating as part of a medical research project aimed at producing surgical instruments that reduce patient trauma during conscious procedures. The weaponized version uses a stronger field that does not merely dull sensation but actively suppresses the pain response in a 10-centimeter radius around each wound. Targets who are cut remain alert and functional — they simply do not know they are bleeding until the numbness wears off or they notice the blood.\n\nThe NT-1's tactical implications are disturbing in their elegance. A skilled operator can inflict lethal arterial damage while the target continues a conversation, unaware that they have been cut. The weapon has earned its name from operators who describe the experience of using it as 'whispering to someone in a language their body doesn't speak.' Tessera's medical research division has publicly disavowed any connection to the weapon. Internal documents suggest otherwise.",
-    manufacturer: "TESSERA CORPONATION",
+    manufacturer: "TESSERA CorpoNation",
     tier_availability: "Tier 4+ (restricted availability)",
     legality: "Restricted — neural-interfering weapon classification",
     base_technologies: ["Piezoelectric polymer edge coating", "Peripheral nerve signal disruption", "Calibrated localized anesthesia field"],
@@ -699,12 +699,12 @@ const clubs = [
   },
   {
     id: id(),
-    name: "Tessera Corponation Neural Disruptor Baton NDB-1 'Migraine'",
+    name: "Tessera CorpoNation Neural Disruptor Baton NDB-1 'Migraine'",
     type: "weapon",
     aliases: ["Migraine", "NDB-1", "Neural Baton", "Brainfog"],
     category: "melee",
     description: "A rigid baton that generates a localized electromagnetic pulse on impact, specifically tuned to interfere with neural implant frequencies and biological synaptic transmission. The Migraine does not stun through electrical discharge like conventional shock-sticks — it disrupts the target's cognitive function by flooding their nervous system with electromagnetic noise that overwhelms both biological and cybernetic neural pathways.\n\nTargets struck by the NDB-1 experience immediate disorientation, loss of spatial awareness, and disruption of short-term memory formation. The effect has been described as being 'hit by a migraine and a flashbang simultaneously.' The disruption lasts 2-5 minutes depending on the target's neural augmentation level — ironically, more heavily augmented individuals suffer longer-lasting effects because their cybernetic neural pathways amplify the disruptive pulse.\n\nTessera developed the Neural Disruptor Baton for their internal security division's 'cognitive compliance' program — a euphemism for interrogation-adjacent activities where subjects needed to be rendered confused and suggestible without visible injury. The weapon leaves no marks, causes no physical damage, and produces symptoms that are indistinguishable from a severe migraine episode. Medical examinations after NDB-1 exposure reveal nothing abnormal, making allegations of its use extremely difficult to prove.",
-    manufacturer: "TESSERA CORPONATION",
+    manufacturer: "TESSERA CorpoNation",
     tier_availability: "Tier 4+ (restricted distribution)",
     legality: "Restricted — cognitive interference weapon classification",
     base_technologies: ["Targeted neural electromagnetic pulse", "Synaptic disruption frequency tuning", "Cognitive function interference"],
@@ -770,12 +770,12 @@ const knuckleWeapons = [
   },
   {
     id: id(),
-    name: "Tessera Corponation Retractable Claws RC-2 'Cat Scratch'",
+    name: "Tessera CorpoNation Retractable Claws RC-2 'Cat Scratch'",
     type: "weapon",
     aliases: ["Cat Scratch", "RC-2", "Tessera Claws", "Kitty"],
     category: "melee",
     description: "A set of three retractable claws per hand, surgically mounted to the metacarpal bones and deployed through armored sheaths in the knuckle skin. Each claw is 12 centimeters of monocrystalline carbon-lattice composite — harder than surgical steel, lighter than aluminum, and sharp enough to score glass. The claws deploy in 0.15 seconds via a BCI-linked command or a deliberate fist-clenching gesture, and retract with the same speed.\n\nTessera developed the RC-2 as a personal defense augmentation for high-value individuals who require constant protection but cannot carry visible weapons. The claws are completely concealed when retracted — even detailed hand examination reveals only faint scars at the knuckle deployment points. Deployment is silent and instant, transforming an apparently unarmed hand into a weapon capable of shredding soft armor and inflicting deep lacerating wounds.\n\nThe surgical implantation procedure is invasive and painful, requiring modification of the hand's skeletal structure to accommodate the claw housings. Recipients report a persistent awareness of the hardware inside their hands — a subtle weight and tension that never fully fades. Long-term users describe developing an instinctive relationship with the claws, deploying them reflexively in response to perceived threats before conscious decision-making occurs. Tessera considers this a feature; psychologists are less certain.",
-    manufacturer: "TESSERA CORPONATION",
+    manufacturer: "TESSERA CorpoNation",
     tier_availability: "Tier 4+ (surgical implant)",
     legality: "Restricted — implanted weapon classification, registration required",
     base_technologies: ["Retractable monocrystalline claw mechanism", "BCI-linked deployment", "Skeletal integration surgical mounting"],
@@ -929,12 +929,12 @@ const whips = [
   },
   {
     id: id(),
-    name: "Tessera Corponation Neural Leash NL-2 'Puppeteer'",
+    name: "Tessera CorpoNation Neural Leash NL-2 'Puppeteer'",
     type: "weapon",
     aliases: ["Puppeteer", "NL-2", "Neural Leash", "The String"],
     category: "melee",
     description: "A flexible weapon that combines a conductive polymer whip with a neural-disruption pulse generator, allowing the operator to deliver targeted cognitive interference through physical contact at range. The Puppeteer is 1.8 meters of polymer cord that, on contact with bare skin or conductive cyberware surfaces, delivers a precisely calibrated electromagnetic pulse that temporarily overrides voluntary motor control — causing the target's muscles to obey the pulse's frequency rather than the target's own neural commands.\n\nThe effect is not paralysis — it is involuntary movement. Targets struck by the Puppeteer do not freeze; they move in ways they did not intend, their limbs responding to electromagnetic commands rather than conscious will. At low settings, this manifests as loss of coordination and involuntary jerking. At high settings, the operator can induce specific gross motor patterns — causing a target to drop a held weapon, take a step in a specific direction, or raise their arms. The control is imprecise and cannot produce fine motor manipulation, but the ability to make an opponent's body betray them is tactically devastating.\n\nTessera developed the NL-2 under a contract from their corrections division for a restraint tool that could control prisoners without physical contact. The weapon's capability has since expanded far beyond its original scope, and the ethical implications of a weapon that puppets another person's body have generated ongoing controversy that Tessera has largely ignored.",
-    manufacturer: "TESSERA CORPONATION",
+    manufacturer: "TESSERA CorpoNation",
     tier_availability: "Tier 4+ (highly restricted)",
     legality: "Restricted — neural-override weapon, prohibited in most jurisdictions",
     base_technologies: ["Conductive polymer neural interface", "Motor-control electromagnetic override", "Targeted involuntary-movement induction"],

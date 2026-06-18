@@ -16,7 +16,7 @@ namespace StreetSamurai.Mcp;
 
 /// <summary>
 /// Tool group for creating and updating the core canon entities: characters,
-/// places, factions, and corponations. These are the primary entities most
+/// places, factions, and CorpoNations. These are the primary entities most
 /// stories reference.
 /// </summary>
 [McpServerToolType]
@@ -177,10 +177,10 @@ public class CoreEntityCrudTools
         return JsonSerializer.Serialize(new { ok = true, id = f.Id, name = f.Name }, CanonTools.JsonOpts);
     }
 
-    /// <summary>Create or update a corponation record. Pass empty id to create new; pass an existing id to update.</summary>
-    [McpServerTool, Description("Create or update a corponation (corporate sovereign entity) in canon. Pass empty id to create new; pass an existing id to update.")]
+    /// <summary>Create or update a CorpoNation record. Pass empty id to create new; pass an existing id to update.</summary>
+    [McpServerTool, Description("Create or update a CorpoNation (corporate sovereign entity) in canon. Pass empty id to create new; pass an existing id to update.")]
     public string CreateCorponation(
-        [Description("Corponation name. Required.")] string name,
+        [Description("CorpoNation name. Required.")] string name,
         [Description("Full legal corporate name.")] string fullLegalName = "",
         [Description("Industry sector.")] string sector = "",
         [Description("Territory the corp controls or dominates.")] string sovereignTerritory = "",
@@ -188,9 +188,9 @@ public class CoreEntityCrudTools
         [Description("Founding story or origin.")] string foundingStory = "",
         [Description("Security force name and description.")] string securityForce = "",
         [Description("Key distinguishing detail about this corp.")] string keyDetail = "",
-        [Description("Full prose text describing the corponation.")] string fullText = "",
+        [Description("Full prose text describing the CorpoNation.")] string fullText = "",
         [Description("Comma-separated tags.")] string tags = "",
-        [Description("Optional existing corponation id to update.")] string id = "")
+        [Description("Optional existing CorpoNation id to update.")] string id = "")
     {
         var corp = string.IsNullOrEmpty(id)
             ? new CorponationData()
@@ -606,10 +606,10 @@ public class WorldEntityCrudTools
     }
 
     /// <summary>Create or update a subsidiary record. Pass empty id to create new; pass an existing id to update.</summary>
-    [McpServerTool, Description("Create or update a subsidiary (child/holding company of a larger corponation) in canon. Pass empty id to create new; pass an existing id to update.")]
+    [McpServerTool, Description("Create or update a subsidiary (child/holding company of a larger CorpoNation) in canon. Pass empty id to create new; pass an existing id to update.")]
     public string CreateSubsidiary(
         [Description("Subsidiary name. Required.")] string name,
-        [Description("Parent corponation name.")] string parentCorponation = "",
+        [Description("Parent CorpoNation name.")] string parentCorponation = "",
         [Description("Prose description.")] string description = "",
         [Description("Comma-separated tags.")] string tags = "",
         [Description("Optional existing subsidiary id to update.")] string id = "")

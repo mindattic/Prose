@@ -1,8 +1,8 @@
-# StreetSamurai
+﻿# StreetSamurai
 
 **A literary fiction engine for a cyberpunk century.**
 
-StreetSamurai writes novels. Not snippets, not summaries — chapter-length prose, voice-disciplined, canon-grounded, ready for the bookshelf. It is the authoring stack for *Bushido Coda* and a hundred stories beyond it, set in the GLMZ: a 500-kilometer vertical megacity stacked along the western shore of Lake Michigan in the year 2225, where ferrocement waves rise a hundred stories above the lake and corponations hold sovereignty the old nations could not.
+StreetSamurai writes novels. Not snippets, not summaries — chapter-length prose, voice-disciplined, canon-grounded, ready for the bookshelf. It is the authoring stack for *Bushido Coda* and a hundred stories beyond it, set in the GLMZ: a 500-kilometer vertical megacity stacked along the western shore of Lake Michigan in the year 2225, where ferrocement waves rise a hundred stories above the lake and CorpoNations hold sovereignty the old nations could not.
 
 Live at **[streetsamurai.azurewebsites.net](https://streetsamurai.azurewebsites.net/)**.
 
@@ -28,7 +28,7 @@ Live at **[streetsamurai.azurewebsites.net](https://streetsamurai.azurewebsites.
 
 ## What it is
 
-A C# / .NET Blazor Server application — web-only, fully responsive, phone-accessible — that pairs a disciplined data layer with a multi-LLM generation pipeline. The canon lives in SQL Server: 1,000+ named entities (characters, places, factions, corponations, weapons, biotech, documents) bound together by a directional graph of relationships, vector embeddings, and a two-axis time model that distinguishes wall-clock audit history from in-world chronology.
+A C# / .NET Blazor Server application — web-only, fully responsive, phone-accessible — that pairs a disciplined data layer with a multi-LLM generation pipeline. The canon lives in SQL Server: 1,000+ named entities (characters, places, factions, CorpoNations, weapons, biotech, documents) bound together by a directional graph of relationships, vector embeddings, and a two-axis time model that distinguishes wall-clock audit history from in-world chronology.
 
 On top of that data layer sits the writing surface: a Book → Chapter → Beat hierarchy with outline-first workflow, a Quorum-voted review pipeline drawing on eleven LLM providers, a heuristic Writing Quality service, a motif planter that threads imagery across chapters, and an export pipeline that produces Calibre-friendly EPUB, HTML, and Markdown.
 
@@ -52,7 +52,7 @@ For agentic authoring, an MCP server exposes the entire canon as Model Context P
 
 The GLMZ — Greater Lake Michigan Zone, Meridian 88, *The Glooms* depending on who's asking — is the center of what's left of Western civilization. The coasts failed. The middle didn't. Twelve named territories rise in concentric vertical strata above ferrocement seawalls, served by The Pulse — a Mach-6 magnetic vacuum transit network that puts Rotterdam 43 minutes from Chicago. Iowan Behemoths walk the prairie beyond, autonomous and enormous and emphatically not alive. Currency is Φ — quantum compute-time, the QUANTA, never the Greek letter phi.
 
-People are from everywhere. Heritage is mixed, names cross continents, the diaspora is ubiquitous. Corponations hold the sovereignty Westphalia used to. There is no city police force. The Vultures pick up the bodies and quietly repossess the organs. Cyberpunk cliché is rejected on contact.
+People are from everywhere. Heritage is mixed, names cross continents, the diaspora is ubiquitous. CorpoNations hold the sovereignty Westphalia used to. There is no city police force. The Vultures pick up the bodies and quietly repossess the organs. Cyberpunk cliché is rejected on contact.
 
 This is the literary substrate. Eleven concurrent creative directives govern voice; a hundred-story corpus is in flight; the rogue-AI long con runs underneath the slice-of-life surface.
 

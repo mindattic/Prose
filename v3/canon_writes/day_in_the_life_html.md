@@ -1,4 +1,4 @@
-# Day in the Life
+﻿# Day in the Life
 
 *Protagonist: Kyle Ellen Corbin-Vister*
 
@@ -16,7 +16,7 @@ He did not put it down. He carried it. He rode.
 
 ---
 
-The bike found the Damen lift at 22:01. He took the lift up to the eighteenth-floor surface (The Pivot's tier — somebody had hand-painted PIVOT in matte black on the lift's interior at some point in the building's earlier life and the corponation maintenance crew had never quite gotten around to scrubbing it). The doors opened on rain that had been waiting for him at this elevation specifically, a heavier rain than the strut had been throwing, the kind that hit the lift's threshold in flat percussion before he had even rolled the bike out onto the deck.
+The bike found the Damen lift at 22:01. He took the lift up to the eighteenth-floor surface (The Pivot's tier — somebody had hand-painted PIVOT in matte black on the lift's interior at some point in the building's earlier life and the CorpoNation maintenance crew had never quite gotten around to scrubbing it). The doors opened on rain that had been waiting for him at this elevation specifically, a heavier rain than the strut had been throwing, the kind that hit the lift's threshold in flat percussion before he had even rolled the bike out onto the deck.
 
 He rolled the bike out anyway. He walked it the last forty meters to the alley behind The Pivot. Habit. The bike could ride that distance under its own power and Kyle was the only one who would know he had walked it instead, but the habit was the habit, and the habit was that you arrived home the way you wanted the room to know you were arriving. Quietly. With your weight off the engine. Without telling anyone above the third floor that anyone had come back.
 
@@ -62,7 +62,7 @@ She started talking. This was always the way. Pixel did not work in silence on a
 
 "Yeah."
 
-"There's a new noodle stand opened on Damen. Five blocks west of Chen's. I went past it on Saturday. They have a poster up, full corponation logo, and they are calling themselves *Damen Authentic* in three languages, and I do not need to tell you that an authentic anything that has a corponation logo printed on the poster is not authentic in any of the three languages."
+"There's a new noodle stand opened on Damen. Five blocks west of Chen's. I went past it on Saturday. They have a poster up, full CorpoNation logo, and they are calling themselves *Damen Authentic* in three languages, and I do not need to tell you that an authentic anything that has a CorpoNation logo printed on the poster is not authentic in any of the three languages."
 
 "No."
 

@@ -1,4 +1,4 @@
-const fs = require('fs');
+﻿const fs = require('fs');
 const path = require('path');
 
 const outDir = path.join(__dirname, '..', 'engine_data', 'transportation');
@@ -396,7 +396,7 @@ const vehicles = [
     aliases: ["Ringo Cart", "The Kitchen", "Street Box"],
     category: "commercial_ground",
     manufacturer: "Ringo",
-    description: "A motorized vendor cart manufactured by Ringo, the corponation that quietly dominates Tier 1-2 street commerce. Electric drive, fold-out serving counter, integrated heating/cooling, and a surprisingly sophisticated inventory tracking system. Ringo doesn't sell these carts — they lease them, and the lease agreement gives Ringo access to every transaction, every location, and every customer interaction. The carts are affordable. The data extraction is the real product.",
+    description: "A motorized vendor cart manufactured by Ringo, the CorpoNation that quietly dominates Tier 1-2 street commerce. Electric drive, fold-out serving counter, integrated heating/cooling, and a surprisingly sophisticated inventory tracking system. Ringo doesn't sell these carts — they lease them, and the lease agreement gives Ringo access to every transaction, every location, and every customer interaction. The carts are affordable. The data extraction is the real product.",
     propulsion: "Electric drive, three wheels",
     speed: "15 km/h",
     capacity: "200 kg cargo capacity",
@@ -499,7 +499,7 @@ const vehicles = [
     cost: "Φ180,000 base. Φ350,000 with full security package.",
     autonomy: "Chauffeur-driven with AI backup. Having a human driver is the luxury.",
     armament: "Classified. Armor rated for military small arms. Countermeasure suite. The details are NDA-protected.",
-    common_usage: "C-suite corporate transport, diplomatic vehicles, corponation board members.",
+    common_usage: "C-suite corporate transport, diplomatic vehicles, CorpoNation board members.",
     story_hooks: ["A Sovereign limousine is found abandoned in The Shelf with the engine running and the passenger compartment sealed from the inside — empty", "The chauffeur of a Sovereign has been listening to everything for twenty years and finally decides to talk"]
   },
   {
@@ -536,7 +536,7 @@ const vehicles = [
     autonomy: "Human pilot with full AI backup. Autonomous emergency return.",
     armament: "Classified countermeasure suite, chaff, flares, signal disruption.",
     common_usage: "Executive inter-city transport, emergency extraction, corporate retreat access.",
-    story_hooks: ["An Apex pilot is ordered to fly a route that takes them through restricted military airspace — and nothing intercepts them", "Two Apex VTOLs from rival corponations nearly collide over the lakefront, triggering a corporate incident that escalates far beyond a traffic violation"]
+    story_hooks: ["An Apex pilot is ordered to fly a route that takes them through restricted military airspace — and nothing intercepts them", "Two Apex VTOLs from rival CorpoNations nearly collide over the lakefront, triggering a corporate incident that escalates far beyond a traffic violation"]
   },
   {
     name: "SN Meridian Yacht",
@@ -582,7 +582,7 @@ const vehicles = [
     aliases: ["Raptor", "Death Bird", "Corporate Hammer"],
     category: "military_security",
     manufacturer: "Arcturus Defense",
-    description: "An attack VTOL gunship that serves as the heavy enforcement arm of corporate security forces. The Raptor is what happens when a corponation decides a problem requires deletion rather than management. Twin turbofan engines, articulated weapon pods, sensor suite that can track a running person from five kilometers away. When a Raptor lights up its searchlight, you stop. You kneel. You hope you're not the target.",
+    description: "An attack VTOL gunship that serves as the heavy enforcement arm of corporate security forces. The Raptor is what happens when a CorpoNation decides a problem requires deletion rather than management. Twin turbofan engines, articulated weapon pods, sensor suite that can track a running person from five kilometers away. When a Raptor lights up its searchlight, you stop. You kneel. You hope you're not the target.",
     propulsion: "Twin hydrogen turbofan, anti-grav hover capability",
     speed: "350 km/h cruise, 450 km/h maximum",
     capacity: "2 crew + 6 tactical operators",
@@ -592,7 +592,7 @@ const vehicles = [
     autonomy: "Crew-operated, AI co-pilot, autonomous emergency return",
     armament: "Chin-mounted rotary cannon, wing hardpoints for missiles/rockets, EMP pod, crowd suppression array.",
     common_usage: "High-threat security operations, aerial superiority, corporate warfare, intimidation.",
-    story_hooks: ["A Raptor gunship fires on a target in a Tier 1 district — the collateral damage is enormous and the corponation claims it was a malfunction", "A grounded Raptor is found in the industrial district with its IFF transponder removed — someone has a gunship and no one knows who"]
+    story_hooks: ["A Raptor gunship fires on a target in a Tier 1 district — the collateral damage is enormous and the CorpoNation claims it was a malfunction", "A grounded Raptor is found in the industrial district with its IFF transponder removed — someone has a gunship and no one knows who"]
   },
   {
     name: "Axiom Sentinel Patrol Drone",
@@ -618,7 +618,7 @@ const vehicles = [
     aliases: ["Enforcer", "Black-and-Gray", "Prowler"],
     category: "military_security",
     manufacturer: "Ferrogate Transit (Security Division)",
-    description: "The standard security patrol vehicle for Ferrogate's private police force. A fast, armored ground car with light bars, siren, and pursuit capability. Enforcers are a common sight in Tier 2-3 districts where Ferrogate holds transit security contracts. In Tier 1, they appear only when something has gone very wrong. In Tier 4-5, corporate security handles their own problems. The Enforcer occupies the uncomfortable middle ground of GLMZ law enforcement — not powerful enough to challenge the corponations, not trusted enough to protect the people.",
+    description: "The standard security patrol vehicle for Ferrogate's private police force. A fast, armored ground car with light bars, siren, and pursuit capability. Enforcers are a common sight in Tier 2-3 districts where Ferrogate holds transit security contracts. In Tier 1, they appear only when something has gone very wrong. In Tier 4-5, corporate security handles their own problems. The Enforcer occupies the uncomfortable middle ground of GLMZ law enforcement — not powerful enough to challenge the CorpoNations, not trusted enough to protect the people.",
     propulsion: "Electric all-wheel drive, pursuit-rated motor",
     speed: "200 km/h pursuit speed",
     capacity: "2 officers + 2 detained persons",
@@ -992,7 +992,7 @@ const vehicles = [
     aliases: ["Nexus", "Corp Car", "The Standard"],
     category: "luxury",
     manufacturer: "Tessera",
-    description: "The standard executive ground car for Tier 4 corporate employees — a perk, not a purchase. The Nexus is assigned by the corponation and tracked by the corponation. Comfortable, efficient, autonomous, and a rolling surveillance platform that reports your movements to your employer. Every Nexus in the fleet is identical — the same color, the same interior, the same lack of personality. You are driving a company asset, and you are a company asset, and neither of you should forget it.",
+    description: "The standard executive ground car for Tier 4 corporate employees — a perk, not a purchase. The Nexus is assigned by the CorpoNation and tracked by the CorpoNation. Comfortable, efficient, autonomous, and a rolling surveillance platform that reports your movements to your employer. Every Nexus in the fleet is identical — the same color, the same interior, the same lack of personality. You are driving a company asset, and you are a company asset, and neither of you should forget it.",
     propulsion: "Electric, autonomous drive",
     speed: "150 km/h top speed",
     capacity: "4 passengers",
@@ -1048,7 +1048,7 @@ const vehicles = [
     aliases: ["Siege", "The Fortress", "Mobile Base"],
     category: "military_security",
     manufacturer: "Arcturus Defense",
-    description: "A massive tracked vehicle the size of a small building, serving as a mobile command center and area-denial platform. The Siege Platform is deployed only in extreme circumstances — corporate warfare, district-scale security operations, or situations where a corponation has decided that a piece of geography needs to change hands. It carries a crew of 30, a drone bay, communications suite, and enough firepower to level a city block. GLMZ has seen three Siege Platform deployments in the last decade. Nobody wants to see a fourth.",
+    description: "A massive tracked vehicle the size of a small building, serving as a mobile command center and area-denial platform. The Siege Platform is deployed only in extreme circumstances — corporate warfare, district-scale security operations, or situations where a CorpoNation has decided that a piece of geography needs to change hands. It carries a crew of 30, a drone bay, communications suite, and enough firepower to level a city block. GLMZ has seen three Siege Platform deployments in the last decade. Nobody wants to see a fourth.",
     propulsion: "Nuclear-electric, continuous track drive",
     speed: "40 km/h on road",
     capacity: "30 crew + mission equipment",
@@ -1486,7 +1486,7 @@ const vehicles = [
     aliases: ["Hospital Zep", "Sky Mercy", "The White Whale"],
     category: "commercial_air",
     manufacturer: "Ferrogate Transit (Aerostat Division, Medical Branch)",
-    description: "A converted cargo zeppelin fitted as a mobile medical facility that stations itself above underserved districts during health crises. Three operating rooms, a trauma ward, pharmaceutical dispensary, and a staff of 30 medical professionals. The Hospital Zep is funded by a rotating consortium of corponations as a public relations exercise that also happens to save lives. It appears when disease or disaster hits, hovers for days or weeks, and disappears when the cameras leave. The medical staff, however, are genuine — they volunteer for these rotations because the need is real even if the motivation isn't.",
+    description: "A converted cargo zeppelin fitted as a mobile medical facility that stations itself above underserved districts during health crises. Three operating rooms, a trauma ward, pharmaceutical dispensary, and a staff of 30 medical professionals. The Hospital Zep is funded by a rotating consortium of CorpoNations as a public relations exercise that also happens to save lives. It appears when disease or disaster hits, hovers for days or weeks, and disappears when the cameras leave. The medical staff, however, are genuine — they volunteer for these rotations because the need is real even if the motivation isn't.",
     propulsion: "Helium lift, electric propulsion",
     speed: "40 km/h transit, stationary during operations",
     capacity: "30 staff + 50 patients",
@@ -1758,7 +1758,7 @@ const vehicles = [
     aliases: ["Nighthawk", "Black Wing", "The Nothing"],
     category: "military_security",
     manufacturer: "Sterling-Nakamura (Defense Contracts)",
-    description: "A stealth VTOL aircraft that barely exists on any sensor. Radar-absorbing composite hull, sound-dampened rotors, heat-signature masking, and a visual profile that disappears against the night sky. The Nighthawk is what corponations deploy when they need something done that never happened — extraction, insertion, surveillance, or worse. You don't see a Nighthawk. You don't hear a Nighthawk. You might feel the downdraft and look up at nothing. They are the most classified vehicles in GLMZ and their existence is officially denied by every corponation that operates them.",
+    description: "A stealth VTOL aircraft that barely exists on any sensor. Radar-absorbing composite hull, sound-dampened rotors, heat-signature masking, and a visual profile that disappears against the night sky. The Nighthawk is what CorpoNations deploy when they need something done that never happened — extraction, insertion, surveillance, or worse. You don't see a Nighthawk. You don't hear a Nighthawk. You might feel the downdraft and look up at nothing. They are the most classified vehicles in GLMZ and their existence is officially denied by every CorpoNation that operates them.",
     propulsion: "Stealth tilt-rotor, sound-dampened electric turbine",
     speed: "350 km/h",
     capacity: "2 crew + 8 operators",
@@ -1768,7 +1768,7 @@ const vehicles = [
     autonomy: "Human pilot, AI stealth management and countermeasures",
     armament: "Classified. Assumed to include precision weapons, EMP, and electronic warfare suite.",
     common_usage: "Black operations, covert extraction/insertion, classified surveillance, things that don't appear in reports.",
-    story_hooks: ["A Shelf resident with military-grade optical implants sees a Nighthawk hovering over their building and realizes they were never supposed to be able to", "Two Nighthawks from different corponations encounter each other over the same target — a standoff at midnight, invisible to the city below"]
+    story_hooks: ["A Shelf resident with military-grade optical implants sees a Nighthawk hovering over their building and realizes they were never supposed to be able to", "Two Nighthawks from different CorpoNations encounter each other over the same target — a standoff at midnight, invisible to the city below"]
   },
   {
     name: "Underworld Fungal Raft",

@@ -1,4 +1,4 @@
-#!/usr/bin/env node
+﻿#!/usr/bin/env node
 // Scrubs "The Shelf" concept from all worldbuilding JSON files.
 // Tier language (Tier 1, Tier 2, etc.) is left intact — it's social status, not geography.
 
@@ -10,7 +10,7 @@ const DATA_DIR = path.join(__dirname, '..', 'engine', 'data');
 // Text replacements applied in order (order matters — more specific patterns first).
 const TEXT_REPLACEMENTS = [
   // Directional compound phrases first
-  [/above the [Ss]helf/g,         'inside corponation territory'],
+  [/above the [Ss]helf/g,         'inside CorpoNation territory'],
   [/below the [Ss]helf/g,         'in the Gray Zone'],
   [/into the [Ss]helf/g,          'into the sprawl'],
   [/from the [Ss]helf/g,          'from the sprawl'],
@@ -20,10 +20,10 @@ const TEXT_REPLACEMENTS = [
   [/of the [Ss]helf/g,            'of the sprawl'],
   // Qualified Shelf references
   [/the lower [Ss]helf/g,         'the Gray Zone'],
-  [/the upper [Ss]helf/g,         'the corponation quarter'],
+  [/the upper [Ss]helf/g,         'the CorpoNation quarter'],
   [/the mid[- ]?[Ss]helf/g,       'the mid-sprawl'],
   [/lower [Ss]helf/g,             'the Gray Zone'],
-  [/upper [Ss]helf/g,             'the corponation quarter'],
+  [/upper [Ss]helf/g,             'the CorpoNation quarter'],
   // Shelf District (named location in documents)
   [/[Ss]helf [Dd]istrict/g,       'the Gray Zone district'],
   // Generic "the Shelf" / "The Shelf"

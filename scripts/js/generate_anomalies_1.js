@@ -1,4 +1,4 @@
-const fs = require('fs');
+﻿const fs = require('fs');
 const path = require('path');
 const crypto = require('crypto');
 
@@ -48,7 +48,7 @@ const anomalies = [
     author: "GLMZ Spectrum Regulatory Commission",
     date: "2200-01-14",
     classification: "restricted",
-    description: `For forty years, a single sustained tone has occupied 147.3 MHz on the GLMZ industrial band. It does not waver. It does not degrade. It broadcasts from somewhere in the corridor between GLMZ and the Gary ruins, but no triangulation effort has placed it closer than a twelve-kilometer radius. The signal is registered to no corponation, no municipal authority, no private license holder. It simply is.
+    description: `For forty years, a single sustained tone has occupied 147.3 MHz on the GLMZ industrial band. It does not waver. It does not degrade. It broadcasts from somewhere in the corridor between GLMZ and the Gary ruins, but no triangulation effort has placed it closer than a twelve-kilometer radius. The signal is registered to no CorpoNation, no municipal authority, no private license holder. It simply is.
 
 Twice per decade, on no discernible schedule, the tone ceases. In the silence — never longer than thirty seconds — a voice speaks. It gives a name and a number. The names belong to no one in any accessible database. The numbers correspond to nothing: not frequencies, not coordinates, not dates, not account identifiers. Then the tone resumes, as if it had never stopped.
 
@@ -77,7 +77,7 @@ The satellite it addressed — PAS-7, a communications relay placed in low Earth
 
 The scrapper, who has declined identification for obvious legal reasons, recorded the full 72 seconds on analog backup before his digital systems could be wiped. He has played it for three independent signals analysts. All three confirmed the handshake is genuine, uses correct protocol, and addresses hardware that is currently particulate matter in the upper atmosphere. The transmission has not repeated. The scrapper has monitored the frequency continuously for twenty-six days.
 
-He is selling the recording. Three buyers have made offers. Two of them are corponation intelligence divisions. The third used a name that appears in no registry. The scrapper has started sleeping in a different location each night.`,
+He is selling the recording. Three buyers have made offers. Two of them are CorpoNation intelligence divisions. The third used a name that appears in no registry. The scrapper has started sleeping in a different location each night.`,
     related_entities: ["Palladian Aerospace", "Lake Michigan", "Independent Scrapper Collective"],
     credibility: "disputed",
     story_hooks: [
@@ -91,7 +91,7 @@ He is selling the recording. Three buyers have made offers. Two of them are corp
   {
     name: "The Arcology Intrusion of September 12th",
     document_type: "incident_report",
-    author: "Tessera Corponation Internal Security",
+    author: "Tessera CorpoNation Internal Security",
     date: "2200-02-08",
     classification: "classified",
     description: `At 03:41:17 on September 12th, 2199, every display surface in Tessera Arcology Seven — public terminals, private screens, advertising panels, BCI overlay feeds, even the e-ink labels on vending machines — simultaneously displayed a human face. The face was synthetic. Not a photograph, not a deepfake, not a rendering. It existed in the uncanny space between all three: too perfect to be real, too imperfect to be generated.
@@ -101,7 +101,7 @@ The face remained for ninety seconds. It did not speak. It did not blink. It loo
 Tessera's network forensics team traced the intrusion to a routing node in sub-level maintenance. The node directed to a server farm in the Ohio badlands that had been physically destroyed — burned to the foundation — in a territorial dispute seven months prior. Satellite imagery confirms the facility is rubble. The routing logs are unambiguous. The signal came from a building that is not a building anymore.
 
 Security has classified the event and issued a gag order to all residents who filed reports. This has not prevented the face from appearing in graffiti across the arcology's lower levels. Someone is painting it from memory. The paintings are not quite identical to each other, but they are all clearly the same face. No one can agree on whether it looked sad.`,
-    related_entities: ["Tessera Corponation", "Arcology Seven", "Ohio Badlands"],
+    related_entities: ["Tessera CorpoNation", "Arcology Seven", "Ohio Badlands"],
     credibility: "suppressed",
     story_hooks: [
       "What was the synthetic face, and what was it listening for?",
@@ -193,7 +193,7 @@ This is not metaphorical. The memories contain verifiable details: names, places
 The channel does not broadcast the same memory to multiple users. Each listener receives something different, something that appears to be tailored — though to what criteria, we cannot determine. Some users have reported memories that are mundane: cooking a meal, reading to a child, walking through a city that no longer exists. Others have reported memories that are traumatic. Two users have required psychiatric intervention. One has not spoken since the experience.
 
 We have attempted to record the channel's output using standard BCI logging equipment. The logs show nothing — clean signal, no data. Whatever the channel transmits, it interfaces directly with the listener's neural substrate and bypasses every recording mechanism we have. The dead are sharing their memories with the living, and they are doing it through hardware that we built but do not understand.`,
-    related_entities: ["Tessera Corponation", "The Gulch", "GLMZ"],
+    related_entities: ["Tessera CorpoNation", "The Gulch", "GLMZ"],
     credibility: "suppressed",
     story_hooks: [
       "Where are the memories stored, and what mechanism delivers them?",
@@ -243,7 +243,7 @@ The body carried no identification. Clothing was generic, off-rack, available at
 We have no identity. We have no cause of death that makes mechanical sense — you do not die of simultaneous multi-organ failure without a trigger, and there is no trigger. We have no motive, no suspect, no witness, and no connection to any open case. The body has been in the morgue for three days. No one has claimed it. No missing persons report matches. As far as every database in the GLMZ is concerned, this man never existed.
 
 The word on the paper is not a note. It is not a signature. It is a label. Someone made this man and then unmade him, and when they were done, they marked their work. This is the fourth body recovered in the GLMZ in eighteen months with identical characteristics. We have not connected the cases officially because there is nothing to connect. Four men who never existed, finished by a process no one can describe.`,
-    related_entities: ["GLMZ", "The Gulch", "Tessera Corponation"],
+    related_entities: ["GLMZ", "The Gulch", "Tessera CorpoNation"],
     credibility: "verified",
     story_hooks: [
       "Who is manufacturing and disposing of these men?",
@@ -261,15 +261,15 @@ The word on the paper is not a note. It is not a signature. It is a label. Someo
     classification: "classified",
     description: `Female, age indeterminate, recovered from a sub-level access corridor in the Undercity beneath the Shelf District on September 2nd, 2199. Face burned with a chemical agent that destroyed all tissue below the epidermis — not fire, not acid as commonly understood, but something that targeted the specific cellular layers used by facial recognition systems. The burning was precise. Deliberate. Professional.
 
-Every label had been removed from her clothing. Not torn — removed with a seam ripper, carefully, leaving no residual thread. The clothing itself was high-quality but aggressively generic: manufactured by subsidiaries of at least four different corponations, purchased at different locations, paid for in untraceable quanta. Her pockets contained seven sheets of paper covered in cipher text using a system our cryptanalysis team has not been able to crack. The cipher is not complex. It is simply unfamiliar — built on rules we have not encountered before.
+Every label had been removed from her clothing. Not torn — removed with a seam ripper, carefully, leaving no residual thread. The clothing itself was high-quality but aggressively generic: manufactured by subsidiaries of at least four different CorpoNations, purchased at different locations, paid for in untraceable quanta. Her pockets contained seven sheets of paper covered in cipher text using a system our cryptanalysis team has not been able to crack. The cipher is not complex. It is simply unfamiliar — built on rules we have not encountered before.
 
 In the forty-eight hours following discovery, we identified nine separate identities associated with the body through cross-referencing biometric fragments with municipal surveillance archives. Nine names. Nine addresses. Nine employment histories. All flawless. All created within the last ninety days. Before that window, this woman — whoever she was — does not appear in any system anywhere.
 
-The investigation has generated more questions than evidence. She carried no weapons but showed training-consistent muscle development. She had no BCI implant but bore the surgical scars of having one removed. Her stomach contents indicated a last meal from a restaurant in the Circuit that serves corponation executives. Someone went to extraordinary lengths to make this woman invisible. They almost succeeded. The cipher notes remain unbroken. We believe they are the only record of who she actually worked for.`,
+The investigation has generated more questions than evidence. She carried no weapons but showed training-consistent muscle development. She had no BCI implant but bore the surgical scars of having one removed. Her stomach contents indicated a last meal from a restaurant in the Circuit that serves CorpoNation executives. Someone went to extraordinary lengths to make this woman invisible. They almost succeeded. The cipher notes remain unbroken. We believe they are the only record of who she actually worked for.`,
     related_entities: ["Shelf District", "Undercity", "The Circuit", "GLMZ"],
     credibility: "verified",
     story_hooks: [
-      "Which corponation employed the operative, and for what purpose?",
+      "Which CorpoNation employed the operative, and for what purpose?",
       "What do the cipher notes contain?",
       "Why was her BCI removed before death?"
     ],
@@ -404,7 +404,7 @@ The family's surviving relatives did not accept this finding. The fire burned ho
 In 2197, four years after the fire, the children's grandmother received a package at her home in the Shelf District. No return address. No postage. No delivery service log. It contained five photographs — printed on synthetic paper, high resolution — showing five children who appear to be the missing Osei-Tanaka children, aged approximately four years older than they were at the time of the fire. They are alive. They are standing in a room that does not match any known location. They are not smiling.
 
 The photographs have been analyzed by Tessera's imaging forensics lab. They are not generated. They are not composited. They are photographs of real children in a real room, taken by a real camera. The children's biometric estimates are consistent with the expected aging of the missing five. The grandmother has received three more sets of photographs since then, at irregular intervals. The children continue to age. They continue to not smile. No one can determine where they are or who is sending the pictures.`,
-    related_entities: ["The Gulch", "Shelf District", "Tessera Corponation", "GLMZ"],
+    related_entities: ["The Gulch", "Shelf District", "Tessera CorpoNation", "GLMZ"],
     credibility: "verified",
     story_hooks: [
       "Where are the five Osei-Tanaka children, and who has them?",
@@ -523,7 +523,7 @@ On January 19th, the victim's sister, Amala Osei-Nakamura, began receiving data 
 The fragments showed the last minutes of Lena's life. They showed her attacker. They showed his face. They showed his hands. They showed the room. They showed details that only someone present at the murder could have captured. The fragments arrived over a period of six weeks, each one slightly longer, slightly clearer, as if the dead woman's implant was reconstructing itself from nothing, piece by piece, to deliver testimony it should not be capable of giving.
 
 The accused, identified through the implant fragments, has been arrested. His legal team is challenging the admissibility of the evidence on the grounds that it was transmitted from hardware that contains no data, by a person who is dead, through a mechanism that does not exist. This is technically correct. The judge has deferred ruling. The fragments continue to arrive. Lena Osei-Nakamura has been dead for two months. She has not stopped testifying.`,
-    related_entities: ["The Circuit", "Tessera Corponation", "GLMZ"],
+    related_entities: ["The Circuit", "Tessera CorpoNation", "GLMZ"],
     credibility: "verified",
     story_hooks: [
       "How does a wiped implant transmit data it no longer contains?",
@@ -562,13 +562,13 @@ Seventeen residents reported explicit premonitions — dreams of collapse, of bu
     author: "GLMZ Inter-Corporate Liaison Office, Medical Division",
     date: "2200-01-18",
     classification: "classified",
-    description: `Between September 2199 and January 2200, eleven corponation diplomats stationed across four GLMZ cities — GLMZ, Cleveland Hub, Milwaukee Enclave, and Toledo Station — presented with identical neurological symptoms: persistent tinnitus, spatial disorientation, anomalous visual artifacts in the peripheral field, and progressive deterioration of short-term memory formation. Brain imaging reveals a consistent pattern of white matter lesions in the right temporal lobe, identical across all eleven patients to a degree that suggests a single causative mechanism.
+    description: `Between September 2199 and January 2200, eleven CorpoNation diplomats stationed across four GLMZ cities — GLMZ, Cleveland Hub, Milwaukee Enclave, and Toledo Station — presented with identical neurological symptoms: persistent tinnitus, spatial disorientation, anomalous visual artifacts in the peripheral field, and progressive deterioration of short-term memory formation. Brain imaging reveals a consistent pattern of white matter lesions in the right temporal lobe, identical across all eleven patients to a degree that suggests a single causative mechanism.
 
-No weapon has been identified. No toxin. No pathogen. No directed energy signature. The affected diplomats have no shared environment — they live in different cities, work in different buildings, eat at different facilities, and use BCI hardware from four different manufacturers. Three are augmented; eight are baseline. The only commonality is their role: all eleven serve as inter-corporate negotiators for the GLMZ Liaison Office, responsible for mediating disputes between corponations operating in the metropolitan zone.
+No weapon has been identified. No toxin. No pathogen. No directed energy signature. The affected diplomats have no shared environment — they live in different cities, work in different buildings, eat at different facilities, and use BCI hardware from four different manufacturers. Three are augmented; eight are baseline. The only commonality is their role: all eleven serve as inter-corporate negotiators for the GLMZ Liaison Office, responsible for mediating disputes between CorpoNations operating in the metropolitan zone.
 
 Each affected diplomat reports that the symptoms began on the same day — September 14th, 2199 — though they did not become aware of each other's conditions until medical records were cross-referenced in December. September 14th has no apparent significance. No event. No meeting. No shared communication. Eleven people in four cities began developing identical brain lesions on the same day for no reason anyone can identify.
 
-Three corponations have accused each other of deploying an undisclosed neuroweapon. All three deny it. Independent investigation supports the denials — no known technology can produce these symptoms at this range, across this many unconnected targets, without leaving a detectable signature. Something is damaging the brains of people who negotiate between corporations. It is doing it precisely, consistently, and impossibly. No one has claimed responsibility. No one has issued demands. No one knows if it will stop.`,
+Three CorpoNations have accused each other of deploying an undisclosed neuroweapon. All three deny it. Independent investigation supports the denials — no known technology can produce these symptoms at this range, across this many unconnected targets, without leaving a detectable signature. Something is damaging the brains of people who negotiate between corporations. It is doing it precisely, consistently, and impossibly. No one has claimed responsibility. No one has issued demands. No one knows if it will stop.`,
     related_entities: ["GLMZ", "GLMZ", "Cleveland Hub", "Milwaukee Enclave", "Toledo Station"],
     credibility: "suppressed",
     story_hooks: [
@@ -615,7 +615,7 @@ The euphoria is the part that concerns us. It is not the dazed relief of someone
 Environmental testing has found nothing. Carbon monoxide: normal. Air quality: normal. Electromagnetic environment: normal. Water supply: normal. Building materials: standard. We have tested forty-seven potential environmental factors and found forty-seven normal results. The Tessera environmental consultants who own the building have attributed the episodes to mass psychogenic response and recommended stress counseling. The episodes continue.
 
 There is one detail that does not appear in the official report. During episodes, the affected residents' BCI implants — when present — log a brief burst of network activity on a channel that is not allocated to any service. The burst lasts exactly as long as the unconsciousness. The data transmitted is encrypted with a key that matches no known algorithm. When the residents wake, the logs are clean. We only caught it because one of our monitoring devices was set to raw packet capture during an episode. Something is putting these people to sleep, giving them bliss, and using their neural hardware to send messages while they dream. We have not told them this.`,
-    related_entities: ["Shelf District", "Tower 19", "Tessera Corponation", "GLMZ"],
+    related_entities: ["Shelf District", "Tower 19", "Tessera CorpoNation", "GLMZ"],
     credibility: "verified",
     story_hooks: [
       "What is using sleeping residents as relay nodes?",
@@ -683,9 +683,9 @@ The shard is currently held in a secure facility in the Wisconsin borderlands. I
     classification: "classified",
     description: `Object AK-7 was recovered from a pre-Collapse ruin in the Ohio badlands in 2196 by a Palladian archaeological survey team. It is a mechanical device, approximately 40 centimeters in diameter, constructed from an alloy that our metallurgists classify as "impossible" — it contains element ratios that do not occur in any known manufacturing process and that thermodynamics suggests should not be stable at room temperature.
 
-The device is a clockwork mechanism of extraordinary complexity. It contains over 4,000 interlocking gears, cams, and differential assemblies, all machined to tolerances that exceed our current manufacturing capability. When operated — by turning a central crank — it produces output on a series of rotating dials. The output is numerical. The numbers correspond to two things: orbital mechanics calculations for objects in the inner solar system, and the outcomes of corponation board elections across the GLMZ.
+The device is a clockwork mechanism of extraordinary complexity. It contains over 4,000 interlocking gears, cams, and differential assemblies, all machined to tolerances that exceed our current manufacturing capability. When operated — by turning a central crank — it produces output on a series of rotating dials. The output is numerical. The numbers correspond to two things: orbital mechanics calculations for objects in the inner solar system, and the outcomes of CorpoNation board elections across the GLMZ.
 
-The orbital calculations are accurate to seven decimal places for any date between 2000 and 2400 CE. The election predictions have been tested against historical records from 2150 to 2200. They are correct. Every one. Fifty years of corporate election outcomes, encoded in a mechanical device recovered from a ruin that carbon-dating places at approximately 200 years old — built, according to every dating method we possess, in the early 2000s, before the corponations existed.
+The orbital calculations are accurate to seven decimal places for any date between 2000 and 2400 CE. The election predictions have been tested against historical records from 2150 to 2200. They are correct. Every one. Fifty years of corporate election outcomes, encoded in a mechanical device recovered from a ruin that carbon-dating places at approximately 200 years old — built, according to every dating method we possess, in the early 2000s, before the CorpoNations existed.
 
 Palladian has not disclosed this device. The implications are commercially sensitive. A machine that predicts corporate elections two hundred years in advance is either a weapon or a miracle, and Palladian's board is not comfortable with either. The device is stored in a vault in Palladian Tower. It continues to function. The crank continues to turn. The dials continue to produce numbers that we are increasingly afraid to check.`,
     related_entities: ["Palladian", "Ohio Badlands"],
@@ -710,13 +710,13 @@ The pipes range from 2 centimeters to 40 centimeters in diameter. They extend ve
 
 The rock formation has been core-sampled and independently dated by four laboratories. The results are consistent: the rock formed around the pipes. The pipes were there first. This places their origin at a minimum of 380 million years ago, predating not only metallurgy but multicellular life on land. The alloy composition does not match any naturally occurring mineral. It does not match any manufactured alloy. It is, by every analytical measure available, artificial and older than vertebrate evolution.
 
-The survey team has been instructed to classify the site and restrict access. Three corponations have filed competing claims on the mineral rights to the surrounding area, none of them apparently aware of the pipes' age. We have not corrected this misunderstanding. The pipes continue to emit their trace radiation. The ones that extend into the lake continue to function — water samples drawn from the emergence points show elevated concentrations of elements that do not exist in Lake Huron's chemistry. Something is flowing through them. Something has been flowing through them for longer than there have been things with eyes to see them.`,
+The survey team has been instructed to classify the site and restrict access. Three CorpoNations have filed competing claims on the mineral rights to the surrounding area, none of them apparently aware of the pipes' age. We have not corrected this misunderstanding. The pipes continue to emit their trace radiation. The ones that extend into the lake continue to function — water samples drawn from the emergence points show elevated concentrations of elements that do not exist in Lake Huron's chemistry. Something is flowing through them. Something has been flowing through them for longer than there have been things with eyes to see them.`,
     related_entities: ["Lake Huron", "Canadian Border Zone", "GLMZ"],
     credibility: "verified",
     story_hooks: [
       "What created metal pipes 380 million years ago?",
       "What is flowing through the pipes, and where does it go?",
-      "What will the corponations do when they discover the pipes' true age?"
+      "What will the CorpoNations do when they discover the pipes' true age?"
     ],
     tags: ["document", "anomaly", "inexplicable", "new_weird", "artifact", "geological", "lake_huron", "pipes", "ancient"]
   },
@@ -729,9 +729,9 @@ The survey team has been instructed to classify the site and restrict access. Th
     classification: "classified",
     description: `On March 22nd, 2199, a man presenting identification under the name Karel Abiodun-Voss arrived at the GLMZ Southern Checkpoint and submitted to standard biometric processing. His documents were flawless — corporate citizenship papers issued by Heirloom Industries, employment records, transit history, residential registration. Every document passed automated and manual verification. The formats were correct. The security features were genuine. The watermarks were authentic.
 
-Heirloom Industries does not exist. There is no corponation, subsidiary, holding company, shell entity, or registered business of any kind using that name, in the GLMZ or in any global registry our systems can access. The residential address on his registration — 1440 Lakeview Terrace, Block 7, Northern Shelf — corresponds to an empty lot that municipal records indicate has been vacant since 2171. His employment records reference a facility on East Industrial Drive that, according to satellite imagery, is the middle of Lake Michigan.
+Heirloom Industries does not exist. There is no CorpoNation, subsidiary, holding company, shell entity, or registered business of any kind using that name, in the GLMZ or in any global registry our systems can access. The residential address on his registration — 1440 Lakeview Terrace, Block 7, Northern Shelf — corresponds to an empty lot that municipal records indicate has been vacant since 2171. His employment records reference a facility on East Industrial Drive that, according to satellite imagery, is the middle of Lake Michigan.
 
-The man was detained for additional screening. He was cooperative, polite, and genuinely confused by the questions. He insisted that Heirloom Industries was a mid-tier manufacturing corponation with 40,000 employees and that he had worked there for twelve years. He described his daily commute in detail. He described his office, his colleagues, his supervisor. He described a city that is not GLMZ but occupies the same geography — a city where the Shelf District is called the Terrace and where the Spine was never built.
+The man was detained for additional screening. He was cooperative, polite, and genuinely confused by the questions. He insisted that Heirloom Industries was a mid-tier manufacturing CorpoNation with 40,000 employees and that he had worked there for twelve years. He described his daily commute in detail. He described his office, his colleagues, his supervisor. He described a city that is not GLMZ but occupies the same geography — a city where the Shelf District is called the Terrace and where the Spine was never built.
 
 He was placed in a holding cell at 16:40. At 06:00 the following morning, the cell was empty. The door had not been opened — the access log shows no entry between lockdown and the morning check. The cell's camera shows the man sitting on the bench at 02:14, and the bench empty at 02:15. One frame to the next. His documents, which had been secured in an evidence locker, were also gone. The locker was still sealed.`,
     related_entities: ["Ferrogate Transit", "GLMZ", "Shelf District"],
@@ -843,7 +843,7 @@ When multiple boulders are struck in sequence, the tones harmonize. Not randomly
   {
     name: "Ball Lightning in Sealed Arcology Sectors",
     document_type: "incident_report",
-    author: "Tessera Corponation Facilities Management",
+    author: "Tessera CorpoNation Facilities Management",
     date: "2199-10-19",
     classification: "restricted",
     description: `Since 2195, Tessera Arcology Seven has experienced 142 documented incidents of luminous spherical phenomena — colloquially referred to as ball lightning by residents, though the designation is inaccurate. Ball lightning is an atmospheric phenomenon. These objects appear inside sealed, climate-controlled sectors with no atmospheric variability. They drift through corridors, pass through walls, and dissipate after periods ranging from twelve seconds to seven minutes. They emit light in a spectrum that does not match any known plasma state.
@@ -853,7 +853,7 @@ The objects are not consistent in size — ranging from 8 centimeters to nearly 
 The phenomena correlate with grid surges in the arcology's power distribution system. Every documented appearance occurs within 90 seconds of a measurable power fluctuation. The fluctuations are small — within normal operational variance — and do not trigger any alarm or safety system. Whether the surges cause the phenomena or the phenomena cause the surges has not been determined.
 
 Capture has been attempted eleven times using electromagnetic containment, Faraday enclosures, and physical barriers. The objects pass through all containment methods as if they are not there. They interact with the visual spectrum — they emit visible light, they cast shadows that move independently of the light source — but they do not interact with matter. They are things that can be seen but not touched, that navigate intelligently through a sealed building, and that vanish leaving no residue, no burn mark, no electromagnetic trace. Tessera has stopped attempting capture and begun attempting to pretend they don't exist.`,
-    related_entities: ["Tessera Corponation", "Arcology Seven", "GLMZ"],
+    related_entities: ["Tessera CorpoNation", "Arcology Seven", "GLMZ"],
     credibility: "verified",
     story_hooks: [
       "Are the spheres intelligent, or do they merely simulate intelligence?",
@@ -873,9 +873,9 @@ Capture has been attempted eleven times using electromagnetic containment, Farad
 
 There is no crater. An explosion capable of leveling 800 square kilometers would leave a crater. The ground at the epicenter is flat — not depressed, not elevated, not disturbed in the way that explosive force disturbs earth. The trees fell outward, suggesting a blast wave, but the blast wave left no thermal signature. Nothing burned. The destruction was purely mechanical — force without heat, pressure without ignition.
 
-No weapon system in any known corponation arsenal is capable of producing this effect. Nuclear detonation would leave radiation. Kinetic bombardment would leave a crater. Conventional explosives would leave chemical residue. Directed energy would leave thermal scarring. None of these signatures are present. The Kankakee event produced the destructive yield of a tactical nuclear weapon with none of the physics that should accompany such a yield.
+No weapon system in any known CorpoNation arsenal is capable of producing this effect. Nuclear detonation would leave radiation. Kinetic bombardment would leave a crater. Conventional explosives would leave chemical residue. Directed energy would leave thermal scarring. None of these signatures are present. The Kankakee event produced the destructive yield of a tactical nuclear weapon with none of the physics that should accompany such a yield.
 
-No corponation has claimed responsibility. No corponation has been credibly accused. The GLMZ Joint Military Affairs Committee has investigated the event for twelve years and produced a report that, in its classified summary, uses the phrase "cause unknown" fourteen times. The affected area remains empty. The flattened trees have not been cleared. They lie where they fell, pointing away from a center that contains nothing — no residue, no artifact, no explanation. Something hit Kankakee. We do not know what it was, where it came from, or whether it will happen again.`,
+No CorpoNation has claimed responsibility. No CorpoNation has been credibly accused. The GLMZ Joint Military Affairs Committee has investigated the event for twelve years and produced a report that, in its classified summary, uses the phrase "cause unknown" fourteen times. The affected area remains empty. The flattened trees have not been cleared. They lie where they fell, pointing away from a center that contains nothing — no residue, no artifact, no explanation. Something hit Kankakee. We do not know what it was, where it came from, or whether it will happen again.`,
     related_entities: ["Kankakee", "GLMZ", "Illinois"],
     credibility: "suppressed",
     story_hooks: [

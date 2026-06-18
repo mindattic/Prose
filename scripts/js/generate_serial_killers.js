@@ -1,4 +1,4 @@
-const fs = require('fs');
+﻿const fs = require('fs');
 const path = require('path');
 
 const OUTPUT_DIR = path.join(__dirname, '..', 'engine_data', 'documents');
@@ -423,7 +423,7 @@ The guards have been rotated every thirty days since her incarceration, on the r
 
 Soren Okafor-Lindström was not born a monster. He was made into one, and whether the making was accident or design remains a matter of scientific debate.
 
-Okafor-Lindström was a test subject. In 2168, he volunteered for a clinical trial conducted by Panacea Genomics — one of the mid-tier biotech companies that operates in the shadow of the major corponations, cutting corners and taking risks that the Tier 1 firms won't touch. The trial was for an experimental geneware compound designated PG-7714, intended to enhance the human body's regenerative capacity. Heal faster. Recover from injuries that would cripple an unmodified human. Regrow damaged tissue. The military applications were obvious. The civilian applications were lucrative.
+Okafor-Lindström was a test subject. In 2168, he volunteered for a clinical trial conducted by Panacea Genomics — one of the mid-tier biotech companies that operates in the shadow of the major CorpoNations, cutting corners and taking risks that the Tier 1 firms won't touch. The trial was for an experimental geneware compound designated PG-7714, intended to enhance the human body's regenerative capacity. Heal faster. Recover from injuries that would cripple an unmodified human. Regrow damaged tissue. The military applications were obvious. The civilian applications were lucrative.
 
 The trial went wrong.
 
@@ -1448,7 +1448,7 @@ Whether this was motivated by a twisted ideology (forcing augmentation on the un
 
 The case was investigated by the fledgling Meridian Metropolitan Police, whose resources in the 2110s were minimal. The Underworld crime scene was contaminated by scavengers before investigators arrived. The salvaged hardware yielded no usable forensic evidence — it had been handled by dozens of people before reaching the Butcher's workshop. The victims, mostly unregistered Shelf transients, were difficult to identify and harder to trace.
 
-The case went cold in 2119. It has been reviewed three times since, most recently in 2195, with no new leads. The Basement Butcher remains one of the founding nightmares of GLMZ — a reminder that the city's first decade was not the gleaming origin story the corponations prefer to tell, but something darker, cruder, and drenched in blood.
+The case went cold in 2119. It has been reviewed three times since, most recently in 2195, with no new leads. The Basement Butcher remains one of the founding nightmares of GLMZ — a reminder that the city's first decade was not the gleaming origin story the CorpoNations prefer to tell, but something darker, cruder, and drenched in blood.
 
 ---
 
@@ -2065,7 +2065,7 @@ The eye stares up from the map. It has been staring for forty-three years. Nobod
 
 ## Background
 
-Priya Volkov-Acheson was a street medic in the Narrows — one of the informal healthcare providers who fill the gap between the Shelf's inadequate medical infrastructure and the corponations' premium services that most Shelf residents cannot afford. She treated wounds, managed infections, distributed basic medications, and performed minor procedures in her apartment-clinic with equipment she had assembled from salvaged medical hardware and stolen pharmaceutical supplies.
+Priya Volkov-Acheson was a street medic in the Narrows — one of the informal healthcare providers who fill the gap between the Shelf's inadequate medical infrastructure and the CorpoNations' premium services that most Shelf residents cannot afford. She treated wounds, managed infections, distributed basic medications, and performed minor procedures in her apartment-clinic with equipment she had assembled from salvaged medical hardware and stolen pharmaceutical supplies.
 
 She was good at her job. She saved lives. She also ended them.
 

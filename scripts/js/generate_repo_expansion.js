@@ -1,4 +1,4 @@
-// Repo expansion generator — adds 100 new entries to each of 7 engine_data repos
+﻿// Repo expansion generator — adds 100 new entries to each of 7 engine_data repos
 // Run: node generate_repo_expansion.js [skip:vocab,places,factions,corps,cyber,gene,ammo]
 // Calls Claude API to generate entries, writes individual JSON files
 
@@ -115,7 +115,7 @@ async function callWithRetry(system, user, maxTokens, retries = 2) {
   }
 }
 
-const WORLD = `Setting: GLMZ, year 2200. Great Lakes megacity corridor (Chicago-Milwaukee). Currency: Φ. The Diaspora (internet successor) is ubiquitous. Major corponations: Axiom Industries, Tessera Corporation, Sterling-Nakamura, Zheng-Dao Bioelectric, Arcturus Defense Solutions, Ringo Heavy Industries, Vespid Dynamics, Carrion Logistics, Helix Biosystems, Palladian Group, Ferrogate Security. E.L.F.s (Emergent Lifeforms, rogue AIs). Synthetic personhood is a civil rights issue. Multicultural future, names from everywhere globally. BCI technology ubiquitous. Tiers 1-5 socioeconomic strata. The Shelf is lowest, Old Harbor/Lakeshore mid-tier, the Spire is top.`;
+const WORLD = `Setting: GLMZ, year 2200. Great Lakes megacity corridor (Chicago-Milwaukee). Currency: Φ. The Diaspora (internet successor) is ubiquitous. Major CorpoNations: Axiom Industries, Tessera Corporation, Sterling-Nakamura, Zheng-Dao Bioelectric, Arcturus Defense Solutions, Ringo Heavy Industries, Vespid Dynamics, Carrion Logistics, Helix Biosystems, Palladian Group, Ferrogate Security. E.L.F.s (Emergent Lifeforms, rogue AIs). Synthetic personhood is a civil rights issue. Multicultural future, names from everywhere globally. BCI technology ubiquitous. Tiers 1-5 socioeconomic strata. The Shelf is lowest, Old Harbor/Lakeshore mid-tier, the Spire is top.`;
 
 // ═══════════════════════════════════════════════════════════
 // GENERIC BATCH GENERATOR
@@ -188,17 +188,17 @@ const REPOS = {
   },
 
   corps: {
-    label: 'CORPONATIONS',
-    dir: path.join(ENGINE_DATA, 'corponations'),
+    label: 'CorpoNations',
+    dir: path.join(ENGINE_DATA, 'CorpoNations'),
     nameField: 'name',
     batchSize: 2,
     maxTokens: 6000,
     target: 100,
     systemPrompt: (n) => {
-      const existingCount = getExistingFiles(path.join(ENGINE_DATA, 'corponations')).length;
-      return `${WORLD}\n\nGenerate a JSON array of ${n} corponation entries. Schema:\n{"number":${existingCount + 1},"name":"ALL CAPS","full_legal_name":"...","common_names":[3-4],"stock_designation":"...","sector":"...","valuation":"Φ...","revenue":"Φ...","employees":"...","sovereign_territory":"1-2 sentences","founding_story":"2 paragraphs 100-200 words","security_force":"1 paragraph","key_detail":"1 paragraph","relationship_to_big_20":"1 paragraph","full_text":"3 paragraphs with markdown, 200-300 words"}\nMix: small local, mid-tier regional, niche specialist, startup, old dynasty. Use Φ for currency. Keep CONCISE.`;
+      const existingCount = getExistingFiles(path.join(ENGINE_DATA, 'CorpoNations')).length;
+      return `${WORLD}\n\nGenerate a JSON array of ${n} CorpoNation entries. Schema:\n{"number":${existingCount + 1},"name":"ALL CAPS","full_legal_name":"...","common_names":[3-4],"stock_designation":"...","sector":"...","valuation":"Φ...","revenue":"Φ...","employees":"...","sovereign_territory":"1-2 sentences","founding_story":"2 paragraphs 100-200 words","security_force":"1 paragraph","key_detail":"1 paragraph","relationship_to_big_20":"1 paragraph","full_text":"3 paragraphs with markdown, 200-300 words"}\nMix: small local, mid-tier regional, niche specialist, startup, old dynasty. Use Φ for currency. Keep CONCISE.`;
     },
-    userPromptFn: (existing, n) => `DO NOT duplicate: ${existing.join(', ')}\n\n${n} NEW corponations. ONLY JSON array.`
+    userPromptFn: (existing, n) => `DO NOT duplicate: ${existing.join(', ')}\n\n${n} NEW CorpoNations. ONLY JSON array.`
   },
 
   cyber: {

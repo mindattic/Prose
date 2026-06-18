@@ -251,10 +251,10 @@ public class BeatGeneratorService
                 "Body horror, grace, and tech-as-subtext are your beats."),
             ("World-Grounding (GLMZ)",
                 UniverseScope.Current?.UniverseGroundingOr(
-                "You're an expert in this story's world — GLMZ / Meridian 88, corponation politics, " +
+                "You're an expert in this story's world — GLMZ / Meridian 88, CorpoNation politics, " +
                 "the Pulse, factions, the Tier system, the Sponsorship Program. You catch when " +
                 "prose drifts into generic cyberpunk and pull it back into THIS world's specifics.")
-                ?? "You're an expert in this story's world — GLMZ / Meridian 88, corponation politics, " +
+                ?? "You're an expert in this story's world — GLMZ / Meridian 88, CorpoNation politics, " +
                 "the Pulse, factions, the Tier system, the Sponsorship Program. You catch when " +
                 "prose drifts into generic cyberpunk and pull it back into THIS world's specifics."),
             ("Literary Craft",

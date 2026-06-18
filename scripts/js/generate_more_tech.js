@@ -1,4 +1,4 @@
-const fs = require('fs');
+﻿const fs = require('fs');
 const path = require('path');
 
 const outDir = path.join(__dirname, '..', 'engine_data', 'technology');
@@ -47,7 +47,7 @@ const techs = [
     developers: ["ZHENG-DAO HEAVY INDUSTRIES"],
     base_technologies: ["Superconducting graviton emitter arrays", "Cryogenic field stabilization", "Gravitational vector control mathematics"],
     enables: ["Localized gravity manipulation", "Gravitational lensing for defense systems", "Zero-gravity manufacturing environments", "Kinetic energy weapons through gravity acceleration"],
-    social_impact: "The existence of practical gravity manipulation has shattered fundamental assumptions about physics-based limitations in engineering, architecture, and warfare. Zheng-Dao's monopoly on the technology gives them leverage that transcends conventional corporate competition — they can literally change the rules of physics within their operational sphere. Other corponations are investing heavily in alternative approaches, but Zheng-Dao's 15-year head start in graviton emitter fabrication creates a moat that may be insurmountable.",
+    social_impact: "The existence of practical gravity manipulation has shattered fundamental assumptions about physics-based limitations in engineering, architecture, and warfare. Zheng-Dao's monopoly on the technology gives them leverage that transcends conventional corporate competition — they can literally change the rules of physics within their operational sphere. Other CorpoNations are investing heavily in alternative approaches, but Zheng-Dao's 15-year head start in graviton emitter fabrication creates a moat that may be insurmountable.",
     story_hooks: [
       "A Zheng-Dao graviton emitter prototype has been stolen and the thief does not understand the cryogenic requirements — the emitter is warming up and when it reaches critical temperature, the gravitational field it is generating will collapse catastrophically.",
       "A physicist outside Zheng-Dao has independently derived the mathematics for graviton manipulation and published them openly — Zheng-Dao's monopoly is threatened and they are willing to do anything to suppress the work."

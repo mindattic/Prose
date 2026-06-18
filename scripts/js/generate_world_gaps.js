@@ -1,4 +1,4 @@
-const fs = require('fs');
+﻿const fs = require('fs');
 const path = require('path');
 const crypto = require('crypto');
 
@@ -170,7 +170,7 @@ writeDoc({
   related_entities: ["meridian_88"],
   credibility: "verified",
   story_hooks: [
-    "Several corponations have offered to buy Haru's soil — real living soil is worth more per kilogram than most augmentations",
+    "Several CorpoNations have offered to buy Haru's soil — real living soil is worth more per kilogram than most augmentations",
     "Haru's tomatoes have become an underground currency among Tier 4 and 5 food enthusiasts, creating an economy she neither controls nor profits from"
   ],
   tags: ["document", "food", "farming", "soil", "profile", "agriculture", "artisan", "eccentric", "tier_3"],
@@ -282,11 +282,11 @@ If you eat Tier 5 food regularly, you are not just better nourished — you are 
 
 ## The Legal Framework
 
-Here is the elegant part: none of this is illegal. The compounds are classified under GLMZ food regulation as "bioactive flavor enhancers" — a category that exists in a regulatory gap between food additives and pharmaceuticals. Flavor enhancers are subject to food safety standards (non-toxic, non-allergenic) but not pharmaceutical oversight (no efficacy testing, no disclosure requirements, no prescription framework). The classification was established in 2186 by a regulatory committee whose members included representatives from three corponations that now manufacture Tier 5 food products.
+Here is the elegant part: none of this is illegal. The compounds are classified under GLMZ food regulation as "bioactive flavor enhancers" — a category that exists in a regulatory gap between food additives and pharmaceuticals. Flavor enhancers are subject to food safety standards (non-toxic, non-allergenic) but not pharmaceutical oversight (no efficacy testing, no disclosure requirements, no prescription framework). The classification was established in 2186 by a regulatory committee whose members included representatives from three CorpoNations that now manufacture Tier 5 food products.
 
 ## Who Knows
 
-The food manufacturers know. The corponations whose executives eat Tier 5 food know — it's why executive dining is never outsourced and always in-house. The regulatory body knows but has no mandate to act. The general public does not know, because the compounds are undetectable by taste and because nobody in Tier 1 has access to the analytical chemistry equipment needed to identify them. This article, if published, will change that. We anticipate significant legal and extralegal efforts to prevent its distribution.`
+The food manufacturers know. The CorpoNations whose executives eat Tier 5 food know — it's why executive dining is never outsourced and always in-house. The regulatory body knows but has no mandate to act. The general public does not know, because the compounds are undetectable by taste and because nobody in Tier 1 has access to the analytical chemistry equipment needed to identify them. This article, if published, will change that. We anticipate significant legal and extralegal efforts to prevent its distribution.`
 });
 
 writeDoc({
@@ -307,7 +307,7 @@ writeDoc({
     "Ringo's contracts with the city include a clause that prevents GLMZ from developing internal agricultural capacity — the city literally cannot legally grow its own food",
     "A former Ringo logistics manager is willing to testify about deliberate supply throttling used to manipulate food prices"
   ],
-  tags: ["document", "food", "ringo", "monopoly", "corponation", "supply_chain", "investigative", "economics"],
+  tags: ["document", "food", "ringo", "monopoly", "CorpoNation", "supply_chain", "investigative", "economics"],
   body: `# The Ringo Food Monopoly and What It Means for Your Dinner
 
 ## The Numbers
@@ -664,7 +664,7 @@ The assessments do not test: social navigation, physical problem-solving, resour
 
 ## The Outcome
 
-By age sixteen, the educational pathway has sorted children into tracks that correlate almost perfectly with birth tier. Tier 5 children enter advanced programs that lead to corponation management, research, and governance roles. Tier 1 children enter vocational programs that lead to maintenance, service, and manual labor. Exceptions exist — the system points to them constantly as proof of meritocracy. The exceptions prove nothing except that extraordinary talent can sometimes overcome systematic disadvantage. Ordinary talent cannot. And most talent is ordinary. That is what ordinary means.`
+By age sixteen, the educational pathway has sorted children into tracks that correlate almost perfectly with birth tier. Tier 5 children enter advanced programs that lead to CorpoNation management, research, and governance roles. Tier 1 children enter vocational programs that lead to maintenance, service, and manual labor. Exceptions exist — the system points to them constantly as proof of meritocracy. The exceptions prove nothing except that extraordinary talent can sometimes overcome systematic disadvantage. Ordinary talent cannot. And most talent is ordinary. That is what ordinary means.`
 });
 
 writeDoc({
@@ -704,7 +704,7 @@ But new songs have emerged — lullabies written for children of the BCI age. "Q
 
 There is "Chrome Bones, Soft Heart," sung in the Shelf blocks, a song about a child who is part machine and part miracle and all loved. There is "The Weight of the World Is Not Yours Yet," which is exactly what it sounds like — a plea to let childhood last a little longer before the city's demands arrive. There is "Counting Down to Morning," which Tier 1 parents sing because morning means the night is over and the night in a Shelf hab unit is long and close and sometimes frightening for a small person.
 
-The songs are not archived. They are not on the feed. They exist in the space between a parent's mouth and a child's ear, in the vibration of a chest against a small back, in the specific and unrepeatable frequency of a particular human voice singing a particular melody to a particular child in a particular moment. The BCI cannot record what happens in this space — not because of technical limitation, but because parents disable recording at bedtime. This is the one moment of the day that belongs to no system. The corponations cannot monetize it. The feed cannot optimize it. It is a voice in the dark, and it is enough.
+The songs are not archived. They are not on the feed. They exist in the space between a parent's mouth and a child's ear, in the vibration of a chest against a small back, in the specific and unrepeatable frequency of a particular human voice singing a particular melody to a particular child in a particular moment. The BCI cannot record what happens in this space — not because of technical limitation, but because parents disable recording at bedtime. This is the one moment of the day that belongs to no system. The CorpoNations cannot monetize it. The feed cannot optimize it. It is a voice in the dark, and it is enough.
 
 ## Why It Matters
 
@@ -910,7 +910,7 @@ writeDoc({
   related_entities: ["meridian_88", "sterling_nakamura", "lazarus_group"],
   credibility: "verified",
   story_hooks: [
-    "A legal loophole allows corponations to claim BCI data of employees who die without a digital will, creating an incentive to not inform workers of their posthumous data rights",
+    "A legal loophole allows CorpoNations to claim BCI data of employees who die without a digital will, creating an incentive to not inform workers of their posthumous data rights",
     "The data of the deceased is one of the fastest-growing asset classes in GLMZ's economy"
   ],
   tags: ["document", "death", "data", "bci", "inheritance", "digital_estate", "legal", "guide"],
@@ -1048,7 +1048,7 @@ writeDoc({
   related_entities: ["meridian_88", "sterling_nakamura", "lazarus_group"],
   credibility: "verified",
   story_hooks: [
-    "A neural will was challenged in court by a corponation that claimed the employee's BCI data was corporate intellectual property, not personal data",
+    "A neural will was challenged in court by a CorpoNation that claimed the employee's BCI data was corporate intellectual property, not personal data",
     "Shelf legal aid clinics report that 90% of Tier 1 residents are unaware they can file a neural will"
   ],
   tags: ["document", "death", "legal", "neural_will", "bci", "data", "inheritance", "guide", "digital_estate"],
@@ -1078,7 +1078,7 @@ The filing is simple. Access any legal services terminal (available in all tier 
 
 ## Common Mistakes
 
-Filing a directive that conflicts with your employment contract. Many corponation employment agreements include clauses granting the employer rights to BCI data generated during work hours. Your neural will cannot override a valid contract. Review your employment terms before filing.
+Filing a directive that conflicts with your employment contract. Many CorpoNation employment agreements include clauses granting the employer rights to BCI data generated during work hours. Your neural will cannot override a valid contract. Review your employment terms before filing.
 
 Failing to update after major life changes. A directive written before a marriage, divorce, or estrangement may designate someone you no longer want to have access to your most intimate data. Update annually at minimum.
 
@@ -1478,7 +1478,7 @@ writeDoc({
   related_entities: ["meridian_88"],
   credibility: "verified",
   story_hooks: [
-    "Crosspoint's democratic system is viewed with suspicion by GLMZ's corponation governance — the idea that residents could vote on corporate policy is considered dangerously unstable",
+    "Crosspoint's democratic system is viewed with suspicion by GLMZ's CorpoNation governance — the idea that residents could vote on corporate policy is considered dangerously unstable",
     "Rumors persist of a seventh city-state that doesn't appear on any official registry and doesn't maintain diplomatic contact"
   ],
   tags: ["document", "outside_world", "cities", "governance", "politics", "overview", "city_states"],
@@ -1490,7 +1490,7 @@ GLMZ is not the only city-state in the former continental United States. It is t
 
 ## Crosspoint (340km East)
 
-Population: 2.1 million. Crosspoint was built on the ruins of Detroit and is the second-largest city in the region. Its defining feature: democratic governance. Crosspoint is administered by an elected council, not corporate authority. Residents vote on policy, budget allocation, and regulatory frameworks through BCI-direct referendum. The system is slower than corporate governance — decisions that GLMZ's corponations make in hours take Crosspoint weeks of public debate. It is also, by most quality-of-life metrics, more equitable. Crosspoint's tier structure has three levels instead of five, and the gap between top and bottom is roughly half of GLMZ's. The trade-off: slower infrastructure development, less economic growth, and a persistent brain drain as ambitious residents leave for the higher salaries of GLMZ's corporate economy.
+Population: 2.1 million. Crosspoint was built on the ruins of Detroit and is the second-largest city in the region. Its defining feature: democratic governance. Crosspoint is administered by an elected council, not corporate authority. Residents vote on policy, budget allocation, and regulatory frameworks through BCI-direct referendum. The system is slower than corporate governance — decisions that GLMZ's CorpoNations make in hours take Crosspoint weeks of public debate. It is also, by most quality-of-life metrics, more equitable. Crosspoint's tier structure has three levels instead of five, and the gap between top and bottom is roughly half of GLMZ's. The trade-off: slower infrastructure development, less economic growth, and a persistent brain drain as ambitious residents leave for the higher salaries of GLMZ's corporate economy.
 
 ## Cascadia Nexus (2,800km West)
 
@@ -1498,7 +1498,7 @@ Population: 3.8 million. Built in the Pacific Northwest, Cascadia Nexus is the e
 
 ## New Texarkana (1,900km South)
 
-Population: 4.2 million. New Texarkana is GLMZ without the pretense. Corporate sovereignty is explicit — the city is owned and operated by a single corponation, Sovereign Industrial, which provides all services, employs 80% of the population, and controls all infrastructure. There is no municipal authority, no public services, no pretense of shared governance. Residents are employees. Non-employees are visitors with time-limited permits. The system is brutally efficient, economically productive, and — according to every external assessment — the least free human settlement in the former United States. It is also the wealthiest per capita, because when a single entity controls all economic activity, efficiency is easy.
+Population: 4.2 million. New Texarkana is GLMZ without the pretense. Corporate sovereignty is explicit — the city is owned and operated by a single CorpoNation, Sovereign Industrial, which provides all services, employs 80% of the population, and controls all infrastructure. There is no municipal authority, no public services, no pretense of shared governance. Residents are employees. Non-employees are visitors with time-limited permits. The system is brutally efficient, economically productive, and — according to every external assessment — the least free human settlement in the former United States. It is also the wealthiest per capita, because when a single entity controls all economic activity, efficiency is easy.
 
 ## Haven Collective (1,200km Southeast)
 
@@ -1524,7 +1524,7 @@ writeDoc({
   related_entities: ["meridian_88"],
   credibility: "field_report",
   story_hooks: [
-    "The quarantine designation for some territories is maintained not because of genuine hazard but because the territories contain resources that corponations want to exploit without public oversight",
+    "The quarantine designation for some territories is maintained not because of genuine hazard but because the territories contain resources that CorpoNations want to exploit without public oversight",
     "Residents of quarantine territories have developed biological adaptations — through natural selection or unauthorized geneware — that make them increasingly different from city populations"
   ],
   tags: ["document", "outside_world", "quarantine", "territory", "survival", "unauthorized", "investigation", "ecology"],
@@ -1608,11 +1608,11 @@ writeDoc({
   date: "2199-12-15",
   classification: "public",
   category: "Outside World",
-  description: "Overview of small settlements in the shadow of major cities that don't belong to any corponation.",
+  description: "Overview of small settlements in the shadow of major cities that don't belong to any CorpoNation.",
   related_entities: ["meridian_88"],
   credibility: "verified",
   story_hooks: [
-    "A satellite town has developed technology that GLMZ's corponations want, creating a power dynamic that threatens the town's independence",
+    "A satellite town has developed technology that GLMZ's CorpoNations want, creating a power dynamic that threatens the town's independence",
     "Satellite towns serve as a pressure valve for city-states — a place where dissidents can go without going fully into the wild"
   ],
   tags: ["document", "outside_world", "satellite_towns", "settlements", "independence", "governance", "between_cities"],
@@ -1620,15 +1620,15 @@ writeDoc({
 
 ## What They Are
 
-Satellite towns are small, semi-permanent settlements that exist within 50 kilometers of major city-states, in the transition zone between the urban periphery and the open territories. They are too close to the cities to be truly independent and too small to be politically significant. They are not administered by any corponation. They are not represented in any municipal government. They appear on maps as dots without labels, if they appear at all.
+Satellite towns are small, semi-permanent settlements that exist within 50 kilometers of major city-states, in the transition zone between the urban periphery and the open territories. They are too close to the cities to be truly independent and too small to be politically significant. They are not administered by any CorpoNation. They are not represented in any municipal government. They appear on maps as dots without labels, if they appear at all.
 
 There are an estimated 30-40 satellite towns around GLMZ, ranging in population from 50 to 2,000. Some have existed for decades. Others form and dissolve within years. They are the settlements of people who want to be near the city but not in it — close enough to trade, to access medical care in emergencies, to maintain BCI connectivity (barely, at the edges of the network), but far enough to live outside corporate sovereignty.
 
 ## Millhaven (Population: ~1,400)
 
-Millhaven is the largest and oldest satellite town near GLMZ, located 28 kilometers northwest in a former industrial complex that its residents have converted into a self-sustaining community. It has its own water purification (solar-powered, built by a collective of former Vossen engineers who left the corponation), food production (greenhouses and small-scale vat operations), and a governance system based on rotating council membership drawn by lot.
+Millhaven is the largest and oldest satellite town near GLMZ, located 28 kilometers northwest in a former industrial complex that its residents have converted into a self-sustaining community. It has its own water purification (solar-powered, built by a collective of former Vossen engineers who left the CorpoNation), food production (greenhouses and small-scale vat operations), and a governance system based on rotating council membership drawn by lot.
 
-Millhaven's economy runs on repair. The town has become a destination for anyone in the region who needs equipment fixed without corporate involvement — augmentations modified outside warranty, technology repaired without data logging, vehicles serviced without location tracking. Millhaven's technicians are former city workers, many of them highly skilled, who traded the security of corponation employment for the autonomy of independent work. They are paid in Quanta (Millhaven accepts the currency but doesn't participate in the banking system) or in trade.
+Millhaven's economy runs on repair. The town has become a destination for anyone in the region who needs equipment fixed without corporate involvement — augmentations modified outside warranty, technology repaired without data logging, vehicles serviced without location tracking. Millhaven's technicians are former city workers, many of them highly skilled, who traded the security of CorpoNation employment for the autonomy of independent work. They are paid in Quanta (Millhaven accepts the currency but doesn't participate in the banking system) or in trade.
 
 ## Ashgrove (Population: ~300)
 
@@ -1800,7 +1800,7 @@ writeDoc({
   related_entities: ["meridian_88"],
   credibility: "verified",
   story_hooks: [
-    "A Tier 1 and Tier 5 couple must navigate incompatible corporate loyalty requirements when one partner's corponation considers the other a security risk",
+    "A Tier 1 and Tier 5 couple must navigate incompatible corporate loyalty requirements when one partner's CorpoNation considers the other a security risk",
     "Cross-tier couples report that the hardest part isn't money — it's the difference in what feels normal"
   ],
   tags: ["document", "relationships", "tier_gap", "class_divide", "love", "shelf", "spire", "cross_tier"],
@@ -1890,37 +1890,37 @@ writeDoc({
   date: "2199-06-01",
   classification: "public",
   category: "Relationships",
-  description: "How marriage works when your spouse belongs to a different corponation.",
+  description: "How marriage works when your spouse belongs to a different CorpoNation.",
   related_entities: ["meridian_88", "sterling_nakamura", "kyosei_dynamics", "vossen", "lazarus_group"],
   credibility: "verified",
   story_hooks: [
-    "A cross-corponation marriage accidentally created a data-sharing obligation between two rival companies, triggering a legal crisis",
-    "Some corponations offer 'marriage bonuses' to employees who marry within the company, effectively discouraging external relationships"
+    "A cross-CorpoNation marriage accidentally created a data-sharing obligation between two rival companies, triggering a legal crisis",
+    "Some CorpoNations offer 'marriage bonuses' to employees who marry within the company, effectively discouraging external relationships"
   ],
-  tags: ["document", "relationships", "marriage", "corporate_law", "corponation", "legal", "governance"],
+  tags: ["document", "relationships", "marriage", "corporate_law", "CorpoNation", "legal", "governance"],
   body: `# Marriage Under Corporate Law
 
 ## The Basics
 
-Marriage in GLMZ is not primarily a personal institution. It is a legal-economic arrangement governed by corporate sovereignty law. When two people marry, the marriage contract interacts with their respective employment agreements, data governance frameworks, tier classifications, and corporate loyalty obligations. If both partners belong to the same corponation, this is relatively straightforward. If they belong to different corponations — and approximately 40% of marriages in GLMZ cross corporate lines — the complexity becomes significant.
+Marriage in GLMZ is not primarily a personal institution. It is a legal-economic arrangement governed by corporate sovereignty law. When two people marry, the marriage contract interacts with their respective employment agreements, data governance frameworks, tier classifications, and corporate loyalty obligations. If both partners belong to the same CorpoNation, this is relatively straightforward. If they belong to different CorpoNations — and approximately 40% of marriages in GLMZ cross corporate lines — the complexity becomes significant.
 
 ## The Cross-Corporate Marriage
 
-When a Sterling-Nakamura employee marries a Kyosei Dynamics employee, the following legal interactions occur: a data-sharing assessment determines which personal data is affected by the marriage (shared residence data, joint financial records, health information relevant to spousal insurance). Both corponations must authorize the data-sharing framework. A loyalty review evaluates whether the marriage creates a conflict of interest — particularly if both partners hold positions with access to proprietary information. A tier reconciliation process determines the married couple's combined tier classification, which affects housing access, service levels, and tax obligations.
+When a Sterling-Nakamura employee marries a Kyosei Dynamics employee, the following legal interactions occur: a data-sharing assessment determines which personal data is affected by the marriage (shared residence data, joint financial records, health information relevant to spousal insurance). Both CorpoNations must authorize the data-sharing framework. A loyalty review evaluates whether the marriage creates a conflict of interest — particularly if both partners hold positions with access to proprietary information. A tier reconciliation process determines the married couple's combined tier classification, which affects housing access, service levels, and tax obligations.
 
 This process takes, on average, four months. During this time, the couple is legally engaged but not legally married. They cannot share residence in corporate housing, cannot access spousal benefits, and cannot make medical decisions for each other. The four-month gap is bureaucratic, not romantic, and it is the period during which approximately 12% of cross-corporate marriages are abandoned — not because the partners stopped loving each other, but because the paperwork defeated them.
 
 ## Corporate Incentives
 
-Several corponations actively incentivize intra-corporate marriage. Sterling-Nakamura offers a Φ5,000 marriage bonus and a one-tier housing upgrade for employees who marry within the company. Vossen provides enhanced medical coverage for intra-corporate couples. These incentives are presented as celebrations of company community. They are, more accurately, retention strategies: married couples with shared corporate benefits are less likely to leave. An employee considering a job change must weigh not only their own career but their spouse's benefits, housing, and social network — all of which are tied to the current employer.
+Several CorpoNations actively incentivize intra-corporate marriage. Sterling-Nakamura offers a Φ5,000 marriage bonus and a one-tier housing upgrade for employees who marry within the company. Vossen provides enhanced medical coverage for intra-corporate couples. These incentives are presented as celebrations of company community. They are, more accurately, retention strategies: married couples with shared corporate benefits are less likely to leave. An employee considering a job change must weigh not only their own career but their spouse's benefits, housing, and social network — all of which are tied to the current employer.
 
 The incentives also serve a data governance purpose. Intra-corporate marriages keep personal data within a single corporate ecosystem. Cross-corporate marriages create data-sharing obligations that both companies would prefer to avoid. The marriage bonus is not just a retention tool — it is a data containment strategy.
 
 ## Divorce
 
-Divorce in a cross-corporate marriage requires: dissolution of the data-sharing framework (a technical process that takes 60-90 days), separation of joint financial accounts across two corporate banking systems, tier reclassification for both individuals, and — if children are involved — a custody arrangement that must satisfy both corponations' interests in the children's data and potential future employment. Cross-corporate divorce is expensive (legal fees average Φ3,000-8,000), time-consuming (6-12 months), and sufficiently miserable that many unhappy couples simply remain married rather than endure the process.
+Divorce in a cross-corporate marriage requires: dissolution of the data-sharing framework (a technical process that takes 60-90 days), separation of joint financial accounts across two corporate banking systems, tier reclassification for both individuals, and — if children are involved — a custody arrangement that must satisfy both CorpoNations' interests in the children's data and potential future employment. Cross-corporate divorce is expensive (legal fees average Φ3,000-8,000), time-consuming (6-12 months), and sufficiently miserable that many unhappy couples simply remain married rather than endure the process.
 
-This is, arguably, by design. Corponations benefit from stable partnerships: stable employees, predictable data structures, lower turnover. The difficulty of divorce is not a bug in the system. It is a feature that keeps people where the corponations want them.`
+This is, arguably, by design. CorpoNations benefit from stable partnerships: stable employees, predictable data structures, lower turnover. The difficulty of divorce is not a bug in the system. It is a feature that keeps people where the CorpoNations want them.`
 });
 
 // ═══════════════════════════════════════════════════════════════════
@@ -1947,7 +1947,7 @@ writeGood({
   cultural_context: "The NutriBloc is not food — it is infrastructure. It is the caloric foundation of the Shelf, eaten by millions daily not because anyone likes it but because it is what the dispensary provides. Shelf cooking culture exists specifically to make NutriBloc edible.",
   story_hooks: ["The formula hasn't changed in 14 years despite three petitions to add basic flavoring, which Ringo estimates would cost Φ0.003 per unit"],
   tags: ["food", "protein", "consumer_good", "tier_1", "shelf", "dispensary", "ringo", "cheap", "ubiquitous"],
-  parent_corponation: "ringo_agritech"
+  parent_CorpoNation: "ringo_agritech"
 });
 
 writeGood({
@@ -1968,7 +1968,7 @@ writeGood({
   cultural_context: "QuickNood is the Shelf's comfort food — not because it tastes good, but because it tastes warm. On cold nights in under-heated hab units, a QuickNood is the difference between going to sleep hungry and going to sleep with something hot in your stomach.",
   story_hooks: ["The QuickNood factory is one of the largest employers in Tier 2, and a strike there would be almost as devastating as a Ringo stoppage"],
   tags: ["food", "noodles", "consumer_good", "tier_1", "tier_2", "shelf", "cheap", "instant"],
-  parent_corponation: ""
+  parent_CorpoNation: ""
 });
 
 writeGood({
@@ -1989,7 +1989,7 @@ writeGood({
   cultural_context: "VitalPaste is what you eat when you've given up on food being an experience. It is also what emergency services distribute during crises. Seeing VitalPaste in someone's hab unit means they are either very poor or very efficient. Either way, don't ask.",
   story_hooks: ["VitalPaste was originally developed as medical nutrition for patients who couldn't chew — its adoption as a daily food product was an unplanned market development that Vossen now actively cultivates"],
   tags: ["food", "nutrient_paste", "consumer_good", "tier_1", "shelf", "vossen", "emergency", "cheap"],
-  parent_corponation: "vossen"
+  parent_CorpoNation: "vossen"
 });
 
 writeGood({
@@ -2010,7 +2010,7 @@ writeGood({
   cultural_context: "ClearDrop is the cheapest branded water in GLMZ. Everyone knows it's recycled. Nobody talks about what it's recycled from. The pouch design hasn't changed in 20 years and has become an accidental icon of Shelf life.",
   story_hooks: ["ClearDrop's filtration process removes 99.97% of contaminants — the 0.03% includes trace BCI-rejection medication metabolites from the source water"],
   tags: ["beverage", "water", "consumer_good", "tier_1", "tier_2", "shelf", "vossen", "recycled", "ubiquitous"],
-  parent_corponation: "vossen"
+  parent_CorpoNation: "vossen"
 });
 
 writeGood({
@@ -2031,7 +2031,7 @@ writeGood({
   cultural_context: "GrindHouse is what Shelf residents buy when they have a little extra. It's celebration food for Tier 1 — birthday dinners, end-of-month treats. Buying GrindHouse means things are okay right now.",
   story_hooks: ["GrindHouse's founder is a former Ringo food scientist who quit and started the company specifically to prove that cheap protein didn't have to taste like nothing"],
   tags: ["food", "protein", "consumer_good", "tier_1", "tier_2", "shelf", "budget_premium", "bbq"],
-  parent_corponation: ""
+  parent_CorpoNation: ""
 });
 
 writeGood({
@@ -2052,7 +2052,7 @@ writeGood({
   cultural_context: "Auntie Yuki's stall is an Old Harbor institution. The wrap is what you eat when you want to feel fed, not just fueled. The line forms at 2000 and wraps are gone by 2200.",
   story_hooks: ["Yuki's spice blend recipe is memorized, never written down, and she has told three people — one for each decade she's been cooking"],
   tags: ["street_food", "wrap", "consumer_good", "tier_1", "tier_2", "old_harbor", "night_market", "artisan"],
-  parent_corponation: ""
+  parent_CorpoNation: ""
 });
 
 writeGood({
@@ -2073,7 +2073,7 @@ writeGood({
   cultural_context: "The line at Jun's is a social institution. You wait, you watch him pull noodles, you talk to the person next to you. By the time you eat, you've already been nourished by the experience.",
   story_hooks: ["Jun has refused seven offers from Tier 3 restaurant chains to franchise his technique — he says hand-pulled noodles can't be scaled without losing what makes them hand-pulled"],
   tags: ["street_food", "noodles", "consumer_good", "tier_1", "tier_2", "old_harbor", "night_market", "artisan", "hand_pulled"],
-  parent_corponation: ""
+  parent_CorpoNation: ""
 });
 
 writeGood({
@@ -2094,7 +2094,7 @@ writeGood({
   cultural_context: "The Bao Collective is Old Harbor folklore. The 300-per-night limit is not a production constraint — they could make more. It's a principle. Good things should be finite.",
   story_hooks: ["The youngest member of the collective is 22 and was trained by the oldest member, who is 71 — the recipe transfer was oral, taking six months of daily instruction"],
   tags: ["street_food", "bao", "consumer_good", "tier_1", "old_harbor", "collective", "artisan", "limited"],
-  parent_corponation: ""
+  parent_CorpoNation: ""
 });
 
 writeGood({
@@ -2115,7 +2115,7 @@ writeGood({
   cultural_context: "Kofi's fire permit is legendary in Old Harbor. If the permit is ever revoked, the grill dies — no one can get a new one. The community considers Kofi's flame a cultural heritage site.",
   story_hooks: ["The fire permit was originally issued to Kofi's grandfather for a metalworking operation — the legal fiction that the grill is a metalworking tool has survived three inspections"],
   tags: ["street_food", "grill", "consumer_good", "tier_1", "tier_2", "old_harbor", "night_market", "open_flame", "artisan"],
-  parent_corponation: ""
+  parent_CorpoNation: ""
 });
 
 writeGood({
@@ -2136,7 +2136,7 @@ writeGood({
   cultural_context: "ShelfBrew is the morning ritual for millions. The taste is an acquired one that Shelf residents defend with surprising passion. Tier 3 visitors who try it grimace. Shelf residents who try real coffee for the first time often find it too mild.",
   story_hooks: ["The Old Harbor Roasting Collective maintains that chicory coffee has more character than real coffee — a position that is either deeply held conviction or very good marketing for a product born of necessity"],
   tags: ["beverage", "coffee", "consumer_good", "tier_1", "tier_2", "shelf", "chicory", "morning_ritual"],
-  parent_corponation: ""
+  parent_CorpoNation: ""
 });
 
 // --- MID TIER (10) ---
@@ -2159,7 +2159,7 @@ writeGood({
   cultural_context: "Kenji Farms occupies the sweet spot of the mid-tier food market: good enough to feel like a treat, affordable enough for weekly purchase. It's what Tier 3 residents serve when they're trying to impress.",
   story_hooks: ["Kenji Farms' founder studied pre-consolidation Japanese culinary texts to develop the culture medium — the dashi influence is real, not marketing"],
   tags: ["food", "vat_protein", "consumer_good", "tier_3", "tier_4", "premium", "japanese", "teriyaki"],
-  parent_corponation: ""
+  parent_CorpoNation: ""
 });
 
 writeGood({
@@ -2180,7 +2180,7 @@ writeGood({
   cultural_context: "Verdant is the default for Tier 3 professionals who want to eat well but don't want to think about it. The BCI integration is the selling point — meals calibrated to your metabolism, your activity level, your micronutrient gaps.",
   story_hooks: ["Verdant's algorithm occasionally flags unusual nutritional deficiencies that lead subscribers to seek medical attention — the meal service has accidentally become a diagnostic tool"],
   tags: ["food", "meal_kit", "consumer_good", "tier_3", "subscription", "bci_integrated", "nutrition"],
-  parent_corponation: ""
+  parent_CorpoNation: ""
 });
 
 writeGood({
@@ -2201,7 +2201,7 @@ writeGood({
   cultural_context: "SavannaPro sells nostalgia for a world that most of its customers have never experienced. The 'wild type' branding appeals to a mid-tier desire for authenticity that the city cannot provide.",
   story_hooks: ["SavannaPro's 'foraged plant extracts' are actually sourced from a satellite town's wild garden at significant markup — the supply chain is more interesting than the marketing"],
   tags: ["food", "vat_protein", "consumer_good", "tier_3", "tier_4", "wild_game", "premium", "nostalgia"],
-  parent_corponation: ""
+  parent_CorpoNation: ""
 });
 
 writeGood({
@@ -2222,7 +2222,7 @@ writeGood({
   cultural_context: "Golden Crust is a pilgrimage destination for mid-tier food enthusiasts. The bakery opens at 0600 and is sold out by 0900. The 40-year starter culture is treated as a living artifact.",
   story_hooks: ["The starter culture has been genetically sequenced and found to contain yeast strains that have evolved in isolation, making it biologically unique"],
   tags: ["food", "bread", "consumer_good", "tier_3", "tier_4", "bakery", "sourdough", "artisan"],
-  parent_corponation: ""
+  parent_CorpoNation: ""
 });
 
 writeGood({
@@ -2243,7 +2243,7 @@ writeGood({
   cultural_context: "Vossen BioSteak is what restaurants serve when they want to charge Φ25 for a plate without doing any creative work. It's reliable, forgettable, and everywhere. The food equivalent of a Tier 3 hab unit.",
   story_hooks: ["Vossen's food division uses the same bioreactor technology as their medical division — the steak and the synthetic organ share manufacturing DNA"],
   tags: ["food", "vat_protein", "consumer_good", "tier_3", "tier_4", "vossen", "premium", "corporate"],
-  parent_corponation: "vossen"
+  parent_CorpoNation: "vossen"
 });
 
 writeGood({
@@ -2262,9 +2262,9 @@ writeGood({
   popularity_rank: 13,
   slogan: "Lake to Plate.",
   cultural_context: "Harbor Catch is Old Harbor's pride — proof that the district produces something the rest of the city can't replicate. The fish are real, raised in real water, and eating one feels like an act of connection to the lake that surrounds the city.",
-  story_hooks: ["The aquaculture pens are technically in Vossen's water jurisdiction, creating a perpetual tension between the cooperative's independence and the corponation's territorial claims"],
+  story_hooks: ["The aquaculture pens are technically in Vossen's water jurisdiction, creating a perpetual tension between the cooperative's independence and the CorpoNation's territorial claims"],
   tags: ["food", "fish", "consumer_good", "tier_2", "tier_3", "old_harbor", "aquaculture", "real_food", "lake"],
-  parent_corponation: ""
+  parent_CorpoNation: ""
 });
 
 writeGood({
@@ -2285,7 +2285,7 @@ writeGood({
   cultural_context: "Mama Nkem started selling jollof rice kits from her hab unit 12 years ago. The business grew through word of mouth. The recipe is a Diaspora artifact — Nigerian foundation, adapted through three generations in GLMZ, incorporating ingredients available locally.",
   story_hooks: ["Nkem's spice blend has become a minor cultural flashpoint — a food blogger's claim that it wasn't 'authentic' jollof sparked a three-week feed debate involving thousands of participants and zero resolution"],
   tags: ["food", "meal_kit", "consumer_good", "tier_2", "tier_3", "west_african", "jollof", "diaspora", "artisan"],
-  parent_corponation: ""
+  parent_CorpoNation: ""
 });
 
 writeGood({
@@ -2306,7 +2306,7 @@ writeGood({
   cultural_context: "Chai Republic is one of the few food brands that genuinely crosses tier boundaries. The concentrate is the same product whether you buy it in a Tier 2 market or a Tier 4 grocery. It is democratically warm.",
   story_hooks: ["Chai Republic's founder insists on using real ginger despite the cost because her grandmother told her that chai without real ginger is just brown water"],
   tags: ["beverage", "tea", "chai", "consumer_good", "tier_2", "tier_3", "tier_4", "cross_tier", "comforting", "diaspora"],
-  parent_corponation: ""
+  parent_CorpoNation: ""
 });
 
 writeGood({
@@ -2327,7 +2327,7 @@ writeGood({
   cultural_context: "MidCity Diner is where Tier 3 goes after a bad day. The Comfort Bowl is not good food. It is effective food. It fills a hole that isn't nutritional.",
   story_hooks: ["MidCity Diner's '14 locations' are all within a 4-km radius in the Midline district, creating a density that suggests either brilliant market saturation or a money-laundering operation"],
   tags: ["food", "prepared_meal", "consumer_good", "tier_3", "comfort_food", "restaurant_chain", "midline"],
-  parent_corponation: ""
+  parent_CorpoNation: ""
 });
 
 writeGood({
@@ -2348,7 +2348,7 @@ writeGood({
   cultural_context: "Petal & Rind is the passion project of a former Vossen food chemist who was tired of optimizing nutrition and wanted to optimize pleasure instead. The cheese is impractical, overpriced for what it is, and beloved.",
   story_hooks: ["The 'reclaimed hardwood chips' used for smoking come from pre-consolidation buildings being demolished — each batch of cheese is literally smoked with history"],
   tags: ["food", "cheese", "consumer_good", "tier_3", "tier_4", "artisan", "smoked", "dairy", "premium"],
-  parent_corponation: ""
+  parent_CorpoNation: ""
 });
 
 // --- LUXURY TIER (10) ---
@@ -2371,7 +2371,7 @@ writeGood({
   cultural_context: "Aurelian Kobe Reserve is not food — it is a status signal. Serving it at a dinner party communicates wealth, taste, and access. The numbered certificate is displayed at the table. Guests are expected to comment.",
   story_hooks: ["The Wagyu DNA used in the culture process was acquired from the last known living Wagyu cattle, maintained by a private collector — the provenance is genuine and the ethical questions are extensive"],
   tags: ["food", "vat_protein", "consumer_good", "tier_5", "luxury", "wagyu", "premium", "status", "numbered"],
-  parent_corponation: ""
+  parent_CorpoNation: ""
 });
 
 writeGood({
@@ -2392,7 +2392,7 @@ writeGood({
   cultural_context: "A real apple in GLMZ costs more than a Shelf resident's daily food budget. The fruit is eaten ceremonially — slowly, attentively, often shared. Giving someone an apple is an act of profound generosity.",
   story_hooks: ["Orchard Prime's trees are descended from heritage varieties maintained by seed-saving networks — each tree is a genetic artifact of the pre-consolidation world"],
   tags: ["food", "fruit", "consumer_good", "tier_4", "tier_5", "luxury", "real_food", "apple", "rare"],
-  parent_corponation: ""
+  parent_CorpoNation: ""
 });
 
 writeGood({
@@ -2413,7 +2413,7 @@ writeGood({
   cultural_context: "Epoch Prime is the food of closed-door business dinners and high-stakes negotiations. Executives eat it before important meetings. The cognitive enhancement is an open secret in Tier 5 and completely unknown below Tier 4.",
   story_hooks: ["The NE-7 compound in Epoch Prime is derived from a pharmaceutical that failed clinical trials for cognitive enhancement — repackaged as a food additive, it bypassed pharmaceutical regulation entirely"],
   tags: ["food", "vat_protein", "consumer_good", "tier_5", "luxury", "neural_enhancement", "nootropic", "status", "secret"],
-  parent_corponation: ""
+  parent_CorpoNation: ""
 });
 
 writeGood({
@@ -2434,7 +2434,7 @@ writeGood({
   cultural_context: "Terroir Blanc is controversial. Animal agriculture in a city that feeds itself from vats is an extravagance that some consider immoral — resources spent on cows could feed hundreds of people. Terroir Blanc's customers consider it a preservation of heritage. The debate is unresolvable.",
   story_hooks: ["The herd consists of exactly 12 cows, each with a name, a genetic profile, and a fan following among Tier 5 food enthusiasts who track individual cows' milk production seasons"],
   tags: ["beverage", "dairy", "milk", "consumer_good", "tier_5", "luxury", "real_food", "animal", "controversial"],
-  parent_corponation: ""
+  parent_CorpoNation: ""
 });
 
 writeGood({
@@ -2455,7 +2455,7 @@ writeGood({
   cultural_context: "Sakura Table is not a restaurant — it is a performance. The meal is an event. The waitlist is a status marker. Having eaten at Sakura Table is a social credential in Tier 5 that communicates access, patience, and the ability to spend casually what a Shelf resident earns in five months.",
   story_hooks: ["Chef Yori has refused BCI installation, cooking entirely by analog intuition — she reads diners' physical responses instead of their data, making her an anachronism in her own restaurant"],
   tags: ["food", "restaurant", "consumer_good", "tier_5", "luxury", "omakase", "bci_integrated", "exclusive", "arden_spire"],
-  parent_corponation: ""
+  parent_CorpoNation: ""
 });
 
 writeGood({
@@ -2476,7 +2476,7 @@ writeGood({
   cultural_context: "Cloud Garden strawberries are given as romantic gifts, celebration treats, and apology offerings. Their perishability is part of their value — you cannot hoard them. You must share them, eat them now, let them be temporary.",
   story_hooks: ["Cloud Garden's growing operation is so precisely controlled that they can produce strawberries year-round, but they maintain seasonal releases to create artificial scarcity and emotional association with time of year"],
   tags: ["food", "fruit", "consumer_good", "tier_4", "tier_5", "luxury", "strawberry", "real_food", "perishable"],
-  parent_corponation: ""
+  parent_CorpoNation: ""
 });
 
 writeGood({
@@ -2497,7 +2497,7 @@ writeGood({
   cultural_context: "Real eggs are a Tier 5 breakfast status symbol. Serving real eggs to guests communicates a level of access that money alone cannot explain — you need to know someone, or be on the right subscription list.",
   story_hooks: ["Each of the 60 hens has a name and a BCI-accessible profile tracking its diet, health, and egg production — the hens are better monitored than most Tier 1 residents"],
   tags: ["food", "egg", "consumer_good", "tier_5", "luxury", "real_food", "chicken", "free_range", "arden_spire"],
-  parent_corponation: ""
+  parent_CorpoNation: ""
 });
 
 writeGood({
@@ -2518,7 +2518,7 @@ writeGood({
   cultural_context: "Nostalgia Kitchen trades on the pre-consolidation Italian culinary tradition — or rather, on the idea of that tradition, since nobody alive remembers it firsthand. The pasta is excellent. The nostalgia is manufactured. Both are effective.",
   story_hooks: ["The truffle compound is synthetic but the pasta maker claims she once tasted actual truffle at a private Tier 5 dinner and calibrated her compound to match — the claim is unverifiable and excellent marketing"],
   tags: ["food", "pasta", "consumer_good", "tier_4", "tier_5", "luxury", "artisan", "truffle", "handmade"],
-  parent_corponation: ""
+  parent_CorpoNation: ""
 });
 
 writeGood({
@@ -2539,7 +2539,7 @@ writeGood({
   cultural_context: "Apex Reserve coffee is consumed as ritual. Tier 5 executives grind it by hand (manual grinders are a luxury item in their own right), brew it in analog pour-over devices, and drink it slowly. It is possibly the most meditative act in a tier otherwise defined by optimization.",
   story_hooks: ["Apex Reserve maintains exactly 40 coffee plants — fewer than the number of Tier 5 executives who want their product — creating a scarcity that the company could resolve but chooses not to"],
   tags: ["beverage", "coffee", "consumer_good", "tier_5", "luxury", "real_food", "single_origin", "heritage", "rare"],
-  parent_corponation: ""
+  parent_CorpoNation: ""
 });
 
 writeGood({
@@ -2560,7 +2560,7 @@ writeGood({
   cultural_context: "Velvet Spire chocolate is proof that GLMZ is not self-sufficient — it depends on trade with other city-states for anything that can't be vat-grown or synthesized. The chocolate is delicious. It is also a political artifact.",
   story_hooks: ["The Cascadia-Meridian trade route for cacao is the only regular non-food-staple commerce between the two cities — chocolate is literally holding a diplomatic relationship together"],
   tags: ["food", "chocolate", "consumer_good", "tier_4", "tier_5", "luxury", "cacao", "real_food", "cascadia", "trade"],
-  parent_corponation: ""
+  parent_CorpoNation: ""
 });
 
 // ═══════════════════════════════════════════════════════════════════

@@ -1,9 +1,9 @@
-const fs = require('fs');
+﻿const fs = require('fs');
 const path = require('path');
 
-const DATA_DIR = path.join(__dirname, '..', 'engine', 'data', 'corponations');
+const DATA_DIR = path.join(__dirname, '..', 'engine', 'data', 'CorpoNations');
 
-// Subsidiary definitions per corponation
+// Subsidiary definitions per CorpoNation
 // Mix of: obviously connected, deliberately distanced, liability shields, tax vehicles, consumer-facing brands
 const subsidiaryData = {
   'arcturus_defense_solutions.json': [
@@ -63,7 +63,7 @@ const subsidiaryData = {
     { name: 'Sentinel K-9 Services', line_of_business: 'Military and security working dog breeding, training, and deployment', public_facing: false },
   ],
 
-  'tessera_corponation.json': [
+  'tessera_CorpoNation.json': [
     // Obviously connected
     { name: 'NovaMind Consumer Division', line_of_business: 'Retail BCI sales, installation scheduling, and subscription management', public_facing: true },
     { name: 'NeoCortex Industries', line_of_business: 'Advanced neural development research (classified human testing pipeline)', public_facing: false },
@@ -120,7 +120,7 @@ const subsidiaryData = {
     { name: 'Gradient Neuropharmaceuticals', line_of_business: 'Anti-rejection medications and BCI maintenance drugs for implant recipients', public_facing: false },
   ],
 
-  'ringo_corponation.json': [
+  'ringo_CorpoNation.json': [
     // Obviously connected - the Ringo-branded empire
     { name: 'RingoFuel', line_of_business: 'Fuel distribution and station operations across 28 sovereign zones', public_facing: true },
     { name: 'RingoMart', line_of_business: 'Convenience retail and grocery outlets at every fuel station and transit hub', public_facing: true },
@@ -162,7 +162,7 @@ const subsidiaryData = {
     { name: 'Orange Line Delivery', line_of_business: 'Same-day package and food delivery service within sovereign zones', public_facing: true },
     { name: 'Milestone Pet Supplies', line_of_business: 'Pet food and veterinary clinics operating within RingoMart locations', public_facing: true },
     { name: 'Ringo Agricultural Holdings', line_of_business: 'Farm operations and food processing supplying RingoMart and FreshRoute', public_facing: false },
-    { name: 'Volkov Supply Chain Systems', line_of_business: 'Enterprise logistics software used internally and licensed to partner corponations', public_facing: false },
+    { name: 'Volkov Supply Chain Systems', line_of_business: 'Enterprise logistics software used internally and licensed to partner CorpoNations', public_facing: false },
     { name: 'Halloran Security Consulting', line_of_business: 'Security doctrine development and Use of Force Directive administration', public_facing: false },
     { name: 'Anand Financial Engineering', line_of_business: 'CreditScript algorithm design and debt escalation modeling', public_facing: false },
     { name: 'SafeHaven Domestic Violence Services', line_of_business: 'Shelter network in sovereign zones, also functioning as behavioral monitoring intake', public_facing: true },
@@ -186,7 +186,7 @@ const subsidiaryData = {
     { name: 'PowerBond Billing Systems', line_of_business: 'Automated direct-debit energy billing with no opt-out mechanism', public_facing: false },
     { name: 'GLMZ Transmission Corp', line_of_business: 'High-voltage power line maintenance along the sovereign energy corridor', public_facing: false },
     { name: 'Ostrander Energy Holdings', line_of_business: 'Legacy holding company for the original eleven municipal power acquisitions', public_facing: false },
-    { name: 'Ouroboros Industrial Power', line_of_business: 'Bulk energy contracts for corponation facilities and manufacturing zones', public_facing: false },
+    { name: 'Ouroboros Industrial Power', line_of_business: 'Bulk energy contracts for CorpoNation facilities and manufacturing zones', public_facing: false },
     // Moderately connected
     { name: 'Cascade Prevention Systems', line_of_business: 'Grid failure prediction and automated load-balancing technology', public_facing: false },
     { name: 'Ring Substation Network', line_of_business: 'Local power distribution substations embedded throughout corridor residential zones', public_facing: false },
@@ -243,7 +243,7 @@ const subsidiaryData = {
     { name: 'VBM Tower Network', line_of_business: 'Seventeen embedded broadcast towers spanning the GLMZ corridor', public_facing: false },
     // Moderately connected
     { name: 'Voss Signal Intelligence', line_of_business: 'Regulatory circumvention strategy and information pipeline analysis', public_facing: false },
-    { name: 'Narrative Relationship Management', line_of_business: 'Paid favorable coverage arrangements with Big 20 corponations', public_facing: false },
+    { name: 'Narrative Relationship Management', line_of_business: 'Paid favorable coverage arrangements with Big 20 CorpoNations', public_facing: false },
     { name: 'SABLE Content Forge', line_of_business: 'AI-generated content production at industrial scale across all media formats', public_facing: false },
     { name: 'Subliminal Overlay Division', line_of_business: 'Ambient audio-visual content piped into transit, lobbies, and housing blocks', public_facing: false },
     { name: 'Cognitive Disruption Technologies', line_of_business: 'Neural-scramble emitters and cognitive disruption drones for information warfare', public_facing: false },
@@ -392,7 +392,7 @@ const subsidiaryData = {
     { name: 'Heritage Seed Vault', line_of_business: 'Natural seed preservation project (also mapping wild genomes for commercial use)', public_facing: true },
     { name: 'Fauna Pest Control', line_of_business: 'Engineered predator insects for agricultural pest management', public_facing: true },
     { name: 'GeneFit Health Testing', line_of_business: 'Consumer genetic analysis and health optimization recommendations', public_facing: true },
-    { name: 'Crucible Agricultural Consulting', line_of_business: 'Advisory services for corponation and sovereign zone farming operations', public_facing: false },
+    { name: 'Crucible Agricultural Consulting', line_of_business: 'Advisory services for CorpoNation and sovereign zone farming operations', public_facing: false },
     { name: 'Lacuna Countermeasures Division', line_of_business: 'Industrial espionage and patent litigation operations against rival Lacuna Genomics', public_facing: false },
     { name: 'Mycelium Construction Materials', line_of_business: 'Building materials grown from engineered fungal networks', public_facing: true },
     { name: 'BioInk 3D Printing', line_of_business: 'Living-tissue printing technology for medical and industrial applications', public_facing: true },
@@ -442,7 +442,7 @@ fs.writeFileSync(indexPath, JSON.stringify(subsidiaryIndex, null, 2) + '\n', 'ut
 
 console.log('\nSubsidiary Index written to subsidiary_index.json');
 console.log(`Total entries: ${Object.keys(subsidiaryIndex).length}`);
-console.log('\nCounts per corponation:');
+console.log('\nCounts per CorpoNation:');
 for (const [name, count] of Object.entries(counts)) {
   console.log(`  ${name}: ${count}`);
 }

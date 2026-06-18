@@ -1,4 +1,4 @@
-const fs = require("fs");
+﻿const fs = require("fs");
 const path = require("path");
 
 const directories = [
@@ -25,7 +25,7 @@ const directories = [
   "D:/Projects/MindAttic/StreetSamurai/engine/data/archetypes",
   "D:/Projects/MindAttic/StreetSamurai/engine/data/vocabulary",
   "D:/Projects/MindAttic/StreetSamurai/engine/data/contracts",
-  "D:/Projects/MindAttic/StreetSamurai/engine/data/corponations",
+  "D:/Projects/MindAttic/StreetSamurai/engine/data/CorpoNations",
 ];
 
 // Tag validation rules: tag -> keywords that justify the tag

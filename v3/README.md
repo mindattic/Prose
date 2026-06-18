@@ -2,7 +2,7 @@
 
 ## What This Is
 
-A cyberpunk narrative engine for literary fiction set in Meridian 88 -- the Great Lakes Metropolitan Zone, year 2200. A continuous 500km urban sprawl along the entire western Lake Michigan shoreline extending into Lake Superior and across the Canadian border, housing 100 million+ people in a tiered society where corponations (corporate nation-states) have replaced governments, and freelancers survive in the gaps between corporate territories.
+A cyberpunk narrative engine for literary fiction set in Meridian 88 -- the Great Lakes Metropolitan Zone, year 2200. A continuous 500km urban sprawl along the entire western Lake Michigan shoreline extending into Lake Superior and across the Canadian border, housing 100 million+ people in a tiered society where CorpoNations (corporate nation-states) have replaced governments, and freelancers survive in the gaps between corporate territories.
 
 The system generates prose grounded in documented canon -- each character's psychology, speech patterns, and narration voice drive how their beats read, retrieved from the world database and relationship graph. Built on .NET 10 as a Blazor Server web application.
 
@@ -61,7 +61,7 @@ The Blazor host calls `services.AddStreetSamuraiServices()` to register the sing
 
 - **Meridian 88** (GLM -- Great Lakes Metropolitan Zone): continuous urban sprawl along the entire western Lake Michigan shore, extending north into Lake Superior and across the Canadian border. 500km of unbroken city, 100M+ residents.
 - **Iowa Exclusion Zone**: automated farmland operated by Behemoth agricultural machines. No permanent human habitation. Gleaner Brigades raid the zone for food, dodging autonomous defense systems.
-- **Federal Remnant**: the remnant US government, relocated to Denver. Funded by corponations as a political scarecrow to deter foreign annexation. A puppet state with the appearance of sovereignty.
+- **Federal Remnant**: the remnant US government, relocated to Denver. Funded by CorpoNations as a political scarecrow to deter foreign annexation. A puppet state with the appearance of sovereignty.
 - **Alaska**: a separate nation governed by 13 Tribes (evolved from real ANCSA -- Alaska Native Claims Settlement Act -- corporations into sovereign tribal-corporate entities).
 - **Coastal collapse**: Los Angeles, New York City, and Seattle destroyed by climate-driven catastrophe by the 2150s.
 - **Mississippi Corridor**: future expansion setting, currently undeveloped in the canon.
@@ -69,7 +69,7 @@ The Blazor host calls `services.AddStreetSamuraiServices()` to register the sing
 ### Society
 
 - **Tier system** (1-5 + Excluded): social stratification based on corporate affiliation, augmentation level, and economic utility. Tier 1 = corporate elite. Tier 5 = barely surviving. Excluded = non-persons.
-- **Corponations**: corporate nation-states that replaced governments. They own territory, field armies, write laws within their zones, and treat citizenship as employment.
+- **CorpoNations**: corporate nation-states that replaced governments. They own territory, field armies, write laws within their zones, and treat citizenship as employment.
 - **Species**: human, ai, android, robot, cyborg_ai, distributed_ai, emergent_ai, rogue_ai, corporate_ai. The world contains both biological and synthetic persons.
 - **Worldbuilding philosophy**: the setting extrapolates real BCI (brain-computer interface) technology and corporate sovereignty trends. This is grounded science fiction, not generic cyberpunk. Politics are discussed while walking, not infodumped. Weapons are described by their effect on flesh, not by model number.
 
@@ -102,7 +102,7 @@ Repository save events fire `OnItemSaved`, which triggers automatic relationship
 | Cyberware | `CyberwareRepository` | `engine_data/cyberware/` | 79 | `CyberwareData` |
 | Factions | `FactionRepository` | `engine_data/factions/` | 54 | `FactionData` |
 | Technology | `TechnologyRepository` | `engine_data/technology/` | 51 | `TechnologyData` |
-| Corponations | `CorponationRepository` | `engine_data/corponations/` | 50 | `CorponationData` |
+| CorpoNations | `CorpoNationRepository` | `engine_data/CorpoNations/` | 50 | `CorpoNationData` |
 | Ammunition | `AmmunitionRepository` | `engine_data/ammunition/` | 31 | `AmmunitionData` |
 | Vocabulary | `VocabularyRepository` | `engine_data/vocabulary/` | 7 | `VocabularyEntry` |
 | Facets | `FacetRepository` | `engine_data/facets/` | 6 | `FacetData` |
@@ -121,7 +121,7 @@ Repository save events fire `OnItemSaved`, which triggers automatic relationship
   engine_data/
     characters/           74 files â€” full character profiles with psychology
     places/               203 files â€” districts, buildings, landmarks
-    corponations/         50 files â€” corporate nation-states
+    CorpoNations/         50 files â€” corporate nation-states
     factions/             54 files â€” organizations, gangs, movements
     weaponry/             185 files â€” weapons with tactical use and cultural context
     equipment/            101 files â€” gear, tools, vehicles
@@ -168,7 +168,7 @@ This eliminates first-load latency. Every generation call can query the graph im
 | `FileSecurePreferences` | Singleton | Config | AES-encrypted credential store (machine-locked) |
 | `FileSystemPathProvider` | Singleton | Config | Resolves all directory paths |
 | `CharacterRepository` | Singleton | Data | Per-file character storage |
-| `CorponationRepository` | Singleton | Data | Per-file corponation storage |
+| `CorpoNationRepository` | Singleton | Data | Per-file CorpoNation storage |
 | `DistrictRepository` | Singleton | Data | Per-file place storage |
 | `FactionRepository` | Singleton | Data | Per-file faction storage |
 | `FacetRepository` | Singleton | Data | Per-file facet definition storage |
@@ -247,7 +247,7 @@ In-memory relationship graph using QuikGraph's `AdjacencyGraph<string, WorldEdge
 - `Sentiment` -- `"positive"` | `"negative"` | `"neutral"` | `"mixed"` (heuristic-inferred)
 - `Description` -- Narrative explanation of the relationship
 
-**Auto-build**: On first load, if `world_graph.json` does not exist, the graph is built from all typed repositories. Characters, places, factions, corponations, weapons, equipment, and technology are all parsed for relationship references.
+**Auto-build**: On first load, if `world_graph.json` does not exist, the graph is built from all typed repositories. Characters, places, factions, CorpoNations, weapons, equipment, and technology are all parsed for relationship references.
 
 **Key methods:**
 - `GetContextForNode(id)` -- Formatted text for LLM prompts: node properties + all connected edges
@@ -380,7 +380,7 @@ Generates structured freelance contracts grounded in real canon entities:
 - **15 complication types**: target_not_who_they_said, double_cross, civilian_presence, personal_connection_to_target, rival_operator_on_same_contract, etc.
 - **Payout**: random range 500-50,000 (Quanta)
 - Each contract has: client, target, location, payout, complication, twist, moral dilemma, success/failure consequences
-- Grounded in real entities: picks actual corponations, factions, and districts from the database
+- Grounded in real entities: picks actual CorpoNations, factions, and districts from the database
 
 ### NpcGenerator
 
@@ -654,7 +654,7 @@ SYSTEM PROMPT:
   5. Literary Rules -- NON-NEGOTIABLE hard constraints
   6. Location context (atmosphere: sights, sounds, smells, feel + dangers + opportunities)
   7. Character context (psychology, fears, desires, speech patterns, relationships)
-  8. World flavor (random corponation details, protagonist contradiction)
+  8. World flavor (random CorpoNation details, protagonist contradiction)
   9. Story state constraints (injuries, inventory, location, emotional state)
   10. Knowledge constraints (POV-safe information, dramatic irony notes)
   11. Event log context (recent events for continuity)
@@ -924,7 +924,7 @@ Browse and manage all saved story projects. Includes "Surprise Me" button for au
 
 Full character profiles: identity, psychology, speech patterns, facet weights (bar chart), relationships, behavioral rules, cyberware inventory, timeline, story hooks. Inline editing.
 
-### /corps -- Corponation Dictionary
+### /corps -- CorpoNation Dictionary
 
 Corporate nation-state profiles: territory, ideology, founding story, military capability, economic sector.
 
@@ -1031,7 +1031,7 @@ Tools are grouped by `[McpServerToolType]` class. Auto-discovered by `WithToolsF
 
 | Group | Tools |
 | --- | --- |
-| `CanonTools` | `list_characters` / `get_character` / `get_character_profile`, `list_places` / `get_place`, `list_factions` / `get_faction`, `list_corponations` / `get_corponation`, `list_subsidiaries` / `get_subsidiary`, weapon / cyberware / equipment / pharmaceutical / synthetic / automaton encyclopedia getters, `get_literary_rules`, `get_tone_bible`, `get_story_bible` |
+| `CanonTools` | `list_characters` / `get_character` / `get_character_profile`, `list_places` / `get_place`, `list_factions` / `get_faction`, `list_CorpoNations` / `get_CorpoNation`, `list_subsidiaries` / `get_subsidiary`, weapon / cyberware / equipment / pharmaceutical / synthetic / automaton encyclopedia getters, `get_literary_rules`, `get_tone_bible`, `get_story_bible` |
 | `StoryTools` | `list_books`, `get_book`, `get_chapter`, `get_book_outline`, `get_director_context` |
 | `ContextTools` | `search_semantic`, `get_neighbors`, `get_neighbors_by_relation`, `get_motifs`, `plant_motif`, `extract_entities`, `validate_canon_text`, `analyze_writing_quality` |
 | `CombatTools` | `draft_combat_scene` â€” wraps the in-app `WriterOperator`'s combat writer so MCP clients can draft action sequences directly (added ce8e306a4) |
@@ -1127,7 +1127,7 @@ dotnet run --project v3/StreetSamurai.Blazor -- --continuity sweep
 ```
 
 That command does all four:
-1. **Extract from every entity record** in `engine/data/{people,places,factions,corponations}/*.json` (top-level scalars become claims directly; prose fields like `description` / `personality` / `ideology` go through Legion Quorum).
+1. **Extract from every entity record** in `engine/data/{people,places,factions,CorpoNations}/*.json` (top-level scalars become claims directly; prose fields like `description` / `personality` / `ideology` go through Legion Quorum).
 2. **Extract from every chapter's prose** (or scope to one book with `--book <id>`).
 3. **Auto-resolve every CONTRADICTED pair** via `LlmVotingService.DecideAsync` â€” the panel sees both options, both snippets, and the source provenance, then picks A or B. If the panel doesn't pick a clean winner, that pair is left CONTRADICTED for human review in the UI.
 4. **Apply every CANONICAL claim** back to its entity record. `ContinuityApplyService` calls `DecideAsync` again to pick which field on the entity JSON should hold the value (string fields are set, array fields are appended to, otherwise the claim lands in a `continuity_facts[]` array on the entity).

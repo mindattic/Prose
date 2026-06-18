@@ -1,4 +1,4 @@
-// Pharmaceutical generator for StreetSamurai
+﻿// Pharmaceutical generator for StreetSamurai
 // Generates 256 pharmaceutical JSON files in engine_data/pharmaceuticals/
 // Run: node generate_pharmaceuticals.js
 // Does NOT overwrite existing files.
@@ -115,7 +115,7 @@ const WORLD_CONTEXT = `Setting: GLMZ, year 2200. A megacity in the Great Lakes c
 
 Technology: BCI (brain-computer interfaces) are ubiquitous. Augmentation (cyberware/chrome) ranges from basic to military-grade. Geneware allows cosmetic and functional genetic modification. SNT (Synthetic Neural Tissue) is the foundational biotech of the era — living neural matter that bridges organic and synthetic systems.
 
-Major pharmaceutical corponations: Lazarus Pharmaceuticals (largest, most corporate, Tier 3-5 focus), Helix Biosystems (cutting-edge biotech, experimental), Novafold Pharmaceuticals (mid-market, reliable), Nightshade Pharmatech (gray market, dual-use — legal products with illegal applications). Street chemists and Shelf labs also produce unlicensed drugs.
+Major pharmaceutical CorpoNations: Lazarus Pharmaceuticals (largest, most corporate, Tier 3-5 focus), Helix Biosystems (cutting-edge biotech, experimental), Novafold Pharmaceuticals (mid-market, reliable), Nightshade Pharmatech (gray market, dual-use — legal products with illegal applications). Street chemists and Shelf labs also produce unlicensed drugs.
 
 Ubiquitous Diaspora: By 2200, humanity is fully racially interbred. Cultural traditions persist but ethnicity as a concept has dissolved. Drug naming reflects this — names draw from every linguistic tradition freely.`;
 

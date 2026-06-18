@@ -1,4 +1,4 @@
-// Apparel GAP generator for StreetSamurai
+﻿// Apparel GAP generator for StreetSamurai
 // Generates 200 apparel items across underrepresented categories:
 //   headwear, gloves, accessory, base_layer, cultural, protective, outfit
 // Run: node generate_apparel_gap.js
@@ -112,13 +112,13 @@ const WORLD_CONTEXT = `Setting: GLMZ (GLMZ), year 2200. A megacity in the Great 
 - Tier 2 "Circuit" — working class. Factory workers, transit operators, street vendors. Clean but functional.
 - Tier 3 — middle management, cubicle workers, small business owners.
 - Tier 4 — corporate comfort. Junior execs, specialists, skilled professionals.
-- Tier 5 "The Spire" — ultra-elite. Corponation C-suite, power brokers, old money.
+- Tier 5 "The Spire" — ultra-elite. CorpoNation C-suite, power brokers, old money.
 
 Ubiquitous Diaspora: By 2200, humanity is fully racially interbred. Default to mixed heritage from unexpected global combinations. Fashion reflects global fusion — no single cultural tradition dominates.
 
 Technology: BCI (brain-computer interfaces) are common. Augmentation (cyberware/chrome) ranges from basic to military-grade. Geneware allows cosmetic and functional genetic modification (tails, bioluminescence, fur, horns, non-functional wings). Synthetics are artificial beings with non-human body proportions.
 
-Corponations are sovereign corporate entities. They manufacture most goods. Street brands also exist — unlicensed, often better for specific niches, always with underground cachet.
+CorpoNations are sovereign corporate entities. They manufacture most goods. Street brands also exist — unlicensed, often better for specific niches, always with underground cachet.
 
 Fashion notes: Clothing must accommodate augmentation (chrome arms, leg prosthetics, spinal rigs, neural ports) and geneware (tails, horns, wings, fur, scales). Aug-compatible means openings, channels, or adaptive seams for chrome. Gene-compatible means accommodation for biological modifications.`;
 
@@ -152,7 +152,7 @@ const CATEGORIES = [
     tag: 'cultural',
     category: 'cultural',
     count: 30,
-    prompt: `Generate {count} CULTURAL/SUBCULTURAL apparel items for GLMZ. Include: gang insignia wear (colors, patches, specific garment modifications that mark territory), runner gear (signature looks that build street rep), rave and club culture wear (reactive fabrics, LED-threaded, sound-reactive), Shelf DIY fashion (hand-painted, salvage-art, deliberately anti-corporate), Spire haute couture (one-of-a-kind statement pieces by named designers), religious/spiritual wear adapted for 2200, protest fashion (anti-corponation messaging, subversive designs), and synthetic identity fashion (clothes that declare synthetic personhood). These are garments that make a CULTURAL STATEMENT.`
+    prompt: `Generate {count} CULTURAL/SUBCULTURAL apparel items for GLMZ. Include: gang insignia wear (colors, patches, specific garment modifications that mark territory), runner gear (signature looks that build street rep), rave and club culture wear (reactive fabrics, LED-threaded, sound-reactive), Shelf DIY fashion (hand-painted, salvage-art, deliberately anti-corporate), Spire haute couture (one-of-a-kind statement pieces by named designers), religious/spiritual wear adapted for 2200, protest fashion (anti-CorpoNation messaging, subversive designs), and synthetic identity fashion (clothes that declare synthetic personhood). These are garments that make a CULTURAL STATEMENT.`
   },
   {
     tag: 'protective',
@@ -222,7 +222,7 @@ Each item MUST have exactly these fields:
   "functionality": "practical features, one SHORT paragraph",
   "what_it_says": "what this item communicates about the wearer — one sentence",
   "worn_by": ["types of people who wear this"],
-  "manufacturer": "brand name — corponation, street label, or self-made",
+  "manufacturer": "brand name — CorpoNation, street label, or self-made",
   "price_range": "price range using the \u03A6 (QUANTA) symbol",
   "aug_compatible": true or false,
   "gene_compatible": true or false,

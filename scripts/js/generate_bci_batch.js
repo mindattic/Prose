@@ -1,4 +1,4 @@
-// Single-batch BCI generator. Usage: node generate_bci_batch.js <subcategory> <count>
+﻿// Single-batch BCI generator. Usage: node generate_bci_batch.js <subcategory> <count>
 // Generates <count> BCIs for the given subcategory in one API call.
 // Designed to be called repeatedly from a shell loop.
 
@@ -108,18 +108,18 @@ function getExistingBciNames() {
 const PROMPTS = {
   professional: `Generate {count} PROFESSIONAL-GRADE BCI cyberware products. Tier 3-4.
 Corporate-issue with enhanced security/encryption. Medical-grade for surgeons. Pilot-rated for vehicle neural link. Security-hardened for CorpSec. Legal/financial with memory indexing.
-Manufacturers: TESSERA CORPONATION, LAZARUS PHARMACEUTICALS, NeuralPath Pro, CortexDynamics, SynapTech Professional.
+Manufacturers: TESSERA CorpoNation, LAZARUS PHARMACEUTICALS, NeuralPath Pro, CortexDynamics, SynapTech Professional.
 Prices: Φ8,000-Φ35,000 street / Φ12,000-Φ50,000 licensed.`,
 
   military_elite: `Generate {count} MILITARY/ELITE BCI cyberware products. Tier 4-5.
 Arcturus combat BCIs with tactical overlay. Multi-stream processing (4-8 simultaneous data feeds). EMP-hardened with Faraday mesh. Quantum-encrypted military comms. Direct automaton control interfaces (for combat drones, Iowan Behemoths — which are autonomous MACHINES, not life). Battlefield triage BCIs. Electronic warfare BCIs.
-Manufacturers: ARCTURUS DEFENSE SOLUTIONS (primary), TESSERA CORPONATION.
+Manufacturers: ARCTURUS DEFENSE SOLUTIONS (primary), TESSERA CorpoNation.
 Prices: Φ40,000-Φ200,000 street / Φ60,000-Φ300,000 licensed.
 Legality: Restricted or Military-Only.`,
 
   luxury_exotic: `Generate {count} LUXURY/EXOTIC BCI cyberware products. Tier 5.
 Custom artisan BCIs (limited runs <100 units). Full sensory recording/playback. Psionic-amplification (experimental). E.L.F. compatibility modules (Emergent Lifeform interfacing). Consciousness expansion. Synesthetic BCIs. Dream architecture BCIs.
-Manufacturers: TESSERA CORPONATION luxury line, artisan workshops, experimental labs, some with unknown/black market origins.
+Manufacturers: TESSERA CorpoNation luxury line, artisan workshops, experimental labs, some with unknown/black market origins.
 Prices: Φ150,000-Φ2,000,000+ street.
 Legality: Licensed to Prohibited.`,
 
