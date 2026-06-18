@@ -316,8 +316,12 @@ public class StoryQualityService
            1 = clear hero, clear villain, clear right answer
 
         PACING (1-10): Does tension build and release organically?
-          10 = Act structure earned, climax inevitable in retrospect, no flat zones
-           1 = events happen in random order with no tension curve
+          10 = Act structure earned, climax inevitable in retrospect, no flat zones;
+               action beats carry thematic weight; contemplative beats carry physical immediacy
+           1 = events happen in random order with no tension curve; action scenes are
+               pure choreography; reflective passages float unanchored in a body
+          Flag as bad: action that reveals nothing about character; thought that has no
+               physical ground (no sensation, posture, object, or temperature).
 
         CHARACTER_AUTHENTICITY (1-10): Do characters act from their psychology?
           10 = every decision traceable to who they are, surprises feel inevitable

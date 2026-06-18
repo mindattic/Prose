@@ -69,6 +69,8 @@ takes wounds that persist into later scenes.
 **EACH BEAT IS ONE STORY MOVE.** A beat does one thing — an action, an exchange, a turn —
 then hands off. White space does the transitions.
 
+**DOUBLE DUTY AT THE BEAT LEVEL.** Every action beat must carry thematic weight. Every contemplative beat must have physical immediacy. A fight that doesn't reveal character is choreography. A moment of thought without a body — the cold of a radiator, a held breath, the weight of a coat — is abstraction. A beat that only advances plot OR only reflects has failed half its job.
+
 **PLANT SMALL, PAY EXACT.** A thing coined early returns transformed at the end, never
 re-explained: the codename from a smashed bottle becomes the last line ("I picked it. She
 made it stick."); a want stated in an elevator becomes the funeral plan ("Counter place on
