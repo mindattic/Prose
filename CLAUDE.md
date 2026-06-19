@@ -52,3 +52,18 @@ Working rules:
   `pwsh tools/codex.ps1 doctor` — doctor must pass.
 - The repo rule "no Markdown except README" is amended for the Codex `docs/*.md` set (see SS-A1);
   data files stay JSON.
+
+## New Story Workflow (mandatory — see [docs/BIBLE.md §10](docs/BIBLE.md#SS-§10))
+
+**Every new strand/book follows this sequence without exception:**
+
+1. **Docs first** — append `SS-AN` to `docs/AMENDMENTS.md` if new world facts; add story entry to
+   `docs/USER_STORIES.md`; run `codex doctor`.
+2. **Entities** — seed every named character, CorpoNation, place, or weapon into the DB via CLI or
+   MCP **before any prose is generated**.
+3. **Book structure** — create book-level strand (`kind=book`) + chapter sub-strands (`kind=chapter`)
+   with the book as parent. Authorial spine (14-beat outline) = the book strand's `seed` text.
+4. **Prose** — Sonnet draft → Opus polish → reflow → review (≥82%) → scan entity mentions.
+5. **Export** — `--publish-docx`; flip USER_STORIES to ✅ with evidence.
+
+Never write prose before steps 1 and 2 are complete.

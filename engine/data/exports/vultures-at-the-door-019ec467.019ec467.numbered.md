@@ -444,21 +444,21 @@ Levin, who had been somewhere behind the glass, came forward a little. "Why," he
 
 She looked at him a long moment, took his measure the way she'd already taken it before, years ago, and was checking if it had changed. Then she took a photograph out of her coat — a real one, printed, soft at the corners from handling — and set it on the table facing herself, not them, and put one finger on it the way you touch something to make sure it's still there.
 
-"There's somebody this keeps safe," she said. "Alive, I'm a string people can pull to get to her. Gone — paid for, the money landing where I say — I'm not a string anymore. I ran it every way there is. It comes out the same every time." She turned the photo back into the coat. "Senna," she said, once, low, not to them. Then nothing. "So don't tell me it's tragic. It's the best deal on a bad table, and I'm the one who gets to make it. That's more than most people in this city ever get to say about how they go."
+"There's somebody this keeps safe," she said. "Alive, I'm a string people can pull to get to her. Gone — paid for, the money landing where I say — I'm not a string anymore. I ran it every way there is. It comes out the same every time." She turned the photo back into the coat. "Senna," she said, once, low, not to them. Then nothing. "So don't tell me it's tragic. It's the best deal on a bad table, and I'm the one who gets to make it."
 
 Nobody said anything for a while. The coffee machine hissed. Somewhere a fry cook scraped a grill.
 
 "Terms," Thomas said.
 
-She had them ready. The number, paid to a specific account, before — not after, before, she wasn't a fool. Painless; she'd want to be under, all the way under, before anything, and she had Yuen's name from somewhere and would only do it if a real doctor did it, no amateurs, no last-minute change of who held the syringe. And one more, the only one that cost her to say: that it look like what they needed it to look like, a girl who partied with the wrong rich boy and didn't wake up, because if it looked like that then nobody would ever go looking, and nobody going looking was the whole point.
+She had them ready. The number, paid to a specific account, before — not after, before, she wasn't a fool. Painless; she'd want to be under, all the way under, before anything, and she had Yuen's name from somewhere and would only do it if a real doctor did it, no amateurs, no last-minute change of who held the syringe. And one more: that it look like what they needed it to look like, a girl who partied with the wrong rich boy and didn't wake up.
 
 "You'll be in a bed next to a stranger," Thomas said. "A Lotus stranger. People are going to find you both and tell an ugly story about you to explain him. That story's going to be the only thing anybody ever knows about how you died."
 
-"Good," Maisy said. "Let them. An ugly story nobody questions is exactly what I'm buying." She drank the last of the coffee. "The one it's for will never hear it. She doesn't need a hero. She needs the people around her to stay good, and I'm buying that." She set the cup down, squared it on the saucer, the way you'd leave a thing tidy. "When?"
+"Good," Maisy said. "Let them. An ugly story nobody questions is exactly what I'm buying." She drank the last of the coffee. "The one it's for will never hear it." She set the cup down, squared it on the saucer, the way you'd leave a thing tidy. "When?"
 
 "Tomorrow, before dawn," Thomas said. "I'll send you the place."
 
-"Then I've got a day," she said, and stood, and put money on the table for her own coffee, which she did not have to do and did anyway.
+"Then I've got a day," she said, and stood, and put money on the table for her own coffee.
 
 In the Wagon, Levin didn't open the drawer at his feet, but he looked at it for a long time.
 
@@ -468,7 +468,7 @@ In the Wagon, Levin didn't open the drawer at his feet, but he looked at it for 
 
 "And we're going to kill her."
 
-"Yuen's going to help her do a thing she already decided to do," Thomas said, and heard how thin it was even as he said it, and drove, because the clock in the back said sixty-one hours and there was still a body four blocks behind them that the hunter hadn't finished making into a list.
+"Yuen's going to help her do a thing she already decided to do," Thomas said, and drove, because the clock in the back said sixty-one hours and there was still a body four blocks behind them that the hunter hadn't finished making into a list.
 
 [Beat 13]
 He knocked, and waited.

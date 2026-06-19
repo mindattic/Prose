@@ -399,7 +399,14 @@ public static class ServiceCollectionExtensions
         services.AddSingleton<EpisodeExportService>();
         services.AddSingleton<ChapterRecordingService>();
         services.AddSingleton<StrandMigrationService>();
-        services.AddSingleton<StrandWorkbenchService>();
+        services.AddSingleton<StrandWorkbenchService>(sp => new StrandWorkbenchService(
+            sp.GetRequiredService<IDbContextFactory<StreetSamuraiDbContext>>(),
+            sp.GetRequiredService<ElevenLabsTtsService>(),
+            sp.GetRequiredService<IPathProvider>(),
+            sp.GetRequiredService<IAudioStore>(),
+            sp.GetRequiredService<Microsoft.Extensions.Logging.ILogger<StrandWorkbenchService>>(),
+            sp.GetService<SettingsService>(),
+            sp.GetRequiredService<EntityRamificationService>()));
         services.AddSingleton<WritingQualityService>();
         services.AddSingleton(sp => new MotifService(
             sp.GetRequiredService<SettingsKvStore>(),
@@ -472,6 +479,30 @@ public static class ServiceCollectionExtensions
             sp.GetRequiredService<TechnologyRepository>().OnItemSaved += name => discovery.DiscoverFromEntity(name, "technology");
 
             return discovery;
+        });
+
+        // Entity-update → beat EntityStale propagation.
+        // Single factory creates the service AND wires OnEntitySaved on every
+        // canon repository so entity patches automatically flag referencing beats.
+        services.AddSingleton<EntityRamificationService>(sp =>
+        {
+            var ramSvc = new EntityRamificationService(
+                sp.GetRequiredService<IDbContextFactory<StreetSamuraiDbContext>>(),
+                sp.GetRequiredService<ILlmService>(),
+                sp.GetRequiredService<Microsoft.Extensions.Logging.ILogger<EntityRamificationService>>());
+
+            sp.GetRequiredService<CharacterRepository>().OnEntitySaved      += (id, name) => _ = Task.Run(() => ramSvc.ProcessEntityUpdateAsync(id, name));
+            sp.GetRequiredService<CorponationRepository>().OnEntitySaved    += (id, name) => _ = Task.Run(() => ramSvc.ProcessEntityUpdateAsync(id, name));
+            sp.GetRequiredService<DistrictRepository>().OnEntitySaved       += (id, name) => _ = Task.Run(() => ramSvc.ProcessEntityUpdateAsync(id, name));
+            sp.GetRequiredService<FactionRepository>().OnEntitySaved        += (id, name) => _ = Task.Run(() => ramSvc.ProcessEntityUpdateAsync(id, name));
+            sp.GetRequiredService<WeaponryRepository>().OnEntitySaved       += (id, name) => _ = Task.Run(() => ramSvc.ProcessEntityUpdateAsync(id, name));
+            sp.GetRequiredService<EquipmentRepository>().OnEntitySaved      += (id, name) => _ = Task.Run(() => ramSvc.ProcessEntityUpdateAsync(id, name));
+            sp.GetRequiredService<TechnologyRepository>().OnEntitySaved     += (id, name) => _ = Task.Run(() => ramSvc.ProcessEntityUpdateAsync(id, name));
+            sp.GetRequiredService<DistrictRepository>().OnEntitySaved        += (id, name) => _ = Task.Run(() => ramSvc.ProcessEntityUpdateAsync(id, name));
+            sp.GetRequiredService<PharmaceuticalRepository>().OnEntitySaved += (id, name) => _ = Task.Run(() => ramSvc.ProcessEntityUpdateAsync(id, name));
+            sp.GetRequiredService<CyberwareRepository>().OnEntitySaved      += (id, name) => _ = Task.Run(() => ramSvc.ProcessEntityUpdateAsync(id, name));
+
+            return ramSvc;
         });
 
         // LLM services — multi-provider with router

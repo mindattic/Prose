@@ -183,8 +183,8 @@ public class DocxExportService
                 if (isChapterStart[i])
                     tocEntries.Add((chapterTitle[i]!, TocAnchor(tocEntries.Count)));
 
-            // ── Table of Contents (only when there is more than one chapter) ──
-            if (chapterCount >= 2)
+            // ── Table of Contents (only when enabled and there is more than one chapter) ──
+            if (settings.DocxIncludeToc && chapterCount >= 2)
             {
                 body.AppendChild(BuildTocSdt(tocEntries));
                 body.AppendChild(PageBreak());

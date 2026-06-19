@@ -21,12 +21,13 @@ public class StrandReviewService
 {
     private readonly LegionClient legion;
     private readonly VotingConfiguration cfg;
+    private readonly SettingsService settings;
     private readonly StrandMarkdownExporter exporter;
     private readonly IDbContextFactory<StreetSamuraiDbContext> dbFactory;
     private readonly FindingsService findings;
     private readonly ILogger<StrandReviewService> log;
 
-    private const int MaxConcurrency = 10;
+    private int MaxConcurrency => settings.ReviewMaxConcurrency;
 
     /// <summary>When set, the reviewer persona is framed as a fan of this genre
     /// instead of the default cyberpunk fandom. E.g. "cosmic horror".</summary>
@@ -35,6 +36,7 @@ public class StrandReviewService
     public StrandReviewService(
         LegionClient legion,
         VotingConfiguration cfg,
+        SettingsService settings,
         StrandMarkdownExporter exporter,
         IDbContextFactory<StreetSamuraiDbContext> dbFactory,
         FindingsService findings,
@@ -42,6 +44,7 @@ public class StrandReviewService
     {
         this.legion = legion;
         this.cfg = cfg;
+        this.settings = settings;
         this.exporter = exporter;
         this.dbFactory = dbFactory;
         this.findings = findings;
@@ -49,6 +52,7 @@ public class StrandReviewService
     }
 
     public record ReviewRunResult(int Requested, int Saved, int Failed, double AvgScore, string ContentHash, string ExportPath);
+    public record ScoreHistoryPoint(DateTime RecordedAt, double Score, double? Sd, int ReviewCount);
 
     /// <summary>Distinct PersonaIds from the strand's most-recent review batch —
     /// used to re-run the SAME readers against a revised version (focus group).</summary>
@@ -76,7 +80,7 @@ public class StrandReviewService
         Guid strandId, int readers, IReadOnlyList<string>? personaIds = null,
         string? groupName = null, IProgress<int>? progress = null, CancellationToken ct = default)
     {
-        if (readers <= 0) readers = 1;
+        if (readers <= 0) readers = settings.ReviewReaders;
 
         var providers = ReviewProviderIds();
         if (providers.Count == 0)
@@ -172,7 +176,7 @@ public class StrandReviewService
         Guid strandId, int ballotCount, int proseCount,
         IProgress<int>? progress = null, CancellationToken ct = default)
     {
-        if (ballotCount <= 0) ballotCount = 120;
+        if (ballotCount <= 0) ballotCount = settings.ReviewBallots;
         if (proseCount < 0) proseCount = 0;
         var providers = ReviewProviderIds();
         if (providers.Count == 0)
@@ -207,6 +211,35 @@ public class StrandReviewService
             }, ct));
         }
         await Task.WhenAll(tasks);
+
+        // ── Retry failed ballots using only the providers that proved reachable. ──
+        // This replaces slots from any provider that couldn't connect (auth error,
+        // network, quota) without shrinking the panel below the requested count.
+        if (failed > 0 && !bag.IsEmpty)
+        {
+            var workingProviders = bag.Select(r => r.ProviderId).Distinct().ToList();
+            var retryPersonas = SampleEnrichedPersonas(failed);
+            var retryTasks = new List<Task>(failed);
+            var retriesDone = 0;
+            for (int i = 0; i < retryPersonas.Count; i++)
+            {
+                var persona = retryPersonas[i];
+                var provider = workingProviders[i % workingProviders.Count];
+                retryTasks.Add(Task.Run(async () =>
+                {
+                    await sem.WaitAsync(ct);
+                    try
+                    {
+                        var r = await BallotOnceAsync(strandId, export, persona, provider, ct);
+                        if (r != null) { r.FocusGroupName = groupName; bag.Add(r); }
+                    }
+                    catch (Exception ex) { log.LogWarning(ex, "Retry ballot failed: {P}", persona.Id); }
+                    finally { sem.Release(); progress?.Report(Interlocked.Increment(ref retriesDone) + done); }
+                }, ct));
+            }
+            await Task.WhenAll(retryTasks);
+            failed = 0;
+        }
 
         var saved = bag.ToList();
         if (saved.Count == 0)
@@ -515,7 +548,7 @@ Return ONLY a JSON object, nothing else:
     public async Task<StudyRunResult> RunSegmentStudyAsync(
         Guid strandId, int panelSize, IProgress<int>? progress = null, CancellationToken ct = default)
     {
-        if (panelSize <= 0) panelSize = 128;
+        if (panelSize <= 0) panelSize = settings.ReviewPanel;
         var providers = ReviewProviderIds();
         if (providers.Count == 0)
             throw new InvalidOperationException("No trusted LLM providers are configured with API keys — cannot run a study.");
@@ -899,9 +932,10 @@ Return ONLY a JSON object and nothing else:
     private async Task<string> SynthesizeSummaryAsync(
         List<StrandReview> reviews, double avg, Dictionary<string, int> dist, CancellationToken ct)
     {
-        // Judge provider (claude) synthesizes; fall back to any active provider.
-        var judge = cfg.ActiveProviderIds.Contains(cfg.JudgeProviderId)
-            ? cfg.JudgeProviderId
+        // Judge provider synthesizes; fall back to any active provider.
+        var judgeId = settings.ReviewJudgeProvider;
+        var judge = cfg.ActiveProviderIds.Contains(judgeId)
+            ? judgeId
             : cfg.ActiveProviderIds.FirstOrDefault() ?? "claude";
         var key = ResolveKey(judge);
         if (string.IsNullOrWhiteSpace(key)) return FallbackSummary(reviews, avg, dist);
@@ -1064,6 +1098,26 @@ Be specific; do not invent praise the reviews don't support.";
                 if (perBeat.TryGetValue(pos, out var pct)) { ordered[pos - 1].Score = pct; ordered[pos - 1].ScoredAt = now; }
         }
 
+        // Append a score-history row so we can chart score evolution over time.
+        if (strand.Score.HasValue)
+        {
+            var mean = strand.Score.Value;
+            double? sd = latestPerPersona.Count > 1
+                ? Math.Sqrt(latestPerPersona.Sum(r => Math.Pow((double)r.Score - mean, 2)) / latestPerPersona.Count)
+                : null;
+            var beatCount = await db.StrandBeats.CountAsync(sb => sb.StrandId == strandId && sb.IsEnabled, ct);
+            db.StrandScoreHistories.Add(new Data.Entities.StrandScoreHistory
+            {
+                StrandId    = strandId,
+                RecordedAt  = strand.ScoredAt ?? DateTime.UtcNow,
+                ContentHash = latestHash,
+                MeanScore   = mean,
+                Sd          = sd,
+                ReviewCount = latestPerPersona.Count,
+                BeatCount   = beatCount,
+            });
+        }
+
         await db.SaveChangesAsync(ct);
 
         // Auto-flag a freshly-crowned winner (crossed <80 → ≥80) for a voice
@@ -1088,6 +1142,53 @@ Be specific; do not invent praise the reviews don't support.";
         }
     }
 
+    // ── Score history (for charting) ─────────────────────────────────────
+
+    /// <summary>
+    /// Returns the score timeline for a strand.
+    /// For parent strands (books), aggregates child histories by day.
+    /// </summary>
+    public async Task<List<ScoreHistoryPoint>> GetScoreHistoryAsync(Guid strandId, CancellationToken ct = default)
+    {
+        await using var db = await dbFactory.CreateDbContextAsync(ct);
+
+        var childIds = await db.Strands
+            .Where(s => s.ParentStrandId == strandId)
+            .Select(s => s.Id)
+            .ToListAsync(ct);
+
+        if (childIds.Count == 0)
+        {
+            return await db.StrandScoreHistories
+                .Where(h => h.StrandId == strandId)
+                .OrderBy(h => h.RecordedAt)
+                .Select(h => new ScoreHistoryPoint(h.RecordedAt, h.MeanScore, h.Sd, h.ReviewCount))
+                .ToListAsync(ct);
+        }
+
+        // Parent strand: per-day weighted average across all children.
+        var rows = await db.StrandScoreHistories
+            .Where(h => childIds.Contains(h.StrandId))
+            .OrderBy(h => h.RecordedAt)
+            .ToListAsync(ct);
+
+        return rows
+            .GroupBy(h => h.RecordedAt.Date)
+            .Select(g =>
+            {
+                var perChild = g.GroupBy(h => h.StrandId)
+                                .Select(sg => sg.OrderByDescending(h => h.RecordedAt).First())
+                                .ToList();
+                return new ScoreHistoryPoint(
+                    RecordedAt:  g.Key,
+                    Score:       perChild.Average(h => h.MeanScore),
+                    Sd:          null,
+                    ReviewCount: perChild.Sum(h => h.ReviewCount));
+            })
+            .OrderBy(p => p.RecordedAt)
+            .ToList();
+    }
+
     // ── helpers ──────────────────────────────────────────────────────────
 
     private string? ResolveKey(string provider)
@@ -1099,7 +1200,15 @@ Be specific; do not invent praise the reviews don't support.";
     /// <summary>Providers used for reviews — all active trusted providers (Claude,
     /// OpenAI, DeepSeek, Gemini), round-robined for model + temperament diversity.
     /// (Single chokepoint: narrow this here if a provider ever needs excluding.)</summary>
-    private List<string> ReviewProviderIds() => cfg.ActiveProviderIds.ToList();
+    private List<string> ReviewProviderIds()
+    {
+        var active = cfg.ActiveProviderIds;
+        var allowed = new HashSet<string>(
+            settings.ReviewAllowedProviders
+                .Split(',', StringSplitOptions.RemoveEmptyEntries | StringSplitOptions.TrimEntries),
+            StringComparer.OrdinalIgnoreCase);
+        return allowed.Count > 0 ? active.Where(p => allowed.Contains(p)).ToList() : active;
+    }
 
     /// <summary>Distinct enriched personas (real personalities, not the empty
     /// per-provider defaults), drawn without replacement.</summary>

@@ -156,6 +156,26 @@ updated: 2026-06-15
   the cyberspace DOM divs across `App.razor`, `Home.razor`, `CategoryBoard.razor`, `MainLayout.razor`;
   full-solution build green; the dark `.app-shell` base theme unchanged.)*
 
+## Epic H — GLMZ Books in progress
+
+> Full KDP-paperback-length books set in the GLMZ universe. Bible-first → chapter-by-chapter
+> workflow; each book gets a book-level strand + chapter sub-strands + beats. Prose written after
+> all entities are seeded per [SS-LAW-1](BIBLE.md#SS-§5).
+
+- **SS-US-H1 ⬜** As the author, *Underlying Connection* is written as a dual-POV GLMZ novel
+  (~80k words, 3 acts, ~28 chapters, alternating Amara Osei / Seto Banda POV). See
+  [SS-A6](AMENDMENTS.md) for CorpoNation + character canon. *Acceptance: book strand seeded +
+  all chapters drafted + full-book review panel ≥85%.*
+  - **H1a ✅** Entities seeded: Amara Osei (character), Seto Banda (character), Ciro Fonseca
+    (character), Orison Neuretics (corponation). All four in DB before any prose is generated.
+    *(CLI `--add-character` ×3 + `--add-corponation` ×1; seeded 2026-06-19.)*
+  - **H1b ✅** Book-level strand + 28 chapter sub-strands created (kind=book + kind=chapter).
+    *(slug underlying-connection-019ee11e; 28 chapter stubs parented; seeded 2026-06-19.)*
+  - **H1c ⬜** Act 1 (~10 chapters, ~25k words) written to first-draft standard.
+  - **H1d ⬜** Act 2 (~12 chapters, ~35k words) written to first-draft standard.
+  - **H1e ⬜** Act 3 (~6 chapters, ~20k words) written to first-draft standard.
+  - **H1f ⬜** Opus polish pass + full-book review panel ≥85%.
+
 ## Priority backlog
 
 > Dependency-ordered toward the headline goal (a fresh seed → published, reviewed, canon-consistent

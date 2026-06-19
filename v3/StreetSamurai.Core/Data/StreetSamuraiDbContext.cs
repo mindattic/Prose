@@ -111,6 +111,7 @@ public class StreetSamuraiDbContext : DbContext
     // ordered composition (replaces Book/Chapter/Episode), StrandBeat =
     // junction. The whole system migrates onto these three.
     public DbSet<Beat>               Beats               => Set<Beat>();
+    public DbSet<BeatEntityMention>  BeatEntityMentions  => Set<BeatEntityMention>();
     public DbSet<Strand>             Strands             => Set<Strand>();
     public DbSet<StrandBeat>         StrandBeats         => Set<StrandBeat>();
     public DbSet<StrandPublication>  StrandPublications  => Set<StrandPublication>();
@@ -118,6 +119,8 @@ public class StreetSamuraiDbContext : DbContext
     // Persona reader-reviews + their Amazon-style aggregate summary (strands).
     public DbSet<StrandReview>          StrandReviews          => Set<StrandReview>();
     public DbSet<StrandReviewSummary>   StrandReviewSummaries  => Set<StrandReviewSummary>();
+    // Append-only score timeline — one row per RecomputeScoresAsync call.
+    public DbSet<StrandScoreHistory>    StrandScoreHistories   => Set<StrandScoreHistory>();
     // Persona quality-reviews for canon entities (characters, weapons, tech, etc.).
     public DbSet<EntityReview>          EntityReviews          => Set<EntityReview>();
     public DbSet<EntityReviewSummary>   EntityReviewSummaries  => Set<EntityReviewSummary>();
@@ -431,6 +434,17 @@ public class StreetSamuraiDbContext : DbContext
             e.HasIndex(x => new { x.StrandId, x.SortKey });
             e.HasIndex(x => x.BeatId);
         });
+        b.Entity<BeatEntityMention>(e =>
+        {
+            e.HasKey(x => new { x.BeatId, x.EntityId });
+            e.HasOne(x => x.Beat).WithMany()
+                .HasForeignKey(x => x.BeatId).OnDelete(DeleteBehavior.Cascade);
+            e.HasOne(x => x.Entity).WithMany()
+                .HasForeignKey(x => x.EntityId).OnDelete(DeleteBehavior.Cascade);
+            e.HasIndex(x => x.EntityId);
+            e.Property(x => x.EntityName).HasMaxLength(200);
+            e.Property(x => x.EntityType).HasMaxLength(50);
+        });
         b.Entity<StrandPublication>(e =>
         {
             e.HasKey(x => x.Id);
@@ -470,6 +484,14 @@ public class StreetSamuraiDbContext : DbContext
             e.HasKey(x => x.Id);
             e.Property(x => x.ContentHash).HasMaxLength(64);
             e.HasIndex(x => x.StrandId).IsUnique();
+            e.HasOne(x => x.Strand).WithMany()
+                .HasForeignKey(x => x.StrandId).OnDelete(DeleteBehavior.Cascade);
+        });
+        b.Entity<StrandScoreHistory>(e =>
+        {
+            e.HasKey(x => x.Id);
+            e.Property(x => x.ContentHash).HasMaxLength(64);
+            e.HasIndex(x => new { x.StrandId, x.RecordedAt });
             e.HasOne(x => x.Strand).WithMany()
                 .HasForeignKey(x => x.StrandId).OnDelete(DeleteBehavior.Cascade);
         });

@@ -165,3 +165,46 @@ faction tags → `EntityTags` + backfill CLI + 13 parity tests; live 163/0 parit
 backup `backups/StreetSamurai_preFactionBlobDrop_20260615.bak`). Character was already relational.
 ⬜ ~24 types remain, each following the RFC 0007 recipe; the blob stays source-of-truth per type
 until that type flips, so the engine is always consistent.
+
+## SS-A6 — *Underlying Connection* canonical design; Orison Neuretics canonized (supersedes —)
+
+**What changed.** [GLMZ] A new CorpoNation, three new characters, and one narrative-law ruling are
+canonized as the design basis for the *Underlying Connection* book.
+
+**Orison Neuretics.** Premium neuretic cultivation and maintenance — the largest single operator in
+GLMZ. Brand register: care, precision, trust ("Grown for you"). True business: managed-liability
+suppression. Orison holds master maintenance contracts across GLMZ; mid-tier operators (Cellvault,
+others) hold sub-contracts under Orison evaluation. **Batch 44-C** (certified 2222, 847 recipients,
+accelerated degradation 18–24 months post-certification, internal classification *managed liability*)
+is canon and must never be retconned or resolved off-page. The associated calibration protocol uses
+**targeted associative-node suppression** — specific connections severed, not wholesale erasure;
+affected clients retain the memory but lose its meaning.
+
+**New characters.** Amara Osei (she/her; neuretic maintenance tech, Cellvault; Lagos-Chicago
+diaspora; batch-44-C recipient). Seto Banda (he/him; independent data courier, Gray Zone;
+Japanese-Kenyan; eleven years of sealed-system reputation). Ciro Fonseca (he/him; Orison internal
+fixer; Portuguese-Brazilian; straight razor, hair within one millimeter of Orison maximum length
+standard — see narrative law below).
+
+**Narrative law — Ciro Fonseca.** The straight razor is his signature; it appears in prose as a
+grooming gesture before it appears as a threat. The charm-to-sociopath arc is executed so the reader
+is genuinely torn between Ciro and Seto as potential partners for Amara before the reveal. The reveal
+is a shock. Neither Ciro's genuine capability nor his ultimate nature may be telegraphed early. The
+razor's dichotomy with Ekow Ato's machete (intimate vs. declarative; preening tool turned lethal vs.
+agricultural implement announced) is a deliberate tonal contrast and must be preserved.
+
+**Ekow Ato.** Reappears in this book under a **Gray Zone contract** (not a Lotus contract); hired on
+a false premise (stated as "courier moving stolen proprietary neuretic data"). He gives Seto 7 days
+and withdraws when the premise collapses on the story-publication day. He does not become an ally; he
+becomes an absence. His VATD-established doctrines (deliberate patience, minimum footprint,
+compartmentation, information hygiene; machete; handkerchief folded in quarters) carry forward
+unchanged.
+
+**Book design.** *Underlying Connection* is a KDP-paperback-length GLMZ novel (~80k words, 3 acts,
+~28 chapters, dual Amara/Seto POV alternating per chapter). The 14-beat story spine at
+`underlying-connection.strand` is the **authorial outline**, not final prose. Final prose follows the
+standard bible-first → chapter-by-chapter workflow.
+
+**Why.** Entities and canon decisions must be in the DB and docs before prose is generated
+([SS-LAW-1](BIBLE.md#SS-§5), [SS-LAW-4](BIBLE.md#SS-§5)). This amendment is the authorial decision
+record; entity rows follow in the same session.

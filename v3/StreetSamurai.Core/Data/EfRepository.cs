@@ -57,6 +57,13 @@ public class EfRepository<T> : IExportableRepository, IJsonImportable where T : 
 
     public event Action<string>? OnItemSaved;
 
+    /// <summary>
+    /// Fired after every successful save with the entity's DB id and canonical name.
+    /// Consumers that need the id (e.g. EntityRamificationService) subscribe here
+    /// instead of <see cref="OnItemSaved"/> which only carries the name.
+    /// </summary>
+    public event Action<Guid, string>? OnEntitySaved;
+
     /// <summary>Display-friendly name (matches the legacy file-folder label tests assert on).</summary>
     public string RepoName => RepoNameMap.TryGetValue(entityType, out var pretty) ? pretty : entityType.Replace("_", " ");
 
@@ -222,6 +229,7 @@ public class EfRepository<T> : IExportableRepository, IJsonImportable where T : 
 
         InvalidateCache();
         OnItemSaved?.Invoke(name);
+        OnEntitySaved?.Invoke(id, name);
     }
 
     public void SaveAll(List<T> items)

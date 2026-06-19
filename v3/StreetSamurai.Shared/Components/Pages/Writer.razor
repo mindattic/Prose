@@ -1,0 +1,60 @@
+@page "/writer"
+@using Microsoft.EntityFrameworkCore
+@inject IDbContextFactory<StreetSamurai.Core.Data.StreetSamuraiDbContext> DbFactory
+@inject NavigationManager Nav
+@inject IJSRuntime JS
+
+<div class="writer-pick">
+    <div class="writer-pick-label">
+        <i class="bi bi-pencil-square me-2"></i>Select a strand to write
+    </div>
+    <div class="writer-pick-row">
+        <select class="form-select writer-pick-select" @bind="selectedSlug" @bind:after="OnPicked">
+            <option value="">— select a strand —</option>
+            @foreach (var s in strands)
+            {
+                <option value="@s.Slug">@s.Title</option>
+            }
+        </select>
+        <a href="/strands" class="btn btn-outline-secondary btn-sm">Browse all</a>
+    </div>
+</div>
+
+@code {
+    private record StrandRow(string Slug, string Title);
+    private List<StrandRow> strands = [];
+    private string selectedSlug = "";
+
+    protected override void OnInitialized()
+    {
+        using var db = DbFactory.CreateDbContext();
+        strands = db.Strands.AsNoTracking()
+            .Where(s => s.Slug != null && s.Slug != "")
+            .OrderByDescending(s => s.UpdatedAt)
+            .Select(s => new StrandRow(s.Slug, s.Title))
+            .Take(150)
+            .ToList();
+    }
+
+    protected override async Task OnAfterRenderAsync(bool firstRender)
+    {
+        if (!firstRender) return;
+        try
+        {
+            var saved = await JS.InvokeAsync<string>("localStorage.getItem", "writer.strand");
+            if (!string.IsNullOrEmpty(saved) && strands.Any(s => s.Slug == saved))
+            {
+                selectedSlug = saved;
+                StateHasChanged();
+            }
+        }
+        catch { }
+    }
+
+    private async Task OnPicked()
+    {
+        if (string.IsNullOrEmpty(selectedSlug)) return;
+        try { await JS.InvokeVoidAsync("localStorage.setItem", "writer.strand", selectedSlug); } catch { }
+        Nav.NavigateTo($"/strand/{selectedSlug}");
+    }
+}

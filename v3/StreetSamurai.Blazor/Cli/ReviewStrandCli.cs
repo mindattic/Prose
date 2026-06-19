@@ -27,7 +27,9 @@ public static class ReviewStrandCli
     public static async Task<int> RunAsync(string[] args, IServiceProvider services)
     {
         string? id = null, slug = null, code = null, group = null, genre = null;
-        int readers = 50, panel = 128, ballots = 120, prose = 10;
+        var settings = services.GetRequiredService<SettingsService>();
+        int readers = settings.ReviewReaders, panel = settings.ReviewPanel,
+            ballots = settings.ReviewBallots, prose = settings.ReviewProse;
         bool samePersonas = false, study = false, census = false;
         for (int i = 0; i < args.Length; i++)
         {
@@ -54,8 +56,6 @@ public static class ReviewStrandCli
             Console.Error.WriteLine("Usage: ss --review-strand (--id <guid|prefix> | --slug <slug> | --code <code>) [--readers N]");
             return 1;
         }
-        if (readers <= 0) readers = 50;
-
         var dbFactory = services.GetRequiredService<IDbContextFactory<StreetSamuraiDbContext>>();
         var reviewer  = services.GetRequiredService<StrandReviewService>();
         if (!string.IsNullOrWhiteSpace(genre))
@@ -124,7 +124,7 @@ public static class ReviewStrandCli
         //    --group, --same-personas) opt out into full-review runs below. ──
         if (!census && string.IsNullOrWhiteSpace(group) && !samePersonas)
         {
-            if (ballots <= 0) ballots = 120;
+            if (ballots <= 0) ballots = 20;
             if (prose < 0) prose = 0;
             Console.WriteLine("[review-strand] SAMPLED REVIEW (economical default):");
             Console.WriteLine($"   Id:    {strandId}");
@@ -132,7 +132,7 @@ public static class ReviewStrandCli
             Console.WriteLine($"   Title: {strandTitle}");
             Console.WriteLine($"   {ballots} score-ballots (round-robin across the trusted-4) + {prose} prose upgrades + per-beat study — one pass.");
             Console.WriteLine("[review-strand] Running…");
-            var bp = new Progress<int>(k => { if (k == ballots || k % 20 == 0) Console.WriteLine($"   …{k}/{ballots} ballots done"); });
+            var bp = new Progress<int>(k => { if (k == ballots || k % 5 == 0) Console.WriteLine($"   …{k}/{ballots} ballots done"); });
             try
             {
                 var sr = await reviewer.RunSampledReviewAsync(strandId, ballots, prose, bp);

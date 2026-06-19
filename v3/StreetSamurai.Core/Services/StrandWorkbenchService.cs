@@ -55,7 +55,8 @@ public class StrandWorkbenchService
         IPathProvider paths,
         IAudioStore audioStore,
         ILogger<StrandWorkbenchService> log,
-        SettingsService? settings = null)
+        SettingsService? settings = null,
+        EntityRamificationService? ramification = null)
     {
         this.dbFactory = dbFactory;
         this.tts = tts;
@@ -63,7 +64,10 @@ public class StrandWorkbenchService
         this.audioStore = audioStore;
         this.settings = settings;
         this.log = log;
+        this.ramification = ramification;
     }
+
+    private readonly EntityRamificationService? ramification;
 
     // ── Reads ────────────────────────────────────────────────────────────
 
@@ -175,6 +179,11 @@ public class StrandWorkbenchService
                 fresh?.UpdatedAt ?? DateTime.UtcNow,
                 fresh?.Text ?? "");
         }
+
+        // Fire-and-forget: re-index which entities this beat mentions so
+        // future entity saves can propagate EntityStale to this beat.
+        if (ramification != null)
+            _ = Task.Run(() => ramification.IndexBeatMentionsAsync(beatId, trimmed), CancellationToken.None);
     }
 
     /// <summary>Update a beat's narrative metadata — the fields that drive

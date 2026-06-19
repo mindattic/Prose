@@ -27,8 +27,7 @@ namespace StreetSamurai.Mcp;
 /// hand-written prose, not the MCP draft pipeline. Uncomment to re-expose
 /// <c>draft_combat_scene</c>.
 /// </summary>
-// [McpServerToolType] — disabled: combat scenes go through hand-written prose,
-// not the MCP draft pipeline. Uncomment to re-expose draft_combat_scene.
+[McpServerToolType]
 public class CombatTools
 {
     private readonly CombatSceneWriter writer;

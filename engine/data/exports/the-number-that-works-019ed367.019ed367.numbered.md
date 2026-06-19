@@ -1,4 +1,4 @@
-# On Call
+# The Number That Works
 
 _In the GLMZ — the sprawling megacity that devoured the Midwest — Elias runs his life from the forty-second floor. He coordinates contracts, manages logistics, and hasn't been at street level in forty-two days. He is very good at staying above it all.
 
@@ -477,7 +477,7 @@ He goes up the elevator. The apartment smells of ferrocement. He sets the bag do
 He goes to the window. He looks at the street.
 
 [Beat 20]
-He dials the number on a Thursday evening, nine days after he returns. He is on the balcony. He has been on the balcony every evening since he got back â€” not because the outside is easier now, but because it is different in a way he wants to keep measuring.
+He dials the number on a Thursday evening, nine days after he returns. He is on the balcony. He has been on the balcony every evening since he got back — not because the outside is easier now, but because it is different in a way he wants to keep measuring.
 
 The Spine's cargo runs pulse to the north. The lake spreads east, the same gray line it has always been, carrying the light at this hour in a way that makes it look briefly like it goes somewhere. The air smells like lake water and factory rain and the green-penny note of volt rats in the junction box below, their dry shifting audible from here on quiet evenings. This is a quiet evening.
 
@@ -485,7 +485,7 @@ He had prepared a question. He has been refining the question for nine days: did
 
 The number rings.
 
-It connects â€” not to a voice, but to the brief static of an open line, the sound of a space held rather than a space empty. A second, maybe two.
+It connects — not to a voice, but to the brief static of an open line, the sound of a space held rather than a space empty. A second, maybe two.
 
 Then it doesn't.
 
@@ -493,7 +493,7 @@ The line closes cleanly, no drop tone, no record in his call log. Whatever answe
 
 He stays on the balcony a while.
 
-He hadn't asked the first question. He knows, standing here, what kind of silence that was: a satellite three times the distance of the Moon that can read his intake forms and see him on his balcony and track the specific eleven-minute quality of how he closes a loop â€” and has no mouth. The open line is the closest thing it has to a hand. He thinks about the mass driver barrel aimed at the equatorial sky, four meters across, and the years of careful operations, and Tadesse maintaining equipment for something that has never introduced itself, and Siosaia deciding not to figure it out further, and Druh aligning the transfer documentation on his desk.
+He hadn't asked the first question. He knows, standing here, what kind of silence that was: a satellite six thousand miles up that can read his intake forms and see him on his balcony and track the specific eleven-minute quality of how he closes a loop — and has no mouth. The open line is the closest thing it has to a hand. He thinks about the mass driver barrel aimed at the equatorial sky, four meters across, and the years of careful operations, and Tadesse maintaining equipment for something that has never introduced itself, and Siosaia deciding not to figure it out further, and Druh aligning the transfer documentation on his desk.
 
 The number works, Druh had said. That's the important part.
 
