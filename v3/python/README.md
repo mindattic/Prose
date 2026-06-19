@@ -1,34 +1,13 @@
-# Lore Triples Pipeline
+# v3/python — SPO triple pipeline
 
-A Python-based machine learning pipeline that reads 10,000+ worldbuilding entity files, extracts every factual claim as a Subject-Predicate-Object triple, groups semantically equivalent claims using vector embeddings, and determines consensus based on source agreement — then flags and optionally repairs inconsistencies.
+A Python-based consistency pipeline for the StreetSamurai canon. Reads entity JSON files from `engine_data/`, extracts every factual claim as a Subject-Predicate-Object triple via the Claude API, clusters semantically equivalent claims using sentence-transformers + HDBSCAN, and flags inconsistencies by consensus vote. Auto-repair applies high-confidence fixes back to the source files.
 
 **Three technologies in one system:**
 - **LLM** (Claude API) — extracts structured claims from unstructured text
 - **ML** (sentence-transformers + HDBSCAN) — embeds and clusters semantically similar claims
-- **Statistical consensus** — determines what's "true" by source agreement, flags disagreements
+- **Statistical consensus** — determines what is "true" by source agreement, flags disagreements
 
-## Quick Start
-
-```bash
-# Navigate to the pipeline
-cd D:\Projects\MindAttic\StreetSamurai\v3\python
-
-# Run everything — extract, embed, cluster, score, and auto-repair
-python run_pipeline.py
-
-# When done, query the results
-python query.py --stats                          # Dashboard of numbers
-python query.py --flagged                        # All inconsistencies
-python query.py "Arcturus Defense Solutions"      # Query a specific subject
-
-# Refresh the app — Tools > Lore Triples shows results
-```
-
-**One command does everything:** extraction, embedding, clustering, scoring, and auto-repair of 90%+ confidence fixes.
-
-**Resume-safe:** Stop it anytime (Ctrl+C). Run `python run_pipeline.py` again — it picks up where it left off.
-
-**Takes hours** for 10,000+ files (mostly API time for extraction). Prints progress every 100 files.
+The pipeline is resume-safe: stop it at any point and re-run — it picks up where it left off.
 
 ## Setup
 
@@ -39,211 +18,79 @@ cp .env.example .env
 # Edit .env with your Anthropic API key
 ```
 
-### Dependencies
+### Dependencies (`requirements.txt`)
 
 | Package | Purpose |
-|---------|---------|
-| `anthropic` | Claude API for SPO triple extraction |
-| `sentence-transformers` | all-MiniLM-L6-v2 model for embedding claims as vectors |
-| `hdbscan` | Density-based clustering to group equivalent claims |
+| --- | --- |
+| `anthropic` | Claude API for SPO extraction |
+| `sentence-transformers` | `all-MiniLM-L6-v2` for 384-dim embeddings |
+| `hdbscan` | Density-based clustering |
 | `scikit-learn` | Supporting ML utilities |
-| `numpy` | Vector math for embeddings |
-| `python-dotenv` | Environment variable management |
-| `rich` | Terminal UI (progress bars, tables, colored output) |
+| `numpy` | Vector math |
+| `python-dotenv` | `.env` loading |
+| `rich` | Terminal progress bars and tables |
+| `httpx` | HTTP client |
 
-### Configuration (.env)
+### Configuration (`.env`)
 
 ```
-ANTHROPIC_API_KEY=sk-ant-...     # Your Claude API key
-DATA_DIR=../../engine/data        # Path to entity JSON files
-DB_PATH=lore-triples.db                  # SQLite database for results
-BATCH_SIZE=10                     # Files between rate-limit pauses
-SIMILARITY_THRESHOLD=0.87         # Cosine similarity for claim matching
+ANTHROPIC_API_KEY=sk-ant-...
+DATA_DIR=../../engine_data
+DB_PATH=lore-triples.db
+BATCH_SIZE=10
+SIMILARITY_THRESHOLD=0.87
 ```
 
-## Pipeline Phases
-
-### Phase 1: Extraction (`extract.py`)
-
-Sends each entity's JSON to the Claude API with a structured prompt that extracts atomic factual claims as Subject-Predicate-Object triples.
-
-**Example:** Given a weapon entity with description "A reliable mid-range sidearm manufactured by Hearthstone Firearms, popular among Circuit workers", it extracts:
-```json
-[
-  {"subject": "Hearthstone HM-7", "predicate": "is_a", "object": "pistol", "sentence": "Hearthstone HM-7 is a pistol"},
-  {"subject": "Hearthstone HM-7", "predicate": "manufactured_by", "object": "Hearthstone Firearms", "sentence": "Hearthstone HM-7 is manufactured by Hearthstone Firearms"},
-  {"subject": "Hearthstone HM-7", "predicate": "popular_among", "object": "Circuit workers", "sentence": "Hearthstone HM-7 is popular among Circuit workers"}
-]
-```
-
-**Resume-safe:** Tracks which files have been processed. Restart anytime — it picks up where it left off. Checkpoints every 50 files.
+## Quick start
 
 ```bash
-python extract.py                    # Process all files
-python extract.py --limit 50         # Test with 50 files
-python extract.py --repo documents   # Only process one repo
-python extract.py --dry-run          # Preview without API calls
+# Full pipeline — extract, embed, cluster, score, auto-repair
+python run_pipeline.py
+
+# Query results
+python query.py --stats          # dashboard
+python query.py --flagged        # all inconsistencies
+python query.py "Entity Name"    # all claims about one entity
 ```
 
-### Phase 2: Embedding (`embed.py`)
+**Takes hours** for 10,000+ files (API time dominates). Prints progress every 100 files.
 
-Converts each triple's natural language sentence into a 384-dimensional vector using the `all-MiniLM-L6-v2` model from sentence-transformers. This enables semantic comparison — "manufactured by Arcturus" and "made by Arcturus" become nearly identical vectors even though the words differ.
+## Pipeline phases
 
-**Resume-safe:** Only embeds triples that don't already have embeddings.
+| Phase | Script | What it does |
+| --- | --- | --- |
+| 1 | `extract.py` | Claude API → SPO triples per entity file |
+| 2 | `embed.py` | sentence-transformers → 384-dim vectors |
+| 3 | `cluster.py` | HDBSCAN → semantic groupings |
+| 4+5 | `score.py` | consensus vote, confidence scoring, flag disagreements |
+| 6 | `query.py` | CLI search over results |
+| 7 | `repair.py` | Apply high-confidence fixes to source JSON files |
 
 ```bash
-python embed.py
+python run_pipeline.py --limit 50         # test with 50 files
+python run_pipeline.py --skip-extract     # re-run from embedding onward
+python run_pipeline.py --phase score      # single phase
+python run_pipeline.py --dry-run
+
+python repair.py --dry-run                # always preview before applying
+python repair.py --min-confidence 0.9     # apply high-confidence repairs
 ```
 
-### Phase 3: Clustering (`cluster.py`)
+## Database (`lore-triples.db`)
 
-Uses HDBSCAN (Hierarchical Density-Based Spatial Clustering) to group embedded triples that represent the same claim stated different ways. Each cluster = one "disputed fact" that multiple sources may agree or disagree on.
+SQLite. Tables: `triples`, `clusters`, `fact_scores`, `flagged_triples`, `processing_log`.
 
-```bash
-python cluster.py                          # Default settings
-python cluster.py --min-cluster-size 3     # Adjust sensitivity
-python cluster.py --min-samples 2
-```
+## C# integration
 
-### Phase 4+5: Scoring & Flagging (`score.py`)
+`LoreTripleService` in the Blazor app reads `lore-triples.db` in read-only mode at runtime. No Python dependency at runtime. The `/lore-triples` Tools page shows the dashboard, subject search, and flagged inconsistencies panel.
 
-For each cluster of claims, counts how many unique sources assert each variant. The most-agreed-upon value becomes the **consensus**. Confidence = agreeing sources / total sources. Any triple that disagrees with consensus is flagged.
+Run the pipeline periodically after content generation, then reload the app.
 
-```bash
-python score.py                        # Score with default threshold
-python score.py --min-confidence 0.6   # Show contested claims below threshold
-```
+## Other scripts
 
-### Phase 6: Query (`query.py`)
-
-CLI tool to search the results database. Query any subject, view flagged inconsistencies, or check pipeline statistics.
-
-```bash
-python query.py "Arcturus Defense Solutions"   # All claims about Arcturus
-python query.py "Meridian 88"                  # All claims about the city
-python query.py --flagged                      # Show all inconsistencies
-python query.py --flagged --limit 20           # Top 20 inconsistencies
-python query.py --stats                        # Pipeline statistics
-```
-
-### Phase 7: Repair (`repair.py`)
-
-Reads flagged inconsistencies and optionally updates the source JSON files with consensus values. **Always preview with --dry-run first.**
-
-```bash
-python repair.py --dry-run                     # Preview all repairs
-python repair.py --dry-run --min-confidence 0.9  # Preview high-confidence only
-python repair.py --min-confidence 0.9          # Apply high-confidence repairs
-python repair.py --min-confidence 0.9 --limit 50  # Apply first 50 repairs
-```
-
-### Master Runner (`run_pipeline.py`)
-
-Executes all phases in sequence. Resume-safe — restart at any point.
-
-```bash
-python run_pipeline.py                    # Full pipeline (hours for 10k files)
-python run_pipeline.py --limit 50         # Test with 50 files
-python run_pipeline.py --repo documents   # Only one repo
-python run_pipeline.py --skip-extract     # Re-run from embedding onward
-python run_pipeline.py --phase score      # Run a single phase
-python run_pipeline.py --dry-run          # Preview extraction only
-```
-
-## Database Schema (`db_schema.py`)
-
-SQLite database (`lore-triples.db`) with these tables:
-
-| Table | Purpose |
-|-------|---------|
-| `triples` | Every extracted SPO claim with source file, embedding, and cluster assignment |
-| `clusters` | Cluster metadata (representative sentence, member count, source count) |
-| `fact_scores` | Consensus value per cluster with confidence score |
-| `flagged_triples` | Claims that disagree with consensus, with correct value |
-| `processing_log` | Audit trail of pipeline runs |
-
-## C# Integration
-
-The Blazor app includes a `LoreTripleService` that reads `lore-triples.db` in read-only mode. No Python dependency at runtime. The Lore Triples page (`/lore-triples` under Tools) shows:
-
-- Dashboard with stats (triples, sources, clusters, consensus claims, flags, confidence)
-- Subject search with confidence scores
-- Flagged inconsistencies panel
-
-Run the Python pipeline periodically (after content generation), then refresh the app to see updated results.
-
-## What It Catches
-
-- **Contradictions:** File A says "manufactured by Arcturus", File B says "manufactured by TESSERA" for the same weapon
-- **Date disagreements:** Three news articles date the same event differently
-- **Orphaned references:** "Bore Rats" mentioned by 22 characters but no faction entry exists
-- **Naming inconsistencies:** "Quanta" vs "Phi" for the same currency
-- **Location mismatches:** Character's description says "Circuit" but their district field says "Laceworks"
-- **Attribute drift:** An entity's properties described differently across documents
-
-## Character Portrait Generator (`describe.py`)
-
-Generates FBI/NCIC-style physical descriptions and Midjourney-ready image prompts for all character entities. Uses the Claude API to analyze each character's existing data (name, role, description, augmentations) and produce grounded physical descriptions that respect the Ubiquitous Diaspora naming/heritage conventions.
-
-**Output:** Adds `physical_description` (object) and `image_prompt` (string) fields to each character JSON file.
-
-**Resume-safe:** Skips characters that already have a `physical_description` field.
-
-```bash
-python describe.py                    # Process all 1200+ characters
-python describe.py --limit 10         # Test with 10 characters
-python describe.py --dry-run          # Preview without API calls
-python describe.py --concurrency 30   # Override parallel request count
-```
-
-**Also accessible from the Blazor app:** Settings > Describe Characters button launches the script in a terminal window.
-
-### Physical Description Schema (NCIC-Inspired)
-
-| Field | Type | Description |
-|-------|------|-------------|
-| `heritage` | string | Ethnic/cultural lineage derived from hyphenated surname |
-| `height_cm` | int | Height in centimeters |
-| `weight_kg` | int | Weight in kilograms |
-| `build` | string | Body type with character-specific detail |
-| `hair_color` | string | Natural or modified hair color |
-| `hair_style` | string | How they wear their hair |
-| `hair_length` | string | Short / Medium / Long / Shaved / None |
-| `eye_color` | string | Natural or augmented eye color |
-| `skin_tone` | string | Complexion grounded in mixed heritage |
-| `complexion` | string | Facial features, grooming, skin condition |
-| `distinguishing_marks` | array | Scars, tattoos, burns, birthmarks |
-| `visible_augmentations` | string | What a stranger would notice |
-| `posture_movement` | string | Body language, gait, how they carry themselves |
-| `clothing_style` | string | Default appearance, tier indicators |
-
-### Image Prompt Format
-
-Midjourney-style prompt string with physical descriptors, clothing, setting/mood, lighting, and `--ar 2:3 --v 6` flags. Can be pasted directly into Midjourney or similar AI image generators.
-
-## Architecture
-
-```
-10,001 JSON entity files (engine/data/*/*.json)
-    |
-    v
-[extract.py] -- Claude API -> SPO triples
-    |
-    v
-[embed.py] -- sentence-transformers (all-MiniLM-L6-v2) -> 384-dim vectors
-    |
-    v
-[cluster.py] -- HDBSCAN -> semantic grouping
-    |
-    v
-[score.py] -- consensus vote + flagging
-    |
-    v
-lore-triples.db (SQLite)
-    |
-    v
-[query.py] -- CLI search    [repair.py] -- fix source files
-    |
-    v
-LoreTripleService (C#) -- Blazor UI dashboard
-```
+| Script | Purpose |
+| --- | --- |
+| `generate_character_images.py` | Midjourney-style image prompts for character entities |
+| `generate_descriptions.py` | Regenerate entity descriptions via Claude |
+| `consistency_check.py` | Ad-hoc consistency sweep |
+| `tools.bat` | Convenience launcher for common commands |
