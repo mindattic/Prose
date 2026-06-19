@@ -7,72 +7,53 @@
 @inject ToastNotifier Toast
 @inject MediaService Media
 @inject StreetSamurai.Core.Services.IUniverseContext Universe
+@inject StreetSamurai.Shared.Services.TabService TabSvc
 @implements IDisposable
 
 <style>
     html, body { font-family: '@SettingsSvc.FontFamily', 'Helvetica Neue', Helvetica, Arial, sans-serif; }
 </style>
 
-@* CyberSpace background removed 2026-06-15 — plain dark mode (universe-neutral shell). *@
-
-@* portrait disabled
-@if (bgImage != null)
-{
-    <img id="home-bg-img" src="/api/media/@bgImage" class="home-bg-img"
-         style="opacity:0" alt="" aria-hidden="true" />
-}
-*@
-
-@* Auth chrome (MindAttic.UiUx) — UserTimeout arms the 30-min idle auto-logout. The user identity
-   lives in NavMenu's UserBoard (bound to Access.CurrentUserName); the old upper-right UserCircle
-   was redundant and has been removed. *@
 <UserTimeout />
 
 @if (embed)
 {
-    @* Embedded mode (the writer iframe loads /strand/{id}?embed=1): render bare so the persistent
-       two-pane shell does NOT recurse into itself. *@
     <div class="app-shell app-embed" data-theme="@currentTheme">
         <main class="topnav-main"><div class="container-fluid">@Body</div></main>
     </div>
 }
 else
 {
-    <div class="app-shell @(!Access.IsContributor ? "readonly-mode" : "") @(SettingsSvc.RepoListOnRight ? "list-right" : "")"
+    <div class="app-shell @(!Access.IsContributor ? "readonly-mode" : "")"
          data-theme="@currentTheme"
          @onkeydown="OnGlobalKeyDown" tabindex="-1">
         <AppBanner OnThemeChanged="OnThemeChanged" />
-        <div class="app-split-controls">
-            <button class="btn btn-sm btn-outline-secondary" title="Swap sides (writer ↔ repositories)" @onclick="ToggleSwap">
-                <i class="bi bi-arrow-left-right"></i>
-            </button>
-            <button class="btn btn-sm btn-outline-secondary" title="@SplitTitle" @onclick="CycleSplit">
-                <i class="bi @SplitIcon"></i>
-            </button>
-        </div>
-        @* Left = strand selection + writer; Right = repositories & tools (@Body). Swap flips them. *@
-        <div class="app-split layout-@(splitLayout)">
-            @if (splitSwapped)
+
+        @* Tab bar *@
+        <div class="tab-bar">
+            @foreach (var tab in TabSvc.Tabs)
             {
-                <main class="topnav-main app-pane app-pane-repos">
-                    <div class="container-fluid">
-                        <AutoBreadcrumb />
-                        @Body
-                    </div>
-                </main>
-                <div class="app-pane app-pane-writer"><WriterPane /></div>
-            }
-            else
-            {
-                <div class="app-pane app-pane-writer"><WriterPane /></div>
-                <main class="topnav-main app-pane app-pane-repos">
-                    <div class="container-fluid">
-                        <AutoBreadcrumb />
-                        @Body
-                    </div>
-                </main>
+                <button class="tab-item @(TabSvc.ActiveKey == tab.Key ? "active" : "")"
+                        @onclick="() => OnTabClick(tab)">
+                    <i class="bi @tab.Icon tab-item-icon"></i>
+                    <span class="tab-item-label">@tab.Label</span>
+                    @if (tab.Key != "home")
+                    {
+                        <button class="tab-close" title="Close" @onclick:stopPropagation="true" @onclick="() => CloseTab(tab.Key)">
+                            <i class="bi bi-x"></i>
+                        </button>
+                    }
+                </button>
             }
         </div>
+
+        <main class="topnav-main">
+            <div class="container-fluid">
+                <AutoBreadcrumb />
+                @Body
+            </div>
+        </main>
+
         <AppStatusBar />
     </div>
 }
@@ -80,7 +61,6 @@ else
 <SearchOverlay />
 
 @code {
-    // SS_ environment variables required in Production
     private static readonly string[] RequiredEnvVars =
     [
         "SS_CLAUDE_API_KEY",
@@ -90,41 +70,21 @@ else
         "SS_MUTABLE_DATA_ROOT",
     ];
 
-    private bool navPending = false;
-    private string? bgImage;
+    private bool navPending;
     private bool disposed;
-    private string currentTheme = ""; // always set in OnInitialized
-
-    // Persistent two-pane shell: left = strand selection + writer, right = repositories & tools
-    // (@Body). Swap flips them; the cycle button collapses left / right / neither. State persists
-    // to localStorage. `embed` renders bare so the writer iframe (which loads a real page) can't
-    // recurse into the shell.
+    private string currentTheme = "";
     private bool embed;
-    private bool splitSwapped;
-    private string splitLayout = "equal"; // equal | left (left pane collapsed) | right
 
     private bool IsEmbed() => Nav.Uri.Contains("embed=1", StringComparison.OrdinalIgnoreCase);
 
-    private string SplitIcon => splitLayout switch
-    {
-        "left"  => "bi-layout-sidebar-inset-reverse",
-        "right" => "bi-layout-sidebar-inset",
-        _       => "bi-layout-split",
-    };
-    private string SplitTitle => splitLayout switch
-    {
-        "left"  => "Left pane collapsed — click to collapse right",
-        "right" => "Right pane collapsed — click for equal width",
-        _       => "Equal width — click to collapse left",
-    };
-
     protected override void OnInitialized()
     {
-        bgImage = Media.GetRandomImage();
+        Media.GetRandomImage(); // keep cache warm; portrait removed
         var universeTheme = AppBanner.ThemeFor(Universe);
         currentTheme = SettingsSvc.Theme == "auto" ? universeTheme : SettingsSvc.Theme;
         embed = IsEmbed();
         SettingsSvc.ThemeChanged += OnSettingsThemeChanged;
+        TabSvc.OnChanged += OnTabsChanged;
     }
 
     private void OnThemeChanged(string theme)
@@ -137,16 +97,22 @@ else
         InvokeAsync(StateHasChanged);
     }
 
-    private async Task ToggleSwap()
+    private void OnTabsChanged()
     {
-        splitSwapped = !splitSwapped;
-        try { await JS.InvokeVoidAsync("localStorage.setItem", "app.split.swapped", splitSwapped ? "1" : "0"); } catch { }
+        if (!disposed) InvokeAsync(StateHasChanged);
     }
 
-    private async Task CycleSplit()
+    private void OnTabClick(StreetSamurai.Shared.Services.AppTab tab)
     {
-        splitLayout = splitLayout switch { "equal" => "left", "left" => "right", _ => "equal" };
-        try { await JS.InvokeVoidAsync("localStorage.setItem", "app.split.layout", splitLayout); } catch { }
+        TabSvc.Open(tab);
+        Nav.NavigateTo(tab.Route);
+    }
+
+    private void CloseTab(string key)
+    {
+        var navigateHome = TabSvc.Close(key);
+        if (navigateHome)
+            Nav.NavigateTo(TabSvc.GetActive()?.Route ?? "/");
     }
 
     protected override async Task OnAfterRenderAsync(bool firstRender)
@@ -156,27 +122,8 @@ else
             Nav.LocationChanged += OnLocationChanged;
             Nav.RegisterLocationChangingHandler(OnLocationChanging);
             CheckMissingEnvVars();
-            if (!embed)
-            {
-                try
-                {
-                    splitSwapped = (await JS.InvokeAsync<string>("localStorage.getItem", "app.split.swapped")) == "1";
-                    var l = await JS.InvokeAsync<string>("localStorage.getItem", "app.split.layout");
-                    if (l is "equal" or "left" or "right") splitLayout = l;
-                    StateHasChanged();
-                }
-                catch { /* prerender / JS unavailable */ }
-            }
-            // List-item neon flicker DISABLED 2026-05-09 — too distracting in
-            // the dictionary UIs. JS (`cyberspaceStartListItemFlicker` in console-bg.js)
-            // and CSS (`.neon-flicker-loop` in app.css) are intact for later
-            // re-enablement; uncomment the line below to restore.
-            // try { await JS.InvokeVoidAsync("cyberspaceStartListItemFlicker"); } catch { }
-            // portrait disabled
-            // if (bgImage != null)
-            // {
-            //     try { await JS.InvokeVoidAsync("homeBg.apply", "home-bg-img", $"/api/media/{bgImage}"); } catch { }
-            // }
+            // Sync active tab to the current URL on load
+            TabSvc.TrySync(Nav.ToBaseRelativePath(Nav.Uri));
         }
         if (navPending)
         {
@@ -187,7 +134,6 @@ else
 
     private void CheckMissingEnvVars()
     {
-        // Only warn in Production — dev runs fine without Azure env vars
         var env = Environment.GetEnvironmentVariable("ASPNETCORE_ENVIRONMENT") ?? "";
         if (!string.Equals(env, "Production", StringComparison.OrdinalIgnoreCase))
             return;
@@ -197,9 +143,7 @@ else
             .ToList();
 
         if (missing.Count == 0) return;
-
-        var list = string.Join(", ", missing);
-        Toast.Warning(AppError.ConfMissingEnvVar, $"Missing Azure App Settings: {list}");
+        Toast.Warning(AppError.ConfMissingEnvVar, $"Missing Azure App Settings: {string.Join(", ", missing)}");
     }
 
     private async Task OnGlobalKeyDown(KeyboardEventArgs e)
@@ -215,18 +159,17 @@ else
                        || Nav.Uri.Contains("/stories/write/", StringComparison.OrdinalIgnoreCase);
         if (!isWritePage)
         {
-            // TV-static navigation flourish removed 2026-06-15 (CyberSpace theme retired).
             try { await JS.InvokeVoidAsync("__loaderShow", 0); } catch { }
         }
     }
 
     private void OnLocationChanged(object? sender, Microsoft.AspNetCore.Components.Routing.LocationChangedEventArgs e)
     {
-        // Recompute embed mode (the writer iframe vs the full shell) on navigation.
         var wasEmbed = embed;
         embed = IsEmbed();
+        var rel = Nav.ToBaseRelativePath(Nav.Uri);
+        TabSvc.TrySync(rel);
         if (wasEmbed != embed) StateHasChanged();
-        // OnAfterRenderAsync will fire next and hide the loader
     }
 
     public void Dispose()
@@ -234,5 +177,6 @@ else
         disposed = true;
         Nav.LocationChanged -= OnLocationChanged;
         SettingsSvc.ThemeChanged -= OnSettingsThemeChanged;
+        TabSvc.OnChanged -= OnTabsChanged;
     }
 }

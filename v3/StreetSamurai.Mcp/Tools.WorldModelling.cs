@@ -13,7 +13,8 @@ public class WorldModellingTools(
     BehavioralInvariantEnforcer behaviorEnforcer,
     ProsePatternGuard proseGuard,
     WeaponAmmoCompatibilityService weaponAmmoSvc,
-    AmbientDetailInjector ambientSvc)
+    AmbientDetailInjector ambientSvc,
+    EntityRamificationService ramificationSvc)
 {
     [McpServerTool, Description(
         "Returns a hierarchical relationship tree rooted at an entity, " +
@@ -178,5 +179,39 @@ public class WorldModellingTools(
                 ammunition = w.Ammunition.Select(a => new { name = a.AmmunitionName, alias = a.Alias }),
             }),
         }, CanonTools.JsonOpts);
+    }
+
+    [McpServerTool, Description(
+        "Returns every beat flagged EntityStale — i.e. a canon entity mentioned in " +
+        "the beat was updated after the beat was written. Grouped by strand. " +
+        "Review each beat and call clear_entity_stale when satisfied.")]
+    public async Task<string> ListEntityStaleBeats()
+    {
+        var beats = await ramificationSvc.GetEntityStaleBeatsAsync();
+        if (beats.Count == 0)
+            return JsonSerializer.Serialize(new { message = "No entity-stale beats." }, CanonTools.JsonOpts);
+
+        return JsonSerializer.Serialize(beats.Select(b => new
+        {
+            beatId      = b.BeatId,
+            beatNumber  = b.BeatNumber,
+            strandId    = b.StrandId,
+            strand      = b.StrandTitle,
+            textPreview = b.TextPreview,
+            entities    = b.Entities,
+        }), CanonTools.JsonOpts);
+    }
+
+    [McpServerTool, Description(
+        "Clears the EntityStale flag on a beat after the author has reviewed it " +
+        "and confirmed the prose is still consistent with current entity canon.")]
+    public async Task<string> ClearEntityStale(
+        [Description("Beat GUID")] string beatId)
+    {
+        if (!Guid.TryParse(beatId, out var bid))
+            return JsonSerializer.Serialize(new { error = "invalid_guid", beatId }, CanonTools.JsonOpts);
+
+        await ramificationSvc.ClearEntityStaleAsync(bid);
+        return JsonSerializer.Serialize(new { ok = true, beatId }, CanonTools.JsonOpts);
     }
 }

@@ -173,6 +173,17 @@ if (args.Contains("--add-place"))
     return;
 }
 
+// CLI mode: insert a CorpoNation from a CorponationData JSON file.
+//   ss --add-corponation --file path.json
+if (args.Contains("--add-corponation"))
+{
+    var cliBuilder = WebApplication.CreateBuilder(args);
+    cliBuilder.Services.AddStreetSamuraiServices();
+    var cliApp = cliBuilder.Build();
+    Environment.ExitCode = await AddCorponationCli.RunAsync(args, cliApp.Services);
+    return;
+}
+
 // CLI mode: generate a resource-tracked combat sequence via CombatSceneWriter.
 //   ss --combat --file scene.json [--out prose.txt]
 //   ss --combat --location "Hegewisch" --objective "..." --exchanges 6 --tone Cinematic
@@ -335,6 +346,18 @@ if (args.Contains("--family"))
     cliBuilder.Services.AddStreetSamuraiServices();
     var cliApp = cliBuilder.Build();
     Environment.ExitCode = await FamilyCli.RunAsync(args, cliApp.Services);
+    return;
+}
+
+// CLI mode: backfill BeatEntityMentions — index which entity names appear in
+// each beat so entity-update staleness propagation works.
+//   ss --scan-entity-mentions
+if (args.Contains("--scan-entity-mentions"))
+{
+    var cliBuilder = WebApplication.CreateBuilder(args);
+    cliBuilder.Services.AddStreetSamuraiServices();
+    var cliApp = cliBuilder.Build();
+    Environment.ExitCode = await ScanEntityMentionsCli.RunAsync(cliApp.Services);
     return;
 }
 
@@ -1296,6 +1319,74 @@ if (args.Contains("--seed-sensory-hints"))
     return;
 }
 
+// ss --beat <subcommand> — fine-grained beat manipulation:
+//   insert  --strand <slug|id> [--after <beatId>] [--text "..."]
+//   delete  --id <beatId> [--strand <slug|id>]
+//   update  --id <beatId> --text "..."  (use '-' for stdin)
+//   meta    --id <beatId> [--title "..."] [--kind "..."] [--synopsis "..."] [--tone "..."] ...
+//   show    --id <beatId>
+//   list    --strand <slug|id>
+if (args.Contains("--beat"))
+{
+    var cliBuilder = WebApplication.CreateBuilder(args);
+    cliBuilder.Services.AddStreetSamuraiServices();
+    var cliApp = cliBuilder.Build();
+    var beatArgs = args.SkipWhile(a => a != "--beat").Skip(1).ToArray();
+    Environment.ExitCode = await BeatCli.RunAsync(beatArgs, cliApp.Services);
+    return;
+}
+
+// ss --wound <subcommand> — character wound ledger:
+//   list    --character <id|name> [--as-of "date"]
+//   log     --character <id|name> --description "..." [--location "chest"] [--severity moderate] ...
+//   status  --wound <id> --status active|healed|noted
+if (args.Contains("--wound"))
+{
+    var cliBuilder = WebApplication.CreateBuilder(args);
+    cliBuilder.Services.AddStreetSamuraiServices();
+    var cliApp = cliBuilder.Build();
+    var woundArgs = args.SkipWhile(a => a != "--wound").Skip(1).ToArray();
+    Environment.ExitCode = await WoundCli.RunAsync(woundArgs, cliApp.Services);
+    return;
+}
+
+// ss --universe <subcommand> — universe management:
+//   list      Print all universes
+//   current   Print the active universe
+//   use       --slug <slug> | --id <guid>
+if (args.Contains("--universe"))
+{
+    var cliBuilder = WebApplication.CreateBuilder(args);
+    cliBuilder.Services.AddStreetSamuraiServices();
+    var cliApp = cliBuilder.Build();
+    var uniArgs = args.SkipWhile(a => a != "--universe").Skip(1).ToArray();
+    Environment.ExitCode = await UniverseCli.RunAsync(uniArgs, cliApp.Services);
+    return;
+}
+
+// ss --review-settings [--set <key> <value>] — view or update review voting settings.
+// Keys: ballots, prose, panel, readers, max-concurrency, judge-provider, allowed-providers
+if (args.Contains("--review-settings"))
+{
+    var cliBuilder = WebApplication.CreateBuilder(args);
+    cliBuilder.Services.AddStreetSamuraiServices();
+    var cliApp = cliBuilder.Build();
+    Environment.ExitCode = await ReviewSettingsCli.RunAsync(args, cliApp.Services);
+    return;
+}
+
+// ss --get <type> <name-or-id> — targeted entity lookup.
+// Types: character | place | weapon | faction | corponation
+if (args.Contains("--get"))
+{
+    var cliBuilder = WebApplication.CreateBuilder(args);
+    cliBuilder.Services.AddStreetSamuraiServices();
+    var cliApp = cliBuilder.Build();
+    var getArgs = args.SkipWhile(a => a != "--get").Skip(1).ToArray();
+    Environment.ExitCode = await GetEntityCli.RunAsync(getArgs, cliApp.Services);
+    return;
+}
+
 var builder = WebApplication.CreateBuilder(args);
 
 // Cloud-native configuration chain. Layered (later sources win):
@@ -1410,6 +1501,9 @@ builder.Services.AddScoped<IWriteAccessProvider, BlazorWriteAccessProvider>();
 
 // Toast wrapper — shows toast + logs [SS CODE] to browser console
 builder.Services.AddScoped<ToastNotifier>();
+
+// Tab bar state — one per browser connection
+builder.Services.AddScoped<StreetSamurai.Shared.Services.TabService>();
 
 var app = builder.Build();
 

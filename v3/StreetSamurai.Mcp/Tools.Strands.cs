@@ -24,13 +24,26 @@ public class StrandTools
     private readonly IDbContextFactory<StreetSamuraiDbContext> dbFactory;
     private readonly ElevenLabsTtsService tts;
     private readonly StrandBibleService bible;
+    private readonly ProseReflowService reflow;
+    private readonly BeatRebuildService rebuilder;
+    private readonly DocxExportService docxExport;
 
-    public StrandTools(StrandWorkbenchService workbench, IDbContextFactory<StreetSamuraiDbContext> dbFactory, ElevenLabsTtsService tts, StrandBibleService bible)
+    public StrandTools(
+        StrandWorkbenchService workbench,
+        IDbContextFactory<StreetSamuraiDbContext> dbFactory,
+        ElevenLabsTtsService tts,
+        StrandBibleService bible,
+        ProseReflowService reflow,
+        BeatRebuildService rebuilder,
+        DocxExportService docxExport)
     {
         this.workbench = workbench;
         this.dbFactory = dbFactory;
         this.tts = tts;
         this.bible = bible;
+        this.reflow = reflow;
+        this.rebuilder = rebuilder;
+        this.docxExport = docxExport;
     }
 
     [McpServerTool, Description("List strands. Optional kind filter ('book', 'chapter', 'episode', etc.). Returns a flat list of id, slug, title, kind, status, beat-count, stale-count.")]
@@ -425,6 +438,93 @@ public class StrandTools
         await db.SaveChangesAsync();
 
         return JsonSerializer.Serialize(new { ok = true, id = strand.Id, slug = strand.Slug, cleared = string.IsNullOrEmpty(bibleText) }, CanonTools.JsonOpts);
+    }
+
+    /// <summary>Copy-edit a strand's prose in-place: proper paragraph/dialogue spacing, "?" on questions, "asks"/"asked" on question dialogue. Dry-run by default — pass apply=true to commit. Returns a report of what changed, was rejected, or errored.</summary>
+    [McpServerTool, Description("Copy-edit a strand's prose in-place: adds missing '?' on questions, swaps 'says/said' → 'asks/asked' on question dialogue lines, and normalises paragraph/dialogue spacing. Dry-run by default — set apply=true to commit. Beats the model modified beyond those specific edits are rejected and left untouched. Returns changed/unchanged/rejected/errors counts plus per-beat diff previews.")]
+    public async Task<string> ReflowStrand(
+        [Description("Strand id (GUID) or slug.")] string strandIdOrSlug,
+        [Description("Set to true to write the edits to the DB. Default false = dry run.")] bool apply = false)
+    {
+        var strand = await ResolveStrandAsync(strandIdOrSlug);
+        if (strand == null) return JsonSerializer.Serialize(new { error = "strand_not_found", strandIdOrSlug }, CanonTools.JsonOpts);
+
+        var report = await reflow.ReflowStrandAsync(strand.Id, apply);
+        return JsonSerializer.Serialize(new
+        {
+            strand_id    = report.StrandId,
+            slug         = report.Slug,
+            applied      = report.Applied,
+            total        = report.Total,
+            changed      = report.Changed,
+            unchanged    = report.Unchanged,
+            rejected     = report.Rejected,
+            errors       = report.Errors,
+            beats        = report.Beats.Where(b => b.Status is not "unchanged" and not "empty").Select(b => new
+            {
+                beat_id              = b.BeatId,
+                position             = b.Position,
+                status               = b.Status,
+                question_marks_added = b.QuestionMarksAdded,
+                attribution_swaps    = b.AttributionSwaps,
+                reason               = b.Reason,
+                before_preview       = b.BeforePreview,
+                after_preview        = b.AfterPreview,
+            }),
+        }, CanonTools.JsonOpts);
+    }
+
+    /// <summary>LLM-rebeat a strand: re-segment all beats to the beat doctrine (proper formatting, no run-ons, no sentence-shrapnel). Dry-run by default; set apply=true to export a backup then replace beats (only if the word-retention guard passes).</summary>
+    [McpServerTool, Description("Re-segment a strand's beats to the codified beat doctrine via LLM re-segmentation. Dry-run by default (safe to call freely). Set apply=true to export a Markdown backup then replace the beats — only committed if the word-retention guard passes (prevents silent content loss). Returns old/new beat counts, retention %, guard result, and a note if it was blocked.")]
+    public async Task<string> RebeatStrand(
+        [Description("Strand id (GUID) or slug.")] string strandIdOrSlug,
+        [Description("Set to true to commit the new segmentation. Default false = dry run.")] bool apply = false)
+    {
+        var strand = await ResolveStrandAsync(strandIdOrSlug);
+        if (strand == null) return JsonSerializer.Serialize(new { error = "strand_not_found", strandIdOrSlug }, CanonTools.JsonOpts);
+
+        var r = await rebuilder.RebuildAsync(strand.Id, apply);
+        return JsonSerializer.Serialize(new
+        {
+            strand_id      = r.StrandId,
+            slug           = r.Slug,
+            title          = r.Title,
+            applied        = r.Applied,
+            old_beats      = r.OldBeats,
+            new_beats      = r.NewBeats,
+            word_retention = r.WordRetention,
+            guard_passed   = r.GuardPassed,
+            backup_path    = r.BackupPath,
+            note           = r.Note,
+        }, CanonTools.JsonOpts);
+    }
+
+    /// <summary>Export a strand as a KDP-ready Word .docx to the configured publish directory (defaults to Downloads).</summary>
+    [McpServerTool, Description("Render a strand to a KDP-ready Word .docx and write it to the configured publish directory (defaults to Downloads). Returns the path of the written file. Use get_strand first to confirm the strand exists.")]
+    public async Task<string> PublishDocx(
+        [Description("Strand id (GUID) or slug.")] string strandIdOrSlug,
+        [Description("Author name to embed in the document properties. Optional.")] string author = "")
+    {
+        var strand = await ResolveStrandAsync(strandIdOrSlug);
+        if (strand == null) return JsonSerializer.Serialize(new { error = "strand_not_found", strandIdOrSlug }, CanonTools.JsonOpts);
+
+        var path = await docxExport.ExportStrandAsync(strand.Id, string.IsNullOrWhiteSpace(author) ? null : author);
+        return JsonSerializer.Serialize(new { ok = true, path }, CanonTools.JsonOpts);
+    }
+
+    /// <summary>Render a strand as a single continuous MP3 audiobook and write it to the configured publish directory.</summary>
+    [McpServerTool, Description("Render the whole strand as one continuous narration (no per-beat voice drift) and write the MP3 to the configured publish directory (defaults to Downloads). TTS engine: 'elevenlabs' (default, paid, highest fidelity), 'piper' (free/local, fastest), 'kokoro' (free/local, recommended), 'chatterbox' (free/local, most expressive). Returns the path of the written file, or null if the strand has no beat text.")]
+    public async Task<string> PublishAudiobook(
+        [Description("Strand id (GUID) or slug.")] string strandIdOrSlug,
+        [Description("TTS engine: elevenlabs (default) | piper | kokoro | chatterbox.")] string ttsEngine = "",
+        [Description("Set to true to retune this strand's frozen voice snapshot to Robust stability (1.0) before recording.")] bool robust = false)
+    {
+        var strand = await ResolveStrandAsync(strandIdOrSlug);
+        if (strand == null) return JsonSerializer.Serialize(new { error = "strand_not_found", strandIdOrSlug }, CanonTools.JsonOpts);
+
+        var path = await workbench.PublishAudiobookAsync(strand.Id, robust, string.IsNullOrWhiteSpace(ttsEngine) ? null : ttsEngine);
+        if (path == null) return JsonSerializer.Serialize(new { ok = false, error = "no_beat_text" }, CanonTools.JsonOpts);
+        return JsonSerializer.Serialize(new { ok = true, path }, CanonTools.JsonOpts);
     }
 
     private async Task<Strand?> ResolveStrandAsync(string idOrSlug)

@@ -11,6 +11,8 @@
 @inject StreetSamurai.Core.Services.StrandWorkbenchService Workbench
 @inject StreetSamurai.Core.Services.DocxExportService Docx
 @inject StreetSamurai.Core.Services.ManuscriptExportService Manuscript
+@inject StreetSamurai.Core.Services.StrandReviewService ReviewSvc
+@inject StreetSamurai.Shared.Services.TabService TabSvc
 @implements IDisposable
 
 @*
@@ -105,7 +107,8 @@
                                     <span class="strand-drag-handle me-2" title="Drag to reorder or move into a collection">
                                         <i class="bi bi-grip-vertical"></i>
                                     </span>
-                                    <a href="@($"/strand/{s.Slug}")" class="text-info text-decoration-none flex-grow-1">
+                                    <a href="@($"/strand/{s.Slug}")" class="text-info text-decoration-none flex-grow-1"
+                                       @onclick:preventDefault @onclick="() => OpenStrand(s.Slug)">
                                         <strong>@s.Title</strong>
                                     </a>
                                     <div class="d-flex align-items-center gap-2 small">
@@ -138,6 +141,10 @@
                                         <button class="btn btn-sm btn-outline-warning" title="Show reader reviews"
                                                 @onclick="() => OpenReviewsAsync(s)">
                                             <i class="bi bi-star-half me-1"></i>Reviews
+                                        </button>
+                                        <button class="btn btn-sm btn-outline-info" title="Score history chart"
+                                                @onclick="() => OpenScoreHistory(s)">
+                                            <i class="bi bi-graph-up"></i>
                                         </button>
                                         @if (childCount > 0)
                                         {
@@ -210,7 +217,8 @@
                                         <span class="strand-drag-handle me-1" title="Drag to reorder or move to a different collection">
                                             <i class="bi bi-grip-vertical"></i>
                                         </span>
-                                        <a href="@($"/strand/{kid.Slug}")" class="text-info text-decoration-none flex-grow-1 ms-2">
+                                        <a href="@($"/strand/{kid.Slug}")" class="text-info text-decoration-none flex-grow-1 ms-2"
+                                           @onclick:preventDefault @onclick="() => OpenStrand(kid.Slug)">
                                             <i class="bi bi-arrow-return-right me-2 text-secondary" style="font-size:0.75rem;"></i>@kid.Title
                                         </a>
                                         <div class="d-flex align-items-center gap-2 small">
@@ -240,6 +248,12 @@
         }
     }
 </div>
+
+@* ── Score history chart modal ───────────────────────────────────────── *@
+<ScoreHistoryModal Visible="scoreHistoryOpen"
+                   StrandId="scoreHistoryStrandId"
+                   StrandTitle="scoreHistoryTitle"
+                   OnClose="() => scoreHistoryOpen = false" />
 
 @* ── Reader-reviews bottom sheet ─────────────────────────────────────── *@
 @if (reviewsOpen)
@@ -669,6 +683,13 @@
                     : $"Couldn't save the new strand: {msg}");
             return;
         }
+        OpenStrand(slug);
+    }
+
+    private void OpenStrand(string? slug)
+    {
+        if (string.IsNullOrEmpty(slug)) return;
+        TabSvc.Open(new AppTab("writer", "Writer", "bi-pencil-square", "/writer", "/strand"));
         Nav.NavigateTo($"/strand/{slug}");
     }
 
@@ -742,6 +763,18 @@
     }
 
     private void CloseReviews() => reviewsOpen = false;
+
+    // ── Score history chart ──────────────────────────────────────────────
+    private bool   scoreHistoryOpen;
+    private Guid   scoreHistoryStrandId;
+    private string scoreHistoryTitle = "";
+
+    private void OpenScoreHistory(StrandEntity s)
+    {
+        scoreHistoryStrandId = s.Id;
+        scoreHistoryTitle    = s.Title;
+        scoreHistoryOpen     = true;
+    }
 
     private async Task CopyGuidAsync(Guid id)
     {

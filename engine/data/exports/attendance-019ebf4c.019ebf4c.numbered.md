@@ -38,10 +38,14 @@ Dr. Achebe came out with the walk of a man who had decided in advance that this 
 
 "It is," Yemina said. "I'm the district review."
 
+He stopped. He looked at her the way an administrator looks at something that has arrived outside normal channels — with the specific expression of a person calculating who, exactly, was responsible for this. He could not find a responsible party. He settled back into concern-and-unavailability.
+
 [Beat 5]
 The three-minute conversation with Dr. Achebe produced a full accounting of everything he was willing to give her — which was paperwork he'd already filed and a firm opinion that the relevant person to speak with was the counseling office, not the classroom teacher. The classroom teacher had been cooperative with the initial investigation, was still shaken, had other students to attend to.
 
-Yemina wrote his concerns down in her notebook. She wrote them in the notebook deliberately, with a pen, where he could watch her write them. When she looked up she said, "Which room is Mr. Vasquez's class?"
+Yemina wrote his concerns down in her notebook. She wrote them in the notebook deliberately, with a pen, where he could watch her write them. Dr. Achebe had the expression of a man watching himself be cited. His hands moved once toward the lanyard at his chest and stopped.
+
+When she looked up she said, "Which room is Mr. Vasquez's class?"
 
 Dr. Achebe looked at what she'd written. "Room 214."
 
@@ -231,6 +235,8 @@ The autocomplete came immediately: *The 35th-and-Halsted Bleed. Ambient emission
 
 She looked at it for a long time.
 
+Outside, the repair drone completed another circuit of the building at 18th Street.
+
 Then, for less than a second, a second attention arrived at the same aperture in her neuretics. Not the intruder. Something that moved through the frequency data the way a current moves through a crowd, looking for a specific shape, not finding it yet. It did not have the intruder's careful margins. It pressed.
 
 The intruder sealed the channel. Not gradually — closed, the way a shutter closes.
@@ -334,9 +340,11 @@ The intruder had not found a gap. She had just never been closed.
 [Beat 24]
 Yemina called the Resonance Monitoring Authority from the front steps of the building. The system asked for a corp credential before routing. She gave her contractor registration. There was a two-second pause that probably meant the system had flagged her as non-employee and was deciding where to send that. She was sent somewhere. She selected *mass casualty event, resonance proximity.* She was transferred. She selected *missing persons, confirmed bleed transit.* She was transferred again. She selected *urgent.* The system noted her selection and placed her in a queue. The hold music was a recording of a man explaining that field response teams required a minimum 72-hour advance notice for non-emergency site visits, followed by a recording of a woman explaining how to determine whether your event qualified as an emergency.
 
-She stayed on hold for twelve minutes and left a message: her name, contractor registration, case numbers across eight corp contracts, address, count. Forty-seven children. She spoke clearly and without inflection because inflection gave a listener somewhere to be skeptical.
+She stayed on hold for twelve minutes. When the voicemail prompt came she said: her name, contractor registration, case numbers across eight corp contracts, address, count. Forty-seven children. She spoke clearly and without inflection because inflection gave a listener somewhere to be skeptical.
 
-She ended the call. Below the steps, a child was drawing something on the sidewalk with chalk — a shape that might have been a face, or a map, depending on how you held your head.
+Seventy-two hours. That was what the system required. In seventy-two hours, field teams would mobilize and travel and set up and assess, and if she was right and the children were through that threshold, the assessment team would do what assessment teams were authorized to do with unstable Class-3 sites. The RMA's language for the outcome: *site remediation pending classification.* Remediation included sealing.
+
+She ended the call. Below the steps, a child was chalking something on the sidewalk. Just the word *here* in block letters, for reasons that were entirely their own.
 
 She went back inside.
 
@@ -400,9 +408,7 @@ The 35th-and-Halsted bleed was visible from half a block away.
 
 Yemina had known bleeds her whole life the way everyone in GLMZ knew them — as civic facts, marked hazards, the asterisked notation on transit route displays. The RMA designated them by class, ascending severity, with clear operational parameters: hazard radius, reporting protocols, minimum response window. The designations implied a taxonomy, and a taxonomy implied a thing understood. The city treated them the way it treated crumbling transit infrastructure and flooded underpasses — marked on maps, asterisked in building permits, factored into property assessments. This was the correct administrative response. The administrative response did not mean the thing was understood. It meant the city had learned to work around not knowing.
 
-What a bleed actually was, in the parts the taxonomy did not touch, was the cross-section of a shape that did not fit inside the directions available — one vertex at street level, the other vertices not far but elsewhere in the way that a sound below the threshold of hearing is elsewhere from sounds that can be heard: a matter of instrument, not distance. The nervous system produced a pressure behind the eyes and a frequency in the teeth it had no word for, and then it stopped trying. What fifteen years of incident reports had never contained — what nothing in the operational manual covered — was that the shape was occupied. That something had been watching from the other side of every bleed she had ever documented, longer than the RMA had existed to name them.
-
-She had seen three in person. This one was larger than that. The whole intersection had stopped being itself. Not a shimmer — not the small optical failure of a minor anomaly. The air above the four-way stop had a shape that shouldn't be air's shape: a column from the ground up, maybe twelve meters across, with a geometry her eyes could follow for about two seconds before they stopped being able to hold it. The light moved differently inside it. Not faster or slower — differently, in a direction she didn't have a word for.
+She had seen three in person. This one was larger than that. The whole intersection had stopped being itself. Not a shimmer — not the small optical failure of a minor anomaly. The air above the four-way stop had a shape that shouldn't be air's shape: a column from the ground up, maybe twelve meters across, with a geometry her eyes could follow for about two seconds before they stopped being able to hold it. The light moved differently inside it. Not faster or slower — differently, in a direction she didn't have a word for. Standing at the edge of it, she understood for the first time what fifteen years of incident reports had never been able to say: that the shape was occupied. That something had been watching from the other side of every bleed she had ever documented, longer than the RMA had existed to name them.
 
 "Class-3," Selvamani said quietly, reading the sensor. "Signal output at 18.4 Hz. Coherent."
 
@@ -479,7 +485,7 @@ She waited.
 
 "And the second thing."
 
-"The second thing came after. Quieter. It found us while the sound was still pulling." He looked at his hands. "It put something between us and the sound. Took us here, and the sound couldn't follow." He glanced at the girl near the back — not Amara, someone she didn't know, older, maybe eleven — and the girl gave the same small headshake, that gesture that meant something between them Yemina had arrived too late to decode. "In here the sound can't reach us. We can still feel it, at the edges. But it can't get in."
+He glanced at the girl near the back — not Amara, someone she didn't know, older, maybe eleven — and the girl gave the same small headshake, that gesture that meant something between them Yemina had arrived too late to decode.
 
 "Which thing showed my name," Yemina asked.
 
@@ -530,7 +536,7 @@ The modulator tone from outside shifted — the carrier wobbled, found itself, h
 
 Twenty-eight. Twenty-nine.
 
-A girl of eleven stopped at the edge. She looked through the threshold at the street, then back at the space behind her. Not frightened — something she was deciding.
+A girl of eleven stopped at the edge. She was holding a small piece of paper — folded and refolded until the creases were soft, worked over until the paper had gone limp — and she did not look at it. She looked through the threshold at the street, then back at the space behind her. Not frightened — something she was deciding.
 
 "I can come back," Yemina said.
 
@@ -540,7 +546,9 @@ Yemina looked where the girl was looking. There was nothing to see. But she felt
 
 "It kept us away from the other one," the girl said. The way you say something you've had weeks to think about, by yourself, until it becomes a fact you own. "I know that."
 
-Neither of them moved. The carrier tone held. The morning held. Yemina could hear the freight traffic two blocks over — ordinary sounds doing what ordinary sounds do.
+She put the folded paper in her jacket pocket. She looked at the threshold once more. Then she went through.
+
+Yemina looked at the empty space where the girl had been standing.
 
 There was something she didn't know and wasn't going to know, and she chose the forty-seven over it.
 
@@ -574,16 +582,30 @@ At the intersection of 35th and Halsted, forty-seven children stood in the early
 
 Selvamani was already calling — her voice fast and uncontrolled in a way it hadn't been in the apartment, sending location data to everyone she had ever known who might receive it. Her eyes were wet. She didn't appear to notice.
 
-Ren sat against the building wall. Yemina crouched next to him. The blood from his nose had reached his chin. He hadn't wiped it.
+Yemina turned to say something to Ren and he was already against the building wall, seated on the pavement, knees up. She had not seen him sit down. The blood from his nose had reached his chin. His eyes were open but fixed at head height on something that wasn't there.
 
-"How do you feel," she asked.
+She crouched next to him. "Hey."
 
-"Empty." He was looking at his hands. They were still. "Like someone turned off a sound I'd been hearing so long I stopped knowing it was there."
+He turned his head. He did it carefully, the way you move when you're not certain your head will follow.
+
+"What time is it," he said.
+
+"6:22."
+
+He looked at his hands. They were still. He looked at them for a moment as though confirming they were the right hands. "I thought it was longer."
+
+"Can you stand."
+
+He tried. She caught him.
+
+"Empty," he said, once she had his weight. "Like someone turned off a sound I'd been hearing so long I stopped knowing it was there."
 
 She knew what the registry flag would say. She knew what *psionic event, cortical-coherence override* meant for a person who had managed to stay off every list for twenty-eight years. She didn't tell him he was wrong when he said it was the right cost. It was. That didn't make it small.
 
 [Beat 39]
 The next hours belonged to the families, and to the emergency coordinators Selvamani had called, and to the Resonance Monitoring Authority field team that arrived at 8:40 AM — fifty-five minutes after the threshold had closed — with equipment designed to assess Class-3 events and nothing in their operational manual covering forty-seven children standing on a street corner blinking at the morning.
+
+The families came in waves. First the ones close enough to walk, then the ones who'd been in cars since the text went out, and at the end the ones who'd been in transit from farther out and arrived still moving fast, still scanning faces. A father Yemina didn't know spent forty seconds staring at a boy who was not his son before the boy said "She's over there" and pointed, and the man walked away without speaking because there was nothing to say that would be correct.
 
 A girl she didn't recognize — nine, maybe ten — was sitting against the building wall next to Ren Vasquez. Not talking. Just beside him. He had his hand resting near hers on the pavement. Not touching. Near.
 

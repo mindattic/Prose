@@ -410,6 +410,23 @@ public class SettingsService : IDisposable
     public bool RepoListOnRight { get => data.RepoListOnRight; set { data.RepoListOnRight = value; ScheduleSave(); } }
     public bool EnablePlainTextNer { get => data.EnablePlainTextNer; set { data.EnablePlainTextNer = value; ScheduleSave(); } }
     public bool SaveStoriesAsMarkdown { get => data.SaveStoriesAsMarkdown; set { data.SaveStoriesAsMarkdown = value; ScheduleSave(); } }
+    public bool DocxIncludeToc { get => data.DocxIncludeToc; set { data.DocxIncludeToc = value; ScheduleSave(); } }
+
+    // ── Review voting ──────────────────────────────────────────────────────────
+    /// <summary>Default number of cheap score-only ballots per sampled strand review (--ballots).</summary>
+    public int ReviewBallots { get => data.ReviewBallots; set { data.ReviewBallots = Math.Max(1, value); ScheduleSave(); } }
+    /// <summary>Default number of full prose upgrades per sampled run (--prose).</summary>
+    public int ReviewProse { get => data.ReviewProse; set { data.ReviewProse = Math.Max(0, value); ScheduleSave(); } }
+    /// <summary>Default segment-study panel size (--panel / --study).</summary>
+    public int ReviewPanel { get => data.ReviewPanel; set { data.ReviewPanel = Math.Max(1, value); ScheduleSave(); } }
+    /// <summary>Default reader count for full / census runs (--readers).</summary>
+    public int ReviewReaders { get => data.ReviewReaders; set { data.ReviewReaders = Math.Max(1, value); ScheduleSave(); } }
+    /// <summary>Provider that synthesises the reader-synopsis after a review run.</summary>
+    public string ReviewJudgeProvider { get => data.ReviewJudgeProvider; set { data.ReviewJudgeProvider = value; ScheduleSave(); } }
+    /// <summary>Comma-separated provider IDs allowed to cast ballots (e.g. "claude,openai,gemini,deepseek").</summary>
+    public string ReviewAllowedProviders { get => data.ReviewAllowedProviders; set { data.ReviewAllowedProviders = value; ScheduleSave(); } }
+    /// <summary>Maximum simultaneous LLM calls during a review run.</summary>
+    public int ReviewMaxConcurrency { get => data.ReviewMaxConcurrency; set { data.ReviewMaxConcurrency = Math.Max(1, Math.Min(50, value)); ScheduleSave(); } }
 
     // SMTP — outbound email for password reset codes
     public string SmtpHost { get => Env("SS_SMTP_HOST", data.SmtpHost); set { data.SmtpHost = value; ScheduleSave(); } }
@@ -660,6 +677,7 @@ public class SettingsService : IDisposable
         public bool RepoListOnRight { get; set; } = true;
         public bool EnablePlainTextNer { get; set; } = false;
         public bool SaveStoriesAsMarkdown { get; set; } = true;
+        public bool DocxIncludeToc { get; set; } = false;
         public string SmtpHost { get; set; } = "";
         public int SmtpPort { get; set; } = 587;
         public string SmtpUsername { get; set; } = "";
@@ -673,5 +691,13 @@ public class SettingsService : IDisposable
         public string FtpRemotePath { get; set; } = "";
         public bool FtpUseSsl { get; set; } = true;
         public bool FtpPassive { get; set; } = true;
+        // Review voting defaults
+        public int ReviewBallots { get; set; } = 20;
+        public int ReviewProse { get; set; } = 4;
+        public int ReviewPanel { get; set; } = 128;
+        public int ReviewReaders { get; set; } = 50;
+        public string ReviewJudgeProvider { get; set; } = "claude";
+        public string ReviewAllowedProviders { get; set; } = "claude,openai,gemini,deepseek";
+        public int ReviewMaxConcurrency { get; set; } = 10;
     }
 }

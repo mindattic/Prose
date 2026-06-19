@@ -5,7 +5,9 @@
 [Beat 1]
 The job came in at half rate, which Kyle took as a compliment. People paid full freight when they wanted a problem to disappear. They paid half when they only wanted it done right, and could tell, somehow, that he was the kind of man who'd do the second for less than the first.
 
-The client was a woman named Reyes who ran flowers two stalls down from Mrs. Chen. Her husband had gone to talk to the crew that had taken over the Ashland loading dock about a delivery fee that hadn't existed last month, and he'd come home without his front teeth and without the dignity of remembering the walk. She put three hundred Φ on the counter — thirty ten-Φ chips, soft-cornered — city scrip, good inside the wire and nowhere else. Three hundred was a month of her stall's pitch-rent, or two months of clinic payments on a heart that hadn't been hers to begin with, or six hundred bowls at Chen's — the kind of money that has been somewhere safe a long time and is being spent anyway.
+There was a second ticket in his coat — no client, no address, no answer when you followed the shells down far enough. He had eleven years of them. Tonight's had posted at 22:14, which was also when a man named Reyes had been sitting in a clinic trying to remember which direction home was. He'd always told himself the timing was coincidence, and kept his mouth shut about it, and gotten paid.
+
+The client was a woman named Reyes who ran flowers two stalls down from Mrs. Chen. Her husband had gone to talk to the crew that had taken over the Ashland loading dock about a delivery fee that hadn't existed last month, and he'd come home without his front teeth and without the dignity of remembering the walk. She put three hundred Φ on the counter — thirty ten-Φ chips, soft-cornered, the blue municipal kind that spent everywhere and were trusted nowhere. Three hundred was a month of her stall's pitch-rent, or two months of clinic payments on a heart that hadn't been hers to begin with, or six hundred bowls at Chen's — the kind of money that has been somewhere safe a long time and is being spent anyway.
 
 "Standard rate's three," Kyle said. "This is half."
 
@@ -15,7 +17,7 @@ The client was a woman named Reyes who ran flowers two stalls down from Mrs. Che
 
 She hadn't thought he'd ask. That was the part most people never thought he'd ask.
 
-The dock rendered itself before he was through the door. The array did that — put the room down in heat and intention a quarter-second ahead of his eyes, and billed him in calories for the preview. Six bodies. The capacitor whine of knuckle-plates waking up under a card table. A woman's wrist housings unlocking, discreet as a watch being wound. And, folded behind a drum of cable in the corner, a seventh signature the size of a child trying very hard to be furniture.
+The dock rendered itself before he was through the door. The array did that — thirty-two thousand electrodes behind the skull, putting the room down in heat and intention, a quarter-second ahead of his eyes, billing him in calories for the preview. Six bodies. The capacitor whine of knuckle-plates waking up under a card table. A woman's wrist housings unlocking, discreet as a watch being wound. And, folded behind a drum of cable in the corner, a seventh signature the size of a child trying very hard to be furniture.
 
 Cut everything; cross nothing. That was the whole of the code, and the array kept the map so the hand could keep the promise.
 
@@ -23,9 +25,9 @@ The first one came in with a pipe and a lot of confidence. Kyle took the confide
 
 "Shop on Leavitt does seams for half what you paid," Kyle said, and meant it as the apology it was.
 
-Four of them in under a minute, and he did not draw Cacophony — the stub revolver stayed in its rig under his arm, five rounds and no more, the kind of gun a man carries once he's decided the sixth shot is usually a mistake.
+Four of them in under a minute, and he did not draw Cacophony. Five rounds was five rounds.
 
-Then the swordsman stood up from the card table, and the array — which had a number for everything in the room, every angle and exit and price — went quiet, because it had nothing useful to say about this.
+Then the swordsman stood up from the card table, and the array — which had a number for everything in the room, every angle and exit and price — went quiet, because it had nothing useful to say about this. Not the refusal it ran on the ghost tickets — those it simply skipped, the way you skip a page that's in another language — but the kind of quiet that precedes something it genuinely cannot price.
 
 He was old for the work, steel from one country in a jaw from another, and he carried a blade with a maker's mark Kyle could read at six meters and a lineage he could probably recite. He looked at Silence — matte, plain, no mark, no file, a blade with no parents that Kyle had carried eleven years and could not, when he was honest with himself, remember being handed — and something in the old man's face did the arithmetic and came out sad.
 
@@ -33,27 +35,39 @@ They bowed.
 
 Nobody made a joke. There was nothing in the room for a joke to stand on. Two men who had spent their whole lives learning a thing the world had stopped paying for agreed, without a word, to do it correctly one more time.
 
-The first pass opened his forearm to the bone, because the array had offered him the old man's throat instead — a clean line, the geometry already drawn in red — and Kyle had spent the half-second saying no to it rather than covering. Cut everything; cross nothing. The code cost him the arm, and he paid without doing the arithmetic, which was the only way he had ever known how to pay it.
+The first pass opened his forearm to the bone, because the array had offered him the old man's throat instead — a clean line, eight percent risk, the geometry already drawn in red — and Kyle had spent the half-second saying no to it rather than covering. Cut everything; cross nothing. The code cost him the arm, and he paid without doing the arithmetic, which was the only way he had ever known how to pay it.
 
 The second pass he let be a question. The old man stood breathing hard with the answer in his hand, and then he set the sword down on the cable drum, edge turned away, the way you return a thing to its owner. That was the bow. The rest was only two men standing very still while one of them decided to go on living.
 
 "Teeth," Kyle said, when it was over and the wit could come back into the room. "Front four. Belong to a man named Reyes. Somebody here folded them into a handkerchief like a tooth fairy with a grudge."
 
-The woman with the ruined shoulder told him about the safe behind the manager's office — the job was over, she was a professional, and there was no percentage in bleeding for a card table that had already lost. The handkerchief was inside it, folded exactly the way she'd described — the only tender thing anyone in that building had done all week, and they hadn't meant it.
+The woman with the ruined shoulder told him about the safe behind the manager's office. The handkerchief was inside it, folded exactly the way she'd described — the only tender thing anyone in that building had done all week, and they hadn't meant it.
 
 The child behind the cable drum was Reyes's daughter. She had come looking for the same thing he had, gotten there first, and braver. Maybe nine, knees drawn up to her chest, one sneaker untied, breathing through her mouth so the crying wouldn't make any sound the room could use against her.
 
-He crouched a polite distance off — the forearm sending up one bright clean line of protest, which he filed and did not answer — and held the handkerchief out on his open palm rather than carrying it for her, because there are errands you don't get to run on someone else's behalf. She took it in two hands. She bowed — a full-body convulsion of terror shaped like gratitude — and then she was gone into the dark beyond the door before he could tell her to lock it behind her.
+He crouched a polite distance off and held the handkerchief out on his open palm rather than carrying it for her, because there are errands you don't get to run on someone else's behalf. She took it in two hands. She bowed — held it longer than she meant to — and then she was gone into the dark beyond the door before he could tell her to lock it behind her.
 
-She didn't drop them. Whatever else the night cost, the girl did not drop them.
+She didn't drop them. Note that. Whatever else the night cost, the girl did not drop them.
 
 Kyle stood a moment longer than the job needed, watching the dark where she'd gone, listening to her footsteps not slow down.
 
-The job ticket in his coat surfaced on its own — the array throwing it up before he reached for it, the way it had started doing lately, as if it were reading his mail for someone who wasn't him. A second contract, riding under the real one: no client, pre-paid, the kind he'd been taking for eleven years and had quit pretending to understand around year four. He left it folded. It would keep. They always did.
+That was when he let himself feel the second contract — and the array surfaced it a half-second before he reached for it, the way it had started doing lately, throwing things up before he looked, as if it were reading them for someone who wasn't him.
+
+It had been in his coat since before the flowers-money — a job ticket he had not written, riding under the real one the way a watermark rides under a page. No client. Shells folded into shells, resolving down to nothing, the way they always did with this one. Pre-paid. The timestamp said it had posted at 22:14, which was the hour Reyes's husband lost his teeth and nine hours before Reyes herself had decided to spend her safe-money on a stranger — so the thing had known about the job before the client did. The routing tag resolved to a relay at Holden and 19th that the grid had carried as decommissioned for six years. And the fee, to the half-Φ, was exactly standard rate.
+
+He had eleven years of these. Year six, one had paid him standard rate to stand on the Cermak overpass for forty minutes and let a particular grey transit van pass underneath, unbothered; he never learned whose it was or what rode in it, and the fee had cleared before he got home. He had stopped, around year four, pretending he understood them. What he had not stopped doing was getting paid by them — on time, in full, by someone or something that had decided a long while ago that a man's work was worth precisely what the man charged for it, in a city where everyone he had ever met paid either too little or too much.
+
+He'd look at it tomorrow. It would keep; they always did.
+
+A relay doesn't route for eleven years after it's been dead six unless somebody's good at killing things on paper and keeping them alive anyway.
+
+He'd been filing that conclusion under patience since year three. It had always been a clean fit. Tonight, for the first time, it came back wrong.
 
 Mrs. Chen's counter was the last lit thing on the block. Half the sodium lamps on Ashland had been dark so long the poles had been recommissioned as anchor points for somebody's laundry line; nobody had filed to repair them, because the utility that owned them had been folded into a holding company that had been folded into another, and the lights now belonged, on paper, to no one who could be made to care. She had the second bowl down before he'd gotten the bike onto its stand.
 
 She looked at the forearm — at the field strip he'd drawn tight with his teeth somewhere between the fifth man and the sixth — and at his face, and she did not comment on either, because seventy years in this city had taught her which questions a man answers with a lie and which he answers by leaving. She set the bowl in front of him. She set chili oil at the empty end of the counter, unasked, which was her whole vocabulary for I see that it cost you, and she let him eat.
+
+He ate left-handed, because the field strip had found the wrong angle when he set the bowl down, and the arm reminded him it was still there and had opinions about it. Mrs. Chen did not watch him do this. She knew the courtesy of looking at something else.
 
 When he was done he set a chip on the counter beside her hand. Standard rate, exact.
 
@@ -63,13 +77,7 @@ When he was done he set a chip on the counter beside her hand. Standard rate, ex
 
 She made a noise that on anyone else would have been a laugh, and took the chip without looking down at it, and that was the contract renewed for one more night.
 
-He walked the bike out before he let himself feel the arm. It would need real work — sutures, not a field strip, and a calibration pass. The array had browned out for a quarter-second behind the duel's last cut and come back a beat slow, double-printing the edges of things, so the doorframe wore two left sides until he blinked. That happened more often now than it used to. He had told no one.
+He walked the bike out past the edge of the dead lamps before he let himself feel the arm. It would need real work — sutures, not a field strip, and a calibration pass on the array, which had browned out for a quarter-second behind the duel's last cut and come back a beat slow, double-printing the edges of things, so the doorframe wore two left sides until he blinked — which happened more often now than it used to, and which he had told no one. There was one person in the building across the hall who could do both, and she would be awake when he knocked, and she would pretend she'd been awake anyway.
 
-Now that the night was over, he let himself read the second contract all the way down. The timestamp said it had posted at 22:14 — the hour Reyes's husband lost his teeth, nine hours before Reyes spent her safe-money on a stranger; the thing had known about the job before the client did. The routing tag resolved to a relay at Holden and 19th that the grid had carried as decommissioned for six years. And the scope field, where a client writes what he wants done, held a single line: RETURN WHAT WAS TAKEN. The array couldn't tell him whether that meant the teeth. Neither could he.
-
-He had eleven years of these. Year six, one had paid him standard rate to stand on the Cermak overpass for forty minutes and let a particular grey transit van pass underneath, unbothered; he never learned whose it was or what rode in it, and the fee cleared before he got home. Whatever was buying his nights paid on time, paid in full, and paid exactly — in a city where everyone he had ever met paid either too little or too much.
-
-There was one person in the building across the hall who could fix the arm and the array both, and she would be awake when he knocked, and she would pretend she'd been awake anyway. He'd knock in the morning.
-
-He rode out under the dead lamps, where the laundry hung off the poles like flags for a country that had stopped collecting taxes, and let the street be quiet around him.
+He'd knock in the morning. For now he walked the bike out under the dead lamps, where the laundry hung off the poles like flags for a country that had stopped collecting taxes, and let the street be quiet around him.
 

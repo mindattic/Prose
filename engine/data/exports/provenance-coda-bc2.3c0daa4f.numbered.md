@@ -77,6 +77,8 @@ Kyle read it twice, and filed the name where he kept the things that were going 
 
 "That one came back twice," Vey said, not looking. "On a schedule. I notice schedules. Schedules are how you tell a man from an institution: a man gets tired."
 
+Kyle took the underlevel stairs slow, the buyers' list in one pocket and the Continuity Office header in the other, and the array did what it always did, costing the morning out in hours and calories and probability bands. It could price a man who got tired, a man who got greedy, a man who ran out of budget. It had no column for the thing that didn't get tired, and he noticed the blank the way you notice a missing key on a ring â€” not the loss, just the gap where the weight should be â€” and kept climbing.
+
 ---
 
 Pixel was waiting on the platform at Dock 14 with a coffee she did not offer him and a smart-dust reader she did.
@@ -88,6 +90,8 @@ Pixel was waiting on the platform at Dock 14 with a coffee she did not offer him
 "Or," Pixel agreed, and they looked together at the 14:17 Pulse freight slug standing on the rail, sealed and humming, forty-three minutes from Rotterdam at Mach six.
 
 He walked past the slug close enough to brush it, and let the marker dust find a new home — a sealed pod bound under the North Atlantic, forty-three minutes to Rotterdam, where it would go on reporting his position with great confidence from the wrong continent.
+
+Someone careful enough to plant it should have been careful enough to hide it better, and he set the thought down on the platform without finishing it and left it there for the next slug.
 
 Pixel finally handed him the coffee. "Somebody in an office files that you're in Rotterdam. Somebody above them believes it, because it's on the system." She watched the slug go. "Everybody trusts the paper. Vey's the only one who charges for the truth."
 

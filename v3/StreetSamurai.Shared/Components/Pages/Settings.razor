@@ -221,6 +221,76 @@
 
 @* FTP Publishing section removed — deploying via Azure CI/CD *@
 
+@* ── Review Voting ─────────────────────────────────────── *@
+<div class="row g-3 mb-3">
+    <div class="col-12">
+        <div class="card bg-dark text-light border-secondary">
+            <div class="card-header text-muted"><span><i class="bi bi-people"></i> Review Voting</span></div>
+            <div class="card-body">
+                <p class="text-muted small mb-3">
+                    Controls the sampled review panel. Changes take effect on the next run — no restart needed.
+                </p>
+                <div class="row g-3 align-items-end">
+                    <div class="col-md-2">
+                        <label class="form-label text-muted">Ballots</label>
+                        <input type="number" class="form-control bg-dark text-light border-secondary" min="1"
+                               value="@SettingsSvc.ReviewBallots"
+                               @onchange="e => { if (int.TryParse(e.Value?.ToString(), out var v)) SettingsSvc.ReviewBallots = v; }" />
+                        <div class="form-text text-muted">Score-only ballots per run</div>
+                    </div>
+                    <div class="col-md-2">
+                        <label class="form-label text-muted">Prose upgrades</label>
+                        <input type="number" class="form-control bg-dark text-light border-secondary" min="0"
+                               value="@SettingsSvc.ReviewProse"
+                               @onchange="e => { if (int.TryParse(e.Value?.ToString(), out var v)) SettingsSvc.ReviewProse = v; }" />
+                        <div class="form-text text-muted">Full reviews per run</div>
+                    </div>
+                    <div class="col-md-2">
+                        <label class="form-label text-muted">Panel size</label>
+                        <input type="number" class="form-control bg-dark text-light border-secondary" min="1"
+                               value="@SettingsSvc.ReviewPanel"
+                               @onchange="e => { if (int.TryParse(e.Value?.ToString(), out var v)) SettingsSvc.ReviewPanel = v; }" />
+                        <div class="form-text text-muted">Persona pool depth</div>
+                    </div>
+                    <div class="col-md-2">
+                        <label class="form-label text-muted">Readers</label>
+                        <input type="number" class="form-control bg-dark text-light border-secondary" min="1"
+                               value="@SettingsSvc.ReviewReaders"
+                               @onchange="e => { if (int.TryParse(e.Value?.ToString(), out var v)) SettingsSvc.ReviewReaders = v; }" />
+                        <div class="form-text text-muted">Default reader count</div>
+                    </div>
+                    <div class="col-md-2">
+                        <label class="form-label text-muted">Max concurrency</label>
+                        <input type="number" class="form-control bg-dark text-light border-secondary" min="1" max="50"
+                               value="@SettingsSvc.ReviewMaxConcurrency"
+                               @onchange="e => { if (int.TryParse(e.Value?.ToString(), out var v)) SettingsSvc.ReviewMaxConcurrency = v; }" />
+                        <div class="form-text text-muted">Parallel ballot slots (1–50)</div>
+                    </div>
+                    <div class="col-md-2">
+                        <label class="form-label text-muted">Judge provider</label>
+                        <select class="form-select bg-dark text-light border-secondary"
+                                value="@SettingsSvc.ReviewJudgeProvider"
+                                @onchange="e => SettingsSvc.ReviewJudgeProvider = e.Value?.ToString() ?? SettingsSvc.ReviewJudgeProvider">
+                            <option value="claude">claude</option>
+                            <option value="openai">openai</option>
+                            <option value="gemini">gemini</option>
+                            <option value="deepseek">deepseek</option>
+                        </select>
+                        <div class="form-text text-muted">Synthesizes the summary</div>
+                    </div>
+                    <div class="col-12">
+                        <label class="form-label text-muted">Allowed providers (comma-separated)</label>
+                        <input type="text" class="form-control bg-dark text-light border-secondary"
+                               value="@SettingsSvc.ReviewAllowedProviders"
+                               @onchange="e => SettingsSvc.ReviewAllowedProviders = e.Value?.ToString() ?? SettingsSvc.ReviewAllowedProviders" />
+                        <div class="form-text text-muted">Restrict ballots to these providers. Leave blank to use all active. Example: <code>claude,openai</code></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
 @* ── Canon Data Export ─────────────────────────────────── *@
 <div class="row g-3 mb-3">
     <div class="col-12">

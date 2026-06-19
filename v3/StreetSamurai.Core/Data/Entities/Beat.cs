@@ -112,6 +112,12 @@ public class Beat
     /// surfaces them for re-record with one click.</summary>
     public bool Stale { get; set; }
 
+    /// <summary>True when a canon entity mentioned in this beat was updated
+    /// after the beat was written. Signals the author to review whether the
+    /// prose still matches entity canon. Cleared manually after review.
+    /// Separate from <see cref="Stale"/> which is audio-only.</summary>
+    public bool EntityStale { get; set; }
+
     /// <summary>True if the beat has been manually rewritten since materialisation.</summary>
     public bool WasCorrected { get; set; }
 

@@ -370,6 +370,54 @@ A prose beat/strand is **done** only when:
 - **The Pulse** *(GLMZ)* — Mach-6 magnetic vacuum transit network. **The Network** *(GLMZ)* — the
   ambient proprioceptive information field BCI-augmented people sense (see `network_doc.md`).
 
+## 10. New story / book workflow {#SS-§10}
+
+> **Invariant: docs and entities before prose.** No prose is generated until every step marked
+> ★ is complete for this story. This order is enforced; skipping it produces stories that reference
+> characters or CorpoNations that don't exist in the DB, breaking continuity retrieval.
+
+### Step 1 — Canon first ★
+
+- **If the story introduces new world facts** (new CorpoNation, new species, new world event, new
+  narrative laws for a character): append a new `SS-AN` entry to `docs/AMENDMENTS.md`.
+- **Always**: add a new story entry to `docs/USER_STORIES.md` under the appropriate Epic, with
+  sub-items for entity seeding, chapter structure, each act, and the review target.
+- Run `pwsh tools/codex.ps1 doctor` — must pass before proceeding.
+
+### Step 2 — Entity seeding ★
+
+Every **named entity** that appears in the story must be in the DB:
+- Characters: `ss --add-character --name "..." --species human [--description "..."]`
+- CorpoNations: `ss --add-corponation --name "..." [--description "..."]` (or via MCP `add_entity`)
+- Places, Weapons, Documents, etc.: via MCP `add_entity` or the appropriate CLI
+
+Run `ss --scan-entity-mentions --strand <slug>` after every chapter draft to keep coverage current.
+
+### Step 3 — Book structure ★
+
+1. Create a **book-level strand** (`kind=book`): `ss --write-strand --seed "..." --kind book`
+   or via the UI.
+2. Create **chapter sub-strands** as children of the book strand (`kind=chapter`, `--parent <slug>`).
+   Target ~28 chapters for a KDP paperback (~80k words); ~12–15 for a novella.
+3. The authorial spine (14-beat outline or equivalent) is saved as the book strand's `seed` text —
+   it is the **outline**, not the final prose.
+
+### Step 4 — Prose generation
+
+For each chapter, in order:
+1. **Sonnet draft** — `ss --expand-beat` or the Writer UI (Sonnet is the draft model).
+2. **Opus polish** — mandatory; never ship Sonnet-only prose.
+3. **`ss --reflow-strand --slug <chapter-slug>`** — fix paragraph and dialogue mechanics.
+4. **`ss --review-strand --slug <chapter-slug>`** — Legion panel; target ≥82% before next chapter.
+5. **`ss --scan-entity-mentions --strand <book-slug>`** — keep coverage current after each chapter.
+
+### Step 5 — Export and review
+
+- After all chapters reach draft standard: full-book review panel; target ≥85%.
+- `ss --publish-docx --slug <book-slug>` → KDP-ready .docx.
+- Voice harvest if any chapter scores ≥80%: `ss --harvest-voice --strand <chapter-slug>`.
+- Flip all USER_STORIES.md sub-items to ✅ with evidence in the same commit.
+
 ---
 
 *Maintenance rule: when you finish a goal, flip its status here and in

@@ -7,7 +7,7 @@ The hold notice went up on Mrs. Chen's stall on a Tuesday, laminated, official, 
 
 Kyle read it standing in the spot where he'd eaten two bowls a night for six years. **COMPLIANCE HOLD — PUBLIC HEALTH (PENDING REVIEW).** Eleven complaints in nine days, it said. Grease-trap violations, an unregistered cold line, a customer who'd filed an allergic reaction with a clinic that, the notice was careful to specify, had a record on file. Pending review meant the stall stayed dark while the review took its time, and reviews, in this city, took exactly as long as someone was paying for them to take.
 
-Mrs. Chen stood beside him with her hands folded, not touching the notice, the way you don't touch a thing that's been put on you by people who want to see if you will. Seventy years in this city had taught her that the notice was not the weapon. The notice was the receipt for a weapon already fired.
+Mrs. Chen stood beside him with her hands folded, not touching the notice, the way you don't touch a thing that's been put on you by people who want to see if you will. Seventy years in this city had taught her that the notice was not the fight. The fight was the seventy-two hours before it that nobody had seen, and it had already been decided before the laminator was warm.
 
 "Eleven complaints," Kyle said.
 
@@ -39,6 +39,16 @@ Mercer received him in the Damen Authentic front-of-house, under a hand-distress
 
 "We're not in a dispute with the individual operator," Mercer said, before Kyle had sat. "We've raised health concerns. Concerns get reviewed. It's all very ordinary."
 
+Mercer produced a folded note — city seal, clean crease — and set it on the table between them. "We spoke with the health compliance desk this morning. The hold is on standard track." The ease stayed where he'd put it. "I want you to understand where the conversation sits before we continue."
+
+Kyle looked at the note without picking it up. "Which desk."
+
+Mercer named it.
+
+Kyle didn't have anyone there. He had someone two floors up, on the block that handled interference filings — not the same desk, but the same building, and buildings kept records of what traveled between floors. The compliance letter would reach the floor Mercer cared about on its own. Kyle just needed to file at the right address first.
+
+"I'll go to that desk too," Kyle said. "And the one above it, which processes interference claims — the kind that involves complaint clusters traced to a frontage's shell." He set his own sheet on the table beside the city note. "You've squared the right desk, Mr. Mercer. I came to square a different one."
+
 "It is," Kyle agreed. "That's the part I came about." He set a single folded sheet on the table — not a weapon, a receipt. "Nine of your eleven complaints filed in one seventy-two-hour window, one portal, one agent, traceable to a firm with one client behind two shells. That's not a health record. That's a purchase order, and it's got your frontage name at the bottom of it because somebody four layers down got lazy about the last shell." He left the sheet where it was. "Here's the ordinary part. I don't take this to the street. I'm not built for the street on this one. I take it to two desks. Yours — Tessaline's own compliance audit, the one that exists to make sure regional men like you don't create exactly this kind of liability. And the territory landlord, who leases you the new frontage on a clause that voids for fraudulent interference with a sitting tenant." He let that sit. "You didn't break a noodle stall, Mr. Mercer. You wrote down, in a place that keeps copies, that you would. The stall was never the exposure. *The paper was.*"
 
 Mercer's pleasantness did a small, expensive thing around the eyes — the look of a man recalculating which way the liability flowed and discovering it flowed uphill, at him.
@@ -52,6 +62,8 @@ Mercer's pleasantness did a small, expensive thing around the eyes — the look 
 "Is a copy. They're always copies, Mr. Mercer. That's the trouble with paper. The antiques dealer under the Loop taught me that." He didn't explain further.
 
 ---
+
+He spent the gap back near Chen's block, because paper takes hours to do what a blade does in a second, and somebody had to be there for the hours. Her stall stayed dark â€” she couldn't cook under the hold, and the hold didn't care that it was lunchtime. A man slowed at her empty griddle, read the laminated notice, and walked the two streets over to Damen Authentic instead; Kyle watched him go and didn't move, because there was nothing in the paper yet to put between that man and that door. That was the part the win column never showed: the hold would lift, and the complaints would vanish, and nobody would ever refund Mrs. Chen the bowls she didn't sell while the right desk got around to her.
 
 The hold came down at 16:40.
 
@@ -80,4 +92,6 @@ Pixel had the blue arm finished and standing on her bench like a small monument,
 "I wasn't going to argue."
 
 "You always argue. It's how you say thank you." She turned back to the small blue arm. The door stayed open the width she always left it, which was exactly enough.
+
+On the stairs it caught up with him, the way the bill always does after the meal. He'd handed Mercer his whole method to win the room â€” paper, Vey's name, the buyers' list a man only gets one way â€” and a Tessaline desk would file every word of it, because filing was the thing they were best at. He'd won the building and signed the guest book on the way out; somewhere now there was a sheet with his name on it, and sheets were always copies. He filed that where it went and climbed the rest of the stairs.
 
