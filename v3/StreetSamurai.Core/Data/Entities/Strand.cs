@@ -153,6 +153,17 @@ public class Strand
     /// <summary>When the strand bible was last generated or updated.</summary>
     public DateTime? StrandBibleGeneratedAt { get; set; }
 
+    // ── User Stories ──────────────────────────────────────────────────────
+    // Acceptance criteria for this strand: what scenes, beats, character arcs,
+    // and voice moments must be present for it to be "done". Written before
+    // prose begins. Updated as goals evolve. System-versioned automatically.
+
+    /// <summary>Acceptance-criteria markdown. Null = not yet written.</summary>
+    public string? StrandUserStories { get; set; }
+
+    /// <summary>When the user stories were last updated.</summary>
+    public DateTime? StrandUserStoriesUpdatedAt { get; set; }
+
     public DateTime StartedAt { get; set; } = DateTime.UtcNow;
     public DateTime? GenerationCompletedAt { get; set; }
     public DateTime? AudioCompletedAt { get; set; }
@@ -205,4 +216,56 @@ public class Strand
     /// <summary>Persona reader-reviews (1:M). Each review run appends rows; the
     /// aggregate lives in <see cref="StrandReviewSummary"/>.</summary>
     public List<StrandReview> Reviews { get; set; } = new();
+}
+
+// ── StrandAmendment ───────────────────────────────────────────────────────
+// Append-only change log for a strand's narrative spine. Each row records a
+// decision made during writing that alters the bible, characters, arc, or
+// world rules in scope for this strand. SequenceNo is monotonically
+// increasing per strand. System-versioned so no amendment is ever truly lost.
+
+public class StrandAmendment
+{
+    public Guid     Id         { get; set; }
+    public Guid     StrandId   { get; set; }
+    /// <summary>1-based index per strand. Assigned by service on insert.</summary>
+    public int      SequenceNo { get; set; }
+    /// <summary>Short reference code: SA-1, SA-2, … (strand-amendment).</summary>
+    public string   Code       { get; set; } = "";
+    /// <summary>One-line description of the change.</summary>
+    public string   Summary    { get; set; } = "";
+    /// <summary>Full amendment text (markdown).</summary>
+    public string   Body       { get; set; } = "";
+    public DateTime CreatedAt  { get; set; }
+    /// <summary>"cli" | "mcp" or a user-facing label.</summary>
+    public string   CreatedBy  { get; set; } = "";
+}
+
+// ── StrandSpineVersion ────────────────────────────────────────────────────
+// Bridge table: records which version of the spine (bible + user stories +
+// amendments) was in effect when a particular docx version of the strand was
+// pinned. One row per (StrandId, StrandVersion) — the docx publish counter.
+//
+// Lets the engine answer:
+//   "what was the bible when we scored 85%?" (get by StrandVersion=N)
+//   "has the spine drifted since the last pin?" (compare hashes)
+//   "how many amendments were applied at version 3?" (AmendmentCount)
+
+public class StrandSpineVersion
+{
+    public Guid     Id                { get; set; }
+    public Guid     StrandId          { get; set; }
+    /// <summary>Mirrors Strand.Version (docx publish counter) at time of pin.</summary>
+    public int      StrandVersion     { get; set; }
+    /// <summary>SHA-256 hex of StrandBible content at pinning time. Empty = no bible yet.</summary>
+    public string   BibleHash         { get; set; } = "";
+    /// <summary>SHA-256 hex of StrandUserStories content at pinning time. Empty = not yet written.</summary>
+    public string   UserStoriesHash   { get; set; } = "";
+    /// <summary>SequenceNo of the latest StrandAmendment applied at this pin. 0 = none.</summary>
+    public int      AmendmentCount    { get; set; }
+    public DateTime PinnedAt          { get; set; }
+    /// <summary>"cli" | "mcp" | "auto-review" | "auto-publish".</summary>
+    public string   PinnedBy          { get; set; } = "";
+    /// <summary>Optional human note about what changed at this version.</summary>
+    public string   Notes             { get; set; } = "";
 }

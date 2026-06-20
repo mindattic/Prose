@@ -729,6 +729,7 @@ public static class ServiceCollectionExtensions
         services.AddSingleton<BehavioralInvariantEnforcer>();
         services.AddSingleton<WeaponAmmoCompatibilityService>();
         services.AddSingleton<MarkdownFileService>();
+        services.AddSingleton<StrandSpineService>();
 
         return services;
     }
