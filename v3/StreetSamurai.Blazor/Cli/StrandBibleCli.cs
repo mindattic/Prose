@@ -41,6 +41,7 @@ public static class StrandBibleCli
 
         var dbFactory    = services.GetRequiredService<IDbContextFactory<StreetSamuraiDbContext>>();
         var bibleService = services.GetRequiredService<StrandBibleService>();
+        var spineService = services.GetRequiredService<StrandSpineService>();
 
         // Resolve strand
         await using var db = await dbFactory.CreateDbContextAsync();
@@ -102,6 +103,10 @@ public static class StrandBibleCli
         Console.WriteLine("─────────────────────────────────────────────────────────────");
         Console.WriteLine(bibleText);
         Console.WriteLine("─────────────────────────────────────────────────────────────");
+
+        // Scaffold user stories template if not yet set.
+        await spineService.ScaffoldAsync(strand.Id, strand.Title, bibleAlreadySet: true);
+        Console.WriteLine($"[bible-strand] Spine user-stories scaffolded.");
 
         var beatPlans = StrandBibleService.ParseBeatSpine(bibleText);
         Console.WriteLine();
