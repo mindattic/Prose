@@ -107,6 +107,10 @@
                                     <span class="strand-drag-handle me-2" title="Drag to reorder or move into a collection">
                                         <i class="bi bi-grip-vertical"></i>
                                     </span>
+                                    @if (!string.IsNullOrWhiteSpace(s.StrandCode))
+                                    {
+                                        <span class="strand-code-chip me-1" title="Strand code">@s.StrandCode</span>
+                                    }
                                     <a href="@($"/strand/{s.Slug}")" class="text-info text-decoration-none flex-grow-1"
                                        @onclick:preventDefault @onclick="() => OpenStrand(s.Slug)">
                                         <strong>@s.Title</strong>
@@ -125,6 +129,13 @@
                                         {
                                             <span class="text-muted" title="Beats across all episodes">
                                                 <i class="bi bi-three-dots me-1"></i>@beatCount
+                                            </span>
+                                        }
+                                        @{ var pages = pageCounts.GetValueOrDefault(s.Id, 0); }
+                                        @if (pages > 0)
+                                        {
+                                            <span class="text-muted" title="Estimated pages (word count ÷ 250)">
+                                                <i class="bi bi-file-text me-1"></i>@pages pg
                                             </span>
                                         }
                                         @if (s.Score.HasValue)
@@ -338,6 +349,7 @@
 }
 
 <style>
+    .strand-code-chip { font-size: 0.65rem; font-weight: 700; color: #0dcaf0; background: rgba(13,202,240,0.1); border: 1px solid rgba(13,202,240,0.3); border-radius: 3px; padding: 1px 5px; letter-spacing: 0.04em; font-family: monospace; flex-shrink: 0; }
     .strand-guid { font-size: 0.68rem; color: #6c757d; cursor: pointer; }
     .strand-guid:hover { color: #0dcaf0; }
     .strand-synopsis-line { font-size: 0.85rem; color: #adb5bd; white-space: pre-wrap; line-height: 1.35; }
@@ -393,6 +405,8 @@
     private Dictionary<Guid, List<StrandEntity>> childStrands = new();
     /// <summary>Top-level strand ids whose children are currently expanded inline.</summary>
     private HashSet<Guid> expandedParents = new();
+    /// <summary>Estimated page count per strand id (word count / 250).</summary>
+    private Dictionary<Guid, int> pageCounts = new();
     /// <summary>Id of the parent strand currently running a collection export. Null when idle.</summary>
     private Guid? exportingCollectionId;
     private string newTitle = "";
@@ -606,6 +620,20 @@
         {
             childStrands = new();
         }
+
+        // Page estimates: sum beat text length per strand, divide by ~5.2 chars/word / 250 words/page.
+        var allIds = strands.Select(s => s.Id)
+            .Concat(childStrands.Values.SelectMany(v => v.Select(c => c.Id)))
+            .Distinct().ToList();
+        var charCounts = await db.StrandBeats
+            .AsNoTracking()
+            .Where(sb => allIds.Contains(sb.StrandId) && sb.IsEnabled)
+            .Join(db.Beats.AsNoTracking().Where(b => b.Text != null && b.Text != ""),
+                  sb => sb.BeatId, b => b.Id, (sb, b) => new { sb.StrandId, b.Text })
+            .GroupBy(x => x.StrandId)
+            .Select(g => new { StrandId = g.Key, Chars = g.Sum(x => (long)x.Text!.Length) })
+            .ToDictionaryAsync(x => x.StrandId);
+        pageCounts = charCounts.ToDictionary(kvp => kvp.Key, kvp => (int)(kvp.Value.Chars / 5.2 / 250));
 
         grouped = strands.GroupBy(s => s.Kind).OrderBy(g => g.Key);
         loading = false;

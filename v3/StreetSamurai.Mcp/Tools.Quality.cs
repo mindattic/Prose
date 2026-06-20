@@ -198,6 +198,97 @@ public class QualityTools
         }, CanonTools.JsonOpts);
     }
 
+    /// <summary>Return the stored review summary for a strand — the synthesized "what readers think" aggregate written after the last review run. Cheaper than a new review; stale if the strand has been edited since.</summary>
+    [McpServerTool, Description("Return the stored review summary for a strand — the synthesized aggregate of what readers liked, recurring gripes, and concrete improvement suggestions, written by the judge after the last review run. Includes average score, review count, and content hash so you can tell whether the summary is stale (strand was edited after the last run). Call review_strand to refresh. Accepts strand id (GUID) or slug.")]
+    public async Task<string> GetReviewSummary(
+        [Description("Strand id (GUID) or slug.")] string strandIdOrSlug)
+    {
+        await using var db = await dbFactory.CreateDbContextAsync();
+        Guid strandId;
+        if (Guid.TryParse(strandIdOrSlug, out var g))
+            strandId = g;
+        else
+        {
+            var s = await db.Strands.AsNoTracking().FirstOrDefaultAsync(x => x.Slug == strandIdOrSlug);
+            if (s == null) return JsonSerializer.Serialize(new { error = "strand_not_found", strandIdOrSlug }, CanonTools.JsonOpts);
+            strandId = s.Id;
+        }
+
+        var summary = await db.StrandReviewSummaries
+            .AsNoTracking()
+            .Where(r => r.StrandId == strandId)
+            .OrderByDescending(r => r.GeneratedAt)
+            .FirstOrDefaultAsync();
+
+        if (summary == null)
+            return JsonSerializer.Serialize(new { has_summary = false, strand_id = strandId }, CanonTools.JsonOpts);
+
+        return JsonSerializer.Serialize(new
+        {
+            has_summary      = true,
+            strand_id        = summary.StrandId,
+            generated_at     = summary.GeneratedAt,
+            avg_score        = Math.Round(summary.AvgScore, 2),
+            review_count     = summary.ReviewCount,
+            content_hash     = summary.ContentHash,
+            score_distribution = summary.ScoreDistributionJson,
+            summary_markdown = summary.SummaryMarkdown,
+        }, CanonTools.JsonOpts);
+    }
+
+    /// <summary>List individual ballot reviews for a strand — one row per persona reader.</summary>
+    [McpServerTool, Description("List individual ballot reviews for a strand — one row per persona reader, showing persona name, provider, score, flow score (if study mode), improvements, and content hash. Use to inspect which personas scored low and what they said, or to compare how different providers voted. Results are sorted most-recent-first. Accepts strand id (GUID) or slug.")]
+    public async Task<string> ListStrandReviews(
+        [Description("Strand id (GUID) or slug.")] string strandIdOrSlug,
+        [Description("Only return reviews from this content hash (i.e. one specific review run). Leave empty for all reviews.")] string contentHash = "",
+        [Description("Maximum rows to return. Default 50.")] int limit = 50)
+    {
+        await using var db = await dbFactory.CreateDbContextAsync();
+        Guid strandId;
+        if (Guid.TryParse(strandIdOrSlug, out var g))
+            strandId = g;
+        else
+        {
+            var s = await db.Strands.AsNoTracking().FirstOrDefaultAsync(x => x.Slug == strandIdOrSlug);
+            if (s == null) return JsonSerializer.Serialize(new { error = "strand_not_found", strandIdOrSlug }, CanonTools.JsonOpts);
+            strandId = s.Id;
+        }
+
+        var q = db.StrandReviews.AsNoTracking().Where(r => r.StrandId == strandId);
+        if (!string.IsNullOrWhiteSpace(contentHash)) q = q.Where(r => r.ContentHash == contentHash);
+
+        var reviews = await q
+            .OrderByDescending(r => r.ReviewedAt)
+            .Take(limit)
+            .Select(r => new
+            {
+                id            = r.Id,
+                persona_id    = r.PersonaId,
+                persona_name  = r.PersonaName,
+                persona_blurb = r.PersonaBlurb,
+                provider      = r.ProviderId,
+                model         = r.Model,
+                score         = r.Score,
+                flow_score    = r.FlowScore,
+                improvements  = r.Improvements,
+                review_text   = r.ReviewText,
+                content_hash  = r.ContentHash,
+                beat_count    = r.BeatCount,
+                cluster_label = r.ClusterLabel,
+                reviewed_at   = r.ReviewedAt,
+            })
+            .ToListAsync();
+
+        var avg = reviews.Count > 0 ? reviews.Average(r => r.score) : 0;
+        return JsonSerializer.Serialize(new
+        {
+            strand_id    = strandId,
+            count        = reviews.Count,
+            avg_score    = reviews.Count > 0 ? Math.Round(avg, 2) : (double?)null,
+            reviews,
+        }, CanonTools.JsonOpts);
+    }
+
     /// <summary>Update one or more review-voting settings. Omit any field to leave it unchanged. Changes persist immediately and take effect on the next review run.</summary>
     [McpServerTool, Description("Update review-voting settings. Pass only the fields you want to change — omit the rest. ballots: score-only ballot count (≥1). prose: full prose upgrades per run (≥0). panel: persona pool depth (≥1). readers: default reader count (≥1). max_concurrency: parallel ballot slots 1–50. judge_provider: provider that synthesizes the summary (claude|openai|gemini|deepseek). allowed_providers: comma-separated provider whitelist (e.g. 'claude,openai'); empty = all active providers allowed.")]
     public string UpdateReviewSettings(
