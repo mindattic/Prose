@@ -1259,6 +1259,21 @@ if (args.Contains("--prose-check"))
     return;
 }
 
+// ss --check-fidelity (--slug <strandSlug> | --id <strandId>) [--json]
+// Detects the Semantic Fidelity Gap — beats scoring high but drifting from the
+// story's original meaning (Goodhart's Law in prose). Two checks:
+//   Bible alignment: prose vs Seed/Synopsis (north-star drift)
+//   Intent alignment: prose vs beat Synopsis (purpose drift)
+// Files SEMANTIC-DRIFT findings; also runs automatically after every review.
+if (args.Contains("--check-fidelity"))
+{
+    var cliBuilder = WebApplication.CreateBuilder(args);
+    cliBuilder.Services.AddStreetSamuraiServices();
+    var cliApp = cliBuilder.Build();
+    Environment.ExitCode = await CheckFidelityCli.RunAsync(args, cliApp.Services);
+    return;
+}
+
 // ss --world-state --beat <beatId> [--story-time "date"] [--json]
 if (args.Contains("--world-state"))
 {

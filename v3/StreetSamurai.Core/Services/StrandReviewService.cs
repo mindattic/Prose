@@ -25,6 +25,7 @@ public class StrandReviewService
     private readonly StrandMarkdownExporter exporter;
     private readonly IDbContextFactory<StreetSamuraiDbContext> dbFactory;
     private readonly FindingsService findings;
+    private readonly SemanticFidelityService fidelity;
     private readonly ILogger<StrandReviewService> log;
 
     private int MaxConcurrency => settings.ReviewMaxConcurrency;
@@ -40,6 +41,7 @@ public class StrandReviewService
         StrandMarkdownExporter exporter,
         IDbContextFactory<StreetSamuraiDbContext> dbFactory,
         FindingsService findings,
+        SemanticFidelityService fidelity,
         ILogger<StrandReviewService> log)
     {
         this.legion = legion;
@@ -48,6 +50,7 @@ public class StrandReviewService
         this.exporter = exporter;
         this.dbFactory = dbFactory;
         this.findings = findings;
+        this.fidelity = fidelity;
         this.log = log;
     }
 
@@ -1139,6 +1142,19 @@ Be specific; do not invent praise the reviews don't support.";
                 log.LogInformation("Strand {Slug} crossed 80% ({Score:0.#}) — raised VOICE-HARVEST finding.", strand.Slug, strand.Score);
             }
             catch (Exception ex) { log.LogWarning(ex, "Failed to raise VOICE-HARVEST finding for {Slug}", strand.Slug); }
+        }
+
+        // Auto-trigger semantic fidelity audit whenever the strand scores above the
+        // gaming threshold. Fire-and-forget — doesn't block the review response.
+        // Drift-skipped embeddings keep the cost near zero on unchanged beats.
+        if ((strand.Score ?? 0) >= SemanticFidelityService.ScoreGamingThreshold)
+        {
+            var capturedId = strandId;
+            _ = Task.Run(async () =>
+            {
+                try { await fidelity.AuditStrandAsync(capturedId, CancellationToken.None); }
+                catch (Exception ex) { log.LogWarning(ex, "Background fidelity audit failed for strand {Id}", capturedId); }
+            });
         }
     }
 
