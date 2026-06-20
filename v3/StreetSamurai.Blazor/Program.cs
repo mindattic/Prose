@@ -1387,6 +1387,30 @@ if (args.Contains("--get"))
     return;
 }
 
+// CLI mode: sync project-rule, Codex, and Claude Code memory .md files to DB.
+// Upserts by RelativePath; only changed files (hash diff) produce a history row.
+//   ss --sync-markdown [--dry-run]
+if (args.Contains("--sync-markdown"))
+{
+    var cliBuilder = WebApplication.CreateBuilder(args);
+    cliBuilder.Services.AddStreetSamuraiServices();
+    var cliApp = cliBuilder.Build();
+    Environment.ExitCode = await SyncMarkdownCli.RunAsync(args, cliApp.Services);
+    return;
+}
+
+// CLI mode: restore .md files from DB back to disk. Supports point-in-time
+// recovery from the MarkdownFiles_History temporal table.
+//   ss --restore-markdown [--file <relativePath>] [--as-of <datetime-utc>] [--dry-run] [--list]
+if (args.Contains("--restore-markdown"))
+{
+    var cliBuilder = WebApplication.CreateBuilder(args);
+    cliBuilder.Services.AddStreetSamuraiServices();
+    var cliApp = cliBuilder.Build();
+    Environment.ExitCode = await RestoreMarkdownCli.RunAsync(args, cliApp.Services);
+    return;
+}
+
 var builder = WebApplication.CreateBuilder(args);
 
 // Cloud-native configuration chain. Layered (later sources win):

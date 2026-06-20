@@ -298,6 +298,7 @@ public class StreetSamuraiDbContext : DbContext
     public DbSet<NewsEntity>     News            => Set<NewsEntity>();
     public DbSet<ContractEntity> Contracts       => Set<ContractEntity>();
     public DbSet<DocumentEntity> Documents       => Set<DocumentEntity>();
+    public DbSet<MarkdownFile>   MarkdownFiles   => Set<MarkdownFile>();
     public DbSet<Vocabulary>     VocabularyEntries => Set<Vocabulary>();
     public DbSet<LabSpecimen>    LabSpecimens    => Set<LabSpecimen>();
     public DbSet<Psionic>        Psionics        => Set<Psionic>();
@@ -1985,6 +1986,22 @@ public class StreetSamuraiDbContext : DbContext
             e.HasIndex(x => x.CharacterId);
             e.HasIndex(x => x.Alias);
         });
+
+        // ── MarkdownFile ────────────────────────────────────────────────────
+        b.Entity<MarkdownFile>(e =>
+        {
+            e.HasKey(x => x.Id);
+            e.Property(x => x.FilePath).HasMaxLength(2000);
+            e.Property(x => x.FileRoot).HasMaxLength(100).IsRequired();
+            e.Property(x => x.RelativePath).HasMaxLength(2000).IsRequired();
+            e.Property(x => x.FileName).HasMaxLength(500).IsRequired();
+            e.Property(x => x.Category).HasMaxLength(100).IsRequired();
+            e.Property(x => x.ContentHash).HasMaxLength(64);
+            e.Property(x => x.SyncedBy).HasMaxLength(100);
+            e.HasIndex(x => x.RelativePath).IsUnique();
+            e.HasIndex(x => x.Category);
+            e.HasIndex(x => x.LastSyncedAt);
+        });
     }
 
     // ConfigureSubtype helper removed — every subtype is now configured explicitly
@@ -2092,6 +2109,11 @@ public class StreetSamuraiDbContext : DbContext
         "EntityStateEvents",
         "WeaponSpecs",
         "Settings",
+        // Project-rules, Codex docs, and Claude Code memory files. Versioned so
+        // any revision of any .md file can be recovered by timestamp — history
+        // rows keep the full content, so a catastrophic file deletion can be
+        // undone with ss --restore-markdown --as-of <datetime>.
+        "MarkdownFiles",
     };
 
     /// <summary>

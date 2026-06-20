@@ -63,7 +63,26 @@ Working rules:
    MCP **before any prose is generated**.
 3. **Book structure** — create book-level strand (`kind=book`) + chapter sub-strands (`kind=chapter`)
    with the book as parent. Authorial spine (14-beat outline) = the book strand's `seed` text.
-4. **Prose** — Sonnet draft → Opus polish → reflow → review (≥82%) → scan entity mentions.
+4. **Prose** — Sonnet draft → Opus polish → reflow → dual review (see below) → scan entity mentions.
 5. **Export** — `--publish-docx`; flip USER_STORIES to ✅ with evidence.
 
 Never write prose before steps 1 and 2 are complete.
+
+## Multi-Strand Story Review (mandatory after every strand — see memory: feedback_story_accretion)
+
+When writing a multi-strand story (book, series, alternating POV), each completed strand triggers a **mandatory dual review** before the next strand begins. No exceptions.
+
+**A. Standalone review** — Score ≥82%. If below, fix before continuing.
+
+**B. Cumulative prefix review** — Read all strands Ch1–N in order. Story score must trend toward and hold ≥85%. If this strand drops the cumulative, investigate before proceeding.
+
+Use both reviews to diagnose and act:
+- **Prose problems** — voice drift, flat dialogue, missing sensory texture.
+- **Pacing problems** — beats that over- or under-stay; repeated emotional register without escalation.
+- **Contradictions** — entity state, wound ledger, timeline, character voice.
+- **Underperforming beats** — expand if underdeveloped, contract if dead weight. Never pad; never cut a beat that's pulling the story forward.
+
+| Measure | Target |
+|---|---|
+| Per-strand standalone | ≥82% |
+| Cumulative story (all strands in reading order) | ≥85% |
