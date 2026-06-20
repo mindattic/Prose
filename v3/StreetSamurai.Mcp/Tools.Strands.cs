@@ -418,7 +418,7 @@ public class StrandTools
 
         string bibleText;
         try { bibleText = await bible.GenerateAndSaveAsync(strand.Id, seed, strand.Title, targetBeats); }
-        catch (Exception ex) { return JsonSerializer.Serialize(new { error = "generation_failed", message = ex.Message }, CanonTools.JsonOpts); }
+        catch (Exception ex) { return JsonSerializer.Serialize(new { error = "generation_failed", message = ex.Message, inner = ex.InnerException?.Message, deep = ex.InnerException?.InnerException?.Message }, CanonTools.JsonOpts); }
 
         var spine = StrandBibleService.ParseBeatSpine(bibleText)
             .Select(p => new { index = p.Index, title = p.Title, goal = p.Goal, structure_role = p.StructureRole });

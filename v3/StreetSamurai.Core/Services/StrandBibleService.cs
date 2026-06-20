@@ -215,12 +215,15 @@ public class StrandBibleService
             return;
         }
 
+        var baseNumber = (await db.Beats.MaxAsync(b => (int?)b.Number, ct) ?? 0) + 1;
         var now = DateTime.UtcNow;
+        int beatIndex = 0;
         foreach (var plan in plans.OrderBy(p => p.Index))
         {
             var beat = new Beat
             {
                 Id            = Guid.CreateVersion7(),
+                Number        = baseNumber + beatIndex++,
                 BeatTitle     = plan.Title,
                 Synopsis      = plan.Goal,
                 StructureRole = MapStructureRole(plan.StructureRole),
