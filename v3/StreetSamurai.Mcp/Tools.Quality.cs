@@ -36,6 +36,7 @@ public class QualityTools
     private readonly SettingsService settings;
     private readonly StrandReviewService reviewer;
     private readonly CanonContradictionService canonChecker;
+    private readonly SemanticFidelityService fidelity;
     private readonly IDbContextFactory<StreetSamuraiDbContext> dbFactory;
 
     public QualityTools(
@@ -47,6 +48,7 @@ public class QualityTools
         SettingsService settings,
         StrandReviewService reviewer,
         CanonContradictionService canonChecker,
+        SemanticFidelityService fidelity,
         IDbContextFactory<StreetSamuraiDbContext> dbFactory)
     {
         this.consistency = consistency;
@@ -57,6 +59,7 @@ public class QualityTools
         this.settings = settings;
         this.reviewer = reviewer;
         this.canonChecker = canonChecker;
+        this.fidelity = fidelity;
         this.dbFactory = dbFactory;
     }
 
@@ -286,6 +289,52 @@ public class QualityTools
             count        = reviews.Count,
             avg_score    = reviews.Count > 0 ? Math.Round(avg, 2) : (double?)null,
             reviews,
+        }, CanonTools.JsonOpts);
+    }
+
+    /// <summary>Check the semantic fidelity of a strand — detect the Goodhart's Law gap where beats score high but drift from the story's original meaning. Returns bible alignment (prose vs story Seed/Synopsis) and intent alignment (prose vs beat Synopsis) for each scored beat, with SEMANTIC-DRIFT findings filed for violations. Run after review_strand to verify the score reflects real quality, not metric gaming.</summary>
+    [McpServerTool, Description("Check the Semantic Fidelity Gap for a strand — Goodhart's Law in prose. Detects beats that score high on the Legion review metric but have drifted from the story's original meaning. Two checks: (1) Bible alignment: cosine similarity between each beat's prose and the strand's Seed/Synopsis — a high-scoring beat that no longer resembles the story it was born from is gaming the metric. (2) Intent alignment: cosine similarity between each beat's Synopsis (stated purpose) and its actual prose — drift here means the rewrite served reviewer patterns, not the beat's purpose. Embeds beats (drift-skipped), queries alignment, files SEMANTIC-DRIFT findings for violators, and returns the full report. Accepts strand id (GUID) or slug.")]
+    public async Task<string> CheckSemanticFidelity(
+        [Description("Strand id (GUID) or slug.")] string strandIdOrSlug)
+    {
+        await using var db = await dbFactory.CreateDbContextAsync();
+        Guid strandId;
+        if (Guid.TryParse(strandIdOrSlug, out var g))
+            strandId = g;
+        else
+        {
+            var s = await db.Strands.AsNoTracking().FirstOrDefaultAsync(x => x.Slug == strandIdOrSlug);
+            if (s == null) return JsonSerializer.Serialize(new { error = "strand_not_found", strandIdOrSlug }, CanonTools.JsonOpts);
+            strandId = s.Id;
+        }
+
+        var report = await fidelity.AuditStrandAsync(strandId);
+        return JsonSerializer.Serialize(new
+        {
+            strand_id             = report.StrandId,
+            slug                  = report.Slug,
+            strand_score          = report.StrandScore,
+            beats_checked         = report.BeatsChecked,
+            beats_scored          = report.BeatsScored,
+            mean_bible_alignment  = Math.Round(report.MeanBibleAlignment, 4),
+            mean_intent_alignment = report.MeanIntentAlignment.HasValue
+                ? Math.Round(report.MeanIntentAlignment.Value, 4) : (double?)null,
+            score_gaming_threshold  = SemanticFidelityService.ScoreGamingThreshold,
+            bible_alignment_floor   = SemanticFidelityService.BibleAlignmentFloor,
+            intent_alignment_floor  = SemanticFidelityService.IntentAlignmentFloor,
+            violations_count      = report.Violations.Count,
+            findings_emitted      = report.FindingsEmitted,
+            violations            = report.Violations.Select(v => new
+            {
+                beat_number      = v.BeatNumber,
+                beat_title       = v.BeatTitle,
+                score            = v.Score,
+                bible_alignment  = Math.Round(v.BibleAlignment, 4),
+                intent_alignment = v.IntentAlignment.HasValue ? Math.Round(v.IntentAlignment.Value, 4) : (double?)null,
+                kind             = v.Kind,
+                message          = v.Message,
+                suggested_fix    = v.SuggestedFix,
+            }),
         }, CanonTools.JsonOpts);
     }
 

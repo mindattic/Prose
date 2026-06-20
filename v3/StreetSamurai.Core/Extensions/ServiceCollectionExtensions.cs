@@ -731,6 +731,11 @@ public static class ServiceCollectionExtensions
         services.AddSingleton<MarkdownFileService>();
         services.AddSingleton<StrandSpineService>();
 
+        // Semantic Fidelity Gap detector — Goodhart's Law guard for the review metric.
+        // Runs in the background after every review; also available via
+        // `ss --check-fidelity` and the `check_semantic_fidelity` MCP tool.
+        services.AddSingleton<SemanticFidelityService>();
+
         return services;
     }
 

@@ -388,6 +388,46 @@ public class EmbeddingService
         public double Similarity { get; set; }
     }
 
+    // ── Pairwise similarity ───────────────────────────────────────────────
+
+    /// <summary>
+    /// Embed a list of text pairs in a single API batch call and return the
+    /// cosine similarity for each pair. Input order is preserved. Returns 0.0
+    /// for a pair if the API fails or either text is empty.
+    /// </summary>
+    public async Task<IReadOnlyList<double>> ComputeSimilaritiesBatchAsync(
+        IReadOnlyList<(string A, string B)> pairs,
+        CancellationToken ct = default)
+    {
+        if (pairs.Count == 0) return Array.Empty<double>();
+        await EnsureSchemaOnceAsync(ct);
+
+        // Flatten to [a0, b0, a1, b1, ...] so one batch call covers all pairs.
+        var texts = pairs
+            .SelectMany(p => new[] { TruncateForEmbed(p.A), TruncateForEmbed(p.B) })
+            .ToList();
+        var vectors = await EmbedBatchAsync(texts, ct);
+        if (vectors.Length != texts.Count) return Enumerable.Repeat(0.0, pairs.Count).ToArray();
+
+        var results = new double[pairs.Count];
+        for (int i = 0; i < pairs.Count; i++)
+            results[i] = CosineSimilarity(vectors[i * 2], vectors[i * 2 + 1]);
+        return results;
+    }
+
+    /// <summary>
+    /// Compute the cosine similarity between two arbitrary text strings.
+    /// Delegates to <see cref="ComputeSimilaritiesBatchAsync"/> (one API call).
+    /// Useful for comparing intent (Beat.Synopsis) against execution (Beat.Text).
+    /// Returns 0 on API failure.
+    /// </summary>
+    public async Task<double> ComputeSimilarityAsync(string a, string b, CancellationToken ct = default)
+    {
+        if (string.IsNullOrWhiteSpace(a) || string.IsNullOrWhiteSpace(b)) return 0;
+        var results = await ComputeSimilaritiesBatchAsync([(a, b)], ct);
+        return results.Count > 0 ? results[0] : 0;
+    }
+
     /// <summary>Bulk re-embed every chapter + beat in canon. Idempotent (drift-skipped).</summary>
     public async Task<int> ReembedProseCorpusAsync(
         IProgress<(int done, int total, string current)>? progress = null,
