@@ -613,33 +613,40 @@ public class StrandTools
         [Description("Short author reference code (e.g. 'ATTE'). Uppercased; pass empty string to clear. Omit to leave unchanged.")] string? code = null,
         [Description("ElevenLabs or local TTS voice id. Omit to leave unchanged; pass empty string to clear.")] string? voiceId = null)
     {
-        var strand = await ResolveStrandAsync(idOrSlug);
-        if (strand == null) return JsonSerializer.Serialize(new { error = "strand_not_found", idOrSlug }, CanonTools.JsonOpts);
-
-        await using var db = await dbFactory.CreateDbContextAsync();
-        var row = await db.Strands.FindAsync(strand.Id)
-            ?? throw new InvalidOperationException($"Strand {strand.Id} missing.");
-
-        if (title    != null) row.Title    = title;
-        if (synopsis != null) row.Synopsis = string.IsNullOrEmpty(synopsis) ? null : synopsis;
-        if (kind     != null) row.Kind     = kind;
-        if (status   != null) row.Status   = status;
-        if (seed     != null) row.Seed     = string.IsNullOrEmpty(seed) ? null : seed;
-        if (code     != null) row.StrandCode = string.IsNullOrEmpty(code) ? null : code.Trim().ToUpperInvariant();
-        if (voiceId  != null) row.VoiceId  = string.IsNullOrEmpty(voiceId) ? null : voiceId;
-        row.UpdatedAt = DateTime.UtcNow;
-
-        await db.SaveChangesAsync();
-        return JsonSerializer.Serialize(new
+        try
         {
-            ok     = true,
-            id     = row.Id,
-            slug   = row.Slug,
-            title  = row.Title,
-            kind   = row.Kind,
-            status = row.Status,
-            code   = row.StrandCode,
-        }, CanonTools.JsonOpts);
+            var strand = await ResolveStrandAsync(idOrSlug);
+            if (strand == null) return JsonSerializer.Serialize(new { error = "strand_not_found", idOrSlug }, CanonTools.JsonOpts);
+
+            await using var db = await dbFactory.CreateDbContextAsync();
+            var row = await db.Strands.FindAsync(strand.Id);
+            if (row == null) return JsonSerializer.Serialize(new { error = "strand_row_missing", id = strand.Id }, CanonTools.JsonOpts);
+
+            if (title    != null) row.Title    = title;
+            if (synopsis != null) row.Synopsis = string.IsNullOrEmpty(synopsis) ? null : synopsis;
+            if (kind     != null) row.Kind     = kind;
+            if (status   != null) row.Status   = status;
+            if (seed     != null) row.Seed     = string.IsNullOrEmpty(seed) ? null : seed;
+            if (code     != null) row.StrandCode = string.IsNullOrEmpty(code) ? null : code.Trim().ToUpperInvariant();
+            if (voiceId  != null) row.VoiceId  = string.IsNullOrEmpty(voiceId) ? null : voiceId;
+            row.UpdatedAt = DateTime.UtcNow;
+
+            await db.SaveChangesAsync();
+            return JsonSerializer.Serialize(new
+            {
+                ok     = true,
+                id     = row.Id,
+                slug   = row.Slug,
+                title  = row.Title,
+                kind   = row.Kind,
+                status = row.Status,
+                code   = row.StrandCode,
+            }, CanonTools.JsonOpts);
+        }
+        catch (Exception ex)
+        {
+            return JsonSerializer.Serialize(new { error = "update_failed", message = ex.Message, idOrSlug }, CanonTools.JsonOpts);
+        }
     }
 
     [McpServerTool, Description("Return the score history for a strand as a time-series — every review run that produced a summary, with its mean score, SD, review count, and date. Use to track whether an edit moved the needle, or to compare pre/post-edit trajectories. Accepts strand id (GUID) or slug.")]

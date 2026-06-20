@@ -1426,6 +1426,22 @@ if (args.Contains("--restore-markdown"))
     return;
 }
 
+// CLI mode: Will Storr narrative-science frameworks — sacred flaw, dramatic question,
+// scene anatomy, five-act structure. Four subcommands:
+//   ss --narrative-science sacred-flaw --character <slug|id> [--scaffold]
+//   ss --narrative-science dramatic-question (--slug <s> | --id <beatId>) [--character <slug|id>]
+//   ss --narrative-science scene-anatomy (--slug <s> | --id <beatId>)
+//   ss --narrative-science five-act --slug <strandSlug>
+//   (add --json to any subcommand for raw JSON output)
+if (args.Contains("--narrative-science"))
+{
+    var cliBuilder = WebApplication.CreateBuilder(args);
+    cliBuilder.Services.AddStreetSamuraiServices();
+    var cliApp = cliBuilder.Build();
+    Environment.ExitCode = await NarrativeScienceCli.RunAsync(args, cliApp.Services);
+    return;
+}
+
 var builder = WebApplication.CreateBuilder(args);
 
 // Cloud-native configuration chain. Layered (later sources win):

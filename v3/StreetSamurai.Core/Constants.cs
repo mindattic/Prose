@@ -17,6 +17,7 @@ public static class Constants
         public const string NonCanon = "non-canon";
         public const string Published = "published";
         public const string Archived = "archived";
+        public const string Unincorporated = "unincorporated";
     }
 
     /// <summary>Entity type strings for canon data (supplements Graph.EntityTypes for repo-level types).</summary>
