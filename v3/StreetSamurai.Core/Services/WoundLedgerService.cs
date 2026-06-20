@@ -62,7 +62,7 @@ public class WoundLedgerService(
             INSERT INTO [dbo].[WoundLedger]
                 ([CharacterId],[BodyLocation],[Description],[Severity],[SourceStrandSlug],[SourceBeatId],[InWorldDate],[ExpectedHealingDays],[Status],[ResidualEffect])
             VALUES ({0},{1},{2},{3},{4},{5},{6},{7},{8},{9})
-            """, [characterId, bodyLocation, description, severity, sourceStrandSlug, sourceBeatId, inWorldDate, expectedHealingDays, status, residualEffect], ct);
+            """, [characterId, bodyLocation, description, severity, (object?)sourceStrandSlug ?? DBNull.Value, (object?)sourceBeatId ?? DBNull.Value, (object?)inWorldDate ?? DBNull.Value, expectedHealingDays, status, residualEffect], ct);
         log.LogInformation("Wound logged: {Char} {Loc} ({Sev})", characterId, bodyLocation, severity);
         await using var db2 = await dbFactory.CreateDbContextAsync(ct);
         return await db2.Database.SqlQueryRaw<long>("SELECT MAX(Id) AS [Value] FROM [dbo].[WoundLedger]").FirstAsync(ct);

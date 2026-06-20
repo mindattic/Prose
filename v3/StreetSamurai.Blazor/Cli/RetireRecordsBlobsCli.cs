@@ -314,7 +314,9 @@ public static class RetireRecordsBlobsCli
         var inList = string.Join(", ",
             Types.Select(t => t.EntityType).Append("character").Select(t => $"'{t}'"));
 
+#pragma warning disable EF1002 // inList is derived from internal type constants, not user input
         return await db.Database.ExecuteSqlRawAsync(
             $"DELETE r FROM Records r INNER JOIN Entities e ON r.EntityId = e.Id WHERE e.EntityType IN ({inList})");
+#pragma warning restore EF1002
     }
 }
