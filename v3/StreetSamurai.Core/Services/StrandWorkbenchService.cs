@@ -2909,16 +2909,29 @@ public class StrandWorkbenchService
     /// Single source of truth — used by /strand/{id}, /strands, any
     /// future strand-aware view. Keeps colors consistent so the user
     /// learns one visual language.</summary>
-    public static string StatusColor(string status) => status switch
+    public static string StatusColor(string status)
     {
-        "ready"           => "success",
-        "ready_for_audio" => "info",
-        "narrating"       => "primary",
-        "generating"      => "primary",
-        "failed"          => "danger",
-        "stopped"         => "warning",
-        _                 => "secondary",
-    };
+        if (string.IsNullOrEmpty(status)) return "secondary";
+        // Fixed system states
+        return status switch
+        {
+            "ready"           => "success",
+            "ready_for_audio" => "info",
+            "narrating"       => "primary",
+            "generating"      => "primary",
+            "failed"          => "danger",
+            "stopped"         => "warning",
+            "draft"           => "secondary",
+            "archived"        => "dark",
+            _ => status.StartsWith("Complete", StringComparison.OrdinalIgnoreCase) ||
+                 status.StartsWith("Canon",    StringComparison.OrdinalIgnoreCase)
+                    ? "success"
+                    : status.StartsWith("Act ", StringComparison.OrdinalIgnoreCase) ||
+                      status.StartsWith("In progress", StringComparison.OrdinalIgnoreCase)
+                        ? "info"
+                        : "secondary",
+        };
+    }
 
     /// <summary>Human-readable rendering of a Strand.Status value. Underscores
     /// become spaces; status names are kept lowercase so the badge's

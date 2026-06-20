@@ -57,8 +57,7 @@ public abstract class PipelineServiceBase
         if (!IsPaused) return;
         var tcs = pauseTcs;
         pauseTcs = null;
-        if (!IsRunning) _ = RunAsync();
-        else tcs?.TrySetResult(true);
+        tcs?.TrySetResult(true);
         StateChanged?.Invoke();
     }
 
