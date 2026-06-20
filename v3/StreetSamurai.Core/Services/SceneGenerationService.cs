@@ -22,6 +22,7 @@ public class SceneGenerationService
     private readonly WorldStatePrecheckService precheck;
     private readonly CanonRetrievalService canonRetrieval;
     private readonly SceneContextAssembler xray;
+    private readonly ProsePatternGuard? proseGuard;
 
     public event Action<BeatGenerationProgress>? OnBeatProgress;
     public event Action<GeneratedBeat>? OnBeatCompleted;
@@ -34,10 +35,12 @@ public class SceneGenerationService
         AmbientAnomalyService anomalies, NarrativeSummaryService summaries,
         DialogueService dialogue, WorldStateService worldState,
         WorldStatePrecheckService precheck, CanonRetrievalService canonRetrieval,
-        SceneContextAssembler xray)
+        SceneContextAssembler xray,
+        ProsePatternGuard? proseGuard = null)
     {
         this.xray = xray;
         this.canonRetrieval = canonRetrieval;
+        this.proseGuard = proseGuard;
         this.analyzer = analyzer;
         this.beatGen = beatGen;
         this.graph = graph;
@@ -157,6 +160,11 @@ public class SceneGenerationService
             // Validate against canon — catch pronoun errors, dead characters, etc.
             var issues = validator.ValidateQuick(text);
 
+            // Prose pattern guard — clichés, pseudo-profound, on-the-nose, italicised dialogue.
+            var proseIssues = proseGuard?.Check(text)
+                .Select(v => $"[{v.Category}] prose: {v.Rule}")
+                ?? Enumerable.Empty<string>();
+
             // Scan for new entity mentions (keyword + semantic)
             var newEntities = session.ScanText(text);
             session.ScanTextSemantic(text);
@@ -167,7 +175,9 @@ public class SceneGenerationService
                 Goal = beatContext.BeatGoal,
                 Text = text,
                 ContextTags = analysis.PsychologicalTriggers,
-                ValidationIssues = issues.Select(iss => $"[{iss.Category}] {iss.EntityName}: {iss.Description}").ToList(),
+                ValidationIssues = issues.Select(iss => $"[{iss.Category}] {iss.EntityName}: {iss.Description}")
+                    .Concat(proseIssues)
+                    .ToList(),
             };
 
             beats.Add(beat);

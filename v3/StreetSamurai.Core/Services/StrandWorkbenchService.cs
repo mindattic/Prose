@@ -56,7 +56,8 @@ public class StrandWorkbenchService
         IAudioStore audioStore,
         ILogger<StrandWorkbenchService> log,
         SettingsService? settings = null,
-        EntityRamificationService? ramification = null)
+        EntityRamificationService? ramification = null,
+        PostBeatValidationService? postBeatValidator = null)
     {
         this.dbFactory = dbFactory;
         this.tts = tts;
@@ -65,9 +66,11 @@ public class StrandWorkbenchService
         this.settings = settings;
         this.log = log;
         this.ramification = ramification;
+        this.postBeatValidator = postBeatValidator;
     }
 
     private readonly EntityRamificationService? ramification;
+    private readonly PostBeatValidationService? postBeatValidator;
 
     // ── Reads ────────────────────────────────────────────────────────────
 
@@ -184,6 +187,19 @@ public class StrandWorkbenchService
         // future entity saves can propagate EntityStale to this beat.
         if (ramification != null)
             _ = Task.Run(() => ramification.IndexBeatMentionsAsync(beatId, trimmed), CancellationToken.None);
+
+        // Fire-and-forget: auto-engage prose quality checks. Resolve slug
+        // here while the db context is still open; the validator only needs
+        // the slug string + text (no DB access in QuickValidateAsync).
+        if (postBeatValidator != null)
+        {
+            var slug = await db.StrandBeats.AsNoTracking()
+                .Where(sb => sb.BeatId == beatId)
+                .Join(db.Strands, sb => sb.StrandId, s => s.Id, (_, s) => s.Slug)
+                .FirstOrDefaultAsync(CancellationToken.None);
+            if (slug != null)
+                _ = Task.Run(() => postBeatValidator.QuickValidateAsync(slug, trimmed), CancellationToken.None);
+        }
     }
 
     /// <summary>Update a beat's narrative metadata — the fields that drive

@@ -1,6 +1,8 @@
 using System.ComponentModel;
 using System.Text.Json;
+using Microsoft.EntityFrameworkCore;
 using ModelContextProtocol.Server;
+using StreetSamurai.Core.Data;
 using StreetSamurai.Core.Services;
 
 namespace StreetSamurai.Mcp;
@@ -14,7 +16,9 @@ public class WorldModellingTools(
     ProsePatternGuard proseGuard,
     WeaponAmmoCompatibilityService weaponAmmoSvc,
     AmbientDetailInjector ambientSvc,
-    EntityRamificationService ramificationSvc)
+    EntityRamificationService ramificationSvc,
+    PostBeatValidationService postBeatValidator,
+    IDbContextFactory<StreetSamuraiDbContext> dbFactory)
 {
     [McpServerTool, Description(
         "Returns a hierarchical relationship tree rooted at an entity, " +
@@ -213,5 +217,115 @@ public class WorldModellingTools(
 
         await ramificationSvc.ClearEntityStaleAsync(bid);
         return JsonSerializer.Serialize(new { ok = true, beatId }, CanonTools.JsonOpts);
+    }
+
+    [McpServerTool, Description(
+        "Run the full post-beat validation battery on a saved beat: " +
+        "prose pattern guard (clichés, pseudo-profound, on-the-nose, italicised dialogue) + " +
+        "gear carry check (character uses gear without a carry edge) + " +
+        "optional behavior invariant check (LLM — one call per character). " +
+        "All violations are filed as Findings and returned. " +
+        "Accepts an optional comma-separated list of character GUIDs; when omitted, " +
+        "characters are derived from the beat's indexed entity mentions.")]
+    public async Task<string> ValidateBeat(
+        [Description("Beat GUID.")] string beatId,
+        [Description("Comma-separated character GUIDs to check gear/behavior for. Omit to auto-detect from entity mentions.")] string? characterIds = null,
+        [Description("Run the LLM-based behavior invariant check (one LLM call per character). Default false.")] bool checkBehavior = false,
+        [Description("Story-date for gear edge validation (ISO 8601). Omit for all-time carry edges.")] string? storyTime = null)
+    {
+        if (!Guid.TryParse(beatId, out var bid))
+            return JsonSerializer.Serialize(new { error = "invalid_guid", beatId }, CanonTools.JsonOpts);
+
+        List<Guid>? charIds = null;
+        if (!string.IsNullOrWhiteSpace(characterIds))
+        {
+            charIds = characterIds
+                .Split(',', StringSplitOptions.RemoveEmptyEntries | StringSplitOptions.TrimEntries)
+                .Where(s => Guid.TryParse(s, out _))
+                .Select(Guid.Parse)
+                .ToList();
+        }
+
+        DateTime? st = null;
+        if (storyTime != null && DateTime.TryParse(storyTime, out var dt)) st = dt;
+
+        var result = await postBeatValidator.FullValidateAsync(bid, charIds, checkBehavior, st);
+        return JsonSerializer.Serialize(new
+        {
+            beat_id            = beatId,
+            prose_violations   = result.ProseViolations,
+            gear_violations    = result.GearViolations,
+            behavior_violations = result.BehaviorViolations,
+            total_findings     = result.Total,
+            note               = result.Total > 0
+                ? "Findings filed — use list_findings to review them."
+                : "No violations found.",
+        }, CanonTools.JsonOpts);
+    }
+
+    [McpServerTool, Description(
+        "Run the prose pattern guard over every beat in a strand and file violations " +
+        "as Findings. This is the strand-wide sweep equivalent of check_prose — " +
+        "use it after importing or rewriting a strand to catch all clichés, " +
+        "pseudo-profound constructs, on-the-nose interiority, and italicised dialogue " +
+        "in one pass. Returns a per-beat summary of violations found.")]
+    public async Task<string> ScanStrandViolations(
+        [Description("Strand id (GUID) or slug.")] string strandIdOrSlug)
+    {
+        await using var db = await dbFactory.CreateDbContextAsync();
+        Guid strandId;
+        if (Guid.TryParse(strandIdOrSlug, out var g))
+            strandId = g;
+        else
+        {
+            var s = await db.Strands.AsNoTracking().FirstOrDefaultAsync(x => x.Slug == strandIdOrSlug);
+            if (s == null)
+                return JsonSerializer.Serialize(new { error = "strand_not_found", strandIdOrSlug }, CanonTools.JsonOpts);
+            strandId = s.Id;
+        }
+
+        var slug = await db.Strands.AsNoTracking()
+            .Where(s => s.Id == strandId)
+            .Select(s => s.Slug)
+            .FirstOrDefaultAsync() ?? strandId.ToString();
+
+        var beats = await db.StrandBeats.AsNoTracking()
+            .Where(sb => sb.StrandId == strandId)
+            .Join(db.Beats, sb => sb.BeatId, b => b.Id, (sb, b) => new { b.Id, b.Number, b.Text })
+            .OrderBy(b => b.Number)
+            .ToListAsync();
+
+        int totalViolations = 0;
+        var beatSummaries = new List<object>();
+        foreach (var beat in beats)
+        {
+            if (string.IsNullOrWhiteSpace(beat.Text)) continue;
+            var violations = proseGuard.Check(beat.Text);
+            if (violations.Count == 0) continue;
+
+            // File all violations for this beat as Findings.
+            await postBeatValidator.QuickValidateAsync(slug, beat.Text);
+
+            beatSummaries.Add(new
+            {
+                beat_number = beat.Number,
+                beat_id     = beat.Id,
+                violations  = violations.Select(v => new { category = v.Category.ToString(), rule = v.Rule }),
+            });
+            totalViolations += violations.Count;
+        }
+
+        return JsonSerializer.Serialize(new
+        {
+            strand_id       = strandId,
+            slug,
+            beats_scanned   = beats.Count,
+            total_violations = totalViolations,
+            beats_with_issues = beatSummaries.Count,
+            note = totalViolations > 0
+                ? "Violations filed as Findings — use list_findings to review."
+                : "No prose violations found.",
+            beats            = beatSummaries,
+        }, CanonTools.JsonOpts);
     }
 }
