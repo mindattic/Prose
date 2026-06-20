@@ -728,6 +728,7 @@ public static class ServiceCollectionExtensions
         services.AddSingleton<GearCarryEnforcer>();
         services.AddSingleton<BehavioralInvariantEnforcer>();
         services.AddSingleton<WeaponAmmoCompatibilityService>();
+        services.AddSingleton<MarkdownFileService>();
 
         return services;
     }

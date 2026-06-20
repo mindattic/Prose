@@ -50,7 +50,11 @@ public static class MigrateSqlCli
         // Strand Bible: add StrandBible + StrandBibleGeneratedAt to Strands (+ history table).
         var strandBible = args.Contains("--strand-bible");
 
-        if (!schema && !charRelational && !charDropLegacy && !strandBeatSoftDelete && !strandBeatVersion && !entityGrammarNote && !strandCode && !entityReviews && !strandBible)
+        // MarkdownFiles: create the MarkdownFiles table so .md files (project rules,
+        // Codex docs, Claude Code memory) can be backed up + restored by timestamp.
+        var markdownFiles = args.Contains("--markdown-files");
+
+        if (!schema && !charRelational && !charDropLegacy && !strandBeatSoftDelete && !strandBeatVersion && !entityGrammarNote && !strandCode && !entityReviews && !strandBible && !markdownFiles)
         {
             Console.WriteLine("Usage:");
             Console.WriteLine("  ss --migrate-sql --schema                    apply EF migrations + enable SYSTEM_VERSIONING");
@@ -60,6 +64,7 @@ public static class MigrateSqlCli
             Console.WriteLine("  ss --migrate-sql --strand-code               add StrandCode NVARCHAR(20) to Strands (unique per non-null value)");
             Console.WriteLine("  ss --migrate-sql --entity-reviews            create EntityReviews + EntityReviewSummaries tables");
             Console.WriteLine("  ss --migrate-sql --strand-bible              add StrandBible + StrandBibleGeneratedAt to Strands (+ history)");
+            Console.WriteLine("  ss --migrate-sql --markdown-files            create MarkdownFiles table (project-rules, Codex, memory backup)");
             Console.WriteLine();
             Console.WriteLine("  ss --migrate-sql --character-relational    add relational columns + bridges to Characters,");
             Console.WriteLine("                                             then backfill from Records.Json (--no-backfill skips Phase C)");
@@ -397,6 +402,51 @@ public static class MigrateSqlCli
             catch (Exception ex)
             {
                 Console.WriteLine($"  ✘ strand-bible migration failed: {ex.Message}");
+                failures++;
+            }
+        }
+
+        if (markdownFiles)
+        {
+            using var scope = sp.CreateScope();
+            var db = scope.ServiceProvider.GetRequiredService<StreetSamuraiDbContext>();
+
+            Console.WriteLine();
+            Console.WriteLine("[markdown-files]");
+            try
+            {
+                await db.Database.ExecuteSqlRawAsync("""
+                    IF NOT EXISTS (SELECT 1 FROM sys.objects WHERE object_id = OBJECT_ID(N'[dbo].[MarkdownFiles]') AND type = N'U')
+                    BEGIN
+                        CREATE TABLE [dbo].[MarkdownFiles] (
+                            [Id]            UNIQUEIDENTIFIER NOT NULL DEFAULT NEWSEQUENTIALID(),
+                            [FilePath]      NVARCHAR(2000)   NOT NULL DEFAULT '',
+                            [FileRoot]      NVARCHAR(100)    NOT NULL DEFAULT '',
+                            [RelativePath]  NVARCHAR(2000)   NOT NULL DEFAULT '',
+                            [FileName]      NVARCHAR(500)    NOT NULL DEFAULT '',
+                            [Category]      NVARCHAR(100)    NOT NULL DEFAULT '',
+                            [Content]       NVARCHAR(MAX)    NOT NULL DEFAULT '',
+                            [ContentHash]   NVARCHAR(64)     NOT NULL DEFAULT '',
+                            [LastSyncedAt]  DATETIME2        NOT NULL DEFAULT SYSUTCDATETIME(),
+                            [SyncedBy]      NVARCHAR(100)    NOT NULL DEFAULT '',
+                            CONSTRAINT [PK_MarkdownFiles] PRIMARY KEY ([Id])
+                        );
+                        CREATE UNIQUE INDEX [IX_MarkdownFiles_RelativePath] ON [dbo].[MarkdownFiles] ([RelativePath]);
+                        CREATE        INDEX [IX_MarkdownFiles_Category]     ON [dbo].[MarkdownFiles] ([Category]);
+                        CREATE        INDEX [IX_MarkdownFiles_LastSyncedAt] ON [dbo].[MarkdownFiles] ([LastSyncedAt]);
+                    END;
+                    """);
+                Console.WriteLine("  ✔ MarkdownFiles table created (or already exists).");
+
+                // Enable system versioning via the same idempotent EnableSystemVersioningAsync path.
+                Console.WriteLine("  · enabling system versioning on MarkdownFiles…");
+                await db.EnableSystemVersioningAsync(onError: (t, ex) =>
+                    Console.WriteLine($"  ✘ system versioning failed for {t}: {ex.Message}"));
+                Console.WriteLine("  ✔ MarkdownFiles is temporal (MarkdownFiles_History).");
+            }
+            catch (Exception ex)
+            {
+                Console.WriteLine($"  ✘ markdown-files migration failed: {ex.Message}");
                 failures++;
             }
         }

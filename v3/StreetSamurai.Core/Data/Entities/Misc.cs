@@ -210,6 +210,34 @@ public class DocumentHeading
     public Document? Document { get; set; }
 }
 
+// ── MarkdownFile (config + memory backup) ─────────────────────────────────
+// Tracks every .md file that the LLM toolchain depends on — project rules,
+// Codex docs, and Claude Code memory files. System-versioned so any version
+// of any file can be recovered by timestamp. FilePath stores the absolute
+// path at sync time; RelativePath is the stable logical key (relative to
+// FileRoot) used to reconstruct the path on any machine.
+//
+// FileRoot values:  "project"               → IPathProvider.DataRoot
+//                   "claude-user"           → ~/.claude
+//                   "claude-project-memory" → ~/.claude/projects/{slug}/memory
+//
+// Category values:  "project-rule" | "project-rule-global" | "codex"
+//                   | "register" | "rfc" | "memory" | "memory-index"
+
+public class MarkdownFile
+{
+    public Guid     Id            { get; set; }
+    public string   FilePath      { get; set; } = "";  // absolute path at sync time
+    public string   FileRoot      { get; set; } = "";  // logical root label
+    public string   RelativePath  { get; set; } = "";  // unique key: path relative to FileRoot
+    public string   FileName      { get; set; } = "";  // basename only
+    public string   Category      { get; set; } = "";
+    public string   Content       { get; set; } = "";
+    public string   ContentHash   { get; set; } = "";  // SHA-256 hex of Content
+    public DateTime LastSyncedAt  { get; set; }
+    public string   SyncedBy      { get; set; } = "";  // "cli" | "mcp"
+}
+
 // ── Vocabulary ─────────────────────────────────────────────────────────────
 
 public class Vocabulary
