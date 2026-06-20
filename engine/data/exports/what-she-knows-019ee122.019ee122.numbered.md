@@ -133,7 +133,17 @@ What she had was the data and ten days.
 
 *Outside. A Seam drop — somewhere the maintenance chain has no jurisdiction. I've been building the route for six weeks.* A pause, and then: *There's something else. When you have time. Not on this channel.*
 
-She looked at the gap. The warm wall was at her back now. The fans had not changed pitch.
+Then, while she was still at the console, a maintenance system notification appeared in her record. The system didn't message — it logged. *Calibration appointment C-8273, previously scheduled 06/29, rescheduled per provider request. New date: 06/24.* Five days earlier. Not a change she had submitted.
 
-She did not ask what the something else was. She knew the shape of a disclosure that had to be delivered in person, and she had enough to carry until then.
+The entry auto-cleared after six seconds, the way maintenance records always did.
+
+She sat with the new number. Ten days. Now five. She did not know whether someone inside Orison's system had triggered the change, or whether it was a routine batch-scheduling adjustment. She did not have enough information to determine which answer would be worse. Either the provider had flagged her account and moved her appointment closer because of something the archive access had surfaced — or they were moving batch 44-C clients routinely, ahead of some threshold she hadn't found yet.
+
+Neither interpretation gave her more time.
+
+She looked at the gap. The warm wall was at her back. The fans had not changed pitch.
+
+She did not ask what the something else was. She knew the shape of a disclosure that had to be delivered in person.
+
+She had five days. She needed to be outside the maintenance chain before the twenty-fourth. She closed the archive and started building a list.
 

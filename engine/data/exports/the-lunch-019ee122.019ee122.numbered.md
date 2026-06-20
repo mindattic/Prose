@@ -11,9 +11,9 @@ _Ciro takes Amara to lunch. He produces the straight razor to check his jaw — 
 
 She told herself it was fieldwork.
 
-It was not entirely a lie. She dressed professionally, which was not the same as dressing carefully — dark slacks, a structured jacket she'd owned for three years. Not trying. But aware. She checked her reflection in the transit pod window and looked away before she could have an opinion about it.
+It was not entirely a lie. She dressed professionally, which was not the same as dressing carefully — dark slacks, a structured jacket she'd owned for three years. Not trying. But aware. She checked her reflection in the transit pod window and looked away before she could form an opinion about it.
 
-The pod carried her out of the Zone 6 freight district — ozone, machine oil, the flat mineral smell of the lake, all of it cut off the moment the cab sealed — and through the Zone 5/6 border, where Orison held ambient air rights for twelve blocks around their residential cluster. She felt the changeover in her sinuses before the cabin display registered it: managed air, processed and uniform, scrubbed of any relationship to what was actually outside the glass. Then the middle Ring, where neither corp had finished its claims, and the air fell back to something honest. Particulate. A relay beacon advertisement cycled on a loop from a pylon near the track — a Cascade logo above the line COGNITIVE INFRASTRUCTURE YOU CAN TRUST, Cascade being the outfit that leased neuretic bandwidth to anyone who couldn't afford to grow their own — and she watched it scroll past and let it pass without annotation.
+The pod carried her out of the Zone 6 freight district — ozone, machine oil, the flat mineral smell of the lake, all of it cut off the moment the cab sealed — and through the Zone 5/6 border, where Orison held ambient air rights for twelve blocks around their residential cluster. She felt the changeover in her sinuses before the cabin display registered it: managed air, processed and uniform, scrubbed of any relationship to what was actually outside the glass. Then the middle Ring, where neither corp had finished its claims, and the air fell back to something honest. Particulate. A relay beacon advertisement cycled on a loop from a pylon near the track — a Cascade logo above the line COGNITIVE INFRASTRUCTURE YOU CAN TRUST, Cascade being the outfit that leased neuretic bandwidth to anyone who couldn't afford to grow their own — and she watched it scroll past and let it go without annotation.
 
 Nineteen minutes. She spent them reading a maintenance log she'd already read twice.
 
@@ -45,7 +45,7 @@ She looked up. She'd braced for lateral professional courtesy — a meeting that
 
 "Your certification history," he said. "Twelve years, continuous, advancement every cycle. That's not someone who fell into it."
 
-She looked at him a moment. Outside, the relay beacon cycled again, faint through the tile. "My mother had neuretics," she said. "Second generation. I'm from Lagos — she had the standard cognitive assist package through the municipal health program. I watched her being serviced once. I was eleven. The tech was careful. I remember thinking: that's a person working inside a person. That seemed like the most precise kind of work there was."
+She held his look a moment. Outside, the relay beacon cycled again, faint through the tile. "My mother had neuretics," she said. "Second generation. I'm from Lagos — she had the standard cognitive assist package through the municipal health program. I watched her being serviced once. I was eleven. The tech was careful. I remember thinking: that's a person working inside a person. That seemed like the most precise kind of work there was."
 
 "And you wanted precision."
 
@@ -55,8 +55,6 @@ He was quiet in a way that meant he was thinking about what she'd said, not wait
 
 "Yes," she said.
 
-"The people on the servicing side see the gap most clearly. You're working inside a system that is also a person, and you hold both things at once, and most of the product literature talks as if they aren't the same object."
-
 "The product literature talks as if the system runs on the person," Amara said. "Like a program running on a substrate."
 
 "And it doesn't."
@@ -64,8 +62,6 @@ He was quiet in a way that meant he was thinking about what she'd said, not wait
 "No. It's integrated. What you change in the architecture is a change in experience. What registers as a calibration from the outside is a shift in the quality of thought from the inside. They aren't separate events."
 
 He nodded — not the way people nodded to encourage, but the way someone nodded when they recognized something. She was aware she'd been speaking more directly than she'd intended, and aware this was something he had done: not manipulated, but oriented the conversation so that her direct opinions were the natural thing to say.
-
-She noted it, and kept talking, because the conversation was real.
 
 The food came. She'd ordered the vegetable congee. He had ordered the vegetable congee. She'd noticed when he ordered it, and said nothing.
 
@@ -75,17 +71,11 @@ Then, two spoonfuls in, she lifted her right hand toward the water glass, and he
 
 She did not look at Ciro while she did it.
 
-It had arrived before she could catch it — not a thought, the weight of a different morning seated in her palm. The torque of work that was not hers. She knew whose. She kept her face level and her hands in her lap and said, "The certification language frames it as upkeep. Like maintaining a vehicle."
+It had arrived before she could catch it — not a thought, but the weight of a different morning seated in her palm. The torque of work that was not hers. She knew whose. She kept her face level and her hands in her lap and said, "The certification language frames it as upkeep. Like maintaining a vehicle."
 
 "A vehicle doesn't re-experience its own state," Ciro said.
 
 "The patient does."
-
-The conversation moved. Cognition as a maintenance problem — memory not as storage but as continuous reconstruction, each recall a re-synthesis. He listened the way intelligent people listened, with questions that followed from what she'd said rather than questions designed to steer her back. She answered honestly. She noticed that answering honestly was a choice. That was information.
-
-He was right about the field. Not charming — or not only charming — but right. She knew the difference between someone performing insight and someone who had developed it through long contact with a problem. He had the texture of the second kind: the unsentimental precision of someone who had looked at the gap directly and had not found it any smaller on inspection.
-
-She found that more disquieting than charm would have been.
 
 They ordered coffee. He took his black. She added a little cold cream, the way she always did. The server left.
 
@@ -93,21 +83,17 @@ He was talking about calibration — the distinction between calibration as a te
 
 "— because calibration as a technical act can be done correctly and still fail the patient, if the tech isn't in contact with what the patient is reporting. The numbers say within tolerance. The patient says something is wrong. Most protocols say trust the numbers."
 
+The freight crew at the counter were laughing at something, short and loud. The relay beacon outside ran its test through the wall — the low clunk, thirty seconds of quiet, then the ad loop again. His face read exactly the same as ten seconds ago: the same precise attention, the same forward lean. She was not tracking the conversation anymore. She was tracking the razor. His thumb had run the edge from the hinge toward the tip — the testing direction, checking draw, not sharpness. Whether the blade moved clean in the fold. That was not the gesture of a man who shaved with it. That was the check of a man who carried it for something else, performed so many times the motion had migrated out of thought entirely.
+
+Her chest had gone even — the stillness she put on before a delicate procedure. She had two seconds. Ask about the razor — use the maintenance-tech voice, the one that said *I noticed something, walk me through it* — and watch what his face did. Or stay level. Let him keep talking. Carry what she now knew and re-read every conversation they'd had against it.
+
+She kept her seat. The conversation had changed even though his face hadn't.
+
 "Most protocols are wrong," Amara said.
 
-But she wasn't tracking the words now. She was tracking the razor.
-
-Not the gesture itself — she'd seen it at the Cellvault meeting and filed it then as automatic grooming, below his attention. What made her go still was the angle. His thumb had run the edge from the hinge toward the tip. That was the testing direction: checking draw, not sharpness. He was checking whether the blade moved clean out of the fold. Not the gesture of a man who shaves with it. The gesture of a man who carries it for something else, who'd run the check so many times the motion had migrated out of thought.
-
-The conversation went on. "Yes. The question is what you do with that inside a system that's built around the numbers."
-
-She held her coffee. Her chest had gone even, too even, the stillness she put on before a delicate procedure. She had maybe two seconds: ask him why he carries a razor he never shaves with — and watch what his face did — or stay level, let him keep talking, and sit with what she now knew, and re-read every conversation they'd had against it.
-
-She kept her seat. Said: "That's a structural problem."
+"That's a structural problem."
 
 "Most problems are, eventually."
-
-The restaurant had filled around them while they talked. She'd barely registered it happen. Four at the counter in waterproofed work jackets, ordering fast — freight-district crew on a short rotation. Outside, the relay beacon ran its test: a low clunk, thirty seconds of quiet, then the ad loop again. The ambient layer of the Ring, operating regardless of either of them.
 
 He finished his coffee cleanly, without lingering. Looked at her.
 
@@ -117,11 +103,9 @@ She said she hoped so too, and meant it, while being aware the meaning was more 
 
 He paid. She allowed it. He said goodbye with the right amount of warmth — not nothing, not too much. Then he was through the door and the room settled back into its own register.
 
-She stayed. Ordered a second coffee she didn't need and sat with it under the low ceiling, with the noise of other people and the question she hadn't asked. She knew what a man who field-tests his carry does with it. She knew what Orison Neuretics was. She knew what a liaison did in contested zones. None of those things had changed across the length of the meal.
+She stayed. Ordered a second coffee she didn't need and sat with it under the low ceiling. The freight crew had gone. Two people near the window were splitting a dessert and talking quietly. The kitchen noise was steady and uninvested. The restaurant had its own life without him.
 
-What had changed: she'd confirmed he was the second kind of person, and the second kind of person did not take meetings for professional courtesy.
-
-She didn't know yet what to do with that. She filed it as live.
+She sat with what she now knew. *Nothing I didn't already know* — that's what she'd tell Seto. She'd known the interest was possible; she'd confirmed it was real. What she hadn't known was the razor. The check run so many times the motion had migrated out of thought. She'd simplified it already, in her head, before she'd said anything to anyone. She filed the simplification alongside the fact. Both live. Neither archived.
 
 That evening, the ambient chimed. Seto.
 
@@ -131,7 +115,7 @@ She thought about what the word *out* was doing in that sentence.
 
 *Nothing I didn't already know.*
 
-She set the device down. She knew what she meant by it — that she'd gone in knowing the interest was possible, and come out knowing it was real. She'd also come out knowing the razor was not what she'd thought it was, and she hadn't told him that.
+She set the device down. She knew what she meant by it — that she'd gone in knowing the interest was possible, and come out knowing it was real. She'd also come out knowing something about the razor that she hadn't told him.
 
 She thought Seto probably understood one of those two things.
 

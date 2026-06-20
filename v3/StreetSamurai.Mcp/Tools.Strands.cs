@@ -527,6 +527,175 @@ public class StrandTools
         return JsonSerializer.Serialize(new { ok = true, path }, CanonTools.JsonOpts);
     }
 
+    [McpServerTool, Description("List strands with their latest review score, word count, and estimated page count (250 words/page). Optionally filter by kind ('book', 'chapter', 'episode', etc.) and/or status ('draft', 'canon', 'ready', 'archived'). Returns code, title, kind, status, score (null if unreviewed), words, pages, scored_on. Sorted by score descending (unscored strands last). Use this for a quick quality dashboard without running new reviews.")]
+    public async Task<string> ListScores(
+        [Description("Optional kind filter (case-insensitive). E.g. 'book', 'chapter', 'novella'. Empty = all kinds.")] string kind = "",
+        [Description("Optional status filter (case-insensitive). E.g. 'draft', 'canon', 'ready'. Empty = all statuses except archived.")] string status = "",
+        [Description("Include archived strands. Default false.")] bool includeArchived = false,
+        [Description("Maximum rows to return. Default 200.")] int limit = 200)
+    {
+        await using var db = await dbFactory.CreateDbContextAsync();
+
+        var q = db.Strands.AsNoTracking().AsQueryable();
+        if (!string.IsNullOrWhiteSpace(kind))   q = q.Where(s => s.Kind == kind);
+        if (!string.IsNullOrWhiteSpace(status)) q = q.Where(s => s.Status == status);
+        else if (!includeArchived)               q = q.Where(s => s.Status != "archived");
+
+        var strands = await q.OrderBy(s => s.Kind).ThenBy(s => s.Title).Take(limit).ToListAsync();
+        var ids = strands.Select(s => s.Id).ToList();
+
+        // Latest review score per strand (from StrandReviewSummaries — the authoritative aggregate)
+        var scores = await db.StrandReviewSummaries
+            .AsNoTracking()
+            .Where(r => ids.Contains(r.StrandId))
+            .GroupBy(r => r.StrandId)
+            .Select(g => new
+            {
+                StrandId  = g.Key,
+                Score     = g.OrderByDescending(r => r.GeneratedAt).Select(r => (double?)r.AvgScore).First(),
+                ScoredAt  = g.OrderByDescending(r => r.GeneratedAt).Select(r => (DateTime?)r.GeneratedAt).First(),
+                Reviews   = g.OrderByDescending(r => r.GeneratedAt).Select(r => (int?)r.ReviewCount).First(),
+            })
+            .ToDictionaryAsync(x => x.StrandId);
+
+        // Word counts from beats
+        var wordCounts = await db.StrandBeats
+            .AsNoTracking()
+            .Where(sb => ids.Contains(sb.StrandId) && sb.IsEnabled)
+            .Join(db.Beats.AsNoTracking().Where(b => b.Text != null && b.Text != ""),
+                  sb => sb.BeatId, b => b.Id, (sb, b) => new { sb.StrandId, b.Text })
+            .GroupBy(x => x.StrandId)
+            .Select(g => new { StrandId = g.Key, Chars = g.Sum(x => (long)x.Text!.Length) })
+            .ToDictionaryAsync(x => x.StrandId);
+
+        var rows = strands.Select(s =>
+        {
+            scores.TryGetValue(s.Id, out var sc);
+            wordCounts.TryGetValue(s.Id, out var wc);
+            // Rough word count from char count (avg English word ≈ 5 chars + 1 space)
+            var words = wc != null ? (int)(wc.Chars / 5.2) : 0;
+            return new
+            {
+                id        = s.Id,
+                code      = s.StrandCode,
+                slug      = s.Slug,
+                title     = s.Title,
+                kind      = s.Kind,
+                status    = s.Status,
+                score     = sc?.Score.HasValue == true ? (double?)Math.Round(sc.Score.Value, 1) : null,
+                scored_on = sc?.ScoredAt.HasValue == true ? sc.ScoredAt.Value.ToString("yyyy-MM-dd") : null,
+                review_count = sc?.Reviews,
+                words,
+                pages     = words / 250,
+            };
+        })
+        .OrderBy(r => r.score == null ? 1 : 0)
+        .ThenByDescending(r => r.score ?? 0)
+        .ToList();
+
+        return JsonSerializer.Serialize(new { count = rows.Count, strands = rows }, CanonTools.JsonOpts);
+    }
+
+    [McpServerTool, Description("Update a strand's metadata fields. Pass only the fields you want to change — omit the rest to leave them unchanged. Editable fields: title, synopsis, kind, status, seed, code (StrandCode), voice_id. Status valid values: draft | ready | canon | archived. Code is uppercased and must be unique across non-null values — pass empty string to clear it. Does NOT touch beats or audio.")]
+    public async Task<string> UpdateStrand(
+        [Description("Strand id (GUID) or slug.")] string idOrSlug,
+        [Description("New title. Omit to leave unchanged.")] string? title = null,
+        [Description("Short synopsis. Omit to leave unchanged; pass empty string to clear.")] string? synopsis = null,
+        [Description("Kind label: book | chapter | episode | novella | novel | strand | scene | saga | anthology. Omit to leave unchanged.")] string? kind = null,
+        [Description("Status: draft | ready | canon | archived. Omit to leave unchanged.")] string? status = null,
+        [Description("Generation seed (one-line premise). Omit to leave unchanged; pass empty string to clear.")] string? seed = null,
+        [Description("Short author reference code (e.g. 'ATTE'). Uppercased; pass empty string to clear. Omit to leave unchanged.")] string? code = null,
+        [Description("ElevenLabs or local TTS voice id. Omit to leave unchanged; pass empty string to clear.")] string? voiceId = null)
+    {
+        var strand = await ResolveStrandAsync(idOrSlug);
+        if (strand == null) return JsonSerializer.Serialize(new { error = "strand_not_found", idOrSlug }, CanonTools.JsonOpts);
+
+        await using var db = await dbFactory.CreateDbContextAsync();
+        var row = await db.Strands.FindAsync(strand.Id)
+            ?? throw new InvalidOperationException($"Strand {strand.Id} missing.");
+
+        if (title    != null) row.Title    = title;
+        if (synopsis != null) row.Synopsis = string.IsNullOrEmpty(synopsis) ? null : synopsis;
+        if (kind     != null) row.Kind     = kind;
+        if (status   != null) row.Status   = status;
+        if (seed     != null) row.Seed     = string.IsNullOrEmpty(seed) ? null : seed;
+        if (code     != null) row.StrandCode = string.IsNullOrEmpty(code) ? null : code.Trim().ToUpperInvariant();
+        if (voiceId  != null) row.VoiceId  = string.IsNullOrEmpty(voiceId) ? null : voiceId;
+        row.UpdatedAt = DateTime.UtcNow;
+
+        await db.SaveChangesAsync();
+        return JsonSerializer.Serialize(new
+        {
+            ok     = true,
+            id     = row.Id,
+            slug   = row.Slug,
+            title  = row.Title,
+            kind   = row.Kind,
+            status = row.Status,
+            code   = row.StrandCode,
+        }, CanonTools.JsonOpts);
+    }
+
+    [McpServerTool, Description("Return the score history for a strand as a time-series — every review run that produced a summary, with its mean score, SD, review count, and date. Use to track whether an edit moved the needle, or to compare pre/post-edit trajectories. Accepts strand id (GUID) or slug.")]
+    public async Task<string> GetScoreHistory(
+        [Description("Strand id (GUID) or slug.")] string idOrSlug,
+        [Description("Maximum history points to return (most recent first). Default 20.")] int limit = 20)
+    {
+        var strand = await ResolveStrandAsync(idOrSlug);
+        if (strand == null) return JsonSerializer.Serialize(new { error = "strand_not_found", idOrSlug }, CanonTools.JsonOpts);
+
+        await using var db = await dbFactory.CreateDbContextAsync();
+        var history = await db.StrandScoreHistories
+            .AsNoTracking()
+            .Where(h => h.StrandId == strand.Id)
+            .OrderByDescending(h => h.RecordedAt)
+            .Take(limit)
+            .Select(h => new
+            {
+                recorded_at   = h.RecordedAt,
+                score         = Math.Round(h.MeanScore, 2),
+                sd            = h.Sd.HasValue ? (double?)Math.Round(h.Sd.Value, 2) : null,
+                review_count  = h.ReviewCount,
+                beat_count    = h.BeatCount,
+                content_hash  = h.ContentHash,
+            })
+            .ToListAsync();
+
+        // Also include StrandReviewSummaries for runs pre-dating StrandScoreHistories
+        var srsHistory = await db.StrandReviewSummaries
+            .AsNoTracking()
+            .Where(r => r.StrandId == strand.Id)
+            .OrderByDescending(r => r.GeneratedAt)
+            .Take(limit)
+            .Select(r => new
+            {
+                recorded_at   = r.GeneratedAt,
+                score         = Math.Round(r.AvgScore, 2),
+                sd            = (double?)null,
+                review_count  = r.ReviewCount,
+                beat_count    = 0,
+                content_hash  = r.ContentHash ?? "",
+            })
+            .ToListAsync();
+
+        // Merge and deduplicate by content_hash (prefer SSH when present)
+        var sshHashes = new HashSet<string>(history.Select(h => h.content_hash));
+        var merged = history
+            .Cast<object>()
+            .Concat(srsHistory.Where(r => !sshHashes.Contains(r.content_hash ?? "")).Cast<object>())
+            .Take(limit)
+            .ToList();
+
+        return JsonSerializer.Serialize(new
+        {
+            strand_id    = strand.Id,
+            slug         = strand.Slug,
+            title        = strand.Title,
+            point_count  = merged.Count,
+            history      = merged,
+        }, CanonTools.JsonOpts);
+    }
+
     private async Task<Strand?> ResolveStrandAsync(string idOrSlug)
     {
         if (string.IsNullOrWhiteSpace(idOrSlug)) return null;

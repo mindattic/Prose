@@ -75,6 +75,22 @@ She read back what she'd written. It was complete. It was documented. It was the
 
 Twenty-nine minutes.
 
+The maintenance comm on her workstation signaled through — a call request from Zone 8 clinic, caller ID: Faria. She recognized the name. Clinic coordinator, new in the role; she'd spoken to her twice before.
+
+She answered.
+
+"Just confirming your nine o'clock," Faria said. "Dr. Soral is already checked in."
+
+"Confirmed," Amara said. "On my way."
+
+"Perfect. We've got a prep window, so if you arrive early you can head straight to bay three."
+
+"Thank you," Amara said.
+
+The call ended. She looked at the batch documentation still open on her left screen. Forty-one of fifty-three. The project code ORS-MAINT-7C that resolved to nothing in the public library. The October appointment she had no transit record for.
+
+Bay three. She wondered if that was where October had been.
+
 She sent it. Then she picked up her kit bag and checked its contents the way she checked them every morning — calibration wand, contact patch, service tablet, the small wrench she'd carried for three years because the Zone 5 clinic's adjustment housing used a nonstandard fitting she'd never found a cleaner tool for. She zipped the bag.
 
 She did not cancel the appointment.

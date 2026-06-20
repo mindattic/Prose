@@ -13,6 +13,7 @@ namespace StreetSamurai.Blazor.Cli;
 ///   --kind &lt;kind&gt;      Filter by kind (book|chapter|episode|scene|…).
 ///   --search &lt;text&gt;    Filter by case-insensitive substring of title or slug.
 ///   --limit &lt;n&gt;        Show at most N rows.
+///   --scores            Sort by score descending instead of updated-at; include page estimates.
 ///   --json              Emit a JSON array instead of the table.
 ///
 /// Exit codes: 0 — listed (even when empty); 1 — bad args.
@@ -23,7 +24,7 @@ public static class ListStrandsCli
     {
         string? status = null, kind = null, search = null;
         int? limit = null;
-        bool json = false;
+        bool json = false, scores = false;
         for (int i = 0; i < args.Length; i++)
         {
             switch (args[i])
@@ -35,7 +36,8 @@ public static class ListStrandsCli
                     if (i + 1 < args.Length && int.TryParse(args[++i], out var n) && n > 0) limit = n;
                     else { Console.Error.WriteLine("[list-strands] --limit needs a positive integer."); return 1; }
                     break;
-                case "--json": json = true; break;
+                case "--scores": scores = true; break;
+                case "--json":   json = true; break;
             }
         }
 
@@ -53,21 +55,32 @@ public static class ListStrandsCli
             query = query.Where(s => s.Title.ToLower().Contains(term) || s.Slug.ToLower().Contains(term));
         }
 
-        query = query.OrderByDescending(s => s.UpdatedAt);
+        query = scores
+            ? query.OrderBy(s => s.Score == null ? 1 : 0).ThenByDescending(s => s.Score ?? 0)
+            : query.OrderByDescending(s => s.UpdatedAt);
         if (limit is int lim) query = query.Take(lim);
 
-        // Project to a flat row + count beats in the same round-trip.
-        var rows = await query
-            .Select(s => new Row(
-                s.Id,
-                s.Title,
-                s.Slug,
-                s.Kind,
-                s.Status,
-                s.StrandBeats.Count,
-                s.Score,
-                s.UpdatedAt))
+        var strands = await query
+            .Select(s => new { s.Id, s.Title, s.Slug, s.Kind, s.Status, s.StrandCode, s.Score, s.UpdatedAt, BeatCount = s.StrandBeats.Count })
             .ToListAsync();
+
+        // Word / page count — one join instead of N queries
+        var ids = strands.Select(s => s.Id).ToList();
+        var charCounts = await db.StrandBeats
+            .AsNoTracking()
+            .Where(sb => ids.Contains(sb.StrandId) && sb.IsEnabled)
+            .Join(db.Beats.AsNoTracking().Where(b => b.Text != null && b.Text != ""),
+                  sb => sb.BeatId, b => b.Id, (sb, b) => new { sb.StrandId, b.Text })
+            .GroupBy(x => x.StrandId)
+            .Select(g => new { StrandId = g.Key, Chars = g.Sum(x => (long)x.Text!.Length) })
+            .ToDictionaryAsync(x => x.StrandId);
+
+        var rows = strands.Select(s =>
+        {
+            charCounts.TryGetValue(s.Id, out var cc);
+            var words = cc != null ? (int)(cc.Chars / 5.2) : 0;
+            return new Row(s.Id, s.Title, s.Slug, s.Kind, s.Status, s.StrandCode, s.BeatCount, s.Score, words / 250, s.UpdatedAt);
+        }).ToList();
 
         if (json)
         {
@@ -82,17 +95,16 @@ public static class ListStrandsCli
         }
 
         // ── table ──
-        Console.WriteLine($"{"ID",-8}  {"STATUS",-10}  {"KIND",-10}  {"BEATS",5}  {"SCORE",6}  {"UPDATED",-16}  TITLE (slug)");
-        Console.WriteLine(new string('-', 100));
+        Console.WriteLine($"{"CODE",-6}  {"STATUS",-8}  {"KIND",-10}  {"PG",4}  {"SCORE",6}  TITLE");
+        Console.WriteLine(new string('-', 110));
         foreach (var r in rows)
         {
-            var shortId = r.Id.ToString("N")[..8];
-            var score = r.Score is double sc ? $"{sc,5:F0}%" : "    —";
-            var updated = r.UpdatedAt.ToLocalTime().ToString("yyyy-MM-dd HH:mm");
+            var code  = Trunc(r.Code ?? "—", 6);
+            var score = r.Score is double sc ? $"{sc,5:F0}%" : "     —";
             Console.WriteLine(
-                $"{shortId,-8}  {Trunc(r.Status, 10),-10}  {Trunc(r.Kind, 10),-10}  {r.BeatCount,5}  {score,6}  {updated,-16}  {r.Title} ({r.Slug})");
+                $"{code,-6}  {Trunc(r.Status, 8),-8}  {Trunc(r.Kind, 10),-10}  {r.Pages,4}  {score,6}  {r.Title}");
         }
-        Console.WriteLine(new string('-', 100));
+        Console.WriteLine(new string('-', 110));
         Console.WriteLine($"[list-strands] {rows.Count} strand(s).");
         return 0;
     }
@@ -101,5 +113,5 @@ public static class ListStrandsCli
 
     private record Row(
         Guid Id, string Title, string Slug, string Kind, string Status,
-        int BeatCount, double? Score, DateTime UpdatedAt);
+        string? Code, int BeatCount, double? Score, int Pages, DateTime UpdatedAt);
 }
