@@ -203,7 +203,7 @@ updated: 2026-06-15
     reads both; shadow always in isolated transitional space).
   - **H3d ⬜** New beat: bathroom sweep — Yemina finds Kito's transit shadow, confirming the
     two-trace pattern across all three cases.
-  - **H3e ✅** Story logline revised; Amara Osei (child) renamed Yaa Osei. *(prose + amendment updated 2026-06-19)*
+  - **H3e ✅** Story logline revised; Amara Osei (child) renamed Valentina Osei. *(prose + amendment updated 2026-06-19)*
   - **H3f ⬜** Opus polish + review panel ≥84%.
 
 ## Priority backlog
