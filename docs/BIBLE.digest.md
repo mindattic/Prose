@@ -130,49 +130,83 @@ narrative-law block here when stood up:**
   ambient proprioceptive information field BCI-augmented people sense (see `network_doc.md`).
 
 ## Status index (from USER_STORIES.md)
-- done: 42  partial: 8  planned: 16  cut: 1
+- done: 44  partial: 8  planned: 20  cut: 1
 
 ## Latest amendment
-## SS-A6 — *Underlying Connection* canonical design; Orison Neuretics canonized (supersedes —)
+## SS-A7 — *The Number That Works* Act 2 + Act 3 canonical design (supersedes —)
 
-**What changed.** [GLMZ] A new CorpoNation, three new characters, and one narrative-law ruling are
-canonized as the design basis for the *Underlying Connection* book.
+**What changed.** [GLMZ] *The Number That Works* (TNTW; slug `the-number-that-works-019ed367`) is
+expanded from a 20-beat Act 1 novella (~30 pages) into a full three-act work targeting ~80 pages.
+Acts 2 and 3 are canonized here; 35 outline beats are seeded in the DB as the structural scaffold
+before any prose is generated. See [SS-US-H2](USER_STORIES.md).
 
-**Orison Neuretics.** Premium neuretic cultivation and maintenance — the largest single operator in
-GLMZ. Brand register: care, precision, trust ("Grown for you"). True business: managed-liability
-suppression. Orison holds master maintenance contracts across GLMZ; mid-tier operators (Cellvault,
-others) hold sub-contracts under Orison evaluation. **Batch 44-C** (certified 2222, 847 recipients,
-accelerated degradation 18–24 months post-certification, internal classification *managed liability*)
-is canon and must never be retconned or resolved off-page. The associated calibration protocol uses
-**targeted associative-node suppression** — specific connections severed, not wholesale erasure;
-affected clients retain the memory but lose its meaning.
+**Thematic register — "An Anthropologist on Mars."** The governing metaphor (borrowed from Oliver
+Sacks) is that Sparrow and Elias do not merely communicate differently — they *perceive* differently.
+Neither is deficient. Each is a complete cognitive architecture that cannot fully inhabit the other's
+phenomenology. The story explores what partial, complementary understanding looks like when each
+party can only sense part of the elephant. This must be played straight, not as tragedy: the
+limitation is the condition, not the failure.
 
-**New characters.** Amara Osei (she/her; neuretic maintenance tech, Cellvault; Lagos-Chicago
-diaspora; batch-44-C recipient). Seto Banda (he/him; independent data courier, Gray Zone;
-Japanese-Kenyan; eleven years of sealed-system reputation). Ciro Fonseca (he/him; Orison internal
-fixer; Portuguese-Brazilian; straight razor, hair within one millimeter of Orison maximum length
-standard — see narrative law below).
+**Sparrow's phenomenology (LOCKED).**
+- Communicates through structured data: invoices, coordinate sets, manifests, data packets. Not
+  because she is cold — because that is how she thinks. Emotional register in prose must be implied
+  through precision and timing, never stated.
+- Experiences time as orbital cycles (14-day period) and event catalogs. Linear lived experience is
+  not her native mode. "Forgetting" is outside her model.
+- Observational limits: electromagnetic sensors only; minimum ground resolution ~4 meters; no
+  acoustic sensing; no physical contact. She states these as facts, without loss.
+- The "alternate weeks" pattern is the orbital arc when her antenna array has GLMZ line-of-sight.
+  She did not choose the schedule. The orbit did. This is revealed in Act 3.
+- Nine-second silence = Sparrow's version of surprise. It is consistent; it may be used once
+  per beat, not as a verbal tic.
+- First unqualified "yes" (Act 3, beat "For Whoever Comes After") is a milestone. It must be
+  earned, not scattered throughout.
 
-**Narrative law — Ciro Fonseca.** The straight razor is his signature; it appears in prose as a
-grooming gesture before it appears as a threat. The charm-to-sociopath arc is executed so the reader
-is genuinely torn between Ciro and Seto as potential partners for Amara before the reveal. The reveal
-is a shock. Neither Ciro's genuine capability nor his ultimate nature may be telegraphed early. The
-razor's dichotomy with Ekow Ato's machete (intimate vs. declarative; preening tool turned lethal vs.
-agricultural implement announced) is a deliberate tonal contrast and must be preserved.
+**The global anomaly catalog (LOCKED).**
+- 847 anomalous events logged across six geographic clusters: GLMZ lake, Baltic shelf, Caspian
+  north, Bering shelf edge, Lake Tanganyika, Indian Ocean trench (equatorial).
+- 23 recovery jobs dispatched over 37 years. Elias's job is the 23rd.
+- Elias is the first person who came to the mass driver in Mombasa. All 22 prior operators
+  completed their jobs without seeking the source.
 
-**Ekow Ato.** Reappears in this book under a **Gray Zone contract** (not a Lotus contract); hired on
-a false premise (stated as "courier moving stolen proprietary neuretic data"). He gives Seto 7 days
-and withdraws when the premise collapses on the story-publication day. He does not become an ally; he
-becomes an absence. His VATD-established doctrines (deliberate patience, minimum footprint,
-compartmentation, information hygiene; machete; handkerchief folded in quarters) carry forward
-unchanged.
+**The lake source hypothesis (LOCKED — in-world working theory, not author truth).**
+- Located ~300 meters below the lake floor at a geological stratum predating the city by several
+  centuries. Not a resonance zone — something resonance zones appear to be organized *around*.
+- Isotopic signatures of the lake objects partially correlate with the 35th-and-Halsted bleed
+  class (see the Attendance incident, public record). The source may be resonance-generative
+  rather than resonance-generated. This is Sparrow's working hypothesis; it must not be confirmed
+  as author truth on-page.
+- Objects came *up* from the lake floor, not down from orbit. The physics of their transit
+  remains unresolved. The story does not solve this. The record documents it.
 
-**Book design.** *Underlying Connection* is a KDP-paperback-length GLMZ novel (~80k words, 3 acts,
-~28 chapters, dual Amara/Seto POV alternating per chapter). The 14-beat story spine at
-`underlying-connection.strand` is the **authorial outline**, not final prose. Final prose follows the
-standard bible-first → chapter-by-chapter workflow.
+**Elias Macias (LOCKED additions).**
+- Formally becomes Sparrow's sole earthside documentation partner by the end of Act 3.
+- His GAD arc: Act 1 = 44 days no street level. Act 2 = deliberate ground-level visits (first
+  time for the job, then for the sites). Act 3 = goes outside not for work, but because it is
+  different now. The city at ground level has changed in how it reads to him, not in itself.
+- Handwritten field notes (photographed, sent to Sparrow) are canon. He stops trusting sensors
+  for this investigation in Act 2. The notes are what she has the most information from.
 
-**Why.** Entities and canon decisions must be in the DB and docs before prose is generated
-([SS-LAW-1](BIBLE.md#SS-§5), [SS-LAW-4](BIBLE.md#SS-§5)). This amendment is the authorial decision
-record; entity rows follow in the same session.
+**The "eleven days" (LOCKED).**
+- In 2197, Sparrow experienced an 11-day sensor failure. She filed no logs. She has no model
+  for what happened to her during that period. She calls it "the eleven days." This is the most
+  personal thing she shares; it belongs in Act 3 only.
+
+**Act structure.**
+- Act 1 (20 beats, complete): Elias receives the job, assembles the network without assembling it,
+  recovers the objects, discovers the 2218 filings, travels to Mombasa, learns what Sparrow is.
+  Ends on the balcony, dialing.
+- Act 2 (18 beats): The first real conversation and its failure modes — Elias and Sparrow attempt
+  direct communication; each discovers the limits of the other's and their own perception. Ends
+  with Elias sending handwritten field notes and Sparrow stating they are the most information
+  she has received in 37 years.
+- Act 3 (17 beats): Building the shared record — they construct a joint document neither could
+  write alone, Sparrow shares the eleven days, Elias goes outside without a reason, the new
+  work order formalizes the partnership. Ends with Elias on the balcony holding the comm,
+  understanding the window.
+
+**Why.** Act 1 resolved "what is Sparrow" but left the central mystery (the lake objects, the
+source, the why) fully open. The Elias-as-earthside-rep arc was established but unwritten. The
+human-AI phenomenology theme requires Acts 2 and 3 to be realized — it cannot be carried by a
+20-beat novella that ends on a dial tone.
 
