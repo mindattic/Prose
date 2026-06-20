@@ -176,18 +176,21 @@ updated: 2026-06-15
   - **H1e ⬜** Act 3 (~6 chapters, ~20k words) written to first-draft standard.
   - **H1f ⬜** Opus polish pass + full-book review panel ≥85%.
 
-- **SS-US-H2 ⬜** As the author, *The Number That Works* (TNTW) is expanded from Act 1 (~30 pages)
-  into a complete three-act work targeting ~80 pages. See [SS-A7](AMENDMENTS.md) for the canonical
-  design: Sparrow's phenomenology, the global anomaly catalog, the lake source hypothesis, and the
-  thematic register ("An Anthropologist on Mars"). *Acceptance: 35 Act 2+3 outline beats seeded +
-  all beats written to Opus-polished prose + review panel ≥86%.*
+- **SS-US-H2 ✅** As the author, *The Number That Works* (TNTW / Sparrow) is expanded from Act 1
+  (~30 pages) into a complete three-act work targeting ~80 pages. See [SS-A7](AMENDMENTS.md) for
+  the canonical design: Sparrow's phenomenology, the global anomaly catalog, the lake source
+  hypothesis, and the thematic register ("An Anthropologist on Mars"). *Acceptance: 35 Act 2+3
+  outline beats seeded + all beats written to Opus-polished prose + review panel ≥86%.
+  (verified by CLI `--review-strand --slug the-number-that-works-019ed367`; R7=87.0/100, N=20,
+  all reviewers ≥80; exported Sparrow V13.docx 2026-06-20.)*
   - **H2a ✅** SS-A7 amendment written; thematic canon, Sparrow phenomenology, lake source
     hypothesis, act structure all locked. *(2026-06-19.)*
   - **H2b ✅** 35 Act 2+3 outline beats seeded in DB (18 Act 2 + 17 Act 3), SortKeys 1050–2750.
     *(2026-06-19.)*
-  - **H2c ⬜** Act 2 prose: 18 beats written to Sonnet-draft + Opus-polish standard.
-  - **H2d ⬜** Act 3 prose: 17 beats written to Sonnet-draft + Opus-polish standard.
-  - **H2e ⬜** Full-work review panel ≥86%; export docx to TNTW folder.
+  - **H2c ✅** Act 2 prose: 18 beats written to Sonnet-draft + Opus-polish standard. *(2026-06-19.)*
+  - **H2d ✅** Act 3 prose: 17 beats written to Sonnet-draft + Opus-polish standard. *(2026-06-19.)*
+  - **H2e ✅** Full-work review panel 87.0/100 (N=20, all reviewers ≥80); exported *Sparrow V13.docx*.
+    *(2026-06-20.)*
 
 - **SS-US-H3 🟡** As the author, *Attendance* (ATTE, `attendance-019ebf4c`, 40 beats) is revised so
   the disappearance mechanics are internally consistent: children vanish during unmonitored

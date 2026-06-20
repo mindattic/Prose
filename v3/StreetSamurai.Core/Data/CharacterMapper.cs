@@ -645,8 +645,8 @@ public static class CharacterMapper
     }
 
     private static List<string> PickList<TRow>(IEnumerable<TRow> rows, string bucket, Func<TRow, string> select)
-        => rows.Where(r => GetBucket(r) == bucket)
-               .OrderBy(r => GetPosition(r))
+        => rows.Where(r => GetBucket(r!) == bucket)
+               .OrderBy(r => GetPosition(r!))
                .Select(select)
                .ToList();
 
