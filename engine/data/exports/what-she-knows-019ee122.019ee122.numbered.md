@@ -29,7 +29,7 @@ Batch 44-C. Certified 2222. The document header listed seven authorized faciliti
 
 She found the contamination flag on the thirteenth page.
 
-The fans climbed a half-pitch. She did not look up.
+She did not look up.
 
 It was not formatted as a warning. It was formatted as an internal classification, a status field in a sub-table attached to the batch record, the kind of field that lived in documentation nobody outside was meant to read. It had been updated twice since the original certification, once in 2223 and once in 2224. The status read *managed liability.*
 
@@ -83,7 +83,7 @@ Then the contamination flag. The secondary file with the recipient count. Addend
 
 She routed it in stages, not a bulk push, the kind of movement that read as routine cache operations in the access log. When you found a permissions gap, you did not announce your presence in it. You moved as if you had always been authorized to be there, and you understood what you had before anyone knew you had been inside.
 
-It took nineteen minutes. The fans held their pitch the entire time.
+It took nineteen minutes.
 
 When the transfer was complete she closed the archive and sat with the permissions gap still live on her screen. She could report it now. She would, eventually. She did not yet know what reporting it would flag, or to whom. Until she knew that, the gap stayed unreported and the data stayed in the secondary path, which was the only version of correct she could work with right now.
 
@@ -111,7 +111,7 @@ A pause, and then:
 
 *I found everything,* she sent. *Month thirty-six. The handoff.*
 
-The response took longer this time. When it came it had dropped the procedural register entirely — four words with no framing around them:
+The response took longer this time. Before it arrived, something came through the channel that wasn't words — the texture of someone sitting still with a weight they have been carrying a long time and are about to set down. When the message came it had dropped the procedural register entirely — four words with no framing:
 
 *I know. I'm sorry.*
 
@@ -141,9 +141,13 @@ She sat with the new number. Ten days. Now five. She did not know whether someon
 
 Neither interpretation gave her more time.
 
-She looked at the gap. The warm wall was at her back. The fans had not changed pitch.
+She looked at the gap. The warm wall was at her back. The plaster was still warm.
 
 She did not ask what the something else was. She knew the shape of a disclosure that had to be delivered in person.
 
-She had five days. She needed to be outside the maintenance chain before the twenty-fourth. She closed the archive and started building a list.
+She had five days. She needed to be outside the maintenance chain before the twenty-fourth.
+
+Eight hundred and forty-seven people.
+
+She closed the archive and started building a list.
 

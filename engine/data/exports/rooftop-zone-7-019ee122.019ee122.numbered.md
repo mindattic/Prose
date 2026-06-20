@@ -71,7 +71,7 @@ A pause — not hesitation, calculation. Then she sent the scope, and he read it
 
 His hand came off the parapet rail. He had not decided to move it.
 
-The scope was larger than anything he had given her material for. Amara had pulled correlations he had not asked for, extended the pattern into sub-records he had not queried, built a picture more complete than what he had assembled across eight months of route work. Not reckless — thorough, the quality that made her useful and the quality that made her visible. He understood immediately why someone had flagged it. What his body registered first was not the professional exposure but the weight of it: the specific gravity of someone leaning into a problem without knowing the door they were leaning against. He knew that weight. It was not his. It arrived in his chest uninvited, and he recognized it the way you recognize a tool already in your hand that you do not remember picking up.
+The scope was larger than anything he had given her material for. Amara had pulled correlations he had not asked for, extended the pattern into sub-records he had not queried, built a picture more complete than what he had assembled across eight months of route work. Not reckless — thorough, the quality that made her useful and the quality that made her visible. He understood immediately why someone had flagged it. What his body registered first was not the professional exposure but the weight of it: the specific gravity of someone who has not yet noticed they are falling. He knew that weight. It was not his. It arrived in his chest uninvited, and he recognized it the way you recognize a tool already in your hand that you do not remember picking up.
 
 He set it down, or tried to, and it did not entirely go.
 

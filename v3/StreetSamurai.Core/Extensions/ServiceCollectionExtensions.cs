@@ -741,6 +741,11 @@ public static class ServiceCollectionExtensions
         // `ss --check-fidelity` and the `check_semantic_fidelity` MCP tool.
         services.AddSingleton<SemanticFidelityService>();
 
+        // Narrative-science analysis (Will Storr frameworks): sacred flaw, dramatic
+        // question, scene-engagement audit, five-act map, antihero empathy.
+        // Available via `ss --narrative-science` and the Tools.NarrativeScience MCP tools.
+        services.AddSingleton<NarrativeScienceService>();
+
         return services;
     }
 

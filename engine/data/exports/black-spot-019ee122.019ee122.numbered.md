@@ -19,7 +19,7 @@ Eleven days of pulling IA scheduling data — the Integrated Assessment logs eve
 
 Forty-seven facilities' worth of scheduling windows. The hole was gone.
 
-Outside the window the relay tower annex ran its amber service indicator on a forty-five-second cycle. Below, the Zone 7 transit corridor was working — freight crews changing shifts at the tower's base, night relay operators arriving with thermoses, the canteen two doors down already venting frying onions into air that nobody filtered here, because here was the Seam. The gap between two arcologies where neither corp ran edge management and you got the actual city instead of a managed approximation of it. Somewhere west, Orison's atmospheric perimeter pushed mediated air into its own jurisdiction. Here the air tasted of exhaust particulate and cooking fat and the faint ionized sting off the relay mast, and that was what outside smelled like when it was real.
+Outside the window the relay tower annex ran its amber service indicator on a forty-five-second cycle. Below, the Zone 7 transit corridor was working — freight crews changing shifts at the tower's base, night relay operators arriving with thermoses, the canteen two doors down already venting frying onions into air that nobody filtered here, because here was the Seam. The gap between two arcologies where neither corp ran edge management and you got the actual city instead of a managed approximation of it. Somewhere west, Orison's atmospheric perimeter pushed mediated air into its own jurisdiction — the arcology-state that licensed Cellvault's neuretics across the eastern Seam corridor, the interior where the corridors smelled of synthesized cedar and the windows never showed weather. Here the air tasted of exhaust particulate and cooking fat and the faint ionized sting off the relay mast, and that was what outside smelled like when it was real.
 
 He'd been at the numbers since before the relay operators came on shift. The githeri on the burner had gone cold at dawn.
 
@@ -59,13 +59,11 @@ The procedure went in through the maintenance interface — the same interface e
 
 The same cluster Amara had flagged in her Type C drift cases.
 
-He set the protocol in a window beside the model. Morning light came in sideways off the building across the alley. He didn't move for a moment.
-
-Then he added it as a third layer over the silence geography and the facility corridor map.
+He set the protocol in a window beside the model. Morning light came in sideways off the building across the alley. He added it as a third layer over the silence geography and the facility corridor map.
 
 The crescent was gone. What lay under it was not a crescent.
 
-It was a plan. The geography was not the shape of the intervention — it was the delivery logistics. Where the facilities were, where the workforce was, the service-sector infrastructure of the GLMZ: the people who moved things and maintained things and calibrated things and needed licensed neuretics to do jobs that required licensed neuretics. People who came in on schedule because the license required it, because the calibration window was the price of access. Orison — the arcology-state that administered Cellvault's neuretics licensing across the eastern Seam corridor, known to its residents as a climate-controlled interior where the corridors smelled of synthesized cedar and the windows never showed weather — Orison ran the maintenance schedule. Orison ran the facilities. The visit was the delivery mechanism. The maintenance was the procedure.
+It was a plan. The geography was not the shape of the intervention — it was the delivery logistics. Where the facilities were, where the workforce was, the service-sector infrastructure of the GLMZ: the people who moved things and maintained things and calibrated things and needed licensed neuretics to do jobs that required licensed neuretics. People who came in on schedule because the license required it, because the calibration window was the price of access. Orison ran the maintenance schedule. Orison ran the facilities. The visit was the delivery mechanism. The maintenance was the procedure.
 
 He could see it whole for the first time. Not a crescent, not a cluster of anomalies. A program.
 
@@ -87,17 +85,19 @@ He was modeling a maintenance schedule.
 
 The number was in the hundreds. Not *will be*. Not *projected*. Current. Now. Given the scheduling windows, the geographic scope, the cluster target confirmed by both his route data and Amara's tissue records.
 
+His shoulders had come up. He noticed it and did not lower them.
+
 Through the ambient, Amara went still.
 
 He hadn't sent her the number. He didn't know whether she could read him that clearly at this distance or whether she'd run her own version of the calculation. Probably the second. She was someone who ran calculations. This was the stillness he had learned meant she was holding something steady — not falling, holding it.
 
 Then his right hand closed on nothing.
 
-The memory came up through the wrist the way it always did now: cool aluminum under his palm, a bearing housing seating to a tolerance he had never machined, the small resistance just before the seat found true and then the clean run of the rotation. The satisfaction of work done right, registering in a body that hadn't done the work. Her hands. Her bench, some afternoon, some facility in the eastern corridor he had never set foot in. It arrived whole and uninvited and left the way it came, and his own hand lay open on the table again, fingers half-curled around the shape of a tool that wasn't there.
+The memory came up through the wrist the way it always did now: cool aluminum under his palm, a bearing housing seating to a tolerance he had never machined, the small resistance just before the seat found true and then the clean run of the rotation. The satisfaction of work done right, registering in a body that hadn't done the work. Her hands. Her bench, some afternoon, some facility in the eastern corridor he had never set foot in. It arrived whole and uninvited. He didn't pull back from it. Then it left the way it came, and his own hand lay open on the table again, fingers half-curled around the shape of a tool that wasn't there.
 
 He looked at it. His hand. The number on the screen. Neither had changed.
 
-He stayed present in the ambient without sending anything — a thing he had worked out over three weeks with no precedent and no model for it. Presence as texture rather than content. What she needed in these moments was not information. She needed the channel held.
+He stayed present in the ambient without sending anything — a thing he had worked out over three weeks with no precedent and no model for it. Presence as texture rather than content. What she needed in these moments was not information.
 
 It was a long quiet.
 
@@ -133,5 +133,5 @@ He had promised her nothing, and he had started looking anyway. That was a decis
 
 The mast outside cycled through amber. Seam air moved through the window he'd cracked at dawn, still carrying onions, still carrying exhaust, still carrying the faint ionized bite off the relay. The model sat open on the screen. He read down the list of names and facility codes, looking for hers.
 
-When he found it, he did not move for a long time.
+When he found it, he did not move for a long time. Then he reached for the ambient.
 

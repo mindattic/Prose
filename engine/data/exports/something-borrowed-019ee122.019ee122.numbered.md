@@ -17,7 +17,7 @@ The map was the first thing: silence geography, he called it — white routes ag
 
 She pulled her own visit log and laid it next to his.
 
-The depot system wasn't built to be queried this way — laterally, across client batches, against a third-party geographic dataset. She had to assemble the comparison by hand, pulling visit records one facility at a time, checking each against the crescent's edge coordinates. It took twenty-two minutes. When she finished, the result sat there the way true things sat when you found them: inert, patient, indifferent to having been found.
+The depot system wasn't built to be queried this way — laterally, across client batches, against a third-party geographic dataset. She had to assemble the comparison by hand, pulling visit records one facility at a time, checking each against the crescent's edge coordinates. It took twenty-two minutes.
 
 Forty-one of her fifty-three Batch 44-C clients were inside the crescent.
 
@@ -51,11 +51,15 @@ Someone had entered the appointment. Someone had signed the service record. The 
 
 She was on the maintenance list. Not as a technician. As a client.
 
+She went still.
+
 The depot was still empty. She checked the time: thirty-four minutes. Dani Soral. Zone 8, corridor 4. One of the forty-one.
 
 She thought about the permissions gap. She'd found it six months ago, following a routine access-rights review that had caught a misconfigured permission tier on her account. She'd flagged it as a system error in the ticket. She hadn't closed it, because she'd needed the access to build the anomaly log, and the anomaly log was the thing she was going to have a conversation about. She had never thought about what the gap looked like from the other side — not what she could see through it, but who could see that she was looking.
 
-Seto's last message sat at the bottom of the archive: *Freelance specialist, Zone 7. No Orison affiliation. Eight years. No sub-contractor has ever touched my hardware.*
+The ticket was still open. She had been inside it for six months, pulling records that fell outside her certification scope, building documentation she had no mandate to produce. Six months of unauthorized access, logged in the system the same way everything was logged. She was not the only one who could read those logs.
+
+Seto's last message sat at the bottom of the archive: *Eight years in Zone 7. No Orison contract, no sub-contractor has ever touched my hardware — that was a decision, not a restriction.*
 
 She had the name and address of a freelance calibration specialist in Zone 6. She'd found the referral eight months ago, before the anomaly log existed, before October. She'd never made the appointment.
 
@@ -65,7 +69,7 @@ Or she could go to the appointment.
 
 She would see the facility. She would see whether the procedure they ran matched the protocol she had on file. She would see what Dani Soral looked like when the visit was over, whether it matched what she knew about Type C drift, whether the service record that came out the other end described the same forty minutes she had witnessed.
 
-She would go in knowing what she knew. She wasn't sure if that was protection or exposure. She wasn't sure it mattered now.
+She would go in knowing what she knew.
 
 She closed the batch documentation. She opened a reply to Seto's archive and started composing — her anomaly log, the batch records, the October appointment, the Zone 8 entry she had no transit record for. She wrote it the careful way, each fact separated from its implication, each date noted. She attached the permissions-gap ticket. She attached the project code.
 
@@ -83,9 +87,9 @@ She answered.
 
 "Confirmed," Amara said. "On my way."
 
-"Perfect. We've got a prep window, so if you arrive early you can head straight to bay three."
+"Bay three is set up for you. Same setup as last time — you remember where it is."
 
-"Thank you," Amara said.
+She didn't. "Thank you," Amara said.
 
 The call ended. She looked at the batch documentation still open on her left screen. Forty-one of fifty-three. The project code ORS-MAINT-7C that resolved to nothing in the public library. The October appointment she had no transit record for.
 
@@ -105,5 +109,5 @@ She stopped on the stairs.
 
 The sensation was already gone. Her hand held the strap. The strap held the bag. The bag weighed what it always weighed.
 
-She stood there two seconds, then went up. She didn't name what had happened. She filed it, the way she filed anomalies, under things she would understand once she had more data. But her hand did not fully loosen on the strap, all the way to the transit line, and she noticed that, and she let it stay.
+She stood there two seconds, then went up. Her hand did not fully loosen on the strap, all the way to the transit line.
 
