@@ -27,6 +27,7 @@ public class StrandTools
     private readonly ProseReflowService reflow;
     private readonly BeatRebuildService rebuilder;
     private readonly DocxExportService docxExport;
+    private readonly StrandSpineService spine;
 
     public StrandTools(
         StrandWorkbenchService workbench,
@@ -35,7 +36,8 @@ public class StrandTools
         StrandBibleService bible,
         ProseReflowService reflow,
         BeatRebuildService rebuilder,
-        DocxExportService docxExport)
+        DocxExportService docxExport,
+        StrandSpineService spine)
     {
         this.workbench = workbench;
         this.dbFactory = dbFactory;
@@ -44,6 +46,7 @@ public class StrandTools
         this.reflow = reflow;
         this.rebuilder = rebuilder;
         this.docxExport = docxExport;
+        this.spine = spine;
     }
 
     [McpServerTool, Description("List strands. Optional kind filter ('book', 'chapter', 'episode', etc.). Returns a flat list of id, slug, title, kind, status, beat-count, stale-count.")]
@@ -157,6 +160,9 @@ public class StrandTools
             try { bibleText = await bible.GenerateAndSaveAsync(id, seed, title, targetBeats <= 0 ? 12 : targetBeats); }
             catch (Exception ex) { bibleText = $"[bible generation failed: {ex.Message}]"; }
         }
+
+        // Scaffold user stories (and a bible template if no seed was provided).
+        await spine.ScaffoldAsync(id, title ?? "", bibleAlreadySet: bibleText != null);
 
         return JsonSerializer.Serialize(new { ok = true, id, slug, url = $"/strand/{slug}", strand_bible = bibleText }, CanonTools.JsonOpts);
     }
@@ -693,6 +699,121 @@ public class StrandTools
             title        = strand.Title,
             point_count  = merged.Count,
             history      = merged,
+        }, CanonTools.JsonOpts);
+    }
+
+    // ── Strand Spine tools ─────────────────────────────────────────────────
+
+    [McpServerTool, Description(
+        "Return the full narrative spine for a strand: bible, user stories, all amendments (in order), " +
+        "and the latest spine version pin (which records the content hashes and amendment count at the " +
+        "last docx export). Use this before writing prose to understand the narrative contract.")]
+    public async Task<string> GetStrandSpine(
+        [Description("Strand id (GUID) or slug.")] string idOrSlug)
+    {
+        var strand = await ResolveStrandAsync(idOrSlug);
+        if (strand == null)
+            return JsonSerializer.Serialize(new { error = "strand_not_found", idOrSlug }, CanonTools.JsonOpts);
+
+        var dto = await spine.GetSpineAsync(strand.Id);
+        if (dto == null)
+            return JsonSerializer.Serialize(new { error = "spine_not_found" }, CanonTools.JsonOpts);
+
+        return JsonSerializer.Serialize(new
+        {
+            strand_id           = dto.StrandId,
+            bible               = dto.Bible,
+            bible_updated_at    = dto.BibleUpdatedAt?.ToString("u"),
+            user_stories        = dto.UserStories,
+            user_stories_updated_at = dto.UserStoriesUpdatedAt?.ToString("u"),
+            amendments          = dto.Amendments.Select(a => new
+            {
+                code       = a.Code,
+                seq        = a.SequenceNo,
+                summary    = a.Summary,
+                body       = a.Body,
+                created_at = a.CreatedAt.ToString("u"),
+                created_by = a.CreatedBy,
+            }).ToList(),
+            latest_pin = dto.LatestPin == null ? null : new
+            {
+                strand_version    = dto.LatestPin.StrandVersion,
+                bible_hash        = dto.LatestPin.BibleHash[..Math.Min(12, dto.LatestPin.BibleHash.Length)] + "…",
+                user_stories_hash = dto.LatestPin.UserStoriesHash[..Math.Min(12, dto.LatestPin.UserStoriesHash.Length)] + "…",
+                amendment_count   = dto.LatestPin.AmendmentCount,
+                pinned_at         = dto.LatestPin.PinnedAt.ToString("u"),
+                notes             = dto.LatestPin.Notes,
+            },
+        }, CanonTools.JsonOpts);
+    }
+
+    [McpServerTool, Description(
+        "Set (replace) the user stories / acceptance criteria for a strand. " +
+        "Write this before starting prose — it defines what scenes, arcs, and voice moments must be present " +
+        "for the strand to reach ≥82% standalone and ≥85% cumulative story score.")]
+    public async Task<string> SetStrandUserStories(
+        [Description("Strand id (GUID) or slug.")] string idOrSlug,
+        [Description("Full user stories markdown. Will replace any existing content.")] string userStoriesText)
+    {
+        var strand = await ResolveStrandAsync(idOrSlug);
+        if (strand == null)
+            return JsonSerializer.Serialize(new { error = "strand_not_found", idOrSlug }, CanonTools.JsonOpts);
+
+        await spine.SetUserStoriesAsync(strand.Id, userStoriesText, "mcp");
+        return JsonSerializer.Serialize(new { ok = true, strand_id = strand.Id, slug = strand.Slug }, CanonTools.JsonOpts);
+    }
+
+    [McpServerTool, Description(
+        "Append an amendment to the strand's narrative spine. " +
+        "Amendments are append-only — they form an auditable change log of narrative decisions. " +
+        "Use when: changing a character's motivation after beats are written, retconning world rules, " +
+        "or noting why a section was expanded or cut.")]
+    public async Task<string> AppendStrandAmendment(
+        [Description("Strand id (GUID) or slug.")] string idOrSlug,
+        [Description("One-line summary of the change.")] string summary,
+        [Description("Full amendment body (markdown). Explain what changed and why.")] string body)
+    {
+        var strand = await ResolveStrandAsync(idOrSlug);
+        if (strand == null)
+            return JsonSerializer.Serialize(new { error = "strand_not_found", idOrSlug }, CanonTools.JsonOpts);
+
+        var amendment = await spine.AppendAmendmentAsync(strand.Id, summary, body, "mcp");
+        return JsonSerializer.Serialize(new
+        {
+            ok         = true,
+            code       = amendment.Code,
+            seq        = amendment.SequenceNo,
+            strand_id  = strand.Id,
+            slug       = strand.Slug,
+        }, CanonTools.JsonOpts);
+    }
+
+    [McpServerTool, Description(
+        "Create a spine version pin for the strand's current docx version. " +
+        "Records the SHA-256 hashes of the current bible and user stories, plus the amendment count, " +
+        "so future drift checks can tell when prose was written against a stale spine. " +
+        "Call this after every significant prose session or whenever the spine changes.")]
+    public async Task<string> PinStrandSpineVersion(
+        [Description("Strand id (GUID) or slug.")] string idOrSlug,
+        [Description("Optional human note explaining what changed at this version.")] string notes = "")
+    {
+        var strand = await ResolveStrandAsync(idOrSlug);
+        if (strand == null)
+            return JsonSerializer.Serialize(new { error = "strand_not_found", idOrSlug }, CanonTools.JsonOpts);
+
+        var (drifted, reason) = await spine.CheckDriftAsync(strand.Id);
+        var pin = await spine.PinVersionAsync(strand.Id, notes, "mcp");
+
+        return JsonSerializer.Serialize(new
+        {
+            ok              = true,
+            strand_version  = pin.StrandVersion,
+            bible_hash      = pin.BibleHash[..Math.Min(12, pin.BibleHash.Length)] + "…",
+            user_stories_hash = pin.UserStoriesHash[..Math.Min(12, pin.UserStoriesHash.Length)] + "…",
+            amendment_count = pin.AmendmentCount,
+            prior_drift     = drifted,
+            prior_drift_reason = reason,
+            pinned_at       = pin.PinnedAt.ToString("u"),
         }, CanonTools.JsonOpts);
     }
 

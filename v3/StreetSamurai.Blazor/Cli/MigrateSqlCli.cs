@@ -54,7 +54,11 @@ public static class MigrateSqlCli
         // Codex docs, Claude Code memory) can be backed up + restored by timestamp.
         var markdownFiles = args.Contains("--markdown-files");
 
-        if (!schema && !charRelational && !charDropLegacy && !strandBeatSoftDelete && !strandBeatVersion && !entityGrammarNote && !strandCode && !entityReviews && !strandBible && !markdownFiles)
+        // Strand spine: add StrandUserStories columns to Strands + create
+        // StrandAmendments and StrandSpineVersions tables.
+        var strandSpine = args.Contains("--strand-spine");
+
+        if (!schema && !charRelational && !charDropLegacy && !strandBeatSoftDelete && !strandBeatVersion && !entityGrammarNote && !strandCode && !entityReviews && !strandBible && !markdownFiles && !strandSpine)
         {
             Console.WriteLine("Usage:");
             Console.WriteLine("  ss --migrate-sql --schema                    apply EF migrations + enable SYSTEM_VERSIONING");
@@ -65,6 +69,7 @@ public static class MigrateSqlCli
             Console.WriteLine("  ss --migrate-sql --entity-reviews            create EntityReviews + EntityReviewSummaries tables");
             Console.WriteLine("  ss --migrate-sql --strand-bible              add StrandBible + StrandBibleGeneratedAt to Strands (+ history)");
             Console.WriteLine("  ss --migrate-sql --markdown-files            create MarkdownFiles table (project-rules, Codex, memory backup)");
+            Console.WriteLine("  ss --migrate-sql --strand-spine              add StrandUserStories to Strands; create StrandAmendments + StrandSpineVersions");
             Console.WriteLine();
             Console.WriteLine("  ss --migrate-sql --character-relational    add relational columns + bridges to Characters,");
             Console.WriteLine("                                             then backfill from Records.Json (--no-backfill skips Phase C)");
@@ -402,6 +407,89 @@ public static class MigrateSqlCli
             catch (Exception ex)
             {
                 Console.WriteLine($"  ✘ strand-bible migration failed: {ex.Message}");
+                failures++;
+            }
+        }
+
+        if (strandSpine)
+        {
+            using var scope = sp.CreateScope();
+            var db = scope.ServiceProvider.GetRequiredService<StreetSamuraiDbContext>();
+
+            Console.WriteLine();
+            Console.WriteLine("[strand-spine]");
+            try
+            {
+                // Phase A: add StrandUserStories + StrandUserStoriesUpdatedAt to Strands
+                // (temporal table — must turn versioning off, alter both tables, then re-enable).
+                await db.Database.ExecuteSqlRawAsync("""
+                    IF NOT EXISTS (SELECT 1 FROM sys.columns
+                                   WHERE object_id = OBJECT_ID('Strands') AND name = 'StrandUserStories')
+                    BEGIN
+                        ALTER TABLE [dbo].[Strands] SET (SYSTEM_VERSIONING = OFF);
+                        ALTER TABLE [dbo].[Strands]         ADD [StrandUserStories]           NVARCHAR(MAX)  NULL;
+                        ALTER TABLE [dbo].[Strands_History] ADD [StrandUserStories]           NVARCHAR(MAX)  NULL;
+                        ALTER TABLE [dbo].[Strands]         ADD [StrandUserStoriesUpdatedAt]  DATETIME2      NULL;
+                        ALTER TABLE [dbo].[Strands_History] ADD [StrandUserStoriesUpdatedAt]  DATETIME2      NULL;
+                        ALTER TABLE [dbo].[Strands]
+                            SET (SYSTEM_VERSIONING = ON (HISTORY_TABLE = [dbo].[Strands_History],
+                                                         DATA_CONSISTENCY_CHECK = OFF));
+                    END;
+                    """);
+                Console.WriteLine("  ✔ StrandUserStories columns added to Strands (+ Strands_History).");
+
+                // Phase B: create StrandAmendments table.
+                await db.Database.ExecuteSqlRawAsync("""
+                    IF NOT EXISTS (SELECT 1 FROM sys.objects WHERE object_id = OBJECT_ID(N'[dbo].[StrandAmendments]') AND type = N'U')
+                    BEGIN
+                        CREATE TABLE [dbo].[StrandAmendments] (
+                            [Id]         UNIQUEIDENTIFIER NOT NULL DEFAULT NEWSEQUENTIALID(),
+                            [StrandId]   UNIQUEIDENTIFIER NOT NULL DEFAULT '00000000-0000-0000-0000-000000000000',
+                            [SequenceNo] INT              NOT NULL DEFAULT 0,
+                            [Code]       NVARCHAR(20)     NOT NULL DEFAULT '',
+                            [Summary]    NVARCHAR(500)    NOT NULL DEFAULT '',
+                            [Body]       NVARCHAR(MAX)    NOT NULL DEFAULT '',
+                            [CreatedAt]  DATETIME2        NOT NULL DEFAULT SYSUTCDATETIME(),
+                            [CreatedBy]  NVARCHAR(200)    NOT NULL DEFAULT '',
+                            CONSTRAINT [PK_StrandAmendments] PRIMARY KEY ([Id])
+                        );
+                        CREATE        INDEX [IX_StrandAmendments_StrandId]            ON [dbo].[StrandAmendments] ([StrandId]);
+                        CREATE UNIQUE INDEX [IX_StrandAmendments_StrandId_SequenceNo] ON [dbo].[StrandAmendments] ([StrandId], [SequenceNo]);
+                    END;
+                    """);
+                Console.WriteLine("  ✔ StrandAmendments table created (or already exists).");
+
+                // Phase C: create StrandSpineVersions table (bridge).
+                await db.Database.ExecuteSqlRawAsync("""
+                    IF NOT EXISTS (SELECT 1 FROM sys.objects WHERE object_id = OBJECT_ID(N'[dbo].[StrandSpineVersions]') AND type = N'U')
+                    BEGIN
+                        CREATE TABLE [dbo].[StrandSpineVersions] (
+                            [Id]               UNIQUEIDENTIFIER NOT NULL DEFAULT NEWSEQUENTIALID(),
+                            [StrandId]         UNIQUEIDENTIFIER NOT NULL DEFAULT '00000000-0000-0000-0000-000000000000',
+                            [StrandVersion]    INT              NOT NULL DEFAULT 0,
+                            [BibleHash]        NVARCHAR(64)     NOT NULL DEFAULT '',
+                            [UserStoriesHash]  NVARCHAR(64)     NOT NULL DEFAULT '',
+                            [AmendmentCount]   INT              NOT NULL DEFAULT 0,
+                            [PinnedAt]         DATETIME2        NOT NULL DEFAULT SYSUTCDATETIME(),
+                            [PinnedBy]         NVARCHAR(100)    NOT NULL DEFAULT '',
+                            [Notes]            NVARCHAR(1000)   NOT NULL DEFAULT '',
+                            CONSTRAINT [PK_StrandSpineVersions] PRIMARY KEY ([Id])
+                        );
+                        CREATE        INDEX [IX_StrandSpineVersions_StrandId]              ON [dbo].[StrandSpineVersions] ([StrandId]);
+                        CREATE UNIQUE INDEX [IX_StrandSpineVersions_StrandId_StrandVersion] ON [dbo].[StrandSpineVersions] ([StrandId], [StrandVersion]);
+                    END;
+                    """);
+                Console.WriteLine("  ✔ StrandSpineVersions table created (or already exists).");
+
+                // Phase D: enable system versioning on the two new tables.
+                Console.WriteLine("  · enabling system versioning on StrandAmendments + StrandSpineVersions…");
+                await db.EnableSystemVersioningAsync(onError: (t, ex) =>
+                    Console.WriteLine($"  ✘ system versioning failed for {t}: {ex.Message}"));
+                Console.WriteLine("  ✔ both tables are temporal.");
+            }
+            catch (Exception ex)
+            {
+                Console.WriteLine($"  ✘ strand-spine migration failed: {ex.Message}");
                 failures++;
             }
         }

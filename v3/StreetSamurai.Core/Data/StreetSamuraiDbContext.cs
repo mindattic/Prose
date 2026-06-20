@@ -121,6 +121,9 @@ public class StreetSamuraiDbContext : DbContext
     public DbSet<StrandReviewSummary>   StrandReviewSummaries  => Set<StrandReviewSummary>();
     // Append-only score timeline — one row per RecomputeScoresAsync call.
     public DbSet<StrandScoreHistory>    StrandScoreHistories   => Set<StrandScoreHistory>();
+    // Per-strand narrative spine: amendment log + version pins (bridge).
+    public DbSet<StrandAmendment>       StrandAmendments       => Set<StrandAmendment>();
+    public DbSet<StrandSpineVersion>    StrandSpineVersions    => Set<StrandSpineVersion>();
     // Persona quality-reviews for canon entities (characters, weapons, tech, etc.).
     public DbSet<EntityReview>          EntityReviews          => Set<EntityReview>();
     public DbSet<EntityReviewSummary>   EntityReviewSummaries  => Set<EntityReviewSummary>();
@@ -1987,6 +1990,28 @@ public class StreetSamuraiDbContext : DbContext
             e.HasIndex(x => x.Alias);
         });
 
+        // ── StrandAmendment ─────────────────────────────────────────────────
+        b.Entity<StrandAmendment>(e =>
+        {
+            e.HasKey(x => x.Id);
+            e.Property(x => x.Code).HasMaxLength(20).IsRequired();
+            e.Property(x => x.Summary).HasMaxLength(500).IsRequired();
+            e.HasIndex(x => x.StrandId);
+            e.HasIndex(x => new { x.StrandId, x.SequenceNo }).IsUnique();
+        });
+
+        // ── StrandSpineVersion ───────────────────────────────────────────────
+        b.Entity<StrandSpineVersion>(e =>
+        {
+            e.HasKey(x => x.Id);
+            e.Property(x => x.BibleHash).HasMaxLength(64);
+            e.Property(x => x.UserStoriesHash).HasMaxLength(64);
+            e.Property(x => x.PinnedBy).HasMaxLength(100);
+            e.Property(x => x.Notes).HasMaxLength(1000);
+            e.HasIndex(x => x.StrandId);
+            e.HasIndex(x => new { x.StrandId, x.StrandVersion }).IsUnique();
+        });
+
         // ── MarkdownFile ────────────────────────────────────────────────────
         b.Entity<MarkdownFile>(e =>
         {
@@ -2114,6 +2139,12 @@ public class StreetSamuraiDbContext : DbContext
         // rows keep the full content, so a catastrophic file deletion can be
         // undone with ss --restore-markdown --as-of <datetime>.
         "MarkdownFiles",
+        // Per-strand narrative spine: amendment log (append-only) and version
+        // pins (bridge linking docx-version → spine hashes). Both versioned so
+        // amendments can never be truly deleted and any spine state can be
+        // recovered by timestamp.
+        "StrandAmendments",
+        "StrandSpineVersions",
     };
 
     /// <summary>
