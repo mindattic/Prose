@@ -189,6 +189,23 @@ updated: 2026-06-15
   - **H2d ⬜** Act 3 prose: 17 beats written to Sonnet-draft + Opus-polish standard.
   - **H2e ⬜** Full-work review panel ≥86%; export docx to TNTW folder.
 
+- **SS-US-H3 🟡** As the author, *Attendance* (ATTE, `attendance-019ebf4c`, 40 beats) is revised so
+  the disappearance mechanics are internally consistent: children vanish during unmonitored
+  transitions (bathroom passes, corridor gaps) leaving a resonance echo at their seat and a transit
+  shadow in the isolated space — never as witnessed classroom events. See [SS-A8](AMENDMENTS.md).
+  *Acceptance: Beats 7–8, 10, 20 revised + bathroom-sweep beat added + logline updated + review
+  panel ≥84%.*
+  - **H3a ⬜** Beats 7–8 revised: Ren did not witness the disappearance; describes echo above
+    the returned-to chair, not a real-time transit.
+  - **H3b ⬜** Beat 10 updated: echo correctly identified as tuning mark; Yemina knows to look
+    for the shadow elsewhere.
+  - **H3c ⬜** Beat 20 updated: Selvamani adds two-trace distinction (echo/shadow; scanner
+    reads both; shadow always in isolated transitional space).
+  - **H3d ⬜** New beat: bathroom sweep — Yemina finds Kito's transit shadow, confirming the
+    two-trace pattern across all three cases.
+  - **H3e ⬜** Story logline revised; Amara Osei name-collision ruling applied.
+  - **H3f ⬜** Opus polish + review panel ≥84%.
+
 ## Priority backlog
 
 > Dependency-ordered toward the headline goal (a fresh seed → published, reviewed, canon-consistent

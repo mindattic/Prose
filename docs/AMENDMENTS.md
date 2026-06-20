@@ -166,6 +166,36 @@ backup `backups/StreetSamurai_preFactionBlobDrop_20260615.bak`). Character was a
 ⬜ ~24 types remain, each following the RFC 0007 recipe; the blob stays source-of-truth per type
 until that type flips, so the engine is always consistent.
 
+## SS-A8 — *Attendance* (ATTE) resonance-trace taxonomy canonized; bleed-transit investigation mechanics locked {#SS-A8}
+
+**What changed.** [GLMZ] A narrative-logic gap in *Attendance* (`attendance-019ebf4c`, 40 beats) is resolved by canonizing the two-trace forensic model for bleed-induced transit events and locking the "slip-away" mechanism that explains why children disappear without witnesses. The existing draft has teacher Ren Vasquez witnessing Kito Bramley vanish from his classroom chair in real time — but a live classroom disappearance witnessed by a teacher generates incident reports, parent calls, and institutional alarms that contradict the story's core engine: *children fall through administrative cracks because nobody sees them go*.
+
+**Resonance-trace taxonomy (LOCKED).**
+
+A bleed-induced transit event leaves two distinct forensic signatures, both detectable with a resonance scanner — a field instrument that reads residual harmonic energy by frequency profile, intensity, and estimated age of trace. (Selvamani's portable anomaly sensor is an early-stage, researcher-built example; the RMA issues standardized scanner kits to Class-3 response teams.)
+
+1. **Resonance echo** (informal: *echo*; RMA designation: *contact imprint*) — low-intensity, long-duration residual left where the bleed's coherent emission first synchronized a person's neuretics. The tuning happens at whatever position the person occupies most — desk chair, usual seat, frequent resting spot. An echo does **not** mark where the person crossed; it marks where the bleed *found* them and began tuning them. Echoes persist for weeks. Selvamani's shorthand: *the room remembers where the frequency settled.*
+
+2. **Transit shadow** (informal: *shadow*; RMA designation: *crossing trace*) — higher-intensity, shorter-duration residual left at the exact location where the person physically crossed the threshold. Intensity is immediate but decay is faster than an echo (days, not weeks). A transit shadow is **always in a transitional, low-visibility space** — a bathroom stall, locker room, stairwell alcove, supply room, waiting chair outside a closed door. The bleed does not open in public space; threshold contact requires brief neuretic isolation, which means a person alone, away from the interference of other active neuretics.
+
+**Why children disappear without witnesses (LOCKED).** The tuning compulsion builds over the six-week synchronization window (consistent with the neuretics burnout flag pattern). When the pull peaks, the child follows it during a normal institutional transition: a bathroom pass, a moment waiting alone outside a room, the gap between periods in a corridor with no adult coverage. The crossing takes seconds. In an overworked, underpaid school environment, one child not returning from a bathroom break is logged as an unexcused absence or presumed early guardian pickup — not an emergency. The teacher assumes the front office has them; the front office assumes a guardian came; the record closes as noise. The pattern repeats 1–3 times per school over months before any single site has a count worth reviewing.
+
+**The 47-child pattern (LOCKED).** Twenty-two school sites across GLMZ, twenty-two months, 1–3 incidents per site. Each site's tally is below its corp contract's alert threshold. Cross-corp clearance is required to aggregate. The investigator's role is not to respond to an alarm — it is to be the only node from which an alarm is visible at all.
+
+**Prose changes required in `attendance-019ebf4c`.**
+
+- **Story logline (lines 2–3):** Remove "each disappearance witnessed as the air going wrong above an empty chair." The echoes are found by investigation, not observed in real time.
+- **Beats 7–8:** Ren Vasquez did **not** see Kito disappear. Kito asked for a bathroom pass during independent reading time. Ren waited fifteen minutes before going to look; found nothing. The wrongness he describes is what he noticed **above the chair after the room emptied** — the resonance echo of the tuning, still present. As a latent unregistered psionic he registered it where a scanner would have measured it. He moved the desk because he could not stop looking at the echo and didn't know what to call it.
+- **Beat 10:** The trace above Kito's chair is the resonance echo (tuning mark). Yemina has seen this signature in the prior two cases. She knows the transit shadow is somewhere else — a room in this building she hasn't swept.
+- **Beat 20 (Selvamani expert testimony):** Add the two-trace distinction: the echo stays at the seat; the shadow is wherever they went to be alone. Selvamani: *"The echo tells you where the frequency found them. The shadow tells you where they stepped through. You always need both — the echo shows you who; the shadow shows you where."*
+- **Add investigative beat (new or expanded):** Yemina sweeps the bathroom near Room 214 with her sensor and finds Kito's transit shadow — stronger, colder, decaying faster than the echo above the chair. This is the first time she sees both traces for the same child, and it confirms the pattern she's been building across all three cases.
+
+**Amara Osei name collision (author ruling required).** `Amara Osei, age 7` appears as a missing child in ATTE (Beats 12, 32). [SS-A6](#) canonizes an adult `Amara Osei` (neuretic maintenance tech, Cellvault) as a protagonist in *Underlying Connection*. These are two different people with the same full name. Ruling needed before *Underlying Connection* prose is drafted: rename the ATTE child or the UC adult.
+
+**Why.** Eliminates the mass-alarm logical gap. The horror of *Attendance* is structural — children disappear because the institutions that should catch them are too fractured, too underfunded, and too corp-siloed to notice. No cover-up. No conspiracy. Just the ordinary failure of disconnected record-keeping at scale. The two-trace model adds investigative weight: Yemina and Selvamani must *find* the shadows rather than just receive eyewitness accounts.
+
+**Verification.** Author approval of revised Beats 7–8, 10, 20 + new bathroom sweep beat in `attendance-019ebf4c`. `pwsh tools/codex.ps1 doctor` must pass after edits.
+
 ## SS-A6 — *Underlying Connection* canonical design; Orison Neuretics canonized (supersedes —)
 
 **What changed.** [GLMZ] A new CorpoNation, three new characters, and one narrative-law ruling are
