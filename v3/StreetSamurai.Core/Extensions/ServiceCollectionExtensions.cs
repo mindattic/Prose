@@ -406,7 +406,8 @@ public static class ServiceCollectionExtensions
             sp.GetRequiredService<IAudioStore>(),
             sp.GetRequiredService<Microsoft.Extensions.Logging.ILogger<StrandWorkbenchService>>(),
             sp.GetService<SettingsService>(),
-            sp.GetRequiredService<EntityRamificationService>()));
+            sp.GetRequiredService<EntityRamificationService>(),
+            sp.GetRequiredService<PostBeatValidationService>()));
         services.AddSingleton<WritingQualityService>();
         services.AddSingleton(sp => new MotifService(
             sp.GetRequiredService<SettingsKvStore>(),
@@ -730,6 +731,10 @@ public static class ServiceCollectionExtensions
         services.AddSingleton<WeaponAmmoCompatibilityService>();
         services.AddSingleton<MarkdownFileService>();
         services.AddSingleton<StrandSpineService>();
+
+        // Auto-validation pipeline (2026-06-20): orchestrates prose guard + gear carry +
+        // behavior enforcer after every beat save; files violations as Findings.
+        services.AddSingleton<PostBeatValidationService>();
 
         // Semantic Fidelity Gap detector — Goodhart's Law guard for the review metric.
         // Runs in the background after every review; also available via
