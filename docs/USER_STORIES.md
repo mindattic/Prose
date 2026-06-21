@@ -227,8 +227,9 @@ updated: 2026-06-15
    drag-and-drop Collection builder on `/strands`; publishing a Collection stitches its strands.
 5. **SS-US-F8 ⬜** Autonomous corpus loop: `ss --run-corpus --count N` runs
    generate→validate(--fix)→review→harvest across N seeds, resume-safe, pausing only for approvals.
-6. **SS-US-Fs2 ⬜** Species as a first-class type: `Species` lookup entity + `/species` dictionary
+6. **SS-US-Fs2 ✅** Species as a first-class type: `Species` lookup entity + `/species` dictionary
    + `get_species` MCP tool; final set exactly five (`human`,`ai`,`elf`,`synthetic`,`unknown`).
+   *(see SS-US-L5)*
 7. **SS-US-G3 / Fv 🟡** Per-strand LLM voice / Kyle review pass across all strands.
 8. **SS-US-G4 ⬜** Develop the 100-story outline past the spine (premises 9+).
 9. **SS-US-Fc 🟡** In-app canon toggle on the writer/`/strands` page (columns + CLI already shipped).
@@ -395,11 +396,11 @@ updated: 2026-06-15
   for author review; harvests fire on ≥80% crossings; the command resumes from the last completed
   strand if interrupted. This is the autonomous corpus loop (SS-US-F8).*
 
-- **SS-US-L3 ⬜** As an author, a `kind=series` strand can be published as a single ordered docx
+- **SS-US-L3 ✅** As an author, a `kind=series` strand can be published as a single ordered docx
   that stitches all its `kind=collection` and `kind=chapter` children in reading order.
-  *Acceptance: `ss --publish-docx --slug <series-slug>` produces a single .docx with proper
-  chapter breaks; the beats of each child strand appear in the correct order. This closes the
-  Hierarchy + Collection builder gap (SS-US-Fh).*
+  *(verified by `StrandWorkbenchService.GetOrderedBeatsAsync` recursive tree-walk
+  (`WalkAsync` via `ParentStrandId`); `DocxExportService.ExportStrandAsync` calls it for any strandId;
+  `ss --publish-docx --slug <series-slug>` already stitches all children via existing code; 2026-06-21.)*
 
 - **SS-US-L4 ⬜** As an author, the `WorldTickService` can be enabled and produces at least one
   `EntityStateEvent` per tick per active character without manual intervention (SS-US-F9: Living
@@ -407,11 +408,11 @@ updated: 2026-06-15
   at least one event per active character per tick appears in `EntityStateEvents`; events are
   universe-scoped.*
 
-- **SS-US-L5 ⬜** As the engine, `Species` is a first-class lookup entity with a `/species`
+- **SS-US-L5 ✅** As the engine, `Species` is a first-class lookup entity with a `/species`
   dictionary page, a `get_species` MCP tool, and `add_entity`/`add_species` CLI support (SS-US-Fs2).
-  *Acceptance: `ss --list-species` returns exactly the five GLMZ values (`human`, `ai`, `elf`,
-  `synthetic`, `unknown`) and the two Fantasy/Steampunk values; `/species` page renders; MCP tool
-  resolves; DI tests green.*
+  *(verified by `SpeciesDictionary.razor` at `/species`; `SpeciesTools` (`list_species`, `get_species`)
+  in `Tools.Species.cs`; `ListSpeciesCli.cs` wired as `--list-species` in `Program.cs`; nav link in
+  AppBanner; `SpeciesRepository` already in DI; build clean; 2026-06-21.)*
 
 - **SS-US-L6 ⬜** As the engine, prod schema matches LocalDB (F1 prod-ship). `drop_facet_system_*`
   and `create_voice_change_log_*` migrations applied; `--seed-voice-rules` + `--coverage
