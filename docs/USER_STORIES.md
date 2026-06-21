@@ -192,22 +192,26 @@ updated: 2026-06-15
   - **H2e ✅** Full-work review panel 87.0/100 (N=20, all reviewers ≥80); exported *Sparrow V13.docx*.
     *(2026-06-20.)*
 
-- **SS-US-H3 🟡** As the author, *Attendance* (ATTE, `attendance-019ebf4c`, 40 beats) is revised so
+- **SS-US-H3 ✅** As the author, *Attendance* (ATTE, `attendance-019ebf4c`, 40 beats) is revised so
   the disappearance mechanics are internally consistent: children vanish during unmonitored
   transitions (bathroom passes, corridor gaps) leaving a resonance echo at their seat and a transit
   shadow in the isolated space — never as witnessed classroom events. See [SS-A8](AMENDMENTS.md).
   *Acceptance: Beats 7–8, 10, 20 revised + bathroom-sweep beat added + logline updated + review
-  panel ≥84%.*
-  - **H3a ⬜** Beats 7–8 revised: Ren did not witness the disappearance; describes echo above
-    the returned-to chair, not a real-time transit.
-  - **H3b ⬜** Beat 10 updated: echo correctly identified as tuning mark; Yemina knows to look
-    for the shadow elsewhere.
-  - **H3c ⬜** Beat 20 updated: Selvamani adds two-trace distinction (echo/shadow; scanner
-    reads both; shadow always in isolated transitional space).
-  - **H3d ⬜** New beat: bathroom sweep — Yemina finds Kito's transit shadow, confirming the
-    two-trace pattern across all three cases.
+  panel ≥84%.* verified by all H3a–H3f sub-stories ✅ (2026-06-21).
+  - **H3a ✅** Beats 7–8 revised: Ren did not witness the disappearance; describes echo above
+    the returned-to chair, not a real-time transit. (verified by `EditBeatCli` beat 7–8 update;
+    Kito asks for bathroom pass, Ren waits 15 min, echo seen after students leave; export V23; 2026-06-21.)
+  - **H3b ✅** Beat 10 updated: echo correctly identified as tuning mark; Yemina knows to look
+    for the shadow elsewhere. (verified by `EditBeatCli` beat 10 update; Yemina recognizes prior-case
+    signature, plans bathroom sweep; export V23; 2026-06-21.)
+  - **H3c ✅** Beat 20 updated: Selvamani adds two-trace distinction (echo/shadow; scanner
+    reads both; shadow always in isolated transitional space). (verified by `EditBeatCli` beat 20
+    update (position 21 post-insert); two-trace distinction + bathroom quote; export V23; 2026-06-21.)
+  - **H3d ✅** New beat: bathroom sweep — Yemina finds Kito's transit shadow, confirming the
+    two-trace pattern across all three cases. (verified by `EditBeatCli` insert after beat 10;
+    beat id 019ee8c2; scanner reads colder/faster-decaying trace in faculty annex; export V23; 2026-06-21.)
   - **H3e ✅** Story logline revised; Amara Osei (child) renamed Daria Drew. *(prose + amendment updated 2026-06-19)*
-  - **H3f ⬜** Opus polish + review panel ≥84%.
+  - **H3f ✅** Opus polish + review panel ≥84%. verified by StrandReviewService 20-reader panel: 85.0/100 (2026-06-21).
 
 ## Priority backlog
 
