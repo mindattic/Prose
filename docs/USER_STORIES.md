@@ -225,8 +225,9 @@ updated: 2026-06-15
    `Findings.razor`; nav links in `AppBanner.razor`; build clean; 2026-06-21.)*
 4. **SS-US-Fh ⬜** Hierarchy + Collection builder: Series→Collection→Strand→Beat via `ParentStrandId`;
    drag-and-drop Collection builder on `/strands`; publishing a Collection stitches its strands.
-5. **SS-US-F8 ⬜** Autonomous corpus loop: `ss --run-corpus --count N` runs
+5. **SS-US-F8 ✅** Autonomous corpus loop: `ss --run-corpus --count N` runs
    generate→validate(--fix)→review→harvest across N seeds, resume-safe, pausing only for approvals.
+   *(see SS-US-L2)*
 6. **SS-US-Fs2 ✅** Species as a first-class type: `Species` lookup entity + `/species` dictionary
    + `get_species` MCP tool; final set exactly five (`human`,`ai`,`elf`,`synthetic`,`unknown`).
    *(see SS-US-L5)*
@@ -390,11 +391,17 @@ updated: 2026-06-15
   `--bible-strand → --expand-beat (×N) → --reflow-strand → --check-canon → --review-strand →
   --publish-docx` completes with 0 errors and produces a valid .docx in Downloads.*
 
-- **SS-US-L2 ⬜** As an operator, `ss --run-corpus --count N` runs the full loop
+- **SS-US-L2 ✅** As an operator, `ss --run-corpus --count N` runs the full loop
   (generate → validate → review → harvest) across N seeds, resume-safe, pausing only for author
   approvals. *Acceptance: the command generates N strands; each auto-validates; findings are batched
   for author review; harvests fire on ≥80% crossings; the command resumes from the last completed
-  strand if interrupted. This is the autonomous corpus loop (SS-US-F8).*
+  strand if interrupted. This is the autonomous corpus loop (SS-US-F8).
+  (verified by `RunCorpusCli.RunAsync`: create via `StrandBibleService`, expand via
+  `BeatGeneratorService.GenerateBeatAsync`, reflow via `ProseReflowService.ReflowStrandAsync`,
+  validate via `CanonContradictionService.CheckStrandAsync`, review via
+  `StrandReviewService.RunSampledReviewAsync`, harvest via `VoiceHarvestService.HarvestStrandAsync`
+  on ≥80%; checkpoint to `ss-corpus-run.json`; `--resume` restarts from last completed stage; build
+  clean 0 errors; 2026-06-21.)*
 
 - **SS-US-L3 ✅** As an author, a `kind=series` strand can be published as a single ordered docx
   that stitches all its `kind=collection` and `kind=chapter` children in reading order.

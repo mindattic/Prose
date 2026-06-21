@@ -426,6 +426,17 @@ if (args.Contains("--bible-strand"))
 }
 
 // CLI mode: generate a new strand (bible-first: plan → planned beats → expand in UI).
+// CLI mode: autonomous corpus loop — generate N strands end-to-end and review them.
+//   ss --run-corpus --count N [--seed "..."] [--kind episode] [--beats 12] [--ballots 20] [--resume] [--dry-run]
+if (args.Contains("--run-corpus"))
+{
+    var cliBuilder = WebApplication.CreateBuilder(args);
+    cliBuilder.Services.AddStreetSamuraiServices();
+    var cliApp = cliBuilder.Build();
+    Environment.ExitCode = await RunCorpusCli.RunAsync(args, cliApp.Services);
+    return;
+}
+
 //   ss --write-strand --seed "..." [--title "..."] [--kind episode] [--beats 12] [--bible-only]
 if (args.Contains("--write-strand"))
 {

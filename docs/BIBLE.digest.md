@@ -130,7 +130,7 @@ narrative-law block here when stood up:**
   ambient proprioceptive information field BCI-augmented people sense (see `network_doc.md`).
 
 ## Status index (from USER_STORIES.md)
-- done: 72  partial: 11  planned: 27  cut: 1
+- done: 77  partial: 11  planned: 22  cut: 1
 
 ## Latest amendment
 ## SS-A7 — *The Number That Works* Act 2 + Act 3 canonical design (supersedes —)
