@@ -3,19 +3,13 @@
 _Ciro takes Amara to lunch. He produces the straight razor to check his jaw — grooming, not threat. The reader registers it as vanity._
 
 [Beat 1]
-# The Lunch
-
-*Amara has lunch with Ciro Fonseca. She notices three things.*
-
-[Beat 1]
-
-She told herself it was fieldwork.
+﻿She told herself it was fieldwork.
 
 It was not entirely a lie. She dressed professionally, which was not the same as dressing carefully - dark slacks, a structured jacket she'd owned for three years. Not trying. But aware. She checked her reflection in the transit pod window and looked away before she could form an opinion about it.
 
-The pod carried her out of the Zone 6 freight district - ozone, machine oil, the flat mineral smell of the lake, all of it cut off the moment the cab sealed - and through the Zone 5/6 border, where Orison held ambient air rights for twelve blocks around their residential cluster. She felt the changeover in her sinuses before the cabin display registered it: managed air, processed and uniform, scrubbed of any relationship to what was actually outside the glass. Then the middle Ring, where neither corp had finished its claims, and the air fell back to something honest. Particulate. A relay beacon advertisement cycled on a loop from a pylon near the track - a Cascade logo above the line COGNITIVE INFRASTRUCTURE YOU CAN TRUST, Cascade being the outfit that leased neuretic bandwidth to anyone who couldn't afford to grow their own - and she watched it scroll past and let it go without annotation.
+The pod carried her out of the Zone 6 freight district - ozone, machine oil, the flat mineral smell of the lake, all of it cut off the moment the cab sealed - and through the Zone 5/6 border, where Orison held ambient air rights for twelve blocks around their residential cluster. She felt the changeover in her sinuses before the cabin display registered it: managed air, processed and uniform, scrubbed of any relationship to what was actually outside the glass. She sat with her hands in her lap and watched the border go past. Then the middle Ring, where neither corp had finished its claims, and the air fell back to something honest. Particulate. A relay beacon advertisement cycled on a loop from a pylon near the track - a Cascade logo above the line COGNITIVE INFRASTRUCTURE YOU CAN TRUST, Cascade being the outfit that leased neuretic bandwidth to anyone who couldn't afford to grow their own - and she watched it scroll past and let it go without annotation.
 
-Nineteen minutes. She spent them reading a maintenance log she'd already read twice. In the last year she had twice felt something arrive in her tissue that wasn't hers - once during a transit cycle, once waking from sleep. Brief. Ambient. She had not filed a report.
+Nineteen minutes. She spent them reading a maintenance log she'd already read twice, and deciding what she wanted to know from him before the meal was over ? specifically, what his actual relationship to the calibration protocols was, and how much of what he said about the patient experience was theoretical and how much he'd arrived at by watching someone from the inside. In the last year she had twice felt something arrive in her tissue that wasn't hers - once during a transit cycle, once waking from sleep. Brief. Ambient. She had not filed a report.
 
 The restaurant was called Calle do Carmo. Six years open, no celebrity affiliation, the converted ground floor of a utilities substation in the middle Ring - the contested buffer between two CorpoNation residential territories that both wanted the block and neither had finished acquiring. Low ceilings, good tile work, no performance of luxury. It cost more than it looked like it cost, and the gap between those numbers was the whole point. Nobody here pretended the door led somewhere managed. You could hear the street through the walls: a two-stroke delivery bike idling at the corner, the relay station clunking through its quarter-hour test. The air smelled of cooking fat and, faintly, of the drainage canal two blocks east.
 
@@ -71,11 +65,13 @@ The food came. She'd ordered the vegetable congee. He had ordered the vegetable 
 
 The congee was good. Dense, properly seasoned, the chili oil arriving in a ceramic pot with a tiny spoon. He broke the surface and stirred some in; she did the same, watching her own hand do it. The motion was easy - a small clockwise stir, wrist loose - and she'd done it a thousand times, and she did it again now. Normal.
 
-Then, two spoonfuls in, she lifted her right hand toward the water glass, and her fingers closed in the wrong configuration. The three-point grip she used for a calibration probe - thumb and index left free, the other three braced for the seat. Nothing was in her hand. The glass was eight inches away. Her fingers had taken the shape before her arm reached the glass, the way a hand takes a shape it has held ten thousand times, except she had never held this one. She set the hand flat on the table, then picked up the glass the ordinary way and drank. The water was cold. She let it anchor her.
+Then, two spoonfuls in, she lifted her right hand toward the water glass, and her fingers closed in the wrong configuration. The three-point grip she used for a calibration probe - thumb and index left free, the other three braced for the seat. Nothing was in her hand. The glass was eight inches away. Her fingers had taken the shape before her arm reached the glass, the way a hand takes a shape it has held ten thousand times, except she had never held this one. She set the hand flat on the table.
 
-She needed three more seconds than normal to decide what to say next. She used them. When she looked up, Ciro had set his spoon down and was watching the kitchen window, not her face, with the patient attention of someone who had decided to give her a moment.
+She looked up. Ciro had his spoon down and was watching her hand. Not her face ? her hand, resting flat on the table where she'd placed it. He looked up as she did, without hurry, and picked up his spoon again. "The congee's better than I expected," he said.
 
-It had arrived before she could catch it: the specific torque of a bearing housing being seated — thumb and index drawing resistance, heel of the palm driving lateral pressure, waiting for the give that meant the seat was true. None of it hers. She kept her face level and her hands in her lap and said, "The certification language frames it as upkeep. Like maintaining a vehicle."
+She picked up the glass the ordinary way and drank. The water was cold. She had been two words into something ? the October appointment, the calibration log ? and it was gone. She let the water anchor her instead.
+
+It had arrived before she could catch it: the specific torque of a bearing housing being seated ? thumb and index drawing resistance, heel of the palm driving lateral pressure, waiting for the give that meant the seat was true. None of it hers. She kept her face level and her hands in her lap and said, "The certification language frames it as upkeep. Like maintaining a vehicle."
 
 "A vehicle doesn't re-experience its own state," Ciro said.
 
@@ -89,11 +85,11 @@ He was talking about calibration - the distinction between calibration as a tech
 
 The freight crew at the counter were laughing at something, short and loud. The relay beacon outside ran its test through the wall - the low clunk, thirty seconds of quiet, then the ad loop again. His face read exactly the same as ten seconds ago: the same precise attention, the same forward lean. His thumb had run the edge from the hinge toward the tip - the testing direction, checking draw, not sharpness. Whether the blade moved clean in the fold. That was not a man who shaved with it.
 
-Her chest had gone even - the stillness she put on before a delicate procedure. She had two seconds. Ask about the razor - use the maintenance-tech voice, the one that said *I noticed something, walk me through it* - and watch what his face did. Or stay level. Let him keep talking. Carry what she now knew and re-read every conversation they'd had against it.
+Her chest had gone even - the stillness she put on before a delicate procedure. She had two seconds. Ask about the razor ? use the maintenance-tech voice, the one that said *I noticed something, walk me through it* ? and watch what his face did. Or stay level. Let him keep talking. Carry what she now knew and re-read every conversation they'd had against it.
 
 She kept her seat.
 
-"Most protocols are wrong," Amara said.
+"Most protocols are wrong," she said.
 
 "That's a structural problem."
 
@@ -137,7 +133,9 @@ That evening, the ambient chimed. Seto.
 
 She thought about what the word *out* was doing in that sentence.
 
-*Nothing I didn't already know.*
+She told him about the razor. Not the bearing-housing grip at the restaurant ? that she kept in the closed column, beside the session she'd flagged and encrypted. But the razor: the test direction, the fold check, what it was for. She set it down in two sentences the way she logged a maintenance finding ? clean, sourced, no interpretation appended. She pressed send before she could reclassify it.
+
+*Noted*, he sent back. Nothing else.
 
 She had been in contact with him for three weeks. She still did not know what he did for work, only the shape of his days - the early hours, the deliberate routes, the quality of his attention that came through in the bleed before anything else.
 
