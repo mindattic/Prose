@@ -1,0 +1,131 @@
+@page "/coverage"
+@attribute [Authorize(Policy = MaPolicies.Admin)]
+@using Microsoft.AspNetCore.Authorization
+@using StreetSamurai.Core.Services
+@inject CoverageService CovSvc
+
+<div class="d-flex justify-content-between align-items-start mb-3">
+    <div>
+        <div class="small text-muted mb-1">
+            <a href="/" class="text-muted text-decoration-none"><i class="bi bi-arrow-left me-1"></i>Home</a>
+        </div>
+        <h4 class="text-info mb-0"><i class="bi bi-grid-3x3-gap me-2"></i>Entity Coverage</h4>
+        <p class="small text-muted mb-0">
+            Per-type embedding coverage: how many entities have been indexed for semantic search.
+            Types with 0% coverage are dead inventory — the generator can't ground prompts in them.
+            Use <code>ss --coverage</code> or <code>ss --embed-entities --type &lt;type&gt;</code> to backfill.
+        </p>
+    </div>
+    <button class="btn btn-sm btn-outline-info" @onclick="LoadAsync">
+        <i class="bi bi-arrow-clockwise me-1"></i>Refresh
+    </button>
+</div>
+
+@if (!loaded)
+{
+    <div class="text-muted small"><span class="spinner-border spinner-border-sm me-1"></span>Loading…</div>
+}
+else if (!string.IsNullOrEmpty(error))
+{
+    <div class="alert alert-danger small py-2">@error</div>
+}
+else
+{
+    @* Summary strip *@
+    <div class="row g-2 mb-3">
+        <div class="col-md-3"><div class="cov-stat"><div class="lbl">Types</div><div class="val text-info">@rows.Count</div></div></div>
+        <div class="col-md-3"><div class="cov-stat"><div class="lbl">Total entities</div><div class="val text-light">@totalEntities.ToString("N0")</div></div></div>
+        <div class="col-md-3"><div class="cov-stat"><div class="lbl">Embedded</div><div class="val text-success">@totalEmbedded.ToString("N0")</div></div></div>
+        <div class="col-md-3"><div class="cov-stat"><div class="lbl">Missing</div><div class="val @(totalMissing > 0 ? "text-warning" : "text-success")">@totalMissing.ToString("N0")</div></div></div>
+    </div>
+
+    @* Filter chips *@
+    <div class="mb-3 d-flex gap-1 flex-wrap align-items-center">
+        <span class="small text-muted me-1">Show:</span>
+        <button class="btn btn-sm @(showAll ? "btn-info" : "btn-outline-secondary")" @onclick="() => showAll = true">All</button>
+        <button class="btn btn-sm @(!showAll ? "btn-warning text-dark" : "btn-outline-secondary")" @onclick="() => showAll = false">
+            <i class="bi bi-exclamation-circle me-1"></i>Incomplete only
+        </button>
+    </div>
+
+    <div class="table-responsive">
+        <table class="table table-sm table-dark table-hover">
+            <thead>
+                <tr>
+                    <th>Entity Type</th>
+                    <th class="text-end">Total</th>
+                    <th class="text-end">Embedded</th>
+                    <th class="text-end">Missing</th>
+                    <th style="min-width:180px;">Coverage</th>
+                    <th>CLI Backfill</th>
+                </tr>
+            </thead>
+            <tbody>
+                @foreach (var r in VisibleRows)
+                {
+                    var pct = (int)Math.Round(r.EmbeddedPct);
+                    var barCss = pct >= 90 ? "bg-success" : pct >= 50 ? "bg-warning" : "bg-danger";
+                    <tr>
+                        <td><code class="text-info">@r.EntityType</code></td>
+                        <td class="text-end">@r.Total.ToString("N0")</td>
+                        <td class="text-end text-success">@r.Embedded.ToString("N0")</td>
+                        <td class="text-end @(r.Missing > 0 ? "text-warning" : "text-muted")">@r.Missing.ToString("N0")</td>
+                        <td>
+                            <div class="d-flex align-items-center gap-2">
+                                <div class="progress flex-grow-1" style="height:8px;background:#2d333b;">
+                                    <div class="progress-bar @barCss" style="width:@pct%"></div>
+                                </div>
+                                <span class="small @(pct >= 90 ? "text-success" : pct >= 50 ? "text-warning" : "text-danger")" style="min-width:36px;text-align:right;">@pct%</span>
+                            </div>
+                        </td>
+                        <td>
+                            @if (r.Missing > 0)
+                            {
+                                <code class="small text-muted">ss --embed-entities --type @r.EntityType</code>
+                            }
+                            else
+                            {
+                                <span class="text-success small"><i class="bi bi-check-circle me-1"></i>Full</span>
+                            }
+                        </td>
+                    </tr>
+                }
+            </tbody>
+        </table>
+    </div>
+}
+
+<style>
+    .cov-stat { background:#1c2128; border-radius:4px; padding:8px 12px; text-align:center; }
+    .cov-stat .lbl { font-size:.7rem; text-transform:uppercase; color:var(--bs-secondary); }
+    .cov-stat .val { font-size:1.4rem; font-weight:600; }
+</style>
+
+@code {
+    private bool loaded;
+    private string error = "";
+    private bool showAll = true;
+    private List<CoverageService.TypeCoverage> rows = new();
+    private int totalEntities;
+    private int totalEmbedded;
+    private int totalMissing;
+
+    private IEnumerable<CoverageService.TypeCoverage> VisibleRows =>
+        showAll ? rows : rows.Where(r => r.Missing > 0);
+
+    protected override async Task OnInitializedAsync() => await LoadAsync();
+
+    private async Task LoadAsync()
+    {
+        loaded = false; error = ""; StateHasChanged();
+        try
+        {
+            rows         = await CovSvc.ReportAsync();
+            totalEntities = rows.Sum(r => r.Total);
+            totalEmbedded = rows.Sum(r => r.Embedded);
+            totalMissing  = rows.Sum(r => r.Missing);
+        }
+        catch (Exception ex) { error = ex.Message; }
+        finally { loaded = true; }
+    }
+}

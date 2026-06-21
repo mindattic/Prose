@@ -313,8 +313,8 @@
 }
 
 @* ── Filter chips ───────────────────────────────────────── *@
-<div class="mb-3 d-flex flex-wrap gap-1 align-items-center">
-    <span class="small text-muted me-2">Findings:</span>
+<div class="mb-2 d-flex flex-wrap gap-1 align-items-center">
+    <span class="small text-muted me-2">Status:</span>
     <button class="btn btn-sm @(filter is null ? "btn-info" : "btn-outline-secondary")" @onclick="() => SetFilter(null)">All</button>
     <button class="btn btn-sm @(filter == FindingStatus.New ? "btn-warning text-dark" : "btn-outline-secondary")" @onclick="() => SetFilter(FindingStatus.New)">New</button>
     <button class="btn btn-sm @(filter == FindingStatus.Triaged ? "btn-info" : "btn-outline-secondary")" @onclick="() => SetFilter(FindingStatus.Triaged)">Triaged</button>
@@ -332,6 +332,43 @@
         @(showContradictions ? "Hide" : "Show") contradictions
     </button>
     <button class="btn btn-sm btn-outline-info ms-3" @onclick="Refresh"><i class="bi bi-arrow-clockwise"></i> Refresh</button>
+</div>
+<div class="mb-3 d-flex flex-wrap gap-1 align-items-center">
+    <span class="small text-muted me-2">Category:</span>
+    <button class="btn btn-sm @(categoryFilter is null ? "btn-secondary" : "btn-outline-secondary")"
+            @onclick="() => SetCategoryFilter(null)">All</button>
+    <button class="btn btn-sm @(categoryFilter == FindingCategory.Contradiction ? "btn-warning text-dark" : "btn-outline-secondary")"
+            @onclick="() => SetCategoryFilter(FindingCategory.Contradiction)"
+            title="Canon-contradiction findings">
+        <i class="bi bi-exclamation-triangle me-1"></i>Canon</button>
+    <button class="btn btn-sm @(categoryFilter == FindingCategory.Voice ? "btn-primary" : "btn-outline-secondary")"
+            @onclick="() => SetCategoryFilter(FindingCategory.Voice)"
+            title="Voice-harvest and voice-drift findings">
+        <i class="bi bi-mic me-1"></i>Voice</button>
+    <button class="btn btn-sm @(categoryFilter == FindingCategory.OutlineDrift ? "btn-warning text-dark" : "btn-outline-secondary")"
+            @onclick="() => SetCategoryFilter(FindingCategory.OutlineDrift)"
+            title="Outline-vs-prose drift">
+        <i class="bi bi-shield-exclamation me-1"></i>Drift</button>
+    <button class="btn btn-sm @(categoryFilter == FindingCategory.GearContradiction ? "btn-secondary" : "btn-outline-secondary")"
+            @onclick="() => SetCategoryFilter(FindingCategory.GearContradiction)"
+            title="Gear carry / weapon contradiction findings">
+        <i class="bi bi-tools me-1"></i>Gear</button>
+    <button class="btn btn-sm @(categoryFilter == FindingCategory.BehaviorContradiction ? "btn-secondary" : "btn-outline-secondary")"
+            @onclick="() => SetCategoryFilter(FindingCategory.BehaviorContradiction)"
+            title="Character behavior invariant violations">
+        <i class="bi bi-person-exclamation me-1"></i>Behavior</button>
+    <button class="btn btn-sm @(categoryFilter == FindingCategory.Cliche ? "btn-info text-dark" : "btn-outline-secondary")"
+            @onclick="() => SetCategoryFilter(FindingCategory.Cliche)"
+            title="Cliché / semantic drift">
+        <i class="bi bi-chat-square me-1"></i>Cliché</button>
+    <button class="btn btn-sm @(categoryFilter == FindingCategory.Anachronism ? "btn-secondary" : "btn-outline-secondary")"
+            @onclick="() => SetCategoryFilter(FindingCategory.Anachronism)"
+            title="Timeline and anachronism findings">
+        <i class="bi bi-clock-history me-1"></i>Anachronism</button>
+    <button class="btn btn-sm @(categoryFilter == FindingCategory.Other ? "btn-secondary" : "btn-outline-secondary")"
+            @onclick="() => SetCategoryFilter(FindingCategory.Other)"
+            title="Other / uncategorised findings">
+        Other</button>
 </div>
 
 @if (items.Count == 0)
@@ -522,18 +559,18 @@ else
 
     private FindingStatus? filter;
     private bool driftOnly;
+    private FindingCategory? categoryFilter;
     private List<Finding> items = new();
     private int newCount, triagedCount, appliedCount, dismissedCount;
     /// <summary>
     /// Items rendered in the list view. When the Drift-only chip is active,
     /// narrow to findings categorized OutlineDrift OR (for backward compat
     /// with rows written before the category promotion) whose summary carries
-    /// the OUTLINE-DRIFT prefix.
+    /// the OUTLINE-DRIFT prefix. Category chip further narrows by FindingCategory.
     /// </summary>
     private IEnumerable<Finding> VisibleItems =>
-        driftOnly
-            ? items.Where(IsDrift)
-            : items;
+        (driftOnly ? items.Where(IsDrift) : items)
+        .Where(f => categoryFilter is null || f.Category == categoryFilter);
 
     private static bool IsDrift(Finding f) =>
         f.Category == FindingCategory.OutlineDrift
@@ -888,8 +925,12 @@ else
     {
         filter = s;
         Refresh();
-        // Persist so the next /findings entry reopens the same view.
         _ = PersistFilterAsync();
+    }
+
+    private void SetCategoryFilter(FindingCategory? c)
+    {
+        categoryFilter = c;
     }
 
     private async Task PersistFilterAsync()
@@ -957,12 +998,14 @@ else
 
     private static string CategoryBadge(FindingCategory c) => c switch
     {
-        FindingCategory.Contradiction => "bg-warning text-dark",
-        FindingCategory.Cliche        => "bg-info text-dark",
-        FindingCategory.Anachronism   => "bg-purple",
-        FindingCategory.Voice         => "bg-primary",
-        FindingCategory.OutlineDrift  => "bg-warning text-dark",
-        _                              => "bg-secondary",
+        FindingCategory.Contradiction          => "bg-warning text-dark",
+        FindingCategory.Cliche                 => "bg-info text-dark",
+        FindingCategory.Anachronism            => "bg-purple",
+        FindingCategory.Voice                  => "bg-primary",
+        FindingCategory.OutlineDrift           => "bg-warning text-dark",
+        FindingCategory.GearContradiction      => "bg-secondary",
+        FindingCategory.BehaviorContradiction  => "bg-secondary",
+        _                                      => "bg-secondary",
     };
 
     private static string SeverityBadge(FindingSeverity s) => s switch
