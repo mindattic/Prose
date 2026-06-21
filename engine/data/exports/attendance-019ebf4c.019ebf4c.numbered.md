@@ -1,6 +1,6 @@
 # Attendance
 
-_Cross-district truancy investigator Yemina Fola investigates three children who vanished from their classroom seats in the Pilsen Veil — each one preceded by a neuretics burnout flag, each disappearance witnessed as the air going wrong above an empty chair. The schools were under three different corp contracts; nobody had connected the cases because nobody else could see all three. When she interviews the teacher who saw the third child go, she finds him sitting in a room where the wrongness hasn't left. In her car afterward, someone else's hands complete a search query in her neuretics: 47 missing children, GLMZ-wide, 22 months. The 48th entry is her own name. The onset date is six weeks ago._
+_Cross-district truancy investigator Yemina Fola investigates three children who vanished from schools in the Pilsen Veil — each one preceded by a neuretics burnout flag, each disappearance logged as an unexcused absence before anyone connected the cases. The schools were under three different corp contracts; nobody had connected them because nobody else could see all three. When she sweeps the third school's bathroom with a resonance sensor, she finds two traces: an echo above the child's usual seat where the bleed's signal tuned him, and a shadow in the bathroom stall where he crossed. In her car afterward, someone else's hands complete a search query in her neuretics: 47 missing children, GLMZ-wide, 22 months. The 48th entry is her own name. The onset date is six weeks ago._
 
 ## Chapter 1
 
@@ -41,13 +41,17 @@ Dr. Achebe came out with the walk of a man who had decided in advance that this 
 He stopped. He looked at her the way an administrator looks at something that has arrived outside normal channels — with the specific expression of a person calculating who, exactly, was responsible for this. He could not find a responsible party. He settled back into concern-and-unavailability.
 
 [Beat 5]
-The three-minute conversation with Dr. Achebe produced a full accounting of everything he was willing to give her — which was paperwork he'd already filed and a firm opinion that the relevant person to speak with was the counseling office, not the classroom teacher. The classroom teacher had been cooperative with the initial investigation, was still shaken, had other students to attend to.
+The three-minute conversation with Dr. Achebe produced everything he was willing to give her — which was paperwork he'd already filed and a firm opinion that the relevant person was the counseling office, not the classroom teacher.
 
-Yemina wrote his concerns down in her notebook. She wrote them in the notebook deliberately, with a pen, where he could watch her write them. Dr. Achebe had the expression of a man watching himself be cited. His hands moved once toward the lanyard at his chest and stopped.
+"I'd like to speak with Mr. Vasquez directly," she said.
 
-When she looked up she said, "Which room is Mr. Vasquez's class?"
+"He's in his planning period." He moved — not dramatically, just enough: positioning himself between her and the hallway door. "I have a duty of care to my staff."
 
-Dr. Achebe looked at what she'd written. "Room 214."
+"Under the district clearance terms, classroom witnesses aren't optional. If the school declines to facilitate, I log it and schedule a formal deposition at the district office." She uncapped her pen. "That usually takes three weeks."
+
+His hands moved once toward the lanyard at his chest and stopped.
+
+"Room 214," he said.
 
 [Beat 6]
 It was lunch period. Room 214 held twenty-three empty chairs and one teacher.
@@ -71,8 +75,20 @@ Kito Bramley was nine. Third row, second seat. He'd been present at the start of
 
 Ren was quiet for a moment.
 
+She had set her pen down. She did not do this during interviews. She stood and crossed to the third row.
+
+The second seat was empty the way all chairs are empty, except it wasn't. She stopped at its edge. She did not touch it. She looked at it the way you look at something you have arrived at before you meant to. When she reached for a reason to be standing there — something she could write in her notes, a protocol step she'd overlooked — she didn't find one. She didn't look for it again.
+
+She went back to her chair. She picked up her pen.
+
+"Go on," she said.
+
 [Beat 8]
-"The air above his chair went wrong." He said it to his hands in his lap. "Not a shimmer. Not heat-shimmer. It was more like — if sound could make a shape. A frequency you don't hear, you just know it's there because your teeth know. For maybe two seconds. And then Kito wasn't there anymore."
+"The air above his chair went wrong." He said it to his hands in his lap. "But not when he left. Not while the students were still in the room. It was after lunch — after everyone had gone. The room was empty and I was standing there and I looked at the third row."
+
+He stopped.
+
+"Above his seat. Not a shimmer. Not heat-shimmer. It was more like — if sound could make a shape. A frequency you don't hear, you just know it's there because your teeth know. It was there above the seat, just hanging. Like something he'd left behind that I didn't have words for."
 
 He looked up. "I know how that sounds."
 
@@ -80,49 +96,103 @@ He looked up. "I know how that sounds."
 
 She had. Different words each time — witnesses always found different words for the same thing. *Pressure. A wrongness. A note the room played.* She'd heard it from a maintenance worker at a warehouse in Back of the Yards. From a transit operator at the Wabash Stack. From a woman in West Lawn who had watched her husband walk through the threshold of their kitchen and not come out the other side.
 
-She wrote: *Atmospheric anomaly consistent with prior cases.* The phrase had stopped meaning anything to her six months ago.
+She wrote: *Atmospheric anomaly consistent with prior cases. Echo at seat, not transit. Transition point unknown.*
+
+She looked at him. She had a close for this. She used it at the end of every witness interview: the case number, the district line, the boilerplate about follow-up contact. She had given it thirty or forty times.
+
+"You didn't cause this," she said. "Whatever you're carrying about that — you didn't."
+
+It was not part of the close. She had never said it to anyone before.
 
 [Beat 9]
 "Did you file a resonance incident report," Yemina asked.
 
 Ren was quiet for the wrong length of time.
 
-"The district filed one," he said. "Dr. Achebe's office."
+"The district filed one. Dr. Achebe's office."
 
-"I meant you, personally."
+"I meant you."
 
-More quiet.
+"I'm not on any registries," he said. The way he said it meant *I need to not be on any registries.*
 
-"I'm not on any registries," Ren said. He said it carefully, in a way that meant *I need to not be on any registries.*
+She wrote in her notebook. She did not show him what she wrote. The mandatory disclosure field was open in her neuretics; she closed it without filing. She had never done that before.
 
-Yemina looked at him for a moment — not an interrogation look, just the look of a person reading what they're being told. She wrote something in her notebook. She did not show him what she wrote.
-
-She was closing the notebook when he said: "I moved his desk. Before the other students came back on Wednesday. I told them it was maintenance."
+She was closing the notebook when he said: "I moved his desk. Before the other students came back. I told them it was maintenance."
 
 He was looking at the third row.
 
-She didn't write that down. She didn't need to.
+What she had written was: *Teacher possibly psionic. Has not self-reported. Protect.*
 
-What she had written was: *Teacher possibly psionic (low-grade, unregistered). Noticed anomaly before proximity event. Has not self-reported. Protect.*
+She stood. Then she sat back down.
+
+"There are two more children," she said. "Different schools. The same thing — the air went wrong, and then they were gone." She did not normally tell witnesses this. Case protocol was explicit. "I'm telling you so you know this wasn't something that happened to Kito specifically. It wasn't your classroom."
+
+Ren looked at the third row for a long time.
+
+"Okay," he said.
+
+She left.
 
 [Beat 10]
 She stood to go. Thanked him. He nodded. She walked toward the door and made the mistake of glancing at the third row, second seat.
 
-The chair was empty in the way all chairs in an empty classroom are empty.
+The trace was there the way it had been there in the other two cases: not a shimmer, not heat, but the specific acoustic wrongness she had written as *atmospheric anomaly* for six months without the right word for what it was. She had seen it above an empty desk in the Back of the Yards school. She had seen it above a chair in the Rogers Park building. The signature was identical. The same tuning, the same residue, the same quality of something that had once been synchronized to this spot and left its print.
 
-But above it — between the surface of the seat and approximately where a child's sternum would be — the air was doing something she could not have pointed to or measured or written into any incident report. It was not a shimmer. It was not heat. It was the thing Ren had described, and she had written as *atmospheric anomaly*, and both translations were wrong.
+She looked at it for two seconds and filed it.
 
-She looked at it for two seconds.
+What she had not found — what she'd been failing to find across two prior cases — was any sign of the stronger trace. The transit mark, wherever it was. The thing that should be nearby, colder and more immediate than this, burning through its decay in some isolated room she hadn't swept. She had found the echo at the seat both times before and filed it and moved on. She had never looked for what the echo implied.
 
-Then she turned and walked out.
+She walked toward the hallway. The bathroom near Room 214 was thirty meters north. She still had time before the lunch period ended.
 
-She was four paces down the hallway before she identified what was wrong with that: she had turned away from the anomaly, but the anomaly had not turned away from her. She felt it still oriented in her direction — not following, not moving, nothing so dramatic as that. Just fixed on her the way a window is fixed on what passes in front of it. She had stopped looking. It had not.
+[Beat 11]
+She should have gone to her car. The next address was three kilometers north and she had two more families to get through before the afternoon shift change at the district office.
 
-She walked faster.
+The bathroom near Room 214 was thirty meters north of the classroom door.
+
+It was a single-stall faculty annex, door propped open by a rubber wedge someone had left there permanently. It smelled of whatever cleaning compound the school purchased in bulk. The mirror above the sink had a calcium ring at the top no one had reached to clean.
+
+She pulled her scanner — contractor grade, better calibrated than her neuretics — and moved it through the space methodically. Sink. The wall tiles. The stall.
+
+The reading came up in the third sweep.
+
+Stronger than what she had seen in the classroom. Colder. A different quality of wrongness entirely — not the long, fading resonance of the echo at his seat but something that hit her scanner's threshold fast and was already decaying. High intensity. Recent. Concentrated. Not a mark left by calibration. A mark left by passage.
+
+In fifteen years of cross-corp truancy work, she had never swept a bathroom.
+
+She stood in the stall and looked at the trace left by a nine-year-old boy who had walked out through the right frequency at the right moment and not walked back.
+
+She had seen something like this in the prior two cases. Logged it as a secondary anomaly, filed it under *atmospheric residue, transitional space,* and moved on. She hadn't known what it was. She hadn't known it was the answer to what she'd been finding above the empty chairs — not the same event, not the same location, not the same rate of decay.
+
+The echo at the seat said: *something happened here to this child.*
+
+The shadow in the bathroom said: *this is where the child went through.*
+
+She photographed the scanner readings. She did not write it in her notebook.
+
+There was nothing to write that the readings didn't already say.
+
+[Beat 12]
+The bathroom was a standard institutional three-stall design, tile regrouted in sections at different times, the colors close but not matching. A window above the middle sink that admitted light but not a view. The hand dryer housing cracked at the corner from something that had hit it once.
+
+She took out her sensor — contractor-issue, smaller than research-grade, calibrated for field triage rather than precision measurement — and stood in the doorway.
+
+The first stall: clean.
+
+The second stall, at the far end: not.
+
+The reading was immediate. 17.4 Hz, intensity well above background, the frequency profile narrower than an ambient echo — a concentrated event, not a settling. The sensor estimated age at nineteen to twenty-three days. Kito had disappeared eighteen days ago.
+
+She stood in the stall for a moment. A standard bathroom stall. Latch on the inside. Space enough for one child to stand alone.
+
+She thought about what it would take: a nine-year-old following an unheard pull to a bathroom stall during the school day, alone for thirty seconds, and then gone. And what it would take for a school to not notice for eight hours that he hadn't come back from a bathroom pass. Not a lot, in either case. The institutions were not designed to catch it. They were designed for the children who went home at the end of the day.
+
+She wrote in her notebook: *Transit shadow, 3rd floor bathroom, stall 2. Intensity: primary crossing. Age: 19–23 days. Echo at usual seat, shadow at point of isolation. All three cases now two-trace.*
+
+Then she left the bathroom and walked back toward the stairs.
 
 ## Chapter 2
 
-[Beat 11]
+[Beat 13]
 In the hallway a class was changing periods — twenty kids, eight and nine years old, moving the way children move in corridors when they've been corrected enough to know the rules exist but not enough to stop testing them. One stepped directly in front of her and overcorrected hard against the wall, apology coming out mostly breath. Another held eye contact the beat too long — the assessing look children give to unfamiliar adults: what kind, and is that kind dangerous.
 
 She had just spent two seconds looking at the air above an empty chair. She could not entirely stop looking at it even now that she was in a different room. The thing she had written as *atmospheric anomaly* had watched her walk away.
@@ -131,13 +201,13 @@ One girl near the back had a shoe untied. She looked at Yemina. Then she looked 
 
 Yemina kept walking. The girl had not looked at the principal's office. She had not looked at the ceiling or the emergency exit. She had looked at room 214 the way you look at something you have been specifically told not to look at, in the split second before you remember.
 
-[Beat 12]
+[Beat 14]
 She sat in the gray car. The Pilsen Veil moved around her the way neighborhoods moved at lunch — sidewalk foot traffic, delivery carts on the painted lane, a repair drone circling a building at 18th Street that had been circling it for three weeks and was either mapping it exhaustively or stuck in a loop nobody had gotten around to checking.
 
 She opened the three case files on her neuretics.
 
 Kito Bramley, 9. Disappeared Tuesday.
-Amara Osei, 7. Disappeared eleven days ago, different school, three kilometers north.
+Daria Drew, 7. Disappeared eleven days ago, different school, three kilometers north.
 Tomás Reyes, 11. Disappeared first, twenty-two days ago, a school in Back of the Yards.
 
 Three different schools. Three different corp contracts. Each of their facilities teams had one missing child in their system — noise-level, the kind of number that earned a flag and a quarterly review. She was the only node in common, the only contractor whose cross-corp clearance ran across all three territories. Nobody had connected the cases because nobody else could see all three.
@@ -150,7 +220,7 @@ All three had a neuretics burnout flag in their pediatric care record, filed in 
 
 She had been about to close the files when she noticed the assignment timestamps.
 
-Tomás Reyes, case 45: assigned to Fola, Yemina, District 14-South clearance, twenty-three days ago — the day before his disappearance had been filed. Amara Osei, case 46: assigned twelve days ago, the day before hers. Kito Bramley, case 47: assigned yesterday at 10:14 AM, four hours before Dr. Achebe's office called her. Before the case formally existed.
+Tomás Reyes, case 45: assigned to Fola, Yemina, District 14-South clearance, twenty-three days ago — the day before his disappearance had been filed. Daria Drew, case 46: assigned twelve days ago, the day before hers. Kito Bramley, case 47: assigned yesterday at 10:14 AM, four hours before Dr. Achebe's office called her. Before the case formally existed.
 
 She checked the sender field on Kito's assignment. She expected a supervisor's initials. A corp admin flag. Anything.
 
@@ -158,7 +228,7 @@ The field was blank. Not redacted. Not pending. An assignment sent to her accoun
 
 She sat with that. Outside, the repair drone made another circuit of the building at 18th Street.
 
-[Beat 13]
+[Beat 15]
 She typed a search query into the cross-corp case registry. *neuretics burnout flag, pediatric, prior to—*
 
 The query autocompleted.
@@ -177,7 +247,7 @@ She sat with her hands in her lap.
 
 Then she pressed enter.
 
-[Beat 14]
+[Beat 16]
 Forty-seven results.
 
 Twenty-two months of them. Schools across GLMZ — Bridgeport, Wicker Park, Rogers Park, a cluster in the West Lawn Line, two in Evanston that the map said barely qualified. Children between six and twelve. All of them with that flag. All of them gone.
@@ -202,7 +272,7 @@ She looked at the creation timestamp on her own entry. Not the onset date. The d
 
 Twenty-two months ago. The same date as case 1. The same day, she understood now, that the first child on this list had disappeared — the day the list had started.
 
-[Beat 15]
+[Beat 17]
 Kito Bramley's guardian was his grandmother, a woman named Chinwe Bramley, seventy-three years old, who opened the door to her apartment on Loomis Street in a house dress and reading glasses and did not appear to have slept. She had a photograph of Kito on the small table in the entryway — school picture, missing a front tooth, grinning at something off-camera. She had put a cup of tea beside it. The tea was cold.
 
 "He told me three days before he went," Mrs. Bramley said. They were sitting at her kitchen table. She had given Yemina tea she didn't expect to drink. "He said there was a sound in his head. Not words. Just a sound. He said it was like a song, but a song nobody wrote." She folded her hands. "He wasn't frightened. He was interested. Kito was always interested in things he couldn't explain."
@@ -211,7 +281,7 @@ Yemina asked if he'd been to the pediatric clinic recently. Mrs. Bramley got the
 
 Monitor quarterly.
 
-[Beat 16]
+[Beat 18]
 The Osei family lived four kilometers north, in a building that was trying to be gentrified and not succeeding. Lech Szymborski answered the door with the posture of a man who had been answering doors for eleven days and had an argument ready for each kind of person behind them. He was Polish, forty, with a jaw that had been clenched so long it had developed muscle definition. When Yemina showed her credentials he said "Another one" and opened the door wider.
 
 His wife, Abena Osei, was in the kitchen. She was Ghanaian, thirty-eight, and had the quality of stillness that sometimes looks like shock from outside. She poured Yemina tea without asking.
@@ -222,7 +292,7 @@ Lech asked, from the doorway, whether municipal attendance was going to fix this
 
 Yemina wrote in her notebook. She did not answer the question because there was only one honest answer and this was not the moment for it.
 
-[Beat 17]
+[Beat 19]
 She pulled all forty-seven pediatric care records that afternoon, sitting in the gray car because there was nowhere else to go, the case system open on one neuretics layer and the records on another and her notebook open on her knee.
 
 The burnout flags were there in every record. But the neuretics activity logs beneath the summaries — the raw data the physician's note abstracted away — showed something the summaries didn't. Activity spikes in a specific frequency band: 17 to 19 Hz, infrasonic, well below normal neuretics operational range.
@@ -243,7 +313,7 @@ The intruder sealed the channel. Not gradually — closed, the way a shutter clo
 
 She sat very still. She had been examined. She had the separate impression, less clear but just as certain, that the examination had been interrupted before it finished.
 
-[Beat 18]
+[Beat 20]
 She spent twenty minutes searching with two neuretics layers open — her own contractor-grade tools on one, the intruder's extensions on the other. The published literature on coherent thin-spot emissions was thin: a fringe position within a fringe field, most researchers having moved on or been absorbed. Almost nothing.
 
 One paper remained attached to a name: Dr. Priya Selvamani. *Coherent Low-Frequency Emission Signatures at Class-3 Resonance Zone Anomalies: A Preliminary Survey.* 2024, second-tier journal. Cited four times, all negatively. Institutional affiliation lapsed 2025.
@@ -252,18 +322,7 @@ The intruder had already highlighted the current address. An apartment in Back o
 
 Yemina put the gray car in gear.
 
-[Beat 19]
-The apartment building on 47th Street had a buzzer system that worked on every button except the one for apartment 3F. Yemina pressed it three times on principle, then pressed 3G. A man's voice said "What" and she said "District truancy, I need to reach your neighbor in 3F" and the man said "She's in there, just knock hard" and buzzed her in without further discussion.
-
-She knocked hard. Several seconds of movement inside — the quality of movement that suggested navigating a room where the floor was not fully visible. The door opened.
-
-Dr. Priya Selvamani was forty-four or so, Tamil-Nigerian, five feet three inches, wearing a sleep shirt that had not been slept in recently enough to need changing. She had the eyes of someone who had been reading data for eighteen consecutive hours and had found something that made sleep seem beside the point. Behind her, the apartment was entirely obscured by equipment and printouts. A frequency modulator sat on the kitchen table beside an empty coffee press, repaired in three places with packing tape.
-
-She looked at Yemina's credentials.
-
-"I left six messages with the district liaison over eighteen months," she said. "None returned." A pause. "Finally."
-
-[Beat 20]
+[Beat 21]
 "Sit somewhere," Dr. Selvamani said, which was easier said than done. Yemina moved a stack of printouts from a chair and sat. The printouts were twenty iterations of the same frequency chart, each annotated differently.
 
 "17 to 19 Hz," Yemina said. "I found it in the pediatric records — the activity logs under the burnout summaries. Something in my neuretics highlighted it while I was reading."
@@ -278,9 +337,52 @@ Selvamani had the look of a person who had been preparing a lecture for two year
 
 Selvamani stopped. "I know that." The flatness of it — she'd been saying it to herself for two years and the saying had worn grooves. "I know."
 
+She set the chart down and picked up a second one. "There are two signatures," she said. "I've been measuring both for sixteen months." She placed the two charts side by side. "The first is what I call the resonance echo — the tuning mark. It stays at the point of calibration: above the seat, the desk, wherever the child spent the most time receiving the signal. Low intensity but persistent. Weeks to decay, sometimes longer." She tapped the second chart. "The second signature is the transit shadow. Higher intensity, faster decay — days, not weeks. Always in an unmonitored transitional space. A bathroom. A stairwell alcove. A waiting chair outside a closed door. Somewhere the child was briefly alone."
+
+She looked at Yemina. "The threshold contact requires neuretic isolation. Children in a classroom are buffered by the interference of other active neuretics around them. A child alone in a bathroom isn't."
+
+Yemina thought about the faculty annex off the north corridor. The colder reading. The faster decay.
+
+"They don't vanish from their seats," she said.
+
+"They vanish from the transitional space," Selvamani said. "What Ren Vasquez saw above the empty chair wasn't the transit event. It was the echo — the residue of calibration. The transit happened in a different room entirely. Somewhere quiet." She looked at the two charts. "Most witnesses only see the echo. The echo is what's visible after the students come back, after lunch, after anyone notices the child is gone. The shadow is gone from the bathroom in days. Nobody sweeps the bathroom."
+
+[Beat 22]
+"Sit somewhere," Dr. Selvamani said, which was easier said than done. Yemina moved a stack of printouts from a chair and sat. The printouts were twenty iterations of the same frequency chart, each annotated differently.
+
+"17 to 19 Hz," Yemina said. "I found it in the pediatric records — the activity logs under the burnout summaries. Something in my neuretics highlighted it while I was reading."
+
+Selvamani stopped. "Something in your neuretics."
+
+"Not me. It's been there since at least yesterday morning." She watched Selvamani absorb that. "It autocompleted a search that pointed back to the 35th-and-Halsted thin spot. I know that's the source. What I don't know is what happens to the children after the frequency reaches them."
+
+Selvamani had the look of a person who had been preparing a lecture for two years and was now deciding which half to cut. She picked up one of the frequency charts. "It tunes them," she said. "Juvenile neuretics is in active growth — hasn't settled into a primary frequency band. The 17-to-19 Hz emission synchronizes it to the same frequency as the thin spot. The children become receptive. Like a door that's been keyed to a specific lock."
+
+"Forty-seven children are missing," Yemina said. "'Receptive' is doing a lot of work."
+
+Selvamani stopped. "I know that." The flatness of it — she'd been saying it to herself for two years and the saying had worn grooves. "I know."
+
+Yemina opened her notebook. "In every case I've investigated, I've found two traces. One at their usual seat — wherever they spent the most time at school. One in a transitional space: a bathroom stall, a supply closet, once a waiting chair outside a counselor's office. The first is weaker. The second is stronger but decays faster."
+
+Selvamani was very still.
+
+"I've been calling them echoes and shadows in my notes," Yemina said. "I don't know if that's the right terminology."
+
+"It is," Selvamani said. She said it like something she hadn't expected to say. "The echo is where the signal found them — where it settled into their neuretics and stayed. The shadow is where they crossed." She pulled a different chart from the nearest stack without looking at it. "I hypothesized the two-trace signature three years ago. I've never had enough cases to confirm it." A pause. "How many children have both?"
+
+"All forty-seven," Yemina said.
+
+Selvamani set the chart down. She put her hands flat on the table. She looked at them for a moment.
+
+"Then it's consistent," she said. "The echo tells you who was tuned. The shadow tells you where they stepped through." She looked up. "The shadow is always in an isolated space because the bleed can't open cleanly with competing neuretics nearby. It needs thirty seconds of a child alone. That's enough."
+
+"And nobody notices," Yemina said.
+
+Selvamani looked at her. "No," she said. "Nobody notices."
+
 ## Chapter 3
 
-[Beat 21]
+[Beat 23]
 "Why children," Yemina asked.
 
 "It isn't choosing children." Selvamani didn't look up from the frequency chart she was annotating. "That's the part nobody wants to hear. It's broadcasting at 17 to 19 Hz — and adult neuretics have been in use too long to receive cleanly. Children's are still calibrating. The growth window closes around twelve." She set the chart down. "Whatever is on the other side of the 35th-and-Halsted threshold is broadcasting to the whole city. The children aren't special. They're just the only ones the frequency can reach."
@@ -303,7 +405,7 @@ Selvamani picked up one of the printouts. She held it for a moment without looki
 
 "The families use the same words," she said. "Different languages. Same description." She looked at Yemina. "I've been trying to get anyone to listen to that for two years."
 
-[Beat 22]
+[Beat 24]
 "Where are they," Yemina said.
 
 "I don't know."
@@ -320,7 +422,7 @@ At 35th and Halsted, a different marker. Larger. Red.
 
 "When the first child disappeared."
 
-[Beat 23]
+[Beat 25]
 She looked at the map for a long time. She overlaid the disappearance locations against it — her neuretics pulled them from the case file, placed them as points. Twenty-two school sites across different districts, all within two kilometers of a minor bleed.
 
 But if you drew a line from each minor bleed toward 35th and Halsted, the lines converged. They didn't branch. They had a center of gravity.
@@ -337,7 +439,7 @@ Yemina did not say anything. Fifteen years of cross-corp. The provisioning she h
 
 The intruder had not found a gap. She had just never been closed.
 
-[Beat 24]
+[Beat 26]
 Yemina called the Resonance Monitoring Authority from the front steps of the building. The system asked for a corp credential before routing. She gave her contractor registration. There was a two-second pause that probably meant the system had flagged her as non-employee and was deciding where to send that. She was sent somewhere. She selected *mass casualty event, resonance proximity.* She was transferred. She selected *missing persons, confirmed bleed transit.* She was transferred again. She selected *urgent.* The system noted her selection and placed her in a queue. The hold music was a recording of a man explaining that field response teams required a minimum 72-hour advance notice for non-emergency site visits, followed by a recording of a woman explaining how to determine whether your event qualified as an emergency.
 
 She stayed on hold for twelve minutes. When the voicemail prompt came she said: her name, contractor registration, case numbers across eight corp contracts, address, count. Forty-seven children. She spoke clearly and without inflection because inflection gave a listener somewhere to be skeptical.
@@ -348,7 +450,7 @@ She ended the call. Below the steps, a child was chalking something on the sidew
 
 She went back inside.
 
-[Beat 25]
+[Beat 27]
 That night she sat in her apartment and did not sleep. It wasn't dramatic — just the standard consequence of an open case and neuretics that wasn't entirely hers anymore.
 
 At 2:14 in the morning, the intruder sent her something new. Not a search query. Not a highlighted section of a care record. An image: the 35th-and-Halsted bleed as seen from the intersection — the air doing its wrong thing above the concrete — and overlaid on it, white on gray, a number.
@@ -363,7 +465,7 @@ She wrote the number in her notebook. She circled it. She looked at the ceiling 
 
 Then she called Ren Vasquez.
 
-[Beat 26]
+[Beat 28]
 He picked up on the second ring.
 
 She had not worked out what she was going to say. She was going to say *I think I know where the children are* and *I need someone who can feel the threshold before we're standing in it.* She had the words arranged.
@@ -374,7 +476,7 @@ She was quiet for a moment. "How."
 
 "I've been feeling the pull for three days. It's not the classroom anymore." A pause. "It's southwest. Toward 35th."
 
-She told him what she'd found. He listened without interrupting, which told her he'd already worked most of it out from the feeling alone — he was listening to confirm, not to learn. When she finished he said: "When."
+She told him what she'd found. He listened without interrupting, which told her he'd already worked most of it out from the feeling alone — he was listening to confirm, not to learn. When she finished he asked: "When."
 
 "Tomorrow morning. Early."
 
@@ -384,7 +486,7 @@ She started to say something about risk. She stopped. He was twenty-eight years 
 
 "Bring warm clothes," Yemina said. "I don't know how the cold works in there."
 
-[Beat 27]
+[Beat 29]
 She called Selvamani after she hung up with Ren. Selvamani said "I'm already packing the modulator" before the reason for the call had been stated.
 
 They met at 5:45 AM on the corner of 35th and Normal — a block from the bleed, close enough to feel the edge of it. Ren was there first, standing with his hands in his coat pockets, the tremor visible even from across the street. He had brought coffee in a metal thermos that he shared without being asked.
@@ -401,7 +503,7 @@ Selvamani nodded and kept calibrating. "There's one more thing. The threshold re
 
 Ren took his hands out of his pockets. He looked at them. The tremor was there. "I know," he said.
 
-[Beat 28]
+[Beat 30]
 They walked the last block at 6:10 AM in the particular silence of a city that had stopped being asleep but wasn't yet awake — the light gray-blue, the streets carrying the sounds of early freight and transit shifts changing over. Selvamani had the modulator case over one shoulder and a portable sensor in her other hand. Ren walked slightly ahead without meaning to.
 
 The 35th-and-Halsted bleed was visible from half a block away.
@@ -414,7 +516,7 @@ She had seen three in person. This one was larger than that. The whole intersect
 
 She looked at both of them. "It's broadcasting right now."
 
-[Beat 29]
+[Beat 31]
 Selvamani placed the modulator at the edge of the anomaly — at the point where the air began doing its wrong thing — and switched it on. The effect was not dramatic. The column of wrong light didn't resolve into a door or a frame. What happened was subtler: the pressure behind Yemina's eyes diminished by half, and the frequency she felt in her teeth settled into something regular, like a held note rather than a fluctuation.
 
 "That's stable," Selvamani said, watching the sensor. "Four minutes from the point of entry. Maybe four. I'm staying with the modulator — if I leave it running without a hand on it, the calibration drifts." She looked at Yemina. "Find them fast."
@@ -423,7 +525,7 @@ Yemina looked at the threshold. Then at Ren.
 
 "I'll go first," he said. He was already looking at it the way you look at something you've been moving toward for three weeks.
 
-[Beat 30]
+[Beat 32]
 Ren walked through the threshold at 6:14 AM with a slight turn of the shoulder, the way you go through a door you're not sure is fully open, and then he was on the other side.
 
 Yemina followed.
@@ -448,7 +550,7 @@ Then she was standing in the place between the frequencies.
 
 ## Chapter 4
 
-[Beat 31]
+[Beat 33]
 It had no geometry she could hold.
 
 The light came from no direction but cast consistent shadows — all of them pointing the same way, as though something just out of frame held the position of an absent sun. Her neuretics immediately filed a cascade of location errors and then went quiet in a way that felt like surrender.
@@ -459,7 +561,7 @@ Forty-seven of them, in a space that accommodated them without any visible walls
 
 They were not frightened. They had been waiting.
 
-[Beat 32]
+[Beat 34]
 Kito Bramley was nine and missing his front tooth and sitting cross-legged in whatever passed for the near part of this space. He looked up at Yemina with the expression of a child who has been somewhere strange long enough to have stopped being scared and started being bored.
 
 "You're not from the school," he said.
@@ -468,11 +570,11 @@ Kito Bramley was nine and missing his front tooth and sitting cross-legged in wh
 
 He shook his head and then amended: "My ear hurts a little. From the sound." He touched the side of his head. "Is my grandma here?"
 
-"She's coming. She'll be here." She looked past him at the other forty-six children. A girl nearby — Amara, seven, she recognized her from the case photo — was teaching a hand-clap pattern to three smaller children, her voice patient and counting precisely. She hadn't looked up when Yemina came in. She had been keeping order without being asked. "Is anyone else hurt?"
+"She's coming. She'll be here." She looked past him at the other forty-six children. A girl nearby — Daria, seven, she recognized her from the case photo — was teaching a hand-clap pattern to three smaller children, her voice patient and counting precisely. She hadn't looked up when Yemina came in. She had been keeping order without being asked. "Is anyone else hurt?"
 
-Kito looked around with the gravity of a child who has accepted a responsibility. "Tomás hurt his knee before he came. He says it's better now." A pause. He looked down at his hands. "My watch kept changing. Amara said don't look at it."
+Kito looked around with the gravity of a child who has accepted a responsibility. "Tomás hurt his knee before he came. He says it's better now." A pause. He looked down at his hands. "My watch kept changing. Daria said don't look at it."
 
-[Beat 33]
+[Beat 35]
 She stood and looked at the forty-seven children in the space that had no walls. She counted them. Then counted them again.
 
 "Who brought you here," she asked.
@@ -485,7 +587,7 @@ She waited.
 
 "And the second thing."
 
-He glanced at the girl near the back — not Amara, someone she didn't know, older, maybe eleven — and the girl gave the same small headshake, that gesture that meant something between them Yemina had arrived too late to decode.
+He glanced at the girl near the back — not Daria, someone she didn't know, older, maybe eleven — and the girl gave the same small headshake, that gesture that meant something between them Yemina had arrived too late to decode.
 
 "Which thing showed my name," Yemina asked.
 
@@ -501,12 +603,12 @@ She filed it.
 
 "Time to go," she said, to all forty-seven of them. "Everyone up. We're going home."
 
-[Beat 34]
+[Beat 36]
 They moved — the forty-seven children moved in the way children move when an adult with authority and no particular cruelty gives them a clear direction: efficiently, with some deviation, organized in the manner of living things that have been in proximity long enough to have worked out their groupings.
 
 Yemina crossed to the threshold and counted heads. Forty-seven. Ren was beside her, his face doing something she couldn't read. Through the threshold she could hear the modulator's carrier tone, low and slightly wrong at the edges.
 
-"How much time," she said.
+"How much time," she asked.
 
 Selvamani's voice, muffled: "Ninety seconds."
 
@@ -516,7 +618,7 @@ She looked at Ren.
 
 He had already looked at the math.
 
-[Beat 35]
+[Beat 37]
 She had one more question and she asked it of Kito quickly, quietly: "It told you it wasn't safe outside. What did that mean?"
 
 Kito looked at the column of wrong light and the ordinary gray-blue morning visible through it. "It showed me numbers," he said. "I didn't understand them." He said it simply, without weight. "I believed it anyway."
@@ -527,7 +629,7 @@ She looked at the ordinary sky. The freight sounds. The transit shifts. The city
 
 He went.
 
-[Beat 36]
+[Beat 38]
 The children started coming through the threshold. Not a rush — they moved with a strange orderliness, single-file in places, in small clusters in others, the threshold admitting them at a rate of roughly one every four seconds.
 
 Yemina counted them through. Sixteen. Seventeen. Twenty-one.
@@ -562,7 +664,7 @@ Thirty-eight. Forty-one. Forty-five.
 
 The last two came through together, hand in hand, a boy of six and a girl of nine who had apparently decided during their time in the space between frequencies that they were going to be friends now. They came out blinking into the morning light and immediately separated to look for their respective families.
 
-[Beat 37]
+[Beat 39]
 She looked back for Ren. He was standing at the threshold edge with his eyes closed and his hands flat at his sides.
 
 He was saying something — Korean, or Spanish, or something that moved between them at low volume. The same phrase, recurring, the way a person repeats something to keep the body present when the body wants to leave.
@@ -573,7 +675,7 @@ He was the last thing between the threshold and closure. He had known this since
 
 She grabbed his arm and pulled hard.
 
-[Beat 38]
+[Beat 40]
 They came through the threshold together in a stumble — Yemina's shoulder hitting the outside air first, Ren's weight behind her, both of them catching themselves on the street side. The morning air was cold and ordinary and full of the smell of the freight route two blocks over.
 
 The threshold closed. The wrong shape in the air simply ceased to be the wrong shape. The column of light folded into itself and was gone, and then the intersection was just an intersection — four cardinal points, morning sky, a street doing what streets do. The pressure behind Yemina's eyes lifted all the way.
@@ -588,7 +690,7 @@ She crouched next to him. "Hey."
 
 He turned his head. He did it carefully, the way you move when you're not certain your head will follow.
 
-"What time is it," he said.
+"What time is it," he asked.
 
 "6:22."
 
@@ -602,7 +704,7 @@ He tried. She caught him.
 
 She knew what the registry flag would say. She knew what *psionic event, cortical-coherence override* meant for a person who had managed to stay off every list for twenty-eight years. She didn't tell him he was wrong when he said it was the right cost. It was. That didn't make it small.
 
-[Beat 39]
+[Beat 41]
 The next hours belonged to the families, and to the emergency coordinators Selvamani had called, and to the Resonance Monitoring Authority field team that arrived at 8:40 AM — fifty-five minutes after the threshold had closed — with equipment designed to assess Class-3 events and nothing in their operational manual covering forty-seven children standing on a street corner blinking at the morning.
 
 The families came in waves. First the ones close enough to walk, then the ones who'd been in cars since the text went out, and at the end the ones who'd been in transit from farther out and arrived still moving fast, still scanning faces. A father Yemina didn't know spent forty seconds staring at a boy who was not his son before the boy said "She's over there" and pointed, and the man walked away without speaking because there was nothing to say that would be correct.
@@ -617,7 +719,7 @@ Yemina watched this for five seconds.
 
 She had left one section of the report blank. She went back to it.
 
-[Beat 40]
+[Beat 42]
 She sat in the gray car at 10:30 AM. The caseload for District 14-South showed in her neuretics — contractor grade, slightly delayed, same as always.
 
 The three disappearance cases were gone. In their place, forty-seven entries marked *closed, subject located.* The notation field read *bleed transit event, Class-3 resonance, 35th-and-Halsted.* Someone in the registry had already updated them — someone efficient, someone she would probably never know.

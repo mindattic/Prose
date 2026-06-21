@@ -438,6 +438,16 @@ if (args.Contains("--run-corpus"))
 }
 
 // CLI mode: expand planned beats in a strand to prose (headless ✨ for each beat).
+//   ss --edit-beat --slug <slug> (--beat-number N | --insert-after N) --file <path>
+if (args.Contains("--edit-beat"))
+{
+    var cliBuilder = WebApplication.CreateBuilder(args);
+    cliBuilder.Services.AddStreetSamuraiServices();
+    var cliApp = cliBuilder.Build();
+    Environment.ExitCode = await EditBeatCli.RunAsync(args, cliApp.Services);
+    return;
+}
+
 //   ss --expand-beat (--slug <slug> | --id <guid>) [--beat <beatId>] [--force]
 if (args.Contains("--expand-beat"))
 {
