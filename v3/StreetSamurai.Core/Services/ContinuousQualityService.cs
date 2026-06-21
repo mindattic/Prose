@@ -30,8 +30,18 @@ public class ContinuousQualityService
 
     private readonly SemaphoreSlim gate = new(MaxConcurrent, MaxConcurrent);
     private readonly ConcurrentDictionary<string, byte> inFlight = new();
+    private readonly SettingsService settingsSvc;
 
-    public bool Enabled { get; set; } = true;
+    /// <summary>
+    /// Soft on/off switch. When false, chapter-save hooks return immediately
+    /// without queuing any LLM work. Reads live from <see cref="SettingsService.ReviewAutoRunEnabled"/>
+    /// so a settings change takes effect instantly without a restart.
+    /// </summary>
+    public bool Enabled
+    {
+        get => settingsSvc.ReviewAutoRunEnabled;
+        set => settingsSvc.ReviewAutoRunEnabled = value;
+    }
 
     public ContinuousQualityService(
         ILlmService llm,
@@ -40,6 +50,7 @@ public class ContinuousQualityService
         EmbeddingService embeddings,
         FindingsService findings,
         IChapterRepository chapters,
+        SettingsService settings,
         ILogger<ContinuousQualityService> log)
     {
         this.llm        = llm;
@@ -47,6 +58,7 @@ public class ContinuousQualityService
         this.worldState = worldState;
         this.embeddings = embeddings;
         this.findings   = findings;
+        this.settingsSvc = settings;
         this.log        = log;
 
         chapters.OnChapterSaved += OnChapterSaved;

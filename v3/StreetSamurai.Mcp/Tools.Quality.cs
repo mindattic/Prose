@@ -37,6 +37,7 @@ public class QualityTools
     private readonly StrandReviewService reviewer;
     private readonly CanonContradictionService canonChecker;
     private readonly SemanticFidelityService fidelity;
+    private readonly StructuralDiagnosticService structural;
     private readonly IDbContextFactory<StreetSamuraiDbContext> dbFactory;
 
     public QualityTools(
@@ -49,6 +50,7 @@ public class QualityTools
         StrandReviewService reviewer,
         CanonContradictionService canonChecker,
         SemanticFidelityService fidelity,
+        StructuralDiagnosticService structural,
         IDbContextFactory<StreetSamuraiDbContext> dbFactory)
     {
         this.consistency = consistency;
@@ -60,6 +62,7 @@ public class QualityTools
         this.reviewer = reviewer;
         this.canonChecker = canonChecker;
         this.fidelity = fidelity;
+        this.structural = structural;
         this.dbFactory = dbFactory;
     }
 
@@ -104,12 +107,13 @@ public class QualityTools
         return JsonSerializer.Serialize(new { book_id = bookId, finding_count = report.Count, findings = report }, CanonTools.JsonOpts);
     }
 
-    /// <summary>Run a sampled Legion review panel against a strand. Casts score-only ballots (cheap) and a few full prose upgrades. Returns the pooled mean, SD, 95% CI, per-beat heat map, clustered weakness tags, and the Pareto/contested/seam report. This is the primary "did my edit move the needle?" tool.</summary>
-    [McpServerTool, Description("Run the sampled Legion review panel against a strand (the same panel as `ss --review-strand`). Stratified personas cast score-only ballots (each ballot = overall score 0-100 + flow score + per-beat 1-5 + one weakness tag) and the most informative few are upgraded to full prose. Returns: pooled mean score, SD, 95% CI, cluster count, content fingerprint, the full Pareto/contested/seam Markdown report, and a synopsis. GOTCHA: do not edit beats while a review is running — results fingerprint the text at start time. Alias: also accepts strand id (GUID) for the strandIdOrSlug param.")]
+    /// <summary>Run a sampled Legion review panel against a strand. Automatically runs structural pre-flight first — blocking failures (missing antagonist cost, passive protagonist, etc.) halt the review and tell you what to fix. Non-blocking warnings are appended to the report. Casts score-only ballots and a few full prose upgrades. Returns the pooled mean, SD, 95% CI, per-beat heat map, clustered weakness tags, and the Pareto/contested/seam report.</summary>
+    [McpServerTool, Description("Run the sampled Legion review panel against a strand. STRUCTURAL PRE-FLIGHT runs first: if blocking failures are found (missing antagonist cost, passive protagonist, purely-stated stakes, >70% exposition), the review is blocked and returns the diagnosis instead of ballots — fix the structure first. Non-blocking warnings are always appended to the report. Stratified personas cast score-only ballots then the most informative are upgraded to full prose. Returns: blocked (bool), mean_score, SD, CI, report_markdown (includes structural findings), synopsis. GOTCHA: do not edit beats while a review is running. Alias: also accepts strand id (GUID) for the strandIdOrSlug param.")]
     public async Task<string> ReviewStrand(
         [Description("Strand id (GUID) or slug.")] string strandIdOrSlug,
         [Description("Number of score-only ballots to cast. 0 = use the ReviewBallots setting (default 20).")] int ballots = 0,
-        [Description("Number of full prose reviews to write (upgraded from ballots). 0 = use the ReviewProse setting.")] int prose = 0)
+        [Description("Number of full prose reviews to write (upgraded from ballots). 0 = use the ReviewProse setting.")] int prose = 0,
+        [Description("Set true to skip structural pre-flight and run ballots unconditionally. Use only when you have already reviewed and accepted the structural findings.")] bool skipDiagnosis = false)
     {
         await using var db = await dbFactory.CreateDbContextAsync();
         Guid strandId;
@@ -122,7 +126,8 @@ public class QualityTools
             strandId = s.Id;
         }
 
-        var result = await reviewer.RunSampledReviewAsync(strandId, ballots, prose < 0 ? 0 : prose);
+        var result = await reviewer.RunSampledReviewAsync(strandId, ballots, prose < 0 ? 0 : prose,
+            skipDiagnosis: skipDiagnosis);
 
         string? synopsis = null;
         if (result.BallotsSaved > 0)
@@ -137,6 +142,7 @@ public class QualityTools
 
         return JsonSerializer.Serialize(new
         {
+            blocked           = result.BlockedByStructure,
             ballots_requested = result.Ballots,
             ballots_saved     = result.BallotsSaved,
             prose_added       = result.ProseAdded,
@@ -185,19 +191,59 @@ public class QualityTools
         }, CanonTools.JsonOpts);
     }
 
+    /// <summary>Pre-flight structural analysis before running the review panel. Runs 12 targeted checks in parallel (antagonist cost, protagonist behavior change, stakes embodiment, exposition density, character embodiment, pacing gear change, affectation lines, dramatic question, passive protagonist, character function, dialogue subtext, jargon front-loading). Returns Pass/Warn/Fail per check with evidence quoted from the text and a concrete fix. Blocking failures mean: fix the structure before running 60 ballots — structural issues cap scores regardless of prose quality.</summary>
+    [McpServerTool, Description("Pre-flight structural analysis before running the review panel. Runs 12 targeted checks in parallel and returns Pass/Warn/Fail for each with evidence (a quote from the text) and a concrete one-action fix. Blocking failures (antagonist cost, protagonist behavior change, stakes embodiment, exposition density) mean the chapter is structurally unsound and will score in the 70s regardless of prose quality. Fix those first, then run review_strand. Accepts strand id (GUID) or slug.")]
+    public async Task<string> DiagnoseStrand(
+        [Description("Strand id (GUID) or slug.")] string strandIdOrSlug)
+    {
+        await using var db = await dbFactory.CreateDbContextAsync();
+        Guid strandId;
+        if (Guid.TryParse(strandIdOrSlug, out var g))
+            strandId = g;
+        else
+        {
+            var s = await db.Strands.AsNoTracking().FirstOrDefaultAsync(x => x.Slug == strandIdOrSlug);
+            if (s == null) return JsonSerializer.Serialize(new { error = "strand_not_found", strandIdOrSlug }, CanonTools.JsonOpts);
+            strandId = s.Id;
+        }
+
+        var result = await structural.DiagnoseStrandAsync(strandId);
+        return JsonSerializer.Serialize(new
+        {
+            strand_id    = result.StrandId,
+            slug         = result.Slug,
+            title        = result.Title,
+            pass         = result.PassCount,
+            warn         = result.WarnCount,
+            fail         = result.FailCount,
+            blocking     = result.HasBlockingFailures,
+            recommendation = result.Recommendation,
+            checks       = result.Checks.Select(c => new
+            {
+                name        = c.Name,
+                description = c.Description,
+                result      = c.Result.ToString().ToLower(),
+                is_blocking = c.IsBlocking,
+                evidence    = c.Evidence,
+                fix         = c.Fix,
+            }),
+        }, CanonTools.JsonOpts);
+    }
+
     /// <summary>Return the current review-voting configuration (ballots, prose, panel, readers, max_concurrency, judge_provider, allowed_providers).</summary>
-    [McpServerTool, Description("Return the current review-voting configuration: how many score-ballots and prose upgrades a sampled run casts, the persona panel depth, default reader count, max parallel ballot slots, judge provider, and the comma-separated list of allowed providers. Use update_review_settings to change any value.")]
+    [McpServerTool, Description("Return the current review-voting configuration: how many score-ballots and prose upgrades a sampled run casts, the persona panel depth, default reader count, max parallel ballot slots, judge provider, the comma-separated list of allowed providers, and whether the continuous auto-review monitor is enabled. Use update_review_settings to change any value.")]
     public string GetReviewSettings()
     {
         return JsonSerializer.Serialize(new
         {
-            ballots          = settings.ReviewBallots,
-            prose            = settings.ReviewProse,
-            panel            = settings.ReviewPanel,
-            readers          = settings.ReviewReaders,
-            max_concurrency  = settings.ReviewMaxConcurrency,
-            judge_provider   = settings.ReviewJudgeProvider,
-            allowed_providers = settings.ReviewAllowedProviders,
+            ballots               = settings.ReviewBallots,
+            prose                 = settings.ReviewProse,
+            panel                 = settings.ReviewPanel,
+            readers               = settings.ReviewReaders,
+            max_concurrency       = settings.ReviewMaxConcurrency,
+            judge_provider        = settings.ReviewJudgeProvider,
+            allowed_providers     = settings.ReviewAllowedProviders,
+            review_auto_run_enabled = settings.ReviewAutoRunEnabled,
         }, CanonTools.JsonOpts);
     }
 
@@ -339,7 +385,7 @@ public class QualityTools
     }
 
     /// <summary>Update one or more review-voting settings. Omit any field to leave it unchanged. Changes persist immediately and take effect on the next review run.</summary>
-    [McpServerTool, Description("Update review-voting settings. Pass only the fields you want to change — omit the rest. ballots: score-only ballot count (≥1). prose: full prose upgrades per run (≥0). panel: persona pool depth (≥1). readers: default reader count (≥1). max_concurrency: parallel ballot slots 1–50. judge_provider: provider that synthesizes the summary (claude|openai|gemini|deepseek). allowed_providers: comma-separated provider whitelist (e.g. 'claude,openai'); empty = all active providers allowed.")]
+    [McpServerTool, Description("Update review-voting settings. Pass only the fields you want to change — omit the rest. ballots: score-only ballot count (≥1). prose: full prose upgrades per run (≥0). panel: persona pool depth (≥1). readers: default reader count (≥1). max_concurrency: parallel ballot slots 1–50. judge_provider: provider that synthesizes the summary (claude|openai|gemini|deepseek). allowed_providers: comma-separated provider whitelist (e.g. 'claude,openai'); empty = all active providers allowed. review_auto_run_enabled: set false to disable the continuous auto-review monitor (you call reviews manually); set true to re-enable.")]
     public string UpdateReviewSettings(
         [Description("Score-only ballot count (≥1). Omit to leave unchanged.")] int? ballots = null,
         [Description("Full prose upgrades per run (≥0). Omit to leave unchanged.")] int? prose = null,
@@ -347,15 +393,17 @@ public class QualityTools
         [Description("Default reader count (≥1). Omit to leave unchanged.")] int? readers = null,
         [Description("Parallel ballot slots, 1–50. Omit to leave unchanged.")] int? maxConcurrency = null,
         [Description("Provider that synthesizes the summary. Omit to leave unchanged.")] string? judgeProvider = null,
-        [Description("Comma-separated provider whitelist (e.g. 'claude,openai'). Empty string = all active. Omit to leave unchanged.")] string? allowedProviders = null)
+        [Description("Comma-separated provider whitelist (e.g. 'claude,openai'). Empty string = all active. Omit to leave unchanged.")] string? allowedProviders = null,
+        [Description("False = disable the continuous auto-review monitor (call reviews manually). True = re-enable. Omit to leave unchanged.")] bool? reviewAutoRunEnabled = null)
     {
-        if (ballots.HasValue)         settings.ReviewBallots         = ballots.Value;
-        if (prose.HasValue)           settings.ReviewProse           = prose.Value;
-        if (panel.HasValue)           settings.ReviewPanel           = panel.Value;
-        if (readers.HasValue)         settings.ReviewReaders         = readers.Value;
-        if (maxConcurrency.HasValue)  settings.ReviewMaxConcurrency  = maxConcurrency.Value;
-        if (judgeProvider != null)    settings.ReviewJudgeProvider   = judgeProvider;
-        if (allowedProviders != null) settings.ReviewAllowedProviders = allowedProviders;
+        if (ballots.HasValue)              settings.ReviewBallots          = ballots.Value;
+        if (prose.HasValue)                settings.ReviewProse            = prose.Value;
+        if (panel.HasValue)                settings.ReviewPanel            = panel.Value;
+        if (readers.HasValue)              settings.ReviewReaders          = readers.Value;
+        if (maxConcurrency.HasValue)       settings.ReviewMaxConcurrency   = maxConcurrency.Value;
+        if (judgeProvider != null)         settings.ReviewJudgeProvider    = judgeProvider;
+        if (allowedProviders != null)      settings.ReviewAllowedProviders = allowedProviders;
+        if (reviewAutoRunEnabled.HasValue) settings.ReviewAutoRunEnabled   = reviewAutoRunEnabled.Value;
         return GetReviewSettings();
     }
 }

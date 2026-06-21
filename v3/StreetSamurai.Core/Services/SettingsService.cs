@@ -427,6 +427,8 @@ public class SettingsService : IDisposable
     public string ReviewAllowedProviders { get => data.ReviewAllowedProviders; set { data.ReviewAllowedProviders = value; ScheduleSave(); } }
     /// <summary>Maximum simultaneous LLM calls during a review run.</summary>
     public int ReviewMaxConcurrency { get => data.ReviewMaxConcurrency; set { data.ReviewMaxConcurrency = Math.Max(1, Math.Min(50, value)); ScheduleSave(); } }
+    /// <summary>When false, ContinuousQualityService does not fire automatically on beat save. Reviews must be called manually.</summary>
+    public bool ReviewAutoRunEnabled { get => data.ReviewAutoRunEnabled; set { data.ReviewAutoRunEnabled = value; ScheduleSave(); } }
 
     // SMTP — outbound email for password reset codes
     public string SmtpHost { get => Env("SS_SMTP_HOST", data.SmtpHost); set { data.SmtpHost = value; ScheduleSave(); } }
@@ -699,5 +701,7 @@ public class SettingsService : IDisposable
         public string ReviewJudgeProvider { get; set; } = "claude";
         public string ReviewAllowedProviders { get; set; } = "claude,openai,gemini,deepseek";
         public int ReviewMaxConcurrency { get; set; } = 10;
+        /// <summary>When false, ContinuousQualityService does not fire on beat save. Reviews must be called manually.</summary>
+        public bool ReviewAutoRunEnabled { get; set; } = true;
     }
 }

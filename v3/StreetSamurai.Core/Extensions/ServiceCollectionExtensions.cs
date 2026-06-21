@@ -741,6 +741,12 @@ public static class ServiceCollectionExtensions
         // `ss --check-fidelity` and the `check_semantic_fidelity` MCP tool.
         services.AddSingleton<SemanticFidelityService>();
 
+        // Pre-flight structural diagnostics — 12 parallel LLM checks that catch
+        // structural problems (missing antagonist cost, passive protagonist, etc.)
+        // BEFORE the 60-ballot review panel. Available via `ss --diagnose-strand`
+        // and the `diagnose_strand` MCP tool.
+        services.AddSingleton<StructuralDiagnosticService>();
+
         // Narrative-science analysis (Will Storr frameworks): sacred flaw, dramatic
         // question, scene-engagement audit, five-act map, antihero empathy.
         // Available via `ss --narrative-science` and the Tools.NarrativeScience MCP tools.
