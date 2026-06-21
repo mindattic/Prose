@@ -429,6 +429,9 @@ public class SettingsService : IDisposable
     public int ReviewMaxConcurrency { get => data.ReviewMaxConcurrency; set { data.ReviewMaxConcurrency = Math.Max(1, Math.Min(50, value)); ScheduleSave(); } }
     /// <summary>When false, ContinuousQualityService does not fire automatically on beat save. Reviews must be called manually.</summary>
     public bool ReviewAutoRunEnabled { get => data.ReviewAutoRunEnabled; set { data.ReviewAutoRunEnabled = value; ScheduleSave(); } }
+    /// <summary>When true, WorldTickService advances the story clock and writes EntityStateEvents per active character on each tick.
+    /// Off by default — enable deliberately once the rule layer is ready.</summary>
+    public bool WorldTickEnabled { get => data.WorldTickEnabled; set { data.WorldTickEnabled = value; ScheduleSave(); } }
 
     // SMTP — outbound email for password reset codes
     public string SmtpHost { get => Env("SS_SMTP_HOST", data.SmtpHost); set { data.SmtpHost = value; ScheduleSave(); } }
@@ -703,5 +706,7 @@ public class SettingsService : IDisposable
         public int ReviewMaxConcurrency { get; set; } = 10;
         /// <summary>When false, ContinuousQualityService does not fire on beat save. Reviews must be called manually.</summary>
         public bool ReviewAutoRunEnabled { get; set; } = true;
+        /// <summary>When true, WorldTickService is active — advances story clock + writes EntityStateEvents per tick.</summary>
+        public bool WorldTickEnabled { get; set; } = false;
     }
 }

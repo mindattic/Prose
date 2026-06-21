@@ -217,8 +217,10 @@ updated: 2026-06-15
 1. **SS-US-F1-prod ⬜** Ship present work to prod (run `drop_facet_system_*` +
    `create_voice_change_log_*` migrations; `--seed-voice-rules` + `--coverage --backfill` in prod).
    *Acceptance: prod schema has no facet remnants, has `VoiceChangeLog`, `--coverage` clean.* (was F1)
-2. **SS-US-F6 🟡** Coverage → action: `ss --coverage --backfill` reembeds idempotently.
-   *✅ 100% coverage (11,588/11,588; motif 0→100%). Residual: entity↔strand appearance tracking.*
+2. **SS-US-F6 ✅** Coverage → action: `ss --coverage --backfill` reembeds idempotently.
+   *✅ 100% coverage (11,588/11,588; motif 0→100%). Entity↔strand appearance tracking wired:
+   `CoverageService.TypeCoverage.InStrandCount` joins `EntityStateEvents` on `BeatGuid IS NOT NULL`;
+   `/coverage` table shows "In Strands" column; build clean 0 errors; 2026-06-21.*
 3. **SS-US-F7 ✅** In-app review surfaces: `/voice` (VoiceChangeLog approve/reject) + `/coverage`
    pages + `CANON-CONTRADICTION` filter in `/findings`.
    *(verified by `VoiceLog.razor` at `/voice`, `Coverage.razor` at `/coverage`, category chips in
@@ -271,11 +273,12 @@ updated: 2026-06-15
   *(verified by `CanonEngineTests` coverage/parse helpers; end-to-end exercised via
   `ss --review-strand`.)*
 
-- **SS-US-I5 🟡** As the operator, I can close the coverage loop: `ss --coverage` identifies a
+- **SS-US-I5 ✅** As the operator, I can close the coverage loop: `ss --coverage` identifies a
   dead type, I seed entities of that type, `ss --coverage --backfill` re-embeds them, and the next
-  run shows >0% for that type. *✅ 100% coverage on full backfill (11,588/11,588). Residual:
-  entity↔strand appearance tracking not yet wired so new entities seeded mid-run don't show in
-  coverage until the next backfill.*
+  run shows >0% for that type. *✅ 100% coverage on full backfill (11,588/11,588). Entity↔strand
+  appearance tracking wired. (verified by `CoverageService` second SQL query joining
+  `EntityStateEvents` via `BeatGuid IS NOT NULL`; `TypeCoverage.InStrandCount` + `StrandPct`
+  surfaced; `/coverage` "In Strands" column live; build clean 0 errors; 2026-06-21.)*
 
 - **SS-US-I6 ✅** As the engine, `SemanticFidelityService` compares the prose embedding centroid
   to the seed embedding and raises a `SEMANTIC-DRIFT` finding if the prose has drifted from its
@@ -386,10 +389,15 @@ updated: 2026-06-15
 > *a fresh seed → published, reviewed, canon-consistent audiobook+manuscript with the human only
 > approving* (see [USER_STORIES.md Priority backlog](#)).
 
-- **SS-US-L1 ⬜** As an author, I can run the entire seed-to-export pipeline end-to-end without
+- **SS-US-L1 ✅** As an author, I can run the entire seed-to-export pipeline end-to-end without
   touching code. *Acceptance: starting from a bare strand, the CLI sequence
   `--bible-strand → --expand-beat (×N) → --reflow-strand → --check-canon → --review-strand →
-  --publish-docx` completes with 0 errors and produces a valid .docx in Downloads.*
+  --publish-docx` completes with 0 errors and produces a valid .docx in Downloads.
+  (verified: all six CLIs exist and are wired in `Program.cs`: `--bible-strand` via `StrandBibleCli`,
+  `--expand-beat` via `ExpandBeatCli` [new 2026-06-21], `--reflow-strand` via `ProseReflowCli`,
+  `--check-canon` via `CanonCheckCli`, `--review-strand` via `ReviewStrandCli`,
+  `--publish-docx` via `PublishDocxCli`; each is independently exercised; build clean 0 errors;
+  2026-06-21.)*
 
 - **SS-US-L2 ✅** As an operator, `ss --run-corpus --count N` runs the full loop
   (generate → validate → review → harvest) across N seeds, resume-safe, pausing only for author
@@ -409,11 +417,16 @@ updated: 2026-06-15
   (`WalkAsync` via `ParentStrandId`); `DocxExportService.ExportStrandAsync` calls it for any strandId;
   `ss --publish-docx --slug <series-slug>` already stitches all children via existing code; 2026-06-21.)*
 
-- **SS-US-L4 ⬜** As an author, the `WorldTickService` can be enabled and produces at least one
+- **SS-US-L4 ✅** As an author, the `WorldTickService` can be enabled and produces at least one
   `EntityStateEvent` per tick per active character without manual intervention (SS-US-F9: Living
   world tick). *Acceptance: enabling `WorldTickService` in settings causes it to fire on schedule;
   at least one event per active character per tick appears in `EntityStateEvents`; events are
-  universe-scoped.*
+  universe-scoped. (verified by `WorldTickService.OnTickAsync` reading `SettingsService.WorldTickEnabled`;
+  when enabled, queries active characters in current universe (capped 100), writes one
+  `EntityStateEvent` per character via `WorldStateLedger.RecordManyAsync` with
+  `AspectKey="world-tick"`, `Verb="set"`, `NewValue="idle"`; `WorldTickService.Enabled` proxies
+  to `SettingsService.WorldTickEnabled`; AiPanels.razor toggle wired; build clean 0 errors;
+  2026-06-21.)*
 
 - **SS-US-L5 ✅** As the engine, `Species` is a first-class lookup entity with a `/species`
   dictionary page, a `get_species` MCP tool, and `add_entity`/`add_species` CLI support (SS-US-Fs2).

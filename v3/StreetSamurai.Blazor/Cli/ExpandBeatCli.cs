@@ -1,0 +1,166 @@
+using Microsoft.EntityFrameworkCore;
+using StreetSamurai.Core.Data;
+using StreetSamurai.Core.Interfaces;
+using StreetSamurai.Core.Services;
+
+namespace StreetSamurai.Blazor.Cli;
+
+/// <summary>
+/// <c>ss --expand-beat</c> — expand one or all planned beats in a strand to prose.
+///
+/// This is the headless counterpart to clicking ✨ in the strand writer UI.
+/// It uses <see cref="BeatGeneratorService.GenerateBeatAsync"/> with the strand's
+/// literary rules context, then saves via <see cref="StrandWorkbenchService.UpdateBeatTextAsync"/>.
+/// Beats that already have prose are skipped unless <c>--force</c> is set.
+///
+/// Args (one of --slug / --id required):
+///   --slug &lt;slug&gt;     Strand slug.
+///   --id &lt;guid|prefix&gt;  Strand id; a unique prefix is enough.
+///   --all              Expand all planned (no prose) beats. Default when no --beat is given.
+///   --beat &lt;beatId&gt;   Expand one specific beat by its UUID.
+///   --force            Re-expand beats that already have prose (overwrites).
+///
+/// Exit codes:
+///   0 — at least one beat expanded successfully.
+///   1 — bad args, strand not found, or no beats expanded.
+/// </summary>
+public static class ExpandBeatCli
+{
+    public static async Task<int> RunAsync(string[] args, IServiceProvider services)
+    {
+        string? slug = null, id = null, beatId = null;
+        bool force = args.Contains("--force");
+
+        for (int i = 0; i < args.Length; i++)
+        {
+            switch (args[i])
+            {
+                case "--slug": if (i + 1 < args.Length) slug   = args[++i]; break;
+                case "--id":   if (i + 1 < args.Length) id     = args[++i]; break;
+                case "--beat": if (i + 1 < args.Length) beatId = args[++i]; break;
+            }
+        }
+
+        if (string.IsNullOrWhiteSpace(slug) && string.IsNullOrWhiteSpace(id))
+        {
+            Console.Error.WriteLine("[expand-beat] One of --slug or --id is required.");
+            Console.Error.WriteLine("Usage: ss --expand-beat (--slug <slug> | --id <guid>) [--beat <beatId>] [--force]");
+            return 1;
+        }
+
+        var dbFactory = services.GetRequiredService<IDbContextFactory<StreetSamuraiDbContext>>();
+        var beatGen   = services.GetRequiredService<BeatGeneratorService>();
+        var workbench = services.GetRequiredService<StrandWorkbenchService>();
+        var canonDb   = services.GetRequiredService<IDatabaseService>();
+
+        // Resolve strand
+        Guid strandId; string strandSlug, strandTitle;
+        await using (var db = await dbFactory.CreateDbContextAsync())
+        {
+            var query = db.Strands.AsNoTracking();
+            Core.Data.Entities.Strand? strand;
+            if (!string.IsNullOrWhiteSpace(slug))
+                strand = await query.FirstOrDefaultAsync(s => s.Slug == slug);
+            else if (Guid.TryParse(id, out var exact))
+                strand = await query.FirstOrDefaultAsync(s => s.Id == exact);
+            else
+            {
+                var prefix = id!.ToLowerInvariant();
+                var matches = await query.Where(s => s.Id.ToString().StartsWith(prefix)).Take(2).ToListAsync();
+                strand = matches.Count == 1 ? matches[0] : null;
+                if (matches.Count > 1) { Console.Error.WriteLine($"[expand-beat] Id prefix '{id}' is ambiguous."); return 1; }
+            }
+            if (strand == null) { Console.Error.WriteLine("[expand-beat] Strand not found."); return 1; }
+            strandId = strand.Id; strandSlug = strand.Slug; strandTitle = strand.Title;
+        }
+
+        Console.WriteLine($"[expand-beat] Strand: \"{strandTitle}\" ({strandSlug})");
+
+        // Load literary rules for the BeatContext
+        string storyBible;
+        try { storyBible = canonDb.GetLiteraryRulesPrompt() ?? ""; }
+        catch { storyBible = ""; }
+
+        // Load ordered beats
+        var ordered = await workbench.GetOrderedBeatsAsync(strandId);
+
+        // Filter to target beat(s)
+        Guid? targetBeatId = null;
+        if (!string.IsNullOrWhiteSpace(beatId) && Guid.TryParse(beatId, out var bg)) targetBeatId = bg;
+
+        var targets = targetBeatId.HasValue
+            ? ordered.Where(ob => ob.Beat.Id == targetBeatId.Value).ToList()
+            : ordered.ToList();
+
+        if (targets.Count == 0)
+        {
+            Console.Error.WriteLine("[expand-beat] No matching beats found.");
+            return 1;
+        }
+
+        Console.WriteLine($"[expand-beat] {targets.Count} beat(s) to consider ({(force ? "force mode — overwriting existing prose" : "skipping beats with prose")}).");
+
+        int expanded = 0, skipped = 0;
+        string sceneSoFar = "";
+
+        // Seed sceneSoFar from all beats before the first target
+        int firstTargetIdx = ordered.IndexOf(targets[0]);
+        for (int i = 0; i < firstTargetIdx && i < ordered.Count; i++)
+            if (!string.IsNullOrWhiteSpace(ordered[i].Beat.Text))
+                sceneSoFar += "\n\n" + ordered[i].Beat.Text;
+
+        foreach (var ob in targets)
+        {
+            var beat = ob.Beat;
+            bool hasText = !string.IsNullOrWhiteSpace(beat.Text);
+
+            if (hasText && !force)
+            {
+                // Still accumulate existing prose into context
+                sceneSoFar += "\n\n" + beat.Text;
+                skipped++;
+                continue;
+            }
+
+            var goal = beat.Synopsis ?? beat.BeatTitle ?? $"Beat #{beat.Number}";
+            if (string.IsNullOrWhiteSpace(goal))
+            {
+                Console.WriteLine($"[expand-beat]   Beat #{beat.Number}: no synopsis — skipped.");
+                skipped++;
+                continue;
+            }
+
+            Console.Write($"[expand-beat]   Beat #{beat.Number} \"{(goal.Length > 60 ? goal[..60] + "…" : goal)}\"… ");
+
+            try
+            {
+                var ctx = new BeatContext
+                {
+                    StoryBibleContext = storyBible,
+                    SceneSoFar        = sceneSoFar.Length > 6000 ? sceneSoFar[^6000..] : sceneSoFar,
+                    BeatGoal          = goal,
+                };
+                var prose = await beatGen.GenerateBeatAsync(ctx);
+                if (string.IsNullOrWhiteSpace(prose))
+                {
+                    Console.WriteLine("LLM returned empty — skipped.");
+                    skipped++;
+                    continue;
+                }
+                prose = prose.Trim();
+                await workbench.UpdateBeatTextAsync(beat.Id, prose, expectedUpdatedAt: null);
+                sceneSoFar += "\n\n" + prose;
+                expanded++;
+                Console.WriteLine($"ok ({prose.Length} chars).");
+            }
+            catch (Exception ex)
+            {
+                Console.WriteLine($"failed: {ex.Message}");
+                skipped++;
+            }
+        }
+
+        Console.WriteLine($"[expand-beat] Done: {expanded} expanded, {skipped} skipped.");
+        return expanded > 0 ? 0 : 1;
+    }
+}
