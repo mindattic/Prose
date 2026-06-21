@@ -1,5 +1,8 @@
+using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Hosting;
 using Microsoft.Extensions.Logging;
+using StreetSamurai.Core.Data;
+using StreetSamurai.Core.Data.Entities;
 
 namespace StreetSamurai.Core.Services;
 
@@ -7,26 +10,19 @@ namespace StreetSamurai.Core.Services;
 /// Background tick that advances the global story clock so the world keeps
 /// moving even when no one is writing. Foundation for the "living world sim"
 /// vision — a place to wire decay rules, scheduled events, NPC routines, etc.
-/// later. For now it only advances the clock; rule registration is a deliberate
-/// future hook (see <see cref="OnTick"/>).
 ///
 /// <para><b>Cadence.</b> Real-time tick every <see cref="RealTimeInterval"/>;
-/// each tick advances story-time by <see cref="StoryTimePerTick"/>. The default
-/// 1:1 mapping (1 real minute = 1 story minute) is chosen so the clock moves
-/// visibly in /timeline without sprinting through canon. Tune via the const at
-/// the top of the file — settings-driven configuration is the next step once
-/// the rule plug-in surface lands.</para>
+/// each tick advances story-time by <see cref="StoryTimePerTick"/>.</para>
 ///
-/// <para><b>Enable flag.</b> The service is registered in DI but starts in
-/// <c>EnabledByDefault = false</c>, so no autonomous clock advancement happens
-/// until a deliberate flip. Heartbeat log fires either way so a misconfiguration
-/// is visible. The intent is to let infrastructure land cold-disabled, then
-/// turn the dial up after the rule layer exists.</para>
+/// <para><b>Enable flag.</b> The service reads <c>SettingsService.WorldTickEnabled</c>
+/// each tick. Off by default — infrastructure lands cold-disabled, then enabled
+/// deliberately once the rule layer exists. Heartbeat log fires either way so
+/// a misconfiguration is visible.</para>
 ///
-/// <para><b>Why not Quartz/Hangfire.</b> Same reasoning as
-/// <see cref="ContinuityLongSweepService"/>: a single <see cref="PeriodicTimer"/>
-/// inside a <see cref="BackgroundService"/> matches the cadence and avoids a
-/// dependency.</para>
+/// <para><b>EntityStateEvents.</b> When enabled, one event per active character
+/// in the current universe is written each tick (AspectKey="world-tick",
+/// Verb="set", NewValue="idle") so the story clock's passage is recorded on
+/// the entity ledger. Capped at 100 characters per tick for cost safety.</para>
 /// </summary>
 public class WorldTickService : BackgroundService
 {
@@ -39,26 +35,43 @@ public class WorldTickService : BackgroundService
     /// <summary>Wait briefly after process start so the home page wins SQL connections first.</summary>
     private static readonly TimeSpan StartupDelay = TimeSpan.FromMinutes(2);
 
-    /// <summary>
-    /// Conservative default: don't auto-advance the world clock until a future
-    /// pass wires up rules and the user has decided to enable it. Heartbeat is
-    /// always logged so the service's existence is visible.
-    /// </summary>
-    public bool Enabled { get; set; } = false;
+    private static readonly int MaxCharactersPerTick = 100;
 
     private readonly WorldClockService clock;
+    private readonly SettingsService settings;
+    private readonly WorldStateLedger ledger;
+    private readonly IDbContextFactory<StreetSamuraiDbContext> dbFactory;
+    private readonly IUniverseContext universe;
     private readonly ILogger<WorldTickService> log;
 
-    public WorldTickService(WorldClockService clock, ILogger<WorldTickService> log)
+    public WorldTickService(
+        WorldClockService clock,
+        SettingsService settings,
+        WorldStateLedger ledger,
+        IDbContextFactory<StreetSamuraiDbContext> dbFactory,
+        IUniverseContext universe,
+        ILogger<WorldTickService> log)
     {
-        this.clock = clock;
-        this.log   = log;
+        this.clock    = clock;
+        this.settings = settings;
+        this.ledger   = ledger;
+        this.dbFactory = dbFactory;
+        this.universe = universe;
+        this.log      = log;
+    }
+
+    /// <summary>Toggle the tick on/off. Proxies to <see cref="SettingsService.WorldTickEnabled"/>.</summary>
+    public bool Enabled
+    {
+        get => settings.WorldTickEnabled;
+        set => settings.WorldTickEnabled = value;
     }
 
     /// <summary>Diagnostic counters — surfaced on the system status page.</summary>
-    public DateTime? LastTickAt   { get; private set; }
-    public int       TickCount    { get; private set; }
-    public DateTime? LastStoryNow { get; private set; }
+    public DateTime? LastTickAt     { get; private set; }
+    public int       TickCount      { get; private set; }
+    public DateTime? LastStoryNow   { get; private set; }
+    public int       LastEventCount { get; private set; }
 
     protected override async Task ExecuteAsync(CancellationToken stoppingToken)
     {
@@ -70,7 +83,7 @@ public class WorldTickService : BackgroundService
         {
             try
             {
-                OnTick();
+                await OnTickAsync(stoppingToken);
             }
             catch (Exception ex)
             {
@@ -79,20 +92,12 @@ public class WorldTickService : BackgroundService
         } while (await SafeWaitAsync(timer, stoppingToken));
     }
 
-    /// <summary>
-    /// One tick of the world. Currently advances the clock when
-    /// <see cref="Enabled"/>. Future rules go here — decay of transient states,
-    /// scheduled story-time events, NPC routine actions. Each rule should be a
-    /// thin call to a service that owns its domain (e.g.
-    /// <c>WorldStateLedger.EmitDecay(...)</c>) so this method stays a manifest,
-    /// not a god method.
-    /// </summary>
-    private void OnTick()
+    private async Task OnTickAsync(CancellationToken ct)
     {
         TickCount++;
         LastTickAt = DateTime.UtcNow;
 
-        if (!Enabled)
+        if (!settings.WorldTickEnabled)
         {
             log.LogInformation("WorldTickService heartbeat (disabled): tick #{N}", TickCount);
             return;
@@ -104,6 +109,46 @@ public class WorldTickService : BackgroundService
         LastStoryNow = after;
         log.LogInformation("WorldTickService tick #{N}: story-time {Before:o} → {After:o}",
             TickCount, before, after);
+
+        // Write one EntityStateEvent per active character in the current universe.
+        var universeId = universe.CurrentId;
+        List<Guid> characterIds;
+        await using (var db = await dbFactory.CreateDbContextAsync(ct))
+        {
+            characterIds = await db.Entities
+                .Where(e => e.IsActive
+                         && e.EntityType == "character"
+                         && e.UniverseId == universeId)
+                .OrderBy(e => e.Id)
+                .Take(MaxCharactersPerTick)
+                .Select(e => e.Id)
+                .ToListAsync(ct);
+        }
+
+        if (characterIds.Count == 0)
+        {
+            log.LogInformation("WorldTickService tick #{N}: no active characters to stamp.", TickCount);
+            LastEventCount = 0;
+            return;
+        }
+
+        var events = characterIds.Select(id => new EntityStateEvent
+        {
+            UniverseId      = universeId,
+            EntityId        = id,
+            AspectKey       = "world-tick",
+            Verb            = "set",
+            NewValue        = "idle",
+            AtStoryTime     = after,
+            InWorldValidFrom = after,
+            Source          = "world-tick",
+            Confidence      = 1.0,
+        }).ToList();
+
+        var saved = await ledger.RecordManyAsync(events, ct);
+        LastEventCount = saved;
+        log.LogInformation("WorldTickService tick #{N}: wrote {Count} EntityStateEvent(s) for {Chars} character(s).",
+            TickCount, saved, characterIds.Count);
     }
 
     private static async Task<bool> SafeWaitAsync(PeriodicTimer timer, CancellationToken ct)

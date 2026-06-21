@@ -437,6 +437,17 @@ if (args.Contains("--run-corpus"))
     return;
 }
 
+// CLI mode: expand planned beats in a strand to prose (headless ✨ for each beat).
+//   ss --expand-beat (--slug <slug> | --id <guid>) [--beat <beatId>] [--force]
+if (args.Contains("--expand-beat"))
+{
+    var cliBuilder = WebApplication.CreateBuilder(args);
+    cliBuilder.Services.AddStreetSamuraiServices();
+    var cliApp = cliBuilder.Build();
+    Environment.ExitCode = await ExpandBeatCli.RunAsync(args, cliApp.Services);
+    return;
+}
+
 //   ss --write-strand --seed "..." [--title "..."] [--kind episode] [--beats 12] [--bible-only]
 if (args.Contains("--write-strand"))
 {
