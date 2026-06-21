@@ -1321,6 +1321,16 @@ if (args.Contains("--diagnose-strand"))
     return;
 }
 
+// ss --list-species — print the species taxonomy (canonical name, label, sentience).
+if (args.Contains("--list-species"))
+{
+    var cliBuilder = WebApplication.CreateBuilder(args);
+    cliBuilder.Services.AddStreetSamuraiServices();
+    var cliApp = cliBuilder.Build();
+    Environment.ExitCode = ListSpeciesCli.Run(cliApp.Services);
+    return;
+}
+
 // ss --behavior-check --slug <strandSlug> --character <characterId>
 if (args.Contains("--behavior-check"))
 {
