@@ -225,8 +225,12 @@ updated: 2026-06-15
    pages + `CANON-CONTRADICTION` filter in `/findings`.
    *(verified by `VoiceLog.razor` at `/voice`, `Coverage.razor` at `/coverage`, category chips in
    `Findings.razor`; nav links in `AppBanner.razor`; build clean; 2026-06-21.)*
-4. **SS-US-Fh ⬜** Hierarchy + Collection builder: Series→Collection→Strand→Beat via `ParentStrandId`;
+4. **SS-US-Fh ✅** Hierarchy + Collection builder: Series→Collection→Strand→Beat via `ParentStrandId`;
    drag-and-drop Collection builder on `/strands`; publishing a Collection stitches its strands.
+   (verified by drag-and-drop `attachStrandDragHandlers` JS setting `ParentStrandId`; hierarchy view
+   with expandable parents in `Strands.razor`; "series" + "collection" added to kind dropdown;
+   `DocxExportService.ExportStrandAsync` calls `GetOrderedBeatsAsync` which recursively stitches all
+   `ParentStrandId` children; build clean 0 errors; 2026-06-21.)
 5. **SS-US-F8 ✅** Autonomous corpus loop: `ss --run-corpus --count N` runs
    generate→validate(--fix)→review→harvest across N seeds, resume-safe, pausing only for approvals.
    *(see SS-US-L2)*
@@ -235,8 +239,8 @@ updated: 2026-06-15
    *(see SS-US-L5)*
 7. **SS-US-G3 / Fv 🟡** Per-strand LLM voice / Kyle review pass across all strands.
 8. **SS-US-G4 ⬜** Develop the 100-story outline past the spine (premises 9+).
-9. **SS-US-Fc 🟡** In-app canon toggle on the writer/`/strands` page (columns + CLI already shipped).
-10. **SS-US-F9 ⬜** Living world tick (scheduled `EntityStateEvents`, off by default).
+9. **SS-US-Fc ✅** In-app canon toggle on the writer/`/strands` page (see SS-US-L7).
+10. **SS-US-F9 ✅** Living world tick (scheduled `EntityStateEvents`, off by default; see SS-US-L4).
 11. **SS-US-F10 ⬜** Voice flywheel proof: batch K+1 mean `Strand.Score` > batch K after harvests.
 12. **SS-US-U1…U7 ✅** Multi-Universe support (Epic U): `Universe` table + `UniverseId` + backfill to
     GLMZ → seed Fantasy/Steampunk → SwitchUniverse (per-process/per-session) in UI + CLI + MCP →
