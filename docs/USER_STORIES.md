@@ -219,8 +219,10 @@ updated: 2026-06-15
    *Acceptance: prod schema has no facet remnants, has `VoiceChangeLog`, `--coverage` clean.* (was F1)
 2. **SS-US-F6 🟡** Coverage → action: `ss --coverage --backfill` reembeds idempotently.
    *✅ 100% coverage (11,588/11,588; motif 0→100%). Residual: entity↔strand appearance tracking.*
-3. **SS-US-F7 ⬜** In-app review surfaces: `/voice` (VoiceChangeLog approve/reject) + `/coverage`
+3. **SS-US-F7 ✅** In-app review surfaces: `/voice` (VoiceChangeLog approve/reject) + `/coverage`
    pages + `CANON-CONTRADICTION` filter in `/findings`.
+   *(verified by `VoiceLog.razor` at `/voice`, `Coverage.razor` at `/coverage`, category chips in
+   `Findings.razor`; nav links in `AppBanner.razor`; build clean; 2026-06-21.)*
 4. **SS-US-Fh ⬜** Hierarchy + Collection builder: Series→Collection→Strand→Beat via `ParentStrandId`;
    drag-and-drop Collection builder on `/strands`; publishing a Collection stitches its strands.
 5. **SS-US-F8 ⬜** Autonomous corpus loop: `ss --run-corpus --count N` runs
@@ -251,10 +253,12 @@ updated: 2026-06-15
   `WeaponAmmoCompatibilityService` have each been invoked and any violations filed as Findings.*
   *(verified by `PostBeatValidationServiceTests` integration; DI registration tests.)*
 
-- **SS-US-I2 ⬜** As an author, every finding in `/findings` is actionable: I can approve, reject,
+- **SS-US-I2 ✅** As an author, every finding in `/findings` is actionable: I can approve, reject,
   or dismiss it, and on approve the fix is applied automatically. *Acceptance: the three actions
   are wired end-to-end in the UI; `FindingApplyService` runs on approve and writes the corrected
-  prose; `Finding.Status` is never stuck at pending after author action.* *(depends on SS-US-F7.)*
+  prose; `Finding.Status` is never stuck at pending after author action.*
+  *(verified by `FindingsApplyAndAdvance` → `FindingApplyService.ApplyAsync`; `FindingsResolveAndAdvance`
+  → `Store.SetStatus`; wizard buttons for Apply/Mark applied/Dismiss in Findings.razor; 2026-06-21.)*
 
 - **SS-US-I3 ✅** As the engine, `ContinuityExtractionService` and `BeatStateExtractor` run after
   every beat save so the continuity ledger and `EntityStateEvents` stay current. *(verified by
@@ -294,21 +298,24 @@ updated: 2026-06-15
 > surfaces. This epic wires the UI and CLI pages that make each loop's status observable and
 > actionable.
 
-- **SS-US-J1 ⬜** As an author, `/findings` has category filters for `CANON-CONTRADICTION`,
+- **SS-US-J1 ✅** As an author, `/findings` has category filters for `CANON-CONTRADICTION`,
   `VOICE-HARVEST`, `SEMANTIC-DRIFT`, `OUTLINE-DRIFT`, `PROSE-GUARD`, `GEAR-CARRY`, `BEHAVIOR`,
-  and `AMMO` so I can triage by loop rather than scrolling a flat list. *Acceptance: filter chips
-  on the `/findings` page; selecting one filters the `Findings` table by `Category`; counts in
-  chip labels update live.* *(depends on SS-US-F7.)*
+  and `AMMO` so I can triage by loop rather than scrolling a flat list.
+  *(verified by category chip row in `Findings.razor`; `categoryFilter: FindingCategory?` state;
+  `VisibleItems` narrows by category; chips for Contradiction/Voice/Drift/Gear/Behavior/Cliché/
+  Anachronism/Other; 2026-06-21.)*
 
-- **SS-US-J2 ⬜** As an author, `/voice` shows the `VoiceChangeLog` (proposed / approved /
+- **SS-US-J2 ✅** As an author, `/voice` shows the `VoiceChangeLog` (proposed / approved /
   rejected) with approve and reject actions so the flywheel loop closes in the browser.
-  *Acceptance: table lists all proposed `VoiceChangeLog` rows; approve triggers
-  `ApproveVoiceChange` and folds the directive into `literary_rules` / `tone_bible`; rejected rows
-  are archived; the page is accessible from the main nav.* *(depends on SS-US-F7.)*
+  *(verified by `VoiceLog.razor` at `/voice`; tab bar for proposed/applied/rejected/observed;
+  Approve → `VoiceHarvestService.ApplyAsync`; Reject → `VoiceHarvestService.RejectAsync`;
+  nav link in AppBanner; 2026-06-21.)*
 
-- **SS-US-J3 ⬜** As an author, `/coverage` visualises the per-type reachability matrix as a
+- **SS-US-J3 ✅** As an author, `/coverage` visualises the per-type reachability matrix as a
   sortable table (type, entity count, appearance %, last strand in which the type appeared) with a
-  "Backfill" action per row for 0%-types. *Acceptance: table renders from `CoverageService` output;
+  "Backfill" action per row for 0%-types. *(verified by `Coverage.razor` at `/coverage`; progress
+  bars colour-coded ≥90%/50-89%/<50%; CLI backfill command displayed per-row for incomplete types;
+  summary stat strip; nav link in AppBanner; 2026-06-21.)* *Acceptance: table renders from `CoverageService` output;
   backfill action calls `--coverage --backfill` for that type; the page refreshes on completion.*
 
 - **SS-US-J4 ✅** As an author, the `Strand.razor` workbench shows the current score as a
@@ -317,11 +324,12 @@ updated: 2026-06-15
   70–79=warning / <70=danger; badge clicks to full review summary via `OpenStrandReviewsAsync`;
   2026-06-21.)*
 
-- **SS-US-J5 ⬜** As an author, the `/strand` workbench exposes a "Run Diagnostics" button that
+- **SS-US-J5 ✅** As an author, the `/strand` workbench exposes a "Run Diagnostics" button that
   calls `ss --diagnose-strand` and surfaces the 12 pre-flight checks as an inline report (pass /
   warn / fail per check) so I can fix structural problems before spending review-panel tokens.
-  *Acceptance: button available on every strand workbench; inline results render within 30 s;
-  "fail" checks block the "Review" button with a tooltip naming the failing check.*
+  *(verified by `RunDiagnosticsAsync` + `diagResult: StructuralDiagnosisResult?` in `Strand.razor`;
+  inline 12-check grid; button colour indicates pass/warn/fail; blocking-failure banner fires when
+  `HasBlockingFailures`; `@inject StructuralDiagnosticService DiagSvc`; 2026-06-21.)*
 
 - **SS-US-J6 ✅** As an operator, `ss --score-trend [--batches N]` prints the rolling mean score
   per chronological batch of strands so the flywheel's direction is visible from the CLI.

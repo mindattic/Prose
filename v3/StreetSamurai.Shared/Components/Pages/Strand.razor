@@ -20,6 +20,7 @@
 @inject DocxExportService Docx
 @inject ManuscriptExportService Manuscript
 @inject StrandBibleService BibleService
+@inject StructuralDiagnosticService DiagSvc
 @implements IDisposable
 
 @*
@@ -475,6 +476,31 @@ else
             </div>
 
             <div class="d-flex gap-2 flex-wrap mt-2 align-items-center">
+                <button class="btn btn-sm @(diagResult?.HasBlockingFailures == true ? "btn-danger" : diagResult is not null ? "btn-outline-success" : "btn-outline-info")"
+                        @onclick="RunDiagnosticsAsync"
+                        disabled="@(diagRunning || strand is null)"
+                        title="Run 12 structural pre-flight checks (antagonist cost, passive protagonist, stakes, pacing…) before the review panel">
+                    @if (diagRunning)
+                    {
+                        <span class="spinner-border spinner-border-sm me-1"></span>
+                        <span>Diagnosing…</span>
+                    }
+                    else if (diagResult?.HasBlockingFailures == true)
+                    {
+                        <i class="bi bi-x-circle me-1"></i>
+                        <span>@diagResult.FailCount fail@(diagResult.FailCount == 1 ? "" : "s")</span>
+                    }
+                    else if (diagResult is not null)
+                    {
+                        <i class="bi bi-check-circle me-1"></i>
+                        <span>@diagResult.PassCount/@diagResult.Checks.Count pass</span>
+                    }
+                    else
+                    {
+                        <i class="bi bi-activity me-1"></i>
+                        <span>Diagnostics</span>
+                    }
+                </button>
                 <div class="dropdown">
                     <button class="btn btn-sm btn-success dropdown-toggle" type="button" data-bs-toggle="dropdown"
                             disabled="@(publishing || exportBusy)"
@@ -507,6 +533,72 @@ else
                     </a>
                 </div>
             </div>
+
+            @* ── Structural diagnostics results panel (J5) ── *@
+            @if (diagResult is not null)
+            {
+                <div class="border @(diagResult.HasBlockingFailures ? "border-danger" : "border-secondary") rounded p-3 mt-2 bg-black">
+                    <div class="d-flex align-items-center justify-content-between mb-2">
+                        <span class="fw-semibold @(diagResult.HasBlockingFailures ? "text-danger" : "text-success")">
+                            <i class="bi bi-activity me-1"></i>Structural Diagnostics
+                        </span>
+                        <span class="small text-muted">
+                            @diagResult.PassCount pass · @diagResult.WarnCount warn · @diagResult.FailCount fail
+                        </span>
+                        <button class="btn btn-sm btn-link text-muted p-0" @onclick="() => diagResult = null">
+                            <i class="bi bi-x-lg"></i>
+                        </button>
+                    </div>
+                    @if (diagResult.HasBlockingFailures)
+                    {
+                        <div class="alert alert-danger small py-2 mb-2">
+                            <i class="bi bi-x-octagon me-1"></i>
+                            @diagResult.FailCount blocking failure@(diagResult.FailCount == 1 ? "" : "s") — fix before running the review panel.
+                        </div>
+                    }
+                    <div class="row g-2">
+                        @foreach (var chk in diagResult.Checks)
+                        {
+                            var chkCss = chk.Result switch
+                            {
+                                StructuralCheckResult.Pass => "border-success bg-success bg-opacity-10",
+                                StructuralCheckResult.Warn => "border-warning bg-warning bg-opacity-10",
+                                _                          => "border-danger bg-danger bg-opacity-10",
+                            };
+                            var iconCss = chk.Result switch
+                            {
+                                StructuralCheckResult.Pass => "bi-check-circle text-success",
+                                StructuralCheckResult.Warn => "bi-exclamation-triangle text-warning",
+                                _                          => "bi-x-circle text-danger",
+                            };
+                            <div class="col-md-6">
+                                <div class="border @chkCss rounded p-2 h-100">
+                                    <div class="d-flex align-items-start gap-2">
+                                        <i class="bi @iconCss mt-1 flex-shrink-0"></i>
+                                        <div>
+                                            <div class="fw-semibold small">@chk.Name</div>
+                                            @if (chk.Result != StructuralCheckResult.Pass && !string.IsNullOrWhiteSpace(chk.Fix))
+                                            {
+                                                <div class="small text-muted mt-1">@chk.Fix</div>
+                                            }
+                                            @if (!string.IsNullOrWhiteSpace(chk.Evidence) && chk.Result != StructuralCheckResult.Pass)
+                                            {
+                                                <div class="small fst-italic text-muted mt-1">"@chk.Evidence"</div>
+                                            }
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        }
+                    </div>
+                    @if (!string.IsNullOrWhiteSpace(diagResult.Recommendation))
+                    {
+                        <div class="border border-secondary rounded p-2 mt-2 small text-muted">
+                            <i class="bi bi-lightbulb me-1 text-info"></i>@diagResult.Recommendation
+                        </div>
+                    }
+                </div>
+            }
 
             @if (showVoiceStudio)
             {
@@ -1550,6 +1642,31 @@ else
     private int publishCurrent;
     private int publishTotal;
     private string? publishLabel;
+
+    // ── Structural diagnostics (J5) ──────────────────────────────────────────
+    private bool diagRunning;
+    private StructuralDiagnosisResult? diagResult;
+
+    private async Task RunDiagnosticsAsync()
+    {
+        if (strand is null || diagRunning) return;
+        diagRunning = true;
+        diagResult  = null;
+        StateHasChanged();
+        try
+        {
+            diagResult = await DiagSvc.DiagnoseStrandAsync(strand.Id);
+        }
+        catch (Exception ex)
+        {
+            Toast.Error("DIAG-FAIL", ex.Message);
+        }
+        finally
+        {
+            diagRunning = false;
+            await InvokeAsync(StateHasChanged);
+        }
+    }
     /// <summary>True while a file manuscript export (Word/PDF/Markdown/text) is
     /// running (drives the Export button spinner). Cheap/synchronous-ish; no
     /// ring — the audiobook is the only export that drives the progress ring.</summary>
