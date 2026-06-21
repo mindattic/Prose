@@ -1294,6 +1294,19 @@ if (args.Contains("--gear-check"))
     return;
 }
 
+// ss --score-trend [--batches N] [--universe <slug>]
+// Print rolling mean score across N chronological batches of scored strands.
+// Positive Δ confirms the voice-harvest flywheel is spinning forward (SS-US-J6).
+// Exit 0 = positive trend, 1 = flat/declining, 2 = not enough data.
+if (args.Contains("--score-trend"))
+{
+    var cliBuilder = WebApplication.CreateBuilder(args);
+    cliBuilder.Services.AddStreetSamuraiServices();
+    var cliApp = cliBuilder.Build();
+    Environment.ExitCode = await ScoreTrendCli.RunAsync(args, cliApp.Services);
+    return;
+}
+
 // ss --diagnose-strand --slug <strandSlug> [--json]
 // Pre-flight structural analysis before running the review panel.
 // Runs 12 targeted checks (antagonist cost, protagonist behavior change,
