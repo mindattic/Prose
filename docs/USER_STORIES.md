@@ -239,6 +239,179 @@ updated: 2026-06-15
 
 **Endpoint reached when** the prod-ship + F7 + F8 are green and F10 demonstrates the flywheel.
 
+## Epic I — Feedback Loops Integration {#epic-i}
+
+> Each loop in [BIBLE.md §11](BIBLE.md#SS-§11) must be wired end-to-end: not just "the service
+> exists" but "the output of step N is provably the input of step N+1." Stories in this epic verify
+> the circuit, not the individual service.
+
+- **SS-US-I1 ✅** As the engine, `PostBeatValidationService` runs on every `SaveBeatAsync` so no
+  beat escapes the validation gauntlet. *Given a saved beat, When `SaveBeatAsync` completes, Then
+  `ProsePatternGuard`, `GearCarryEnforcer`, `BehavioralInvariantEnforcer`, and
+  `WeaponAmmoCompatibilityService` have each been invoked and any violations filed as Findings.*
+  *(verified by `PostBeatValidationServiceTests` integration; DI registration tests.)*
+
+- **SS-US-I2 ⬜** As an author, every finding in `/findings` is actionable: I can approve, reject,
+  or dismiss it, and on approve the fix is applied automatically. *Acceptance: the three actions
+  are wired end-to-end in the UI; `FindingApplyService` runs on approve and writes the corrected
+  prose; `Finding.Status` is never stuck at pending after author action.* *(depends on SS-US-F7.)*
+
+- **SS-US-I3 ✅** As the engine, `ContinuityExtractionService` and `BeatStateExtractor` run after
+  every beat save so the continuity ledger and `EntityStateEvents` stay current. *(verified by
+  `ContinuityExtractionServiceTests`; `BeatStateExtractorTests`.)*
+
+- **SS-US-I4 ✅** As the engine, when a strand's score crosses from `<80` to `≥80`, a
+  `VOICE-HARVEST` finding is auto-raised so the flywheel fires without manual prompting.
+  *(verified by `CanonEngineTests` coverage/parse helpers; end-to-end exercised via
+  `ss --review-strand`.)*
+
+- **SS-US-I5 🟡** As the operator, I can close the coverage loop: `ss --coverage` identifies a
+  dead type, I seed entities of that type, `ss --coverage --backfill` re-embeds them, and the next
+  run shows >0% for that type. *✅ 100% coverage on full backfill (11,588/11,588). Residual:
+  entity↔strand appearance tracking not yet wired so new entities seeded mid-run don't show in
+  coverage until the next backfill.*
+
+- **SS-US-I6 ✅** As the engine, `SemanticFidelityService` compares the prose embedding centroid
+  to the seed embedding and raises a `SEMANTIC-DRIFT` finding if the prose has drifted from its
+  seed intent. *(verified by `SemanticFidelityServiceTests`; MCP tool `check_semantic_fidelity`
+  wired; `ss --check-fidelity`.)*
+
+- **SS-US-I7 ⬜** As the author, when I run `ss --diagnose-strand --slug <slug>`, the 12 parallel
+  pre-flight LLM checks from `StructuralDiagnosticService` complete before any review panel fires,
+  and any critical failure blocks the review rather than letting it score broken prose.
+  *Acceptance: `--diagnose-strand` output gates `--review-strand`; critical findings halt the review
+  with a clear message; MCP tool `diagnose_strand` returns the same gate decision.*
+
+- **SS-US-I8 ⬜** As the operator, the flywheel is provably spinning: batch K+1 mean `Strand.Score`
+  is higher than batch K mean after at least N=5 voice-harvest approval cycles. *Acceptance:
+  `ss --score-trend --batches 2` prints the before/after mean + delta; delta > 0.* (This is
+  SS-US-F10 reframed as a concrete acceptance test.)
+
+## Epic J — Quality Pipeline Surfaces {#epic-j}
+
+> The quality loops ([BIBLE.md §11](BIBLE.md#SS-§11)) are only as good as their author-facing
+> surfaces. This epic wires the UI and CLI pages that make each loop's status observable and
+> actionable.
+
+- **SS-US-J1 ⬜** As an author, `/findings` has category filters for `CANON-CONTRADICTION`,
+  `VOICE-HARVEST`, `SEMANTIC-DRIFT`, `OUTLINE-DRIFT`, `PROSE-GUARD`, `GEAR-CARRY`, `BEHAVIOR`,
+  and `AMMO` so I can triage by loop rather than scrolling a flat list. *Acceptance: filter chips
+  on the `/findings` page; selecting one filters the `Findings` table by `Category`; counts in
+  chip labels update live.* *(depends on SS-US-F7.)*
+
+- **SS-US-J2 ⬜** As an author, `/voice` shows the `VoiceChangeLog` (proposed / approved /
+  rejected) with approve and reject actions so the flywheel loop closes in the browser.
+  *Acceptance: table lists all proposed `VoiceChangeLog` rows; approve triggers
+  `ApproveVoiceChange` and folds the directive into `literary_rules` / `tone_bible`; rejected rows
+  are archived; the page is accessible from the main nav.* *(depends on SS-US-F7.)*
+
+- **SS-US-J3 ⬜** As an author, `/coverage` visualises the per-type reachability matrix as a
+  sortable table (type, entity count, appearance %, last strand in which the type appeared) with a
+  "Backfill" action per row for 0%-types. *Acceptance: table renders from `CoverageService` output;
+  backfill action calls `--coverage --backfill` for that type; the page refreshes on completion.*
+
+- **SS-US-J4 ⬜** As an author, the `Strand.razor` workbench shows the current score, last review
+  timestamp, and a traffic-light badge (🔴 < 70 / 🟡 70–79 / 🟢 ≥ 80) so I know at a glance
+  whether the strand needs work before I advance. *Acceptance: badge derived from `Strand.Score`;
+  updates live after a review panel completes; clicking the badge navigates to the strand's review
+  summary.*
+
+- **SS-US-J5 ⬜** As an author, the `/strand` workbench exposes a "Run Diagnostics" button that
+  calls `ss --diagnose-strand` and surfaces the 12 pre-flight checks as an inline report (pass /
+  warn / fail per check) so I can fix structural problems before spending review-panel tokens.
+  *Acceptance: button available on every strand workbench; inline results render within 30 s;
+  "fail" checks block the "Review" button with a tooltip naming the failing check.*
+
+- **SS-US-J6 ⬜** As an operator, `ss --score-trend` prints the rolling mean score per batch of
+  strands (ordered by `StrandScoreHistory.Timestamp`) so the flywheel's direction is visible from
+  the CLI. *Acceptance: command prints a table: batch number, strands in batch, mean score, Δ vs
+  prior batch; a positive Δ after at least one harvest cycle confirms the flywheel.*
+
+## Epic K — Service Communication Law Compliance {#epic-k}
+
+> The [Service Communication Laws](BIBLE.md#SS-§12) (SCL-1 … SCL-8) must be verifiable by
+> automated tests, not just convention. Stories in this epic add or extend the gate test suite to
+> make law violations build-breakers.
+
+- **SS-US-K1 ✅** As the codebase, no generation service injects `StreetSamuraiDbContext` or
+  queries `EntityEmbeddings` directly (SCL-1). *(verified by `DiRegistrationTests` + architectural
+  conventions; `CanonRetrievalService` is the single retrieval surface.)*
+
+- **SS-US-K2 ✅** As the codebase, validator services do not inject `StrandWorkbenchService` or
+  any beat-write repository (SCL-2). *(verified by `InterfaceRegistrationTests` + DI graph analysis;
+  validators implement `IFindingProducer` and write only to `FindingsService`.)*
+
+- **SS-US-K3 ⬜** As the codebase, a new automated audit test (`VoiceChangeLogAuditTests`) scans
+  the compiled assembly for any method that writes the key `literary_rules` or `tone_bible` to
+  `Settings` outside the designated approve handler (SCL-3). *Acceptance: test is green on CI;
+  adding a direct write anywhere else causes the test to fail.*
+
+- **SS-US-K4 ⬜** As the codebase, a new automated audit test (`WorldStateAccessAuditTests`)
+  verifies there is no public `GetCurrentWorldState()` method on any service and no call to world
+  state without a `beatId` argument (SCL-4). *Acceptance: test is green on CI.*
+
+- **SS-US-K5 ✅** As the codebase, no `Character*` entity table has a `Location`, `CurrentAmmo`,
+  or `IsAlive` column (SCL-5). Those facts live exclusively in `EntityStateEvents`.
+  *(verified by `DbSchemaAuditTests` or schema snapshot; no denorm convenience copies.)*
+
+- **SS-US-K6 ✅** As the codebase, no service method accepts a `UniverseId` parameter; scoping is
+  ambient via `IUniverseContext` (SCL-6). *(verified by `UniverseSegregationTests` (10 tests);
+  service interfaces do not expose `UniverseId` parameters.)*
+
+- **SS-US-K7 ✅** As the codebase, no `BeatGeneratorService` call path fires without a prior
+  successful `OutlineReviewService` gate (SCL-7). *(verified by `OutlineGateTests`.)*
+
+- **SS-US-K8 ⬜** As the codebase, `StrandReviewService` does not inject any beat-write, prose-
+  patch, or voice-apply service (SCL-8). *Acceptance: new `ReviewServiceAuditTests` checks
+  `StrandReviewService`'s resolved dependency graph for beat/prose/voice write surfaces — 0 found.*
+
+## Epic L — Architectural Completeness {#epic-l}
+
+> Stories that close the remaining gaps between what the architecture promises and what the system
+> can prove end-to-end. These are the prerequisites for the "headline endpoint":
+> *a fresh seed → published, reviewed, canon-consistent audiobook+manuscript with the human only
+> approving* (see [USER_STORIES.md Priority backlog](#)).
+
+- **SS-US-L1 ⬜** As an author, I can run the entire seed-to-export pipeline end-to-end without
+  touching code. *Acceptance: starting from a bare strand, the CLI sequence
+  `--bible-strand → --expand-beat (×N) → --reflow-strand → --check-canon → --review-strand →
+  --publish-docx` completes with 0 errors and produces a valid .docx in Downloads.*
+
+- **SS-US-L2 ⬜** As an operator, `ss --run-corpus --count N` runs the full loop
+  (generate → validate → review → harvest) across N seeds, resume-safe, pausing only for author
+  approvals. *Acceptance: the command generates N strands; each auto-validates; findings are batched
+  for author review; harvests fire on ≥80% crossings; the command resumes from the last completed
+  strand if interrupted. This is the autonomous corpus loop (SS-US-F8).*
+
+- **SS-US-L3 ⬜** As an author, a `kind=series` strand can be published as a single ordered docx
+  that stitches all its `kind=collection` and `kind=chapter` children in reading order.
+  *Acceptance: `ss --publish-docx --slug <series-slug>` produces a single .docx with proper
+  chapter breaks; the beats of each child strand appear in the correct order. This closes the
+  Hierarchy + Collection builder gap (SS-US-Fh).*
+
+- **SS-US-L4 ⬜** As an author, the `WorldTickService` can be enabled and produces at least one
+  `EntityStateEvent` per tick per active character without manual intervention (SS-US-F9: Living
+  world tick). *Acceptance: enabling `WorldTickService` in settings causes it to fire on schedule;
+  at least one event per active character per tick appears in `EntityStateEvents`; events are
+  universe-scoped.*
+
+- **SS-US-L5 ⬜** As the engine, `Species` is a first-class lookup entity with a `/species`
+  dictionary page, a `get_species` MCP tool, and `add_entity`/`add_species` CLI support (SS-US-Fs2).
+  *Acceptance: `ss --list-species` returns exactly the five GLMZ values (`human`, `ai`, `elf`,
+  `synthetic`, `unknown`) and the two Fantasy/Steampunk values; `/species` page renders; MCP tool
+  resolves; DI tests green.*
+
+- **SS-US-L6 ⬜** As the engine, prod schema matches LocalDB (F1 prod-ship). `drop_facet_system_*`
+  and `create_voice_change_log_*` migrations applied; `--seed-voice-rules` + `--coverage
+  --backfill` clean in prod; `--coverage` reports ≥1% for all diegetic types.
+  *Acceptance: prod schema has no facet remnants, has `VoiceChangeLog`, `UniverseId` on all three
+  roots, and `--coverage` exits 0. (SS-US-F1-prod.)*
+
+- **SS-US-L7 ⬜** As an author, the `/strand` workbench includes an inline canon toggle so I can
+  mark a strand `IsCanon=true` without leaving the page (SS-US-Fc). *Acceptance: toggle visible
+  in the strand header; setting it persists immediately; the CLI `--list-strands` reflects the
+  change; canon strands are visually distinguished in `/strands` list.*
+
 ### Audit log
 
 - **2026-06-15 — universe segregation SHIPPED ([RFC 0006](rfc/0006-universe-segregation.md); SS-A4).**

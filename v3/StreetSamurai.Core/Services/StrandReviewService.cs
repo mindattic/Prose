@@ -26,6 +26,7 @@ public class StrandReviewService
     private readonly IDbContextFactory<StreetSamuraiDbContext> dbFactory;
     private readonly FindingsService findings;
     private readonly SemanticFidelityService fidelity;
+    private readonly StructuralDiagnosticService structural;
     private readonly ILogger<StrandReviewService> log;
 
     private int MaxConcurrency => settings.ReviewMaxConcurrency;
@@ -42,6 +43,7 @@ public class StrandReviewService
         IDbContextFactory<StreetSamuraiDbContext> dbFactory,
         FindingsService findings,
         SemanticFidelityService fidelity,
+        StructuralDiagnosticService structural,
         ILogger<StrandReviewService> log)
     {
         this.legion = legion;
@@ -51,6 +53,7 @@ public class StrandReviewService
         this.dbFactory = dbFactory;
         this.findings = findings;
         this.fidelity = fidelity;
+        this.structural = structural;
         this.log = log;
     }
 
@@ -165,7 +168,10 @@ public class StrandReviewService
     public sealed record SampledRunResult(
         int Ballots, int BallotsSaved, int ProseAdded, int Failed,
         double MeanScore, double Sd, double Ci95, int Clusters,
-        string ContentHash, string ReportMarkdown, string ExportPath);
+        string ContentHash, string ReportMarkdown, string ExportPath,
+        // Structural pre-flight results (null when skipDiagnosis=true or diagnosis not run)
+        bool BlockedByStructure = false,
+        StructuralDiagnosisResult? StructuralDiagnosis = null);
 
     /// <summary>Economical default: a stratified SAMPLE of personas casts cheap
     /// score-only BALLOTS (overall + flow + per-beat 1-5 + one weakness tag), then
@@ -177,10 +183,51 @@ public class StrandReviewService
     /// fraction of a census run's calls.</summary>
     public async Task<SampledRunResult> RunSampledReviewAsync(
         Guid strandId, int ballotCount, int proseCount,
-        IProgress<int>? progress = null, CancellationToken ct = default)
+        IProgress<int>? progress = null, CancellationToken ct = default,
+        bool skipDiagnosis = false)
     {
         if (ballotCount <= 0) ballotCount = settings.ReviewBallots;
         if (proseCount < 0) proseCount = 0;
+
+        // ── Structural pre-flight ─────────────────────────────────────────────
+        // Run the structural diagnostic before any ballots. If blocking failures
+        // exist, return immediately — don't burn votes on structurally broken prose.
+        // The caller (CLI or MCP) sees the diagnosis and knows what to fix first.
+        if (!skipDiagnosis)
+        {
+            StructuralDiagnosisResult diagnosis;
+            try { diagnosis = await structural.DiagnoseStrandAsync(strandId, ct); }
+            catch (Exception ex)
+            {
+                log.LogWarning(ex, "Structural diagnostic failed for strand {Id}; proceeding without it.", strandId);
+                diagnosis = null!;
+            }
+
+            if (diagnosis?.HasBlockingFailures == true)
+            {
+                var blockReport = BuildBlockedReport(diagnosis);
+                return new SampledRunResult(
+                    ballotCount, 0, 0, 0, 0, 0, 0, 0,
+                    "", blockReport, "",
+                    BlockedByStructure: true,
+                    StructuralDiagnosis: diagnosis);
+            }
+
+            // Non-blocking warnings — continue to ballot but surface the findings
+            // in the final report so they're always visible alongside the score.
+            if (diagnosis != null)
+            {
+                // Non-blocking warnings: run ballots normally, then append the
+                // structural findings to the report so they're always visible.
+                var result = await RunSampledReviewAsync(strandId, ballotCount, proseCount,
+                    progress, ct, skipDiagnosis: true);
+                return result with
+                {
+                    ReportMarkdown      = AppendStructuralWarnings(result.ReportMarkdown, diagnosis),
+                    StructuralDiagnosis = diagnosis,
+                };
+            }
+        }
         var providers = ReviewProviderIds();
         if (providers.Count == 0)
             throw new InvalidOperationException("No trusted LLM providers are configured with API keys — cannot run reviews.");
@@ -320,6 +367,56 @@ public class StrandReviewService
         return new SampledRunResult(personas.Count, saved.Count, proseAdded, failed,
             Math.Round(mean, 1), Math.Round(sd, 1), Math.Round(ci, 2), clusters,
             export.ContentHash, report, export.Path);
+    }
+
+    // ── Structural pre-flight helpers ─────────────────────────────────────────
+
+    private static string BuildBlockedReport(StructuralDiagnosisResult diagnosis)
+    {
+        var sb = new StringBuilder();
+        sb.AppendLine("## ⛔ Review blocked — structural failures detected");
+        sb.AppendLine();
+        sb.AppendLine("These issues will cap the score regardless of prose quality. Fix them first, then re-run the review.");
+        sb.AppendLine();
+        foreach (var check in diagnosis.Checks.Where(c => c.IsBlocking && c.Result == StructuralCheckResult.Fail))
+        {
+            sb.AppendLine($"### {check.Name}");
+            sb.AppendLine($"**{check.Description}**");
+            if (!string.IsNullOrWhiteSpace(check.Evidence) && check.Evidence != "none")
+                sb.AppendLine($"> {check.Evidence}");
+            sb.AppendLine($"**Fix:** {check.Fix}");
+            sb.AppendLine();
+        }
+        var warnings = diagnosis.Checks.Where(c => c.Result == StructuralCheckResult.Warn).ToList();
+        if (warnings.Any())
+        {
+            sb.AppendLine("---");
+            sb.AppendLine("### Also flagged (warnings — address after blocking failures)");
+            foreach (var w in warnings)
+                sb.AppendLine($"- **{w.Name}**: {w.Fix}");
+        }
+        return sb.ToString();
+    }
+
+    private static string AppendStructuralWarnings(string report, StructuralDiagnosisResult diagnosis)
+    {
+        var issues = diagnosis.Checks.Where(c => c.Result != StructuralCheckResult.Pass).ToList();
+        if (!issues.Any()) return report;
+
+        var sb = new StringBuilder(report);
+        sb.AppendLine();
+        sb.AppendLine("---");
+        sb.AppendLine("## Structural pre-flight");
+        sb.AppendLine($"*{diagnosis.PassCount} pass · {diagnosis.WarnCount} warn · {diagnosis.FailCount} fail*");
+        sb.AppendLine();
+        foreach (var c in issues.OrderByDescending(c => c.Result))
+        {
+            var icon = c.Result == StructuralCheckResult.Fail ? "✗" : "△";
+            sb.AppendLine($"**{icon} {c.Name}** — {c.Fix}");
+            if (!string.IsNullOrWhiteSpace(c.Evidence) && c.Evidence != "none")
+                sb.AppendLine($"> {c.Evidence}");
+        }
+        return sb.ToString();
     }
 
     /// <summary>Pick the most informative ballots for prose upgrade: the harshest,

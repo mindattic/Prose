@@ -424,3 +424,375 @@ For each chapter, in order:
 [USER_STORIES.md](USER_STORIES.md) and add acceptance evidence in the same change. This file is the
 source of truth for "what's left and in what order." Amendments are append-only in
 [AMENDMENTS.md](AMENDMENTS.md) and win over this file.*
+
+---
+
+## 11. The Feedback Architecture {#SS-§11}
+
+The engine's most important property is not any single service — it is how the services form closed
+feedback loops that make each story better than the last. Every loop is a check-and-balance circuit:
+a generator produces output; one or more validators or reviewers evaluate it; their judgment feeds
+back into the generator's inputs. If a loop is broken — findings accumulate but are never reviewed,
+voice harvest is never run, coverage is never checked — the system degrades toward stochastic prose.
+**The loops being wired is necessary but not sufficient; the author must use the surfaces.**
+
+### Loop 1 — Canon Grounding {#SS-§11-L1}
+
+```
+Entity seeding (CLI / MCP / UI)
+  → EntityEmbeddings (1536-d VECTOR_DISTANCE index)
+  → CanonRetrievalService (semantic + graph at generation time)
+  → BeatPromptBuilder (injects canon-facts block into every prompt)
+  → BeatGeneratorService (prose grounded in real entities)
+  → ss --scan-entity-mentions (gap report: mentioned but not seeded)
+  → Author seeds gap entities → index rebuilt → loop closes
+```
+
+**What it prevents.** Prose that references characters, places, or gear that don't exist in the
+DB — the most common cause of continuity breakage. If all entities are seeded before prose fires
+([SS-LAW-1](#SS-§5), [§10](#SS-§10)), the scanner finds 0 gaps. Any gap found is the signal to seed
+the entity; the next generation cycle closes it.
+
+**Health signal.** `ss --scan-entity-mentions --strand <slug>` returns 0 unseeded mentions.
+
+### Loop 2 — Post-Beat Validation {#SS-§11-L2}
+
+```
+Beat saved (StrandWorkbenchService.SaveBeatAsync)
+  → PostBeatValidationService (orchestrator)
+      ├─ ProsePatternGuard:             catch anti-patterns (pseudo-profound, substring)
+      ├─ GearCarryEnforcer:             verify character carries only seeded gear
+      ├─ BehavioralInvariantEnforcer:   check per-character behavioral rules
+      └─ WeaponAmmoCompatibilityService: validate ammo↔weapon pairing
+  → FindingRow written (status: pending) → /findings inbox
+  → Author: approve / reject / dismiss
+  → Approved: FindingApplyService patches prose; next beat generation avoids the violation
+```
+
+**What it prevents.** Prose that silently violates gear, behavior, or weapon rules established in
+earlier beats. Each violation caught here avoids multiple review-panel rewrites later.
+
+**Health signal.** `/findings` inbox is empty, or every open finding has been explicitly adjudicated,
+before a strand is submitted for review.
+
+### Loop 3 — Continuity {#SS-§11-L3}
+
+```
+Beat saved
+  → ContinuityExtractionService: LLM extracts (entity, predicate, object) triples
+  → ContinuityService: stores claims
+  → BeatStateExtractor: extracts EntityStateEvents (location, life status, ammo)
+  → WorldStateAtBeatService: reconstructs world state at any beat on demand
+  → ContinuityValidatorService: pre-checks next beat against established facts
+  → CanonContradictionService (--check-canon): raises CANON-CONTRADICTION findings
+  → Author approves fix → prose patched → loop closes
+```
+
+**What it prevents.** A character who was shot in beat 5 appearing uninjured in beat 7 without
+explanation. The continuity ledger is the engine's working memory of what has happened.
+
+**Health signal.** `ss --check-canon --slug <slug>` returns 0 unresolved contradictions.
+
+### Loop 4 — Review → Voice Harvest (The Flywheel) {#SS-§11-L4}
+
+```
+Strand complete
+  → StrandReviewService: Legion persona panel (N readers, 1–100 score per reader)
+      → StrandReview rows + StrandReviewSummary aggregate
+      → Strand.Score updated; StrandScoreHistory row appended
+  → Score < 80%: low-score findings raised; strand flagged for rewrite
+  → Score ≥ 80%:
+      → VOICE-HARVEST finding auto-raised
+      → VoiceHarvestService mines temporal Beat history (FOR SYSTEM_TIME ALL)
+      → Winning edits → VoiceChangeLog (status: proposed)
+      → Author approves → directive folded into literary_rules / tone_bible / Character fields
+  → Next strand generation uses improved rules → higher baseline score
+```
+
+**The flywheel property.** The loop is self-reinforcing: better `literary_rules` → better prose →
+higher scores → more harvests → even better rules. The endpoint ([SS-US-F10](#)) is demonstrable:
+batch K+1 mean score > batch K mean score across N harvests.
+
+**What it prevents.** Voice drift. Each ≥80%-scoring strand is proof the engine produced something
+that worked; harvest crystallizes WHY it worked so the next strand starts from a higher baseline.
+Without this loop the engine would perpetually forget its own successes.
+
+**Health signal.** Every ≥80%-scoring strand has a non-empty `VoiceChangeLog` set. No strand sits
+at ≥80% with 0 harvest rows (unless harvest was explicitly waived by the author).
+
+### Loop 5 — Semantic Fidelity Guard {#SS-§11-L5}
+
+```
+Strand review complete
+  → SemanticFidelityService: compare prose embedding centroid to seed embedding
+  → Goodhart's Law check: is prose optimising for review vocabulary
+    while drifting from the seed's actual intent?
+  → SEMANTIC-DRIFT finding if drift exceeds threshold
+  → Author adjudicates: keep (intent legitimately changed), rewrite (drift genuine), adjust seed
+```
+
+**What it prevents.** The Goodhart's Law trap — prose that scores high by adopting reviewer
+vocabulary but has quietly lost what the seed was about. This is the guard against a system that
+learns to game its own metrics.
+
+**Health signal.** `ss --check-fidelity --slug <slug>` returns no SEMANTIC-DRIFT findings, or all
+findings have been adjudicated.
+
+### Loop 6 — Coverage {#SS-§11-L6}
+
+```
+ss --coverage (CoverageService)
+  → Per-type reachability matrix across all 28 registered entity types
+  → Dead inventory: types with 0% appearance in any generated prose
+  → Author acts: enrich entities of dead type, or include in a forthcoming seed
+  → Next coverage run shows improvement
+```
+
+**What it prevents.** A canon with 28 registered types where prose only ever mentions characters
+and places, leaving weapons, pharmaceuticals, automata, and the rest unreachable. The matrix is the
+engine's standing self-audit of what it is actually using.
+
+**Health signal.** `ss --coverage` shows >0% for all diegetic types. Any type stuck at 0% for
+two or more consecutive strands is a retrieval bug or an empty entity roster — fix before shipping.
+
+### Loop 7 — World-State / Temporal {#SS-§11-L7}
+
+```
+Generation pre-flight (WorldStatePrecheckService)
+  → WorldStateAtBeatService: reconstruct exact world state at the last committed beat
+      (who is where, who is alive, how much ammo remains)
+  → WorldClockService: advance in-world clock to the beat's timestamp
+  → Pre-check failures → generation prompt adjusted before prose fires (not after)
+
+All beats in a strand (and across strands)
+  → EntityStateEvents ledger: append-only world-state changes
+  → Available to any future generation, validation, or continuity check
+```
+
+**What it prevents.** Generating prose that assumes the wrong world state: a character who is
+supposed to be dead, a gun emptied two beats ago, a location the character left last chapter. This
+is the engine's forward-looking continuity guard (vs. the backward-looking
+`ContinuityExtractionService`).
+
+**Health signal.** `WorldStatePrecheckService` returns no violations before any beat generation.
+
+### System invariant: all loops must close {#SS-§11-invariant}
+
+Every loop has an author-facing surface where its findings land:
+
+| Loop | Finding category | Surface |
+|---|---|---|
+| Canon Grounding | Unseeded entity gaps | `ss --scan-entity-mentions` output |
+| Post-Beat Validation | `PROSE-GUARD`, `GEAR-CARRY`, `BEHAVIOR`, `AMMO` | `/findings` inbox |
+| Continuity | `CANON-CONTRADICTION` | `/findings` inbox |
+| Voice Harvest | `VOICE-HARVEST` | `/findings` inbox + `/voice` page |
+| Fidelity Guard | `SEMANTIC-DRIFT` | `/findings` inbox |
+| Coverage | Per-type 0% flags | `ss --coverage` output + `/coverage` page |
+| World-State | Pre-check violations | Generation pre-flight log |
+
+A loop is considered **closed** when all its findings have been explicitly adjudicated (approved /
+rejected / dismissed). A loop with unreviewed findings is a **circuit break** — the author's
+attention is the closing mechanism and cannot be automated away.
+
+---
+
+## 12. Service Communication Laws {#SS-§12}
+
+These laws govern HOW services are allowed to talk to each other. Violations make the feedback loops
+in [§11](#SS-§11) fragile or invisible. They are enforced via interface contracts, DI registration
+tests, and code review.
+
+**SCL-1: Generators ask; they do not query.**
+No generation service (`BeatGeneratorService`, `OutlineService`, `StoryDirectorService`, etc.) may
+query the DB or the embedding index directly. All canon retrieval goes through
+`CanonRetrievalService`. This ensures the retrieval layer — which owns universe scoping, embedding
+fallback, and semantic ranking — is the only surface the generator touches.
+*Audit: grep `StreetSamuraiDbContext` or `EntityEmbeddings` in generation services — 0 hits.*
+
+**SCL-2: Validators file; they do not fix.**
+No validation service (`CanonContradictionService`, `ProsePatternGuard`, `GearCarryEnforcer`,
+`BehavioralInvariantEnforcer`, `ContinuityValidatorService`, `SemanticFidelityService`) may write
+to prose tables. Violations are filed as `Finding` rows. Only `FindingApplyService` (triggered by
+an author approval) writes prose changes. Every correction is traceable and author-gated.
+*Audit: none of the validator services inject `StrandWorkbenchService` or `BeatRepository`.*
+
+**SCL-3: Voice changes are always proposed, never applied.**
+`VoiceHarvestService` writes only to `VoiceChangeLog` (status: proposed). Only
+`ApproveVoiceChange` (author-triggered via `/voice` page or CLI) writes to `Settings.literary_rules`,
+`Settings.tone_bible`, or Character voice fields. No service auto-commits a voice change.
+*Audit: grep direct writes to `literary_rules` / `tone_bible` in service code — 0 hits outside
+the explicit approve path.*
+
+**SCL-4: World state is always at-beat, never "current."**
+No service calls "get the current world state." The only temporal API is
+`WorldStateAtBeatService.GetStateAtAsync(beatId)`. This prevents stale-state bugs where "current"
+means different things to different services depending on when they happen to run.
+*Audit: no public `GetCurrentWorldState()` method exists on any service.*
+
+**SCL-5: Entity identity stays on entity tables; story-state stays in the ledger.**
+No "convenience copy" columns. A character's location is not on `Characters`. It is in
+`EntityStateEvents` with a `Source`, a `BeatId`, and a `Timestamp`. Any query for location asks
+`WorldStateAtBeatService`.
+*Audit: `DiRegistrationTests` + `InterfaceRegistrationTests` + no `Location` column on `Characters`.*
+
+**SCL-6: The universe scope is ambient, not a parameter.**
+Services do not accept a `UniverseId` parameter. The current universe is set on the ambient
+`IUniverseContext` (per-process for CLI, per-circuit for Blazor, per-request for MCP), and the EF
+global filter enforces it automatically. A service cannot accidentally cross universe boundaries
+mid-request.
+*Audit: `UniverseSegregationTests` (10 tests); no `UniverseId` parameter on any service method.*
+
+**SCL-7: No generation bypasses the outline gate.**
+`BeatGeneratorService` will not fire if `OutlineService` has not produced an outline that passed
+`OutlineReviewService`. The gate is enforced structurally.
+*Audit: `OutlineGateTests`.*
+
+**SCL-8: Reviews never auto-apply their editorial conclusions.**
+`StrandReviewService` writes scores and summaries. It does not patch beats, does not update voice
+rules, and does not raise rewrites. A review result is observation; action requires the author
+(or an explicitly author-approved agent).
+
+---
+
+## 13. The Quality Invariants {#SS-§13}
+
+Measurable properties the system must maintain end-to-end. Their purpose is to make "the system is
+working" observable rather than assumed.
+
+**QI-1: Every generated beat has been through all validation loops before it is considered a
+draft.**
+*Evidence:* `PostBeatValidationService` runs on every `StrandWorkbenchService.SaveBeatAsync`. The
+`/findings` inbox must be empty (or all open findings explicitly adjudicated) before a strand is
+submitted for review.
+
+**QI-2: Every review-eligible strand has a score.**
+*Evidence:* `Strand.Score` is null only before a review panel has run. A null-score strand cannot
+be published or harvested. `ss --review-strand` must run before `ss --publish-*`.
+
+**QI-3: Every ≥80%-scoring strand has triggered a voice harvest attempt.**
+*Evidence:* The `VOICE-HARVEST` finding is auto-raised at the `<80→≥80` crossing. A strand that
+scores ≥80% with 0 `VoiceChangeLog` rows is a broken flywheel loop — diagnose and re-run
+`ss --harvest-voice --slug <slug>`.
+
+**QI-4: The coverage report shows 0 dead diegetic types.**
+*Evidence:* `ss --coverage` shows >0% for all 28 registered types. A type at 0% for two or more
+consecutive strands is either an empty roster (seed entities) or a retrieval bug (fix
+`CanonRetrievalService`).
+
+**QI-5: The DI graph resolves with no missing registrations.**
+*Evidence:* `DiRegistrationTests` + `InterfaceRegistrationTests` green on every build. This is the
+system's structural self-test — every service referenced by another must be registered.
+
+**QI-6: All entity mentions in prose are seeded in the DB.**
+*Evidence:* `ss --scan-entity-mentions --strand <slug>` produces 0 unseeded mentions. Run after
+every chapter draft.
+
+**QI-7: Voice changes are not auto-applied.**
+*Evidence:* `VoiceChangeLog` is the single write path to `literary_rules` / `tone_bible`. A direct
+write to those `Settings` keys from any service other than the approve handler is a SCL-3 violation.
+*Audit: grep `literary_rules` in service code — only appears in `GetLiteraryRulesPrompt()` (read)
+and the approve handler (write).*
+
+**QI-8: No cross-universe data appears in any generation prompt.**
+*Evidence:* `UniverseSegregationTests` (10 tests: query-filter scoping, insert-stamping, shared-key
+visibility, strand scoping, epoch, uuid-v7). A GLMZ-only entity appearing in a Fantasy/Steampunk
+beat's canon-facts block is a segregation failure — check `IUniverseContext` wiring.
+
+**QI-9: All structural pre-flight checks pass before a review panel fires.**
+*Evidence:* `ss --diagnose-strand --slug <slug>` (StructuralDiagnosticService, 12 parallel LLM
+checks) returns no critical failures. Review panels run against structurally sound prose; a panel
+scoring a fundamentally broken strand wastes voters and produces misleading score history.
+
+**QI-10: Each strand's score trends upward across its revision history.**
+*Evidence:* `StrandScoreHistory` table. A score that trends downward after voice-harvest application
+is a signal the harvested directive is incorrect — revert the approval and re-examine the finding.
+The flywheel must demonstrably spin forward.
+
+---
+
+## 14. The Architectural Decision Register {#SS-§14}
+
+Why key choices were made — so future architects understand the reasoning and can judge whether it
+still holds. Each ADR names the decision, the why, the tradeoff, and the condition under which it
+should be revisited.
+
+**ADR-1: SQL Server is the sole canon store.**
+*Decision:* All canon lives in SQL. `.md`/`.json` files are documentation or export mirrors only.
+*Why:* A file system has no foreign keys, no temporal history, no query scope, no transactions.
+Continuity validation, world-state reconstruction, and voice harvest all require queryable,
+relational, time-aware data. Files cannot deliver this.
+*Revisit when:* The app moves to a client-only model with no server. Not a current direction.
+
+**ADR-2: System-versioned (temporal) tables for Beats and Strands.**
+*Decision:* `Beats`, `Strands`, `StrandBeats`, `ChapterBeats` use `SYSTEM_VERSIONING ON`.
+*Why:* Voice harvest mines `FOR SYSTEM_TIME ALL` to find which edits correlated with score
+improvements. Without temporal history the flywheel has no data to mine.
+*Tradeoff:* Adding a column to a temporal table requires the `SYSTEM_VERSIONING OFF → ALTER →
+_History → ON` dance. Accepted overhead for the harvest capability it enables.
+*Revisit when:* SQL Server 2025 vector indexes become compatible with system-versioned tables
+(currently incompatible; tracked as a known constraint).
+
+**ADR-3: Legion/LLM voting rather than a single judge for review.**
+*Decision:* Review panels use N voters (Legion, 11 providers, up to 100 for some actions).
+*Why:* A single LLM judge is a single point of bias. A voting panel surfaces disagreement — which
+is more informative than a consensus score. The minority "gripe" is where the most actionable
+editorial signal lives.
+*Tradeoff:* Cost and latency. Mitigated by the sampled-panel pattern (cheap score-ballots first;
+upgrade only the most informative few to full prose).
+*Revisit when:* A single high-capability judge demonstrably produces better editorial signal than a
+panel at lower cost. Not proven; panel diversity remains the safer default.
+
+**ADR-4: Propose-then-approve for voice harvest and canon changes.**
+*Decision:* No service auto-commits a change to `literary_rules`, `tone_bible`, or any entity field.
+*Why:* The LLM's "this is a winning move" verdict is a heuristic, not ground truth. Auto-applying
+would let the system modify its own voice without human review — the Goodhart's Law failure mode at
+the system level, not just the prose level.
+*Revisit when:* F10 demonstrates the flywheel produces consistently ≥90% scores across 50+ strands
+without any author veto on harvested directives. Not before.
+
+**ADR-5: One format (Strand of Beats) — no parallel format tables.**
+*Decision:* Books, chapters, episodes, and collections are all parent/child Strand trees on the
+`ParentStrandId` column. No separate table per format.
+*Why:* Every new format table is a new maintenance surface. The audio pipeline, review pipeline,
+voice harvest, and export pipeline would each need to handle every format. Strand-of-Beats
+abstracts over all of them: one pipeline, one set of loops.
+*Tradeoff:* The mental model requires understanding that `kind=book` is a parent strand, not a row
+in a `Books` table. The legacy `Books` table is being retired; its presence is a migration artifact.
+
+**ADR-6: Per-universe entity duplication, not M:M bridging.**
+*Decision:* An entity that must appear in two universes gets two rows (one per Universe), not a
+shared row with a junction table.
+*Why:* An M:M bridge means every query that touches entities must join the bridge — the most
+frequent query in the system. The author prefers ~10 duplicate rows over a double-bridge refactor
+that would touch every retrieval, scoping, and embedding path. The cost of duplication is bounded
+(number of crossover entities is small and stable).
+*Revisit when:* Crossover entities grow to hundreds per type and the duplication cost (stale-copies
+drift) exceeds the bridge cost. Currently well under the threshold.
+
+**ADR-7: EF global query filter for universe scoping, not per-query WHERE clauses.**
+*Decision:* Universe scoping is enforced at the DbContext level via an EF global query filter keyed
+on `IUniverseContext`, not by adding `WHERE UniverseId = @u` to every query.
+*Why:* Per-query clauses are a convention. Any developer can forget one; there is no structural
+guarantee. The global filter is structural: a query cannot bypass it without explicitly calling
+`IgnoreQueryFilters()`, which is auditable and rare. Make the right thing easy; make the wrong
+thing hard.
+*Revisit when:* A use-case legitimately requires reading across all universes in a single query
+without bypassing the filter. Use `IgnoreQueryFilters()` explicitly and document the reason.
+
+**ADR-8: CharacterReadModels as a non-temporal CQRS projection.**
+*Decision:* `CharacterReadModels` is a materialized, non-temporal full-character read-model. It is
+single-writer (synced from `CharacterRepository.Save`) and never holds entity JSON.
+*Why:* A naïve full-character read joins ~30 character sub-tables. At read time that is a 50–80 s
+multi-join. The read-model materializes the result once on write; reads are a single column select.
+*Tradeoff:* The read-model can be stale if a direct SQL update bypasses `CharacterRepository.Save`.
+Convention: every character write goes through the repository. No exceptions.
+
+**ADR-9: Beat Doctrine as a DB-resident rule, not a hardcoded prompt string.**
+*Decision:* The Beat Doctrine and house voice rules live in `Settings` (`literary_rules`,
+`tone_bible`) and are emitted by `DatabaseService.GetLiteraryRulesPrompt()`. They are not
+hardcoded in any service.
+*Why:* Rules that live in code can only be changed by a developer and a deployment. Rules that live
+in `Settings` can be updated by the voice-harvest flywheel (with author approval) without a code
+change. The flywheel only works if the rules it updates are actually read by generation.
+*Revisit when:* A rule is so structural that it cannot safely change without a code change (e.g.
+universe scoping logic). Those rules belong in code; everything else belongs in Settings.

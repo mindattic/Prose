@@ -1294,6 +1294,20 @@ if (args.Contains("--gear-check"))
     return;
 }
 
+// ss --diagnose-strand --slug <strandSlug> [--json]
+// Pre-flight structural analysis before running the review panel.
+// Runs 12 targeted checks (antagonist cost, protagonist behavior change,
+// exposition density, etc.) and reports Pass/Warn/Fail with evidence + fixes.
+// Exit 0 = ready, 1 = warnings, 2 = blocking failures.
+if (args.Contains("--diagnose-strand"))
+{
+    var cliBuilder = WebApplication.CreateBuilder(args);
+    cliBuilder.Services.AddStreetSamuraiServices();
+    var cliApp = cliBuilder.Build();
+    Environment.ExitCode = await DiagnoseStrandCli.RunAsync(args, cliApp.Services);
+    return;
+}
+
 // ss --behavior-check --slug <strandSlug> --character <characterId>
 if (args.Contains("--behavior-check"))
 {
