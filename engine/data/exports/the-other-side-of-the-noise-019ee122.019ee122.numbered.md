@@ -3,73 +3,81 @@
 _Seto receives Amara's signal. He doesn't know what it is. He runs a trace that returns nothing._
 
 [Beat 1]
-﻿He repaired the rear hub at 0545.
+# The Other Side of the Noise
 
-The bearing had been talking to him for two days?a faint catch at the top of the stroke, nothing his ears would have caught if his ears were where he listened. He listened in his palms. He stripped the cassette, freed the axle, walked the cones loose with the thin spanners he kept rolled in oilcloth, and laid the ball bearings out on a square of felt in the order they came. Eleven on a side. He cleaned each one between thumb and finger, found the two that had gone faintly oval, replaced them from the tin, and rebuilt the stack with grease worked in by hand until the cone seated against the race with no play and no drag. He spun the wheel. It ran true and silent under his fingers.
+_Seto receives Amara's signal. He doesn't know what it is. He runs a trace that returns nothing._
 
-Forty-three minutes. He was on the road by 0640.
+He repaired the rear hub at 0545 — bearing pulling three percent on the right for two weeks, monitored long enough to be sure. Flipped the bike, pulled the wheel, pressed the new Shimano set in with his thumb and the heel of his palm, feeling for the seat. Checking the rotation until the resistance ran even all the way around. Forty-three minutes. He was on the road by 0640.
 
-The morning was the color of wet concrete and smelled of it. He took the Seam between Zone 3 and Zone 4 because the Seam was where the managed channels thinned and a man could still move without asking anyone's permission, and because the climb up the old viaduct ramp let him feel the new bearings load and unload under his weight, clean, the way a thing feels when you have made it right with your hands.
+The message arrived at 0612 — a brief thermal shift at the base of the skull. He pulled over in the Seam between Zone 3 and Zone 4. Past the Arcturus grid forty meters east, the Seam air came in unfiltered: frying oil from a canteen window three floors up, standing water off the drainage channel, the smell of concrete that had absorbed a decade of other people's routes. He ran the diagnostic there. The signal had landed in his primary stack, not the intercept buffer where foreign traffic waited. No flag. No quarantine.
 
-At 0612 a message arrived that should not have reached him.
+The routing trace dissolved at the fourth hop. Not a dead end — an erasure. The sender credential was a Cellvault Level 3 neuretics maintenance registration. He logged it against his route map. The maintenance registration touched the eastern boundary of the Zone 6/7 corridor — the clearance node he checked through every time he delivered to the Orison crescent. He knew that door. He knew the checkpoint and the receiving bay beyond it, the managed air that hit your sinuses the moment you stepped off the street, the bay's flat lighting that never varied between morning and close. Three years of deliveries to that building, and the second checkpoint was as far as any courier got. The sender was past it. Nuru's clinic sat four blocks inside the same boundary.
 
-He felt it land before he read it. His tissue ran an intercept buffer?everything inbound got held, sniffed, sorted, the way you pat down a package before you carry it. This one skipped the buffer. It came in clean and seated itself in his primary stack, in the quiet place behind the base of his skull where only his own thoughts were supposed to sit. He coasted. He ran a trace on the route. It folded back on itself at the fourth hop and dissolved, the way smoke dissolves when you reach for it.
+She should not have reached him.
 
-The sender credential resolved to a Cellvault Level 3 neuretics maintenance registration. A tech who serviced privately-grown tissue, the kind not chained to any corp contract. His own tissue was sealed to Orison's protocols, end to end. She should not have been able to find the door, let alone open it.
+---
 
-There was an attachment. He did not open it on the road. He filed it, the way he filed everything, and he rode.
+The third package of the morning was in the gray corridor between the Orison crescent and the eastern relay district. Standing contact. He brought the bicycle to a stop and held the package out.
 
-The third package of his run was a soft envelope, hand-sized, for a stall under the El at Halsted. He came in at his usual cadence, the handoff a thing his body did without him?right hand out, the small twist of release, the receiver's fingers already closing. Except his right hand did not release. It closed in the wrong grip, fingers curling against the heel of his palm, a quarter-turn of torque against nothing, the exact shape his hand had made forty minutes earlier walking the bearing cones loose.
+The receiver's grip closed on the casing.
 
-It was not his motion. He knew the difference the way you know a footstep that isn't yours.
+His right hand did not let go.
 
-The receiver's eyes came up off the package and onto his face.
+It tightened — the specific torque of someone pressing a bearing housing into its seat. Thumb at the lip. Heel of the palm building lateral pressure. Waiting for the give that meant the seat was true. The workbench motion from forty minutes ago, with hands that were his.
 
-He let the hand finish. He turned the wrong grip into a slow adjustment of the envelope, a man being careful, and the receiver took it and the eyes went back down, and the cadence was normal again. Three seconds. Maybe four.
+The receiver's eyes came up to his face. She initialed the receipt left-handed, tucked it into her collar, and said nothing about the hand.
 
-He walked the bike to the corner and set his shoulder against the brick.
+He walked the bicycle to the corner and pressed his palm flat against the wall. Concrete. Cold. Six seconds. He counted them.
 
-His thumb was already on the call. Nuru. Eleven years of keeping her clean of all of this and the reflex still lived in the meat of him?when the floor moves, you reach for your sister. He looked at her name in the quiet place behind his skull. He counted instead.
+---
 
-Six seconds. Ten. He counted them against the wall, the cold of the brick coming through his jacket, until the count was the only thing moving. Threats arrived fast; that was the whole reason he had built the margins he'd built. You did not pull someone you loved across the line just because the line had moved under you. Not until you knew which way it had moved.
+She had attached six years of consortium research. Peer-reviewed, dense with frequency tables — not the kind of document that circulated informally, because the people who published it waited until the corpus was undeniable. He read it at his sixth delivery stop, bike locked to a drainpipe, a woman selling laminated prayers across the path and a dog sleeping in the exact center of the walkway.
 
-He did not call her. He rode the rest of the run.
+His routes had been telling him the same thing for six months: the Zone 6/7 medical corridor going white sector by sector as corp infrastructure absorbed the independent relay, the through-routes he'd worked for three years turning managed. He'd been logging it as market drift.
 
-That night he opened the attachment.
+The dog lifted its head and looked at him, then put it down again.
 
-It was not a message. It was six years of work?consortium papers, the Zone 7/8 relay band, calibration curves stacked one on another like sediment. He read the way he rebuilt a hub, slow, in order, each piece laid down before the next. His tissue had been drifting onto that band for months. He'd logged it as wear, as the slow give of carrier-grade tissue settling into the gray zone. The papers said otherwise. The papers said his tissue had been calibrating to the band. So had hers. Hers from the inside, from a maintenance suite, with a tech's hands on the work.
+He pulled his field notes against the paper's geographic data. The boundary matched Orison's maintenance territory exactly. He scrolled to Zone 6. Nuru's clinic sat four blocks inside the eastern margin. Her shift ended at twenty-two hundred, every night, in a building that Orison's maintenance infrastructure had absorbed in October.
 
-He pulled up the zone map he kept the way other men kept a face in a wallet. He marked every sector that had gone white in the last six months?gone corp, gone managed, gone closed to a carrier without clearance. He had filed each one as it happened. Market drift, he'd called it. The independent relay drying up the way it always dried up, a sector at a time, the trade moving on.
+He opened a draft to her. *Call me when* —
 
-He marked them and he looked at the shape they made, and the shape sat down inside Orison's maintenance territory exactly, every one, no sector outside the line and no part of the line without a sector.
+A ping landed in his peripheral stack: maintenance notification from the eastern boundary node, timestamped 16:47. Routine. Automated. The same node that cleared his packages through to the receiving bay. He looked at it for four seconds.
 
-He had been mapping a suppression line for six months and calling it market drift.
+He closed the draft without finishing the sentence.
 
-He sat with that for a while. Then he opened the thread and wrote one line. *Who are you to my tissue.*
+If she was on a watched node — and if Orison's footprint extended to the comm infrastructure the way it extended to the relay — sending anything would flag her account. He didn't know what the flag looked like from inside the second checkpoint. He knew only that the ping had landed while he was composing to her comm number, and that he could not afford to guess.
 
-She answered in twelve minutes.
+He thought about her sign-offs. Every night she sent *Clear. —N.*, and a minute later the corrected version with whatever she'd misspelled. She had done it for as long as he'd known her and never explained it. He thought about what it would mean for those to stop arriving.
 
-*I'm in a calibration suite. No windows. There's a client in the next chair asking me about pricing tiers and I'm answering him and I could hear myself answering, like it was coming off a recording. Because forty minutes ago my right hand replaced eleven bearings in a rear hub. I felt the two oval ones. I set them down on cloth. I built the stack back up by feel and there was no play in it and no drag, and it wasn't my hub, and they weren't my hands until they were doing your work, and then they were mine again and the client was still asking about tiers.*
+He put the notebook away. Two more runs before dark.
 
-Then, a minute behind it, alone:
+---
 
-*I kept checking my hands afterward. I don't know why. They were mine.*
+He reached out to Amara first. He'd waited long enough.
 
-He held his field notebook, the paper one, the one no channel touched. He had logged the band drift in it for half a year in his own small hand. He read her message again and he made the distinction his work had trained into him: the six years of data were one thing, clean, repeatable, a thing two parties could verify. The last sentence was another thing entirely. The data he could check. The last sentence he could only believe.
+*My name is Seto. What you sent — I've been mapping this boundary from the outside for six months without understanding what I was looking at. I need to know what it looks like from in.*
 
-He wrote: *What was your earliest pattern session? The first one.* He wanted a date to lay against his own.
+She answered in twelve minutes, and what she knew was wrong. Not wrong as in mistaken — wrong as in impossible. She knew his morning window at seven-minute accuracy. She described the bearing replacement not by schedule but by the physical sensation of it: resistance, give, the moment the seat ran true. She described the kind of person Seto kept outside his professional world — not Nuru by name or address, but by the specific quality of the thing being protected. The consortium papers had called the signal's effects involuntary. He believed them now.
 
-He did not send her the map. Not yet. You did not hand someone the shape of the thing closing around them until you knew whether telling them moved them toward the door or away from it.
+She said her maintenance records looked clean in the Zone 6/7 corridor when they shouldn't. Calibration visits logged, no events recorded. She described the room she'd been in when the bleed started — a calibration suite, managed lighting she couldn't read a time of day from, no windows. A client talking about pricing tiers for his next cycle.
 
-He flagged one entry for the night. Not the data. Her last line. *They were mine.*
+He had stood in the receiving bay enough times to know that light. She was describing rooms the lobby existed to protect.
 
-He turned the notebook face down, picked up the bike, and pushed off south. One block. Two. South was Zone 6, the clinic, the desk where Nuru's shift ended at 22:00, and his legs had the route before he'd decided on it?reach for your sister, the oldest reflex he owned.
+She finished with: *They were mine.*
 
-His device chimed against his collarbone.
+He held the field notebook. She wasn't reporting it up the chain. She was telling him what her hands felt like after. He wrote that last sentence down separately.
 
-An Orison sector notification. It logged his position against the managed corridor boundary, polite, automatic, the way the corp told you where you stood. He read it and understood that he was inside the suppression line. That he had been inside it long enough that it had felt like open road, like the Seam, like a place a man could move through without asking permission.
+*Your earliest session with that pattern — what month?*
 
-He put a foot down on the wet street.
+He did not give her the map. The channel had been open since morning and had already proven it carried things neither of them had sent deliberately. He gave her a question and held the map.
 
-He turned the bike north and went.
+---
+
+He checked his queue at twenty-one hundred. One flagged entry: a route advisory from a Zone 5 coordinator. No message from Nuru — not the first one, not the correction. Her shift wouldn't end for another hour.
+
+He faced the bicycle south toward Zone 6. The clinic was fifteen minutes in that direction.
+
+He held it there for three seconds.
+
+Then he turned it north and went.
 
