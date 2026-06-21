@@ -55,7 +55,7 @@ She pushed back from the console and walked to the diagnostic terminal on the no
 
 She opened her own personnel record in a second tab. Seven years of maintenance logs, calibration visit records, incident flags and resolutions. She pulled the most recent calibration visit: 03/2224, standard duration, technician ID, outcome nominal. She pulled the one before that. Nominal. The three before that. Every one: nominal. She pulled the full seven years and routed them to the secondary path. She had spent eleven days gathering evidence about other people. These were hers. She closed the tab.
 
-She had been attending her clients' calibration visits and watching the procedure run on them without knowing what she was watching. She had been reporting Type C drift in their tissue, logging it carefully, noting that it did not respond to standard recalibration — and the reason it did not respond was that it had never been treated, only hidden from the reads she was authorized to see. She had been performing quality oversight on a system that was simultaneously performing quality oversight on her.
+She had been attending her clients' calibration visits and watching the procedure run on them without knowing what she was watching. She had been reporting Type C drift in their tissue, logging it carefully, noting that it did not respond to standard recalibration. Her hands stopped over the keyboard. The reason it did not respond was that it had never been treated, only hidden from the reads she was authorized to see. She had been performing quality oversight on a system that was simultaneously performing quality oversight on her.
 
 Behind her, one of the rack drives cycled up and settled into its normal register.
 
