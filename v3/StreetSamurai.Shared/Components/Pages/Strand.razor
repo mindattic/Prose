@@ -316,6 +316,16 @@ else
                                 <i class="bi bi-star-half me-1"></i>@strand.Score.Value.ToString("0")%
                             </span>
                         }
+                        @* Canon toggle — author-only trust gate (SS-LAW-9). Click to mark/unmark. *@
+                        <span class="badge @(strand.IsCanon ? "bg-warning text-dark" : "bg-dark border border-secondary text-secondary")"
+                              style="cursor:pointer; font-size:0.7rem;"
+                              title="@(strand.IsCanon
+                                  ? "Canon — the gold standard for voice-harvest. Click to un-mark."
+                                  : "Not canon — click to mark this strand as the voice-harvest gold standard (SS-LAW-9).")"
+                              @onclick="ToggleCanonAsync">
+                            <i class="bi @(strand.IsCanon ? "bi-shield-fill-check" : "bi-shield") me-1"></i>
+                            @(strand.IsCanon ? "Canon" : "Not Canon")
+                        </span>
                         @if (TotalChars > 0)
                         {
                             <span class="text-muted small">@TotalChars.ToString("N0") chars</span>
@@ -1318,7 +1328,8 @@ else
     private string reviewModalSuffix = "/100";
     private List<ReviewsModal.Item> reviewModalItems = new();
 
-    private static string ScorePctColor(double pct) => pct >= 80 ? "success" : pct >= 60 ? "info" : pct >= 40 ? "warning" : "danger";
+    // Traffic-light thresholds per SS-US-J4: ≥80 green, 70–79 yellow, <70 red.
+    private static string ScorePctColor(double pct) => pct >= 80 ? "success" : pct >= 70 ? "warning" : "danger";
 
     private async Task OpenStrandReviewsAsync()
     {
@@ -2024,6 +2035,30 @@ else
         s.UpdatedAt = DateTime.UtcNow;
         await db.SaveChangesAsync();
         strandLoadedUpdatedAt = s.UpdatedAt;
+    }
+
+    /// <summary>Toggle IsCanon on this strand — the author-only trust gate (SS-LAW-9).
+    /// Canon strands are the gold standard for voice-harvest; only the author sets this.</summary>
+    private async Task ToggleCanonAsync()
+    {
+        if (strand == null || working) return;
+        working = true;
+        StateHasChanged();
+        try
+        {
+            var newVal = !strand.IsCanon;
+            var ok = await Workbench.SetCanonAsync(strand.Id, newVal);
+            if (ok)
+            {
+                strand.IsCanon = newVal;
+                Toast.Success("CANON",
+                    newVal
+                        ? "Strand marked Canon — the voice-harvest gold standard (SS-LAW-9)."
+                        : "Canon mark cleared.");
+            }
+        }
+        catch (Exception ex) { Toast.Error("CANON-FAIL", ex.Message); }
+        finally { working = false; await InvokeAsync(StateHasChanged); }
     }
 
     /// <summary>Persist the local-engine dials (VoiceId, VoiceStyle, VoiceStability)

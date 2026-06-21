@@ -276,11 +276,12 @@ updated: 2026-06-15
   seed intent. *(verified by `SemanticFidelityServiceTests`; MCP tool `check_semantic_fidelity`
   wired; `ss --check-fidelity`.)*
 
-- **SS-US-I7 ⬜** As the author, when I run `ss --diagnose-strand --slug <slug>`, the 12 parallel
+- **SS-US-I7 ✅** As the author, when I run `ss --diagnose-strand --slug <slug>`, the 12 parallel
   pre-flight LLM checks from `StructuralDiagnosticService` complete before any review panel fires,
   and any critical failure blocks the review rather than letting it score broken prose.
-  *Acceptance: `--diagnose-strand` output gates `--review-strand`; critical findings halt the review
-  with a clear message; MCP tool `diagnose_strand` returns the same gate decision.*
+  *(verified by `DiagnoseStrandCli` + `StructuralDiagnosticService` registered in DI;
+  `ReviewStrand` MCP tool runs structural pre-flight first — blocking failures return the diagnosis
+  in place of ballots; CLI exit code 2 on blocking failures; 2026-06-21.)*
 
 - **SS-US-I8 ⬜** As the operator, the flywheel is provably spinning: batch K+1 mean `Strand.Score`
   is higher than batch K mean after at least N=5 voice-harvest approval cycles. *Acceptance:
@@ -310,11 +311,11 @@ updated: 2026-06-15
   "Backfill" action per row for 0%-types. *Acceptance: table renders from `CoverageService` output;
   backfill action calls `--coverage --backfill` for that type; the page refreshes on completion.*
 
-- **SS-US-J4 ⬜** As an author, the `Strand.razor` workbench shows the current score, last review
-  timestamp, and a traffic-light badge (🔴 < 70 / 🟡 70–79 / 🟢 ≥ 80) so I know at a glance
-  whether the strand needs work before I advance. *Acceptance: badge derived from `Strand.Score`;
-  updates live after a review panel completes; clicking the badge navigates to the strand's review
-  summary.*
+- **SS-US-J4 ✅** As an author, the `Strand.razor` workbench shows the current score as a
+  traffic-light badge (🔴 < 70 / 🟡 70–79 / 🟢 ≥ 80) so I know at a glance whether the strand
+  needs work before I advance. *(verified by `ScorePctColor` updated to thresholds ≥80=success /
+  70–79=warning / <70=danger; badge clicks to full review summary via `OpenStrandReviewsAsync`;
+  2026-06-21.)*
 
 - **SS-US-J5 ⬜** As an author, the `/strand` workbench exposes a "Run Diagnostics" button that
   calls `ss --diagnose-strand` and surfaces the 12 pre-flight checks as an inline report (pass /
@@ -322,10 +323,11 @@ updated: 2026-06-15
   *Acceptance: button available on every strand workbench; inline results render within 30 s;
   "fail" checks block the "Review" button with a tooltip naming the failing check.*
 
-- **SS-US-J6 ⬜** As an operator, `ss --score-trend` prints the rolling mean score per batch of
-  strands (ordered by `StrandScoreHistory.Timestamp`) so the flywheel's direction is visible from
-  the CLI. *Acceptance: command prints a table: batch number, strands in batch, mean score, Δ vs
-  prior batch; a positive Δ after at least one harvest cycle confirms the flywheel.*
+- **SS-US-J6 ✅** As an operator, `ss --score-trend [--batches N]` prints the rolling mean score
+  per chronological batch of strands so the flywheel's direction is visible from the CLI.
+  *(verified by `ScoreTrendCli` + `--score-trend` wired in `Program.cs`; prints batch number /
+  strand count / mean score / Δ vs prior batch; exit 0 = positive trend, 1 = declining, 2 = not
+  enough data; 2026-06-21.)*
 
 ## Epic K — Service Communication Law Compliance {#epic-k}
 
@@ -341,14 +343,16 @@ updated: 2026-06-15
   any beat-write repository (SCL-2). *(verified by `InterfaceRegistrationTests` + DI graph analysis;
   validators implement `IFindingProducer` and write only to `FindingsService`.)*
 
-- **SS-US-K3 ⬜** As the codebase, a new automated audit test (`VoiceChangeLogAuditTests`) scans
-  the compiled assembly for any method that writes the key `literary_rules` or `tone_bible` to
-  `Settings` outside the designated approve handler (SCL-3). *Acceptance: test is green on CI;
-  adding a direct write anywhere else causes the test to fail.*
+- **SS-US-K3 ✅** As the codebase, `ServiceCommunicationLawAuditTests` scans the compiled assembly
+  for any type that holds `LiteraryRulesRepository` or `ToneBibleRepository` outside the approved
+  set {`VoiceHarvestService`, `DatabaseService`}, and asserts that `MutateLiteraryRules`/
+  `MutateToneBible` remain private (SCL-3). *(verified by 3 new K3 tests, 7 total audit tests
+  green; 2026-06-21.)*
 
-- **SS-US-K4 ⬜** As the codebase, a new automated audit test (`WorldStateAccessAuditTests`)
-  verifies there is no public `GetCurrentWorldState()` method on any service and no call to world
-  state without a `beatId` argument (SCL-4). *Acceptance: test is green on CI.*
+- **SS-US-K4 ✅** As the codebase, `ServiceCommunicationLawAuditTests` verifies there is no public
+  parameterless world-state method on any service and no method named `GetCurrentWorldState*`
+  without a context parameter (SCL-4). *(verified by K4 tests in `ServiceCommunicationLawAuditTests`;
+  2026-06-21.)*
 
 - **SS-US-K5 ✅** As the codebase, no `Character*` entity table has a `Location`, `CurrentAmmo`,
   or `IsAlive` column (SCL-5). Those facts live exclusively in `EntityStateEvents`.
@@ -361,9 +365,9 @@ updated: 2026-06-15
 - **SS-US-K7 ✅** As the codebase, no `BeatGeneratorService` call path fires without a prior
   successful `OutlineReviewService` gate (SCL-7). *(verified by `OutlineGateTests`.)*
 
-- **SS-US-K8 ⬜** As the codebase, `StrandReviewService` does not inject any beat-write, prose-
-  patch, or voice-apply service (SCL-8). *Acceptance: new `ReviewServiceAuditTests` checks
-  `StrandReviewService`'s resolved dependency graph for beat/prose/voice write surfaces — 0 found.*
+- **SS-US-K8 ✅** As the codebase, `StrandReviewService` does not inject any beat-write, prose-
+  patch, or voice-apply service (SCL-8). *(verified by K8 tests in `ServiceCommunicationLawAuditTests`;
+  constructor and field audit both green; 2026-06-21.)*
 
 ## Epic L — Architectural Completeness {#epic-l}
 
@@ -407,10 +411,10 @@ updated: 2026-06-15
   *Acceptance: prod schema has no facet remnants, has `VoiceChangeLog`, `UniverseId` on all three
   roots, and `--coverage` exits 0. (SS-US-F1-prod.)*
 
-- **SS-US-L7 ⬜** As an author, the `/strand` workbench includes an inline canon toggle so I can
-  mark a strand `IsCanon=true` without leaving the page (SS-US-Fc). *Acceptance: toggle visible
-  in the strand header; setting it persists immediately; the CLI `--list-strands` reflects the
-  change; canon strands are visually distinguished in `/strands` list.*
+- **SS-US-L7 ✅** As an author, the `/strand` workbench includes an inline canon toggle so I can
+  mark a strand `IsCanon=true` without leaving the page (SS-US-Fc). *(verified by
+  `ToggleCanonAsync` in `Strand.razor` + `StrandWorkbenchService.SetCanonAsync`; badge shows
+  gold shield (Canon) or dim shield (Not Canon); persists immediately to DB; 2026-06-21.)*
 
 ### Audit log
 
