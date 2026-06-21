@@ -3,12 +3,6 @@
 _Amara connects her anomaly log to Batch 44-C. She is on the cleanup list._
 
 [Beat 1]
-# What She Knows
-
-*Amara finds her batch number in the archive. 847 people. Her own name is one of them.*
-
-[Beat 1]
-
 The permissions gap had been live for eleven days before she found the sub-archive.
 
 She had not reported it. That was not strictly procedure, but it was consistent with how she worked. She logged anomalies and waited to understand them before she brought them to anyone, because a half-understood anomaly escalated wrong almost every time, and escalating wrong cost more than waiting. She had built seven years at Cellvault on that habit, and no one had complained about the results.
@@ -21,6 +15,8 @@ Then she had clicked into it.
 
 That was eleven days ago. She had been working the archive in forty-minute intervals, pulling what she could reach, logging it, moving on. The data was internal Orison documentation, administrative rather than clinical. Procurement records. Batch certification files. Calibration protocol specifications filed under contract addenda that Cellvault's standard access tier would never have surfaced. She had recognized what she was looking at on day three and had not stopped. Anomalies were her professional instinct. She logged them until she understood them.
 
+On day four she had stood up from the console and walked to the thermal door and stood at it for forty-five seconds. Then she went back. She had not stood up again after that.
+
 The server room sat at the back of Cellvault's Zone 6 maintenance floor, behind a thermal door that wanted two credentials and a calibration-port handshake. She had worked in this room for four years. She knew the sound the cooling fans made when a rack ran hot, a pitch that climbed by roughly a third as the thermal load rose, consistent enough that she could estimate the load without checking the display. She knew the four-second lag in the overhead lighting when you first came in, and the place on the east wall where a conduit ran too close to the surface and the plaster had gone warm to the touch. The room smelled of recycled air and hot aluminum, the dead-air smell of a space cleaned constantly and inhabited for work and nothing else.
 
 She sat at the console and pulled up the batch certification files.
@@ -29,7 +25,7 @@ Batch 44-C. Certified 2222. The document header listed seven authorized faciliti
 
 She found the contamination flag on the thirteenth page.
 
-She did not look up.
+She did not look up. The timestamp on the field read 2222. The room sounded the same.
 
 It was not formatted as a warning. It was formatted as an internal classification, a status field in a sub-table attached to the batch record, the kind of field that lived in documentation nobody outside was meant to read. It had been updated twice since the original certification, once in 2223 and once in 2224. The status read *managed liability.*
 
@@ -47,7 +43,7 @@ The remediation protocol was filed as a maintenance optimization addendum, acces
 
 She had been flagging drift in exactly that cluster for eight months.
 
-The fans cycled up through their third-pitch register and locked there. Somewhere in the rack behind her a drive was working harder than it should, the harmonic vibration traveling up through the floor and the chair and into the base of her spine. She did not file it for later. She did not move.
+The fans cycled up through their third-pitch register and locked there. The thermal door sensor ran a two-step entry sequence — someone in the corridor. She clicked the maintenance calendar forward, the batch records gone before she'd made a decision, and stayed exactly where she was while the sequence ran to timeout. Two footsteps on the far side of the threshold, a pause, then the sound of weight shifting twice — the way someone stands when they've forgotten whether they badged in, not searching for anything. Then nothing. Two minutes, and she pulled the records back up. Somewhere in the rack behind her a drive was working harder than it should, the harmonic vibration traveling up through the floor and the chair and into the base of her spine. She did not file it for later. She did not move.
 
 Eight hundred and forty-seven people had received neuretics from batch 44-C. Every one of them had a scheduled maintenance cycle. The calibration visits for batch 44-C recipients were not maintenance. They were management of the evidence.
 
@@ -55,9 +51,19 @@ The contractor briefing ran two pages — a procedural overview and a list of ap
 
 Three names were listed. None of them hers.
 
-She had been attending her clients' calibration visits and watching the procedure run on them without knowing what she was watching. She had been reporting Type C drift in their tissue, logging it carefully, noting that it did not respond to standard recalibration — and the reason it did not respond was that it had never been treated, only hidden from the reads she was authorized to see. She had been performing quality oversight on a system that was simultaneously performing quality oversight on her. The contractor briefing she had never been given. The authorization she had never signed. The addendum that did not exist in any documentation Cellvault shared with its maintenance staff.
+She pushed back from the console and walked to the diagnostic terminal on the north wall. She ran a live calibration check on herself — six seconds for the tissue read, the standard protocol she ran on her clients every working day. The display reported her implant as nominal. She looked at the word for five seconds. Then she walked back to her console.
+
+She opened her own personnel record in a second tab. Seven years of maintenance logs, calibration visit records, incident flags and resolutions. She pulled the most recent calibration visit: 03/2224, standard duration, technician ID, outcome nominal. She pulled the one before that. Nominal. The three before that. Every one: nominal. She pulled the full seven years and routed them to the secondary path. She had spent eleven days gathering evidence about other people. These were hers. She closed the tab.
+
+She had been attending her clients' calibration visits and watching the procedure run on them without knowing what she was watching. She had been reporting Type C drift in their tissue, logging it carefully, noting that it did not respond to standard recalibration — and the reason it did not respond was that it had never been treated, only hidden from the reads she was authorized to see. She had been performing quality oversight on a system that was simultaneously performing quality oversight on her.
+
+Behind her, one of the rack drives cycled up and settled into its normal register.
+
+The contractor briefing she had never been given. The authorization she had never signed. The addendum that did not exist in any documentation Cellvault shared with its maintenance staff.
 
 She did not know how far up that went. She did not need to know that yet.
+
+She opened the records for her Zone 7 clients — seven in the calendar year, four from batch 44-C. She pulled the first one and looked at the drift chart. Type C, flagged by her eight months ago, updated as monitoring, closed six weeks later by someone above her tier. The next client. Type C, flagged, closed. The third. The same. She closed the folder.
 
 She had attended her own calibration visits through the same scheduling system her clients used. The visits were logged as standard maintenance in her Cellvault personnel record, the same as any other year. The documentation on her side of the access tier showed only what any maintenance record showed: date, duration, technician ID, outcome flagged nominal.
 
@@ -77,7 +83,7 @@ She went back to the data.
 
 The professional reflex was to secure it, then process the implications. She had learned that the first time she found an anomaly worth reporting and spent forty minutes reading it before she thought to log where she'd found it; by the time she went back, the path had been reorganized and the original file location was gone. She had not made that mistake again.
 
-She sent the batch certification record to the secondary storage path Seto had configured two weeks ago. The path routed through Seam relay infrastructure — three hops through the gray zone between Zone 6 and Zone 7, where the admin frequency bands ran unmonitored and the relay beacons still carried legacy firmware nobody had updated since 2218. From outside any system that would have cared, it looked like ordinary calibration cache traffic. She had checked the architecture when he set it up, because she needed to understand the routing before she trusted it.
+She sent the batch certification record to the secondary storage path Seto had configured two weeks ago. The path routed through Seam relay infrastructure — three hops through the gray zone between Zone 6 and Zone 7, where the admin frequency bands ran unmonitored and the relay beacons still carried legacy firmware nobody had updated since 2218. From outside any system that would have cared, it looked like ordinary calibration cache traffic. She had checked the architecture when he set it up, because she needed to understand the routing before she trusted it. He had left it clean — no redundant hops, no dead drops that flagged if unused. She had recognized the discipline in it.
 
 Then the contamination flag. The secondary file with the recipient count. Addendum C-4 and everything attached to it — the cross-references, the distribution log, the briefing summary, the contractor list, the maintenance protocol in full with its anatomical designations and its outcome metrics, which were phrased not in terms of function restored but in terms of diagnostic visibility reduced. She pulled that language twice to be sure she had read it correctly.
 
@@ -145,9 +151,7 @@ She looked at the gap. The warm wall was at her back. The plaster was still warm
 
 She did not ask what the something else was. She knew the shape of a disclosure that had to be delivered in person.
 
-She had five days. She needed to be outside the maintenance chain before the twenty-fourth.
+She had five days.
 
-Eight hundred and forty-seven people.
-
-She closed the archive and started building a list.
+She opened her patient portal and cancelled the appointment — selected Cancel, typed *scheduling conflict*, confirmed. She had never cancelled a maintenance appointment; the data had always been worth attending for. Then she stood up, walked out of the server room without logging the session close, and let the thermal door seal behind her with her credential still live. The maintenance corridor ran at the correct temperature. The air tasted of nothing.
 

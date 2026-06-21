@@ -3,15 +3,11 @@
 _Ekow Ato makes his first approach. Seto negotiates a standoff and buys himself seven days._
 
 [Beat 1]
-# Rooftop, Zone 7
+The relay drop was on the third floor of a building that had once held a shipping broker's annex, before the Zone 7 consolidation folded the brokers into a single tower and left their old offices to whoever wanted them. Seto had found it eight months ago. The deadpoint was a function of position: at street level the signals from the Kessler mesh tower and the corrugated roof of the loading bay two addresses over ran into each other and degraded anything time-sensitive. Two floors up, the building stepped back from the loading bay's shadow and the signal resolved.
 
-*Seto runs a relay drop in Zone 7 and is intercepted by Ekow Ato, an NGRA veteran working a Gray Zone contract. Ekow tells him to walk away from the Orison work. Seto asks the right questions. Ekow gives him seven days. One day of margin.*
+He came up the stairwell at 18:09 and crossed through the access door onto the utility walkway. He clipped his receiver to the parapet edge and waited. The last package through this relay had been Amara's — she'd checked the architecture before letting anything sensitive move through it, the kind of question that told him what kind of operator she was.
 
-The relay drop was on the third floor of a building that had once held a shipping broker's annex, before the Zone 7 consolidation folded the brokers into a single tower and left their old offices to whoever wanted them. Seto had found it eight months ago. The deadpoint was a function of position. At street level the signals from the Kessler mesh tower and the corrugated roof of the loading bay two addresses over ran into each other and degraded anything time-sensitive. Two floors up, the building stepped back from the loading bay's shadow and the signal resolved.
-
-He came up the stairwell at 18:09 and crossed through the access door onto the utility walkway. He clipped his receiver to the parapet edge and waited.
-
-The light came in low and amber off the mesh towers, the kind of industrial light that made freight yards beautiful without anyone intending it to. Between Zone 6 to the west and Zone 8's administrative tower blinking north, the Zone 7 transit-corridor Seam ran three square kilometers of relay towers, repair shops, and canteen windows that belonged to nobody and worked for everybody. From up here the air thinned at the boundary lines where two CorpoNations stopped managing their edges. Neither one's filtered climate reached the gap, and you breathed the actual city: diesel particulate, the iron smell of rain on hot pavement, the chemical undertone of whatever the building's ventilation was losing to. The city the arcology feeds showed only as disaster, between curated segments, with nothing you could smell.
+The light came in low and amber off the mesh towers, the kind of industrial light that made freight yards beautiful. Between Zone 6 to the west and Zone 8's administrative tower blinking north, the Zone 7 transit-corridor Seam ran three square kilometers of relay towers, repair shops, and canteen windows that belonged to nobody and worked for everybody. From up here the air thinned at the boundary lines where two CorpoNations stopped managing their edges. Neither one's filtered climate reached the gap, and you breathed the actual city: diesel particulate, the iron smell of rain on hot pavement, the chemical undertone of whatever the building's ventilation was losing to. The city the arcology feeds showed only as disaster, between curated segments, with nothing you could smell.
 
 Sixty-three seconds. The same as always.
 
@@ -31,9 +27,9 @@ Two Seam professionals conducting a professional interaction, and they both knew
 
 Seto filed it. "What is the Orison work."
 
-Not a denial. An actual question. He wanted to hear what Ekow had been told.
+Not a denial. An actual question.
 
-Ekow looked at him for a moment. Something shifted in the quality of his attention, a recalibration. He had expected a denial, or something defensive, and Seto had given him a gap instead. Now he was deciding what to put in it.
+Ekow looked at him for a moment. His chin came up a fraction — not suspicion, reassessment. He had expected a denial, and Seto had given him a gap. Now he was deciding what to put in it.
 
 "Proprietary neuretic data," Ekow said. "Stolen. Moving through the Gray Zone courier network." A pause. "Through you, specifically."
 
@@ -51,29 +47,29 @@ It came out flat, not as a judgment. It was the advice Seto would give anyone. I
 
 Ekow reached into his jacket, slow and telegraphed, and Seto tracked the hand without moving. What came out was a white handkerchief, folded in quarters. Ekow held it without looking at it and turned it once between his fingers, not unfolding it, only the motion of something his hands knew how to do while the rest of him thought.
 
-Seto waited. He did not interpret the handkerchief. He filed it.
+Seto waited. He did not interpret the handkerchief.
 
 "I have seven days left on this contract," Ekow said. He was looking at the skyline now, toward the mesh tower on Kessler. "Make it easy for me. Don't be where I can find you for seven days."
 
-He put the handkerchief back in his jacket, walked to the access door, and stepped through it. The latch caught behind him. His footsteps went down the stairwell at the same pace as before, and Seto listened until he could not hear them.
+He put the handkerchief back in his jacket — one look at it before it went in, the folded white square, then done — walked to the access door without looking at the receiver still clipped to the parapet, and stepped through. The latch caught behind him. His footsteps went down the stairwell at the same pace as before, and Seto listened until he could not hear them.
 
 He stood on the walkway and did not move.
 
-Seven days. He could reroute four stops, respace the Zone 7 schedule, push his relay points west for a week. He had done longer gaps on less notice. Seven days was manageable.
+Seven days. He could reroute four stops, respace the Zone 7 schedule, push his relay points west for a week. He had done longer gaps on less notice.
 
-*Walk away from the Orison work* meant Orison knew someone was correlating. It did not mean they knew what had been found — if they knew that, they would have sent something other than a contractor with a seven-day window. Seven days was a suppression budget, not a resolution budget: let it go cold, move the problem to another quadrant. It did not mean walking away from the data he already had. The correlations were done. The dead corridors were mapped, the calibration clusters logged against the health-record gaps, and the shape was there whether he touched it again or not.
+*Walk away from the Orison work* meant Orison knew someone was correlating — not what had been found. If they'd known that, they would have sent something with a different mandate than a seven-day window. Seven days was a suppression budget, not a resolution budget: let it go cold, move the problem to another quadrant. The data he already had was not part of the deal.
 
 He pulled up the channel.
 
 *Someone's watching the Orison queries. I need to know how much you've accessed through the Cellvault system.*
 
-A pause — not hesitation, calculation. Then she sent the scope, and he read it.
+A pause — not hesitation, calculation. Then she sent the scope — text only, no tags, the way she relayed data — and he read it.
 
-His hand came off the parapet rail. He had not decided to move it.
+His hand came off the parapet rail.
 
-The scope was larger than anything he had given her material for. Amara had pulled correlations he had not asked for, extended the pattern into sub-records he had not queried, built a picture more complete than what he had assembled across eight months of route work. Not reckless — thorough, the quality that made her useful and the quality that made her visible. He understood immediately why someone had flagged it. What his body registered first was not the professional exposure but the weight of it: the specific gravity of someone who has not yet noticed they are falling. He knew that weight. It was not his. It arrived in his chest uninvited, and he recognized it the way you recognize a tool already in your hand that you do not remember picking up.
+The scope was larger than anything he had given her material for. Amara had pulled correlations he had not asked for, extended the pattern into sub-records he had not queried, built a picture more complete than what he had assembled across eight months of route work. Not reckless — thorough, the kind of thorough that doesn't know yet it's also a flag. She had gone deeper than the ask without adjusting her exposure profile, the way someone works when they're treating a problem from the outside when they're already in it. That was what his body registered. Not the professional liability. The distance.
 
-He set it down, or tried to, and it did not entirely go.
+He set down the professional piece. The distance didn't go with it.
 
 *How long until your next maintenance visit at the Zone 5 facility.*
 
@@ -85,15 +81,17 @@ Seven days on Ekow's contract. Eight days until Amara's visit. One day of margin
 
 He looked at the skyline. The mesh tower on Kessler carried a service indicator near the top, amber, not red. On the next street a truck sat at the loading dock with its running lights on, the driver waiting on something that was not ready yet. The amber indicator blinked.
 
-He had three options and he ran them in the two seconds it took the indicator to blink again. Tell her everything and let her make the call. Tell her nothing and reroute her without explanation. Tell her enough.
+He ran the options in the two seconds it took the indicator to blink again — full brief, blind reroute, partial — and made the call.
 
 *Move your schedule,* he sent. *Push it by two weeks.*
 
 He did not explain. He let the instruction sit. The driver got out of the truck, stretched, walked to the dock door, and knocked twice.
 
+She had not answered yet. He kept the channel open.
+
 Seto picked up his kit and went back through the access door.
 
 The repair shop two doors east had its roller door up, and the smell of hot solder reached him on the evening air, clean and specific, the smell of work being done by someone who knew how to do it. Zone 7 Seam at 18:30, shift change: freight workers heading for the Pulse or the grid, their day finished and filed, night operators arriving with their thermoses and the lunches folded in cloth bags they had carried for years. Nobody in a hurry. Nobody without a destination. He got on the bicycle and joined it.
 
-She had not answered yet. He kept the channel open. It sat in his peripheral awareness all the way through the Seam — an unanswered instruction, which was its own kind of answer — and he did not know what he would do if she pushed back.
+She answered at the first junction: *—Understood.*
 
