@@ -3,7 +3,7 @@
 _Kyle carries the Northpoint knowledge to Pixel's workbench and cannot put it down._
 
 [Beat 1]
-The Northpoint job had ended at 21:47 by the overlay clock. Kyle had ridden back on the same route he always took. He'd been in a drawer at Northpoint for just over an hour, and his hands had found the bag seam in the dark before his eyes had caught up. He did not remember deciding to come here.
+The Northpoint job had ended at 21:47 by the overlay clock. Kyle had ridden back on the same route he always took. He'd been in a drawer at Northpoint for just over an hour — concealment work, waiting for a courier to pass a checkpoint who hadn't known Kyle was there — and his hands had found the bag seam in the dark before his eyes had caught up. He did not remember deciding to come here.
 
 The door was unlocked. It was generally unlocked when she was working, which was most of the time, so he pushed it and went in and the door whispered shut on its pneumatic seal behind him, a small finality, and Pixel was at the bench under the ceiling light with her hair pulled into an updo that had been precise three hours ago and was loosening now, and she didn't look up from the sensor array she was calibrating, and she said: "Calibration's running."
 
@@ -15,7 +15,7 @@ He took off the jacket and set Silence against the wall in the usual spot, the n
 
 He sat on the stool. The stool was not his. She had not told him to use it. He had been using it for four years.
 
-In the lower-left of his overlay, the counter ran: 53:41. 53:42. He let his right hand rest on his knee, the chemical-burn scar on the palm turned up toward the bench light.
+In the lower-left of his overlay, the counter ran: 53:41. 53:42. He'd started it before Northpoint — not a timer, not a diagnostic, nothing with a name in the overlay menu, just a counter he'd set running. He let his right hand rest on his knee, the chemical-burn scar on the palm turned up toward the bench light.
 
 Pixel's hands moved over the sensor array with the unhurried precision she brought to everything she calibrated. The gyrostabilizer in her right wrist kept them steady in a way that went beyond pharmacology or training, a mechanical certainty she'd installed in herself at nineteen without asking anyone's permission. The array had a rhythm — a tool lifted, set, adjusted; a reading taken, noted, filed; the particular silence of equipment being brought into tolerance.
 
@@ -71,9 +71,11 @@ The counter in his overlay read 59:17. 59:18.
 
 Kyle opened his mouth.
 
+One sound — not a word, not yet, a syllable that hadn't decided what it was going to be, that started somewhere in the throat and stopped before it got out, before it found the consonant that would have made it into something nameable. A breath that had started to become something else.
+
 Pixel's hands went still on the bench.
 
-She was not looking at him. Her hands were flat on the bench surface, the probe horizontal between her fingers, and she was still, and the stillness was not the stillness of someone who hadn't noticed. It was the stillness of someone who had noticed and was holding herself quiet on purpose, and the space between that stillness and a word was the distance of a single breath, and Kyle was looking at the wall behind her, and his overlay read 59:38, 59:39 —
+She had heard it. She was not looking at him. Her hands were flat on the bench surface, the probe horizontal between her fingers, and she was still, and the stillness was not the stillness of someone who hadn't noticed. It was the stillness of someone who had noticed and was holding herself quiet on purpose, and the space between that stillness and a word was the distance of a single breath, and Kyle was looking at the wall behind her, and his overlay read 59:38, 59:39 —
 
 — 1:00:00.
 
@@ -101,6 +103,8 @@ Kyle moved toward the door. He didn't reach for his jacket yet — he picked up 
 At the door he stopped. His hand found the frame — not the latch, not the handle, just the edge of the frame where the door sat in the wall. He stood there for a moment with the pneumatic seal a few inches from his palm, and the bench light was behind him and the hallway was in front of him, and he did not turn around.
 
 He left.
+
+The door closed on its seal — a small exhale of pressurized air, the mechanism doing exactly what it was built to do, no ceremony, no particular weight. It was the same sound the door made every time. He had heard it from the other side more times than from this one.
 
 In 2E, Pixel stood at the bench.
 
