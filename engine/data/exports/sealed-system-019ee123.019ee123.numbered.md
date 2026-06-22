@@ -15,7 +15,7 @@ He opened his relay terminal and brought up the Zone 3 broker's contact address.
 
 He drafted the transmission request, opened the send dialog, and pushed it through.
 
-The message died at the third hop. The broker's infrastructure returned: *Endpoint unavailable. No route found.* He ran the diagnostic with one hand still flat on the terminal. Every node in the broker's network had gone offline in the past four hours. Not a maintenance gap. The infrastructure was simply not there anymore.
+The message died at the third hop. The broker's infrastructure returned: *Endpoint unavailable. No route found.* He ran the diagnostic with one hand still flat on the terminal. Every node in the broker's network had gone offline in the past four hours. Not a maintenance gap. The infrastructure was simply not there anymore. Zone 5/6 relay licensing ran under Orison's infrastructure agreements. Four hours was the standard window for a compliance withdrawal to clear. He had talked to Amara the previous afternoon.
 
 He closed the terminal.
 

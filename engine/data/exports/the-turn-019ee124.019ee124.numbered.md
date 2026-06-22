@@ -75,5 +75,5 @@ She waited. A relay beacon overhead ran its test. Two women with food stall cart
 
 The response came in forty seconds: *2PM. Same crossing.*
 
-She put the card away. She had four hours and she was going to use them. She walked toward the Zone 6 transit line, one hand in her pocket, and did not stop until she was underground.
+She put the card away. She had four hours before the leave authorization pushed through to her building access credentials. She was going to use them. She walked toward the Zone 6 transit line, one hand in her pocket, and did not stop until she was underground.
 

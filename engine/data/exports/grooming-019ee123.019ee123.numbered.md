@@ -11,15 +11,11 @@ His message came at 08:40: *I realized I owe you an answer. The audit question. 
 
 The second time she read it, she was looking for something else.
 
-She went at 10:00.
-
-In the corridor outside his floor she stopped at the restrooms and stood at the sink with the water running, her hands under the tap. Not washing her hands. The water was cold. She held it there.
-
 The question had three layers: the architecture of the log separation, the access tiers, and whether a specific protocol would leave a trace in the infrastructure side rather than the clinical side. She needed to reach the third layer. She had never made it past the first.
 
-She dried her hands and went in.
+She went at 10:00.
 
-His office was the fourteenth floor, no window. When she knocked, he was already looking at the door. He had the razor in his hand — the straight razor with the bone handle — drawing it flat under the nail of his index finger. Once. A habitual gesture. He set it down when she entered and did not seem to notice he had set it down.
+His office was the fourteenth floor, no window. When she knocked, he was already looking at the door. He had the razor in his hand â€” the straight razor with the bone handle â€” drawing it flat under the nail of his index finger. Once. A habitual gesture. He set it down when she entered and did not seem to notice he had set it down.
 
 "Sit," he said. Warm, not formal. The way you said it to someone you knew.
 
@@ -29,15 +25,15 @@ The office had the same quality of managed air it always had. The same neutral d
 
 "As an architectural question," she said. "For a project I'm considering."
 
-"The separation is at the data-governance layer," he said. "Clinical records require clinical clearance. Infrastructure logs require infrastructure clearance — a different track. A tech lead on the maintenance side would have infrastructure access." A pause. "You probably already knew that."
+"The separation is at the data-governance layer," he said. "Clinical records require clinical clearance. Infrastructure logs require infrastructure clearance â€” a different track. A tech lead on the maintenance side would have infrastructure access." A pause. "You probably already knew that."
 
-"I wanted to confirm." She kept her hands still on her bag. "The infrastructure logs — if someone ran a batch scan across multiple client records, would that leave a trace on the infrastructure side?"
+"I wanted to confirm." She kept her hands still on her bag. "The infrastructure logs â€” if someone ran a batch scan across multiple client records, would that leave a trace on the infrastructure side?"
 
 He looked at her for a moment longer than the question required.
 
 Then he stood.
 
-Not quickly. Not as if he were cutting her off. As if he had remembered he had somewhere to be — the natural movement of someone ending a meeting at exactly the right moment. "I'm glad I could be useful," he said. He said it while looking at the razor on the desk, picking it up, setting it in the case beside his keyboard. The case closed with a soft click.
+Not quickly. Not as if he were cutting her off. As if he had remembered he had somewhere to be â€” the natural movement of someone ending a meeting at exactly the right moment. "I'm glad I could be useful," he said. He said it while looking at the razor on the desk, picking it up, setting it in the case beside his keyboard. The case closed with a soft click.
 
 She did not finish the sentence. The moment for it was gone.
 
@@ -73,9 +69,7 @@ He typed something. When he looked at the result, his chewing slowed. "Huh," he 
 
 Forty-five minutes before Ciro's message had arrived.
 
-She stood at the intake window looking at the screen. The technician had gone back to his sandwich. The timestamp sat there: 08:45, her name, the infrastructure tier, Fonseca's authorization ID. He had arranged this and then composed a message inviting her to ask for it. The invitation was theater. The access was already waiting for her to find what she would look at with it.
-
-She thanked the technician. She went back to Zone 6 and sat at her bench and looked at the terminal with the infrastructure access that had been given to her as a gift.
+She thanked the technician. She went back to Zone 6 and sat at her bench.
 
 She opened the query interface. She started building.
 
