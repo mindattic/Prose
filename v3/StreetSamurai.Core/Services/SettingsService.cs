@@ -155,8 +155,8 @@ public class SettingsService : IDisposable
     }
 
     /// <summary>Where Publish drops the combined audio file so it's easy to
-    /// find. Empty = the user's Downloads folder (the default). The in-app
-    /// player still serves an internal copy; this is the user-facing export.</summary>
+    /// find. Empty = Desktop. The in-app player still serves an internal copy;
+    /// this is the user-facing export.</summary>
     public string PublishOutputDirectory
     {
         get => data.PublishOutputDirectory;
@@ -164,23 +164,22 @@ public class SettingsService : IDisposable
     }
 
     /// <summary>Resolve the effective publish output directory: the configured
-    /// path, or the user's Downloads folder when unset. Always returns an
-    /// absolute, existing directory (creates it if needed).</summary>
+    /// path, or the Desktop when unset. Always returns an absolute, existing
+    /// directory (creates it if needed).</summary>
     public string ResolvePublishOutputDirectory()
     {
         var dir = data.PublishOutputDirectory;
         if (string.IsNullOrWhiteSpace(dir))
-            dir = Path.Combine(Environment.GetFolderPath(Environment.SpecialFolder.UserProfile), "Downloads");
+            dir = Environment.GetFolderPath(Environment.SpecialFolder.Desktop);
         try { Directory.CreateDirectory(dir); } catch { /* fall through; caller handles write failure */ }
         return dir;
     }
 
     /// <summary>The literal output folder for the published manuscript <c>.docx</c> export
-    /// (typically the book's own folder). When set, <c>publish-docx</c> writes
-    /// <c>&lt;PublishExportDirectory&gt;\&lt;Hyphenated-Title&gt;.docx</c> and clears any existing
-    /// <c>.docx</c> in that folder first. Empty = the user's Downloads folder (legacy
-    /// slug-based naming, no clearing). Stray wrapping quotes/whitespace are tolerated by
-    /// the exporter.</summary>
+    /// (typically the book's own folder). <c>publish-docx</c> writes
+    /// <c>&lt;PublishExportDirectory&gt;\&lt;Hyphenated-Title&gt;\&lt;Title&gt; V&lt;N&gt;.docx</c> and clears
+    /// any existing <c>.docx</c> in that subfolder first. Empty = Desktop.
+    /// Stray wrapping quotes/whitespace are tolerated by the exporter.</summary>
     public string PublishExportDirectory
     {
         get => data.PublishExportDirectory;
@@ -638,9 +637,9 @@ public class SettingsService : IDisposable
         /// Default 320 kbps MP3 — the source is fetched losslessly when the tier allows.</summary>
         public string AudiobookFormat { get; set; } = "mp3_320";
         public bool TtsUseAudioTags { get; set; } = true;
-        /// <summary>Empty = the user's Downloads folder.</summary>
+        /// <summary>Empty = Desktop.</summary>
         public string PublishOutputDirectory { get; set; } = "";
-        /// <summary>Base dir for the manuscript .docx export. Empty = Downloads.</summary>
+        /// <summary>Base dir for the manuscript export. Empty = Desktop.</summary>
         public string PublishExportDirectory { get; set; } = "";
         public int TtsPauseSectionMs { get; set; } = 1800;
         public int TtsPauseSceneMs { get; set; } = 1000;

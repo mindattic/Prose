@@ -192,7 +192,7 @@ public static class ServiceCollectionExtensions
         // Export discovery — auto-finds all IExportableRepository instances
         services.AddSingleton<ExportDiscoveryService>();
 
-        // Canon JSON export to user's Downloads folder (entity / repo / global)
+        // Canon JSON export to the configured publish directory (entity / repo / global)
         services.AddSingleton<CanonExportService>();
 
         // Family-relationship API on top of the existing Edge table

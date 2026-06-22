@@ -14,12 +14,11 @@ namespace StreetSamurai.Blazor.Cli;
 /// Args:
 ///   --min-chars &lt;N&gt;   Only beats with Text.Length &gt; N are burst. Default 800.
 ///   --strand &lt;slug&gt;   Restrict to one strand (by slug). Repeatable.
-///   --book &lt;slug&gt;     Descend from a book-level strand into all chapter (and
-///                        deeper) descendants and burst beats on each leaf.
-///                        Repeatable. Books-are-strands / chapters-are-substrands
-///                        means filtering on kind="book" alone catches zero
-///                        beats — they live on the chapter children.
-///   --kind &lt;kind&gt;     Restrict to strands of a given Kind ("book", "chapter", "episode").
+///   --book &lt;slug&gt;     Descend from a story-level strand into all chapter descendants
+///                        and burst beats on each leaf. Repeatable. Stories-are-strands /
+///                        chapters-are-substrands means filtering on kind="story" alone
+///                        catches zero beats — they live on the chapter children.
+///   --kind &lt;kind&gt;     Restrict to strands of a given Kind ("story", "chapter").
 ///   --dry-run            Don't write; just report what would change.
 ///
 /// Shared beats (in &gt;1 strand) are skipped — the burst would create

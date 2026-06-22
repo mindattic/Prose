@@ -8,8 +8,8 @@ namespace StreetSamurai.Blazor.Cli;
 /// <summary>
 /// <c>ss --publish-audiobook (--id &lt;guid|prefix&gt; | --slug &lt;slug&gt;) [--robust] [--tts ENGINE]</c>
 /// — render the whole strand as ONE continuous narration (no per-beat voice
-/// drift) and write the MP3 to the user's Downloads folder. The headless twin of
-/// the "Publish Audiobook" button.
+/// drift) and write the MP3 to the configured publish output directory (Desktop
+/// fallback). The headless twin of the "Publish Audiobook" button.
 /// <para><c>--tts</c> selects the engine: <c>elevenlabs</c> (default, paid, highest
 /// fidelity) or a FREE fully-local engine — <c>piper</c> (bundled exe, fastest),
 /// <c>kokoro</c> (Python, CPU-friendly, recommended free default), or <c>chatterbox</c>

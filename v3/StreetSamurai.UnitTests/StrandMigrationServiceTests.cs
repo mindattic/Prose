@@ -84,12 +84,12 @@ public class StrandMigrationServiceTests
         Assert.That(report.BeatsAdded,    Is.EqualTo(24));
 
         await using var db = await dbFactory.CreateDbContextAsync();
-        Assert.That(await db.Strands.CountAsync(s => s.Kind == "book"),    Is.EqualTo(2));
+        Assert.That(await db.Strands.CountAsync(s => s.Kind == "story"),   Is.EqualTo(2));
         Assert.That(await db.Strands.CountAsync(s => s.Kind == "chapter"), Is.EqualTo(6));
         Assert.That(await db.Beats.CountAsync(),                            Is.EqualTo(24));
         Assert.That(await db.StrandBeats.CountAsync(),                      Is.EqualTo(24));
 
-        // Parent-child wiring: every chapter strand points at a book strand.
+        // Parent-child wiring: every chapter strand points at a story strand.
         var orphans = await db.Strands
             .Where(s => s.Kind == "chapter" && s.ParentStrandId == null)
             .CountAsync();

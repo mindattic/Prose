@@ -354,7 +354,7 @@ public class StrandWorkbenchService
     /// </summary>
     public async Task<Guid> CreateStrandFromBeatsAsync(
         string title, IReadOnlyList<string> beatTexts, string? synopsis = null,
-        string kind = "scene", string? seed = null, bool chapterStartFirst = false, CancellationToken ct = default)
+        string kind = "story", string? seed = null, bool chapterStartFirst = false, CancellationToken ct = default)
     {
         await using var db = await dbFactory.CreateDbContextAsync(ct);
         var strandId = Guid.CreateVersion7();
@@ -454,7 +454,7 @@ public class StrandWorkbenchService
             var slug = $"{Slugify(title)}-{childId.ToString("N")[..8]}";
             db.Strands.Add(new Strand
             {
-                Id = childId, Slug = slug, Title = title, Kind = "strand", Status = "draft",
+                Id = childId, Slug = slug, Title = title, Kind = "chapter", Status = "draft",
                 ParentStrandId = strandId, SortKey = parentSort,
             });
             parentSort += 100.0;
@@ -467,7 +467,7 @@ public class StrandWorkbenchService
             }
         }
 
-        parent.Kind = "book";        // the Collection label (display only; structurally a parent strand)
+        parent.Kind = "story";
         parent.UpdatedAt = DateTime.UtcNow;
         await db.SaveChangesAsync(ct);
         log.LogInformation("Split '{Title}' into a Collection: {Children} child strands, {Beats} beats.", parent.Title, segments.Count, beatCount);
@@ -1864,8 +1864,7 @@ public class StrandWorkbenchService
 
             await audioStore.WriteCombinedAsync(strand.Slug, ext, finalBytes, ct);
 
-            var dlDir = CanonExportService.DownloadsDir;
-            Directory.CreateDirectory(dlDir);
+            var dlDir = settings.ResolvePublishOutputDirectory();
             var dl = Path.Combine(dlDir, $"{SafeFileName(string.IsNullOrWhiteSpace(strand.Title) ? strand.Slug : strand.Title)} V{strand.Version}.{ext}");
             await File.WriteAllBytesAsync(dl, finalBytes, ct);
 
@@ -1874,7 +1873,7 @@ public class StrandWorkbenchService
             strand.AudioCompletedAt = DateTime.UtcNow;
             pub.Status = "ready";
             db.StrandAudioEvents.Add(NewAudioEvent(strandId, null, pub.Id, "mp3-produced",
-                $"{strand.Slug}/strand.{ext}, {finalBytes.Length} bytes; copied to Downloads"));
+                $"{strand.Slug}/strand.{ext}, {finalBytes.Length} bytes; copied to publish dir"));
             await db.SaveChangesAsync(ct);
             exportProgress[strandId] = new ExportProgress(segments.Count, segments.Count, "done");
             log.LogInformation("Published one-pass audiobook for strand {S}: {Seg} segment(s) -> {Path}", strandId, segments.Count, dl);

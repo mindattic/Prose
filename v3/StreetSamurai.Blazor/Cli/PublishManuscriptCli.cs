@@ -7,7 +7,7 @@ namespace StreetSamurai.Blazor.Cli;
 
 /// <summary>
 /// <c>ss (--publish-md | --publish-pdf) (--id &lt;guid|prefix&gt; | --slug &lt;slug&gt;) [--author "Name"]</c>
-/// — render a strand to Markdown or PDF in the user's Downloads folder.
+/// — render a strand to Markdown or PDF in the configured publish directory (Desktop fallback).
 /// Markdown output embeds <c>&lt;!-- beat:N:id7 --&gt;</c> markers enabling
 /// <c>ss --import-md</c> round-trip. The headless twin of the writer page's Export items.
 /// </summary>

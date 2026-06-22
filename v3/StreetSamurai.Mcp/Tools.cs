@@ -61,7 +61,7 @@ public class CanonTools
     /// Load a character's full canon record by name: identity, psychology, behavioral profile, speech patterns, augmentations, story hooks. Primary source for voice when writing a POV chapter.
     /// </summary>
     [McpServerTool, Description("Load a character's full canon record by name: identity, psychology (core_fears, core_desires, coping_mechanisms, blind_spots, secret), behavioral (decision_rules, escalation_ladder, contradictions, habits, breaking_points, stress_responses), speech_patterns (vocabulary, cadence, verbal_tics, example_lines), augmentations, story_hooks. This is the primary source for voice when writing a POV chapter.")]
-    public string GetCharacter([Description("Exact name of the character (e.g. 'Kyle Ellen Corbin-Vister' or 'Sasha VÃµ').")] string name)
+    public string GetCharacter([Description("Exact name of the character (e.g. 'Kyle Ellen Corbin' or 'Sasha VÃµ').")] string name)
     {
         var c = characters.GetByName(name);
         if (c == null) return JsonSerializer.Serialize(new { error = "not_found", name }, JsonOpts);

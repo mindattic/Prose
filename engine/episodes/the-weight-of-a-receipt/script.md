@@ -1,4 +1,4 @@
----
+﻿---
 title: The Weight of a Receipt
 episode_id: 019e3c17-b886-7b45-886e-d5639082cd84
 slug: the-weight-of-a-receipt
@@ -22,7 +22,7 @@ He heard the bike before he saw it — a pedal-assist Carrion Logistics LLC cour
 
 The kid threaded between two Pinnacle Civil maintenance drones and braked hard on the grease-stained tiles outside the stall's awning.
 
-"Kyle Corbin-Vister?"
+"Kyle Corbin?"
 
 Kyle set his chopsticks across the bowl.
 
@@ -34,7 +34,7 @@ He took the paper.
 
 The handwriting was careful. Someone had taken time with it.
 
-*To whoever Mr. Corbin-Vister is — my name is Miriam. I was told you are fair. We have a problem with a company called Tessera and I do not know if I am being helped or eaten. The congregation at the container complex on Tier 4 North, berth 9-through-14. Tonight if you can. — Ayushmaan Horváth sends his regards and says you will understand.*
+*To whoever Mr. Corbin is — my name is Miriam. I was told you are fair. We have a problem with a company called Tessera and I do not know if I am being helped or eaten. The congregation at the container complex on Tier 4 North, berth 9-through-14. Tonight if you can. — Ayushmaan Horváth sends his regards and says you will understand.*
 
 Kyle read it twice.
 
@@ -78,7 +78,7 @@ A woman stood in the doorway.
 
 She was in her late fifties, small, with grey-streaked hair pulled back. She wore a wool-blend coat — Helix Thermal, the budget line, the one they advertised with the slogan *Warmth Is a Right* while lobbying to restrict residential heat subsidies. The coat had been repaired at the elbow with a different-colored thread.
 
-"Mr. Corbin-Vister," she said.
+"Mr. Corbin," she said.
 
 "Miriam."
 
@@ -170,7 +170,7 @@ She was in her thirties, polished, the kind of tired that got concealed by good 
 
 The array warmed. She had augmentation — low-grade Helix social-calibration implant, the kind that read microexpressions and fed you prompts. Sales tool. Negotiation tool. She would know he was reading her and she wouldn't know what he was reading with.
 
-"Mr. Corbin-Vister," she said, without looking surprised. Someone had told her to expect him or she was good at not being surprised. He filed both.
+"Mr. Corbin," she said, without looking surprised. Someone had told her to expect him or she was good at not being surprised. He filed both.
 
 "Inoue."
 

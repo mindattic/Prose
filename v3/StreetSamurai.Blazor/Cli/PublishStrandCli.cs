@@ -7,8 +7,8 @@ namespace StreetSamurai.Blazor.Cli;
 
 /// <summary>
 /// <c>ss --publish-strand</c> — stitch an existing strand's recorded beats into
-/// one combined file (WAV → final MP3), drop a friendly copy in the publish
-/// output directory (Downloads by default), and record the 1:M publication run
+/// one combined file (WAV → final MP3), drop a friendly copy in the configured
+/// publish output directory (Desktop fallback), and record the 1:M publication run
 /// plus its process-event ledger. Resolves the strand by id (full or prefix)
 /// or slug. Headless equivalent of the in-app Publish button.
 ///

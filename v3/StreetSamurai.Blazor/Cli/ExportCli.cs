@@ -5,7 +5,7 @@ namespace StreetSamurai.Blazor.Cli;
 
 /// <summary>
 /// CLI surface for <see cref="CanonExportService"/>. Writes canon JSON to the
-/// user's Downloads folder. All filenames are timestamped (yyyyMMdd-HHmmss).
+/// configured publish directory (Desktop fallback). All filenames are timestamped (yyyyMMdd-HHmmss).
 ///
 ///   ss --export global                       every repo, zipped
 ///   ss --export &lt;repoName&gt;                one repo, zipped (e.g. "people", "weaponry")

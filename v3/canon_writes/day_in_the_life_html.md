@@ -1,6 +1,6 @@
 ﻿# Day in the Life
 
-*Protagonist: Kyle Ellen Corbin-Vister*
+*Protagonist: Kyle Ellen Corbin*
 
 ## Part I: The Ride Back
 

@@ -1,4 +1,4 @@
-using System.Text;
+﻿using System.Text;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Logging;
 using StreetSamurai.Core.Data;
@@ -183,7 +183,7 @@ public class EpisodeGeneratorService
     private string BuildSystemPrompt()
     {
         var sb = new StringBuilder();
-        sb.AppendLine("You are the narrator of an episodic cyberpunk adventure starring Kyle Ellen Corbin-Vister.");
+        sb.AppendLine("You are the narrator of an episodic cyberpunk adventure starring Kyle Ellen Corbin.");
         sb.AppendLine("Setting: 2226, the Greater Lake Michigan Zone (GLMZ), a CorpoNation-ruled vertical city.");
         sb.AppendLine();
         sb.AppendLine("KYLE — folk hero. Does not change. Same blade, same revolver, same noodle bowl, same code.");

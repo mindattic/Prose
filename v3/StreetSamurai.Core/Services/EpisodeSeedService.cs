@@ -1,4 +1,4 @@
-using Microsoft.EntityFrameworkCore;
+﻿using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Logging;
 using StreetSamurai.Core.Data;
 
@@ -65,7 +65,7 @@ public class EpisodeSeedService
 
         // Pick a non-Kyle character at random for the {character} slot.
         var characterId = await PickRandomEntityIdAsync(db, "character",
-            excludeName: "Kyle Ellen Corbin-Vister", ct);
+            excludeName: "Kyle Ellen Corbin", ct);
 
         var placeId = template.Contains("{place}")
             ? await PickRandomEntityIdAsync(db, "place", excludeName: null, ct)

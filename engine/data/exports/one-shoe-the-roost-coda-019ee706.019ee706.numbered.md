@@ -1,4 +1,4 @@
-# One Shoe (The Roost) (CODA)
+# Chapter 12: One Shoe
 
 _Kyle at the Roost after the funeral; Femi Kasparov and the lemon tree; the year-of-life cost of the neuretics overclock named; a Vulture prices the Atlas hardware and steps back; the Roost is Axiom in the Office schedule; "his body had been changed before anyone asked."_
 
@@ -62,7 +62,9 @@ It was from the Continuity Office. Not addressed to a person. Addressed to the s
 
 The contact name was not Mr. Able.
 
-Femi refolded the paper and returned it to the drawer. "Two weeks after the Vulture," he said. "They run independently. They don't share notes."
+Kyle took the paper. He was still reading when Femi reached across and took it from him — two movements, out of Kyle's hand, folded, returned to the drawer. 'Better to read it than log it,' he said.
+
+The partial scan was already running. Kyle's overlay had committed the reference number and the effective date and was querying the district acquisition database for secondary records — the timeline, the assessed valuation — when the response returned: *Access Restricted: District Acquisition Program, WEST TOWN WEST. Dispute window closed. Contact form available. No direct lookup.* Kyle tried the alternate path. Same wall. The filing had been designed to be findable but not openable — a door with a window in it and no handle on the inside. "Two weeks after the Vulture," he said. "They run independently. They don't share notes."
 
 "I know," Kyle said.
 
@@ -77,4 +79,149 @@ He looked at the lemon tree. The coloring lemon was fully yellow now.
 Femi thought about it. "A while," he said.
 
 The grow lamp hummed.
+
+[Beat 5]
+Kyle didn't move from the wall.
+
+Femi didn't offer anything else, and the room did what the room did. The grow lamp held its frequency, a low electric hum that didn't change.
+
+Femi got up from the chair. He moved slowly, the single right shoe making a deliberate sound on the floor. He crossed to the lemon tree and pressed his thumb against the coloring lemon — not hard, a brief contact, the way you checked something you'd been watching for a long time. He didn't pick it. He went back to his chair and sat down with the same care he'd stood up with.
+
+Kyle pushed off the wall.
+
+He asked the question before he had worked out why he was asking it.
+
+"Do you have somewhere to go after?"
+
+Femi looked at him. Not at the question — at Kyle. In eleven years of coming to The Roost, Kyle had never asked Femi anything that wasn't operational. He knew this about himself. The question had come out anyway.
+
+"There is always somewhere," Femi said.
+
+Kyle crossed to the lemon tree. He took the coloring lemon off the branch — one hand, careful, the way you took something that was almost ready. It sat in his palm, taut and warm from the grow lamp.
+
+"You can have it," Femi said. "It was coming off anyway."
+
+[Beat 6]
+The inventory was automatic.
+
+He didn't have the gear with him — it was across the hall in his apartment, racked and quiet. But he ran it anyway, the way he'd been running it since he was nineteen and understood what the weight meant. Silence: a kilo and a half, plain matte-black steel and carbon-nanotube composite, no edge-work, nothing that needed explaining. Cacophony: the five-shot revolver, heavier than it looked, because everything that worked was heavier than it looked. The subdermal mesh — not gear exactly, more like geography. Seventy meters of braided polyceramic weave laid in the tissue under his back and chest, which had stopped two rounds from an Arcturus sergeant three nights ago and had not fully stopped hurting. The neuretics: Atlas-grade NeoCortex, no governor. The last item in the list was also the one running the list.
+
+"The mesh stopped them," Femi said from across the room. Not a question.
+
+"Two," Kyle said. "Three would have been through."
+
+He'd been carrying the hardware since sixteen. He hadn't chosen it; he'd woken up with it inside him and spent eleven years becoming the person it required. The Vulture who'd come to see Femi six weeks ago had priced it correctly. The net recovery value had been a number that surprised him.
+
+That was the more interesting data. Not the number. The surprise.
+
+He was good at accounting for value. He'd spent eleven years taking payment, running tabs, paying exact. He paid exact because debt was a kind of leverage and he didn't carry leverage. He had been carrying something worth considerably more than he'd been pricing it, and somewhere in the eleven years he had stopped noticing.
+
+[Beat 7]
+He thought about Pixel.
+
+Not what to say — whether to say anything.
+
+The night across the hall had been three nights ago. He'd come home from the Arcturus job with the tremor running harder than usual — it had been building for six weeks; that night it had gone bilateral — and she'd patched the mesh tear and the soft-tissue bruising, and at some point after that the wall had come down. He wasn't sure who had moved first. He'd thought about it twice in the last three days and arrived at the same conclusion both times: it didn't matter who moved first. The wall came down because it came down. He'd let it.
+
+She knew about the neuretics in the general sense — no governor, Atlas grade, a math problem that was going to need solving eventually. They hadn't been specific about timelines because there hadn't been specific timelines. The not-yet had been abstract. Now the not-yet had coordinates.
+
+Two years at current load. Possibly less.
+
+He didn't know what to do with the word *possibly*. It was honest. He respected it. It was also the part that would land worst, said aloud.
+
+He hadn't decided whether to say anything. He noticed, standing against Femi's wall with the grow lamp humming, that he hadn't decided.
+
+[Beat 8]
+"The Continuity Office letter," Kyle said. "When's the effective date?"
+
+Femi told him. A month out. End of the fiscal quarter, the way district acquisition always ran.
+
+Kyle nodded once and did the calculation. "You've got time to repot," he said.
+
+Femi looked at the tree. It was a Meyer lemon, which preferred coastal California and a specific soil chemistry and about twice the humidity The Roost could manage in August.
+
+"The Roost has always been the wrong climate," Femi said. "The tree doesn't know that."
+
+The grow lamp hummed.
+
+Kyle left.
+
+[Beat 9]
+Kyle went down the three flights with the lemon.
+
+The laundry on the ground floor was still running its last load of the evening — warm, the smell of heated clean fabric, a sound like weather coming through the walls. He pushed through into the outside air, and Paulina hit him: freight hum from the overhead tier, a Windhover maintenance drone running its grid circuit forty feet up, orange navigation blink every three seconds. Two people at the transit shelter on the corner were comparing something on their overlays, laughing about whatever they were seeing.
+
+He stood on the sidewalk for a moment.
+
+The same city. Running the same evening shift it ran every evening. Freight moved. The drone completed its arc and turned east. The two people at the shelter laughed again and one of them gestured, something briefly visible before they collapsed it. Ordinary stuff. The city didn't know about the two-year number. It was busy.
+
+He was the one carrying it. He was the one who had the height now.
+
+He put his hands in his coat pockets and walked south toward Mrs. Chen's.
+
+[Beat 10]
+Mrs. Chen's was close to empty.
+
+End of service, the hood lamp already dimmed to low, the counter clean except for one other customer hunched over a bowl at the far end. Kyle sat. Mrs. Chen set a bowl in front of him without looking up from the prep surface where she was breaking down the last of the aromatics. Pork bone broth, the color of old paper, two hours of reduction in it. He picked up the chopsticks.
+
+He ate the whole bowl.
+
+He wasn't thinking about the number — or he was thinking about it the way you thought about a ceiling you'd been living under your whole tenure in a building: it was always there, it wasn't new, you just knew the measurement now. The broth was hot and he ate it deliberately.
+
+She refilled without being asked. She did this for no one else. He did not thank her in the way that required answering. The shop ran its closing sounds around him.
+
+Mrs. Chen turned to the bowl she was rinsing, eyes down.
+
+"Not coming back?" she asked.
+
+Kyle set his chopsticks down. "I'll be back."
+
+She turned back to the rinsing. He lay the Φ on the counter — exact, no rounding, no sentiment in the amount. Stood up. Walked out into the rain that had started while he was eating.
+
+[Beat 11]
+Home.
+
+Pixel's light was on, her shadow moving behind the frosted glass panel — the particular rhythm of her when she was in the middle of something technical, the way she moved between her bench and her terminal, two steps and back, two steps and back. The bench coolers were cycling, which meant she had a job open, components live under the hood. He stood in the hall and listened to the ordinary sound of her working.
+
+He didn't knock.
+
+He went into his apartment, hung the coat on the hall peg, set Silence on the rack. He didn't turn on the lamp. He stood in the kitchen in the dark for a minute, just listening to the building — the pipes knocking once in the east wall. The bird that lived two floors up was working through an interval, three notes and a rest, three notes and a rest. Below Halsted, the subway pulse came up through the floor in a frequency you felt before you heard it.
+
+He stood in the dark kitchen and let the building settle around him.
+
+[Beat 12]
+He went to the terminal.
+
+Not to open the relay. He pulled up the contract log and ran the eleven-year history — every job, scope, fee, any gratuity paid, duration, closure date. He read them in order, the way you read something looking for a pattern you suspected but couldn't name.
+
+The jobs had arrived when he was available.
+
+Not when the client needed something — when he could take it. Every single one, measured against his log, against the gaps between closures: the posting appeared in the relay at the precise moment his inventory was clear and his body was recovered enough to carry a job. There was no randomness in the distribution. He'd been working freelance for eleven years and had not once gone more than eighteen days without a posting, and the postings always arrived inside that window.
+
+He sat with this.
+
+He closed the contract log and opened a new message field in the relay. He sat in front of the blank field. He didn't type anything. After two minutes he closed it.
+
+He looked at the kitchen drawer. Inside it was the printout Pixel had made three weeks ago — the relay architecture, the scatter plot of tracked transmission points, all of them converging on the carousel node. He'd looked at it four times. He did not open the drawer.
+
+He went to bed. The rain was still going outside the window. He lay in the dark and did not sleep for a long time, and the building went quiet around him by degrees, and eventually even the bird upstairs stopped its interval, and the rain slowed, and he lay there with the number and the pattern and said nothing to either of them.
+
+[Beat 13]
+At 02:14, the relay pinged — standard routing, the same client type he'd taken twenty-eight times in the last three years. Kyle looked at the summary. He declined it. Not because the terms were wrong. Not because the job was dirty. He declined it because he had looked at eleven years of contracts and understood that he had never once declined a relay job, and that understanding had now become a fact he was choosing to act on. He closed the window.
+
+That was new.
+
+Across the hall, Pixel's bench coolers cycled down at 02:14.
+
+She had been at the terminal since eleven. Not the bench work — the prosthetic arm was done and invoiced. She had moved to the terminal when the building went quiet, with the scatter plot on the right monitor and the relay architecture on the left: the same materials she had been working with for three weeks, the cluster tightening each time she refined the transmission signatures. Forty-eight nodes, thirty-seven of them converging on the carousel at Leavitt, the node cold now but the cluster still dense. She was not a psionic. She didn't need to feel it. She could read the geometry.
+
+She opened the city permit portal. Clybourn Avenue. The cluster's center, within six feet.
+
+The reason field: electrical conduit inspection, legacy grid node assessment.
+
+She saved the draft without submitting. She needed a crew — licensed contractors, insurance documentation, names on file. She would have them. She was good at this kind of procurement. Better than he knew, because she had never needed to show him.
+
+She sat with the scatter plot for another minute. Forty-eight points of contact around a covered window.
+
+She was no longer waiting for him to ask.
 

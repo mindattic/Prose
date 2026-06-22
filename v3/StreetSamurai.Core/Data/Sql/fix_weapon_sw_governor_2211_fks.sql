@@ -1,10 +1,10 @@
--- =============================================================================
+﻿-- =============================================================================
 -- Fix unresolved foreign keys on the Smith & Wesson Governor 2211 row.
 -- =============================================================================
 -- Source-of-truth queries that justify the targets below:
 --   SELECT Id, Name, Slug FROM Entities
 --    WHERE EntityType='character' AND Slug='kyle_ellen_corbin_vister';
---   → 019D6143-A648-7876-9688-0F6D38D70075  Kyle Ellen Corbin-Vister
+--   → 019D6143-A648-7876-9688-0F6D38D70075  Kyle Ellen Corbin
 --
 --   SELECT Id, Name, Slug FROM Entities
 --    WHERE EntityType='ammunition' AND Slug='45_auto_composite';

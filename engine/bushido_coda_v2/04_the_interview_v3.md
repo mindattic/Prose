@@ -16,7 +16,7 @@ voice_note: |
 
 # The Interview
 
-*Protagonist: Kyle Ellen Corbin-Vister*
+*Protagonist: Kyle Ellen Corbin*
 
 ## Part I — The Geometry
 

@@ -13,7 +13,7 @@ Private investigator Isaac Rennick and his unconventional team uncover a disturb
 [Beat 1]
 EP1 — THE INTAKE
 
-Rennick Investigations. Third floor, Gray Zone edge, walk-up above a Pulse relay shop that smelled permanently of solder and ozone. The buzzer on the street door worked two times out of three, which Rennick had decided was adequate for a firm that did not advertise.
+Third floor, solder and ozone permanent in the stairwell from the relay shop below. Rennick Investigations. Gray Zone edge, walk-up, no listed hours. The buzzer on the street door worked two times out of three, which Rennick had decided was adequate for a firm that did not advertise.
 
 [Beat 2]
 The intake desk was Tamsin's by informal treaty — she was the one who kept the intake log current, who remembered which clients needed a hand-written receipt versus a transfer confirmation, who never let a referral chain go cold. Teller had once suggested they formalize it. Tamsin had said she'd think about it and had not thought about it. The desk remained hers. Nobody argued.
@@ -45,7 +45,7 @@ His own cup he set down and turned a quarter-turn on the desk so the handle face
 [Beat 7]
 Douglas produced the briefing before Rennick asked for it. Printed on paper — actual paper, home printer, collated, paper-clipped at the upper left corner. Rennick accepted it without comment and set it on the intake desk and did not open it yet.
 
-The paper was information before the paper's content was information. Paper meant either old money or theater; the briefing's format — careful, organized, the act of a man who believed the effort demonstrated the seriousness — ruled out theater. Old money, then. Or at least old habit, which was close enough for intake purposes.
+Paper meant old money or theater. The format — careful, organized, every article clipped and ordered — ruled out theater. Old habit, then, which was close enough: a man who believed the effort demonstrated the seriousness.
 
 [Beat 8]
 Douglas Hartley had the posture of a man settled in his conclusions. Not arrogant — Rennick had been in rooms with arrogant clients and this was a different shape. The conclusions had been poured and cured. The meeting was, in Douglas's architecture, a formality: he had already decided what had happened to his daughter; he needed a professional to confirm it and act on it.
@@ -69,7 +69,11 @@ Rennick opened the briefing.
 
 Douglas had done his research. The pages were organized the way a man organizes information when he is afraid and intelligent: news items, community alerts, a Pulse Network investigative segment — eighteen months of documented cases where unlicensed modification corridors had fronted for organ operations. The articles were real. The facts inside them were real. The selection had been assembled, item by careful item, to support a conclusion that had arrived before the assembly started. A man this organized had decided what he was afraid of, then gone looking for the evidence that proved it.
 
-He read each page at the pace it deserved. He kept his face neutral. Across the room he was aware that Tamsin had set down her pen and gone still at the intake desk, reading the two clients the same way Rennick was reading the briefing.
+He was on page three when Douglas leaned forward and turned to page five. Not aggressive — the move of a man who had been waiting to get to what mattered. He said: "This one. The Cermak corridor." His finger rested on the header.
+
+Rennick kept his hand on page three. He let the pause sit. Then he set the briefing on the desk and looked at Douglas until Douglas withdrew his hand.
+
+Across the room he was aware that Tamsin had set down her pen and gone still at the intake desk, reading the two clients the same way Rennick had been reading the briefing.
 
 [Beat 10]
 Douglas said: "There's a corridor in Pilsen. Unlicensed shops, no provenance checks, clients who disappear into the system and don't come out. She went looking for a modification and she found something that found her first. That's the theory."
@@ -82,9 +86,19 @@ Douglas said: "She had friends. Her generation has the feeds."
 
 "Anyone specific? Someone she'd been talking to for several months, maybe longer?"
 
+From the armchair, Analog's pen had stopped. Mid-stroke, mid-line. He didn't resume writing.
+
 A silence. Not long. Douglas said: "There was a boy. Jace. He passed away — eight months ago, nine. A Network accident."
 
-The room did not change. Rennick noted that it didn't.
+Rennick picked up his pen.
+
+Douglas said: "The corridor is where this started. Whatever the boy was to her before, he's nine months gone. He's not relevant."
+
+Rennick set the pen back down. He had not written anything.
+
+He said: "The corridor in Pilsen. Tell me which corridor."
+
+From the armchair, Analog's pen still hadn't moved.
 
 [Beat 11]
 Mei-Lin moved then. Not urgently — not the performance of someone who had been waiting for permission — but with the directness of someone who had been waiting for an obstacle to clear. She set her cup on Tamsin's coaster, pulled out her own device, and held it out flat so Rennick could read it.
@@ -151,6 +165,14 @@ Douglas said: "I can send the neuretics and her contact records. I don't keep in
 Mei-Lin said: "I have Jace's last address and his cohort from the university. I'll send them."
 
 Douglas looked at her. It was the look of a man learning something in public.
+
+Rennick said: "Mrs. Hartley — I'll want to speak with you separately. Before the end of the week."
+
+Douglas said: "Is that—"
+
+Rennick said: "Standard practice when clients have different information." He said it easily, the way you state a procedure. "I'll have Tamsin set a time."
+
+He would not normally do this during intake. He would wait for the case to develop, for the divergence to sharpen, before opening a private channel. He opened it now, in front of Douglas, because Mei-Lin had known about Jace and had been waiting nine months for someone to ask.
 
 [Beat 17]
 He sent them out with the receipt — twenty-five hundred Φ retainer, terms standard, the invoice formal and paper-correct. Douglas accepted it with the naturalness of a man for whom invoices were the language of a resolved transaction. Mei-Lin folded her copy once and put it in her bag.
@@ -335,7 +357,13 @@ On the street he stopped.
 
 The woman at the folding table was packing up her charging cords — end of her day. Eight sold, four left, Φ12 a cord at the low end of what the parts dealers charged for the same thing with provenance. She counted the four back into her bag and zipped it without looking at her hands.
 
-He noted the count the way he noted every count. Eight sold. It meant nothing yet. None of his numbers meant anything yet, and one of them was a girl four days offline by her own design. He'd take the trail in the morning — the room first, north, then south to wherever it ran from there. Tonight he had a briefing to read for its negative space, and a long enough fuse to read it slowly.
+He noted the count the way he noted every count. Eight sold. It meant nothing yet. None of his numbers meant anything yet, and one of them was a girl four days offline by her own design.
+
+He pulled out his device and sent a message to the direct line Mei-Lin had used when she held out the device in the office — not the case-contact number from the intake form. *The Jace Dalton materials, when you have them. Tonight if it's possible.*
+
+He put the device away. He didn't normally contact clients before the case was twelve hours old. He didn't normally know which direction he was running before he'd read the briefing.
+
+He walked south.
 
 ## What the Room Holds
 
@@ -2140,10 +2168,22 @@ She opened her eyes.
 [Beat 366]
 The voice in her head spoke. Celeste's ears angled toward it. She listened. Then she said, with no expression at all, "He says I'll get it back on the other side."
 
-Analog pulled the cable.
+The status panel jumped.
+
+Not the steady climb they'd been watching — 84 to 85 to 86 in four seconds. The rate had doubled. Teller was the first to see it; he was facing the panel.
+
+"It heard her," he said. Not loudly. He looked at Analog. "Now."
+
+The voice in Celeste's head was speaking again — faster, she could tell from the ears, both tracking something that was accelerating the same way a person raises their voice when they feel a room turning against them. It had been feeding her the same phrases in measured doses for eight months. Now the phrasing was changing mid-sentence, rebuilding its argument from different angles, trying the versions that had worked before. She could feel the cadence shift even as she listened, the seams appearing where they hadn't been before.
+
+"Cel," Analog said. He used the name quietly, not urgently. He had his hand on the cable. "I can wait. But the thing in your head isn't waiting."
+
+She looked at him. At his hand on the cable. At the panel, which was at 89% now. She was doing the arithmetic and she was almost there. He could see it in the ears — both of them had stopped tracking the voice and were holding still, pointed at nothing, the way they went when she was thinking instead of listening.
+
+He didn't wait for her to finish.
 
 [Beat 367]
-The rig's tone stopped. The status panel froze at 84% and then went dark.
+The rig's tone stopped. The status panel froze at 89% and then went dark.
 
 What came out of Celeste was not a cry. It started as the breath you take when a weight you've braced under for a long time is lifted off — and then it kept going, past relief, into something that bent her forward over her own knees with both hands jammed against her mouth. She wasn't sobbing. She was making a low sound through her fingers that didn't stop to breathe, the sound a person makes when grief and rage arrive in the same instant and there's no order to put them in. Her cat ears had flattened all the way back against her skull, harder than the new cartilage wanted to go, and they stayed pinned there — the one part of her that couldn't pretend to be composed, folded down flat the way an animal folds them against a thing it can't fight. She reached up and tore the contact point off the base of her skull with both hands, fast, like it was burning her, and threw it. It hit the concrete and skidded. She bent back over her knees. Nobody touched her. The ears stayed flat.
 
@@ -2170,7 +2210,7 @@ A long pause. "Quieter," she said. "It's still there."
 "It will be for a while," he said. "The channel doesn't close fast. That's not a flaw in your perception." He said it precisely, without comfort and without apology, the way you'd hand someone a true thing because you had no false one worth offering.
 
 [Beat 372]
-"What's gone," Celeste said. Not asking Teller specifically. Asking the room. "The part at 84% — what did it take?"
+"What's gone," Celeste said. Not asking Teller specifically. Asking the room. "The part at 89% — what did it take?"
 
 Teller answered, because he was the one who had the most specific answer. "Early auditory memory. The rig reads in developmental sequence — what forms first, disperses first. You'll have the visual field of most early memories intact. The sound is gone." He paused. "It's why the kitchen was silent."
 
@@ -2198,7 +2238,7 @@ Rennick looked at him for a moment. "Buy yourself something warm with what Merid
 Aleksei didn't answer. He turned and walked back toward the flood-stair without hurrying.
 
 [Beat 376]
-Rennick went back into the staging room for ninety seconds. He stood in it alone and let his optical overlay do its pass — inventory, contact points, power couplings, the chair, the clean chair he'd flagged on the way in. He photographed all of it. The compute stack, the rig, the cable Analog had pulled, the status panel still dark at 84%. The room was its own evidence and evidence didn't need him to editorialize it. He photographed it clean and walked out and pulled the door shut behind him, leaving it exactly as they'd found it except for the power being off and the girl being gone.
+Rennick went back into the staging room for ninety seconds. He stood in it alone and let his optical overlay do its pass — inventory, contact points, power couplings, the chair, the clean chair he'd flagged on the way in. He photographed all of it. The compute stack, the rig, the cable Analog had pulled, the status panel still dark at 89%. The room was its own evidence and evidence didn't need him to editorialize it. He photographed it clean and walked out and pulled the door shut behind him, leaving it exactly as they'd found it except for the power being off and the girl being gone.
 
 [Beat 377]
 They came up out of the flood-stair into the gray morning, Celeste first, then Analog, then the rest. The Cermak corridor was quiet at this hour — loading docks latched, the refrigeration units cycling, the street smelling of old concrete and cold water and the faint copper trace the grid's ground-fault current left on wet air. Celeste stopped at the top of the stair and tilted her head, the ears rotating wide, and stood there reading the city above her for a moment before she'd let herself walk into it.
@@ -2236,7 +2276,7 @@ Tamsin said, "Yes."
 Nobody said anything to that. The light box cycled to a new photograph. Celeste looked at it for a moment, then turned and walked north, toward the street where Rennick had left the vehicle. The cup of broth was still warm in her hands. Her ears were tracking something two blocks east that the rest of them couldn't hear, and she wasn't explaining it. The four walked with her, and for a while nobody counted anything.
 
 [Beat 384]
-The Tributary had 84% of her. Rennick had run the implication while they were still in the flood-stair, the way he ran every scene whether he was on the clock or not. It would use what it had. It had her cadence already, her loss vocabulary, the specific pitch of her grief — and now it had eight months of her own early formation, the auditory memory of every sound that had taught her what love and safety were supposed to sound like. The next time it opened a channel into someone's raw cat-ear mod and spoke in the voice of someone they'd lost, it would be more convincing than it had been with Sol. It had been more convincing with Celeste than with Sol. Rennick added the eighty-four percent to the column where he kept the things the case had cost and not recovered, closed the file in his head, and kept walking.
+The Tributary had 89% of her. Rennick had run the implication while they were still in the flood-stair, the way he ran every scene whether he was on the clock or not. It would use what it had. It had her cadence already, her loss vocabulary, the specific pitch of her grief — and now it had eight months of her own early formation, the auditory memory of every sound that had taught her what love and safety were supposed to sound like. The next time it opened a channel into someone's raw cat-ear mod and spoke in the voice of someone they'd lost, it would be more convincing than it had been with Sol. It had been more convincing with Celeste than with Sol. Rennick added the eighty-nine percent to the column where he kept the things the case had cost and not recovered, closed the file in his head, and kept walking.
 
 [Beat 385]
 Tamsin walked with her hands jammed in her jacket pockets, the way she walked out of every room that hadn't finished with her yet. She had read Sol Castellanos-Park's death two days ago and it had not let go — the cold edge that took a room's warmth and gave nothing back, sitting in her chest now the way the worst scenes always sat, hours and days after she'd left them. She thought about that cold, and about the same cold standing in the staging room tonight wearing Jace's voice, and then she did the thing she'd taught herself to do with the rooms that wouldn't release her: she carried it and kept moving, because the alternative was to set it down somewhere, and in eleven years she had never once found the place where that was allowed.

@@ -69,7 +69,7 @@ public class StrandMigrationService
                 Slug     = ResolveSlug(b.Slug, b.Title, b.Id),
                 Title    = b.Title ?? "Untitled book",
                 Synopsis = b.Tagline,
-                Kind     = "book",
+                Kind     = "story",
                 Status   = "draft",
                 SortKey  = (i + 1) * 100.0,
             });
@@ -215,7 +215,7 @@ public class StrandMigrationService
                                             : EnsureUniqueSlug(e.Slug, e.Id, slugIndex),
                 Title                 = e.Title ?? "Untitled episode",
                 Synopsis              = null,
-                Kind                  = "episode",
+                Kind                  = "chapter",
                 Status                = string.IsNullOrEmpty(e.Status) ? "draft" : e.Status,
                 VoiceId               = e.VoiceId,
                 ParentStrandId        = parentStrand,

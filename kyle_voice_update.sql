@@ -1,6 +1,6 @@
--- Updates Kyle's NarrationVoice and SpeechUnderPressure on the Characters table.
+﻿-- Updates Kyle's NarrationVoice and SpeechUnderPressure on the Characters table.
 -- Generated from D:\Projects\MindAttic\StreetSamurai\kyle_voice_draft.txt
--- Target row: Kyle Ellen Corbin-Vister (Id = 019d6143-a648-7876-9688-0f6d38d70075)
+-- Target row: Kyle Ellen Corbin (Id = 019d6143-a648-7876-9688-0f6d38d70075)
 
 SET NOCOUNT ON;
 

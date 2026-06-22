@@ -49,9 +49,9 @@ public class StrandTools
         this.spine = spine;
     }
 
-    [McpServerTool, Description("List strands. Optional kind filter ('book', 'chapter', 'episode', etc.). Returns a flat list of id, slug, title, kind, status, beat-count, stale-count.")]
+    [McpServerTool, Description("List strands. Use kind='story' to list all root stories (no parent); kind='chapter' for all sub-strands (contain beats). Returns a flat list of id, slug, title, kind, status, beat-count, stale-count.")]
     public async Task<string> ListStrands(
-        [Description("Optional Kind filter — case-insensitive equality match.")] string kind = "",
+        [Description("Optional Kind filter — 'story' (root strands) or 'chapter' (sub-strands with beats). Case-insensitive equality match.")] string kind = "",
         [Description("Maximum rows to return. Default 100.")] int limit = 100)
     {
         await using var db = await dbFactory.CreateDbContextAsync();
@@ -109,22 +109,30 @@ public class StrandTools
         }, CanonTools.JsonOpts);
     }
 
-    [McpServerTool, Description("Create a new top-level strand. Pass 'seed' to also generate a strand bible and planned beats immediately. Returns the new strand's id, slug, url, and (if bible was generated) the bible text.")]
+    [McpServerTool, Description("Create a new strand. Pass 'seed' to also generate a strand bible and planned beats immediately. Returns the new strand's id, slug, url, and (if bible was generated) the bible text.")]
     public async Task<string> CreateStrand(
         [Description("Strand title. Required.")] string title,
-        [Description("Free-form kind label: 'book', 'chapter', 'episode', 'scene', 'saga', 'anthology', or anything you want. Default 'strand'.")] string kind = "strand",
+        [Description("Strand kind: 'series' (groups stories), 'story' (root publishable work), or 'chapter' (sub-strand of a story, contains beats). Default 'story'.")] string kind = "story",
         [Description("Optional synopsis.")] string synopsis = "",
         [Description("One-line generation seed. When provided, the strand bible and planned beats are created immediately after the strand row is inserted.")] string seed = "",
         [Description("Target beat count for the bible spine (only used when seed is provided). Default 12.")] int targetBeats = 12,
         [Description("Optional parent strand Guid id (or slug). Empty = top-level.")] string parentStrandIdOrSlug = "",
-        [Description("Optional short author-assigned reference code (e.g. 'ATTE', 'VATD', 'GLMZCODEX'). Uppercased and stored as a unique lookup key. Leave empty to skip.")] string code = "")
+        [Description("Optional short author-assigned reference code (e.g. 'ATTE', 'BCODA'). For series and story strands only — chapters never carry a code. Uppercased and stored as a unique lookup key. Leave empty to skip.")] string code = "")
     {
+        var resolvedKind = string.IsNullOrEmpty(kind) ? "story" : kind;
+
         Guid? parentId = null;
         if (!string.IsNullOrWhiteSpace(parentStrandIdOrSlug))
         {
             var parent = await ResolveStrandAsync(parentStrandIdOrSlug);
             if (parent == null) return JsonSerializer.Serialize(new { error = "parent_strand_not_found", parentStrandIdOrSlug }, CanonTools.JsonOpts);
+            var kindErr = KindCompatibilityError(parent.Kind, resolvedKind);
+            if (kindErr != null) return JsonSerializer.Serialize(new { error = "kind_incompatible", message = kindErr }, CanonTools.JsonOpts);
             parentId = parent.Id;
+        }
+        else if (resolvedKind == "chapter")
+        {
+            return JsonSerializer.Serialize(new { error = "kind_incompatible", message = "A chapter must have a parent story. Provide parentStrandIdOrSlug." }, CanonTools.JsonOpts);
         }
 
         await using var db = await dbFactory.CreateDbContextAsync();
@@ -145,11 +153,11 @@ public class StrandTools
             Title = title ?? "",
             Synopsis = string.IsNullOrEmpty(synopsis) ? null : synopsis,
             Seed = string.IsNullOrEmpty(seed) ? null : seed,
-            Kind = string.IsNullOrEmpty(kind) ? "strand" : kind,
+            Kind = resolvedKind,
             Status = "draft",
             ParentStrandId = parentId,
             SortKey = maxSort + 100.0,
-            StrandCode = string.IsNullOrWhiteSpace(code) ? null : code.Trim().ToUpperInvariant(),
+            StrandCode = resolvedKind == "chapter" || string.IsNullOrWhiteSpace(code) ? null : code.Trim().ToUpperInvariant(),
         });
         await db.SaveChangesAsync();
 
@@ -505,8 +513,8 @@ public class StrandTools
         }, CanonTools.JsonOpts);
     }
 
-    /// <summary>Export a strand as a KDP-ready Word .docx to the configured publish directory (defaults to Downloads).</summary>
-    [McpServerTool, Description("Render a strand to a KDP-ready Word .docx and write it to the configured publish directory (defaults to Downloads). Returns the path of the written file. Use get_strand first to confirm the strand exists.")]
+    /// <summary>Export a strand as a KDP-ready Word .docx to the configured publish directory (defaults to Desktop).</summary>
+    [McpServerTool, Description("Render a strand to a KDP-ready Word .docx and write it to the configured publish directory (defaults to Desktop). Returns the path of the written file. Use get_strand first to confirm the strand exists.")]
     public async Task<string> PublishDocx(
         [Description("Strand id (GUID) or slug.")] string strandIdOrSlug,
         [Description("Author name to embed in the document properties. Optional.")] string author = "")
@@ -519,7 +527,7 @@ public class StrandTools
     }
 
     /// <summary>Render a strand as a single continuous MP3 audiobook and write it to the configured publish directory.</summary>
-    [McpServerTool, Description("Render the whole strand as one continuous narration (no per-beat voice drift) and write the MP3 to the configured publish directory (defaults to Downloads). TTS engine: 'elevenlabs' (default, paid, highest fidelity), 'piper' (free/local, fastest), 'kokoro' (free/local, recommended), 'chatterbox' (free/local, most expressive). Returns the path of the written file, or null if the strand has no beat text.")]
+    [McpServerTool, Description("Render the whole strand as one continuous narration (no per-beat voice drift) and write the MP3 to the configured publish directory (defaults to Desktop). TTS engine: 'elevenlabs' (default, paid, highest fidelity), 'piper' (free/local, fastest), 'kokoro' (free/local, recommended), 'chatterbox' (free/local, most expressive). Returns the path of the written file, or null if the strand has no beat text.")]
     public async Task<string> PublishAudiobook(
         [Description("Strand id (GUID) or slug.")] string strandIdOrSlug,
         [Description("TTS engine: elevenlabs (default) | piper | kokoro | chatterbox.")] string ttsEngine = "",
@@ -823,6 +831,16 @@ public class StrandTools
             pinned_at       = pin.PinnedAt.ToString("u"),
         }, CanonTools.JsonOpts);
     }
+
+    private static string? KindCompatibilityError(string parentKind, string childKind) => (parentKind, childKind) switch
+    {
+        ("series", "story")   => null,
+        ("story",  "chapter") => null,
+        ("story",  "story")   => "A story cannot contain another story — only a series can.",
+        ("series", "chapter") => "A chapter must be under a story, not directly under a series.",
+        ("chapter", _)        => "A chapter cannot contain other strands (it holds beats).",
+        _                     => $"A '{childKind}' cannot be placed under a '{parentKind}'.",
+    };
 
     private async Task<Strand?> ResolveStrandAsync(string idOrSlug)
     {
