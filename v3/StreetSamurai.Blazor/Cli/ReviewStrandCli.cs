@@ -30,23 +30,24 @@ public static class ReviewStrandCli
         var settings = services.GetRequiredService<SettingsService>();
         int readers = settings.ReviewReaders, panel = settings.ReviewPanel,
             ballots = settings.ReviewBallots, prose = settings.ReviewProse;
-        bool samePersonas = false, study = false, census = false;
+        bool samePersonas = false, study = false, census = false, skipDiagnosis = false;
         for (int i = 0; i < args.Length; i++)
         {
             switch (args[i])
             {
-                case "--id":            if (i + 1 < args.Length) id = args[++i]; break;
-                case "--slug":          if (i + 1 < args.Length) slug = args[++i]; break;
-                case "--code":          if (i + 1 < args.Length) code = args[++i]; break;
-                case "--readers":       if (i + 1 < args.Length && int.TryParse(args[++i], out var n)) readers = n; break;
-                case "--same-personas": samePersonas = true; break;
-                case "--group":         if (i + 1 < args.Length) group = args[++i]; break;
-                case "--genre":         if (i + 1 < args.Length) genre = args[++i]; break;
-                case "--study":         study = true; break;
-                case "--panel":         if (i + 1 < args.Length && int.TryParse(args[++i], out var pn)) panel = pn; break;
-                case "--ballots":       if (i + 1 < args.Length && int.TryParse(args[++i], out var bn)) ballots = bn; break;
-                case "--prose":         if (i + 1 < args.Length && int.TryParse(args[++i], out var pr)) prose = pr; break;
-                case "--census":        census = true; break;
+                case "--id":              if (i + 1 < args.Length) id = args[++i]; break;
+                case "--slug":            if (i + 1 < args.Length) slug = args[++i]; break;
+                case "--code":            if (i + 1 < args.Length) code = args[++i]; break;
+                case "--readers":         if (i + 1 < args.Length && int.TryParse(args[++i], out var n)) readers = n; break;
+                case "--same-personas":   samePersonas = true; break;
+                case "--group":           if (i + 1 < args.Length) group = args[++i]; break;
+                case "--genre":           if (i + 1 < args.Length) genre = args[++i]; break;
+                case "--study":           study = true; break;
+                case "--panel":           if (i + 1 < args.Length && int.TryParse(args[++i], out var pn)) panel = pn; break;
+                case "--ballots":         if (i + 1 < args.Length && int.TryParse(args[++i], out var bn)) ballots = bn; break;
+                case "--prose":           if (i + 1 < args.Length && int.TryParse(args[++i], out var pr)) prose = pr; break;
+                case "--census":          census = true; break;
+                case "--skip-diagnosis":  skipDiagnosis = true; break;
             }
         }
 
@@ -135,7 +136,7 @@ public static class ReviewStrandCli
             var bp = new Progress<int>(k => { if (k == ballots || k % 5 == 0) Console.WriteLine($"   …{k}/{ballots} ballots done"); });
             try
             {
-                var sr = await reviewer.RunSampledReviewAsync(strandId, ballots, prose, bp);
+                var sr = await reviewer.RunSampledReviewAsync(strandId, ballots, prose, bp, skipDiagnosis: skipDiagnosis);
                 Console.WriteLine($"[review-strand] {sr.BallotsSaved}/{sr.Ballots} ballots ({sr.Failed} failed), {sr.ProseAdded} prose upgraded.");
                 Console.WriteLine($"[review-strand] Strand {sr.MeanScore}/100  (SD {sr.Sd}, 95% CI ±{sr.Ci95})  ·  {sr.Clusters} clusters  ·  fingerprint {sr.ContentHash[..Math.Min(12, sr.ContentHash.Length)]}");
                 Console.WriteLine();

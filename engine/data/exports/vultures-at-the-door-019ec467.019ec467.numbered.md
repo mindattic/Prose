@@ -7,9 +7,9 @@ When a routine stop puts a bullet in the wrong man — the son of the most power
 ## Chapter 1
 
 [Beat 1]
-The manifest came up behind Thomas's eyes at 4:12 in the morning, the way it did every morning, a column of names and addresses and account balances scrolling down the inside of his skull while the Wagon's compressors cycled the larder up to temperature. Six pickups. One recall. The number beside each name was what the body owed, and the number was never zero, because Carrion Logistics did not dispatch a crew for an account that was paid.
+﻿Levin was in the driver's seat with his head tipped back and a vial held over one eye. He let a single drop fall, blinked, and the eye went glassy and far away and then came back wrong. He did the other one. He capped the Tears, put the vial in the door pocket, and started the engine.
 
-Levin was in the driver's seat with his head tipped back and a vial held over one eye. He let a single drop fall, blinked, and the eye went glassy and far away and then came back wrong. He did the other one. He capped the Tears, put the vial in the door pocket, and started the engine.
+The manifest came up behind Thomas's eyes at 4:12 in the morning, the way it did every morning, a column of names and addresses and account balances scrolling down the inside of his skull while the Wagon's compressors cycled the larder up to temperature. Six pickups. One recall. The number beside each name was what the body owed, and the number was never zero, because Carrion Logistics did not dispatch a crew for an account that was paid.
 
 "Morning," Thomas said.
 
@@ -19,7 +19,7 @@ The yard sat between a bio-rendering plant and a sealed distribution hub, and at
 
 Carrion called them Reclamation Agents. The street called them Vultures. The city made bodies the way it made everything else, too many and too fast and financed against tomorrow, and when the payments stopped, somebody drove out before dawn and took back what the city was owed. Thomas didn't call it anything. He called Paz, on Sundays.
 
-She was nine. She had a thing in her genes with a long name that her mother and he had stopped saying out loud, and the only thing that kept the long name from finishing its sentence was a course of gene therapy that cost twelve thousand Φ every six months, payable to a clinic that did not take payment plans from people in their tier. Six pickups was most of a week. A week was most of a month. A month was the math, and the math was Paz, and that was the whole of why Thomas could open a person up at four-thirty in the morning and keep his hands steady. He'd found the trick. You did it for someone who wasn't in the room.
+She was nine. She had a thing in her genes with a long name that her mother and he had stopped saying out loud, and the only thing that kept the long name from finishing its sentence was a course of gene therapy that cost twelve thousand ? every six months, payable to a clinic that did not take payment plans from people in their tier. Six pickups was most of a week. A week was most of a month. A month was the math, and the math was Paz, and that was the whole of why Thomas could open a person up at four-thirty in the morning and keep his hands steady.
 
 In the back of the Wagon the ward stood empty, the single life-support berth folded down, vent and perfuser dark, the way it spent most of its life. Behind it the larder hummed at four degrees, cold racks waiting for the day's freight. Between the two compartments, strapped upright in its bracket, sat the case: emergency orange, hard-shelled, BIOHAZARD stenciled across it in black. Inside, packed in foam, the two units they used for the actual work. The big one for the chest. The small one for the head. Levin had named them years ago and the names had stuck the way bad names do.
 
@@ -279,23 +279,23 @@ The clock in the back read 71:48:09, and counting.
 ## Chapter 2
 
 [Beat 9]
-Thomas drove nowhere in particular for the first twenty minutes, because a Wagon that kept moving was a Wagon nobody looked at twice, and he needed to think.
+﻿Thomas drove nowhere in particular for the first twenty minutes, because a Wagon that kept moving was a Wagon nobody looked at twice, and he needed to think.
 
-"Tell me what we're actually in," Levin said. He'd put the vial away. The drawer of Osei's product sat between his feet, and Thomas could see him not looking at it, which was its own kind of work.
+"Tell me what we're actually in," Levin said. He'd put the vial away. The drawer of Osei's product sat between his feet, and Thomas could see him not looking at it, which was its own kind of work. Once, Levin's hand moved toward the door pocket before he caught himself; he put it back on the wheel without saying anything about it.
 
 "You know what the Lotus is."
 
 "I know they pay on time and they don't haggle."
 
-"That's because they're not a gang, they're a church, and the thing they worship is blood. Born in or you're nothing. East-blood, old-country, pure enough for the people who decide what pure enough means. You can pay them, you can bleed for them, you can't ever be them. They'll use a man his whole life and never once sit him at the table." Thomas took them up onto the elevated where the cameras were corporate, not Lotus. "And the kid's a Stem's son. His mother's Han Jeong-suk — she runs half the south side and keeps a ledger in her head of every favor and every wrong, and she pays both out to the decimal. Tomorrow that kid marries another pure line. You don't do a dawn wedding for love in that world. You do it to stitch two bloodlines together so the ones underneath stop sharpening knives."
+"They're not a gang, they're a church, and what they worship is blood. Born in or you're nothing." Thomas took them up onto the elevated where the cameras were corporate, not Lotus. "The kid's a Stem's son. His mother's Han Jeong-suk ? she runs half the south side and keeps a ledger in her head of every favor and every wrong, and she pays both out to the decimal. Tomorrow that kid marries another pure line. You don't do a dawn wedding for love in that world. You do it to stitch two bloodlines together so the ones underneath stop sharpening knives."
 
 "So the wedding's the thing keeping a war off."
 
-"The wedding's the thing keeping a war off. And it doesn't happen if the groom's a no-show. It really doesn't happen if the groom turns up with a hole in him and a Carrion serial number on the round." Thomas came down off the elevated. "He dies, the wedding dies, the war starts, and Han Jeong-suk turns over every rock in the GLMZ to find who took her son. She won't come herself. She'll send the dog — the outsider she keeps on a leash for exactly this, too good at hurting people to waste and too impure to honor. Sent out when a bone goes missing and never asked to dinner after."
+"The wedding's the thing keeping a war off. And it doesn't happen if the groom's a no-show. It really doesn't happen if the groom turns up with a hole in him and a Carrion serial number on the round." Thomas came down off the elevated. "He dies, the wedding dies, the war starts, and Han Jeong-suk turns over every rock in the GLMZ to find who took her son. She won't come herself. She'll send the dog ? the outsider she keeps on a leash for exactly this, too good at hurting people to waste and too impure to honor. Sent out when a bone goes missing and never asked to dinner after."
 
 Levin was quiet a while. "So we don't let him die."
 
-"So we don't let him die. Which means a heart he won't reject, in three days, that doesn't exist on any shelf — and someone who can put it in him quiet, off every book there is, who won't ask why the patient's already got a Carrion loaner keeping him warm."
+"So we don't let him die. Which means a heart he won't reject, in three days, that doesn't exist on any shelf ? and someone who can put it in him quiet, off every book there is, who won't ask why the patient's already got a Carrion loaner keeping him warm."
 
 "Yuen."
 
@@ -313,7 +313,7 @@ The clinic noise went quieter; she'd stepped somewhere. "What's the phenotype?"
 
 "Rare."
 
-A long pause, the kind with arithmetic in it. "Thomas. A rare-type heart, off the shelf, in this city, in three days — you know what you're describing. You're describing buying one off the kind of people I left Carrion to stop being."
+A long pause, the kind with arithmetic in it. "Thomas. A rare-type heart, off the shelf, in this city, in three days ? you know what you're describing. You're describing buying one off the kind of people I left Carrion to stop being."
 
 "I know what I'm describing."
 
@@ -321,11 +321,11 @@ A long pause, the kind with arithmetic in it. "Thomas. A rare-type heart, off th
 
 "I'm not asking about the window," Thomas said, which was the old phrase between them, the one that meant don't make me say it and I won't make you hear it.
 
-Yuen was quiet for so long he thought she'd gone. Then: "Bring me the unit and the patient at the same time, not before. I won't have either one sitting in my clinic alone." A breath. "And Thomas — the people who sell rare hearts don't sell them. They harvest them to order. You go shopping for this, somebody dies to fill it."
+Yuen was quiet for so long he thought she'd gone. Then: "Bring me the unit and the patient at the same time, not before. I won't have either one sitting in my clinic alone." A breath. "And Thomas ? the people who sell rare hearts don't sell them. They harvest them to order. You go shopping for this, somebody dies to fill it."
 
 "I know," Thomas said, for the third time that morning.
 
-He cut the channel. The clock behind the partition read 70:51, and the manifest behind his eyes chimed — a new pickup, dispatched fresh from Carrion, because the world didn't stop having dead in it just because two of its garbagemen were having a day.
+He cut the channel. The clock behind the partition read 70:51, and the manifest behind his eyes chimed ? a new pickup, dispatched fresh from Carrion, because the world didn't stop having dead in it just because two of its garbagemen were having a day.
 
 "We've got a body," Thomas said.
 
@@ -338,15 +338,15 @@ He read the pickup off the inside of his eye, and something in the back of his n
 The address was four blocks from Osei's.
 
 [Beat 10]
-The pickup was a man named Reuben Sclose, and Carrion wanted him because he had financed cyberware in both eyes and a financed spinal shunt, and he had stopped having a pulse sometime in the last hour, which moved his account from COLLECTIONS to RECLAMATION the way death moved every account that still owed.
+﻿The pickup was a man named Reuben Sclose, and Carrion wanted him because he had financed cyberware in both eyes and a financed spinal shunt, and he had stopped having a pulse sometime in the last hour, which moved his account from COLLECTIONS to RECLAMATION the way death moved every account that still owed.
 
 He was in a single room over a laundromat, in a chair, and he had not died easy.
 
-Thomas had seen a great deal of the human body from the inside and very little of it surprised him anymore, but there was a difference between what the trade did and what had been done to Reuben Sclose, and the difference was intent. The trade was fast and bored. This was slow and patient. Whoever had done it had taken the financed eyes first, carefully, not to harvest them but because a man tells you more while he can still watch you decide what to take next. The cuts were exact. The tourniquets were medical. The floor was clean except where it was deliberately not. Somebody had asked Reuben Sclose questions for a long time, had been very good at it, had cleaned up after himself out of professional habit, and had left exactly when he was done and not a moment sooner.
+Thomas had seen a great deal of the human body from the inside and very little of it surprised him anymore, but what had been done to Reuben Sclose was not the trade's work. The trade was fast and bored. This was slow and patient. Whoever had done it had taken the financed eyes first, carefully, not to harvest them but because a man tells you more while he can still watch you decide what to take next. The cuts were exact. The tourniquets were medical. The floor was clean except where it was deliberately not. Somebody had asked Reuben Sclose questions for a long time, had been very good at it, had cleaned up after himself out of professional habit, and had left exactly when he was done and not a moment sooner.
 
 "Christ," Levin said from the doorway, and then he turned and was quietly sick on the landing, which the drops usually spared him and didn't, today.
 
-Thomas stood over the chair and let himself understand the thing he'd known in the back of his neck since the address came up four blocks from Osei's. The hunter was already working. Han Jeong-suk hadn't waited for the wedding to fail; she'd put her dog on the trail the moment her son didn't arrive where a Stem's son was supposed to be. And the dog was running Do-yun's last day backward — who saw him, who sold to him, who was near him — and Reuben Sclose had been near him, had known a thing worth knowing, and had been made to say it, and then made sure he'd never say it again.
+Thomas stood over the chair and let himself understand the thing he'd known in the back of his neck since the address came up four blocks from Osei's. The hunter was already working. Han Jeong-suk hadn't waited for the wedding to fail; she'd put her dog on the trail the moment her son didn't arrive where a Stem's son was supposed to be. And the dog was running Do-yun's last day backward ? who saw him, who sold to him, who was near him ? and Reuben Sclose had been near him, had known a thing worth knowing, and had been made to say it, and then made sure he'd never say it again.
 
 The hunter was ahead of them on the same trail they were behind on. And Carrion, which kept a quiet standing arrangement to make the Syndicate's messes disappear, had dispatched its nearest crew to clean up the body.
 
@@ -416,7 +416,7 @@ It needed a girl who wasn't going to wake up.
 "I know," Thomas said, and drove toward the part of the night where he'd have to.
 
 [Beat 12]
-The problem had a shape that Thomas turned for an hour in the back of the Wagon while the clock behind the partition read sixty-three hours and the city kept turning over its dead.
+﻿The problem had a shape that Thomas turned for an hour in the back of the Wagon while the clock behind the partition read sixty-three hours and the city kept turning over its dead.
 
 "I know someone," Levin said.
 
@@ -430,9 +430,9 @@ Levin just shook his head, which was the only answer Thomas was going to get, an
 
 He pinged her. She pinged back in forty minutes.
 
-She came to a diner Thomas trusted, at the dead hour, and sat down across from him and Levin and ordered coffee and drank it before she said anything, which told Thomas more than a résumé would have.
+She came to a diner Thomas trusted, at the dead hour, and sat down across from him and Levin and ordered coffee and drank it before she said anything, which told Thomas more than a r?sum? would have.
 
-Maisy Achterberg. Late thirties, careful eyes, the hands of someone who had worked with them. She was a sex worker the way a lot of people in the lower Ward were several things; it was one of the columns in her ledger, not the whole book. She listened to Thomas lay it out — the bed, the story, the night that had to look like a rich boy's worst idea — without flinching and without softening, and when he was done she was quiet for a moment, turning the cup.
+Maisy Achterberg. Late thirties, careful eyes, the hands of someone who had worked with them. She was a sex worker the way a lot of people in the lower Ward were several things; it was one of the columns in her ledger, not the whole book. She listened to Thomas lay it out ? the bed, the story, the night that had to look like a rich boy's worst idea ? without flinching and without softening, and when he was done she was quiet for a moment, turning the cup.
 
 "You're not selling me anything," she said. "I want us both clear on that. You think you've got the offer. You don't. I worked this out a long time before you needed it." She turned the cup. "You're just the first one whose math finally matched mine."
 
@@ -440,17 +440,17 @@ Maisy Achterberg. Late thirties, careful eyes, the hands of someone who had work
 
 "Don't 'all right' me like I'm talking myself into it." There was no heat in it. "I've had every version of that face. The one that wants to save me. You don't have time and I don't want it, and if you spend the next hour trying I'll walk and you'll be short a girl for your bed. So let's not."
 
-Levin, who had been somewhere behind the glass, came forward a little. "Why," he said. Not a challenge. The word of a man who needed to hear her say it in her own voice.
+Levin, who had been somewhere behind the glass, came forward a little. "Why," he said.
 
-She looked at him a long moment, took his measure the way she'd already taken it before, years ago, and was checking if it had changed. Then she took a photograph out of her coat — a real one, printed, soft at the corners from handling — and set it on the table facing herself, not them, and put one finger on it the way you touch something to make sure it's still there.
+She looked at him a long moment. Then she took a photograph out of her coat ? a real one, printed, soft at the corners from handling ? and set it on the table facing herself, not them, and put one finger on it the way you touch something to make sure it's still there.
 
-"There's somebody this keeps safe," she said. "Alive, I'm a string people can pull to get to her. Gone — paid for, the money landing where I say — I'm not a string anymore. I ran it every way there is. It comes out the same every time." She turned the photo back into the coat. "Senna," she said, once, low, not to them. Then nothing. "So don't tell me it's tragic. It's the best deal on a bad table, and I'm the one who gets to make it."
+"There's somebody this keeps safe," she said. "Alive, I'm a string people can pull to get to her. Gone ? paid for, the money landing where I say ? I'm not a string anymore. I ran it every way there is. It comes out the same every time." She turned the photo back into the coat. "Senna," she said, once, low, not to them. Then nothing. "So don't tell me it's tragic. It's the best deal on a bad table, and I'm the one who gets to make it."
 
 Nobody said anything for a while. The coffee machine hissed. Somewhere a fry cook scraped a grill.
 
 "Terms," Thomas said.
 
-She had them ready. The number, paid to a specific account, before — not after, before, she wasn't a fool. Painless; she'd want to be under, all the way under, before anything, and she had Yuen's name from somewhere and would only do it if a real doctor did it, no amateurs, no last-minute change of who held the syringe. And one more: that it look like what they needed it to look like, a girl who partied with the wrong rich boy and didn't wake up.
+She had them ready. The number, paid to a specific account, before ? not after, before, she wasn't a fool. Painless; she'd want to be under, all the way under, before anything, and she had Yuen's name from somewhere and would only do it if a real doctor did it, no amateurs, no last-minute change of who held the syringe. And one more: that it look like what they needed it to look like, a girl who partied with the wrong rich boy and didn't wake up.
 
 "You'll be in a bed next to a stranger," Thomas said. "A Lotus stranger. People are going to find you both and tell an ugly story about you to explain him. That story's going to be the only thing anybody ever knows about how you died."
 
@@ -468,7 +468,7 @@ In the Wagon, Levin didn't open the drawer at his feet, but he looked at it for 
 
 "And we're going to kill her."
 
-"Yuen's going to help her do a thing she already decided to do," Thomas said, and drove, because the clock in the back said sixty-one hours and there was still a body four blocks behind them that the hunter hadn't finished making into a list.
+Thomas drove, because the clock in the back said sixty-one hours and there was still a body four blocks behind them that the hunter hadn't finished making into a list.
 
 [Beat 13]
 He knocked, and waited.
@@ -486,9 +486,9 @@ On the top step, going down, he took the handkerchief from his pocket and folded
 He was already running the woman's name through the network before his shoe touched the street. Yuen.
 
 [Beat 14]
-The thing about Tears that the people who sold it never put on the label was that it ran a tab, and the tab came due in the dark.
+﻿The thing about Tears that the people who sold it never put on the label was that it ran a tab, and the tab came due in the dark.
 
-By the second pickup of the night — a clean one, an old woman dead in her sleep with a financed pacemaker, the kindest stop on any manifest — Levin had stopped being a half-second behind the room and started being somewhere else entirely. Thomas knew the signs the way a man knows weather. The over-wet eyes that didn't track. The pauses that came back from too far. The way Levin kept glancing at the corners of the old woman's bedroom, at the doorway, at the place behind Thomas's shoulder where there was nothing, and then making himself look back.
+By the second pickup of the night ? a clean one, an old woman dead in her sleep with a financed pacemaker, the kindest stop on any manifest ? Levin had stopped being a half-second behind the room and started being somewhere else entirely. Thomas knew the signs the way a man knows weather. The over-wet eyes that didn't track. The pauses that came back from too far. The way Levin kept glancing at the corners of the old woman's bedroom, at the doorway, at the place behind Thomas's shoulder where there was nothing, and then making himself look back.
 
 "What are you seeing," Thomas said, not looking up from the Kid as it worked the pacemaker free.
 
@@ -498,11 +498,11 @@ By the second pickup of the night — a clean one, an old woman dead in her slee
 
 "I know where he is," Levin said, with terrible patience. "I'm telling you where he also is."
 
-That was the tab. The dead the day had made came back at night and stood in the doorways, in the lattices the drug laid over everything when it started to wear thin. The man with no eyes, watching anyway. The courier, surprised to be standing in legs that weren't there. The kid on the couch, sitting back down gently, over and over, getting less surprised. They didn't say anything. They came to the edges and waited, and the only thing that pushed them back was another drop, and another drop was how the day's dead became the night's.
+The dead the day had made came back at night and stood in the doorways, in the lattices the drug laid over everything when it started to wear thin. The man with no eyes, watching anyway. The courier, surprised to be standing in legs that weren't there. The kid on the couch, sitting back down gently, over and over, getting less surprised. They didn't say anything. They came to the edges and waited, and the only thing that pushed them back was another drop, and another drop was how the day's dead became the night's.
 
 He dosed in the stairwell. Thomas watched him tip his head back and blink the hall empty again and didn't say anything, because the alternative to Levin dosing was Levin not being able to carry the cooler, and they had a long night.
 
-It almost went wrong once. Coming out of the building, a neighbor opened her door to see about the noise — an ordinary frightened woman in a robe — and Levin turned toward her with his glassy far-off eyes and said, gently, to a person who was alive, in the voice he used for the dead, "You can go back in. You don't have to watch this part," and the woman's face did something awful, and Thomas stepped between them and got Levin moving and apologized over his shoulder and got them into the Wagon before she decided to call anyone.
+It almost went wrong once. Coming out of the building, a neighbor opened her door to see about the noise ? an ordinary frightened woman in a robe ? and Levin turned toward her with his glassy far-off eyes and said, gently, to a person who was alive, in the voice he used for the dead, "You can go back in. You don't have to watch this part," and the woman's face did something awful, and Thomas stepped between them and got Levin moving and apologized over his shoulder and got them into the Wagon before she decided to call anyone.
 
 In the cab Thomas took the vial out of Levin's hand. Not hard. Just took it.
 
@@ -645,7 +645,7 @@ The Wagon pulled out of the dock and rolled to the corner and turned and was gon
 The woman had not said thank you. She would not. He did not look for it; the dog is not thanked, the dog is fed, and his feeding was the older currency, the army's currency — the skill had held, the blade had not gone bad in the dark, and that was the bill paid in full. He put his hands in his pockets and walked in the direction of the lake.
 
 [Beat 19]
-The city woke up and found the thing they'd built, and the thing they'd built worked, because they'd built it out of the one material nobody in that world ever questioned: a powerful man's son being exactly as weak as everyone secretly believed he was.
+﻿The city woke up and found the thing they'd built, and the thing they'd built worked, because they'd built it out of the one material nobody in that world ever questioned: a powerful man's son being exactly as weak as everyone secretly believed he was.
 
 It came apart fast and clean, the way true panics do. House staff arrived at six. There was a scream that didn't carry to the street but carried in the way the Lotus men in the parked car suddenly weren't parked anymore. Then the car was four cars. Then there was a doctor going up who wasn't Yuen, a Lotus doctor, the family's own, and the family's own doctor found a living heir with a butchered chest and a real heartbeat and a dead girl and the whole grammar of a bender gone over the cliff, and read it exactly as it was written, because it was written in his own language. Word went up the tower and out the wires and up the bloodline, and somewhere a Stem named Han Jeong-suk learned that her son had not been taken by enemies of the house at all. He'd done it to himself. He'd thrown his last free night off a roof, the way soft sons do, and nearly died of his own appetite, and some nameless back-room doctor had saved him by inches, and a girl nobody would ever bother to name had paid for his stupidity with her life. Shameful. Ordinary. Survivable. The kind of thing a powerful family makes disappear by breakfast and never speaks of again.
 
@@ -653,7 +653,7 @@ A no-show heir starts a war. A living heir sleeping off a disgrace does not. The
 
 And the dog got called off.
 
-Thomas saw it happen. They were still parked two blocks down, two garbagemen in a truck, furniture, when a man came out of the tower's service entrance — unhurried, well-mannered, wrong for the block the way a scalpel is wrong in a kitchen drawer — and stood on the step a moment in the new light, and Thomas knew him without ever having seen him, knew him by the patience and the courtesy and the squared-away stillness, the man who folded his handkerchief and left it like a tip. Casimir. The dog they sent when a bone went missing, called off now because the bone had turned out to be no bone at all, just a boy who'd hurt himself, and there was no one left to hunt.
+Thomas saw it happen. They were still parked two blocks down, two garbagemen in a truck, furniture, when a man came out of the tower's service entrance ? unhurried, well-mannered, wrong for the block the way a scalpel is wrong in a kitchen drawer ? and stood on the step a moment in the new light, and Thomas knew him without ever having seen him, knew him by the patience and the courtesy and the squared-away stillness, the man who folded his handkerchief and left it like a tip. Casimir. The dog they sent when a bone went missing, called off now because the bone had turned out to be no bone at all, just a boy who'd hurt himself, and there was no one left to hunt.
 
 He walked toward them. Thomas's whole body went to water and stayed perfectly still, because furniture does not flinch.
 
@@ -663,15 +663,15 @@ Casimir stopped by the Wagon's window. He looked at the livery, and at the two m
 
 "We always do," Thomas said, and his voice came out level, furniture-level, and he would never know how.
 
-Casimir studied him one beat longer than was comfortable — not suspicious, just thorough, the way he was thorough about everything, the way that had emptied Reuben Sclose of his last hour. Then the mask slipped a half-inch, the way it does on a man who has been awake too long doing a thing he is too good at.
+Casimir studied him one beat longer than was comfortable ? not suspicious, just thorough, the way he was thorough about everything, the way that had emptied Reuben Sclose of his last hour. Then the mask slipped a half-inch, the way it does on a man who has been awake too long doing a thing he is too good at.
 
-"Three of them, last night," he said, quietly, as if to no one, as if the coveralls had made him safe to say it to. "To find a boy who was never lost." He looked off down the bright cold street, and let the rest of it go unsaid, because the rest of it was only arithmetic, and he'd finished that sum a long time ago.
+"Three of them, last night," he said, quietly, as if to no one. "To find a boy who was never lost." He looked off down the bright cold street, and let the rest of it go unsaid, because the rest of it was only arithmetic, and he'd finished that sum a long time ago.
 
-He nodded once more, the best hunter in the GLMZ passing within a foot of the two men he'd spent all night and one dead dealer trying to find, and never knowing it, because the answer had come to him in a Carrion truck and a Carrion truck was invisible — and he walked off into the new light toward the car that would carry him home and not let him in.
+He nodded once more, the best hunter in the GLMZ passing within a foot of the two men he'd spent all night and one dead dealer trying to find, and never knowing it, because the answer had come to him in a Carrion truck and a Carrion truck was invisible ? and he walked off into the new light toward the car that would carry him home and not let him in.
 
 "He told us to be gentle with her," Levin said, when Casimir was gone. He laughed, the no-humor laugh, and then he stopped laughing. "He killed Osei with a folded handkerchief and he told us to be gentle with her."
 
-"He meant it, too," Thomas said. "That's the part." He started the Wagon. The marker he'd signed sat somewhere out in the city with his name on it, callable, patient, and Paz's account read a number that wouldn't cover her next course, and Han Jeong-suk would carry forever, in the ledger she kept in her head, a small clean entry that a Carrion crew had worked her block all night and minded its own business like professionals — a debt that could pay out as a favor someday or a death, her choice, her timing. They were clear. They were not free. "Come on. We've still got her to come back for. We're going to do that part right."
+"He meant it, too," Thomas said. "That's the part." He started the Wagon. The marker he'd signed sat somewhere out in the city with his name on it, callable, patient, and Paz's account read a number that wouldn't cover her next course, and Han Jeong-suk would carry forever, in the ledger she kept in her head, a small clean entry that a Carrion crew had worked her block all night and minded its own business like professionals ? a debt that could pay out as a favor someday or a death, her choice, her timing. They were clear. They were not free. "Come on. We've still got her to come back for. We're going to do that part right."
 
 [Beat 20]
 The quiet collection came through that afternoon, dispatched the way Casimir had said it would be — a discreet pickup at a good tower, one deceased, female, no next of kin on file, handle with the discretion the account class required. The Lotus had paid for discretion. Thomas took the job before anyone else could, because the alternative to Thomas taking it was a stranger taking it, and a stranger would have done the ordinary thing, and the ordinary thing was the larder.
