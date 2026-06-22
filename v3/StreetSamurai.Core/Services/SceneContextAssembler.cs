@@ -160,13 +160,80 @@ public class SceneContextAssembler(
     private static readonly TimeSpan NameIndexTtl = TimeSpan.FromMinutes(10);
     private readonly SemaphoreSlim indexLock = new(1, 1);
 
+    // Budget reserved for the storytelling-science block so it is accounted for
+    // before the entity roster consumes the remaining tokens.
+    private const int ScienceBlockCharBudget = 350;
+
     /// <summary>Assemble the scene context for an existing beat.</summary>
+    /// <remarks>
+    /// When persisted narrative-science findings exist for this beat
+    /// (written by <c>ss --narrative-science … --slug …</c>) they are injected as a compact
+    /// deterministic guidance block — zero extra LLM cost. The block is capped at
+    /// ~350 chars (~88 tokens) and deducted from the token budget before the
+    /// entity roster is assembled so the total never overruns the caller's cap.
+    /// </remarks>
     public async Task<SceneContext?> AssembleForBeatAsync(Guid beatId, int tokenBudget = 2000, CancellationToken ct = default)
     {
         await using var db = await dbFactory.CreateDbContextAsync(ct);
         var beat = await db.Beats.AsNoTracking().FirstOrDefaultAsync(b => b.Id == beatId, ct);
         if (beat == null) return null;
-        return await AssembleAsync(beat.Text, tokenBudget, ct);
+
+        // P4: inject stored science guidance (deterministic DB read, no LLM call).
+        var scienceBlock = BuildScienceBlock(beatId);
+        var effectiveBudget = scienceBlock.Length > 0
+            ? Math.Max(tokenBudget - ScienceBlockCharBudget / CharsPerToken, 200)
+            : tokenBudget;
+
+        var ctx = await AssembleAsync(beat.Text, effectiveBudget, ct);
+        if (scienceBlock.Length == 0) return ctx;
+
+        return new SceneContext
+        {
+            Roster       = ctx.Roster,
+            ContextBlock = scienceBlock + ctx.ContextBlock,
+        };
+    }
+
+    /// <summary>
+    /// Read any persisted NARRATIVE-SCIENCE findings for this beat and format
+    /// them as a compact guidance block for the prose prompt.
+    /// Returns an empty string when no findings exist.
+    /// </summary>
+    private string BuildScienceBlock(Guid beatId)
+    {
+        const string dqPrefix = "NARRATIVE-SCIENCE [dramatic-question]:";
+        const string sePrefix = "NARRATIVE-SCIENCE [scene-engagement]:";
+
+        var allFindings = findings.ListByFilePathPrefix($"beat:{beatId:N}");
+        var dq = allFindings.FirstOrDefault(f => f.Summary?.StartsWith(dqPrefix, StringComparison.OrdinalIgnoreCase) == true);
+        var se = allFindings.FirstOrDefault(f => f.Summary?.StartsWith(sePrefix, StringComparison.OrdinalIgnoreCase) == true);
+
+        if (dq == null && se == null) return "";
+
+        var sb = new StringBuilder();
+        sb.AppendLine("STORYTELLING SCIENCE FOR THIS BEAT (make the prose satisfy these):");
+        if (dq != null)
+        {
+            // Strip the "NARRATIVE-SCIENCE [dramatic-question]: Beat #N — " prefix for compactness.
+            var text = StripNsPrefix(dq.Summary ?? "", dqPrefix);
+            sb.AppendLine($"- dramatic question: {Clip(text, 150)}");
+        }
+        if (se != null)
+        {
+            var text = StripNsPrefix(se.Summary ?? "", sePrefix);
+            sb.AppendLine($"- scene engagement: {Clip(text, 150)}");
+            if (!string.IsNullOrWhiteSpace(se.SuggestedFix))
+                sb.AppendLine($"  fix: {Clip(se.SuggestedFix, 80)}");
+        }
+        sb.AppendLine();
+        return sb.ToString();
+    }
+
+    private static string StripNsPrefix(string summary, string prefix)
+    {
+        if (summary.StartsWith(prefix, StringComparison.OrdinalIgnoreCase))
+            return summary[prefix.Length..].TrimStart();
+        return summary;
     }
 
     /// <summary>Assemble the scene context for arbitrary prose text.</summary>
@@ -355,9 +422,65 @@ public class SceneContextAssembler(
 
             var woundBlock = await wounds.BuildPromptBlockAsync(r.EntityId, atInWorldDate: null, ct);
             if (woundBlock.Length > 0) sb.AppendLine(woundBlock);
+
+            // Behavioral rules — injected at write-time so characters act in-character
+            // without needing a post-generation LLM check (RFC 0009 §5 Part B).
+            // Cap at ~400 chars total to respect the scene-context token budget.
+            await AppendBehavioralRulesAsync(db, sb, r.EntityId, ct);
         }
         sb.AppendLine();
         return sb.ToString();
+    }
+
+    /// <summary>
+    /// Appends a compact "HOW THEY DECIDE" block from the character's
+    /// <c>CharacterBehavioralRules</c> rows. Bounded to ~400 characters total.
+    /// No-op if the character has no rules.
+    /// </summary>
+    private static async Task AppendBehavioralRulesAsync(
+        StreetSamuraiDbContext db, StringBuilder sb, Guid characterId, CancellationToken ct)
+    {
+        const int MaxBehavioralChars = 400;
+
+        var rules = await db.Set<CharacterBehavioralRule>().AsNoTracking()
+            .Where(r => r.CharacterId == characterId)
+            .OrderBy(r => r.Bucket).ThenBy(r => r.Position)
+            .ToListAsync(ct);
+
+        if (rules.Count == 0) return;
+
+        // Map canonical bucket names to the display label we show in the block.
+        // Unknown buckets are included under a generic label.
+        var bucketLabels = new Dictionary<string, string>(StringComparer.OrdinalIgnoreCase)
+        {
+            ["decision_rules"]    = "decisions",
+            ["escalation_ladder"] = "escalates",
+            ["breaking_points"]   = "breaks at",
+        };
+
+        // Priority order for the block (most useful to a writer at the point of generation).
+        var priorityOrder = new[] { "decision_rules", "escalation_ladder", "breaking_points", "habits", "contradictions" };
+
+        var grouped = rules.GroupBy(r => r.Bucket, StringComparer.OrdinalIgnoreCase)
+            .OrderBy(g => Array.IndexOf(priorityOrder, g.Key.ToLowerInvariant()) is int idx && idx >= 0 ? idx : 99);
+
+        var block = new StringBuilder();
+        block.AppendLine("HOW THEY DECIDE (honor these — they are not a plot puppet):");
+        foreach (var grp in grouped)
+        {
+            if (block.Length >= MaxBehavioralChars) break;
+            var label = bucketLabels.GetValueOrDefault(grp.Key, grp.Key);
+            var ruleTexts = grp.Select(r => r.Rule).Where(t => !string.IsNullOrWhiteSpace(t)).ToList();
+            if (ruleTexts.Count == 0) continue;
+            // Clip the concatenated rules for this bucket.
+            var combined = string.Join("; ", ruleTexts);
+            var remaining = MaxBehavioralChars - block.Length;
+            if (remaining <= 0) break;
+            block.AppendLine($"- {label}: {Clip(combined, Math.Max(40, remaining - label.Length - 4))}");
+        }
+
+        if (block.Length > 2) // more than just the header line
+            sb.Append(block);
     }
 
     private static async Task<string> FormatGenericAsync(StreetSamuraiDbContext db, SceneEntityRef r, CancellationToken ct)

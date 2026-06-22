@@ -566,6 +566,32 @@ if (args.Contains("--review-strand"))
     return;
 }
 
+// CLI mode: add an author ruling to the prose-lessons memory store.
+// Lessons are injected into review ballot prompts so reviewers don't penalise
+// beats the author has already ruled are doing their job.
+//   ss --lesson-add --scope <scope> --kind <kind> --text "<text>"
+//   Scope: global | strand:<slug> | beat:<guid>
+//   Kind:  score-vs-function | delight | voice | pacing | continuity | other
+if (args.Contains("--lesson-add"))
+{
+    var cliBuilder = WebApplication.CreateBuilder(args);
+    cliBuilder.Services.AddStreetSamuraiServices();
+    var cliApp = cliBuilder.Build();
+    Environment.ExitCode = await ProseLessonCli.RunAddAsync(args, cliApp.Services);
+    return;
+}
+
+// CLI mode: list prose lessons (all scopes or filtered).
+//   ss --lessons-list [--scope <scope>]
+if (args.Contains("--lessons-list"))
+{
+    var cliBuilder = WebApplication.CreateBuilder(args);
+    cliBuilder.Services.AddStreetSamuraiServices();
+    var cliApp = cliBuilder.Build();
+    Environment.ExitCode = await ProseLessonCli.RunListAsync(args, cliApp.Services);
+    return;
+}
+
 // CLI mode: review-driven auto-editor. Weight the latest reviews, target the
 // lowest / most-flagged beats (raise the floor), and emit conservative
 // before/after rewrite PROPOSALS (JSON) for an approval survey. Nothing is written.
@@ -600,6 +626,18 @@ if (args.Contains("--publish-docx"))
     cliBuilder.Services.AddStreetSamuraiServices();
     var cliApp = cliBuilder.Build();
     Environment.ExitCode = await PublishDocxCli.RunAsync(args, cliApp.Services);
+    return;
+}
+
+// CLI mode: deterministic timeline-consistency check (RFC 0009 §5).
+// Detects dead-character-acting and wound-regression violations. No LLM calls.
+//   ss --timeline-check (--slug <slug> | --id <guid>)
+if (args.Contains("--timeline-check"))
+{
+    var cliBuilder = WebApplication.CreateBuilder(args);
+    cliBuilder.Services.AddStreetSamuraiServices();
+    var cliApp = cliBuilder.Build();
+    Environment.ExitCode = await TimelineCheckCli.RunAsync(args, cliApp.Services);
     return;
 }
 

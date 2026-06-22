@@ -28,6 +28,7 @@ public class StrandReviewService
     private readonly SemanticFidelityService fidelity;
     private readonly StructuralDiagnosticService structural;
     private readonly ILogger<StrandReviewService> log;
+    private readonly ProseLessonStore? proseLessons;
 
     private int MaxConcurrency => settings.ReviewMaxConcurrency;
 
@@ -44,7 +45,8 @@ public class StrandReviewService
         FindingsService findings,
         SemanticFidelityService fidelity,
         StructuralDiagnosticService structural,
-        ILogger<StrandReviewService> log)
+        ILogger<StrandReviewService> log,
+        ProseLessonStore? proseLessons = null)
     {
         this.legion = legion;
         this.cfg = cfg;
@@ -55,6 +57,7 @@ public class StrandReviewService
         this.fidelity = fidelity;
         this.structural = structural;
         this.log = log;
+        this.proseLessons = proseLessons;
     }
 
     public record ReviewRunResult(int Requested, int Saved, int Failed, double AvgScore, string ContentHash, string ExportPath);
@@ -238,6 +241,21 @@ public class StrandReviewService
         var groupName = $"Group Sample {export.ContentHash[..6]}";
         var personas = SampleEnrichedPersonas(ballotCount);
 
+        // ── Prose-lessons injection ───────────────────────────────────────────
+        // Resolve the strand slug (needed for strand-scoped lessons). Fetched once
+        // here and captured into the lambda closures below so each ballot call
+        // carries the same lessons block without re-querying the DB.
+        string? strandSlug = null;
+        if (proseLessons != null)
+        {
+            await using var slugDb = await dbFactory.CreateDbContextAsync(ct);
+            strandSlug = await slugDb.Strands.AsNoTracking()
+                .Where(s => s.Id == strandId)
+                .Select(s => s.Slug)
+                .FirstOrDefaultAsync(ct);
+        }
+        var lessonsBlock = proseLessons?.FormatBlockForReview(strandSlug);
+
         // ── Tier 1: cheap score-only ballots (providers round-robined → even split). ──
         var sem = new SemaphoreSlim(MaxConcurrency);
         var bag = new System.Collections.Concurrent.ConcurrentBag<StrandReview>();
@@ -252,7 +270,7 @@ public class StrandReviewService
                 await sem.WaitAsync(ct);
                 try
                 {
-                    var r = await BallotOnceAsync(strandId, export, persona, provider, ct);
+                    var r = await BallotOnceAsync(strandId, export, persona, provider, ct, lessonsBlock);
                     if (r != null) { r.FocusGroupName = groupName; bag.Add(r); }
                     else Interlocked.Increment(ref failed);
                 }
@@ -280,7 +298,7 @@ public class StrandReviewService
                     await sem.WaitAsync(ct);
                     try
                     {
-                        var r = await BallotOnceAsync(strandId, export, persona, provider, ct);
+                        var r = await BallotOnceAsync(strandId, export, persona, provider, ct, lessonsBlock);
                         if (r != null) { r.FocusGroupName = groupName; bag.Add(r); }
                     }
                     catch (Exception ex) { log.LogWarning(ex, "Retry ballot failed: {P}", persona.Id); }
@@ -826,14 +844,15 @@ Return ONLY a JSON object, nothing else:
     /// <summary>One cheap SCORE-ONLY ballot: overall + flow + per-beat 1-5 + a single
     /// weakness tag, no prose paragraph. The wide-net scoring/per-beat tier.</summary>
     private async Task<StrandReview?> BallotOnceAsync(
-        Guid strandId, StrandMarkdownExporter.StrandExport export, Persona persona, string provider, CancellationToken ct)
+        Guid strandId, StrandMarkdownExporter.StrandExport export, Persona persona, string provider, CancellationToken ct,
+        string? lessonsBlock = null)
     {
         var key = ResolveKey(provider);
         if (string.IsNullOrWhiteSpace(key)) { log.LogWarning("No API key for provider {Provider}", provider); return null; }
         var model = cfg.ModelOverrides.TryGetValue(provider, out var m) && !string.IsNullOrWhiteSpace(m)
             ? m : LegionClient.DefaultModels.GetValueOrDefault(provider, "");
 
-        var system = BuildBallotSystemPrompt(persona, export.Title, export.BeatCount);
+        var system = BuildBallotSystemPrompt(persona, export.Title, export.BeatCount, lessonsBlock);
         // beat_scores must cover every beat — the JSON grows with beat count, so the
         // output budget must too (a 535-beat book strand needs ~4k tokens of ballot).
         var maxTok = Math.Min(8000, 900 + export.BeatCount * 6);
@@ -882,16 +901,16 @@ Return ONLY a JSON object, nothing else:
         return TryParseReview(raw, out _, out var review, out var improvements) ? (review, improvements) : null;
     }
 
-    private string BuildBallotSystemPrompt(Persona persona, string title, int beatCount)
+    private string BuildBallotSystemPrompt(Persona persona, string title, int beatCount, string? lessonsBlock = null)
     {
         var who = BuildWhoBlock(persona);
+        var lessonsSection = string.IsNullOrWhiteSpace(lessonsBlock) ? "" : $"\n\n{lessonsBlock}\n";
         return
 $@"{who}
 
 You are reading a complete short audio-fiction story titled ""{title}"" (below), split into {beatCount} numbered beats, [Beat 1] through [Beat {beatCount}]. Read the WHOLE thing as the person above, then cast a quick SCORING BALLOT — no prose review, just the numbers and one gripe.
 
-Judge each beat for how it LANDS IN CONTEXT (its job in the sequence), not its standalone flash.
-
+Judge each beat for how it LANDS IN CONTEXT (its job in the sequence), not its standalone flash.{lessonsSection}
 Return ONLY a JSON object, nothing else:
 - ""score"": integer 1-100 — your overall reaction as this reader. Use the WHOLE scale; do not default to the 70s.
 - ""flow"": integer 1-100 — how well it hangs together as a sequence (momentum, payoffs, transitions), separate from beat quality.

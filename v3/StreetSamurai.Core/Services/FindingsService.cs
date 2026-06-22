@@ -241,6 +241,41 @@ public class FindingsService
         db.SaveChanges();
     }
 
+    /// <summary>
+    /// All findings whose FilePath starts with a given prefix (e.g. <c>"beat:{guid}"</c>).
+    /// Used by SceneContextAssembler to read persisted narrative-science results for a beat.
+    /// </summary>
+    public IReadOnlyList<Finding> ListByFilePathPrefix(string prefix, int limit = 50)
+    {
+        if (string.IsNullOrWhiteSpace(prefix)) return Array.Empty<Finding>();
+        using var db = dbFactory.CreateDbContext();
+        var rows = db.Findings.AsNoTracking()
+            .Where(f => f.FilePath.StartsWith(prefix))
+            .OrderBy(f => f.Severity == "High" ? 0 : f.Severity == "Medium" ? 1 : f.Severity == "Low" ? 2 : 3)
+            .ThenByDescending(f => f.DetectedAt)
+            .Take(limit)
+            .ToList();
+        return rows.Select(ToFinding).ToList();
+    }
+
+    /// <summary>
+    /// Delete all findings for a given file-path prefix whose Summary starts with a given
+    /// text prefix (e.g. <c>"NARRATIVE-SCIENCE [dramatic-question]:"</c>). Used to
+    /// supersede stale narrative-science results before writing fresh ones.
+    /// </summary>
+    public int DeleteBySummaryPrefix(string filePathPrefix, string summaryPrefix)
+    {
+        using var db = dbFactory.CreateDbContext();
+        var rows = db.Findings
+            .Where(f => f.FilePath.StartsWith(filePathPrefix)
+                     && f.Summary.StartsWith(summaryPrefix))
+            .ToList();
+        if (rows.Count == 0) return 0;
+        db.Findings.RemoveRange(rows);
+        db.SaveChanges();
+        return rows.Count;
+    }
+
     private static Finding ToFinding(FindingRow r) => new(
         Id:           r.Id,
         DetectedAt:   r.DetectedAt,
