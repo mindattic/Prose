@@ -629,9 +629,10 @@ if (args.Contains("--reparent-strand"))
 
 // CLI mode: render the WHOLE strand as one continuous audiobook (one TTS pass,
 // tiered to ElevenLabs limits — one request, else per-chapter, else split) and
-// drop the MP3 in Downloads. The headless twin of the "Publish Audiobook" button.
-//   ss --publish-audiobook (--id <guid|prefix> | --slug <slug>)
-if (args.Contains("--publish-audiobook"))
+// drop the MP3 in Downloads. The headless twin of the "Export Audio" button.
+//   ss --record | --export-audio | --export-mp3 | --publish-audiobook
+//      (--id <guid|prefix> | --slug <slug>)
+if (args.Contains("--publish-audiobook") || args.Contains("--record") || args.Contains("--export-audio") || args.Contains("--export-mp3"))
 {
     var cliBuilder = WebApplication.CreateBuilder(args);
     cliBuilder.Services.AddStreetSamuraiServices();

@@ -7,11 +7,10 @@ namespace StreetSamurai.Blazor.Cli;
 
 /// <summary>
 /// <c>ss --publish-docx (--id &lt;guid|prefix&gt; | --slug &lt;slug&gt;) [--author "Name"] [--export-dir &lt;path&gt;]</c>
-/// — render a strand to a KDP-ready Word .docx. With no <c>--export-dir</c> (and no
-/// configured PublishExportDirectory) it writes to the user's Downloads folder. With
-/// <c>--export-dir</c> it persists that folder as the setting and writes
-/// <c>&lt;dir&gt;\&lt;Hyphenated-Title&gt;.docx</c> into it, clearing any existing .docx there first.
-/// The directory is the literal output folder (typically the book's own folder).
+/// — render a strand to a KDP-ready Word .docx AND a matching PDF in the same location.
+/// With no <c>--export-dir</c> (and no configured PublishExportDirectory) both files write
+/// to the user's Downloads folder. With <c>--export-dir</c> the docx is copied there and
+/// the PDF lands in Downloads alongside it.
 /// </summary>
 public static class PublishDocxCli
 {
@@ -36,6 +35,7 @@ public static class PublishDocxCli
 
         var dbFactory = services.GetRequiredService<IDbContextFactory<StreetSamuraiDbContext>>();
         var docx = services.GetRequiredService<DocxExportService>();
+        var manuscript = services.GetRequiredService<ManuscriptExportService>();
 
         if (!string.IsNullOrWhiteSpace(exportDir))
         {
@@ -58,11 +58,13 @@ public static class PublishDocxCli
             strandId = strand.Id; strandTitle = strand.Title;
         }
 
-        Console.WriteLine($"[publish-docx] Rendering \"{strandTitle}\" to KDP Word .docx…");
+        Console.WriteLine($"[publish-docx] Rendering \"{strandTitle}\" to KDP .docx + .pdf…");
         try
         {
-            var path = await docx.ExportStrandAsync(strandId, author);
-            Console.WriteLine($"[publish-docx] Wrote: {path}");
+            var docxPath = await docx.ExportStrandAsync(strandId, author);
+            Console.WriteLine($"[publish-docx] Wrote docx: {docxPath}");
+            var pdfPath = await manuscript.ExportPdfAsync(strandId, author);
+            Console.WriteLine($"[publish-docx] Wrote pdf:  {pdfPath}");
             return 0;
         }
         catch (Exception ex) { Console.Error.WriteLine($"[publish-docx] Failed: {ex.Message}"); return 1; }

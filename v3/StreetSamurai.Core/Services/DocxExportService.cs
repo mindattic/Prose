@@ -135,8 +135,10 @@ public class DocxExportService
             // bookmarks) are the display content; if Word recalculates them it replaces our
             // Hyperlink-styled runs with plain text because the auto-update pass doesn't add
             // bookmarks to headings. Users can still press F9 in Word to refresh page numbers.
+            // MirrorMargins makes the gutter (inside margin) alternate left/right for recto/verso
+            // pages — required for KDP paperback so the gutter is always on the spine side.
             var settingsPart = main.AddNewPart<DocumentSettingsPart>();
-            settingsPart.Settings = new Settings(new UpdateFieldsOnOpen { Val = false });
+            settingsPart.Settings = new Settings(new UpdateFieldsOnOpen { Val = false }, new MirrorMargins());
             settingsPart.Settings.Save();
 
             var body = main.Document.AppendChild(new Body());
@@ -245,9 +247,12 @@ public class DocxExportService
 
     // ── builders ─────────────────────────────────────────────────────────────
 
+    // KDP paperback trim: 6" × 9" (8640 × 12960 twips).
+    // Margins: top/bottom 1" (1440), inside/gutter 0.75" (1080), outside 0.375" (540).
+    // MirrorMargins in document settings makes Left=gutter on odd pages, Right=gutter on even.
     private static SectionProperties SectionProps() => new(
-        new PageSize { Width = 12240U, Height = 15840U },
-        new PageMargin { Top = 1440, Bottom = 1440, Left = 1440U, Right = 1440U, Header = 720U, Footer = 720U, Gutter = 0U });
+        new PageSize { Width = 8640U, Height = 12960U },
+        new PageMargin { Top = 1440, Bottom = 1440, Left = 1080U, Right = 540U, Header = 720U, Footer = 720U, Gutter = 0U });
 
     private static Paragraph BlankLines(int n)
     {
@@ -417,7 +422,8 @@ public class DocxExportService
     {
         var p = new Paragraph(new ParagraphProperties(
             new Justification { Val = JustificationValues.Both },
-            new SpacingBetweenLines { Line = "276", LineRule = LineSpacingRuleValues.Auto, After = "160" }));
+            new Indentation { FirstLine = "720" },   // 0.5" first-line indent; no blank line between ¶s
+            new SpacingBetweenLines { Line = "276", LineRule = LineSpacingRuleValues.Auto, After = "0" }));
         foreach (var run in InlineRuns(text)) p.AppendChild(run);
         return p;
     }

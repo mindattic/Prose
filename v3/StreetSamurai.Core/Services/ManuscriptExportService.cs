@@ -92,18 +92,25 @@ public class ManuscriptExportService
         return path;
     }
 
-    /// <summary>Export the strand as a KDP-style PDF to Downloads; returns the path.</summary>
+    /// <summary>Export the strand as a KDP-ready PDF to Downloads; returns the path.</summary>
     public async Task<string> ExportPdfAsync(Guid strandId, string? author = null, CancellationToken ct = default)
     {
         var (manuscript, path) = await LoadAsync(strandId, "pdf", ct);
+
+        // 6" × 9" KDP paperback trim (points: 1" = 72pt).
+        // Margins: top/bottom 1", inside/gutter 0.75", outside 0.375".
+        // No mirror-margin support in QuestPDF — left is always the gutter; KDP adjusts for binding.
+        var trim = new PageSize(432, 648);
+        const float marginTop = 72f, marginBottom = 72f, marginInside = 54f, marginOutside = 27f;
 
         QuestPDF.Fluent.Document.Create(container =>
         {
             // ── Title page ──
             container.Page(p =>
             {
-                p.Size(PageSizes.Letter);
-                p.Margin(72);
+                p.Size(trim);
+                p.MarginTop(marginTop); p.MarginBottom(marginBottom);
+                p.MarginLeft(marginInside); p.MarginRight(marginOutside);
                 p.PageColor(Colors.White);
                 p.DefaultTextStyle(t => t.FontFamily("Garamond").FontSize(12).FontColor(Colors.Black));
                 p.Content().AlignCenter().AlignMiddle().Column(col =>
@@ -121,8 +128,9 @@ public class ManuscriptExportService
             {
                 container.Page(p =>
                 {
-                    p.Size(PageSizes.Letter);
-                    p.Margin(72);
+                    p.Size(trim);
+                    p.MarginTop(marginTop); p.MarginBottom(marginBottom);
+                    p.MarginLeft(marginInside); p.MarginRight(marginOutside);
                     p.PageColor(Colors.White);
                     p.DefaultTextStyle(t => t.FontFamily("Garamond").FontSize(12).LineHeight(1.4f).FontColor(Colors.Black));
                     p.Content().Column(col =>
@@ -130,7 +138,7 @@ public class ManuscriptExportService
                         if (!string.IsNullOrWhiteSpace(chapter.Heading))
                             col.Item().PaddingBottom(18).AlignCenter().Text(chapter.Heading).FontSize(16).Bold();
                         foreach (var para in chapter.Paragraphs)
-                            col.Item().PaddingBottom(10).Text(t =>
+                            col.Item().PaddingBottom(6).Text(t =>
                             {
                                 t.Justify();
                                 AppendInline(t, para);

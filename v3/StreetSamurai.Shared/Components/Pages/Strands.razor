@@ -8,6 +8,7 @@
 @inject NavigationManager Nav
 @inject ToastNotifier Toast
 @inject IJSRuntime JS
+@inject StreetSamurai.Core.Services.IUniverseContext Universe
 @inject StreetSamurai.Core.Services.StrandWorkbenchService Workbench
 @inject StreetSamurai.Core.Services.DocxExportService Docx
 @inject StreetSamurai.Core.Services.ManuscriptExportService Manuscript
@@ -25,21 +26,15 @@
     <div class="d-flex justify-content-between align-items-center mb-3">
         <div>
             <h4 class="text-danger mb-0"><i class="bi bi-collection me-2"></i>Strands</h4>
-            <div class="text-muted small">Every story, scene, book, and bedtime episode — all one schema now.</div>
+            <div class="text-muted small">Stories contain chapters; chapters contain beats.</div>
         </div>
         <div class="d-flex gap-2 align-items-end">
             <input class="form-control form-control-sm bg-black text-light border-secondary"
                    placeholder="New strand title…" @bind="newTitle" @bind:event="oninput" style="width:240px;" />
             <select class="form-select form-select-sm bg-black text-light border-secondary" @bind="newKind" style="width:120px;">
-                <option value="strand">strand</option>
                 <option value="series">series</option>
-                <option value="collection">collection</option>
-                <option value="book">book</option>
+                <option value="story">story</option>
                 <option value="chapter">chapter</option>
-                <option value="episode">episode</option>
-                <option value="scene">scene</option>
-                <option value="saga">saga</option>
-                <option value="anthology">anthology</option>
             </select>
             <button class="btn btn-sm btn-outline-info" @onclick="CreateAsync" disabled="@(string.IsNullOrWhiteSpace(newTitle))">
                 <i class="bi bi-plus-circle me-1"></i>Create
@@ -59,7 +54,7 @@
             </div>
             <h6 class="text-light mb-2">No strands yet</h6>
             <div class="text-muted small mb-3">
-                A <em>strand</em> is the universal container — a book, a chapter, an episode, a scene, or just a string of beats.
+                A <em>strand</em> is a hierarchical container — a root <em>story</em> or a <em>chapter</em> (leaf) that holds beats.
                 <br />Type a title above and click Create, or run <code>ss --write-strand --seed "&hellip;"</code> from the CLI to generate one with the LLM.
             </div>
         </div>
@@ -180,19 +175,14 @@
                                                     <li><h6 class="dropdown-header">Audio</h6></li>
                                                     <li>
                                                         <button class="dropdown-item" @onclick="() => ExportCollectionAudiobookAsync(s.Id)">
-                                                            <i class="bi bi-headphones me-2"></i>Audiobook (.mp3)
+                                                            <i class="bi bi-mic me-2"></i>Export Audio (.mp3)
                                                         </button>
                                                     </li>
                                                     <li><hr class="dropdown-divider"></li>
                                                     <li><h6 class="dropdown-header">Manuscript</h6></li>
                                                     <li>
-                                                        <button class="dropdown-item" @onclick='() => ExportCollectionAsync(s.Id, "WORD", "Word .docx", id => Docx.ExportStrandAsync(id))'>
-                                                            <i class="bi bi-file-earmark-word me-2"></i>Word Document (.docx)
-                                                        </button>
-                                                    </li>
-                                                    <li>
-                                                        <button class="dropdown-item" @onclick='() => ExportCollectionAsync(s.Id, "PDF", "PDF", id => Manuscript.ExportPdfAsync(id))'>
-                                                            <i class="bi bi-file-pdf me-2"></i>PDF (.pdf)
+                                                        <button class="dropdown-item" @onclick="() => ExportCollectionManuscriptAsync(s.Id)">
+                                                            <i class="bi bi-file-earmark-richtext me-2"></i>Export Manuscript (.docx + .pdf)
                                                         </button>
                                                     </li>
                                                     <li>
@@ -412,7 +402,7 @@
     /// <summary>Id of the parent strand currently running a collection export. Null when idle.</summary>
     private Guid? exportingCollectionId;
     private string newTitle = "";
-    private string newKind = "strand";
+    private string newKind = "story";
 
     // ── Inline title/description editing ─────────────────────────────────
     private Guid? editingId;
@@ -532,6 +522,24 @@
                 var prevSk = targetIdx > 0 ? siblings[targetIdx - 1].SortKey : nextSk - 200.0;
                 newSortKey = (prevSk + nextSk) / 2.0;
             }
+        }
+
+        // Enforce kind hierarchy: series→story→chapter. Reject invalid drops.
+        if (newParentId.HasValue)
+        {
+            var parentStrand = mode == "child"
+                ? target
+                : await db.Strands.AsNoTracking().FirstOrDefaultAsync(s => s.Id == newParentId);
+            if (parentStrand != null)
+            {
+                var err = KindCompatibilityError(parentStrand.Kind, dragged.Kind);
+                if (err != null) { Toast.Error("DROP-INVALID", err); return; }
+            }
+        }
+        else if (dragged.Kind == "chapter")
+        {
+            Toast.Error("DROP-INVALID", "A chapter must be under a story. Drop it onto a story instead.");
+            return;
         }
 
         dragged.ParentStrandId = newParentId;
@@ -662,6 +670,21 @@
         finally { exportingCollectionId = null; await InvokeAsync(StateHasChanged); }
     }
 
+    private async Task ExportCollectionManuscriptAsync(Guid strandId)
+    {
+        if (exportingCollectionId != null) return;
+        exportingCollectionId = strandId;
+        await InvokeAsync(StateHasChanged);
+        try
+        {
+            await Docx.ExportStrandAsync(strandId);
+            await Manuscript.ExportPdfAsync(strandId);
+            Toast.Success("EXPORT", "Manuscript exported — .docx and .pdf saved to Downloads.");
+        }
+        catch (Exception ex) { Toast.Error("EXPORT-FAIL", ex.Message); }
+        finally { exportingCollectionId = null; await InvokeAsync(StateHasChanged); }
+    }
+
     private async Task ExportCollectionAsync(Guid strandId, string tag, string label, Func<Guid, Task<string>> export)
     {
         if (exportingCollectionId != null) return;
@@ -686,6 +709,32 @@
             .Trim('-');
         if (string.IsNullOrEmpty(baseSlug)) baseSlug = "strand";
         var slug = $"{baseSlug}-{id.ToString("N")[..8]}";
+
+        // Chapters without a parent are orphans — auto-route to the "Drafts" story.
+        Guid? parentId = null;
+        if (newKind == "chapter")
+        {
+            var universeId = Universe.CurrentId;
+            var drafts = await db.Strands.FirstOrDefaultAsync(s =>
+                s.Title == "Drafts" && s.Kind == "story" && s.ParentStrandId == null && s.UniverseId == universeId);
+            if (drafts == null)
+            {
+                drafts = new StreetSamurai.Core.Data.Entities.Strand
+                {
+                    Id = Guid.CreateVersion7(),
+                    Slug = $"drafts-{Guid.CreateVersion7().ToString("N")[..8]}",
+                    Title = "Drafts",
+                    Kind = "story",
+                    Status = "draft",
+                    SortKey = (strands.Count + 2) * 100.0,
+                    UniverseId = universeId,
+                };
+                db.Strands.Add(drafts);
+            }
+            parentId = drafts.Id;
+            Toast.Info("DRAFTS", "Chapter routed to “Drafts” — assign it to a story when ready.");
+        }
+
         db.Strands.Add(new StreetSamurai.Core.Data.Entities.Strand
         {
             Id = id,
@@ -693,6 +742,7 @@
             Title = newTitle.Trim(),
             Kind = newKind,
             Status = "draft",
+            ParentStrandId = parentId,
             SortKey = (strands.Count + 1) * 100.0,
         });
         try
@@ -820,4 +870,16 @@
 
     private static string ScoreBadge(int score) =>
         score >= 80 ? "bg-success" : score >= 60 ? "bg-info text-dark" : score >= 40 ? "bg-warning text-dark" : "bg-danger";
+
+    // Enforces the hierarchy: series → story → chapter.
+    // Returns an error message if the combination is invalid, null if OK.
+    private static string? KindCompatibilityError(string parentKind, string childKind) => (parentKind, childKind) switch
+    {
+        ("series", "story")   => null,
+        ("story",  "chapter") => null,
+        ("story",  "story")   => "A story cannot contain another story — only a series can.",
+        ("series", "chapter") => "A chapter must be under a story, not directly under a series.",
+        ("chapter", _)        => "A chapter cannot contain other strands (it holds beats).",
+        _                     => $"A '{childKind}' cannot be placed under a '{parentKind}'.",
+    };
 }
