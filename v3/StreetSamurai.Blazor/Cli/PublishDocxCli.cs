@@ -58,9 +58,11 @@ public static class PublishDocxCli
             strandId = strand.Id; strandTitle = strand.Title;
         }
 
-        Console.WriteLine($"[publish-docx] Rendering \"{strandTitle}\" to KDP .docx + .pdf…");
+        Console.WriteLine($"[publish-docx] Rendering \"{strandTitle}\" to .epub + .docx + .pdf…");
         try
         {
+            var epubPath = await manuscript.ExportEpubAsync(strandId, author);
+            Console.WriteLine($"[publish-docx] Wrote epub: {epubPath}");
             var docxPath = await docx.ExportStrandAsync(strandId, author);
             Console.WriteLine($"[publish-docx] Wrote docx: {docxPath}");
             var pdfPath = await manuscript.ExportPdfAsync(strandId, author);

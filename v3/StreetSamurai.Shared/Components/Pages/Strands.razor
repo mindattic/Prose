@@ -182,7 +182,7 @@
                                                     <li><h6 class="dropdown-header">Manuscript</h6></li>
                                                     <li>
                                                         <button class="dropdown-item" @onclick="() => ExportCollectionManuscriptAsync(s.Id)">
-                                                            <i class="bi bi-file-earmark-richtext me-2"></i>Export Manuscript (.docx + .pdf)
+                                                            <i class="bi bi-file-earmark-richtext me-2"></i>Export Manuscript (.epub + .docx + .pdf)
                                                         </button>
                                                     </li>
                                                     <li>
@@ -677,9 +677,10 @@
         await InvokeAsync(StateHasChanged);
         try
         {
+            await Manuscript.ExportEpubAsync(strandId);
             await Docx.ExportStrandAsync(strandId);
             await Manuscript.ExportPdfAsync(strandId);
-            Toast.Success("EXPORT", "Manuscript exported — .docx and .pdf saved to Downloads.");
+            Toast.Success("EXPORT", "Manuscript exported — .epub, .docx, and .pdf saved to Downloads.");
         }
         catch (Exception ex) { Toast.Error("EXPORT-FAIL", ex.Message); }
         finally { exportingCollectionId = null; await InvokeAsync(StateHasChanged); }

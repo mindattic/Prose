@@ -1,3 +1,4 @@
+using System.IO.Compression;
 using System.Text;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Logging;
@@ -9,13 +10,10 @@ using StreetSamurai.Core.Data;
 namespace StreetSamurai.Core.Services;
 
 /// <summary>
-/// Renders a strand's ordered beats to the human-readable manuscript formats that
-/// sit alongside the Word <c>.docx</c> (<see cref="DocxExportService"/>) and the
-/// audiobook: Markdown and PDF. Every output lands in the user's Downloads folder.
-/// The Markdown output embeds <c>&lt;!-- beat:N:id7 --&gt;</c> markers above each
-/// beat so the file can be edited offline and reimported via <c>ss --import-md</c>.
-/// The PDF mirrors the KDP layout the .docx uses (title page, fresh page per
-/// chapter, justified serif body) via QuestPDF.
+/// Renders a strand's ordered beats to the three KDP deliverables: EPUB 3 (ebook upload),
+/// PDF (paperback upload), and Markdown (offline editing aid with beat markers for
+/// <c>ss --import-md</c>). All three land in Downloads. The Word .docx is produced
+/// by <see cref="DocxExportService"/>; all three formats share the same 6"×9" KDP trim.
 /// </summary>
 public class ManuscriptExportService
 {
@@ -154,6 +152,174 @@ public class ManuscriptExportService
 
         log.LogInformation("Exported strand {Strand} to PDF {Path}", manuscript.Slug, path);
         return path;
+    }
+
+    /// <summary>Export the strand as a KDP-ready EPUB 3 to Downloads; returns the path.</summary>
+    public async Task<string> ExportEpubAsync(Guid strandId, string? author = null, CancellationToken ct = default)
+    {
+        var (manuscript, path) = await LoadAsync(strandId, "epub", ct);
+        var authorName = string.IsNullOrWhiteSpace(author) ? "Unknown" : author.Trim();
+        var bookUuid = $"urn:uuid:{Guid.NewGuid()}";
+
+        using var fs = File.Create(path);
+        using var zip = new ZipArchive(fs, ZipArchiveMode.Create);
+
+        // EPUB spec: mimetype must be the first entry, stored (not deflated).
+        var mimeEntry = zip.CreateEntry("mimetype", CompressionLevel.NoCompression);
+        using (var s = mimeEntry.Open()) using (var w = new StreamWriter(s, Encoding.ASCII))
+            w.Write("application/epub+zip");
+
+        EpubWriteEntry(zip, "META-INF/container.xml", EpubContainerXml());
+        EpubWriteEntry(zip, "OEBPS/styles.css", EpubStylesCss());
+        EpubWriteEntry(zip, "OEBPS/title.xhtml", EpubTitlePageXhtml(manuscript, authorName));
+        EpubWriteEntry(zip, "OEBPS/toc.xhtml", EpubTocXhtml(manuscript));
+
+        for (int i = 0; i < manuscript.Chapters.Count; i++)
+            EpubWriteEntry(zip, $"OEBPS/chapter-{i + 1:D3}.xhtml", EpubChapterXhtml(manuscript.Chapters[i], i + 1));
+
+        EpubWriteEntry(zip, "OEBPS/content.opf", EpubContentOpf(manuscript, authorName, bookUuid));
+
+        log.LogInformation("Exported strand {Strand} to EPUB {Path}", manuscript.Slug, path);
+        return path;
+    }
+
+    // ── EPUB builders ────────────────────────────────────────────────────────
+
+    private static string EpubContainerXml() => """
+        <?xml version="1.0" encoding="UTF-8"?>
+        <container version="1.0" xmlns="urn:oasis:names:tc:opendocument:xmlns:container">
+          <rootfiles>
+            <rootfile full-path="OEBPS/content.opf" media-type="application/oebps-package+xml"/>
+          </rootfiles>
+        </container>
+        """;
+
+    private static string EpubStylesCss() => """
+        body { font-family: Georgia, "Times New Roman", serif; line-height: 1.55; margin: 1em; }
+        h1, h2, h3 { font-family: inherit; line-height: 1.2; }
+        h1.book-title { font-size: 2em; margin: 1.5em 0 0.4em; text-align: center; }
+        p.author { text-align: center; margin-top: 2em; font-size: 1.1em; }
+        p.synopsis { text-align: center; color: #666; font-style: italic; margin-top: 1em; }
+        body.title-page { text-align: center; }
+        h2.chapter-heading { font-size: 1.4em; margin: 2em 0 1em; text-align: center; }
+        p { text-indent: 1.4em; margin: 0.1em 0; }
+        p.no-indent { text-indent: 0; }
+        em { font-style: italic; }
+        """;
+
+    private static string EpubTitlePageXhtml(Manuscript m, string author)
+    {
+        var synopsis = string.IsNullOrWhiteSpace(m.Synopsis) ? "" :
+            $"\n  <p class=\"synopsis\">{EpubEsc(m.Synopsis)}</p>";
+        return $"""
+            <?xml version="1.0" encoding="UTF-8"?>
+            <!DOCTYPE html>
+            <html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en">
+            <head><title>{EpubEsc(m.Title)}</title><link rel="stylesheet" type="text/css" href="styles.css"/></head>
+            <body class="title-page">
+              <h1 class="book-title">{EpubEsc(m.Title)}</h1>
+              <p class="author">{EpubEsc(author)}</p>{synopsis}
+            </body></html>
+            """;
+    }
+
+    private static string EpubTocXhtml(Manuscript m)
+    {
+        var sb = new StringBuilder();
+        sb.AppendLine("""<?xml version="1.0" encoding="UTF-8"?>""");
+        sb.AppendLine("""<!DOCTYPE html>""");
+        sb.AppendLine("""<html xmlns="http://www.w3.org/1999/xhtml" xmlns:epub="http://www.idpf.org/2007/ops" xml:lang="en">""");
+        sb.AppendLine($"""<head><title>{EpubEsc(m.Title)} — Contents</title><link rel="stylesheet" type="text/css" href="styles.css"/></head>""");
+        sb.AppendLine("""<body><nav epub:type="toc" id="toc"><h1>Contents</h1><ol>""");
+        for (int i = 0; i < m.Chapters.Count; i++)
+        {
+            var label = string.IsNullOrWhiteSpace(m.Chapters[i].Heading)
+                ? $"Chapter {i + 1}" : m.Chapters[i].Heading!;
+            sb.AppendLine($"""  <li><a href="chapter-{i + 1:D3}.xhtml">{EpubEsc(label)}</a></li>""");
+        }
+        sb.AppendLine("""</ol></nav></body></html>""");
+        return sb.ToString();
+    }
+
+    private static string EpubChapterXhtml(Chapter chapter, int number)
+    {
+        var heading = string.IsNullOrWhiteSpace(chapter.Heading) ? $"Chapter {number}" : chapter.Heading!;
+        var sb = new StringBuilder();
+        sb.AppendLine("""<?xml version="1.0" encoding="UTF-8"?>""");
+        sb.AppendLine("""<!DOCTYPE html>""");
+        sb.AppendLine("""<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en">""");
+        sb.AppendLine($"""<head><title>{EpubEsc(heading)}</title><link rel="stylesheet" type="text/css" href="styles.css"/></head>""");
+        sb.AppendLine("<body>");
+        sb.AppendLine($"""<h2 class="chapter-heading">{EpubEsc(heading)}</h2>""");
+        bool first = true;
+        foreach (var para in chapter.Paragraphs)
+        {
+            var cls = first ? " class=\"no-indent\"" : "";
+            sb.AppendLine($"<p{cls}>{EpubRenderInline(para)}</p>");
+            first = false;
+        }
+        sb.AppendLine("</body></html>");
+        return sb.ToString();
+    }
+
+    private static string EpubContentOpf(Manuscript m, string author, string uuid)
+    {
+        var sb = new StringBuilder();
+        sb.AppendLine("""<?xml version="1.0" encoding="UTF-8"?>""");
+        sb.AppendLine("""<package xmlns="http://www.idpf.org/2007/opf" version="3.0" unique-identifier="bookid" xml:lang="en">""");
+        sb.AppendLine("""<metadata xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:opf="http://www.idpf.org/2007/opf">""");
+        sb.AppendLine($"""  <dc:identifier id="bookid">{uuid}</dc:identifier>""");
+        sb.AppendLine($"""  <dc:title>{EpubEsc(m.Title)}</dc:title>""");
+        sb.AppendLine($"""  <dc:creator opf:role="aut">{EpubEsc(author)}</dc:creator>""");
+        sb.AppendLine("""  <dc:language>en</dc:language>""");
+        if (!string.IsNullOrWhiteSpace(m.Synopsis))
+            sb.AppendLine($"""  <dc:description>{EpubEsc(m.Synopsis)}</dc:description>""");
+        sb.AppendLine($"""  <meta property="dcterms:modified">{DateTime.UtcNow:yyyy-MM-ddTHH:mm:ssZ}</meta>""");
+        sb.AppendLine("</metadata>");
+        sb.AppendLine("<manifest>");
+        sb.AppendLine("""  <item id="css"   href="styles.css"  media-type="text/css"/>""");
+        sb.AppendLine("""  <item id="title" href="title.xhtml" media-type="application/xhtml+xml"/>""");
+        sb.AppendLine("""  <item id="toc"   href="toc.xhtml"   media-type="application/xhtml+xml" properties="nav"/>""");
+        for (int i = 0; i < m.Chapters.Count; i++)
+            sb.AppendLine($"""  <item id="ch{i + 1:D3}" href="chapter-{i + 1:D3}.xhtml" media-type="application/xhtml+xml"/>""");
+        sb.AppendLine("</manifest>");
+        sb.AppendLine("<spine>");
+        sb.AppendLine("""  <itemref idref="title"/>""");
+        sb.AppendLine("""  <itemref idref="toc"/>""");
+        for (int i = 0; i < m.Chapters.Count; i++)
+            sb.AppendLine($"""  <itemref idref="ch{i + 1:D3}"/>""");
+        sb.AppendLine("</spine>");
+        sb.AppendLine("</package>");
+        return sb.ToString();
+    }
+
+    /// <summary>Render *italic* spans as XHTML em elements; HTML-escape everything else.</summary>
+    private static string EpubRenderInline(string text)
+    {
+        var segments = text.Split('*');
+        var sb = new StringBuilder();
+        bool italic = false;
+        foreach (var seg in segments)
+        {
+            if (seg.Length > 0)
+            {
+                var esc = EpubEsc(seg);
+                sb.Append(italic ? $"<em>{esc}</em>" : esc);
+            }
+            italic = !italic;
+        }
+        return sb.ToString();
+    }
+
+    private static string EpubEsc(string s) =>
+        (s ?? "").Replace("&", "&amp;").Replace("<", "&lt;").Replace(">", "&gt;").Replace("\"", "&quot;");
+
+    private static void EpubWriteEntry(ZipArchive zip, string entryPath, string content)
+    {
+        var entry = zip.CreateEntry(entryPath, CompressionLevel.Optimal);
+        using var s = entry.Open();
+        using var w = new StreamWriter(s, new UTF8Encoding(false));
+        w.Write(content);
     }
 
     // ── shared load + beat walk ──────────────────────────────────────────────
