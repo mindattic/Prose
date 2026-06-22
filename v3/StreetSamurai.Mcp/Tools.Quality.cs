@@ -192,9 +192,10 @@ public class QualityTools
     }
 
     /// <summary>Pre-flight structural analysis before running the review panel. Runs 12 targeted checks in parallel (antagonist cost, protagonist behavior change, stakes embodiment, exposition density, character embodiment, pacing gear change, affectation lines, dramatic question, passive protagonist, character function, dialogue subtext, jargon front-loading). Returns Pass/Warn/Fail per check with evidence quoted from the text and a concrete fix. Blocking failures mean: fix the structure before running 60 ballots — structural issues cap scores regardless of prose quality.</summary>
-    [McpServerTool, Description("Pre-flight structural analysis before running the review panel. Runs 12 targeted checks in parallel and returns Pass/Warn/Fail for each with evidence (a quote from the text) and a concrete one-action fix. Blocking failures (antagonist cost, protagonist behavior change, stakes embodiment, exposition density) mean the chapter is structurally unsound and will score in the 70s regardless of prose quality. Fix those first, then run review_strand. Accepts strand id (GUID) or slug.")]
+    [McpServerTool, Description("Pre-flight structural analysis before running the review panel. Runs 12 targeted checks in parallel and returns Pass/Warn/Fail for each with evidence (a quote from the text) and a concrete one-action fix. Blocking failures (antagonist cost, protagonist behavior change, stakes embodiment, exposition density) mean the chapter is structurally unsound and will score in the 70s regardless of prose quality. Fix those first, then run review_strand. Accepts strand id (GUID) or slug. max_chars controls how much of the assembled strand text each check sees (default 40000 chars ≈ 10k tokens — covers most chapter-length strands; lower to reduce cost, raise for very long strands).")]
     public async Task<string> DiagnoseStrand(
-        [Description("Strand id (GUID) or slug.")] string strandIdOrSlug)
+        [Description("Strand id (GUID) or slug.")] string strandIdOrSlug,
+        [Description("Max characters of assembled strand text each check reads. Default 40000 (~10k tokens). Lower to reduce cost; raise for very long strands (max practical: ~160000).")] int maxChars = 40000)
     {
         await using var db = await dbFactory.CreateDbContextAsync();
         Guid strandId;
@@ -207,7 +208,7 @@ public class QualityTools
             strandId = s.Id;
         }
 
-        var result = await structural.DiagnoseStrandAsync(strandId);
+        var result = await structural.DiagnoseStrandAsync(strandId, maxChars);
         return JsonSerializer.Serialize(new
         {
             strand_id    = result.StrandId,
