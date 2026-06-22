@@ -1,3 +1,4 @@
+using System.Collections.Concurrent;
 using System.Text.Json;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.DependencyInjection;
@@ -27,10 +28,33 @@ namespace StreetSamurai.Blazor.Cli;
 ///   five-act           Map a strand's beats to Storr's 5-act arc.
 ///     --slug &lt;strandSlug&gt;     Required.
 ///
-/// Global flags: --json (raw JSON output)
+/// Global flags:
+///   --json             Emit raw JSON output.
+///   --effort draft|standard|deep
+///                      Cost tier (default: deep).
+///                        draft    — skip analysis entirely (zero LLM calls).
+///                        standard — run only dramatic-question + scene-anatomy (cheapest, most actionable).
+///                        deep     — run all five analyzers (current default behavior).
+///   --no-persist       Do not save results as Findings in the database.
 /// </summary>
 public static class NarrativeScienceCli
 {
+    // ── Effort tiers (mirrors ReviewEffortProfile spirit) ─────────────────────
+    // draft    → skip entirely
+    // standard → dramatic-question + scene-anatomy only
+    // deep     → all five analyzers (default)
+
+    private static string ResolveEffort(string[] args)
+    {
+        for (int i = 0; i < args.Length - 1; i++)
+            if (args[i] == "--effort") return args[i + 1].Trim().ToLowerInvariant();
+        return "deep";
+    }
+
+    private static bool ShouldPersist(string[] args) => !args.Contains("--no-persist");
+
+    private const int ParallelCap = 8;
+
     public static async Task<int> RunAsync(string[] args, IServiceProvider services)
     {
         // Find subcommand (first non-flag arg after --narrative-science)
@@ -50,14 +74,33 @@ public static class NarrativeScienceCli
             return 1;
         }
 
+        var effort = ResolveEffort(args);
+
+        // draft tier: skip all analysis at zero cost
+        if (effort == "draft")
+        {
+            Console.WriteLine($"[narrative-science] skipped at draft tier — no LLM calls made.");
+            return 0;
+        }
+
         return subcommand.ToLowerInvariant() switch
         {
-            "sacred-flaw"       => await RunSacredFlawAsync(args, services),
-            "dramatic-question" => await RunDramaticQuestionAsync(args, services),
-            "scene-anatomy"     => await RunSceneAnatomyAsync(args, services),
-            "five-act"          => await RunFiveActAsync(args, services),
+            "sacred-flaw"       => effort == "standard"
+                                    ? SkipForStandard("sacred-flaw")
+                                    : await RunSacredFlawAsync(args, services),
+            "dramatic-question" => await RunDramaticQuestionAsync(args, services, effort),
+            "scene-anatomy"     => await RunSceneAnatomyAsync(args, services, effort),
+            "five-act"          => effort == "standard"
+                                    ? SkipForStandard("five-act")
+                                    : await RunFiveActAsync(args, services),
             _ => PrintUsage($"Unknown subcommand '{subcommand}'"),
         };
+    }
+
+    private static int SkipForStandard(string name)
+    {
+        Console.WriteLine($"[narrative-science] {name} skipped at standard tier (only dramatic-question + scene-anatomy run at standard).");
+        return 0;
     }
 
     // ── sacred-flaw ───────────────────────────────────────────────────────────
@@ -67,6 +110,7 @@ public static class NarrativeScienceCli
         string? characterArg = null;
         bool scaffold = args.Contains("--scaffold");
         bool json = args.Contains("--json");
+        bool persist = ShouldPersist(args);
 
         for (int i = 0; i < args.Length - 1; i++)
             if (args[i] == "--character") { characterArg = args[i + 1]; i++; }
@@ -75,6 +119,7 @@ public static class NarrativeScienceCli
             return PrintUsage("--character <slug|id> is required for sacred-flaw");
 
         var svc = services.GetRequiredService<NarrativeScienceService>();
+        var findingsSvc = services.GetRequiredService<FindingsService>();
         var charId = await ResolveCharacterAsync(characterArg, services);
         if (charId == null)
         {
@@ -84,6 +129,20 @@ public static class NarrativeScienceCli
 
         Console.WriteLine($"Analyzing sacred flaw for character {characterArg}…");
         var result = await svc.AnalyzeSacredFlawAsync(charId.Value, scaffold);
+
+        if (persist)
+        {
+            const string prefix = "NARRATIVE-SCIENCE [sacred-flaw]:";
+            var summary = $"{prefix} {characterArg} — theory: {result.TheoryOfControl}";
+            findingsSvc.Upsert(
+                filePath: $"character:{charId.Value:N}",
+                chapterId: null,
+                category: FindingCategory.Other,
+                severity: FindingSeverity.Low,
+                summary: summary,
+                snippet: result.Diagnosis,
+                suggestedFix: result.OriginDamage);
+        }
 
         if (json)
         {
@@ -117,12 +176,13 @@ public static class NarrativeScienceCli
 
     // ── dramatic-question ─────────────────────────────────────────────────────
 
-    static async Task<int> RunDramaticQuestionAsync(string[] args, IServiceProvider services)
+    static async Task<int> RunDramaticQuestionAsync(string[] args, IServiceProvider services, string effort = "deep")
     {
         string? strandSlug = null;
         Guid? beatId = null;
         string? characterArg = null;
         bool json = args.Contains("--json");
+        bool persist = ShouldPersist(args);
 
         for (int i = 0; i < args.Length - 1; i++)
         {
@@ -138,6 +198,7 @@ public static class NarrativeScienceCli
             return PrintUsage("--slug <strandSlug> or --id <beatId> required for dramatic-question");
 
         var svc = services.GetRequiredService<NarrativeScienceService>();
+        var findingsSvc = services.GetRequiredService<FindingsService>();
         Guid? charId = null;
         if (characterArg != null) charId = await ResolveCharacterAsync(characterArg, services);
 
@@ -150,6 +211,7 @@ public static class NarrativeScienceCli
             if (beat == null) { Console.Error.WriteLine($"Beat {beatId} not found."); return 1; }
             var r = await svc.CheckDramaticQuestionAsync(beat.Text ?? "", charId);
             PrintDramaticQuestionResult($"Beat #{beat.Number}", r, json);
+            if (persist) PersistDramaticQuestion(findingsSvc, beat.Id, beat.Number, r);
             return r.DramaticQuestionActive ? 0 : 1;
         }
         else
@@ -168,17 +230,53 @@ public static class NarrativeScienceCli
             if (beats.Count == 0) { Console.Error.WriteLine("No beats found."); return 1; }
             Console.WriteLine($"Checking dramatic question in {beats.Count} beats of '{strandSlug}'…");
 
-            int weak = 0;
-            foreach (var beat in beats)
+            // Delete stale NARRATIVE-SCIENCE findings for this strand before writing fresh ones.
+            if (persist)
+                PurgeNarrativeScienceFindings(findingsSvc, beats.Select(b => b.Id).ToList(), "NARRATIVE-SCIENCE [dramatic-question]:");
+
+            // Parallel execution: analyzers are independent (no shared mutable state).
+            var sem = new SemaphoreSlim(ParallelCap);
+            var bag = new ConcurrentBag<(int Number, Guid Id, DramaticQuestionResult Result)>();
+
+            await Task.WhenAll(beats.Select(beat => Task.Run(async () =>
             {
-                var r = await svc.CheckDramaticQuestionAsync(beat.Text ?? "", charId);
-                PrintDramaticQuestionResult($"Beat #{beat.Number}", r, json);
+                await sem.WaitAsync();
+                try
+                {
+                    var r = await svc.CheckDramaticQuestionAsync(beat.Text ?? "", charId);
+                    bag.Add((beat.Number, beat.Id, r));
+                }
+                finally { sem.Release(); }
+            })));
+
+            // Sort results by beat number to preserve display ordering.
+            var ordered = bag.OrderBy(x => x.Number).ToList();
+            int weak = 0;
+            foreach (var (num, id, r) in ordered)
+            {
+                PrintDramaticQuestionResult($"Beat #{num}", r, json);
                 if (!r.DramaticQuestionActive) weak++;
+                if (persist) PersistDramaticQuestion(findingsSvc, id, num, r);
             }
 
             if (!json) Console.WriteLine($"\n{beats.Count - weak}/{beats.Count} beats have an active dramatic question.");
             return 0;
         }
+    }
+
+    static void PersistDramaticQuestion(FindingsService findingsSvc, Guid beatId, int beatNumber, DramaticQuestionResult r)
+    {
+        const string prefix = "NARRATIVE-SCIENCE [dramatic-question]:";
+        var summary = $"{prefix} Beat #{beatNumber} — DQ {r.OverallScore}/10 (surface {r.SurfaceScore}, sub {r.SubconsciousScore}). {r.SubconsciousSummary}";
+        var fix = r.DramaticQuestionActive ? null : r.ImprovementHint;
+        findingsSvc.Upsert(
+            filePath: $"beat:{beatId:N}",
+            chapterId: null,
+            category: FindingCategory.Other,
+            severity: r.DramaticQuestionActive ? FindingSeverity.Low : FindingSeverity.Medium,
+            summary: summary,
+            snippet: r.SurfaceSummary,
+            suggestedFix: fix);
     }
 
     static void PrintDramaticQuestionResult(string label, DramaticQuestionResult r, bool json)
@@ -200,11 +298,12 @@ public static class NarrativeScienceCli
 
     // ── scene-anatomy ─────────────────────────────────────────────────────────
 
-    static async Task<int> RunSceneAnatomyAsync(string[] args, IServiceProvider services)
+    static async Task<int> RunSceneAnatomyAsync(string[] args, IServiceProvider services, string effort = "deep")
     {
         string? strandSlug = null;
         Guid? beatId = null;
         bool json = args.Contains("--json");
+        bool persist = ShouldPersist(args);
 
         for (int i = 0; i < args.Length - 1; i++)
         {
@@ -219,6 +318,7 @@ public static class NarrativeScienceCli
             return PrintUsage("--slug <strandSlug> or --id <beatId> required for scene-anatomy");
 
         var svc = services.GetRequiredService<NarrativeScienceService>();
+        var findingsSvc = services.GetRequiredService<FindingsService>();
         var dbFactory = services.GetRequiredService<IDbContextFactory<StreetSamuraiDbContext>>();
         using var db = dbFactory.CreateDbContext();
 
@@ -228,6 +328,7 @@ public static class NarrativeScienceCli
             if (beat == null) { Console.Error.WriteLine($"Beat {beatId} not found."); return 1; }
             var r = await svc.AuditSceneEngagementAsync(beat.Text ?? "");
             PrintSceneAuditResult($"Beat #{beat.Number}", r, json);
+            if (persist) PersistSceneEngagement(findingsSvc, beat.Id, beat.Number, r);
             return r.BeatPasses ? 0 : 1;
         }
         else
@@ -246,17 +347,52 @@ public static class NarrativeScienceCli
             if (beats.Count == 0) { Console.Error.WriteLine("No beats found."); return 1; }
             Console.WriteLine($"Scene anatomy of {beats.Count} beats in '{strandSlug}'…");
 
-            int passing = 0;
-            foreach (var beat in beats)
+            // Delete stale NARRATIVE-SCIENCE findings for this strand before writing fresh ones.
+            if (persist)
+                PurgeNarrativeScienceFindings(findingsSvc, beats.Select(b => b.Id).ToList(), "NARRATIVE-SCIENCE [scene-engagement]:");
+
+            // Parallel execution: analyzers are independent (no shared mutable state).
+            var sem = new SemaphoreSlim(ParallelCap);
+            var bag = new ConcurrentBag<(int Number, Guid Id, SceneEngagementReport Result)>();
+
+            await Task.WhenAll(beats.Select(beat => Task.Run(async () =>
             {
-                var r = await svc.AuditSceneEngagementAsync(beat.Text ?? "");
-                PrintSceneAuditResult($"Beat #{beat.Number}", r, json);
+                await sem.WaitAsync();
+                try
+                {
+                    var r = await svc.AuditSceneEngagementAsync(beat.Text ?? "");
+                    bag.Add((beat.Number, beat.Id, r));
+                }
+                finally { sem.Release(); }
+            })));
+
+            // Sort results by beat number to preserve display ordering.
+            var ordered = bag.OrderBy(x => x.Number).ToList();
+            int passing = 0;
+            foreach (var (num, id, r) in ordered)
+            {
+                PrintSceneAuditResult($"Beat #{num}", r, json);
                 if (r.BeatPasses) passing++;
+                if (persist) PersistSceneEngagement(findingsSvc, id, num, r);
             }
 
             if (!json) Console.WriteLine($"\n{passing}/{beats.Count} beats pass (≥4/6 mechanisms).");
             return 0;
         }
+    }
+
+    static void PersistSceneEngagement(FindingsService findingsSvc, Guid beatId, int beatNumber, SceneEngagementReport r)
+    {
+        const string prefix = "NARRATIVE-SCIENCE [scene-engagement]:";
+        var summary = $"{prefix} Beat #{beatNumber} — {r.MechanismsPassing}/6 mechanisms{(r.BeatPasses ? "" : $". Weakness: {r.TopWeakness}")}";
+        findingsSvc.Upsert(
+            filePath: $"beat:{beatId:N}",
+            chapterId: null,
+            category: FindingCategory.Other,
+            severity: r.BeatPasses ? FindingSeverity.Low : FindingSeverity.Medium,
+            summary: summary,
+            snippet: null,
+            suggestedFix: r.BeatPasses ? null : r.Fix);
     }
 
     static void PrintSceneAuditResult(string label, SceneEngagementReport r, bool json)
@@ -287,6 +423,7 @@ public static class NarrativeScienceCli
     {
         string? strandSlug = null;
         bool json = args.Contains("--json");
+        bool persist = ShouldPersist(args);
 
         for (int i = 0; i < args.Length - 1; i++)
             if (args[i] == "--slug") { strandSlug = args[i + 1]; i++; }
@@ -295,6 +432,7 @@ public static class NarrativeScienceCli
             return PrintUsage("--slug <strandSlug> required for five-act");
 
         var svc = services.GetRequiredService<NarrativeScienceService>();
+        var findingsSvc = services.GetRequiredService<FindingsService>();
         var dbFactory = services.GetRequiredService<IDbContextFactory<StreetSamuraiDbContext>>();
         using var db = dbFactory.CreateDbContext();
 
@@ -359,10 +497,38 @@ public static class NarrativeScienceCli
 
         Console.WriteLine("Assessment:");
         Console.WriteLine($"  {result.OverallAssessment}");
+
+        if (persist)
+        {
+            const string prefix = "NARRATIVE-SCIENCE [five-act]:";
+            var gaps = result.StructuralGaps.Count > 0
+                ? string.Join("; ", result.StructuralGaps.Take(3))
+                : "none";
+            var summary = $"{prefix} {strandSlug} — {result.BeatCount} beats. Gaps: {gaps}";
+            findingsSvc.Upsert(
+                filePath: $"strand:{strandSlug}",
+                chapterId: null,
+                category: FindingCategory.Other,
+                severity: result.StructuralGaps.Count > 0 ? FindingSeverity.Medium : FindingSeverity.Low,
+                summary: summary,
+                snippet: result.OverallAssessment,
+                suggestedFix: result.StructuralGaps.Count > 0 ? string.Join("\n", result.StructuralGaps) : null);
+        }
+
         return 0;
     }
 
     // ── Helpers ───────────────────────────────────────────────────────────────
+
+    /// <summary>
+    /// Delete stale NARRATIVE-SCIENCE findings for a set of beat IDs before writing
+    /// fresh ones — ensures supersede semantics without duplicates per beat+analyzer.
+    /// </summary>
+    static void PurgeNarrativeScienceFindings(FindingsService findingsSvc, IEnumerable<Guid> beatIds, string summaryPrefix)
+    {
+        foreach (var beatId in beatIds)
+            findingsSvc.DeleteBySummaryPrefix($"beat:{beatId:N}", summaryPrefix);
+    }
 
     static async Task<Guid?> ResolveCharacterAsync(string idOrSlug, IServiceProvider services)
     {
@@ -388,12 +554,12 @@ public static class NarrativeScienceCli
                 --scaffold              Generate a plausible flaw from existing description.
 
               dramatic-question  Score how well a beat asks "who is this person really?"
-                --slug <strandSlug>     Evaluate all beats in the strand.
+                --slug <strandSlug>     Evaluate all beats in the strand (parallel, up to 8 at once).
                 --id <beatId>           Evaluate a single beat.
                 --character <slug|id>   Optional. Provide character context.
 
               scene-anatomy      6-point scene engagement audit.
-                --slug <strandSlug>     Audit all beats in the strand.
+                --slug <strandSlug>     Audit all beats in the strand (parallel, up to 8 at once).
                 --id <beatId>           Audit a single beat.
 
               five-act           Map a strand's beats to Storr's 5-act arc.
@@ -401,6 +567,14 @@ public static class NarrativeScienceCli
 
             Global flags:
               --json             Emit raw JSON output.
+              --effort draft|standard|deep
+                                 Cost tier (default: deep).
+                                   draft    — skip all analysis (zero LLM calls, exit 0).
+                                   standard — dramatic-question + scene-anatomy only.
+                                   deep     — all five analyzers (default).
+              --no-persist       Do not save results as Findings in the database.
+                                 By default, results are written with prefix NARRATIVE-SCIENCE [analyzer]:
+                                 and can be read by the prose generator to guide writing.
             """);
         return 1;
     }

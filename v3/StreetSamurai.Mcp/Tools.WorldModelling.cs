@@ -18,6 +18,8 @@ public class WorldModellingTools(
     AmbientDetailInjector ambientSvc,
     EntityRamificationService ramificationSvc,
     PostBeatValidationService postBeatValidator,
+    ProseLessonStore proseLessonStore,
+    TimelineConsistencyService timelineSvc,
     IDbContextFactory<StreetSamuraiDbContext> dbFactory)
 {
     [McpServerTool, Description(
@@ -326,6 +328,101 @@ public class WorldModellingTools(
                 ? "Violations filed as Findings — use list_findings to review."
                 : "No prose violations found.",
             beats            = beatSummaries,
+        }, CanonTools.JsonOpts);
+    }
+
+    [McpServerTool, Description(
+        "Add an editorial prose lesson — an author ruling that reviewers must respect. " +
+        "Lessons are injected into every future review ballot prompt so the panel does not " +
+        "penalise beats the author has already decided are doing their job in the sequence. " +
+        "scope: 'global' applies to all strands; 'strand:<slug>' to one strand; 'beat:<guid>' to one beat. " +
+        "kind: score-vs-function | delight | voice | pacing | continuity | other.")]
+    public string AddProseLesson(
+        [Description("Scope: 'global', 'strand:<slug>', or 'beat:<guid>'")] string scope,
+        [Description("Kind: score-vs-function | delight | voice | pacing | continuity | other")] string kind,
+        [Description("The ruling text — what reviewers must respect.")] string text)
+    {
+        if (string.IsNullOrWhiteSpace(scope))
+            return JsonSerializer.Serialize(new { error = "scope_required" }, CanonTools.JsonOpts);
+        if (string.IsNullOrWhiteSpace(kind))
+            return JsonSerializer.Serialize(new { error = "kind_required" }, CanonTools.JsonOpts);
+        if (string.IsNullOrWhiteSpace(text))
+            return JsonSerializer.Serialize(new { error = "text_required" }, CanonTools.JsonOpts);
+
+        proseLessonStore.Add(scope, kind, text);
+        return JsonSerializer.Serialize(new { ok = true, scope, kind, text }, CanonTools.JsonOpts);
+    }
+
+    [McpServerTool, Description(
+        "List prose lessons from the editorial memory store. " +
+        "When scope is omitted, returns all lessons across all scopes. " +
+        "When scope is provided, returns only lessons whose scope starts with that prefix " +
+        "(e.g. 'global' for all global lessons, 'strand:my-slug' for a specific strand).")]
+    public string ListProseLessons(
+        [Description("Optional scope filter prefix (e.g. 'global', 'strand:my-slug'). Omit for all.")] string? scope = null)
+    {
+        var all = proseLessonStore.ListAll();
+        if (!string.IsNullOrWhiteSpace(scope))
+            all = all.Where(l => l.Scope.StartsWith(scope, StringComparison.OrdinalIgnoreCase)).ToList();
+
+        return JsonSerializer.Serialize(new
+        {
+            total = all.Count,
+            lessons = all.OrderBy(l => l.AddedAt).Select(l => new
+            {
+                id       = l.Id,
+                scope    = l.Scope,
+                kind     = l.Kind,
+                text     = l.Text,
+                added_at = l.AddedAt,
+            }),
+        }, CanonTools.JsonOpts);
+    }
+
+    [McpServerTool, Description(
+        "Deterministic timeline-consistency check for a strand (RFC 0009 §5). " +
+        "Zero LLM calls. " +
+        "Detects two violation classes: " +
+        "(1) dead-character-acting — an entity whose status is 'dead'/'deceased' appears " +
+        "in a later beat; " +
+        "(2) wound-regression — a healed/none event precedes the injury-onset event for " +
+        "the same condition. " +
+        "Returns a list of findings with kind, entityId, entityName, beatNumber, detail, severity. " +
+        "Returns an empty array when no events are in the ledger for this strand — never throws.")]
+    public async Task<string> CheckTimeline(
+        [Description("Strand slug or GUID")] string slugOrId)
+    {
+        await using var db = await dbFactory.CreateDbContextAsync();
+
+        Guid strandId;
+        if (Guid.TryParse(slugOrId, out strandId) || Guid.TryParseExact(slugOrId, "N", out strandId))
+        {
+            // already have the GUID
+        }
+        else
+        {
+            var strand = await db.Strands.AsNoTracking()
+                .FirstOrDefaultAsync(s => s.Slug == slugOrId);
+            if (strand == null)
+                return JsonSerializer.Serialize(new { error = "strand_not_found", slugOrId }, CanonTools.JsonOpts);
+            strandId = strand.Id;
+        }
+
+        var findings = await timelineSvc.CheckStrandAsync(strandId);
+
+        return JsonSerializer.Serialize(new
+        {
+            strand_id = strandId,
+            count     = findings.Count,
+            findings  = findings.Select(f => new
+            {
+                kind        = f.Kind,
+                entity_id   = f.EntityId,
+                entity_name = f.EntityName,
+                beat_number = f.BeatNumber,
+                detail      = f.Detail,
+                severity    = f.Severity,
+            }),
         }, CanonTools.JsonOpts);
     }
 }

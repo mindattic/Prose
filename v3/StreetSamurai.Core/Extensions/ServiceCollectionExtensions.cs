@@ -280,6 +280,10 @@ public static class ServiceCollectionExtensions
         // ChapterBeatWriter (10 high) / ChapterBeatVoter (100 low) etc. live here.
         services.AddSingleton<ActionConfigService>();
 
+        // Editorial prose-lessons memory — author rulings injected into review
+        // ballot prompts so reviewers don't penalize beats already ruled acceptable.
+        services.AddSingleton<ProseLessonStore>();
+
         // Global story-time cursor (Settings('story_now') as datetime2(7)).
         services.AddSingleton<WorldClockService>();
 
@@ -292,6 +296,10 @@ public static class ServiceCollectionExtensions
 
         // Cross-book "character at two places at once" detector.
         services.AddSingleton<LocationContradictionService>();
+
+        // Deterministic timeline-consistency validator (RFC 0009 §5).
+        // Zero LLM calls. Detects dead-character-acting + wound regressions.
+        services.AddSingleton<TimelineConsistencyService>();
 
         // LLM-driven backfill for Chapter/Beat InWorldDate columns.
         services.AddSingleton<DateBackfillService>();

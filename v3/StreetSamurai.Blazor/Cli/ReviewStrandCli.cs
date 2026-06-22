@@ -17,6 +17,9 @@ namespace StreetSamurai.Blazor.Cli;
 ///   --id <guid|prefix>  Strand id; a unique prefix is enough.
 ///   --slug <slug>       Strand slug.
 ///   --readers N         Number of persona reviewers (default 50).
+///   --effort TIER       Cost tier for the sampled default (RFC 0009): draft|standard|deep.
+///                       Scales ballots/prose/diagnosis to the task's importance. Explicit
+///                       --ballots/--prose/--skip-diagnosis still win over the tier.
 ///
 /// Exit codes:
 ///   0 — at least one review was saved.
@@ -31,6 +34,9 @@ public static class ReviewStrandCli
         int readers = settings.ReviewReaders, panel = settings.ReviewPanel,
             ballots = settings.ReviewBallots, prose = settings.ReviewProse;
         bool samePersonas = false, study = false, census = false, skipDiagnosis = false;
+        // RFC 0009 §2 — cost tier. Explicit --ballots/--prose/--skip-diagnosis still win over the tier.
+        string? effort = null;
+        bool ballotsSet = false, proseSet = false, skipSet = false;
         for (int i = 0; i < args.Length; i++)
         {
             switch (args[i])
@@ -44,17 +50,36 @@ public static class ReviewStrandCli
                 case "--genre":           if (i + 1 < args.Length) genre = args[++i]; break;
                 case "--study":           study = true; break;
                 case "--panel":           if (i + 1 < args.Length && int.TryParse(args[++i], out var pn)) panel = pn; break;
-                case "--ballots":         if (i + 1 < args.Length && int.TryParse(args[++i], out var bn)) ballots = bn; break;
-                case "--prose":           if (i + 1 < args.Length && int.TryParse(args[++i], out var pr)) prose = pr; break;
+                case "--ballots":         if (i + 1 < args.Length && int.TryParse(args[++i], out var bn)) { ballots = bn; ballotsSet = true; } break;
+                case "--prose":           if (i + 1 < args.Length && int.TryParse(args[++i], out var pr)) { prose = pr; proseSet = true; } break;
                 case "--census":          census = true; break;
-                case "--skip-diagnosis":  skipDiagnosis = true; break;
+                case "--skip-diagnosis":  skipDiagnosis = true; skipSet = true; break;
+                case "--effort":
+                case "--tier":            if (i + 1 < args.Length) effort = args[++i]; break;
             }
+        }
+
+        // Apply the cost tier to whichever sampled-review knobs weren't set explicitly.
+        var profile = ReviewEffortProfile.Resolve(effort);
+        if (effort != null && profile == null)
+        {
+            Console.Error.WriteLine($"[review-strand] Unknown --effort '{effort}'. Known tiers: {ReviewEffortProfile.KnownTiers}.");
+            return 1;
+        }
+        if (profile != null)
+        {
+            if (!ballotsSet) ballots = profile.Ballots;
+            if (!proseSet)   prose   = profile.Prose;
+            if (!skipSet)    skipDiagnosis = profile.SkipDiagnosis;
         }
 
         if (string.IsNullOrWhiteSpace(id) && string.IsNullOrWhiteSpace(slug) && string.IsNullOrWhiteSpace(code))
         {
             Console.Error.WriteLine("[review-strand] One of --id, --slug, or --code is required.");
-            Console.Error.WriteLine("Usage: ss --review-strand (--id <guid|prefix> | --slug <slug> | --code <code>) [--readers N]");
+            Console.Error.WriteLine("Usage: ss --review-strand (--id <guid|prefix> | --slug <slug> | --code <code>) [--effort draft|standard|deep] [--readers N]");
+            Console.Error.WriteLine("  --effort draft     ~6 calls — mid-draft spot check (per-beat gripes; not a gate)");
+            Console.Error.WriteLine("  --effort standard  ~15 calls — standalone gate (>=82%)");
+            Console.Error.WriteLine("  --effort deep      ~37 calls — cumulative/publish gate (>=85%)");
             return 1;
         }
         var dbFactory = services.GetRequiredService<IDbContextFactory<StreetSamuraiDbContext>>();
@@ -127,11 +152,13 @@ public static class ReviewStrandCli
         {
             if (ballots <= 0) ballots = 20;
             if (prose < 0) prose = 0;
-            Console.WriteLine("[review-strand] SAMPLED REVIEW (economical default):");
+            var tierLabel = profile != null ? $" [{profile.Name} tier — {profile.Note}]" : "";
+            Console.WriteLine($"[review-strand] SAMPLED REVIEW (economical default):{tierLabel}");
             Console.WriteLine($"   Id:    {strandId}");
             Console.WriteLine($"   Slug:  {strandSlug}");
             Console.WriteLine($"   Title: {strandTitle}");
-            Console.WriteLine($"   {ballots} score-ballots (round-robin across the trusted-4) + {prose} prose upgrades + per-beat study — one pass.");
+            Console.WriteLine($"   {ballots} score-ballots (round-robin across the trusted-4) + {prose} prose upgrades"
+                + (skipDiagnosis ? " — diagnosis skipped" : " + structural diagnosis") + " — one pass.");
             Console.WriteLine("[review-strand] Running…");
             var bp = new Progress<int>(k => { if (k == ballots || k % 5 == 0) Console.WriteLine($"   …{k}/{ballots} ballots done"); });
             try
