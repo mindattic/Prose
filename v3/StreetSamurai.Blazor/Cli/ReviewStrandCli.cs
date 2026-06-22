@@ -165,7 +165,8 @@ public static class ReviewStrandCli
             try
             {
                 var sr = await reviewer.RunSampledReviewAsync(strandId, ballots, prose, bp,
-                    skipDiagnosis: skipDiagnosis, cheapModels: profile?.CheapModels ?? false);
+                    skipDiagnosis: skipDiagnosis, cheapModels: profile?.CheapModels ?? false,
+                    allowedProvidersOverride: profile?.AllowedProviders);
                 Console.WriteLine($"[review-strand] {sr.BallotsSaved}/{sr.Ballots} ballots ({sr.Failed} failed), {sr.ProseAdded} prose upgraded.");
                 Console.WriteLine($"[review-strand] Strand {sr.MeanScore}/100  (SD {sr.Sd}, 95% CI ±{sr.Ci95})  ·  {sr.Clusters} clusters  ·  fingerprint {sr.ContentHash[..Math.Min(12, sr.ContentHash.Length)]}");
                 Console.WriteLine();

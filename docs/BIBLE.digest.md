@@ -130,44 +130,50 @@ narrative-law block here when stood up:**
   ambient proprioceptive information field BCI-augmented people sense (see `network_doc.md`).
 
 ## Status index (from USER_STORIES.md)
-- done: 97  partial: 8  planned: 14  cut: 1
+- done: 104  partial: 8  planned: 14  cut: 1
 
 ## Latest amendment
-## SS-A10 — Null history, chapter swap, Antiquity & Stationary entry point {#SS-A10}
+## SS-A11 — Pixel origin canonized; per-strand docs architecture established {#SS-A11}
 
-**What changed.** [GLMZ] Narrative coherence pass on the Null arc and Sable's introduction.
+**What changed.** [GLMZ] Pixel's pre-GLMZ biography locked as canon. Per-strand standalone
+documentation pattern adopted.
 
-**Chapter swap (LOCKED).** The Quiet Hour (formerly Ch6) and The Dock (formerly Ch7) are swapped.
-New order: Ch6 = The Quiet Hour (Null's wake + Antiquity & Stationary note), Ch7 = The Dock
-(Null & War Dog run; Null dies). The reader sees the wake first, then the run — the chapter ordering
-is not chronological here; the wake chapter opens with interlude beats that establish the run already
-happened (van ride home, Kyle at home, the call to Mrs. Chen).
+### Pixel's origin (LOCKED) {#SS-A11-pixel}
 
-**The Quiet Hour restructured (LOCKED).**
-- Opens with two new interlude beats: the van ride home after the dock (nobody talks; Ledger drives;
-  Stash holds the cases); Kyle at home, Pixel's light across the hall, he doesn't knock, calls Mrs. Chen.
-- The gathering (40 people Kyle does not know) IS Null's wake. War Dog is NOT present.
-- A new beat establishes who came: Pixel, Ledger, Stash, others from Null's network.
-- The War Dog "she kept a list" beat is DELETED. In its place: Mrs. Chen hands Kyle a note —
-  Antiquity & Stationary letterhead, Dearborn address, two words inside: *Meet me.* No signature.
-- 18.9 Hz residue beat and 19 Hz Psyk spike remain as the AI/frequency thread.
+- **Pixel was born and raised in Iowa.** She left after her mother's death; there was nothing left
+  for her there.
+- **Her mother's SNT bridge failed at month eight of integration.** Licensed hardware, warranty,
+  hotline number — none of it helped. Her mother died while the licensed industry's automated
+  response system generated a case number. There was no one to report it to that wasn't owned by
+  the same CorpoNation that sold the bridge. This is why Pixel trusts work she can put her hands
+  on and distrusts the licensed industry. It is **her grief, not Kyle's**; it never surfaces as
+  exposition.
+- **She arrived in GLMZ via the Pulse from Cedar Rapids, age 19.** One bag, her mother's primary
+  hardware kit in a hard case, a secondary kit on her person, a referral on a scrap of paper.
+- **She wears her mother's boots.** Big black work boots, one size too large. She padded the toes
+  with folded paper. The story of how she stopped padding them is TDIU. The boots are never
+  explained on the page.
+- **Her handle "Pixel" is GLMZ-acquired.** She did not arrive with it. It is not used in TDIU.
+- **Her unlicensed hand-enhancement was done in Pilsen, age 19** — after she arrived, not before.
+  She is unsentimental about it.
 
-**The note → Vey's Antiquity & Stationary → The Offer (LOCKED).**
-Kyle has never heard of the store. He arrives at Ch13 (The Offer) for the first time, meets Vey
-(the proprietor) for the first time, and is taken to the Faraday cage in back, where Sable reveals
-herself in person for the first time. Sable must remain a mystery voice (no in-person appearance)
-in all chapters before Ch13. The motorcycle funeral beat (Joy strand sk=16600) includes Sable in
-person — that beat is a LATER event (post-Ch13) and remains correct.
+### Per-strand docs architecture (LOCKED) {#SS-A11-docs}
 
-**Null entity (LOCKED).** "Nü" entity renamed to Null (id=05fbd9d0-c6d5-4731-8e48-f1a4c59e8783).
-Slug: null-the-read. The Axiom-synthetic "Null" (id=019d6143) is a separate character and must
-be distinguished from the Read Null if both appear in the same story.
+Going forward, every story strand with active prose gets its own standalone bible file at
+`docs/strands/<CODE>.md`. Universe rules stay in `BIBLE.md`. Story-specific arc, character
+behaviors, and narrative locks live in the strand file. This minimizes context load: working on
+TDIU means loading universe rules + TDIU rules, not every other story's details.
 
-**A Borrowed Hand deleted (LOCKED).** Strand 019e9fb2 and its 102 exclusive beats permanently
-deleted 2026-06-21. The "hands cut off with cleaver / dumped underground" scene is gone. War Dog's
-prior-ally framing in those beats is gone. War Dog is an enemy, not a former crewmate.
+- **`docs/BIBLE.md`** — universe laws, architecture, engine invariants. No per-story arc content.
+- **`docs/strands/<CODE>.md`** — story arc, beat spine, character rules, locks, user stories.
+- **`docs/books/<name>.md`** — legacy location for long-form book spines (BCODA; maintained in place).
+- **`docs/USER_STORIES.md`** — index of epics + acceptance criteria. Per-story sub-stories may
+  point to the strand file rather than be duplicated here.
 
-**Why.** Kyle planning Null's funeral when he barely knew her is unmotivated. War Dog attending
-a memorial for the person he murdered is incoherent. The note mechanism gives Sable a clean,
-unseen entry point consistent with her mystery-voice status through Ch12.
+Strand files are loaded on demand, not injected at session start. When working on a strand,
+read its file before generating prose.
+
+**Why.** The monolithic USER_STORIES.md + BIBLE.md was loading all story details into context for
+every session, including stories not being worked on. Per-strand files enable minimum-necessary
+context loading: you get the universe rules and the story you're writing, nothing else.
 

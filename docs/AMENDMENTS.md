@@ -444,3 +444,47 @@ prior-ally framing in those beats is gone. War Dog is an enemy, not a former cre
 **Why.** Kyle planning Null's funeral when he barely knew her is unmotivated. War Dog attending
 a memorial for the person he murdered is incoherent. The note mechanism gives Sable a clean,
 unseen entry point consistent with her mystery-voice status through Ch12.
+
+## SS-A11 — Pixel origin canonized; per-strand docs architecture established {#SS-A11}
+
+**What changed.** [GLMZ] Pixel's pre-GLMZ biography locked as canon. Per-strand standalone
+documentation pattern adopted.
+
+### Pixel's origin (LOCKED) {#SS-A11-pixel}
+
+- **Pixel was born and raised in Iowa.** She left after her mother's death; there was nothing left
+  for her there.
+- **Her mother's SNT bridge failed at month eight of integration.** Licensed hardware, warranty,
+  hotline number — none of it helped. Her mother died while the licensed industry's automated
+  response system generated a case number. There was no one to report it to that wasn't owned by
+  the same CorpoNation that sold the bridge. This is why Pixel trusts work she can put her hands
+  on and distrusts the licensed industry. It is **her grief, not Kyle's**; it never surfaces as
+  exposition.
+- **She arrived in GLMZ via the Pulse from Cedar Rapids, age 19.** One bag, her mother's primary
+  hardware kit in a hard case, a secondary kit on her person, a referral on a scrap of paper.
+- **She wears her mother's boots.** Big black work boots, one size too large. She padded the toes
+  with folded paper. The story of how she stopped padding them is TDIU. The boots are never
+  explained on the page.
+- **Her handle "Pixel" is GLMZ-acquired.** She did not arrive with it. It is not used in TDIU.
+- **Her unlicensed hand-enhancement was done in Pilsen, age 19** — after she arrived, not before.
+  She is unsentimental about it.
+
+### Per-strand docs architecture (LOCKED) {#SS-A11-docs}
+
+Going forward, every story strand with active prose gets its own standalone bible file at
+`docs/strands/<CODE>.md`. Universe rules stay in `BIBLE.md`. Story-specific arc, character
+behaviors, and narrative locks live in the strand file. This minimizes context load: working on
+TDIU means loading universe rules + TDIU rules, not every other story's details.
+
+- **`docs/BIBLE.md`** — universe laws, architecture, engine invariants. No per-story arc content.
+- **`docs/strands/<CODE>.md`** — story arc, beat spine, character rules, locks, user stories.
+- **`docs/books/<name>.md`** — legacy location for long-form book spines (BCODA; maintained in place).
+- **`docs/USER_STORIES.md`** — index of epics + acceptance criteria. Per-story sub-stories may
+  point to the strand file rather than be duplicated here.
+
+Strand files are loaded on demand, not injected at session start. When working on a strand,
+read its file before generating prose.
+
+**Why.** The monolithic USER_STORIES.md + BIBLE.md was loading all story details into context for
+every session, including stories not being worked on. Per-strand files enable minimum-necessary
+context loading: you get the universe rules and the story you're writing, nothing else.

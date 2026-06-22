@@ -17,6 +17,19 @@ See global rules in ~/.claude/CLAUDE.md. The rate-limit-monitor skill enforces:
 - Write a handoff summary to memory so the next session can resume seamlessly
 - Tell the user to take a break and come back after cooldown
 
+## Database Access
+
+For **read-only lookups** (strand lists, scores, entity counts, etc.), query the local DB directly — returns in under a second:
+
+```
+sqlcmd -S "(localdb)\MSSQLLocalDB" -d StreetSamurai -Q "<query>"
+```
+
+- Auth: Windows Authentication (no `-U`/`-P` needed)
+- Same server as `appsettings.json` → `ConnectionStrings.StreetSamurai`
+
+Only use `dotnet run --project v3/StreetSamurai.Blazor -- <args>` when the CLI's business logic is actually needed (write operations, generation, publish, review). Never use it just to answer a lookup question.
+
 ## Code Style
 - Do NOT use underscore-prefixed variables (e.g., `_myField`). Use `camelCase` for private fields without the underscore prefix.
 - JSON only for all data files. No Python scripts, no YAML, no Markdown files except README.
@@ -26,6 +39,34 @@ See global rules in ~/.claude/CLAUDE.md. The rate-limit-monitor skill enforces:
 - The symbol Φ is the QUANTA currency symbol. It is NEVER the Greek letter phi.
 - Iowan Behemoths are autonomous machines, NOT synthetic life. They are not alive.
 - Default to mixed heritage from unexpected global combinations (Ubiquitous Diaspora).
+
+## Per-Strand Documentation (SS-A11)
+
+Every story strand with active prose has its own standalone bible at `docs/strands/<CODE>.md`.
+
+**When working on a specific strand:** read `docs/strands/<CODE>.md` before generating prose.
+Do not rely on BIBLE.md alone for story-specific rules — it has engine laws, not story arc.
+
+| Location | Contains |
+|---|---|
+| `docs/BIBLE.md` | Universe laws, architecture, engine invariants — no per-story arc |
+| `docs/strands/<CODE>.md` | Story arc, beat spine, character rules, locks, user stories |
+| `docs/books/<name>.md` | Legacy long-form book spines (BCODA; maintained in place) |
+| `docs/USER_STORIES.md` | Epic index + acceptance criteria |
+
+Strand files are **loaded on demand**, not injected at session start. Load only what you need.
+
+**Existing strand files:**
+- `docs/strands/TDIU.md` — The Door Is Unlocked (Pixel origin story, GLMZ)
+- `docs/strands/BCODA.md` — Bushido Coda flagship novel (GLMZ)
+- `docs/strands/ATTE.md` — Attendance / Yemina Fola investigation (GLMZ)
+- `docs/strands/VATD.md` — Vultures at the Door / Thomas & Levin (GLMZ)
+- `docs/strands/DWIACE.md` — Death Whispers in a Cat's Ear / Rennick Investigations (GLMZ)
+- `docs/strands/SPRW.md` — Sparrow / Elias Macias & the orbital mystery (GLMZ)
+- `docs/strands/ULC.md` — Underlying Connection / Amara & Seto (GLMZ, in progress)
+- `docs/strands/TEST.md` — Testament / Bear court-martial (GLMZ)
+- `docs/strands/GIW.md` — Grafted Into War / M-101/Soren (Fantasy)
+- `docs/books/bushido-coda-strands-bible.md` — BCODA (legacy long-form; superseded by BCODA.md above)
 
 ## Codex (how to work with the canon)
 
