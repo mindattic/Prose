@@ -21,11 +21,15 @@ He has seen that field hold terrestrial-manufacture, GEO-derived, MEO-derived, u
 
 The recovery site is listed as sub-lake restricted corridor, Zone 4.
 
-He knows that corridor. In 2218, during a quarterly registry audit at Cordon Freight, a delayed disposal filing had come to him in a queue with twenty-two others — a five-year-old event, unresolved paperwork from the backlog. He had processed it in eleven minutes: checked the boxes, written "recovered and disposed, Zone 4 corridor closure confirmed," and moved on. He had been behind that week. He never pulled the underlying documentation. He hasn't thought about it since.
+He knows that corridor. In 2218, during a quarterly registry audit at Cordon Freight, a delayed disposal filing had come to him in a queue with twenty-two others — a five-year-old event, unresolved paperwork from the backlog. He had processed it in eleven minutes: checked the boxes, written "recovered and disposed, Zone 4 corridor closure confirmed," and moved on.
+
+The Zone 4 entry in the current manifest is still on the screen.
+
+He had been behind that week. He never pulled the underlying documentation. He hasn't thought about it since.
 
 He pulled it now.
 
-His Cordon Freight credentials were still active. He navigated to the 2213 queue, the delayed-disposal backlog, the entry he had resolved in eleven minutes. The case number came up. He selected the underlying documentation — the source files he had marked resolved without opening.
+His Cordon Freight credentials were still active. He navigated to the 2213 queue, the delayed-disposal backlog, the entry he had resolved in eleven minutes. The case number came up. He selected the underlying documentation — the source files he had marked resolved without opening. He clicked to open the first document.
 
 The access request returned immediately: File restricted. Zone 4 corridor documentation under administrative review. Contact clearance office.
 
@@ -214,7 +218,7 @@ Elias says thank you.
 
 "Of course," Leandro says. The kind of of course that closes a door: something owed, delivered, not to be referenced again. The call returns to the manifest clock, the Arcturus window, the rest of the list.
 
-Elias catches the ambient noise behind Leandro's voice in those last minutes: HVAC cycling, the Pulse thrumline two levels below the floor, the structural creak of a building designed in 2197 and running at 115% occupancy since 2218. He has always heard the Pulse as a background fact of the city — abstract, something other people ride. From up here it is just vibration in the walls.
+Elias catches the ambient noise behind Leandro's voice in those last minutes: HVAC cycling, the Pulse thrumline two levels below the floor, the structural creak of a building designed in 2197 and running at 115% occupancy since 2218. He has always heard the Pulse as a background fact of the city — abstract, something other people ride.
 
 Elias sits with the phrase after the call ends. They've known for a while. Not her. Not him. Not it. Them. Leandro Bautista-Henriksen works in an orbital transit facility and had reached for them as if it were the natural word for whatever Sparrow is — not a conscious choice, just the word that arrived first, and then he had heard himself use it and kept going.
 
@@ -247,7 +251,7 @@ A pause — the kind that means someone is deciding whether to answer.
 
 He doesn't ask her why she thought that.
 
-He writes in the notepad: credited for not looking. She did the same. She gave me the number because she thought I would look anyway.
+He writes in the notepad: credited for not looking. She did the same.
 
 [Beat 9]
 The alternate-week window has been open for forty days. He finds this out by asking, in the places where operators ask. Three operators used the number in the current window. He is the third.
@@ -303,7 +307,7 @@ He picks up his keys.
 
 He leaves.
 
-Elias closes the manifest window before eight. He writes in the notepad: the number works. And then, beneath it: Druh has decided this is sufficient. I am not sure I have.
+Elias closes the manifest window before eight. He writes in the notepad: the number works. He leaves space after it.
 
 [Beat 11]
 He assembles the three pieces on the floor of the receiving space with Makena's help, using the case dimensions and the transit weights to get the geometry right. The composite does not form a whole.
@@ -605,7 +609,7 @@ He reads it twice. Then he opens the notepad.
 
 The question had assumed a referent she didn't share. Safe from what. Safe as opposed to what condition. She had answered the question he asked, which was a question about systems, because *safe* is a systems word once you strip the social meaning off it. He had meant something nearer to: is anything bad happening to you. He had meant: are you okay. She had returned debris collision probability, accurate to four decimal places.
 
-He writes the replacement beneath the crossed-out one, in smaller letters.
+He writes the replacement question beneath the crossed-out one, in smaller letters.
 
 *what is the risk of losing contact permanently*
 
@@ -615,7 +619,7 @@ He tries again on the next line.
 
 *what would cause you to stop transmitting*
 
-He caps the pen. That one she can answer with data, and the data would answer the question he actually meant, if he read it right afterward.
+He caps the pen. That one she can answer with data, and the data would answer the question he actually had, if he read it correctly afterward. The translation falls to the party who can do it.
 
 He leaves the crossed-out line on the page. He does not tear it out.
 
@@ -727,9 +731,9 @@ depth-wise, like a floor that has given up the pretense of being solid. laterall
 He photographs the page and sends it without comment. She will not use the image. She will read the text. He caps the pen.
 
 [Beat 29]
-He had tried the measurables. Temperature, surface resistance, vibration — all three in her observational range. She confirmed them: 2.31K temperature delta, friction coefficient 0.547, oscillation 3.97 seconds mean period, amplitude 0.003mm. All three within modeled range for substrate-response type 4B. No anomaly detected.
+Her confirmation arrived at 8:43: temperature delta 2.31K, friction coefficient 0.547, oscillation period 3.97 seconds mean, amplitude 0.003mm. All three within modeled range for substrate-response type 4B. No anomaly detected.
 
-He read the reply twice and catalogued what was absent from it.
+He read it twice. He underlined what was absent from it.
 
 Then he tried to describe what he had actually felt. Not the numbers. The quality of it. The pavement had felt wrong the way a floor feels wrong when you walk into a room and the furniture has been moved in the night — nothing missing, nothing broken, but the geometry of it sits differently under your feet and your body knows before you do. He worked through several false starts in the notepad, in lowercase, before the sentence held. Then he photographed it and sent it.
 
@@ -880,7 +884,7 @@ Then he wrote the six addresses out by hand in the order she had sent them, a bl
 He had spent three years as a relay point, a human address, a set of hands in a specific geography. This was not an order. He knew the difference. This was an ask, and she had no field for one, so she had sent the data and left the rest to him.
 
 [Beat 37]
-The first site read clean on the handheld — ambient temperature, standard electromagnetic background, nothing flagged. He stood in the freight district for eleven minutes taking readings before he understood that the wrongness was not in the instrument range. It was in the quality of the light. Not dim or bright, just offset, the way a photograph looks when the white balance is slightly off — correct in every measurable channel, wrong in the aggregate.
+He stood in the freight district for eleven minutes. The handheld registered nothing — ambient temperature, standard electromagnetic background, all in range. The wrongness was in the quality of the light. Not dim or bright, just offset, the way a photograph looks when the white balance is slightly off: correct in every measurable channel, wrong in what they added up to.
 
 He wrote that down. Not measurable. Then he crossed out not measurable and wrote no instrument for this instead.
 
@@ -890,7 +894,7 @@ The second site, in the old grain corridor, smelled of iron and standing water, 
 
 The third site was in the middle Ring, inside a buffer zone where two CorpoNation residential claims overlapped and no authority enforced anything. He was there twenty minutes. The sensor read nominal. He wrote one line: *site reads clear.* Then he sat on a concrete retaining wall for five minutes. Then he wrote a second line: *this is not what clear looks like.* Between them he drew a horizontal rule. He could not explain the rule. He left it in.
 
-That night he photographed all three pages under the desk lamp and sent the images without comment. Her reply came in four minutes: a request for the raw sensor logs, formatted as an intake form.
+That night he photographed all three pages under the desk lamp and sent the images without comment. Her reply came in four minutes, asking for the raw sensor logs.
 
 He sent the logs. He kept the photographs.
 
@@ -924,7 +928,9 @@ FULL EVENT CATALOG — 847 ENTRIES — SORTED CHRONOLOGICAL — FIELDS: DATE / C
 
 Entry 1. 2189-06-11. Cluster A. 55.2741° N, 14.7823° E. Mass estimate: 4,200–6,800 kg. Disposition: submerged, no recovery.
 
-Baltic shelf. He had not been a logistics operator in 2189. He had not been in GLMZ. Entry 1 was thirty-seven years old, which meant she had been running this catalog before he had any part in the work she was now describing.
+Baltic shelf.
+
+Entry 1 was thirty-seven years old. He sat with that. She had been running this catalog before he had any part in the work she was now describing — for thirty-seven years, before he was a logistics operator, before he was in GLMZ, before the number had ever been in his phone. He had been receiving transmissions from her on alternate weeks for eleven of them.
 
 He opened the notepad to a clean page and wrote the date at the top in the margin, the way he dated invoices. 2189-06-11. Below it he wrote: Baltic shelf. Then: 4,200–6,800. Then: no recovery.
 
@@ -1022,9 +1028,7 @@ The parable had been an attempt at shared language, which was a kind of gift. Sh
 
 He wasn't sure she could tell the difference.
 
-He picked up the pen and wrote in the margin, under the underlined forty-four: bandwidth, not blindness. He looked at it for a moment. True, and not the point, and more useful than the point.
-
-He closed the notepad and left it on the desk.
+He picked up the pen and wrote in the margin, under the underlined forty-four: bandwidth, not blindness. He looked at it for a moment. He closed the notepad and left it on the desk.
 
 [Beat 44]
 The file came down across nineteen minutes, the line slow under the weight of it. He did not open it as a picture, because it was not one.

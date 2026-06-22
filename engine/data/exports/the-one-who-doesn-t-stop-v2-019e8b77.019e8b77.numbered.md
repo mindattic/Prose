@@ -1,6 +1,6 @@
-# The One Who Doesn't Stop v2
+# Chapter 10: The One Who Doesn't Stop
 
-_Hegewisch, 11:47 PM. Kyle's Neuretics is writing checks his body still has to cash._
+_Hegewisch, 11:47 PM. Kyle's neuretics is writing checks his body still has to cash._
 
 ## Hegewisch
 
@@ -11,21 +11,21 @@ The neighborhood reads the change in temperature. A noodle cart folds itself shu
 
 He'd known since morning that the day had a bad lean to it. At dawn he'd watched a flock of geese fly in formation but backward — beating north while they slid south, against themselves, against the air — Birds went wrong like that when The Weather was coming. He'd figured on a thin spot waiting somewhere up ahead. He had not figured on company.
 
-His Neuretics returns its first assessment in a single flat word: Run. The bio-compute is grown around and through his brain and worked by thought alone, and most people run theirs to read their messages, scroll their socials, or drone out on slop. Kyle's is a long way past military grade, and even it wants nothing to do with this fight. He overrides it and drops into engagement mode, and it goes to work: cataloguing gait and stance and micro-weight shifts, triangulating muzzle angles from shoulder geometry alone, running threat-stack priority on all five remaining operators simultaneously, painting augmented target locks in colours only his optic nerve receives — and underneath all of it, reading the hundred small tells a body leaks before it fires, handing him the next half-second a hundred and twenty milliseconds before it arrives.
+His neuretics returns its first assessment in a single flat word: Run. The bio-compute is grown around and through his brain and worked by thought alone, and most people run theirs to read their messages, scroll their socials, or drone out on slop. Kyle's is a long way past military grade, and even it wants nothing to do with this fight. He overrides it and drops into engagement mode, and it goes to work: cataloguing gait and stance and micro-weight shifts, triangulating muzzle angles from shoulder geometry alone, running threat-stack priority on all five remaining operators simultaneously, painting augmented target locks in colours only his optic nerve receives — and underneath all of it, reading the hundred small tells a body leaks before it fires, handing him the next half-second a hundred and twenty milliseconds before it arrives.
 
 The team leader's finger takes up the slack on his trigger. Kyle is already moving when the first burst stitches the air he's no longer standing in. Cacophony — his five-shot revolver shotgun — clears its throat off his left hip, and a.410 slug rides an augmented-reality line only Kyle can see straight into the nearest operator, who folds around his own sternum and sits down hard in the road. Four left in the cylinder. Five shooters still up.
 
 [Beat 2]
 The team is good. They don't bunch and they don't panic — they peel back to the SUVs and start working the angles — and good is exactly the problem, because precognition against one trigger is a gift and against five at once is a budget, to be spent carefully and never refunded. His nervous system begins to cook under the load. A second slug catches the flanker breaking left, and the man drops mid-stride. A third punches clean through the door an operator is crouched behind and folds the steel in after it.
 
-Then Cacophony runs dry on the fourth — the hammer falling on an empty chamber with a click he feels in his back teeth — and there is no time to swing the cylinder out and feed it fresh, so Kyle simply quits solving the problem with the gun. He reaches over his shoulder and draws Silence off his back. The katana is a matte-black length of steel-CNT meta-alloy, an edge that takes no light and offers no trick but the hand that holds it, and the hand has had a long time to practice. He crosses the open ground inside the half-second his Neuretics has bought him, slides under the muzzle before it can track, and takes the rifle out of the fifth man's grip at the receiver — leaving him disarmed, untouched, and loudly amazed to still be in possession of all ten fingers.
+Then Cacophony runs dry on the fourth — the hammer falling on an empty chamber with a click he feels in his back teeth — and there is no time to swing the cylinder out and feed it fresh, so Kyle simply quits solving the problem with the gun. He reaches over his shoulder and draws Silence off his back. The katana is a matte-black length of steel-CNT meta-alloy, an edge that takes no light and offers no trick but the hand that holds it, and the hand has had a long time to practice. He crosses the open ground inside the half-second his neuretics has bought him, slides under the muzzle before it can track, and takes the rifle out of the fifth man's grip at the receiver — leaving him disarmed, untouched, and loudly amazed to still be in possession of all ten fingers.
 
 Steel for steel's problems and Cacophony for the rest: the whole of Kyle's philosophy of violence, and it has kept him breathing longer than the actuarial tables care for. Behind his eyes the overclock runs hot. In the corner of his mind's eye a small red light ticks over, the way it always does when he overdraws — a tally he stopped reading years ago — and the cost gathers somewhere out of sight, a debt he'll settle up later. A thin line of blood starts from his nose; he thumbs it off his lip without thinking, and the white creeps in at the edges of everything he can see. He ignores both, the way he always does.
 
 Five down or out. One left — the leader, who has not moved this whole time, because the leader has been waiting.
 
 [Beat 3]
-The leader brought the solution built for men like Kyle, and he has only been waiting for the range to clear enough to use it. It is a Gauss rifle — a man-portable rail driver that throws a single hypersonic depleted-uranium dart along a line so flat it might as well have been drawn with a ruler, and cares not at all what happens to be standing behind the target. It is the one weapon Kyle's Neuretics cannot beat, because you cannot dodge a thing that is already past you; you can only try not to be standing where it was aimed.
+The leader brought the solution built for men like Kyle, and he has only been waiting for the range to clear enough to use it. It is a Gauss rifle — a man-portable rail driver that throws a single hypersonic depleted-uranium dart along a line so flat it might as well have been drawn with a ruler, and cares not at all what happens to be standing behind the target. It is the one weapon Kyle's neuretics cannot beat, because you cannot dodge a thing that is already past you; you can only try not to be standing where it was aimed.
 
 He settles it on Kyle's chest and fires. Kyle reads the shot the breath before it leaves the barrel and is simply no longer there — and the dart, finding nothing but the air he abandoned, does not stop. It crosses the crossroads dead straight and punches through the windshield of an ambulance running its lights north, and kills the driver where he sits. With no one left to steer it, the ambulance drifts through its turn and meets a stalled hauler at fifty-two miles an hour, and the impact throws its back doors wide on their hinges.
 
@@ -38,13 +38,13 @@ Kyle waves back.
 [Beat 4]
 "Are you the new one?" the small face asks, and Kyle understands at once that this is not the question she is actually asking.
 
-She's eight, maybe nine. Her chest is taped under a flexible biopolymer brace, and she is, by a wide margin, more composed than the one-armed second-tier corponation security officer bleeding out on the asphalt a yard to Kyle's left.
+She's eight, maybe nine. Her chest is taped under a flexible biopolymer brace, and she is, by a wide margin, more composed than the one-armed second-tier CorpoNation security officer bleeding out on the asphalt a yard to Kyle's left.
 
 He steps up into the bay. The driver is dead. The medic slumped in the passenger seat is not coming back either. The patient tag clipped to the gurney reads IMANI OKONKWO-LINDQVIST — CRUCIBLE GENOMICS RECIPIENT — POST-OP, FIRST 6 HOURS — NORTHWESTERN MEMORIAL. Crucible Genomics prints organs to order, which means the kid is six hours into living on one of them. Kyle reads the tag twice. The math does itself.
 
 "Hi, Imani," he says. "I'm Kyle."
 
-"I know," she says. "My uncle says you're the one who doesn't stop."
+"I know," she says. "My uncle Vo Dinh says you're the one who doesn't stop."
 
 [Beat 5]
 He thumbs the emergency contact on the tag. It rings once.
@@ -61,7 +61,7 @@ Kyle looks. "Sinus, ninety-two, paced."
 
 "You've got sixty minutes before the vascular scaffold throws a clot," Vance says. "Maybe seventy."
 
-Kyle does not hear the maybe. The same military-grade Neuretics that read the kill team a hundred and twenty milliseconds ahead of itself reads the brace now — the battery draw, the kid's color, the brute arithmetic of a six-hour-old heart — and hands back one cold number with no maybe anywhere in it. Sixty.
+Kyle does not hear the maybe. The same military-grade neuretics that read the kill team a hundred and twenty milliseconds ahead of itself reads the brace now — the battery draw, the kid's color, the brute arithmetic of a six-hour-old heart — and hands back one cold number with no maybe anywhere in it. Sixty.
 
 "Keep her calm," Vance is saying. "A new graft that races can tear right off the suture line. Those wires aren't there for decoration."
 
@@ -71,7 +71,7 @@ Kyle does not hear the maybe. The same military-grade Neuretics that read the ki
 
 "I'm in Hegewisch."
 
-Vance does the same math, almost as fast as Kyle's Neuretics had. "Then it's a straight line. North. Don't stop for checkpoints, don't stop for anything. And mind The Weather — there's a thin spot parked over 35th, has been since Tuesday, and your straight line runs right under it. If the read in your skull drops out, you're in it. Steady speed, eyes on a far light, and whatever you do, don't look at the edges."
+Vance does the same math, almost as fast as Kyle's neuretics had. "Then it's a straight line. North. Don't stop for checkpoints, don't stop for anything. And mind The Weather — there's a thin spot parked over 35th, has been since Tuesday, and your straight line runs right under it. If the read in your skull drops out, you're in it. Steady speed, eyes on a far light, and whatever you do, don't look at the edges."
 
 "See you in a few," Kyle says.
 
@@ -93,7 +93,7 @@ Her cheek finds the back of his shoulder like it has been there before.
 The kid is the only new weight he's carrying, and the only one he is doing math about. The bike turns over and catches.
 
 [Beat 7]
-The first mile is gray zone. Hegewisch sprawl, no sovereign in residence, nobody to answer to and nobody to answer for you. A decommissioned delivery automaton kneels in a drainage forecourt at the corner, the rain of so many winters streaking its chassis chalk-white, and some child has tied a festival ribbon around one of its outstretched hands; it holds the ribbon the way it would hold anything, patiently, for as long as the ribbon cares to stay. It is the kind of country a freelancer learns by heart, because the seams are where the work lives; Stash had run a load of something through here last month and said the south stretch of Avenue O was clean if you took it fast. Kyle takes Avenue O at eighty. Two long rows of collapsed light poles lie across the road like felled trees, and his Neuretics flags them and lines up the gap before his eyes have finished arriving at the problem. Imani's breathing is a small warm patch against the back of his shoulder, even and slow and deliberately, carefully controlled.
+The first mile is gray zone. Hegewisch sprawl, no sovereign in residence, nobody to answer to and nobody to answer for you. A decommissioned delivery automaton kneels in a drainage forecourt at the corner, the rain of so many winters streaking its chassis chalk-white, and some child has tied a festival ribbon around one of its outstretched hands; it holds the ribbon the way it would hold anything, patiently, for as long as the ribbon cares to stay. It is the kind of country a freelancer learns by heart, because the seams are where the work lives; Stash had run a load of something through here last month and said the south stretch of Avenue O was clean if you took it fast. Kyle takes Avenue O at eighty. Two long rows of collapsed light poles lie across the road like felled trees, and his neuretics flags them and lines up the gap before his eyes have finished arriving at the problem. Imani's breathing is a small warm patch against the back of his shoulder, even and slow and deliberately, carefully controlled.
 
 "You're not scared," he says.
 
@@ -181,7 +181,7 @@ She thinks about that one for a long moment, the city pouring past on both sides
 [Beat 13]
 The Ashgrave Synthesis Corridor announces itself with a wall of haze you can taste a block before you can see it. The perimeter lights glow the wrong color — too yellow, too low — the way a refinery glows when it is having a feeling about something. This is somebody's commute. A shift-change line of workers in cheap half-masks trudges the shoulder, heads down, lunch pails swinging, walking a thing they made their peace with a long time ago, because the only alternative on offer was not eating. A stall at the mouth of the corridor sells filter cartridges, and beside the cartridges a hand-painted board keeps a tally — DAYS SINCE — the number low, the way the number is always low here.
 
-Kyle has a respirator clipped to his jacket. Imani does not. His Neuretics throws the air up in front of his eyes as a number he doesn't like and a clock he likes a great deal less. He reaches back without slowing, finds her face with the flat of his palm, and presses his bandana over her mouth.
+Kyle has a respirator clipped to his jacket. Imani does not. His neuretics throws the air up in front of his eyes as a number he doesn't like and a clock he likes a great deal less. He reaches back without slowing, finds her face with the flat of his palm, and presses his bandana over her mouth.
 
 "Breathe shallow," he says. "Through this. Not your nose."
 
@@ -199,7 +199,7 @@ Kyle has met grown adults — armed, paid, supposedly professional — who could
 [Beat 15]
 Halfway through, the corridor's throat begins to close.
 
-A leak somewhere upwind trips a containment lockdown, and Ashgrave's answer to a leak is a blast-rated bulkhead coming down across the only open lane on a dead-man timer — slow as a guillotine and about as open to negotiation — built to seal whoever's caught on the wrong side of it in with the very air they were trying to outrun. This is not the sally-gate. There is no actuator to find and shoot, no override, and no time to look for one, because a hydraulic spine already in motion is a different animal than one sitting at rest. His Neuretics tells him so before he's even finished forming the question.
+A leak somewhere upwind trips a containment lockdown, and Ashgrave's answer to a leak is a blast-rated bulkhead coming down across the only open lane on a dead-man timer — slow as a guillotine and about as open to negotiation — built to seal whoever's caught on the wrong side of it in with the very air they were trying to outrun. This is not the sally-gate. There is no actuator to find and shoot, no override, and no time to look for one, because a hydraulic spine already in motion is a different animal than one sitting at rest. His neuretics tells him so before he's even finished forming the question.
 
 He can't beat the door. He can only beat it there.
 
@@ -229,7 +229,7 @@ Englewood at night looks like a city that has been told a joke nobody is laughin
 
 There is a hard way. A tilted slab the locals have braced and shimmed into a ramp, because in a gray zone every disaster eventually gets repurposed into infrastructure by the people who have to live on top of it. He knows the ramp is sound because Echo had run a job out this way a season back and tapped him the wave-map after, the whole broken shelf of Englewood charted in clicks and echoes the way only Echo bothers to chart anything. Some debts in this trade get paid in roads you'll never have to learn the hard way.
 
-He takes it at speed. The bike goes light at the crest, weightless for one long held breath, Imani's battery thudding once against his kidney — and they land hard on the far side with thirty-four minutes left on the clock and a fresh ache settling in behind his teeth. Two headlights take the ramp a beat behind him. Then a third. His Neuretics tags them, ranges them, and tells him the single useful thing there is to know about them: they are matching his speed on purpose.
+He takes it at speed. The bike goes light at the crest, weightless for one long held breath, Imani's battery thudding once against his kidney — and they land hard on the far side with thirty-four minutes left on the clock and a fresh ache settling in behind his teeth. Two headlights take the ramp a beat behind him. Then a third. His neuretics tags them, ranges them, and tells him the single useful thing there is to know about them: they are matching his speed on purpose.
 
 He does the single useful thing in answer. He goes faster.
 
@@ -238,7 +238,7 @@ They come in a flock this time — the ones the phones woke, fresh bikes and no 
 
 It is a good plan. It would work on almost anyone alive.
 
-Kyle's bike stumbles, coughs, catches, and keeps running on hardened ignition. And the read behind his eyes never so much as flickers — because a military Neuretics is shielded against a great deal more than static. Against EMP. Against the whole spectrum of battlefield interference. And against the low, wrong pressure at the very bottom of the band that would fold a civilian rig clean in half. You do not harden a mind against that last thing unless you already know, for a fact, that it is out there waiting. Kyle has never told a living soul that his is. Where a pack of fledglings came by rounds that carry it is a question for a later night. He stops the bike — because running is the one thing they are built and ready for, and standing still is the one thing they are not.
+Kyle's bike stumbles, coughs, catches, and keeps running on hardened ignition. And the read behind his eyes never so much as flickers — because a military neuretics is shielded against a great deal more than static. Against EMP. Against the whole spectrum of battlefield interference. And against the low, wrong pressure at the very bottom of the band that would fold a civilian rig clean in half. You do not harden a mind against that last thing unless you already know, for a fact, that it is out there waiting. Kyle has never told a living soul that his is. Where a pack of fledglings came by rounds that carry it is a question for a later night. He stops the bike — because running is the one thing they are built and ready for, and standing still is the one thing they are not.
 
 He picks the narrow place under the 63rd Street viaduct where the lane necks down between two dead cars, thumbs the bike into auto-balance, and feels it take its own weight, the gyros holding it upright and patient at a crawl with the kid still aboard.
 
@@ -254,7 +254,7 @@ The first one commits to his swing — a length of chain, whipping flat — befo
 
 Imani catches it against herself like a schoolbag.
 
-The second one tries to simply run him down, which is how the second one comes to study the asphalt at close range. The third has the sense to draw a pistol — and that is the moment the Neuretics paints the thing no briefing can ever quite sell you: the shot itself, a full beat before the trigger finishes pulling it, a hard red line laid from the muzzle straight through the center of Kyle's chest.
+The second one tries to simply run him down, which is how the second one comes to study the asphalt at close range. The third has the sense to draw a pistol — and that is the moment the neuretics paints the thing no briefing can ever quite sell you: the shot itself, a full beat before the trigger finishes pulling it, a hard red line laid from the muzzle straight through the center of Kyle's chest.
 
 So Kyle takes his chest off the line. He drops his weight back off his heels, far enough to feel the round part the air just above his sternum and travel on to find the fourth fledgling — who had done everything right tonight except stand directly behind the man he was hunting. The shooter stares at what his own hand just did. Kyle relieves him of the pistol, and of any further interest in the fight.
 
@@ -281,7 +281,7 @@ Halsted north of the tracks runs straight over the bones of Cinderfall Energy �
 
 "Me neither," Kyle says, and doesn't dress it up, because that one is simply true.
 
-He does not tell her that the air is about to do something Cinderfall has nothing whatsoever to do with. With the road behind him finally empty, his Neuretics has nothing left to track but what waits up ahead — and two blocks on, the streetlights stop agreeing with one another about where they stand, and the read in his skull, which has had a clean answer ready for everything tonight, goes quiet. Quiet in the one specific way that means only one thing.
+He does not tell her that the air is about to do something Cinderfall has nothing whatsoever to do with. With the road behind him finally empty, his neuretics has nothing left to track but what waits up ahead — and two blocks on, the streetlights stop agreeing with one another about where they stand, and the read in his skull, which has had a clean answer ready for everything tonight, goes quiet. Quiet in the one specific way that means only one thing.
 
 The Weather, Vance had called it.
 
@@ -294,6 +294,8 @@ And then comes the worse thing. The thing the briefings never sell hard enough.
 
 He knows this corner.
 
+The neuretics returned a location stamp from a source it had no registry entry for — a fragment timestamped as origin: external. The hardware flagged it and waited. Kyle did not have a category for it.
+
 He has never once been here, and he knows it anyway — knows it the way you know a hallway from a dream — one you have had your whole life and never once on purpose.
 
 Behind him, Imani makes a sound he has never heard a child make. Not fear. Not pain.
@@ -303,9 +305,11 @@ Recognition.
 [Beat 21]
 It has a name on the forecasts and an exclusion flag on the maps. Kyle knows the names are a courtesy. Whatever this is, it isn't bad air and it isn't radiation. It is faintly and patiently aware of him.
 
-His Neuretics tries to map it and gets back nothing but garbage: distances that won't hold still, a clock running three directions at once, his own engine note reaching his ears a half-second late, off a street he's already left. So for once in his overclocked life he flies on the one instrument no build has ever managed to improve — the old animal at the base of the skull.
+His neuretics tries to map it and gets back nothing but garbage: distances that won't hold still, a clock running three directions at once, his own engine note reaching his ears a half-second late, off a street he's already left. The visual field isn't wrong, exactly — more like a page turned a quarter-second early, the scene slightly ahead of its own arrival. The buildings stand where they're supposed to stand, but their shadows run in the wrong direction, and the light from a window two floors up hits his eyes a moment before the window passes. So for once in his overclocked life he flies on the one instrument no build has ever managed to improve — the old animal at the base of the skull.
 
 He fixes on a single streetlamp out on the far rim and keeps the only rules anyone keeps and survives. Constant speed. Eyes on the light. Don't look at the edges. Don't trust a turn — because in here, right is sometimes left, and left is sometimes down.
+
+The air has a quality. A fullness — the sensation of a room where something large and very old has just turned around to look at you. Not hostile. Patient in a way that has no hurry in it, because it has already outlasted everything that ever had somewhere else to be. Whatever the maps call it, the name is too small for what it is.
 
 "Don't look left," he says.
 
@@ -335,7 +339,7 @@ The chirp slows. Slows again. Steadies. By the next block she has herself back, 
 It is the first time he has lied to her.
 
 [Beat 23]
-Twenty-one minutes, and the mirrors have stayed empty since the viaduct. What he hasn't lost is the Loop — the one part of the city no corponation gets to switch off, too public and too packed, the heart every zone plugs into to stay alive. So when it goes wrong, it goes wrong in the open. Tonight it is going wrong.
+Twenty-one minutes, and the mirrors have stayed empty since the viaduct. What he hasn't lost is the Loop — the one part of the city no CorpoNation gets to switch off, too public and too packed, the heart every zone plugs into to stay alive. So when it goes wrong, it goes wrong in the open. Tonight it is going wrong.
 
 He hears it from the mouth of the tunnel: the flat clap of small-arms under a crowd-roar. Imani lifts her head off his back.
 
@@ -472,5 +476,5 @@ Then the read, freshly back and not yet asked, hands him something he didn't req
 
 A kill team that never asked why their contract carried only a description and no name. A job too clean to have a careless human behind it. And now this — arriving the hour he finished, like a receipt.
 
-He has been seeing the shape for months. He does not say the word for it yet, even to himself. He declines the posting, and walks south through the rain, and lets whoever is watching watch him do it.
+He has been seeing the shape for months. He has a word for it now. He puts the word in the drawer next to the buyers' list and the relay logs and the other things he has not finished deciding about, and he declines the posting, and walks south through the rain, and lets whoever is watching watch him do it.
 
