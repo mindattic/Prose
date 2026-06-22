@@ -7,10 +7,9 @@ namespace StreetSamurai.Blazor.Cli;
 
 /// <summary>
 /// <c>ss --publish-docx (--id &lt;guid|prefix&gt; | --slug &lt;slug&gt;) [--author "Name"] [--export-dir &lt;path&gt;]</c>
-/// — render a strand to a KDP-ready Word .docx AND a matching PDF in the same location.
-/// With no <c>--export-dir</c> (and no configured PublishExportDirectory) both files write
-/// to the user's Downloads folder. With <c>--export-dir</c> the docx is copied there and
-/// the PDF lands in Downloads alongside it.
+/// — render a strand to a KDP-ready EPUB + Word .docx + PDF in the configured publish
+/// directory (Desktop fallback). <c>--export-dir</c> overrides and persists
+/// <c>PublishExportDirectory</c> for all three formats.
 /// </summary>
 public static class PublishDocxCli
 {
@@ -58,13 +57,14 @@ public static class PublishDocxCli
             strandId = strand.Id; strandTitle = strand.Title;
         }
 
-        Console.WriteLine($"[publish-docx] Rendering \"{strandTitle}\" to .epub + .docx + .pdf…");
+        Console.WriteLine($"[publish-docx] Rendering \"{strandTitle}\" to .docx + .epub + .pdf…");
         try
         {
-            var epubPath = await manuscript.ExportEpubAsync(strandId, author);
-            Console.WriteLine($"[publish-docx] Wrote epub: {epubPath}");
+            // docx first — it increments strand.Version; epub + pdf then read the same version.
             var docxPath = await docx.ExportStrandAsync(strandId, author);
             Console.WriteLine($"[publish-docx] Wrote docx: {docxPath}");
+            var epubPath = await manuscript.ExportEpubAsync(strandId, author);
+            Console.WriteLine($"[publish-docx] Wrote epub: {epubPath}");
             var pdfPath = await manuscript.ExportPdfAsync(strandId, author);
             Console.WriteLine($"[publish-docx] Wrote pdf:  {pdfPath}");
             return 0;
