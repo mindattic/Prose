@@ -1,5 +1,6 @@
 using System.IO.Compression;
 using System.Text;
+using System.Text.RegularExpressions;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Logging;
 using QuestPDF.Fluent;
@@ -12,27 +13,31 @@ namespace StreetSamurai.Core.Services;
 /// <summary>
 /// Renders a strand's ordered beats to the three KDP deliverables: EPUB 3 (ebook upload),
 /// PDF (paperback upload), and Markdown (offline editing aid with beat markers for
-/// <c>ss --import-md</c>). All three land in Downloads. The Word .docx is produced
-/// by <see cref="DocxExportService"/>; all three formats share the same 6"×9" KDP trim.
+/// <c>ss --import-md</c>). All three land in the configured publish directory (Desktop
+/// fallback). The Word .docx is produced by <see cref="DocxExportService"/>; all three
+/// formats share the same 6"×9" KDP trim.
 /// </summary>
 public class ManuscriptExportService
 {
     private readonly IDbContextFactory<StreetSamuraiDbContext> dbFactory;
     private readonly StrandWorkbenchService workbench;
+    private readonly SettingsService settings;
     private readonly ILogger<ManuscriptExportService> log;
 
     public ManuscriptExportService(
         IDbContextFactory<StreetSamuraiDbContext> dbFactory,
         StrandWorkbenchService workbench,
+        SettingsService settings,
         ILogger<ManuscriptExportService> log)
     {
         this.dbFactory = dbFactory;
         this.workbench = workbench;
+        this.settings = settings;
         this.log = log;
     }
 
     /// <summary>
-    /// Export the strand as Markdown to Downloads; returns the path.
+    /// Export the strand as Markdown to the publish directory; returns the path.
     /// Each beat is prefixed with a <c>&lt;!-- beat:N:id32 --&gt;</c> marker
     /// (invisible in rendered MD, unambiguous for <c>ss --import-md</c> reimport).
     /// </summary>
@@ -82,7 +87,7 @@ public class ManuscriptExportService
             }
         }
 
-        var dir = CanonExportService.DownloadsDir;
+        var dir = ResolveExportDir();
         Directory.CreateDirectory(dir);
         var path = Path.Combine(dir, $"{strand.Slug}.{strand.Id.ToString("N")[..8]}.md");
         await File.WriteAllTextAsync(path, md.ToString().TrimEnd() + "\n", new UTF8Encoding(false), ct);
@@ -328,7 +333,7 @@ public class ManuscriptExportService
     private sealed record Chapter(string? Heading, List<string> Paragraphs);
 
     /// <summary>Resolve the strand, walk its ordered beats into chapters, and
-    /// compute the Downloads path for the given extension.</summary>
+    /// compute the publish-directory path for the given extension.</summary>
     private async Task<(Manuscript Manuscript, string Path)> LoadAsync(Guid strandId, string ext, CancellationToken ct)
     {
         await using var db = await dbFactory.CreateDbContextAsync(ct);
@@ -357,11 +362,21 @@ public class ManuscriptExportService
                 current.Paragraphs.Add(para);
         }
 
-        var dir = CanonExportService.DownloadsDir;
-        Directory.CreateDirectory(dir);
-        var path = Path.Combine(dir, $"{strand.Slug}.{strand.Id.ToString("N")[..8]}.{ext}");
+        var dir = ResolveExportDir();
+        var safeTitle = SanitizeTitle(strand.Title);
+        var strandDir = Path.Combine(dir, safeTitle);
+        Directory.CreateDirectory(strandDir);
+        var path = Path.Combine(strandDir, $"{safeTitle} V{strand.Version}.{ext}");
 
         return (new Manuscript(strand.Title, strand.Slug, strand.Synopsis, chapters), path);
+    }
+
+    private string ResolveExportDir()
+    {
+        var dir = (settings.PublishExportDirectory ?? string.Empty).Trim().Trim('"', '\'').Trim();
+        if (string.IsNullOrWhiteSpace(dir))
+            dir = Environment.GetFolderPath(Environment.SpecialFolder.Desktop);
+        return dir;
     }
 
     private static Chapter AddLeadChapter(List<Chapter> chapters)
@@ -369,6 +384,15 @@ public class ManuscriptExportService
         var lead = new Chapter(null, new List<string>());
         chapters.Add(lead);
         return lead;
+    }
+
+    private static string SanitizeTitle(string title)
+    {
+        var invalid = Path.GetInvalidFileNameChars().ToHashSet();
+        invalid.Add('\''); invalid.Add('’');
+        var kept = new string((title ?? "").Where(c => !invalid.Contains(c)).ToArray()).Trim();
+        kept = Regex.Replace(kept, @"\s+", " ").Trim();
+        return string.IsNullOrWhiteSpace(kept) ? "untitled" : kept;
     }
 
     private static IEnumerable<string> SplitParagraphs(string text) =>
