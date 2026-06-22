@@ -20,8 +20,10 @@ namespace StreetSamurai.Core.Services;
 /// each provider offers (haiku / flash-lite / nano), applied as a per-run override inside
 /// <c>StrandReviewService</c> WITHOUT mutating persisted settings. Standard and Deep keep the
 /// trustworthy mid-tier models because their scores drive gate decisions, where cheap-model
-/// score noise would be a false economy. (<see cref="AllowedProviders"/> carries provider-
-/// restriction intent for a future pass; it is not applied yet.)
+/// score noise would be a false economy. <see cref="AllowedProviders"/> restricts the ballot
+/// round-robin to a subset of providers for a run (Draft → claude+gemini) without mutating the
+/// persisted whitelist; an empty intersection falls back to all active providers so the panel
+/// is never starved.
 /// </summary>
 public sealed record ReviewEffortProfile(
     string Name,

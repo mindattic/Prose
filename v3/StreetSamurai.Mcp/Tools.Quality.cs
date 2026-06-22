@@ -108,13 +108,18 @@ public class QualityTools
     }
 
     /// <summary>Run a sampled Legion review panel against a strand. Automatically runs structural pre-flight first — blocking failures (missing antagonist cost, passive protagonist, etc.) halt the review and tell you what to fix. Non-blocking warnings are appended to the report. Casts score-only ballots and a few full prose upgrades. Returns the pooled mean, SD, 95% CI, per-beat heat map, clustered weakness tags, and the Pareto/contested/seam report.</summary>
-    [McpServerTool, Description("Run the sampled Legion review panel against a strand. STRUCTURAL PRE-FLIGHT runs first: if blocking failures are found (missing antagonist cost, passive protagonist, purely-stated stakes, >70% exposition), the review is blocked and returns the diagnosis instead of ballots — fix the structure first. Non-blocking warnings are always appended to the report. Stratified personas cast score-only ballots then the most informative are upgraded to full prose. Returns: blocked (bool), mean_score, SD, CI, report_markdown (includes structural findings), synopsis. GOTCHA: do not edit beats while a review is running. Alias: also accepts strand id (GUID) for the strandIdOrSlug param.")]
+    [McpServerTool, Description("Run the sampled Legion review panel against a strand. STRUCTURAL PRE-FLIGHT runs first: if blocking failures are found (missing antagonist cost, passive protagonist, purely-stated stakes, >70% exposition), the review is blocked and returns the diagnosis instead of ballots — fix the structure first. Non-blocking warnings are always appended to the report. Stratified personas cast score-only ballots then the most informative are upgraded to full prose. Use the 'effort' tier to scale cost to importance. Returns: blocked (bool), mean_score, SD, CI, report_markdown (includes structural findings), synopsis. GOTCHA: do not edit beats while a review is running. Alias: also accepts strand id (GUID) for the strandIdOrSlug param.")]
     public async Task<string> ReviewStrand(
         [Description("Strand id (GUID) or slug.")] string strandIdOrSlug,
-        [Description("Number of score-only ballots to cast. 0 = use the ReviewBallots setting (default 20).")] int ballots = 0,
-        [Description("Number of full prose reviews to write (upgraded from ballots). 0 = use the ReviewProse setting.")] int prose = 0,
-        [Description("Set true to skip structural pre-flight and run ballots unconditionally. Use only when you have already reviewed and accepted the structural findings.")] bool skipDiagnosis = false)
+        [Description("Number of score-only ballots to cast. 0 = use the effort tier (if given) or the ReviewBallots setting (default 20). A non-zero value overrides the tier.")] int ballots = 0,
+        [Description("Number of full prose reviews to write (upgraded from ballots). 0 = use the effort tier (if given) else 0. A non-zero value overrides the tier.")] int prose = 0,
+        [Description("Set true to skip structural pre-flight and run ballots unconditionally. Use only when you have already reviewed and accepted the structural findings.")] bool skipDiagnosis = false,
+        [Description("Cost tier (RFC 0009), scales calls + per-call model to importance: 'draft' = ~6 cheap-model ballots on claude+gemini, no diagnosis, NOT a gate; 'standard' = ~12 ballots + 2 prose, the >=82% standalone gate; 'deep' = ~37 ballots + 4 prose + full structural diagnosis, the >=85%/publish gate. Omit for the configured defaults.")] string? effort = null)
     {
+        var profile = ReviewEffortProfile.Resolve(effort);
+        if (effort != null && profile == null)
+            return JsonSerializer.Serialize(new { error = "unknown_effort", effort, known = ReviewEffortProfile.KnownTiers }, CanonTools.JsonOpts);
+
         await using var db = await dbFactory.CreateDbContextAsync();
         Guid strandId;
         if (Guid.TryParse(strandIdOrSlug, out var g))
@@ -126,8 +131,15 @@ public class QualityTools
             strandId = s.Id;
         }
 
-        var result = await reviewer.RunSampledReviewAsync(strandId, ballots, prose < 0 ? 0 : prose,
-            skipDiagnosis: skipDiagnosis);
+        // Explicit ballots/prose win over the tier; otherwise the tier supplies them.
+        var effBallots = ballots > 0 ? ballots : (profile?.Ballots ?? ballots);
+        var effProse   = prose   > 0 ? prose   : (profile?.Prose ?? 0);
+        var effSkip    = skipDiagnosis || (profile?.SkipDiagnosis ?? false);
+
+        var result = await reviewer.RunSampledReviewAsync(strandId, effBallots, effProse < 0 ? 0 : effProse,
+            skipDiagnosis: effSkip,
+            cheapModels: profile?.CheapModels ?? false,
+            allowedProvidersOverride: profile?.AllowedProviders);
 
         string? synopsis = null;
         if (result.BallotsSaved > 0)

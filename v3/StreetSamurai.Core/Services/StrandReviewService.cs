@@ -187,7 +187,7 @@ public class StrandReviewService
     public async Task<SampledRunResult> RunSampledReviewAsync(
         Guid strandId, int ballotCount, int proseCount,
         IProgress<int>? progress = null, CancellationToken ct = default,
-        bool skipDiagnosis = false, bool cheapModels = false)
+        bool skipDiagnosis = false, bool cheapModels = false, string? allowedProvidersOverride = null)
     {
         if (ballotCount <= 0) ballotCount = settings.ReviewBallots;
         if (proseCount < 0) proseCount = 0;
@@ -223,7 +223,8 @@ public class StrandReviewService
                 // Non-blocking warnings: run ballots normally, then append the
                 // structural findings to the report so they're always visible.
                 var result = await RunSampledReviewAsync(strandId, ballotCount, proseCount,
-                    progress, ct, skipDiagnosis: true, cheapModels: cheapModels);
+                    progress, ct, skipDiagnosis: true, cheapModels: cheapModels,
+                    allowedProvidersOverride: allowedProvidersOverride);
                 return result with
                 {
                     ReportMarkdown      = AppendStructuralWarnings(result.ReportMarkdown, diagnosis),
@@ -231,7 +232,7 @@ public class StrandReviewService
                 };
             }
         }
-        var providers = ReviewProviderIds();
+        var providers = ReviewProviderIds(allowedProvidersOverride);
         if (providers.Count == 0)
             throw new InvalidOperationException("No trusted LLM providers are configured with API keys — cannot run reviews.");
 
@@ -1354,14 +1355,18 @@ Be specific; do not invent praise the reviews don't support.";
     /// <summary>Providers used for reviews — all active trusted providers (Claude,
     /// OpenAI, DeepSeek, Gemini), round-robined for model + temperament diversity.
     /// (Single chokepoint: narrow this here if a provider ever needs excluding.)</summary>
-    private List<string> ReviewProviderIds()
+    private List<string> ReviewProviderIds(string? allowedOverride = null)
     {
         var active = cfg.ActiveProviderIds;
+        // RFC 0009: a per-run override (e.g. Draft's "claude,gemini") wins over the
+        // persisted setting without mutating it. Empty/blank → fall back to settings.
+        var source = string.IsNullOrWhiteSpace(allowedOverride) ? settings.ReviewAllowedProviders : allowedOverride;
         var allowed = new HashSet<string>(
-            settings.ReviewAllowedProviders
-                .Split(',', StringSplitOptions.RemoveEmptyEntries | StringSplitOptions.TrimEntries),
+            source.Split(',', StringSplitOptions.RemoveEmptyEntries | StringSplitOptions.TrimEntries),
             StringComparer.OrdinalIgnoreCase);
-        return allowed.Count > 0 ? active.Where(p => allowed.Contains(p)).ToList() : active;
+        var filtered = allowed.Count > 0 ? active.Where(p => allowed.Contains(p)).ToList() : active.ToList();
+        // Never let an override empty the panel (e.g. none of its providers have keys).
+        return filtered.Count > 0 ? filtered : active.ToList();
     }
 
     /// <summary>Distinct enriched personas (real personalities, not the empty

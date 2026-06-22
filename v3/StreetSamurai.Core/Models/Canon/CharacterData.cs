@@ -232,14 +232,37 @@ public class CharacterChangelog
     [JsonPropertyName("reason")] public string Reason { get; set; } = "";
 }
 
+/// <summary>
+/// Tolerates a stats sub-field that is a non-object JSON value (string, array, number)
+/// by returning an empty dictionary instead of throwing.
+/// </summary>
+public class FlexibleDictConverter : JsonConverter<Dictionary<string, JsonElement>>
+{
+    public override Dictionary<string, JsonElement>? Read(ref Utf8JsonReader reader, Type typeToConvert, JsonSerializerOptions options)
+    {
+        if (reader.TokenType == JsonTokenType.StartObject)
+            return JsonSerializer.Deserialize<Dictionary<string, JsonElement>>(ref reader, options);
+        reader.Skip();
+        return new Dictionary<string, JsonElement>();
+    }
+
+    public override void Write(Utf8JsonWriter writer, Dictionary<string, JsonElement> value, JsonSerializerOptions options)
+        => JsonSerializer.Serialize(writer, value, options);
+}
+
 public class CharacterStats
 {
-    [JsonPropertyName("physical")] public Dictionary<string, JsonElement> Physical { get; set; } = new();
-    [JsonPropertyName("mental")] public Dictionary<string, JsonElement> Mental { get; set; } = new();
-    [JsonPropertyName("social")] public Dictionary<string, JsonElement> Social { get; set; } = new();
-    [JsonPropertyName("personality")] public Dictionary<string, JsonElement> Personality { get; set; } = new();
+    [JsonPropertyName("physical"), JsonConverter(typeof(FlexibleDictConverter))]
+    public Dictionary<string, JsonElement> Physical { get; set; } = new();
+    [JsonPropertyName("mental"), JsonConverter(typeof(FlexibleDictConverter))]
+    public Dictionary<string, JsonElement> Mental { get; set; } = new();
+    [JsonPropertyName("social"), JsonConverter(typeof(FlexibleDictConverter))]
+    public Dictionary<string, JsonElement> Social { get; set; } = new();
+    [JsonPropertyName("personality"), JsonConverter(typeof(FlexibleDictConverter))]
+    public Dictionary<string, JsonElement> Personality { get; set; } = new();
     [JsonPropertyName("drives")] public List<string> Drives { get; set; } = [];
-    [JsonPropertyName("thresholds")] public Dictionary<string, JsonElement> Thresholds { get; set; } = new();
+    [JsonPropertyName("thresholds"), JsonConverter(typeof(FlexibleDictConverter))]
+    public Dictionary<string, JsonElement> Thresholds { get; set; } = new();
     [JsonPropertyName("strengths")] public List<string> Strengths { get; set; } = [];
     [JsonPropertyName("weaknesses")] public List<string> Weaknesses { get; set; } = [];
     [JsonPropertyName("tags")] public List<string> StatTags { get; set; } = [];
