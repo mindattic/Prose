@@ -42,7 +42,7 @@ Boost had signed it at the bottom the way she signed everything, a single capita
 
 The kid was fourteen and she was right. A man who came back twice on a schedule wasn't watching Kyle. He was maintaining a file on Kyle. Which meant someone was paying to keep it current. Which meant the file existed somewhere you could buy it, and there was exactly one counter in the city where a thing like that went to be sold honestly.
 
-"Don't," said Pixel, from his doorway, his forty Phi in her hand -- she'd come to collect and read his face instead. "You're going to go see the dead-tech man."
+"Don't," said Pixel, from his doorway, his forty Φ in her hand -- she'd come to collect and read his face instead. "You're going to go see the dead-tech man."
 
 "Vey keeps better records than the city does."
 
@@ -57,11 +57,11 @@ Kyle came down the three flights into the Loop's underlevel and the temperature 
 
 "I want my file."
 
-"No." He said it without heat, the way he'd say it to anyone. "I have never sold a man his own file and I'm not starting with the one man who'd believe what's in it. A subject who reads his file changes; a changed subject makes the file false; I do not sell false things. It's the whole shop, Mr. Kyle. It's the only thing the shop is." He set out two cups and poured from a pot that had been warming on a hotplate older than the war. "What I'll sell you is the list of everyone who's been buying it. That's not your file. That's their paper, and their paper is mine to move. Forty Phi. And one true thing, because I don't take a man's money and his ignorance in the same transaction; that's how you end up owning people, and I deal in objects."
+"No." He said it without heat, the way he'd say it to anyone. "I have never sold a man his own file and I'm not starting with the one man who'd believe what's in it. A subject who reads his file changes; a changed subject makes the file false; I do not sell false things. It's the whole shop, Mr. Kyle. It's the only thing the shop is." He set out two cups and poured from a pot that had been warming on a hotplate older than the war. "What I'll sell you is the list of everyone who's been buying it. That's not your file. That's their paper, and their paper is mine to move. Forty Φ. And one true thing, because I don't take a man's money and his ignorance in the same transaction; that's how you end up owning people, and I deal in objects."
 
 Kyle put forty on the counter, exact. Then he gave Vey the true thing, because it was the only currency the old man actually collected.
 
-"I have a client I've never met. Eleven years. It pays standard rate, to the half-Phi, and it pays early, and it routes through addresses that don't exist."
+"I have a client I've never met. Eleven years. It pays standard rate, to the half-Φ, and it pays early, and it routes through addresses that don't exist."
 
 Something happened in Vey's face that Kyle had never seen there before, which was the effort of keeping nothing happening in it.
 

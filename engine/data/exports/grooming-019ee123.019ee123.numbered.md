@@ -9,9 +9,15 @@ _Ciro produces the razor again at a second meeting. The gesture is identical to 
 
 His message came at 08:40: *I realized I owe you an answer. The audit question. If you have twenty minutes today.*
 
-She read it twice. The first read had a professional quality. The second had a different one.
+The second time she read it, she was looking for something else.
 
-She went at 10:00. She had spent the intervening hour working out how to phrase the question precisely — not about any specific case, just the architecture of the log separation. And then the deeper version: whether the infrastructure logs would record the suppression protocol running. Not just the structure. The content.
+She went at 10:00.
+
+In the corridor outside his floor she stopped at the restrooms and stood at the sink with the water running, her hands under the tap. Not washing her hands. The water was cold. She held it there.
+
+The question had three layers: the architecture of the log separation, the access tiers, and whether a specific protocol would leave a trace in the infrastructure side rather than the clinical side. She needed to reach the third layer. She had never made it past the first.
+
+She dried her hands and went in.
 
 His office was the fourteenth floor, no window. When she knocked, he was already looking at the door. He had the razor in his hand — the straight razor with the bone handle — drawing it flat under the nail of his index finger. Once. A habitual gesture. He set it down when she entered and did not seem to notice he had set it down.
 
@@ -25,9 +31,11 @@ The office had the same quality of managed air it always had. The same neutral d
 
 "The separation is at the data-governance layer," he said. "Clinical records require clinical clearance. Infrastructure logs require infrastructure clearance — a different track. A tech lead on the maintenance side would have infrastructure access." A pause. "You probably already knew that."
 
-"I wanted to confirm." She kept her hands still on her bag. "And the logs would record—"
+"I wanted to confirm." She kept her hands still on her bag. "The infrastructure logs — if someone ran a batch scan across multiple client records, would that leave a trace on the infrastructure side?"
 
-He stood.
+He looked at her for a moment longer than the question required.
+
+Then he stood.
 
 Not quickly. Not as if he were cutting her off. As if he had remembered he had somewhere to be — the natural movement of someone ending a meeting at exactly the right moment. "I'm glad I could be useful," he said. He said it while looking at the razor on the desk, picking it up, setting it in the case beside his keyboard. The case closed with a soft click.
 
@@ -59,9 +67,15 @@ She picked up her bag. The razor was in its case. He hadn't looked at it again. 
 
 She did not go back down to Zone 6.
 
-The elevator opened on thirty-two and she walked down the hall to the facilities systems team intake window. The technician there was a young man eating a sandwich with the kind of efficiency that suggested he ate at his desk every day. She gave Fonseca's name and asked about infrastructure access for a tech lead on the maintenance tier.
+The elevator opened on thirty-two and she walked down the hall to the facilities systems team intake window. The technician there was a young man eating a sandwich. She gave Fonseca's name and asked about infrastructure access for a tech lead on the maintenance tier.
 
-He typed something. He looked up. "You're already provisioned," he said. "Since this morning." He turned the screen toward her so she could see the access level, the timestamp. "Effective 08:45."
+He typed something. When he looked at the result, his chewing slowed. "Huh," he said. "Twice in one morning." He turned the screen toward her. "You're already provisioned. Since this morning." His sandwich hand had gone still.
 
 Forty-five minutes before Ciro's message had arrived.
+
+She stood at the intake window looking at the screen. The technician had gone back to his sandwich. The timestamp sat there: 08:45, her name, the infrastructure tier, Fonseca's authorization ID. He had arranged this and then composed a message inviting her to ask for it. The invitation was theater. The access was already waiting for her to find what she would look at with it.
+
+She thanked the technician. She went back to Zone 6 and sat at her bench and looked at the terminal with the infrastructure access that had been given to her as a gift.
+
+She opened the query interface. She started building.
 

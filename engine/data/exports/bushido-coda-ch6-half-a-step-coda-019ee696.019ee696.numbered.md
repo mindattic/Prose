@@ -29,9 +29,11 @@ The taser burn would be worst in the morning. He sat with it in the dark and ran
 He lay back in the dark, the burn in his ribs finding its slow schedule, and slept.
 
 [Beat 3]
-The burn woke him at six, as promised. Kyle sat at the kitchen window with his coffee and watched the street. Pixel's door across the hall stayed quiet.
+The burn woke him at six, as promised. Kyle sat at the kitchen window with his coffee and took inventory: two hairline ribs, tape holding, the pull of the lab-grown skin over the taser contact at the lat. The burn reported itself with each breath, a clean specific signal, nothing dramatic. Outside, the street was doing its morning work. Pixel's door across the hall stayed quiet.
 
-He pulled up the account on his terminal while the coffee was still hot. The Axiom relay showed the retainer deposit: exact rate, no gratuity, processed at 02:14. The previous posting pattern had never exceeded twelve hours between jobs; this had been silent for eighteen. Kyle ran a geographic trace on the 02:14 relay's source tag, got no return. He finished his coffee and went to find his jacket.
+He ran his thumb along the tape and thought about the mesh gap. Not philosophically. Just: the gap existed because an engineer in 2209 had traded coverage for articulation at the lat seam, and that trade had a cost he'd paid three times now. The engineer hadn't asked his name. The mesh had stopped the two center-mass rounds from the repo crew and the follow-through from the first drone's stave. What it hadn't stopped was the baton's charge at the seam, which was exactly what it was designed not to stop. This was not a complaint. He filed it the same way he filed everything — the shoulder tally, the rib count, the burn's likely duration.
+
+He pulled up the account on his terminal while the coffee was still hot. The Axiom relay showed the retainer deposit: exact rate, no gratuity, processed at 02:14. Eleven years and the tip had been reinstated as goodwill sometime after the job — he'd seen it for about four minutes before the line cut. Now the entry read clean: standard rate, no additional. The client was silent. Not the usual silence, which had a texture — a held breath before the next posting. This silence was closed. Kyle noted the difference, finished his coffee, and went to find his jacket.
 
 [Beat 4]
 He didn't plan to stop at the carousel park. He rode past on Leavitt and his hands slowed the bike anyway.
@@ -45,28 +47,26 @@ He looked at the palomino for a moment. Mid-arrival, going somewhere it had been
 [Beat 5]
 The relay logs went back eleven years, which was longer than Kyle had lived anywhere. He'd been reading them for two days. Not auditing — reading the shape. Every posting had arrived on the same Axiom feed. Every scope was exactly what he would have taken. Not coercion; just fit, the way a calibrated instrument fits the hand that uses it.
 
-He got up and moved to the window. Three floors down, the street was doing its morning work, a cargo-lane crawler making its pass through standing water. He stood there for a minute. Then he sat back down.
-
 He'd sent half a Φ back up the line after the Leavitt job — standard habit, the way he'd close a tab. The response had come back in the usual format: *received. filed under: firsts.*
 
-He sent a query back. *What else is in firsts?* The line sat open for four minutes. No response. No delivery receipt. The line closed clean.
-
-He put the kettle on.
+He read it four or five times. Not a typo. Not a system category. Something had put that word there with intent, which meant something had a folder called firsts, which meant something had been waiting to fill it. Eleven years of clean pay and not one word between them — and the first word was a filing note on his half-Φ closing a tab. He put the kettle on and didn't know what to do with that.
 
 [Beat 6]
 He told Pixel about the frequency the way he told her things — adjacent, while she was busy with something else. Not the carousel specifically. Just: there was something at the park on Leavitt, and his neuretics were logging it at 18.7 Hz and couldn't classify it.
 
 Pixel was at her bench with a prosthetic shoulder in the truing jig, making minute corrections to the rotation lock. She did not look up.
 
-"It classified it," she said. "Your hardware just doesn't have the name."
+"Nineteen," she said. "It's barely nineteen."
 
-She adjusted the probe. Made a note in the margin. The shoulder lock clicked twice.
+She adjusted the probe.
 
-"Seventeen to nineteen. The Psyk guys have a term for it but the Psyk guys name things to make them manageable." She checked the rotation. "What it actually is: something nearby that's alive, and the alive part of your nervous system noticed before the rest of you did. The body keeps its own log. Doesn't file it where you can read it."
+"The Psyk guys call that range the Lure's frequency. Seventeen to nineteen Hz. Below conscious hearing, above infrasound — it sits in the chest. The body reads it as something living, something nearby." She checked the lock rotation, made a note in the margin. "It doesn't tell you what's there. It just tells you: pay attention."
 
 She set the probe down and looked at him for the first time.
 
 "Where exactly is the park?" she asked.
 
 He gave her the cross-streets. She wrote them in the margin of her work notes, in the small mechanical handwriting she used for things she intended to find again, and went back to the shoulder.
+
+He left when she went back to work. In the hall, the four steps between his door and hers, he thought about the filing note — *received. filed under: firsts* — and about the small mechanical handwriting in the margin. He didn't know what to do with either of them. He went inside.
 

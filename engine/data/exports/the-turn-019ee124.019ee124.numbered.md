@@ -55,17 +55,25 @@ He looked at her.
 
 He called her by her first name.
 
-The elevator went down. The lobby had the news feed cycling — something about infrastructure investments in the outer ring, the managed warmth of the atrium through the glass partition, a desk attendant she didn't recognize eating something at her station. She walked through the lobby and through the Seam entry.
+---
 
-She thought about the list she kept. She thought about the thirty-two names. She thought about Theodora Eze's hands, making the choice before she could tell them which one. She thought about Ciro saying *add me to the list if you want.*
+The elevator went down. The lobby had the news feed cycling — infrastructure investments in the outer ring, the managed warmth of the atrium through the glass partition, a desk attendant she didn't recognize eating something at her station. She walked through the lobby without stopping, out through the Seam entry, into air that moved.
 
-She understood now why he wanted to be on it.
+She had the paper in her jacket pocket — the one with 112 on it, folded twice. She could feel the edge of the fold against her palm when she pressed it through the fabric.
 
-She unfolded the paper with 112 written on it in the Seam air. She looked at the number. She folded it again and put it back. Then she pulled out the pre-paid card and sent on the gray-zone channel: *Something's changed. Can we move up?*
+Theodora Eze's hands, making the choice before she could tell them which one. Thirty-two names on the list — people she'd calibrated, people whose files she'd seen cleaned after the fact, people whose records had the gap in them where the damage should have been visible. Ciro, standing to end the meeting the moment she came within one sentence of the real question.
 
-She waited.
+*Add me to the list if you want.*
 
-The relay beacon above her cycled through its test. The response came in forty seconds: *2PM. Same crossing.*
+She understood now what he'd meant by it. Not charm. Not a connection genuinely sought. He had wanted to be on the list because the list was the evidence — because anyone she had named and documented was someone she had admitted she knew. He had wanted to see how far she'd go.
 
-She put the card away and walked.
+She did not take the paper out. She put her hand in her pocket and felt the folded edge and did not unfold it.
+
+She pulled out the pre-paid card instead and sent on the gray-zone channel: *Something's changed. Can we move up?*
+
+She waited. A relay beacon overhead ran its test. Two women with food stall carts moved past arguing about a supply route.
+
+The response came in forty seconds: *2PM. Same crossing.*
+
+She put the card away. She had four hours and she was going to use them. She walked toward the Zone 6 transit line, one hand in her pocket, and did not stop until she was underground.
 

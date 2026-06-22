@@ -5,11 +5,9 @@ _Four hours to move the evidence out of Orison's reach. Both operating from diff
 [Beat 1]
 # The Move
 
-*Amara prepares to leave Orison Zone 6 for the Shen crossing. She attempts to document Theodora's calibration record before leaving. The system stops her mid-attempt.*
+*Amara prepares to leave Orison Zone 6 for the Shen crossing. She attempts to document Theodora's calibration record before leaving. The system stops her. She crosses. Seto is already there.*
 
 She woke at 05:40 and did not go back to sleep.
-
-The ceiling had the same gray-white quality it always had. She lay looking at it long enough to think about the three-year figure she'd noted the morning she visited Theodora. She had never thought about the ceiling before then. Now she would probably think about it every morning for the rest of the time she lived here.
 
 She dressed in the dark: field jacket, the kind tech leads wore to external facility visits. No reader case. The case would read as purposeful. She had nothing she was allowed to bring.
 
@@ -41,11 +39,33 @@ She found the third relay west on her second pass — a gray-painted junction bo
 
 She bought a cup of porridge and stood eating it, watching the foot traffic thin as the commuter flow peaked and subsided. Hot and plain. The kind of place where people ate quickly because they had somewhere to be.
 
-The bleed arrived without announcement: a specific muscle fatigue across her upper back, the kind that came from sitting low on a bicycle for too long. She had never owned a bicycle. She shifted her shoulders and it didn't ease.
+The bleed arrived without announcement: a specific muscle fatigue across her upper back, the kind that came from sitting low on a bicycle for too long. She had never owned a bicycle. She shifted her shoulders and it didn't ease. She was already looking for him before she understood why.
 
-She looked up and he was already looking at her.
-
-He was not what she had expected, which she recognized was her own failure — she had spent two weeks receiving his cognitive states without having clearly pictured the person who produced them. He was standing thirty feet away at the edge of the transit lane, carrying nothing, watching her with a patience that didn't read as waiting. He already knew she was there.
+He was thirty feet away at the edge of the transit lane, carrying nothing, watching her with a patience that didn't read as waiting. He already knew she was there.
 
 She set the cup down on the stall's counter and crossed the transit lane toward him.
+
+He was taller than she had assembled him in her mind — not by much, but enough that she recalibrated without stopping. She had been receiving his cognitive states for eight weeks and had never clearly imagined the person producing them. It was the way you built a room from someone's description and then walked into the actual one.
+
+"I know about the third log entry," he said. Not a greeting. An acknowledgment that they were already past the beginning.
+
+"It was this morning," she said.
+
+He nodded. He was watching the transit lane over her shoulder, the same spatial reading she had borrowed from him involuntarily in the lobby two weeks ago. She recognized the pattern now. "I have a route through Facility 4 Tuesday mornings," he said. "New checkpoint equipment this week. Orison reader."
+
+"Facility 4 is in the forty-one," she said.
+
+"Yes." He looked at her directly. He had a way of making full attention feel like a professional register rather than a personal one, which she suspected was a skill rather than a disposition. "I need to move the drives by end of week. I have a contact in Zone 3."
+
+She thought about the drive in his courier bag. She thought about what moving the drives meant — what it set in motion that couldn't be stopped.
+
+"All right," she said.
+
+He held out the drive — small, flat, the size of a thumb. She took it. He closed her fingers around it with two of his for a brief moment, not urgency but emphasis, and then stepped back to the transit lane.
+
+"Same channel," he said. "Forty-eight hours."
+
+She put the drive in her jacket pocket. She could feel it — not its physical weight, which was nothing, but the knowledge of its weight, the specific gravity of something that had been in a lockbox for six days and was now in her hand.
+
+She bought a second cup of porridge she didn't need and stood with it until she had her face back. Then she went back through the Zone 6 checkpoint and logged in for the rest of her shift as though she had been doing a facility pre-check in Zone 7, which was what the biometric log would say she'd done.
 

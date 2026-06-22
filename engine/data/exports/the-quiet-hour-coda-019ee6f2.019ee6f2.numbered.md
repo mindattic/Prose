@@ -39,18 +39,18 @@ There was a handwritten sign taped to the inside of the glass — visible throug
 
 He stood at the vestibule longer than he meant to.
 
-It was not unusual, in the work they did, to know someone for years without the full name. The work ran on handle and callsign and the specific weight of a person's silence on a comm line. The handle was the real thing. The full name on the paper was something else — not more or less, just different. A document of something.
+It was not unusual, in the work they did, to know someone for years without the full name. The work ran on handle and callsign and the specific weight of a person's silence on a comm line. The handle was the real thing. The full name on the paper was something else — not more or less, just different. A document of something. The rain separated into its registers as he stood there, the pitched thrum off the overhead structure and the softer percussion on the vestibule's aluminum overhang. He didn't need either sound named.
 
 He went inside.
 
 [Beat 4]
 Forty people Kyle did not know.
 
-Mrs. Okafor had a clipboard. She was moving through the front room the way a good coordinator moves through a site — not hurrying, not pausing, handing a plate here and redirecting foot traffic there, her expression carrying the specific neutrality of someone who has decided that the day will proceed correctly and is simply implementing that decision. She did not need anything from Kyle specifically. He registered this and filed it.
+Mrs. Okafor had a clipboard. She was moving through the front room the way a good coordinator moves through a site — not hurrying, not pausing, handing a plate here and redirecting foot traffic there. She caught Kyle's eye once across the room — a coordinator's inventory, checking a new arrival against her list. She found what she needed and moved on. He noticed that the hand she kept at her side was not entirely still.
 
-His neuretics registered something else first.
+His neuretics caught the frequency before he finished reading the room.
 
-The Psyk was in the corner. Jaw set, both hands flat on their thighs, seated with their back to the wall in the chair closest to the window. The Read was running open — Kyle's neuretics caught the frequency before his conscious attention reached the corner of the room. Nineteen hertz. Not heard, exactly. Felt in the back teeth. The ambient frequency of something spilling over. He noted it. He did not remark on it. The Psyk's jaw stayed set. Their hands stayed flat.
+The Psyk was in the corner. Jaw set, both hands flat on their thighs, seated with their back to the wall in the chair closest to the window. The Read was running open — nineteen hertz, felt in the back teeth, the ambient bleed of something spilling at the edges of containment. He clocked it. He moved on.
 
 War Dog was at the back wall. Not sitting. Holding a cup of something he had not drunk — Kyle could tell by the way he held it, both hands, cup level, the way a man holds a thing when the thing is not the point. War Dog had been in the work fifteen years longer than Kyle, which meant he had stood in rooms like this fifteen years longer, which meant he knew how to stand in them. Kyle crossed the room and stood next to him. There was no greeting. It was not unfriendly. It was the way men stand together at the thing they would rather not be standing in.
 
@@ -60,16 +60,20 @@ On a corkboard near the far window there were photographs. Most were printed on 
 
 "That one stays," she said, not looking at it.
 
-She released his wrist and moved on. He let his hand come back. He did not recognize the laugh. He had known Ñu for six years and he did not recognize that laugh, which meant it had lived somewhere he had not been.
+She released his wrist and moved on. He let his hand come back. He did not recognize the laugh. He had known Ñu for six years and he did not recognize it — which meant it had lived somewhere he had not been. A record of a life that had existed before the work made her into what he knew. He had not made room for that version of her. Now he never would.
 
-Mrs. Okafor materialized at his left shoulder and handed him a plate without asking. Jollof rice, two pieces of chicken, a fold of flatbread. He took it with both hands. The plate was warm. He stood there with it, next to War Dog, next to the cup War Dog had not drunk.
+Mrs. Okafor materialized at his left shoulder and handed him a plate without asking. Jollof rice, two pieces of chicken, a fold of flatbread. She did not wait to see if he took it; she was already turning to the next thing.
+
+He took it with both hands. The plate was warm. He stood there with it, next to War Dog, next to the cup War Dog had not drunk.
 
 He did not eat.
 
 [Beat 5]
-They came without announcement, through the rain.
+They came in ones and twos through the rain. Not the kind of crowd that advertises.
 
-Pixel came from across the hall, which meant she'd known. She didn't ask Kyle how that was possible — she had already known.
+Ledger came first, because Ledger was always early and never explained it. He took the far end stool, ordered once, and didn't speak for an hour, which for Ledger was grief. Stash came next, with the careful walk of someone whose load was invisible tonight — she sat beside Kyle without asking and ate in silence with the same precision she applied to everything else. A woman Kyle knew as Casing arrived with someone he didn't know, introduced neither of them, and ate two bowls with the steady efficiency of a person taking care of necessities.
+
+Pixel came from across the hall. Kyle did not ask how she'd known about Ñu — Pixel and Ñu had crossed paths on the job two years back, the Mirrorwell run. That was how Pixel had ended up with the analog barometer that still sat at the far end of her bench, hadn't moved in three years, and probably never would. She'd never explained how she got it. Ñu had never mentioned giving it. Some things between women in the work ran on channels Kyle didn't have clearance for.
 
 She sat at his shoulder and said nothing for a long time. Then: "She was good."
 
@@ -79,7 +83,7 @@ She sat at his shoulder and said nothing for a long time. Then: "She was good."
 
 He didn't answer. There wasn't an answer that was the right size.
 
-The others came after — faces from jobs Kyle had worked adjacent to, not with; people from Null's side of the ledger, names he didn't have, which was correct, which was how it worked. Forty people in a noodle counter on Halsted, eating broth in a woman's honor whose real name nobody in the room had been given, and all of them understanding exactly what that meant.
+The others came after — faces from jobs Kyle had worked adjacent to, not with; people from Ñu's side of the ledger, names he didn't have, which was correct, which was how it worked. Forty people in a noodle counter on Halsted, eating broth in a woman's honor whose real name nobody in the room had been given, and all of them understanding exactly what that meant.
 
 [Beat 6]
 Four seconds.
@@ -119,22 +123,56 @@ The Psyk didn't look at him. They kept their hands over their ears and stared at
 
 Kyle set the plate down on the curb beside him. The jollof rice had gone cold. The chicken was still on it, untouched.
 
-The hum kept running.
+He sat with the rain and the cold plate and the forty griefs running at their irregular frequencies, and he did not try to make any of it smaller. He didn't have words that were the right size for it. He sat until the hum leveled and, slowly, the Psyk's hands came down from their ears.
 
 [Beat 8]
-Mrs. Chen found him at the counter's end when the second round came around. She set a folded envelope beside his bowl without comment — heavy paper, cream, the kind with a watermark pressed into it. The letterhead at the top read *Vey's Antiquity & Stationary*, and below it an address on Dearborn he'd never had a reason to know.
+Mrs. Chen found him at the counter's end when the second round came around. She set a folded envelope beside his bowl without comment — heavy paper, cream, the kind with a watermark pressed into it. The letterhead read *Vey's Antiquity & Stationary*, and below it an address on Dearborn he'd never had a reason to know.
 
-Two words inside, no signature, in a hand that was not Mrs. Chen's.
+Two words inside, no signature, in a hand that was not Mrs. Chen's — small, formal script, the handwriting of someone who had decided long ago what kind of person they were going to be on paper and had never deviated.
 
 *Meet me.*
 
-He read it twice. He folded it once and put it in his coat. He finished his broth. The wok came back up like a bell, and the counter filled again with the sound of something ongoing, and he sat in it for a while before he stood and said goodbye to the ones he knew the names of.
+He read the two words and let them sit. Whoever had sent this had put a pen to paper and handed it to Mrs. Chen in person, which meant they had been here — to this counter, on a Thursday, at the wake. That was not information that traveled on relay channels. Someone had known where Kyle went when he had nowhere else to be. That knowledge, and the heavy paper, and the address on Dearborn, and the two words that asked for nothing except his presence — all of that had been assembled before he arrived, by someone patient enough to wait for the right room to hand it in.
+
+He folded the envelope once and put it in his coat. He finished his broth. The wok came back up like a bell, and the counter filled again with the sound of something ongoing, and he sat in it for a while before he stood and said goodbye to the ones he knew the names of.
 
 He did not know all of them.
 
-That was correct.
-
 [Beat 9]
+War Dog came outside a few minutes after Kyle.
+
+He stood for a moment on the curb without sitting, hands in his coat pockets, watching the rain come off the elevated infrastructure at its angle. Then he took out a folded paper and held it out without looking at Kyle.
+
+"She left a list," he said. "People she said were square with her. People she still owed. People who would have things to settle." A pause. "I thought you should know if your name was on it."
+
+Kyle took the paper. Ñu's handwriting was the small, compressed hand of someone who had learned to write in cramped spaces and never let herself unlearn it. Names, most of them handles, with brief annotations in a second ink: *owed (cleared)*, *not applicable*, *will settle*. The accounting she had kept in her head for years, written out once, the one time she had made it concrete.
+
+Kyle's name was near the bottom, added in the second ink, which meant it had come after the original list was complete. Two words. No annotation beyond that.
+
+*still square.*
+
+He folded the paper once and put it in his coat, in the same pocket as the envelope from Antiquity & Stationary.
+
+"She was particular about her ledger," Kyle said.
+
+"She was particular about everything," War Dog said. Not a complaint. A fact she would have found accurate and appropriate.
+
+He went back inside. Kyle sat on the curb with the plate. The jollof rice had been cold for a while now. He did not eat it.
+
+[Beat 10]
+He didn't go back inside.
+
+After a while he stood and left the plate where it was — cold jollof rice, untouched chicken, the curb. Someone would clear it, or the rain would find it eventually. He put one hand on Silence through the coat. Not drawing it. Just locating it — the weight, the geometry, the matte-black edge that kept no light and carried the history the togishi couldn't read. He held it there for a moment. Then he took his hand away.
+
+The hum was gone.
+
+He hadn't noticed when it stopped. It had been in the room all evening — the nineteen hertz, the Psyk's grief frequency, the city's baseline, all of them braided into something that didn't have a clean name — and now it was gone. The rain was just rain. Halsted was just Halsted. The block was a block that would still be here after everyone inside had finished their accounting.
+
+He walked north into the rain that carried synthesis-corridor cold and something underneath it that was simply the city being itself, the way it had been itself for two hundred years and would go on being after everyone who was grieving tonight had settled their remaining tabs.
+
+The relay was at home. He had a job to file under. He walked.
+
+[Beat 11]
 The hum had stopped before he left the vestibule. By the time he cleared the elevated infrastructure and crossed onto Fullerton, his neuretics had settled to baseline and the cold was doing its ordinary work.
 
 He was four blocks north when the notation appeared:

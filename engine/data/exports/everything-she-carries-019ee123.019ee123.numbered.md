@@ -5,11 +5,11 @@ _Amara assembles the full picture: her maps, the personal log, the suppression d
 [Beat 1]
 # Everything She Carries
 
-*Amara goes to Theodora's appointment carrying a plan to extract the scan data. She leaves carrying less than she came with.*
+*Amara goes to Theodora's appointment carrying a plan to extract the scan data. She leaves carrying less than she came with — and something that isn't hers.*
 
 She woke at 04:22 and lay still for twenty minutes before she acknowledged she wasn't going back to sleep.
 
-The ceiling of her apartment was gray-white in the predawn — a quality she had never noticed in three years of the same room. The decision she had made the night before still held. She dressed in the dark, same routine in the same order, and checked that her personal device had the strip application installed and ready. She had a plan. The plan required her to look like a person who had no plan.
+The ceiling of her apartment was gray-white in the predawn. She dressed in the dark, same routine in the same order, and checked that her personal device had the strip application installed and ready. She had a plan. The plan required her to look like a person who had no plan.
 
 ---
 
@@ -63,13 +63,13 @@ She set the device down and finished packing the reader. "Your tissue is healthy
 
 "Of course." Theodora looked at the textile. "I hope by then my hands know what they're supposed to be doing."
 
-At the door, Theodora offered more tea, which Amara declined. In the corridor, she took out her personal device and photographed the embroidery through the still-open door. Theodora didn't see. The photograph showed exactly what Theodora had described: precise, intricate, wrong in a way that took a moment to locate — like a word misspelled by one letter.
+At the door, Theodora offered more tea, which Amara declined. In the corridor, she took out her personal device and photographed the embroidery through the still-open door. Theodora didn't see. The photograph showed exactly what Theodora had described: precise, intricate, wrong in a way that took a moment to locate — like a word misspelled by one letter, the wrongness visible only when you stopped looking for what should be there and started seeing what was.
 
 She walked to the elevator and went down.
 
 ---
 
-She sat in a café in the contested buffer between Zone 5 and Zone 6 at midday. The air came honest — diesel, cooking fat, the specific particulate of a corridor where nobody had finished claiming the infrastructure. A relay beacon tested its signal through the wall. She opened the channel and sent the embroidery photo to Seto through her personal device — not through Cellvault, not logged, the first thing she had moved through an unauthorized channel since she started the anomaly archive.
+She sat in a café in the contested buffer between Zone 5 and Zone 6 at midday. Real air — diesel, cooking fat, the specific particulate of a corridor where nobody had finished claiming the infrastructure. A relay beacon tested its signal through the wall. She opened the channel and sent the embroidery photo to Seto through her personal device — not through Cellvault, not logged, the first thing she had moved through an unauthorized channel since she started the anomaly archive.
 
 *I saw what it does to someone today.* She sent the message with the photo.
 
@@ -79,9 +79,23 @@ She sat with the two compliance log entries. The first at 09:14:33, the second a
 
 Something clattered two seats away — a key fob off a table — and she looked up, then back at the device. She closed the archive.
 
-The bleed came after, without warning, arriving in the body before the mind could sort it. A pressure at the base of her spine — the specific ache of someone who had been sitting on a bicycle seat for hours. Not metaphor. Her spine did not know it was wrong. She pressed her back against the café chair and the sensation adjusted but did not leave. She sat with it and tried to determine whether it was his or hers.
+The bleed arrived without warning while she was reaching for her coffee.
 
-She could not.
+Her hands closed on the cup — and the weight was wrong. Not heavier, not lighter: wrong in a more specific way, like picking up a bag you've carried a hundred times and finding it packed differently. She registered it in the heel of both palms at once, the tendons in her fingers reading the grip before her mind caught up. She set the cup down.
 
-She ordered a second coffee she didn't need and sat with it, the way she had sat after the lunch with Ciro, and let the café have its own life without her. Outside the window, the buffer zone ran its midday shift: street vendors, relay workers on rotation change, a two-stroke engine idling at the corner. She had sent the photograph. She had two compliance log entries. The scan was not on her device. Those were different things and she was still working out what the difference meant.
+Her hands were empty. The cup was on the table.
+
+She looked at them. Both palms up, nothing in either one. The weight was still there — distributed, even, something held carefully rather than carried. The sensation of a person who has decided not to put something down.
+
+Her back went warm between the shoulder blades. The café was twenty degrees and the chair was room temperature. The warmth had no source. She pressed back against the cushion and it didn't change.
+
+She looked at the window. The window faced east over the buffer zone, relay poles and a canteen sign and the near wall of the Zone 5 infrastructure corridor. She was looking north.
+
+She made herself look at the window. She looked at the east-facing glass, at the relay poles, at the canteen sign. After a moment, her gaze went north again.
+
+Something had happened. She didn't know what. She knew only the weight in her hands and the warmth she hadn't earned and the direction her attention kept returning to — north, toward the Seam, toward Zone 7 — with the specific pull of a body that knows where it needs to go and is waiting to be told it can.
+
+She picked up the coffee. It weighed what a cup weighs.
+
+She paid and left. She did not order a second coffee. She went out into the buffer zone air — diesel and concrete and the cold — and stood for a moment on the curb with both hands at her sides, feeling the ordinary weight of them. Then she took the transit line back toward Zone 6.
 

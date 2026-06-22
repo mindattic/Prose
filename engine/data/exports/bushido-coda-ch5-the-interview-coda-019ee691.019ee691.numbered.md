@@ -15,7 +15,7 @@ Kyle looked at the sheet. The fee line was exactly what she'd said — market pl
 
 "The problem," Sable said, "is that the Lotus is the one client in this city I cannot vet. Not because I haven't tried. Because their security architecture is better than my tools, and they know it, and they know that I know it, and the offer still puts no vetting on the page as a condition." She did not reach for the sheet. "My rule is my rule for a reason."
 
-He knew the reason. The Gennaro job had been a corpo client Sable couldn't fully vet — the wrong file delivered, Vo Dinh's table the one who paid the debt, three weeks of cleanup before the chain was clean again. The rule had been the lesson.
+He knew the reason.
 
 "Your call," she said. She meant it. The sheet sat equidistant between them, waiting for a hand to pick it up or a decision to leave it.
 
@@ -32,9 +32,9 @@ Sable looked at him for a beat. "That's a careful distinction."
 She was quiet for one second. Then she stood, put on her coat, and said, not looking back, "The audition is Friday. The address is on the back."
 
 [Beat 2]
-He told Pixel where he was going the way he always told her — the logistics, the timeline, the relevant gear state — and she received it the way she received all of his logistics: by listening through the information for the actual sentence.
+He told Pixel where he was going — the logistics, the timeline, the relevant gear state — and she received it the way she received all of his logistics: by listening through the information for the actual sentence.
 
-"Lotus," she said when he was done. Somewhere under the bench a small speaker was playing a baseball game from a season that had ended before either of them was born, the announcer's voice low and unhurried, the crowd a steady tide she clearly wasn't listening to so much as keeping company with. She was reseating a lens element on the bench, both eyes on the optic. It was a prosthetic eye, the cheap mass-market kind, in for a rebuild she wasn't charging for — a courier two blocks over had taken a curb at speed and cracked the iris diaphragm, and the manufacturer wanted more for the part than the woman made in a month. "Bucktown arm."
+"Lotus," she said when he was done. Somewhere under the bench a small speaker was playing a baseball game from a season that had ended before either of them was born, the announcer's voice low and unhurried, the crowd a steady tide she clearly wasn't listening to so much as keeping company with. She was reseating a lens element on the bench, both eyes on the optic. It was a prosthetic eye, the cheap mass-market kind, in for a rebuild she wasn't charging for — a courier two blocks over had taken a curb at speed and cracked the iris diaphragm, and the manufacturer wanted more for the part than the woman made in a month. On the far end of the bench, outside the work zone, sat a small analog barometer she'd once told Kyle was broken — it hadn't moved in three years. She kept it anyway. She'd said she liked the shape of certain kinds of useless. "Bucktown arm."
 
 "Quarterly arrangement."
 
@@ -44,7 +44,7 @@ He told Pixel where he was going the way he always told her — the logistics, t
 
 She set the element down and looked at her hands, which she did when she was deciding something. "Your forearm held the last one. It'll hold this one." She went back to the optic. "Come back in a number of pieces I can count."
 
-He packed the gear. He left the door the way she always left it — open the width she always left it, which was exactly enough.
+He packed the gear. He left the door open the width she kept it.
 
 [Beat 3]
 The Bucktown basement was a cleared corridor, fifty meters, load-bearing columns running the length — the kind of space that had spent years as a live-fire range and kept the habit in its concrete. Hua stood at the far end under a lamp, hands folded, gray qipao, and did not greet him, because the contract was not started yet.
@@ -80,7 +80,7 @@ Three counts. Five seconds.
 From the far end, Hua's hands remained folded.
 
 [Beat 4]
-Mira walked the corridor toward him. Not toward — the distinction was in the way she moved, like a captain inspecting an experiment she'd already formed a hypothesis about.
+Mira walked the corridor toward him — not toward, exactly. More like a captain inspecting an experiment she'd already formed a hypothesis about.
 
 "You had the outside line on the third one," she said.
 
@@ -157,10 +157,10 @@ Kyle said nothing.
 
 "Come back when you want the answer." He bowed. "The blade is well. I have no repair for you."
 
-Kyle bowed. He left the answer in the room, the way he left most of what he hadn't decided about yet.
+Kyle bowed. He left the answer in the room.
 
 [Beat 6]
-Mira was waiting on the block above the stairs, leaning against the cherry-blossom gate the way she waited for everything — not impatient, not comfortable, just accounting for time.
+Mira was waiting on the block above the stairs, leaning against the cherry-blossom gate — not impatient, not comfortable, just accounting for time.
 
 "Well?" she asked.
 
@@ -196,4 +196,27 @@ He pulled out of the Narrows at Madison and let the city come back around him �
 He thought about asking Pixel to chase the harmonic again. Not the answer — he wasn't built for the answer yet. Just whether she could tell him more about what it was, without telling him where it came from.
 
 He rode the last blocks home.
+
+[Beat 8]
+He was three blocks from The Pivot when the relay pinged.
+
+Not a job. He had learned, over eleven years, the particular weight of a job notification — the way the routing shell formatted its subject line, the brevity that meant information and not conversation, the timestamp in the header that located the job in operational time. This was not that. The sender ID was the routing shell — the same 32-character string that had been routing his contracts since 2214 — but the message was not formatted as a contract.
+
+It was one line.
+
+*CORRIDOR AUDIT COMPLETE. THE CHOICE AT 6.2% IS LOGGED.*
+
+Kyle pulled over. The bike idled under him in the rain while he read it a second time.
+
+The entity had been routing his contracts for eleven years without ever sending a message that was not a contract, a payment confirmation, or an operational update on a live job. This was none of those things. This was something the entity had sent because it had decided to send it — a message from outside the work, about a decision that had happened inside it. The corridor. The third operative. The taser he had taken instead of the pivot. The three-day-old mesh repair on her knee.
+
+Logged. Not filed. Not archived. Logged. The word with intention in it.
+
+He had been in the work long enough to know that routing shells did not log ethical choices. They logged outcomes. They logged efficiency. They logged risk-to-completion ratios and hardware expenditure and whether the job was done or not done. The choice at 6.2% — the decision to cost himself instead of her — was not an operational variable. It was not a thing a routing shell had any reason to note.
+
+Unless the shell was not only routing.
+
+Kyle sat with the engine running and the rain coming off the elevated in its angle and the relay still open in his overlay, the one line still there, and he did not send a response. He did not know what you sent back to that.
+
+He closed the relay. He rode home.
 

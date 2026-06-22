@@ -9,7 +9,7 @@ _Ciro at his most charming. The reader is genuinely torn. He asks Amara the kind
 
 She came back through the Zone 6 checkpoint at 10:14. The biometric reader cleared her without incident. The guard from the morning was gone; his replacement was a woman who didn't look up.
 
-The drive was in her jacket pocket. She could feel its weight with each step — not its physical weight, which was negligible, but its informational weight, the six facility routes and checkpoint timing schedules that Seto had pressed into her hand at the edge of the stall counter. He had not explained what she was supposed to do with it. She had the strong impression he trusted her to work that out.
+The drive was in her jacket pocket, wrapped in the small cloth she kept for wiping calibration contacts — the only non-electronic thing in her kit bag. She kept her hand out of the pocket. It had been in the pocket for two hours and she had already established the habit of not reaching for it.
 
 Ciro was waiting for her when she reached her workstation.
 
@@ -58,4 +58,8 @@ He set his glass down. Not a sharp movement. A considered one. "That's a little 
 He walked her to the escalator. At the bottom he said: "Thank you for coming." And then: "Add me to the list, if you want."
 
 She didn't answer. He didn't wait for one.
+
+She rode the escalator down. At the bottom she passed through the lobby doors and out into the corridor and stood for a moment with the managed warmth of the arcology behind her and the Seam air just ahead. The drive was still in her pocket, the cloth wrapped around it still damp from two hours of contact. She had not said anything useful. She had learned nothing she didn't already know.
+
+She had, however, placed a question close enough to him that he had heard it. That was something.
 
