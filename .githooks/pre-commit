@@ -10,6 +10,21 @@
 # ─────────────────────────────────────────────────────────────────────────────
 set -e
 
+# ── Keep the MCP tool reference in sync ──────────────────────────────────────
+# When any MCP tool source is staged, regenerate docs/MCP_TOOLS.md from the live
+# [McpServerTool] attributes and stage it, so the doc never drifts from the code.
+# Non-fatal: a regen failure only warns — the LLM-key gate below is the real
+# blocker. Runs only when tool sources change, so normal commits are unaffected.
+if git diff --cached --name-only | grep -qE 'StreetSamurai\.Mcp/(Tools|ToolDocGenerator)'; then
+  echo "pre-commit: MCP tools changed — regenerating docs/MCP_TOOLS.md…"
+  if dotnet run --project v3/StreetSamurai.Mcp -- --export-tools docs/MCP_TOOLS.md >/dev/null 2>&1; then
+    git add docs/MCP_TOOLS.md
+    echo "pre-commit: docs/MCP_TOOLS.md refreshed and staged."
+  else
+    echo "pre-commit: WARN — MCP tool doc regen failed; committing without refresh." >&2
+  fi
+fi
+
 if [ "${SKIP_LLM_KEY_CHECK:-0}" = "1" ]; then
   echo "pre-commit: SKIP_LLM_KEY_CHECK=1 — skipping live LLM key validation."
   exit 0

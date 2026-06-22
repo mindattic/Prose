@@ -25,6 +25,19 @@ using StreetSamurai.Core.Services;
 // stays the single author; tools just give it better context.
 // ────────────────────────────────────────────────────────────────────────────
 
+// ── Doc export mode ──────────────────────────────────────────────────────────
+// `--export-tools [path]` reflects over this assembly's [McpServerTool] methods
+// and writes the generated tool reference (default docs/MCP_TOOLS.md), then exits
+// WITHOUT starting the server, the DB, or logging. Keeps the doc drift-free.
+if (args.Contains("--export-tools"))
+{
+    var idx = Array.IndexOf(args, "--export-tools");
+    var outPath = (idx + 1 < args.Length && !args[idx + 1].StartsWith("--")) ? args[idx + 1] : "docs/MCP_TOOLS.md";
+    var n = StreetSamurai.Mcp.ToolDocGenerator.Generate(outPath);
+    Console.Error.WriteLine($"[export-tools] Wrote {n} tools to {Path.GetFullPath(outPath)}");
+    return;
+}
+
 // Logs go to a file under the canon root's logs/ directory — stdout is reserved
 // for the MCP wire protocol, so anything written there breaks the transport.
 var settings = new SettingsService();
