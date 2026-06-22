@@ -40,7 +40,7 @@ public class BookRepositoryTests
             Tagline = "Some debts can't be paid in QUANTA.",
             Premise = "A freelance contractor takes a job at half rate to help a poor family.",
             ArcTarget = "Redemption refused.",
-            Protagonists = ["Kyle Ellen Corbin-Vister"],
+            Protagonists = ["Kyle Ellen Corbin"],
             ChapterIds = ["ch-1", "ch-2", "ch-3"],
             Status = "drafting",
         };
@@ -53,7 +53,7 @@ public class BookRepositoryTests
         Assert.That(loaded!.Title, Is.EqualTo("Half Rate"));
         Assert.That(loaded.Tagline, Is.EqualTo("Some debts can't be paid in QUANTA."));
         Assert.That(loaded.Protagonists, Has.Count.EqualTo(1));
-        Assert.That(loaded.Protagonists[0], Is.EqualTo("Kyle Ellen Corbin-Vister"));
+        Assert.That(loaded.Protagonists[0], Is.EqualTo("Kyle Ellen Corbin"));
         Assert.That(loaded.ChapterIds, Has.Count.EqualTo(3));
         Assert.That(loaded.ChapterIds[1], Is.EqualTo("ch-2"));
         Assert.That(loaded.StateAtEnd.OpenThreads, Has.Count.EqualTo(1));

@@ -1,4 +1,4 @@
-# Bushido Coda - Ch5: The Interview (CODA)
+# Chapter 9: The Interview
 
 _Sable brings the Lotus audition offer — she can't vet this client; Kyle's call. The corridor fight (three operatives, the hardest early cost). Mira (cell captain) names what Kyle chose in the corridor. The togishi of the Narrows examines Silence: "the loneliest piece of steel I have held." The arrangement signed. Mira plants the spine clue: plural subscribers on Kyle's file now — ask the Antiquarian._
 
@@ -21,7 +21,7 @@ He knew the reason. The Gennaro job had been a corpo client Sable couldn't fully
 
 Kyle thought about the twenty percent premium on a quarterly contract. He thought about who Hua was, and what the Lotus Syndicate built its parallel city out of, and which parts of it he could work beside and which he couldn't. He thought about the code — cut everything; cross nothing — and noticed that he had never confused the code with a map of who deserved to be cut.
 
-He picked up the sheet.
+He reached for the sheet. Sable's finger came to the far edge — not pulling it back, just the weight of a fingertip on the corner, on the last line she'd been reading. Three seconds. Her finger lifted. He picked up the sheet.
 
 "Then it's on me," he said. "Not on you. I take this, the Gennaro rule stays clean — you didn't vet a client I chose without you."
 

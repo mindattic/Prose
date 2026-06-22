@@ -1,4 +1,4 @@
-# Before Something Changes (CODA)
+# Chapter 8: Before Something Changes
 
 _Kyle carries the Northpoint knowledge to Pixel's workbench and cannot put it down._
 
@@ -9,17 +9,19 @@ The door was unlocked. It was generally unlocked when she was working, which was
 
 Not an invitation. Not a refusal. Information, offered flat, the way she offered everything else.
 
-Kyle stood in the door for another beat. The room was warm and the bench light threw a clean cone down over her hands and the array and the tools laid out in the order she always laid them, and through the cracked window the wet street eleven floors down smelled like factory rain drying off ferrocement, pear drops and machine oil, and somewhere behind that the faint lake-cold that lived in the air in this sector regardless of the month.
+Kyle stood in the door for another beat. The room was warm and the bench light threw a clean cone down over her hands and the array and the tools laid out in the order she always laid them, and through the cracked window the wet street eleven floors down smelled like factory rain drying off ferrocement, pear drops and machine oil, and somewhere behind that the faint lake-cold that lived in the air in this sector regardless of the month. On the secondary bench, the arm she was building for Oziel lay half-assembled in its jig — a full prosthetic, articulated, the motor tendons still loose and waiting. Friday work.
 
 He took off the jacket and set Silence against the wall in the usual spot, the near corner by the secondary bench where the blade wouldn't be in the way of anything. She knew it was there. She had known it was there the first time he came in and set it down without asking and she hadn't said anything then either, and now the habit had the shape of a decision even though neither of them had made one.
 
 He sat on the stool. The stool was not his. She had not told him to use it. He had been using it for four years.
 
-In the lower-left of his overlay, the counter ran: 53:41. 53:42. He had closed everything else — the job summary, the contractor invoice he'd need to file before midnight, the bio-battery read — but not this. He let his right hand rest on his knee, the chemical-burn scar on the palm turned up toward the bench light. He'd had opportunities to close the counter. He hadn't used them.
+In the lower-left of his overlay, the counter ran: 53:41. 53:42. He let his right hand rest on his knee, the chemical-burn scar on the palm turned up toward the bench light.
 
 Pixel's hands moved over the sensor array with the unhurried precision she brought to everything she calibrated. The gyrostabilizer in her right wrist kept them steady in a way that went beyond pharmacology or training, a mechanical certainty she'd installed in herself at nineteen without asking anyone's permission. The array had a rhythm — a tool lifted, set, adjusted; a reading taken, noted, filed; the particular silence of equipment being brought into tolerance.
 
 Kyle's boots sat on the floor.
+
+There was something in the room he had not put into words. He was not sure, watching her work, that he was going to.
 
 He did not have a reason to be here.
 
@@ -38,7 +40,9 @@ She didn't move. She kept working, the probe tracing the tolerance path it neede
 
 Kyle looked at the sensor array.
 
-It was a three-axis unit, civilian grade, the kind used for environmental monitoring in enclosed spaces. He could see two of the three calibration markers from where he was standing, and one of them was running close to the edge of its tolerance band.
+It was a three-axis unit, civilian grade, the kind used for environmental monitoring in enclosed spaces — infrasound range, low end of the spectrum, the frequencies that buildings and machines put out without knowing they're doing it. Seventeen to nineteen Hz, if you were in the right place. He had not asked what she was calibrating it for. He could see two of the three calibration markers from where he was standing, and one of them was running close to the edge of its tolerance band.
+
+He reached toward the running-close marker — the same reflex that had found the bag seam in the dark at Northpoint. Pixel's probe came down, horizontal across his line of reach — not touching him, just in the way. Her hand was still. He withdrew.
 
 "That one running hot?" he asked. He nodded at the marker.
 
@@ -46,17 +50,7 @@ Pixel glanced at it. "It's within spec. The ambient humidity is skewing the read
 
 She did not look up at him.
 
-The quiet came back, and it was not hostile, which was, as he had known for some time, the harder condition to stand in. Hostile quiet had a shape he understood — he'd lived inside it for years in the facility, learned to read its variations the way other people read weather. This was not that. This was the quiet of someone who had decided something and was not requiring him to decide anything in return.
-
-Pixel set a tool down on the bench surface. It landed with a small precise click.
-
-She looked at his hands.
-
-Not his face. His hands — the flat of the right one resting against the bench edge, the left open at his side, the pale chemical-burn scar on the right palm catching the bench light at the angle he was standing. She looked at them for one full beat, the duration of a breath, and then she went back to the sensor array without saying anything.
-
-She did not ask if he was all right.
-
-He knew she wasn't going to. He'd been standing in her workspace for forty minutes.
+The quiet came back, and it was not hostile, which was, as he had known for some time, the harder condition.
 
 [Beat 3]
 The calibration reached the parts-drawer stage. This happened in every calibration she ran — a point where the components needed swapping or replacing, and the drawer at the far end of the bench held the spares. Kyle had watched it happen enough times to know the sequence: probe down, drawer open, component selected, drawer shut, probe up.
@@ -69,7 +63,7 @@ She found the component she wanted and drew back, and then she reached forward a
 
 The latch caught.
 
-It was a small sound — the specific mechanical click of a well-maintained drawer finding its seat, a sound Kyle had heard a hundred times in this room, clean and final.
+It was a small sound — the specific mechanical click of a well-maintained drawer finding its seat, a sound Kyle had heard a hundred times in this room, clean and final, the kind of sound that meant a thing was where it was supposed to be.
 
 Neither of them moved after.
 
@@ -77,22 +71,26 @@ The counter in his overlay read 59:17. 59:18.
 
 Kyle opened his mouth.
 
-One sound — not a word, not yet. A breath that had started to become something else.
-
 Pixel's hands went still on the bench.
 
-She had heard it. She was not looking at him. Her hands were flat on the bench surface, the probe horizontal between her fingers, and she was still, and the stillness was not the stillness of someone who hadn't noticed. It was the stillness of someone who had noticed and was holding herself quiet on purpose, and the space between that stillness and a word was the distance of a single breath, and Kyle was looking at the wall behind her, and his overlay read 59:38, 59:39 —
+She was not looking at him. Her hands were flat on the bench surface, the probe horizontal between her fingers, and she was still, and the stillness was not the stillness of someone who hadn't noticed. It was the stillness of someone who had noticed and was holding herself quiet on purpose, and the space between that stillness and a word was the distance of a single breath, and Kyle was looking at the wall behind her, and his overlay read 59:38, 59:39 —
 
 — 1:00:00.
 
 He watched the counter roll.
 
-The numbers sat there. One hour. The job had ended at 21:47. He had ridden back on the usual route. He had walked through her door. And the counter, which was not a wound dressing and not a diagnostic flag and not anything that had an operational function, had been running for one hour, and it had now said so, and the syllable that had not become a word was still in the air between them, and then it wasn't.
+Kyle closed it. One gesture in the overlay — he had not closed it in sixty minutes and now he did, the function that had no operational reason, that he had been letting run for an hour he could not account for. The lower-left of his overlay went blank.
 
-Kyle looked at the wall behind her. Pixel's hands were still on the bench. Then she let out a breath, quiet and careful, and the calibration was still there, waiting.
+The numbers sat there. One hour. The job had ended at 21:47. He had ridden back on the usual route. He had walked through her door. And the counter, which was not a wound dressing and not a diagnostic flag and not anything that had an operational function, had been running for one hour, and it had now said so.
+
+The moment closed.
 
 [Beat 4]
-"I'll be in the armory if you need a second set of hands," Kyle said.
+Kyle said her name.
+
+She looked up from the array.
+
+"I'll be in the armory if you need a second set of hands."
 
 Pixel's hands lifted off the bench. She picked up the probe.
 
@@ -103,8 +101,6 @@ Kyle moved toward the door. He didn't reach for his jacket yet — he picked up 
 At the door he stopped. His hand found the frame — not the latch, not the handle, just the edge of the frame where the door sat in the wall. He stood there for a moment with the pneumatic seal a few inches from his palm, and the bench light was behind him and the hallway was in front of him, and he did not turn around.
 
 He left.
-
-The door closed on its seal — a small exhale of pressurized air, the mechanism doing exactly what it was built to do, no ceremony, no particular weight. It was the same sound the door made every time. He had heard it from the other side more times than from this one.
 
 In 2E, Pixel stood at the bench.
 

@@ -1,4 +1,4 @@
-# Work Order (The D-Class) (CODA)
+# Chapter 15: Work Order
 
 _Pixel runs the crew to witness WO-D-0317 complete its 30-year structural inspection shift. Kyle walks through an arc-fence zone — neuretics brown, Atlas hardware felt as foreign object. He sees Pixel working without augmented overlay. The D-class receives the termination signal and stops. "Standard rate. I touched it at standard rate."_
 
@@ -14,11 +14,13 @@ It would finish its assigned shift at 14:32:07 today.
 Pixel had found this by reading maintenance records that nobody had read since 2207. She had sent Kyle the time and the access route and nothing else, which was how she communicated when she thought the thing was worth the trouble and also thought explaining it would reduce it.
 
 [Beat 2]
-The understructure was three levels below the Clybourn lateral — the kind of space that accumulated the quiet of things that had been working correctly for a long time with no audience. The infrastructure was old-spec: pre-composite ferrocement, cable runs in physical conduit, the kind of engineering that had been overengineered once and then left alone because it held. Water ran through it in ways that were accounted for. The arc-fence ran along the north wall — a Class-1 containment barrier for the chemical treatment zone adjacent, eight meters of low-frequency electromagnetic field that fried unshielded electronics and was posted with signage that nobody ever read because nobody came down here without an overlay.
+The understructure was three levels below the Clybourn lateral — the kind of space that accumulated the quiet of things that had been working correctly for a long time with no audience. The infrastructure was old-spec: pre-composite ferrocement, cable runs in physical conduit, the kind of engineering that had been overengineered once and then left alone because it held. Water ran through it in ways that were accounted for. The arc-fence ran along the north wall — a Class-1 containment barrier for the chemical treatment zone adjacent, eight meters of low-frequency electromagnetic field that fried unshielded electronics and was posted with signage that nobody ever read because nobody came down here without an overlay. Fonu pointed at the signage as they cleared the access door. Two meters back from that line. Minimum. The field does not care what is in your skull — it just stops it. He said it the way you say something you mean.
 
 WO-D-0317 was near the south end of the corridor when they arrived, running its inspection circuit. It was the size of a large dog, low to the ground on six articulated legs, its sensor array doing what it had done every three hours for thirty years — measuring, logging, applying micro-sealant to ferrocement cracks within spec, cable-tension check at twelve anchor points. It did not react to their presence. D-class units had no behavioral protocols for human observers; humans were not part of its world model.
 
 "Fourteen minutes," Pixel said.
+
+Kyle moved toward the machine — to get a better angle on the inspection circuit, the path it was actually running. Pixel caught his arm before he'd closed three meters. 'Arc-fence boundary,' she said. 'Two meters back from its north-wall circuit. Fonu measured it.' Kyle stopped.
 
 The machine moved along the wall with the unhurried precision of something that had never been asked to hurry. Its log was thirty years of measurements that nobody had read. Its sealant patches were in the ferrocement above their heads, invisible, holding.
 

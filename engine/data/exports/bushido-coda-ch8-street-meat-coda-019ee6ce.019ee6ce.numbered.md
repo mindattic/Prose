@@ -1,4 +1,4 @@
-# Bushido Coda - Ch8: Street Meat (CODA)
+# Street Meat
 
 _Kyle recruits Renko Moss under leverage and infiltrates Northpoint body farm as a fake corpse to extract Dr. Nadia Park._
 
@@ -69,6 +69,8 @@ Moss's jaw worked. He looked at the paddles, at Kyle's chest, at the monitor. Hi
 "I should throw you in the trash," he said, "you son of a bitch."
 
 "You will," Kyle said. "Aim for the heart."
+
+Kyle's hand moved toward the chest lead, checking placement. Moss's palm came down across his forearm, flat and final. "Keep your hands down," Moss said. "I've run this a thousand times." Kyle kept his hands down.
 
 The world went white.
 

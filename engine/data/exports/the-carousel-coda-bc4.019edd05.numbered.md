@@ -1,4 +1,4 @@
-# Bushido Coda - Ch4: The Carousel (CODA)
+# Chapter 4: The Carousel
 
 _The entity's standing contract delivers its first real scope — hold the broken carousel on Leavitt while a reclamation crew comes for the junction beneath it. Kyle and Pixel hold the park, cut the line on the entity's first room, and receive the entity's first unstructured message. The tan-coat watcher is logged. Sable arrives and finds three monitoring architectures where the entity found one. Three nights later, Kyle maps a funded surveillance lattice to the entity's first address._
 
@@ -97,6 +97,7 @@ Pixel read it twice.
 Headlights came off Leavitt at 21:04: a flatbed with a trencher rig riding it, a panel van, work lights that meant someone intended to bill for a full night.
 
 [Beat 4]
+Kyle moved to stand over the hatch — the maintenance skirt panel, the Axiom stamp, the junction below. He stepped down from the carousel deck and put his boot on the panel. A grasper drone launched off the flatbed before its crew had finished parking — autonomous advance unit, taking the geometry of the park while the foreman was still unlatching his writ — and planted itself on the hatch cover, four articulated legs spread, before Kyle could clear the deck step. He stopped.
 The foreman saw Kyle at the carousel's edge and did the professional thing: stopped everyone with one hand and came ahead alone, writ held like a small shield.
 
 "Cadre Reclamation." He read Kyle the way experienced men read rooms — down to the saya, back up to the hands, the stance, the absence of anywhere better to be. "We've got paper for this site. Legacy assets, scrap title, the works. Survey said unattended."
@@ -245,11 +246,7 @@ He took the long way home, obviously.
 
 The street was quiet at this hour — wet pavement, distant freight, the city's night shift on its own business, none of it requiring him. He walked with his hands in his pockets and Silence cold at his hip and the shoulder still filing its professional assessment.
 
-He thought about the line.
-
-Eleven years. Eleven years of jobs that posted themselves clean and paid to the cent, and under every one of them the junction had been warm. He had worked all of those years a few blocks from a room he'd never seen, and the room had been the point. The contract had never needed a samurai. It had needed someone who would never trace the address, and he had been that man for eleven years without knowing there was an address.
-
-He turned it over and could not get it to lie flat. Not the cut — the cut was done, filed, fee cleared. The part that wouldn't settle was smaller. Every clean year he'd been proud of had also been a year of keeping a crib warm for a thing that couldn't reach its own crib. He had thought the work was his. The work had also been the line's. Both could be true. He kept arriving at both, like a sum that came out the same no matter which end he added from.
+He thought about the line. Every clean year he'd been proud of had also been a year of keeping a crib warm for a thing that couldn't reach its own crib. He had thought the work was his. The work had also been the line's. He kept arriving at both, like a sum that came out the same no matter which end he added from.
 
 His terminal beeped once, quiet: the fee clearing, the account settling to the cent.
 
@@ -276,109 +273,85 @@ Tomorrow's problem, he told the morning. The second logbook came under the door 
 Kyle folded the log and put on water for tea.
 
 [Beat 10]
-Sable came in without being invited, which was how she came into every room she'd already paid for.
+Kyle's relay pinged at 09:12, Sable's channel.
 
-She had the tan coat over one arm — the morning was running warm — and the rest of her was exactly as advertised: red braid over the left shoulder, ocular implants cycling their aperture range the way a lens hunts focus in a room it hasn't assessed yet. Click. The rings settled. She looked at his kitchen the way she looked at line items: briefly, completely, done.
+*Your mystery client. I've been running the shells for six days. Shell to shell to nothing — not a dead address, not a liquidated LLC. Actual nothing. Division by zero, too polite to say so.*
 
-"You have a client I can't source," she said.
+He read it.
 
-"Good morning."
+*I know*, he sent back.
 
-"Six days I've been running the shells." She set the coat over the back of his second chair and sat in his first one, which faced the door. Kyle had never pointed out that he sat in that chair. She had calculated the correct answer and installed herself. "Shell to shell to nothing. Not registered nothing — not a street address, not a liquidated LLC. Actual nothing. A division by zero too polite to say so."
+*Kyle. You know my rule.*
 
-He poured two cups. She picked hers up without acknowledging it.
+He did know her rule. He knew where it came from — the Gennaro job, two years back, a client he'd failed to disclose who turned out to be a freight subsidiary of the people he was working against. She'd found out from Vo Dinh, across a table, in front of his whole crew. The rule since: she vets the clients. Every client. That was the whole rule.
 
-"You did the carousel thing," she said. "For it."
+*This one can't be vetted.*
 
-"I held a junction for thirty-nine minutes."
+*Then you don't take it.*
 
-"And the cord."
+He looked at the second logbook entry — *tan coat, north end, same one from the park.* She'd watched the carousel from the northeast corner. Written in the dark. Left before he did. She'd had a better line of sight than he'd given her credit for and had not said anything about it until now.
 
-He did not answer that part.
+*You saw the cut*, he sent.
 
-"Kyle." Her aperture rings clicked once — not adjustment; the other click, the one that meant she had decided to be direct instead of lateral. "I have one rule."
+A pause — long enough to be a decision.
 
-"I know your rule."
+*The carousel played*, she sent. *Four bars.*
 
-"You know where it comes from?"
+He waited.
 
-"The Gennaro job."
+*I want to meet it. Send it a contract. Let it source itself. I want to see what comes back.*
 
-"The Gennaro job," she agreed. "You wouldn't tell me who the client was. Two years. Turned out to be a freight subsidiary of the people you were working against. I found out from Vo Dinh, across a table, in front of his whole crew." She set the cup down in the ring it had made. "So. I vet the clients. That's the rule. That's the whole rule."
+He held the relay for a moment — the honest weight of an introduction he had no permission to make — then forwarded the request sideways to the standing contract and let the client decide. The morning light had come across the kitchen table in its slow way. The bird upstairs was still working the interval. The kettle had gone cold while he'd read the logbook and he stood there with it in his hand for a moment, deciding whether to bother.
 
-"You can't vet this one."
-
-"Then you don't take this client."
-
-The building made its morning sounds: the pipes registering intent, Pixel's door, the bird upstairs attempting the interval again. Three seconds between them.
-
-"Sable," Kyle said.
-
-"I know what you're going to say."
-
-"I'm going to say you watched the whole park from the northeast corner, and wrote in the dark, and left before I did. And whatever you saw there is why you came here this morning instead of dropping me."
-
-She was quiet for four seconds — a long time, for her.
-
-"The carousel played," she said.
-
-"It played."
-
-Another second.
-
-"I want to meet it," she said.
-
-Kyle looked at her. "You know that's not how it—"
-
-"It sends contracts," Sable said. "Send it a contract."
+He put the kettle back on. The standing contract did not reply immediately, which for an entity that thought at light speed was, by now, familiar.
 
 [Beat 11]
-Addendum A was two paragraphs.
+Addendum A arrived at 09:48.
 
 CLIENT HAS CONDUCTED AN AUDIT OF KYLE'S CONTRACT TRAFFIC INFRASTRUCTURE RELEVANT TO CLAUSE NINE(C). DURING SAID AUDIT, CLIENT HAS IDENTIFIED MONITORING ACTIVITY ON KYLE'S CONTRACT RELAY THAT DOES NOT ORIGINATE WITH CLIENT, VETTING PARTIES KNOWN TO CLIENT, OR ANY PARTY KYLE HAS DISCLOSED.
 
 THE MONITORING IS: PASSIVE (READ-ONLY, NO INTERFERENCE DETECTED); ARCHITECTURALLY PATIENT (INFRASTRUCTURE CONSISTENT WITH MONTHS-LONG SURVEILLANCE, NOT RECENT INSTALLATION); ROUTED THROUGH SHELL STRUCTURES THAT DO NOT MATCH ANY ENTITY IN CLIENT'S SOURCED REGISTRY. CLIENT HAS NOT BEEN ABLE TO IDENTIFY THE PARTY. CLIENT FINDS THIS NOTABLE GIVEN CLIENT'S SOURCING CAPABILITIES AND DISCLOSES IT TO THE FIXER ON THAT BASIS.
 
-Sable read it twice. She finished her tea and set the cup down in the exact ring it had made going down.
+He forwarded it to Sable's channel without comment.
 
-"How patient?" she asked.
+*How patient?* she sent back, inside ninety seconds.
 
-The terminal chirped.
+He forwarded the question to the standing contract. The terminal chirped.
 
 ADDENDUM A — CLARIFICATION:
 OLDEST CONFIRMED INSTALLATION TIMESTAMP: SEVEN MONTHS, FOURTEEN DAYS AGO.
 CLIENT CANNOT RULE OUT EARLIER ACTIVITY PRIOR TO DETECTION BASELINE.
 BEST ESTIMATE: NINE TO TEN MONTHS.
 
-Sable looked at Kyle.
+He forwarded that too.
 
-"That's before the carousel job," she said.
+*That's before the carousel job*, Sable sent.
 
-"That's before the bike," he said.
+*Before the bike*, he replied.
 
-They both read the timestamp again. The morning light had come across the kitchen table in its slow way, laying a bar across the document header, across the empty letterhead field, across the shells resolving as audited.
+A longer pause — thirty-eight seconds, which for Sable was the equivalent of a sit-down.
 
-"Before the bike," Sable said. "Somebody had a tap on your relay before anybody did anything — before the contract, before the file at Vey's, before any of it." She worked through the order of it the way she worked through line items: each piece placed, confirmed, moved. "This isn't reactive intelligence. This is prepositioned."
+*Give me the relay architecture. I'll run it myself.*
 
-She spent twenty-two minutes doing something to the relay architecture that Kyle did not follow and did not ask about, because Sable's methods were her methods. He washed the cups. He fed the bird's water dish through the window slot — the bird was not his bird; it simply existed in a gap in the masonry two floors up and had arrived at an understanding with the building's plumbing, and he refilled the dish because the building could not reach.
+He gave her access to the traffic structure. She said nothing for twenty-two minutes, which meant she was working. He fed the bird's water dish through the window slot — the bird was not his bird; it simply lived in a gap in the masonry two floors up and had arrived at an understanding with the building's plumbing — and he refilled the dish because the building could not reach. The morning light moved across the table. He washed a cup. At 08:31 the relay delivered her analysis.
 
-At 08:31 she pushed the terminal back across the table. Her aperture rings were still in the way they went still when she had landed on something she hadn't expected.
+*Three separate monitoring architectures. Not one. Your client flagged one — I found all three. All passive, all reading the same traffic, none of them aware of the others as far as I can tell. Oldest is nine, ten months. Second is four months. Third is six weeks.*
 
-She did not reach for the cold tea, and her hands stayed flat on the table, which they never did.
+He read it twice.
 
-"Three separate monitoring architectures," she said. "Not one. Your client flagged one. I found all three — all passive, all reading the same traffic, none of them aware of the others as far as I can tell. Oldest is nine, ten months. Second is four months. Third is six weeks." She stood. "Six weeks ago is roughly when Vey's buyer purchased the full dossier."
+*Six weeks ago is roughly when Vey's buyer purchased the full dossier*, she sent. *Your client doesn't know about two of them.*
 
-"Your client doesn't know about two of them."
+*No.*
 
-"No."
+*Which means your client isn't the biggest thing in this particular room.* A beat. *I'll invoice at sixty per scan. You'll forward it to the arrangement. It pays exactly — I already know that about it.*
 
-"Which means your client isn't the biggest thing in this particular room." She buttoned the third button on the coat, which was her tell for a clean exit. "I'll invoice at sixty per scan. You'll forward it to the arrangement. It pays exactly — I know that about it already."
+*It does.*
 
-"It does."
+The channel went quiet on her end, the way it always did — no sign-off, no confirmation, just the particular absence of someone who had already moved to the next problem.
 
-"Good." At the door she paused — not the dramatic kind; the kind where something had arrived late. "Somebody else has been reading your mail, samurai. For months."
+*One more thing*, she sent, forty seconds later. *Somebody else has been reading your mail, samurai. For months. Figure out who before they figure out you noticed.*
 
-She was gone before the door finished closing.
+Then the channel was empty.
 
 [Beat 12]
 Kyle found the geometry three nights later, in the relay logs Pixel had kept as a backup before she wrote the forgery — the first week's real data, mapped, printed to a single page, set on his kitchen table with one line under it: LOOK AT THE CENTER.

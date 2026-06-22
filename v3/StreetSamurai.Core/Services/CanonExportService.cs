@@ -8,7 +8,7 @@ using StreetSamurai.Core.Data;
 namespace StreetSamurai.Core.Services;
 
 /// <summary>
-/// Writes raw canon JSON to the user's Downloads folder. Three scopes:
+/// Writes raw canon JSON to the configured publish directory. Three scopes:
 ///   <list type="bullet">
 ///   <item>per-entity — single &lt;Name&gt;.json (sourced from <c>Records.Json</c>)</item>
 ///   <item>per-repo — &lt;RepoName&gt;.zip of every entity in that repo</item>
@@ -24,6 +24,7 @@ public class CanonExportService
 {
     private readonly IDbContextFactory<StreetSamuraiDbContext> dbFactory;
     private readonly ExportDiscoveryService discovery;
+    private readonly SettingsService settings;
     private readonly ILogger<CanonExportService> log;
     private static readonly JsonSerializerOptions PrettyOpts = new()
     {
@@ -34,10 +35,12 @@ public class CanonExportService
     public CanonExportService(
         IDbContextFactory<StreetSamuraiDbContext> dbFactory,
         ExportDiscoveryService discovery,
+        SettingsService settings,
         ILogger<CanonExportService> log)
     {
         this.dbFactory = dbFactory;
         this.discovery = discovery;
+        this.settings = settings;
         this.log = log;
     }
 
@@ -60,14 +63,14 @@ public class CanonExportService
         return hit;
     }
 
-    /// <summary>%USERPROFILE%/Downloads — created if missing.</summary>
-    public static string DownloadsDir
+    /// <summary>Resolved publish directory for canon exports — created if missing.</summary>
+    private string PublishDir
     {
         get
         {
-            var dir = Path.Combine(
-                Environment.GetFolderPath(Environment.SpecialFolder.UserProfile),
-                "Downloads");
+            var dir = (settings.PublishExportDirectory ?? string.Empty).Trim().Trim('"', '\'').Trim();
+            if (string.IsNullOrWhiteSpace(dir))
+                dir = Environment.GetFolderPath(Environment.SpecialFolder.Desktop);
             Directory.CreateDirectory(dir);
             return dir;
         }
@@ -76,7 +79,7 @@ public class CanonExportService
     public sealed record ExportResult(string Path, int EntryCount, long Bytes);
 
     /// <summary>
-    /// Write a single &lt;Name&gt;.json to Downloads. Source is <c>Records.Json</c>
+    /// Write a single &lt;Name&gt;.json to the publish directory. Source is <c>Records.Json</c>
     /// — the canonical blob — pretty-printed for human readability.
     /// </summary>
     public async Task<ExportResult> ExportEntityAsync(Guid entityId, CancellationToken ct = default)
@@ -90,7 +93,7 @@ public class CanonExportService
             throw new InvalidOperationException($"No Record found for EntityId={entityId}.");
 
         var fileName = $"{ResolveSlug(row.Slug, row.Name)}-{DateTime.Now:yyyyMMdd-HHmmss}.json";
-        var path = Path.Combine(DownloadsDir, fileName);
+        var path = Path.Combine(PublishDir, fileName);
         var pretty = TryPrettyPrint(row.Json);
         await File.WriteAllTextAsync(path, pretty, new UTF8Encoding(false), ct);
 
@@ -147,7 +150,7 @@ public class CanonExportService
 
         var rootSlug = ResolveSlug(row.Slug, row.Name);
         var fileName = $"{rootSlug}-bundle-{DateTime.Now:yyyyMMdd-HHmmss}.zip";
-        var path = Path.Combine(DownloadsDir, fileName);
+        var path = Path.Combine(PublishDir, fileName);
         if (File.Exists(path)) File.Delete(path);
         using (var fs = File.Create(path))
         using (var zip = new ZipArchive(fs, ZipArchiveMode.Create))
@@ -184,7 +187,7 @@ public class CanonExportService
 
     /// <summary>
     /// Zip every entity in <paramref name="repoName"/> into &lt;RepoName&gt;.zip
-    /// under Downloads. Repo name match is case-insensitive against
+    /// under the publish directory. Repo name match is case-insensitive against
     /// <see cref="ExportDiscoveryService.GetAllRepos"/>.
     /// </summary>
     public Task<ExportResult> ExportRepoAsync(string repoName, CancellationToken ct = default)
@@ -201,7 +204,7 @@ public class CanonExportService
 
         var entries = matched.Value;
         var fileName = $"{Slugify(matched.Key)}-{DateTime.Now:yyyyMMdd-HHmmss}.zip";
-        var path = Path.Combine(DownloadsDir, fileName);
+        var path = Path.Combine(PublishDir, fileName);
 
         if (File.Exists(path)) File.Delete(path);
         using (var fs = File.Create(path))
@@ -219,14 +222,14 @@ public class CanonExportService
     }
 
     /// <summary>
-    /// Zip every repo into a single timestamped archive under Downloads.
+    /// Zip every repo into a single timestamped archive under the publish directory.
     /// Entries are namespaced as <c>&lt;RepoName&gt;/&lt;EntityName&gt;.json</c>.
     /// </summary>
     public Task<ExportResult> ExportAllAsync(CancellationToken ct = default)
     {
         var repos = discovery.GetAllRepos();
         var fileName = $"streetsamurai-export-{DateTime.Now:yyyyMMdd-HHmmss}.zip";
-        var path = Path.Combine(DownloadsDir, fileName);
+        var path = Path.Combine(PublishDir, fileName);
 
         int total = 0;
         if (File.Exists(path)) File.Delete(path);

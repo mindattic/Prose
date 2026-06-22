@@ -13,9 +13,10 @@ namespace StreetSamurai.Core.Services;
 /// Exports a strand as a valid Word <c>.docx</c> in the manuscript shape Kindle
 /// Direct Publishing prefers: a title page, every chapter starting on a fresh
 /// page under a centered heading, and justified, first-line-indented body text
-/// in a readable serif at 1.15 spacing. Drops the file in the user's Downloads
-/// folder. KDP ingests this directly — no headers/footers (KDP paginates) and no
-/// blank lines between paragraphs (the first-line indent does the work).
+/// in a readable serif at 1.15 spacing. Writes to the configured publish
+/// directory (Desktop fallback). KDP ingests this directly — no headers/footers
+/// (KDP paginates) and no blank lines between paragraphs (the first-line indent
+/// does the work).
 /// </summary>
 public class DocxExportService
 {
@@ -42,7 +43,7 @@ public class DocxExportService
         this.log = log;
     }
 
-    /// <summary>Render the strand to a KDP-ready .docx in Downloads; returns the path.</summary>
+    /// <summary>Render the strand to a KDP-ready .docx in the publish directory; returns the path.</summary>
     public async Task<string> ExportStrandAsync(Guid strandId, string? author = null, CancellationToken ct = default)
     {
         await using var db = await dbFactory.CreateDbContextAsync(ct);
@@ -53,11 +54,21 @@ public class DocxExportService
         await db.SaveChangesAsync(ct);
         var ordered = await workbench.GetOrderedBeatsAsync(strandId, ct);
 
-        var downloadsDir = CanonExportService.DownloadsDir;
-        Directory.CreateDirectory(downloadsDir);
-        var downloadsPath = Path.Combine(downloadsDir, $"{strand.Slug}.{strand.Id.ToString("N")[..8]}.docx");
+        var baseDir = (settings.PublishExportDirectory ?? string.Empty).Trim().Trim('"', '\'').Trim();
+        if (string.IsNullOrWhiteSpace(baseDir))
+            baseDir = Environment.GetFolderPath(Environment.SpecialFolder.Desktop);
+        var safeTitle = SanitizeTitle(strand.Title);
+        var strandDir = Path.Combine(baseDir, safeTitle);
+        Directory.CreateDirectory(strandDir);
+        foreach (var existing in Directory.EnumerateFiles(strandDir, "*.docx"))
+        {
+            try { File.Delete(existing); }
+            catch (IOException) { }
+            catch (UnauthorizedAccessException) { }
+        }
+        var exportPath = Path.Combine(strandDir, $"{safeTitle} V{strand.Version}.docx");
 
-        using (var doc = WordprocessingDocument.Create(downloadsPath, WordprocessingDocumentType.Document))
+        using (var doc = WordprocessingDocument.Create(exportPath, WordprocessingDocumentType.Document))
         {
             var main = doc.AddMainDocumentPart();
             main.Document = new DocumentFormat.OpenXml.Wordprocessing.Document();
@@ -216,33 +227,8 @@ public class DocxExportService
             main.Document.Save();
         }
 
-        log.LogInformation("Exported strand {Strand} to Downloads {Path}", strand.Slug, downloadsPath);
-
-        var baseDir = (settings.PublishExportDirectory ?? string.Empty).Trim().Trim('"', '\'').Trim();
-        if (!string.IsNullOrWhiteSpace(baseDir))
-        {
-            try
-            {
-                var safeTitle = SanitizeTitle(strand.Title);
-                var strandDir = Path.Combine(baseDir, safeTitle);
-                Directory.CreateDirectory(strandDir);
-                foreach (var existing in Directory.EnumerateFiles(strandDir, "*.docx"))
-                {
-                    try { File.Delete(existing); }
-                    catch (IOException) { }
-                    catch (UnauthorizedAccessException) { }
-                }
-                var exportPath = Path.Combine(strandDir, $"{safeTitle} V{strand.Version}.docx");
-                File.Copy(downloadsPath, exportPath, overwrite: true);
-                log.LogInformation("Also wrote publish copy {Path}", exportPath);
-                return exportPath;
-            }
-            catch (Exception ex)
-            {
-                log.LogWarning(ex, "Publish-dir copy to {Dir} failed; Downloads copy still written.", baseDir);
-            }
-        }
-        return downloadsPath;
+        log.LogInformation("Exported strand {Strand} to {Path}", strand.Slug, exportPath);
+        return exportPath;
     }
 
     // ── builders ─────────────────────────────────────────────────────────────

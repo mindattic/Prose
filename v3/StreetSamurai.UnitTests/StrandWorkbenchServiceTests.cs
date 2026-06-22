@@ -51,7 +51,7 @@ public class StrandWorkbenchServiceTests
             Id = Guid.CreateVersion7(),
             Slug = "test-" + Guid.NewGuid().ToString("N")[..8],
             Title = title,
-            Kind = "strand",
+            Kind = "story",
             Status = "draft",
             SortKey = 100,
         };
@@ -353,8 +353,8 @@ public class StrandWorkbenchServiceTests
         Strand a, b;
         await using (var db = await dbFactory.CreateDbContextAsync())
         {
-            a = new Strand { Id = Guid.CreateVersion7(), Slug = "a-" + Guid.NewGuid().ToString("N")[..6], Title = "A", Kind = "strand", Status = "draft", SortKey = 100 };
-            b = new Strand { Id = Guid.CreateVersion7(), Slug = "b-" + Guid.NewGuid().ToString("N")[..6], Title = "B", Kind = "strand", Status = "draft", SortKey = 200, ParentStrandId = a.Id };
+            a = new Strand { Id = Guid.CreateVersion7(), Slug = "a-" + Guid.NewGuid().ToString("N")[..6], Title = "A", Kind = "story",   Status = "draft", SortKey = 100 };
+            b = new Strand { Id = Guid.CreateVersion7(), Slug = "b-" + Guid.NewGuid().ToString("N")[..6], Title = "B", Kind = "chapter", Status = "draft", SortKey = 200, ParentStrandId = a.Id };
             db.Strands.AddRange(a, b);
             await db.SaveChangesAsync();
 

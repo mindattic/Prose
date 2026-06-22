@@ -73,7 +73,7 @@ function New-ChapterRecordsJson {
         number    = $Number
         title     = $Title
         synopsis  = $Synopsis
-        characters = @('Kyle Ellen Corbin-Vister')
+        characters = @('Kyle Ellen Corbin')
         status    = 'draft'
         html      = ''
         beats     = @()

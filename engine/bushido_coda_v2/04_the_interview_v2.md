@@ -22,13 +22,13 @@ voice_note: |
 
 # The Interview
 
-*Protagonist: Kyle Ellen Corbin-Vister*
+*Protagonist: Kyle Ellen Corbin*
 
 ## Part I — The Geometry
 
 The NeoCortex catalogued it at 02:14:33.
 
-Six positions. Half a second. Clean geometry. Kyle Ellen Corbin-Vister was walking home through a West Town cross-street that the CorpoNations had agreed, simultaneously and without coordinating about it, neither to maintain nor to surveil, which was the precise condition under which the cross-street had become useful to people who wanted to do specific things at 02:14 on a wet Wednesday in March, and the cross-street tonight was being used.
+Six positions. Half a second. Clean geometry. Kyle Ellen Corbin was walking home through a West Town cross-street that the CorpoNations had agreed, simultaneously and without coordinating about it, neither to maintain nor to surveil, which was the precise condition under which the cross-street had become useful to people who wanted to do specific things at 02:14 on a wet Wednesday in March, and the cross-street tonight was being used.
 
 One position elevated on the fire escape above the panel van. The rifle's barrel found the angle through the grating with a calmness that read as professional rather than confident. One behind the van itself, the electromagnetic signature of augmented limbs bleeding through the chassis like a second heartbeat. One behind the concrete planter at the eastern corner, the dead tree throwing no shadow worth using, the operator's breathing controlled in the way that took years to learn and cost more than years to maintain. One at the parking structure mouth — augmented legs, dense chest plating, the kind of layered armor that said someone had spent real money to make this person hard to stop. One flanker behind him, unaugmented, which meant either they were confident or they were bait. And one non-organic quadruped near the dumpster, pit-bull-sized, jaw emitter cycling at low draw, no BCI signal at all.
 

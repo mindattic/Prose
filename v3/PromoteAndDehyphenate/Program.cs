@@ -1,4 +1,4 @@
-using System.Diagnostics;
+﻿using System.Diagnostics;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Logging;
 using StreetSamurai.Core.Extensions;
@@ -24,7 +24,7 @@ const string LegionBin =
     @"D:\Projects\MindAttic\MindAttic.Legion\MindAttic.Legion.Cli\bin\Release\net10.0\legion.exe";
 
 // First names of characters whose surnames must not be touched. The exemption
-// is per the user's directive: Kyle Ellen Corbin-Vister, Sable, Sasha Võ, Pixel.
+// is per the user's directive: Kyle Ellen Corbin, Sable, Sasha Võ, Pixel.
 var protectedFirstNames = new HashSet<string>(StringComparer.OrdinalIgnoreCase)
 {
     "Kyle", "Sable", "Sasha", "Pixel",

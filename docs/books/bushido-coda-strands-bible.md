@@ -348,14 +348,15 @@ room for the first time.
    has. He: "some facility hardware never came with specs." True, not an answer. **(S + K)**
 
 ### Ch 10 — THE QUIET HOUR † {#SS-SPINE-BC-5-10}
-1. A tower job; a five-person crew (Echo, Stash, Ledger, and Ñu the Read; Kyle = "Shatter").
+1. A tower job; a five-person crew (Echo, Stash, Ledger, and Ñu the Read; Kyle = "Broken Glass").
 2. Ñu's function on the 31st floor: she extracts the vault from a technician by making him feel
    known; Kyle watches, disturbed. **(the forgetting/being-known theme)**
 3. Extraction: War Dog (four-armed chassis) arrives for Ñu's head — the job was bait to acquire
    the Read carrying the data. He kills Ñu at close range; "it was simply an accounting." **(loss
    #1; death has no slow motion)**
 4. Kyle fights War Dog through the dock; disarms rather than kills (one arm severed/jammed); War
-   Dog exits the window minus the weight. Kyle keeps a glass shard ("Shatter").
+   Dog exits the window minus the weight. Kyle keeps a glass shard (the handle's origin).
+   In Ch11, Pixel reduces "Broken Glass" → "K" for the first time.
 5. **Build: Ñu's funeral on-page** — the Halsted counter, her stool, Thursday; Kyle pays out of
    his own cut; grief as priced logistics. **(sacred)**
 

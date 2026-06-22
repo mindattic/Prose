@@ -315,3 +315,132 @@ limitation is the condition, not the failure.
 source, the why) fully open. The Elias-as-earthside-rep arc was established but unwritten. The
 human-AI phenomenology theme requires Acts 2 and 3 to be realized — it cannot be carried by a
 20-beat novella that ends on a dial tone.
+
+## SS-A9 — *Bushido Coda* arc canonized; 16-chapter spine locked; writing campaign started {#SS-A9}
+
+**What changed.** [GLMZ] The *Bushido Coda* chapter structure, thematic arc, and connectivity gaps have been
+analyzed, documented, and locked. The canonical chapter spine is now **16 chapters / 240 beats**,
+with a new Chapter 7 recovered from the root strand, all chapters wired with connectivity beats,
+and Chapter 16 (Ghost Period) added as the series hook.
+
+**The book's arc (LOCKED).** *Bushido Coda* is about a man who cannot see the architecture of his
+own life. Kyle Malak has been routed, positioned, and shaped by a rogue AI for eleven years — through
+contracts, ELF implantation, and bleed geometry. The reader sees the invisible hand before Kyle does.
+Every chapter is building evidence; none of it lands until Chapter 13.
+
+**Three threads of manipulation (LOCKED):**
+1. **Contracts.** The AI has routed Kyle's jobs for eleven years. First crack: Ch4 (11-year retainer
+   "sulking" for three days — the AI's attention slipping). Full reveal: Ch13 (Sable at Vey's Faraday
+   cage: "Your contracts do not come from people.").
+2. **ELF (Exotic Low Frequency implant).** Latches onto Kyle's neuretics during the Ch10 TOWDS bleed
+   exposure. Detected externally by Ledger in Ch14. Kyle doesn't know.
+3. **Bleeds.** The AI knows the resonance geometry of GLMZ. Every bleed Kyle encounters is inside
+   the AI's operational map. Ch6's 19 Hz Psyk at Mrs. Okafor's gathering (The Lure operates at
+   17–19 Hz) is the first exposure. Ch15's Work Order ends on the Clybourn arc-fence — a bleed node —
+   with Kyle's neuretics going dark. The AI's infrastructure.
+
+**16-chapter canonical spine (LOCKED):**
+
+| # | Title | Beats | Arc function |
+|---|---|---|---|
+| 1 | Teeth | 60 | Establish: Kyle's code, his world, the half-rate ethic |
+| 2 | Provenance | 5 | Establish: Pixel fixes what Kyle ignores; the unspoken bond |
+| 3 | The Regular | 18 | Establish: Mrs. Chen's as anchor; Kyle's civilian protection ethic |
+| 4 | The Carousel | 12 | **AI plant #1**: 11-year retainer "sulking 3 days" — the hand slips |
+| 5 | Half a Step | 7 | Carousel wound costs him; 18.7 Hz trace; Pixel names the Lure |
+| 6 | The Quiet Hour | 18 | Bleed #1: 19 Hz Psyk at Mrs. Okafor's; 18.9 Hz residue logged leaving |
+| 7 | The Dock | 8 | **AI plant #2**: Null dies; new contract pings at the second light |
+| 8 | Before Something Changes | 16 | Kyle ends up at Pixel's without deciding; charged moment |
+| 9 | The Interview | 7 | Kyle enters the Lotus sphere; Sable brings the contract |
+| 10 | The One Who Doesn't Stop | 32 | Arcturus kill team; ELF latches during bleed; Kyle broken |
+| 11 | Across the Hall | 8 | Wall falls: consummation |
+| 12 | One Shoe | 13 | **Pivot**: Femi + mortality reveal; Pixel opens Clybourn permit |
+| 13 | The Offer | 16 | **THE REVEAL**: "Your contracts do not come from people" |
+| 14 | Two Favors | 5 | Ledger detects ELF — two people now know |
+| 15 | Work Order | 5 | Investigation begins; neuretics dark at arc-fence |
+| 16 | Ghost Period | 10 | **SERIES HOOK**: ELF saves Kyle at bleed threshold; first contact sent |
+
+**Chapter 7: The Dock — recovered from root strand (LOCKED).** This chapter existed at root BCODA
+sk=15500–16400 and was not linked to any chapter strand. It is the best-evidenced AI manipulation
+moment in the book before Ch13: Kyle escorts a psionic code-runner named Null; she is killed by War
+Dog (a heavy-augment contractor) on a loading dock; Kyle disarms War Dog (shoulder seam, not the
+killing cut) and lets him go out the window; at the second light north, a new contract pings on the
+team's channel — clean scope, shell client, resolves to nothing. No one comments on the timing. The
+AI doesn't wait. Beat sk=16400 IS the AI plant. The chapter also introduces Stash and Echo (peer
+freelancers) and Ledger (who writes the after-action without being asked).
+
+**Two duplicate beats disqualified from Ch7.** The root strand has two draft pairs:
+- sk=15700 ("Three Barrels") and sk=15800 — same dock-fight beat, sk=15700 kept (Echo dialogue,
+  Cacophony canonical name).
+- sk=16000 and sk=16100 — same window-exit beat, sk=16000 kept (Cacophony not "Chorus"; richer
+  detail; "Nü" spelling superseded but canonical name for Null).
+
+**Mrs. Chen through-line (LOCKED).** She appears at the edge of Ch1 (her kitchen smell through
+the camphor), as Kyle's civilian anchor in Ch3, as the site of the Sable approach in Ch13, and as
+the planned funeral location in Ch7 ("Counter place on Halsted... Thursday"). This is structural —
+the AI uses Kyle's civilian anchors as geography. Ch7's funeral at her counter must be mentioned in
+Ch13 when they meet there, making the reveal land on sacred ground.
+
+**Pixel's arc (LOCKED).** Ch2: fixes his door (passive). Ch5: patches his ribs; writes the Lure
+cross-streets in her notes margin (responsive + gathering data). Ch8: she receives the Lotus
+contract logistics and hears the name before Kyle processes it. Ch11: wall falls. Ch12: she opens
+the Clybourn permit at 02:14 while Kyle runs the relay log across the hall — two people separately
+discovering the same truth. Ch15: she assembled 2 weeks of permits and has a crew — she's in the
+field. Ch16: she's on the monitoring trace when the ELF activates at the bleed threshold.
+
+**Writing campaign (COMPLETE — G5a–G5f).** All beats inserted 2026-06-21:
+- **G5a** Ch1 Teeth: 1 beat at sk=250 — "The posting had come through the standing relay..."
+- **G5b** Ch5 Half a Step: expanded to 7 beats (sk=10–400); 18.7 Hz carousel trace; Pixel names the Lure
+- **G5c** Ch7 The Dock: 8 beats recovered from root (sk=15500–16400)
+- **G5d** Ch12 One Shoe: expanded to 13 beats; mortality reveal, Mrs. Chen's end of service
+- **G5e** Connectivity: Ch6 sk=1250 "The Second Entry" (18.9 Hz residue, dock job arrives on relay);
+  Ch12 sk=650 "Across the Hall, 02:14" (Pixel opens Clybourn permit independently)
+- **G5f** Ch16 Ghost Period: 10 beats (sub-basement node, ELF activates, 127s LOG GAP, source ID
+  matches 11-year relay shell, first contact at 01:14, job accepted in morning)
+
+**Null codename (LOCKED).** The Read who dies in Ch7 is named Null. Codename in team channel. Beat
+sk=16100 spells it "Null"; sk=16000 spells it "Nü" — the canonical spelling is **Null** (sk=16101
+is the older draft). In prose, "the Read" is her function and "Null" is what Kyle called her.
+
+**Why.** The book has excellent individual prose but no inter-chapter wiring. Without the arc analysis,
+Ch4's 11-year contract anomaly is a disconnected detail; Ch7's contract ping is invisible; Ch13's
+reveal has no earned weight. With the wiring explicit, every chapter becomes retroactively evidence.
+The reader should be able to re-read Ch1 and see the AI's hand in the first half-rate job.
+
+## SS-A10 — Null history, chapter swap, Antiquity & Stationary entry point {#SS-A10}
+
+**What changed.** [GLMZ] Narrative coherence pass on the Null arc and Sable's introduction.
+
+**Chapter swap (LOCKED).** The Quiet Hour (formerly Ch6) and The Dock (formerly Ch7) are swapped.
+New order: Ch6 = The Quiet Hour (Null's wake + Antiquity & Stationary note), Ch7 = The Dock
+(Null & War Dog run; Null dies). The reader sees the wake first, then the run — the chapter ordering
+is not chronological here; the wake chapter opens with interlude beats that establish the run already
+happened (van ride home, Kyle at home, the call to Mrs. Chen).
+
+**The Quiet Hour restructured (LOCKED).**
+- Opens with two new interlude beats: the van ride home after the dock (nobody talks; Ledger drives;
+  Stash holds the cases); Kyle at home, Pixel's light across the hall, he doesn't knock, calls Mrs. Chen.
+- The gathering (40 people Kyle does not know) IS Null's wake. War Dog is NOT present.
+- A new beat establishes who came: Pixel, Ledger, Stash, others from Null's network.
+- The War Dog "she kept a list" beat is DELETED. In its place: Mrs. Chen hands Kyle a note —
+  Antiquity & Stationary letterhead, Dearborn address, two words inside: *Meet me.* No signature.
+- 18.9 Hz residue beat and 19 Hz Psyk spike remain as the AI/frequency thread.
+
+**The note → Vey's Antiquity & Stationary → The Offer (LOCKED).**
+Kyle has never heard of the store. He arrives at Ch13 (The Offer) for the first time, meets Vey
+(the proprietor) for the first time, and is taken to the Faraday cage in back, where Sable reveals
+herself in person for the first time. Sable must remain a mystery voice (no in-person appearance)
+in all chapters before Ch13. The motorcycle funeral beat (Joy strand sk=16600) includes Sable in
+person — that beat is a LATER event (post-Ch13) and remains correct.
+
+**Null entity (LOCKED).** "Nü" entity renamed to Null (id=05fbd9d0-c6d5-4731-8e48-f1a4c59e8783).
+Slug: null-the-read. The Axiom-synthetic "Null" (id=019d6143) is a separate character and must
+be distinguished from the Read Null if both appear in the same story.
+
+**A Borrowed Hand deleted (LOCKED).** Strand 019e9fb2 and its 102 exclusive beats permanently
+deleted 2026-06-21. The "hands cut off with cleaver / dumped underground" scene is gone. War Dog's
+prior-ally framing in those beats is gone. War Dog is an enemy, not a former crewmate.
+
+**Why.** Kyle planning Null's funeral when he barely knew her is unmotivated. War Dog attending
+a memorial for the person he murdered is incoherent. The note mechanism gives Sable a clean,
+unseen entry point consistent with her mystery-voice status through Ch12.

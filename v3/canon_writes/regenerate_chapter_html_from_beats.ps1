@@ -1,4 +1,4 @@
-# Regenerates the chapter-level Html column for A Restless Mind and Inside the
+﻿# Regenerates the chapter-level Html column for A Restless Mind and Inside the
 # Cage by assembling each chapter's beats in Id order with section breaks.
 # Required because the old A Restless Mind Html still describes the cage scene
 # that has now moved to Inside the Cage, and Inside the Cage itself has empty
@@ -24,7 +24,7 @@ foreach ($ch in $chapters) {
     $sb = New-Object System.Text.StringBuilder
     [void]$sb.AppendLine('# ' + $ch.Title)
     [void]$sb.AppendLine('')
-    [void]$sb.AppendLine('*Protagonist: Kyle Ellen Corbin-Vister*')
+    [void]$sb.AppendLine('*Protagonist: Kyle Ellen Corbin*')
     [void]$sb.AppendLine('')
     $first = $true
     while ($reader.Read()) {

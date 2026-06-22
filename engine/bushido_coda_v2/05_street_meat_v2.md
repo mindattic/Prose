@@ -26,7 +26,7 @@ voice_note: |
 
 # Street Meat
 
-*Protagonist: Kyle Ellen Corbin-Vister*
+*Protagonist: Kyle Ellen Corbin*
 
 ## Act 1 — The Contract
 
@@ -52,7 +52,7 @@ Not because she stood. Not because she gestured. Because the folder was closed.
 
 Kyle read the closing the way he would have read a draw.
 
-"Sit, Corbin-Vister. The chair is for the contract. You are not the contract yet."
+"Sit, Corbin. The chair is for the contract. You are not the contract yet."
 
 He sat. The chair across from her was the one for visitors. The bolted chair against the far wall was the one she had not said *yet* about. She had said *not yet.* The distinction was tactical. He filed it.
 

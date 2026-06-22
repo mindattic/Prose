@@ -107,6 +107,28 @@ updated: 2026-06-15
   *(inline facet tags verified 0; the per-strand LLM review/harvest pass is the residual — Fv.)*
 - **SS-US-G4 ⬜** As the author, the 100-story outline is developed past the 8-chapter spine
   (`bushido_coda_100_stories_outline.md`; stories 9+ are sketches).
+- **SS-US-G5 🟡** As the author, *Bushido Coda* is a complete, arc-coherent flagship novel (16
+  chapters, 240 beats, ~90+ mean review score) in which every chapter puts in work toward the
+  AI-manipulation reveal in Ch13, and Ch16 closes with Kyle making first contact with the rogue AI.
+  The reader sees the invisible hand; Kyle doesn't. See [SS-A9](AMENDMENTS.md#SS-A9).
+  *Acceptance: all 16 chapters reviewed at ≥82% standalone; cumulative ≥85%; each chapter can
+  be described in one sentence that references what it does for the arc, not just what happens in it.*
+  - **G5a ✅** Ch1 Teeth: AI-contract seed beat inserted at sk=250; client field resolves to
+    shell, rate arrived before he named it. *(inserted 2026-06-21)*
+  - **G5b ✅** Ch5 Half a Step: expanded 2 → 7 beats (sk=10–400); carousel/18.7 Hz trace; Pixel
+    identifies the Lure's frequency; cross-streets written in her notes margin. *(2026-06-21)*
+  - **G5c ✅** Ch7 The Dock: 8 beats recovered from root strand (sk=15500–16400); War Dog / Null;
+    contract pings at second light north. *(linked 2026-06-21)*
+  - **G5d ✅** Ch12 One Shoe: expanded 4 → 13 beats; mortality reveal, Mrs. Chen's end of service,
+    Kyle runs 11-year contract log at terminal. *(2026-06-21)*
+  - **G5e ✅** Connectivity beats: Ch6 sk=1250 "The Second Entry" (18.9 Hz trace after gathering,
+    dock job arrives on relay); Ch12 sk=650 "Across the Hall, 02:14" (Pixel opens Clybourn permit,
+    stops waiting). *(2026-06-21)*
+  - **G5f ✅** Ch16 Ghost Period: strand created; 10 beats written (return to node, ELF activates
+    at Class-2 bleed threshold, 127s LOG GAP, source ID matches 11-year relay shell, first contact
+    sent at 01:14, job accepted in morning). *(2026-06-21)*
+  - **G5g ⬜** Full 16-chapter review campaign: each chapter ≥82% standalone; cumulative ≥85%.
+    Use: `dotnet run --project v3/StreetSamurai.Blazor -- --review-strand --slug <slug> --readers 20`
 
 ## Epic U — Multi-Universe support
 

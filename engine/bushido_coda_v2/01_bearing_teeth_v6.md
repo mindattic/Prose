@@ -17,7 +17,7 @@ voice_note: |
 
 # Bearing Teeth
 
-*Protagonist: Kyle Ellen Corbin-Vister*
+*Protagonist: Kyle Ellen Corbin*
 
 ## Part I — Teeth
 
@@ -297,7 +297,7 @@ The four seconds became five.
 
 Her hand closed over the chip the way her daughter's hand had closed over the teeth — not refusing the gift, accepting that the gift was the form the man in front of her needed the gift to take.
 
-She bowed. A small bow. The bow of a vendor accepting a customer's price. The kind of bow she would give him every night, three hundred nights a year, for the next four years and longer. The CorpoNation models of customer-vendor relationship did not have a category for the bow. The CorpoNation models had categories for *transaction frequency* and *lifetime value* and *churn risk.* The bow was something the CorpoNation models could not see, and what the CorpoNation models could not see was, in this small specific way, the thing the CorpoNations could not own, and the thing the CorpoNations could not own was the thing Chen Wei-Lin and Kyle Ellen Corbin-Vister were going to spend the next four years quietly accumulating between them at standard rate.
+She bowed. A small bow. The bow of a vendor accepting a customer's price. The kind of bow she would give him every night, three hundred nights a year, for the next four years and longer. The CorpoNation models of customer-vendor relationship did not have a category for the bow. The CorpoNation models had categories for *transaction frequency* and *lifetime value* and *churn risk.* The bow was something the CorpoNation models could not see, and what the CorpoNation models could not see was, in this small specific way, the thing the CorpoNations could not own, and the thing the CorpoNations could not own was the thing Chen Wei-Lin and Kyle Ellen Corbin were going to spend the next four years quietly accumulating between them at standard rate.
 
 He stood. He bowed back, smaller still — the bow of a man who had just successfully refused a kindness larger than he could carry.
 

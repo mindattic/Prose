@@ -102,7 +102,7 @@ public class RealDataTests
     public void CharacterRepository_KyleExists()
     {
         var repo = new CharacterRepository(paths);
-        var kyle = repo.GetByName("Kyle Ellen Corbin-Vister");
+        var kyle = repo.GetByName("Kyle Ellen Corbin");
         Assert.That(kyle, Is.Not.Null, "Kyle should exist in the character database");
         Assert.That(kyle!.Description, Is.Not.Empty, "Kyle should have a description");
     }

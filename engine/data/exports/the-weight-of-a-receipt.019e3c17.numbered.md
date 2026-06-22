@@ -1,6 +1,6 @@
-# The Weight of a Receipt
+﻿# The Weight of a Receipt
 
-_A welded-container community on Tier 4 North hires Kyle Corbin-Vister not to fight but to read: the Tessera Group's Heritage Stewardship Agreement would shield their home from an Arcturus demolition order while quietly buying their stories, owning the framing of their own past, and leaving Arcturus free to evict them anyway. Kyle finds the three buried clauses, walks into the rep's Tier 9 office, and wins two amendments with contract language and the threat of information. The katana on his back never leaves its sheath; the only thing he draws is paper._
+_A welded-container community on Tier 4 North hires Kyle Corbin not to fight but to read: the Tessera Group's Heritage Stewardship Agreement would shield their home from an Arcturus demolition order while quietly buying their stories, owning the framing of their own past, and leaving Arcturus free to evict them anyway. Kyle finds the three buried clauses, walks into the rep's Tier 9 office, and wins two amendments with contract language and the threat of information. The katana on his back never leaves its sheath; the only thing he draws is paper._
 
 [Beat 1]
 Mrs. Chen Wei-Lin's stall smelled like star anise and long-cooked pork, and Kyle sat on the third stool from the left — the one with the wobble — and ate slow.
@@ -16,7 +16,7 @@ He heard it before he saw it — a pedal-assist Carrion Logistics LLC courier fr
 
 She threaded between two Pinnacle Civil maintenance drones and braked hard on the grease-stained tiles outside Mrs. Chen's awning. The katana on Kyle's back shifted with the pivot he made on his stool — a small adjustment, automatic — and the kid's eyes went to it the way every kid's eyes went to it: a full second of frank assessment, then the professional redirect.
 
-"Kyle Corbin-Vister?"
+"Kyle Corbin?"
 
 Kyle set his chopsticks across the bowl.
 
@@ -26,7 +26,7 @@ She reached into a canvas bag strapped across her chest and produced a folded sq
 
 He took the paper. The handwriting was careful, each letter made with the deliberate spacing of someone who had practiced it, who thought the person reading deserved the effort.
 
-*To whoever Mr. Corbin-Vister is — my name is Miriam. I was told you are fair. We have a problem with a company called Tessera and I do not know if I am being helped or eaten. The congregation at the container complex on Tier 4 North, berth 9-through-14. Tonight if you can. — Ayushmaan Horváth sends his regards and says you will understand.*
+*To whoever Mr. Corbin is — my name is Miriam. I was told you are fair. We have a problem with a company called Tessera and I do not know if I am being helped or eaten. The congregation at the container complex on Tier 4 North, berth 9-through-14. Tonight if you can. — Ayushmaan Horváth sends his regards and says you will understand.*
 
 Kyle read it twice. The array warmed a degree, not the threat-heat it ran when a room was about to get bad, but something adjacent to it — recognition.
 
@@ -79,7 +79,7 @@ The front entrance was a container door left hinged and decorated with a mural: 
 
 A woman stood in the doorway. Late fifties, small, grey-streaked hair pulled back. She wore a Helix Thermal wool-blend coat, the budget line, repaired at the elbow with a thread that didn't match.
 
-"Mr. Corbin-Vister," she said.
+"Mr. Corbin," she said.
 
 "Miriam."
 
@@ -210,7 +210,7 @@ Kyle noted that.
 
 The array warmed: she had augmentation, a low-grade Helix social-calibration implant, the kind that read microexpressions and fed prompts to the visual field. A sales tool. A negotiation tool. She'd know from the moment he sat down that he was reading her. She would not know what he was reading with.
 
-"Mr. Corbin-Vister," she said, without looking surprised. Either someone had told her to expect him, or she had trained the surprise out entirely. He filed both possibilities and sat.
+"Mr. Corbin," she said, without looking surprised. Either someone had told her to expect him, or she had trained the surprise out entirely. He filed both possibilities and sat.
 
 "Inoue."
 
@@ -253,7 +253,7 @@ The door left unlocked at the back of the contract. He had clocked it in the com
 
 She closed the contract.
 
-"Mr. Corbin-Vister. The Pivot. Tier 8 South." She said it the way you confirm an address — not to inform, but to put on the table that she'd done her homework on him too. "I know what you are. I know what you can and can't make stick. In a year there's a new mechanism and you're not in the room for it."
+"Mr. Corbin. The Pivot. Tier 8 South." She said it the way you confirm an address — not to inform, but to put on the table that she'd done her homework on him too. "I know what you are. I know what you can and can't make stick. In a year there's a new mechanism and you're not in the room for it."
 
 His array ran its read: the Helix implant was prompting her to hold eye contact. She held it. For a moment the office was just the hum of the building's air handling and the weight of forty-one pages he could not fix. She was right, and being right was her whole position — every door in this room belonged to her, and she had just shown him the hinges. The array offered him nothing. It read rooms; it did not furnish exits.
 
@@ -314,7 +314,7 @@ Miriam nodded slowly, the same quality of nod as Daud's earlier — a confirmati
 
 She waited for the rest of the number. It didn't come.
 
-"Mr. Corbin-Vister. What you read tonight was worth—"
+"Mr. Corbin. What you read tonight was worth—"
 
 "The work gets paid for," Kyle said. "All of it. Every time. That's the whole rule. Tonight it's twenty."
 

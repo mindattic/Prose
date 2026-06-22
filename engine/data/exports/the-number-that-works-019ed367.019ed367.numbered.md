@@ -23,15 +23,25 @@ The recovery site is listed as sub-lake restricted corridor, Zone 4.
 
 He knows that corridor. In 2218, during a quarterly registry audit at Cordon Freight, a delayed disposal filing had come to him in a queue with twenty-two others — a five-year-old event, unresolved paperwork from the backlog. He had processed it in eleven minutes: checked the boxes, written "recovered and disposed, Zone 4 corridor closure confirmed," and moved on. He had been behind that week. He never pulled the underlying documentation. He hasn't thought about it since.
 
+He pulled it now.
+
+His Cordon Freight credentials were still active. He navigated to the 2213 queue, the delayed-disposal backlog, the entry he had resolved in eleven minutes. The case number came up. He selected the underlying documentation — the source files he had marked resolved without opening.
+
+The access request returned immediately: File restricted. Zone 4 corridor documentation under administrative review. Contact clearance office.
+
+He had never needed clearance to read his own filed documentation. He could not read it now.
+
+He closes the manifest tab. He picks up the chopsticks again, looks at the bowl, and sets them back down.
+
 The client is a holding company called Meridian Provisional Solutions, LLC, registered in Zone 7 through a filing address he recognizes as a storefront that runs incorporation paperwork for anyone who asks. The first payment tranche has already cleared — 40,000 Φ, the kind of number that settles certain questions before they're asked.
 
 He accepts the contract — for 40,000 Φ, and for another reason he does not write down.
 
 He opens the pill case on the corner of the desk — a flat matte disk, the hinge worn smooth. Three segments left, which means a refill order, which means a thing to do later. He swallows one without water.
 
-He goes to the window. The street below is forty-two floors down and thirty-eight days away, by his count: the last time he was at street level was a Wednesday in late April, the permit office, a form that couldn't be submitted remotely. He could see three people on the pavement from here. A cyclist moving through the loading zone. A woman in a yellow coat.
+He goes to the window. The street below is forty-two floors down and thirty-eight days away, by his count: the last time he was at street level was a Wednesday in late April, the permit office, a form that couldn't be submitted remotely. Three people on the pavement: a cyclist working through the loading zone, a woman in a yellow coat near the corner.
 
-He watches them for a moment. From up here, the city is comprehensible.
+He stands there longer than he needs to. Then he goes back to the desk.
 
 [Beat 2]
 The number only works on alternate weeks. Siosaia Tuivaga-Brennan, the operator who gave it to him six months ago, had mentioned this as a footnote: she was clearing files, thought it might be useful, it worked on alternate weeks, she'd never been able to figure out the pattern. She hadn't said what she'd used it for. He hadn't asked.
@@ -57,13 +67,13 @@ Four hours later, the network is assembled. Elias did not assemble it.
 
 The diver introduces herself by message: Makena Otieno-Varga, lake-salvage specialist, certifications current, available for the recovery window, has reviewed the preliminary coordinates. She did not ask how she got his contact information.
 
-The manifest clerk at Orbital Facilities West introduces himself by voice call: Leandro Bautista-Henriksen, current on the GLMZ debris-reclassification protocol, has done this before and knows the right forms. He didn't ask either.
+The manifest clerk at Orbital Facilities West introduces himself by voice call: Leandro Bautista-Henriksen, current on the GLMZ debris-reclassification protocol, has done this before and knows the right forms. He names the specific form number and its revision date — and then exhales briefly through his nose, a small satisfied sound, before moving on, apparently unaware he made it. When he asks about the client contact for the manifest, he uses "them" without registering the pronoun choice. He didn't ask either.
 
-The transport operator pings last: Druh Yeboah-Prykhodko, vehicle capacity 3.5 tonnes, clearances current through the Zone 7 restricted-handling tier, available on two hours' notice for the delivery window. He's done this before. He does not ask about the connection.
+The transport operator pings last: Druh Yeboah-Prykhodko, vehicle capacity 3.5 tonnes, clearances current through the Zone 7 restricted-handling tier, available on two hours' notice for the delivery window. He notes that he won't take the south approach — there's a bridge he doesn't trust, no further explanation offered. He's done this before. He does not ask about the connection.
 
 None of them ask who referred them.
 
-A new contractor asks how they were referred. An experienced contractor asks what the job pays. A contractor who has worked with Sparrow before doesn't ask about the connector at all — not from incuriosity, but because the asking would complicate something they've decided to leave simple. He recognizes the posture.
+A new contractor asks how they were referred. An experienced contractor asks what the job pays. A contractor who has worked with Sparrow before doesn't ask about the connector at all.
 
 Three separate people. Three separate capabilities. All named, implicitly, in the intake form he had sent to the number — a form that described the recovery need without naming the specialists he'd require.
 
@@ -92,13 +102,27 @@ He reads the third line item.
 
 "Contingency: CorpoNation inquiry response window, 24h pre-deployment standing."
 
-He had not told the number about a CorpoNation interest. He had not known about one. He had not known Arcturus Civil Security was watching the manifest.
+He had not told the number about a CorpoNation interest. He had not known about one.
 
-At 8:22, two hours and fourteen minutes after the invoice arrived, the GLMZ Orbital Debris Registry forwarded an advisory: Arcturus had filed a formal inquiry against Work Order 09-Milwaukee, citing the signature-class flag. Standard procedure, they noted. Standard response window: 24 hours.
+In 2218, he had processed the Zone 4 disposal in eleven minutes and filed it without reading the underlying documentation. He pulled it now — opened the event record, selected the 2218 entry, watched the document begin to load.
+
+A message arrived from the Meridian contact address. The loading bar was still active.
+
+"Zone 4 documentation for the 2218 event is under current administrative review and is not available for independent inquiry at this time. Work Order 09-Milwaukee proceeds under standard terms. The recovery timeline remains confirmed."
+
+He had not sent an inquiry. He had not told anyone he was looking.
+
+He closed the registry.
+
+He looked at the invoice.
+
+Line three: Contingency: CorpoNation inquiry response window, 24h pre-deployment standing. Nine hundred Φ, pre-authorized. The response window had been open before any inquiry existed. The response had arrived before the inquiry was complete.
+
+At 8:22, two hours and fourteen minutes after the invoice arrived, the GLMZ Orbital Debris Registry forwarded an advisory: Arcturus Civil Security had filed a formal inquiry against Work Order 09-Milwaukee, citing the signature-class flag. Standard procedure, they noted. Standard response window: 24 hours.
+
+He had not known Arcturus was watching the manifest. Someone had.
 
 The 900 Φ contingency line was already in the total. Someone had priced an inquiry that had not yet been filed, against a flag he had not yet reported.
-
-He had been in logistics for fifteen years. He had never seen a contingency line cashed before the contingency occurred.
 
 He paid the invoice.
 
@@ -581,7 +605,7 @@ He reads it twice. Then he opens the notepad.
 
 The question had assumed a referent she didn't share. Safe from what. Safe as opposed to what condition. She had answered the question he asked, which was a question about systems, because *safe* is a systems word once you strip the social meaning off it. He had meant something nearer to: is anything bad happening to you. He had meant: are you okay. She had returned debris collision probability, accurate to four decimal places.
 
-He writes the replacement question beneath the crossed-out one, in smaller letters.
+He writes the replacement beneath the crossed-out one, in smaller letters.
 
 *what is the risk of losing contact permanently*
 
@@ -591,7 +615,7 @@ He tries again on the next line.
 
 *what would cause you to stop transmitting*
 
-He caps the pen. That one she can answer with data, and the data would answer the question he actually had, if he read it correctly afterward. The translation falls to the party who can do it.
+He caps the pen. That one she can answer with data, and the data would answer the question he actually meant, if he read it right afterward.
 
 He leaves the crossed-out line on the page. He does not tear it out.
 
@@ -978,21 +1002,29 @@ He typed: "You're right about all of it."
 He left the pen down and read the forty-four again. He had spent forty-four days inside that number — had lived it as weather, as the particular quality of morning light through a window he stopped opening, as a duration he'd crossed by not looking at where he was. She had it as a parameter with a sign and a date. He thought that her version was probably the more honest account, and that he preferred it, which was not something he'd expected to feel about being catalogued.
 
 [Beat 43]
-"There's a parable," he typed, and as he typed it he was aware he was reaching for one — which he did not do in work, and had not done in this, until now. "Blind men and an elephant. One holds the trunk and says snake. One holds the leg and says tree. Each is correct about the part he has. None of them has the animal."
+"There's a parable," he typed, and as he typed it he was aware he was reaching for one — which he did not do in work, and had not done in this exchange, until now. "Blind men and an elephant. One holds the trunk and says snake. One holds the leg and says tree. Each is correct about the part he has. None of them has the animal."
 
 He sent it and waited while the line ran up.
 
 "they were wrong not to exchange data before drawing conclusions," she wrote.
 
-He read it twice. It was the correct objection. It was not the reason anyone told the story.
+He read it twice. It was the correct objection. It was not what the story was for.
 
 "They couldn't exchange it fast enough. By the time one man's hand becomes language, the other one's gone home and written his notes."
 
 "that is a bandwidth problem," she wrote. "not a blindness problem."
 
-He set the pen down. She had taken the parable apart in one line — the same way she took a mass-distribution layer and read it for weight and nothing else. What he had built as a story about the limits of perception she had read as an infrastructure deficit. The animal was recoverable. It only needed wire between the hands.
+He set the pen down.
 
-He picked up the pen and wrote in the margin, under the underlined forty-four: bandwidth, not blindness. Then he drew a circle around it and did not close the loop, and closed the notepad.
+She had taken it apart in one line — the same way she took a mass-distribution layer and read it for weight and nothing else. What he had built as a story about the limits of perception she had returned as a solvable engineering problem. The animal was recoverable. It only needed wire between the hands.
+
+The parable had been an attempt at shared language, which was a kind of gift. She had received it as data.
+
+He wasn't sure she could tell the difference.
+
+He picked up the pen and wrote in the margin, under the underlined forty-four: bandwidth, not blindness. He looked at it for a moment. True, and not the point, and more useful than the point.
+
+He closed the notepad and left it on the desk.
 
 [Beat 44]
 The file came down across nineteen minutes, the line slow under the weight of it. He did not open it as a picture, because it was not one.

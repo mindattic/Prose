@@ -24,7 +24,7 @@ voice_note: |
 
 # The Rogue AI
 
-*Protagonist: Kyle Ellen Corbin-Vister*
+*Protagonist: Kyle Ellen Corbin*
 
 ## Part I — Three Nights
 

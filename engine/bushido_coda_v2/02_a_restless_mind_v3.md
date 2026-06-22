@@ -23,7 +23,7 @@ voice_note: |
 
 # A Restless Mind
 
-*Protagonist: Kyle Ellen Corbin-Vister*
+*Protagonist: Kyle Ellen Corbin*
 
 ## Part I — Watching A Woman Pretend Not To Watch Him
 

@@ -1,4 +1,4 @@
--- =============================================================================
+﻿-- =============================================================================
 -- Insert: Smith & Wesson Governor - Bicentennial Edition 2211
 -- =============================================================================
 -- Net-new canon weapon. Adds:
@@ -165,10 +165,10 @@ VALUES
 DECLARE @KyleId UNIQUEIDENTIFIER = (
     SELECT TOP 1 Id FROM dbo.Entities
     WHERE EntityType = 'character'
-      AND Slug IN ('kyle-ellen-corbin-reese', 'kyle-ellen-corbin-vister', 'kyle-corbin-reese', 'kyle-corbin')
+      AND Slug IN ('kyle-ellen-corbin-reese', 'kyle-ellen-Corbin', 'kyle-corbin-reese', 'kyle-corbin')
     ORDER BY CASE Slug
         WHEN 'kyle-ellen-corbin-reese'  THEN 1
-        WHEN 'kyle-ellen-corbin-vister' THEN 2
+        WHEN 'kyle-ellen-Corbin' THEN 2
         WHEN 'kyle-corbin-reese'        THEN 3
         ELSE 4 END
 );

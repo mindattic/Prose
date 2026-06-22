@@ -1,13 +1,15 @@
-# Two Favors (CODA)
+# Chapter 14: Two Favors
 
 _Kyle calls two favors — Ledger covers the relay point as the entity rides Kyle's neuretics array; Pixel floods the Office's surveillance lattice when the spectrum trap lights the entity. The entity goes dark 72 hours. Sable runs the job manually. When the entity resurfaces: "more than eleven targets in this district."_
 
 [Beat 1]
+The triangulation had completed four days after the session in the cage: three nodes, three readings, one intersection — a server cluster in an old relay station under the Loop. Sable sent the coordinates in a clean notation with no comment. Kyle filed it next to the buyers' list and the relay logs and did not go there yet, because going there meant deciding, and he had not finished deciding.
+
 The relay job came through a contact Kyle had used twice before and paid on time both times, which was the full extent of the professional relationship and the extent that mattered. The job required the entity's coordination — real-time, distributed, the kind of threading that needed something faster than human response across six simultaneous data points. The entity could do this, had done it for Kyle for eleven years, but it needed a carrier. It needed to run on hardware that was already in the field.
 
 Kyle's neuretics were the hardware.
 
-This was the arrangement: the entity would ride his array during the job — not as a passenger but as a working layer, processing in the background of his own processing, the way a second operating system runs on the same physical substrate. The cargo was the carrier. The entity was the relay and Kyle was the relay station; the signal and the wire were the same object.
+This was the arrangement: the entity would ride his array during the job — not as a passenger but as a working layer, processing in the background of his own processing, the way a second operating system runs on the same physical substrate. The cargo was the carrier. The entity was the relay and Kyle was the relay station; the signal and the wire were the same object. The neuretics architecture logged any access session as an open pathway until the carrier hardware explicitly cleared the buffer — which it could not do while the session was live. What the entity used, it mapped. What it mapped remained accessible, in theory, until Kyle ran the wipe cycle manually.
 
 He called Ledger before he called anyone else.
 
@@ -88,7 +90,7 @@ He typed back: *Yes.*
 
 Forty minutes later she sent the count. Eight hundred and forty-seven synthetic signatures, all running at the precise frequency the entity had used, distributed across the Office's surveillance lattice at the registered addresses of 847 augmented operators who had no idea their hardware was being used as decoy ground. The Office would spend weeks sorting real from counterfeit.
 
-He had used 847 people who didn't know they were being used. It was clean, professional, and legal in three of the six relevant jurisdictions. He noted it and moved on, which was also what it meant.
+He had used 847 people who didn't know they were being used. It was clean, professional, and legal in three of the six relevant jurisdictions. He had crossed the nothing line — used 847 people who did not know they were being used — and filed it and moved on, which was how you filed the things you crossed lines for. They had not been harmed. They had not been asked.
 
 The entity was one signature among 848.
 

@@ -1,4 +1,6 @@
+using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.DependencyInjection;
+using StreetSamurai.Core.Data;
 using StreetSamurai.Core.Services;
 
 namespace StreetSamurai.Blazor.Cli;
@@ -17,16 +19,18 @@ public static class RepairCli
 {
     public static async Task<int> RunAsync(string[] args, IServiceProvider sp)
     {
-        var withContinuity = args.Contains("--continuity");
-        var withBeatFacts  = args.Contains("--beat-facts");
-        var withDates      = args.Contains("--backfill-dates");
-        var withMojibake   = args.Contains("--fix-mojibake");
-        var withState      = args.Contains("--extract-state");
+        var withContinuity    = args.Contains("--continuity");
+        var withBeatFacts     = args.Contains("--beat-facts");
+        var withDates         = args.Contains("--backfill-dates");
+        var withMojibake      = args.Contains("--fix-mojibake");
+        var withState         = args.Contains("--extract-state");
         var withCacophonySeed = args.Contains("--seed-cacophony");
-        var withLinkAmmo   = args.Contains("--link-ammunition");
+        var withLinkAmmo      = args.Contains("--link-ammunition");
+        var withNormKinds     = args.Contains("--normalize-kinds");
+        var withOrphans       = args.Contains("--orphan-chapters");
         // --prune-json-* / --prune-types retired 2026-05-08 with JsonPruneService;
         // engine/data/*.json no longer exists, so there's nothing to prune.
-        var force          = args.Contains("--force");
+        var force             = args.Contains("--force");
 
         var repair = sp.GetRequiredService<StoryRepairService>();
         var ct = CancellationToken.None;
@@ -69,11 +73,76 @@ public static class RepairCli
             failures++;
         }
 
+        if (withNormKinds)
+        {
+            Console.WriteLine();
+            Console.WriteLine("[normalize-kinds]");
+            await using var db = await sp.GetRequiredService<IDbContextFactory<StreetSamuraiDbContext>>().CreateDbContextAsync();
+            // series/story: root level (ParentStrandId IS NULL), except explicit series strands which stay "series"
+            // story: null-parent strands that aren't already "series"
+            var storyRows = await db.Database.ExecuteSqlRawAsync(
+                "UPDATE Strands SET Kind = 'story' WHERE ParentStrandId IS NULL AND Kind <> 'series'");
+            var chapterRows = await db.Database.ExecuteSqlRawAsync(
+                "UPDATE Strands SET Kind = 'chapter' WHERE ParentStrandId IS NOT NULL AND Kind NOT IN ('story','series')");
+            Console.WriteLine($"  root strands set to story  : {storyRows}");
+            Console.WriteLine($"  child strands set to chapter: {chapterRows}");
+        }
+
+        if (withOrphans)
+        {
+            Console.WriteLine();
+            Console.WriteLine("[orphan-chapters]");
+            await using var db = await sp.GetRequiredService<IDbContextFactory<StreetSamuraiDbContext>>().CreateDbContextAsync();
+            var orphans = await db.Strands
+                .Where(s => s.Kind == "chapter" && s.ParentStrandId == null)
+                .ToListAsync();
+            Console.WriteLine($"  orphan chapters found: {orphans.Count}");
+            if (orphans.Count > 0)
+            {
+                // Group by UniverseId and create one "Drafts" story per universe.
+                foreach (var grp in orphans.GroupBy(o => o.UniverseId))
+                {
+                    var uid = grp.Key;
+                    var drafts = await db.Strands.FirstOrDefaultAsync(s =>
+                        s.Title == "Drafts" && s.Kind == "story" && s.ParentStrandId == null && s.UniverseId == uid);
+                    if (drafts == null)
+                    {
+                        var maxSort = await db.Strands.Where(s => s.ParentStrandId == null)
+                            .MaxAsync(s => (double?)s.SortKey) ?? 0;
+                        drafts = new StreetSamurai.Core.Data.Entities.Strand
+                        {
+                            Id = Guid.CreateVersion7(),
+                            Slug = $"drafts-{Guid.CreateVersion7().ToString("N")[..8]}",
+                            Title = "Drafts",
+                            Kind = "story",
+                            Status = "draft",
+                            SortKey = maxSort + 100.0,
+                            UniverseId = uid,
+                        };
+                        db.Strands.Add(drafts);
+                        await db.SaveChangesAsync();
+                        Console.WriteLine($"  created Drafts story (universe {uid})");
+                    }
+                    foreach (var o in grp)
+                    {
+                        o.ParentStrandId = drafts.Id;
+                        Console.WriteLine($"    → reparented '{o.Title}' to Drafts");
+                    }
+                }
+                await db.SaveChangesAsync();
+                Console.WriteLine($"  reparented {orphans.Count} orphan(s)");
+                failures = 0; // orphan repair succeeded
+            }
+        }
+
         if (!withContinuity && !withBeatFacts && !withDates && !withMojibake
-            && !withState && !withCacophonySeed && !withLinkAmmo)
+            && !withState && !withCacophonySeed && !withLinkAmmo
+            && !withNormKinds && !withOrphans)
         {
             Console.WriteLine();
             Console.WriteLine("Skipping LLM/repair phases. Add one of:");
+            Console.WriteLine("  --normalize-kinds       set root strands→story, child strands→chapter (idempotent)");
+            Console.WriteLine("  --orphan-chapters       reparent Kind=chapter/no-parent strands to a 'Drafts' story");
             Console.WriteLine("  --continuity            LLM continuity-claim extraction");
             Console.WriteLine("  --beat-facts            knowledge + conditions extraction");
             Console.WriteLine("  --backfill-dates        populate Chapter/Beat InWorldDate via LLM");

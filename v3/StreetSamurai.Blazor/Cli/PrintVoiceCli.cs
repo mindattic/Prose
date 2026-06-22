@@ -1,4 +1,4 @@
-using Microsoft.EntityFrameworkCore;
+﻿using Microsoft.EntityFrameworkCore;
 using StreetSamurai.Core.Data;
 using StreetSamurai.Core.Services;
 
@@ -27,7 +27,7 @@ public static class PrintVoiceCli
         var dbFactory = services.GetRequiredService<IDbContextFactory<StreetSamuraiDbContext>>();
         await using var ctx = await dbFactory.CreateDbContextAsync();
         var kyleNv = await ctx.Characters.AsNoTracking()
-            .Join(ctx.Entities.AsNoTracking().Where(e => e.Name == "Kyle Ellen Corbin-Vister"),
+            .Join(ctx.Entities.AsNoTracking().Where(e => e.Name == "Kyle Ellen Corbin"),
                   c => c.Id, e => e.Id, (c, e) => c.NarrationVoice)
             .FirstOrDefaultAsync();
         Console.WriteLine();

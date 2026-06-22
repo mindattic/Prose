@@ -1,4 +1,4 @@
-using Microsoft.EntityFrameworkCore;
+﻿using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Logging;
 using StreetSamurai.Core.Data;
@@ -50,7 +50,7 @@ foreach (var c in all)
     var tokens = c.Name.Split(' ', StringSplitOptions.RemoveEmptyEntries);
     if (tokens.Length < 2) continue;
     var currentSurname = tokens[^1];
-    if (currentSurname.Contains('-')) continue; // already hyphenated — Kyle Corbin-Vister
+    if (currentSurname.Contains('-')) continue; // already hyphenated — Kyle Corbin
     var firstNames = string.Join(' ', tokens[..^1]);
 
     foreach (var alias in c.Aliases)
