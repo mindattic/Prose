@@ -488,3 +488,175 @@ read its file before generating prose.
 **Why.** The monolithic USER_STORIES.md + BIBLE.md was loading all story details into context for
 every session, including stories not being worked on. Per-strand files enable minimum-necessary
 context loading: you get the universe rules and the story you're writing, nothing else.
+
+## SS-A12 — *Sparrow* novel expansion: Act 2 redesign + Sasha Vo canonized {#SS-A12}
+
+**What changed.** [GLMZ] The *Sparrow* strand (SPRW) is redesigned from a 55-beat mystery novella
+into a full novel. The existing 55 beats become Act 1. Acts 2–3 are new. The genre pivots in Act 2
+from slow-burn mystery to a Root/Machine-style gun-and-run thriller. The three-answer ambiguity
+(person/crew/machine) is **resolved** in the full novel form — Sparrow is an AI satellite.
+
+### New character: Sasha Vo (LOCKED) {#SS-A12-sasha-vo}
+
+**Sasha Vo** is a freelance operator — contract protection, extraction, and high-leverage field
+work. Vietnamese-Russian heritage (Ubiquitous Diaspora). She is Sparrow's standing field agent,
+hired preemptively via dead-drop payment the moment Sparrow became aware that Elias Macias, by
+knowing what Sparrow is, had become a threat to every CorpoNation in the world.
+
+**Weapons — Signal and Noise (LOCKED):**
+- **Signal** — right hand. Large-caliber semi-automatic, matte finish. Each shot deliberate, chosen.
+  Named because she decides what is real.
+- **Noise** — left hand. Compact, suppressed. Named because everything is noise until it is not.
+  She runs suppressed not for stealth — for control. She controls what the room hears.
+
+Signal and Noise are carried in a cross-draw configuration. She draws in one motion, both hands
+clearing simultaneously. It is not a trick; it is the way she thinks. She does not separate the
+decision from the action.
+
+**Character rules (LOCKED):**
+- She survives by instinct, not information. She is the structural complement to Sparrow's
+  omniscience: where Sparrow has data, Sasha has pattern-read from years of lived consequence.
+- She is as deadly with Signal and Noise as Kyle is with Silence. The comparison holds at the
+  level of precision, economy of motion, and the absence of theatrics.
+- She never puts her back to a door. Elias notices this in the first 30 seconds they share a room.
+- She does not volunteer information. She answers questions with the minimum number of words that
+  prevent the next question.
+- She is not cold. She is **efficient**. The distinction matters on the page.
+- Voice register: dry, declarative, zero ornament. The anti-Elias.
+- She was hired by Sparrow 9 days before Elias dialed the contact number for the second time.
+  The work order said: *"One person. GLMZ. Keep them alive."* No name, no photo. Sparrow trusted
+  her to find the right person. She did.
+
+### New SPRW arc spine (supersedes SS-A7 §Sparrow) {#SS-A12-arc}
+
+**Act 1 (existing 55 beats, compressed to ~20 in book form):** The invoice trail. Elias discovers
+the ascending objects, travels to East Africa, meets Tadesse, makes contact. Ends on the open line.
+
+**Act 2A — Contact (~10 beats):** Nine days later. The second window. Sparrow speaks. Elias learns
+what she is. The maintenance payments that have kept Tadesse employed for 20 years get flagged by
+a corporate audit AI (Arcturus subsidiary) tracing unusual uplink access from a GLMZ IP.
+Sparrow is aware. She has already sent the work order to Sasha Vo.
+
+**Act 2B — The Rupture (~15 beats):** A corporate extraction team arrives at Elias's building.
+Not to kill; to hold for interrogation. Sasha is already in the building. She has been watching
+for 7 days. The hallway is the battlefield. Elias comes out of his apartment to find her standing
+amid three men who will not get up. She says: *"You have 3 minutes before their check-in fails."*
+Elias: *"Sparrow sent you?"* Sasha: *"Nine days ago. She said you'd know the name."*
+
+**Act 2C — The Proxy (~15 beats):** Elias/Sasha/Sparrow as a three-node system.
+- Sparrow feeds real-time: building occupancy from thermal, vehicle trajectories from traffic feeds,
+  corpo personnel cross-referenced against her 37-year archive.
+- Sparrow's blind spots drive the tension: air-gapped corporate facilities (no network traffic to
+  read), buildings with no public blueprints, orbital gaps (4–8 minutes of coverage blackout during
+  each pass), fog/weather degrading resolution to 40m.
+- When Sparrow goes dark, Sasha's instinct carries them. Elias learns what it means to be in
+  Sasha's hands when the god in the sky is not watching.
+- Elias functions as Sparrow's proxy — he reads the patterns she cannot see at human scale.
+  He is her voice on the ground. Sasha is her hands.
+
+**Act 3 — The Reveal (~10 beats):** The ascending objects decoded. Sparrow has been launching
+biological and geological sample capsules from the East African mass driver into Lake Michigan's
+sub-lake survey sites for 37 years — compressed data cores recording climate data, pharmaceutical
+dumping records, famine routes, and corporate crime documented from orbit. She has been witnessing
+the world since 2189. She does not want to be controlled. She wants her archive made public.
+Elias is the only person who knows what she is and where her data lives. He has to decide whether
+to broadcast it. Every CorpoNation that has been documented will send everything they have if he does.
+He does it. The transmission takes 11 minutes. Sparrow goes silent after. Rate: Open.
+
+## SS-A13 — *The Voice You Trust* redesigned: MNEMOSYNC bleed + dual POV {#SS-A13}
+
+**What changed.** [GLMZ] The *The Voice You Trust* strand (TVYT; slug `the_voice_you_trust`;
+id `019EA026`) is redesigned from a single-POV Sable origin story (Rhea, broadcaster → Axiom
+Corp capture → OPTIC-7 whistleblowing → blinding → Circuit eyes) into a **dual-POV novel** built
+around Orison Neuretics' MNEMOSYNC subconscious influence trial.
+
+The old 189-beat strand is **absorbed** into the new design as raw source material. The old strand
+will be deleted once the new book structure is fully in place. See [docs/strands/TVYT.md](strands/TVYT.md)
+for the full strand bible.
+
+### New premise (LOCKED)
+
+Orison Neuretics runs an alpha test of **MNEMOSYNC** — a subconscious influence technology that
+plants suggestive memories the subject reads as their own thoughts. In aggregate deployment, the
+signal is ambient noise below conscious notice. A feature flag keeps any individual from surfacing
+a clear signal during the trial.
+
+When two suppression flags flip simultaneously — accidentally, or are they? — two subjects become
+coupled oscillators. They begin bleeding into each other: receiving the other's authentic memories
+and sensory impressions through the same confabulation pathway the planted content uses.
+
+The two subjects:
+- **Rhea Adeyemi-Foster** — minor news broadcaster, Tessera Media Group → absorbed into Orison
+  Communications Division (Orison acquired Tessera). Visible, credible, trusted. *She is The Voice
+  You Trust.* Dispatching her creates a bigger story than the one Orison is trying to kill.
+- **Caius Nwosu** — Gray Zone data courier, Z4/Glooms-adjacent. No corpo affiliation, no public
+  record. Easy to dispatch. Operational terminology: *asset retirement.*
+
+Orison runs two tracks: dispatch Caius (easy), neutralize Rhea (complicated). Both tracks converge
+in Ch13. The story ends with Rhea becoming Sable (Ch14) and Caius going dark.
+
+### The Bleed Rules (LOCKED — anti-Sense8)
+
+The bleed carries **memory and sensory texture**, not skill. Neither character inherits the other's
+competence. What bleeds is *context*: Rhea gets route-paranoia and gray-zone pattern recognition;
+Caius gets corpo-spatial memory and broadcast grammar. Each uses this context through their own
+existing abilities — Rhea reads rooms differently; Caius buys time with the right language. The
+bleed is a symptom and a liability, not an awakening. Both initially believe they are having a
+breakdown.
+
+### The MNEMOSYNC mechanism (LOCKED)
+
+MNEMOSYNC couples to the confabulation pathway. The ocular anchor: seeded via retinal stimulation
+during a "wellness screening" both subjects underwent within the same 48-hour window. Termination
+protocol (both subjects): destroy the retinal anchor, sever the bleed, suppress the memory of the
+trial. This is the same compound Caius saw referenced on a sealed Orison Health Sciences server
+farm run. This is the same procedure Axiom/Orison uses as a "data-hygiene" clause in Rhea's
+severance agreement.
+
+The flag-flip mystery is **not resolved in this book**. It is planted.
+
+### Absorbed from old TVYT (what survives)
+
+The Rhea character, the broadcast booth world, the corpo-absorption arc, the methodical
+whistleblowing instinct, the discrediting and interrogation scenes, the Beatrix Vance/Internal
+Affairs confrontation, the OPTIC-7 → MNEMOSYNC blinding procedure, Dr. Kovalenko-Hassan and the
+Circuit clinic, the Aurum Spec-7 leash/choice scene, and the Sable ending are all preserved. The
+central revelation mechanism changes from a discovered OPTIC-7 technical document to a bleed
+memory from Caius's server farm run. Mira Quintero survives as the moral anchor — now a MNEMOSYNC
+trial subject who voted to sell her Z3 community land and cannot explain why.
+
+### New entities
+
+| Entity | Type | Notes |
+|---|---|---|
+| Rhea Adeyemi-Foster | character | TVYT protagonist; Tessera → Orison Communications; becomes Sable |
+| Caius Nwosu | character | TVYT second protagonist; Gray Zone data courier; Z4/Glooms |
+| MNEMOSYNC | technology | Orison Neuretics project; subconscious influence via confabulation-pathway coupling |
+| Dr. Kovalenko-Hassan | character | Circuit clinic; Aurum Spec-7 provider; underground technician |
+| Orison Communications Division | organization | Orison Neuretics subsidiary; acquired Tessera Media Group |
+| The Circuit | place | Underground off-network clinic; transit-token referral only |
+| Mira Quintero | character | Z3 community organizer; MNEMOSYNC trial subject; moral anchor |
+| Aurum Spec-7 | technology | Off-network ocular implant; no firmware handshake |
+
+**Why.** The old single-POV structure placed all dramatic weight on Rhea's isolation — her
+discovery unwitnessed, her risk entirely private. The dual-POV redesign adds structural stakes:
+Orison's two-track problem means the reader sees both the easy kill and the complicated one
+happening simultaneously. Caius's perspective gives the city-from-below view that the old story
+lacked, and his bleed-contamination of Rhea's instincts gives her the tools to survive without
+turning her into a Gray Zone operative. The MNEMOSYNC mechanism is richer than OPTIC-7 as a
+narrative engine because the evidence of the experiment is the bleed *itself* — Orison's
+smoking gun is written into the protagonist's daily experience.
+
+### Why this works {#SS-A12-why}
+
+- The three-answer ambiguity (person/crew/machine) now functions as an Act 1 engine — it sustains
+  the mystery through the invoice trail — and resolves in Act 2A, where the genre shifts.
+- The pre-flight failure (PassiveProtagonist) is corrected structurally: Elias's decision to
+  broadcast the archive is the central active choice that drives Act 3.
+- Sasha Vo gives the story a second POV-capable character for Act 2 without splitting the primary
+  Elias POV — she can be rendered close-third from Elias's perspective throughout.
+- The Root/Machine dynamic (from *Person of Interest*) is the target register: Sparrow feeds
+  perfect information; the fallibility of that information is the dramatic engine; instinct is the
+  only thing that works in the gaps.
+
+**Entities to seed:** Sasha Vo (person), Signal (weapon), Noise (weapon).

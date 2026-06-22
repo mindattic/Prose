@@ -133,47 +133,101 @@ narrative-law block here when stood up:**
 - done: 104  partial: 8  planned: 14  cut: 1
 
 ## Latest amendment
-## SS-A11 — Pixel origin canonized; per-strand docs architecture established {#SS-A11}
+## SS-A13 — *The Voice You Trust* redesigned: MNEMOSYNC bleed + dual POV {#SS-A13}
 
-**What changed.** [GLMZ] Pixel's pre-GLMZ biography locked as canon. Per-strand standalone
-documentation pattern adopted.
+**What changed.** [GLMZ] The *The Voice You Trust* strand (TVYT; slug `the_voice_you_trust`;
+id `019EA026`) is redesigned from a single-POV Sable origin story (Rhea, broadcaster → Axiom
+Corp capture → OPTIC-7 whistleblowing → blinding → Circuit eyes) into a **dual-POV novel** built
+around Orison Neuretics' MNEMOSYNC subconscious influence trial.
 
-### Pixel's origin (LOCKED) {#SS-A11-pixel}
+The old 189-beat strand is **absorbed** into the new design as raw source material. The old strand
+will be deleted once the new book structure is fully in place. See [docs/strands/TVYT.md](strands/TVYT.md)
+for the full strand bible.
 
-- **Pixel was born and raised in Iowa.** She left after her mother's death; there was nothing left
-  for her there.
-- **Her mother's SNT bridge failed at month eight of integration.** Licensed hardware, warranty,
-  hotline number — none of it helped. Her mother died while the licensed industry's automated
-  response system generated a case number. There was no one to report it to that wasn't owned by
-  the same CorpoNation that sold the bridge. This is why Pixel trusts work she can put her hands
-  on and distrusts the licensed industry. It is **her grief, not Kyle's**; it never surfaces as
-  exposition.
-- **She arrived in GLMZ via the Pulse from Cedar Rapids, age 19.** One bag, her mother's primary
-  hardware kit in a hard case, a secondary kit on her person, a referral on a scrap of paper.
-- **She wears her mother's boots.** Big black work boots, one size too large. She padded the toes
-  with folded paper. The story of how she stopped padding them is TDIU. The boots are never
-  explained on the page.
-- **Her handle "Pixel" is GLMZ-acquired.** She did not arrive with it. It is not used in TDIU.
-- **Her unlicensed hand-enhancement was done in Pilsen, age 19** — after she arrived, not before.
-  She is unsentimental about it.
+### New premise (LOCKED)
 
-### Per-strand docs architecture (LOCKED) {#SS-A11-docs}
+Orison Neuretics runs an alpha test of **MNEMOSYNC** — a subconscious influence technology that
+plants suggestive memories the subject reads as their own thoughts. In aggregate deployment, the
+signal is ambient noise below conscious notice. A feature flag keeps any individual from surfacing
+a clear signal during the trial.
 
-Going forward, every story strand with active prose gets its own standalone bible file at
-`docs/strands/<CODE>.md`. Universe rules stay in `BIBLE.md`. Story-specific arc, character
-behaviors, and narrative locks live in the strand file. This minimizes context load: working on
-TDIU means loading universe rules + TDIU rules, not every other story's details.
+When two suppression flags flip simultaneously — accidentally, or are they? — two subjects become
+coupled oscillators. They begin bleeding into each other: receiving the other's authentic memories
+and sensory impressions through the same confabulation pathway the planted content uses.
 
-- **`docs/BIBLE.md`** — universe laws, architecture, engine invariants. No per-story arc content.
-- **`docs/strands/<CODE>.md`** — story arc, beat spine, character rules, locks, user stories.
-- **`docs/books/<name>.md`** — legacy location for long-form book spines (BCODA; maintained in place).
-- **`docs/USER_STORIES.md`** — index of epics + acceptance criteria. Per-story sub-stories may
-  point to the strand file rather than be duplicated here.
+The two subjects:
+- **Rhea Adeyemi-Foster** — minor news broadcaster, Tessera Media Group → absorbed into Orison
+  Communications Division (Orison acquired Tessera). Visible, credible, trusted. *She is The Voice
+  You Trust.* Dispatching her creates a bigger story than the one Orison is trying to kill.
+- **Caius Nwosu** — Gray Zone data courier, Z4/Glooms-adjacent. No corpo affiliation, no public
+  record. Easy to dispatch. Operational terminology: *asset retirement.*
 
-Strand files are loaded on demand, not injected at session start. When working on a strand,
-read its file before generating prose.
+Orison runs two tracks: dispatch Caius (easy), neutralize Rhea (complicated). Both tracks converge
+in Ch13. The story ends with Rhea becoming Sable (Ch14) and Caius going dark.
 
-**Why.** The monolithic USER_STORIES.md + BIBLE.md was loading all story details into context for
-every session, including stories not being worked on. Per-strand files enable minimum-necessary
-context loading: you get the universe rules and the story you're writing, nothing else.
+### The Bleed Rules (LOCKED — anti-Sense8)
+
+The bleed carries **memory and sensory texture**, not skill. Neither character inherits the other's
+competence. What bleeds is *context*: Rhea gets route-paranoia and gray-zone pattern recognition;
+Caius gets corpo-spatial memory and broadcast grammar. Each uses this context through their own
+existing abilities — Rhea reads rooms differently; Caius buys time with the right language. The
+bleed is a symptom and a liability, not an awakening. Both initially believe they are having a
+breakdown.
+
+### The MNEMOSYNC mechanism (LOCKED)
+
+MNEMOSYNC couples to the confabulation pathway. The ocular anchor: seeded via retinal stimulation
+during a "wellness screening" both subjects underwent within the same 48-hour window. Termination
+protocol (both subjects): destroy the retinal anchor, sever the bleed, suppress the memory of the
+trial. This is the same compound Caius saw referenced on a sealed Orison Health Sciences server
+farm run. This is the same procedure Axiom/Orison uses as a "data-hygiene" clause in Rhea's
+severance agreement.
+
+The flag-flip mystery is **not resolved in this book**. It is planted.
+
+### Absorbed from old TVYT (what survives)
+
+The Rhea character, the broadcast booth world, the corpo-absorption arc, the methodical
+whistleblowing instinct, the discrediting and interrogation scenes, the Beatrix Vance/Internal
+Affairs confrontation, the OPTIC-7 → MNEMOSYNC blinding procedure, Dr. Kovalenko-Hassan and the
+Circuit clinic, the Aurum Spec-7 leash/choice scene, and the Sable ending are all preserved. The
+central revelation mechanism changes from a discovered OPTIC-7 technical document to a bleed
+memory from Caius's server farm run. Mira Quintero survives as the moral anchor — now a MNEMOSYNC
+trial subject who voted to sell her Z3 community land and cannot explain why.
+
+### New entities
+
+| Entity | Type | Notes |
+|---|---|---|
+| Rhea Adeyemi-Foster | character | TVYT protagonist; Tessera → Orison Communications; becomes Sable |
+| Caius Nwosu | character | TVYT second protagonist; Gray Zone data courier; Z4/Glooms |
+| MNEMOSYNC | technology | Orison Neuretics project; subconscious influence via confabulation-pathway coupling |
+| Dr. Kovalenko-Hassan | character | Circuit clinic; Aurum Spec-7 provider; underground technician |
+| Orison Communications Division | organization | Orison Neuretics subsidiary; acquired Tessera Media Group |
+| The Circuit | place | Underground off-network clinic; transit-token referral only |
+| Mira Quintero | character | Z3 community organizer; MNEMOSYNC trial subject; moral anchor |
+| Aurum Spec-7 | technology | Off-network ocular implant; no firmware handshake |
+
+**Why.** The old single-POV structure placed all dramatic weight on Rhea's isolation — her
+discovery unwitnessed, her risk entirely private. The dual-POV redesign adds structural stakes:
+Orison's two-track problem means the reader sees both the easy kill and the complicated one
+happening simultaneously. Caius's perspective gives the city-from-below view that the old story
+lacked, and his bleed-contamination of Rhea's instincts gives her the tools to survive without
+turning her into a Gray Zone operative. The MNEMOSYNC mechanism is richer than OPTIC-7 as a
+narrative engine because the evidence of the experiment is the bleed *itself* — Orison's
+smoking gun is written into the protagonist's daily experience.
+
+### Why this works {#SS-A12-why}
+
+- The three-answer ambiguity (person/crew/machine) now functions as an Act 1 engine — it sustains
+  the mystery through the invoice trail — and resolves in Act 2A, where the genre shifts.
+- The pre-flight failure (PassiveProtagonist) is corrected structurally: Elias's decision to
+  broadcast the archive is the central active choice that drives Act 3.
+- Sasha Vo gives the story a second POV-capable character for Act 2 without splitting the primary
+  Elias POV — she can be rendered close-third from Elias's perspective throughout.
+- The Root/Machine dynamic (from *Person of Interest*) is the target register: Sparrow feeds
+  perfect information; the fallibility of that information is the dramatic engine; instinct is the
+  only thing that works in the gaps.
+
+**Entities to seed:** Sasha Vo (person), Signal (weapon), Noise (weapon).
 
