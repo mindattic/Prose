@@ -187,7 +187,7 @@ public class StrandReviewService
     public async Task<SampledRunResult> RunSampledReviewAsync(
         Guid strandId, int ballotCount, int proseCount,
         IProgress<int>? progress = null, CancellationToken ct = default,
-        bool skipDiagnosis = false)
+        bool skipDiagnosis = false, bool cheapModels = false)
     {
         if (ballotCount <= 0) ballotCount = settings.ReviewBallots;
         if (proseCount < 0) proseCount = 0;
@@ -223,7 +223,7 @@ public class StrandReviewService
                 // Non-blocking warnings: run ballots normally, then append the
                 // structural findings to the report so they're always visible.
                 var result = await RunSampledReviewAsync(strandId, ballotCount, proseCount,
-                    progress, ct, skipDiagnosis: true);
+                    progress, ct, skipDiagnosis: true, cheapModels: cheapModels);
                 return result with
                 {
                     ReportMarkdown      = AppendStructuralWarnings(result.ReportMarkdown, diagnosis),
@@ -270,7 +270,7 @@ public class StrandReviewService
                 await sem.WaitAsync(ct);
                 try
                 {
-                    var r = await BallotOnceAsync(strandId, export, persona, provider, ct, lessonsBlock);
+                    var r = await BallotOnceAsync(strandId, export, persona, provider, ct, lessonsBlock, cheapModels);
                     if (r != null) { r.FocusGroupName = groupName; bag.Add(r); }
                     else Interlocked.Increment(ref failed);
                 }
@@ -298,7 +298,7 @@ public class StrandReviewService
                     await sem.WaitAsync(ct);
                     try
                     {
-                        var r = await BallotOnceAsync(strandId, export, persona, provider, ct, lessonsBlock);
+                        var r = await BallotOnceAsync(strandId, export, persona, provider, ct, lessonsBlock, cheapModels);
                         if (r != null) { r.FocusGroupName = groupName; bag.Add(r); }
                     }
                     catch (Exception ex) { log.LogWarning(ex, "Retry ballot failed: {P}", persona.Id); }
@@ -327,7 +327,7 @@ public class StrandReviewService
                 {
                     var persona = PersonasByIds(new[] { rv.PersonaId }).FirstOrDefault();
                     if (persona == null) return;
-                    var prose = await ProseOnceAsync(export, persona, rv.ProviderId, ct);
+                    var prose = await ProseOnceAsync(export, persona, rv.ProviderId, ct, cheapModels);
                     if (prose != null)
                     {
                         rv.ReviewText = prose.Value.review.Trim();
@@ -843,14 +843,36 @@ Return ONLY a JSON object, nothing else:
 
     /// <summary>One cheap SCORE-ONLY ballot: overall + flow + per-beat 1-5 + a single
     /// weakness tag, no prose paragraph. The wide-net scoring/per-beat tier.</summary>
+    /// <summary>RFC 0009 — the cheapest model each trusted provider offers, mirroring
+    /// BeatGeneratorService.LowTierModelFor. Used by the Draft effort tier so spot-check
+    /// ballots cost a fraction per call; gate tiers (Standard/Deep) keep the mid-tier
+    /// defaults because their scores drive 82%/85% decisions.</summary>
+    private static readonly Dictionary<string, string> CheapModels = new(StringComparer.OrdinalIgnoreCase)
+    {
+        ["claude"]   = "claude-haiku-4-5-20251001",
+        ["openai"]   = "gpt-4.1-nano",
+        ["gemini"]   = "gemini-2.5-flash-lite",
+        ["deepseek"] = "deepseek-chat",
+    };
+
+    /// <summary>Resolve the model for a ballot/prose call. When <paramref name="cheap"/>,
+    /// prefer the provider's cheapest model; otherwise honor the configured override then the
+    /// Legion default. Never mutates persisted settings — the choice is per-run.</summary>
+    private string ResolveBallotModel(string provider, bool cheap)
+    {
+        if (cheap && CheapModels.TryGetValue(provider, out var c) && !string.IsNullOrWhiteSpace(c))
+            return c;
+        return cfg.ModelOverrides.TryGetValue(provider, out var m) && !string.IsNullOrWhiteSpace(m)
+            ? m : LegionClient.DefaultModels.GetValueOrDefault(provider, "");
+    }
+
     private async Task<StrandReview?> BallotOnceAsync(
         Guid strandId, StrandMarkdownExporter.StrandExport export, Persona persona, string provider, CancellationToken ct,
-        string? lessonsBlock = null)
+        string? lessonsBlock = null, bool cheapModels = false)
     {
         var key = ResolveKey(provider);
         if (string.IsNullOrWhiteSpace(key)) { log.LogWarning("No API key for provider {Provider}", provider); return null; }
-        var model = cfg.ModelOverrides.TryGetValue(provider, out var m) && !string.IsNullOrWhiteSpace(m)
-            ? m : LegionClient.DefaultModels.GetValueOrDefault(provider, "");
+        var model = ResolveBallotModel(provider, cheapModels);
 
         var system = BuildBallotSystemPrompt(persona, export.Title, export.BeatCount, lessonsBlock);
         // beat_scores must cover every beat — the JSON grows with beat count, so the
@@ -890,12 +912,12 @@ Return ONLY a JSON object, nothing else:
     /// <summary>Full prose review for an already-balloted persona — used to upgrade
     /// the most informative ballots with readable text (returns text only).</summary>
     private async Task<(string review, List<string> improvements)?> ProseOnceAsync(
-        StrandMarkdownExporter.StrandExport export, Persona persona, string provider, CancellationToken ct)
+        StrandMarkdownExporter.StrandExport export, Persona persona, string provider, CancellationToken ct,
+        bool cheapModels = false)
     {
         var key = ResolveKey(provider);
         if (string.IsNullOrWhiteSpace(key)) return null;
-        var model = cfg.ModelOverrides.TryGetValue(provider, out var m) && !string.IsNullOrWhiteSpace(m)
-            ? m : LegionClient.DefaultModels.GetValueOrDefault(provider, "");
+        var model = ResolveBallotModel(provider, cheapModels);
         var system = BuildReviewerSystemPrompt(persona, export.Title);
         var raw = await legion.CallAsync(provider, key!, model, system, export.Markdown, maxTokens: 1400, temperature: 0.85, ct);
         return TryParseReview(raw, out _, out var review, out var improvements) ? (review, improvements) : null;

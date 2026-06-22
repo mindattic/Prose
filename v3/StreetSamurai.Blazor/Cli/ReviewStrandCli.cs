@@ -157,13 +157,15 @@ public static class ReviewStrandCli
             Console.WriteLine($"   Id:    {strandId}");
             Console.WriteLine($"   Slug:  {strandSlug}");
             Console.WriteLine($"   Title: {strandTitle}");
-            Console.WriteLine($"   {ballots} score-ballots (round-robin across the trusted-4) + {prose} prose upgrades"
+            Console.WriteLine($"   {ballots} score-ballots (round-robin across the trusted-4"
+                + (profile?.CheapModels == true ? ", on cheap models" : "") + $") + {prose} prose upgrades"
                 + (skipDiagnosis ? " — diagnosis skipped" : " + structural diagnosis") + " — one pass.");
             Console.WriteLine("[review-strand] Running…");
             var bp = new Progress<int>(k => { if (k == ballots || k % 5 == 0) Console.WriteLine($"   …{k}/{ballots} ballots done"); });
             try
             {
-                var sr = await reviewer.RunSampledReviewAsync(strandId, ballots, prose, bp, skipDiagnosis: skipDiagnosis);
+                var sr = await reviewer.RunSampledReviewAsync(strandId, ballots, prose, bp,
+                    skipDiagnosis: skipDiagnosis, cheapModels: profile?.CheapModels ?? false);
                 Console.WriteLine($"[review-strand] {sr.BallotsSaved}/{sr.Ballots} ballots ({sr.Failed} failed), {sr.ProseAdded} prose upgraded.");
                 Console.WriteLine($"[review-strand] Strand {sr.MeanScore}/100  (SD {sr.Sd}, 95% CI ±{sr.Ci95})  ·  {sr.Clusters} clusters  ·  fingerprint {sr.ContentHash[..Math.Min(12, sr.ContentHash.Length)]}");
                 Console.WriteLine();
