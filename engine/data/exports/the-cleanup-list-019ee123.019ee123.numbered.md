@@ -57,6 +57,8 @@ He had run this path forty times in testing. The Zone 5/6 beacon registered at 3
 
 He aborted before the first real packet cleared. Certain enough.
 
+The monitoring architecture ran on Orison's Zone 7 relay licensing â€” he recognized the latency profile from two years of checkpoint approach runs. He had been routing through their infrastructure for six weeks and had just told it exactly where he was trying to go.
+
 He sat with the drives in both hands. Three locations on one body, the relay path burned, three days on Ekow's clock. He had spent six weeks building the path and thirty seconds reading the timing before he shut it down.
 
 He set the drives on the table and messaged Amara before he worked out what came next. *I've had your name for eight days. I held it.*

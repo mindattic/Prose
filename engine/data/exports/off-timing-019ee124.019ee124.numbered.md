@@ -57,5 +57,9 @@ She sat back from the bench. The depot was quiet around her, the afternoon shift
 
 She had the drive in her jacket pocket. She had the paper with 112 on it, which she had written in the first moment she understood, the kind of thing you wrote because writing it made it real outside your own head.
 
+She was reaching for her bag when the access panel in the corner of her screen changed. Not a banner, not an alert â€” a quiet system update in the border display: *Infrastructure tier reviewed. Level adjusted per compliance review: historical read-only. Batch query access suspended pending clearance.*
+
+The window he had opened for her was closed.
+
 She folded the paper twice and put it back. She closed the query and logged out of the bench cleanly, the way she always did, the way a person logged out who had found nothing unusual and was going home at the end of a normal shift.
 

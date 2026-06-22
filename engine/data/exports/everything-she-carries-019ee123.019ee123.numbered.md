@@ -97,5 +97,11 @@ Something had happened. She didn't know what. She knew only the weight in her ha
 
 She picked up the coffee. It weighed what a cup weighs.
 
+Her phone buzzed. A low-priority flag, sent at 09:31 â€” she had not seen it in the last hour.
+
+*Fonseca, C.: Two flags came through from this morning's client visit. Automatically routed to my queue. Nothing to worry about. I've marked them policy orientation â€” no action required. Let me know if you have questions.*
+
+He had signed with his name and floor extension. She read it once. She read it again.
+
 She paid and left. She did not order a second coffee. She went out into the buffer zone air — diesel and concrete and the cold — and stood for a moment on the curb with both hands at her sides, feeling the ordinary weight of them. Then she took the transit line back toward Zone 6.
 

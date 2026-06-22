@@ -65,7 +65,7 @@ He held out the drive — small, flat, the size of a thumb. She took it. He clos
 
 "Same channel," he said. "Forty-eight hours."
 
-She put the drive in her jacket pocket. She could feel it — not its physical weight, which was nothing, but the knowledge of its weight, the specific gravity of something that had been in a lockbox for six days and was now in her hand.
+She put the drive in her jacket pocket. Six days in a lockbox. She could feel it through the fabric.
 
 She bought a second cup of porridge she didn't need and stood with it until she had her face back. Then she went back through the Zone 6 checkpoint and logged in for the rest of her shift as though she had been doing a facility pre-check in Zone 7, which was what the biometric log would say she'd done.
 

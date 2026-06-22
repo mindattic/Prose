@@ -61,5 +61,9 @@ She didn't answer. He didn't wait for one.
 
 She rode the escalator down. At the bottom she passed through the lobby doors and out into the corridor and stood for a moment with the managed warmth of the arcology behind her and the Seam air just ahead. The drive was still in her pocket, the cloth wrapped around it still damp from two hours of contact. She had not said anything useful. She had learned nothing she didn't already know.
 
-She had, however, placed a question close enough to him that he had heard it. That was something.
+She came home to a system notification she had not sent for: *Sub-contractor access reviewed. Daily query limit: Level 2 access, 8 queries per day, reset at midnight. Effective immediately.*
+
+She had used seven queries today.
+
+She had placed a question close enough to him that he had heard it. The cost arrived before midnight.
 

@@ -91,3 +91,5 @@ He thought about Amara at the Shen crossing stall, the way she had stood for a m
 
 He didn't write anything on his wrist. He just rode.
 
+His relay terminal flagged a compliance update at 18:03: *Zone 3/4 courier certification suspended. Orison Regulatory Compliance: licensing review pending, active routes suspended, estimated processing five to ten business days.* The story was in Doru's hands. The routes were gone. The ordering was in his favor.
+
