@@ -15,31 +15,35 @@ namespace StreetSamurai.Core.Services;
 ///   structural diagnosis + prose critique. ~37 calls (the historical default).</item>
 /// </list>
 ///
-/// Only the call-count knobs are scaled here — the dominant token driver. Per-provider model
-/// tiering (running ballots on haiku/flash/nano under Draft) is a documented follow-up:
-/// <see cref="AllowedProviders"/> carries the intent, but applying it requires a per-run
-/// override on <c>StrandReviewService</c> rather than mutating persisted settings.
+/// The call-count knobs are the dominant token driver. <see cref="CheapModels"/> adds the
+/// second axis — per-provider model tiering: under Draft the ballots run on the cheapest model
+/// each provider offers (haiku / flash-lite / nano), applied as a per-run override inside
+/// <c>StrandReviewService</c> WITHOUT mutating persisted settings. Standard and Deep keep the
+/// trustworthy mid-tier models because their scores drive gate decisions, where cheap-model
+/// score noise would be a false economy. (<see cref="AllowedProviders"/> carries provider-
+/// restriction intent for a future pass; it is not applied yet.)
 /// </summary>
 public sealed record ReviewEffortProfile(
     string Name,
     int Ballots,
     int Prose,
     bool SkipDiagnosis,
+    bool CheapModels,
     string? AllowedProviders,
     string Note)
 {
     public static readonly ReviewEffortProfile Draft = new(
-        "draft", Ballots: 6, Prose: 0, SkipDiagnosis: true,
+        "draft", Ballots: 6, Prose: 0, SkipDiagnosis: true, CheapModels: true,
         AllowedProviders: "claude,gemini",
-        "mid-draft spot check — per-beat gripes + a rough score; NOT for gate decisions");
+        "mid-draft spot check — cheap models, per-beat gripes + a rough score; NOT for gate decisions");
 
     public static readonly ReviewEffortProfile Standard = new(
-        "standard", Ballots: 12, Prose: 2, SkipDiagnosis: true,
+        "standard", Ballots: 12, Prose: 2, SkipDiagnosis: true, CheapModels: false,
         AllowedProviders: null,
         "standalone gate (≥82%) — trustworthy score + top fixes");
 
     public static readonly ReviewEffortProfile Deep = new(
-        "deep", Ballots: 20, Prose: 4, SkipDiagnosis: false,
+        "deep", Ballots: 20, Prose: 4, SkipDiagnosis: false, CheapModels: false,
         AllowedProviders: null,
         "cumulative/publish gate (≥85%) — full panel + diagnosis + prose critique");
 
