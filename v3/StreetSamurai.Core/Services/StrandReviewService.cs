@@ -196,7 +196,7 @@ public class StrandReviewService
         if (!skipDiagnosis)
         {
             StructuralDiagnosisResult diagnosis;
-            try { diagnosis = await structural.DiagnoseStrandAsync(strandId, ct); }
+            try { diagnosis = await structural.DiagnoseStrandAsync(strandId, ct: ct); }
             catch (Exception ex)
             {
                 log.LogWarning(ex, "Structural diagnostic failed for strand {Id}; proceeding without it.", strandId);

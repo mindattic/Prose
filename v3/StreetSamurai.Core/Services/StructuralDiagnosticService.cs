@@ -73,7 +73,7 @@ public class StructuralDiagnosticService
     // ── Public entry points ───────────────────────────────────────────────────
 
     public async Task<StructuralDiagnosisResult> DiagnoseStrandAsync(
-        Guid strandId, CancellationToken ct = default)
+        Guid strandId, int maxChars = 40000, CancellationToken ct = default)
     {
         await using var db = await dbFactory.CreateDbContextAsync(ct);
 
@@ -91,11 +91,11 @@ public class StructuralDiagnosticService
 
         var text = string.Join("\n\n---\n\n", beats.Where(t => !string.IsNullOrWhiteSpace(t)));
 
-        return await DiagnoseTextAsync(strandId, strand.Slug, strand.Title, text, ct);
+        return await DiagnoseTextAsync(strandId, strand.Slug, strand.Title, text, maxChars, ct);
     }
 
     public async Task<StructuralDiagnosisResult> DiagnoseTextAsync(
-        Guid strandId, string slug, string title, string text, CancellationToken ct = default)
+        Guid strandId, string slug, string title, string text, int maxChars = 40000, CancellationToken ct = default)
     {
         if (string.IsNullOrWhiteSpace(text))
             return Empty(strandId, slug, title);
@@ -103,18 +103,18 @@ public class StructuralDiagnosticService
         // Run all 12 checks in parallel — each is a narrow LLM call
         var checkTasks = new[]
         {
-            CheckAntagonistCostAsync(text, ct),
-            CheckProtagonistBehaviorChangeAsync(text, ct),
-            CheckStakesEmbodimentAsync(text, ct),
-            CheckExpositionDensityAsync(text, ct),
-            CheckCharacterEmbodimentAsync(text, ct),
-            CheckPacingGearChangeAsync(text, ct),
-            CheckAffectationLinesAsync(text, ct),
-            CheckDramaticQuestionAsync(text, ct),
-            CheckPassiveProtagonistAsync(text, ct),
-            CheckCharacterFunctionTestAsync(text, ct),
-            CheckDialogueSubtextAsync(text, ct),
-            CheckJargonFrontLoadingAsync(text, ct),
+            CheckAntagonistCostAsync(text, ct, maxChars),
+            CheckProtagonistBehaviorChangeAsync(text, ct, maxChars),
+            CheckStakesEmbodimentAsync(text, ct, maxChars),
+            CheckExpositionDensityAsync(text, ct, maxChars),
+            CheckCharacterEmbodimentAsync(text, ct, maxChars),
+            CheckPacingGearChangeAsync(text, ct, maxChars),
+            CheckAffectationLinesAsync(text, ct, maxChars),
+            CheckDramaticQuestionAsync(text, ct, maxChars),
+            CheckPassiveProtagonistAsync(text, ct, maxChars),
+            CheckCharacterFunctionTestAsync(text, ct, maxChars),
+            CheckDialogueSubtextAsync(text, ct, maxChars),
+            CheckJargonFrontLoadingAsync(text, ct, maxChars),
         };
 
         var checks = (await Task.WhenAll(checkTasks)).ToList();
@@ -153,7 +153,7 @@ public class StructuralDiagnosticService
 
     // ── Individual checks (all private, all return StructuralCheck) ───────────
 
-    private Task<StructuralCheck> CheckAntagonistCostAsync(string text, CancellationToken ct) =>
+    private Task<StructuralCheck> CheckAntagonistCostAsync(string text, CancellationToken ct, int maxChars = 40000) =>
         RunCheckAsync(
             name: "AntagonistCost",
             description: "Antagonist forces protagonist to NOT do something on-page.",
@@ -164,7 +164,7 @@ You are a structural editor. Read this prose and answer ONE question:
 Does the antagonist (or opposing force) force the protagonist to refrain from doing something they wanted to do — on the page, in this chapter? Not off-screen, not implied, not "they thought about it" — the protagonist STARTS to act and STOPS because of the antagonist's presence or action.
 
 TEXT:
-{{Truncate(text)}}
+{{Truncate(text, maxChars)}}
 
 Respond ONLY with this JSON (no prose, no markdown):
 {
@@ -177,7 +177,7 @@ pass = clear on-page cost. warn = ambiguous or off-screen. fail = no antagonist 
 """,
             ct);
 
-    private Task<StructuralCheck> CheckProtagonistBehaviorChangeAsync(string text, CancellationToken ct) =>
+    private Task<StructuralCheck> CheckProtagonistBehaviorChangeAsync(string text, CancellationToken ct, int maxChars = 40000) =>
         RunCheckAsync(
             name: "ProtagonistBehaviorChange",
             description: "Protagonist does something differently by end of chapter.",
@@ -188,7 +188,7 @@ You are a structural editor. Read this prose and answer ONE question:
 Does the protagonist's observable BEHAVIOR change by the end of the chapter? Not their thoughts, not their mood — their actual actions. Do they make a different kind of choice, take a different kind of action, or abstain from something they would have done before?
 
 TEXT:
-{{Truncate(text)}}
+{{Truncate(text, maxChars)}}
 
 Respond ONLY with this JSON (no prose, no markdown):
 {
@@ -201,7 +201,7 @@ pass = clear behavior change. warn = subtle or internal only. fail = same behavi
 """,
             ct);
 
-    private Task<StructuralCheck> CheckStakesEmbodimentAsync(string text, CancellationToken ct) =>
+    private Task<StructuralCheck> CheckStakesEmbodimentAsync(string text, CancellationToken ct, int maxChars = 40000) =>
         RunCheckAsync(
             name: "StakesEmbodiment",
             description: "Stakes shown through behavior/consequence, not only stated.",
@@ -212,7 +212,7 @@ You are a structural editor. Read this prose and answer ONE question:
 Are the stakes in this chapter embodied — shown through the protagonist's choices, fears, or physical reactions — or are they only stated (this was dangerous, this mattered, there was a lot at risk)?
 
 TEXT:
-{{Truncate(text)}}
+{{Truncate(text, maxChars)}}
 
 Respond ONLY with this JSON (no prose, no markdown):
 {
@@ -225,7 +225,7 @@ pass = stakes are embodied. warn = mixed. fail = stakes are purely stated or ass
 """,
             ct);
 
-    private Task<StructuralCheck> CheckExpositionDensityAsync(string text, CancellationToken ct) =>
+    private Task<StructuralCheck> CheckExpositionDensityAsync(string text, CancellationToken ct, int maxChars = 40000) =>
         RunCheckAsync(
             name: "ExpositionDensity",
             description: "Chapter not dominated by information transfer over embodied action.",
@@ -236,7 +236,7 @@ A) Exposition: reading, thinking, reviewing data, processing information, intern
 B) Action: physical events, decisions, dialogue, embodied moments
 
 TEXT:
-{{Truncate(text)}}
+{{Truncate(text, maxChars)}}
 
 Respond ONLY with this JSON (no prose, no markdown):
 {
@@ -250,7 +250,7 @@ Set exposition_pct to an integer 0-100. pass = under 50%. warn = 50-70%. fail = 
 """,
             ct);
 
-    private Task<StructuralCheck> CheckCharacterEmbodimentAsync(string text, CancellationToken ct) =>
+    private Task<StructuralCheck> CheckCharacterEmbodimentAsync(string text, CancellationToken ct, int maxChars = 40000) =>
         RunCheckAsync(
             name: "CharacterEmbodiment",
             description: "Named characters have at least one involuntary/physical moment.",
@@ -261,7 +261,7 @@ You are a structural editor. Read this prose and answer ONE question:
 Do the named characters (beyond the protagonist) have at least one involuntary or physical moment — a gesture they didn't plan, a vocal quality, a physical reaction — that isn't plot-functional? Or do they exist purely to deliver information and plot?
 
 TEXT:
-{{Truncate(text)}}
+{{Truncate(text, maxChars)}}
 
 Respond ONLY with this JSON (no prose, no markdown):
 {
@@ -274,7 +274,7 @@ pass = at least one secondary character has an involuntary physical moment. warn
 """,
             ct);
 
-    private Task<StructuralCheck> CheckPacingGearChangeAsync(string text, CancellationToken ct) =>
+    private Task<StructuralCheck> CheckPacingGearChangeAsync(string text, CancellationToken ct, int maxChars = 40000) =>
         RunCheckAsync(
             name: "PacingGearChange",
             description: "Chapter has at least one shift in rhythm or emotional register.",
@@ -285,7 +285,7 @@ You are a structural editor. Read this prose and answer ONE question:
 Does the chapter have at least one meaningful gear change — a shift in pacing, tension level, or emotional register? Or does it run at one speed and one tone from start to finish?
 
 TEXT:
-{{Truncate(text)}}
+{{Truncate(text, maxChars)}}
 
 Respond ONLY with this JSON (no prose, no markdown):
 {
@@ -298,7 +298,7 @@ pass = clear gear change present. warn = minor or subtle shift only. fail = sing
 """,
             ct);
 
-    private Task<StructuralCheck> CheckAffectationLinesAsync(string text, CancellationToken ct) =>
+    private Task<StructuralCheck> CheckAffectationLinesAsync(string text, CancellationToken ct, int maxChars = 40000) =>
         RunCheckAsync(
             name: "AffectationLines",
             description: "No lines using parallel-fragment tautology or abstract reach-for-profundity.",
@@ -311,7 +311,7 @@ You are a line editor. Find lines that:
 - Use abstract nouns in pairs to simulate depth ("There was loss. There was distance.")
 
 TEXT:
-{{Truncate(text)}}
+{{Truncate(text, maxChars)}}
 
 Respond ONLY with this JSON (no prose, no markdown):
 {
@@ -324,7 +324,7 @@ pass = no affectation. warn = 1-2 instances. fail = 3+ instances or one severe o
 """,
             ct);
 
-    private Task<StructuralCheck> CheckDramaticQuestionAsync(string text, CancellationToken ct) =>
+    private Task<StructuralCheck> CheckDramaticQuestionAsync(string text, CancellationToken ct, int maxChars = 40000) =>
         RunCheckAsync(
             name: "DramaticQuestion",
             description: "Chapter has a clear question it is answering.",
@@ -335,7 +335,7 @@ You are a structural editor. Read this prose and answer ONE question:
 Can you state in one sentence the dramatic question this chapter is asking and answering? For example: Will Seto find out who sent the message? Can Amara keep her discovery hidden from Ciro? Or does the chapter feel like accumulation without a question driving it?
 
 TEXT:
-{{Truncate(text)}}
+{{Truncate(text, maxChars)}}
 
 Respond ONLY with this JSON (no prose, no markdown):
 {
@@ -348,7 +348,7 @@ pass = clear question. warn = question exists but is buried. fail = no discernib
 """,
             ct);
 
-    private Task<StructuralCheck> CheckPassiveProtagonistAsync(string text, CancellationToken ct) =>
+    private Task<StructuralCheck> CheckPassiveProtagonistAsync(string text, CancellationToken ct, int maxChars = 40000) =>
         RunCheckAsync(
             name: "PassiveProtagonist",
             description: "Protagonist acts more than they react.",
@@ -359,7 +359,7 @@ You are a structural editor. Read this prose and answer ONE question:
 Is the protagonist mostly reactive — do things happen TO them (messages arrive, events occur, information surfaces) more than the protagonist CAUSES things to happen? A protagonist who only receives, discovers, and processes is passive even when doing technical work.
 
 TEXT:
-{{Truncate(text)}}
+{{Truncate(text, maxChars)}}
 
 Respond ONLY with this JSON (no prose, no markdown):
 {
@@ -372,7 +372,7 @@ pass = protagonist causes more than reacts. warn = roughly balanced. fail = most
 """,
             ct);
 
-    private Task<StructuralCheck> CheckCharacterFunctionTestAsync(string text, CancellationToken ct) =>
+    private Task<StructuralCheck> CheckCharacterFunctionTestAsync(string text, CancellationToken ct, int maxChars = 40000) =>
         RunCheckAsync(
             name: "CharacterFunction",
             description: "Secondary characters have detail beyond their plot function.",
@@ -383,7 +383,7 @@ You are a structural editor. Read this prose and answer ONE question:
 For each named secondary character, does the text give them at least ONE detail that isn't required by the plot — a word choice, a physical habit, a response that's slightly off the expected pattern? Or does every secondary character exist only to do their plot job and disappear?
 
 TEXT:
-{{Truncate(text)}}
+{{Truncate(text, maxChars)}}
 
 Respond ONLY with this JSON (no prose, no markdown):
 {
@@ -396,7 +396,7 @@ pass = at least one secondary character has non-functional detail. warn = border
 """,
             ct);
 
-    private Task<StructuralCheck> CheckDialogueSubtextAsync(string text, CancellationToken ct) =>
+    private Task<StructuralCheck> CheckDialogueSubtextAsync(string text, CancellationToken ct, int maxChars = 40000) =>
         RunCheckAsync(
             name: "DialogueSubtext",
             description: "Dialogue carries subtext, not just information.",
@@ -407,7 +407,7 @@ You are a dialogue editor. Read this prose and answer ONE question:
 Does the dialogue in this chapter have any subtext — things people mean but don't say, social friction, evasion, deflection, or emotion underneath the words? Or is every line of dialogue purely information exchange (question then answer, request then confirmation)?
 
 TEXT:
-{{Truncate(text)}}
+{{Truncate(text, maxChars)}}
 
 Respond ONLY with this JSON (no prose, no markdown):
 {
@@ -420,7 +420,7 @@ pass = subtext present. warn = minimal. fail = all dialogue is pure information 
 """,
             ct);
 
-    private Task<StructuralCheck> CheckJargonFrontLoadingAsync(string text, CancellationToken ct) =>
+    private Task<StructuralCheck> CheckJargonFrontLoadingAsync(string text, CancellationToken ct, int maxChars = 40000) =>
         RunCheckAsync(
             name: "JargonFrontLoading",
             description: "Technical jargon is not front-loaded before reader investment.",
@@ -479,7 +479,7 @@ Set jargon_count to an integer. pass = 0-2 jargon terms before first physical be
 
     // ── Helpers ───────────────────────────────────────────────────────────────
 
-    private static string Truncate(string text, int maxChars = 8000) =>
+    private static string Truncate(string text, int maxChars = 40000) =>
         text.Length <= maxChars ? text : text[..maxChars] + "\n[... truncated for diagnostic ...]";
 
     private static string ExtractJson(string raw)
