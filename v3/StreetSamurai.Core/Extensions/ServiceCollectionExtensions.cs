@@ -716,6 +716,13 @@ public static class ServiceCollectionExtensions
         services.AddSingleton<StrandMarkdownExporter>();
         services.AddSingleton<DocxExportService>();
         services.AddSingleton<ManuscriptExportService>();
+        services.AddSingleton<AudiblePackageService>(sp =>
+            new AudiblePackageService(
+                sp.GetRequiredService<IDbContextFactory<StreetSamuraiDbContext>>(),
+                sp.GetRequiredService<StrandWorkbenchService>(),
+                sp.GetRequiredService<SettingsService>(),
+                sp.GetRequiredService<ILogger<AudiblePackageService>>(),
+                sp.GetService<ILlmService>()));
         services.AddSingleton<VoiceHarvestService>();
         services.AddSingleton<CanonRetrievalService>();
         services.AddSingleton<CanonContradictionService>();
