@@ -59,11 +59,23 @@ Pixel was quiet after it stopped. Kyle didn't ask what she was thinking.
 [Beat 5]
 They came out through the Clybourn access in the late afternoon, the four of them, back into the light and the synthesis-corridor air and the ordinary noise of the district. Fonu had logged it — entry in the maintenance record system, timestamped, with a note that the work order had been completed by the assigned unit and the unit was now in completion standby pending decommission instructions that would arrive whenever the infrastructure authority got around to noticing.
 
-Pixel walked with Kyle for half a block before the crew split off.
+Pixel walked with Kyle for a block before the crew split off. Fonu went north. Moss had already gone south. The synthesis-corridor air was doing its late-afternoon thing — slightly warmer than the understructure and slightly colder than anywhere you actually wanted to be.
 
 "Standard rate?" she said.
 
 "Standard rate," Kyle said. "I touched it at standard rate."
 
-She nodded.
+She stopped at the intersection. Not at the signal — just where she needed to stop.
+
+"1.4 seconds," she said.
+
+"The overlay came back clean."
+
+"I know." She was looking at the signal. "I just wanted to say it out loud."
+
+Kyle said: "The machine finished."
+
+Pixel looked at him for a moment — the straight unfiltered look she used when she was deciding something. Then: "It finished," she said.
+
+The signal changed. She turned north. He watched her go for a moment, then turned south toward the El. The maintenance log had the completion on record, timestamped, alongside thirty years of data that nobody had read. The 1.4 seconds were in his own log. He kept both.
 

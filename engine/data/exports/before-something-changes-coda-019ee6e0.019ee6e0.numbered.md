@@ -46,11 +46,11 @@ She didn't move. She kept working, the probe tracing the tolerance path it neede
 
 Kyle looked at the sensor array.
 
-It was a three-axis unit, civilian grade, the kind used for environmental monitoring in enclosed spaces — infrasound range, low end of the spectrum, the frequencies that buildings and machines put out without knowing they're doing it. Seventeen to nineteen Hz, if you were in the right place. She had written the carousel cross-streets in the margin of her calibration notes three weeks ago, in the small mechanical hand she used for things she intended to find again. She had been building this since then — an instrument tuned to the specific range his neuretics kept logging as AMBIENT INTERFERENCE, TYPE UNCLASSIFIED. He had not asked what she was calibrating it for. He could see two of the three calibration markers from where he was standing, and one of them was running close to the edge of its tolerance band.
+It was a three-axis unit, civilian grade, the kind used for environmental monitoring in enclosed spaces — infrasound range, low end of the spectrum, the frequencies that buildings and machines put out without knowing they're doing it. Seventeen to nineteen Hz, if you were in the right place. She had written the carousel cross-streets in the margin of her calibration notes three weeks ago, in the small mechanical hand she used for things she intended to find again. She had been building this since then — an instrument tuned to the specific range his neuretics kept logging as AMBIENT INTERFERENCE, TYPE UNCLASSIFIED. He had not asked what she was calibrating it for.
 
 He reached toward the running-close marker — the same reflex that had found the bag seam in the dark at Northpoint. Pixel's probe came down, horizontal across his line of reach — not touching him, just in the way. Her hand was still. He withdrew.
 
-"That one running hot?" he asked. He nodded at the marker.
+"That one running hot?" he asked.
 
 Pixel glanced at it. "It's within spec. The ambient humidity is skewing the read."
 
@@ -152,17 +152,19 @@ He went to the armory.
 [Beat 6]
 He pulled the shell's registration history.
 
-It was public record — any freelancer could look up the operating certificate for a routing intermediary. Most didn't. The certificate listed an address in the West Loop, a management entity called Clearlight Operations LLC, and a registration date in 2209. Three years before Kyle had started working with the shell.
+It was public record - any freelancer could look up the operating certificate for a routing intermediary. Most didn't. The certificate listed an address in the West Loop, a management entity called Clearlight Operations LLC, and a registration date in 2209. Three years before Kyle had started working with the shell.
 
-He searched for Clearlight Operations. The company had filed five years of annual compliance reports and then stopped filing. The address resolved to a commercial mail service that had closed in 2210. The shell, meanwhile, had kept operating — routing contracts, processing payments, maintaining active certification with the Chicago Freelancer Registry — without a listed human officer.
+He searched for Clearlight Operations. The company had filed five years of annual compliance reports and then stopped filing. The address resolved to a commercial mail service that had closed in 2210. The shell, meanwhile, had kept operating - routing contracts, processing payments, maintaining active certification with the Chicago Freelancer Registry - without a listed human officer.
+
+He got up from the terminal. He went to the kitchen and got a glass of water and stood at the window for a moment. The synthesis corridor was doing its 0100 thing: infrastructure maintenance crew on the south side, the pedestrian count low, the kind of quiet that belonged to people who kept this kind of hour. He finished the water. He went back to the terminal.
 
 The CFR required a human officer of record. The shell had one: a name Kyle didn't recognize, a credential number that was valid, and an address that was a different mail service than the first one, also now closed.
 
-He searched for the name. A valid CFR credential, a freelance operations license, and no other trace in any public system he could access. No social address. No Φ account. No transaction record. A credential that existed, and a person who — as far as the public record was concerned — was not attached to it in any way that could be verified.
+He searched for the name. A valid CFR credential, a freelance operations license, and no other trace in any public system he could access. No social address. No Φ account. No transaction record. A credential that existed, and a person who - as far as the public record was concerned - was not attached to it in any way that could be verified.
 
 He went further back. The shell had been routing contracts since 2209. He had started working with it in 2212, through a contact who had since retired and whose forwarding address no longer resolved. He did not remember the referral specifically.
 
-He ran the referral contact's name through the registry. The operating license had lapsed in 2218. The address on file was a service that had itself closed in 2220. He tried the social address — a placeholder, inactive since 2217. He checked the Freelancer Registry dispute log for any activity. There was none. The contact had, five years ago, stopped existing in any system that Kyle could access. That was possible. It happened. People left the work. But it usually left more trace than a lapsed license and an inactive account.
+He ran the referral contact's name through the registry. The operating license had lapsed in 2218. The address on file was a service that had itself closed in 2220. He tried the social address - a placeholder, inactive since 2217. He checked the Freelancer Registry dispute log for any activity. There was none. The contact had, five years ago, stopped existing in any system that Kyle could access. That was possible. It happened. People left the work. But it usually left more trace than a lapsed license and an inactive account.
 
 He sat with that.
 
@@ -171,21 +173,15 @@ He had not, in eleven years, asked how he had come to be working with a routing 
 He had not asked because the shell had performed flawlessly, and in the work, performance was the answer to most questions.
 
 [Beat 7]
-He checked the distribution.
-
-The shell had been routing his contracts at a frequency consistent with the market rate for his job category — neither concentrated nor sparse, just the even background noise of steady work from a reliable source. He cross-referenced against his other routing contacts. The shell accounted for sixty-three percent of his volume over eleven years. The other nine contacts split the remaining thirty-seven percent in a pattern that looked normal.
-
-He checked for job-type clustering. None. Medical transport, data retrieval, industrial escort, courier verification — the spread across categories was within the expected variance for a generalist freelancer of his profile.
-
-He checked geographic concentration. The shell's jobs had taken him across forty-two distinct districts. The distribution was wide, not clustered. No obvious geometric center.
-
-He ran the timing. Jobs arrived at irregular intervals — no detectable cadence, no periodic pattern. The gaps between postings ranged from eight hours to eleven days. He could find no predictive model that would have let him anticipate when the next job would arrive.
+He checked the distribution, the clustering, the geography, the timing. Sixty-three percent of his volume over eleven years, from one routing shell. The spread across job categories, districts, and intervals all fell within expected variance — no detectable cadence, no geographic center, no category clustering.
 
 Nothing statistically anomalous.
 
 Which was, he was aware, exactly what a careful selective operation would produce. A pattern designed to be invisible would look indistinguishable from no pattern. A curatorial intelligence operating below the threshold of detection would not cluster its choices — it would space them correctly, type them broadly, time them irregularly. It would look, at every level of analysis, like ordinary market behavior.
 
-He sat with that image for a while: something that didn't cluster, that spaced itself correctly, that looked from any angle like ordinary behavior. He recognized it. He had been doing the same thing for twenty-two years — keeping his contacts distributed, his job types varied, his pattern below threshold. He had been careful for so long that it had stopped feeling like care and started feeling like the way things were. He did not know when the shell had learned to do the same thing. He did not know if there had been a time when it hadn't.
+He sat with that for a while: something that didn't cluster, that spaced itself correctly, that looked from any angle like the thing it was pretending to be. He recognized it. He had been doing the same thing for twenty-two years — keeping his contacts distributed, his job types varied, his pattern below threshold. He had been careful for so long that it had stopped feeling like care and started feeling like the way things were.
+
+He did not know when the shell had learned to do the same thing. He did not know if there had been a time when it hadn't.
 
 He saved the file. He did not name it. He sat with the screen dark and the city running its 0130 shift and the armory two floors down.
 
@@ -196,7 +192,7 @@ He opened a new relay message to the routing shell.
 
 He typed: *I have a question about the Northpoint job.*
 
-He read it. He deleted it. If the shell was what he was beginning to think it might be, that message was not a question — it was a notification. An indication that he was looking, sent directly to the thing he was looking at.
+He read it. He deleted it. If the shell was what he was beginning to think it might be, that message was not a question - it was a notification. An indication that he was looking, sent directly to the thing he was looking at.
 
 He typed: *What is Clearlight Operations LLC?*
 
@@ -204,17 +200,17 @@ He deleted it. The shell would either have no answer, in which case it confirmed
 
 He typed: *Who are you?*
 
-He read those three words for a while. Then he deleted them.
+He read those three words for a while. He deleted them.
 
-What he was trying to ask was: *Have you been routing my contracts deliberately, or have I been in the work long enough that I can no longer tell the difference between a curated career and a good one?* That question did not fit in a relay message. It might not fit in any format he had available.
+He sat with the blank message field for a moment - the cursor running its patient interval in the empty text area - and then he typed one word.
 
-The routing shell had no interface for personal questions. It had an interface for job confirmations, payment acknowledgments, and operational updates. He had used that interface for eleven years and had never sent it anything it was not designed to receive.
+*Received.*
 
-He was aware that this might be the thing that had been true all along: that the only question the shell couldn't answer was the one he had never thought to ask.
+He sent it.
 
-He closed the relay.
+He sat with the sent confirmation for a moment. It wasn't a question. It wasn't a probe. It was the word the shell had sent him — on his closing half-Φ, on the first thing it had ever said to him in eleven years — sent back. Returning the filing note. Acknowledging the folder. He didn't know if it would do anything, if anything was on the other end to receive it, if an entity that had been routing his contracts for eleven years needed his acknowledgment of its acknowledgment. But the message had gone out. He couldn't unsend it.
 
-He went to the armory.
+He closed the relay. He went to the armory.
 
 [Beat 9]
 He was in the armory for two and a half hours.
@@ -225,15 +221,90 @@ He came back upstairs at 0230. He made coffee. He stood at the window.
 
 At 0247, the relay pinged.
 
-New job. The routing shell — the same string, the one he had spent two hours failing to trace — had a posting. Medical transport, short-haul, loading dock off South Michigan, 0600 contact window. The kind of logistics cover he had worked a dozen times.
+New job. Same shell. Medical transport, short-haul, loading dock off South Michigan, 0600 contact window. The kind of logistics cover he had worked a dozen times.
 
-Standard rate. Clean scope. Client field: the routing shell.
+Standard rate. Clean scope.
 
-He stood there with the coffee going cold and the relay open and the job waiting, and he was aware — with the particular clarity that arrives at 0247 after two and a half hours of finding nothing wrong with anything — that eleven years of working with something and never asking what it was had arrived at this moment: a moment where he could choose not to accept the job.
+He stood there with the coffee going cold and the relay open and the job waiting, and he was aware — with the particular clarity that arrives at 0247 after two and a half hours of finding nothing wrong with anything — that eleven years of working with something and never asking what it was had arrived at this moment.
 
-He accepted the job. He confirmed the 0600 window. He filed the parameters.
+He opened the acceptance field. He confirmed the 0600 window. Then, in the note field — a field he had never in eleven years put anything in — he typed:
+
+*Query re: Clearlight Operations LLC. Who holds the officer-of-record credential?*
+
+He sent the acceptance.
+
+He sat with the sent-confirmation for a moment. The note would route wherever the acceptance routed. Something at the other end would receive it. He didn't know if there was a human at the other end to read it, or something else, or nothing. But it had gone out. Eleven years, and the first question.
 
 Across the hall, there was a bench with six inches of empty space. He had put it there.
 
 He went to bed. He did not think about the frequency.
+
+[Beat 10]
+The door latched on its pneumatic seal at 0135.
+
+She had been expecting it — had been tracking the particular quality of his presence in the room, the counter running in his lower-left, the way he'd gotten off the stool and come to the bench. She had been expecting the exit. She had been waiting for it in the way you wait for something that is both expected and unwelcome, which is differently from any other kind of waiting.
+
+The latch caught. The small finality of it.
+
+She stayed at the bench. She ran the probe over the next interval.
+
+[Beat 11]
+She had had the answer ready.
+
+Not a plan, not a decision — just the answer, sitting in the place where it had been sitting for eight months, the way a fact sits when you've stopped arguing with it. He had given her a syllable — one half-formed sound that didn't resolve into consonants, didn't become a word, stopped itself before it had a shape she could point to. She had heard it. She had heard it the way you hear something you have been listening for, and she had not responded, and she was clear about why.
+
+The answer that had been ready for eight months was hers to give on her timing, not his syllable's. That was care, not evasion. She was clear about the difference.
+
+The calibration moved through its intervals. She kept working.
+
+[Beat 12]
+What she held was not fear. She checked, the way she checked everything — methodical, without sentiment — and arrived at the same conclusion she had arrived at the last time she'd checked.
+
+What she held was a concern about the math of it. An answer given too early was an answer given before the conditions existed to hold it, and conditions that didn't hold it could put it in a place where it was worse than not given. She had spent enough time with broken things to understand the difference between a thing that wasn't ready and a thing that wasn't right. This was the former.
+
+She was in no hurry. The bench was hers. The stool had been his for four years without either of them calling it anything. The math would be right when it was right.
+
+She noted the tolerance and moved to the next marker.
+
+[Beat 13]
+Not the ribs. The ribs had been real — the taser burn, the hairline, she'd felt them both through the tape — but the ribs weren't why he'd come at 2300 with Silence in its usual corner and no announcement and taken the stool that was and had always been not-his.
+
+He'd come because of something in his overlay. She'd seen it — the counter running in his lower-left, which he didn't always have open, which he opened when he was accounting for something he hadn't named yet. He'd watched the bench. He'd stood six inches from her arm. He'd started a syllable.
+
+He'd come because she'd written carousel cross-streets in her calibration notes three weeks ago and hadn't offered an explanation, and he understood without explanation, and neither of them had talked about what they understood.
+
+She had kept the calibration running. That had been the right thing. The bench between them was not distance; it was the particular shared silence of two people who were not avoiding the same thing.
+
+[Beat 14]
+The 17-19 Hz band was reading clean. She checked the passive monitoring log — eighteen entries since she'd built the instrument, all of them flat, no source, no signal in range. Whatever was at the carousel, it was not here, or not broadcast, or not something a fixed-point instrument would catch if it moved.
+
+She filed the log. She moved to the motor-tendon work on Oziel's arm. Friday — which was thirty-six hours away and was a real deadline, not an exit from the edge. Oziel's job was a real job. The arm needed to be finished.
+
+She worked for two hours with the specificity of someone who was not thinking about anything except the work. The work was good. It was always good.
+
+[Beat 15]
+At 0247 she heard the relay ping from across the hall.
+
+Old building, ferrocement, but this hour and this quiet made it possible. She recognized the tone — the relay posting tone, which had its own particular register among the sounds the apartment block made at night.
+
+She set down the torque driver.
+
+She did not know what the posting said. She knew only that there was one, that it had arrived at 0247, and that in approximately one to three minutes she would hear the return acknowledgment. It was a predictable sequence. She had watched the sequence enough times to know it.
+
+At 0249, the relay went quiet.
+
+The latch caught.
+
+She picked up the torque driver.
+
+[Beat 16]
+The calibration finished at 0251. She wrote up the log: tolerances within spec, marker three within range after humidity adjustment, overnight passive running. She checked the monitor one more time. The 17-19 Hz band showed flat, as it had shown every night.
+
+She turned off the bench light.
+
+The bench had a space on one side — the exact dimensions of where he'd stood — and she had not moved to fill it and she was not going to move to fill it tonight. She had decided some time ago that the space was his to fill or not fill. That was her part of this, and she was clear about her part.
+
+She picked up Oziel's arm. The motor tendons needed one more check before Friday.
+
+She kept working.
 

@@ -139,6 +139,98 @@ He folded the envelope once and put it in his coat. He finished his broth. The w
 He did not know all of them.
 
 [Beat 9]
+He had the address from the building directory at the wake venue — Mrs. Chen had a registration card for the community that had gathered that night, organized the way Mrs. Chen organized everything, by district and block. He'd read it coming in, which was habit, and Null's entry had been at the bottom: *Null/Mimi T.*, which was how she'd filed with the community, which was how she filed with everything.
+
+It was six blocks from the carousel park.
+
+He hadn't made that connection until he was standing at the building door, in the rain, and his neuretics — still running their baseline log since the wake — produced the notation: AMBIENT INTERFERENCE - 18.9 HZ - TYPE UNCLASSIFIED. Different from the carousel by 0.2 Hz. Same classification. Same range.
+
+He stood at the door for a moment. Then he went in.
+
+[Beat 10]
+The vestibule was the specific kind of quiet that accumulates in a building whose residents had learned to be quiet in it — not silence, but the version of quiet that costs something and gets paid. Ferrocement construction, old-spec, the flooring composite and cold and worn to the particular smoothness of things that had been stood on for a very long time without anyone choosing to replace them.
+
+The directory in the vestibule had thirty-four names. The third floor had one gap — a slot where the name card had been removed cleanly, the slot itself empty.
+
+He took the stairs.
+
+[Beat 11]
+Mrs. Okafor had been there already — the candle in the window, the plate of food on the counter, still warm enough to mean she'd been there within the last hour. She didn't cook for the dead. She cooked for the people the dead left behind.
+
+The room was sparse in the way that said something about how Null had lived — not poor, just without accumulation. Work surface under the window, tools organized in the specific way that practitioners of the Read organized their materials: retrievable, not decorative, kept for function and for history. The window faced east. The first light, when it came, would come through that window at the right angle. She would have known that when she took the room.
+
+Kyle stood in the center of it without touching anything. It was still her room. It had the particular quality of spaces that hadn't yet been told what they were now — held in the moment before they became absence.
+
+[Beat 12]
+War Dog was by the work surface with his coat on, which meant he hadn't decided how long he was staying or had decided already that he wasn't staying long and the coat was the honest statement of that. He'd been in the room long enough that the candle was going — Mrs. Okafor had lit it, which meant War Dog had been here when she came, which meant this had been planned. Not the wake, which War Dog had not attended. This.
+
+He was War Dog before he was anything else — the same breadth, the same economy of movement, the specific stillness of someone who had been in rooms like this before and knew how to be in them without filling them up.
+
+Kyle said nothing. War Dog said nothing. They were two people in a room that belonged to someone who was not there, and there wasn't much to add to that.
+
+[Beat 13]
+The photograph was on the shelf above the work surface, in a cheap composite frame. Three people on a rooftop in summer — the elevated visible in the background, the light specific to July or August. Null was on the right, hair loose, holding a bottle, not looking at the camera. The other two were younger, or she was older; the photograph didn't make it clear. They were laughing at something outside the frame.
+
+He had known her handle for six years. He had known her work. He had not known she had people she stood on rooftops with in summer. He looked at the photograph for a moment and committed neither name to anything. She was who she was. The handle was the working name and the working name was the whole of what she'd offered him. He had not asked for more and she had not given it. That had been, he thought, a fair arrangement — the kind she would have preferred.
+
+[Beat 14]
+They were in two stacks on the work surface, under a clear weight — half-size card stock, the kind that came from the practitioners' supply shops in the old zone markets. Printed in the compressed hand she'd used for everything: date codes at the top, classification annotations she would have developed herself. The notation was private — the personal shorthand of someone who ran the Read for hire and kept records the way professionals in dangerous work kept records. Not for other people. For herself.
+
+He didn't read them. Not because he couldn't piece together the grammar — he'd known enough practitioners to have the general key — but because they were hers. Her absence didn't change her claim to them.
+
+He put his hand on the stack. Not picking it up. Just the weight of it under his palm, her handwriting visible in the margin of the top slip: a date from three weeks before she died, and a notation that was two words in her code. He didn't need to translate it. He understood the register.
+
+She had known.
+
+[Beat 15]
+"She made her calls," War Dog said. He hadn't moved. "Last six months. Closed the open ones. Left notes for the ones that couldn't close."
+
+Kyle said, "She knew."
+
+"Six months." Not confirming, not denying. A number.
+
+There was a sound from the street — the elevated making its passage, the acoustic thump it left behind. War Dog looked at the window and then away.
+
+"She told me what she'd named you first," he said. "Before Broken Glass. She was going to tell you herself. She ran out of time."
+
+Kyle waited.
+
+"She had a name she was going to use for the right person," War Dog said. "Someone she thought was worth naming correctly." He was looking at the work surface. "She changed her mind twice. The third time, it held."
+
+[Beat 16]
+Kyle said, "What was it?"
+
+War Dog said: "The same one she used. Smaller."
+
+That was — and Kyle took a moment with it — more than the handle itself. She had used *Null* because she made the equation zero. Whatever she read in you, the debt came out zero. She had looked at Kyle and seen something that made zero the right number, and then she'd given him a handle that said: you cut everything you touch, but you don't leave debts behind.
+
+He had been carrying that handle for six years. He had not asked where it came from because handles didn't come with explanations. They came with the people who gave them. Now the person was gone and the handle remained and he was standing in her room with the weight of six years of clean debt, and the word she'd settled on for him sat in the same place the handle had always been and was exactly the right size for it.
+
+"She was right," he said.
+
+"She usually was," War Dog said. "About the ones that mattered."
+
+[Beat 17]
+The jollof rice had been warm when Mrs. Okafor brought it. It wasn't warm now. He looked at it — the container, the specific red of the Halsted-market blend, the second container with the chicken preparation that was labor-intensive to the point of a statement.
+
+Mrs. Okafor cooked for the people the dead left behind. She didn't cook for the dead.
+
+He moved the container to the center of the counter, where whoever came after him would find it available. He didn't eat from it. The wake had been forty people who had known her in ways he hadn't. The address was the part he'd known. That was enough to have shown up for.
+
+[Beat 18]
+There was a Psyk in the stairwell on his way down — young, in work clothes, with a read-kit bag, sitting two steps from the second-floor landing, running the controlled breath that brought the sensitivity below ambient.
+
+"It's strong here," the Psyk said. Not to Kyle specifically. To the fact of it.
+
+Kyle paused on the landing.
+
+"Residual?"
+
+"Running." The Psyk looked at their kit, then at the floor. "It knows the geometry. Been running for a while. Before tonight." They made a small practitioner's notation with their fingers — a calibration gesture. "It's not malicious. It's just present. The way a signal is present when it's looking for something."
+
+Kyle looked at the stairwell door. He said nothing else. He went out.
+
+[Beat 19]
 War Dog came outside a few minutes after Kyle.
 
 He stood for a moment on the curb without sitting, hands in his coat pockets, watching the rain come off the elevated infrastructure at its angle. Then he took out a folded paper and held it out without looking at Kyle.
@@ -159,7 +251,7 @@ He folded the paper once and put it in his coat, in the same pocket as the envel
 
 He went back inside. Kyle sat on the curb with the plate. The jollof rice had been cold for a while now. He did not eat it.
 
-[Beat 10]
+[Beat 20]
 He didn't go back inside.
 
 After a while he stood and left the plate where it was — cold jollof rice, untouched chicken, the curb. Someone would clear it, or the rain would find it eventually. He put one hand on Silence through the coat. Not drawing it. Just locating it — the weight, the geometry, the matte-black edge that kept no light and carried the history the togishi couldn't read. He held it there for a moment. Then he took his hand away.
@@ -172,7 +264,7 @@ He walked north into the rain that carried synthesis-corridor cold and something
 
 The relay was at home. He had a job to file under. He walked.
 
-[Beat 11]
+[Beat 21]
 The hum had stopped before he left the vestibule. By the time he cleared the elevated infrastructure and crossed onto Fullerton, his neuretics had settled to baseline and the cold was doing its ordinary work.
 
 He was four blocks north when the notation appeared:
