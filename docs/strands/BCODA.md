@@ -128,7 +128,7 @@ Chapter slugs, beat counts, and scores as of 2026-06-23:
 | 8 | Before Something Changes | 16 | 82.7 | Kyle sends forensic query on job acceptance; Pixel's parallel perspective |
 | 9 | The Interview | 8 | 83.9 | Lotus corridor; entity sends "CORRIDOR AUDIT COMPLETE. THE CHOICE AT 6.2% IS LOGGED." |
 | 10 | The One Who Doesn't Stop | 32 | 83.0 | Arcturus; ELF latches; Kyle broken |
-| 11 | Across the Hall | 8 | 78.1 | CONSUMMATION — LOCKED per author directive; exempt from ≥82% requirement |
+| 11 | Across the Hall | 8 | 83.0 | CONSUMMATION — LOCKED placement; rewritten 2026-06-23; 78.1→83.0 |
 | 12 | One Shoe | 13 | 82.8 | Mortality reveal; Pixel opens Clybourn permit at 02:14 |
 | 13 | The Offer | 16 | 84.2 | **THE REVEAL**: "Your contracts do not come from people" |
 | 14 | Two Favors | 5 | 82.2 | Ledger detects ELF |
@@ -179,7 +179,7 @@ G5g ✅ Review all 16 chapters ≥82% standalone; cumulative ≥85% — **COMPLE
 
 **G5g final scores (2026-06-23):**
 - All 15 active chapters ≥82% standalone ✅ (Ch5: 82.3, Ch8: 82.7 — fixed)
-- Ch11 locked at 78.1 — author directive: exempt from ≥82% requirement
+- Ch11 rewritten 2026-06-23: 78.1→**83.0** ✅ (no longer exempt; all 16 chapters ≥82%)
 - Cumulative novel review: **88.8/100** ✅ (target ≥85%; Cluster 0: 90.7, Cluster 1: 87.4)
 
 ## 10. User stories {#SS-BCODA-10}
