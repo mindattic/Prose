@@ -16,31 +16,14 @@ namespace StreetSamurai.Core.Services;
 ///
 /// Audible's AI narration is a closed publisher/ACX program — no API is called here.
 /// The author uploads the .audible.txt directly to the ACX/Audible submission portal.
+///
+/// Narration cleaning is delegated to <see cref="NarrationText.Clean"/> — the single
+/// canonical implementation shared with the audiobook pipeline.
 /// </summary>
 public class AudiblePackageService
 {
-    // ── canon constants ────────────────────────────────────────────────────────
-    // Φ is the QUANTA currency symbol (world rule). In SPOKEN output only we
-    // transform it to the word "QUANTA" so an AI narrator vocalises it correctly.
-    // Canon text and DB are never modified.
-    // ──────────────────────────────────────────────────────────────────────────
-    private static readonly Regex quantaWithNumber =
-        new(@"Φ\s*(\d[\d,\.]*)", RegexOptions.Compiled);
-    private static readonly Regex quantaStandalone =
-        new(@"Φ(?!\s*\d)", RegexOptions.Compiled);
-
-    // Narration-hostile markdown / beat-marker patterns
-    private static readonly Regex beatMarker =
-        new(@"<!--.*?-->", RegexOptions.Compiled | RegexOptions.Singleline);
-    private static readonly Regex markdownHeading =
-        new(@"^#{1,6}\s+", RegexOptions.Compiled | RegexOptions.Multiline);
-    private static readonly Regex boldItalic =
-        new(@"\*{1,3}|_{1,3}|`+", RegexOptions.Compiled);
-    private static readonly Regex listBullet =
-        new(@"^[ \t]*[-*+]\s+", RegexOptions.Compiled | RegexOptions.Multiline);
-    private static readonly Regex sceneBreak =
-        new(@"^[ \t]*(\*\s*\*\s*\*|\*{3,}|◆|~~~|—)[ \t]*$",
-            RegexOptions.Compiled | RegexOptions.Multiline);
+    // Collapse excess blank lines after Clean() joins beats (NarrationText.Clean
+    // handles the per-beat pass; this cleans the joined manuscript).
     private static readonly Regex excessBlankLines =
         new(@"\n{3,}", RegexOptions.Compiled);
 
@@ -189,40 +172,10 @@ public class AudiblePackageService
         return (finalText, wordCount);
     }
 
-    private static string CleanForNarration(string text)
-    {
-        // 1. Strip beat markers (<!-- beat:N:id -->)
-        var s = beatMarker.Replace(text, "");
-
-        // 2. Strip markdown headings
-        s = markdownHeading.Replace(s, "");
-
-        // 3. Scene-break glyphs → single blank line (voice pause)
-        s = sceneBreak.Replace(s, "\n");
-
-        // 4. Strip bold/italic markers and backticks
-        s = boldItalic.Replace(s, "");
-
-        // 5. Strip list bullets
-        s = listBullet.Replace(s, "");
-
-        // 6. Normalize smart quotes/dashes to ASCII equivalents for TTS safety.
-        //    Preserve meaning; only normalise encoding variants.
-        s = s
-            .Replace('‘', '\'').Replace('’', '\'')  // ' '
-            .Replace('“', '"').Replace('”', '"')     // " "
-            .Replace('–', '-').Replace('—', '-');    // – —
-
-        // 7. QUANTA currency (SPOKEN-only transform — does NOT affect canon).
-        //    Φ20 or Φ 20 → "20 QUANTA"; standalone Φ → "QUANTA".
-        s = quantaWithNumber.Replace(s, "$1 QUANTA");
-        s = quantaStandalone.Replace(s, "QUANTA");
-
-        // 8. Collapse excess blank lines.
-        s = excessBlankLines.Replace(s, "\n\n");
-
-        return s.Trim();
-    }
+    // Narration cleaning is now in NarrationText.Clean (single source of truth).
+    // The manuscript uses Clean only (no speech-pronunciation substitution) so the
+    // written output keeps correct spelling while the TTS path adds ApplySpeechPronunciation.
+    private static string CleanForNarration(string text) => NarrationText.Clean(text);
 
     // ── pronunciation guide builder ────────────────────────────────────────────
 

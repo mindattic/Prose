@@ -1864,8 +1864,16 @@ public class StrandWorkbenchService
 
             await audioStore.WriteCombinedAsync(strand.Slug, ext, finalBytes, ct);
 
-            var dlDir = settings.ResolvePublishOutputDirectory();
-            var dl = Path.Combine(dlDir, $"{SafeFileName(string.IsNullOrWhiteSpace(strand.Title) ? strand.Slug : strand.Title)} V{strand.Version}.{ext}");
+            // Write to the same publish dir/subdir as DocxExportService:
+            //   {PublishExportDirectory}/{SanitizedTitle}/{SanitizedTitle} {EngineLabel} V{N}.{ext}
+            var publishBase = (settings.PublishExportDirectory ?? string.Empty).Trim().Trim('"', '\'').Trim();
+            if (string.IsNullOrWhiteSpace(publishBase))
+                publishBase = Environment.GetFolderPath(Environment.SpecialFolder.Desktop);
+            var safeTitle = SafeFileName(string.IsNullOrWhiteSpace(strand.Title) ? strand.Slug : strand.Title);
+            var strandPubDir = Path.Combine(publishBase, safeTitle);
+            Directory.CreateDirectory(strandPubDir);
+            var engineLabel = ResolveAudioEngineLabel(ttsProvider);
+            var dl = Path.Combine(strandPubDir, $"{safeTitle} {engineLabel} V{strand.Version}.{ext}");
             await File.WriteAllBytesAsync(dl, finalBytes, ct);
 
             strand.CombinedAudioPath = $"{strand.Slug}/strand.{ext}";
@@ -1912,14 +1920,21 @@ public class StrandWorkbenchService
 
     /// <summary>Join a segment's beats into one narration block, inserting an
     /// inline pause between beats so the single recording keeps the strand's
-    /// pacing. Accumulates the spoken char count.</summary>
+    /// pacing. Accumulates the spoken char count.
+    ///
+    /// Each beat's prose is passed through <see cref="NarrationText.Clean"/> to
+    /// strip markdown/beat-markers and normalise punctuation, then the assembled
+    /// segment receives <see cref="NarrationText.ApplySpeechPronunciation"/> to
+    /// fix world-term pronunciations for the TTS engine. Beat entities are never
+    /// mutated — only the transient local strings are transformed.</summary>
     private string AssembleSegmentText(List<OrderedBeat> seg, ref long chars)
     {
         var sb = new System.Text.StringBuilder();
         for (int i = 0; i < seg.Count; i++)
         {
             var beat = seg[i].Beat;
-            var text = (beat.Text ?? "").Trim();
+            // Clean the transient copy — beat.Text (the EF-tracked entity field) is never touched.
+            var text = NarrationText.Clean((beat.Text ?? "").Trim());
             if (text.Length == 0) continue;
             sb.Append(text);
             chars += text.Length;
@@ -1931,7 +1946,8 @@ public class StrandWorkbenchService
                 sb.Append(secs >= 0.1 ? $" <break time=\"{secs:0.0}s\" />\n\n" : "\n\n");
             }
         }
-        return sb.ToString();
+        // Apply spoken-only pronunciation substitutions to the whole assembled segment.
+        return NarrationText.ApplySpeechPronunciation(sb.ToString());
     }
 
     private static string? Tail(string? t, int n = 200)
@@ -2332,6 +2348,23 @@ public class StrandWorkbenchService
     {
         var cleaned = new string(name.Select(c => Array.IndexOf(Path.GetInvalidFileNameChars(), c) >= 0 ? '_' : c).ToArray()).Trim();
         return string.IsNullOrWhiteSpace(cleaned) ? "strand" : cleaned;
+    }
+
+    /// <summary>Map a raw TTS provider name to a Title-cased label for the
+    /// audiobook filename: null/"elevenlabs"/"eleven" → "ElevenLabs",
+    /// "piper" → "Piper", "kokoro" → "Kokoro", "chatterbox" → "Chatterbox".
+    /// Any unrecognised value is Title-cased as-is.</summary>
+    private static string ResolveAudioEngineLabel(string? provider)
+    {
+        if (string.IsNullOrWhiteSpace(provider) ||
+            provider.Equals("elevenlabs", StringComparison.OrdinalIgnoreCase) ||
+            provider.Equals("eleven", StringComparison.OrdinalIgnoreCase))
+            return "ElevenLabs";
+        if (provider.Equals("piper", StringComparison.OrdinalIgnoreCase))      return "Piper";
+        if (provider.Equals("kokoro", StringComparison.OrdinalIgnoreCase))     return "Kokoro";
+        if (provider.Equals("chatterbox", StringComparison.OrdinalIgnoreCase)) return "Chatterbox";
+        // Fallback: capitalise the first letter.
+        return char.ToUpperInvariant(provider[0]) + provider[1..];
     }
 
     /// <summary>Drop a single beat's audio (file + db fields) so the next
