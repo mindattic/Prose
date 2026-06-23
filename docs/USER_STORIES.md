@@ -110,7 +110,7 @@ updated: 2026-06-15
 - **SS-US-G5 🟡** As the author, *Bushido Coda* is a complete, arc-coherent flagship novel (16
   chapters, 240 beats, ~90+ mean review score) in which every chapter puts in work toward the
   AI-manipulation reveal in Ch13, and Ch16 closes with Kyle making first contact with the rogue AI.
-  The reader sees the invisible hand; Kyle doesn't. See [SS-A9](AMENDMENTS.md#SS-A9).
+  The reader sees the invisible hand; Kyle doesn't. See [BCODA bible](strands/BCODA.md).
   *Acceptance: all 16 chapters reviewed at ≥82% standalone; cumulative ≥85%; each chapter can
   be described in one sentence that references what it does for the arc, not just what happens in it.*
   - **G5a ✅** Ch1 Teeth: AI-contract seed beat inserted at sk=250; client field resolves to
@@ -496,6 +496,42 @@ updated: 2026-06-15
   mark a strand `IsCanon=true` without leaving the page (SS-US-Fc). *(verified by
   `ToggleCanonAsync` in `Strand.razor` + `StrandWorkbenchService.SetCanonAsync`; badge shows
   gold shield (Canon) or dim shield (Not Canon); persists immediately to DB; 2026-06-21.)*
+
+## Epic M — Emotional Intelligence Examination {#epic-m}
+
+> An 8-dimension, per-beat, character-aware emotional depth examiner that operationalizes the craft
+> laws from [CODA.md](registers/CODA.md) into graded, actionable findings. The emotional depth score
+> is advisory — a side-car to the 82/85 reader-panel headline — with a blocking advisory cap at the
+> Deep/publish gate for the two most diagnostic dimensions. See [RFC 0010](rfc/0010-emotional-intelligence-examination.md).
+
+- **SS-US-M1 ⬜** As an author, `ss --examine-emotion --slug <slug> --effort deep` runs 8 dimension
+  checks + a per-beat emotional curve + character ledger extraction, returning a 0–100
+  `EmotionalDepthScore`, per-dimension 0–4 scores with strongest/weakest evidence and a beat-scoped
+  craft fix, and a beat-by-beat depth curve. *(acceptance: `ExamineEmotionCli` dispatched from
+  `Program.cs`; `EmotionalDepthService.ExamineStrandAsync` runs 8 parallel LLM calls; beat curve
+  covers every beat; exit 0 = none blocking, 1 = advisory, 2 = blocking.)*
+
+- **SS-US-M2 ⬜** As an author, the `examine_emotional_depth` MCP tool returns the same examination
+  envelope as the CLI. *(acceptance: `[McpServerTool]` in `Tools.Quality.cs`; GUID-or-slug
+  resolution; same JSON envelope.)*
+
+- **SS-US-M3 ⬜** As an author, `ss --migrate-sql --emotional-examination` creates 4 tables +
+  `Beat.EmotionalScore` column idempotently. *(acceptance: re-runnable, exits 0 on 2nd run; all 4
+  tables exist; `Beat.EmotionalScore` float? column on the temporal Beats table.)*
+
+- **SS-US-M4 ⬜** As an author, `ss --findings` surfaces `EMOTIONAL-DEPTH` findings from blocking
+  dimensions beside structural ones. *(acceptance: `FindingsService.Upsert` with
+  `summary: "EMOTIONAL-DEPTH [Name] beat N: fix"`; visible at `/findings`.)*
+
+- **SS-US-M5 ⬜** As an author, the ledger sanity check passes: Rhea (TVYT) has
+  Want="keep facts correct / not be managed" and Need="stop calling being-managed competence",
+  matching [TVYT.md §71-73](strands/TVYT.md). *(acceptance: `--examine-emotion --slug tvyt
+  --effort deep --json` returns Rhea ledger with `Inferred=false`.)*
+
+- **SS-US-M6 ⬜** As an author, a strand with an open blocking emotional dimension cannot be
+  marked publish-ready at the Deep gate; resolving the finding clears the block. *(acceptance:
+  publish-readiness check consults open blocking `EmotionalDimensionResults`; resolving the Finding
+  clears the block; `Strand.Score` is unchanged by the examination.)*
 
 ### Audit log
 

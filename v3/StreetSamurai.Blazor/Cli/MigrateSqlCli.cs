@@ -58,7 +58,10 @@ public static class MigrateSqlCli
         // StrandAmendments and StrandSpineVersions tables.
         var strandSpine = args.Contains("--strand-spine");
 
-        if (!schema && !charRelational && !charDropLegacy && !strandBeatSoftDelete && !strandBeatVersion && !entityGrammarNote && !strandCode && !entityReviews && !strandBible && !markdownFiles && !strandSpine)
+        // Emotional examination (SS-A15): 4 new tables + Beat.EmotionalScore column.
+        var emotionalExamination = args.Contains("--emotional-examination");
+
+        if (!schema && !charRelational && !charDropLegacy && !strandBeatSoftDelete && !strandBeatVersion && !entityGrammarNote && !strandCode && !entityReviews && !strandBible && !markdownFiles && !strandSpine && !emotionalExamination)
         {
             Console.WriteLine("Usage:");
             Console.WriteLine("  ss --migrate-sql --schema                    apply EF migrations + enable SYSTEM_VERSIONING");
@@ -70,6 +73,7 @@ public static class MigrateSqlCli
             Console.WriteLine("  ss --migrate-sql --strand-bible              add StrandBible + StrandBibleGeneratedAt to Strands (+ history)");
             Console.WriteLine("  ss --migrate-sql --markdown-files            create MarkdownFiles table (project-rules, Codex, memory backup)");
             Console.WriteLine("  ss --migrate-sql --strand-spine              add StrandUserStories to Strands; create StrandAmendments + StrandSpineVersions");
+            Console.WriteLine("  ss --migrate-sql --emotional-examination     create EmotionalExaminations/DimensionResults/BeatScores/CharacterEmotionalLedgers + Beat.EmotionalScore (SS-A15)");
             Console.WriteLine();
             Console.WriteLine("  ss --migrate-sql --character-relational    add relational columns + bridges to Characters,");
             Console.WriteLine("                                             then backfill from Records.Json (--no-backfill skips Phase C)");
@@ -535,6 +539,128 @@ public static class MigrateSqlCli
             catch (Exception ex)
             {
                 Console.WriteLine($"  ✘ markdown-files migration failed: {ex.Message}");
+                failures++;
+            }
+        }
+
+        // ── Emotional examination (SS-A15) ────────────────────────────────────
+        if (emotionalExamination)
+        {
+            using var eeScope = sp.CreateScope();
+            var eeDb = eeScope.ServiceProvider.GetRequiredService<StreetSamuraiDbContext>();
+            Console.WriteLine();
+            Console.WriteLine("[emotional-examination]");
+            try
+            {
+                // 1. Beat.EmotionalScore — temporal table dance (mirrors --strand-beat-version)
+                await eeDb.Database.ExecuteSqlRawAsync("""
+                    IF NOT EXISTS (SELECT 1 FROM sys.columns
+                                   WHERE object_id = OBJECT_ID('Beats') AND name = 'EmotionalScore')
+                    BEGIN
+                        ALTER TABLE [dbo].[Beats] SET (SYSTEM_VERSIONING = OFF);
+                        ALTER TABLE [dbo].[Beats]         ADD [EmotionalScore] FLOAT NULL;
+                        ALTER TABLE [dbo].[Beats_History] ADD [EmotionalScore] FLOAT NULL;
+                        ALTER TABLE [dbo].[Beats]
+                            SET (SYSTEM_VERSIONING = ON (HISTORY_TABLE = [dbo].[Beats_History],
+                                                         DATA_CONSISTENCY_CHECK = OFF));
+                    END;
+                    """);
+                Console.WriteLine("  ✔ Beat.EmotionalScore column added (+ Beats_History).");
+
+                // 2. EmotionalExaminations (parent)
+                await eeDb.Database.ExecuteSqlRawAsync("""
+                    IF NOT EXISTS (SELECT 1 FROM sys.objects WHERE object_id = OBJECT_ID(N'[dbo].[EmotionalExaminations]') AND type = N'U')
+                    BEGIN
+                        CREATE TABLE [dbo].[EmotionalExaminations] (
+                            [Id]                 UNIQUEIDENTIFIER NOT NULL,
+                            [StrandId]           UNIQUEIDENTIFIER NOT NULL,
+                            [EffortTier]         NVARCHAR(20)     NOT NULL DEFAULT 'standard',
+                            [EmotionalDepthScore] FLOAT           NOT NULL DEFAULT 0,
+                            [Register]           NVARCHAR(40)     NOT NULL DEFAULT '',
+                            [ContentHash]        NVARCHAR(64)     NOT NULL DEFAULT '',
+                            [BeatCount]          INT              NOT NULL DEFAULT 0,
+                            [BlockingCount]      INT              NOT NULL DEFAULT 0,
+                            [Model]              NVARCHAR(80)         NULL,
+                            [ExaminedAt]         DATETIME2        NOT NULL DEFAULT SYSUTCDATETIME(),
+                            [CreatedAt]          DATETIME2        NOT NULL DEFAULT SYSUTCDATETIME(),
+                            CONSTRAINT [PK_EmotionalExaminations] PRIMARY KEY ([Id]),
+                            CONSTRAINT [FK_EmotionalExaminations_Strands] FOREIGN KEY ([StrandId])
+                                REFERENCES [dbo].[Strands] ([Id]) ON DELETE CASCADE
+                        );
+                        CREATE INDEX [IX_EmotionalExaminations_StrandId_ExaminedAt]
+                            ON [dbo].[EmotionalExaminations] ([StrandId], [ExaminedAt]);
+                    END;
+                    """);
+                Console.WriteLine("  ✔ EmotionalExaminations table created (or already exists).");
+
+                // 3. EmotionalDimensionResults (cascade child)
+                await eeDb.Database.ExecuteSqlRawAsync("""
+                    IF NOT EXISTS (SELECT 1 FROM sys.objects WHERE object_id = OBJECT_ID(N'[dbo].[EmotionalDimensionResults]') AND type = N'U')
+                    BEGIN
+                        CREATE TABLE [dbo].[EmotionalDimensionResults] (
+                            [ExaminationId]      UNIQUEIDENTIFIER NOT NULL,
+                            [Dimension]          INT              NOT NULL,
+                            [Score]              INT              NOT NULL DEFAULT 0,
+                            [StrongestEvidence]  NVARCHAR(MAX)        NULL,
+                            [WeakestEvidence]    NVARCHAR(MAX)        NULL,
+                            [WeakestBeatNumber]  INT                  NULL,
+                            [Fix]                NVARCHAR(MAX)        NULL,
+                            [CraftLaw]           NVARCHAR(500)        NULL,
+                            [IsBlocking]         BIT              NOT NULL DEFAULT 0,
+                            CONSTRAINT [PK_EmotionalDimensionResults] PRIMARY KEY ([ExaminationId], [Dimension]),
+                            CONSTRAINT [FK_EmotionalDimensionResults_Examinations] FOREIGN KEY ([ExaminationId])
+                                REFERENCES [dbo].[EmotionalExaminations] ([Id]) ON DELETE CASCADE
+                        );
+                    END;
+                    """);
+                Console.WriteLine("  ✔ EmotionalDimensionResults table created (or already exists).");
+
+                // 4. EmotionalBeatScores (cascade child)
+                await eeDb.Database.ExecuteSqlRawAsync("""
+                    IF NOT EXISTS (SELECT 1 FROM sys.objects WHERE object_id = OBJECT_ID(N'[dbo].[EmotionalBeatScores]') AND type = N'U')
+                    BEGIN
+                        CREATE TABLE [dbo].[EmotionalBeatScores] (
+                            [ExaminationId]  UNIQUEIDENTIFIER NOT NULL,
+                            [BeatNumber]     INT              NOT NULL,
+                            [Depth]          INT              NOT NULL DEFAULT 0,
+                            [Note]           NVARCHAR(MAX)        NULL,
+                            CONSTRAINT [PK_EmotionalBeatScores] PRIMARY KEY ([ExaminationId], [BeatNumber]),
+                            CONSTRAINT [FK_EmotionalBeatScores_Examinations] FOREIGN KEY ([ExaminationId])
+                                REFERENCES [dbo].[EmotionalExaminations] ([Id]) ON DELETE CASCADE
+                        );
+                    END;
+                    """);
+                Console.WriteLine("  ✔ EmotionalBeatScores table created (or already exists).");
+
+                // 5. CharacterEmotionalLedgers (cache, not cascade — lives beyond a single examination)
+                await eeDb.Database.ExecuteSqlRawAsync("""
+                    IF NOT EXISTS (SELECT 1 FROM sys.objects WHERE object_id = OBJECT_ID(N'[dbo].[CharacterEmotionalLedgers]') AND type = N'U')
+                    BEGIN
+                        CREATE TABLE [dbo].[CharacterEmotionalLedgers] (
+                            [Id]              UNIQUEIDENTIFIER NOT NULL DEFAULT NEWSEQUENTIALID(),
+                            [StrandId]        UNIQUEIDENTIFIER NOT NULL,
+                            [Character]       NVARCHAR(200)    NOT NULL,
+                            [Want]            NVARCHAR(MAX)        NULL,
+                            [Need]            NVARCHAR(MAX)        NULL,
+                            [Wound]           NVARCHAR(MAX)        NULL,
+                            [Flaw]            NVARCHAR(MAX)        NULL,
+                            [VoiceRegister]   NVARCHAR(200)        NULL,
+                            [Inferred]        BIT              NOT NULL DEFAULT 0,
+                            [SourceBibleHash] NVARCHAR(64)         NULL,
+                            [UpdatedAt]       DATETIME2        NOT NULL DEFAULT SYSUTCDATETIME(),
+                            CONSTRAINT [PK_CharacterEmotionalLedgers] PRIMARY KEY ([Id]),
+                            CONSTRAINT [FK_CharacterEmotionalLedgers_Strands] FOREIGN KEY ([StrandId])
+                                REFERENCES [dbo].[Strands] ([Id]) ON DELETE CASCADE
+                        );
+                        CREATE UNIQUE INDEX [IX_CharacterEmotionalLedgers_StrandId_Character]
+                            ON [dbo].[CharacterEmotionalLedgers] ([StrandId], [Character]);
+                    END;
+                    """);
+                Console.WriteLine("  ✔ CharacterEmotionalLedgers table created (or already exists).");
+            }
+            catch (Exception ex)
+            {
+                Console.WriteLine($"  ✘ emotional-examination migration failed: {ex.Message}");
                 failures++;
             }
         }

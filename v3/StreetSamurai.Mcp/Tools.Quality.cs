@@ -38,6 +38,7 @@ public class QualityTools
     private readonly CanonContradictionService canonChecker;
     private readonly SemanticFidelityService fidelity;
     private readonly StructuralDiagnosticService structural;
+    private readonly EmotionalDepthService emotionalDepth;
     private readonly IDbContextFactory<StreetSamuraiDbContext> dbFactory;
 
     public QualityTools(
@@ -51,19 +52,21 @@ public class QualityTools
         CanonContradictionService canonChecker,
         SemanticFidelityService fidelity,
         StructuralDiagnosticService structural,
+        EmotionalDepthService emotionalDepth,
         IDbContextFactory<StreetSamuraiDbContext> dbFactory)
     {
-        this.consistency = consistency;
-        this.quality = quality;
-        this.books = books;
-        this.chapters = chapters;
-        this.motifs = motifs;
-        this.settings = settings;
-        this.reviewer = reviewer;
-        this.canonChecker = canonChecker;
-        this.fidelity = fidelity;
-        this.structural = structural;
-        this.dbFactory = dbFactory;
+        this.consistency    = consistency;
+        this.quality        = quality;
+        this.books          = books;
+        this.chapters       = chapters;
+        this.motifs         = motifs;
+        this.settings       = settings;
+        this.reviewer       = reviewer;
+        this.canonChecker   = canonChecker;
+        this.fidelity       = fidelity;
+        this.structural     = structural;
+        this.emotionalDepth = emotionalDepth;
+        this.dbFactory      = dbFactory;
     }
 
     /// <summary>Scan arbitrary prose against every world rule (no city police, no Behemoth-as-alive, no 'the Shelf' district, no wedding-cake tier architecture, no Ferrogate-as-railroad, no metro/Meridian PD, no phi/Greek-letter confusion). Returns matched violations with surrounding context. Call this on a chapter draft before delivering it — catches rule slips an LLM might miss.</summary>
@@ -239,6 +242,65 @@ public class QualityTools
                 is_blocking = c.IsBlocking,
                 evidence    = c.Evidence,
                 fix         = c.Fix,
+            }),
+        }, CanonTools.JsonOpts);
+    }
+
+    /// <summary>Emotional Intelligence Examination (SS-A15). Scores prose against an 8-dimension, 0–4 rubric — per beat, character-aware (Want/Need/Wound/Flaw), register-adaptive (CODA vs JOY/SORROW/Fantasy). Returns EmotionalDepthScore 0–100, per-dimension scores with strongest/weakest evidence and beat-scoped craft fixes, a beat-by-beat depth curve (Standard/Deep), and character ledgers. Blocking dimensions (WantNeedDivergence, CostFeltNotAsserted) file Findings. Does NOT alter Strand.Score or the 82/85 gate.</summary>
+    [McpServerTool, Description("Emotional Intelligence Examination (SS-A15). Scores prose against an 8-dimension, 0–4 rubric — per beat, character-aware (Want/Need/Wound/Flaw from the strand bible), register-adaptive (CODA/JOY/SORROW/Fantasy anchors). Returns: EmotionalDepthScore 0–100, per-dimension 0–4 scores with strongest evidence, weakest evidence, weakest beat number, and a beat-scoped craft fix; a per-beat emotional depth curve (Standard/Deep effort); character ledgers. Blocking dimensions (WantNeedDivergence=want/need gap, CostFeltNotAsserted=wins felt not stated) file Findings at /findings. Does NOT change Strand.Score or the 82/85 reader-panel gate. Accepts strand id (GUID) or slug.")]
+    public async Task<string> ExamineEmotionalDepth(
+        [Description("Strand id (GUID) or slug.")] string strandIdOrSlug,
+        [Description("Effort tier: 'draft' (Pass 1 only, cheapest), 'standard' (Pass 1 + beat curve, default), 'deep' (Pass 1 + beat curve + ledger refresh + weakest fixes).")] string effort = "standard",
+        [Description("Max characters of assembled strand text each check reads. Default 40000 (~10k tokens).")] int maxChars = 40000)
+    {
+        await using var db = await dbFactory.CreateDbContextAsync();
+        Guid strandId;
+        if (Guid.TryParse(strandIdOrSlug, out var g))
+            strandId = g;
+        else
+        {
+            var s = await db.Strands.AsNoTracking().FirstOrDefaultAsync(x => x.Slug == strandIdOrSlug);
+            if (s == null) return JsonSerializer.Serialize(new { error = "strand_not_found", strandIdOrSlug }, CanonTools.JsonOpts);
+            strandId = s.Id;
+        }
+
+        var result = await emotionalDepth.ExamineStrandAsync(strandId, effort, maxChars);
+        return JsonSerializer.Serialize(new
+        {
+            strand_id       = result.StrandId,
+            slug            = result.Slug,
+            title           = result.Title,
+            emotional_depth = result.EmotionalDepthScore,
+            register        = result.Register,
+            blocking_count  = result.BlockingCount,
+            recommendation  = result.Recommendation,
+            dimensions      = result.Dimensions.Select(d => new
+            {
+                dimension       = d.Dimension.ToString(),
+                name            = d.Name,
+                score           = d.Score,
+                is_blocking     = d.IsBlocking,
+                strongest       = d.StrongestEvidence,
+                weakest         = d.WeakestEvidence,
+                weakest_beat    = d.WeakestBeatNumber,
+                fix             = d.Fix,
+                craft_law       = d.CraftLaw,
+            }),
+            beat_curve      = result.BeatCurve.Select(b => new
+            {
+                beat_number = b.BeatNumber,
+                depth       = b.Depth,
+                note        = b.Note,
+            }),
+            ledgers         = result.Ledgers.Select(l => new
+            {
+                character      = l.Character,
+                want           = l.Want,
+                need           = l.Need,
+                wound          = l.Wound,
+                flaw           = l.Flaw,
+                voice_register = l.VoiceRegister,
+                inferred       = l.Inferred,
             }),
         }, CanonTools.JsonOpts);
     }
