@@ -136,6 +136,11 @@ public class StreetSamuraiDbContext : DbContext
     public DbSet<FocusGroupMember>      FocusGroupMembers      => Set<FocusGroupMember>();
     // Per-beat micro-scores (study mode) — the reviewer x beat matrix.
     public DbSet<StrandReviewBeatScore> StrandReviewBeatScores => Set<StrandReviewBeatScore>();
+    // Emotional Intelligence Examination (SS-A15): examination parent + dimension/beat children + ledger cache.
+    public DbSet<EmotionalExamination>      EmotionalExaminations      => Set<EmotionalExamination>();
+    public DbSet<EmotionalDimensionResult>  EmotionalDimensionResults  => Set<EmotionalDimensionResult>();
+    public DbSet<EmotionalBeatScore>        EmotionalBeatScores        => Set<EmotionalBeatScore>();
+    public DbSet<CharacterEmotionalLedger>  CharacterEmotionalLedgers  => Set<CharacterEmotionalLedger>();
     // Gaps table folded into Beat.GapAfterMs / Beat.GapAfterAudioPath
     // (migration fold_gaps_into_beats_20260523.sql). The standalone DbSet
     // is gone; gap-after-beat is now a property of the upper beat.
@@ -539,6 +544,44 @@ public class StreetSamuraiDbContext : DbContext
             e.HasKey(x => new { x.ReviewId, x.BeatNumber });
             e.HasOne(x => x.Review).WithMany(r => r.BeatScores)
                 .HasForeignKey(x => x.ReviewId).OnDelete(DeleteBehavior.Cascade);
+        });
+
+        // ── Emotional Intelligence Examination (SS-A15) ──────────────────────
+        b.Entity<EmotionalExamination>(e =>
+        {
+            e.HasKey(x => x.Id);
+            e.Property(x => x.EffortTier).HasMaxLength(20).IsRequired();
+            e.Property(x => x.Register).HasMaxLength(40).IsRequired();
+            e.Property(x => x.ContentHash).HasMaxLength(64).IsRequired();
+            e.Property(x => x.Model).HasMaxLength(80);
+            e.HasOne(x => x.Strand).WithMany()
+                .HasForeignKey(x => x.StrandId).OnDelete(DeleteBehavior.Cascade);
+            e.HasIndex(x => new { x.StrandId, x.ExaminedAt });
+        });
+
+        b.Entity<EmotionalDimensionResult>(e =>
+        {
+            e.HasKey(x => new { x.ExaminationId, x.Dimension });
+            e.HasOne(x => x.Examination).WithMany(r => r.DimensionResults)
+                .HasForeignKey(x => x.ExaminationId).OnDelete(DeleteBehavior.Cascade);
+        });
+
+        b.Entity<EmotionalBeatScore>(e =>
+        {
+            e.HasKey(x => new { x.ExaminationId, x.BeatNumber });
+            e.HasOne(x => x.Examination).WithMany(r => r.BeatScores)
+                .HasForeignKey(x => x.ExaminationId).OnDelete(DeleteBehavior.Cascade);
+        });
+
+        b.Entity<CharacterEmotionalLedger>(e =>
+        {
+            e.HasKey(x => x.Id);
+            e.Property(x => x.Character).HasMaxLength(200).IsRequired();
+            e.Property(x => x.VoiceRegister).HasMaxLength(200);
+            e.Property(x => x.SourceBibleHash).HasMaxLength(64);
+            e.HasOne(x => x.Strand).WithMany()
+                .HasForeignKey(x => x.StrandId).OnDelete(DeleteBehavior.Cascade);
+            e.HasIndex(x => new { x.StrandId, x.Character }).IsUnique();
         });
 
         b.Entity<EntityReview>(e =>
