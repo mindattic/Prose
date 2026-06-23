@@ -773,6 +773,17 @@ public static class ServiceCollectionExtensions
         // Available via `ss --narrative-science` and the Tools.NarrativeScience MCP tools.
         services.AddSingleton<NarrativeScienceService>();
 
+        // Plant/Payoff registry — tracks seeded narrative details and their payoffs.
+        // Enforces "reward re-reading without requiring it."
+        // Available via `ss --plant-audit`, `ss --list-plants`, `ss --add-plant`
+        // and the Tools.PlantPayoff MCP tools.
+        services.AddSingleton<PlantPayoffService>();
+
+        // Story commandment audits — gateway (standalone) and sequel commandment sets.
+        // Determined automatically from Strand.PreviousStrandId.
+        // Available via `ss --story-audit` and the Tools.StoryAudit MCP tools.
+        services.AddSingleton<StoryAuditService>();
+
         return services;
     }
 

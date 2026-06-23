@@ -70,6 +70,15 @@ public class Strand
     public Guid? ParentStrandId { get; set; }
     public Strand? ParentStrand { get; set; }
 
+    /// <summary>
+    /// The strand this one is a direct continuation of. Null = this is the
+    /// first story in its series (or a standalone) — gateway commandments apply.
+    /// Non-null = this is a sequel — sequel commandments apply in audits and
+    /// beat-writing context injection.
+    /// </summary>
+    public Guid? PreviousStrandId { get; set; }
+    public Strand? PreviousStrand { get; set; }
+
     /// <summary>Fractional sort key within the parent. Initial values are
     /// 100, 200, 300… so inserts between siblings find midpoints without
     /// renumbering.</summary>

@@ -60,6 +60,7 @@ public class StreetSamuraiDbContext : DbContext
                 case Edge ed when ed.UniverseId == Guid.Empty: ed.UniverseId = target; break;
                 case EntityStateEvent ev when ev.UniverseId == Guid.Empty: ev.UniverseId = target; break;
                 case CharacterReadModel rm when rm.UniverseId == Guid.Empty: rm.UniverseId = target; break;
+                case PlantPayoff pp when pp.UniverseId == Guid.Empty: pp.UniverseId = target; break;
                 // Config rows: operational/shared keys are tagged with the SHARED sentinel so every
                 // universe sees the one copy; all other keys are scoped to the current universe.
                 case Setting st when st.UniverseId == Guid.Empty:
@@ -342,6 +343,9 @@ public class StreetSamuraiDbContext : DbContext
     // Polymorphic prose embeddings (ScopeKind = 'chapter' | 'beat').
     public DbSet<ProseEmbedding>         ProseEmbeddings         => Set<ProseEmbedding>();
 
+    // Plant/payoff registry — "reward re-reading without requiring it."
+    public DbSet<PlantPayoff>            PlantPayoffs            => Set<PlantPayoff>();
+
     protected override void OnModelCreating(ModelBuilder b)
     {
         base.OnModelCreating(b);
@@ -430,6 +434,10 @@ public class StreetSamuraiDbContext : DbContext
             e.HasIndex(x => x.UniverseId);
             e.HasOne(x => x.ParentStrand).WithMany(x => x.Children)
                 .HasForeignKey(x => x.ParentStrandId).OnDelete(DeleteBehavior.Restrict);
+            // PreviousStrand: null = gateway (first/standalone); set = sequel.
+            e.HasOne(x => x.PreviousStrand).WithMany()
+                .HasForeignKey(x => x.PreviousStrandId).OnDelete(DeleteBehavior.Restrict);
+            e.HasIndex(x => x.PreviousStrandId);
             // Universe scoping (SS-LAW-15). No-op when ScopedUniverseId is Guid.Empty.
             e.HasQueryFilter(x => ScopedUniverseId == Guid.Empty || x.UniverseId == ScopedUniverseId);
         });
@@ -442,6 +450,23 @@ public class StreetSamuraiDbContext : DbContext
                 .HasForeignKey(x => x.BeatId).OnDelete(DeleteBehavior.Cascade);
             e.HasIndex(x => new { x.StrandId, x.SortKey });
             e.HasIndex(x => x.BeatId);
+        });
+        b.Entity<PlantPayoff>(e =>
+        {
+            e.HasKey(x => x.Id);
+            e.Property(x => x.PlantDescription).HasMaxLength(500).IsRequired();
+            e.Property(x => x.PayoffDescription).HasMaxLength(500).IsRequired();
+            e.Property(x => x.Category).HasMaxLength(50).IsRequired();
+            e.Property(x => x.TransparencyNote).HasMaxLength(500);
+            e.HasOne(x => x.Strand).WithMany()
+                .HasForeignKey(x => x.StrandId).OnDelete(DeleteBehavior.Cascade);
+            e.HasOne(x => x.PlantBeat).WithMany()
+                .HasForeignKey(x => x.PlantBeatId).OnDelete(DeleteBehavior.NoAction);
+            e.HasOne(x => x.PayoffBeat).WithMany()
+                .HasForeignKey(x => x.PayoffBeatId).OnDelete(DeleteBehavior.NoAction);
+            e.HasIndex(x => x.StrandId);
+            e.HasIndex(x => x.PlantBeatId);
+            e.HasIndex(x => x.PayoffBeatId);
         });
         b.Entity<BeatEntityMention>(e =>
         {
