@@ -148,10 +148,11 @@ QuikGraph. Quick start: `README.md`.
   [RFC 0006](rfc/0006-universe-segregation.md). Universe ids are UUIDv7 like every other Id.
 - **`Entities`** — universal row per entity: `Id, Name, Slug, EntityType, Description, IsActive`.
   The spine.
-- **`Records`** — `Records.Json`: the canonical per-entity JSON blob (tolerant converters in
-  `Models/Canon/`).
-- Per-type **subtype tables** + bridges (relational projections of the blob; one repo per type,
-  `IExportableRepository`).
+- **`Records`** — `Records.Json`: a per-entity JSON blob retained as a per-type rollback artifact;
+  retired as the canonical store once that type's relational parity passes. See SS-A5.
+- Per-type **subtype tables** + bridges — the **canonical** store per type (one repo per type,
+  `IExportableRepository`). Relational tables are authoritative; the blob is a fallback until
+  its type is converted.
 - **`EntityEmbeddings`** — 1536-d vectors; cosine via `VECTOR_DISTANCE`. Covers all active entities.
 - **`Edges`** — typed graph relations (parent_of, etc.); cousins/grandparents derived.
 - **`EntityStateEvents`** — story-state ledger (location, life status, ammo) — see
@@ -258,10 +259,11 @@ narrative-law block here when stood up:**
     is moon clips (~3–6 s). Five rounds, then reload.
 12. **Kyle has a motorcycle.** {#SS-LAW-12} Used for distance travel. Default: matte black,
     unbranded, ground-level parking.
-13. **The Sable reveal sequence is fixed.** {#SS-LAW-13} Sable reveals her identity to Kyle
-    face-to-face at the noodle stall in *A Restless Mind* (ch.3), NOT in a Faraday cage. The cage
-    AI-revelation + triangulation happens the NEXT night in *Inside the Cage* (ch.4). Pixel does
-    NOT know about the cage/AI/Sable as of the end of ch.3.
+13. **The Sable reveal sequence is fixed.** {#SS-LAW-13} Sable is a **mystery voice only** in all
+    BCODA chapters before Ch13 (The Offer). Her first in-person appearance is at Vey's Antiquity &
+    Stationary in the Faraday vault (Ch13): the AI-reveal and the confession *"Your contracts do
+    not come from people."* Her appearance at the motorcycle funeral (Joy strand) is post-Ch13 and
+    is correct. Do not place Sable in-person before Ch13 under any circumstance.
 14. **The rogue-AI long con stays unconfirmed.** {#SS-LAW-14} The rogue AI is real and routing
     Kyle's contracts, but the full reveal (it has orchestrated his life) lands many books later.
     Bushido Coda only lands the avatar misdirect (Kyle/Sable's *wrong* hypothesis), nothing more.
@@ -417,6 +419,13 @@ For each chapter, in order:
 - `ss --publish-docx --slug <book-slug>` → KDP-ready .docx.
 - Voice harvest if any chapter scores ≥80%: `ss --harvest-voice --strand <chapter-slug>`.
 - Flip all USER_STORIES.md sub-items to ✅ with evidence in the same commit.
+
+> **Invariant (SS-A15):** The emotional depth score (`EmotionalDepthService`) is a side-car signal
+> with a Deep-tier advisory cap. It scores prose against an 8-dimension rubric (0–4 per dimension,
+> 0–100 aggregate) and files blocking Findings for `WantNeedDivergence` / `CostFeltNotAsserted`.
+> A strand with open blocking emotional Findings cannot be marked publish-ready at the Deep gate.
+> It **never** folds into the 82/85 headline reader-panel score; `Strand.Score` and the review gates
+> are untouched by any emotional examination run. See [RFC 0010](rfc/0010-emotional-intelligence-examination.md).
 
 ---
 

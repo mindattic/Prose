@@ -762,6 +762,12 @@ public static class ServiceCollectionExtensions
         // and the `diagnose_strand` MCP tool.
         services.AddSingleton<StructuralDiagnosticService>();
 
+        // Emotional Intelligence Examination (SS-A15): 8-dimension, 0–4, per-beat,
+        // character-aware rubric. Advisory cap on blocking dimensions at Deep gate.
+        // Available via `ss --examine-emotion` and the `examine_emotional_depth` MCP tool.
+        services.AddSingleton<EmotionalLedgerService>();
+        services.AddSingleton<EmotionalDepthService>();
+
         // Narrative-science analysis (Will Storr frameworks): sacred flaw, dramatic
         // question, scene-engagement audit, five-act map, antihero empathy.
         // Available via `ss --narrative-science` and the Tools.NarrativeScience MCP tools.

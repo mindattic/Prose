@@ -11,7 +11,7 @@
 > All tools are MCP-prefixed `mcp__streetsamurai__<name>` by the client. Most return a
 > JSON string; the canon is the SQL database, scoped to the active Universe.
 
-**176 tools** across **24 tool families.**
+**177 tools** across **24 tool families.**
 
 ## Families
 
@@ -30,7 +30,7 @@
 | [Lore Triple](#lore-triple) | 7 |
 | [Narrative Science](#narrative-science) | 5 |
 | [Planning](#planning) | 6 |
-| [Quality](#quality) | 10 |
+| [Quality](#quality) | 11 |
 | [Repository](#repository) | 2 |
 | [Scene](#scene) | 4 |
 | [Species](#species) | 2 |
@@ -827,6 +827,14 @@ Pre-flight structural analysis before running the review panel. Runs 12 targeted
 
 - `strandIdOrSlug` (string, required) — Strand id (GUID) or slug.
 - `maxChars` (int, optional) — Max characters of assembled strand text each check reads. Default 40000 (~10k tokens). Lower to reduce cost; raise for very long strands (max practical: ~160000).
+
+### `examine_emotional_depth`
+
+Emotional Intelligence Examination (SS-A15). Scores prose against an 8-dimension, 0–4 rubric — per beat, character-aware (Want/Need/Wound/Flaw from the strand bible), register-adaptive (CODA/JOY/SORROW/Fantasy anchors). Returns: EmotionalDepthScore 0–100, per-dimension 0–4 scores with strongest evidence, weakest evidence, weakest beat number, and a beat-scoped craft fix; a per-beat emotional depth curve (Standard/Deep effort); character ledgers. Blocking dimensions (WantNeedDivergence=want/need gap, CostFeltNotAsserted=wins felt not stated) file Findings at /findings. Does NOT change Strand.Score or the 82/85 reader-panel gate. Accepts strand id (GUID) or slug.
+
+- `strandIdOrSlug` (string, required) — Strand id (GUID) or slug.
+- `effort` (string, optional) — Effort tier: 'draft' (Pass 1 only, cheapest), 'standard' (Pass 1 + beat curve, default), 'deep' (Pass 1 + beat curve + ledger refresh + weakest fixes).
+- `maxChars` (int, optional) — Max characters of assembled strand text each check reads. Default 40000 (~10k tokens).
 
 ### `get_review_settings`
 
