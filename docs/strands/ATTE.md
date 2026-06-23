@@ -5,7 +5,7 @@ code: ATTE
 layer: strand-bible
 universe: glmz
 status: complete
-updated: 2026-06-22
+updated: 2026-06-23
 ---
 
 # STRAND BIBLE — Attendance (ATTE) {#SS-ATTE}
@@ -15,6 +15,11 @@ updated: 2026-06-22
 > When prose and spine disagree, fix one in the same change. See [[../BIBLE]] for universe laws.
 
 ## 0. What this story IS {#SS-ATTE-0}
+
+**Gateway designation.** ATTE is the "if you only read one" entry point for GLMZ — the story
+recommended to readers encountering the universe for the first time. It requires zero prior
+knowledge of the cast or world, and its prologue beat establishes GLMZ through Yemina's
+zone-seam familiarity before the investigation begins.
 
 A procedural investigation story. A cross-district truancy investigator follows a bureaucratic
 anomaly — three children logged as unexcused absences — and discovers that the city's most
@@ -96,9 +101,53 @@ only lever she controls.
 5. **The contractor-issue car stays gray.** It is not redeemed. It doesn't become significant.
    It is the texture of a consolation posting.
 
+## 4b. Resonance mechanics (LOCKED — SS-A8) {#SS-ATTE-4b}
+
+A bleed-induced transit event leaves two forensic signatures, both detectable with a resonance
+scanner (a field instrument reading residual harmonic energy by frequency profile, intensity,
+and estimated trace age).
+
+**Resonance echo** (informal: *echo*; RMA designation: *contact imprint*) — low-intensity,
+long-duration residual left where the bleed's coherent emission first synchronized a person's
+neuretics. Marks where the bleed *found* them and began tuning them, not where they crossed.
+Persists for weeks. The tuning settles at wherever the person occupies most: desk chair, usual
+seat, frequent resting spot.
+
+**Transit shadow** (informal: *shadow*; RMA designation: *crossing trace*) — higher-intensity,
+shorter-duration residual at the exact crossing location. Always in a transitional, low-visibility
+space (bathroom stall, stairwell alcove, supply room, waiting chair outside a closed door). The
+bleed requires brief neuretic isolation — a person alone, away from other active neuretics.
+Intensity is immediate; decay is faster than an echo (days, not weeks).
+
+**Selvamani's shorthand:** *"The echo tells you where the frequency found them. The shadow tells
+you where they stepped through. You always need both — the echo shows you who; the shadow shows
+you where."*
+
+**Why children disappear without witnesses (LOCKED).** The tuning compulsion builds over a
+six-week synchronization window. When it peaks, the child follows it during a normal institutional
+transition — a bathroom pass, a moment waiting alone, the gap between periods in a corridor with
+no adult coverage. The crossing takes seconds. In an overworked school environment, one child not
+returning from a bathroom break is logged as an unexcused absence or presumed guardian pickup.
+The teacher assumes the front office has them; the front office assumes a guardian came; the
+record closes as noise. The pattern repeats 1–3 times per school over months before any single
+site has a count worth reviewing.
+
+**The 47-child pattern (LOCKED).** 22 school sites across GLMZ, 22 months, 1–3 incidents per
+site. Each site's tally is below its corp contract's alert threshold. Cross-corp clearance is
+required to aggregate. Yemina's role: the only node from which an alarm is visible at all.
+
+**Entity note.** A child in `attendance-019ebf4c` was renamed **Daria Drew** (formerly Amara
+Osei) to avoid collision with the adult Amara Osei in Mnemosync. All three prose beats updated.
+
 ## 5. Story structure {#SS-ATTE-5}
 
-44 beats across 4 chapters. The investigation proceeds:
+42 beats across a prologue + 4 chapters. The investigation proceeds:
+
+### Prologue — GLMZ (gateway beat)
+Yemina's POV of the Pilsen Veil zone-seam at 0600: the Arcturus/Meridian contract boundary,
+the city shifting cadence between shifts, the lake cold moving sideways through the corridor
+streets. Establishes GLMZ for first-time readers through administrative familiarity rather
+than awe. Ends: *She had a caseload. Three disappearances. She drove.*
 
 ### Chapter 1 — The Car and the School
 Yemina drives the contractor car through the Pilsen Veil. The Aldiss-Mwangi Community
@@ -136,11 +185,12 @@ accurately, without sentiment, with attention to what doesn't fit.
 - Marvel at the city. It is her jurisdiction. It is the object of her work.
 - Tell the reader what the facts mean. They mean what they mean. The reader can add.
 
-**Tone:** Administrative horror is the register. Not the cyberpunk spectacle register —
-the quieter one. The one where a child is logged as an unexcused absence and the system
+**Register:** [[../registers/GREY]] — the GREY register. Administrative horror: not the
+cyberpunk spectacle register — the quieter one. The one where a child is logged as an
+unexcused absence and the system
 moves on to the next item. Yemina's competence makes this visible, not dramatic.
 
-Score: **86.3/100** (final). Publication-ready. Locked.
+Score: **88.45/100** (95% CI: [87.2, 89.7], n=20). Real move from prior 86.3. Gateway designation confirmed.
 
 ## 7. User stories {#SS-ATTE-7}
 
