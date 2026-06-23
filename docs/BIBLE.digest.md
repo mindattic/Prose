@@ -90,10 +90,11 @@ narrative-law block here when stood up:**
     is moon clips (~3–6 s). Five rounds, then reload.
 12. **Kyle has a motorcycle.** {#SS-LAW-12} Used for distance travel. Default: matte black,
     unbranded, ground-level parking.
-13. **The Sable reveal sequence is fixed.** {#SS-LAW-13} Sable reveals her identity to Kyle
-    face-to-face at the noodle stall in *A Restless Mind* (ch.3), NOT in a Faraday cage. The cage
-    AI-revelation + triangulation happens the NEXT night in *Inside the Cage* (ch.4). Pixel does
-    NOT know about the cage/AI/Sable as of the end of ch.3.
+13. **The Sable reveal sequence is fixed.** {#SS-LAW-13} Sable is a **mystery voice only** in all
+    BCODA chapters before Ch13 (The Offer). Her first in-person appearance is at Vey's Antiquity &
+    Stationary in the Faraday vault (Ch13): the AI-reveal and the confession *"Your contracts do
+    not come from people."* Her appearance at the motorcycle funeral (Joy strand) is post-Ch13 and
+    is correct. Do not place Sable in-person before Ch13 under any circumstance.
 14. **The rogue-AI long con stays unconfirmed.** {#SS-LAW-14} The rogue AI is real and routing
     Kyle's contracts, but the full reveal (it has orchestrated his life) lands many books later.
     Bushido Coda only lands the avatar misdirect (Kyle/Sable's *wrong* hypothesis), nothing more.
@@ -130,63 +131,30 @@ narrative-law block here when stood up:**
   ambient proprioceptive information field BCI-augmented people sense (see `network_doc.md`).
 
 ## Status index (from USER_STORIES.md)
-- done: 104  partial: 8  planned: 14  cut: 1
+- done: 104  partial: 8  planned: 20  cut: 1
 
 ## Latest amendment
-## SS-A14 — *Underlying Connection* renamed to *Mnemosync*; structural and prose redesign {#SS-A14}
+## SS-A15 — Emotional Intelligence Examination system {#SS-A15}
 
-**What changed.** [GLMZ] The *Underlying Connection* strand (ULC) is renamed **Mnemosync**
-(code MNEMO; slug `mnemosync-019ee11e`). The strand bible is rewritten at
-[docs/strands/MNEMO.md](strands/MNEMO.md). This is the weirdest prose register in the GLMZ
-collection.
+**Date:** 2026-06-23 · **Author:** emotional-depth pass · **Ref:** [RFC 0010](rfc/0010-emotional-intelligence-examination.md)
 
-### What is preserved from SS-A6 / ULC
+The engine's emotional examination was binary (Pass/Warn/Fail at strand granularity, no character
+model). SS-A15 adds a parallel **Emotional Intelligence Examination** sub-system that scores prose
+against an 8-dimension, 0–4 rubric — per beat, character-aware (Want/Need/Wound/Flaw via a
+per-strand `CharacterEmotionalLedger`), and register-adaptive (CODA vs JOY/SORROW/Fantasy anchors).
 
-All character facts (Amara Osei she/her, Seto Banda he/him, Ciro Fonseca straight razor,
-Ekow Ato gray-zone contract, Nuru Banda row 19) carry forward unchanged. Batch 44-C canon
-is preserved: 847 recipients, targeted associative-node suppression (retain memory, lose
-meaning), calibrated 2222, internal classification *managed liability*. Act 1 (10 chapters,
-all complete and locked) is not touched.
+**What ships:**
+- `EmotionalDepthService` + `EmotionalLedgerService` (new services mirroring `StructuralDiagnosticService`)
+- 4 new DB tables: `EmotionalExaminations`, `EmotionalDimensionResults`, `EmotionalBeatScores`,
+  `CharacterEmotionalLedgers`; new `Beat.EmotionalScore` column (float?)
+- CLI: `ss --examine-emotion --slug <slug> [--effort draft|standard|deep] [--json]`
+- MCP: `examine_emotional_depth(strandIdOrSlug, effort, maxChars)`
+- Advisory cap: at the Deep/publish gate, open blocking emotional findings (`WantNeedDivergence`,
+  `CostFeltNotAsserted`) prevent publish-readiness. Does NOT alter the 82/85 headline score math.
+- Craft authority: [CODA register](registers/CODA.md) + per-strand bibles (Want/Need/Wound/Flaw).
 
-### What changes
+**Invariant added to BIBLE §10:** emotional depth score is a side-car signal with a Deep-tier
+advisory cap; it never folds into the 82/85 headline gate.
 
-**The horror engine is foregrounded.** The central weirdness of this story — the suppression
-protocol severs the connection between a memory and its meaning, not the memory itself — was
-in the SS-A6 text but understated in the prose. This amendment locks it as the primary horror
-register and the story's governing metaphor.
-
-**The bleed-intrusion prose rule (LOCKED).** In any chapter where the bleed is active (Acts 2
-and 3), the POV prose is occasionally interrupted by single bleed-intrusion sentences from the
-other character's sensory memory. No attribution, no italics, no separator. Mid-paragraph. The
-reader learns to identify them. They are not explained. Frequency: sparse in Act 2 (one per
-POV chapter); intensifying in Act 3. This is the formal innovation that makes the story
-formally experimental.
-
-**Ciro redesigned.** Ciro Fonseca is not a fixer who threatens. He is the most calibrated
-subject in Batch 44-C — more visits than anyone else in the manifest. He has lost most of his
-objections to himself. He is not evil; he is **emptied**. His Act 2 actions are calibration
-events: a contact loses the meaning of something they were helping with; a sub-batch
-recalibration runs automatically; a calibration kit appears as a gift. Quiet. Permanent.
-Irreversible. This is the fix for the "consequences abstract" finding.
-
-**The Pilsen Veil (LOCKED).** The Batch 44-C black spot corridor is described with a
-flat prose register when the characters are in it — short declaratives, no friction-words,
-neutral descriptors. The flatness matches the zone. The horror is the absence of horror.
-
-**The Phase II document (LOCKED).** The reveal is not a cover-up. It says "Phase II" — a
-launch announcement for rolling out the suppression sub-protocol as the standard calibration
-for all neuretic clients in GLMZ. Not 847 people. Everyone.
-
-**Act 3 redesigned (LOCKED, not yet written).** Seto attempts a reverse bleed transfer to
-restore the weight of Nuru Banda's suppressed memories. In the attempt, the bleed opens
-across the full Batch 44-C network for 8 seconds. 847 people experience a flash of meaning.
-Orison emergency-recalibrates in 8 seconds and publishes the Phase II announcement that
-afternoon. The ending: one person (Nuru) does not show up for her Tuesday 9AM calibration
-visit. Ch28 (10:47) is the person in the lobby at the time she was supposed to arrive.
-
-**Why.** Act 2 scored 74.4 mean because "observations accumulate, nothing ignites" and
-"cyberpunk underdressed." The fix is not polish — it is structural weirdness. Making the
-calibration events the antagonist's weapon (quiet, permanent, delivered as maintenance) solves
-the "consequences abstract" problem. The bleed-intrusion prose rule solves "cyberpunk
-underdressed" by making the formal structure itself the weird cyberpunk element.
+<!-- Next amendment: SS-A16 -->
 

@@ -1404,6 +1404,19 @@ if (args.Contains("--diagnose-strand"))
     return;
 }
 
+// ss --examine-emotion --slug <strandSlug> [--effort draft|standard|deep] [--json]
+// Emotional Intelligence Examination (SS-A15): 8-dimension 0–4 rubric, per-beat curve,
+// character ledger (Want/Need/Wound/Flaw), register-adaptive anchors.
+// Exit 0 = none blocking, 1 = advisory issues, 2 = blocking dimensions open.
+if (args.Contains("--examine-emotion"))
+{
+    var cliBuilder = WebApplication.CreateBuilder(args);
+    cliBuilder.Services.AddStreetSamuraiServices();
+    var cliApp = cliBuilder.Build();
+    Environment.ExitCode = await ExamineEmotionCli.RunAsync(args, cliApp.Services);
+    return;
+}
+
 // ss --list-species — print the species taxonomy (canonical name, label, sentience).
 if (args.Contains("--list-species"))
 {

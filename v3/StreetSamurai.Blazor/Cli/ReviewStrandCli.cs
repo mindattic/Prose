@@ -256,6 +256,30 @@ public static class ReviewStrandCli
             // Reviews are saved; summary is best-effort.
         }
 
+        // Advisory cap (SS-A15): at the Deep gate, warn if open blocking emotional findings exist.
+        // This does NOT alter the score; it surfaces the gate so the author knows to resolve them.
+        if (profile?.Name == "deep" || effort == "deep")
+        {
+            var findingsSvc = services.GetRequiredService<FindingsService>();
+            var blockingSlug = slug ?? id ?? "";
+            var openBlocking = findingsSvc.List()
+                .Where(f => f.FilePath == $"strand:{blockingSlug}"
+                    && f.Summary.StartsWith("EMOTIONAL-DEPTH")
+                    && f.Status is FindingStatus.New or FindingStatus.Triaged)
+                .ToList();
+
+            if (openBlocking.Count > 0)
+            {
+                Console.WriteLine();
+                Console.WriteLine("⛔ EMOTIONAL-DEPTH ADVISORY CAP (Deep gate):");
+                Console.WriteLine("   The following blocking emotional dimensions are open.");
+                Console.WriteLine("   Resolve them before marking this strand publish-ready.");
+                foreach (var f in openBlocking)
+                    Console.WriteLine($"   • {f.Summary}");
+                Console.WriteLine("   Run: ss --examine-emotion --slug <slug> --effort deep");
+            }
+        }
+
         return 0;
     }
 }

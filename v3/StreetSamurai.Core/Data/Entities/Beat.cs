@@ -130,6 +130,11 @@ public class Beat
     /// <summary>When <see cref="Score"/> was last computed (the run it reflects).</summary>
     public DateTime? ScoredAt { get; set; }
 
+    /// <summary>Most-recent emotional depth score (0–4) from the last EmotionalDepthService
+    /// examination. Written by Pass 2 (per-beat curve); never overwrites reader-panel
+    /// <see cref="Score"/>. Null = not yet examined or effort=Draft (Pass 1 only).</summary>
+    public double? EmotionalScore { get; set; }
+
     // ── Trailing gap (silence after this beat, before the next) ─────────
     // Each Beat owns the gap that follows it. The last beat in a strand
     // ignores this field. Null = "use the computed default" from
