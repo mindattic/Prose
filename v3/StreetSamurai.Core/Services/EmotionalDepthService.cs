@@ -229,11 +229,7 @@ public class EmotionalDepthService
             "You are an expert story editor specialising in emotional subtext. " +
             "Return ONLY the JSON object requested. No prose, no markdown fences, no explanation.";
 
-        var registerNote = dimension == EmotionalDimension.RegisterShiftAsInstrument
-            ? register == "CODA"
-                ? "Apply CODA-specific anchors: warm→cold temperature shifts on cue. Score 4 only if the shift IS the instrument."
-                : "Soften the anchor: look for purposeful tonal modulation (not necessarily CODA warm→cold). Score 4 for sustained purposeful modulation."
-            : "";
+        var registerNote = BuildRegisterNote(dimension, register);
 
         var registerLine = registerNote.Length > 0 ? $"Register note ({register}): {registerNote}\n" : "";
         var prompt = $$"""
@@ -414,12 +410,56 @@ PROSE:
     private static string DetectRegister(string? bible)
     {
         if (bible is null or { Length: 0 }) return "";
+        if (bible.Contains("administrative horror", StringComparison.OrdinalIgnoreCase)) return "administrative-horror";
         if (bible.Contains("CODA",    StringComparison.OrdinalIgnoreCase)) return "CODA";
         if (bible.Contains("JOY",     StringComparison.OrdinalIgnoreCase)) return "JOY";
         if (bible.Contains("SORROW",  StringComparison.OrdinalIgnoreCase)) return "SORROW";
         if (bible.Contains("Fantasy", StringComparison.OrdinalIgnoreCase)) return "Fantasy";
         return "";
     }
+
+    // Returns a register-specific scoring note for the given dimension.
+    // Empty string = use the generic craft law only.
+    private static string BuildRegisterNote(EmotionalDimension dimension, string register) =>
+        register switch
+        {
+            "CODA" => dimension == EmotionalDimension.RegisterShiftAsInstrument
+                ? "Apply CODA-specific anchors: warm→cold temperature shifts on cue. Score 4 only if the shift IS the instrument."
+                : "",
+
+            "administrative-horror" => dimension switch
+            {
+                EmotionalDimension.WantNeedDivergence =>
+                    "The procedure IS the character's Want; breaking procedure IS the Need. " +
+                    "Score 4 when the character's Want and Need collapse into the same act — when following the system IS confronting what the system cannot hold.",
+                EmotionalDimension.TheUnsaid =>
+                    "The form field with no matching category holds the whole story. " +
+                    "Score 4 when institutional absence — the voicemail queue, the unanswered report, the entry that doesn't exist — does the mourning.",
+                EmotionalDimension.ObjectsAndGestures =>
+                    "The object carries what cannot be filed. What goes undrunk, unread, or unlogged IS the grief. " +
+                    "Score 4 when a physical object makes the institutional failure irreplaceable — when removing it would collapse the scene.",
+                EmotionalDimension.RegisterShiftAsInstrument =>
+                    "The system's language failing to contain the event IS the register shift. " +
+                    "Score 4 when bureaucratic vocabulary meets the unclassifiable and the prose's temperature changes at exactly that fault line.",
+                EmotionalDimension.EarnedInteriority =>
+                    "One flat procedural observation becomes the interior. " +
+                    "Score 4 when the bureaucrat's single question to themselves — or a notation in their own handwriting — is the only window into the emotional interior permitted.",
+                EmotionalDimension.RelationalSubtext =>
+                    "Relationship lives in what's asked and not asked, what's written down and what isn't. " +
+                    "Score 4 when the form itself — the literal or procedural record — IS the relationship, and what's omitted from the form is the scene's real content.",
+                EmotionalDimension.CostFeltNotAsserted =>
+                    "The cost is the gap between what the system records and what it cannot. " +
+                    "Score 4 when the price lives in a missing field, the wrong case-type category, the unanswered voicemail, or the entry that has no place to go — not in how the character feels about it.",
+                EmotionalDimension.ContradictionAndAmbivalence =>
+                    "Every broken protocol IS the contradiction. " +
+                    "Score 4 when the character's deviations from procedure are the story's structural engine — when the ambivalence is visible only through what the system records versus what the character actually does.",
+                _ => ""
+            },
+
+            _ => dimension == EmotionalDimension.RegisterShiftAsInstrument
+                ? "Soften the anchor: look for purposeful tonal modulation (not necessarily CODA warm→cold). Score 4 for sustained purposeful modulation."
+                : "",
+        };
 
     // ── Character context block ───────────────────────────────────────────────
 
