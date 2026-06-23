@@ -17,6 +17,8 @@ public class BeatGeneratorService
     private readonly ExpertPersonaService? personas;
     private readonly ActionConfigService? actionConfig;
     private readonly IUniverseContext? universe;
+    private readonly PlantPayoffService? plantPayoffs;
+    private readonly StoryAuditService? storyAudit;
 
     public BeatGeneratorService(
         ILlmService llm,
@@ -27,7 +29,9 @@ public class BeatGeneratorService
         LlmVotingService? voting = null,
         ExpertPersonaService? personas = null,
         ActionConfigService? actionConfig = null,
-        IUniverseContext? universe = null)
+        IUniverseContext? universe = null,
+        PlantPayoffService? plantPayoffs = null,
+        StoryAuditService? storyAudit = null)
     {
         this.llm = llm;
         this.graph = graph;
@@ -38,6 +42,8 @@ public class BeatGeneratorService
         this.personas = personas;
         this.actionConfig = actionConfig;
         this.universe = universe;
+        this.plantPayoffs = plantPayoffs;
+        this.storyAudit = storyAudit;
     }
 
     /// <summary>
@@ -71,6 +77,34 @@ public class BeatGeneratorService
         // scene. Empty when the prose-embedding cache is cold.
         var anchorBlock = await BuildBeatAnchorsAsync(context, ct);
 
+        // Plant/payoff context: seeded details awaiting payoff, or registered payoffs
+        // to honour in this beat. Injected when StrandId is set + PlantPayoffService
+        // is wired. Non-blocking — silently empty on first-write or cold starts.
+        var plantBlock = "";
+        if (plantPayoffs != null && context.StrandId != Guid.Empty)
+        {
+            try { plantBlock = await plantPayoffs.BuildPlantContextAsync(context.StrandId, ct); }
+            catch { /* non-blocking */ }
+        }
+
+        // Story commandment context: gateway (null PreviousStrandId) or sequel
+        // commandments, injected as writing goals for this strand.
+        var commandmentBlock = "";
+        if (storyAudit != null && context.StrandId != Guid.Empty)
+        {
+            try
+            {
+                await using var db = await dbFactory.CreateDbContextAsync(ct);
+                var s = await db.Strands.AsNoTracking()
+                    .Where(x => x.Id == context.StrandId)
+                    .Select(x => new { x.PreviousStrandId })
+                    .FirstOrDefaultAsync(ct);
+                if (s != null)
+                    commandmentBlock = storyAudit.BuildCommandmentContext(s.PreviousStrandId.HasValue);
+            }
+            catch { /* non-blocking */ }
+        }
+
         var system = $"""
             {UniverseLine()}
 
@@ -85,7 +119,7 @@ public class BeatGeneratorService
             WORLD CONTEXT (characters, locations, equipment, relationships — use as canon facts):
             {context.RelationshipContext}
             {(context.XRayContext.Length > 0 ? "\nSCENE X-RAY — entities on screen RIGHT NOW. Every character below speaks in THEIR OWN documented register, not the narrator's:\n" + context.XRayContext : "")}
-            {(context.LocationContext.Length > 0 ? "\nADDITIONAL LOCATION DETAIL:\n" + context.LocationContext : "")}{dialogueBlock}{anchorBlock}
+            {(context.LocationContext.Length > 0 ? "\nADDITIONAL LOCATION DETAIL:\n" + context.LocationContext : "")}{dialogueBlock}{anchorBlock}{plantBlock}{commandmentBlock}
             """;
 
         var hasDialogue = context.DialogueContext.Length > 0;
@@ -725,6 +759,14 @@ public record BeatContext
     public string XRayContext { get; init; } = "";
     public string SceneSoFar { get; init; } = "";
     public string BeatGoal { get; init; } = "";
+
+    /// <summary>
+    /// Strand this beat belongs to. When set, BeatGeneratorService injects:
+    ///   - active plant/payoff pairs (PlantPayoffService)
+    ///   - gateway or sequel commandments (StoryAuditService, per PreviousStrandId)
+    /// Leave as Guid.Empty to skip both injections (legacy callers).
+    /// </summary>
+    public Guid StrandId { get; init; }
 }
 
 /// <summary>

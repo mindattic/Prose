@@ -1559,6 +1559,31 @@ if (args.Contains("--restore-markdown"))
     return;
 }
 
+// ss --story-audit --slug <strandSlug> [--json]
+// Audits a strand against 7 commandments — gateway (PreviousStrandId=null) or
+// sequel (PreviousStrandId set). Pass/warn/fail per commandment with fix hints.
+// Exit 0 = all pass, 1 = advisory warnings, 2 = blocking failures.
+if (args.Contains("--story-audit"))
+{
+    var cliBuilder = WebApplication.CreateBuilder(args);
+    cliBuilder.Services.AddStreetSamuraiServices();
+    var cliApp = cliBuilder.Build();
+    Environment.ExitCode = await StoryAuditCli.RunAsync(args, cliApp.Services);
+    return;
+}
+
+// ss --plant-audit   --slug <strand> [--json]   audit plant/payoff pairs
+// ss --list-plants   --slug <strand> [--json]   list all pairs
+// ss --add-plant     --slug <strand> --plant "..." --payoff "..." [--cat detail]
+if (args.Contains("--plant-audit") || args.Contains("--list-plants") || args.Contains("--add-plant"))
+{
+    var cliBuilder = WebApplication.CreateBuilder(args);
+    cliBuilder.Services.AddStreetSamuraiServices();
+    var cliApp = cliBuilder.Build();
+    Environment.ExitCode = await PlantPayoffCli.RunAsync(args, cliApp.Services);
+    return;
+}
+
 // CLI mode: Will Storr narrative-science frameworks — sacred flaw, dramatic question,
 // scene anatomy, five-act structure. Four subcommands:
 //   ss --narrative-science sacred-flaw --character <slug|id> [--scaffold]

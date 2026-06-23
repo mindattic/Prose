@@ -11,7 +11,7 @@
 > All tools are MCP-prefixed `mcp__streetsamurai__<name>` by the client. Most return a
 > JSON string; the canon is the SQL database, scoped to the active Universe.
 
-**177 tools** across **24 tool families.**
+**185 tools** across **26 tool families.**
 
 ## Families
 
@@ -30,11 +30,13 @@
 | [Lore Triple](#lore-triple) | 7 |
 | [Narrative Science](#narrative-science) | 5 |
 | [Planning](#planning) | 6 |
+| [Plant Payoff](#plant-payoff) | 6 |
 | [Quality](#quality) | 11 |
 | [Repository](#repository) | 2 |
 | [Scene](#scene) | 4 |
 | [Species](#species) | 2 |
 | [Story](#story) | 6 |
+| [Story Audit](#story-audit) | 2 |
 | [Strand](#strand) | 29 |
 | [Universe](#universe) | 3 |
 | [Voice](#voice) | 5 |
@@ -798,6 +800,55 @@ Predict a character's likely behavior in a given scene. Pulls from the character
 - `beatGoal` (string, required) — What this beat is trying to accomplish narratively.
 - `tensionLevel` (int, optional) — Tension level 1-10. Use 1-3 for low/calm, 4-6 for charged, 7-9 for crisis, 10 for breaking point.
 
+## Plant Payoff
+
+<sub>`PlantPayoffTools`</sub>
+
+### `audit_plant_payoffs`
+
+Audit all plant/payoff pairs for a strand. Returns: total_pairs, planted (seeded in a beat), paid_off (payoff also written), orphaned (planted but no payoff), not_transparent (payoff exists but is_transparent=false), a gateway_plant_ready boolean (all planted pairs have transparent payoffs), and detail lists for each problem category. Fix orphaned plants and transparency issues before the strand passes gateway audit. Accepts strand id (GUID) or slug.
+
+- `strandIdOrSlug` (string, required) — Strand id (GUID) or slug.
+
+### `get_plant_payoffs`
+
+List all registered plant/payoff pairs for a strand. A plant is a narrative detail seeded early (a behavioral tell, an object, a gloss) that resonates or resolves later — rewarding re-readers without requiring first-timers to catch it. Returns all pairs with their status (planned = not yet written, seeded = plant beat written but no payoff yet, paid-off = both beats written), is_transparent flag (must be true for the payoff to work for cold readers), and transparency_note (what the re-reader gains). Accepts strand id (GUID) or slug.
+
+- `strandIdOrSlug` (string, required) — Strand id (GUID) or slug.
+
+### `link_payoff_beat`
+
+Link the payoff beat to a registered plant/payoff pair. Call after writing the beat where the plant pays off. plant_payoff_id = GUID from register_plant_payoff; beat_id = GUID of the payoff beat.
+
+- `plantPayoffId` (string, required) — PlantPayoff id (GUID) from register_plant_payoff.
+- `beatId` (string, required) — Beat GUID containing the payoff.
+
+### `link_plant_beat`
+
+Link the plant beat to a registered plant/payoff pair. Call after writing the beat that seeds the plant detail. plant_payoff_id = GUID returned by register_plant_payoff; beat_id = GUID of the beat containing the plant.
+
+- `plantPayoffId` (string, required) — PlantPayoff id (GUID) from register_plant_payoff.
+- `beatId` (string, required) — Beat GUID containing the plant.
+
+### `register_plant_payoff`
+
+Register a new plant/payoff pair for a strand. Call this when you're about to write (or have just written) a detail that will pay off later. plant_description = what is seeded (the observable detail the cold reader sees but doesn't decode); payoff_description = what the re-reader gets (the deeper meaning on return). Category options: detail, echo, irony, motif, character-truth, structural. Optionally link to specific beats by their GUID ids (plant_beat_id, payoff_beat_id). Accepts strand id (GUID) or slug.
+
+- `strandIdOrSlug` (string, required) — Strand id (GUID) or slug.
+- `plantDescription` (string, required) — What is seeded — the detail the cold reader encounters but doesn't decode. Example: 'Kyle's hand twitches when he mentions Seo.'
+- `payoffDescription` (string, required) — How it pays off — what the returning reader gets on re-read. Example: 'On re-read, the twitch reveals the mentor was fabricated long before Kyle admits it.'
+- `category` (string, optional) — Category: detail | echo | irony | motif | character-truth | structural
+- `plantBeatId` (string, optional) — Beat GUID where the plant is seeded (omit if not yet written).
+- `payoffBeatId` (string, optional) — Beat GUID where the payoff occurs (omit if not yet written).
+
+### `set_plant_transparency`
+
+Record whether a payoff beat stands alone for cold readers (is_transparent) and what the re-reader gains (note). is_transparent=true means the payoff makes complete narrative sense without having read/remembered the plant. is_transparent=false is a writing bug — fix the payoff beat before marking the strand gateway-ready. note should name the specific additional layer the returning reader receives.
+
+- `plantPayoffId` (string, required) — PlantPayoff id (GUID).
+- `isTransparent` (bool, required) — True = the payoff reads completely for a cold reader; false = it requires catching the plant (writing bug).
+- `note` (string, optional) — What the re-reader gains that the first-timer doesn't. Required when is_transparent=true.
+
 ## Quality
 
 <sub>`QualityTools`</sub>
@@ -997,6 +1048,24 @@ Build the 'WHERE WE ARE' director context block for writing a specific chapter: 
 List every book on the shelf. Returns id, title, premise, chapter count, status, protagonists.
 
 - _(no parameters)_
+
+## Story Audit
+
+<sub>`StoryAuditTools`</sub>
+
+### `audit_story_commandments`
+
+Audit a strand against all 7 commandments — gateway (for first/standalone stories) or sequel (for stories with a PreviousStrandId set). Auto-detected: null PreviousStrandId → gateway commandments; set → sequel commandments. Each commandment check returns status (pass/warn/fail), specific evidence from the prose, and a concrete one-sentence fix when not passing. Returns gateway_ready (no failing checks), blocking_count (failures), advisory_count (warnings), plus plant_count and orphaned_plants from the PlantPayoff registry (relevant for the 'reward re-reading' commandment). Accepts strand id (GUID) or slug.
+
+- `strandIdOrSlug` (string, required) — Strand id (GUID) or slug.
+
+### `set_previous_strand`
+
+Link a strand to its predecessor, switching it from gateway mode to sequel mode. When previous_strand_id_or_slug is provided, Strand.PreviousStrandId is set — the story will use sequel commandments in audits and beat-writing context. To clear (revert to gateway mode), pass clear=true. Accepts both strand arguments as id (GUID) or slug.
+
+- `strandIdOrSlug` (string, required) — The strand to update — id (GUID) or slug.
+- `previousStrandIdOrSlug` (string, optional) — The preceding strand — id (GUID) or slug. Omit or pass null to clear.
+- `clear` (bool, optional) — Set true to clear PreviousStrandId (revert to gateway mode).
 
 ## Strand
 
