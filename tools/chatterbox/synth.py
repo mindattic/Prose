@@ -18,6 +18,8 @@ Then the engine resolves automatically (the C# side prefers tools\\chatterbox\\.
 
 Tuning via env (optional): SS_CHATTERBOX_EXAGGERATION (default 0.5),
 SS_CHATTERBOX_CFG (default 0.5). Lower exaggeration = calmer bedtime read.
+SS_CHATTERBOX_SEED (default 1234): fixed torch seed for deterministic prosody.
+SS_CHATTERBOX_VOICE: fallback reference WAV path when --voice is not passed.
 """
 import argparse, os, sys, wave, struct
 
@@ -57,15 +59,40 @@ def main() -> int:
             f"(import error: {e})\n")
         return 3
 
+    # ── Deterministic seed ────────────────────────────────────────────────────
+    # Fix the torch RNG so prosody is stable across runs. Override via
+    # SS_CHATTERBOX_SEED env (any integer); default 1234.
+    seed = int(os.environ.get("SS_CHATTERBOX_SEED", "1234"))
+    torch.manual_seed(seed)
+    if torch.cuda.is_available():
+        torch.cuda.manual_seed_all(seed)
+
     device = "cuda" if torch.cuda.is_available() else "cpu"
     model = ChatterboxTTS.from_pretrained(device=device)
 
     exaggeration = float(os.environ.get("SS_CHATTERBOX_EXAGGERATION", "0.5"))
     cfg = float(os.environ.get("SS_CHATTERBOX_CFG", "0.5"))
 
+    # ── Reference voice resolution ────────────────────────────────────────────
+    # Priority: --voice arg → SS_CHATTERBOX_VOICE env → bundled female-ref.wav
+    # → bundled male_ref.wav. If none exist the model uses its built-in voice.
+    script_dir = os.path.dirname(os.path.abspath(__file__))
+    voice_path = args.voice
+    if not voice_path:
+        voice_path = os.environ.get("SS_CHATTERBOX_VOICE", "")
+    if not voice_path:
+        for candidate in ("female-ref.wav", "male_ref.wav"):
+            p = os.path.join(script_dir, candidate)
+            if os.path.exists(p):
+                voice_path = p
+                break
+
     kwargs = {"exaggeration": exaggeration, "cfg_weight": cfg}
-    if args.voice and os.path.exists(args.voice):
-        kwargs["audio_prompt_path"] = args.voice
+    if voice_path and os.path.exists(voice_path):
+        kwargs["audio_prompt_path"] = voice_path
+        sys.stderr.write(f"[chatterbox] using reference voice: {voice_path}\n")
+    else:
+        sys.stderr.write("[chatterbox] using model built-in voice (no reference WAV)\n")
 
     # Chatterbox generates ~1000 tokens (~40s) per call, so a whole audiobook
     # segment must be split into sentence-sized chunks and concatenated. Without
