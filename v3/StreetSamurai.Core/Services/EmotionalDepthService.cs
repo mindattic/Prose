@@ -410,7 +410,10 @@ PROSE:
     private static string DetectRegister(string? bible)
     {
         if (bible is null or { Length: 0 }) return "";
-        if (bible.Contains("administrative horror", StringComparison.OrdinalIgnoreCase)) return "administrative-horror";
+        // GREY: the administrative-horror register — surfaces that stopped being argued with
+        if (bible.Contains("GREY register",         StringComparison.OrdinalIgnoreCase)) return "GREY";
+        if (bible.Contains("administrative horror", StringComparison.OrdinalIgnoreCase)) return "GREY";
+        if (bible.Contains("VULTURES register",     StringComparison.OrdinalIgnoreCase)) return "VULTURES";
         if (bible.Contains("CODA",    StringComparison.OrdinalIgnoreCase)) return "CODA";
         if (bible.Contains("JOY",     StringComparison.OrdinalIgnoreCase)) return "JOY";
         if (bible.Contains("SORROW",  StringComparison.OrdinalIgnoreCase)) return "SORROW";
@@ -427,7 +430,7 @@ PROSE:
                 ? "Apply CODA-specific anchors: warm→cold temperature shifts on cue. Score 4 only if the shift IS the instrument."
                 : "",
 
-            "administrative-horror" => dimension switch
+            "GREY" => dimension switch
             {
                 EmotionalDimension.WantNeedDivergence =>
                     "The procedure IS the character's Want; breaking procedure IS the Need. " +
