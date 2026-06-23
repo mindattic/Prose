@@ -11,7 +11,7 @@
 > All tools are MCP-prefixed `mcp__streetsamurai__<name>` by the client. Most return a
 > JSON string; the canon is the SQL database, scoped to the active Universe.
 
-**175 tools** across **24 tool families.**
+**176 tools** across **24 tool families.**
 
 ## Families
 
@@ -35,7 +35,7 @@
 | [Scene](#scene) | 4 |
 | [Species](#species) | 2 |
 | [Story](#story) | 6 |
-| [Strand](#strand) | 28 |
+| [Strand](#strand) | 29 |
 | [Universe](#universe) | 3 |
 | [Voice](#voice) | 5 |
 | [World Entity Crud](#world-entity-crud) | 5 |
@@ -1115,6 +1115,13 @@ Create a spine version pin for the strand's current docx version. Records the SH
 
 - `idOrSlug` (string, required) — Strand id (GUID) or slug.
 - `notes` (string, optional) — Optional human note explaining what changed at this version.
+
+### `prepare_audible`
+
+Build an Audible AI-narration hand-off package for a strand. Produces three files in {publishDir}/{Title}/Audible/: (1) a narration-clean manuscript (.audible.txt) with markdown artifacts stripped and Φ expanded to 'QUANTA'; (2) a pronunciation guide (.pronunciation.md) listing entity names with plain-English respellings; (3) AUDIBLE_README.md with submission instructions. No API is called on Audible's side — the author uploads the .audible.txt via ACX/Audible publisher portal. Returns paths + word/term counts.
+
+- `strandIdOrSlug` (string, required) — Strand id (GUID) or slug.
+- `withPhonetics` (bool, optional) — Run the optional LLM phonetics pass to fill in 'Say it as' respellings. Default true. Set false to skip and leave the column blank for manual completion.
 
 ### `publish_audiobook`
 

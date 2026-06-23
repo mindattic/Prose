@@ -629,6 +629,18 @@ if (args.Contains("--publish-docx"))
     return;
 }
 
+// CLI mode: build an Audible AI-narration hand-off package for a strand.
+// Produces a narration-clean manuscript, pronunciation guide, and README.
+//   ss --prepare-audible (--slug <slug> | --id <guid|prefix>) [--no-phonetics]
+if (args.Contains("--prepare-audible"))
+{
+    var cliBuilder = WebApplication.CreateBuilder(args);
+    cliBuilder.Services.AddStreetSamuraiServices();
+    var cliApp = cliBuilder.Build();
+    Environment.ExitCode = await PrepareAudibleCli.RunAsync(args, cliApp.Services);
+    return;
+}
+
 // CLI mode: deterministic timeline-consistency check (RFC 0009 §5).
 // Detects dead-character-acting and wound-regression violations. No LLM calls.
 //   ss --timeline-check (--slug <slug> | --id <guid>)

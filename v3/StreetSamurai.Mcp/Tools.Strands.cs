@@ -28,6 +28,7 @@ public class StrandTools
     private readonly BeatRebuildService rebuilder;
     private readonly DocxExportService docxExport;
     private readonly StrandSpineService spine;
+    private readonly AudiblePackageService audible;
 
     public StrandTools(
         StrandWorkbenchService workbench,
@@ -37,7 +38,8 @@ public class StrandTools
         ProseReflowService reflow,
         BeatRebuildService rebuilder,
         DocxExportService docxExport,
-        StrandSpineService spine)
+        StrandSpineService spine,
+        AudiblePackageService audible)
     {
         this.workbench = workbench;
         this.dbFactory = dbFactory;
@@ -47,6 +49,7 @@ public class StrandTools
         this.rebuilder = rebuilder;
         this.docxExport = docxExport;
         this.spine = spine;
+        this.audible = audible;
     }
 
     [McpServerTool, Description("List strands. Use kind='story' to list all root stories (no parent); kind='chapter' for all sub-strands (contain beats). Returns a flat list of id, slug, title, kind, status, beat-count, stale-count.")]
@@ -841,6 +844,43 @@ public class StrandTools
         ("chapter", _)        => "A chapter cannot contain other strands (it holds beats).",
         _                     => $"A '{childKind}' cannot be placed under a '{parentKind}'.",
     };
+
+    /// <summary>Build an Audible AI-narration hand-off package for a strand.</summary>
+    [McpServerTool, Description(
+        "Build an Audible AI-narration hand-off package for a strand. Produces three files in " +
+        "{publishDir}/{Title}/Audible/: (1) a narration-clean manuscript (.audible.txt) " +
+        "with markdown artifacts stripped and Φ expanded to 'QUANTA'; " +
+        "(2) a pronunciation guide (.pronunciation.md) listing entity names with plain-English " +
+        "respellings; (3) AUDIBLE_README.md with submission instructions. " +
+        "No API is called on Audible's side — the author uploads the .audible.txt via ACX/Audible " +
+        "publisher portal. Returns paths + word/term counts.")]
+    public async Task<string> PrepareAudible(
+        [Description("Strand id (GUID) or slug.")] string strandIdOrSlug,
+        [Description("Run the optional LLM phonetics pass to fill in 'Say it as' respellings. Default true. Set false to skip and leave the column blank for manual completion.")] bool withPhonetics = true)
+    {
+        var strand = await ResolveStrandAsync(strandIdOrSlug);
+        if (strand == null)
+            return JsonSerializer.Serialize(new { error = "strand_not_found", strandIdOrSlug }, CanonTools.JsonOpts);
+
+        try
+        {
+            var result = await audible.BuildAsync(strand.Id, withPhonetics);
+            return JsonSerializer.Serialize(new
+            {
+                ok               = true,
+                manuscript_path  = result.ManuscriptPath,
+                lexicon_path     = result.LexiconPath,
+                readme_path      = result.ReadmePath,
+                word_count       = result.WordCount,
+                term_count       = result.TermCount,
+                phonetics_applied = result.PhoneticsApplied,
+            }, CanonTools.JsonOpts);
+        }
+        catch (Exception ex)
+        {
+            return JsonSerializer.Serialize(new { error = "build_failed", message = ex.Message }, CanonTools.JsonOpts);
+        }
+    }
 
     private async Task<Strand?> ResolveStrandAsync(string idOrSlug)
     {
