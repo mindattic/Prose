@@ -660,3 +660,60 @@ smoking gun is written into the protagonist's daily experience.
   only thing that works in the gaps.
 
 **Entities to seed:** Sasha Vo (person), Signal (weapon), Noise (weapon).
+
+## SS-A14 — *Underlying Connection* renamed to *Mnemosync*; structural and prose redesign {#SS-A14}
+
+**What changed.** [GLMZ] The *Underlying Connection* strand (ULC) is renamed **Mnemosync**
+(code MNEMO; slug `mnemosync-019ee11e`). The strand bible is rewritten at
+[docs/strands/MNEMO.md](strands/MNEMO.md). This is the weirdest prose register in the GLMZ
+collection.
+
+### What is preserved from SS-A6 / ULC
+
+All character facts (Amara Osei she/her, Seto Banda he/him, Ciro Fonseca straight razor,
+Ekow Ato gray-zone contract, Nuru Banda row 19) carry forward unchanged. Batch 44-C canon
+is preserved: 847 recipients, targeted associative-node suppression (retain memory, lose
+meaning), calibrated 2222, internal classification *managed liability*. Act 1 (10 chapters,
+all complete and locked) is not touched.
+
+### What changes
+
+**The horror engine is foregrounded.** The central weirdness of this story — the suppression
+protocol severs the connection between a memory and its meaning, not the memory itself — was
+in the SS-A6 text but understated in the prose. This amendment locks it as the primary horror
+register and the story's governing metaphor.
+
+**The bleed-intrusion prose rule (LOCKED).** In any chapter where the bleed is active (Acts 2
+and 3), the POV prose is occasionally interrupted by single bleed-intrusion sentences from the
+other character's sensory memory. No attribution, no italics, no separator. Mid-paragraph. The
+reader learns to identify them. They are not explained. Frequency: sparse in Act 2 (one per
+POV chapter); intensifying in Act 3. This is the formal innovation that makes the story
+formally experimental.
+
+**Ciro redesigned.** Ciro Fonseca is not a fixer who threatens. He is the most calibrated
+subject in Batch 44-C — more visits than anyone else in the manifest. He has lost most of his
+objections to himself. He is not evil; he is **emptied**. His Act 2 actions are calibration
+events: a contact loses the meaning of something they were helping with; a sub-batch
+recalibration runs automatically; a calibration kit appears as a gift. Quiet. Permanent.
+Irreversible. This is the fix for the "consequences abstract" finding.
+
+**The Pilsen Veil (LOCKED).** The Batch 44-C black spot corridor is described with a
+flat prose register when the characters are in it — short declaratives, no friction-words,
+neutral descriptors. The flatness matches the zone. The horror is the absence of horror.
+
+**The Phase II document (LOCKED).** The reveal is not a cover-up. It says "Phase II" — a
+launch announcement for rolling out the suppression sub-protocol as the standard calibration
+for all neuretic clients in GLMZ. Not 847 people. Everyone.
+
+**Act 3 redesigned (LOCKED, not yet written).** Seto attempts a reverse bleed transfer to
+restore the weight of Nuru Banda's suppressed memories. In the attempt, the bleed opens
+across the full Batch 44-C network for 8 seconds. 847 people experience a flash of meaning.
+Orison emergency-recalibrates in 8 seconds and publishes the Phase II announcement that
+afternoon. The ending: one person (Nuru) does not show up for her Tuesday 9AM calibration
+visit. Ch28 (10:47) is the person in the lobby at the time she was supposed to arrive.
+
+**Why.** Act 2 scored 74.4 mean because "observations accumulate, nothing ignites" and
+"cyberpunk underdressed." The fix is not polish — it is structural weirdness. Making the
+calibration events the antagonist's weapon (quiet, permanent, delivered as maintenance) solves
+the "consequences abstract" problem. The bleed-intrusion prose rule solves "cyberpunk
+underdressed" by making the formal structure itself the weird cyberpunk element.
