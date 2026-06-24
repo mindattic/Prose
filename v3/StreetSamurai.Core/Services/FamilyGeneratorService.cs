@@ -496,9 +496,8 @@ public class FamilyGeneratorService
                 foreach (var p in ga.EnumerateObject())
                     if (p.Value.ValueKind == JsonValueKind.Number) anc[p.Name] = p.Value.GetDouble();
                 if (anc.Count == 0) continue;
-                // Divergence test: top ancestry component is not in subject's
-                // primary set. Cheap and good enough for this pass.
-                var top = anc.OrderByDescending(kv => kv.Value).First().Key;
+                var top = anc.OrderByDescending(kv => kv.Value).FirstOrDefault().Key ?? "";
+                if (string.IsNullOrEmpty(top)) continue;
                 if (subjectAncestries.Contains(top)) continue;
                 candidates.Add(new SpouseDonor(heritage, anc));
             }

@@ -134,7 +134,7 @@ public class EntityRamificationService(
                 StrandId    = sb.StrandId,
                 StrandTitle = sb.Strand.Title,
                 SortKey     = sb.SortKey,
-                TextPreview = sb.Beat.Text.Length > 120 ? sb.Beat.Text.Substring(0, 120) + "…" : sb.Beat.Text,
+                TextPreview = string.IsNullOrEmpty(sb.Beat.Text) ? "" : sb.Beat.Text.Length > 120 ? sb.Beat.Text.Substring(0, 120) + "…" : sb.Beat.Text,
                 Entities    = db.BeatEntityMentions
                     .Where(m => m.BeatId == sb.BeatId)
                     .Select(m => m.EntityName)

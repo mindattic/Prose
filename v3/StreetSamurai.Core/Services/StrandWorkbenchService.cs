@@ -1967,10 +1967,10 @@ public class StrandWorkbenchService
         {
             pub.Status = "error";
             db.StrandAudioEvents.Add(NewAudioEvent(strandId, null, pub.Id, "publish-error", ex.Message));
-            try { await db.SaveChangesAsync(CancellationToken.None); } catch { }
+            try { await db.SaveChangesAsync(CancellationToken.None); } catch (Exception dbEx) { log.LogWarning(dbEx, "Failed to save audio error event"); }
             throw;
         }
-        finally { try { File.Delete(tmpWav); } catch { } }
+        finally { try { File.Delete(tmpWav); } catch (Exception delEx) { log.LogWarning(delEx, "Failed to delete temporary audio file"); } }
     }
 
     /// <summary>Greedy segmenter: keep beats together up to the char budget,

@@ -38,7 +38,7 @@ public static class ScoreTrendCli
             {
                 StrandId    = g.Key,
                 EarliestAt  = g.Min(h => h.RecordedAt),
-                LatestScore = g.OrderByDescending(h => h.RecordedAt).First().MeanScore,
+                LatestScore = g.OrderByDescending(h => h.RecordedAt).FirstOrDefault()?.MeanScore ?? 0,
             })
             .OrderBy(r => r.EarliestAt)
             .ToListAsync();

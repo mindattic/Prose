@@ -40,7 +40,9 @@ public static class ReembedCli
                 var pct = p.total > 0 ? (int)(100.0 * p.done / p.total) : 0;
                 if (pct == last) return;
                 last = pct;
-                Console.Write($"\r[reembed] [{p.done,5}/{p.total,5}] {pct,3}%  {(p.current ?? "").PadRight(40).Substring(0, 40)}");
+                var label = (p.current ?? "");
+                var truncated = label.Length > 40 ? label.Substring(0, 37) + "…" : label.PadRight(40);
+                Console.Write($"\r[reembed] [{p.done,5}/{p.total,5}] {pct,3}%  {truncated}");
             });
             var psw = System.Diagnostics.Stopwatch.StartNew();
             int proseTouched;

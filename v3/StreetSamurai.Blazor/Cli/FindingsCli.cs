@@ -116,7 +116,7 @@ public static class FindingsCli
         return 0;
     }
 
-    static string Truncate(string s, int max) => s.Length <= max ? s : s.Substring(0, max - 1) + "…";
+    static string Truncate(string s, int max) => string.IsNullOrEmpty(s) || s.Length <= max ? s : max <= 1 ? "…" : s.Substring(0, max - 1) + "…";
 
     static void PrintUsage()
     {
