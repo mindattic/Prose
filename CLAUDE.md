@@ -64,7 +64,6 @@ Strand files are **loaded on demand**, not injected at session start. Load only 
 - `docs/strands/DWIACE.md` — Death Whispers in a Cat's Ear / Rennick Investigations (GLMZ)
 - `docs/strands/SPRW.md` — Sparrow / Elias Macias & the orbital mystery (GLMZ)
 - `docs/strands/MNEMO.md` — Mnemosync / Amara & Seto (GLMZ, in progress; formerly ULC, redesigned SS-A14)
-- `docs/strands/TVYT.md` — The Voice You Trust / Rhea & Caius (GLMZ, redesigned SS-A13; Sable origin)
 - `docs/strands/TEST.md` — Testament / Bear court-martial (GLMZ)
 - `docs/strands/GIW.md` — Grafted Into War / M-101/Soren (Fantasy)
 - `docs/books/bushido-coda-strands-bible.md` — BCODA (legacy long-form; superseded by BCODA.md above)
@@ -109,6 +108,43 @@ Working rules:
 5. **Export** — `--publish-docx`; flip USER_STORIES to ✅ with evidence.
 
 Never write prose before steps 1 and 2 are complete.
+
+## Prose Engine Services (use all of these — see SS-A16)
+
+The beat-generation pipeline has several layers. Use **`ProseWriterRouter`** as the entry point
+for all prose writing — it coordinates all the services below and logs coverage.
+
+### Entry points
+| Path | When to use |
+|---|---|
+| `ProseWriterRouter.WriteAsync(context, beatId, beatIndex, totalBeats)` | All beat writing from UI + CLI |
+| `CombatSceneWriter.WriteCombatSceneAsync(request)` | Explicit multi-exchange combat setpiece (numExchanges > 1, full loadout tracking) |
+| `BeatGeneratorService.GenerateBeatAsync(context)` | Legacy path — direct generation without coverage logging |
+
+### Context enrichment chain (all wired inside ProseWriterRouter)
+| Service | What it injects | Activation |
+|---|---|---|
+| `BeatModeDetector` | Classifies beat as Combat/Narrative/EmotionalClimax/Dialogue/Transition/Revelation | Keyword scan on BeatGoal |
+| `PacingService` | BREATHE/FLOW/TIGHTEN/STRIKE/SETTLE prose rhythm | Position + BeatGoal keywords; Combat forces STRIKE |
+| `StoryMethodologyService` | Save the Cat structural role (Opening Image → Final Image) + Scene-Sequel type | Position in strand |
+| `PlantPayoffService` | Active plant/payoff pairs for the strand | `BeatContext.StrandId != Guid.Empty` |
+| `StoryAuditService` | Gateway or Sequel commandments (7 each, auto-detected from `PreviousStrandId`) | `BeatContext.StrandId != Guid.Empty` |
+| `CombatProseGuidance` | Verbs-first, fragment sentences, no emotion-naming, dissociated observer | `BeatMode.Combat` |
+
+### Coverage monitoring
+```
+ss --workflow-status --slug <slug>    # per-strand service coverage matrix + gaps
+ss --workflow-status --all            # global utilization across all strands
+```
+MCP: `workflow_status`, `workflow_status_global`, `workflow_beat_modes`
+
+### Beat writing workflow
+1. Assemble `BeatContext` (XRayContext via SceneContextAssembler, StrandId always set)
+2. Call `ProseWriterRouter.WriteAsync(context, beatId, beatIndex, totalBeats)` — NOT BeatGeneratorService directly
+3. After writing, run `ss --examine-emotion --slug <slug>` to score emotional dimensions
+4. After enough beats scored, run `ss --update-register-exemplars --slug <slug>` to update the voice register
+5. After strand complete, run `ss --story-audit --slug <slug>` to audit gateway/sequel commandments
+6. After strand complete, run `ss --plant-audit --slug <slug>` to check for orphaned plants
 
 ## Multi-Strand Story Review (mandatory after every strand — see memory: feedback_story_accretion)
 

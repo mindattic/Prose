@@ -61,6 +61,8 @@ public class StreetSamuraiDbContext : DbContext
                 case EntityStateEvent ev when ev.UniverseId == Guid.Empty: ev.UniverseId = target; break;
                 case CharacterReadModel rm when rm.UniverseId == Guid.Empty: rm.UniverseId = target; break;
                 case PlantPayoff pp when pp.UniverseId == Guid.Empty: pp.UniverseId = target; break;
+                case BeatServiceLog bsl when bsl.UniverseId == Guid.Empty: bsl.UniverseId = target; break;
+                case BeatModeLog bml when bml.UniverseId == Guid.Empty:    bml.UniverseId = target; break;
                 // Config rows: operational/shared keys are tagged with the SHARED sentinel so every
                 // universe sees the one copy; all other keys are scoped to the current universe.
                 case Setting st when st.UniverseId == Guid.Empty:
@@ -346,6 +348,11 @@ public class StreetSamuraiDbContext : DbContext
     // Plant/payoff registry — "reward re-reading without requiring it."
     public DbSet<PlantPayoff>            PlantPayoffs            => Set<PlantPayoff>();
 
+    // Workflow monitoring — tracks which prose services were active per beat write.
+    // Populated by ProseWriterRouter. Query via ss --workflow-status or workflow_status MCP tools.
+    public DbSet<BeatServiceLog>         BeatServiceLogs         => Set<BeatServiceLog>();
+    public DbSet<BeatModeLog>            BeatModeLogs            => Set<BeatModeLog>();
+
     protected override void OnModelCreating(ModelBuilder b)
     {
         base.OnModelCreating(b);
@@ -468,6 +475,25 @@ public class StreetSamuraiDbContext : DbContext
             e.HasIndex(x => x.PlantBeatId);
             e.HasIndex(x => x.PayoffBeatId);
         });
+
+        // ── Workflow monitoring ──────────────────────────────────────────────
+        b.Entity<BeatServiceLog>(e =>
+        {
+            e.HasKey(x => x.Id);
+            e.Property(x => x.Service).HasMaxLength(100).IsRequired();
+            e.HasIndex(x => x.StrandId);
+            e.HasIndex(x => x.BeatId).HasFilter("[BeatId] IS NOT NULL");
+            e.HasOne<Strand>().WithMany().HasForeignKey(x => x.StrandId).OnDelete(DeleteBehavior.Cascade);
+            e.HasOne<Beat>().WithMany().HasForeignKey(x => x.BeatId).IsRequired(false).OnDelete(DeleteBehavior.Restrict);
+        });
+        b.Entity<BeatModeLog>(e =>
+        {
+            e.HasKey(x => x.BeatId);
+            e.Property(x => x.Mode).HasMaxLength(50).IsRequired();
+            e.Property(x => x.DetectionMethod).HasMaxLength(50).IsRequired();
+            e.HasOne<Beat>().WithMany().HasForeignKey(x => x.BeatId).OnDelete(DeleteBehavior.Cascade);
+        });
+
         b.Entity<BeatEntityMention>(e =>
         {
             e.HasKey(x => new { x.BeatId, x.EntityId });

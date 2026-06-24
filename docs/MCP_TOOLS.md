@@ -11,7 +11,7 @@
 > All tools are MCP-prefixed `mcp__streetsamurai__<name>` by the client. Most return a
 > JSON string; the canon is the SQL database, scoped to the active Universe.
 
-**185 tools** across **26 tool families.**
+**188 tools** across **27 tool families.**
 
 ## Families
 
@@ -40,6 +40,7 @@
 | [Strand](#strand) | 29 |
 | [Universe](#universe) | 3 |
 | [Voice](#voice) | 5 |
+| [Workflow Monitor](#workflow-monitor) | 3 |
 | [World Entity Crud](#world-entity-crud) | 5 |
 | [World Modelling](#world-modelling) | 15 |
 | [Writing](#writing) | 3 |
@@ -1348,6 +1349,28 @@ List voice change-log entries filtered by status. Use status='proposed' to see p
 Reject a proposed voice rule. The entry stays in the audit trail (status = 'rejected') so the decision is traceable. Pass the entry id returned by harvest_voice or list_voice_proposals.
 
 - `entryId` (string, required) — The voice change-log entry GUID to reject.
+
+## Workflow Monitor
+
+<sub>`WorkflowMonitorTools`</sub>
+
+### `workflow_beat_modes`
+
+Get the detected beat mode log for a strand. Shows how each beat was classified (Narrative/Combat/EmotionalClimax/Dialogue/Transition/Revelation) and the confidence level.
+
+- `slug` (string, required) — Strand slug
+
+### `workflow_status`
+
+Get prose service coverage for a strand. Returns which services (Pacing, StoryMethodology, PlantPayoff, StoryAudit, Combat) were active when beats were written, and flags gaps where applicable services weren't used.
+
+- `slug` (string, required) — Strand slug (e.g. 'ATTE', 'BCODA')
+
+### `workflow_status_global`
+
+Get global prose workflow coverage across all strands. Returns per-service utilization rates and a list of strands with coverage gaps.
+
+- _(no parameters)_
 
 ## World Entity Crud
 

@@ -105,6 +105,15 @@ public class BeatGeneratorService
             catch { /* non-blocking */ }
         }
 
+        // Pacing + structural role guidance — pre-computed by ProseWriterRouter and
+        // injected here. Both are empty strings when called via the legacy direct path.
+        var pacingBlock = !string.IsNullOrWhiteSpace(context.PacingGuidance)
+            ? $"\n\n{context.PacingGuidance}"
+            : "";
+        var structuralBlock = !string.IsNullOrWhiteSpace(context.StructuralRoleGuidance)
+            ? $"\n\n{context.StructuralRoleGuidance}"
+            : "";
+
         var system = $"""
             {UniverseLine()}
 
@@ -119,7 +128,7 @@ public class BeatGeneratorService
             WORLD CONTEXT (characters, locations, equipment, relationships — use as canon facts):
             {context.RelationshipContext}
             {(context.XRayContext.Length > 0 ? "\nSCENE X-RAY — entities on screen RIGHT NOW. Every character below speaks in THEIR OWN documented register, not the narrator's:\n" + context.XRayContext : "")}
-            {(context.LocationContext.Length > 0 ? "\nADDITIONAL LOCATION DETAIL:\n" + context.LocationContext : "")}{dialogueBlock}{anchorBlock}{plantBlock}{commandmentBlock}
+            {(context.LocationContext.Length > 0 ? "\nADDITIONAL LOCATION DETAIL:\n" + context.LocationContext : "")}{dialogueBlock}{anchorBlock}{plantBlock}{commandmentBlock}{pacingBlock}{structuralBlock}
             """;
 
         var hasDialogue = context.DialogueContext.Length > 0;
@@ -767,6 +776,22 @@ public record BeatContext
     /// Leave as Guid.Empty to skip both injections (legacy callers).
     /// </summary>
     public Guid StrandId { get; init; }
+
+    // ── ProseWriterRouter enrichment ──────────────────────────────────────────
+    // These fields are populated by ProseWriterRouter before calling GenerateBeatAsync.
+    // Left at their defaults when callers invoke BeatGeneratorService directly (legacy path).
+
+    /// <summary>Position in strand — enables pacing and structural role injection when set by ProseWriterRouter.</summary>
+    public int BeatIndex { get; init; }
+    /// <summary>Total beats in the strand — enables positional arc calculations when set by ProseWriterRouter.</summary>
+    public int TotalBeats { get; init; }
+
+    /// <summary>Pre-computed pacing guidance block (from PacingService). Empty = skip injection.</summary>
+    public string PacingGuidance { get; init; } = "";
+    /// <summary>Pre-computed structural role block (from StoryMethodologyService). Empty = skip injection.</summary>
+    public string StructuralRoleGuidance { get; init; } = "";
+    /// <summary>Detected beat mode (Combat/Narrative/EmotionalClimax/etc.) from BeatModeDetector.</summary>
+    public BeatMode DetectedMode { get; init; } = BeatMode.Narrative;
 }
 
 /// <summary>
@@ -788,3 +813,9 @@ public record OocFinding(
 /// when some providers error mid-vote).
 /// </summary>
 public record BeatRankResult(string Blurb, double Score, int VoteCount);
+
+/// <summary>
+/// Classification of the dominant mode of a beat. Detected from BeatGoal keywords by
+/// BeatModeDetector and injected into BeatContext by ProseWriterRouter.
+/// </summary>
+public enum BeatMode { Narrative, Combat, EmotionalClimax, Dialogue, Transition, Revelation }
