@@ -12,11 +12,13 @@ The boots were her mother's. She'd padded the toes with folded paper because her
 The boarding announcement ran in English and then Mandarin and then a dialect she didn't recognize. She picked up the case and walked to the door without looking back at Iowa.
 
 [Beat 2]
-She'd looked at photographs. She'd studied the transit network for two years and could name every line and every seam point and the CorpoNation flag hanging over each district she'd ever read about. None of it had prepared her for the vertical component â€” the way the city stacked, each tier's underside becoming the ceiling of the tier below, so that looking up was the same as looking up into another street. Exhaust heat came down from somewhere above. Cooking smells and machinery and the specific bite of industrial solvent. The noise wasn't louder than she'd expected. It was denser â€” the city had been running too long to make fresh sound anymore, everything was old noise folded back into itself.
+She'd looked at photographs. She'd studied the transit network for two years and could name every line and every seam point and the CorpoNation flag hanging over each district she'd ever read about. None of it had prepared her for the vertical component - the way the city stacked, each tier's underside becoming the ceiling of the tier below, so that looking up was the same as looking up into another street. Exhaust heat came down from somewhere above. Cooking smells and machinery and the specific bite of industrial solvent. The noise wasn't louder than she'd expected. It was denser - the city had been running too long to make fresh sound anymore, everything was old noise folded back into itself.
+
+Off to the north a tier ended early, at a torn edge where the structure had stopped being structure - a Rift scar, the kind the city walled off and built around rather than through, the air above it bending in a direction her eyes kept sliding off of. Closer in, the support columns wore slow grey blooms of nanite patchwork, fault lines sealing as fast as the load opened them: the way the city held itself together now, not repaired so much as continuously deciding not to fall.
 
 She navigated by the transit map she'd memorized on the train. Kept the case in her right hand and the secondary pouch between her left arm and her body. She moved like she had somewhere to be.
 
-A kid angled at her near the exit gates â€” she felt the weight shift in the crowd the way she'd learned to feel the weight of a calf trying to get past her in a gate lane, and her right hand caught a wrist without her making a decision about it. The wrist was thin. She released it without looking at the kid's face. Kept moving.
+A kid angled at her near the exit gates - she felt the weight shift in the crowd the way she'd learned to feel the weight of a calf trying to get past her in a gate lane, and her right hand caught a wrist without her making a decision about it. The wrist was thin. She released it without looking at the kid's face. Kept moving.
 
 She felt the kid watching her. She didn't turn around.
 
@@ -129,9 +131,11 @@ She went home.
 [Beat 11]
 She'd spent the afternoon watching two things: the ACS signal schedule, and the window of the middle building.
 
-The ACS sweep cadence was public infrastructure â€” broadcast on the open frequency band, available to anyone with a receiver, which they'd apparently not considered relevant when they checked her ID and noted the referral category. Sweeps ran at irregular intervals with a base period of forty-seven minutes and a variance of eleven in either direction.
+The ACS sweep cadence was public infrastructure — broadcast on the open frequency band, available to anyone with a receiver, which they'd apparently not considered relevant when they checked her ID and noted the referral category. Sweeps ran at irregular intervals with a base period of forty-seven minutes and a variance of eleven in either direction.
 
-She had also been counting. Across the full afternoon of observation she'd seen three distinct people. Two had been visible at regular intervals. A third â€” shorter, younger, working a different rotation â€” had moved through the back area and set something on the table at the forty-minute mark. Then gone still.
+The irregularity wasn't sloppiness. Behind the open frequency was an Arcturus arbiter — one of the district's resident intelligences, not a person and not quite a tool, running its own quiet logic about what in the zone was worth a second pass. The cadence was the shape of its attention. Unlicensed neuretics hardware was always worth a second pass. She was counting on that.
+
+She had also been counting. Across the full afternoon of observation she'd seen three distinct people. Two had been visible at regular intervals. A third — shorter, younger, working a different rotation — had moved through the back area and set something on the table at the forty-minute mark. Then gone still.
 
 At 03:00 she sent the burst.
 
