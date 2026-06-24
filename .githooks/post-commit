@@ -1,0 +1,8 @@
+#!/usr/bin/env sh
+# ─────────────────────────────────────────────────────────────────────────────
+# Post-commit: sync all .md files (registers, strand bibles, docs, memory) to
+# the MarkdownFiles temporal table. A .md can be overwritten; the temporal
+# record is forever. Runs silently on success; warns on failure (non-fatal).
+# ─────────────────────────────────────────────────────────────────────────────
+dotnet run --project v3/StreetSamurai.Blazor --no-build -- --sync-markdown \
+  2>/dev/null | grep "\[sync-markdown\]" || true
