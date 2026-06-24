@@ -398,6 +398,57 @@ public class StrandWorkbenchServiceTests
         Assert.That(ordered.Select(o => o.Beat.Text).ToArray(), Is.EqualTo(new[] { "root-beat", "child-beat" }));
     }
 
+    [Test]
+    public async Task GetOrderedBeats_SkipsDraftChildSubtrees()
+    {
+        // A work with two children: a real chapter and a Draft bucket (with its
+        // own grandchild). The Draft subtree must be excluded from the parent's
+        // ordered beats so it never pollutes a review / score / publish, while a
+        // direct walk of the Draft bucket still returns its beats.
+        var root = await MakeStrandAsync("Root");
+
+        Strand keep, drafts, draftGrandchild;
+        await using (var db = await dbFactory.CreateDbContextAsync())
+        {
+            keep = new Strand
+            {
+                Id = Guid.CreateVersion7(), Slug = "keep-" + Guid.NewGuid().ToString("N")[..6],
+                Title = "Keep", Kind = "chapter", Status = "draft",
+                ParentStrandId = root.Id, SortKey = 100,
+            };
+            drafts = new Strand
+            {
+                Id = Guid.CreateVersion7(), Slug = "drafts-" + Guid.NewGuid().ToString("N")[..6],
+                Title = "Drafts", Kind = "story", Status = "draft", IsDraft = true,
+                ParentStrandId = root.Id, SortKey = 200,
+            };
+            draftGrandchild = new Strand
+            {
+                Id = Guid.CreateVersion7(), Slug = "dgc-" + Guid.NewGuid().ToString("N")[..6],
+                Title = "Cut Scene", Kind = "chapter", Status = "draft",
+                ParentStrandId = drafts.Id, SortKey = 100,
+            };
+            db.Strands.AddRange(keep, drafts, draftGrandchild);
+            await db.SaveChangesAsync();
+        }
+
+        await svc.InsertBeatAsync(root.Id, null, "root-beat");
+        await svc.InsertBeatAsync(keep.Id, null, "keep-beat");
+        await svc.InsertBeatAsync(drafts.Id, null, "draft-beat");
+        await svc.InsertBeatAsync(draftGrandchild.Id, null, "grandchild-beat");
+
+        // Parent walk: only non-draft beats, and the whole draft subtree is gone.
+        var fromRoot = await svc.GetOrderedBeatsAsync(root.Id);
+        Assert.That(fromRoot.Select(o => o.Beat.Text).ToArray(),
+            Is.EqualTo(new[] { "root-beat", "keep-beat" }));
+
+        // Targeting the Draft bucket directly still returns its (and its
+        // children's) beats — the exclusion is only about what a PARENT pulls in.
+        var fromDrafts = await svc.GetOrderedBeatsAsync(drafts.Id);
+        Assert.That(fromDrafts.Select(o => o.Beat.Text).ToArray(),
+            Is.EqualTo(new[] { "draft-beat", "grandchild-beat" }));
+    }
+
     // ── Gap-after-beat tests (the standalone Gaps table was folded into
     //    Beat.GapAfterMs in the 2026-05-23 schema migration) ────────────────
 

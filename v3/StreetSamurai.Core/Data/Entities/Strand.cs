@@ -63,6 +63,18 @@ public class Strand
     /// <summary>When the author marked this strand canon (null = never).</summary>
     public DateTime? CanonAt { get; set; }
 
+    /// <summary>Draft / out-of-scope flag. When true, this strand — and every
+    /// strand beneath it in the <see cref="ParentStrandId"/> tree — is IGNORED
+    /// by the tools: it is excluded from a parent's ordered beats (so it never
+    /// pollutes a review, score, publish, or narration of the work it hangs
+    /// under), and enumeration tools skip it by default. Use it for the
+    /// "Drafts" bucket, cut scenes, archived chapters, unincorporated drafts,
+    /// and bonus material that should not count toward the finished work. The
+    /// flag is inherited down the tree: marking a container Draft drafts its
+    /// whole subtree. Distinct from <see cref="Status"/> "draft" (the
+    /// generation-lifecycle default), which carries no exclusion semantics.</summary>
+    public bool IsDraft { get; set; }
+
     /// <summary>Optional parent strand. A book strand has chapter-strand
     /// children; a saga strand has book-strand children; a standalone
     /// vignette has none. Walking the tree in SortKey order gives the

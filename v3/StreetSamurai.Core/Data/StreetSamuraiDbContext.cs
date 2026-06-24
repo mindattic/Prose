@@ -438,6 +438,9 @@ public class StreetSamuraiDbContext : DbContext
             e.HasIndex(x => new { x.UniverseId, x.Slug }).IsUnique().HasDatabaseName("UX_Strands_Universe_Slug");
             e.HasIndex(x => x.Kind);
             e.HasIndex(x => new { x.ParentStrandId, x.SortKey });
+            // Draft subtrees are skipped by the tools; index the flag so the
+            // tree-walk and enumeration filters stay cheap.
+            e.HasIndex(x => x.IsDraft);
             e.HasIndex(x => x.UniverseId);
             e.HasOne(x => x.ParentStrand).WithMany(x => x.Children)
                 .HasForeignKey(x => x.ParentStrandId).OnDelete(DeleteBehavior.Restrict);

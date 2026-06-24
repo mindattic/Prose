@@ -166,7 +166,7 @@ public class StoryAuditService(
         // SortKey), not the book strand's own beats — those may hold a legacy outline
         // or condensed draft that no longer matches the published manuscript.
         var childChapters = await db.Strands.AsNoTracking()
-            .Where(s => s.ParentStrandId == strand.Id && s.Kind == "chapter")
+            .Where(s => s.ParentStrandId == strand.Id && s.Kind == "chapter" && !s.IsDraft)
             .Include(s => s.StrandBeats).ThenInclude(sb => sb.Beat)
             .OrderBy(s => s.SortKey)
             .ToListAsync(ct);

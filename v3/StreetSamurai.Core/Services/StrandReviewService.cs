@@ -32,6 +32,14 @@ public class StrandReviewService
 
     private int MaxConcurrency => settings.ReviewMaxConcurrency;
 
+    /// <summary>Assembled-prose size above which a strand is reviewed by act/segment
+    /// instead of in a single pass (a whole large book can't be judged reliably in
+    /// one ballot, and the structural pre-flight only sees the opening fragment).</summary>
+    private const int LargeStrandCharThreshold = 150_000;
+
+    /// <summary>Target chars per review segment — small enough for one reliable ballot.</summary>
+    private const int SegmentTargetChars = 90_000;
+
     /// <summary>When set, the reviewer persona is framed as a fan of this genre
     /// instead of the default cyberpunk fandom. E.g. "cosmic horror".</summary>
     public string? GenreOverride { get; set; }
@@ -191,6 +199,22 @@ public class StrandReviewService
     {
         if (ballotCount <= 0) ballotCount = settings.ReviewBallots;
         if (proseCount < 0) proseCount = 0;
+
+        // ── Oversized-strand auto-route ───────────────────────────────────────
+        // A single ballot can't reliably judge a whole large book, and the
+        // structural pre-flight only sees the opening fragment. When the assembled
+        // prose is large, review by act/segment instead (per-part panels, aggregated).
+        {
+            var probe = await exporter.ExportAsync(strandId, numberBeats: true, ct);
+            if (probe.Markdown.Length > LargeStrandCharThreshold)
+            {
+                log.LogInformation("Strand {Id} is large ({Chars} chars) — routing to segmented (per-act) review.",
+                    strandId, probe.Markdown.Length);
+                var perSeg = Math.Max(6, (int)Math.Ceiling(ballotCount / 3.0));
+                return await RunSegmentedReviewAsync(strandId, perSeg, proseCount, SegmentTargetChars,
+                    progress, ct, allowedProvidersOverride);
+            }
+        }
 
         // ── Structural pre-flight ─────────────────────────────────────────────
         // Run the structural diagnostic before any ballots. If blocking failures
@@ -386,6 +410,196 @@ public class StrandReviewService
         return new SampledRunResult(personas.Count, saved.Count, proseAdded, failed,
             Math.Round(mean, 1), Math.Round(sd, 1), Math.Round(ci, 2), clusters,
             export.ContentHash, report, export.Path);
+    }
+
+    /// <summary>Segmented (per-act) review for large books that can't be reviewed
+    /// reliably in one pass. Splits the strand into ≈<paramref name="targetChars"/>
+    /// segments (broken at chapter boundaries; flat strands split by size), runs a
+    /// small panel of DISTINCT-persona ballots per segment (RecomputeScores keeps one
+    /// review per persona, so each persona ballots at most one part), then aggregates:
+    /// the strand score is the mean across every part's ballots. Per-segment barriers
+    /// keep provider load bounded. Returns the same shape as the single-pass sampled
+    /// review plus a per-part scorecard.</summary>
+    public async Task<SampledRunResult> RunSegmentedReviewAsync(
+        Guid strandId, int ballotsPerSegment, int proseCount, int targetChars,
+        IProgress<int>? progress = null, CancellationToken ct = default,
+        string? allowedProvidersOverride = null)
+    {
+        if (ballotsPerSegment <= 0) ballotsPerSegment = 8;
+        if (targetChars <= 0) targetChars = SegmentTargetChars;
+        var providers = ReviewProviderIds(allowedProvidersOverride);
+        if (providers.Count == 0)
+            throw new InvalidOperationException("No trusted LLM providers are configured with API keys — cannot run reviews.");
+
+        var seg = await exporter.ExportSegmentsAsync(strandId, targetChars, ct);
+        if (seg.Segments.Count == 0)
+            return new SampledRunResult(0, 0, 0, 0, 0, 0, 0, 0, seg.ContentHash, "_No beats to review._", "");
+        var totalBeatCount = seg.BeatCount;
+        var groupName = $"Group Seg {seg.ContentHash[..6]}";
+
+        string? strandSlug = null;
+        if (proseLessons != null)
+        {
+            await using var slugDb = await dbFactory.CreateDbContextAsync(ct);
+            strandSlug = await slugDb.Strands.AsNoTracking().Where(s => s.Id == strandId)
+                .Select(s => s.Slug).FirstOrDefaultAsync(ct);
+        }
+        var lessonsBlock = proseLessons?.FormatBlockForReview(strandSlug);
+
+        // Distinct personas across the WHOLE run (one review per persona survives
+        // RecomputeScores, so a persona must ballot at most one segment).
+        var pool = SampleEnrichedPersonas(seg.Segments.Count * ballotsPerSegment);
+
+        var sem = new SemaphoreSlim(MaxConcurrency);
+        var done = 0; var failed = 0;
+        var perSegment = new List<(StrandMarkdownExporter.StrandSegment Seg, List<StrandReview> Ballots)>();
+
+        for (int gi = 0; gi < seg.Segments.Count; gi++)
+        {
+            var s = seg.Segments[gi];
+            var slice = pool.Skip(gi * ballotsPerSegment).Take(ballotsPerSegment).ToList();
+            var localBag = new System.Collections.Concurrent.ConcurrentBag<StrandReview>();
+            var tasks = new List<Task>(slice.Count);
+            for (int i = 0; i < slice.Count; i++)
+            {
+                var persona = slice[i];
+                var provider = providers[(gi * ballotsPerSegment + i) % providers.Count];
+                tasks.Add(Task.Run(async () =>
+                {
+                    await sem.WaitAsync(ct);
+                    try
+                    {
+                        var r = await SegmentBallotOnceAsync(strandId, seg.Title, s, totalBeatCount, persona, provider, ct, lessonsBlock);
+                        if (r != null) { r.FocusGroupName = groupName; r.ContentHash = seg.ContentHash; localBag.Add(r); }
+                        else Interlocked.Increment(ref failed);
+                    }
+                    catch (Exception ex) { Interlocked.Increment(ref failed); log.LogWarning(ex, "Segment ballot failed: {P}", persona.Id); }
+                    finally { sem.Release(); progress?.Report(Interlocked.Increment(ref done)); }
+                }, ct));
+            }
+            await Task.WhenAll(tasks);   // per-segment barrier — bounded provider load
+            perSegment.Add((s, localBag.ToList()));
+        }
+
+        var saved = perSegment.SelectMany(x => x.Ballots).ToList();
+        if (saved.Count == 0)
+            return new SampledRunResult(pool.Count, 0, 0, failed, 0, 0, 0, 0, seg.ContentHash,
+                "_No ballots saved — check provider API keys / connectivity._", "");
+
+        await using (var db = await dbFactory.CreateDbContextAsync(ct))
+        {
+            db.StrandReviews.AddRange(saved);
+            await db.SaveChangesAsync(ct);
+        }
+        await RecomputeScoresAsync(strandId, ct);
+
+        // Per-beat clustered report on the merged matrix (global beat numbering).
+        string clusterReport = "_(per-beat report unavailable — too few ballots carried beat scores.)_";
+        int clusters = 0;
+        var withBeats = saved.Where(r => r.BeatScores.Count > 0).ToList();
+        if (withBeats.Count >= 8)
+        {
+            try
+            {
+                var matrix = BuildMatrix(withBeats, totalBeatCount);
+                var clustering = ReviewClusterer.Cluster(matrix);
+                var rows = new List<SegmentAggregator.Reviewer>(withBeats.Count);
+                for (int i = 0; i < withBeats.Count; i++)
+                {
+                    var bs = withBeats[i].BeatScores.ToDictionary(x => x.BeatNumber, x => x.Score);
+                    rows.Add(new SegmentAggregator.Reviewer(clustering.Assignments[i], withBeats[i].Score, withBeats[i].FlowScore, bs));
+                }
+                var agg = SegmentAggregator.Build(rows, totalBeatCount, clustering.K);
+                clusterReport = agg.Markdown; clusters = clustering.K;
+            }
+            catch (Exception ex) { log.LogWarning(ex, "Segmented clustering failed"); }
+        }
+
+        var scores = saved.Select(r => (double)r.Score).ToList();
+        var mean = scores.Average();
+        var sd = scores.Count > 1 ? Math.Sqrt(scores.Sum(x => (x - mean) * (x - mean)) / (scores.Count - 1)) : 0.0;
+        var ci = scores.Count > 1 ? 1.96 * sd / Math.Sqrt(scores.Count) : 0.0;
+        var meanFlow = saved.Where(r => r.FlowScore.HasValue).Select(r => (double)r.FlowScore!.Value).DefaultIfEmpty(0).Average();
+
+        var sb = new StringBuilder();
+        sb.AppendLine($"## Segmented review — {seg.Segments.Count} parts (≈{targetChars / 1000}k chars/part, {totalBeatCount} beats total)");
+        sb.AppendLine();
+        sb.AppendLine($"**Overall: {Math.Round(mean, 1)}/100 · flow {Math.Round(meanFlow, 1)}/100** (mean of {saved.Count} ballots across {seg.Segments.Count} parts)");
+        sb.AppendLine();
+        sb.AppendLine("| Part | Beats | Ballots | Score | Flow |");
+        sb.AppendLine("|---|---|---:|---:|---:|");
+        foreach (var (s, ballots) in perSegment)
+        {
+            var sc = ballots.Count > 0 ? ballots.Average(b => (double)b.Score) : 0;
+            var fl = ballots.Where(b => b.FlowScore.HasValue).Select(b => (double)b.FlowScore!.Value).DefaultIfEmpty(0).Average();
+            sb.AppendLine($"| {s.Index}/{s.Total} | {s.FirstBeat}–{s.LastBeat} | {ballots.Count} | {sc:0.0} | {fl:0.0} |");
+        }
+        sb.AppendLine();
+        sb.AppendLine(clusterReport);
+
+        return new SampledRunResult(pool.Count, saved.Count, 0, failed,
+            Math.Round(mean, 1), Math.Round(sd, 1), Math.Round(ci, 2), clusters,
+            seg.ContentHash, sb.ToString(), "");
+    }
+
+    private async Task<StrandReview?> SegmentBallotOnceAsync(
+        Guid strandId, string title, StrandMarkdownExporter.StrandSegment segment, int totalBeatCount,
+        Persona persona, string provider, CancellationToken ct, string? lessonsBlock)
+    {
+        var key = ResolveKey(provider);
+        if (string.IsNullOrWhiteSpace(key)) { log.LogWarning("No API key for provider {Provider}", provider); return null; }
+        var model = ResolveBallotModel(provider, false);
+        var system = BuildSegmentBallotSystemPrompt(persona, title, segment, lessonsBlock);
+        var segBeats = segment.LastBeat - segment.FirstBeat + 1;
+        var maxTok = Math.Min(8000, 900 + segBeats * 6);
+        var raw = await legion.CallAsync(provider, key!, model, system, segment.Markdown, maxTokens: maxTok, temperature: 0.85, ct);
+        if (!TryParseBallot(raw, totalBeatCount, out var score, out var flow, out var weakness, out var beatScores))
+        {
+            log.LogWarning("Unparseable segment ballot from {Persona} via {Provider}", persona.Id, provider);
+            return null;
+        }
+        var review = new StrandReview
+        {
+            Id           = Guid.CreateVersion7(),
+            StrandId     = strandId,
+            PersonaId    = persona.Id,
+            PersonaName  = persona.Name,
+            PersonaBlurb = FirstLine(persona.PersonalityMarkdown),
+            ProviderId   = provider,
+            Model        = string.IsNullOrWhiteSpace(model) ? null : model,
+            Score        = Math.Clamp(score, 1, 100),
+            FlowScore    = flow.HasValue ? Math.Clamp(flow.Value, 1, 100) : null,
+            ReviewText   = "",
+            Improvements = string.IsNullOrWhiteSpace(weakness) ? null : weakness.Trim(),
+            ContentHash  = "",   // caller stamps the strand-wide hash
+            BeatCount    = totalBeatCount,
+            ReviewedAt   = DateTime.UtcNow,
+            CreatedAt    = DateTime.UtcNow,
+            UpdatedAt    = DateTime.UtcNow,
+        };
+        if (beatScores != null)
+            foreach (var kv in beatScores)
+                review.BeatScores.Add(new StrandReviewBeatScore { ReviewId = review.Id, BeatNumber = kv.Key, Score = kv.Value });
+        return review;
+    }
+
+    private string BuildSegmentBallotSystemPrompt(
+        Persona persona, string title, StrandMarkdownExporter.StrandSegment segment, string? lessonsBlock)
+    {
+        var who = BuildWhoBlock(persona);
+        var lessonsSection = string.IsNullOrWhiteSpace(lessonsBlock) ? "" : $"\n\n{lessonsBlock}\n";
+        var segBeats = segment.LastBeat - segment.FirstBeat + 1;
+        return
+$@"{who}
+
+You are reading PART {segment.Index} OF {segment.Total} of a longer audio-fiction book titled ""{title}"". This part covers beats [Beat {segment.FirstBeat}] through [Beat {segment.LastBeat}] ({segBeats} beats), provided below. It is a coherent act/section of the larger work — judge it AS PART OF THE WHOLE: its momentum, how it would land for a reader who has read the earlier parts and will read on. Do not penalize it for not being a complete story.{lessonsSection}
+Return ONLY a JSON object, nothing else:
+- ""score"": integer 1-100 — your overall reaction to THIS PART as this reader. Use the WHOLE scale; do not default to the 70s.
+- ""flow"": integer 1-100 — how well THIS PART hangs together (momentum, transitions, payoffs within it), separate from individual beat quality.
+- ""weakness"": your single biggest gripe about this part in EIGHT WORDS OR FEWER, or ""none"".
+- ""beat_scores"": rate EVERY beat in this part 1-5 in context (1 = hurt it, 3 = fine, 5 = highlight), keyed by the GLOBAL beat number {segment.FirstBeat}..{segment.LastBeat}: {{""{segment.FirstBeat}"":4,""{segment.FirstBeat + 1}"":3}}.
+
+Be honest and use the whole scale.";
     }
 
     // ── Structural pre-flight helpers ─────────────────────────────────────────
@@ -1308,7 +1522,7 @@ Be specific; do not invent praise the reviews don't support.";
         await using var db = await dbFactory.CreateDbContextAsync(ct);
 
         var childIds = await db.Strands
-            .Where(s => s.ParentStrandId == strandId)
+            .Where(s => s.ParentStrandId == strandId && !s.IsDraft)
             .Select(s => s.Id)
             .ToListAsync(ct);
 

@@ -128,7 +128,7 @@ public class EmotionalDepthService
         // For book strands, examine the LIVE chapter prose (child chapters), not the
         // book strand's own beats — those may hold a legacy outline/condensed draft.
         var hasChildren = await db.Strands.AsNoTracking()
-            .AnyAsync(s => s.ParentStrandId == strandId && s.Kind == "chapter", ct);
+            .AnyAsync(s => s.ParentStrandId == strandId && s.Kind == "chapter" && !s.IsDraft, ct);
 
         List<string> beats;
         List<int> beatNums;
@@ -140,7 +140,7 @@ public class EmotionalDepthService
                 from s in db.Strands.AsNoTracking()
                 join sb in db.StrandBeats.AsNoTracking() on s.Id equals sb.StrandId
                 join b in db.Beats.AsNoTracking() on sb.BeatId equals b.Id
-                where s.ParentStrandId == strandId && s.Kind == "chapter" && sb.IsEnabled
+                where s.ParentStrandId == strandId && s.Kind == "chapter" && !s.IsDraft && sb.IsEnabled
                 orderby s.SortKey, sb.SortKey
                 select b.Text
             ).ToListAsync(ct);
