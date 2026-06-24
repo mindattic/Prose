@@ -767,6 +767,7 @@ public static class ServiceCollectionExtensions
         // Available via `ss --examine-emotion` and the `examine_emotional_depth` MCP tool.
         services.AddSingleton<EmotionalLedgerService>();
         services.AddSingleton<EmotionalDepthService>();
+        services.AddSingleton<RegisterExemplarService>();
 
         // Narrative-science analysis (Will Storr frameworks): sacred flaw, dramatic
         // question, scene-engagement audit, five-act map, antihero empathy.
