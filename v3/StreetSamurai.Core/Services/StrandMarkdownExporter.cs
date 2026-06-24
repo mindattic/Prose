@@ -90,6 +90,85 @@ public class StrandMarkdownExporter
         return new StrandExport(markdown, contentHash, n, strand.Title, path);
     }
 
+    /// <summary>One contiguous review segment ("act"): a run of beats small enough
+    /// to review in a single reliable pass, with GLOBAL beat numbers preserved so
+    /// per-beat scores still join to the strand's positional index.</summary>
+    public record StrandSegment(int Index, int Total, int FirstBeat, int LastBeat, int Chars, string Markdown);
+
+    /// <summary>Split the strand into review segments for large books that can't be
+    /// reviewed reliably in one pass. Breaks at chapter boundaries once the running
+    /// segment reaches <paramref name="targetChars"/>; for strands with no chapter
+    /// starts (flat beat lists) it falls back to a hard size cap so each segment
+    /// stays within a single reliable ballot. Beat numbering is GLOBAL (1..N over
+    /// the whole strand) so segment ballots' per-beat scores join cleanly.</summary>
+    public async Task<(string Title, string ContentHash, int BeatCount, IReadOnlyList<StrandSegment> Segments)>
+        ExportSegmentsAsync(Guid strandId, int targetChars = 90000, CancellationToken ct = default)
+    {
+        await using var db = await dbFactory.CreateDbContextAsync(ct);
+        var strand = await db.Strands.AsNoTracking().FirstOrDefaultAsync(s => s.Id == strandId, ct)
+            ?? throw new InvalidOperationException($"Strand {strandId} not found.");
+        var ordered = await workbench.GetOrderedBeatsAsync(strandId, ct);
+
+        // Render once with global numbering; keep chapter-start metadata for splitting.
+        var rendered = new List<(int N, string Text, bool ChapterStart, string? ChapterTitle)>();
+        var proseForHash = new StringBuilder();
+        var n = 0;
+        foreach (var ob in ordered)
+        {
+            var text = (ob.Beat.Text ?? "").Trim();
+            if (text.Length == 0) continue;
+            n++;
+            var chStart = ob.Beat.IsChapterStart;
+            rendered.Add((n, text, chStart, chStart ? ob.Beat.BeatTitle?.Trim() : null));
+            proseForHash.Append(text).Append('\n');
+        }
+        var contentHash = Sha256Hex(proseForHash.ToString().Trim());
+        var beatCount = n;
+
+        // Group beats into segments. Prefer breaking at a chapter start once the
+        // running segment has reached the target; a hard cap (1.5x) keeps no-chapter
+        // strands bounded too.
+        var groups = new List<List<(int N, string Text, bool ChapterStart, string? ChapterTitle)>>();
+        var cur = new List<(int N, string Text, bool ChapterStart, string? ChapterTitle)>();
+        var curChars = 0;
+        var hardCap = (int)(targetChars * 1.5);
+        foreach (var r in rendered)
+        {
+            var breakHere = cur.Count > 0 &&
+                ((r.ChapterStart && curChars >= targetChars) || curChars >= hardCap);
+            if (breakHere) { groups.Add(cur); cur = new(); curChars = 0; }
+            cur.Add(r);
+            curChars += r.Text.Length;
+        }
+        if (cur.Count > 0) groups.Add(cur);
+
+        var total = groups.Count;
+        var segments = new List<StrandSegment>(total);
+        for (var gi = 0; gi < total; gi++)
+        {
+            var g = groups[gi];
+            var md = new StringBuilder();
+            md.AppendLine($"# {strand.Title} — Part {gi + 1} of {total} (Beats {g[0].N}–{g[^1].N})");
+            md.AppendLine();
+            var chars = 0;
+            foreach (var r in g)
+            {
+                if (r.ChapterStart && !string.IsNullOrWhiteSpace(r.ChapterTitle))
+                {
+                    md.AppendLine($"## {r.ChapterTitle}");
+                    md.AppendLine();
+                }
+                md.AppendLine($"[Beat {r.N}]");
+                md.AppendLine(r.Text);
+                md.AppendLine();
+                chars += r.Text.Length;
+            }
+            segments.Add(new StrandSegment(gi + 1, total, g[0].N, g[^1].N, chars, md.ToString()));
+        }
+
+        return (strand.Title, contentHash, beatCount, segments);
+    }
+
     private static string Sha256Hex(string text)
     {
         using var sha = SHA256.Create();

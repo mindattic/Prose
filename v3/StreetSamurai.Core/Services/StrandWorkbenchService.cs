@@ -107,9 +107,14 @@ public class StrandWorkbenchService
         foreach (var d in direct)
             acc.Add(new OrderedBeat(d.Beat, strandId, d.SortKey, d.IsEnabled));
 
-        // Then child strands in SortKey order (recursive).
+        // Then child strands in SortKey order (recursive). Draft strands — and
+        // therefore their whole subtree — are skipped: a Drafts bucket, cut
+        // scene, archived chapter, or unincorporated draft hung under a work
+        // must never pollute that work's review, score, publish, or narration.
+        // (Targeting a draft strand DIRECTLY via GetOrderedBeatsAsync still
+        // returns its beats — the exclusion is for what a parent pulls in.)
         var children = await db.Strands
-            .Where(s => s.ParentStrandId == strandId)
+            .Where(s => s.ParentStrandId == strandId && !s.IsDraft)
             .OrderBy(s => s.SortKey)
             .Select(s => s.Id)
             .ToListAsync(ct);

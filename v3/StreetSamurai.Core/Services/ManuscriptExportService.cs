@@ -362,9 +362,29 @@ public class ManuscriptExportService
                 current.Paragraphs.Add(para);
         }
 
+        // Mirror the strand's series/book ancestry in the output path so a story
+        // that belongs to a series publishes one (or more) levels deeper — e.g.
+        // "<base>/Street Samurai/Bushido Coda/Bushido Coda V5.docx" — while a
+        // standalone story stays at "<base>/<Title>/...".
+        var ancestors = new List<string>();
+        var parentId = strand.ParentStrandId;
+        for (var guard = 0; parentId is Guid pid && guard < 8; guard++)
+        {
+            var parent = await db.Strands.AsNoTracking()
+                .Where(s => s.Id == pid)
+                .Select(s => new { s.Title, s.ParentStrandId })
+                .FirstOrDefaultAsync(ct);
+            if (parent is null) break;
+            ancestors.Insert(0, SanitizeTitle(parent.Title));   // top-down order
+            parentId = parent.ParentStrandId;
+        }
+
         var dir = ResolveExportDir();
         var safeTitle = SanitizeTitle(strand.Title);
-        var strandDir = Path.Combine(dir, safeTitle);
+        var pathParts = new List<string> { dir };
+        pathParts.AddRange(ancestors);
+        pathParts.Add(safeTitle);
+        var strandDir = Path.Combine(pathParts.ToArray());
         Directory.CreateDirectory(strandDir);
         var path = Path.Combine(strandDir, $"{safeTitle} V{strand.Version}.{ext}");
 

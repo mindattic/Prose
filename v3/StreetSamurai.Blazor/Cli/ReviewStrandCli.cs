@@ -33,7 +33,8 @@ public static class ReviewStrandCli
         var settings = services.GetRequiredService<SettingsService>();
         int readers = settings.ReviewReaders, panel = settings.ReviewPanel,
             ballots = settings.ReviewBallots, prose = settings.ReviewProse;
-        bool samePersonas = false, study = false, census = false, skipDiagnosis = false;
+        bool samePersonas = false, study = false, census = false, skipDiagnosis = false, byAct = false;
+        int segChars = 90000, segBallots = 8;
         // RFC 0009 §2 — cost tier. Explicit --ballots/--prose/--skip-diagnosis still win over the tier.
         string? effort = null;
         bool ballotsSet = false, proseSet = false, skipSet = false;
@@ -53,6 +54,10 @@ public static class ReviewStrandCli
                 case "--ballots":         if (i + 1 < args.Length && int.TryParse(args[++i], out var bn)) { ballots = bn; ballotsSet = true; } break;
                 case "--prose":           if (i + 1 < args.Length && int.TryParse(args[++i], out var pr)) { prose = pr; proseSet = true; } break;
                 case "--census":          census = true; break;
+                case "--by-act":
+                case "--segmented":       byAct = true; break;
+                case "--seg-chars":       if (i + 1 < args.Length && int.TryParse(args[++i], out var scc)) segChars = scc; break;
+                case "--seg-ballots":     if (i + 1 < args.Length && int.TryParse(args[++i], out var sbc)) segBallots = sbc; break;
                 case "--skip-diagnosis":  skipDiagnosis = true; skipSet = true; break;
                 case "--effort":
                 case "--tier":            if (i + 1 < args.Length) effort = args[++i]; break;
@@ -143,6 +148,41 @@ public static class ReviewStrandCli
                 return st.Saved > 0 ? 0 : 1;
             }
             catch (Exception ex) { Console.Error.WriteLine($"[review-strand] Study crashed: {ex.Message}"); return 1; }
+        }
+
+        // ── Segmented (per-act) review for large books: split into ≈seg-chars parts
+        //    (at chapter boundaries), panel each part with distinct personas, aggregate.
+        //    Large strands auto-route here even without the flag. ──
+        if (byAct)
+        {
+            Console.WriteLine("[review-strand] SEGMENTED (per-act) REVIEW:");
+            Console.WriteLine($"   Id:    {strandId}");
+            Console.WriteLine($"   Slug:  {strandSlug}");
+            Console.WriteLine($"   Title: {strandTitle}");
+            Console.WriteLine($"   ≈{segChars / 1000}k chars/part · {segBallots} ballots/part (distinct personas across parts).");
+            Console.WriteLine("[review-strand] Running — one panel per part; this may take several minutes…");
+            var bpa = new Progress<int>(k => { if (k % 5 == 0) Console.WriteLine($"   …{k} ballots done"); });
+            try
+            {
+                var sr = await reviewer.RunSegmentedReviewAsync(strandId, segBallots, prose, segChars, bpa);
+                Console.WriteLine($"[review-strand] {sr.BallotsSaved}/{sr.Ballots} ballots ({sr.Failed} failed).");
+                Console.WriteLine($"[review-strand] Strand {sr.MeanScore}/100  (SD {sr.Sd}, 95% CI ±{sr.Ci95})  ·  {sr.Clusters} clusters  ·  fingerprint {sr.ContentHash[..Math.Min(12, sr.ContentHash.Length)]}");
+                Console.WriteLine();
+                Console.WriteLine(sr.ReportMarkdown);
+                if (sr.BallotsSaved > 0)
+                {
+                    try
+                    {
+                        var summary = await reviewer.GenerateSummaryAsync(strandId);
+                        Console.WriteLine();
+                        Console.WriteLine($"=== READER SYNOPSIS ({summary.ReviewCount} reviews, avg {summary.AvgScore:0.0}/100) ===");
+                        Console.WriteLine(summary.SummaryMarkdown);
+                    }
+                    catch (Exception ex) { Console.Error.WriteLine($"[review-strand] Synopsis failed: {ex.Message}"); }
+                }
+                return sr.BallotsSaved > 0 ? 0 : 1;
+            }
+            catch (Exception ex) { Console.Error.WriteLine($"[review-strand] Segmented run crashed: {ex.Message}"); return 1; }
         }
 
         // ── DEFAULT: economical SAMPLED two-tier — cheap score-ballots + a few prose

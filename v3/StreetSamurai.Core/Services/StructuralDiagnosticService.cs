@@ -122,10 +122,21 @@ public class StructuralDiagnosticService
         int pass     = checks.Count(c => c.Result == StructuralCheckResult.Pass);
         int warn     = checks.Count(c => c.Result == StructuralCheckResult.Warn);
         int fail     = checks.Count(c => c.Result == StructuralCheckResult.Fail);
-        bool blocking = checks.Any(c => c.IsBlocking && c.Result == StructuralCheckResult.Fail);
 
-        // File blocking failures as findings so they surface at /findings
-        foreach (var check in checks.Where(c => c.IsBlocking && c.Result == StructuralCheckResult.Fail))
+        // The blocking checks are CHAPTER-SCOPED ("by the end of the chapter") and
+        // each only sees the first `maxChars` of the strand (see Truncate). When the
+        // strand exceeds that window — a whole book or a long multi-chapter strand —
+        // a "fail" reflects only the opening fragment (e.g. "no behavior change yet"
+        // is expected in a book's first 40k chars) and is NOT grounds to block the
+        // review. In that case the structural checks are ADVISORY only: surface them
+        // as warnings but never block, and don't file false-positive findings. Use
+        // per-segment review (review by act/chapter) to gate large strands properly.
+        bool truncated = text.Length > maxChars;
+        bool blocking  = !truncated && checks.Any(c => c.IsBlocking && c.Result == StructuralCheckResult.Fail);
+
+        // File blocking failures as findings so they surface at /findings — but only
+        // when the checks actually saw the whole strand (not a truncated opening).
+        foreach (var check in checks.Where(c => !truncated && c.IsBlocking && c.Result == StructuralCheckResult.Fail))
         {
             findings.Upsert(
                 filePath: $"strand:{slug}",
@@ -139,9 +150,11 @@ public class StructuralDiagnosticService
 
         string recommendation = blocking
             ? "Fix blocking failures before running review panel — structural issues cap scores regardless of prose quality."
-            : fail + warn > 4
-                ? "Address warnings before committing to 60 ballots — multiple weak signals compound into a low score."
-                : "Ready to review.";
+            : truncated
+                ? "Strand exceeds the diagnostic window — structural checks ran on the opening fragment only and are ADVISORY (not blocking). Use per-act/segmented review to gate large strands."
+                : fail + warn > 4
+                    ? "Address warnings before committing to 60 ballots — multiple weak signals compound into a low score."
+                    : "Ready to review.";
 
         return new StructuralDiagnosisResult(
             strandId, slug, title,

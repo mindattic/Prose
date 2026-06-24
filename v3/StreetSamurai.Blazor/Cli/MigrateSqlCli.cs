@@ -61,7 +61,11 @@ public static class MigrateSqlCli
         // Emotional examination (SS-A15): 4 new tables + Beat.EmotionalScore column.
         var emotionalExamination = args.Contains("--emotional-examination");
 
-        if (!schema && !charRelational && !charDropLegacy && !strandBeatSoftDelete && !strandBeatVersion && !entityGrammarNote && !strandCode && !entityReviews && !strandBible && !markdownFiles && !strandSpine && !emotionalExamination)
+        // Strand draft flag: add IsDraft BIT to Strands (+ history). Draft strands
+        // (and their whole subtree) are ignored by the tools.
+        var strandDraftFlag = args.Contains("--strand-draft-flag");
+
+        if (!schema && !charRelational && !charDropLegacy && !strandBeatSoftDelete && !strandBeatVersion && !entityGrammarNote && !strandCode && !entityReviews && !strandBible && !markdownFiles && !strandSpine && !emotionalExamination && !strandDraftFlag)
         {
             Console.WriteLine("Usage:");
             Console.WriteLine("  ss --migrate-sql --schema                    apply EF migrations + enable SYSTEM_VERSIONING");
@@ -74,6 +78,7 @@ public static class MigrateSqlCli
             Console.WriteLine("  ss --migrate-sql --markdown-files            create MarkdownFiles table (project-rules, Codex, memory backup)");
             Console.WriteLine("  ss --migrate-sql --strand-spine              add StrandUserStories to Strands; create StrandAmendments + StrandSpineVersions");
             Console.WriteLine("  ss --migrate-sql --emotional-examination     create EmotionalExaminations/DimensionResults/BeatScores/CharacterEmotionalLedgers + Beat.EmotionalScore (SS-A15)");
+            Console.WriteLine("  ss --migrate-sql --strand-draft-flag         add IsDraft BIT to Strands (+ history); draft subtrees are ignored by the tools");
             Console.WriteLine();
             Console.WriteLine("  ss --migrate-sql --character-relational    add relational columns + bridges to Characters,");
             Console.WriteLine("                                             then backfill from Records.Json (--no-backfill skips Phase C)");
@@ -661,6 +666,43 @@ public static class MigrateSqlCli
             catch (Exception ex)
             {
                 Console.WriteLine($"  ✘ emotional-examination migration failed: {ex.Message}");
+                failures++;
+            }
+        }
+
+        if (strandDraftFlag)
+        {
+            using var scope = sp.CreateScope();
+            var db = scope.ServiceProvider.GetRequiredService<StreetSamuraiDbContext>();
+
+            Console.WriteLine();
+            Console.WriteLine("[strand-draft-flag]");
+            try
+            {
+                await db.Database.ExecuteSqlRawAsync("""
+                    IF NOT EXISTS (SELECT 1 FROM sys.columns
+                                   WHERE object_id = OBJECT_ID('Strands') AND name = 'IsDraft')
+                    BEGIN
+                        ALTER TABLE [dbo].[Strands] SET (SYSTEM_VERSIONING = OFF);
+                        ALTER TABLE [dbo].[Strands]         ADD [IsDraft] bit NOT NULL DEFAULT 0;
+                        ALTER TABLE [dbo].[Strands_History] ADD [IsDraft] bit NOT NULL DEFAULT 0;
+                        ALTER TABLE [dbo].[Strands]
+                            SET (SYSTEM_VERSIONING = ON (HISTORY_TABLE = [dbo].[Strands_History],
+                                                         DATA_CONSISTENCY_CHECK = OFF));
+                    END;
+                    """);
+                Console.WriteLine("  ✔ IsDraft column added to Strands (+ Strands_History).");
+
+                await db.Database.ExecuteSqlRawAsync("""
+                    IF NOT EXISTS (SELECT 1 FROM sys.indexes
+                                   WHERE object_id = OBJECT_ID('Strands') AND name = 'IX_Strands_IsDraft')
+                        CREATE INDEX [IX_Strands_IsDraft] ON [dbo].[Strands] ([IsDraft]);
+                    """);
+                Console.WriteLine("  ✔ IX_Strands_IsDraft index created (or already exists).");
+            }
+            catch (Exception ex)
+            {
+                Console.WriteLine($"  ✘ strand-draft-flag migration failed: {ex.Message}");
                 failures++;
             }
         }

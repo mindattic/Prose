@@ -58,7 +58,26 @@ public class DocxExportService
         if (string.IsNullOrWhiteSpace(baseDir))
             baseDir = Environment.GetFolderPath(Environment.SpecialFolder.Desktop);
         var safeTitle = SanitizeTitle(strand.Title);
-        var strandDir = Path.Combine(baseDir, safeTitle);
+
+        // Mirror the strand's series/book ancestry in the output path so a story
+        // in a series publishes one level deeper (e.g. ".../Street Samurai/Bushido
+        // Coda/Bushido Coda V5.docx"); standalone stories stay at ".../<Title>/...".
+        var ancestors = new List<string>();
+        var parentId = strand.ParentStrandId;
+        for (var guard = 0; parentId is Guid pid && guard < 8; guard++)
+        {
+            var parent = await db.Strands.AsNoTracking()
+                .Where(s => s.Id == pid)
+                .Select(s => new { s.Title, s.ParentStrandId })
+                .FirstOrDefaultAsync(ct);
+            if (parent is null) break;
+            ancestors.Insert(0, SanitizeTitle(parent.Title));   // top-down order
+            parentId = parent.ParentStrandId;
+        }
+        var pathParts = new List<string> { baseDir };
+        pathParts.AddRange(ancestors);
+        pathParts.Add(safeTitle);
+        var strandDir = Path.Combine(pathParts.ToArray());
         Directory.CreateDirectory(strandDir);
         foreach (var existing in Directory.EnumerateFiles(strandDir, "*.docx"))
         {
