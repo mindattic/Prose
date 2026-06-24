@@ -21,7 +21,7 @@
     <PackageReference Include="Microsoft.Extensions.DependencyInjection.Abstractions" Version="10.0.8" />
     <PackageReference Include="Microsoft.Extensions.Hosting.Abstractions" Version="10.0.8" />
     <PackageReference Include="Microsoft.Extensions.Http" Version="10.0.8" />
-    <PackageReference Include="MindAttic.Legion" Version="3.0.0" />
+    <PackageReference Include="MindAttic.Legion" Version="5.0.0" />
     <PackageReference Include="MindAttic.Vault" Version="1.0.0" />
     <!-- Prod uses this clean published package (the dev auth bypass is compiled out — MA_DEV_AUTH
          undefined in the Release pack). In DEBUG only, we ALSO reference the lib as source below;
@@ -41,3 +41,5 @@
   </ItemGroup>
 
 </Project>
+
+

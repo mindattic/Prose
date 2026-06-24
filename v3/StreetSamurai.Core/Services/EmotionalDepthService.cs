@@ -125,21 +125,49 @@ public class EmotionalDepthService
             .FirstOrDefaultAsync(s => s.Id == strandId, ct)
             ?? throw new InvalidOperationException($"Strand {strandId} not found.");
 
-        var beatRows = await (
-            from sb in db.StrandBeats.AsNoTracking()
-            join b in db.Beats.AsNoTracking() on sb.BeatId equals b.Id
-            where sb.StrandId == strandId
-            orderby sb.SortKey
-            select new { b.Text, b.Number }
-        ).ToListAsync(ct);
+        // For book strands, examine the LIVE chapter prose (child chapters), not the
+        // book strand's own beats — those may hold a legacy outline/condensed draft.
+        var hasChildren = await db.Strands.AsNoTracking()
+            .AnyAsync(s => s.ParentStrandId == strandId && s.Kind == "chapter", ct);
 
-        var beats     = beatRows.Select(x => x.Text).ToList();
-        var beatNums  = beatRows.Select(x => x.Number).ToList();
-        var assembled = string.Join("\n\n---\n\n", beats.Where(t => !string.IsNullOrWhiteSpace(t)));
+        List<string> beats;
+        List<int> beatNums;
+        var effectiveMax = maxChars;
+
+        if (hasChildren)
+        {
+            var rows = await (
+                from s in db.Strands.AsNoTracking()
+                join sb in db.StrandBeats.AsNoTracking() on s.Id equals sb.StrandId
+                join b in db.Beats.AsNoTracking() on sb.BeatId equals b.Id
+                where s.ParentStrandId == strandId && s.Kind == "chapter" && sb.IsEnabled
+                orderby s.SortKey, sb.SortKey
+                select b.Text
+            ).ToListAsync(ct);
+
+            beats    = rows.Where(t => !string.IsNullOrWhiteSpace(t)).ToList();
+            beatNums = Enumerable.Range(1, beats.Count).ToList();   // one curve point per chapter beat
+            effectiveMax = Math.Max(maxChars, 100000);             // representative whole-novel read
+        }
+        else
+        {
+            var beatRows = await (
+                from sb in db.StrandBeats.AsNoTracking()
+                join b in db.Beats.AsNoTracking() on sb.BeatId equals b.Id
+                where sb.StrandId == strandId
+                orderby sb.SortKey
+                select new { b.Text, b.Number }
+            ).ToListAsync(ct);
+
+            beats    = beatRows.Select(x => x.Text).Where(t => !string.IsNullOrWhiteSpace(t)).ToList();
+            beatNums = beatRows.Where(x => !string.IsNullOrWhiteSpace(x.Text)).Select(x => x.Number).ToList();
+        }
+
+        var assembled = string.Join("\n\n---\n\n", beats);
 
         return await ExamineTextAsync(
             strandId, strand.Slug, strand.Title, strand.StrandBible,
-            assembled, beatNums, effort, maxChars, ct);
+            assembled, beatNums, effort, effectiveMax, ct);
     }
 
     public async Task<EmotionalExaminationResult> ExamineTextAsync(
