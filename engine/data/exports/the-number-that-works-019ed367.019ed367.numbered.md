@@ -1,6 +1,6 @@
 # Sparrow
 
-_In the GLMZ — the sprawling megacity that devoured the Midwest — Elias runs his life from the forty-second floor. He coordinates contracts, manages logistics, and hasn't been at street level in forty-two days. He is very good at staying above it all.
+_In the GLMZ — the sprawling megacity that devoured the Midwest — Elias runs his life from the 111th floor. He coordinates contracts, manages logistics, and hasn't been at street level in forty-two days. He is very good at staying above it all.
 
 When a routine orbital debris recovery job arrives with an unusual client and an unusual payout, Elias does what he always does: delegates, documents, and keeps his distance. But the job comes routed through a contact known only as Sparrow — a fixer who quotes prices before they're asked, assembles teams from nothing, and bills for contingencies that haven't happened yet.
 
@@ -9,7 +9,7 @@ As the recovery unfolds, Elias discovers that the objects he's pulling from the 
 Sparrow is a biopunk noir novelette set in the world of the GLMZ — a city of ferrocement stacks, corporate corridors, and a lake that hides things that came from somewhere else. It is a story about what it means to close a loop, what it costs to open one, and the strange, long patience of something that has no mouth._
 
 [Beat 1]
-Work Order 09-Milwaukee arrives at 7:14 on a Thursday, routed through the GLMZ Orbital Debris Registry by a holding company Elias has never seen before. He is eating noodles at his desk on the forty-second floor of a building that wasn't built to have a forty-second floor — the south half was added in 2209 under a CorpoNation special-authorization sprint and still smells, faintly, of wet ferrocement in the mornings. The broth is thin enough to read the bowl through.
+Work Order 09-Milwaukee arrives at 7:14 on a Thursday, routed through the GLMZ Orbital Debris Registry by a holding company Elias has never seen before. He is eating noodles at his desk in apartment 11134, on the 111th floor of a building that wasn't built to have a 111th floor — the south half was added in 2209 under a CorpoNation special-authorization sprint and still smells, faintly, of wet ferrocement in the mornings. The broth is thin enough to read the bowl through.
 
 He sets down the chopsticks.
 
@@ -43,14 +43,14 @@ He accepts the contract — for 40,000 Φ, and for another reason he does not wr
 
 He opens the pill case on the corner of the desk — a flat matte disk, the hinge worn smooth. Three segments left, which means a refill order, which means a thing to do later. He swallows one without water.
 
-He goes to the window. The street below is forty-two floors down and thirty-eight days away, by his count: the last time he was at street level was a Wednesday in late April, the permit office, a form that couldn't be submitted remotely. Three people on the pavement: a cyclist working through the loading zone, a woman in a yellow coat near the corner.
+He goes to the window. The street below is a hundred and eleven floors down and thirty-eight days away, by his count: the last time he was at street level was a Wednesday in late April, the permit office, a form that couldn't be submitted remotely. A hundred and eleven floors is unremarkable here — his is one stack in a lakeward row of them, none worth naming, each one standing higher than the tallest tower the old Midwest ever managed to raise before the lake came and settled the matter. In the GLMZ, ordinary is vertical. It is also, from up here, a long way down. Three people on the pavement: a cyclist working through the loading zone, a woman in a yellow coat near the corner. From the 111th floor they are not quite people yet — they are the scale markers he uses to confirm the drop is real.
 
 He stands there longer than he needs to. Then he goes back to the desk.
 
 [Beat 2]
 The number only works on alternate weeks. Siosaia Tuivaga-Brennan, the operator who gave it to him six months ago, had mentioned this as a footnote: she was clearing files, thought it might be useful, it worked on alternate weeks, she'd never been able to figure out the pattern. She hadn't said what she'd used it for. He hadn't asked.
 
-He dials from the balcony, which is the farthest he goes on most days. The lake is a gray line forty-two floors below, and to the north the Spine's overnight cargo tubes are still running — blue-white pulses along the elevated track, freight traveling at the speed that makes the word freight feel inadequate. The air is lake water and machine oil and factory rain drying on the parapet rail. A Null Crow is working the building's south face below him, quartering the ledges for anything the night deposited. He watches it for a moment.
+He dials from the balcony, which is the farthest he goes on most days. The lake is a gray line a hundred and eleven floors below, and to the north the Spine's overnight cargo tubes are still running — blue-white pulses along the elevated track, freight traveling at the speed that makes the word freight feel inadequate. East of the track the maps go dark over the Cermak rift, a few blocks the city stopped pretending it governed, where the towers end at a torn edge and the air past it keeps its own hours. The parapet rail under his hand is pocked and weeping rust: the building's nanite skin ran out of contract a decade ago and stopped closing its own corrosion, the way everything below a certain tier eventually stops being maintained. A Null Crow is working the building's south face below him, quartering the ledges for anything the night deposited. He watches it for a moment. He keeps the operator's number in his neuretics — which he still has, which the corridor under the Crow mostly does not; the line between who can think at the city's speed and who gets left standing at the curb of it runs straight through this building, floor by floor.
 
 He dials.
 
@@ -361,14 +361,14 @@ He packs one bag, the way a logistics man packs: exactly what is needed, nothing
 
 He goes to the building's front door. He has already been here once this week.
 
-The sound from outside is different from the sound through the walls — the full register of it, not filtered. Engine noise. Someone's music, three buildings over. The city at ground level has a weight that the city from the forty-second floor does not. He knows this. He has known it for forty-four days.
+The sound from outside is different from the sound through the walls — the full register of it, not filtered. Engine noise. Someone's music, three buildings over. The city at ground level has a weight that the city from the 111th floor does not. He knows this. He has known it for forty-four days.
 
 He goes through the door.
 
 The air hits him. Not temperature — just the fact of it, moving against his face in a way that apartment air does not. He stands on the step for three seconds. He counts them. Then he crosses the pavement toward the station.
 
 [Beat 13]
-The street is wider than he remembers. He has mapped this block from the forty-second floor for four years; from down here it has dimension the grid does not show.
+The street is wider than he remembers. He has mapped this block from the 111th floor for four years; from down here it has dimension the grid does not show.
 
 He picks the route that stays on the wide streets. He has known what route he would take for eleven days. The pavement is older than the buildings above it, stone worn into the specific pattern of how this block gets used, and his footfall enters that pattern and he lets it, and for a block or two the counting is not necessary.
 
@@ -395,7 +395,7 @@ He closes the notepad. That question has no answer in this pod.
 
 The tunnel wall passes at intervals of yellow service lighting. He watches them without counting them, which is different from how he expected this to go. The sealed container moves through the earth at Pulse speed and he lets it.
 
-On the elevated section north of the city, the pod breaks surface for forty seconds. GLMZ resolves: the Spine's cargo tubes, the gray line of the lake to the east, the northern residential belt stacked ferrocement against a sky going white with cloud. He watches it through the window. He has looked at this city from the forty-second floor for four years. From this angle at this speed, it is a different city — smaller than he thinks of it, wider than he expects. The pod descends. It is gone.
+On the elevated section north of the city, the pod breaks surface for forty seconds. GLMZ resolves: the Spine's cargo tubes, the gray line of the lake to the east, the northern residential belt stacked ferrocement against a sky going white with cloud. He watches it through the window. He has looked at this city from the 111th floor for four years. From this angle at this speed, it is a different city — smaller than he thinks of it, wider than he expects. The pod descends. It is gone.
 
 The Tunis transfer is twenty-three minutes. The air is drier than the tunnels — something that arrives through the mouth, not against the skin. He eats standing up at a platform rail, watching a departure board tick through transit codes he has routed freight through for years but never moved through himself: GLMZ-7, Marseille-East, Cairo Hub, Accra Connector. He notes this the way he notes an invoice arriving from an unfamiliar route: factual, requiring no opinion. The question in the margin of the notepad — who routes the maintenance payments — has no better answer in Tunis than it had in the tunnel.
 
@@ -518,7 +518,7 @@ On the return pod he keeps his hands in his pockets.
 
 He had thought he would feel afraid, knowing this. He doesn't. What he feels is: correct. He was right about the problem and right to go, and the world has confirmed it. He has lived long enough inside private certainty that the confirmation changes nothing — he already knew.
 
-The GLMZ pod breaks surface on the elevated section north of the city. There is the lake: the gray line going east, the Spine running north along the lakeshore, and the ferrocement stack of his building visible from the track at the right angle, forty-second floor lit. He watches his building from the outside. He has never had this angle before.
+The GLMZ pod breaks surface on the elevated section north of the city. There is the lake: the gray line going east, the Spine running north along the lakeshore, and the ferrocement stack of his building visible from the track at the right angle, 111th floor lit. He watches his building from the outside. He has never had this angle before.
 
 He goes up the elevator. The apartment smells of ferrocement. He sets the bag down.
 
@@ -860,7 +860,7 @@ He read it twice. She was not asking him to clarify. She was reporting the gap i
 
 He wrote in the notepad: *She can hold 37 years and not know what losing it would cost. I lose it and know exactly what the loss feels like while it happens.* He looked at the two sentences. Neither one resolved into the other.
 
-He capped the pen and set it parallel to the notepad's edge, the way he always did. Below the 42nd floor the freight cranes along the channel were still working, their amber strobes counting off in sequence, and he stood at the open door and counted with them until he lost the count.
+He capped the pen and set it parallel to the notepad's edge, the way he always did. Below the 111th floor the freight cranes along the channel were still working, their amber strobes counting off in sequence, and he stood at the open door and counted with them until he lost the count.
 
 [Beat 36]
 The message came in at 06:14, before he had made coffee. He read it on his phone in the kitchen, still in the shirt he'd slept in.
@@ -1037,7 +1037,7 @@ The file came down across nineteen minutes, the line slow under the weight of it
 
 The electromagnetic layer was the city's nervous traffic, dense in the Loop, thinning west toward the lakeshore where the count always frayed. The thermal layer he read against the hour — the canal a cool ribbon, the towers banked warm, the lake a flat cold plate that did not match the air above it, the way it never did. He noted that and moved on.
 
-The mass-distribution layer was the hardest. It was not light. It was weight, sorted, every standing thing reduced to where it pressed. He found the Spine. He found the bridge as a line of denser nothing. He counted floors up a tower he knew by its footprint and stopped at forty-two.
+The mass-distribution layer was the hardest. It was not light. It was weight, sorted, every standing thing reduced to where it pressed. He found the Spine. He found the bridge as a line of denser nothing. He counted floors up a tower he knew by its footprint and stopped at a hundred and eleven.
 
 There was a warmth signature there. Ambient. Constant. Listed in the mass layer with a small steady value and no annotation beside it, the way she listed the things that did not change.
 
@@ -1165,7 +1165,7 @@ Then he set it down.
 [Beat 50]
 In the next window she opened with him, the way she always did, before anything else.
 
-"BEHAVIORAL DELTA. FIELD VISIT FREQUENCY UP 0.41 OVER PRIOR INTERVAL. TRANSIT TIME 42ND FLOOR TO STREET LEVEL SHORTENED BY FACTOR 0.34. FIELD NOTE LENGTH PER VISIT INCREASING. CONFIRM."
+"BEHAVIORAL DELTA. FIELD VISIT FREQUENCY UP 0.41 OVER PRIOR INTERVAL. TRANSIT TIME 111th floor TO STREET LEVEL SHORTENED BY FACTOR 0.34. FIELD NOTE LENGTH PER VISIT INCREASING. CONFIRM."
 
 He read it standing at the kitchen counter, the comm in one hand, the notepad face-down by the kettle where it lived now. The transit time was right. He had stopped checking the corridor through the door glass before he took it. He had stopped doing a lot of small things that used to be steps.
 
@@ -1259,7 +1259,7 @@ The lobby smelled like floor wax and something underneath it — the specific fl
 
 The cold hit him across the face and the tops of his hands. Not wind — still air, the cold that collects between buildings when the facades face each other and the sun doesn't reach. He stood in it for three seconds, long enough to confirm that he was standing in it. Then he walked south.
 
-Three blocks. The pavement was the particular gray of concrete that has absorbed thirty years of exhaust particulate without anyone naming the color. He kept to the building line where the overhang broke the sky into a manageable strip. The buildings here were old pre-wall ferrocement, the aggregate showing through where decades of weather had taken the finish coat — the city's actual bone structure, wave-gray, rougher than it looked from the forty-second floor. He passed a junction box he recognized by its position; a volt rat watched him from the ventilation slot, then went back to the warm transformer. A lumen mouse had died under the drain cover at the corner. Still faintly lit, the modification running on whatever was left. He noted it the way he noted the canal ring and the slug drivers throttling down at the freight switch. No column for it. No invoice. It was just there.
+Three blocks. The pavement was the particular gray of concrete that has absorbed thirty years of exhaust particulate without anyone naming the color. He kept to the building line where the overhang broke the sky into a manageable strip. The buildings here were old pre-wall ferrocement, the aggregate showing through where decades of weather had taken the finish coat — the city's actual bone structure, wave-gray, rougher than it looked from the 111th floor. He passed a junction box he recognized by its position; a volt rat watched him from the ventilation slot, then went back to the warm transformer. A lumen mouse had died under the drain cover at the corner. Still faintly lit, the modification running on whatever was left. He noted it the way he noted the canal ring and the slug drivers throttling down at the freight switch. No column for it. No invoice. It was just there.
 
 The breakfast place had six tables and a counter and a smell of oil and café sugar that hit before the door opened all the way. He sat at the table by the window, which looked back toward his building. Eight floors visible. The utility entrance. The drainage grate he had stepped over without looking for eleven years. He ordered coffee, eggs, toast — the three-word order that required no decisions. The woman who took the order did not write it down, which he noted: the kind of memory that grows from doing the same thing enough times that the action outpaces the record. She had a catalog running on paper she didn't write.
 

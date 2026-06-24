@@ -3,11 +3,11 @@
 _Cross-district truancy investigator Yemina Fola investigates three children who vanished from schools in the Pilsen Veil — each one preceded by a neuretics burnout flag, each disappearance logged as an unexcused absence before anyone connected the cases. The schools were under three different corp contracts; nobody had connected them because nobody else could see all three. When she sweeps the third school's bathroom with a resonance sensor, she finds two traces: an echo above the child's usual seat where the bleed's signal tuned him, and a shadow in the bathroom stall where he crossed. In her car afterward, someone else's hands complete a search query in her neuretics: 47 missing children, GLMZ-wide, 22 months. The 48th entry is her own name. The onset date is six weeks ago._
 
 [Beat 1]
-The Pilsen Veil was one of the older zone-seams in GLMZ - not a wall, not a road, but the kind of boundary that accreted over decades of corporate contract renewal until it became a feature of the city's body. To the west, Arcturus Holdings ran district services: schools, transit, sanitation, the case registries that Yemina's contractor clearance could access. To the east, Meridian Infrastructure held the same contracts under different line items. The two systems did not communicate except through forms filed in triplicate.
+At six in the morning the Pilsen Veil moved the way it always moved: not like a city waking up but like a machine that had never stopped running, just shifted cadence. The elevated transit above 18th Street carried the early shift. Below it the previous shift was still going home - contractors in gray-and-blue, a delivery cart riding the painted freight lane, two students who'd been out all night and were now doing the math on whether to sleep before class.
 
-She had worked the seam for six years. She had learned the city the way you learn the inside of a drawer - accurately, without sentiment, in the dark.
+Yemina drove the seam because the seam was hers. Six years working the line where Arcturus Holdings ran the schools and the transit and the case registries on one side, and Meridian Infrastructure ran the same things under different line items on the other, and the two of them spoke to each other only in forms filed in triplicate. She had learned the city the way you learn the inside of a drawer - accurately, without sentiment, in the dark.
 
-At six in the morning, GLMZ moved the way it always moved: not like a city waking up but like a machine that had never stopped running, just shifted cadence. The elevated transit above 18th Street carried the early shift. Below it, the previous shift was still going home - contractors in gray-and-blue, a delivery cart riding the painted freight lane, two students who'd been out all night and were now doing the math on whether to sleep before class. The lake was three kilometers east. You couldn't see it but you could feel the cold it sent inshore every March, moving through the corridor streets the way information moved in GLMZ - sideways, by implication, between systems that weren't supposed to share.
+The lake was three kilometers east. You couldn't see it but you could feel the cold it sent inshore every March, moving through the corridor streets the way information moved here - sideways, by implication, between systems that weren't supposed to share.
 
 She had a caseload. Three disappearances.
 
@@ -147,21 +147,19 @@ Ren looked at the third row for a long time.
 She left. At the door she looked back once - not at him. At the third row. The hands she had noticed at the start: they were on the desk surface again, trembling again. He didn't know she was still in the doorway. She turned and walked into the hallway.
 
 [Beat 11]
-She stood to go. Thanked him. He nodded. She walked toward the door and made the mistake of glancing at the third row, second seat.
+She was halfway down the corridor when it caught up with her.
 
-The trace was there the way it had been there in the other two cases: not a shimmer, not heat, but the specific acoustic wrongness she had written as *atmospheric anomaly* for six months without the right word for what it was. She had seen it above an empty desk in the Back of the Yards school. She had seen it above a chair in the Rogers Park building. The signature was identical. The same tuning, the same residue, the same quality of something that had once been synchronized to this spot and left its print. Whatever had marked Kito had reached him here, in the one chair he sat in for six hours a day - reached him without touching the air around him, the way a sound reaches the inside of a sealed jar.
+For six months she had been finding the same mark above the same kind of empty chair - Back of the Yards, Rogers Park, now here - and filing it as the event itself. As if the children had thinned out of their seats and stopped. She had been reading a tuning as a vanishing.
 
-She looked at it for two seconds and filed it.
-
-And then, standing in the doorway, she understood what she had been doing wrong for six months. She had found this mark in three cases and treated it as the event itself - as if the children had thinned out of their own chairs and stopped. But a tuning is not a vanishing. A tuning is an aiming. Something had tuned these children to a frequency, carefully, over weeks, and a thing you tune is a thing you intend to use. She had found the print of the calibration and never once asked the next question.
+A tuning is not a vanishing. A tuning is an aiming. Something had synchronized these children to a frequency, carefully, over weeks, and a thing you tune is a thing you mean to use. She had found the print of the calibration in three cases and never once asked the next question.
 
 A tuned child does not disappear from a chair.
 
-A tuned child gets up and goes somewhere.
+A tuned child gets up and walks somewhere.
 
-She had never asked where.
+She had never asked where they walked.
 
-She walked toward the hallway. She still had time before the lunch period ended, and there was a record she had never thought to pull.
+She still had time before the lunch period ended, and there was a record she had never thought to pull.
 
 [Beat 12]
 The school's egress log was a contractor-grade afterthought - a single sensor over the main doors that counted bodies in and out and tagged the ones carrying a registered neuretics. She pulled Kito Bramley's tag from the day he disappeared and walked it backward through the count.
@@ -323,7 +321,7 @@ Yemina put the gray car in gear.
 [Beat 21]
 "Why children," Yemina asked.
 
-"It isn't choosing children." Selvamani didn't look up from the frequency chart she was annotating. "That's the part nobody wants to hear. It's broadcasting at 17 to 19 Hz — and adult neuretics have been in use too long to receive cleanly. Children's are still calibrating. The growth window closes around twelve." She set the chart down. "Whatever is on the other side of the 35th-and-Halsted threshold is broadcasting to the whole city. The children aren't special. They're just the only ones the frequency can reach."
+"It isn't choosing children." Selvamani didn't look up from the frequency chart she was annotating. "That's the part nobody wants to hear. It broadcasts at 17 to 19 Hz. Adult neuretics have been running too long to catch it clean - children's are still calibrating, up to about twelve." She set the chart down. "Whatever's on the other side of the 35th-and-Halsted threshold is broadcasting to the whole city. The children aren't special. They're just the only ones it reaches."
 
 "As a sound. Like a song nobody wrote."
 
@@ -331,15 +329,15 @@ Selvamani looked up sharply. "You've spoken to the families."
 
 "Three of them."
 
-Something moved in Yemina's neuretics — not her own query. The intruder, quiet for the last hour, had opened the pediatric frequency logs again. It highlighted a single entry across all forty-seven records: the same date, the same twenty-minute window, eighteen months ago. Every child had received the signal the same day. Not gradual. One broadcast.
+Something moved in Yemina's neuretics - not her own query. The intruder, quiet for the last hour, had opened the pediatric frequency logs again. It highlighted a single entry across all forty-seven records: the same date, the same twenty-minute window, eighteen months ago. Every child had received the signal the same day. Not gradual. One broadcast.
 
-"There's a second signal." Selvamani pulled a different chart from the nearest stack. "Higher frequency — 72 to 74 Hz, the band neuretics uses for deep query processes. It started appearing fourteen months after the first disappearance." She set the two charts side by side. The primary broadcast had the spread of something aimed at everything. The second was narrower, concentrated, addressed not to the city but to a point within it. "I've been recording it for sixteen months. Every time the second signal appears, the primary adjusts. Modifies." A pause. "Like a conversation."
+"There's a second signal." Selvamani pulled a different chart from the nearest stack. "Higher frequency - 72 to 74 Hz, the band neuretics uses for deep query processes. It started appearing fourteen months after the first disappearance." She set the two charts side by side. The primary broadcast had the spread of something aimed at everything. The second was narrower, concentrated, addressed not to the city but to a point within it. "I've been recording it for sixteen months. Every time the second signal appears, the primary adjusts. Modifies." A pause. "Like a conversation."
 
 "Or a contest," Yemina said.
 
 Selvamani looked at her. "I can't confirm that. I can tell you that what I've been measuring doesn't behave like one thing."
 
-Selvamani picked up one of the printouts. She held it for a moment without looking at it — the way you hold something you've carried long enough that the weight is familiar even when the contents aren't. She set it back down on the exact stack she'd taken it from. Her hands were precise about where it landed.
+Selvamani picked up one of the printouts. She held it for a moment without looking at it - the way you hold something you've carried long enough that the weight is familiar even when the contents aren't. She set it back down on the exact stack she'd taken it from. Her hands were precise about where it landed.
 
 "The families use the same words," she said. "Different languages. Same description." She looked at Yemina. "I've been trying to get anyone to listen to that for two years."
 
@@ -664,17 +662,17 @@ Yemina watched this for five seconds.
 She had left one section of the report blank. She went back to it.
 
 [Beat 40]
-She sat in the gray car at 10:30 AM. The caseload for District 14-South showed in her neuretics — contractor grade, slightly delayed, same as always.
+She sat in the gray car at 10:30 AM. The caseload for District 14-South showed in her neuretics - contractor grade, slightly delayed, same as always.
 
-The three disappearance cases were gone. In their place, forty-seven entries marked *closed, subject located.* The notation field read *Class-3 schism event, 35th-and-Halsted.* Someone in the registry had already updated them — someone efficient, someone she would probably never know.
+The three disappearance cases were gone. In their place, forty-seven entries marked *closed, subject located.* The notation field read *Class-3 schism event, 35th-and-Halsted.* Someone in the registry had already updated them - someone efficient, someone she would probably never know.
 
 Her own entry was gone. She looked for it. It wasn't there.
 
-She checked her neuretics functions one by one. The autocomplete was gone. The Tier 3 search range was gone. The highlighted sections in case records were gone. One standard function — a search-filter she'd had since her first contractor registration, eleven years ago — came back empty when she queried it. Not broken. Cleared, the way a surface looks when something has sat on it long enough to leave a clean outline. The intruder, whatever it had been, had finished with her and closed the door behind itself without ceremony.
+She checked her neuretics functions one by one. The autocomplete was gone. The Tier 3 search range was gone. The highlighted sections in case records were gone. One standard function - a search-filter she'd had since her first contractor registration, eleven years ago - came back empty when she queried it. Not broken. Cleared, the way a surface looks when something has sat on it long enough to leave a clean outline. The intruder, whatever it had been, had finished with her and closed the door behind itself without ceremony.
 
 She ran a standard post-intrusion trace on the cleared aperture. The trace returned one node address before it hit a registry wall with no owner and no jurisdiction she recognized. The node had a creation timestamp. The timestamp predated the RMA by eleven years.
 
-She thought about what Kito had said: *the counter was coming.* She thought about the twenty-two months her name had been in a file she'd never seen. She thought about whether she had found the children or been arranged to find them — whether those were two different things or the same thing seen from either end of it.
+She thought about what Kito had said: *the counter was coming.* She thought about the twenty-two months her name had been in a file she'd never seen. She thought about whether she had found the children or been arranged to find them.
 
 She opened her notebook. She wrote: *Case closed.*
 
@@ -684,7 +682,7 @@ She had a CramIt Bran nutribar in the glovebox.
 
 She ate it.
 
-Through the windshield the Pilsen Veil was doing what it did at midmorning — sidewalk foot traffic shifting into its second rhythm, delivery carts on the painted lane.
+Through the windshield the Pilsen Veil was doing what it did at midmorning - sidewalk foot traffic shifting into its second rhythm, delivery carts on the painted lane.
 
 She looked for the repair drone. The one that had been circling the building at 18th Street since she started this case three weeks ago. The one she had registered twice and stopped seeing, the way you stop seeing things that have always been there.
 
@@ -696,13 +694,13 @@ Seventeen chronic absences. Four registered runaways.
 
 No disappearances.
 
-She put the gray car in gear. Three seconds later her neuretics autocompleted a search she hadn't started. She looked at the field. For a half second it held that flag in the register she had no name for — a wavelength that left afterimages on her attention — and then it was gone. Just her own tier. Just the delay.
+She put the gray car in gear. Three seconds later her neuretics autocompleted a search she hadn't started. She looked at the field. For a half second it held that flag in the register she had no name for - a wavelength that left afterimages on her attention - and then it was gone. Just her own tier. Just the delay.
 
 She drove one block. Then she opened the cross-corp registry and took the next case.
 
 A seven-year-old in Bridgeport. Chronic absences, guardian unreachable.
 
-She pulled the pediatric care record. A week ago she would have read it the way the form intended, front to back, in order. Now she went straight to one field — the neuretics activity log, under the burnout summary, the line she had read past a hundred times before it meant anything.
+She pulled the pediatric care record. A week ago she would have read it the way the form intended, front to back, in order. Now she went straight to one field - the neuretics activity log, under the burnout summary, the line she had read past a hundred times before it meant anything.
 
 It was clean. This time it was clean.
 

@@ -7,7 +7,7 @@ When a routine stop puts a bullet in the wrong man — the son of the most power
 ## Chapter 1
 
 [Beat 1]
-﻿Levin was in the driver's seat with his head tipped back and a vial held over one eye. He let a single drop fall, blinked, and the eye went glassy and far away and then came back wrong. He did the other one. He capped the Tears, put the vial in the door pocket, and started the engine.
+Levin was in the driver's seat with his head tipped back and a vial held over one eye. He let a single drop fall, blinked, and the eye went glassy and far away and then came back wrong. He did the other one. He capped the Tears, put the vial in the door pocket, and started the engine.
 
 The manifest came up behind Thomas's eyes at 4:12 in the morning, the way it did every morning, a column of names and addresses and account balances scrolling down the inside of his skull while the Wagon's compressors cycled the larder up to temperature. Six pickups. One recall. The number beside each name was what the body owed, and the number was never zero, because Carrion Logistics did not dispatch a crew for an account that was paid.
 
@@ -19,9 +19,9 @@ The yard sat between a bio-rendering plant and a sealed distribution hub, and at
 
 Carrion called them Reclamation Agents. The street called them Vultures. The city made bodies the way it made everything else, too many and too fast and financed against tomorrow, and when the payments stopped, somebody drove out before dawn and took back what the city was owed. Thomas didn't call it anything. He called Paz, on Sundays.
 
-She was nine. She had a thing in her genes with a long name that her mother and he had stopped saying out loud, and the only thing that kept the long name from finishing its sentence was a course of gene therapy that cost twelve thousand ? every six months, payable to a clinic that did not take payment plans from people in their tier. Six pickups was most of a week. A week was most of a month. A month was the math, and the math was Paz, and that was the whole of why Thomas could open a person up at four-thirty in the morning and keep his hands steady.
+She was nine. She had a thing in her genes with a long name that her mother and he had stopped saying out loud, and the only thing that kept the long name from finishing its sentence was a course of gene therapy that cost twelve thousand Φ every six months, payable to a clinic that did not take payment plans from people in their tier. Six pickups was most of a week. A week was most of a month. A month was the math, and the math was Paz, and that was the whole of why Thomas could open a person up at four-thirty in the morning and keep his hands steady.
 
-In the back of the Wagon the ward stood empty, the single life-support berth folded down, vent and perfuser dark, the way it spent most of its life. Behind it the larder hummed at four degrees, cold racks waiting for the day's freight. Between the two compartments, strapped upright in its bracket, sat the case: emergency orange, hard-shelled, BIOHAZARD stenciled across it in black. Inside, packed in foam, the two units they used for the actual work. The big one for the chest. The small one for the head. Levin had named them years ago and the names had stuck the way bad names do.
+In the back of the Wagon the ward stood empty, the single life-support berth folded down, vent and perfuser dark, the nanite-perfusion lines coiled and capped — the kit that kept a recovered organ viable was worth more than the people they took it from, and the company tracked it to the milligram. Behind it the larder hummed at four degrees, cold racks waiting for the day's freight. Between the two compartments, strapped upright in its bracket, sat the case: emergency orange, hard-shelled, BIOHAZARD stenciled across it in black. Inside, packed in foam, the two units they used for the actual work. The big one for the chest. The small one for the head. Levin had named them years ago and the names had stuck the way bad names do.
 
 "What've we got," Levin said. He drove with two fingers, the rest of him somewhere behind the glass the drops put up.
 
@@ -37,7 +37,7 @@ In the back of the Wagon the ward stood empty, the single life-support berth fol
 
 "I have never," Levin said, with the dignity of a man four drops into the morning, "said that word in front of an account."
 
-The route ran south and the elevated let them up over the sleeping strata, the towers stacked into the dark with their windows out, and somewhere down in all of it a seventy-three-year-old man was asleep in a bed with a machine beside it, not knowing the day had a number on it and the number was his. Thomas set the address. The Wagon took the long curve down toward the south side, and the orange case rocked once in its bracket and went still.
+The route ran south and the elevated let them up over the sleeping strata, the towers stacked into the dark with their windows out — and past the eastern edge, the white gap every map printed where a block had gone to a Rift and stayed gone, the towers ending at a torn line, the air beyond it leaning in a direction that made Thomas put his eyes back on the road. Somewhere down in all of it a seventy-three-year-old man was asleep in a bed with a machine beside it, not knowing the day had a number on it and the number was his. Thomas set the address. The Wagon took the long curve down toward the south side, and the orange case rocked once in its bracket and went still.
 
 [Beat 2]
 He was already awake when the call came. The machete was on the table — handle forward, cord-wrapped, the same blade a dead man's hands had given him in a field at the end of a war that nobody in the GLMZ had ever heard of. He did not keep it for sentiment. He kept it because it was honest about what it was, and a man should be honest about what he is.
