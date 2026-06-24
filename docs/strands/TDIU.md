@@ -65,6 +65,10 @@ but the echo is never named.
 ## 3. Character rules for this story {#SS-TDIU-3}
 
 **Pixel (pre-handle; she's Vera here, but the name is never used on the page):**
+- **Her handle "Pixel" is GLMZ-acquired.** She did not arrive with it. It is not used in this
+  story. She arrives as no one in the city knows her yet.
+- **Her unlicensed hand-enhancement was done in Pilsen, age 19** — after she arrived, not before.
+  She is unsentimental about it. It does not appear in this story.
 - She is 19. She moves like someone who grew up handling livestock — economical, present, with
   good instincts for when something's wrong.
 - She's not naive. She is *new.* There is a difference. She's been studying GLMZ for two years.

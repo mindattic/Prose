@@ -55,8 +55,15 @@ public class WorkflowMonitorService(IDbContextFactory<StreetSamuraiDbContext> db
     public async Task<StrandCoverageReport> GetStrandCoverageAsync(Guid strandId, CancellationToken ct = default)
     {
         await using var db = await dbFactory.CreateDbContextAsync(ct);
+
+        // Roll up child strands: a book's coverage is the union of its chapters' logs.
+        var childIds = await db.Strands.AsNoTracking()
+            .Where(s => s.ParentStrandId == strandId)
+            .Select(s => s.Id).ToListAsync(ct);
+        var scopeIds = new List<Guid>(childIds) { strandId };
+
         var logs = await db.BeatServiceLogs.AsNoTracking()
-            .Where(x => x.StrandId == strandId).ToListAsync(ct);
+            .Where(x => scopeIds.Contains(x.StrandId)).ToListAsync(ct);
         var strand = await db.Strands.AsNoTracking()
             .Where(s => s.Id == strandId)
             .Select(s => new { s.Slug, s.Title })

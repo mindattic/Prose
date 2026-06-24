@@ -124,7 +124,7 @@ updated: 2026-06-15
   - **G5e ✅** Connectivity beats: Ch6 sk=1250 "The Second Entry" (18.9 Hz trace after gathering,
     dock job arrives on relay); Ch12 sk=650 "Across the Hall, 02:14" (Pixel opens Clybourn permit,
     stops waiting). *(2026-06-21)*
-  - **G5f ✅** Ch16 Ghost Period: strand created; 10 beats written (return to node, ELF activates
+  - **G5f ✅** Ch16 Ghost Period: strand created; 10 beats written (return to node, E.L.F. activates
     at Class-2 bleed threshold, 127s LOG GAP, source ID matches 11-year relay shell, first contact
     sent at 01:14, job accepted in morning). *(2026-06-21)*
   - **G5g ⬜** Full 16-chapter review campaign: each chapter ≥82% standalone; cumulative ≥85%.

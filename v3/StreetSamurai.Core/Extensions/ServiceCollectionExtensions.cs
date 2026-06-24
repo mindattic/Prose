@@ -791,6 +791,8 @@ public static class ServiceCollectionExtensions
         // Use ss --workflow-status to inspect coverage gaps.
         services.AddSingleton<BeatModeDetector>();
         services.AddSingleton<WorkflowMonitorService>();
+        services.AddSingleton<EntityContextStack>();
+        services.AddSingleton<EntityContextService>();
         services.AddSingleton<ProseWriterRouter>();
 
         return services;

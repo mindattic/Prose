@@ -392,6 +392,7 @@ else
                                 <option value="elevenlabs">ElevenLabs</option>
                                 <option value="kokoro">Kokoro</option>
                                 <option value="piper">Piper</option>
+                                <option value="webspeech" title="Browser Voice is an instant in-app preview using your device's OS voices — not used when publishing">Browser Voice</option>
                             </select>
 
                             @if (selectedEngine == "elevenlabs")
@@ -462,7 +463,40 @@ else
                                     Demo
                                 </button>
                             }
+                            else if (selectedEngine == "webspeech")
+                            {
+                                @* Browser Voice: Web Speech API — preview only, never persisted as publish engine *@
+                                <select class="form-select form-select-sm bg-black text-light border-secondary"
+                                        style="max-width:260px;"
+                                        @bind="webSpeechVoice">
+                                    @foreach (var v in webSpeechVoices)
+                                    {
+                                        <option value="@v.Name">@v.Name (@v.Lang)</option>
+                                    }
+                                </select>
+                                <div class="d-flex align-items-center gap-1">
+                                    <label class="form-label small text-muted mb-0"
+                                           title="Playback speed (0.5–2.0)">Speed: @webSpeechRate.ToString("F2")</label>
+                                    <input type="range" class="form-range" style="width:90px;"
+                                           min="0.5" max="2.0" step="0.05"
+                                           @bind="webSpeechRate" @bind:event="oninput" />
+                                </div>
+                                <button class="btn btn-sm btn-info" @onclick="ListenWebSpeechAsync" disabled="@webSpeaking"
+                                        title="Play strand text using your device's browser voices">
+                                    @if (webSpeaking) { <span class="spinner-border spinner-border-sm me-1"></span> }
+                                    else { <i class="bi bi-play-fill me-1"></i> }
+                                    Listen
+                                </button>
+                                <button class="btn btn-sm btn-secondary" @onclick="StopWebSpeechAsync"
+                                        title="Stop browser voice playback">
+                                    <i class="bi bi-stop-fill"></i>
+                                </button>
+                            }
                         </div>
+                        @if (selectedEngine == "webspeech")
+                        {
+                            <p class="text-muted small mt-1 mb-0">Plays in your browser using your device's voices — preview only, not used to publish.</p>
+                        }
 
                         @if (!string.IsNullOrEmpty(studioAudioUrl) && selectedEngine != "elevenlabs")
                         {
@@ -1717,11 +1751,19 @@ else
     //   localVoiceId    → Strand.VoiceId  (engine voice identifier)
     //   localSpeed      → Strand.VoiceStyle  (kokoro speed; piper noise_scale)
     //   localLengthScale→ Strand.VoiceStability (piper length_scale / speed)
-    private string selectedEngine = "elevenlabs";   // "elevenlabs"|"kokoro"|"piper"
+    private string selectedEngine = "elevenlabs";   // "elevenlabs"|"kokoro"|"piper"|"webspeech"
     private string localVoiceId   = "";             // engine voice id
     private double localSpeed     = 1.0;            // kokoro: speed; piper: noise_scale
     private double localLengthScale = 1.0;          // piper only: length_scale (playback speed)
     private bool   localDemoing;                    // spinner while local demo synthesises
+
+    // ── Browser Voice (Web Speech API) — preview only, never persisted ────
+    private List<WebSpeechVoice> webSpeechVoices = new();
+    private string? webSpeechVoice;
+    private double webSpeechRate = 1.0;
+    private bool webSpeaking;
+
+    public class WebSpeechVoice { public string Name { get; set; } = ""; public string Lang { get; set; } = ""; }
 
     private string StudioPreviewUrl =>
         voices.FirstOrDefault(v => v.VoiceId == editorProfile.VoiceId)?.PreviewUrl ?? "";
@@ -1835,6 +1877,54 @@ else
             Toast.Error("LOCAL-DEMO", ex.Message.Contains("not installed") ? engineHint : ex.Message);
         }
         finally { localDemoing = false; StateHasChanged(); }
+    }
+
+    private async Task LoadWebSpeechVoicesAsync()
+    {
+        try
+        {
+            webSpeechVoices = await JS.InvokeAsync<List<WebSpeechVoice>>("streetSamuraiSpeech.listVoices");
+            webSpeechVoice = webSpeechVoices.FirstOrDefault(v => v.Lang.StartsWith("en", StringComparison.OrdinalIgnoreCase))?.Name
+                             ?? webSpeechVoices.FirstOrDefault()?.Name;
+        }
+        catch (Exception ex)
+        {
+            Log.LogWarning(ex, "Failed to load Web Speech voices");
+        }
+    }
+
+    private async Task ListenWebSpeechAsync()
+    {
+        if (strand == null) return;
+        try
+        {
+            var ordered = await Workbench.GetOrderedBeatsAsync(strand.Id, includeDisabled: false);
+            var chunks = ordered.Select(b => (b.Beat.Text ?? "").Trim()).Where(t => t.Length > 0).ToList();
+            if (chunks.Count == 0) chunks = new List<string> { StrandWorkbenchService.DemoSampleText };
+            webSpeaking = true;
+            StateHasChanged();
+            await JS.InvokeVoidAsync("streetSamuraiSpeech.speak", chunks, webSpeechVoice, webSpeechRate);
+        }
+        catch (Exception ex)
+        {
+            Log.LogWarning(ex, "Web Speech playback failed");
+            Toast.Error("BROWSER-VOICE", "Browser voice playback failed.");
+            webSpeaking = false;
+        }
+    }
+
+    private async Task StopWebSpeechAsync()
+    {
+        try
+        {
+            await JS.InvokeVoidAsync("streetSamuraiSpeech.stop");
+        }
+        catch (Exception ex)
+        {
+            Log.LogWarning(ex, "Web Speech stop failed");
+        }
+        webSpeaking = false;
+        StateHasChanged();
     }
 
     private async Task ApplyVoiceToStrandAsync()
@@ -2148,7 +2238,7 @@ else
         s.Title = strand.Title;
         s.Synopsis = strand.Synopsis;
         s.VoiceId = strand.VoiceId;
-        s.TtsEngine = selectedEngine == "elevenlabs" ? null : selectedEngine;
+        s.TtsEngine = (selectedEngine == "elevenlabs" || selectedEngine == "webspeech") ? null : selectedEngine;
         s.UpdatedAt = DateTime.UtcNow;
         await db.SaveChangesAsync();
         strandLoadedUpdatedAt = s.UpdatedAt;
@@ -2186,7 +2276,7 @@ else
         await using var db = await DbFactory.CreateDbContextAsync();
         var s = await db.Strands.FirstOrDefaultAsync(x => x.Id == strand.Id);
         if (s == null) return;
-        s.TtsEngine    = selectedEngine;
+        s.TtsEngine    = selectedEngine == "webspeech" ? null : selectedEngine;
         s.VoiceId      = localVoiceId;
         // VoiceStyle  → kokoro speed; piper noise_scale
         s.VoiceStyle   = localSpeed;
@@ -2200,14 +2290,25 @@ else
         strand.VoiceId   = s.VoiceId;
     }
 
-    /// <summary>Called when the engine dropdown changes. Persists immediately.</summary>
+    /// <summary>Called when the engine dropdown changes. Persists immediately.
+    /// Browser Voice (webspeech) is preview-only and is never written to TtsEngine.</summary>
     private async Task OnEngineChangedAsync()
     {
         studioAudioUrl = null;
-        if (selectedEngine == "elevenlabs")
-            await SaveStrandHeaderAsync();
+        if (selectedEngine == "webspeech")
+        {
+            // Stop any active playback from previous engine; load OS voices
+            await StopWebSpeechAsync();
+            await LoadWebSpeechVoicesAsync();
+        }
         else
-            await SaveLocalEngineAsync();
+        {
+            webSpeaking = false;
+            if (selectedEngine == "elevenlabs")
+                await SaveStrandHeaderAsync();
+            else
+                await SaveLocalEngineAsync();
+        }
     }
 
     /// <summary>Seed a beat's draft and queue focus + autosize on its

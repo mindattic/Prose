@@ -448,6 +448,17 @@ if (args.Contains("--edit-beat"))
     return;
 }
 
+// CLI mode: create a new empty root strand (bible-first; no beats yet).
+//   ss --create-strand --title "..." [--code SRZR] [--kind story] [--synopsis "..."] [--seed "..."] [--previous <slug|id>] [--parent <slug|id>]
+if (args.Contains("--create-strand"))
+{
+    var cliBuilder = WebApplication.CreateBuilder(args);
+    cliBuilder.Services.AddStreetSamuraiServices();
+    var cliApp = cliBuilder.Build();
+    Environment.ExitCode = await CreateStrandCli.RunAsync(args, cliApp.Services);
+    return;
+}
+
 //   ss --expand-beat (--slug <slug> | --id <guid>) [--beat <beatId>] [--force]
 if (args.Contains("--expand-beat"))
 {
@@ -1582,6 +1593,45 @@ if (args.Contains("--workflow-status"))
     cliBuilder.Services.AddStreetSamuraiServices();
     var cliApp = cliBuilder.Build();
     await WorkflowMonitorCli.RunAsync(cliApp.Services, args);
+    return;
+}
+
+// ss --backfill-coverage --slug <book-or-chapter-slug>
+// Populates BeatServiceLog + BeatModeLog for prose written before ProseWriterRouter
+// existed, WITHOUT regenerating any beat. Runs the router's coverage-only path over
+// each existing beat so --workflow-status has real logs to report.
+if (args.Contains("--backfill-coverage"))
+{
+    var cliBuilder = WebApplication.CreateBuilder(args);
+    cliBuilder.Services.AddStreetSamuraiServices();
+    var cliApp = cliBuilder.Build();
+    await BackfillCoverageCli.RunAsync(cliApp.Services, args);
+    return;
+}
+
+// ss --backfill-synopses --slug <s> [--model <id>] [--force]
+// ss --backfill-structure-roles --slug <s> [--force]
+// Fill missing beat metadata without touching prose. Synopses via LLM (BeatGoal proxy
+// for mode detection); StructureRole deterministically by book-global Save-the-Cat arc.
+if (args.Contains("--backfill-synopses") || args.Contains("--backfill-structure-roles"))
+{
+    var cliBuilder = WebApplication.CreateBuilder(args);
+    cliBuilder.Services.AddStreetSamuraiServices();
+    var cliApp = cliBuilder.Build();
+    Environment.ExitCode = await BackfillBeatMetaCli.RunAsync(cliApp.Services, args);
+    return;
+}
+
+// ss --audit-strand --slug <book-or-chapter-slug> [--deep] [--model <id>] [--out <path>]
+// The "Player Piano" — one repeatable command running the full QA battery (census +
+// coverage + plant/prose audits; --deep adds per-chapter examine-emotion + story-audit +
+// diagnose + fidelity). --model retargets the deep tier (e.g. Haiku) for the run.
+if (args.Contains("--audit-strand"))
+{
+    var cliBuilder = WebApplication.CreateBuilder(args);
+    cliBuilder.Services.AddStreetSamuraiServices();
+    var cliApp = cliBuilder.Build();
+    Environment.ExitCode = await AuditStrandCli.RunAsync(cliApp.Services, args);
     return;
 }
 

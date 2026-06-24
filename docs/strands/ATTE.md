@@ -101,36 +101,54 @@ only lever she controls.
 5. **The contractor-issue car stays gray.** It is not redeemed. It doesn't become significant.
    It is the texture of a consolation posting.
 
-## 4b. Resonance mechanics (LOCKED — SS-A8) {#SS-ATTE-4b}
+## 4b. Schism mechanics — the Gingerbread House (LOCKED — SS-A8, redesigned SS-A18) {#SS-ATTE-4b}
 
-A bleed-induced transit event leaves two forensic signatures, both detectable with a resonance
-scanner (a field instrument reading residual harmonic energy by frequency profile, intensity,
-and estimated trace age).
+**The shape (LOCKED).** The 35th-and-Halsted schism is not a hole the children fall through. It is
+the 3-dimensional cross-section of a five-dimensional shape — what stands at the intersection is a
+slice, the way a shadow is one dimension thinner than the thing that casts it. The slice changes
+with the angle you view it from and with the shape's own slow rotation in planes we have no
+direction for; no two witnesses describe the same thing because no two are looking at the same
+cross-section. Crucially, a 5D shape **has no inside accessible to us**: it can reach into a sealed
+room, a locked drawer, *a skull*, touching what's there without breaking any surface — entering
+through a direction that does not exist for three-dimensional things. This is the whole mechanism.
+Children are not moved. They are *reached*, and then they *walk*.
 
-**Resonance echo** (informal: *echo*; RMA designation: *contact imprint*) — low-intensity,
-long-duration residual left where the bleed's coherent emission first synchronized a person's
-neuretics. Marks where the bleed *found* them and began tuning them, not where they crossed.
-Persists for weeks. The tuning settles at wherever the person occupies most: desk chair, usual
-seat, frequent resting spot.
+Internally the cast calls it **the Gingerbread House** — the thing that smells like something a
+child wants, that draws them to itself, that they go to on their own legs. The fairy tale is the
+only language anyone has for it. Use the name; do not over-explain it.
 
-**Transit shadow** (informal: *shadow*; RMA designation: *crossing trace*) — higher-intensity,
-shorter-duration residual at the exact crossing location. Always in a transitional, low-visibility
-space (bathroom stall, stairwell alcove, supply room, waiting chair outside a closed door). The
-bleed requires brief neuretic isolation — a person alone, away from other active neuretics.
-Intensity is immediate; decay is faster than an echo (days, not weeks).
+**The echo — how the shape tunes a child (LOCKED).** Over a roughly six-week window the shape's
+cross-section overlaps wherever a child spends the most still time — their assigned seat, their
+desk — and through the no-inside property it touches the child's still-calibrating neuretics
+directly, with no contact at the skin or skull. Juvenile neuretics has not settled into a fixed
+frequency band, so it synchronizes; the 17–19 Hz emission tunes it the way a struck tuning fork
+sets a second fork ringing. The forensic residue of this is the **echo** (RMA designation: *contact
+imprint*): a low-intensity, weeks-long harmonic mark at the seat, readable on a resonance scanner.
+The echo marks *who was tuned and where they sat* — not a crossing. Nothing crosses at the seat.
+The growth window closes around age twelve; adult neuretics is locked too tightly to take the tune.
 
-**Selvamani's shorthand:** *"The echo tells you where the frequency found them. The shadow tells
-you where they stepped through. You always need both — the echo shows you who; the shadow shows
-you where."*
+**The heading — how a tuned child leaves (LOCKED).** Once synchronized, the child's neuretics
+carries a standing bias toward the source: a compulsion, felt as a direction, the way the witch's
+house is *that way* across the woods. The child does not vanish from a room. The child gets up
+during an unsupervised moment — a bathroom pass, a free-reading period, the walk to a bus that is
+never boarded — and **walks out of the school and toward 35th and Halsted**, southwest, however far
+it is, the way you walk toward a smell. At the Gingerbread House the cross-section closes over them.
+A sensitive adult who is partially tuned (Ren Vasquez) feels the same pull and can name its
+bearing; this is the *heading*, the second half of the forensic picture. It is not a scanner trace
+in a bathroom — it is a vector, read in the living as orientation and in the record as the fact
+that every missing child was last seen moving the same way, their vanishing points falling on lines
+that converge on one intersection.
 
-**Why children disappear without witnesses (LOCKED).** The tuning compulsion builds over a
-six-week synchronization window. When it peaks, the child follows it during a normal institutional
-transition — a bathroom pass, a moment waiting alone, the gap between periods in a corridor with
-no adult coverage. The crossing takes seconds. In an overworked school environment, one child not
-returning from a bathroom break is logged as an unexcused absence or presumed guardian pickup.
-The teacher assumes the front office has them; the front office assumes a guardian came; the
-record closes as noise. The pattern repeats 1–3 times per school over months before any single
-site has a count worth reviewing.
+**Selvamani's shorthand (LOCKED):** *"The echo tells you who it tuned. The heading tells you where
+they walked. The echo is a fingerprint on a chair. The heading is the smell of the gingerbread."*
+
+**Why children disappear without witnesses (LOCKED).** A tuned child walking out of a building is
+not an alarm. One child not back from the bathroom is logged as an unexcused absence or a presumed
+guardian pickup; a child seen leaving the yard is a child going home early. The teacher assumes the
+office has them; the office assumes a guardian came; the street assumes a parent is a block ahead.
+A kid walking is the most ordinary thing in the city. By the time a guardian reports it, the child
+has been at the Gingerbread House for hours. The pattern repeats 1–3 times per school over months
+before any single site has a count worth reviewing.
 
 **The 47-child pattern (LOCKED).** 22 school sites across GLMZ, 22 months, 1–3 incidents per
 site. Each site's tally is below its corp contract's alert threshold. Cross-corp clearance is
@@ -141,7 +159,8 @@ Osei) to avoid collision with the adult Amara Osei in Mnemosync. All three prose
 
 ## 5. Story structure {#SS-ATTE-5}
 
-42 beats across a prologue + 4 chapters. The investigation proceeds:
+40 beats across a prologue + 4 chapters (was 42; the bathroom-sweep beat and a duplicate Selvamani
+beat were removed in the SS-A18 mechanism redesign). The investigation proceeds:
 
 ### Prologue — GLMZ (gateway beat)
 Yemina's POV of the Pilsen Veil zone-seam at 0600: the Arcturus/Meridian contract boundary,
@@ -190,12 +209,16 @@ cyberpunk spectacle register — the quieter one. The one where a child is logge
 unexcused absence and the system
 moves on to the next item. Yemina's competence makes this visible, not dramatic.
 
-Score: **88.45/100** (95% CI: [87.2, 89.7], n=20). Real move from prior 86.3. Gateway designation confirmed.
+Score: **88.7/100** (n=12, avg; prior 88.45/n=20, prior-prior 86.3). Gateway designation confirmed.
+Gateway-commandments audit (8/8 incl. GLMZ five-pillar): **READY**. Mechanism redesigned SS-A18
+(Gingerbread House; see §4b).
 
 ## 7. User stories {#SS-ATTE-7}
 
 - **ATTE-US-1 ✅** Yemina Fola entity seeded in DB; cross-district truancy investigator;
   Arcturus contract; Pilsen Veil jurisdiction.
-- **ATTE-US-2 ✅** 44 beats written (Sonnet draft → Opus polish).
-- **ATTE-US-3 ✅** Standalone review ≥ 82%. *Achieved: 86.3.*
+- **ATTE-US-2 ✅** 40 beats written (Sonnet draft → Opus polish; SS-A18 redesign removed 2).
+- **ATTE-US-3 ✅** Standalone review ≥ 82%. *Achieved: 86.3 → 88.45.*
 - **ATTE-US-4 ✅** Docx exported.
+- **ATTE-US-5 ✅** Gateway commandments audit: all 8 satisfied (incl. GLMZ five-pillar). `ss --story-audit --slug attendance-019ebf4c` → READY.
+- **ATTE-US-6 ✅** Schism mechanism redesigned (SS-A18): Gingerbread House / echo + heading / no bathroom-teleport. See §4b.

@@ -19,7 +19,8 @@ public class ProseWriterRouter(
     BeatGeneratorService generator,
     StoryMethodologyService methodology,
     BeatModeDetector modeDetector,
-    WorkflowMonitorService monitor)
+    WorkflowMonitorService monitor,
+    EntityContextService? entityContext = null)
 {
     static readonly string CombatProseGuidance = """
         BEAT MODE: COMBAT — action prose rules are in force.
@@ -53,31 +54,25 @@ public class ProseWriterRouter(
         Guid universeId      = default,
         CancellationToken ct = default)
     {
-        var (mode, confidence, method) = modeDetector.Detect(context.BeatGoal, context.SceneSoFar);
+        var (mode, confidence, method, pacingGuidance, structuralGuidance) =
+            ComputeEnrichment(context.BeatGoal, context.SceneSoFar, beatIndex, totalBeats);
 
-        // Pacing: positional arc, overridden by beat-goal keywords; Combat forces STRIKE.
-        var pacingInstruction = totalBeats > 0
-            ? PacingService.GetPacing(beatIndex, totalBeats, context.BeatGoal)
-            : null;
-        if (mode == BeatMode.Combat)
-            pacingInstruction = new PacingInstruction(PacingService.PaceMode.Strike);
-
-        // Structural role (Save the Cat / Scene-Sequel).
-        var structuralGuidance = totalBeats > 0
-            ? methodology.GetBeatGenerationGuidance(beatIndex, totalBeats)
-            : "";
-
-        // Combat mode: prepend combat prose rules to structural guidance.
-        if (mode == BeatMode.Combat)
-            structuralGuidance = CombatProseGuidance + (structuralGuidance.Length > 0 ? "\n\n" + structuralGuidance : "");
+        // Entity context stack: load LRU working memory for this beat (non-fatal if unavailable).
+        var entityStackContext = "";
+        if (entityContext != null && context.StrandId != Guid.Empty)
+        {
+            try { entityStackContext = await entityContext.PrepareContextAsync(context.StrandId, beatId, context.BeatGoal, context.SceneSoFar, ct); }
+            catch { /* non-blocking — entity context is best-effort */ }
+        }
 
         var enriched = context with
         {
             BeatIndex              = beatIndex,
             TotalBeats             = totalBeats,
-            PacingGuidance         = pacingInstruction?.ProseGuidance ?? "",
+            PacingGuidance         = pacingGuidance,
             StructuralRoleGuidance = structuralGuidance,
             DetectedMode           = mode,
+            EntityStackContext     = entityStackContext,
         };
 
         var result = await generator.GenerateBeatAsync(enriched, ct);
@@ -97,11 +92,83 @@ public class ProseWriterRouter(
                 new("PlantPayoff",     IsApplicable: strandApplicable,  IsActive: strandApplicable,  BlockSizeChars: 0),
                 new("StoryAudit",      IsApplicable: strandApplicable,  IsActive: strandApplicable,  BlockSizeChars: 0),
                 new("Combat",          IsApplicable: combatApplicable,  IsActive: combatApplicable,  BlockSizeChars: combatApplicable ? CombatProseGuidance.Length : 0),
+                new("EntityContext",   IsApplicable: strandApplicable,  IsActive: entityStackContext.Length > 0,  BlockSizeChars: entityStackContext.Length),
             ], CancellationToken.None);
 
             await modeDetector.PersistAsync(beatId, universeId, mode, confidence, method, CancellationToken.None);
+
+            if (entityContext != null && context.StrandId != Guid.Empty && result.Length > 0)
+                await entityContext.ReconcileAsync(result, context.StrandId, beatId, universeId, CancellationToken.None);
         }, CancellationToken.None);
 
         return result;
+    }
+
+    /// <summary>
+    /// Backfill coverage logs for an already-written beat WITHOUT regenerating prose.
+    /// Runs the same enrichment computation WriteAsync uses (mode detection → pacing →
+    /// structural role → combat rules) and records BeatServiceLog + BeatModeLog rows from
+    /// it, so the workflow monitor reflects prose that was written before the router existed.
+    ///
+    /// EntityContext is intentionally NOT logged here: its activation depends on the live
+    /// working-memory stack built during generation, which a backfill cannot reconstruct
+    /// without mutating it. The five gap-tracked services (Pacing, StoryMethodology,
+    /// PlantPayoff, StoryAudit, Combat) are fully determined by goal + position and ARE logged.
+    /// </summary>
+    /// <param name="beatGoal">The beat's authorial intent (its synopsis) — drives mode + pacing.</param>
+    /// <param name="proseHint">Optional prose tail to sharpen mode detection (ignored if ≥500 chars).</param>
+    public async Task LogCoverageAsync(
+        Guid beatId, Guid strandId, string? beatGoal, string? proseHint,
+        int beatIndex, int totalBeats, Guid universeId = default,
+        CancellationToken ct = default)
+    {
+        if (strandId == Guid.Empty) return;
+
+        var (mode, confidence, method, pacingGuidance, structuralGuidance) =
+            ComputeEnrichment(beatGoal, proseHint, beatIndex, totalBeats);
+
+        var pacingApplicable = totalBeats > 0;
+        var structApplicable = totalBeats > 0;
+        var combatApplicable = mode == BeatMode.Combat;
+
+        await monitor.LogBeatActivityAsync(beatId, strandId, universeId,
+        [
+            new("Pacing",           IsApplicable: pacingApplicable, IsActive: pacingApplicable && pacingGuidance.Length > 0,     BlockSizeChars: pacingGuidance.Length),
+            new("StoryMethodology", IsApplicable: structApplicable, IsActive: structApplicable && structuralGuidance.Length > 0, BlockSizeChars: structuralGuidance.Length),
+            new("PlantPayoff",      IsApplicable: true,             IsActive: true,                                              BlockSizeChars: 0),
+            new("StoryAudit",       IsApplicable: true,             IsActive: true,                                              BlockSizeChars: 0),
+            new("Combat",           IsApplicable: combatApplicable, IsActive: combatApplicable,                                  BlockSizeChars: combatApplicable ? CombatProseGuidance.Length : 0),
+        ], ct);
+
+        await modeDetector.PersistAsync(beatId, universeId, mode, confidence, method, ct);
+    }
+
+    /// <summary>
+    /// Shared enrichment computation used by both WriteAsync (live generation) and
+    /// LogCoverageAsync (backfill). Single source of truth for "what fires" so coverage
+    /// logs match real generation behaviour.
+    /// </summary>
+    private (BeatMode Mode, float Confidence, string Method, string PacingGuidance, string StructuralGuidance)
+        ComputeEnrichment(string? beatGoal, string? proseHint, int beatIndex, int totalBeats)
+    {
+        var (mode, confidence, method) = modeDetector.Detect(beatGoal, proseHint);
+
+        // Pacing: positional arc, overridden by beat-goal keywords; Combat forces STRIKE.
+        var pacingInstruction = totalBeats > 0
+            ? PacingService.GetPacing(beatIndex, totalBeats, beatGoal ?? "")
+            : null;
+        if (mode == BeatMode.Combat)
+            pacingInstruction = new PacingInstruction(PacingService.PaceMode.Strike);
+
+        // Structural role (Save the Cat / Scene-Sequel).
+        var structuralGuidance = totalBeats > 0
+            ? methodology.GetBeatGenerationGuidance(beatIndex, totalBeats)
+            : "";
+
+        // Combat mode: prepend combat prose rules to structural guidance.
+        if (mode == BeatMode.Combat)
+            structuralGuidance = CombatProseGuidance + (structuralGuidance.Length > 0 ? "\n\n" + structuralGuidance : "");
+
+        return (mode, confidence, method, pacingInstruction?.ProseGuidance ?? "", structuralGuidance);
     }
 }

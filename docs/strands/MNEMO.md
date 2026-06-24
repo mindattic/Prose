@@ -58,7 +58,7 @@ recognize them. This IS the question enacted at the level of prose: *which sente
 ## 0. What this story IS {#MNEMO-0}
 
 The weirdest entry in the GLMZ collection. A dual-POV investigation novel (~80k words, 3 acts,
-28 chapters) structured around a cognitive horror that is never metaphysical: the systematic
+27 chapters) structured around a cognitive horror that is never metaphysical: the systematic
 removal of meaning from human memory, at scale, by a CorpoNation that has made it look like
 maintenance.
 
@@ -197,10 +197,17 @@ error, experiences what Ciro used to feel about what he does. Before the visits.
 protocol ran. The memory is a man who was appalled by himself. The weight of that memory, arriving
 in Amara, is enormous. Ciro himself no longer has access to it.
 
+**Heritage:** Portuguese-Brazilian. Hair kept within one millimeter of Orison maximum length
+standard. The precision is the tell — one of the last self-governing behaviors that survived.
+
 **The straight razor:** it appears as a grooming gesture before it appears as a threat. The razor
 is the only thing Ciro still does with care. The grooming is one of the last behaviors that
 survived with its original emotional charge intact. He polishes the blade because he still cares
 about the blade.
+
+**Razor/machete dichotomy (LOCKED).** The straight razor vs. Ekow Ato's machete: intimate vs.
+declarative; preening tool turned lethal vs. agricultural implement announced. This tonal contrast
+is deliberate and must be preserved.
 
 **Act 2 Ciro actions — what "landing blows" means now (LOCKED):**
 
@@ -448,28 +455,39 @@ the black spot, the nothing that means everything.
 
 **Act 1 score target:** mean ≥ 85.0, no chapter below 83.
 
-### Act 2 — 12 chapters (WRITTEN — structural overhaul required + broadcaster reframe)
+### Act 2 — 11 chapters (overhaul COMPLETE; Second Suitor merged into Grooming 2026-06-23)
 
-Mean: 74.4 · Peak: 81.3 (Off Timing). Genre ceiling diagnostic: ~79 for chapters without
-concrete Ciro actions AND emotional cost. Each chapter needs ONE irreversible calibration event
-AND one visible cost to the characters' lives.
+> **Scores in this table are PRE-OVERHAUL (stale).** Current standalone strand review R6 = **83.0**
+> (SD 5.4, much tighter than R5's SD 7.1). The Act 2 overhaul is done. See
+> `project_mnemo_rewrite_pending` memory for the live state.
+>
+> **2026-06-23 structural change (session e5003879):** *Second Suitor* (ch16) was the one genuinely
+> redundant Act 2 chapter — it ended on "she learned nothing she didn't already know" and repeated the
+> "probe → access tightened" beat a third time. Its essential emotional beats (the *list* conversation,
+> the byline-complicity at the quarterly gathering, the unsourced warmth she can't tell is hers) were
+> **merged into the front of Grooming** as the night-before movement, so Grooming now arcs
+> gathering-warmth → that warmth weaponized into the floor-32 provisioning trap. The redundant 8/day
+> access-close was dropped (nothing downstream references it). Book is now **27 chapters**; the
+> Second Suitor strand is orphaned (`ParentStrandId=NULL`, content preserved). Also: the repeated Ciro
+> razor jaw-draw in Managed Liability was trimmed (motif now: Account Liaison intro → The Lunch reading
+> → Grooming → The Turn payoff).
 
-| Ch | Slug | Title | POV | Score | Required work |
-|----|------|-------|-----|-------|---------------|
-| 11 | the-cleanup-list | The Cleanup List | Seto | 78.0 | Contact calibrated; access closed |
-| 12 | managed-liability | Managed Liability | Amara | 76.9 | Ciro's first editorial contact |
-| 13 | the-move | The Move | Amara | 73.0 | **REWRITE** — query triggers proxy; instability evidence builds |
-| 14 | sealed-system | Sealed System | Seto | 78.6 | Broker infrastructure vanishes |
-| 15 | everything-she-carries | Everything She Carries | Amara | 69.8 | **FULL REWRITE** — three contacts go silent; Amara loses segment |
-| 16 | second-suitor | Second Suitor | Amara | 77.0 | Grooming gesture, wrong room |
-| 17 | grooming | Grooming | Amara | 78.0 | ⚠️ RESTORE: trim cold-water opening + floor-32 ending |
-| 18 | off-timing | Off Timing | Amara | 81.3 | — strongest Act 2 chapter; polish only |
-| 19 | pressure-and-counter-pressure | Pressure & Counter-Pressure | Seto | 78.6 | ACT 2 PEAK — preserve structure |
-| 20 | the-turn | The Turn | Amara | 76.0 | Nuru's calibration visit scheduled (Ciro's filing) |
-| 21 | story-runs | Story Runs | Seto | 78.0 | — |
-| 22 | thursday-morning | Thursday Morning | Ekow | 74.6 | Ekow receives file termination notice |
+| Ch | Slug | Title | POV | Note |
+|----|------|-------|-----|------|
+| 11 | the-cleanup-list | The Cleanup List | Seto | Contact calibrated; access closed |
+| 12 | managed-liability | Managed Liability | Amara | Ciro's first editorial contact; razor trimmed to static presence |
+| 13 | the-move | The Move | Amara | First physical Amara/Seto meeting; drive handoff |
+| 14 | sealed-system | Sealed System | Seto | Network closure sweep; Seto reads all 847 names through the bleed |
+| 15 | everything-she-carries | Everything She Carries | Amara | Theodora recalibration horror; Amara loses segment |
+| 16 | grooming | Grooming | Amara | **MERGED**: quarterly-gathering/list (ex-Second Suitor) → floor-32 provisioning trap |
+| 17 | off-timing | Off Timing | Amara | 112 gaps; batch query access suspended |
+| 18 | pressure-and-counter-pressure | Pressure & Counter-Pressure | Seto | ACT 2 PEAK — preserve structure |
+| 19 | the-turn | The Turn | Amara | Forced leave; razor payoff (open blade); platform loss |
+| 20 | story-runs | Story Runs | Seto | Convergence; the story is handed off |
+| 21 | thursday-morning | Thursday Morning | Ekow | Ekow receives file termination notice |
 
-**Act 2 score target:** mean ≥ 85.0, no chapter below 83.
+**Act 2 score target:** mean ≥ 85.0, no chapter below 83. *(NB: global chapter numbers shifted −1 from
+Act 2 onward after the merge; §7 "Ch27/Ch28" are now Ch26/Ch27 = Zone 7, Tuesday 9AM / 10:47.)*
 
 ### Act 3 — 6 chapters (COMPLETE — scoring significantly above Acts 1 & 2)
 
@@ -517,7 +535,8 @@ AND one visible cost to the characters' lives.
 - **MNEMO-US-1 ✅** Amara Osei, Seto Banda, Ciro Fonseca, Orison Neuretics — all entities seeded.
 - **MNEMO-US-1A ⬜** Amara entity updated — profession=broadcaster, affiliation=Tessera
   Tribune/Orison Communications Group.
-- **MNEMO-US-2 ✅** 28-chapter book stub + chapter strands; Act 1+2 prose written.
+- **MNEMO-US-2 ✅** Book stub + chapter strands; all prose written. **27 chapters** after the
+  2026-06-23 Second Suitor→Grooming merge (was 28).
 - **MNEMO-US-3 ⬜** Act 1 refactored — mean ≥ 85.0, no chapter below 83; broadcaster identity
   present throughout.
 - **MNEMO-US-4 ⬜** Act 2 structural overhaul — Ciro lands one calibration event per chapter;
@@ -527,7 +546,21 @@ AND one visible cost to the characters' lives.
 - **MNEMO-US-7 ✅** Act 3 (Ch23–28) written per §7 design. All 6 chapters in DB with full prose;
   Act 3 scoring 88–100% per beat (R3 n=20). Confirmed 2026-06-23.
 - **MNEMO-US-8 ⬜** Cumulative novel review ≥ 85%. Review history: R1=81.0, R2=79.8 (dirty),
-  R3=83.2 (first clean pass), R4=80.9 (cluster flip). True score ~82–84%; above 82% standalone
-  floor. Contested beats (16–27 mid-section) are structural design choices, not fixable errors.
+  R3=83.2 (first clean pass), R4=80.9 (cluster flip), R5=82.6 (SD 7.1), R6=83.0 (SD 5.4 — after
+  Second Suitor→Grooming merge + razor trim), **R7=84.0 (SD 4.8, flow 80.7 — after Amara-interiority
+  pass; 19/20 readers >80, down to a single holdout)**. Session trend 82.6→84.0 (+1.4), flow
+  77.6→80.7 (+3.1). The residual 84→85 gap is the **irreducible taste fork**: procedural density is
+  simultaneously the #1 complaint (sole low scorer) AND the #1 praise (high scorers "won over by
+  procedural authenticity"); and clarifying the bleed earlier risks the documented "over-explaining
+  the bleed" score-killer. Safe high-confidence wins are spent; the last point requires accepting
+  fork risk. Act 3 scores 88–100%/beat.
+
+  **Amara-interiority pass (2026-06-23, APPLIED):** threaded Amara's own erasure as a personal stake,
+  paying off the ch15 plant ("eleven days before her next calibration… and she would mean it"):
+  - Off Timing (`019EECEB-631A-7F70-AA3D-81A8FAC5E3E8`): after the 112-gaps "room she was standing
+    in," she recognizes she's *in* the room — a 90-day recipient with her own calibration logged
+    "like a dentist's appointment"; one gap will be hers and she won't find where the fear was.
+  - The Turn (`019EECF2-F2BD-7D8F-9E5A-585FAAAD3E2A`): the two-week leave window contains her own
+    calibration — "He had not taken her platform. He had cleared her calendar." (ties to Theodora).
 - **MNEMO-US-9 ✅** Docx exported. V4.docx/epub/pdf at
   `R:\Desktop\EPub\MindAttic\GLMZ\Mnemosync\` 2026-06-23.

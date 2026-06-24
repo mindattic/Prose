@@ -54,7 +54,7 @@ Every strand or book follows this sequence (codified in [`CLAUDE.md`](CLAUDE.md)
 1. **Docs first.** Append world facts to `docs/AMENDMENTS.md`; add a story entry to `docs/USER_STORIES.md`; run `pwsh tools/codex.ps1 doctor` to validate. A fact lives in exactly one Codex layer, cited by stable `{#SS-…}` id.
 2. **Entity seeding.** Every named character, CorpoNation, place, and weapon is seeded into SQL **before any prose is generated** (`SqlSeedService`, typed repositories, or MCP `create_*` tools).
 3. **Book structure.** Create a book-level strand (`kind=book`) plus chapter sub-strands (`kind=chapter`) parented to the book; the 14-beat authorial spine becomes the book strand's `seed` text (`StrandBibleService`, `BookOutlineService`).
-4. **Prose draft.** A panel of expert personas votes on the best next beat, then an LLM expands the winning blurb to prose (`BeatGeneratorService`). Each beat's prompt is grounded by an X-Ray context block — the exact entities, voice rules, world state, and behavioral rules in play (`SceneContextAssembler`).
+4. **Prose draft.** `ProseWriterRouter` is the entry point for all beat writing (SS-A16). It classifies the beat mode (`BeatModeDetector`: Combat/Narrative/EmotionalClimax/Dialogue/Transition/Revelation), assigns pacing rhythm (`PacingService`: BREATHE/FLOW/TIGHTEN/STRIKE/SETTLE), injects structural role (`StoryMethodologyService`), loads active plant/payoff pairs (`PlantPayoffService`), audits gateway/sequel commandments (`StoryAuditService`), and routes to `BeatGeneratorService` while logging per-strand service coverage. Each beat's prompt is grounded by an X-Ray context block — the exact entities, voice rules, world state, and behavioral rules in play (`SceneContextAssembler`).
 5. **Reflow.** A bounded copy-edit pass fixes paragraph breaks, question punctuation, and dialogue attribution without rewriting prose (`ProseReflowService` / `StrandMarkdownExporter`).
 6. **Review (dual, mandatory).** A structural pre-flight runs first (`StructuralDiagnosticService`), then N Legion personas cast scored reader ballots and synthesize an aggregate (`StrandReviewService`). Per the house rule: a per-strand **standalone** review must clear ≥82%, and the **cumulative** prefix (all strands in reading order) must hold ≥85%.
 7. **Continuity scan.** Claims are extracted from prose and validated against live entity state (`ContinuityExtractionService`, `ContinuityValidatorService`); mentions are scanned (`EntityExtractionService`); deterministic checks catch timeline and location impossibilities (`TimelineConsistencyService`, `LocationContradictionService`). Approved fixes apply via `FindingApplyService`.
@@ -117,7 +117,10 @@ The core invariant ([SS-LAW-1](docs/BIBLE.md)): **the live canon is the SQL data
 
 | Service | Role |
 |---|---|
-| `BeatGeneratorService` | **Core engine** — panel of expert personas votes on the best next beat; an LLM expands it to prose. Tier-locked HIGH for prose the reader sees |
+| `ProseWriterRouter` | **Sole prose entry point (SS-A16)** — coordinates all services below and logs per-strand service coverage; call this, never `BeatGeneratorService` directly |
+| `BeatModeDetector` | Classifies each beat as Combat / Narrative / EmotionalClimax / Dialogue / Transition / Revelation via keyword scan on BeatGoal; Combat forces STRIKE pacing |
+| `CombatProseGuidance` | Injects combat-prose laws into the prompt for Combat beats: verbs-first, fragment sentences, no emotion-naming, dissociated observer |
+| `BeatGeneratorService` | **Core generation** — panel of expert personas votes on the best next beat; an LLM expands it to prose. Tier-locked HIGH for prose the reader sees |
 | `BeatPromptBuilder` | Constructs beat prompts with canon context, voice rules, world state |
 | `SceneGenerationService` | Full scene pipeline: assemble context → prompt → prose |
 | `CombatSceneWriter` | Canon-aware combat prose — tracks loadouts, ammo, bio-battery, terrain |
@@ -150,6 +153,8 @@ The core invariant ([SS-LAW-1](docs/BIBLE.md)): **the live canon is the SQL data
 | `EntityRatingService` / `EntityReviewService` | Legion-persona quality voting on canon entities; aggregate summaries |
 | `StoryRepairService` | Dossier-driven repair — walks chapters, augments character records, runs continuity extraction |
 | `ValidationService` | Cross-cutting validation rules (entity constraints, world rules) |
+| `EmotionalDepthService` | 8-dimension emotional examination at beat level (0–4 per dimension): emotional stakes, character interiority, vulnerability, subtext, conflict physicality, reader engagement, thematic resonance, emotional surprise (SS-A15) |
+| `EmotionalLedgerService` | Aggregates per-beat emotional scores into strand/book trends; persists to `EmotionalExamination` table for register feedback loop |
 
 ### 5. Storytelling science
 
@@ -179,6 +184,8 @@ Mostly **deterministic** (DB-only, no LLM cost). The seven prose-continuity serv
 | `CanonContradictionService` | Chunked semantic + LLM sweep for canon rule violations | Yes |
 | `WorldConsistencyService` | Prose scan for world-rule violations (city police, Behemoth-as-alive, …) | Yes |
 | `SceneContextAssembler` | X-Ray scene assembly — entity mentions → dossiers → voice + behavioral + science context block | No |
+| `PlantPayoffService` | Plant/payoff pair registry — seeds active plants into prose context; `PlantPayoff` table with `Hidden`/`Visible`/`Meta` transparency; orphan-audit on strand completion | No |
+| `EntityContextService` / `EntityContextStack` | Tracks which entities appear in which beats; flags stale entity context when an entity is updated after a beat was written | No |
 | `WorldGraphService` | In-memory adjacency graph over all entities/edges; rebuilt from SQL; staleness-probed | No |
 | `ContinuityExtractionService` | LLM+Quorum extraction of `(entity, predicate, object)` claims from prose | Yes |
 | `ContinuityService` / `ContinuityValidatorService` / `ContinuityApplyService` | Claim store CRUD + contradiction detection; validate vs. live state; apply resolved claims | Mixed |
@@ -309,7 +316,7 @@ dotnet run --project v3/StreetSamurai.Blazor -- <args>
 
 **Prose & strands:** `--write-strand` (bible-first generation) · `--expand-beat` · `--edit-beat` · `--edit-strand` (review-weighted auto-editor) · `--reflow-strand` · `--rebeat-strand` · `--bible-strand` · `--duplicate-strand` · `--reparent-strand` · `--run-corpus` (autonomous loop)
 
-**Review & quality:** `--review-strand [--effort draft|standard|deep]` · `--diagnose-strand` · `--check-fidelity` · `--check-prose` · `--check-canon` · `--check-behavior`
+**Review & quality:** `--review-strand [--effort draft|standard|deep]` · `--diagnose-strand` · `--check-fidelity` · `--check-prose` · `--check-canon` · `--check-behavior` · `--examine-emotion` (8-dimension beat scoring) · `--story-audit` (gateway/sequel commandments) · `--plant-audit` (orphan plants) · `--list-plants` · `--add-plant`
 
 **Memory:** `--lesson-add` · `--lessons-list`
 
@@ -321,13 +328,13 @@ dotnet run --project v3/StreetSamurai.Blazor -- <args>
 
 **Entities & migration:** `--add-character` / `--add-place` / `--add-doc` / `--add-corponation` · `--seed` · `--migrate-sql` · `--migrate-strands` · `--rebuild-*-relational` (RFC 0007 backfills)
 
-**Infrastructure:** `--rebuild-graph` · `--reembed` · `--coverage` · `--ask` (RAG) · `--audit-drift` · `--universe <id>` (global scope flag) · `--review-entity`
+**Infrastructure:** `--rebuild-graph` · `--reembed` · `--coverage` · `--ask` (RAG) · `--audit-drift` · `--universe <id>` (global scope flag) · `--review-entity` · `--workflow-status [--slug <slug>|--all]` (service coverage matrix)
 
 ---
 
 ## The MCP surface
 
-`StreetSamurai.Mcp` exposes **175 `[McpServerTool]` methods** (24 tool-type classes across 19 files), so Claude can call the world directly. **The complete, always-current per-tool reference — every tool, its description, and its parameters — is [docs/MCP_TOOLS.md](docs/MCP_TOOLS.md)**, generated by reflection over the live attributes (`ToolDocGenerator`) and auto-regenerated by the pre-commit hook whenever a tool changes, so it can never drift:
+`StreetSamurai.Mcp` exposes **175+ `[McpServerTool]` methods** across 27 tool-class files, so Claude can call the world directly. **The complete, always-current per-tool reference — every tool, its description, and its parameters — is [docs/MCP_TOOLS.md](docs/MCP_TOOLS.md)**, generated by reflection over the live attributes (`ToolDocGenerator`) and auto-regenerated by the pre-commit hook whenever a tool changes, so it can never drift:
 
 ```powershell
 dotnet run --project v3/StreetSamurai.Mcp -- --export-tools docs/MCP_TOOLS.md
@@ -356,6 +363,10 @@ The families at a glance:
 | `Tools.Repository.cs` | `list_repositories`, `create_repository`, `get_entity_tree` |
 | `Tools.Config.cs` | Markdown-file sync/restore, `get_review_settings` |
 | `Tools.Species.cs` | `list_species`, `get_species`, `get_archetype` |
+| `Tools.PlantPayoff.cs` | `register_plant_payoff`, `link_plant_beat`, `link_payoff_beat`, `get_plant_payoffs`, `audit_plant_payoffs`, `set_plant_transparency` |
+| `Tools.StoryAudit.cs` | `audit_story_commandments`, `get_strand_spine` — gateway/sequel commandment auditing |
+| `Tools.WorkflowMonitor.cs` | `workflow_status`, `workflow_status_global`, `workflow_beat_modes` — per-strand and global service coverage matrices |
+| `Tools.EntityContext.cs` | `get_entity_context`, `scan_entity_context`, `clear_entity_context`, `clear_entity_stale`, `list_entity_stale_beats` |
 
 ---
 
@@ -469,4 +480,4 @@ After editing any `docs/*` Codex file, run `pwsh tools/codex.ps1 digest` then `p
 
 ## Status
 
-In active development. Live site running, working bookshelf, cost-tiered review pipeline shipping findings, storytelling-science guidance wired into generation, deterministic continuity suite (timeline + location + gear + behavior), MCP server registered with ~201 tools, audiobook MVP in flight.
+In active development. Live site running, working bookshelf. **SS-A15**: Emotional Intelligence Examination — 8-dimension per-beat scoring, ledger trends, register feedback loop. **SS-A16**: ProseWriterRouter — all prose wired through a single coordinated entry point with full service-coverage monitoring. **SS-A17**: GLMZ Nanotechnology Canon — ~200 nano entities, 5-class authorization system, The Substrate, The Nano Accords 2187. Plant/payoff registry live. Entity context tracking live. MCP server: 175+ tools across 27 tool-class files. Cost-tiered review (draft/standard/deep). Deterministic continuity suite (timeline + location + gear + behavior + plant/payoff). Audiobook pipeline shipped.

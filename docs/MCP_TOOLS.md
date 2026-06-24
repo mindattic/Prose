@@ -11,7 +11,7 @@
 > All tools are MCP-prefixed `mcp__streetsamurai__<name>` by the client. Most return a
 > JSON string; the canon is the SQL database, scoped to the active Universe.
 
-**188 tools** across **27 tool families.**
+**192 tools** across **28 tool families.**
 
 ## Families
 
@@ -25,6 +25,7 @@
 | [Continuity](#continuity) | 2 |
 | [Core Entity Crud](#core-entity-crud) | 4 |
 | [Encyclopedia](#encyclopedia) | 35 |
+| [Entity Context](#entity-context) | 3 |
 | [Findings](#findings) | 5 |
 | [Gear Entity Crud](#gear-entity-crud) | 7 |
 | [Lore Triple](#lore-triple) | 7 |
@@ -37,7 +38,7 @@
 | [Species](#species) | 2 |
 | [Story](#story) | 6 |
 | [Story Audit](#story-audit) | 2 |
-| [Strand](#strand) | 29 |
+| [Strand](#strand) | 30 |
 | [Universe](#universe) | 3 |
 | [Voice](#voice) | 5 |
 | [Workflow Monitor](#workflow-monitor) | 3 |
@@ -519,6 +520,29 @@ List every transportation entry: vehicles, transit systems, The Pulse stations, 
 List every weapon in canon. Returns name + category + manufacturer. Use this to find a weapon for an action scene.
 
 - _(no parameters)_
+
+## Entity Context
+
+<sub>`EntityContextTools`</sub>
+
+### `clear_entity_context`
+
+Clear the entity context stack for a strand. Use when starting a new writing session for a strand to reset the LRU working memory.
+
+- `slug` (string, required) — Strand slug
+
+### `get_entity_context`
+
+Inspect the entity working memory currently active for a strand. Shows depth-0 (directly named), depth-1 (semantic neighbors), and depth-2 (neighbors of neighbors) entities with their canon descriptions. Call after generating beats to see what was in scope.
+
+- `slug` (string, required) — Strand slug (e.g. 'ATTE', 'BCODA')
+
+### `scan_entity_context`
+
+Run the entity context scanner on a text snippet and return the formatted context block that would be injected into the beat prompt. Useful for testing what entities the scanner picks up from a given passage or beat goal.
+
+- `slug` (string, required) — Strand slug — context is keyed per strand
+- `text` (string, required) — Text to scan (beat goal, prose excerpt, or entity name)
 
 ## Findings
 
@@ -1085,6 +1109,18 @@ Append an amendment to the strand's narrative spine. Amendments are append-only 
 Clear an explicit gap-after-beat override. The audio engine falls back to the auto-computed silence from SceneType + terminator punctuation.
 
 - `beatHandle` (string, required) — Beat Guid OR 'strand-guid.beat-guid' handle.
+
+### `create_strand`
+
+Create a new empty root strand (no beats) — the bible-first entry point for a brand-new story. Write the bible/beats afterward via InsertBeat or the UI. UniverseId is stamped to the current universe (GLMZ). Returns the new id, slug, and URL.
+
+- `title` (string, required) — Display title. Required.
+- `code` (string, optional) — Optional short reference code (e.g. 'SRZR'). Upper-cased; rejected if already in use.
+- `kind` (string, optional) — Category: 'story' (default, root), 'book', 'chapter', 'vignette'…
+- `synopsis` (string, optional) — Optional one-line synopsis.
+- `seed` (string, optional) — Optional one-line generator seed / logline.
+- `previous` (string, optional) — Optional prior strand this one continues (slug or GUID) — sequel commandments apply.
+- `parent` (string, optional) — Optional parent strand (slug or GUID) — makes this a sub-strand.
 
 ### `create_strand`
 
