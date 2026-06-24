@@ -264,7 +264,7 @@ public class ContinuityTools
             var stdout = await stdoutTask;
             var stderr = await stderrTask;
 
-            try { File.Delete(bundlePath); } catch { }
+            try { File.Delete(bundlePath); } catch (Exception ex) { log.LogWarning(ex, "Failed to delete temporary bundle {Path}", bundlePath); }
 
             // The Node script returns a JSON report on stdout regardless of exit code.
             // Exit 0 = no findings, exit 1 = findings flagged, exit 2 = pipeline error.
@@ -303,7 +303,7 @@ public class ContinuityTools
         }
         catch (Exception ex)
         {
-            try { File.Delete(bundlePath); } catch { }
+            try { File.Delete(bundlePath); } catch (Exception delEx) { log.LogWarning(delEx, "Failed to delete bundle during exception handling"); }
             return JsonSerializer.Serialize(new
             {
                 error = "contradiction_detector_exception",
@@ -410,7 +410,7 @@ public class ContinuityTools
             var stdout = await stdoutTask;
             var stderr = await stderrTask;
 
-            try { File.Delete(bundlePath); } catch { }
+            try { File.Delete(bundlePath); } catch (Exception ex) { log.LogWarning(ex, "Failed to delete temporary bundle {Path}", bundlePath); }
 
             // Exit 0 = no findings, 1 = findings flagged, 2 = pipeline error.
             // The Node script emits per-chapter progress on stderr; only treat
@@ -453,7 +453,7 @@ public class ContinuityTools
         }
         catch (Exception ex)
         {
-            try { File.Delete(bundlePath); } catch { }
+            try { File.Delete(bundlePath); } catch (Exception delEx) { log.LogWarning(delEx, "Failed to delete bundle during exception handling"); }
             return JsonSerializer.Serialize(new
             {
                 error = "contradiction_detector_exception",

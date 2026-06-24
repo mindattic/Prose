@@ -130,16 +130,21 @@ public class ContinuityExtractionService
         // Group by (entity_name, predicate, object) → union of voters
         var grouped = validated
             .GroupBy(c => $"{Normalize(c.EntityName)}|{Normalize(c.Predicate)}|{Normalize(c.Object)}")
-            .Select(g => new GroupedCandidate
+            .Select(g =>
             {
-                EntityName = g.First().EntityName,
-                Predicate  = g.First().Predicate,
-                Object     = g.First().Object,
-                Snippet    = g.First().Snippet,
-                Voice      = g.First().Voice,
-                Confidence = g.First().Confidence,
-                Voters     = g.Select(x => x.Voter).Distinct().ToList(),
+                var first = g.FirstOrDefault();
+                return first == null ? null : new GroupedCandidate
+                {
+                    EntityName = first.EntityName,
+                    Predicate  = first.Predicate,
+                    Object     = first.Object,
+                    Snippet    = first.Snippet,
+                    Voice      = first.Voice,
+                    Confidence = first.Confidence,
+                    Voters     = g.Select(x => x.Voter).Distinct().ToList(),
+                };
             })
+            .Where(g => g != null)
             .Where(g => g.Voters.Count >= minVoters)
             .ToList();
 
