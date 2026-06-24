@@ -1572,6 +1572,19 @@ if (args.Contains("--restore-markdown"))
     return;
 }
 
+// ss --workflow-status [--slug <slug> | --all] [--json]
+// Per-strand or global prose service coverage matrix. Shows which services
+// (Pacing, StoryMethodology, PlantPayoff, StoryAudit, Combat) were active
+// when beats were written, and surfaces gaps where applicable services weren't used.
+if (args.Contains("--workflow-status"))
+{
+    var cliBuilder = WebApplication.CreateBuilder(args);
+    cliBuilder.Services.AddStreetSamuraiServices();
+    var cliApp = cliBuilder.Build();
+    await WorkflowMonitorCli.RunAsync(cliApp.Services, args);
+    return;
+}
+
 // ss --story-audit --slug <strandSlug> [--json]
 // Audits a strand against 7 commandments — gateway (PreviousStrandId=null) or
 // sequel (PreviousStrandId set). Pass/warn/fail per commandment with fix hints.

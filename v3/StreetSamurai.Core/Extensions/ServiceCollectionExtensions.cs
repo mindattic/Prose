@@ -785,6 +785,14 @@ public static class ServiceCollectionExtensions
         // Available via `ss --story-audit` and the Tools.StoryAudit MCP tools.
         services.AddSingleton<StoryAuditService>();
 
+        // Beat mode detection + workflow coverage monitoring.
+        // ProseWriterRouter is the preferred entry point for all prose generation — it
+        // auto-detects beat mode, injects pacing + structural guidance, and logs coverage.
+        // Use ss --workflow-status to inspect coverage gaps.
+        services.AddSingleton<BeatModeDetector>();
+        services.AddSingleton<WorkflowMonitorService>();
+        services.AddSingleton<ProseWriterRouter>();
+
         return services;
     }
 
