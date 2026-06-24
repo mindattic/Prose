@@ -29,6 +29,28 @@ public class StoryAuditService(
     PlantPayoffService plantPayoffs,
     IDbContextFactory<StreetSamuraiDbContext> dbFactory)
 {
+    // GLMZ universe ID — used to append universe-specific commandments
+    static readonly Guid GlmzUniverseId = new("0197E9C9-0001-7000-8000-000000000001");
+
+    // ── GLMZ-specific Gateway Commandment ─────────────────────────────────────
+    // Added separately so Fantasy/other universes are unaffected.
+
+    static readonly (string Key, string Title, string Body)[] GlmzGatewayCommandments =
+    [
+        ("glmz_five_pillars",
+         "Orient through GLMZ's five pillars",
+         "A reader finishing this story cold must sense all five forces that define GLMZ: " +
+         "(1) AIs as agents with faction and agenda — not tools, not metaphors, entities with stakes; " +
+         "(2) nanites as ambient infrastructure woven into daily life, not magic dust — bodies repaired, " +
+         "matter shaped, the city itself mediated by them; " +
+         "(3) neuretics as the cognitive augmentation that reshapes who can think fast enough to compete — " +
+         "the divide between those who have them and those who don't is social and economic, not just technical; " +
+         "(4) Schism as the physics-breaking rift that destabilized the world — a wound in reality, not a plot device; " +
+         "(5) CorpoNations as the actual governing power, with gray zones as the spaces their law cannot or will not reach. " +
+         "Touch all five — even obliquely — through the story's natural texture. " +
+         "The world should feel systemic, not like a collection of gimmicks."),
+    ];
+
     // ── Gateway Commandments ──────────────────────────────────────────────────
 
     static readonly (string Key, string Title, string Body)[] GatewayCommandments =
@@ -135,14 +157,32 @@ public class StoryAuditService(
             ?? throw new InvalidOperationException($"Strand {strandId} not found.");
 
         var isSequel = strand.PreviousStrandId.HasValue;
-        var commandments = isSequel ? SequelCommandments : GatewayCommandments;
+        var commandments = (isSequel ? SequelCommandments : GatewayCommandments)
+            .Concat(!isSequel && strand.UniverseId == GlmzUniverseId ? GlmzGatewayCommandments : [])
+            .ToArray();
         var mode = isSequel ? "sequel" : "gateway";
 
-        var prose = string.Join("\n\n", strand.StrandBeats
-            .Where(sb => sb.IsEnabled)
-            .OrderBy(sb => sb.SortKey)
-            .Select(sb => sb.Beat.Text)
-            .Where(t => !string.IsNullOrWhiteSpace(t)));
+        // For book strands, audit the LIVE chapter prose (child chapters ordered by
+        // SortKey), not the book strand's own beats — those may hold a legacy outline
+        // or condensed draft that no longer matches the published manuscript.
+        var childChapters = await db.Strands.AsNoTracking()
+            .Where(s => s.ParentStrandId == strand.Id && s.Kind == "chapter")
+            .Include(s => s.StrandBeats).ThenInclude(sb => sb.Beat)
+            .OrderBy(s => s.SortKey)
+            .ToListAsync(ct);
+
+        var prose = childChapters.Count > 0
+            ? string.Join("\n\n", childChapters
+                .SelectMany(ch => ch.StrandBeats
+                    .Where(sb => sb.IsEnabled)
+                    .OrderBy(sb => sb.SortKey)
+                    .Select(sb => sb.Beat.Text))
+                .Where(t => !string.IsNullOrWhiteSpace(t)))
+            : string.Join("\n\n", strand.StrandBeats
+                .Where(sb => sb.IsEnabled)
+                .OrderBy(sb => sb.SortKey)
+                .Select(sb => sb.Beat.Text)
+                .Where(t => !string.IsNullOrWhiteSpace(t)));
 
         var plants = await plantPayoffs.GetByStrandAsync(strandId, ct);
 
@@ -174,6 +214,14 @@ public class StoryAuditService(
     }
 
     // ── Internal ─────────────────────────────────────────────────────────────
+
+    // Keep both the opening AND the ending when a manuscript is too long for one
+    // prompt — commandments split between "open with the world" (head) and "land
+    // one beat past the handoff" (tail), so head-only truncation false-fails the latter.
+    static string ClampProse(string p) =>
+        p.Length <= 100000
+            ? p
+            : p[..50000] + "\n\n[... middle of the manuscript elided for length ...]\n\n" + p[^50000..];
 
     async Task<StoryAuditCheck> CheckCommandmentAsync(
         string key,
@@ -210,7 +258,7 @@ public class StoryAuditService(
             RULE: {{body}}{{plantContext}}
 
             STRAND PROSE:
-            {{(prose.Length > 7000 ? prose[..7000] : prose)}}
+            {{ClampProse(prose)}}
 
             Evaluate: does this strand satisfy the commandment?
             - "pass" = clearly satisfied
@@ -261,9 +309,11 @@ public class StoryAuditService(
 
     // ── Commandment access (for beat generator context injection) ─────────────
 
-    public string BuildCommandmentContext(bool isSequel)
+    public string BuildCommandmentContext(bool isSequel, Guid? universeId = null)
     {
-        var commandments = isSequel ? SequelCommandments : GatewayCommandments;
+        var commandments = (isSequel ? SequelCommandments : GatewayCommandments)
+            .Concat(!isSequel && universeId == GlmzUniverseId ? GlmzGatewayCommandments : [])
+            .ToArray();
         var label = isSequel ? "SEQUEL COMMANDMENTS" : "GATEWAY COMMANDMENTS";
         var sb = new System.Text.StringBuilder();
         sb.AppendLine();
