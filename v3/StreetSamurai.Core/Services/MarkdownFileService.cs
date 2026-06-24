@@ -71,6 +71,18 @@ public class MarkdownFileService
             if (Directory.Exists(rfcDir))
                 foreach (var f in Directory.EnumerateFiles(rfcDir, "*.md"))
                     yield return new(f, "project", ToRelative(projectRoot, f), "rfc");
+
+            // docs/strands/*.md — per-strand bibles
+            var strandsDir = Path.Combine(docsDir, "strands");
+            if (Directory.Exists(strandsDir))
+                foreach (var f in Directory.EnumerateFiles(strandsDir, "*.md"))
+                    yield return new(f, "project", ToRelative(projectRoot, f), "strand-bible");
+
+            // docs/books/*.md — legacy long-form book spines
+            var booksDir = Path.Combine(docsDir, "books");
+            if (Directory.Exists(booksDir))
+                foreach (var f in Directory.EnumerateFiles(booksDir, "*.md"))
+                    yield return new(f, "project", ToRelative(projectRoot, f), "book-spine");
         }
 
         // Claude Code project memory files

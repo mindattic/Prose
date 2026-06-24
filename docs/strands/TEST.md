@@ -11,7 +11,7 @@ updated: 2026-06-22
 # STRAND BIBLE — Testament (TEST) {#SS-TEST}
 
 > **Purpose.** The dry spine of Bear's court-martial: dual timeline (Cortland Engagement ↔
-> present), three Sunder fights, and a handshake kill. What happens, not how it reads. When
+> present), three Sunder fights, and a Sun Tzu ending. What happens, not how it reads. When
 > prose and spine disagree, fix one in the same change. See [[../BIBLE]] for universe laws;
 > [[../BCODA]] for Bear's place in the peer-freelancer roster.
 
@@ -22,9 +22,13 @@ Bear has been paying a quiet, sustained rate to sixteen families for eight years
 Halcyon Civil Security needs closed. Dual timeline: Bear in the present, taking work that
 requires nothing of him; Bear in the past at Cortland, the decision that made the ledger.
 
-It ends with a handshake kill. Brandt salutes. Bear does not return it. He extends his hand.
-Brandt takes it. The compliance lock engages 44 seconds later. 6 hours 41 minutes after that,
-Brandt's NS-7 stem relay fails. "He had decided this was tiredness." LOCKED.
+It ends with a handshake. Brandt salutes. Bear does not return it. He extends his hand.
+Brandt takes it. The handshake is just a handshake — Bear's weapon was the three sheets of
+testimony, already in the record. The compliance lock engages 43 seconds later because the
+Manowar is depleted (two morning Sunder discharges), not from a kill shot. 6 hours 41 minutes
+after that, Brandt's NS-7 stem relay fails — flagged by Halcyon's own maintenance log at 1348,
+four minutes after the submission hit the civil accountability record. "He had decided this was
+tiredness." LOCKED.
 
 **This is a peer-freelancer standalone.** Template for other peer POV stories. Bear is NOT
 Kyle — see register rules below.
@@ -44,12 +48,18 @@ Kyle — see register rules below.
 - **Beat 12 (past):** "Bear saluted — the same motion, the same angle, the same eight seconds
   it had always been. He dropped it and walked out into the Cortland morning."
   Last salute as Bear's CO. The loaded moment.
-- **Beat 22 (lobby, present):** "He nodded once." No salute. Absence is felt.
-- **Beat 32 (kill):** Brandt SALUTES Bear. Bear does not return it. Extends his hand.
-  Brandt takes it. LOCKED structural payoff.
+- **Beat 22 (lobby, present):** Brandt straightens into colonel's posture (the old reflex);
+  Bear does not mirror it. "He did not move his right hand. He nodded once." No salute.
+  Absence is felt. Sets up Beat 32.
+- **Beat 32 (kill):** Brandt SALUTES Bear — full and formal, last gesture of an institution
+  to one of its own. Bear does not return it. Extends his hand. Brandt takes it = the kill.
+  LOCKED structural payoff.
 
 The salute is the form that gets subverted. Bear stops performing the institutional reflex.
-Brandt, who caused CE-0217, performs it — and that act is what enables the kill.
+Brandt, who caused CE-0217, performs it — and that act is what closes the arc. Bear does
+not kill Brandt. Bear's weapon was the three sheets of paper. Halcyon's own machinery kills
+Brandt. The salute lands because Bear refuses it and offers the human gesture instead: the
+handshake of a man who does not mistake himself for an institution.
 
 ## 2. The obligation (not guilt) {#SS-TEST-2}
 
@@ -83,7 +93,8 @@ The obligation = the root of the whole case. CE-0217 stays classified. The payme
 - Halcyon retired colonel. 4cm scar under left eye.
 - Uses the phrase "We operated on the intelligence we were given" — rationalization + dropped
   defense, observable in forward weight-shift.
-- **Killed by Sunder handshake in SK800. LOCKED.**
+- Killed by Halcyon's own machinery (NS-7 flag at 1348, six hours after the hearing) — LOCKED.
+  Bear's weapon was the three pages, not any Sunder discharge.
 
 **Hana Morimoto-Ferreira:**
 - Civil accountability investigator. The one who reopens the case.
@@ -99,7 +110,14 @@ The obligation = the root of the whole case. CE-0217 stays classified. The payme
    The humanizing line. Brandt had been compensating for 37 minutes without noticing.
    LOCKED. Do not expand or remove.
 2. **The salute payoff.** Beat 32: Brandt salutes; Bear does not return it; extends hand.
-   Brandt takes it = the kill. "He did not return it. He held out his hand." LOCKED.
+   Brandt takes it. The handshake is just a handshake — Bear shakes it the way he shakes any
+   hand, present and complete. Bear's weapon was the three pages, not the Sunder.
+   Compliance lock engages forty-three seconds after contact breaks because the Manowar is
+   DEPLETED (two morning discharges), not from a kill shot. LOCKED.
+   Brandt's death (Beat 33): Halcyon's own maintenance systems flag his NS-7 at 1348 — four
+   minutes after the submission lands in the record. The institution that killed forty-three
+   people now kills the colonel who covered it up. Bear does not deliver this kill. He already
+   knew it was coming. The handshake was goodbye. LOCKED.
 3. **"He did not move. The room did."** SK800. LOCKED. Never expand or soften.
 4. **Sternum touch, SK900.** Bear puts a hand flat on his sternum — the absence of Manowar's
    cycle, no warmth, just frame — and calls the number at 0600. LOCKED through-line closure.
@@ -143,8 +161,9 @@ clause. He dropped it."
 
 **SK800 — "Come back" + handshake:**
 Brandt walks around partition. "Come back." Bear: "You know, I almost considered that."
-Brandt extends hand. Bear takes it. Releases resonant pattern into NS-7 circuits through
-the palm. Brandt feels nothing, smiles. "Think it over." Bear: "I will."
+Brandt salutes — full and formal. Bear does not return it; raises open right hand.
+Brandt takes it. The handshake is just a handshake. Bear already knows what the record
+has put in motion. "Think it over." Bear: "I will."
 
 **SK812.5 — Brandt's delayed death:**
 6h41m later. "By 2045, the NS-7 had been compensating for thirty-seven minutes. He hadn't
@@ -206,4 +225,5 @@ Score: **86.7/100** (V20, N=120, Claude+OAI, CI ±0.55). All 120 scored 81–100
 - **TEST-US-2 ✅** 37-beat novel written (Sonnet draft → Opus polish → multiple revision passes).
 - **TEST-US-3 ✅** Standalone review ≥ 82%. *Achieved: 86.7.*
 - **TEST-US-4 ✅** Docx exported (V20).
-- **TEST-US-5 ⬜** V21 fix (SK812.5 institutional-continuation paragraph) re-review pending.
+- **TEST-US-5 ✅** Sun Tzu restructure (Beats 32+33): institutional kill, handshake just a handshake.
+  Re-review: **88.2/100** (N=20, all 81–100). Standalone threshold ≥82% met. 2026-06-23.

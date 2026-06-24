@@ -397,6 +397,77 @@ public class StrandWorkbenchService
     }
 
     /// <summary>
+    /// Create an empty root strand (no beats) — the bible-first entry point for a
+    /// brand-new story. The author writes/imports the bible and beats afterward
+    /// (via the UI, <c>--edit-beat</c>, or <c>--write-strand</c>). UniverseId is
+    /// stamped to the current universe on save (GLMZ in headless/CLI). Returns the
+    /// new id + slug.
+    /// </summary>
+    /// <param name="title">Display title (required).</param>
+    /// <param name="kind">Free-form category — "story" (root), "book", "chapter", etc.</param>
+    /// <param name="synopsis">Optional one-line synopsis.</param>
+    /// <param name="seed">Optional one-line generator seed / logline.</param>
+    /// <param name="strandCode">Optional short reference code (e.g. "SRZR"). Upper-cased;
+    /// rejected if already in use by another strand in this universe.</param>
+    /// <param name="previousStrandId">Optional prior strand this one continues (sequel commandments).</param>
+    /// <param name="parentStrandId">Optional parent (makes this a sub-strand under a book/saga).</param>
+    public async Task<(Guid Id, string Slug)> CreateStrandAsync(
+        string title, string kind = "story", string? synopsis = null, string? seed = null,
+        string? strandCode = null, Guid? previousStrandId = null, Guid? parentStrandId = null,
+        CancellationToken ct = default)
+    {
+        if (string.IsNullOrWhiteSpace(title))
+            throw new ArgumentException("Strand title is required.", nameof(title));
+
+        var code = string.IsNullOrWhiteSpace(strandCode) ? null : strandCode.Trim().ToUpperInvariant();
+
+        await using var db = await dbFactory.CreateDbContextAsync(ct);
+
+        if (code != null)
+        {
+            var clash = await db.Strands.AsNoTracking()
+                .FirstOrDefaultAsync(s => s.StrandCode == code, ct);
+            if (clash != null)
+                throw new InvalidOperationException(
+                    $"StrandCode '{code}' is already in use by '{clash.Title}' ({clash.Slug}).");
+        }
+
+        if (parentStrandId is { } pid && !await db.Strands.AnyAsync(s => s.Id == pid, ct))
+            throw new InvalidOperationException($"Parent strand {pid} not found.");
+        if (previousStrandId is { } prev && !await db.Strands.AnyAsync(s => s.Id == prev, ct))
+            throw new InvalidOperationException($"Previous strand {prev} not found.");
+
+        var strandId = Guid.CreateVersion7();
+        var slug = $"{Slugify(title)}-{strandId.ToString("N")[..8]}";
+
+        var siblingMaxSort = parentStrandId is { } p
+            ? await db.Strands.Where(s => s.ParentStrandId == p).Select(s => (double?)s.SortKey).MaxAsync(ct) ?? 0
+            : await db.Strands.Where(s => s.ParentStrandId == null).Select(s => (double?)s.SortKey).MaxAsync(ct) ?? 0;
+
+        var now = DateTime.UtcNow;
+        db.Strands.Add(new Strand
+        {
+            Id               = strandId,
+            Slug             = slug,
+            Title            = title,
+            StrandCode       = code,
+            Kind             = kind,
+            Status           = "draft",
+            Synopsis         = synopsis,
+            Seed             = seed,
+            ParentStrandId   = parentStrandId,
+            PreviousStrandId = previousStrandId,
+            SortKey          = siblingMaxSort + 100.0,
+            CreatedAt        = now,
+            UpdatedAt        = now,
+        });
+        await db.SaveChangesAsync(ct);
+        log.LogInformation("Created empty strand '{Title}' ({Slug}) code={Code} kind={Kind}",
+            title, slug, code ?? "-", kind);
+        return (strandId, slug);
+    }
+
+    /// <summary>
     /// Convert a monolithic strand into a Collection (ARCHITECTURE.md §2c): split
     /// its beats at <c>IsChapterStart</c> boundaries into child strands parented
     /// under it via <c>ParentStrandId</c>. Beats are MOVED (re-pointed), never

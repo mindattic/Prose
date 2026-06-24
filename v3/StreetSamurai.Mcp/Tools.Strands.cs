@@ -52,6 +52,62 @@ public class StrandTools
         this.audible = audible;
     }
 
+    [McpServerTool, Description("Create a new empty root strand (no beats) — the bible-first entry point for a brand-new story. Write the bible/beats afterward via InsertBeat or the UI. UniverseId is stamped to the current universe (GLMZ). Returns the new id, slug, and URL.")]
+    public async Task<string> CreateStrand(
+        [Description("Display title. Required.")] string title,
+        [Description("Optional short reference code (e.g. 'SRZR'). Upper-cased; rejected if already in use.")] string code = "",
+        [Description("Category: 'story' (default, root), 'book', 'chapter', 'vignette'…")] string kind = "story",
+        [Description("Optional one-line synopsis.")] string synopsis = "",
+        [Description("Optional one-line generator seed / logline.")] string seed = "",
+        [Description("Optional prior strand this one continues (slug or GUID) — sequel commandments apply.")] string previous = "",
+        [Description("Optional parent strand (slug or GUID) — makes this a sub-strand.")] string parent = "")
+    {
+        if (string.IsNullOrWhiteSpace(title)) return "Error: title is required.";
+
+        Guid? previousId = await ResolveStrandIdAsync(previous);
+        if (!string.IsNullOrWhiteSpace(previous) && previousId == null)
+            return $"Error: --previous strand not found: {previous}";
+        Guid? parentId = await ResolveStrandIdAsync(parent);
+        if (!string.IsNullOrWhiteSpace(parent) && parentId == null)
+            return $"Error: --parent strand not found: {parent}";
+
+        try
+        {
+            var (id, slug) = await workbench.CreateStrandAsync(
+                title, kind,
+                string.IsNullOrWhiteSpace(synopsis) ? null : synopsis,
+                string.IsNullOrWhiteSpace(seed) ? null : seed,
+                string.IsNullOrWhiteSpace(code) ? null : code,
+                previousId, parentId);
+
+            return JsonSerializer.Serialize(new
+            {
+                Id    = id,
+                Slug  = slug,
+                Title = title,
+                Code  = string.IsNullOrWhiteSpace(code) ? null : code.Trim().ToUpperInvariant(),
+                Kind  = kind,
+                Url   = $"https://localhost:7103/strand/{slug}",
+                Next  = "Add beats via InsertBeat or the UI; write the bible via SetStrandBible / the bible service.",
+            }, new JsonSerializerOptions { WriteIndented = true });
+        }
+        catch (Exception ex) when (ex is InvalidOperationException or ArgumentException)
+        {
+            return $"Error: {ex.Message}";
+        }
+    }
+
+    /// <summary>Resolve a strand reference (GUID or slug) to its id. Empty input → null.</summary>
+    private async Task<Guid?> ResolveStrandIdAsync(string? slugOrId)
+    {
+        if (string.IsNullOrWhiteSpace(slugOrId)) return null;
+        await using var db = await dbFactory.CreateDbContextAsync();
+        if (Guid.TryParse(slugOrId, out var gid))
+            return await db.Strands.AsNoTracking().AnyAsync(s => s.Id == gid) ? gid : (Guid?)null;
+        return await db.Strands.AsNoTracking()
+            .Where(s => s.Slug == slugOrId).Select(s => (Guid?)s.Id).FirstOrDefaultAsync();
+    }
+
     [McpServerTool, Description("List strands. Use kind='story' to list all root stories (no parent); kind='chapter' for all sub-strands (contain beats). Returns a flat list of id, slug, title, kind, status, beat-count, stale-count.")]
     public async Task<string> ListStrands(
         [Description("Optional Kind filter — 'story' (root strands) or 'chapter' (sub-strands with beats). Case-insensitive equality match.")] string kind = "",

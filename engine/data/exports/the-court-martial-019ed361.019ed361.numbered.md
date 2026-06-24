@@ -3,17 +3,17 @@
 _Someone reopens the Cortland Engagement case. Bear has been paying a quiet, sustained rate to sixteen families for eight years — a ledger Halcyon Civil Security needs closed. Dual timeline: Bear in the present taking work that requires nothing of him, and Bear in the past watching a Halcyon commander bury forty-three people in a corporate report. The villain is not the person who reopened the case. It is the institution that needs Bear to have been wrong so it can stay clean. Arc 4 (CorpoNation cover)._
 
 [Beat 1]
-Third night of the same contract. The client wanted something on the loading dock that didn't move, and Bear was good at being something that didn't move — better than most things, because most things couldn't hold a position for six hours without their body registering a complaint. His body registered no complaints. He had paid a great deal for a body that did not register complaints.
+Third night of the same contract. The client wanted something on the loading dock that didn't move, and Bear was good at being something that didn't move — better than most things, because most things couldn't hold a position for six hours without their body registering a complaint somewhere in the stack. Bear's body registered no complaints. He had paid a great deal for a body that did not register complaints: the augmented frame, the Strix Harvest Frame woven through his torso — piezoelectric filament and kinetic accumulator lattice that drank in every step and every breath and banked it as charge. He could feel it at low rest: a warmth against his sternum, steady as a pilot light.
 
 He had woken at 1800 from the same dream — a light on all night in a second-floor window, and a shadow behind the curtain — and come to work.
 
-The dock was in the Ironbend district, a converted freight terminal that still smelled like the sulfur-processing plant that used to share the block. He had been noticing the smell since night one. The dock workers had stopped noticing it years ago; he could tell by the way they held their lunches over it without adjusting. Bear kept noticing it on principle. There was probably a lesson in that about what you stop noticing when something's just always there, and he'd decided the lesson was for other people.
+The dock was in the Ironbend district, a converted freight terminal that still smelled like the sulfur-processing plant that used to share the block. Bear had been noticing the smell since night one. The dock workers had stopped noticing it years ago; he could tell by the way they held their lunches over it without adjusting. He kept noticing it on principle. There was probably a lesson in that — what you stop clocking when something is always there — and he had decided the lesson was for other people.
 
-A turret cat had taken up residence on a high shelf of empty pallets and was watching the dock with the sideways attention of something that had decided threat and non-threat were human categories that did not apply to it. Bear watched it back for a while. It held its position for four hours and moved three times, each move precise and purposeful.
+A turret cat had taken up residence on a high shelf of empty pallets and was running its own overwatch on the dock floor. Eight kilograms, maybe. It sat without moving for four hours, adjusted its position three times, each adjustment covering a new sector. Bear watched it for a while. It had better noise discipline than half the operators he had shared a perimeter with.
 
-His neuretics flagged an incoming message at 0217.
+His neuretics flagged an incoming message at 0217 — the in-skull hardware queuing it behind his eyes, text ready the moment he blinked for it. He read the sender and put it back.
 
-He did not read it until the shift ended.
+He did not open it until the shift ended.
 
 [Beat 2]
 The comm flagged colonel at 0541. Not Halcyon Legal — the line was personal, not routed through any division. Bear took the call.
@@ -76,6 +76,8 @@ There were three flagged items in the intelligence packet. The first was a confi
 The colonel moved to logistics before Bear had finished reading.
 
 Bear looked at the display after the colonel moved on. The logistics chart had superseded the intelligence packet, but Brandt had not dismissed it — the yellow flag was still visible at the corner of the screen, behind the slide. Bear sat with his hands on his knees. He knew what the colonel had left behind. He listened to the rest.
+
+The briefing closed. Bear saluted with the others and filed out.
 
 [Beat 6]
 He did not think of what he owed as guilt. Guilt was about the person who felt it. What Bear owed was about the forty-three, and he had a word for it, and the word was obligation.
@@ -174,7 +176,7 @@ Bear was last. The colonel held eye contact for a long time. Bear looked back. H
 
 Four seconds is long enough to hold a complete conversation between two people who understand what they are not saying.
 
-The colonel dismissed the assembly. Bear walked out of the tent into the Cortland morning — gray, cold, smelling like everything that had burned. He felt the Manowar warm on cycle against his sternum — the device running, accumulation from the previous twelve hours. He had been noticing it all night. He noticed it again now. He was carrying a count and a long silence and the memory of a yellow flag, and he had decided, walking out of that tent, that carrying them was going to be his job from here on.
+The colonel dismissed the assembly. Bear saluted — the same motion, the same angle, the same eight seconds it had always been. He dropped it and walked out into the Cortland morning — gray, cold, smelling like everything that had burned. He felt the Manowar warm on cycle against his sternum — the device running, accumulation from the previous twelve hours. He had been noticing it all night. He noticed it again now. He was carrying a count and a long silence and the memory of a yellow flag, and he had decided, walking out of that tent, that carrying them was going to be his job from here on.
 
 [Beat 13]
 The fourth year in, he had looked up the Meridian Cross registry.
@@ -324,9 +326,9 @@ He walked past him into the building. The panel was at 1300. He was nine minutes
 [Beat 22]
 Brandt was in the lobby.
 
-Not Legal. Not another operator. The colonel himself — civilian clothes, the same posture. Seventy-two, maybe. Still precise about where he stood. The scar under his left eye had gone smooth.
+Not Legal. Not another operator. The colonel himself — civilian clothes, the same posture. Seventy-two, maybe. Still precise about where he stood. The scar under his left eye had gone smooth with the years.
 
-Bear came through the entrance at 1253. Brandt saw him and moved to intercept — not quickly, just directly, the way a man moves when he has spent time deciding what he's going to say.
+Bear came through the entrance at 1253. Brandt saw him and moved to intercept — not quickly, just directly, the way a man moves when he has spent a long time deciding what he is going to say.
 
 "Boris."
 
@@ -336,19 +338,21 @@ Bear stopped. "Colonel."
 
 "I have seven."
 
-Brandt looked at him. Up close the scar was smaller than it looked at distance — the way scars usually were. Bear's neuretics flagged the device signature at arm's length: Halcyon Neural Services, medical-class, continuous-active. An NS-7 stem relay. The scar and the hardware were from the same incident. Fifteen years of the device keeping the lower brainstem functional.
+Brandt looked at him. Up close the scar was smaller than it looked at distance — the way scars usually were. Bear's neuretics ran a passive ambient sweep at arm's length: Halcyon Neural Services, medical-class, continuous-active. An NS-7 stem relay. The scar and the hardware were from the same incident. Fifteen years of the device keeping the lower brainstem functional.
 
 "The committee date was a courtesy," Brandt said. "Not a reversal."
 
 "I know."
 
-"If you walk into that room—"
+"If you walk into that room —"
 
 "I know," Bear said.
 
-Brandt stopped. He was a man who respected precision, and there was nothing imprecise about what Bear had just said. He glanced down at Bear's chest for a moment, then back up.
+Brandt stopped. He was a man who respected precision, and there was nothing imprecise about what Bear had just said. He held the pause for a moment. Then — the old reflex, older than either of them — he straightened, chin coming up, weight shifting to the balls of his feet. The posture of a colonel addressing a subordinate. Bear had seen it ten thousand times.
 
-"The forty-three," Brandt said. "I have thought about that number. We operated on the intelligence we were given."
+He did not move his right hand. He nodded once, held Brandt's eyes, and waited.
+
+Something moved in Brandt's face. He put it away. "The forty-three," he said. "I have thought about that number. We operated on the intelligence we were given."
 
 "I know."
 
@@ -552,29 +556,33 @@ The lead sat down when Bear let him. The other two read the room.
 [Beat 32]
 Bear released the operator's wrist.
 
+The lead sat down when Bear let him. The other two read the room.
+
 Brandt came around the partition.
 
-He had been there for thirty-two minutes — seated in the observer's chair behind the glass, watching. He had watched the punks fail. He had watched his operators fail. He had watched Bear give eight years of testimony to a panel of three while managing all of it with one hand. He came around the partition now the way he had always moved through a room: precisely, like a man who had spent his career making his intentions clear.
+He had been there for thirty-two minutes — in the observer's chair behind the glass, watching. He had watched the punks fail. He had watched his operators fail. He had watched Bear give eight years of testimony to a review panel while managing all of it with one hand. He came around the partition now the way he had always moved through a room: precisely, like a man who had spent his career making his intentions clear.
 
-He looked at Bear. He looked at the room. He looked back at Bear.
+He looked at Bear. He looked at the operators on the floor. He looked back at Bear.
 
-"Come back," Brandt said. Just like that. As if the operators on the floor weren't wearing his sub-license plates. As if he hadn't spent nineteen days watching Bear's exits. As if none of this morning had been his. The man had a genuine gift for a certain kind of audacity.
+"Come back," Brandt said. Just like that. As if none of this morning had been his. The man had a genuine gift for a certain kind of audacity.
 
 Bear considered it.
 
-He looked at the scar under Brandt's left eye — same campaign, same week, same shrapnel the NS-7 had been compensating for ever since. Fifteen years of the relay keeping the lower brainstem functional while the files upstairs stayed classified. CE-0217 would close. The institution would remain. The forty-three would stay where Brandt had put them.
+He looked at the scar under Brandt's left eye — same campaign, same week, same shrapnel the NS-7 had been compensating for ever since. Fifteen years of the relay keeping the lower brainstem functional. Fifteen years of Halcyon Neural Services as the man's only viable cardiologist, maintenance technician, and keeper of the device that stood between him and the next world. He had spent fifteen years dependent on the institution he served, and he had never once asked whether the institution cared about the dependency.
+
+CE-0217 would close. The forty-three would stay where Brandt had put them. And Brandt — Bear held this the way he held a count, precisely, without editorial — Brandt would not survive what was now in the record. The men who managed his NS-7 were the men who managed what was in the record. They would move quickly. They always did.
 
 He gave it two seconds.
 
 "You know," Bear said, "I almost considered that."
 
-Brandt extended his hand. Reflex, almost — the particular formal habit of forty years in a world where authority concluded with a handshake. The gesture of a man who thought he was still running something.
+Brandt drew himself up. It was a clean motion — chin, shoulders, weight settling back — and then his right hand came up, elbow finding the angle it had found ten thousand times. A colonel's salute: full and formal, the last gesture of an institution to one of its own. The operators on the floor watched him do it.
 
-Bear took it.
+Bear did not return it. He raised his right hand, open, and held it out.
 
-He had held one charge in the Manowar since the service corridor — since he had stood at arm's length in the lobby and his neuretics had flagged the NS-7, and he had understood what the third use of the day was for. He released it now. Not the vent arrays. No click, no display. Through the palm, through the conductive tissue of Brandt's wrist, up into the neural interface of the NS-7 stem relay behind the colonel's left ear. Not a shot — a pattern. Small, resonant, tuned to the relay's oscillating circuits. The NS-7 would find it in its own time. It would amplify it in its own time.
+Brandt's arm came down. He looked at the hand for one full second. Then he took it.
 
-The handshake completed. Brandt's grip was firm. He smiled — the particular smile of a man who believed he had survived something.
+Bear shook it. That was all. He shook it the way he shook any hand — present, complete, no agenda. The man across from him did not know what was already in motion. Bear did. It had been in motion since the first sheet of paper hit the recorder, and there was nothing in this room or this handshake that could slow it down.
 
 "Think it over," Brandt said.
 
@@ -582,9 +590,7 @@ The handshake completed. Brandt's grip was firm. He smiled — the particular sm
 
 He picked up his bag. He walked out.
 
-Behind him, Brandt stood in the center of the room. He was the only person standing. He did not know that. He would not know it until it was the last thing he knew.
-
-The compliance lock engaged on the Manowar at 1344:43 — forty-three seconds after the contact broke. It didn't matter. He had finished with it.
+The compliance lock engaged on the Manowar at 1344:43 — forty-three seconds after the contact broke. The two morning discharges had run the system to zero; the lock found nothing to hold. It didn't matter. He had finished with it.
 
 [Beat 33]
 Six hours and forty-one minutes later, Colonel Vasili Brandt was eating alone at a restaurant on the thirty-second floor of a tower in the Loop, which was how he had preferred dinner for eleven years.
@@ -597,7 +603,11 @@ Face-down. Left cheek in the mashed potato. The restaurant held still for a mome
 
 At 2103, the NS-7 sent an automatic hardware failure report to Halcyon Neural Services' on-call diagnostic team. By 2200, someone was asking questions about the colonel's afternoon. By 0300, they were asking the right ones.
 
-The forty-three remained classified.
+Halcyon Neural Services logged the incident as hardware malfunction — component fatigue. Same code, same form, same logic as everything else the institution had ever needed to close: when the machinery encounters a body it cannot explain, it files the form that removes the body from the record. The review board noted that the device was eleven years past its scheduled replacement cycle. They noted the administrative irregularity in the maintenance log — a flag opened at 1348 that afternoon, four minutes after a submission was entered into the civil accountability record, for a contract case involving the device's primary authorized user. They noted that the flag had not been escalated to a maintenance hold before the device failed.
+
+They found nothing actionable.
+
+The forty-three remained classified. Colonel Vasili Brandt, retired, was assigned a case number in a separate file.
 
 [Beat 34]
 The IRB building lobby was still processing what had happened two floors above when Bear walked through it. The desk attendant reached for something and Bear was already past her, through the main doors, and onto the front steps.

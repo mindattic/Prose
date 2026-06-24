@@ -135,6 +135,13 @@
                                                 <i class="bi bi-file-text me-1"></i>@pages pg
                                             </span>
                                         }
+                                        @{ var audioDur = audioDurations.GetValueOrDefault(s.Id); }
+                                        @if (!string.IsNullOrEmpty(audioDur))
+                                        {
+                                            <span class="text-muted" title="Estimated audio duration (word count ÷ 150 wpm)">
+                                                <i class="bi bi-headphones me-1"></i>@audioDur
+                                            </span>
+                                        }
                                         @if (s.Score.HasValue)
                                         {
                                             <span class="badge @ScoreBadge((int)Math.Round(s.Score.Value))" title="Reader score (latest run)">
@@ -399,6 +406,8 @@
     private HashSet<Guid> expandedParents = new();
     /// <summary>Estimated page count per strand id (word count / 250).</summary>
     private Dictionary<Guid, int> pageCounts = new();
+    /// <summary>Estimated audio duration per strand id, formatted as "Xh Ym" at 150 wpm.</summary>
+    private Dictionary<Guid, string> audioDurations = new();
     /// <summary>Id of the parent strand currently running a collection export. Null when idle.</summary>
     private Guid? exportingCollectionId;
     private string newTitle = "";
@@ -644,6 +653,13 @@
             .Select(g => new { StrandId = g.Key, Chars = g.Sum(x => (long)x.Text!.Length) })
             .ToDictionaryAsync(x => x.StrandId);
         pageCounts = charCounts.ToDictionary(kvp => kvp.Key, kvp => (int)(kvp.Value.Chars / 5.2 / 250));
+        audioDurations = charCounts.ToDictionary(kvp => kvp.Key, kvp =>
+        {
+            var totalMinutes = (int)(kvp.Value.Chars / 5.2 / 150);
+            return totalMinutes >= 60
+                ? $"{totalMinutes / 60}h {totalMinutes % 60:D2}m"
+                : $"{totalMinutes}m";
+        });
 
         grouped = strands.GroupBy(s => s.Kind).OrderBy(g => g.Key);
         loading = false;

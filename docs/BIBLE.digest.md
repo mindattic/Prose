@@ -119,7 +119,7 @@ narrative-law block here when stood up:**
 - **Strand** — an ordered set of beats; the unit generated, validated, reviewed, narrated, published.
 - **Collection / Series** — ordered sets of strands / of collections, on the `ParentStrandId` tree.
 - **Canon** — author-only `Strand.IsCanon` trust gate ([SS-LAW-9](#SS-§5)).
-- **E.L.F.** *(GLMZ)* — Emergent/Electronic Life Form; a sentient `Species` living in Characters.
+- **E.L.F.** *(GLMZ)* — Emergent Life Form; a sentient `Species` living in Characters.
 - **Automaton** *(GLMZ)* — non-sentient machine repo (Iowan Behemoths, robots, drones) — *not alive*.
 - **Facet** — a retired psychology-weighting system, **100% eradicated** ([§6](#SS-§6)).
 - **Voice harvest** — distilling a ≥80%-scoring strand's winning edits into the codified
@@ -134,27 +134,45 @@ narrative-law block here when stood up:**
 - done: 104  partial: 8  planned: 20  cut: 1
 
 ## Latest amendment
-## SS-A15 — Emotional Intelligence Examination system {#SS-A15}
+## SS-A21 — Schism representative-contact; the unidentified presence; adult-open neuretics {#SS-A21}
 
-**Date:** 2026-06-23 · **Author:** emotional-depth pass · **Ref:** [RFC 0010](rfc/0010-emotional-intelligence-examination.md)
+**Date:** 2026-06-24 · **Author:** srzr-schism-contact · **Ref:** [[strands/SRZR.md]],
+`memory/project_steppin_razor.md`; extends [[#SS-A18]] and `memory/project_rz_intelligences.md`,
+`memory/project_warpature.md`, `memory/project_psionics.md`
 
-The engine's emotional examination was binary (Pass/Warn/Fail at strand granularity, no character
-model). SS-A15 adds a parallel **Emotional Intelligence Examination** sub-system that scores prose
-against an 8-dimension, 0–4 rubric — per beat, character-aware (Want/Need/Wound/Flaw via a
-per-strand `CharacterEmotionalLedger`), and register-adaptive (CODA vs JOY/SORROW/Fantasy anchors).
+Established while building **Steppin Razor** (SRZR). Three new world facts, all consistent with prior
+schism canon (a schism is a 5D cross-section with "there is no inside" — [[#SS-A18]]; the far side is
+inhabited and contested, holding multiple intelligences not all of one intent — the **Lure** and the
+**Counter** are the two *confirmed* presences).
 
-**What ships:**
-- `EmotionalDepthService` + `EmotionalLedgerService` (new services mirroring `StructuralDiagnosticService`)
-- 4 new DB tables: `EmotionalExaminations`, `EmotionalDimensionResults`, `EmotionalBeatScores`,
-  `CharacterEmotionalLedgers`; new `Beat.EmotionalScore` column (float?)
-- CLI: `ss --examine-emotion --slug <slug> [--effort draft|standard|deep] [--json]`
-- MCP: `examine_emotional_depth(strandIdOrSlug, effort, maxChars)`
-- Advisory cap: at the Deep/publish gate, open blocking emotional findings (`WantNeedDivergence`,
-  `CostFeltNotAsserted`) prevent publish-readiness. Does NOT alter the 82/85 headline score math.
-- Craft authority: [CODA register](registers/CODA.md) + per-strand bibles (Want/Need/Wound/Flaw).
+**Ruling:**
 
-**Invariant added to BIBLE §10:** emotional depth score is a side-car signal with a Deep-tier
-advisory cap; it never folds into the 82/85 headline gate.
+- **Representative-contact (the mask).** A far-side intelligence cannot be perceived whole — there is
+  no form our senses can resolve. To *communicate* rather than merely loom, it can project a
+  **representative form**: a human-parseable "mask" assembled from available concepts, the way the
+  wormhole Prophets appear as borrowed faces. The form is an *approximation*, not a disguise — it
+  reaches for a concept and renders the nearest icon, so the seams show as incongruities (in SRZR: a
+  man riding a camel, in Joliet, where there are no camels). The voice through such a form is
+  **collective and non-linear** — *it / they / we* interchangeably, tenses and directions treated as
+  one ("we just arrived") — and **literally coherent inside its own logic**, never mystic fog.
+  Contact is by mask only; the thing itself never appears whole (preserves [[#SS-A18]]).
 
-<!-- Next amendment: SS-A16 -->
+- **The unidentified presence — and it stays unidentified.** The intelligence that contacts Sasha Võ
+  in SRZR (the "man on the camel") is of **unknown identity, and its identity is canon-locked as
+  unknown.** It is explicitly **not the Lure** (the child-collector "does not know what a person is";
+  this one does). Whether it is **the Counter**, a **third presence**, or something else is **not
+  established and must never be confirmed — in-world or authorially.** This does **not** raise the
+  count of *confirmed* schism intelligences above two; it adds an *unidentified* contact. Treat it
+  the way canon treats the Prisoner — **the ambiguity is the canon.** Future strands may reference
+  the contact but must not resolve what it is.
+
+- **Adult-open neuretics.** Neuretics that were **never provisioned / never locked to a fixed band**
+  can remain *open* past the juvenile growth window and keep receiving schism signal into adulthood.
+  This is **rare** — almost everyone's neuretics are provisioned and close by ~age twelve (the Lure
+  reaches children precisely because theirs are still open). It is the mechanism behind Sasha Võ's
+  sensitivity: gray-zone born, never corpo-registered, never locked, still receiving at nineteen.
+  Consistent with the established accessibility of unprovisioned neuretics (Yemina Fola, ATTE) and
+  the growth-window framing; this names the adult-persistence case.
+
+<!-- Next amendment: SS-A22 -->
 

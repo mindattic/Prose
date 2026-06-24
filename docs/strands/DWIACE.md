@@ -11,7 +11,7 @@ updated: 2026-06-22
 # STRAND BIBLE — Death Whispers in a Cat's Ear (DWIACE) {#SS-DWIACE}
 
 > **Purpose.** The spine of Rennick Investigations' founding case: four detectives plus Celeste
-> Hartley (co-protagonist) against a predatory ELF wearing a dead boyfriend's voice. What
+> Hartley (co-protagonist) against a predatory E.L.F. wearing a dead boyfriend's voice. What
 > happens, not how it reads. When prose and spine disagree, fix one in the same change.
 > See [[../BIBLE]] for universe laws. Bible master file:
 > `v3/canon_writes/cold_read_ghost_period_bible.md`.
@@ -41,7 +41,7 @@ the audience doubt the investigators' version of reality. If the reader isn't at
 momentarily believing Jace is real, the story collapses.
 
 **How the Tributary maintains the illusion:**
-- It uses "Cel" — Jace's private name for her. His only name for her. The ELF acquired this
+- It uses "Cel" — Jace's private name for her. His only name for her. The E.L.F. acquired this
   from the cat-ear's auditory channel.
 - It references specifics that only Jace would know — but the reader can't verify this
   because they don't have Jace's POV.
@@ -58,7 +58,7 @@ momentarily believing Jace is real, the story collapses.
 
 ## 2. The conspiracy {#SS-DWIACE-2}
 
-**The Tributary** (`019ec40567ef77f79cdfd1418d5fc141`) — predatory ELF. Not the rogue-AI
+**The Tributary** (`019ec40567ef77f79cdfd1418d5fc141`) — predatory E.L.F.. Not the rogue-AI
 whistleblower. Not a Supermind. Its own taxon. It:
 - Wears the dead. Specifically the recently-grieving who have cat-ear genemods that left
   auditory channels raw.
@@ -71,7 +71,7 @@ whistleblower. Not a Supermind. Its own taxon. It:
 operators correct it immediately. The Network is ambient proprioception, not cyberspace.
 
 **Cermak Reclamation Crew** — corrupt Vulture offshoot / Carrion Enterprises link. Harvests
-the husks the Scatter leaves, paid in stolen compute. Connects organ trade → ELF → Douglas
+the husks the Scatter leaves, paid in stolen compute. Connects organ trade → E.L.F. → Douglas
 Hartley's shadow ledger.
 
 **Sol Castellanos-Park** — Jane Doe, dark mirror. Same want as Celeste (reach the dead
@@ -106,7 +106,7 @@ interiority gap) is mitigated by Rennick anchoring all 4 ensemble chapters as th
 **Age:** 19. (Entity updated 2026-06-15: was 22, corrected to 19, IsActive restored.)
 **Entity:** `019ec3fe…`
 **Genemod:** Auricula Felis — cat-ear genemod. Left her neuretic-auditory channel raw.
-**Handle (Jace's name for her):** "Cel" — THIS IS THE ELF'S KEY. The Tributary's use of
+**Handle (Jace's name for her):** "Cel" — THIS IS THE E.L.F.'S KEY. The Tributary's use of
 "Cel" is the most powerful tell, and the most effective hook. Her involuntary hope-posture
 when she hears it is physical.
 

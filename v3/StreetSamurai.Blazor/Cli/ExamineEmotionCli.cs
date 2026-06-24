@@ -26,12 +26,14 @@ public static class ExamineEmotionCli
     {
         string? slug   = null;
         string  effort = "standard";
+        string? model  = null;
         bool    json   = args.Contains("--json");
 
         for (int i = 0; i < args.Length - 1; i++)
         {
             if (args[i] == "--slug")   { slug   = args[i + 1]; i++; }
             if (args[i] == "--effort") { effort = args[i + 1]; i++; }
+            if (args[i] == "--model")  { model  = args[i + 1]; i++; }
         }
 
         if (slug == null)
@@ -52,9 +54,22 @@ public static class ExamineEmotionCli
         }
 
         if (!json)
-            Console.WriteLine($"Examining '{strand.Title}' — effort={effort}…\n");
+            Console.WriteLine($"Examining '{strand.Title}' — effort={effort}{(model != null ? $", model={model}" : "")}…\n");
 
-        var result = await svc.ExamineStrandAsync(strand.Id, effort);
+        // --model retargets the scorer (the default model is rate-limit-sensitive); set it
+        // for the run and restore after, mirroring the audit-strand orchestrator.
+        SettingsService? settings = null;
+        string? savedModel = null;
+        if (model != null)
+        {
+            settings = services.GetRequiredService<SettingsService>();
+            savedModel = settings.Model;
+            settings.Model = model;
+        }
+
+        EmotionalExaminationResult result;
+        try { result = await svc.ExamineStrandAsync(strand.Id, effort); }
+        finally { if (settings != null && savedModel != null) settings.Model = savedModel; }
 
         if (json)
         {

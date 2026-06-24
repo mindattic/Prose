@@ -361,7 +361,7 @@ A prose beat/strand is **done** only when:
 - **Strand** — an ordered set of beats; the unit generated, validated, reviewed, narrated, published.
 - **Collection / Series** — ordered sets of strands / of collections, on the `ParentStrandId` tree.
 - **Canon** — author-only `Strand.IsCanon` trust gate ([SS-LAW-9](#SS-§5)).
-- **E.L.F.** *(GLMZ)* — Emergent/Electronic Life Form; a sentient `Species` living in Characters.
+- **E.L.F.** *(GLMZ)* — Emergent Life Form; a sentient `Species` living in Characters.
 - **Automaton** *(GLMZ)* — non-sentient machine repo (Iowan Behemoths, robots, drones) — *not alive*.
 - **Facet** — a retired psychology-weighting system, **100% eradicated** ([§6](#SS-§6)).
 - **Voice harvest** — distilling a ≥80%-scoring strand's winning edits into the codified

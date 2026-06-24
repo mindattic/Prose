@@ -97,10 +97,10 @@ public class BeatGeneratorService
                 await using var db = await dbFactory.CreateDbContextAsync(ct);
                 var s = await db.Strands.AsNoTracking()
                     .Where(x => x.Id == context.StrandId)
-                    .Select(x => new { x.PreviousStrandId })
+                    .Select(x => new { x.PreviousStrandId, x.UniverseId })
                     .FirstOrDefaultAsync(ct);
                 if (s != null)
-                    commandmentBlock = storyAudit.BuildCommandmentContext(s.PreviousStrandId.HasValue);
+                    commandmentBlock = storyAudit.BuildCommandmentContext(s.PreviousStrandId.HasValue, s.UniverseId);
             }
             catch { /* non-blocking */ }
         }
@@ -128,6 +128,7 @@ public class BeatGeneratorService
             WORLD CONTEXT (characters, locations, equipment, relationships — use as canon facts):
             {context.RelationshipContext}
             {(context.XRayContext.Length > 0 ? "\nSCENE X-RAY — entities on screen RIGHT NOW. Every character below speaks in THEIR OWN documented register, not the narrator's:\n" + context.XRayContext : "")}
+            {(context.EntityStackContext.Length > 0 ? "\nENTITY WORKING MEMORY — proper nouns active in this story thread and their canon facts. Treat these as hard constraints; do not contradict them:\n" + context.EntityStackContext : "")}
             {(context.LocationContext.Length > 0 ? "\nADDITIONAL LOCATION DETAIL:\n" + context.LocationContext : "")}{dialogueBlock}{anchorBlock}{plantBlock}{commandmentBlock}{pacingBlock}{structuralBlock}
             """;
 
@@ -792,6 +793,14 @@ public record BeatContext
     public string StructuralRoleGuidance { get; init; } = "";
     /// <summary>Detected beat mode (Combat/Narrative/EmotionalClimax/etc.) from BeatModeDetector.</summary>
     public BeatMode DetectedMode { get; init; } = BeatMode.Narrative;
+
+    /// <summary>
+    /// Self-referential entity context stack (EntityContextService): the LRU-managed web of
+    /// entities currently active in working memory — direct mentions at depth 0, semantic
+    /// neighbors at depth 1–2. Empty when EntityContextService is not wired or StrandId is empty.
+    /// Injected by ProseWriterRouter alongside XRayContext.
+    /// </summary>
+    public string EntityStackContext { get; init; } = "";
 }
 
 /// <summary>

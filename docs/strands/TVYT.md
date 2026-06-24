@@ -1,253 +1,208 @@
 ---
+codex: 1
+project: StreetSamurai
 code: TVYT
-title: The Voice You Trust
-universe: GLMZ
-kind: book
-status: in-progress
-created: 2026-06-22
-updated: 2026-06-22
+layer: strand-bible
+universe: glmz
+status: design-locked (prose pending)
+updated: 2026-06-23
 amendment: SS-A13
+supersedes: old-tvyt-189-beat-strand
 ---
 
-# TVYT — The Voice You Trust
+# STRAND BIBLE — The Voice You Trust (TVYT) {#SS-TVYT}
 
-> Before she was Sable.
+> **Purpose.** Rhea Adeyemi-Foster becomes Sable. This is how it happened. Dual-POV novel
+> built around Orison Neuretics' MNEMOSYNC subconscious influence trial. See [[../BIBLE]] for
+> universe laws; [[../MNEMO]] for the MNEMOSYNC technology in the Mnemosync strand.
 
-## Premise
+## 0. What this story IS {#SS-TVYT-0}
 
-Orison Neuretics is alpha-testing **MNEMOSYNC** — a subconscious influence technology that plants
-suggestive memories indistinguishable from the subject's own thoughts. In aggregate deployment,
-the background signal is ambient noise: waves, fireflies, the crackle of a wood fire. In a properly
-flagged subject during the trial phase, the signal is damped below the threshold of conscious notice.
+A dual-POV investigation novel structured around an Orison Neuretics alpha trial that plants
+suggestive memories the subjects read as their own thoughts. When two suppression flags flip
+simultaneously, two enrolled subjects become coupled oscillators — receiving each other's
+authentic memories through the same confabulation pathway the planted content uses.
 
-When two subjects have their suppression flags flipped simultaneously — accidentally, or are they? —
-they become coupled oscillators. Each amplifies the other's signal. What should be background noise
-becomes a voice that belongs to someone else.
+The two subjects:
+- **Rhea Adeyemi-Foster** — minor news broadcaster, Tessera Media Group → absorbed into Orison
+  Communications Division (Orison acquired Tessera). Visible, credible, trusted. *She is The
+  Voice You Trust.* Dispatching her creates a bigger story than the one Orison is trying to kill.
+- **Caius Nwosu** — Gray Zone data courier, Z4/Glooms-adjacent. No corpo affiliation, no public
+  record. Easy to dispatch. Operational terminology: *asset retirement.*
 
-A minor news broadcaster named **Rhea Adeyemi-Foster** begins bleeding into a Gray Zone data courier
-named **Caius Nwosu**. He begins bleeding into her.
+Orison runs two simultaneous tracks: dispatch Caius (easy); neutralize Rhea (complicated).
+Both tracks converge in Ch13. The story ends with Rhea becoming Sable (Ch14) and Caius going dark.
 
-Orison needs to bury this before the bleed surfaces what the MNEMOSYNC trial actually is. The courier
-is easy: a Gray Zone rat, no visibility, no protection, no official record. Dispatching him is an
-operational inconvenience, not a liability. The broadcaster is a different problem: she is The Voice
-You Trust. If she disappears or surfaces damaged, she becomes a bigger story than the one Orison is
-trying to kill.
-
----
-
-## The Bleed Rules (Anti-Sense8 — LOCKED)
-
-These rules are structural invariants. Do not drift.
-
-**What bleeds:** memory and sensory texture. The color of someone else's morning. The feel of a
-route that isn't yours. A script cadence arriving in the skull of someone who has never read one.
-The bleed is impressionistic, partial, and delayed — it arrives displaced in time, minutes to hours
-after the originating experience. It is not telepathy. It does not work in real-time.
-
-**What does not bleed:** skill. Rhea never moves like a courier. Caius never speaks like a
-broadcaster. Neither inherits the other's competence. The bleed gives each of them *context* —
-the lived texture of a world they have never been in — but context is not capability.
-
-**How they help each other (using their own skills):** Rhea, having felt courier-route paranoia
-bleed into her, notices corporate surveillance differently — through the lens of someone who has
-spent years evading it. She uses this not to run routes, but to read rooms differently. Caius,
-having heard broadcast cadence in his head, develops corpo-literacy he never had — he can parse
-the language of an official dismissal, the grammar of a cover story. He uses this not to write
-communications, but to buy time with the right words when Orison moves to dispatch him.
-
-**The bleed is not a superpower.** The bleed is a symptom and a liability. Both characters initially
-believe they are having a breakdown. The story begins in bewilderment, not awakening.
+**THIS IS NOT:**
+- A romance.
+- A Kyle story. Kyle does not appear.
+- A MNEMOSYNC-means-mind-control thriller. The mechanism is memory-adjacent, not mind-override.
+- A story where the protagonists win. Orison wins. But the flag-flip mystery is planted.
 
 ---
 
-## Characters
+## 1. The MNEMOSYNC mechanism (LOCKED) {#SS-TVYT-1}
 
-### Rhea Adeyemi-Foster — The Broadcaster
+MNEMOSYNC couples to the confabulation pathway — the same neural channel the brain uses to
+construct narrative memory from experience. The ocular anchor is seeded via retinal stimulation
+during a "wellness screening" both subjects underwent within the same 48-hour window.
 
-- **Role:** Minor news broadcaster, Tessera Media Group → absorbed into Orison Communications
-  Division after Orison's acquisition of Tessera
-- **Heritage:** Yoruba/Scottish (the grandmother who won on aromatics; the mother who won on starch)
-- **Signature:** "The Voice You Trust" — her professional identity before it was anyone else's label
-- **Will:** To keep the facts correct. To not be managed.
-- **Flaw:** She has been managed for years and called it competence. She is very good at not seeing
-  the thing she does not want to see until she is physically unable to look away.
-- **Voice register:** Controlled, measured, trained. Breath landing on the noun. She speaks the way
-  she was taught to make people believe her — which is different from speaking truthfully.
-- **Physical note:** Breast-pocket journalist reflex — she memorizes things she cannot write down.
-  She walked out of Orison with the MNEMOSYNC trial parameters encoded in her grandmother's book cipher.
+**What the trial does:** Plants suggestive memories the subjects read as their own thoughts. In
+aggregate deployment, the signal is ambient noise below conscious notice. A feature flag keeps
+any individual from surfacing a clear signal during the trial.
 
-### Caius Nwosu — The Courier
+**When two flags flip simultaneously:** The two subjects become coupled oscillators. They begin
+bleeding into each other — receiving the other's authentic memories and sensory impressions
+through the same confabulation pathway the planted content uses.
 
-- **Role:** Freelance data courier, Gray Zone, Z4/Glooms-adjacent
-- **Heritage:** Igbo/North African (late 20s, Ubiquitous Diaspora)
-- **Signature:** Moves through the city like water through pipe — minimum friction, maximum flow,
-  invisible in motion
-- **Will:** To stay alive. To not be owned.
-- **Flaw:** He believes his independence is real. It is not. He is a different kind of managed — by
-  the market for his invisibility, by the clients who use it, by the city that needs people like him
-  to move the things it cannot officially carry.
-- **Voice register:** Spare. Tactical. He uses words the way he uses cover — enough and no more.
-  He has no interest in being heard beyond the transaction at hand.
-- **Physical note:** Routes are not memorized — they are embodied. He runs a new route three times
-  before he trusts it. The bleed corrupts this: he starts running other people's corridors.
+**The bleed rules (LOCKED — anti-Sense8):** The bleed carries **memory and sensory texture**,
+not skill. Neither character inherits the other's competence. What bleeds is *context*: Rhea
+gets route-paranoia and gray-zone pattern recognition; Caius gets corpo-spatial memory and
+broadcast grammar. Each uses this context through their own existing abilities. The bleed is a
+symptom and a liability, not an awakening. Both initially believe they are having a breakdown.
 
-### Orison Neuretics (Antagonist CorpoNation)
+**Termination protocol (both subjects):** Destroy the retinal anchor; sever the bleed; suppress
+the memory of the trial. This is the same compound Caius saw referenced on a sealed Orison Health
+Sciences server farm run. This is the same procedure Axiom/Orison uses as a "data-hygiene" clause
+in Rhea's severance agreement.
 
-Orison runs two tracks simultaneously:
-
-**Track A — Dispatch Caius.** Easy. He is a Gray Zone asset with no corpo affiliation, no public
-record, no one to ask questions. One operations order. Operational terminology: *asset retirement.*
-
-**Track B — Neutralize Rhea.** Complicated. Orison's approach is patient and clinical: first,
-build a plausible instability narrative using the bleed symptoms themselves as evidence (erratic
-behavior on air, memory lapses, distracted delivery). Once the narrative is established, the
-discrediting is pre-built. Then the termination conversation happens in a room with two people
-and a document she is asked to sign.
-
-The irony of Track B: the instability is real. Orison planted it. The evidence they are using to
-discredit Rhea is evidence of their own experiment working.
-
-### Dr. Kovalenko-Hassan — The Underground Technician
-
-- Runs the Circuit clinic, an unmarked basement accessible by transit-token referral only
-- Provides off-network ocular implants: the **Aurum Spec-7** (manual aperture, no networked firmware,
-  no biometric handshake; machined to Helix Biosystems tolerance)
-- Does not ask about the histories of her patients. Does not narrate what she sees.
-- Voice: level, clean, unhurried. The voice of a woman who has never needed to raise it.
-- She has seen this week's version of Rhea seven times before. The compound is a derivative of
-  a known Orison precursor agent. She knows the name. She does not say it to patients.
+**The flag-flip mystery is NOT resolved in this book.** It is planted.
 
 ---
 
-## The MNEMOSYNC Mechanism (World Canon — LOCKED)
+## 2. The antagonist logic {#SS-TVYT-2}
 
-MNEMOSYNC couples to the subject's confabulation pathways — the region of the brain that fills
-memory gaps with plausible content. In properly-flagged subjects, the planted signal is
-indistinguishable from natural confabulation noise; the subject "decides" things the signal
-suggested and believes the decision was their own.
+**Track A — Caius:** No corpo affiliation, no public record. Easy to retire. Operational
+terminology: *asset retirement.* The track that should be simple becomes complicated because
+the bleed gives Caius the corpo-spatial language and broadcast grammar to buy time.
 
-**The aggregate effect:** In a properly-damped batch deployment, the voices are muffled to ambient
-noise — the crashing of waves, the sound of fireflies, a wood fire crackling. No individual signal
-discernible. Effective mass influence without individual exposure.
+**Track B — Rhea:** She is visible, trusted, and currently Orison's most valuable credibility
+asset. If she disappears or surfaces damaged, she becomes a larger story than the one Orison is
+trying to bury. The approach is patient and clinical: build an instability narrative using the
+bleed's own symptoms as evidence, then let the discrediting do the work.
 
-**The coupled-oscillator fault:** When two suppression flags fail simultaneously, the two subjects
-become coupled. Each amplifies the other's residual signal above the noise floor. The memories
-they begin receiving are not Orison's planted content — they are each other's authentic memories,
-leaking through the same pathway the planted content uses.
-
-**The ocular anchor:** The MNEMOSYNC trial was seeded through retinal stimulation during a routine
-"wellness screening" — a Tier-managed healthcare service both subjects underwent within the same
-48-hour window. The experiment is anchored to the retinal tissue. Termination protocol for both
-subjects: destroy the retinal anchor, sever the bleed, suppress the memory of the trial.
-
-This is why Orison's "data-hygiene" severance procedure is the same compound Caius sees referenced
-in a job he ran for an Orison Health Sciences subsidiary. The procedure is not punitive. It is
-technical cleanup.
-
-**The Sable connection:** The Aurum Spec-7 eyes Dr. Kovalenko-Hassan provides have no optical
-firmware, no biometric handshake, no retinal-tissue anchor point. Orison cannot reach Rhea through
-the system they built to control her. This is why she becomes Sable: not because of what they took
-from her, but because of what cannot be taken from the replacement.
+**The irony of Track B:** the instability is real. Orison planted it. The evidence being
+assembled to discredit Rhea is evidence of their own protocol working.
 
 ---
 
-## The Flag-Flip Mystery
+## 3. Character rules {#SS-TVYT-3}
 
-Was it accidental?
+### Rhea Adeyemi-Foster (POV — Rhea chapters)
 
-Orison's internal investigation concludes: *probable system anomaly, benign origin.* The investigation
-is cursory. The anomaly explanation is bureaucratically convenient.
+- Broadcaster and journalist, Tessera Media Group → Orison Communications Division (acquired
+  2223). The acquisition was described as "strategic alignment." She stayed.
+- The "data-hygiene" severance clause — the retinal termination procedure — is buried in her
+  contract. She has not read that section carefully.
+- She is The Voice You Trust: methodical whistleblowing instinct, the broadcaster's measured
+  delivery, a career built on being believed.
+- **She becomes Sable by Ch14.** The steps between arrival and Sable are this story.
+- Voice: careful, incremental, trained to be believed. She is not afraid; she is *meticulous*.
+  When she is afraid, her instinct is to document.
 
-The author truth is not resolved in this book. The question is planted and left open for a later
-strand to carry. What is established: someone on the MNEMOSYNC development team filed an internal
-complaint about the aggregate deployment parameters three weeks before the flag flip. The complaint
-is on record. The record is sealed. Caius ran a job to that sealed server farm six months ago without
-knowing what was on it.
+### Caius Nwosu (POV — Caius chapters)
 
----
+- Gray Zone data courier, Z4/Glooms-adjacent. Japanese-Nigerian heritage (Ubiquitous Diaspora).
+- No corpo affiliation, no public record. Professional identity: reliable, sealed, invisible.
+- His bleed from Rhea: corpo-spatial memory and broadcast grammar. He uses this to survive
+  encounters that should end him — walking into a corpo space and speaking their language
+  accurately without having learned it.
+- Voice: sparse, navigational, physically grounded. He moves first; he thinks in motion.
+  The bleed's arrival as language (structured sentences, the broadcaster's cadence) is
+  disorienting to him — he doesn't know why he is suddenly thinking in paragraphs.
 
-## Beat Spine (14-chapter novel structure)
+### Supporting characters (from old TVYT, preserved)
 
-| Ch | POV | Title | Story beat |
-|---|---|---|---|
-| 1 | Rhea | The Booth | Broadcast morning; the Tessera acquisition context; the weight of being heard; bad coffee = news |
-| 2 | Caius | The Run | A midnight data drop; the city from below; Z4 at 0300; the route in the body |
-| 3 | Rhea | The Wrong Memory | First bleed — a route she doesn't know arrives while she's reading a script; she thinks it's exhaustion |
-| 4 | Caius | The Wrong Voice | First bleed — broadcast cadence in his skull mid-run; he misses a handoff; thinks it's equipment |
-| — | — | [Intercut: cold] | Orison technical layer — two nodes in the batch have gone active; asset manager initiates review |
-| 5 | Rhea | On Air | The bleed amplifies; she says something in a live segment she has no source for; she hears it as it exits her mouth |
-| 6 | Caius | Corridor Logic | Route-memory corrupted; corpo-corridor instinct fires in a freight alley; close call; he nearly dies on someone else's reflex |
-| 7 | Both | Two Tracks | Orison moves: Track A (dispatch order for Caius); Track B (first Orison handler contacts Rhea through her director) |
-| 8 | Caius | The Broadcast Signature | Tracking the leak; he finds Rhea through her voice — not because she found him, but because her voice has been in his head for weeks |
-| 9 | Both | The Dead Drop | Indirect first contact; a message using language only the other person could have left; a working relationship begins |
-| 10 | Rhea | The Instability Narrative | Orison uses the bleed symptoms as evidence against her; her director confronts her; the coffee is good |
-| 11 | Caius | Corpo-Literacy | Almost dispatched; uses the broadcast grammar bled into him to buy 48 hours; sounds like a data-transfer dispute |
-| 12 | Rhea | The Insurance Package | She builds the dead drop — an information archive designed to be unkillable; uses her broadcaster craft as a weapon |
-| 13 | Both | Simultaneous Close | Orison moves on both at once; the story's hinge; the two tracks converge |
-| 14 | Rhea | Sable | The blinding; the transit token; the Circuit; Dr. Kovalenko-Hassan; the Aurum Spec-7; the corner of Armitage and Milwaukee |
+- **Beatrix Vance** — Internal Affairs; the confrontation scene survives.
+- **Dr. Kovalenko-Hassan** — Circuit clinic, Aurum Spec-7 provider, underground technician.
+- **Mira Quintero** — Z3 community organizer; MNEMOSYNC trial subject who voted to sell her
+  Z3 community land and cannot explain why. The moral anchor.
 
 ---
 
-## Source Material from Old TVYT (Absorbed — DO NOT PRESERVE THE OLD STRAND)
+## 4. Narrative locks {#SS-TVYT-4}
 
-The following material from the original `the_voice_you_trust` strand (019EA026) is absorbed
-into this design. The old strand's beats are raw material; they are not canon in their current form.
-
-**Reusable as-is (with Orison substituted for Axiom):**
-- The broadcast booth opening (beats 100–1800): Rhea's professional world, the acquisition,
-  the bad coffee as information. Re-anchor to Orison Communications Division.
-- The methodical whistleblowing approach: reading things she shouldn't, the cipher, the safe-deposit
-  box. This arc is preserved — but the *why* is now the MNEMOSYNC discovery, not OPTIC-7.
-- The discrediting/interrogation scene (the eighth-floor conference room, Beatrix Vance).
-- The data-hygiene termination clause — the same language, now understood as MNEMOSYNC termination.
-- The blinding procedure, the Circuit, Dr. Kovalenko-Hassan, the Aurum Spec-7 / the leash choice,
-  the Sable ending.
-
-**Reusable with modification:**
-- Mira Quintero: she was an OPTIC-7 victim in the old story. In the new story, she is a MNEMOSYNC
-  trial subject — one of the aggregate batch who made a decision she now cannot explain (voted to
-  sell her Z3 community land to Orison; cannot account for why; her neighbors lost their homes).
-  She is Rhea's moral anchor. "What did they do to Mira Quintero" is the question that won't let go.
-- The Z3 deployment: same zone, same corpo absorption pattern — but the weapon is MNEMOSYNC, not
-  OPTIC-7. The Z3 community land transfer is the first evidence that the alpha trial worked as
-  intended on an aggregate level. The "four who did not recover" in the old story are here the
-  four Z3 residents who filed formal objections *after* the transfer and could not explain why they
-  had signed in favor of it.
-
-**Not reusable (old-story-specific):**
-- The OPTIC-7 technical document / lot numbers / Aurochs hospital records as the central reveal.
-  The new central reveal is the MNEMOSYNC trial parameters Rhea discovers through Caius's bleed
-  memory of the sealed server farm run.
-- Joaquim (the credentialed analyst whose clipboard she reads). Can be replaced by a scene where
-  she notices an anomaly in an Orison behavioral analytics report she is given to "narrativize."
+1. **The bleed carries context, not skill.** Neither Rhea nor Caius gains the other's
+   competence. What transfers is sensory memory and the cognitive grammar that comes with it.
+2. **Both tracks converge in Ch13.** Orison's easy kill and its complicated kill meet.
+3. **Rhea becomes Sable in Ch14.** This is the ending. Not a cliffhanger — an arrival.
+4. **Caius goes dark.** His fate is not resolved with triumph or death on the page. He goes
+   dark: his route, his record, his signal. Off-network is the only safe state he can find.
+5. **The flag-flip mystery is planted, not solved.** What caused two suppression flags to flip
+   simultaneously is the unanswered question this book leaves in the reader's hands.
+6. **Mira Quintero survives as moral anchor.** She signed the form she should never have
+   signed and cannot explain why. She is proof the trial is real before Rhea has evidence.
+7. **The Aurum Spec-7 leash/choice scene (from old TVYT) is preserved.** The specific
+   mechanics: off-network ocular implant, no firmware handshake, the choice it forces.
+8. **No in-person Axiom/Orison executives as named antagonists before Ch13.** The danger
+   is institutional before it is personal.
 
 ---
 
-## Entities to Seed (Pre-Prose Mandatory)
+## 5. What survives from the old TVYT strand {#SS-TVYT-5}
+
+The 189-beat old strand (the-voice-you-trust `019EA026`) is absorbed as raw source material.
+The old strand will be deleted once the new book structure is fully seeded.
+
+**Surviving elements:**
+- Rhea character, her broadcast booth world, the corpo-absorption arc
+- The methodical whistleblowing instinct
+- The discrediting and interrogation scenes
+- The Beatrix Vance / Internal Affairs confrontation
+- The OPTIC-7 → MNEMOSYNC blinding procedure (the retinal termination renamed to its mechanism)
+- Dr. Kovalenko-Hassan and the Circuit clinic
+- The Aurum Spec-7 leash/choice scene
+- The Sable ending
+
+**What changed:** The central revelation mechanism shifts from discovering an OPTIC-7 technical
+document to receiving a bleed-memory from Caius's server farm run — Orison's smoking gun is
+written into the protagonist's daily experience, not filed in a drawer.
+
+---
+
+## 6. New entities to seed {#SS-TVYT-6}
 
 | Entity | Type | Notes |
 |---|---|---|
-| Rhea Adeyemi-Foster | character | GLMZ; Tessera → Orison Communications; voice broadcaster; will become Sable |
-| Caius Nwosu | character | GLMZ; Gray Zone data courier; Z4/Glooms-adjacent; Igbo/North African |
-| MNEMOSYNC | technology | Orison Neuretics project; subconscious influence via confabulation-pathway coupling |
-| Dr. Kovalenko-Hassan | character | GLMZ; Circuit clinic; Aurum Spec-7 implants; underground technician |
-| Orison Communications Division | organization | GLMZ; Orison Neuretics subsidiary; absorbed Tessera Media Group |
-| The Circuit | place | GLMZ; underground off-network clinic; transit-token referral only |
-| Mira Quintero | character | GLMZ; Z3 community organizer; retired transit dispatcher; MNEMOSYNC trial subject |
-| Aurum Spec-7 | technology | GLMZ; off-network ocular implant; Helix Biosystems tolerance; no firmware handshake |
+| Rhea Adeyemi-Foster | character | TVYT protagonist; Tessera → Orison Communications; becomes Sable |
+| Caius Nwosu | character | TVYT second protagonist; Gray Zone courier; Z4/Glooms; Japanese-Nigerian |
+| MNEMOSYNC | technology | Orison Neuretics project; confabulation-pathway coupling |
+| Dr. Kovalenko-Hassan | character | Circuit clinic; Aurum Spec-7 provider; underground technician |
+| Orison Communications Division | organization | Orison Neuretics subsidiary; acquired Tessera Media Group |
+| The Circuit | place | Underground off-network clinic; transit-token referral only |
+| Mira Quintero | character | Z3 community organizer; MNEMOSYNC trial subject; moral anchor |
+| Aurum Spec-7 | technology | Off-network ocular implant; no firmware handshake |
 
 ---
 
-## Locked Rules
+## 7. Register and voice {#SS-TVYT-7}
 
-- The bleed is asymmetric: what Rhea bleeds into Caius is professional language and corpo-spatial
-  memory. What Caius bleeds into Rhea is route-paranoia and gray-zone pattern recognition. They
-  receive different things because they live differently.
-- Caius does NOT die. He goes dark. He burns his courier identity. He survives — but barely, and
-  with nothing he started with except his ability to move.
-- Rhea becomes Sable at the end of Ch14. The reader has known this since the epigraph. The weight
-  of the story is not whether she becomes Sable, but what it costs.
-- Orison is not incompetent. The two-track plan is reasonable. They are beaten not by the protagonists
-  being clever, but by Rhea's dead drop surviving her and Caius's ability to vanish being more
-  complete than Orison modeled.
-- The flag-flip mystery is not resolved in this book. It is planted.
+**The structural stakes:** Orison's two-track problem means the reader sees both the easy kill
+and the complicated one happening simultaneously. Caius's perspective gives the city-from-below
+view; his bleed-contamination of Rhea's instincts gives her the tools to survive without turning
+her into a Gray Zone operative.
+
+**Rhea chapters:** measured, careful, documentary. Precision is her courage. When she is
+frightened, the writing gets more exact.
+
+**Caius chapters:** sparse, navigational, motion-first. The bleed's language arriving as
+intrusive grammar — structured sentences, the broadcaster's cadence — reads as wrong-channel
+static that he eventually learns to use.
+
+**Tonal contrast with MNEMO:** Both books involve bleed. MNEMOSYNC/MNEMO is the Amara/Seto
+story (suppressed meaning, quiet horror). TVYT is the Rhea/Caius story (the path to Sable,
+institutional threat, corpo-track vs. gray-zone-track). Different characters, different mechanism,
+same Orison.
+
+---
+
+## 8. User stories {#SS-TVYT-8}
+
+- **TVYT-US-1 ⬜** New entities seeded in DB (Rhea, Caius, MNEMOSYNC, Dr. Kovalenko-Hassan,
+  Orison Communications Division, The Circuit, Mira Quintero, Aurum Spec-7).
+- **TVYT-US-2 ⬜** Book strand seeded (`kind=book`, code=TVYT, ~14 chapters).
+- **TVYT-US-3 ⬜** Chapter beats seeded (Sonnet outlines per chapter).
+- **TVYT-US-4 ⬜** Prose written: Ch1–7 (Sonnet draft → Opus polish); standalone ≥ 82%.
+- **TVYT-US-5 ⬜** Prose written: Ch8–14 (including Sable ending); standalone ≥ 82%.
+- **TVYT-US-6 ⬜** Cumulative review ≥ 85%.
+- **TVYT-US-7 ⬜** Docx exported.

@@ -479,6 +479,7 @@ public class StreetSamuraiDbContext : DbContext
         // ── Workflow monitoring ──────────────────────────────────────────────
         b.Entity<BeatServiceLog>(e =>
         {
+            e.ToTable("BeatServiceLog");
             e.HasKey(x => x.Id);
             e.Property(x => x.Service).HasMaxLength(100).IsRequired();
             e.HasIndex(x => x.StrandId);
@@ -488,6 +489,7 @@ public class StreetSamuraiDbContext : DbContext
         });
         b.Entity<BeatModeLog>(e =>
         {
+            e.ToTable("BeatModeLog");
             e.HasKey(x => x.BeatId);
             e.Property(x => x.Mode).HasMaxLength(50).IsRequired();
             e.Property(x => x.DetectionMethod).HasMaxLength(50).IsRequired();
