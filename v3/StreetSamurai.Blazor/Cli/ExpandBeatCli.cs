@@ -14,11 +14,15 @@ namespace StreetSamurai.Blazor.Cli;
 /// Beats that already have prose are skipped unless <c>--force</c> is set.
 ///
 /// Args (one of --slug / --id required):
-///   --slug &lt;slug&gt;     Strand slug.
-///   --id &lt;guid|prefix&gt;  Strand id; a unique prefix is enough.
-///   --all              Expand all planned (no prose) beats. Default when no --beat is given.
-///   --beat &lt;beatId&gt;   Expand one specific beat by its UUID.
-///   --force            Re-expand beats that already have prose (overwrites).
+///   --slug &lt;slug&gt;          Strand slug.
+///   --id &lt;guid|prefix&gt;     Strand id; a unique prefix is enough.
+///   --all                  Expand all planned (no prose) beats. Default when no --beat is given.
+///   --beat &lt;beatId&gt;        Expand one specific beat by its UUID.
+///   --force                Re-expand beats that already have prose (overwrites).
+///   --local                Route generation to the configured local LLM (LocalLlmBaseUrl in settings).
+///   --local-url &lt;url&gt;      Override the local endpoint URL for this run only (implies --local).
+///   --local-key &lt;key&gt;      Override the local API/bearer key for this run only.
+///   --local-model &lt;tag&gt;    Override the local model tag for this run only.
 ///
 /// Exit codes:
 ///   0 — at least one beat expanded successfully.
@@ -29,15 +33,20 @@ public static class ExpandBeatCli
     public static async Task<int> RunAsync(string[] args, IServiceProvider services)
     {
         string? slug = null, id = null, beatId = null;
+        string? localUrl = null, localKey = null, localModel = null;
         bool force = args.Contains("--force");
+        bool useLocal = args.Contains("--local");
 
         for (int i = 0; i < args.Length; i++)
         {
             switch (args[i])
             {
-                case "--slug": if (i + 1 < args.Length) slug   = args[++i]; break;
-                case "--id":   if (i + 1 < args.Length) id     = args[++i]; break;
-                case "--beat": if (i + 1 < args.Length) beatId = args[++i]; break;
+                case "--slug":        if (i + 1 < args.Length) slug       = args[++i]; break;
+                case "--id":          if (i + 1 < args.Length) id         = args[++i]; break;
+                case "--beat":        if (i + 1 < args.Length) beatId     = args[++i]; break;
+                case "--local-url":   if (i + 1 < args.Length) { localUrl   = args[++i]; useLocal = true; } break;
+                case "--local-key":   if (i + 1 < args.Length) localKey   = args[++i]; break;
+                case "--local-model": if (i + 1 < args.Length) localModel = args[++i]; break;
             }
         }
 
@@ -52,6 +61,15 @@ public static class ExpandBeatCli
         var beatGen   = services.GetRequiredService<BeatGeneratorService>();
         var workbench = services.GetRequiredService<StrandWorkbenchService>();
         var canonDb   = services.GetRequiredService<IDatabaseService>();
+
+        // Wire local LLM for this run if requested (ephemeral — not persisted to settings)
+        if (useLocal)
+        {
+            var localSvc = services.GetRequiredService<LocalLlmService>();
+            localSvc.ConfigureForRun(localUrl, localKey, localModel);
+            services.GetRequiredService<LlmRouter>().SetRunProvider("local");
+            Console.WriteLine($"[expand-beat] Using local LLM: {localUrl ?? services.GetRequiredService<SettingsService>().LocalLlmBaseUrl}");
+        }
 
         // Resolve strand
         Guid strandId; string strandSlug, strandTitle;

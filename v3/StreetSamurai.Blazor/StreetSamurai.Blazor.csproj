@@ -22,6 +22,14 @@
     <BlazorDisableThrowNavigationException>true</BlazorDisableThrowNavigationException>
   </PropertyGroup>
 
+  <!-- CLI builds go to a separate output dir so the running server never blocks a rebuild.
+       Pass -p:CliRun=true (or set env var CliRun=true) for any dotnet run / dotnet build
+       invoked as a CLI command rather than the web host. -->
+  <PropertyGroup Condition="'$(CliRun)' == 'true'">
+    <OutputPath>bin\$(Configuration)\cli\$(TargetFramework)\</OutputPath>
+    <AppendTargetFrameworkToOutputPath>false</AppendTargetFrameworkToOutputPath>
+  </PropertyGroup>
+
   <!-- Include world data in published output so Azure deployment is self-contained.
        STREETSAMURAI_DATA_ROOT env var overrides this path (set in Azure App Configuration). -->
   <ItemGroup>

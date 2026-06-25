@@ -457,6 +457,18 @@ public class SettingsService : IDisposable
     /// Cloud reviews ignore this. Default 16384 — raise it to match a model rebuilt with a larger
     /// num_ctx, and big strands will segment into fewer, larger chunks.</summary>
     public int LocalReviewContextTokens { get => data.LocalReviewContextTokens; set { data.LocalReviewContextTokens = Math.Max(4096, value); ScheduleSave(); } }
+
+    // ── Local-LLM generation (--local prose) ─────────────────────────────────────
+    /// <summary>OpenAI-compatible chat-completions endpoint for local prose generation
+    /// (Ollama, vLLM, RunPod, etc.). Used by <c>--local</c> beat/strand generation;
+    /// cloud generation never reads it. Empty = local prose generation disabled.</summary>
+    public string LocalLlmBaseUrl { get => data.LocalLlmBaseUrl; set { data.LocalLlmBaseUrl = value; ScheduleSave(); } }
+    /// <summary>Bearer token for the local generation endpoint. Empty for bare localhost Ollama
+    /// (which ignores auth); set to the pod token when pointing at a secured remote GPU (RunPod/vLLM).</summary>
+    public string LocalLlmApiKey { get => data.LocalLlmApiKey; set { data.LocalLlmApiKey = value; ScheduleSave(); } }
+    /// <summary>Model tag used for local prose generation (e.g. "qwen2.5-32b").</summary>
+    public string LocalLlmModel { get => data.LocalLlmModel; set { data.LocalLlmModel = value; ScheduleSave(); } }
+
     /// <summary>vast.ai REST API key for <c>ss --gpu</c> (start/stop/destroy the rented review box).
     /// Read straight from the shared MindAttic credential vault — <c>VAST_API_KEY</c> env, then
     /// %APPDATA%/MindAttic/LLM/<c>vast.json</c>, then the <c>vast</c> entry in <c>providers.json</c>,
@@ -786,6 +798,10 @@ public class SettingsService : IDisposable
         /// <summary>Local model context window in tokens (num_ctx) — used to size review segments to fit.</summary>
         public int LocalReviewContextTokens { get; set; } = 131072;
         public int LocalReviewMaxConcurrency { get; set; } = 2;
+        // Local-LLM generation (--local prose) defaults
+        public string LocalLlmBaseUrl { get; set; } = "";
+        public string LocalLlmApiKey { get; set; } = "";
+        public string LocalLlmModel { get; set; } = "qwen2.5-32b";
         /// <summary>When false, ContinuousQualityService does not fire on beat save. Reviews must be called manually.</summary>
         public bool ReviewAutoRunEnabled { get; set; } = true;
         /// <summary>When true, WorldTickService is active — advances story clock + writes EntityStateEvents per tick.</summary>

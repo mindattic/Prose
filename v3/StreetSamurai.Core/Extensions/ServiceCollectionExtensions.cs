@@ -520,10 +520,12 @@ public static class ServiceCollectionExtensions
         // socket-stability tuning (PooledConnectionLifetime, etc.) lives there.
         services.AddSingleton<ClaudeService>();
         services.AddSingleton<OpenAiService>();
+        services.AddSingleton<LocalLlmService>();
         services.AddSingleton<DallEService>();
         services.AddSingleton<LlmRouter>(sp => new LlmRouter(
             sp.GetRequiredService<ClaudeService>(),
             sp.GetRequiredService<OpenAiService>(),
+            sp.GetRequiredService<LocalLlmService>(),
             sp.GetRequiredService<SettingsService>(),
             sp.GetRequiredService<LastPromptStore>(),
             sp.GetRequiredService<ILogger<LlmRouter>>()));
