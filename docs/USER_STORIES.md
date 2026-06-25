@@ -4,7 +4,7 @@ project: StreetSamurai
 code: SS
 layer: stories
 status: living
-updated: 2026-06-15
+updated: 2026-06-25
 ---
 
 # StreetSamurai — User Stories
@@ -275,6 +275,22 @@ updated: 2026-06-15
   - **H5c ⬜** Book strand `UNDR` (kind=book) created with §7 spine as seed; chapter sub-strands parented.
   - **H5d ⬜** Opening chapters drafted (Sonnet→Opus), reflowed, docx exported.
   - **H5e ⬜** Standalone review ≥82%; register exemplars harvested.
+
+- **SS-US-H6 ⬜** As the author, *Magenta & Gunmetal* (MGUN) is the quintessential GLMZ "run" story: five freelancers — Rook (planner), Lace (social engineer), Boiler (demo), Vox (netrunner), Scout (QCE rider) — accept a corporate extraction job against Axiom BioNanics, discover the target hired them first via a cutout, survive a wet-squad pursuit, and end on a storm-lashed Lake Platform in a True Lies / Die Hard finale where Rook jumps off the deck onto a strafing VTOL. Full arc, locks, register (HEIST), and 14-beat spine in [docs/strands/MGUN.md](strands/MGUN.md). *Acceptance: strand seeded + all entities seeded before prose + 14-beat spine drafted (Sonnet→Opus) + standalone review ≥82%.*
+  - **H6a ✅** Docs: MGUN strand bible (docs/strands/MGUN.md) + this entry; `codex doctor` PASS. *(2026-06-25)*
+  - **H6b ✅** Entities seeded: Inkeri Saarinen `019f00a4061f`, Blessing Agwu `019f00a4408b`, Mikkeli Väinämöinen `019f00a48148`, Tem Okafor `019f00a4cbe2`, Remi Nakamura-Diallo `019f00a51d0a`, Nadia Vasquez-Park `019f00a571cc`, Gault `019f00a597aa`; QCE tech `019f00a62820`; PEREGRINE faction `019f00a5c8f7`; Lake Platform `019f00a5f57e`. *(2026-06-25)*
+  - **H6c ✅** Strand `MGUN` created: id=`019f00a6-5370-7123-843a-7a4831c66e10`, slug=`magenta-gunmetal-019f00a6`. *(2026-06-25)*
+  - **H6d ⬜** 14 beats seeded with §6 spine goals; prose drafted Sonnet→Opus; reflowed; docx exported.
+  - **H6e ⬜** Standalone review ≥82%; register exemplars harvested.
+  - **H6d ⬜** 14 beats drafted Sonnet→Opus, reflowed, docx exported.
+  - **H6e ⬜** Standalone review ≥82%; register exemplars harvested.
+
+- **SS-US-H7 ✅** As the author, *Steppin Razor* (SRZR, `steppin-razor-019ef7be`, 15 beats) is written to completion: Sasha Võ is dragged from the quiet edge (Joliet) to the densest crowd on the continent by a 5D intelligence on a camel, discovers the AI cabal is drilling live wells under the towers not the frontier, survives four Axiom operatives with Signal and Noise, and walks onto the Loop platform still angry, still here, without putting her back to the door. Psychedelic GLMZ, *Fear and Loathing* propulsion, deadpan-flat protagonist as her own straight man. Full arc, locks, register in [docs/strands/SRZR.md](strands/SRZR.md). *Acceptance: 15 beats Opus-polished; standalone review ≥82%; Signal/Noise locks hold; exported.* *(verified by CLI `--review-strand --slug steppin-razor-019ef7be`; 86.6/100, N=20; exported Steppin Razor V4.pdf 2026-06-25)*
+  - **H7a ✅** SRZR strand bible written; SS-A20/A21 amendments locked; entities seeded (The Man on the Camel `019ef8055bc8`, The Hereafter `019ef8052de9`, The Joliet Schism `019ef805444e`). *(2026-06-23)*
+  - **H7b ✅** 15-beat spine seeded in DB (cold open ×5 + journey ×5 + core ×3 + resolution ×2). *(2026-06-25)*
+  - **H7c ✅** All 15 beats written at Opus quality (HIGH-tier, LockTier=true). Signal right / Noise left cross-draw correct throughout. *(2026-06-25)*
+  - **H7d ✅** Standalone review 86.6/100 (20-ballot panel, 2026-06-25). Three em-dash encoding artifacts fixed post-review.
+  - **H7e ✅** Exported: *Steppin Razor V4.docx/epub/pdf/txt* (`R:\Desktop\EPub\MindAttic\GLMZ\Steppin Razor\`). *(2026-06-25)*
 
 ## Priority backlog
 
