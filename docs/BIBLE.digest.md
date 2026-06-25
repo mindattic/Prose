@@ -131,7 +131,7 @@ narrative-law block here when stood up:**
   ambient proprioceptive information field BCI-augmented people sense (see `network_doc.md`).
 
 ## Status index (from USER_STORIES.md)
-- done: 104  partial: 8  planned: 26  cut: 1
+- done: 113  partial: 8  planned: 31  cut: 1
 
 ## Latest amendment
 ## SS-A22 — The deep strata, the Underclan, and the contact tragedy (UNDR) {#SS-A22}

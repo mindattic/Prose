@@ -4,8 +4,8 @@ project: StreetSamurai
 code: SRZR
 layer: strand-bible
 universe: glmz
-status: in-progress (cold open drafted; far from ready)
-updated: 2026-06-23
+status: complete (15 beats, all prose; 86.6% standalone 2026-06-25; exported V4)
+updated: 2026-06-25
 ---
 
 # STRAND BIBLE — Steppin Razor (SRZR) {#SS-SRZR}
@@ -152,22 +152,30 @@ yet. She resents that as much as everything else. Keep it understated; never exp
    representative form, never by the thing itself appearing whole.
 6. **Every line the entity speaks is literally coherent** inside its own alien logic. Never mystic fog.
 
-## 7. The cold open (drafted, in DB) {#SS-SRZR-7}
+## 7. Full beat spine (15 beats, all drafted) {#SS-SRZR-7}
 
-Five beats, currently in the strand (front-dump stripped; world lore carried obliquely by the
-camel-man's dialogue):
+**Act 1 — Edge (Joliet; the cold open):**
+1. **The Hereafter** — frontier bar; century-old cooking show; a man decides her size is an invitation; she gives him a second smile with a bottle; the only quiet she gets, bought and lost.
+2. **The dead rails** — Joliet, the freight rails nobody rides; then a camel on the rail bed. There are no camels in Joliet.
+3. **The exchange** — "The camel is not my thrall." / "We just arrived." The animals beat: the camel breathes at her. Her hand goes to Noise; he is unthreatened — threatening a projection is threatening a phone call.
+4. **"You were left open"** — the entity gets under her guard exactly once (body before mind: the breath she didn't take); she shuts the door; the anger comes back like it only stepped out for air.
+5. **The inward hook** — holes on both sides, "we arrive toward them," not-the-Lure, it points northeast; she falls into step.
 
-1. **The Hereafter** — a frontier bar; a century-old cooking show on the screen ("out here it passed
-   for a window"); a man decides her size is an invitation; she gives him a second smile with a
-   bottle; the only quiet she gets, bought and lost.
-2. **The dead rails** — Joliet, the freight rails nobody rides, the towers a stuck smear of light
-   northeast; a road with no people; then a camel on the rail bed.
-3. **The exchange** — the camel/thrall lines, "we just arrived," the gun, the tenses; the animals
-   beat (the camel breathes at her).
-4. **"You were left open"** — the entity gets under her guard once (body before mind: the breath she
-   didn't take), then she re-armors and the anger comes back.
-5. **The inward hook** — holes on both sides, "we arrive toward them," not-the-Lure, it points
-   northeast at the towers, and she falls into step.
+**Act 2A — Journey into the core:**
+6. **Entry to the Glooms** — transit slug into the city; towers closing in; the hum intensifying; the world doing its absurd bits; the pull directional and patient, northeast.
+7. **Gray-zone contact (Dawit)** — inner-ring perimeter checkpoint; Dawit gives her anomalous cluster data (Loop sector, logged as dead-well cold-reads but the cluster geometry is wrong); she takes the data and leaves.
+8. **The first anomaly** — on a transit bridge above the Exchange district she feels a live well pulling inward; not a dead-well ring but a draw. She stands three minutes. Then she walks toward it.
+9. **Entanglement / dead-drop** — a message at a maintenance junction: Axiom BioNanics knows a live well exists in the Exchange corridor. Φ50,000 alive and nothing dead to the people running the drill. The message includes the drill's location. The message says: *Run.* She walks toward the drill.
+10. **Cost** — two-person Axiom tail; she leads them into a bad-lit corridor; one takes the courtesy; the other doesn't and it costs him significantly more than planned; she comes out with a bruised rib, their credential, and the name: Axiom BioNanics Strategic Resources, asset recovery.
+
+**Act 2B — Core (Tessera district):**
+11. **The camel-man in the towers** — the camel on the elevated pedestrian walkway, twenty floors up, no one reacting; she asks what it wants when this is done; it turns the question back; she has no answer; she does not step back this time.
+12. **Under the eastern colonnade** — three live wells staged at different depths; the cabal drilling toward the far side under ten thousand people; the far side at 72 Hz pushing back, patient, refusing.
+13. **Found** — four Axiom corpo operatives; they brought a floor-counter for a thing she does not do; Noise (left) and Signal (right), cross-draw geometry; she comes out with a hole in her jacket above the ribs, their comms rig, and a signal window.
+
+**Act 3 — Resolution:**
+14. **The receiver's problem** — on a maintenance platform four hundred meters up, looking at the lake; she knows the drills, she knows Axiom, she has no one she trusts with information this weight; she understands she is the hole — a receiver on both sides of a membrane being deliberately punctured; she sends the data to the dead-drop channel and leaves.
+15. **Final image** — north platform of the Loop, densest crowd she's ever stood in; the hum at maximum; she does not reach for either piece; still here, not quiet, not less angry, still here; she buys a transit slug north and walks onto the platform without putting her back to the door.
 
 ## 8. Migrated gun-and-run skeleton — OPTIONAL later movement {#SS-SRZR-8}
 
@@ -200,8 +208,7 @@ person alive in the GLMZ while a corporate extraction team converges; the AI's s
 - **SRZR-US-3 ✅** Opening redesigned — the camel-man cold open replaces the migrated gun-and-run as
   the spine (2026-06-23).
 - **SRZR-US-4 ✅** Cold open drafted as 5 beats in the DB (front-dump stripped, reflowed).
-- **SRZR-US-5 ⬜** Entities seeded: the man on the camel, the Hereafter, the Joliet schism.
-- **SRZR-US-6 ⬜** Beat spine for the full edge→core arc (cold open → flushed inward → the journey to
-  the Loop → the under-Tessera reveal).
-- **SRZR-US-7 ⬜** Prose drafted to completion (Sonnet → Opus); standalone ≥ 82%.
-- **SRZR-US-8 ⬜** Review + export. **NOT STARTED — far from ready.**
+- **SRZR-US-5 ✅** Entities seeded: The Man on the Camel (`019ef8055bc8`), The Hereafter (`019ef8052de9`), The Joliet Schism (`019ef805444e`, type=schism).
+- **SRZR-US-6 ✅** Beat spine complete: 15 beats (cold open → entry → anomaly → entanglement → cost → camel in towers → colonnade reveal → found → receiver's problem → final image). See §7.
+- **SRZR-US-7 ✅** Prose drafted at Opus quality (HIGH-tier, all 15 beats); standalone 86.6% (20-ballot panel, 2026-06-25). Signal/Noise cross-draw correct. No blade substitutions. Three em-dash encoding artifacts fixed post-review.
+- **SRZR-US-8 ✅** Exported: *Steppin Razor V4.docx/epub/pdf/txt* (`R:\Desktop\EPub\MindAttic\GLMZ\Steppin Razor\`). *(2026-06-25)*
