@@ -1370,6 +1370,21 @@ if (args.Contains("--import-cover"))
     return;
 }
 
+// CLI mode: AI cover-image generation via API (ChatGPT/Gemini/Ideogram/Flux).
+// Stores prompt in CoverImagePrompts, generated asset in Assets, links via AssetId.
+//   ss --generate-cover --list [--strand-code CODE]
+//   ss --generate-cover --save --strand-code CODE --generator NAME --prompt "TEXT" [...]
+//   ss --generate-cover --prompt-id GUID [--output PATH] [--dry-run]
+//   ss --generate-cover --strand-code CODE --generator NAME --prompt "TEXT" [--output PATH]
+if (args.Contains("--generate-cover"))
+{
+    var cliBuilder = WebApplication.CreateBuilder(args);
+    cliBuilder.Services.AddStreetSamuraiServices();
+    var cliApp = cliBuilder.Build();
+    Environment.ExitCode = await GenerateCoverImageCli.RunAsync(args, cliApp.Services);
+    return;
+}
+
 // CLI mode: burst oversized beats (e.g. chapter-as-one-beat from old book
 // imports) into paragraph-sized pieces. Idempotent — already-small beats
 // are skipped on rerun.

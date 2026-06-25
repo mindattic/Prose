@@ -597,6 +597,9 @@ public static class ServiceCollectionExtensions
         // via Anthropic tool-use, replacing per-message CLI spawn. Scoped per Blazor circuit
         // so each writing session has its own chat history.
         services.AddHttpClient<Services.Operator.AnthropicToolClient>(c => c.Timeout = TimeSpan.FromMinutes(15));
+
+        // Cover image generation — calls OpenAI/Gemini/Ideogram/FAL.ai APIs
+        services.AddHttpClient<CoverImageGeneratorService>(c => c.Timeout = TimeSpan.FromMinutes(5));
         services.AddSingleton<Services.Operator.IWriterTool, Services.Operator.Tools.QueryWorldGraphTool>();
         services.AddSingleton<Services.Operator.IWriterTool, Services.Operator.Tools.ValidateCanonTool>();
         services.AddSingleton<Services.Operator.IWriterTool, Services.Operator.Tools.DraftCombatSceneTool>();

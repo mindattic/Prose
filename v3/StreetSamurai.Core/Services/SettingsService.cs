@@ -381,6 +381,16 @@ public class SettingsService : IDisposable
         get => ResolveApiKey("SS_COHERE_API_KEY", "cohere", data.CohereApiKey);
         set { MindAtticCredentialStore.SetKey("cohere", value); data.CohereApiKey = value; ScheduleSave(); }
     }
+    public string IdeogramApiKey
+    {
+        get => ResolveApiKey("SS_IDEOGRAM_API_KEY", "ideogram", data.IdeogramApiKey);
+        set { MindAtticCredentialStore.SetKey("ideogram", value); data.IdeogramApiKey = value; ScheduleSave(); }
+    }
+    public string FalApiKey
+    {
+        get => ResolveApiKey("SS_FAL_API_KEY", "fal", data.FalApiKey);
+        set { MindAtticCredentialStore.SetKey("fal", value); data.FalApiKey = value; ScheduleSave(); }
+    }
     public string GeminiModel { get => data.GeminiModel; set { data.GeminiModel = value; ScheduleSave(); } }
     public string DeepSeekModel { get => data.DeepSeekModel; set { data.DeepSeekModel = value; ScheduleSave(); } }
     public string MistralModel { get => data.MistralModel; set { data.MistralModel = value; ScheduleSave(); } }
@@ -617,6 +627,8 @@ public class SettingsService : IDisposable
         MindAtticCredentialStore.SetKey("claude",      data.ApiKey);
         MindAtticCredentialStore.SetKey("openai",      data.OpenAiApiKey);
         MindAtticCredentialStore.SetKey("gemini",      data.GeminiApiKey);
+        MindAtticCredentialStore.SetKey("ideogram",    data.IdeogramApiKey);
+        MindAtticCredentialStore.SetKey("fal",         data.FalApiKey);
         MindAtticCredentialStore.SetKey("deepseek",    data.DeepSeekApiKey);
         MindAtticCredentialStore.SetKey("mistral",     data.MistralApiKey);
         MindAtticCredentialStore.SetKey("xai",         data.GrokApiKey);
@@ -657,6 +669,8 @@ public class SettingsService : IDisposable
         MigrateIfMissing("claude",      data.ApiKey);
         MigrateIfMissing("openai",      data.OpenAiApiKey);
         MigrateIfMissing("gemini",      data.GeminiApiKey);
+        MigrateIfMissing("ideogram",    data.IdeogramApiKey);
+        MigrateIfMissing("fal",         data.FalApiKey);
         MigrateIfMissing("deepseek",    data.DeepSeekApiKey);
         MigrateIfMissing("mistral",     data.MistralApiKey);
         MigrateIfMissing("xai",         data.GrokApiKey);
@@ -746,6 +760,8 @@ public class SettingsService : IDisposable
         public string OpenRouterApiKey { get; set; } = "";
         public string FireworksApiKey { get; set; } = "";
         public string CohereApiKey { get; set; } = "";
+        public string IdeogramApiKey { get; set; } = "";
+        public string FalApiKey { get; set; } = "";
         public string GeminiModel { get; set; } = "gemini-2.5-flash";
         public string DeepSeekModel { get; set; } = "deepseek-chat";
         public string MistralModel { get; set; } = "mistral-large-latest";
