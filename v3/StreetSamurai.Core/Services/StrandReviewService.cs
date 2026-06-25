@@ -26,6 +26,7 @@ public class StrandReviewService
     private readonly VotingConfiguration cfg;
     private readonly SettingsService settings;
     private readonly StrandMarkdownExporter exporter;
+    private readonly ReviewReportExporter reportExporter;
     private readonly IDbContextFactory<StreetSamuraiDbContext> dbFactory;
     private readonly FindingsService findings;
     private readonly SemanticFidelityService fidelity;
@@ -54,6 +55,7 @@ public class StrandReviewService
         VotingConfiguration cfg,
         SettingsService settings,
         StrandMarkdownExporter exporter,
+        ReviewReportExporter reportExporter,
         IDbContextFactory<StreetSamuraiDbContext> dbFactory,
         FindingsService findings,
         SemanticFidelityService fidelity,
@@ -67,6 +69,7 @@ public class StrandReviewService
         this.cfg = cfg;
         this.settings = settings;
         this.exporter = exporter;
+        this.reportExporter = reportExporter;
         this.dbFactory = dbFactory;
         this.findings = findings;
         this.fidelity = fidelity;
@@ -220,7 +223,43 @@ public class StrandReviewService
         string ContentHash, string ReportMarkdown, string ExportPath,
         // Structural pre-flight results (null when skipDiagnosis=true or diagnosis not run)
         bool BlockedByStructure = false,
-        StructuralDiagnosisResult? StructuralDiagnosis = null);
+        StructuralDiagnosisResult? StructuralDiagnosis = null,
+        // Per-run review report (voters JSON + filterable HTM viewer); null if export failed.
+        string? ReportJsonPath = null, string? ReportHtmPath = null);
+
+    /// <summary>Export this run's own ballots to a portable report (voters JSON + a
+    /// filterable HTM viewer) under the export dir. Best-effort: a failure here never
+    /// fails the run. The BRAIN (cloud vs local) is recorded so the report is
+    /// self-describing. Returns the two file paths (or nulls).</summary>
+    private async Task<(string? json, string? htm)> WriteRunReportAsync(
+        Guid strandId, string title, string contentHash, int beatCount,
+        bool useLocal, string? localModelOverride, List<StrandReview> saved,
+        double mean, double sd, double ci, int clusters, CancellationToken ct)
+    {
+        try
+        {
+            string slug;
+            await using (var db = await dbFactory.CreateDbContextAsync(ct))
+                slug = await db.Strands.AsNoTracking().Where(s => s.Id == strandId)
+                    .Select(s => s.Slug).FirstOrDefaultAsync(ct) ?? strandId.ToString("N")[..8];
+
+            var brain = useLocal ? "local" : "cloud";
+            var model = useLocal
+                ? (string.IsNullOrWhiteSpace(localModelOverride) ? settings.LocalReviewModel : localModelOverride)
+                : "trusted-4 panel";
+            var flowMean = saved.Where(r => r.FlowScore.HasValue)
+                .Select(r => (double)r.FlowScore!.Value).DefaultIfEmpty(0).Average();
+
+            return await reportExporter.ExportAsync(new ReviewReportExporter.ReportInput(
+                strandId, slug, title, contentHash, beatCount, brain, model,
+                mean, sd, ci, flowMean, clusters, saved), ct);
+        }
+        catch (Exception ex)
+        {
+            log.LogWarning(ex, "Review report export failed for strand {Id}", strandId);
+            return (null, null);
+        }
+    }
 
     /// <summary>Economical default: a stratified SAMPLE of personas casts cheap
     /// score-only BALLOTS (overall + flow + per-beat 1-5 + one weakness tag), then
@@ -448,9 +487,13 @@ public class StrandReviewService
         var sd = scores.Count > 1 ? Math.Sqrt(scores.Sum(x => (x - mean) * (x - mean)) / (scores.Count - 1)) : 0.0;
         var ci = scores.Count > 1 ? 1.96 * sd / Math.Sqrt(scores.Count) : 0.0;
 
+        var (reportJson, reportHtm) = await WriteRunReportAsync(strandId, export.Title, export.ContentHash,
+            beatCount, useLocal, localModelOverride, saved, Math.Round(mean, 1), Math.Round(sd, 1), Math.Round(ci, 2), clusters, ct);
+
         return new SampledRunResult(personas.Count, saved.Count, proseAdded, failed,
             Math.Round(mean, 1), Math.Round(sd, 1), Math.Round(ci, 2), clusters,
-            export.ContentHash, report, export.Path);
+            export.ContentHash, report, export.Path,
+            ReportJsonPath: reportJson, ReportHtmPath: reportHtm);
     }
 
     /// <summary>Segmented (per-act) review for large books that can't be reviewed
@@ -580,9 +623,13 @@ public class StrandReviewService
         sb.AppendLine();
         sb.AppendLine(clusterReport);
 
+        var (reportJson, reportHtm) = await WriteRunReportAsync(strandId, seg.Title, seg.ContentHash,
+            totalBeatCount, useLocal, localModelOverride, saved, Math.Round(mean, 1), Math.Round(sd, 1), Math.Round(ci, 2), clusters, ct);
+
         return new SampledRunResult(pool.Count, saved.Count, 0, failed,
             Math.Round(mean, 1), Math.Round(sd, 1), Math.Round(ci, 2), clusters,
-            seg.ContentHash, sb.ToString(), "");
+            seg.ContentHash, sb.ToString(), "",
+            ReportJsonPath: reportJson, ReportHtmPath: reportHtm);
     }
 
     private async Task<StrandReview?> SegmentBallotOnceAsync(

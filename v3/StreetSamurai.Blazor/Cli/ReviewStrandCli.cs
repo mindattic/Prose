@@ -182,6 +182,8 @@ public static class ReviewStrandCli
                     useLocal: useLocal, localModelOverride: localModel);
                 Console.WriteLine($"[review-strand] {sr.BallotsSaved}/{sr.Ballots} ballots ({sr.Failed} failed).");
                 Console.WriteLine($"[review-strand] Strand {sr.MeanScore}/100  (SD {sr.Sd}, 95% CI ±{sr.Ci95})  ·  {sr.Clusters} clusters  ·  fingerprint {sr.ContentHash[..Math.Min(12, sr.ContentHash.Length)]}");
+                if (!string.IsNullOrEmpty(sr.ReportHtmPath))  Console.WriteLine($"[review-strand] Report (open in browser): {sr.ReportHtmPath}");
+                if (!string.IsNullOrEmpty(sr.ReportJsonPath)) Console.WriteLine($"[review-strand] Report data (JSON):       {sr.ReportJsonPath}");
                 Console.WriteLine();
                 Console.WriteLine(sr.ReportMarkdown);
                 if (sr.BallotsSaved > 0)
@@ -230,6 +232,8 @@ public static class ReviewStrandCli
                     useLocal: useLocal, localModelOverride: localModel);
                 Console.WriteLine($"[review-strand] {sr.BallotsSaved}/{sr.Ballots} ballots ({sr.Failed} failed), {sr.ProseAdded} prose upgraded.");
                 Console.WriteLine($"[review-strand] Strand {sr.MeanScore}/100  (SD {sr.Sd}, 95% CI ±{sr.Ci95})  ·  {sr.Clusters} clusters  ·  fingerprint {sr.ContentHash[..Math.Min(12, sr.ContentHash.Length)]}");
+                if (!string.IsNullOrEmpty(sr.ReportHtmPath))  Console.WriteLine($"[review-strand] Report (open in browser): {sr.ReportHtmPath}");
+                if (!string.IsNullOrEmpty(sr.ReportJsonPath)) Console.WriteLine($"[review-strand] Report data (JSON):       {sr.ReportJsonPath}");
                 Console.WriteLine();
                 Console.WriteLine(sr.ReportMarkdown);
 
