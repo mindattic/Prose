@@ -257,6 +257,25 @@ updated: 2026-06-15
   - **H3e ✅** Story logline revised; Amara Osei (child) renamed Daria Drew. *(prose + amendment updated 2026-06-19)*
   - **H3f ✅** Opus polish + review panel ≥84%. verified by StrandReviewService 20-reader panel: 85.0/100 (2026-06-21).
 
+- **SS-US-H5 ⬜** As the author, *Underclan* (UNDR) is written as a GLMZ contact-tragedy novel: a
+  surface child lost at four into the deep strata below GLMZ is raised by the uncontacted **Underclan**
+  (who worship the rogue Leviathan DEEP CURRENT), becomes the Brave **Glim**, is caught on his
+  manhood-journey **Surfacing** and dragged topside to the mother he remembers only as a smell — and,
+  because he surfaced, the surface comes *down*, bringing sport-hunters, a "rescue" mission, and the
+  **Bright Fever** the immunologically-naïve clan cannot survive (FernGully / *Jungle 2 Jungle* /
+  rumspringa lineage). Full arc, locks, register, and 14-beat spine in
+  [docs/strands/UNDR.md](strands/UNDR.md); world canon in [SS-A22](AMENDMENTS.md). *Acceptance: book
+  strand seeded + all entities seeded before prose + chapters drafted (Sonnet→Opus) in the DEEP
+  register + standalone review ≥82% + cumulative reading-order ≥85%.*
+  - **H5a ⬜** Docs: SS-A22 amendment + UNDR bible + this entry; `codex doctor` PASS.
+  - **H5b ⬜** Entities seeded before prose (UNDR-US-2 set): Glim/Toby, Noor, Vesh, Knuckle, Sorrel,
+    Grale, Corwin Sallow, CANALKEEP-08; factions Underclan / Engine Guild / Daylight Mission /
+    Lamplighters; places Homewater / the Tartarian Empire / the Warm; the shine; Bright Fever; candles;
+    Made Things.
+  - **H5c ⬜** Book strand `UNDR` (kind=book) created with §7 spine as seed; chapter sub-strands parented.
+  - **H5d ⬜** Opening chapters drafted (Sonnet→Opus), reflowed, docx exported.
+  - **H5e ⬜** Standalone review ≥82%; register exemplars harvested.
+
 ## Priority backlog
 
 > Dependency-ordered toward the headline goal (a fresh seed → published, reviewed, canon-consistent

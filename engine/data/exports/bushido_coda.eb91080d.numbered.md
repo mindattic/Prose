@@ -65,11 +65,11 @@ Kyle's eyes found the jaw man last — the bad work, the wired constraint. His h
 They were playing cards. Drinking something amber from unlabeled bottles. The laughter died at the pace that laughter always dies when the math changes in a room.
 
 [Beat 13]
-Kyle's chest warmed — the array. A deep, cellular warmth behind the sternum, like a coal blown to life, the firmware coming up from idle into the resolution it kept for rooms like this. Thirty-two thousand electrodes, two hundred and fifty-six threads, processing at a speed his mouth could not follow.
+Kyle's chest warmed — the array, coming up from idle into the resolution it kept for rooms like this. A deep, cellular heat behind the sternum, like a coal blown to life.
 
-The room rendered itself. Six bodies. Heat signatures. The capacitor whine of knuckle plates waking up at the card table. The doubled click of wrist housings unlocking under a woman's sleeves, discreet as a watch being wound. The boy's shoulder telegraphing its intention before the intention had finished forming.
+The room rendered itself. Six bodies. Heat signatures. The capacitor whine of knuckle plates waking at the card table. The doubled click of wrist housings unlocking under a woman's sleeves, discreet as a watch being wound. The boy's shoulder telegraphing its intention before the intention had finished forming.
 
-*Ballistic precognition* — the NeoCortex program's term, which Kyle had always found imprecise. The array did not predict. It read the half-second already in motion and put it on the page where he could read it too, and his body was already moving before the thought resolved. He had stopped trying to explain the distinction to anyone who asked.
+*Ballistic precognition*, the NeoCortex called it — imprecise, Kyle thought. The array didn't predict. It read the half-second already in motion and put it on the page where he could read it too, and his body was moving before the thought resolved.
 
 It rendered one thing more, and rendered it the way it rendered nothing else: the plumbing. Every major artery in the room laid in as a bright forbidden line, the body's own load-bearing infrastructure annotated in light. Chrome was fair game. The lines were law. Cut everything; cross nothing. That was the whole of the code, and the array kept the map so the hand could keep the promise.
 
@@ -771,7 +771,7 @@ The channel went quiet on her end, the way it always did — no sign-off, no con
 Then the channel was empty.
 
 [Beat 93]
-Kyle found the geometry three nights later, in the relay logs Pixel had kept as a backup before she wrote the forgery — the first week's real data, mapped, printed to a single page, set on his kitchen table with one line under it: LOOK AT THE CENTER.
+Kyle found the geometry three nights later, in the relay logs Pixel had kept as a backup before she wrote the forgery - the first week's real data, mapped, printed to a single page, set on his kitchen table with one line under it: LOOK AT THE CENTER.
 
 The page was a scatter of tracked points across West Town, hundreds of them, every one a child crossing a block, turning a corner, living an ordinary day. He drew the geometric center of all that ordinary motion. It landed on one block. Six trees. A swing set. A dead-bulb crown under a mossy canopy.
 
@@ -779,16 +779,16 @@ The carousel park. The hatch under the maintenance skirt. The junction room wher
 
 Somebody had spent a funded program and eleven children to draw a map, and the X at the center of the map was the entity's first address.
 
-He stood there a while with the page, because the tap predated the contract, and a map of children converging on that junction was a map of something that moved through the park the way the children did â€” something the client could not be, because the client was still on the line when they cut it.
+He stood there a while with the page. The tap predated the contract. A map of children converging on that junction was a map of something that moved through the park the way the children did — and the client could not be that something, because the client had still been on the line when they cut it.
 
-He put the page in the drawer — next to the buyers' list and the other things he had not finished deciding about. Also in there: eleven years of relay addresses, one per ghost contract, every one a dead node that had been alive just long enough to route a message. Somebody had spent children to draw a map of the X. Kyle had been drawing a different map for years and hadn't looked at it yet. The drawer was getting full.
+He put the page in the drawer - next to the buyers' list and the other things he had not finished deciding about. Also in there: eleven years of relay addresses, one per ghost contract, every one a dead node that had been alive just long enough to route a message. Somebody had spent children to draw a map of the X. Kyle had been drawing a different map for years and hadn't looked at it yet. The drawer was getting full.
 
 The logbook came under the door at 07:00, and at the bottom, in Boost's hand:
 
-P.S. — BOSS. DENTS ASKS WHAT WAS IN THE PENDANT. HE ALREADY KNOWS IT WASN'T WELLNESS.
-P.P.S. — HE SAYS THANK YOU. THE DUMPLING WAS VERY GOOD. (RAFTERS PAID UP. THIS LOG IS HONEST.)
+P.S. - BOSS. DENTS ASKS WHAT WAS IN THE PENDANT. HE ALREADY KNOWS IT WASN'T WELLNESS.
+P.P.S. - HE SAYS THANK YOU. THE DUMPLING WAS VERY GOOD. (RAFTERS PAID UP. THIS LOG IS HONEST.)
 
-That was the warm part, and Kyle let it be warm for a second before he answered it. Then he wrote under it, in his own hand, and slid it back: DENTS — IT TRACKED POSITION. SOMEBODY WAS DRAWING A MAP OF KIDS. WE MADE THE MAP WRONG. YOU WERE NEVER ON IT. — K.
+That was the warm part, and Kyle let it be warm for a second before he answered it. Then he wrote under it, in his own hand, and slid it back: DENTS - IT TRACKED POSITION. SOMEBODY WAS DRAWING A MAP OF KIDS. WE MADE THE MAP WRONG. YOU WERE NEVER ON IT. - K.
 
 Through the thin floor he could hear the logbook get read, then two voices going fast, then a third, then Rafters saying something about the cart that made the other two laugh. He went down and bought everybody breakfast.
 
@@ -2365,7 +2365,7 @@ He does the same to her â€” the freckles across her collarbone, the small o
 [Beat 192]
 "This can't happen again," Kyle says. He's looking at the ceiling when he says it.
 
-Pixel props herself up on one elbow, forearm flat on the concrete, and considers him with the particular patience of a person who has just won an argument the other party doesn't know is over. She doesn't answer. She picks the screw up off the floor â€” the machine screw, the one she pulled from his shoulder blade an hour ago â€” and turns it once in the low light. Then she sets it down.
+Pixel props herself up on one elbow, forearm flat on the concrete, and considers him with the particular patience of a person who has just won an argument the other party doesn't know is over. She doesn't answer. She picks the screw up off the floor — the machine screw, the one she pulled from his shoulder blade an hour ago — and turns it once in the low light. Then she sets it down.
 
 His thumb is still at the base of her throat, where he left it. He doesn't move it.
 
@@ -2755,9 +2755,9 @@ Twelve minutes. Then her step on the stair, deliberate enough to be heard.
 "One," she said, and they turned north.
 
 [Beat 222]
-The triangulation had completed four days after the session in the cage: three nodes, three readings, one intersection â€” a server cluster in an old relay station under the Loop. Sable sent the coordinates in a clean notation with no comment. Kyle filed it next to the buyers' list and the relay logs and did not go there yet, because going there meant deciding, and he had not finished deciding.
+The triangulation had completed four days after the session in the cage: three nodes, three readings, one intersection — a server cluster in an old relay station under the Loop. Sable sent the coordinates in a clean notation with no comment. Kyle filed it next to the buyers' list and the relay logs and did not go there yet, because going there meant deciding, and he had not finished deciding.
 
-The relay job came through a contact Kyle had used twice before and paid on time both times, which was the full extent of the professional relationship and the extent that mattered. The job required the entity's coordination â€” real-time, distributed, the kind of threading that needed something faster than human response across six simultaneous data points. The entity could do this, had done it for Kyle for eleven years, but the arrangement this time was different: instead of routing through the relay infrastructure the entity had always used, it would run directly in Kyle's array. His neuretics as the carrier. His cortex as the transit point. Eleven years and they had never done it that way.
+The relay job came through a contact Kyle had used twice before and paid on time both times, which was the full extent of the professional relationship and the extent that mattered. The job required the entity's coordination — real-time, distributed, faster than human response across six simultaneous data points. The entity could do this, had done it for Kyle for eleven years, but the arrangement this time was different: instead of routing through the relay infrastructure the entity had always used, it would run directly in Kyle's array. His neuretics as the carrier. His cortex as the transit point. Eleven years and they had never done it that way.
 
 Kyle's neuretics were the hardware.
 
@@ -2765,7 +2765,7 @@ The cargo was the carrier.
 
 He called Ledger before he called anyone else.
 
-Ledger was synthetic â€” a freelance operator who had been in the work for longer than Kyle, constitutionally unable to model self-deception in any party including himself, and therefore the cleanest source of honest operational assessment available at short notice. He did not trade in impressions. He told you what the parameters were.
+Ledger was synthetic — a freelance operator who had been in the work for longer than Kyle, constitutionally unable to model self-deception in any party including himself, and therefore the cleanest source of honest operational assessment available at short notice. He did not trade in impressions. He told you what the parameters were.
 
 "The relay arrangement exposes the entity to scan on your hardware," Ledger said. "If the Office is running sweep protocols on augmented operators in this district, it will light."
 
