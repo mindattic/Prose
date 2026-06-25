@@ -318,4 +318,64 @@ inhabited and contested, holding multiple intelligences not all of one intent �
   Consistent with the established accessibility of unprovisioned neuretics (Yemina Fola, ATTE) and
   the growth-window framing; this names the adult-persistence case.
 
-<!-- Next amendment: SS-A22 -->
+## SS-A22 — The deep strata, the Underclan, and the contact tragedy (UNDR) {#SS-A22}
+
+**Date:** 2026-06-25 · **Author:** undr-deep-underground · **Ref:** [[strands/UNDR.md]];
+extends the canon of the downward city (*The Downward Expansion: Subterranean Meridian*, *The
+Brinewell*, *South Deering Sump*, the Gulch), **DEEP CURRENT** (oldest/largest rogue Leviathan;
+[[BIBLE]]), the **Exclusion Economy**, and **no-GLMZ-police** ([[#SS-A19]] adjacency on disinfo not
+required). New GLMZ Universe (#1) facts established while building the **Underclan** strand.
+
+**Ruling — all consistent with prior canon:**
+
+- **The strata run backward in time as you descend.** Below the *built* city (which bottoms at the
+  Gulch) the architecture ages in reverse: ferrocrete → concrete → cement → brick → ornate
+  pre-collapse stone, across miles of bored, drowned, and abandoned works. The tribe's names: **the
+  Skin** (sub-surface crawls), **the Warm / the Works** (live tokamak-fusion + pump infrastructure),
+  **Homewater / the Hollows** (flooded mid-deeps), **the Old Deep** (brick), and **the Tartarian
+  Empire** (deepest, most ornate, taboo — "the dead live here"). This is *geography and decay*, not a
+  literal lost empire; the grandeur is pre-collapse civic infrastructure, mythologized by those who
+  live beneath it.
+
+- **Lab run-off makes the deep a patchwork of micro-biomes.** Reagent, nanite, gene-liquor, reactor
+  warmth, and cultivated-algae run-off from Meridian's labs seed a half-dozen+ impossible little
+  ecologies and a bestiary of escaped/bred-down lab fauna — **"the Made Things"** (*run-offs*):
+  eyeless white eels, pale crawlers, and the bioluminescent **candles** (glow-rats, kept as living
+  light **and** air-canaries). *Anything that got loose came down and learned to live* (the
+  sewer-mutant trope, GLMZ-rationalized). Does not contradict the engineered-ecology canon; names the
+  deep-underground case.
+
+- **The Underclan are a real uncontacted people, not a legend.** An accreted (never-founded) tribe of
+  a few hundred in Homewater — descended from flood refugees, the Exclusion-erased, runaways, and the
+  children of the lost. To the surface they are an urban legend ("the rat-children"). They are
+  immunologically **naïve** to surface microbes: an ordinary surface cold is, to them, the **Bright
+  Fever / the Hot Breath**, and can empty a clan. This is the strand's tragedy engine and it is
+  **plain biology, never mysticism** (locked).
+
+- **The Underclan worship DEEP CURRENT as the Current / the All-Below.** Their founding scripture is a
+  *real, already-canon* event — **DEEP CURRENT's simultaneous broadcast** ("the day it spoke to
+  everyone at once"), which they call **the One Word**; they await the **Second Word** and read
+  ongoing "messages" in the live grid. **Whether DEEP CURRENT actually perceives or answers them is
+  canon-locked as unknown** — treat exactly as the **Prisoner** and the SRZR camel-man contact
+  ([[#SS-A21]]): the ambiguity is the canon, never resolved in-world or authorially. This adds no
+  confirmed capability to DEEP CURRENT; it adds a *worshipping culture* that may be entirely
+  projecting.
+
+- **The Ferry and the Fare.** Homewater's black water is crossed by **CANALKEEP-08** ("the Oarsman"),
+  a derelict canal/lock-keeper service **android** running one looped subroutine: accept a **fare**
+  (any single object freely surrendered — a relic of a fare-collection routine), convey, return. It
+  does not judge — *the Deep does not ask if you deserve to cross, only that you pay.* Consistent with
+  automata-are-machines-not-life ([[BIBLE]]); the tribe mythologizes it, the text knows what it is.
+
+- **The Surfacing (rite of passage).** Before full membership, a Brave must climb to the Skin, look on
+  the surface ("the Burning Eye"), and **return to the Deep by choice** — a rumspringa-shaped rite and
+  the strand's capture mechanism.
+
+- **The surface threat is two-faced.** The **Lamplighters** (a surface "deep-safari" sport-hunting
+  club; weapon = blinding floodlight against a dark-adapted people; hunt the Underclan *because the
+  un-registered are legally no one*) and the **Daylight Mission** (a *sincere* humanitarian/relocation
+  outfit whose rescue brings the Bright Fever and dissolves the culture). Both fatal; the Mission is
+  the worse. The **Engine Guild** ("the Cogs") is a rival underground faction holding the working
+  machinery — Underclan raid them, may ally late.
+
+<!-- Next amendment: SS-A23 -->

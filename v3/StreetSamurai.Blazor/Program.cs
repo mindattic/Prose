@@ -196,6 +196,19 @@ if (args.Contains("--combat"))
     return;
 }
 
+// CLI mode: insert OR update a Faction from a FactionData JSON file.
+// Upsert: include "id" to update, omit to create. Safe service-layer path
+// (FactionRepository.Save) — no hand-SQL, collision-safe slugs.
+//   ss --add-faction --file path.json
+if (args.Contains("--add-faction"))
+{
+    var cliBuilder = WebApplication.CreateBuilder(args);
+    cliBuilder.Services.AddStreetSamuraiServices();
+    var cliApp = cliBuilder.Build();
+    Environment.ExitCode = await AddFactionCli.RunAsync(args, cliApp.Services);
+    return;
+}
+
 // CLI mode: insert a News article from a NewsData JSON file.
 //   ss --add-news --file path.json
 if (args.Contains("--add-news"))
