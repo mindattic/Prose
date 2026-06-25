@@ -58,7 +58,10 @@ public sealed class LocalReviewLlm : IReviewLlm
             try
             {
                 using var req = new HttpRequestMessage(HttpMethod.Post, endpoint);
-                req.Headers.Authorization = new AuthenticationHeaderValue("Bearer", "local");
+                // Bare localhost Ollama ignores auth, so "local" is a harmless placeholder; a
+                // SECURED remote GPU (RunPod/vLLM) needs its real key — LocalReviewApiKey.
+                var bearer = string.IsNullOrWhiteSpace(settings.LocalReviewApiKey) ? "local" : settings.LocalReviewApiKey;
+                req.Headers.Authorization = new AuthenticationHeaderValue("Bearer", bearer);
                 req.Content = new StringContent(body, Encoding.UTF8, "application/json");
 
                 using var res = await http.SendAsync(req, ct);

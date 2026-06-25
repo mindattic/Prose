@@ -181,6 +181,8 @@ public class QualityTools
             clusters          = result.Clusters,
             content_hash      = result.ContentHash,
             report_markdown   = result.ReportMarkdown,
+            report_htm        = result.ReportHtmPath,   // filterable per-voter viewer (open in browser)
+            report_json       = result.ReportJsonPath,  // per-voter data feed
             synopsis_markdown = synopsis,
         }, CanonTools.JsonOpts);
     }

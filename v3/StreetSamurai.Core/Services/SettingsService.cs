@@ -438,6 +438,11 @@ public class SettingsService : IDisposable
     public string LocalReviewBaseUrl { get => data.LocalReviewBaseUrl; set { data.LocalReviewBaseUrl = value; ScheduleSave(); } }
     /// <summary>Local model tag used by <c>--local</c> reviews (e.g. an Ollama tag with a baked-in num_ctx).</summary>
     public string LocalReviewModel { get => data.LocalReviewModel; set { data.LocalReviewModel = value; ScheduleSave(); } }
+    /// <summary>Bearer token for the local/self-hosted review endpoint. Empty for a bare
+    /// localhost Ollama (which ignores auth); set it to the API key when
+    /// <see cref="LocalReviewBaseUrl"/> points at a SECURED remote GPU (RunPod/vLLM/etc.),
+    /// so "local" reviews can run on a rented machine instead of your own VRAM.</summary>
+    public string LocalReviewApiKey { get => data.LocalReviewApiKey; set { data.LocalReviewApiKey = value; ScheduleSave(); } }
     /// <summary>Max simultaneous local generations — kept low because a single GPU can only
     /// run a few large-model generations at once before spilling / OOM.</summary>
     public int LocalReviewMaxConcurrency { get => data.LocalReviewMaxConcurrency; set { data.LocalReviewMaxConcurrency = Math.Max(1, Math.Min(16, value)); ScheduleSave(); } }
@@ -722,6 +727,8 @@ public class SettingsService : IDisposable
         // Local-LLM review (--local) defaults
         public string LocalReviewBaseUrl { get; set; } = "http://localhost:11434/v1/chat/completions";
         public string LocalReviewModel { get; set; } = "qwen2.5-14b-rev";
+        /// <summary>Bearer token for a SECURED remote review endpoint (RunPod/vLLM/etc.); empty = bare localhost Ollama.</summary>
+        public string LocalReviewApiKey { get; set; } = "";
         public int LocalReviewMaxConcurrency { get; set; } = 2;
         /// <summary>When false, ContinuousQualityService does not fire on beat save. Reviews must be called manually.</summary>
         public bool ReviewAutoRunEnabled { get; set; } = true;

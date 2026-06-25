@@ -577,6 +577,18 @@ if (args.Contains("--review-strand"))
     return;
 }
 
+// CLI mode: (re)generate the portable per-voter report (JSON + filterable HTM) from
+// a strand's most recent stored review batch, without re-running the panel.
+//   ss --review-report (--slug <slug> | --id <guid> | --code <CODE>) [--provider local|cloud|all]
+if (args.Contains("--review-report"))
+{
+    var cliBuilder = WebApplication.CreateBuilder(args);
+    cliBuilder.Services.AddStreetSamuraiServices();
+    var cliApp = cliBuilder.Build();
+    Environment.ExitCode = await ReviewReportCli.RunAsync(args, cliApp.Services);
+    return;
+}
+
 // CLI mode: add an author ruling to the prose-lessons memory store.
 // Lessons are injected into review ballot prompts so reviewers don't penalise
 // beats the author has already ruled are doing their job.
