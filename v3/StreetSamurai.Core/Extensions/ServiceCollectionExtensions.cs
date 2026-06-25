@@ -661,6 +661,12 @@ public static class ServiceCollectionExtensions
         services.AddLegionClient();
         services.AddHttpClient<LegionClient>(c => c.Timeout = TimeSpan.FromMinutes(15));
         services.AddHttpClient<LlmVotingProvider>(c => c.Timeout = TimeSpan.FromMinutes(15));
+
+        // Strand-review transport seam (IReviewLlm). The cloud impl is a thin pass-through
+        // to LegionClient (the trusted-4 panel, unchanged); the local impl is a
+        // self-contained Ollama client used ONLY by `--local` reviews. They never mix.
+        services.AddSingleton<StreetSamurai.Core.Services.Local.CloudReviewLlm>();
+        services.AddHttpClient<StreetSamurai.Core.Services.Local.LocalReviewLlm>(c => c.Timeout = TimeSpan.FromMinutes(10));
         services.AddSingleton<VotingConfiguration>(sp =>
         {
             var s = sp.GetRequiredService<SettingsService>();
@@ -793,6 +799,10 @@ public static class ServiceCollectionExtensions
         services.AddSingleton<WorkflowMonitorService>();
         services.AddSingleton<EntityContextStack>();
         services.AddSingleton<EntityContextService>();
+        services.AddSingleton<DocContextStack>();
+        services.AddSingleton<DocContextService>();
+        services.AddSingleton<ContextTelemetryService>();
+        services.AddSingleton<TelemetryExportService>();
         services.AddSingleton<ProseWriterRouter>();
 
         return services;

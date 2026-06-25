@@ -34,6 +34,7 @@ public static class ReviewStrandCli
         int readers = settings.ReviewReaders, panel = settings.ReviewPanel,
             ballots = settings.ReviewBallots, prose = settings.ReviewProse;
         bool samePersonas = false, study = false, census = false, skipDiagnosis = false, byAct = false;
+        bool useLocal = false; string? localModel = null;
         int segChars = 90000, segBallots = 8;
         // RFC 0009 §2 — cost tier. Explicit --ballots/--prose/--skip-diagnosis still win over the tier.
         string? effort = null;
@@ -61,6 +62,8 @@ public static class ReviewStrandCli
                 case "--skip-diagnosis":  skipDiagnosis = true; skipSet = true; break;
                 case "--effort":
                 case "--tier":            if (i + 1 < args.Length) effort = args[++i]; break;
+                case "--local":           useLocal = true; break;
+                case "--local-model":     if (i + 1 < args.Length) localModel = args[++i]; break;
             }
         }
 
@@ -85,6 +88,8 @@ public static class ReviewStrandCli
             Console.Error.WriteLine("  --effort draft     ~6 calls — mid-draft spot check (per-beat gripes; not a gate)");
             Console.Error.WriteLine("  --effort standard  ~15 calls — standalone gate (>=82%)");
             Console.Error.WriteLine("  --effort deep      ~37 calls — cumulative/publish gate (>=85%)");
+            Console.Error.WriteLine("  --local            run ballots on the local LLM (Ollama) — free, no cloud calls (default + --by-act only)");
+            Console.Error.WriteLine("  --local-model TAG  override the local model tag for this run (default: settings.LocalReviewModel)");
             return 1;
         }
         var dbFactory = services.GetRequiredService<IDbContextFactory<StreetSamuraiDbContext>>();
@@ -126,6 +131,15 @@ public static class ReviewStrandCli
             strandId = strand.Id; strandSlug = strand.Slug; strandTitle = strand.Title;
         }
 
+        // --local is wired only for the economical default (sampled) and --by-act paths.
+        // The census/study/focus-group paths still run on the cloud panel.
+        if (useLocal && (study || census || samePersonas || !string.IsNullOrWhiteSpace(group)))
+        {
+            Console.Error.WriteLine("[review-strand] --local applies to the default sampled review and --by-act only; "
+                + "--census/--study/--group/--same-personas still run on the cloud panel. Ignoring --local for this run.");
+            useLocal = false;
+        }
+
         // ── Segment-study mode: one independent panel, per-beat micro-scores,
         //    emergent clustering, Pareto/contested decision report. ──
         if (study)
@@ -164,7 +178,8 @@ public static class ReviewStrandCli
             var bpa = new Progress<int>(k => { if (k % 5 == 0) Console.WriteLine($"   …{k} ballots done"); });
             try
             {
-                var sr = await reviewer.RunSegmentedReviewAsync(strandId, segBallots, prose, segChars, bpa);
+                var sr = await reviewer.RunSegmentedReviewAsync(strandId, segBallots, prose, segChars, bpa,
+                    useLocal: useLocal, localModelOverride: localModel);
                 Console.WriteLine($"[review-strand] {sr.BallotsSaved}/{sr.Ballots} ballots ({sr.Failed} failed).");
                 Console.WriteLine($"[review-strand] Strand {sr.MeanScore}/100  (SD {sr.Sd}, 95% CI ±{sr.Ci95})  ·  {sr.Clusters} clusters  ·  fingerprint {sr.ContentHash[..Math.Min(12, sr.ContentHash.Length)]}");
                 Console.WriteLine();
@@ -173,7 +188,7 @@ public static class ReviewStrandCli
                 {
                     try
                     {
-                        var summary = await reviewer.GenerateSummaryAsync(strandId);
+                        var summary = await reviewer.GenerateSummaryAsync(strandId, useLocal: useLocal, localModelOverride: localModel);
                         Console.WriteLine();
                         Console.WriteLine($"=== READER SYNOPSIS ({summary.ReviewCount} reviews, avg {summary.AvgScore:0.0}/100) ===");
                         Console.WriteLine(summary.SummaryMarkdown);
@@ -193,12 +208,17 @@ public static class ReviewStrandCli
             if (ballots <= 0) ballots = 20;
             if (prose < 0) prose = 0;
             var tierLabel = profile != null ? $" [{profile.Name} tier — {profile.Note}]" : "";
+            var localTag = localModel ?? settings.LocalReviewModel;
             Console.WriteLine($"[review-strand] SAMPLED REVIEW (economical default):{tierLabel}");
             Console.WriteLine($"   Id:    {strandId}");
             Console.WriteLine($"   Slug:  {strandSlug}");
             Console.WriteLine($"   Title: {strandTitle}");
-            Console.WriteLine($"   {ballots} score-ballots (round-robin across the trusted-4"
-                + (profile?.CheapModels == true ? ", on cheap models" : "") + $") + {prose} prose upgrades"
+            if (useLocal)
+                Console.WriteLine($"   Brain: LOCAL — {localTag} @ {settings.LocalReviewBaseUrl} "
+                    + "(no cloud calls; persona/psychometric diversity only — separate score baseline).");
+            Console.WriteLine($"   {ballots} score-ballots ("
+                + (useLocal ? $"all on local model {localTag}" : "round-robin across the trusted-4")
+                + (profile?.CheapModels == true && !useLocal ? ", on cheap models" : "") + $") + {prose} prose upgrades"
                 + (skipDiagnosis ? " — diagnosis skipped" : " + structural diagnosis") + " — one pass.");
             Console.WriteLine("[review-strand] Running…");
             var bp = new Progress<int>(k => { if (k == ballots || k % 5 == 0) Console.WriteLine($"   …{k}/{ballots} ballots done"); });
@@ -206,7 +226,8 @@ public static class ReviewStrandCli
             {
                 var sr = await reviewer.RunSampledReviewAsync(strandId, ballots, prose, bp,
                     skipDiagnosis: skipDiagnosis, cheapModels: profile?.CheapModels ?? false,
-                    allowedProvidersOverride: profile?.AllowedProviders);
+                    allowedProvidersOverride: profile?.AllowedProviders,
+                    useLocal: useLocal, localModelOverride: localModel);
                 Console.WriteLine($"[review-strand] {sr.BallotsSaved}/{sr.Ballots} ballots ({sr.Failed} failed), {sr.ProseAdded} prose upgraded.");
                 Console.WriteLine($"[review-strand] Strand {sr.MeanScore}/100  (SD {sr.Sd}, 95% CI ±{sr.Ci95})  ·  {sr.Clusters} clusters  ·  fingerprint {sr.ContentHash[..Math.Min(12, sr.ContentHash.Length)]}");
                 Console.WriteLine();
@@ -218,7 +239,7 @@ public static class ReviewStrandCli
                     Console.WriteLine("[review-strand] Synthesizing the \"Readers say\" synopsis…");
                     try
                     {
-                        var summary = await reviewer.GenerateSummaryAsync(strandId);
+                        var summary = await reviewer.GenerateSummaryAsync(strandId, useLocal: useLocal, localModelOverride: localModel);
                         Console.WriteLine();
                         Console.WriteLine($"=== READER SYNOPSIS ({summary.ReviewCount} reviews, avg {summary.AvgScore:0.0}/100) ===");
                         Console.WriteLine(summary.SummaryMarkdown);

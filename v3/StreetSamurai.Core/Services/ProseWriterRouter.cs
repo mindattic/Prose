@@ -20,7 +20,10 @@ public class ProseWriterRouter(
     StoryMethodologyService methodology,
     BeatModeDetector modeDetector,
     WorkflowMonitorService monitor,
-    EntityContextService? entityContext = null)
+    EntityContextService? entityContext = null,
+    DocContextService? docContext = null,
+    SettingsService? settings = null,
+    ContextTelemetryService? telemetry = null)
 {
     static readonly string CombatProseGuidance = """
         BEAT MODE: COMBAT — action prose rules are in force.
@@ -65,6 +68,24 @@ public class ProseWriterRouter(
             catch { /* non-blocking — entity context is best-effort */ }
         }
 
+        // Doc context stack: load the rotating cast of pertinent canon .md docs (non-fatal).
+        // Gated behind SettingsService.DocContextEnabled (default OFF) so the engine is inert
+        // until explicitly enabled — generation is byte-for-byte identical to before until then.
+        DocContextService.DocContextResult? docResult = null;
+        var docStackContext = "";
+        if (docContext != null && settings?.DocContextEnabled == true && context.StrandId != Guid.Empty)
+        {
+            try
+            {
+                var triggerText = (context.BeatGoal ?? "") + "\n" + (context.SceneSoFar ?? "");
+                docResult = string.IsNullOrEmpty(context.DocScopeCode)
+                    ? await docContext.PrepareForStrandAsync(context.StrandId, triggerText, tokenBudget: 2000, ct)
+                    : await docContext.PrepareContextAsync(context.StrandId, context.DocScopeCode, triggerText, tokenBudget: 2000, ct: ct);
+                docStackContext = docResult.Block;
+            }
+            catch { /* non-blocking — doc context is best-effort */ }
+        }
+
         var enriched = context with
         {
             BeatIndex              = beatIndex,
@@ -73,9 +94,32 @@ public class ProseWriterRouter(
             StructuralRoleGuidance = structuralGuidance,
             DetectedMode           = mode,
             EntityStackContext     = entityStackContext,
+            DocStackContext        = docStackContext,
         };
 
+        var startedAt = DateTime.UtcNow;
+        var sw = System.Diagnostics.Stopwatch.StartNew();
         var result = await generator.GenerateBeatAsync(enriched, ct);
+        sw.Stop();
+
+        // Telemetry: record exactly which docs + entities this beat pulled into working memory.
+        if (telemetry != null && telemetry.IsActive)
+        {
+            try
+            {
+                var docs = (docResult?.Loaded ?? (IReadOnlyList<DocContextService.LoadedDoc>)Array.Empty<DocContextService.LoadedDoc>())
+                    .Select(d => new ContextTelemetryService.DocLoad(d.RelativePath, d.Tier, d.Reason, d.Score, d.Chars)).ToList();
+                var entList = entityContext?.GetActiveEntities(context.StrandId) ?? new List<EntityContextStack.StackEntry>();
+                var ents = entList
+                    .Take(EntityContextService.MaxInjectedEntities)   // record only what was actually injected
+                    .Select(e => new ContextTelemetryService.EntityLoad(e.Name, e.EntityType, "stack", e.Score, e.Depth)).ToList();
+                var title = context.BeatGoal ?? "";
+                if (title.Length > 80) title = title[..80];
+                telemetry.RecordBeat(new ContextTelemetryService.BeatRecord(
+                    beatIndex, beatId.ToString("N"), title, startedAt, sw.Elapsed.TotalMilliseconds, result?.Length ?? 0, docs, ents));
+            }
+            catch { /* telemetry is best-effort — never affect prose */ }
+        }
 
         // Log coverage fire-and-forget — never blocks prose output.
         var pacingApplicable  = totalBeats > 0;
@@ -93,6 +137,7 @@ public class ProseWriterRouter(
                 new("StoryAudit",      IsApplicable: strandApplicable,  IsActive: strandApplicable,  BlockSizeChars: 0),
                 new("Combat",          IsApplicable: combatApplicable,  IsActive: combatApplicable,  BlockSizeChars: combatApplicable ? CombatProseGuidance.Length : 0),
                 new("EntityContext",   IsApplicable: strandApplicable,  IsActive: entityStackContext.Length > 0,  BlockSizeChars: entityStackContext.Length),
+                new("DocContext",      IsApplicable: strandApplicable,  IsActive: docStackContext.Length > 0,     BlockSizeChars: docStackContext.Length),
             ], CancellationToken.None);
 
             await modeDetector.PersistAsync(beatId, universeId, mode, confidence, method, CancellationToken.None);

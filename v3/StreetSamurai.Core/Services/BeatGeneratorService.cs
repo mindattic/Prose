@@ -129,6 +129,7 @@ public class BeatGeneratorService
             {context.RelationshipContext}
             {(context.XRayContext.Length > 0 ? "\nSCENE X-RAY — entities on screen RIGHT NOW. Every character below speaks in THEIR OWN documented register, not the narrator's:\n" + context.XRayContext : "")}
             {(context.EntityStackContext.Length > 0 ? "\nENTITY WORKING MEMORY — proper nouns active in this story thread and their canon facts. Treat these as hard constraints; do not contradict them:\n" + context.EntityStackContext : "")}
+            {(context.DocStackContext.Length > 0 ? "\n" + context.DocStackContext : "")}
             {(context.LocationContext.Length > 0 ? "\nADDITIONAL LOCATION DETAIL:\n" + context.LocationContext : "")}{dialogueBlock}{anchorBlock}{plantBlock}{commandmentBlock}{pacingBlock}{structuralBlock}
             """;
 
@@ -801,6 +802,22 @@ public record BeatContext
     /// Injected by ProseWriterRouter alongside XRayContext.
     /// </summary>
     public string EntityStackContext { get; init; } = "";
+
+    /// <summary>
+    /// Doc Context Stack (DocContextService): the rotating cast of pertinent canon .md docs for
+    /// this beat — the universal always-tier core, the story's strand bible + register, and any
+    /// topic docs triggered by the beat goal/scene. Empty when DocContextService is not wired or
+    /// StrandId is empty. Injected by ProseWriterRouter alongside EntityStackContext.
+    /// </summary>
+    public string DocStackContext { get; init; } = "";
+
+    /// <summary>
+    /// Explicit strand CODE for Doc Context Stack scope matching, overriding the lookup from
+    /// <see cref="StrandId"/>. Needed when refactoring a DUPLICATE strand (which has no StrandCode):
+    /// pass the source strand's code so its bible + register (scope = that code) still load.
+    /// Empty = resolve the code from StrandId as usual.
+    /// </summary>
+    public string DocScopeCode { get; init; } = "";
 }
 
 /// <summary>

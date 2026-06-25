@@ -21,6 +21,7 @@
 @inject ManuscriptExportService Manuscript
 @inject StrandBibleService BibleService
 @inject StructuralDiagnosticService DiagSvc
+@inject StrandReviewService ReviewSvc
 @implements IDisposable
 
 @*
@@ -535,6 +536,40 @@ else
                         <span>Diagnostics</span>
                     }
                 </button>
+
+                @* ── Reader-panel launcher: EXPLICIT Cloud-vs-Local brain toggle, then run. ── *@
+                <div class="btn-group btn-group-sm" role="group" aria-label="Review brain">
+                    <button type="button"
+                            class="btn @(reviewUseLocal ? "btn-outline-secondary" : "btn-info")"
+                            @onclick="() => reviewUseLocal = false" disabled="@reviewRunning"
+                            title="Run review ballots on the CLOUD trusted-4 panel (paid API; full model + temperament diversity)">
+                        <i class="bi bi-cloud me-1"></i>Cloud
+                    </button>
+                    <button type="button"
+                            class="btn @(reviewUseLocal ? "btn-warning" : "btn-outline-secondary")"
+                            @onclick="() => reviewUseLocal = true" disabled="@reviewRunning"
+                            title="@($"Run review ballots on the LOCAL LLM ({Settings.LocalReviewModel} @ {Settings.LocalReviewBaseUrl}) — free, no API tokens; one model = separate score baseline")">
+                        <i class="bi bi-hdd-rack me-1"></i>Local
+                    </button>
+                </div>
+                <button class="btn btn-sm btn-outline-warning"
+                        @onclick="RunReaderPanelAsync"
+                        disabled="@(reviewRunning || strand is null)"
+                        title="@(reviewUseLocal
+                            ? $"Run the {Settings.ReviewBallots}-ballot reader panel on the LOCAL LLM ({Settings.LocalReviewModel}) — free"
+                            : $"Run the {Settings.ReviewBallots}-ballot reader panel on the CLOUD trusted-4 panel (paid API)")">
+                    @if (reviewRunning)
+                    {
+                        <span class="spinner-border spinner-border-sm me-1"></span>
+                        <span>@(reviewRanLocal ? "Local" : "Cloud") review @reviewProgress…</span>
+                    }
+                    else
+                    {
+                        <i class="bi bi-stars me-1"></i>
+                        <span>Reader panel</span>
+                    }
+                </button>
+
                 <div class="dropdown">
                     <button class="btn btn-sm btn-success dropdown-toggle" type="button" data-bs-toggle="dropdown"
                             disabled="@(publishing || exportBusy)"
@@ -559,6 +594,9 @@ else
                         <li><button class="dropdown-item" @onclick="PublishMarkdownAsync"
                                     title="Markdown with beat markers — editable and reimportable via ss --import-md">
                             <i class="bi bi-markdown me-2"></i>Markdown (.md)</button></li>
+                        <li><button class="dropdown-item" @onclick="PublishAudioTxtAsync"
+                                    title="Plain-text narration script for TTS — no markup, no beat markers">
+                            <i class="bi bi-file-earmark-text me-2"></i>Audio manuscript (.txt)</button></li>
                     </ul>
                 </div>
                 <div class="ms-auto">
@@ -567,6 +605,55 @@ else
                     </a>
                 </div>
             </div>
+
+            @* ── Reader-panel result — EXPLICIT brain badge so you always know what ran. ── *@
+            @if (reviewResult is not null)
+            {
+                <div class="border @(reviewResult.BlockedByStructure ? "border-danger" : "border-warning") rounded p-3 mt-2 bg-black">
+                    <div class="d-flex align-items-center justify-content-between mb-2 flex-wrap gap-2">
+                        <span class="fw-semibold text-warning">
+                            <i class="bi bi-stars me-1"></i>Reader panel
+                        </span>
+                        @if (reviewRanLocal)
+                        {
+                            <span class="badge bg-warning text-dark" title="@($"Local LLM at {Settings.LocalReviewBaseUrl} — free, no cloud calls")">
+                                <i class="bi bi-hdd-rack me-1"></i>LOCAL — @reviewRanModel
+                            </span>
+                        }
+                        else
+                        {
+                            <span class="badge bg-info text-dark" title="Cloud trusted-4 panel (paid API; full model + temperament diversity)">
+                                <i class="bi bi-cloud me-1"></i>CLOUD — trusted-4 panel
+                            </span>
+                        }
+                        <button class="btn btn-sm btn-link text-muted p-0 ms-auto" @onclick="() => reviewResult = null">
+                            <i class="bi bi-x-lg"></i>
+                        </button>
+                    </div>
+                    @if (reviewResult.BlockedByStructure)
+                    {
+                        <div class="alert alert-danger small py-2 mb-2">
+                            <i class="bi bi-x-octagon me-1"></i>
+                            Review blocked by structural pre-flight — fix the failures below, then re-run.
+                        </div>
+                    }
+                    else
+                    {
+                        <div class="small mb-1">
+                            <span class="badge bg-@(reviewResult.MeanScore >= 85 ? "success" : reviewResult.MeanScore >= 82 ? "info" : "warning") me-2" style="font-size:0.95rem;">@reviewResult.MeanScore.ToString("0.0")/100</span>
+                            <span class="text-muted">SD @reviewResult.Sd · 95% CI ±@reviewResult.Ci95 · @reviewResult.BallotsSaved/@reviewResult.Ballots ballots · @reviewResult.ProseAdded prose · @reviewResult.Clusters clusters</span>
+                        </div>
+                        @if (reviewRanLocal)
+                        {
+                            <div class="small text-warning mb-2"><i class="bi bi-info-circle me-1"></i>Local score is its own baseline — don't compare it to cloud trusted-4 means.</div>
+                        }
+                    }
+                    @if (!string.IsNullOrWhiteSpace(reviewResult.ReportMarkdown))
+                    {
+                        <pre class="small text-muted mt-2 mb-0" style="white-space:pre-wrap; max-height:340px; overflow-y:auto;">@reviewResult.ReportMarkdown</pre>
+                    }
+                </div>
+            }
 
             @* ── Structural diagnostics results panel (J5) ── *@
             @if (diagResult is not null)
@@ -1676,6 +1763,48 @@ else
     private int publishCurrent;
     private int publishTotal;
     private string? publishLabel;
+
+    // ── Reader panel (in-UI sampled review) — EXPLICIT Cloud/Local brain. ──────
+    private bool reviewRunning;
+    private bool reviewUseLocal;            // selected brain; false = cloud trusted-4 (default)
+    private int reviewProgress;
+    private bool reviewRanLocal;            // brain that actually produced reviewResult
+    private string reviewRanModel = "";
+    private StrandReviewService.SampledRunResult? reviewResult;
+
+    /// <summary>Run the economical sampled reader panel on the currently-selected
+    /// brain (cloud trusted-4 by default, or the local Ollama model when the Local
+    /// toggle is on). The result panel always states which brain ran.</summary>
+    private async Task RunReaderPanelAsync()
+    {
+        if (strand is null || reviewRunning) return;
+        reviewRunning  = true;
+        reviewResult   = null;
+        reviewProgress = 0;
+        reviewRanLocal = reviewUseLocal;
+        reviewRanModel = reviewUseLocal ? Settings.LocalReviewModel : "trusted-4 panel";
+        StateHasChanged();
+        try
+        {
+            var progress = new Progress<int>(n => { reviewProgress = n; _ = InvokeAsync(StateHasChanged); });
+            reviewResult = await ReviewSvc.RunSampledReviewAsync(
+                strand.Id, Settings.ReviewBallots, Settings.ReviewProse, progress,
+                useLocal: reviewUseLocal);
+            if (reviewResult.BlockedByStructure)
+                Toast.Error("REVIEW", "Blocked by structural pre-flight — fix the failures, then re-run.");
+            else
+                Toast.Success("REVIEW", $"{(reviewRanLocal ? "LOCAL" : "CLOUD")} reader panel: {reviewResult.MeanScore:0.0}/100 ({reviewResult.BallotsSaved} ballots).");
+        }
+        catch (Exception ex)
+        {
+            Toast.Error("REVIEW-FAIL", ex.Message);
+        }
+        finally
+        {
+            reviewRunning = false;
+            await InvokeAsync(StateHasChanged);
+        }
+    }
 
     // ── Structural diagnostics (J5) ──────────────────────────────────────────
     private bool diagRunning;
@@ -2852,6 +2981,10 @@ else
     /// <summary>Export the strand to Markdown in Downloads.</summary>
     private Task PublishMarkdownAsync() =>
         RunFileExportAsync("MARKDOWN", "Markdown .md", id => Manuscript.ExportMarkdownAsync(id));
+
+    /// <summary>Export the strand to a plain-text audio/narration manuscript in Downloads.</summary>
+    private Task PublishAudioTxtAsync() =>
+        RunFileExportAsync("AUDIO-TXT", "Audio manuscript .txt", id => Manuscript.ExportAudioTxtAsync(id));
 
     /// <summary>Shared runner for the file manuscript exports — flips the Export
     /// spinner, runs the format-specific render, and toasts the outcome.</summary>

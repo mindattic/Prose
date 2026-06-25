@@ -187,6 +187,32 @@ public class EmbeddingService
         return true;
     }
 
+    /// <summary>
+    /// Embed every tracked markdown file under the <c>markdown</c> scope (keyed on
+    /// <c>MarkdownFile.Id</c>), drift-skipped by content hash. Backs the Doc Context
+    /// Stack's semantic topic triggering. Returns the count of rows written/refreshed.
+    /// </summary>
+    public async Task<int> ReembedMarkdownAsync(
+        IProgress<(int done, int total)>? progress = null, CancellationToken ct = default)
+    {
+        await EnsureSchemaOnceAsync(ct);
+        await using var db = await dbFactory.CreateDbContextAsync(ct);
+        var docs = await db.MarkdownFiles.AsNoTracking()
+            .Select(m => new { m.Id, m.RelativePath, m.Content })
+            .ToListAsync(ct);
+
+        int embedded = 0, done = 0;
+        foreach (var d in docs)
+        {
+            // Path carries topic words (e.g. "schism"); body gives semantic depth.
+            var source = $"{d.RelativePath}\n{d.Content}";
+            if (!string.IsNullOrWhiteSpace(source) && await EnsureProseFreshAsync("markdown", d.Id, source, ct))
+                embedded++;
+            progress?.Report((++done, docs.Count));
+        }
+        return embedded;
+    }
+
     private static async Task UpsertProseVectorRawAsync(
         StreetSamuraiDbContext db, string scopeKind, Guid scopeId, byte[] hash, float[] vector, CancellationToken ct)
     {

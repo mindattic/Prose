@@ -329,6 +329,14 @@ pre:hover .cpbtn{opacity:1}
 <td><strong>Sole prose entry point (SS-A16)</strong> — coordinates all services below and logs per-strand service coverage; call this, never <code>BeatGeneratorService</code> directly</td>
 </tr>
 <tr>
+<td><code>DocContextService</code> / <code>DocContextStack</code></td>
+<td><strong>Doc Context Stack</strong> — the rotating cast of pertinent canon <code>.md</code>: loads the small <code>always</code> core + the story&#39;s one strand bible &amp; register + topic docs triggered (keyword + embedding) by the beat, into one token-budgeted block; topic docs decay out of the LRU after they stop being relevant. The document analog of <code>EntityContextService</code>. Injected by <code>ProseWriterRouter</code> as <code>BeatContext.DocStackContext</code>, <strong>gated by <code>SettingsService.DocContextEnabled</code> (default off)</strong>. Dry-run with <code>ss --doc-context</code></td>
+</tr>
+<tr>
+<td><code>ContextTelemetryService</code> / <code>TelemetryExportService</code></td>
+<td>Per-beat capture of exactly which docs + entities loaded into working memory during a generation run (timestamps, durations, tiers, trigger reasons) → machine-readable <code>.json</code> (self-feedback loop), per-second <code>.log</code>, and a self-contained interactive <code>.html</code> timeline. Driven by <code>ss --refactor-telemetry</code></td>
+</tr>
+<tr>
 <td><code>BeatModeDetector</code></td>
 <td>Classifies each beat as Combat / Narrative / EmotionalClimax / Dialogue / Transition / Revelation via keyword scan on BeatGoal; Combat forces STRIKE pacing</td>
 </tr>
@@ -950,7 +958,8 @@ pre:hover .cpbtn{opacity:1}
 <p><strong>Memory:</strong> <code>--lesson-add</code> · <code>--lessons-list</code></p>
 <p><strong>Continuity &amp; world-modelling:</strong> <code>--timeline-check</code> · <code>--gear-check</code> · <code>--assemble-scene</code> (X-Ray) · <code>--world-state</code> · <code>--weapon-network</code> · <code>--ambient-palette</code> · <code>--continuity</code> · <code>--interpret</code> (prose → entities/edges)</p>
 <p><strong>Storytelling science:</strong> <code>--narrative-science [--effort …]</code></p>
-<p><strong>Export &amp; publish:</strong> <code>--publish-docx</code> · <code>--publish-audiobook</code> / <code>--narrate-strand</code> · <code>--export</code> (canon JSON) · <code>--sql-export</code> · <code>--sync-markdown</code> / <code>--restore-markdown</code></p>
+<p><strong>Export &amp; publish:</strong> <code>--publish-docx</code> (docx + epub + pdf + audio-manuscript <code>.txt</code>; prunes stale versions) · <code>--publish-audiobook</code> / <code>--narrate-strand</code> · <code>--export</code> (canon JSON) · <code>--sql-export</code></p>
+<p><strong>Markdown &amp; Doc Context Stack:</strong> <code>--sync-markdown</code> (disk → DB, auto-classifies each <code>.md</code> into always/strand/topic tiers) · <code>--restore-markdown</code> (DB → disk, point-in-time) · <code>--recall &lt;keyword&gt;</code> (call up / <code>--to-disk</code> materialize the pertinent few <code>.md</code>) · <code>--doc-context --slug &lt;strand&gt; [--goal &quot;&lt;text&gt;&quot;]</code> (<strong>dry-run</strong> the rotating cast a beat would load) · <code>--reembed --markdown</code> (embed the corpus for semantic topic triggers) · <code>--refactor-telemetry (--slug|--id) [--limit N] [--doc-context on\|off] [--review]</code> (regenerate beats through the enriched pipeline on a duplicate, capturing per-beat doc+entity telemetry → <code>.json</code>/<code>.log</code>/interactive <code>.html</code>, with optional before/after score+flow). Injection into prose prompts is gated by the <strong><code>DocContextEnabled</code></strong> setting (default <strong>off</strong>).</p>
 <p><strong>Entities &amp; migration:</strong> <code>--add-character</code> / <code>--add-place</code> / <code>--add-doc</code> / <code>--add-corponation</code> · <code>--seed</code> · <code>--migrate-sql</code> · <code>--migrate-strands</code> · <code>--rebuild-*-relational</code> (RFC 0007 backfills)</p>
 <p><strong>Infrastructure:</strong> <code>--rebuild-graph</code> · <code>--reembed</code> · <code>--coverage</code> · <code>--ask</code> (RAG) · <code>--audit-drift</code> · <code>--universe &lt;id&gt;</code> (global scope flag) · <code>--review-entity</code> · <code>--workflow-status [--slug &lt;slug&gt;|--all]</code> (service coverage matrix)</p>
 <hr>
@@ -1036,7 +1045,7 @@ pre:hover .cpbtn{opacity:1}
 </tr>
 <tr>
 <td><code>Tools.Config.cs</code></td>
-<td>Markdown-file sync/restore, <code>get_review_settings</code></td>
+<td>Markdown-file sync/restore, <code>RecallMarkdownFiles</code> (keyword recall), <code>DocContextPrepare</code> / <code>DocContextStatus</code> (Doc Context Stack), <code>get_review_settings</code></td>
 </tr>
 <tr>
 <td><code>Tools.Species.cs</code></td>

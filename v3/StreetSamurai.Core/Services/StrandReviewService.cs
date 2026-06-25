@@ -6,6 +6,7 @@ using Microsoft.Extensions.Logging;
 using MindAttic.Legion;
 using StreetSamurai.Core.Data;
 using StreetSamurai.Core.Data.Entities;
+using StreetSamurai.Core.Services.Local;
 
 namespace StreetSamurai.Core.Services;
 
@@ -20,6 +21,8 @@ namespace StreetSamurai.Core.Services;
 public class StrandReviewService
 {
     private readonly LegionClient legion;
+    private readonly CloudReviewLlm cloudLlm;
+    private readonly LocalReviewLlm localLlm;
     private readonly VotingConfiguration cfg;
     private readonly SettingsService settings;
     private readonly StrandMarkdownExporter exporter;
@@ -46,6 +49,8 @@ public class StrandReviewService
 
     public StrandReviewService(
         LegionClient legion,
+        CloudReviewLlm cloudLlm,
+        LocalReviewLlm localLlm,
         VotingConfiguration cfg,
         SettingsService settings,
         StrandMarkdownExporter exporter,
@@ -57,6 +62,8 @@ public class StrandReviewService
         ProseLessonStore? proseLessons = null)
     {
         this.legion = legion;
+        this.cloudLlm = cloudLlm;
+        this.localLlm = localLlm;
         this.cfg = cfg;
         this.settings = settings;
         this.exporter = exporter;
@@ -66,6 +73,37 @@ public class StrandReviewService
         this.structural = structural;
         this.log = log;
         this.proseLessons = proseLessons;
+    }
+
+    /// <summary>The transport + provider/key/model resolution chosen for one review run.
+    /// Cloud (default) routes through <see cref="CloudReviewLlm"/> across the trusted-4;
+    /// local (<c>--local</c>) routes a single "local" pseudo-provider through
+    /// <see cref="LocalReviewLlm"/>. Built once per run by <see cref="BuildRoute"/> so the
+    /// two paths can never interleave within a run.</summary>
+    private sealed record ReviewRoute(
+        IReviewLlm Llm, List<string> Providers, int MaxConcurrencyValue,
+        Func<string, string?> KeyFor, Func<string, bool, string> ModelFor);
+
+    /// <summary>Pick the transport for a run. The ONLY place cloud-vs-local is decided —
+    /// everything downstream just uses the returned route.</summary>
+    private ReviewRoute BuildRoute(bool useLocal, string? allowedProvidersOverride = null, string? localModelOverride = null)
+    {
+        if (useLocal)
+        {
+            var model = string.IsNullOrWhiteSpace(localModelOverride) ? settings.LocalReviewModel : localModelOverride;
+            return new ReviewRoute(
+                localLlm,
+                new List<string> { "local" },
+                Math.Max(1, settings.LocalReviewMaxConcurrency),
+                _ => "local",         // dummy key; LocalReviewLlm ignores it
+                (_, _) => model);     // one local model, regardless of provider/cheap
+        }
+        return new ReviewRoute(
+            cloudLlm,
+            ReviewProviderIds(allowedProvidersOverride),
+            MaxConcurrency,
+            ResolveKey,
+            ResolveBallotModel);
     }
 
     public record ReviewRunResult(int Requested, int Saved, int Failed, double AvgScore, string ContentHash, string ExportPath);
@@ -195,7 +233,8 @@ public class StrandReviewService
     public async Task<SampledRunResult> RunSampledReviewAsync(
         Guid strandId, int ballotCount, int proseCount,
         IProgress<int>? progress = null, CancellationToken ct = default,
-        bool skipDiagnosis = false, bool cheapModels = false, string? allowedProvidersOverride = null)
+        bool skipDiagnosis = false, bool cheapModels = false, string? allowedProvidersOverride = null,
+        bool useLocal = false, string? localModelOverride = null)
     {
         if (ballotCount <= 0) ballotCount = settings.ReviewBallots;
         if (proseCount < 0) proseCount = 0;
@@ -212,7 +251,7 @@ public class StrandReviewService
                     strandId, probe.Markdown.Length);
                 var perSeg = Math.Max(6, (int)Math.Ceiling(ballotCount / 3.0));
                 return await RunSegmentedReviewAsync(strandId, perSeg, proseCount, SegmentTargetChars,
-                    progress, ct, allowedProvidersOverride);
+                    progress, ct, allowedProvidersOverride, useLocal, localModelOverride);
             }
         }
 
@@ -248,7 +287,8 @@ public class StrandReviewService
                 // structural findings to the report so they're always visible.
                 var result = await RunSampledReviewAsync(strandId, ballotCount, proseCount,
                     progress, ct, skipDiagnosis: true, cheapModels: cheapModels,
-                    allowedProvidersOverride: allowedProvidersOverride);
+                    allowedProvidersOverride: allowedProvidersOverride,
+                    useLocal: useLocal, localModelOverride: localModelOverride);
                 return result with
                 {
                     ReportMarkdown      = AppendStructuralWarnings(result.ReportMarkdown, diagnosis),
@@ -256,7 +296,8 @@ public class StrandReviewService
                 };
             }
         }
-        var providers = ReviewProviderIds(allowedProvidersOverride);
+        var route = BuildRoute(useLocal, allowedProvidersOverride, localModelOverride);
+        var providers = route.Providers;
         if (providers.Count == 0)
             throw new InvalidOperationException("No trusted LLM providers are configured with API keys — cannot run reviews.");
 
@@ -282,7 +323,7 @@ public class StrandReviewService
         var lessonsBlock = proseLessons?.FormatBlockForReview(strandSlug);
 
         // ── Tier 1: cheap score-only ballots (providers round-robined → even split). ──
-        var sem = new SemaphoreSlim(MaxConcurrency);
+        var sem = new SemaphoreSlim(route.MaxConcurrencyValue);
         var bag = new System.Collections.Concurrent.ConcurrentBag<StrandReview>();
         var done = 0; var failed = 0;
         var tasks = new List<Task>(personas.Count);
@@ -295,7 +336,7 @@ public class StrandReviewService
                 await sem.WaitAsync(ct);
                 try
                 {
-                    var r = await BallotOnceAsync(strandId, export, persona, provider, ct, lessonsBlock, cheapModels);
+                    var r = await BallotOnceAsync(strandId, export, persona, provider, route, ct, lessonsBlock, cheapModels);
                     if (r != null) { r.FocusGroupName = groupName; bag.Add(r); }
                     else Interlocked.Increment(ref failed);
                 }
@@ -323,7 +364,7 @@ public class StrandReviewService
                     await sem.WaitAsync(ct);
                     try
                     {
-                        var r = await BallotOnceAsync(strandId, export, persona, provider, ct, lessonsBlock, cheapModels);
+                        var r = await BallotOnceAsync(strandId, export, persona, provider, route, ct, lessonsBlock, cheapModels);
                         if (r != null) { r.FocusGroupName = groupName; bag.Add(r); }
                     }
                     catch (Exception ex) { log.LogWarning(ex, "Retry ballot failed: {P}", persona.Id); }
@@ -344,7 +385,7 @@ public class StrandReviewService
         if (proseCount > 0)
         {
             var picks = SelectInformative(saved, Math.Min(proseCount, saved.Count));
-            var psem = new SemaphoreSlim(MaxConcurrency);
+            var psem = new SemaphoreSlim(route.MaxConcurrencyValue);
             var ptasks = picks.Select(rv => Task.Run(async () =>
             {
                 await psem.WaitAsync(ct);
@@ -352,7 +393,7 @@ public class StrandReviewService
                 {
                     var persona = PersonasByIds(new[] { rv.PersonaId }).FirstOrDefault();
                     if (persona == null) return;
-                    var prose = await ProseOnceAsync(export, persona, rv.ProviderId, ct, cheapModels);
+                    var prose = await ProseOnceAsync(export, persona, rv.ProviderId, route, ct, cheapModels);
                     if (prose != null)
                     {
                         rv.ReviewText = prose.Value.review.Trim();
@@ -423,11 +464,13 @@ public class StrandReviewService
     public async Task<SampledRunResult> RunSegmentedReviewAsync(
         Guid strandId, int ballotsPerSegment, int proseCount, int targetChars,
         IProgress<int>? progress = null, CancellationToken ct = default,
-        string? allowedProvidersOverride = null)
+        string? allowedProvidersOverride = null,
+        bool useLocal = false, string? localModelOverride = null)
     {
         if (ballotsPerSegment <= 0) ballotsPerSegment = 8;
         if (targetChars <= 0) targetChars = SegmentTargetChars;
-        var providers = ReviewProviderIds(allowedProvidersOverride);
+        var route = BuildRoute(useLocal, allowedProvidersOverride, localModelOverride);
+        var providers = route.Providers;
         if (providers.Count == 0)
             throw new InvalidOperationException("No trusted LLM providers are configured with API keys — cannot run reviews.");
 
@@ -450,7 +493,7 @@ public class StrandReviewService
         // RecomputeScores, so a persona must ballot at most one segment).
         var pool = SampleEnrichedPersonas(seg.Segments.Count * ballotsPerSegment);
 
-        var sem = new SemaphoreSlim(MaxConcurrency);
+        var sem = new SemaphoreSlim(route.MaxConcurrencyValue);
         var done = 0; var failed = 0;
         var perSegment = new List<(StrandMarkdownExporter.StrandSegment Seg, List<StrandReview> Ballots)>();
 
@@ -469,7 +512,7 @@ public class StrandReviewService
                     await sem.WaitAsync(ct);
                     try
                     {
-                        var r = await SegmentBallotOnceAsync(strandId, seg.Title, s, totalBeatCount, persona, provider, ct, lessonsBlock);
+                        var r = await SegmentBallotOnceAsync(strandId, seg.Title, s, totalBeatCount, persona, provider, route, ct, lessonsBlock);
                         if (r != null) { r.FocusGroupName = groupName; r.ContentHash = seg.ContentHash; localBag.Add(r); }
                         else Interlocked.Increment(ref failed);
                     }
@@ -544,15 +587,15 @@ public class StrandReviewService
 
     private async Task<StrandReview?> SegmentBallotOnceAsync(
         Guid strandId, string title, StrandMarkdownExporter.StrandSegment segment, int totalBeatCount,
-        Persona persona, string provider, CancellationToken ct, string? lessonsBlock)
+        Persona persona, string provider, ReviewRoute route, CancellationToken ct, string? lessonsBlock)
     {
-        var key = ResolveKey(provider);
+        var key = route.KeyFor(provider);
         if (string.IsNullOrWhiteSpace(key)) { log.LogWarning("No API key for provider {Provider}", provider); return null; }
-        var model = ResolveBallotModel(provider, false);
+        var model = route.ModelFor(provider, false);
         var system = BuildSegmentBallotSystemPrompt(persona, title, segment, lessonsBlock);
         var segBeats = segment.LastBeat - segment.FirstBeat + 1;
         var maxTok = Math.Min(8000, 900 + segBeats * 6);
-        var raw = await legion.CallAsync(provider, key!, model, system, segment.Markdown, maxTokens: maxTok, temperature: 0.85, ct);
+        var raw = await route.Llm.CallAsync(provider, key!, model, system, segment.Markdown, maxTokens: maxTok, temperature: 0.85, ct);
         if (!TryParseBallot(raw, totalBeatCount, out var score, out var flow, out var weakness, out var beatScores))
         {
             log.LogWarning("Unparseable segment ballot from {Persona} via {Provider}", persona.Id, provider);
@@ -1082,18 +1125,18 @@ Return ONLY a JSON object, nothing else:
     }
 
     private async Task<StrandReview?> BallotOnceAsync(
-        Guid strandId, StrandMarkdownExporter.StrandExport export, Persona persona, string provider, CancellationToken ct,
+        Guid strandId, StrandMarkdownExporter.StrandExport export, Persona persona, string provider, ReviewRoute route, CancellationToken ct,
         string? lessonsBlock = null, bool cheapModels = false)
     {
-        var key = ResolveKey(provider);
+        var key = route.KeyFor(provider);
         if (string.IsNullOrWhiteSpace(key)) { log.LogWarning("No API key for provider {Provider}", provider); return null; }
-        var model = ResolveBallotModel(provider, cheapModels);
+        var model = route.ModelFor(provider, cheapModels);
 
         var system = BuildBallotSystemPrompt(persona, export.Title, export.BeatCount, lessonsBlock);
         // beat_scores must cover every beat — the JSON grows with beat count, so the
         // output budget must too (a 535-beat book strand needs ~4k tokens of ballot).
         var maxTok = Math.Min(8000, 900 + export.BeatCount * 6);
-        var raw = await legion.CallAsync(provider, key!, model, system, export.Markdown, maxTokens: maxTok, temperature: 0.85, ct);
+        var raw = await route.Llm.CallAsync(provider, key!, model, system, export.Markdown, maxTokens: maxTok, temperature: 0.85, ct);
         if (!TryParseBallot(raw, export.BeatCount, out var score, out var flow, out var weakness, out var beatScores))
         {
             log.LogWarning("Unparseable ballot from {Persona} via {Provider}", persona.Id, provider);
@@ -1127,14 +1170,14 @@ Return ONLY a JSON object, nothing else:
     /// <summary>Full prose review for an already-balloted persona — used to upgrade
     /// the most informative ballots with readable text (returns text only).</summary>
     private async Task<(string review, List<string> improvements)?> ProseOnceAsync(
-        StrandMarkdownExporter.StrandExport export, Persona persona, string provider, CancellationToken ct,
+        StrandMarkdownExporter.StrandExport export, Persona persona, string provider, ReviewRoute route, CancellationToken ct,
         bool cheapModels = false)
     {
-        var key = ResolveKey(provider);
+        var key = route.KeyFor(provider);
         if (string.IsNullOrWhiteSpace(key)) return null;
-        var model = ResolveBallotModel(provider, cheapModels);
+        var model = route.ModelFor(provider, cheapModels);
         var system = BuildReviewerSystemPrompt(persona, export.Title);
-        var raw = await legion.CallAsync(provider, key!, model, system, export.Markdown, maxTokens: 1400, temperature: 0.85, ct);
+        var raw = await route.Llm.CallAsync(provider, key!, model, system, export.Markdown, maxTokens: 1400, temperature: 0.85, ct);
         return TryParseReview(raw, out _, out var review, out var improvements) ? (review, improvements) : null;
     }
 
@@ -1247,7 +1290,8 @@ Return ONLY a JSON object and nothing else:
 
     /// <summary>Generate (and upsert) the Amazon-style aggregate summary for the
     /// strand's most-recent review batch.</summary>
-    public async Task<StrandReviewSummary> GenerateSummaryAsync(Guid strandId, CancellationToken ct = default)
+    public async Task<StrandReviewSummary> GenerateSummaryAsync(Guid strandId, CancellationToken ct = default,
+        bool useLocal = false, string? localModelOverride = null)
     {
         await using var db = await dbFactory.CreateDbContextAsync(ct);
         // Use the newest content fingerprint's reviews (the latest run).
@@ -1267,7 +1311,7 @@ Return ONLY a JSON object and nothing else:
         var dist = ScoreBuckets(reviews);
         var distJson = JsonSerializer.Serialize(dist);
 
-        var summaryMd = await SynthesizeSummaryAsync(reviews, avg, dist, ct);
+        var summaryMd = await SynthesizeSummaryAsync(reviews, avg, dist, ct, useLocal, localModelOverride);
 
         var existing = await db.StrandReviewSummaries.FirstOrDefaultAsync(s => s.StrandId == strandId, ct);
         if (existing == null)
@@ -1286,16 +1330,34 @@ Return ONLY a JSON object and nothing else:
     }
 
     private async Task<string> SynthesizeSummaryAsync(
-        List<StrandReview> reviews, double avg, Dictionary<string, int> dist, CancellationToken ct)
+        List<StrandReview> reviews, double avg, Dictionary<string, int> dist, CancellationToken ct,
+        bool useLocal = false, string? localModelOverride = null)
     {
-        // Judge provider synthesizes; fall back to any active provider.
-        var judgeId = settings.ReviewJudgeProvider;
-        var judge = cfg.ActiveProviderIds.Contains(judgeId)
-            ? judgeId
-            : cfg.ActiveProviderIds.FirstOrDefault() ?? "claude";
-        var key = ResolveKey(judge);
-        if (string.IsNullOrWhiteSpace(key)) return FallbackSummary(reviews, avg, dist);
-        var model = LegionClient.DefaultModels.GetValueOrDefault(judge, "");
+        // Pick the synthesizer transport. Local reviews synthesize their synopsis on the
+        // local model too — never silently reaching for a cloud judge.
+        IReviewLlm llm;
+        string judge;
+        string? key;
+        string model;
+        if (useLocal)
+        {
+            llm   = localLlm;
+            judge = "local";
+            key   = "local";
+            model = string.IsNullOrWhiteSpace(localModelOverride) ? settings.LocalReviewModel : localModelOverride;
+        }
+        else
+        {
+            llm = cloudLlm;
+            // Judge provider synthesizes; fall back to any active provider.
+            var judgeId = settings.ReviewJudgeProvider;
+            judge = cfg.ActiveProviderIds.Contains(judgeId)
+                ? judgeId
+                : cfg.ActiveProviderIds.FirstOrDefault() ?? "claude";
+            key = ResolveKey(judge);
+            if (string.IsNullOrWhiteSpace(key)) return FallbackSummary(reviews, avg, dist);
+            model = LegionClient.DefaultModels.GetValueOrDefault(judge, "");
+        }
 
         // Corpus: score distribution + a gripe TALLY (so the synopsis can calibrate
         // many/some/a few honestly) + the full-prose reviews (for specific, quotable
@@ -1345,7 +1407,7 @@ Be specific; do not invent praise the reviews don't support.";
 
         try
         {
-            var md = await legion.CallAsync(judge, key!, model, system, user, maxTokens: 2200, temperature: 0.4, ct);
+            var md = await llm.CallAsync(judge, key!, model, system, user, maxTokens: 2200, temperature: 0.4, ct);
             return string.IsNullOrWhiteSpace(md) ? FallbackSummary(reviews, avg, dist) : md.Trim();
         }
         catch (Exception ex)

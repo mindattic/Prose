@@ -209,16 +209,29 @@ cyberpunk spectacle register — the quieter one. The one where a child is logge
 unexcused absence and the system
 moves on to the next item. Yemina's competence makes this visible, not dramatic.
 
-Score: **88.7/100** (n=12, avg; prior 88.45/n=20, prior-prior 86.3). Gateway designation confirmed.
-Gateway-commandments audit (8/8 incl. GLMZ five-pillar): **READY**. Mechanism redesigned SS-A18
-(Gingerbread House; see §4b).
+Score: **89.2/100**, narrative-flow **91.7/100** (n=12; prior 87.95/n=20, prior-prior 88.45). Gateway
+designation confirmed. Gateway-commandments audit: **8/8 PASS, 0 advisory** (was 1 advisory on
+`land_past_handoff`). Mechanism redesigned SS-A18 (Gingerbread House; see §4b).
+
+**New-systems surgical pass (2026-06-24).** Rather than bulk-regenerate (the A/B experiments proved
+regen-from-synopsis regresses a finished strand ~−8), three beats were hand-rewritten through the
+DocContext-loaded GREY register + emotional-depth diagnostics: beat 18 (Osei/Lech kitchen — narrated
+withholding → set-place object + memorized-ticket grievance; moved from weakest-of-6-dimensions to
+*strongest* evidence for ObjectsAndGestures + RelationalSubtext); beat 21 (Selvamani's stated
+two-year grievance → dead unsent-submission record); beat 40 ending (editorial self-summary → bare
+intake-reorder gesture; flipped the gateway advisory to pass, panel 5.0/5 all clusters). Four
+plant/payoff pairs registered (drone surveillance, blank-sender assignment, never-closed neuretics,
+Lure/Counter interposition) — `reread_reward` now cites them. Emotional depth held at 100.
 
 ## 7. User stories {#SS-ATTE-7}
 
 - **ATTE-US-1 ✅** Yemina Fola entity seeded in DB; cross-district truancy investigator;
   Arcturus contract; Pilsen Veil jurisdiction.
 - **ATTE-US-2 ✅** 40 beats written (Sonnet draft → Opus polish; SS-A18 redesign removed 2).
-- **ATTE-US-3 ✅** Standalone review ≥ 82%. *Achieved: 86.3 → 88.45.*
+- **ATTE-US-3 ✅** Standalone review ≥ 82%. *Achieved: 86.3 → 88.45 → 89.2 (flow 91.7), n=12.*
 - **ATTE-US-4 ✅** Docx exported.
 - **ATTE-US-5 ✅** Gateway commandments audit: all 8 satisfied (incl. GLMZ five-pillar). `ss --story-audit --slug attendance-019ebf4c` → READY.
 - **ATTE-US-6 ✅** Schism mechanism redesigned (SS-A18): Gingerbread House / echo + heading / no bathroom-teleport. See §4b.
+- **ATTE-US-7 ✅** New-systems surgical pass: DocContext (GREY register) + emotional-depth + plant/payoff
+  engines used as diagnostics + targeted enrichment (NOT bulk regen). 3 beats rewritten, 4 plant/payoff
+  pairs registered. *Evidence: gateway advisory 1→0; beat 18 weakest→strongest; review 89.2/flow 91.7.*

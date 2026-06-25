@@ -276,15 +276,19 @@ Monitor quarterly.
 She left the tea where it was.
 
 [Beat 18]
-The Osei family lived four kilometers north, in a building that was trying to be gentrified and not succeeding. Lech Szymborski answered the door with the posture of a man who had been answering doors for eleven days and had an argument ready for each kind of person behind them. He was Polish, forty, with a jaw that had been clenched so long it had developed muscle definition. When Yemina showed her credentials he said "Another one" and opened the door wider.
+The Osei family lived four kilometers north, in a building that was trying to be gentrified and not succeeding. Lech Szymborski answered the door with the posture of a man who had been answering doors for eleven days and had an argument ready for each kind of person behind them. He was Polish, forty, with a jaw that had been clenched so long it had developed muscle definition. When Yemina showed her credentials he said "Another one," and opened the door wider.
 
-His wife, Abena Osei, was in the kitchen. She was Ghanaian, thirty-eight, and had the quality of stillness that sometimes looks like shock from outside. She poured Yemina tea without asking.
+His wife, Abena Osei, was in the kitchen. She was Ghanaian, thirty-eight, and had the quality of stillness that sometimes looks like shock from outside. She poured Yemina tea without asking. At the small table one place was still set — a child's plate, a cup with a lid, a folded napkin squared to the table's edge the way you square a thing you are not ready to clear. No one had touched it. No one in this kitchen, Yemina understood, was going to be the one who decided it was time.
 
-"She heard it for six weeks," Abena said. "She said it was at the back of her neuretics. She said it felt like a word she didn't know yet."
+"She heard it for six weeks," Abena said. "She said it was at the back of her neuretics. She said it felt like a word she didn't know yet." She looked at the set place and not at Yemina. "Daria liked to know words before anyone taught them to her."
 
-Lech asked, from the doorway, whether municipal attendance was going to fix this or just document it.
+Lech came in from the doorway and set a tablet on the table, face up, turned so Yemina could read it. A service ticket. *Missing minor, self-egress — Arcturus Holdings, Pediatric / Truancy.* Filed by him, day one. Below it the system's replies, timestamped across the eleven days: *Received. Routed. Pending review. Pending review.* He didn't explain it. He had stopped expecting the document to be read by a person and started showing it to the people instead, which was its own kind of filing.
 
-Yemina wrote in her notebook. She did not answer the question because there was only one honest answer and this was not the moment for it.
+"It has a number," he said. "I have the number memorized. You're here to fix it, or you're here to add to the number."
+
+Yemina wrote one line in her notebook — the only thing the visit had produced that a record would accept: *Burnout flag, six weeks prior. Consistent.*
+
+The flag had a field. The plate did not. The number Lech had memorized did not. She closed the notebook over the line that fit and left the rest of it in the kitchen, unrecorded, because there was nowhere on the form for it to go.
 
 [Beat 19]
 She pulled all forty-seven pediatric care records that afternoon, sitting in the gray car because there was nowhere else to go, the case system open on one neuretics layer and the records on another and her notebook open on her knee.
@@ -339,7 +343,7 @@ Selvamani looked at her. "I can't confirm that. I can tell you that what I've be
 
 Selvamani picked up one of the printouts. She held it for a moment without looking at it - the way you hold something you've carried long enough that the weight is familiar even when the contents aren't. She set it back down on the exact stack she'd taken it from. Her hands were precise about where it landed.
 
-"The families use the same words," she said. "Different languages. Same description." She looked at Yemina. "I've been trying to get anyone to listen to that for two years."
+"The families use the same words," she said. "Different languages. Same description." On the desk beside the charts a journal submission sat open and unsent — the same title as the paper that had cost her the affiliation, the resubmit date more than a year stale, the *recipient* field empty. She didn't look at it. She had the manner of someone who had stopped looking at it a long time ago. "Two years I've had this to hand to someone," she said. "There was never anyone the system routed it to."
 
 [Beat 22]
 "Where are they," Yemina said.
@@ -704,7 +708,7 @@ She pulled the pediatric care record. A week ago she would have read it the way 
 
 It was clean. This time it was clean.
 
-She would look at it first every time now. There was no field on the form that asked her to, and there never would be, and she understood that about herself the way she understood the car was gray: it had stopped being a thing she could argue with.
+She moved the activity-log line to the top of her own intake order - the one reorder a contractor was allowed to make, on her own copy, where no supervisor would see it and no one would ask. The form would still open on the name and the absence count. She would open on the log.
 
 She drove.
 

@@ -1583,6 +1583,59 @@ if (args.Contains("--restore-markdown"))
     return;
 }
 
+// CLI mode: keyword recall — call up (print) or create (--to-disk) the select few
+// tracked .md files relevant to a topic, straight from the DB.
+//   ss --recall <keyword> [--content] [--to-disk] [--as-of <datetime-utc>]
+if (args.Contains("--recall"))
+{
+    var cliBuilder = WebApplication.CreateBuilder(args);
+    cliBuilder.Services.AddStreetSamuraiServices();
+    var cliApp = cliBuilder.Build();
+    Environment.ExitCode = await RecallMarkdownCli.RunAsync(args, cliApp.Services);
+    return;
+}
+
+// CLI mode: Doc Context Stack dry-run — print the rotating cast of .md docs that WOULD
+// load for a strand + optional scene text (tier, reason, score, budget). Read-only.
+//   ss --doc-context --slug <strand> [--goal "<text>"] [--budget <tokens>]
+if (args.Contains("--doc-context-hook"))
+{
+    // UserPromptSubmit hook backend — stdout must contain ONLY the hook JSON, so kill logging.
+    var cliBuilder = WebApplication.CreateBuilder(args);
+    cliBuilder.Logging.ClearProviders();
+    cliBuilder.Services.AddStreetSamuraiServices();
+    var cliApp = cliBuilder.Build();
+    Environment.ExitCode = await DocContextHookCli.RunAsync(args, cliApp.Services);
+    return;
+}
+
+// REMOVED 2026-06-24: `--refactor-telemetry` (bulk regenerate-beats-from-synopsis runner).
+// It rebuilt finished beats from their one-line goals, discarding hand-crafted prose — proven
+// to regress finished strands (dual-read: surgical 80.8 > baseline 79.7 > regen 76.2). Doc/Entity
+// context were validated separately and are KEPT; regen-from-synopsis is not a revision tool and
+// is gone. New-beat generation lives in ProseWriterRouter.WriteAsync, untouched.
+
+// CLI mode: dual-read comparative review — the SAME pinned panel grades both versions of a story;
+// pairs scores per reader (within-reader delta cancels taste bias) → keep/revert/merge verdict.
+//   ss --dual-read --old <slug|id> --new <slug|id> [--panel <name>] [--readers N]
+if (args.Contains("--dual-read"))
+{
+    var cliBuilder = WebApplication.CreateBuilder(args);
+    cliBuilder.Services.AddStreetSamuraiServices();
+    var cliApp = cliBuilder.Build();
+    Environment.ExitCode = await DualReadCli.RunAsync(args, cliApp.Services);
+    return;
+}
+
+if (args.Contains("--doc-context"))
+{
+    var cliBuilder = WebApplication.CreateBuilder(args);
+    cliBuilder.Services.AddStreetSamuraiServices();
+    var cliApp = cliBuilder.Build();
+    Environment.ExitCode = await DocContextCli.RunAsync(args, cliApp.Services);
+    return;
+}
+
 // ss --workflow-status [--slug <slug> | --all] [--json]
 // Per-strand or global prose service coverage matrix. Shows which services
 // (Pacing, StoryMethodology, PlantPayoff, StoryAudit, Combat) were active

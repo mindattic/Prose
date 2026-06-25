@@ -118,6 +118,8 @@ The core invariant ([SS-LAW-1](docs/BIBLE.md)): **the live canon is the SQL data
 | Service | Role |
 |---|---|
 | `ProseWriterRouter` | **Sole prose entry point (SS-A16)** — coordinates all services below and logs per-strand service coverage; call this, never `BeatGeneratorService` directly |
+| `DocContextService` / `DocContextStack` | **Doc Context Stack** — the rotating cast of pertinent canon `.md`: loads the small `always` core + the story's one strand bible & register + topic docs triggered (keyword + embedding) by the beat, into one token-budgeted block; topic docs decay out of the LRU after they stop being relevant. The document analog of `EntityContextService`. Injected by `ProseWriterRouter` as `BeatContext.DocStackContext`, **gated by `SettingsService.DocContextEnabled` (default off)**. Dry-run with `ss --doc-context` |
+| `ContextTelemetryService` / `TelemetryExportService` | Per-beat capture of exactly which docs + entities loaded into working memory during a generation run (timestamps, durations, tiers, trigger reasons) → machine-readable `.json` (self-feedback loop), per-second `.log`, and a self-contained interactive `.html` timeline. Driven by `ss --refactor-telemetry` |
 | `BeatModeDetector` | Classifies each beat as Combat / Narrative / EmotionalClimax / Dialogue / Transition / Revelation via keyword scan on BeatGoal; Combat forces STRIKE pacing |
 | `CombatProseGuidance` | Injects combat-prose laws into the prompt for Combat beats: verbs-first, fragment sentences, no emotion-naming, dissociated observer |
 | `BeatGeneratorService` | **Core generation** — panel of expert personas votes on the best next beat; an LLM expands it to prose. Tier-locked HIGH for prose the reader sees |
@@ -324,7 +326,9 @@ dotnet run --project v3/StreetSamurai.Blazor -- <args>
 
 **Storytelling science:** `--narrative-science [--effort …]`
 
-**Export & publish:** `--publish-docx` · `--publish-audiobook` / `--narrate-strand` · `--export` (canon JSON) · `--sql-export` · `--sync-markdown` / `--restore-markdown`
+**Export & publish:** `--publish-docx` (docx + epub + pdf + audio-manuscript `.txt`; prunes stale versions) · `--publish-audiobook` / `--narrate-strand` · `--export` (canon JSON) · `--sql-export`
+
+**Markdown & Doc Context Stack:** `--sync-markdown` (disk → DB, auto-classifies each `.md` into always/strand/topic tiers) · `--restore-markdown` (DB → disk, point-in-time) · `--recall <keyword>` (call up / `--to-disk` materialize the pertinent few `.md`) · `--doc-context --slug <strand> [--goal "<text>"]` (**dry-run** the rotating cast a beat would load) · `--reembed --markdown` (embed the corpus for semantic topic triggers) · `--refactor-telemetry (--slug|--id) [--limit N] [--doc-context on\|off] [--review]` (regenerate beats through the enriched pipeline on a duplicate, capturing per-beat doc+entity telemetry → `.json`/`.log`/interactive `.html`, with optional before/after score+flow). Injection into prose prompts is gated by the **`DocContextEnabled`** setting (default **off**).
 
 **Entities & migration:** `--add-character` / `--add-place` / `--add-doc` / `--add-corponation` · `--seed` · `--migrate-sql` · `--migrate-strands` · `--rebuild-*-relational` (RFC 0007 backfills)
 
@@ -361,7 +365,7 @@ The families at a glance:
 | `Tools.Writing.cs` | `create_book`, `add_chapter_to_book`, `get_book(_outline)` |
 | `Tools.Universe.cs` | `current_universe`, `list_universes`, `switch_universe`, `get_story_bible` |
 | `Tools.Repository.cs` | `list_repositories`, `create_repository`, `get_entity_tree` |
-| `Tools.Config.cs` | Markdown-file sync/restore, `get_review_settings` |
+| `Tools.Config.cs` | Markdown-file sync/restore, `RecallMarkdownFiles` (keyword recall), `DocContextPrepare` / `DocContextStatus` (Doc Context Stack), `get_review_settings` |
 | `Tools.Species.cs` | `list_species`, `get_species`, `get_archetype` |
 | `Tools.PlantPayoff.cs` | `register_plant_payoff`, `link_plant_beat`, `link_payoff_beat`, `get_plant_payoffs`, `audit_plant_payoffs`, `set_plant_transparency` |
 | `Tools.StoryAudit.cs` | `audit_story_commandments`, `get_strand_spine` — gateway/sequel commandment auditing |
