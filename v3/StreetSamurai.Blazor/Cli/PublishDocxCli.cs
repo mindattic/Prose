@@ -57,16 +57,18 @@ public static class PublishDocxCli
             strandId = strand.Id; strandTitle = strand.Title;
         }
 
-        Console.WriteLine($"[publish-docx] Rendering \"{strandTitle}\" to .docx + .epub + .pdf…");
+        Console.WriteLine($"[publish-docx] Rendering \"{strandTitle}\" to .docx + .epub + .pdf + .txt…");
         try
         {
-            // docx first — it increments strand.Version; epub + pdf then read the same version.
+            // docx first — it increments strand.Version; epub + pdf + txt then read the same version.
             var docxPath = await docx.ExportStrandAsync(strandId, author);
             Console.WriteLine($"[publish-docx] Wrote docx: {docxPath}");
             var epubPath = await manuscript.ExportEpubAsync(strandId, author);
             Console.WriteLine($"[publish-docx] Wrote epub: {epubPath}");
             var pdfPath = await manuscript.ExportPdfAsync(strandId, author);
             Console.WriteLine($"[publish-docx] Wrote pdf:  {pdfPath}");
+            var txtPath = await manuscript.ExportAudioTxtAsync(strandId, author);
+            Console.WriteLine($"[publish-docx] Wrote txt:  {txtPath}");
             return 0;
         }
         catch (Exception ex) { Console.Error.WriteLine($"[publish-docx] Failed: {ex.Message}"); return 1; }

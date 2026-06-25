@@ -34,6 +34,7 @@ Only use `dotnet run --project v3/StreetSamurai.Blazor -- <args>` when the CLI's
 - Do NOT use underscore-prefixed variables (e.g., `_myField`). Use `camelCase` for private fields without the underscore prefix.
 - JSON only for all data files. No Python scripts, no YAML, no Markdown files except README.
 - Web-only project (Blazor Server). No MAUI host.
+- The null-conditional operator `?.` (and `?[]`) is **not allowed inside an EF Core expression-tree lambda** (anything that becomes a SQL query — `Select`/`Where`/`GroupBy` projections, etc.). It fails to compile (`CS8072`). Project the scalar **before** the terminal operator instead: write `g.OrderByDescending(h => h.RecordedAt).Select(h => h.MeanScore).FirstOrDefault()`, not `g.OrderByDescending(...).FirstOrDefault()?.MeanScore ?? 0`.
 
 ## World Rules
 - The symbol Φ is the QUANTA currency symbol. It is NEVER the Greek letter phi.

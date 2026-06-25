@@ -528,12 +528,39 @@ public static class MigrateSqlCli
                             [SyncedBy]      NVARCHAR(100)    NOT NULL DEFAULT '',
                             CONSTRAINT [PK_MarkdownFiles] PRIMARY KEY ([Id])
                         );
-                        CREATE UNIQUE INDEX [IX_MarkdownFiles_RelativePath] ON [dbo].[MarkdownFiles] ([RelativePath]);
+                        CREATE UNIQUE INDEX [IX_MarkdownFiles_FileRoot_RelativePath] ON [dbo].[MarkdownFiles] ([FileRoot], [RelativePath]);
                         CREATE        INDEX [IX_MarkdownFiles_Category]     ON [dbo].[MarkdownFiles] ([Category]);
                         CREATE        INDEX [IX_MarkdownFiles_LastSyncedAt] ON [dbo].[MarkdownFiles] ([LastSyncedAt]);
                     END;
                     """);
                 Console.WriteLine("  ✔ MarkdownFiles table created (or already exists).");
+
+                // Swap the legacy single-column unique index for a composite (FileRoot, RelativePath)
+                // unique index. RelativePath alone is NOT unique: project + global CLAUDE.md both have
+                // RelativePath "CLAUDE.md" and differ only by FileRoot. Idempotent.
+                await db.Database.ExecuteSqlRawAsync("""
+                    IF EXISTS (SELECT 1 FROM sys.indexes WHERE name = N'IX_MarkdownFiles_RelativePath' AND object_id = OBJECT_ID(N'[dbo].[MarkdownFiles]'))
+                        DROP INDEX [IX_MarkdownFiles_RelativePath] ON [dbo].[MarkdownFiles];
+                    IF NOT EXISTS (SELECT 1 FROM sys.indexes WHERE name = N'IX_MarkdownFiles_FileRoot_RelativePath' AND object_id = OBJECT_ID(N'[dbo].[MarkdownFiles]'))
+                        CREATE UNIQUE INDEX [IX_MarkdownFiles_FileRoot_RelativePath] ON [dbo].[MarkdownFiles] ([FileRoot], [RelativePath]);
+                    """);
+                Console.WriteLine("  ✔ Unique index is composite (FileRoot, RelativePath).");
+
+                // Doc Context Stack columns (dynamic .md working-set engine). Idempotent ADD;
+                // guarded per-column so re-runs are no-ops. Temporal table tolerates ADD with DEFAULT.
+                await db.Database.ExecuteSqlRawAsync("""
+                    IF COL_LENGTH('dbo.MarkdownFiles','Tier') IS NULL
+                        ALTER TABLE [dbo].[MarkdownFiles] ADD [Tier] NVARCHAR(20) NOT NULL CONSTRAINT [DF_MarkdownFiles_Tier] DEFAULT 'topic';
+                    IF COL_LENGTH('dbo.MarkdownFiles','Scope') IS NULL
+                        ALTER TABLE [dbo].[MarkdownFiles] ADD [Scope] NVARCHAR(1000) NOT NULL CONSTRAINT [DF_MarkdownFiles_Scope] DEFAULT '';
+                    IF COL_LENGTH('dbo.MarkdownFiles','Triggers') IS NULL
+                        ALTER TABLE [dbo].[MarkdownFiles] ADD [Triggers] NVARCHAR(2000) NOT NULL CONSTRAINT [DF_MarkdownFiles_Triggers] DEFAULT '';
+                    IF COL_LENGTH('dbo.MarkdownFiles','AutoTier') IS NULL
+                        ALTER TABLE [dbo].[MarkdownFiles] ADD [AutoTier] BIT NOT NULL CONSTRAINT [DF_MarkdownFiles_AutoTier] DEFAULT 1;
+                    IF NOT EXISTS (SELECT 1 FROM sys.indexes WHERE name = N'IX_MarkdownFiles_Tier' AND object_id = OBJECT_ID(N'[dbo].[MarkdownFiles]'))
+                        CREATE INDEX [IX_MarkdownFiles_Tier] ON [dbo].[MarkdownFiles] ([Tier]);
+                    """);
+                Console.WriteLine("  ✔ Doc-context columns present (Tier, Scope, Triggers, AutoTier).");
 
                 // Enable system versioning via the same idempotent EnableSystemVersioningAsync path.
                 Console.WriteLine("  · enabling system versioning on MarkdownFiles…");

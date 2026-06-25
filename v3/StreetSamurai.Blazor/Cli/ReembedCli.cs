@@ -21,6 +21,42 @@ public static class ReembedCli
         var svc = sp.GetRequiredService<EmbeddingService>();
         var force = args.Contains("--force");
         var prose = args.Contains("--prose");
+        var markdown = args.Contains("--markdown");
+
+        if (markdown)
+        {
+            Console.WriteLine($"[reembed] MARKDOWN corpus pass (Doc Context Stack)  force={force}");
+            if (force)
+            {
+                await using var scope = sp.CreateAsyncScope();
+                var dbf = scope.ServiceProvider
+                    .GetRequiredService<Microsoft.EntityFrameworkCore.IDbContextFactory<StreetSamurai.Core.Data.StreetSamuraiDbContext>>();
+                await using var ctx = await dbf.CreateDbContextAsync();
+                var n = await ctx.Database.ExecuteSqlRawAsync("DELETE FROM dbo.ProseEmbeddings WHERE ScopeKind = 'markdown';");
+                Console.WriteLine($"[reembed] cleared {n} existing markdown rows");
+            }
+            var lastMd = -1;
+            var mdProgress = new Progress<(int done, int total)>(p =>
+            {
+                var pct = p.total > 0 ? (int)(100.0 * p.done / p.total) : 0;
+                if (pct == lastMd) return;
+                lastMd = pct;
+                Console.Write($"\r[reembed] [{p.done,5}/{p.total,5}] {pct,3}%");
+            });
+            var mdsw = System.Diagnostics.Stopwatch.StartNew();
+            int mdTouched;
+            try { mdTouched = await svc.ReembedMarkdownAsync(mdProgress); }
+            catch (Exception ex)
+            {
+                Console.Error.WriteLine();
+                Console.Error.WriteLine($"[reembed] markdown pass failed: {ex.Message}");
+                return 1;
+            }
+            mdsw.Stop();
+            Console.WriteLine();
+            Console.WriteLine($"=== Markdown reembed done in {mdsw.Elapsed:mm\\:ss} ===  rows written/refreshed: {mdTouched}");
+            return 0;
+        }
 
         if (prose)
         {

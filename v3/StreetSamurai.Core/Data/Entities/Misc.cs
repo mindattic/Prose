@@ -236,6 +236,17 @@ public class MarkdownFile
     public string   ContentHash   { get; set; } = "";  // SHA-256 hex of Content
     public DateTime LastSyncedAt  { get; set; }
     public string   SyncedBy      { get; set; } = "";  // "cli" | "mcp"
+
+    // ── Doc Context Stack (dynamic .md working-set engine) ────────────────────
+    // Classify each file for the rotating-context engine (DocContextService).
+    //   Tier:     "always" (universal, every context) | "strand" (one story) | "topic" (triggered)
+    //   Scope:    CSV of strand CODEs the file applies to (strand tier), or "*". Empty = none.
+    //   Triggers: CSV of keywords/aliases that load a topic file when they appear in scene text.
+    //   AutoTier: true = tier/scope/triggers were auto-inferred; false = set from frontmatter.
+    public string   Tier          { get; set; } = "topic";
+    public string   Scope         { get; set; } = "";
+    public string   Triggers      { get; set; } = "";
+    public bool     AutoTier      { get; set; } = true;
 }
 
 // ── Vocabulary ─────────────────────────────────────────────────────────────

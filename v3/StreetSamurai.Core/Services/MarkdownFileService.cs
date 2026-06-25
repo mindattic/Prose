@@ -1,5 +1,6 @@
 using System.Security.Cryptography;
 using System.Text;
+using System.Text.RegularExpressions;
 using Microsoft.EntityFrameworkCore;
 using StreetSamurai.Core.Data;
 using StreetSamurai.Core.Data.Entities;
@@ -116,9 +117,13 @@ public class MarkdownFileService
                 if (!File.Exists(f.FilePath)) continue;
                 var content = await File.ReadAllTextAsync(f.FilePath, ct);
                 var hash    = ComputeHash(content);
+                var cls     = ClassifyFile(f, content);
 
+                // Match on (FileRoot, RelativePath): the project and global CLAUDE.md
+                // share RelativePath "CLAUDE.md" and would otherwise clobber each other,
+                // leaving only one of them in the DB.
                 var existing = await db.MarkdownFiles
-                    .FirstOrDefaultAsync(x => x.RelativePath == f.RelativePath, ct);
+                    .FirstOrDefaultAsync(x => x.RelativePath == f.RelativePath && x.FileRoot == f.FileRoot, ct);
 
                 if (existing == null)
                 {
@@ -136,27 +141,44 @@ public class MarkdownFileService
                             ContentHash  = hash,
                             LastSyncedAt = DateTime.UtcNow,
                             SyncedBy     = "cli",
+                            Tier         = cls.Tier,
+                            Scope        = cls.Scope,
+                            Triggers     = cls.Triggers,
+                            AutoTier     = cls.AutoTier,
                         });
                         await db.SaveChangesAsync(ct);
                     }
                     inserted++;
                 }
-                else if (existing.ContentHash != hash)
-                {
-                    if (!dryRun)
-                    {
-                        existing.FilePath     = f.FilePath;
-                        existing.Content      = content;
-                        existing.ContentHash  = hash;
-                        existing.LastSyncedAt = DateTime.UtcNow;
-                        existing.SyncedBy     = "cli";
-                        await db.SaveChangesAsync(ct);
-                    }
-                    updated++;
-                }
                 else
                 {
-                    unchanged++;
+                    var contentChanged = existing.ContentHash != hash;
+                    var classChanged   = existing.Tier != cls.Tier || existing.Scope != cls.Scope
+                                      || existing.Triggers != cls.Triggers || existing.AutoTier != cls.AutoTier;
+                    if (contentChanged || classChanged)
+                    {
+                        if (!dryRun)
+                        {
+                            if (contentChanged)
+                            {
+                                existing.FilePath    = f.FilePath;
+                                existing.Content     = content;
+                                existing.ContentHash = hash;
+                            }
+                            existing.Tier         = cls.Tier;
+                            existing.Scope        = cls.Scope;
+                            existing.Triggers     = cls.Triggers;
+                            existing.AutoTier     = cls.AutoTier;
+                            existing.LastSyncedAt = DateTime.UtcNow;
+                            existing.SyncedBy     = "cli";
+                            await db.SaveChangesAsync(ct);
+                        }
+                        updated++;
+                    }
+                    else
+                    {
+                        unchanged++;
+                    }
                 }
             }
             catch (Exception ex)
@@ -168,12 +190,182 @@ public class MarkdownFileService
         return new(inserted, updated, unchanged, errors);
     }
 
+    // ── Doc Context Stack classification (tier / scope / triggers) ──────────
+
+    public readonly record struct DocClassification(string Tier, string Scope, string Triggers, bool AutoTier);
+
+    // Registers are strand-scoped — a story uses exactly ONE. Seed each register's
+    // scope to the strand CODE(s) that use it; unknowns get empty scope (curate via
+    // frontmatter). A frontmatter `scope:` always overrides this.
+    private static readonly Dictionary<string, string> RegisterScope =
+        new(StringComparer.OrdinalIgnoreCase)
+        {
+            ["CODA"]     = "BCODA",
+            ["GREY"]     = "ATTE",
+            ["VULTURES"] = "VATD",
+            // JOY / SORROW: assignment ambiguous — leave empty, curate via frontmatter.
+        };
+
+    // The ONLY universal docs (loaded for every context). Keep this list short —
+    // anything here costs context budget on every prose write. Promote others by
+    // adding `tier: always` to their frontmatter.
+    private static readonly HashSet<string> AlwaysFiles =
+        new(StringComparer.OrdinalIgnoreCase)
+        {
+            "BIBLE.digest.md",
+        };
+
+    private static readonly HashSet<string> TriggerStopwords =
+        new(StringComparer.OrdinalIgnoreCase)
+        {
+            // structural / project words
+            "the","and","for","with","from","that","this","into","story","strand",
+            "glmz","canon","note","docs","memory","when","what","over","your","their",
+            "json","yaml","file","files","rule","rules","page","data",
+            // generic common words that produce false topic fires
+            "only","read","real","true","anti","also","very","each","just","here",
+            "there","then","than","them","they","have","this","that","will","would",
+            "holding","more","less","some","most","such","been","were","being",
+            "about","after","before","other","under","which","while","these","those",
+            // process / meta-doc filename tokens (these docs are about HOW to work, not story
+            // canon — they should not fire on generic prose words)
+            "reverse","order","audit","self","gateway","pass","draft","plan","fixes",
+            "update","status","version","snapshot","workflow","campaign","playbook",
+            "pattern","loop","brief","recall","sync","export","deploy","goal","goals",
+            "review","quality","engine","system","refactor","subsystem","feedback",
+        };
+
+    /// <summary>
+    /// Classify a file for the Doc Context Stack. Frontmatter <c>tier:</c>/<c>scope:</c>/<c>triggers:</c>
+    /// win (AutoTier=false); otherwise infer from category/path (AutoTier=true):
+    /// register → strand (scope from RegisterScope) · docs/strands/&lt;CODE&gt;.md → strand scope=CODE ·
+    /// AlwaysFiles → always · everything else → topic (triggers seeded from file name + description).
+    /// Pure function of (file, content) so re-sync is idempotent.
+    /// </summary>
+    private static DocClassification ClassifyFile(DiscoveredFile f, string content)
+    {
+        var fm = ParseFrontmatter(content);
+
+        if (fm.TryGetValue("tier", out var fmTier) && !string.IsNullOrWhiteSpace(fmTier))
+        {
+            var scope    = fm.TryGetValue("scope", out var s) ? NormalizeCsv(s) : "";
+            var triggers = fm.TryGetValue("triggers", out var t) && !string.IsNullOrWhiteSpace(t)
+                ? NormalizeCsv(t) : SeedTriggers(f, fm);
+            return new(NormalizeTier(fmTier), scope, triggers, AutoTier: false);
+        }
+
+        var fileName = Path.GetFileName(f.FilePath);
+
+        if (AlwaysFiles.Contains(fileName))
+            return new("always", "*", "", AutoTier: true);
+
+        if (f.Category.Equals("register", StringComparison.OrdinalIgnoreCase))
+        {
+            var reg = Path.GetFileNameWithoutExtension(fileName);
+            return new("strand", RegisterScope.GetValueOrDefault(reg, ""), "", AutoTier: true);
+        }
+
+        if (f.RelativePath.Replace('\\', '/').StartsWith("docs/strands/", StringComparison.OrdinalIgnoreCase))
+        {
+            var code = Path.GetFileNameWithoutExtension(fileName).ToUpperInvariant();
+            return new("strand", code, "", AutoTier: true);
+        }
+
+        return new("topic", "", SeedTriggers(f, fm), AutoTier: true);
+    }
+
+    /// <summary>Parse top-level <c>key: value</c> pairs from a leading YAML frontmatter block.</summary>
+    private static Dictionary<string, string> ParseFrontmatter(string content)
+    {
+        var fm = new Dictionary<string, string>(StringComparer.OrdinalIgnoreCase);
+        if (string.IsNullOrEmpty(content)) return fm;
+        var text = content.Replace("\r\n", "\n");
+        if (!text.StartsWith("---\n")) return fm;
+        var end = text.IndexOf("\n---", 4, StringComparison.Ordinal);
+        if (end < 0) return fm;
+
+        foreach (var line in text[4..end].Split('\n'))
+        {
+            if (line.Length == 0 || line[0] is ' ' or '\t' or '#') continue;  // top-level keys only
+            var idx = line.IndexOf(':');
+            if (idx <= 0) continue;
+            var key = line[..idx].Trim();
+            var val = line[(idx + 1)..].Trim().Trim('"', '\'');
+            if (key.Length > 0) fm[key] = val;
+        }
+        return fm;
+    }
+
+    /// <summary>Seed topic trigger keywords from the file name + frontmatter description.</summary>
+    private static string SeedTriggers(DiscoveredFile f, Dictionary<string, string> fm)
+    {
+        var terms = new List<string>();
+
+        var baseName = Path.GetFileNameWithoutExtension(f.FilePath);
+        baseName = Regex.Replace(baseName, @"^(project|reference|feedback|user)_", "", RegexOptions.IgnoreCase);
+        terms.AddRange(baseName.Split(['_', '-', ' '], StringSplitOptions.RemoveEmptyEntries));
+
+        if (fm.TryGetValue("description", out var desc) && !string.IsNullOrWhiteSpace(desc))
+        {
+            // ALLCAPS acronyms (GLMZ, ELF, RMA, QUANTA, E.L.F.) + distinctive Capitalized proper
+            // nouns 5+ chars (Triumvirate, Substrate, Mnemosync). Common-word noise (Holding, Story,
+            // Before, …) is filtered by TriggerStopwords below, not by excluding mixed-case outright.
+            var head = desc.Length > 240 ? desc[..240] : desc;
+            foreach (Match m in Regex.Matches(head, @"\b([A-Z]{2,}|[A-Z](?:\.[A-Z])+\.?|[A-Z][a-z]{4,})\b"))
+                terms.Add(m.Value.Replace(".", ""));
+        }
+
+        var cleaned = terms
+            .Select(t => t.Trim().Trim('.', ',', '"', '\'', '(', ')', ':', ';'))
+            .Where(t => t.Length >= 4 && !TriggerStopwords.Contains(t))
+            .Select(t => t.ToLowerInvariant())
+            .Distinct()
+            .Take(12);
+        return string.Join(", ", cleaned);
+    }
+
+    private static string NormalizeTier(string t)
+    {
+        t = t.Trim().ToLowerInvariant();
+        return t is "always" or "strand" or "topic" ? t : "topic";
+    }
+
+    private static string NormalizeCsv(string s) =>
+        string.Join(", ", (s ?? "").Split([',', ';'], StringSplitOptions.RemoveEmptyEntries | StringSplitOptions.TrimEntries)
+                                    .Distinct(StringComparer.OrdinalIgnoreCase));
+
     // ── List ──────────────────────────────────────────────────────────────
 
     public async Task<List<MarkdownFile>> ListAsync(CancellationToken ct = default)
     {
         await using var db = await dbFactory.CreateDbContextAsync(ct);
         return await db.MarkdownFiles
+            .OrderBy(x => x.FileRoot)
+            .ThenBy(x => x.RelativePath)
+            .ToListAsync(ct);
+    }
+
+    // ── Search (keyword recall) ────────────────────────────────────────────
+
+    /// <summary>
+    /// Find tracked markdown files whose path, file name, or category contains the
+    /// keyword (case-insensitive). With <paramref name="includeContent"/> the body
+    /// text is searched too. This backs <c>ss --recall &lt;keyword&gt;</c>: it lets a
+    /// caller "call up" the select few .md files relevant to a topic from the DB
+    /// instead of keeping hundreds of tiny files materialized on disk.
+    /// </summary>
+    public async Task<List<MarkdownFile>> SearchAsync(string keyword, bool includeContent = false, CancellationToken ct = default)
+    {
+        var k = (keyword ?? "").Trim();
+        if (k.Length == 0) return new List<MarkdownFile>();
+        var like = $"%{k}%";
+
+        await using var db = await dbFactory.CreateDbContextAsync(ct);
+        return await db.MarkdownFiles.AsNoTracking()
+            .Where(x => EF.Functions.Like(x.RelativePath, like)
+                     || EF.Functions.Like(x.FileName, like)
+                     || EF.Functions.Like(x.Category, like)
+                     || (includeContent && EF.Functions.Like(x.Content, like)))
             .OrderBy(x => x.FileRoot)
             .ThenBy(x => x.RelativePath)
             .ToListAsync(ct);

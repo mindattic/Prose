@@ -1,6 +1,7 @@
 using System.ComponentModel;
 using System.Diagnostics;
 using System.Text.Json;
+using Microsoft.Extensions.Logging;
 using ModelContextProtocol.Server;
 using StreetSamurai.Core.Interfaces;
 using StreetSamurai.Core.Models;
@@ -42,17 +43,20 @@ public class ContinuityTools
     private readonly IBookRepository books;
     private readonly IChapterRepository chapters;
     private readonly CharacterRepository characters;
+    private readonly ILogger<ContinuityTools> log;
 
     public ContinuityTools(
         IPathProvider paths,
         IBookRepository books,
         IChapterRepository chapters,
-        CharacterRepository characters)
+        CharacterRepository characters,
+        ILogger<ContinuityTools> log)
     {
         this.paths = paths;
         this.books = books;
         this.chapters = chapters;
         this.characters = characters;
+        this.log = log;
     }
 
     // Builds a self-contained JSON bundle of book + chapters + character profiles

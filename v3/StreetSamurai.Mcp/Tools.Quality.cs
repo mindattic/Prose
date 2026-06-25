@@ -111,13 +111,15 @@ public class QualityTools
     }
 
     /// <summary>Run a sampled Legion review panel against a strand. Automatically runs structural pre-flight first — blocking failures (missing antagonist cost, passive protagonist, etc.) halt the review and tell you what to fix. Non-blocking warnings are appended to the report. Casts score-only ballots and a few full prose upgrades. Returns the pooled mean, SD, 95% CI, per-beat heat map, clustered weakness tags, and the Pareto/contested/seam report.</summary>
-    [McpServerTool, Description("Run the sampled Legion review panel against a strand. STRUCTURAL PRE-FLIGHT runs first: if blocking failures are found (missing antagonist cost, passive protagonist, purely-stated stakes, >70% exposition), the review is blocked and returns the diagnosis instead of ballots — fix the structure first. Non-blocking warnings are always appended to the report. Stratified personas cast score-only ballots then the most informative are upgraded to full prose. Use the 'effort' tier to scale cost to importance. Returns: blocked (bool), mean_score, SD, CI, report_markdown (includes structural findings), synopsis. GOTCHA: do not edit beats while a review is running. Alias: also accepts strand id (GUID) for the strandIdOrSlug param.")]
+    [McpServerTool, Description("Run the sampled Legion review panel against a strand. STRUCTURAL PRE-FLIGHT runs first: if blocking failures are found (missing antagonist cost, passive protagonist, purely-stated stakes, >70% exposition), the review is blocked and returns the diagnosis instead of ballots — fix the structure first. Non-blocking warnings are always appended to the report. Stratified personas cast score-only ballots then the most informative are upgraded to full prose. Use the 'effort' tier to scale cost to importance. BRAIN: by default ballots run on the CLOUD trusted-4 panel; set use_local=true to run them on the LOCAL LLM instead (Ollama — free, no API tokens, but ONE model = no temperament diversity, so local scores are a SEPARATE baseline, not comparable to cloud means). The response always states which brain ran ('brain': 'cloud'|'local', plus 'model'). Returns: blocked (bool), brain, model, mean_score, SD, CI, report_markdown (includes structural findings), synopsis. GOTCHA: do not edit beats while a review is running. Alias: also accepts strand id (GUID) for the strandIdOrSlug param.")]
     public async Task<string> ReviewStrand(
         [Description("Strand id (GUID) or slug.")] string strandIdOrSlug,
         [Description("Number of score-only ballots to cast. 0 = use the effort tier (if given) or the ReviewBallots setting (default 20). A non-zero value overrides the tier.")] int ballots = 0,
         [Description("Number of full prose reviews to write (upgraded from ballots). 0 = use the effort tier (if given) else 0. A non-zero value overrides the tier.")] int prose = 0,
         [Description("Set true to skip structural pre-flight and run ballots unconditionally. Use only when you have already reviewed and accepted the structural findings.")] bool skipDiagnosis = false,
-        [Description("Cost tier (RFC 0009), scales calls + per-call model to importance: 'draft' = ~6 cheap-model ballots on claude+gemini, no diagnosis, NOT a gate; 'standard' = ~12 ballots + 2 prose, the >=82% standalone gate; 'deep' = ~37 ballots + 4 prose + full structural diagnosis, the >=85%/publish gate. Omit for the configured defaults.")] string? effort = null)
+        [Description("Cost tier (RFC 0009), scales calls + per-call model to importance: 'draft' = ~6 cheap-model ballots on claude+gemini, no diagnosis, NOT a gate; 'standard' = ~12 ballots + 2 prose, the >=82% standalone gate; 'deep' = ~37 ballots + 4 prose + full structural diagnosis, the >=85%/publish gate. Omit for the configured defaults.")] string? effort = null,
+        [Description("Run ballots + synopsis on the LOCAL LLM (Ollama) instead of the cloud trusted-4 panel — free, no API tokens. ONE model = no temperament diversity, so the resulting score is a SEPARATE baseline (do NOT compare to cloud means). Default false (cloud).")] bool useLocal = false,
+        [Description("Override the local model tag for this run (e.g. an Ollama tag). Ignored unless use_local=true. Omit to use the configured LocalReviewModel.")] string? localModel = null)
     {
         var profile = ReviewEffortProfile.Resolve(effort);
         if (effort != null && profile == null)
@@ -142,21 +144,32 @@ public class QualityTools
         var result = await reviewer.RunSampledReviewAsync(strandId, effBallots, effProse < 0 ? 0 : effProse,
             skipDiagnosis: effSkip,
             cheapModels: profile?.CheapModels ?? false,
-            allowedProvidersOverride: profile?.AllowedProviders);
+            allowedProvidersOverride: profile?.AllowedProviders,
+            useLocal: useLocal,
+            localModelOverride: localModel);
 
         string? synopsis = null;
         if (result.BallotsSaved > 0)
         {
             try
             {
-                var summary = await reviewer.GenerateSummaryAsync(strandId);
+                var summary = await reviewer.GenerateSummaryAsync(strandId, useLocal: useLocal, localModelOverride: localModel);
                 synopsis = summary.SummaryMarkdown;
             }
             catch { }
         }
 
+        // EXPLICIT brain: callers must always be able to tell which transport ran.
+        var brain = useLocal ? "local" : "cloud";
+        var model = useLocal
+            ? (string.IsNullOrWhiteSpace(localModel) ? settings.LocalReviewModel : localModel)
+            : "trusted-4 panel";
+
         return JsonSerializer.Serialize(new
         {
+            brain,                                  // "cloud" | "local"
+            model,                                  // local Ollama tag, or "trusted-4 panel"
+            local_base_url    = useLocal ? settings.LocalReviewBaseUrl : null,
             blocked           = result.BlockedByStructure,
             ballots_requested = result.Ballots,
             ballots_saved     = result.BallotsSaved,

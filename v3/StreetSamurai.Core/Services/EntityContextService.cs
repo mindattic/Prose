@@ -208,9 +208,14 @@ public sealed class EntityContextService(
 
     // ── Context block formatting ──────────────────────────────────────────────
 
+    // Cap how many entities get injected into the prompt. GetActive is recency/depth-ordered, so
+    // the top slice is the most relevant; without this the depth-0 set grows unbounded over a long
+    // strand (observed ~160/beat) and floods the prompt with noise.
+    public const int MaxInjectedEntities = 24;
+
     private string BuildContextBlock(Guid strandId)
     {
-        var entries = stack.GetActive(strandId);
+        var entries = stack.GetActive(strandId).Take(MaxInjectedEntities).ToList();
         if (entries.Count == 0) return "";
 
         var sb = new StringBuilder();

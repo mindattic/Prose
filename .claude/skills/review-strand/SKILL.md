@@ -43,10 +43,48 @@ A score needs precision, not volume: with population SD ≈ 8, a sample of ~120 
 ## Modes / escape hatches
 - **Default (bare)** → sampled two-tier. Best for routine "did my edit move the needle?" Cheap, a few minutes.
 - `--ballots 60` → quicker pulse (CI ±~2.1) for fast iteration; `--ballots 200` for a milestone read.
+- `--local` → run the ballots (and the synopsis) on a **local LLM** instead of the cloud trusted-4 — free, no API tokens. See "Local LLM mode" below. Applies to the default sampled path and `--by-act` only; `--census/--study/--group/--same-personas` always run cloud.
 - `--census` → full-population pass: every enriched persona writes a full review (~1024). The old behavior — use only when you want the absolute-tightest number; expensive.
 - `--group "Group X"` → focus-group tracking on a fixed roster (full reviews) across versions.
 - `--same-personas` → re-run the exact personas from the strand's last batch (before/after focus group).
 - `--study` → standalone segment study only (the default already folds this in).
+
+## Local LLM mode (`--local`)
+Routes review ballots to a local Ollama model instead of the paid cloud panel. The whole
+review machinery (1024 personas, psychometric profiles, ballots, clustering, scoring,
+synopsis) is unchanged — only the final HTTP hop changes. Cloud and local transports are
+separate classes (`CloudReviewLlm` / `LocalReviewLlm` in `StreetSamurai.Core/Services/Local/`);
+the cloud path and MindAttic.Legion itself are untouched.
+
+**One-time setup (RTX 3080 Ti, 12 GB):**
+```
+winget install Ollama.Ollama          # or download from ollama.com
+ollama pull qwen2.5:14b-instruct      # ~9 GB, q4 — best JSON + judgment for 12 GB
+# Ollama defaults num_ctx to 2048, which TRUNCATES a strand. Bake a real context window:
+#   Modelfile:
+#     FROM qwen2.5:14b-instruct
+#     PARAMETER num_ctx 16384
+ollama create qwen2.5-14b-rev -f Modelfile
+ollama serve                          # leave running
+```
+Defaults live in settings: `LocalReviewBaseUrl` (`http://localhost:11434/v1/chat/completions`),
+`LocalReviewModel` (`qwen2.5-14b-rev`), `LocalReviewMaxConcurrency` (`2`). Override the model
+for one run with `--local-model <tag>`.
+
+**Run:**
+```
+dotnet run --project <proj> --no-build -- --review-strand --slug <slug> --local
+```
+
+**Caveats — read these before trusting the number:**
+- **No model/temperament diversity** — one local model = one temperament. Diversity is
+  persona + psychometric only. Absolute calibration differs from the cloud trusted-4 mean.
+- **Separate baseline.** Local ballots are stamped `ProviderId = 'local'`. Do NOT compare a
+  local strand mean against historical cloud means — start a fresh local baseline.
+- **Speed.** Prefill (whole strand in) dominates; at concurrency 2 a 20-ballot pass is a few
+  minutes. Free, not instant. Big strands still auto-route to the segmented path.
+- If Ollama isn't running the run **fails fast** with an actionable error — it never silently
+  falls back to the cloud.
 
 ## Reference: pooled-stats PowerShell skeleton
 ```powershell

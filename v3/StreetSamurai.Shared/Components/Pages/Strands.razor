@@ -693,10 +693,12 @@
         await InvokeAsync(StateHasChanged);
         try
         {
-            await Manuscript.ExportEpubAsync(strandId);
+            // docx first — it increments strand.Version; the rest then share that version.
             await Docx.ExportStrandAsync(strandId);
+            await Manuscript.ExportEpubAsync(strandId);
             await Manuscript.ExportPdfAsync(strandId);
-            Toast.Success("EXPORT", "Manuscript exported — .epub, .docx, and .pdf saved to Downloads.");
+            await Manuscript.ExportAudioTxtAsync(strandId);
+            Toast.Success("EXPORT", "Manuscript exported — .docx, .epub, .pdf, and .txt saved to Downloads.");
         }
         catch (Exception ex) { Toast.Error("EXPORT-FAIL", ex.Message); }
         finally { exportingCollectionId = null; await InvokeAsync(StateHasChanged); }

@@ -11,7 +11,7 @@
 > All tools are MCP-prefixed `mcp__streetsamurai__<name>` by the client. Most return a
 > JSON string; the canon is the SQL database, scoped to the active Universe.
 
-**192 tools** across **28 tool families.**
+**195 tools** across **28 tool families.**
 
 ## Families
 
@@ -20,7 +20,7 @@
 | [Bible](#bible) | 3 |
 | [Canon](#canon) | 9 |
 | [Combat](#combat) | 1 |
-| [Config](#config) | 4 |
+| [Config](#config) | 7 |
 | [Context](#context) | 4 |
 | [Continuity](#continuity) | 2 |
 | [Core Entity Crud](#core-entity-crud) | 4 |
@@ -148,6 +148,20 @@ Generate an action sequence using the StreetSamurai combat writer. Respects part
 
 <sub>`ConfigTools`</sub>
 
+### `doc_context_prepare`
+
+Prepare the Doc Context Stack — the rotating cast of pertinent canon .md docs for a topic/scene. Returns one budgeted block plus the resident docs (tier + why each loaded). Pass strandCode (e.g. 'BCODA') to include that story's bible + its one register; pass text (scene/goal/conversation) to trigger topic docs by keyword and semantic embedding. This is how you load only the few docs that matter now instead of dumping hundreds.
+
+- `text` (string, required) — Scene/goal/conversation text to trigger topic docs against.
+- `strandCode` (string, optional) — Optional strand CODE (e.g. 'BCODA') to also load that story's bible + register.
+- `budget` (int, optional) — Token budget for the assembled block. Default 2000.
+
+### `doc_context_status`
+
+Inspect the current Doc Context Stack working set (the docs resident in the rotating cast) for a strand context, without changing it. Returns each doc's tier, why it loaded, and its score.
+
+- `strandCode` (string, optional) — Optional strand CODE whose working set to inspect.
+
 ### `get_markdown_file`
 
 Get the content of a tracked markdown file from the database. Pass asOf (ISO 8601 UTC) to retrieve a historical version from the temporal table. relativePath examples: 'CLAUDE.md', 'docs/BIBLE.md', 'feedback_sequential_strand_writing.md'
@@ -160,6 +174,13 @@ Get the content of a tracked markdown file from the database. Pass asOf (ISO 860
 List all markdown files tracked in the database (project rules, Codex docs, Claude Code memory). Returns category, relativePath, contentHash, and lastSyncedAt for each file.
 
 - _(no parameters)_
+
+### `recall_markdown_files`
+
+Recall (call up) the select few tracked markdown files relevant to a keyword, straight from the database — instead of materializing hundreds of tiny .md files on disk. Substring-matches the keyword (case-insensitive) against relativePath, fileName, and category; set includeContent=true to also search inside file bodies. Returns each match's full content so the caller can read only what it needs. Examples: 'steppin', 'wound ledger', 'schism'.
+
+- `keyword` (string, required) — Keyword to match against path/name/category (and body when includeContent=true).
+- `includeContent` (bool, optional) — Also search inside file bodies, not just names. Default false.
 
 ### `restore_markdown_file`
 
@@ -934,13 +955,15 @@ List individual ballot reviews for a strand — one row per persona reader, show
 
 ### `review_strand`
 
-Run the sampled Legion review panel against a strand. STRUCTURAL PRE-FLIGHT runs first: if blocking failures are found (missing antagonist cost, passive protagonist, purely-stated stakes, >70% exposition), the review is blocked and returns the diagnosis instead of ballots — fix the structure first. Non-blocking warnings are always appended to the report. Stratified personas cast score-only ballots then the most informative are upgraded to full prose. Use the 'effort' tier to scale cost to importance. Returns: blocked (bool), mean_score, SD, CI, report_markdown (includes structural findings), synopsis. GOTCHA: do not edit beats while a review is running. Alias: also accepts strand id (GUID) for the strandIdOrSlug param.
+Run the sampled Legion review panel against a strand. STRUCTURAL PRE-FLIGHT runs first: if blocking failures are found (missing antagonist cost, passive protagonist, purely-stated stakes, >70% exposition), the review is blocked and returns the diagnosis instead of ballots — fix the structure first. Non-blocking warnings are always appended to the report. Stratified personas cast score-only ballots then the most informative are upgraded to full prose. Use the 'effort' tier to scale cost to importance. BRAIN: by default ballots run on the CLOUD trusted-4 panel; set use_local=true to run them on the LOCAL LLM instead (Ollama — free, no API tokens, but ONE model = no temperament diversity, so local scores are a SEPARATE baseline, not comparable to cloud means). The response always states which brain ran ('brain': 'cloud'|'local', plus 'model'). Returns: blocked (bool), brain, model, mean_score, SD, CI, report_markdown (includes structural findings), synopsis. GOTCHA: do not edit beats while a review is running. Alias: also accepts strand id (GUID) for the strandIdOrSlug param.
 
 - `strandIdOrSlug` (string, required) — Strand id (GUID) or slug.
 - `ballots` (int, optional) — Number of score-only ballots to cast. 0 = use the effort tier (if given) or the ReviewBallots setting (default 20). A non-zero value overrides the tier.
 - `prose` (int, optional) — Number of full prose reviews to write (upgraded from ballots). 0 = use the effort tier (if given) else 0. A non-zero value overrides the tier.
 - `skipDiagnosis` (bool, optional) — Set true to skip structural pre-flight and run ballots unconditionally. Use only when you have already reviewed and accepted the structural findings.
 - `effort` (string, optional) — Cost tier (RFC 0009), scales calls + per-call model to importance: 'draft' = ~6 cheap-model ballots on claude+gemini, no diagnosis, NOT a gate; 'standard' = ~12 ballots + 2 prose, the >=82% standalone gate; 'deep' = ~37 ballots + 4 prose + full structural diagnosis, the >=85%/publish gate. Omit for the configured defaults.
+- `useLocal` (bool, optional) — Run ballots + synopsis on the LOCAL LLM (Ollama) instead of the cloud trusted-4 panel — free, no API tokens. ONE model = no temperament diversity, so the resulting score is a SEPARATE baseline (do NOT compare to cloud means). Default false (cloud).
+- `localModel` (string, optional) — Override the local model tag for this run (e.g. an Ollama tag). Ignored unless use_local=true. Omit to use the configured LocalReviewModel.
 
 ### `update_review_settings`
 

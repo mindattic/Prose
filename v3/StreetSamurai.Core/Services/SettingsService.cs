@@ -411,6 +411,11 @@ public class SettingsService : IDisposable
     public bool SaveStoriesAsMarkdown { get => data.SaveStoriesAsMarkdown; set { data.SaveStoriesAsMarkdown = value; ScheduleSave(); } }
     public bool DocxIncludeToc { get => data.DocxIncludeToc; set { data.DocxIncludeToc = value; ScheduleSave(); } }
 
+    /// <summary>Master switch for the Doc Context Stack injection into prose-generation prompts.
+    /// Default OFF — the engine is inert until explicitly enabled, so it can never change output
+    /// behaviour until validated. Dry-run (`--doc-context`) + MCP tools work regardless of this flag.</summary>
+    public bool DocContextEnabled { get => data.DocContextEnabled; set { data.DocContextEnabled = value; ScheduleSave(); } }
+
     // ── Review voting ──────────────────────────────────────────────────────────
     /// <summary>Default number of cheap score-only ballots per sampled strand review (--ballots).</summary>
     public int ReviewBallots { get => data.ReviewBallots; set { data.ReviewBallots = Math.Max(1, value); ScheduleSave(); } }
@@ -426,6 +431,16 @@ public class SettingsService : IDisposable
     public string ReviewAllowedProviders { get => data.ReviewAllowedProviders; set { data.ReviewAllowedProviders = value; ScheduleSave(); } }
     /// <summary>Maximum simultaneous LLM calls during a review run.</summary>
     public int ReviewMaxConcurrency { get => data.ReviewMaxConcurrency; set { data.ReviewMaxConcurrency = Math.Max(1, Math.Min(50, value)); ScheduleSave(); } }
+
+    // ── Local-LLM review (--local) ───────────────────────────────────────────────
+    /// <summary>OpenAI-compatible chat-completions endpoint of the local inference server
+    /// (Ollama default). Only used by <c>--local</c> strand reviews; cloud reviews never touch it.</summary>
+    public string LocalReviewBaseUrl { get => data.LocalReviewBaseUrl; set { data.LocalReviewBaseUrl = value; ScheduleSave(); } }
+    /// <summary>Local model tag used by <c>--local</c> reviews (e.g. an Ollama tag with a baked-in num_ctx).</summary>
+    public string LocalReviewModel { get => data.LocalReviewModel; set { data.LocalReviewModel = value; ScheduleSave(); } }
+    /// <summary>Max simultaneous local generations — kept low because a single GPU can only
+    /// run a few large-model generations at once before spilling / OOM.</summary>
+    public int LocalReviewMaxConcurrency { get => data.LocalReviewMaxConcurrency; set { data.LocalReviewMaxConcurrency = Math.Max(1, Math.Min(16, value)); ScheduleSave(); } }
     /// <summary>When false, ContinuousQualityService does not fire automatically on beat save. Reviews must be called manually.</summary>
     public bool ReviewAutoRunEnabled { get => data.ReviewAutoRunEnabled; set { data.ReviewAutoRunEnabled = value; ScheduleSave(); } }
     /// <summary>When true, WorldTickService advances the story clock and writes EntityStateEvents per active character on each tick.
@@ -682,6 +697,7 @@ public class SettingsService : IDisposable
         public bool EnablePlainTextNer { get; set; } = false;
         public bool SaveStoriesAsMarkdown { get; set; } = true;
         public bool DocxIncludeToc { get; set; } = false;
+        public bool DocContextEnabled { get; set; } = false;
         public string SmtpHost { get; set; } = "";
         public int SmtpPort { get; set; } = 587;
         public string SmtpUsername { get; set; } = "";
@@ -703,6 +719,10 @@ public class SettingsService : IDisposable
         public string ReviewJudgeProvider { get; set; } = "claude";
         public string ReviewAllowedProviders { get; set; } = "claude,openai,gemini,deepseek";
         public int ReviewMaxConcurrency { get; set; } = 10;
+        // Local-LLM review (--local) defaults
+        public string LocalReviewBaseUrl { get; set; } = "http://localhost:11434/v1/chat/completions";
+        public string LocalReviewModel { get; set; } = "qwen2.5-14b-rev";
+        public int LocalReviewMaxConcurrency { get; set; } = 2;
         /// <summary>When false, ContinuousQualityService does not fire on beat save. Reviews must be called manually.</summary>
         public bool ReviewAutoRunEnabled { get; set; } = true;
         /// <summary>When true, WorldTickService is active — advances story clock + writes EntityStateEvents per tick.</summary>

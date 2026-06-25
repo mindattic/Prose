@@ -2122,7 +2122,14 @@ public class StreetSamuraiDbContext : DbContext
             e.Property(x => x.Category).HasMaxLength(100).IsRequired();
             e.Property(x => x.ContentHash).HasMaxLength(64);
             e.Property(x => x.SyncedBy).HasMaxLength(100);
-            e.HasIndex(x => x.RelativePath).IsUnique();
+            e.Property(x => x.Tier).HasMaxLength(20).HasDefaultValue("topic");
+            e.Property(x => x.Scope).HasMaxLength(1000).HasDefaultValue("");
+            e.Property(x => x.Triggers).HasMaxLength(2000).HasDefaultValue("");
+            e.Property(x => x.AutoTier).HasDefaultValue(true);
+            e.HasIndex(x => x.Tier);
+            // Composite unique: the project and global CLAUDE.md share RelativePath
+            // "CLAUDE.md" but differ by FileRoot, so RelativePath alone is not unique.
+            e.HasIndex(x => new { x.FileRoot, x.RelativePath }).IsUnique();
             e.HasIndex(x => x.Category);
             e.HasIndex(x => x.LastSyncedAt);
         });

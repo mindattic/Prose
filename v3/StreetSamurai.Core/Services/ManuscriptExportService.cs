@@ -188,6 +188,44 @@ public class ManuscriptExportService
         return path;
     }
 
+    /// <summary>
+    /// Export the strand as a plain-text **audio manuscript** (narration script) to the
+    /// publish directory; returns the path. This is the text a TTS narrator reads: title,
+    /// optional author line, then each chapter as a heading line followed by its prose with
+    /// all <c>*italic*</c> markup stripped and no beat markers. UTF-8, blank line between
+    /// paragraphs.
+    /// </summary>
+    public async Task<string> ExportAudioTxtAsync(Guid strandId, string? author = null, CancellationToken ct = default)
+    {
+        var (manuscript, path) = await LoadAsync(strandId, "txt", ct);
+
+        var sb = new StringBuilder();
+        sb.AppendLine(manuscript.Title);
+        if (!string.IsNullOrWhiteSpace(author))
+            sb.AppendLine($"by {author!.Trim()}");
+        sb.AppendLine();
+
+        for (int i = 0; i < manuscript.Chapters.Count; i++)
+        {
+            var chapter = manuscript.Chapters[i];
+            var heading = string.IsNullOrWhiteSpace(chapter.Heading) ? $"Chapter {i + 1}" : chapter.Heading!;
+            sb.AppendLine(heading);
+            sb.AppendLine();
+            foreach (var para in chapter.Paragraphs)
+            {
+                sb.AppendLine(StripInlineMarkup(para));
+                sb.AppendLine();
+            }
+        }
+
+        await File.WriteAllTextAsync(path, sb.ToString().TrimEnd() + "\n", new UTF8Encoding(false), ct);
+        log.LogInformation("Exported strand {Strand} to audio manuscript {Path}", manuscript.Slug, path);
+        return path;
+    }
+
+    /// <summary>Strip the simple <c>*italic*</c> markdown markers for clean narration text.</summary>
+    private static string StripInlineMarkup(string text) => text.Replace("*", "");
+
     // ── EPUB builders ────────────────────────────────────────────────────────
 
     private static string EpubContainerXml() => """
@@ -386,6 +424,16 @@ public class ManuscriptExportService
         pathParts.Add(safeTitle);
         var strandDir = Path.Combine(pathParts.ToArray());
         Directory.CreateDirectory(strandDir);
+
+        // Delete stale prior-version files of this format so the strand folder keeps
+        // only the current export (mirrors DocxExportService, which already prunes *.docx).
+        foreach (var existing in Directory.EnumerateFiles(strandDir, $"*.{ext}"))
+        {
+            try { File.Delete(existing); }
+            catch (IOException) { }
+            catch (UnauthorizedAccessException) { }
+        }
+
         var path = Path.Combine(strandDir, $"{safeTitle} V{strand.Version}.{ext}");
 
         return (new Manuscript(strand.Title, strand.Slug, strand.Synopsis, chapters), path);

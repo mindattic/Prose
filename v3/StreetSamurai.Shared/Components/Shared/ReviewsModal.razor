@@ -36,7 +36,14 @@
                             <i class="bi bi-chevron-@(open ? "down" : "right") rvm-chev"></i>
                             <span class="badge bg-@Color(Pct(r.Score)) rvm-score">@FormatScore(r.Score)@ScoreSuffix</span>
                             <strong class="text-light">@r.Persona</strong>
-                            <span class="text-muted small">@r.Provider</span>
+                            @if (string.Equals(r.Provider, "local", StringComparison.OrdinalIgnoreCase))
+                            {
+                                <span class="badge bg-warning text-dark" title="Reviewed by the LOCAL LLM (Ollama) — separate baseline from cloud reviews"><i class="bi bi-hdd-rack me-1"></i>Local LLM</span>
+                            }
+                            else
+                            {
+                                <span class="text-muted small" title="Cloud provider">@r.Provider</span>
+                            }
                             @if (r.History is { Count: > 1 })
                             {
                                 <span class="text-muted small ms-auto">@r.History.Count runs</span>
