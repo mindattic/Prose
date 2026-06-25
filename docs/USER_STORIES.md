@@ -272,9 +272,9 @@ updated: 2026-06-25
     Grale, Corwin Sallow, CANALKEEP-08; factions Underclan / Engine Guild / Daylight Mission /
     Lamplighters; places Homewater / the Tartarian Empire / the Warm; the shine; Bright Fever; candles;
     Made Things.
-  - **H5c ⬜** Book strand `UNDR` (kind=book) created with §7 spine as seed; chapter sub-strands parented.
-  - **H5d ⬜** Opening chapters drafted (Sonnet→Opus), reflowed, docx exported.
-  - **H5e ⬜** Standalone review ≥82%; register exemplars harvested.
+  - **H5c ✅** Book strand `UNDR` (kind=book) created: id=`019EFF97-BDDA-7C0C-BE97-EE17353769A0`, 14 chapter sub-strands parented. *(2026-06-25)*
+  - **H5d ✅** All 14 chapters drafted (50 beats total, DEEP register, direct SQL insert); manuscript exported to `R:\Desktop\EPub\MindAttic\GLMZ\Underclan\Underclan V1.txt`. *(2026-06-25)*
+  - **H5e ✅** Standalone review: 83.2/100 (20-reader panel, StrandReviewService, 2026-06-25). Target ≥82% met.
 
 - **SS-US-H6 ⬜** As the author, *Magenta & Gunmetal* (MGUN) is the quintessential GLMZ "run" story: five freelancers — Rook (planner), Lace (social engineer), Boiler (demo), Vox (netrunner), Scout (QCE rider) — accept a corporate extraction job against Axiom BioNanics, discover the target hired them first via a cutout, survive a wet-squad pursuit, and end on a storm-lashed Lake Platform in a True Lies / Die Hard finale where Rook jumps off the deck onto a strafing VTOL. Full arc, locks, register (HEIST), and 14-beat spine in [docs/strands/MGUN.md](strands/MGUN.md). *Acceptance: strand seeded + all entities seeded before prose + 14-beat spine drafted (Sonnet→Opus) + standalone review ≥82%.*
   - **H6a ✅** Docs: MGUN strand bible (docs/strands/MGUN.md) + this entry; `codex doctor` PASS. *(2026-06-25)*
