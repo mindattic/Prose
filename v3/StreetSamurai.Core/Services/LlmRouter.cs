@@ -11,23 +11,37 @@ public class LlmRouter : ILlmService
 {
     private readonly ILlmService claude;
     private readonly ILlmService openAi;
+    private readonly ILlmService? local;
     private readonly Func<string?> activeProviderFunc;
     private readonly LastPromptStore prompts;
     private readonly ILogger<LlmRouter> log;
 
-    /// <summary>Production constructor — concrete provider instances + settings-driven routing.</summary>
-    public LlmRouter(ClaudeService claude, OpenAiService openAi, SettingsService settings, LastPromptStore prompts, ILogger<LlmRouter> log)
-        : this(claude, openAi, () => settings.ActiveLlmProvider, prompts, log) { }
+    private string? runProvider;
 
-    /// <summary>Test-friendly constructor — accepts any <see cref="ILlmService"/> for both slots and a callback for the active-provider id.</summary>
+    /// <summary>Production constructor — concrete provider instances + settings-driven routing.</summary>
+    public LlmRouter(ClaudeService claude, OpenAiService openAi, LocalLlmService local, SettingsService settings, LastPromptStore prompts, ILogger<LlmRouter> log)
+        : this(claude, openAi, local, () => settings.ActiveLlmProvider, prompts, log) { }
+
+    /// <summary>Test-friendly constructor — accepts any <see cref="ILlmService"/> for provider slots and a callback for the active-provider id.</summary>
     public LlmRouter(ILlmService claude, ILlmService openAi, Func<string?> activeProvider, LastPromptStore prompts, ILogger<LlmRouter> log)
+        : this(claude, openAi, local: null, activeProvider, prompts, log) { }
+
+    /// <summary>Test-friendly constructor with explicit local provider.</summary>
+    public LlmRouter(ILlmService claude, ILlmService openAi, ILlmService? local, Func<string?> activeProvider, LastPromptStore prompts, ILogger<LlmRouter> log)
     {
         this.claude = claude;
         this.openAi = openAi;
+        this.local = local;
         this.activeProviderFunc = activeProvider;
         this.prompts = prompts;
         this.log = log;
     }
+
+    /// <summary>
+    /// Overrides the active provider for the lifetime of the current process (not persisted to settings).
+    /// Pass <c>null</c> to revert to settings-driven routing.
+    /// </summary>
+    public void SetRunProvider(string? providerId) => runProvider = providerId;
 
     public Task<bool> IsConfiguredAsync() => GetActiveProvider().IsConfiguredAsync();
 
@@ -39,7 +53,7 @@ public class LlmRouter : ILlmService
         string? model = null,
         CancellationToken ct = default)
     {
-        var provider = activeProviderFunc() ?? "claude";
+        var provider = runProvider ?? activeProviderFunc() ?? "claude";
         log.LogDebug("LlmRouter dispatching to provider={Provider}", provider);
         var sw = System.Diagnostics.Stopwatch.StartNew();
         try
@@ -58,10 +72,11 @@ public class LlmRouter : ILlmService
         }
     }
 
-    private ILlmService GetActiveProvider() => activeProviderFunc() switch
+    private ILlmService GetActiveProvider() => (runProvider ?? activeProviderFunc()) switch
     {
         "openai" => openAi,
-        _ => claude, // default to Claude
+        "local"  => local ?? throw new InvalidOperationException("Local LLM provider is not registered."),
+        _        => claude,
     };
 
     /// <summary>
@@ -69,11 +84,13 @@ public class LlmRouter : ILlmService
     /// </summary>
     public async Task<List<LlmProviderStatus>> GetProvidersAsync()
     {
-        var active = activeProviderFunc();
+        var active = runProvider ?? activeProviderFunc();
+        var localConfigured = local is not null && await local.IsConfiguredAsync();
         return
         [
-            new() { Id = "claude", Name = "Claude (Anthropic)", IsConfigured = await claude.IsConfiguredAsync(), IsActive = active != "openai" },
-            new() { Id = "openai", Name = "OpenAI", IsConfigured = await openAi.IsConfiguredAsync(), IsActive = active == "openai" },
+            new() { Id = "claude", Name = "Claude (Anthropic)", IsConfigured = await claude.IsConfiguredAsync(), IsActive = active != "openai" && active != "local" },
+            new() { Id = "openai", Name = "OpenAI",             IsConfigured = await openAi.IsConfiguredAsync(), IsActive = active == "openai" },
+            new() { Id = "local",  Name = "Local LLM",          IsConfigured = localConfigured,                  IsActive = active == "local"  },
         ];
     }
 }
