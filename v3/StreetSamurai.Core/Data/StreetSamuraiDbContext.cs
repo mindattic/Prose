@@ -353,6 +353,11 @@ public class StreetSamuraiDbContext : DbContext
     public DbSet<BeatServiceLog>         BeatServiceLogs         => Set<BeatServiceLog>();
     public DbSet<BeatModeLog>            BeatModeLogs            => Set<BeatModeLog>();
 
+    // Media assets (cover images, logos, watermarks) and the AI prompt library
+    // used to generate them. Import via ss --import-cover; generate via ss --generate-cover.
+    public DbSet<Asset>                  Assets                  => Set<Asset>();
+    public DbSet<CoverImagePrompt>       CoverImagePrompts       => Set<CoverImagePrompt>();
+
     protected override void OnModelCreating(ModelBuilder b)
     {
         base.OnModelCreating(b);
@@ -497,6 +502,34 @@ public class StreetSamuraiDbContext : DbContext
             e.Property(x => x.Mode).HasMaxLength(50).IsRequired();
             e.Property(x => x.DetectionMethod).HasMaxLength(50).IsRequired();
             e.HasOne<Beat>().WithMany().HasForeignKey(x => x.BeatId).OnDelete(DeleteBehavior.Cascade);
+        });
+
+        // ── Assets + CoverImagePrompts ───────────────────────────────────────
+        b.Entity<Asset>(e =>
+        {
+            e.HasKey(x => x.Id);
+            e.Property(x => x.Type).HasMaxLength(50).IsRequired();
+            e.Property(x => x.FileName).HasMaxLength(500).IsRequired();
+            e.Property(x => x.ContentType).HasMaxLength(100).IsRequired();
+            e.Property(x => x.StorageUrl).HasMaxLength(1000);
+            e.Property(x => x.Notes).HasMaxLength(1000);
+            e.HasIndex(x => x.StrandId).HasFilter("[StrandId] IS NOT NULL");
+            e.HasIndex(x => x.Type);
+            e.HasOne(x => x.Strand).WithMany()
+                .HasForeignKey(x => x.StrandId).IsRequired(false).OnDelete(DeleteBehavior.NoAction);
+        });
+        b.Entity<CoverImagePrompt>(e =>
+        {
+            e.HasKey(x => x.Id);
+            e.Property(x => x.Generator).HasMaxLength(50).IsRequired();
+            e.Property(x => x.Label).HasMaxLength(200);
+            e.Property(x => x.Notes).HasMaxLength(500);
+            e.HasIndex(x => x.StrandId).HasFilter("[StrandId] IS NOT NULL");
+            e.HasIndex(x => x.Generator);
+            e.HasOne(x => x.Strand).WithMany()
+                .HasForeignKey(x => x.StrandId).IsRequired(false).OnDelete(DeleteBehavior.NoAction);
+            e.HasOne(x => x.Asset).WithMany(a => a.Prompts)
+                .HasForeignKey(x => x.AssetId).IsRequired(false).OnDelete(DeleteBehavior.SetNull);
         });
 
         b.Entity<BeatEntityMention>(e =>

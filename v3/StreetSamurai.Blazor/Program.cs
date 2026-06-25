@@ -1358,6 +1358,18 @@ if (args.Contains("--import-strand"))
     return;
 }
 
+// CLI mode: import a local image file (png, jpg, webp) into the Assets table.
+// Optionally links to a strand by --strand-code and sets the asset type.
+//   ss --import-cover --file PATH [--strand-code CODE] [--type TYPE] [--notes TEXT] [--dry-run]
+if (args.Contains("--import-cover"))
+{
+    var cliBuilder = WebApplication.CreateBuilder(args);
+    cliBuilder.Services.AddStreetSamuraiServices();
+    var cliApp = cliBuilder.Build();
+    Environment.ExitCode = await ImportCoverImageCli.RunAsync(args, cliApp.Services);
+    return;
+}
+
 // CLI mode: burst oversized beats (e.g. chapter-as-one-beat from old book
 // imports) into paragraph-sized pieces. Idempotent — already-small beats
 // are skipped on rerun.

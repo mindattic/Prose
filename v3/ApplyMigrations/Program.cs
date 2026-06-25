@@ -104,6 +104,8 @@ var migrations = new[]
     "add_repository_definitions_20260616.sql",
     // 2026-06-16 — per-strand TTS engine selector (ElevenLabs / Kokoro / Piper)
     "add_strand_tts_engine_20260616.sql",
+    // 2026-06-25 — media assets + cover image prompt library
+    "create_assets_20260625.sql",
 };
 
 await using var db = await dbFactory.CreateDbContextAsync();
