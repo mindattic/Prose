@@ -44,6 +44,17 @@ public class StrandReviewService
     /// <summary>Target chars per review segment — small enough for one reliable ballot.</summary>
     private const int SegmentTargetChars = 90_000;
 
+    /// <summary>Chars of strand prose that safely fit a LOCAL ballot prompt, derived from the
+    /// configured local context window: (num_ctx − reserve) × chars-per-token. The reserve
+    /// (~4000 tok) covers the persona/instruction system prompt — which VARIES in size by persona —
+    /// plus the ballot's own JSON output, and a conservative 3.0 chars/token leaves headroom so even
+    /// the longest-persona prompt fits. Anything larger is segmented to THIS size so the system
+    /// prompt is never truncated away (the bug that failed every ballot on oversized strands). The
+    /// earlier (2500 tok, 3.4) budget left ~50% of ballots tipping over the window. At the 16k
+    /// default ≈ 37k chars; rises with a bigger num_ctx.</summary>
+    private int LocalUsableChars =>
+        Math.Max(18_000, (int)((settings.LocalReviewContextTokens - 4_000) * 3.0));
+
     /// <summary>When set, the reviewer persona is framed as a fan of this genre
     /// instead of the default cyberpunk fandom. E.g. "cosmic horror".</summary>
     public string? GenreOverride { get; set; }
@@ -243,7 +254,24 @@ public class StrandReviewService
                 slug = await db.Strands.AsNoTracking().Where(s => s.Id == strandId)
                     .Select(s => s.Slug).FirstOrDefaultAsync(ct) ?? strandId.ToString("N")[..8];
 
-            var brain = useLocal ? "local" : "cloud";
+            // Brain label drives the report filename ("… reviews (<brain>).htm"). Cloud is "cloud";
+            // a local run carries WHICH box it was — explicit LocalReviewLabel wins, else derive from
+            // the endpoint host (runpod/vast), else generic "local" — so vast.ai, RunPod and Ollama
+            // runs write SEPARATE report files instead of overwriting one another under "(local)".
+            string brain;
+            if (!useLocal) brain = "cloud";
+            else
+            {
+                var lbl = (settings.LocalReviewLabel ?? "").Trim();
+                if (string.IsNullOrWhiteSpace(lbl))
+                {
+                    var host = (settings.LocalReviewBaseUrl ?? "").ToLowerInvariant();
+                    lbl = host.Contains("runpod") ? "runpod"
+                        : host.Contains("vast")   ? "vast"
+                        : "local";
+                }
+                brain = lbl;
+            }
             var model = useLocal
                 ? (string.IsNullOrWhiteSpace(localModelOverride) ? settings.LocalReviewModel : localModelOverride)
                 : "trusted-4 panel";
@@ -282,14 +310,19 @@ public class StrandReviewService
         // A single ballot can't reliably judge a whole large book, and the
         // structural pre-flight only sees the opening fragment. When the assembled
         // prose is large, review by act/segment instead (per-part panels, aggregated).
+        // LOCAL uses a much smaller threshold + segment size tied to the box's context
+        // window — otherwise an oversized strand overflows num_ctx, the system prompt is
+        // truncated away, and EVERY ballot fails to return parseable JSON (0/100).
         {
             var probe = await exporter.ExportAsync(strandId, numberBeats: true, ct);
-            if (probe.Markdown.Length > LargeStrandCharThreshold)
+            var threshold = useLocal ? LocalUsableChars : LargeStrandCharThreshold;
+            var segTarget = useLocal ? LocalUsableChars : SegmentTargetChars;
+            if (probe.Markdown.Length > threshold)
             {
-                log.LogInformation("Strand {Id} is large ({Chars} chars) — routing to segmented (per-act) review.",
-                    strandId, probe.Markdown.Length);
+                log.LogInformation("Strand {Id} is large ({Chars} chars, {Brain} threshold {Threshold}) — routing to segmented (per-act) review.",
+                    strandId, probe.Markdown.Length, useLocal ? "local" : "cloud", threshold);
                 var perSeg = Math.Max(6, (int)Math.Ceiling(ballotCount / 3.0));
-                return await RunSegmentedReviewAsync(strandId, perSeg, proseCount, SegmentTargetChars,
+                return await RunSegmentedReviewAsync(strandId, perSeg, proseCount, segTarget,
                     progress, ct, allowedProvidersOverride, useLocal, localModelOverride);
             }
         }
@@ -511,7 +544,9 @@ public class StrandReviewService
         bool useLocal = false, string? localModelOverride = null)
     {
         if (ballotsPerSegment <= 0) ballotsPerSegment = 8;
-        if (targetChars <= 0) targetChars = SegmentTargetChars;
+        // Local segments must fit the box's context window; cloud can take the big default.
+        if (targetChars <= 0) targetChars = useLocal ? LocalUsableChars : SegmentTargetChars;
+        else if (useLocal) targetChars = Math.Min(targetChars, LocalUsableChars);
         var route = BuildRoute(useLocal, allowedProvidersOverride, localModelOverride);
         var providers = route.Providers;
         if (providers.Count == 0)
@@ -572,6 +607,38 @@ public class StrandReviewService
             return new SampledRunResult(pool.Count, 0, 0, failed, 0, 0, 0, 0, seg.ContentHash,
                 "_No ballots saved — check provider API keys / connectivity._", "");
 
+        // ── Tier 2: per-segment prose upgrades. The most informative ballots re-read
+        //    THEIR OWN segment and write a full prose review — a whole-strand prose pass
+        //    would overflow the local window, so the "why" is scoped to the part. ──
+        int proseAdded = 0;
+        if (proseCount > 0)
+        {
+            var segOf = new Dictionary<Guid, StrandMarkdownExporter.StrandSegment>();
+            foreach (var (sg, ballots) in perSegment)
+                foreach (var b in ballots) segOf[b.Id] = sg;
+            var picks = SelectInformative(saved, Math.Min(proseCount, saved.Count));
+            var psem = new SemaphoreSlim(route.MaxConcurrencyValue);
+            var ptasks = picks.Select(rv => Task.Run(async () =>
+            {
+                await psem.WaitAsync(ct);
+                try
+                {
+                    var persona = PersonasByIds(new[] { rv.PersonaId }).FirstOrDefault();
+                    if (persona == null || !segOf.TryGetValue(rv.Id, out var sg)) return;
+                    var prose = await SegmentProseOnceAsync(seg.Title, sg, persona, rv.ProviderId, route, ct);
+                    if (prose != null)
+                    {
+                        rv.ReviewText = prose.Value.review.Trim();
+                        if (prose.Value.improvements.Count > 0) rv.Improvements = string.Join("\n", prose.Value.improvements);
+                        Interlocked.Increment(ref proseAdded);
+                    }
+                }
+                catch (Exception ex) { log.LogWarning(ex, "Segment prose upgrade failed: {P}", rv.PersonaId); }
+                finally { psem.Release(); }
+            })).ToList();
+            await Task.WhenAll(ptasks);
+        }
+
         await using (var db = await dbFactory.CreateDbContextAsync(ct))
         {
             db.StrandReviews.AddRange(saved);
@@ -626,10 +693,40 @@ public class StrandReviewService
         var (reportJson, reportHtm) = await WriteRunReportAsync(strandId, seg.Title, seg.ContentHash,
             totalBeatCount, useLocal, localModelOverride, saved, Math.Round(mean, 1), Math.Round(sd, 1), Math.Round(ci, 2), clusters, ct);
 
-        return new SampledRunResult(pool.Count, saved.Count, 0, failed,
+        return new SampledRunResult(pool.Count, saved.Count, proseAdded, failed,
             Math.Round(mean, 1), Math.Round(sd, 1), Math.Round(ci, 2), clusters,
             seg.ContentHash, sb.ToString(), "",
             ReportJsonPath: reportJson, ReportHtmPath: reportHtm);
+    }
+
+    /// <summary>Per-segment prose review: the persona re-reads ONE part and writes a full
+    /// prose review of it (same JSON contract as the whole-strand reviewer). Scoped to the
+    /// segment so the prompt fits the local context window.</summary>
+    private async Task<(string review, List<string> improvements)?> SegmentProseOnceAsync(
+        string title, StrandMarkdownExporter.StrandSegment segment, Persona persona, string provider, ReviewRoute route, CancellationToken ct)
+    {
+        var key = route.KeyFor(provider);
+        if (string.IsNullOrWhiteSpace(key)) return null;
+        var model = route.ModelFor(provider, false);
+        var system = BuildSegmentProsePrompt(persona, title, segment);
+        var raw = await route.Llm.CallAsync(provider, key!, model, system, segment.Markdown, maxTokens: 1400, temperature: 0.85, ct);
+        return TryParseReview(raw, out _, out var review, out var improvements) ? (review, improvements) : null;
+    }
+
+    private string BuildSegmentProsePrompt(Persona persona, string title, StrandMarkdownExporter.StrandSegment segment)
+    {
+        var who = BuildWhoBlock(persona);
+        return
+$@"{who}
+
+You are reading PART {segment.Index} OF {segment.Total} of a longer audio-fiction book titled ""{title}"" — beats [Beat {segment.FirstBeat}]–[Beat {segment.LastBeat}], provided below. Write an HONEST reader review of THIS PART as the person above, judging it as part of the whole (its momentum, how it lands for someone who read the earlier parts and will read on). Do not penalize it for not being a complete story.
+
+Be honest, NOT flattering. If it dragged, confused, or lost you, say so and name the beat or moment. Praise only what earned it.
+
+Give an overall score 1-100 for THIS PART as this reader — use the whole scale. Then list CONCRETE fixes pointing at actual beats/lines (pacing, exposition density, dialogue, clarity of action, voice). ""Make it better"" is useless — name the moment.
+
+Return ONLY a JSON object and nothing else:
+{{""score"": <integer 1-100>, ""review"": ""<your honest review of this part>"", ""improvements"": [""<concrete fix, name the beat>"", ""<concrete fix>""]}}";
     }
 
     private async Task<StrandReview?> SegmentBallotOnceAsync(

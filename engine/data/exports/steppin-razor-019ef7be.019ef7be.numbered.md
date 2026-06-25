@@ -3,63 +3,71 @@
 _Sasha Vo - Signal and Noise. Hired sight-unseen by an AI to keep one person alive in the GLMZ._
 
 [Beat 1]
-The Hereafter ran one screen, bolted high over the bottles, and the screen ran a cooking show older than the bar. A woman in a clean kitchen folded something into something. No sound. The generator ate the audio years ago and nobody bothered. Out here at the dead southwest edge, where the freight rails quit and stayed quit, it passed for a window. Sasha watched the woman dice an onion with both hands and drank her drink and let the quiet be quiet.
+The bar was called the Hereafter, which Sasha had taken for a joke until she'd been inside an hour, after which it stopped being one.
 
-The man two stools down had been narrating his own thoughts for six minutes. Now he slid one stool closer and put a hand flat on the bar near her glass.
+The screen over the bottles played something a hundred years old - a cooking competition from the last century, bright and loud and sure of itself, people who were probably all dead now plating a fish under studio lights while a clock counted down in the corner. Out here that passed for entertainment. Out here it passed for a window. Nobody in the Hereafter watched it and nobody turned it off.
 
-"Little thing like you shouldn't drink alone," he said.
+She had come for the quiet. There was exactly one way she knew to get it, and a man two stools down had been generous enough, over the last half hour, to keep volunteering.
 
-*Here it comes.* The world always did this bit. Flat, hostile, literal — she gave him nothing, which the universe took as a yes.
+He put a hand on her. He said the thing men said when they'd decided your size was an invitation.
 
-His hand moved off the bar toward her forearm. She heard the schism in his head a half-second before his fingers closed — the wet static other side of him, the part of every skull she couldn't switch off — and it told her his weight was already committed forward and there was nothing behind him to catch it. She took the bottle by the neck. Brought the heavy base up and across, short, no wind-up, into the hinge of his jaw. The glass held. The jaw did the giving. He went sideways off the stool with a sound like a sack of gravel hitting a floor, which was the only sound in the room now, and then it was over and the screen was still folding something into something and the quiet she'd bought lasted exactly as long as the swing.
+She gave him a second smile with the bottom of a bottle. For the length of it - the reach, the turn, the wet surprised sound he made discovering his new face - everything in her went still and level and clean, the only quiet she ever got, and it lasted about as long as it took him to fold against the rail and start screaming, and then it was gone and she was just a small woman in a loud room holding the neck of a broken bottle, furious, the way she always was the second it ended.
 
-The bartender didn't look up. The woman in the clean kitchen reached for the salt.
+Nobody followed her out. People in the Hereafter had a good instinct for the difference between a fight and a service being rendered.
 
 [Beat 2]
-She left a coin on the bar, more than the drink was worth, less than an apology, and went out the door into Joliet. The town sat where the freight rails quit — kept, not living, the way the city kept a back tooth it meant to pull when it got around to it. Nobody came here on purpose. That was the appeal. Rust ran along the rail bed the color of dried blood, and a hundred kilometers northeast the towers made a smear of stuck light low on the sky, like something spilled and left to set.
+Outside was Joliet, which the city kept the way a man keeps a tooth he means to pull. The towers were a hundred kilometers northeast, a low smear of light on the sky like a sunrise that had gotten stuck and given up. Out here the freight rails ran flat and dead in both directions, rust the color of dried blood, and nobody rode them anymore because nobody came this far on purpose. She wanted a road with no people on it. The rail bed obliged. She walked it north, because north was the only direction with a light at the end of it, and because behind her the man was still screaming and she had nowhere in particular to be.
 
-She walked the bed north toward it. Ties under her boots, gravel between. No people. A road with no people was the closest thing to off the world had ever offered her, and she took it the way she took everything — flat, with both hands, expecting nothing.
+The rail bed also, it turned out, had a camel on it.
 
-*Sleep tonight. That's the whole list. Walk till the jaw-man stops being a thing that happened and then sleep.*
+Sasha stopped.
 
-The schisms in her skull stayed quiet — no skulls out here to leak their wet static into hers — and for four hundred meters that quiet was clean and real and hers. Then the wrongness arrived first, ahead of the seeing, a cold with a clean vertical edge to it that her teeth registered before her eyes agreed to. On the rail bed ahead of her, walking the ties as if the ties were a thing it understood, was a camel.
-
-*There are no camels in Joliet.* She stopped. Her hand was already on the bottle she hadn't brought. *There are no camels.* The thought was correct and the camel did not care, and the cold with the vertical edge moved one tie closer, and somewhere under it, faint, was the start of a sound she had no skull to blame for.
+The camel stopped too, a few meters off, and regarded her with the long sideways patience of an animal that has nowhere to be. On its back sat a man, dressed for no weather in particular, sitting it like he'd been at it a thousand years and meant to do a thousand more. The important thing - the thing her body understood a half second before the rest of her caught up - was that there are no camels in Joliet. There had never been camels in Joliet. The fact landed in her stomach as a small cold drop. She kept her face shut and filed it where she filed everything.
 
 [Beat 3]
-The man on the camel sat the way nobody sits, comfortable on a thing that was not built for sitting, and the sound under the cold got a fraction wider — not louder, wider, a sound with no edges to find. "The camel is not my thrall," he said, and the saying did not arrive as a voice so much as a thing already finished, the way a memory arrives without your asking. "We just happen to be going the same way."
+"Where did you get the camel?" she asked. It was not the first question. It was the only one her mouth would make.
 
-"Which way is that?" Sasha asked. Flat. The way she'd asked the bartender for a second drink. The cold with the vertical edge stood in her teeth and she stood in it and gave it the same nothing she'd given the jaw-man.
+"The camel is not my thrall," the man said. He did not look down at it. "It is free to come and go as it pleases. We just happen to be going the same way."
 
-"We just arrived." The we did not resolve. There was a him and there was a more-than-him and the seam between them was where the wrongness leaked through, the same wet static she heard out of every skull except that this one had no skull, no weight committed forward, nothing behind it to catch and nothing in front to push. Her hand went to Noise on her left hip, found the grip, and her thumb sat on the safety the way it always sat, and the man on the camel was not unthreatened the way a brave man is unthreatened. He was unthreatened the way a phone is unthreatened when you raise your fist at the person on the other end of the call.
+"Which way is that?"
 
-*Shooting it is shooting the wall it's painted on.* She knew it the way she knew the onion in the clean kitchen had no smell. The hand stayed on Noise anyway because the hand had its own list and the list was short.
+"We just arrived."
 
-Then the camel put its head down. It came at her slow, the long ugly face dropping to her level, and it breathed — a warm wet animal breath that the cold did not touch, that smelled of nothing, projection-nothing, but came at her all the same, the way every stray dog in Joliet came at her, the way the half-feral cats off the rail bed came, going for her over everyone, choosing her out of an empty street.
+Her hand had gone to Noise on her left hip - the wrong hand for a stranger, the right hand for a threat, and her body had not finished deciding which he was.
 
-*They always do this. Even the ones that aren't real.* She held still and let it breathe at her and did not move her hand off the gun and did not move her body away from the breath, and somewhere in her, low, under the flat, was the old small dislike — not of the camel, of the choosing. *I don't like that they like me.*
+"Leave it, or take it out," the man said, pleasantly. "It is the same to us. You have already done both."
+
+"I haven't done anything."
+
+"Not yet. Also already. We are not good with your tenses."
+
+The camel took a step toward her - not the man steering it, the camel, on its own business - and put its great soft ridiculous head down by her shoulder and breathed at her, warm and grassy, the way every stray dog and gutter bird in the Glooms went for her the second she stopped moving, like she gave off a smell that said safe in a language she had never agreed to speak. She did not like animals. She especially did not like that they liked her. She stepped back. The camel followed. She let it. It was that or shoot a camel, and she had standards.
 
 [Beat 4]
-The breath stopped against her cheek and did not pull back, and the sound under the cold went wide enough that she felt the floor of herself for half a second — the half-second she had not closed, the breath she had not taken, body ahead of mind the way it had been ahead of the jaw-man's fingers. The man on the camel was already inside it before she knew there was an inside.
+"Why are you talking to me?" she asked.
 
-"You were left open," he said, and it arrived finished, the way the camel had arrived, the way the cold had arrived in her teeth before her eyes agreed. "Someone should have closed you. A door this size, in a thing this small. Someone should have come with the gasket and the seal and shut it while you were young enough not to fight." The sound widened again, almost kind, which was worse than the cold. "They did not. And we are glad of the oversight. We could not have found you, otherwise. We could not have come the same way."
+"The others are shut." The man tipped his head at the dark - the dead town, the dead rails, the far stuck light of the city. "Talking to them is talking to a wall that believes it is a window. You were left open. Someone should have closed you, and did not." Something in the voice moved, the way a single voice will sometimes have a second voice come up under it. "We are glad of the oversight."
 
-*Closed.* The word sat in her like a coin she hadn't spent. *There was supposed to be a door.* For exactly as long as the breath lasted she let it be true — that somewhere a hand had been meant to come and had not come, that the wet static in every skull was a thing that got into hers because nobody had ever sealed the hole — and the floor of herself stood open and the man on the camel stood in it the way the jaw-man's weight had stood committed forward, all the way in, nothing behind to catch.
-
-Then she shut it. No wind-up. She brought the flat back across the open place the way she'd brought the bottle up across the hinge of his jaw, short, into the giving part, and the anger came back into the room behind her teeth like it had only stepped out for air.
+It got in. She felt it get in - the breath she didn't take, the held half second - someone should have closed you and did not, said back to her flat as a weather report by a man on a camel who was not, she was increasingly sure, entirely there. Then she shut the door on it, the way she had learned to shut everything, and the anger came back like it had only stepped out for air.
 
 "Don't," she said.
 
-"We have already stopped."
+"We have already stopped," the man agreed.
 
 [Beat 5]
-She had felt it before tonight and not had a word for it, and now, with the cold standing in her teeth and the camel's nothing-breath gone off her cheek, the word arrived the way everything out here arrived — finished, ahead of her asking. A pull. Low and constant, north and east, under the rail bed and under Joliet and under the four hundred meters of clean quiet she'd thought was hers. Not the wet static off the skulls. Something the static leaked *toward*. A grade in the floor of the world she'd been walking uphill against her whole life without naming the slope.
+She made herself look at the towers instead of at him. "Something's wrong out here. And up there." She had felt it for weeks without a word for it: a pull, low and constant, that had nothing to do with the light and everything to do with the direction she kept ending up walking.
 
-"There's a pull," she said. Flat. Not asking. "Out here, where it's supposed to be empty. And up there." She did not point. She knew where up-there was without pointing; she had spent nineteen years arranging her back to it.
+"You make a hole in a thing," the man said, "and the thing is on both sides of the hole. They dig toward us. We arrive toward them. Where you would put the middle, there will be no middle." The camel chewed at nothing, content. "You felt it. That is why you are walking north and telling yourself it is because of the light."
 
-"You make a hole in a thing," the man on the camel said, "and the thing is on both sides of the hole." The sound went wide again, patient, a sound with no edges for her to set her teeth against. "They dig toward us. We arrive toward them. The same way. Always the same way." The camel's head came up. The long ugly face turned northeast, deliberate, and the man did not turn — the more-than-him did, the seam of him swinging like a needle finding the load it had been built to find. "There."
+"I'm walking north because there's nothing behind me."
 
-*Are you the thing that's been taking the kids.* The question stood up in her before she chose it, the only question she'd carried into Joliet, the reason she'd walked off the world to begin with. She did not soften it into a question. She let it sit between them, flat, with both hands.
+"Yes," the man said, kindly, as though she had agreed with him.
 
-"No," he said, and it arrived gentle, which was worse. "That one does not know what a person is. We know." The cold held its vertical edge. The towers made their smear of stuck light low on the sky, a hundred kilometers off, the one fixed thing she had organized an entire life around keeping behind her — and the pull stood under her boots and ran toward it, clean, indifferent, hers whether she liked it or not. *I don't go that way. That's the rule. That's the only rule that ever held.* Her thumb left the safety. Her boots found the next tie, and the next, north, against every instinct, into the grade she'd finally been given the word for, and the camel walked the ties beside her as if the ties were a thing it understood.
+"Are you the thing that's been taking the kids?"
+
+"No. That one does not know what a person is." The we widened, took in more we than one man could hold. "We know. That is worse, and it is better. You will decide which."
+
+It pointed northeast. At the light. At the one place she had spent her whole life arranging not to go.
+
+"We just arrived," the man said again, like it was good news. The camel turned to follow the rails toward the city as though the two of them had settled something between them, and Sasha - against every instinct she had ever trusted to keep herself alive - fell into step.
 

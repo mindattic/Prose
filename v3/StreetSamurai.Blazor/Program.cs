@@ -577,6 +577,28 @@ if (args.Contains("--review-strand"))
     return;
 }
 
+// CLI mode: manage the rented vast.ai review box (key from the MindAttic vault, provider 'vast').
+//   ss --gpu <status|stop|start|destroy> [--instance <id>]
+if (args.Contains("--gpu"))
+{
+    var cliBuilder = WebApplication.CreateBuilder(args);
+    cliBuilder.Services.AddStreetSamuraiServices();
+    var cliApp = cliBuilder.Build();
+    Environment.ExitCode = await VastGpuCli.RunAsync(args, cliApp.Services);
+    return;
+}
+
+// CLI mode: manage the rented RunPod review pod (key from the MindAttic vault, provider 'runpod').
+//   ss --runpod <status|stop|start|terminate> [--pod <id>]
+if (args.Contains("--runpod"))
+{
+    var cliBuilder = WebApplication.CreateBuilder(args);
+    cliBuilder.Services.AddStreetSamuraiServices();
+    var cliApp = cliBuilder.Build();
+    Environment.ExitCode = await RunPodGpuCli.RunAsync(args, cliApp.Services);
+    return;
+}
+
 // CLI mode: (re)generate the portable per-voter report (JSON + filterable HTM) from
 // a strand's most recent stored review batch, without re-running the panel.
 //   ss --review-report (--slug <slug> | --id <guid> | --code <CODE>) [--provider local|cloud|all]

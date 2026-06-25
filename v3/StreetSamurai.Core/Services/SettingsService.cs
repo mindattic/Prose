@@ -438,6 +438,11 @@ public class SettingsService : IDisposable
     public string LocalReviewBaseUrl { get => data.LocalReviewBaseUrl; set { data.LocalReviewBaseUrl = value; ScheduleSave(); } }
     /// <summary>Local model tag used by <c>--local</c> reviews (e.g. an Ollama tag with a baked-in num_ctx).</summary>
     public string LocalReviewModel { get => data.LocalReviewModel; set { data.LocalReviewModel = value; ScheduleSave(); } }
+    /// <summary>Human label for WHICH local backend a <c>--local</c> run used (e.g. "vast", "runpod").
+    /// Stamped as the report "brain" so vast.ai / RunPod / Ollama runs write SEPARATE report files
+    /// (<c>… reviews (vast).htm</c> vs <c>(runpod).htm</c>) instead of all colliding under "(local)".
+    /// Empty = auto-derive from <see cref="LocalReviewBaseUrl"/> host, falling back to "local".</summary>
+    public string LocalReviewLabel { get => data.LocalReviewLabel; set { data.LocalReviewLabel = value; ScheduleSave(); } }
     /// <summary>Bearer token for the local/self-hosted review endpoint. Empty for a bare
     /// localhost Ollama (which ignores auth); set it to the API key when
     /// <see cref="LocalReviewBaseUrl"/> points at a SECURED remote GPU (RunPod/vLLM/etc.),
@@ -446,6 +451,54 @@ public class SettingsService : IDisposable
     /// <summary>Max simultaneous local generations — kept low because a single GPU can only
     /// run a few large-model generations at once before spilling / OOM.</summary>
     public int LocalReviewMaxConcurrency { get => data.LocalReviewMaxConcurrency; set { data.LocalReviewMaxConcurrency = Math.Max(1, Math.Min(16, value)); ScheduleSave(); } }
+    /// <summary>The local model's context window in TOKENS (the Ollama tag's num_ctx). The review
+    /// engine uses this to size segments so an oversized strand is chunked to FIT the local window
+    /// instead of being silently truncated (which drops the system prompt and fails every ballot).
+    /// Cloud reviews ignore this. Default 16384 — raise it to match a model rebuilt with a larger
+    /// num_ctx, and big strands will segment into fewer, larger chunks.</summary>
+    public int LocalReviewContextTokens { get => data.LocalReviewContextTokens; set { data.LocalReviewContextTokens = Math.Max(4096, value); ScheduleSave(); } }
+    /// <summary>vast.ai REST API key for <c>ss --gpu</c> (start/stop/destroy the rented review box).
+    /// Read straight from the shared MindAttic credential vault — <c>VAST_API_KEY</c> env, then
+    /// %APPDATA%/MindAttic/LLM/<c>vast.json</c>, then the <c>vast</c> entry in <c>providers.json</c>,
+    /// then cloud config. The standard LLM resolver only knows registered providers, so a non-LLM
+    /// credential like this reads the vault files directly. Not an LLM key.</summary>
+    public string VastApiKey => ResolveVaultKey("VAST_API_KEY", "vast");
+
+    /// <summary>RunPod REST API key for <c>ss --runpod</c> (status/stop/start/terminate the rented
+    /// review pod). Resolved from the shared MindAttic credential vault — <c>RUNPOD_API_KEY</c> env,
+    /// then %APPDATA%/MindAttic/LLM/<c>runpod.json</c>, then the <c>runpod</c> entry in
+    /// <c>providers.json</c>, then cloud config. Not an LLM key; never on the command line.</summary>
+    public string RunPodApiKey => ResolveVaultKey("RUNPOD_API_KEY", "runpod");
+
+    private static string ResolveVaultKey(string envVar, string providerId)
+    {
+        var fromEnv = Environment.GetEnvironmentVariable(envVar);
+        if (!string.IsNullOrWhiteSpace(fromEnv)) return fromEnv.Trim();
+        try
+        {
+            var dir = Environment.GetEnvironmentVariable("MINDATTIC_LLM_CREDENTIALS");
+            if (string.IsNullOrWhiteSpace(dir))
+                dir = Path.Combine(Environment.GetFolderPath(Environment.SpecialFolder.ApplicationData), "MindAttic", "LLM");
+
+            var perFile = Path.Combine(dir, providerId + ".json");
+            if (File.Exists(perFile))
+            {
+                using var d = System.Text.Json.JsonDocument.Parse(File.ReadAllText(perFile));
+                if (d.RootElement.TryGetProperty("apiKey", out var k) && k.ValueKind == System.Text.Json.JsonValueKind.String
+                    && !string.IsNullOrWhiteSpace(k.GetString())) return k.GetString()!.Trim();
+            }
+            var index = Path.Combine(dir, "providers.json");
+            if (File.Exists(index))
+            {
+                using var d = System.Text.Json.JsonDocument.Parse(File.ReadAllText(index));
+                if (d.RootElement.TryGetProperty(providerId, out var prov)
+                    && prov.TryGetProperty("apiKey", out var k2) && k2.ValueKind == System.Text.Json.JsonValueKind.String
+                    && !string.IsNullOrWhiteSpace(k2.GetString())) return k2.GetString()!.Trim();
+            }
+        }
+        catch { /* fall through to cloud config */ }
+        return VaultConfiguration?[$"MindAttic:Vault:{providerId}:apiKey"]?.Trim() ?? "";
+    }
     /// <summary>When false, ContinuousQualityService does not fire automatically on beat save. Reviews must be called manually.</summary>
     public bool ReviewAutoRunEnabled { get => data.ReviewAutoRunEnabled; set { data.ReviewAutoRunEnabled = value; ScheduleSave(); } }
     /// <summary>When true, WorldTickService advances the story clock and writes EntityStateEvents per active character on each tick.
@@ -726,9 +779,12 @@ public class SettingsService : IDisposable
         public int ReviewMaxConcurrency { get; set; } = 10;
         // Local-LLM review (--local) defaults
         public string LocalReviewBaseUrl { get; set; } = "http://localhost:11434/v1/chat/completions";
-        public string LocalReviewModel { get; set; } = "qwen2.5-14b-rev";
+        public string LocalReviewModel { get; set; } = "qwen2.5-32b-rev-128k";
+        public string LocalReviewLabel { get; set; } = "";
         /// <summary>Bearer token for a SECURED remote review endpoint (RunPod/vLLM/etc.); empty = bare localhost Ollama.</summary>
         public string LocalReviewApiKey { get; set; } = "";
+        /// <summary>Local model context window in tokens (num_ctx) — used to size review segments to fit.</summary>
+        public int LocalReviewContextTokens { get; set; } = 131072;
         public int LocalReviewMaxConcurrency { get; set; } = 2;
         /// <summary>When false, ContinuousQualityService does not fire on beat save. Reviews must be called manually.</summary>
         public bool ReviewAutoRunEnabled { get; set; } = true;
