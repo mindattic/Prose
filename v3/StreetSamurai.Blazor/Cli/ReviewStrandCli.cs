@@ -34,7 +34,7 @@ public static class ReviewStrandCli
         int readers = settings.ReviewReaders, panel = settings.ReviewPanel,
             ballots = settings.ReviewBallots, prose = settings.ReviewProse;
         bool samePersonas = false, study = false, census = false, skipDiagnosis = false, byAct = false;
-        bool useLocal = false; string? localModel = null;
+        bool useLocal = false; string? localModel = null, localUrl = null, localKey = null, localLabel = null; int localCtx = 0;
         int segChars = 90000, segBallots = 8;
         // RFC 0009 §2 — cost tier. Explicit --ballots/--prose/--skip-diagnosis still win over the tier.
         string? effort = null;
@@ -64,8 +64,29 @@ public static class ReviewStrandCli
                 case "--tier":            if (i + 1 < args.Length) effort = args[++i]; break;
                 case "--local":           useLocal = true; break;
                 case "--local-model":     if (i + 1 < args.Length) localModel = args[++i]; break;
+                case "--local-url":       if (i + 1 < args.Length) localUrl = args[++i]; break;
+                case "--local-key":       if (i + 1 < args.Length) localKey = args[++i]; break;
+                case "--local-ctx":       if (i + 1 < args.Length && int.TryParse(args[++i], out var lc)) localCtx = lc; break;
+                case "--local-label":     if (i + 1 < args.Length) localLabel = args[++i]; break;
             }
         }
+
+        // --local-url/--local-key: point this run at a remote/rented OpenAI-compatible
+        // endpoint (e.g. a vast.ai/RunPod box). Persisted so the UI + later runs reuse it
+        // until changed; passing --local-url also implies --local.
+        if (!string.IsNullOrWhiteSpace(localUrl))
+        {
+            settings.LocalReviewBaseUrl = NormalizeLocalUrl(localUrl);
+            useLocal = true;
+        }
+        if (localKey != null) settings.LocalReviewApiKey = localKey;
+        // --local-label: tag WHICH local backend this is ("vast"/"runpod"/…). Persisted; stamps the
+        // report filename so vast.ai, RunPod and Ollama reports stay separate instead of colliding
+        // under "(local)". Omit to auto-derive from the endpoint host (runpod/vast), else "local".
+        if (localLabel != null) { settings.LocalReviewLabel = localLabel.Trim(); useLocal = true; }
+        // --local-ctx: the box's context window in tokens (num_ctx). The engine sizes segments to
+        // fit it — set it high (e.g. 131072) for a whole-book box so big strands aren't chunked.
+        if (localCtx > 0) { settings.LocalReviewContextTokens = localCtx; useLocal = true; }
 
         // Apply the cost tier to whichever sampled-review knobs weren't set explicitly.
         var profile = ReviewEffortProfile.Resolve(effort);
@@ -90,6 +111,10 @@ public static class ReviewStrandCli
             Console.Error.WriteLine("  --effort deep      ~37 calls — cumulative/publish gate (>=85%)");
             Console.Error.WriteLine("  --local            run ballots on the local LLM (Ollama) — free, no cloud calls (default + --by-act only)");
             Console.Error.WriteLine("  --local-model TAG  override the local model tag for this run (default: settings.LocalReviewModel)");
+            Console.Error.WriteLine("  --local-url URL    point at a remote/rented endpoint (e.g. http://1.2.3.4:11434); implies --local; persisted");
+            Console.Error.WriteLine("  --local-key KEY    bearer token for a secured remote endpoint (omit for a bare Ollama box)");
+            Console.Error.WriteLine("  --local-ctx N      box context window in tokens (num_ctx); set high (e.g. 131072) for a whole-book box");
+            Console.Error.WriteLine("  --local-label NAME tag this backend (vast/runpod/…) so its report saves separately; auto-derived from URL if omitted");
             return 1;
         }
         var dbFactory = services.GetRequiredService<IDbContextFactory<StreetSamuraiDbContext>>();
@@ -346,5 +371,15 @@ public static class ReviewStrandCli
         }
 
         return 0;
+    }
+
+    /// <summary>Accept a bare host, a "/v1" root, or a full chat-completions URL and
+    /// normalize to the exact endpoint LocalReviewLlm expects.</summary>
+    private static string NormalizeLocalUrl(string raw)
+    {
+        var u = raw.Trim().TrimEnd('/');
+        if (u.EndsWith("/v1/chat/completions", StringComparison.OrdinalIgnoreCase)) return u;
+        if (u.EndsWith("/v1", StringComparison.OrdinalIgnoreCase)) return u + "/chat/completions";
+        return u + "/v1/chat/completions";
     }
 }
