@@ -139,9 +139,9 @@ unavailable. Use these facts as texture; the stories stay inside the city.
 | **Rio de Janeiro** | Megalopolis. South America's dominant city. | Pulse-connected |
 | **Mexico City** | Megalopolis. | Pulse-connected |
 | **Jakarta** | Megalopolis. | Pulse-connected |
-| **The Plainsmen** | Last organized Christian community (~40,000). Former Midwest (Indiana/Ohio/Pennsylvania). Hand tools, horse-drawn, no neuretics. Coming-of-age: *Rumspringa* — at ~16, live outside freely, then choose baptism or departure (~85–90% return). | Border-zone trade |
+| **The Amish** | Last organized Christian community (~40,000). Former Midwest (Indiana/Ohio/Pennsylvania). Hand tools, horse-drawn, no neuretics. Coming-of-age: *Rumspringa* — at ~16, live outside freely, then choose baptism or departure (~85–90% return). | Border-zone trade |
 
-**The Plainsmen (the Amish)** survived the 2082–2091 *Rise and Fall of the False Prophet* —
+**The Amish (the Amish)** survived the 2082–2091 *Rise and Fall of the False Prophet* —
 which destroyed every other Christian sect — because they had always rejected outside authority.
 Their Rumspringa ritual has a canonical structural parallel to the Underclan's Surfacing (UNDR);
 surface observers in that story may draw the comparison explicitly.
