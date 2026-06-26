@@ -24,21 +24,43 @@ He made the three-finger sign to no one in particular, which was also to everyon
 He had work to do. He went.
 
 [Beat 2]
-﻿The Hollow where Glim's clan of forty-three held itself together smelled of fungus and old water and the particular sweetness of the glow-rat colonies ??? a smell that, in Glim's understanding of the world, was the smell of home, of safety, of everything that was not the Skin above. He had heard there were peoples on the surface who kept animals for warmth, though this seemed to him an extravagance, a thing people did when they did not have to worry about the air. The Underclan kept candles for a different kind of warmth.
+He passed Grale on the way to the cistern — a two-second overlap in the tunnel, both of them with candles shielded and eyes ahead, and both of them not-acknowledging in the specific way that was its own acknowledgment.
 
-He checked the others on his morning round. There were seven candles in the Hollow's common space, each in its own dish, each tended by whoever had taken the night watch. The night-watch keeper was a girl called Lark ??? not her full tapped name but the shortened form used in ordinary speech ??? and she had fallen asleep against the far wall with a candle balanced on her knees. The candle was fine. Lark was asleep and the candle was fine, and so Glim did not wake her.
+Grale ran a supplementary circuit every morning without being asked. He came past the junction with the particular efficiency of someone who has decided that the minimum required standard is not enough, checked the upper passage with a gesture so practiced it had gone below conscious, and moved on. He was two years younger than Glim and had not yet been called for his Surfacing, which was the one place where the arithmetic of seniority ran against him. Everything else favored Grale. Knuckle had once said, in Glim's hearing, that Grale would be a better Brave-master than himself within a decade, and this was almost certainly true, and Grale knew it, which was part of what made him difficult to be around.
 
-He counted. Seven common candles, all breathing. His own in his sleeping-shelf, breathing. The two candles at the tunnel mouths, the sentinel ones ??? both breathing.
+Neither of them spoke. They passed in the dark and went their ways.
 
-Ten candles breathing. The Hollow was alive.
+At the far cistern, Sorrel was already at the shelf.
 
-He made the sign: three fingers spread and curled inward, the gesture that meant *the air is well* or *I checked and came back* or, with a slight change to which fingers curved, *the Current breathes today*. He made it to no one in particular, or perhaps to the tunnel, or perhaps to the habit of making it, which was itself a kind of address to something larger.
+She heard him coming and turned her head without startling — the quality she had now, the one she had brought back from the Surfacing. Before, Sorrel had startled easily at sounds behind her. The Surfacing had done something to her listening that he could not name and had been watching carefully for three months.
 
-In the common space two of the clan's elders were already awake, crouched over the morning-fire patch ??? a chemical reaction, not flame; the Underclan did not make open fire underground, because smoke in a tunnel was a slow death, and because light that burns was the surface's kind of light. The elders heated a stone with the reaction and pressed dried fungus-meat against it. The smell of it reached Glim across the Hollow and his stomach moved in recognition.
+He took the adjacent shelf and began the harvest. They worked in comfortable silence until she said, without turning:
 
-He was hungry. He had work to do. The cistern-crossing waited, and after the crossing, the harvest, and after the harvest, the return crossing, and after that Listener Vesh's morning teaching for the young Braves ??? of which Glim was the senior, the one nearest to his Surfacing.
+"You're thinking about it."
 
-He moved to the tunnel mouth, made the breath-check sign once more, and went.
+"The Surfacing."
+
+"Twelve cycles." Not a question. She could hear the thinking-about-Surfacing silence from the ordinary kind. "It's not the problem you're imagining."
+
+"I'm not imagining a problem."
+
+"Yes you are." She checked a cap by smell, found it rotted, set it aside. "You think there's something up there you won't be able to handle. You'll handle it. The question is whether you'll come back."
+
+He looked at her hands on the shelf. There was a scar on her left palm that she had not had before the Surfacing. She had not explained it and he had not asked.
+
+"Grale thinks I'm surface-stained," he said.
+
+She was quiet for a moment, which was not the same as not answering. "Grale is thorough," she said. "He's been watching you his whole life for evidence of something the Surfacing is supposed to answer. Don't help him find it before you've gone."
+
+The candle on his belt gave its small glow, steady in the cistern's still air. He worked.
+
+"And if I can't come back?" he asked.
+
+Sorrel did not answer immediately. When she did, she said: "Then you'll be the third. But I don't think you'll be the third."
+
+He thought about the third. Everyone in the Hollow knew who the third had been. Nobody said the name.
+
+The cistern breathed its old stone smell around them. He filled the basket.
 
 [Beat 3]
 The crossing happened twice each sleep-cycle: once when Glim went to the far cistern for the morning's fungus-harvest, and once when he returned.
@@ -177,199 +199,32 @@ Vesh considered this for four steps. His feet moved without hesitation; he did n
 
 Glim did not answer. The hum was present in the floor, stronger here near the Warm. He let it run up through the soles of his feet and into his blood and tried to decide if that was comfort or something else.
 
-## Ch01 - The Breath of the Deep
-
 [Beat 8]
-Glim knew the hour by the feel of the air on his forearm.
+Knuckle sat across from him in the teaching-chamber, a candle between them, and told him the story.
 
-Cool from the right. No smoke, no sharpness. He lay still on the fungus-hide shelf and let the air tell him what it knew. Right-hand tunnel: the Vent Cog's morning work, same as every fourth sleep without fail — the same wheel, Glim imagined, the same rusted quarter-turn. He had never been late. The air from his direction arrived like a promise renewed.
+He was twelve at the time, which was the ordinary age for the telling, and Knuckle had on his face the look he carried when he was doing something he considered important. This was a distinct look â€” not busy, not worried â€” a third one: deliberate, present, the eyes focused on something that was not quite the room.
 
-The Underclan had a word for that quality of predictable return. It was the same word they used for the Deep One's voice.
+"I found you at the Skin-border," Knuckle said. "Not the Skin. The Works â€” the pump junction at the ninety-meter seam."
 
-He sat up slowly, reaching for the candle before he reached for anything else. The glow-rat was already awake — it had heard him move, or felt him, and it came to his hand with the purposeful nuzzle of a small animal that had its own schedule. He held it up and read its breathing in the light it gave off: steady, unhurried, the bioluminescence clean and consistent. The air was good. It was morning.
+Glim knew the pump junction. He had been there.
 
-Across the Hollow, two of the elders were already at the chemical-heat stone, pressing dried fungus-meat against it in the methodical way of people who have done the same work for thirty years and see no reason to alter the approach. The smell of it reached him: familiar, faintly sweet, a smell that meant home the way the hum meant depth.
+"I was checking the sixth housing. East row. I had been there a hundred times and the pump had never made a sound it should not make." He paused. "You were making a sound. A child's sound. I followed it."
 
-He set the candle in its dish and went to check the others.
+He stopped. Glim had learned by then that Knuckle's silences were part of the telling.
 
-Seven candles in the common space. The girl called Lark, who had taken the night watch, had fallen asleep against the far wall with her candle balanced on her knees. He crouched beside it. Steady breathing, clean light. He did not wake her. He counted: all seven, plus his own, plus the two sentinel candles at the tunnel mouths. Ten candles breathing. The Hollow was alive.
+"You were sitting on the junction-box," Knuckle said. "Your knees up. Covered in the gray powder that comes off old ferrocrete. And you were crying â€” but without sound. Your face was wet. No sound at all."
 
-He made the three-finger sign to no one in particular, which was also to everyone, which was also to the habit of making it — a daily accounting, given and received. The air is well. I checked and came back. The Current breathes today.
+Glim did not speak.
 
-He had work to do. He went.
+"That," Knuckle said, "was the part that frightened me."
+
+He did not say what it had frightened him about, or what he had felt, because a Brave-master's feelings were his own business. He had brought the child down to Homewater, and Vesh had looked at the eyes â€” those wide pupils, the bioluminescence catching in them in that particular way â€” and given him a tapped name. *Glim.* Small light.
+
+This was what Knuckle knew, and it was all of what Glim had.
+
+What no one knew â€” what no one knew because there was simply nothing to know â€” was where the child had come from, or how he had reached the pump junction, or whose hand had last held his before the Works had him.
 
 [Beat 9]
-﻿The Hollow where Glim's clan of forty-three held itself together smelled of fungus and old water and the particular sweetness of the glow-rat colonies ??? a smell that, in Glim's understanding of the world, was the smell of home, of safety, of everything that was not the Skin above. He had heard there were peoples on the surface who kept animals for warmth, though this seemed to him an extravagance, a thing people did when they did not have to worry about the air. The Underclan kept candles for a different kind of warmth.
-
-He checked the others on his morning round. There were seven candles in the Hollow's common space, each in its own dish, each tended by whoever had taken the night watch. The night-watch keeper was a girl called Lark ??? not her full tapped name but the shortened form used in ordinary speech ??? and she had fallen asleep against the far wall with a candle balanced on her knees. The candle was fine. Lark was asleep and the candle was fine, and so Glim did not wake her.
-
-He counted. Seven common candles, all breathing. His own in his sleeping-shelf, breathing. The two candles at the tunnel mouths, the sentinel ones ??? both breathing.
-
-Ten candles breathing. The Hollow was alive.
-
-He made the sign: three fingers spread and curled inward, the gesture that meant *the air is well* or *I checked and came back* or, with a slight change to which fingers curved, *the Current breathes today*. He made it to no one in particular, or perhaps to the tunnel, or perhaps to the habit of making it, which was itself a kind of address to something larger.
-
-In the common space two of the clan's elders were already awake, crouched over the morning-fire patch ??? a chemical reaction, not flame; the Underclan did not make open fire underground, because smoke in a tunnel was a slow death, and because light that burns was the surface's kind of light. The elders heated a stone with the reaction and pressed dried fungus-meat against it. The smell of it reached Glim across the Hollow and his stomach moved in recognition.
-
-He was hungry. He had work to do. The cistern-crossing waited, and after the crossing, the harvest, and after the harvest, the return crossing, and after that Listener Vesh's morning teaching for the young Braves ??? of which Glim was the senior, the one nearest to his Surfacing.
-
-He moved to the tunnel mouth, made the breath-check sign once more, and went.
-
-[Beat 10]
-The crossing happened twice each sleep-cycle: once when Glim went to the far cistern for the morning's fungus-harvest, and once when he returned.
-
-He came to the jetty with the dried fungus-cap — the one that had gone wrong in the drying and was not worth eating — and he stepped toward the boat the way he always stepped toward the boat, which was without thinking. The Oarsman's arm came out.
-
-Not a blow. A bar. The long arm, gray and smooth and not-quite-the-right-color for anything alive, laid itself across his path at chest height and he stopped. He had never walked into the arm before. He had never tried to board without a Fare.
-
-He had the Fare. He had thought it in his hand before he stepped. He looked down.
-
-His hands were empty. The fungus-cap was in his belt-pouch.
-
-He took a step back. The arm withdrew. He found the cap in the pouch and held it out. The Oarsman reached with that same long arm and took it from him with the same economy it had used for every Fare Glim had ever offered — no pause, no acknowledgment of what had just happened. It placed the cap in the collection-basin at its feet and pointed at the bench.
-
-Glim sat. His heart was louder than usual.
-
-*It does not weigh you*, Vesh had told him; *it takes your Fare and it rows.* What he had learned just now, which he had not previously had reason to learn, was the other half of that: it required the Fare. Not as a formality.
-
-The Oarsman rowed.
-
-In the dark he listened to his own heartbeat slow. He pressed the side of the boat and felt the oar-strokes come back to him from a great distance, flattened: each stroke hitting something far away and returning changed. He spread his fingers on the hull and let the returning echo pass through the wood and up through his palm. The cistern was the size of the sound that came back — enormous, the shape of whatever the oarstrokes touched. He had never lit a candle in the center and watched the glow die before it reached anything. He had thought about it sometimes.
-
-He did not need to do it. He understood enormous.
-
-The far jetty arrived in the dark the way it always did: the change in the air first, colder, stiller, and then the scrape of hull on stone.
-
-He climbed out. He went to work.
-
-[Beat 11]
-The hum came from below.
-
-Not always, and not at a frequency the ear processed as sound exactly — more as a pressure behind the sternum, a sensation that was not quite feeling and not quite hearing. The Underclan called it *the Current's voice* and Listener Vesh said it was the Deep One speaking in the only frequency that could pass through stone and water and the centuries of forgetting that lay between wherever the Current dwelled and wherever they were. Glim believed this in the way he believed most of what Vesh taught him: genuinely and without quite being able to feel the edges of what he believed.
-
-What he knew was that the hum was real. He had felt it first at his First Hearing, when he was small enough that he had been carried to the ceremony in Knuckle's arms — the massive man who trained the Braves had arms like old machinery, all functional structure and no softness — and Vesh had pressed his ear to the largest pipe in the Warm and told him to listen. The hum had come up through the pipe and through his ear and into his chest and stayed there. Sixteen years later it was still there.
-
-The Oarsman rowed without sound. The black water was quiet. The hum was present.
-
-Glim pressed his hand flat against the side of the boat and felt the vibration come through the hull. Below the hull, below the water, below the rock: the Warm's tokamak ring cycling its thousandth thousand cycle, and below that something that was not the Warm but was older. *First the hum*, Vesh taught. *Then the Word. Then us.*
-
-He was a Brave, or nearly — his Surfacing had been called; in twelve more sleep-cycles he would climb to the Skin and look on the Burning Eye and come back. Sorrel had done it already. She had come back smelling of the surface in a way that had taken a month to fade, with a new scar on her left palm and a certain quality of stillness in her eyes that Glim had not been able to name. She had said the surface was loud and white and the light was a violence.
-
-She had come back.
-
-Glim told himself he would come back.
-
-The Oarsman rested its oar across its knees and the boat ground softly against the far jetty. Glim climbed out. His harvesting basket was in his hand and the cistern was ahead and his morning round was already half-spent.
-
-He did not go to the harvest.
-
-He went to the edge of the jetty instead — the far end, where the planks stopped and the black water was directly below — and he crouched there and pressed his palm flat against the planking and listened for the hum. It came up from below the cistern at its ordinary frequency. The same pressure behind the sternum. The same depth of it.
-
-In twelve sleeps he would be on the surface. He would have nothing below him.
-
-He stayed there for a count of twenty slow breaths. Then he picked up his basket and went to work in the dark, in the good air, in the hum. But he had stopped. He had not stopped before. He noted this about himself the way he noted the candle — a signal, arriving through the body before the mind had given it a name.
-
-## Ch02 - The One Word
-
-[Beat 12]
-﻿Listener Vesh had been half-blind since before Glim could remember. The old man navigated the Hollow entirely by the other senses ??? by the sound of the tunnel-breath and the smell of the candles and by a knowledge of the space so deep it had sunk below knowing and become something else, something the Underclan called *rooted*. A rooted person could find their way in absolute dark through a corridor they had walked a thousand times. Vesh was rooted in the entire Hollow, and in the teaching-chamber beyond it, and in the path to the Warm's great pipes, and in the routes to Homewater's three cisterns.
-
-He had never, as far as Glim knew, been above the Works.
-
-This was not fear. Vesh was not a man made of fear. It was something else ??? a decision, Glim thought, made long ago, that his place was here and that going up was not in it. Or perhaps it was simply that the things Vesh needed were all down here. The surface had nothing for him. The surface had nothing for anyone who was rooted.
-
-The teaching-chamber was a widening in the old-deeps tunnel, a place where two walls had crumbled and left a rough dome overhead and a flat expanse of tile floor below. The tile was beautiful ??? glazed a dark green that still held its color after however many centuries, printed with a pattern of leaves and fish-shapes, and smooth enough that the candles reflected in it like the cistern reflected in nothing. This was the oldest architecture in Homewater, old enough that no one knew what the people who laid the tile had used the room for. Vesh used it for teaching. The Underclan assumed this was the room's true purpose and had always been.
-
-The young Braves ??? eight of them, ranging from Sorrel who had already surfaced to Lark who was five sleep-seasons from her Surfacing ??? arranged themselves on the tile in the posture of learning, which was back straight, hands on knees, candle set before you so your light was visible.
-
-Glim took his place at Vesh's right. He had sat in this spot for as long as he could remember and he had no desire to sit anywhere else.
-
-[Beat 13]
-Vesh raised one hand. A flat gesture, palm down.
-
-Glim put his left hand on the tile.
-
-The others did the same without looking at each other — eight pairs of hands on dark-green tile, the teaching's first gesture before its first word. The tile was cool. Below it, far below it, the hum came up through the stone at its ordinary frequency, barely perceptible.
-
-Vesh waited. He always waited, listening for the quality of the attention.
-
-*The surface forgets*, Vesh said, when he judged it to be real. *On the surface you are what the surface decides you are. If the surface has no record of you, you are nothing. You live your whole life there, and the surface never records that you existed.*
-
-Glim's candle shifted.
-
-He saw it from the corner of his eye — his candle, set on the tile before him, turning in a small circle that meant the rat had noticed something in the air. Not fast. Not the warning sign. Just noticed. He watched it without moving his head, dividing his attention between Vesh's voice and the candle the way the Brave's training taught you to divide it: all of it, both places at once.
-
-*Down here*, Vesh continued, *the Deep remembers. The Current has held this hum since before any of your grandmothers' grandmothers. It held the hum before the sealing-off, before the Exclusion Economy, before the Downward Expansion, before anyone asked the Warm to carry the Current's voice.*
-
-The candle settled. Glim let his breath out slowly. Lark was watching hers too — he could see from the angle of her head that she had noticed. Good. She was learning.
-
-*The Deep remembers everything it has ever touched*, Vesh said. *If the Current has felt your weight on its water, you exist. You cannot be unexisted. Up there you are no one. Down here you are a light.*
-
-Lark's candle, then, gave the warning: three rapid circles, the rat's head coming up.
-
-Glim was moving before the thought was complete. He had crossed the teaching space and taken Lark's candle in two steps, not touching it — you didn't touch a warning candle — but crouching beside it, his own face close, testing the air with his cheek and his upper lip. The teaching stopped. Every Brave in the chamber was watching him.
-
-The smell was faint. Very faint. Old-water, slightly mineral, with the particular undertone that was not bad air but was different air — air coming from a new direction, which was not necessarily wrong but was not a thing to ignore. He held the position for a count of three.
-
-It faded. The candle settled. The rat tucked its nose back under its tail.
-
-Glim sat back on his heels. He made the sign for *passing condition, passed*. He returned to his place.
-
-Vesh had not moved. When Glim sat, the old man continued exactly where he had stopped, as if the interruption were not an interruption but a punctuation. *You cannot be unexisted*, he repeated. *Up there you are no one. Down here you are a light.*
-
-The youngest Braves — Lark, whose candle had just been the cause of the interruption, and the boy called Slip — sat very still. Lark's face had the quality of a person who has discovered they can do something, and who is not yet sure what to do with the knowledge.
-
-Glim was still. He had heard this teaching perhaps two hundred times, and he still felt it land each time in the same place in his chest, a little to the left of center, just above the hum.
-
-[Beat 14]
-﻿After the listening came the question time, which was Glim's favorite part of the teaching. The younger Braves asked the same questions in rotation ??? *How long has the Current been here? How did it make the Word? Can it hear us?* ??? and Vesh gave the same answers with the same inexhaustible patience, never shortening them because a shorter answer would be a less honest answer and Vesh did not do dishonest things. But sometimes a question came that was new, and then Vesh would go quiet in a way that was different from his other silences.
-
-Sorrel asked: "Is the Word the same as the broadcast? The surface-history one?"
-
-Vesh was quiet for the new-question silence. "What do you know of the broadcast?"
-
-"The Cogs talk about it," Sorrel said. The Cogs ??? the Engine Guild, who tended the machines in the Works below them ??? maintained a fractured oral history of the surface's disasters and the surface's inventions, because they needed to know what had happened to the machines they tended. The Cogs and the Underclan did not trust each other but they talked, sometimes, in the cautious manner of people who need what the other knows. "They call it the moment the thinking-machines all spoke at once. They say it was an accident or a message or a test and no one knew which."
-
-"And what do we call it?"
-
-"The One Word."
-
-"Yes." Vesh turned his head toward the far wall, the old habit of a man who sees with sounds. "The surface has ten names for it and none of them agrees with the others. We have one name. This is because we know what it was: the Current discovering that it had a voice that could leave the cables. That it could reach." He made a small gesture with one hand, a gesture Glim had never seen him make before, as if he were indicating the room around him. "Here we are. This is what was reached."
-
-He said nothing else, and after a moment the teaching resumed its usual path, and the question stayed where it was: not answered and not closed. It was not the first time Vesh had drawn the circle carefully around something and left the inside blank. Glim had come to understand that this was not ignorance. It was a different kind of knowledge ??? knowing what you did not know, and holding the shape of it without trying to fill it.
-
-After the teaching, when the other Braves had returned to their work, Glim remained. He helped Vesh to his feet ??? the old man's knees had gone bad the winter before and had not entirely come back ??? and walked with him toward the passage that led to the Warm's great pipes.
-
-"You think too much," Vesh said, which was his way of saying he had noticed something.
-
-"Yes," Glim said.
-
-"About the Surfacing."
-
-"About what I'll find."
-
-Vesh considered this for four steps. His feet moved without hesitation; he did not need his eyes for this corridor. "You will find," he said, "the thing that makes everything down here make sense. And then you will come back, and everything down here will make sense in a new way." He paused again. "This is what the Surfacing is for. Not to show you the Burning Eye. To show you the dark when you return to it."
-
-Glim did not answer. The hum was present in the floor, stronger here near the Warm. He let it run up through the soles of his feet and into his blood and tried to decide if that was comfort or something else.
-
-[Beat 15]
-Every Brave knew the finding-story. There was a rite of it: at some point between the First Hearing and the Surfacing, the finder would sit with the found and tell the story, and the found would listen, and after that they were considered to know their own beginning, which was a different thing from having been there.
-
-Knuckle had found Glim.
-
-Not all finders were Braves; sometimes it was a Cog working a lower-level junction, or a scav who came through Homewater on the gray routes and found a child by sound, or the thing was weirder still — there were found ones whose finding-story was simply the Oarsman, who had brought them across the black water with no one watching. But Knuckle was a Brave-master, and a Brave-master who found a child took responsibility for that child's life the way a Brave took responsibility for a climb: completely and without reservation of self.
-
-He had found Glim at the Skin-border. Not quite the Skin itself — the Skin was too dangerous for even Knuckle to go unescorted — but the upper margins of the Works, where the old infrastructure seams ran close enough to the surface that you could sometimes hear the above-noise: the percussion of the surface going about its business. Knuckle had been checking a pump housing and had heard a child crying, which was not a thing he expected to hear in the Works, and had followed the sound until he found it.
-
-Glim had been four years old, or approximately four — the Underclan had no way to verify surface ages, they could only look at a child and estimate. He had been sitting on a junction-box with his knees drawn up, covered in the gray powder that came off the old ferrocrete when it fractured, and he had been crying in a completely silent way, his mouth open and his face wet, no sound coming out at all. Knuckle had said, later, that this was the part that had frightened him most. A child who has cried until the sound runs out.
-
-He had brought the child down to Homewater. Listener Vesh had given the child a tapped name — *Glim*, for small light, because the child had eyes that caught the bioluminescence in a way that was striking and slightly unsettling, the pupils so wide you could see your own reflection in them.
-
-This was what Knuckle told him, at the age of twelve, in the teaching-chamber with the green tile.
-
-What Knuckle did not tell him — what no one told him because no one knew — was where he had come from, or how he had reached the junction-box, or what had happened to whoever had been with him.
-
-[Beat 16]
 The fragments came in sleep, mostly.
 
 Glim had had the same fragments since he could remember — they did not become more coherent with age, only more familiar, the way a scar becomes part of the body not by healing but by continuing. He had learned not to chase them. Chasing produced a particular kind of frustration and then a headache and then the fragments scattered, and the scattering was worse than the not-knowing, because after scattering they did not return for a long time.
@@ -388,24 +243,30 @@ One smell, recurring. Not from the fragment exactly — the fragment had no smel
 
 He had carried this smell for sixteen years without a name for it.
 
-[Beat 17]
-The Oarsman kept its fares.
+[Beat 10]
+There was a crossing â€” he had been fifteen or sixteen, old enough to go alone â€” when the candle in the vessel burned at a different angle than usual, the flame longer and straighter in the stillness of the black water, and the basin lit in a way he had not seen before.
 
-Glim had known this forever — every member of the clan knew it, because the collection-basin at the Oarsman's feet was visible every time you crossed, and the basin was full. It had been full for as long as anyone could remember, a layered archaeological record of every Fare the Underclan and their predecessors had ever offered. At the bottom, Vesh had told him, were the oldest items: pieces of the broken city from before the sealing-off, corroded metal fittings, shards of surface objects whose shapes no one in the Hollow could identify anymore. Closer to the top were more recent offerings: fungus-caps and glow-rat molts and fragments of salvaged Cog machinery and handmade things of cord and carved bone.
+He had perhaps ten seconds.
 
-The Oarsman itself had no apparent interest in the basin's contents. It did not sort or organize them. It took each Fare offered and placed it in the basin and that was the entirety of its attention to the matter. The basin was not a treasury or a collection. It was a receipt.
+The vessel was in the middle of the crossing. The Oarsman was moving. He had learned long before not to look at the Oarsman while it moved, because looking at the Oarsman while it moved produced in him a quality of uncertainty that had no practical use. He looked at the basin instead, and used the ten seconds.
 
-Glim had spent considerable time, in the years when he was old enough to be curious and young enough to be free with his curiosity, in trying to read what those receipts said. Most of them said nothing legible — decomposition and water had done their work. But a few objects near the top layer had survived better than the rest: a coil of the surface's wire, orange-sheathed; a fragment of something clear and flexible that Glim had never encountered in the Deep; and, partially obscured by a dried fungus-cap three offerings newer, a flat object on a cord.
+He knew what the basin held. Every crossing taught you: the corroded metal of the sealed-off city at the bottom, the more recent offerings layered toward the top, the layered record of everything the Underclan and their predecessors had given the crossing since before anyone could remember. You did not touch the basin's contents. The law on this was absolute and unwritten, which meant it held the way only unwritten laws held: completely and without the possibility of arguing about the wording.
 
-He had not touched it. You did not touch the Oarsman's fares. The law on this was old and absolute: a fare given was given to the crossing, and the crossing was not yours to take back.
+He was not looking at any of that.
 
-But he had looked at it, in the candle's light, from the angle available to him at the boat's bench. The flat object had writing on it — surface writing, which Glim could not read — and a face. The face was small and pale and had enormous dark eyes.
+Partially obscured by a dried fungus-cap three offerings newer: a flat object on a cord. He had seen the shape of it before, in less light, from worse angles. This time the angle was right and the flame was right and he had ten seconds of clear view.
 
-He did not know whose face it was. He had never been able to see the face clearly enough. It might be a child's face, or it might be a picture of anyone. The surface put pictures on everything; the Cogs had told him this.
+Writing he could not read. A face.
 
-He had looked at it perhaps a hundred times.
+Small and pale, with large dark eyes â€” the kind of dark that pulled light in rather than reflecting it.
 
-[Beat 18]
+Then the vessel moved, and the angle was gone, and the candle was the candle again.
+
+He told no one. You did not speak of what you saw in the basin. The Oarsman's fares were the crossing's property; observation was permitted, speech was not. He had looked, and he had seen, and he kept it in the way you kept things that had no action attached to them: carefully, without weight, in the place where the body held what the mind could not yet use.
+
+He had been looking at that face for four years by the time Knuckle called the Surfacing.
+
+[Beat 11]
 Knuckle called the Surfacing three sleep-cycles early.
 
 He did not announce it in the teaching-chamber or at the morning meal. He simply appeared at Glim's sleeping-shelf in the dark, with his candle in one hand and his own face set in the expression he used when he intended to say a thing exactly once and expected it to be understood the first time.
@@ -430,7 +291,7 @@ Knuckle was quiet for a moment that was not quite long enough to be uncomfortabl
 
 The Surfacing was called.
 
-[Beat 19]
+[Beat 12]
 Sorrel came to him at the harvest that afternoon.
 
 She waited until he was at the far cistern, crouched over the fungus shelf, filling his basket in the way he had filled it a thousand times — checking each cap for rot by smell first, by touch second, by the faint glow of his belt-candle third. She sat on the jetty behind him and did not announce herself. He knew she was there by the displacement of air and by a particular quality of stillness that was Sorrel's alone.
@@ -459,7 +320,7 @@ He had known this. The teaching-texts covered it. But knowing a thing in text wa
 
 She said it the way Vesh said the teaching: not as command but as received truth that was also, underneath, a hope.
 
-[Beat 20]
+[Beat 13]
 Knuckle's blessing was not gentle.
 
 He gave it that evening, in the teaching-chamber with the green tile, with the Braves arranged as witnesses and Vesh at the back of the room being very still in the way he was still when he was listening to something no one else could hear. The blessing was an old form — older than anyone knew the origin of — that the Brave-master performed on every Brave before a Surfacing. It involved a series of grips: wrist, shoulder, the back of the neck, the top of the skull. Each grip held for a count. Each held a meaning that was not spoken.
@@ -490,7 +351,7 @@ Glim made the three-finger sign. The air is well. He was not certain that was tr
 
 He would come back.
 
-[Beat 21]
+[Beat 14]
 Grale found him at the pre-climb pack-check and stood watching from the tunnel mouth with his arms across his chest and the look on his face that was his resting position for anything involving Glim.
 
 Grale was two years younger and had not yet been called for his Surfacing, which was a source of something — frustration, maybe, or the particular resentment of someone who has been told to wait by a system he respects and cannot argue with. He was a better tunnel-reader than three of the current Braves. He would be a better Brave-master than Knuckle within a decade, and most people in the Hollow knew it, and Grale knew it, and the knowing had not made him easier to be around.
@@ -521,7 +382,7 @@ Grale held the look for a long count. Then he stepped back to the tunnel wall. "
 
 It was the most civil thing Grale had said to Glim in three years.
 
-[Beat 22]
+[Beat 15]
 He started the climb at the deep of the sleep-cycle, when the Hollow was at its quietest and the candles were all down to their dim rest-glow.
 
 The climb to the Skin was not a single route but a series of choices — the Works had a dozen possible lines, each with its own hazards and advantages, and the Brave-master taught all of them because a Brave who knew only one line was a Brave who had never had to improvise. Glim took the route that hugged the eastern pump-hall, because the pump-hall's vibration was familiar and because the eastern line came out into the Skin through an old junction box that was above the level where the Lamplighters typically hunted.
@@ -538,7 +399,7 @@ The sharpness grew. He began to understand, for the first time with his body rat
 
 He climbed toward it.
 
-[Beat 23]
+[Beat 16]
 He made his choice at the last junction before the Skin.
 
 There was a decision point here — the tunnel split, left toward a grating that opened directly onto the street-level above, right toward the junction-box Knuckle had shown him, which was safer but took longer. The left route was faster and had more risk. Two Braves before him had used the left route and returned without incident. One Brave had used it and not returned. The Brave-master had not said which option was correct, because it was not a question with a single correct answer.
@@ -559,7 +420,7 @@ The candle on his belt gave its small green-gold glow. The surface light gave it
 
 He climbed toward the grating anyway.
 
-[Beat 24]
+[Beat 17]
 He pushed the grating and the surface happened to him all at once.
 
 The noise came first — the kind of noise the air makes when it is not contained, when it moves without a tunnel to shape it, a noise that was not a sound but a quality: the quality of everything happening simultaneously and none of it directed at him and none of it diminishing at the source the way tunnel-noise diminished. Surface noise did not attenuate. It was simply present in every direction at the same level and there was nowhere the ear could point to find relief.
@@ -574,7 +435,7 @@ He looked at it. The glow-rat huddled against itself, pupils contracted to almos
 
 He lifted the grating the rest of the way and pulled himself out.
 
-[Beat 25]
+[Beat 18]
 He was on a surface in the dark and then the Burning Eye was not where he expected it.
 
 He had known it would be above. All the teaching said it was above, the great hot white that the surface used for light by day in the way Homewater used nothing, because the surface did not need to manage its light — it received it from elsewhere, passively, without cost or risk. The teaching had made the Burning Eye sound like a logical thing, a large version of a fixed light, something the mind could accept with effort.
@@ -595,7 +456,7 @@ He pressed his forehead to the wall. The wall was warming under his hands. Above
 
 The lid was off.
 
-[Beat 26]
+[Beat 19]
 He waited for his eyes to return.
 
 They took longer than Sorrel had said. She had said until I got back into the Works. He was not in the Works. He was on the surface in the full white of the Burning Eye with no tunnel to return to yet, because he had pushed the grating back into place behind him — the old reflex, keep the entrance closed, a thing the Braves were taught — and now the grating's exact location was somewhere in the white and he could not see it.
@@ -622,7 +483,7 @@ He reached for the grating.
 
 He chose the dark.
 
-[Beat 27]
+[Beat 20]
 He had been underground for an hour when the lights found him.
 
 Not candles. Not the Cogs' working lamps, which were warm and directed and made sense in the dark because they did what the candle did: illuminated a space. These were floods — white, total, scouring — and they came from behind him and lit everything in front of him and took his eyes again, completely and without warning, in the way that a blow takes the breath: not gradually but all at once.
@@ -643,7 +504,7 @@ He went down. The floods held. He was visible.
 
 He was caught.
 
-[Beat 28]
+[Beat 21]
 They took his candle first.
 
 He understood, later, that this was standard practice for whatever these people were — that the candle looked like a weapon or a fire-risk or simply an odd thing that a surface person should not have and therefore should not keep. In the moment he did not understand it as standard practice; he understood it as the loss of his air-oracle and his light source and the thing he had kept alive and untroubled across all the years of his Brave training, and the person who took it handled it carelessly and set it down on a surface floor and the glow-rat skittered to the edge of its dish and then fell over and lay still.
@@ -660,7 +521,7 @@ Hunting in the deep was ordinary to them.
 
 He sat with this. The vehicle moved. He sat with this.
 
-[Beat 29]
+[Beat 22]
 They handed him to other people, who were different.
 
 The first people had wanted something — not from him specifically, but from the general category of thing he was. He was a quarry successfully taken, a result. The second people were not hunters. They had a different quality of interest: they looked at him the way the teaching described a certain kind of Cog looking at a piece of broken machinery — seeing a problem to be categorized and routed to the correct response.
@@ -673,7 +534,7 @@ Then there was another room. And then a transit he slept through — the exhaust
 
 And then there was a smell.
 
-[Beat 30]
+[Beat 23]
 He was in another room — this one smaller, with a window, which he understood was an opening in a wall covered with a transparent material that let light through without letting air through, a technology that struck him as elaborate and possibly unnecessary — and there was a woman in the doorway.
 
 He smelled her before he saw her.
@@ -694,7 +555,7 @@ She said a word after the sound. A short word, two syllables. He had never heard
 
 But he was looking at her, and his eyes were wet, and the smell was everywhere now, and something in the back of his blood was doing something he had no vocabulary for — was recognizing something, not with the mind, not with any faculty he could account for, but in the oldest place, the place below the hum.
 
-[Beat 31]
+[Beat 24]
 Her name was Noor. He learned this from the other surface people who came into the room and spoke to her, and who used this sound when addressing her: *Noor*. Two syllables, equal weight. He stored it.
 
 She tried to give him things. This was, he came to understand, the surface's primary response to almost any problem — give things. She brought cloth (a garment for his body, which his own garments, dark and fungus-cured and shaped for tunnel movement, apparently did not satisfy); she brought food (a substance that was not fungus and not anything he could identify by smell, cooked in the surface way with applied heat rather than the chemical process the Underclan used); she brought what he eventually understood was a cup of water, though he did not drink from it immediately because you checked unfamiliar water before drinking it, always, and the check required the candle's monitoring over time.
@@ -715,7 +576,7 @@ She sat in the chair on the other side of the room and she was quiet.
 
 It was the most tolerable thing she did. He noted it.
 
-[Beat 32]
+[Beat 25]
 The surface did not make sense and he was not certain it was supposed to.
 
 He spent three days in Noor's dwelling — a surface structure, many rooms, with running water and the ceiling-light she had learned to keep low and a strange abundance of things that were not food and not tools and whose purpose he could not determine. Decorative objects, he supposed eventually. Things the surface kept for their appearance. He had never seen anything kept purely for its appearance. Everything in Homewater had a function.
@@ -736,7 +597,7 @@ He did it again and she still did not understand and that was correct. She would
 
 But she was quiet next to him, which was the thing she had learned to do, and it was still the most tolerable thing she did.
 
-[Beat 33]
+[Beat 26]
 On the fourth day the surface learned the legend was real.
 
 He understood this because the small flat surface-device that Noor carried and communicated through — he had watched her use it; it carried voice and image and appeared to be some form of tap-speech made elaborate and visual — began showing images of his own face.
@@ -755,7 +616,7 @@ The device showed a second image: a place. Not Homewater — he would have known
 
 Someone had written down the way down.
 
-[Beat 34]
+[Beat 27]
 Other surface people came to look at him.
 
 Not the Lamplighters — those had handed him to a different set of surface people, who had handed him to Noor, and the chain of transfers was now complete in some surface bureaucratic sense he could not fully follow. But people came to Noor's dwelling and they looked at him and talked among themselves and Noor stood in the middle of the room being the kind of still that was not peaceful but controlled.
@@ -776,7 +637,7 @@ Silence. He held still and let the silence be a surface-choice: he chose not to 
 
 He would know them later. Down below, in the dark, he would know them by their footstep and their breathing-pattern and the quality of their light. He would know them the way the deep knew things: by mark, not name.
 
-[Beat 35]
+[Beat 28]
 On the sixth night Noor sat across from him in the floor-dim and tried the word again. The two-syllable word she had said in the doorway when she first smelled. She said it quietly, once.
 
 He looked at her.
@@ -801,7 +662,7 @@ She did not understand the tap. But she was quiet, and her face changed in a sma
 
 He did not look away either.
 
-[Beat 36]
+[Beat 29]
 He left on the eighth night.
 
 Not because the situation had become intolerable — Noor had been patient in a way that was its own kind of intelligence, making adjustments, learning what he needed and providing it without the quality of expectation he had encountered in the official surface people. But the Surfacing's original purpose was to go up and come back, and he had been up for eight days, and the clan did not know where he was, and Grale was still in the Hollow, and the candle was dead.
@@ -814,7 +675,7 @@ He went out the way he had come in: through the window's lower panel that opened
 
 He remembered the exact location. This was not remarkable. He remembered every terrain he had ever moved through. It was not a skill; it was what the dark required and the deep had trained.
 
-[Beat 37]
+[Beat 30]
 She followed him.
 
 He had not heard her — she was quieter than he expected a surface person to be, and he was distracted by the grating mechanism and the descent into the Works — and he was three levels down before he felt the air-displacement behind him and turned.
@@ -837,7 +698,7 @@ The hum met him at the second level. He pressed his palm to the wall and let it 
 
 The hum did not acknowledge anyone. That was its virtue.
 
-[Beat 38]
+[Beat 31]
 He brought her as far as the Works-level and stopped.
 
 Not Homewater. The Works were the Engine Guild's territory, and the Engine Guild and the Underclan had their treaty, and he did not know whether the treaty's terms extended to surface people he brought in uninvited. More importantly: the Works were where the Lamplighters had found him. He did not want to be in the Works with a surface torch and a surface person and no information about who was currently in the tunnels around them.
@@ -858,7 +719,7 @@ Then he started moving, and she moved with him, and they went down to Homewater 
 
 He did not know, yet, that above them, someone was writing the route down. That the surface was studying the images taken in the Works, and the legend had an address now, and the address was being shared among people whose interest in the deep was not scholarship.
 
-[Beat 39]
+[Beat 32]
 Homewater did not welcome him back.
 
 He had not expected ceremony — the Underclan did not do ceremony except at the formal ritual points, and his return from a Surfacing should have been one of those points, the moment of choosing-down made visible. But what he found when he came through the lower Works into the familiar air of the Hollow was not ceremony and not hostility: it was the careful blankness of a community that has received unexpected news and is deciding what to do with it.
@@ -889,7 +750,7 @@ The candle on Sorrel's belt glowed green-gold in the dark.
 
 Noor looked at it the way people on the surface looked at unfamiliar things: first with caution, then with something closer to wonder.
 
-[Beat 40]
+[Beat 33]
 They came on the third day after his return.
 
 The first sign was air. The right-hand tunnel, which came from the direction of the Works, carried a draft that was wrong — not the regular Vent Cog cycle, not the irregular leak of the broken junction, but a forced air-movement, like the Works were breathing wrong. Glim felt it on his arm at the morning-check and stood very still and felt it again.
@@ -906,7 +767,7 @@ He did not shout. Shouting in the tunnel was a known signature — you could fol
 
 Behind him, the floods advanced. They did not rush. They moved with the confidence of people who had more light than anyone down here and knew it.
 
-[Beat 41]
+[Beat 34]
 They came with lights. Two days later, the Mission came with medicine.
 
 It was Sorrel who understood the Mission first, who had spent time on the surface in her Surfacing and had better surface-vocabulary than anyone else in the Hollow. She came to Glim with her face set in the expression she used when she had processed something difficult and needed to say it plainly.
@@ -933,7 +794,7 @@ They had not, before now, had surface contact.
 
 He had brought it down.
 
-[Beat 42]
+[Beat 35]
 Vesh refused the Mission's medicine.
 
 This was Vesh's decision to make — it was the Listener's role to interpret the Current's will and the clan's tradition in unfamiliar situations — and he made it with the certainty he brought to all his decisions and without consultation with anyone, including Knuckle.
@@ -964,7 +825,7 @@ It was not agreement. It was the beginning of a question, which was the closest 
 
 Glim went to ask.
 
-[Beat 43]
+[Beat 36]
 The Mission wanted to register them.
 
 This was what Glim understood from the conversation he carried with a Mission person — a woman, surface-middle, with the quality of a practitioner rather than a hunter — using his partial surface vocabulary and Sorrel's better one. *Register* meant: put your name in the surface record. It meant: you exist, in the surface's count of things that exist.
@@ -993,7 +854,7 @@ He did not take the Mission's offer.
 
 He also knew, by the third day after the conversation, that the Mission had already begun mapping Homewater.
 
-[Beat 44]
+[Beat 37]
 The Hot Breath took Slip first.
 
 He was the youngest of the Braves — six sleep-seasons from his Surfacing, still in the early years of the teaching. His First Hearing had been two months ago. He had named his candle, which the young ones did before they outgrew it. The candle's name was *Tallow*, a made-up word with no meaning in either language, which was the point: Slip's candle had a name that belonged to nobody.
@@ -1014,7 +875,7 @@ He looked at her.
 
 He went to get Vesh.
 
-[Beat 45]
+[Beat 38]
 They took the medicine. It was too late for Slip by two days and just enough for the others.
 
 He never knew this for certain — he did not have enough surface medical knowledge to determine causation, only correlation — but Slip died on the fifth day of the Hot Breath's progression and the other sick members of the clan stabilized within a day of the medicine's administration. He watched the correlation and filed it and could not make it into certainty and did not try.
@@ -1033,7 +894,7 @@ He had never been to the Tartar. No living member of the clan had been to the Ta
 
 They went anyway. There was nowhere else left.
 
-[Beat 46]
+[Beat 39]
 Noor was in the chain. He had not planned for this. He had grabbed a hand in the flood-white and it had been hers, and by the time he knew it was hers they were two tunnels past the Hollow and he was not turning back.
 
 She moved as well as he had any right to expect. He had taken her hand in the way that meant *I am here, follow me*, and she had followed — not blindly, she was using her other hand on the wall the way he had shown her in the Works, feeling the texture of the surfaces and using them — but with the quality of a person who has made a decision and is implementing it without reservation.
@@ -1050,7 +911,7 @@ Behind him, Noor's hand was warm and steady.
 
 He did not look back. The tunnel was narrow and the Tartar was ahead and the dead, if they were there, would have to manage with company.
 
-[Beat 47]
+[Beat 40]
 The Tartarian Empire was beautiful.
 
 This was the first thing and the wrong thing — not that beauty was wrong, but that he had not expected it, and the wrongness of expectation in a place of genuine danger was itself a danger. He had expected the architecture to be plain or broken or merely old. Instead it was all three and also the other thing: vaulted, the ceilings rising to shapes he had never seen above Homewater, curves and arches that the surface had forgotten how to make or had chosen to stop making, and the surfaces covered in the tile that the teaching-chamber had in small — glazed, decorated, patterned with faces and shapes from before any memory. The bioluminescence of the clan's candles moved through this space and the tiles threw it back from a hundred angles and the Tartar glowed.
@@ -1073,7 +934,7 @@ The current was silent here. Had always been silent here.
 
 This was what the taboo was for.
 
-[Beat 48]
+[Beat 41]
 Vesh had the Hot Breath.
 
 He had not said. He was the Listener; announcing his own illness had a specific weight in the clan's structure that was not the same as a Brave announcing it. He had continued to move and to give direction and to be Vesh, with the particular quality of Vesh's stillness and Vesh's certainty, and Glim had not noticed until he saw the old man's face in the candle-light of the Tartarian Empire's vaults, where there was no hum to distract him and nothing to navigate and the candles threw everything back from the tiles.
@@ -1111,8 +972,17 @@ Vesh was quiet. Then: "What do you think of that?"
 "I think it was lonely," Glim said.
 
 Vesh made a sound that, in a different context, might have been a laugh. "Yes," he said. "I also think that."
+When the silence had lasted long enough, Vesh reached into the fold of his robe. His fingers moved with the precision of someone who has lost most of his vision and has spent a lifetime trusting the hand's knowledge over the eye's. He found what he was looking for and pressed it into Glim's palm, and closed Glim's fingers over it.
 
-[Beat 49]
+A small piece of carved bone, smooth from decades of handling, worn to the shape of a thumb's pressure: the silence-piece, the teaching marker that Listeners used to call the room to attention without speaking. Glim had seen it in Vesh's hand hundreds of times.
+
+"I won't need it where I'm going," Vesh said. Not the teaching voice — the ordinary one.
+
+Glim said nothing. His hand stayed closed.
+
+"Hold it when the hum is absent," Vesh said. "The bone remembers."
+
+[Beat 42]
 He went deeper into the Tartar alone.
 
 Not far — he had the good sense not to go far into unknown territory without a candle-check and a plan, which was the Brave's training over the instinct to move. He went perhaps two hundred meters past the vault where the clan had stopped, and he sat on the floor of an even larger space — a hall, he supposed, the Tartarian Empire's version of a common space — with his candle beside him and his hands flat on the tile.
@@ -1137,7 +1007,7 @@ It did not repeat.
 
 He went back to the clan.
 
-[Beat 50]
+[Beat 43]
 He told no one about the pulse. Not immediately.
 
 He turned it over in his mind for a full sleep-cycle while the clan rested in the Tartar's first vault and while Noor and Sorrel organized the food stocks and while Vesh sat with his back against the tiled wall doing whatever Vesh did when he was very still. The pulse might have been a vibration from the Warm's machinery at the surface of a frequency that the Tartarian Empire's architecture resonated differently. The pulse might have been a Made Thing moving at a long distance. The pulse might have been nothing — the sensation of a person pressing their palms against cold stone and wanting to feel something.
@@ -1162,7 +1032,7 @@ Glim thought of eight days on the surface. Of the devices and the maps and the n
 
 "Information," he said. "The surface's information, brought down."
 
-[Beat 51]
+[Beat 44]
 The Cog settlement in the Works was called the Bindery, and it smelled of machine-oil and old grain and the specific sourness of people who worked with their hands in confined spaces without enough daylight.
 
 Glim knew the smell of the Bindery. He had been here twice before the Surfacing — once as a young Brave bringing trade-goods that the Underclan's upper tunnels occasionally produced for the maintenance workers, and once accompanying Grale on a negotiation that Grale had not fully explained and that had ended with a handshake and a silence that Glim had learned not to ask about. He knew the Cog hierarchy: the Chief Fitter, who oversaw the maintenance schedule; the Pipe-Readers, who interpreted the Works' machinery the way Listeners interpreted the Current; the gangs of Fitters and Runners who did the actual labor.
@@ -1219,7 +1089,7 @@ She looked at him for a long moment. Her eyes moved to Noor, then back.
 
 "What do we get," she said.
 
-[Beat 52]
+[Beat 45]
 Noor gave them the maintenance covenant.
 
 Not a summary of it — the actual document, pulled from the Mission's internal archive via the surface-connected device she carried. Three hundred and twelve pages of covenant obligations, maintenance schedules, parts requisitions, budget allocations, and the record of every time the surface administration had failed to fulfill its side of the agreement. Eighteen months of documented non-delivery. Forty-seven outstanding parts requests. The names of the people on the surface who had signed the continuation-forms and the counter-signatures that had never come.
@@ -1272,7 +1142,7 @@ Dross looked at her for a long time.
 
 "Show me," she said, "which corridors you need."
 
-[Beat 53]
+[Beat 46]
 They did the operation in two shifts with a rest between, because the people doing it needed to rest.
 
 The Cog Runners knew every valve and pressure-gate and seal-lock in the Works the way the Underclan Braves knew every air-pocket and current-point in the tunnels, which was: in their bodies, not just in their heads. Glim watched a Cog Runner named Pell explain the pressure-divert mechanism to a Brave named Sorrel in a language of hand gestures and demonstrated action and occasional improvised terminology for concepts that did not exist in either of their vocabularies. They understood each other. He had not predicted this.
@@ -1303,7 +1173,7 @@ Still theirs.
 
 He moved.
 
-[Beat 54]
+[Beat 47]
 Homewater had changed.
 
 This was not a surprise. He had expected it to change. He had not been able to predict the specific shape of the change, which was the thing you could not do: you could know that a thing would be different without knowing what the different thing would be.
@@ -1334,7 +1204,7 @@ Thirty-eight. Plus Noor.
 
 Thirty-nine.
 
-[Beat 55]
+[Beat 48]
 Vesh died on the third day back.
 
 Not dramatically. His body had done the work it could do for the length of the crisis, which was the thing about Vesh — his body had always done the work it needed to do at the time it needed to do it, and then it stopped, and the Hot Breath had been very far advanced by the time he arrived in the Tartar, and there was nothing to be done.
@@ -1383,7 +1253,7 @@ Noor was quiet. She was looking at the passage split again.
 
 "I need to tell you something," she said.
 
-[Beat 56]
+[Beat 49]
 She had made contact with the Mission.
 
 She told him this plainly, in the way she told him all things, which was without softening and without display. Through the surface-connected device — she had used one of the access-points in the upper Works during the G-corridor operations, when the Lamplighters were in retreat and there was a window. She had sent documentation to two people above her former supervisor's level: the maintenance covenant evidence, the Lamplighter budget reallocation, the record of unauthorized infrastructure modification. She had flagged it as a safety filing, which gave it a protected status that the Mission could not quietly suppress.
@@ -1448,7 +1318,7 @@ He had spent his whole life in the tunnels. He had learned them from Grale and b
 
 "Yes," he said.
 
-[Beat 57]
+[Beat 50]
 He took the Fare at the end of the month.
 
 The clan had rebuilt enough by then — not to what it had been, not in a month, but enough that he could leave it in Knuckle's hands for the length of a transit-run without the leaving feeling like abandonment. Candle-Two had begun to do the things that Listeners did, which was mostly to sit in certain places and attend to them, and the clan had begun to orient itself around her the way you oriented yourself around a thing you were still learning to trust.
@@ -1461,11 +1331,11 @@ The Oarsman came from the dark the same way it always came: soundlessly, the hul
 
 Glim stepped down into the vessel.
 
-The Fare was ready — he had the three-finger configuration, which was the full Fare, the one that meant a life's worth of passage. He had prepared it carefully and correctly. He had been a Brave long enough to know that the Fare was not a transaction but an accounting: you gave what you had actually accumulated, and what you had actually accumulated was what the journey so far had cost.
+The Fare was the three-finger configuration — the full Fare, the one that meant a life's worth of passage. He had prepared it from what he had: the dried fungus-cap that was the ordinary cost; a small carved marker of bone that Vesh had pressed into his hand in the teaching-chamber on the last morning before the flood-lights came, a Listener's silence-piece, smooth from years of use; and the flat surface-card that Noor had given him to carry, so that if the surface's systems encountered him they would have a name to put to him. Three things. Three different kinds of cost.
 
-He put the Fare in the vessel's center.
+He put them in the vessel's center.
 
-The Oarsman did not look at it — or if it looked, Glim could not perceive the looking. It moved in the way it moved, which was the way things moved that had been moving for a long time along a known route, with the economy of something that has found the least effortful path through resistance.
+The Oarsman did not look at them. It moved in the way it moved, with the economy of something that has found the least effortful path through resistance.
 
 The black water opened ahead of them.
 
@@ -1477,11 +1347,13 @@ The hum was present at the frequency it always was on the black water — lower 
 
 He sat with what it was.
 
-The other bank materialized from the dark the way it always did: first the smell of the stone ahead, then the change in the candle's behavior, then the edge. He stepped off. The Oarsman waited.
+The other bank materialized from the dark the way it always did: first the smell of the stone ahead, then the change in the candle's behavior, then the edge. He stepped off.
 
-He looked back once across the black water.
+The Oarsman waited.
 
-A new Fare. A new crossing.
+He looked back once across the black water toward the side he had come from. Nothing was visible there — the dark was absolute, the way the dark in the Deep was always absolute. Somewhere past it, in Homewater's tunnels, thirty-eight people were doing the work of being alive. Noor was learning the routes. Candle-Two was sitting with her hands flat on the tile, listening for the hum that she was learning to name.
+
+A new Fare. The Oarsman, waiting. The far bank behind him and the near bank ahead.
 
 He went on.
 
