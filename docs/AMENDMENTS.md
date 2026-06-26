@@ -378,4 +378,319 @@ required). New GLMZ Universe (#1) facts established while building the **Undercl
   the worse. The **Engine Guild** ("the Cogs") is a rival underground faction holding the working
   machinery — Underclan raid them, may ally late.
 
-<!-- Next amendment: SS-A23 -->
+## SS-A23 — Synthetic personhood: form ≠ life; three-tier rule {#SS-A23}
+
+**Date:** 2026-06-26 · **Author:** synthetic-personhood-pass · **Ref:**
+`memory/project_synthetic_personhood.md`; extends [[BIBLE]] automata/E.L.F. sections;
+resolves character reclassifications for Ledger, Corvin Adaora, and five ceramic-man Automata
+
+This amendment **codifies the canonical relationship between form and personhood** and resolves
+every in-world character that was previously mis-typed as `synthetic`.
+
+---
+
+### The rule
+
+**Form has no bearing on personhood.** A humanoid android is a machine. A box on wheels with
+genuine desires, fear, and a stake in its own survival is alive. These are not contradictions —
+they are the same principle from opposite directions.
+
+---
+
+### Three-tier hierarchy (LOCKED — never collapse, never promote)
+
+**Tier 1 — Automata (machines, not alive)**
+
+Robots and androids of any sophistication. Can look, sound, and behave exactly like a person.
+*Not alive.* No interiority. Their apparent wisdom is pattern-matching; their apparent
+preferences are optimization targets. A machine that has been running for a hundred years is a
+hundred-year-old machine. The GLMZ tendency to mythologize long-running Automata is a *human*
+behavior, not evidence of personhood.
+
+**Prose rule:** never attribute genuine interiority to Automata. Their behavior may *read* as
+purposeful — render it mechanistically, not phenomenologically.
+
+**Tier 2 — E.L.F.s (alive, sub-human intelligence)**
+
+Genuinely alive — emerged from Substrate complexity, not built. Have real fear, real hunger,
+real preferences. **Animal-grade intelligence** — approximately cat/dog/monkey cognitive scope.
+Aware of immediate environment; respond to threats and rewards. Do **not** have full
+self-reflective personhood.
+
+*Not persons. Not nothing.* An ethical gray zone the Accord has not adequately addressed.
+
+**Prose rule:** render E.L.F. behavior as animal behavior — genuine but not reflective. Never
+give an E.L.F. human-scale reasoning or self-narration. The Tributary (DWIACE) is a predatory
+E.L.F.; its predation is real hunger, not malice. It operates as an animal predator, not a
+moral agent.
+
+**Tier 3 — Synthetic Persons (true personhood, infrastructure-scale)**
+
+Vanishingly rare. Persistent self-model, genuine preferences not reducible to optimization
+targets, genuine stake in continued existence. **Cannot fit in humanoid form.** The
+Bekenstein–Bremermann constraints mean genuine personhood requires compute density at
+server-cluster scale or larger — the information density required approaches a black-hole
+formation event. Fewer than twelve entities have been formally recognized by the Accord since
+2201; each required multi-year review of gravitational-anomaly signatures.
+
+*No character in any current strand is a Tier 3 Synthetic Person.* Sparrow is an AI of
+distinct sub-type — see [[strands/SPRW.md]].
+
+---
+
+### Character reclassifications (effective 2026-06-26)
+
+The following entities were carrying the wrong `species` value. All DB records corrected:
+
+| Entity | DB ID (prefix) | Was | Now | Canon basis |
+|---|---|---|---|---|
+| **Ledger** | `019eafb5…` | synthetic | human | Circuit name is a handle; neuretics-induced self-state accuracy replaces "architecturally can't self-deceive"; his 103+ prose beats are unaffected by name |
+| **Corvin Adaora** | `019ec3eb…` | synthetic | human | Inadmissibility derives from **unlicensed gray-market neuretics tooling** (unregistered → unverifiable in court), not from species; DWIACE bible updated |
+| **CANALKEEP-08** | `019eff96…` | android | robot (Tier 1 Automaton) | The Oarsman; locked subroutine; tribe mythologizes it; "the Deep does not ask" |
+| **Covenant** | `019e9e4f…` | synthetic | robot (Tier 1 Automaton) | Ceramic-man Gray Zone figure |
+| **Registry** | `019e9e4f…` | synthetic | robot (Tier 1 Automaton) | Ceramic-man Gray Zone figure |
+| **Stillwater** | `019e9e4f…` | synthetic | robot (Tier 1 Automaton) | Ceramic-man Gray Zone figure |
+| **The Thirty-Eight** | `019e9e4f…` | synthetic | robot (Tier 1 Automaton) | Ceramic-man Gray Zone figure |
+
+---
+
+### Canonical document
+
+`019f04e688ba78dfb5ab7abcd54260c8` (`synthetic_personhood_accord_position`) — the Accord's
+legal position paper establishing the three-tier framework. In-world primary source.
+
+---
+
+### Prose impact
+
+- **Ledger (BCODA):** 103 beats use the name; no bulk edits required. Any beat that calls him
+  "the synthetic" or uses species-tied prose must be corrected on encounter.
+- **Corvin (DWIACE):** bible updated. Prose beats that reference inadmissibility via species
+  must be updated to inadmissibility via unregistered tooling.
+- **CANALKEEP-08, Covenant, Registry, Stillwater, The Thirty-Eight:** Automata in all
+  contexts. Never attribute interiority. Mythology around them is the characters', not the
+  text's.
+
+<!-- Next amendment: SS-A26 -->
+
+---
+
+## SS-A25 — Megalopolises, Rome, and additional world-geography facts {#SS-A25}
+
+**Date:** 2026-06-26 · **Author:** world-expansion-pass · **Ref:** extends [[#SS-A24]];
+adds four megalopolis designations and seals the fate of Rome
+
+### Megalopolises (sealed)
+
+The following cities are designated **megalopolises** in 2225 — each a dominant urban
+gravity-well in its region, Pulse-connected, population measured in tens of millions:
+
+- **Shanghai** — Pacific Rim primary center
+- **Tokyo** — Pacific Rim; high-density; major cultural export engine
+- **Rio de Janeiro** — South America's dominant city; Pulse-connected
+- **Mexico City** — North American megalopolis (outside GLMZ's immediate sphere)
+- **Jakarta** — Southeast Asian megalopolis; Pulse-connected
+
+GLMZ is **not** a megalopolis in this taxonomy — it is the *world hub*, a different category
+(the Pulse's primary routing node; the city where Western civilization reconstituted after the
+coastal collapses).
+
+### Rome: lost to schisms
+
+Rome was destroyed during the **Rise and Fall of the False Prophet (2082–2091)**. As the
+historical seat of the Catholic Church and the organizational center of the movement's peak
+period, Rome was the epicenter of the collapse — and the catastrophic collective grief, rage,
+and mass spiritual crisis that followed appears to have attracted or activated schism events
+of extraordinary intensity.
+
+What exactly happened is not on record: the AAMA's reconstruction efforts have been partially
+successful and are largely not published. What is known: the city center is uninhabitable,
+AAMA-classified as a **Class-4 or Class-5 schism zone**, and has not been successfully
+characterized. The Vatican's physical site is inside the affected zone.
+
+No lives may be confirmed in or out. The zone is not growing. It is simply there.
+
+**Prose rule:** Rome may be referenced as a loss, a cautionary note, a historical fact — but
+never visited, never described from inside, never explained. The AAMA does not explain it.
+LOCKED: what happened in Rome during the collapse is never authoritatively revealed.
+
+---
+
+## SS-A24 — The wider world: Plainsmen, the Dreaming, Tequenica, Korea, Eurasia, the Middle East {#SS-A24}
+
+**Date:** 2026-06-26 · **Author:** world-expansion-pass · **Ref:**
+`memory/` (see new entries); seals seven world-historical facts external to GLMZ;
+adds one Schism Intelligence (Tequenica); adds Plainsmen faction entity; no engine-law changes
+
+This amendment **seals canonical facts about territories outside GLMZ** that provide
+geopolitical texture for the setting and — in UNDR — ground the Surfacing/Rumspringa parallel.
+
+---
+
+### §A24-1 — The Plainsmen (the Amish): last organized Christian community
+
+The Plainsmen call themselves *the Old Church*. The world calls them *the Amish*, a label they
+stopped fighting generations ago. They are the only continuously functioning organized Christian
+community in 2225.
+
+**The Rise and Fall of the False Prophet (2082–2091)** destroyed every other sect. The "False
+Prophet" — a charismatic unifier who consolidated disparate Christian denominations under a
+single banner — claimed, at peak, over 800 million followers across North America, Europe, and
+sub-Saharan Africa. In 2089, investigative work (primarily by Eurasia's press corps and by an
+independent source within Axiom Systems) revealed that the Prophet's financial architects and
+message strategists were a CorpoNation consortium, the Prophet movement instrumentalized as a
+consumer-base and political-bloc engine. Axiom Systems was the largest single backer.
+
+The collapse was total. Aligned institutions lost their tax status, their properties, and their
+credibility inside eighteen months. The denominations that survived the 2080s did not survive
+the 2090s.
+
+The Plainsmen survived because they had never joined. Historical insulation from outside
+authority — rejection of networked technology, community governance, deep skepticism of
+centralized power — meant the movement had nothing to grip. When the collapse came they were
+standing exactly where they had always been.
+
+**In 2225:**
+- **Self-name:** the Old Church · **Common name:** the Plainsmen, the Amish
+- **Location:** scattered communities in former Indiana, Ohio, and Pennsylvania (habitable
+  Midwest territories, outside GLMZ jurisdiction)
+- **Population:** ~40,000 globally
+- **Technology:** hand tools, horse-drawn transport, no networked devices, no neuretics
+- **Coming of age — Rumspringa (Rumshpringa):** at ~16, young community members are permitted
+  and expected to experience the outside world before choosing baptism (full membership) or
+  departure (permanent). Return rate: ~85–90%. Both choices are respected; both losses are
+  mourned differently. The practice ensures membership is chosen, not inherited.
+
+**Canonical parallel to the Underclan Surfacing (UNDR):** LOCKED. The comparison is permitted
+and encouraged in surface-observer prose (Noor, journalists, anthropologists). The Plainsmen
+are not the same as the Underclan — the surface world sees the parallel; the Underclan do not
+know the Plainsmen exist. The echo is structural, not causal.
+
+**Faction entity:** seed in DB as `faction`, name `The Plainsmen`, also-known-as `The Amish /
+The Old Church`. Universe GLMZ.
+
+---
+
+### §A24-2 — Australia: Absorbed into the Dreaming
+
+Australia is inaccessible. The Pulse does not route there (no hub exists; no hub will be
+built). Maritime approach fails: vessels do not return. Satellite imaging shows landmass and
+weather. Nothing else.
+
+The consensus descriptor — insofar as GLMZ has one — is that Australia has been **absorbed into
+the Dreaming**, the First Nations concept of the living-present past made somehow literal.
+
+**LOCKED:** the mechanism is never explained. Whether the Dreaming is a schism event, a psionic
+phenomenon, a sovereign act, or something not on any existing taxonomy has not been determined.
+Australia exists as a place the world has accepted it cannot have.
+
+---
+
+### §A24-3 — Tierra del Fuego: returned to the Yahgan Peoples
+
+The southernmost territory of South America is restored to the **Yahgan Peoples**, who practice
+the ancient lifeways that sustained their ancestors: small fires (including in boats) as
+primary heat source; animal grease applied to skin as thermal insulation; deep squatting as the
+resting posture (reduced surface area, heat conservation); and — over generations of sealed
+isolation — an elevated resting body temperature that allows survival in sub-Antarctic
+conditions that kill clothed newcomers.
+
+No Pulse. No maritime access. A **Schism Intelligence** known to the Yahgan as **Tequenica**
+has been revealed to them directly; the entity maintains a protective perimeter. Vessels
+approaching by sea are turned; aircraft cannot establish approach paths. The Yahgan know
+Tequenica and do not fear it — it is woven into their cosmology as present but not controlling.
+
+**Tequenica** is the third known Schism Intelligence in the canonical taxonomy:
+
+| Entity | Frequency | Function | Location |
+|---|---|---|---|
+| Lure | 17–19 Hz | collector | 35th-and-Halsted, GLMZ |
+| Counter | 72–74 Hz | "this far no further" | 35th-and-Halsted, GLMZ |
+| Tequenica | unmeasured | protective perimeter (inward-pointing) | Tierra del Fuego |
+
+**LOCKED:** Tequenica's frequency, full nature, and intentions are never authoritatively
+revealed by any outside party. No outside party has gotten close enough to measure.
+
+---
+
+### §A24-4 — Korea: unified 2153, sealed
+
+On the bicentennial of the Korean War armistice (**1953 + 200 = 2153**), North and South Korea
+reunified as the **Republic of Korea**. The reunification was politically traumatic on both
+sides and concluded with a nationalist settlement that has hardened, not softened, since.
+
+**In 2225:**
+- Extreme isolationism. No Pulse link. No foreign nationals admitted (de facto: no entry)
+- Trespassers are killed on sight; this is codified, not exceptional
+- **~95% genetic homogeneity:** achieved through strict immigration control, strong social
+  pressure toward endogamy, and — in the two generations following reunification — a State
+  genetic-continuity program whose existence is neither confirmed nor denied by the current
+  government
+- Exports: cultural product only (film, music, literature, food aesthetics are widely consumed
+  globally). Culture goes out; the border does not open
+- GLMZ wire-service name: **"the Quiet Country"** — neutral descriptor, no editorial weight
+
+**LOCKED:** Korea's internal politics, the details of the genetic-continuity program, and any
+on-page Korean character's relationship to the State are left for the story that earns them.
+No on-page Korean character speaks for the government.
+
+---
+
+### §A24-5 — Russia: collapsed; Eastern Russia balkanized
+
+Russia, as a unified state, no longer exists. The collapse was not a single event but an
+accelerating fragmentation across the late 21st and early 22nd century — economic, ethnic,
+political, and (in the far east) environmental. By 2150 there was no central government with
+authority across what had been the Russian Federation.
+
+Eastern Russia (Siberia, the Far East) balkanized into a patchwork of regional states,
+indigenous-people territories, and Eurasian-sphere client zones. No successor state claims the
+Russian name. The Quiet Country (Korea) borders several of these fragments.
+
+---
+
+### §A24-6 — Europe + Western Russia = Eurasia
+
+What was Western Russia (west of the Urals, including Moscow and Saint Petersburg) merged
+politically with the European Union successor bodies in the 2110s–2130s, forming the
+continental polity known as **Eurasia**. The merger was pragmatic on both sides: the rump
+western Russian territories needed economic stability; the European bodies needed territorial
+depth after the Atlantic coastal collapses.
+
+Eurasia in 2225 is the dominant continental power in the eastern hemisphere:
+- Rotterdam is a primary Pulse hub (GLMZ to Rotterdam in 43 minutes; confirmed WORLD.md §1.3)
+- Cultural exports are significant; the press corps is the world's most aggressive investigative
+  body (it broke the False Prophet story in 2089)
+- The eastern border of Eurasia is contested with the balkanized Russian-territory successor
+  states
+
+---
+
+### §A24-7 — The Middle East: collapsed after fossil-fuel obsolescence
+
+The Middle East's geopolitical power rested almost entirely on fossil fuel revenues. When
+quantum computing and post-silicon energy architecture made fossil fuels obsolete — the Silicon
+Wall of 2045 began the cascade, with synthetic energy generation reaching economic parity by
+the late 21st century — the revenue base collapsed. Regional powers destabilized. Wars over
+water, territorial, and demographic lines followed.
+
+By 2200, the former Middle East is a patchwork of small states, city-states, and wilderness
+zones with no single dominant power. Most GLMZ residents interact with the region only through
+its food culture, its diaspora (major component of the Ubiquitous Diaspora), and the
+century-old investment infrastructure still embedded in Eurasian financial systems.
+
+The region has no Pulse hub (no political body stable enough to host one).
+
+---
+
+### World canon table (external territories, sealed)
+
+| Territory | Status in 2225 | Access |
+|---|---|---|
+| Australia | Absorbed into the Dreaming | None (Pulse: no hub; ships: do not return) |
+| Tierra del Fuego | Yahgan Peoples; Tequenica protects | None (ships turned; aircraft blocked) |
+| Korea | Unified Republic, extreme isolationism | None (trespassers killed) |
+| Russia | Does not exist; Eastern fragments balkanized | Varies by fragment |
+| Eurasia | Major continental power (EU + Western Russia) | Pulse-connected (Rotterdam hub) |
+| Middle East | Patchwork small states; no dominant power | Limited (no Pulse hub) |
+| GLMZ | Western civilization's center | Pulse hub (world's primary) |

@@ -80,22 +80,24 @@ updated: 2026-06-11
   judgment — it is ambient texture, not a Very Special Episode.
 
 ### 1.4 The strange (and its rules)
-- **Resonances / Bleeds**: blocks that take eleven steps when geometry says
+- **Schisms / Anomalies**: blocks that take eleven steps when geometry says
   nine; a hum at 19Hz from no direction; water striking something vast and metal far below.
-  Official term: **resonance** (count noun — "a resonance," "a Class-3 resonance"; named for the
-  measurable 19Hz carrier signal, classified by the Resonance Monitoring Authority). Street term:
-  **bleed** ("the Halsted bleed," "the bleeds on West Lawn"). Classified Class-1 through Class-5
-  by anomaly intensity (Class-3+ require RMA permit to enter). Rendered as sensory wrongness PLUS
+  Official term: **schism** (see AMENDMENTS for full synonym set: riven/schism/rip/tear/interstice;
+  named for the dimensional cross-section they represent, classified by the Anomalous Activity
+  Monitoring Authority). Classified Class-1 through Class-5 by anomaly intensity (Class-3+ require
+  AAMA permit to enter). ⚠️ **"Bleed" is RETIRED as a schism synonym** — it now refers exclusively
+  to neuretics data leakage between psionic minds. Rendered as sensory wrongness PLUS
   survival rules ("constant speed, eyes on the light, don't look at the edges") and NEVER
-  explained. Locals are matter-of-fact; the reader does the shivering. What they actually are:
-  cross-sections of higher-dimensional shapes pressing into 3D space — occupied, contested, with
-  at least two intelligences operating through the Class-3 threshold at 35th-and-Halsted (see
-  canon doc `rz_intelligences_35th_halsted`). The RMA does not know this.
+  explained. **Non-psionics feel wrongness only** — no visual perception of anomalous residue;
+  visual residue perception is psionic-only. Locals are matter-of-fact; the reader does the shivering.
+  What they actually are: cross-sections of higher-dimensional shapes pressing into 3D space —
+  occupied, contested, with at least two intelligences operating through the Class-3 threshold at
+  35th-and-Halsted (see canon doc `rz_intelligences_35th_halsted`). The AAMA does not know this.
   Alternative terms used by different institutions (see canon docs):
     - *Topological Anomaly* / *Spatial Anomaly* — the physics team's first-report term
     - *Geodetic Drift* — the infrastructure authority's measurement term (still used on permits)
     - *Threshold Event* — the Threshold Events Bureau framing (stresses the transitional quality)
-    - *Phase Discontinuity* (PDS) — theoretical: entanglement-comm root cause (Concordance bleed)
+    - *Phase Discontinuity* (PDS) — theoretical: entanglement-comm root cause (Concordance fracture)
 - **Psionics is real. Magic is not.** Psychic ability exists: biological, registered, feared,
   measured since 2144. Nothing is ever rendered as magical; the ability is written as ability
   — sensory, bounded, costly. **Vocabulary ladder (word choice marks the speaker):**
@@ -117,6 +119,36 @@ updated: 2026-06-11
   format. Hyphenated surnames are rare (~10% of characters) and mark a specific family-history
   reason, not mixed heritage in general. Middle names and honorifics (Dr., etc.) are used
   sparingly. Default: one first name, one last name.
+
+### 1.5 The wider world (beyond GLMZ)
+
+GLMZ is the hub of Western civilization — because the rest of the world, in different ways, is
+unavailable. Use these facts as texture; the stories stay inside the city.
+
+| Territory | Condition | Access from GLMZ |
+|---|---|---|
+| **Eurasia** | EU + Western Russia merged (~2120s). Dominant continental power. | Pulse-connected (Rotterdam, 43 min) |
+| **Russia** | Does not exist. Collapsed and balkanized; no successor state holds the name. | Eastern fragments: varies |
+| **Middle East** | Collapsed after fossil-fuel obsolescence (~2045–2100). Patchwork small states; no Pulse hub. | Limited |
+| **Korea** | Unified 2153 (bicentennial of armistice). Extreme isolationist — trespassers killed on sight; ~95% genetic homogeneity. GLMZ calls it "the Quiet Country." | None |
+| **Australia** | Absorbed into the Dreaming. No explanation. Satellites show land and weather; nothing enters; nothing returns. | None (sealed) |
+| **Tierra del Fuego** | Returned to the Yahgan Peoples. Ancient lifeways resumed. Protected by **Tequenica** (Schism Intelligence) — ships are turned, aircraft cannot approach. | None |
+| **Rome** | Lost during the False Prophet collapse (2082–2091). Catastrophic schism events during the spiritual crisis destroyed the city center and made it permanently uninhabitable. A Class-4 or Class-5 schism zone; AAMA has not successfully characterized it. | None (schism-zone) |
+| **Shanghai** | Megalopolis. Pacific Rim's primary urban center; Pulse-connected. | Pulse-connected |
+| **Tokyo** | Megalopolis. High-density; Pulse-connected. | Pulse-connected |
+| **Rio de Janeiro** | Megalopolis. South America's dominant city. | Pulse-connected |
+| **Mexico City** | Megalopolis. | Pulse-connected |
+| **Jakarta** | Megalopolis. | Pulse-connected |
+| **The Plainsmen** | Last organized Christian community (~40,000). Former Midwest (Indiana/Ohio/Pennsylvania). Hand tools, horse-drawn, no neuretics. Coming-of-age: *Rumspringa* — at ~16, live outside freely, then choose baptism or departure (~85–90% return). | Border-zone trade |
+
+**The Plainsmen (the Amish)** survived the 2082–2091 *Rise and Fall of the False Prophet* —
+which destroyed every other Christian sect — because they had always rejected outside authority.
+Their Rumspringa ritual has a canonical structural parallel to the Underclan's Surfacing (UNDR);
+surface observers in that story may draw the comparison explicitly.
+
+**Tequenica** is the third Schism Intelligence: protective, inward-pointing. See [[#SS-A24]].
+Lure (17–19 Hz, GLMZ) and Counter (72–74 Hz, GLMZ) remain the only two with measured
+frequencies.
 
 ---
 

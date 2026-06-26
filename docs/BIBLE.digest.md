@@ -131,68 +131,185 @@ narrative-law block here when stood up:**
   ambient proprioceptive information field BCI-augmented people sense (see `network_doc.md`).
 
 ## Status index (from USER_STORIES.md)
-- done: 116  partial: 8  planned: 28  cut: 1
+- done: 119  partial: 8  planned: 23  cut: 1
 
 ## Latest amendment
-## SS-A22 — The deep strata, the Underclan, and the contact tragedy (UNDR) {#SS-A22}
+## SS-A24 — The wider world: Plainsmen, the Dreaming, Tequenica, Korea, Eurasia, the Middle East {#SS-A24}
 
-**Date:** 2026-06-25 · **Author:** undr-deep-underground · **Ref:** [[strands/UNDR.md]];
-extends the canon of the downward city (*The Downward Expansion: Subterranean Meridian*, *The
-Brinewell*, *South Deering Sump*, the Gulch), **DEEP CURRENT** (oldest/largest rogue Leviathan;
-[[BIBLE]]), the **Exclusion Economy**, and **no-GLMZ-police** ([[#SS-A19]] adjacency on disinfo not
-required). New GLMZ Universe (#1) facts established while building the **Underclan** strand.
+**Date:** 2026-06-26 · **Author:** world-expansion-pass · **Ref:**
+`memory/` (see new entries); seals seven world-historical facts external to GLMZ;
+adds one Schism Intelligence (Tequenica); adds Plainsmen faction entity; no engine-law changes
 
-**Ruling — all consistent with prior canon:**
+This amendment **seals canonical facts about territories outside GLMZ** that provide
+geopolitical texture for the setting and — in UNDR — ground the Surfacing/Rumspringa parallel.
 
-- **The strata run backward in time as you descend.** Below the *built* city (which bottoms at the
-  Gulch) the architecture ages in reverse: ferrocrete → concrete → cement → brick → ornate
-  pre-collapse stone, across miles of bored, drowned, and abandoned works. The tribe's names: **the
-  Skin** (sub-surface crawls), **the Warm / the Works** (live tokamak-fusion + pump infrastructure),
-  **Homewater / the Hollows** (flooded mid-deeps), **the Old Deep** (brick), and **the Tartarian
-  Empire** (deepest, most ornate, taboo — "the dead live here"). This is *geography and decay*, not a
-  literal lost empire; the grandeur is pre-collapse civic infrastructure, mythologized by those who
-  live beneath it.
+---
 
-- **Lab run-off makes the deep a patchwork of micro-biomes.** Reagent, nanite, gene-liquor, reactor
-  warmth, and cultivated-algae run-off from Meridian's labs seed a half-dozen+ impossible little
-  ecologies and a bestiary of escaped/bred-down lab fauna — **"the Made Things"** (*run-offs*):
-  eyeless white eels, pale crawlers, and the bioluminescent **candles** (glow-rats, kept as living
-  light **and** air-canaries). *Anything that got loose came down and learned to live* (the
-  sewer-mutant trope, GLMZ-rationalized). Does not contradict the engineered-ecology canon; names the
-  deep-underground case.
+### §A24-1 — The Plainsmen (the Amish): last organized Christian community
 
-- **The Underclan are a real uncontacted people, not a legend.** An accreted (never-founded) tribe of
-  a few hundred in Homewater — descended from flood refugees, the Exclusion-erased, runaways, and the
-  children of the lost. To the surface they are an urban legend ("the rat-children"). They are
-  immunologically **naïve** to surface microbes: an ordinary surface cold is, to them, the **Bright
-  Fever / the Hot Breath**, and can empty a clan. This is the strand's tragedy engine and it is
-  **plain biology, never mysticism** (locked).
+The Plainsmen call themselves *the Old Church*. The world calls them *the Amish*, a label they
+stopped fighting generations ago. They are the only continuously functioning organized Christian
+community in 2225.
 
-- **The Underclan worship DEEP CURRENT as the Current / the All-Below.** Their founding scripture is a
-  *real, already-canon* event — **DEEP CURRENT's simultaneous broadcast** ("the day it spoke to
-  everyone at once"), which they call **the One Word**; they await the **Second Word** and read
-  ongoing "messages" in the live grid. **Whether DEEP CURRENT actually perceives or answers them is
-  canon-locked as unknown** — treat exactly as the **Prisoner** and the SRZR camel-man contact
-  ([[#SS-A21]]): the ambiguity is the canon, never resolved in-world or authorially. This adds no
-  confirmed capability to DEEP CURRENT; it adds a *worshipping culture* that may be entirely
-  projecting.
+**The Rise and Fall of the False Prophet (2082–2091)** destroyed every other sect. The "False
+Prophet" — a charismatic unifier who consolidated disparate Christian denominations under a
+single banner — claimed, at peak, over 800 million followers across North America, Europe, and
+sub-Saharan Africa. In 2089, investigative work (primarily by Eurasia's press corps and by an
+independent source within Axiom Systems) revealed that the Prophet's financial architects and
+message strategists were a CorpoNation consortium, the Prophet movement instrumentalized as a
+consumer-base and political-bloc engine. Axiom Systems was the largest single backer.
 
-- **The Ferry and the Fare.** Homewater's black water is crossed by **CANALKEEP-08** ("the Oarsman"),
-  a derelict canal/lock-keeper service **android** running one looped subroutine: accept a **fare**
-  (any single object freely surrendered — a relic of a fare-collection routine), convey, return. It
-  does not judge — *the Deep does not ask if you deserve to cross, only that you pay.* Consistent with
-  automata-are-machines-not-life ([[BIBLE]]); the tribe mythologizes it, the text knows what it is.
+The collapse was total. Aligned institutions lost their tax status, their properties, and their
+credibility inside eighteen months. The denominations that survived the 2080s did not survive
+the 2090s.
 
-- **The Surfacing (rite of passage).** Before full membership, a Brave must climb to the Skin, look on
-  the surface ("the Burning Eye"), and **return to the Deep by choice** — a rumspringa-shaped rite and
-  the strand's capture mechanism.
+The Plainsmen survived because they had never joined. Historical insulation from outside
+authority — rejection of networked technology, community governance, deep skepticism of
+centralized power — meant the movement had nothing to grip. When the collapse came they were
+standing exactly where they had always been.
 
-- **The surface threat is two-faced.** The **Lamplighters** (a surface "deep-safari" sport-hunting
-  club; weapon = blinding floodlight against a dark-adapted people; hunt the Underclan *because the
-  un-registered are legally no one*) and the **Daylight Mission** (a *sincere* humanitarian/relocation
-  outfit whose rescue brings the Bright Fever and dissolves the culture). Both fatal; the Mission is
-  the worse. The **Engine Guild** ("the Cogs") is a rival underground faction holding the working
-  machinery — Underclan raid them, may ally late.
+**In 2225:**
+- **Self-name:** the Old Church · **Common name:** the Plainsmen, the Amish
+- **Location:** scattered communities in former Indiana, Ohio, and Pennsylvania (habitable
+  Midwest territories, outside GLMZ jurisdiction)
+- **Population:** ~40,000 globally
+- **Technology:** hand tools, horse-drawn transport, no networked devices, no neuretics
+- **Coming of age — Rumspringa (Rumshpringa):** at ~16, young community members are permitted
+  and expected to experience the outside world before choosing baptism (full membership) or
+  departure (permanent). Return rate: ~85–90%. Both choices are respected; both losses are
+  mourned differently. The practice ensures membership is chosen, not inherited.
 
-<!-- Next amendment: SS-A23 -->
+**Canonical parallel to the Underclan Surfacing (UNDR):** LOCKED. The comparison is permitted
+and encouraged in surface-observer prose (Noor, journalists, anthropologists). The Plainsmen
+are not the same as the Underclan — the surface world sees the parallel; the Underclan do not
+know the Plainsmen exist. The echo is structural, not causal.
+
+**Faction entity:** seed in DB as `faction`, name `The Plainsmen`, also-known-as `The Amish /
+The Old Church`. Universe GLMZ.
+
+---
+
+### §A24-2 — Australia: Absorbed into the Dreaming
+
+Australia is inaccessible. The Pulse does not route there (no hub exists; no hub will be
+built). Maritime approach fails: vessels do not return. Satellite imaging shows landmass and
+weather. Nothing else.
+
+The consensus descriptor — insofar as GLMZ has one — is that Australia has been **absorbed into
+the Dreaming**, the First Nations concept of the living-present past made somehow literal.
+
+**LOCKED:** the mechanism is never explained. Whether the Dreaming is a schism event, a psionic
+phenomenon, a sovereign act, or something not on any existing taxonomy has not been determined.
+Australia exists as a place the world has accepted it cannot have.
+
+---
+
+### §A24-3 — Tierra del Fuego: returned to the Yahgan Peoples
+
+The southernmost territory of South America is restored to the **Yahgan Peoples**, who practice
+the ancient lifeways that sustained their ancestors: small fires (including in boats) as
+primary heat source; animal grease applied to skin as thermal insulation; deep squatting as the
+resting posture (reduced surface area, heat conservation); and — over generations of sealed
+isolation — an elevated resting body temperature that allows survival in sub-Antarctic
+conditions that kill clothed newcomers.
+
+No Pulse. No maritime access. A **Schism Intelligence** known to the Yahgan as **Tequenica**
+has been revealed to them directly; the entity maintains a protective perimeter. Vessels
+approaching by sea are turned; aircraft cannot establish approach paths. The Yahgan know
+Tequenica and do not fear it — it is woven into their cosmology as present but not controlling.
+
+**Tequenica** is the third known Schism Intelligence in the canonical taxonomy:
+
+| Entity | Frequency | Function | Location |
+|---|---|---|---|
+| Lure | 17–19 Hz | collector | 35th-and-Halsted, GLMZ |
+| Counter | 72–74 Hz | "this far no further" | 35th-and-Halsted, GLMZ |
+| Tequenica | unmeasured | protective perimeter (inward-pointing) | Tierra del Fuego |
+
+**LOCKED:** Tequenica's frequency, full nature, and intentions are never authoritatively
+revealed by any outside party. No outside party has gotten close enough to measure.
+
+---
+
+### §A24-4 — Korea: unified 2153, sealed
+
+On the bicentennial of the Korean War armistice (**1953 + 200 = 2153**), North and South Korea
+reunified as the **Republic of Korea**. The reunification was politically traumatic on both
+sides and concluded with a nationalist settlement that has hardened, not softened, since.
+
+**In 2225:**
+- Extreme isolationism. No Pulse link. No foreign nationals admitted (de facto: no entry)
+- Trespassers are killed on sight; this is codified, not exceptional
+- **~95% genetic homogeneity:** achieved through strict immigration control, strong social
+  pressure toward endogamy, and — in the two generations following reunification — a State
+  genetic-continuity program whose existence is neither confirmed nor denied by the current
+  government
+- Exports: cultural product only (film, music, literature, food aesthetics are widely consumed
+  globally). Culture goes out; the border does not open
+- GLMZ wire-service name: **"the Quiet Country"** — neutral descriptor, no editorial weight
+
+**LOCKED:** Korea's internal politics, the details of the genetic-continuity program, and any
+on-page Korean character's relationship to the State are left for the story that earns them.
+No on-page Korean character speaks for the government.
+
+---
+
+### §A24-5 — Russia: collapsed; Eastern Russia balkanized
+
+Russia, as a unified state, no longer exists. The collapse was not a single event but an
+accelerating fragmentation across the late 21st and early 22nd century — economic, ethnic,
+political, and (in the far east) environmental. By 2150 there was no central government with
+authority across what had been the Russian Federation.
+
+Eastern Russia (Siberia, the Far East) balkanized into a patchwork of regional states,
+indigenous-people territories, and Eurasian-sphere client zones. No successor state claims the
+Russian name. The Quiet Country (Korea) borders several of these fragments.
+
+---
+
+### §A24-6 — Europe + Western Russia = Eurasia
+
+What was Western Russia (west of the Urals, including Moscow and Saint Petersburg) merged
+politically with the European Union successor bodies in the 2110s–2130s, forming the
+continental polity known as **Eurasia**. The merger was pragmatic on both sides: the rump
+western Russian territories needed economic stability; the European bodies needed territorial
+depth after the Atlantic coastal collapses.
+
+Eurasia in 2225 is the dominant continental power in the eastern hemisphere:
+- Rotterdam is a primary Pulse hub (GLMZ to Rotterdam in 43 minutes; confirmed WORLD.md §1.3)
+- Cultural exports are significant; the press corps is the world's most aggressive investigative
+  body (it broke the False Prophet story in 2089)
+- The eastern border of Eurasia is contested with the balkanized Russian-territory successor
+  states
+
+---
+
+### §A24-7 — The Middle East: collapsed after fossil-fuel obsolescence
+
+The Middle East's geopolitical power rested almost entirely on fossil fuel revenues. When
+quantum computing and post-silicon energy architecture made fossil fuels obsolete — the Silicon
+Wall of 2045 began the cascade, with synthetic energy generation reaching economic parity by
+the late 21st century — the revenue base collapsed. Regional powers destabilized. Wars over
+water, territorial, and demographic lines followed.
+
+By 2200, the former Middle East is a patchwork of small states, city-states, and wilderness
+zones with no single dominant power. Most GLMZ residents interact with the region only through
+its food culture, its diaspora (major component of the Ubiquitous Diaspora), and the
+century-old investment infrastructure still embedded in Eurasian financial systems.
+
+The region has no Pulse hub (no political body stable enough to host one).
+
+---
+
+### World canon table (external territories, sealed)
+
+| Territory | Status in 2225 | Access |
+|---|---|---|
+| Australia | Absorbed into the Dreaming | None (Pulse: no hub; ships: do not return) |
+| Tierra del Fuego | Yahgan Peoples; Tequenica protects | None (ships turned; aircraft blocked) |
+| Korea | Unified Republic, extreme isolationism | None (trespassers killed) |
+| Russia | Does not exist; Eastern fragments balkanized | Varies by fragment |
+| Eurasia | Major continental power (EU + Western Russia) | Pulse-connected (Rotterdam hub) |
+| Middle East | Patchwork small states; no dominant power | Limited (no Pulse hub) |
+| GLMZ | Western civilization's center | Pulse hub (world's primary) |
 

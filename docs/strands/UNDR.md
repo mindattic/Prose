@@ -110,6 +110,26 @@ where the air kills; a bioluminescent algae-lake; a salt cavern; a methane fen. 
 (glowing rats), and worse, deeper. *Like the sewer turtles of the old story: every experiment that got
 loose came down here and learned to live.* The Underclan eat what they can and fear what they can't.
 
+**Subsistence (earn this in prose — do not dump it as worldbuild):**
+- **Fungus farms:** grown on frame-mesh in the heat-gradient where the tokamak exhaust meets cistern
+  air (the *thermocline*); spore-stock goes back generations; cap-by-cap harvest, checked by smell
+  and touch. Foundational calorie source.
+- **Algae bloom (*the Still* / *the Bloom*):** bioluminescent algae in low pools where warm-pipe
+  condensation collects; raked and pressed into gray protein-dense blocks. Second dietary staple.
+- **Pale crawlers:** eyeless translucent arthropods that migrate up from the flooded Tartarian levels
+  through crack-systems; hunted and eaten. Mineral taste; white meat. The Underclan do not enjoy them
+  particularly and eat them without ceremony.
+- **Candles are NOT food.** This is a surface rumor and it is precisely wrong. Candles are
+  light-keepers and air-canaries; eating one is destroying a warning system. The insult of the surface
+  rumor is its own form of misunderstanding: the surface knows enough to reach a detail and not enough
+  to understand it.
+- **Water:** cisterns (primary), pipe-wall condensation, filtered runoff from above. Salt is the one
+  thing the Hollow cannot reliably produce — it is the primary trade good raided from the Cogs.
+- **Heat:** the Warm provides ambient warmth; the thermocline at the fungus farms is the warmest zone.
+  The deeper you go, the colder; the Tartarian levels are cold enough to kill the unprepared.
+- **Waste nothing:** composting, recycling of every organic material, the material economy of people
+  who cannot run a deficit. The Hollow is not austere as a philosophy — it is austere as physics.
+
 ## 3. The Underclan (faction — seed as entity) {#SS-UNDR-3}
 
 **Origin.** No founding. They *accreted* — flood refugees, the Exclusion-Registry erased (canon: the
@@ -206,6 +226,15 @@ is what makes it terrible.)
 **The Engine Guild ("the Cogs" — rival faction → possible ally).** Feral descendants of
 infrastructure-maintenance crews who hold the working machinery: pumps, locks, power taps. They serve
 the machines literally. Underclan raid them; the surface threat may force an alliance in Act 3.
+
+**The Plainsmen (surface faction — context, not on-page).** The last organized Christian community
+in 2225; ~40,000 strong; former Indiana/Ohio/Pennsylvania; hand tools, horse-drawn, no neuretics.
+Their coming-of-age rite is *Rumspringa (Rumshpringa)*: at ~16, young members live in the outside
+world freely, then choose baptism (return, ~85–90%) or permanent departure. Surface observers —
+journalists, anthropologists, social workers — use the Plainsmen comparison to describe the
+Surfacing to surface audiences. The Underclan do not know the Plainsmen exist. The echo is
+structural, not causal. Prose permission: surface-observer POV may name the Plainsmen explicitly
+and draw the comparison; Glim's POV never does. See [[SS-A24]] for the full canonical record.
 
 **CANALKEEP-08 / "the Oarsman" (the Ferry android).** A derelict canal/lock-keeper service android
 running one looped subroutine on the black water of Homewater: **accept a fare freely given, convey,
