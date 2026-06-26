@@ -51,7 +51,8 @@ public class EntityReviewService
     private readonly LabSpecimenRepository labSpecimens;
     private readonly PsionicRepository psionics;
 
-    private const int MaxConcurrency = 8;
+    private const int MaxConcurrency      = 8;
+    private const int MaxConcurrencyLocal = 20;
 
     public EntityReviewService(
         LegionClient legion,
@@ -108,17 +109,23 @@ public class EntityReviewService
     // ── Public API ────────────────────────────────────────────────────────────
 
     /// <summary>Review all entities (or just those in <paramref name="entityType"/>).
-    /// <paramref name="skipRated"/> limits to Rating == 0 entries only.</summary>
+    /// <paramref name="skipRated"/> limits to entities with no existing reviews.
+    /// When <paramref name="localUrl"/> is set, ballots route to that OpenAI-compatible
+    /// endpoint (e.g. RunPod vLLM) instead of the configured Legion cloud providers.</summary>
     public async Task ReviewAllAsync(
         bool skipRated = false,
         int ballotCount = 30,
         int proseCount = 5,
         string? entityType = null,
+        string? localUrl = null,
+        string? localKey = null,
+        string? localModel = null,
         CancellationToken ct = default)
     {
-        log.LogInformation("EntityReviewService: ReviewAllAsync (skipRated={Skip}, ballots={B}, prose={P}, type={T})",
-            skipRated, ballotCount, proseCount, entityType ?? "all");
-        await RunBatches(skipRated, ballotCount, proseCount, entityType, ct);
+        log.LogInformation(
+            "EntityReviewService: ReviewAllAsync (skipRated={Skip}, ballots={B}, prose={P}, type={T}, local={L})",
+            skipRated, ballotCount, proseCount, entityType ?? "all", localUrl ?? "cloud");
+        await RunBatches(skipRated, ballotCount, proseCount, entityType, localUrl, localKey, localModel, ct);
         log.LogInformation("EntityReviewService: ReviewAllAsync complete");
     }
 
@@ -160,29 +167,36 @@ public class EntityReviewService
 
     // ── Private — batch runner ────────────────────────────────────────────────
 
-    private async Task RunBatches(bool skipRated, int ballotCount, int proseCount, string? entityType, CancellationToken ct)
+    // ── All entity types flow through ReviewGenericBatchAsync ────────────────
+    // The typed-repo path (EfRepository<T>.GetAll) reads from the Records JSON
+    // table which is empty — all entity data lives in the typed SQL tables.
+    // Querying db.Entities directly (Description column) is the correct path
+    // for scoring. EntityReviewSummaries is updated after each entity.
+    private async Task RunBatches(bool skipRated, int ballotCount, int proseCount, string? entityType,
+        string? localUrl, string? localKey, string? localModel, CancellationToken ct)
     {
         var all = string.IsNullOrWhiteSpace(entityType);
-        if (all || entityType == "character")     await ReviewBatch(characters.GetAll(),     e => (e.Id, e.Name, e.Description),         e => characters.Save(e),     "character",     skipRated, ballotCount, proseCount, ct);
-        if (all || entityType == "technology")    await ReviewBatch(technology.GetAll(),     e => (e.Id, e.Name, e.Description),         e => technology.Save(e),     "technology",    skipRated, ballotCount, proseCount, ct);
-        if (all || entityType == "weapon")        await ReviewBatch(weaponry.GetAll(),       e => (e.Id, e.Name, e.Description),         e => weaponry.Save(e),       "weapon",        skipRated, ballotCount, proseCount, ct);
-        if (all || entityType == "ammunition")    await ReviewBatch(ammunition.GetAll(),     e => (e.Id, e.Name, e.Description),         e => ammunition.Save(e),     "ammunition",    skipRated, ballotCount, proseCount, ct);
-        if (all || entityType == "equipment")     await ReviewBatch(equipment.GetAll(),      e => (e.Id, e.Name, e.Description),         e => equipment.Save(e),      "equipment",     skipRated, ballotCount, proseCount, ct);
-        if (all || entityType == "cyberware")     await ReviewBatch(cyberware.GetAll(),      e => (e.Id, e.Name, e.Description),         e => cyberware.Save(e),      "cyberware",     skipRated, ballotCount, proseCount, ct);
-        if (all || entityType == "genemod")       await ReviewBatch(genemods.GetAll(),       e => (e.Id, e.Name, e.Description),         e => genemods.Save(e),       "genemod",       skipRated, ballotCount, proseCount, ct);
-        if (all || entityType == "transportation")await ReviewBatch(transportation.GetAll(), e => (e.Id, e.Name, e.Description),         e => transportation.Save(e), "transportation",skipRated, ballotCount, proseCount, ct);
-        if (all || entityType == "automaton")     await ReviewBatch(automata.GetAll(),       e => (e.Id, e.Name, e.Description),         e => automata.Save(e),       "automaton",     skipRated, ballotCount, proseCount, ct);
-        if (all || entityType == "subsidiary")    await ReviewBatch(subsidiaries.GetAll(),   e => (e.Id, e.Name, e.Description),         e => subsidiaries.Save(e),   "subsidiary",    skipRated, ballotCount, proseCount, ct);
-        if (all || entityType == "entertainment") await ReviewBatch(entertainment.GetAll(),  e => (e.Id, e.Name, e.Description),         e => entertainment.Save(e),  "entertainment", skipRated, ballotCount, proseCount, ct);
-        if (all || entityType == "apparel")       await ReviewBatch(apparel.GetAll(),        e => (e.Id, e.Name, e.Description),         e => apparel.Save(e),        "apparel",       skipRated, ballotCount, proseCount, ct);
-        if (all || entityType == "material")      await ReviewBatch(materials.GetAll(),      e => (e.Id, e.Name, e.Description),         e => materials.Save(e),      "material",      skipRated, ballotCount, proseCount, ct);
-        if (all || entityType == "pharmaceutical")await ReviewBatch(pharmaceuticals.GetAll(),e => (e.Id, e.Name, e.Description),         e => pharmaceuticals.Save(e),"pharmaceutical",skipRated, ballotCount, proseCount, ct);
-        if (all || entityType == "consumer-good") await ReviewBatch(consumerGoods.GetAll(),  e => (e.Id, e.Name, e.Description),         e => consumerGoods.Save(e),  "consumer-good", skipRated, ballotCount, proseCount, ct);
-        if (all || entityType == "faction")       await ReviewBatch(factions.GetAll(),       e => (e.Id, e.Name, e.Description),         e => factions.Save(e),       "faction",       skipRated, ballotCount, proseCount, ct);
-        if (all || entityType == "district")      await ReviewBatch(districts.GetAll(),      e => (e.Id, e.Name, e.Description),         e => districts.Save(e),      "district",      skipRated, ballotCount, proseCount, ct);
-        if (all || entityType == "contract")      await ReviewBatch(contracts.GetAll(),      e => (e.Id, e.Codename, e.Description),     e => contracts.Save(e),      "contract",      skipRated, ballotCount, proseCount, ct);
-        if (all || entityType == "lab-specimen")  await ReviewBatch(labSpecimens.GetAll(),   e => (e.Id, e.Name, e.PhysicalDescription), e => labSpecimens.Save(e),   "lab-specimen",  skipRated, ballotCount, proseCount, ct);
-        if (all || entityType == "psionic")       await ReviewBatch(psionics.GetAll(),       e => (e.Id, e.Name, e.Mechanism),           e => psionics.Save(e),       "psionic",       skipRated, ballotCount, proseCount, ct);
+
+        // All non-character entity types — scored via Entities.Description.
+        var knownTypes = new[]
+        {
+            "technology", "weapon", "ammunition", "equipment", "cyberware",
+            "genemod", "transportation", "automaton", "subsidiary", "entertainment",
+            "apparel", "material", "pharmaceutical", "consumer_good", "faction",
+            "place", "contract", "lab_specimen", "psionic", "corponation",
+            "document", "motif", "vocabulary", "news", "archetype", "quote",
+            "flyover_entity", "synthetic", "schism-entity", "person", "organization"
+        };
+
+        foreach (var t in knownTypes)
+        {
+            if (all || entityType == t)
+                await ReviewGenericBatchAsync(t, skipRated, ballotCount, proseCount, localUrl, localKey, localModel, ct);
+        }
+
+        // Unknown types: if --type was supplied and didn't match anything above, still attempt it.
+        if (!all && !knownTypes.Contains(entityType, StringComparer.OrdinalIgnoreCase))
+            await ReviewGenericBatchAsync(entityType!, skipRated, ballotCount, proseCount, localUrl, localKey, localModel, ct);
     }
 
     private async Task ReviewBatch<T>(
@@ -193,6 +207,9 @@ public class EntityReviewService
         bool skipRated,
         int ballotCount,
         int proseCount,
+        string? localUrl,
+        string? localKey,
+        string? localModel,
         CancellationToken ct) where T : ICanonEntity
     {
         var targets = skipRated ? entities.Where(e => e.Rating == 0).ToList() : entities;
@@ -201,8 +218,10 @@ public class EntityReviewService
         log.LogInformation("EntityReview: {Count} {Type} entities ({Ballots} ballots + {Prose} prose each)",
             targets.Count, entityType, ballotCount, proseCount);
 
-        var providers = ReviewProviderIds();
+        var useLocal = !string.IsNullOrWhiteSpace(localUrl);
+        var providers = useLocal ? ["local"] : ReviewProviderIds();
         if (providers.Count == 0) { log.LogWarning("No providers configured — skipping"); return; }
+        var concurrency = useLocal ? MaxConcurrencyLocal : MaxConcurrency;
 
         foreach (var entity in targets)
         {
@@ -214,7 +233,7 @@ public class EntityReviewService
 
             // ── Tier 1: cheap ballots ─────────────────────────────────────────
             var personas = SampleEnrichedPersonas(ballotCount);
-            var sem = new SemaphoreSlim(MaxConcurrency);
+            var sem = new SemaphoreSlim(concurrency);
             var bag = new ConcurrentBag<EntityReview>();
             var failed = 0;
 
@@ -223,8 +242,9 @@ public class EntityReviewService
                 await sem.WaitAsync(ct);
                 try
                 {
-                    var provider = providers[i % providers.Count];
-                    var r = await BallotOnceAsync(entityId, entityType, name, text, contentHash, persona, provider, ct);
+                    var provider = useLocal ? "local" : providers[i % providers.Count];
+                    var r = await BallotOnceAsync(entityId, entityType, name, text, contentHash,
+                                persona, provider, localUrl, localKey, localModel, ct);
                     if (r != null) bag.Add(r);
                     else Interlocked.Increment(ref failed);
                 }
@@ -243,7 +263,7 @@ public class EntityReviewService
             if (proseCount > 0)
             {
                 var picks = SelectInformative(saved, Math.Min(proseCount, saved.Count));
-                var psem = new SemaphoreSlim(MaxConcurrency);
+                var psem = new SemaphoreSlim(concurrency);
                 await Task.WhenAll(picks.Select(rv => Task.Run(async () =>
                 {
                     await psem.WaitAsync(ct);
@@ -251,7 +271,9 @@ public class EntityReviewService
                     {
                         var persona = PersonasByIds([rv.PersonaId]).FirstOrDefault();
                         if (persona == null) return;
-                        var prose = await ProseOnceAsync(entityType, name, text, persona, rv.ProviderId, ct);
+                        var provider = useLocal ? "local" : rv.ProviderId;
+                        var prose = await ProseOnceAsync(entityType, name, text, persona,
+                                        provider, localUrl, localKey, localModel, ct);
                         if (prose != null) { rv.ReviewText = prose.Value.review; rv.Improvements = prose.Value.improvements; }
                     }
                     catch (Exception ex) { log.LogWarning(ex, "Prose upgrade failed: {P}", rv.PersonaId); }
@@ -259,12 +281,13 @@ public class EntityReviewService
                 }, ct)));
             }
 
-            // ── Persist + update entity.Rating ────────────────────────────────
+            // ── Persist + update entity.Rating + EntityReviewSummary ─────────
             await using (var db = await dbFactory.CreateDbContextAsync(ct))
             {
                 db.EntityReviews.AddRange(saved);
                 await db.SaveChangesAsync(ct);
             }
+            await UpsertSummaryAsync(entityId, entityType, name, contentHash, ct);
 
             var mean = saved.Average(r => (double)r.Score);
             entity.Rating    = Math.Round(mean, 1);
@@ -277,56 +300,241 @@ public class EntityReviewService
         }
     }
 
+    // ── Generic batch — direct Entities table, no typed repo ─────────────────
+
+    private async Task ReviewGenericBatchAsync(
+        string entityType, bool skipRated, int ballotCount, int proseCount,
+        string? localUrl, string? localKey, string? localModel, CancellationToken ct)
+    {
+        await using var db = await dbFactory.CreateDbContextAsync(ct);
+
+        HashSet<string>? reviewed = null;
+        if (skipRated)
+        {
+            reviewed = (await db.EntityReviews
+                .Where(r => r.EntityType == entityType)
+                .Select(r => r.EntityId)
+                .Distinct()
+                .ToListAsync(ct))
+                .Select(s => Guid.TryParse(s, out var g) ? g.ToString("N") : s)
+                .ToHashSet(StringComparer.OrdinalIgnoreCase);
+        }
+
+        var rows = await db.Entities
+            .Where(e => e.EntityType == entityType && e.IsActive)
+            .Select(e => new { e.Id, e.Name, e.Description, e.UniverseId })
+            .ToListAsync(ct);
+
+        if (skipRated && reviewed != null)
+            rows = rows.Where(e => !reviewed.Contains(e.Id.ToString())).ToList();
+
+        if (rows.Count == 0) return;
+
+        log.LogInformation("EntityReview(generic): {Count} {Type} entities ({Ballots} ballots each)",
+            rows.Count, entityType, ballotCount);
+
+        var useLocal  = !string.IsNullOrWhiteSpace(localUrl);
+        var providers = useLocal ? ["local"] : ReviewProviderIds();
+        if (providers.Count == 0) { log.LogWarning("No providers configured — skipping {Type}", entityType); return; }
+        var concurrency = useLocal ? MaxConcurrencyLocal : MaxConcurrency;
+
+        foreach (var row in rows)
+        {
+            if (ct.IsCancellationRequested) break;
+
+            var entityId    = row.Id.ToString("N");
+            var name        = row.Name ?? "(unnamed)";
+            var rawText     = row.Description ?? "";
+            var text        = rawText.Length > 3000 ? rawText[..3000] : rawText;
+            var contentHash = ComputeContentHash(name, text);
+
+            var personas = SampleEnrichedPersonas(ballotCount);
+            var sem      = new SemaphoreSlim(concurrency);
+            var bag      = new ConcurrentBag<EntityReview>();
+            var failed   = 0;
+
+            await Task.WhenAll(personas.Select((persona, i) => Task.Run(async () =>
+            {
+                await sem.WaitAsync(ct);
+                try
+                {
+                    var provider = useLocal ? "local" : providers[i % providers.Count];
+                    var r = await BallotOnceAsync(entityId, entityType, name, text, contentHash,
+                                persona, provider, localUrl, localKey, localModel, ct);
+                    if (r != null) bag.Add(r);
+                    else Interlocked.Increment(ref failed);
+                }
+                catch (Exception ex) { Interlocked.Increment(ref failed); log.LogWarning(ex, "Generic ballot failed: {P}", persona.Id); }
+                finally { sem.Release(); }
+            }, ct)));
+
+            var saved = bag.ToList();
+            if (saved.Count == 0) { log.LogWarning("Generic: {Type} '{Name}' — all ballots failed", entityType, name); continue; }
+
+            if (proseCount > 0)
+            {
+                var picks = SelectInformative(saved, Math.Min(proseCount, saved.Count));
+                var psem  = new SemaphoreSlim(concurrency);
+                await Task.WhenAll(picks.Select(rv => Task.Run(async () =>
+                {
+                    await psem.WaitAsync(ct);
+                    try
+                    {
+                        var persona = PersonasByIds([rv.PersonaId]).FirstOrDefault();
+                        if (persona == null) return;
+                        var provider = useLocal ? "local" : rv.ProviderId;
+                        var prose = await ProseOnceAsync(entityType, name, text, persona,
+                                        provider, localUrl, localKey, localModel, ct);
+                        if (prose != null) { rv.ReviewText = prose.Value.review; rv.Improvements = prose.Value.improvements; }
+                    }
+                    catch (Exception ex) { log.LogWarning(ex, "Generic prose failed: {P}", rv.PersonaId); }
+                    finally { psem.Release(); }
+                }, ct)));
+            }
+
+            await using var db2 = await dbFactory.CreateDbContextAsync(ct);
+            db2.EntityReviews.AddRange(saved);
+            await db2.SaveChangesAsync(ct);
+            await UpsertSummaryAsync(entityId, entityType, name, contentHash, ct);
+            await ExtractAndSaveRelationshipsAsync(row.Id, entityType, name, text, row.UniverseId,
+                                                   localUrl, localKey, localModel, ct);
+
+            log.LogInformation("Generic: {Type} '{Name}' → {Mean:F1} ({N} ballots, {F} failed)",
+                entityType, name, saved.Average(r => (double)r.Score), saved.Count, failed);
+        }
+    }
+
+    // ── EntityReviewSummaries upsert ──────────────────────────────────────────
+
+    private async Task UpsertSummaryAsync(string entityId, string entityType, string entityName,
+        string contentHash, CancellationToken ct)
+    {
+        try
+        {
+            await using var db = await dbFactory.CreateDbContextAsync(ct);
+            var allReviews = await db.EntityReviews
+                .Where(r => r.EntityId == entityId)
+                .ToListAsync(ct);
+
+            if (allReviews.Count == 0) return;
+
+            var avg   = allReviews.Average(r => (double)r.Score);
+            var dist  = allReviews.GroupBy(r => r.Score / 10 * 10)
+                                  .ToDictionary(g => g.Key, g => g.Count());
+            var distJson = System.Text.Json.JsonSerializer.Serialize(dist);
+
+            var existing = await db.EntityReviewSummaries
+                .FirstOrDefaultAsync(s => s.EntityId == entityId, ct);
+
+            if (existing == null)
+            {
+                db.EntityReviewSummaries.Add(new EntityReviewSummary
+                {
+                    Id              = Guid.CreateVersion7(),
+                    EntityId        = entityId,
+                    EntityType      = entityType,
+                    EntityName      = entityName,
+                    ReviewCount     = allReviews.Count,
+                    AvgScore        = Math.Round(avg, 2),
+                    ScoreDistributionJson = distJson,
+                    ContentHash     = contentHash,
+                    GeneratedAt     = DateTime.UtcNow,
+                });
+            }
+            else
+            {
+                existing.ReviewCount          = allReviews.Count;
+                existing.AvgScore             = Math.Round(avg, 2);
+                existing.ScoreDistributionJson = distJson;
+                existing.ContentHash          = contentHash;
+                existing.GeneratedAt          = DateTime.UtcNow;
+                existing.EntityName           = entityName;
+            }
+            await db.SaveChangesAsync(ct);
+        }
+        catch (Exception ex)
+        {
+            log.LogWarning(ex, "UpsertSummary failed for {EntityId}", entityId);
+        }
+    }
+
     // ── Single entity ballot ──────────────────────────────────────────────────
 
     private async Task<EntityReview?> BallotOnceAsync(
         string entityId, string entityType, string name, string text,
-        string contentHash, Persona persona, string provider, CancellationToken ct)
+        string contentHash, Persona persona, string provider,
+        string? localUrl, string? localKey, string? localModel,
+        CancellationToken ct)
     {
-        var key = ResolveKey(provider);
-        if (string.IsNullOrWhiteSpace(key)) return null;
-
-        var model = cfg.ModelOverrides.TryGetValue(provider, out var m) && !string.IsNullOrWhiteSpace(m)
-            ? m : LegionClient.DefaultModels.GetValueOrDefault(provider, "");
+        var useLocal = !string.IsNullOrWhiteSpace(localUrl);
+        string key, model;
+        if (useLocal)
+        {
+            key   = string.IsNullOrWhiteSpace(localKey)   ? "local" : localKey;
+            model = string.IsNullOrWhiteSpace(localModel) ? "qwen2.5-72b-32k" : localModel;
+        }
+        else
+        {
+            key = ResolveKey(provider) ?? "";
+            if (string.IsNullOrWhiteSpace(key)) return null;
+            model = cfg.ModelOverrides.TryGetValue(provider, out var m) && !string.IsNullOrWhiteSpace(m)
+                ? m : LegionClient.DefaultModels.GetValueOrDefault(provider, "");
+        }
 
         var system = BuildBallotPrompt(persona, entityType, name);
-        var raw = await legion.CallAsync(provider, key, model, system, text, maxTokens: 300, temperature: 0.85, ct);
+        var raw = useLocal
+            ? await legion.CallAsync("local", key, model, system, text, localUrl!, maxTokens: 400, temperature: 0.85, ct)
+            : await legion.CallAsync(provider, key, model, system, text, maxTokens: 400, temperature: 0.85, ct);
 
-        if (!TryParseBallot(raw, out var score, out var weakness)) return null;
+        if (!TryParseBallot(raw, out var score, out var weakness, out var contradictions)) return null;
 
         return new EntityReview
         {
-            Id           = Guid.CreateVersion7(),
-            EntityId     = entityId,
-            EntityType   = entityType,
-            EntityName   = name,
-            PersonaId    = persona.Id,
-            PersonaName  = persona.Name,
-            PersonaBlurb = FirstLine(persona.PersonalityMarkdown),
-            ProviderId   = provider,
-            Model        = string.IsNullOrWhiteSpace(model) ? null : model,
-            Score        = Math.Clamp(score, 1, 100),
-            ReviewText   = "",
-            Improvements = string.IsNullOrWhiteSpace(weakness) ? null : weakness.Trim(),
-            ContentHash  = contentHash,
-            ReviewedAt   = DateTime.UtcNow,
-            CreatedAt    = DateTime.UtcNow,
-            UpdatedAt    = DateTime.UtcNow,
+            Id              = Guid.CreateVersion7(),
+            EntityId        = entityId,
+            EntityType      = entityType,
+            EntityName      = name,
+            PersonaId       = persona.Id,
+            PersonaName     = persona.Name,
+            PersonaBlurb    = FirstLine(persona.PersonalityMarkdown),
+            ProviderId      = provider,
+            Model           = string.IsNullOrWhiteSpace(model) ? null : model,
+            Score           = Math.Clamp(score, 1, 100),
+            ReviewText      = "",
+            Improvements    = string.IsNullOrWhiteSpace(weakness) ? null : weakness.Trim(),
+            Contradictions  = contradictions?.Count > 0 ? string.Join("\n", contradictions) : null,
+            ContentHash     = contentHash,
+            ReviewedAt      = DateTime.UtcNow,
+            CreatedAt       = DateTime.UtcNow,
+            UpdatedAt       = DateTime.UtcNow,
         };
     }
 
     private async Task<(string review, string? improvements)?> ProseOnceAsync(
         string entityType, string name, string text,
-        Persona persona, string provider, CancellationToken ct)
+        Persona persona, string provider,
+        string? localUrl, string? localKey, string? localModel,
+        CancellationToken ct)
     {
-        var key = ResolveKey(provider);
-        if (string.IsNullOrWhiteSpace(key)) return null;
-
-        var model = cfg.ModelOverrides.TryGetValue(provider, out var m) && !string.IsNullOrWhiteSpace(m)
-            ? m : LegionClient.DefaultModels.GetValueOrDefault(provider, "");
+        var useLocal = !string.IsNullOrWhiteSpace(localUrl);
+        string key, model;
+        if (useLocal)
+        {
+            key   = string.IsNullOrWhiteSpace(localKey)   ? "local" : localKey;
+            model = string.IsNullOrWhiteSpace(localModel) ? "qwen2.5-72b-32k" : localModel;
+        }
+        else
+        {
+            key = ResolveKey(provider) ?? "";
+            if (string.IsNullOrWhiteSpace(key)) return null;
+            model = cfg.ModelOverrides.TryGetValue(provider, out var m) && !string.IsNullOrWhiteSpace(m)
+                ? m : LegionClient.DefaultModels.GetValueOrDefault(provider, "");
+        }
 
         var system = BuildReviewPrompt(persona, entityType, name);
-        var raw = await legion.CallAsync(provider, key, model, system, text, maxTokens: 800, temperature: 0.85, ct);
+        var raw = useLocal
+            ? await legion.CallAsync("local", key, model, system, text, localUrl!, maxTokens: 800, temperature: 0.85, ct)
+            : await legion.CallAsync(provider, key, model, system, text, maxTokens: 800, temperature: 0.85, ct);
 
         if (!TryParseReview(raw, out _, out var review, out var improvements)) return null;
         return (review.Trim(), improvements.Count > 0 ? string.Join("\n", improvements) : null);
@@ -348,8 +556,10 @@ The entry below describes a {entityType} called ""{name}"".
 
 Read it as the person described above. Rate how compelling, original, and well-crafted this entry is — whether it would stick with you, feel alive, or reveal something true about how this world works. Reserve high scores for entries that genuinely surprise or unsettle you. Mediocre entries are common.
 
+Also flag any internal contradictions or world-canon violations you spot — things that don't add up within the entry itself, or that clash with the 2225 GLMZ setting.
+
 Return ONLY a JSON object, nothing else:
-{{""score"": <integer 1-100>, ""weakness"": ""<your single biggest gripe in 8 words or fewer, or 'none'>""}}";
+{{""score"": <integer 1-100>, ""weakness"": ""<your single biggest gripe in 8 words or fewer, or 'none'>"", ""contradictions"": [""<contradiction if any, else omit array or leave empty>""]}}";
     }
 
     private string BuildReviewPrompt(Persona persona, string entityType, string name)
@@ -396,9 +606,9 @@ React as THIS person: high Openness welcomes strange and original; low wants cla
 
     // ── Parse helpers ─────────────────────────────────────────────────────────
 
-    private static bool TryParseBallot(string? raw, out int score, out string? weakness)
+    private static bool TryParseBallot(string? raw, out int score, out string? weakness, out List<string>? contradictions)
     {
-        score = 0; weakness = null;
+        score = 0; weakness = null; contradictions = null;
         if (string.IsNullOrWhiteSpace(raw)) return false;
         var json = ExtractJson(raw);
         if (json == null) return false;
@@ -409,6 +619,13 @@ React as THIS person: high Openness welcomes strange and original; low wants cla
             if (!root.TryGetProperty("score", out var s) || !s.TryGetInt32(out score)) return false;
             weakness = root.TryGetProperty("weakness", out var w) ? w.GetString() : null;
             if (weakness is "none" or "None" or "") weakness = null;
+            if (root.TryGetProperty("contradictions", out var carr) && carr.ValueKind == JsonValueKind.Array)
+            {
+                var list = new List<string>();
+                foreach (var item in carr.EnumerateArray())
+                { var t = item.GetString(); if (!string.IsNullOrWhiteSpace(t)) list.Add(t.Trim()); }
+                if (list.Count > 0) contradictions = list;
+            }
             return score > 0;
         }
         catch { return false; }
@@ -442,6 +659,148 @@ React as THIS person: high Openness welcomes strange and original; low wants cla
         var start = raw.IndexOf('{');
         var end   = raw.LastIndexOf('}');
         return start >= 0 && end > start ? raw[start..(end + 1)] : null;
+    }
+
+    // ── Relationship extraction (one call per entity, writes to Edges table) ───
+
+    private async Task ExtractAndSaveRelationshipsAsync(
+        Guid entityGuid, string entityType, string entityName, string text, Guid universeId,
+        string? localUrl, string? localKey, string? localModel, CancellationToken ct)
+    {
+        try
+        {
+            var useLocal = !string.IsNullOrWhiteSpace(localUrl);
+            string provider, key, model;
+            if (useLocal)
+            {
+                provider = "local";
+                key      = string.IsNullOrWhiteSpace(localKey)   ? "local" : localKey;
+                model    = string.IsNullOrWhiteSpace(localModel) ? "qwen2.5-72b-32k" : localModel;
+            }
+            else
+            {
+                var providers = ReviewProviderIds();
+                if (providers.Count == 0) return;
+                provider = providers[0];
+                key      = ResolveKey(provider) ?? "";
+                if (string.IsNullOrWhiteSpace(key)) return;
+                model    = cfg.ModelOverrides.TryGetValue(provider, out var m) ? m
+                           : LegionClient.DefaultModels.GetValueOrDefault(provider, "");
+            }
+
+            if (string.IsNullOrWhiteSpace(text)) return;
+
+            var system = BuildRelationshipPrompt(entityType, entityName);
+            var raw = useLocal
+                ? await legion.CallAsync(provider, key, model, system, text, localUrl!, maxTokens: 600, temperature: 0.5, ct)
+                : await legion.CallAsync(provider, key, model, system, text, maxTokens: 600, temperature: 0.5, ct);
+
+            var rels = ParseRelationships(raw);
+            if (rels.Count == 0) return;
+
+            await using var db = await dbFactory.CreateDbContextAsync(ct);
+
+            var targetNames = rels.Select(r => r.TargetName)
+                                  .Where(n => !string.IsNullOrWhiteSpace(n))
+                                  .Distinct(StringComparer.OrdinalIgnoreCase)
+                                  .ToList();
+
+            var matches = await db.Entities
+                .Where(e => e.IsActive && targetNames.Contains(e.Name))
+                .Select(e => new { e.Id, e.Name })
+                .ToListAsync(ct);
+
+            var nameToId = matches
+                .GroupBy(m => m.Name, StringComparer.OrdinalIgnoreCase)
+                .ToDictionary(g => g.Key, g => g.First().Id, StringComparer.OrdinalIgnoreCase);
+
+            // Load existing edge pairs to avoid duplicates without per-row round-trips.
+            var existingPairs = await db.Edges
+                .Where(e => e.SourceId == entityGuid)
+                .Select(e => new { e.TargetId, e.RelationType })
+                .ToListAsync(ct);
+            var existingSet = existingPairs
+                .Select(e => $"{e.TargetId}|{e.RelationType}")
+                .ToHashSet(StringComparer.OrdinalIgnoreCase);
+
+            var toAdd = new List<Edge>();
+            foreach (var rel in rels)
+            {
+                if (rel.Confidence < 0.6) continue;
+                if (!nameToId.TryGetValue(rel.TargetName, out var targetId)) continue;
+                if (targetId == entityGuid) continue;
+                var pairKey = $"{targetId}|{rel.RelationType}";
+                if (existingSet.Contains(pairKey)) continue;
+                existingSet.Add(pairKey);
+
+                toAdd.Add(new Edge
+                {
+                    SourceId     = entityGuid,
+                    TargetId     = targetId,
+                    RelationType = rel.RelationType,
+                    Description  = rel.Description,
+                    Sentiment    = rel.Sentiment,
+                    Weight       = rel.Confidence,
+                    Source       = "review:entity-scoring",
+                    UniverseId   = universeId,
+                });
+            }
+
+            if (toAdd.Count == 0) return;
+            db.Edges.AddRange(toAdd);
+            await db.SaveChangesAsync(ct);
+            log.LogInformation("Relationships: {Type} '{Name}' → {N} new edges", entityType, entityName, toAdd.Count);
+        }
+        catch (Exception ex)
+        {
+            log.LogWarning(ex, "Relationship extraction failed for {Type} '{Name}'", entityType, entityName);
+        }
+    }
+
+    private static string BuildRelationshipPrompt(string entityType, string entityName)
+    {
+        return
+$@"You are a world-graph editor for GLMZ (Greater Lake Michigan Zone, 2225), a cyberpunk city. Your task: read the worldbuilding entry below and identify factual, named-entity-to-named-entity relationships.
+
+Rules:
+- Only include a relationship when the TARGET is a specific NAMED entity (brand, company, person, place, faction, product). No generic references like ""consumers"" or ""street gangs"".
+- relationType must be one of: makes | sold_by | used_by | competes_with | part_of | owned_by | manufactures | employed_by | located_at | mentioned_in | derived_from | contains | replaces | banned_by | endorsed_by | associated_with
+- confidence: how certain you are this is a real cross-entity relationship (0.0–1.0). Only include entries with confidence ≥ 0.6.
+
+Return ONLY a JSON object, no prose:
+{{""relationships"": [{{""targetName"": ""<exact name>"", ""relationType"": ""<type>"", ""description"": ""<one factual sentence>"", ""sentiment"": ""positive|neutral|negative"", ""confidence"": 0.9}}]}}
+If no qualifying relationships exist: {{""relationships"": []}}
+
+Entry type: {entityType}
+Entry name: {entityName}";
+    }
+
+    private record RelationshipExtract(string TargetName, string RelationType, string Description, string Sentiment, double Confidence);
+
+    private static List<RelationshipExtract> ParseRelationships(string? raw)
+    {
+        var result = new List<RelationshipExtract>();
+        if (string.IsNullOrWhiteSpace(raw)) return result;
+        var json = ExtractJson(raw);
+        if (json == null) return result;
+        try
+        {
+            using var doc = JsonDocument.Parse(json);
+            if (!doc.RootElement.TryGetProperty("relationships", out var arr) || arr.ValueKind != JsonValueKind.Array)
+                return result;
+            foreach (var item in arr.EnumerateArray())
+            {
+                var targetName   = item.TryGetProperty("targetName",   out var n)  ? n.GetString()  ?? "" : "";
+                var relationType = item.TryGetProperty("relationType", out var rt) ? rt.GetString() ?? "" : "";
+                var description  = item.TryGetProperty("description",  out var d)  ? d.GetString()  ?? "" : "";
+                var sentiment    = item.TryGetProperty("sentiment",    out var s)  ? s.GetString()  ?? "neutral" : "neutral";
+                var confidence   = item.TryGetProperty("confidence",   out var c)  ? c.GetDouble()  : 0.5;
+                if (!string.IsNullOrWhiteSpace(targetName) && !string.IsNullOrWhiteSpace(relationType))
+                    result.Add(new RelationshipExtract(targetName, relationType, description, sentiment, confidence));
+            }
+        }
+        catch { }
+        return result;
     }
 
     // ── Helpers ───────────────────────────────────────────────────────────────

@@ -1218,24 +1218,26 @@ Return ONLY a JSON object, nothing else:
             return null;
         }
 
+        var contradictions = ExtractContradictions(raw);
         var review = new StrandReview
         {
-            Id           = Guid.CreateVersion7(),
-            StrandId     = strandId,
-            PersonaId    = persona.Id,
-            PersonaName  = persona.Name,
-            PersonaBlurb = FirstLine(persona.PersonalityMarkdown),
-            ProviderId   = provider,
-            Model        = string.IsNullOrWhiteSpace(model) ? null : model,
-            Score        = Math.Clamp(score, 1, 100),
-            FlowScore    = flow.HasValue ? Math.Clamp(flow.Value, 1, 100) : null,
-            ReviewText   = reviewText.Trim(),
-            Improvements = improvements.Count > 0 ? string.Join("\n", improvements) : null,
-            ContentHash  = export.ContentHash,
-            BeatCount    = export.BeatCount,
-            ReviewedAt   = DateTime.UtcNow,
-            CreatedAt    = DateTime.UtcNow,
-            UpdatedAt    = DateTime.UtcNow,
+            Id              = Guid.CreateVersion7(),
+            StrandId        = strandId,
+            PersonaId       = persona.Id,
+            PersonaName     = persona.Name,
+            PersonaBlurb    = FirstLine(persona.PersonalityMarkdown),
+            ProviderId      = provider,
+            Model           = string.IsNullOrWhiteSpace(model) ? null : model,
+            Score           = Math.Clamp(score, 1, 100),
+            FlowScore       = flow.HasValue ? Math.Clamp(flow.Value, 1, 100) : null,
+            ReviewText      = reviewText.Trim(),
+            Improvements    = improvements.Count > 0 ? string.Join("\n", improvements) : null,
+            Contradictions  = contradictions.Count > 0 ? string.Join("\n", contradictions) : null,
+            ContentHash     = export.ContentHash,
+            BeatCount       = export.BeatCount,
+            ReviewedAt      = DateTime.UtcNow,
+            CreatedAt       = DateTime.UtcNow,
+            UpdatedAt       = DateTime.UtcNow,
         };
         if (beatScores != null)
             foreach (var kv in beatScores)
@@ -1428,8 +1430,10 @@ Give an overall score from 1 to 100 that reflects YOUR real reaction as this per
 
 Then list CONCRETE, specific ways the story could be better — point at actual moments. Cover whatever applies: grammar/typos, prose quality, dialogue, pacing, clarity of physical action, characters, the world, the ending. ""Make it better"" is useless — name the line, beat, or moment.
 
+Also flag any factual contradictions — timeline errors, a character doing something physically impossible, or a fact that contradicts something stated earlier in the text.
+
 Return ONLY a JSON object and nothing else:
-{{""score"": <integer 1-100>, ""review"": ""<your honest review>"", ""improvements"": [""<concrete fix>"", ""<concrete fix>""]}}";
+{{""score"": <integer 1-100>, ""review"": ""<your honest review>"", ""improvements"": [""<concrete fix>"", ""<concrete fix>""], ""contradictions"": [""<contradiction if any, else omit>""]}}";
     }
 
     /// <summary>Generate (and upsert) the Amazon-style aggregate summary for the
@@ -1878,6 +1882,26 @@ Be specific; do not invent praise the reviews don't support.";
     /// <summary>Tolerant JSON extraction: strips code fences, isolates the first
     /// {...} object, reads score/review/improvements. Falls back to a bare
     /// "score": N scan with the whole text as the review.</summary>
+    private static List<string> ExtractContradictions(string? raw)
+    {
+        if (string.IsNullOrWhiteSpace(raw)) return [];
+        var open = raw.IndexOf('{');
+        var close = raw.LastIndexOf('}');
+        if (open < 0 || close <= open) return [];
+        try
+        {
+            using var doc = JsonDocument.Parse(raw[open..(close + 1)]);
+            if (!doc.RootElement.TryGetProperty("contradictions", out var arr) || arr.ValueKind != JsonValueKind.Array)
+                return [];
+            return arr.EnumerateArray()
+                      .Where(x => x.ValueKind == JsonValueKind.String)
+                      .Select(x => x.GetString()!.Trim())
+                      .Where(x => x.Length > 0)
+                      .ToList();
+        }
+        catch { return []; }
+    }
+
     private static bool TryParseReview(string? raw, out int score, out string review, out List<string> improvements)
     {
         score = 0; review = ""; improvements = new List<string>();
