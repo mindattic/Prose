@@ -577,6 +577,16 @@ if (args.Contains("--review-entity"))
     return;
 }
 
+//   ss --link-weapon-ammo [--local-url URL] [--local-key KEY] [--local-model TAG] [--dry-run]
+if (args.Contains("--link-weapon-ammo"))
+{
+    var cliBuilder = WebApplication.CreateBuilder(args);
+    cliBuilder.Services.AddStreetSamuraiServices();
+    var cliApp = cliBuilder.Build();
+    Environment.ExitCode = await LinkWeaponAmmoCli.RunAsync(args, cliApp.Services);
+    return;
+}
+
 // CLI mode: have N Legion personas each read an EXISTING strand and write an
 // honest, scored reader review (saved to StrandReviews), then synthesize the
 // Amazon-style aggregate summary. Round-robins reviewers across the trusted-4.
@@ -745,6 +755,28 @@ if (args.Contains("--reparent-strand"))
     cliBuilder.Services.AddStreetSamuraiServices();
     var cliApp = cliBuilder.Build();
     Environment.ExitCode = await ReparentStrandCli.RunAsync(args, cliApp.Services);
+    return;
+}
+
+//   ss --set-summary (--slug <slug> | --id <id>) --text "..." | --file path.txt
+//   — write the back-of-book blurb directly to Strands.Summary
+if (args.Contains("--set-summary"))
+{
+    var cliBuilder = WebApplication.CreateBuilder(args);
+    cliBuilder.Services.AddStreetSamuraiServices();
+    var cliApp = cliBuilder.Build();
+    Environment.ExitCode = await SetSummaryCli.RunAsync(args, cliApp.Services);
+    return;
+}
+
+//   ss --generate-summary (--slug <slug> | --id <id>) [--model <id>] [--dry-run]
+//   — LLM-generates a 100–150 word KDP blurb from prose and saves to Strands.Summary
+if (args.Contains("--generate-summary"))
+{
+    var cliBuilder = WebApplication.CreateBuilder(args);
+    cliBuilder.Services.AddStreetSamuraiServices();
+    var cliApp = cliBuilder.Build();
+    Environment.ExitCode = await GenerateSummaryCli.RunAsync(args, cliApp.Services);
     return;
 }
 
