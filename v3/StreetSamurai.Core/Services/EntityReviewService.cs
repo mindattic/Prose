@@ -185,7 +185,8 @@ public class EntityReviewService
             "apparel", "material", "pharmaceutical", "consumer_good", "faction",
             "place", "contract", "lab_specimen", "psionic", "corponation",
             "document", "motif", "vocabulary", "news", "archetype", "quote",
-            "flyover_entity", "synthetic", "schism-entity", "person", "organization"
+            "flyover_entity", "synthetic", "schism-entity", "person", "organization",
+            "character"
         };
 
         foreach (var t in knownTypes)
