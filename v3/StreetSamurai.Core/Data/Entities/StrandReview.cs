@@ -50,9 +50,12 @@ public class StrandReview
     /// <summary>The full free-form review text, in the persona's voice.</summary>
     public string ReviewText { get; set; } = "";
 
-    /// <summary>Concrete improvement notes, newline-joined (grammar, prose,
-    /// dialogue, pacing, clarity, ending, …).</summary>
+    /// <summary>Concrete improvement notes, newline-joined. Append-only — never cleared.</summary>
     public string? Improvements { get; set; }
+
+    /// <summary>Factual contradictions spotted in this strand (one per line): internal
+    /// inconsistencies, timeline conflicts, or world-canon violations. Append-only.</summary>
+    public string? Contradictions { get; set; }
 
     /// <summary>SHA-256 (hex) of the ordered beat text the reviewer read —
     /// identifies which version of the strand this review is about.</summary>

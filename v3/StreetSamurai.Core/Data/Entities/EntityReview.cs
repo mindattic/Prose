@@ -36,8 +36,12 @@ public class EntityReview
     /// <summary>Prose review text in the persona's voice. Empty for ballot-only rows.</summary>
     public string ReviewText { get; set; } = "";
 
-    /// <summary>Concrete improvement notes (one per line) or null for ballot-only rows.</summary>
+    /// <summary>Concrete improvement notes (one per line). Append-only — never cleared.</summary>
     public string? Improvements { get; set; }
+
+    /// <summary>Factual contradictions spotted in this entry (one per line): internal
+    /// inconsistencies or conflicts with world canon. Append-only — never cleared.</summary>
+    public string? Contradictions { get; set; }
 
     /// <summary>SHA-256 (hex) of the entity text the reviewer read — identifies the
     /// version of the entry this review is about.</summary>

@@ -65,7 +65,11 @@ public static class MigrateSqlCli
         // (and their whole subtree) are ignored by the tools.
         var strandDraftFlag = args.Contains("--strand-draft-flag");
 
-        if (!schema && !charRelational && !charDropLegacy && !strandBeatSoftDelete && !strandBeatVersion && !entityGrammarNote && !strandCode && !entityReviews && !strandBible && !markdownFiles && !strandSpine && !emotionalExamination && !strandDraftFlag)
+        // Review contradictions: add Contradictions NVARCHAR(MAX) to EntityReviews,
+        // StrandReviews, and Gripes+Contradictions to StrandReviewBeatScores.
+        var reviewContradictions = args.Contains("--review-contradictions");
+
+        if (!schema && !charRelational && !charDropLegacy && !strandBeatSoftDelete && !strandBeatVersion && !entityGrammarNote && !strandCode && !entityReviews && !strandBible && !markdownFiles && !strandSpine && !emotionalExamination && !strandDraftFlag && !reviewContradictions)
         {
             Console.WriteLine("Usage:");
             Console.WriteLine("  ss --migrate-sql --schema                    apply EF migrations + enable SYSTEM_VERSIONING");
@@ -79,6 +83,7 @@ public static class MigrateSqlCli
             Console.WriteLine("  ss --migrate-sql --strand-spine              add StrandUserStories to Strands; create StrandAmendments + StrandSpineVersions");
             Console.WriteLine("  ss --migrate-sql --emotional-examination     create EmotionalExaminations/DimensionResults/BeatScores/CharacterEmotionalLedgers + Beat.EmotionalScore (SS-A15)");
             Console.WriteLine("  ss --migrate-sql --strand-draft-flag         add IsDraft BIT to Strands (+ history); draft subtrees are ignored by the tools");
+            Console.WriteLine("  ss --migrate-sql --review-contradictions     add Contradictions to EntityReviews + StrandReviews; Gripes+Contradictions to StrandReviewBeatScores");
             Console.WriteLine();
             Console.WriteLine("  ss --migrate-sql --character-relational    add relational columns + bridges to Characters,");
             Console.WriteLine("                                             then backfill from Records.Json (--no-backfill skips Phase C)");
@@ -730,6 +735,49 @@ public static class MigrateSqlCli
             catch (Exception ex)
             {
                 Console.WriteLine($"  ✘ strand-draft-flag migration failed: {ex.Message}");
+                failures++;
+            }
+        }
+
+        if (reviewContradictions)
+        {
+            using var scope = sp.CreateScope();
+            var db = scope.ServiceProvider.GetRequiredService<StreetSamuraiDbContext>();
+
+            Console.WriteLine();
+            Console.WriteLine("[review-contradictions]");
+            try
+            {
+                // EntityReviews — not temporal, straight ALTER TABLE.
+                await db.Database.ExecuteSqlRawAsync("""
+                    IF NOT EXISTS (SELECT 1 FROM sys.columns
+                                   WHERE object_id = OBJECT_ID('EntityReviews') AND name = 'Contradictions')
+                        ALTER TABLE [dbo].[EntityReviews] ADD [Contradictions] NVARCHAR(MAX) NULL;
+                    """);
+                Console.WriteLine("  ✔ Contradictions added to EntityReviews.");
+
+                // StrandReviews — not temporal.
+                await db.Database.ExecuteSqlRawAsync("""
+                    IF NOT EXISTS (SELECT 1 FROM sys.columns
+                                   WHERE object_id = OBJECT_ID('StrandReviews') AND name = 'Contradictions')
+                        ALTER TABLE [dbo].[StrandReviews] ADD [Contradictions] NVARCHAR(MAX) NULL;
+                    """);
+                Console.WriteLine("  ✔ Contradictions added to StrandReviews.");
+
+                // StrandReviewBeatScores — not temporal.
+                await db.Database.ExecuteSqlRawAsync("""
+                    IF NOT EXISTS (SELECT 1 FROM sys.columns
+                                   WHERE object_id = OBJECT_ID('StrandReviewBeatScores') AND name = 'Gripes')
+                        ALTER TABLE [dbo].[StrandReviewBeatScores] ADD [Gripes] NVARCHAR(MAX) NULL;
+                    IF NOT EXISTS (SELECT 1 FROM sys.columns
+                                   WHERE object_id = OBJECT_ID('StrandReviewBeatScores') AND name = 'Contradictions')
+                        ALTER TABLE [dbo].[StrandReviewBeatScores] ADD [Contradictions] NVARCHAR(MAX) NULL;
+                    """);
+                Console.WriteLine("  ✔ Gripes + Contradictions added to StrandReviewBeatScores.");
+            }
+            catch (Exception ex)
+            {
+                Console.WriteLine($"  ✘ review-contradictions migration failed: {ex.Message}");
                 failures++;
             }
         }

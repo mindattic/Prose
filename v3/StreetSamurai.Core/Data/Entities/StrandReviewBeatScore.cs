@@ -18,4 +18,11 @@ public class StrandReviewBeatScore
 
     /// <summary>1-5: 1 = hurt the story, 3 = fine, 5 = highlight.</summary>
     public int Score { get; set; }
+
+    /// <summary>Short gripes about this beat (one per line). Append-only — never cleared.</summary>
+    public string? Gripes { get; set; }
+
+    /// <summary>Contradictions or continuity errors spotted in this beat (one per line).
+    /// Append-only — never cleared.</summary>
+    public string? Contradictions { get; set; }
 }
