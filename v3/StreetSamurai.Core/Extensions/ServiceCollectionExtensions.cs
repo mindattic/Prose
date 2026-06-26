@@ -726,6 +726,7 @@ public static class ServiceCollectionExtensions
         // then synthesize the Amazon-style aggregate.
         services.AddSingleton<StrandMarkdownExporter>();
         services.AddSingleton<ReviewReportExporter>();
+        services.AddSingleton<PublishCleanupService>();
         services.AddSingleton<DocxExportService>();
         services.AddSingleton<ManuscriptExportService>();
         services.AddSingleton<AudiblePackageService>(sp =>
@@ -747,6 +748,7 @@ public static class ServiceCollectionExtensions
         services.AddSingleton<CanonGroundingService>();
         services.AddSingleton<EntityRatingService>();
         services.AddSingleton<EntityReviewService>();
+        services.AddSingleton<WeaponAmmoLinkerService>();
 
         // Prose-continuity and world-modelling services (2026-06-16)
         services.AddSingleton<EntityRelationshipService>();
