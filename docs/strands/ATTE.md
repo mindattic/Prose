@@ -122,7 +122,7 @@ cross-section overlaps wherever a child spends the most still time — their ass
 desk — and through the no-inside property it touches the child's still-calibrating neuretics
 directly, with no contact at the skin or skull. Juvenile neuretics has not settled into a fixed
 frequency band, so it synchronizes; the 17–19 Hz emission tunes it the way a struck tuning fork
-sets a second fork ringing. The forensic residue of this is the **echo** (RMA designation: *contact
+sets a second fork ringing. The forensic residue of this is the **echo** (AAMA designation: *contact
 imprint*): a low-intensity, weeks-long harmonic mark at the seat, readable on a resonance scanner.
 The echo marks *who was tuned and where they sat* — not a crossing. Nothing crosses at the seat.
 The growth window closes around age twelve; adult neuretics is locked too tightly to take the tune.

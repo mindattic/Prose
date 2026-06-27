@@ -135,6 +135,7 @@ public class StrandTools
             beats = beatCounts.GetValueOrDefault(s.Id, 0),
             has_bible = s.StrandBible != null,
             parent_strand_id = s.ParentStrandId,
+            summary = s.Summary,
         });
         return JsonSerializer.Serialize(result, CanonTools.JsonOpts);
     }
@@ -150,6 +151,7 @@ public class StrandTools
         {
             id = strand.Id, slug = strand.Slug, title = strand.Title, kind = strand.Kind,
             status = strand.Status, synopsis = strand.Synopsis, seed = strand.Seed,
+            summary = strand.Summary,
             voice_id = strand.VoiceId,
             parent_strand_id = strand.ParentStrandId, chars_narrated = strand.CharsNarrated,
             has_bible = strand.StrandBible != null,

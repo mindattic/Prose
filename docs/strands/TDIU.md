@@ -154,7 +154,7 @@ if she's in range.
 ### Beat 8 — Signal Trace {#SS-TDIU-5-B8}
 She builds a receiver from the secondary kit in under two hours. Music in one ear — a habit, not
 a preference; it occupies the background half of her brain while the hardware half works. The
-signal is there. 2.3 km. It hasn't moved in four hours.
+signal is there. 1.4 miles. It hasn't moved in four hours.
 
 ### Beat 9 — Follow {#SS-TDIU-5-B9}
 She walks to it. Gray zone between territories. She reads the seam markers, the unspoken codes.

@@ -110,7 +110,7 @@ public class SeriesRepository : ISeriesRepository
         }
         sub.Name     = series.Title ?? "";
         sub.Title    = series.Title ?? "";
-        sub.Slug     = WorldGraphService.Slugify(series.Title);
+        sub.Slug     = WorldGraphService.Slugify(series.Title ?? "");
         sub.Description = series.Premise ?? "";
 
         var rec = db.Records.FirstOrDefault(r => r.EntityId == id);

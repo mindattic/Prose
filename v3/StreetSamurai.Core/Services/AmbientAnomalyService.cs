@@ -29,7 +29,7 @@ public class AmbientAnomalyService
         var locationLower = (location ?? "").ToLowerInvariant();
 
         // 60% chance of any anomaly appearing in a scene
-        if (Random.Shared.NextDouble() > 0.6) return [];
+        if (!RandomGatePasses()) return [];
 
         // Prefer location-relevant anomalies, fall back to universal ones
         var relevant = anomalyCache
@@ -59,6 +59,8 @@ public class AmbientAnomalyService
         return "AMBIENT ANOMALIES (subtle background detail — mention in passing, never explain):\n"
             + string.Join("\n", hints);
     }
+
+    protected virtual bool RandomGatePasses() => Random.Shared.NextDouble() <= 0.6;
 
     private void EnsureCache()
     {

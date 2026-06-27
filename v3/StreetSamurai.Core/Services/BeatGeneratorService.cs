@@ -113,6 +113,27 @@ public class BeatGeneratorService
         var structuralBlock = !string.IsNullOrWhiteSpace(context.StructuralRoleGuidance)
             ? $"\n\n{context.StructuralRoleGuidance}"
             : "";
+        var emotionalBlock = !string.IsNullOrWhiteSpace(context.EmotionalGuidanceContext)
+            ? $"\n\n{context.EmotionalGuidanceContext}"
+            : "";
+        var tensionBlock = !string.IsNullOrWhiteSpace(context.TensionGuidanceContext)
+            ? $"\n\n{context.TensionGuidanceContext}"
+            : "";
+        var readerBlock = !string.IsNullOrWhiteSpace(context.ReaderKnowledgeContext)
+            ? $"\n\n{context.ReaderKnowledgeContext}"
+            : "";
+        var consequenceBlock = !string.IsNullOrWhiteSpace(context.ConsequenceContext)
+            ? $"\n\n{context.ConsequenceContext}"
+            : "";
+        var ambientAnomalyBlock = !string.IsNullOrWhiteSpace(context.AmbientAnomalyContext)
+            ? $"\n\n{context.AmbientAnomalyContext}"
+            : "";
+        var worldStateBlock = !string.IsNullOrWhiteSpace(context.WorldStateContext)
+            ? $"\n\n{context.WorldStateContext}"
+            : "";
+        var narrativeSummaryBlock = !string.IsNullOrWhiteSpace(context.NarrativeSummaryContext)
+            ? $"\n\n{context.NarrativeSummaryContext}"
+            : "";
 
         var system = $"""
             {UniverseLine()}
@@ -130,7 +151,7 @@ public class BeatGeneratorService
             {(context.XRayContext.Length > 0 ? "\nSCENE X-RAY — entities on screen RIGHT NOW. Every character below speaks in THEIR OWN documented register, not the narrator's:\n" + context.XRayContext : "")}
             {(context.EntityStackContext.Length > 0 ? "\nENTITY WORKING MEMORY — proper nouns active in this story thread and their canon facts. Treat these as hard constraints; do not contradict them:\n" + context.EntityStackContext : "")}
             {(context.DocStackContext.Length > 0 ? "\n" + context.DocStackContext : "")}
-            {(context.LocationContext.Length > 0 ? "\nADDITIONAL LOCATION DETAIL:\n" + context.LocationContext : "")}{dialogueBlock}{anchorBlock}{plantBlock}{commandmentBlock}{pacingBlock}{structuralBlock}
+            {(context.LocationContext.Length > 0 ? "\nADDITIONAL LOCATION DETAIL:\n" + context.LocationContext : "")}{ambientAnomalyBlock}{dialogueBlock}{anchorBlock}{plantBlock}{consequenceBlock}{commandmentBlock}{worldStateBlock}{emotionalBlock}{tensionBlock}{readerBlock}{narrativeSummaryBlock}{pacingBlock}{structuralBlock}
             """;
 
         var hasDialogue = context.DialogueContext.Length > 0;
@@ -818,6 +839,54 @@ public record BeatContext
     /// Empty = resolve the code from StrandId as usual.
     /// </summary>
     public string DocScopeCode { get; init; } = "";
+
+    // ── New ProseWriterRouter enrichment fields (SS-A28) ─────────────────────
+
+    /// <summary>Raw location hint (e.g. "The Spine, Zone 3") for SceneContextBuilder.BuildAmbientContext.
+    /// ProseWriterRouter calls BuildAmbientContext and injects the result into LocationContext when this is set
+    /// and LocationContext is empty. Leave empty if the caller already populated LocationContext directly.</summary>
+    public string Location { get; init; } = "";
+
+    /// <summary>Optional time of day passed to SceneContextBuilder (e.g. "02:00", "dusk"). Null = omit.</summary>
+    public string? TimeOfDay { get; init; }
+
+    /// <summary>Optional weather passed to SceneContextBuilder (e.g. "acid rain", "thermal fog"). Null = omit.</summary>
+    public string? Weather { get; init; }
+
+    /// <summary>Characters on screen in this beat. ProseWriterRouter auto-fires DialogueService
+    /// when mode is Dialogue or EmotionalClimax and this list is non-empty and DialogueContext is empty.</summary>
+    public IReadOnlyList<string> CharactersInScene { get; init; } = Array.Empty<string>();
+
+    /// <summary>Emotional depth guidance derived from prior EmotionalDepthService examination findings.
+    /// Injected by ProseWriterRouter from recent strand findings — "previous beats scored low on X, address it."
+    /// Empty when no prior examination exists or findings have been dismissed.</summary>
+    public string EmotionalGuidanceContext { get; init; } = "";
+
+    /// <summary>Tension escalation note from TensionEscalationService.
+    /// Non-empty when the last N beats have been at low intensity and the reader needs the stakes raised.</summary>
+    public string TensionGuidanceContext { get; init; } = "";
+
+    /// <summary>Reader knowledge state from ReaderKnowledgeService.
+    /// Compact block of what the reader now knows vs what the POV character knows — dramatic irony management.</summary>
+    public string ReaderKnowledgeContext { get; init; } = "";
+
+    // ── New ProseWriterRouter enrichment fields (SS-A29) ─────────────────────
+
+    /// <summary>Character state constraints from ConsequenceService + ConsequenceEngine.
+    /// Gear, cyberware, status, and cross-story persistent consequences — hard constraints injected before generation.</summary>
+    public string ConsequenceContext { get; init; } = "";
+
+    /// <summary>Ambient anomaly texture from AmbientAnomalyService.
+    /// New Weird background detail tagged to the scene location. 60% chance gate — often empty.</summary>
+    public string AmbientAnomalyContext { get; init; } = "";
+
+    /// <summary>Live entity state snapshot from WorldStateAtBeatService.
+    /// Point-in-time aspect + relationship data from EntityStateEvents — drifted state, not canon baseline.</summary>
+    public string WorldStateContext { get; init; } = "";
+
+    /// <summary>Rolling compressed scene memory from NarrativeSummaryService.
+    /// Last 10 beats summarized — orients the generator for long-strand coherence without full prior prose.</summary>
+    public string NarrativeSummaryContext { get; init; } = "";
 }
 
 /// <summary>

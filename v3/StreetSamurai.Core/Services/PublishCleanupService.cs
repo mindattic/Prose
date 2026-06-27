@@ -1,0 +1,97 @@
+using Microsoft.EntityFrameworkCore;
+using StreetSamurai.Core.Data;
+using System.Text.RegularExpressions;
+
+namespace StreetSamurai.Core.Services;
+
+/// <summary>
+/// Wipes all manuscript formats (.docx, .epub, .pdf, .txt) from a strand's publish folder
+/// before any export writes happen — ensures only the current version survives regardless
+/// of which export path is taken.
+/// </summary>
+public class PublishCleanupService
+{
+    static readonly string[] ManuscriptPatterns = ["*.docx", "*.epub", "*.pdf", "*.txt"];
+
+    private readonly IDbContextFactory<StreetSamuraiDbContext> dbFactory;
+    private readonly SettingsService settings;
+
+    public PublishCleanupService(
+        IDbContextFactory<StreetSamuraiDbContext> dbFactory,
+        SettingsService settings)
+    {
+        this.dbFactory = dbFactory;
+        this.settings = settings;
+    }
+
+    /// <summary>
+    /// Resolves the strand's publish folder (honouring the ancestor-walk path nesting)
+    /// and deletes all prior-version manuscript files. Returns the resolved directory path.
+    /// </summary>
+    public async Task<string> CleanAsync(Guid strandId, CancellationToken ct = default)
+    {
+        await using var db = await dbFactory.CreateDbContextAsync(ct);
+
+        var strand = await db.Strands.AsNoTracking()
+            .Where(s => s.Id == strandId)
+            .Select(s => new { s.Title, s.ParentStrandId })
+            .FirstOrDefaultAsync(ct)
+            ?? throw new InvalidOperationException($"Strand {strandId} not found.");
+
+        var ancestors = new List<string>();
+        var parentId = strand.ParentStrandId;
+        for (var guard = 0; parentId is Guid pid && guard < 8; guard++)
+        {
+            var parent = await db.Strands.AsNoTracking()
+                .Where(s => s.Id == pid)
+                .Select(s => new { s.Title, s.ParentStrandId })
+                .FirstOrDefaultAsync(ct);
+            if (parent is null) break;
+            ancestors.Insert(0, SanitizeTitle(parent.Title));
+            parentId = parent.ParentStrandId;
+        }
+
+        var baseDir = ResolveBaseDir();
+        var safeTitle = SanitizeTitle(strand.Title);
+        var pathParts = new List<string> { baseDir };
+        pathParts.AddRange(ancestors);
+        pathParts.Add(safeTitle);
+        var strandDir = Path.Combine(pathParts.ToArray());
+
+        Clean(strandDir);
+        return strandDir;
+    }
+
+    /// <summary>
+    /// Creates the directory (if absent) and deletes all manuscript formats from it.
+    /// Safe to call on a dir that has already been cleaned.
+    /// </summary>
+    public void Clean(string strandDir)
+    {
+        Directory.CreateDirectory(strandDir);
+        foreach (var pattern in ManuscriptPatterns)
+        foreach (var file in Directory.EnumerateFiles(strandDir, pattern))
+        {
+            try { File.Delete(file); }
+            catch (IOException) { }
+            catch (UnauthorizedAccessException) { }
+        }
+    }
+
+    private string ResolveBaseDir()
+    {
+        var dir = (settings.PublishExportDirectory ?? string.Empty).Trim().Trim('"', '\'').Trim();
+        return string.IsNullOrWhiteSpace(dir)
+            ? Environment.GetFolderPath(Environment.SpecialFolder.Desktop)
+            : dir;
+    }
+
+    private static string SanitizeTitle(string title)
+    {
+        var invalid = Path.GetInvalidFileNameChars().ToHashSet();
+        invalid.Add('\''); invalid.Add('’');
+        var kept = new string((title ?? "").Where(c => !invalid.Contains(c)).ToArray()).Trim();
+        kept = Regex.Replace(kept, @"\s+", " ").Trim();
+        return string.IsNullOrWhiteSpace(kept) ? "untitled" : kept;
+    }
+}

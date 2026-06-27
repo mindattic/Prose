@@ -8,7 +8,7 @@ status: complete (15 beats, all prose; 86.6% standalone 2026-06-25; exported V4)
 updated: 2026-06-25
 ---
 
-# STRAND BIBLE — Steppin Razor (SRZR) {#SS-SRZR}
+# STRAND BIBLE — Steppin' Razor (SRZR) {#SS-SRZR}
 
 > **DB strand:** id `019ef7be-b2ca-70a1-bab6-e807977a6640`, slug `steppin-razor-019ef7be`,
 > StrandCode `SRZR`, kind `story`, universe GLMZ.
@@ -48,10 +48,11 @@ DB id `FA054E75-9301-4C5D-A803-9A2FD2099984`. See [[project_sasha_vo_etymology]]
   mistake. **Heritage:** Vietnamese (paternal surname **Võ** — tilde always, everywhere, every use),
   Ukrainian (first name), Senegalese (third line). GLMZ Diaspora. No backstory dump on the page.
 - **Gray-zone freelancer.** Never corpo-registered. No legal identity.
-- **Weapons (LOCKED):** **Signal** — right hand, DB `154B7168-58E8-4222-9CC1-56E41679A9DF`,
-  large-caliber, deliberate. **Noise** — left hand, DB `722AC515-7FA5-49EB-BF55-F458D72BCA16`,
-  compact, suppressed. **Cross-draw, both hands at once** — how she thinks, not a trick.
-- As deadly with Signal and Noise as Kyle is with Silence.
+- **Weapons (LOCKED):** **Problem Solver** — right hand, DB `722AC515-7FA5-49EB-BF55-F458D72BCA16`,
+  compact, suppressed (silencer). **Trouble Maker** — left hand, DB `154B7168-58E8-4222-9CC1-56E41679A9DF`,
+  select-fire (single/burst/auto). Both chamber the same round: 6.5mm DPS-65 "Stillwater."
+  **Cross-draw, both hands at once** — how she thinks, not a trick.
+- As deadly with Problem Solver and Trouble Maker as Kyle is with Silence.
 
 **Why she is angry — the engine (LOCKED):** Her neuretics (grown in-head compute) were **never
 provisioned / locked to a band**, so unlike everyone else's, hers never *closed*. She has heard a low
@@ -145,7 +146,7 @@ yet. She resents that as much as everything else. Keep it understated; never exp
 ## 6. Narrative locks {#SS-SRZR-6}
 
 1. **Võ** with the diacritic, everywhere.
-2. **Signal right, Noise left. Cross-draw, both hands.**
+2. **Problem Solver right, Trouble Maker left. Cross-draw, both hands.**
 3. **Never puts her back to a door.**
 4. **Instinct, not information** — the schism-sense is theme, not tactical intel.
 5. **Schisms cannot be perceived directly** — a 5D cross-section, "no inside." Contact is by
@@ -155,9 +156,9 @@ yet. She resents that as much as everything else. Keep it understated; never exp
 ## 7. Full beat spine (15 beats, all drafted) {#SS-SRZR-7}
 
 **Act 1 — Edge (Joliet; the cold open):**
-1. **The Hereafter** — frontier bar; century-old cooking show; a man decides her size is an invitation; she gives him a second smile with a bottle; the only quiet she gets, bought and lost.
+1. **End of the Line** — frontier bar at the literal end of the tracks (rail torn up by scavengers decades before; no joke in the name, just geography); on the TV: the last Olympics, fifty-plus years gone, the one where CorpoNation flags outnumbered country flags in the opening ceremony; a man decides her size is an invitation; she gives him a second smile with a bottle; the only quiet she gets, bought and lost.
 2. **The dead rails** — Joliet, the freight rails nobody rides; then a camel on the rail bed. There are no camels in Joliet.
-3. **The exchange** — "The camel is not my thrall." / "We just arrived." The animals beat: the camel breathes at her. Her hand goes to Noise; he is unthreatened — threatening a projection is threatening a phone call.
+3. **The exchange** — "The camel is not my thrall." / "We just arrived." The animals beat: the camel breathes at her. Her hand goes to Problem Solver (right, the suppressed one — the wrong hand for a stranger, the right hand for a threat); he is unthreatened — threatening a projection is threatening a phone call.
 4. **"You were left open"** — the entity gets under her guard exactly once (body before mind: the breath she didn't take); she shuts the door; the anger comes back like it only stepped out for air.
 5. **The inward hook** — holes on both sides, "we arrive toward them," not-the-Lure, it points northeast; she falls into step.
 
@@ -171,7 +172,7 @@ yet. She resents that as much as everything else. Keep it understated; never exp
 **Act 2B — Core (Tessera district):**
 11. **The camel-man in the towers** — the camel on the elevated pedestrian walkway, twenty floors up, no one reacting; she asks what it wants when this is done; it turns the question back; she has no answer; she does not step back this time.
 12. **Under the eastern colonnade** — three live wells staged at different depths; the cabal drilling toward the far side under ten thousand people; the far side at 72 Hz pushing back, patient, refusing.
-13. **Found** — four Axiom corpo operatives; they brought a floor-counter for a thing she does not do; Noise (left) and Signal (right), cross-draw geometry; she comes out with a hole in her jacket above the ribs, their comms rig, and a signal window.
+13. **Found** — four Axiom corpo operatives; they brought a floor-counter for a thing she does not do; Problem Solver (right) and Trouble Maker (left), cross-draw geometry; she comes out with a hole in her jacket above the ribs, their comms rig, and a signal window.
 
 **Act 3 — Resolution:**
 14. **The receiver's problem** — on a maintenance platform four hundred meters up, looking at the lake; she knows the drills, she knows Axiom, she has no one she trusts with information this weight; she understands she is the hole — a receiver on both sides of a membrane being deliberately punctured; she sends the data to the dead-drop channel and leaves.
@@ -203,12 +204,12 @@ person alive in the GLMZ while a corporate extraction team converges; the AI's s
 
 ## 10. User stories {#SS-SRZR-10}
 
-- **SRZR-US-1 ✅** Sasha Võ + Signal + Noise seeded (carried from SPRW-US-6).
+- **SRZR-US-1 ✅** Sasha Võ + Problem Solver + Trouble Maker seeded (carried from SPRW-US-6; renamed Signal/Noise→Calm/Storm 2026-06-25; renamed Calm/Storm→Problem Solver/Trouble Maker 2026-06-26).
 - **SRZR-US-2 ✅** Strand created in DB (`steppin-razor-019ef7be`).
 - **SRZR-US-3 ✅** Opening redesigned — the camel-man cold open replaces the migrated gun-and-run as
   the spine (2026-06-23).
 - **SRZR-US-4 ✅** Cold open drafted as 5 beats in the DB (front-dump stripped, reflowed).
-- **SRZR-US-5 ✅** Entities seeded: The Man on the Camel (`019ef8055bc8`), The Hereafter (`019ef8052de9`), The Joliet Schism (`019ef805444e`, type=schism).
+- **SRZR-US-5 ✅** Entities seeded: The Camel Jockey (formerly "The Man on the Camel"; `019ef8055bc8`, type=schism-entity, renamed 2026-06-25), End of the Line (`019ef8052de9`, renamed from The Hereafter 2026-06-26), The Joliet Schism (`019ef805444e`, type=schism), The Lure (`D0068627...`, schism-entity), The Counter (`FED0FAF3...`, schism-entity), The Gingerbread House at 35th & Halsted (`6EC69E6D...`, place, SS-A18), 6.5mm DPS-65 "Stillwater" (`28E2DDBF...`, ammunition — shared round for Problem Solver + Trouble Maker).
 - **SRZR-US-6 ✅** Beat spine complete: 15 beats (cold open → entry → anomaly → entanglement → cost → camel in towers → colonnade reveal → found → receiver's problem → final image). See §7.
-- **SRZR-US-7 ✅** Prose drafted at Opus quality (HIGH-tier, all 15 beats); standalone 86.6% (20-ballot panel, 2026-06-25). Signal/Noise cross-draw correct. No blade substitutions. Three em-dash encoding artifacts fixed post-review.
-- **SRZR-US-8 ✅** Exported: *Steppin Razor V4.docx/epub/pdf/txt* (`R:\Desktop\EPub\MindAttic\GLMZ\Steppin Razor\`). *(2026-06-25)*
+- **SRZR-US-7 ✅** Prose drafted at Opus quality (HIGH-tier, all 15 beats); standalone 86.6% (20-ballot panel, 2026-06-25). Problem Solver (right) / Trouble Maker (left) cross-draw correct (handedness corrected 2026-06-25; weapons renamed 2026-06-26). No blade substitutions. Three em-dash encoding artifacts fixed post-review. Purple gooseberry thread added beats 1–2 (psychedelic ambiguity, never resolved; camel eats them — proves nothing).
+- **SRZR-US-8 ✅** Exported: *Steppin' Razor V8.docx/epub/pdf/txt* (`R:\Desktop\EPub\MindAttic\GLMZ\Steppin Razor\`). V8 = title corrected, block-paragraph format (no indent), author=MindAttic, metric reverts applied. *(2026-06-25)*

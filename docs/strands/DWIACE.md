@@ -89,9 +89,22 @@ Reads physical SCENES. Anchor of ensemble chapters. His cup-quarter-turn is his 
 RESIDUE in rooms (ability, not magic). Sleeps in her clothes. The cold-edge "listening"
 residue is what she finds in Celeste's room — matches what she finds at Sol's death scene.
 
-**Corvin Adaora** (`019ec3ebabfa7f62b80263deb6603c6b`) — Synthetic who passes. Models BEHAVIOR
-+ non-human cadence. Solves inadmissibly. He is the one who proves the Tributary's cadence
-pattern is non-human without being able to testify to it.
+**Corvin Adaora** (`019ec3ebabfa7f62b80263deb6603c6b`) — Human. Wiped out on his bike
+burning down the Dan Ryan eleven years ago; massive head trauma transferred most of his
+cognitive processing to neuretics. He did not lose himself — he became something adjacent to
+himself. Calm, direct, precise. He does not register the nuances of human behavior in the
+intuitive way most people do; he reads them analytically, the way a machine reads a load
+curve, and the pause before he responds is the pause of a system completing a process. Not
+rude. Not cold in the emotional sense. Simply distant in the way a thing is distant when it
+has stopped running on the same substrate as the people around it.
+
+His neuretics are unlicensed gray-market behavioral analytics tooling — running at a resolution
+licensed tools cannot achieve without court authorization. He models BEHAVIOR + non-human
+cadence inadmissibly — not because of his species, but because his tooling is unregistered and
+cannot be independently verified by standard means. He is the one who proves the Tributary's
+cadence pattern is non-human without being able to testify to it. Clients who work with
+Rennick Investigations more than once learn to recognize the stillness that means he is
+processing a pattern — and to wait, because what follows is almost always correct.
 
 **Voss Caldera** (`019ec3ebfe8a7e2e9884defe8f4a2b97`) — Burned-out neuretics = AIR GAP.
 Analog. The one the Network-borne predator cannot see. Physically reaches the rig; Voss is

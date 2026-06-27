@@ -75,7 +75,7 @@ The obligation = the root of the whole case. CE-0217 stays classified. The payme
 ## 3. Character rules {#SS-TEST-3}
 
 **Bear / Boris Johansen (POV):**
-- Swedish-Slavic heritage. Steel blue eyes. 203 cm / 140 kg augmented. Full bushy beard.
+- Swedish-Slavic heritage. Steel blue eyes. 6'5" natural / 6'8" augmented / 385 lbs augmented. Full bushy beard.
   Looks like male Nomad from Ghost Recon Breakpoint.
 - Warm, boisterous, proud. Fills every room. NOT the brooding type.
 - When patient with someone, it reads as a large man choosing patience, not suppression.
@@ -90,7 +90,7 @@ The obligation = the root of the whole case. CE-0217 stays classified. The payme
 - Not Squall, not Cloud, not any silent protagonist whose weight comes from what he doesn't say.
 
 **Vasili Brandt (antagonist):**
-- Halcyon retired colonel. 4cm scar under left eye.
+- Halcyon retired colonel. One-and-a-half-inch scar under left eye.
 - Uses the phrase "We operated on the intelligence we were given" — rationalization + dropped
   defense, observable in forward weight-shift.
 - Killed by Halcyon's own machinery (NS-7 flag at 1348, six hours after the hearing) — LOCKED.
@@ -187,6 +187,22 @@ Runs 16 transfers on the 19th. Sternum touch. Calls the number at 0600. The city
 Interleaved as flashback. The 43 dead. The decision. Bear as CO. The last salute at Cortland.
 
 ## 6. Canon hardware {#SS-TEST-6}
+
+**Bear's augmented body weight (385 lbs / 175 kg without Manowar):**
+| Component | Net added |
+|---|---|
+| Base biological (6'5", heavily muscular) | 275 lbs / 125 kg |
+| Cortical endoskeleton (+3" height, titanium-carbide composite) | +22 lbs / +10 kg |
+| Arcturus Tier 5 Myomimetic Enhancement Array (id `c2384436-79d5-46ef-8a95-3bb41abb1dbf`) | +22 lbs / +10 kg |
+| Subdermal ballistic laminate (graphene-ceramic, torso/shoulders) | +18 lbs / +8 kg |
+| Strix Harvest Frame / Manowar Accumulator (piezoelectric, torso-integrated) | +22 lbs / +10 kg |
+| Augmented pulmonary array (synthetic expanded-volume lungs) | +9 lbs / +4 kg |
+| Augmented cardiovascular (reinforced cardiac pump + arterial reinforcement) | +6 lbs / +3 kg |
+| Military neural/cybernetic package (targeting, comms, sensory, power cell) | +11 lbs / +5 kg |
+| **Manowar powered frame (worn — external)** | **+1,320 lbs / +600 kg** |
+
+Total wearing Manowar: ~1,705 lbs / ~775 kg.
+The myomimetic mesh is why he can carry 1,320 lbs of powered frame: at six times organic output the load is manageable, not comfortable.
 
 **Strix Sunder** (id `019ed85d-3327-7a96-ab7e-2c35d5829003`) — EM interference pulse weapon,
 NOT a shockwave. Converts stored energy → resonant EM through vent arrays (chest + back).

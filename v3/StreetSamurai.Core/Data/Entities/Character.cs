@@ -51,8 +51,8 @@ public class Character
     public string Name { get; set; } = "";
     /// <summary>Given name. Populated when Name has 2+ whitespace-separated tokens. Title prefixes (Dr., Mr., Mx., etc.) are skipped.</summary>
     public string FirstName { get; set; } = "";
-    /// <summary>Middle name(s) when present. "Sasha Marie Võ" → "Marie". Empty for two-token names.</summary>
-    public string MiddleName { get; set; } = "";
+    /// <summary>Middle name(s) when present. "Sasha Marie Võ" → "Marie". NULL for two-token names.</summary>
+    public string? MiddleName { get; set; }
     /// <summary>Family name. The last token when Name has 2+ tokens; empty for mononyms ("Pixel").</summary>
     public string LastName  { get; set; } = "";
     /// <summary>Title / honorific prefix (Dr., Captain, etc.) extracted from Name. Empty when none.</summary>

@@ -1942,7 +1942,7 @@ public class StrandWorkbenchService
 
             // Write to the same publish dir/subdir as DocxExportService:
             //   {PublishExportDirectory}/{SanitizedTitle}/{SanitizedTitle} {EngineLabel} V{N}.{ext}
-            var publishBase = (settings.PublishExportDirectory ?? string.Empty).Trim().Trim('"', '\'').Trim();
+            var publishBase = (settings?.PublishExportDirectory ?? string.Empty).Trim().Trim('"', '\'').Trim();
             if (string.IsNullOrWhiteSpace(publishBase))
                 publishBase = Environment.GetFolderPath(Environment.SpecialFolder.Desktop);
             var safeTitle = SafeFileName(string.IsNullOrWhiteSpace(strand.Title) ? strand.Slug : strand.Title);

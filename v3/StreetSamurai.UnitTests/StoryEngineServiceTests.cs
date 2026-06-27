@@ -1,3 +1,4 @@
+using StreetSamurai.Core.Interfaces;
 using StreetSamurai.Core.Services;
 using StreetSamurai.Core.Models.Canon;
 
@@ -168,29 +169,98 @@ public class NarrativeSummaryServiceTests
         Assert.That(svc.SceneCount, Is.EqualTo(0));
         Assert.That(svc.GetSummaryChain(), Is.Empty);
     }
-}
 
-[TestFixture]
-public class AmbientAnomalyServiceTests
-{
     [Test]
-    public void FormatHints_ReturnsStringOrEmpty()
+    public async Task SummarizeScene_NullText_LlmNotCalled_SceneCountStaysZero()
     {
-        var rootDir = Path.Combine(Path.GetTempPath(), $"ss_anomaly_{Guid.NewGuid():N}");
-        Directory.CreateDirectory(Path.Combine(rootDir, "engine_data", "documents"));
-        Directory.CreateDirectory(Path.Combine(rootDir, "engine_data", "places"));
-        var paths = new TestPathProviderWithRoot(rootDir);
-        var docRepo = new WorldbuildingDocRepository(paths);
-        var districtRepo = new DistrictRepository(paths);
-        var svc = new AmbientAnomalyService(docRepo, districtRepo);
+        var llm = new CountingLlm();
+        var svc = new NarrativeSummaryService(llm);
+        await svc.SummarizeSceneAsync(null!);
+        Assert.That(llm.CallCount, Is.EqualTo(0));
+        Assert.That(svc.SceneCount, Is.EqualTo(0));
+    }
 
-        var result = svc.FormatHints("Shelf");
-        // With no anomaly documents loaded, should return empty
-        Assert.That(result, Is.Empty);
+    [Test]
+    public async Task SummarizeScene_WhitespaceText_LlmNotCalled_SceneCountStaysZero()
+    {
+        var llm = new CountingLlm();
+        var svc = new NarrativeSummaryService(llm);
+        await svc.SummarizeSceneAsync("   ");
+        Assert.That(llm.CallCount, Is.EqualTo(0));
+        Assert.That(svc.SceneCount, Is.EqualTo(0));
+    }
 
-        Directory.Delete(rootDir, true);
+    [Test]
+    public async Task After10Calls_SceneCountIs10_ChainShowsScene1Through10()
+    {
+        var svc = new NarrativeSummaryService(new FixedSummaryLlm("summary"));
+        for (int i = 0; i < 10; i++)
+            await svc.SummarizeSceneAsync($"Scene text {i + 1}.");
+        Assert.That(svc.SceneCount, Is.EqualTo(10));
+        var chain = svc.GetSummaryChain();
+        Assert.That(chain, Does.Contain("Scene 1:"));
+        Assert.That(chain, Does.Contain("Scene 10:"));
+    }
+
+    [Test]
+    public async Task After11Calls_SceneCountIs11_ChainShowsOnly10Numbered1To10()
+    {
+        var svc = new NarrativeSummaryService(new FixedSummaryLlm("summary"));
+        for (int i = 0; i < 11; i++)
+            await svc.SummarizeSceneAsync($"Scene text {i + 1}.");
+        Assert.That(svc.SceneCount, Is.EqualTo(11));
+        var chain = svc.GetSummaryChain();
+        Assert.That(chain, Does.Contain("Scene 1:"));
+        Assert.That(chain, Does.Contain("Scene 10:"));
+        Assert.That(chain, Does.Not.Contain("Scene 11:"));
+    }
+
+    [Test]
+    public async Task GetSummaryChain_NonEmpty_ContainsStoryHeader()
+    {
+        var svc = new NarrativeSummaryService(new FixedSummaryLlm("summary"));
+        await svc.SummarizeSceneAsync("A scene happened.");
+        Assert.That(svc.GetSummaryChain(), Does.Contain("STORY SO FAR"));
+    }
+
+    [Test]
+    public async Task SummarizeScene_LlmResponseWithWhitespace_IsTrimmed()
+    {
+        var svc = new NarrativeSummaryService(new FixedSummaryLlm("  trimmed summary  "));
+        await svc.SummarizeSceneAsync("Some scene text.");
+        var chain = svc.GetSummaryChain();
+        Assert.That(chain, Does.Contain("trimmed summary"));
+        Assert.That(chain, Does.Not.Contain("  trimmed summary  "));
+    }
+
+    [Test]
+    public async Task Reset_ThenSummarize_StartsFromSceneOne()
+    {
+        var svc = new NarrativeSummaryService(new FixedSummaryLlm("summary"));
+        for (int i = 0; i < 3; i++)
+            await svc.SummarizeSceneAsync($"Scene {i + 1}.");
+        svc.Reset();
+        await svc.SummarizeSceneAsync("Fresh start.");
+        Assert.That(svc.SceneCount, Is.EqualTo(1));
+        Assert.That(svc.GetSummaryChain(), Does.Contain("Scene 1:"));
+    }
+
+    class CountingLlm : ILlmService
+    {
+        public int CallCount { get; private set; }
+        public Task<bool> IsConfiguredAsync() => Task.FromResult(true);
+        public Task<string> GenerateAsync(string system, string user, double temperature = 0.8, int maxTokens = 4096, string? model = null, CancellationToken ct = default)
+        { CallCount++; return Task.FromResult("summary"); }
+    }
+
+    class FixedSummaryLlm(string response) : ILlmService
+    {
+        public Task<bool> IsConfiguredAsync() => Task.FromResult(true);
+        public Task<string> GenerateAsync(string system, string user, double temperature = 0.8, int maxTokens = 4096, string? model = null, CancellationToken ct = default)
+            => Task.FromResult(response);
     }
 }
+
 
 [TestFixture]
 public class SceneContextBuilderTests

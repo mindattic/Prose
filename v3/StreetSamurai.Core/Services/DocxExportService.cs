@@ -12,17 +12,17 @@ namespace StreetSamurai.Core.Services;
 /// <summary>
 /// Exports a strand as a valid Word <c>.docx</c> in the manuscript shape Kindle
 /// Direct Publishing prefers: a title page, every chapter starting on a fresh
-/// page under a centered heading, and justified, first-line-indented body text
-/// in a readable serif at 1.15 spacing. Writes to the configured publish
-/// directory (Desktop fallback). KDP ingests this directly — no headers/footers
-/// (KDP paginates) and no blank lines between paragraphs (the first-line indent
-/// does the work).
+/// page under a centered heading, and justified block-paragraph body text
+/// (no first-line indent; 8pt spacing after each paragraph) in a readable serif
+/// at 1.15 spacing. Writes to the configured publish directory (Desktop fallback).
+/// KDP ingests this directly. Author defaults to "MindAttic" when not specified.
 /// </summary>
 public class DocxExportService
 {
     private readonly IDbContextFactory<StreetSamuraiDbContext> dbFactory;
     private readonly StrandWorkbenchService workbench;
     private readonly SettingsService settings;
+    private readonly PublishCleanupService cleanup;
     private readonly ILogger<DocxExportService> log;
 
     private const string Serif = "Garamond";
@@ -35,17 +35,20 @@ public class DocxExportService
         IDbContextFactory<StreetSamuraiDbContext> dbFactory,
         StrandWorkbenchService workbench,
         SettingsService settings,
+        PublishCleanupService cleanup,
         ILogger<DocxExportService> log)
     {
         this.dbFactory = dbFactory;
         this.workbench = workbench;
         this.settings = settings;
+        this.cleanup = cleanup;
         this.log = log;
     }
 
     /// <summary>Render the strand to a KDP-ready .docx in the publish directory; returns the path.</summary>
     public async Task<string> ExportStrandAsync(Guid strandId, string? author = null, CancellationToken ct = default)
     {
+        author = string.IsNullOrWhiteSpace(author) ? "MindAttic" : author.Trim();
         await using var db = await dbFactory.CreateDbContextAsync(ct);
         var strand = await db.Strands.FirstOrDefaultAsync(s => s.Id == strandId, ct)
             ?? throw new InvalidOperationException($"Strand {strandId} not found.");
@@ -78,13 +81,7 @@ public class DocxExportService
         pathParts.AddRange(ancestors);
         pathParts.Add(safeTitle);
         var strandDir = Path.Combine(pathParts.ToArray());
-        Directory.CreateDirectory(strandDir);
-        foreach (var existing in Directory.EnumerateFiles(strandDir, "*.docx"))
-        {
-            try { File.Delete(existing); }
-            catch (IOException) { }
-            catch (UnauthorizedAccessException) { }
-        }
+        cleanup.Clean(strandDir);
         var exportPath = Path.Combine(strandDir, $"{safeTitle} V{strand.Version}.docx");
 
         using (var doc = WordprocessingDocument.Create(exportPath, WordprocessingDocumentType.Document))
@@ -427,8 +424,7 @@ public class DocxExportService
     {
         var p = new Paragraph(new ParagraphProperties(
             new Justification { Val = JustificationValues.Both },
-            new Indentation { FirstLine = "720" },   // 0.5" first-line indent; no blank line between ¶s
-            new SpacingBetweenLines { Line = "276", LineRule = LineSpacingRuleValues.Auto, After = "0" }));
+            new SpacingBetweenLines { Line = "276", LineRule = LineSpacingRuleValues.Auto, After = "160" }));
         foreach (var run in InlineRuns(text)) p.AppendChild(run);
         return p;
     }

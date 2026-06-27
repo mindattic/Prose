@@ -61,9 +61,11 @@ public static class ReviewEntityCli
         var reviewer = scope.ServiceProvider.GetRequiredService<EntityReviewService>();
         var cfg      = scope.ServiceProvider.GetRequiredService<StreetSamurai.Core.Services.SettingsService>();
 
-        string? resolvedUrl   = useLocal ? cfg.LocalReviewBaseUrl   : null;
-        string? resolvedKey   = useLocal ? cfg.LocalReviewApiKey    : null;
-        string? resolvedModel = useLocal ? cfg.LocalReviewModel     : null;
+        // Prefer arg values over persisted settings — avoids cross-process clobber when two
+        // scoring jobs run simultaneously against different pods.
+        string? resolvedUrl   = useLocal ? (!string.IsNullOrWhiteSpace(localUrl)   ? NormalizeLocalUrl(localUrl)   : cfg.LocalReviewBaseUrl)  : null;
+        string? resolvedKey   = useLocal ? (localKey   ?? cfg.LocalReviewApiKey)   : null;
+        string? resolvedModel = useLocal ? (localModel ?? cfg.LocalReviewModel)    : null;
 
         await reviewer.ReviewAllAsync(
             skipRated:   unrated,

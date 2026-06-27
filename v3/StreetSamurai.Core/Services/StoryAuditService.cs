@@ -176,12 +176,12 @@ public class StoryAuditService(
                 .SelectMany(ch => ch.StrandBeats
                     .Where(sb => sb.IsEnabled)
                     .OrderBy(sb => sb.SortKey)
-                    .Select(sb => sb.Beat.Text))
+                    .Select(sb => sb.Beat!.Text))
                 .Where(t => !string.IsNullOrWhiteSpace(t)))
             : string.Join("\n\n", strand.StrandBeats
                 .Where(sb => sb.IsEnabled)
                 .OrderBy(sb => sb.SortKey)
-                .Select(sb => sb.Beat.Text)
+                .Select(sb => sb.Beat!.Text)
                 .Where(t => !string.IsNullOrWhiteSpace(t)));
 
         var plants = await plantPayoffs.GetByStrandAsync(strandId, ct);

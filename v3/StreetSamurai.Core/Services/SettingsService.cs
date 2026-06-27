@@ -422,8 +422,8 @@ public class SettingsService : IDisposable
     public bool DocxIncludeToc { get => data.DocxIncludeToc; set { data.DocxIncludeToc = value; ScheduleSave(); } }
 
     /// <summary>Master switch for the Doc Context Stack injection into prose-generation prompts.
-    /// Default OFF — the engine is inert until explicitly enabled, so it can never change output
-    /// behaviour until validated. Dry-run (`--doc-context`) + MCP tools work regardless of this flag.</summary>
+    /// Default ON — injects the strand bible, voice register, and topic docs into every beat prompt.
+    /// Dry-run (`--doc-context`) + MCP tools work regardless of this flag.</summary>
     public bool DocContextEnabled { get => data.DocContextEnabled; set { data.DocContextEnabled = value; ScheduleSave(); } }
 
     // ── Review voting ──────────────────────────────────────────────────────────
@@ -783,7 +783,7 @@ public class SettingsService : IDisposable
         public bool EnablePlainTextNer { get; set; } = false;
         public bool SaveStoriesAsMarkdown { get; set; } = true;
         public bool DocxIncludeToc { get; set; } = false;
-        public bool DocContextEnabled { get; set; } = false;
+        public bool DocContextEnabled { get; set; } = true;
         public string SmtpHost { get; set; } = "";
         public int SmtpPort { get; set; } = 587;
         public string SmtpUsername { get; set; } = "";

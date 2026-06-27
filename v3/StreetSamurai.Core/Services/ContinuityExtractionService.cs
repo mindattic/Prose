@@ -145,6 +145,7 @@ public class ContinuityExtractionService
                 };
             })
             .Where(g => g != null)
+            .Select(g => g!)
             .Where(g => g.Voters.Count >= minVoters)
             .ToList();
 

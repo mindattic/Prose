@@ -636,7 +636,7 @@ public class FamilyGeneratorService
             Id         = p.Id,
             Name       = fullName,
             FirstName  = p.FirstName,
-            MiddleName = p.MiddleName ?? "",
+            MiddleName = p.MiddleName,
             LastName   = p.LastName,
             Gender     = p.Gender,
             Age        = p.Age,
