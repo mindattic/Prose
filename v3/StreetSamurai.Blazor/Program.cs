@@ -587,6 +587,26 @@ if (args.Contains("--link-weapon-ammo"))
     return;
 }
 
+//   ss --populate-queue --entity-review|--strand-review|--beat-write|--status [options]
+if (args.Contains("--populate-queue"))
+{
+    var cliBuilder = WebApplication.CreateBuilder(args);
+    cliBuilder.Services.AddStreetSamuraiServices();
+    var cliApp = cliBuilder.Build();
+    Environment.ExitCode = await StreetSamurai.Blazor.Cli.PopulateQueueCli.RunAsync(args, cliApp.Services);
+    return;
+}
+
+//   ss --worker-mode --queue-url URL --worker-key KEY --worker-id ID --local-url LLM_URL [options]
+if (args.Contains("--worker-mode"))
+{
+    var cliBuilder = WebApplication.CreateBuilder(args);
+    cliBuilder.Services.AddStreetSamuraiServices();
+    var cliApp = cliBuilder.Build();
+    Environment.ExitCode = await StreetSamurai.Blazor.Cli.WorkerModeCli.RunAsync(args, cliApp.Services);
+    return;
+}
+
 // CLI mode: have N Legion personas each read an EXISTING strand and write an
 // honest, scored reader review (saved to StrandReviews), then synthesize the
 // Amazon-style aggregate summary. Round-robins reviewers across the trusted-4.
@@ -2240,6 +2260,52 @@ app.MapGet("/api/media/{filename}", (string filename, MediaService media) =>
     if (path == null) return Results.NotFound();
     var mime = MediaService.GetMimeType(filename);
     return Results.File(path, mime, enableRangeProcessing: true);
+});
+
+// ── Distributed worker REST API ───────────────────────────────────────────────
+// Auth: X-Worker-Key header must match WorkerSettings:ApiKey in appsettings / env.
+// Workers are stateless: they claim work, run the local LLM, and POST results back.
+// The coordinator (this process) is the only writer to EntityReviews, StrandReviews, Beats, Edges.
+
+static bool WorkerAuthOk(HttpContext ctx, IConfiguration cfg)
+{
+    var expected = cfg["WorkerSettings:ApiKey"] ?? "";
+    if (string.IsNullOrWhiteSpace(expected)) return false; // key not configured → deny all
+    ctx.Request.Headers.TryGetValue("X-Worker-Key", out var provided);
+    return provided.ToString() == expected;
+}
+
+// GET /api/worker/status — queue counts by work type and status
+app.MapGet("/api/worker/status", async (
+    StreetSamurai.Core.Services.DistributedWorkerCoordinator coordinator,
+    IConfiguration cfg, HttpContext ctx) =>
+{
+    if (!WorkerAuthOk(ctx, cfg)) return Results.Unauthorized();
+    var rows = await coordinator.GetStatusAsync();
+    return Results.Ok(rows);
+});
+
+// GET /api/worker/claim?workerId=X&workType=entity-review&batch=20
+app.MapGet("/api/worker/claim", async (
+    string workerId, string workType, int batch,
+    StreetSamurai.Core.Services.DistributedWorkerCoordinator coordinator,
+    IConfiguration cfg, HttpContext ctx) =>
+{
+    if (!WorkerAuthOk(ctx, cfg)) return Results.Unauthorized();
+    batch = Math.Clamp(batch, 1, 100);
+    var items = await coordinator.ClaimBatchAsync(workerId, workType, batch);
+    return Results.Ok(items);
+});
+
+// POST /api/worker/submit — worker posts completed results
+app.MapPost("/api/worker/submit", async (
+    StreetSamurai.Core.Services.WorkerResult result,
+    StreetSamurai.Core.Services.DistributedWorkerCoordinator coordinator,
+    IConfiguration cfg, HttpContext ctx) =>
+{
+    if (!WorkerAuthOk(ctx, cfg)) return Results.Unauthorized();
+    var submitResult = await coordinator.SubmitAsync(result);
+    return Results.Ok(submitResult);
 });
 
 Log.Information("StreetSamurai Blazor host started");

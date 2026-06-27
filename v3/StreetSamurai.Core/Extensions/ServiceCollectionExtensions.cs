@@ -749,6 +749,7 @@ public static class ServiceCollectionExtensions
         services.AddSingleton<EntityRatingService>();
         services.AddSingleton<EntityReviewService>();
         services.AddSingleton<WeaponAmmoLinkerService>();
+        services.AddSingleton<DistributedWorkerCoordinator>();
 
         // Prose-continuity and world-modelling services (2026-06-16)
         services.AddSingleton<EntityRelationshipService>();
