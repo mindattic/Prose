@@ -58,8 +58,22 @@ Sacred ground. Never ironic. Never deflated.
 - Ch7: Her funeral planned — "Counter place on Halsted, Thursday." (Null's wake is here.)
 - Ch13: The reveal site — Kyle and Vey at Antiquity & Stationary; the entity's confession.
 
+**The Noodle Vendor** (`019f04f1…`) — a GFA-7 Culinary Service Automaton in operation since 2187,
+occupying the corner directly across from Mrs. Chen's stall. It does not know it has a rival.
+It does not know it is funny. It just keeps serving noodles with cheerful mechanical precision.
+
+**Noodle Vendor beat directive:** several beats across the book must use the Noodle Vendor for
+comedy. Its presence is an ongoing reminder that the Gray Zone contains machines that outlast
+everyone's opinions of them. Beat angles:
+- Mrs. Chen's running monologue about its inadequacy (one-sided, the Vendor never responds)
+- Kyle's carefully neutral position on whose broth is superior
+- The Vendor still serving customers through an active crisis while humans scramble
+- A moment where the Vendor's perfect consistency is more comforting than it has any right to be
+
 **Rule:** Mrs. Chen's beats use the SORROW-grade temperature regardless of surrounding
-chapter tone. The lemon tree. The camphor. These are the book's sacred moments.
+chapter tone. The lemon tree. The camphor. These are the book's sacred moments. The Noodle
+Vendor beats are JOY-register comedy relief — they live inside the sacred section but they
+breathe differently.
 
 ## 3. The love story spine {#SS-BCODA-3}
 

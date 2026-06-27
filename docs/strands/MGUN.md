@@ -27,15 +27,15 @@ Color language: **Magenta** and **Gunmetal** are the unofficial colors of the GL
 
 ## §2 — Story
 
-**The job:** Extract Dr. Nadia Vasquez-Park from Axiom BioNanics Research Compound 7, Z5. Client: anonymous, routed through fixer Gault. Payment: Φ 40,000 split four ways.
+**The job:** Extract Dr. Halina Soraya from Axiom BioNanics Research Compound 7, Z5. Client: anonymous, routed through fixer Gault. Payment: Φ 40,000 split four ways.
 
-**The complication:** Vasquez-Park is waiting in the lobby when they arrive. She hired them first — Gault's anonymous client is a cutout she controls. The package is not her body; it is the encoding of a breakthrough Class II nano-therapeutic formula embedded in her neuretics. She hired extraction because she reached the same conclusion Axiom already had: the formula has Class V military applications she never intended, and Axiom is months away from filing those applications under a classified subsidiary. If Axiom buries the research, it becomes a weapon in five years.
+**The complication:** Soraya is waiting in the lobby when they arrive. She hired them first — Gault's anonymous client is a cutout she controls. The package is not her body; it is the encoding of a breakthrough Class II nano-therapeutic formula embedded in her neuretics. She hired extraction because she reached the same conclusion Axiom already had: the formula has Class V military applications she never intended, and Axiom is months away from filing those applications under a classified subsidiary. If Axiom buries the research, it becomes a weapon in five years.
 
 **The escalation:** PEREGRINE — Axiom BioNanics' four-person corp-black security unit — activates the moment extraction is confirmed. They are not rent-a-cops. They are as prepared for this as the crew is. Gault, under pressure from Axiom's legal arm, sells the safe house location — not knowing the full stakes, believing he is selling a routine tip for a routine extraction job.
 
 **The destination:** The Lake Platform — a civic-science station three miles out on Lake Michigan, operated under Meridian Charter outside CorpoNation territorial jurisdiction. By charter, data published from its broadcast node enters the public domain irrevocably under Meridian Open Data Protocol. Once it is out, no court or corp can pull it back. PEREGRINE locks it down before the crew can reach it. The crew hijacks a maintenance VTOL and approaches through a storm.
 
-**The finale (True Lies register):** Storm deck combat. Lace running a flawless impersonation of PEREGRINE's own commander to fracture their response from the inside. Boiler on a crane arm, firing through viewport glass, doing something to the deck that the Lake Platform maintenance team will be discussing for years. Vox in three network layers simultaneously while bleeding from a graze wound. Rook and the PEREGRINE commander on a broken safety rail, conducting a negotiation both of them know will end in one of them going into the lake. And Dr. Vasquez-Park — who has never fired a weapon in her life and has no intention of starting — publishing the data herself from a terminal she breaks into with her own credentials while everyone else handles the rest.
+**The finale (True Lies register):** Storm deck combat. Lace running a flawless impersonation of PEREGRINE's own commander to fracture their response from the inside. Boiler on a crane arm, firing through viewport glass, doing something to the deck that the Lake Platform maintenance team will be discussing for years. Vox in three network layers simultaneously while bleeding from a graze wound. Rook and the PEREGRINE commander on a broken safety rail, conducting a negotiation both of them know will end in one of them going into the lake. And Dr. Soraya — who has never fired a weapon in her life and has no intention of starting — publishing the data herself from a terminal she breaks into with her own credentials while everyone else handles the rest.
 
 **The coda:** Morning. A diner near the Spine. Rook counts the money. Lake out the window. Ohara is already gone — she had an exit route Rook never knew about, which is the kind of thing Rook respects. The crew disperses. Everyone got paid. Exact amount. The lake is very flat in the morning.
 
@@ -87,13 +87,13 @@ Color language: **Magenta** and **Gunmetal** are the unofficial colors of the GL
 - **Handle:** Scout
 - **Note:** She does not name her drones. The crew names them anyway. She has stopped arguing about this.
 
-### Dr. Nadia Vasquez-Park ("Ohara")
-- **Heritage:** Colombian-Korean (GLMZ Diaspora)
+### Dr. Halina Soraya ("Ohara")
+- **Heritage:** Polish-Persian (GLMZ Diaspora)
 - **Role:** Axiom BioNanics Class II research lead. Extraction target and actual client. "Ohara" is her handle for herself when she is operating outside the lab.
 - **Age:** 47
 - **Background:** Joined Axiom 2209. Developed the Class II nano-therapeutic formula — longevity/nerve-tissue regeneration — over four years. Recognized the Class V dual-use implication herself before Axiom did. Began building her exit six months ago.
 - **Voice:** Precise, clinical, occasionally startled by her own competence in non-laboratory situations. She prepared for this. She did not fully prepare for how it would feel to be in it.
-- **Entity name:** Nadia Vasquez-Park
+- **Entity name:** Halina Soraya
 - **Handle:** Ohara (working name only; not her legal identity)
 
 ### Gault
@@ -103,7 +103,7 @@ Color language: **Magenta** and **Gunmetal** are the unofficial colors of the GL
 
 ## §4 — The Target: Axiom BioNanics
 
-See SS-A17. Axiom BioNanics is one of the Nano Triumvirate — Class II medical nano, dominant prescription, founded 2155. The research at Compound 7 (Z5) was classified as Class II longevity/nerve-tissue regeneration. The Class V application — neural-tissue targeting, military-grade neurological interference at scale — was never filed. Dr. Vasquez-Park developed it and recognized the dual-use problem immediately.
+See SS-A17. Axiom BioNanics is one of the Nano Triumvirate — Class II medical nano, dominant prescription, founded 2155. The research at Compound 7 (Z5) was classified as Class II longevity/nerve-tissue regeneration. The Class V application — neural-tissue targeting, military-grade neurological interference at scale — was never filed. Dr. Soraya developed it and recognized the dual-use problem immediately.
 
 Axiom's corporate aesthetic: **magenta**. Polished, warm, medical-reassuring. Their branding is everywhere in Compound 7 — bioluminescent wall panels, the soft magenta pulse of their logo, the color-coordinated uniforms. It is the most expensive-looking building the crew has ever been paid to enter.
 

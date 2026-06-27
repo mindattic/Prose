@@ -64,7 +64,7 @@ public class CharacterRelationalMigration
             // Names
             ("Name",        "NVARCHAR(450) NOT NULL", "''"),
             ("FirstName",   "NVARCHAR(200) NOT NULL", "''"),
-            ("MiddleName",  "NVARCHAR(200) NOT NULL", "''"),
+            ("MiddleName",  "NVARCHAR(200) NULL",     "NULL"),
             ("LastName",    "NVARCHAR(200) NOT NULL", "''"),
             ("TitlePrefix", "NVARCHAR(40)  NOT NULL", "''"),
             // Identity / classification additions

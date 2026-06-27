@@ -43,6 +43,7 @@ public class ManuscriptExportService
     /// </summary>
     public async Task<string> ExportMarkdownAsync(Guid strandId, string? author = null, CancellationToken ct = default)
     {
+        author = string.IsNullOrWhiteSpace(author) ? "MindAttic" : author.Trim();
         await using var db = await dbFactory.CreateDbContextAsync(ct);
         var strand = await db.Strands.AsNoTracking().FirstOrDefaultAsync(s => s.Id == strandId, ct)
             ?? throw new InvalidOperationException($"Strand {strandId} not found.");
@@ -98,6 +99,7 @@ public class ManuscriptExportService
     /// <summary>Export the strand as a KDP-ready PDF to Downloads; returns the path.</summary>
     public async Task<string> ExportPdfAsync(Guid strandId, string? author = null, CancellationToken ct = default)
     {
+        author = string.IsNullOrWhiteSpace(author) ? "MindAttic" : author.Trim();
         var (manuscript, path) = await LoadAsync(strandId, "pdf", ct);
 
         // 6" × 9" KDP paperback trim (points: 1" = 72pt).
@@ -162,8 +164,9 @@ public class ManuscriptExportService
     /// <summary>Export the strand as a KDP-ready EPUB 3 to Downloads; returns the path.</summary>
     public async Task<string> ExportEpubAsync(Guid strandId, string? author = null, CancellationToken ct = default)
     {
+        author = string.IsNullOrWhiteSpace(author) ? "MindAttic" : author.Trim();
         var (manuscript, path) = await LoadAsync(strandId, "epub", ct);
-        var authorName = string.IsNullOrWhiteSpace(author) ? "Unknown" : author.Trim();
+        var authorName = author;
         var bookUuid = $"urn:uuid:{Guid.NewGuid()}";
 
         using var fs = File.Create(path);
@@ -197,6 +200,7 @@ public class ManuscriptExportService
     /// </summary>
     public async Task<string> ExportAudioTxtAsync(Guid strandId, string? author = null, CancellationToken ct = default)
     {
+        author = string.IsNullOrWhiteSpace(author) ? "MindAttic" : author.Trim();
         var (manuscript, path) = await LoadAsync(strandId, "txt", ct);
 
         var sb = new StringBuilder();

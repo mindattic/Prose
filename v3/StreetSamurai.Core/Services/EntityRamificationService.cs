@@ -126,13 +126,13 @@ public class EntityRamificationService(
         await using var db = await dbFactory.CreateDbContextAsync(ct);
 
         return await db.StrandBeats
-            .Where(sb => sb.Beat.EntityStale && sb.IsEnabled)
+            .Where(sb => sb.Beat!.EntityStale && sb.IsEnabled)
             .Select(sb => new EntityStaleBeatDto
             {
                 BeatId      = sb.BeatId,
-                BeatNumber  = sb.Beat.Number,
+                BeatNumber  = sb.Beat!.Number,
                 StrandId    = sb.StrandId,
-                StrandTitle = sb.Strand.Title,
+                StrandTitle = sb.Strand!.Title,
                 SortKey     = sb.SortKey,
                 TextPreview = string.IsNullOrEmpty(sb.Beat.Text) ? "" : sb.Beat.Text.Length > 120 ? sb.Beat.Text.Substring(0, 120) + "…" : sb.Beat.Text,
                 Entities    = db.BeatEntityMentions
@@ -175,7 +175,7 @@ public class EntityRamificationService(
                                   && sb.SortKey > pos.SortKey
                                   && sb.IsEnabled)
                         .OrderBy(sb => sb.SortKey)
-                        .Select(sb => new { sb.BeatId, sb.Beat.Text })
+                        .Select(sb => new { sb.BeatId, sb.Beat!.Text })
                         .ToListAsync();
 
                     foreach (var d in downstream)

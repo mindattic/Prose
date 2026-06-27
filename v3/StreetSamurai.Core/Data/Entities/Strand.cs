@@ -37,6 +37,11 @@ public class Strand
     /// listings and feeds LLM context.</summary>
     public string? Synopsis { get; set; }
 
+    /// <summary>Back-of-book blurb for public-facing use (KDP, store listings).
+    /// ~100–150 words. The final KDP submission is formatted as the series
+    /// tagline in bold + newline + this Summary.</summary>
+    public string? Summary { get; set; }
+
     /// <summary>Free-form category label. Suggested values: "book", "chapter",
     /// "episode", "scene", "saga", "anthology", "vignette". UI groups by
     /// this. Storage doesn't constrain it.</summary>

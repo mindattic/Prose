@@ -109,21 +109,21 @@ public class CoverImageGeneratorService
         Guard(apiKey, "Gemini", "SS_GEMINI_API_KEY");
 
         var p     = Params(prompt.Parameters);
-        var model = p.Get("model", "imagen-3.0-generate-001");
+        var model = p.Get("model", "imagen-3.0-generate-002");
         var ar    = p.Get("ar",    "2:3");
 
         var body = new JsonObject
         {
-            ["instances"]  = new JsonArray(new JsonObject { ["prompt"] = prompt.PromptText }),
-            ["parameters"] = new JsonObject
+            ["prompt"] = new JsonObject { ["text"] = prompt.PromptText },
+            ["generationConfig"] = new JsonObject
             {
-                ["sampleCount"]       = 1,
-                ["aspectRatio"]       = ar,
-                ["personGeneration"]  = "allow_all",
+                ["numberOfImages"]   = 1,
+                ["aspectRatio"]      = ar,
+                ["personGeneration"] = "ALLOW_ALL",
             },
         };
 
-        var url = $"https://generativelanguage.googleapis.com/v1beta/models/{model}:predict?key={apiKey}";
+        var url = $"https://generativelanguage.googleapis.com/v1beta/models/{model}:generateImages?key={apiKey}";
         using var req = new HttpRequestMessage(HttpMethod.Post, url)
         {
             Content = JsonContent.Create(body),
@@ -134,9 +134,9 @@ public class CoverImageGeneratorService
         var raw = await resp.Content.ReadAsStringAsync(ct);
         EnsureSuccess("Gemini", resp.StatusCode, raw);
 
-        var pred = JsonNode.Parse(raw)!["predictions"]![0]!;
-        var b64  = pred["bytesBase64Encoded"]!.GetValue<string>();
-        var mime = pred["mimeType"]?.GetValue<string>() ?? "image/png";
+        var genImg = JsonNode.Parse(raw)!["generatedImages"]![0]!;
+        var b64    = genImg["image"]!["imageBytes"]!.GetValue<string>();
+        var mime   = genImg["mimeType"]?.GetValue<string>() ?? "image/png";
         return (Convert.FromBase64String(b64), mime);
     }
 
@@ -149,7 +149,7 @@ public class CoverImageGeneratorService
         Guard(apiKey, "Ideogram", "SS_IDEOGRAM_API_KEY");
 
         var p     = Params(prompt.Parameters);
-        var ar    = p.Get("ar",    "ASPECT_2_3");
+        var ar    = p.Get("ar",    "2x3");
         var speed = p.Get("speed", "BALANCED");
         var style = p.Get("style", "REALISTIC");
 

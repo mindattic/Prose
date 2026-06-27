@@ -174,6 +174,153 @@ public class ArcTrackerServiceTests
         Assert.That(result, Is.Not.Null);
         Assert.That(result.GoalScore, Is.GreaterThanOrEqualTo(0));
     }
+
+    [Test]
+    public void BuildArcGuidance_SingleCleanValidation_ReturnsEmpty()
+    {
+        var outline = new StoryOutline { Acts = [new StoryAct { Beats = [new OutlineBeat()] }] };
+        var validation = new ArcValidation { DriftWarning = "", GoalScore = 7, ArcProgress = "" };
+        var result = svc.BuildArcGuidance(outline, 1, [validation]);
+        Assert.That(result, Is.EqualTo(""));
+    }
+
+    [Test]
+    public void BuildArcGuidance_MoreThan3DriftWarnings_OnlyLast3Shown()
+    {
+        var outline = new StoryOutline { Acts = [new StoryAct { Beats = [new OutlineBeat()] }] };
+        var validations = new List<ArcValidation>
+        {
+            new() { DriftWarning = "Drift A", GoalScore = 7 },
+            new() { DriftWarning = "Drift B", GoalScore = 7 },
+            new() { DriftWarning = "Drift C", GoalScore = 7 },
+            new() { DriftWarning = "Drift D", GoalScore = 7 },
+        };
+        var result = svc.BuildArcGuidance(outline, 4, validations);
+        Assert.That(result, Does.Not.Contain("Drift A"));
+        Assert.That(result, Does.Contain("Drift B"));
+        Assert.That(result, Does.Contain("Drift C"));
+        Assert.That(result, Does.Contain("Drift D"));
+    }
+
+    [Test]
+    public void BuildArcGuidance_SeedMissedInV1PlantedInV2_NotInStillMissing()
+    {
+        var outline = new StoryOutline { Acts = [new StoryAct { Beats = [new OutlineBeat()] }] };
+        var validations = new List<ArcValidation>
+        {
+            new() { SeedsMissed = ["the red key"], SeedsPlanted = [], GoalScore = 7 },
+            new() { SeedsMissed = [], SeedsPlanted = ["the red key"], GoalScore = 7 },
+        };
+        var result = svc.BuildArcGuidance(outline, 2, validations);
+        Assert.That(result, Does.Not.Contain("the red key"));
+    }
+
+    [Test]
+    public void BuildArcGuidance_SeedMissedTwiceNeverPlanted_AppearsOnce()
+    {
+        var outline = new StoryOutline { Acts = [new StoryAct { Beats = [new OutlineBeat()] }] };
+        var validations = new List<ArcValidation>
+        {
+            new() { SeedsMissed = ["the red key"], SeedsPlanted = [], GoalScore = 7, DriftWarning = "drift" },
+            new() { SeedsMissed = ["the red key"], SeedsPlanted = [], GoalScore = 7 },
+        };
+        var result = svc.BuildArcGuidance(outline, 2, validations);
+        int count = 0;
+        int idx = 0;
+        while ((idx = result.IndexOf("the red key", idx, StringComparison.Ordinal)) >= 0) { count++; idx += "the red key".Length; }
+        Assert.That(count, Is.EqualTo(1));
+    }
+
+    [Test]
+    public void BuildArcGuidance_AverageGoalScoreExactly6_NoScoreWarning()
+    {
+        var outline = new StoryOutline { Acts = [new StoryAct { Beats = [new OutlineBeat()] }] };
+        var validations = new List<ArcValidation>
+        {
+            new() { GoalScore = 6, DriftWarning = "drift" },
+            new() { GoalScore = 6 },
+        };
+        var result = svc.BuildArcGuidance(outline, 2, validations);
+        Assert.That(result, Does.Not.Contain("Average goal achievement"));
+    }
+
+    [Test]
+    public void BuildArcGuidance_AverageGoalScore5Point5_EmitsScoreWarning()
+    {
+        var outline = new StoryOutline { Acts = [new StoryAct { Beats = [new OutlineBeat()] }] };
+        var validations = new List<ArcValidation>
+        {
+            new() { GoalScore = 5, DriftWarning = "drift" },
+            new() { GoalScore = 6 },
+        };
+        var result = svc.BuildArcGuidance(outline, 2, validations);
+        Assert.That(result, Does.Contain("Average goal achievement"));
+    }
+
+    [Test]
+    public void BuildArcGuidance_WithContent_ContainsArcProgressHeader()
+    {
+        var outline = new StoryOutline { Acts = [new StoryAct { Beats = [new OutlineBeat()] }] };
+        var validations = new List<ArcValidation>
+        {
+            new() { DriftWarning = "drift detected", GoalScore = 7 },
+        };
+        var result = svc.BuildArcGuidance(outline, 1, validations);
+        Assert.That(result, Does.Contain("ARC PROGRESS"));
+    }
+
+    [Test]
+    public async Task ValidateBeatAsync_LlmThrows_ReturnsSafeDefaults()
+    {
+        var throwingLlm = new ThrowingLlm();
+        var throwingSvc = new ArcTrackerService(throwingLlm);
+        var beat = new OutlineBeat { Goal = "Survive", Tension = 5, EmotionalArc = "fear", Seeds = [], Payoffs = [], CharactersPresent = [] };
+        var outline = new StoryOutline { Acts = [new StoryAct { Beats = [beat] }], CharacterArcs = [] };
+        var result = await throwingSvc.ValidateBeatAsync("text", beat, outline, 0);
+        Assert.That(result.AchievedGoal, Is.True);
+        Assert.That(result.GoalScore, Is.EqualTo(5));
+    }
+
+    [Test]
+    public async Task ValidateBeatAsync_ValidJson_ParsedCorrectly()
+    {
+        var json = """{"achieved_goal":true,"goal_score":8,"seeds_planted":["the contract"],"seeds_missed":[],"payoffs_resolved":[],"payoffs_missed":[],"arc_progress":"Committed","tension_actual":6,"drift_warning":"","suggestions":[]}""";
+        var fixedLlm = new FixedResponseLlm(json);
+        var fixedSvc = new ArcTrackerService(fixedLlm);
+        var beat = new OutlineBeat { Goal = "Survive", Tension = 5, EmotionalArc = "fear", Seeds = [], Payoffs = [], CharactersPresent = [] };
+        var outline = new StoryOutline { Acts = [new StoryAct { Beats = [beat] }], CharacterArcs = [] };
+        var result = await fixedSvc.ValidateBeatAsync("Kyle took the job.", beat, outline, 0);
+        Assert.That(result.AchievedGoal, Is.True);
+        Assert.That(result.GoalScore, Is.EqualTo(8));
+        Assert.That(result.SeedsPlanted, Contains.Item("the contract"));
+        Assert.That(result.TensionActual, Is.EqualTo(6));
+    }
+
+    [Test]
+    public async Task ValidateBeatAsync_NonJson_ReturnsSafeResult()
+    {
+        var fixedLlm = new FixedResponseLlm("This is not JSON at all.");
+        var fixedSvc = new ArcTrackerService(fixedLlm);
+        var beat = new OutlineBeat { Goal = "Survive", Tension = 5, EmotionalArc = "fear", Seeds = [], Payoffs = [], CharactersPresent = [] };
+        var outline = new StoryOutline { Acts = [new StoryAct { Beats = [beat] }], CharacterArcs = [] };
+        var result = await fixedSvc.ValidateBeatAsync("Kyle moved.", beat, outline, 0);
+        Assert.That(result, Is.Not.Null);
+        Assert.That(result.GoalScore, Is.EqualTo(5));
+    }
+
+    class ThrowingLlm : ILlmService
+    {
+        public Task<bool> IsConfiguredAsync() => Task.FromResult(true);
+        public Task<string> GenerateAsync(string system, string user, double temperature = 0.8, int maxTokens = 4096, string? model = null, CancellationToken ct = default)
+            => throw new InvalidOperationException("LLM unavailable");
+    }
+
+    class FixedResponseLlm(string response) : ILlmService
+    {
+        public Task<bool> IsConfiguredAsync() => Task.FromResult(true);
+        public Task<string> GenerateAsync(string system, string user, double temperature = 0.8, int maxTokens = 4096, string? model = null, CancellationToken ct = default)
+            => Task.FromResult(response);
+    }
 }
 
 [TestFixture]

@@ -21,9 +21,9 @@ public class WoundLedgerService(
     IDbContextFactory<StreetSamuraiDbContext> dbFactory,
     ILogger<WoundLedgerService> log)
 {
-    private bool schemaEnsured;
+    protected bool schemaEnsured;
 
-    private async Task EnsureSchemaAsync(CancellationToken ct)
+    protected virtual async Task EnsureSchemaAsync(CancellationToken ct)
     {
         if (schemaEnsured) return;
         await using var db = await dbFactory.CreateDbContextAsync(ct);
@@ -50,7 +50,7 @@ public class WoundLedgerService(
         schemaEnsured = true;
     }
 
-    public async Task<long> AddAsync(
+    public virtual async Task<long> AddAsync(
         Guid characterId, string bodyLocation, string description, string severity,
         string? sourceStrandSlug = null, Guid? sourceBeatId = null, DateTime? inWorldDate = null,
         int expectedHealingDays = 14, string status = "fresh", string residualEffect = "",
@@ -71,7 +71,7 @@ public class WoundLedgerService(
     /// <summary>Active (non-scarred) wounds, optionally as-of an in-world date: a wound is
     /// active at date D when it has no date (assume current) or D is within its healing window.
     /// Status overrides date math when set to 'scarred' or 'healed'.</summary>
-    public async Task<List<WoundRow>> GetActiveAsync(Guid characterId, DateTime? atInWorldDate = null, CancellationToken ct = default)
+    public virtual async Task<List<WoundRow>> GetActiveAsync(Guid characterId, DateTime? atInWorldDate = null, CancellationToken ct = default)
     {
         await EnsureSchemaAsync(ct);
         await using var db = await dbFactory.CreateDbContextAsync(ct);

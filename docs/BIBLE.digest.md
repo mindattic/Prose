@@ -134,22 +134,21 @@ narrative-law block here when stood up:**
 - done: 119  partial: 8  planned: 23  cut: 1
 
 ## Latest amendment
-## SS-A24 — The wider world: Plainsmen, the Dreaming, Tequenica, Korea, Eurasia, the Middle East {#SS-A24}
+## SS-A24 — The wider world: Amish, the Dreaming, Tequenica, Korea, Eurasia, the Middle East {#SS-A24}
 
 **Date:** 2026-06-26 · **Author:** world-expansion-pass · **Ref:**
 `memory/` (see new entries); seals seven world-historical facts external to GLMZ;
-adds one Schism Intelligence (Tequenica); adds Plainsmen faction entity; no engine-law changes
+adds one Schism Intelligence (Tequenica); adds Amish faction entity; no engine-law changes
 
 This amendment **seals canonical facts about territories outside GLMZ** that provide
 geopolitical texture for the setting and — in UNDR — ground the Surfacing/Rumspringa parallel.
 
 ---
 
-### §A24-1 — The Plainsmen (the Amish): last organized Christian community
+### §A24-1 — The Amish: last organized Christian community
 
-The Plainsmen call themselves *the Old Church*. The world calls them *the Amish*, a label they
-stopped fighting generations ago. They are the only continuously functioning organized Christian
-community in 2225.
+They are the only continuously functioning organized Christian
+community in 2225. The world calls them the Amish; they call themselves the Amish.
 
 **The Rise and Fall of the False Prophet (2082–2091)** destroyed every other sect. The "False
 Prophet" — a charismatic unifier who consolidated disparate Christian denominations under a
@@ -163,13 +162,13 @@ The collapse was total. Aligned institutions lost their tax status, their proper
 credibility inside eighteen months. The denominations that survived the 2080s did not survive
 the 2090s.
 
-The Plainsmen survived because they had never joined. Historical insulation from outside
+The Amish survived because they had never joined. Historical insulation from outside
 authority — rejection of networked technology, community governance, deep skepticism of
 centralized power — meant the movement had nothing to grip. When the collapse came they were
 standing exactly where they had always been.
 
 **In 2225:**
-- **Self-name:** the Old Church · **Common name:** the Plainsmen, the Amish
+- **Name:** the Amish
 - **Location:** scattered communities in former Indiana, Ohio, and Pennsylvania (habitable
   Midwest territories, outside GLMZ jurisdiction)
 - **Population:** ~40,000 globally
@@ -180,12 +179,11 @@ standing exactly where they had always been.
   mourned differently. The practice ensures membership is chosen, not inherited.
 
 **Canonical parallel to the Underclan Surfacing (UNDR):** LOCKED. The comparison is permitted
-and encouraged in surface-observer prose (Noor, journalists, anthropologists). The Plainsmen
+and encouraged in surface-observer prose (Noor, journalists, anthropologists). The Amish
 are not the same as the Underclan — the surface world sees the parallel; the Underclan do not
-know the Plainsmen exist. The echo is structural, not causal.
+know the Amish exist. The echo is structural, not causal.
 
-**Faction entity:** seed in DB as `faction`, name `The Plainsmen`, also-known-as `The Amish /
-The Old Church`. Universe GLMZ.
+**Faction entity:** seeded in DB as `faction`, name `The Amish`. Universe GLMZ.
 
 ---
 

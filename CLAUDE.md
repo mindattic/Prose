@@ -67,6 +67,7 @@ Strand files are **loaded on demand**, not injected at session start. Load only 
 - `docs/strands/MNEMO.md` — Mnemosync / Amara & Seto (GLMZ, in progress; formerly ULC, redesigned SS-A14)
 - `docs/strands/TEST.md` — Testament / Bear court-martial (GLMZ)
 - `docs/strands/GIW.md` — Grafted Into War / M-101/Soren (Fantasy)
+- `docs/strands/MGUN.md` — Magenta & Gunmetal / GLMZ run (GLMZ, planned; Shadowrun-style heist → True Lies finale)
 - `docs/books/bushido-coda-strands-bible.md` — BCODA (legacy long-form; superseded by BCODA.md above)
 
 ## Codex (how to work with the canon)

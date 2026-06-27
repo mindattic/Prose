@@ -751,7 +751,7 @@ public static class CharacterMapper
         var parts = ParseName(name);
         ch.TitlePrefix = parts.Title;
         ch.FirstName   = parts.First;
-        ch.MiddleName  = parts.Middle;
+        ch.MiddleName  = string.IsNullOrWhiteSpace(parts.Middle) ? null : parts.Middle;
         ch.LastName    = parts.Last;
 
         ch.Species           = string.IsNullOrEmpty(src.Species) ? "human" : src.Species;

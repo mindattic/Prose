@@ -41,6 +41,7 @@ public static class PublishManuscriptCli
 
         var dbFactory = services.GetRequiredService<IDbContextFactory<StreetSamuraiDbContext>>();
         var export = services.GetRequiredService<ManuscriptExportService>();
+        var cleanup = services.GetRequiredService<PublishCleanupService>();
 
         Guid strandId; string strandTitle;
         await using (var db = await dbFactory.CreateDbContextAsync())
@@ -58,6 +59,7 @@ public static class PublishManuscriptCli
         Console.WriteLine($"[{tag}] Rendering \"{strandTitle}\" to {ext}…");
         try
         {
+            await cleanup.CleanAsync(strandId);
             var path = format switch
             {
                 Format.Markdown => await export.ExportMarkdownAsync(strandId, author),

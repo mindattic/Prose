@@ -83,10 +83,16 @@
                                            @bind="editTitle" @bind:event="oninput" />
                                 </div>
                                 <div class="mb-2">
-                                    <label class="form-label small text-muted mb-1">Description</label>
+                                    <label class="form-label small text-muted mb-1">Synopsis <span class="text-muted" style="font-size:0.75em">(internal generation seed)</span></label>
                                     <textarea class="form-control form-control-sm bg-black text-light border-secondary"
-                                              rows="4" placeholder="What is this story about?"
+                                              rows="3" placeholder="One-line generation seed / logline"
                                               @bind="editSynopsis" @bind:event="oninput"></textarea>
+                                </div>
+                                <div class="mb-2">
+                                    <label class="form-label small text-muted mb-1">Summary <span class="text-muted" style="font-size:0.75em">(back-of-book / KDP)</span></label>
+                                    <textarea class="form-control form-control-sm bg-black text-light border-secondary"
+                                              rows="5" placeholder="~100–150 word jacket blurb for KDP / store listings"
+                                              @bind="editSummary" @bind:event="oninput"></textarea>
                                 </div>
                                 <div class="d-flex gap-2">
                                     <button class="btn btn-sm btn-success" @onclick="SaveEditAsync"
@@ -413,10 +419,11 @@
     private string newTitle = "";
     private string newKind = "story";
 
-    // ── Inline title/description editing ─────────────────────────────────
+    // ── Inline title/synopsis/summary editing ────────────────────────────
     private Guid? editingId;
     private string editTitle = "";
     private string editSynopsis = "";
+    private string editSummary = "";
     private bool savingEdit;
 
     private void BeginEdit(StrandEntity s)
@@ -424,12 +431,13 @@
         editingId = s.Id;
         editTitle = s.Title;
         editSynopsis = s.Synopsis ?? "";
+        editSummary = s.Summary ?? "";
     }
 
     private void CancelEdit()
     {
         editingId = null;
-        editTitle = editSynopsis = "";
+        editTitle = editSynopsis = editSummary = "";
     }
 
     private async Task SaveEditAsync()
@@ -444,12 +452,13 @@
             if (entity == null) { Toast.Error("STRAND-EDIT", "Strand not found."); return; }
             entity.Title = editTitle.Trim();
             entity.Synopsis = string.IsNullOrWhiteSpace(editSynopsis) ? null : editSynopsis.Trim();
+            entity.Summary = string.IsNullOrWhiteSpace(editSummary) ? null : editSummary.Trim();
             entity.UpdatedAt = DateTime.UtcNow;
             await db.SaveChangesAsync();
 
             // Reflect the change in the already-loaded list without a full reload.
             var local = strands.FirstOrDefault(x => x.Id == id);
-            if (local != null) { local.Title = entity.Title; local.Synopsis = entity.Synopsis; }
+            if (local != null) { local.Title = entity.Title; local.Synopsis = entity.Synopsis; local.Summary = entity.Summary; }
             grouped = strands.GroupBy(s => s.Kind).OrderBy(g => g.Key);
             CancelEdit();
             Toast.Info("SAVED", "Strand updated.");

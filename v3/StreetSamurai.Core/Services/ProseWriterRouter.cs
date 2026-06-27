@@ -1,3 +1,7 @@
+using Microsoft.EntityFrameworkCore;
+using StreetSamurai.Core.Data;
+using System.Text;
+
 namespace StreetSamurai.Core.Services;
 
 /// <summary>
@@ -8,7 +12,12 @@ namespace StreetSamurai.Core.Services;
 ///   - Beat mode detection (Combat / EmotionalClimax / Dialogue / Transition / Revelation / Narrative)
 ///   - PacingService injection (positional arc + beat-goal keyword override)
 ///   - StoryMethodologyService injection (structural role: Opening Image, Catalyst, Midpoint, etc.)
-///   - Combat prose rules injection when mode = Combat
+///   - Combat prose rules injection when mode = Combat (extended version with Dissociated Observer examples)
+///   - SceneContextBuilder injection for ambient sensory grounding (when Location is set on BeatContext)
+///   - DialogueService auto-fire on Dialogue/EmotionalClimax beats (when CharactersInScene is set)
+///   - EmotionalDepthService feedback loop: prior examination findings injected as generation constraints
+///   - TensionEscalationService: warns when consecutive non-escalating beats detected
+///   - ReaderKnowledgeService: injects current reader knowledge state for dramatic irony management
 ///   - BeatServiceLog coverage tracking (WorkflowMonitorService)
 ///   - BeatModeLog persistence (BeatModeDetector)
 ///
@@ -23,25 +32,58 @@ public class ProseWriterRouter(
     EntityContextService? entityContext = null,
     DocContextService? docContext = null,
     SettingsService? settings = null,
-    ContextTelemetryService? telemetry = null)
+    ContextTelemetryService? telemetry = null,
+    SceneContextBuilder? sceneBuilder = null,
+    DialogueService? dialogue = null,
+    IDbContextFactory<StreetSamuraiDbContext>? dbFactory = null,
+    TensionEscalationService? tensionService = null,
+    ReaderKnowledgeService? readerKnowledge = null,
+    ConsequenceService? consequence = null,
+    AmbientAnomalyService? ambientAnomaly = null,
+    NarrativeSummaryService? narrativeSummary = null,
+    WorldStateAtBeatService? worldStateAtBeat = null,
+    ConsequenceEngine? consequenceEngine = null)
 {
+    // Extended combat rules — shared with CombatSceneWriter's common block + Dissociated Observer examples.
     static readonly string CombatProseGuidance = """
         BEAT MODE: COMBAT — action prose rules are in force.
         • Verbs lead. Nouns follow. Adjectives are rare.
         • Sentences are SHORT. Fragment when needed. No compound clauses stacked.
         • No naming of emotions directly. A clenched jaw, a white knuckle, a missed breath.
         • Physical specificity: which hand, which angle, which surface. Geometry is the voice.
-        • Weapons behave like the canon record says. Damage persists — a cut arm does not forget.
+        • Weapons behave like the canon record says. A subsonic round does not crack. A railgun does not click.
         • Cyberware has latency, noise, and cost. It is never a free win.
+        • Damage persists. A cut arm does not forget itself one paragraph later.
         • Bystanders exist. Crowds move, scream, flee, get in the way.
         • No omniscient summary. Stay tight to the bodies in the room.
-        • Dissociated observer (Kyle only): max 2 per beat — a single italicized second-person line
-          (*you chose this; remember that*) in the white space between exchanges, then prose continues.
+
+        DISSOCIATED OBSERVER — use sparingly, maximum two per beat:
+        Kyle is fast enough that the fight has gaps. His body runs ahead of his mind.
+        In those gaps — the moment after a trigger pull, the half-second of an arm dropping —
+        the observing part of his psyche catches up and says something. Not to anyone. To itself.
+        This does not slow the fight. It happens in the white space between beats.
+        Render it as a single italicized line or fragment — second person ("you"), the observing
+        part of the psyche watching the acting part with cold clarity. It interrupts the prose,
+        then the prose continues without acknowledging it.
+
+        Rules for these lines:
+        • Italicized. One to three sentences. Never longer.
+        • Second person: "you" — the mind witnessing what the body is doing.
+        • The observation arrives slightly after the fact — the mind catching up to the body.
+        • It notices the wrong thing: a simile, a moral ledger entry, a detail no one should care about.
+        • It does not explain. It does not judge. It records. The judgment is in the recording.
+        • The action continues immediately after as if the interruption did not happen.
+
+        Examples of the register:
+        *They laughed. You remember that. They laughed first.*
+        *Kneecap. Specific. You aimed for the kneecap. Remember that. You chose.*
+        *There is a word for what happened next. The word is beautiful. You hate that you know it.*
         """;
 
     /// <summary>
     /// Write a beat using the full enriched pipeline: mode detection → pacing → structural role →
-    /// combat rules (if applicable) → BeatGeneratorService → coverage logging.
+    /// combat rules → ambient grounding → dialogue voices → emotional feedback → tension escalation →
+    /// reader knowledge state → BeatGeneratorService → coverage logging.
     /// </summary>
     /// <param name="context">Beat context assembled by SceneContextAssembler. StrandId must be set.</param>
     /// <param name="beatId">The beat's DB Guid. Use Guid.Empty for pre-save preview writes.</param>
@@ -69,8 +111,6 @@ public class ProseWriterRouter(
         }
 
         // Doc context stack: load the rotating cast of pertinent canon .md docs (non-fatal).
-        // Gated behind SettingsService.DocContextEnabled (default OFF) so the engine is inert
-        // until explicitly enabled — generation is byte-for-byte identical to before until then.
         DocContextService.DocContextResult? docResult = null;
         var docStackContext = "";
         if (docContext != null && settings?.DocContextEnabled == true && context.StrandId != Guid.Empty)
@@ -86,6 +126,100 @@ public class ProseWriterRouter(
             catch { /* non-blocking — doc context is best-effort */ }
         }
 
+        // ── New enrichments (SS-A28) ─────────────────────────────────────────
+
+        // Ambient sensory grounding: SceneContextBuilder from the Location hint on BeatContext.
+        var locationContext = context.LocationContext;
+        if (sceneBuilder != null && string.IsNullOrEmpty(locationContext) && !string.IsNullOrEmpty(context.Location))
+        {
+            try { locationContext = sceneBuilder.BuildAmbientContext(context.Location, context.TimeOfDay, context.Weather); }
+            catch { /* non-blocking */ }
+        }
+
+        // Dialogue voice profiles: auto-fire on Dialogue/EmotionalClimax beats when characters are listed.
+        var dialogueContext = context.DialogueContext;
+        if (dialogue != null
+            && string.IsNullOrEmpty(dialogueContext)
+            && context.CharactersInScene.Count > 0
+            && (mode == BeatMode.Dialogue || mode == BeatMode.EmotionalClimax))
+        {
+            try { dialogueContext = dialogue.BuildDialogueContext(context.CharactersInScene.ToList()); }
+            catch { /* non-blocking */ }
+        }
+
+        // Emotional depth feedback: pull prior examination findings for this strand.
+        var emotionalGuidanceContext = context.EmotionalGuidanceContext;
+        if (string.IsNullOrEmpty(emotionalGuidanceContext) && dbFactory != null && context.StrandId != Guid.Empty)
+        {
+            try { emotionalGuidanceContext = await BuildEmotionalGuidanceAsync(context.StrandId, ct); }
+            catch { /* non-blocking */ }
+        }
+
+        // Tension escalation: warn when recent beats have stagnated at low intensity.
+        var tensionGuidanceContext = context.TensionGuidanceContext;
+        if (string.IsNullOrEmpty(tensionGuidanceContext) && tensionService != null && context.StrandId != Guid.Empty)
+            tensionGuidanceContext = tensionService.BuildGuidanceBlock(context.StrandId, mode);
+
+        // Reader knowledge state: what the reader knows so far in this strand.
+        var readerKnowledgeContext = context.ReaderKnowledgeContext;
+        if (string.IsNullOrEmpty(readerKnowledgeContext) && readerKnowledge != null && context.StrandId != Guid.Empty)
+        {
+            try { readerKnowledgeContext = await readerKnowledge.BuildKnowledgeBlockAsync(context.StrandId, ct); }
+            catch { /* non-blocking */ }
+        }
+
+        // Character state constraints: gear, cyberware, status — zero LLM cost, pure DB query.
+        var consequenceContext = context.ConsequenceContext;
+        if (string.IsNullOrEmpty(consequenceContext) && consequence != null && context.CharactersInScene.Count > 0)
+        {
+            try { consequenceContext = consequence.BuildConstraints(context.CharactersInScene.ToList()); }
+            catch { /* non-blocking */ }
+        }
+
+        // Cross-story persistent consequences for named characters (contract outcomes, faction burns).
+        if (consequenceEngine != null && context.CharactersInScene.Count > 0)
+        {
+            try
+            {
+                var engineBlock = consequenceEngine.BuildConsequenceContext(context.CharactersInScene[0]);
+                if (!string.IsNullOrEmpty(engineBlock))
+                    consequenceContext = string.IsNullOrEmpty(consequenceContext)
+                        ? engineBlock
+                        : consequenceContext + "\n\n" + engineBlock;
+            }
+            catch { /* non-blocking */ }
+        }
+
+        // Ambient anomaly: New Weird background detail tagged to scene location (60% chance gate).
+        var ambientAnomalyContext = context.AmbientAnomalyContext;
+        if (string.IsNullOrEmpty(ambientAnomalyContext) && ambientAnomaly != null && !string.IsNullOrEmpty(context.Location))
+        {
+            try { ambientAnomalyContext = ambientAnomaly.FormatHints(context.Location); }
+            catch { /* non-blocking */ }
+        }
+
+        // World state at beat: live entity state snapshot from EntityStateEvents (temporal, drifted from canon).
+        var worldStateContext = context.WorldStateContext;
+        if (string.IsNullOrEmpty(worldStateContext) && worldStateAtBeat != null && beatId != Guid.Empty)
+        {
+            try
+            {
+                var snapshot = await worldStateAtBeat.SnapshotAsync(beatId, ct: ct);
+                worldStateContext = snapshot.FormatAsContextBlock();
+            }
+            catch { /* non-blocking */ }
+        }
+
+        // Narrative summary: rolling compressed memory of prior beats — long-strand coherence.
+        var narrativeSummaryContext = context.NarrativeSummaryContext;
+        if (string.IsNullOrEmpty(narrativeSummaryContext) && narrativeSummary != null && context.StrandId != Guid.Empty)
+        {
+            try { narrativeSummaryContext = narrativeSummary.GetSummaryChain(); }
+            catch { /* non-blocking */ }
+        }
+
+        // ── Assemble enriched context ─────────────────────────────────────────
+
         var enriched = context with
         {
             BeatIndex              = beatIndex,
@@ -95,6 +229,15 @@ public class ProseWriterRouter(
             DetectedMode           = mode,
             EntityStackContext     = entityStackContext,
             DocStackContext        = docStackContext,
+            LocationContext        = locationContext,
+            DialogueContext        = dialogueContext,
+            EmotionalGuidanceContext = emotionalGuidanceContext,
+            TensionGuidanceContext = tensionGuidanceContext,
+            ReaderKnowledgeContext = readerKnowledgeContext,
+            ConsequenceContext     = consequenceContext,
+            AmbientAnomalyContext  = ambientAnomalyContext,
+            WorldStateContext      = worldStateContext,
+            NarrativeSummaryContext = narrativeSummaryContext,
         };
 
         var startedAt = DateTime.UtcNow;
@@ -111,7 +254,7 @@ public class ProseWriterRouter(
                     .Select(d => new ContextTelemetryService.DocLoad(d.RelativePath, d.Tier, d.Reason, d.Score, d.Chars)).ToList();
                 var entList = entityContext?.GetActiveEntities(context.StrandId) ?? new List<EntityContextStack.StackEntry>();
                 var ents = entList
-                    .Take(EntityContextService.MaxInjectedEntities)   // record only what was actually injected
+                    .Take(EntityContextService.MaxInjectedEntities)
                     .Select(e => new ContextTelemetryService.EntityLoad(e.Name, e.EntityType, "stack", e.Score, e.Depth)).ToList();
                 var title = context.BeatGoal ?? "";
                 if (title.Length > 80) title = title[..80];
@@ -121,47 +264,57 @@ public class ProseWriterRouter(
             catch { /* telemetry is best-effort — never affect prose */ }
         }
 
-        // Log coverage fire-and-forget — never blocks prose output.
+        // Fire-and-forget: coverage logging + reconciliation + tension recording + reader knowledge extraction.
         var pacingApplicable  = totalBeats > 0;
         var structApplicable  = totalBeats > 0;
         var combatApplicable  = mode == BeatMode.Combat;
         var strandApplicable  = context.StrandId != Guid.Empty;
+        var capturedResult    = result;
+        var capturedStrandId  = context.StrandId;
 
         _ = Task.Run(async () =>
         {
             await monitor.LogBeatActivityAsync(beatId, context.StrandId, universeId,
             [
-                new("Pacing",          IsApplicable: pacingApplicable,  IsActive: pacingApplicable && enriched.PacingGuidance.Length > 0,          BlockSizeChars: enriched.PacingGuidance.Length),
-                new("StoryMethodology",IsApplicable: structApplicable,  IsActive: structApplicable && enriched.StructuralRoleGuidance.Length > 0,  BlockSizeChars: enriched.StructuralRoleGuidance.Length),
-                new("PlantPayoff",     IsApplicable: strandApplicable,  IsActive: strandApplicable,  BlockSizeChars: 0),
-                new("StoryAudit",      IsApplicable: strandApplicable,  IsActive: strandApplicable,  BlockSizeChars: 0),
-                new("Combat",          IsApplicable: combatApplicable,  IsActive: combatApplicable,  BlockSizeChars: combatApplicable ? CombatProseGuidance.Length : 0),
-                new("EntityContext",   IsApplicable: strandApplicable,  IsActive: entityStackContext.Length > 0,  BlockSizeChars: entityStackContext.Length),
-                new("DocContext",      IsApplicable: strandApplicable,  IsActive: docStackContext.Length > 0,     BlockSizeChars: docStackContext.Length),
+                new("Pacing",              IsApplicable: pacingApplicable,  IsActive: pacingApplicable && enriched.PacingGuidance.Length > 0,                 BlockSizeChars: enriched.PacingGuidance.Length),
+                new("StoryMethodology",    IsApplicable: structApplicable,  IsActive: structApplicable && enriched.StructuralRoleGuidance.Length > 0,         BlockSizeChars: enriched.StructuralRoleGuidance.Length),
+                new("PlantPayoff",         IsApplicable: strandApplicable,  IsActive: strandApplicable,                                                       BlockSizeChars: 0),
+                new("StoryAudit",          IsApplicable: strandApplicable,  IsActive: strandApplicable,                                                       BlockSizeChars: 0),
+                new("Combat",              IsApplicable: combatApplicable,  IsActive: combatApplicable,                                                       BlockSizeChars: combatApplicable ? CombatProseGuidance.Length : 0),
+                new("EntityContext",       IsApplicable: strandApplicable,  IsActive: entityStackContext.Length > 0,                                          BlockSizeChars: entityStackContext.Length),
+                new("DocContext",          IsApplicable: strandApplicable,  IsActive: docStackContext.Length > 0,                                             BlockSizeChars: docStackContext.Length),
+                new("SceneContext",        IsApplicable: strandApplicable,  IsActive: locationContext.Length > 0,                                             BlockSizeChars: locationContext.Length),
+                new("DialogueService",     IsApplicable: strandApplicable,  IsActive: dialogueContext.Length > 0,                                             BlockSizeChars: dialogueContext.Length),
+                new("EmotionalGuidance",   IsApplicable: strandApplicable,  IsActive: emotionalGuidanceContext.Length > 0,                                    BlockSizeChars: emotionalGuidanceContext.Length),
+                new("TensionEscalation",   IsApplicable: strandApplicable,          IsActive: tensionGuidanceContext.Length > 0,                                        BlockSizeChars: tensionGuidanceContext.Length),
+                new("ReaderKnowledge",     IsApplicable: strandApplicable,          IsActive: readerKnowledgeContext.Length > 0,                                        BlockSizeChars: readerKnowledgeContext.Length),
+                new("Consequence",         IsApplicable: strandApplicable,          IsActive: consequenceContext.Length > 0,                                            BlockSizeChars: consequenceContext.Length),
+                new("AmbientAnomaly",      IsApplicable: !string.IsNullOrEmpty(context.Location), IsActive: ambientAnomalyContext.Length > 0,                          BlockSizeChars: ambientAnomalyContext.Length),
+                new("WorldState",          IsApplicable: beatId != Guid.Empty,      IsActive: worldStateContext.Length > 0,                                             BlockSizeChars: worldStateContext.Length),
+                new("NarrativeSummary",    IsApplicable: strandApplicable,          IsActive: narrativeSummaryContext.Length > 0,                                       BlockSizeChars: narrativeSummaryContext.Length),
             ], CancellationToken.None);
 
             await modeDetector.PersistAsync(beatId, universeId, mode, confidence, method, CancellationToken.None);
 
-            if (entityContext != null && context.StrandId != Guid.Empty && result.Length > 0)
-                await entityContext.ReconcileAsync(result, context.StrandId, beatId, universeId, CancellationToken.None);
+            if (entityContext != null && context.StrandId != Guid.Empty && capturedResult?.Length > 0)
+                await entityContext.ReconcileAsync(capturedResult, context.StrandId, beatId, universeId, CancellationToken.None);
+
+            // Record tension history and extract reader revelations from the completed beat.
+            tensionService?.RecordBeat(capturedStrandId, mode);
+            if (readerKnowledge != null && capturedStrandId != Guid.Empty && !string.IsNullOrWhiteSpace(capturedResult))
+                await readerKnowledge.ExtractAsync(capturedResult, capturedStrandId, CancellationToken.None);
+
+            // Compress completed beat into rolling narrative summary for next beat.
+            if (narrativeSummary != null && capturedStrandId != Guid.Empty && !string.IsNullOrWhiteSpace(capturedResult))
+                await narrativeSummary.SummarizeSceneAsync(capturedResult, CancellationToken.None);
         }, CancellationToken.None);
 
-        return result;
+        return result ?? "";
     }
 
     /// <summary>
     /// Backfill coverage logs for an already-written beat WITHOUT regenerating prose.
-    /// Runs the same enrichment computation WriteAsync uses (mode detection → pacing →
-    /// structural role → combat rules) and records BeatServiceLog + BeatModeLog rows from
-    /// it, so the workflow monitor reflects prose that was written before the router existed.
-    ///
-    /// EntityContext is intentionally NOT logged here: its activation depends on the live
-    /// working-memory stack built during generation, which a backfill cannot reconstruct
-    /// without mutating it. The five gap-tracked services (Pacing, StoryMethodology,
-    /// PlantPayoff, StoryAudit, Combat) are fully determined by goal + position and ARE logged.
     /// </summary>
-    /// <param name="beatGoal">The beat's authorial intent (its synopsis) — drives mode + pacing.</param>
-    /// <param name="proseHint">Optional prose tail to sharpen mode detection (ignored if ≥500 chars).</param>
     public async Task LogCoverageAsync(
         Guid beatId, Guid strandId, string? beatGoal, string? proseHint,
         int beatIndex, int totalBeats, Guid universeId = default,
@@ -189,8 +342,7 @@ public class ProseWriterRouter(
     }
 
     /// <summary>
-    /// Shared enrichment computation used by both WriteAsync (live generation) and
-    /// LogCoverageAsync (backfill). Single source of truth for "what fires" so coverage
+    /// Shared enrichment computation — single source of truth for "what fires" so coverage
     /// logs match real generation behaviour.
     /// </summary>
     private (BeatMode Mode, float Confidence, string Method, string PacingGuidance, string StructuralGuidance)
@@ -198,22 +350,60 @@ public class ProseWriterRouter(
     {
         var (mode, confidence, method) = modeDetector.Detect(beatGoal, proseHint);
 
-        // Pacing: positional arc, overridden by beat-goal keywords; Combat forces STRIKE.
         var pacingInstruction = totalBeats > 0
             ? PacingService.GetPacing(beatIndex, totalBeats, beatGoal ?? "")
             : null;
         if (mode == BeatMode.Combat)
             pacingInstruction = new PacingInstruction(PacingService.PaceMode.Strike);
 
-        // Structural role (Save the Cat / Scene-Sequel).
         var structuralGuidance = totalBeats > 0
             ? methodology.GetBeatGenerationGuidance(beatIndex, totalBeats)
             : "";
 
-        // Combat mode: prepend combat prose rules to structural guidance.
         if (mode == BeatMode.Combat)
             structuralGuidance = CombatProseGuidance + (structuralGuidance.Length > 0 ? "\n\n" + structuralGuidance : "");
 
         return (mode, confidence, method, pacingInstruction?.ProseGuidance ?? "", structuralGuidance);
+    }
+
+    // ── Emotional guidance helper ─────────────────────────────────────────────
+
+    /// <summary>
+    /// Query the Findings table for recent EMOTIONAL-DEPTH blocking findings for this strand
+    /// and format them as a compact generation constraint block.
+    /// </summary>
+    private async Task<string> BuildEmotionalGuidanceAsync(Guid strandId, CancellationToken ct)
+    {
+        if (dbFactory == null) return "";
+        await using var db = await dbFactory.CreateDbContextAsync(ct);
+
+        var slug = await db.Strands.AsNoTracking()
+            .Where(s => s.Id == strandId)
+            .Select(s => s.Slug)
+            .FirstOrDefaultAsync(ct);
+        if (string.IsNullOrEmpty(slug)) return "";
+
+        var fp = $"strand:{slug}";
+        var catKey = FindingCategory.Other.ToString();
+        var statusKey = FindingStatus.New.ToString();
+
+        var summaries = await db.Findings.AsNoTracking()
+            .Where(f => f.FilePath == fp
+                        && f.Category == catKey
+                        && f.Status == statusKey
+                        && f.Summary.StartsWith("EMOTIONAL-DEPTH"))
+            .OrderBy(f => f.Severity == "High" ? 0 : 1)
+            .ThenByDescending(f => f.DetectedAt)
+            .Take(3)
+            .Select(f => f.Summary)
+            .ToListAsync(ct);
+
+        if (summaries.Count == 0) return "";
+
+        var sb = new StringBuilder();
+        sb.AppendLine("EMOTIONAL DEPTH GUIDANCE — prior examination found these weaknesses; address them in this beat:");
+        foreach (var s in summaries)
+            sb.AppendLine($"• {s.Replace("EMOTIONAL-DEPTH ", "").Trim()}");
+        return sb.ToString().TrimEnd();
     }
 }

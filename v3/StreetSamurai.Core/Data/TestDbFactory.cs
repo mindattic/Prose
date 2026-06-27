@@ -25,7 +25,7 @@ public static class TestDbFactory
     public static IDbContextFactory<StreetSamuraiDbContext> For(IPathProvider paths, string _entityType)
     {
         var key = paths.EngineDataDir ?? "default";
-        return Cache.GetOrAdd(key, _ => new SqliteInMemoryFactory(paths.EngineDataDir));
+        return Cache.GetOrAdd(key, _ => new SqliteInMemoryFactory(key));
     }
 
     /// <summary>Drop the cached factory for a given path. Useful when a test fixture wants a clean slate between fixtures sharing the same root.</summary>

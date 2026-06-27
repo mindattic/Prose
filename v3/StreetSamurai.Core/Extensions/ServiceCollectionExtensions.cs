@@ -812,6 +812,8 @@ public static class ServiceCollectionExtensions
         services.AddSingleton<DocContextService>();
         services.AddSingleton<ContextTelemetryService>();
         services.AddSingleton<TelemetryExportService>();
+        services.AddSingleton<TensionEscalationService>();
+        services.AddSingleton<ReaderKnowledgeService>();
         services.AddSingleton<ProseWriterRouter>();
 
         return services;

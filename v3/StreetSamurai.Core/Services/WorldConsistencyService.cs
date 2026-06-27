@@ -135,7 +135,7 @@ public class WorldConsistencyService : PipelineServiceBase
             try
             {
                 var text = (rec.Json ?? "").ToLowerInvariant();
-                var name = ExtractName(rec.Json);
+                var name = ExtractName(rec.Json ?? "");
 
                 foreach (var (rule, patterns) in UniverseRules)
                 {
