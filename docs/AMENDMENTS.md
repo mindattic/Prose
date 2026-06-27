@@ -471,7 +471,34 @@ legal position paper establishing the three-tier framework. In-world primary sou
   contexts. Never attribute interiority. Mythology around them is the characters', not the
   text's.
 
-<!-- Next amendment: SS-A26 -->
+<!-- Next amendment: SS-A27 -->
+
+---
+
+## SS-A26 — The Rook Trilogy arc + the body-bank harvest (Helix / the Marrow) {#SS-A26}
+
+**Date:** 2026-06-27 · **Author:** rook-trilogy-finale · **Ref:** establishes the canon that
+closes the heist trilogy (MGUN → NRST → MCRM); see [docs/strands/MCRM.md](strands/MCRM.md).
+
+New world canon:
+- **Registered Reads are a harvestable resource.** A Nano Triumvirate member — **Helix
+  Biosystems** — runs an industrial body-bank, **the Marrow**, that processes registered Reads
+  (neuretics-capable people the GLMZ logs) into Class V-compatible neural substrate. The human
+  core (marrow) rendered into corporate product (chrome). Pure tech/body-horror; no psionics.
+- **Relocation orders have been cover for harvests.** The Old Harbor "relocation order nobody
+  signed" (NRST manifest) was a harvest; the word *harvest* never goes on the order. Dr. Halina
+  Soraya ("Ohara") walked **twenty-one** registered Reads off the barge and hid them — the trilogy's
+  moral spine.
+- **The Rook Trilogy is one arc.** The crew's three jobs were steps Helix needed taken and could
+  not be seen taking: MGUN (extract Soraya from Axiom for a clean acquisition), NRST (the partition
+  crack surfaced the survivor list), MCRM (the loop closes). Helix funded PEREGRINE's
+  reconstitution (NRST §2). Antagonist of record: **Anneke Oyelowo-Sato**, Helix program director
+  and Rook's mirror.
+- **Class V** neural-tissue tech, made public in MGUN, was refined by the competitor (Helix)
+  without Axiom's liability — the public-domain release was the competitor's win, not just Axiom's loss.
+
+This amendment is realized in prose across the trilogy and governed by the character system in
+[docs/CHARACTER.md](CHARACTER.md).
 
 ---
 

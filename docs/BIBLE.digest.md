@@ -131,7 +131,7 @@ narrative-law block here when stood up:**
   ambient proprioceptive information field BCI-augmented people sense (see `network_doc.md`).
 
 ## Status index (from USER_STORIES.md)
-- done: 119  partial: 8  planned: 23  cut: 1
+- done: 123  partial: 8  planned: 23  cut: 1
 
 ## Latest amendment
 ## SS-A24 — The wider world: Amish, the Dreaming, Tequenica, Korea, Eurasia, the Middle East {#SS-A24}
