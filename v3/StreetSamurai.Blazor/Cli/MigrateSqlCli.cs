@@ -69,7 +69,11 @@ public static class MigrateSqlCli
         // StrandReviews, and Gripes+Contradictions to StrandReviewBeatScores.
         var reviewContradictions = args.Contains("--review-contradictions");
 
-        if (!schema && !charRelational && !charDropLegacy && !strandBeatSoftDelete && !strandBeatVersion && !entityGrammarNote && !strandCode && !entityReviews && !strandBible && !markdownFiles && !strandSpine && !emotionalExamination && !strandDraftFlag && !reviewContradictions)
+        // Distributed work queue: create DistributedWorkQueue table for multi-machine
+        // entity-review / strand-review / beat-review / beat-write.
+        var distributedQueue = args.Contains("--distributed-queue");
+
+        if (!schema && !charRelational && !charDropLegacy && !strandBeatSoftDelete && !strandBeatVersion && !entityGrammarNote && !strandCode && !entityReviews && !strandBible && !markdownFiles && !strandSpine && !emotionalExamination && !strandDraftFlag && !reviewContradictions && !distributedQueue)
         {
             Console.WriteLine("Usage:");
             Console.WriteLine("  ss --migrate-sql --schema                    apply EF migrations + enable SYSTEM_VERSIONING");
@@ -84,6 +88,7 @@ public static class MigrateSqlCli
             Console.WriteLine("  ss --migrate-sql --emotional-examination     create EmotionalExaminations/DimensionResults/BeatScores/CharacterEmotionalLedgers + Beat.EmotionalScore (SS-A15)");
             Console.WriteLine("  ss --migrate-sql --strand-draft-flag         add IsDraft BIT to Strands (+ history); draft subtrees are ignored by the tools");
             Console.WriteLine("  ss --migrate-sql --review-contradictions     add Contradictions to EntityReviews + StrandReviews; Gripes+Contradictions to StrandReviewBeatScores");
+            Console.WriteLine("  ss --migrate-sql --distributed-queue         create DistributedWorkQueue table (multi-machine entity/strand/beat review + prose writing)");
             Console.WriteLine();
             Console.WriteLine("  ss --migrate-sql --character-relational    add relational columns + bridges to Characters,");
             Console.WriteLine("                                             then backfill from Records.Json (--no-backfill skips Phase C)");
@@ -778,6 +783,49 @@ public static class MigrateSqlCli
             catch (Exception ex)
             {
                 Console.WriteLine($"  ✘ review-contradictions migration failed: {ex.Message}");
+                failures++;
+            }
+        }
+
+        if (distributedQueue)
+        {
+            using var scope = sp.CreateScope();
+            var db = scope.ServiceProvider.GetRequiredService<StreetSamuraiDbContext>();
+
+            Console.WriteLine();
+            Console.WriteLine("[distributed-queue]");
+            try
+            {
+                await db.Database.ExecuteSqlRawAsync("""
+                    IF NOT EXISTS (SELECT 1 FROM sys.objects WHERE object_id = OBJECT_ID(N'[dbo].[DistributedWorkQueue]') AND type = N'U')
+                    BEGIN
+                        CREATE TABLE [dbo].[DistributedWorkQueue] (
+                            [Id]           UNIQUEIDENTIFIER NOT NULL,
+                            [WorkType]     NVARCHAR(40)     NOT NULL DEFAULT 'entity-review',
+                            [TargetId]     NVARCHAR(64)     NOT NULL,
+                            [TargetType]   NVARCHAR(40)     NOT NULL,
+                            [TargetName]   NVARCHAR(400)    NOT NULL,
+                            [PayloadJson]  NVARCHAR(MAX)        NULL,
+                            [Status]       NVARCHAR(20)     NOT NULL DEFAULT 'pending',
+                            [ClaimedBy]    NVARCHAR(100)        NULL,
+                            [ClaimedAt]    DATETIME2            NULL,
+                            [CompletedAt]  DATETIME2            NULL,
+                            [RetryCount]   INT              NOT NULL DEFAULT 0,
+                            [ErrorMessage] NVARCHAR(MAX)        NULL,
+                            [CreatedAt]    DATETIME2        NOT NULL DEFAULT SYSUTCDATETIME(),
+                            CONSTRAINT [PK_DistributedWorkQueue] PRIMARY KEY ([Id])
+                        );
+                        CREATE INDEX [IX_DistributedWorkQueue_WorkType_Status_ClaimedAt]
+                            ON [dbo].[DistributedWorkQueue] ([WorkType], [Status], [ClaimedAt]);
+                        CREATE INDEX [IX_DistributedWorkQueue_TargetId]
+                            ON [dbo].[DistributedWorkQueue] ([TargetId]);
+                    END;
+                    """);
+                Console.WriteLine("  ✔ DistributedWorkQueue table created (or already exists).");
+            }
+            catch (Exception ex)
+            {
+                Console.WriteLine($"  ✘ distributed-queue migration failed: {ex.Message}");
                 failures++;
             }
         }

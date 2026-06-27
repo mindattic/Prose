@@ -130,6 +130,9 @@ public class StreetSamuraiDbContext : DbContext
     // Persona quality-reviews for canon entities (characters, weapons, tech, etc.).
     public DbSet<EntityReview>          EntityReviews          => Set<EntityReview>();
     public DbSet<EntityReviewSummary>   EntityReviewSummaries  => Set<EntityReviewSummary>();
+    public DbSet<EntityReviewQueue>     EntityReviewQueue      => Set<EntityReviewQueue>();
+    // Distributed work queue — entity-review / strand-review / beat-review / beat-write.
+    public DbSet<DistributedWorkQueue>  DistributedWorkQueue   => Set<DistributedWorkQueue>();
     // Append-only audit trail of voice-rule changes (directive / manual_edit / harvest).
     public DbSet<VoiceChangeLogEntry>   VoiceChangeLog         => Set<VoiceChangeLogEntry>();
     // First-class species taxonomy for sentient life (human/ai/elf/synthetic/unknown).
@@ -697,6 +700,31 @@ public class StreetSamuraiDbContext : DbContext
             e.Property(x => x.EntityName).HasMaxLength(400).IsRequired();
             e.Property(x => x.ContentHash).HasMaxLength(64);
             e.HasIndex(x => new { x.EntityId, x.EntityType }).IsUnique();
+        });
+
+        b.Entity<EntityReviewQueue>(e =>
+        {
+            e.HasKey(x => x.Id);
+            e.Property(x => x.EntityId).HasMaxLength(64).IsRequired();
+            e.Property(x => x.EntityType).HasMaxLength(40).IsRequired();
+            e.Property(x => x.EntityName).HasMaxLength(400).IsRequired();
+            e.Property(x => x.Status).HasMaxLength(20).IsRequired();
+            e.Property(x => x.ClaimedBy).HasMaxLength(100);
+            e.HasIndex(x => new { x.Status, x.ClaimedAt });
+            e.HasIndex(x => x.EntityId);
+        });
+
+        b.Entity<DistributedWorkQueue>(e =>
+        {
+            e.HasKey(x => x.Id);
+            e.Property(x => x.WorkType).HasMaxLength(40).IsRequired();
+            e.Property(x => x.TargetId).HasMaxLength(64).IsRequired();
+            e.Property(x => x.TargetType).HasMaxLength(40).IsRequired();
+            e.Property(x => x.TargetName).HasMaxLength(400).IsRequired();
+            e.Property(x => x.Status).HasMaxLength(20).IsRequired();
+            e.Property(x => x.ClaimedBy).HasMaxLength(100);
+            e.HasIndex(x => new { x.WorkType, x.Status, x.ClaimedAt });
+            e.HasIndex(x => x.TargetId);
         });
 
         // ── Entity (universal) ───────────────────────────────────────────────
