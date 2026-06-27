@@ -136,6 +136,13 @@ The decision gets made, with consequences that cannot be filed away. Adalemo app
 
 ## §9 — The Parallel Writing Experiment
 
+> **RESOLVED (2026-06-27).** The experiment concluded: the Claude strand (NRSTC) was carried
+> through the Character-Doctrine revision to **87.7%** and promoted to the canonical **NRST**
+> strand. The Qwen twin (NRSTQ) was **deleted**. The section below is retained as the record of
+> how the experiment was run. Its central finding stands: neither raw output used the canonical
+> crew, because Stave/Adalemo were unseeded and the returning crew lacked voice depth — fixed by
+> [docs/CHARACTER.md](../CHARACTER.md).
+
 NRST is the first strand written simultaneously by two different LLM writers using the same bible. The experiment tests how model architecture and training affect narrative voice, structural choices, and world-grounding when the plot outline, character rules, and canon locks are identical.
 
 ### The Two Writers
@@ -229,8 +236,9 @@ ss --review --slug neon-rust-qwen-019f06eb
 - [x] NRSTC: review-driven cleanup pass (50-ballot panel, avg 79 pre-edit) — pronoun continuity, refrain/interiority cuts, sensory grounding, coda payoff (2026-06-27)
 - [x] NRSTC: **canon re-cast** — replaced invented crew (Tovan/Vesna/Idris) with the MGUN-canonical crew (Boiler/Scout/Lace) carrying their established signatures; Vox set to she/her (woman); Adalemo to he/him (2026-06-27)
 - [x] Crew entities deepened/seeded — Rook/Vox/Lace/Boiler/Scout/Soraya given full Speech/Psychology layers; **Stave** `019f0787c613` and **Seun Adalemo** `019f0787f8bc` seeded (were missing) (2026-06-27)
-- [ ] NRSTC: standalone review ≥82% (re-review after re-cast)
-- [ ] NRSTQ: standalone review ≥82%
+- [x] NRSTC: standalone review **87.7%** (2026-06-27) — cleared after re-cast + Character-Doctrine behavior pass
+- [x] MGUN (sequel partner): standalone review **87.1%** (2026-06-27) — broke an 11-cycle ~86 ceiling via the Character Doctrine ([docs/CHARACTER.md](../CHARACTER.md)); both strands now ≥87 and complement each other
+- [x] NRSTQ: **DELETED 2026-06-27** — the Qwen experimental twin was removed; the Claude strand was promoted to the canonical strand (StrandCode `NRST`, title "Neon & Rust", slug `neon-rust-019f06da`)
 - [ ] Comparative analysis (NOTE: experiment caveat — neither writer used the canonical crew because Stave/Adalemo were unseeded and the returning crew lacked voice depth; entities are now seeded for any future regen. NRSTQ left as the raw experimental record; NRSTC hand-re-cast for canon fidelity.)
 - [ ] Export both (NRSTC V1, NRSTQ V1)
 
