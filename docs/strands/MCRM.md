@@ -48,6 +48,15 @@ at full volume. What keeps it from being empty is the [Character Doctrine](../CH
 every familiar beat is played by a specific person with a Drive, an Obstacle, and a silhouette
 you'd buy the action figure of.
 
+> **Trilogy-wide governing intent (binding on M&G, N&R, and C&C):** *The Rook Trilogy is a
+> crowd-pleaser.* Its job is to give the reader exactly what they came to a cyberpunk adventure
+> for — the heist, the chrome, the jargon, the loadouts, the runner-vs-corp score-settling — and
+> to deliver it with full conviction rather than ironic distance. We never apologize for the
+> genre and never wink at the reader over its shoulder. The craft bar (Character Doctrine, voice,
+> the no-pseudo-profound rule) is what makes the familiar land *hard* instead of cheap; it is
+> never an excuse to withhold the pleasures. When a choice trades reader payoff for cleverness,
+> reader payoff wins.
+
 Close-third on **Rook**, consistent with both prior strands (Lightning-model leader; depth
 rationed, never absent). The emotional temperature is the highest of the three: this is where
 the count finally has names in it.

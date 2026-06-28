@@ -57,11 +57,8 @@ public class ManuscriptExportService
             md.AppendLine($"_by {author!.Trim()}_");
             md.AppendLine();
         }
-        if (!string.IsNullOrWhiteSpace(strand.Synopsis))
-        {
-            md.AppendLine($"_{strand.Synopsis!.Trim()}_");
-            md.AppendLine();
-        }
+        // Synopsis is intentionally NOT printed on the title page — it is a back-cover/catalog
+        // blurb, exported separately as "Back Cover.txt" and as the ebook <dc:description>.
 
         int beatNo = 0;
         int chapterNo = 0;
@@ -123,8 +120,7 @@ public class ManuscriptExportService
                     col.Item().Text(manuscript.Title).FontSize(28).Bold();
                     if (!string.IsNullOrWhiteSpace(author))
                         col.Item().PaddingTop(24).Text(author!.Trim()).FontSize(14).Italic().FontColor(Colors.Grey.Darken1);
-                    if (!string.IsNullOrWhiteSpace(manuscript.Synopsis))
-                        col.Item().PaddingTop(40).Text(manuscript.Synopsis!.Trim()).FontSize(11).Italic().FontColor(Colors.Grey.Medium);
+                    // Synopsis intentionally omitted from the title page (back-cover blurb only).
                 });
             });
 
@@ -296,8 +292,9 @@ public class ManuscriptExportService
 
     private static string EpubTitlePageXhtml(Manuscript m, string author)
     {
-        var synopsis = string.IsNullOrWhiteSpace(m.Synopsis) ? "" :
-            $"\n  <p class=\"synopsis\">{EpubEsc(m.Synopsis)}</p>";
+        // Synopsis intentionally omitted from the title page (back-cover blurb only);
+        // it still ships as the ebook <dc:description> catalog metadata.
+        var synopsis = "";
         return $"""
             <?xml version="1.0" encoding="UTF-8"?>
             <!DOCTYPE html>

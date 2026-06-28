@@ -800,6 +800,11 @@ public static class ServiceCollectionExtensions
         // Available via `ss --story-audit` and the Tools.StoryAudit MCP tools.
         services.AddSingleton<StoryAuditService>();
 
+        // Deterministic prose sanity scan — no LLM; catches leaked internal codes,
+        // undefined acronyms, encoding corruption, and heft floor violations.
+        // Available via `ss --sanity-scan`.
+        services.AddSingleton<SanityScanService>();
+
         // Beat mode detection + workflow coverage monitoring.
         // ProseWriterRouter is the preferred entry point for all prose generation — it
         // auto-detects beat mode, injects pacing + structural guidance, and logs coverage.
