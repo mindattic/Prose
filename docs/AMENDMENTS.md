@@ -471,7 +471,43 @@ legal position paper establishing the three-tier framework. In-world primary sou
   contexts. Never attribute interiority. Mythology around them is the characters', not the
   text's.
 
-<!-- Next amendment: SS-A27 -->
+<!-- Next amendment: SS-A28 -->
+
+---
+
+## SS-A27 — Genre positioning: Neo-Cyberpunk (modern, ambient-AI, no crude plugs) {#SS-A27}
+
+**Date:** 2026-06-27 · **Author:** overnight-empire-run · **Ref:** commercial positioning of the
+whole IP (books → novellas → film/TV/games). Decision made by the Legion panel
+(`legion ask`, tier HIGH, **unanimous 4/4, full consensus, zero dissent**).
+
+**The banner is Neo-Cyberpunk.** The series is positioned, marketed, and shelved as
+**Neo-Cyberpunk**. Rationale (panel): "cyberpunk" is a billion-dollar discoverability bucket
+(*Edgerunners*, *Cyberpunk 2077*, *Blade Runner 2049*, *Altered Carbon*) that modern audiences
+read as *high-tech dystopia*, not "cables in skulls." The **Neo-** prefix signals the update
+(ambient AI, no jacks) while inheriting the audience, retail shelf, streaming category, and SEO —
+the same proven move as neo-noir / neo-western. "Quantumpunk" has zero genre footprint and forces
+booksellers/streamers/algorithms to invent a category (commercial poison across media).
+
+**"Quantumpunk" is allowed only as an in-universe flavor descriptor** beneath the Neo-Cyberpunk
+banner — never the primary marketing label.
+
+**Modernization thesis (the thing that makes it *Neo*):** AIs are **ambient and everywhere**, and
+**no one needs crude head-plugs.** This is already how the world is built — the amendment makes it
+binding and names it:
+- Neural interface = **neuretics**, a mesh *grown into the brain* (see
+  [Neuretics canon]; SS-A17 nanotech). Not a port, not a cable, not a socket.
+- Remote operation (drones/crawlers/cameras/vehicles) = **QCE** (Quantum Crystal Entanglement) —
+  a *wireless* quantum link; the operator is a **Rider** whose own body is left behind. No tether.
+- Hacking = **Channelers** who *commune* with unlicensed AIs wirelessly. No deck-jacking.
+- **Banned imagery (prose):** physical datajacks, skull sockets, neural ports, "jacking a cable
+  into" anyone, trode-nets. The dated 1980s plug-in-the-skull trope is explicitly NOT this world.
+  (Corpus audited 2026-06-27: already clean; one stray "data jack" line modernized to a grown-in
+  neuretic ridge.)
+
+**Scope:** this is positioning + a forward-looking prose rule. It removes no existing canon —
+neuretics and QCE already embody it. It does not contradict "jacked in via QCE" (that is wireless
+entanglement, not a cable).
 
 ---
 
