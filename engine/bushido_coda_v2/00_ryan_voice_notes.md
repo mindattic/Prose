@@ -1,7 +1,7 @@
-# Ryan DeBraal — Voice Notes for Bushido Coda Rewrites
+# MindAttic — Voice Notes for Bushido Coda Rewrites
 
 Source: Melody Valkyrie — Huntress of Norp (book 6), and by extension the rest of the
-Melody Valkyrie / Aurora Roe corpus at `R:\Desktop\EPub\Ryan DeBraal\`.
+Melody Valkyrie / Aurora Roe corpus at `R:\Desktop\EPub\MindAttic\`.
 
 The voice I had been writing (literary cyberpunk in the McCarthy / Gibson register) is
 WRONG. Ryan's voice is mock-epic comic-cosmic action with technical confidence — the

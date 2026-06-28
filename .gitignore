@@ -54,3 +54,6 @@ venv/
 
 # Large ML model files (download separately)
 *.onnx
+
+# scratch logs
+*.log
