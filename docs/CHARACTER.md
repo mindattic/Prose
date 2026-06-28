@@ -61,10 +61,14 @@ If the honest answer to "Drive" is *"to perform their job on the team,"* you hav
 
 ---
 
-### §2b — The Action Figure Test (the bar for leading characters) {#SS-CHAR-§2b}
+### §2b — The Action Figure Test / The Cosplay Test (the bar for leading characters) {#SS-CHAR-§2b}
 
-A leading character must clear a harder bar than §2: **would a reader want their action figure?**
-A figure works on a shelf only if the character has all three at a glance —
+A leading character must clear a harder bar than §2: **would a reader want their action figure —
+and would a fan cosplay as them?** These are the same test from two directions. The action figure
+asks whether the character reads at a glance on a shelf; cosplay asks whether a real person would
+spend a weekend *becoming* them — assemble the silhouette, carry the signature gear, strike the
+pose, and have a room know exactly who they are without a name tag. A character worth cosplaying
+is one a reader has already decided to inhabit. Both tests demand the same three things at a glance —
 
 - **A silhouette** — a shape you'd know blacked-out: posture, build, the coat, what they carry.
 - **A signature** — the gear *and* the move that are theirs and no one else's (the specific
@@ -74,7 +78,7 @@ A figure works on a shelf only if the character has all three at a glance —
 If you cannot picture the figure — its pose, its accessory, the one word on the box — the
 character is not yet leading material. **This is the test that takes a strand from competent
 (~85) to iconic (~93).** The reader panel does not fall in love with functions; it buys the
-action figure.
+action figure, and it dresses up as the ones it loves.
 
 Corollary: **the signature gear is half the silhouette, not set-dressing.** This is why the heist
 series runs gear-dense — the Reibo flechette Rook *won't* draw in a crowd, Boiler's gray-market

@@ -1827,6 +1827,19 @@ if (args.Contains("--story-audit"))
     return;
 }
 
+// ss --sanity-scan (--slug <slug|code> | --all) [--json]
+// Deterministic prose checks — no LLM. Catches leaked internal strand codes,
+// undefined all-caps acronyms, encoding corruption, and heft-floor violations.
+// Exit 0 = clean, 1 = warnings only, 2 = any blocks.
+if (args.Contains("--sanity-scan"))
+{
+    var cliBuilder = WebApplication.CreateBuilder(args);
+    cliBuilder.Services.AddStreetSamuraiServices();
+    var cliApp = cliBuilder.Build();
+    Environment.ExitCode = await SanityScanCli.RunAsync(args, cliApp.Services);
+    return;
+}
+
 // ss --plant-audit   --slug <strand> [--json]   audit plant/payoff pairs
 // ss --list-plants   --slug <strand> [--json]   list all pairs
 // ss --add-plant     --slug <strand> --plant "..." --payoff "..." [--cat detail]
