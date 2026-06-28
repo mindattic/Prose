@@ -2,6 +2,8 @@
 
 _Amara Osei and Seto Banda are both in Batch 44-C — Orison Neuretics' 847-client calibration pilot. Their carrier-grade neuretics create a two-way bleed: they share each other's memories. The memories that arrive are the ones the suppression protocol stripped of meaning. For the wrong person, those arrive whole._
 
+## The Anomaly Log
+
 [Beat 1]
 The anomaly log had thirty-one entries.
 
@@ -247,7 +249,7 @@ She looked at him. There was something behind the assessment that was almost gen
 
 She sat very still.
 
-Through the ambient, Seto felt the temperature drop three degrees without being told what had caused it.
+The temperature in her ribs dropped three degrees. It came from nowhere — no breath, no signal, just the cold fact of the air in her chest changing. She knew what it meant. She knew where it came from.
 
 She sent: *We need to move faster.*
 
@@ -339,6 +341,8 @@ Then he looked at the rest of her maps — Zones 1 through 6, her hand throughou
 Tuesday was five days away.
 
 He put on his jacket and went to learn the rest of her city.
+
+## Chapter 1 outline
 
 [Beat 15]
 # The Log She Didn't File
@@ -432,6 +436,8 @@ She checked the content management log one more time.
 She had not filed the anomaly. The query that had gone to Orison's desk at 21:44 was not hers. And that was the part she sat with as the lumen mouse glowed its slow blue-green at the baseboard and the egusi smell went thin and the tea finished going cold: not whether they had her search. They had her search.
 
 Whether there were three other access records she hadn't seen. Each timestamped to a different day. Each pointed at a different source she'd gone back to check on. Each one carrying a name she had been trying, very carefully, to protect.
+
+## Chapter 2 outline
 
 [Beat 16]
 # The Dry Corridor
@@ -588,6 +594,8 @@ He made tea when he got back. He opened the client list, read the first three en
 
 He did not sleep again.
 
+## Chapter 3 outline
+
 [Beat 17]
 # Interference Pattern
 
@@ -697,6 +705,8 @@ There was a particular strangeness in the act, addressing a stranger by way of e
 
 She marked the message priority and sent it before she could revise it into something more careful, and then she stood at her desk in the Tessera Tribune press room while the afternoon shift came in around her, and she waited.
 
+## Chapter 4 outline
+
 [Beat 18]
 # The Other Side of the Noise
 
@@ -777,6 +787,8 @@ Her sign-off came late, later than the typo, late enough that he stood up from t
 *Catch you tomorrow,* he wrote.
 
 He did not tell her about the margin. He had one day to work out whether knowing would put a wall around her or paint a mark on her, and from where he sat he could not yet see which, and a courier who guessed at a route he hadn't walked got people hurt. He turned the bike up on its bars instead. He pulled the rear wheel and spun it and watched the spin-down die clean, no tick, no stutter, the bearing he'd seated at dawn still holding true, and he sat in the alley in the cold-solder dark with the wheel turning down to nothing in his hand, and he did not sleep well, and at 0545 he would be out here again with a count already starting in his head.
+
+## Chapter 5 outline
 
 [Beat 19]
 # Account Liaison
@@ -889,6 +901,8 @@ She looked at the card on the corner of the desk. Pressed stock. A name and noth
 
 *He wanted to seem helpful,* she sent.
 
+## Chapter 6 outline
+
 [Beat 20]
 # Something Borrowed
 
@@ -999,6 +1013,8 @@ She had two days until the quarterly review. She had the source list, the cresce
 She knew what she had.
 
 On her way to the elevator at 07:55, she passed through the dark end of the newsroom and put her hand to the wall briefly — cold plaster, the hum of the ventilation faint under her palm — not to brace herself, only to feel something that was the exact weight of what it was, before she stepped into the managed air of the elevator and went down to where the pastry was.
+
+## Chapter 7 outline
 
 [Beat 21]
 # The Lunch
@@ -1145,6 +1161,8 @@ She opened her log. Wrote: *Razor check. Not grooming. Filed.*
 
 Below it: *Portal query 02:03. Not mine. Filed.*
 
+## Chapter 8 outline
+
 [Beat 22]
 # Black Spot
 
@@ -1241,6 +1259,8 @@ He would finish measuring it.
 The lamp going out left the red oval where it was, on the desk, in the dark, still a position and not yet a fact.
 
 He turned off the lamp.
+
+## Chapter 9 outline
 
 [Beat 23]
 # Rooftop, Zone 7
@@ -1349,6 +1369,8 @@ Seven was a number he could work. He laid it out the way he laid out any route �
 
 He started working out what seven days could hold, and the countdown was already running, had been running since the moment Ato said *someone else*, and the city below went about its business completely indifferent to the fact that a window had just opened and was now, one breath at a time, closing.
 
+## Chapter 10 outline
+
 [Beat 24]
 # What She Knows
 
@@ -1456,6 +1478,8 @@ The corridor was managed. The lighting read as neither morning nor afternoon. Th
 
 She kept going.
 
+## Chapter 11 outline
+
 [Beat 25]
 # The Cleanup List
 
@@ -1549,6 +1573,8 @@ She would send her sign-off in three hours. *Clear. -N.* Then the correction a m
 
 He washed the bowl. He sat at the desk. He started building a different path.
 
+## Chapter 12 outline
+
 [Beat 26]
 # Managed Liability
 
@@ -1637,6 +1663,8 @@ The relay terminal was three blocks past the Zone 6 boundary marker. She found a
 She sent it and walked back toward the Tribune.
 
 The recorder was still in her bag. Restricted media access was suspended. She had two weeks to find another way in.
+
+## The Move
 
 [Beat 27]
 # The Move
@@ -1729,6 +1757,8 @@ She sent it. Thursday. Less than forty-eight hours, and the drive was over her r
 
 Then she opened her source notes, the real ones, the infrastructure piece — who maintains the relay grid out here when nobody owns it — and she started working, because it was a real question with a real answer and she was going to write it, and because her day had to look exactly like a journalist doing her job. It was what she was doing. That was the part Ciro had not understood when he built his careful true frame out of her real distraction: the cover was not a lie. She was a journalist. She was working a story. She typed a header and a first line and the cold green chain of relay beacons climbed the dead poles in her memory while she did, and she let it, and she kept working, because the next flag on her account would not be this gentle, and she intended to still look exactly like herself when it came.
 
+## Chapter 14 outline
+
 [Beat 28]
 # Sealed System
 
@@ -1779,6 +1809,8 @@ He let the drive sit a moment longer. Then he picked up the pre-paid card.
 He composed the reply carefully, the way he composed everything that had to survive being read by the wrong eyes. *Third relay west. Tomorrow, 09:00. Shen crossing. I'll find you.*
 
 The third relay west was the only way he had to tell her *I know where you stood when you sent this* without writing it down — and therefore the only way to tell her *I know what they did to your network today, and I read all of it, and I am still coming.*
+
+## Chapter 15 outline
 
 [Beat 29]
 # Everything She Carries
@@ -1893,6 +1925,8 @@ She picked up her notebook and started to write down the date, and the next date
 
 She kept going.
 
+## Grooming
+
 [Beat 30]
 # Grooming
 
@@ -2004,6 +2038,8 @@ He knew she'd come here. He knew she'd open it. He'd want her to.
 
 She opened the query interface anyway. And she started building.
 
+## Off Timing
+
 [Beat 31]
 # Off Timing
 
@@ -2071,6 +2107,8 @@ She folded the paper twice and put it back. She closed the query and logged out 
 
 The newsroom did not know what she had found. The paper with 112 on it was in her jacket pocket, two folds thick against her chest, and she was going to carry it home on the transit with strangers who had their faces turned to the windows — strangers who might, any one of them, have their own number written somewhere they had not yet shown to anyone.
 
+## Pressure and Counter-Pressure
+
 [Beat 32]
 # Pressure and Counter-Pressure
 
@@ -2117,6 +2155,8 @@ He pulled on his jacket and went down. He rode to the box two blocks east and co
 He went back upstairs and moved the drives from the floor panel to the inside pocket of his courier bag, against his ribs, where they would stay until he had somewhere better. Then he ran the route, because that was the only way he knew to think. The drives were on his body now. The Zone 4 leg would have to change — he never took the same approach to a handoff twice, and his usual variation off the canal road fed straight back through a relay corridor he no longer trusted. The infrastructure he had used for five years, the eight-second pulses he steered by the way other men steered by stars, was reading him back. He worked the city in his head the way he worked it on the bicycle, weighing each segment for exposure, looking for the line that cost the least to ride — and for the first time in five years the route returned no clean answer, only a field of bad options he would have to choose the least bad of in the morning.
 
 He lay listening to the relay beacons outside doing something they should not be doing, eleven seconds between each pulse, steady as a clock.
+
+## The Turn
 
 [Beat 33]
 # The Turn
@@ -2199,6 +2239,8 @@ She put the card away. She had four hours before the leave authorization pushed 
 
 She kept going.
 
+## Chapter 21 outline
+
 [Beat 34]
 # Story Runs
 
@@ -2278,6 +2320,8 @@ He had been building this case without knowing he was building it. Every timing 
 
 His relay terminal flagged a compliance update at 18:03: *Zone 3/4 courier certification suspended. Orison Regulatory Compliance: licensing review pending, active routes suspended, estimated processing five to ten business days.* The routes were gone. The story was running. He did not know whether a story running would reach Nuru before it reached the people who had put her on the list, or whether it would reach her at all, or whether the protecting and the exposing were the same act wearing one name — and he rode the rest of the way home not knowing it, which was new, because this morning he had not known there was anything not to know.
 
+## Thursday Morning
+
 [Beat 35]
 # Thursday Morning
 
@@ -2353,6 +2397,8 @@ He closed the field blank and submitted the report.
 
 Six days. He had not written the number down, and not writing it down was a thing he was going to have to carry up the line with him, the way you carry a wire you've recognized but haven't yet decided to cut.
 
+## Contract Delayed
+
 [Beat 36]
 # Contract Delayed
 
@@ -2393,6 +2439,8 @@ He read it back once. It was not a case. It was not a charge. It would not move 
 He saved it anyway. The act of writing it was the only thing he could do that the compliance review could not reach in and take back, and a man learned, in the Ocean, in Tuesday, in the small gray apartments after, that the things you could keep were worth keeping precisely because of how few of them there were.
 
 Then he turned on the lamp and went back to reconciling his mileage, because he intended to be paid what he was owed.
+
+## Chapter 24 outline
 
 [Beat 37]
 # The Last Route
@@ -2466,6 +2514,8 @@ He filed it as data. The Orison reader had his name now. That was the new bounda
 He logged the beacon count. He logged the reader. He logged the building, seven names, brick, four floors, clean windows, a man wiping a sill.
 
 He rode east and started drawing the next line.
+
+## Chapter 25 outline
 
 [Beat 38]
 # The Procedure
@@ -2554,6 +2604,8 @@ The corridor logged nothing. He had not crossed any threshold that watched.
 
 At the landing he checked the route in his head — east tower, ground retail, then the Pulse station before the last northbound slug at 2310 — and found it intact, every leg of it where it should be. He went down.
 
+## Chapter 26 outline
+
 [Beat 39]
 # Different Frequency
 
@@ -2631,6 +2683,8 @@ Both true. She stood at the window and let them both be true, and did not choose
 
 Below her the lights went green again. The next group moved.
 
+## Chapter 27 outline
+
 [Beat 40]
 # Zone 7, Tuesday, 9AM
 
@@ -2677,6 +2731,8 @@ He knew this. He had known it before he took the route.
 The Seam climbed. Behind him the block closed — buildings sliding across the gap where the clinic had been, the angle gone, the morning sealing over like water over a dropped thing. He pedaled into it. The surface was bad and then it was fine. The next stop was somewhere ahead, with its own buzzer that would take two presses.
 
 He rode anyway. Riding was the thing he could still do.
+
+## Chapter 28 outline
 
 [Beat 41]
 # 10:47
