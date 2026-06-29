@@ -72,4 +72,21 @@ public class ClaudeService : ILlmService
             throw;
         }
     }
+
+    public Task<string> GenerateFromDocumentAsync(
+        byte[] documentBytes,
+        string mediaType,
+        string userPrompt,
+        string? systemPrompt = null,
+        int maxTokens = 2048,
+        string? model = null,
+        CancellationToken ct = default)
+    {
+        if (string.IsNullOrWhiteSpace(settings.ApiKey))
+            throw new InvalidOperationException("API key not configured.");
+        var activeModel = model ?? settings.Model;
+        return legion.CallWithDocumentAsync(
+            settings.ApiKey, activeModel, documentBytes, mediaType,
+            userPrompt, systemPrompt, maxTokens, ct: ct);
+    }
 }

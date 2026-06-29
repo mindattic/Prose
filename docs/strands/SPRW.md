@@ -79,7 +79,14 @@ The Zone 4 recognition is the secret second reason he takes the case. He already
 
 ### Elias Macias (POV) {#SS-SPRW-3-elias}
 
-- Logistics fixer, ex-Cordon Freight. DB id: `019EDCC9-F826-7D07-A4C5-C65BB11B5C0C`. Apt 11134, floor 111.
+- **Freight-loss reconciliation auditor** at Cordon Freight — "logistics fixer" is the trade-speak;
+  his actual job is closing recovery work orders and making loss/recovery manifests **reconcile to the
+  gram**. DB id: `019EDCC9-F826-7D07-A4C5-C65BB11B5C0C`. Apt 11134, floor 111.
+- **Why HE finds the truth (profession = the engine, per the register doctrine):** to an auditor, a
+  number that won't close is an open work order he physically cannot leave alone. Tuivaga's 2202
+  figure doesn't reconcile; everyone else filed it and moved on; Elias can't. That compulsion — not
+  heroism — is what sends him out to trace the orbital wreckage to Sparrow. The discovery IS his job,
+  carried one step past where the job is supposed to stop.
 - Processed the 2213 delayed disposal in 11 minutes without examining it. Load-bearing self-knowledge.
 - Not a fighter. His function is attention: the human instrument that measures at the centimeter.
 - Voice: manic, invoice-wall energy, internally organized like a manifest. When anxious, his
@@ -135,15 +142,15 @@ The Zone 4 recognition is the secret second reason he takes the case. He already
 
 ### Supporting cast {#SS-SPRW-3-support}
 
-**Siosaia Tuivaga-Brennan:** Elias's colleague. Processed the 2202 event. Gave him the number hoping
+**Siosaia Tuivaga:** Elias's colleague. Processed the 2202 event. Gave him the number hoping
 he'd look where she didn't.
 **Tadesse Bekele-Sørensen:** Ethiopian-Danish facility caretaker. 20 years under the contract. His
 "it doesn't estimate" / "I think it measured everything it could reach… I can't say whether that is
 the same as noticing" lines are LOCKED.
-**Makena Otieno-Varga:** Diver. Objects ascended — she knows the geometry is wrong.
-**Leandro Bautista-Henriksen:** Manifest clerk. Uses "them" for Sparrow (crew-theory voice).
-**Druh Yeboah-Prykhodko:** The large quiet man. "The number works."
-**Imo Asante-Cavalcanti / Corvid Osei-Larsson:** The careful person / the rotating-crew voice.
+**Makena Varga:** Diver. Objects ascended — she knows the geometry is wrong.
+**Leandro Bautista:** Manifest clerk. Uses "them" for Sparrow (crew-theory voice).
+**Druh Prykhodko:** The large quiet man. "The number works."
+**Imo Cavalcanti / Corvid Larsson:** The careful person / the rotating-crew voice.
 
 ## 4. The archive — what Sparrow has been doing {#SS-SPRW-4}
 

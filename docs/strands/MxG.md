@@ -1,5 +1,5 @@
 ---
-strand: MGUN
+strand: MxG
 title: Magenta & Gunmetal
 kind: story
 universe: GLMZ
@@ -78,12 +78,12 @@ Color language: **Magenta** and **Gunmetal** are the unofficial colors of the GL
 - **Entity name:** Tem Okafor
 - **Handle:** Vox
 
-### Remi Nakamura-Diallo ("Scout")
+### Remi Diallo ("Scout")
 - **Heritage:** French-Senegalese (GLMZ Diaspora)
 - **Role:** Rider. QCE drone operator — see §5b.
 - **Specialty:** Maintains a bespoke swarm of seven vent-rated crawlers ("the seven") in a custom case she has never opened in front of anyone. When jacked in via QCE, her eyes roll back, her breathing slows to eight breaths per minute, and she is entirely elsewhere. She sits perfectly still. This unnerves everyone.
 - **Voice:** Minimal — she prefers to let the crawlers do her talking. When she does speak, it is usually a number or a direction. Occasionally: "They won't hear it." She has never been wrong about that.
-- **Entity name:** Remi Nakamura-Diallo
+- **Entity name:** Remi Diallo
 - **Handle:** Scout
 - **Note:** She does not name her drones. The crew names them anyway. She has stopped arguing about this.
 
@@ -173,6 +173,12 @@ The Lake Platform is not dramatic. It is a utilitarian civic node painted gray-w
 10. **Rook jumps onto the VTOL.** She runs to the edge and jumps. This is the Die Hard moment. She flies it back badly. No one gets to cut this for pacing.
 11. **Scout's eyes are closed for the finale.** She is somewhere else when the most important things happen. The crawlers do not close that gap — they give her information, not presence. This is the point.
 12. **QCE is depicted correctly.** When Scout jacks in, her eyes roll back. When she jacks out, they return. No exceptions to the optic-severing mechanism.
+
+## §8b — R2 Polish Notes (Opus pass)
+
+Register purge: Rook's interiority must NOT read as Kyle's arithmetic/counting voice. "Filed it," "did the count [in her head]," "counted Φ N," "put it where she put things," "she did not examine why," "noticed without wanting to" are tics to eliminate or externalize into dialogue/body. Rook counts EXITS/STEPS as a behavioral rule (keep, sparingly) — she does not narrate her feelings as ledger arithmetic. The personal stake (Wennick; leadership as a debt) is legible from Beat 1, shown through body and one externalized exchange, not stated as private knowledge she "has never said." Beat 6 bystander death carries weight in-scene and forces Rook to stop (the shooter reads her freeze). Antagonist (Adalemo/PEREGRINE) has on-page cost and personality.
+
+R2 continuity: Beat 2 recruits FOUR crew (Agwu, Boiler, Vox, Diallo); Rook is the fifth. Recruitment-beat sign-off corrected from "five identical messages" to four. Beat 7 close: removed "counted Φ 8,000 in her head" (Kyle-arithmetic tic) — Rook's payment count is a Beat-12 ritual only.
 
 ## §8 — Emotional Architecture
 

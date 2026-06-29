@@ -8,7 +8,7 @@
 StreetSamurai is a canon-grounded, voice-disciplined story-generation engine that takes a
 one-line seed to a published, reader-reviewed, canon-consistent audiobook + manuscript **in any
 registered Universe** — with the human approving, not authoring, canon and voice changes. The
-flagship Universe is **GLMZ** (Greater Lake Michigan Zone, 2225, cyberpunk; the *Bushido Coda*); a
+flagship Universe is **GLMZ** (Greater Lake Michigan Zone, 2226, cyberpunk; the *Bushido Coda*); a
 second, **Fantasy/Steampunk**, is being stood up alongside it on the same engine. Every canon and
 story row belongs to exactly one Universe ([SS-LAW-15](#SS-§5)).
 
@@ -112,7 +112,7 @@ narrative-law block here when stood up:**
   ("SwitchUniverse"). Engine terms below are universe-neutral; terms tagged *(GLMZ)* are GLMZ
   content.
 - **GLMZ** *(GLMZ)* — Greater Lake Michigan Zone (a.k.a. Meridian 88, *The Glooms*); a 500-km
-  vertical megacity on the western shore of Lake Michigan, year 2225. Universe #1.
+  vertical megacity on the western shore of Lake Michigan, year 2226. Universe #1.
 - **Φ / QUANTA** *(GLMZ)* — the currency: one Φ = one second of certified error-corrected quantum
   coherence. Never the Greek letter phi ([SS-LAW-8](#SS-§5)).
 - **Beat** — a discrete unit of story function (not a paragraph); the atom of prose + audio.
@@ -148,7 +148,7 @@ geopolitical texture for the setting and — in UNDR — ground the Surfacing/Ru
 ### §A24-1 — The Amish: last organized Christian community
 
 They are the only continuously functioning organized Christian
-community in 2225. The world calls them the Amish; they call themselves the Amish.
+community in 2226. The world calls them the Amish; they call themselves the Amish.
 
 **The Rise and Fall of the False Prophet (2082–2091)** destroyed every other sect. The "False
 Prophet" — a charismatic unifier who consolidated disparate Christian denominations under a
@@ -167,7 +167,7 @@ authority — rejection of networked technology, community governance, deep skep
 centralized power — meant the movement had nothing to grip. When the collapse came they were
 standing exactly where they had always been.
 
-**In 2225:**
+**In 2226:**
 - **Name:** the Amish
 - **Location:** scattered communities in former Indiana, Ohio, and Pennsylvania (habitable
   Midwest territories, outside GLMZ jurisdiction)
@@ -235,7 +235,7 @@ On the bicentennial of the Korean War armistice (**1953 + 200 = 2153**), North a
 reunified as the **Republic of Korea**. The reunification was politically traumatic on both
 sides and concluded with a nationalist settlement that has hardened, not softened, since.
 
-**In 2225:**
+**In 2226:**
 - Extreme isolationism. No Pulse link. No foreign nationals admitted (de facto: no entry)
 - Trespassers are killed on sight; this is codified, not exceptional
 - **~95% genetic homogeneity:** achieved through strict immigration control, strong social
@@ -273,7 +273,7 @@ continental polity known as **Eurasia**. The merger was pragmatic on both sides:
 western Russian territories needed economic stability; the European bodies needed territorial
 depth after the Atlantic coastal collapses.
 
-Eurasia in 2225 is the dominant continental power in the eastern hemisphere:
+Eurasia in 2226 is the dominant continental power in the eastern hemisphere:
 - Rotterdam is a primary Pulse hub (GLMZ to Rotterdam in 43 minutes; confirmed WORLD.md §1.3)
 - Cultural exports are significant; the press corps is the world's most aggressive investigative
   body (it broke the False Prophet story in 2089)
@@ -301,7 +301,7 @@ The region has no Pulse hub (no political body stable enough to host one).
 
 ### World canon table (external territories, sealed)
 
-| Territory | Status in 2225 | Access |
+| Territory | Status in 2226 | Access |
 |---|---|---|
 | Australia | Absorbed into the Dreaming | None (Pulse: no hub; ships: do not return) |
 | Tierra del Fuego | Yahgan Peoples; Tequenica protects | None (ships turned; aircraft blocked) |

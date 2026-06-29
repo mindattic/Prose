@@ -73,9 +73,9 @@ only lever she controls.
   in the order she observes it, without editorial comment.
 - She has seen every institutional evasion and files each one correctly.
 
-**The school android (Aldiss-Mwangi Community Learning Center):**
+**The school android (Aldiss Mwangi Community Learning Center):**
 - A 2190s reception design: built to read as warm and approachable by 2190s standards.
-- What 2190s-era warmth looks like from 2225 is its own uncanny texture.
+- What 2190s-era warmth looks like from 2226 is its own uncanny texture.
 - Not a character — a bureaucratic interface. Treat it accordingly.
 
 **Bear (supporting; secondary contact):**
@@ -169,7 +169,7 @@ streets. Establishes GLMZ for first-time readers through administrative familiar
 than awe. Ends: *She had a caseload. Three disappearances. She drove.*
 
 ### Chapter 1 — The Car and the School
-Yemina drives the contractor car through the Pilsen Veil. The Aldiss-Mwangi Community
+Yemina drives the contractor car through the Pilsen Veil. The Mwangi Community
 Learning Center: four stories of poured concrete, each repair cycle a geological deposit.
 The 2190s-era android at the reception desk. The roster. Three names.
 

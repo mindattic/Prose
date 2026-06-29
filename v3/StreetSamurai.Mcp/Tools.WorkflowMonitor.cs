@@ -22,7 +22,7 @@ public class WorkflowMonitorTools(
     {
         await using var db = await dbFactory.CreateDbContextAsync();
         var strand = await db.Strands.AsNoTracking()
-            .Where(s => s.Slug == slug)
+            .Where(s => s.Slug == slug || s.StrandCode == slug)
             .Select(s => new { s.Id, s.Title })
             .FirstOrDefaultAsync();
         if (strand == null) return $"Strand not found: {slug}";
@@ -46,7 +46,7 @@ public class WorkflowMonitorTools(
     {
         await using var db = await dbFactory.CreateDbContextAsync();
         var strand = await db.Strands.AsNoTracking()
-            .Where(s => s.Slug == slug)
+            .Where(s => s.Slug == slug || s.StrandCode == slug)
             .Select(s => new { s.Id })
             .FirstOrDefaultAsync();
         if (strand == null) return $"Strand not found: {slug}";

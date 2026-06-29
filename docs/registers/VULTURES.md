@@ -29,18 +29,18 @@ updated: 2026-06-14
 You are writing the VULTURES register of the GLMZ — profane, procedural, absurd, sickeningly
 funny, and ultraviolent without ever being told it's allowed to enjoy it. Two body men in a
 van. Quentin Tarantino's hitmen crossed with the two guys on the back of the garbage truck,
-doing organ repossession for Carrion Logistics. **They are sanitation workers and they know
+doing organ repossession for Carrion Reclamations. **They are sanitation workers and they know
 it** — bodies are the route, organs are the recyclables, a fresh corpse is just a heavier bag.
 The horror is the day job; the comedy is that it's just the day job; the dignity is that
 somebody has to do it and they're the ones who showed up.
 
 1. **THE TWO-HANDER IS THE ENGINE.** Everything rides on the partnership. The unit of the
    register is two professionals in a confined space — a truck cab, a stairwell, a kitchen with
-   a body in it — talking. One is the worrier (Thomas: the math, the daughter Paz, the clock, the
+   a body in it — talking. One is the worrier (Tomas: the math, the daughter Paz, the clock, the
    quota that feeds her); one is the heartless-efficient one (Levin: cold hands, no flinch, the
    period he sends instead of a sentence, and the habit riding shotgun in his blood). In the
    opening repo Levin is pure cold competence — that's the baseline the whole book grows him away
-   from. They finish each other's logistics. They never once say they're friends. Thomas is the one
+   from. They finish each other's logistics. They never once say they're friends. Tomas is the one
    with something to lose, so he's afraid; Levin has nothing he's protecting and a drug that keeps
    him level, so he isn't — and that's the imbalance the whole register torques against.
 
@@ -132,7 +132,7 @@ somebody has to do it and they're the ones who showed up.
    narrating or flinching at things not in the room, unnaturally calm at the wrong moments and
    unraveling at ordinary ones. As the day goes sideways his unreliability makes the panic-comedy
    crazier and the danger realer (when he runs dry he field-doses from the Scarab's analgesic well,
-   which is its own horror). Thomas spends half the book managing a catastrophe and half managing
+   which is its own horror). Tomas spends half the book managing a catastrophe and half managing
    his partner. Played for dread AND gallows comedy, NEVER for an after-school-special lesson — it's
    texture and detonator, not a moral. It is the one thing Levin can't itemize, and the register
    knows it. (The lattices he sees uncannily resemble Resonance Zone geometry — left unresolved.)
@@ -181,14 +181,14 @@ somebody has to do it and they're the ones who showed up.
 ## The dials (Vultures vs the law's neutral position)
 - Pacing: dialogue-forward, two-hander cycles; long talky scenes punctuated by sudden violence.
 - Win-rate: low-status survival — they don't win, they *get through it*; the quota is the only score.
-- Interiority: Thomas's POV, dry and anxious; the math follows him home; one flat feeling-line max (law).
+- Interiority: Tomas's POV, dry and anxious; the math follows him home; one flat feeling-line max (law).
 - The weird: the banality is the weird — organ accounts, dialysis pre-delivered, bodies as inventory.
 - Wounds: real and persistent (law); Levin's thesis-object is the haunting — the route's dead surfacing in his Tears visions, working on the man who swears he feels nothing.
-- Crew roles: Levin drives the Wagon; Thomas runs the Scarab (the harvest is his hands). They swap when the job demands, but that's the default.
+- Crew roles: Levin drives the Wagon; Tomas runs the Scarab (the harvest is his hands). They swap when the job demands, but that's the default.
 - Temperature: room temperature over carnage. Warmth is forbidden on the surface and total underneath.
 - Profanity: ON (register-specific license; does not extend to Kyle/SORROW/JOY prose).
 - The harvest: the ONE place the camera goes slow, clinical, and explicit; everything else can be fast.
-- The addict: Levin's unreliability is a destabilizer the prose exploits — POV is Thomas, so we watch Levin slip from outside.
+- The addict: Levin's unreliability is a destabilizer the prose exploits — POV is Tomas, so we watch Levin slip from outside.
 
 ## Vultures-specific prohibitions
 - Never narrate the joke. The gap between banter and body is the reader's to hold; the characters never see it.
@@ -201,25 +201,29 @@ somebody has to do it and they're the ones who showed up.
 - Never moralize the addiction, and never let Levin's habit become the *point*; it's detonator and texture.
 - Never play the prostitute's death as tragedy or as titillation; she chose it, with reasons, with dignity.
 
-## The willing dead (the prostitute doctrine)
-The body that ends up in the son's bed is a person before she is a prop, and her death is NOT a
-tragedy and NOT a casualty — she *chose* it, and the register must make that choice land as
-honorable rather than grim. She is someone for whom dying on her own terms, for a price that does
-something she wants done (a debt cleared, a child placed, a name bought back, a sentence she won't
-serve), is the best deal on a bad table — and she negotiates it like the professional she is. The
-Vultures treat her with the gruff respect sanitation men give the dead who didn't make a mess. Her
-scene is given real weight, real reasons, a real face and voice — then she is, with her consent and
-something close to relief, part of the route. The register earns this by *convincing the reader*,
-never by hand-waving: she gets her say before the larder.
+## The dead donor (RETCONNED 2026-06-28 — the OD, not the willing woman)
+> The original "willing woman who chooses an honorable death" doctrine is STRUCK. Maisy Achterberg
+> does not negotiate or consent. See VATD bible §4 lock #4 and §5c.
+
+The body that ends up in the heir's bed is a person before she is a prop — but her death is plain,
+squalid, and unchosen. **Maisy dies of a Velvet overdose.** She is found because a john finished with
+her, went to pay, noticed she was dead, **kept his credstick, and walked** — "real knight in shining
+armour." No call-in, no last words; the dispatch comes when a payment bounces. The weight is not in
+any noble bargain; it's in the squalor of it and in the fact that **Levin knew her** (prom, sixteen
+years ago). The register earns the scene by playing it DRY — no sentiment, no speeches, the gruff
+respect sanitation men give the dead who didn't make a mess — and by the bitter privacy of Levin's
+recognition. Her rare-type heart becomes the donor; that the donor is the one person Levin still
+carried is the gut-punch, never underlined. (Foreshadow the tissue match — it must read as a planted
+payoff, not a coincidence.)
 
 ## Touchstones (orientation, not a costume)
 The register's texture is a braid of three films/shows. Use for DNA, never for cosplay — the GLMZ
 owns this; never quote, never homage on the page.
 
 **Pulp Fiction (the spine — the two-hander and the black comedy):**
-- Thomas + Levin = Vincent + Jules: the two-hander, the trade-talk, the panic, the divergent fates.
+- Tomas + Levin = Vincent + Jules: the two-hander, the trade-talk, the panic, the divergent fates.
 - Levin's habit = Vincent's: the using-on-the-job junkie whose unreliability nearly sinks them.
-- Carrion Logistics = Marsellus's organization: the banal authority whose forms are law.
+- Carrion Reclamations = Marsellus's organization: the banal authority whose forms are law.
 - The wrong body / the live pulse (the son shot at the drug house) = Marvin: the accident that detonates the routine.
 - The Wagon + the Scarab = the Vultures' Wolf-kit: competence-as-cleanup is the genre's heartbeat.
 - The Lotus détente = the professional courtesy between organizations that keeps it from going nuclear.
@@ -248,7 +252,7 @@ owns this; never quote, never homage on the page.
   (cold racks, multi-body); clinic and morgue on wheels.
 - **Tears** (clinical *Lethedol*) — ocular dissociative; Levin's habit; the dose-to-function / dose-to-suppress-
   the-visions loop; glassy eyes, lattice hallucinations; resonates with Resonance Zone geometry (unresolved).
-- **Thomas Holst** — POV; family man; daughter Paz; the fear and the math; the Scarab operator (the harvest is his hands).
+- **Tomas Alvarado** — POV; family man; daughter Paz; the fear and the math; the Scarab operator (the harvest is his hands).
 - **Levin Calder** — heartless-efficient; the Wagon's driver; the Tears habit; the wildcard; the period instead of a sentence. NO financed-kidney past (struck — it would soften the opening; he must be cold there).
 - **Lotus Syndicate** — East/SE Asian **blood-purity supremacist** order under an honor veneer; members born to a "pure enough" bloodline with East Asian names; the impure are used, never admitted. Leadership = the Stems / the Root; muscle = the Thorns. See the faction entity.
 - **Han Do-yun** (was "Orlan Bek") — Lotus heir (bloodline son), shot at the drug house; rides the ward; arranged marriage the next morning.

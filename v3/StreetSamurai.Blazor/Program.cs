@@ -778,27 +778,6 @@ if (args.Contains("--reparent-strand"))
     return;
 }
 
-//   ss --set-summary (--slug <slug> | --id <id>) --text "..." | --file path.txt
-//   — write the back-of-book blurb directly to Strands.Summary
-if (args.Contains("--set-summary"))
-{
-    var cliBuilder = WebApplication.CreateBuilder(args);
-    cliBuilder.Services.AddStreetSamuraiServices();
-    var cliApp = cliBuilder.Build();
-    Environment.ExitCode = await SetSummaryCli.RunAsync(args, cliApp.Services);
-    return;
-}
-
-//   ss --generate-summary (--slug <slug> | --id <id>) [--model <id>] [--dry-run]
-//   — LLM-generates a 100–150 word KDP blurb from prose and saves to Strands.Summary
-if (args.Contains("--generate-summary"))
-{
-    var cliBuilder = WebApplication.CreateBuilder(args);
-    cliBuilder.Services.AddStreetSamuraiServices();
-    var cliApp = cliBuilder.Build();
-    Environment.ExitCode = await GenerateSummaryCli.RunAsync(args, cliApp.Services);
-    return;
-}
 
 // CLI mode: render the WHOLE strand as one continuous audiobook (one TTS pass,
 // tiered to ElevenLabs limits — one request, else per-chapter, else split) and
@@ -1564,6 +1543,20 @@ if (args.Contains("--examine-emotion"))
     cliBuilder.Services.AddStreetSamuraiServices();
     var cliApp = cliBuilder.Build();
     Environment.ExitCode = await ExamineEmotionCli.RunAsync(args, cliApp.Services);
+    return;
+}
+
+// ss --causality-check / --affect-check / --interpersonal-check --slug <slug> [--json]
+// "Behave like people" beat lenses: cause-effect (kill "and then"), emotion→action,
+// and verbal+non-verbal interpersonal dynamics (the 90+ relational lever).
+if (args.Contains("--causality-check") || args.Contains("--affect-check") || args.Contains("--interpersonal-check"))
+{
+    var lens = args.Contains("--causality-check") ? "causality"
+             : args.Contains("--affect-check") ? "affect" : "interpersonal";
+    var cliBuilder = WebApplication.CreateBuilder(args);
+    cliBuilder.Services.AddStreetSamuraiServices();
+    var cliApp = cliBuilder.Build();
+    Environment.ExitCode = await BeatLensCli.RunAsync(args, cliApp.Services, lens);
     return;
 }
 

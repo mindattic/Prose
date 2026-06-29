@@ -98,7 +98,7 @@ happened to the others."**
 
 **Casper Vey, "the Antiquarian" (recurring ally, not villain) — the analog-truth keystone
 (sharpened 2026-06-17):** NOT a quaint shopkeeper. An **antiques dealer** whose shop,
-**ANTIQUITY & STATIONARY**, is stocked with what 2225 calls antiques and the reader recognizes
+**ANTIQUITY & STATIONARY**, is stocked with what 2226 calls antiques and the reader recognizes
 as the future — first-generation neural rigs, dead handsets, early autonomous drones,
 pre-collapse server blades, the cutting edge of every decade that promised to fix the world
 and relics of the one that didn't. His trade is **provenance**: in a GLMZ where the Big-20 own
@@ -128,7 +128,7 @@ the season villain.
    count (Cacophony five rounds, sacred), the payment ritual (standard rate, exact, every
    time; refused payment = refusal of the relationship), the half-step back, the
    laugh-or-cry register, the wound ledger billed in calories and years.
-2. **The world** — GLMZ 2225: West Town, the Loop underlevels, Mrs. Chen's counter, the
+2. **The world** — GLMZ 2226: West Town, the Loop underlevels, Mrs. Chen's counter, the
    Narrows cherry trees, the Pulse, the Behemoths, the Lotus Syndicate, the peer-freelancer
    ecosystem (Echo, Stash, Gantry, Furnace, Ledger, Sparrow, Aleksei). Tech is the symptom of
    progress, never moralized (the D-class finishing a 30-year shift is the emblem).

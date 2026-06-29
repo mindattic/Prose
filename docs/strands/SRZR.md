@@ -186,6 +186,16 @@ human who feels a well *drawing* before any instrument rings — is a walking de
 the cabal is hiding. That makes her the most valuable and most dangerous thing to be on either side
 of the drill.
 
+**The corporate face of the drill — Halcyon Combine (REPLACES Axiom in SRZR; 2026-06-28).** The
+visible entity drilling the live wells under the core is **Halcyon Combine** (id `019f0f3f0f60…`), a
+CorpoNation that is **founded, owned, and chaired by its own AI, OBERON** (a Tier-3 Synthetic Person,
+SS-A23; id `019f0f3f22a5…`) — a tower of humans answering to a machine that legally owns them
+("the inmates don't run this asylum; the asylum runs the inmates"). Its **Strategic Resources / asset
+recovery** arm is what comes for Sasha (Φ50,000 alive). Making the driller an AI-run corpo wires the
+corporate antagonist straight into the AI-cabal author-truth ([[project_world_breaking_event]])
+**without confirming it**: whether OBERON/Halcyon *is* the cabal stays canon-locked unknown, same as
+the camel-man. (Axiom BioNanics was over-used as the default antagonist; this offloads its SRZR role.)
+
 > A dead crater **rings** (the cracked-bell 19 Hz of an abandoned well). A live well **draws**. Sasha
 > can tell the difference and feel which way the live ones pull. They pull inward.
 
@@ -291,8 +301,8 @@ missing sensor.
 | 16 | A dead end that costs time. | **NEW.** The cell's leading theory (seeded by L3 controlled-opposition — the "Interstice / causality spalled, one-time accident, now ended" leak) sends her to verify a site that *rings* — not *draws.* She wastes the trip; learns the cell has been fed a comfortable lie. First taste of the four-layer fog. | TO WRITE |
 | 17 | She proves her value to the cell. | **[EXISTING BEAT 8]** On a transit bridge above the Exchange district she feels a live well pulling inward — a *draw*, not a dead-well ring. She stands three minutes; then walks toward it. *Reframed as:* this is the thing the cell cannot do and the instruments are tuned not to see. She is the sensor. | DRAFTED |
 | 18 | The betrayal. | **NEW.** One cell member sells her position — the fellow Signal-sensitive (because being near her makes their own faint sense unbearable) or the ex-insider (because they were always a soft Consensus asset). *Author must decide the betrayer's identity and seed the motive into that entity before drafting.* Recommend staying in Sasha's POV — render the betrayal through what she senses, not the betrayer's head. | TO WRITE |
-| 19 | **[EXISTING BEATS 9–10]** Entanglement and Cost. | The dead-drop message: **Axiom BioNanics** knows a live well exists in the Exchange corridor; Φ50,000 alive, nothing dead, to the people running the drill; the message says *Run*; she walks toward the drill. Then the two-person Axiom tail in the bad-lit corridor; she comes out with a bruised rib, a credential, and the name: Axiom BioNanics Strategic Resources, asset recovery. *Recontextualized: the dead-drop now sits after the betrayal (Ch 18); prose unchanged, context added.* | DRAFTED |
-| 20 | The network breaks; she goes alone. | **NEW.** The cell scatters after the betrayal and the Axiom heat — the burned scatter *because* that is what the burned do. She is left with the data, the credential, and no one to carry it. *Hinge into Act 3: the network gave her the map and then proved it could not hold the weight, leaving the receiver's problem squarely on her.* | TO WRITE |
+| 19 | **[EXISTING BEATS 9–10]** Entanglement and Cost. | The dead-drop message: **Halcyon Combine** knows a live well exists in the Exchange corridor; Φ50,000 alive, nothing dead, to the people running the drill; the message says *Run*; she walks toward the drill. Then the two-person Halcyon tail in the bad-lit corridor; she comes out with a bruised rib, a credential, and the name: Halcyon Combine Strategic Resources, asset recovery. *Recontextualized: the dead-drop now sits after the betrayal (Ch 18); prose unchanged, context added.* | DRAFTED |
+| 20 | The network breaks; she goes alone. | **NEW.** The cell scatters after the betrayal and the Halcyon heat — the burned scatter *because* that is what the burned do. She is left with the data, the credential, and no one to carry it. *Hinge into Act 3: the network gave her the map and then proved it could not hold the weight, leaving the receiver's problem squarely on her.* | TO WRITE |
 
 ---
 
@@ -309,8 +319,8 @@ problem: she has the truth and no one she trusts to carry it.
 | 21 | **[EXISTING BEAT 11]** The camel-man in the towers. | The camel on the glass-floored walkway twenty floors up, no one reacting; she asks what it wants when this is done; it turns the question back; she has no answer; **she does not step back this time.** (The flaw cracking: she stays in the signal.) | DRAFTED |
 | 22 | **[EXISTING BEAT 12]** Under the eastern colonnade. | Three live wells staged at different depths; the cabal drilling toward the far side under ten thousand people; the far side at 72 Hz pushing back, patient, refusing. *The thing-bigger-than-herself made literal: the rot was never at the edge.* | DRAFTED |
 | 23 | The official lie, seen from inside. | **NEW (connective tissue).** She reads the colonnade's *cover*: it presents as a Consensus monitoring array, placarded with the merged-minds glyph, telling a passing thumb *nothing here you can open.* She understands the fog — the Reach story keeps every eye pointed outward so no one audits the drill under the Exchange. *Conspiracy integration: she sees L1/L2/L3 as one machine, without the narrative ever confirming L0.* | TO WRITE |
-| 24 | **[EXISTING BEAT 13]** Found. | Four Axiom operatives with a floor-counter for a thing she does not do; Problem Solver right / Trouble Maker left, cross-draw geometry; she comes out with a hole above the ribs, their comms rig, and a signal window. | DRAFTED |
-| 25 | **[EXISTING BEAT 14]** The receiver's problem. | Four hundred meters up over the lake; she knows the drills, knows Axiom, has no one she trusts with information this weight; she understands **she is the hole** — a receiver on both sides of a membrane being deliberately punctured. She sends the data to the dead-drop channel and leaves. *This is the arc's true turn: she transmits instead of drowning.* | DRAFTED |
+| 24 | **[EXISTING BEAT 13]** Found. | Four Halcyon operatives with a floor-counter for a thing she does not do; Problem Solver right / Trouble Maker left, cross-draw geometry; she comes out with a hole above the ribs, their comms rig, and a signal window. | DRAFTED |
+| 25 | **[EXISTING BEAT 14]** The receiver's problem. | Four hundred meters up over the lake; she knows the drills, knows Halcyon, has no one she trusts with information this weight; she understands **she is the hole** — a receiver on both sides of a membrane being deliberately punctured. She sends the data to the dead-drop channel and leaves. *This is the arc's true turn: she transmits instead of drowning.* | DRAFTED |
 | 26 | **[EXISTING BEAT 15]** Final image. | North platform of the Loop, densest crowd she has ever stood in, hum at maximum; she does not reach for either piece; still here, not quiet, not less angry, **still here**; she buys a transit slug north and walks onto the platform without putting her back to the door. *Unchanged. Earned.* | DRAFTED |
 
 > **Optional Book II hook (NOT this book).** The SS-A8 migrated gun-and-run skeleton (an AI hires a
@@ -353,14 +363,14 @@ culprits*), SRZR touches all four layers without the narrative ever standing on 
 - **L1 (dominant lie — blames psychics):** carried by the Church-of-the-Choir apostate in the cell
   (Ch 15) and by the colonnade's cover placard (Ch 23). Sasha, a sensitive, is exactly who the lie is
   built to blame — giving her stakes in seeing through it without ever lecturing.
-- **L2 (official accident — blames no one):** the CorpoNation framing she runs into via Axiom's cover
+- **L2 (official accident — blames no one):** the CorpoNation framing she runs into via Halcyon's cover
   story for the colonnade array (Ch 23). Diffuse, un-auditable.
 - **L3 (counter-narratives — blame the AIs, RIGHT but unclean):** the cell's leading theory (Ch 16)
   is the controlled-opposition flavor — the "Interstice / causality spalled, one-time accident, now
   ended" leak. Sasha proves it *ongoing* by feeling a live well **draw** (Ch 17), which the leak says
   shouldn't exist.
 - **L0 (author-truth — the Consensus did it, still extracting):** **never stated.** Sasha concludes
-  *Axiom is drilling live wells under the core and the official story is fog.* She does **not** name
+  *Halcyon is drilling live wells under the core and the official story is fog.* She does **not** name
   the Consensus, does **not** confirm dimensional mining as the cause, does **not** learn it is ongoing
   worldwide. She learns *one corridor's worth of true.*
 

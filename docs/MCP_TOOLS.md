@@ -11,12 +11,13 @@
 > All tools are MCP-prefixed `mcp__streetsamurai__<name>` by the client. Most return a
 > JSON string; the canon is the SQL database, scoped to the active Universe.
 
-**195 tools** across **28 tool families.**
+**198 tools** across **29 tool families.**
 
 ## Families
 
 | Family | Tools |
 | --- | --- |
+| [Beat Lens](#beat-lens) | 3 |
 | [Bible](#bible) | 3 |
 | [Canon](#canon) | 9 |
 | [Combat](#combat) | 1 |
@@ -45,6 +46,28 @@
 | [World Entity Crud](#world-entity-crud) | 5 |
 | [World Modelling](#world-modelling) | 15 |
 | [Writing](#writing) | 3 |
+
+## Beat Lens
+
+<sub>`BeatLensTools`</sub>
+
+### `affect_check`
+
+Check whether each character's EMOTION believably DRIVES their ACTION. Flags actions that ignore what just happened, unmotivated calm, feelings named but not enacted. Files advisory Findings; returns score 0-100 + issues. Arg: strand GUID or slug.
+
+- `strandIdOrSlug` (string, required) — Strand id (GUID) or slug.
+
+### `causality_check`
+
+Check a strand's CAUSE-AND-EFFECT: do beats follow by therefore/but rather than 'and then'? Flags episodic transitions, effects without setup, actions against established motive, implausible reactions. Files advisory Findings; returns score 0-100 + issues. Arg: strand GUID or slug.
+
+- `strandIdOrSlug` (string, required) — Strand id (GUID) or slug.
+
+### `interpersonal_check`
+
+Check INTERPERSONAL DYNAMICS — the 90+ relational lever. Are exchanges doing real relational work on BOTH channels (verbal subtext + non-verbal body/gesture)? Flags info-only dead exchanges, missing non-verbal channel, on-the-nose emotion-naming, bonds that don't change. Files advisory Findings; returns score 0-100 + issues. Arg: strand GUID or slug.
+
+- `strandIdOrSlug` (string, required) — Strand id (GUID) or slug.
 
 ## Bible
 

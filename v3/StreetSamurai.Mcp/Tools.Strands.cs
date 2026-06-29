@@ -105,7 +105,7 @@ public class StrandTools
         if (Guid.TryParse(slugOrId, out var gid))
             return await db.Strands.AsNoTracking().AnyAsync(s => s.Id == gid) ? gid : (Guid?)null;
         return await db.Strands.AsNoTracking()
-            .Where(s => s.Slug == slugOrId).Select(s => (Guid?)s.Id).FirstOrDefaultAsync();
+            .Where(s => s.Slug == slugOrId || s.StrandCode == slugOrId).Select(s => (Guid?)s.Id).FirstOrDefaultAsync();
     }
 
     [McpServerTool, Description("List strands. Use kind='story' to list all root stories (no parent); kind='chapter' for all sub-strands (contain beats). Returns a flat list of id, slug, title, kind, status, beat-count, stale-count.")]
@@ -135,7 +135,6 @@ public class StrandTools
             beats = beatCounts.GetValueOrDefault(s.Id, 0),
             has_bible = s.StrandBible != null,
             parent_strand_id = s.ParentStrandId,
-            summary = s.Summary,
         });
         return JsonSerializer.Serialize(result, CanonTools.JsonOpts);
     }
@@ -151,7 +150,6 @@ public class StrandTools
         {
             id = strand.Id, slug = strand.Slug, title = strand.Title, kind = strand.Kind,
             status = strand.Status, synopsis = strand.Synopsis, seed = strand.Seed,
-            summary = strand.Summary,
             voice_id = strand.VoiceId,
             parent_strand_id = strand.ParentStrandId, chars_narrated = strand.CharsNarrated,
             has_bible = strand.StrandBible != null,
@@ -949,6 +947,6 @@ public class StrandTools
             var byId = await db.Strands.AsNoTracking().FirstOrDefaultAsync(s => s.Id == guid);
             if (byId != null) return byId;
         }
-        return await db.Strands.AsNoTracking().FirstOrDefaultAsync(s => s.Slug == idOrSlug);
+        return await db.Strands.AsNoTracking().FirstOrDefaultAsync(s => s.Slug == idOrSlug || s.StrandCode == idOrSlug);
     }
 }

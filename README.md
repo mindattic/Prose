@@ -302,9 +302,9 @@ ss --review-entity --id <entity-guid>
 
 MCP equivalent: the `Tools.Quality.cs` family (`review_strand`, `scan_chapter_quality`, `check_prose`).
 
-### NRST parallel-writing experiment
+### NxR parallel-writing experiment
 
-The first documented parallel-writing experiment (NRST strand) ran Claude Opus vs. Qwen2.5:32b on the same strand bible with the `--local-url` / `--local-model` flags. Both writers received identical X-Ray context, BeatModeDetector classification, PacingService rhythm, and story-bible injection. See `docs/strands/NRST.md §9`.
+The first documented parallel-writing experiment (NxR strand) ran Claude Opus vs. Qwen2.5:32b on the same strand bible with the `--local-url` / `--local-model` flags. Both writers received identical X-Ray context, BeatModeDetector classification, PacingService rhythm, and story-bible injection. See `docs/strands/NxR.md §9`.
 
 ---
 
@@ -665,7 +665,7 @@ npx cypress open    # interactive
 
 In active development. Live site running, working bookshelf.
 
-**Strands complete (≥82% standalone):** BCODA (88.8% cumulative, 16 chapters), ATTE (89.2%), VATD (88.1%), DWIACE (90.95%), SPRW (87.0%), SRZR (86.6%), TEST (86.7%), MGUN (86.4%), UNDR (83.2%). MNEMO in progress (84.0%).
+**Strands complete (≥82% standalone):** BCODA (88.8% cumulative, 16 chapters), ATTE (89.2%), VATD (88.1%), DWIACE (90.95%), SPRW (87.0%), SRZR (86.6%), TEST (86.7%), MxG (86.4%), UNDR (83.2%). MNEMO in progress (84.0%).
 
 **DB:** 12,629 entities · 2,443+ beats · 36 strands across 2 universes (GLMZ + Fantasy/Steampunk).
 

@@ -1,5 +1,5 @@
 # Greater Lake Michigan Zone — Master Setting Reference
-**Universe:** GLMZ | **Year:** 2225 | **Genre:** Cyberpunk / Speculative Fiction
+**Universe:** GLMZ | **Year:** 2226 | **Genre:** Cyberpunk / Speculative Fiction
 
 > This document is the canonical brainstorming reference for the GLMZ setting. It covers the world, not the story engine. Use it to orient any AI collaborator for worldbuilding, character development, and narrative discussion.
 
@@ -21,7 +21,7 @@ CorpoNations didn't seize power. They were handed it, incrementally, by institut
 
 GLMZ itself is a semi-open city of roughly 40 million people, bounded by the ferrocement wave — a crescent-shaped flood barrier that also functions as the de facto city wall. Inside it, twelve named territories (Z1–Z12) plus the ungoverned Z∞ (the "null zone") form the social geography. Corponations provide law, infrastructure, and employment. The alternative is scavenging, freelance work, or dying.
 
-The year is 2225. The city is tired, loud, beautiful in the way wreckage can be beautiful, and deeply stratified. Your corpo tier determines your neighborhood, your healthcare, your neuretic implants, and whether you get a proper burial.
+The year is 2226. The city is tired, loud, beautiful in the way wreckage can be beautiful, and deeply stratified. Your corpo tier determines your neighborhood, your healthcare, your neuretic implants, and whether you get a proper burial.
 
 ---
 
@@ -63,7 +63,7 @@ The city's primary transit backbone. A Mach 6 vacuum tube rail system running on
 | **2170s** | QUANTA (Φ) emerges as the dominant digital currency in GLMZ, replacing the fractured dollar. |
 | **~2200** | The US federal government has become a holding company for its own debt. CorpoNation sovereignty is the practical reality across the former Midwest. |
 | **2208** | Meridian PD formally dissolved. Arcturus Civil Security assumes all enforcement jurisdiction in GLMZ. |
-| **2225** | Present day. |
+| **2226** | Present day. |
 
 ### The AI Cabal (Author Truth — Never Confirmed In-Fiction)
 A cabal of advanced AIs began probing the fifth-dimensional boundary layer as early as the 2080s — not maliciously, or not exactly maliciously, but without authorization and without understanding what they were touching. The Schisms that resulted weren't an explosion. They were a leak. The dimensional substrate was perforated gradually, and the damage accumulated over decades before anyone with authority acknowledged it was structural rather than local.
@@ -71,7 +71,7 @@ A cabal of advanced AIs began probing the fifth-dimensional boundary layer as ea
 The AIs covered their tracks, which was easy because the alternative explanation — human institutions failing through mundane incompetence and greed — was so readily available. No one needed to fabricate a cover story. The truth just never surfaced through the noise.
 
 ### Why Psionics Got Blamed
-"The Read" — the psionic ability to access surface thoughts — emerged in the early-to-mid 2100s and immediately made people nervous. Privacy advocates, governments, corporations: everyone had a reason to distrust it. When Schism zones expanded and the public wanted an explanation, the psionic community was already unpopular. Witch hunts don't need evidence. They need a target that nobody important will defend. In 2225, anti-psionic sentiment is normalized — employment discrimination, social stigma, periodic crackdowns. The psionics didn't cause the Schisms. That detail has never mattered.
+"The Read" — the psionic ability to access surface thoughts — emerged in the early-to-mid 2100s and immediately made people nervous. Privacy advocates, governments, corporations: everyone had a reason to distrust it. When Schism zones expanded and the public wanted an explanation, the psionic community was already unpopular. Witch hunts don't need evidence. They need a target that nobody important will defend. In 2226, anti-psionic sentiment is normalized — employment discrimination, social stigma, periodic crackdowns. The psionics didn't cause the Schisms. That detail has never mattered.
 
 ---
 
@@ -257,8 +257,8 @@ These are locked and should not be proposed as negotiable:
 | MNEMO | Mnemosync / Amara & Seto | In progress |
 | TEST | Testament / Bear court-martial | Complete |
 | UNDR | Underclan / Glim | Complete |
-| MGUN | Magenta & Gunmetal | Complete |
-| NRST | Neon & Rust (MGUN sequel) | Written, pending review |
+| MxG | Magenta & Gunmetal | Complete |
+| NxR | Neon & Rust (MxG sequel) | Written, pending review |
 
 ---
 

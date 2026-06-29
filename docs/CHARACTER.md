@@ -23,6 +23,39 @@ buy back a character who does not want anything.
 
 ---
 
+## §0.5 — The Relational Law: interpersonal interaction is the 90+ lever {#SS-CHAR-relational}
+
+A cast of *people* (§1) is necessary but not sufficient. What lifts a strand from the high-80s to
+**90+** is **what passes between them** — genuine human interaction, good, bad, or indifferent. More
+plot events don't do it; more polished prose doesn't do it. *People acting like people toward each
+other* does. This is the secret sauce of the whole enterprise: **humans interacting with humans in a
+human way, in the middle of an uncaring world.**
+
+**Every scene with two or more people is a relationship under pressure**, carried on two channels at
+once — and BOTH must be on the page:
+- **Verbal** — what is said, what is pointedly *not* said, the answer to the question under the
+  question, deflection, teasing, the small dry thing chosen over the large true one, status moves,
+  repair attempts, the apology that arrives as an insult.
+- **Non-verbal** — body and proximity, eye contact and its refusal, the better cup handed
+  handle-first, a thumb on a pulse, who touches whom, who steps back, what the body does that the
+  mouth contradicts.
+
+**Rules:**
+- The exchange must do real **relational work**: shift power, deepen or fracture a bond, expose or
+  conceal, forgive or wound. An exchange that only conveys information is dead weight.
+- **Subtext over statement.** Characters rarely name the feeling; the reader feels it through
+  behavior (see VOICE: tenderness arrives as objects and gestures, never as statements).
+- **Continuity of the bond:** every exchange leaves the relationship changed, and the change carries
+  forward into later scenes.
+- **Indifference counts.** Two people failing to connect — or not caring to — is interaction. Render
+  it; don't skip it.
+
+This is the craft target the **InterpersonalDynamicsService** (verbal + non-verbal exchange tracking)
+will measure and enforce, beside the affect→behavior and causality services. Proof case: in VATD the
+story is Tomas's fury at Lev and how the heart-hunt mends them — not the heist.
+
+---
+
 ## §1 — The Law {#SS-CHAR-§1}
 
 1. **Every named character has a Drive and an Obstacle.** No exceptions for "minor" roles.
@@ -199,7 +232,7 @@ test in miniature; these are the same people across both strands.
 - **Boiler (Mikkeli Väinämöinen).** *Drive:* the beauty of a thing under load, and the moment it
   finally goes. *Obstacle:* the delight isolates him. *Only he sees:* what every structure — and
   every person — is carrying that it was never rated for.
-- **Scout (Remi Nakamura-Diallo).** *Drive:* to matter to the work without having to be in the
+- **Scout (Remi Diallo).** *Drive:* to matter to the work without having to be in the
   room for it; the quiet she keeps for herself. *Obstacle:* the gap between jacked-in omniscience
   and jacked-out silence she has never tried to bridge. *Only she sees:* the world as coverage
   and approach vectors. *(Formerly the cast's blank-slate risk — this Drive is the fix.)*

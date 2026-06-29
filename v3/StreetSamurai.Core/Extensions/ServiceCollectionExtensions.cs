@@ -800,6 +800,14 @@ public static class ServiceCollectionExtensions
         // Available via `ss --story-audit` and the Tools.StoryAudit MCP tools.
         services.AddSingleton<StoryAuditService>();
 
+        // "Behave like people" beat lenses (Findings-only; no new DB tables).
+        //   CausalityService            — therefore/but, not "and then"     (ss --causality-check;     causality_check)
+        //   AffectBehaviorService       — emotion plausibly drives action   (ss --affect-check;        affect_check)
+        //   InterpersonalDynamicsService— verbal+non-verbal relational work (ss --interpersonal-check; interpersonal_check) — the 90+ lever
+        services.AddSingleton<CausalityService>();
+        services.AddSingleton<AffectBehaviorService>();
+        services.AddSingleton<InterpersonalDynamicsService>();
+
         // Deterministic prose sanity scan — no LLM; catches leaked internal codes,
         // undefined acronyms, encoding corruption, and heft floor violations.
         // Available via `ss --sanity-scan`.

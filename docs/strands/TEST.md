@@ -67,7 +67,7 @@ Sixteen monthly Φ transfers to the families of the 43 dead. Bear calls this *ob
 guilt. This distinction is character: it's not trauma, it's a man who made a moral accounting
 and decided what he owed. That's Bear — big and direct even about the hard things.
 
-The payments are also what made him findable. Hana Morimoto-Ferreira's Q: "Why didn't you
+The payments are also what made him findable. Hana Morimoto's Q: "Why didn't you
 depose someone from the unit?" Her A: "You were the only one who kept paying on the twenty-first."
 
 The obligation = the root of the whole case. CE-0217 stays classified. The payments stay visible.
@@ -96,11 +96,11 @@ The obligation = the root of the whole case. CE-0217 stays classified. The payme
 - Killed by Halcyon's own machinery (NS-7 flag at 1348, six hours after the hearing) — LOCKED.
   Bear's weapon was the three pages, not any Sunder discharge.
 
-**Hana Morimoto-Ferreira:**
+**Hana Morimoto:**
 - Civil accountability investigator. The one who reopens the case.
 - Her Q about the unit deposition reveals what the payments cost Bear.
 
-**Declan Iyengar-Marsh:**
+**Declan Iyengar:**
 - Halcyon Legal Division liaison. "Warm-voice threat."
 - NOT Arcturus. NOT IRA. Halcyon Civil Security specifically.
 

@@ -42,7 +42,7 @@ $strands = @(
         Prompt = "Cyberpunk book cover. A massive bearded man, 203 cm, military bearing, stands in civilian clothes in a stark government hearing room. Steel-blue eyes. Immovable. Behind him, a ghost image of a battlefield bleeds through in muted wartime tones. GLMZ 2225, military accountability drama. Gunmetal grey."
     }
     @{
-        Code  = "MGUN"
+        Code  = "MxG"
         Title = "Magenta and Gunmetal"
         Prompt = "Cyberpunk heist book cover. Five freelancer silhouettes sprint across a storm-lashed offshore platform on Lake Michigan at night. Magenta corporate neon from Axiom towers on the mainland vs gunmetal weapons and rain. A VTOL banking hard through storm above. Kinetic and cinematic. GLMZ 2225 crew heist thriller."
     }

@@ -74,7 +74,7 @@ operators correct it immediately. The Network is ambient proprioception, not cyb
 the husks the Scatter leaves, paid in stolen compute. Connects organ trade → E.L.F. → Douglas
 Hartley's shadow ledger.
 
-**Sol Castellanos-Park** — Jane Doe, dark mirror. Same want as Celeste (reach the dead
+**Sol Castellanos** — Jane Doe, dark mirror. Same want as Celeste (reach the dead
 boyfriend), couldn't afford a safe operator. Earlier Tributary victim. Marisol's echo of Sol
 = the same voice = the proof. This is the reveal pivot.
 
@@ -208,7 +208,7 @@ Celeste child strands un-merged — structural integration is remaining work.
 ## 8. User stories {#SS-DWIACE-8}
 
 - **DWIACE-US-1 ✅** All major entities seeded: Rennick Investigations (faction), all four
-  detectives, Celeste, Jace Dalton, The Tributary, Sol Castellanos-Park, Inés Castaño-Nwosu,
+  detectives, Celeste, Jace Dalton, The Tributary, Sol Castellanos, Inés Castaño-Nwosu,
   Cermak Reclamation Crew, Lakeshore Aggregation Zone.
 - **DWIACE-US-2 ✅** 12-chapter structure written (Sonnet draft → Opus polish per episode;
   dual POV interleaved).

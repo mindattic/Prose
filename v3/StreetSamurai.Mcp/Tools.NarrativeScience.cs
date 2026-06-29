@@ -120,7 +120,7 @@ public class NarrativeScienceTools(
             strandId = g;
         else
         {
-            var s = await db.Strands.AsNoTracking().FirstOrDefaultAsync(x => x.Slug == strandIdOrSlug);
+            var s = await db.Strands.AsNoTracking().FirstOrDefaultAsync(x => x.Slug == strandIdOrSlug || x.StrandCode == strandIdOrSlug);
             if (s == null) return JsonSerializer.Serialize(new { error = "strand_not_found", strandIdOrSlug }, JsonOpts);
             strandId = s.Id;
         }

@@ -60,7 +60,7 @@ voice-reliability doubt in Act I; give the entity escalating, concrete intrusion
 
 ## VATD — Vultures at the Door  (box 83.7 / flow 88.3; cloud 88.9)
 
-Box consensus: **"too much exposition, not enough tension," "overlong."** Dual-POV (Thomas & Levin + Ekow/Casimir).
+Box consensus: **"too much exposition, not enough tension," "overlong."** Dual-POV (Tomas & Levin + Ekow/Casimir).
 **Gaps:** (1) **Diffuse dramatic question** — split POV with no single transforming protagonist blurs *whose*
 arc this is. (2) **Tension deficit** — exposition substitutes for mounting pressure; no tightening clock.
 **Future gen:** commit to one driving question/arc spine; convert exposition into stakes; add a ticking pressure.

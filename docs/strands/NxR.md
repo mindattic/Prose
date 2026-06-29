@@ -1,11 +1,11 @@
 ---
-strand: NRST
+strand: NxR
 title: Neon & Rust
 kind: story
 universe: GLMZ
 status: planned
 register: HEIST
-previous: MGUN
+previous: MxG
 db-id: 019f06da-16ac-722b-bbff-002b7718f935
 ---
 
@@ -17,15 +17,15 @@ A ghost from the last job, a locked room inside someone's head, and the cost of 
 
 ## §0b — Sequel Position
 
-Direct sequel to **Magenta & Gunmetal** (MGUN). Everything that went wrong in MGUN went wrong because something was already failing before the crew arrived — the bridge, the camera window, the formula's dual-use potential. Neon & Rust runs on the same engine, applied inward: the things that break in this story are people, and they break because nobody performed the maintenance.
+Direct sequel to **Magenta & Gunmetal** (MxG). Everything that went wrong in MxG went wrong because something was already failing before the crew arrived — the bridge, the camera window, the formula's dual-use potential. Neon & Rust runs on the same engine, applied inward: the things that break in this story are people, and they break because nobody performed the maintenance.
 
 ## §1 — Genre & Tone
 
-**HEIST register** — same crew, same competence-porn core, but the rust angle changes the texture. Where MGUN was magenta and gunmetal — polished surface over everything that shoots back — NRST is neon over rust: light that looks warm from a distance, corrosion underneath that was never addressed. The GLMZ at night is all lit surface and no warmth, and beneath it everything is older than it looks and held together by deferred maintenance and habit.
+**HEIST register** — same crew, same competence-porn core, but the rust angle changes the texture. Where MxG was magenta and gunmetal — polished surface over everything that shoots back — NxR is neon over rust: light that looks warm from a distance, corrosion underneath that was never addressed. The GLMZ at night is all lit surface and no warmth, and beneath it everything is older than it looks and held together by deferred maintenance and habit.
 
 Close-third POV on Rook. The wry tactical distance holds; the emotional temperature is lower because Rook came back for a reason she has not fully audited yet.
 
-**Color language:** **Neon** is the light that makes the GLMZ legible at night — it coats every surface worth looking at, it bounces off the lake, it means nothing and looks like everything. **Rust** is what the infrastructure becomes when you stop maintaining it. The two colors appear throughout the story: the neon of Z2 signage rotting on their mounting brackets, the rust-bloom on the partition lock, Stave's hands. The title earns itself the same way MGUN's did — as a description of the world the crew lives in.
+**Color language:** **Neon** is the light that makes the GLMZ legible at night — it coats every surface worth looking at, it bounces off the lake, it means nothing and looks like everything. **Rust** is what the infrastructure becomes when you stop maintaining it. The two colors appear throughout the story: the neon of Z2 signage rotting on their mounting brackets, the rust-bloom on the partition lock, Stave's hands. The title earns itself the same way MxG's did — as a description of the world the crew lives in.
 
 ## §2 — Premise
 
@@ -39,7 +39,7 @@ The note reads: **There is a second thing in my head.**
 
 When Ohara encoded the Class V formula for broadcast, she realized she had inadvertently archived something else — a secondary research thread she had buried even from herself. A cognitive partition she had created eighteen months ago and locked behind a neuretics passphrase she no longer remembers. She knows it exists. She cannot access it. She does not know what it contains, but based on the research she was doing when she created it, she has a working theory, and the theory is bad enough that she cannot let Adalemo's people take her intact.
 
-**The hardware problem:** The partition is Atlas-grade neuretics — eleven years old, two generations behind current standard, running on firmware that has not been patched since 2221. The same year Axiom laid off the network maintenance team that would have closed the camera window in MGUN. The GLMZ runs on things that should have been fixed and weren't, and Ohara's own head is no different. The lock is rusting shut in real time — every week it sits untouched, the encoded data becomes less recoverable. They do not have the luxury of a careful approach. They have a window, and the window is closing the way everything in the GLMZ closes: not all at once, but incrementally, until one day it is gone.
+**The hardware problem:** The partition is Atlas-grade neuretics — eleven years old, two generations behind current standard, running on firmware that has not been patched since 2221. The same year Axiom laid off the network maintenance team that would have closed the camera window in MxG. The GLMZ runs on things that should have been fixed and weren't, and Ohara's own head is no different. The lock is rusting shut in real time — every week it sits untouched, the encoded data becomes less recoverable. They do not have the luxury of a careful approach. They have a window, and the window is closing the way everything in the GLMZ closes: not all at once, but incrementally, until one day it is gone.
 
 **The job:** Crack the partition before PEREGRINE reaches Ohara. Then make a decision about what's inside — release it, or destroy it — before anyone else makes it for them.
 
@@ -52,20 +52,20 @@ Returns. She broke her own rule. The note made it easy and that is exactly what 
 
 Her rule was: no repeat clients, no repeat crew. She agreed to this before fully thinking through why. Now she is here.
 
-**Wound:** Still present from MGUN. Not fixed by a single job that went right. Partial opening only.
+**Wound:** Still present from MxG. Not fixed by a single job that went right. Partial opening only.
 
 ### Tem Okafor ("Vox")
 Running four channels instead of six. The graze wound from the Lake Platform healed. The bandwidth did not fully come back. Vox has been quietly rebuilding the agent network from scratch using older, slower methods — gray-market firmware, deprecated protocols, tools the current security infrastructure does not bother scanning for because nobody uses them anymore. Rust as tactical advantage: the rotting edge of the GLMZ tech ecosystem is precisely what PEREGRINE's signal apparatus is not watching.
 
-Quieter than in MGUN. Has stopped explaining why.
+Quieter than in MxG. Has stopped explaining why.
 
 ### Blessing Agwu ("Lace")
-Knows something about the partition. She has known since the safe house in MGUN. Rook has been waiting for Lace to say it. Lace has not said it. This is the strand where it surfaces. The rust framing makes her silence feel less like a secret and more like a structural problem — weight held too long in the wrong place, load-bearing in ways nobody mapped.
+Knows something about the partition. She has known since the safe house in MxG. Rook has been waiting for Lace to say it. Lace has not said it. This is the strand where it surfaces. The rust framing makes her silence feel less like a secret and more like a structural problem — weight held too long in the wrong place, load-bearing in ways nobody mapped.
 
 ### Mikkeli Väinämöinen ("Boiler")
 Present for Act One and Act Four. In between, he is doing something with a building. When asked, he says the building has been scheduled for demolition for six years and nobody has gotten around to it, and that this is relevant. It is.
 
-### Remi Nakamura-Diallo ("Scout")
+### Remi Diallo ("Scout")
 Perimeter role during the procedure — holds the outside while Stave works the inside. Eyes closed for the most important moments, same as the Lake Platform. Still does not name the drones.
 
 ### Stave — the new fifth
@@ -122,10 +122,10 @@ The decision gets made, with consequences that cannot be filed away. Adalemo app
 
 ## §7 — Locks (binding)
 
-1. **No magic, psionics, or schism content.** Same rule as MGUN — pure tech, cyberware, hardware failure. Reject any draft that introduces sensitivity or 5D anything.
+1. **No magic, psionics, or schism content.** Same rule as MxG — pure tech, cyberware, hardware failure. Reject any draft that introduces sensitivity or 5D anything.
 2. **Ohara locked the partition herself.** The reveal is not Axiom, not PEREGRINE, not a third party. She did it. The story is about whether you trust the version of yourself that did the hiding.
 3. **The hardware degradation is real.** The window closes whether or not the crew moves fast enough. The rust is not a metaphor that conveniently stalls — it is the actual antagonistic pressure of the second half.
-4. **Lace's secret surfaces in this strand.** Whatever she has known since MGUN's safe house, it comes out here. Do not defer again.
+4. **Lace's secret surfaces in this strand.** Whatever she has known since MxG's safe house, it comes out here. Do not defer again.
 5. **Stave's prior crack failure is not resolved.** It informs everything Stave does. It is not redeemed in a single procedure. The result was not clean then; the result here is not guaranteed to be clean now.
 6. **Vox is at four channels.** Do not restore the sixth. The wound healed; the bandwidth did not. This is not fixed in this strand.
 7. **Adalemo is not only the antagonist in Act Four.** The final encounter with Adalemo contains information or a decision that cannot be filed under "enemy neutralized."
@@ -137,13 +137,13 @@ The decision gets made, with consequences that cannot be filed away. Adalemo app
 ## §9 — The Parallel Writing Experiment
 
 > **RESOLVED (2026-06-27).** The experiment concluded: the Claude strand (NRSTC) was carried
-> through the Character-Doctrine revision to **87.7%** and promoted to the canonical **NRST**
+> through the Character-Doctrine revision to **87.7%** and promoted to the canonical **NxR**
 > strand. The Qwen twin (NRSTQ) was **deleted**. The section below is retained as the record of
 > how the experiment was run. Its central finding stands: neither raw output used the canonical
 > crew, because Stave/Adalemo were unseeded and the returning crew lacked voice depth — fixed by
 > [docs/CHARACTER.md](../CHARACTER.md).
 
-NRST is the first strand written simultaneously by two different LLM writers using the same bible. The experiment tests how model architecture and training affect narrative voice, structural choices, and world-grounding when the plot outline, character rules, and canon locks are identical.
+NxR is the first strand written simultaneously by two different LLM writers using the same bible. The experiment tests how model architecture and training affect narrative voice, structural choices, and world-grounding when the plot outline, character rules, and canon locks are identical.
 
 ### The Two Writers
 
@@ -234,11 +234,11 @@ ss --review --slug neon-rust-qwen-019f06eb
 - [x] NRSTC: 14 beats expanded (2026-06-26)
 - [x] NRSTQ: 14 beats expanded (2026-06-26)
 - [x] NRSTC: review-driven cleanup pass (50-ballot panel, avg 79 pre-edit) — pronoun continuity, refrain/interiority cuts, sensory grounding, coda payoff (2026-06-27)
-- [x] NRSTC: **canon re-cast** — replaced invented crew (Tovan/Vesna/Idris) with the MGUN-canonical crew (Boiler/Scout/Lace) carrying their established signatures; Vox set to she/her (woman); Adalemo to he/him (2026-06-27)
+- [x] NRSTC: **canon re-cast** — replaced invented crew (Tovan/Vesna/Idris) with the MxG-canonical crew (Boiler/Scout/Lace) carrying their established signatures; Vox set to she/her (woman); Adalemo to he/him (2026-06-27)
 - [x] Crew entities deepened/seeded — Rook/Vox/Lace/Boiler/Scout/Soraya given full Speech/Psychology layers; **Stave** `019f0787c613` and **Seun Adalemo** `019f0787f8bc` seeded (were missing) (2026-06-27)
 - [x] NRSTC: standalone review **87.7%** (2026-06-27) — cleared after re-cast + Character-Doctrine behavior pass
-- [x] MGUN (sequel partner): standalone review **87.1%** (2026-06-27) — broke an 11-cycle ~86 ceiling via the Character Doctrine ([docs/CHARACTER.md](../CHARACTER.md)); both strands now ≥87 and complement each other
-- [x] NRSTQ: **DELETED 2026-06-27** — the Qwen experimental twin was removed; the Claude strand was promoted to the canonical strand (StrandCode `NRST`, title "Neon & Rust", slug `neon-rust-019f06da`)
+- [x] MxG (sequel partner): standalone review **87.1%** (2026-06-27) — broke an 11-cycle ~86 ceiling via the Character Doctrine ([docs/CHARACTER.md](../CHARACTER.md)); both strands now ≥87 and complement each other
+- [x] NRSTQ: **DELETED 2026-06-27** — the Qwen experimental twin was removed; the Claude strand was promoted to the canonical strand (StrandCode `NxR`, title "Neon & Rust", slug `neon-rust-019f06da`)
 - [ ] Comparative analysis (NOTE: experiment caveat — neither writer used the canonical crew because Stave/Adalemo were unseeded and the returning crew lacked voice depth; entities are now seeded for any future regen. NRSTQ left as the raw experimental record; NRSTC hand-re-cast for canon fidelity.)
 - [ ] Export both (NRSTC V1, NRSTQ V1)
 

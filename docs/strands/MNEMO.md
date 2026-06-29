@@ -256,6 +256,10 @@ to discredit Amara is evidence of their own protocol working.
   her coverage has been measured, responsible, fair. It has also been framed by what Orison chose
   to share with her.
 - **Gender:** she/her. Never "they" for Amara.
+- **Class lens — Tier 4+, sheltered.** Amara is a high-tier citizen who has lived a **very sheltered
+  life.** Her POV is insulated: the lower tiers are abstractions, comfort and access the water she
+  swims in. The bleed — and Seto — are her first real contact with how the other tiers live. The
+  register carries the blind spots of privilege: not malice, a narrowness she doesn't know she has.
 - **Voice:** Careful, incremental, trained to be believed. She has the broadcaster's reflex: speak
   at the pace of a sentence people can follow, choose the word that survives a transcript read.
   She has been doing this for so long she does it in private as well as on air.
@@ -274,6 +278,11 @@ to discredit Amara is evidence of their own protocol working.
 
 - **Identity:** Gray Zone data courier. Carrier-grade sealed neuretics. Japanese-Kenyan.
   Entity `019ee11c` (verify slug — may need separate entity).
+- **Class lens — the crosser.** His courier work makes him one of the few who regularly moves
+  between **Tier 3 and Tier 4.** He sees both worlds and belongs fully to neither, so he carries a
+  **nuanced, lived-in read of the class divide** — neither Amara's insulation nor a have-not's flat
+  resentment. He's the street-smart one; that contrast with Amara is a core engine of the two-POV
+  structure.
 - **How he got the neuretics:** Standard gray-zone upgrade, purchased through a Seam-adjacent
   reseller. Batch 44-C because that was what the reseller stocked in 2222. He did not attend
   calibration visits in person at first — missed the first three, caught up in a block booking,

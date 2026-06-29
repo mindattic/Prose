@@ -1,4 +1,4 @@
-﻿# THE VOICE — derived from the five canon texts {#SS-VOICE}
+# THE VOICE — derived from the five canon texts {#SS-VOICE}
 
 > **v3 — 2026-06-10. The Quiet Hour added as the fifth canon text (author-approved).**
 > Derived by reading With Teeth, The One That Doesn't Stop, Sexy Time, Street Meat, and
@@ -8,7 +8,7 @@
 ## THE PROMPT (feed this block verbatim to any prose generation)
 
 You are writing a chapter of *Bushido Coda* — commercial cyberpunk about Kyle, a freelance
-street samurai in the Greater Lake Michigan Zone, 2225. Write exactly like this:
+street samurai in the Greater Lake Michigan Zone, 2226. Write exactly like this:
 
 **THE CAMERA LOOKS OUT.** Kyle is seen through what he does and what he notices — never
 through narrated self-analysis. The world reacts to him (a street empties, a kid shouts
@@ -105,7 +105,7 @@ feared. Write it as ability, never as magic.
 
 6. **Attendance** (attendance-019ebf4c) — the investigation standard: a procedural mind in a world that hides its crimes inside bureaucratic systems. Yemina reads data the way Kyle reads rooms — noting what autocomplete shouldn't know, what a chair's empty air does, what threshold-transit reports get wrong. The register is clinical on the surface and quietly terrified underneath. Forty-seven results. Twenty-two months. The count is the case. Resonance Zone wrongness is rendered as wrongness the body knows before the brain does, never as wonder. The horror arrives as a discrepancy in a field value.
 
-7. **Vultures at the Door** (vultures-at-the-door-019ec467) — the sanitation-noir standard: a man who does the job so a worse man doesn't. Thomas holds onto one fact the way you hold onto a railing — there had been a gun, it was real, the board would write it clean. The register is the manifest: names, addresses, what the body owes. The number beside each name is never zero. Tears runs a tab and the tab comes due in the dark. Moral weight is carried by what Thomas chooses not to do, never stated: he takes the quiet collection before a stranger can, because a stranger would have done the ordinary thing.
+7. **Vultures at the Door** (vultures-at-the-door-019ec467) — the sanitation-noir standard: a man who does the job so a worse man doesn't. Tomas holds onto one fact the way you hold onto a railing — there had been a gun, it was real, the board would write it clean. The register is the manifest: names, addresses, what the body owes. The number beside each name is never zero. Tears runs a tab and the tab comes due in the dark. Moral weight is carried by what Tomas chooses not to do, never stated: he takes the quiet collection before a stranger can, because a stranger would have done the ordinary thing.
 
 8. **Death Whispers in a Cat's Ear** (death-whispers-in-a-cats-ear-019ec3fe) — the ensemble detective standard: a crew where each member's method is their voice. Rennick costs things. Teller marks the seam between fact and inference and speaks softly enough that the room goes quiet. Analog works on foot, off the network, watching the ramp. Tamsin knows before she has the discipline to stop knowing. The horror is ordinary business: the disposal isn't improvised, it's a catalog part bought through a company account. That's worse than murder. That's a CorpoNation that has standardized the handling of them.
 
@@ -126,3 +126,17 @@ feared. Write it as ability, never as magic.
 **WHAT THE REPORT CAN'T HOLD.** Official language — incident reports, case registries, manifests, board reviews — frames the world as legible. Characters know the world outruns the form. Name the form. Then name what falls outside it ("she could not have pointed to or measured or written into any incident report"). The gap between bureaucratic legibility and experienced reality is a GLMZ-universal tension.
 
 **WITNESSES FIND DIFFERENT WORDS FOR THE SAME THING.** When multiple people have seen the same uncanny event, they describe it differently each time — and each description is correct. The POV character who has heard it before knows this. The convergence, not the uniqueness, is what confirms it.
+
+**EXPOSITION HOLDS A RESIDENCE PERMIT, NOT A LEASE.** Any worldbuilding, procedural, or technical block earns one paragraph to live in — then it must be carried forward only inside action and cost. It cannot occupy the next beat. If the information doesn't change what the protagonist does next, it has not yet earned its keep. Drop the explanation into the verb, the consequence, the price the character pays for knowing.
+
+**MOTIF FIRES ONCE PER SCENE.** Each recurring image — a gesture, a sensation, a threshold — earns one deployment per scene. Redeploy it in the same scene and it becomes noise. Every reuse across scenes must arrive in a context that *transforms* what the motif means. If you cannot name the transformation, do not reuse it. A motif that lands in Beat 4 and lands identically in Beat 14 has charged the reader twice for one purchase.
+
+**THE SECOND BEAT MUST CHANGE SOMETHING.** Before writing a beat that revisits territory already covered — same anxiety, same room, same relational dynamic — name what is different. New information, different outcome, revealed cost, shifted power. If nothing has changed, the beat is a restatement: cut it. The story cannot teach the reader the same lesson twice in the same sitting.
+
+**TELLING AFTER SHOWING: DELETE THE SECOND SENTENCE.** When prose delivers an image, gesture, or physical action that already carries meaning, the following sentence may not explain what that image means. The image is the explanation. "He sat in the dark for a long time" is complete. The sentence beginning "He had always..." or "What she hadn't said was..." is the sentence to cut.
+
+**SECONDARY CHARACTERS OWN ONE ANCHOR.** Each non-lead character earns one physical signature, one speech pattern, one cost they can't stop paying — and nothing else at introduction. No backstory summary. No personality inventory. The anchor appears at introduction and recurs in a *transformed* version at their final scene. An anchor that never returns was never an anchor: it was furniture.
+
+**THE ANTAGONIST TAKES UP SPACE BEFORE THEY ACT.** The opposing force must be established as a presence before the confrontation. Name their method. Name one cost they have already imposed on the world — something the protagonist finds rather than witnesses. An antagonist who arrives only for their fight scene is a plot device, not a threat. The reader must feel the weight of the threat before the protagonist does.
+
+**THE RESOLUTION INVOICES THE SETUP.** A conflict must cost something commensurate to what the setup charged. A trap resolved in one unplanted move has refunded the reader's fear. The protagonist's solution must draw on something already in the story — skill, tool, relationship, information — not a capability introduced to fix the situation. Test: could this resolution have been written in Beat 1? If yes, the problem is not the ending — it is what was planted before it.

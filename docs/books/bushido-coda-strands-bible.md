@@ -115,7 +115,7 @@ Receiver." Defeated locally at book's end; "has other districts."
 NOT a quaint shopkeeper. An **antiques dealer**: he trades pre-collapse physical objects, the
 one class of thing the digital age can't counterfeit, because their truth lives in
 **provenance** — chain of custody, wear, materials, the marks a real past leaves on real
-matter. His shop, **ANTIQUITY & STATIONARY**, is stocked with what 2225 files as antiques and
+matter. His shop, **ANTIQUITY & STATIONARY**, is stocked with what 2226 files as antiques and
 the reader recognizes as the future: first-generation neural rigs, dead handsets, early
 autonomous drones, pre-collapse server blades — the cutting edge of every decade that promised
 to fix the world, now relics of the one that didn't. (The sign's second word is no accident:

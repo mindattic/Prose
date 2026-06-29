@@ -228,7 +228,7 @@ infrastructure-maintenance crews who hold the working machinery: pumps, locks, p
 the machines literally. Underclan raid them; the surface threat may force an alliance in Act 3.
 
 **The Amish (surface faction — context, not on-page).** The last organized Christian community
-in 2225; ~40,000 strong; former Indiana/Ohio/Pennsylvania; hand tools, horse-drawn, no neuretics.
+in 2226; ~40,000 strong; former Indiana/Ohio/Pennsylvania; hand tools, horse-drawn, no neuretics.
 Their coming-of-age rite is *Rumspringa (Rumshpringa)*: at ~16, young members live in the outside
 world freely, then choose baptism (return, ~85–90%) or permanent departure. Surface observers —
 journalists, anthropologists, social workers — use the Plainsmen comparison to describe the

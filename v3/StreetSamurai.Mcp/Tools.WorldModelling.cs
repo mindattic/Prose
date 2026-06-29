@@ -280,7 +280,7 @@ public class WorldModellingTools(
             strandId = g;
         else
         {
-            var s = await db.Strands.AsNoTracking().FirstOrDefaultAsync(x => x.Slug == strandIdOrSlug);
+            var s = await db.Strands.AsNoTracking().FirstOrDefaultAsync(x => x.Slug == strandIdOrSlug || x.StrandCode == strandIdOrSlug);
             if (s == null)
                 return JsonSerializer.Serialize(new { error = "strand_not_found", strandIdOrSlug }, CanonTools.JsonOpts);
             strandId = s.Id;
@@ -402,7 +402,7 @@ public class WorldModellingTools(
         else
         {
             var strand = await db.Strands.AsNoTracking()
-                .FirstOrDefaultAsync(s => s.Slug == slugOrId);
+                .FirstOrDefaultAsync(s => s.Slug == slugOrId || s.StrandCode == slugOrId);
             if (strand == null)
                 return JsonSerializer.Serialize(new { error = "strand_not_found", slugOrId }, CanonTools.JsonOpts);
             strandId = strand.Id;

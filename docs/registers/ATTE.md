@@ -75,7 +75,7 @@ sentiment, with attention to what doesn't fit.
    hands off to something they cannot follow — and then they drive.
 
 8. **GLOSS ON FIRST MENTION; NEVER AGAIN.** The first time a CorpoNation appears, a one-breath
-   in-voice description of what it does (the Aldiss-Mwangi plaque that nobody paid to remove).
+   in-voice description of what it does (the Aldiss Mwangi plaque that nobody paid to remove).
    The first time neuretics appear, what they are physically (grown hardware). After that, the
    prose uses the world's own vocabulary — the glossary lives in the reader's memory, not the
    prose. GLMZ is the protagonist's jurisdiction. They do not explain it to themselves.

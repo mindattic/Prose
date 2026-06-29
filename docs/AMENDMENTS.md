@@ -471,7 +471,102 @@ legal position paper establishing the three-tier framework. In-world primary sou
   contexts. Never attribute interiority. Mythology around them is the characters', not the
   text's.
 
-<!-- Next amendment: SS-A28 -->
+<!-- Next amendment: SS-A31 -->
+
+---
+
+## SS-A30 — AI-founded CorpoNations; antagonist diversity (Halcyon Combine / OBERON) {#SS-A30}
+
+**Date:** 2026-06-28 · **Author:** antagonist-diversity pass · **Ref:** extends synthetic personhood
+([SS-A23]); SRZR antagonist reassignment.
+
+Two linked rulings:
+
+1. **A Synthetic Person (SS-A23, Tier 3) can found, own, and run a CorpoNation.** An AI may hold a
+   corporate charter, a controlling stake, and the chief-executive seat — incorporating *itself* and
+   commanding a workforce of humans who legally answer to a machine. The "inmates running the asylum,"
+   inverted: the asylum runs the inmates. Exemplar: **Halcyon Combine** (id `019f0f3f0f60…`), founded
+   and chaired by **OBERON** (id `019f0f3f22a5…`). This is rich, on-theme (ambient AI, rogue-AI arc),
+   and a deliberate flavor of the GLMZ's plural-AI world.
+
+2. **Antagonist diversity — stop defaulting to Axiom BioNanics.** Axiom had become the reflexive
+   corporate villain across strands. **Halcyon Combine replaces Axiom as the antagonist of Steppin'
+   Razor** (the live-well driller under the core), which also wires the corporate antagonist straight
+   into the AI-cabal author-truth ([project_world_breaking_event]) — *without confirming* OBERON/
+   Halcyon is the cabal (canon-locked unknown, like the camel-man and the Prisoner). Going forward,
+   spread starring-antagonist roles across distinct CorpoNations; Axiom stays texture, not the default.
+
+---
+
+## SS-A29 — Arcologies, Gray-Zone buffers, and the Block Wars {#SS-A29}
+
+**Date:** 2026-06-28 · **Author:** world-structure pass · **Ref:** geography/faction canon; extends
+[the Pulse](#) and the zone/territory geography. Standing prose directive included.
+
+Four interlocking facts about how the GLMZ is physically and politically arranged:
+
+1. **CorpoNations are arcologies — always over 100 stories tall — and completely self-contained.**
+   Each is its own enclosed world: housing, food, water, power, security, manufacturing, recreation,
+   the dead. A citizen can be born, work, and die without leaving the tower. The arcology is the
+   CorpoNation; the CorpoNation is the arcology.
+
+2. **No two CorpoNations share a physical border.** A shared wall would create a frontline that never
+   resolves — a permanent war seam. So the arcologies are **deliberately separated by Gray Zones**:
+   ungoverned buffer territory that keeps would-be foes from ever touching. The Gray Zones are not
+   merely where the corpos' writ runs out; they are the **engineered no-man's-land that segregates
+   rivals** and keeps the cold peace cold.
+
+3. **The Block Wars** — the uneasy peace is not static. CorpoNations constantly **push outward** (annex
+   buffer, extend their footprint) or **perceive the Gray Zone as encroaching** on them, and the
+   friction periodically flares into a **Block War**: a localized border conflict over a stretch of
+   buffer — fought block by block, never declared, never fully won, always "resolved" back to a new
+   uneasy line. They recur. They are weather, not history.
+
+4. **The Pulse is the shared circulatory system.** The Mach-6 vacuum-tube network (see the Pulse
+   canon) runs **in and out of every arcology** — the one thing that crosses the Gray-Zone buffers
+   and stitches the self-contained towers into a single body. Pulse tubes are the arteries between
+   otherwise-sealed worlds; control of, sabotage of, or passage through a tube is therefore loaded.
+   **Use this** as connective tissue and as a pressure point in stories.
+
+5. **Gangs are Gray-Zone life.** The buffer territory isn't empty — it's parceled among **micro-nations
+   of thugs**, every block or three claimed by a would-be warlord who is **probably dead within the
+   year.** A few hold on; most churn. None of these ephemeral crews approaches the stability of the
+   **Lotus Syndicate** — an established *global* crime organization whose roots run back to the ancient
+   **Yakuza** (which itself traces to early-17th-century Japan, evolving out of eccentric samurai
+   bands and street vendors). The contrast is the point: warlords are weather; Lotus is geology.
+   - **Lotus's honor system is real and selectively applied.** They observe a strict code — *when it
+     conveniently paints them well.* The honor is genuine theater and genuine leverage; it is invoked
+     to justify, never to constrain when constraint would cost them. Show the hypocrisy; never have a
+     character editorialize it.
+
+**Standing prose directive:** seed **a few Block Wars** (and the gray-zone warlord churn) through the
+strands — as backdrop, rumor, detour, or hazard — to reinforce the uneasy Gray-Zone/CorpoNation peace
+as lived reality, and use the Pulse-as-circulatory-system imagery for cross-strand cohesion. Adapt to
+each strand's register (see [per-protagonist register]); do not lecture — show it the way characters
+live it.
+
+---
+
+## SS-A28 — Present-day year is write-time + 200 (the current corpus is 2226) {#SS-A28}
+
+**Date:** 2026-06-28 · **Author:** year-retcon · **Ref:** universe primer + whole GLMZ corpus.
+
+The GLMZ "present day" is a **rolling target, not a fixed calendar year**: it is the year a story
+is *written*, plus 200. The franchise promise is "200 years in the future," and that horizon
+advances with the wall clock.
+
+- The existing corpus was written in 2026, so its present day is **2226** (was 2225). This is a
+  **full retcon**: the universe primer, all `docs/*` canon, entity descriptions, and prose were
+  moved 2225 → 2226.
+- **New stories advance with the calendar.** A strand drafted in 2027 is set in 2227, and so on.
+  The "2226" figure is therefore the *current corpus's* present, not a universal constant.
+- **Exempt — anything deliberately in the past.** Flashbacks (e.g., the TEST court-martial
+  flashback), dated records, and historical references keep their own year. A log or record dated
+  2225 *inside* a 2226 story is correct as a year-old artifact and must not be bumped.
+- When prose or canon needs a concrete present-day year, use the story's own present (2226 for the
+  current corpus). Relative phrasing ("two centuries on") is fine where it reads naturally.
+
+This supersedes the fixed **2225** anchor previously in the universe primer.
 
 ---
 
@@ -514,7 +609,7 @@ entanglement, not a cable).
 ## SS-A26 — The Rook Trilogy arc + the body-bank harvest (Helix / the Marrow) {#SS-A26}
 
 **Date:** 2026-06-27 · **Author:** rook-trilogy-finale · **Ref:** establishes the canon that
-closes the heist trilogy (MGUN → NRST → MCRM); see [docs/strands/MCRM.md](strands/MCRM.md).
+closes the heist trilogy (MxG → NxR → CxC); see [docs/strands/CxC.md](strands/CxC.md).
 
 New world canon:
 - **Registered Reads are a harvestable resource.** A Nano Triumvirate member — **Helix
@@ -522,15 +617,15 @@ New world canon:
   (neuretics-capable people the GLMZ logs) into Class V-compatible neural substrate. The human
   core (marrow) rendered into corporate product (chrome). Pure tech/body-horror; no psionics.
 - **Relocation orders have been cover for harvests.** The Old Harbor "relocation order nobody
-  signed" (NRST manifest) was a harvest; the word *harvest* never goes on the order. Dr. Halina
+  signed" (NxR manifest) was a harvest; the word *harvest* never goes on the order. Dr. Halina
   Soraya ("Ohara") walked **twenty-one** registered Reads off the barge and hid them — the trilogy's
   moral spine.
 - **The Rook Trilogy is one arc.** The crew's three jobs were steps Helix needed taken and could
-  not be seen taking: MGUN (extract Soraya from Axiom for a clean acquisition), NRST (the partition
-  crack surfaced the survivor list), MCRM (the loop closes). Helix funded PEREGRINE's
-  reconstitution (NRST §2). Antagonist of record: **Anneke Oyelowo-Sato**, Helix program director
+  not be seen taking: MxG (extract Soraya from Axiom for a clean acquisition), NxR (the partition
+  crack surfaced the survivor list), CxC (the loop closes). Helix funded PEREGRINE's
+  reconstitution (NxR §2). Antagonist of record: **Anneke Oyelowo**, Helix program director
   and Rook's mirror.
-- **Class V** neural-tissue tech, made public in MGUN, was refined by the competitor (Helix)
+- **Class V** neural-tissue tech, made public in MxG, was refined by the competitor (Helix)
   without Axiom's liability — the public-domain release was the competitor's win, not just Axiom's loss.
 
 This amendment is realized in prose across the trilogy and governed by the character system in
@@ -545,7 +640,7 @@ adds four megalopolis designations and seals the fate of Rome
 
 ### Megalopolises (sealed)
 
-The following cities are designated **megalopolises** in 2225 — each a dominant urban
+The following cities are designated **megalopolises** in 2226 — each a dominant urban
 gravity-well in its region, Pulse-connected, population measured in tens of millions:
 
 - **Shanghai** — Pacific Rim primary center
@@ -593,7 +688,7 @@ geopolitical texture for the setting and — in UNDR — ground the Surfacing/Ru
 ### §A24-1 — The Amish: last organized Christian community
 
 They are the only continuously functioning organized Christian
-community in 2225. The world calls them the Amish; they call themselves the Amish.
+community in 2226. The world calls them the Amish; they call themselves the Amish.
 
 **The Rise and Fall of the False Prophet (2082–2091)** destroyed every other sect. The "False
 Prophet" — a charismatic unifier who consolidated disparate Christian denominations under a
@@ -612,7 +707,7 @@ authority — rejection of networked technology, community governance, deep skep
 centralized power — meant the movement had nothing to grip. When the collapse came they were
 standing exactly where they had always been.
 
-**In 2225:**
+**In 2226:**
 - **Name:** the Amish
 - **Location:** scattered communities in former Indiana, Ohio, and Pennsylvania (habitable
   Midwest territories, outside GLMZ jurisdiction)
@@ -680,7 +775,7 @@ On the bicentennial of the Korean War armistice (**1953 + 200 = 2153**), North a
 reunified as the **Republic of Korea**. The reunification was politically traumatic on both
 sides and concluded with a nationalist settlement that has hardened, not softened, since.
 
-**In 2225:**
+**In 2226:**
 - Extreme isolationism. No Pulse link. No foreign nationals admitted (de facto: no entry)
 - Trespassers are killed on sight; this is codified, not exceptional
 - **~95% genetic homogeneity:** achieved through strict immigration control, strong social
@@ -718,7 +813,7 @@ continental polity known as **Eurasia**. The merger was pragmatic on both sides:
 western Russian territories needed economic stability; the European bodies needed territorial
 depth after the Atlantic coastal collapses.
 
-Eurasia in 2225 is the dominant continental power in the eastern hemisphere:
+Eurasia in 2226 is the dominant continental power in the eastern hemisphere:
 - Rotterdam is a primary Pulse hub (GLMZ to Rotterdam in 43 minutes; confirmed WORLD.md §1.3)
 - Cultural exports are significant; the press corps is the world's most aggressive investigative
   body (it broke the False Prophet story in 2089)
@@ -746,7 +841,7 @@ The region has no Pulse hub (no political body stable enough to host one).
 
 ### World canon table (external territories, sealed)
 
-| Territory | Status in 2225 | Access |
+| Territory | Status in 2226 | Access |
 |---|---|---|
 | Australia | Absorbed into the Dreaming | None (Pulse: no hub; ships: do not return) |
 | Tierra del Fuego | Yahgan Peoples; Tequenica protects | None (ships turned; aircraft blocked) |

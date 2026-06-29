@@ -123,7 +123,7 @@ public class VoiceTools
             var byId = await db.Strands.AsNoTracking().FirstOrDefaultAsync(s => s.Id == guid);
             if (byId != null) return byId.Id;
         }
-        var bySlug = await db.Strands.AsNoTracking().FirstOrDefaultAsync(s => s.Slug == idOrSlug);
+        var bySlug = await db.Strands.AsNoTracking().FirstOrDefaultAsync(s => s.Slug == idOrSlug || s.StrandCode == idOrSlug);
         return bySlug?.Id;
     }
 

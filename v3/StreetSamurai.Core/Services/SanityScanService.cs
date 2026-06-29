@@ -34,7 +34,7 @@ public class SanityScanService(IDbContextFactory<StreetSamuraiDbContext> dbFacto
     static readonly HashSet<string> BuiltinCodes = new(StringComparer.Ordinal)
     {
         "MGUN","NRST","NRSTC","NRSTQ","MCRM","BCODA","DWIACE","VATD","ATTE",
-        "SPRW","SRZR","MNEMO","TDIU","UNDR","TEST","SS","M&G","N&R","C&C"
+        "SPRW","SRZR","MNEMO","TDIU","UNDR","TEST","SS","MxG","NxR","CxC"
     };
 
     // Codes that are clearly not English words -> block severity
@@ -42,7 +42,7 @@ public class SanityScanService(IDbContextFactory<StreetSamuraiDbContext> dbFacto
     static readonly HashSet<string> BlockCodes = new(StringComparer.Ordinal)
     {
         "MGUN","NRST","NRSTC","NRSTQ","MCRM","BCODA","DWIACE","VATD","SPRW",
-        "SRZR","MNEMO","TDIU","UNDR","M&G","N&R","C&C"
+        "SRZR","MNEMO","TDIU","UNDR","MxG","NxR","CxC"
     };
 
     // ── Mojibake substrings ───────────────────────────────────────────────────

@@ -24,15 +24,19 @@ public class ManuscriptExportService
     private readonly SettingsService settings;
     private readonly ILogger<ManuscriptExportService> log;
 
+    private readonly ClaudeService claudeService;
+
     public ManuscriptExportService(
         IDbContextFactory<StreetSamuraiDbContext> dbFactory,
         StrandWorkbenchService workbench,
         SettingsService settings,
+        ClaudeService claudeService,
         ILogger<ManuscriptExportService> log)
     {
         this.dbFactory = dbFactory;
         this.workbench = workbench;
         this.settings = settings;
+        this.claudeService = claudeService;
         this.log = log;
     }
 
@@ -224,42 +228,19 @@ public class ManuscriptExportService
     }
 
     /// <summary>
-    /// GLMZ back-cover preamble — the shared intro that opens every GLMZ book's back cover,
-    /// followed by the strand's per-book sales blurb (<see cref="Strand.Summary"/>).
-    /// </summary>
-    private const string GlmzBackCoverIntro =
-        "In the dystopian sprawl of the GLMZ — the megacity that swallowed the Midwest — sovereign CorpoNations control everything except the seams between them: the Gray Zones, where the only law is: do the job, get paid, and don't ask questions.";
-
-    /// <summary>
-    /// Export the strand's <b>back-cover blurb</b> to "Back Cover.txt" in the strand's publish
-    /// folder: the shared GLMZ intro, a blank line, then <see cref="Strand.Summary"/> (the per-book
-    /// sales text that gets a reader to buy the book). Returns the path. The blurb travels with the
-    /// manuscript so cover/jacket production has the back-of-book copy alongside the formats.
+    /// Creates an empty "Back Cover.txt" in the strand's publish folder if one does not already
+    /// exist. The file is left blank for the author to fill in manually. Returns the path.
     /// </summary>
     public async Task<string> ExportBackCoverAsync(Guid strandId, string? author = null, CancellationToken ct = default)
     {
-        // Reuse LoadAsync only to resolve the strand's export directory; the throwaway extension
-        // prunes nothing real. We write a fixed "Back Cover.txt", not a versioned file.
         var (manuscript, anchorPath) = await LoadAsync(strandId, "backcover", ct);
         var dir = Path.GetDirectoryName(anchorPath)!;
-
-        await using var db = await dbFactory.CreateDbContextAsync(ct);
-        var summary = await db.Strands.AsNoTracking()
-            .Where(s => s.Id == strandId)
-            .Select(s => s.Summary)
-            .FirstOrDefaultAsync(ct);
-
-        var sb = new StringBuilder();
-        sb.AppendLine(GlmzBackCoverIntro);
-        if (!string.IsNullOrWhiteSpace(summary))
-        {
-            sb.AppendLine();
-            sb.AppendLine(summary!.Trim());
-        }
-
         var path = Path.Combine(dir, "Back Cover.txt");
-        await File.WriteAllTextAsync(path, sb.ToString().TrimEnd() + "\n", new UTF8Encoding(false), ct);
-        log.LogInformation("Exported strand {Strand} back cover {Path}", manuscript.Slug, path);
+
+        if (!File.Exists(path))
+            await File.WriteAllTextAsync(path, string.Empty, new UTF8Encoding(false), ct);
+
+        log.LogInformation("Back cover placeholder ready {Path}", path);
         return path;
     }
 

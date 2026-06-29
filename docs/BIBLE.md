@@ -24,7 +24,7 @@ updated: 2026-06-18
 StreetSamurai is a canon-grounded, voice-disciplined story-generation engine that takes a
 one-line seed to a published, reader-reviewed, canon-consistent audiobook + manuscript **in any
 registered Universe** — with the human approving, not authoring, canon and voice changes. The
-flagship Universe is **GLMZ** (Greater Lake Michigan Zone, 2225, cyberpunk; the *Bushido Coda*); a
+flagship Universe is **GLMZ** (Greater Lake Michigan Zone, 2226, cyberpunk; the *Bushido Coda*); a
 second, **Fantasy/Steampunk**, is being stood up alongside it on the same engine. Every canon and
 story row belongs to exactly one Universe ([SS-LAW-15](#SS-§5)).
 
@@ -324,7 +324,7 @@ Narrative frontier (Bushido Coda):
   `v3/canon_writes/bushido_coda_100_stories_outline.md` (100-story outline, stories 1–8 = the
   spine, 9+ = sketches).
 - **Style register:** `engine/bushido_coda_v3/00_style_guide.md` (v8 register, the rulebook).
-- **World reference:** `v3/canon_writes/network_doc.md` (the Network in 2225).
+- **World reference:** `v3/canon_writes/network_doc.md` (the Network in 2226).
 - **Session/state notes:** `v3/canon_writes/story_state.md` (the per-session canon scratch — its
   continuity invariants are promoted to the Laws in [§5](#SS-§5)).
 
@@ -354,7 +354,7 @@ A prose beat/strand is **done** only when:
   ("SwitchUniverse"). Engine terms below are universe-neutral; terms tagged *(GLMZ)* are GLMZ
   content.
 - **GLMZ** *(GLMZ)* — Greater Lake Michigan Zone (a.k.a. Meridian 88, *The Glooms*); a 500-km
-  vertical megacity on the western shore of Lake Michigan, year 2225. Universe #1.
+  vertical megacity on the western shore of Lake Michigan, year 2226. Universe #1.
 - **Φ / QUANTA** *(GLMZ)* — the currency: one Φ = one second of certified error-corrected quantum
   coherence. Never the Greek letter phi ([SS-LAW-8](#SS-§5)).
 - **Beat** — a discrete unit of story function (not a paragraph); the atom of prose + audio.

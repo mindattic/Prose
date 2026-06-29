@@ -10,7 +10,7 @@ updated: 2026-06-22
 
 # STRAND BIBLE — Vultures at the Door (VATD) {#SS-VATD}
 
-> **Purpose.** The spine of Thomas Holst and Levin Calder's grandest fuckup: an accidental
+> **Purpose.** The spine of Tomas Alvarado and Levin Calder's grandest fuckup: an accidental
 > shooting that leaves them racing a 72-hour clock with a Lotus heir's rare heart. What happens,
 > not how it reads. When prose and spine disagree, fix one in the same change. See [[../BIBLE]]
 > for universe laws; [[../BIBLE#SS-§5]] for universe laws governing synthetics and CorpoNations.
@@ -23,7 +23,13 @@ mundane banter — route/pickup/truck/load/manifest/quota/shift — and the carn
 A body is freight or a bag. An organ is a recyclable or a return. They are sanitation workers
 who recycle bodies instead of plastic bottles.
 
-It ends with a reinstall. Not a speech. Not a confrontation. Thomas and Levin return to the
+**The Vultures are repossession AND hearse.** Carrion Reclamations runs two services off the same
+Wagon: they repossess financed cyberware and organs (the Recall / the Scarab), and they haul the
+dead — dropping corpses at processing facilities (like the one in Street Meat, [[SM]]) for a flat
+rate. Same truck, same manifest, same flat tone. Whether "come to collect" means parts or a body is
+never clarified, and the people who know them on sight have stopped asking.
+
+It ends with a reinstall. Not a speech. Not a confrontation. Tomas and Levin return to the
 opening repo target and put the kidney back. Logged as a discrepancy. Explanation to the
 daughter: **"Change of heart."** Triple joke, never underlined.
 
@@ -35,13 +41,13 @@ is for this story and any body-recycler black-comedy noir. NOT the Kyle register
 - A Kyle story. Kyle is worldbuilding texture; he does not appear.
 - A Lotus political statement. The supremacist faction is the antagonist's world, not the
   story's argument.
-- A titillation story. Maisy Achterberg's choice is a character beat, not a spectacle.
+- A titillation story. Maisy Achterberg is the donor Levin knew — a person, not a spectacle.
 
 ## 1. The central mechanism {#SS-VATD-1}
 
 **The Loaner.** When the Scarab repos an organ, it seats a 72-hour artificial bridge organ.
 It degrades on schedule and quits. Repo leaves the debtor alive but "on the clock": 72 hours
-to settle or die clean. This is the story's ticking structure. When Thomas and Levin
+to settle or die clean. This is the story's ticking structure. When Tomas and Levin
 accidentally wreck Han Do-yun's heart, they seat a loaner — and then have 72 hours to find
 a permanent replacement before the wedding that must happen in the morning.
 
@@ -54,9 +60,9 @@ the conscience that arrives too late.
 
 ## 2. The wound (background, never stated on the page) {#SS-VATD-2}
 
-**Thomas Holst's wound:** Daughter Paz needs 12,000 Φ gene therapy every six months. The math
+**Tomas Alvarado's wound:** Daughter Paz needs 12,000 Φ gene therapy every six months. The math
 never clears. He does this job because the margin exists and nothing else provides it. Every
-job is the therapy bill. The fear and the math: the one character note Thomas never says aloud.
+job is the therapy bill. The fear and the math: the one character note Tomas never says aloud.
 
 **Levin Calder's wound:** The Tears loop (clinical: Lethedol). He doses to take the edge off
 the work; chronic use seeds HPPD-style hallucinations — crawling lattices, light-trails, the
@@ -64,24 +70,29 @@ route's dead appearing in doorways. He doses again to suppress the visions the d
 His tells: glassy over-wet eyes, wrong pupils, a beat late, narrating things not there. He is
 the character without something to protect, so he isn't afraid. His depth is the haunting.
 
-**Rule:** Neither wound surfaces as explanation. Thomas's math is in his face when Paz asks.
+**Rule:** Neither wound surfaces as explanation. Tomas's math is in his face when Paz asks.
 Levin's loop is in his eyes and his timing. The prose shows the symptoms, not the accounting.
 
 ## 3. Character rules for this story {#SS-VATD-3}
 
-**Thomas Holst (POV):**
-- Family man. Has something to lose. The fear + the math.
-- Operates the Scarab — the harvest is his hands.
+**Tomas Alvarado (POV):**
+- **El Salvadorian.** Spelling: **Tomas** (no h). (RENAMED 2026-06-28 from "Thomas Holst.")
+- Family man. Has something to lose — daughter Paz, the therapy bill that never clears.
+- Operates the Scarab — the harvest is his hands. (Exception: in the den he's too rattled by the
+  shot to work, and tells Levin to take care of it; Levin seats the loaner. The final transplant is
+  Tomas's hands again.)
+- **Fires the fatal shot on Han Do-yun** (RETCON — see lock #3).
 - Initiates the reinstall / "Change of heart." He's the one who turns around.
-- Author-confirmed spelling: Thomas (with h). Distinct from unrelated Tomas Raghavan.
+- (First-name collision RESOLVED 2026-06-28: the unrelated "Tomas Raghavan" was renamed **Vikram Raghavan**, so "Tomas" is now unique to this character.)
 
-**Levin Calder:**
+**Levin "Lev" Calder:**
+- **Nickname: Lev** (how he's addressed in dialogue; narration may use Levin).
 - Heartless-efficient in the opening repo — NO FLINCH. The cold must be established.
   If he flinches at the job, the story collapses.
 - Heavy Tears user. "The period instead of a sentence."
 - Has nothing he's protecting, so he isn't afraid. His depth = the haunting.
 - NO financed-kidney past — it would soften the opening. That backstory is struck.
-- Drives the Wagon. Thomas runs the Scarab.
+- Drives the Wagon. Tomas runs the Scarab.
 
 **Han Do-yun:**
 - Lotus heir, rare heart type.
@@ -93,17 +104,30 @@ Levin's loop is in his eyes and his timing. The prose shows the symptoms, not th
 - Never directly confronts the Vultures. Looms.
 
 **Casimir Mwamba:**
-- Lotus OUTSIDER hunter. Congolese. The leashed dog they send when a bone goes missing.
+- ⚠ NAME DISCREPANCY (resolve in back-check): entity record + memory call this hunter **Ekow Ato
+  (Ghanaian NGRA vet)**; this bible says **Casimir Mwamba (Congolese)**. Same role; pick one. (User
+  refers to him as "Ekow.")
+- Lotus OUTSIDER hunter. The leashed dog they send when a bone goes missing.
 - Used, never admitted. The lens on the rot.
 - Dispatched to find the "saboteurs" — tortures and kills suspects.
+- **His instrument is the look:** he carries himself as if he can **read every person's sins off
+  them** — your lies written on you like a confession letter — so guilty men (and the reader) feel
+  seen. Haunting menace, established before the turn.
+- **He gets a real ARC, with a confrontation (NOT a Nemesis who never connects):** he tightens the
+  hunt, **figures out it's Tomas & Lev, and corners them.** They **convince him to look away** —
+  earned, grounded in his life as the despised outsider "dog" Lotus uses and would discard — and he
+  **flips: he HELPS them get Do-yun home and stage the damning evidence.** The leashed dog lights the
+  match on the house that owns him. (Full arc in §5c.)
 - Irony: the Vultures are dispatched to clean up HIS victims = guilty party recycling
   the collateral of their own mistake. The comedic engine. Characters can't say it.
 
 **Maisy Achterberg (Soledad in the entity record):**
-- "The willing woman." A character, not a prop.
-- CHOOSES to die. Honorable sacrifice. Real reasons: a debt cleared, someone placed,
-  a name bought back. Negotiated like a professional.
-- Her death is NOT a tragedy and NOT titillation. She gets her say before the larder.
+- The OD'd donor (RETCON 2026-06-28; was "the willing woman who chooses"). A person, not a prop.
+- **Levin knew her** — prom dates sixteen years ago; she'd only let him to second base then, and
+  now she's a full-time working girl. The bitter joke *and* the human cost: how much a person can
+  change in sixteen years. Play it dry; do not sentimentalize.
+- She dies of a plain **Velvet overdose — NOT arranged.** A john finished, went to pay, saw she was dead, pocketed his credstick, and walked. No call-in, no last words; the dispatch comes from building management when a payment bounces.
+- Her rare-type heart is the donor heart the Scarab installs in Do-yun.
 - Her name in prose is **Maisy**. (Entity record uses "Soledad Achterberg" — cosmetic only.)
 
 ## 4. Narrative locks {#SS-VATD-4}
@@ -112,11 +136,20 @@ Levin's loop is in his eyes and his timing. The prose shows the symptoms, not th
    the mechanism.
 2. **IdentiScan resolves Do-yun's identity one beat after they shoot him.** The conscience
    that arrives too late is the keystone. Do not let them know before they fire.
-3. **Levin's opening repo has NO flinch.** He is established as cold first. The haunting
-   only registers against the cold.
-4. **Maisy chooses deliberately.** She is not coerced into it. She names her terms.
-   Her choice is the moral weight the story earns.
-5. **The reinstall is a procedure, not a speech.** Thomas and Levin return and reinstall.
+3. **Levin's opening repo has NO flinch** (keys the legs recall cold). **The shooting (RETCON
+   2026-06-28):** Levin **spooks** the high heir, **goes for his own gun first — and it snags**
+   (Tears-slow; the retention catches the way it never catches). **Tomas has to do the deed:** the
+   family man with the steady hands and no intention of killing anybody fires the round he'd give a
+   year of his life not to fire. **Tomas is furious** — Levin spooked the kid, *then* failed to take
+   the shot he started, *then* gets high instead of working. That friction is the back-half engine:
+   **the hunt for the heart is how Tomas and Levin mend fences by working together.**
+4. **Maisy Achterberg is the OD'd donor** (RETCON 2026-06-28). The sex worker Levin knew before
+   (prom dates, 16 yrs). She dies of a plain **Velvet overdose — NOT arranged.** She's found because
+   **a john finished with her, went to pay, noticed she was dead, kept his credstick, and walked**
+   (no call-in, no last words; "real knight in shining armor"). Her rare-type heart becomes Do-yun's
+   donor. The weight is the squalor of it and that Levin knew her — and **Tomas, still angry at
+   Levin, softens when they find her.**
+5. **The reinstall is a procedure, not a speech.** Tomas and Levin return and reinstall.
    Logged as a discrepancy. "Change of heart" is the whole thing. Do not underline it.
 6. **Bram Osei irony is the back half's comedic engine.** He's spared (arm + Tears stash).
    Casimir kills him anyway. The Vultures are dispatched to strip the corpse of the man
@@ -127,15 +160,23 @@ Levin's loop is in his eyes and his timing. The prose shows the symptoms, not th
 22 enabled beats across five acts (21 soft-deleted original beats replaced):
 
 **Act I — Route (Beats 1–3)**
-B1: Opening repo — Levin's eye-drop ritual opens; kidney harvest + loaner clock.
-B2: Courier legs — Recall (cyberware repo) + IdentiScan in routine use.
-B3: The pattern — establish the work rhythm before the fuckup.
+B1: Opening repo — Levin's eye-drop ritual opens; kidney harvest (old man, his daughter) + loaner clock.
+B2: The recall primer + the drive to the dealer (REVISED 2026-06-28: the standalone sympathetic-courier
+legs scene is CUT; the legs now come from the dealer — see B4).
+B3: (folded) the work rhythm is carried by B1 + the manifest; no separate routine stop.
 
-**Act II — The Fuckup (Beats 4–6)**
-B4: Drug house arm recall + Han Do-yun jacked up and berserk.
-B5: The shot / IdentiScan resolves Do-yun's identity one beat too late.
-B6: Loaner heart seated + rare type discovered + Bram Osei spared ("Keep the arm. Gimme
-all your Tears").
+**Act II — The Fuckup (Beats 4–6) — REVISED 2026-06-28 (den merge)**
+B4: The dealer den. Bram Osei has TWO separate recall tickets (legs + arm). They announce the
+recall (name him), key the **five-digit** lien code, **repo the legs**, collect them, give him the
+billed transit chair (the rolling-in-circles beat), then realize there's a second ticket — the arm —
+and it's awkward.
+B5: The shot. The stoned Han Do-yun (Lotus heir, on the couch) comes up firing; **THOMAS** puts one
+round through the heart (RETCON — was Levin; see lock #3). IdentiScan resolves Do-yun's identity one
+beat too late (mother Han Jeong-suk, Stem). Tomas: "Take care of this."
+B6: Levin (technician-cold) seats the loaner from the Scarab + rare type discovered; **lets Osei keep
+the arm for a single vial of Tears** (the spared limb → lock #6); loads Do-yun into the ward and wires
+him to life support; doses; drives off — a man on borrowed hardware in the back, 72-hr clock running.
+Closes on the "we just killed ourselves / perfect time to take the edge off" beat and the wedding reveal.
 
 **Act III — Night (Beats 7–13)**
 B7: Stakes established + Yuen call (off-books surgeon).
@@ -151,15 +192,116 @@ B14: Staging the bed via the Wagon as cover.
 B15: Story holds. Casimir face-to-face — he never knows. The ledger cost.
 
 **Act V — Reckoning (Beats 16–18 + coda)**
-B16: Soledad (Paz Sunday still?) — domestic beat, the math in Thomas's face.
+B16: Soledad (Paz Sunday still?) — domestic beat, the math in Tomas's face.
 B17: The reinstall. "Change of heart."
 B18: Coda — the Wagon drives north. A photograph.
+
+## 5c. Back-half redesign — 2026-06-28 (prose rewritten) {#SS-VATD-5c}
+
+User-directed redesign of Acts III–V. Recorded here as the spine; the beats still need rewriting.
+
+- **The heart donor is now a sex worker Levin knew "from before"** — before she started turning
+  tricks. The crew gets a call about a hooker OD'ing; at the den/flop **all the working girls know
+  them on sight, because the Vultures "come to collect" so often** (left deliberately ambiguous —
+  parts or corpses). The woman dies of an overdose, and **the death was called in before the body
+  was cold** (someone knew; the OD reads as arranged). They pack her in one of the Wagon's larder
+  drawers and drive on with the heart hunt.
+- **The OD'd hooker IS Maisy Achterberg** (RESOLVED 2026-06-28). The sex worker **Lev** knew before
+  she started turning tricks (prom dates, 16 yrs). She dies of a plain **Velvet overdose — NOT
+  arranged.** Discovered when **a john finishes, goes to pay, sees she's dead, pockets his own
+  credstick, and walks** (no call-in, no last words; "real knight in shining armor"). **Her rare-type
+  heart is the donor** the Scarab installs in Do-yun (replaces old Okwu/Marrow-Exchange sourcing,
+  old B9). The weight is the squalor and that Lev knew her; finding her is where **Tomas's anger at
+  Lev softens** — the heart-hunt is how the two of them mend fences.
+- **Ending staging (NEW):** the Scarab performs the heart transplant; then Tomas and Levin **plant
+  the heir AND the dead woman together in the heir's own bed**, so at dawn the **fiancée discovers
+  Han Do-yun in bed with a dead girl.** Simultaneously, across town, they **reinstall the old man's
+  kidney** ("change of heart" — lock #5 PRESERVED). They **fudge the records to show "character
+  growth."** Black-comic, never underlined.
+- **The marriage is POLITICAL — a union that prevents an internal Lotus succession/civil war.** The
+  bride is from a rival Lotus line; the match reconciles two factions. By collapsing the wedding (a
+  disgraced, dead-girl-in-his-bed heir), the Vultures set off **Lotus-on-Lotus** conflict instead of
+  Lotus-on-citizen predation. Keeping Do-yun *alive but disgraced* (not dead) is deliberate.
+- **MOTIVE — survival by redirection (LOCKED 2026-06-28).** Why two working stiffs meddle in Lotus
+  politics: deliver Do-yun clean → a unified, intact Lotus that will, sooner or later, trace the
+  Carrion round to them → they're dead men. Collapse the marriage → Lotus succession war → the
+  Syndicate is too busy eating itself to spend a hunter on two nobodies. So they keep him **alive but
+  disgraced** on purpose — a dead heir gets them hunted; a humiliated living one buries them under
+  Lotus's bigger problems. The "Lotus-on-Lotus beats Lotus-on-citizen" line is the **rationalization
+  they tell themselves**, not the prime mover. SHOW the cold survival math (Levin reads the political
+  architecture; Tomas runs the odds); never have them speechify about saving the city. The mercy is
+  a side effect they won't admit to — it pairs with the kidney reinstall as the two small graces they
+  allow themselves on the way out.
+- **Maisy & Levin — sixteen years (character color).** They went to **prom together**, sixteen years
+  back. The bitter joke: she'd only let him get to second base then; now she's a full-time working
+  girl on a flop-house mattress with a Carrion crew that everyone there knows by sight. Levin's
+  deadpan, not self-pitying: *how much a person can change in sixteen years.* This is the human cost
+  under the black comedy — Levin's haunting given one specific face. Play it dry; do not sentimentalize.
+- **FORESHADOW the heart-match — plant + payoff; the coincidence is OWNED, not hidden (LOCKED 2026-06-28):**
+  - **DO NOT telegraph the answer.** The solution to the heir's heart must NOT be apparent early — no
+    "first-page" tell. The blood-drive's significance only lands at the moment of her death.
+  - **DISCOVERY (~beat 3876):** the Vultures are **dispatched to an OD — the john called it in AND kept
+    his credstick** (he finished, saw her going, phoned the body in to Carrion, pocketed his pay, and
+    walked: "real knight in shining armour"). They arrive and it's **Maisy** — Lev's prom date —
+    **still alive, barely.**
+  - **FINAL WORDS + DEATH (the Lev↔Maisy two-hander — DO NOT SKIP):** Lev and Maisy **get to say
+    goodbye** — a real, dry, sixteen-years-later exchange, no melodrama. Then she dies, and **Lev holds
+    her until he feels her heart stop** — the rare-match heart they need, going still under his hand.
+  - **BLOOD-DRIVE FLASHBACK — RIGHT AFTER her heart stops:** cut to the last time Lev saw her — a
+    **blood drive** (working girls always donate because it gets you a **free STD test**, so the flop's
+    whole stable turns out). They **still have a thing**, dry and grown-up, sixteen years on. Her donor
+    screen flags a rare result and **Lev compliments it:** *"You're a super-rare phenotype."* / *"What
+    does that mean?"* / *"Means you're special."* Flirtation + tenderness. This is the plant and payoff
+    **FUSED at the moment of death**: the reader learns she was "special"/rare exactly as her heart
+    goes still. (Rare **phenotype** = a one-in-tens-of-thousands tissue match.)
+  - **THE MATCH:** the Scarab/IdentiScan then confirms her heart matches Do-yun to the decimal — what
+    the flashback just said in a teenager's flirtation, the machine now states as fact.
+  - **"PROVIDENCE" + THE EXPLOSION (relational fireworks — the 90+ lever):** **Tomas calls the match
+    "Providence!"** — the heart they need, dropped in their laps. **Lev detonates.** That some God or
+    Providence would arrange for him to cut his old flame's heart out and hand it to a Lotus
+    **nepo-baby scumbag** is obscene to him — *what a terrible joke for the universe to play on a
+    person.* Grief, rage, and the snag/kill resentment surface at once.
+    The coincidence works *because the characters name and rage at it* (fate's cruel joke), not because
+    it's hidden. Biggest two-hander of the back half; the mending turns here. Play the blow-up hot, the
+    recovery dry.
+- **NO-SCAR transplant — Scarab micro-laser suturing (LOCKED 2026-06-28).** The Scarab closes with
+  **micro-laser suturing that leaves no scar tissue** — the seam knits invisibly. State it on the page
+  at the transplant. This is load-bearing for the ending: Do-yun shows **no surgical mark**, so the
+  dawn discovery reads as *heir in bed with a dead girl*, not a post-op scene. (Add to §6 hardware.)
+- **Casimir/Ekow's arc — he FIGURES IT OUT, CONFRONTS them, is turned, and HELPS (RETCON of the
+  Nemesis / "he never knows" version — LOCKED 2026-06-28). His arc must PAY OFF — a confrontation, not
+  a fizzle. He is NOT Nemesis.**
+  - **The closing hunt + demeanor:** he tightens across the back half (a brush or two of real menace).
+    His instrument is the look that says he can **read every person's sins off them** — your lies
+    written on you like a confession letter — so guilty men feel seen. But unlike the dropped Nemesis
+    version, **he actually works it out:** these two repo men are who he's hunting.
+  - **THE CONFRONTATION (the payoff scene):** he corners Tomas & Lev — with Do-yun, mid-stage. For a
+    beat they are dead men: the Lotus hunter has them, and he KNOWS.
+  - **THE TURN — convince him, convincingly (grounded in WHO HE IS):** the argument that flips him is
+    his own life. He's the **outsider "dog"** — used, despised, never seated, the one sent to clean
+    Lotus's messes by a syndicate that would gut him the day he's inconvenient. Delivering the heir
+    clean serves those masters. **Collapsing the wedding sets Lotus against itself** — the one thing
+    that wounds the house that owns him. The Vultures don't bribe him; they show him the math (the
+    same survival-by-redirection logic), and he sees it's what he's always wanted: to watch the house
+    burn from the inside. (Reinforce with professional respect — fellow disposables — and that the
+    kill was an accident they're trying to fix.) It must be EARNED, not a shrug.
+  - **HE HELPS:** Casimir doesn't merely look away — he **helps them get Do-yun home and set up the
+    damning evidence** (the heir + the dead Maisy in the bed). The leashed dog slips the leash and
+    lights the match himself. THIS is the point of his whole arc.
+  - **Sequencing with lock #6:** he still **kills Bram Osei** and the Vultures still strip the spared
+    arm — but that lands BEFORE the turn (his menace/contract self established before he flips). His
+    Lotus contract being torched (the collapse) is what frees him after.
+  - **VATD must RING TRUE** — delicate balance. The turn has to be psychologically convincing; the
+    confrontation real; no cartoon luck.
 
 ## 6. Canon hardware {#SS-VATD-6}
 
 **The Scarab** — beetle-form autosurgical reclamation unit. Thoracic morph "Mama" + cranial
 morph "the Kid." Carried in an emergency-orange hardcase stenciled BIOHAZARD. Works on living
-and dead. "Crack the orange. Get Mama on him."
+and dead. "Crack the orange. Get Mama on him." **Closes with micro-laser suturing that leaves no
+scar tissue** — the seam knits invisibly, no mark left behind. (Load-bearing for the ending: the
+transplanted heir shows no surgical scar, so the dawn discovery reads as a man in bed with a dead
+girl, not a post-op patient.)
 
 **The Wagon** — Carrion Mobile Reclamation Unit. Forward "the ward" (one life-support berth,
 keeps a man alive a day) + rear "the larder" (cold racks, multi-body). Cab = confessional;
@@ -191,7 +333,7 @@ Score: **88.1/100** (N=120 mixed panel, 2026-06-21, hash dd452fbf1ffb). LOCKED.
 
 ## 8. User stories {#SS-VATD-8}
 
-- **VATD-US-1 ✅** All major entities seeded (Thomas, Levin, Do-yun, Casimir, Maisy,
+- **VATD-US-1 ✅** All major entities seeded (Tomas, Levin, Do-yun, Casimir, Maisy,
   The Scarab, The Wagon, Tears/Lethedol, The Loaner, The Recall, IdentiScan).
 - **VATD-US-2 ✅** 22-beat novella written (Sonnet draft → ground-up VULTURES register rewrite → Opus polish).
 - **VATD-US-3 ✅** Standalone review ≥ 82%. *Achieved: 88.1.*
@@ -200,7 +342,7 @@ Score: **88.1/100** (N=120 mixed panel, 2026-06-21, hash dd452fbf1ffb). LOCKED.
 
 ## 9. Notes for future Vultures strands {#SS-VATD-9}
 
-Carrion Logistics + the Vultures are established GLMZ texture. Thomas and Levin deliver
+Carrion Reclamations + the Vultures are established GLMZ texture. Tomas and Levin deliver
 Kyle's "corpse" in Street Meat (see [[SM]]). The VULTURES register is available for
 any body-recycler black-comedy noir in the GLMZ. The Tears/Resonance Zone lattice
 connection is an UNRESOLVED story hook.

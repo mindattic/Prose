@@ -21,7 +21,7 @@ updated: 2026-06-11
 ## PART 1 — HOW THE CITY WORKS {#SS-WORLD-1}
 
 ### 1.1 The place
-- **The GLMZ** (Greater Lake Michigan Zone, 2225), also Meridian 88, also the Glooms — the
+- **The GLMZ** (Greater Lake Michigan Zone, 2226), also Meridian 88, also the Glooms — the
   center of Western civilization, because the coasts failed. Built as a ferrocement wave over
   drowned street grids; the original roads flooded in 2174 and the city cut new tiers into the
   sides of its own buildings and kept going. The city is VERTICAL: sky is a rationed resource;
