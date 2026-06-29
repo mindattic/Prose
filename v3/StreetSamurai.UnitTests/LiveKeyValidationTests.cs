@@ -36,15 +36,31 @@ public class LiveKeyValidationTests
         // LlmProviderCatalog.DefaultIds == the trusted four, matching legion.json.
         var results = await health.CheckAsync(LlmProviderCatalog.DefaultIds, ProbeTimeout);
 
+        // Quota/billing failures mean the key is valid — the account just needs a
+        // top-up. These don't block a commit; only dead/invalid/missing keys do.
+        static bool IsKeyDead(LlmHealthResult r) =>
+            !r.IsHealthy &&
+            r.Diagnosis is not LlmHealthDiagnosis.QuotaExhausted
+                       and not LlmHealthDiagnosis.RateLimited;
+
         var broken = results
-            .Where(r => !r.IsHealthy)
+            .Where(IsKeyDead)
             .Select(r => $"{r.ProviderId}: {r.Diagnosis} " +
                          $"(HTTP {r.HttpStatusCode?.ToString() ?? "n/a"}) — {r.ActionableMessage}")
+            .ToList();
+
+        var billing = results
+            .Where(r => !r.IsHealthy && !IsKeyDead(r))
+            .Select(r => $"{r.ProviderId}: {r.Diagnosis} — {r.ActionableMessage}")
             .ToList();
 
         foreach (var r in results)
             TestContext.Out.WriteLine($"{r.ProviderId}: {(r.IsHealthy ? "OK" : "FAIL")} " +
                                       $"({r.Diagnosis}) in {r.ElapsedMilliseconds}ms");
+
+        if (billing.Count > 0)
+            TestContext.Out.WriteLine("WARN — quota/billing (key valid, needs credit):\n  - "
+                + string.Join("\n  - ", billing));
 
         Assert.That(broken, Is.Empty,
             "trusted-panel keys that FAILED live validation — fix/rotate before committing:\n  - "
