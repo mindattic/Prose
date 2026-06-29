@@ -1,13 +1,13 @@
 ---
-strand: C&C
+strand: CxC
 title: Crimson & Chrome
 kind: story
 universe: GLMZ
 status: complete
 register: HEIST
-previous: N&R
-trilogy: "The Rook Trilogy (M&G → N&R → C&C)"
-note: "Renamed 2026-06-27 from 'Marrow & Chrome'/MCRM → 'Crimson & Chrome'/C&C; body-bank renamed 'the Marrow' → 'Helix Reclamation' (the Reclamation); color motif marrow→crimson. Doc filename kept as MCRM.md for link stability."
+previous: NxR
+trilogy: "The Rook Trilogy (MxG → NxR → CxC)"
+note: "Renamed 2026-06-27 from 'Marrow & Chrome'/MCRM → 'Crimson & Chrome' (code then C&C). 2026-06-28: strand code is now CxC (ampersand-free); doc file renamed MCRM.md → CxC.md. Body-bank renamed 'the Marrow' → 'Helix Reclamation' (the Reclamation); color motif marrow→crimson."
 ---
 
 # Crimson & Chrome — Strand Bible
@@ -32,10 +32,10 @@ thing worth stealing back.
 
 **The reveal that recontextualizes the trilogy:** the crew were never doing three unrelated jobs.
 Each was a step the Nano Triumvirate needed taken and could not be seen taking itself —
-*extract the researcher* (MGUN got Soraya out of Axiom so a competitor could acquire the work
-clean), *open the wall* (NRST's partition crack surfaced the survivor manifest the corp had lost
+*extract the researcher* (MxG got Soraya out of Axiom so a competitor could acquire the work
+clean), *open the wall* (NxR's partition crack surfaced the survivor manifest the corp had lost
 track of), and now *close the loop*. Rook has been a contractor to her own ending the whole time.
-The diligent reader has seen the seams since MGUN's "the offer felt slightly too available."
+The diligent reader has seen the seams since MxG's "the offer felt slightly too available."
 
 ## §1 — Genre & Tone
 
@@ -48,7 +48,7 @@ at full volume. What keeps it from being empty is the [Character Doctrine](../CH
 every familiar beat is played by a specific person with a Drive, an Obstacle, and a silhouette
 you'd buy the action figure of.
 
-> **Trilogy-wide governing intent (binding on M&G, N&R, and C&C):** *The Rook Trilogy is a
+> **Trilogy-wide governing intent (binding on MxG, NxR, and CxC):** *The Rook Trilogy is a
 > crowd-pleaser.* Its job is to give the reader exactly what they came to a cyberpunk adventure
 > for — the heist, the chrome, the jargon, the loadouts, the runner-vs-corp score-settling — and
 > to deliver it with full conviction rather than ironic distance. We never apologize for the
@@ -72,7 +72,7 @@ facility, as Adalemo's discipline, as the seamless surfaces that price a person 
 The twenty-one names Soraya walked off the barge were **registered Reads** — neuretics-capable
 people the GLMZ logs and the corps covet — saved from an earlier harvest dressed up as a
 relocation order nobody signed. A **Nano Triumvirate member** (the competitor that funded
-PEREGRINE's reconstitution in NRST; named/seeded below) has spent the trilogy quietly assembling
+PEREGRINE's reconstitution in NxR; named/seeded below) has spent the trilogy quietly assembling
 the pieces of an industrial-scale program: Axiom's **Class V** neural-tissue pathway (made
 public, now refined by the competitor) plus a **body-bank** — *the Marrow* — that processes
 registered Reads into compatible neural substrate. The twenty-one are the last loose thread: the
@@ -81,7 +81,7 @@ survivors who could testify that the relocation was a harvest. The corp wants th
 Rook learns the shape of it because the pieces finally line up: Stave surfaces the survivor list
 under duress; Adalemo, no longer willing to leave it uncounted, brings what PEREGRINE knew; and
 Soraya, who has carried the twenty-one as the one unaudited thing in a life of audits, asks Rook
-for the job she has been dreading since MGUN — not extraction, not a crack, but **a rescue and a
+for the job she has been dreading since MxG — not extraction, not a crack, but **a rescue and a
 burning-down.**
 
 ## §3 — The Problem
@@ -93,7 +93,7 @@ can't file it away.
 
 **The complication (the trilogy's sting):** the crew's own past jobs are the corp's audit trail.
 Stopping the harvest means exposing that they helped build it — and Vox's face, **sold to Stave
-in NRST**, is the thread the corp pulls to ID the whole crew. The debt comes due here.
+in NxR**, is the thread the corp pulls to ID the whole crew. The debt comes due here.
 
 **The final situation (the confrontation):** not a wet-squad pursuit but a convergence — Rook's
 team, Adalemo's remnant of PEREGRINE choosing a side, Soraya, and Stave, against the Triumvirate
@@ -106,7 +106,7 @@ for once, to let those be different people.
 
 Per the [Character Doctrine](../CHARACTER.md) — Drive / Obstacle / the thing only they see — and
 the **Action Figure Test** (silhouette + signature gear + soul). These are the identical people
-from MGUN and NRST; this strand resolves each one's standing thread.
+from MxG and NxR; this strand resolves each one's standing thread.
 
 - **Rook (Inkeri Saarinen)** — POV, leader/beacon. *Arc completes:* the woman who carries the
   arithmetic so her people don't have to finally counts a job by who walks out, not what clears.
@@ -121,7 +121,7 @@ from MGUN and NRST; this strand resolves each one's standing thread.
 - **Boiler (Mikkeli Väinämöinen)** — *Arc:* the man who finds the beauty in a thing under load
   has to bring down a structure full of people, not empty concrete. The cheer meets its limit;
   the doctrine (load = what a thing carries that it wasn't rated for) turns human.
-- **Scout (Remi Nakamura-Diallo)** — *Arc:* the rider who lives in absence has to be *present* —
+- **Scout (Remi Diallo)** — *Arc:* the rider who lives in absence has to be *present* —
   the twenty-one can only be found by someone who can ride into the Marrow and come back. The
   crawler named Gerald she never names finally matters out loud.
 - **Stave** — *Arc:* the debt that has been buying their silence. The subject who didn't come back
@@ -153,17 +153,17 @@ from MGUN and NRST; this strand resolves each one's standing thread.
   found as people; the corp IDs the crew via Vox's face; the cost paid; the executive confronted.
 - **Act Four — The Count.** The harvest capability destroyed; the twenty-one out of reach; the
   corp's role made undeniable; Rook's final count — names, not quanta. The trilogy's last image
-  rhymes with MGUN's diner and NRST's Sojourn: a window, a lake, a number — but this time the
+  rhymes with MxG's diner and NxR's Sojourn: a window, a lake, a number — but this time the
   number is people, and for once it comes out whole.
 
 ## §6 — Beat Spine (14-beat outline)
 
 | # | Title | Goal |
 |---|---|---|
-| 1 | **The Job She Dreaded** | Soraya brings Rook the one job she's avoided since MGUN: the twenty-one are alive, hunted, and it's time. Rook says yes before she's done hearing it — and knows what that costs. |
+| 1 | **The Job She Dreaded** | Soraya brings Rook the one job she's avoided since MxG: the twenty-one are alive, hunted, and it's time. Rook says yes before she's done hearing it — and knows what that costs. |
 | 2 | **The Trusted List** | Rook reassembles the rotating cast; the warmth of a crew that chooses to come back; Stave is the reluctant key. Everyone's reason is different; she carries all of them. |
 | 3 | **The Survivor List** | Stave surfaces the twenty-one under the weight of the old debt; the relocation-order-as-harvest revealed; the subject who didn't come back is connected to the Marrow. |
-| 4 | **The Seam in the Trilogy** | The crew realizes their own past jobs are the corp's audit trail — MGUN got Soraya out clean, NRST surfaced the list. Rook has been a contractor to her own ending. The clues, named. |
+| 4 | **The Seam in the Trilogy** | The crew realizes their own past jobs are the corp's audit trail — MxG got Soraya out clean, NxR surfaced the list. Rook has been a contractor to her own ending. The clues, named. |
 | 5 | **The Mirror Crosses** | Adalemo brings what PEREGRINE knew and picks a side — counting what he'd left uncounted. Uneasy alliance; two planners who finally serve the same ledger. |
 | 6 | **The Marrow** | The body-bank established: chrome over charnel logic; registered Reads processed into substrate. The horror is procedural, not lurid. One of the twenty-one given a name and a face. |
 | 7 | **The Fatal Thread** | The plan against a facility that can't be starved or blinded; Vox's sold face flagged as the thing that will ID the whole crew. The cost of the way in is named. |
@@ -181,8 +181,8 @@ from MGUN and NRST; this strand resolves each one's standing thread.
    reveal, the mirror-turned-ally, the vault-that-is-a-person, the walk from the explosion — all
    honored. The Character Doctrine is what keeps them from being empty: specific people, every one.
 2. **No magic, psionics, or schism content.** Pure tech, cyberware, hardware/body horror. The
-   Reads are neuretics-capable people, not sensitives. (Trilogy lock, inherited from MGUN/NRST.)
-3. **The trilogy's seam is real.** The crew's MGUN and NRST jobs genuinely advanced the corp's
+   Reads are neuretics-capable people, not sensitives. (Trilogy lock, inherited from MxG/NxR.)
+3. **The trilogy's seam is real.** The crew's MxG and NxR jobs genuinely advanced the corp's
    program. This is retro-fit by planting clues in those strands (§9), not asserted.
 4. **The twenty-one are people, not a MacGuffin.** At least one has a name, a face, and a Drive.
    The rescue must cost and must land as human (Character Doctrine §2).
@@ -192,23 +192,23 @@ from MGUN and NRST; this strand resolves each one's standing thread.
 6. **The win is not clean.** Something changes and stays changed; someone is hurt; the corp is
    wounded, not erased (the GLMZ does not allow clean wins — trilogy lock).
 7. **Adalemo finishes crossing, on screen.** Not an enemy neutralized; a man who changed ledgers.
-8. **Vox's sold face pays off.** The NRST debt is the fatal thread; her choosing to be seen is her
+8. **Vox's sold face pays off.** The NxR debt is the fatal thread; her choosing to be seen is her
    arc's completion.
 9. **The title earns itself.** Marrow (the human core) vs Chrome (the machine) appears across the
-   strand as MGUN's magenta and NRST's rust did.
+   strand as MxG's magenta and NxR's rust did.
 
 ## §8 — Emotional Architecture
 
-**Rook's arc (trilogy capstone):** MGUN gave her the rule (and the Wennick wound under it); NRST
-took the rule away and made her a leader who runs a rotating cast she trusts; MCRM tests whether
+**Rook's arc (trilogy capstone):** MxG gave her the rule (and the Wennick wound under it); NxR
+took the rule away and made her a leader who runs a rotating cast she trusts; CxC tests whether
 the leader will follow her people into the one room her arithmetic says not to enter — and
-whether the count can, just once, come out whole. The final diner is the third in a set (MGUN's
-Spine diner, NRST's Sojourn): same woman, same lake, a different number. The series-long motif —
+whether the count can, just once, come out whole. The final diner is the third in a set (MxG's
+Spine diner, NxR's Sojourn): same woman, same lake, a different number. The series-long motif —
 *the count always says we got paid; it never says who didn't* — resolves when the count finally
 says who didn't, and Rook writes them down anyway.
 
 **Thematic through-line (resolved):** *who pays for a thing, and who gets it, are never the same
-people* (MGUN's Φ8,000 symmetry; NRST's twenty-one). MCRM is Rook refusing, once, to let them be
+people* (MxG's Φ8,000 symmetry; NxR's twenty-one). CxC is Rook refusing, once, to let them be
 different people — at a cost. The deferred-maintenance theme reaches the body: the registered
 Reads are the infrastructure the GLMZ stopped maintaining, priced as substrate. Marrow under
 chrome.
@@ -218,33 +218,34 @@ animal"; Scout's Gerald; Boiler's structural empathy turned human; Adalemo's cro
 Competence is still the baseline; the extra thing this time is that they have become people to
 each other, and the job is to refuse to let the machine price that.
 
-## §9 — Clue-Plant Refactor (MGUN + NRST → MCRM)
+## §9 — Clue-Plant Refactor (MxG + NxR → CxC)
 
 "All the clues were there." To make that true for the diligent reader, plant the following in the
 prior strands (light touches; never break their standalone reading or their ≥87 scores):
 
-**In MGUN:**
+**In MxG:**
 - The offer "felt slightly too available" (already present) — sharpen one clause so a re-reader
   clocks that Gault's anonymous client *wanted Soraya out for a buyer*, not for ransom.
 - One line in the coda: the Class V formula going public doesn't just hurt Axiom — it lets a
   *competitor* refine it without the liability. (Seeds the Triumvirate endgame.)
 
-**In NRST:**
+**In NxR:**
 - The manifest beat: one clause that the twenty-one were **registered Reads** and the barge was a
-  **harvest** dressed as relocation — so MCRM's premise is a payoff, not a reveal from nowhere.
+  **harvest** dressed as relocation — so CxC's premise is a payoff, not a reveal from nowhere.
 - Stave's debt: one line implying the gray-market broker Stave owes is *connected to the body
-  trade* — so Stave surfacing the survivor list in MCRM is earned.
+  trade* — so Stave surfacing the survivor list in CxC is earned.
 - Adalemo's exit line ("I never read a forty-first name") — already a perfect seed; reference it
-  in MCRM §5/§13.
+  in CxC §5/§13.
 
 **Across both:** Rook's recurring count motif ("the count never says who didn't") is the spine
-that MCRM's finale pays off — it is already in both codas; MCRM §14 closes it.
+that CxC's finale pays off — it is already in both codas; CxC §14 closes it.
 
 ## §10 — Workflow Status
 
 - [x] Docs: this bible + AMENDMENTS SS-A26 + USER_STORIES entry; `codex doctor` PASS (2026-06-27)
-- [x] Entities seeded: Anneke Oyelowo-Sato (executive `019f0968f5aa`), The Marrow (place `019f09689d19`), Helix Biosystems (existing corp), Sefi Okonkwo-Reyes (survivor `019f09693bf8`)
-- [x] Strand `MCRM` created (`marrow-chrome-019f0968`) + 14-beat spine
-- [x] Clue-plant refactor applied to MGUN (#4745 acquisition-for-buyer) + NRST (#4841 relocation-as-harvest)
-- [x] Prose generated (Sonnet→Opus) + reflow + AntagonistCost structural beat added → **review 87.6%** (2026-06-27). Trilogy: MGUN 87.1 / NRST 87.7 / MCRM 87.6 — all ≥87.
+- [x] Entities seeded: Anneke Oyelowo (executive `019f0968f5aa`), The Marrow (place `019f09689d19`), Helix Biosystems (existing corp), Sefi Okonkwo (survivor `019f09693bf8`)
+- [x] Strand `CxC` created (`marrow-chrome-019f0968`) + 14-beat spine
+- [x] Clue-plant refactor applied to MxG (#4745 acquisition-for-buyer) + NxR (#4841 relocation-as-harvest)
+- [x] Prose generated (Sonnet→Opus) + reflow + AntagonistCost structural beat added → **review 87.6%** (2026-06-27). Trilogy: MxG 87.1 / NxR 87.7 / CxC 87.6 — all ≥87.
 - [ ] Export (`--publish-docx`); toward-93 polish noted by panel: thicken Vox's prior presence, thin mid-beat ledger exposition, de-dupe Beats 6–7 vs 3–5.
+- [x] Round-2 Opus pass (2026-06-28): purged Kyle counting/arithmetic register from B1/B4; cut AffectationLines chrome simile (B1); consolidated B4 (was re-delivering B3's harvest reveal) into a Rook↔Soraya confession two-hander; trimmed crew-history interior (B2) + Soraya technical block (B8) + Helix-deduction blocks (B6/B7) to dialogue/present-moment; added AntagonistCost + active-Rook opening to B9 (Helix CREDENTIAL OBSERVED flag forces her to abandon the registry probe mid-reach); trimmed Anneke confrontation (B12) and fixed east/west-core continuity error; reconciled Gerald continuity across B9–B13 (crawler/rig, NOT a child — removed "boy/son/children" framing); thinned finger-tap + crimson-light motifs. Did not re-review.
