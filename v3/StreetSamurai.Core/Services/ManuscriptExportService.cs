@@ -227,23 +227,6 @@ public class ManuscriptExportService
         return path;
     }
 
-    /// <summary>
-    /// Creates an empty "Back Cover.txt" in the strand's publish folder if one does not already
-    /// exist. The file is left blank for the author to fill in manually. Returns the path.
-    /// </summary>
-    public async Task<string> ExportBackCoverAsync(Guid strandId, string? author = null, CancellationToken ct = default)
-    {
-        var (manuscript, anchorPath) = await LoadAsync(strandId, "backcover", ct);
-        var dir = Path.GetDirectoryName(anchorPath)!;
-        var path = Path.Combine(dir, "Back Cover.txt");
-
-        if (!File.Exists(path))
-            await File.WriteAllTextAsync(path, string.Empty, new UTF8Encoding(false), ct);
-
-        log.LogInformation("Back cover placeholder ready {Path}", path);
-        return path;
-    }
-
     /// <summary>Strip the simple <c>*italic*</c> markdown markers for clean narration text.</summary>
     private static string StripInlineMarkup(string text) => text.Replace("*", "");
 
@@ -451,6 +434,7 @@ public class ManuscriptExportService
         // only the current export (mirrors DocxExportService, which already prunes *.docx).
         foreach (var existing in Directory.EnumerateFiles(strandDir, $"*.{ext}"))
         {
+            if (Path.GetFileName(existing).Equals("synopsis.txt", StringComparison.OrdinalIgnoreCase)) continue;
             try { File.Delete(existing); }
             catch (IOException) { }
             catch (UnauthorizedAccessException) { }

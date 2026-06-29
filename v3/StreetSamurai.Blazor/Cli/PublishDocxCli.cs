@@ -69,8 +69,6 @@ public static class PublishDocxCli
             Console.WriteLine($"[publish-docx] Wrote pdf:  {pdfPath}");
             var txtPath = await manuscript.ExportAudioTxtAsync(strandId, author);
             Console.WriteLine($"[publish-docx] Wrote txt:  {txtPath}");
-            var backCoverPath = await manuscript.ExportBackCoverAsync(strandId, author);
-            Console.WriteLine($"[publish-docx] Wrote back cover: {backCoverPath}");
             return 0;
         }
         catch (Exception ex) { Console.Error.WriteLine($"[publish-docx] Failed: {ex.Message}"); return 1; }
