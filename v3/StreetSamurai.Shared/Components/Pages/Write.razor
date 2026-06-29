@@ -62,7 +62,7 @@
                         // "Complete" = at least one beat AND every beat has prose. The
                         // green tick is a quiet finish-line signal in the sidebar.
                         var hasBeats = c.Beats != null && c.Beats.Count > 0;
-                        var complete = hasBeats && c.Beats.All(b => !string.IsNullOrWhiteSpace(b.Text));
+                        var complete = hasBeats && c.Beats!.All(b => !string.IsNullOrWhiteSpace(b.Text));
                         <a href="@($"/write/{book.Id}/{c.Id}")"
                            class="@($"write-side-item{(active ? " active" : "")}")">
                             <span class="write-side-num">Ch @(c.Number?.ToString() ?? "?")</span>
