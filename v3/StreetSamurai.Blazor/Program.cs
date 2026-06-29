@@ -1690,6 +1690,18 @@ if (args.Contains("--sync-markdown"))
     return;
 }
 
+// CLI mode: two-way sync between synopsis.txt in each strand's publish folder
+// and Strands.Synopsis in the DB. File wins on conflict.
+//   ss --sync-synopsis [--slug <slug>] [--dry-run]
+if (args.Contains("--sync-synopsis"))
+{
+    var cliBuilder = WebApplication.CreateBuilder(args);
+    cliBuilder.Services.AddStreetSamuraiServices();
+    var cliApp = cliBuilder.Build();
+    Environment.ExitCode = await SyncSynopsisCli.RunAsync(args, cliApp.Services);
+    return;
+}
+
 // CLI mode: restore .md files from DB back to disk. Supports point-in-time
 // recovery from the MarkdownFiles_History temporal table.
 //   ss --restore-markdown [--file <relativePath>] [--as-of <datetime-utc>] [--dry-run] [--list]
