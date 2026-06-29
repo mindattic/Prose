@@ -209,6 +209,91 @@ public class MojibakeRepairService
         await cmd.ExecuteNonQueryAsync(ct);
     }
 
+    // ── detection ─────────────────────────────────────────────────────────────
+
+    public sealed class DetectResult
+    {
+        public int BeatsAffected { get; set; }
+        public List<DetectHit> Hits { get; } = new();
+    }
+
+    public sealed record DetectHit(Guid BeatId, string StrandTitle, string Excerpt);
+
+    /// <summary>
+    /// Scan beats belonging to <paramref name="strandId"/> (or all beats when
+    /// <c>null</c>) and report any that contain mojibake without modifying them.
+    /// </summary>
+    public async Task<DetectResult> DetectStrandAsync(Guid? strandId = null, CancellationToken ct = default)
+    {
+        await using var db = await dbFactory.CreateDbContextAsync(ct);
+        var result = new DetectResult();
+
+        IEnumerable<StreetSamurai.Core.Data.Entities.Beat> beats;
+        if (strandId.HasValue)
+        {
+            var beatIds = await db.StrandBeats
+                .Where(sb => sb.StrandId == strandId.Value)
+                .Select(sb => sb.BeatId)
+                .ToListAsync(ct);
+            beats = await db.Beats.AsNoTracking().Where(b => beatIds.Contains(b.Id)).ToListAsync(ct);
+        }
+        else
+        {
+            beats = await db.Beats.AsNoTracking().ToListAsync(ct);
+        }
+
+        string strandTitle = strandId.HasValue
+            ? (await db.Strands.AsNoTracking()
+                .Where(s => s.Id == strandId.Value)
+                .Select(s => s.Title)
+                .FirstOrDefaultAsync(ct) ?? strandId.Value.ToString())
+            : "(all strands)";
+
+        foreach (var beat in beats)
+        {
+            bool textDirty  = !string.IsNullOrEmpty(beat.Text)      && ContainsMojibake(beat.Text!);
+            bool titleDirty = !string.IsNullOrEmpty(beat.BeatTitle)  && ContainsMojibake(beat.BeatTitle!);
+            if (!textDirty && !titleDirty) continue;
+
+            result.BeatsAffected++;
+            var sample = (beat.Text ?? beat.BeatTitle ?? "").Length > 120
+                ? (beat.Text ?? beat.BeatTitle ?? "")[..120] + "…"
+                : (beat.Text ?? beat.BeatTitle ?? "");
+            result.Hits.Add(new DetectHit(beat.Id, strandTitle, sample));
+        }
+
+        return result;
+    }
+
+    /// <summary>
+    /// Open a .docx file and count mojibake occurrences in its body XML.
+    /// Returns 0 if the file cannot be opened (locked / missing).
+    /// </summary>
+    public static int CountDocxMojibake(string docxPath)
+    {
+        try
+        {
+            using var zip = System.IO.Compression.ZipFile.OpenRead(docxPath);
+            var entry = zip.GetEntry("word/document.xml");
+            if (entry is null) return 0;
+            using var reader = new System.IO.StreamReader(entry.Open(), Encoding.UTF8);
+            var xml = reader.ReadToEnd();
+            int count = 0;
+            for (int i = 0; i < xml.Length - 1; i++)
+                if (xml[i] == 'â' && xml[i + 1] == '€') count++;
+            return count;
+        }
+        catch { return 0; }
+    }
+
+    /// <summary>Fast check: returns true if the string contains the â€ mojibake prefix.</summary>
+    public static bool ContainsMojibake(string s)
+    {
+        for (int i = 0; i < s.Length - 1; i++)
+            if (s[i] == 'â' && s[i + 1] == '€') return true;
+        return false;
+    }
+
     // ── core mojibake reversal ─────────────────────────────────────────────────
 
     /// <summary>

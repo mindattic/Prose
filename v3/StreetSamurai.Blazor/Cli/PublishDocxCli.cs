@@ -35,6 +35,7 @@ public static class PublishDocxCli
         var dbFactory = services.GetRequiredService<IDbContextFactory<StreetSamuraiDbContext>>();
         var docx = services.GetRequiredService<DocxExportService>();
         var manuscript = services.GetRequiredService<ManuscriptExportService>();
+        var mojiChecker = services.GetRequiredService<MojibakeRepairService>();
 
         if (!string.IsNullOrWhiteSpace(exportDir))
         {
@@ -57,6 +58,16 @@ public static class PublishDocxCli
             strandId = strand.Id; strandTitle = strand.Title;
         }
 
+        // ── pre-publish mojibake guard ──────────────────────────────────────────
+        var detected = await mojiChecker.DetectStrandAsync(strandId);
+        if (detected.BeatsAffected > 0)
+        {
+            Console.Error.WriteLine($"[publish-docx] ❌ Mojibake detected in {detected.BeatsAffected} beat(s) — run 'ss --repair --fix-mojibake' to correct before publishing.");
+            foreach (var hit in detected.Hits.Take(5))
+                Console.Error.WriteLine($"  beat {hit.BeatId}: {hit.Excerpt[..Math.Min(80, hit.Excerpt.Length)]}");
+            return 1;
+        }
+
         Console.WriteLine($"[publish-docx] Rendering \"{strandTitle}\" to .docx + .epub + .pdf + .txt…");
         try
         {
@@ -69,6 +80,14 @@ public static class PublishDocxCli
             Console.WriteLine($"[publish-docx] Wrote pdf:  {pdfPath}");
             var txtPath = await manuscript.ExportAudioTxtAsync(strandId, author);
             Console.WriteLine($"[publish-docx] Wrote txt:  {txtPath}");
+
+            // ── post-publish mojibake validation ────────────────────────────────
+            var docxHits = MojibakeRepairService.CountDocxMojibake(docxPath);
+            if (docxHits > 0)
+                Console.Error.WriteLine($"[publish-docx] ⚠  {docxHits} mojibake sequence(s) found in exported .docx — run 'ss --repair --fix-mojibake' then re-export.");
+            else
+                Console.WriteLine("[publish-docx] ✓ Mojibake check passed.");
+
             return 0;
         }
         catch (Exception ex) { Console.Error.WriteLine($"[publish-docx] Failed: {ex.Message}"); return 1; }
