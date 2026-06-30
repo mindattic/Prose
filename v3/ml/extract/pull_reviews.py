@@ -19,7 +19,7 @@ console = Console()
 BEAT_SCORES_SQL = """
 SELECT
     sr.StrandId,
-    sr.StrandId + '-' + CAST(srbs.BeatNumber AS nvarchar) + '-' + sr.ContentHash AS RowKey,
+    CAST(sr.StrandId AS nvarchar(36)) + '-' + CAST(srbs.BeatNumber AS nvarchar) + '-' + sr.ContentHash AS RowKey,
     s.Slug                                                  AS StrandSlug,
     srbs.BeatNumber,
     sr.ContentHash,

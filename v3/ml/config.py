@@ -44,8 +44,8 @@ EMBED_MODEL = "sentence-transformers/all-MiniLM-L6-v2"
 EMBED_DIM   = 384
 PCA_DIM     = 8    # PCA-reduced semantic features injected into LightGBM
 
-# MLflow
-MLFLOW_TRACKING_URI = f"file:///{ARTIFACTS / 'mlruns'}"
+# MLflow — SQLite backend (file-store deprecated in MLflow 2.x+)
+MLFLOW_TRACKING_URI = f"sqlite:///{ARTIFACTS / 'mlflow.db'}"
 
 # LightGBM defaults
 LGBM_PARAMS = {

@@ -130,7 +130,7 @@ class TextFeatureExtractor:
         from sentence_transformers import SentenceTransformer
         from sklearn.decomposition import PCA
 
-        self._embedder = SentenceTransformer(embed_model)
+        self._embedder = SentenceTransformer(embed_model, local_files_only=True)
         self._pca = PCA(n_components=pca_components, random_state=42)
         if pca_fit_texts:
             embeddings = self._embedder.encode(pca_fit_texts, batch_size=64, show_progress_bar=True)

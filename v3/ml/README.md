@@ -115,7 +115,7 @@ sqlcmd -S "(localdb)\MSSQLLocalDB" -d StreetSamurai -Q "SELECT COUNT(*), Severit
 
 # What did the model learn? (RMSE < 0.6 = good; < 0.5 = excellent)
 # Open in browser: http://127.0.0.1:5000
-.venv\Scripts\mlflow ui --backend-store-uri file:///D:/Projects/MindAttic/StreetSamurai/v3/ml/artifacts/mlruns
+.venv\Scripts\mlflow ui --backend-store-uri sqlite:///D:/Projects/MindAttic/StreetSamurai/v3/ml/artifacts/mlflow.db
 ```
 
 ---
@@ -259,7 +259,7 @@ Revelation/Narrative, plus mode_certainty.
 
 Check these in MLflow after each nightly run:
 ```powershell
-.venv\Scripts\mlflow ui --backend-store-uri file:///D:/Projects/MindAttic/StreetSamurai/v3/ml/artifacts/mlruns
+.venv\Scripts\mlflow ui --backend-store-uri sqlite:///D:/Projects/MindAttic/StreetSamurai/v3/ml/artifacts/mlflow.db
 ```
 
 ---
