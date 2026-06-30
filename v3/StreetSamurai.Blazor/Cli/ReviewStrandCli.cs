@@ -34,7 +34,7 @@ public static class ReviewStrandCli
         int readers = settings.ReviewReaders, panel = settings.ReviewPanel,
             ballots = settings.ReviewBallots, prose = settings.ReviewProse;
         bool samePersonas = false, study = false, census = false, skipDiagnosis = false, byAct = false;
-        bool useLocal = false; string? localModel = null, localUrl = null, localKey = null, localLabel = null; int localCtx = 0;
+        bool useLocal = false; string? localModel = null, localUrl = null, localKey = null, localLabel = null, modelOverride = null; int localCtx = 0;
         int segChars = 90000, segBallots = 8;
         // RFC 0009 §2 — cost tier. Explicit --ballots/--prose/--skip-diagnosis still win over the tier.
         string? effort = null;
@@ -62,6 +62,7 @@ public static class ReviewStrandCli
                 case "--skip-diagnosis":  skipDiagnosis = true; skipSet = true; break;
                 case "--effort":
                 case "--tier":            if (i + 1 < args.Length) effort = args[++i]; break;
+                case "--model":           if (i + 1 < args.Length) modelOverride = args[++i]; break;
                 case "--local":           useLocal = true; break;
                 case "--local-model":     if (i + 1 < args.Length) localModel = args[++i]; break;
                 case "--local-url":       if (i + 1 < args.Length) localUrl = args[++i]; break;
@@ -109,7 +110,8 @@ public static class ReviewStrandCli
             Console.Error.WriteLine("  --effort draft     ~6 calls — mid-draft spot check (per-beat gripes; not a gate)");
             Console.Error.WriteLine("  --effort standard  ~15 calls — standalone gate (>=82%)");
             Console.Error.WriteLine("  --effort deep      ~37 calls — cumulative/publish gate (>=85%)");
-            Console.Error.WriteLine("  --local            run ballots on the local LLM (Ollama) — free, no cloud calls (default + --by-act only)");
+            Console.Error.WriteLine("  --model TAG        override the cloud model for all active providers this run (e.g. gpt-4.1, gemini-2.5-pro)");
+            Console.Error.WriteLine("  --local            run ballots on the local LLM (Ollama) -- free, no cloud calls (default + --by-act only)");
             Console.Error.WriteLine("  --local-model TAG  override the local model tag for this run (default: settings.LocalReviewModel)");
             Console.Error.WriteLine("  --local-url URL    point at a remote/rented endpoint (e.g. http://1.2.3.4:11434); implies --local; persisted");
             Console.Error.WriteLine("  --local-key KEY    bearer token for a secured remote endpoint (omit for a bare Ollama box)");
@@ -243,6 +245,17 @@ public static class ReviewStrandCli
             if (useLocal)
                 Console.WriteLine($"   Brain: LOCAL — {localTag} @ {settings.LocalReviewBaseUrl} "
                     + "(no cloud calls; persona/psychometric diversity only — separate score baseline).");
+            else
+            {
+                var activeProviders = settings.ReviewAllowedProviders
+                    .Split(',', StringSplitOptions.RemoveEmptyEntries | StringSplitOptions.TrimEntries);
+                var modelList = string.Join(", ", activeProviders.Select(p =>
+                {
+                    var m = modelOverride ?? LegionClient.DefaultModels.GetValueOrDefault(p, "?");
+                    return $"{p}:{m}";
+                }));
+                Console.WriteLine($"   Models: {modelList}");
+            }
             Console.WriteLine($"   {ballots} score-ballots ("
                 + (useLocal ? $"all on local model {localTag}" : "round-robin across the trusted-4")
                 + (profile?.CheapModels == true && !useLocal ? ", on cheap models" : "") + $") + {prose} prose upgrades"
@@ -254,7 +267,7 @@ public static class ReviewStrandCli
                 var sr = await reviewer.RunSampledReviewAsync(strandId, ballots, prose, bp,
                     skipDiagnosis: skipDiagnosis, cheapModels: profile?.CheapModels ?? false,
                     allowedProvidersOverride: profile?.AllowedProviders,
-                    useLocal: useLocal, localModelOverride: localModel);
+                    useLocal: useLocal, localModelOverride: localModel, cloudModelOverride: modelOverride);
                 Console.WriteLine($"[review-strand] {sr.BallotsSaved}/{sr.Ballots} ballots ({sr.Failed} failed), {sr.ProseAdded} prose upgraded.");
                 Console.WriteLine($"[review-strand] Strand {sr.MeanScore}/100  (SD {sr.Sd}, 95% CI ±{sr.Ci95})  ·  {sr.Clusters} clusters  ·  fingerprint {sr.ContentHash[..Math.Min(12, sr.ContentHash.Length)]}");
                 if (!string.IsNullOrEmpty(sr.ReportHtmPath))  Console.WriteLine($"[review-strand] Report (open in browser): {sr.ReportHtmPath}");
