@@ -719,6 +719,17 @@ if (args.Contains("--publish-strand"))
     return;
 }
 
+// CLI mode: seed Amazon KDP keywords for published strands.
+//   ss --seed-keywords [--slug <slug>]
+if (args.Contains("--seed-keywords"))
+{
+    var cliBuilder = WebApplication.CreateBuilder(args);
+    cliBuilder.Services.AddStreetSamuraiServices();
+    var cliApp = cliBuilder.Build();
+    Environment.ExitCode = await SeedKeywordsCli.RunAsync(args, cliApp.Services);
+    return;
+}
+
 // CLI mode: render a strand to a KDP-ready Word .docx in Downloads.
 //   ss --publish-docx (--id <guid|prefix> | --slug <slug>) [--author "Name"]
 if (args.Contains("--publish-docx"))
@@ -1916,6 +1927,16 @@ if (args.Contains("--narrative-science"))
     cliBuilder.Services.AddStreetSamuraiServices();
     var cliApp = cliBuilder.Build();
     Environment.ExitCode = await NarrativeScienceCli.RunAsync(args, cliApp.Services);
+    return;
+}
+
+// ss --clone-strand (--id <guid> | --slug <slug>) [--title "New Title"] [--strand-code SM1] [--draft] [--status ready]
+if (args.Contains("--clone-strand"))
+{
+    var cliBuilder = WebApplication.CreateBuilder(args);
+    cliBuilder.Services.AddStreetSamuraiServices();
+    var cliApp = cliBuilder.Build();
+    Environment.ExitCode = await CloneStrandCli.RunAsync(args, cliApp.Services);
     return;
 }
 

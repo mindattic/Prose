@@ -248,6 +248,119 @@ public class StrandTools
         return JsonSerializer.Serialize(new { ok = true, id, slug, title = newTitle, url = $"/strand/{slug}", source_id = source.Id }, CanonTools.JsonOpts);
     }
 
+    [McpServerTool, Description("Clone a strand into a fully independent copy: new Strand row + new Beat rows, same prose. Audio, scores, and review history are NOT copied — clone starts fresh. Supports strandCode and isDraft so the clone can be excluded from score/publish flows until promoted. Use this instead of DuplicateStrand when you need strandCode, isDraft, or per-experiment isolation. Returns new id, slug, beat count.")]
+    public async Task<string> CloneStrand(
+        [Description("Source strand Guid id or slug.")] string idOrSlug,
+        [Description("Title for the clone. Defaults to 'Source Title (Clone)'.")] string title = "",
+        [Description("Optional short reference code for the clone (e.g. 'SM1'). Rejected if already in use.")] string strandCode = "",
+        [Description("Mark the clone as a draft (excluded from review/score/publish flows). Default true.")] bool isDraft = true,
+        [Description("Status value to stamp on the clone: 'ready', 'draft', etc. Default 'ready'.")] string status = "ready")
+    {
+        var source = await ResolveStrandAsync(idOrSlug);
+        if (source == null) return JsonSerializer.Serialize(new { error = "strand_not_found", idOrSlug }, CanonTools.JsonOpts);
+
+        var code = string.IsNullOrWhiteSpace(strandCode) ? null : strandCode.Trim().ToUpperInvariant();
+        if (code != null)
+        {
+            await using var check = await dbFactory.CreateDbContextAsync();
+            var clash = await check.Strands.AsNoTracking().FirstOrDefaultAsync(s => s.StrandCode == code);
+            if (clash != null)
+                return JsonSerializer.Serialize(new { error = "strand_code_in_use", code, clash_slug = clash.Slug }, CanonTools.JsonOpts);
+        }
+
+        await using var db = await dbFactory.CreateDbContextAsync();
+
+        var sourceBeats = await db.Set<StrandBeat>()
+            .AsNoTracking()
+            .Where(sb => sb.StrandId == source.Id && sb.IsEnabled)
+            .OrderBy(sb => sb.SortKey)
+            .Join(db.Beats.AsNoTracking(), sb => sb.BeatId, b => b.Id,
+                  (sb, b) => new { sb.SortKey, Beat = b })
+            .ToListAsync();
+
+        var newTitle  = string.IsNullOrWhiteSpace(title) ? $"{source.Title} (Clone)" : title.Trim();
+        var newId     = Guid.CreateVersion7();
+        var sanitised = new string(newTitle.ToLowerInvariant().Select(c => char.IsLetterOrDigit(c) ? c : '-').ToArray());
+        var parts     = sanitised.Split('-').Where(p => p.Length > 0).Take(8);
+        var newSlug   = $"{string.Join("-", parts)}-{newId.ToString("N")[..8]}";
+
+        var maxSort = await db.Strands.Where(s => s.ParentStrandId == null).Select(s => (double?)s.SortKey).MaxAsync() ?? 0;
+        var now     = DateTime.UtcNow;
+
+        db.Strands.Add(new Strand
+        {
+            Id              = newId,
+            Slug            = newSlug,
+            Title           = newTitle,
+            StrandCode      = code,
+            Kind            = source.Kind,
+            Status          = status,
+            Synopsis        = source.Synopsis,
+            Seed            = source.Seed,
+            UniverseId      = source.UniverseId,
+            VoiceId         = source.VoiceId,
+            VoiceModel      = source.VoiceModel,
+            VoiceStability  = source.VoiceStability,
+            VoiceSimilarity = source.VoiceSimilarity,
+            VoiceStyle      = source.VoiceStyle,
+            VoiceSeed       = source.VoiceSeed,
+            TtsEngine       = source.TtsEngine,
+            IsDraft         = isDraft,
+            SortKey         = maxSort + 100.0,
+            CreatedAt       = now,
+            UpdatedAt       = now,
+        });
+
+        var beatMax = await db.Beats.MaxAsync(b => (int?)b.Number) ?? 0;
+        int nextNum = beatMax + 1;
+
+        foreach (var entry in sourceBeats)
+        {
+            var src    = entry.Beat;
+            var beatId = Guid.CreateVersion7();
+            db.Beats.Add(new Beat
+            {
+                Id               = beatId,
+                Number           = nextNum++,
+                Text             = src.Text,
+                BeatTitle        = src.BeatTitle,
+                Synopsis         = src.Synopsis,
+                StructureRole    = src.StructureRole,
+                Act              = src.Act,
+                SceneType        = src.SceneType,
+                EmotionalTone    = src.EmotionalTone,
+                PaceHint         = src.PaceHint,
+                Kind             = src.Kind,
+                IsChapterStart   = src.IsChapterStart,
+                GapAfterMs       = src.GapAfterMs,
+                GapAfterAudioPath = src.GapAfterAudioPath,
+                CreatedAt        = now,
+                UpdatedAt        = now,
+            });
+            db.StrandBeats.Add(new StrandBeat
+            {
+                StrandId  = newId,
+                BeatId    = beatId,
+                SortKey   = entry.SortKey,
+                IsEnabled = true,
+            });
+        }
+
+        await db.SaveChangesAsync();
+        return JsonSerializer.Serialize(new
+        {
+            ok         = true,
+            id         = newId,
+            slug       = newSlug,
+            title      = newTitle,
+            code,
+            isDraft,
+            beat_count = sourceBeats.Count,
+            source_id  = source.Id,
+            url        = $"/strand/{newSlug}",
+        }, CanonTools.JsonOpts);
+    }
+
     [McpServerTool, Description("Insert a new beat into a strand. Pass an empty afterBeatId to insert at the top. Returns the new beat's id.")]
     public async Task<string> InsertBeat(
         [Description("Strand Guid id or slug.")] string strandIdOrSlug,

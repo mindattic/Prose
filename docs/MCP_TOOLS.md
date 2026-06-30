@@ -11,7 +11,7 @@
 > All tools are MCP-prefixed `mcp__streetsamurai__<name>` by the client. Most return a
 > JSON string; the canon is the SQL database, scoped to the active Universe.
 
-**198 tools** across **29 tool families.**
+**199 tools** across **29 tool families.**
 
 ## Families
 
@@ -39,7 +39,7 @@
 | [Species](#species) | 2 |
 | [Story](#story) | 6 |
 | [Story Audit](#story-audit) | 2 |
-| [Strand](#strand) | 30 |
+| [Strand](#strand) | 31 |
 | [Universe](#universe) | 3 |
 | [Voice](#voice) | 5 |
 | [Workflow Monitor](#workflow-monitor) | 3 |
@@ -1155,6 +1155,16 @@ Append an amendment to the strand's narrative spine. Amendments are append-only 
 Clear an explicit gap-after-beat override. The audio engine falls back to the auto-computed silence from SceneType + terminator punctuation.
 
 - `beatHandle` (string, required) — Beat Guid OR 'strand-guid.beat-guid' handle.
+
+### `clone_strand`
+
+Clone a strand into a fully independent copy: new Strand row + new Beat rows, same prose. Audio, scores, and review history are NOT copied — clone starts fresh. Supports strandCode and isDraft so the clone can be excluded from score/publish flows until promoted. Use this instead of DuplicateStrand when you need strandCode, isDraft, or per-experiment isolation. Returns new id, slug, beat count.
+
+- `idOrSlug` (string, required) — Source strand Guid id or slug.
+- `title` (string, optional) — Title for the clone. Defaults to 'Source Title (Clone)'.
+- `strandCode` (string, optional) — Optional short reference code for the clone (e.g. 'SM1'). Rejected if already in use.
+- `isDraft` (bool, optional) — Mark the clone as a draft (excluded from review/score/publish flows). Default true.
+- `status` (string, optional) — Status value to stamp on the clone: 'ready', 'draft', etc. Default 'ready'.
 
 ### `create_strand`
 
