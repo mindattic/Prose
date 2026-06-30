@@ -1832,6 +1832,52 @@ if (args.Contains("--story-audit"))
     return;
 }
 
+// ss --ml-audit [--slug <strandSlug>] [--all] [--skip-gripes] [--json]
+// Runs the Python ML beat auditor against the trained nightly model.
+// Writes ML-PROSE-SCORE findings to the Findings table for weak beats.
+// Prerequisites: v3/ml/.venv set up + at least one nightly run completed.
+// Exit 0 = clean, 1 = advisory (>=1 Low finding), 2 = blocking (>=1 High finding).
+if (args.Contains("--ml-audit"))
+{
+    var cliBuilder = WebApplication.CreateBuilder(args);
+    cliBuilder.Services.AddStreetSamuraiServices();
+    var cliApp = cliBuilder.Build();
+    Environment.ExitCode = await MlAuditCli.RunAsync(args, cliApp.Services);
+    return;
+}
+
+// ss --export-personas-json [--out <path>]
+// Exports all 1024 Legion persona details + OCEAN psychometric profiles to JSON
+// for consumption by the Python ML package (v3/ml/artifacts/personas.json).
+if (args.Contains("--export-personas-json"))
+{
+    var outPath = args.SkipWhile(a => a != "--out").Skip(1).FirstOrDefault()
+        ?? Path.GetFullPath(Path.Combine(AppContext.BaseDirectory,
+            "..", "..", "..", "..", "..", "ml", "artifacts", "personas.json"));
+    Directory.CreateDirectory(Path.GetDirectoryName(outPath)!);
+    var personas = MindAttic.Legion.PersonaLibrary.AllDetails
+        .Select(p =>
+        {
+            var profile = MindAttic.Legion.PersonaLibrary.Profiles.TryGetValue(p.Id, out var pr) ? pr : null;
+            var ocean   = profile?.Ocean;
+            return new
+            {
+                p.Id, p.Archetype, p.Worldview, p.Background, p.Age, p.Quirk,
+                Ocean = ocean == null ? null : new
+                {
+                    ocean.Openness, ocean.Conscientiousness, ocean.Extraversion,
+                    ocean.Agreeableness, ocean.Neuroticism,
+                },
+            };
+        });
+    var json = System.Text.Json.JsonSerializer.Serialize(
+        personas.ToList(),
+        new System.Text.Json.JsonSerializerOptions { WriteIndented = true });
+    await File.WriteAllTextAsync(outPath, json);
+    Console.WriteLine($"Exported {MindAttic.Legion.PersonaLibrary.AllDetails.Count()} personas to {outPath}");
+    return;
+}
+
 // ss --sanity-scan (--slug <slug|code> | --all) [--json]
 // Deterministic prose checks — no LLM. Catches leaked internal strand codes,
 // undefined all-caps acronyms, encoding corruption, and heft-floor violations.

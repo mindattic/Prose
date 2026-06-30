@@ -818,6 +818,7 @@ public static class ServiceCollectionExtensions
         // auto-detects beat mode, injects pacing + structural guidance, and logs coverage.
         // Use ss --workflow-status to inspect coverage gaps.
         services.AddSingleton<BeatModeDetector>();
+        services.AddSingleton<MlProseGuidanceService>();
         services.AddSingleton<WorkflowMonitorService>();
         services.AddSingleton<EntityContextStack>();
         services.AddSingleton<EntityContextService>();

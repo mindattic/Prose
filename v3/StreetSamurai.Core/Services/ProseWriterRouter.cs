@@ -42,7 +42,8 @@ public class ProseWriterRouter(
     AmbientAnomalyService? ambientAnomaly = null,
     NarrativeSummaryService? narrativeSummary = null,
     WorldStateAtBeatService? worldStateAtBeat = null,
-    ConsequenceEngine? consequenceEngine = null)
+    ConsequenceEngine? consequenceEngine = null,
+    MlProseGuidanceService? mlProseGuidance = null)
 {
     // Extended combat rules — shared with CombatSceneWriter's common block + Dissociated Observer examples.
     static readonly string CombatProseGuidance = """
@@ -155,6 +156,14 @@ public class ProseWriterRouter(
             catch { /* non-blocking */ }
         }
 
+        // ML prose quality guidance: findings from the nightly Python model audit.
+        var mlProseGuidanceContext = context.MlProseGuidanceContext;
+        if (string.IsNullOrEmpty(mlProseGuidanceContext) && mlProseGuidance != null && context.StrandId != Guid.Empty)
+        {
+            try { mlProseGuidanceContext = await mlProseGuidance.BuildGuidanceAsync(context.StrandId, ct); }
+            catch { /* non-blocking — ML guidance is best-effort */ }
+        }
+
         // Tension escalation: warn when recent beats have stagnated at low intensity.
         var tensionGuidanceContext = context.TensionGuidanceContext;
         if (string.IsNullOrEmpty(tensionGuidanceContext) && tensionService != null && context.StrandId != Guid.Empty)
@@ -232,6 +241,7 @@ public class ProseWriterRouter(
             LocationContext        = locationContext,
             DialogueContext        = dialogueContext,
             EmotionalGuidanceContext = emotionalGuidanceContext,
+            MlProseGuidanceContext   = mlProseGuidanceContext,
             TensionGuidanceContext = tensionGuidanceContext,
             ReaderKnowledgeContext = readerKnowledgeContext,
             ConsequenceContext     = consequenceContext,
