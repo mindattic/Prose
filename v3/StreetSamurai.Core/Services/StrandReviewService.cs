@@ -1267,7 +1267,7 @@ Return ONLY a JSON object, nothing else:
         ["claude-api"]  = "claude-haiku-4-5-20251001",
         ["claude-team"] = "claude-haiku-4-5-20251001",
         ["openai"]   = "gpt-4.1-nano",
-        ["gemini"]   = "gemini-2.5-flash-lite",
+        ["gemini"]   = "gemini-2.0-flash",
         ["deepseek"] = "deepseek-chat",
     };
 
@@ -1516,7 +1516,8 @@ Return ONLY a JSON object and nothing else:
                 : cfg.ActiveProviderIds.FirstOrDefault() ?? "claude-api";
             key = ResolveKey(judge);
             if (string.IsNullOrWhiteSpace(key)) return FallbackSummary(reviews, avg, dist);
-            model = LegionClient.DefaultModels.GetValueOrDefault(judge, "");
+            model = cfg.ModelOverrides.TryGetValue(judge, out var ov) && !string.IsNullOrWhiteSpace(ov)
+                ? ov : LegionClient.DefaultModels.GetValueOrDefault(judge, "");
         }
 
         // Corpus: score distribution + a gripe TALLY (so the synopsis can calibrate
