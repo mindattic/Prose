@@ -9,7 +9,7 @@ namespace StreetSamurai.Blazor.Cli;
 /// <c>ss --expand-beat</c> — expand one or all planned beats in a strand to prose.
 ///
 /// This is the headless counterpart to clicking ✨ in the strand writer UI.
-/// It uses <see cref="BeatGeneratorService.GenerateBeatAsync"/> with the strand's
+/// It uses <see cref="ProseWriterRouter.WriteAsync"/> with the strand's
 /// literary rules context, then saves via <see cref="StrandWorkbenchService.UpdateBeatTextAsync"/>.
 /// Beats that already have prose are skipped unless <c>--force</c> is set.
 ///
@@ -19,6 +19,8 @@ namespace StreetSamurai.Blazor.Cli;
 ///   --all                  Expand all planned (no prose) beats. Default when no --beat is given.
 ///   --beat &lt;beatId&gt;        Expand one specific beat by its UUID.
 ///   --force                Re-expand beats that already have prose (overwrites).
+///   --model &lt;modelId&gt;      Force a specific cloud model for this run (e.g. claude-sonnet-4-6, claude-opus-4-8).
+///                          Passed directly to the active cloud provider; ignored when --local is set.
 ///   --local                Route generation to the configured local LLM (LocalLlmBaseUrl in settings).
 ///   --local-url &lt;url&gt;      Override the local endpoint URL for this run only (implies --local).
 ///   --local-key &lt;key&gt;      Override the local API/bearer key for this run only.
@@ -32,7 +34,7 @@ public static class ExpandBeatCli
 {
     public static async Task<int> RunAsync(string[] args, IServiceProvider services)
     {
-        string? slug = null, id = null, beatId = null;
+        string? slug = null, id = null, beatId = null, modelOverride = null;
         string? localUrl = null, localKey = null, localModel = null;
         bool force = args.Contains("--force");
         bool useLocal = args.Contains("--local");
@@ -41,12 +43,13 @@ public static class ExpandBeatCli
         {
             switch (args[i])
             {
-                case "--slug":        if (i + 1 < args.Length) slug       = args[++i]; break;
-                case "--id":          if (i + 1 < args.Length) id         = args[++i]; break;
-                case "--beat":        if (i + 1 < args.Length) beatId     = args[++i]; break;
-                case "--local-url":   if (i + 1 < args.Length) { localUrl   = args[++i]; useLocal = true; } break;
-                case "--local-key":   if (i + 1 < args.Length) localKey   = args[++i]; break;
-                case "--local-model": if (i + 1 < args.Length) localModel = args[++i]; break;
+                case "--slug":        if (i + 1 < args.Length) slug           = args[++i]; break;
+                case "--id":          if (i + 1 < args.Length) id             = args[++i]; break;
+                case "--beat":        if (i + 1 < args.Length) beatId         = args[++i]; break;
+                case "--model":       if (i + 1 < args.Length) modelOverride  = args[++i]; break;
+                case "--local-url":   if (i + 1 < args.Length) { localUrl     = args[++i]; useLocal = true; } break;
+                case "--local-key":   if (i + 1 < args.Length) localKey       = args[++i]; break;
+                case "--local-model": if (i + 1 < args.Length) localModel     = args[++i]; break;
             }
         }
 
@@ -58,7 +61,7 @@ public static class ExpandBeatCli
         }
 
         var dbFactory = services.GetRequiredService<IDbContextFactory<StreetSamuraiDbContext>>();
-        var beatGen   = services.GetRequiredService<BeatGeneratorService>();
+        var router    = services.GetRequiredService<ProseWriterRouter>();
         var workbench = services.GetRequiredService<StrandWorkbenchService>();
         var canonDb   = services.GetRequiredService<IDatabaseService>();
 
@@ -69,6 +72,13 @@ public static class ExpandBeatCli
             localSvc.ConfigureForRun(localUrl, localKey, localModel);
             services.GetRequiredService<LlmRouter>().SetRunProvider("local");
             Console.WriteLine($"[expand-beat] Using local LLM: {localUrl ?? services.GetRequiredService<SettingsService>().LocalLlmBaseUrl}");
+        }
+
+        // Wire cloud model override for this run (ephemeral — not persisted to settings)
+        if (!string.IsNullOrWhiteSpace(modelOverride) && !useLocal)
+        {
+            services.GetRequiredService<LlmRouter>().SetRunModel(modelOverride);
+            Console.WriteLine($"[expand-beat] Model override: {modelOverride}");
         }
 
         // Resolve strand
@@ -131,6 +141,7 @@ public static class ExpandBeatCli
         {
             var beat = ob.Beat;
             bool hasText = !string.IsNullOrWhiteSpace(beat.Text);
+            int beatIndex = ordered.IndexOf(ob);
 
             if (hasText && !force)
             {
@@ -154,11 +165,12 @@ public static class ExpandBeatCli
             {
                 var ctx = new BeatContext
                 {
+                    StrandId          = strandId,
                     StoryBibleContext = storyBible,
                     SceneSoFar        = sceneSoFar.Length > 6000 ? sceneSoFar[^6000..] : sceneSoFar,
                     BeatGoal          = goal,
                 };
-                var prose = await beatGen.GenerateBeatAsync(ctx);
+                var prose = await router.WriteAsync(ctx, beat.Id, beatIndex, ordered.Count);
                 if (string.IsNullOrWhiteSpace(prose))
                 {
                     Console.WriteLine("LLM returned empty — skipped.");

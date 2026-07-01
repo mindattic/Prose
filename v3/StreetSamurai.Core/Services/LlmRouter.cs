@@ -17,6 +17,7 @@ public class LlmRouter : ILlmService
     private readonly ILogger<LlmRouter> log;
 
     private string? runProvider;
+    private string? runModel;
 
     /// <summary>Production constructor — concrete provider instances + settings-driven routing.</summary>
     public LlmRouter(ClaudeService claude, OpenAiService openAi, LocalLlmService local, SettingsService settings, LastPromptStore prompts, ILogger<LlmRouter> log)
@@ -43,6 +44,12 @@ public class LlmRouter : ILlmService
     /// </summary>
     public void SetRunProvider(string? providerId) => runProvider = providerId;
 
+    /// <summary>
+    /// Overrides the model for cloud providers for the lifetime of the current process (not persisted to settings).
+    /// Pass <c>null</c> to revert to settings-driven model selection.
+    /// </summary>
+    public void SetRunModel(string? modelId) => runModel = modelId;
+
     public Task<bool> IsConfiguredAsync() => GetActiveProvider().IsConfiguredAsync();
 
     public async Task<string> GenerateAsync(
@@ -53,12 +60,12 @@ public class LlmRouter : ILlmService
         string? model = null,
         CancellationToken ct = default)
     {
-        var provider = runProvider ?? activeProviderFunc() ?? "claude";
+        var provider = runProvider ?? activeProviderFunc() ?? "claude-api";
         log.LogDebug("LlmRouter dispatching to provider={Provider}", provider);
         var sw = System.Diagnostics.Stopwatch.StartNew();
         try
         {
-            var response = await GetActiveProvider().GenerateAsync(system, user, temperature, maxTokens, model, ct);
+            var response = await GetActiveProvider().GenerateAsync(system, user, temperature, maxTokens, model ?? runModel, ct);
             sw.Stop();
             prompts.Capture(provider, model ?? "(default)", temperature, maxTokens, system, user, response, (int)sw.ElapsedMilliseconds);
             return response;
@@ -88,7 +95,7 @@ public class LlmRouter : ILlmService
         var localConfigured = local is not null && await local.IsConfiguredAsync();
         return
         [
-            new() { Id = "claude", Name = "Claude (Anthropic)", IsConfigured = await claude.IsConfiguredAsync(), IsActive = active != "openai" && active != "local" },
+            new() { Id = "claude-api", Name = "Claude (API)", IsConfigured = await claude.IsConfiguredAsync(), IsActive = active != "openai" && active != "local" },
             new() { Id = "openai", Name = "OpenAI",             IsConfigured = await openAi.IsConfiguredAsync(), IsActive = active == "openai" },
             new() { Id = "local",  Name = "Local LLM",          IsConfigured = localConfigured,                  IsActive = active == "local"  },
         ];

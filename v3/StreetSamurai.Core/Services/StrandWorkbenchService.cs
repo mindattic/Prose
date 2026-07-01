@@ -114,7 +114,7 @@ public class StrandWorkbenchService
         // (Targeting a draft strand DIRECTLY via GetOrderedBeatsAsync still
         // returns its beats — the exclusion is for what a parent pulls in.)
         var children = await db.Strands
-            .Where(s => s.ParentStrandId == strandId && !s.IsDraft)
+            .Where(s => s.ParentStrandId == strandId && !s.IsWIP)
             .OrderBy(s => s.SortKey)
             .Select(s => s.Id)
             .ToListAsync(ct);
@@ -159,7 +159,7 @@ public class StrandWorkbenchService
             throw new BeatConflictException(beatId, expected, beat.UpdatedAt, beat.Text ?? "");
         }
 
-        var trimmed = (newText ?? "").Trim();
+        var trimmed = TextSanitizerService.Sanitize((newText ?? "").Trim());
         if (beat.Text == trimmed) return; // no-op — don't bump UpdatedAt for nothing
 
         beat.Text          = trimmed;

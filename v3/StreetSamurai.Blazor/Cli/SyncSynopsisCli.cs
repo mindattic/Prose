@@ -41,7 +41,7 @@ public static class SyncSynopsisCli
 
         await using var db = await dbFactory.CreateDbContextAsync();
 
-        var query = db.Strands.Where(s => !s.IsDraft);
+        var query = db.Strands.Where(s => !s.IsWIP);
         if (slug != null)
             query = query.Where(s => s.Slug == slug);
 

@@ -1,4 +1,4 @@
-using Microsoft.EntityFrameworkCore;
+﻿using Microsoft.EntityFrameworkCore;
 using MindAttic.Legion;
 using StreetSamurai.Core.Data;
 using StreetSamurai.Core.Data.Entities;
@@ -20,6 +20,11 @@ namespace StreetSamurai.Blazor.Cli;
 ///   --effort TIER       Cost tier for the sampled default (RFC 0009): draft|standard|deep.
 ///                       Scales ballots/prose/diagnosis to the task's importance. Explicit
 ///                       --ballots/--prose/--skip-diagnosis still win over the tier.
+///   --providers LIST    Comma-separated provider override for this run only (e.g. claude-team,openai).
+///                       Overrides both the effort profile and ReviewAllowedProviders settings.
+///   --model ID          Force a specific model for all cloud providers this run.
+///   --model-map MAP     Per-provider model overrides: "claude-team=claude-opus-4-7,openai=gpt-4.1".
+///                       Takes precedence over --model for providers named in the map.
 ///
 /// Exit codes:
 ///   0 — at least one review was saved.
@@ -34,7 +39,7 @@ public static class ReviewStrandCli
         int readers = settings.ReviewReaders, panel = settings.ReviewPanel,
             ballots = settings.ReviewBallots, prose = settings.ReviewProse;
         bool samePersonas = false, study = false, census = false, skipDiagnosis = false, byAct = false;
-        bool useLocal = false; string? localModel = null, localUrl = null, localKey = null, localLabel = null, modelOverride = null; int localCtx = 0;
+        bool useLocal = false; string? localModel = null, localUrl = null, localKey = null, localLabel = null, modelOverride = null, providersOverride = null, modelMapRaw = null; int localCtx = 0;
         int segChars = 90000, segBallots = 8;
         // RFC 0009 §2 — cost tier. Explicit --ballots/--prose/--skip-diagnosis still win over the tier.
         string? effort = null;
@@ -63,6 +68,8 @@ public static class ReviewStrandCli
                 case "--effort":
                 case "--tier":            if (i + 1 < args.Length) effort = args[++i]; break;
                 case "--model":           if (i + 1 < args.Length) modelOverride = args[++i]; break;
+                case "--providers":       if (i + 1 < args.Length) providersOverride = args[++i]; break;
+                case "--model-map":       if (i + 1 < args.Length) modelMapRaw = args[++i]; break;
                 case "--local":           useLocal = true; break;
                 case "--local-model":     if (i + 1 < args.Length) localModel = args[++i]; break;
                 case "--local-url":       if (i + 1 < args.Length) localUrl = args[++i]; break;
@@ -247,7 +254,7 @@ public static class ReviewStrandCli
                     + "(no cloud calls; persona/psychometric diversity only — separate score baseline).");
             else
             {
-                var activeProviders = settings.ReviewAllowedProviders
+                var activeProviders = (providersOverride ?? settings.ReviewAllowedProviders)
                     .Split(',', StringSplitOptions.RemoveEmptyEntries | StringSplitOptions.TrimEntries);
                 var modelList = string.Join(", ", activeProviders.Select(p =>
                 {
@@ -264,10 +271,12 @@ public static class ReviewStrandCli
             var bp = new Progress<int>(k => { if (k == ballots || k % 5 == 0) Console.WriteLine($"   …{k}/{ballots} ballots done"); });
             try
             {
+                var modelMap = ParseModelMap(modelMapRaw);
                 var sr = await reviewer.RunSampledReviewAsync(strandId, ballots, prose, bp,
                     skipDiagnosis: skipDiagnosis, cheapModels: profile?.CheapModels ?? false,
-                    allowedProvidersOverride: profile?.AllowedProviders,
-                    useLocal: useLocal, localModelOverride: localModel, cloudModelOverride: modelOverride);
+                    allowedProvidersOverride: providersOverride ?? profile?.AllowedProviders,
+                    useLocal: useLocal, localModelOverride: localModel, cloudModelOverride: modelOverride,
+                    modelMap: modelMap);
                 Console.WriteLine($"[review-strand] {sr.BallotsSaved}/{sr.Ballots} ballots ({sr.Failed} failed), {sr.ProseAdded} prose upgraded.");
                 Console.WriteLine($"[review-strand] Strand {sr.MeanScore}/100  (SD {sr.Sd}, 95% CI ±{sr.Ci95})  ·  {sr.Clusters} clusters  ·  fingerprint {sr.ContentHash[..Math.Min(12, sr.ContentHash.Length)]}");
                 if (!string.IsNullOrEmpty(sr.ReportHtmPath))  Console.WriteLine($"[review-strand] Report (open in browser): {sr.ReportHtmPath}");
@@ -384,6 +393,21 @@ public static class ReviewStrandCli
         }
 
         return 0;
+    }
+
+    /// <summary>Parse "provider=model,provider=model" into a lookup dictionary.
+    /// Returns null when the input is null or empty.</summary>
+    private static IReadOnlyDictionary<string, string>? ParseModelMap(string? raw)
+    {
+        if (string.IsNullOrWhiteSpace(raw)) return null;
+        var map = new Dictionary<string, string>(StringComparer.OrdinalIgnoreCase);
+        foreach (var pair in raw.Split(',', StringSplitOptions.RemoveEmptyEntries | StringSplitOptions.TrimEntries))
+        {
+            var eq = pair.IndexOf('=');
+            if (eq > 0 && eq < pair.Length - 1)
+                map[pair[..eq].Trim()] = pair[(eq + 1)..].Trim();
+        }
+        return map.Count > 0 ? map : null;
     }
 
     /// <summary>Accept a bare host, a "/v1" root, or a full chat-completions URL and

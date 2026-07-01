@@ -53,7 +53,7 @@ public class EntityRatingService
     // Pool of GLMZ resident personas — randomly sampled to form a crowd of 10 per vote
     private static readonly string[] PersonaPool =
     [
-        "You are a burned-out ripperdoc who works out of a shipping container in the Shelf. You've rebuilt bodies and buried the failures. You value survival-grade knowledge and have zero patience for things that won't matter when the bullets start flying.",
+        "You are a burned-out splicer who works out of a shipping container in the Shelf. You've rebuilt bodies and buried the failures. You value survival-grade knowledge and have zero patience for things that won't matter when the bullets start flying.",
         "You are a Tier 2 corpo analyst at a mid-size subsidiary. You live in spreadsheets and threat models. You find things interesting if they shift power, open markets, or represent unusual risk.",
         "You are a freelance fixer who specializes in information brokerage. Your currency is secrets and leverage. You rate things by their usefulness in negotiation — information that nobody else knows is gold.",
         "You are a former Arcturus Civil Security officer who went private. You think in terms of threat profiles, crowd dynamics, and containment. You respect things that reveal how power actually moves on the street.",
@@ -305,7 +305,7 @@ public class EntityRatingService
     private List<VoterProfile> SamplePersonas(int count)
     {
         var providerIds = llmVoting.GetActiveProviderIds();
-        if (providerIds.Count == 0) providerIds = ["claude"];
+        if (providerIds.Count == 0) providerIds = ["claude-api"];
 
         // Shuffle the persona pool, pick `count` unique personas (cycling if pool is smaller)
         var shuffled = PersonaPool.OrderBy(_ => Rng.NextDouble()).ToList();

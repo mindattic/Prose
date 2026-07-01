@@ -482,6 +482,16 @@ if (args.Contains("--expand-beat"))
     return;
 }
 
+//   ss --auto-run (--slug <slug> | --id <guid>) [--effort draft|standard] [--dry-run] [--force]
+if (args.Contains("--auto-run"))
+{
+    var cliBuilder = WebApplication.CreateBuilder(args);
+    cliBuilder.Services.AddStreetSamuraiServices();
+    var cliApp = cliBuilder.Build();
+    Environment.ExitCode = await AutoRunCli.RunAsync(args, cliApp.Services);
+    return;
+}
+
 //   ss --write-strand --seed "..." [--title "..."] [--kind episode] [--beats 12] [--bible-only]
 if (args.Contains("--write-strand"))
 {
@@ -611,7 +621,8 @@ if (args.Contains("--worker-mode"))
 // honest, scored reader review (saved to StrandReviews), then synthesize the
 // Amazon-style aggregate summary. Round-robins reviewers across the trusted-4.
 //   ss --review-strand (--id <guid|prefix> | --slug <slug>) [--readers N]
-if (args.Contains("--review-strand"))
+//   ss --run-panel    (legacy alias)
+if (args.Contains("--review-strand") || args.Contains("--run-panel"))
 {
     var cliBuilder = WebApplication.CreateBuilder(args);
     cliBuilder.Services.AddStreetSamuraiServices();
@@ -1257,6 +1268,28 @@ if (args.Contains("--print-voice"))
     cliBuilder.Services.AddStreetSamuraiServices();
     var cliApp = cliBuilder.Build();
     Environment.ExitCode = await PrintVoiceCli.RunAsync(args, cliApp.Services);
+    return;
+}
+
+// CLI mode: print all beats of a strand as continuous prose to stdout.
+// No headers, no beat numbers, no metadata — just the prose, beats separated by blank lines.
+//   ss --sanitize-beats [--slug <slug> | --all] [--dry-run]
+if (args.Contains("--sanitize-beats"))
+{
+    var cliBuilder = WebApplication.CreateBuilder(args);
+    cliBuilder.Services.AddStreetSamuraiServices();
+    var cliApp = cliBuilder.Build();
+    Environment.ExitCode = await SanitizeBeatsCli.RunAsync(args, cliApp.Services);
+    return;
+}
+
+//   ss --print-strand (--id <guid|prefix> | --slug <slug>)
+if (args.Contains("--print-strand"))
+{
+    var cliBuilder = WebApplication.CreateBuilder(args);
+    cliBuilder.Services.AddStreetSamuraiServices();
+    var cliApp = cliBuilder.Build();
+    Environment.ExitCode = await PrintStrandCli.RunAsync(args, cliApp.Services);
     return;
 }
 

@@ -67,7 +67,7 @@ public abstract class BeatLensService
             ?? throw new InvalidOperationException($"Strand {strandId} not found.");
 
         var hasChildren = await db.Strands.AsNoTracking()
-            .AnyAsync(s => s.ParentStrandId == strandId && s.Kind == "chapter" && !s.IsDraft, ct);
+            .AnyAsync(s => s.ParentStrandId == strandId && s.Kind == "chapter" && !s.IsWIP, ct);
 
         List<(int Num, string Text)> beats;
         if (hasChildren)
@@ -76,7 +76,7 @@ public abstract class BeatLensService
                 from s in db.Strands.AsNoTracking()
                 join sb in db.StrandBeats.AsNoTracking() on s.Id equals sb.StrandId
                 join b in db.Beats.AsNoTracking() on sb.BeatId equals b.Id
-                where s.ParentStrandId == strandId && s.Kind == "chapter" && !s.IsDraft && sb.IsEnabled
+                where s.ParentStrandId == strandId && s.Kind == "chapter" && !s.IsWIP && sb.IsEnabled
                 orderby s.SortKey, sb.SortKey
                 select new { b.Text, b.Number }
             ).ToListAsync(ct);

@@ -59,7 +59,7 @@ public class WorkflowMonitorService(IDbContextFactory<StreetSamuraiDbContext> db
         // Roll up child strands: a book's coverage is the union of its chapters' logs.
         // Draft subtrees are out-of-scope material and excluded from coverage.
         var childIds = await db.Strands.AsNoTracking()
-            .Where(s => s.ParentStrandId == strandId && !s.IsDraft)
+            .Where(s => s.ParentStrandId == strandId && !s.IsWIP)
             .Select(s => s.Id).ToListAsync(ct);
         var scopeIds = new List<Guid>(childIds) { strandId };
 

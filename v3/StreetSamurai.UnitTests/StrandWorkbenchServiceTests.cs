@@ -419,7 +419,7 @@ public class StrandWorkbenchServiceTests
             drafts = new Strand
             {
                 Id = Guid.CreateVersion7(), Slug = "drafts-" + Guid.NewGuid().ToString("N")[..6],
-                Title = "Drafts", Kind = "story", Status = "draft", IsDraft = true,
+                Title = "Drafts", Kind = "story", Status = "draft", IsWIP = true,
                 ParentStrandId = root.Id, SortKey = 200,
             };
             draftGrandchild = new Strand

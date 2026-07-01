@@ -6,6 +6,10 @@ public class Tag
     public int Id { get; set; }
     public string Name { get; set; } = "";
 
+    /// <summary>Optional: the canonical entity this tag represents (navigation only — no propagation).</summary>
+    public Guid? EntityId { get; set; }
+    public Entity? Entity { get; set; }
+
     public ICollection<EntityTag> EntityLinks { get; set; } = new List<EntityTag>();
 }
 

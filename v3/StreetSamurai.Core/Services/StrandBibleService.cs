@@ -57,52 +57,8 @@ public class StrandBibleService
         CancellationToken ct = default)
     {
         var literaryRules = canonDb.GetLiteraryRulesPrompt() ?? "";
-
-        var system = $"""
-            You are a story architect. Given a one-line seed, produce a STRAND BIBLE —
-            a dry, structural plan that a prose engine will execute beat by beat.
-
-            Rules for the bible:
-            - Declarative sentences only. No purple prose. No florid language.
-            - Every beat entry is a fact about what happens, not a lyric about it.
-            - Be specific: name characters, name costs, name objects that matter.
-            - The bible is a spine. Flesh lives in the prose pass.
-
-            LITERARY RULES (follow these — they define the world's voice):
-            {literaryRules}
-
-            Output EXACTLY this markdown format. No extra sections. No preamble.
-
-            # STRAND BIBLE: [Working Title]
-
-            ## LOGLINE
-            [One sentence. Who. Does what. At what cost.]
-
-            ## PREMISE
-            [2–3 sentences. World situation. Inciting condition. What is at stake.]
-
-            ## REGISTER
-            [Tone + pacing. 1–2 sentences. E.g. "Dark-wry. Quiet moments earn their place before the violence."]
-
-            ## CHARACTERS
-            - **[Name]** — [Role in this story]. Arc: wants [external goal], needs [internal truth], ends [outcome].
-
-            ## BEAT SPINE
-            [Exactly {targetBeats} numbered entries. One line each.]
-            [Format: N. [STRUCTURE-ROLE] Title — What happens. What it costs or reveals.]
-            [Valid structure roles: OPENING, COMPLICATION, ESCALATION, REVELATION, CONFRONTATION, CLIMAX, RESOLUTION, TRANSITION, QUIET-MOMENT]
-
-            ## SEEDS & PAYOFFS
-            - Beat [X] plants [what thread] → Beat [Y] pays it off.
-            """;
-
-        var user = $"""
-            SEED: {seed}
-            {(title != null ? $"WORKING TITLE: {title}" : "")}
-            TARGET BEATS: {targetBeats}
-
-            Write the strand bible now.
-            """;
+        var system = BuildBibleSystemPrompt(targetBeats, literaryRules);
+        var user = $"SEED: {seed}\n{(title != null ? $"WORKING TITLE: {title}" : "")}\nTARGET BEATS: {targetBeats}\n\nWrite the strand bible now.";
 
         log.LogInformation("[bible] Generating for strand {StrandId} — seed: {Seed}", strandId, seed);
 
@@ -137,6 +93,47 @@ public class StrandBibleService
             await CreatePlannedBeatsAsync(db, strandId, beatPlans, ct);
 
         return bibleText;
+    }
+
+    /// <summary>
+    /// Generate a bible text only — no DB writes. Used by PremiseToOutlineService
+    /// to produce competing outlines before picking a winner.
+    /// </summary>
+    public async Task<string> GenerateTextAsync(
+        string seed,
+        string? title      = null,
+        int targetBeats    = 12,
+        CancellationToken ct = default)
+    {
+        var literaryRules = canonDb.GetLiteraryRulesPrompt() ?? "";
+        var system = BuildBibleSystemPrompt(targetBeats, literaryRules);
+        var user   = $"SEED: {seed}\n{(title != null ? $"WORKING TITLE: {title}" : "")}\nTARGET BEATS: {targetBeats}\n\nWrite the strand bible now.";
+        return (await llm.GenerateAsync(system, user, temperature: 0.75, maxTokens: 4096, ct: ct)).Trim();
+    }
+
+    /// <summary>
+    /// Save a pre-generated bible text to an existing strand row and create
+    /// planned beats from its spine. Used after a compete-selection picks a winner.
+    /// </summary>
+    public async Task SaveBibleAndCreateBeatsAsync(
+        Guid strandId,
+        string bibleText,
+        CancellationToken ct = default)
+    {
+        await using var db = await dbFactory.CreateDbContextAsync(ct);
+        var strand = await db.Strands.FindAsync([strandId], ct)
+            ?? throw new InvalidOperationException($"Strand {strandId} not found.");
+
+        strand.StrandBible            = bibleText;
+        strand.StrandBibleGeneratedAt = DateTime.UtcNow;
+        strand.UpdatedAt              = DateTime.UtcNow;
+        await db.SaveChangesAsync(ct);
+
+        var beatPlans = ParseBeatSpine(bibleText);
+        if (beatPlans.Count > 0)
+            await CreatePlannedBeatsAsync(db, strandId, beatPlans, ct);
+
+        log.LogInformation("[bible] Saved winning bible ({Chars} chars) for strand {StrandId}", bibleText.Length, strandId);
     }
 
     // ── Retrieval ─────────────────────────────────────────────────────────
@@ -201,6 +198,44 @@ public class StrandBibleService
     }
 
     // ── Private helpers ───────────────────────────────────────────────────
+
+    private static string BuildBibleSystemPrompt(int targetBeats, string literaryRules) => $"""
+        You are a story architect. Given a one-line seed, produce a STRAND BIBLE —
+        a dry, structural plan that a prose engine will execute beat by beat.
+
+        Rules for the bible:
+        - Declarative sentences only. No purple prose. No florid language.
+        - Every beat entry is a fact about what happens, not a lyric about it.
+        - Be specific: name characters, name costs, name objects that matter.
+        - The bible is a spine. Flesh lives in the prose pass.
+
+        LITERARY RULES (follow these — they define the world's voice):
+        {literaryRules}
+
+        Output EXACTLY this markdown format. No extra sections. No preamble.
+
+        # STRAND BIBLE: [Working Title]
+
+        ## LOGLINE
+        [One sentence. Who. Does what. At what cost.]
+
+        ## PREMISE
+        [2–3 sentences. World situation. Inciting condition. What is at stake.]
+
+        ## REGISTER
+        [Tone + pacing. 1–2 sentences. E.g. "Dark-wry. Quiet moments earn their place before the violence."]
+
+        ## CHARACTERS
+        - **[Name]** — [Role in this story]. Arc: wants [external goal], needs [internal truth], ends [outcome].
+
+        ## BEAT SPINE
+        [Exactly {targetBeats} numbered entries. One line each.]
+        [Format: N. [STRUCTURE-ROLE] Title — What happens. What it costs or reveals.]
+        [Valid structure roles: OPENING, COMPLICATION, ESCALATION, REVELATION, CONFRONTATION, CLIMAX, RESOLUTION, TRANSITION, QUIET-MOMENT]
+
+        ## SEEDS & PAYOFFS
+        - Beat [X] plants [what thread] → Beat [Y] pays it off.
+        """;
 
     private async Task CreatePlannedBeatsAsync(
         StreetSamuraiDbContext db,

@@ -1,4 +1,4 @@
-# StreetSamurai — Architecture Bible
+﻿# StreetSamurai — Architecture Bible
 
 > **SUPERSEDED 2026-06-07 → see [docs/BIBLE.md](docs/BIBLE.md) (Codex L0 source of truth).** This
 > file is retained as a pointer; its content was migrated into `docs/BIBLE.md` (+ `docs/USER_STORIES.md`

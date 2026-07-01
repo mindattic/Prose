@@ -4,8 +4,8 @@ using MindAttic.Legion;
 namespace StreetSamurai.UnitTests;
 
 /// <summary>
-/// Live validation that StreetSamurai's trusted voting panel (the four providers
-/// in <c>legion.json</c>: claude / openai / gemini / deepseek) actually
+/// Live validation that StreetSamurai's trusted voting panel (providers listed in
+/// <c>legion.json</c> voters — currently claude-api / openai / gemini) actually
 /// authenticate against their real endpoints, using the keys resolved through
 /// the shared MindAttic Vault store.
 ///
@@ -33,8 +33,13 @@ public class LiveKeyValidationTests
         var client = new LegionClient(http, LegionClientOptions.NoResilience);
         var health = new LlmHealthCheck(client);
 
-        // LlmProviderCatalog.DefaultIds == the trusted four, matching legion.json.
-        var results = await health.CheckAsync(LlmProviderCatalog.DefaultIds, ProbeTimeout);
+        // Load the actual voter list from legion.json so this test tracks the project config,
+        // not Legion's static DefaultIds (which may include retired providers like claude-team).
+        var legion = LegionConfig.LoadFromDirectory();
+        var providerIds = legion?.Voters is { Count: > 0 }
+            ? legion.Voters
+            : LlmProviderCatalog.DefaultIds;
+        var results = await health.CheckAsync(providerIds, ProbeTimeout);
 
         // Quota/billing failures mean the key is valid — the account just needs a
         // top-up. These don't block a commit; only dead/invalid/missing keys do.

@@ -11,6 +11,7 @@ sys.path.insert(0, os.path.dirname(os.path.dirname(__file__)))
 
 import json
 import mlflow
+import numpy as np
 from pathlib import Path
 from rich.console import Console
 from config import TOPIC_MODEL_PATH, GRIPE_TOPIC_MIN_PERCENT
@@ -46,7 +47,7 @@ class GripeMiner:
         topics, probs = self.topic_model.fit_transform(texts)
 
         n_topics   = len(set(topics)) - (1 if -1 in topics else 0)
-        n_outliers = topics.count(-1)
+        n_outliers = int(np.sum(topics == -1))
         console.print(f"[green]{n_topics} topics, {n_outliers} outliers[/green]")
 
         if mlflow.active_run():

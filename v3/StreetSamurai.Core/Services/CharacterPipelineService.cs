@@ -430,7 +430,7 @@ public class CharacterPipelineService : PipelineServiceBase
             return ["concealed holdout pistol", "encrypted comm device", "credstick scanner"];
         if (roleHint.Contains("enforcer") || roleHint.Contains("muscle") || roleHint.Contains("soldier"))
             return ["SMG (compact)", "tactical vest", "flashbang", "stim patch"];
-        if (roleHint.Contains("ripperdoc") || roleHint.Contains("medic") || roleHint.Contains("surgeon"))
+        if (roleHint.Contains("splicer") || roleHint.Contains("medic") || roleHint.Contains("surgeon"))
             return ["surgical kit (compact)", "stim injectors x3", "neural probe", "medical holdout"];
         if (roleHint.Contains("hacker") || roleHint.Contains("netrunner") || roleHint.Contains("tech"))
             return ["ICE-breaker deck", "signal jammer", "micro-toolkit", "compact pistol"];

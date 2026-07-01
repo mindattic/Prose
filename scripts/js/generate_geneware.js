@@ -534,7 +534,7 @@ const geneware = [
     expression_time: "2–3 weeks",
     reversibility: "Reversible with platelet-factor suppression therapy",
     side_effects: ["Increased risk of internal blood clots (deep vein thrombosis, pulmonary embolism)", "Requires daily anticoagulant supplementation to balance internal clot risk", "Bruises become more vivid and longer-lasting as trapped blood pools cannot reabsorb normally", "Rare: clotting cascades triggered by minor internal inflammation, causing dangerous internal clots"],
-    social_perception: "Common, practical, and lifesaving. One of the few geneware modifications that generates almost no social stigma. Considered basic safety equipment in dangerous neighborhoods. Street docs install it as a matter of course.",
+    social_perception: "Common, practical, and lifesaving. One of the few geneware modifications that generates almost no social stigma. Considered basic safety equipment in dangerous neighborhoods. Splicers install it as a matter of course.",
     story_hooks: ["A Clotblood user's anticoagulant supply is contaminated — without it, their enhanced clotting causes a stroke", "A forensic investigator discovers that a murder victim's Clotblood modification was deliberately sabotaged to prevent clotting, allowing them to bleed out from what should have been a survivable wound"]
   },
   {
@@ -992,7 +992,7 @@ const geneware = [
     aliases: ["Double Heart", "Backup Pulse", "Octopus Core"],
     category: "medical",
     target_system: "cardiovascular (secondary cardiac structure)",
-    description: "Induces growth of a secondary cardiac structure — not a full second heart, but a muscular booster chamber integrated into the aortic arch that can maintain minimal circulatory function if the primary heart fails. The booster chamber is smaller, simpler, and weaker than the primary heart — it can maintain consciousness and basic organ function for 30–60 minutes, buying time for emergency medical intervention. It cannot sustain vigorous activity. The modification also includes enhanced cardiac muscle regeneration genes, allowing the primary heart to recover from damage that would be permanently disabling in an unmodified human. Helix Biosystems developed it for executives whose assassination risk warranted biological failsafes. In the Shelf, street docs install budget versions that provide 10–15 minutes of backup circulation — enough to reach a clinic.",
+    description: "Induces growth of a secondary cardiac structure — not a full second heart, but a muscular booster chamber integrated into the aortic arch that can maintain minimal circulatory function if the primary heart fails. The booster chamber is smaller, simpler, and weaker than the primary heart — it can maintain consciousness and basic organ function for 30–60 minutes, buying time for emergency medical intervention. It cannot sustain vigorous activity. The modification also includes enhanced cardiac muscle regeneration genes, allowing the primary heart to recover from damage that would be permanently disabling in an unmodified human. Helix Biosystems developed it for executives whose assassination risk warranted biological failsafes. In the Shelf, splicers install budget versions that provide 10–15 minutes of backup circulation — enough to reach a clinic.",
     source_organism: "Octopus vulgaris (common octopus, multiple-heart architecture), Danio rerio (zebrafish, cardiac regeneration)",
     manufacturer: "Helix Biosystems (premium), various clinics (budget)",
     tier_availability: "Tier 3+ (budget versions Tier 2)",
@@ -1395,7 +1395,7 @@ const geneware = [
     expression_time: "2–3 weeks",
     reversibility: "Reversible with epithelial growth factor suppression",
     side_effects: ["Healed skin is slightly smoother and paler than surrounding tissue — scars are distinctive", "Over-enthusiastic closure can trap debris in wounds if not cleaned first", "Itching during rapid healing is intense", "Rare: closure occurs around foreign objects embedded in wounds, requiring surgical removal"],
-    social_perception: "Practical and unremarkable. Quick Seal is basic survival gear in the Shelf. Combined with Clotblood, it represents the minimum viable medical geneware package that street docs recommend for everyone.",
+    social_perception: "Practical and unremarkable. Quick Seal is basic survival gear in the Shelf. Combined with Clotblood, it represents the minimum viable medical geneware package that splicers recommend for everyone.",
     story_hooks: ["A Quick Seal user's wound heals around a microdevice deliberately placed in the laceration — someone cut them to plant a tracker that their own body would seal in", "A forensic examiner discovers that a wound pattern has been obscured by rapid healing — the victim's Quick Seal modification is destroying evidence of the weapon used"]
   },
   {

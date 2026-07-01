@@ -25,6 +25,9 @@ else
     /// <summary>When true, splits on blank lines and wraps each paragraph in a &lt;p&gt; tag.</summary>
     [Parameter] public bool Paragraphs { get; set; }
 
+    /// <summary>When true, forces NER auto-linking regardless of the global EnablePlainTextNer setting.</summary>
+    [Parameter] public bool EnableNer { get; set; }
+
     private string currentPageId = "";
 
     protected override void OnParametersSet()
@@ -39,7 +42,7 @@ else
     private RenderFragment RenderSegments(string text) => builder =>
     {
         int seq = 0;
-        foreach (var seg in Xref.ParseSegments(text))
+        foreach (var seg in Xref.ParseSegments(text, EnableNer))
         {
             if (seg is XrefSegment xref)
             {

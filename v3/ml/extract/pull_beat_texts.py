@@ -102,6 +102,7 @@ def pull_texts_for_snapshot(
             return []
         rows.append({
             "StrandSlug":   strand_slug,
+            "BeatId":       bp["beat_id"],   # stable join key; BeatNumber is position-at-extract-time
             "BeatNumber":   bp["beat_number"],
             "ContentHash":  content_hash,
             "ReviewedAt":   reviewed_at,
@@ -138,7 +139,8 @@ def run() -> pd.DataFrame:
                     continue
                 all_rows.extend(rows)
 
-    df = pd.DataFrame(all_rows)
+    _COLS = ["StrandSlug", "BeatId", "BeatNumber", "ContentHash", "ReviewedAt", "BeatText"]
+    df = pd.DataFrame(all_rows, columns=_COLS) if all_rows else pd.DataFrame(columns=_COLS)
     df.to_parquet(BEAT_TEXTS_PARQUET, index=False)
 
     console.print(f"[green]{len(df):,} beat-text rows extracted[/green]")

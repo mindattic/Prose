@@ -26,6 +26,11 @@ REVIEWS_PARQUET    = ARTIFACTS / "reviews.parquet"
 BEAT_TEXTS_PARQUET = ARTIFACTS / "beat_texts.parquet"
 TRAINING_PARQUET   = ARTIFACTS / "training_dataset.parquet"
 
+# Raw sentence-embedding cache (pre-PCA, float32).
+# Keyed by a hash of the beat texts; ~3.8 GB on 2.5 M rows.
+# Delete to force a full re-encode; leave it and retrain is seconds not hours.
+EMBED_CACHE_PATH = ARTIFACTS / "embeddings_cache.npy"
+
 # Scoring thresholds for Findings severity
 BEAT_SCORE_HIGH_THRESHOLD   = 2.5   # predicted < 2.5  → High severity
 BEAT_SCORE_MEDIUM_THRESHOLD = 3.0   # predicted 2.5–3.0 → Medium

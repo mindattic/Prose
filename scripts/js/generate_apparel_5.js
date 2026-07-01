@@ -172,7 +172,7 @@ const CATEGORIES = [
   {
     tag: 'medical_scientific',
     count: 15,
-    prompt: `Generate {count} COMPLETE OUTFIT SETS for medical and scientific professionals. Hospital scrubs have evolved — antimicrobial smart-fabric, haptic feedback gloves built into sleeves, biometric monitoring woven in. Lab coats with integrated displays. Surgical attire for augmentation technicians (chrome installers). Gene clinic staff wear (adapted for handling geneware procedures). Field medic kits. CorpoNation R&D lab attire. Tier 1 street clinic ripperdoc gear vs Tier 5 pristine surgical suites. Each a complete look.`
+    prompt: `Generate {count} COMPLETE OUTFIT SETS for medical and scientific professionals. Hospital scrubs have evolved — antimicrobial smart-fabric, haptic feedback gloves built into sleeves, biometric monitoring woven in. Lab coats with integrated displays. Surgical attire for augmentation technicians (chrome installers). Gene clinic staff wear (adapted for handling geneware procedures). Field medic kits. CorpoNation R&D lab attire. Tier 1 street clinic splicer gear vs Tier 5 pristine surgical suites. Each a complete look.`
   },
   {
     tag: 'underworld_criminal',

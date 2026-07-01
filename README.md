@@ -1,4 +1,4 @@
-# StreetSamurai
+﻿# StreetSamurai
 
 **A literary fiction engine for a cyberpunk century.**
 

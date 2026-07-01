@@ -234,8 +234,8 @@ public static class MigrateLegacyBookChapterCli
     {
         // Load raw JSON blob without EF's universe filter interfering
         var record = await db.Database
-            .SqlQueryRaw<RecordRow>(
-                $"SELECT r.Json FROM Records r WHERE r.EntityId = '{entityId:D}'")
+            .SqlQuery<RecordRow>(
+                $"SELECT r.Json FROM Records r WHERE r.EntityId = {entityId}")
             .FirstOrDefaultAsync();
 
         if (record == null)
@@ -373,27 +373,26 @@ public static class MigrateLegacyBookChapterCli
     /// </summary>
     private static async Task<bool> DeleteEntityAndRecord(StreetSamuraiDbContext db, Guid entityId)
     {
-        var id = entityId.ToString("D");
         int total = 0;
 
         // 1. Dependent tables with FKs → Entities (delete children before parent)
         // Edges: TargetId and SourceId both reference Entities
-        total += await db.Database.ExecuteSqlRawAsync($"DELETE FROM Edges WHERE TargetId = '{id}' OR SourceId = '{id}'");
+        total += await db.Database.ExecuteSqlAsync($"DELETE FROM Edges WHERE TargetId = {entityId} OR SourceId = {entityId}");
         // EntityEmbeddings
-        total += await db.Database.ExecuteSqlRawAsync($"DELETE FROM EntityEmbeddings WHERE EntityId = '{id}'");
+        total += await db.Database.ExecuteSqlAsync($"DELETE FROM EntityEmbeddings WHERE EntityId = {entityId}");
         // EntityTags, EntityProperties, EntityStateEvents, EntityTaxonomies (usually empty for book/chapter)
-        total += await db.Database.ExecuteSqlRawAsync($"DELETE FROM EntityTags WHERE EntityId = '{id}'");
-        total += await db.Database.ExecuteSqlRawAsync($"DELETE FROM EntityProperties WHERE EntityId = '{id}'");
-        total += await db.Database.ExecuteSqlRawAsync($"DELETE FROM EntityStateEvents WHERE EntityId = '{id}'");
-        total += await db.Database.ExecuteSqlRawAsync($"DELETE FROM EntityTaxonomies WHERE EntityId = '{id}'");
+        total += await db.Database.ExecuteSqlAsync($"DELETE FROM EntityTags WHERE EntityId = {entityId}");
+        total += await db.Database.ExecuteSqlAsync($"DELETE FROM EntityProperties WHERE EntityId = {entityId}");
+        total += await db.Database.ExecuteSqlAsync($"DELETE FROM EntityStateEvents WHERE EntityId = {entityId}");
+        total += await db.Database.ExecuteSqlAsync($"DELETE FROM EntityTaxonomies WHERE EntityId = {entityId}");
         // ContinuityClaims
-        total += await db.Database.ExecuteSqlRawAsync($"DELETE FROM ContinuityClaims WHERE EntityId = '{id}'");
+        total += await db.Database.ExecuteSqlAsync($"DELETE FROM ContinuityClaims WHERE EntityId = {entityId}");
 
         // 2. Records (FK to Entity)
-        total += await db.Database.ExecuteSqlRawAsync($"DELETE FROM Records WHERE EntityId = '{id}'");
+        total += await db.Database.ExecuteSqlAsync($"DELETE FROM Records WHERE EntityId = {entityId}");
 
         // 3. The entity itself
-        total += await db.Database.ExecuteSqlRawAsync($"DELETE FROM Entities WHERE Id = '{id}'");
+        total += await db.Database.ExecuteSqlAsync($"DELETE FROM Entities WHERE Id = {entityId}");
 
         return total > 0;
     }

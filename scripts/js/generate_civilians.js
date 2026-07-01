@@ -144,7 +144,7 @@ const CATEGORIES = [
   {
     name: 'medical',
     count: 60,
-    roles: 'street docs, clinic nurses, trauma surgeons, gene therapists, augmentation technicians, psychiatrists, pharmacists, midwives, veterinarians for gene-modded pets, rehabilitation specialists, neural calibrators, bio-waste disposal techs, blood bank operators, prosthetics fitters',
+    roles: 'splicers, clinic nurses, trauma surgeons, gene therapists, augmentation technicians, psychiatrists, pharmacists, midwives, veterinarians for gene-modded pets, rehabilitation specialists, neural calibrators, bio-waste disposal techs, blood bank operators, prosthetics fitters',
     ageRange: [25, 68],
     tierRange: [1, 4],
     affiliations: 'Independent clinics, Helix Biosystems, Aurochs Medical Complex, street-level freelance, community health cooperatives',

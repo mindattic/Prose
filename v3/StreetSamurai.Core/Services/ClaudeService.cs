@@ -48,7 +48,7 @@ public class ClaudeService : ILlmService
         try
         {
             var text = (await legion.CallAsync(
-                providerId: "claude",
+                providerId: "claude-api",
                 apiKey: settings.ApiKey,
                 model: activeModel,
                 systemPrompt: system,

@@ -424,6 +424,22 @@ public class ManuscriptExportService
 
         var dir = ResolveExportDir();
         var safeTitle = SanitizeTitle(strand.Title);
+
+        // De-dup: if a sibling strand produces the same folder name, prefix with
+        // StrandCode — or GUID7 if StrandCode is null or shared with a colliding sibling.
+        var siblings = await db.Strands.AsNoTracking()
+            .Where(s => s.Id != strandId && s.ParentStrandId == strand.ParentStrandId)
+            .Select(s => new { s.Title, s.StrandCode })
+            .ToListAsync(ct);
+        if (siblings.Any(s => SanitizeTitle(s.Title) == safeTitle))
+        {
+            var code = strand.StrandCode;
+            if (string.IsNullOrWhiteSpace(code) ||
+                siblings.Any(s => SanitizeTitle(s.Title) == safeTitle && s.StrandCode == code))
+                code = strand.Id.ToString("N")[..7];
+            safeTitle = $"[{code}] {safeTitle}";
+        }
+
         var pathParts = new List<string> { dir };
         pathParts.AddRange(ancestors);
         pathParts.Add(safeTitle);

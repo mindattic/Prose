@@ -251,6 +251,90 @@ between a crew-runner and a solo is itself a relationship worth a scene.
 
 ---
 
+## §8 — POV Register Purity: Each Mind Has Its Own Grammar {#SS-CHAR-§8}
+
+A character's POV prose must sound like *them thinking*, not like the engine defaulting to
+Kyle. This is the cognitive equivalent of the action figure test: a reader should be able
+to identify whose head they are in from the *rhythm and vocabulary of thought alone*, before
+any named object or character confirms it.
+
+**Kyle's cognitive fingerprints — banned in all non-Kyle POV:**
+
+| Pattern | What it sounds like |
+|---|---|
+| Filing | *He filed it. In the drawer where he kept most things. He noted it without sentiment.* |
+| Arithmetic | *He ran the arithmetic. The math between them had been exact.* |
+| Gap/choice/cost | *After the choice. Before the cost. In the gap.* |
+| The parliament | *The sixty-four were quiet. The parliament voted.* |
+| NeoCortex overlay | *The overlay was still up. The NeoCortex noted the thermal data.* |
+| Geometry resolution | *He ran the geometry. He resolved it.* |
+| Round count as clock | *Four left. Five still up.* (the explicit Cacophony count) |
+
+These are Kyle's *architecture* — his splice, his hardware, his teacher — not a general
+narrative mode. Another protagonist experiencing the same scene through the same general
+economy (transactional, cost-tracking, close-third) must do it through *their* patterns.
+
+**Per-protagonist cognitive signatures:**
+
+**Kyle (all Kyle strands)**
+Files. Runs arithmetic. Tracks gaps between choice and consequence. Counts rounds, Φ,
+minutes as suspense. The 64-splice parliament votes. The NeoCortex overlay informs. Grief
+is handled by handling objects.
+
+**Bear (TEST)**
+Thinks in *mission* and *obligation* — not guilt, not philosophy. The internal voice is
+loud and certain until the thing it can't face arrives. Military man's economy: "the
+objective was X; the problem was Y." Processes moral weight as structural debt — what the
+job requires, what he owes, what the uniform means. Does not file; he *reports*.
+
+**Sasha Võ (SRZR)**
+Thinks in *signal and noise*. She acts before she knows why, then reconstructs. Her
+cognitive vocabulary: static, interference, frequency, clean, dirty, noise floor. Not
+filing — broadcasting. Not arithmetic — tuning. When she narrates, she is always filtering
+toward the one true signal underneath the interference. The instinct is the lead; the
+reasoning is the caboose.
+
+**Yemina Fola (ATTE)**
+Thinks in *discrepancy and pattern* — the database analyst's mind. What should be here,
+what is here, what's the delta. Counts evidence, not rounds (forty-seven results, twenty-two
+months). The horror arrives as a field value that doesn't match. Not filing — *flagging*.
+Not arithmetic — *audit*. Her interiority sounds like a cursor landing on an anomaly.
+
+**Tomas Alvarado (VATD)**
+Holds onto *one fact the way you hold a railing*. Thinks in *the manifest and the tab* —
+names, addresses, what the body owes. Tired empathy: he sees the cost in everything but
+still pays. Not filing — *logging*. Not arithmetic — the tab coming due. Moral weight
+through what he chooses not to do, not through reflection on what he did.
+
+**Rennick (DWIACE)**
+*Prices* everything — what this costs the person who did it, what it costs him to know it,
+what the truth is worth against what it will buy. Marks the seam between fact and inference
+*explicitly*, speaks slowly enough the room goes quiet. In his head, that same precision:
+he does not file, he *invoices*. He does not run geometry, he *calculates liability*.
+
+**Rook (MxG, CxC)**
+*Straight-line*. Sees the endpoint and moves. No lateral thinking, no hedged bets, no
+geometry — *trajectory*. Does not file; *commits*. Does not resolve gaps; *decides*. The
+internal voice is terse to the point of being sparse: the plan, the obstacle, the next
+move. Lightning leader: thinks in headlines, not footnotes. Second-guessing is noise she
+cuts before it starts.
+
+**Ekow Ato (VATD)**
+*Hunter's register*. Patient, observational. Processes environment as territory: exits,
+sightlines, what doesn't know it's being watched. Not Kyle's pre-combat geometry (which is
+mathematical) — Ekow's is *ecological*. He is not running an equation; he is reading a
+room the way a predator reads a landscape. The internal voice is slow and precise and very
+quiet.
+
+**Elias Macias (SPRW)**
+Thinks in *logistics and alternatives*. Supply chains, access routes, who has what, what
+can be obtained, what the route is that doesn't get anyone killed. A worrier's inventory:
+lists the things that could go wrong, ranks them by probability, starts on the first one.
+Never fires — his vocabulary is *contingencies and workarounds*, not force. His internal
+voice sounds like a man finding the back door to every room he enters.
+
+---
+
 ## §9 — Behavioral Consistency: A Few Rules Predict the Person {#SS-CHAR-§9}
 
 A character is **followable** when a small set of stable rules predicts how they will react.

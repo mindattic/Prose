@@ -1,4 +1,5 @@
 using System.ComponentModel;
+using System.Text;
 using System.Text.Json;
 using Microsoft.EntityFrameworkCore;
 using ModelContextProtocol.Server;
@@ -15,6 +16,7 @@ namespace StreetSamurai.Mcp;
 [McpServerToolType]
 public class EntityContextTools(
     EntityContextService entityContext,
+    EntityMentionService mentionService,
     IDbContextFactory<StreetSamuraiDbContext> dbFactory)
 {
     [McpServerTool, Description("Inspect the entity working memory currently active for a strand. Shows depth-0 (directly named), depth-1 (semantic neighbors), and depth-2 (neighbors of neighbors) entities with their canon descriptions. Call after generating beats to see what was in scope.")]
@@ -75,6 +77,28 @@ public class EntityContextTools(
         return string.IsNullOrWhiteSpace(block)
             ? "No entities detected in that text."
             : block;
+    }
+
+    [McpServerTool, Description("Find every beat in the narrative where a specific entity is mentioned. Returns a list grouped by strand with beat number, beat handle, and a short excerpt. Useful for auditing entity coverage, finding canon moments, and reverse-navigating from entity to story.")]
+    public async Task<string> get_entity_beat_mentions(
+        [Description("Entity ID (GUID) or entity slug")] string entityId,
+        [Description("Maximum results to return (default 50)")] int limit = 50)
+    {
+        var entity = await mentionService.ResolveEntityAsync(entityId);
+        if (entity == null) return $"Entity not found: {entityId}";
+
+        var mentions = await mentionService.GetBeatsForEntityAsync(entity.Value.Id, limit);
+        if (mentions.Count == 0)
+            return $"No beat mentions found for '{entity.Value.Name}'. Run `ss --scan-entity-mentions` to index beat text.";
+
+        var sb = new StringBuilder();
+        sb.AppendLine($"**{entity.Value.Name}** — {mentions.Count} beat mention(s)\n");
+        sb.AppendLine("| Strand | Beat# | Handle | Excerpt |");
+        sb.AppendLine("|--------|-------|--------|---------|");
+        foreach (var m in mentions)
+            sb.AppendLine($"| {m.StrandTitle} | {m.BeatNumber} | `{m.Handle}` | {m.Excerpt.Replace("|", "\\|")} |");
+
+        return sb.ToString();
     }
 
     [McpServerTool, Description("Clear the entity context stack for a strand. Use when starting a new writing session for a strand to reset the LRU working memory.")]

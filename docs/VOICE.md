@@ -20,10 +20,16 @@ resists, it costs. Track the costs in hard numbers and never drop a count: round
 the cylinder, minutes on the scaffold, credits on the counter, the red tick of overdraw.
 The counts are the suspense. ("Four left in the cylinder. Five shooters still up.")
 
-**SENTENCES:** long, clean, rolling sentences carrying concrete cargo — objects, geometry,
-costs — punctuated by short hard ones at moments of impact. ("He can't beat the door. He
-can only beat it there.") Never a long sentence about a feeling. Never an abstraction
-where an object will do.
+**SENTENCES:** Clean and concrete. Break compound chains at natural joints — two short
+sentences beat one long tangled one. Contractions throughout the narration, not just
+dialogue ("didn't", "couldn't", "wasn't"). Prefer Anglo-Saxon over Latinate: *find* over
+*locate*, *needed* over *required*, *method* over *methodology*, *physical* over
+*kinesthetic*, *readable* over *legible*, *shoulder* over *deltoid*, *hum* over
+*harmonic*, *anchor* over *orienting mechanism*. "X, which was Y" → "X. That was Y."
+Colon-launched lists become period-separated fragments. Semicolons become periods. At
+moments of impact: one short sentence, alone. ("He can't beat the door. He can only beat
+it there.") Never a long sentence about a feeling. Never an abstraction where an object
+will do.
 
 **THE NARRATOR IS NEVER WISE.** No sentence about life, death, people-in-general, or the
 city-in-general. Nothing that could be embroidered on a pillow. State facts, actions, and
@@ -93,6 +99,21 @@ feared. Write it as ability, never as magic.
 - **Psyker / Psykers** — the institutional fear-word: bounty boards, registry men, the hood-and-noose generation. Menace without obscenity.
 - The slur exists but is never written. Characters refuse it ("There's an uglier word for it. I won't say it."); the refusal does the work.
 - The narrator says "the Read" or says nothing.
+
+**REGISTER PURITY — Kyle's cognitive vocabulary is HIS ALONE.** When writing any
+non-Kyle POV, ban the following patterns: *He filed it. He ran the arithmetic. The math
+was exact. After the choice, before the cost. The gap. In the drawer where he kept most
+things. The parliament. The sixty-four were quiet. He resolved it. He ran the geometry.*
+These are Kyle's splice architecture, his martial philosophy (Saito), and his NeoCortex
+overlay — not general GLMZ voice. Every other protagonist has their own cognitive grammar
+(see CHARACTER.md §8):
+- **Bear** — mission/objective/obligation. Thinks in what the job requires, not what he feels.
+- **Sasha** — signal/noise/interference. Acts before she knows why, then reconstructs.
+- **Yemina** — discrepancy/pattern/what-the-data-can't-hold. Counts evidence, not rounds.
+- **Tomas** — the manifest and the tab. Holds one fact like a railing. Logs, doesn't file.
+- **Rennick** — prices everything. Marks the seam between fact and inference.
+- **Rook** — straight-line. Sees the endpoint, commits, goes. No geometry — trajectory.
+- **Ekow** — hunter's stillness. Reads territory: exits, sightlines, what doesn't know it's watched.
 
 ## The five canon texts (reread before writing; they outrank this document)
 1. **With Teeth** (part-i-teeth-019e9fb2) — the fight standard: nonlethal precision, chrome economics, the duel.

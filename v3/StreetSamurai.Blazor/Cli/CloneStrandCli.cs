@@ -9,7 +9,7 @@ namespace StreetSamurai.Blazor.Cli;
 /// — deep-clone a strand: creates a new Strand row plus independent copies of every
 /// enabled beat (new IDs, new Numbers). Audio, scores, and review history are NOT
 /// cloned — the clone starts fresh so review scores are independent.
-/// IsDraft is set by default so the clone is excluded from global review/score/publish
+/// IsWIP is set by default so the clone is excluded from global review/score/publish
 /// flows until the author promotes it.
 /// </summary>
 public static class CloneStrandCli
@@ -118,7 +118,7 @@ public static class CloneStrandCli
             VoiceStyle       = source.VoiceStyle,
             VoiceSeed        = source.VoiceSeed,
             TtsEngine        = source.TtsEngine,
-            IsDraft          = isDraft,
+            IsWIP            = isDraft,
             SortKey          = maxSort + 100.0,
             CreatedAt        = now,
             UpdatedAt        = now,
@@ -172,7 +172,7 @@ public static class CloneStrandCli
         Console.WriteLine($"[clone-strand] Created '{newTitle}' — {sourceBeats.Count} beat(s) cloned");
         Console.WriteLine($"[clone-strand] id:   {newId}");
         Console.WriteLine($"[clone-strand] slug: {newSlug}");
-        if (isDraft) Console.WriteLine("[clone-strand] IsDraft=true — excluded from review/score/publish flows");
+        if (isDraft) Console.WriteLine("[clone-strand] IsWIP=true — excluded from review/score/publish flows");
         return 0;
     }
 

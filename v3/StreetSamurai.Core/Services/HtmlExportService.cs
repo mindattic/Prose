@@ -80,22 +80,40 @@ public class HtmlExportService
 
         var repoFiles = new List<(string repoName, string fileName, int count)>();
 
-        // Build cross-reference index: entity name -> (repoSlug, entitySlug)
-        var xrefIndex = new Dictionary<string, (string repoSlug, string entitySlug)>(StringComparer.OrdinalIgnoreCase);
+        // Build cross-reference index: entity name -> (repoSlug, entitySlug, description)
+        var xrefIndex = new Dictionary<string, (string repoSlug, string entitySlug, string? desc)>(StringComparer.OrdinalIgnoreCase);
         foreach (var (repoName, entries) in repos)
         {
             var repoSlug = Slugify(repoName);
-            foreach (var (name, _) in entries)
-                xrefIndex.TryAdd(name, (repoSlug, Slugify(name)));
+            foreach (var (name, json) in entries)
+            {
+                if (xrefIndex.ContainsKey(name)) continue;
+                string? desc = null;
+                try
+                {
+                    using var doc = JsonDocument.Parse(json);
+                    if (doc.RootElement.TryGetProperty("description", out var d) && d.ValueKind == JsonValueKind.String)
+                    {
+                        var raw = d.GetString() ?? "";
+                        if (raw.Length > 0)
+                            desc = raw.Length > 150 ? raw[..150] + "…" : raw;
+                    }
+                }
+                catch { /* malformed json — skip description */ }
+                xrefIndex[name] = (repoSlug, Slugify(name), desc);
+            }
         }
 
         // Write cross-reference index as JSON for client-side linking
         var xrefJson = new StringBuilder("{");
         var first = true;
-        foreach (var (name, (repoSlug, entitySlug)) in xrefIndex.OrderBy(x => x.Key))
+        foreach (var (name, (repoSlug, entitySlug, desc)) in xrefIndex.OrderBy(x => x.Key))
         {
             if (!first) xrefJson.Append(',');
-            xrefJson.Append($"\n  {JsonSerializer.Serialize(name)}: {{\"r\":\"{repoSlug}\",\"e\":\"{entitySlug}\"}}");
+            if (desc != null)
+                xrefJson.Append($"\n  {JsonSerializer.Serialize(name)}: {{\"r\":\"{repoSlug}\",\"e\":\"{entitySlug}\",\"d\":{JsonSerializer.Serialize(desc)}}}");
+            else
+                xrefJson.Append($"\n  {JsonSerializer.Serialize(name)}: {{\"r\":\"{repoSlug}\",\"e\":\"{entitySlug}\"}}");
             first = false;
         }
         xrefJson.Append("\n}");
@@ -811,6 +829,8 @@ ul.compact li { font-size: 13px; padding: 1px 0; }
 /* Cross-references */
 .xref { color: var(--link); cursor: pointer; border-bottom: 1px dotted var(--link); }
 .xref:hover { color: var(--accent); border-color: var(--accent); }
+.xref-tip { text-decoration: none; border-bottom: 1px dotted var(--link); cursor: help; }
+.xref-tip:hover { border-color: var(--accent); }
 
 /* Tag bar */
 .tag-bar { display: flex; flex-wrap: wrap; gap: 4px; align-items: center; }
@@ -892,35 +912,34 @@ fetch('xref.json').then(r => r.ok ? r.json() : {}).then(data => {
     applyXrefs();
 }).catch(() => { xrefData = {}; });
 
+function escapeRegex(s) {
+    return s.replace(/[.*+?^${}()|[\]\\]/g, '\\$&');
+}
+
 function applyXrefs() {
     if (!xrefData || Object.keys(xrefData).length === 0) return;
-    // Build a regex from all entity names (longest first to avoid partial matches)
-    var names = Object.keys(xrefData).sort((a, b) => b.length - a.length);
-    // Only xref names 4+ chars to avoid false matches
-    names = names.filter(n => n.length >= 4);
+    // Longest first so multi-word names match before their components
+    var names = Object.keys(xrefData).sort((a, b) => b.length - a.length).filter(n => n.length >= 4);
     if (names.length === 0) return;
 
-    // Process all elements with data-xref attribute
     document.querySelectorAll('[data-xref]').forEach(el => {
         var html = el.innerHTML;
-        // Don't process if already has xref links
         if (html.indexOf('class=""xref""') !== -1) return;
 
-        // Simple approach: replace first occurrence of each name
-        var used = new Set();
-        for (var i = 0; i < names.length && used.size < 10; i++) {
+        for (var i = 0; i < names.length; i++) {
             var name = names[i];
-            var idx = html.indexOf(name);
-            if (idx === -1) continue;
-            // Don't link if inside an HTML tag
-            var before = html.substring(0, idx);
-            if ((before.match(/</g) || []).length > (before.match(/>/g) || []).length) continue;
-            var ref = xrefData[name];
-            var link = '<a class=""xref"" href=""' + ref.r + '.htm#' + ref.e + '"">' + name + '</a>';
-            html = html.substring(0, idx) + link + html.substring(idx + name.length);
-            used.add(name);
+            var entry = xrefData[name];
+            // Word-boundary pattern: not preceded/followed by word chars or hyphens
+            var pattern = new RegExp('(?<![\\w-])(' + escapeRegex(name) + ')(?![\\w-])', 'gi');
+            if (!pattern.test(html)) continue;
+            pattern.lastIndex = 0;
+            var url = entry.r + '.htm#' + entry.e;
+            var replacement = entry.d
+                ? '<abbr title=""' + entry.d.replace(/""/g, '&quot;') + '"" class=""xref-tip""><a class=""xref"" href=""' + url + '"">$1</a></abbr>'
+                : '<a class=""xref"" href=""' + url + '"">$1</a>';
+            html = html.replace(pattern, replacement);
         }
-        if (used.size > 0) el.innerHTML = html;
+        el.innerHTML = html;
     });
 }
 

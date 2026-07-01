@@ -215,7 +215,7 @@ const AUGMENTATION_TYPES = [
   "Neural dampener — blocks external hacking attempts, passive ICE in the brain",
   "Thermal masking system — body heat signature can be suppressed or spoofed",
   "Enhanced tendons — geneware upgrade, jump height and grip strength tripled",
-  "Cortical bomb (employer installed, removed by street doc, scar tissue remains)",
+  "Cortical bomb (employer installed, removed by splicer, scar tissue remains)",
   "Eye replacement — one organic, one cybernetic with recording capability and zoom",
   "Hydraulic joints in knees and elbows — absorbs falls, amplifies strikes"
 ];
@@ -496,7 +496,7 @@ function generateRunner(index) {
     `${fullName} once worked for corporate intelligence and still has a handler who calls in favors. Each favor erodes what's left of their independence.`,
     `${fullName} can't read. Hides it behind voice interfaces and memorization. The shame is older than the chrome.`,
     `${fullName} witnessed a massacre during a corporate dispute and has evidence stored in a dead drop. Publishing it would expose powerful people. Keeping it is leverage and liability.`,
-    `${fullName} is addicted to combat stims. Functions fine on them, can't function without them. The dependency is invisible to everyone except their street doc.`,
+    `${fullName} is addicted to combat stims. Functions fine on them, can't function without them. The dependency is invisible to everyone except their splicer.`,
     `${fullName} has been doubling fees to clients and pocketing the difference. The fixer who handles their contracts doesn't know. Yet.`,
     `${fullName} has a terminal condition — geneware degradation — with an estimated five years. They haven't changed their lifestyle. They haven't told anyone.`,
     `${fullName} betrayed their previous crew to survive a corporate raid. The crew didn't survive. Nobody in GLMZ knows this.`,

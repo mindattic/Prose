@@ -305,7 +305,7 @@ public class StrandTools
             VoiceStyle      = source.VoiceStyle,
             VoiceSeed       = source.VoiceSeed,
             TtsEngine       = source.TtsEngine,
-            IsDraft         = isDraft,
+            IsWIP         = isDraft,
             SortKey         = maxSort + 100.0,
             CreatedAt       = now,
             UpdatedAt       = now,
@@ -1049,6 +1049,31 @@ public class StrandTools
         {
             return JsonSerializer.Serialize(new { error = "build_failed", message = ex.Message }, CanonTools.JsonOpts);
         }
+    }
+
+    [McpServerTool, Description("Print all beats of a strand as continuous prose — each beat's Text joined by a blank line. No headers, no beat numbers, no metadata. Accepts strand id (GUID) or slug. Use this to read the full prose of a strand in one call.")]
+    public async Task<string> PrintStrand(
+        [Description("Strand Guid id or slug.")] string idOrSlug)
+    {
+        var strand = await ResolveStrandAsync(idOrSlug);
+        if (strand == null) return JsonSerializer.Serialize(new { error = "strand_not_found", idOrSlug }, CanonTools.JsonOpts);
+
+        await using var db = await dbFactory.CreateDbContextAsync();
+
+        var texts = await db.StrandBeats
+            .AsNoTracking()
+            .Where(sb => sb.StrandId == strand.Id && sb.IsEnabled)
+            .OrderBy(sb => sb.SortKey)
+            .Join(db.Beats.AsNoTracking(),
+                  sb => sb.BeatId,
+                  b  => b.Id,
+                  (sb, b) => b.Text)
+            .ToListAsync();
+
+        var prose = texts.Where(t => !string.IsNullOrWhiteSpace(t)).ToList();
+        if (prose.Count == 0) return JsonSerializer.Serialize(new { error = "no_prose", strand_id = strand.Id, slug = strand.Slug }, CanonTools.JsonOpts);
+
+        return string.Join("\n\n", prose);
     }
 
     private async Task<Strand?> ResolveStrandAsync(string idOrSlug)

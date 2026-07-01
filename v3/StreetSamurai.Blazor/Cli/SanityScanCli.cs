@@ -68,7 +68,7 @@ public static class SanityScanCli
         bool jsonMode)
     {
         var strands = await db.Strands.AsNoTracking()
-            .Where(s => !s.IsDraft)
+            .Where(s => !s.IsWIP)
             .ToListAsync();
 
         // Filter to strands with >2 beats (by joining StrandBeats)

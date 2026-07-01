@@ -137,6 +137,12 @@ public class BeatGeneratorService
         var narrativeSummaryBlock = !string.IsNullOrWhiteSpace(context.NarrativeSummaryContext)
             ? $"\n\n{context.NarrativeSummaryContext}"
             : "";
+        var chapterSummaryBlock = !string.IsNullOrWhiteSpace(context.ChapterSummaryContext)
+            ? $"\n\n{context.ChapterSummaryContext}"
+            : "";
+        var openThreadsBlock = !string.IsNullOrWhiteSpace(context.OpenThreadsContext)
+            ? $"\n\n{context.OpenThreadsContext}"
+            : "";
 
         var system = $"""
             {UniverseLine()}
@@ -154,7 +160,7 @@ public class BeatGeneratorService
             {(context.XRayContext.Length > 0 ? "\nSCENE X-RAY — entities on screen RIGHT NOW. Every character below speaks in THEIR OWN documented register, not the narrator's:\n" + context.XRayContext : "")}
             {(context.EntityStackContext.Length > 0 ? "\nENTITY WORKING MEMORY — proper nouns active in this story thread and their canon facts. Treat these as hard constraints; do not contradict them:\n" + context.EntityStackContext : "")}
             {(context.DocStackContext.Length > 0 ? "\n" + context.DocStackContext : "")}
-            {(context.LocationContext.Length > 0 ? "\nADDITIONAL LOCATION DETAIL:\n" + context.LocationContext : "")}{ambientAnomalyBlock}{dialogueBlock}{anchorBlock}{plantBlock}{consequenceBlock}{commandmentBlock}{worldStateBlock}{emotionalBlock}{mlProseBlock}{tensionBlock}{readerBlock}{narrativeSummaryBlock}{pacingBlock}{structuralBlock}
+            {(context.LocationContext.Length > 0 ? "\nADDITIONAL LOCATION DETAIL:\n" + context.LocationContext : "")}{ambientAnomalyBlock}{dialogueBlock}{anchorBlock}{plantBlock}{consequenceBlock}{commandmentBlock}{worldStateBlock}{emotionalBlock}{mlProseBlock}{tensionBlock}{readerBlock}{narrativeSummaryBlock}{chapterSummaryBlock}{openThreadsBlock}{pacingBlock}{structuralBlock}
             """;
 
         var hasDialogue = context.DialogueContext.Length > 0;
@@ -335,7 +341,7 @@ public class BeatGeneratorService
                 "contradict canon or repeat a beat that already fired."),
         };
 
-        var providers = new[] { "claude", "openai", "gemini", "deepseek" };
+        var providers = new[] { "claude-api", "openai", "gemini", "deepseek" };
         var voters = new List<VoterProfile>(experts.Length);
         for (int i = 0; i < experts.Length; i++)
         {
@@ -363,11 +369,11 @@ public class BeatGeneratorService
     /// </summary>
     private static string? HighTierModelFor(string providerId) => providerId switch
     {
-        "claude"   => "claude-opus-4-7",
-        "openai"   => "gpt-4.1",
-        "gemini"   => "gemini-2.5-pro",
-        "deepseek" => "deepseek-reasoner",
-        _          => null,
+        "claude-api" => "claude-opus-4-7",
+        "openai"     => "gpt-4.1",
+        "gemini"     => "gemini-2.5-pro",
+        "deepseek"   => "deepseek-reasoner",
+        _            => null,
     };
 
     /// <summary>
@@ -379,7 +385,7 @@ public class BeatGeneratorService
     /// </summary>
     private static IReadOnlyList<VoterProfile> BuildExpertPanelFromTable(IReadOnlyList<Models.ExpertPersona> picked)
     {
-        var providers = new[] { "claude", "openai", "gemini", "deepseek" };
+        var providers = new[] { "claude-api", "openai", "gemini", "deepseek" };
         var voters = new List<VoterProfile>(picked.Count);
         for (int i = 0; i < picked.Count; i++)
         {
@@ -421,8 +427,8 @@ public class BeatGeneratorService
         {
             VoterId             = $"preview-{persona.Id}-{Guid.NewGuid().ToString("N")[..8]}",
             Name                = persona.Name,
-            ProviderId          = "claude",
-            ModelOverride       = HighTierModelFor("claude"),
+            ProviderId          = "claude-api",
+            ModelOverride       = HighTierModelFor("claude-api"),
             PersonalityMarkdown = persona.Lens,
         };
         var request = new VoteRequest
@@ -555,7 +561,7 @@ public class BeatGeneratorService
     /// </summary>
     private static IReadOnlyList<VoterProfile> BuildStorytellerPanel(int count)
     {
-        var providers = new[] { "claude", "openai", "gemini", "deepseek" };
+        var providers = new[] { "claude-api", "openai", "gemini", "deepseek" };
         var voters = new List<VoterProfile>(count);
         for (int i = 0; i < count; i++)
         {
@@ -584,11 +590,11 @@ public class BeatGeneratorService
     /// </summary>
     private static string? LowTierModelFor(string providerId) => providerId switch
     {
-        "claude"   => "claude-haiku-4-5-20251001",
-        "openai"   => "gpt-4.1-nano",
-        "gemini"   => "gemini-2.5-flash-lite",
-        "deepseek" => "deepseek-chat",
-        _          => null,
+        "claude-api" => "claude-haiku-4-5-20251001",
+        "openai"     => "gpt-4.1-nano",
+        "gemini"     => "gemini-2.5-flash-lite",
+        "deepseek"   => "deepseek-chat",
+        _            => null,
     };
 
     /// <summary>
@@ -895,6 +901,20 @@ public record BeatContext
     /// Injected by ProseWriterRouter from recent ML-PROSE-SCORE findings — beats the nightly model
     /// flagged as weak in this strand. Empty when no model has been trained or no findings exist.</summary>
     public string MlProseGuidanceContext { get; init; } = "";
+
+    // ── Autonomous pipeline enrichment fields ─────────────────────────────
+
+    /// <summary>DB-backed chapter summaries from ChapterSummaryService.
+    /// Summaries of prior chapters injected for long-form coherence — the engine
+    /// knows what happened before this chapter without the full prose in context.
+    /// Empty when ChapterSummaryService is not wired or no prior chapters exist.</summary>
+    public string ChapterSummaryContext { get; init; } = "";
+
+    /// <summary>Open threads from OpenThreadsService.
+    /// Unresolved promises, plants, and questions detected in earlier beats —
+    /// the generator should address or advance at least one per beat.
+    /// Empty when OpenThreadsService is not wired or no open threads exist.</summary>
+    public string OpenThreadsContext { get; init; } = "";
 }
 
 /// <summary>

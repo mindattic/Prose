@@ -43,7 +43,9 @@ public class ProseWriterRouter(
     NarrativeSummaryService? narrativeSummary = null,
     WorldStateAtBeatService? worldStateAtBeat = null,
     ConsequenceEngine? consequenceEngine = null,
-    MlProseGuidanceService? mlProseGuidance = null)
+    MlProseGuidanceService? mlProseGuidance = null,
+    ChapterSummaryService? chapterSummary = null,
+    OpenThreadsService? openThreads = null)
 {
     // Extended combat rules — shared with CombatSceneWriter's common block + Dissociated Observer examples.
     static readonly string CombatProseGuidance = """
@@ -227,6 +229,22 @@ public class ProseWriterRouter(
             catch { /* non-blocking */ }
         }
 
+        // Chapter summaries: DB-backed prior-chapter memory (cross-session coherence).
+        var chapterSummaryContext = context.ChapterSummaryContext;
+        if (string.IsNullOrEmpty(chapterSummaryContext) && chapterSummary != null && context.StrandId != Guid.Empty)
+        {
+            try { chapterSummaryContext = await chapterSummary.BuildPriorSummaryContextAsync(context.StrandId, ct); }
+            catch { /* non-blocking */ }
+        }
+
+        // Open threads: unresolved promises/plants/questions from prior beats.
+        var openThreadsContext = context.OpenThreadsContext;
+        if (string.IsNullOrEmpty(openThreadsContext) && openThreads != null && context.StrandId != Guid.Empty)
+        {
+            try { openThreadsContext = await openThreads.BuildContextAsync(context.StrandId, ct); }
+            catch { /* non-blocking */ }
+        }
+
         // ── Assemble enriched context ─────────────────────────────────────────
 
         var enriched = context with
@@ -245,9 +263,11 @@ public class ProseWriterRouter(
             TensionGuidanceContext = tensionGuidanceContext,
             ReaderKnowledgeContext = readerKnowledgeContext,
             ConsequenceContext     = consequenceContext,
-            AmbientAnomalyContext  = ambientAnomalyContext,
-            WorldStateContext      = worldStateContext,
+            AmbientAnomalyContext   = ambientAnomalyContext,
+            WorldStateContext       = worldStateContext,
             NarrativeSummaryContext = narrativeSummaryContext,
+            ChapterSummaryContext   = chapterSummaryContext,
+            OpenThreadsContext      = openThreadsContext,
         };
 
         var startedAt = DateTime.UtcNow;
@@ -302,6 +322,8 @@ public class ProseWriterRouter(
                 new("AmbientAnomaly",      IsApplicable: !string.IsNullOrEmpty(context.Location), IsActive: ambientAnomalyContext.Length > 0,                          BlockSizeChars: ambientAnomalyContext.Length),
                 new("WorldState",          IsApplicable: beatId != Guid.Empty,      IsActive: worldStateContext.Length > 0,                                             BlockSizeChars: worldStateContext.Length),
                 new("NarrativeSummary",    IsApplicable: strandApplicable,          IsActive: narrativeSummaryContext.Length > 0,                                       BlockSizeChars: narrativeSummaryContext.Length),
+                new("ChapterSummary",      IsApplicable: strandApplicable,          IsActive: chapterSummaryContext.Length > 0,                                         BlockSizeChars: chapterSummaryContext.Length),
+                new("OpenThreads",         IsApplicable: strandApplicable,          IsActive: openThreadsContext.Length > 0,                                            BlockSizeChars: openThreadsContext.Length),
             ], CancellationToken.None);
 
             await modeDetector.PersistAsync(beatId, universeId, mode, confidence, method, CancellationToken.None);
@@ -317,6 +339,15 @@ public class ProseWriterRouter(
             // Compress completed beat into rolling narrative summary for next beat.
             if (narrativeSummary != null && capturedStrandId != Guid.Empty && !string.IsNullOrWhiteSpace(capturedResult))
                 await narrativeSummary.SummarizeSceneAsync(capturedResult, CancellationToken.None);
+
+            // Open threads: detect new setups, mark resolved threads from this beat.
+            if (openThreads != null && capturedStrandId != Guid.Empty && beatId != Guid.Empty && !string.IsNullOrWhiteSpace(capturedResult))
+            {
+                try { await openThreads.MarkResolvedAsync(capturedStrandId, beatId, capturedResult, CancellationToken.None); }
+                catch { /* non-blocking */ }
+                try { await openThreads.DetectAndRegisterAsync(capturedStrandId, beatId, capturedResult, CancellationToken.None); }
+                catch { /* non-blocking */ }
+            }
         }, CancellationToken.None);
 
         return result ?? "";

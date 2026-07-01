@@ -1,9 +1,9 @@
----
-name: review-strand
-description: Economical strand evaluation in one call — a sampled panel casts cheap score-ballots (overall + per-beat + one gripe), clusters them into a Pareto/contested/seam study, upgrades the most informative few to full prose, and prints one report with the strand score + 95% CI. Usage /review-strand [slug-or-id]; defaults to the most-recently-edited strand.
+﻿---
+name: run-panel
+description: Economical strand evaluation in one call — a sampled panel casts cheap score-ballots (overall + per-beat + one gripe), clusters them into a Pareto/contested/seam study, upgrades the most informative few to full prose, and prints one report with the strand score + 95% CI. Usage /run-panel [slug-or-id]; defaults to the most-recently-edited strand.
 ---
 
-One call that grades a strand and tells you what to fix — cheaply. The default is a **sampled two-tier** run (NOT a 1024-persona census): a stratified panel casts score-only ballots, those ballots double as the segment study, and only the most informative handful get upgraded to readable prose. The user invokes it as `/review-strand <slug>` (slug optional).
+One call that grades a strand and tells you what to fix — cheaply. The default is a **sampled two-tier** run (NOT a 1024-persona census): a stratified panel casts score-only ballots, those ballots double as the segment study, and only the most informative handful get upgraded to readable prose. The user invokes it as `/run-panel <slug>` (slug optional).
 
 ## Fixed facts for this engine
 - DB: `Server=(localdb)\MSSQLLocalDB;Database=StreetSamurai;Trusted_Connection=True;TrustServerCertificate=True;`
@@ -26,7 +26,7 @@ A score needs precision, not volume: with population SD ≈ 8, a sample of ~120 
 
 3. **Run the default sampled pass** (one command — ballots + study + prose, all in one). Launch with `run_in_background: true`; wait for the completion notification (don't poll):
    ```
-   dotnet run --project <proj> --no-build -- --review-strand --slug <slug>
+   dotnet run --project <proj> --no-build -- --run-panel --slug <slug>
    ```
    Knobs: `--ballots N` (default 120) sets the sample size; `--prose N` (default 10) sets how many full reviews to write. The command prints the strand mean + SD + 95% CI, cluster count, and the full Pareto/contested/seam report verbatim.
 
@@ -73,7 +73,7 @@ for one run with `--local-model <tag>`.
 
 **Run:**
 ```
-dotnet run --project <proj> --no-build -- --review-strand --slug <slug> --local
+dotnet run --project <proj> --no-build -- --run-panel --slug <slug> --local
 ```
 
 **Caveats — read these before trusting the number:**

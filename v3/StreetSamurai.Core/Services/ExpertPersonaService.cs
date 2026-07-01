@@ -257,7 +257,7 @@ public class ExpertPersonaService
     /// <summary>4-voter Haiku-class panel for the persona-selection vote — cheap and fast.</summary>
     private static List<VoterProfile> BuildLowTierVoters()
     {
-        var providers = new[] { "claude", "openai", "gemini", "deepseek" };
+        var providers = new[] { "claude-api", "openai", "gemini", "deepseek" };
         var voters = new List<VoterProfile>(providers.Length);
         foreach (var pid in providers)
         {
@@ -268,7 +268,7 @@ public class ExpertPersonaService
                 ProviderId    = pid,
                 ModelOverride = pid switch
                 {
-                    "claude"   => "claude-haiku-4-5-20251001",
+                    "claude-api" => "claude-haiku-4-5-20251001",
                     "openai"   => "gpt-4.1-nano",
                     "gemini"   => "gemini-2.5-flash-lite",
                     "deepseek" => "deepseek-chat",

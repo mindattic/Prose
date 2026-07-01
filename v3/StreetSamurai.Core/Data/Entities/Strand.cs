@@ -74,10 +74,10 @@ public class Strand
     /// under), and enumeration tools skip it by default. Use it for the
     /// "Drafts" bucket, cut scenes, archived chapters, unincorporated drafts,
     /// and bonus material that should not count toward the finished work. The
-    /// flag is inherited down the tree: marking a container Draft drafts its
+    /// flag is inherited down the tree: marking a container WIP drafts its
     /// whole subtree. Distinct from <see cref="Status"/> "draft" (the
     /// generation-lifecycle default), which carries no exclusion semantics.</summary>
-    public bool IsDraft { get; set; }
+    public bool IsWIP { get; set; }
 
     /// <summary>Optional parent strand. A book strand has chapter-strand
     /// children; a saga strand has book-strand children; a standalone
@@ -241,6 +241,10 @@ public class Strand
     /// <summary>Persona reader-reviews (1:M). Each review run appends rows; the
     /// aggregate lives in <see cref="StrandReviewSummary"/>.</summary>
     public List<StrandReview> Reviews { get; set; } = new();
+
+    /// <summary>Amazon KDP / storefront search keywords for this strand (up to 7,
+    /// ordered by <see cref="StrandKeyword.SortOrder"/>).</summary>
+    public List<StrandKeyword> Keywords { get; set; } = new();
 }
 
 // ── StrandAmendment ───────────────────────────────────────────────────────
@@ -293,4 +297,21 @@ public class StrandSpineVersion
     public string   PinnedBy          { get; set; } = "";
     /// <summary>Optional human note about what changed at this version.</summary>
     public string   Notes             { get; set; } = "";
+}
+
+// ── StrandKeyword ─────────────────────────────────────────────────────────────
+// Amazon KDP / storefront search keywords. Up to 7 per strand, ordered by
+// SortOrder (1-based). Written by --seed-keywords and copied to keywords.txt
+// on every --publish-docx run.
+
+public class StrandKeyword
+{
+    public Guid     Id        { get; set; }
+    public Guid     StrandId  { get; set; }
+    public Strand?  Strand    { get; set; }
+    /// <summary>Keyword phrase — max 100 chars (Amazon allows 50; extra room for flexibility).</summary>
+    public string   Keyword   { get; set; } = "";
+    /// <summary>1-based display order.</summary>
+    public int      SortOrder { get; set; }
+    public DateTime CreatedAt { get; set; } = DateTime.UtcNow;
 }

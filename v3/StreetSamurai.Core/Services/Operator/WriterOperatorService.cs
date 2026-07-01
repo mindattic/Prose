@@ -51,7 +51,7 @@ public class WriterOperatorService
         OperatorContext ctx,
         [EnumeratorCancellation] CancellationToken cancel = default)
     {
-        var apiKey = MindAtticCredentialStore.GetKey("claude");
+        var apiKey = MindAtticCredentialStore.GetKey("claude-api");
         if (string.IsNullOrWhiteSpace(apiKey))
         {
             yield return new OperatorEvent.Error(

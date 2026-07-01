@@ -82,23 +82,29 @@ def run_audit(conn, model: BeatQualityModel, slug: str | None = None) -> list[di
     for strand_slug, beats in strands.items():
         console.print(f"[cyan]Auditing {strand_slug} ({len(beats)} beats)...[/cyan]")
 
-        # Clear stale ML findings for this strand
-        delete_stale(conn, f"strand:{strand_slug}", "ML-PROSE-SCORE")
-        delete_stale(conn, f"strand:{strand_slug}", "ML-PROSE-GRIPE")
-
-        # Score all beats
         texts        = [b["beat_text"] for b in beats]
         beat_numbers = [b["beat_number"] for b in beats]
         total_beats  = [b["total_beats"] for b in beats]
 
-        scores = model.predict(texts, beat_numbers, total_beats)
+        # Score before wiping: if predict raises, existing findings survive intact
+        try:
+            scores = model.predict(texts, beat_numbers, total_beats)
+        except Exception as exc:
+            console.print(f"[red]  predict failed for {strand_slug} — skipping ({exc})[/red]")
+            continue
+
+        delete_stale(conn, f"strand:{strand_slug}", "ML-PROSE-SCORE")
+        delete_stale(conn, f"strand:{strand_slug}", "ML-PROSE-GRIPE")
 
         for beat, score in zip(beats, scores):
             if score >= 3.5:
                 continue
-            negatives = model.top_negative_features(
-                beat["beat_text"], beat["beat_number"], beat["total_beats"]
-            )
+            try:
+                negatives = model.top_negative_features(
+                    beat["beat_text"], beat["beat_number"], beat["total_beats"]
+                )
+            except Exception:
+                negatives = []
             write_beat_score_finding(
                 conn,
                 strand_slug=strand_slug,

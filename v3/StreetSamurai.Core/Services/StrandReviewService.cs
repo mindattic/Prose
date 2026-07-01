@@ -1745,7 +1745,7 @@ Be specific; do not invent praise the reviews don't support.";
         await using var db = await dbFactory.CreateDbContextAsync(ct);
 
         var childIds = await db.Strands
-            .Where(s => s.ParentStrandId == strandId && !s.IsDraft)
+            .Where(s => s.ParentStrandId == strandId && !s.IsWIP)
             .Select(s => s.Id)
             .ToListAsync(ct);
 

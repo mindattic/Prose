@@ -239,6 +239,11 @@
        Min-height matches the prose container so very short beats don't
        collapse below readable size. */
     .beat-textarea { min-height: 1.55rem; }
+    /* Read view: renders entity-linked prose instead of raw textarea when beat is not dirty. */
+    .beat-read-wrapper { min-height: 1.55rem; cursor: text; padding: 0.15rem 0; }
+    .beat-read-wrapper:hover { background: rgba(255,255,255,0.03); border-radius: 3px; }
+    .beat-prose-render p { margin: 0 0 0.65em; line-height: 1.65; }
+    .beat-prose-render p:last-child { margin-bottom: 0; }
     /* Save/Cancel render INLINE in the same .beat-actions row that holds
        the read-mode copy/llm/mic/delete buttons — conditional swap, so
        they can never overlap. The absolute-positioned .beat-edit-actions
@@ -1254,23 +1259,31 @@ else
                             </div>
                         </div>
 
-                        @* ── Row 2: the beat body. Always an editable textarea —
-                           there is no separate read-only rendered view. It shows
-                           the raw markers ([WHISPERING], **bold**) the same way the
-                           old edit mode did. @bind:get/@bind:set route through the
-                           per-beat draft dictionary so each beat is independently
-                           editable; Save commits, Revert restores. No rows attribute
-                           — JS autoSizeTextarea sizes height to content; CSS
-                           min-height matches the old prose box so short beats don't
-                           collapse. ── *@
+                        @* ── Row 2: the beat body.
+                           When the beat has saved text and no pending draft (not dirty),
+                           render a read-only prose view via BeatReadView (XrefText with NER).
+                           Clicking the read view or starting a fresh beat opens the textarea.
+                           @bind:get/@bind:set route through the per-beat draft dictionary so
+                           each beat is independently editable; Save commits, Revert restores.
+                           No rows attribute — JS autoSizeTextarea sizes height to content. ── *@
                         <div class="beat-row-2">
-                            <textarea class="beat-textarea" id="@($"beat-{bid:N}-edit")"
-                                      placeholder="(empty beat — write here)"
-                                      @bind:get="DraftFor(b)"
-                                      @bind:set="@(v => OnDraftSet(bid, v))"
-                                      @bind:event="oninput"
-                                      @onkeyup="@(() => AutoSizeTextareaAsync(bid))"
-                                      @onkeydown="@(e => OnEditorKeydown(e, b))"></textarea>
+                            @if (IsDirty(b) || string.IsNullOrEmpty(b.Text) || activeBeatEditId == bid)
+                            {
+                                <textarea class="beat-textarea" id="@($"beat-{bid:N}-edit")"
+                                          placeholder="(empty beat — write here)"
+                                          @bind:get="DraftFor(b)"
+                                          @bind:set="@(v => OnDraftSet(bid, v))"
+                                          @bind:event="oninput"
+                                          @onkeyup="@(() => AutoSizeTextareaAsync(bid))"
+                                          @onkeydown="@(e => OnEditorKeydown(e, b))"
+                                          @onblur="@(() => { if (!IsDirty(b)) activeBeatEditId = Guid.Empty; })"></textarea>
+                            }
+                            else
+                            {
+                                <div class="beat-read-wrapper" @onclick="@(() => StartReadViewEdit(bid))">
+                                    <BeatReadView Text="@(b.Text ?? "")" />
+                                </div>
+                            }
                         </div>
 
                         @* ── Row 3: footer band. Audio (if recorded), then a single
@@ -2241,6 +2254,15 @@ else
     /// initial autosize once the DOM has settled. Set by StartBeatEdit;
     /// cleared by OnAfterRenderAsync after the JS interop call.</summary>
     private Guid? autoSizePendingBeatId;
+
+    /// <summary>Beat whose read-view was clicked; shows the textarea for that beat until blur-without-changes.</summary>
+    private Guid activeBeatEditId = Guid.Empty;
+
+    private void StartReadViewEdit(Guid beatId)
+    {
+        activeBeatEditId = beatId;
+        autoSizePendingBeatId = beatId;
+    }
 
     /// <summary>Tell the textarea for this beat to shrink/grow its height
     /// to match its content. Called on every input + once when edit mode

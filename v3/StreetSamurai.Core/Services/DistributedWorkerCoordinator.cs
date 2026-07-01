@@ -100,7 +100,7 @@ public class DistributedWorkerCoordinator
             .Select(q => q.TargetId)
             .ToHashSetAsync(ct);
 
-        var query = db.Strands.Where(s => !s.IsDraft);
+        var query = db.Strands.Where(s => !s.IsWIP);
         if (strandIds?.Count > 0) query = query.Where(s => strandIds.Contains(s.Id));
 
         var strands = await query
@@ -165,7 +165,7 @@ public class DistributedWorkerCoordinator
         // Query via the StrandBeat junction — beats are m:m with strands.
         var query = db.StrandBeats
             .Where(sb => sb.IsEnabled
-                      && !(sb.Strand!.IsDraft)
+                      && !(sb.Strand!.IsWIP)
                       && (sb.Beat!.Text == null || sb.Beat.Text == ""));
 
         if (strandIds?.Count > 0)
@@ -391,7 +391,7 @@ public class DistributedWorkerCoordinator
             return new WorkSubmitResult(0, 0, "already written");
         }
 
-        beat.Text      = bw.ProseText;
+        beat.Text      = TextSanitizerService.Sanitize(bw.ProseText);
         beat.UpdatedAt = DateTime.UtcNow;
         beat.Version   = beat.Version + 1;
         await db.SaveChangesAsync(ct);

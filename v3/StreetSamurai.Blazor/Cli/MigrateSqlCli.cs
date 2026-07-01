@@ -238,6 +238,7 @@ public static class MigrateSqlCli
             {
                 try
                 {
+#pragma warning disable EF1002 // table/hist are hardcoded strings — not user input
                     await db.Database.ExecuteSqlRawAsync($"""
                         IF NOT EXISTS (SELECT 1 FROM sys.columns
                                        WHERE object_id = OBJECT_ID('{table}') AND name = 'Version')
@@ -250,6 +251,7 @@ public static class MigrateSqlCli
                                                              DATA_CONSISTENCY_CHECK = OFF));
                         END;
                         """);
+#pragma warning restore EF1002
                     Console.WriteLine($"  ✔ Version column added to {table} (+ {hist}).");
                 }
                 catch (Exception ex)

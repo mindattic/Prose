@@ -348,8 +348,9 @@ public class XrefService
     }
 
     /// <summary>Splits text into alternating plain and xref segments for inline rendering.
-    /// Resolves explicit [[DisplayText|entityId]] and [[Name]] wiki links only.</summary>
-    public List<TextSegment> ParseSegments(string text)
+    /// Resolves explicit [[DisplayText|entityId]] and [[Name]] wiki links only.
+    /// Pass <paramref name="enableNer"/> true to force NER regardless of global settings.</summary>
+    public List<TextSegment> ParseSegments(string text, bool enableNer = false)
     {
         if (string.IsNullOrWhiteSpace(text)) return [new PlainSegment(text ?? "")];
         EnsureBuilt();
@@ -380,7 +381,7 @@ public class XrefService
             pass1.Add(new PlainSegment(text[cursor..]));
 
         // Pass 2: scan PlainSegments for entity name mentions (longest-match-first NER).
-        if (!settings.EnablePlainTextNer)
+        if (!(enableNer || settings.EnablePlainTextNer))
             return pass1;
 
         // Auto-link candidates: filter out names too short, lowercase-only, or stop-listed.

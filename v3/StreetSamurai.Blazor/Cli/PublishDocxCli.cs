@@ -88,6 +88,22 @@ public static class PublishDocxCli
             else
                 Console.WriteLine("[publish-docx] ✓ Mojibake check passed.");
 
+            // ── keywords.txt ─────────────────────────────────────────────────────
+            await using (var db2 = await dbFactory.CreateDbContextAsync())
+            {
+                var kws = await db2.StrandKeywords
+                    .Where(k => k.StrandId == strandId)
+                    .OrderBy(k => k.SortOrder)
+                    .Select(k => k.Keyword)
+                    .ToListAsync();
+                if (kws.Count > 0)
+                {
+                    var kwPath = Path.Combine(Path.GetDirectoryName(docxPath)!, "keywords.txt");
+                    await File.WriteAllLinesAsync(kwPath, kws);
+                    Console.WriteLine($"[publish-docx] Wrote keywords: {kwPath}");
+                }
+            }
+
             return 0;
         }
         catch (Exception ex) { Console.Error.WriteLine($"[publish-docx] Failed: {ex.Message}"); return 1; }

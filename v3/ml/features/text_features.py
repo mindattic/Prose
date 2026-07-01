@@ -195,8 +195,9 @@ class TextFeatureExtractor:
         f.has_action_verbs    = float(bool(_ACTION_VERBS.intersection(tokens)))
         f.has_interior_markers = float(bool(_INTERIOR_MARKERS.intersection(tokens)))
 
-        cap_words = [w for w in words if w[0].isupper()] if words else []
-        f.capitalization_ratio = len(cap_words) / max(len(words), 1)
+        orig_words = _WORD_RE.findall(text)   # case-preserved for capitalization check
+        cap_words = [w for w in orig_words if w[0].isupper()] if orig_words else []
+        f.capitalization_ratio = len(cap_words) / max(len(orig_words), 1)
         f.number_count = len(re.findall(r"\b\d+\b", text))
 
         # ── Mode soft signals ────────────────────────────────────────────────

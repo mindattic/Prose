@@ -62,6 +62,21 @@ public class DocxExportService
             baseDir = Environment.GetFolderPath(Environment.SpecialFolder.Desktop);
         var safeTitle = SanitizeTitle(strand.Title);
 
+        // De-dup: if a sibling strand produces the same folder name, prefix with
+        // StrandCode — or GUID7 if StrandCode is null or shared with a colliding sibling.
+        var siblings = await db.Strands.AsNoTracking()
+            .Where(s => s.Id != strandId && s.ParentStrandId == strand.ParentStrandId)
+            .Select(s => new { s.Title, s.StrandCode })
+            .ToListAsync(ct);
+        if (siblings.Any(s => SanitizeTitle(s.Title) == safeTitle))
+        {
+            var code = strand.StrandCode;
+            if (string.IsNullOrWhiteSpace(code) ||
+                siblings.Any(s => SanitizeTitle(s.Title) == safeTitle && s.StrandCode == code))
+                code = strand.Id.ToString("N")[..7];
+            safeTitle = $"[{code}] {safeTitle}";
+        }
+
         // Mirror the strand's series/book ancestry in the output path so a story
         // in a series publishes one level deeper (e.g. ".../Street Samurai/Bushido
         // Coda/Bushido Coda V5.docx"); standalone stories stay at ".../<Title>/...".

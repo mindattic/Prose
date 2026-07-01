@@ -21,6 +21,7 @@ namespace StreetSamurai.Blazor.Cli;
 ///   --title "..."        Override the auto-generated working title.
 ///   --kind &lt;k&gt;          Kind tag: "episode" (default), "vignette", "chapter", etc.
 ///   --beats N            Target beat count in the spine (default: 12).
+///   --compete N          Generate N competing outlines (2-5), score each, keep the winner.
 ///   --bible-only         Stop after generating the bible; do not open the URL.
 ///   --narrate            (placeholder) Run TTS after prose expansion.
 /// </summary>
@@ -30,7 +31,7 @@ public static class WriteStrandCli
     {
         string? seed = null, title = null;
         string kind = "episode";
-        int targetBeats = 12;
+        int targetBeats = 12, compete = 1;
         bool bibleOnly = false;
 
         for (int i = 0; i < args.Length; i++)
@@ -41,6 +42,7 @@ public static class WriteStrandCli
                 case "--title":      if (i + 1 < args.Length) title      = args[++i]; break;
                 case "--kind":       if (i + 1 < args.Length) kind       = args[++i]; break;
                 case "--beats":      if (i + 1 < args.Length && int.TryParse(args[++i], out var n)) targetBeats = n; break;
+                case "--compete":    if (i + 1 < args.Length && int.TryParse(args[++i], out var c)) compete = c; break;
                 case "--bible-only": bibleOnly = true; break;
             }
         }
@@ -48,50 +50,74 @@ public static class WriteStrandCli
         if (string.IsNullOrWhiteSpace(seed))
         {
             Console.Error.WriteLine("[write-strand] --seed is required.");
-            Console.Error.WriteLine("Usage: ss --write-strand --seed \"...\" [--title \"...\"] [--kind episode] [--beats 12] [--bible-only]");
+            Console.Error.WriteLine("Usage: ss --write-strand --seed \"...\" [--title \"...\"] [--kind episode] [--beats 12] [--compete N] [--bible-only]");
             return 2;
         }
 
-        var dbFactory  = services.GetRequiredService<IDbContextFactory<StreetSamuraiDbContext>>();
+        var dbFactory    = services.GetRequiredService<IDbContextFactory<StreetSamuraiDbContext>>();
         var bibleService = services.GetRequiredService<StrandBibleService>();
 
-        // 1. Create the strand record
-        var strandId = Guid.CreateVersion7();
-        var workingTitle = !string.IsNullOrEmpty(title) ? title : DeriveTitle(seed);
-        var slug = EpisodeGeneratorService.Slugify(workingTitle) + "-" + strandId.ToString("N")[..8];
+        Guid strandId;
+        string bibleText, workingTitle, slug;
 
-        Console.WriteLine($"[write-strand] Creating strand: \"{workingTitle}\"");
-
-        await using (var db = await dbFactory.CreateDbContextAsync())
+        if (compete >= 2)
         {
-            db.Strands.Add(new Strand
+            // ── Compete mode: N outlines, Legion scores, keep winner ──────────
+            var competeService = services.GetRequiredService<PremiseToOutlineService>();
+            Console.WriteLine($"[write-strand] Compete mode: {compete} outlines");
+            try
             {
-                Id        = strandId,
-                Title     = workingTitle,
-                Slug      = slug,
-                Seed      = seed,
-                Kind      = kind,
-                Status    = "draft",
-                Synopsis  = seed.Length > 200 ? seed[..200] : seed,
-                CreatedAt = DateTime.UtcNow,
-                UpdatedAt = DateTime.UtcNow,
-            });
-            await db.SaveChangesAsync();
+                var (wId, wBible, winnerIdx) = await competeService.CreateStrandAsync(
+                    seed!, title, kind, targetBeats, compete);
+                strandId     = wId;
+                bibleText    = wBible;
+                workingTitle = title ?? DeriveTitle(seed!);
+                slug         = EpisodeGeneratorService.Slugify(workingTitle) + "-" + strandId.ToString("N")[..8];
+                Console.WriteLine($"[write-strand] Outline {winnerIdx} selected as winner.");
+            }
+            catch (Exception ex)
+            {
+                Console.Error.WriteLine($"[write-strand] Compete failed: {ex.Message}");
+                return 1;
+            }
         }
-
-        Console.WriteLine($"[write-strand] Strand created: {strandId}");
-
-        // 2. Generate the bible (and planned beats)
-        Console.WriteLine($"[write-strand] Generating strand bible ({targetBeats} beats)…");
-        string bibleText;
-        try
+        else
         {
-            bibleText = await bibleService.GenerateAndSaveAsync(strandId, seed!, workingTitle, targetBeats);
-        }
-        catch (Exception ex)
-        {
-            Console.Error.WriteLine($"[write-strand] Bible generation failed: {ex.Message}");
-            return 1;
+            // ── Standard single-outline path ─────────────────────────────────
+            strandId     = Guid.CreateVersion7();
+            workingTitle = !string.IsNullOrEmpty(title) ? title : DeriveTitle(seed!);
+            slug         = EpisodeGeneratorService.Slugify(workingTitle) + "-" + strandId.ToString("N")[..8];
+
+            Console.WriteLine($"[write-strand] Creating strand: \"{workingTitle}\"");
+
+            await using (var db = await dbFactory.CreateDbContextAsync())
+            {
+                db.Strands.Add(new Strand
+                {
+                    Id        = strandId,
+                    Title     = workingTitle,
+                    Slug      = slug,
+                    Seed      = seed!,
+                    Kind      = kind,
+                    Status    = "draft",
+                    Synopsis  = seed!.Length > 200 ? seed![..200] : seed!,
+                    CreatedAt = DateTime.UtcNow,
+                    UpdatedAt = DateTime.UtcNow,
+                });
+                await db.SaveChangesAsync();
+            }
+
+            Console.WriteLine($"[write-strand] Strand created: {strandId}");
+            Console.WriteLine($"[write-strand] Generating strand bible ({targetBeats} beats)…");
+            try
+            {
+                bibleText = await bibleService.GenerateAndSaveAsync(strandId, seed!, workingTitle, targetBeats);
+            }
+            catch (Exception ex)
+            {
+                Console.Error.WriteLine($"[write-strand] Bible generation failed: {ex.Message}");
+                return 1;
+            }
         }
 
         // 3. Print the bible

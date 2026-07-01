@@ -164,7 +164,7 @@ const CATEGORIES = [
     tag: 'gap_outfit',
     category: 'outfit',
     count: 30,
-    prompt: `Generate {count} COMPLETE OUTFIT SETS that fill specific gaps. Include: military/CorpSec field kits (full loadout descriptions), medical professional outfits (augmentation surgeons, gene clinic staff, street clinic ripperdocs), underworld complete looks (fixers, enforcers, info brokers), synthetic-adapted outfits (for non-human body proportions), and unique character-defining looks (a disgraced Spire judge, a Shelf inventor, a synthetic street artist, a tier-hopping courier, a burned corporate spy). Each outfit should be a complete head-to-toe look. Keep descriptions to 1-2 SHORT paragraphs.`
+    prompt: `Generate {count} COMPLETE OUTFIT SETS that fill specific gaps. Include: military/CorpSec field kits (full loadout descriptions), medical professional outfits (augmentation surgeons, gene clinic staff, street clinic splicers), underworld complete looks (fixers, enforcers, info brokers), synthetic-adapted outfits (for non-human body proportions), and unique character-defining looks (a disgraced Spire judge, a Shelf inventor, a synthetic street artist, a tier-hopping courier, a burned corporate spy). Each outfit should be a complete head-to-toe look. Keep descriptions to 1-2 SHORT paragraphs.`
   },
 ];
 

@@ -1,5 +1,13 @@
 # Vultures at the Door
 
+_In the GLMZ — the megacity that swallowed the Midwest — the body is just another financed asset. Miss a payment on your cloned kidney, your cybernetic legs, the heart a splicer installed on a thirty-month financing plan, and before dawn a Carrion Reclamation Wagon rolls up to collect.
+
+Tomas and Levin are Vultures. They do the route. They don't ask questions.
+
+Then a routine stop puts a bullet in the wrong man — the son of the most powerful crime lord on the south side — and they have one night to fix what they broke. That means sourcing a heart that doesn't exist on any shelf, building a lie no one will question, and staying invisible while the best hunter in the city works backward down the exact same trail.
+
+The problem isn't the clock. The problem is the heart._
+
 ## Chapter 1
 
 [Beat 1]
@@ -44,7 +52,7 @@ Tomas turned back to the windshield. The route ran south and the elevated let th
 Somewhere down in all of it a seventy-three-year-old man was asleep in a bed with a machine beside it, not knowing the day had a number on it and the number was his. The organ in his chest had been put there by a Splicer — someone's neighborhood ripperdoc with a finance arrangement and a storefront license — and now Carrion was coming to collect on the Splicer's paperwork. Tomas set the address. The Wagon took the long curve down toward the south side, and the orange case rocked once in its bracket and went still.
 
 [Beat 2]
-He was already awake when the call came. The machete was on the table — handle forward, cord-wrapped, the same blade a dead man's hands had given him in a field at the end of a war that nobody in the GLMZ had ever heard of. He did not keep it for sentiment. He kept it because it was honest about what it was, and a man should be honest about what he is.
+He was already awake when the call came. The machete was on the table — handle forward, cord-wrapped, the same blade a dead man's hands had given him in a field at the end of a war that nobody in the GLMZ had ever heard of. He didn't keep it for sentiment. He kept it because it was honest about what it was, and a man should be honest about what he is.
 
 The call came in at 3:40, audio only, the way the Lotus woman always called him — never video, because video was a courtesy and a dog did not require courtesy. She called him Casimir. He had corrected her once, early, said the name his mother gave him, and she had looked at him through the channel the way you look at a dog that has tried to explain something, a flicker of waiting for the sound to stop, and he had not corrected her again. The name cost him nothing. The name was a collar, and a man could wear a collar and still be the thing inside it.
 
@@ -54,7 +62,7 @@ The call came in at 3:40, audio only, the way the Lotus woman always called him 
 
 It came through his neuretics before he finished asking, the way it always did, because the one thing the Lotus never withheld from him was information, the same way you do not withhold the scent from the hound. The photograph bloomed behind his eyes: a soft son with a soft face, the face of someone who had never had to read a room before walking into it. Ekow looked at it the way he looked at all of them, not for the man but for the habits the man would have — where a soft thing goes to feel less soft, what it buys, who it trusts.
 
-He was already dressed. He was always already dressed. He had served four borders and two cities for the People's Republic of Ghana, and the army had built a thing into him that did not switch off when the war did; you could not unmake a man who had been made to track, you could only point him or let the skill go bad inside him like meat. So he kept it pointed. Violence was his trade and the GLMZ had buyers, and the work, when it came, was the only thing that kept the blade from rusting in the dark.
+He was already dressed. He was always already dressed. He had served four borders and two cities for the People's Republic of Ghana, and the army had built a thing into him that did not switch off when the war did. You couldn't unmake a man who had been made to track, you could only point him or let the skill go bad inside him like meat. So he kept it pointed. Violence was his trade and the GLMZ had buyers, and the work, when it came, was the only thing that kept the blade from rusting in the dark.
 
 He went out at 3:44, the machete at his hip where it always lived, handle forward. A man born on a Tuesday, to a woman who named him for the ocean, walking now into a city of stone, toward the first of the people who had seen the soft boy last.
 
@@ -98,15 +106,15 @@ Levin was already at the door with the cooler and the orange case. In the elevat
 "Recall," Levin said, and checked the vial in his door pocket with his eyes the way other men check their watch. "Couple of tickets out past the Gray Zone edge. Dealer who quit paying."
 
 [Beat 4]
-﻿The Wagon ran the gradient road from the mid-strata down in third gear, which was the gear you ran when you weren't in a hurry and the load in the back made braking interesting. The kidney from the last stop was logged in the larder ??? tissue-typed, labeled, cold-packed, entry verified ??? and now it was ticking down its viable window in the rack like everything else on the manifest. The job was done. The numbers cleared. The paperwork was in the system.
+The Wagon ran the gradient road from the mid-strata down in third gear, which was the gear you ran when you weren't in a hurry and the load in the back made braking interesting. The kidney from the last stop was logged in the larder — tissue-typed, labeled, cold-packed, entry verified — and now it was ticking down its viable window in the rack like everything else on the manifest. The job was done. The numbers cleared. The paperwork was in the system.
 
 Tomas was in the passenger seat watching the Z corridor descend around them and not thinking about the kidney.
 
-Levin's right eye was running wrong. Tomas could see it in the streetlight catching the glass of it ??? the way it found a thing and let it go a half-second late, the way it didn't quite track with the left when a light changed overhead. One drop too many at the start of shift, or one short; the Tears calibrated themselves to the habit in ways that shifted by the hour and were never quite the same route twice. Tomas noted it and filed it the way he filed everything that wasn't his to fix on shift: not forgetting, not speaking, just adding it to the running account.
+Levin's right eye was running wrong. Tomas could see it in the streetlight catching the glass of it — the way it found a thing and let it go a half-second late, the way it didn't quite track with the left when a light changed overhead. One drop too many at the start of shift, or one short; the Tears calibrated themselves to the habit in ways that shifted by the hour and were never quite the same route twice. Tomas marked it down the way he marked down everything that wasn't his to fix on shift: not forgetting, not speaking, just adding it to the running account.
 
 The Wagon's heater ran on the same electrical loop as the ward's perfuser, which meant it worked well or not at all depending on what the ward was doing. Tonight it worked. Tomas had his coat on anyway, because the heater's relationship with the front compartment was aspirational at best and the gap between the cab and the back was sealed but not perfectly sealed, and the larder ran at two degrees.
 
-The strata gave up pretending somewhere around the Z4 boundary marker. The towers that had been half-respectable went dark in the upper floors first, and then the lower ones lit wrong ??? too bright in some windows and black in others, the gap between what the landlord maintained and what the wiring supported showing itself in the kind of light that came on only when someone had a generator going. The people who lived here had come down through the strata one bad week at a time: a lease lost, a shift missed, a therapy bill that arrived on the wrong month. You could see the fall in the architecture if you knew what to look for. Tomas had been doing this route long enough to know.
+The strata gave up pretending somewhere around the Z4 boundary marker. The towers that had been half-respectable went dark in the upper floors first, and then the lower ones lit wrong — too bright in some windows and black in others, the gap between what the landlord maintained and what the wiring supported showing itself in the kind of light that came on only when someone had a generator going. The people who lived here had come down through the strata one bad week at a time: a lease lost, a shift missed, a therapy bill that arrived on the wrong month. You could see the fall in the architecture if you knew what to look for. Tomas had been doing this route long enough to know.
 
 "I hate recalls," Levin said. It was the first thing he'd said in twenty minutes.
 
@@ -130,9 +138,9 @@ Levin thumbed the pad. "Same account, two units. Pair of legs, financed twenty-e
 
 The leg ticket was the older debt, and you worked the older debt first, because the company logged it that way and the company logged everything.
 
-A courier went by in the opposite lane ??? running messenger gear, legs up, the kind of cadence that meant he was on a night contract and pushing the last miles of it. Tomas watched him in the side mirror until he was gone. Just a man making his numbers. Same as everyone.
+A courier went by in the opposite lane — running messenger gear, legs up, the kind of cadence that meant he was on a night contract and pushing the last miles of it. Tomas watched him in the side mirror until he was gone. Just a man making his numbers. Same as everyone.
 
-He pulled the route details for the address and ran the Scarab prep out of habit ??? not because he'd need Mama for a recall, but because the prep was the one thing on the manifest he could control, and controlling it settled the math in his chest to something workable. The leg recall would take the repo pad and a minute. The arm ticket was a second stop on the same account, same address, same visit ??? that was how the manifest had routed it, which meant someone at dispatch had thought it through or someone hadn't thought at all. Either way, you worked what the manifest gave you.
+He pulled the route details for the address and ran the Scarab prep out of habit — not because he'd need Mama for a recall, but because the prep was the one thing on the manifest he could control, and controlling it settled the math in his chest to something workable. The leg recall would take the repo pad and a minute. The arm ticket was a second stop on the same account, same address, same visit — that was how the manifest had routed it, which meant someone at dispatch had thought it through or someone hadn't thought at all. Either way, you worked what the manifest gave you.
 
 "He lives over what kind of pharmacy, exactly," Tomas said.
 
@@ -142,7 +150,7 @@ The building resolved in the forward lights: a mid-strata commercial block, the 
 
 Tomas checked the cargo rack, checked the manifest entry, tested the case locks on the orange box as a matter of form. Mama in her housing. The Kid in its own case beside her. The repo pad in Levin's vest pocket, where it always was.
 
-The Wagon settled into park. The ward monitor ran its quiet cycle in the back ??? nothing in the berth, nothing needed. Empty until the next stop.
+The Wagon settled into park. The ward monitor ran its quiet cycle in the back — nothing in the berth, nothing needed. Empty until the next stop.
 
 It should have been the easiest stop of the week.
 
@@ -159,7 +167,7 @@ Osei's hands went up before Tomas finished the name, both of them, high and open
 
 "Legs first," Levin said, and came to the counter and set the grey slab flat where Osei could watch him do it. "Older debt." He keyed the lien code, five digits, with exactly as much expression as a man reading a receipt he'd already paid. "Sit down, friend. You don't want to be standing for this part."
 
-Osei did not sit down. They never sat down.
+Osei didn't sit down. They never sat down.
 
 The pad chirped once, like a microwave finishing. Then twenty-eight months of debt called two limbs home — the financed legs running their detach sequence at the socket, hip-mounts releasing in order, and Bram Osei dropped straight down out of his own legs and hit the floor while the legs stayed standing a half-second longer than he did, empty, before they folded at the knee and toppled. Tomas caught the near one out of habit. Osei sat in a spreading nothing of his own, the receiver-ends of his stumps capped and clean where the company's hardware had sealed itself off on the way out, breathing in short careful pulls.
 
@@ -227,11 +235,11 @@ The vial drawer behind the counter was empty — not tipped, not scattered, not 
 
 Blood on the boards, one source, low and pooled — a man sitting, or going down to sit, when the round found him. Soft.
 
-A gun lay by the couch leg, the safety still on. He crouched over it without lifting it. A man who clears a holster and never thumbs the safety is a man who never meant the threat, or could not finish it. Either way: not a hit team. Amateurs with a reason.
+A gun lay by the couch leg, the safety still on. He crouched over it without lifting it. A man who clears a holster and never thumbs the safety is a man who never meant the threat, or couldn't finish it. Either way: not a hit team. Amateurs with a reason.
 
 He fieldstripped the gun, set the parts in a row on the floor, and left them. A whole gun was a thing a frightened tenant might pick up and use badly; parts were just parts.
 
-He stood over the empty drawer a moment and let the old thing move in him — not hunger, he had never named it hunger, just the click of a made thing finding the work it was made for. In Ghana they had spent a great deal of money turning a boy from Sekondi into an instrument that could read a fled man off the dirt he left, and the boy was gone now and only the instrument remained, and the instrument did not care whose son it found or what was done to him after. He had made his peace with that a long way back. The peace was that he chose the work and the work did not choose him; a man who picks up the leash himself each morning is not, he had decided, the same as a man it was tied to. He was not always sure the distinction held. He held it anyway, the way you hold a rail on a stair you cannot see the bottom of.
+He stood over the empty drawer a moment and let the old thing move in him — not hunger, he had never named it hunger, just the click of a made thing finding the work it was made for. In Ghana they had spent a great deal of money turning a boy from Sekondi into an instrument that could read a fled man off the dirt he left, and the boy was gone now and only the instrument remained, and the instrument did not care whose son it found or what was done to him after. He had made his peace with that a long way back. The peace was that he chose the work and the work did not choose him; a man who picks up the leash himself each morning is not, he had decided, the same as a man it was tied to. He wasn't always sure the distinction held. He held it anyway, the way you hold a rail on a stair you can't see the bottom of.
 
 On the door handle, going out, a thread of orange synthetic snagged on the latch screw. Carrion Reclamations coverall fiber. The kind a man wore to carry the legally dead out of buildings exactly like this one, in a truck nobody looked at twice.
 
@@ -244,7 +252,7 @@ Mama came out of the case heavy and segmented, a carapace the size of a turtle's
 
 "Round's through the lower chamber. He's not getting that heart back." Levin read the feed off his own neuretics, flat and fast. "It already wants to take it."
 
-The Scarab did not hesitate the way men did. It opened the chest along the line it had opened a thousand chests, clamped what needed clamping, and lifted Han Do-yun's ruined heart out into the cradle — a torn fist of muscle the round had ended. Then it reached into its own underbelly, into the bay where the loaners rode, and seated the stopgap: a heart that had never been alive and never would be, a perfusion engine the size and weight of the real thing, rated by the company for exactly seventy-two hours of borrowed time. It hooked the loaner to the great vessels, primed it, started it, and the kid's pulse came back up under the carapace, steady now, mechanical now.
+The Scarab didn't hesitate the way men did. It opened the chest along the line it had opened a thousand chests, clamped what needed clamping, and lifted Han Do-yun's ruined heart out into the cradle — a torn fist of muscle the round had ended. Then it reached into its own underbelly, into the bay where the loaners rode, and seated the stopgap: a heart that had never been alive and never would be, a perfusion engine the size and weight of the real thing, rated by the company for exactly seventy-two hours of borrowed time. It hooked the loaner to the great vessels, primed it, started it, and the kid's pulse came back up under the carapace, steady now, mechanical now.
 
 A line stood up in the feed, calm and grey.
 
@@ -362,27 +370,27 @@ Levin read it at the same moment. His hands went flat on his thighs again — th
 Tomas drove. The Wagon moved south, and neither of them spoke, and the ward behind the partition breathed, and that was what the inside of a cab sounded like when two men were in it and one of them owed the other something neither of them could name yet.
 
 [Beat 10]
-﻿The call to Yuen had cost them forty minutes and a favor that didn't have a price in the manifest system.
+The call to Yuen had cost them forty minutes and a favor that didn't have a price in the manifest system.
 
-Forty minutes sitting in the Wagon's ward compartment with a Lotus heir on the berth, listening to Do-yun breathe his borrowed time in and out while Yuen went quiet on the other end of the channel ??? the silence of someone who was not looking for a polite way to decline, because there was no polite version; she was looking for any version ??? and then came back with the words that said what every channel had been saying all night: not for a rare type. Not without a week. Not without a name on a ledger.
+Forty minutes sitting in the Wagon's ward compartment with a Lotus heir on the berth, listening to Do-yun breathe his borrowed time in and out while Yuen went quiet on the other end of the channel — the silence of someone who was not looking for a polite way to decline, because there was no polite version; she was looking for any version — and then came back with the words that said what every channel had been saying all night: not for a rare type. Not without a week. Not without a name on a ledger.
 
-Tomas already knew this. He had known it from the moment the Scarab ran the blood-type flag in the same line as LOTUS BLOODLINE ??? the rare phenotype and the most dangerous bloodline in the lower Ward, combined in one person on their ward berth, with a loaner doing its patient counting in his chest. The universe's idea of efficient.
+Tomas already knew this. He had known it from the moment the Scarab ran the blood-type flag in the same line as LOTUS BLOODLINE — the rare phenotype and the most dangerous bloodline in the lower Ward, combined in one person on their ward berth, with a loaner doing its patient counting in his chest. The universe's idea of efficient.
 
-He was in the passenger seat now, watching Z3 go by through the rain-spotted glass while Levin drove. The route ran north along the Pilsen-Ward corridor ??? the arterial that connected the lower Ward to the outer Z3 edge, wide enough for the Wagon's clearances, the loading bays on either side sealed for the night. The Pulse maintenance caps ran their regular interval down the center of the pavement, one every hundred-and-ten meters, dark circles in the wet ferrocement. Six meters below each one, the freight tube. At this hour the tube ran light cargo, consumables and sealed packages on the overnight manifests, and you could feel it through the Wagon's chassis if you had reason to know what you were feeling for. Tomas had always known. He'd driven this route enough times to map the tube by vibration alone.
+He was in the passenger seat now, watching Z3 go by through the rain-spotted glass while Levin drove. The route ran north along the Pilsen-Ward corridor — the arterial that connected the lower Ward to the outer Z3 edge, wide enough for the Wagon's clearances, the loading bays on either side sealed for the night. The Pulse maintenance caps ran their regular interval down the center of the pavement, one every hundred-and-ten meters, dark circles in the wet ferrocement. Six meters below each one, the freight tube. At this hour the tube ran light cargo, consumables and sealed packages on the overnight manifests, and you could feel it through the Wagon's chassis if you had reason to know what you were feeling for. Tomas had always known. He'd driven this route enough times to map the tube by vibration alone.
 
 Levin had gone through two drops since the Yuen call. Tomas had not watched him do it.
 
 "How many rare-type listings are in the regional exchange," Tomas said.
 
-Levin checked his neuretics without moving his head. "Seven. None typed past the fourth marker. There's a cadaveric listing in the North Pilsen network, typed to the third ??? close, but not close enough."
+Levin checked his neuretics without moving his head. "Seven. None typed past the fourth marker. There's a cadaveric listing in the North Pilsen network, typed to the third — close, but not close enough."
 
 "How close is close."
 
 "Close enough that if you matched it wrong, you'd know in about four hours and the kid would be back to needing a loaner." Levin kept his eyes forward. "And we'd have used up a favor explaining why we ran a private cardiac match off-books."
 
-Tomas filed this in the account column, not the options column. The account column had been growing all night. "Walk me through the private clinics ??? not exchange, not licensed. The kind that don't flag a tissue match to anyone."
+Tomas added this to the account column, not the options column. The account column had been growing all night. "Walk me through the private clinics — not exchange, not licensed. The kind that don't flag a tissue match to anyone."
 
-"Three in the district. Yuen is one of them. The other two don't have the equipment for a cardiac, and they wouldn't want the manifest entry even if they did." Levin paused. "There's a mobile rig that runs gray-zone screening the first and third Tuesday. Rare-type screening, tissue typing, the whole panel. They charge ?? 40 and they keep no records."
+"Three in the district. Yuen is one of them. The other two don't have the equipment for a cardiac, and they wouldn't want the manifest entry even if they did." Levin paused. "There's a mobile rig that runs gray-zone screening the first and third Tuesday. Rare-type screening, tissue typing, the whole panel. They charge Φ40 and they keep no records."
 
 "When's the next run."
 
@@ -392,15 +400,15 @@ Tomas looked at the ward monitor readout through the partition window. Sixty-six
 
 The route in front of them was the only option. That was the whole of it: move, stay visible to the manifest, stay invisible to everything else, and let the route bring them to the thing they couldn't find from a desk. It had brought them the kidney for the old man's daughter. It had brought them the Lotus heir by accident. It would bring them something else if they stayed on it, because the route was the city and the city was where everything was, and everything spent time above ground eventually.
 
-"Run the corneal-mod lienholders," Tomas said. "Any rare cardiac screening on file ??? it wouldn't be flagged as cardiac, it would be listed under the mod's baseline physical."
+"Run the corneal-mod lienholders," Tomas said. "Any rare cardiac screening on file — it wouldn't be flagged as cardiac, it would be listed under the mod's baseline physical."
 
 Levin ran the query. The manifest pad cycled its search animation for eleven seconds. Then: "Nothing. Forty-three lienholders in range. None with a cardiac screen on record."
 
 "All right."
 
-He pulled up the overnight pending queue on his neuretics. Four calls in the grid. He sent two down the queue ??? jobs another crew could handle without his manifest numbers suffering for it. The third he couldn't skip on principle. The fourth was a standard recovery, anonymous caller, the code that went on a call where whoever found the body had decided their own business was more important than waiting around to be asked questions about it.
+He pulled up the overnight pending queue on his neuretics. Four calls in the grid. He sent two down the queue — jobs another crew could handle without his manifest numbers suffering for it. The third he couldn't skip on principle. The fourth was a standard recovery, anonymous caller, the code that went on a call where whoever found the body had decided their own business was more important than waiting around to be asked questions about it.
 
-He stared at the fourth for a moment. His reflex was to pass it ??? they had a ward patient and a sixty-six-hour clock and a heart problem that made the anonymous OD call feel like noise.
+He stared at the fourth for a moment. His reflex was to pass it — they had a ward patient and a sixty-six-hour clock and a heart problem that made the anonymous OD call feel like noise.
 
 "We pick up the anonymous recovery," he said.
 
@@ -414,7 +422,7 @@ Levin exhaled. "You know this is how you end up working sixty-hour shifts in a W
 
 "I know," Tomas said. "Read me the anonymous call."
 
-Levin pulled it up and was opening his mouth when the manifest chimed a second time ??? a different ping, RECLAMATION flag on the header, the one that meant the account holder was no longer in a position to settle.
+Levin pulled it up and was opening his mouth when the manifest chimed a second time — a different ping, RECLAMATION flag on the header, the one that meant the account holder was no longer in a position to settle.
 
 Reuben Sclose. Financed corneal enhancements and a spinal shunt, both deep in arrears. Ceased respiration this hour, building management notification, the address a room above a laundromat in Z3.
 
@@ -424,14 +432,14 @@ Reuben Sclose. Financed corneal enhancements and a spinal shunt, both deep in ar
 
 He pulled the route details and ran the Scarab prep and did not say what he was thinking, which was that a building in Z3 above a laundromat was exactly the kind of address a Lotus hunter would have been looking at for the last two hours, working the chain from the drug house backward through whoever else had seen the heir that night. He didn't say it because saying it would not change what they were going to find at the address, and what they found when they got there would tell him more than any speculation in the Wagon's cab.
 
-He checked the Scarab case. He checked the manifest entry. He checked the larder and the ward ??? the berth still running its quiet work, the clock still counting in the back.
+He checked the Scarab case. He checked the manifest entry. He checked the larder and the ward — the berth still running its quiet work, the clock still counting in the back.
 
 The Wagon moved north.
 
 [Beat 11]
 The pickup was a man named Reuben Sclose, and Carrion wanted him because he had financed cyberware in both eyes and a financed spinal shunt, and he had stopped having a pulse sometime in the last hour, which moved his account from COLLECTIONS to RECLAMATION the way death moved every account that still owed.
 
-He was in a single room over a laundromat, in a chair, and he had not died easy.
+He was in a single room over a laundromat, in a chair, and he hadn't died easy.
 
 Tomas had seen a great deal of the human body from the inside and very little of it surprised him anymore, but what had been done to Reuben Sclose was not the trade's work. The trade was fast and bored. This was slow and patient. Whoever had done it had taken the financed eyes first, carefully — not the fast pull of a Splicer doing a repo, but the long, interrogative kind, the kind that costs nothing because time is not the constraint. A man tells you more while he can still watch you decide what to take next. The cuts were exact. The tourniquets were medical. The floor was clean except where it was deliberately not. Somebody had asked Reuben Sclose questions for a long time, had been very good at it, had cleaned up after himself out of professional habit, and had left exactly when he was done and not a moment sooner.
 
@@ -465,9 +473,9 @@ He stopped it there, mid-reach, hung in the air for the length of a breath. Beca
 
 He kept loading the body, slow and bored, because bored was the only disguise that worked on a creature like this, and the boredom cost him everything he had.
 
-The man's gaze moved off Tomas and went down the truck — the orange-and-black, the BIOHAZARD, the sealed compartments — slow, the way he did everything, and Tomas watched him file it. Not dismiss it. File it. A Carrion crew on a Sclose pickup four blocks from where the trail had last gone warm, here, now, the two of them; the man's eyes went to the livery and then back to Tomas's face and held there a beat too long, the way you hold a page you mean to come back to. Then he gave them the small nod one tradesman gives another over a body, and went on up to the laundromat door to ring a bell for a tenant who would never answer it.
+The man's gaze moved off Tomas and went down the truck — the orange-and-black, the BIOHAZARD, the sealed compartments — slow, the way he did everything, and Tomas watched him mark it. Not dismiss it. Mark it. A Carrion crew on a Sclose pickup four blocks from where the trail had last gone warm, here, now, the two of them; the man's eyes went to the livery and then back to Tomas's face and held there a beat too long, the way you hold a page you mean to come back to. Then he gave them the small nod one tradesman gives another over a body, and went on up to the laundromat door to ring a bell for a tenant who would never answer it.
 
-They got in. Tomas did not peel out. He pulled away at the speed of a crew with a full cooler and nowhere it needed to be, and watched in the mirror until the man was a shape on a step, and only then let his breath go.
+They got in. Tomas didn't peel out. He pulled away at the speed of a crew with a full cooler and nowhere it needed to be, and watched in the mirror until the man was a shape on a step, and only then let his breath go.
 
 "That was him," Levin said. He hadn't been sick a second time. It was close.
 
@@ -478,7 +486,7 @@ They got in. Tomas did not peel out. He pulled away at the speed of a crew with 
 "No. He's not ready. He likes to be sure before he opens somebody up." Tomas pulled them off the block. "Which means we've got until he's sure. Come on — I want trails between us and that man, and I want them now."
 
 [Beat 12]
-There was no shelf with the heart on it. Tomas worked the channels he had — the gray-zone brokers, the screening-clinic catalogs that typed half the lower Ward without anyone signing a thing, the off-book exchange that could source a common organ out of a drawer in an hour. Every one of them came back the same. A rare phenotype wasn't a sale; it was a commission, and a commission meant they harvested one to order, which meant a week, which they did not have, and a name on a ledger that outlived the people who signed it, which they could not afford. Three brokers, an hour, nothing. The match the kid needed wasn't a thing you bought. It was a thing that was inside one specific stranger, somewhere, and there was no finding that stranger before the loaner quit.
+There was no shelf with the heart on it. Tomas worked the channels he had — the gray-zone brokers, the screening-clinic catalogs that typed half the lower Ward without anyone signing a thing, the off-book exchange that could source a common organ out of a drawer in an hour. Every one of them came back the same. A rare phenotype wasn't a sale; it was a commission, and a commission meant they harvested one to order, which meant a week, which they didn't have, and a name on a ledger that outlived the people who signed it, which they couldn't afford. Three brokers, an hour, nothing. The match the kid needed wasn't a thing you bought. It was a thing that was inside one specific stranger, somewhere, and there was no finding that stranger before the loaner quit.
 
 "Dead end," Tomas said. "Every shelf in the region. There's no heart for him."
 
@@ -577,7 +585,7 @@ Levin took it. He didn't reach for the door pocket, didn't go far away behind th
 
 That landed harder than an argument would have. Tomas had been braced for Levin to make it smaller, and Levin hadn't, and there was nowhere for the anger to go now except down into the same crowded place as everything else. He let it go down.
 
-"Good," he said, quieter. The change in the cab was small and real: the thing between them had been named, and naming it had not broken anything, which meant it could be worked beside. "Now tell me how we do the second part. The part that keeps us alive."
+"Good," he said, quieter. The change in the cab was small and real: the thing between them had been named, and naming it hadn't broken anything, which meant it could be worked beside. "Now tell me how we do the second part. The part that keeps us alive."
 
 Levin shifted. He pulled up a feed on his neuretics — something political, to judge from the way his eyes tracked across it. "The bride's family. The rival Lotus line." He read for a moment. "They've got their own people in the south-side structure. Positions the merger would hand to Do-yun's family. If the wedding falls apart — not because he's dead, but because he's waking up in his own bed with a dead girl and the worst night of his life written all over the room — the bride's family pulls out. Both sides lose the unification. The war that was going to stop starts anyway, and nobody's looking at us because the Lotus are looking at each other."
 
@@ -618,44 +626,9 @@ It was a Full Repossession. Strip the whole body, every organ, every limb, the m
 The address was Bram Osei's.
 
 [Beat 14]
-Levin pulled up the manifest entry while Tomas turned the Wagon south.
-
-Full Repossession: the notation in the header that meant nothing was being left behind. Every organ on the company's lien schedule. Every limb on file. The Scarab would work through the night on a job like this — a serious piece of business, the kind that usually came after a court settlement or a long arrears and no appeal left. Tomas had run maybe four in his career. Levin had run six, or claimed he had, though the number had shifted over the years in ways that suggested a man uncertain which jobs he had actually been present for.
-
-Tomas drove. The elevated was behind them now; he brought the Wagon down through the gradient roads toward the lower Ward, the familiar corridor narrowing to the one-lane section where the loading bays sat sealed for the night. Rain had come and gone while they were in the flop room with Maisy, and the ferrocement was that specific shade of wet that meant it had already been dark for a while. The Pulse maintenance caps caught the Wagon's forward lights every hundred-and-ten meters — one, pause, one, pause, the intervals he knew by chassis feel.
-
-Beside him, Levin ran the Scarab's preflight in his neuretics without being asked. The sequence was the same regardless of the job. Volume and complexity changed; procedure did not. Tomas could hear him moving through it by the way his eyes tracked — the subtle saccadic drift that meant a man reading something private behind his own face.
-
-"Sequence on Mama," Levin said. Not a question. Confirming.
-
-"Sequence on Mama," Tomas said.
-
-The lien attached to Bram Osei's apartment listed the corneal enhancements, the spinal shunt, and the prosthetic forearm — the forearm whose ticket they had voided four hours ago, because the man had no legs to walk out on and a useful piece of information about a Tears source and it had seemed like the reasonable thing to do at the time.
-
-Tomas noted this and drove.
-
-The Scarab did not have opinions about ticket history. The manifest had a line item and the company had a lien and the Scarab closed the account. That was what the Scarab was for. That was the whole of what the Scarab was for.
-
-Levin reached down and left the drawer of Tears on the floor between his feet.
-
-The rain started again, thin and deliberate, the kind that didn't change the visibility so much as add a layer of suggestion to everything beyond the wipers' reach. The towers along the corridor ran their signage in loops — a pharmaceutical company's rotating red, a Pulse freight service's amber interval markers, a fitness clinic's pale blue that Tomas had never once seen occupied. He knew this stretch well enough that the signs were noise and the gap between them was what he read. He was reading the gap between the gym and the Pulse marker when the number finished itself in the back of his head: Φ4,280. The quarterly installment, Paz's gene therapy, second of four. Due the week after next.
-
-His face did not change. He drove.
-
-They pulled up behind the building in the service lane, the same approach they had used for the initial job, which the manifest now listed in a separate entry as VOIDED — a small clerical note, a bookkeeping correction, a zero where a number had been. The service lane was empty. Building management had already called in the body; their only obligation now was not to be present when it was collected, which building management in Z3 understood intuitively and fulfilled without instruction.
-
-Levin climbed out and got the Scarab case from the rear without being told. He set it on the ground and opened the latches and did not look at the address on the service entrance, which was the same address they had left four hours ago. Mama folded herself out in segments, thoracic module first, and her work lights came on in the color that meant she was running her own preflight. The light hit the wet ferrocement and scattered.
-
-"Corneal, spinal, forearm," Tomas said, reading the lien line items.
-
-Levin said: "Corneal, spinal, forearm."
-
-He picked up the Scarab case and walked to the service entrance and pressed the latch. Tomas followed him in.
-
-[Beat 15]
 He knocked, and waited.
 
-The dealer opened on the third knock, because by the third knock a man has decided the knocking will not stop.
+The dealer opened on the third knock, because by the third knock a man has decided the knocking won't stop.
 
 Inside: one room, the smell of old fear, a man who had been trying very hard to be somewhere else in his own apartment. Ekow stepped in and without preamble set the machete on the counter between them — handle toward himself, not a threat, or not only a threat. An introduction. This is what I carry. This is what I am. You now have all the information you need to decide how the next few minutes go.
 
@@ -663,11 +636,11 @@ The dealer looked at it for a moment. Then he talked.
 
 He came out with what the room had owed him. Two men, Carrion coveralls — one tall and still, the kind of still that does the thinking; one shorter, unwell, the hands of him not right. A refrigerated Wagon. South down the Pilsen-Ward corridor, the boy carried like freight, which on this trail meant the boy was hurt and the boy was wanted alive, because you do not run cold storage for cargo you mean to leave. South toward clinics. There were a dozen in that corridor that would take a no-questions body. There were three that could keep a complicated one breathing, and of the three, one was scrubbed clean enough that clean itself was the tell — a converted bay in the lower Ward run by a woman who used to cut for people like the Lotus and had stopped.
 
-On the top step, going down, he took the handkerchief from his pocket and folded it into quarters and set it on the stair. He always did it when a search closed and his hands wanted something orderly to finish on, the way another man squares a stack of paper before he leaves a desk. It was not a signature. It was just his hands, needing the day to have an edge.
+On the top step, going down, he took the handkerchief from his pocket and folded it into quarters and set it on the stair. He always did it when a search closed and his hands wanted something orderly to finish on, the way another man squares a stack of paper before he leaves a desk. It wasn't a signature. It was just his hands, needing the day to have an edge.
 
 He was already running the woman's name through the network before his shoe touched the street. Yuen.
 
-[Beat 16]
+[Beat 15]
 By the second pickup of the night — a clean one, an old woman dead in her sleep with a financed pacemaker, the kindest stop on any manifest — Levin had stopped being a half-second behind the room and started being somewhere else entirely. Tomas knew the signs the way a man knows weather. The over-wet eyes that didn't track. The pauses that came back from too far. The way Levin kept glancing at the corners of the old woman's bedroom, at the doorway, at the place behind Tomas's shoulder where there was nothing, and then making himself look back.
 
 "What are you seeing," Tomas said, not looking up from the Kid as it worked the pacemaker free.
@@ -680,13 +653,13 @@ By the second pickup of the night — a clean one, an old woman dead in her slee
 
 The dead the day had made came back at night and stood in the doorways, in the lattices the drug laid over everything when it started to wear thin. The man with no eyes, watching anyway. The kid on the couch, sitting back down gently, over and over, getting less surprised. They didn't say anything. They came to the edges and waited.
 
-He dosed in the stairwell, and Tomas watched him tip his head back for the drop and then watched him not get what he tipped his head back for. The drop went in. Levin blinked, and waited, and the hall did not empty. His face changed by a small degree that only a man who'd watched it all day would have caught — a flinch of something close to fear, the first Tomas had seen on him since the den. He'd crossed some line tonight where the answer had stopped being the answer. He capped the vial and put it away without saying so, and Tomas didn't make him say so, because there was nothing in saying it that would help either of them carry the case, and they had a long night.
+He dosed in the stairwell, and Tomas watched him tip his head back for the drop and then watched him not get what he tipped his head back for. The drop went in. Levin blinked, and waited, and the hall didn't empty. His face changed by a small degree that only a man who'd watched it all day would have caught — a flinch of something close to fear, the first Tomas had seen on him since the den. He'd crossed some line tonight where the answer had stopped being the answer. He capped the vial and put it away without saying so, and Tomas didn't make him say so, because there was nothing in saying it that would help either of them carry the case, and they had a long night.
 
 Coming down with the old woman's pacemaker iced and the cooler between them, they hit the lobby and Tomas put a hand flat on Levin's chest and stopped him without a word.
 
 Through the street door, under the one working light, the man was standing at the corner.
 
-He had a tenant's name in his mouth — Tomas could see him asking it of a kid on a bike who'd stopped because you stopped when a man like that lifted a hand. Working the block. The same patient circle, except it wasn't a circle anymore; it was a spiral, tightened two rings since the laundromat, because the trail had bent toward this strata and he was walking it down door by door the way he walked everything down. He'd written them down four hours ago over a body, and now he was here, on the next strata up the trail, and that was not coincidence; that was a man following his own cold reckoning to the same addresses Carrion's manifest was sending the only crew he half-suspected. He hadn't seen the Wagon yet. It sat at the curb forty feet off, dark and ordinary, but forty feet was nothing to a man who read sins off coats, and the lobby light was about to put two Carrion coveralls into the doorway of a building on his list.
+He had a tenant's name in his mouth — Tomas could see him asking it of a kid on a bike who'd stopped because you stopped when a man like that lifted a hand. Working the block. The same patient circle, except it wasn't a circle anymore; it was a spiral, tightened two rings since the laundromat, because the trail had bent toward this strata and he was walking it down door by door the way he walked everything down. He'd written them down four hours ago over a body, and now he was here, on the next strata up the trail, and that wasn't coincidence; that was a man following his own cold reckoning to the same addresses Carrion's manifest was sending the only crew he half-suspected. He hadn't seen the Wagon yet. It sat at the curb forty feet off, dark and ordinary, but forty feet was nothing to a man who read sins off coats, and the lobby light was about to put two Carrion coveralls into the doorway of a building on his list.
 
 "Back stair," Tomas said, low.
 
@@ -708,7 +681,7 @@ Levin's hand opened. He let it go.
 
 "You're scaring the civilians. And he's a strata behind us and climbing. We can't be the crew anybody remembers tonight."
 
-"They're not all civilians," Levin said, looking out at an empty street that, to him, was not empty.
+"They're not all civilians," Levin said, looking out at an empty street that, to him, wasn't empty.
 
 "Levin. How much have you had since this morning?"
 
@@ -724,14 +697,14 @@ Tomas looked at him a moment — this man who'd started everything and was also 
 
 "Deal," Tomas said.
 
-[Beat 17]
-﻿The old woman's name was on the manifest ??? Adaya Bernstein, eighty-three, the pacemaker financed eleven years back, one missed payment in the third year and then eight years of automatic deductions from a pension account that cleared by twelve ?? every cycle, so the lien had never quite reached the default threshold and the pacemaker had been theirs-but-not-quite-theirs for a decade. That was the kind of ledger entry nobody looked at twice, because the money came in on time and the account holder was presumably still using the unit. The account holder was not still using the unit.
+[Beat 16]
+The old woman's name was on the manifest — Adaya Bernstein, eighty-three, the pacemaker financed eleven years back, one missed payment in the third year and then eight years of automatic deductions from a pension account that cleared by twelve Φ every cycle, so the lien had never quite reached the default threshold and the pacemaker had been theirs-but-not-quite-theirs for a decade. That was the kind of ledger entry nobody looked at twice, because the money came in on time and the account holder was presumably still using the unit. The account holder was not still using the unit.
 
 She had died in her sleep, which was the cleanest way the route offered. The neighbor had found her when she didn't answer the door for the morning check, and the building's emergency service had contacted Carrion, and Carrion had put it in the overnight queue because the pacemaker lien flagged it for collection and the rest of her was a flat-rate haul to the processing facility. Routine dispatch. The note on the entry said: account holder deceased, no next of kin on file, assist building management with transition.
 
 Transition meant moving the body. Tomas had moved more bodies than he could account for, which was the point of not accounting for them.
 
-The Kid had done the pacemaker retrieval in four minutes, fifteen seconds, which was just over the unit's nominal time because the model was eleven years old and the tissue integration was thorough. Tomas had run the removal clean ??? extraction, perfusion, cold-pack, cassette seal, wound closure ??? and the wound closed so neatly that even his own hands couldn't improve on it. Eleven years of the machine sitting in that chest had given it the patience of a thing that had made itself at home. He respected it, the way he respected anything that had done a job well for a long time.
+The Kid had done the pacemaker retrieval in four minutes, fifteen seconds, which was just over the unit's nominal time because the model was eleven years old and the tissue integration was thorough. Tomas had run the removal clean — extraction, perfusion, cold-pack, cassette seal, wound closure — and the wound closed so neatly that even his own hands couldn't improve on it. Eleven years of the machine sitting in that chest had given it the patience of a thing that had made itself at home. He respected it, the way he respected anything that had done a job well for a long time.
 
 He left the rest of her the way you left anyone who'd earned a quiet end.
 
@@ -739,13 +712,13 @@ They were back in the Wagon now, the pacemaker cassette logged in the larder, Le
 
 "What were you seeing," Tomas said, because he hadn't gotten an answer before.
 
-Levin kept his eye on the road for a while before he answered. "Lattice," he said, finally. "In the corners. The way it moves ??? like it's breathing."
+Levin kept his eye on the road for a while before he answered. "Lattice," he said, finally. "In the corners. The way it moves — like it's breathing."
 
 "The Resonance Zone geometry."
 
 Levin made no reply to this. He said nothing else, which was more than he'd said on the subject in two years and less than Tomas would have needed to feel better about it, so they were even.
 
-The Wagon moved east. The city in the early hours of the morning ran on generators and the particular ambiance of people who had nowhere else to be: a few ground-floor storefronts still lit behind their security films, the overhead transit rail locked for the gap between the late run and the early one, the pavement wet from a drizzle that had come and gone and left its signature in the way the headlights caught the ferrocement. Tomas watched the Pulse caps go by ??? dark circles in the road, each one sealing the tube below, six meters down, moving the city's cargo at a hum that registered in the body before it registered in the ear.
+The Wagon moved east. The city in the early hours of the morning ran on generators and the particular ambiance of people who had nowhere else to be: a few ground-floor storefronts still lit behind their security films, the overhead transit rail locked for the gap between the late run and the early one, the pavement wet from a drizzle that had come and gone and left its signature in the way the headlights caught the ferrocement. Tomas watched the Pulse caps go by — dark circles in the road, each one sealing the tube below, six meters down, moving the city's cargo at a hum that registered in the body before it registered in the ear.
 
 "How long since your last dose," Tomas said.
 
@@ -753,19 +726,19 @@ Levin didn't answer right away. "A while."
 
 "That's not a time."
 
-"Three hours." He shifted his grip on the wheel. "Maybe three and a half. The episode isn't the dose wearing off. It's the dose coming on ??? the transition window." He said this with the flat factual calm of a man explaining a plumbing issue. "It smooths out in another twenty minutes."
+"Three hours." He shifted his grip on the wheel. "Maybe three and a half. The episode isn't the dose wearing off. It's the dose coming on — the transition window." He said this with the flat factual calm of a man explaining a plumbing issue. "It smooths out in another twenty minutes."
 
 "And if you don't dose again."
 
 "Then in a few hours the lattice comes back heavier." He looked at the road. "That's how the loop works."
 
-Tomas filed this in the running account. Not the first time Levin had explained the loop; he always explained it the same way, with the same flat precision, and it never changed what either of them did about it on shift. It was information without options attached, which was Levin's preferred form of disclosure.
+Tomas added this to the running account. Not the first time Levin had explained the loop; he always explained it the same way, with the same flat precision, and it never changed what either of them did about it on shift. It was information without options attached, which was Levin's preferred form of disclosure.
 
-He pulled up the pending manifest on his neuretics. The anonymous recovery from earlier was still in the queue ??? anonymous caller, female, possible overdose, retrieval for financed corneal mods, account dead eighteen months. He had flagged it to take, because doing the route was the only cover they had, and a crew that ducked its numbers got looked at. He'd left it in the queue to take on the way back.
+He pulled up the pending manifest on his neuretics. The anonymous recovery from earlier was still in the queue — anonymous caller, female, possible overdose, retrieval for financed corneal mods, account dead eighteen months. He had flagged it to take, because doing the route was the only cover they had, and a crew that ducked its numbers got looked at. He'd left it in the queue to take on the way back.
 
 The clock behind the partition: fifty-eight hours.
 
-He had thought about the math in the old woman's bedroom while the Kid ran its sequence ??? not the math of the job, but the other math, the one that lived in his chest and never cleared. Paz's therapy window was four months out. The money was there, the way the money was always there when he looked at it directly, held away from everything else that cost. The money was there and it would not still be there in four months if the night continued to go sideways at its current rate. This was arithmetic, and arithmetic was not useful at fifty-eight hours into a problem that arithmetic couldn't solve, but the arithmetic was in him whether he used it or not, the way the larder was two degrees whether he looked at it or not.
+He had thought about the numbers in the old woman's bedroom while the Kid ran its sequence — not the math of the job, but the other math, the one that lived in his chest and never cleared. Paz's therapy window was four months out. The money was there, the way the money was always there when he looked at it directly, held away from everything else that cost. The money was there and it wouldn't still be there in four months if the night continued to go sideways at its current rate. This was the math, and the math wasn't useful at fifty-eight hours into a problem it couldn't solve, but the math was in him whether he used it or not, the way the larder was two degrees whether he looked at it or not.
 
 He turned it off the way he turned it off on shift: by going back to the manifest.
 
@@ -773,7 +746,7 @@ He turned it off the way he turned it off on shift: by going back to the manifes
 
 Levin considered this without surprise. "The hunter."
 
-"I want to see what shape the building's in." If the hunter had been there and found nothing, the building looked like itself. If the hunter had been there and found something, the building looked the way Reuben Sclose's building had looked ??? the neighbor afraid on the landing, the floor cleaned but not right, the specific texture of a space that had recently had violence in it and was trying to forget.
+"I want to see what shape the building's in." If the hunter had been there and found nothing, the building looked like itself. If the hunter had been there and found something, the building looked the way Reuben Sclose's building had looked — the neighbor afraid on the landing, the floor cleaned but not right, the specific texture of a space that had recently had violence in it and was trying to forget.
 
 "We can route through that way," Levin said.
 
@@ -789,7 +762,7 @@ The manifest chimed with the anonymous-call pickup coordinates, and Tomas pulled
 
 He watched the Pulse caps go by in the headlights, each one marking the tube below, and he let the night run its own logic and did not try to run it faster.
 
-[Beat 18]
+[Beat 17]
 They had been gone from Osei's apartment for eighteen hours — 4:12 in the morning to ten past ten at night, day shift and night shift and the dead hours between, the city having turned over entirely in the interval. It looked like it had been a year.
 
 The hunter had been here. Tomas knew it before the door, smelled the long patient fear of it on the landing the way he'd smelled it over the laundromat, and there on the top stair was the handkerchief, folded in quarters, squared away. Casimir — Tomas didn't have a name yet, only the shape of him, the courtesy and the patience and the speed — had worked his way down Do-yun's last day, and Do-yun's last day had a dealer in it, and the dealer had known exactly which two men carried a sick kid down four flights, because the dealer had been on the floor saying I'm not here, I'm not here while it happened.
@@ -800,7 +773,7 @@ He'd held out a while — you could read how long a man held out in this trade, 
 
 And now the company wanted him stripped. Financed parts — the arm, at least, the arm Levin had told him he could keep — and a dead man with financed parts and no next of kin was a Full Repossession, and a Full Repossession went to the nearest crew, and the nearest crew, on this block, on this night, was the two men who had stood in this room eighteen hours ago and let him live.
 
-"I told him he could keep the arm," Levin said. He was in the doorway. He had not come in. "I looked at him and I said clerical error and I told him he could keep the arm."
+"I told him he could keep the arm," Levin said. He was in the doorway. He hadn't come in. "I looked at him and I said clerical error and I told him he could keep the arm."
 
 "I know."
 
@@ -812,7 +785,7 @@ Tomas didn't argue it. There was nothing to argue.
 
 "No." Levin came in. He set the orange case down and cracked it and lifted Mama out, and his glassy eyes were dry and far away and steady. "I do have to. I'm the reason there's an order at all. You want to talk about who does what tonight, I'll be the one who takes the arm I gave him."
 
-So they worked the worst job of the week on a man who'd made a deal with them and kept it. Tomas ran the recall pad on the financed arm first, the same pad, the same five-digit handshake, and the arm Levin had let him keep let go at the socket with the same soft clunk it would have made eighteen hours ago — except eighteen hours ago Osei had been alive to feel his account go to zero, and now he wasn't, and that was the whole difference between mercy and this: eighteen hours and a folded handkerchief. Then Mama came down on what was left and took the rest, methodical, total, the carapace working the chest cavity open and the undercarriage going in wet and exact, lifting out a liver, a pair of kidneys, the long red lengths of bowel, packing each into its cassette and snapping it cold while Osei's emptied face watched the ceiling. Levin called the steps and did not look away once.
+So they worked the worst job of the week on a man who'd made a deal with them and kept it. Tomas ran the recall pad on the financed arm first, the same pad, the same five-digit handshake, and the arm Levin had let him keep let go at the socket with the same soft clunk it would have made eighteen hours ago — except eighteen hours ago Osei had been alive to feel his account go to zero, and now he wasn't, and that was the whole difference between mercy and this: eighteen hours and a folded handkerchief. Then Mama came down on what was left and took the rest, methodical, total, the carapace working the chest cavity open and the undercarriage going in wet and exact, lifting out a liver, a pair of kidneys, the long red lengths of bowel, packing each into its cassette and snapping it cold while Osei's emptied face watched the ceiling. Levin called the steps and didn't look away once.
 
 When it was done, the drawer they'd bought from him that morning was still in the Wagon, between Levin's feet. The Tears that had been the price of a silence that killed him.
 
@@ -826,7 +799,7 @@ He got back in. His hands were already starting to shake.
 
 ## Chapter 3
 
-[Beat 19]
+[Beat 18]
 Yuen's clinic was a converted loading bay in the lower Ward, the roll-up door painted over, the inside scrubbed to a hard white that smelled of the good antiseptic, the expensive kind, the only expensive thing she kept.
 
 They came in the back, the freight side that didn't face the street, because the front of the clinic was a thing Tomas no longer trusted. Osei had given the dealer's whole room up before he died — he'd had to — and a clinic this clean was exactly the kind of thing a man who read sins off coats would notice, the one scrubbed door on a strip of dirty ones. If the hunter was running the same trail backward, and he was, he'd arrive here. The only question was whether he'd arrive before they left.
@@ -899,8 +872,8 @@ Outside, the sky over the lower Ward had gone the color it went before dawn, not
 
 Levin went.
 
-[Beat 20]
-Han Do-yun lived in a tower on the good side of the Ward line, the kind of building with a real lobby and a real doorman and, this morning, three Lotus men in a parked car across the street who were not pretending to be anything other than what they were. The hunt had circled all the way back to the place it started. They were watching the heir's own door for the heir to come home, or for the people who'd taken him to be stupid enough to bring him.
+[Beat 19]
+Han Do-yun lived in a tower on the good side of the Ward line, the kind of building with a real lobby and a real doorman and, this morning, three Lotus men in a parked car across the street who weren't pretending to be anything other than what they were. The hunt had circled all the way back to the place it started. They were watching the heir's own door for the heir to come home, or for the people who'd taken him to be stupid enough to bring him.
 
 So Tomas brought him home in the one vehicle in the GLMZ that could park outside a dead man's building at dawn and draw not a single eye. He brought him home in the Wagon.
 
@@ -908,7 +881,7 @@ A Carrion reclamation truck at a residential tower before sunrise was so ordinar
 
 The man was in the chair by the window.
 
-Coat still on. Hands loose on his knees. The cord-wrapped machete laid flat across his thighs, handle toward himself, the way Tomas would later understand he laid it when he wanted you to know he was not, yet, reaching for it.
+Coat still on. Hands loose on his knees. The cord-wrapped machete laid flat across his thighs, handle toward himself, the way Tomas would later understand he laid it when he wanted you to know he wasn't, yet, reaching for it.
 
 Tomas stopped the gurney. Levin stopped behind it. Nobody said anything for a moment that had a whole life in it.
 
@@ -934,13 +907,13 @@ The room was very quiet. The machine breathed in the hall.
 
 "I'm telling you we already pointed it. The heart's in him. The story's built. All that's left is to walk him through his own front door." Tomas held the man's eyes and said the rest of it without softening, because the man would have heard softening and despised it. "And I'm telling you the thing you worked out years ago and carry around like a stone — that the house you bleed for would put you in my larder the first morning you were inconvenient. They don't seat you at the table. They feed you under it. You find their lost things and clean their messes and they call you a name that isn't yours and they never, not once, let you in. A unified Lotus owns you for thirty more years. A Lotus at war with itself is a Lotus too busy to hold your leash."
 
-Casimir looked at him a long time. Then he looked at the boy on the gurney — the soft son, the bloodline made flesh, the thing the whole machine existed to protect — and something moved across his face that had been a long time coming, and Tomas did not try to name it.
+Casimir looked at him a long time. Then he looked at the boy on the gurney — the soft son, the bloodline made flesh, the thing the whole machine existed to protect — and something moved across his face that had been a long time coming, and Tomas didn't try to name it.
 
-"My mother named me for the ocean," the man said, to no one. "They call me Casimir. I stopped correcting them, because the name is a collar, and a man can wear a collar and still be the thing inside it." He stood, unhurried, and for one cold instant Tomas didn't know which way it was going to go — and then he did, because the man's hands had gone easy, and a man about to kill you does not let his hands go easy. The machete went home at his hip, handle forward, and stayed there.
+"My mother named me for the ocean," the man said, to no one. "They call me Casimir. I stopped correcting them, because the name is a collar, and a man can wear a collar and still be the thing inside it." He stood, unhurried, and for one cold instant Tomas didn't know which way it was going to go — and then he did, because the man's hands had gone easy, and a man about to kill you doesn't let his hands go easy. The machete went home at his hip, handle forward, and stayed there.
 
 "You've staged a bedroom before," Casimir said. "But not this one. You don't know which doctor the house keeps, or what hour the staff comes, or where the cameras in this hall pretend not to be. I do. I have been inside the lives of these people for ten years, learning their soft places." He looked at the two of them, the tall one and the unwell one, and for the first time there was something almost like the nod one disposable man gives another over a body. "You're accidents trying to fix an accident. I'm a tool that has decided, this once, what it wants to cut." A beat. "Bring him in off the gurney. I'll show you how this house likes to be lied to."
 
-[Beat 21]
+[Beat 20]
 So they built the story in the heir's bedroom one careful piece at a time, and the dog the Lotus kept for finding things showed them where the seams went.
 
 The boy went into his own bed, alive, sedated, breathing on a real heart, the chest under his half-open shirt unmarked — no line, no dressing, nothing the Scarab's weld hadn't already swallowed, so that a man who looked at him saw a man sleeping and not a man who'd been opened. Around him they laid the grammar of a bender that had gone over a cliff — the bottles, the spilled product from a drawer that was no longer Levin's to spill, the phone face-down, the wreck of a last free night thrown away by a soft rich boy with one day left before the rest of his life.
@@ -955,7 +928,7 @@ Then Maisy came out of the larder on the hand truck, and the room went still in 
 
 They laid her carefully in the bed beside the boy — not the way you'd lay cargo, the way you'd lay someone you'd carried down four flights in a building where everyone knew the truck by sight and had stopped asking what it came for. Tomas arranged what the story needed and did every inch of it and hated every inch of it and did it anyway, because there was a daughter somewhere, and the money was going to her, and this was the shape that made the money land safely. That was the thing he held onto. The only thing.
 
-"This part," Casimir said quietly, watching, "you should let be a little wrong. A staged thing is too careful. Leave her the way a person actually falls asleep and doesn't wake. Not the way a man arranges a point he's making." He didn't touch her. He understood, without being told, that this was not a body the two of them would let a stranger's hands move.
+"This part," Casimir said quietly, watching, "you should let be a little wrong. A staged thing is too careful. Leave her the way a person actually falls asleep and doesn't wake. Not the way a man arranges a point he's making." He didn't touch her. He understood, without being told, that this wasn't a body the two of them would let a stranger's hands move.
 
 Tomas adjusted her, once, smaller, truer. He set her shoes by the bed, toes out — not in the script, not part of the staging, just what you did for someone. Casimir looked at the shoes a moment and said nothing about them, which was its own kind of saying.
 
@@ -967,7 +940,7 @@ He went out the way he'd come, ahead of the dawn, and was gone before Tomas thou
 
 Tomas signed nothing. There was nothing to sign. For once in the whole long day there was no completion to log, no account to flip, no number going to zero behind his eyes, because this was the one piece of work Carrion would never know its crew had done.
 
-A sedan came down the street as they were loading the empty hand truck back into the Wagon, slow, and Tomas felt Levin go still beside him, and they both stood in the dock with their hands full of nothing in particular and were furniture, were garbagemen, were invisible, while the car slowed and looked and did not stop and went on. Breathing started again somewhere around the time its taillights turned the corner.
+A sedan came down the street as they were loading the empty hand truck back into the Wagon, slow, and Tomas felt Levin go still beside him, and they both stood in the dock with their hands full of nothing in particular and were furniture, were garbagemen, were invisible, while the car slowed and looked and didn't stop and went on. Breathing started again somewhere around the time its taillights turned the corner.
 
 "That's it," Levin said. His voice had the thin shake in it now that had nothing to do with the dead at the edges and everything to do with a storm grate he hadn't poured his medicine down yet. "That's the last piece. He's home. She's home, where she wanted the money to go. We're done."
 
@@ -975,52 +948,52 @@ A sedan came down the street as they were loading the empty hand truck back into
 
 He drove them two blocks and parked where they could see the tower, and they waited for the city to wake up and find the thing they'd built.
 
-[Beat 22]
+[Beat 21]
 He had been awake for thirty hours and it sat on him lightly now, lighter than it had any right to, the way a weight does the moment you decide to set it down. He had taken the corner across from the boy's tower after he left the bedroom — not to hunt, this time, but to watch a thing he had set in motion arrive at its hour. He had spent ten years arriving at scenes after they were over. He wanted, once, to be early.
 
-The Lotus men in the parked car did not know him by sight, which was the whole of his life in one fact: he had cleaned this family's worst messes for a decade and the soldiers at its door could not have picked him out of a crowd. He stood where they would not look and watched them watch a door behind which a thing was already true that none of them had read yet.
+The Lotus men in the parked car didn't know him by sight, which was the whole of his life in one fact: he had cleaned this family's worst messes for a decade and the soldiers at its door couldn't have picked him out of a crowd. He stood where they wouldn't look and watched them watch a door behind which a thing was already true that none of them had read yet.
 
-Near seven, the house staff went up. He marked the minute. At 6:51 a scream came down the tower that did not reach the street but reached the parked car, and the men in it stopped being parked. He watched the car become four cars. He watched a Lotus doctor go up — the family's own, the one Ekow could have named, the one who read in the family's language and would find exactly what three men had written for him to find: a ruined son, breathing, unmarked, and a dead girl beside him with her shoes set neat by the bed. No scar to trouble him. No surgery to explain. Just a soft boy who had thrown his last free night off a roof and not come back alone.
+Near seven, the house staff went up. He marked the minute. At 6:51 a scream came down the tower that didn't reach the street but reached the parked car, and the men in it stopped being parked. He watched the car become four cars. He watched a Lotus doctor go up — the family's own, the one Ekow could have named, the one who read in the family's language and would find exactly what three men had written for him to find: a ruined son, breathing, unmarked, and a dead girl beside him with her shoes set neat by the bed. No scar to trouble him. No surgery to explain. Just a soft boy who had thrown his last free night off a roof and not come back alone.
 
-At 7:04 his neuretics lit with the grey letters he had been waiting for, and they did not say what they would have said an hour ago.
+At 7:04 his neuretics lit with the grey letters he had been waiting for, and they didn't say what they would have said an hour ago.
 
 *Stand down. The situation is internal. Contract suspended pending review.*
 
-*Internal.* He turned the word over and found it good. Not *the heir is taken,* not *find who did this* — *internal,* the house's word for a wound it had given itself, the word that meant the hunt was over because there was no longer an outside enemy to hunt, only a bride's line already drafting its withdrawal and a Stem already turning from a missing son to a fracturing house. The stitch had not held. The two pure lines that had been one excuse from each other's throats had their excuse now, lying in a tower bed, and the knives that were supposed to go back in their drawers were coming out instead.
+*Internal.* He turned the word over and found it good. Not *the heir is taken,* not *find who did this* — *internal,* the house's word for a wound it had given itself, the word that meant the hunt was over because there was no longer an outside enemy to hunt, only a bride's line already drafting its withdrawal and a Stem already turning from a missing son to a fracturing house. The stitch hadn't held. The two pure lines that had been one excuse from each other's throats had their excuse now, lying in a tower bed, and the knives that were supposed to go back in their drawers were coming out instead.
 
 He had done that. A tool that had decided, this once, what it wanted to cut.
 
-He felt the size of it and did not look away from it, the way another man might have. There would be a price — there was always a price, and a contract suspended pending review was a sentence with his name in it if anyone ever thought to ask why the dog had come up empty on the one night it mattered. He weighed that against the thing he was watching: the house that owned him, that fed him under the table and called him by a collar's name, beginning, quietly, two floors up, to eat itself. The cars at the curb were already arguing. By nightfall the south side would be choosing sides, and a house at war with itself had no patience to spend on the man who found its lost things, and no patience, either, to wonder hard about him.
+He felt the size of it and didn't look away from it, the way another man might have. There would be a price — there was always a price, and a contract suspended pending review was a sentence with his name in it if anyone ever thought to ask why the dog had come up empty on the one night it mattered. He weighed that against the thing he was watching: the house that owned him, that fed him under the table and called him by a collar's name, beginning, quietly, two floors up, to eat itself. The cars at the curb were already arguing. By nightfall the south side would be choosing sides, and a house at war with itself had no patience to spend on the man who found its lost things, and no patience, either, to wonder hard about him.
 
-A Carrion Wagon sat two blocks down where it had sat since dawn, dark and patient, the two men in it watching the same windows he was. He did not go to them and they did not come to him. There was nothing left to say that the bedroom hadn't said. They were accidents who had fixed an accident; he was a blade that had turned in the hand for the first time in its life; and the three of them had between them lit a fire none of them would ever be able to admit to, which was the only kind of fire a man like Ekow was ever going to get to light.
+A Carrion Wagon sat two blocks down where it had sat since dawn, dark and patient, the two men in it watching the same windows he was. He didn't go to them and they didn't come to him. There was nothing left to say that the bedroom hadn't said. They were accidents who had fixed an accident; he was a blade that had turned in the hand for the first time in its life; and the three of them had between them lit a fire none of them would ever be able to admit to, which was the only kind of fire a man like Ekow was ever going to get to light.
 
-The woman had not said thank you. She would not. He did not look for it — but for the first time in ten years the absence did not sit on him as a debt unpaid. The dog is not thanked; the dog is fed. And he had fed himself, this once, on something the house had never meant to give him.
+The woman hadn't said thank you. She wouldn't. He didn't look for it — but for the first time in ten years the absence didn't sit on him as a debt unpaid. The dog isn't thanked; the dog is fed. And he had fed himself, this once, on something the house had never meant to give him.
 
-He filed the shape of the morning behind his eyes, where he kept the things he might want later, and put his hands in his pockets, and walked toward the lake, into a city that was about to get very loud behind him, unhurried, early for once, and for once in no one's hand but his own.
+He set the shape of the morning behind his eyes, where he kept the things he might want later, and put his hands in his pockets, and walked toward the lake, into a city that was about to get very loud behind him, unhurried, early for once, and for once in no one's hand but his own.
 
-[Beat 23]
+[Beat 22]
 The city woke up and found the thing they'd built, and the thing they'd built worked, because they'd built it out of the one material nobody in that world ever questioned: a powerful man's son being exactly as weak as everyone secretly believed he was.
 
-It came apart fast and clean, the way true panics do. House staff arrived at six. There was a scream that didn't carry to the street but carried in the way the Lotus men in the parked car suddenly weren't parked anymore. Then the car was four cars. Then there was a doctor going up who wasn't Yuen, a Lotus doctor, the family's own, and the family's own doctor found a living heir asleep beside a dead girl, a real heartbeat under an unmarked chest, the whole grammar of a bender gone over the cliff, and read it exactly as it was written, because it was written in his own language — and because a man who'd walked the trail for ten years had stood in that bedroom an hour before and made sure every line of it read true. He never thought to look for a scar, because there was no scar to find, and a man with no scar is a man who simply passed out, not a man somebody put back together. Word went up the tower and out the wires and up the bloodline, and somewhere a Stem named Han Jeong-suk learned that her son had not been taken by enemies of the house at all. He'd done it to himself. He'd thrown his last free night off a roof, the way soft sons do, drowned the wedding in something cut with something worse, and brought home company that didn't wake up. Shameful. Ordinary. Survivable. The kind of thing a powerful family would make disappear by breakfast — if the family still had a breakfast it could agree on.
+It came apart fast and clean, the way true panics do. House staff arrived at six. There was a scream that didn't carry to the street but carried in the way the Lotus men in the parked car suddenly weren't parked anymore. Then the car was four cars. Then there was a doctor going up who wasn't Yuen, a Lotus doctor, the family's own, and the family's own doctor found a living heir asleep beside a dead girl, a real heartbeat under an unmarked chest, the whole grammar of a bender gone over the cliff, and read it exactly as it was written, because it was written in his own language — and because a man who'd walked the trail for ten years had stood in that bedroom an hour before and made sure every line of it read true. He never thought to look for a scar, because there was no scar to find, and a man with no scar is a man who simply passed out, not a man somebody put back together. Word went up the tower and out the wires and up the bloodline, and somewhere a Stem named Han Jeong-suk learned that her son hadn't been taken by enemies of the house at all. He'd done it to himself. He'd thrown his last free night off a roof, the way soft sons do, drowned the wedding in something cut with something worse, and brought home company that didn't wake up. Shameful. Ordinary. Survivable. The kind of thing a powerful family would make disappear by breakfast — if the family still had a breakfast it could agree on.
 
-It didn't. A no-show heir starts a war; a living heir sleeping off a disgrace was supposed to prevent one. But the bride's line had been looking for a reason and now had one, and an alliance that needed both families wanting it only needed one to walk. By the time the sun was full up the south side had started choosing sides over a wedding that was never going to happen, and the thing that had to not happen did not happen, and the reason it didn't was lying in a tower bed on a heart that had cost a stranger's life and Paz's six months, and a hunter's whole loyalty, and nobody upstairs would ever know any of it.
+It didn't. A no-show heir starts a war; a living heir sleeping off a disgrace was supposed to prevent one. But the bride's line had been looking for a reason and now had one, and an alliance that needed both families wanting it only needed one to walk. By the time the sun was full up the south side had started choosing sides over a wedding that was never going to happen, and the thing that had to not happen didn't happen, and the reason it didn't was lying in a tower bed on a heart that had cost a stranger's life and Paz's six months, and a hunter's whole loyalty, and nobody upstairs would ever know any of it.
 
 And the dog got called off — though that was the company's word for it, and the company had it wrong.
 
-Tomas saw him leave. They were still parked two blocks down, two garbagemen in a truck, furniture, when the man came out of the tower's service entrance — unhurried, well-mannered, wrong for the block the way a scalpel is wrong in a kitchen drawer — and stood on the step a moment in the new light. He did not come to the window this time. There was nothing left in the bedroom that the bedroom hadn't already settled. He looked down the street to where the Wagon sat, and found it without effort, the way he found everything, and for one moment the man who could read a confession off a stranger's coat and the man who'd spent the night sweating under that gaze simply looked at each other across two blocks of waking city.
+Tomas saw him leave. They were still parked two blocks down, two garbagemen in a truck, furniture, when the man came out of the tower's service entrance — unhurried, well-mannered, wrong for the block the way a scalpel is wrong in a kitchen drawer — and stood on the step a moment in the new light. He didn't come to the window this time. There was nothing left in the bedroom that the bedroom hadn't already settled. He looked down the street to where the Wagon sat, and found it without effort, the way he found everything, and for one moment the man who could read a confession off a stranger's coat and the man who'd spent the night sweating under that gaze simply looked at each other across two blocks of waking city.
 
 Casimir lifted his chin. Not the nod a hunter gives a suspect, and not the nod one tradesman gives another over a body. Something quieter and worse and better than either: the nod of a man to the two accidents who had handed him, without meaning to, the one thing ten years of obedience never had — a way to hurt the house that owned him and call it someone else's crime. Then he turned and walked off into the new light, away from the cars already gathering and arguing at the curb, toward the lake, in no one's hand but his own.
 
 "He's not coming back," Levin said, watching him go. It wasn't a question, but there was something under it that needed an answer.
 
-"No," Tomas said. "He got what he wanted out of tonight. Same as us. None of us'll ever be able to say it out loud." He started the Wagon, and the engine turning over was the first thing that had felt entirely real in a day and a half. The marker he'd signed for the favor that was now moot sat somewhere out in the city with his name on it, callable, patient; Paz's account read a number that wouldn't cover her next course; and Han Jeong-suk would carry forever, in the ledger she kept in her head, a small clean entry that a Carrion crew had worked her block all night and minded its own business like professionals — a debt that, with the house now turning on itself, she would likely never live calm enough to collect. They were clear. They were not free. But they were further from her reach than they had any right to be, and the reason wore a collar's name and was walking toward the water. "Come on. We've still got her to come back for. We're going to do that part right."
+"No," Tomas said. "He got what he wanted out of tonight. Same as us. None of us'll ever be able to say it out loud." He started the Wagon, and the engine turning over was the first thing that had felt entirely real in a day and a half. The marker he'd signed for the favor that was now moot sat somewhere out in the city with his name on it, callable, patient; Paz's account read a number that wouldn't cover her next course; and Han Jeong-suk would carry forever, in the ledger she kept in her head, a small clean entry that a Carrion crew had worked her block all night and minded its own business like professionals — a debt that, with the house now turning on itself, she would likely never live calm enough to collect. They were clear. They weren't free. But they were further from her reach than they had any right to be, and the reason wore a collar's name and was walking toward the water. "Come on. We've still got her to come back for. We're going to do that part right."
 
-[Beat 24]
+[Beat 23]
 The quiet collection came through that afternoon, dispatched the way Casimir had said it would be — a discreet pickup at a good tower, one deceased, female, no next of kin on file, handle with the discretion the account class required. The Lotus had paid for discretion. Tomas took the job before anyone else could, because the alternative to Tomas taking it was a stranger taking it, and a stranger would have done the ordinary thing, and the ordinary thing was the larder.
 
-He did not do the ordinary thing.
+He didn't do the ordinary thing.
 
-He collected Maisy Achterberg from the bed where he'd laid her and carried her down in the Wagon, and he logged her, behind his eyes, the way you logged a body that wasn't worth the company's processing — markers degraded, tissue non-viable, recommend direct disposition — which was a lie, and the first lie he'd ever told the manifest, and he told it cleanly. She would not become inventory. She would not be opened and sorted and shelved. He took her to a place that did clean dispositions for the people the tiers had no codes for, and he paid for it himself, out of the account that no longer had Paz's six months in it, because there was no version of the day where he didn't. He set her shoes in with her, toes out.
+He collected Maisy Achterberg from the bed where he'd laid her and carried her down in the Wagon, and he logged her, behind his eyes, the way you logged a body that wasn't worth the company's processing — markers degraded, tissue non-viable, recommend direct disposition — which was a lie, and the first lie he'd ever told the manifest, and he told it cleanly. She wouldn't become inventory. She wouldn't be opened and sorted and shelved. He took her to a place that did clean dispositions for the people the tiers had no codes for, and he paid for it himself, out of the account that no longer had Paz's six months in it, because there was no version of the day where he didn't. He set her shoes in with her, toes out.
 
 "She had big plans," Levin said, in the Wagon after. To no one. He was gray and slick with sweat and folded into the passenger seat around a stomach that had nothing left in it. The tab had come due all at once, the way it did when you poured the answer down a storm grate, and he was paying it in full and on time for the first time in years. He hadn't reached for the door pocket once. There was nothing in the door pocket. He'd made sure of that. "She used to draw buildings on everything. On her notebook, on her napkins." He stopped. "That was sixteen years ago. I don't know what she was going to do with any of it."
 
@@ -1052,18 +1025,18 @@ Tomas looked at it for a long time.
 
 Then he started the Wagon, and went to get Levin, because some things you didn't do alone.
 
-[Beat 25]
-﻿He drove the Wagon back to the depot alone, which was not how the shift was supposed to end.
+[Beat 24]
+He drove the Wagon back to the depot alone, which wasn't how the shift was supposed to end.
 
-Levin had gone from the staging tower in the utility car they'd borrowed from the crew ??? borrowed being the word when the crew in question was not going to be asked, and the car was not going to be missed, and the entry on the manifest was going to read differently from the thing that had actually happened. That was how a lot of the paperwork from this particular shift was going to read. Tomas had made his peace with this in the Wagon's ward compartment, around the thirty-fifth hour, when the options had narrowed to the ones you could live with and the ones that were worse, and he had chosen accordingly.
+Levin had gone from the staging tower in the utility car they'd borrowed from the crew — borrowed being the word when the crew in question wasn't going to be asked, and the car wasn't going to be missed, and the entry on the manifest was going to read differently from the thing that had actually happened. That was how a lot of the paperwork from this particular shift was going to read. Tomas had made his peace with this in the Wagon's ward compartment, around the thirty-fifth hour, when the options had narrowed to the ones you could live with and the ones that were worse, and he had chosen accordingly.
 
 Levin hadn't said anything on the way out of the tower. Tomas had not asked him to.
 
-The depot was a contracted lot in lower Z4 ??? a fenced yard behind a commercial freight handler, four other Carriages in the maintenance bays, the manifest server running its overnight sync through the building's antenna. Tomas ran the end-of-shift routine the way he always ran it: cassette drop at the cold-chain station, inventory logged, manifest closed out. The pacemaker cassette from the Bernstein job, logged and sealed. The Reuben Sclose eyewear components, logged and sealed. The anonymous OD recovery's corneal mods, logged and sealed. Each one in its rack, each rack in the station, each entry in the queue for the exchange and the clinical disposal service and the insurance ledger.
+The depot was a contracted lot in lower Z4 — a fenced yard behind a commercial freight handler, four other Carriages in the maintenance bays, the manifest server running its overnight sync through the building's antenna. Tomas ran the end-of-shift routine the way he always ran it: cassette drop at the cold-chain station, inventory logged, manifest closed out. The pacemaker cassette from the Bernstein job, logged and sealed. The Reuben Sclose eyewear components, logged and sealed. The anonymous OD recovery's corneal mods, logged and sealed. Each one in its rack, each rack in the station, each entry in the queue for the exchange and the clinical disposal service and the insurance ledger.
 
 He ran the cardiac extraction log last, in the Wagon's cab, before he went inside.
 
-This was the entry that had no proper home in the manifest system. He had been thinking about it since the staging tower, about which field it could sit in without being a lie by omission or a truth that would survive a compliance review. What he wrote in the end was plain: directed donation, rare-type cardiac tissue, recipient match secured through third-party coordination, disposition to registered recipient. This was not inaccurate. It was not, precisely, the story of how the night had gone. But the story of how the night had gone was not a thing that fit in any field the manifest provided, and the compliance team at Carrion would receive the entry and file it in the category of things their software told them required no further action.
+This was the entry that had no proper home in the manifest system. He had been thinking about it since the staging tower, about which field it could sit in without being a lie by omission or a truth that would survive a compliance review. What he wrote in the end was plain: directed donation, rare-type cardiac tissue, recipient match secured through third-party coordination, disposition to registered recipient. This wasn't inaccurate. It wasn't, precisely, the story of how the night had gone. But the story of how the night had gone wasn't a thing that fit in any field the manifest provided, and the compliance team at Carrion would receive the entry and file it in the category of things their software told them required no further action.
 
 He didn't know if this was true. He had never submitted an entry like this before. But he needed to write something, and this was the least wrong version.
 
@@ -1075,17 +1048,17 @@ He went inside. The night supervisor was a woman named Callie, twenty-two years 
 
 She made the entry and he went back out to the Wagon to get his bag.
 
-He sat in the cab for a while before he got out. He was not sure why. The ward monitor was dark ??? the berth empty, the berth's equipment powered down to standby, the berth waiting for the next stop with the patience of a thing that had no opinion about what it waited for. In the larder, one cassette in the rack that hadn't made it to the cold-chain station yet. The kidney from the opening job ??? the old man with the machine in his lobby, the daughter in the hall, the dialysis unit that had arrived before the crew did. Standard repo, standard loaner, standard manifest entry. The kidney had been processed correctly: tissue-typed, labeled, cold-packed, viable window logged. The cassette was in the rack. The rack was sealed. The entry was in the system, flagged REALLOCATION PENDING RECIPIENT MATCH, which was how the system flagged any viable organ that hadn't cleared to a registered recipient yet.
+He sat in the cab for a while before he got out. He wasn't sure why. The ward monitor was dark — the berth empty, the berth's equipment powered down to standby, the berth waiting for the next stop with the patience of a thing that had no opinion about what it waited for. In the larder, one cassette in the rack that hadn't made it to the cold-chain station yet. The kidney from the opening job — the old man with the machine in his lobby, the daughter in the hall, the dialysis unit that had arrived before the crew did. Standard repo, standard loaner, standard manifest entry. The kidney had been processed correctly: tissue-typed, labeled, cold-packed, viable window logged. The cassette was in the rack. The rack was sealed. The entry was in the system, flagged REALLOCATION PENDING RECIPIENT MATCH, which was how the system flagged any viable organ that hadn't cleared to a registered recipient yet.
 
-The matching algorithm ran on a cycle, and it would run in the morning, and in the morning it would either return a match or it would not, and either way the system would send Tomas a notification and he would deal with it then.
+The matching algorithm ran on a cycle, and it would run in the morning, and in the morning it would either return a match or it wouldn't, and either way the system would send Tomas a notification and he would deal with it then.
 
 He was very tired.
 
-He had been working for twenty-nine hours and some number of minutes, and the fatigue sat on him the way it did at the end of the long shifts ??? not heavy, exactly, but settled, the way a weight settles when you've been carrying it long enough that it's become part of the arrangement of your body. He would sleep. He would wake up. The manifest would be there. The numbers would clear or they would not. The kidney query would run.
+He had been working for twenty-nine hours and some number of minutes, and the fatigue sat on him the way it did at the end of the long shifts — not heavy, exactly, but settled, the way a weight settles when you've been carrying it long enough that it's become part of the arrangement of your body. He would sleep. He would wake up. The manifest would be there. The numbers would clear or they wouldn't. The kidney query would run.
 
-He thought about Paz, briefly, the way he was allowed to think about her when he was off the clock. Not the math ??? he'd turned off the math at the Bernstein job and it would stay off until he was back on shift. Just her face, the one she made when she was concentrating on something that she thought he couldn't see, the very private focused look of a person working a problem alone. She had that from him. He had never pointed it out.
+He thought about Paz, briefly, the way he was allowed to think about her when he was off the clock. Not the math — he'd turned off the math at the Bernstein job and it would stay off until he was back on shift. Just her face, the one she made when she was concentrating on something that she thought he couldn't see, the very private focused look of a person working a problem alone. She had that from him. He had never pointed it out.
 
-He got out of the Wagon. He locked the cab. He went to the lot's pedestrian gate and ran his access card and walked out onto the Z4 arterial and did not look back at the Wagon, because looking back was not a thing the route trained you to do.
+He got out of the Wagon. He locked the cab. He went to the lot's pedestrian gate and ran his access card and walked out onto the Z4 arterial and didn't look back at the Wagon, because looking back wasn't a thing the route trained you to do.
 
 The night air was cold and damp, the kind of cold that had been there all evening and was planning to be there in the morning. He put his hands in his coat pockets and walked toward the transit stop, which was six blocks north, and counted the Pulse caps in the pavement as he went, because counting them was a thing his feet knew how to do without requiring the rest of him.
 
@@ -1093,7 +1066,7 @@ One every hundred-and-ten meters. Eleven caps to the transit stop.
 
 He counted them all.
 
-[Beat 26]
+[Beat 25]
 The inventory query came up behind Tomas's eyes at 6:40 the next morning, flagged routine, no escalation path, the way the small things always came, the way the kidney had come into the world two mornings ago as a line item with a number beside it. He read it twice over his coffee.
 
 Series-7 kidney, excised, viable, cold storage. Reallocation pending recipient match — current match: none.
@@ -1116,9 +1089,9 @@ They drew the kidney from cold storage at 8:15 and rode it south in the Wagon, t
 
 The building was the same. The yellow-seamed lobby was the same. The freight elevator took the same forty-five seconds it had taken two mornings and a lifetime ago.
 
-Daria Holme answered on the second knock, and she had a kitchen knife down at her side, half-hidden in the fold of the same coat, her knuckles white on it. She did not step back from the door. She put her body in it.
+Daria Holme answered on the second knock, and she had a kitchen knife down at her side, half-hidden in the fold of the same coat, her knuckles white on it. She didn't step back from the door. She put her body in it.
 
-"No," she said. Her voice was steady and her hand was not. "Whatever it is. You took it. You don't get to come back. I've heard what happens when you people come back twice." She looked at the cooler, and something in her went tighter, because she knew the shape of a Carrion cold-pack now, she'd watched one leave the building with a piece of her father in it. "What's in there. What did you come for this time."
+"No," she said. Her voice was steady and her hand wasn't. "Whatever it is. You took it. You don't get to come back. I've heard what happens when you people come back twice." She looked at the cooler, and something in her went tighter, because she knew the shape of a Carrion cold-pack now, she'd watched one leave the building with a piece of her father in it. "What's in there. What did you come for this time."
 
 "Nothing," Tomas said. He kept his hands where she could see them. "We didn't come to take anything. There's no order on him. I swear that to you on the only thing I've got worth swearing on, which is that I've got a daughter too."
 
@@ -1156,7 +1129,7 @@ Tomas looked at her, and didn't say anything, because there wasn't anything usef
 
 They went down the stairs. The lobby was the same. The street outside was cold and bright, the early light coming hard off the windows across the way.
 
-[Beat 27]
+[Beat 26]
 In the Wagon, Levin drove, and for a while neither of them said anything, and the city went by the way it went by, vertical and indifferent and full of accounts that hadn't come due yet.
 
 "Carrion's going to flag it," Levin said, eventually. "The return. Some auditor's going to see a kidney walk back up an elevator and want to know why."

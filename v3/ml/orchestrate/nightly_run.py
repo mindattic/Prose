@@ -195,8 +195,16 @@ def main():
     mlflow.set_tracking_uri(MLFLOW_TRACKING_URI)
     run_name = f"nightly_{datetime.now():%Y%m%d_%H%M}"
 
+    # Phases that must not run if extract produced stale/missing data
+    _EXTRACT_DEPENDENT = {"train_quality", "train_topics", "train_persona", "audit"}
+    failed_phases: set[str] = set()
+
     with mlflow.start_run(run_name=run_name):
         for phase in phases_to_run:
+            if phase in _EXTRACT_DEPENDENT and "extract" in failed_phases:
+                console.print(f"[yellow]{phase} skipped — extract phase failed (stale Parquet risk)[/yellow]")
+                continue
+
             t0 = datetime.now()
             console.rule(f"[bold]{phase}[/bold]")
             try:
@@ -206,7 +214,7 @@ def main():
             except Exception:
                 console.print(f"[red]{phase} FAILED:[/red]")
                 traceback.print_exc()
-                # Don't abort; continue to next phase
+                failed_phases.add(phase)
 
     console.rule("[bold green]Nightly run complete[/bold green]")
 

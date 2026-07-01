@@ -127,6 +127,11 @@ public class StreetSamuraiDbContext : DbContext
     // Per-strand narrative spine: amendment log + version pins (bridge).
     public DbSet<StrandAmendment>       StrandAmendments       => Set<StrandAmendment>();
     public DbSet<StrandSpineVersion>    StrandSpineVersions    => Set<StrandSpineVersion>();
+    // Amazon KDP / storefront search keywords (up to 7 per strand).
+    public DbSet<StrandKeyword>         StrandKeywords         => Set<StrandKeyword>();
+    // Autonomous pipeline — chapter summaries + open threads ledger.
+    public DbSet<StrandChapterSummary>  StrandChapterSummaries => Set<StrandChapterSummary>();
+    public DbSet<StrandOpenThread>      StrandOpenThreads      => Set<StrandOpenThread>();
     // Persona quality-reviews for canon entities (characters, weapons, tech, etc.).
     public DbSet<EntityReview>          EntityReviews          => Set<EntityReview>();
     public DbSet<EntityReviewSummary>   EntityReviewSummaries  => Set<EntityReviewSummary>();
@@ -446,9 +451,9 @@ public class StreetSamuraiDbContext : DbContext
             e.HasIndex(x => new { x.UniverseId, x.Slug }).IsUnique().HasDatabaseName("UX_Strands_Universe_Slug");
             e.HasIndex(x => x.Kind);
             e.HasIndex(x => new { x.ParentStrandId, x.SortKey });
-            // Draft subtrees are skipped by the tools; index the flag so the
+            // WIP subtrees are skipped by the tools; index the flag so the
             // tree-walk and enumeration filters stay cheap.
-            e.HasIndex(x => x.IsDraft);
+            e.HasIndex(x => x.IsWIP);
             e.HasIndex(x => x.UniverseId);
             e.HasOne(x => x.ParentStrand).WithMany(x => x.Children)
                 .HasForeignKey(x => x.ParentStrandId).OnDelete(DeleteBehavior.Restrict);
@@ -844,6 +849,10 @@ public class StreetSamuraiDbContext : DbContext
             e.HasKey(x => x.Id);
             e.Property(x => x.Name).HasMaxLength(120).IsRequired();
             e.HasIndex(x => x.Name).IsUnique();
+            e.Property(x => x.EntityId).IsRequired(false);
+            e.HasOne(x => x.Entity).WithMany()
+                .HasForeignKey(x => x.EntityId).OnDelete(DeleteBehavior.SetNull);
+            e.HasIndex(x => x.EntityId);
         });
 
         b.Entity<EntityTag>(e =>
@@ -2170,6 +2179,36 @@ public class StreetSamuraiDbContext : DbContext
             e.Property(x => x.Notes).HasMaxLength(1000);
             e.HasIndex(x => x.StrandId);
             e.HasIndex(x => new { x.StrandId, x.StrandVersion }).IsUnique();
+        });
+
+        // ── StrandKeyword ────────────────────────────────────────────────────
+        b.Entity<StrandKeyword>(e =>
+        {
+            e.HasKey(x => x.Id);
+            e.Property(x => x.Keyword).HasMaxLength(100).IsRequired();
+            e.HasIndex(x => x.StrandId);
+            e.HasOne(x => x.Strand).WithMany(x => x.Keywords)
+                .HasForeignKey(x => x.StrandId).OnDelete(DeleteBehavior.Cascade);
+        });
+
+        // ── StrandChapterSummary ─────────────────────────────────────────────
+        b.Entity<StrandChapterSummary>(e =>
+        {
+            e.HasKey(x => x.Id);
+            e.HasIndex(x => new { x.StrandId, x.ChapterIndex }).IsUnique();
+            e.HasOne(x => x.Strand).WithMany()
+                .HasForeignKey(x => x.StrandId).OnDelete(DeleteBehavior.Cascade);
+        });
+
+        // ── StrandOpenThread ─────────────────────────────────────────────────
+        b.Entity<StrandOpenThread>(e =>
+        {
+            e.HasKey(x => x.Id);
+            e.Property(x => x.Category).HasMaxLength(50);
+            e.Property(x => x.Description).HasMaxLength(500).IsRequired();
+            e.HasIndex(x => new { x.StrandId, x.IsResolved });
+            e.HasOne(x => x.Strand).WithMany()
+                .HasForeignKey(x => x.StrandId).OnDelete(DeleteBehavior.Cascade);
         });
 
         // ── MarkdownFile ────────────────────────────────────────────────────

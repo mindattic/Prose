@@ -138,7 +138,7 @@ public static class RunCorpusCli
         // Resolve services
         var dbFactory  = services.GetRequiredService<IDbContextFactory<StreetSamuraiDbContext>>();
         var bibleService  = services.GetRequiredService<StrandBibleService>();
-        var beatGen    = services.GetRequiredService<BeatGeneratorService>();
+        var router     = services.GetRequiredService<ProseWriterRouter>();
         var workbench  = services.GetRequiredService<StrandWorkbenchService>();
         var reflow     = services.GetRequiredService<ProseReflowService>();
         var checker    = services.GetRequiredService<CanonContradictionService>();
@@ -179,7 +179,7 @@ public static class RunCorpusCli
                 Console.WriteLine($"[run-corpus]   expand beats…");
                 try
                 {
-                    await ExpandBeatsAsync(entry.StrandId, storyBible, beatGen, workbench);
+                    await ExpandBeatsAsync(entry.StrandId, storyBible, router, workbench);
                     entry.Stage = "expanded";
                     SaveCheckpoint(state);
                     Console.WriteLine($"[run-corpus]   expanded.");
@@ -376,35 +376,38 @@ public static class RunCorpusCli
     private static async Task ExpandBeatsAsync(
         Guid strandId,
         string storyBible,
-        BeatGeneratorService beatGen,
+        ProseWriterRouter router,
         StrandWorkbenchService workbench)
     {
         var ordered = await workbench.GetOrderedBeatsAsync(strandId);
         var sceneSoFar = "";
         int expanded = 0;
+        int beatIndex = 0;
 
         foreach (var ob in ordered)
         {
             var beat = ob.Beat;
             // Skip beats that already have prose
-            if (!string.IsNullOrWhiteSpace(beat.Text)) { sceneSoFar += "\n\n" + beat.Text; continue; }
+            if (!string.IsNullOrWhiteSpace(beat.Text)) { sceneSoFar += "\n\n" + beat.Text; beatIndex++; continue; }
             var goal = beat.Synopsis ?? beat.BeatTitle ?? $"Beat {beat.Number}";
-            if (string.IsNullOrWhiteSpace(goal)) continue;
+            if (string.IsNullOrWhiteSpace(goal)) { beatIndex++; continue; }
 
             var ctx = new BeatContext
             {
+                StrandId          = strandId,
                 StoryBibleContext = storyBible,
                 SceneSoFar        = sceneSoFar.Length > 6000 ? sceneSoFar[^6000..] : sceneSoFar,
                 BeatGoal          = goal,
             };
 
-            var prose = await beatGen.GenerateBeatAsync(ctx);
-            if (string.IsNullOrWhiteSpace(prose)) continue;
+            var prose = await router.WriteAsync(ctx, beat.Id, beatIndex, ordered.Count);
+            if (string.IsNullOrWhiteSpace(prose)) { beatIndex++; continue; }
 
             prose = prose.Trim();
             await workbench.UpdateBeatTextAsync(beat.Id, prose, expectedUpdatedAt: null);
             sceneSoFar += "\n\n" + prose;
             expanded++;
+            beatIndex++;
         }
 
         Console.WriteLine($"[run-corpus]     {expanded}/{ordered.Count} beats expanded.");

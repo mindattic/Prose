@@ -131,7 +131,7 @@ const CATEGORIES = [
     count: 8,
     category: 'outfit',
     tier: 'Tier 1-5',
-    prompt: `Generate {count} COMPLETE MEDICAL/SCIENTIFIC OUTFITS — head-to-toe looks. Must include: 1 Shelf street clinic ripperdoc, 1 Tier 5 surgical suite surgeon, 1 lab technician, 1 field medic, 1 gene clinic worker, 1 aug installation tech, 1 pharmaceutical researcher, 1 emergency paramedic. Full look: headgear/visor, coat/scrubs, gloves, footwear, tool harness. Keep descriptions SHORT (2-4 sentences max).`
+    prompt: `Generate {count} COMPLETE MEDICAL/SCIENTIFIC OUTFITS — head-to-toe looks. Must include: 1 Shelf street clinic splicer, 1 Tier 5 surgical suite surgeon, 1 lab technician, 1 field medic, 1 gene clinic worker, 1 aug installation tech, 1 pharmaceutical researcher, 1 emergency paramedic. Full look: headgear/visor, coat/scrubs, gloves, footwear, tool harness. Keep descriptions SHORT (2-4 sentences max).`
   },
   {
     tag: 'underworld_criminal_kit',

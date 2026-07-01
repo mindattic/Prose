@@ -30,7 +30,7 @@ public class MultiLlmService
         // for diagnostics/UI; they're informational only — Legion owns dispatch.
         providers =
         [
-            new("claude",     "Claude",     "https://api.anthropic.com/v1/messages",                                          settings.Model,           "anthropic"),
+            new("claude-api", "Claude (API)", "https://api.anthropic.com/v1/messages",                                        settings.Model,           "anthropic"),
             new("openai",     "ChatGPT",    "https://api.openai.com/v1/chat/completions",                                     settings.OpenAiModel,     "bearer"),
             new("gemini",     "Gemini",     "https://generativelanguage.googleapis.com/v1beta/models/{model}:generateContent",settings.GeminiModel,     "google"),
             new("deepseek",   "DeepSeek",   "https://api.deepseek.com/chat/completions",                                      settings.DeepSeekModel,   "bearer"),
@@ -146,7 +146,7 @@ public class MultiLlmService
 
         try
         {
-            var consensus = await CallProviderAsync("claude", judgeSystem, judgeUser, ct);
+            var consensus = await CallProviderAsync("claude-api", judgeSystem, judgeUser, ct);
             return (consensus, votes);
         }
         catch (Exception ex)
@@ -161,7 +161,7 @@ public class MultiLlmService
     // %APPDATA%/MindAttic/LLM store → legacy app settings, so this stays simple.
     private string? GetApiKey(string providerId) => providerId switch
     {
-        "claude"     => settings.ApiKey,
+        "claude-api" => settings.ApiKey,
         "openai"     => settings.OpenAiApiKey,
         "gemini"     => settings.GeminiApiKey,
         "deepseek"   => settings.DeepSeekApiKey,

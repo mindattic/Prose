@@ -101,7 +101,7 @@ public class WeaponAmmoLinkerService
                 if (useLocal)
                     raw = await legion.CallAsync("local", key, model, system, userMsg, localUrl!, maxTokens: 150, temperature: 0.3, ct);
                 else
-                    raw = await legion.CallAsync("claude", key, model, system, userMsg, maxTokens: 150, temperature: 0.3, ct);
+                    raw = await legion.CallAsync("claude-api", key, model, system, userMsg, maxTokens: 150, temperature: 0.3, ct);
 
                 if (!TryParseMatch(raw, out var ammoName, out var confidence))
                 {

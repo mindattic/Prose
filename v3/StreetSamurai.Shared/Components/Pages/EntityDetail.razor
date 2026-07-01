@@ -13,6 +13,7 @@
 @inject VocabularyRepository VocabRepo
 @inject XrefService Xref
 @inject GlobalSearchService GlobalSearch
+@inject EntityMentionService MentionService
 @inject NavigationManager Nav
 @inject AmmunitionRepository AmmoRepo
 @inject ApparelRepository ApparelRepo
@@ -55,6 +56,7 @@ else if (character != null)
             <li class="nav-item"><a class="nav-link @(CurrentTab == "belongings"    ? "active" : "")" href="javascript:void(0)" @onclick='() => SwitchTab("belongings")'><i class="bi bi-bag me-1"></i>Belongings</a></li>
             <li class="nav-item"><a class="nav-link @(CurrentTab == "timeline"      ? "active" : "")" href="javascript:void(0)" @onclick='() => SwitchTab("timeline")'><i class="bi bi-clock-history me-1"></i>Timeline <span class="badge bg-secondary">@character.Timeline.Count</span></a></li>
             <li class="nav-item"><a class="nav-link @(CurrentTab == "family"        ? "active" : "")" href="javascript:void(0)" @onclick='() => SwitchTab("family")'><i class="bi bi-people me-1"></i>Family</a></li>
+            <li class="nav-item"><a class="nav-link @(CurrentTab == "appears-in"    ? "active" : "")" href="javascript:void(0)" @onclick='() => SwitchTab("appears-in")'><i class="bi bi-journal-text me-1"></i>Appears In @if (mentionsLoaded) { <span class="badge bg-secondary">@entityMentions.Count</span> }</a></li>
             <li class="nav-item"><a class="nav-link @(CurrentTab == "dossier"       ? "active" : "")" href="javascript:void(0)" @onclick='() => SwitchTab("dossier")'><i class="bi bi-file-earmark-text me-1"></i>Dossier</a></li>
         </ul>
         @GlobalEditControls()
@@ -69,6 +71,7 @@ else if (place != null)
             <li class="nav-item"><a class="nav-link @(CurrentTab == "subplaces"   ? "active" : "")" href="javascript:void(0)" @onclick='() => SwitchTab("subplaces")'><i class="bi bi-diagram-3 me-1"></i>Sub-Places <span class="badge bg-secondary">@subPlaces.Count</span></a></li>
             <li class="nav-item"><a class="nav-link @(CurrentTab == "inhabitants" ? "active" : "")" href="javascript:void(0)" @onclick='() => SwitchTab("inhabitants")'><i class="bi bi-people me-1"></i>Inhabitants <span class="badge bg-secondary">@inhabitants.Count</span></a></li>
             <li class="nav-item"><a class="nav-link @(CurrentTab == "events"      ? "active" : "")" href="javascript:void(0)" @onclick='() => SwitchTab("events")'><i class="bi bi-calendar-event me-1"></i>Events <span class="badge bg-secondary">@placeEvents.Count</span></a></li>
+            <li class="nav-item"><a class="nav-link @(CurrentTab == "appears-in"  ? "active" : "")" href="javascript:void(0)" @onclick='() => SwitchTab("appears-in")'><i class="bi bi-journal-text me-1"></i>Appears In @if (mentionsLoaded) { <span class="badge bg-secondary">@entityMentions.Count</span> }</a></li>
             <li class="nav-item"><a class="nav-link @(CurrentTab == "dossier"     ? "active" : "")" href="javascript:void(0)" @onclick='() => SwitchTab("dossier")'><i class="bi bi-file-earmark-text me-1"></i>Dossier</a></li>
         </ul>
         @GlobalEditControls()
@@ -83,6 +86,7 @@ else if (corponation != null)
             <li class="nav-item"><a class="nav-link @(CurrentTab == "subsidiaries"  ? "active" : "")" href="javascript:void(0)" @onclick='() => SwitchTab("subsidiaries")'><i class="bi bi-diagram-3 me-1"></i>Subsidiaries <span class="badge bg-secondary">@corpSubs.Count</span></a></li>
             <li class="nav-item"><a class="nav-link @(CurrentTab == "personnel"     ? "active" : "")" href="javascript:void(0)" @onclick='() => SwitchTab("personnel")'><i class="bi bi-person-badge me-1"></i>Personnel <span class="badge bg-secondary">@corpPersonnel.Count</span></a></li>
             <li class="nav-item"><a class="nav-link @(CurrentTab == "operations"    ? "active" : "")" href="javascript:void(0)" @onclick='() => SwitchTab("operations")'><i class="bi bi-briefcase me-1"></i>Operations <span class="badge bg-secondary">@corpOps.Count</span></a></li>
+            <li class="nav-item"><a class="nav-link @(CurrentTab == "appears-in"    ? "active" : "")" href="javascript:void(0)" @onclick='() => SwitchTab("appears-in")'><i class="bi bi-journal-text me-1"></i>Appears In @if (mentionsLoaded) { <span class="badge bg-secondary">@entityMentions.Count</span> }</a></li>
             <li class="nav-item"><a class="nav-link @(CurrentTab == "dossier"       ? "active" : "")" href="javascript:void(0)" @onclick='() => SwitchTab("dossier")'><i class="bi bi-file-earmark-text me-1"></i>Dossier</a></li>
         </ul>
         @GlobalEditControls()
@@ -96,6 +100,7 @@ else if (faction != null)
             <li class="nav-item"><a class="nav-link @(CurrentTab == "record"     ? "active" : "")" href="javascript:void(0)" @onclick='() => SwitchTab("record")'><i class="bi bi-card-text me-1"></i>Record</a></li>
             <li class="nav-item"><a class="nav-link @(CurrentTab == "members"    ? "active" : "")" href="javascript:void(0)" @onclick='() => SwitchTab("members")'><i class="bi bi-person-badge me-1"></i>Members <span class="badge bg-secondary">@factionMembers.Count</span></a></li>
             <li class="nav-item"><a class="nav-link @(CurrentTab == "operations" ? "active" : "")" href="javascript:void(0)" @onclick='() => SwitchTab("operations")'><i class="bi bi-briefcase me-1"></i>Operations <span class="badge bg-secondary">@factionOps.Count</span></a></li>
+            <li class="nav-item"><a class="nav-link @(CurrentTab == "appears-in" ? "active" : "")" href="javascript:void(0)" @onclick='() => SwitchTab("appears-in")'><i class="bi bi-journal-text me-1"></i>Appears In @if (mentionsLoaded) { <span class="badge bg-secondary">@entityMentions.Count</span> }</a></li>
             <li class="nav-item"><a class="nav-link @(CurrentTab == "dossier"    ? "active" : "")" href="javascript:void(0)" @onclick='() => SwitchTab("dossier")'><i class="bi bi-file-earmark-text me-1"></i>Dossier</a></li>
         </ul>
         @GlobalEditControls()
@@ -103,11 +108,12 @@ else if (faction != null)
 }
 else
 {
-    @* All other entity types keep the simpler Record/Dossier pair. *@
+    @* All other entity types keep the simpler Record/Appears In/Dossier triple. *@
     <div class="d-flex justify-content-between align-items-center mb-2">
         <ul class="nav nav-tabs small entity-tabs flex-grow-1">
-            <li class="nav-item"><a class="nav-link @(CurrentTab == "record"  ? "active" : "")" href="javascript:void(0)" @onclick='() => SwitchTab("record")'><i class="bi bi-card-text me-1"></i>Record</a></li>
-            <li class="nav-item"><a class="nav-link @(CurrentTab == "dossier" ? "active" : "")" href="javascript:void(0)" @onclick='() => SwitchTab("dossier")'><i class="bi bi-file-earmark-text me-1"></i>Dossier</a></li>
+            <li class="nav-item"><a class="nav-link @(CurrentTab == "record"     ? "active" : "")" href="javascript:void(0)" @onclick='() => SwitchTab("record")'><i class="bi bi-card-text me-1"></i>Record</a></li>
+            <li class="nav-item"><a class="nav-link @(CurrentTab == "appears-in" ? "active" : "")" href="javascript:void(0)" @onclick='() => SwitchTab("appears-in")'><i class="bi bi-journal-text me-1"></i>Appears In @if (mentionsLoaded) { <span class="badge bg-secondary">@entityMentions.Count</span> }</a></li>
+            <li class="nav-item"><a class="nav-link @(CurrentTab == "dossier"    ? "active" : "")" href="javascript:void(0)" @onclick='() => SwitchTab("dossier")'><i class="bi bi-file-earmark-text me-1"></i>Dossier</a></li>
         </ul>
         @GlobalEditControls()
     </div>
@@ -120,6 +126,37 @@ else
     {
         <SemanticEdgeSuggestions Name="@resolvedName" />
     }
+}
+
+@if (!notFound && CurrentTab == "appears-in")
+{
+    <div class="entity-detail-body">
+        <h6 class="text-muted mb-3">Beat mentions — where this entity appears in the narrative</h6>
+        @if (!mentionsLoaded)
+        {
+            <div class="text-muted small"><i class="bi bi-hourglass-split me-1"></i>Loading…</div>
+        }
+        else if (entityMentions.Count == 0)
+        {
+            <div class="text-muted small">No beat mentions recorded for this entity. Mentions are indexed automatically when beats are generated or saved.</div>
+        }
+        else
+        {
+            <table class="table table-sm table-dark table-hover">
+                <thead><tr><th>Strand</th><th>#</th><th>Excerpt</th></tr></thead>
+                <tbody>
+                    @foreach (var m in entityMentions)
+                    {
+                        <tr>
+                            <td><a href="/strand/@m.StrandId" class="text-info">@m.StrandTitle</a></td>
+                            <td class="text-muted">@m.BeatNumber</td>
+                            <td class="text-muted small">@m.Excerpt</td>
+                        </tr>
+                    }
+                </tbody>
+            </table>
+        }
+    </div>
 }
 
 @if (!notFound && CurrentTab == "family" && character != null && !string.IsNullOrEmpty(resolvedId))
@@ -1357,7 +1394,7 @@ else if (CurrentTab == "record" && document != null)
     /// Active view tab. Defaults to "record"; honored from ?tab=record|dossier|relationships|cyberware|knowledge|conditions|belongings|timeline.
     /// </summary>
     private static readonly string[] ValidTabs = {
-        "record", "dossier", "relationships", "cyberware",
+        "record", "dossier", "appears-in", "relationships", "cyberware",
         "knowledge", "conditions", "belongings", "timeline", "family"
     };
     private string CurrentTab =>
@@ -1625,6 +1662,10 @@ else if (CurrentTab == "record" && document != null)
     private List<RelatedRowsList.RelatedRow> factionMembers = [];
     private List<RelatedRowsList.RelatedRow> factionOps     = [];
 
+    // ── Appears In tab ──
+    private List<EntityBeatMention> entityMentions = [];
+    private bool mentionsLoaded;
+
     // Trip a tab neon-flicker on the next render (set when the entity changes)
     private bool _flickerOnRender;
 
@@ -1639,6 +1680,12 @@ else if (CurrentTab == "record" && document != null)
                 try { await JS.InvokeVoidAsync("cyberspaceEntityFlickerTabs"); }
                 catch { /* JS not loaded yet — silent */ }
             }
+        }
+        if (CurrentTab == "appears-in" && !mentionsLoaded && Guid.TryParse(resolvedId, out var entityGuid))
+        {
+            mentionsLoaded = true;
+            entityMentions = await MentionService.GetBeatsForEntityAsync(entityGuid);
+            StateHasChanged();
         }
         if (firstRender)
         {
@@ -1675,6 +1722,8 @@ else if (CurrentTab == "record" && document != null)
         primaryImage = null;
         // Navigating to a different entity discards any pending edits — prevents stale Save dispatch
         editMode = false; editBackupJson = null; editError = "";
+        // Reset "Appears In" so stale data never shows for the new entity
+        entityMentions = []; mentionsLoaded = false;
         // Mark the next render for the cyberpunk neon-flicker pass on tabs
         _flickerOnRender = true;
 

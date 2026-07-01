@@ -62,6 +62,16 @@ class BeatModeClassifier:
         from setfit import SetFitModel, Trainer, TrainingArguments
         from datasets import Dataset
 
+        # Filter to known labels; DB may contain future enum values not in LABEL_MAP
+        known = [(t, l) for t, l in zip(texts, labels) if l in LABEL_MAP]
+        if len(known) < len(texts):
+            console.print(f"[yellow]  Dropped {len(texts) - len(known)} rows with unknown Mode labels[/yellow]")
+        if not known:
+            console.print("[yellow]No usable labeled data — skipping SetFit training.[/yellow]")
+            return
+        texts, labels = zip(*known)
+        texts, labels = list(texts), list(labels)
+
         # Build dataset
         label_ids = [LABEL_MAP[l] for l in labels]
         ds = Dataset.from_dict({"text": texts, "label": label_ids})

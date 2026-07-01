@@ -11,7 +11,7 @@
 > All tools are MCP-prefixed `mcp__streetsamurai__<name>` by the client. Most return a
 > JSON string; the canon is the SQL database, scoped to the active Universe.
 
-**199 tools** across **29 tool families.**
+**201 tools** across **29 tool families.**
 
 ## Families
 
@@ -26,7 +26,7 @@
 | [Continuity](#continuity) | 2 |
 | [Core Entity Crud](#core-entity-crud) | 4 |
 | [Encyclopedia](#encyclopedia) | 35 |
-| [Entity Context](#entity-context) | 3 |
+| [Entity Context](#entity-context) | 4 |
 | [Findings](#findings) | 5 |
 | [Gear Entity Crud](#gear-entity-crud) | 7 |
 | [Lore Triple](#lore-triple) | 7 |
@@ -39,7 +39,7 @@
 | [Species](#species) | 2 |
 | [Story](#story) | 6 |
 | [Story Audit](#story-audit) | 2 |
-| [Strand](#strand) | 31 |
+| [Strand](#strand) | 32 |
 | [Universe](#universe) | 3 |
 | [Voice](#voice) | 5 |
 | [Workflow Monitor](#workflow-monitor) | 3 |
@@ -574,6 +574,13 @@ List every weapon in canon. Returns name + category + manufacturer. Use this to 
 Clear the entity context stack for a strand. Use when starting a new writing session for a strand to reset the LRU working memory.
 
 - `slug` (string, required) — Strand slug
+
+### `get_entity_beat_mentions`
+
+Find every beat in the narrative where a specific entity is mentioned. Returns a list grouped by strand with beat number, beat handle, and a short excerpt. Useful for auditing entity coverage, finding canon moments, and reverse-navigating from entity to story.
+
+- `entityId` (string, required) — Entity ID (GUID) or entity slug
+- `limit` (int, optional) — Maximum results to return (default 50)
 
 ### `get_entity_context`
 
@@ -1292,6 +1299,12 @@ Build an Audible AI-narration hand-off package for a strand. Produces three file
 
 - `strandIdOrSlug` (string, required) — Strand id (GUID) or slug.
 - `withPhonetics` (bool, optional) — Run the optional LLM phonetics pass to fill in 'Say it as' respellings. Default true. Set false to skip and leave the column blank for manual completion.
+
+### `print_strand`
+
+Print all beats of a strand as continuous prose — each beat's Text joined by a blank line. No headers, no beat numbers, no metadata. Accepts strand id (GUID) or slug. Use this to read the full prose of a strand in one call.
+
+- `idOrSlug` (string, required) — Strand Guid id or slug.
 
 ### `publish_audiobook`
 

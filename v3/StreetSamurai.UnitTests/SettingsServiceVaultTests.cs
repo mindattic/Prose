@@ -189,7 +189,7 @@ public class SettingsServiceVaultTests
     // Locks the provider-id contract. If any provider's key path drifts away
     // from "MindAttic:Vault:LLM:<id>:apiKey" this matrix fails fast.
 
-    [TestCase("claude",     nameof(SettingsService.ApiKey))]
+    [TestCase("claude-api", nameof(SettingsService.ApiKey))]
     [TestCase("openai",     nameof(SettingsService.OpenAiApiKey))]
     [TestCase("gemini",     nameof(SettingsService.GeminiApiKey))]
     [TestCase("deepseek",   nameof(SettingsService.DeepSeekApiKey))]

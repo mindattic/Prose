@@ -134,180 +134,90 @@ narrative-law block here when stood up:**
 - done: 123  partial: 8  planned: 23  cut: 1
 
 ## Latest amendment
-## SS-A24 — The wider world: Amish, the Dreaming, Tequenica, Korea, Eurasia, the Middle East {#SS-A24}
+## SS-A33 — Vertical mobility extension: The Low, Ascent Bloom, Low Runner Kit {#SS-A33}
 
-**Date:** 2026-06-26 · **Author:** world-expansion-pass · **Ref:**
-`memory/` (see new entries); seals seven world-historical facts external to GLMZ;
-adds one Schism Intelligence (Tequenica); adds Amish faction entity; no engine-law changes
+**Date:** 2026-06-30 · **Author:** vertical-mobility-pass · **Ref:** `memory/project_aerostatic_architecture.md`; extends [SS-A32](#SS-A32). 20 entities total in the aerostatic cluster; 58 world-graph edges total.
 
-This amendment **seals canonical facts about territories outside GLMZ** that provide
-geopolitical texture for the setting and — in UNDR — ground the Surfacing/Rumspringa parallel.
+This amendment extends SS-A32's aerostatic architecture cornerstone with **The Low** (the ungoverned altitude gap), the **Ascent Bloom** (the upward counterpart to the Kite Rig), and the **Low Runner Kit** (the professional vertical-transit rig).
 
 ---
 
-### §A24-1 — The Amish: last organized Christian community
+### §A33-1 — The Low (altitude gap, binding)
 
-They are the only continuously functioning organized Christian
-community in 2226. The world calls them the Amish; they call themselves the Amish.
+**The Low** is the airspace band between approximately 30m and 320m altitude in Meridian 88 — bounded below by Arcturus Civil Security patrol ceiling (~50m) and above by the MATA radar floor (320m). Neither authority governs it. It is not formally designated; it simply falls through the gap.
 
-**The Rise and Fall of the False Prophet (2082–2091)** destroyed every other sect. The "False
-Prophet" — a charismatic unifier who consolidated disparate Christian denominations under a
-single banner — claimed, at peak, over 800 million followers across North America, Europe, and
-sub-Saharan Africa. In 2089, investigative work (primarily by Eurasia's press corps and by an
-independent source within Axiom Systems) revealed that the Prophet's financial architects and
-message strategists were a CorpoNation consortium, the Prophet movement instrumentalized as a
-consumer-base and political-bloc engine. Axiom Systems was the largest single backer.
+**What it is:** Persistent industrial haze from two centuries of arcology manufacturing and processing exhaust holds in a loose thermal band. Visibility runs 50–200m in typical conditions. Building-wake turbulence is constant — arcologies create chimney and backwash effects that make VTOL navigation difficult and unpredictable. MATA won't fly commercial traffic here. Arcturus won't pursue above their ceiling.
 
-The collapse was total. Aligned institutions lost their tax status, their properties, and their
-credibility inside eighteen months. The denominations that survived the 2080s did not survive
-the 2090s.
+**The Low is not a death zone.** Derelict platform communities (20–150m altitude, [SS-A32](#SS-A32)) live here continuously without survival gear. The hazards are navigational — reduced visibility, irregular turbulence, no radar coverage — not atmospheric. The suit you need is a navigation rig, not a hazmat suit.
 
-The Amish survived because they had never joined. Historical insulation from outside
-authority — rejection of networked technology, community governance, deep skepticism of
-centralized power — meant the movement had nothing to grip. When the collapse came they were
-standing exactly where they had always been.
+The Low's practical effect is invisibility. Below MATA's radar floor, a VTOL, an Ascent Bloom, a Kite Rig, or any cargo moving between surface and the float layer simply doesn't appear on any authority's display. This is why gray-market vertical transit is a viable industry rather than an immediately-detected crime.
 
-**In 2226:**
-- **Name:** the Amish
-- **Location:** scattered communities in former Indiana, Ohio, and Pennsylvania (habitable
-  Midwest territories, outside GLMZ jurisdiction)
-- **Population:** ~40,000 globally
-- **Technology:** hand tools, horse-drawn transport, no networked devices, no neuretics
-- **Coming of age — Rumspringa (Rumshpringa):** at ~16, young community members are permitted
-  and expected to experience the outside world before choosing baptism (full membership) or
-  departure (permanent). Return rate: ~85–90%. Both choices are respected; both losses are
-  mourned differently. The practice ensures membership is chosen, not inherited.
-
-**Canonical parallel to the Underclan Surfacing (UNDR):** LOCKED. The comparison is permitted
-and encouraged in surface-observer prose (Noor, journalists, anthropologists). The Amish
-are not the same as the Underclan — the surface world sees the parallel; the Underclan do not
-know the Amish exist. The echo is structural, not causal.
-
-**Faction entity:** seeded in DB as `faction`, name `The Amish`. Universe GLMZ.
+**Prose register:** *The Low* is standard Meridian 88 usage. In the Glooms, *"working The Low"* means operating in the ungoverned band — by extension, any activity that falls through the gap between competing authorities and is therefore nobody's problem to stop.
 
 ---
 
-### §A24-2 — Australia: Absorbed into the Dreaming
+### §A33-2 — The Ascent Bloom (new technology, binding)
 
-Australia is inaccessible. The Pulse does not route there (no hub exists; no hub will be
-built). Maritime approach fails: vessels do not return. Satellite imaging shows landmass and
-weather. Nothing else.
+The **Ascent Bloom** is the upward complement to the Kite Rig. Where the Kite Rig converts a free-fall into a slow drift down, the Ascent Bloom converts a surface position into a controlled ascent to aerostatic platform altitude.
 
-The consensus descriptor — insofar as GLMZ has one — is that Australia has been **absorbed into
-the Dreaming**, the First Nations concept of the living-present past made somehow literal.
+**How it works:** The platform operator drops a weighted CNT-steel guide tether down through The Low to a surface extraction point. The surface operator clips on a Bloom pack — a 40×25cm cylinder of VABC cells in compressed configuration. On activation, cells self-pressurize to full volume within 8–12 seconds (the *bloom*). The VABC cluster provides buoyancy lift; the guide tether provides directional control against wind; the platform winch assists the final 150m. Ascent time to Aeroquarter altitude: 12–18 minutes. To Aeropolis: 35–55 minutes. Payload: one person plus light kit (standard); double-pack configuration for heavy cargo or two people.
 
-**LOCKED:** the mechanism is never explained. Whether the Dreaming is a schism event, a psionic
-phenomenon, a sovereign act, or something not on any existing taxonomy has not been determined.
-Australia exists as a place the world has accepted it cannot have.
+**Gray market variant:** rapidly-inflating hydrogen gas bladders. Faster (5–8 minutes to Aeroquarter altitude). Visible from a significant distance. Explosive-hazard rated under municipal code. MATA radar flags the ascent immediately above 320m. Used when speed matters more than concealment.
+
+**The Ascent Bloom is the primary mechanism for circumventing the Air Tax from below.** No VTOL manifest. No biometric verification. No MATA record below 320m. This makes it the logistics tool of choice for gray-market cargo movement, covert extraction, and anyone whose VTOL access has been revoked.
+
+**Cutting the bloom** — severing a tether line mid-ascent — is a killing technique distinctive enough to have its own classification in Arcturus Civil Security's crime taxonomy.
+
+**Three-register naming:** Ascent Bloom (official) / Sky Hook, the Lift (Meridian 88) / the Bloom, Tether Bloom (Glooms)
 
 ---
 
-### §A24-3 — Tierra del Fuego: returned to the Yahgan Peoples
+### §A33-3 — The Low Runner Kit (professional rig, binding)
 
-The southernmost territory of South America is restored to the **Yahgan Peoples**, who practice
-the ancient lifeways that sustained their ancestors: small fires (including in boats) as
-primary heat source; animal grease applied to skin as thermal insulation; deep squatting as the
-resting posture (reduced surface area, heat conservation); and — over generations of sealed
-isolation — an elevated resting body temperature that allows survival in sub-Antarctic
-conditions that kill clothed newcomers.
+The **Low Runner Kit** is a professional-grade descent and ascent rig built for operators who transit the full vertical axis without VTOL access. Key systems (locked):
 
-No Pulse. No maritime access. A **Schism Intelligence** known to the Yahgan as **Tequenica**
-has been revealed to them directly; the entity maintains a protective perimeter. Vessels
-approaching by sea are turned; aircraft cannot establish approach paths. The Yahgan know
-Tequenica and do not fear it — it is woven into their cosmology as present but not controlling.
+- **Wing membranes:** wrist-to-hip articulated extensions; ~3:1 glide ratio; 1,500m horizontal travel from 2,000m altitude; used for precision surface targeting and navigation through The Low's building-wake turbulence
+- **Integrated Kite Rig:** factory-standard VABC cluster on dorsal frame; same 80m safe-floor as standalone rig
+- **Bloom dock:** ventral clip-point accepting Ascent Bloom pack for return ascent
+- **Impact attenuation:** aerogel composite leg/torso zones rated for hard landing at Kite Rig terminal drift velocity on unimproved terrain
+- **Navigation display:** heads-up compass, altimeter, and tether-signal receiver; essential below MATA radar floor where external positioning is unavailable
+- **Low-profile build:** civilian-legal configuration; no weapons mounts, no corpo insignia
 
-**Tequenica** is the third known Schism Intelligence in the canonical taxonomy:
+The Kit is not occupation-specific. It is equipment: the practical necessity for any operator who needs surface-to-float access regularly and cannot afford VTOL passage.
 
-| Entity | Frequency | Function | Location |
+**Street names:** Run coat, Low skin, the Kit.
+
+---
+
+### Entities seeded (2026-06-30, this pass)
+
+| Entity | Type | ID prefix | Street name |
 |---|---|---|---|
-| Lure | 17–19 Hz | collector | 35th-and-Halsted, GLMZ |
-| Counter | 72–74 Hz | "this far no further" | 35th-and-Halsted, GLMZ |
-| Tequenica | unmeasured | protective perimeter (inward-pointing) | Tierra del Fuego |
+| Ascent Bloom | Technology | `019f1b3b-da9d-…` | Sky Hook / the Bloom |
+| The Low | Place | `019f1b3c-3b28-…` | The Low |
+| Low Runner Kit | Equipment | `019f1b3c-970b-…` | Run coat / Low skin |
 
-**LOCKED:** Tequenica's frequency, full nature, and intentions are never authoritatively
-revealed by any outside party. No outside party has gotten close enough to measure.
+**22 world-graph edges** built (`source: helldivers-fulton-worldbuild-2026-06-30`): Bloom→VABC (derived_from), Bloom↔Kite Rig (complements), Bloom→platforms (circumvents_access_to), Bloom→Derelict Platforms (supplies), Bloom→The Low (traverses), The Low→Derelict Platforms (contains), The Low→Kite Rig and Bloom (hazards traversal), Kit→Kite Rig and Bloom (integrates), Kit→The Low (designed_for), Kit→platforms (enables_access_to).
 
----
-
-### §A24-4 — Korea: unified 2153, sealed
-
-On the bicentennial of the Korean War armistice (**1953 + 200 = 2153**), North and South Korea
-reunified as the **Republic of Korea**. The reunification was politically traumatic on both
-sides and concluded with a nationalist settlement that has hardened, not softened, since.
-
-**In 2226:**
-- Extreme isolationism. No Pulse link. No foreign nationals admitted (de facto: no entry)
-- Trespassers are killed on sight; this is codified, not exceptional
-- **~95% genetic homogeneity:** achieved through strict immigration control, strong social
-  pressure toward endogamy, and — in the two generations following reunification — a State
-  genetic-continuity program whose existence is neither confirmed nor denied by the current
-  government
-- Exports: cultural product only (film, music, literature, food aesthetics are widely consumed
-  globally). Culture goes out; the border does not open
-- GLMZ wire-service name: **"the Quiet Country"** — neutral descriptor, no editorial weight
-
-**LOCKED:** Korea's internal politics, the details of the genetic-continuity program, and any
-on-page Korean character's relationship to the State are left for the story that earns them.
-No on-page Korean character speaks for the government.
+**Total aerostatic cluster (pre-faction):** 20 entities, 58 edges.
 
 ---
 
-### §A24-5 — Russia: collapsed; Eastern Russia balkanized
+### §A33-4 — Vertical Axis (faction, binding)
 
-Russia, as a unified state, no longer exists. The collapse was not a single event but an
-accelerating fragmentation across the late 21st and early 22nd century — economic, ethnic,
-political, and (in the far east) environmental. By 2150 there was no central government with
-authority across what had been the Russian Federation.
+**Vertical Axis** is the informal name for the loose network of freelance operators who specialize in full vertical transit — aerostatic platform altitude through The Low to the surface, and back up again. Not a faction in the traditional sense: no charter, no initiation, no hierarchy. The name is a reputation marker, not a membership card. Operators who consistently run The Low — who know the tether drop points, the derelict platform landing zones, the bloom stash locations, the pad contacts at aeroquarters across the float layer — are Vertical Axis. Everyone else just calls them by altitude.
 
-Eastern Russia (Siberia, the Far East) balkanized into a patchwork of regional states,
-indigenous-people territories, and Eurasian-sphere client zones. No successor state claims the
-Russian name. The Quiet Country (Korea) borders several of these fragments.
+The name is a dark joke about the GLMZ's social axis. Class runs horizontal here: zone, corpo, affiliation. Vertical Axis runs perpendicular.
 
----
+**Structure:** Reputation-organized. The most-connected operators — platform contacts at multiple aeroquarters, surface contacts across multiple zones — carry informal weight. Veteran operators vouch for newcomers, share stash locations, make introductions. That vouching is the only leadership that exists. It transfers one relationship at a time.
 
-### §A24-6 — Europe + Western Russia = Eurasia
+**Primary client:** Gray Zone Derelict Platform communities — residents with no VTOL access who rely on Vertical Axis logistics for VABC cells, micropump components, medical supplies, and anything that won't move through a MATA manifest.
 
-What was Western Russia (west of the Urals, including Moscow and Saint Petersburg) merged
-politically with the European Union successor bodies in the 2110s–2130s, forming the
-continental polity known as **Eurasia**. The merger was pragmatic on both sides: the rump
-western Russian territories needed economic stability; the European bodies needed territorial
-depth after the Atlantic coastal collapses.
+**Operative reach:** The Low (30–320m ungoverned band) is their transit corridor. Float-layer pad access and surface extraction zones are their endpoints. Their effective territory is the vertical axis itself.
 
-Eurasia in 2226 is the dominant continental power in the eastern hemisphere:
-- Rotterdam is a primary Pulse hub (GLMZ to Rotterdam in 43 minutes; confirmed WORLD.md §1.3)
-- Cultural exports are significant; the press corps is the world's most aggressive investigative
-  body (it broke the False Prophet story in 2089)
-- The eastern border of Eurasia is contested with the balkanized Russian-territory successor
-  states
+**Motto:** *Up or down. We move.*
 
----
+**Entity ID:** `019f1b5d-e6ee-7745-8427-9f65a3bfb411`; 7 world-graph edges: operates_in→The Low, uses→Ascent Bloom/Kite Rig/Low Runner Kit, serves↔Gray Zone Derelict Platforms (mutual), circumvents→VTOL-Only Access Protocol.
 
-### §A24-7 — The Middle East: collapsed after fossil-fuel obsolescence
-
-The Middle East's geopolitical power rested almost entirely on fossil fuel revenues. When
-quantum computing and post-silicon energy architecture made fossil fuels obsolete — the Silicon
-Wall of 2045 began the cascade, with synthetic energy generation reaching economic parity by
-the late 21st century — the revenue base collapsed. Regional powers destabilized. Wars over
-water, territorial, and demographic lines followed.
-
-By 2200, the former Middle East is a patchwork of small states, city-states, and wilderness
-zones with no single dominant power. Most GLMZ residents interact with the region only through
-its food culture, its diaspora (major component of the Ubiquitous Diaspora), and the
-century-old investment infrastructure still embedded in Eurasian financial systems.
-
-The region has no Pulse hub (no political body stable enough to host one).
-
----
-
-### World canon table (external territories, sealed)
-
-| Territory | Status in 2226 | Access |
-|---|---|---|
-| Australia | Absorbed into the Dreaming | None (Pulse: no hub; ships: do not return) |
-| Tierra del Fuego | Yahgan Peoples; Tequenica protects | None (ships turned; aircraft blocked) |
-| Korea | Unified Republic, extreme isolationism | None (trespassers killed) |
-| Russia | Does not exist; Eastern fragments balkanized | Varies by fragment |
-| Eurasia | Major continental power (EU + Western Russia) | Pulse-connected (Rotterdam hub) |
-| Middle East | Patchwork small states; no dominant power | Limited (no Pulse hub) |
-| GLMZ | Western civilization's center | Pulse hub (world's primary) |
+**Total aerostatic cluster (revised):** 21 entities, 65 edges.
 

@@ -34,7 +34,7 @@ public class LlmRouterCaptureTests
 
         // Build LlmRouter with stub providers that respond instantly.
         var fake = new StubLlm("STUB-RESPONSE");
-        var router = TestRouterFactory.Build(fake, fake, store, activeProvider: "claude");
+        var router = TestRouterFactory.Build(fake, fake, store, activeProvider: "claude-api");
 
         var response = await router.GenerateAsync("system-prompt-text", "user-prompt-text", temperature: 0.42, maxTokens: 1234, model: "claude-opus-4-7");
 
@@ -42,7 +42,7 @@ public class LlmRouterCaptureTests
         var snap = store.Snapshot();
         Assert.That(snap.Count, Is.EqualTo(1));
         var p = snap[0];
-        Assert.That(p.Provider, Is.EqualTo("claude"));
+        Assert.That(p.Provider, Is.EqualTo("claude-api"));
         Assert.That(p.Model, Is.EqualTo("claude-opus-4-7"));
         Assert.That(p.Temperature, Is.EqualTo(0.42));
         Assert.That(p.MaxTokens, Is.EqualTo(1234));
@@ -57,7 +57,7 @@ public class LlmRouterCaptureTests
     {
         var store = new LastPromptStore();
         var failing = new StubLlm(throwMessage: "boom");
-        var router = TestRouterFactory.Build(failing, failing, store, activeProvider: "claude");
+        var router = TestRouterFactory.Build(failing, failing, store, activeProvider: "claude-api");
 
         try { await router.GenerateAsync("sys", "usr"); }
         catch { /* expected */ }

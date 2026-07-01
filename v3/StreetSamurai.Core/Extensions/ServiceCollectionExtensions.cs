@@ -396,7 +396,7 @@ public static class ServiceCollectionExtensions
         services.AddSingleton<WorldStatePrecheckService>();
         services.AddSingleton<BeatFactExtractionService>();
         services.AddSingleton<StoryRepairService>();
-        services.AddSingleton<WikiLinkService>();
+
         services.AddSingleton<IBookReviewService, BookReviewService>();
         services.AddSingleton<BookExportService>();
 
@@ -822,12 +822,19 @@ public static class ServiceCollectionExtensions
         services.AddSingleton<WorkflowMonitorService>();
         services.AddSingleton<EntityContextStack>();
         services.AddSingleton<EntityContextService>();
+        services.AddScoped<EntityMentionService>();
         services.AddSingleton<DocContextStack>();
         services.AddSingleton<DocContextService>();
         services.AddSingleton<ContextTelemetryService>();
         services.AddSingleton<TelemetryExportService>();
         services.AddSingleton<TensionEscalationService>();
         services.AddSingleton<ReaderKnowledgeService>();
+        services.AddSingleton<ChapterSummaryService>();
+        services.AddSingleton<OpenThreadsService>();
+        services.AddSingleton<PremiseToOutlineService>();
+        services.AddSingleton<OutlineAdherenceService>();
+        services.AddSingleton<NarrativeForkService>();
+        services.AddSingleton<ChapterCloseProcessorService>();
         services.AddSingleton<ProseWriterRouter>();
 
         return services;

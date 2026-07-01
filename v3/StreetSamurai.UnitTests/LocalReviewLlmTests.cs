@@ -58,7 +58,7 @@ public class LocalReviewLlmTests
         // Cloud providerId/apiKey are intentionally ignored by the local transport;
         // pass deliberately bogus cloud values to prove they're not used.
         var result = await sut.CallAsync(
-            providerId: "claude", apiKey: "sk-should-be-ignored", model: "",
+            providerId: "claude-api", apiKey: "sk-should-be-ignored", model: "",
             systemPrompt: "you are a reviewer", userMessage: "rate this strand",
             maxTokens: 256, temperature: 0.85);
 
@@ -68,7 +68,7 @@ public class LocalReviewLlmTests
             "must POST to the configured local endpoint, never a cloud URL");
         Assert.That(capturedBody, Does.Contain("qwen2.5-14b-rev"),
             "falls back to the configured local model tag when model arg is blank");
-        Assert.That(capturedBody, Does.Not.Contain("claude").And.Not.Contain("sk-should-be-ignored"),
+        Assert.That(capturedBody, Does.Not.Contain("claude-api").And.Not.Contain("sk-should-be-ignored"),
             "cloud provider id / key must not leak into the local request");
     }
 
