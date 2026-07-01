@@ -1,4 +1,8 @@
 {
-  "voters": ["claude", "openai", "gemini", "deepseek"],
-  "judge": "claude"
+  "voters": ["gemini", "openai", "claude-api"],
+  "judge": "gemini",
+  "models": {
+    "claude-api": "claude-sonnet-4-6",
+    "gemini": "gemini-2.5-flash"
+  }
 }

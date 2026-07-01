@@ -680,7 +680,7 @@ public static class ServiceCollectionExtensions
             {
                 ApiKeys =
                 {
-                    ["claude"]     = s.ApiKey,
+                    ["claude-api"]  = s.ApiKey,
                     ["openai"]     = s.OpenAiApiKey,
                     ["gemini"]     = s.GeminiApiKey,
                     ["deepseek"]   = s.DeepSeekApiKey,
@@ -692,7 +692,7 @@ public static class ServiceCollectionExtensions
                     ["fireworks"]  = s.FireworksApiKey,
                     ["cohere"]     = s.CohereApiKey,
                 },
-                JudgeProviderId = "claude",
+                JudgeProviderId = "claude-api",
                 // AllowedProviderIds defaults to { claude, openai, deepseek }.
                 // legion.json (when present at the project root) overrides this
                 // so each app declares its own voter panel.

@@ -122,8 +122,8 @@ public class SettingsService : IDisposable
     // Models, voice prefs, and other non-credential settings stay in Settings.json (per-app).
     public string ApiKey
     {
-        get => ResolveApiKey("SS_CLAUDE_API_KEY", "claude", data.ApiKey);
-        set { MindAtticCredentialStore.SetKey("claude", value); data.ApiKey = value; ScheduleSave(); }
+        get => ResolveApiKey("SS_CLAUDE_API_KEY", "claude-api", data.ApiKey);
+        set { MindAtticCredentialStore.SetKey("claude-api", value); data.ApiKey = value; ScheduleSave(); }
     }
     public string Model { get => data.Model; set { data.Model = value; ScheduleSave(); } }
     /// <summary>Raised when the theme changes so layout components can update without a full reload.</summary>
@@ -624,7 +624,7 @@ public class SettingsService : IDisposable
 
     private void SyncCredentialStoreFromData()
     {
-        MindAtticCredentialStore.SetKey("claude",      data.ApiKey);
+        MindAtticCredentialStore.SetKey("claude-api",   data.ApiKey);
         MindAtticCredentialStore.SetKey("openai",      data.OpenAiApiKey);
         MindAtticCredentialStore.SetKey("gemini",      data.GeminiApiKey);
         MindAtticCredentialStore.SetKey("ideogram",    data.IdeogramApiKey);
@@ -666,7 +666,7 @@ public class SettingsService : IDisposable
             MindAtticCredentialStore.SetKey(providerId, legacyKey);
         }
 
-        MigrateIfMissing("claude",      data.ApiKey);
+        MigrateIfMissing("claude-api",   data.ApiKey);
         MigrateIfMissing("openai",      data.OpenAiApiKey);
         MigrateIfMissing("gemini",      data.GeminiApiKey);
         MigrateIfMissing("ideogram",    data.IdeogramApiKey);
@@ -748,7 +748,7 @@ public class SettingsService : IDisposable
         public string DefaultVoiceProfileId { get; set; } = "";
         public string OpenAiApiKey { get; set; } = "";
         public string OpenAiModel { get; set; } = "gpt-4.1-mini";
-        public string ActiveLlmProvider { get; set; } = "claude";
+        public string ActiveLlmProvider { get; set; } = "claude-api";
         public int EditorFontSize { get; set; } = 14;
         public int AutoSaveIntervalMs { get; set; } = 2000;
         public string GeminiApiKey { get; set; } = "";
@@ -802,8 +802,8 @@ public class SettingsService : IDisposable
         public int ReviewProse { get; set; } = 4;
         public int ReviewPanel { get; set; } = 128;
         public int ReviewReaders { get; set; } = 50;
-        public string ReviewJudgeProvider { get; set; } = "claude";
-        public string ReviewAllowedProviders { get; set; } = "claude,openai,gemini,deepseek";
+        public string ReviewJudgeProvider { get; set; } = "gemini";
+        public string ReviewAllowedProviders { get; set; } = "claude-api,openai,gemini";
         public int ReviewMaxConcurrency { get; set; } = 10;
         // Local-LLM review (--local) defaults
         public string LocalReviewBaseUrl { get; set; } = "http://localhost:11434/v1/chat/completions";

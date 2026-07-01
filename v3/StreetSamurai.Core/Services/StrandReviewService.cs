@@ -100,7 +100,8 @@ public class StrandReviewService
 
     /// <summary>Pick the transport for a run. The ONLY place cloud-vs-local is decided —
     /// everything downstream just uses the returned route.</summary>
-    private ReviewRoute BuildRoute(bool useLocal, string? allowedProvidersOverride = null, string? localModelOverride = null, string? cloudModelOverride = null)
+    private ReviewRoute BuildRoute(bool useLocal, string? allowedProvidersOverride = null, string? localModelOverride = null,
+        string? cloudModelOverride = null, IReadOnlyDictionary<string, string>? modelMap = null)
     {
         if (useLocal)
         {
@@ -112,8 +113,11 @@ public class StrandReviewService
                 _ => "local",         // dummy key; LocalReviewLlm ignores it
                 (_, _) => model);     // one local model, regardless of provider/cheap
         }
-        Func<string, bool, string> modelFor = cloudModelOverride != null
-            ? (_, _) => cloudModelOverride
+        // Resolution order: modelMap[provider] → cloudModelOverride → ResolveBallotModel
+        Func<string, bool, string> modelFor = (modelMap != null || cloudModelOverride != null)
+            ? (p, cheap) => (modelMap != null && modelMap.TryGetValue(p, out var mapped) ? mapped : null)
+                            ?? cloudModelOverride
+                            ?? ResolveBallotModel(p, cheap)
             : ResolveBallotModel;
         return new ReviewRoute(
             cloudLlm,
@@ -304,7 +308,8 @@ public class StrandReviewService
         Guid strandId, int ballotCount, int proseCount,
         IProgress<int>? progress = null, CancellationToken ct = default,
         bool skipDiagnosis = false, bool cheapModels = false, string? allowedProvidersOverride = null,
-        bool useLocal = false, string? localModelOverride = null, string? cloudModelOverride = null)
+        bool useLocal = false, string? localModelOverride = null, string? cloudModelOverride = null,
+        IReadOnlyDictionary<string, string>? modelMap = null)
     {
         if (ballotCount <= 0) ballotCount = settings.ReviewBallots;
         if (proseCount < 0) proseCount = 0;
@@ -363,7 +368,8 @@ public class StrandReviewService
                 var result = await RunSampledReviewAsync(strandId, ballotCount, proseCount,
                     progress, ct, skipDiagnosis: true, cheapModels: cheapModels,
                     allowedProvidersOverride: allowedProvidersOverride,
-                    useLocal: useLocal, localModelOverride: localModelOverride, cloudModelOverride: cloudModelOverride);
+                    useLocal: useLocal, localModelOverride: localModelOverride, cloudModelOverride: cloudModelOverride,
+                    modelMap: modelMap);
                 return result with
                 {
                     ReportMarkdown      = AppendStructuralWarnings(result.ReportMarkdown, diagnosis),
@@ -371,7 +377,7 @@ public class StrandReviewService
                 };
             }
         }
-        var route = BuildRoute(useLocal, allowedProvidersOverride, localModelOverride, cloudModelOverride);
+        var route = BuildRoute(useLocal, allowedProvidersOverride, localModelOverride, cloudModelOverride, modelMap);
         var providers = route.Providers;
         if (providers.Count == 0)
             throw new InvalidOperationException("No trusted LLM providers are configured with API keys — cannot run reviews.");
@@ -881,7 +887,9 @@ Be honest and use the whole scale.";
         var providers = ReviewProviderIds();
         if (providers.Count == 0)
             throw new InvalidOperationException("No trusted LLM providers are configured with API keys — cannot edit.");
-        var editProvider = providers.Contains("claude") ? "claude" : providers[0];
+        var editProvider = providers.Contains("claude-api") ? "claude-api"
+                         : providers.Contains("claude-team") ? "claude-team"
+                         : providers[0];
 
         var export = await exporter.ExportAsync(strandId, numberBeats: true, ct);
 
@@ -1256,7 +1264,8 @@ Return ONLY a JSON object, nothing else:
     /// defaults because their scores drive 82%/85% decisions.</summary>
     private static readonly Dictionary<string, string> CheapModels = new(StringComparer.OrdinalIgnoreCase)
     {
-        ["claude"]   = "claude-haiku-4-5-20251001",
+        ["claude-api"]  = "claude-haiku-4-5-20251001",
+        ["claude-team"] = "claude-haiku-4-5-20251001",
         ["openai"]   = "gpt-4.1-nano",
         ["gemini"]   = "gemini-2.5-flash-lite",
         ["deepseek"] = "deepseek-chat",
@@ -1504,7 +1513,7 @@ Return ONLY a JSON object and nothing else:
             var judgeId = settings.ReviewJudgeProvider;
             judge = cfg.ActiveProviderIds.Contains(judgeId)
                 ? judgeId
-                : cfg.ActiveProviderIds.FirstOrDefault() ?? "claude";
+                : cfg.ActiveProviderIds.FirstOrDefault() ?? "claude-api";
             key = ResolveKey(judge);
             if (string.IsNullOrWhiteSpace(key)) return FallbackSummary(reviews, avg, dist);
             model = LegionClient.DefaultModels.GetValueOrDefault(judge, "");
