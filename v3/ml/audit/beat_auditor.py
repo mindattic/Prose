@@ -1,201 +1,175 @@
 """
-Score every current non-draft beat with the trained quality model,
-write Findings for beats below threshold, and optionally write gripe topic Findings.
+ML beat auditor: gripe topic analysis + register bleed detection.
 
 Usage:
-    python beat_auditor.py [--slug <strand_slug>] [--all] [--json]
-Exit codes: 0=clean, 1=advisory (>=1 Low finding), 2=blocking (>=1 High finding)
+    python beat_auditor.py --gripes [--strand <slug>]
+    python beat_auditor.py --register [--strand <slug>]
+    python beat_auditor.py --all [--strand <slug>]
+Exit codes: 0=clean, 1=findings present
 """
 import sys
 import os
 sys.path.insert(0, os.path.dirname(os.path.dirname(__file__)))
 
-import json
 import argparse
+from pathlib import Path
 from rich.console import Console
 from rich.table import Table
 from db import get_connection
-from models.beat_quality_model import BeatQualityModel
 from models.topic_model import GripeMiner
-from audit.findings_writer import (
-    delete_stale, write_beat_score_finding, write_gripe_finding,
-)
-from config import BEAT_QUALITY_MODEL_PATH, TOPIC_MODEL_PATH, GRIPE_TOPIC_MIN_PERCENT
+from models.register_classifier import RegisterClassifier
+from audit.findings_writer import delete_stale, write_gripe_finding, write_register_finding
+from config import TOPIC_MODEL_PATH, REGISTER_MODEL_PATH
 
 console = Console()
 
 ALL_BEATS_SQL = """
 SELECT
-    s.Slug  AS StrandSlug,
-    sb.SortKey,
+    s.Slug AS StrandSlug,
     ROW_NUMBER() OVER (PARTITION BY sb.StrandId ORDER BY sb.SortKey) AS BeatNumber,
-    COUNT(*) OVER (PARTITION BY sb.StrandId)                          AS TotalBeats,
-    b.Id    AS BeatId,
-    b.Text  AS BeatText
+    CONVERT(nvarchar(36), b.Id) AS BeatId,
+    b.Text AS BeatText
 FROM StrandBeats sb
-JOIN Beats b      ON b.Id       = sb.BeatId
-JOIN Strands s    ON s.Id       = sb.StrandId
-WHERE s.IsDraft = 0
+JOIN Beats b   ON b.Id  = sb.BeatId
+JOIN Strands s ON s.Id  = sb.StrandId
+WHERE s.IsWIP    = 0
   AND sb.IsEnabled = 1
   AND b.Text IS NOT NULL
-  AND LEN(TRIM(b.Text)) > 50
+  AND LEN(TRIM(b.Text)) > 100
 """
-
-STRAND_FILTER_SQL = ALL_BEATS_SQL + " AND s.Slug = ?"
 
 STRAND_GRIPES_SQL = """
-SELECT sr.Improvements
+SELECT sr.Improvements AS GripeText
 FROM StrandReviews sr
 JOIN Strands s ON s.Id = sr.StrandId
-WHERE s.Slug = ?
+WHERE s.IsWIP  = 0
+  AND s.Slug   = ?
   AND sr.Improvements IS NOT NULL
-  AND LEN(TRIM(sr.Improvements)) > 5
+  AND LEN(TRIM(sr.Improvements)) > 10
 """
 
 
-def run_audit(conn, model: BeatQualityModel, slug: str | None = None) -> list[dict]:
+def run_gripe_audit(conn, miner: GripeMiner, slug: str | None) -> list[dict]:
     cursor = conn.cursor()
     if slug:
-        cursor.execute(STRAND_FILTER_SQL, (slug,))
+        slugs_to_audit = [slug]
     else:
-        cursor.execute(ALL_BEATS_SQL)
+        cursor.execute("SELECT DISTINCT Slug FROM Strands WHERE IsWIP = 0")
+        slugs_to_audit = [r[0] for r in cursor.fetchall()]
+
+    all_findings = []
+    for s in slugs_to_audit:
+        cursor.execute(STRAND_GRIPES_SQL, (s,))
+        gripes = [r[0].strip() for r in cursor.fetchall() if r[0]]
+        if not gripes:
+            continue
+        delete_stale(conn, f"strand:{s}", "ML-PROSE-GRIPE")
+        findings = miner.strand_findings(s, gripes)
+        for f in findings:
+            write_gripe_finding(conn, file_path=f"strand:{s}",
+                                severity=f["severity"], summary=f["summary"],
+                                suggested_fix=f["suggested_fix"])
+        all_findings.extend(findings)
+    return all_findings
+
+
+def run_register_audit(conn, clf: RegisterClassifier, slug: str | None) -> list[dict]:
+    sql = ALL_BEATS_SQL + (" AND s.Slug = ?" if slug else "")
+    cursor = conn.cursor()
+    cursor.execute(sql, (slug,) if slug else ())
     rows = cursor.fetchall()
 
-    if not rows:
-        console.print("[yellow]No beats found.[/yellow]")
-        return []
-
-    # Group by strand
     strands: dict[str, list] = {}
     for row in rows:
-        slug_key = row[0]
-        if slug_key not in strands:
-            strands[slug_key] = []
-        strands[slug_key].append({
-            "beat_number": int(row[2]),
-            "total_beats": int(row[3]),
-            "beat_id":     str(row[4]),
-            "beat_text":   row[5],
+        strands.setdefault(row[0], []).append({
+            "beat_number": int(row[1]),
+            "beat_id":     row[2],
+            "text":        row[3],
         })
 
     all_findings = []
     for strand_slug, beats in strands.items():
-        console.print(f"[cyan]Auditing {strand_slug} ({len(beats)} beats)...[/cyan]")
-
-        texts        = [b["beat_text"] for b in beats]
-        beat_numbers = [b["beat_number"] for b in beats]
-        total_beats  = [b["total_beats"] for b in beats]
-
-        # Score before wiping: if predict raises, existing findings survive intact
-        try:
-            scores = model.predict(texts, beat_numbers, total_beats)
-        except Exception as exc:
-            console.print(f"[red]  predict failed for {strand_slug} — skipping ({exc})[/red]")
+        if strand_slug not in clf.trained_slugs:
+            console.print(f"[yellow]  {strand_slug} not in register model — skipping[/yellow]")
             continue
-
-        delete_stale(conn, f"strand:{strand_slug}", "ML-PROSE-SCORE")
-        delete_stale(conn, f"strand:{strand_slug}", "ML-PROSE-GRIPE")
-
-        for beat, score in zip(beats, scores):
-            if score >= 3.5:
+        console.print(f"[cyan]Register check: {strand_slug} ({len(beats)} beats)[/cyan]")
+        delete_stale(conn, f"strand:{strand_slug}", "ML-REGISTER-BLEED")
+        for beat in beats:
+            result = clf.check_bleed(beat["text"], strand_slug)
+            if not result["bleed"]:
                 continue
-            try:
-                negatives = model.top_negative_features(
-                    beat["beat_text"], beat["beat_number"], beat["total_beats"]
-                )
-            except Exception:
-                negatives = []
-            write_beat_score_finding(
+            write_register_finding(
                 conn,
                 strand_slug=strand_slug,
                 beat_number=beat["beat_number"],
-                predicted_score=float(score),
-                top_negative=negatives,
-                beat_text_snippet=beat["beat_text"],
+                predicted_slug=result["predicted_slug"],
+                confidence=result["confidence"],
+                beat_text_snippet=beat["text"],
             )
             all_findings.append({
-                "strand":  strand_slug,
-                "beat":    beat["beat_number"],
-                "score":   round(float(score), 2),
-                "severity": "High" if score < 2.5 else ("Medium" if score < 3.0 else "Low"),
+                "strand":     strand_slug,
+                "beat":       beat["beat_number"],
+                "predicted":  result["predicted_slug"],
+                "confidence": result["confidence"],
             })
-
     return all_findings
-
-
-def run_gripe_audit(conn, miner: GripeMiner, strand_slug: str) -> None:
-    cursor = conn.cursor()
-    cursor.execute(STRAND_GRIPES_SQL, (strand_slug,))
-    gripes = [r[0].strip() for r in cursor.fetchall() if r[0]]
-    if not gripes:
-        return
-
-    findings = miner.strand_findings(strand_slug, gripes)
-    for f in findings:
-        write_gripe_finding(
-            conn,
-            file_path=f["file_path"],
-            severity=f["severity"],
-            summary=f["summary"],
-            suggested_fix=f["suggested_fix"],
-        )
-    if findings:
-        console.print(f"  [green]{len(findings)} gripe topic findings for {strand_slug}[/green]")
 
 
 def main():
     parser = argparse.ArgumentParser(description="ML beat auditor")
-    parser.add_argument("--slug",  type=str, help="Audit a single strand by slug")
-    parser.add_argument("--all",   action="store_true", help="Audit all non-draft strands")
-    parser.add_argument("--json",  action="store_true", help="Output findings as JSON")
-    parser.add_argument("--skip-gripes", action="store_true")
+    parser.add_argument("--gripes",   action="store_true", help="Run gripe topic audit")
+    parser.add_argument("--register", action="store_true", help="Run register bleed audit")
+    parser.add_argument("--all",      action="store_true", help="Run both audits")
+    parser.add_argument("--strand",   type=str,            help="Limit to a single strand slug")
     args = parser.parse_args()
 
-    if not BEAT_QUALITY_MODEL_PATH.exists():
-        console.print(f"[red]Model not found: {BEAT_QUALITY_MODEL_PATH}[/red]")
-        console.print("Run the nightly orchestrator first: python orchestrate/nightly_run.py --phases extract train_quality")
-        sys.exit(2)
-
-    model = BeatQualityModel()
-    model.load()
+    run_gripes   = args.gripes   or args.all
+    run_register = args.register or args.all
 
     miner = None
-    if not args.skip_gripes and TOPIC_MODEL_PATH.exists():
+    if run_gripes:
+        if not Path(TOPIC_MODEL_PATH).exists():
+            console.print(f"[red]Topic model not found: {TOPIC_MODEL_PATH}[/red]")
+            console.print("Run: python orchestrate/nightly_run.py --phases extract_gripes,train_topics")
+            sys.exit(2)
         miner = GripeMiner()
         miner.load()
 
+    clf = None
+    if run_register:
+        if not Path(REGISTER_MODEL_PATH).exists():
+            console.print(f"[red]Register model not found: {REGISTER_MODEL_PATH}[/red]")
+            console.print("Run: python orchestrate/nightly_run.py --phases extract_beats,train_register")
+            sys.exit(2)
+        clf = RegisterClassifier()
+        clf.load()
+
     with get_connection() as conn:
-        findings = run_audit(conn, model, slug=args.slug if args.slug else None)
+        gripe_findings    = run_gripe_audit(conn, miner, args.strand)    if miner else []
+        register_findings = run_register_audit(conn, clf, args.strand)   if clf   else []
 
-        if miner and args.slug:
-            run_gripe_audit(conn, miner, args.slug)
-        elif miner and args.all:
-            # Gripe audit for all strands
-            cursor = conn.cursor()
-            cursor.execute("SELECT DISTINCT Slug FROM Strands WHERE IsDraft = 0")
-            for (slug,) in cursor.fetchall():
-                run_gripe_audit(conn, miner, slug)
-
-    if args.json:
-        print(json.dumps(findings, indent=2))
+    total = len(gripe_findings) + len(register_findings)
+    if total == 0:
+        console.print("[green]Audit clean — no findings.[/green]")
     else:
-        if not findings:
-            console.print("[green]No beats below threshold. Audit clean.[/green]")
-        else:
-            table = Table(title="ML Beat Audit Findings")
-            table.add_column("Strand")
-            table.add_column("Beat #", justify="right")
-            table.add_column("Predicted Score", justify="right")
-            table.add_column("Severity")
-            for f in findings:
-                color = "red" if f["severity"] == "High" else ("yellow" if f["severity"] == "Medium" else "white")
-                table.add_row(f["strand"], str(f["beat"]), str(f["score"]),
-                              f"[{color}]{f['severity']}[/{color}]")
-            console.print(table)
+        if gripe_findings:
+            t = Table(title="Gripe Topic Findings")
+            t.add_column("Severity")
+            t.add_column("Summary")
+            for f in gripe_findings:
+                t.add_row(f["severity"], f["summary"])
+            console.print(t)
+        if register_findings:
+            t = Table(title="Register Bleed Findings")
+            t.add_column("Strand")
+            t.add_column("Beat #", justify="right")
+            t.add_column("Predicted As")
+            t.add_column("Confidence", justify="right")
+            for f in register_findings:
+                t.add_row(f["strand"], str(f["beat"]), f["predicted"], f"{f['confidence']:.0%}")
+            console.print(t)
 
-    has_high = any(f["severity"] == "High" for f in findings)
-    has_any  = len(findings) > 0
-    sys.exit(2 if has_high else (1 if has_any else 0))
+    sys.exit(1 if total > 0 else 0)
 
 
 if __name__ == "__main__":

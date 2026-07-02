@@ -1,18 +1,21 @@
 """
-Nightly ML orchestration pipeline.
+StreetSamurai ML orchestration pipeline.
 
-Phases (run order):
-    extract        → pull reviews + beat texts from DB → Parquet cache
-    train_quality  → train LightGBM beat quality regressor
-    train_topics   → train BERTopic gripe miner
-    train_persona  → train persona preference model
-    audit          → score all current beats → write Findings
-    train_beatmode → train SetFit beat-mode classifier
+Phases:
+    extract_gripes  → pull reviewer gripes from DB → Parquet cache
+    extract_beats   → pull current beat texts → Parquet cache
+    train_topics    → train BERTopic gripe miner
+    train_register  → train protagonist register classifier
+    audit_gripes    → apply topic model → write Findings
+    audit_register  → apply register classifier → write Findings
 
 Usage:
-    python nightly_run.py [--phases all|extract|train_quality|...]
-                          [--strand <slug>]
-                          [--skip-retrain]
+    python nightly_run.py [--phases all|<phase1>,<phase2>,...] [--strand <slug>]
+
+Examples:
+    python nightly_run.py                              # full pipeline
+    python nightly_run.py --phases train_register      # retrain register only
+    python nightly_run.py --phases audit_register --strand sasha_v
 """
 import sys
 import os
@@ -20,203 +23,134 @@ sys.path.insert(0, os.path.dirname(os.path.dirname(__file__)))
 
 import argparse
 import traceback
-from datetime import datetime
 from pathlib import Path
 from rich.console import Console
-import mlflow
-
-from config import (
-    MLFLOW_TRACKING_URI, REVIEWS_PARQUET, BEAT_TEXTS_PARQUET,
-    TRAINING_PARQUET, TOPIC_MODEL_PATH, BEAT_QUALITY_MODEL_PATH,
-)
 
 console = Console()
 
-PHASE_ORDER = [
-    "extract",
-    "train_quality",
+PHASES = [
+    "extract_gripes",
+    "extract_beats",
     "train_topics",
-    "train_persona",
-    "audit",
-    "train_beatmode",
+    "train_register",
+    "audit_gripes",
+    "audit_register",
 ]
 
 
-# ── Phase implementations ────────────────────────────────────────────────────
-
-def phase_extract(args):
-    from extract.pull_reviews import run as pull_reviews
-    from extract.pull_beat_texts import run as pull_texts, build_training_dataset
-    pull_reviews()
-    pull_texts()
-    build_training_dataset()
+def phase_extract_gripes():
+    from extract.pull_gripes import run
+    run()
 
 
-def phase_train_quality(args):
-    import pandas as pd
-    from models.beat_quality_model import BeatQualityModel
-
-    if not Path(TRAINING_PARQUET).exists():
-        console.print("[red]Training Parquet not found. Run extract phase first.[/red]")
-        return
-    df = pd.read_parquet(TRAINING_PARQUET)
-    if len(df) < 50:
-        console.print(f"[yellow]Only {len(df)} training rows — skipping model training.[/yellow]")
-        return
-    model = BeatQualityModel()
-    model.train(df, mlflow_run=True)
-    model.save()
+def phase_extract_beats():
+    from extract.pull_beats import run
+    run()
 
 
-def phase_train_topics(args):
+def phase_train_topics():
     import pandas as pd
     from models.topic_model import GripeMiner
-
-    gripes_path = str(REVIEWS_PARQUET).replace(".parquet", "_gripes.parquet")
-    if not Path(gripes_path).exists():
-        console.print("[yellow]Gripes Parquet not found. Run extract first.[/yellow]")
-        return
-    df = pd.read_parquet(gripes_path)
-    texts = df["Improvements"].dropna().str.strip().tolist()
+    from config import GRIPES_CACHE_PATH
+    if not GRIPES_CACHE_PATH.exists():
+        console.print("[yellow]No gripes cache — running extract_gripes first.[/yellow]")
+        phase_extract_gripes()
+    df    = pd.read_parquet(GRIPES_CACHE_PATH)
+    texts = df["GripeText"].dropna().str.strip().tolist()
     texts = [t for t in texts if len(t) > 5]
-
+    if len(texts) < 50:
+        console.print(f"[yellow]Only {len(texts)} gripe texts — skipping (need >= 50).[/yellow]")
+        return
     miner = GripeMiner()
     miner.train(texts)
+    summary = miner.get_topic_summary()
+    console.print(f"\n[bold]Top topics ({len(summary)} total):[/bold]")
+    for t in summary[:10]:
+        console.print(f"  {t['size']:4d}  {t['label']}  — {', '.join(t['keywords'][:5])}")
 
 
-def phase_train_persona(args):
+def phase_train_register():
     import pandas as pd
-    from models.persona_preference_model import PersonaPreferenceModel
-    from db import get_connection
-
-    if not Path(REVIEWS_PARQUET).exists():
-        console.print("[yellow]Reviews Parquet not found. Run extract first.[/yellow]")
+    from models.register_classifier import RegisterClassifier
+    from config import BEATS_CACHE_PATH
+    if not BEATS_CACHE_PATH.exists():
+        console.print("[yellow]No beats cache — running extract_beats first.[/yellow]")
+        phase_extract_beats()
+    df  = pd.read_parquet(BEATS_CACHE_PATH)
+    clf = RegisterClassifier()
+    metrics = clf.train(df)
+    if not metrics:
         return
-    panel_scores = pd.read_parquet(REVIEWS_PARQUET)
+    console.print(f"\n[bold]Top discriminating words per strand:[/bold]")
+    for slug in clf.trained_slugs:
+        top   = clf.top_discriminating_words(slug, top_n=5)
+        words = ", ".join(w for w, _ in top)
+        console.print(f"  {slug}: {words}")
 
-    with get_connection() as conn:
-        ppm = PersonaPreferenceModel()
-        ppm.train(conn, panel_scores)
 
-
-def phase_audit(args):
-    from models.beat_quality_model import BeatQualityModel
+def phase_audit_gripes(strand: str | None):
     from models.topic_model import GripeMiner
-    from audit.beat_auditor import run_audit, run_gripe_audit
     from db import get_connection
-
-    if not Path(BEAT_QUALITY_MODEL_PATH).exists():
-        console.print("[yellow]No quality model found — skipping audit.[/yellow]")
+    from audit.beat_auditor import run_gripe_audit
+    from config import TOPIC_MODEL_PATH
+    if not Path(TOPIC_MODEL_PATH).exists():
+        console.print("[red]Topic model not trained — run train_topics first.[/red]")
         return
-
-    model = BeatQualityModel()
-    model.load()
-
-    miner = None
-    if Path(TOPIC_MODEL_PATH).exists():
-        miner = GripeMiner()
-        miner.load()
-
+    miner = GripeMiner()
+    miner.load()
     with get_connection() as conn:
-        slug = getattr(args, "strand", None)
-        findings = run_audit(conn, model, slug=slug)
-
-        if miner:
-            if slug:
-                run_gripe_audit(conn, miner, slug)
-            else:
-                cursor = conn.cursor()
-                cursor.execute("SELECT DISTINCT Slug FROM Strands WHERE IsDraft = 0")
-                for (s,) in cursor.fetchall():
-                    run_gripe_audit(conn, miner, s)
-
-    n_high = sum(1 for f in findings if f["severity"] == "High")
-    n_med  = sum(1 for f in findings if f["severity"] == "Medium")
-    n_low  = sum(1 for f in findings if f["severity"] == "Low")
-    console.print(f"[green]Audit complete: {n_high} High, {n_med} Medium, {n_low} Low findings[/green]")
-
-    if mlflow.active_run():
-        mlflow.log_metrics({
-            "findings_high":   n_high,
-            "findings_medium": n_med,
-            "findings_low":    n_low,
-        })
+        findings = run_gripe_audit(conn, miner, strand)
+    console.print(f"[green]{len(findings)} gripe finding(s) written[/green]")
 
 
-def phase_train_beatmode(args):
-    from models.beatmode_classifier import BeatModeClassifier, pull_training_data
+def phase_audit_register(strand: str | None):
+    from models.register_classifier import RegisterClassifier
     from db import get_connection
-
-    with get_connection() as conn:
-        texts, labels = pull_training_data(conn)
-
-    if len(texts) < 30:
-        console.print(f"[yellow]Only {len(texts)} labeled beat goals — skipping SetFit training.[/yellow]")
+    from audit.beat_auditor import run_register_audit
+    from config import REGISTER_MODEL_PATH
+    if not Path(REGISTER_MODEL_PATH).exists():
+        console.print("[red]Register model not trained — run train_register first.[/red]")
         return
+    clf = RegisterClassifier()
+    clf.load()
+    with get_connection() as conn:
+        findings = run_register_audit(conn, clf, strand)
+    console.print(f"[green]{len(findings)} register bleed finding(s) written[/green]")
 
-    clf = BeatModeClassifier()
-    clf.train(texts, labels)
 
-
-PHASES = {
-    "extract":        phase_extract,
-    "train_quality":  phase_train_quality,
-    "train_topics":   phase_train_topics,
-    "train_persona":  phase_train_persona,
-    "audit":          phase_audit,
-    "train_beatmode": phase_train_beatmode,
+PHASE_FNS = {
+    "extract_gripes":  lambda args: phase_extract_gripes(),
+    "extract_beats":   lambda args: phase_extract_beats(),
+    "train_topics":    lambda args: phase_train_topics(),
+    "train_register":  lambda args: phase_train_register(),
+    "audit_gripes":    lambda args: phase_audit_gripes(args.strand),
+    "audit_register":  lambda args: phase_audit_register(args.strand),
 }
 
 
-# ── Main ─────────────────────────────────────────────────────────────────────
-
 def main():
-    parser = argparse.ArgumentParser(description="StreetSamurai ML nightly pipeline")
+    parser = argparse.ArgumentParser(description="StreetSamurai ML pipeline")
     parser.add_argument(
-        "--phases", nargs="+",
-        choices=list(PHASES.keys()) + ["all"],
-        default=["all"],
-        help="Which phases to run (default: all)",
+        "--phases", default="all",
+        help=f"Comma-separated phases or 'all'. Choices: {', '.join(PHASES)}",
     )
-    parser.add_argument("--strand",       type=str, help="Audit only this strand slug")
-    parser.add_argument("--skip-retrain", action="store_true",
-                        help="Skip all train_* phases (use cached models)")
+    parser.add_argument("--strand", type=str, default=None,
+                        help="Limit audit phases to a single strand slug")
     args = parser.parse_args()
 
-    phases_to_run = PHASE_ORDER if "all" in args.phases else [
-        p for p in PHASE_ORDER if p in args.phases
-    ]
-    if args.skip_retrain:
-        phases_to_run = [p for p in phases_to_run if not p.startswith("train_")]
+    phases = PHASES if args.phases == "all" else [p.strip() for p in args.phases.split(",")]
+    invalid = [p for p in phases if p not in PHASE_FNS]
+    if invalid:
+        console.print(f"[red]Unknown phases: {invalid}. Valid: {', '.join(PHASES)}[/red]")
+        sys.exit(1)
 
-    console.print(f"[bold cyan]StreetSamurai ML Nightly — {datetime.now():%Y-%m-%d %H:%M}[/bold cyan]")
-    console.print(f"Phases: {', '.join(phases_to_run)}")
-
-    mlflow.set_tracking_uri(MLFLOW_TRACKING_URI)
-    run_name = f"nightly_{datetime.now():%Y%m%d_%H%M}"
-
-    # Phases that must not run if extract produced stale/missing data
-    _EXTRACT_DEPENDENT = {"train_quality", "train_topics", "train_persona", "audit"}
-    failed_phases: set[str] = set()
-
-    with mlflow.start_run(run_name=run_name):
-        for phase in phases_to_run:
-            if phase in _EXTRACT_DEPENDENT and "extract" in failed_phases:
-                console.print(f"[yellow]{phase} skipped — extract phase failed (stale Parquet risk)[/yellow]")
-                continue
-
-            t0 = datetime.now()
-            console.rule(f"[bold]{phase}[/bold]")
-            try:
-                PHASES[phase](args)
-                elapsed = (datetime.now() - t0).total_seconds()
-                console.print(f"[green]{phase} complete ({elapsed:.0f}s)[/green]")
-            except Exception:
-                console.print(f"[red]{phase} FAILED:[/red]")
-                traceback.print_exc()
-                failed_phases.add(phase)
-
-    console.rule("[bold green]Nightly run complete[/bold green]")
+    for phase in phases:
+        console.rule(f"[bold cyan]{phase}[/bold cyan]")
+        try:
+            PHASE_FNS[phase](args)
+        except Exception:
+            console.print(f"[red]{phase} failed:[/red]")
+            traceback.print_exc()
 
 
 if __name__ == "__main__":
