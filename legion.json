@@ -1,6 +1,6 @@
 {
-  "voters": ["gemini", "openai", "claude-api"],
-  "judge": "gemini",
+  "voters": ["claude-team"],
+  "judge": "claude-team",
   "models": {
     "claude-api": "claude-sonnet-4-6",
     "gemini": "gemini-2.5-flash"
