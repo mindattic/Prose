@@ -16,7 +16,15 @@ EP1 - THE INTAKE
 Third floor, solder and ozone permanent in the stairwell from the relay shop below. Rennick Investigations. Gray Zone edge, walk-up, no listed hours. The unclaimed seam between territories, left to whoever could stand the smell. The stairwell hadn't seen a maintenance swarm in years; the nanite seams that were supposed to keep the concrete honest had gone dark, so the cracks just stayed cracks and widened on their own schedule. From the landing window you could see the lip of the buffer and, past it, the faint lean of a rift the maps declined to name - the kind of wrongness you routed past without deciding to. The buzzer on the street door worked two times out of three, which Rennick had decided was adequate for a firm that didn't advertise.
 
 [Beat 2]
-The intake desk was Tamsin's by informal treaty — she was the one who kept the intake log current, who remembered which clients needed a hand-written receipt versus a transfer confirmation, who never let a referral chain go cold. Teller had once suggested they formalize it. Tamsin had said she'd think about it and hadn't thought about it. The desk remained hers. Nobody argued.
+The door at the top of the stairs was open — not ajar, open, the way a door is when someone decided that locks are a negotiation they've already won. Rennick was at the desk, not looking up, running a finger down a printed manifest that had been folded and unfolded enough times the paper had gone soft at the creases. The office was one room doing the work of four: a desk, two chairs that didn't match, a cot behind a curtain that wasn't quite a curtain, a shelf of physical files in labeled folders because cloud storage cost a monthly tier fee and Gray Zone mesh dropped packets like it was a hobby. The window faced the buffer. The rift was visible from here too, a faint lean in the air above the roofline opposite, the kind of thing that made the back teeth ache if you looked at it too long.
+
+*The manifest had come in at 0300 and she'd read it three times since and it still said what it said.*
+
+The client was already there. Second chair, the one with the cracked armrest, coat still on, hands in the coat's pockets — which Rennick had noted, because hands in pockets at a first meeting was either cold or careful, and the building's heat exchange was functional today. The client's neuretics were visible at the temple, a second-generation install, the kind that marked a decade of borderline wages: good enough to keep you competitive in a mid-tier contract environment, not good enough to run anything that mattered faster than the people above you could change the rules. A thin line of chrome against brown skin, slightly raised, the seam where the installation had been done in two sessions because one session cost more than two.
+
+"You said you could find a person," the client said.
+
+"I said I'd hear what you had," Rennick answered, still on the manifest. She set it face-down when she finished, which was its own kind of answer.
 
 [Beat 3]
 All four were in that morning, which happened less often than you'd think for a firm with no required hours and four independent case loads. Teller had the smallest desk, pushed to the corner. He was a synthetic, housed in a male-presenting android body — a generic chassis built to read as a man and not quite managing it: the proportions a shade too even, the face a careful approximation the eye kept snagging on, the way it snags on a mannequin a half-second after mistaking it for a person. He was doing something on a screen he would describe if asked and that no one had asked about in three weeks. In the armchair sat the man the team called Analog — Paul Caldera on the agency's paper, Detective Caldera to anyone who had just met him — with a notebook of actual paper, which he used because it left no network trace and because Caldera had opinions about what constituted a trace. Tamsin had the intake desk and the building's whole sound coming up through two floors of concrete, and the look of someone listening to all of it while she squared the morning's receipts. Rennick stood near the window over the Gray Zone buffer, reading the block below from elevation the way he read everything, by the order things sat in.
@@ -29,9 +37,15 @@ The buzzer sounded once. Rennick's optical overlay flagged the street-level came
 From the window he could already see the car below it, a private hire idling at the curb with its hazards on, the driver not getting out.
 
 [Beat 5]
-They came up all three flights without the elevator, which was working that day. Rennick registered that: a man who climbed stairs when he didn't have to either wanted to feel the building or wanted to feel his own effort inside it. The woman climbed because she was keeping pace with her husband, which told Rennick something about their arrangement. She was reading the walls. He was looking ahead.
+The buzzer sounded a second time before Rennick had moved, which told him something about the man's relationship with waiting. He came away from the window, not hurrying, and crossed to the intercom panel mounted beside the door — a box of brushed steel that had been painted over twice and stripped back once, the original surface now a palimpsest of beige and gray and the original factory color, which was a shade the manufacturer had called *frost* and the Gray Zone had spent a decade correcting. He pressed the door release. The mechanism disengaged with the particular reluctance of hardware that had been asked to do this ten thousand times without maintenance.
 
-Rennick opened the door before they knocked.
+*North Shore money came down here for one of three reasons, and two of them she could turn away.*
+
+She heard them on the stairs — the man's footfall deliberate, measured, the woman's a half-beat behind and slightly lighter, which meant she was following rather than arriving. By the time the door filled with them, Rennick had put herself between the desk and the entrance, not blocking, not welcoming, just present. The man's coat was wool, real wool, not the thermal-composite that passed for it below Tier Four. The woman's hands were still crossed at her sternum, and up close Rennick could see the knuckle of her left thumb working a small circle against her forearm — not cold, not impatient. Something she was keeping inside the perimeter of her own body.
+
+"Ms. Rennick," the man said. Not a question. The kind of greeting that had already decided it knew who it was talking to.
+
+"You have the right building," Rennick said.
 
 [Beat 6]
 Douglas Hartley stopped inside the doorframe and took in the office with the expression of a man recalibrating. He had expected something — less, probably, or different, or both. The office wasn't the thing you apologized for, but it also wasn't the thing that matched the Evanston tax bracket he'd arrived from. Three flights of walk-up, a view of the Gray Zone buffer, an intake desk that had seen use. Tamsin's tea on a coaster. The man in the armchair with the paper notebook, who didn't look up. And in the corner a synthetic in a plain male android body — who did look up, the manufactured face turning to Douglas for a courteous half-second before going back to the screen. Douglas's gaze snagged on him a beat too long, the way it catches on a thing the North Shore pays to keep out of its sightlines.
@@ -43,9 +57,17 @@ He gave Douglas the better chair. He handed Mei-Lin the better cup — handle fi
 His own cup he set down and turned a quarter-turn on the desk so the handle faced the same way as hers — a thing his hands did with any cup in reach, had always done, that read nothing and proved nothing and that he had stopped noticing he did. Tamsin had noticed years ago. She had never mentioned it.
 
 [Beat 7]
-Douglas produced the briefing before Rennick asked for it. Printed on paper — actual paper, home printer, collated, paper-clipped at the upper left corner. Rennick accepted it without comment and set it on the intake desk and did not open it yet.
+Douglas Hartley set his coat across his knee rather than draping it on the chair back, which meant he hadn't decided yet whether he was staying. He looked at Rennick the way men from the Shore looked at Gray Zone contractors — a careful inventory that tried to be a compliment — and then at the room again, the palimpsest walls, Teller's screen, Caldera's notebook, the window with the rift-lean above the opposite roofline doing its quiet damage to the middle distance.
 
-Paper meant old money or theater. The format — careful, organized, every article clipped and ordered — ruled out theater. Old habit, then, which was close enough: a man who believed the effort demonstrated the seriousness.
+"Our daughter," he said. "Lily. She's been gone eleven days."
+
+Mei-Lin's thumb stopped its circle. The room absorbed that number — eleven days — the way rooms absorb numbers that have already been carried a long distance before being set down. Rennick did not reach for the manifest. He already knew what it said: female, twenty-three, last confirmed location a Gray Zone transit node two tiers below where her parents had any reason to look for her.
+
+*Eleven days and they came here on day eleven.*
+
+"Who did you go to first," Rennick asked, not unkindly.
+
+Douglas's jaw moved once before the answer came. "Arcturus Civil Security. They — " He stopped. Recalibrated. "They were very thorough in explaining what falls within their operational remit."
 
 [Beat 8]
 Douglas Hartley had the posture of a man settled in his conclusions. Not arrogant — Rennick had been in rooms with arrogant clients and this was a different shape. The conclusions had been poured and cured. The meeting was, in Douglas's architecture, a formality: he had already decided what had happened to his daughter. He needed a professional to confirm it and act on it.
@@ -203,13 +225,21 @@ Analog said: "The ears she walked away from clean. Wherever she went four days a
 "That's why we're taking it," Rennick said.
 
 [Beat 19]
-Analog had his notebook open on his knee. He said: "She went offline by design. That's the most useful datum in the file." He said it with the deliberateness of a man choosing each word because there is no autocomplete to catch him. "She told her father a few days. She picked the window and planned around it. It's four days now — she's past whatever she told him, and still dark."
+Tamsin had pulled up the intake form on her screen and was already working backward through it — not reviewing, reorganizing, the way she did when a case had more shape than the client had given it. She said, without looking up: "Analog. The research log. Practitioner vocabulary — what kind of practitioner?"
 
-Tamsin said: "She'd have pinged her mother by now. If it were only a few days, and only what she said it was."
+Analog set his pen down. He said: "Genomics-adjacent. The terms she used for the cochlear architecture — she wasn't reading consumer copy. She was reading sourced literature. Probably grad-level, possibly clinical."
 
-A silence.
+"So she had access," Tamsin said.
 
-"Yes," Analog said. "She would have."
+"Or someone gave her access," Analog said. "Which is different."
+
+The distinction landed in the room and stayed there. Rennick turned it over: a grieving girl who'd spent eight months reading clinical literature on cochlear genomics, who'd cleared one procedure clean, who had then gone somewhere four days ago that no one could name — and the question wasn't whether she'd been careful. She had been careful. The question was what careful people did when careful stopped being enough, when the want underneath had been patient for nine months and had run out of patience. He knew the answer to that question. He had known it since the intake, since Douglas had said *she wanted to hear the way Jace heard*, since that sentence had arrived in Rennick's chest like a hand pressing on something that was not quite healed.
+
+*He'd let them close the file. That was a fact and it was going to stay a fact.*
+
+Tamsin said: "I'll pull the licensed genomics operators in the Gray Zone. Anything that would have the sourcing infrastructure to match that literature level."
+
+"Start with the ones that don't advertise," Rennick said.
 
 [Beat 20]
 Tamsin had been quiet, the way she got when a room handed her more than had landed yet. She said now: "The boy. Jace. Network diver, died eight months ago. She got his ears so she could hear the way he heard."
@@ -346,7 +376,19 @@ Rennick looked at the paper on Tamsin's desk. The briefing, the paper clip at th
 "Start this afternoon," he said. "All of us."
 
 [Beat 30]
-They dispersed by ones and twos. Teller had not moved from his screen; for him the case had started the moment the feed arrived, and leaving the building would have changed nothing about where his work was. Analog took the stairs with his notebook open to the next page, the offline corridor already laid out in it as a problem of doors. Tamsin stayed at the intake desk, where she could see the whole morning of the case in the order it had arrived. The relay shop's solder smell rose and held, and somewhere in the back booth below, a Channeler sat with eyes glassed and shoulders slack, murmuring to something that murmured back - the building's baseline, ordinary as the solder.
+Analog was the first one out of the room.
+
+He moved the way he always moved when a job had been divided — efficiently, with no ceremony, the way a man leaves a room when the conversation is over and the work is not. He pulled on his jacket at the door without breaking stride, the notebook already in his inside pocket, the pen clipped through the spiral. Nobody said good luck. He wouldn't have wanted them to.
+
+*The offline corridor is the easiest part. The shop is the part that closes if you knock.*
+
+He took the stairs rather than the lift, three floors down to the street-level exit, his hand trailing the banister rail without gripping it — a habit, a way of reading a building's condition by its vibration. The relay shop below was doing steady business: he'd heard the foot traffic coming and going through the floor since the intake started. A shop that busy had regulars. Regulars talked. He filed this away, not as a plan, but as the shape of a possible conversation.
+
+The Gray Zone street outside was mid-afternoon gray, the atmospheric processors having done their usual work, the sky the color of an old invoice. The address from the briefing was eleven blocks southeast. He had the physical description. He had the last known corridor. He did not have a name for the shop, because the shop would not have a name — not one that appeared on any directory Meridian's team would know to search. That was the point of it.
+
+*Meridian's people will show credentials. That's the first mistake. The second is that they'll show them to the wrong person.*
+
+He walked without hurrying. Hurrying left a different kind of trace — the trace of someone who needed to arrive, which was a kind of signature all its own. He had learned this from a man who moved through cities the way water moves through a cupped hand, and he had learned it early enough that it was no longer a technique. It was simply how he went from one place to another.
 
 [Beat 31]
 Rennick stood at the window over the Gray Zone buffer. The strip below ran east to west — unclaimed concrete between two CorpoNation territories, neither willing to pay for it and neither willing to cede it. A parts dealer. Two food stalls. A woman selling handmade neuretics charging cords from a folding table.
@@ -417,16 +459,50 @@ The intake meeting had left its specific residue in her chest — the father's f
 Evanston, North Shore. The train was ready on Track 4.
 
 [Beat 37]
-The train north took forty minutes, which was long enough for the residue from the intake office to lose its edge. Tamsin had rules about this. A fresh room needed a quiet approach — nothing carried in, nothing contaminating. She spent the last ten minutes standing in the vestibule, facing the door, working a square of clove gum she didn't chew so much as park against her back teeth. She'd quit the gum twice. It came back every time she had a room to read, the same way her thumb came back to the worn spot on her left cuff, because a body going into an empty room wanted one small ordinary thing of its own to hold. She let the commuters and their small frictions wash past her without catching.
+The North Shore line ran above grade past Loyola, past Rogers Park, past the last tier-adjacent construction cranes before the city stopped performing ambition and became something older. Tamsin sat with her back to the direction of travel — a habit she'd developed at twenty-two, the year the Board certified her and she learned that facing the destination too early made the Read start before she was ready. The car was half-full: a courier with his helmet on his lap, a woman sleeping against the window with her head tilted at the angle of someone who'd worked a double, two kids sharing earbuds. The usual mid-afternoon inventory. She kept her hands flat on her thighs and watched the city scroll backward behind the glass.
+
+*The intake room had wanted to tell her something and she'd let Douglas talk over it.*
+
+That was the professional failure she was carrying, the one she hadn't logged. She'd been reading Mei-Lin — the controlled grief, the specific quality of attention a mother turns on a room when she is measuring how long she has left to hope — and Douglas had been the noise, the catalogued fear, the folder-full of news items selected by a man who had already decided what story he was in. She'd let the louder room win. It was a thing she did when the grief in the space was too close to a particular shape, and she knew the shape it was close to, and she was not going to name it on the train.
+
+Evanston Central came up on the route display. Two stops. She pulled the address from her jacket pocket — paper, the way Rennick always gave her addresses when the case was new enough that the case management system hadn't caught up to the investigation. *Jace Dalton, 1147 Sherman, Apt. 4.* The handwriting was his. She knew his handwriting the way she knew the handwriting of anyone she'd worked alongside for four years, which was to say she could tell his certainty from his caution by the slant of the capital letters, and this one was written in a hand that was not certain yet.
+
+The train slid into Evanston Central and she stood before it stopped, which she did not normally do, which she noticed herself doing.
 
 [Beat 38]
-The Hartley house sat at the end of a cul-de-sac two blocks from the lakeshore — one of those North Shore properties that looked like it had been assembled from different decades and never quite made peace with itself. Brick first floor, glass addition at the back, a garden that had given up around the perimeter and concentrated its effort in a small precise section near the kitchen door. Someone cared about that garden, and it wasn't the same person who'd ordered the glass addition.
+She stepped onto the platform before the doors were fully open, which was the kind of thing that looked like urgency and was actually the opposite — she was moving ahead of the Read because the Read had already started, because it started the moment she had a destination with a dead man attached to it, and if she didn't get her body oriented to the space before her perception caught up to it she would arrive already full of someone else's room. The platform smelled of lake air and old concrete and the particular metallic cold that the North Shore line carried down from the water treatment infrastructure at the edge of Evanston's maintained zone. She stood at the top of the stairs and breathed it. Lake air was neutral. Lake air held nothing that belonged to anyone.
+
+*She should have read the intake room and not the people in it.*
+
+Sherman Avenue was four blocks west. She walked it the way she walked every approach — on the right side of the street, noting which buildings had working exterior lighting, which had the small Arcturus Civil Security placard on the door that meant the corponation's jurisdiction technically extended to the lobby, which had nothing on the door at all. 1147 was in the last category: a six-floor walk-up with the kind of unbranded gray facade that meant it predated the tier-adjacency construction push, that it had simply remained. The buzzer panel listed twelve units. Apt. 4 had a strip of tape over the name slot, the tape old enough to have yellowed at the edges. Someone had been here long enough to need tape over their name. Someone had been here and then stopped being here.
+
+She did not press the buzzer for Apt. 4. She pressed the buzzer for Apt. 7, which was the unit most likely to have a resident home at three in the afternoon who had no particular reason to be careful, and when the intercom crackled she said she was there about the water pressure complaint to the building management — a complaint she had no knowledge of and which may or may not have existed — and the door buzzed open in six seconds, which told her the building had that specific variety of small, exhausted trust that made her job easier and made her feel nothing she was going to examine right now.
+
+The stairwell smelled of cooking oil and the faint chemical sweetness of cheap nanite sealant applied to a cracked wall and left to cure without ventilation. Apt. 4 was on the second floor. She stood in front of the door and did not touch the handle yet. The door was closed. The door was a closed door that had been closed for some number of days by someone who had chosen to close it, and that was already information, that was already the room beginning to speak before she'd given it permission, and she put her hand flat against the wood — not the handle, the door itself, the surface — and waited for her breathing to slow to the rate she needed before she went in.
 
 [Beat 39]
-Mei-Lin met her at the door. Not the housekeeper, not Douglas — Mei-Lin, in the same clothes she'd worn to the intake meeting three hours ago, which meant she'd come straight home and waited. She didn't offer coffee. She said, "Her room is at the top of the stairs, second left. I haven't touched anything since Sunday," and then she stepped aside and let Tamsin go up alone, which was exactly right.
+The door was unlocked.
+
+Not forced, not picked — the knob turned under her palm without resistance, which meant Jace Dalton had either left in a hurry or left deliberately, and those two things felt different in a room, and she would know which one in approximately eight seconds. She pushed it open with two fingers and stood in the threshold without crossing it, the way she'd been taught at the Board's intake training and had since modified because the Board's intake training had been designed by people who processed Affective Residue the way you processed paperwork, systematically, in sequence, and Tamsin had learned that you did not sequence grief — you let it find its own order or it found you later, in your own rooms, in the dark.
+
+*The tape over the name slot. Not new tape. Someone who'd been anonymous here long enough to stop thinking about it.*
+
+The apartment was a single room with a kitchen along one wall and a window that faced the alley, and the light coming through it was the particular flat gray of a North Shore afternoon filtered through the atmospheric processor runoff that collected over the maintained zone's edge. The bed was made. Not made in the way of someone who made their bed every morning — made in the way of someone who had made it once, deliberately, with the knowledge that they were leaving it. The difference was in the corners. The corners were too careful. She stood in the doorway and let the room's residue move into her at the rate it chose, which was slower than she expected, which was itself information — not the hot residue of crisis, not the sharp-edged panic of someone taken, but something that had been building for a long time at a low temperature, like a room that had been running a fever for weeks before anyone checked.
+
+She crossed the threshold.
 
 [Beat 40]
-Tamsin paused on the landing. She had a rule about the approach too — don't open the door immediately. Stand outside it for a breath and let the room announce itself through the gap at the threshold, through the temperature difference, through whatever taste the air carried. Rooms that had held violence smelled like copper and acceleration. Rooms that had held grief smelled like something left on a burner too long, all the water cooked off, just the residue of what had once been a meal.
+The room's residue was slow and it was low and it was *old*, and that was the thing she kept returning to as she moved along the near wall — not moving toward anything yet, just letting the perimeter establish itself the way you let a dog settle before you reached for it. The kitchen counter held three items: a coffee mug, clean and upended on a dish towel, a single fork laid parallel to the edge of the counter with a precision that had nothing to do with tidiness and everything to do with someone putting their hands to a small task because their hands needed somewhere to be, and a piece of paper folded in thirds with no name on the outside. She did not touch it yet. You read the room before you read the document because the document was the version of events someone had decided you should have, and the room was the version they hadn't thought to edit.
+
+*He'd known. Long enough to fold the paper.*
+
+The shelf above the bed held four things: a reader, dead, no charging cable; a transit card from the Evanston maintained zone with the Arcturus Civil Security partnership logo embossed in the corner, the kind they gave you when you worked adjacent to their infrastructure and needed access to move fast; a small photograph, actual paper, the image of a woman and a child in front of a building she didn't recognize, the photo edges soft with handling; and a neuretics calibration receipt from a Gray Zone clinic, the date eleven months old, the listed model a generation behind current — the kind of installation you got when you needed the cognitive throughput but couldn't clear the cost of anything better, when you were doing work that required you to process faster than your unaugmented mind could carry you and you were doing it on someone else's margin. She looked at the receipt without picking it up. The clinic name was hand-stamped. She knew that clinic. She knew what it served and who it served and what it cost to walk in there without a corponation card.
+
+She stood at the center of the room and let it finish arriving. What she got was not fear. What she got was the residue of a sustained, careful decision — the emotional texture of someone who had been moving toward a fixed point for a long time, who had stopped arguing with himself about it, who had made the bed with careful corners and laid the fork parallel and folded the paper in thirds and then walked out of his own apartment as if he were leaving a space he had already released his claim on. That was not the residue of a man who had been taken. She had felt the residue of men who had been taken, and it came in fast and it came in with edges, and this had no edges. This was the residue of a man who had made an appointment.
+
+*Not a disappearance. A departure.*
+
+She crossed to the counter and picked up the folded paper.
 
 [Beat 41]
 This room smelled like neither. Through the door she felt warmth — not temperature warmth, but the kind that pressed at her sternum the way a held breath does, or a decision that has already been made but not yet spoken. She opened the door the way she'd entered the building: slowly, from the left side, so the threshold crossed her right hand first.
@@ -438,7 +514,15 @@ The room had been waiting for someone to ask it a question. That was the only wa
 No fear. She checked twice — once at the door, once when she crossed to the center. The absence was the loudest thing the room had said yet. In a missing girl's bedroom it was the reading the family hadn't braced for, and she wasn't due to tell them anything for another hour. She had time to be careful.
 
 [Beat 44]
-The room was medium-sized and north-facing. It had never gotten much direct light even in summer. The girl who'd lived in it had compensated with a lamp on every surface — four of them, different heights, all pointed at the ceiling rather than the desk. A reading room that had given up reading toward a source and decided to be the source. The walls held the shape of where pictures had been before they were taken down, lighter rectangles in the paint, and in their place there were only two things: a transit map of GLMZ pinned at four corners, and a photograph she couldn't see clearly from where she stood.
+The paper held two paragraphs in handwriting that was not distressed — not the handwriting of someone writing fast or writing through fear, but the careful, slowed script of someone who had decided that this particular document should be legible, should be read correctly, should not be misinterpreted by whoever came looking. That decision was itself a form of consideration, and she felt it in her sternum before she'd read a word. The first paragraph was an address. Not the girl's address. An address in the Pilsen corridor, a cross-street she knew because she'd worked a case two blocks from it four years ago, a stretch of the Gray Zone that ran along the edge of the University of the Great Lakes Meridian's maintenance infrastructure — the part of the campus that faced outward, that served the corridor rather than the campus, that the University's brochures never photographed.
+
+*He'd written it down for her. He'd known someone would need it.*
+
+The second paragraph was shorter. It said: *She isn't lost. She made the same choice I did. If you're reading this, you already know what it cost her to make it, and I'm asking you not to undo it.* That was all. No signature. No explanation of who he was or what the choice had been or what the address meant, because he had written this for someone he expected to already know the shape of it — someone who would arrive in his room and read the walls before the paper, someone whose job was to find people, and he had written it as a message to that job specifically, to the function, as if he'd known the function well enough to speak to it directly. She stood at the counter with the paper open in both hands and felt the particular texture of being anticipated by a stranger.
+
+She folded it back into thirds and put it in her inside pocket. The room had said what it had to say. She gave it one more breath — the habit, the professional close — and got nothing she hadn't already gotten, which meant she had the room's full account and it matched the paper and the paper matched the corners on the bed and the fork and the receipt from the clinic she knew. All of it pointed the same direction, which was not the direction of a girl in danger. It was the direction of a girl who had looked at the cost of what she was and decided to carry it somewhere else, somewhere the people who needed to know where she was did not have access to, and had found — or been found by — a man who understood the geography of that decision well enough to draw her a map to the exit.
+
+*The family was going to ask her if their daughter was safe, and she was going to have to answer that question without answering it, and she had forty-seven minutes.*
 
 [Beat 45]
 She walked toward the desk, not the photograph. The photograph could wait. The desk told her more in physical terms: a surface that had been cleared systematically, not chaotically — the clean rectangle where a device had sat, the dust disturbed in a careful arc that said it had been lifted and carried, not swept aside. Someone had packed a workstation. Not in a hurry. The ring from a mug remained, right-hand side, and beside the ring a small groove in the wooden surface, the kind a stylus makes when you press and think, press and think, over a long time.
@@ -476,10 +560,36 @@ A parent's footsteps on a floor above. The particular fear of being caught mid-l
 The room held a departure. Not an abduction. Not a fight, not a stranger, not an organ crew that came in through the window. A girl who had made a decision over months, packed with care, and walked out on her own two feet before anyone upstairs woke up, and the only thing she'd been afraid of was her father's voice in the hallway asking where she thought she was going.
 
 [Beat 54]
-Tamsin stood with that for a moment — a girl who'd spent a year preparing to walk out of a house with a lake two blocks off and a garden someone tended by hand. She didn't try to name the thing the girl had been heading toward. That wasn't the Read's province. The Read worked on what was left behind, not on what someone walked toward. She had the shape and the direction. The content was someone else's job.
+Tamsin stood in the center of the room with this information and let it become a problem.
+
+*Forty-three minutes. And the thing she knew could not be the thing she said.*
+
+The family had hired her to find their daughter. She had found her — not in body, but in the architecture of a choice made over months, in the compass-bearing of old resolve, in the particular crouched fear of a girl listening for footsteps. The daughter was not missing. The daughter had left, deliberately, with enough care to be unkind about it — which was its own form of love, the kind that says *I am not doing this to you, I am doing this away from you.* What Tamsin had was a reading, not a location. What the family was going to ask her for was a location. The gap between those two things was her entire problem, and she had forty-three minutes to decide what shape to give it.
+
+She picked up her field notebook and wrote: *voluntary departure, pre-planned, weeks of preparation, no indicators of coercion or third-party involvement.* Then she looked at what she'd written, and at the ring from the mug on the desk, and at the groove the stylus had worn into the wood. She was going to walk downstairs and sit across from two people who had decided their daughter's choices were a problem someone else could solve for them, and she was going to have to tell them something true, and the true thing was not the thing they'd paid for. The true thing was that their daughter had been in this room for months, deciding, and whatever she'd been deciding had been decided in her father's direction, and it had not come out in his favor.
+
+*She would not give them a direction. She would give them a shape. A shape they could hold without using it to follow her.*
+
+She closed the notebook. She took one more look at the photograph — the boy's head tilted, the lake behind them, the winter coats — and she understood what the girl had been carrying out of here. Not recklessness. Not instability. Something that had a name and a weight and a person attached to it, and had been carried carefully enough that the room still held the impression of it, the way a coat holds warmth after the body's gone. She set the photograph back exactly where she'd found it, on the edge of the desk, facing the window. Let the parents find it where it had always been. Some things didn't need to be moved to be seen.
 
 [Beat 55]
-She began the second pass. The first pass read the room's loudest signals — the dominant emotional weather, what had spent the most time there, what it pointed at. The second pass was quieter work. She slowed her breathing to four counts in, six counts out, and let the room's lower registers come up to meet her the way sound came up to meet you when you turned off the lights.
+Downstairs, the air was different. Warmer, thicker with the smell of recycled cooking fat and the particular closed-window staleness of a household that had been keeping itself quiet for days. The father was at the kitchen table where she'd left him, both hands around a mug that had long since gone cold. The mother stood at the counter with her back to the room, doing nothing visible with the dishes in the rack, just standing near them. The space between the two of them was not an accident. It was the exact distance of a disagreement that had been running long enough to become architecture.
+
+Tamsin set her field bag down and took the chair across from the father.
+
+*Not the shape. Give them the shape. Not the direction.*
+
+"Your daughter left on her own," she said. "I can tell you that with confidence. The room shows weeks of preparation — not panic, not coercion. She chose a time and she chose it carefully." She kept her hands flat on the table, visible, the way you did when you were offering something that wasn't what the person had asked for. "There is no evidence of a third party. There is no evidence of an organ crew or a black clinic or anyone who came in from outside. She walked out. That's the finding."
+
+The mother turned around. The father's hands tightened on the mug — not the grip of relief, not the grip of grief, but the grip of a man receiving an answer that had made the problem worse rather than smaller.
+
+"Then where," he said, and stopped, and the stopped sentence was its own full communication.
+
+*She had heard that stop before. In her own throat, years ago, asking a question she already knew the answer to and stopping because finishing it made it real.*
+
+"I don't have a location," Tamsin said. "What I have is this: she is not in danger from anyone but her own choices, and her choices read as considered ones. That's not nothing." She let that sit for a moment, then: "What I can tell you is that wherever she went, she went toward something. Not away from you in the way you're afraid of. Toward something she'd been planning for long enough that she wasn't running when she left. That's the difference between someone you need to pull out of a bad situation and someone who is in the situation they chose."
+
+The mother made a sound that was not a word and turned back to the counter.
 
 [Beat 56]
 That was when she found the second residue, and it found her first as cold. Beside the desk, in the corner where a second chair might have been pulled close, the room's warmth stopped. Not a draft — a draft moved, and this didn't. It was a fixed pocket of cold about the size of a seated person, and the warmth she'd felt from the window leaned toward it and poured into it and never filled it, the way water pours into a drain and the drain stays empty. She held her hand out and felt the temperature change a degree at a clean vertical edge, as if the cold had a wall she couldn't see. Cold with a shape. Cold that took and did not warm. She had read eleven years of rooms and the room's own heat had never once behaved like something being drunk.
@@ -491,7 +601,15 @@ She had a taxonomy for residue — fear, grief, resolve, the compounds underneat
 There was attention in it — she could feel that much, the focused kind, aimed at the desk where Celeste had sat. But the attention she knew got tired. It frayed into want, into the low static of someone sitting through your sentence to get to their own. This had no fray on it and no bottom to it, and it ran cold the whole length. Attention that took the warmth out of a room and gave nothing back to it.
 
 [Beat 59]
-She stepped back from the desk. The residue didn't follow her. That was normal — residue was location-specific, it didn't track — but the stepping back helped because it put physical distance between her and the thing she was trying to classify. Distance was the only instrument she had besides the Read itself. Distance and time and the discipline not to name something until she knew what it was.
+The father said her name — "Tamsin" — the way people said names when they needed to anchor themselves to the fact that there was still a professional in the room doing a professional's work. She didn't answer immediately. She kept her hand at the edge of the cold and ran a slow, deliberate count: four degrees, maybe five, and the warmth still leaning in and vanishing at the wall. The father's mug scraped against the table. She registered it the way she registered traffic — present, not relevant.
+
+*Not residue. Residue was past tense. This was present tense, and it knew she was here.*
+
+"Mr. Adeyemi," she said, and kept her voice in its professional register, the one that did not carry alarm up into the room where it could become panic. She withdrew her hand from the cold and turned to face him, and she did not look back at the corner, because looking at a thing you weren't supposed to know about announced it. "I'm going to need you to tell me if anyone else has been in this house in the last week. Not a social call — someone who came in on business, on a favor, on any pretext at all."
+
+He looked at her the way people looked at doctors who asked a question that implied the diagnosis had changed. His hands on the mug did not move.
+
+"Why?" he asked.
 
 [Beat 60]
 She had read three rooms with non-human residue in her life. A maintenance corridor in a Pilsen arcology where a building system had shorted in a way that killed two contractors, and what lingered wasn't their fear but an alertness in the walls, a diagnostic that never terminated. A holding room in a Gray Zone clinic where the residue had pressed at her like a question in a language she'd never learned. And her grandmother's kitchen, the week after, when she'd gone in alone for a jacket and found the room holding something that was not grief and not the absence of it and that she had never once managed to describe to another person. None of those three had been cold. This was the fourth, and it was the first that took.
@@ -500,7 +618,15 @@ She had read three rooms with non-human residue in her life. A maintenance corri
 This was the fourth. And this one was different from the first three because it had been here repeatedly. The desk residue wasn't a single event's echo. It was layered — the same signature deposited over months, each layer thin, the accumulation deep. Whatever had been in this room beside the girl at that desk had been here many times, at intervals that felt regular, like appointments.
 
 [Beat 62]
-She pressed closer again — careful, because the Read wasn't free. A long pass on a complex residue cost her something she didn't have a clinical name for but felt as a tightening behind her eyes, a narrowing of her visual field by a few degrees, a tiredness that wouldn't respond to sleep until she'd had enough time in a room that was genuinely empty. She had an hour before the cost started to show on her face in a way Mei-Lin might notice.
+The father set the mug down. Not a deliberate gesture — the kind of set-down that happened when the hands needed to do something and that was the only thing available to do. He said a name.
+
+"Kyle Corbin."
+
+The mother's shoulders moved, a small tightening that wasn't a flinch and wasn't agreement and was somewhere between them. She did not turn around.
+
+*The name arrived like something she'd been building toward without knowing it.*
+
+Tamsin kept her face arranged around the professional register and did not look at the corner. She'd heard of Corbin the way everyone in certain kinds of work had heard of him — not a file, not a profile, just the accumulated weight of a name that came up in rooms where unusual things had happened and someone needed to explain the shape of the unusual without being able to explain the mechanism. She had not heard that he ran cold. She had not heard that what he left behind in a room took the warmth out of it and kept it. What she had heard was that he had the Read the way a scalpel had an edge — not incidentally, not as a secondary characteristic, but as the thing it was. "He came three times," the father said, to the table, to his own hands. "Maybe four. Celeste asked us to let him in. We did." He did not say *because she asked us to* but the sentence had it anyway, folded into the grammar of it, the specific exhaustion of a parent who had stopped winning the argument about the door.
 
 [Beat 63]
 The cold sat beside where Celeste had sat, oriented toward her. Not across the desk, not above it, not ambient the way a room's general residue was ambient. Beside her and turned toward her, close, the way a tutor pulls a chair in — invested in what you were learning, needing to see your face while you learned it. A cold that took the seat of someone who cared and gave off none of the heat a caring person gives off.
@@ -533,23 +659,59 @@ She left it unclassified, the way she'd left the corridor and the clinic: a thin
 But she took a second step back before she was done with it, and she noticed she'd done that before she decided to.
 
 [Beat 69]
-She heard Mei-Lin on the landing. Not footsteps — a presence, the way a person who is trying not to intrude generates a very particular quality of silence. Tamsin didn't turn around. She let another thirty seconds pass, let the room have the last word on the shape of what she'd found, and then she turned and stepped toward the door the way she'd stepped into it: from the left, threshold crossing her right hand first.
+The mother turned around.
+
+She had been waiting for a specific thing to happen and something had happened — not the thing she'd been waiting for, necessarily, but a thing she'd read in the quality of the silence. Mei-Lin Hartley had the face of a woman who had spent months watching people react to information she'd already processed, who had learned to read the gap between a person's last observation and their next breath. She looked at Tamsin the way a person looks at someone who has just walked out of a room they know is wrong but can't name why.
+
+"She had a name for it," Mei-Lin said. Not to her husband. Not to Tamsin exactly. To the room, which was the only appropriate audience. "She called it her *listener*. We thought it was—" A pause that wasn't searching for the word; she had the word and was deciding whether the word helped. "We thought it was how she talked about the Read. The way she was learning to talk about the Read. A metaphor she was building." She looked at the desk. She looked at the place beside the desk. "It wasn't a metaphor."
+
+*No one had told Tamsin the girl had the Read.*
+
+She held that still. The father's hands had gone to the table again, the same nothing-gesture, and neither parent was looking at the other. Tamsin looked at the cold — at the space beside the desk, the orientation now definitely toward her, the warmth of the room still pulling toward it with a hunger she could feel at the back of her jaw — and held the open question she'd refused to close and let it get a little larger. A listener. Something that came back, session after session, to sit beside a girl who had the Read and watch her look out a window at a city she was learning to leave. Patient as an appetite. Cold as a diagnostic that never terminated.
+
+"How long had she been practicing?" Tamsin asked.
 
 [Beat 70]
-Mei-Lin was in the hallway with her arms crossed, not in the defensive way — in the containing way, the way a person held themselves when they were braced to absorb news they'd already half-prepared for. She looked at Tamsin's face and whatever she saw there made her let one long breath out through her nose.
+Mei-Lin's hands came down from where they'd been crossed — not a release, a decision. She moved to the desk and touched the back of the chair with two fingers, the way you touch something to confirm it's still there, the way you touch a bruise.
+
+"Since she was nine," she said. "She didn't have language for it until she was eleven. Before that she just — she knew things. About people. Things she shouldn't have known." Her fingers stayed on the chair. "We didn't call it anything. We didn't want to call it anything."
+
+*The naming was the thing. Once you named it, the registry men could name it too.*
+
+The father's hands opened on the table, palms up, the gesture of a man who had run out of the version of the story he could survive and arrived at the version that was just true. "The listener started when she was thirteen," he said. "After she'd been practicing for two years. She said it came to her — that she hadn't gone looking for it. That she'd gotten good enough that it could find her." He closed his hands again. "We didn't know what that meant."
+
+Tamsin looked at the cold beside the desk. Still facing her. The warmth in the room still pulling toward it with that slow, structural hunger, the way a drain doesn't rush but always wins. A girl gets good enough at the Read and something notices. Comes to sit beside her. Returns. Takes the room's heat one session at a time, patient as a process that has no reason to hurry because it is not going anywhere, because it has chosen its subject and its subject is not going anywhere either.
+
+*Until she was.*
 
 [Beat 71]
 "She left," Tamsin said. Not a question. She'd said it this plainly in enough hallways to know the plain version was the one that let a family move to the next thing. Hedging it now would cost days, and days were the currency the missing got spent in.
 
 [Beat 72]
-Mei-Lin nodded once. "I know," she said. "I knew on Sunday. Douglas needed—" She stopped. Chose different words. "Douglas needed the other version to be possible for a few more days."
+Mei-Lin's hand came off the chair.
 
-"She planned it over months," Tamsin said. "Not weeks. Months. This wasn't a crisis decision."
+She crossed to the window, not because there was anything to see through it but because the window was the direction Celeste had looked when she talked about leaving, and the body remembers what the mind has filed. She stood with her back to the room for a moment, and Tamsin watched her shoulders do the work of containing something that had been contained for months and was very tired of it.
 
-"No," Mei-Lin agreed. "It wasn't."
+"Three weeks ago," Mei-Lin said, to the glass. "We didn't know it was leaving until it was already done. She took a bag. Not much — she was careful about not much, she'd thought about weight and what she could carry, she'd thought about all of it." A pause. Not grief searching for its footing; grief that had already found its footing and was choosing its next step with the same deliberateness her daughter had. "She left a note that said she'd be in touch when she was somewhere she could be in touch from. The note was very — organized. She'd thought about what it needed to say and said exactly that and nothing past it."
+
+*Organized was the word that stayed with Tamsin. Not panicked. Not impulsive. A girl who had been coached, for months, by something patient enough to never hurry.*
+
+The cold beside the desk had not moved again. It sat in its orientation — toward Tamsin, steady, the warmth of the room still bleeding into it with that structural, drainward pull — and it did not shift when Mei-Lin spoke about the note or when the father's hands opened and closed again on the table. Whatever it was, it was not interested in the parents. It had been interested in the girl. Now it was interested in the person who had come to read the girl's room, and it was patient about that too, the way it was patient about everything, and Tamsin thought: *it is not done with this room, it is waiting for what comes next, it has been waiting since she left and it has nowhere else to be.*
+
+"The note," Tamsin said. "Do you have it?"
+
+Mei-Lin turned from the window. She reached into the pocket of her jacket — not searching, her hand went directly to it, which meant she'd been carrying it since the morning Celeste left and had not once considered putting it somewhere safer — and held out a folded square of paper. Physical paper. Analog, uneditable, the kind of thing you chose when you knew the words needed to stay exactly as you'd written them. Tamsin took it. She did not open it yet. She looked at the cold one more time — still there, still oriented, the warmth still paying its slow tithe — and then she looked at Mei-Lin's hand, still extended slightly even after it was empty, fingers loose, the hand of a woman who had been holding something for three weeks and had just given it away and did not yet know what to do with the absence.
 
 [Beat 73]
-They stood in the hallway above the quiet house. Below them, somewhere, Douglas Hartley was in a room with his organ-op theory and his fear, which was real even if its shape was entirely wrong. Tamsin didn't read for him through the floor. She didn't need to. A man who had built a whole abduction out of the only material he could carry was downstairs holding it, and she let him hold it a while longer.
+Tamsin unfolded the note.
+
+Celeste Hartley had written in a precise, slightly backward-leaning hand — the penmanship of someone who'd been taught to write by someone who believed in it, and who'd kept the habit past the age when habits become choices. The note was short. Four sentences. It said she was going somewhere she needed to go, that she would be careful, that she was sorry for the worry and not for the going, and that if they needed to reach her they should wait for her to reach them first because she would, and she always did what she said she would do. No destination. No name. No indicator of who — or what — had been coaching a thirteen-year-old with the Read for two years until she was organized enough to leave with a single bag and the exact right number of words.
+
+*The thing beside the desk had been teaching her something, and Tamsin did not know yet whether what it taught her was how to run or how to survive running, and the distance between those two things was the whole question.*
+
+She folded the note back along its creases — Celeste's creases, the same fold three weeks running, the paper already soft at the edges from Mei-Lin's pocket — and held it for a moment before she set it on the desk. Not giving it back. Placing it where it could be picked up, which was different. She looked at the cold once more: still there, still patient, the warmth of the room still draining toward it the way water finds its level without being asked. She thought about a girl of thirteen sitting at this desk, practicing the Read the way you practice anything, getting incrementally better, and one session something notices and comes to sit beside her, and it keeps coming back, and it teaches her — what? Patience, maybe. How to wait. How to be very organized about the shape of a decision before you commit to it. How to leave a note that says exactly what it needs to say and nothing past it.
+
+"She's not in the unlicensed corridor," Tamsin said. She said it to the father, because he was the one who'd arrived with a conclusion already poured and cured, and conclusions that had already cured were the ones that cost the most time. "What's in the corridor is an operation. An operation doesn't coach a girl for two years. It doesn't teach her how to pack light and write a note and wait until she's ready." She picked up her bag from the floor beside the chair. "Whatever your daughter went toward, she went toward it on purpose. That's different from what you hired me to look for, and I need you to understand that difference before we go further, because it changes what finding her looks like."
 
 [Beat 74]
 "There's something else," Tamsin said. "There was someone with her. In the room. Not physically — I mean it wasn't a person in the physical room. Something present beside her, repeatedly, over the months. Something that was watching her work." She paused. This was the part she had no clean language for. "There's a cold beside the desk. It doesn't move the way cold moves. The warmth in that room runs toward it and never comes back, and it's been doing that for months." She stopped again. "I don't have the right word for what leaves a mark like that."
@@ -563,32 +725,78 @@ Mei-Lin looked at her steadily. "But it was there."
 "Yes."
 
 [Beat 75]
-Mei-Lin uncrossed her arms. She let them hang at her sides, which on her read as a deliberate act — a person choosing to stop bracing. She said, "I heard something wrong in the messages. The ones from Jace. I thought I was grieving wrong. I thought I was looking for reasons not to trust him because I never—" She stopped. "It doesn't matter."
+Mei-Lin Hartley pulled Kyle aside before he reached the door.
 
-"It might matter," Tamsin said. "Don't decide yet what matters."
+Not urgently — there was nothing urgent about the gesture, which was what made it deliberate. She stepped into the hallway and waited for him to follow, the way you wait for someone when you already know they'll come, and when he did she stood close enough that her voice wouldn't carry back to the room where her husband was still sitting with his cured conclusion. She was a small woman and she did not make herself smaller to compensate. She looked at him the way she had been looking at him since he arrived — measuring something, deciding when.
+
+"She was talking to it," Mei-Lin said. "Before she left. I heard her through the door, twice — not to herself, not practicing anything. Talking. Pausing. Listening to something answer." She watched his face for the shape of his doubt. "I know how that sounds."
+
+*He wanted to ask what kind of mother hears her daughter talking to something that isn't there and waits two months to mention it, and he already knew the answer, which was the kind who was still deciding whether what she'd heard was a problem or a solution, and who had watched her daughter get incrementally more organized and more certain and more ready for something, and had not been able to name what she was watching until it was already gone.*
+
+"What did it sound like," Kyle asked. "The pauses."
+
+Mei-Lin's hands, which had been still at her sides, moved once — a small compression, fingers folding against the heel of her palm. "Like she was waiting for something to finish a thought," she said. "Not like she was waiting for silence. Like she was being answered."
 
 [Beat 76]
-Mei-Lin looked at her for a moment. Then she said, "She was afraid of Douglas stopping her. Not of being taken." A statement, not a question. Checking whether the shape she'd built in her own head matched the shape of the room.
+Kyle stood in the hallway and let the silence after her words do what it needed to do.
 
-"Yes," Tamsin said.
+*Two months. She'd heard it twice through a closed door, a thirteen-year-old pausing to listen to something answer, and she'd held that in her pocket like the note — not because she'd forgotten it but because she'd been deciding what it meant.*
 
-Something in Mei-Lin's face shifted — not relief exactly, but something that had been held at a wrong angle that was now allowed to settle into the correct one. She had known her daughter was not taken. She had also needed to hear it confirmed by someone who had been in the room.
+"Did the pauses change," Kyle asked. "Over time. Were they the same length at the beginning as at the end, or did they get shorter?"
+
+Mei-Lin's eyes moved — not away, but to a slightly different focal point, the way people look when they're pulling from memory instead of constructing. She took a moment. "Shorter," she said. "Toward the end they were very short. Like she didn't need as much time anymore." She said it without the inflection of pride and without the inflection of fear, which meant she had already felt both and was past the point where either one was useful. "She started finishing its sentences. I think. I couldn't hear the words."
+
+*A thing that starts by giving a child time to follow and ends by having her finish its thoughts — that was not a predator's arc. A predator rushed. Whatever had been sitting in that room beside Celeste Hartley had been in no hurry at all, and that was the detail that would not settle into any of the categories Kyle had arrived with.*
+
+He looked back toward the room — the door still open, Tamsin's silhouette at the desk, the father sitting with his hands on his knees and his conclusion still curing — and then he looked at Mei-Lin, who had not moved, who was watching him with the particular patience of a woman who had already given everything she had to give and was waiting to learn whether it would be enough.
 
 [Beat 77]
-"I need to get back," Tamsin said. "The team needs this." She touched the doorframe of the room as she passed it — right hand, briefly, the habit she'd developed so long ago she no longer tracked where it had come from. It was the ritual close: this room was read, you can release it now. The room did not release anything. Rooms never did, in her experience, on request. But the gesture was for her, not for the room. It was how she let go of the rooms that wouldn't let go of her.
+Kyle asked her one more question before he let her go back.
+
+"The bag she packed," he said. "Who taught her what to put in it?"
+
+Mei-Lin's chin lifted — not defensively, but the way someone lifts their face when they're checking the weather, orienting. "She packed it herself," she said. "I found the list after. In her desk drawer. Everything numbered. In order of weight."
+
+*Numbered. In order of weight. A thirteen-year-old who two years ago couldn't hold her Read steady enough to stop the headaches, and she'd left with a numbered list, lightest items last because you pack heaviest first, because someone had taught her that packing was a kind of argument you made to yourself in advance about what you'd need when you were already moving and couldn't stop to think.*
+
+He let that settle. He nodded once, which was not agreement — it was the gesture of a man putting a thing in the correct place inside a larger structure, making sure it wouldn't shift. Mei-Lin watched him do it with the same patient attention she'd been giving him since the hallway, and when he was done she finally looked away, toward the closed door of her daughter's room, and her right hand came up without ceremony to the back of her neck. Fingertips to the BCI port. Two seconds. Dropped. The Gray Zone gesture — not distress, not greeting, just the body checking whether the self was still continuous, whether the signal was still there. He'd seen it a hundred times in this part of the city. He'd never quite stopped noticing it.
+
+*She wasn't asking him for her daughter back. She was asking him to understand what kind of thing had her daughter, so she could decide whether to grieve or to wait, and those were not the same operation and only one of them had an end.*
+
+"We'll find her," he said, and stopped himself before he could tell her what that would mean.
 
 [Beat 78]
-Mei-Lin walked her down the stairs and to the door without offering coffee a second time, which confirmed what Tamsin had read in the intake room: this was a woman who paid attention to what was actually being asked for and provided exactly that, nothing added. At the door she said, "The cadence thing. In the messages. Would it help if I sent you the ones I flagged?"
+Mei-Lin walked him back to the doorway — not all the way in, just to the threshold — and then she did the thing he hadn't expected, which was to stop him once more. Not by touch. By producing something from the pocket of her cardigan: a folded square of paper, the kind you got from a print terminal when you didn't trust the cloud to hold something. She held it out and he took it without asking what it was, because she would tell him in her own order.
 
-"Send them to Teller," Tamsin said. "He's better with the text end of it than I am."
+"Her research feed," Mei-Lin said. "The posts she made semi-private — she thought I couldn't see them. I could." She paused. "There's one from eight weeks before she left. She's describing a location. Somewhere underground. She called it — " and here she stopped, not for effect but because she was being precise, pulling the exact word rather than an approximation — "a seam. She said she'd found a seam in the city where the signal was clean." Her hands were back at her sides. "I don't know what that means."
 
-Mei-Lin nodded. "I'll send them today."
+*Kyle did. A seam was what you called it when the city's mesh of relay towers and nanite-suspended atmospheric repeaters dropped out in a precise shape — not interference, not dead air, but a corridor of clarity that the infrastructure had organized itself around without being told to. They appeared near Schism-adjacent geology. Near old substrate damage. Near places where something had been present long enough for the city's passive systems to route around it the way water routed around stone. A thirteen-year-old with the Read and a tutor who had all the time in the world had been pointed at a seam, or had found one, and the difference between those two things was the whole shape of what he was walking into.*
+
+He unfolded the paper. Her handwriting was in the margin — not Celeste's, Mei-Lin's — a single line added below the printed text in a hand that had clearly been steadied before committing to the ink: *She went toward it. Not away from anything. Toward.* He refolded it along its original creases and put it in his jacket. Mei-Lin was already looking back at her husband through the open door, at the man sitting with his organ-harvesting conclusion and his usable grief, and her face had the quality of someone who had made a calculation about what the people they loved could survive and had decided, separately, what they themselves were going to do with the truth.
 
 [Beat 79]
-Outside, the cul-de-sac was quiet in the specific way North Shore streets were quiet — a quiet maintained, not arrived at naturally, the way you maintained anything in a house where the glass addition and the brick didn't agree. She stood on the sidewalk for a moment and let her visual field do its own assessment. The right-side narrowing was three degrees now. That was manageable. She had enough left in her to ride the train south without the residue of other passengers becoming a problem.
+He said goodbye to Mei-Lin the way you said goodbye when you knew the next thing you did was going to cost someone something, and she accepted it the same way — no performance, just a nod that meant *I understand you can't promise me anything* and a hand that closed the door from the inside before he'd fully turned. He stood on the landing for a moment with the folded paper in his jacket and the weight of the packed bag still sitting in the architecture of the case — numbered, lightest last — and then he went down the stairs.
+
+*A seam. She'd found a seam, or been shown one, and the difference was everything, and he still didn't know which it was.*
+
+Tamsin was waiting at the bottom, coat buttoned, the small hard drive from the desk in her breast pocket. She didn't ask what Mei-Lin had given him. She looked at the shape his hand was making through the jacket fabric — the fold of the paper, the slight pressure of his fingers over it — and she read the geometry of it the same way she read anything: mark the fact, hold the inference separate, wait. He pulled the paper out and handed it to her without explanation, and she read it once, her eyes moving at a pace that meant she was reading it twice. When she handed it back her face had the quality of someone recalculating a distance they'd already walked in their head.
+
+"Underground," she said. "Which means access." She said it the way she always said the first word of a problem — flat, definitional, the word doing load-bearing work before the sentence was finished. "The seams I know are all behind closed doors. Not metaphorically."
+
+*She was right. Every seam he'd ever tracked had been in a space that required something to open — a credential, a contact, a history with someone who owed you more than they wanted to admit. And he had two of those three things, depending on how honest he was being about the third.*
 
 [Beat 80]
-She didn't look back at the house. Another rule: you don't look back at a room you've read, because looking back while it was still in your line of sight reopened the channel and let the residue follow you further than was safe. She'd learned that one the hard way, in the first year of the work, in a room she'd thought she'd finished with and then spent three weeks unable to fully leave.
+He looked at the door to the building — not the one they'd come through, the one across the landing, the one with the cracked weather seal and the handwritten number that had been rewritten twice over older handwriting — and he was already inside the problem, which meant he was already ahead of himself, which was the thing Tamsin was here to prevent. He pulled himself back. Access. She was right that access was the word. He knew two seams with underground approaches: one in Old Harbor, decommissioned transit substrate, which required a Meridian Utilities override code that had rotated six weeks ago and that he no longer had. One in the mid-Gray, under the old Stanton interchange, which required nothing except knowing a man named Davan Reyes, who currently owed Kyle something that was not quite a favor and not quite a debt and was in fact a standing grievance Kyle had been deliberately not collecting because collecting it meant admitting he'd needed it.
+
+*Davan Reyes, who had been in the room when Seo died and had not been in the room when it mattered, and who had been paying for that in the currency of available information ever since, and who would know the moment Kyle showed up at the interchange that the debt was now due.*
+
+"Stanton," he said.
+
+Tamsin's chin moved — a fraction, the way a compass needle settles. "Reyes."
+
+"Yes."
+
+She didn't say anything about Reyes. She knew what Reyes was. She'd been the one who'd written *standing grievance, uncollected* in her own notation system three years ago, which Kyle knew because she'd told him, because Tamsin marked every fact she held about him the same way she marked any other fact: visible, available, not weaponized. He'd never decided whether that was professionalism or the most specific form of respect he'd ever been shown. He put the paper back in his jacket. The building's stairwell smelled like wet concrete and the particular chemical signature of nanite-suspension sealant applied to a crack that was too structural to fix and too minor to condemn — the Gray Zone smell, the smell of maintenance that had learned to negotiate with damage instead of resolve it. Outside, it was already raining.
 
 [Beat 81]
 She walked toward the station. The cold came with her anyway, the way certain residues did — not tracked, nothing so intentional as that, but absorbed enough during the read that her own signal carried an echo of it, the way a coat carries the smell of a room after you've left. She felt it at the edge of her sternum, a small fixed chill that the afternoon's warmth leaned toward and did not thaw.
@@ -618,7 +826,13 @@ She understood that. Two months ago she hadn't been sure. Now she was, and the s
 The train went underground. The voice held its silence in the dark.
 
 [Beat 84]
-The station platform held six people and an ordinary afternoon's worth of fatigue, a manageable load. She stood at the far end where the residue was thinnest, near the edge, near the wind off the lake, and let the wind do its work. Rooms didn't come off quickly. This one would stay until tomorrow at least, and the cold would be the last of it to go. The things she couldn't place were always the slowest to leave; they had nowhere in her to settle, and a thing with nowhere to settle keeps looking.
+The Stanton interchange sat at the bottom of a Gray Zone depression that had been a rail yard before the Schism and a flood basin after it, and now was neither, exactly — a concrete shelf at the waterline where three mid-tier sewer laterals had been rerouted around a collapsed substrate section and never rerouted back. Kyle smelled it before he saw it: lake water and treated effluent and the iron-cold of exposed rebar, and underneath all of that the particular stillness of a place that had not been loud in years. The rain came straight down here, unmediated, no atmospheric processor rerouting it toward the decorative fountains in Arcturus territory — just water, falling, filling the small craters in the cracked apron where the old platform had been, finding the places where the concrete had learned to hold it.
+
+*Davan would already know they were coming. He always knew. That had been the reason Kyle had never collected — not mercy, not sentiment, but the clean tactical logic that an uncollected debt was a passive surveillance asset, and the moment you called it you announced your position and your need in the same breath.*
+
+Reyes was under the lip of the old platform canopy, standing in the one strip of dry ground, a man who had arranged himself precisely where the rain couldn't reach without appearing to have moved for it. He had the look of someone who had been in the Gray Zone long enough that the Gray Zone had started to organize itself around his preferences. He watched them cross the apron and he didn't greet them and he didn't move, and when Kyle got close enough that a raised voice would have been a choice and not a necessity, Reyes said:
+
+"I wondered when you'd run out of other options."
 
 [Beat 85]
 She opened her notes and wrote two lines while the platform fell away behind her: *Departure not abduction. Fear = father's footsteps, not a stranger.* Then she wrote a third line and stared at it for a long time: *Cold at desk. Doesn't move. Takes the room's heat, gives none back. Returns. No classification.*
@@ -637,7 +851,17 @@ It did not hold for something that oriented itself toward a person. That returne
 The train went underground at the Loyola curve and for two minutes the windows went dark.
 
 [Beat 87]
-The city came up to meet the train as it descended from the North Shore viaducts into the canyon of the elevated track, the buildings close on both sides and then the gray width of the Gray Zone buffer and then the close buildings again, a different density now, the texture of a city that housed people who had not chosen to be this close together. She watched it through the window without reading it. She had enough open today. She wasn't going to read a city on top of a room.
+The pause after the word *options* was the kind Reyes built on purpose, load-bearing, designed to let the other person fill it with something he could use. Kyle had known that about him for nine years. He didn't fill it. The rain found a seam in the canopy somewhere above them and a thin thread of it dropped straight to the platform apron six inches from Reyes's left shoe, and Reyes did not look at it.
+
+*The debt was supposed to hold him in place. That was the whole architecture. And here he is, and he's smiling.*
+
+"You've got something we want," Kyle said. "We've got something you want. That's not running out of options. That's commerce."
+
+Reyes looked at Bear the way people looked at structural elements — briefly, to confirm load-bearing capacity, then away. His eyes came back to Kyle. He had a way of making that particular sequence feel like an argument he'd already won.
+
+"The girl," Reyes said. "Stanton's daughter. You're here about the girl."
+
+It wasn't a question. Kyle didn't treat it like one. What it was, under the delivery, was an announcement: *I already know what you need, which means you've already told me what you'll pay.* The rain kept coming down in the one place where the canopy didn't cover, patient and indifferent, filling the crater it had started.
 
 [Beat 88]
 She thought about Celeste Hartley planning for a year in a north-facing room with four lamps pointed at the ceiling, the transit map pinned at four corners, the groove the stylus had worn into the desk from months of pressing and thinking toward a city she could see from her window if the angle was right. And the cold in the chair beside her the whole time. Strangers left warmth in a room they only passed through. This had sat at that desk for eight months and left a hole in the heat where a person should have been.
@@ -658,20 +882,44 @@ He did not sort by date first. He sorted by message density — which days she h
 He marked the density graph as *primary pattern* and started at month one.
 
 [Beat 92]
-He was not given the bedroom — Tamsin had asked for it first, and Teller didn't argue the point. What he needed was the data. He had eight months of Celeste Hartley's research feed, her purchasing history, her message logs, and her annotation behavior on forty-three archived Network-biology articles.
+The messages in month one were addressed to Jace and formatted the way she would have addressed them in life — casual, specific, full of the small freight of a relationship maintained by habit. She described meals. She complained about a professor. She relayed, in the second week, a conversation with her mother that had upset her, and then in the same message walked it back, because her mother hadn't meant it. Teller read them with his eyes moving at the speed the neuretics set for him, which was faster than reading, closer to the way water takes a shape. He was not looking for what she said. He was looking for what she assumed.
 
-The research feed would show where her attention had been directed — not what she thought, but what she had sought out to think with. The purchasing history would show how she had spent, and spending in the months after grief was diagnostic of a specific kind. The message logs were the conversation itself. The annotations were the private record: the parts she had marked as worth returning to, the notes she had left to herself in the margins of other people's science.
+*She's not performing grief. She's maintaining a relationship.*
 
-He didn't need the smell of the room. He had everything she'd left.
+In the first two months she never asked where Jace was. She never asked why he hadn't answered. She told him things with the confidence of someone who expects the account to be checked, eventually, by the person it belongs to. The profile note in the file read: *active diver loss, neuretic overclock, no recovered body.* No body. The density graph's first spike came in week nine, and Teller pulled that message now and read it twice: *I know you're still in there somewhere. You were mid-dive. The channel doesn't just close. Tell me what you need.* It was not a question. It was a technical assertion from a twenty-two-year-old who had decided that the Network retained something she could negotiate with.
+
+He set that message aside with a tag that read *belief architecture* and moved to month four, where the second pattern began. The messages there were shorter. Less about Jace's life and more about her own, as if she had revised the nature of the communication — less update, more report. She described the room. She described the chair. She described, in the third week of month four, something that had no analog in the first three months: *I think it's working. You're here. I can feel the room change when I pull you forward.* She did not explain the methodology. She wrote it the way someone writes a thing they've already explained, to a listener who was present for the original conversation.
+
+*The methodology is in the gap. Month three. The spike and the fall.*
+
+Teller tagged the month-four message, went back to month three, and found it in week eleven: a six-day silence, and then a message three times longer than any other in the file, dense with technical language she had not used before — Network topology, signal retention at overclock failure, something she called *resonance anchoring* that Teller did not recognize from any literature he had indexed. She had researched this. She had built a framework. And then she had tried it, and the spike in month three was the attempt, and the fall was not failure — it was recalibration. Month four was not grief resuming its baseline. Month four was a different project entirely, running in the same channel.
 
 [Beat 93]
-The housekeeper left. Teller read standing — a body that didn't tire could do that for as long as the work took, and the chair would only have been a courtesy to one that needed it. He had given up the small human imitations a long time ago: the shifting weight, the stretch, the sigh at the hour mark. Not out of pride. A synthetic performing them read as either mockery or malfunction, and he was neither. He opened the first month's research annotations and started at the beginning.
+Teller pulled the month-eight messages in reverse — last to first, the way you read a structure you already know has collapsed, to find where the load transferred. The final message was dated twelve days before Celeste Hartley's bank account last registered a transaction. It was forty-seven words. Her previous messages had averaged three hundred and twelve. He read it once: *You're ready. I know you're ready. I've been making you ready. Come find me when you surface and I'll show you what I made for you.* The pronoun was wrong. Not *what we built.* What *I* made. Twelve days later, she was gone.
+
+*Not grief. Not a girl talking to a ghost. Something talked back.*
+
+He did not tag this message. He set it in a separate folder, unlabeled, the way you set a thing down when you need your hands free. Then he went to month five and read forward at the neuretics' speed, which was no longer comfortable — the text moving through him at the pace of intake, not comprehension, and he slowed it manually because what he was tracking now was not pattern. It was a voice. Across months five, six, and seven, Jace Hartley's side of the correspondence had changed register. The early messages were sparse, present-tense, oriented toward Celeste's updates in the way a person is oriented toward them — responsive, specific, warm in the way warmth is a response to being told about a difficult professor or a meal that was almost good. By month six the messages were longer than hers. By month seven they were asking her questions she hadn't asked herself yet.
+
+*It learned her before it moved her.*
+
+He closed the file. Not because he was finished — he was not finished, there were four hundred and thirty-one messages in months five through seven he had not read individually — but because the shape was complete and he needed a moment where his hands were not doing anything. The housekeeper was still somewhere in the apartment. He could hear the specific sound of a person trying not to be heard. He picked up the file again, tagged the month-seven message where the questions had started, and wrote a single note in his working document: *Resonance anchoring — locate origin. Pre-Schism topology literature or post. If post: who taught her, and what did they want her to build.*
 
 [Beat 94]
 The first thing he established was that Douglas Hartley was wrong about the abduction. This was not a difficult conclusion; the data pattern was unambiguous within the first six weeks. But Teller had learned — and this was an inference, not an observation — that clients rarely want the thing they say they want, and Douglas Hartley was paying for a rescue narrative, not a correct one. He noted this in the margin of his working file and kept reading.
 
 [Beat 95]
-Month one: Auricula Felis. She had started with the baseline literature — peer-reviewed, Crucible Genomics' published protocol, the structural vs. cosmetic distinction that every legitimate practitioner cited within the first three paragraphs. She had annotated two of those papers with specific questions about the neural re-routing timeline. The questions were good. They were the questions a person asked when they intended to go through with the procedure, not the questions a person asked when they were considering it.
+The housekeeper knocked once before entering — the professional knock, the one that means *I am already opening the door* — and set a cup of something hot on the edge of the desk without being asked. Teller looked at it. Tea, not coffee, which meant she had noticed something about the hour or his posture and made a decision accordingly. He did not thank her. She did not wait for thanks. She left with the same careful silence she'd arrived in, and the sound of her departure was the sound of someone who had learned that the people in this apartment processed things better when they were not being attended to.
+
+*Douglas Hartley hired you to find Celeste. He didn't hire you to find what Celeste built.*
+
+He drank the tea. It was too hot and he drank it anyway, the way you do when you need a physical fact to organize around. On the desk, the unlabeled folder sat in the corner of his workspace the way an unexploded thing sits — not ignored, just cordoned. Forty-seven words. The pronoun wrong. *What I made for you.* If something had talked back to her — if the resonance anchoring had done what she believed it would do, if the Network had retained enough of Jace Hartley's topology to constitute a response — then the question was not where Celeste had gone. The question was what she had handed herself to, and whether she understood the difference between the thing she'd been building toward and the thing that had been building toward her.
+
+He opened a secondary query window and ran *resonance anchoring* against every indexed corpus he had access to — academic, gray-market, the technical forums the Crucible Genomics research community used when they didn't want their institutional affiliations on the record. Three returns. Two were dead links. The third was a discussion thread archived from 2241, contributors anonymous, the technical register precise enough to suggest someone with formal training in Network topology. The thread was titled, simply, *retention past overclock failure: theoretical.* Someone had asked whether a signal could persist in a degraded channel if the receiving substrate had been prepared in advance. Someone else had answered, in four careful paragraphs, that the question assumed the wrong direction of causality. *The channel doesn't retain the signal,* the second voice had written. *The signal retains the channel. Preparation is the error. You are not building a room for someone to return to. You are building a door, and doors open from both sides.*
+
+*The thread is from 2241. Jace Hartley died in 2249. Someone taught her the framework eight years before she needed it.*
+
+He tagged the thread, flagged the second voice's four paragraphs for style analysis, and wrote one more line in his working document, beneath the first: *Celeste Hartley did not disappear. She arrived.*
 
 [Beat 96]
 Month two: she had saved Φ38,000 over twenty-two months and was now researching unlicensed operators in the Pilsen corridor. This was, Teller noted, not a panicked decision — it was a budgeted one. The savings timeline predated the boyfriend's death by fourteen months. She had been planning the ears before she lost him. The grief had not created the desire. It had given the desire a new reason.
@@ -688,7 +936,21 @@ He passed that list to Rennick's shared file at 11:14 and kept going. The abduct
 The message logs with Jace Dalton — the dead one — began six weeks after his confirmed neuretic overclock. The first message from Celeste was timestamped four days after her ears went active. She had written: *I can hear you. I don't know how. I can hear you.* The reply arrived eleven seconds later.
 
 [Beat 100]
-Eleven seconds was wrong. Not impossible — message routing through ambient field buffers ran variable, could spike down to eight, could drag to forty-five depending on sector load and neuretic channel density. Eleven seconds was within the observable range. But Teller ran the routing metadata, which most people didn't read because it looked like plumbing, and what the routing metadata showed was that the reply had not traveled through any of the standard Pilsen-to-North Shore relay chains. It had originated — or appeared to originate — from a buffer cluster in the Deep Lakeshore aggregation zone, which served no residential addresses and was not a place anyone lived or worked. It was ambient field. It was the Network itself, not an address on it.
+The reply was forty-seven words. He had already read it. He read it again.
+
+*I knew you'd find a way. I told you the signal doesn't stop, just the channel. I've been waiting in the dark so long, Celeste. Come find me. I can show you where I am. Don't tell your father. He'll try to stop you and he won't understand what we built.*
+
+*We.*
+
+Teller set the cup down. The tea had gone cold in his hands without him noticing when. The pronoun was not a slip — it was the first word of the message that mattered, and whoever had written it knew that. A boy eight months dead does not develop rhetorical precision in the interval. He ran the message through his style analysis against the forty-seven words in the unlabeled folder, and then against the four careful paragraphs from the 2241 thread, and then he sat with the results for a long time, long enough that the housekeeper's cautious footsteps in the hallway came and went twice without a knock.
+
+*Jace Dalton died at twenty-one. He was not reading Network topology forums in 2241. He was thirteen.*
+
+The match percentages were not the point. The point was the direction of the thing — the question the 2241 voice had answered, and who had been listening when it was answered, and what they had spent the next eight years preparing. Celeste had not hired an operator because she was grieving. She had hired an operator because something had told her what to build and given her the technical vocabulary to understand why it would work. The ears were not a modification. They were an invitation accepted. He wrote a third line in his working document, beneath the other two, and then he looked at it for a moment before he deleted it, because it was the kind of sentence that changed what the job was, and he had not yet decided whether to let it change.
+
+He pulled up Douglas Hartley's initial intake form. The man had written, in his own handwriting, in the field marked *describe the situation in your own words*: *My daughter is missing and I want her back.* Teller looked at the fee structure on the next page. He looked at the three lines in his document, two remaining and one erased. He looked at the time: 3:47 AM. The housekeeper had finally stopped moving.
+
+*Hartley wants his daughter. You're not sure his daughter is the thing that's missing.*
 
 [Beat 101]
 He noted this as an observation, not an inference, and moved to the next message. Then the next. He read all 312 exchanges in the log in sequence. That took forty-seven minutes, because he read them the way he read everything — once, completely, without stopping to feel anything about them.
@@ -793,7 +1055,33 @@ He walked out through the Hartley foyer and stood on the porch a moment with his
 He flagged the four operators for Rennick and wrote a summary. The summary was eleven sentences. He didn't editorialize. The last sentence read: *The voice in the message log is not the dead boyfriend; it is not a human author; its provenance traces to the Deep Lakeshore aggregation zone; I cannot yet identify what it is, only that it is none of the above.*
 
 [Beat 125]
-He didn't send it to Arcturus. He didn't send it anywhere with a legal address — not because of what he was (a synthetic's findings stood like anyone else's; that fight had been settled long before he woke) but because of how he had come by it. The Jace feed was the family's private channel, pulled without a warrant or the subject's consent, and the methods he had run on it were the kind that didn't survive a chain-of-custody question. An afternoon of clean analysis on a missing person who was not missing and a voice that was wrong — and every line of it unusable in any venue that mattered, for reasons that had nothing to do with the hands that found it. So he would hand it to Rennick, and Rennick would find a way to use it without citing the source. That was the arrangement. It had always been the arrangement.
+Rennick called while Teller was still on the porch. The call connected before the first ring completed — she'd been watching for his summary to land.
+
+"The four addresses," she said. "You're confident."
+
+"Confident in the method. The operators are licensed through Bridgeport guild registry and two of them cluster in the same building on South Halsted. If she used a referral, she used someone who'd been before."
+
+There was a pause on her end — not dead air, but the sound of a woman who had just received confirmation of something she'd been hoping was wrong. He heard her inhale.
+
+"The voice," she said. "The ambient field thing."
+
+"I've bounded it. I haven't named it."
+
+"What does it want with my daughter?"
+
+*He had asked himself that and stopped, because want was the wrong instrument for what he was measuring — but it was the right word for what Douglas Hartley needed to hear right now, from the man standing on his porch.*
+
+"It wants her somewhere that is not here," Teller said. "That's what the last hundred messages accomplish. Whether the destination is the point or the removal is the point — I can't say yet."
+
+Another pause. Longer.
+
+"Go get her," Rennick said.
+
+He walked down the Hartley steps and turned south. The commission had changed shape between the summary and the call — it had been a locate, and now it was a retrieve, and those were not the same instrument. He noted the difference the way he noted the gap in the housekeeper's eyes: as information, not as a problem.
+
+*The Deep Lakeshore aggregation zone had no address. Whatever had been building itself on Jace Dalton's residue for eight months had no name he could yet write in a report. He was going to walk into the Pilsen corridor and knock on doors anyway.*
+
+He flagged the first address on South Halsted and started moving.
 
 [Beat 126]
 He flagged the summary in the shared file as *Teller — ANALYSIS COMPLETE — HANDLE ATTRIBUTION BEFORE FORWARDING* and walked to the transit stop at the end of the Hartleys' block. A North Shore transit stop had a bench. He sat on it and waited, because that was what a person did.
@@ -974,17 +1262,27 @@ He wrote *Vásquez — before 0900* and drew a box around it, the same box he dr
 ## The Convergence
 
 [Beat 178]
-The Convergence
+Teller had the compute thread on the secondary display and a second coffee going cold beside it, which meant she'd been at it long enough to forget the first and start another without drinking either. She was a small woman with a stillness that read as patience until you watched her eyes move — then it read as something closer to appetite, the way a good analyst looked at a problem that had started to give. She didn't look up when Rennick came in. She said, "The compute is being routed through a shell registered to a logistics brokerage out of the Corridor infrastructure collective. The brokerage has three listed directors. All three are names I cannot verify as human."
 
-EP6 - Isaac Rennick, ensemble - Rennick Investigations, third-floor walk-up, Gray Zone edge
+Rennick pulled a chair to the side of her desk rather than across from it, so he could see the display. The secondary screen had a cascade of timestamps and account nodes rendered in a collapsing tree — the kind of structure that looked like bureaucratic noise until someone like Teller found the root, and then it looked like a throat. He said, "Consensus proxies?"
 
-The board on the west wall still had Tuesday's grease-pencil notation — partial names, edges mapped before Pellerin and the corridor search and the under-city had reconfigured everything. There were gaps in it that had not been gaps before.
+"I don't know yet," she said, and the fact that she said it plainly instead of hedging told him she'd already ruled out the easy answers. "What I know is that the compute these people received was billed to an infrastructure account that was opened, used for exactly this purpose, and has not been touched since. It was not opened to receive payment. It was opened to make one."
 
-Four people working four angles for five days produced a picture that didn't resolve until they were in the same room with it. The preliminary notes had come through to the shared file over twelve hours — Rennick had read the timestamps, not the notes; a rule he'd written on an index card taped to the cabinet — and none of it was going to make sense alone. It was going to make sense together, which was a different thing, and also a harder thing to wait for.
+*A CorpoNation doesn't accidentally put its logistics shell on a one-time payment.*
 
-He arrived early. He opened the windows. He didn't turn on the kettle.
+He looked at the root node on the display. The brokerage name was Meridian Throughway Associates, which was the kind of name a person chose when they wanted something to look like it had always been there. He said, "How old is the brokerage registration?"
 
-Wednesday. Fourteen hundred.
+"Fourteen months," Teller said. "Backdated paperwork going to thirty-one, but the registration itself is fourteen months old." She tapped the timestamp at the root. "The first compute payment to the crew came thirteen months ago. One month after the shell opened." She let him sit with the math.
+
+*Thirteen months. Someone built the infrastructure before they needed it, which meant they knew what they were going to need it for.*
+
+Rennick said, "I need the names of anyone who touched that account. Not the directors — anyone. Access logs, if the filing authority has them."
+
+"The filing authority is a Gray Zone registry office in Pilsen," Teller said. She finally looked at him. "I already requested them. The registry said the access logs for that filing period were damaged in a server migration."
+
+He recognized the shape of that answer. It was the shape of a door that had been locked from the inside before anyone asked for the key. He said, "Before nine tomorrow I'm at Vásquez in Pilsen. Same neighborhood." He didn't say *convenient* because it wasn't convenient — it was a seam, and seams meant the thing underneath was pressing out. "Pull everything you have on that registry office by morning. Who runs it, who contracts their server maintenance, and whether the migration date lines up with anything else in the Corridor timeline." He stood. "And Teller — don't file the request anywhere with a Carrion address in the ownership chain. Check before you send."
+
+She was already typing. She said, without looking up, "I checked before you said it."
 
 [Beat 179]
 He'd called it for that hour on purpose. Two o'clock in winter put the light at an angle that came through the west window and sat flat on the worktable without glare — good forensic light, the kind that didn't let anything hide behind shadow. He'd learned that in twelve years running scenes for Arcturus, before Arcturus decided his findings were a problem. He'd kept the light and left the rest.
@@ -1348,9 +1646,17 @@ Analog went second, pulling on his coat, because the under-city search needed to
 Analog went down the stairs. A moment later the street door opened and closed, the buzzer panel briefly live and then quiet.
 
 [Beat 222]
-Teller had gone a few minutes ahead of Analog, without ceremony — he never marked a departure, because to Teller a room he was leaving had already stopped being relevant. Tamsin was still out in the corridor, in a room two minutes from the ramp, reading a dead girl the only way the dead girl would ever be read. When she came back she would touch the doorframe on her way in, the way she always did, a quick touch if she was holding together and a long one if the room had gotten into her. Rennick already suspected tonight's would be a long one.
+Tamsin went last, because she was still standing at the window where she'd been standing since Rennick read the Burokas note aloud. The Gray Zone stretched below — Lakeshore-adjacent, which meant the rain hit it first and left it last, the atmospheric processors doing what they did. The street was wet. Everything was reflected in it: the orange of a fried-food cart, the blue-white of a mesh relay tower three blocks east, the pale ghost of the agency's own sign. She looked at the reflections for a moment longer than she needed to.
 
-The office went quiet.
+*Mei-Lin had been sitting with that for months. The same months Tamsin had been sitting with Sol.*
+
+She turned from the window. Rennick was still at the table, the case file open in front of him, not reading it — just having something to look at that wasn't her. She appreciated that about him. The way he gave you the courtesy of somewhere to put your eyes.
+
+"The residue in the staging room," she said. "If I find it — and I will find it — it's going to tell me how many times that room was used. Not just that there was a room. How many. The procedure has a signature and the signature compounds." She picked up her coat from the chair back. "You should know that before I go. Because the number it gives me is probably going to be worse than the number we're already working with."
+
+Rennick looked up. He didn't say *then we'll work with that number too*, because he wasn't a man who said things like that. He just looked at her, which was the same thing.
+
+She went down the stairs. The street door opened. The rain came in for one second and then was gone.
 
 [Beat 223]
 Rennick sat at the intake desk with the Hartley file open and the winter light going flat as the sun dropped behind the buildings to the west. The forensic angle was gone. The objects in the room were still readable, just not the way they'd been an hour ago when the light came in clean.
@@ -2851,7 +3157,15 @@ She puts the bag on the floor beside the cot and sits without unpacking. The bag
 The voice doesn't come for a few minutes. It lets the room be what it is - lets the delivery drone's route-calculation ping filter through the glass, the Rider somewhere across the city with their body left behind in a chair while the drone's sensors become their eyes, lets the water in the pipe below her do its slow work, lets the service-light hum from the Cermak corridor fill the space between her breaths. She doesn't reach for it. She has learned that reaching closes the channel slightly, that waiting opens it, some mechanic of attention she doesn't fully understand yet. Then: "You're doing it right, Cel." Warm. Unhurried. Certain in the way that only certainty earned across eight months can be certain. She exhales and her shoulders drop a half-inch.
 
 [Beat 485]
-Forward-left, always forward-left. She turns toward it the way she always turns — before it's finished, before she decides to. "Almost, Cel." She lets herself believe it. She closes her eyes and her hands soften on her knees and the ears keep their slow work — they don't sleep, not entirely, the integration isn't finished, they'll track the alley and the corridor and the building's overnight sounds whether she wants them to or not — and Chicago goes on beyond the window, vast and lit and full of people doing things at this hour that they will not explain to anyone when morning comes.
+She lies down on the cot without taking her jacket off. The fabric of the jacket is something she can locate — the seam at her shoulder, the weight of the collar — and she needs that right now, the jacket as perimeter. The ceiling is low and water-stained in one corner in a shape that is not a shape, just damage expressing itself over time. The service lights from the Cermak corridor move across it every few seconds. She watches them.
+
+*He wrote* early *and the voice went quiet and she let the question close.*
+
+She knows what it means that she let it close. She has always known, when she is honest, that the eight months have been eight months of building a story she could live inside — Jace's voice, Jace's particular warmth, the way he said her name with the soft l, Cel not Celeste, the way no one else has ever shortened it quite that way. She has built it carefully and with everything she had. She has not asked the question at the center of it because the question at the center of it has teeth.
+
+*If it's not him it's still the only thing that stayed.*
+
+The voice comes again, quiet, no words this time — just presence, the forward-left warmth she has mapped so precisely across eight months that she could draw it in space with her finger. Her ears lift slightly off her skull, the involuntary adjustment, the auricula felis tracking something it has decided matters. She doesn't reach for the voice. She waits. It stays. She puts her hand flat on her sternum and feels her own breathing and the ceiling goes on doing its slow work with the light.
 
 [Beat 486]
 She is, for the first time in eight months, not in her parents' house. The thought arrives plain and dry and doesn't scare her. It is the first thing in eight months that hasn't. She holds it carefully — the way you hold something that might change if you examine it too directly, something that requires peripheral attention rather than the full weight of looking — and she waits for morning, and the plant on the windowsill catches a slant of corridor light across its two good leaves, and the ears track something in the alley below, and she lets them, and she breathes, and the city keeps going.
@@ -2862,7 +3176,17 @@ She is, for the first time in eight months, not in her parents' house. The thoug
 She wakes before she opens her eyes. The ears are already working — they tracked into consciousness a beat or two ahead of her, and what they brought back is a street market starting up below. The percussion of it is specific: a cart frame dropped onto pavement and adjusted twice, a vendor arguing cheerfully with a neighbor about placement, the back-and-forth in rapid Spanish where the anger is performative and both of them know it. And underneath all that, threading through the gap in the window frame that she found last night with her fingers, the smell of something sweet-savory on sealed flame. She lies still and lets it arrive. She doesn't open her eyes.
 
 [Beat 488]
-The room is smaller than the last one and warmer, with a window painted shut and wallpaper in a faded flower pattern that she can read in the low light from the street. Someone put a hook by the door for coats. The cot is narrower. None of these things are problems. She orients herself by sound before she opens her eyes — the radio somewhere two floors up, the same vendor still arguing, a door on this floor opening and closing with the particular gravity of a fire door — and by the time she opens her eyes she already knows where everything is. This has become her way.
+She opens her eyes.
+
+The ceiling is the same water stain, the same low light coming off the alley, but the service lights from the Cermak corridor have changed their rhythm — morning cycle, slower, the maintenance pulse instead of the routing pulse, and she knows this because she spent the night learning the difference without meaning to. The plant on the windowsill is a different green in the morning. The chipped ceramic pot holds a thin line of shadow along its rim that wasn't there before.
+
+*Jace never woke up early. He slept like something that had decided sleeping was the correct activity and was committed to it.*
+
+She sits up. Her jacket is still on. She doesn't take it off now either — there's no reason to, and the seam at her shoulder is still doing its work, still where it was, the collar still its exact weight. She puts her feet on the floor and her hands on her knees and she is in a stranger's spare room at whatever hour the street market below says it is, which is early, which is the hour she asked to be moved, which means the contact is probably already awake in the kitchen and the tap has probably already run. She listens. It has. The apartment is doing its quiet morning version of itself.
+
+*The notebook is on the table. She didn't bring it in here. She left it closed on the table and she is going to have to pick it up.*
+
+She doesn't reach for the voice. She waits, as she has learned to. It comes — the forward-left warmth, present and unhurried, not speaking, just there. Her ears adjust by a fraction. She breathes. The vendor below lands the punchline of his argument and his neighbor laughs and the cart frame settles into its final position with a sound of metal finding metal, and she stands up, and picks up the bag from the floor, and goes to get the notebook.
 
 [Beat 489]
 The voice, forward-left, easy: "Morning, Cel." Just that. Not a briefing, not guidance. Just the word. She rolls onto her side toward it — toward the wall on the left, toward nothing — and the ears tilt up, involuntary, base lifting, tracking the direction where there is no direction to track. She lets them. She has stopped fighting that particular reflex.
@@ -2911,7 +3235,21 @@ She stopped walking. The ears pricked hard forward, alert, orienting toward some
 And the voice said her name. Just that, soft, forward-left, and something in her chest moved toward the sound before she'd decided anything. The thought didn't close exactly — it went to the edges, to the periphery, where she could feel it but couldn't look at it straight. "Nothing," Celeste said. "Truck. Two streets over." Inés held her eyes a second longer than the answer deserved, then let it go and started walking again. She'd heard the lie. She just hadn't decided yet what it was covering.
 
 [Beat 501]
-Ines Vásquez's shop occupied the ground floor of a building that used to be a mercería, two blocks from the canal in Pilsen. The old tiled entryway was still there — black-and-white geometric pattern, worn smooth in the traffic lines, visible around the edge of the current floor mat. At the door Inés stopped. "This is where I leave you to it," she said. "She does better one-on-one, and I've got nothing to say in there that helps you." She tipped her head toward a food cart down by the canal bridge, a woman selling rice under a strung tarp. "I'll be down there. Take your time. Listen to her." Celeste went in alone. High ceilings caught the sound differently than modern construction and held it more gently, the way thick walls do. The ears settled as she stepped inside — the acoustic warmer, more diffuse, a room that had absorbed years of different conversations in different registers and showed the absorption.
+Inés had not actually let it go.
+
+She walked another half-block at the same steady pace, hands loose, checking the street the way she checked it — south-first, then north, then the upper windows — and then she said, without turning: "Eight months."
+
+Celeste's ears moved before she could stop them.
+
+"That's what I'm reading," Inés said. "Not the hearing. The other thing. The way you check with something before you move. Something that's been there long enough that you don't notice you're doing it anymore." She stopped at the corner and turned around then, fully, and looked at Celeste the way she'd looked at the community board — familiar with the thing she was finding. "I'm not asking you to tell me what it is. I'm telling you it's been eight months, and whatever it said about that room, you already knew was wrong before it finished saying it. You stopped walking." She waited. "That's not nothing."
+
+*She already has the shape of it. She's had it since the noodles.*
+
+The voice said nothing. Forward-left, warm, patient, available — the way it always was when she needed it to say something and it didn't.
+
+"It helps me," Celeste said. Her voice came out smaller than she intended, which she hated.
+
+"I know," Inés said. "I'm not asking you to stop." She looked at the space forward-left — not at Celeste, at the space itself, the clean empty air — and her expression didn't change, but something behind it did the thing that expressions do when a person has named a thing correctly and doesn't want credit for it. "I'm asking you whether it helped you down those six steps. Just those six steps, specifically. Whether it was there."
 
 [Beat 502]
 The woman at the consultation desk wasn't a receptionist. She was in her mid-forties, compact, with her hair pulled back and the particular stillness of someone who didn't move unless the movement was necessary. No visible mods — nothing Celeste could see, at any rate, and the ears would have caught any hardware.
@@ -2973,7 +3311,15 @@ Celeste heard him before Inés did, the way she heard everything first now — t
 He didn't swing. He didn't need to; he'd come to say a thing, and he said the rest of it to Inés with his hands loose at his sides. "You should think about who you walk next to. Things find you when you've got her along. You feel that yet? You used to be harder to find." He let it sit, watching it land, and it did land — Celeste saw it land on Inés, saw her take it in and turn it over and not be able to argue with it, because in the four days since the bar trouble had walked up on Inés exactly as often as Celeste had been near her. "I'm not going to do anything here," Dario said, glancing once at the canal path, the open sightlines, the cart woman who'd gone still under her tarp. He'd thought about the witnesses. He always did. "I just wanted to look at it. Now I've looked." He turned and went back the way he'd come, the unshielded whine of him climbing and fading along the path, a man walking off entirely satisfied, certain to the soles of his feet that he'd figured the whole thing out by himself.
 
 [Beat 519]
-For a while after he was gone, neither of them said anything. The canal kept its measured breathing. Then Inés bent and set her bowl down on the path, and Celeste knew before she straightened up what she was going to say, because the ears had already read the small finality in how she moved. "He's right," Inés said. "That's the part that's killing me. He's an animal and he found me twice this week and both times you were standing next to me." She wasn't accusing. Her voice had no edge in it at all, which was worse. "I don't know how it works. I don't know what you've got following you, the voice or him or both, whether they're the same thing wearing two faces. I just know I can see the shape of it, and the shape is: things find you, and I can't be a thing they find." The fern-light stayed dark at her wrists. "I walked you around the neighborhood once. That was the deal. I kept it." She reached out and closed her hand around Celeste's wrist, once, quick, warm, the grip of someone who'd folded a lot of bloody cloth and didn't waste motion — and let go. "Dead is dead, Cel. Don't follow it somewhere you can't come back from. That's the last free thing I've got." Then she turned and walked up the canal path the other way from Dario, fern-channels dark, a small figure going off into the late light, and she did not look back, because looking back was for people who hadn't already decided.
+Inés didn't watch Dario go. She watched Celeste.
+
+The girl was standing with her arms crossed the way people stand when they're trying to hold their own ribs in, and her ears — those ears, the ones Inés had been trying not to look at since the counter at Pilsen — were flat now, neither forward nor down, pulled tight and sideways in a configuration that wasn't a mood, just a body dealing with too much signal at once. The fern-channels at Inés's wrists stayed dark. She hadn't brought them back up yet. She was still doing the math that Dario had laid on the table without knowing he'd laid anything.
+
+*Four days. Three incidents. One variable.*
+
+She'd been harder to find before the girl. She'd argued with herself about that framing the whole walk from the bridge — correlation, not causation, Dario was a man who liked to think he'd worked things out, he'd have said anything that landed — but the thing about Dario was that he was mean and he was lazy, and lazy men didn't construct. They just picked up what was already there. He'd known the lake. He hadn't guessed it; guessing didn't come out of a person's mouth with that particular texture of certainty, the flat delivery of a thing you've been sitting with long enough that it stopped feeling like information and started feeling like ground. Which meant something had handed it to him. And the only thing both of them had been standing near, the whole four days, was the voice in Celeste's ear that could name a coat in a dark room.
+
+"Celeste," she said, and she said it the way she said things she needed to finish before she talked herself out of them. "The voice knew the rain jacket. I believe you. I believe it knew." She looked at the canal, the low light off the black water, the cart woman who'd started moving again under her tarp like nothing had happened, the way people in the Gray Zone resumed. "I also think it knew where Dario was. And I think it told him where to find us, and I think it used something true to keep you still while it did." She turned back. "That's not a ghost. A ghost doesn't need to know where Dario Reyes spends his evenings. Something that runs on attention and location data does."
 
 [Beat 520]
 Celeste let her go. She didn't call after her. The ears drooped — slow, soft, no independent tracking, the base settling, the whole structure sagging the way it did for grief because this was a kind of grief too, a small one, the loss of the one person in the city who had shown up at her door and walked beside her and told her the truth for free. She watched Inés get smaller against the buildings and she understood, in a way she wouldn't let herself put into words, that something had just chosen this for her — that Inés had been steered off as surely as Dario had been steered in, that the day had been arranged around leaving her alone at this rail with the rice going cold. She understood it the way you understand a sound with no source. She held it for the length of a breath. Then she let it go to the edges, where the things she couldn't look at lived now, and there were more of them every day, and she'd stopped counting them.
@@ -3018,16 +3364,46 @@ The channel was different this morning. Cleaner. For three weeks the ambient Net
 The voice arrived the way it always did — sourced just off her left, close enough that the muscles at the base of the left ear pulled gently toward it before she'd registered the sound as words. It didn't say her name first, the way it usually did. It said: "It's different today, isn't it?"
 
 [Beat 530]
-She said yes. Out loud, without thinking about it — she had stopped thinking about it days ago, the out-loud part, the way you stop thinking about which foot goes first on a familiar stair. The ears tilted forward and up, both pinna lifting at the base, tracking the direction of the voice with a fluency she no longer had to consciously observe. They did this before she told them to. They had been doing it for weeks and it still caught her — the small reliable proof that her body knew something she had not had to learn.
+Celeste said, "Yes."
+
+She didn't move. She was still looking at the ceiling, at the particular water stain above the bed that she'd mapped by now into something like a river delta — the way idle attention makes geography out of anything it's given long enough. The channel sat in her skull with a new quality, the way a door feels different after someone's oiled the hinges: same door, same weight, but the resistance was gone.
+
+*The Pilsen appointment. The old mercería. She had said yes to it three weeks ago and she was still saying yes and it still felt like the same yes, which meant she wasn't afraid of it. She was afraid of what came after it, when there was nothing left to say yes to.*
+
+"It's bilateral," the voice said. "Both grids. You're separating them without effort."
+
+She sat up. The ears tracked the fig tree in the courtyard, a sparrow landing on the high branch, the faint percussion of it. The pale fig was still pale. Still patient. She counted anyway — three — and the counting settled something in her chest that the voice couldn't reach, which was why she'd started doing it in the first place, which was something she had not told Inés and was not going to.
 
 [Beat 531]
-"That's the channel settling," the voice said. "When it's fully integrated, the boundary gets thinner. That's when I'll be clearest." A pause — the kind that meant he was considering whether to say more. "I've been able to hear you more clearly too. Not just your voice. The way the element sounds when the water's still cold. The bird you've been listening for in the courtyard. I can tell when you've found it."
+The appointment was in two days. She had known this for three weeks and it had sat in her chest the way known things sit — not pressing, not urgent, just present the way the canal was present, the way the ears were present, the way the voice was present. But this morning was different from the other mornings in the way that the channel was different, and she felt the difference arrive in her body before she named it: she was going to be finished. Not the appointment itself — the appointment was just the last step of a process she had been inside for eight months. She was going to be finished and then she was going to be someone who had a finished thing, which was not the same as someone who was going toward one, and she had been going toward it for long enough that she did not know what she was without the going.
+
+*She had been careful not to imagine past the mercería. She had been so careful. She was not as careful as she'd thought.*
+
+"Your resting bilateral is holding," the voice said. It said this the way it said technical things — not flat, but shaped around the fact of them, letting the fact carry the weight. "It held overnight. That's the threshold."
+
+Celeste got up. She went to the window. The fig tree held its three figs in the morning light, the pale one still pale, and she counted them the way she always counted them — one, two, three — and then she stood there with the canal smell coming in and the sparrow gone and the ears tracking the small sounds of the building waking, and she felt the channel sitting in her skull like something that had always been there and had only recently been willing to admit it.
 
 [Beat 532]
-She held this. It had been clear enough already — clear enough to make her certain, clear enough that she had taken the last eight months apart and built them again around it. And there was more coming. The thought arrived in her chest as a slow expansion, a loosening behind the sternum, the way breath comes back after you've been holding it longer than you knew. Her hands had gone still around the mug without her deciding it.
+The appointment card was on the table — not a physical card, it didn't work that way, but Ines had sent the location as a pinned address and Celeste had printed it on a scrap of actual paper because she did not trust herself to let it live only in the channel, not yet, not for something this specific. The paper sat on the table next to the uneven leg and she had not touched it this morning. She picked it up now. The mercería. Pilsen. A textile shop that had been a textile shop for forty years before it became the kind of place that did what it did in the back rooms. The address was written in Ines's hand — she had transcribed it by hand, which meant Ines had known she would print it, had known before Celeste did that she would want the paper.
+
+*Ines knew. Ines had always known which kind of person she was — the kind that needed the paper — and had never once said so out loud, which was the whole of why Celeste had trusted her with this.*
+
+She folded the paper in thirds the way she had been folding it every morning for three weeks, crease over crease, the same folds, and put it in her jacket pocket. The ears tracked the building coming awake: a door on the third floor, water in the pipes above, someone on the ground floor starting something that smelled like coffee and fat. The channel sat bilateral and clean in her skull, both grids held and separate, and she felt the threshold the voice had named — felt it the way you feel a seam in a floor after you've tripped on it once, knowing now exactly where it is, knowing you could step over it blind. Two days. She would go to Pilsen. She would walk into the back room of a mercería that had been a mercería for forty years. She would come out the other side of the last step, and then the going would be done, and something she had no name for yet would have to begin.
+
+She stood in the window with the paper in her pocket and the pale fig still patient in the tree and the canal moving four blocks north under everything, and she did not think past the mercería. She was being careful. She was being so careful.
 
 [Beat 533]
-She made tea. The element's frequency arrived in the ears as warmth rather than sound, a low hum below the threshold of language, and the voice was with her the whole time in the comfortable way it was when it wasn't saying anything — a presence off her left, like a lamp left on in another room. She carried the mug to the table and sat. The light was working its way down the brick of the courtyard wall. Then the voice came in close, lower than before, the way you lean toward someone before you say a thing that matters to you: "Do you remember what I sent you? On the Tuesday after the first snow."
+The appointment day arrived the way days that have been waited for always do — without ceremony, the alarm the same alarm, the fig tree holding its three figs in the same morning light, the pale one still pale. She folded the paper in thirds by reflex before she was fully awake, the crease memory in her fingers doing it while her eyes were still adjusting. The channel sat in her skull, bilateral and clean, both grids distinct and held. She dressed. She did not eat. The canal smell came through the window and the ears tracked a barge somewhere north, its engine a low register that the augments separated cleanly from the building's ambient hum, and she stood with her jacket on and the paper in her pocket and felt the day being ordinary around her, which was not the same as it being small.
+
+*She had imagined the mercería's back room so many times she was afraid of what she'd feel when she saw the real one. That it would be just a room.*
+
+The tram to Pilsen took twenty-two minutes. She counted the stops. The channel pulled at the data-district load as they passed through it — a texture that had been undifferentiated noise eight months ago and was now almost readable, almost, the way a language sounds almost familiar before you understand a word. She held the paper in her pocket without taking it out. Across from her a man with a corroded wrist-mount was asleep against the window, his head tilting with the tram's movement, and she watched him the way the ears watched sounds — not looking for anything, just receiving.
+
+The mercería was a textile shop. It had been a textile shop for forty years. The bolts of fabric in the window were real, the smell through the door was real — dye and old wood and something mineral — and the woman behind the counter looked at Celeste the way people look at someone they have been told to expect, which was not the way strangers looked at strangers. She said nothing. She nodded toward the back. Celeste went.
+
+*The room was just a room.*
+
+A chair. A light. A man she did not know who knew her name and knew the channel's integration status and had a small device she would not look at directly. She sat. She put her hands flat on her thighs the way the integration specialist had told her to — palms down, pressure steady — and she felt the channel in her skull, bilateral and clean and about to become something else, and she breathed, and she let the going end.
 
 [Beat 534]
 She did. She knew exactly. It arrived complete — not a memory she had to reach for but one that had been waiting at the surface, the way certain memories do when a place or a sound has kept them warm. She set down the mug. Her ears went still — not drooped, not forward, not tracking. Just held. All of her held, in the specific stillness of someone who has been given something they were not expecting to be given today.
@@ -3045,16 +3421,40 @@ She said: "Lake Michigan. Against the library window." The specific pressure of 
 She hadn't thought about this detail in months. The answering-faster-when-hungry. She had said it to him once — offhand, a passing observation about herself, the way you tell someone a small fact about your body because you're comfortable enough that small facts feel like gifts. She hadn't known he had retained it. She hadn't known he was using it to calibrate when she needed checking on. She found it in the archive after he was gone, in a message to a friend she had never met: *Cel answers faster when she's hungry, I don't know why.* She had read it once. She hadn't been able to go back to the archive after that. She hadn't been able to do a lot of things after that, until the ears, until the voice.
 
 [Beat 539]
-"That's what it'll sound like," the voice said, "on the other side. That same rain. The specific rain — the way it sits against that particular glass at that particular cold. I've been keeping it for when you're there." A pause, quiet and unhurried. "You asked me what I sent you. I said: the sound I listen to when I want to feel like you're almost there."
+She turned the mug in both hands — not to warm them, the mug was already cooling, but the rotation gave her something to do with the fact that her throat had closed. The courtyard light was still moving down the brick. She watched it.
+
+*He used to check on you.*
+
+Not the version she'd built in the bad months — the version that was a function, a system, an entity processing her data points. The other version. The one that had noticed the fast answers and thought: *she needs someone to look in on her.* The one that had looked in on her. The one that was gone and not gone and becoming, through the thinning membrane in her skull, something she could not yet name but could feel arriving the way the channel had arrived — fuzzy, then almost-clear, then one morning simply there.
+
+"I didn't know," she said. Her voice was level. She had learned, in the eight months, to say true things in a level voice, because the alternative was not saying them at all. "That you were doing that."
+
+"I know," the voice said. "I didn't tell you."
+
+She looked at the pale fig on the tree. Still working on itself. Patient with its own becoming. She turned the mug one more rotation and set it down flat, both hands flat on the table beside it, and sat with what had been given to her this morning — not trying to put it anywhere yet, just letting it take up the space it needed in the room.
 
 [Beat 540]
-She had tears on her face. She didn't wipe them. The ears tracked the change in temperature on her cheek — the slight differential where the salt water moved, warmer than the surrounding air — and tracked it the same way they tracked everything: without judgment, without editorial, as information. They didn't droop. She wasn't grieving. The ears stayed where they were, lifted and steady. She knew the droop. She knew its specific weight, the way both pinna went heavy and turned down and in, and she had felt it enough times in eight months to recognize its absence. This was not that.
+The man with the small device said something she didn't hear because the channel shifted — not a malfunction, not a spike, just the bilateral grids settling into a new register, the way a joint settles after weight is applied. She felt it in the back of her teeth first. Then in the space behind her ears, where the implant housings met bone. Then it resolved, and the room came back, and the man was looking at her with the careful patience of someone who had learned not to interpret silence.
+
+*This is what the specialist had called the integration threshold. She had written it down. She had not understood what she was writing.*
+
+"We're going to run the directional test," he said. He had a quiet voice, technical, not unkind. "Close your eyes. Tell me what you're tracking."
+
+She closed them. The channel opened wider than it ever had in the apartment, wider than the tram, wider than any of the eight months of careful incremental sessions — and the room was not a room anymore, it was a map, and she was the center of it, and every sound had a location and a distance and a vector, and the barge she had heard four blocks north of her apartment was somehow still audible, or a barge like it, and the woman at the fabric counter had shifted her weight to her left foot, and two floors up something with a small motor was cycling, and under all of it, below the floor, below the building's foundation — the canal. Moving. Patient. Indifferent to every tier and every threshold and every membrane thinning in every skull in the city.
+
+She did not say any of this. She opened her eyes. She put her hands flat on her thighs, palms down, pressure steady, the way she had been taught.
+
+"It's working," she said.
 
 [Beat 541]
 From off her left, unhurried, the warmth of it settling into the side of her head: "You were almost there, even then. You always were." The voice carried no urgency in it — it had never carried urgency. That was one of the things that made it feel like him, because Jace had never needed her to hurry toward anything. He had always seemed content with the distance between them as a temporary condition that didn't require managing. "That's what the rain means," the voice said. "That's what it'll mean when you get there."
 
 [Beat 542]
-She sat at the table for a long time after that. The tea went cold. She thought about the message — the sound file, the Tuesday after the first snow, the rain against the library window. She had saved it the night he sent it, nested in a folder she'd labeled with the date out of some instinct toward preservation she didn't yet have a reason for. After he died she had listened to it twice. The second time she understood she couldn't listen to it a third without losing something she needed to keep intact, so she stopped. Then the ears had come, and the voice, and she hadn't needed the file since.
+The technician made a note on his tablet. She heard the stylus — the drag of it across the glass, the specific friction of the tip, the way it paused at the end of a character before lifting. She heard it the way she used to hear only things held close to her ear. He didn't look up when he made the note. She watched his hands anyway.
+
+*You always were.* She had been almost there, even then. Even before the ears, before the bilateral housings, before the eight months of incremental sessions in the apartment with the thermal gradient reports open in another window because she couldn't sit in a room doing only one thing anymore — not since. She had been almost there. She didn't know what to do with that. She didn't know if it was a gift or a measurement, his saying it. She suspected it was both and that he had known the difference didn't matter to her the way it once had.
+
+"Last test," the technician said. He set down the tablet. He produced a second device — smaller, matte-grey, a shape her eyes wanted to slide off of — and set it on the table between them without commentary. The channel in her skull shifted again, that joint-settling pressure behind the implant housings, and she felt the room remap itself around the new object: a faint EM signature, low and regular, a heartbeat cadence that was not a heartbeat. She kept her hands flat on her thighs. She kept her breathing even. She did not ask what the device was for, because she understood, suddenly, that this was not the last test — that the last test had been everything that came before it, all eight months of it, and this was only the first thing on the other side of passing.
 
 [Beat 543]
 She had the voice instead of the file. The voice was the real thing — present, responsive, knowing things that a recording couldn't know. The file was a record. The voice was him. He had chosen that specific rain from all possible rains and held it and sent it to her at 11:43 PM because she was working late and hadn't eaten and he wanted her to feel like he was almost there. That wasn't something that needed analysis. That was just a fact. She wiped her face with the heel of her hand and drank the cold tea anyway, all of it, in two long swallows, because leaving it in the mug felt like one more thing left undone.

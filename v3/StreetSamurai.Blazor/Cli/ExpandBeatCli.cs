@@ -14,17 +14,19 @@ namespace StreetSamurai.Blazor.Cli;
 /// Beats that already have prose are skipped unless <c>--force</c> is set.
 ///
 /// Args (one of --slug / --id required):
-///   --slug &lt;slug&gt;          Strand slug.
-///   --id &lt;guid|prefix&gt;     Strand id; a unique prefix is enough.
-///   --all                  Expand all planned (no prose) beats. Default when no --beat is given.
-///   --beat &lt;beatId&gt;        Expand one specific beat by its UUID.
-///   --force                Re-expand beats that already have prose (overwrites).
-///   --model &lt;modelId&gt;      Force a specific cloud model for this run (e.g. claude-sonnet-4-6, claude-opus-4-8).
-///                          Passed directly to the active cloud provider; ignored when --local is set.
-///   --local                Route generation to the configured local LLM (LocalLlmBaseUrl in settings).
-///   --local-url &lt;url&gt;      Override the local endpoint URL for this run only (implies --local).
-///   --local-key &lt;key&gt;      Override the local API/bearer key for this run only.
-///   --local-model &lt;tag&gt;    Override the local model tag for this run only.
+///   --slug &lt;slug&gt;             Strand slug.
+///   --id &lt;guid|prefix&gt;        Strand id; a unique prefix is enough.
+///   --all                     Expand all planned (no prose) beats. Default when no --beat is given.
+///   --beat &lt;beatId&gt;           Expand one specific beat by its UUID.
+///   --force                   Re-expand beats that already have prose (overwrites).
+///   --protagonist &lt;name|slug&gt; Character name or slug to add to CharactersInScene, activating
+///                             DialogueService, ConsequenceService, and ConsequenceEngine during polish.
+///   --model &lt;modelId&gt;         Force a specific cloud model for this run (e.g. claude-sonnet-4-6, claude-opus-4-8).
+///                             Passed directly to the active cloud provider; ignored when --local is set.
+///   --local                   Route generation to the configured local LLM (LocalLlmBaseUrl in settings).
+///   --local-url &lt;url&gt;         Override the local endpoint URL for this run only (implies --local).
+///   --local-key &lt;key&gt;         Override the local API/bearer key for this run only.
+///   --local-model &lt;tag&gt;       Override the local model tag for this run only.
 ///
 /// Exit codes:
 ///   0 — at least one beat expanded successfully.
@@ -34,7 +36,7 @@ public static class ExpandBeatCli
 {
     public static async Task<int> RunAsync(string[] args, IServiceProvider services)
     {
-        string? slug = null, id = null, beatId = null, modelOverride = null;
+        string? slug = null, id = null, beatId = null, modelOverride = null, protagonistArg = null;
         string? localUrl = null, localKey = null, localModel = null;
         bool force = args.Contains("--force");
         bool useLocal = args.Contains("--local");
@@ -43,13 +45,14 @@ public static class ExpandBeatCli
         {
             switch (args[i])
             {
-                case "--slug":        if (i + 1 < args.Length) slug           = args[++i]; break;
-                case "--id":          if (i + 1 < args.Length) id             = args[++i]; break;
-                case "--beat":        if (i + 1 < args.Length) beatId         = args[++i]; break;
-                case "--model":       if (i + 1 < args.Length) modelOverride  = args[++i]; break;
-                case "--local-url":   if (i + 1 < args.Length) { localUrl     = args[++i]; useLocal = true; } break;
-                case "--local-key":   if (i + 1 < args.Length) localKey       = args[++i]; break;
-                case "--local-model": if (i + 1 < args.Length) localModel     = args[++i]; break;
+                case "--slug":         if (i + 1 < args.Length) slug           = args[++i]; break;
+                case "--id":           if (i + 1 < args.Length) id             = args[++i]; break;
+                case "--beat":         if (i + 1 < args.Length) beatId         = args[++i]; break;
+                case "--model":        if (i + 1 < args.Length) modelOverride  = args[++i]; break;
+                case "--protagonist":  if (i + 1 < args.Length) protagonistArg = args[++i]; break;
+                case "--local-url":    if (i + 1 < args.Length) { localUrl     = args[++i]; useLocal = true; } break;
+                case "--local-key":    if (i + 1 < args.Length) localKey       = args[++i]; break;
+                case "--local-model":  if (i + 1 < args.Length) localModel     = args[++i]; break;
             }
         }
 
@@ -103,6 +106,28 @@ public static class ExpandBeatCli
         }
 
         Console.WriteLine($"[expand-beat] Strand: \"{strandTitle}\" ({strandSlug})");
+
+        // Resolve protagonist name for CharactersInScene (activates DialogueService + ConsequenceService)
+        string? protagonistName = null;
+        if (!string.IsNullOrWhiteSpace(protagonistArg))
+        {
+            await using var db = await dbFactory.CreateDbContextAsync();
+            var parg = protagonistArg.Trim();
+            var pEntity = await db.Entities.AsNoTracking()
+                .Where(e => e.EntityType == "character" && e.IsActive
+                            && (e.Name == parg || e.Slug == parg))
+                .Select(e => e.Name)
+                .FirstOrDefaultAsync();
+            if (pEntity != null)
+            {
+                protagonistName = pEntity;
+                Console.WriteLine($"[expand-beat] Protagonist: {protagonistName}");
+            }
+            else
+            {
+                Console.Error.WriteLine($"[expand-beat] Warning: protagonist '{parg}' not found — CharactersInScene will be empty.");
+            }
+        }
 
         // Load literary rules for the BeatContext
         string storyBible;
@@ -169,6 +194,7 @@ public static class ExpandBeatCli
                     StoryBibleContext = storyBible,
                     SceneSoFar        = sceneSoFar.Length > 6000 ? sceneSoFar[^6000..] : sceneSoFar,
                     BeatGoal          = goal,
+                    CharactersInScene = protagonistName != null ? new[] { protagonistName } : Array.Empty<string>(),
                 };
                 var prose = await router.WriteAsync(ctx, beat.Id, beatIndex, ordered.Count);
                 if (string.IsNullOrWhiteSpace(prose))

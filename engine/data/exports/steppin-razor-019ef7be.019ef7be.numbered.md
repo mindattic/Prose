@@ -72,49 +72,17 @@ The quiet she had bought had already cost more than it was worth. It always did.
 She kept walking. The dog kept pace. The towers were northeast, as they always were, their glow on the horizon like a sun that had stopped setting. She didn't look at them.
 
 [Beat 2]
-The gray dog had three different ways of sleeping and she had learned all of them without meaning to.
+The gravel road ran south for another half-kilometer before the fields on either side gave way to a thin scrub of secondary-growth birch, their trunks catching the distant corporate glow and throwing pale strips of it across the road. She heard the vehicle before she saw it — a low ground transport, electric, running with its lights off, which was the kind of choice that announced itself. It slowed to match her pace from thirty meters back. The dog stopped walking. She didn't.
 
-It slept flat on its side when the temperature held above fifteen. It slept curled tight when it dropped below ten. When it slept on its feet — standing, technically resting, nose oriented at whatever wasn't making noise — it was doing what she recognized as threat assessment, the same activity she performed in doorways and corners. She had been at this long enough to know that recognizing yourself in a dog wasn't a compliment to either party.
+*The fixer wouldn't. Too quick. This was already waiting.*
 
-She was lying in the shell of a relay station outside Kankakee in the late hours of a night that wasn't ending fast enough, and the dog was in its flat-side sleeping position, which meant it was warm, and she was awake.
+The transport's side door opened without the vehicle stopping. A man stepped out onto the running board while it was still moving, which told her something about his legs and something about his patience. He dropped to the road behind her and the vehicle rolled on ahead and stopped sideways across the gravel, blocking south. She counted the geometry: one on foot behind her, at least one in the vehicle, no cover within useful distance except the birch on her left, which was decorative rather than real. The dog had vanished into the dark between the trees with the specific silence of something that had survived by knowing when not to be a dog.
 
-The hum did not thin out when there was nothing else. This was the essential problem. She had assumed, at nine, when she first understood it was a constant and not a symptom, that the right environment could reduce it — the right distance from the city, the right amount of quiet, enough empty space between herself and the nearest aggregated neuretics signal. She had been testing this assumption for ten years. The hum maintained. Out here between stations it ran at the same frequency it ran in Champaign, which was the same frequency it ran in every location she had ever tested, with the single exception of the dead southwest territory past Joliet, where she had never actually been but toward which the pull ran very slightly weaker and the frequency had a quality she couldn't name except as marginally less.
+"Documentation man's brother," the man behind her said. He had the flat cadence of someone reading off a card, which meant he was nervous or professional, and she'd find out which in the next thirty seconds. "He wants to know who sent you before he decides what he wants to do about it."
 
-She was still going there. The Kankakee fixer being finished with her didn't change the direction.
+*Nobody sent me. That's going to be the part that's hard to explain.*
 
-The issue was the nights. During the day there was walking and the occasional job and the physical logistics of moving through territory that didn't want to be crossed, all of which occupied the brain sufficiently that the hum fell to a manageable background. At rest, with nothing running, it came forward. It took up the full available register. She lay in it and felt the weight of being awake in a world where the lights were off and everything was still except the frequency, which was not still, which had never been still.
-
-She got up.
-
-The dog opened one eye. It assessed the situation, found it acceptable, and closed the eye.
-
-She went outside into the flat dark between the relay station and the road and stood in the wind off the fields. The towers were northeast, as they always were — their glow a smear on the horizon, not quite sunrise, something that had learned to look like sunrise without committing to it. She didn't look at them directly. Looking at them directly changed something in the hum's quality, shifted it toward the specific frequency of pull rather than simply presence, and she had enough pull already.
-
-The dog had followed her out. She hadn't heard it. She turned and found it there, three feet back, sitting with the patient attention of something whose answer was yes before the question was asked.
-
-"Go back inside," she said.
-
-It sat.
-
-"There's nothing out here."
-
-It sat. The wind moved through its ribs and it sat in the wind with the equanimity of something that had decided she was the most interesting phenomenon available and was prepared to monitor her indefinitely.
-
-She turned back to the dark. The hum ran its baseline frequency. The towers ran their imitation sunrise on the horizon. She was nineteen and had been moving since she was sixteen and the record so far was: the hum didn't thin out when you moved away from it. She hadn't confirmed yet whether this meant the hum was her or whether it was the world and she was just permanently tuned to it. The distinction seemed less important than it had when she first started trying to work it out.
-
-What she knew: violence reduced it. For the four seconds after she had put the documentation man down in Kankakee, the outside world had been as loud as the inside world, and for those four seconds the hum was simply the background note under an orchestra rather than the only thing playing. Then the orchestra stopped and the background note resumed its normal volume. The thirty seconds were the only treatment she had found and they cost progressively more than they were worth with each use, which meant the treatment was also a compounding problem.
-
-She had known this at sixteen when she started. She had taken the Kankakee job anyway. She would take the next one too.
-
-She walked the perimeter of the relay station once and then went back inside. The dog went ahead of her. It lay down in its curled-tight configuration, which meant it had decided the temperature was dropping, and put its nose under its tail, and went immediately back to its sleeping position with the efficiency of something that had no difficulty being unconscious.
-
-She lay back down in the sleeping bag. The hum ran its frequency. She looked at the ceiling of a relay station that hadn't been active in six years and waited for morning the way she always waited for morning, which was by outlasting the night one hour at a time without any particular expectation that the next night would be different.
-
-In the morning she would walk south. The dog would walk with her. The hum would run at baseline and the towers would be northeast and the territory ahead would be the same flat ground it always was this far from the city, where the grid thinned and the gray zones were real gray rather than the performed gray of the city's edge.
-
-The dog's breathing was slow and even. She listened to it because it was different from the hum. That was the whole reason.
-
-She didn't sleep for another two hours. When she did, the hum came with her.
+She kept her hands visible and her weight slightly forward and looked at the transport sitting sideways on the gravel road, its windows tinted past the legal threshold for the Gray Zone, which meant nobody inside it was worried about Gray Zone ordinance. The hum held its frequency. It always held its frequency. Somewhere in the birch the dog was making a decision about whether it had followed the wrong thing south, and she couldn't blame it for whatever it decided.
 
 [Beat 3]
 The town of Beecher had a grain elevator, a Pulse freight stop, and a two-person gray-zone fixer operation that ran out of what was technically a hardware repair shop. She found it because she needed a job and the Kankakee option was finished and this was what was available.
@@ -174,53 +142,13 @@ She said nothing to it. It seemed to consider this adequate.
 Beecher was behind her. The farm road went south. She walked south with the dog at her heel and the new debt in the ledger and the Kankakee debt in the same ledger and the knowledge that the available territory was shrinking from the north faster than she was moving south.
 
 [Beat 4]
-She found out about the price in Peotone, from a woman who told her as a favor.
+The road south ran flat through harvested fields, the stalks cut to ankle height and the soil the dark gray-brown of something that had been rained on and not yet dried. The Pulse freight corridor ran parallel about four hundred meters west — she could hear it, or feel it more accurately, the low-frequency vibration the maglev rails put into the ground with every load moving north toward the city. The hum of it wasn't the hum she carried in her back teeth, the one that had no external source, the one that had been there since the Sigma installation when she was seventeen. That hum was internal and constant. The freight hum came and went in waves and was, by comparison, a comfort.
 
-The woman ran a gray-zone supply depot out of a converted grain storage unit on the south edge of town — mostly transit provisions, the kind of commodities that move without paperwork because they were never supposed to move at all. They had a working arrangement from six months back, when Sasha had cleared out a squatter problem that had been blocking one of her loading routes. The woman was pragmatic about favors. This was the kind of favor she returned.
+*The Beecher fixer had a phone. He ran before he used it, but he had it.*
 
-"There's a standing order," the woman said, without preamble. "Came through the documentation man's network, north. Kankakee, then Beecher on top of it. Not corporate — just local, patient, and funded well enough that it'll stay current." She set a transit provision pack on the counter. "They want you identified. Not retrieved. Just a name and a location."
+She had maybe four hours before whoever the hardware shop man reported to had a name or a face or a direction. Less if the mother had already talked to the Pulse freight stop, which was the kind of thing a mother in a four-hundred-person town would do because the freight stop was the only place in Beecher with regular outside contact and a logging system. The freight stop would have her on visual from when she'd come in. She hadn't been hiding coming in — she'd had no reason to hide coming in.
 
-"That's the first step toward retrieved."
-
-"I'm aware. I'm telling you what the order says, not what it means."
-
-She understood what it meant. It meant the documentation man's network had pooled resources with the Beecher situation, which meant the debt had compounded — two separate problems merged into one with twice the reach and a clear financial motive. A standing order meant it didn't expire when the immediate injured party's anger cooled. Standing orders stayed active because someone was paying to maintain them, and someone paying to maintain them meant the math had been done and she was worth more found than let go.
-
-"How current is the funding?" she asked.
-
-The woman named a number. It wasn't a large number in absolute terms. It was large enough to incentivize the kind of gray-zone operator she had been last year, before the Kankakee and Beecher complications — someone who took jobs that other people had decided were worth paying for. The irony wasn't lost on her. She had created the conditions of her own pursuit.
-
-"They have a description?" she said.
-
-"Female, nineteen or twenty, small, cross-draw rig, gray-zone registration. Comes with a dog." The woman looked at the gray dog, which was sitting outside the depot door with its nose pointed at the road. "Not a very specific description."
-
-"Specific enough in the right network."
-
-"Specific enough," the woman agreed.
-
-She took the transit provision pack. She paid for it, which was the correct thing to do when someone had just told you something useful — you didn't let a favor run a tab because tabs became leverage. She added it to the pack she was carrying, redistributed the weight, and looked at the road south.
-
-"The order covers north of Wilmington," the woman said. "South of Wilmington is a different set of networks."
-
-Which meant south of Wilmington was territory where the standing order had not yet paid for distribution, and where she could operate for some unspecified period before the order's reach expanded to match her location. Territory not yet covered was not territory safe from being covered. It was territory where she had a lead.
-
-She thanked the woman. She meant it.
-
-Outside, the dog was still watching the road. She came out and it stood and fell into step without prompting. She had stopped finding this surprising. She hadn't stopped finding it irritating — the dog's certainty about her was an irritant on principle, the same way certainty about her was always an irritant, because certainty that assumed cooperation had a habit of being wrong.
-
-"Wilmington," she said, to no one in particular.
-
-The dog maintained its position at her left heel. The hum ran its frequency. The towers were northeast, their glow a permanent implication on the horizon behind her. She was nineteen and she had one standing debt from Kankakee and one standing debt from Beecher and a combined order that was patient and funded and not going to forget.
-
-She had done worse than this position before and come out of it. The metrics on how she'd come out of it were not metrics she was proud of — the territory behind her was smaller than it had been two years ago, in the literal sense that there were fewer places she could stop without someone eventually remembering the standing order and running a calculation. She had been compressing the available space since sixteen by making the decisions the engine required and paying the cost of each one, and the territory ahead was still there and still open, and Wilmington was south and manageable.
-
-She kept walking. The dog kept pace. The standing order kept its patient existence behind her, waiting for the network to catch up.
-
-The crow, which had been following her since Kankakee at an altitude she had not verified but was aware of, settled on a fence post fifty meters ahead. She walked past it without looking at it. It flew ahead. She walked past the next post it settled on. This went on for three kilometers, one fence post at a time, until the road curved and the fence ended and the crow flew northeast and disappeared.
-
-She watched it go. The hum ran at its baseline in the same northeast direction.
-
-She walked south.
+The dog walked at her heel and put its nose down briefly at something dead in the drainage ditch and then came back to position. She didn't look at what it had found. The ledger had enough in it without additions.
 
 [Beat 5]
 The Wilmington hub station was a mid-size freight transfer point built around a Pulse maintenance depot, and it was the first place in three months where the hum dropped below what she thought of as its normal operating volume.
@@ -465,123 +393,43 @@ The dog was already facing southwest.
 She picked up her pack and walked toward Joliet, which was also toward nowhere, which was also toward the one remaining open option on the list, and the hum ran its frequency at its baseline volume and the towers stood northeast on the horizon doing what they always did, which was being there.
 
 [Beat 10]
-The freight road into Joliet ran alongside the track bed for the last eight kilometers, and the track bed was stripped.
+She made Joliet by midmorning, which meant she made it before the freight dispatchers finished their first shift rotation and before the hub's one functioning watch-post had reason to look at the road coming in from the north. The city was smaller than it had been — she had a memory of it from two years ago, a pass-through memory, the kind that didn't stick except for the parts that mattered operationally. The parts that had mattered then: two resupply windows, a medic who worked out of a converted rail car and didn't ask about documentation, a bunkhouse that took cash. She ran the list against current intel, which was zero, which meant she was running it against two-year-old information and the general principle that things in Joliet contracted rather than expanded.
 
-She could see where the rail had been — the grade was still there, the slight elevation of compressed earth that had been built up and maintained for a century before the salvage teams worked through in sections, pulling the steel north in pieces on flatbeds, leaving the timber ties rotting into the grade. The copper catenary wire was long gone. The signaling infrastructure was gone. What remained was the shape of a thing that had carried freight south until carrying freight south was no longer worth the investment, and then it had stopped.
+*Médecin Moreau was the medic's name. She had paid him Φ40 for a shoulder she couldn't explain and he had not asked her to explain it.*
 
-She walked alongside it. The dog walked at her left heel. The towers were northeast, their glow visible even in daylight as a quality of the horizon — a brightness that wasn't the sun, a color that wasn't quite sky. She didn't look at them directly. She looked at the grade.
+The freight hub was louder than the road had been, which was loud enough that the hum dropped below perceptible. She noted this the way she noted everything: without preference. The hub smelled like diesel and cut metal and the specific animal warmth of people who had been working since before dawn. Haulers moved crates on motorized dollies. A dispatch clerk argued with someone through a wire-frame headset, his voice carrying the flat, particular frustration of a person who had been arguing the same point for forty minutes. The dog moved close to her left leg — not afraid, just calibrating, the way it always calibrated new environments: reading the flow of foot traffic, the direction of sound, the exit geometry.
 
-The hum changed in Joliet.
+She found the bunkhouse on the second attempt; the first location had been converted to a parts depot, its windows bricked over, a hand-lettered sign that said FERROGATE SUBSIDIARY NO. 4 in stencil. *Ferrogate.* She did not stop walking. She found the second bunkhouse two streets east, still operating, a hand-painted board out front advertising nightly rates and a no-documentation policy rendered as a small red circle with a line through a badge icon, which was either charming or desperate and was in any case the thing she needed. She pushed through the door and the woman behind the counter looked at her and then at the dog and started to say something about animals.
 
-Not reduced, exactly — it was the same frequency, the same baseline pressure. But the quality shifted. In Wilmington the frequency had felt lighter, like a load carried at a better angle. Here it felt different from that in a way she lacked the vocabulary to describe. The closest she could get was: in Wilmington the hum had felt like background. In Joliet it felt like the front of something.
+"He's clean," Sasha said. "And I'm paying two nights upfront."
 
-She walked into town anyway.
-
-Joliet at this end of the line was the kind of settlement that happened around the infrastructure nobody had come back for. A freight inspection office that was officially closed and in practice handled gray-zone cargo for the last few hub operators still willing to route this far southwest. Three blocks of mixed-use buildings that had been rebuilt after the Block Wars in materials that were available rather than materials that were appropriate. A Pulse maintenance shed that had kept one-quarter of its original equipment. A bar.
-
-The bar was called End of the Line. She registered this as accurate geography rather than commentary. The tracks ended here. The name was a description, not a sentiment.
-
-She found a space in the freight inspection office's back storeroom, which was available and dry and whose lock could be managed with the secondary bypass that most infrastructure locks of that generation shared. She spread her bedroll. She ate. The dog ate the portion she set aside for it, which was a practice she had developed somewhere around Peotone without consciously deciding to.
-
-The hum in Joliet wasn't better than it had been in Beecher or Kankakee or any of the other places between here and the beginning of this. But the standing order's reach stopped at Wilmington. In Joliet she was, for the first time in six months, outside the funded distribution range. Nobody was watching for her here. Nobody would watch for her here until the order paid to extend its range south, and that extension would take time because the operators out here cost more for the same information and the order would have to decide whether she was still worth it.
-
-She was worth less to them now than she had been in Kankakee. The two operators on the flat ground hadn't come cheap. The hunter had filed two reports and billed accordingly. The return on the investment was declining.
-
-She might have a month.
-
-She lay in the storeroom in the freight inspection office with Problem Solver and Trouble Maker and the unfamiliar frame from the flat ground and the dog against her left leg, and she looked at the ceiling and let the hum run its frequency and thought about the month.
-
-The month wasn't a plan. She hadn't made a plan that extended beyond a month in three years because plans that extended beyond a month assumed a fixed point, and a fixed point assumed a place where you could stay, and a place where you could stay was exactly what she had been losing, one door at a time, since Kankakee. She didn't let herself think about what came after the month.
-
-Outside, the stripped track bed ran east until the city grid picked it up, and the towers were northeast on the horizon, their glow a permanent assumption in the sky. She had been walking away from them for three years and the only direction left was toward them, which wasn't yet a direction she was taking but was the only direction that hadn't yet closed.
-
-She told herself she was stopping here.
-
-The hum, in Joliet, had the quality of the front of something. She couldn't tell the front of what. She had been hearing the hum since she was nine and had no framework for what it meant when it changed quality, only the fact of the change.
-
-She closed her eyes. The hum ran its frequency. The dog's breathing was slow.
-
-She told herself she was stopping here and let the month be the month and the storeroom be the storeroom and the stripped track bed be the end of everything behind her that had compressed into this specific point at the dead end of the line.
-
-The End of the Line bar, two hundred meters north, was already running a screen over its bottles. She could hear it through the storeroom wall — the crowd noise, the low periodic audio of something broadcasting. The towers on the northeast horizon maintained their quality of brightness. The hum maintained its slightly different quality, which she was choosing not to examine.
-
-She slept.
-
-Three weeks later, there was a man on a camel.
+The woman looked at the Φ on the counter — she had set it there before the woman finished her sentence — and the woman's objection completed its arc and became a key sliding across a scratched laminate surface, and Sasha picked up the key and went to find the room, and the dog followed, and the hum was inaudible here, buried under diesel and argument and the sound of the city doing its small, contracting business, and she did not know whether that was a relief or a warning and she did not, for now, need to decide.
 
 [Beat 11]
-She stayed in Joliet for three weeks and didn't fight anyone.
+The camel was a problem in the same way that the stripped track bed was a problem — not in its existence, which was a fact, but in its presence at this specific location, which required explanation. The Corridor ran northeast. Camels were a Corridor animal, pack-transit for the Gray Zone operators who moved bulk cargo between GLMZ and Crosspoint without paying the Corridor Authority's automated toll. A camel at the dead end of a stripped freight line in Joliet was two hundred kilometers off its natural route. The man on it was wearing a duster that had been expensive once and had been repaired with materials that were available rather than materials that were appropriate, which was consistent with Joliet.
 
-This was unusual. The last three years hadn't produced three consecutive weeks without violence, because the engine she ran on needed the thirty seconds at irregular intervals and the engine hadn't changed because she was at the end of the available territory. What changed was the external circumstances: in Joliet there was no one interested in assessing her, no one running a transaction that needed a deterrent, no standing order yet paid for distribution this far southwest. The available provocations were absent. She was, for three weeks, a nineteen-year-old with a cross-draw rig and a gray dog at a dead-end freight stop where nobody cared what she was.
+She watched from the doorway of the freight inspection office with her right hand at her hip and the dog sitting at her left heel, not growling, which was information.
 
-The hum was loudest here at night.
+*The dog had growled at the hunter in Kankakee before she had.*
 
-She had established this by the end of the first week. During the day the bar ran its screen and the freight inspection office ran its gray-zone traffic and the Pulse maintenance shed ran its quarter-capacity equipment with the specific industrial sound of machinery that had been maintained exactly enough to continue functioning without being maintained enough to function well. Under all of that, the hum — at its front-of-something quality, different from the baseline she'd been running on for ten years. Same frequency, different disposition. At night, when the bar closed and the maintenance shed went quiet and the only sound was the wind off the flat ground, the hum moved forward. Not louder. Present. She lay in the storeroom and listened to it be the front of something and didn't know what to do with the information.
+The man brought the camel to a stop on the gravel where the track bed ended, which was also where the road ended, which was where everything ended. He looked at the end of the track bed for a moment, then looked at her. He had the kind of face that had been doing this for long enough that it had stopped looking like doing anything. He reached into the duster and produced nothing threatening, which she registered without relaxing.
 
-She did odd jobs for the freight inspection office. The man who ran it — a retired transit customs officer named Breckin who had come to Joliet seven years ago and found the dead end agreeable — had legitimate work that he couldn't consistently hire licensed labor for, and her situation was that she needed money and the standing order hadn't yet paid for this far south. She verified manifests. She ran perimeter checks on the gray-zone cargo that moved through the facility under unofficial nomenclature. She moved things from places to other places when the thing needed discretion rather than equipment. Breckin paid her in transit provision credits and asked no questions about her rig or her documentation, because a man who had spent twenty-two years in transit customs and then retired to a gray-zone inspection office at the dead end of the line had a specific relationship with questions.
+"End of the Line," he said, looking at the sign over the bar.
 
-The dog acquired two additional animals during the second week.
-
-The first was a cat — gray and orange, the kind of coloring that suggested a bloodline spanning several generations of outdoor existence. It appeared at the storeroom door on a morning she had left the door ajar for the ventilation and installed itself on the folded tarp in the corner with the equanimity of something that had made a permanent decision. She removed it. It returned. She removed it twice more and both times it returned faster than she'd removed it, and on the fourth return she looked at it and the dog and the corner where the tarp was and decided that the energy needed to continue removing it exceeded the inconvenience of its presence.
-
-The second was a crow.
-
-The crow didn't come inside. It sat on the storeroom's exterior window ledge and processed the world with the lateral focus of something that found the arrangement satisfactory. She told it to leave. It cocked its head and didn't leave. She stood at the window and looked at it from less than a foot away and it returned her regard without modification of its posture or expression, which wasn't an expression but was somehow communicative anyway.
-
-She didn't examine why animals kept doing this. She had a working theory and the working theory was that she was what she was and whatever she was had a frequency that non-human nervous systems read as something to orient toward rather than away from. She had no interest in the theory beyond its functional description.
-
-At the end of the second week she was eating at the bar and the man behind it said: "You're not from around here."
-
-She said: "No."
-
-"Nobody's from around here," he said. "I mean you're not staying."
-
-She looked at him. He was fifties, GLMZ-weathered, the kind of face that had been doing this specific job long enough that he recognized the different kinds of people who ended up at the dead end of the line: the ones who had arrived and the ones who were passing through.
-
-"What makes you think that?" she said.
-
-He shrugged and went back to the bar work. "The way you sit. People who are staying sit differently."
-
-She had no response to this. She finished her meal and left without asking him how people who were staying sat, because the answer would need her to acknowledge that she had a way of sitting that communicated she wasn't staying, which would need her to know what staying looked like.
-
-In the third week the hum moved fully to the front.
-
-She was lying in the storeroom on the twelfth night of the third week with the dog against her left leg and the cat on the tarp and the crow on the windowsill, and the hum moved forward in the specific way of a sound that has finally turned to face you. Not louder. Present. She lay in it and looked at the ceiling and thought about the towers — northeast, the direction she had been moving away from for three years, the one open direction the map had never closed — and about the pull, which had been northeast since she was nine and which she had never followed.
-
-She had arrived at the place where all directions except one had closed by moving away from the one direction that hadn't closed.
-
-The gooseberries grew at the south edge of the freight yard. Purple, improbable, thriving in the broken gravel at the end of a dead rail line. She found them in the first week and had been eating them in the evenings when the day's work was done — sitting at the south edge of the lot, looking at the flat ground and the thin horizon and the sky above the southwest quarter that had no light in it because there was nothing southwest that was lit. The gooseberries were tart and they were there and they were better than nothing, which was the standard she had been applying to everything in Joliet.
-
-On the fifteenth night of the third week she was at the bar. The screen over the bottles was playing the last Olympics, fifty years gone, because the bar had been playing it for as long as Breckin could remember and Breckin had stopped asking why. She was on her second glass of the bar's rail grain spirit and the hum was at the front of everything and she was eating gooseberries from her coat pocket and waiting to see if the quiet held.
-
-It didn't hold. It never held. But the three weeks without the thirty seconds had taught her something she hadn't expected: the quiet wasn't better than the violence and the violence wasn't worse than the quiet and neither of them was the thing she was waiting for, which she couldn't name but which had been in front of her since she arrived in Joliet, in the specific quality of the hum.
-
-She was sitting with this thought when a man at the far end of the bar decided her size was an invitation.
+"Yes," she said.
 
 ## Steppin Razor
 
 [Beat 12]
-She had walked three weeks of rail to get to the End of the Line. She was eating gooseberries and waiting to see if the quiet held.
+The man on the camel turned out to be named Devereux, and he was heading to the End of the Line because there was nowhere else to go, which he said without apparent irony, and she did not offer any, and they went in together because the door was the door and there was only one of it.
 
-The bar was called End of the Line, which was not a joke. The tracks stopped here. The rest of the line had been stripped out by scavengers forty years back - copper and steel dragged north in pieces, the rail bed left as bare gravel running southwest into nothing. Nobody had rebuilt it because nobody needed to go southwest. The name was just geography.
+The Hereafter occupied the same building as the End of the Line, which was the same building as everything else this far southwest — a corrugated shell that had been a freight sorting office and was now a bar because the freight had stopped and the drinking had not. Generator-lit, low-ceilinged, smelling of burned fat and the particular sweetness of spilled liquor that had dried and been spilled over again. The screen above the bottles was playing something from the previous century: a man in a white coat showing a studio audience how to break down a whole chicken, his hands moving with the specific confidence of someone who had done this ten thousand times and had stopped noticing that he was doing it. The audience applauded when he separated the thigh joint cleanly. Out here it passed for a window.
 
-The screen over the bottles played the last Olympics, fifty-some years gone - the opening ceremony, the parade, twelve nations and seventeen CorpoNation flags moving through the same march in the same light while a commentator delivered the numbers in the even tone of someone who had decided this was history and not a verdict. Out here that passed for entertainment. Out here it passed for a window. Nobody in the End of the Line watched it and nobody turned it off.
+She took a stool at the bar, two removed from a man who was already there, who looked at her the way certain men looked at her — not with hostility, which she knew how to read, but with the particular calculation of a man who had decided that her being small meant she was available to be made smaller. The dog sat at her feet. The man smiled. She gave him a flat look that was not a smile and was not an invitation and was in fact a statement of terms, and he gave her back a second smile, broader, the kind that said *I've decided that was flirting.* She ordered a drink. The bartender set it in front of her.
 
-Under all of it, the way it had run under everything since she was nine, the hum. A low pressure with no source, a frequency she had never once managed to leave behind in nineteen years of trying. Out here at the dead end it was quieter than it had been in weeks. That was the whole reason she had come this far southwest - the almost-silence, not the bar. The noise thinned out here the way it thinned nowhere else, and she would have gone further if there had been a further to go.
+*You're going to have to break something.*
 
-She was eating her way through a paper cone of purple gooseberries a woman had sold her outside for two Φ, wild-picked she said, out past the yard. They were tart the way a thorn is tart, the kind that folds your jaw shut and still makes you keep going. She ate them one at a time, steadily, looking at the screen, and somewhere in the third handful she noticed the opening ceremony was doing something strange with its edges - the stadium lights not quite sitting in the air the right way, the flags under the cameras too vivid, too there. She decided that was the bar's smoke and the long drive out, and opened the next gooseberry with her thumbnail.
-
-Three stools down a man had a slate propped against his glass and his eyes were the particular unfocused kind that meant he wasn't looking at the screen at all - he was somewhere the slate had sent him, running whatever unlicensed channel he was selling his discretion to. A Channeler working a quiet bar at the end of the line. She watched him the way she watched a loaded weapon left on a table: not her business, but a fact.
-
-She had come for the quiet. There was exactly one way she knew to make the hum stop, even for a moment, and a man two stools down had been generous enough, over the last half hour, to keep volunteering.
-
-He put a hand on her. He said the thing men said when they'd decided your size was an invitation.
-
-She gave him a second smile with the bottom of a bottle. For the length of it - the reach, the turn, the wet surprised sound he made discovering his new face - the hum cut out clean, the way a radio cuts out when the power dies, and the world went still and level and the noise was as loud outside her as it had always been inside, which meant for once there was nothing left over to grind against. It lasted about as long as it took him to fold against the rail and start screaming. Then the hum came back up under the screaming, patient, exactly where she'd left it, and she was just a small woman in a loud room holding the neck of a broken bottle, furious the way she always was the second the quiet ended and the bill came due.
-
-She set the cone down on the rail, three gooseberries still in it.
-
-Nobody followed her out. People in the End of the Line had a good instinct for the difference between a fight and a service being rendered.
+The man two stools down reached over and tapped the bar beside her glass — not touching it, not touching her, staying precisely inside the territory of a gesture that could be called friendly — and said something about buying the next one. She picked up the bottle the bartender had left on the rail. Not threatening. Just picking it up. Holding it the way she held things, which was with all of her hand and with the weight distributed for use rather than for resting. The man looked at the bottle. The man looked at her hand. He put his own hand back in his lap, and she set the bottle down, and the chicken on the screen received another round of applause because the man in the white coat had done something perfect with a cleaver, and the quiet that followed was the only kind she ever got: bought, and already ending.
 
 [Beat 13]
 Outside was Joliet, which the city kept the way a man keeps a tooth he means to pull. The towers were sixty miles northeast, a low smear of light on the sky like a sunrise that had gotten stuck and given up. Out here the freight rails ran flat and dead in both directions, rust the color of dried blood, and nobody rode them anymore because nobody came this far on purpose.
@@ -603,125 +451,95 @@ The hum, which had been quiet all the way out here, was not quiet now. It had co
 On the far rail, a gray cat sat with its paws folded under its chest and watched her. Not the camel. Her.
 
 [Beat 14]
-"Where did you get the camel?" she asked. It was not the first question. It was the only one her mouth would make.
+The man on the camel spoke without preamble, the way a fact speaks.
 
-"It goes where it goes," the man on the camel said. He did not look down at it. "We go the same way."
+"We have been watching your progress."
 
-"Which way is that?"
+"Which one of you," Sasha asked.
 
 "We just arrived."
 
-Her hand had gone to Problem Solver on her right hip - the right hand for a threat, and her body hadn't finished deciding whether he was one. The rail bed put out no sound. Behind her, at the End of the Line, the man she'd hospitalized had stopped screaming, which meant either he'd passed out or someone had found him; either way was not her problem. The man on the camel watched her hand and didn't change. He watched the way a camera watches - steady, recording, with nobody behind the lens to flinch.
+She pulled Problem Solver off her right hip and held it at her side, muzzle down, not aimed at anything, because you didn't aim at a phone call. She aimed at things she could hurt. The man on the camel registered the gun the way a window registers weather.
 
-"Leave it," he said, "or take it out. It is the same to us. You have already done both."
+*Sigma gave her a lot of things. It didn't give her a word for this.*
 
-"I haven't done anything."
+"The camel," she said, because she needed to establish something factual, even if the fact was embarrassing. "It's yours."
 
-"Not yet. Also already. We are not good with your tenses."
+"The camel," the man said, "is not our thrall. We happen to be going the same direction."
 
-She made herself look at him straight, the way she looked at threats, taking inventory. The camel's eyes were amber in the dark, long-lashed, patient. The man's eyes were not anything - not dark, not light, not looking at her from behind them the way eyes looked from behind eyes. She held the look and felt the hum hold with her, steady, not retreating the way it retreated from a fight, not coming on the way it came on at rest. Just present. Leaning.
+"Which direction is that?"
 
-The camel moved - not the man on it steering, the camel itself, on its own business - and put its great soft ridiculous head down by her shoulder and breathed at her, warm and slow and grassy, the way every stray dog and gutter bird in the Glooms went for her the second she stopped moving, like she gave off something that said *safe* in a band no one had agreed to tune for. She didn't like animals. She especially didn't like that they liked her, which was the same as the hum: the world deciding things about her without asking. She stepped back. The camel followed. She let it. It was that or shoot a camel, and she had standards.
+"We just arrived."
+
+She breathed through her nose. The hum was not in her teeth yet, which meant whatever this was, it was not doing it at full power. She filed that. The cat on the far rail had not moved. It was watching her with the specific patience of something that had been waiting longer than she had been alive, and she did not like that either.
+
+The camel put its head down and breathed at her — a long, warm gust from somewhere deep in its chest, the smell of hay and distance and something she couldn't name that was older than either. It was the same thing the strays did, every stray she'd ever walked past: the immediate, unreserved decision that she was the one. Not the person next to her, not the safer-seeming target. Her. She had never once invited it. She had never once managed to stop it.
+
+*They always found her. She had never figured out if that was a comfort or a diagnosis.*
+
+She holstered Problem Solver.
 
 [Beat 15]
-"Why are you talking to me?" she asked. It came out flat. A flat question gave less away.
+The man on the camel said, "Someone should have closed you."
 
-"The others are shut." The man on the camel tipped his head at the dark - the dead town, the dead rails, the far stuck smear of the towers that hadn't moved north in the time they'd been standing here. "Talking to them is talking to a wall that thinks it is a window. You were left open. Someone should have closed you, and did not." Something moved in the voice, the way a chord carries a note you only hear after it stops - lower, more than one, inside the sound. "We are glad of the oversight."
+Not a question. Not a threat. Just the fact of it, delivered the way you'd note a door left open on a cold night.
 
-She didn't answer. She breathed in.
+The breath she didn't take was the tell — that half-second where her chest didn't move and her hand didn't move and the rail bed didn't move and the hum leaned in through the gap like it had been waiting for exactly this width of silence. She felt it arrive. Not through her ears. Through the place behind her sternum where the mesh sat flush against bone, the place that registered wrongness as pressure before the mind had words for it. Something had been inside that held breath with her. She understood that about a half-second too late.
 
-And then she didn't breathe out.
-
-The held half-second opened - the same frozen frame she knew from the last instant before someone pulled. Her whole life the hum had been the thing wrong with her. The defect. The reason she couldn't sleep in a room, couldn't stay in a town, couldn't be in a crowd. Everyone else's had closed when they were children and hers never had, and she had spent nineteen years certain that made her broken. *Someone should have closed you, and did not.* He had said it like the closing was the loss. Like the open door was the only working part of her. Her chest believed him before she could stop it, and the breath sat in her throat with nowhere to go, and for one half-second she was not angry. She didn't have a word for what she was instead. It frightened her more than the camel had.
-
-*We are glad of the oversight.*
-
-She let the breath out. It came out wrong - too slow, too whole, the breath of someone who has been somewhere and come back. She shut the door on it with both hands and let the anger fill in behind it, solid and familiar, the one thing she trusted to stay where she put it. The anger wasn't aimed at him. It never aimed outward. It was just what she became when she couldn't afford to be the other thing, and she couldn't afford the other thing, not on a dead rail at night with a gun half-drawn and her own chest turning traitor.
+*The NeoCortex had been running open since Ferreira. She'd been managing it. She'd been managing it fine.*
 
 "Don't," she said.
 
-"We have already stopped," the man on the camel agreed, in the tone of someone for whom stopping and starting did not sort into different drawers.
+"We have already stopped."
+
+She got the door closed. Whatever door that was — she couldn't have named the mechanism, only the feeling of it: a hand pulling a handle until the latch caught, the small percussion of something sealed. The hum was still there, still present, still leaning, but on the other side of glass now. She breathed out. Her hand was on Problem Solver and she didn't remember putting it there, which meant the body had decided something the mind was still catching up to, and the body was usually right about these things, and the body was also the problem, because the body was the open window.
 
 [Beat 16]
-She made herself look at the towers instead of at him. "Something's wrong out here. And up there." She had felt it for weeks without a word for it: a pull, low and constant, with nothing to do with the light and everything to do with the direction she kept ending up walking. The towers were sixty miles of corpo jurisdiction she had spent her whole life staying out of - no legal identity, no registration, no thumb a checkpoint could read without flagging the absence of a file behind it. Walking northeast meant walking into all of that, into the one place she couldn't be small enough to vanish. The pull didn't care.
+The man on the camel let her breathe. Then:
 
-"You make a hole in a thing," the man on the camel said, "and the thing is on both sides of the hole. They dig toward us. We arrive toward them. Where you would put the middle, there will be no middle." The camel chewed at nothing, content. "You felt it. That is why you are walking north and telling yourself it is the light."
+"You make a hole in a thing," he said, "and the thing is on both sides of the hole. They dig toward us. We arrive toward them."
 
-"I'm walking north because there's nothing behind me."
+She stood with that for a moment. The rail bed was quiet except for the hum and the camel's patient respiration and the distant, resolving silence of the End of the Line settling back into itself. The gray cat had not moved. Northeast, the light-smear of the towers sat on the horizon the way it had always sat — low, permanent, the answer to a question she had never asked.
 
-"Yes," the man on the camel said, kindly, as though she had agreed with him.
+"The children," she said. "The ones going missing out of the buffer zones." She kept her voice flat, operational, the same register she used for confirming kill counts and cold-chain delivery windows. "Is that you?"
 
-"Are you the thing that's been taking the kids?"
+"No." The man's voice did not shift. "That one does not know what a person is. We know."
 
-"No. That one does not know what a person is." The *we* widened, took in more *we* than one man could hold. "We know. That is worse, and it is better. You will decide which."
+*That one.* Not us. Not the same thing.
 
-It pointed northeast. At the light. At the one place she had spent her whole life arranging not to go.
+She pulled that apart and put it back together. Something else was out here running a parallel operation, something that reached into the Gray Zone and took children and did not know what a person was, and this thing on a camel — this thing that had sat inside her held breath and then stopped when she said *don't* — this one was something else. She did not know if that was better. She knew it was different, and different was at least a category she could work with.
 
-The pull answered the gesture - not a thought, a thing in the body, the same place behind her sternum that went silent when a fight started and screamed the second it ended. Northeast. The direction the hum had always been loudest. The direction she had spent years calling a wall.
+"Northeast," she said. Not a question — she already knew the answer. The hum was not pointing out here at the dead rails and the rust and the dark. It had never been pointing out here. She had just been very committed to not going the other direction.
 
-"We just arrived," the man on the camel said again, like it was good news. The camel turned to follow the rails toward the city as though the two of them had settled something between them, and Sasha - against every instinct that had ever kept her alive - fell into step. The cat came off the far rail and fell in behind her at the pace of a thing that had its own reasons and was not asking for hers.
+The man on the camel said nothing. The camel turned its head northeast with the unhurried conviction of an animal that has crossed deserts by instinct and does not require a map.
+
+*She had spent eleven years making sure she was never in the same room as a Sigma installation. The towers were full of them.*
+
+She started walking.
 
 [Beat 17]
-She walked back to the freight inspection office in the dark with the pull running in her chest like something that had been asked and was waiting on an answer.
+The man on the camel fell in beside her without being invited, which was consistent with everything else he'd done. The camel's footfalls were wrong for gravel — too quiet, each step landing with a patience that belonged to sand — and she didn't look at its feet because she had already decided she wasn't going to look at its feet. The hum walked with her too, steady now, not leaning, just present the way a frequency is present: not a sound so much as a fact about the air.
 
-The camel and the man were gone. She didn't look back for them. The dead rails ran northeast through the dark and the towers were northeast and the pull was in the same direction it had always been in, except now it had a face she couldn't look away from, which was the specific thing it hadn't had before.
+"The Arrangement," she said, because it was the only frame she had. "That's what they're calling it out here. Someone brokering something between—" She stopped. She didn't finish it because she didn't know how to finish it without sounding like she'd lost her operational footing, and she had not lost her operational footing.
 
-She sat in the storeroom for the remainder of the night and didn't sleep. The crow was gone from the windowsill — she noticed this and didn't examine it. The cat was on the tarp in the corner. The dog was against her left leg, awake, which was unusual. She looked at the dog and the dog looked back with the specific focused attention it had used in its threat-assessment sleeping position, except she wasn't a threat.
+*She had lost her operational footing.*
 
-She thought about what the entity had said and she thought about the towers being northeast and she thought about the inward direction of the pull, which she had felt since she arrived in Joliet and which she had been declining to follow for ten years before that. The man on the camel hadn't told her to go. It hadn't needed to. She had been going toward it since she was nine — just wrong about the shape of going, which wasn't the moving-away from the city that she had been doing but the moving-toward it, the literal direction, northeast, into the densest crowd on the continent.
+"The Arrangement is a name for a symptom," the man said. "Symptoms are useful. They tell you where to press."
 
-She packed what she had in the morning. The cat was gone by the time she finished packing — she noticed the tarp was empty and looked at the door and the door was ajar and the cat was not there. She didn't look for it. It had made its decision with the efficiency she had come to expect from animals that had attached themselves to her against her instructions.
+She walked. Gravel shifted under her boots. The light-smear of the towers didn't get closer the way real light got closer — it stayed at the same apparent distance for too many steps, the way a destination stays distant when you're not sure you should arrive. The gray cat had followed them off the rail; she caught it at the edge of her vision, three meters off her left shoulder, moving when she moved, stopping when she stopped, not pretending otherwise. She had stopped finding that strange approximately four minutes ago, which worried her more than the cat did.
 
-Breckin was at the freight inspection office when she came through to return his manifest tool.
-
-"Early," he said.
-
-"Taking a slug north."
-
-He looked at her. He did the thing he had been doing for seven years at the dead end of the line, which was reading the kind of departure this was. "For good?"
-
-"For the towers," she said. She handed him the manifest tool.
-
-He looked at the tool. He said: "There's a Pulse maintenance slug out of Joliet at six-forty. Goes to the outer ring transfer station, Z4. One stop. Unofficial capacity if you're not carrying."
-
-She wasn't carrying anything the Pulse cared about.
-
-"I'll find it," she said.
-
-"Ask the maintenance shed man. His name is Ota. Tell him I sent you."
-
-She told him she would. She walked to the door and then she said: "The bar man. You told him I was not staying."
-
-Breckin looked up. "I didn't tell him that."
-
-"He said people who are staying sit differently."
-
-Breckin looked at her for a moment and then back at the manifest on his desk. "He reads people," he said. "He's been doing it since the end of the line meant something to come to. He's good at it." He turned a page. "He was right, though."
-
-"I know," she said.
-
-She went to find Ota at the maintenance shed. The crow was on the roof of the shed, which was three rooftops east of the storeroom. She looked at it. It cocked its head. She said nothing to it and went inside.
-
-The dog was at her heel. Whatever the dog had decided about her, it had apparently decided to extend the arrangement northward. She had run out of arguments for why it shouldn't.
-
-The Pulse slug north was a maintenance transfer — slow, unofficial, three other people who were not on any manifest. The towers were visible from the maintenance car's narrow window: northeast, enormous, closer with every kilometer in the specific way that things you have spent years avoiding become specific when you stop avoiding them. They had always been there. She had always known they were there. She was going now because the map had closed and the entity had pointed and the pull was directional and the man at the bar in Joliet had been right about the way she sat.
-
-She watched the towers grow on the horizon. The hum ran at its full front-of-something quality, which was now simply the quality of a thing she had accepted rather than a thing she was examining. It had never stopped pointing northeast. She had just stopped arguing with it.
-
-She ate the last of the gooseberries from her coat pocket. Purple, improbable, slightly crushed from three weeks in a coat pocket. She ate them and looked at the towers and let the slug carry her northeast.
+The NeoCortex was running warm. Not hot — she knew hot, she'd managed hot for a year and a half on a pharmaceutical regimen that cost her most of what she cleared on Ferreira — but warm in the specific way that meant it was processing something she hadn't asked it to process, reaching toward something that was reaching back, and the door she'd latched was holding but it was a latched door and not a wall.
 
 [Beat 18]
-She found a Pulse slug at the bottom of her coat pocket - somebody else's, from a job three weeks back, still live. The transit car smelled of ozone and other people's coats. She didn't look back when it pulled out of the station. Looking for things that left was a habit she'd broken on purpose, years ago, with both hands.
+The Glooms station was the first Meridian 88 infrastructure Sasha had touched in ten years, and it smelled like burnt ceramic and the specific metallic cold of recycled air that had passed through too many filters. The platform was a long concrete shelf under a low vault, walls tiled in the gray-green that someone had decided in 2190 meant transit. A woman sat on a bench beside the pigeons she was feeding, one hand extended flat, the birds climbing her fingers with the indifferent intimacy of animals that had lost all useful fear. The birds were real. Sasha checked twice.
 
-The gray cat had boarded without her noticing. It sat in the corner between a sleeping man and a hard-sided case, paws tucked, watching the route go by. She hadn't invited it. The cat hadn't asked. She looked away first.
+*The towers are larger from inside them.*
 
-The towers came up mile by mile - not a wall but an accretion, the low smear of light resolving into faces and signage and the particular dark between buildings that meant somebody lived back there. The hum came up with them. On the rail bed it had been a pull, directional, patient. Here it was a pressure behind her ribs with a bearing that didn't shift when the car turned. She pressed two fingers to her sternum. It pressed back, even, like a second heartbeat keeping its own time.
+The busker was against the far pillar — seven strings, shamisen body, something wrong with the tuning that he was either ignoring or had decided was correct, playing a phrase that climbed and didn't resolve. The dog sat down when the sound hit. Sasha kept moving. A corpo tourist in a jacket with the Ferrogate logo on the chest stepped directly into her path and asked her, in the register of someone who believed questions came with answers, whether she could direct him to the Meridian Civic Heritage Plaza. She did not know where the Meridian Civic Heritage Plaza was. She told him this. He looked at her coat and the dog and appeared to recalculate whether she was a viable information source. He moved on.
 
-The city performed its bits at her. A busker on a platform corner worked a seven-string shamisen, the eighth string fishing line strung for the notes the instrument wasn't built to make. A corpo tourist in a coat worth more than the End of the Line's whole back wall put a hand on her elbow from behind - the way people who had always had hands asked for things. Something in her catalogued him without permission: height, stance, the angle he'd need if she moved wrong. She held it. The thirty seconds of quiet weren't a currency she could spend in a transit crowd with no exit logged. She pointed northeast anyway, because that was the only direction her arm wanted, and he thanked her and went the wrong way. A woman feeding pigeons on a burnt-ceramic station let a bird break off mid-flight and land on Sasha's shoulder as if she'd called it.
+The hum was different here. Not louder — denser, the way a crowd is different from a person, the same component frequencies but more of them and closer together and arriving from more directions at once. On the rail bed outside Joliet it had been a single direction, northeast, clean as a compass point. Here it was a field. She was inside it. The pull in her chest had not stopped being directional — it was still northeast, still patient, still the same quality it had been since she was nine and standing at a window she was not supposed to be standing at — but now it had competition, the city's own hum pressing in from the walls and the vault and the floor tiles and the woman's pigeons and the unresolved seventh the busker refused to close.
 
-She hadn't called it. She never called anything. Things came anyway - animals, signals, one man on a camel on a dead rail in Joliet - and she could keep walking or she could stop, and stopping had never once made the hum quit. So she kept walking. That much was the same as it had ever been.
-
-What wasn't the same was that walking northeast was no longer the path of least noise. It was the path *toward* the noise, and she was taking it on purpose, and she didn't have a clean reason for that yet. The man on the camel had asked her nothing she could answer and left the question in her chest anyway, low, sharing the space with the hum, and she carried it the rest of the line the way she carried the pull: not understanding it, only knowing it had weight, and that the weight was hers now whether she'd agreed to it or not.
+She found the exit marked GLOOMS SURFACE and went toward it. The dog's nails on the tile. The shamisen climbing its phrase again, still not landing. Behind her the corpo tourist was asking the pigeon woman the same question he had asked Sasha, and the pigeon woman was not answering because she was watching her birds, which was a reasonable priority.
 
 [Beat 19]
 The checkpoint was a folding table and a man behind it who had decided the folding table was a wall. Dawit knew her by the walk before he knew her by the face - she watched him decide it, the small recalibration in his shoulders, the way a perimeter man re-files a body the second it stops reading as threat and starts reading as known. He'd run this stretch three years. She'd passed through twice before, the kind of twice that leaves a residue.
@@ -753,134 +571,24 @@ He did. Tired eyes, and under the tired a thin ugly hope he'd clearly meant to k
 She was already three steps gone, the slate dark in her coat, the bird on her shoulder, the cat at her heel. Dawit glanced at the cat once and filed it without a question, the way gray-zone perimeter men filed the things that came attached to people like her. Behind her his sentence still hung in the ozone air with nobody to take it, lighter for being said. She carried it out the way she carried the geometry: not knowing what it was for, only that it was load-bearing, and that she had just, without meaning to, agreed to carry it.
 
 [Beat 20]
-Dawit's routing note came three days after the checkpoint, folded into a transit slug receipt — a time and a location, no names, the kind of message that could be anything if a wrong person found it.
+The surface exit opened on a corridor that smelled like wet concrete and something older underneath it, and then the Glooms opened in full and Sasha stopped moving for two seconds before she remembered not to. The sky above was the Glooms sky — not absent, technically, but filtered through the tier-stack's underside until it was a gray suggestion of itself, the atmospheric processors having long ago redirected anything useful northeast toward the Spires. What light existed was neon, pooled in the wet, and the rain was coming down in the particular sideways manner of rain that had been aimed. The dog pressed its flank against her left leg and stayed there.
 
-The location was a maintenance access room below a Pulse transfer node in the outer Z4 ring — the kind of space that existed on every grid schematic and appeared on zero official facility maps, because officially it was a relay junction and not a room where people met. She found it because she had Dawit's note and the note had a turn sequence that only made sense if you read it as a grid coordinate rather than a fare routing.
+*The geometry matches. The numbers match. The pull has been true for twenty-three years and she has never once gone where it pointed.*
 
-There were four people in the room.
+She moved. The Glooms perimeter was a grid of converted logistics bays and checkpoint kiosks and the kind of small commerce that needed no tier credential — food stalls, cable-run repair shops, a TESSERA Docent standing unattended outside a shuttered relay office, its display cycling a redirect loop for a service that no longer existed at this address. A man with both arms subdermal-sleeved in chrome that had gone to a color chrome shouldn't go stood in a doorway watching the rain with the particular stillness of someone whose neuretics had given him a more interesting view than the street. He did not look at her. The cat moved ahead and then waited at the next corner, and she followed it because that was what she had been doing for three days and it had not been wrong yet.
 
-Dawit, who she recognized from the checkpoint, standing near the door with his arms folded in the specific posture of someone who had organized this gathering and wasn't certain it was a good idea.
-
-A man in his mid-forties who introduced himself as nothing and said he had worked infrastructure monitoring for a CorpoNation array network in Z3 for eleven years before his contract was terminated. He carried a data pad with logging output on it. He didn't show her the logging output immediately. This was the behavior of someone who had learned that showing your evidence before establishing credibility was how your evidence got ignored.
-
-A woman in her fifties who sat with her hands folded and said she had left the Church of the Choir eight months ago, after eighteen years. She offered this as information, not biography. The Church of the Choir was a Consensus-aligned spiritual practice that had organized around what it called the deep harmonic — the residual energy signature of the Schism event, which the Church held was the natural result of consciousness expanding into adjacent dimensional space and which the Consensus's public messaging held was a psychic trauma response requiring careful management. The woman had left because she had started asking questions the Church didn't have answers to and had been told, clearly and without cruelty, that questions of that kind were not what the practice was for.
-
-The fourth person was a woman named Noa Erez.
-
-Noa was perhaps thirty-eight, of a compact build and careful posture, the kind of person whose stillness was a habit rather than a performance. She worked transit maintenance dispatch in the outer ring — a civilian job, fully papered, nothing gray-zone about it. She had been introduced by Dawit as "someone who has the same problem you have, at a lower volume." Noa had said nothing in response to this description. She was watching Sasha in a specific way that Sasha identified, after four seconds, as the way a person watched something they weren't certain they could tolerate in close quarters.
-
-She had seen this look before. She had never seen it on someone who understood what they were looking at.
-
-"Dawit says you can feel them," the array tech said.
-
-"I can feel the draw," she said. "Not the same thing."
-
-"What's the difference?"
-
-"A dead well rings. Rings stay in one place, one pitch. What I've been feeling pulls." She looked at his data pad. "Is that what your logging output says?"
-
-He showed her the data pad. The logging output showed monitoring array readings from a seventeen-month window — temperature-corrected baseline readings from deep-field sensors in the Z3 corridor, with anomaly flags in the margin. The anomaly flags marked readings that the monitoring system had auto-classified as cold-well resonance, the standard designation for Schism artifacts in a monitoring context, because cold-well resonance was the category these readings fit and the monitoring system had no other category to put them in.
-
-The problem was the geometry. Cold-well resonance spread from a fixed point in a consistent gradient. These readings showed gradient pull in the opposite direction — a consistent draw rather than a consistent spread. Either the sensor array had an inversion error that had persisted for seventeen months, or the monitoring system was classifying a live draw as a cold resonance because it had no category for live draws in the inner ring.
-
-"Who does the array report to?" she said.
-
-"The CorpoNation. Then up the chain to the Consensus infrastructure review board." He paused. "The CorpoNation's contract was terminated three months after I flagged the inversion."
-
-The woman from the Church said: "I've heard variations of this from two other people. Not monitoring data — personal accounts. People who felt something directional in the Z3 corridor and reported it through the Church's registry."
-
-"What did the Church say?"
-
-"Trauma response. Post-Schism sensitivity disorder. The standard language." She unfolded her hands and folded them again. "I believe that language was correct about the first Schism. I'm less certain it's correct about what people are describing now."
-
-She looked at all of them. A fixer who had been logging anomalous data for three years. An array tech who had lost his contract for flagging an inversion error. A Church apostate whose questions had no acceptable answers. And Noa Erez, who was still watching her in the way of someone tolerating proximity to something uncomfortable.
-
-None of them had the whole picture. That was the point. Each of them had one data point that the official account couldn't explain, and none of them had a framework for combining those data points into something that held weight. She was the framework, or the thing closest to it — a person who could feel the draw and confirm that what they were each describing was the same phenomenon from different angles.
-
-She looked at the logging output again. The inversion gradient, seventeen months of it, in a corridor she had already mapped as directional.
-
-"How do I find the source array?" she said.
-
-The array tech looked at Dawit. Dawit looked at the wall and then back at her.
-
-"That's what we've been trying to work out," Dawit said.
-
-She sat down. The room was quiet — the relay junction hum of the Pulse node above them, the ambient sound of infrastructure running, and under it her own baseline frequency, which had been louder since she entered the city and was louder still in this specific room, which she attributed to the proximity of four people paying careful attention to her. She was accustomed to people paying careful attention. She wasn't accustomed to them doing it because they understood, in partial and imprecise terms, what they were looking at.
-
-Noa Erez hadn't yet spoken. When Sasha looked at her directly, she looked back and then slightly away, in the specific manner of someone managing a discomfort they had decided not to leave.
-
-"Does it bother you," Sasha said. "Being in here."
-
-"Yes," Noa said.
-
-"I can go."
-
-"No." Noa looked at her hands. "I know what you are. I've known for a long time that people like you existed. I thought meeting one would be easier than this." She paused. "It's like standing next to a speaker with the volume up. For me, I mean. I don't think you're doing it on purpose."
-
-"I'm not."
-
-"I know." She met her eyes again. The discomfort was still there and she was still managing it, with the efficiency of someone who had decided the discomfort was preferable to the alternative. "I want to be here. I've been trying to understand what I'm hearing for two years. You're the closest I've gotten to an answer."
-
-She said nothing. Noa's account of standing next to a speaker with the volume up was, as far as she could determine, the most accurate description anyone had ever given her for what she was to someone else. She had never before met a person who had described it accurately.
-
-"What frequency?" she said.
-
-Noa told her. It was lower than what she ran. But it was in the same register. The same direction of pull.
-
-She looked at the data pad again. Dawit was watching her. She read the inversion gradient one more time and made a decision about whether these four people were telling the truth about what they knew, and what that truth was worth, and whether it was going to change anything about her existing intention to find the live draw and establish what was behind it.
-
-It was going to change how long she had to do it alone.
-
-"Okay," she said.
+The pull sharpened. Not louder — the density of it changed, the same way Dawit's data field had changed from scatter to arc, from weather to intention. Her back teeth ached before she consciously registered the geometry of what was ahead: the street bent northeast, and the street was correct. The Docent's redirect loop cycled again behind her. The chrome-armed man had not moved. The rain came down in the rain's specific political direction, and she kept walking into it, the slate heavy against her ribs, the pull patient and old and no longer alone.
 
 [Beat 21]
-The cell's leading theory sent her to an industrial district in Z6 on a cold morning, two days after the maintenance room meeting.
+The northeast bend opened into a logistics court that had been repurposed badly and not recently — cargo stanchions still anchored in the concrete, the hooks still there, the chains gone, the space between them now occupied by a market that had no interest in being found by anyone with a tier credential. She smelled it before she saw it: fat rendering, solder, the particular chemical sweetness of nanite bath solution sold in unlabeled canisters at a markup that assumed desperation. The cat stopped at the court's edge and sat down. Stopped moving entirely, which it had not done in three days.
 
-The theory had been sourced through the array tech, who had it from a technical forum that operated in the gray margins of the Consensus communication infrastructure — the kind of forum populated by former monitoring contractors, ex-Church members, and people who had been told that what they were experiencing was a post-Schism sensitivity disorder and had found other former-sensitivity-disorder people to compare notes with. The forum's current consensus on the anomalous readings was: a one-time Schism cascade event in 2218, contained, affecting a single Z6 infrastructure corridor, now closed. The readings that didn't match — the inversion gradients, the directional draw — were, per the forum's synthesis, measurement artifacts from equipment that had been calibrated to post-Schism baseline and wasn't correcting properly for the residual field. The event was over. The equipment was wrong.
+Her neck registered it first — the hair there, which she had never been precious about and which had no opinions — standing. The pull was not a pull anymore. The pull had arrived.
 
-This was a coherent account. It fit most of the available data. It was the kind of explanation that needed no ongoing problem, no current wrongdoing, no uncomfortable conclusion about what the live draws might mean. It was, in short, exactly the kind of explanation that a person who needed the available data to stop being alarming would produce if they were very careful and very thorough.
+*She should not be able to feel it at this range. She should not be able to feel it at any range. The NeoCortex was ten years in and the ferromagnetic drift was managed, was managed, was pharmaceutical and controlled and Dr. Ferreira had said —*
 
-She hadn't said any of this to the cell before going to check the Z6 site, because saying it would have been the kind of argument that needed evidence, and she didn't have evidence yet, and presenting an argument without evidence was how you lost a cell you had spent three days assembling.
+A stall vendor two rows in had stopped looking at his wares and was looking at her. Not at her coat, not at the bird, not at the chrome-adjacent thing people clocked when they clocked Sasha Võ in a market — at her. The specific point of her. His hands were flat on the table and his shoulders were doing the same thing Dawit's shoulders had done when he'd re-filed her, except reversed: not from threat to known, but from unknown to something he had been waiting to see. The dog pressed harder against her left leg. The vendor did not move. In the stall behind him, a second person had gone very still.
 
-The Z6 industrial district was a corridor of pre-Wars infrastructure that had been rebuilt after the Block Wars with materials that were available during the rebuilding and maintained, since then, intermittently. It had the quality of something that was structural and functional and had been neither improved nor abandoned — it simply continued, the way things in the outer rings continued when nobody had decided to either invest in them or tear them down.
-
-The site the forum had identified as the 2218 cascade location was a ventilation relay station in the middle of the corridor. It was marked with the merged-minds glyph of the Consensus monitoring service and two overlapping maintenance notice plates that had been there long enough to weather. She stood in front of it for five minutes and felt exactly nothing.
-
-A dead well rang. She knew what ringing felt like — a fixed pitch, single-point, the specific quality of a Schism location that had been opened and closed and was no longer actively doing anything. She had felt rings before, on the freight roads and in the territory between stations, where old Schism sites had left their residual frequency in the ground. A ring was audible to her the way a certain kind of infrasound was audible — she couldn't name the frequency but she could confirm its presence.
-
-This site had no ring. It had the complete absence of anything.
-
-She stood in front of it for five minutes. Then she walked the perimeter. Then she stood in the street and looked at it from different angles, in case proximity affected the reading.
-
-Nothing.
-
-The ventilation relay station in the Z6 industrial corridor was a ventilation relay station. It may have been many other things at some point. It was currently a ventilation relay station with maintenance notice plates that were weathering correctly.
-
-She went back to the Pulse node and took a transit slug to the maintenance access room and sat down with the cell.
-
-"It's a ring site," she said. "Or it's nothing. Either way it's not current."
-
-The array tech looked at his data pad. "The forum says—"
-
-"The forum is wrong." She said it without inflection. Not unkindly — just as a fact. "What I felt at the bridge two days ago was a draw. What you have in your logging data is a draw. The Z6 site is neither. Someone has given the forum a comfortable version of the story that happens to be in the right register to sound credible to people who are already looking for an explanation."
-
-There was a silence.
-
-"Who?" the Church apostate said.
-
-"I don't know." This was true and she wasn't going to pretend otherwise. "I know the Z6 site is not the source. I know the bridge draw was real and it was pulling toward the inner ring. Whatever's generating it is not past tense and it's not in Z6." She looked at the array tech. "Does the forum have any data sources from inside Z2 or Z1?"
-
-"No one in the inner ring uses the forum."
-
-"Right." She stood up. "We've been sent to look at the wrong location. The comfortable version of the story says the problem was in Z6 and it's over. That version doesn't explain your inversion gradient or the bridge or anything Noa has been hearing for two years. It just explains the data badly enough that someone who needs this to be over would accept it."
-
-She looked at all of them. The cell was still there — all four of them, the same four people who had shown up to the maintenance room. Nobody had left over the last three days. That was a data point.
-
-"I'm going back to the bridge corridor," she said. "If any of you have sources inside Z2, now would be the time."
-
-Nobody had sources inside Z2. This was, she thought, exactly the kind of obstacle that would keep stopping them — the people with the data were outside the ring, the thing they were trying to understand was inside it, and the comfortable story existed precisely to maintain that distance.
-
-She went back to the bridge anyway.
+She counted exits without moving her eyes. Three. The cat had not moved.
 
 [Beat 22]
 The bridge was a service span between two transit arteries, the kind you crossed without naming, and she stopped at the middle of it because her feet stopped, which was different from deciding.
@@ -902,85 +610,15 @@ The pigeon had gone, sometime in the last block. The cat hadn't. It sat at the n
 She lifted her hands off the rail. Her feet were already turned. She walked toward the live thing because stopping had never once made the quiet last, and because a man at a folding table had spent three weeks of silence to put this in her hands, and a debt she hadn't asked for was still a debt.
 
 [Beat 23]
-She knew something was wrong before she knew what it was.
+The well was not in the market. The market was the approach. She understood this only when she had walked through it — vendor eyes tracking her in the same reversed way, the same waiting-to-see — and come out the far side into a narrower service lane where the stanchion hooks continued and the overhead tarp had been replaced with corrugated panel and the panel was new. Someone had put up new construction in the Glooms perimeter in the last sixty days and the only reason to do that quietly was to put something inside it that the existing walls couldn't hold.
 
-The quality of the hum changed in the maintenance access room — not louder, not quieter, but different in direction, the way a draw changes quality when something is moving toward you rather than away. She was sitting across from the array tech going over the new logging data he'd pulled from his former employer's open-network monitoring archive when the quality shifted, and she stopped reading and looked at the door.
+The cat stopped at a door.
 
-She looked at Noa Erez.
+Not a market door — a transit authority access hatch, gray-green steel, the kind rated for flood barrier duty on the lower logistics level, repurposed up here where it made no structural sense. The seal around the frame had been redone in pneumatic foam, still pale at the edges where it hadn't cured to the surrounding concrete's color. Someone had wanted it airtight. The hum came through the door at 19 Hz and then at something above it, a second layer she felt in her jaw before she heard it, and it was not the hollow doubled note of a dead well — it was the sound of something very large and very awake breathing in a space too small for it. Her NeoCortex registered the field and threw a number she had not seen outside a lab.
 
-Noa was sitting in her usual position — the careful stillness, hands folded, managing proximity. She had been managing proximity for three weeks. She had said more in those three weeks than she'd said in the first meeting — short contributions, mostly confirmatory, the data points from two years of low-grade sensitivity brought forward in controlled doses. She had been the most disciplined member of the cell: no panic, no overclaiming, no drift into the comfortable story. She had done the work of holding what she actually knew rather than what she needed to believe.
+*Ferreira said drift was managed. Ferreira said ten years was early. Ferreira did not say anything about what happens when the thing on the other side is stronger than the pharmaceutical ceiling.*
 
-The shift in the hum's quality was coming from Noa's direction.
-
-Sasha didn't move yet. She looked at the door and then at Noa and then at the door. The shift in the hum was the specific quality she associated with a person under acute stress — not fear exactly, something more like the physical state of someone who had already made a decision and was living inside the aftermath of having made it, carrying it in the body before the body's response could be managed.
-
-"Noa," she said.
-
-Noa looked at her. The look lasted two seconds too long to be natural.
-
-"How long?" Sasha said.
-
-Noa closed her eyes. She said: "Yesterday. The message center at the transit depot. I didn't tell them where we were. I told them you existed and that you'd been at the bridge." She opened her eyes. "I'm sorry. I know that's not—" She stopped. "It was getting worse. Every day you're here it gets worse. I thought if they found you and moved you, it would stop."
-
-The array tech was very still. The Church apostate said nothing.
-
-"Halcyon," she said. It wasn't a question. She already knew the dead-drop name from the entanglement cost; she'd seen the message board marker on the transit system three days ago. "You told Halcyon."
-
-"I told the transit security monitoring desk." Noa's voice was steady. The confession seemed to have resolved something in her posture — she was sitting straighter than she had in three weeks. "I don't know if they're Halcyon. I don't know who monitors the transit security desk's reports. I said there was an unlicensed sensitive operating in the Z4 outer ring. That's all I said."
-
-"That's enough."
-
-"I know."
-
-She stood up. She was moving through the calculation at the speed she always moved through calculations, which was faster than the emotion arrived — the emotion would arrive later, or not, because the mechanism that made her what she was had spent ten years running faster than the aftermath. The cell was compromised. The transit security monitoring desk's reporting chain had seventeen possible endpoints, one of which was Halcyon's strategic resources division, which she already knew existed and knew was looking for her. She had, generously, hours.
-
-She looked at Noa. Noa looked back.
-
-"I'm not angry," she said. This was true in the specific way that she was never angry — the engine didn't run on anger. It ran on something colder, without heat, the thing she did because it was what she did. "You told me it was like standing next to a speaker with the volume up. I believe you."
-
-"That doesn't make it—"
-
-"No. It doesn't." She picked up her pack. "You should leave this room and not come back."
-
-Noa left. The door closed.
-
-She looked at the array tech, who was looking at his data pad and not at her. She looked at the Church apostate, who was looking at the wall. She looked at Dawit, who was looking at her with the expression of someone who had organized this gathering and had been right that it was not a good idea and was not, currently, feeling vindicated by the fact.
-
-"The logging data," she said. "Can you send it to a dead-drop relay without the transit security desk seeing the routing?"
-
-"Yes," the array tech said.
-
-"Do that. Then leave this room and don't contact me through any of the channels we've been using." She thought for a moment. "The forum that had the comfortable Z6 story. Do you still have posting access?"
-
-"Yes."
-
-"Post that the Z6 reading is confirmed historical, fully closed, no current activity. Whatever language makes it sound like the case is done."
-
-He looked at her. "That's the story we decided was wrong."
-
-"That's the story I need in the forum for the next seventy-two hours."
-
-He understood. He nodded.
-
-She looked at Dawit last.
-
-"The cell did good work," she said. "It found what it could find with what it had."
-
-Dawit said: "And now?"
-
-"Now the cell is done and I have what it found." She picked up the logging data reader he'd lent her and put it in her pack. "I'm going to use it."
-
-She left the maintenance access room through the service exit and came out three blocks north of where she'd entered. The hum was at its loud GLMZ baseline — the towers above her, the signal-density of ten million people with neuretics running, the draw from the Z3 corridor pulling northeast.
-
-She walked northeast.
-
-Somewhere in the transit security monitoring system, a report was moving through channels she couldn't read. She had perhaps six hours before a routing chain that led to Halcyon Strategic Resources produced an asset recovery order with her specific description attached to it. She had the logging data, the bridge draw, and the location of the Z3 corridor's source array.
-
-She had what the cell had spent three weeks building. The cell was gone. She was moving alone with the information and the draw and the hum at full volume in the city where it had always been loudest.
-
-This was, she decided, approximately the situation she'd deserved for every decision since Kankakee. The ledger had a sense of proportion.
-
-She kept walking.
+The door had no handle on the outside. Someone had removed it — recently, the ghost of the mount still bright in the paint. She pressed her palm flat to the steel and the hum moved up her arm to her shoulder and into her back teeth and her vision went white at the edges for one flat second, the NeoCortex spiking hard against its own regulators, and when her vision cleared the cat was gone and behind her the service lane was full of people who had not been there when she walked through the market. Four of them. Standing at the lane's entrance in the specific stillness of people who had been told to wait and were done waiting. The vendor with the flat hands. Three others she hadn't clocked. The one in front had his arms crossed and his chin down and he was looking at her the way you look at something you have been sent to collect.
 
 [Beat 24]
 The node was a maintenance junction box bolted to the underside of the bridge's eastern footing, the kind of housing that held nothing anyone wanted to steal, which was exactly why someone had used it. She found it the way she'd found the live well - feet first, the pull narrowing from a direction into a doorway into a hand-width of green-corroded steel with a service hatch that opened to a thumb on a panel that had no business reading her thumb. It read it. The hatch sighed.
@@ -1017,60 +655,30 @@ The right one came in fast and committed and wrong, leading with the reach the s
 The cat was at the slot's mouth, sitting where she'd have seen it if she'd looked, which she had not. It made no judgment about the folded shape in the corridor. Neither did she. She thought about the one who'd walked back into the light - just once, just the half-step of a man choosing his own body over a line on a contract. It was the only clean thing that had happened in the corridor, and it had happened because she'd given him the door and he'd been smart enough to take it. She let the slot close behind her and stepped back into the channel wind with one fewer shadow and the northeast pull exactly where she'd left it.
 
 [Beat 26]
-She sent a message to the dead-drop relay the array tech had set up — a single line, stripped of anything that could locate her: *Z3 corridor, draw confirmed, source below grade. Going for the source array.*
+The drill site was a maintenance access point sunk into the channel's northeast wall, the kind of infrastructure that existed on four different maps under four different designations and matched none of them. The depth was right. The vector was right. Nineteen degrees off the channel run, a coffin-lid of recessed concrete with a pull on it like a hand on her sternum, steady and specific and completely indifferent to what it was costing her to stand here breathing shallow around a rib that had opinions.
 
-No response came. She hadn't expected one. The burned scatter because that's what the burned do: they make themselves small and uninvolved and they wait for the pressure to move off them. The array tech had his logging data posted to the forum under the comfortable story. The Church apostate had returned to wherever Church apostates went when a situation became more dangerous than they'd signed up for. Dawit had thirty years in gray-zone operations and knew better than anyone in the cell how to become briefly invisible. Noa Erez had made her choice and lived with it and was, presumably, living with it still.
+*Dawit said run. The stranger said run. She was standing at the hole.*
 
-The cell had given her what it had. A datapoint from someone who'd felt the draw for two years. An inversion gradient in seventeen months of monitoring logs. The understanding that the comfortable story in the forum wasn't an accident. A dead-drop relay she could send to and no longer receive from.
+She stood with it for a moment — the credential in her pocket, the ache on her left side, the cat somewhere behind her making its own calculations. Fifty thousand alive. A live well in the Exchange corridor and Halcyon Strategic Resources with a price list and asset recovery teams who had learned their offset stride in rooms that didn't teach the last part: what a slot does to a long reach, what a body does when it's already decided. They'd sent two. She'd given one the door. They'd send more and they wouldn't send the kind that took doors.
 
-She was standing at the Z3 corridor's entry point with a bruised rib from Halcyon's two-person team and a credential she'd lifted from the taller of them, and she had the Halcyon Combine name confirmed, and she had a hole above her ribs from the tactical encounter she wasn't currently examining because examining it while standing at the entry to a restricted corridor was the kind of mistake that made everything following it worse.
+*The stranger had burned a dead-drop to tell her to leave. She was going to make that wrong.*
 
-The hole was manageable. She had managed holes before. She would manage it properly when she was somewhere she could manage it, which was not here.
-
-The hum at Z3 was the loudest it had been since she crossed the city perimeter. Not louder in amplitude — the amplitude hadn't changed in ten years. Louder in character: the front-of-something quality she had first noticed in Joliet, now fully articulated, the way a sound you've been hearing from the wrong angle sounds different when you finally get in front of it. She was in front of it.
-
-She checked the Halcyon credential. The clearance level was low — a field operative's access, not an executive's. She didn't know what it would open and what it wouldn't. She knew the colonnade was below grade and that it ran under the Exchange district and that the credential was currently the only thing she had that was recognized by any system in the inner ring.
-
-She didn't have anyone to give this to. That was the problem.
-
-She understood, standing at the Z3 entry in the city where she had spent her whole life not being, that she was the one who had the information. She had the draw confirmed, the inversion gradient, the Halcyon name, the colonnade location. She had three hundred meters and a corridor between her and whatever the logging data had been trying to describe. She had nobody she trusted with information this weight, and the weight of not-trusting was not the same as the information being worthless.
-
-The cell had been the vehicle for the information and the vehicle was gone. The information was still true. The draw was still there, pulling at the precise northeast vector it had been pulling since Joliet.
-
-In Joliet, three weeks before the man on the camel, she had stood in the storeroom and told herself she was stopping. She had told herself the month was the month and the map was down to one road. The one road had led here, to a Z3 corridor with a hole in her ribs and a credential that belonged to a field operative whose organization was currently generating an asset recovery order with her description.
-
-She had never once arrived at a dead end that turned out to be a wall.
-
-She walked into the corridor.
-
-The hum walked with her, at its full GLMZ volume, in the specific direction of pull. She followed it the way she followed anything she couldn't outrun: not because she had chosen to, but because the alternative was to leave with the information still locked inside the thing that was pulling at her, which was the one outcome the standing order and Halcyon and the comfortable story in the forum and every person who had ever looked at her size and made an assessment had been trying to produce.
-
-She hadn't come three years across the shrinking map and the compounding ledger to leave with nothing in hand.
-
-She went toward the draw.
+She pressed her thumb to the recess panel — the same read as the hatch on the bridge, the same patient architecture built for the kind of body that stopped because it felt something — and the coffin lid gave, and the pull came up through the concrete and through the soles of her boots and into the ache in her ribs like a frequency finding its matching string, and she went down into it.
 
 [Beat 27]
-The camel was on the walkway.
+The corridor climbed before it descended — a structural quirk of the Exchange district's layered construction, where the grade-level street sat on top of two generations of older street, and the pedestrian infrastructure had been retrofitted to bridge them. The elevated walkway was twenty floors up by the time she cleared the second lift bank, and the crowd was the kind of crowd the Exchange generated at this hour: six thousand people moving in the specific coordinated way of people who had somewhere to be and a neuretics-optimized route telling them exactly how to get there. She was the only person on the walkway not moving. She was the only person on the walkway who had stopped.
 
-Twenty floors up, a glass-floored span strung between two Tessera towers, and the crowd on it moved the way crowds move six thousand strong - heads down, feed-lit, the river of them parting around the animal without a single face turning to mark it, the way water parts around a piling it long ago stopped seeing. The camel stood broadside across the flow. The man on the camel sat it with his hands loose on the pommel and his chin level, the thousand-year patience she had first taken for indifference. Rain fell on the span. It fell on everyone but the two of them.
+The camel was there.
 
-She took the maintenance stair because that was a door her thumb could open, and she came out among the six thousand and walked against the current toward the only thing on the span that was looking back. The cat was already at her heel, arrived by no route she could account for. She had stopped counting the impossible appearances. Counting them had never once changed what they were.
+It stood on the walkway's central span with the patient solidity of something that had no biological reason to be on an elevated pedestrian bridge in the innermost ring of a city built entirely on vertical infrastructure, and no one in the six thousand was reacting to it. The crowd moved around it the way water moves around a post — not parting, exactly, more like the post had been there long enough that the water had learned its shape. The man on its back sat with his hands loose on the reins and his eyes on her, which they had been from the moment she'd cleared the lift bank, and the hum was at its absolute maximum, not in amplitude, not in character, but in the quality she had no word for: the sense of having arrived at the thing that had been calling.
 
-She stopped a hand's length from the animal's shoulder. It smelled of nothing - not dung, not heat, not the lake, not the city. Absence with a shape. She tipped her head up at the man on the camel.
+*Joliet. The storeroom. You told yourself you were stopping.*
 
-"Not under the Exchange," she said. Not a question. She'd stopped making them questions hours ago. "You'd have let me walk under the wrong floor."
+She walked toward him through the crowd that did not see him, and when she reached the camel's flank she stopped and looked up at the man and said nothing, because she had already asked all her questions in the underpass and in the corridor and in three years of map and she was done asking. He looked down at her with the patience of something that had been waiting a specific length of time for a specific person, and then he said it simply, the way you say a thing to someone who can finally hear it: not the Exchange floor, not the main hall, not anywhere the signal was clean. The eastern colonnade. Where the instrument read was dirtier. Where the softer signal had been mistaken for noise for ten years, and Halcyon had built their drill site in the noise because the noise was where the source was, and the clean signal was the echo.
 
-The man on the camel said nothing she could have repeated to Dawit. But the drill site moved inside her - not in her teeth this time, lower, in the chest, the place that had answered the camel's breath on the rail bed and hadn't stopped answering since. Not the Grand Exchange proper. The eastern colonnade, the old stone arcade where the signal came softer and the instrument's read ran dirtier, the place a clean machine would mislike and a careful one would choose for exactly that. Less than a mile. The vector reseated nineteen degrees off the channel and held like a hand pressed flat to the inside of her sternum.
+Less than a kilometer.
 
-The camel breathed at her then, a long warm exhale across her face that carried no smell, and the wound under her left ribs answered it with a flat involuntary throb she hadn't told it to make.
-
-"What do you want when this is done?" she asked.
-
-The man on the camel looked at her - not past her, the way he looked past everything, but *at* her, and the difference was a cold thing down her spine before she could name why. The *we* in his voice narrowed, went singular, the way a chord resolves to one note. "We don't know yet," he said. "You are the first one in a long time who could feel us at all. We came to ask the open one what she wants. We did not expect her to ask us back." The camel swung its great head toward her shoulder. "So we are asking you. You have not answered it yet. Neither have we. That is the first thing we have had in common with anyone."
-
-She hadn't answered it. She didn't have an answer. And the thing that had leaned on the wall her whole life had just told her it didn't have one either - that the great patient presence on the far side of the hum was, in the one way that mattered, as lost as she was.
-
-She didn't step back this time.
+The camel exhaled — a warm pressure against her shoulder, animal and immediate, the most biological thing that had happened to her in the inner ring — and she did not step back. She stood in it. The crowd moved around them both.
 
 [Beat 28]
 The eastern colonnade wore its lie well. From the channel side it read as a Consensus monitoring array - the gray ribbed housings, the slow blink of frequency counters at eye level, the placard with the merged-minds glyph that told a passing thumb *nothing here you can open.* She walked its length with her hands in her coat and let her body do the only honest accounting in the corridor. The housings hummed at the pitch maintenance hardware was supposed to hum at. Behind them, through three meters of old stone and newer ferrocrete, the floor dropped away into something that wasn't monitoring anything. *Monitors listen.* This pulled.
@@ -1144,36 +752,22 @@ She thumbed it open against the housing, found the channel still unlocked - whoe
 She sent it plain: *three wells, three depths, eastern colonnade, drill nineteen off channel, ten thousand on the floor, far side at 72 and it is not a deposit.* To the one slate that would know what to do with a number she had no register for. Then she pulled the rig and let it go dead in her hand, and stood in the false array with the four of them down and her own blood warming the inside of her coat, and the steady 72 pushed up through her teeth, patient, refusing, unchanged, as if nothing on this side of the stone had happened at all.
 
 [Beat 31]
-The maintenance platform on the Z5 exterior wall was a steel grate no wider than a coffin, bolted to the curtain wall four hundred feet up, and the door behind her had locked when it closed because that was what doors did to people like her. She stood on the grate with the wind taking the cold line above her ribs and making it colder, and looked out past the antenna farms and the atmospheric processors and the long staged tiers dropping toward the gray, all the way to the lake, which lay flat and black and lit only at its near edge by the city's spill and gave none of it back.
+She found the maintenance platform by feel, the Z5 exterior access barely wide enough for one person standing sideways, and when the panel swung open the lake came in — not as smell, not as sound, but as pressure, the cold specific weight of all that water refusing to be anything other than what it was. She pressed her back against the outer wall and let it hold her. Below, the Gray Zone's outward face was dark at this hour, the lit windows sparse and yellow, and beyond the seawall the lake was simply black, no reflection, no neon reaching this far east. It looked the way it had looked before any of this was built. It didn't know about the drills.
 
-She knew what she was carrying. Her body had been carrying it since the colonnade, settled below the wound: Halcyon's hands inside Consensus paint. The official story was the fog. The wells were live and here, not at the edge, and the ten thousand people on the floor above them didn't know.
+*I am the hole. The hole is on both sides.*
 
-She'd said it once, plain, into the rig. It was somewhere now.
+She had three wells at depth. She had the logging data with the inversion gradient. She had the 72 Hz pushback, steady as ever through the soles of her boots, the far side doing what the far side did, indifferent to Axiom's cover story and indifferent to hers. She had the Halcyon comms rig, still warm in her left hand, and a signal window she could measure in breaths. What she didn't have was a name she trusted with the weight of it — the cell was scattered, the one slate she'd sent the plain text to was a dead-drop with no confirmation path, and Axiom had just sent four people who'd drilled against the Read to a location that wasn't on any map she'd filed. Someone had the location. Someone had filed it for them. The closed door on that question had no inspection stamp.
 
-The trouble was the same trouble Dawit had handed her at the folding table, only bigger, and she finally understood why he hadn't looked at her when he gave it up. There was no one to bring this to. Every slate she could name belonged to someone who, the instant they had the count, would do the calculation on it - decide which ten thousand were worth the cost of the floor, which corridor to evacuate and which to leave so the drill kept its cover. The fog wasn't only outside her. It was in every channel a person with no file could reach.
+She opened the dead-drop channel one more time and pushed the full packet: logging data, gradient inversion, the power coupling stamp with its seventeen-day cycle, the 72 Hz figure and the three depth readings, the colonnade position and the drill pattern and the Halcyon team composition and the counter-emitter frequency, everything she had reconstructed standing inside the cover looking at the thing directly. She sent it without a header. Anyone who could use it would know what it was. Anyone who couldn't wouldn't know what they were holding.
 
-She felt the wound flex against her breathing and breathed anyway.
-
-*She is the hole.* The entity's geometry had been sitting in her since the span and she let herself finish it. You make a hole in a thing and the thing is on both sides of the hole. The far side at 72 wasn't pushing against the drill. It was pushing against the *opening* - against the membrane being unmade. And so was she. Not a sensor. A thing the data passed through and changed in the passing, standing on a locked grate equidistant from every closed door in the city, belonging to neither side of a wall someone had decided to drill through. The man on the camel had asked what she wanted when this was done. Standing here, she finally had the shape of an answer, and it wasn't quiet, and it wasn't less anger. It was that the floor should not be allowed to fall on people who didn't know it was hollow.
-
-Dawit had spent three weeks of silence on her. A stranger had spent tradecraft and the word *run.* A thing with no tenses had spent a thousand years of patience to find one open door and ask it a question. She was the sum of all three, four hundred feet up, with no one she trusted to hold the weight - and not sending it was a choice too, now. That was the thing the man on the camel had taken from her on the rail bed: he had made *not choosing* into a choice she could no longer not make.
-
-So she chose. She sent it plain to the dead-drop channel - the one slate that only ever received - and left the count there for whoever was on the far end of a silence she had no way to verify. Not because she trusted them. Because the alternative was to walk away clean, and walking away clean was the only thing she had ever been good at, and she was done being good at it.
-
-The cat was between her boots, a gray weight on cold steel four hundred feet above the city, arrived by no route she could account for. She set the rig on the grate, live, the channel open, warm going cold. She put her back to the lake that wouldn't reflect her and her face to the door that wouldn't open, and the cold line above her ribs reported itself in the wind, and she let it, because she had stayed and she had sent it and she was still upright, which was new, and she was not done with it yet.
+Then she set the comms rig on the platform railing and left it there. Not dropped, not thrown — set down with care, the way you set down something that belongs to someone else. The lake sat past the seawall with its particular indifference, and the 72 Hz came up through the stone of the platform and through the soles of her boots and into the cold line above her ribs, patient, unchanged, the far side maintaining its pressure as if the question of who received the information was simply not a question it had been asked. She turned back toward the access panel, her left hand finding the edge of it in the dark, and the wet edge on her exhale was still there, still small, still something she was deciding about.
 
 [Beat 32]
-*Present day.*
+The transit platform at the Loop's north edge was not a place anyone stayed — it was a place the city moved through, a bottleneck of bodies and noise and the particular smell of ten thousand separate lives condensed by steel and schedule. Wren bought the slug at the kiosk without looking at her balance. The machine read her palm and deducted and she walked through the gate before she could watch the number settle.
 
-The north platform of the Loop took her in the way the city took everything in - bodies four deep at the rail, ten deep behind, the breath of a thousand people held under one roof and pushed back out warm into the gap where the train would come. She had never stood in a crowd this dense. She'd spent her whole life on the thin edge of rooms, back to a wall, one exit logged, the periphery where she could read every well in a space because the space was small enough to hold. Here the wells were past counting. The 60 of fear and the dead-zero of the augmented and the dozen steady columns of people who didn't know they had a register at all, all of it stacked into a hum that pushed up through the floor and through her boots. The three live wells still pulled, somewhere south. The far side at 72 sat underneath all of it, steady, unresigned, not pushing against her - just there, a thing on both sides of a hole someone meant to make.
+*She still has the comms rig's frequency in her head. Someone on the far end of a silence she cannot verify, and she does not know if that is better or worse than knowing.*
 
-The wound above her ribs had closed enough. She took a breath and found clean air on the exhale, no wet edge, and let it go without making a ledger of it.
+The platform was packed shoulder to shoulder, the kind of crowd that required you to accept the heat of strangers, and the hum was everywhere — not the hum she had learned to sleep through, the city's ordinary processing, the electromagnetic bleed of ten thousand neuretics and augment arrays and atmospheric management grids doing their work. This was the 72, patient and unresigned, pushing up through the steel deck and into the bones of her feet and her ankles and the long column of her, asking nothing, expecting nothing, still here. The cold line above her ribs answered it on the exhale. Two frequencies. Neither one stopping.
 
-The hum at this density was not a thing she had a name for. She'd spent her whole life treating it as the enemy - the thing she picked fights to silence, the thing she woke with before she woke with anything else, the radio she couldn't reach. Here it was at maximum. She didn't reach for either piece. The thirty seconds of quiet weren't coming, and for once she wasn't trying to buy them. She stood in the middle of the loudest place she had ever been, and the hum was the same hum it had always been, and she was - she checked, because checking was still how she knew anything - still here. Not quiet. Not less angry. Still here, and not drowning it.
-
-She bought a transit slug at the wall kiosk, Φ4.00 north, the Pulse heading wherever she was heading, and didn't look at what the wallet did after. She looked down. The cat looked up. It had come this far. She bought a second slug at the same machine, Φ4.00 north, and closed her hand around the warm weight of it - for the cat, or for the idea that something was coming with her, she didn't make herself decide which.
-
-Two Arcturus Civil Security officers worked the far end of the platform. She clocked them the way she clocked every fixed point - depth, angle, line of sight - and they didn't look at her, and she didn't look at them again.
-
-*I do not know what is north.* She let it stand as the one thing she couldn't set aside, and she walked onto the platform into the densest crowd she had ever stood in, the hum loudest of all here at the center of everything, and she didn't find a wall. She didn't log an exit. She stood in the middle of the held breath with her face to the open dark where the train would come, and her back to nothing at all. The cat walked onto the platform. She didn't look back to check. She had stopped doing that somewhere between the rail bed and here.
+She found a position on the platform and stood facing the incoming track, the crowd thick at her back, the tunnel open in front of her. The door behind her was not locked. She had not put her back to it. These were small things and she was counting them anyway, because they were new, and she had learned early that new things required inventory before they could be trusted. The train's headlights appeared in the dark of the tunnel — two points of white in a long throat of black — and the crowd shifted forward with the particular unconscious surge of people who have somewhere to be, and she shifted with them, not ahead, not behind. In the middle of it. The cold line pulled on the inhalation and she breathed through it and stayed.
 

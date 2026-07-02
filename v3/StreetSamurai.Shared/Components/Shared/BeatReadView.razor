@@ -1,0 +1,11 @@
+@* Read-only beat prose renderer. Renders text through XrefText with NER enabled so entity
+   names become clickable links. Strand.razor shows this when a beat is not dirty; switches
+   back to the textarea when the user clicks to edit. *@
+
+<div class="beat-prose-render">
+    <XrefText Text="@Text" Paragraphs="true" EnableNer="true" />
+</div>
+
+@code {
+    [Parameter, EditorRequired] public string Text { get; set; } = "";
+}

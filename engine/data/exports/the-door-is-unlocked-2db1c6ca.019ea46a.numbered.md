@@ -673,130 +673,52 @@ The block was empty. The building's front window showed a space recently disturb
 She walked to the corner and turned south.
 
 [Beat 23]
-At 04:30 the street outside the middle building had the particular emptiness of a place that had recently held people. Not the stillness of three in the morning, which was a held breath. This was the slack afterward — the doorway propped open an inch on a folded square of cardboard that someone had meant to come back for, a chair turned at the wrong angle to the table, the residue of a room cleared in a hurry by people who'd decided the next hour was someone else's problem.
+The signal was still at 1.4 miles. That had not changed. What had changed was the building she was walking toward was now the building ACS had just left, which meant it had been processed and was therefore, by their operational logic, done. ACS did not return to processed locations on the same shift. She knew this the way she knew the ferrocement column had been structural: from reading what was available to read, which was everything, if you read it correctly.
 
-She'd watched the third one go at 04:11 from the coffee counter across the way. He had come out the back the way the other two hadn't, faster than them, carrying nothing, and he had not looked at the building again. That was the whole of it. No one had stood in a doorway. No one had said her name, because no one in the city knew it. The Arcturus arbiter behind the ACS frequency had run its quiet second-pass logic on an unlicensed-hardware tag broadcasting from a fixed address, and three separate people had each worked it out and arrived at the same answer, which was: not here, not tonight. She hadn't had to argue with any of them. She had only made the math wrong for them, and the math had done the rest. That was the lesson the city had taught her in the ACS stairwell, turned now to her own hand — the institutions weren't help and they weren't war. They were weather. You read them and you stood where the rain wasn't.
+*The case is still there because she hid it from someone who was not looking for it.*
 
-The front room was dark. The curtain at the back hung still.
+She crossed the service corridor where the two people had exited and noted the direction they had moved — east, away from the tier boundary — and filed it as not her problem. The building's rear entry had a standard reel lock, residential grade, the kind rated for deterrence rather than resistance. She had a tool for it in her left jacket pocket, the one she had built from salvaged components during the six weeks she had spent in a sublevel unit in Old Harbor learning what a reel lock's tolerances actually were, which was a different thing from what the manufacturer specified. She used it. The door opened in eleven seconds.
 
-She pushed the door the rest of the way and waited a count of three on the threshold, listening past the music she'd switched off an hour ago. Nothing. The room had the cooling smell of a soldering iron left on too long and then killed, and under it the chemical sweetness of someone's vape, already going stale. She stepped in over the cardboard.
+*She had not been afraid the whole time she was standing at that counter. That was the part that was still settling.*
 
-The case was under the table, shoved back against the wall leg, exactly where the corner of it had shown her its position through the window at noon. They had moved it from the corner to the floor and not one centimeter further. They had never opened it. She knew that before she touched it — the latches sat at the angle she'd set them, both thrown, neither sprung, the way a thing sits when no stranger's thumb has found the release.
+The interior smelled like disruption: moved furniture, unfamiliar boots, the particular staleness of a space searched by people who had not been gentle about it. She moved through it the way she moved through all spaces that had recently been occupied by people with authority — carefully, without rushing, aware that authority left residue. Overturned things. Open drawers. The evidence of a search that had found exactly what it was looking for and stopped looking, which was the operational habit she had been counting on. She followed the signal south down a storage corridor, past shelving that had been partially disturbed and not restacked, and found the case exactly where it had been: behind a false back panel in a utility closet that someone had built for storage purposes and which ACS had not opened because it was not a licensing violation and they had already found what they had come to find. She crouched. She pulled the case out with both hands and set it on the floor and checked the seals.
 
-She crouched and brought it onto her knees and her hands started before the rest of her caught up.
+Intact.
 
-This was the part she couldn't have explained to the ACS officer, or to anyone with a form. Her hands knew the case from the inside. Eighteen years of her mother's hours were laid into the foam as muscle memory in two sets of fingers — her mother's first, then hers, fitted into the grooves the older hands had worn. She didn't look at the contents in order so much as confirm them by the shape of the reaching: calibration wands, the cool aluminum of them seating into the web of her thumb; the primary bridge, heavier than it had any right to be, the weight that told her the core was whole before she'd read a single diagnostic; the interface sleeve folded the way she folded it and not the way the catalogue showed; the adjustment stylus dropping into its slot with the small click that was the sound of nothing being wrong. The three indexed cartridges at the back, in their order, one-two-three under three fingertips, none switched, none gone.
-
-Ninety seconds. She counted them the way she counted everything, in the half of her brain that always counted. Everything present. Nothing disturbed. They had carried the most valuable thing she owned a mile and a half across two territories and set it on a floor and the foam had held its shape and the foam had held hers.
-
-It wasn't relief. Relief was for people who had been afraid the right amount, and she had been afraid in the stairwell already and spent it there. This was something quieter and harder to put down — the feeling of a calculation closing, of a problem she had built the answer to with her own two hands resolving the way she'd modeled it. Her chest did a thing she didn't have a word for and didn't need one. She let it pass and re-armed and latched the case.
-
-She stood with it in both arms, the way her mother had carried it, and stepped back over the cardboard and out into the 04:30 air. She did not look back at the room. There was nothing in it she wanted. She had what she'd come for, and she had it because of what she'd done and not because of what anyone had given her, and she walked toward the street with her mother's kit held against her like the only weather she could trust.
+She lifted it, stood, and walked back the way she had come.
 
 [Beat 24]
-She walked the nine blocks back to the Pivot carrying the case in both arms the way her mother had carried it, which was with the latches facing out and the weight distributed between her forearms rather than the handle, because the handle concentrated the weight at one point and the forearm carry distributed it and the case had eighteen years of calibration history in it and she was not going to stress a single point when she could spread it.
+The street gave her nothing to navigate — no ACS, no foot traffic, no one leaning in a doorway watching the direction she'd come from. The atmospheric processors were running their pre-dawn cycle overhead, the kind of low cloud cover that meant the Gray Zone would catch the morning's first redistribution before the Spires took what was left. She walked south on Ashland because it was the straightest line home and because she was tired in a way that had nothing to do with the hour. The case sat against her chest. She did not switch arms.
 
-The city at 4:30 in the morning had the same sparse population as the city at 1:30 in the morning and a different quality to the light: the tier illumination was the same, the signage was the same, but the ambient temperature had dropped another degree and a half since she had gone out and the air had a clarity to it that the afternoon air never had, the city having metabolized a portion of its own output over the night. She could smell the Rift scar two zones over — the specific chemical signature of a city repairing itself, the same smell that hung around an active nanite patch but scaled to the mass of a city block, a faint industrial sweetness that she hadn't been able to identify her first night and now knew to be the background scent of the zone she lived in. She would always know it now. She would walk into other neighborhoods in the future and register the absence of it.
+*Eighteen years of her mother's hours. The foam remembers the shape of hands that are gone.*
 
-She didn't take the direct route back. She took a route that added three blocks but ran through the transit hub rather than past it, because the transit hub at this hour was populated enough — night-shift throughput, the slug network's off-peak maintenance schedule — that a person carrying a case was unremarkable, a transit detail rather than a street detail. She didn't think she was being watched. She wasn't taking the three extra blocks because she thought she was being watched. She was taking them because habits that protected her when she wasn't being watched were habits that protected her when she was.
+She crossed W Chicago Avenue at 04:47 and the building was there — the Pivot, the corner building the city couldn't name correctly, lit at one window on the second floor in the particular amber of a lamp left on for no one or for habit. Her diagnostic port registered the familiar low EM bleed from the building's decade-old wiring as she came up the stoop. A known frequency. She had mapped it the first week. She had stopped noticing it the second, the way you stop noticing a sound that has never once meant anything was wrong.
 
-The Pivot's lobby was empty and still dimly lit, the same monitoring hardware in the same three corners. She went up the stairs at normal pace, not slow and not fast, the case shifting with each step in the predictable way she had already learned to compensate for. Second floor. The corridor. The worn latch on 2D was in the same position — the door fully closed, the light under it off. The person in 2D was still out or asleep. She was glad of it. She didn't want to explain what she was carrying or why she was carrying it at 4:30 in the morning, not because she couldn't explain it but because the explanation would need establishing a relationship with a neighbor she hadn't yet established a relationship with, and establishing relationships needed a context she would have to construct on the fly, and she was too tired and too finished to construct anything right now.
+She got the door with her elbow, took the stairs, and was at 2E before she had consciously decided to stop walking. She set the case down on the floor beside the door because she needed a hand free for the key and because it had been in her arms for six blocks and it was heavy and she was allowed to put it down. She found the key. She picked the case back up. She went inside.
 
-She unlocked 2E and went inside.
-
-She stood in the middle of the floor for a moment with the case still in her arms. The room was exactly as she had left it. Secondary kit against the wall. Food in the corner. Window showing the diffuse pre-dawn glow that GLMZ's ambient illumination gave to the hours before actual sunrise. The room was hers, and it had been hers the whole time she was gone, and she had known that, but knowing it from outside a room and standing inside a room were different things and she had been outside the room for seven hours.
-
-She set the case down in its corner. She didn't open it again. She had already checked it in the building — ninety seconds, everything present, everything undisturbed — and opening it again wouldn't add data; it would be her hands looking for reassurance they had already received. She set it down and straightened up and let her arms feel the absence of the weight, which was different from the absence of the weight having been taken.
-
-She unlaced the boots and set them beside the door. She did this the way she had always done it, the way her mother had done it — you left the boots at the threshold because the boots went out and came back in and did not belong in the room when the room was at rest. The boots stayed at the threshold. This was a habit from the farm and she had brought it here. She saw no reason not to.
-
-She ate one of the remaining protein bars standing up, because she hadn't eaten since nine-thirty and her body was presenting this fact to her now that the work was done. It tasted like what it was. She ate it completely and stood in the window gap for a moment and looked out at the cross street below, which was empty now except for a delivery service cart moving slowly toward the main street, its indicator lights blinking in the correct pattern for a vehicle with a right-of-way request at the junction ahead.
-
-She went to the floor. She put the bag under her head. She didn't put music on. She was too tired to want anything between herself and sleep.
-
-The pump cycled somewhere in the building's infrastructure. She heard it once and put it where it belonged and let it go.
-
-The case was in the corner. The secondary kit was against the wall. The boots were at the door.
-
-She was in the city. She had solved the first hard problem. She had solved it herself, with the tools she had brought from Iowa, using a plan she had made from scratch with no one to advise her. She had used the institution against itself and the math had worked and she had walked into a strange building at 4:30 in the morning and walked back out with her mother's hands intact. She didn't name any of this. She didn't need to. It had happened and it was in the record and she was the record-keeper and she already knew.
-
-She slept. The city kept doing what cities did.
-
-She woke at half past ten. The room had daylight in it — actual daylight, the attenuated tier-filtered version that GLMZ called morning, cooler and more diffuse than Iowa's but unmistakably the same phenomenon, the sky happening somewhere above all the infrastructure and arriving down here as what the sky had left after it passed through everything else.
-
-She lay on the floor for a count of twenty and confirmed, one by one, the facts of her situation. Case in the corner: confirmed, she could see the corner of it from the floor. Secondary kit against the wall: confirmed. Food in the corner: three units remaining. Door: locked. The pump in the building's infrastructure would cycle in approximately twelve more minutes; she knew this because she had been waking to the cycle and going back to sleep for the last several hours and her body had internalized the interval.
-
-She sat up. She was still wearing her clothes from the night before. This was fine. She had slept in work clothes before and she would again. The boots were by the door where she had left them. The pouch was still across her body, which meant she had slept in the pouch, which meant she had been more tired than she had assessed when she lay down.
-
-She got up and took the pouch off and set it beside the secondary kit. She went to the window and looked out at the cross street below.
-
-The cross street at half past ten had its own character: the daytime population, people with places to go moving at a pace that had intention in it, a delivery cart at the far corner offloading something that she identified as fresh produce by the smell that reached the window when she pushed it open an inch. The city smelled different in the morning than it did in the afternoon and differently still from the small hours she had spent in it last night. In the morning it smelled like food and transit and the residue of rain — there had been rain while she slept, the street below showed it in the particular darkened patches that ferrocement made when it dried unevenly. In the afternoon it would smell like machines. In the evening it would smell like food again, different food.
-
-She was learning the city's rhythms the way she had learned the farm's: by being present for them repeatedly until they became the background against which everything else happened.
-
-She ate a protein bar. She drank from the water she had left in a sealed container the night before the night before. She stood at the window and let the morning happen around her and didn't try to make it anything other than what it was, which was the first morning after the first hard problem she had solved in this city, which was also the first proof that the things she had come here with were enough for what the city would ask of her.
-
-She didn't know what the city would ask of her next. She would find out when it asked.
-
-She went to the case and picked it up and held it for a moment and set it back down. The foam held the shape of her mother's hands and she was growing into them.
+She set it on the workbench, both latches up, the way she always left it, and stood there with her hands flat on the case lid for a moment that lasted longer than a moment. The soldering iron was cold. The room smelled like her room. Outside, the first redistribution broke and the rain started, tapping the window in the particular irregular rhythm of a storm that had been routed somewhere it wasn't aimed, falling on the Gray Zone because that was what the processors had decided to do with it. She did not move to close the curtain. She let it fall where it fell.
 
 [Beat 25]
-She unpacked on the floor first, the way she always unpacked — case open in the center of the room, contents out in the layout order, every piece against the mental list. Calibration wands in a row. The primary bridge. The interface sleeve folded the way it folded. The adjustment stylus. The three indexed cartridges. She touched each one in sequence, not because she doubted it was there — she'd checked the case in ninety seconds on a dark street four hours ago — but because the touching was how the tools came back to being tools instead of cargo. By the time her hand reached the last cartridge they were hers again, here, in this room, and not something she'd carried across a city in the dark.
+She had been in the city for three weeks and she did not yet have a direction.
 
-Then she moved the primary kit to the window ledge.
+The case was the proof of concept. The case was not the plan. She had come here with a specific technical problem — her mother's hands, the rejection cascade, the surgical window — and she had solved that problem by doing what she had always done, which was to identify the material constraints and work within them until the material constraints bent. But a technical problem with a known solution space was one kind of problem. What she had now was a different kind: she was in a city she did not yet know, with a secondary kit and three protein bars and a skill set she had not yet priced, and the city did not care about any of this and would not ask.
 
-The ledge was the right height to work at sitting cross-legged, and the light there would be good in the morning — it faced the gap between two towers where the sun would get through for about an hour before the angle closed it off, and an hour of real daylight was worth more than any lamp for reading a calibration trace. She set the kit down. She nudged it half an inch left until its edge ran parallel to the ledge. She left it there. The ledge was a workbench now. The room had a workbench.
+*She had come here because here was where the work was. She still believed that. She needed to find out if the city agreed.*
 
-She wired the secondary kit in next. It took forty minutes and two full runs of the calibration sequence before the handshake between primary and secondary resolved the way she wanted it — the first run hung on a timing fault she'd seen before, the kind that came from a cold start, and she didn't fight it, just power-cycled and ran it clean. When the two rigs finally locked she sat back on her heels and let them finish their startup cycle and listened to the small sounds of them coming up: the tick of a relay, the rising whine of a board finding its voltage, the soft settling noise hardware made when it decided it was on. She knew those sounds the way some people knew a kettle.
-
-Then she put on music.
-
-Real music this time. Not the one-ear habit she ran when she was working — that was a thin feed pushed into the back half of her attention so the front half could stay on the hardware. This came through the portable speaker she'd kept buried in the bottom of the bag the whole way from Cedar Rapids. The one piece of electronics she'd bought new, three months before she left, for no job and no purpose except this room she hadn't seen yet. It put sound into the air instead of into her skull. It was loud enough to feel in the floorboards and quiet enough that no one through the wall would care, and it filled the corners of the unit the way nothing else she owned could fill them. She didn't turn it down to think over it. She let it have the room. That was the difference. For the first time the music wasn't there to free up the working half of her brain. It was there because she wanted to hear it.
-
-The room began to be hers.
-
-Somewhere in the middle of it she heard the door across the hall — the press-and-push without the full mechanism, the worn latch she'd catalogued on day one. Someone coming in. She registered it and didn't move, listening past the music for a moment without deciding to listen: footsteps, quiet — a heavy first step, then the quieter second, a person who led with one side and let the other follow — the particular weight distribution of someone tired moving through a space they knew in the dark. A door closing. Then nothing — just the two of them on either side of a wall, each settling into their respective silence, each presumably aware that the other side of the wall was also settling. It was its own kind of proximity. She'd been in the building two days and she had no idea who lived in 2D beyond the shape of how they walked and the way they'd taught a lock to open. She kept that too. It didn't feel like urgency. It felt like time.
-
-She was sitting on the floor in her mother's boots when she noticed she hadn't re-padded the toes.
-
-It came to her sideways, the way the true things did. She'd unpacked the whole kit. She'd carried the case across the city and got it back and carried it home again. She'd spent an hour at a corner counter watching a street that didn't know she was watching it. And not once in any of it had she stopped to fold a fresh wad of paper into the toes of the boots so they'd sit right on her feet. She'd just walked. The boots had just been on her, doing what boots did, and she hadn't thought about them at all.
-
-She looked at the boots.
-
-The toe of the left one had a scuff she didn't remember getting. The laces were tied the way she tied them, double-knotted, the ends tucked. They were too big. They had always been too big. She sat with them in the music for a while and looked at them and the room kept being hers around them.
-
-She left them as they were.
+She went to the secondary kit and opened it flat on the floor and looked at what she had. The diagnostic tools were hers — the port in her left wrist was her own installation, the interface protocols her own design, and there was exactly one other person in GLMZ she knew by name who might understand what she was looking at if she showed them. She had the name because Vásquez had given it to her, briefly, in the context of a recommendation she had not yet acted on. Kyle Mercer, across the hall, Unit 2D. The Vásquez connection meant he was solvent. The fact that she had been his neighbor for three weeks without a single conversation meant either that he was careful or that she was, and she could not yet determine which.
 
 [Beat 26]
-She carried the boots to the door to leave them at the threshold the way she'd always left them at the threshold in Iowa — the boots stay at the door, you don't carry the outside in — and the man from 2D was in the hallway.
+She put the secondary kit away and put her boots on. She stood at the door for a moment with her hand on the lock.
 
-She'd seen him twice before. Once in the stairwell on her first day, passing in opposite directions, the kind of mutual assessment that took about a second and settled nothing. Once from the far end of the hall when he was coming in from outside, still in his coat. It was a good coat — the cut of it, the way it held its line when he moved, a thing that had cost real money some years ago and had been kept since. People didn't keep coats like that in this building. She'd noticed and kept it and not known what to do with it.
+*Either he was careful or she was. She had been careful for three weeks and she was out of protein bars in the wrong direction.*
 
-This time he was carrying something long, wrapped in cloth, held under his arm. She read it the way she read everything, hardware first — not the shape but the carry. He had it tucked against his body with the load distributed in a way that wasn't awkward and wasn't careful, just exact, the way you held an object when you knew precisely where its weight lived and you had held it enough times that your arm knew without being told. A tool gets carried like that. Something that has to be ready gets carried like that. The city kept handing her categories she didn't have words for.
+She opened the door. The hallway was narrow and smelled of the building's particular combination of old ferrocement and someone else's cooking — something with ginger, she thought, or something adjacent to ginger, the smell arriving from the direction of the stairwell and not from the door across the hall, which was closed. She stood in her own doorway and looked at 2D. The door was plain. No marks on the frame. No sounds from inside. The kind of quiet that was either absence or discipline, and she had been in enough places to know the difference was not always detectable from the outside.
 
-She looked at the shape of it. About a meter. Slight taper. A line down the wrapped length where the cloth dipped against something with an edge.
+She crossed the hall and knocked twice. Not tentative, not loud — the knock of someone who had made a decision and was executing it.
 
-She said: "Is that a sword?"
+Nothing.
 
-Something changed in his grip on the wrapped object. Not much — a fractional shift in the fingers, the kind of micro-correction that happened in the half-second before a decision. Then he looked at her. Actually looked, the way the first stairwell pass hadn't — a full read, taking her in from the boots in her hands to the open door behind her to whatever was on her face. The look lasted long enough that she felt it land, felt herself being measured not as a threat or a mark but as a fact to be weighed, someone he was deciding what to make of. She held still and let him make it. She had done the same thing through a coffee-counter window last night, two buildings away — watched people and decided what they were — and she had no objection to being on the other side of it.
+*The Vásquez connection meant he was solvent. Solvent people had somewhere to be at half past ten.*
 
-He went to his door and inside. The latch closed with the particular sound she'd catalogued on day one, the worn press-and-push without the full mechanism, the same failing seat she'd noticed before she knew anyone lived behind it.
-
-She waited. She wasn't sure why she waited. The hallway was empty and there was nothing to wait for.
-
-Then, from behind the closed door: "Lock yours."
-
-Two words. No explanation. Delivered not as a warning exactly but as a fact — the same tone you used when you told someone the stove was hot or the coupling ran warm in the third hour, a fact the other person didn't have yet and that you were handing across because it was accurate and they'd be better off with it.
-
-She set the boots down at her threshold, toes still unpadded, side by side the way her mother had set them down for twenty years on a porch a thousand miles and one dead industry away. She put her hand on the latch.
-
-She held it there.
-
-Two weeks ago she would have turned it. Two weeks ago she had walked into a clean office and watched a pleasant man build a file instead of help her, and she had stood in a stairwell breathing manufactured air with her whole understanding of cities coming apart in her chest, and somewhere in the days after that she had walked one and a half miles into a gray zone and stood across the street from people who had taken what was hers and she had gotten it back herself, with a receiver she'd built in two hours and a frequency she'd modeled from the way the man at the desk had typed. She knew the city now. Not the theory of it — she'd had the theory for two years. The texture. The weight of the thing under her hand.
-
-And that was the whole of it, why her fingers stayed on the cold metal and didn't move: the man across the hall had told her in two words what the form in eleven business days never would have. She had counted it. She knew what that was worth.
-
-She let go.
-
-She went inside and left the door unlocked, because she had decided to, because she finally knew enough to be the one who decided.
+She was turning back toward her own door when she heard the elevator at the end of the hall engage — the cable tension changing, the mechanism cycling up through the floors — and she stayed where she was, because she was the kind of person who gathered data before she moved, and because whoever was coming up in that elevator was the next fact the morning was going to give her.
 

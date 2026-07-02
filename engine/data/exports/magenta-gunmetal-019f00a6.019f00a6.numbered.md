@@ -609,69 +609,15 @@ She did not say it. They needed to move. But she said one thing, because Vox's v
 "One contact means they're already reorganizing," Rook said. "We're not clear. We're ahead." She let them hear the distinction land. "There's a dead woman in the corridor behind us and a crew that walked out of it, and the size of that gap is the only thing keeping any of us breathing, and it will not stay the same size. Move."
 
 [Beat 7]
-The hauler moved through Z3 with its headlights cut, running on low-band infrared, which was Boiler's idea and probably also the reason Rook had a headache. The city came through the forward ports in smears — wet pavement, overhead rail-struts casting their regular grid of shadow, the Axiom BioNanics signage cycling through its midnight rotation on every corner building. The ads were twenty meters tall: a woman's forearm with the skin peeled back in clean longitudinal sections, nanofilament threaded through muscle tissue in magenta lines. REGENERATE FORWARD. A child's hand reaching up into a field of the same color. THE FUTURE GROWS INSIDE YOU. The hauler passed them without comment and the crew let them go by.
+The junction split three ways and Rook took the middle without slowing, because the middle was the choice that committed to nothing and the Axiom ad at the far bend gave her a half-second of reflective chrome to read the space behind them — four people, separated by eight meters, moving in the specific way that people moved when they were not shopping. Not running. Pacing. The discipline again, the same hand that had spent exactly what it needed to and nothing more, and now it was spending patience.
 
-Vox sat in the jump seat with her eyes half-closed, her hands loose in her lap. She had been running three channels since the bridge and she was somewhere between a productive trance and a headache of her own. Occasionally her lips moved. She wasn't talking to the crew.
+*Forty thousand, four ways. She'd known on day two and she'd needed the money and she'd taken it anyway.*
 
-Scout had ejected from her Husk. Her eyes had rolled white before the hauler cleared the bridge block, and she had been still since — eight breaths per minute, hands flat on her thighs, doing nothing that looked like anything. One of the crawlers was running a six-block radius forward scan on their approach route. Rook knew this the way she knew what was in her own pockets.
+"Junction," she said. The word was quiet and complete and Vox heard it and angled without being told — pressing Ohara left, into the vendor wall, away from the line of sight the middle passage would give anyone coming fast from behind. Boiler was already sideways, one shoulder to the crowd-flow, scanning back. The four pacers had not accelerated. That was the part that sat wrong in her chest before it sat anywhere else: they should have moved when she moved. They hadn't. They were not chasing. They were steering.
 
-Boiler had the rear-bench seat entirely to himself because no one could fit beside him and Ohara, and he was explaining the bridge to the space beside him since Scout had checked out.
+*Which means there's something in front.*
 
-"The rail deck was pre-stressed concrete," he said, at a volume calibrated for someone who was listening. "Pre-stressed means it's under constant compression before any load is applied. What that does is — it means when you apply force, the concrete is fighting the tension from two directions. It's a better use of the material." He paused. "The section I took out was the third span from the east abutment. That section was already showing microcrack propagation in the lower chord. You could see it from the street if you knew what you were looking for."
-
-Ohara, beside him, was looking out the side port. She said, "Will they be able to rebuild it."
-
-It wasn't directed at Boiler. It was directed at Rook, in the front passenger seat, and Ohara had said it at the same register someone uses for a question they have been holding.
-
-Rook turned her head. In the infrared bleed from the forward display, Ohara's face was flat and composed. She had been composed since the lobby of Compound 7 — that first moment, standing in the correct position at the correct time, bag already packed, not one unit of surprise when the crew came through the door. That composure had read as professionalism through the Bloom Quarter, through the pursuit, through the bridge. Sitting here now in the close dark of the hauler's rear cab, Rook clocked something underneath it. Not performance. Not management. The composure of someone who had already had the argument with herself six months ago and lost, and settled, and moved forward on the loss. She wasn't braving anything. She was past it. The hard part for Ohara had been deciding. Everything since was execution of a decision already made.
-
-"Yes," Rook said. "The rail district charter requires restoration within eighteen months. There are two freight lines that use that crossing."
-
-Ohara nodded once. "Thank you."
-
-She went back to looking out the port.
-
-Boiler, whose social calibration was better than it appeared, waited a precise beat before continuing his explanation to the empty space beside him. "The arch ribs on the main span are cast iron — not steel, cast iron, which is interesting because it's actually stronger in compression than —"
-
-"Pink wall went quiet twelve minutes after we crossed the bridge perimeter," Vox said, to no one visible. Then, without changing her register: "That's not good or bad. They know we're in Z3 or Z4. They don't have a signal position. They're recalculating."
-
-"How long before they have assets repositioned," Rook said.
-
-"Forty minutes if they're running smart." Vox's eyes stayed half-closed. "They're running smart."
-
-Thirty minutes to the safe house block. Rook worked out the map in her head — not payment or loss, just the routes. Three possible approach vectors, two of which put them under Axiom's signage at the Z3/Z4 boundary intersection. The third ran parallel to a Pulse maintenance access corridor — the shaft-cap covers were visible at street level every two blocks, heavy steel plates in gunmetal gray, the Meridian Transit Authority stencil worn down to ghost lettering. The tube itself ran six meters below, moving air at the sound of something that wasn't quite sound. The access corridor would run them slightly long but would keep the hauler out of the advertisement constellation where every surface was watching.
-
-"Boiler," she said. "Take the MT corridor route from Stave junction."
-
-"Already on it," Boiler said. He had not been explaining the bridge to the empty seat. He had been listening.
-
-Scout's eyes returned. The optic shift took less than a third of a second — one moment white, then the dark brown irises settling back into place with the particular quality of someone arriving from elsewhere. She pulled in a longer breath. Did not speak for another few seconds.
-
-"Forward's clear to six blocks," she said. "There's an ACS vehicle parked static at Corvin and Ninth but it hasn't moved in four hours and its transponder's in parking mode."
-
-"Not our problem," Rook said.
-
-"No."
-
-The hauler made the turn at Stave, and the Pulse corridor opened along their left side — the caps running their regular cadence, each one a dark circle in the pavement. The Axiom signage dropped away. What replaced it was the functional Z4 infrastructure, older struts, water-stained facades, the particular density of buildings that had been built in the first wave and never quite renovated, so that they wore their history in the caulk lines and the replaced windows. Gunmetal throughout. Gunmetal in the wet-black pavement and the hauler's chassis and the gear Rook was carrying and the tool case between Scout's feet.
-
-Ohara had turned from the port. She was watching the city now with both eyes, not checking anything — just looking at Z4 the way someone looks at a place they are seeing for the first time and know they will not see again. Her bag was between her feet. Her hands were folded in her lap. In the right hand, a slight tension in the tendons along the back of the wrist — the kind of tension that had been there for months, Rook estimated, the accumulated static of sustained intention. It wasn't fear. It was the body holding a long-form decision the way a structure holds load. She had been carrying this for a while. The extraction hadn't begun the moment the crew arrived at Compound 7. It had begun six months ago in a lab, with a decision made in private, and everything since was consequence.
-
-Rook looked away.
-
-"Two blocks," Boiler said.
-
-Rook was already pulling the door panel. "Stop here. I'll walk the perimeter."
-
-She was out of the hauler before it fully stopped — the Z4 pavement under her boots, rain just starting, fine and cold. The safe house block was a converted freight-staging facility, the kind of building that had stopped staging freight thirty years ago and had been many other things since. Three entry points she could see from the street: the main roll-door on the south face, a personnel door on the east, and a fire-access stair on the north that terminated at a second-floor window someone had never fully secured. She clocked all three in the time it took her to cross to the far curb and back. The east personnel door had a new lock housing but old mounting hardware — the housing was tight but the plate had play in it. She noted it and moved on.
-
-No static vehicle within a block. No elevated positions with line-of-sight to the main approach. The building's neighbor to the west was a grid-power substation with a three-meter security fence and no useful angles. The neighbor to the east was empty, permit-pending, dark.
-
-She came back to the hauler.
-
-"Clear," she said. "East door. Move quick — rain's going to get real in ten minutes."
-
-She counted the exits again as she followed them in: two she had seen from outside, one internal she would find in the first thirty seconds, and whatever the building had left over from when it was something else. There were always more exits than the obvious ones. That was the first thing she had learned that still held.
+The vendor density was wrong. The signage strobed in overlapping frequencies — magenta, white, the cold blue of a substrate tap running open — and underneath it, underneath the crowd noise and the tap-hiss and Vox's controlled breathing two meters to her left, there was a sound that had no source she could point to. Not loud. The frequency that lives in the back teeth. The hum that meant processing, monitoring, a system running at a load it hadn't been designed to hide.
 
 [Beat 8]
 The forward PEREGRINE vehicle turned north three blocks ahead of them. Rook caught it in the mirror array — an unmarked black hauler on Meridian plates, no commercial markings, moving at the deliberate pace of something that knew exactly where it was going and exactly what it was boxing.
@@ -854,101 +800,17 @@ Rook counted them the way she counted exits, because that was a real thing her h
 There was a warmth that wanted to come up at moments like this — the last quiet night before a thing some of them might not walk out of — and she had spent years keeping it sealed. She let a little of it out now, into the not-quite-dark, where it cost nobody anything: she was glad, simply, that these four were the ones in the room. She did not announce it. But she stopped putting it away, and sat with the four of them, and let it stay, because there'd be time enough to be a professional about it in the morning, and there was no one in this room tonight she needed to be one for.
 
 [Beat 10]
-The crew hit the fire stairs at the same moment the front door came in.
+The sound that woke Rook wasn't a sound — it was the absence of one. The water heater had stopped ticking.
 
-Rook heard it behind her — the pneumatic charge of a breach charge, the compressed crack of it going off, and then the flat percussion of entry fire against walls that were suddenly not in front of her anymore. She was already on the second landing, hand on the rail, two steps ahead of Boiler's bulk and three ahead of Ohara, who moved like she had been waiting for this and was not going to let it be the thing that stopped her.
+*Boiler never walks away from something mid-cycle.*
 
-"East exit," Scout said from somewhere behind everyone. No panic. A direction.
+She was already off the floor before the thought finished, hand finding Silence's grip in the dark by memory and nothing else. The scuff of her boot was the only noise she made, and she killed that too. Across the room, Lace had frozen in the chair — cloth stopped, hands flat on her thighs, head tilted at the particular angle that meant she'd already heard something Rook hadn't. Scout's eyes were open. The crawler on the sill — Gerald — was still, which meant Scout had pulled her attention back from the three-mile perimeter and into this room, into this sill, and that was not a good sign.
 
-They went east.
+Vox's eyes came all the way open. Her mouth shaped a number. Not four.
 
-The Z4 flat had been Vox's find — a sublet owned by a shell entity registered to a dead man in Z9, paid forward three months, untraceable through four layers. Four layers hadn't been enough. Rook took the east exit into the service alley at a run.
+*She's down to three. Already.*
 
-Behind her, she heard Boiler say, cheerfully, over the sound of someone opening up with a pulse carbine on the stairwell they had just vacated: "That's an interesting load-bearing wall to shoot through. They'll feel that in the morning."
-
-"Boiler," Rook said.
-
-"Still moving," Boiler said, still cheerful.
-
-Vox was talking to something that was not any of them. Her eyes were half-focused, the way they got when she was running channels in parallel, and she was narrating under her breath — corrections, vectors, adjustments, the traffic of unlicensed AI agents working a problem Rook hadn't yet given her. "The pink wall thinks we went down," Vox murmured, to the air. "Good. Let them."
-
-Rook counted exits. Three at ground level within two blocks, one Pulse access via maintenance shaft four hundred meters north, two freight loading docks along the service corridor that ran behind the Z4 commercial strip. She picked the second dock and did not explain why. The crew followed without asking.
-
-Scout went in through a window on the service corridor — a hop-and-roll that should have been awkward and was not — and Ohara went in behind her, smooth, unhesitating, low-center-of-gravity, and Rook clocked it without making anything of it. The doctor moved like someone who had been thinking about this for months. Maybe she had.
-
-Boiler went in last and caught the window frame wrong. He made a sound that wasn't a complaint — more like a physicist noting a variable — and landed on his left ankle at an angle that was not an angle ankles preferred.
-
-"That's unfortunate," Boiler said, from the floor of the loading dock.
-
-"How bad," Rook said.
-
-"Twisted. Not broken. I can confirm the difference because I've broken that ankle before and this is objectively a lesser experience." He was already up. "Lighter on the right, compensating. I'll let you know if that changes."
-
-Rook accepted this and moved.
-
-The freight dock was dark and smelled of machine oil and the brackish-sweet exhaust of a refrigeration unit cycling in the back. Metal shelving, empty pallets, a narrow path through to a floor office with its door hanging open. The crew assembled in the dark — Vox still murmuring to her channels, Scout already checking sightlines through the dock's high windows, Lace materializing from the corner she had found without being told to find it.
-
-Rook sat with the count.
-
-Who knew the flat. She had told four people. Two of them were in this room. One was Scout, who had run the relay through two cutouts and a dead-letter box in Z6, who had never once in two years of running together given her a reason to think about it twice. One was Lace, who had not actually been told the address — who had received a grid reference and a color code, nothing human-readable.
-
-That left the sourcing chain.
-
-The flat was listed under a shell. The shell had a registered fixer who had cleared the paperwork. The paperwork had gone through one point of contact on Rook's side, from the original engagement.
-
-Gault had set this job up. Gault had taken the contract, assembled the crew, handed over the initial brief, collected his percentage. Gault was a professional. Gault was also, now that she was sitting in a dark loading dock in Z4 counting the path backward through every hand the flat's location had touched, the only person outside this room who had touched it at all.
-
-PEREGRINE hadn't found them through surveillance. She had clocked Adalemo's unit in the Bloom Quarter, watched how they moved, and surveillance sweeps weren't how they operated. They were a hit team. They hit addresses. Someone had given them one.
-
-Vox surfaced. Her eyes re-focused, the thousand-meter stare collapsing back to the dock, and she said, "The pink wall's pulled back. They think we went north. Gave them something to follow." She paused. "Small gift. Buys us maybe twenty minutes."
-
-"Routing?" Rook said.
-
-"I'm building it. Give me two." Vox went back under.
-
-Scout had moved to the dock's interior wall and was doing something careful and quiet with her case. She set it on a pallet and opened it — Rook did not look. She never looked. Three of the seven crawlers were loose inside a minute; she could hear them, barely, a thirty-eight-decibel whisper going up the walls.
-
-Ohara had found a packing crate to sit on and was checking her own hands in the dark, the way a surgeon checked hands after a procedure. Not shaking. Not quite steady either. The in-between state. She noticed Rook watching and did not say anything, and Rook looked away first.
-
-"Boiler," Rook said. "Weight on it."
-
-Boiler took three experimental steps and reported: "Functional. Slower than standard by maybe eight percent. I wouldn't want to run a sprint but I could run a sprint."
-
-"Don't plan on it."
-
-"I never plan," Boiler said, "I outline and then I remain flexible." He was leaning against a shelving unit, and even injured and in the dark in a strange freight dock in Z4, he managed to sound like a man who had found himself in exactly the situation he was best suited for. "Also, that was a Pellucid-5 breach charge on the front door. Those are expensive. Axiom is not playing conservatively."
-
-"No," Rook agreed. "They're not."
-
-Outside, somewhere in the service lane, a VTOL sweep light crossed the high dock windows in a bar of magenta — Axiom's color, their frequency, their money looking for them in the dark. It passed and was gone.
-
-She thought about Gault. Φ 8,000 — she had already counted what a fixer would accept for a routine tip on a routine extraction. Not much. Not when the job was supposed to be simple, low-violence, nobody was supposed to get hurt, it was just a woman who wanted out of a contract walking through a side door. Gault would have called it low-stakes. He would have been right, if it had stayed what he thought it was.
-
-But Gault had made that call without knowing what was in Ohara's neuretics. Without knowing that PEREGRINE had corp-black authorization and a Pellucid-5 breach kit and the patience to sit on a Z4 address until the right moment.
-
-She turned it over. She had no proof. She had a path that went through exactly one person, and that person was the one she had trusted with the logistics, and the logistics had burned.
-
-Vox surfaced again. "I've got a Pulse maintenance access, twelve minutes walk north-northeast. Supervisor code — don't ask. Gets us into the maintenance bay. Overnight crew rotation is in four hours, nobody else in there until 0600. It's warm."
-
-"That works," Rook said.
-
-Scout's crawlers were already coming back. Three legs each, six each, rolling back into the case in sequence. Scout closed the lid and stood.
-
-Rook let the dock go quiet for exactly long enough.
-
-"It was Gault," she said.
-
-Nobody argued. Lace let out a breath, slow and controlled. Boiler tilted his head at a considering angle. Vox closed her eyes for a moment that had nothing to do with her channels. Scout looked at the floor.
-
-Ohara said nothing at all.
-
-The refrigeration unit cycled in the back, useless.
-
-"Okay," Boiler said, quietly. The enthusiasm hadn't left his voice; it had simply adjusted for the room. "So we go find Gault."
-
-"We find him," Rook said. "We go to him."
-
-Nobody asked what they would do when they got there. That was the question for the next twelve minutes.
+The front window ran a thin bar of amber from the street below — neon off the wet pavement, bent and wrong in the way of things that bent in water. A shadow crossed it. One. Two. The second one didn't move the same way as the first, and Rook's stomach dropped a clean half-second before her mind had the word for what the shape was carrying.
 
 [Beat 11]
 The bar carried a name in Transit-Mandarin that Rook didn't bother translating. The kind of Z3 station bar that stayed open because the people who needed it kept hours nobody else did. Corrugated ceiling. Booth light that had been amber once and gone the color of old teeth. The smell of recirculated air and something fried that hadn't been a recognizable protein in years.
@@ -1129,113 +991,17 @@ Three miles of black water. November doing what November did.
 The platform's lights held in the rain ahead — steady, unaware, waiting to be finished with.
 
 [Beat 13]
-The VTOL was a maintenance bird, gray-white, painted in GLMZ Science Cooperative colors — the kind of vehicle that existed because infrastructure needed it and because nobody ever thought about it until something needed fixing three miles out on a November lake. Fourteen meters nose to tail. No weapons hardpoints. A cargo bay that smelled like hydraulic fluid and diesel particulate and the specific cold that accumulates in unheated spaces near open water.
+The platform grew in the windscreen by degrees — not fast, the way threat usually arrived, but the way consequence did: steady, indifferent, already in motion long before you were looking at it. Rook counted the lights from the cargo hold doorway, braced against the frame with one hand. Twelve personnel. Four PEREGRINE. The crane arm operational. Scout's numbers ran through her in the order Scout had given them, and she found herself grateful for their precision the same way she was grateful for a floor that held weight — not warmly, but completely.
 
-Lace had walked into the bay like she owned it, which she did not, and presented credentials to the ground crew like she had personally trained them, which she had not. The supervisor on shift had started three sentences and not finished any of them. Lace's face did something at the edges — imperceptible, unless you knew to watch for the forty-three muscles and what it cost to control all of them simultaneously — and the supervisor's tone shifted from official to cooperative without him understanding why.
+*Wennick had trusted her numbers too.*
 
-What Boiler did to the pilot, Rook did not watch. She heard the sound of a specific kind of unconsciousness and then she heard Boiler settle into the cockpit with the relaxed authority of a man who had been asked to do something he was good at.
+She let that sit. Didn't push it away. Two years of pushing it away had gotten her to a Gray Zone bolthole and a crew she'd been treating like equipment, and she was done with the math of that. Ohara was behind her, seated, her case latched between her knees. Vox had her eyes closed, running through whatever pre-op ritual she ran through. Scout was somewhere in that middle distance that wasn't sleep and wasn't presence. Boiler was up front, both hands on the stick, correcting in the crosswind with the quiet competence of a man who had never once needed to announce himself.
 
-Six seats. Six bodies. The VTOL's rotors cycled up and the maintenance bay's weather doors opened onto Lake Michigan in November, which was not a view designed to inspire confidence.
+*She had told them the truth. All of it. And they were still here.*
 
-The crosswind hit them on ascent: forty-two kilometers per hour from the southwest, driving rain that had already been driving for six hours and intended to keep going. The VTOL was rated for this. Boiler was also rated for this, in the sense that he had flown worse, though he did not say that to be reassuring — he said it because he was explaining lift coefficient degradation in a crosswind to Vox, who hadn't asked.
+The platform's running lights separated from the general smear of rain and became specific — deck markers, crane housing, the helipad's approach strobes blinking orange in the dark. PEREGRINE's VTOL was visible from this angle, position-hold thrusters working hard against the northwest push, its pilot's full attention on instruments. Rook read the landing posture and felt the approach window open: thirty seconds where the PEREGRINE pilot's scan would be inward, not outward. She put her hand on the bulkhead and turned back into the hold.
 
-"The key is you don't fight it," Boiler said, over the rotor noise. "You anticipate. The aircraft wants to go where the wind wants. You just want to go slightly more where you want. It's a negotiation."
-
-"I'm working," Vox said.
-
-"The VTOL is also working. That's my point."
-
-Scout was already gone.
-
-She had ejected herself from her Husk and injected into the Shell somewhere over the bay, one smooth motion — the NSB rig taking the handshake in the fraction of a second before the optic signal cut — and then her eyes rolled back and her Husk was nobody in the jump seat, breathing at eight per minute, hands loose in her lap. She was on the ceiling of the platform. She was on the ceiling before they had left the bay. Rook had watched it happen and still felt the same pull of wrongness at the back of her skull, the animal recognition of a body that wasn't behaving like a body. Scout's chest rose. Fell. Rose.
-
-Vox was talking to someone who wasn't in the aircraft. Or several someones. She was nodding at intervals that corresponded to nothing Rook could hear.
-
-"Thin pink grid," Vox said, to the window, or to whichever channel had just reported. "Defensive posture. Perimeter-only." A pause. "PEREGRINE locked the broadcast node. They got the broadcast node." Another pause, shorter. "They didn't touch the maintenance subnet."
-
-"Why not?" Rook asked.
-
-Vox surfaced briefly. "They didn't know it was there. Separate infrastructure spec. It feeds the VTOL bay, the fuel monitoring, the waste processing — nobody tells corp-black about waste processing."
-
-Rook noted that. Not as a feeling. As an approach vector.
-
-The lake at two hundred meters visibility was black and white and nothing else: white foam on black water, white spray on the windscreen, white noise from the rotors and the wind and the rain hitting the hull with the persistence of something that had decided to be thorough. The VTOL pitched seven degrees and Boiler corrected before anyone registered the pitch, which was the alarming and competent thing about Boiler flying — he was always three seconds ahead of the aircraft's intentions, cheerful about it, as though the storm were a colleague with different ideas.
-
-Ohara had said nothing since ascent. She was watching out the port window, or she was watching the reflection in it — Rook couldn't tell, and didn't ask. When Rook glanced at her, Ohara reached into the inside pocket of her jacket and produced a folded card, the kind of physical object nobody carried anymore. She held it between two fingers but didn't hand it over.
-
-"My Axiom access code," she said. "It's still valid."
-
-Rook looked at the card. "They haven't deactivated it."
-
-"No."
-
-"Why not?"
-
-Ohara put the card away. "Because if they deactivated it, I would know they know I'm gone. Right now I don't know that they know. Which means I don't run when I don't need to, I don't contact anyone who might tip them, I don't change my behavior in ways they can read." She looked at the card for a moment before her pocket closed over it. "They left the code active to keep me calm. Which tells me they have a recovery plan that needs me not to panic."
-
-Rook let that sit for a second. "Does it still work on the platform's research terminals?"
-
-"The platform syncs credentials from Axiom's science subdomain. Yes."
-
-"Good."
-
-Ohara looked at her with the expression of someone who had prepared for this conversation and was finding it shorter than expected. "That's all you want to know?"
-
-"That's all I needed to know," Rook said. "The rest is your business."
-
-The platform resolved out of the rain.
-
-It happened the way landmarks always happened in poor visibility: not a sudden appearance but a gradual solidification, the smear of light becoming geometry, the geometry becoming structure. Deck 3's broadcast array first, which looked exactly like an HVAC unit, because it had been designed by engineers who were thinking about function and not about what it would look like coming toward you in a storm. Then the safety railing of Deck 2, each post a gray-white vertical against the black water. Then the shape of Deck 1, the maintenance bay doors sealed shut, the VTOL landing pad a lit square in the dark.
-
-And along the railing of every deck, at the intervals specified by Meridian Safety Code for weather events above Force 6, the civic emergency beacons.
-
-Magenta.
-
-The storm protocol had triggered them — automatic, civic override, the color coded into the hardware because someone in 2219 had decided that maritime emergencies needed a frequency of light that didn't exist anywhere natural on the lake. They pulsed in the driving rain, slower than a heartbeat, each one painting a brief wash of color across the gray-white hull of the platform, across the black water below, across the gunmetal of the VTOL's nose coming in at them.
-
-Rook had seen it everywhere on this job, the magenta. In Axiom's lobby, in Compound 7's bioluminescent panels, in the soft pulse of their brand worked into every surface they wanted you to look at. She had counted it as corpo theater, as a choice someone made in a marketing meeting to associate a medical company with warmth and reassurance.
-
-Here it was civic safety code. Here it was utility. It was the same color anyway.
-
-"Forty seconds," Boiler said, in the voice of a man who had just finished a very interesting conversation with the wind and arrived at a satisfying conclusion. He was lining up the approach, the VTOL's nose dropping slightly, the landing pad's lights coming up bright through the rain.
-
-Scout's chest rose. Fell. Rose.
-
-Vox said something in a frequency that wasn't quite English — one of her channels getting instructions before the window closed — and then her hands settled flat on her thighs and she was as close to present as she got.
-
-Rook counted the deck lights. Counted the seconds. Watched the platform come up at them through the storm with the inevitability of things that had already been decided, the magenta beacons pulsing against a gunmetal world, and said nothing.
-
----
-
-Boiler set them down between two instrument housings on deck 1 and kept the rotors at idle.
-
-Everyone went into the storm. He stayed.
-
-He sealed the cargo doors from inside, killed the running lights, and moved Diallo's Husk before anyone had fully cleared the pad — no announcement, just lifted her from the jump seat and settled her on the cargo floor, where the armor plating ran under the hull. Forty millimeters of ballistic lining. He rolled his kit bag under her head because it was the only thing the job offered that was close to a pillow.
-
-"Quiet work," he told the hull.
-
-He meant it as a complaint. It came out closer to the truth than that.
-
-He sat on the cargo floor with his back to the bulkhead and the utility knife from the tool kit open in his hand — not as a weapon, just something to do with his hands while he waited, because he didn't know how to wait without something under them. He'd run the door geometry before landing: emergency restraint strap, interior pull-handle, load rating stamped on the clasp. Fifty-one kilograms. The cargo door opened outward. The crosswind was running at forty-two.
-
-They came at eleven minutes. Two contractors, sweep pattern, an unauthorized bird on a PEREGRINE-controlled platform in a Force 6 storm — of course they came. He'd calculated eleven minutes. It had been eleven.
-
-The handle turned at minute thirteen. The strap took the load. The storm took the credit. Eight seconds, and the footsteps moved on.
-
-Boiler put the knife away.
-
-He kept his hand flat on the cargo floor beside the Husk and watched the door, because that was the trade: you found the thing under stress and stayed with it until the weight had passed.
-
-The crew came back. Lace first, then Rook and Ohara, then Vox.
-
-Diallo's Husk returned last — the optics clearing, the brief adjustment, and then the dark irises finding his face first among all the returned. She didn't ask. He said it anyway.
-
-"Doors stayed shut. You're fine."
-
-She nodded once. The small economy of a person handed back something they hadn't known they'd handed over.
-
-Boiler picked up his kit bag and went to help with the PEREGRINE VTOL.
+"Thirty seconds," she said. "When we touch down, we are already moving."
 
 [Beat 14]
 The maintenance VTOL came down wrong — Boiler feathered the throttle too late, caught a gust broadside, and the touchdown was a controlled stumble that left the left skid kissing the deck at thirty degrees before correcting. Not a crash. Adequate.

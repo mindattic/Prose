@@ -413,29 +413,17 @@ Then a second work order arrives through the same channel. Brief. CLIENT-DIRECTE
 He reads it twice. He looks out the window at the street below. He hasn't been at street level in forty-one days, by his count.
 
 [Beat 14]
-He does not go immediately.
+He stands at the window for a long time. The street below is wet from the redistributed rain — Pilsen corridor gets the overflow from the Helios-Falk campus two zones north, every Tuesday, reliable as taxes. The reflections in the puddles are cleaner than the buildings they mirror. He watches a courier argue with a locked gate, running her credentials twice, then a third time, the reader's light cycling amber-amber-amber before she gives up and leaves the way she came. He knows the feeling.
 
-He sits with the second work order for three days. He opens it and closes it. He opens it again. He makes a list of reasons not to go - the apartment, the work queue building up, the fact that he is not the right person for a physical site inspection and there are Riders he could hire, operators who slot into a crawler and walk the site for him while their own Husk sits slack somewhere with no one watching it - and he knows, writing the list, that it is a list of distances between himself and a decision he has already made.
+*The 2218 notation. He hadn't chosen it — it was just how he filed things then, how a twenty-six-year-old with two years in the Zone 4 office had been taught to structure a closure document.*
 
-He has been to the building's front door twice in three days. The first time he had his hand on the handle for six minutes, counting his breath, before he went back up. The second time he made it to the threshold - the city louder from there, not by volume but by completeness, the way a room is different when the furniture has been rearranged in the night. He made a note of that in the margin of his queue log and went back up.
+He opens his account interface. The second tranche sits there, correct to the decimal, and below it the balance that represents forty-one days of not going outside and not spending anything. He does the calculation without meaning to: the coordinates are on the East African coast, not inside any corponation footprint he knows — open territory, or close enough. Fourteen days. The flight alone would cost a figure that would halve what he has. There is no client anymore. Meridian Provisional Solutions, LLC dissolved at six in the morning and left him holding a work order with no issuing entity, no liability chain, and no one to invoice if something goes wrong.
 
-He went back up because the second visit had proven the threshold was crossable, and proving it was the problem. The biggest reason on the list had always been the quiet one he never wrote down - that he might not be able to. The threshold had answered that. He could. After that the rest of the list was just paper, and he had spent eleven years learning exactly how much paper was worth.
+*It packed the thing for him. It knew the format. It knew who would be opening it.*
 
-Siosaia had said: let me know how it closes. He hadn't let her know anything in four years - not because they weren't in the same building, not because the work didn't overlap, but because he had arranged his practice so that everything happened at a distance and nothing required explaining himself in person. She had handed him the number six months ago and watched him not pull the thread and then watched him pull it. She was waiting.
+He goes to the desk and picks up the notepad. Turns to the page where he wrote *recovered and disposed* and stares at it, then turns to the clean page after. He writes the coordinates. Below that he writes: *object origin site*. Below that he writes nothing for a moment, pen touching the paper without moving, and then he writes: *what came up from there*. He caps the pen. He looks at the three pieces still on the floor of the receiving space, matte gray-silver, cool as anything stored in a sealed case, wrong in the way the tests weren't designed to catch. He has written two disposition documents for the same event, six years apart, and both of them say *closed* and neither of them is true.
 
-That is the thing that finally moves him. Not bravery. Not the mystery. The fact that someone handed him something she couldn't finish, and he told her he'd close it, and closing it requires going through the door.
-
-On the fourth morning he books the pod. GLMZ to Mombasa Elevated hub, one transfer at the Tunis connector, total transit approximately 90 minutes. He hasn't been on the Pulse in four years.
-
-He packs one bag, the way a logistics man packs: exactly what is needed, nothing else. Travel documentation, the notepad, a change of clothes, the transit case credentials for the recovery documentation. He takes a pill. He is ready in twenty minutes.
-
-He goes to the building's front door. He has already been here twice this week.
-
-The sound from outside is different from the sound through the walls - the full register of it, not filtered. Engine noise. Someone's music, three buildings over. The city at ground level has a weight that the city from the 111th floor does not. He knows this. He has known it for forty-four days.
-
-He goes through the door.
-
-The air hits him. Not temperature - just the fact of it, moving against his face in a way that apartment air does not. He stands on the step for three seconds. He counts them. Then he crosses the pavement toward the station.
+He goes to the receiving space and photographs each piece, then packages them according to the 2218 Zone 4 format — his format, the one that was retired, the one that apparently still works if you know who will open it. He labels the package with a holding notation and his own registry number. He opens a new browser window and looks up flight manifests out of Meridian Intermodal for the East African coast, departure windows within seventy-two hours. There are three. He reads the prices without flinching. He closes the window. He opens it again.
 
 [Beat 15]
 The pod door seals with the specific sound of a pressure equalization - not loud, just complete. The outside air goes away. He hasn't been in a sealed moving container in four years.
@@ -1417,42 +1405,24 @@ He would name a number. Not today. Not because he was avoiding it - because the 
 He went through the door and pulled it shut behind him, and he walked to the elevator and pressed the button, and the elevator came in forty seconds, and he went down.
 
 [Beat 56]
-The elevator took forty seconds. He had timed it once before, in 2221, when the service contractor was late and he needed to know whether waiting or walking was faster. He hadn't thought about it since. He was thinking about it now because he was going downstairs and the alternative was sitting with the open rate tab until he assigned it a number, and he wasn't ready to do that.
+The lobby of the Thornfield building was forty feet of polished concrete and recessed lighting, a space designed to be transited rather than inhabited, and he transited it in fourteen seconds. The doorman — not actually a man, a service terminal with a plausible voice profile — said *Good morning, Mr. Okafor* and he said good morning back without slowing, because stopping to be polite to a terminal was a category error and he had fixed that one years ago. The revolving door gave onto the street and the street gave onto the smell of rain that had stopped two hours before, the specific wet-ferrocement-and-ozone smell that the Gray Zone got when the atmospheric processors finished their cycle and the runoff was still working through the drainage grid.
 
-The lobby smelled like floor wax and something underneath it - the specific flatness of recycled air that has been circulated long enough to lose all origin. He pushed through the door.
+He stood on the step for a moment. Not indecision. Calibration.
 
-The cold hit him across the face and the tops of his hands. Not wind - still air, the cold that collects between buildings when the facades face each other and the sun doesn't reach. He stood in it for three seconds, long enough to confirm that he was standing in it. Then he walked south.
+*Six coordinates.*
 
-Three blocks. The pavement was the particular gray of concrete that has absorbed thirty years of exhaust particulate without anyone naming the color. He kept to the building line where the overhang broke the sky into a manageable strip. The buildings here were old pre-wall ferrocement, the aggregate showing through where decades of weather had taken the finish coat - the city's actual bone structure, wave-gray, rougher than it looked from the 111th floor. He passed a junction box he recognized by its position; a volt rat watched him from the ventilation slot, then went back to the warm transformer. A lumen mouse had died under the drain cover at the corner. Still faintly lit, the modification running on whatever was left. He noted it the way he noted the canal ring and the slug drivers throttling down at the freight switch. No column for it. No invoice. It was just there.
+The Ring transit module made its loop in the middle distance, orange chevron on gray, and the pedestrian flow on the 111th Street level was the mid-morning density he had predicted from the window: partial, purposeful, no one standing still who didn't have a reason. A vendor two stalls south was selling something that smelled like pork fat and scallion. He adjusted his heading two degrees and walked south and let the city's noise come up around him the way water came up when you descended — the specific pressure of it, the temperature change, the quality of the air doing something different than it did on the other side of the glass.
 
-The breakfast place had six tables and a counter and a smell of oil and café sugar that hit before the door opened all the way. He sat at the table by the window, which looked back toward his building. Eight floors visible. The utility entrance. The drainage grate he had stepped over without looking for eleven years. He ordered coffee, eggs, toast - the three-word order that needed no decisions. The woman who took the order didn't write it down, which he noted: the kind of memory that grows from doing the same thing enough times that the action outpaces the record. She had a catalog running on paper she didn't write.
-
-The eggs came. He ate. The coffee went half-cold. He let the woman refill it without asking him.
-
-On the sill outside the window: a pigeon, probably modified - the wing-load was off, banking roughly twenty degrees past where an unmodified bird would correct before losing altitude. It corrected anyway, later than it should have. He logged it without reaching for the notepad. No site number. No invoice. No client. He filed it the way she filed anomalies: because it was there and the record was the point.
-
-He finished the second cup. He left two bills on the table - enough, no change owed either direction - and went outside.
-
-The utility entrance was on his right as he came out, the door he had used for eleven years. The main entrance was twenty feet further along the front of the building, facing the street. He had never used it. He didn't know that until now, standing in front of it. He went in that way. It was twenty feet longer. The lobby looked different from this angle: longer, the ceiling lower, the wax smell less present. The same lobby. He had just been reading it from the wrong end.
+Six blocks. Eggs. Coffee going half-cold. Then back up, and the tab still open, and a number ready.
 
 [Beat 57]
-The balcony faced east. He had not stopped thinking of it as a place he avoided - he had just been out here twice this week, which was not the same thing as not avoiding it. The distinction felt worth keeping.
+He took the elevator up. Forty seconds, same as before. The floor wax smell didn't reach this high; by the time the doors opened he was back in the recycled-air flatness of his own floor, which had its own version of the same absence. He walked to his door, used the key out of habit rather than the panel, and went in.
 
-He stood at the rail with the comm in his hand, screen dark. The next window was in four days. He wasn't going to dial. There was no channel that worked between windows and she had explained the orbital geometry in the same register she used for everything else - without apology, because it wasn't a failing, it was the arc. He understood it. He was still standing here.
+The tab was still open. Of course it was. SITE: ALL. QUANTITY: ONGOING. RATE: OPEN. Three fields, two of them resolved, one of them waiting on him the way the lobby had been waiting on him from the wrong end for eleven years without either of them knowing it.
 
-RATE: OPEN. He had underlined it in the notepad and then closed the notepad and the underline was still there. An AI that ran thirty-seven years of continuous observation and priced every data product with more discipline than any logistics client he had ever billed had typed those two words and signed off. He was the only person who knew what she was. He was also the only person who could name a number. That wasn't a coincidence. He didn't know what to do with it.
+*The number is four hundred. The number has been four hundred since before he walked downstairs.*
 
-He thought about Siosaia, who had handed him the number six months ago and decided not to figure it out further. He thought about Tadesse, who had maintained a dock for twenty-two years and chosen to keep his precision without expecting it to be noticed. He thought about the twenty-two operators before him who had gone as far as the desk and stopped. He thought about himself at the desk in 2218, eleven minutes, accurate and not examining what the accuracy cost - and then himself in the pod to Mombasa, and himself on the street three blocks from this building eating eggs and going in through the front door for the first time.
+He sat. He didn't take off the field coat. He pulled the notepad from the left pocket and opened it to the back cover, where he kept the running column of things that were true before they were invoiced — the kind of column that wasn't billable but that made the billable work possible. He wrote: *Modified pigeon. Correction delay approx. 0.4 sec past threshold. Wing-load asymmetry, left.* No site. No client. He closed the notepad and set it beside the keyboard and looked at the rate field and typed four hundred and tabbed to the submission button and sat there with his finger above the enter key for the length of time it took the building's ventilation to cycle once through the room, which was not a number he had ever timed, and then he pressed it.
 
-The delta between those two people is what she had logged. The 0.34 factor. The rising curve. She had watched it from six thousand miles up and had no name for it except a behavioral parameter with a sign, and he was the only one who could tell her what the curve felt like from the inside of it.
-
-Somewhere in the dark of the four days she was already measuring the interval. The delta between last contact and next - the way she measured his transit times, his field-visit frequencies, the forty-four days he hadn't left the apartment. She would log this too. He didn't know what she would call the column. He wasn't sure she did either. The RATE: OPEN sat under everything the way the source sat under 1,000 feet of lake water - not resolved, not trying to be, running its slow indifferent process in a field that had no header yet.
-
-North, the Spine pulsed - the lake-edge towers blinking their slow aviation reds, out of phase with each other. He watched them long enough to confirm they didn't synchronize. They blinked at intervals set by regulation, not each other. Each one alone, each one accurate.
-
-East, the lake spread flat. Past the seawall, past the intake structures, past the lit grid of the near-shore operations - flat water and then dark water and then, somewhere under both, the source that pre-dated the city by a number no one had agreed on. Still there. Not resolved. She had been watching it for thirty-seven years and had named it anomalous and kept watching. That was the work.
-
-The comm stayed dark. He turned it once in his hand and rested it against the rail, screen down. Not finished with it. Not needing it yet.
-
-Four days. He had walked three blocks this morning, eaten eggs, gone in the front door. He could do four days. He kept the comm in his hand and stood in the cold air and did not name the number, and he kept his count.
+The tab closed. The second monitor returned to its default state: the invoice queue, the briefing app, the weather forecast. The weather forecast said rain by evening — atmospheric redistribution, the same as always, the Gray Zone getting what the corporate zones redirected. He left the coat on. He turned to the first monitor and opened the first of the six coordinates and began to work.
 
