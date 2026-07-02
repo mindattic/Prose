@@ -119,6 +119,14 @@ window.meridianMap = {
     },
 
     overlayPolygons: [],
+    pulseRoutes: [],
+    aeroplexLayers: [],
+    uwtrMarkers: [],
+    waveLine: null,
+    pulseVisible: true,
+    aeroplexesVisible: true,
+    underwaterVisible: true,
+    waveVisible: true,
 
     loadOverlayPolygons: function (polygons) {
         var map = this.map;
@@ -228,8 +236,8 @@ window.meridianMap = {
         if (!el) return;
 
         this.map = new google.maps.Map(el, {
-            center: { lat: 43.1, lng: -87.90 },
-            zoom: 8,
+            center: { lat: 41.86, lng: -87.67 },
+            zoom: 11,
             disableDefaultUI: true,
             zoomControl: true,
             mapTypeControl: false,
@@ -255,6 +263,10 @@ window.meridianMap = {
         this._drawTerritories();
         this._drawLakeMichiganRegion();
         this._drawCityMarkers();
+        this._drawFerrocementWave();
+        this._drawPulseRoutes();
+        this._drawAeroplexes();
+        this._drawUnderwaterFeatures();
     },
 
     _drawCorridor: function () {
@@ -401,22 +413,37 @@ window.meridianMap = {
 
                     var infoWindow = new google.maps.InfoWindow();
                     polygon.addListener('click', function (e) {
-                        var content;
-                        if (isGray) {
-                            content =
-                                '<div style="color:#0d1117;font-family:Outfit,sans-serif;padding:4px;max-width:300px;">' +
-                                '<strong style="color:#8b949e;">' + d.name + '</strong>' +
-                                '<br><span style="font-size:10px;color:#8b949e;text-transform:uppercase;letter-spacing:0.5px;">Gray Zone — Ungoverned</span>' +
-                                (d.governance ? '<br><span style="font-size:11px;color:#555;display:block;margin-top:4px;">' + d.governance + '</span>' : '') +
-                                '</div>';
-                        } else {
-                            content =
-                                '<div style="color:#0d1117;font-family:Outfit,sans-serif;padding:4px;max-width:300px;">' +
-                                '<strong style="color:' + d.color + ';">' + d.name + '</strong>' +
-                                '<br><span style="font-size:10px;color:#8b949e;text-transform:uppercase;letter-spacing:0.5px;">Prestige ' + d.prestige + ' · ' + (d.loopProximity || '') + '</span>' +
-                                '<br><span style="font-size:11px;color:#555;display:block;margin-top:4px;">' + d.corponationName + '</span>' +
-                                '</div>';
-                        }
+                        var isNull = d.type === 'null';
+                        var nameColor = (isGray || isNull) ? '#8b949e' : d.color;
+                        var subtitle = isNull
+                            ? 'Z&#x221E; &mdash; Ungoverned'
+                            : isGray
+                                ? 'Gray Zone &mdash; Ungoverned'
+                                : 'Prestige ' + d.prestige + ' &middot; ' + (d.loopProximity || '');
+                        var govLine = (isGray || isNull) && d.governance
+                            ? '<div style="font-size:11px;color:#555;line-height:1.45;margin-bottom:6px;">' + d.governance + '</div>'
+                            : !isGray && !isNull && d.corponationName
+                                ? '<div style="font-size:11px;color:#666;line-height:1.45;margin-bottom:6px;">' + d.corponationName + '</div>'
+                                : '';
+                        var descLine = d.desc
+                            ? '<div style="font-size:11px;color:#444;line-height:1.5;margin-bottom:6px;">' + d.desc + '</div>'
+                            : '';
+                        var quoteLine = d.quote
+                            ? '<div style="font-size:11px;color:#666;font-style:italic;border-left:2px solid #ccc;padding-left:8px;margin-bottom:6px;">' + d.quote + '</div>'
+                            : '';
+                        var transitLine = d.transit
+                            ? '<div style="font-size:9px;color:#58a6ff;text-transform:uppercase;letter-spacing:0.5px;margin-bottom:2px;">Pulse / Transit</div>' +
+                              '<div style="font-size:11px;color:#444;line-height:1.5;margin-bottom:6px;white-space:pre-line;">' + d.transit + '</div>'
+                            : '';
+                        var warnLine = d.tierWarning
+                            ? '<div style="font-size:9px;color:#dc3545;text-transform:uppercase;letter-spacing:0.4px;">&#x26A0; ' + d.tierWarning + '</div>'
+                            : '';
+                        var content =
+                            '<div style="font-family:Outfit,sans-serif;max-width:360px;padding:4px 2px;">' +
+                            '<div style="font-weight:700;color:' + nameColor + ';font-size:13px;margin-bottom:2px;">' + d.name + '</div>' +
+                            '<div style="font-size:9px;color:#8b949e;text-transform:uppercase;letter-spacing:0.5px;margin-bottom:6px;">' + subtitle + '</div>' +
+                            govLine + descLine + quoteLine + transitLine + warnLine +
+                            '</div>';
                         infoWindow.setContent(content);
                         infoWindow.setPosition(e.latLng);
                         infoWindow.open(map);
@@ -447,6 +474,299 @@ window.meridianMap = {
                     }
                 });
             });
+    },
+
+    togglePulse: function () {
+        this.pulseVisible = !this.pulseVisible;
+        var m = this.pulseVisible ? this.map : null;
+        this.pulseRoutes.forEach(function (r) { r.setMap(m); });
+    },
+
+    toggleAeroplexes: function () {
+        this.aeroplexesVisible = !this.aeroplexesVisible;
+        var m = this.aeroplexesVisible ? this.map : null;
+        this.aeroplexLayers.forEach(function (c) { c.setMap(m); });
+    },
+
+    toggleUnderwaterFeatures: function () {
+        this.underwaterVisible = !this.underwaterVisible;
+        var m = this.underwaterVisible ? this.map : null;
+        this.uwtrMarkers.forEach(function (mk) { mk.setMap(m); });
+    },
+
+    toggleWave: function () {
+        this.waveVisible = !this.waveVisible;
+        if (this.waveLine) this.waveLine.setMap(this.waveVisible ? this.map : null);
+    },
+
+    zoomToChicago: function () {
+        if (!this.map) return;
+        this.map.setCenter({ lat: 41.86, lng: -87.67 });
+        this.map.setZoom(11);
+    },
+
+    _drawFerrocementWave: function () {
+        var map = this.map;
+        var wavePath = [
+            {lat:42.05,lng:-87.660},{lat:42.019,lng:-87.647},{lat:42.000,lng:-87.636},
+            {lat:41.984,lng:-87.627},{lat:41.968,lng:-87.614},{lat:41.956,lng:-87.607},
+            {lat:41.941,lng:-87.600},{lat:41.930,lng:-87.594},{lat:41.916,lng:-87.591},
+            {lat:41.906,lng:-87.587},{lat:41.896,lng:-87.582},{lat:41.886,lng:-87.578},
+            {lat:41.876,lng:-87.576},{lat:41.863,lng:-87.575},{lat:41.850,lng:-87.572},
+            {lat:41.838,lng:-87.570},{lat:41.821,lng:-87.566},{lat:41.802,lng:-87.558},
+            {lat:41.782,lng:-87.553},{lat:41.762,lng:-87.547},{lat:41.742,lng:-87.543},
+            {lat:41.722,lng:-87.538},{lat:41.702,lng:-87.534},{lat:41.665,lng:-87.527},
+            {lat:41.625,lng:-87.520}
+        ];
+        this.waveLine = new google.maps.Polyline({
+            path: wavePath,
+            geodesic: false,
+            strokeColor: '#8Ab8D0',
+            strokeOpacity: 0.7,
+            strokeWeight: 2.5,
+            map: map
+        });
+        var infoWindow = new google.maps.InfoWindow();
+        this.waveLine.addListener('click', function (e) {
+            infoWindow.setContent(
+                '<div style="font-family:Outfit,sans-serif;max-width:320px;padding:4px 2px;">' +
+                '<div style="font-weight:700;color:#8Ab8D0;font-size:13px;margin-bottom:2px;">FERROCEMENT WAVE</div>' +
+                '<div style="font-size:9px;color:#8b949e;text-transform:uppercase;letter-spacing:0.5px;margin-bottom:6px;">Flood Barrier &mdash; Z1 to Gary</div>' +
+                '<div style="font-size:11px;color:#444;line-height:1.5;margin-bottom:6px;">60 to 90 meter poured-ferrocement flood barrier running the full GLMZ lakefront. Built in phases 2148&ndash;2186 after the two major flood cycles. The structure doubles as a transit conduit, broadcast platform, and arcology anchor in several zones.</div>' +
+                '<div style="font-size:11px;color:#666;font-style:italic;border-left:2px solid #ccc;padding-left:8px;">You can walk the top of it in some places. ACS patrols are intermittent. The view is spectacular.</div>' +
+                '</div>'
+            );
+            infoWindow.setPosition(e.latLng);
+            infoWindow.open(map);
+        });
+    },
+
+    _drawPulseRoutes: function () {
+        var map = this.map;
+        var self = this;
+        var lineInfoWindow = new google.maps.InfoWindow();
+
+        var PULSE = [
+            {
+                id: 'L', label: 'LAKELINE', color: '#F0A830', glowColor: 'rgba(240,168,48,0.25)',
+                path: [
+                    {lat:42.025,lng:-87.618},{lat:42.010,lng:-87.616},{lat:41.995,lng:-87.613},
+                    {lat:41.978,lng:-87.610},{lat:41.965,lng:-87.607},{lat:41.951,lng:-87.604},
+                    {lat:41.935,lng:-87.601},{lat:41.921,lng:-87.598},{lat:41.907,lng:-87.596},
+                    {lat:41.886,lng:-87.621},{lat:41.874,lng:-87.619},{lat:41.862,lng:-87.618},
+                    {lat:41.840,lng:-87.615},{lat:41.812,lng:-87.612},{lat:41.783,lng:-87.607},
+                    {lat:41.760,lng:-87.604},{lat:41.737,lng:-87.598},{lat:41.700,lng:-87.575}
+                ]
+            },
+            {
+                id: 'X', label: 'CROSSTOWN', color: '#C040E0', glowColor: 'rgba(192,64,224,0.25)',
+                path: [
+                    {lat:41.882,lng:-87.840},{lat:41.882,lng:-87.800},{lat:41.882,lng:-87.766},
+                    {lat:41.884,lng:-87.740},{lat:41.886,lng:-87.706},{lat:41.887,lng:-87.683},
+                    {lat:41.888,lng:-87.666},{lat:41.888,lng:-87.648},{lat:41.888,lng:-87.635},
+                    {lat:41.888,lng:-87.622},{lat:41.888,lng:-87.606}
+                ]
+            },
+            {
+                id: 'I', label: 'INDUSTRIAL', color: '#30B0E0', glowColor: 'rgba(48,176,224,0.25)',
+                path: [
+                    {lat:41.889,lng:-87.630},{lat:41.878,lng:-87.640},{lat:41.868,lng:-87.648},
+                    {lat:41.858,lng:-87.655},{lat:41.843,lng:-87.648},{lat:41.830,lng:-87.638},
+                    {lat:41.815,lng:-87.628},{lat:41.800,lng:-87.617},{lat:41.783,lng:-87.606},
+                    {lat:41.762,lng:-87.594},{lat:41.738,lng:-87.581},{lat:41.715,lng:-87.568},
+                    {lat:41.690,lng:-87.554},{lat:41.660,lng:-87.540}
+                ]
+            }
+        ];
+
+        var PULSE_DESC = {
+            'L': 'Mach 6 vacuum tube running the lakeshore corridor from Lacuna Genomics (N) to South Chicago Hub (S). Berth class (Tier 3+) runs express; Bench class (open) stops at every platform. The 19Hz sub-audible hum is felt before the slug arrives.',
+            'X': 'East-west line from Austin Terminal to Waxwing Spur. Carries the highest civilian daily volume in the GLMZ. The Humboldt Park platform is sealed since the 2221 incident.',
+            'I': 'Industrial freight line from Bloom Quarter spur south to Gary Freight Hub. Officially freight-only south of Pullman. Passengers board at Bloom Quarter and Hyde Park only.'
+        };
+
+        var STAS = [
+            {lat:41.886,lng:-87.621,name:'Loop Central',lines:['L','X','I']},
+            {lat:41.888,lng:-87.606,name:'Waxwing Spur',lines:['X']},
+            {lat:41.862,lng:-87.618,name:'Narrows',lines:['L']},
+            {lat:41.783,lng:-87.607,name:'Hyde Park',lines:['L']},
+            {lat:41.965,lng:-87.607,name:'Uptown',lines:['L']},
+            {lat:41.995,lng:-87.613,name:'Rogers Park',lines:['L']},
+            {lat:41.700,lng:-87.575,name:'South Chicago Hub',lines:['L']},
+            {lat:41.882,lng:-87.800,name:'Austin Terminal',lines:['X']},
+            {lat:41.886,lng:-87.706,name:'Kedzie Node',lines:['X']},
+            {lat:41.878,lng:-87.640,name:'Bloom Quarter',lines:['I']},
+            {lat:41.660,lng:-87.540,name:'Gary Freight',lines:['I']}
+        ];
+
+        var stationInfoWindow = new google.maps.InfoWindow();
+
+        PULSE.forEach(function (route) {
+            // glow pass
+            var glow = new google.maps.Polyline({
+                path: route.path, geodesic: false,
+                strokeColor: route.color, strokeOpacity: 0.18, strokeWeight: 8, map: map
+            });
+            // core line
+            var line = new google.maps.Polyline({
+                path: route.path, geodesic: false,
+                strokeColor: route.color, strokeOpacity: 0.85, strokeWeight: 2, map: map
+            });
+            [glow, line].forEach(function (pl) {
+                pl.addListener('click', function (e) {
+                    lineInfoWindow.setContent(
+                        '<div style="font-family:Outfit,sans-serif;max-width:320px;padding:4px 2px;">' +
+                        '<div style="font-weight:700;color:' + route.color + ';font-size:13px;margin-bottom:2px;">PULSE — ' + route.label + '</div>' +
+                        '<div style="font-size:9px;color:#8b949e;text-transform:uppercase;letter-spacing:0.5px;margin-bottom:6px;">Mach 6 Vacuum Tube Transit</div>' +
+                        '<div style="font-size:11px;color:#444;line-height:1.5;">' + (PULSE_DESC[route.id] || '') + '</div>' +
+                        '</div>'
+                    );
+                    lineInfoWindow.setPosition(e.latLng);
+                    lineInfoWindow.open(map);
+                });
+                self.pulseRoutes.push(pl);
+            });
+        });
+
+        var LINE_COLORS = { 'L': '#F0A830', 'X': '#C040E0', 'I': '#30B0E0' };
+
+        STAS.forEach(function (sta) {
+            var lineColors = sta.lines.map(function (l) { return LINE_COLORS[l]; });
+            var primaryColor = lineColors[0];
+            var marker = new google.maps.Marker({
+                position: { lat: sta.lat, lng: sta.lng },
+                map: map,
+                title: '',
+                label: {
+                    text: sta.name,
+                    color: '#b0b8c4',
+                    fontSize: '9px',
+                    fontFamily: 'Outfit, sans-serif'
+                },
+                icon: {
+                    path: google.maps.SymbolPath.CIRCLE,
+                    scale: 5,
+                    fillColor: '#0d1117',
+                    fillOpacity: 1,
+                    strokeColor: primaryColor,
+                    strokeWeight: 2,
+                    labelOrigin: new google.maps.Point(0, 11)
+                }
+            });
+            marker.addListener('click', function () {
+                var linesHtml = sta.lines.map(function (l) {
+                    return '<span style="display:inline-block;background:' + LINE_COLORS[l] + ';color:#000;font-size:9px;font-weight:700;padding:1px 5px;border-radius:3px;margin-right:3px;">' + l + '</span>';
+                }).join('');
+                stationInfoWindow.setContent(
+                    '<div style="font-family:Outfit,sans-serif;max-width:280px;padding:4px 2px;">' +
+                    '<div style="font-weight:700;color:' + primaryColor + ';font-size:13px;margin-bottom:4px;">' + sta.name + '</div>' +
+                    '<div style="margin-bottom:4px;">' + linesHtml + '</div>' +
+                    '<div style="font-size:9px;color:#8b949e;text-transform:uppercase;letter-spacing:0.5px;">Pulse Station &mdash; GLMZ 2226</div>' +
+                    '</div>'
+                );
+                stationInfoWindow.open(map, marker);
+            });
+            self.pulseRoutes.push(marker);
+        });
+    },
+
+    _drawAeroplexes: function () {
+        var map = this.map;
+        var self = this;
+        var infoWindow = new google.maps.InfoWindow();
+
+        var AERO = [
+            {lng:-87.631,lat:41.882,rad:1443,name:'Axiom Tower Complex',note:'Largest arcology footprint in the Loop. 94-story primary spire + 3 secondary towers. Axiom BioNanics sovereign air rights from 12m up.'},
+            {lng:-87.610,lat:41.888,rad:888, name:'Waxwing Spire',note:'94-story neural broadcast facility. The Hive extends 11 stories below water table into the lakebed.'},
+            {lng:-87.619,lat:41.876,rad:777, name:'Mirrorwell Arcology',note:'Mirrorwell Media sovereign from 4th floor up by treaty. Floors below leased to mixed tenants.'},
+            {lng:-87.626,lat:41.883,rad:666, name:'Halcyon Combine Spire',note:'Financial clearinghouse and data vault. Air tax applies at street level beneath the shadow.'},
+            {lng:-87.637,lat:41.975,rad:555, name:'Emberlace North Tower',note:'Sensor mesh relay hub for the northern GLMZ. Antenna array visible from the lake.'},
+            {lng:-87.636,lat:41.858,rad:666, name:'Bloom Sciences Tower',note:'Bloom Quarter flagship research spire. Class III nanotech clean-room in the upper 20 floors.'},
+            {lng:-87.567,lat:41.714,rad:1110,name:'Crucible Genomics Spire',note:'Sealed compound arcology. Greenhouse biome levels visible from Lake Michigan on clear days.'},
+            {lng:-87.608,lat:41.635,rad:1998,name:'Ashgrave Slagworks Cluster',note:'Largest industrial arcology cluster in GLMZ. Continuous thermal output, visible at night as an orange glow from 40km.'}
+        ];
+
+        AERO.forEach(function (a) {
+            var circle = new google.maps.Circle({
+                center: { lat: a.lat, lng: a.lng },
+                radius: a.rad,
+                strokeColor: '#8CA0FF',
+                strokeOpacity: 0.35,
+                strokeWeight: 1,
+                fillColor: '#8CA0FF',
+                fillOpacity: 0.08,
+                map: map
+            });
+            circle.addListener('click', function (e) {
+                infoWindow.setContent(
+                    '<div style="font-family:Outfit,sans-serif;max-width:300px;padding:4px 2px;">' +
+                    '<div style="font-weight:700;color:#8CA0FF;font-size:13px;margin-bottom:2px;">' + a.name + '</div>' +
+                    '<div style="font-size:9px;color:#8b949e;text-transform:uppercase;letter-spacing:0.5px;margin-bottom:6px;">Aeroplex Shadow &mdash; ' + Math.round(a.rad) + 'm radius</div>' +
+                    '<div style="font-size:11px;color:#444;line-height:1.5;">' + a.note + '</div>' +
+                    '</div>'
+                );
+                infoWindow.setPosition(e.latLng);
+                infoWindow.open(map);
+            });
+            self.aeroplexLayers.push(circle);
+        });
+    },
+
+    _drawUnderwaterFeatures: function () {
+        var map = this.map;
+        var self = this;
+        var infoWindow = new google.maps.InfoWindow();
+
+        var TYPE_COLORS = {
+            node: '#1888D8', tunnel: '#106898', colony: '#3fb950',
+            thermal: '#E06020', cryogenic: '#20C0E0', platform: '#8870D0'
+        };
+
+        var UWTR = [
+            {lat:41.883,lng:-87.553,name:'Bathysphere Hub — 40m depth',type:'node',note:'Primary lakebed transit interchange. Bathysphere Network junction for the north lake routes. Depth: 40m. Six docking arms. Civilian access Tier 2+.'},
+            {lat:41.823,lng:-87.520,name:'Kelpline Freight Node 7',type:'tunnel',note:'Kelpline Logistics sub-lake freight tunnel junction. Freight transit only. No passenger access.'},
+            {lat:41.754,lng:-87.533,name:'Fishmen Settlement — Old South Beach',type:'colony',note:'Permanent underwater community on the former South Beach shelf. ~400 residents. ACS contract does not extend to lakebed.'},
+            {lat:41.912,lng:-87.512,name:'Bathysphere Station North',type:'node',note:'Northern approach station. Connects to Vellichor Institute shore access. Tier 3+ required.'},
+            {lat:41.703,lng:-87.543,name:'Cinderfall Thermal Drill 3',type:'thermal',note:'Active geothermal extraction shaft, Cinderfall Energy. 2.1km depth. Produces the warm upwelling current at the Calumet shelf.'},
+            {lat:41.655,lng:-87.554,name:'Marrowvault Entry Shaft',type:'cryogenic',note:'Marrowvault cryogenic storage access. Depth: 180m. 12,000 cryo-berths in the lakebed strata. Access by invitation only.'},
+            {lat:41.785,lng:-87.522,name:'Fishmen Settlement — Hyde Shelf',type:'colony',note:'Secondary lakebed community below Hyde Park. ~200 residents. Informal Kelpline freight connection.'},
+            {lat:41.852,lng:-87.503,name:'Pelican Drift Platform 7',type:'platform',note:'Offshore autonomous processing platform, Pelican Drift Yards. Managed remotely. No permanent crew. Occasional Scav boarding attempts.'}
+        ];
+
+        UWTR.forEach(function (u) {
+            var color = TYPE_COLORS[u.type] || '#58a6ff';
+            var marker = new google.maps.Marker({
+                position: { lat: u.lat, lng: u.lng },
+                map: map,
+                title: '',
+                label: {
+                    text: u.name.split(' — ')[0],
+                    color: color,
+                    fontSize: '9px',
+                    fontFamily: 'Outfit, sans-serif'
+                },
+                icon: {
+                    path: google.maps.SymbolPath.CIRCLE,
+                    scale: 4,
+                    fillColor: color,
+                    fillOpacity: 0.7,
+                    strokeColor: color,
+                    strokeWeight: 1,
+                    labelOrigin: new google.maps.Point(0, 10)
+                }
+            });
+            marker.addListener('click', function () {
+                infoWindow.setContent(
+                    '<div style="font-family:Outfit,sans-serif;max-width:300px;padding:4px 2px;">' +
+                    '<div style="font-weight:700;color:' + color + ';font-size:13px;margin-bottom:2px;">' + u.name + '</div>' +
+                    '<div style="font-size:9px;color:#8b949e;text-transform:uppercase;letter-spacing:0.5px;margin-bottom:6px;">' + u.type + ' &mdash; Lake Michigan Lakebed</div>' +
+                    '<div style="font-size:11px;color:#444;line-height:1.5;">' + u.note + '</div>' +
+                    '</div>'
+                );
+                infoWindow.open(map, marker);
+            });
+            self.uwtrMarkers.push(marker);
+        });
     },
 
     _drawZones_UNUSED: function () {

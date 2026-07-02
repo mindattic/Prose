@@ -10,6 +10,29 @@
         <button class="btn btn-sm @(layerStates["districts"] ? "btn-secondary" : "btn-outline-secondary")" @onclick="@(() => ToggleLayer("districts"))">
             <i class="bi bi-layers"></i><div class="btn-lbl"> Districts</div>
         </button>
+        <button class="btn btn-sm @(layerStates["pulse"] ? "btn-secondary" : "btn-outline-secondary")"
+                style="@(layerStates["pulse"] ? "border-color:#F0A830;color:#F0A830" : "")"
+                @onclick="@(() => ToggleLayer("pulse"))">
+            <div class="btn-lbl">Pulse</div>
+        </button>
+        <button class="btn btn-sm @(layerStates["aeroplexes"] ? "btn-secondary" : "btn-outline-secondary")"
+                style="@(layerStates["aeroplexes"] ? "border-color:#8CA0FF;color:#8CA0FF" : "")"
+                @onclick="@(() => ToggleLayer("aeroplexes"))">
+            <div class="btn-lbl">Aeroplexes</div>
+        </button>
+        <button class="btn btn-sm @(layerStates["underwater"] ? "btn-secondary" : "btn-outline-secondary")"
+                style="@(layerStates["underwater"] ? "border-color:#1888D8;color:#1888D8" : "")"
+                @onclick="@(() => ToggleLayer("underwater"))">
+            <div class="btn-lbl">Underwater</div>
+        </button>
+        <button class="btn btn-sm @(layerStates["wave"] ? "btn-secondary" : "btn-outline-secondary")"
+                style="@(layerStates["wave"] ? "border-color:#8Ab8D0;color:#8Ab8D0" : "")"
+                @onclick="@(() => ToggleLayer("wave"))">
+            <div class="btn-lbl">Wave</div>
+        </button>
+        <button class="btn btn-sm btn-outline-secondary" @onclick="ZoomToChicago" title="Zoom to Chicago">
+            <i class="bi bi-geo-alt"></i>
+        </button>
         @foreach (var cat in categories)
         {
             var key = cat.key;
@@ -45,6 +68,10 @@ else
     private Dictionary<string, bool> layerStates = new()
     {
         ["districts"] = true,
+        ["pulse"] = true,
+        ["aeroplexes"] = true,
+        ["underwater"] = true,
+        ["wave"] = true,
         ["colony"] = true,
         ["corporate"] = true,
         ["medical"] = true,
@@ -126,10 +153,20 @@ else
     private async Task ToggleLayer(string layer)
     {
         layerStates[layer] = !layerStates.GetValueOrDefault(layer, true);
-        if (layer == "districts")
-            await JS.InvokeVoidAsync("meridianMap.toggleDistricts");
-        else
-            await JS.InvokeVoidAsync("meridianMap.toggleCategory", layer);
+        switch (layer)
+        {
+            case "districts":   await JS.InvokeVoidAsync("meridianMap.toggleDistricts"); break;
+            case "pulse":       await JS.InvokeVoidAsync("meridianMap.togglePulse"); break;
+            case "aeroplexes":  await JS.InvokeVoidAsync("meridianMap.toggleAeroplexes"); break;
+            case "underwater":  await JS.InvokeVoidAsync("meridianMap.toggleUnderwaterFeatures"); break;
+            case "wave":        await JS.InvokeVoidAsync("meridianMap.toggleWave"); break;
+            default:            await JS.InvokeVoidAsync("meridianMap.toggleCategory", layer); break;
+        }
+    }
+
+    private async Task ZoomToChicago()
+    {
+        await JS.InvokeVoidAsync("meridianMap.zoomToChicago");
     }
 
     private async Task ToggleTheme()
