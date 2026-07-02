@@ -5,7 +5,7 @@ Mrs. Chen put the bowl down in front of Soraya before Soraya had ordered. That w
 
 "Don't tell me the number yet," Rook said. "Tell me the shape."
 
-*She'll tell me the number anyway. She always leads with the number when it's bad.*
+She didn't pick the chopsticks back up. Her right hand stayed flat on the table edge, just past the bowl.
 
 "Twenty-one," Soraya said, and set her chopsticks down with a care that had nothing to do with the chopsticks. "The Axiom job. The ones they wrote off as burned in the vault fire. They're alive, Rook. Scattered, hunted, and somebody on a registry desk finally put the count together and started selling it."
 
@@ -44,13 +44,13 @@ Rook counted the circles. Fifteen confirmed or near-confirmed, six unknown. That
 
 "The registry desk that compiled the list ran the data in parallel. The primary buyer got it eighteen hours ago." Soraya's mouth went flat in the way it went flat when a number was worse than she'd modeled. "The secondary window opens in five days. Same desk, second track. Whoever the primary team doesn't close in the first forty hours, the secondary picks up."
 
-Forty hours wasn't the live window. Forty hours was the edge at which the secondary problem started and the primary problem ended, and the problem with the secondary was that it would have the primary's leftovers — the ones who had run, who had found a wall, who were harder to find and therefore needed the more careful approach. Rook held the math still until she could feel the shape of it, then let it become work.
+Forty hours wasn't the live window. Forty hours was the edge at which the secondary problem started and the primary problem ended, and the problem with the secondary was that it would have the primary's leftovers — the ones who had run, who had found a wall, who were harder to find and therefore needed the more careful approach. Rook held the count still until she could feel the shape of it, then let it become work.
 
 "Wet-squad?"
 
 "Operations. Registry enforcement model — flyers, two-person contact teams, low visibility." Soraya set her cup down and held it with both hands, the warmth almost gone. "They're not collecting them violently. They're offering transport. Registered Reads in processing condition." The last phrase came out in the data register — precise, flat, held at arm's length. "The Marrow doesn't break what it uses."
 
-Rook felt the register land. Not the words; the register. Soraya had learned that voice in four years of sitting with a fact she couldn't act on, and it had become the voice she put on when the fact got too close — a glass wall between her and the thing she was saying, so she could say it without the saying catching. Rook had heard it in her own voice once, a long time ago, when she was still counting at Axiom and telling herself that the math was someone else's problem.
+Rook felt the register land. Not the words; the register. Soraya had learned that voice in four years of sitting with a fact she couldn't act on, and it had become the voice she put on when the fact got too close — a glass wall between her and the thing she was saying, so she could say it without the saying catching. Rook had heard it in her own voice once, a long time ago, when she was still counting at Axiom and telling herself that the count was someone else's problem.
 
 She committed that and kept running the intake.
 
@@ -58,7 +58,7 @@ She committed that and kept running the intake.
 
 "Tier-eighteen block in the Loop." Soraya traced a line on the map without pressing — just the movement of a finger indicating a direction. "Helix subsidiary. Covered as cold-storage and specialized transport. The operations team runs out of a separate address, but the pickup routing terminates there." She lifted her finger. "The building would look clean to anyone who wasn't reading the routing."
 
-Chrome on the outside, all the way through. A corp that priced people as substrate had built the whole apparatus to look like logistics. Rook locked the location the way she locked every place she'd walked into uninvited — as geometry, nothing more, until she was inside it and could take its measure from the inside.
+Chrome on the outside, all the way through. A corp that priced people as substrate had built the whole apparatus to look like logistics. Rook locked the location the way she locked every place she'd walked into uninvited — as a shape, nothing more, until she was inside it and could take its measure from the inside.
 
 "Tell me about one of the twenty-one," Rook said.
 
@@ -77,7 +77,7 @@ She put her chopsticks down and left the broth unfinished, which was the first t
 [Beat 3]
 Soraya named them the way she always did, in the order they'd say yes — Boiler first, because Boiler always answered a wall before he answered a person.
 
-"He'll want the building before the job," she said, and Rook nodded, because that was Boiler exactly. Four years ago that read had put her on the right side of a collapsing floor — a half-second, his hand flat on a pillar, his chin tipping toward the east stair, no words, just the tip of the chin — while two men she'd never gotten the names of went down into the dust with the rest of the slab. She could still feel the floor go in her knees if she let it: the lurch, then the absence, the particular silence a building makes in the quarter-second before it admits it's done. Boiler had felt it coming through his palm a breath sooner than the floor knew. That breath was everything.
+"He'll want the building before the job," she said, and Rook nodded, because that was Boiler exactly. Four years ago that read had put her on the right side of a collapsing floor — a half-second, his hand flat on a pillar, his chin tipping toward the east stair, no words, just the tip of the chin — while two men she'd never gotten the names of went down into the dust with the rest of the slab. She could still feel the floor go in her knees if she let it: the lurch, then the absence, the silence a building makes in the quarter-second before it admits it's done. Boiler had felt it coming through his palm a breath sooner than the floor knew. That breath was everything.
 
 Somewhere under the booth the Pulse came through the slab as a low even hum, the city's only honest heartbeat — the vacuum-tube rail that threaded GLMZ's spine at Mach six, slugs seating and burning, a vibration you stopped hearing the way you stopped hearing your own pulse until the night you needed it gone and couldn't have it.
 
@@ -119,26 +119,24 @@ Rook held still on that. She didn't fill it in. She let Soraya own the whole of 
 
 Soraya's jaw set. She didn't deny it.
 
+The three fingers stopped. Rook's hand closed on the bowl's rim — the grip had too much in it — and she set it down.
+
 "Yes." A breath. "And I'm asking you to come anyway. Both things are true and I'm asking anyway, because you're the only one whose count I trust to carry more than it was rated for."
 
-The hum came up through the slab again, steadier now, a slug seating into its berth somewhere down the line with a settling she felt more than heard. She set the bowl aside and reached for her slate.
+The hum came up through the slab again, steadier now, a slug seating into its berth somewhere down the line with a settling she felt more than heard. She reached for the slate and held it flat under her right hand, one breath, before she picked it up.
 
 "Then we're both asking for something we should have said earlier," Rook said. She did not say what she should have said. She wrote Scout's address into the slate and held the booth door open with her shoulder while Soraya put her coat on, and outside Mrs. Chen's the night was the same night it always was in GLMZ, which was cold and indifferent and lit from below, and the two of them stood in it a moment before they went their separate ways to knock on doors that had been shut on purpose.
 
 [Beat 4]
-Stave's address was a fact she had carried the same way she carried the routing code from the Axiom bill of lading — in the part of her memory that keeps receipts without being asked. It was not the kind of fact you wrote down.
+Stave's address was a fact she had carried the same way she carried the routing code from the Axiom bill of lading - in the part of her memory that keeps receipts without being asked. It was not the kind of fact you wrote down.
 
-She went at eight in the morning, which was when Stave would be awake but not yet into whatever the day's work was, on the theory that a man who had put his comm on a table and walked away from it was more likely to answer a door in the ambiguous hour before the day committed to itself. She walked from Mrs. Chen's through two zones on foot, the way Scout would have walked it — not because Rook had Scout's relationship with the ferrocement canyons, but because the walk gave her something to hold the count in while the rest of her worked out what she was going to say.
+She went at eight in the morning, which was when Stave would be awake but not yet into whatever the day's work was, on the theory that a man who had put his comm on a table and walked away from it was more likely to answer a door in the ambiguous hour before the day committed to itself. She walked from Mrs. Chen's through two zones on foot, the way Scout would have walked it - not because Rook had Scout's relationship with the ferrocement canyons, but because the walk gave her something to hold the count in while the rest of her worked out what she was going to say.
 
-Stave had left two things on the table when he walked away from the crew's work. The first was the comm rig. The second was Rook's explanation of why he'd left, which she had never asked him for and which he had never offered, and which she had spent four years constructing anyway from the available evidence. The construction went like this: Stave was a man who had built his entire professional identity on knowing things before you needed to know them and selling that knowing at the exact moment when it was worth the most. The Axiom job had produced a thing he couldn't sell — information about a loss he'd watched happen in real time, could have moved on faster, hadn't. The seven had not been his fault by any method of accounting she could apply. She had applied them all. He had come up clean every time. And still he'd put the rig on the table.
-
-That meant it wasn't the accounting he was carrying. It was something else. Which meant she didn't know what she was going to say, only that she was going to say it to a closed door and hope the door had not moved.
-
-It had not moved. Fourth-floor Z2 walk-up, old ferrocement block with a lime-wash overlay someone had applied three decades ago and not refreshed since, a single stairwell that smelled of the Pulse three streets over. She stood at the door on four and knocked once, with the knuckle of her index finger, three short, the crew signal from before the crew had been a crew — back when the signal was just two kids in Z6 learning that a knock was different from a door-try if you had the right agreement about what the knocking meant.
+Fourth-floor Z2 walk-up, old ferrocement block with a lime-wash overlay someone had applied three decades ago and not refreshed since, a single stairwell that smelled of the Pulse three streets over. She stood at the door on four and knocked once, with the knuckle of her index finger, three short, the crew signal from before the crew had been a crew - back when the signal was just two kids in Z6 learning that a knock was different from a door-try if you had the right agreement about what the knocking meant.
 
 The door opened on her hand.
 
-Stave was not the kind of man who showed things in his face, so what she read was his hands — both of them, the left holding the door a half-inch back, the right hanging at his side, and the right was the tell. He had been working. There was marking dust on his thumb, the dry-erase kind, which meant he had a board somewhere, which meant he had been writing something down and had stopped before he got to the door so she wouldn't know how much.
+Stave was not the kind of man who showed things in his face, so what she read was his hands - both of them, the left holding the door a half-inch back, the right hanging at his side, and the right was the tell. He had been working. There was marking dust on his thumb, the dry-erase kind, which meant he had a board somewhere, which meant he had been writing something down and had stopped before he got to the door so she wouldn't know how much.
 
 She had known him for sixteen years. She knew what the marking dust meant.
 
@@ -146,25 +144,25 @@ She had known him for sixteen years. She knew what the marking dust meant.
 
 "I left my rig on a table."
 
-"You left the rig. I didn't say anything about the reason for it." She kept her hands where they were — at her sides, not toward the door, not toward him. "You said you were done being someone people called when it got bad. I understand that. I'm here because it's bad and I ran out of other options, and because you built the option out of not answering, and that was your right, and I'm standing here anyway."
+"You left the rig. I didn't say anything about the reason for it." He'd left two things when he walked away from the crew's work - the comm rig, and an explanation she'd built for herself in the four years since. She'd run the seven from the Axiom job through every method of accounting she owned, and he came up clean every time, which meant it was never the accounting he was carrying, and she still didn't know what was. She kept her hands where they were - at her sides, not toward the door, not toward him. "You said you were done being someone people called when it got bad. I understand that. I'm here because it's bad and I ran out of other options, and because you built the option out of not answering, and that was your right, and I'm standing here anyway."
 
-He looked at her for a long time. Not calculating, not building — just looking, with the look of a man who has already done the numbers and knows the answer and is staring at the page to make sure.
+He looked at her for a long time. Not calculating, not building - just looking, with the look of a man who has already done the numbers and knows the answer and is staring at the page to make sure.
 
 "Who is it?" he said.
 
-She told him. She said the twenty-one, and the barge, and Soraya's name and Sefi's hand, and the three facts she'd been carrying since she sat down with the manifest and put her finger on the routing code and felt the two pieces of evidence find each other in the dark. She said it the way she said hard reads — flat, quick, no editorializing, no weather between the facts — and she watched his face for the four seconds it took the information to move from auditory to understood.
+She told him. She said the twenty-one, and the barge, and Soraya's name and Sefi's hand, and the three facts she'd been carrying since she sat down with the manifest and put her finger on the routing code and felt the two pieces of evidence find each other in the dark. She said it the way she said hard reads - flat, quick, no editorializing, no weather between the facts - and she watched his face for the four seconds it took the information to move from auditory to understood.
 
 His jaw shifted. Not surprise. He'd had the rig on the table, not the intuition.
 
 "How many confirmed?" he said.
 
-"Fifteen. Scout's working the Z3 cluster — she thinks seven more in one group."
+"Fifteen. Scout's working the Z3 cluster - she thinks seven more in one group."
 
 "And the six the Helix sweep's already closing on?"
 
 "That's why there's a forty-eight-hour window."
 
-He opened the door the rest of the way. Behind him, past the narrow front room, she could see the board. He had been writing a routing schematic — not her job, not a paying job, just the kind of problem a man works on when he's got nothing left to do with the part of himself that was built for it. The schematic was in three colors, careful, the way his work always was when he had time to be careful. The marking dust on his thumb was the red marker. He'd been at the part that cost something.
+He opened the door the rest of the way. Behind him, past the narrow front room, she could see the board. He had been writing a routing schematic - not her job, not a paying job, just the kind of problem a man works on when he's got nothing left to do with the part of himself that was built for it. The schematic was in three colors, careful, the way his work always was when he had time to be careful. The marking dust on his thumb was the red marker. He'd been at the part that cost something.
 
 He did not look back at the board. He looked at her.
 
@@ -273,7 +271,7 @@ Vox pressed one fingertip against the circle marked over Z6. "Sefi."
 
 "You read the file."
 
-"Soraya left the routing metadata on an open channel for forty minutes after your meeting. I read the file, Lace read the file, Boiler guessed from context and was right, Scout already knew." Vox looked up from the map. She had the particular expression she used when she was about to say something that had already cost her something to decide. "Before you run the numbers — the face thing. Stave has it on file. Whatever I look like on registry has been in the broker network since NxR, and Helix is going to pull it the moment they run a comprehensive sweep on our approach vector." She held Rook's eyes steady. "So we should decide now whether I'm a liability or an asset, and not wait until I'm both."
+"Soraya left the routing metadata on an open channel for forty minutes after your meeting. I read the file, Lace read the file, Boiler guessed from context and was right, Scout already knew." Vox looked up from the map. She had the expression she wore when the decision was already made and the saying of it was going to cost something on the other side. "Before you run the numbers — the face thing. Stave has it on file. Whatever I look like on registry has been in the broker network since NxR, and Helix is going to pull it the moment they run a comprehensive sweep on our approach vector." She held Rook's eyes steady. "So we should decide now whether I'm a liability or an asset, and not wait until I'm both."
 
 Rook looked at Vox's face. The face that had kept the crew invisible for three jobs and one year and change. The face that had, at some point in NxR's aftermath, become a piece of evidence that connected them to the audit trail they hadn't known they were leaving. She had been holding a calculation around Vox's sold face since Soraya named the Marrow and the twenty-one in the same breath, and the calculation kept returning the same answer, which was that Vox already knew what the answer was and had come here to make Rook name it out loud.
 
@@ -548,7 +546,7 @@ He made no mention of this when he came back. He sat down at the end of the tabl
 
 "Also the substrate routing runs through a thermal conduit in the north corridor that generates significant heat on cycle. Anybody taking the north egress during a routing cycle will need eye protection and a full-sleeve layer." He poured a second glass of water. "I left a thermal note on the routing schedule by the maintenance hatch. Building maintenance will think it's their own notation. It's not."
 
-This was Boiler's particular genius and also his conversational method: absolute precision about the thing he had done, absolute silence about everything else he had noticed while doing it. Rook had learned to ask.
+This was Boiler's genius and also his conversational method: absolute precision about the thing he had done, absolute silence about everything else he had noticed while doing it. Rook had learned to ask.
 
 "What else?"
 
@@ -596,7 +594,7 @@ Lace put her tablet face-down. "If I'm the quiet one on the inside track, I need
 
 "You have four hours," Rook said.
 
-She looked around the table. Boiler finishing his third glass of water. Scout looking at Gerald's charging status on her wrist panel. Stave reading something on his tablet that he was not going to share until he decided he had enough of it. Soraya at the booth's far end, not looking at the plan, looking at a space between the window and the door that had no particular content. Adalemo checking the structural notes against the floor plan with the methodical precision of a man who had spent his career in ops and was now applying the same skill to the wrong side of a ledger, and finding he did not mind.
+She looked around the table. Boiler finishing his third glass of water. Scout looking at Gerald's charging status on her wrist panel. Stave reading something on his tablet that he was not going to share until he decided he had enough of it. Soraya at the booth's far end, not looking at the plan, looking at the wall between the window and the door. Adalemo checking the structural notes against the floor plan with the methodical precision of a man who had spent his career in ops and was now applying the same skill to the wrong side of a ledger, and finding he did not mind.
 
 She counted them. It was what she did.
 
@@ -637,7 +635,7 @@ The lit door at the end of bay C — ten meters up the aisle, dead ahead — ope
 
 It opened on a credential that wasn't Adalemo's. She knew it the instant it swung, because Adalemo's credential opened doors slow and apologetic, the door of a man putting his own hand away as gone, and this door came open clean and fast and unbothered. The figures that came through it moved the way PEREGRINE-grade security moved — the private contractor force Helix ran on wetwork contracts, ex-military chassis and no serial number you could pull — economical, unhurried, certain. Helix's now, and they wore it. The seam at their wrists caught the crimson spill of the door same as the cabling at the forty-year-old woman's temple had caught the warm light, same as Sefi's open eyes — same unlogged date stamped into all of it, the building's whole inventory wearing one reconciled mark. Three of them, fanning into the aisle to put a body between Scout and the door, and Scout got her arms tight around the count and her boots set before the first one fully cleared the frame, and in that half-second she understood the thing Rook had built the whole clock around, and gotten wrong only in the timing.
 
-She read the geometry the way she read a route — fast, on her feet, no schematic. The aisle ran ten meters from her to the door, and the three of them owned the door end, fanned shoulder to shoulder so there was no lane down the middle. Behind her, the threshold of bay C she'd come in by, and past that sixty meters of woken floor and the spiral ramp up. The far row of ten beds on her left, the near row of eleven on her right, and Sefi half-up in her arms making her one body wide where she needed to be none. No high ground in a room with a low ceiling. No outside to fall back to in a building you went *down* into. She couldn't run the count out the way she'd come — that meant turning her back on three PEREGRINE inside knife-range, with both arms full. She couldn't set Sefi down without leaving the one bed in the room that had no honest reason to be occupied undefended in front of the people who'd occupied it. Every lane she'd have taken alone closed the second the count was in her arms, and that, she understood with the same sick clarity the wedge had given her teeth, was the whole point of building a vault out of a person: the thing you came to save was the thing that pinned you.
+She read the room the way she read a route — fast, on her feet, no schematic. The aisle ran ten meters from her to the door, and the three of them owned the door end, fanned shoulder to shoulder so there was no lane down the middle. Behind her, the threshold of bay C she'd come in by, and past that sixty meters of woken floor and the spiral ramp up. The far row of ten beds on her left, the near row of eleven on her right, and Sefi half-up in her arms making her one body wide where she needed to be none. No high ground in a room with a low ceiling. No outside to fall back to in a building you went *down* into. She couldn't run the count out the way she'd come — that meant turning her back on three PEREGRINE inside knife-range, with both arms full. She couldn't set Sefi down without leaving the one bed in the room that had no honest reason to be occupied undefended in front of the people who'd occupied it. Every lane she'd have taken alone closed the second the count was in her arms, and that, she understood with the same sick clarity the wedge had given her teeth, was the whole point of building a vault out of a person: the thing you came to save was the thing that pinned you.
 
 She backed one step toward the threshold anyway, slow, Sefi tight against her chest, and Gerald slid to her right hip without being told — the small displacement of him in the air, the boy on the channel breathing the count steady so the crew upstairs would hear the floor wasn't lost yet. The lead PEREGRINE matched her step. Did not close. Held the aisle. Waiting on something that wasn't a guard's order.
 
@@ -728,6 +726,25 @@ Stave's line opened last — no words, just the static of a comm left on a table
 In bay C the PEREGRINE turned — the whole frame of it pivoting off Sefi's open eyes toward the east core where the loud channel was walking itself into the light — and Scout got her arms under the count she'd come for and heard, under the choir waking in their teeth, the whole crew close around the absent one made loud: Boiler dropping a second wedge to muddy the floor for the woman walking it, Rook's flat voice in the channel saying *east core, all of you, she's not walking it alone*, and Gerald — the boy named, the deal that held even here — breathing out the only thing he had, which was the count, twenty-one, steady, so the floor that was about to remember Vox would have to hear the children first.
 
 [Beat 20]
+Rook was already moving when the floor went wrong under Gerald's channel.
+
+She heard it the way she heard everything - as a number changing. The breath on the open channel had been steady, Scout's voice metering the floor calm, and then it wasn't, and the arithmetic put her feet in motion before the rest of her caught up. She left the north egress and took the cross-corridor toward the compliance junction, because the seven who weren't in the block had a routing she hadn't cracked, and the routing lived on a terminal two turns down, and a terminal was a thing she could reach with her hands and make say where the last seven had gone.
+
+She was three strides into the junction, hand already coming up for the panel, when the blast door came down across the corridor ahead - not slammed, lowered, clean and unhurried, a chrome shutter dropping through the exact line she'd been about to cross. She pulled the stride short so hard her boot skidded on the poured floor. The door sealed a hand's width in front of her, and the crimson strip along its base lit to say locked.
+
+A PEREGRINE stepped out of a side bay and put itself in the only lane the door had left her - not fast, not drawing, just occupying the space her body had been going to occupy, so the next step she took would be into it.
+
+And the building said her name.
+
+"Saarinen." Anneke's voice, flat, over the floor channel, the way you read a line you've already reconciled. "Inkeri Saarinen. You came in on a Meridian Facilities work order and a face I bought eighteen months ago. I've had both since the ramp."
+
+Rook's feet stopped. Not for the door - she'd routed around that in her head three ways before it finished dropping. For the name. The name meant the fatal thread had pulled, meant Vox's face had done exactly what they'd priced it to do, meant Helix had the whole crew's shape now and had had it while Rook was still counting the floor calm. The count in her chest revised itself all at once - not the twenty-one, the crew, the ones she'd walked in here - and the revision was the thing that held her still, not the chrome.
+
+"You've a landing two turns back," Anneke said. "I'm on it. Come and count with me."
+
+Rook looked at the sealed door, and the PEREGRINE in her lane, and the two turns that were now the only route the building would give her. Helix had taken every lane but the one that led to Anneke. She'd built the same thing herself, on paper, a hundred times - a corridor with one honest exit. She turned back toward the landing. She did not hurry. Her left hand stayed at her side, three fingers tapping a count that hadn't come out whole.
+
+[Beat 21]
 Anneke Oyelowo came down the east core herself, because she did not delegate the thing she could close in person, and she met Rook at the landing between levels where the loud channel was walking up and the count was walking down, and the two women who counted looked at each other in the crimson light with the wedge-frequency still in both their teeth. She was not armed. She had a tablet the way other people had a sidearm, balanced flat on her forearm, the reconcile open on it in twenty-one rows, and she did not close it when Rook arrived. She let Rook see the rows.
 
 And Rook watched Anneke's free hand do the thing her own left hand did over a bowl at Mrs. Chen's — three fingers, tapping the edge of the tablet, a pattern that wasn't nerves and wasn't music. Inventory. The same tell, in another woman's hand, and Anneke caught Rook seeing it and the fingers went still all at once, the way Rook's did, the only tell either of them had left.
@@ -742,7 +759,7 @@ Anneke's fingers did not move and that was how Rook knew she'd landed it.
 
 "You count the same way I do," Rook said. "You learned it the same place — somewhere that taught you a number was the only thing that would hold still while everything around it came apart. You tap it out so the count stays under your hand where you can trust it more than you trust your own face. I know that hand, Anneke. I've got the same one. So don't sell me the honest room. You don't believe the gap is honest any more than I do. You believe it's *quiet*. You furnished it so nobody would have to hear the receiving."
 
-Something moved behind Anneke's eyes then — not fear, Rook had been braced for fear and it wasn't that. It was the particular stillness of a woman doing a count she had decided thirty years ago she would never do again, and finding the figures still clear. Her jaw set. Rook watched it set and recognized the set, because she wore it.
+Something moved behind Anneke's eyes then — not fear, Rook had been braced for fear and it wasn't that. It was the stillness of a woman doing a count she had decided thirty years ago she would never do again, and finding the figures still clear. Her jaw set. Rook watched it set and recognized the set, because she wore it.
 
 And Rook drew the Reibo.
 
@@ -768,8 +785,8 @@ Rook did not answer that, because there wasn't an answer that wasn't a lie, and 
 
 She holstered the Reibo — the tremor still in her hand — and stepped sideways onto the down-route without turning her back on Anneke. "I came down here for twenty-one beds. I've got twenty-one. You came down here for one, and you don't. Short by the only entry you made the trip for." She put her eyes on the ramp, not on the woman behind her, and started down toward the count. "Reconcile that on the way up."
 
-[Beat 21]
-Boiler had spent his whole working life listening to load — the particular complaint a stair made under more than it was rated for, the way a wall told you what it was carrying before the carrying killed it — and now he stood in the sub-basement with both hands flat on the harvest manifold, the cold one, the one Cinderblock had built into the spine of the building to draw what it priced down through forty levels of bed and clerk and cabling, and he felt it the way he felt everything, structurally. *It's a stair. It's just a stair carrying more than it's rated for. Except the load is people, and the load has names, and I read the names same as I read a beam.* He stopped whistling. He had been whistling the whole job, low, tuneless, the thing the crew teased him for, and he heard himself stop and did not start again.
+[Beat 22]
+Boiler had spent his whole working life listening to load — the complaint a stair made under more than it was rated for, the way a wall told you what it was carrying before the carrying killed it — and now he stood in the sub-basement with both hands flat on the harvest manifold, the cold one, the one Cinderblock had built into the spine of the building to draw what it priced down through forty levels of bed and clerk and cabling, and he felt it the way he felt everything, structurally. *It's a stair. It's just a stair carrying more than it's rated for. Except the load is people, and the load has names, and I read the names same as I read a beam.* He stopped whistling. He had been whistling the whole job, low, tuneless, the thing the crew teased him for, and he heard himself stop and did not start again.
 
 He cut the manifold the only way a man on foot cuts a thing rated for machinery: shoulder under the conduit junction where the draw concentrated, boots set wide, and lift. He drove up with his legs first, the way you take a fallen beam off a person — controlled, not fast — and the junction broke its seat with a sound like a hinge shearing, cold metal giving up the contact it had held for thirty years in one clean pop, and then the full load of the draw came down onto him.
 
@@ -781,7 +798,7 @@ Helix did not go dark. Helix's voice came back up the open channel thinned, the 
 
 Lace came through the sub-basement door thirty seconds later at a dead walk, not running because running down a ramp with a casualty was how you became two casualties. She took one look at the arm and did not say anything, which was how Boiler knew it was bad. She crouched, got her shoulder under his good side, and pulled him up. He let her. The calibration wheel was still in his right hand, closed in his fist, and she did not ask him to open it. Some things you hold until the hold becomes a choice and not a reflex. She understood that. She had been reading people under load her whole working life and she understood exactly what a man looked like when the thing he'd carried had finally settled into him, and she walked him up toward the light without saying a word about it.
 
-[Beat 22]
+[Beat 23]
 The cost came in two parts, the way costs always did when you thought you had the count and the count had been lying to you.
 
 The first part was Adalemo.
@@ -852,7 +869,7 @@ Thirty-one people through the south corridor and the count wasn't the same count
 
 It wasn't the count she had come in with. It was the count that was real.
 
-[Beat 23]
+[Beat 24]
 They came out through the Gray Zone seam at the junction where Z1's edge maintenance corridor met the Cinderblock approach, thirty-one people in seven groups, the last group through nine minutes before Helix's south-corridor sweep reset. Rook counted them through. She would not stop doing that until the last one was through a door with a lock on it.
 
 Soraya had four addresses. She had built the network before the run — four different people in four different blocks, none of them connected, none of them aware of the others' addresses, each one briefed to receive a group and hold for forty-eight hours and not ask what came after. It was the way Soraya did infrastructure: every piece isolated from every other piece, so a failure in one couldn't cascade into the next. Rook had wondered, when Soraya first outlined the network, where she had learned to build that way.
@@ -917,7 +934,7 @@ She stood at the boundary alone for sixty seconds and then she was done standing
 
 She turned south. She had a stool at the end of a counter at a place called The Sojourn, and it faced the lake, and the lake did not care about the count. It never had. That was the only thing she had ever liked about it.
 
-[Beat 24]
+[Beat 25]
 The Sojourn sat where Cinderblock's tier met the Gray Zone seam, a long counter and a long window, and the window gave the lake the way only the cheap places did — nobody on this tier paid for a view of water that predated their lease. Rook took the stool at the far end where the glass met the wall, set the receipt-paper roll on the counter beside a coffee she would not finish, and looked at the lake while it did the thing it always did, which was nothing, gray and flat and useless to the audit Helix had read into every ear four levels underground. The window gave her back to herself over the water — olive and tired, dark hair come loose from the tie, the pale eyes, the scar high on the right cheekbone she had carried longer than any name she was about to write. For once she did not take inventory of the face. She let it sit there over the lake, a person and not an operator.
 
 She unrolled the paper. She had a pen, the analog kind, the kind that did not log to anything and could not be edited after the fact, and she wrote *Sefi* and under it *Adalemo* and under that *the woman at forty with the clean cabling — name pending, get the name* and she kept going, down the rows, not the rows that priced but the rows that received.

@@ -122,17 +122,16 @@ The decision gets made, with consequences that cannot be filed away. Adalemo app
 
 ## §7 — Locks (binding)
 
-1. **No magic, psionics, or schism content.** Same rule as MxG — pure tech, cyberware, hardware failure. Reject any draft that introduces sensitivity or 5D anything.
-2. **Ohara locked the partition herself.** The reveal is not Axiom, not PEREGRINE, not a third party. She did it. The story is about whether you trust the version of yourself that did the hiding.
-3. **The hardware degradation is real.** The window closes whether or not the crew moves fast enough. The rust is not a metaphor that conveniently stalls — it is the actual antagonistic pressure of the second half.
-4. **Lace's secret surfaces in this strand.** Whatever she has known since MxG's safe house, it comes out here. Do not defer again.
-5. **Stave's prior crack failure is not resolved.** It informs everything Stave does. It is not redeemed in a single procedure. The result was not clean then; the result here is not guaranteed to be clean now.
-6. **Vox is at four channels.** Do not restore the sixth. The wound healed; the bandwidth did not. This is not fixed in this strand.
-7. **Adalemo is not only the antagonist in Act Four.** The final encounter with Adalemo contains information or a decision that cannot be filed under "enemy neutralized."
-8. **Rook's rule is addressed, not resolved.** She came back. She knows why that bothers her. She does not finish processing it in this strand. The crack deepens; it does not close.
-9. **Boiler's building is load-bearing to the resolution.** When he says the demolition delay is relevant, he is correct. It is not just color.
-10. **The color language earns itself.** Neon appears in at least three beats before the finale — the lit surface, the warmth that is not warmth. Rust appears as contrast — the degrading lock, Stave's hands, the Z2 infrastructure. The title describes the world.
-11. **The decision in Act Four has consequences that cannot be filed away.** No clean resolution. No filing it under "job complete." Something changes and stays changed.
+1. **Ohara locked the partition herself.** The reveal is not Axiom, not PEREGRINE, not a third party. She did it. The story is about whether you trust the version of yourself that did the hiding.
+2. **The hardware degradation is real.** The window closes whether or not the crew moves fast enough. The rust is not a metaphor that conveniently stalls — it is the actual antagonistic pressure of the second half.
+3. **Lace's secret surfaces in this strand.** Whatever she has known since MxG's safe house, it comes out here. Do not defer again.
+4. **Stave's prior crack failure is not resolved.** It informs everything Stave does. It is not redeemed in a single procedure. The result was not clean then; the result here is not guaranteed to be clean now.
+5. **Vox is at four channels.** Do not restore the sixth. The wound healed; the bandwidth did not. This is not fixed in this strand.
+6. **Adalemo is not only the antagonist in Act Four.** The final encounter with Adalemo contains information or a decision that cannot be filed under "enemy neutralized."
+7. **Rook's rule is addressed, not resolved.** She came back. She knows why that bothers her. She does not finish processing it in this strand. The crack deepens; it does not close.
+8. **Boiler's building is load-bearing to the resolution.** When he says the demolition delay is relevant, he is correct. It is not just color.
+9. **The color language earns itself.** Neon appears in at least three beats before the finale — the lit surface, the warmth that is not warmth. Rust appears as contrast — the degrading lock, Stave's hands, the Z2 infrastructure. The title describes the world.
+10. **The decision in Act Four has consequences that cannot be filed away.** No clean resolution. No filing it under "job complete." Something changes and stays changed.
 
 ## §9 — The Parallel Writing Experiment
 
@@ -220,7 +219,7 @@ After both strands are reviewed:
 1. **Voice register** — does Qwen stay in the HEIST/GLMZ register, or drift toward generic thriller? Does Claude follow the wry tactical distance lock?
 2. **Canon grounding** — does each writer correctly use the entities seeded into the world graph (Rook, Vox, Lace, Ohara, Stave, Boiler, Scout)?
 3. **Beat fidelity** — how closely does each beat match its synopsis goal vs. diverging into unexpected territory?
-4. **Structural locks** — do both respect §7? (No psionics, Ohara locked it herself, hardware degradation is real pressure, Lace surfaces in this strand.)
+4. **Structural locks** — do both respect §7? (Ohara locked it herself, hardware degradation is real pressure, Lace surfaces in this strand.)
 5. **Prose mechanics** — paragraph structure, dialogue attribution, sensory texture, sentence-level rhythm.
 
 Run both reviews with:

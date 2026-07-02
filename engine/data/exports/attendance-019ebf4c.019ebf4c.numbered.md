@@ -62,16 +62,24 @@ Yemina parked in the loading zone. She had a placard for that. She left the engi
 [Beat 4]
 The main entrance had a door that required credentials she had, and the door opened. That was the first and only cooperative thing the building did for her.
 
-The lobby beyond it was the kind of space that had been designed for use and then used past the design. Yemina stepped in and let her senses take a reading before she moved further: floor tile, a pale composite that had once been cream, now the color of old newsprint where traffic had not worn it and colorless where it had. A smell of industrial solvent layered over something warmer — chalk dust, old lunch, the particular human exhaust of a building that children moved through in quantity. The overhead lighting ran on a mix of ages and types, newer strips dropping a cool white into the gaps where older fixtures had been removed and not replaced, so the room had a quality of attention that wasn't quite even, bright pockets and softer intervals, the way a face looks when someone is trying to seem interested and almost managing it.
+The lobby beyond it was the kind of space that had been designed for use and then used past the design. Yemina stepped in and let her senses take a reading before she moved further: floor tile, a pale composite that had once been cream, now the color of old newsprint where traffic had not worn it and colorless where it had. A smell of industrial solvent layered over something warmer - chalk dust, old lunch, the human exhaust of a building that children moved through in quantity. The overhead lighting ran on a mix of ages and types, newer strips dropping a cool white into the gaps where older fixtures had been removed and not replaced, so the room had a quality of attention that wasn't quite even, bright pockets and softer intervals, the way a face looks when someone is trying to seem interested and almost managing it.
 
 *She had been in three buildings this week that were kept open by the same mechanism as this one: not funding, not care, but the cost of closing.*
 
-A woman sat behind the reception desk with the posture of someone who had been waiting longer than the arrival warranted. Not Yemina specifically — just anyone. She was perhaps fifty, with the kind of stillness that came from having learned not to perform readiness for people who were going to ask for things she could not provide. Her name tag read SUMI in block capitals, and below it, in smaller text, FAMILY LIAISON. She did not look up immediately. She was watching a form on the screen in front of her, and she let the moment of not looking up do its work — a quiet, professional calibration, the kind that costs nothing and collects information.
+A woman sat behind the reception desk with the posture of someone who had been waiting longer than the arrival warranted. Not Yemina specifically - just anyone. She was perhaps fifty, with the kind of stillness that came from having learned not to perform readiness for people who were going to ask for things she could not provide. Her name tag read SUMI in block capitals, and below it, in smaller text, FAMILY LIAISON. She did not look up immediately. She was watching a form on the screen in front of her, and she let the moment of not looking up do its work - a quiet, professional calibration, the kind that costs nothing and collects information.
 
 "You'll be the contractor," Sumi said, and the phrasing was exact: not *the* contractor in a way that suggested there were others, but *the* contractor in a way that suggested she had already decided what kind of visit this was going to be, and was giving Yemina one beat to confirm or correct it.
 
+"I am," Yemina said. "I'll want the fourth-grade wing before anything else - Room 214, Mr. Vasquez's room. He was the teacher of record the week Kito Bramley stopped being marked present."
+
+She hadn't asked whether she could. She'd stated where she was going, because she had decided it on the drive over, sometime between the second timestamp and the third. Everyone else on the roster had filed something into the case - the counseling office, the medical registry, the manufacturer. Vasquez had filed nothing. In her experience the person who filed nothing was the person who'd seen the thing before it became a form, and she meant to reach him before the building could arrange him into one.
+
+Sumi's eyes went to a point past Yemina's shoulder - toward the interior corridor, toward a door that hadn't opened yet - and came back. It was a small motion, the kind a person makes when the answer to a question isn't theirs to give. "Let me tell Dr. Achebe you're here," she said, and touched something under the lip of the desk.
+
+Yemina was already turning toward the corridor. She had a room number and a reason to walk to it, and the two together were enough to move on.
+
 [Beat 5]
-Dr. Achebe came out with the walk of a man who had decided in advance that this meeting would be brief. There was a particular gait administrators developed over the years — a forward lean that read as energy and functioned as exit. He was already crossing the waiting area at an angle that would let him pivot back toward his office door without breaking stride, and Yemina marked the angle before she marked the man.
+Dr. Achebe came out with the walk of a man who had decided in advance that this meeting would be brief. There was a gait administrators developed over the years — a forward lean that read as energy and functioned as exit. He was already crossing the waiting area at an angle that would let him pivot back toward his office door without breaking stride, and Yemina marked the angle before she marked the man.
 
 He was sixty-something, built wide, the kind of width that had been muscle and had settled. He wore a blazer over a shirt with a collar that had been ironed that morning with real intention — she noticed the collar because it was the only thing about him that hadn't surrendered. The blazer was tired at the elbows. The lanyard at his chest held a credential card and three others stacked behind it, the way a man accumulates clearances he no longer reads. His face had learned, over decades of school administration, to express concern and unavailability simultaneously, and it was doing both now, which meant the expression was load-bearing rather than felt.
 
@@ -81,13 +89,15 @@ He was sixty-something, built wide, the kind of width that had been muscle and h
 
 He stopped.
 
-He looked at her the way an administrator looks at something that has arrived outside normal channels — with the specific expression of a person calculating who, exactly, was responsible for this. The eyes did the work first, a small lateral search, as though the responsible party might be standing somewhere in the room and could be handed the problem. He couldn't find a responsible party. The search closed. He settled back into concern-and-unavailability the way a man lowers himself into a chair he doesn't trust, and the settling cost him a beat he hadn't budgeted.
+He looked at her the way an administrator looks at something that has arrived outside normal channels — with the expression of a person calculating who, exactly, was responsible for this. The eyes did the work first, a small lateral search, as though the responsible party might be standing somewhere in the room and could be handed the problem. He couldn't find a responsible party. The search closed. He settled back into concern-and-unavailability the way a man lowers himself into a chair he doesn't trust, and the settling cost him a beat he hadn't budgeted.
 
 "Come in, then," he said, because there was nothing else to do with her in a corridor.
 
-The office was small and over-furnished, the furniture older than the building's last renovation by a decade, which told her the renovation budget had reached the public spaces and stopped. A diploma hung framed beside a laminated evacuation map and a corkboard gone soft with the pin-holes of memos long since taken down. On the desk, a coffee mug had gone cold around a film, and beside it a stack of folders sat squared at the corners with the particular neatness of a man who managed paper because the rest of his job couldn't be managed. There was a smell to the room — toner, instant coffee, and the dry mineral exhaust of a recirculating filter that had been promised replacement and not received it. Behind him, through a window of reinforced glass, the Pilsen Veil's afternoon haze put a flat gray light on everything, the kind that didn't fall from anywhere. It just was, the way the building just was.
+The office was small and over-furnished, the furniture older than the building's last renovation by a decade, which told her the renovation budget had reached the public spaces and stopped. A diploma hung framed beside a laminated evacuation map and a corkboard gone soft with the pin-holes of memos long since taken down. On the desk, a coffee mug had gone cold around a film, and beside it a stack of folders sat squared at the corners with the neatness of a man who managed paper because the rest of his job couldn't be managed. There was a smell to the room — toner, instant coffee, and the dry mineral exhaust of a recirculating filter that had been promised replacement and not received it. Behind him, through a window of reinforced glass, the Pilsen Veil's afternoon haze put a flat gray light on everything, the kind that didn't fall from anywhere. It just was, the way the building just was.
 
-He didn't sit, which meant he didn't expect her to. He picked up the squared stack and tapped it once against the desk, a gesture of completion, and handed it across.
+He didn't sit, which meant he didn't expect her to. She said it before he reached for the folder: "I need to see Room 214."
+
+He picked up the squared stack and tapped it once against the desk, a gesture of completion, and handed it across.
 
 "Everything's here," he said.
 
@@ -130,7 +140,7 @@ His hands moved once toward the lanyard at his chest — the reflex of a man rea
 
 "Room 214," he said.
 
-The corridor past his office had the particular emptiness of a school between periods: not abandoned, just paused, the silence of a place that would be full again on a bell. The light came from long ceiling panels tuned to a daylight the Pilsen Veil's actual sky hadn't offered in decades, and it lay flat and even over a floor someone had buffed before dawn. The whole wing smelled of the cleaning compound they used in institutions like this — a citrus engineered to read as clean rather than to smell of anything that grew, the scent of a building insisting on its own hygiene. Lockers in a color chosen by committee. A hallway display about attendance, of all things, its laminated letters curling at one corner where the adhesive had given up.
+The corridor past his office had the emptiness of a school between periods: not abandoned, just paused, the silence of a place that would be full again on a bell. The light came from long ceiling panels tuned to a daylight the Pilsen Veil's actual sky hadn't offered in decades, and it lay flat and even over a floor someone had buffed before dawn. The whole wing smelled of the cleaning compound they used in institutions like this — a citrus engineered to read as clean rather than to smell of anything that grew, the scent of a building insisting on its own hygiene. Lockers in a color chosen by committee. A hallway display about attendance, of all things, its laminated letters curling at one corner where the adhesive had given up.
 
 She read the room numbers as she passed them, the way she read everything, and she let Achebe close behind her in her mind the way she had let the school door close behind her at the front: noted, dated, set in its place. A closed door was still data. It told you which way the building didn't want you to walk. She walked the other way.
 
@@ -162,7 +172,7 @@ The room held its shape around them. Twenty-three chairs. Three of them pulled o
 [Beat 8]
 Ren talked. He'd clearly told this before — his voice had the flat quality of a story that had been rehearsed not for polish but for survival, the way you tell something over and over until it stops meaning what it meant when it happened.
 
-It was the third Tuesday. He knew it was a Tuesday because Tuesdays were independent reading and he had a particular memory of the room being quiet in the way Tuesdays were quiet, the HVAC ticking somewhere in the ceiling, the radiator under the windows making its one warm clicking sound. He gave the date the way a man gives a thing he has checked too many times — not reciting it, but watching her to see whether she would write it down. She wrote it down. Something in his shoulders moved a quarter-inch lower.
+It was the third Tuesday. He knew it was a Tuesday because Tuesdays were independent reading and he had a memory of the room being quiet in the way Tuesdays were quiet, the HVAC ticking somewhere in the ceiling, the radiator under the windows making its one warm clicking sound. He gave the date the way a man gives a thing he has checked too many times — not reciting it, but watching her to see whether she would write it down. She wrote it down. Something in his shoulders moved a quarter-inch lower.
 
 Kito Bramley was nine. Third row, second seat. He'd been present at the start of class. He'd raised his hand once, a question about the assignment — whether you could use the same word twice in the same sentence if you meant two different things by it. Ren had said yes, you could, that was called something, he'd have to look it up. He never looked it up. He told Yemina that part as though it were the part that mattered: that he had promised a nine-year-old he would look something up and then the nine-year-old wasn't there to be told. Kito had gone back to his work. And then — somewhere in the twenty minutes of independent reading that followed — the chair was empty.
 
@@ -289,7 +299,7 @@ She turned and walked into the hallway.
 [Beat 11]
 She was halfway down the corridor when it caught up with her.
 
-It didn't arrive as a thought. It arrived first as a wrongness in the body — the specific cold that lives between the shoulder blades, the one that meant a record she had already closed was wrong and she had moved on past the line where it failed. She had felt it a hundred times over a desk and learned to trust it before she could name it. Her feet kept their pace. The floor was the old institutional tile they'd stopped making decades ago, scuffed to a dull shine down the center where forty years of small shoes had walked the same line, and her own steps fell into that worn channel without her choosing it. Behind a closed door a teacher was counting a class back into order, the flat patient cadence of an adult who has done it ten thousand times. Warm dust off the heating element. A cafeteria two halls away. Ordinary, all of it. The cold between her shoulders didn't care.
+It didn't arrive as a thought. It arrived first as a wrongness in the body — the cold that lives between the shoulder blades, the one that meant a record she had already closed was wrong and she had moved on past the line where it failed. She had felt it a hundred times over a desk and learned to trust it before she could name it. Her feet kept their pace. The floor was the old institutional tile they'd stopped making decades ago, scuffed to a dull shine down the center where forty years of small shoes had walked the same line, and her own steps fell into that worn channel without her choosing it. Behind a closed door a teacher was counting a class back into order, the flat patient cadence of an adult who has done it ten thousand times. Warm dust off the heating element. A cafeteria two halls away. Ordinary, all of it. The cold between her shoulders didn't care.
 
 What had set it off was small, the way the things that mattered usually were. Ren's sentence, the one she had cross-referenced without looking at it twice: *the air went wrong, and then they were gone.* She had said it herself, to him, in that order, as if the two halves were one event. She had been saying it in that order for six months.
 
@@ -370,7 +380,7 @@ The front door was the heavy kind, glass in a frame built to look reassuring fro
 [Beat 14]
 She sat in the gray car.
 
-It had stopped being argued with years ago, and the inside of it had the particular climate of a vehicle that lived its life parked in sun: the dashboard exhaled a warm plastic smell, vinyl and the ghost of the cleaner the motor pool used, a chemical lemon that never quite arrived. The driver's seat had worn through its texture at the two points where a body bears down — the left hip, the right shoulder blade — so that she sat, always, in the shallow molds of every shift she had ever logged in it. Midday heat sat in the cabin the way it sits in any cheap car at lunch: not punishing, just present, a low pressure against the skin she'd stopped noticing and started carrying. She left the windows cracked two fingers. She didn't run the climate. The contract paid for the car. It didn't pay for the car to be comfortable.
+It had stopped being argued with years ago, and the inside of it had the climate of a vehicle that lived its life parked in sun: the dashboard exhaled a warm plastic smell, vinyl and the ghost of the cleaner the motor pool used, a chemical lemon that never quite arrived. The driver's seat had worn through its texture at the two points where a body bears down — the left hip, the right shoulder blade — so that she sat, always, in the shallow molds of every shift she had ever logged in it. Midday heat sat in the cabin the way it sits in any cheap car at lunch: not punishing, just present, a low pressure against the skin she'd stopped noticing and started carrying. She left the windows cracked two fingers. She didn't run the climate. The contract paid for the car. It didn't pay for the car to be comfortable.
 
 The Pilsen Veil moved around her the way neighborhoods moved at lunch — sidewalk foot traffic loosening, delivery carts running the painted lane two abreast, a vendor's cart venting steam she could smell through the gap in the window, fried dough and engine grease in the same breath. And a repair drone circling a building at 18th Street that had been circling it for three weeks. Same altitude. Same orbital radius. Logging correctly every time she queried it: *active inspection, Arcturus infrastructure.* A Rider somewhere — body left behind in a chair, slack, breathing on its own — inhabiting the machine through three weeks of corridor passes. She had flagged it twice. Both times it resolved clean, the way everything in this jurisdiction resolved clean, the resolution arriving faster than the question deserved. She had stopped flagging it. She noted, instead, that it was still there. Noting was the part she controlled.
 
@@ -454,16 +464,16 @@ The results came back in 0.3 seconds. Her neuretics logged the latency, as they 
 
 *It knew she'd press enter.*
 
-Forty-one children. The number held in the field, and beneath it the query populated its results in the wrong font, in the same wrong color, in the same careful spacing as the completion had used: names, district codes, neuretics installation dates, and then the gap dates, the six-week window before each record went cold. She didn't look at the names first. She looked at the district codes, because that was how you read a pattern — geography first, then chronology, then the individual, in that order, the way a fire investigator looked at the burn spread before they looked at the door. The codes resolved into a shape she hadn't expected. Not a cluster. Not a corridor. Every district in the GLMZ. Southwest, Old Harbor, Pilsen Veil, West Lawn Line, the Gray Zone tiers one through four, three from the Seam margin. Forty-one children distributed across the entire city, in no geographic logic she could read, and every one of them gone.
+Forty-seven children. The number held in the field, and beneath it the query populated its results in the wrong font, in the same wrong color, in the same careful spacing as the completion had used: names, district codes, neuretics installation dates, and then the gap dates, the six-week window before each record went cold. She didn't look at the names first. She looked at the district codes, because that was how you read a pattern — geography first, then chronology, then the individual, in that order, the way a fire investigator looked at the burn spread before they looked at the door. The codes resolved into a shape she hadn't expected. Not a cluster. Not a corridor. Every district in the GLMZ. Southwest, Old Harbor, Pilsen Veil, West Lawn Line, the Gray Zone tiers one through four, three from the Seam margin. Forty-seven children distributed across the entire city, in no geographic logic she could read, and every one of them gone.
 
-She scrolled to the first name. Kito Adeyemi, age nine, Gray Zone Tier 2. She had been given this file at 10:14 AM the previous morning, four hours before the case formally existed, from a sender field that was not redacted but simply empty — not pending, not classified, an assignment from no account in the system. She had understood, at the time, that she was meant to find him. She had understood it the way she understood most things: as a fact she could work from without needing to know its origin. Now, looking at forty-one names in a font she hadn't installed, assembled by a search she hadn't finished writing, she found herself revising that understanding. The question was not whether she had been meant to find Kito Adeyemi. The question was whether *finding him* was the point, or whether she was the instrument by which he could be found, and whether those were the same thing, and whether it mattered.
+She scrolled to the first name. Kito Bramley, age nine, Pilsen Veil. She had been given this file at 10:14 AM the previous morning, four hours before the case formally existed, from a sender field that was not redacted but simply empty — not pending, not classified, an assignment from no account in the system. She had understood, at the time, that she was meant to find him. She had understood it the way she understood most things: as a fact she could work from without needing to know its origin. Now, looking at forty-seven names in a font she hadn't installed, assembled by a search she hadn't finished writing, she found herself revising that understanding. The question was not whether she had been meant to find Kito Bramley. The question was whether *finding him* was the point, or whether she was the instrument by which he could be found, and whether those were the same thing, and whether it mattered.
 
 *If the children were the goal, she was running out of reasons to object to the method.*
 
-She captured the result, the full set, forty-one names and their district codes and their gap dates, and routed it to her local cache where she kept things she wasn't ready to file. Then she sat in the stillness of the apartment and waited, the way she waited after asking a question in a room where she wasn't sure who else was listening, to see what the thing behind the aperture would do next.
+She captured the result, the full set, forty-seven names and their district codes and their gap dates, and routed it to her local cache where she kept things she wasn't ready to file. Then she sat in the stillness of the car and waited, the way she waited after asking a question in a room where she wasn't sure who else was listening, to see what the thing behind the aperture would do next.
 
 [Beat 17]
-Kito Bramley's guardian was his grandmother, a woman named Chinwe Bramley, seventy-three years old, who opened the door to her apartment on Loomis Street before Yemina had finished knocking. She was in a house dress and reading glasses, and the glasses were the kind a person wears to read fine print rather than faces, so that for a moment she looked at Yemina's credentials and not at Yemina. She hadn't slept. It wasn't the puffiness of one bad night. It was the particular gray under the eyes of someone who had stopped using the bed as a place that meant sleep and started using the chair, the kitchen, the standing-up-at-the-counter posture of a person waiting for a sound at the door that, three days ago, would have been a key in a lock.
+Kito Bramley's guardian was his grandmother, a woman named Chinwe Bramley, seventy-three years old, who opened the door to her apartment on Loomis Street before Yemina had finished knocking. She was in a house dress and reading glasses, and the glasses were the kind a person wears to read fine print rather than faces, so that for a moment she looked at Yemina's credentials and not at Yemina. She hadn't slept. It wasn't the puffiness of one bad night. It was the gray under the eyes of someone who had stopped using the bed as a place that meant sleep and started using the chair, the kitchen, the standing-up-at-the-counter posture of a person waiting for a sound at the door that, three days ago, would have been a key in a lock.
 
 The apartment behind her was clean the way a room gets clean when its keeper has nothing else to do with her hands. The cushions were squared. The floor had been gone over recently enough that Yemina could smell the cleanser under the older smell of the building — damp ferrocement, the cabbage-and-engine-grease air of a stairwell that vented six families' cooking past one tired filter. The Pilsen Veil did that to a building: sealed it tight against the gray sky, then made the inside carry everything.
 
@@ -508,7 +518,7 @@ His wife, Abena Osei, was in the kitchen. She was Ghanaian, thirty-eight, and ha
 
 At the small table one place was still set — a child's plate, a cup with a lid, a folded napkin squared to the table's edge the way you square a thing you're not ready to clear.
 
-Yemina took it in the way she took in every room, which was as evidence: the lid-cup said an age young enough to spill, the squared napkin said a hand that needed the setting to stay a setting, the untouched plate said the eleven days. She had the categories ready before she crossed the threshold. They were the right categories. And for the length of a breath they didn't hold, because the room hadn't been arranged for an investigator and the arrangement reached her anyway — the particular dead-center placement of the cup, the napkin's corners pressed flat with a thumbnail, grief done as a chore because the chore was the only part of it that answered to the hands. Her chest did the thing it wasn't supposed to do on a working visit. It wasn't large. It was the small involuntary tightening of a body recognizing, ahead of the part of her that cross-referenced, that the table was a person's whole day. Then the categories closed back over it the way they were trained to, and she was reading a set place again, and she let herself read it, because reading it was the only thing she had brought into the apartment that was any use to anyone in it. No one had touched the setting. No one in this kitchen, Yemina understood, was going to be the one who decided it was time.
+Yemina took it in the way she took in every room, which was as evidence: the lid-cup said an age young enough to spill, the squared napkin said a hand that needed the setting to stay a setting, the untouched plate said the eleven days. She had the categories ready before she crossed the threshold. They were the right categories. And for the length of a breath they didn't hold, because the room hadn't been arranged for an investigator and the arrangement reached her anyway — the dead-center placement of the cup, the napkin's corners pressed flat with a thumbnail, grief done as a chore because the chore was the only part of it that answered to the hands. Her chest did the thing it wasn't supposed to do on a working visit. It wasn't large. It was the small involuntary tightening of a body recognizing, ahead of the part of her that cross-referenced, that the table was a person's whole day. Then the categories closed back over it the way they were trained to, and she was reading a set place again, and she let herself read it, because reading it was the only thing she had brought into the apartment that was any use to anyone in it. No one had touched the setting. No one in this kitchen, Yemina understood, was going to be the one who decided it was time.
 
 "She heard it for six weeks," Abena said. "She said it was at the back of her neuretics. She said it felt like a word she didn't know yet." She looked at the set place and not at Yemina. "Daria liked to know words before anyone taught them to her."
 
@@ -525,6 +535,23 @@ Yemina wrote one line in her notebook — the only thing the visit had produced 
 She wrote it because it was true and because it was admissible, and those weren't the same property, and the gap between them was the whole shape of her job. The flag had a field. It had a place in the form, a date, a sub-authority, a phrasing the system would receive without choking. The plate didn't. The squared napkin didn't. The number Lech had memorized, the word Daria had been waiting to learn, the six weeks a child had spent listening to the back of her own neuretics for a sound nobody else could hear — none of it had a field. It wasn't that the form refused these things out of cruelty. It was worse than cruelty. The form had simply never been built with a column wide enough for a kitchen, and so the kitchen would stay in the kitchen, where it was true and couldn't be filed, while the one line that could be filed carried six weeks of a girl out of the apartment reduced to the word *consistent.* She closed the notebook over the line that fit and left the rest of it in the kitchen, unrecorded, because there was nowhere on the form for it to go.
 
 [Beat 19]
+The counseling intake flags wouldn't cross a wire. She'd known they wouldn't - school-held records sat inside the building's own system, and the building's own system spoke to no one it hadn't been introduced to. So she drove back across the Veil to the Pilsen Veil Cluster's compliance annex, a two-room office on the ground floor of a services block, and took a number from a machine that still printed on paper.
+
+When the window called her she put her credential flat on the reader and said the docket aloud, because saying it aloud made a record of the asking. "Bramley, Kito. Counseling intake, Aldiss Mwangi. I'm pulling the wellness flags into district review."
+
+The clerk was young and careful and did the thing clerks did - read the screen before she read the person. The field populated. Yemina watched it come up, line by line, the flags assembling in the order she'd wanted them, and her hand was already moving to the transfer key, already reaching to take them down into her own layer -
+
+The field went red under her fingers.
+
+Not slowly. Between one line and the next the record folded shut, and a banner dropped across it in the flat institutional font that never meant anything good. RECORD SEALED - ADMINISTRATIVE HOLD, ORIGINATING SITE. The transfer key did nothing. She pressed it once more, not because she expected it to work but because the record needed to show she'd tried.
+
+"I'm sorry," the clerk said, and meant it, which changed nothing. "The site that holds it placed a hold this morning. I can't release a record its own school has sealed." Her eyes flicked to the timestamp and stayed a moment too long, the way a careful person's eyes do when they've read something they weren't going to mention. "The reason doesn't come down the wire. Only the seal does."
+
+Yemina looked at the timestamp herself. The seal had gone on at 11:52 - nine minutes after she'd walked out of an office where a man had ironed his collar that morning with real intention and folded his hand back from his lanyard rather than reach for it. He hadn't needed the lanyard. He'd needed a phone, and the quiet certainty that a closed record was a closed one, and that pushing on it was the visitor's problem and not the building's.
+
+She took her credential back off the glass. She didn't argue. Arguing was a thing you did to a person, and there was no person here - only the architecture, doing what it was built to do, which was to make sure the flags came to rest somewhere no single office had to carry them. She wrote the seal timestamp in the notebook no one else could edit. A hold was data too. A record nobody would seal was a record with nothing in it. This one, someone had reached to close nine minutes after she'd asked to open it, which told her exactly how much was in it, and that she would have to get at it some other way.
+
+[Beat 20]
 She pulled all forty-seven pediatric care records that afternoon, sitting in the gray car because there was nowhere else to go. The car had a parking lot it returned to and a parking lot it left from; the hours between were hers to spend wherever the work put her, and the work had put her at the curb on 18th Street with the windows up and the heater ticking. She set the case system open on one neuretics layer and the records on another, stacked the way she liked them — query above, evidence below, the gap between them a thing she could look down into — and opened the paper notebook on her knee, because the notebook was the only layer no one else could write to.
 
 She didn't start with a theory. She had learned, in the years since the report that moved her here, that a theory is a thing you build for the form to receive, and the form receives it last. You start with what is on every page and you notice when it changes.
@@ -559,7 +586,7 @@ The intruder sealed the channel. Not gradually, not the careful withdrawal of a 
 
 She sat very still with the notebook open on her knee and the heater ticking and the drone coming around again. She had been examined. She set that down beside the other certainties she couldn't yet file, and beside it she set the second impression — less clear, just as sure — that the examination had been stopped before whatever was examining her had finished. Something had wanted her open, and something else had decided she should be shut, and the deciding had happened too fast for either of them to ask her which she preferred.
 
-[Beat 20]
+[Beat 21]
 She spent twenty minutes searching with two neuretics layers open. Her own on top — contractor-grade case tools, the kind the district issued by the gross, a query field that wanted a docket number and a sub-authority and got irritable when you fed it a frequency instead. Underneath it, the intruder's extensions: not labeled, not branded, a second set of indices that returned things her own tier was never licensed to reach. She had stopped pretending the lower layer was hers. She used it the way you use a tool someone leaves on your bench — gratefully, and with one eye on the door.
 
 Coherent schism emission. She put the phrase into both layers and watched them answer at different depths.
@@ -570,7 +597,7 @@ She had expected that. The schism was a hazard you fenced, not a subject you stu
 
 She went down into the intruder's layer.
 
-The literature on coherent emission was thin the way a riverbed is thin in a dry year — not empty, but mostly the shape of where water used to be. A fringe position inside a fringe field. The schisms themselves were studied; everyone studied the schisms. But the people who had argued that the low-frequency hum off a Class-3 anomaly carried *information* — that it was a signal and not noise, that something on the far side of the slice was broadcasting and not merely leaking — those people didn't have grants anymore. The serious work had moved on or been absorbed: the names she could find had either gone quiet around 2222 or turned up three years later inside CorpoNation hazard-assessment teams, publishing nothing, their earlier papers scrubbed back to abstracts. There was no journal of this. There was no department. There was a scatter of preprints on archive servers that still resolved if you knew the handle, a handful of conference posters photographed and never transcribed, and the particular silence of a subject that two or three institutions had decided, separately and without coordinating, wasn't worth the liability of a footnote.
+The literature on coherent emission was thin the way a riverbed is thin in a dry year — not empty, but mostly the shape of where water used to be. A fringe position inside a fringe field. The schisms themselves were studied; everyone studied the schisms. But the people who had argued that the low-frequency hum off a Class-3 anomaly carried *information* — that it was a signal and not noise, that something on the far side of the slice was broadcasting and not merely leaking — those people didn't have grants anymore. The serious work had moved on or been absorbed: the names she could find had either gone quiet around 2222 or turned up three years later inside CorpoNation hazard-assessment teams, publishing nothing, their earlier papers scrubbed back to abstracts. There was no journal of this. There was no department. There was a scatter of preprints on archive servers that still resolved if you knew the handle, a handful of conference posters photographed and never transcribed, and the silence of a subject that two or three institutions had decided, separately and without coordinating, wasn't worth the liability of a footnote.
 
 Almost nothing. She read all of it in eleven minutes and could have summarized it in three sentences. The act of looking told her more than the looking found: a field this empty hadn't died of being wrong. It had died of being inconvenient. She set that thought where she set everything — flatly, in its own line, for later — and kept reading.
 
@@ -578,9 +605,9 @@ One paper held.
 
 It was attached to a name, which was rare; most of the rest had decayed into institutional bylines, *et al.*, a working group that had since dissolved. This one had a person on it.
 
-*Coherent Low-Frequency Emission Signatures at Class-3 schism Anomalies: A Preliminary Survey.* Dr. Priya Selvamani. 2024. A second-tier journal — not predatory, not respected; the kind that published the work nobody else would risk and was cited mostly so the citing author could explain why it was wrong. She pulled the citation graph. Four references, total, in three years. All four negative. One reviewer had used the paper as a teaching example of overinterpreted data — *the author mistakes a measurement artifact for a message* — and the phrase had been quoted twice since, by people who, as far as Yemina could tell from the metadata, hadn't read past the abstract before repeating it.
+*Coherent Low-Frequency Emission Signatures at Class-3 schism Anomalies: A Preliminary Survey.* Dr. Priya Selvamani. 2224. A second-tier journal — not predatory, not respected; the kind that published the work nobody else would risk and was cited mostly so the citing author could explain why it was wrong. She pulled the citation graph. Four references, total, in three years. All four negative. One reviewer had used the paper as a teaching example of overinterpreted data — *the author mistakes a measurement artifact for a message* — and the phrase had been quoted twice since, by people who, as far as Yemina could tell from the metadata, hadn't read past the abstract before repeating it.
 
-Institutional affiliation: lapsed, 2025.
+Institutional affiliation: lapsed, 2225.
 
 Lapsed. Not retired, not transferred. The word the registries used when a credential ran out and no one renewed it. Yemina had a lapsed affiliation of her own, in a different file, under a different heading; she knew exactly how the word got there and exactly how little it told you about why. She let it sit a moment, then set it down.
 
@@ -594,7 +621,7 @@ Yemina put the gray car in gear.
 
 ## Chapter 3
 
-[Beat 21]
+[Beat 22]
 "Why children," Yemina asked.
 
 "It isn't choosing children." Selvamani didn't look up from the frequency chart she was annotating. "That's the part nobody wants to hear. It broadcasts at 17 to 19 Hz. Adult neuretics have been running too long to catch it clean — the band's settled, the way a voice settles into a register and stops being able to hit the high notes it had at ten. Children's are still calibrating, up to about twelve." She set the chart down. "Whatever's on the other side of the 35th-and-Halsted threshold is broadcasting to the whole city. The children aren't special. They're just the only ones it reaches."
@@ -617,7 +644,7 @@ Selvamani looked at her. "I can't confirm that. I can tell you that what I've be
 
 She picked up one of the printouts — the page on top of the stack nearest her hand, taken by reach and not by choice. She held it the way you hold something you've carried long enough that the weight is familiar even when the contents aren't, her thumb settling at the worn-soft corner where a thumb had settled a thousand times before. And Yemina, who had spent eleven weeks reading the grammar of how people handle paper, watched the hands and understood what the hands were doing. This wasn't reading. This was cross-referencing. The same economy of motion Yemina used on a flagged folder when she had already decided where it went — the brief hold that confirms the weight, the square of the edge, the return to the exact place it came from. Selvamani set the page back on the stack she'd taken it from, and her fingers were precise about where it landed, because a thing returned to its own place is a thing that has been accounted for and can be found again. She was a woman who had run out of correspondents and gone on filing anyway, because the filing was the only part of the work that still answered her.
 
-Yemina knew the work. She knew the posture. She knew the particular way a person squares a page when the page has nowhere to go and the squaring is the only control remaining. She had done it herself, in a different filing room, with a different report, eleven years ago — before the consolation posting, before the jurisdiction nobody expected her to find anything in. The body in front of her was doing the same thing, in a different apartment, with different instruments. Two people who had each, in their own jurisdiction, run a true and accurate record straight into the architecture that made true and accurate records disappear.
+Yemina knew the work. She knew the posture. She knew the way a person squares a page when the page has nowhere to go and the squaring is the only control remaining. She had done it herself, in a different filing room, with a different report, eleven years ago — before the consolation posting, before the jurisdiction nobody expected her to find anything in. The body in front of her was doing the same thing, in a different apartment, with different instruments. Two people who had each, in their own jurisdiction, run a true and accurate record straight into the architecture that made true and accurate records disappear.
 
 "The families use the same words," Selvamani said. "Different languages. Same description."
 
@@ -629,7 +656,7 @@ Selvamani didn't look at it. She had the manner of someone who had stopped looki
 
 Then she set the chart down and looked across the table for the first time since they had sat.
 
-The look wasn't a welcome and wasn't a challenge. It was the look of someone who has been inside a thing alone for a very long time, and who has just checked whether the person across from them is the kind of person the thing can be shown to, and has found an answer. Not warmth — she wasn't a person who led with warmth, and neither was Yemina, and they both understood that in the same flat moment. Something more useful than warmth. Recognition. The specific recognition of a person who reads systems for a living, finding another one across a table full of unroutable evidence.
+The look wasn't a welcome and wasn't a challenge. It was the look of someone who has been inside a thing alone for a very long time, and who has just checked whether the person across from them is the kind of person the thing can be shown to, and has found an answer. Not warmth — she wasn't a person who led with warmth, and neither was Yemina, and they both understood that in the same flat moment. Something more useful than warmth. Recognition. The recognition of a person who reads systems for a living, finding another one across a table full of unroutable evidence.
 
 "You aggregate across corp contracts," Selvamani said. "Cross-district. That's the clearance."
 
@@ -637,7 +664,7 @@ The look wasn't a welcome and wasn't a challenge. It was the look of someone who
 
 She nodded once, the way you confirm a reading you already trusted. Then she picked up the next chart and turned it so Yemina could read it right-side up.
 
-[Beat 22]
+[Beat 23]
 "Where are they," Yemina said.
 
 "I don't know."
@@ -648,11 +675,11 @@ The answer came without hesitation, which Yemina noted the way she noted everyth
 
 "Threshold instability." Yemina turned the phrase over the way she turned over a clause in a contract, looking for the place it had been written to hide. "Meaning the door doesn't stay where the door was."
 
-"Meaning the door isn't a door. I use the word because there isn't a better one. It opens onto a place that doesn't keep its address." Selvamani crossed to the kitchen table and pulled a tablet from under a stack of printouts, the stack settling with the particular slump of paper that had been lifted and replaced ten thousand times. She turned the tablet to face Yemina.
+"Meaning the door isn't a door. I use the word because there isn't a better one. It opens onto a place that doesn't keep its address." Selvamani crossed to the kitchen table and pulled a tablet from under a stack of printouts, the stack settling with the slump of paper that had been lifted and replaced ten thousand times. She turned the tablet to face Yemina.
 
 A GLMZ map. Not the transit-overlay version Yemina pulled forty times a day, the one the districts kept clean for liability — this one had the anomaly layer switched on, the layer the permit offices generated and then suppressed because a flagged schism within a school's catchment radius was a disclosure nobody wanted to file. Across it, markers. Most of them small: the usual scatter of minor anomalies, dozens of them, the kind that turned up in building permits as a variance and in transit displays as a rerouted line and in nobody's investigation as anything at all. Each one logged once, to one authority, and never read beside the others. That was the architecture, Yemina thought. Not a conspiracy. A filing system doing exactly what it was built to do, which was keep each fact in the place where it couldn't testify against the fact in the next place.
 
-She read the map the way she read a ledger — not for the entry that screamed but for the pattern the entries made when you stopped trusting that any of them was an accident. She started counting. The minor markers clustered near schools. Not all schools; she discarded the ones that didn't. She wanted the geometry to be coincidence, because coincidence closed a case faster than pattern did, and she made herself try to break it before she let herself believe it. She picked three districts that shared no corp contract, no transit corridor, no catchment boundary. The markers held their relationship to the schools anyway. Three districts that had no reason to agree, agreeing.
+She read the map the way she read a ledger — not for the entry that screamed but for the pattern the entries made when you stopped trusting that any of them was an accident. She started counting. The minor markers clustered near schools. Not all schools; she discarded the ones that didn't. She wanted the arrangement to be coincidence, because coincidence closed a case faster than pattern did, and she made herself try to break it before she let herself believe it. She picked three districts that shared no corp contract, no transit corridor, no catchment boundary. The markers held their relationship to the schools anyway. Three districts that had no reason to agree, agreeing.
 
 "How many sites," she said.
 
@@ -670,7 +697,7 @@ At 35th and Halsted, a different marker. Larger. Red.
 
 "When the first child disappeared."
 
-[Beat 23]
+[Beat 24]
 She looked at the map for a long time. Then she overlaid the disappearance locations against it — her neuretics pulled them from the case file and placed them as points, twenty-two school sites scattered across districts that didn't share a contract, didn't share a server, didn't, until this kitchen table, share a map. Each point sat within a mile of a minor schism. Looked at one at a time, the way the case file forced you to look at them, that meant nothing. A child went missing near an anomaly; anomalies were everywhere; the city logged thousands of them in permits and reroutes and never thought twice. Proximity was the kind of fact that explained nothing because it was always available.
 
 But she stopped looking at them one at a time. She drew a line from each minor schism toward 35th and Halsted — not on the screen, in her head first, the way she checked a column of figures before she trusted it — and the lines didn't branch and didn't wander. They leaned. Every one of them leaned the same way, toward the red marker, the way iron filings lie down along a field you can't see until something makes them lie down. They had a center of gravity, and the center wasn't anywhere a child had gone missing.
@@ -689,13 +716,13 @@ She didn't elaborate on her own, so Yemina let the silence do the asking.
 
 Yemina didn't say anything.
 
-She was aware first of her own hands, flat on the edge of the table, and of the fact that she had gone still in the particular way she went still when a column of figures stopped adding up the way she'd assumed it would. Fifteen years of cross-corp work. Fifteen years moving between contracts, between stacks, between provisioning standards that never agreed with each other. The hardware in her own skull she had never upgraded past intake spec. The stack she had never let any single corp lock her into, because a locked stack was a corp's leash and she had spent fifteen years declining to wear one. She had always understood that the way Selvamani understood her fixed band — as a fact about herself, settled, finished. She had set it under *versatility.* It was the thing that let her read eight contracts at once. She had been, she realized, a little proud of it.
+She was aware first of her own hands, flat on the edge of the table, and of the fact that she had gone still in the way she went still when a column of figures stopped adding up the way she'd assumed it would. Fifteen years of cross-corp work. Fifteen years moving between contracts, between stacks, between provisioning standards that never agreed with each other. The hardware in her own skull she had never upgraded past intake spec. The stack she had never let any single corp lock her into, because a locked stack was a corp's leash and she had spent fifteen years declining to wear one. She had always understood that the way Selvamani understood her fixed band — as a fact about herself, settled, finished. She had set it under *versatility.* It was the thing that let her read eight contracts at once. She had been, she realized, a little proud of it.
 
 The pride went out of it as she watched the lines lean toward the red marker. Selvamani's neuretics was a welded needle; the pull had reached in and found a wall. Yemina reached for the word for what hers was and the word she found was the wrong word. Not versatility. Versatility was the consolation she'd told herself. She tried the professional taxonomy — *unprovisioned, cross-compatible, open band* — and every term in it described an opening, a thing left able to receive.
 
 The intruder hadn't found a gap. She had just never been closed.
 
-[Beat 24]
+[Beat 25]
 Yemina called the Anomalous Activity Monitoring Authority from the front steps of the building, because the lobby wouldn't take a clean signal and she wanted no part of her voice degraded on a recording she couldn't retrieve. The system asked for a corp credential before routing. She gave her contractor registration. There was a two-second pause that probably meant the system had flagged her as a non-employee and was deciding where to send that.
 
 She was sent somewhere. A menu read itself to her in the flat, friendly cadence of an interface built to sound like it was glad she had called. She selected *mass casualty event, schism proximity.* She was transferred. The next menu was longer. She selected *missing persons, confirmed schism transit.* She was transferred again, and the third menu offered her the word she had been looking for, four levels deep, where it could be reached only by someone who already knew the case was urgent. She selected *urgent.* The system noted her selection and placed her in a queue.
@@ -722,7 +749,7 @@ The child finished the second E and sat back on her heels to look at it.
 
 Yemina went back inside.
 
-[Beat 25]
+[Beat 26]
 Her apartment was on the fourth floor of a building that had been zoned residential after it stopped being economical as anything else. Two rooms. The window faced an airshaft, which meant the light never changed, only the temperature of the gray. She had lived here for six years. She had driven the contractor car to it every night and parked it in the same lot and climbed the same stairs, and in six years she hadn't put anything on the walls, because the lease specified that holes were to be filled at vacancy at the tenant's cost, and she had read that clause and decided the walls weren't worth the deposit.
 
 That night she sat at the table by the window and didn't sleep.
@@ -765,12 +792,12 @@ She picked up the phone.
 
 Then she called Ren Vasquez.
 
-[Beat 26]
+[Beat 27]
 He picked up on the second ring.
 
 She noted that. The first ring was a question and the second was an answer, and most people she called let the question run three or four times before they decided whether to be reachable. Ren had picked up on the second, which meant the phone had been in his hand, or near it, the way a thing is near you when you have been waiting for it without admitting that you were waiting.
 
-Something moved low in her chest when she heard his voice — not the word he said, just the sound, the tired careful sound of a man who had answered a call at two in the morning and had been half-expecting it. She had prepared for this call. She had the case summary organized in the order she would deliver it, the facts in sequence, the ask at the end, the operational framing. What she hadn't prepared for was the small physical fact of him answering, the specific weight of a person on the other end who hadn't yet said yes. She held that for half a second and set it down, and went to the summary.
+Something moved low in her chest when she heard his voice — not the word he said, just the sound, the tired careful sound of a man who had answered a call at two in the morning and had been half-expecting it. She had prepared for this call. She had the case summary organized in the order she would deliver it, the facts in sequence, the ask at the end, the operational framing. What she hadn't prepared for was the small physical fact of him answering, the weight of a person on the other end who hadn't yet said yes. She held that for half a second and set it down, and went to the summary.
 
 She hadn't worked out what she was going to say. That was unlike her. She filed for a living; she arranged sequences before she committed them to anything; she had a notebook on the table in front of her with a circled number in it. But the sentence she had assembled was *I think I know where the children are*, and after it, *I need someone who can feel the threshold before we're standing in it.* She had them in order. She had her finger, more or less, on the page.
 
@@ -820,7 +847,7 @@ The case was correct. She had checked it. Correct and right were set in differen
 
 She left the phone where it was. There was nothing in turning it back over that would tell her anything she didn't have. The cold off the lake was finding the seams of the window again, sideways, the way it moved through this part of the city at night. Tomorrow she would drive the gray car southwest with the heater that worked and the door that had stopped being argued with, and she would meet a man whose hands she had only seen still once, and that time she had been wrong about what stillness meant.
 
-[Beat 27]
+[Beat 28]
 She called Selvamani after she hung up with Ren. The line connected and Selvamani said "I'm already packing the modulator" before the reason for the call had been stated. No greeting, no question about why an investigator was phoning at that hour. Yemina noted the response the way she noted everything: a woman who had been waiting for the call didn't need to be told what it was about. The instruments had already told her. People who worked with the schisms long enough stopped being surprised by them and started being early.
 
 They met at 5:45 AM on the corner of 35th and Normal, a block north of the schism, close enough that the air had a wrongness to it she couldn't have measured but couldn't stop noticing — a faint pressure behind the eyes, the sense of standing near a sound too low to hear. The Veil at this hour was neither the night city nor the day one. The street sodium had cycled off but the sky hadn't come up past a flat bruised gray, and the block sat in the gap between the two: a shuttered noodle counter with its security mesh down, a pallet of bottled water sweating on a loading apron, a transit kiosk running its dead-hour loop to nobody. The first freight of the day moved somewhere east, a low grind through the ferrocement that she felt in the soles of her shoes before she heard it. The city hadn't woken up. It had only stopped pretending to sleep.
@@ -843,8 +870,8 @@ Ren took his hands out of his pockets. He turned them over and looked at them in
 
 "I know," he said.
 
-[Beat 28]
-They walked the last block at 6:10 AM in the particular silence of a city that had stopped being asleep but wasn't yet awake — the light gray-blue, the streets carrying the sounds of early freight and transit shifts changing over. A delivery rig idled two blocks east, its compressor cycling on and off in a rhythm she had heard ten thousand times and never once listened to. Somewhere a loading dock rolled up on a chain hoist. The first northbound transit of the morning passed under the street on its embedded line and she felt it more than heard it, a pressure that came up through the soles of her shoes and was gone. The block smelled of wet ferrocement and diesel and the burnt-sugar exhaust of a noodle cart that had set up early to catch the freight crews. Ordinary. The whole block was ordinary right up to the point where it wasn't. Selvamani had the modulator case over one shoulder and a portable sensor in her other hand. Ren walked slightly ahead without meaning to.
+[Beat 29]
+They walked the last block at 6:10 AM in the silence of a city that had stopped being asleep but wasn't yet awake — the light gray-blue, the streets carrying the sounds of early freight and transit shifts changing over. A delivery rig idled two blocks east, its compressor cycling on and off in a rhythm she had heard ten thousand times and never once listened to. Somewhere a loading dock rolled up on a chain hoist. The first northbound transit of the morning passed under the street on its embedded line and she felt it more than heard it, a pressure that came up through the soles of her shoes and was gone. The block smelled of wet ferrocement and diesel and the burnt-sugar exhaust of a noodle cart that had set up early to catch the freight crews. Ordinary. The whole block was ordinary right up to the point where it wasn't. Selvamani had the modulator case over one shoulder and a portable sensor in her other hand. Ren walked slightly ahead without meaning to.
 
 The 35th-and-Halsted schism was visible from half a block away.
 
@@ -854,15 +881,15 @@ The AAMA protocol needed twenty-one active precautions for a Class-3 designation
 
 Yemina had known schisms her whole life the way everyone in GLMZ knew them — as civic facts, marked hazards, the asterisked notation on transit route displays. The AAMA designated them by class, ascending severity, with clear operational parameters: hazard radius, reporting protocols, minimum response window. The designations implied a taxonomy, and a taxonomy implied a thing understood. The city treated them the way it treated crumbling transit infrastructure and flooded underpasses — marked on maps, asterisked in building permits, factored into property assessments. This was the correct administrative response. The administrative response didn't mean the thing was understood. It meant the city had learned to work around not knowing.
 
-She had seen three in person. This one was larger than that. The whole intersection had stopped being itself. Not a shimmer — not the small optical failure of a minor anomaly. The air above the four-way stop had a shape that shouldn't be air's shape: a column from the ground up, maybe forty feet across, with a geometry her eyes could follow for about two seconds before they stopped being able to hold it. The light moved differently inside it. Not faster or slower — differently, in a direction she didn't have a word for. The column wasn't the thing. It was the part of the thing that happened to intersect the street this morning, at this angle; she had the sudden certainty that if she walked around it, it wouldn't be the same shape from the other side.
+She had seen three in person. This one was larger than that. The whole intersection had stopped being itself. Not a shimmer — not the small optical failure of a minor anomaly. The air above the four-way stop had a shape that shouldn't be air's shape: a column from the ground up, maybe forty feet across, with a contour her eyes could follow for about two seconds before they stopped being able to hold it. The light moved differently inside it. Not faster or slower — differently, in a direction she didn't have a word for. The column wasn't the thing. It was the part of the thing that happened to intersect the street this morning, at this angle; she had the sudden certainty that if she walked around it, it wouldn't be the same shape from the other side.
 
 At the perimeter the air changed in her mouth. Cold first, the flat mineral cold of a basement that never warmed, and under it a taste like a coin held on the tongue, like the inside of her cheek the second before a nosebleed. Her back teeth registered a frequency she couldn't hear. The hair on her forearms stood without her permission and she didn't put it down; she let her body have the reaction because there was nothing in fifteen years of training that told her what to do with it. That was the part that landed. Not fear, not yet — recognition arriving in the wrong order, the body knowing before the file did.
 
-Because standing at the edge of it, she understood for the first time what fifteen years of incident reports had never been able to say: that the shape was occupied. That something had been watching from the other side of every schism she had ever documented, longer than the AAMA had existed to name them. She had written the word *anomaly* into more forms than she could count, and the word had meant *deviation*, a thing that failed to match the pattern, a thing the system would eventually fold back into normal. She understood now that she had been using a clerk's word for the wrong reason. There was a pattern. She had simply been on the wrong side of it to see who was keeping it. Every report she had ever filed had been a true and accurate record of the surface of a thing whose depth she hadn't believed in, and the reports weren't wrong, exactly. They were just the cover sheet. For one cold breath the fifteen years rearranged themselves behind her, the way a column of figures resolves into a different sum when you find the entry you'd transposed, and she felt the specific, professional vertigo of an archivist who has just learned her archive was a list of doors and not a list of rooms.
+Because standing at the edge of it, she understood for the first time what fifteen years of incident reports had never been able to say: that the shape was occupied. That something had been watching from the other side of every schism she had ever documented, longer than the AAMA had existed to name them. She had written the word *anomaly* into more forms than she could count, and the word had meant *deviation*, a thing that failed to match the pattern, a thing the system would eventually fold back into normal. She understood now that she had been using a clerk's word for the wrong reason. There was a pattern. She had simply been on the wrong side of it to see who was keeping it. Every report she had ever filed had been a true and accurate record of the surface of a thing whose depth she hadn't believed in, and the reports weren't wrong, exactly. They were just the cover sheet. For one cold breath the fifteen years rearranged themselves behind her, the way a column of figures resolves into a different sum when you find the entry you'd transposed, and she felt the professional vertigo of an archivist who has just learned her archive was a list of doors and not a list of rooms.
 
 Then she did what she always did. She set it down. She would carry the realization the way she carried the contractor car — without arguing with it, because arguing cost more than it returned. There were three children, or there had been, and a four-minute threshold, and a man already moving toward the wrong light because he had been moving toward it for three weeks. She breathed through her mouth to keep the coin taste off her tongue and made herself look at the column for a full two seconds before her eyes slid off it, and then she looked away on purpose, which wasn't the same as not being able to look. It was the only distinction she had left to make. She made it.
 
-[Beat 29]
+[Beat 30]
 Ren crossed the perimeter tape without breaking stride, and one of the cones shifted in his wake — a small, stupid thing, the kind of displacement that meant nothing — and then he was inside the column's edge and the column noticed.
 
 She didn't have a better word than *noticed*. The light inside the forty-foot oval moved and it moved *at him*, the directionless direction she'd been watching for two seconds now making a sudden, specific choice, and Ren stopped walking because his body had stopped walking, not because he had decided to. His arms came up. Not raised — lifted, the way a current lifts a thing that has no weight left to oppose it.
@@ -881,9 +908,9 @@ She pulled again, harder, her heels finding no purchase on the concrete — the 
 
 Then it released him.
 
-Not gently. It dropped him the way a hand drops something it has finished looking at, and she caught the weight wrong, his elbow catching her jaw on the way down, and they both hit the concrete hard, his knee on her forearm, her shoulder taking the impact for both of them. The frequency in her teeth stopped. The coin taste flooded her mouth. Above them the column continued its wrong geometry, indifferent, already not-looking, and Selvamani was at the perimeter tape screaming something in Tamil that Yemina did not speak and did not need to speak because the meaning was entirely clear.
+Not gently. It dropped him the way a hand drops something it has finished looking at, and she caught the weight wrong, his elbow catching her jaw on the way down, and they both hit the concrete hard, his knee on her forearm, her shoulder taking the impact for both of them. The frequency in her teeth stopped. The coin taste flooded her mouth. Above them the column continued its wrong shape, indifferent, already not-looking, and Selvamani was at the perimeter tape screaming something in Tamil that Yemina did not speak and did not need to speak because the meaning was entirely clear.
 
-[Beat 30]
+[Beat 31]
 Ren walked through the threshold at 6:14 AM with a slight turn of the shoulder, the way you go through a door you're not sure is fully open, and then he was on the other side.
 
 Yemina followed.
@@ -898,7 +925,7 @@ For one full second, all forty-seven missing children spoke at once. Not loudly 
 
 Then something from deeper in the space found her neuretics.
 
-It wasn't the intruder. She knew the intruder's architecture now — its precision, its careful margins, the specific texture of something that had been built over time to do a specific job. This hadn't been built. This had always been here.
+It wasn't the intruder. She knew the intruder's architecture now — its precision, its careful margins, the texture of something that had been built over time to do a job. This hadn't been built. This had always been here.
 
 It applied itself to her open neuretics the way weight applies itself to a hand held out flat — not a grip, not a probe, just the fact of a mass settling where her attention was. Her stack was contractor-grade, which meant it was rated for hostile intrusion: spoofed certificates, injection, the kinds of attack that announced themselves by trying to look like something else. It had no behavior for this. There was nothing to authenticate, nothing pretending, nothing that wanted in. The thing didn't want anything. It examined her with the quality of something very old examining something very small — not hostile, not curious, but present in the way that geological time is present: patient in a way that has nothing to do with patience, incurious in a way that has nothing to do with indifference. She was something it had noticed. Whether she continued to exist appeared to be a secondary consideration, the way the existence of a particular grain of sand is a secondary consideration to the tide that turns it over.
 
@@ -916,7 +943,7 @@ Then she was standing in the place between the frequencies. The cold in her ches
 
 ## Chapter 4
 
-[Beat 31]
+[Beat 32]
 It was a room that would not be cross-referenced.
 
 Yemina read interiors the way she read records: by what they kept. Every space in the city logged its own use somewhere — a holding cell in the quarter-degree slope of its floor toward a drain, a waiting area in the arc scuffed by ten thousand dragged chair legs, a clinic in the worn place at the counter where hands had signed. She had never walked into a room that did not, somewhere, hold the account of what had happened in it. You found that account and you read it up from there.
@@ -931,11 +958,11 @@ The children were there.
 
 Forty-seven of them, in a space that made room for them without any visible walls. She counted them, because counting was the one instrument she had brought in that still answered, and the count came to forty-seven, and she let it steady her the way a true tally steadied her at the foot of any roster she didn't yet trust. They were sitting, standing, moving in the small ways children move when they have been somewhere long enough to make it theirs. Some had formed little arrangements — clusters, games she couldn't name — and the space had simply yielded what they needed, the way a long-occupied waiting room grows its own unofficial order: the seat someone always takes, the corner that became a corner by use and not by wall.
 
-And here the part of her that read rooms did the thing she couldn't stop doing in any room: she read it for how long its occupants had been in it. She knew how to date an occupancy. Fresh fear stands at the edges, keeps its back to something, watches the door. Fear that has run out of fuel does what these children were doing — settles inward, builds routines, appoints the patient ones to keep order and lets the small ones be small. There was none of the held breath she would have logged in a room of children newly taken. There was, instead, the particular slackness of a place lived in past the point of dread: a boy on his back with his ankles crossed, two girls deep in some negotiation over a game with no pieces, a knot who had drifted together for no reason except that drifting together was a thing to do. She had read that curve in detention waiting areas and clinic queues and the back rows of administrative hearings. She had never read it in a place with no wall to put her back against — and the contradiction of it, institutional patience inside a room no institution could file, was the first thing she had found here her training could neither account for nor look away from.
+And here the part of her that read rooms did the thing she couldn't stop doing in any room: she read it for how long its occupants had been in it. She knew how to date an occupancy. Fresh fear stands at the edges, keeps its back to something, watches the door. Fear that has run out of fuel does what these children were doing — settles inward, builds routines, appoints the patient ones to keep order and lets the small ones be small. There was none of the held breath she would have logged in a room of children newly taken. There was, instead, the slackness of a place lived in past the point of dread: a boy on his back with his ankles crossed, two girls deep in some negotiation over a game with no pieces, a knot who had drifted together for no reason except that drifting together was a thing to do. She had read that curve in detention waiting areas and clinic queues and the back rows of administrative hearings. She had never read it in a place with no wall to put her back against — and the contradiction of it, institutional patience inside a room no institution could file, was the first thing she had found here her training could neither account for nor look away from.
 
 They weren't frightened. They had been waiting.
 
-[Beat 32]
+[Beat 33]
 Kito Bramley was nine and missing his front tooth and sitting cross-legged in whatever passed for the near part of this space. She had his file in her head before she had his face — Bramley, K., grade four, flagged Tuesday, guardian listed as grandmother, no secondary contact. The file didn't mention the gap in his teeth or the way he sat with his elbows on his knees like a man waiting out a delay he'd decided not to be angry about. He looked up at her with the expression of a child who has been somewhere strange long enough to have stopped being scared and started being bored.
 
 "You're not from the school," he said.
@@ -960,7 +987,7 @@ Kito looked around with the gravity of a child who has accepted a responsibility
 
 She didn't write that down. She wanted to — the pen was in her hand and the impulse to convert the strangeness into a line of ink was the oldest reflex she owned, the one that had survived every posting and outlasted every team. But there was no field on any form she carried for a watch that kept changing, and a child watching her record his fear as a data point would learn the wrong thing about why she had crouched. So she held the pen still against the notebook's cover and let the sentence stay where he'd put it, in the air between them, uncrossed.
 
-[Beat 33]
+[Beat 34]
 She stood and looked at the forty-seven children in the space that had no walls. She counted them. The count was a thing her hands did before her mind agreed to it, the same way she counted entries on a roster she didn't yet trust — left to right, top of the group to the bottom, the lips moving without sound. Forty-seven. Then she counted them again, because counting was one of the few procedures that still worked here, and a procedure that still worked was worth running twice.
 
 "Who brought you here?" she asked.
@@ -983,7 +1010,7 @@ He glanced toward the back of the group — not at Daria, who was still counting
 
 She felt it before she understood it.
 
-It arrived in the body first — a cold drop behind the sternum, the specific weightlessness of a stair that isn't there in the dark, the foot coming down and finding nothing. Her hand tightened on the notebook until the cover bowed. Her pulse moved into her ears the way the boy said the sound had moved into theirs, and she held still through it the way she had learned to hold still in rooms where showing what you felt was a thing that could be filed against you.
+It arrived in the body first — a cold drop behind the sternum, the weightlessness of a stair that isn't there in the dark, the foot coming down and finding nothing. Her hand tightened on the notebook until the cover bowed. Her pulse moved into her ears the way the boy said the sound had moved into theirs, and she held still through it the way she had learned to hold still in rooms where showing what you felt was a thing that could be filed against you.
 
 Because she had read this case correctly. She had found the gap — four to eleven minutes, flag to departure, across twenty-two sites and twenty-two months, each tally sitting politely under its own contract's alert threshold so that no single desk would ever see it whole. She had been the one node from which the alarm was visible at all. She had built that whole, patiently, the way she built everything: an entry at a time. And she had walked here carrying it like a finding.
 
@@ -1003,8 +1030,8 @@ Then she did the only thing she still knew how to do in a space where nothing el
 
 "Time to go," she said, to all forty-seven of them, and her voice came out level, because that was the instrument that still worked. "Everyone up. We're going home."
 
-[Beat 34]
-The children stood. Not in a rush — they had the careful unhurriedness of people who had been told to wait long enough that standing itself felt like a decision — but they stood, and the standing moved through the group like a single thing, Daria already on her feet and organizing the small ones by some hierarchy Yemina couldn't see the logic of but didn't question. The girl at the back of the light, the older one who had given Kito the headshake, didn't move yet. She watched Yemina with the specific attention of someone running a check she hadn't finished.
+[Beat 35]
+The children stood. Not in a rush — they had the careful unhurriedness of people who had been told to wait long enough that standing itself felt like a decision — but they stood, and the standing moved through the group like a single thing, Daria already on her feet and organizing the small ones by some hierarchy Yemina couldn't see the logic of but didn't question. The girl at the back of the light, the older one who had given Kito the headshake, didn't move yet. She watched Yemina with the attention of someone running a check she hadn't finished.
 
 *The second thing had wanted her name known here. The second thing was still here.*
 
@@ -1012,7 +1039,7 @@ Yemina held the girl's gaze for one second, two, then looked deliberately away �
 
 Kito fell in beside her, not asking about the fish again. He had asked it and she had not answered and he understood, at nine, that the not-answering was itself a kind of answer — adults who were going to fix things didn't stop to fix small things first. He walked with his hands in his pockets and his chin down, and she noticed, because noticing was the instrument, that he had positioned himself at her left — the side without the notebook, the side where her hand was free.
 
-[Beat 35]
+[Beat 36]
 Ren moved first. He stepped into the threshold and turned back to face the column, and his hands came up — both of them, palms out, the gesture of a man who had run lines before, who knew what a pace looked like when it had to be kept. "Single file," he said, and his voice had nothing in it but the instruction, stripped of everything else the way a frequency strip gets cleared before you run a signal you can't afford to muddy. "You match my pace. You don't stop for anything. If you drop something, it stays dropped."
 
 *Forty-seven at one per second was forty-seven seconds. One per second was fast. The children at the back would be running.*
@@ -1023,7 +1050,7 @@ Selvamani's voice came again from the other side. "Sixty."
 
 The column began to move.
 
-[Beat 36]
+[Beat 37]
 The first child through was the boy with no shoes, the one who had stood in the back of the column for the first three counts and moved to the front of it for the last two, as if he had thought about it and decided. He stepped through the threshold and the wrong light folded around him and then he was on the other side, standing on the Gray Zone's wet concrete in the pale morning, looking down at his feet with an expression Yemina couldn't see from here. The carrier tone spiked once, almost nothing, and then settled back to its fraying hum.
 
 One.
@@ -1036,7 +1063,7 @@ The second child went. The third. Ren had moved without her noticing — he was 
 
 The column moved.
 
-[Beat 37]
+[Beat 38]
 The count was in her chest — not tracked, just held there, a pressure she couldn't have named but couldn't have stopped keeping. Seven. Eight. The column moved in the rhythm children move when they are not running but want to, the held-back urgency of it, a line of bodies trying not to become a knot. Selvamani called forty seconds and Yemina turned to look at the carrier tone's source the way you turn toward a sound that has changed pitch, not because you need to see it but because the body decides before the mind does. The threshold's light was fraying at the edges — not dimming, not going out, but losing some structural property she had no vocabulary for, the way a column of figures loses coherence when the underlying table is corrupted. It was still open. It was also doing something she couldn't put in a report.
 
 *Thirty seconds is not enough.*
@@ -1047,33 +1074,33 @@ She moved to the threshold's near side, not through it, and began pulling childr
 
 Selvamani said ten seconds. Yemina did not stop moving.
 
-[Beat 38]
+[Beat 39]
 The light died.
 
-Not gradual — a single present moment in which it was there and then a single present moment in which it was not, the threshold returning to being a doorframe and nothing more, old wood in a dead-end alley off Buttress Street with no particular quality of light and no carrier tone and no wrong frequency against the teeth. Just a frame. Just a door that wasn't there. Yemina had her hand around a child's wrist — a girl, eight or nine, her pulse a small hard thing against Yemina's thumb — and the child was on the inside and then the threshold was a wall and there was no inside anymore, only the alley, only morning, only the wet concrete and the freight note carrying south and the twenty-two children who had made it through standing in a loose and silent group on the Gray Zone's gray pavement. The girl's wrist was still in her hand.
+Not gradual — a single present moment in which it was there and then a single present moment in which it was not, the threshold returning to being a doorframe and nothing more, old wood in a dead-end alley off Buttress Street with no quality of light and no carrier tone and no wrong frequency against the teeth. Just a frame. Just a door that wasn't there. Yemina had her hand around a child's wrist — a girl, eight or nine, her pulse a small hard thing against Yemina's thumb — and the child was on the inside and then the threshold was a wall and there was no inside anymore, only the alley, only morning, only the wet concrete and the freight note carrying south and the twenty-two children who had made it through standing in a loose and silent group on the Gray Zone's gray pavement. The girl's wrist was still in her hand.
 
 *Twenty-two. Not twenty-three.*
 
-She stood at the doorframe and put her palm flat against the wood. Solid. No frequency. No give. She pressed harder, the way you press a bruise to confirm it, and the wood was just wood, old and damp, the kind of thing that had been in this alley for thirty years without being anything. Ren was on her left, very still, his hands at his sides now because there was nothing to receive. She didn't look at him. She kept her palm on the wood and counted the children behind her twice — the count that came out twenty-two both times, which meant she had counted right and the math was what it was.
+She stood at the doorframe and put her palm flat against the wood. Solid. No frequency. No give. She pressed harder, the way you press a bruise to confirm it, and the wood was just wood, old and damp, the kind of thing that had been in this alley for thirty years without being anything. Ren was on her left, very still, his hands at his sides now because there was nothing to receive. She didn't look at him. She kept her palm on the wood and counted the children behind her twice — the count that came out twenty-two both times, which meant she had counted right and the count was what it was.
 
 *The boy in the blue jacket. Third row, left side. He had a tear in his collar.*
 
 "Selvamani," she said. Her voice came out flat, which was the voice she used when she was doing the thing that had to be done before she was allowed to feel the thing underneath it. "I need a location on the threshold's other exit point. Whatever it was keyed to, wherever it opened on the inside of the Dead Realm — I need it on record. Timestamp this. I need it on record that it closed at—" she checked her neuretics, "—06:41:17, with one child unaccounted for." She took her hand off the wood. "Do it now, before the log window closes."
 
-[Beat 39]
+[Beat 40]
 Selvamani's voice came back in under three seconds, which meant she had already been running the trace.
 
-"Timestamp confirmed. 06:41:17, threshold closure, one child unaccounted for, Kito Vasquez case file, incident addendum flagged." A pause — not hesitation, the kind of pause that has a search running inside it. "The interior terminus is logging as a fixed coordinate in the Dead Realm's third sublevel. Bearing 14-north by 7-east relative to the main access shaft. It's — Yemina, that coordinate is inside a sealed section. The seal is eleven years old."
+"Timestamp confirmed. 06:41:17, threshold closure, one child unaccounted for, Kito Bramley case file, incident addendum flagged." A pause — not hesitation, the kind of pause that has a search running inside it. "The interior terminus is logging as a fixed coordinate in the Dead Realm's third sublevel. Bearing 14-north by 7-east relative to the main access shaft. It's — Yemina, that coordinate is inside a sealed section. The seal is eleven years old."
 
 *Eleven years. The same age as the assignment that arrived before the case existed.*
 
-She turned away from the doorframe. The twenty-two children were still standing in their loose cluster on the wet pavement, nobody moving, the silence the particular kind that follows a loud thing even when the loud thing made no sound. The girl with the tear in her collar was not among them. Ren was looking at the ground three feet in front of his shoes, and she understood from the angle of his shoulders that he had already done the count and gotten twenty-two and was now doing what she was doing, which was holding the number at arm's length until there was somewhere to put it.
+She turned away from the doorframe. The twenty-two children were still standing in their loose cluster on the wet pavement, nobody moving, the silence the kind that follows a loud thing even when the loud thing made no sound. The boy with the tear in his collar was not among them. Ren was looking at the ground three feet in front of his shoes, and she understood from the angle of his shoulders that he had already done the count and gotten twenty-two and was now doing what she was doing, which was holding the number at arm's length until there was somewhere to put it.
 
 She walked to him. Not because there was anything to say but because the distance between them was the only variable she could close right now, and closing variables was the thing her hands knew how to do when the rest of her didn't.
 
 "I have a coordinate," she said.
 
-[Beat 40]
+[Beat 41]
 Ren looked up. Not fast — the way you look up when someone has said the one thing that gives the number somewhere to go. His hands came forward slightly, not reaching, just moving out of their held position, the way a person's body makes room for new information before the mind has cleared space for it.
 
 "Inside a sealed section," he said.

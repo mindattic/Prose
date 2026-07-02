@@ -180,8 +180,7 @@ from MxG and NxR; this strand resolves each one's standing thread.
 1. **Cyberpunk cliché is the contract, played at full volume.** The reunion, the mastermind
    reveal, the mirror-turned-ally, the vault-that-is-a-person, the walk from the explosion — all
    honored. The Character Doctrine is what keeps them from being empty: specific people, every one.
-2. **No magic, psionics, or schism content.** Pure tech, cyberware, hardware/body horror. The
-   Reads are neuretics-capable people, not sensitives. (Trilogy lock, inherited from MxG/NxR.)
+2. **Tech, cyberware, and hardware/body horror are the engine.** Psionics and sensitives exist in the GLMZ world and may appear as background color; they do not drive the plot. The Reads in the trilogy are tactical reads, not psionic events.
 3. **The trilogy's seam is real.** The crew's MxG and NxR jobs genuinely advanced the corp's
    program. This is retro-fit by planting clues in those strands (§9), not asserted.
 4. **The twenty-one are people, not a MacGuffin.** At least one has a name, a face, and a Drive.

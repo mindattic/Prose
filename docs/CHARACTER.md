@@ -279,7 +279,11 @@ economy (transactional, cost-tracking, close-third) must do it through *their* p
 **Kyle (all Kyle strands)**
 Files. Runs arithmetic. Tracks gaps between choice and consequence. Counts rounds, Φ,
 minutes as suspense. The 64-splice parliament votes. The NeoCortex overlay informs. Grief
-is handled by handling objects.
+is handled by handling objects. **Pre-computed state:** reads people as systems whose
+internal computation has already finished — "the kind of X that had already decided /
+concluded / cured / poured-and-set." This framing belongs to Kyle only. Other POVs
+describe the same observation through their own register (Rennick invoices, Tamsin reads
+load-bearing weight, Rook commits, Ekow reads territory).
 
 **Bear (TEST)**
 Thinks in *mission* and *obligation* — not guilt, not philosophy. The internal voice is

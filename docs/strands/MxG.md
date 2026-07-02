@@ -19,7 +19,7 @@ Five freelancers accept a corporate extraction job in GLMZ. The target extracts 
 
 ## §1 — Genre & Tone
 
-The quintessential run: **team heist → corp escalation → absurdist True Lies finale**. No magic. No fantasy. No psionics, no schism sensitivity, no 5D contact. Pure tech, cyberware, and the pragmatic choreography of people who are very good at getting paid.
+The quintessential run: **team heist → corp escalation → absurdist True Lies finale**. Pure tech and cyberware — the pragmatic choreography of people who are very good at getting paid. The GLMZ world is fully present (psionics exist, the Schism exists, sensitives exist as background fact) but this specific story's engine is expertise, not the uncanny.
 
 Register: **HEIST** — competence-porn, wry, fast-moving. The crew is good at their jobs. The world is trying to make that insufficient. Close-third POV on Rook. Occasional tactical distance when she is problem-solving on the fly.
 
@@ -161,7 +161,7 @@ The Lake Platform is not dramatic. It is a utilitarian civic node painted gray-w
 
 ## §7 — Locks (binding)
 
-1. **No magic, psionics, or schism content.** This story is pure tech and expertise. If a draft introduces sensitivity, schism contact, or 5D anything, reject it.
+1. **Tech and expertise are the engine.** The story runs on professional competence, not the uncanny. Psionics, schism, and sensitives exist in the GLMZ world — they are not foregrounded in this strand. Do not build plot pivots on them; they can exist as background color.
 2. **Ohara publishes the data herself.** Her hands on the terminal. She is not rescued; she accomplishes the mission.
 3. **Everyone gets paid.** Exact amount, Φ 40,000 split. No symbolic gestures, no debt carried forward.
 4. **Gault is not killed.** Burned from the network and cut loose. He made a mistake with incomplete information. The crew does not execute people for that.
