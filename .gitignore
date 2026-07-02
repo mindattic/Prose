@@ -55,5 +55,11 @@ venv/
 # Large ML model files (download separately)
 *.onnx
 
+# ML artifacts — all generated data lives in %APPDATA%\MindAttic\ML, never the repo
+v3/ml/artifacts/
+*.parquet
+*.pkl
+*.npy
+
 # scratch logs
 *.log
