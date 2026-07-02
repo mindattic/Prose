@@ -39,7 +39,7 @@ Three things differentiate StreetSamurai from the 1980s genre template — and f
 
 **1. AIs are ambient, not antagonists.** There is no rogue computer in a server room. AIs permeate the GLMZ the way microbes permeate a body: E.L.F.s (Emergent Life Forms) evolved from Substrate complexity; Leviathan-class intelligences haunt the infrastructure; the rogue AI routing Kyle's contracts is invisible precisely because everything is already connected. The interesting questions are not "what is the AI doing" but "how do you live inside a mind that might have your address."
 
-**2. No crude head-plugs.** Neuretics are a mesh *grown into the brain* during adolescence, not a port drilled into a skull. Remote operation (QCE — Quantum Crystal Entanglement) is wireless: a Rider leaves their body behind on a table while they operate drones, crawlers, and vehicles through quantum entanglement. Channelers commune with unlicensed AIs without a cable. The dated 1980s socket-in-the-skull image does not exist here; it would be like using a rotary phone.
+**2. No crude head-plugs.** Neuretics are a mesh *grown into the brain* during adolescence, not a port drilled into a skull. Remote operation (QCE — Quantum Crystal Entanglement) is wireless: an Exo leaves their body behind on a table while they operate drones, crawlers, and vehicles through quantum entanglement. Channelers commune with unlicensed AIs without a cable. The dated 1980s socket-in-the-skull image does not exist here; it would be like using a rotary phone.
 
 **3. The Ubiquitous Diaspora cast.** The GLMZ was reconstituted after the coastal collapses from the population of everywhere — Finnish-Nigerian fixers, Vietnamese-Ukrainian-Senegalese schism-sensitives, Ghanaian veterans, Korean-Brazilian investigators. No default ethnicity. No demographic shorthand. The cast reflects the world the series is set in.
 
@@ -73,7 +73,7 @@ These are the recurring, ownable elements that travel across media — the build
 **The GLMZ** — the Greater Lake Michigan Zone, year 2226. A vertical megacity half a kilometer tall on a post-collapse Lake Michigan shore. Twelve named zones from the neon-lit Spine (Zone 1 prestige) to the sub-surface strata and the gray zones between territories. Instantly identifiable visual language: the Substrate nano-cloud visible as a faint shimmer at altitude, the Pulse transit tubes running at Mach 6 through the city's bones, the Zone seams where corporate law ends and gray-zone economics begin. The GLMZ is a character.
 
 **The three professions** — the world's three most cinematic jobs:
-- **Riders** — operators who leave their own bodies behind on a table and remote-operate through wireless quantum entanglement. Their body is vulnerable; their awareness is somewhere else entirely. The most visually distinctive profession in the universe.
+- **Exos** — operators who leave their own bodies behind on a table and remote-operate through wireless quantum entanglement. Their body is vulnerable; their awareness is somewhere else entirely. The most visually distinctive profession in the universe.
 - **Channelers** — hackers who commune with unlicensed AIs. Not keyboard jockeys. They sit still and the city argues with them.
 - **Splicers** — the gene-mod and neuretics surgeons operating at the edge of legality. The people who make bodies into instruments.
 
@@ -206,7 +206,7 @@ The **season-villain model** (the *Justified* principle) is already baked into t
 ### What adapts to games
 
 - **The GLMZ as open world** — twelve named zones, the Pulse transit, the Substrate nano-layer as environmental variable, the three professions as playable character archetypes. The world-building depth is already game-ready.
-- **The three professions as character classes** — Rider (remote-operation, body left vulnerable), Channeler (AI communion, information warfare), Splicer (body modification, medical field-repair). Each has a distinct play loop and a distinct risk profile.
+- **The three professions as character classes** — Exo (remote-operation, body left vulnerable), Channeler (AI communion, information warfare), Splicer (body modification, medical field-repair). Each has a distinct play loop and a distinct risk profile.
 - **The Rook Trilogy as a contained linear narrative game** — three chapters, heist structure, social engineering (Lace's micro-expression cyberware) as a game mechanic, the lake platform as a set-piece level.
 - **The Schism as environmental horror** — spaces that have no inside; objects that enter through a direction 3D things do not have; children who walk toward the source because something called them. A horror-game mechanic with canonical physics.
 - **The QUANTA economy** — in-game currency denominated in compute-time; faction affiliations that price access differently; the gray-zone market as the player's supply chain.

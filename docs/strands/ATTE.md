@@ -82,6 +82,11 @@ only lever she controls.
 - The one who receives Nadia's folder at the dock gate.
 - Does not open it for four minutes. This is the whole scene.
 - Does not appear again in the story. He is a relay point.
+- **Cross-strand (TEST):** Bear is **Boris Johansen** (entity slug: `boris_johansen`). The
+  four-minute wait before touching the folder is obligation, not guilt — that is the soldier's
+  move. He is on a mid-GLMZ posting at this point in his arc. His TEST strand runs separately;
+  he does not need to know what is in the folder for this scene to land, and he doesn't open it
+  because he is not in the habit of reading other people's mail.
 
 **Nadia:**
 - The contact who hand-delivers the folder.

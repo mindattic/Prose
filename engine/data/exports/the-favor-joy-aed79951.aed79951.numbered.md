@@ -1,4 +1,4 @@
-# The Favor
+﻿# The Favor
 
 [Beat 1]
 The crew's logbook, delivered under the door at 07:02, opened the day the way it usually did: in five hands, without editorial consensus.

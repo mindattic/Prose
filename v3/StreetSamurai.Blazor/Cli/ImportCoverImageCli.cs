@@ -1,11 +1,11 @@
 using Microsoft.EntityFrameworkCore;
+using MindAttic.Media;
 using StreetSamurai.Core.Data;
-using StreetSamurai.Core.Data.Entities;
 
 namespace StreetSamurai.Blazor.Cli;
 
 /// <summary>
-/// <c>ss --import-cover</c> — import a local image file into the Assets table.
+/// <c>ss --import-cover</c> — import a local image file into the Media table.
 ///
 /// Usage:
 ///   ss --import-cover --file PATH [--strand-code CODE] [--type TYPE] [--notes TEXT]
@@ -14,7 +14,7 @@ namespace StreetSamurai.Blazor.Cli;
 ///   --file PATH          Required. Path to the image file (png, jpg, webp).
 ///   --strand-code CODE   Associate with a strand by its StrandCode (e.g. ATTE, VATD).
 ///                        Omit for global assets like logos or watermarks.
-///   --type TYPE          Asset type. Default: cover_image.
+///   --type TYPE          Media type. Default: cover_image.
 ///                        Values: cover_image | logo | watermark | banner | thumbnail | promotional
 ///   --notes TEXT         Optional free-text note.
 ///   --dry-run            Parse and validate only — do not write to DB.
@@ -28,11 +28,11 @@ public static class ImportCoverImageCli
 {
     public static async Task<int> RunAsync(string[] args, IServiceProvider sp)
     {
-        var file        = Arg(args, "--file");
-        var strandCode  = Arg(args, "--strand-code");
-        var type        = Arg(args, "--type") ?? "cover_image";
-        var notes       = Arg(args, "--notes");
-        var dryRun      = args.Contains("--dry-run");
+        var file       = Arg(args, "--file");
+        var strandCode = Arg(args, "--strand-code");
+        var type       = Arg(args, "--type") ?? "cover_image";
+        var notes      = Arg(args, "--notes");
+        var dryRun     = args.Contains("--dry-run");
 
         if (string.IsNullOrWhiteSpace(file))
         {
@@ -62,11 +62,11 @@ public static class ImportCoverImageCli
             _                 => "application/octet-stream",
         };
 
-        var data        = await File.ReadAllBytesAsync(file);
-        var fileName    = Path.GetFileName(file);
+        var fileName = Path.GetFileName(file);
+        var fileInfo = new FileInfo(file);
 
         Console.WriteLine($"File:    {file}");
-        Console.WriteLine($"Size:    {data.Length:N0} bytes ({data.Length / 1024.0:F1} KB)");
+        Console.WriteLine($"Size:    {fileInfo.Length:N0} bytes ({fileInfo.Length / 1024.0:F1} KB)");
         Console.WriteLine($"Type:    {type}");
         Console.WriteLine($"MIME:    {contentType}");
         if (strandCode is not null) Console.WriteLine($"Strand:  {strandCode}");
@@ -75,14 +75,13 @@ public static class ImportCoverImageCli
         var factory = sp.GetRequiredService<IDbContextFactory<StreetSamuraiDbContext>>();
         await using var db = await factory.CreateDbContextAsync();
 
-        Guid? strandId   = null;
-        Guid? universeId = null;
+        int? tenantId = null;
 
         if (!string.IsNullOrWhiteSpace(strandCode))
         {
             var strand = await db.Strands
                 .Where(s => s.StrandCode == strandCode)
-                .Select(s => new { s.Id, s.UniverseId, s.Title })
+                .Select(s => new { s.Id, s.Title })
                 .FirstOrDefaultAsync();
 
             if (strand is null)
@@ -91,27 +90,19 @@ public static class ImportCoverImageCli
                 return 1;
             }
 
-            strandId   = strand.Id;
-            universeId = strand.UniverseId;
             Console.WriteLine($"Strand:  {strand.Title} ({strand.Id})");
         }
 
-        var asset = new Asset
-        {
-            Type          = type,
-            StrandId      = strandId,
-            UniverseId    = universeId,
-            FileName      = fileName,
-            ContentType   = contentType,
-            Data          = data,
-            FileSizeBytes = data.Length,
-            Notes         = notes,
-        };
+        await using var scope = sp.CreateAsyncScope();
+        var store = scope.ServiceProvider.GetRequiredService<IMediaStore>();
+        await using var stream = File.OpenRead(file);
+        var item = await store.UploadAsync(
+            stream, fileName, contentType,
+            tenantId: tenantId,
+            mediaType: type,
+            notes: notes);
 
-        db.Assets.Add(asset);
-        await db.SaveChangesAsync();
-
-        Console.WriteLine($"Saved:   {asset.Id}");
+        Console.WriteLine($"Saved:   {item.Uid}  ({item.FileName}, {item.SizeBytes:N0} bytes)");
         return 0;
     }
 

@@ -342,7 +342,21 @@ Score: **88.1/100** (N=120 mixed panel, 2026-06-21, hash dd452fbf1ffb). LOCKED.
 
 ## 9. Notes for future Vultures strands {#SS-VATD-9}
 
-Carrion Reclamations + the Vultures are established GLMZ texture. Tomas and Levin deliver
-Kyle's "corpse" in Street Meat (see [[SM]]). The VULTURES register is available for
-any body-recycler black-comedy noir in the GLMZ. The Tears/Resonance Zone lattice
-connection is an UNRESOLVED story hook.
+Carrion Reclamations + the Vultures are established GLMZ texture. The VULTURES register is
+available for any body-recycler black-comedy noir in the GLMZ.
+
+**Street Meat / BCODA (cross-strand):** Tomas and Levin deliver Kyle's "corpse" in Street Meat.
+Levin is the Vulture Kyle recruits against his will. Kyle doesn't threaten — he arranges: Levin
+wakes already in the job, the Tears are in him, the manifest says non-viable but the eyes are
+open. He does not remember how the call came in. The route log has a number Levin keeps out of
+the route log: a pickup that didn't scan, a delivery that didn't register. It is the most
+expensive single line in his working life, and no auditor will ever flag it. Levin carries this
+with the rest.
+
+**Tears / Resonance Zone lattice (cross-strand — planted 2026-07-02):** The HPPD residual the
+Tears leave — the crawling geometric grid planted in the finale's coda — is the same
+interference-pattern structure Sasha Võ (SRZR) experiences as her baseline schism sense. They
+are perceiving the same thing from different positions and naming it differently. This is a
+**world truth, not a plot reveal**: it is never confirmed or connected in-text. The plant is in
+VATD beat 900.0 (final wagon drive); the rhyme is in SRZR beat 400.0 (bridge, live-well
+detection). Encode the events; do not confirm the connection.

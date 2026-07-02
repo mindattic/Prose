@@ -1,4 +1,4 @@
-# Underclan
+﻿# Underclan
 
 _In a forgotten labyrinth of drowned tunnels, abandoned infrastructure, and impossible machines, the Underclan survives by ancient rituals, living candles, and one unbreakable law: never let the surface know they exist.
 
@@ -882,7 +882,7 @@ He understood that quality. He felt it often.
 
 The device showed a second image: a place. Not Homewater — he would have known Homewater by smell even in a flat image, and this was different. But underground. The image had the quality of the deep: the arched ceilings, the brick-and-tile of the old infrastructure, the low light. Someone had been down there taking images, and now the surface was looking at them.
 
-He looked at the image for a long time. The angle was wrong for a person — too low, too steady, a viewpoint with no human body behind it. He didn't know the word for what had done this. Noor, later, would tell him: a Rider's crawler, sent ahead of the hunt, inhabiting the machine while the Rider's own body waited somewhere above. The crawler had moved through the tunnels in the dark and the Rider had looked through its eyes and the surface had written down the way down.
+He looked at the image for a long time. The angle was wrong for a person — too low, too steady, a viewpoint with no human body behind it. He didn't know the word for what had done this. Noor, later, would tell him: an Exo's crawler, sent ahead of the hunt, inhabiting the machine while the Exo's own body waited somewhere above. The crawler had moved through the tunnels in the dark and the Exo had looked through its eyes and the surface had written down the way down.
 
 Someone had written down the way down.
 

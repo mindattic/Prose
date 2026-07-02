@@ -317,6 +317,7 @@ problem: she has the truth and no one she trusts to carry it.
 | Ch | Goal (one line) | Convergence / conspiracy beat | Status |
 |---|---|---|---|
 | 21 | **[EXISTING BEAT 11]** The camel-man in the towers. | The camel on the glass-floored walkway twenty floors up, no one reacting; she asks what it wants when this is done; it turns the question back; she has no answer; **she does not step back this time.** (The flaw cracking: she stays in the signal.) | DRAFTED |
+| 21.5 | **[CROSS-STRAND — beat `019f247a`; inserted 2026-07-02]** Glim guide: Homewater crossing. | Sasha follows the draw down from the walkway into The Works. A door that opens before she touches the handle. A boy who navigates by hum and air-change leads her to Homewater. The Oarsman (CANALKEEP-08) rows them across on a freely-given fare. Glim tells her: *the Warm has been wrong for six weeks. Something is pulling at it.* Universe doing its thing. She turns northeast. **Cross-pollination:** Underclan pre-knowledge of drilling disruption (UNDR). | DRAFTED |
 | 22 | **[EXISTING BEAT 12]** Under the eastern colonnade. | Three live wells staged at different depths; the cabal drilling toward the far side under ten thousand people; the far side at 72 Hz pushing back, patient, refusing. *The thing-bigger-than-herself made literal: the rot was never at the edge.* | DRAFTED |
 | 23 | The official lie, seen from inside. | **NEW (connective tissue).** She reads the colonnade's *cover*: it presents as a Consensus monitoring array, placarded with the merged-minds glyph, telling a passing thumb *nothing here you can open.* She understands the fog — the Reach story keeps every eye pointed outward so no one audits the drill under the Exchange. *Conspiracy integration: she sees L1/L2/L3 as one machine, without the narrative ever confirming L0.* | TO WRITE |
 | 24 | **[EXISTING BEAT 13]** Found. | Four Halcyon operatives with a floor-counter for a thing she does not do; Problem Solver right / Trouble Maker left, cross-draw geometry; she comes out with a hole above the ribs, their comms rig, and a signal window. | DRAFTED |
@@ -344,6 +345,7 @@ problem: she has the truth and no one she trusts to carry it.
 | Beat 8 | First anomaly (bridge) | **Ch 17** | Reframed as proof-of-value to the cell; prose unchanged. |
 | Beats 9–10 | Entanglement / dead-drop · Cost | **Ch 19** | Reframed: dead-drop now sits after the betrayal (Ch 18); prose unchanged, context added by surrounding chapters. |
 | Beat 11 | Camel in towers | **Ch 21** | None. |
+| (Glim guide) | Cross-strand: Homewater crossing | **Between Ch 21–22** | NEW — inserted 2026-07-02; beat ID `019f247a-4e28-788f-9e97-fb8a6a009735`. Underclan×SRZR cross-pollination. |
 | Beat 12 | Under the colonnade | **Ch 22** | None. Ch 23 is new connective tissue inserted after it. |
 | Beat 13 | Found | **Ch 24** | None. |
 | Beat 14 | The receiver's problem | **Ch 25** | None. |

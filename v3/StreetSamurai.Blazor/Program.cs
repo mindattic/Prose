@@ -18,6 +18,7 @@ using StreetSamurai.Core.Interfaces;
 using StreetSamurai.Core.Models;
 using StreetSamurai.Core.Services;
 using StreetSamurai.Shared.Services;
+using MindAttic.Media;
 using MindAttic.Vault.Configuration;
 using MindAttic.Vault.DependencyInjection;
 
@@ -1433,8 +1434,8 @@ if (args.Contains("--import-strand"))
     return;
 }
 
-// CLI mode: import a local image file (png, jpg, webp) into the Assets table.
-// Optionally links to a strand by --strand-code and sets the asset type.
+// CLI mode: import a local image file (png, jpg, webp) into the Media table.
+// Optionally links to a strand by --strand-code and sets the media type.
 //   ss --import-cover --file PATH [--strand-code CODE] [--type TYPE] [--notes TEXT] [--dry-run]
 if (args.Contains("--import-cover"))
 {
@@ -1445,20 +1446,6 @@ if (args.Contains("--import-cover"))
     return;
 }
 
-// CLI mode: AI cover-image generation via API (ChatGPT/Gemini/Ideogram/Flux).
-// Stores prompt in CoverImagePrompts, generated asset in Assets, links via AssetId.
-//   ss --generate-cover --list [--strand-code CODE]
-//   ss --generate-cover --save --strand-code CODE --generator NAME --prompt "TEXT" [...]
-//   ss --generate-cover --prompt-id GUID [--output PATH] [--dry-run]
-//   ss --generate-cover --strand-code CODE --generator NAME --prompt "TEXT" [--output PATH]
-if (args.Contains("--generate-cover"))
-{
-    var cliBuilder = WebApplication.CreateBuilder(args);
-    cliBuilder.Services.AddStreetSamuraiServices();
-    var cliApp = cliBuilder.Build();
-    Environment.ExitCode = await GenerateCoverImageCli.RunAsync(args, cliApp.Services);
-    return;
-}
 
 // CLI mode: burst oversized beats (e.g. chapter-as-one-beat from old book
 // imports) into paragraph-sized pieces. Idempotent — already-small beats
@@ -2182,6 +2169,10 @@ app.MapRazorComponents<App>()
 // change-password,reset/request,reset/confirm}. These OWN sign-in (the Razor components
 // only render the antiforgery-protected forms that post here).
 app.MapMindAtticAuthEndpoints(group => group.RequireRateLimiting("login"));
+
+// Media file serve endpoint — GET /_media/{uid:guid}
+// Local disk files stream inline; Azure Blob URIs redirect to the blob URL.
+app.MapMediaEndpoints();
 
 // Episode audio: serve the per-beat MP3 files the /listen page plays.
 // File path is engine/audio/episodes/{episodeId}/{index:D3}.mp3 — bound to the

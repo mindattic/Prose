@@ -17,10 +17,101 @@ namespace StreetSamurai.Core.Migrations
         {
 #pragma warning disable 612, 618
             modelBuilder
-                .HasAnnotation("ProductVersion", "10.0.8")
+                .HasAnnotation("ProductVersion", "10.0.9")
                 .HasAnnotation("Relational:MaxIdentifierLength", 128);
 
             SqlServerModelBuilderExtensions.UseIdentityColumns(modelBuilder);
+
+            modelBuilder.Entity("MindAttic.Media.MediaItem", b =>
+                {
+                    b.Property<int>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("int");
+
+                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"));
+
+                    b.Property<string>("BlobUri")
+                        .HasMaxLength(1024)
+                        .HasColumnType("nvarchar(1024)");
+
+                    b.Property<byte[]>("Bytes")
+                        .HasColumnType("varbinary(max)");
+
+                    b.Property<string>("ContentType")
+                        .IsRequired()
+                        .HasMaxLength(200)
+                        .HasColumnType("nvarchar(200)");
+
+                    b.Property<DateTime>("CreatedUtc")
+                        .HasColumnType("datetime2");
+
+                    b.Property<DateTime?>("DeletedUtc")
+                        .HasColumnType("datetime2");
+
+                    b.Property<string>("Extra")
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<string>("FileName")
+                        .IsRequired()
+                        .HasMaxLength(400)
+                        .HasColumnType("nvarchar(400)");
+
+                    b.Property<string>("Folder")
+                        .IsRequired()
+                        .HasMaxLength(400)
+                        .HasColumnType("nvarchar(400)");
+
+                    b.Property<int?>("Height")
+                        .HasColumnType("int");
+
+                    b.Property<bool>("IsDeleted")
+                        .HasColumnType("bit");
+
+                    b.Property<string>("MediaType")
+                        .IsRequired()
+                        .HasMaxLength(100)
+                        .HasColumnType("nvarchar(100)");
+
+                    b.Property<DateTime>("ModifiedUtc")
+                        .HasColumnType("datetime2");
+
+                    b.Property<string>("Notes")
+                        .HasMaxLength(2000)
+                        .HasColumnType("nvarchar(2000)");
+
+                    b.Property<byte[]>("RowVersion")
+                        .IsConcurrencyToken()
+                        .ValueGeneratedOnAddOrUpdate()
+                        .HasColumnType("rowversion");
+
+                    b.Property<string>("Sha256")
+                        .IsRequired()
+                        .HasMaxLength(64)
+                        .HasColumnType("nvarchar(64)");
+
+                    b.Property<long>("SizeBytes")
+                        .HasColumnType("bigint");
+
+                    b.Property<int?>("TenantId")
+                        .HasColumnType("int");
+
+                    b.Property<Guid>("Uid")
+                        .HasColumnType("uniqueidentifier");
+
+                    b.Property<int?>("Width")
+                        .HasColumnType("int");
+
+                    b.HasKey("Id");
+
+                    b.HasIndex("Sha256");
+
+                    b.HasIndex("Uid")
+                        .IsUnique();
+
+                    b.HasIndex("TenantId", "Folder", "FileName");
+
+                    b.ToTable("Media");
+                });
 
             modelBuilder.Entity("StreetSamurai.Core.Data.Entities.Ammunition", b =>
                 {
@@ -574,69 +665,6 @@ namespace StreetSamurai.Core.Migrations
                     b.HasIndex("ArchetypeId", "Position");
 
                     b.ToTable("ArchetypeWillNever");
-                });
-
-            modelBuilder.Entity("StreetSamurai.Core.Data.Entities.Asset", b =>
-                {
-                    b.Property<Guid>("Id")
-                        .ValueGeneratedOnAdd()
-                        .HasColumnType("uniqueidentifier");
-
-                    b.Property<string>("ContentType")
-                        .IsRequired()
-                        .HasMaxLength(100)
-                        .HasColumnType("nvarchar(100)");
-
-                    b.Property<DateTime>("CreatedAt")
-                        .HasColumnType("datetime2");
-
-                    b.Property<byte[]>("Data")
-                        .HasColumnType("varbinary(max)");
-
-                    b.Property<string>("FileName")
-                        .IsRequired()
-                        .HasMaxLength(500)
-                        .HasColumnType("nvarchar(500)");
-
-                    b.Property<long>("FileSizeBytes")
-                        .HasColumnType("bigint");
-
-                    b.Property<int?>("Height")
-                        .HasColumnType("int");
-
-                    b.Property<string>("Notes")
-                        .HasMaxLength(1000)
-                        .HasColumnType("nvarchar(1000)");
-
-                    b.Property<string>("StorageUrl")
-                        .HasMaxLength(1000)
-                        .HasColumnType("nvarchar(1000)");
-
-                    b.Property<Guid?>("StrandId")
-                        .HasColumnType("uniqueidentifier");
-
-                    b.Property<string>("Type")
-                        .IsRequired()
-                        .HasMaxLength(50)
-                        .HasColumnType("nvarchar(50)");
-
-                    b.Property<Guid?>("UniverseId")
-                        .HasColumnType("uniqueidentifier");
-
-                    b.Property<DateTime>("UpdatedAt")
-                        .HasColumnType("datetime2");
-
-                    b.Property<int?>("Width")
-                        .HasColumnType("int");
-
-                    b.HasKey("Id");
-
-                    b.HasIndex("StrandId")
-                        .HasFilter("[StrandId] IS NOT NULL");
-
-                    b.HasIndex("Type");
-
-                    b.ToTable("Assets");
                 });
 
             modelBuilder.Entity("StreetSamurai.Core.Data.Entities.Automaton", b =>
@@ -3137,62 +3165,6 @@ namespace StreetSamurai.Core.Migrations
                     b.HasIndex("CorponationId", "Position");
 
                     b.ToTable("CorponationCommonNames");
-                });
-
-            modelBuilder.Entity("StreetSamurai.Core.Data.Entities.CoverImagePrompt", b =>
-                {
-                    b.Property<Guid>("Id")
-                        .ValueGeneratedOnAdd()
-                        .HasColumnType("uniqueidentifier");
-
-                    b.Property<Guid?>("AssetId")
-                        .HasColumnType("uniqueidentifier");
-
-                    b.Property<DateTime>("CreatedAt")
-                        .HasColumnType("datetime2");
-
-                    b.Property<DateTime?>("GeneratedAt")
-                        .HasColumnType("datetime2");
-
-                    b.Property<string>("Generator")
-                        .IsRequired()
-                        .HasMaxLength(50)
-                        .HasColumnType("nvarchar(50)");
-
-                    b.Property<string>("Label")
-                        .HasMaxLength(200)
-                        .HasColumnType("nvarchar(200)");
-
-                    b.Property<string>("NegativePrompt")
-                        .HasColumnType("nvarchar(max)");
-
-                    b.Property<string>("Notes")
-                        .HasMaxLength(500)
-                        .HasColumnType("nvarchar(500)");
-
-                    b.Property<string>("Parameters")
-                        .HasColumnType("nvarchar(max)");
-
-                    b.Property<string>("PromptText")
-                        .IsRequired()
-                        .HasColumnType("nvarchar(max)");
-
-                    b.Property<Guid?>("StrandId")
-                        .HasColumnType("uniqueidentifier");
-
-                    b.Property<DateTime>("UpdatedAt")
-                        .HasColumnType("datetime2");
-
-                    b.HasKey("Id");
-
-                    b.HasIndex("AssetId");
-
-                    b.HasIndex("Generator");
-
-                    b.HasIndex("StrandId")
-                        .HasFilter("[StrandId] IS NOT NULL");
-
-                    b.ToTable("CoverImagePrompts");
                 });
 
             modelBuilder.Entity("StreetSamurai.Core.Data.Entities.Cyberware", b =>
@@ -9339,16 +9311,6 @@ namespace StreetSamurai.Core.Migrations
                     b.Navigation("Archetype");
                 });
 
-            modelBuilder.Entity("StreetSamurai.Core.Data.Entities.Asset", b =>
-                {
-                    b.HasOne("StreetSamurai.Core.Data.Entities.Strand", "Strand")
-                        .WithMany()
-                        .HasForeignKey("StrandId")
-                        .OnDelete(DeleteBehavior.NoAction);
-
-                    b.Navigation("Strand");
-                });
-
             modelBuilder.Entity("StreetSamurai.Core.Data.Entities.Automaton", b =>
                 {
                     b.HasOne("StreetSamurai.Core.Data.Entities.Entity", "Entity")
@@ -9988,23 +9950,6 @@ namespace StreetSamurai.Core.Migrations
                         .IsRequired();
 
                     b.Navigation("Corponation");
-                });
-
-            modelBuilder.Entity("StreetSamurai.Core.Data.Entities.CoverImagePrompt", b =>
-                {
-                    b.HasOne("StreetSamurai.Core.Data.Entities.Asset", "Asset")
-                        .WithMany("Prompts")
-                        .HasForeignKey("AssetId")
-                        .OnDelete(DeleteBehavior.SetNull);
-
-                    b.HasOne("StreetSamurai.Core.Data.Entities.Strand", "Strand")
-                        .WithMany()
-                        .HasForeignKey("StrandId")
-                        .OnDelete(DeleteBehavior.NoAction);
-
-                    b.Navigation("Asset");
-
-                    b.Navigation("Strand");
                 });
 
             modelBuilder.Entity("StreetSamurai.Core.Data.Entities.Cyberware", b =>
@@ -11578,11 +11523,6 @@ namespace StreetSamurai.Core.Migrations
                     b.Navigation("WillAlways");
 
                     b.Navigation("WillNever");
-                });
-
-            modelBuilder.Entity("StreetSamurai.Core.Data.Entities.Asset", b =>
-                {
-                    b.Navigation("Prompts");
                 });
 
             modelBuilder.Entity("StreetSamurai.Core.Data.Entities.Automaton", b =>

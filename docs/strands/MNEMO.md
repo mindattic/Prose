@@ -313,11 +313,21 @@ to discredit Amara is evidence of their own protocol working.
 
 ### Ekow Ato
 
+- **Cross-strand (VATD):** After the Han Do-yun incident, Ekow burned his Lotus contract and
+  went Gray Zone. He takes jobs with clean premises and verifiable targets — the MNEMO brief
+  looks like that: stolen neuretic data, a courier with access he shouldn't have. He takes it
+  because VATD taught him the cost of serving masters who will discard you. His withdrawal when
+  the premise collapses is load-bearing: he will not be the instrument of something he cannot
+  call correct. He has already made this choice once, at higher cost. He does not explain this
+  to Seto.
 - Gray Zone contract (not Lotus). Hired on false premise: "courier moving stolen proprietary
   neuretic data." Gives Seto 7 days and withdraws when the premise collapses on
   story-publication day.
 - VATD-established doctrines carry forward: deliberate patience, minimum footprint,
   compartmentation, information hygiene; machete; handkerchief folded in quarters.
+- **Razor / machete dichotomy with Ciro (LOCKED §3):** His declared agricultural instrument vs.
+  Ciro's preening tool. He is the character who has already decided what he is before he enters
+  the room.
 - He does not become an ally. He becomes an absence.
 
 ### Nuru Banda
@@ -573,3 +583,24 @@ Act 2 onward after the merge; §7 "Ch27/Ch28" are now Ch26/Ch27 = Zone 7, Tuesda
     calibration — "He had not taken her platform. He had cleared her calendar." (ties to Theodora).
 - **MNEMO-US-9 ✅** Docx exported. V4.docx/epub/pdf at
   `R:\Desktop\EPub\MindAttic\GLMZ\Mnemosync\` 2026-06-23.
+
+---
+
+## 11. Cross-Strand Authorial Notes {#MNEMO-11}
+
+World-consequence connections from other strands. **Beat edits are blocked while MNEMO is near
+the 85% threshold** (R7=84.0%). All connections documented here are docs-layer only.
+
+**Pilsen Veil / ATTE (world geography):** The Pilsen Veil is the same zone Yemina Fola
+investigates in ATTE. Amara Osei published an award-winning piece on the Veil's early reports —
+her piece ran before Yemina's truancy-case investigation and covered the surface story without
+the three missing children. Amara's published record is part of why Orison positioned her as a
+credibility asset. The missed angle on the truancy case is a quiet irony; it does not need to
+surface in prose.
+
+**Soraya / Phase II (world consequence — MxG):** Dr. Soraya Yildirim's nano-therapeutic formula,
+published via the Lake Platform in MxG, provides an alternative to full neuretics integration and
+disrupts Orison's market positioning. This accelerates the Phase II timeline — Orison has
+commercial pressure to move the rollout before independent formulas erode share. The formula
+was published after MNEMO's events. If MNEMO is ever extended, the Soraya publication is a live
+world-consequence that shortens Orison's deployment window.

@@ -1,4 +1,4 @@
-# The Offer
+﻿# The Offer
 
 [Beat 1]
 The man was already seated at Mrs. Chen's counter when Kyle arrived at 19:30, which was the first message.

@@ -1,4 +1,4 @@
-# Chapter 4: The Carousel
+﻿# Chapter 4: The Carousel
 
 _The entity's standing contract delivers its first real scope — hold the broken carousel on Leavitt while a reclamation crew comes for the junction beneath it. Kyle and Pixel hold the park, cut the line on the entity's first room, and receive the entity's first unstructured message. The tan-coat watcher is logged. Sable arrives and finds three monitoring architectures where the entity found one. Three nights later, Kyle maps a funded surveillance lattice to the entity's first address._
 

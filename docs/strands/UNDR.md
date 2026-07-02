@@ -5,7 +5,7 @@ code: UNDR
 layer: strand-bible
 universe: glmz
 status: in-progress
-updated: 2026-06-25
+updated: 2026-07-02
 ---
 
 # STRAND BIBLE — Underclan (UNDR) {#SS-UNDR}
@@ -101,6 +101,37 @@ ages run backward like tree-rings:
 - **the Tartarian Empire** (*the Tartar*, *the Glory*) — the deepest reach: vaulted stone, drowned
   beaux-arts halls, ornate dead grandeur from before anyone's grandfather. **Taboo.** The Underclan
   believe the dead live here. The further down, the finer the ruin, and the worse the fear.
+  **The navigation problem (ongoing mystery — LOCKED):** Braves who have descended past the Old Deep
+  describe it consistently — rooms with heights that make no sense, cornices that cannot be utility
+  conduits, floors that were laid by people who wanted the place to be *beautiful*. Some Braves have
+  touched the carved stone. Some have brought back fragments. But no Brave who has reached the
+  Tartarian level has been able to lead another Brave back to the same place. The route that worked
+  once does not work twice. The depth is right. The strata indicators are right. The rooms are simply
+  not there. Listener Vesh's position: *the Tartarian Empire is real and it is not for the living to
+  visit repeatedly. It opens once. You are shown. You return. That is the law of deep places.* See
+  also [[SS-A39]] for the full canonical statement of this mystery.
+
+**The Works (navigation hazard — binding for all GLMZ prose):**
+The surface calls the entire accumulated below-grade infrastructure of Meridian 88 **The Works**: the
+overlapping residue of two centuries of arcology construction, corpo utility builds, abandoned transit
+projects, decommissioned service networks, and Pulse deep-anchoring. It is not a system. It is not a
+map. It is the sediment of every project that ever bored a hole in the ground and never fully closed
+it. Passages reroute when a new utility run walls them off. Routes memorized one season dead-end into
+tokamak expansion walls the next. The geometry at depth — below Homewater, past the Old Deep, where
+the Tartarian strata should begin — does not follow the logic of construction. It follows something
+else, or nothing coherent at all. This is the surface's practical explanation for why the Tartarian
+ruins cannot be reliably found. The maze is real. Whether the maze is the only explanation is the
+question the strand never answers.
+
+**Drilling disruption (cross-strand — SRZR / Halcyon Combine):** Halcyon Combine and OBERON are
+drilling 5D wells under the CorpoNation towers in the Exchange District, above and east of The
+Works. The drilling disturbs the tokamak hum of the Warm before any surface instrument registers
+the anomaly. The Underclan feel it first — a wrong vibration in the Current, a frequency that
+does not belong to the plant cycle. Glim, as a threshold person after the events of his own arc,
+is able to translate this disruption for surface operatives who have the sense to listen. This
+is the world-truth that enables the SRZR cross-pollination: Sasha Võ's schism-sense and Glim's
+deep-reading converge on the same signal from opposite directions. Do not name Halcyon explicitly
+in UNDR prose — Glim knows *wrong*, not *who*.
 
 **Half a dozen micro-biomes, because the labs above leak.** Run-off from the corpo labs of Meridian
 (reagents, nanite sludge, gene-liquor, reactor warmth, cultivated algae) makes the deep a patchwork of
@@ -260,6 +291,20 @@ it and rowed. *He gave away his name to come home.*
   the Fever. Chekhov: the first candle we meet must matter at the All-Is-Lost.
 - **Light as weapon.** The Lamplighters' floods. Set up dark-sight early so the white-out lands as
   bodily horror, not spectacle.
+- **The navigation maze.** When the clan flees toward the Tartarian levels in Act 3, the route does
+  not hold. The path Glim swore he remembered from his deepest solitary descent leads to walls, wrong
+  pipe configurations, unfamiliar junction geometry. The Works has shifted, or his memory has, or both.
+  The maze is the climax's first antagonist: they are fleeing deeper and the deep is not letting them
+  in. Plant this early — a Brave who went as deep as possible and came back wrong about where they had
+  been; a fragment of carved stone with no mapped source; the Engine Guild's oldest member who says
+  there is a depth past which the tunnels stop making sense. Pay the disorientation fully when the clan
+  needs the passage to open.
+- **Tartaria as testimony and insult.** The word "Tartaria" is the surface establishment's dismissal
+  packaged as a label: to call the ruins "Tartarian" is to preemptively mark the claim as conspiracy.
+  The Underclan do not use the word — they say *the Tartar*, *the Glory*, *the ghost-country*. Surface
+  characters who take underground testimony seriously use "Tartaria" carefully, knowing what they are
+  signaling. Surface characters who use it casually are marking the claim as folklore without knowing
+  they're doing it. Show this gap in register — never editorialize it.
 
 ## 6. Narrative locks (NEVER violate) {#SS-UNDR-6}
 
@@ -281,6 +326,14 @@ it and rowed. *He gave away his name to come home.*
    ([[project_no_police]]).
 8. **Glim's two names.** POV = Glim. "Toby" is sound+smell until the reunion. After, the war of names
    is the interior arc; never resolve it cleanly.
+9. **The Tartarian ruins are ambiguous, not fantastical.** The Works is real and enormous; the
+   navigation failures have a mundane explanation available (maze complexity, fallible memory,
+   constantly-shifting infrastructure). The ruins may be real; they may be navigation artifacts; the
+   text never confirms either. Surface characters may dismiss the claim; underground characters may
+   assert it; neither is proven right. Treat exactly as the Prisoner and DEEP CURRENT: **the ambiguity
+   is the canon**. Do not resolve it in the dark night, in the climax, or at the finale. Glim may reach
+   somewhere ancient and real — or somewhere his mind needed to exist. The prose holds both without
+   collapsing into either.
 
 ## 7. Arc structure — 14-beat authorial spine (= book strand seed) {#SS-UNDR-7}
 
@@ -313,10 +366,19 @@ it and rowed. *He gave away his name to come home.*
     Mission's "rescue." The **Bright Fever** arrives; the first candle sickens; the first Brave coughs.
 11. **All Is Lost.** The Fever scythes the clan. Someone loved is taken (do not pre-decide who; honour
     the wound ledger). Floodlight pours into Homewater. The people flee — toward the one place left:
-    the forbidden **Tartarian Empire.**
-12. **Dark Night of the Soul.** In the ghost-country, Glim faces it: *he* is the vector; he brought the
-    surface down. Vesh was right. The Current is silent. Has the Deep abandoned them, or was it never
-    listening at all?
+    the forbidden **Tartarian Empire.** But the Works does not open cleanly. The route Glim swore he
+    knew — the one he mapped in solitary descent, the path no other Brave had gone as deep — does not
+    hold. Wrong junctions. Walls where memory placed passage. The maze has shifted, or Glim has, or
+    neither. The clan is deep in the Works, below the known strata, and the ghost-country is not
+    where it should be. They keep descending because there is nowhere else to go.
+12. **Dark Night of the Soul.** They arrive somewhere. The architecture is different — older stone,
+    carvings that are not utility markings, ceiling height with no functional purpose. Whether this is
+    the Tartarian Empire, whether the Tartarian Empire exists, whether they are in a part of The Works
+    so old it only resembles what the legend describes: Glim does not know. The clan does not know.
+    Vesh, dying or diminished, cannot say whether the Current has led them here or whether they simply
+    went deep enough that the world stopped looking like infrastructure. In this not-knowing, Glim faces
+    the full weight of what he carried down: *he* is the vector; he brought the surface into the Deep.
+    The Current is silent. Has the Deep abandoned them, or was it never listening at all?
 13. **Break into Three.** The Current "speaks" — a surge, a flicker, the maybe-**Second Word** (never
     confirmed). Glim leads with **both** worlds: surface knowledge + Deep faith. The Cogs ally; the
     infrastructure itself is turned against the floodlights and the hunters. Noor makes her choice.

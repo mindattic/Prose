@@ -1189,14 +1189,14 @@ Remote consciousness projection via NSB (Neuretic Substrate Bridging) is not a n
 Any job, task, or experience that benefits from physical presence but involves unacceptable risk, distance, or cost has an NSB solution:
 
 - **Dangerous construction, demolition, hazmat** -- you do not send a human body into a building collapse or a chemical spill; you burn a frame
-- **Deep infrastructure maintenance** -- sewer systems, sub-Pulse conduit, reactor cores; Riders earn the premium rate
-- **Surgery at distance** -- a specialist in the Loop projecting into a surgical frame in Z11; the patient's outcome depends on the Rider's handshake latency
+- **Deep infrastructure maintenance** -- sewer systems, sub-Pulse conduit, reactor cores; Exos earn the premium rate
+- **Surgery at distance** -- a specialist in the Loop projecting into a surgical frame in Z11; the patient's outcome depends on the Exo's handshake latency
 - **Camera journalism and spectator presence** -- you are not watching a war or a sporting event; you are there, in the frame, at ground level; the feed is what your optics record; returning from a firefight or a crowd crush leaves Echoes
-- **Logistics and freight handling** -- dockworkers burning frames at the harbor; warehouse Riders who have never physically visited the facility they work in every day
+- **Logistics and freight handling** -- dockworkers burning frames at the harbor; warehouse Exos who have never physically visited the facility they work in every day
 - **Inspection and compliance** -- every structural, environmental, and safety inspection that used to require a person in a hard hat
-- **Remote presence services** -- the long-distance equivalent of being in the room; a Rider can attend your parent's funeral in Osaka while their Shell sits in Meridian
+- **Remote presence services** -- the long-distance equivalent of being in the room; an Exo can attend your parent's funeral in Osaka while their Shell sits in Meridian
 
-The social consequence: **presence is commodified**. A Rider can be in twelve places in one day. This creates a class of workers who are paid per-projection at rates that undercut any alternative -- and who carry the echo-load of dozens of lives they were never actually living. The long-term occupational hazard of professional Rider work is not injury; it is dissociation.
+The social consequence: **presence is commodified**. An Exo can be in twelve places in one day. This creates a class of workers who are paid per-projection at rates that undercut any alternative -- and who carry the echo-load of dozens of lives they were never actually living. The long-term occupational hazard of professional Exo work is not injury; it is dissociation.
 
 **The "Dollhead" failure mode** (from SS-A34: operators who burn frames so often the home body starts to feel borrowed) is not a military edge case. It is an occupational disease with a prevalence rate, an advocacy community, and a contested workers-comp framework.
 
@@ -1271,7 +1271,8 @@ A consolidated glossary of established GLMZ tech register terms across aerostati
 - Ghost-riding / Skinning -- Glooms register for NSB operation
 - Haunting -- Glooms: partial sync; frame won't respond clean
 - Frame Pilot / Wire Jockey -- professional registers for NSB operators
-- Rider -- job title; civilian and military (decoupled from QCE per SS-A34)
+- Remote Frame Operator (RFO) -- formal/corporate job classification; used in official records, Arcturus licensing, HR, corp job postings
+- Rider -- RETIRED as of SS-A38; superseded by Exo (street) and Remote Frame Operator (formal)
 - Dollhead -- Glooms: operator who burns frames so much the home body feels borrowed
 - Feedback Cascade -- substrate destruction propagating back through the projection
 - Partitioning (Smear State) -- sync below coherence threshold; awareness smears across both bodies
@@ -1332,4 +1333,148 @@ On 2026-07-01, all 14 chapter sub-strands of UNDR (Ch01–Ch14) and their 55 Str
 - **Never execute `DELETE FROM Strands`, `DELETE FROM Beats`, or `DELETE FROM StrandBeats` as a raw SQL statement** without first running a `FOR SYSTEM_TIME ALL` verification query and confirming the rows are genuinely orphaned/empty.
 - If a delete-strand operation is ever needed through the engine, it must go through a CLI/service-layer method that (a) checks for active beats and blocks if any exist, and (b) logs the operation.
 - The `sqlcmd` read-only lookups in CLAUDE.md are for SELECT only. Any write via sqlcmd requires explicit user confirmation stating "yes, delete strand X."
+
+---
+
+## SS-A39 — Sky Folk; VTOL-only to aeroplexes; underground foot-passage only; the Tartaria question {#SS-A39}
+
+**Date:** 2026-07-02 · **Author:** world-connective-tissue pass · **Ref:** extends [SS-A32](#SS-A32)/[SS-A33](#SS-A33) aerostatic canon; extends [SS-A22](#SS-A22) UNDR canon; connective tissue for all GLMZ zones.
+
+---
+
+### §A39-1 — "Sky Folk" / "Sky People" (new term, binding)
+
+People who live on aerostatic platforms — aeroquarters, aeropolises, Drifter communities — are called **Sky Folk** (plural noun) or **Sky People** by outsiders and, with varying degrees of irony, by themselves. Singular: **Sky Person**, though most surface speakers say "a Sky Folk" without correction.
+
+- **Surface-speaker register:** neutral-to-slight-envy. Less contemptuous than "little birdies" or "Harpies" (which are insults hurled *downward* from the float layer, not upward from the ground — see [SS-A36](#SS-A35)).
+- **Aeropolis resident self-use:** dry irony. "We Sky Folk" in a boardroom is a joke about altitude privilege that stops being funny at the third drink.
+- **Underground-speaker register:** the phrase carries genuine otherness. For someone who has never seen the sun, people who live above the clouds belong to a different taxonomy entirely.
+- **Not an insult in itself** — it is the ambient category word. Contrast with "little birdies" / "Harpies" (downward insults) and "Mermaids" (surface-to-underwater contempt).
+
+**Binding for all GLMZ prose.** Replaces descriptive phrases like "float-layer residents" in casual registers. "Drifters" remains the precise term for derelict-platform residents ([SS-A32]); "Sky Folk" is the broad category covering all aerostatic-platform residents.
+
+---
+
+### §A39-2 — VTOL as the only legitimate transport to aeroplexes (formalizing [SS-A32])
+
+An **Aeroplex** (any aerostatic platform above surface level) is reachable only by VTOL aircraft through official channels. The Pulse does not extend into the float layer — its vacuum-tube infrastructure is ground-anchored. Surface transit, walking, and cycling do not reach aeroplex altitude.
+
+The informal alternatives — Ascent Bloom, Low Runner Kit, gray-market Kite Rig descent, Vertical Axis operators ([SS-A33]) — circumvent the VTOL-Only Access Protocol precisely *because* VTOL is otherwise the only path up. All non-VTOL access to the float layer is gray-market or criminal.
+
+**Prose rule:** A character cannot take the Pulse to an Aeroplex. The Pulse runs between surface nodes. The air layer requires air transport or a gray-market vertical rig.
+
+---
+
+### §A39-3 — The underground: foot passage only; unmarked access
+
+The underground is not Pulse-connected, not VTOL-accessible, and not reachable by any registered transit mode. Access is **exclusively on foot**, through passage-ways that are unregistered, unmarked, and known only to those who use them.
+
+These passages are not signposted. They do not appear on any Meridian 88 infrastructure map — the maps show deep utility zones as blank management areas, not traversable networks. Finding an entrance requires knowing someone who knows. Navigating from entrance to destination requires memory or a guide. There is no underground station. There is a gap in a ferrocrete wall behind a decommissioned pump relay two blocks east of the old meatpacking district, and you either know about it or you don't.
+
+The surface treats the underground as pure infrastructure (sewers, power conduits, Pulse anchoring, reactor access). The reality — that communities have navigated, lived in, and mapped this space across generations — is absent from official records because putting it on a map would mean admitting the people who live there exist.
+
+---
+
+### §A39-4 — "Tartaria" and the navigation failure of The Works
+
+**"Tartaria" is a contentious word in 2226.**
+
+Surface-speakers who use it — academics, conspiracy theorists, underground-community advocates — mean: a supposed pre-collapse civilization whose architectural ruins lie deep beneath the current city, deeper than any mapped infrastructure, distinguished by vaulted stonework, drowned beaux-arts halls, and a scale and quality of workmanship inconsistent with documented 19th/20th-century Chicago construction. The GLMZ historical establishment regards the claim as unfounded folk mythology: extraordinary architecture that far underground would require extraordinary evidence, and no verifiable evidence has ever been produced.
+
+Underground communities — the Underclan (*the Tartar*, *the Glory*), the Engine Guild, scav foragers who go deep — insist the ruins are real. Individuals have seen them. They describe consistent details: vaulted stone, high ceilings, rooms larger than any utility corridor, decorative stonework with no business being at that depth. What they cannot do is lead anyone back to the same place.
+
+**The navigation problem — The Works:**
+
+The underground infrastructure beneath Meridian 88 is known as **The Works**: the accumulated, layered, never-fully-documented product of two centuries of arcology construction, corporate utility builds, abandoned transit projects, decommissioned service networks, and Pulse deep-anchoring infrastructure. It is not a system. It is not a map. It is the residue of every urban project that ever bored a hole in the ground and never fully closed it.
+
+The Works is enormous. The Works is contradictory. Passages that connected last month may be walled by a new utility run this month. A route memorized one season may dead-end into a tokamak expansion wall the next. Guides with deep-navigation competence lose their orientation below a certain depth because the geometry below the mapped strata no longer follows the logic of infrastructure — it follows something else.
+
+The specific claim that witnesses cannot be led back to the Tartarian ruins is not merely "navigationally difficult." People who attempt it describe a consistent experience: the route that should have been correct was not. They followed their guide exactly. They reached the right depth, the right strata indicators, the right pipe configuration. The vaulted rooms were not there.
+
+**Binding rules (all GLMZ prose):**
+
+- **Never confirmed as supernatural.** The Works is real, vast, and maze-like. Navigation failures have a mundane explanation: the geometry below Homewater is genuinely labyrinthine, memory is fallible, and two visits to "the same place" may use different routes that only feel identical.
+- **Never confirmed as mundane.** The consistency of the experience — competent underground navigators, getting turned around at exactly the depth where the ruins should be — resists a clean infrastructure-complexity explanation.
+- **"Tartaria" as a word carries political weight.** Surface establishment uses it to dismiss. Underground communities use it defiantly. Academics who use it carefully are making a claim about taking underground testimony seriously. In a corpo context it signals conspiracy thinking; in the underground it signals witness.
+- **LOCKED:** Whether the ruins exist, what they are, how old they are, and why they cannot be reliably found is never authoritatively resolved. Treat exactly as the Prisoner, DEEP CURRENT, and the SRZR camel contact — the ambiguity is the canon.
+
+**DB entities to seed:** "The Tartarian Question" (Concept); "The Works" as the GLMZ-wide accumulated underground infrastructure (Place, if not already present as its own entity distinct from the UNDR strata layer); "Tartaria" (Place, disputed/legend).
+
+---
+
+### §A38 -- "Rider" fully retired; Exo = street/prose, Remote Frame Operator = corporate/formal
+
+**"Rider" is retired** as a living term. It survives only in historical amendment text (SS-A34, SS-A35 references) as documentation of prior usage. Do not use it in new prose or world-building.
+
+**Street / prose term:** **Exo** — from "exo out," casting the conscience out of the body. Used in all narrative prose, street dialogue, and informal world-building text. Takes "an" (vowel onset): *an Exo*, *an Exo's Husk*, *an Exo's crawler*.
+
+**Formal / corporate term:** **Remote Frame Operator** (abbrev. **RFO**) — what Arcturus licensing, corp HR departments, job postings, and official records call the role. Nobody on the street says this. A corpo filling out paperwork writes "Remote Frame Operator, Class II." An Exo says "I'm an Exo."
+
+**Alternate street slang:** **Jockey** — same register as Exo; valid in prose, especially for older characters or corpo-adjacent street speakers. ⚠️ **SLUR GUARD (binding):** "Jockey" must NEVER appear adjacent to camel imagery — "camel jockey" is an ethnic slur, banned in all prose. The SRZR 5D contact is always **"the man on the camel,"** never Exo/Jockey/camel-jockey. Sasha Võ is not an Exo/Jockey (Signal+Noise, not QCE).
+
+**Disambiguation:** "rider" lowercase in non-profession contexts (carousel horses, bike couriers, gang fledglings on bikes, contract addenda) is unaffected — these are literal physical riders and not the profession.
+
+**Scope:** All GLMZ prose going forward. Export snapshots updated 2026-07-02.
+
+---
+
+## SS-A40 — Border Markets: the threshold economy between CorpoNations and Gray Zones {#SS-A40}
+
+**Date:** 2026-07-02 · **Author:** connective-tissue pass · **Ref:** extends [SS-A29](#SS-A29) CorpoNation/Gray-Zone canon; adds social texture at the zone threshold; introduces "Corpozens" slang.
+
+---
+
+### What they are (binding)
+
+**Border Markets** are the informal economies that form immediately outside every walled CorpoNation entrance. They are not planned, not licensed, and not on any corpo map — they grow where the two worlds touch.
+
+The dynamic is structural: CorpoNation citizens need things the corpo cannot or will not provide at the price or speed they want. Gray Zone residents need income and access to corpo-grade goods they can't otherwise reach. The gate is the bottleneck; the market is the response to the bottleneck. Every major corpo entrance has one.
+
+**The geography of mutual tolerance:**
+- **How far out a Corpozens (corpo citizen) feels safe to venture:** the answer is not a fixed distance — it is a feeling. The Border Market is *exactly as far out as corpos still come*. It calibrates itself to that edge in real time. On a calm week, the stalls push two blocks into the Gray Zone. After a Block War skirmish, they retract to the shadow of the gate itself. The market is a living barometer of zone tension.
+- **How close to an arcology a Gray Zone dweller will get:** the Border Market is the answer. Past the market, corpo security starts asking questions. At the market, security tolerates presence because the market serves corpo demand. Before the market, there is no formal threshold. Gray Zoners attend the market; they do not, as a rule, go through the gate.
+
+The result: **the Border Market is the primary social interface between two populations that are otherwise sealed from each other.** It is where corpo aesthetics and Gray Zone aesthetics bleed. It is where corpo workers buy food they pretend isn't there. It is where Gray Zoners get secondhand corpo tech, counterfeit corpo rations, and the occasional corpo worker willing to talk.
+
+---
+
+### Slang — "Corpozens" and related terms (binding)
+
+**Corpozens** (noun, plural; singular **Corpozen**) — Gray Zone slang for CorpoNation citizens. The word mashes *corpo* and *citizen* and lands with a particular register: not quite contempt, not quite envy. A Corpozen is someone who traded their autonomy for the arcology's walls and calls it safety. The word is used casually and without heat by most Gray Zoners, the way a city person might say "suburbanites." The people it describes mostly don't use it for themselves — if they've heard it at all.
+
+| Term | Speaker | Meaning |
+|---|---|---|
+| **Corpozens** / **Corpozen** | Gray Zone | CorpoNation citizens — the walled-in; people who live inside |
+| **Wallborn** | Gray Zone (older register) | Someone born inside an arcology; never seen unmanaged sky |
+| **The inside** | Gray Zone | The arcology; the walled city within a city |
+| **Gate heat** | Any | Heightened corpo security at the entrance — market contracts when gate heat rises |
+| **Threshold run** | Gray Zone street | A visit to the Border Market to sell or acquire; "I'm doing a threshold run" |
+| **Market shadow** | Gray Zone | The safe zone for Gray Zone activity — directly under the corpo security's willingness to turn a blind eye |
+| **Gray Mouse** | Corpo pejorative | A Gray Zone person at the border market — someone scurrying close to the wall, looking for scraps. The gentler of the trio; used without heat by corpo workers who consider themselves tolerant. |
+| **Gray Rat** | Corpo pejorative (hostile) | Escalated form; implies the Gray Zone person is a pest, a scavenger, possibly a thief. Used when a corpo wants to remind someone they're not welcome. |
+| **Gray Scum** | Corpo pejorative (aggressive) | The ugly end of the register. Used by corpo security and corpo ultranationalists; the kind of word that starts a confrontation at the gate. |
+| **Corpo Mouse** | Gray Zone pejorative | A Corpozen at the border market — someone who crept out from behind the walls for a look. Mild, almost affectionate contempt. |
+| **Corpo Rat** | Gray Zone pejorative (hostile) | Escalated form; implies the Corpozen is an informant, a spy, or a corpo security plant running a soft surveillance pass. |
+| **Corpo Scum** | Gray Zone pejorative (aggressive) | The ugly end. Used when a Gray Zoner wants the Corpozen to know exactly where they stand. The kind of word that clears a stall. |
+
+---
+
+### Narrative function (standing prose directive)
+
+Border Markets are **connective tissue between zones**. They appear in any GLMZ strand where a character crosses between corpo and Gray Zone space. Use them to:
+
+- Show the mundane texture of the threshold — the smell of cooked food, the voltage of a vendor argument, the sight of corpo uniforms at the edge buying things their ID shouldn't touch
+- Establish zone tension through market size: a contracted market (vendors close to the gate, few Corpozens outside) signals recent trouble without exposition
+- Give characters from different zones a plausible shared space where encounters happen without forced contrivance
+- Show cultural bleed in both directions — corpo aesthetics in Gray Zone goods (knockoff corpo ration packs, corpo fashion recut), Gray Zone goods moving inward (underground food, handmade tech, contraband)
+
+**The market does not need to be the scene.** It can be a paragraph of texture while characters pass through. A character who pauses at the threshold has a reason; a character who keeps walking has a different reason. The market asks the question; prose uses the answer.
+
+---
+
+### Entities to seed
+
+- **Border Market** (Place, type: market/faction threshold) — generic category entity; individual named markets (e.g., "the Axiom Threshold Market," "the Meridian Gate Exchange") seeded per strand as needed
+- **Corpozens** — add as a slang-register entry to the vocabulary canon; not a separate entity
+
 

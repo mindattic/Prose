@@ -5,6 +5,7 @@ using Microsoft.Extensions.Logging;
 using System.Net;
 using MindAttic.Legion;
 using MindAttic.Legion.Providers;
+using MindAttic.Media;
 using StreetSamurai.Core.Data;
 using StreetSamurai.Core.Interfaces;
 using StreetSamurai.Core.Services;
@@ -598,8 +599,9 @@ public static class ServiceCollectionExtensions
         // so each writing session has its own chat history.
         services.AddHttpClient<Services.Operator.AnthropicToolClient>(c => c.Timeout = TimeSpan.FromMinutes(15));
 
-        // Cover image generation — calls OpenAI/Gemini/Ideogram/FAL.ai APIs
-        services.AddHttpClient<CoverImageGeneratorService>(c => c.Timeout = TimeSpan.FromMinutes(5));
+        // Media asset storage (local disk dev; swap to AddMediaAzure<StreetSamuraiDbContext> in prod).
+        services.AddMedia<StreetSamuraiDbContext>();
+
         services.AddSingleton<Services.Operator.IWriterTool, Services.Operator.Tools.QueryWorldGraphTool>();
         services.AddSingleton<Services.Operator.IWriterTool, Services.Operator.Tools.ValidateCanonTool>();
         services.AddSingleton<Services.Operator.IWriterTool, Services.Operator.Tools.DraftCombatSceneTool>();
