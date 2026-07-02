@@ -674,7 +674,7 @@ public class StreetSamuraiDbContext : DbContext
         {
             e.HasKey(x => x.Id);
             e.Property(x => x.Character).HasMaxLength(200).IsRequired();
-            e.Property(x => x.VoiceRegister).HasMaxLength(200);
+            e.Property(x => x.VoiceRegister).HasMaxLength(2000);
             e.Property(x => x.SourceBibleHash).HasMaxLength(64);
             e.HasOne(x => x.Strand).WithMany()
                 .HasForeignKey(x => x.StrandId).OnDelete(DeleteBehavior.Cascade);

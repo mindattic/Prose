@@ -1305,3 +1305,31 @@ A consolidated glossary of established GLMZ tech register terms across aerostati
 - Flat -- 2D media; derogatory; also used as quality judgment ("that was flat")
 - Depth -- prestige volumetric production with significant spatial complexity
 
+---
+
+### §A36 -- Underwater community slang: "Mermaids" replaces "Fishmen"
+
+The surface-speaker slang for GLMZ's underwater communities is **"Mermaids"** (and by extension "Mermen" for individuals, though "Mermaid" is used as a blanket insult regardless of gender). "Fishmen" is retired.
+
+**Why Mermaids wins:** A feminine-coded mythological insult applied dismissively to the underwater communities carries more social texture than the neutral "Fishmen." Surface speakers — especially the macho, para-military, corpo-security demographic — use "Mermaids" with contempt precisely because it feminizes and mythologizes people they regard as non-citizens. The word does double work: dehumanizes AND condescends.
+
+**Canonical usage:**
+- Outsider insult (surface speakers): "Mermaids" — e.g., *"Those fucking mermaids are going to pay."*
+- Underground communities call themselves by their own names (Underclan, etc.); they do not use "Mermaids" for themselves.
+- Sky-dwellers calling ground-floor residents "little birdies" or "Harpies" is the vertical mirror of this.
+
+**Scope:** All GLMZ prose. UNDR is the primary home but any surface-POV chapter may use this as ambient texture.
+
+---
+
+### §A37 -- UNDR data-recovery incident + direct-SQL prohibition
+
+On 2026-07-01, all 14 chapter sub-strands of UNDR (Ch01–Ch14) and their 55 StrandBeat links were deleted via a direct SQL operation. Root cause: unknown (no CLI, MCP, or Blazor UI path for Strand deletion exists). The Beat rows themselves survived because `StrandBeats.StrandId` cascades to the junction table, not to `Beats`.
+
+**Recovery:** Temporal tables (`FOR SYSTEM_TIME AS OF`) preserved all data exactly. All 14 chapter strands and 55 StrandBeat links were restored from the `AS OF '2026-07-01T13:07:00'` snapshot on 2026-07-02.
+
+**Prohibition (binding rule):**
+- **Never execute `DELETE FROM Strands`, `DELETE FROM Beats`, or `DELETE FROM StrandBeats` as a raw SQL statement** without first running a `FOR SYSTEM_TIME ALL` verification query and confirming the rows are genuinely orphaned/empty.
+- If a delete-strand operation is ever needed through the engine, it must go through a CLI/service-layer method that (a) checks for active beats and blocks if any exist, and (b) logs the operation.
+- The `sqlcmd` read-only lookups in CLAUDE.md are for SELECT only. Any write via sqlcmd requires explicit user confirmation stating "yes, delete strand X."
+

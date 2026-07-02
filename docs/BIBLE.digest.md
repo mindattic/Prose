@@ -134,90 +134,192 @@ narrative-law block here when stood up:**
 - done: 123  partial: 8  planned: 23  cut: 1
 
 ## Latest amendment
-## SS-A33 — Vertical mobility extension: The Low, Ascent Bloom, Low Runner Kit {#SS-A33}
+## SS-A35 -- Technology must extrapolate real science; anti-grav retired; NSB as pervasive infrastructure; the Glass {#SS-A35}
 
-**Date:** 2026-06-30 · **Author:** vertical-mobility-pass · **Ref:** `memory/project_aerostatic_architecture.md`; extends [SS-A32](#SS-A32). 20 entities total in the aerostatic cluster; 58 world-graph edges total.
-
-This amendment extends SS-A32's aerostatic architecture cornerstone with **The Low** (the ungoverned altitude gap), the **Ascent Bloom** (the upward counterpart to the Kite Rig), and the **Low Runner Kit** (the professional vertical-transit rig).
+**Date:** 2026-06-30 · **Author:** physics-canon-pass · **Supersedes:** Graviton Manipulation Theory as anti-grav foundation; Zero-Point Energy as power source
 
 ---
 
-### §A33-1 — The Low (altitude gap, binding)
+### §A35-1 -- The physics law (binding for all Universes under this engine)
 
-**The Low** is the airspace band between approximately 30m and 320m altitude in Meridian 88 — bounded below by Arcturus Civil Security patrol ceiling (~50m) and above by the MATA radar floor (320m). Neither authority governs it. It is not formally designated; it simply falls through the gap.
+**All GLMZ technology must be grounded in demonstrably real or plausibly extrapolated science.** The bar is the flight analogy: heavier-than-air flight was theoretically understood in 1900 and ubiquitous by 2000. A lab-demonstrable phenomenon today can be the substrate of an entire industry in 200 years. What is physically impossible today -- violates thermodynamics, requires FTL information transfer, demands a negative-mass exotic matter that has never been detected -- stays impossible in 2226.
 
-**What it is:** Persistent industrial haze from two centuries of arcology manufacturing and processing exhaust holds in a loose thermal band. Visibility runs 50–200m in typical conditions. Building-wake turbulence is constant — arcologies create chimney and backwash effects that make VTOL navigation difficult and unpredictable. MATA won't fly commercial traffic here. Arcturus won't pursue above their ceiling.
-
-**The Low is not a death zone.** Derelict platform communities (20–150m altitude, [SS-A32](#SS-A32)) live here continuously without survival gear. The hazards are navigational — reduced visibility, irregular turbulence, no radar coverage — not atmospheric. The suit you need is a navigation rig, not a hazmat suit.
-
-The Low's practical effect is invisibility. Below MATA's radar floor, a VTOL, an Ascent Bloom, a Kite Rig, or any cargo moving between surface and the float layer simply doesn't appear on any authority's display. This is why gray-market vertical transit is a viable industry rather than an immediately-detected crime.
-
-**Prose register:** *The Low* is standard Meridian 88 usage. In the Glooms, *"working The Low"* means operating in the ungoverned band — by extension, any activity that falls through the gap between competing authorities and is therefore nobody's problem to stop.
+This is not a constraint on imagination. It is the constraint that makes failure modes real. A technology the audience cannot poke holes in cannot generate the kind of stakes where characters die.
 
 ---
 
-### §A33-2 — The Ascent Bloom (new technology, binding)
+### §A35-2 -- Anti-gravity is retired; confirmed orbital infrastructure
 
-The **Ascent Bloom** is the upward complement to the Kite Rig. Where the Kite Rig converts a free-fall into a slow drift down, the Ascent Bloom converts a surface position into a controlled ascent to aerostatic platform altitude.
+**GLMZ does not have anti-gravity, anti-graviton drives, graviton manipulation, or any form of gravity cancellation.**
 
-**How it works:** The platform operator drops a weighted CNT-steel guide tether down through The Low to a surface extraction point. The surface operator clips on a Bloom pack — a 40×25cm cylinder of VABC cells in compressed configuration. On activation, cells self-pressurize to full volume within 8–12 seconds (the *bloom*). The VABC cluster provides buoyancy lift; the guide tether provides directional control against wind; the platform winch assists the final 150m. Ascent time to Aeroquarter altitude: 12–18 minutes. To Aeropolis: 35–55 minutes. Payload: one person plus light kit (standard); double-pack configuration for heavy cargo or two people.
+The confirmation is in the infrastructure already in canon: **space elevators** (tensile + counterweight; no gravity cancellation needed or possible) and **mass drivers** (electromagnetic catapult launch; no magic required). Both are physically coherent extrapolations of technology that exists today in prototype form. Neither requires, implies, or is consistent with functional anti-gravity.
 
-**Gray market variant:** rapidly-inflating hydrogen gas bladders. Faster (5–8 minutes to Aeroquarter altitude). Visible from a significant distance. Explosive-hazard rated under municipal code. MATA radar flags the ascent immediately above 320m. Used when speed matters more than concealment.
+Graviton detection (predicted by quantum gravity; plausible by 2098) is retained as a scientific achievement. **Graviton manipulation for propulsion or gravity cancellation is not.** The gap between "we detected gravitons" and "we can manipulate gravity at will" is the same as the gap between "we detected the Higgs boson" and "we can control mass." Detection is measurement. Manipulation is engineering. The engineering gap is not bridged.
 
-**The Ascent Bloom is the primary mechanism for circumventing the Air Tax from below.** No VTOL manifest. No biometric verification. No MATA record below 320m. This makes it the logistics tool of choice for gray-market cargo movement, covert extraction, and anyone whose VTOL access has been revoked.
-
-**Cutting the bloom** — severing a tether line mid-ascent — is a killing technique distinctive enough to have its own classification in Arcturus Civil Security's crime taxonomy.
-
-**Three-register naming:** Ascent Bloom (official) / Sky Hook, the Lift (Meridian 88) / the Bloom, Tether Bloom (Glooms)
+The `Graviton Manipulation Theory` entity is rewritten as a **theoretical research program that produced its biggest finding (detection) and then stalled on the manipulation problem**. It is an active unsolved frontier, not an achieved technology.
 
 ---
 
-### §A33-3 — The Low Runner Kit (professional rig, binding)
+### §A35-3 -- Zero-point energy is retired as a power source
 
-The **Low Runner Kit** is a professional-grade descent and ascent rig built for operators who transit the full vertical axis without VTOL access. Key systems (locked):
+**GLMZ does not have zero-point energy extraction as a usable power source.**
 
-- **Wing membranes:** wrist-to-hip articulated extensions; ~3:1 glide ratio; 1,500m horizontal travel from 2,000m altitude; used for precision surface targeting and navigation through The Low's building-wake turbulence
-- **Integrated Kite Rig:** factory-standard VABC cluster on dorsal frame; same 80m safe-floor as standalone rig
-- **Bloom dock:** ventral clip-point accepting Ascent Bloom pack for return ascent
-- **Impact attenuation:** aerogel composite leg/torso zones rated for hard landing at Kite Rig terminal drift velocity on unimproved terrain
-- **Navigation display:** heads-up compass, altimeter, and tether-signal receiver; essential below MATA radar floor where external positioning is unavailable
-- **Low-profile build:** civilian-legal configuration; no weapons mounts, no corpo insignia
+The Casimir effect is real: measurable vacuum energy exists, and it has been demonstrated in laboratory conditions. The thermodynamic problem is also real: vacuum fluctuations are the ground state of the quantum field -- by definition, there is no lower state to extract work from. Extracting net energy from ZPE is a form of perpetual motion. The second law does not bend.
 
-The Kit is not occupation-specific. It is equipment: the practical necessity for any operator who needs surface-to-float access regularly and cannot afford VTOL passage.
+What survives: Casimir-effect-based precision sensing and measurement is a real and legitimate 2226 technology. The ZPERP entity is rewritten as a **fundamental research facility that proved the extraction hypothesis false** -- a canonical dead end that resolved one of the great 22nd-century science disputes.
 
-**Street names:** Run coat, Low skin, the Kit.
+GLMZ's actual power sources remain: advanced fusion (tokamak-based, per the UNDR infrastructure), solar collection at scale, kinetic/tidal, and the chemical/nano hybrid systems that power personal and industrial equipment.
 
 ---
 
-### Entities seeded (2026-06-30, this pass)
+### §A35-4 -- NSB is pervasive civilian infrastructure, not a military specialty
 
-| Entity | Type | ID prefix | Street name |
-|---|---|---|---|
-| Ascent Bloom | Technology | `019f1b3b-da9d-…` | Sky Hook / the Bloom |
-| The Low | Place | `019f1b3c-3b28-…` | The Low |
-| Low Runner Kit | Equipment | `019f1b3c-970b-…` | Run coat / Low skin |
+Remote consciousness projection via NSB (Neuretic Substrate Bridging) is not a niche military capability. It is the 2226 equivalent of what the internet did to remote work -- except you are not on a video call, you are there.
 
-**22 world-graph edges** built (`source: helldivers-fulton-worldbuild-2026-06-30`): Bloom→VABC (derived_from), Bloom↔Kite Rig (complements), Bloom→platforms (circumvents_access_to), Bloom→Derelict Platforms (supplies), Bloom→The Low (traverses), The Low→Derelict Platforms (contains), The Low→Kite Rig and Bloom (hazards traversal), Kit→Kite Rig and Bloom (integrates), Kit→The Low (designed_for), Kit→platforms (enables_access_to).
+Any job, task, or experience that benefits from physical presence but involves unacceptable risk, distance, or cost has an NSB solution:
 
-**Total aerostatic cluster (pre-faction):** 20 entities, 58 edges.
+- **Dangerous construction, demolition, hazmat** -- you do not send a human body into a building collapse or a chemical spill; you burn a frame
+- **Deep infrastructure maintenance** -- sewer systems, sub-Pulse conduit, reactor cores; Riders earn the premium rate
+- **Surgery at distance** -- a specialist in the Loop projecting into a surgical frame in Z11; the patient's outcome depends on the Rider's handshake latency
+- **Camera journalism and spectator presence** -- you are not watching a war or a sporting event; you are there, in the frame, at ground level; the feed is what your optics record; returning from a firefight or a crowd crush leaves Echoes
+- **Logistics and freight handling** -- dockworkers burning frames at the harbor; warehouse Riders who have never physically visited the facility they work in every day
+- **Inspection and compliance** -- every structural, environmental, and safety inspection that used to require a person in a hard hat
+- **Remote presence services** -- the long-distance equivalent of being in the room; a Rider can attend your parent's funeral in Osaka while their Shell sits in Meridian
+
+The social consequence: **presence is commodified**. A Rider can be in twelve places in one day. This creates a class of workers who are paid per-projection at rates that undercut any alternative -- and who carry the echo-load of dozens of lives they were never actually living. The long-term occupational hazard of professional Rider work is not injury; it is dissociation.
+
+**The "Dollhead" failure mode** (from SS-A34: operators who burn frames so often the home body starts to feel borrowed) is not a military edge case. It is an occupational disease with a prevalence rate, an advocacy community, and a contested workers-comp framework.
 
 ---
 
-### §A33-4 — Vertical Axis (faction, binding)
+### §A35-5 -- Virtual substrate threading: full-reality immersion and the Glass
 
-**Vertical Axis** is the informal name for the loose network of freelance operators who specialize in full vertical transit — aerostatic platform altitude through The Low to the surface, and back up again. Not a faction in the traditional sense: no charter, no initiation, no hierarchy. The name is a reputation marker, not a membership card. Operators who consistently run The Low — who know the tether drop points, the derelict platform landing zones, the bloom stash locations, the pad contacts at aeroquarters across the float layer — are Vertical Axis. Everyone else just calls them by altitude.
+The same CEP mechanism (Coherent Eigenstate Projection) that enables projection into physical frames works equally on constructed virtual substrates. The neuretic array does not distinguish: it projects a coherent eigenstate into a resonant cavity. Whether that cavity is a drone chassis or a server-rendered environment is a hardware question, not a physics one.
 
-The name is a dark joke about the GLMZ's social axis. Class runs horizontal here: zone, corpo, affiliation. Vertical Axis runs perpendicular.
+**Three grades of virtual substrate:**
 
-**Structure:** Reputation-organized. The most-connected operators — platform contacts at multiple aeroquarters, surface contacts across multiple zones — carry informal weight. Veteran operators vouch for newcomers, share stash locations, make introductions. That vouching is the only leadership that exists. It transfers one relationship at a time.
+**Work grade**: sensory-calibrated to real-world parameters, task-focused. The primary surface for remote office presence, simulation training, collaborative design. You are somewhere you are not, but the somewhere is governed by real physics. Failure modes: lag artifacts, partial sync, the same Echoing that accumulates in physical frame work.
 
-**Primary client:** Gray Zone Derelict Platform communities — residents with no VTOL access who rely on Vertical Axis logistics for VABC cells, micropump components, medical supplies, and anything that won't move through a MATA manifest.
+**Entertainment grade**: full sensory, constructed reality, parameters real-world-adjacent. Live sports presence (you are at the match, not watching it), concert presence, historical reconstruction tourism. Passive and active tiers. The echo-load of entertainment-grade immersion is low because the events are not traumatic.
 
-**Operative reach:** The Low (30–320m ungoverned band) is their transit corridor. Float-layer pad access and surface extraction zones are their endpoints. Their effective territory is the vertical axis itself.
+**The Glass**: entertainment substrate with sensory parameters tuned beyond real-world maxima. Pleasure responses amplified. Pain gates closed. No sensory calibration to reality. Immediately addictive: the brain adapts; the real world's untuned, unfiltered sensory signal registers as thin, grey, and insufficient by comparison. The Glass is to standard immersion what fentanyl is to ibuprofen -- the mechanism is the same; the calibration is what kills you.
 
-**Motto:** *Up or down. We move.*
+The Glass's specific failure mode is **deliberate Echo contamination**: the substrate is designed to leave traces. Glass addicts carry echo-memories of experiences that feel more real and more recent than their actual lives. The clinical term is **Substrate Echo Disorder (SED)**. The street term for someone in late-stage SED is **glass-brain** -- someone whose real life has become the echo.
 
-**Entity ID:** `019f1b5d-e6ee-7745-8427-9f65a3bfb411`; 7 world-graph edges: operates_in→The Low, uses→Ascent Bloom/Kite Rig/Low Runner Kit, serves↔Gray Zone Derelict Platforms (mutual), circumvents→VTOL-Only Access Protocol.
+**Glass lingo:**
 
-**Total aerostatic cluster (revised):** 21 entities, 65 edges.
+- "Going glass" -- entering a Glass-grade substrate
+- "In the glass" -- currently under Glass immersion
+- "Glass-brain" / "glass-head" -- addict; someone whose real life feels thin
+- "Echo-drunk" -- the disorientation period after extended Glass use when memories sort wrong
+- "The surface" -- real life, from the perspective of a Glass addict (derogatory; implies real life is the shallow copy)
+- "Surfacing" -- returning from immersion (same word as NSB; same experience)
+- "Running glass" -- doing a Glass session (professional/street register)
+
+---
+
+### §A35-6 -- Holographic volumetric media (Trideo equivalent)
+
+The 2226 standard media format is **Volume** (noun and verb: "a volume," "to cast a volume"). Flat 2D media is called "flat" -- what your grandparents watched, still technically viewable, culturally associated with the pre-2100 era. The word "video" is what anthropologists use.
+
+- **Volume** -- any holographic volumetric media; 3D space you can walk around and move through; projected into any room by standard Tessera-manufactured surface-coating
+- **Cast** -- live volume broadcast ("the cast," "casting," "catch the cast")
+- **Hot vol** -- live interactive volume with audience-presence participation (you are a ghost in the room where it's happening)
+- **Flat** -- 2D media; the derogatory term for anything on a traditional screen; also used as an adjective for experiences that feel low-resolution: "that conversation was flat"
+- **Depth** -- a Volume production with significant spatial complexity; used as a quality marker ("this is depth work") and as a casual shorthand for prestige content
+
+Volume does not require neural connection -- it is ambient spatial media. The Glass is the neural tier. Most people can access Volume with nothing more than the Tessera surface-coating in their apartment. The Glass requires a functioning neuretic array.
+
+---
+
+### §A35-7 -- GLMZ technology lingo: master reference
+
+A consolidated glossary of established GLMZ tech register terms across aerostatic, NSB, and virtual domains. Canonical; prose should draw from this.
+
+**Aerostatic (SS-A32/A33)**
+- Aeropod -- small personal aerial vehicle (individual/couple capacity)
+- Aeropolis -- dense aerial district; a city above the city
+- Drifter -- permanent aerial resident; no surface address
+- The Low -- ungoverned band 30-320m above street level; the Churn's floor
+- The Churn -- hazard band 30-300m; wind-shear, debris, unregulated traffic
+- Kite Rig -- personal downward-transit harness (fall arrest + glide)
+- Ascent Bloom -- upward transit device; controlled buoyant ascent
+- Low Runner Kit -- full-axis rig; Kite Rig + Ascent Bloom combined
+- Hell Diver -- Churn-traverse professional; extreme occupation
+- Churn Diver Suit -- hardened atmospheric transit suit for Churn work
+- Air Tax -- the altitude-tiered levy that makes altitude a class axis
+
+**NSB / Frame Piloting (SS-A34)**
+- NSB (Neuretic Substrate Bridging) -- canonical term for remote consciousness projection
+- CEP (Coherent Eigenstate Projection) -- the mechanism; eigenstate projected into neural bus cavity
+- Shell -- the operator's body during projection; managed low-activity suspension
+- Return handshake -- the critical vulnerability; how the eigenstate gets home
+- Burning a frame -- executing a physical projection op (Meridian 88)
+- Threading out -- beginning projection (Meridian 88)
+- Going deep -- being in the frame (Meridian 88)
+- Surfacing -- successful return from any projection (all registers)
+- Ghost-riding / Skinning -- Glooms register for NSB operation
+- Haunting -- Glooms: partial sync; frame won't respond clean
+- Frame Pilot / Wire Jockey -- professional registers for NSB operators
+- Rider -- job title; civilian and military (decoupled from QCE per SS-A34)
+- Dollhead -- Glooms: operator who burns frames so much the home body feels borrowed
+- Feedback Cascade -- substrate destruction propagating back through the projection
+- Partitioning (Smear State) -- sync below coherence threshold; awareness smears across both bodies
+- Black Ice -- destructive resonance countermeasure; dumb or military-grade adaptive
+- Echoing -- residual substrate sensory data imprinting on the returning eigenstate; accumulates
+- Sync ceiling -- the bandwidth limit of an operator's neuretic array; breach = dangerous
+- Burned out -- Glooms: cascade flatline; the operator did not return usefully
+- Gone ghost -- Glooms: echo-dissolved identity; the operator is still there but not themselves
+
+**NS-series frames (Arcturus Defense Solutions)**
+- NS-1 'Tendril' -- light recon/maintenance; ~10% bus load; entry-level training frame
+- NS-4 'Shade' -- armed combat drone; ~35% bus load; most common professional platform
+- NS-7 'Reacher' -- light combat mech; ~60% bus load; demanding; 200hr prerequisite
+- NS-9 'Golem' -- heavy combat mech; ~80-90% bus load; near-ceiling; terminal risk is documented
+
+**Virtual threading / the Glass (SS-A35)**
+- Work grade -- task-focused virtual substrate; real-world sensory calibration
+- Entertainment grade -- full sensory constructed reality; real-world-adjacent parameters
+- The Glass -- sensory parameters beyond real-world maxima; immediately addictive; the BTL tier
+- Going glass -- entering a Glass-grade substrate
+- Glass-brain / glass-head -- addict; late-stage Substrate Echo Disorder
+- Echo-drunk -- post-Glass disorientation; memories sort wrong
+- The surface -- real life (addict register; derogatory toward reality)
+- Running glass -- doing a Glass session
+- Substrate Echo Disorder (SED) -- clinical: accumulated echo-memories feel more real than lived experience
+
+**Holographic media / Volume (SS-A35)**
+- Volume -- standard 3D holographic media format of 2226; ambient, no neural required
+- Cast / the cast -- live volumetric broadcast
+- Hot vol -- live interactive volume with presence participation
+- Flat -- 2D media; derogatory; also used as quality judgment ("that was flat")
+- Depth -- prestige volumetric production with significant spatial complexity
+
+---
+
+### §A36 -- Underwater community slang: "Mermaids" replaces "Fishmen"
+
+The surface-speaker slang for GLMZ's underwater communities is **"Mermaids"** (and by extension "Mermen" for individuals, though "Mermaid" is used as a blanket insult regardless of gender). "Fishmen" is retired.
+
+**Why Mermaids wins:** A feminine-coded mythological insult applied dismissively to the underwater communities carries more social texture than the neutral "Fishmen." Surface speakers — especially the macho, para-military, corpo-security demographic — use "Mermaids" with contempt precisely because it feminizes and mythologizes people they regard as non-citizens. The word does double work: dehumanizes AND condescends.
+
+**Canonical usage:**
+- Outsider insult (surface speakers): "Mermaids" — e.g., *"Those fucking mermaids are going to pay."*
+- Underground communities call themselves by their own names (Underclan, etc.); they do not use "Mermaids" for themselves.
+- Sky-dwellers calling ground-floor residents "little birdies" or "Harpies" is the vertical mirror of this.
+
+**Scope:** All GLMZ prose. UNDR is the primary home but any surface-POV chapter may use this as ambient texture.
+
+---
+
+### §A37 -- UNDR data-recovery incident + direct-SQL prohibition
+
+On 2026-07-01, all 14 chapter sub-strands of UNDR (Ch01–Ch14) and their 55 StrandBeat links were deleted via a direct SQL operation. Root cause: unknown (no CLI, MCP, or Blazor UI path for Strand deletion exists). The Beat rows themselves survived because `StrandBeats.StrandId` cascades to the junction table, not to `Beats`.
+
+**Recovery:** Temporal tables (`FOR SYSTEM_TIME AS OF`) preserved all data exactly. All 14 chapter strands and 55 StrandBeat links were restored from the `AS OF '2026-07-01T13:07:00'` snapshot on 2026-07-02.
+
+**Prohibition (binding rule):**
+- **Never execute `DELETE FROM Strands`, `DELETE FROM Beats`, or `DELETE FROM StrandBeats` as a raw SQL statement** without first running a `FOR SYSTEM_TIME ALL` verification query and confirming the rows are genuinely orphaned/empty.
+- If a delete-strand operation is ever needed through the engine, it must go through a CLI/service-layer method that (a) checks for active beats and blocks if any exist, and (b) logs the operation.
+- The `sqlcmd` read-only lookups in CLAUDE.md are for SELECT only. Any write via sqlcmd requires explicit user confirmation stating "yes, delete strand X."
 

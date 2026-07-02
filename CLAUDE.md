@@ -30,6 +30,8 @@ sqlcmd -S "(localdb)\MSSQLLocalDB" -d StreetSamurai -Q "<query>"
 
 Only use `dotnet run --project v3/StreetSamurai.Blazor -- <args>` when the CLI's business logic is actually needed (write operations, generation, publish, review). Never use it just to answer a lookup question.
 
+**HARD RULE — no direct SQL deletes (SS-A37):** Never execute `DELETE FROM Strands`, `DELETE FROM Beats`, or `DELETE FROM StrandBeats` as raw sqlcmd statements. These tables are system-versioned temporal tables — deleting via raw SQL bypasses all application guards and is unrecoverable without a point-in-time restore. Any strand/beat removal must go through the CLI (`ss --beat delete`). If a strand genuinely needs to be deleted, get explicit user confirmation naming the strand by title and slug before touching the DB.
+
 ## Code Style
 - Do NOT use underscore-prefixed variables (e.g., `_myField`). Use `camelCase` for private fields without the underscore prefix.
 - JSON only for all data files. No Python scripts, no YAML, no Markdown files except README.
