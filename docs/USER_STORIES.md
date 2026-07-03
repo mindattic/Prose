@@ -214,27 +214,23 @@ updated: 2026-06-25
   - **H2e ✅** Full-work review panel 87.0/100 (N=20, all reviewers ≥80); exported *Sparrow V13.docx*.
     *(2026-06-20.)*
 
-- **SS-US-H4 ✅** As the author, *The Door Is Unlocked* (TDIU) is Pixel's origin story: she rides
+- **SS-US-H4 ⬜** As the author, *Pinhole* (PNHL; formerly TDIU / *The Door Is Unlocked*) is Pixel's origin story: she rides
   the Pulse from Iowa to GLMZ, is robbed on day one, learns that Arcturus Civil Security is more
   dangerous than the criminals, solves the problem herself with her own technical skills, and ends
-  the story as a full, confident person who leaves her door unlocked and meets her neighbor across
-  the hall. Full arc and locks in [docs/strands/TDIU.md](strands/TDIU.md).
-  *Acceptance: 14 beats Opus-polished; standalone review ≥ 82%; locks in TDIU §4 hold; story ends
-  with Beat 14 as specified (the door unlocked, Kyle unanswered).
-  (verified by CLI `--review-strand --slug the-door-is-unlocked-2db1c6ca`; peak 84.0/100, N=20;
-  exported *The Door Is Unlocked V2.pdf* 2026-06-22; all locks in TDIU §4 hold; Kyle says "Lock yours"
-  from behind his closed door — she ignores it, door left unlocked deliberately.)*
+  the story as a full, confident person who locks her door and leaves the nine-second routing gap
+  intact. Full arc and locks in [docs/strands/PNHL.md](strands/PNHL.md).
+  *Acceptance: standalone review ≥ 87%; locks in PNHL §8 hold; story ends
+  with the door locked, the pinhole gap unclosed, Kyle unanswered.
+  (current score: 83.9/100, N=58; Assessor redesign + Ryokan breach cost + character doctrine applied 2026-07-03.)*
   - **H4a ✅** Vera Moll seeded (id=f0d6a84eeecb4b8e8135e7b40f86026a, age=19, Iowa origin,
     species=human, signature_gear includes primary kit + mother's boots). *(2026-06-22.)*
-  - **H4b ✅** 14-beat strand in DB (kind=story, code=TDIU, id=019EA46A-17CB-7077-909B-11825BA5CFFC,
-    slug=the-door-is-unlocked-2db1c6ca). *(2026-06-22.)*
-  - **H4c ✅** 14 beats written; prose passes all six locks in TDIU §4. *(2026-06-22.)*
-  - **H4d ✅** 11 patch rounds applied: antagonist-defeats-herself arc (B12 RF broadcast standoff);
-    working-backwards engineering in B7 (312 MHz pre-built for this moment); integration-stay
-    emotional anchor in B8; Kyle ambient presence in B3+B13; Kyle "Lock yours" line in B14.
-    *(2026-06-22.)*
-  - **H4e ✅** Standalone review 84.0/100 (N=20, peak after 11 patch rounds). *(2026-06-22.)*
-  - **H4f ✅** Exported: *The Door Is Unlocked V2.epub/pdf*. *(2026-06-22.)*
+  - **H4b ✅** 26-beat strand in DB (kind=story, code=PNHL, id=019EA46A-17CB-7077-909B-11825BA5CFFC,
+    slug=the-door-is-unlocked-2db1c6ca). *(2026-07-02.)*
+  - **H4c ⬜** Standalone review ≥ 87%. Current stable score: 83.9/100 (58 Sonnet reviews).
+    Gap: 3.1 points. Assessor character redesign + Ryokan breach real cost + character doctrine
+    applied 2026-07-03. Beats 13/15/17/19 rewritten.
+  - **H4d ✅** Opus polish pass across all key beats. *(2026-07-02.)*
+  - **H4e ✅** Exported: *Pinhole V20.epub/pdf*. *(2026-07-02.)*
 
 - **SS-US-H3 ✅** As the author, *Attendance* (ATTE, `attendance-019ebf4c`, 40 beats) is revised so
   the disappearance mechanics are internally consistent: children vanish during unmonitored

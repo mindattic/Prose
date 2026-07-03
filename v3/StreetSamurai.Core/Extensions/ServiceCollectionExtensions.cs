@@ -838,6 +838,7 @@ public static class ServiceCollectionExtensions
         services.AddSingleton<NarrativeForkService>();
         services.AddSingleton<ChapterCloseProcessorService>();
         services.AddSingleton<ProseWriterRouter>();
+        services.AddSingleton<StoryLogicAuditService>();
 
         return services;
     }

@@ -28,7 +28,7 @@ All amendments through SS-A14 have been merged into their canonical destinations
 | SS-A8 — ATTE resonance-trace taxonomy | `docs/strands/ATTE.md` §4b |
 | SS-A9 — BCODA arc + 16-chapter spine | `docs/strands/BCODA.md` §1–9 |
 | SS-A10 — Null history + chapter swap | `docs/strands/BCODA.md` §5, §7 |
-| SS-A11 — Pixel origin + per-strand docs | `docs/strands/TDIU.md` §3; `CLAUDE.md` |
+| SS-A11 — Pixel origin + per-strand docs | `docs/strands/PNHL.md` §3; `CLAUDE.md` |
 | SS-A12 — Sparrow expansion + Sasha Vo | `docs/strands/SPRW.md` §3, §5–6 |
 | SS-A13 — TVYT redesign as MNEMOSYNC novel | `docs/strands/TVYT.md` (recreated) |
 | SS-A14 — ULC → Mnemosync rename + redesign | `docs/strands/MNEMO.md` |
@@ -1478,3 +1478,58 @@ Border Markets are **connective tissue between zones**. They appear in any GLMZ 
 - **Corpozens** — add as a slang-register entry to the vocabulary canon; not a separate entity
 
 
+
+
+## SS-A41 — Character Doctrine: circumstance → choice → definition {#SS-A41}
+
+**Date:** 2026-07-03 · **Author:** character-doctrine-pass · **Ref:** `docs/strands/PNHL.md` §10a; extends `docs/BIBLE.md` §10 narrative laws; applies to all universes and strands.
+
+---
+
+All characters are defined by their choices and actions — specifically, choices made in response to circumstances beyond their control. The circumstances define what they face; the choices define who they are.
+
+**The wound is not the character. The response to the wound is the character.**
+
+### Application (binding for all prose)
+
+**Pixel** (PNHL): Her mother died in a failed licensed SNT bridge. Beyond her control. She chose to come to GLMZ, keep the boots, learn the city's systems, fight back rather than leave. Those choices define her — not the loss.
+
+**The Assessor** (PNHL): Something happened to him. What he has done with that — building a coercive market, deciding consent is expendable, running fourteen cases — is the choice that defines him. The thing that happened is backstory. The operation is character.
+
+**Any character across all strands:** What happened to them is backstory. What they do about it is the story.
+
+### Binding prose directive
+
+Never anchor a character in what was done to them. Anchor them in what they do next. A wound earns its page space only by driving a choice. Backstory that doesn't produce a choice is biography, not character. If a scene explains a character only in terms of what happened to them without showing what they chose in response, cut the explanation and show the choice.
+
+---
+
+## SS-A42 — Deep Lake: no communities; one sealed black site; "Sky People" = the privileged class {#SS-A42}
+
+**Date:** 2026-07-03 · **Author:** world-consolidation · **Ref:** retires §A36; confirms §A39-1
+
+---
+
+### Underwater communities are retired (binding)
+
+There are no permanent human communities living beneath Lake Michigan. No hermetic-dome neighborhoods. No flooded-port communes. No lakebed settlements. The idea of a subculture choosing to live at the bottom of a freshwater lake — sustaining functional communities there — is cut from GLMZ canon. It has no social logic (the lake offers no aspiration, no benefit, no leverage), no narrative payoff, and dilutes the vertical class axis that actually works.
+
+**What remains on the lakebed:**
+
+- **Ruins.** Fifteen-plus decommissioned corporate research installations from the 2060s–2200s. Most are flooded, structurally failed, and dark. Salvage crews (The Lakebed Scrapers, The Silt Syndicate) work the shallower ruins for hardware and rare materials. Nobody lives in them.
+- **One sealed facility.** Sensor records that Arcturus Civil Security does not officially acknowledge indicate exactly one installation on the lakebed is still drawing power. Its corporate affiliation is not in any public registry. Its coordinates are not on any public map. What it researches is not confirmed. It is not a community. It is a black site. *Treat as one of GLMZ's locked mysteries — real, occupied, never confirmed in-fiction.*
+- **Surface-only operations.** Harbor gangs (The Fathom Line, The Rip), waterfront salvagers, and diving crews work the water and the shallow ruins for economic reasons. They surface. They do not live there.
+
+**§A36 is retired.** "Mermaids" and "Fishmen" as slang for underwater communities are cut along with the communities themselves. There is no community to reference. The Underclan (underground, not underwater) use their own name; any surface-speaker insult for underground dwellers belongs to per-strand bibles, not a GLMZ-wide amendment.
+
+---
+
+### Sky People = the privileged class (binding, confirms §A39-1)
+
+**Sky People** are the wealthiest and most privileged residents of GLMZ. They live above the city — aeroblocs, aeroplexes, licensed high-altitude platforms — and the altitude is not incidental. It is the point. Sky People are literally above it all: above the pollution, the Block Wars, the smells and density and consequences of the city they profit from.
+
+Elevation costs money and signals power. The higher you live, the less the city touches you. Sky People pay a premium not just for the view but for the distance. The street does not reach them. That is the amenity.
+
+The **vertical class axis** runs from absent/underground through street-level through sky. There is no competing underwater narrative. The lakebed is where nothing is: ruins, one sealed secret, absence. The sky is where wealth concentrates. The axis is clean.
+
+**Prose directive:** A Sky Person's altitude is a character fact. A street-level character looking up at aeroplex lights at night is making a class statement. The distance between street and sky is not aesthetic — it is political.

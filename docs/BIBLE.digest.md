@@ -131,65 +131,36 @@ narrative-law block here when stood up:**
   ambient proprioceptive information field BCI-augmented people sense (see `network_doc.md`).
 
 ## Status index (from USER_STORIES.md)
-- done: 123  partial: 8  planned: 23  cut: 1
+- done: 120  partial: 8  planned: 25  cut: 1
 
 ## Latest amendment
-## SS-A40 — Border Markets: the threshold economy between CorpoNations and Gray Zones {#SS-A40}
+## SS-A42 — Deep Lake: no communities; one sealed black site; "Sky People" = the privileged class {#SS-A42}
 
-**Date:** 2026-07-02 · **Author:** connective-tissue pass · **Ref:** extends [SS-A29](#SS-A29) CorpoNation/Gray-Zone canon; adds social texture at the zone threshold; introduces "Corpozens" slang.
-
----
-
-### What they are (binding)
-
-**Border Markets** are the informal economies that form immediately outside every walled CorpoNation entrance. They are not planned, not licensed, and not on any corpo map — they grow where the two worlds touch.
-
-The dynamic is structural: CorpoNation citizens need things the corpo cannot or will not provide at the price or speed they want. Gray Zone residents need income and access to corpo-grade goods they can't otherwise reach. The gate is the bottleneck; the market is the response to the bottleneck. Every major corpo entrance has one.
-
-**The geography of mutual tolerance:**
-- **How far out a Corpozens (corpo citizen) feels safe to venture:** the answer is not a fixed distance — it is a feeling. The Border Market is *exactly as far out as corpos still come*. It calibrates itself to that edge in real time. On a calm week, the stalls push two blocks into the Gray Zone. After a Block War skirmish, they retract to the shadow of the gate itself. The market is a living barometer of zone tension.
-- **How close to an arcology a Gray Zone dweller will get:** the Border Market is the answer. Past the market, corpo security starts asking questions. At the market, security tolerates presence because the market serves corpo demand. Before the market, there is no formal threshold. Gray Zoners attend the market; they do not, as a rule, go through the gate.
-
-The result: **the Border Market is the primary social interface between two populations that are otherwise sealed from each other.** It is where corpo aesthetics and Gray Zone aesthetics bleed. It is where corpo workers buy food they pretend isn't there. It is where Gray Zoners get secondhand corpo tech, counterfeit corpo rations, and the occasional corpo worker willing to talk.
+**Date:** 2026-07-03 · **Author:** world-consolidation · **Ref:** retires §A36; confirms §A39-1
 
 ---
 
-### Slang — "Corpozens" and related terms (binding)
+### Underwater communities are retired (binding)
 
-**Corpozens** (noun, plural; singular **Corpozen**) — Gray Zone slang for CorpoNation citizens. The word mashes *corpo* and *citizen* and lands with a particular register: not quite contempt, not quite envy. A Corpozen is someone who traded their autonomy for the arcology's walls and calls it safety. The word is used casually and without heat by most Gray Zoners, the way a city person might say "suburbanites." The people it describes mostly don't use it for themselves — if they've heard it at all.
+There are no permanent human communities living beneath Lake Michigan. No hermetic-dome neighborhoods. No flooded-port communes. No lakebed settlements. The idea of a subculture choosing to live at the bottom of a freshwater lake — sustaining functional communities there — is cut from GLMZ canon. It has no social logic (the lake offers no aspiration, no benefit, no leverage), no narrative payoff, and dilutes the vertical class axis that actually works.
 
-| Term | Speaker | Meaning |
-|---|---|---|
-| **Corpozens** / **Corpozen** | Gray Zone | CorpoNation citizens — the walled-in; people who live inside |
-| **Wallborn** | Gray Zone (older register) | Someone born inside an arcology; never seen unmanaged sky |
-| **The inside** | Gray Zone | The arcology; the walled city within a city |
-| **Gate heat** | Any | Heightened corpo security at the entrance — market contracts when gate heat rises |
-| **Threshold run** | Gray Zone street | A visit to the Border Market to sell or acquire; "I'm doing a threshold run" |
-| **Market shadow** | Gray Zone | The safe zone for Gray Zone activity — directly under the corpo security's willingness to turn a blind eye |
-| **Gray Mouse** | Corpo pejorative | A Gray Zone person at the border market — someone scurrying close to the wall, looking for scraps. The gentler of the trio; used without heat by corpo workers who consider themselves tolerant. |
-| **Gray Rat** | Corpo pejorative (hostile) | Escalated form; implies the Gray Zone person is a pest, a scavenger, possibly a thief. Used when a corpo wants to remind someone they're not welcome. |
-| **Gray Scum** | Corpo pejorative (aggressive) | The ugly end of the register. Used by corpo security and corpo ultranationalists; the kind of word that starts a confrontation at the gate. |
-| **Corpo Mouse** | Gray Zone pejorative | A Corpozen at the border market — someone who crept out from behind the walls for a look. Mild, almost affectionate contempt. |
-| **Corpo Rat** | Gray Zone pejorative (hostile) | Escalated form; implies the Corpozen is an informant, a spy, or a corpo security plant running a soft surveillance pass. |
-| **Corpo Scum** | Gray Zone pejorative (aggressive) | The ugly end. Used when a Gray Zoner wants the Corpozen to know exactly where they stand. The kind of word that clears a stall. |
+**What remains on the lakebed:**
+
+- **Ruins.** Fifteen-plus decommissioned corporate research installations from the 2060s–2200s. Most are flooded, structurally failed, and dark. Salvage crews (The Lakebed Scrapers, The Silt Syndicate) work the shallower ruins for hardware and rare materials. Nobody lives in them.
+- **One sealed facility.** Sensor records that Arcturus Civil Security does not officially acknowledge indicate exactly one installation on the lakebed is still drawing power. Its corporate affiliation is not in any public registry. Its coordinates are not on any public map. What it researches is not confirmed. It is not a community. It is a black site. *Treat as one of GLMZ's locked mysteries — real, occupied, never confirmed in-fiction.*
+- **Surface-only operations.** Harbor gangs (The Fathom Line, The Rip), waterfront salvagers, and diving crews work the water and the shallow ruins for economic reasons. They surface. They do not live there.
+
+**§A36 is retired.** "Mermaids" and "Fishmen" as slang for underwater communities are cut along with the communities themselves. There is no community to reference. The Underclan (underground, not underwater) use their own name; any surface-speaker insult for underground dwellers belongs to per-strand bibles, not a GLMZ-wide amendment.
 
 ---
 
-### Narrative function (standing prose directive)
+### Sky People = the privileged class (binding, confirms §A39-1)
 
-Border Markets are **connective tissue between zones**. They appear in any GLMZ strand where a character crosses between corpo and Gray Zone space. Use them to:
+**Sky People** are the wealthiest and most privileged residents of GLMZ. They live above the city — aeroblocs, aeroplexes, licensed high-altitude platforms — and the altitude is not incidental. It is the point. Sky People are literally above it all: above the pollution, the Block Wars, the smells and density and consequences of the city they profit from.
 
-- Show the mundane texture of the threshold — the smell of cooked food, the voltage of a vendor argument, the sight of corpo uniforms at the edge buying things their ID shouldn't touch
-- Establish zone tension through market size: a contracted market (vendors close to the gate, few Corpozens outside) signals recent trouble without exposition
-- Give characters from different zones a plausible shared space where encounters happen without forced contrivance
-- Show cultural bleed in both directions — corpo aesthetics in Gray Zone goods (knockoff corpo ration packs, corpo fashion recut), Gray Zone goods moving inward (underground food, handmade tech, contraband)
+Elevation costs money and signals power. The higher you live, the less the city touches you. Sky People pay a premium not just for the view but for the distance. The street does not reach them. That is the amenity.
 
-**The market does not need to be the scene.** It can be a paragraph of texture while characters pass through. A character who pauses at the threshold has a reason; a character who keeps walking has a different reason. The market asks the question; prose uses the answer.
+The **vertical class axis** runs from absent/underground through street-level through sky. There is no competing underwater narrative. The lakebed is where nothing is: ruins, one sealed secret, absence. The sky is where wealth concentrates. The axis is clean.
 
----
-
-### Entities to seed
-
-- **Border Market** (Place, type: market/faction threshold) — generic category entity; individual named markets (e.g., "the Axiom Threshold Market," "the Meridian Gate Exchange") seeded per strand as needed
-- **Corpozens** — add as a slang-register entry to the vocabulary canon; not a separate entity
+**Prose directive:** A Sky Person's altitude is a character fact. A street-level character looking up at aeroplex lights at night is making a class statement. The distance between street and sky is not aesthetic — it is political.
 

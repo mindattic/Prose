@@ -384,7 +384,7 @@ A prose beat/strand is **done** only when:
   narrative laws for a character): append a new `SS-AN` entry to `docs/AMENDMENTS.md`.
 - **Always**: add a new story entry to `docs/USER_STORIES.md` under the appropriate Epic, with
   sub-items for entity seeding, chapter structure, each act, and the review target.
-- Run `pwsh tools/codex.ps1 doctor` — must pass before proceeding.
+- Run `powershell -File tools/codex.ps1 doctor` — must pass before proceeding.
 
 ### Step 2 — Entity seeding ★
 

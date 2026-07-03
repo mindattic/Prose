@@ -248,7 +248,7 @@ These are locked and should not be proposed as negotiable:
 | Code | Title | Status |
 |---|---|---|
 | BCODA | Bushido Coda (flagship novel) | In progress |
-| TDIU | The Door Is Unlocked | Complete |
+| PNHL | Pinhole | Complete |
 | ATTE | Attendance / Yemina Fola | Complete |
 | VATD | Vultures at the Door | Complete |
 | DWIACE | Death Whispers in a Cat's Ear | Complete |

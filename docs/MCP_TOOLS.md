@@ -11,7 +11,7 @@
 > All tools are MCP-prefixed `mcp__streetsamurai__<name>` by the client. Most return a
 > JSON string; the canon is the SQL database, scoped to the active Universe.
 
-**201 tools** across **29 tool families.**
+**202 tools** across **30 tool families.**
 
 ## Families
 
@@ -39,6 +39,7 @@
 | [Species](#species) | 2 |
 | [Story](#story) | 6 |
 | [Story Audit](#story-audit) | 2 |
+| [Story Logic](#story-logic) | 1 |
 | [Strand](#strand) | 32 |
 | [Universe](#universe) | 3 |
 | [Voice](#voice) | 5 |
@@ -1144,6 +1145,17 @@ Link a strand to its predecessor, switching it from gateway mode to sequel mode.
 - `strandIdOrSlug` (string, required) — The strand to update — id (GUID) or slug.
 - `previousStrandIdOrSlug` (string, optional) — The preceding strand — id (GUID) or slug. Omit or pass null to clear.
 - `clear` (bool, optional) — Set true to clear PreviousStrandId (revert to gateway mode).
+
+## Story Logic
+
+<sub>`StoryLogicTools`</sub>
+
+### `write_outline`
+
+Generate a narrative outline and adversarial logic audit for a strand. Finds plot holes, canon violations, prop errors, causality breaks, and contradictions. Returns outline (beat-by-beat narrative summary grouped by act) + findings list with severity/category/problem/suggestion per issue. Pass skip_audit=true for outline only (faster). Accepts strand id (GUID) or slug.
+
+- `strandIdOrSlug` (string, required) — Strand id (GUID) or slug.
+- `skip_audit` (bool, optional) — Skip the logic audit and return outline only. Default false.
 
 ## Strand
 

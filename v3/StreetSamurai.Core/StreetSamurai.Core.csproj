@@ -4,6 +4,9 @@
     <TargetFramework>net10.0</TargetFramework>
     <ImplicitUsings>enable</ImplicitUsings>
     <Nullable>enable</Nullable>
+    <!-- EF1002/EF1003: all raw-SQL call sites use SQL identifiers, temporal table syntax,
+         or DDL that cannot be parameterized — suppressed project-wide after audit 2026-07-02. -->
+    <NoWarn>$(NoWarn);EF1002;EF1003</NoWarn>
   </PropertyGroup>
 
   <ItemGroup>
@@ -19,9 +22,7 @@
     <PackageReference Include="Microsoft.EntityFrameworkCore.Sqlite" Version="10.0.9" />
     <PackageReference Include="Microsoft.EntityFrameworkCore.SqlServer" Version="10.0.9" />
     <PackageReference Include="MindAttic.Media" Version="1.0.0" />
-    <ProjectReference Include="..\..\..\MindAttic.Media\src\MindAttic.Media\MindAttic.Media.csproj" Condition="'$(Configuration)' == 'Debug'" />
     <PackageReference Include="MindAttic.Media.Azure" Version="1.0.0" />
-    <ProjectReference Include="..\..\..\MindAttic.Media\src\MindAttic.Media.Azure\MindAttic.Media.Azure.csproj" Condition="'$(Configuration)' == 'Debug'" />
     <PackageReference Include="Microsoft.Extensions.DependencyInjection.Abstractions" Version="10.0.9" />
     <PackageReference Include="Microsoft.Extensions.Hosting.Abstractions" Version="10.0.9" />
     <PackageReference Include="Microsoft.Extensions.Http" Version="10.0.9" />

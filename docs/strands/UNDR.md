@@ -271,7 +271,7 @@ and draw the comparison; Glim's POV never does. See [[SS-A24]] for the full cano
 running one looped subroutine on the black water of Homewater: **accept a fare freely given, convey,
 return.** It does not speak, judge, or remember — it **rows.** Made an android *precisely so that the
 threshold is not a judgment* — the Deep does not ask if you deserve to cross, only that you pay. The
-toll is a handshake relic of a fare-collection routine: any single object, freely surrendered. When
+toll is a handshake relic of a fare-collection routine: **any single object, freely surrendered, that the Oarsman does not already hold.** Each fare is unique — it adds something new to the hoard; the same kind of object cannot pay twice. When
 four-year-old Toby crossed, he gave it the **shine** his mother had clipped to him — a child's
 emergency transit ident (the one object that could have named him to the surface). The Oarsman took
 it and rowed. *He gave away his name to come home.*

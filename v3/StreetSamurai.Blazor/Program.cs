@@ -22,6 +22,13 @@ using MindAttic.Media;
 using MindAttic.Vault.Configuration;
 using MindAttic.Vault.DependencyInjection;
 
+// Force UTF-8 console I/O so piped prose (em-dashes, curly quotes, etc.) round-trips
+// correctly through `Get-Content <file> | dotnet run -- --beat update --text -`.
+// Without this, Windows defaults to OEM 437, which maps E2 80 94 (UTF-8 em dash) to
+// the mojibake sequence "ΓÇö" and corrupts every non-ASCII character in stored beats.
+Console.InputEncoding  = System.Text.Encoding.UTF8;
+Console.OutputEncoding = System.Text.Encoding.UTF8;
+
 // QuestPDF Community license — required call before the first Document.Create.
 // This project is the non-commercial indie use case the Community tier exists for.
 QuestPDF.Settings.License = QuestPDF.Infrastructure.LicenseType.Community;
@@ -1547,6 +1554,20 @@ if (args.Contains("--score-trend"))
     cliBuilder.Services.AddStreetSamuraiServices();
     var cliApp = cliBuilder.Build();
     Environment.ExitCode = await ScoreTrendCli.RunAsync(args, cliApp.Services);
+    return;
+}
+
+// ss --write-outline --slug <strandSlug> [--json] [--skip-audit]
+// Generates a beat-by-beat narrative outline (act-grouped, one sentence per beat)
+// and runs an adversarial logic audit: plot holes, canon violations, impossible actions,
+// causality breaks, prop errors, contradictions. Use --skip-audit for outline only.
+// Exit 0 = no issues, 1 = minor/major findings, 2 = critical findings.
+if (args.Contains("--write-outline"))
+{
+    var cliBuilder = WebApplication.CreateBuilder(args);
+    cliBuilder.Services.AddStreetSamuraiServices();
+    var cliApp = cliBuilder.Build();
+    Environment.ExitCode = await WriteOutlineCli.RunAsync(args, cliApp.Services);
     return;
 }
 

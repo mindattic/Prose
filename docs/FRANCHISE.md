@@ -115,7 +115,7 @@ Every current property in the IP, as an adaptation unit. Loglines drawn from the
 | **Mnemosync** | A journalist and a courier receive each other's suppressed memories through an illegal neuretics bleed — and the warmth of the transfer is inseparable from the horror of what was taken. | Novel / Limited series (4–6 episodes) | The warmth and the horror from the same source; memory suppression as a CorpoNation product; "Are we even ourselves?" |
 | **Testament** | Eight years after the Cortland Engagement, someone reopens the case — and Bear, who has been quietly paying sixteen families ever since, has to decide how to close it. | Novella / Film or standalone episode | Character study; Sun Tzu ending; the handshake that is the whole strategy |
 | **Underclan** | A surface child lost in the deep underground of GLMZ is raised by an uncontacted tribe — then the Surfacing rite of passage drags him back up, and the surface learns the legend is real. | Novel / Limited series | Contact tragedy in the *FernGully* / *Dances With Wolves* lineage; the surface is the disaster; immunological biology as tragedy engine |
-| **The Door Is Unlocked** | A country girl rides the Pulse from Iowa into GLMZ and learns, in order: the city is faster than she is; the institutions that look like help are the danger; she can solve her own problems. | Novella / Film | Coming-of-age; zero prior knowledge required; ends on a choice (she leaves the door unlocked because she has decided to); Pixel's origin |
+| **Pinhole** | A country girl rides the Pulse from Iowa into GLMZ and learns, in order: the city is faster than she is; the institutions that look like help are the danger; she can solve her own problems. | Novella / Film | Coming-of-age; zero prior knowledge required; ends on a choice (she closes the lid without erasing the gap); Pixel's origin |
 | **The Rook Trilogy** | | | |
 | — *Magenta & Gunmetal* | Five freelancers accept a corporate extraction job. The target extracts herself. The corp sends a wet squad. Everyone ends up on a storm-lashed lake platform, and Rook has to jump onto a VTOL. | Novella / Film | Classic heist-gone-wrong register; True Lies finale; standalone crowd-pleaser |
 | — *Neon & Rust* | A ghost from the last job, a locked room inside someone's head, and the cost of infrastructure nobody maintained. | Novella / Film (direct sequel) | The rust theme applied inward; neuretics partition surgery as ticking-clock set-piece |
@@ -183,7 +183,7 @@ The **standalone, contained stories** are natural film properties — a complete
 - *Vultures at the Door* — black comedy; *Pulp Fiction* register; one-day clock.
 - *Testament* — character study; dual-timeline court drama resolved by a handshake.
 - *Steppin' Razor* — psychedelic road movie; edge-to-core geography; camel-man contact.
-- *The Door Is Unlocked* — coming-of-age; one girl, one city, one week.
+- *Pinhole* — coming-of-age; one girl, one city, one week.
 
 The **tentpole set-pieces** that play largest on screen:
 - The lake platform storm sequence (Magenta & Gunmetal) — crane combat, VTOL boarding, Lace running a real-time social-engineering operation on PEREGRINE's communications while the crew is in motion.
