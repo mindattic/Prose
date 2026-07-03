@@ -2,8 +2,8 @@ namespace StreetSamurai.Core.Data.Entities;
 
 /// <summary>
 /// Abstract base of the story tree (table-per-hierarchy on the Nodes table,
-/// discriminated by the <c>NodeType</c> column). The hierarchy replaces the
-/// old single "Strand" abstraction that conflated Series, Story, and Chapter:
+/// discriminated by the <c>NodeType</c> column). The hierarchy unifies
+/// Series, Story, and Chapter under one polymorphic root:
 ///
 ///   SeriesNode  — top-level grouping (e.g. "Bushido Coda", a saga/anthology).
 ///     StoryNode — a single story arc; a book. May hold beats directly when it

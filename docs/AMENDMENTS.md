@@ -1573,9 +1573,10 @@ structural truth. `NodeFactory.Create(kind)` maps labels to types at data-driven
 **Surface renames:** MCP `get_story` / `list_stories` / `create_series` / `create_story` /
 `create_chapter` / `review_story` / story-bible family (legacy Book/Chapter tools renamed
 `create_legacy_book` / `create_legacy_chapter`); CLI story-scoped flags are now `--write-story`,
-`--review-story`, `--list-stories`, `--publish-story`, `--story-bible`, `--story-code`, etc.
-(`--slug` and `ss --write-outline --slug` unchanged). Blazor routes `/node/{slug}` + `/nodes`
-remain canonical with `/story/{slug}`, `/strand/{slug}`, `/stories`, `/strands` as aliases.
+`--review-node`, `--list-stories`, `--publish-story`, `--story-bible`, `--story-code`, etc.
+(`--slug` and `ss --write-outline --slug` unchanged; `--review-story` and `--run-panel` remain
+as legacy aliases for `--review-node`). Blazor routes `/node/{slug}` + `/nodes`
+remain canonical with `/story/{slug}` and `/stories` as aliases.
 
 **SS-A37 (no direct SQL deletes) now reads:** never `DELETE FROM Nodes`, `DELETE FROM Beats`,
 or `DELETE FROM NodeBeats` via raw sqlcmd — same rule, renamed tables.

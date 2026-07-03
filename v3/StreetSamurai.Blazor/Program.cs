@@ -628,9 +628,9 @@ if (args.Contains("--worker-mode"))
 // CLI mode: have N Legion personas each read an EXISTING node and write an
 // honest, scored reader review (saved to NodeReviews), then synthesize the
 // Amazon-style aggregate summary. Round-robins reviewers across the trusted-4.
-//   ss --review-story (--id <guid|prefix> | --slug <slug>) [--readers N]
-//   ss --run-panel    (legacy alias)
-if (args.Contains("--review-story") || args.Contains("--run-panel"))
+//   ss --review-node (--id <guid|prefix> | --slug <slug>) [--readers N]
+//   ss --review-story / --run-panel  (legacy aliases)
+if (args.Contains("--review-node") || args.Contains("--review-story") || args.Contains("--run-panel"))
 {
     var cliBuilder = WebApplication.CreateBuilder(args);
     cliBuilder.Services.AddStreetSamuraiServices();
