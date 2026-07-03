@@ -1,4 +1,4 @@
-﻿# StreetSamurai
+# StreetSamurai
 
 **A literary fiction engine for a cyberpunk century.**
 
@@ -34,7 +34,7 @@ Live at **[streetsamurai.azurewebsites.net](https://streetsamurai.azurewebsites.
 
 ## What StreetSamurai Is
 
-StreetSamurai is a C#/.NET 10 Blazor Server application — web-only, fully responsive — that takes a one-line seed to a published, reader-reviewed, canon-consistent audiobook and manuscript. It is the authoring stack for *Bushido Coda* and a hundred stories beyond it, set in the GLMZ: a 500-kilometer vertical megacity stacked along the western shore of Lake Michigan in 2225, where ferrocement waves rise a hundred stories above the lake and CorpoNations hold sovereignty the old nations could not. Canon is a database, not a folder of files. SQL Server holds 12,000+ named entities — characters, places, factions, CorpoNations, weapons, biotech, nano, documents — bound by a directional graph of relationships, vector embeddings, and a two-axis time model. On top sits the writing surface: a Strand to Beat hierarchy spanning 36 strands and 2,443+ beats with an outline-first workflow, a multi-provider review pipeline (Legion-backed, 11 LLM providers), storytelling-science analysis, a deterministic continuity suite, and an export pipeline (Word / EPUB / PDF / Markdown / audiobook). A reader-review panel of synthetic personas measures reception from data, not vibes. For agentic authoring, an MCP server exposes the entire canon to Claude — Desktop, Code, or any MCP client — so the model can call the world directly. The human approves canon and voice changes; the engine writes.
+StreetSamurai is a C#/.NET 10 Blazor Server application — web-only, fully responsive — that takes a one-line seed to a published, reader-reviewed, canon-consistent audiobook and manuscript. It is the authoring stack for *Bushido Coda* and a hundred stories beyond it, set in the GLMZ: a 500-kilometer vertical megacity stacked along the western shore of Lake Michigan in 2225, where ferrocement waves rise a hundred stories above the lake and CorpoNations hold sovereignty the old nations could not. Canon is a database, not a folder of files. SQL Server holds 12,000+ named entities — characters, places, factions, CorpoNations, weapons, biotech, nano, documents — bound by a directional graph of relationships, vector embeddings, and a two-axis time model. On top sits the writing surface: a typed Node tree (series / story / chapter) over Beats spanning 36 stories and 2,443+ beats with an outline-first workflow, a multi-provider review pipeline (Legion-backed, 11 LLM providers), storytelling-science analysis, a deterministic continuity suite, and an export pipeline (Word / EPUB / PDF / Markdown / audiobook). A reader-review panel of synthetic personas measures reception from data, not vibes. For agentic authoring, an MCP server exposes the entire canon to Claude — Desktop, Code, or any MCP client — so the model can call the world directly. The human approves canon and voice changes; the engine writes.
 
 ---
 
@@ -54,8 +54,8 @@ Core services  (v3/StreetSamurai.Core/)
   │
   ▼
 Database  (SQL Server)
-  │  12,000+ entities · 36 strands · 2,443+ beats · vector embeddings
-  │  System-versioned (temporal) Beats + Strands tables
+  │  12,000+ entities · 36 stories · 2,443+ beats · vector embeddings
+  │  System-versioned (temporal) Beats + Nodes tables
   │  EntityStateEvents ledger · Edges graph · ContinuityClaims
 ```
 
@@ -72,10 +72,10 @@ The router coordinates this enrichment chain before handing off to `BeatGenerato
 | Service | What it injects | Activation condition |
 |---|---|---|
 | `BeatModeDetector` | Classifies beat as Combat / Narrative / EmotionalClimax / Dialogue / Transition / Revelation | Keyword scan on `BeatGoal` |
-| `PacingService` | BREATHE / FLOW / TIGHTEN / STRIKE / SETTLE prose rhythm | Position in strand + BeatGoal keywords; Combat forces STRIKE |
-| `StoryMethodologyService` | Save the Cat structural role (Opening Image → Final Image) + Scene-Sequel type | Position in strand |
-| `PlantPayoffService` | Active plant/payoff pairs seeded into context | `BeatContext.StrandId != Guid.Empty` |
-| `StoryAuditService` | Gateway or Sequel commandments (7 each, auto-detected from `PreviousStrandId`) | `BeatContext.StrandId != Guid.Empty` |
+| `PacingService` | BREATHE / FLOW / TIGHTEN / STRIKE / SETTLE prose rhythm | Position in story + BeatGoal keywords; Combat forces STRIKE |
+| `StoryMethodologyService` | Save the Cat structural role (Opening Image → Final Image) + Scene-Sequel type | Position in story |
+| `PlantPayoffService` | Active plant/payoff pairs seeded into context | `BeatContext.NodeId != Guid.Empty` |
+| `StoryAuditService` | Gateway or Sequel commandments (7 each, auto-detected from `PreviousNodeId`) | `BeatContext.NodeId != Guid.Empty` |
 | `CombatProseGuidance` | Verbs-first, fragment sentences, no emotion-naming, Dissociated Observer examples | `BeatMode.Combat` |
 | `SceneContextBuilder` | Ambient sensory palette from carried/worn gear | `BeatContext.Location` is set |
 | `DialogueService` | Per-character voice registers | `BeatMode.Dialogue` or `EmotionalClimax`; `CharactersInScene` set |
@@ -86,7 +86,7 @@ The router coordinates this enrichment chain before handing off to `BeatGenerato
 | `ConsequenceEngine` | Cross-story persistent consequences (contract outcomes, faction burns) | `CharactersInScene.Count > 0` |
 | `AmbientAnomalyService` | New Weird ambient background detail tagged to scene location (60% chance gate) | `BeatContext.Location` is set |
 | `WorldStateAtBeatService` | Live temporal entity state snapshot from `EntityStateEvents` (drifted, not canon baseline) | `beatId != Guid.Empty` |
-| `NarrativeSummaryService` | Rolling compressed scene memory — last 10 beats for long-strand coherence | `BeatContext.StrandId != Guid.Empty` |
+| `NarrativeSummaryService` | Rolling compressed scene memory — last 10 beats for long-story coherence | `BeatContext.NodeId != Guid.Empty` |
 | `WorkflowMonitorService` | Logs per-beat service coverage to `BeatServiceLog` | Always |
 | `BeatModeDetector` | Persists mode classification to `BeatModeLog` | Always |
 
@@ -100,18 +100,18 @@ The router coordinates this enrichment chain before handing off to `BeatGenerato
 
 #### Beat writing workflow
 
-1. Assemble `BeatContext` (X-Ray context via `SceneContextAssembler`, `StrandId` always set)
+1. Assemble `BeatContext` (X-Ray context via `SceneContextAssembler`, `NodeId` always set)
 2. Call `ProseWriterRouter.WriteAsync(context, beatId, beatIndex, totalBeats)`
 3. After writing, run `ss --examine-emotion --slug <slug>` (8-dimension emotional scoring)
 4. After enough beats scored, run `ss --update-register-exemplars --slug <slug>` (update voice register)
-5. After strand complete, run `ss --story-audit --slug <slug>` (gateway/sequel commandments)
-6. After strand complete, run `ss --plant-audit --slug <slug>` (orphan plant check)
+5. After story complete, run `ss --story-audit --slug <slug>` (gateway/sequel commandments)
+6. After story complete, run `ss --plant-audit --slug <slug>` (orphan plant check)
 
 #### Coverage monitoring
 
 ```powershell
-ss --workflow-status --slug <slug>   # per-strand service coverage matrix + gaps
-ss --workflow-status --all           # global utilization across all strands
+ss --workflow-status --slug <slug>   # per-story service coverage matrix + gaps
+ss --workflow-status --all           # global utilization across all stories
 ```
 
 MCP equivalents: `workflow_status`, `workflow_status_global`, `workflow_beat_modes`
@@ -142,21 +142,21 @@ All ~118 handlers are dispatched from `v3/StreetSamurai.Blazor/Program.cs`.
 
 | Command | What it does |
 |---|---|
-| `ss --review-strand --slug <slug> [--effort draft\|standard\|deep]` | Multi-persona scored review; targets ≥82% standalone, ≥85% cumulative |
+| `ss --review-story --slug <slug> [--effort draft\|standard\|deep]` | Multi-persona scored review; targets ≥82% standalone, ≥85% cumulative |
 | `ss --examine-emotion --slug <slug>` | 8-dimension per-beat emotional scoring (0–4 per dimension) |
-| `ss --story-audit --slug <slug>` | Audits gateway/sequel commandments for the strand |
+| `ss --story-audit --slug <slug>` | Audits gateway/sequel commandments for the story |
 | `ss --plant-audit --slug <slug>` | Checks for orphaned plants (planted but never paid off) |
 | `ss --publish-docx [--slug <slug>]` | Exports docx + EPUB + PDF + audio manuscript `.txt`; prunes stale versions; lands in `{Title}/V{N}/` |
-| `ss --workflow-status --slug <slug>` | Per-strand service coverage matrix showing which pipeline services fired and which are gaps |
-| `ss --workflow-status --all` | Global utilization matrix across all strands |
-| `ss --generate-cover --strand-code CODE --generator NAME --prompt "TEXT"` | AI cover generation via ChatGPT / Gemini / Ideogram / Flux; stores prompt in `CoverImagePrompts`, asset in `Assets` |
-| `ss --import-cover --file PATH [--strand-code CODE] [--type TYPE]` | Import a local image into the cover asset library |
-| `ss --audit-strand [--deep] [--model haiku]` | Repeatable full-QA orchestrator — structural + prose + continuity |
-| `ss --diagnose-strand --slug <slug>` | 12-check structural pre-flight without full review cost |
+| `ss --workflow-status --slug <slug>` | Per-story service coverage matrix showing which pipeline services fired and which are gaps |
+| `ss --workflow-status --all` | Global utilization matrix across all stories |
+| `ss --generate-cover --story-code CODE --generator NAME --prompt "TEXT"` | AI cover generation via ChatGPT / Gemini / Ideogram / Flux; stores prompt in `CoverImagePrompts`, asset in `Assets` |
+| `ss --import-cover --file PATH [--story-code CODE] [--type TYPE]` | Import a local image into the cover asset library |
+| `ss --audit-story [--deep] [--model haiku]` | Repeatable full-QA orchestrator — structural + prose + continuity |
+| `ss --diagnose-story --slug <slug>` | 12-check structural pre-flight without full review cost |
 | `ss --expand-beat --slug <slug>` | Expand a single beat using the full enriched pipeline |
-| `ss --edit-strand --slug <slug>` | Review-weighted auto-editor pass |
-| `ss --reflow-strand --slug <slug>` | Bounded copy-edit: fixes paragraph breaks, question marks, dialogue attribution without rewriting |
-| `ss --check-fidelity --slug <slug>` | Cosine-similarity check of prose vs. strand bible/synopsis |
+| `ss --edit-story --slug <slug>` | Review-weighted auto-editor pass |
+| `ss --reflow-story --slug <slug>` | Bounded copy-edit: fixes paragraph breaks, question marks, dialogue attribution without rewriting |
+| `ss --check-fidelity --slug <slug>` | Cosine-similarity check of prose vs. story bible/synopsis |
 | `ss --check-prose --slug <slug>` | Regex linter for banned prose patterns (pseudo-profound, cliché, on-the-nose) |
 | `ss --check-canon --slug <slug>` | Chunked semantic + LLM sweep for canon rule violations |
 | `ss --timeline-check --slug <slug>` | Deterministic dead-character-acting + wound-regression checks |
@@ -165,7 +165,7 @@ All ~118 handlers are dispatched from `v3/StreetSamurai.Blazor/Program.cs`.
 | `ss --continuity --slug <slug>` | Extract and validate continuity claims against live entity state |
 | `ss --backfill-coverage --slug <slug>` | Non-destructive: logs router coverage for existing beats from synopsis without regenerating |
 | `ss --doc-context --slug <slug> [--goal "TEXT"]` | Dry-run the Doc Context Stack — shows which docs would load for a beat |
-| `ss --sync-markdown` | Sync Codex `.md` files from disk to DB (auto-classifies into always/strand/topic tiers) |
+| `ss --sync-markdown` | Sync Codex `.md` files from disk to DB (auto-classifies into always/node/topic tiers) |
 | `ss --rebuild-graph` | Rebuild in-memory entity relationship graph from SQL |
 | `ss --reembed` | Re-embed all entities via OpenAI `text-embedding-3-small` |
 | `ss --review-entity --id <guid>` | Legion-persona quality review of a single canon entity |
@@ -199,10 +199,10 @@ Windows Authentication — no `-U`/`-P` needed. Same as `appsettings.json` → `
 
 ### Direct queries (read-only lookups)
 
-For strand lists, scores, entity counts, and other read-only lookups, query the DB directly — returns in under a second:
+For story lists, scores, entity counts, and other read-only lookups, query the DB directly — returns in under a second:
 
 ```powershell
-sqlcmd -S "(localdb)\MSSQLLocalDB" -d StreetSamurai -Q "SELECT Name, Score FROM Strands WHERE IsCanon = 1 ORDER BY Score DESC"
+sqlcmd -S "(localdb)\MSSQLLocalDB" -d StreetSamurai -Q "SELECT Name, Score FROM Nodes WHERE IsCanon = 1 ORDER BY Score DESC"
 ```
 
 Only use `dotnet run --project v3/StreetSamurai.Blazor -- <args>` when the CLI's business logic is actually needed (write operations, generation, publish, review). Never use it just to answer a lookup question.
@@ -217,13 +217,13 @@ The DB schema is documented at `docs/schema.md` (222 tables), generated by `tool
 |---|---|
 | `Entities` | Universal spine — one row per entity: `Id, Name, Slug, EntityType, Description, IsActive, UniverseId` |
 | `Beats` / `Beats_History` | System-versioned (temporal) prose beats — every edit rewindable via `FOR SYSTEM_TIME ALL` |
-| `Strands` / `Strands_History` | System-versioned strand metadata + score |
+| `Nodes` / `Nodes_History` | System-versioned story metadata + score |
 | `EntityEmbeddings` | 1536-d vectors (OpenAI `text-embedding-3-small`); cosine via `VECTOR_DISTANCE` |
 | `Edges` | Typed directed relationships (`carries`, `wields`, `member_of`, `located_at`, …) with validity windows |
 | `EntityStateEvents` | Append-only in-world story-time ledger: `(entity, predicate, value, beatId, storyTime)` |
 | `ContinuityClaims` | Extracted `(entity, predicate, object)` claims from prose |
 | `Findings` | Autonomous quality findings inbox — approve or dismiss before any prose edit |
-| `VoiceChangeLog` | Proposed voice-rule changes harvested from winning strands |
+| `VoiceChangeLog` | Proposed voice-rule changes harvested from winning stories |
 | `PlantPayoffs` | Plant/payoff pair registry with `Hidden`/`Visible`/`Meta` transparency |
 | `BeatServiceLog` | Per-beat service coverage log (which pipeline services fired) |
 | `Assets` / `CoverImagePrompts` | Cover image library + generation prompt history |
@@ -268,8 +268,8 @@ npx cypress open    # interactive
 After editing any `docs/*` Codex file, run:
 
 ```powershell
-pwsh tools/codex.ps1 digest
-pwsh tools/codex.ps1 doctor   # must pass
+powershell -File tools/codex.ps1 digest
+powershell -File tools/codex.ps1 doctor   # must pass
 ```
 
 ---
@@ -300,11 +300,11 @@ An L40S 48 GB at ~$1/hr handles `qwen2.5:32b-instruct` (Q4_K_M) comfortably with
 ss --review-entity --id <entity-guid>
 ```
 
-MCP equivalent: the `Tools.Quality.cs` family (`review_strand`, `scan_chapter_quality`, `check_prose`).
+MCP equivalent: the `Tools.Quality.cs` family (`review_story`, `scan_chapter_quality`, `check_prose`).
 
 ### NxR parallel-writing experiment
 
-The first documented parallel-writing experiment (NxR strand) ran Claude Opus vs. Qwen2.5:32b on the same strand bible with the `--local-url` / `--local-model` flags. Both writers received identical X-Ray context, BeatModeDetector classification, PacingService rhythm, and story-bible injection. See `docs/strands/NxR.md §9`.
+The first documented parallel-writing experiment (NxR story) ran Claude Opus vs. Qwen2.5:32b on the same story bible with the `--local-url` / `--local-model` flags. Both writers received identical X-Ray context, BeatModeDetector classification, PacingService rhythm, and story-bible injection. See `docs/strands/NxR.md §9`.
 
 ---
 
@@ -331,14 +331,14 @@ From `CLAUDE.md` — enforced across the codebase:
 
 ## How it works: seed to published
 
-Every strand or book follows this sequence (codified in `CLAUDE.md` and `docs/BIBLE.md §10`):
+Every story or book follows this sequence (codified in `CLAUDE.md` and `docs/BIBLE.md §10`):
 
-1. **Docs first.** Append world facts to `docs/AMENDMENTS.md`; add story entry to `docs/USER_STORIES.md`; run `pwsh tools/codex.ps1 doctor`. A fact lives in exactly one Codex layer, cited by stable `{#SS-…}` id.
+1. **Docs first.** Append world facts to `docs/AMENDMENTS.md`; add story entry to `docs/USER_STORIES.md`; run `powershell -File tools/codex.ps1 doctor`. A fact lives in exactly one Codex layer, cited by stable `{#SS-…}` id.
 2. **Entity seeding.** Every named character, CorpoNation, place, and weapon is seeded into SQL **before any prose is generated** (`SqlSeedService`, typed repositories, or MCP `create_*` tools).
-3. **Book structure.** Create a book-level strand (`kind=book`) plus chapter sub-strands (`kind=chapter`) parented to the book; the 14-beat authorial spine becomes the book strand's `seed` text.
-4. **Prose draft.** `ProseWriterRouter` is the entry point (SS-A16). It classifies beat mode, assigns pacing rhythm, injects structural role, loads active plant/payoff pairs, audits gateway/sequel commandments, and routes to `BeatGeneratorService` while logging per-strand service coverage. Each beat's prompt is grounded by an X-Ray context block (`SceneContextAssembler`).
+3. **Book structure.** Create a book-level story (`kind=book`) plus chapter sub-stories (`kind=chapter`) parented to the book; the 14-beat authorial spine becomes the book story's `seed` text.
+4. **Prose draft.** `ProseWriterRouter` is the entry point (SS-A16). It classifies beat mode, assigns pacing rhythm, injects structural role, loads active plant/payoff pairs, audits gateway/sequel commandments, and routes to `BeatGeneratorService` while logging per-story service coverage. Each beat's prompt is grounded by an X-Ray context block (`SceneContextAssembler`).
 5. **Reflow.** A bounded copy-edit pass fixes paragraph breaks, question punctuation, and dialogue attribution without rewriting prose (`ProseReflowService`).
-6. **Review (dual, mandatory).** A structural pre-flight runs first (`StructuralDiagnosticService`), then N Legion personas cast scored ballots (`StrandReviewService`). Per-strand standalone must clear ≥82%; cumulative prefix must hold ≥85%.
+6. **Review (dual, mandatory).** A structural pre-flight runs first (`StructuralDiagnosticService`), then N Legion personas cast scored ballots (`NodeReviewService`). Per-story standalone must clear ≥82%; cumulative prefix must hold ≥85%.
 7. **Continuity scan.** Claims extracted from prose validated against live entity state (`ContinuityExtractionService`, `ContinuityValidatorService`). Deterministic checks catch timeline and location impossibilities.
 8. **Export.** KDP-ready Word `.docx`, EPUB 3, PDF, and Markdown all land in a `{Title}/V{N}/` subdirectory (`DocxExportService`, `ManuscriptExportService`); optionally a one-pass audiobook (`ElevenLabsTtsService`).
 
@@ -372,23 +372,23 @@ Prose is **never** written before steps 1 and 2 are complete.
 | `EmbeddingService` | OpenAI `text-embedding-3-small` vector store; SHA-256 drift detection; cosine NN search over ~10k entities. Use `FindSimilarAsync(text, k, types?)` — never substring matching |
 | `SemanticIndexService` | Low-level embedding index management (upsert, prune, re-index) |
 | `GlobalSearchService` / `GlobalSearchWarmupService` | Combined full-text + semantic search; background preheater |
-| `SemanticFidelityService` | Goodhart-drift check — cosine similarity of beat prose vs. strand bible/synopsis |
+| `SemanticFidelityService` | Goodhart-drift check — cosine similarity of beat prose vs. story bible/synopsis |
 | `KnowledgeMapService` | Clusters entities by embedding similarity into knowledge maps |
-| `ThematicIndexService` | Tags/indexes beats and strands by theme for retrieval |
+| `ThematicIndexService` | Tags/indexes beats and stories by theme for retrieval |
 
 ### 3. Prose generation
 
 | Service | Role |
 |---|---|
-| `ProseWriterRouter` | **Sole prose entry point (SS-A16)** — coordinates all services below and logs per-strand coverage |
-| `DocContextService` / `DocContextStack` | Doc Context Stack — rotating cast of pertinent canon `.md` files (always core + strand bible + topic docs triggered by keyword/embedding); gated by `SettingsService.DocContextEnabled` (default off) |
+| `ProseWriterRouter` | **Sole prose entry point (SS-A16)** — coordinates all services below and logs per-story coverage |
+| `DocContextService` / `DocContextStack` | Doc Context Stack — rotating cast of pertinent canon `.md` files (always core + story bible + topic docs triggered by keyword/embedding); gated by `SettingsService.DocContextEnabled` (default off) |
 | `BeatModeDetector` | Classifies each beat as Combat / Narrative / EmotionalClimax / Dialogue / Transition / Revelation |
 | `CombatProseGuidance` | Injects combat-prose laws: verbs-first, fragment sentences, no emotion-naming, Dissociated Observer |
 | `BeatGeneratorService` | **Core generation** — panel of expert personas votes on the best next beat; LLM expands to prose. Tier-locked HIGH |
 | `BeatPromptBuilder` | Constructs beat prompts with canon context, voice rules, world state |
 | `CombatSceneWriter` | Canon-aware combat prose — tracks loadouts, ammo, bio-battery, terrain |
 | `DialogueService` | Dialogue in per-character voice registers |
-| `StrandBibleService` | Generates/manages per-strand bibles (authorial spine, beat plan, synopsis) |
+| `NodeBibleService` | Generates/manages per-story bibles (authorial spine, beat plan, synopsis) |
 | `OutlineService` / `StoryMethodologyService` | Generate outlines from a seed; embed five-act / scene-anatomy frameworks into prompts |
 | `StoryDirectorService` | Top-level autonomous loop: plan → generate → assess → continue |
 | `NpcGenerator` / `DynamicPlaceGenerator` / `ContractGenerator` | Procedural NPCs, places, and in-world contract documents grounded in canon |
@@ -397,7 +397,7 @@ Prose is **never** written before steps 1 and 2 are complete.
 
 | Service | Role |
 |---|---|
-| `StrandReviewService` | **Primary review path** — N distinct Legion personas each cast a scored reader ballot; synthesizes an aggregate; round-robins across trusted-4 providers (Claude, OpenAI, Gemini, DeepSeek) |
+| `NodeReviewService` | **Primary review path** — N distinct Legion personas each cast a scored reader ballot; synthesizes an aggregate; round-robins across trusted-4 providers (Claude, OpenAI, Gemini, DeepSeek) |
 | `ReviewEffortProfile` | RFC 0009 cost tier (draft / standard / deep) — scales ballot count, prose upgrades, diagnosis, and per-call model selection |
 | `ReviewClusterer` | Clusters ballots into Pareto / contested / seam groupings |
 | `StructuralDiagnosticService` | 12 parallel structural pre-flight checks before ballots burn |
@@ -407,14 +407,14 @@ Prose is **never** written before steps 1 and 2 are complete.
 | `FindingsService` | Inbox for all autonomous findings — CRUD + status tracking |
 | `FindingApplyService` | Applies a single approved finding (before/after) to a beat |
 | `StoryAuditService` | Gateway or Sequel commandment auditing (7 commandments each) |
-| `PlantPayoffService` | Plant/payoff pair registry; seeds active plants into prose context; orphan-audit on strand completion |
+| `PlantPayoffService` | Plant/payoff pair registry; seeds active plants into prose context; orphan-audit on story completion |
 
 ### 5. Storytelling science
 
 | Service | Role |
 |---|---|
 | `NarrativeScienceService` | Sacred-flaw / theory-of-control analysis, dramatic-question check, 6-point scene-engagement audit, five-act structure map, antihero-empathy check (Will Storr framework) |
-| `ArcTrackerService` | Tracks per-strand five-act position and beat-level progression |
+| `ArcTrackerService` | Tracks per-story five-act position and beat-level progression |
 | `PacingService` | Flags beats that over-stay, under-stay, or repeat an emotional register without escalation |
 
 ### 6. Continuity & world-modelling
@@ -443,7 +443,7 @@ Mostly deterministic (DB-only, no LLM cost). The seven prose-continuity services
 
 | Service | Role |
 |---|---|
-| `VoiceHarvestService` | Mines author edits + directives from winning strands (≥80%) into proposed voice rules |
+| `VoiceHarvestService` | Mines author edits + directives from winning stories (≥80%) into proposed voice rules |
 | `ExpertPersonaService` | Manages the reusable expert-persona pool; `SelectPertinentAsync` picks top-N for a scene |
 | `ExpertPersonaCatalog` | Curated starter personas — genre experts, craft specialists, die-hard cyberpunk readers |
 | `NamePoolService` | Culturally diverse name pools (Ubiquitous Diaspora rule) |
@@ -452,7 +452,7 @@ Mostly deterministic (DB-only, no LLM cost). The seven prose-continuity services
 
 | Service | Role |
 |---|---|
-| `ProseLessonStore` | SQL-backed store of author rulings (score-vs-function, delight, voice, pacing) scoped global/strand/beat; injected into review prompts so reviewers stop penalizing beats already ruled to be doing their job |
+| `ProseLessonStore` | SQL-backed store of author rulings (score-vs-function, delight, voice, pacing) scoped global/node/beat; injected into review prompts so reviewers stop penalizing beats already ruled to be doing their job |
 | `ActionConfigService` | Per-action LLM tier registry; enforces `ChapterBeatWriter`/`Expander` locked at HIGH |
 | `SettingsKvStore` / `SettingsService` | SQL-backed key-value config; app-wide settings façade (models, keys, tone targets, review knobs) |
 
@@ -460,10 +460,10 @@ Mostly deterministic (DB-only, no LLM cost). The seven prose-continuity services
 
 | Service | Role |
 |---|---|
-| `ManuscriptExportService` | All-in-one strand export — EPUB 3 + PDF (QuestPDF, 6"×9" KDP trim) + Markdown into one `{Title}/V{N}/` dir |
+| `ManuscriptExportService` | All-in-one story export — EPUB 3 + PDF (QuestPDF, 6"×9" KDP trim) + Markdown into one `{Title}/V{N}/` dir |
 | `DocxExportService` | KDP-ready Word `.docx` (title page, chapter headers, justified serif) via OpenXml |
 | `BookExportService` | Book-level EPUB 3 (Calibre-compatible) + PDF |
-| `StrandMarkdownExporter` | Ordered beats → markdown with stable content fingerprint; mirrors `engine/data/exports/` |
+| `NodeMarkdownExporter` | Ordered beats → markdown with stable content fingerprint; mirrors `engine/data/exports/` |
 | `ElevenLabsTtsService` | ElevenLabs TTS (v2/v3 channels) for narration; tiered fallback |
 | `LocalTts` / `PiperTtsService` / `WindowsTtsService` | Local TTS fallbacks (SAPI / Piper) |
 
@@ -496,7 +496,7 @@ RFC 0009. Spend scales to a task's importance. See [docs/rfc/0009-cost-tiered-st
 | Tier (`--effort`) | LLM calls | Models | Used for |
 |---|---|---|---|
 | `draft` | ~6 (−84%) | cheapest per provider (Haiku / Flash-Lite / Nano) | mid-draft spot checks; per-beat iteration — not a gate |
-| `standard` | ~15 (−60%) | mid-tier defaults | the per-strand standalone gate (≥82%) |
+| `standard` | ~15 (−60%) | mid-tier defaults | the per-story standalone gate (≥82%) |
 | `deep` | ~37 (baseline) | mid-tier defaults + full diagnosis + prose critique | the cumulative / publish gate (≥85%), flagship |
 
 ---
@@ -511,10 +511,10 @@ Every page is a Blazor Server component — real-time state, no page reloads. Fu
 
 | Route | Page | What it does |
 |---|---|---|
-| `/writer` | Writer | Strand picker — the launch pad for writing |
+| `/writer` | Writer | Story picker — the launch pad for writing |
 | `/write/{BookId}/{ChapterId}` | Write | Beat-level prose editor — write, expand, reflow, review beats in one screen |
-| `/strand/{IdOrSlug}` | Strand | Single strand workbench — beats list, status, review scores, export controls |
-| `/strands` | Strands | Full strand index grouped by kind |
+| `/node/{IdOrSlug}` | Story | Single story workbench — beats list, status, review scores, export controls |
+| `/nodes` | Stories | Full story index grouped by kind |
 | `/books` | Books | Bookshelf — list, create, manage all books |
 | `/books/{BookId}/outline` | Book Outline Editor | LLM co-writer for building and editing a book's chapter outline |
 | `/series` | Series Shelf | Series listing and management |
@@ -570,21 +570,21 @@ dotnet run --project v3/StreetSamurai.Mcp -- --export-tools docs/MCP_TOOLS.md
 | File | Tool family |
 |---|---|
 | `Tools.cs` | Primary canon lookup — characters, places, factions, CorpoNations, literary rules |
-| `Tools.Strands.cs` | Strand + beat CRUD — insert / split / delete / join / rebeat / reflow / publish-docx / narrate / spine |
+| `Tools.Nodes.cs` | Node + beat CRUD — insert / split / delete / join / rebeat / reflow / publish-docx / narrate / spine |
 | `Tools.Encyclopedia.cs` | Read-only encyclopedia — weapons, ammo, equipment, tech, cyberware, apparel, pharma, automata, archetypes, quotes, documents |
 | `Tools.EntityCrud.cs` | Create/upsert all typed entity kinds |
 | `Tools.WorldModelling.cs` | 7 prose-continuity services + entity tree, world-state-at-beat, post-beat validation, timeline consistency, prose lessons |
-| `Tools.Quality.cs` | `validate_canon_text`, `review_strand`, `diagnose_strand`, `scan_strand_violations`, `check_prose`, `check_semantic_fidelity`, findings stats |
+| `Tools.Quality.cs` | `validate_canon_text`, `review_story`, `diagnose_story`, `scan_story_violations`, `check_prose`, `check_semantic_fidelity`, findings stats |
 | `Tools.NarrativeScience.cs` | `analyze_sacred_flaw`, `check_dramatic_question`, `audit_scene_engagement`, `map_five_act_structure` |
 | `Tools.Voice.cs` | `harvest_voice(_all)`, voice-proposal list/apply/reject, `get_tone_bible` |
 | `Tools.Findings.cs` | `list_findings`, `set_finding_status`, `apply_finding`, `findings_stats` |
 | `Tools.Scene.cs` | `assemble_scene_context`, wound ledger, `get_character_loadout` |
 | `Tools.Combat.cs` | `draft_combat_scene`, `get_director_context`, `get_world_state_at_beat` |
 | `Tools.PlantPayoff.cs` | `register_plant_payoff`, `link_plant_beat`, `link_payoff_beat`, `audit_plant_payoffs` |
-| `Tools.StoryAudit.cs` | `audit_story_commandments`, `get_strand_spine` |
+| `Tools.StoryAudit.cs` | `audit_story_commandments`, `get_story_spine` |
 | `Tools.WorkflowMonitor.cs` | `workflow_status`, `workflow_status_global`, `workflow_beat_modes` |
 | `Tools.EntityContext.cs` | `get_entity_context`, `scan_entity_context`, `list_entity_stale_beats` |
-| `Tools.LoreTriples.cs` | Continuity-claim extraction; list/resolve/apply contradictions; `append_strand_amendment` |
+| `Tools.LoreTriples.cs` | Continuity-claim extraction; list/resolve/apply contradictions; `append_story_amendment` |
 | `Tools.Config.cs` | Markdown-file sync/restore, `RecallMarkdownFiles`, `DocContextPrepare` / `DocContextStatus` |
 
 ---
@@ -595,10 +595,10 @@ dotnet run --project v3/StreetSamurai.Mcp -- --export-tools docs/MCP_TOOLS.md
 |---|---|
 | Host | Blazor Server (.NET 10), cookie auth, role-gated builds |
 | Canon | SQL Server with vector indexes, `FOR SYSTEM_TIME` audit, directional Edges graph |
-| Writing surface | `/strand/{id}` — writer + recorder + listener on one screen |
+| Writing surface | `/node/{id}` — writer + recorder + listener on one screen |
 | Embeddings | `EmbeddingService`, ~10k entities cached, drift-detected |
 | Generation | Multi-provider Quorum via `MindAttic.Legion` — 11 LLM providers, scored evaluation |
-| Review | `StrandReviewService` + `StructuralDiagnosticService` + `WritingQualityService` + continuity suite, cost-tiered (RFC 0009) |
+| Review | `NodeReviewService` + `StructuralDiagnosticService` + `WritingQualityService` + continuity suite, cost-tiered (RFC 0009) |
 | Storytelling science | `NarrativeScienceService` (Will Storr framework), injected into prose context |
 | Export | Word / EPUB / PDF / Markdown / HTML via `DocxExportService` + `ManuscriptExportService` |
 | Audio | ElevenLabs TTS; local alternatives via Kokoro or Chatterbox (`tools/`) |
@@ -665,8 +665,8 @@ npx cypress open    # interactive
 
 In active development. Live site running, working bookshelf.
 
-**Strands complete (≥82% standalone):** BCODA (88.8% cumulative, 16 chapters), ATTE (89.2%), VATD (88.1%), DWIACE (90.95%), SPRW (87.0%), SRZR (86.6%), TEST (86.7%), MxG (86.4%), UNDR (83.2%). MNEMO in progress (84.0%).
+**Stories complete (≥82% standalone):** BCODA (88.8% cumulative, 16 chapters), ATTE (89.2%), VATD (88.1%), DWIACE (90.95%), SPRW (87.0%), SRZR (86.6%), TEST (86.7%), MxG (86.4%), UNDR (83.2%). MNEMO in progress (84.0%).
 
-**DB:** 12,629 entities · 2,443+ beats · 36 strands across 2 universes (GLMZ + Fantasy/Steampunk).
+**DB:** 12,629 entities · 2,443+ beats · 36 stories across 2 universes (GLMZ + Fantasy/Steampunk).
 
 **MCP:** 195+ tools across 23 tool-class files.

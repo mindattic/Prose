@@ -1,4 +1,6 @@
 ﻿@page "/nodes"
+@page "/stories"
+@page "/strands"
 @attribute [Authorize(Policy = MaPolicies.Admin)]
 @using Microsoft.EntityFrameworkCore
 @using StreetSamurai.Core.Data
@@ -17,20 +19,21 @@
 @implements IDisposable
 
 @*
-   Node index. Lists every node grouped by kind. Click to open in the
-   unified writer/recorder at /node/{id}. The "+ New node" CTA below
-   creates a blank top-level node and routes you there.
+   Story index over the node tree (SeriesNode / StoryNode / ChapterNode).
+   Lists every top-level node grouped by kind. Click to open in the
+   unified writer/recorder at /node/{id}. The Create CTA below creates a
+   blank top-level node and routes you there.
 *@
 
 <div class="container py-3" style="max-width: 1100px;" id="nodes-list-root">
     <div class="d-flex justify-content-between align-items-center mb-3">
         <div>
-            <h4 class="text-danger mb-0"><i class="bi bi-collection me-2"></i>Nodes</h4>
-            <div class="text-muted small">Stories contain chapters; chapters contain beats.</div>
+            <h4 class="text-danger mb-0"><i class="bi bi-collection me-2"></i>Stories</h4>
+            <div class="text-muted small">Series contain stories; stories contain chapters; chapters contain beats.</div>
         </div>
         <div class="d-flex gap-2 align-items-end">
             <input class="form-control form-control-sm bg-black text-light border-secondary"
-                   placeholder="New node title…" @bind="newTitle" @bind:event="oninput" style="width:240px;" />
+                   placeholder="New story title…" @bind="newTitle" @bind:event="oninput" style="width:240px;" />
             <select class="form-select form-select-sm bg-black text-light border-secondary" @bind="newKind" style="width:120px;">
                 <option value="series">series</option>
                 <option value="story">story</option>
@@ -44,7 +47,7 @@
 
     @if (loading)
     {
-        <div class="text-muted"><span class="spinner-border spinner-border-sm me-2"></span>Loading nodes…</div>
+        <div class="text-muted"><span class="spinner-border spinner-border-sm me-2"></span>Loading stories…</div>
     }
     else if (nodes.Count == 0)
     {
@@ -52,9 +55,9 @@
             <div class="text-muted mb-2">
                 <i class="bi bi-stars" style="font-size:2rem; opacity:0.4;"></i>
             </div>
-            <h6 class="text-light mb-2">No nodes yet</h6>
+            <h6 class="text-light mb-2">No stories yet</h6>
             <div class="text-muted small mb-3">
-                A <em>node</em> is a hierarchical container — a root <em>story</em> or a <em>chapter</em> (leaf) that holds beats.
+                The tree has three levels — a <em>series</em> groups stories, a <em>story</em> is a single arc, and its <em>chapters</em> hold the beats.
                 <br />Type a title above and click Create, or run <code>ss --write-story --seed "&hellip;"</code> from the CLI to generate one with the LLM.
             </div>
         </div>
@@ -449,7 +452,7 @@
         {
             await using var db = await DbFactory.CreateDbContextAsync();
             var entity = await db.Nodes.FirstOrDefaultAsync(x => x.Id == id);
-            if (entity == null) { Toast.Error("NODE-EDIT", "Node not found."); return; }
+            if (entity == null) { Toast.Error("NODE-EDIT", "Story not found."); return; }
             entity.Title = editTitle.Trim();
             entity.Synopsis = string.IsNullOrWhiteSpace(editSynopsis) ? null : editSynopsis.Trim();
             entity.Summary = string.IsNullOrWhiteSpace(editSummary) ? null : editSummary.Trim();
@@ -461,7 +464,7 @@
             if (local != null) { local.Title = entity.Title; local.Synopsis = entity.Synopsis; local.Summary = entity.Summary; }
             grouped = nodes.GroupBy(s => s.Kind).OrderBy(g => g.Key);
             CancelEdit();
-            Toast.Info("SAVED", "Node updated.");
+            Toast.Info("SAVED", "Story updated.");
         }
         catch (Exception ex)
         {

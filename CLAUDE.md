@@ -30,7 +30,7 @@ sqlcmd -S "(localdb)\MSSQLLocalDB" -d StreetSamurai -Q "<query>"
 
 Only use `dotnet run --project v3/StreetSamurai.Blazor -- <args>` when the CLI's business logic is actually needed (write operations, generation, publish, review). Never use it just to answer a lookup question.
 
-**HARD RULE — no direct SQL deletes (SS-A37):** Never execute `DELETE FROM Strands`, `DELETE FROM Beats`, or `DELETE FROM StrandBeats` as raw sqlcmd statements. These tables are system-versioned temporal tables — deleting via raw SQL bypasses all application guards and is unrecoverable without a point-in-time restore. Any strand/beat removal must go through the CLI (`ss --beat delete`). If a strand genuinely needs to be deleted, get explicit user confirmation naming the strand by title and slug before touching the DB.
+**HARD RULE — no direct SQL deletes (SS-A37, tables renamed by SS-A43):** Never execute `DELETE FROM Nodes`, `DELETE FROM Beats`, or `DELETE FROM NodeBeats` as raw sqlcmd statements. These tables are system-versioned temporal tables — deleting via raw SQL bypasses all application guards and is unrecoverable without a point-in-time restore. Any story/beat removal must go through the CLI (`ss --beat delete`). If a story genuinely needs to be deleted, get explicit user confirmation naming the story by title and slug before touching the DB.
 
 ## Code Style
 - Do NOT use underscore-prefixed variables (e.g., `_myField`). Use `camelCase` for private fields without the underscore prefix.
@@ -60,7 +60,7 @@ Do not rely on BIBLE.md alone for story-specific rules — it has engine laws, n
 Strand files are **loaded on demand**, not injected at session start. Load only what you need.
 
 **Existing strand files:**
-- `docs/strands/TDIU.md` — The Door Is Unlocked (Pixel origin story, GLMZ)
+- `docs/strands/PNHL.md` — Pinhole / PNHL (Pixel origin story, GLMZ; formerly TDIU / The Door Is Unlocked)
 - `docs/strands/BCODA.md` — Bushido Coda flagship novel (GLMZ)
 - `docs/strands/ATTE.md` — Attendance / Yemina Fola investigation (GLMZ)
 - `docs/strands/VATD.md` — Vultures at the Door / Thomas & Levin (GLMZ)
@@ -93,21 +93,22 @@ Working rules:
 - A fact lives in **exactly one layer**; cite it by its stable `{#SS-...}` id, never by line number.
 - Update the Bible/stories status in the **same change** that moves a goal; "done" means a test or
   build proves it.
-- After editing any `docs/*` canon file, run `pwsh tools/codex.ps1 digest` then
-  `pwsh tools/codex.ps1 doctor` — doctor must pass.
+- After editing any `docs/*` canon file, run `powershell -File tools/codex.ps1 digest` then
+  `powershell -File tools/codex.ps1 doctor` — doctor must pass. (`pwsh` is not installed; use `powershell`.)
 - The repo rule "no Markdown except README" is amended for the Codex `docs/*.md` set (see SS-A1);
   data files stay JSON.
 
 ## New Story Workflow (mandatory — see [docs/BIBLE.md §10](docs/BIBLE.md#SS-§10))
 
-**Every new strand/book follows this sequence without exception:**
+**Every new story/book follows this sequence without exception:**
 
 1. **Docs first** — append `SS-AN` to `docs/AMENDMENTS.md` if new world facts; add story entry to
    `docs/USER_STORIES.md`; run `codex doctor`.
 2. **Entities** — seed every named character, CorpoNation, place, or weapon into the DB via CLI or
    MCP **before any prose is generated**.
-3. **Book structure** — create book-level strand (`kind=book`) + chapter sub-strands (`kind=chapter`)
-   with the book as parent. Authorial spine (14-beat outline) = the book strand's `seed` text.
+3. **Story structure (SS-A43)** — create a **StoryNode** (MCP `create_story` / CLI `--create-story`)
+   + **ChapterNode** children (MCP `create_chapter`, parent required). Authorial spine (14-beat
+   outline) = the story node's `seed` text.
 4. **Prose** — Sonnet draft → Opus polish → reflow → dual review (see below) → scan entity mentions.
 5. **Export** — `--publish-docx`; flip USER_STORIES to ✅ with evidence.
 
@@ -130,25 +131,25 @@ for all prose writing — it coordinates all the services below and logs coverag
 |---|---|---|
 | `BeatModeDetector` | Classifies beat as Combat/Narrative/EmotionalClimax/Dialogue/Transition/Revelation | Keyword scan on BeatGoal |
 | `PacingService` | BREATHE/FLOW/TIGHTEN/STRIKE/SETTLE prose rhythm | Position + BeatGoal keywords; Combat forces STRIKE |
-| `StoryMethodologyService` | Save the Cat structural role (Opening Image → Final Image) + Scene-Sequel type | Position in strand |
-| `PlantPayoffService` | Active plant/payoff pairs for the strand | `BeatContext.StrandId != Guid.Empty` |
-| `StoryAuditService` | Gateway or Sequel commandments (7 each, auto-detected from `PreviousStrandId`) | `BeatContext.StrandId != Guid.Empty` |
+| `StoryMethodologyService` | Save the Cat structural role (Opening Image → Final Image) + Scene-Sequel type | Position in story |
+| `PlantPayoffService` | Active plant/payoff pairs for the story | `BeatContext.NodeId != Guid.Empty` |
+| `StoryAuditService` | Gateway or Sequel commandments (7 each, auto-detected from `PreviousNodeId`) | `BeatContext.NodeId != Guid.Empty` |
 | `CombatProseGuidance` | Verbs-first, fragment sentences, no emotion-naming, dissociated observer | `BeatMode.Combat` |
 
 ### Coverage monitoring
 ```
-ss --workflow-status --slug <slug>    # per-strand service coverage matrix + gaps
-ss --workflow-status --all            # global utilization across all strands
+ss --workflow-status --slug <slug>    # per-story service coverage matrix + gaps
+ss --workflow-status --all            # global utilization across all stories
 ```
 MCP: `workflow_status`, `workflow_status_global`, `workflow_beat_modes`
 
 ### Beat writing workflow
-1. Assemble `BeatContext` (XRayContext via SceneContextAssembler, StrandId always set)
+1. Assemble `BeatContext` (XRayContext via SceneContextAssembler, NodeId always set)
 2. Call `ProseWriterRouter.WriteAsync(context, beatId, beatIndex, totalBeats)` — NOT BeatGeneratorService directly
 3. After writing, run `ss --examine-emotion --slug <slug>` to score emotional dimensions
 4. After enough beats scored, run `ss --update-register-exemplars --slug <slug>` to update the voice register
-5. After strand complete, run `ss --story-audit --slug <slug>` to audit gateway/sequel commandments
-6. After strand complete, run `ss --plant-audit --slug <slug>` to check for orphaned plants
+5. After story complete, run `ss --story-audit --slug <slug>` to audit gateway/sequel commandments
+6. After story complete, run `ss --plant-audit --slug <slug>` to check for orphaned plants
 
 ## Multi-Strand Story Review (mandatory after every strand — see memory: feedback_story_accretion)
 

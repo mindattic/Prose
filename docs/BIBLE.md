@@ -44,14 +44,14 @@ prove it:
    entities are captured as provisional canon, flagged for review.
 4. **Judge with the whole picture.** Legion/LLM story decisions are fed the totality (retrieved
    canon + continuity state + voice rules) so they choose well instead of producing slop.
-5. **Evolve its own voice.** Every strand that scores ≥80% with readers is harvested — its winning
+5. **Evolve its own voice.** Every story that scores ≥80% with readers is harvested — its winning
    edits/directives distilled into the codified rules — so each winner sharpens the next.
 6. **Run the loop.** Outline → generate → validate/self-correct → narrate → publish → review →
-   harvest, repeatable per strand and across a corpus, with audio + manuscript outputs.
+   harvest, repeatable per story and across a corpus, with audio + manuscript outputs.
 7. **Know its gaps.** A standing coverage report shows, per type, what is reachable/validated and
    what is not.
 
-**The engine is "done" when** a fresh strand can be taken from a one-line seed to a published,
+**The engine is "done" when** a fresh story can be taken from a one-line seed to a published,
 reader-reviewed, canon-consistent audiobook + manuscript with the human only approving (not
 authoring) canon/voice changes — and the coverage report shows 100% of *diegetic* types reachable
 and validated.
@@ -102,10 +102,10 @@ Fantasy/Steampunk) from that Universe's own canon and voice register. See
       │        ContinuityService/Extraction/Apply · WorldConsistencyService · ContinuityValidatorService
       │
       ▼
- NARRATE / PUBLISH ── StrandWorkbenchService (one-pass audiobook) · ElevenLabsTtsService
+ NARRATE / PUBLISH ── NodeWorkbenchService (one-pass audiobook) · ElevenLabsTtsService
       │               ManuscriptExportService (md/txt/pdf) · DocxExportService
       ▼
- REVIEW ── StrandReviewService (persona panels, 1-100) → Strand.Score
+ REVIEW ── NodeReviewService (persona panels, 1-100) → Node.Score
       │        on <80→≥80 crossing → VOICE-HARVEST finding
       ▼
  HARVEST ── VoiceHarvestService → VoiceChangeLog (propose) → approve → literary_rules/tone_bible/Kyle fields
@@ -136,8 +136,8 @@ QuikGraph. Quick start: `README.md`.
 
 - **`Universe`** — the top-level tenant: a lookup row (`Id, Slug, Name, Description, Theme,
   IsActive`) naming one fictional world (e.g. `glmz`, `fantasy-steampunk`). **Every canon and story
-  root carries a single non-null `UniverseId` FK** (1:M) — `Entities`, `Strands`, `Books`; beats
-  and chapters inherit their Universe via their parent strand/book. Reads are universe-scoped
+  root carries a single non-null `UniverseId` FK** (1:M) — `Entities`, `Nodes`, `Books`; beats
+  and chapters inherit their Universe via their parent story/book. Reads are universe-scoped
   (`WHERE UniverseId = @u`, enforced engine-wide; see [SS-LAW-15](#SS-§5)). **Crossover policy:** an
   entity needed in two universes is *duplicated*, one row per Universe — there is **no** M:M bridge
   and no shared row. *(Adding `UniverseId` to a system-versioned table requires the
@@ -157,20 +157,22 @@ QuikGraph. Quick start: `README.md`.
 - **`Edges`** — typed graph relations (parent_of, etc.); cousins/grandparents derived.
 - **`EntityStateEvents`** — story-state ledger (location, life status, ammo) — see
   `static_vs_dynamic_split`.
-- **System-versioned temporal** tables: `Beats`, `Strands`, `StrandBeats`, `ChapterBeats`
+- **System-versioned temporal** tables: `Beats`, `Nodes`, `NodeBeats`, `ChapterBeats`
   (+`_History`) — every edit is rewindable (`FOR SYSTEM_TIME ALL`); this is what voice-harvest mines.
 - **`CharacterReadModels`** — materialized full-character read-model (non-temporal projection;
   single-writer sync from `CharacterRepository.Save`); never reintroduce on-disk entity JSON.
 - **`Settings`** singletons: `literary_rules`, `tone_bible`, `story_bible`, app config
   (`JsonSingletonRepository`).
-- **`ContinuityClaims`**, **`Findings`**, **`VoiceChangeLog`**, **`Strand*`/`FocusGroup*`**,
+- **`ContinuityClaims`**, **`Findings`**, **`VoiceChangeLog`**, **`Node*`/`FocusGroup*`**,
   **`Books`/`Chapters`/`ChapterBeats`**, **`Episodes`/`EpisodeBeats`**.
 
-**The story hierarchy:** **Beat → Strand → Collection → Series** (one model, no parallel formats).
-A **Beat** is a discrete unit of story (not a typographic paragraph); a **Strand** is an ordered
-set of beats; a **Collection** is any ordered set of strands (modeled as a parent `Strand` via the
-`ParentStrandId` tree); a **Series** is a Collection of Collections. **Canon** is the author-only
-`Strand.IsCanon` trust gate (see [SS-LAW-9](#SS-§5)).
+**The story hierarchy (SS-A43):** **Beat → ChapterNode → StoryNode → SeriesNode** — a typed tree,
+table-per-hierarchy on the `Nodes` table via the `NodeType` discriminator, one model, no parallel
+formats. A **Beat** is a discrete unit of story (not a typographic paragraph); a **ChapterNode**
+holds beats inside a story; a **StoryNode** is a single story arc (a leaf story with no chapters
+holds its beats directly); a **SeriesNode** groups stories and never holds beats. Parentage rides
+the `ParentNodeId` tree. `Kind` is a free-form display label; the CLR type is the structural
+truth. **Canon** is the author-only `Node.IsCanon` trust gate (see [SS-LAW-9](#SS-§5)).
 
 ### 4.3 Key services (the VERBS — one job each)
 
@@ -184,11 +186,11 @@ set of beats; a **Collection** is any ordered set of strands (modeled as a paren
 - **Validation/self-correction:** `CanonContradictionService`, `CanonGroundingService`,
   `ContinuityService`/`Extraction`/`Apply`, `WorldConsistencyService`,
   `ContinuityValidatorService`, `FindingsService`.
-- **Review/scoring:** `StrandReviewService`, `StrandReviewSummary`, focus groups.
-- **Audio/publish:** `StrandWorkbenchService`, `ElevenLabsTtsService`, `ManuscriptExportService`,
+- **Review/scoring:** `NodeReviewService`, `NodeReviewSummary`, focus groups.
+- **Audio/publish:** `NodeWorkbenchService`, `ElevenLabsTtsService`, `ManuscriptExportService`,
   `DocxExportService`, `EpisodeAudioService`.
 - **Observe:** `CoverageService`, `FindingsService`.
-- **Surfaces:** Blazor pages (`/strand`, `/strands`, `/generate`, `/continuity`, `/findings`,
+- **Surfaces:** Blazor pages (`/node`, `/nodes`, `/generate`, `/continuity`, `/findings`,
   `/settings`, encyclopedia dictionaries), the MCP server (`StreetSamurai.Mcp`), and the `ss` CLI.
 
 ### 4.4 Canon-as-data (L5)
@@ -229,17 +231,19 @@ shapes; they do not rewrite canon values.
    continuity claims upsert true facts; voice-harvest folds winning prose moves into
    `SpeechPatterns`/`NarrationVoice` (propose-then-approve); state events record change without
    overwriting identity.
-6. **One format: everything is a Strand of Beats.** {#SS-LAW-6} Collection/Series are parent
-   `Strand`s on the `ParentStrandId` tree — no parallel formats, no new table. A Beat is a unit of
-   story function, not a typographic paragraph; the Beat Doctrine is codified in
-   `LiteraryRulesData.BeatDoctrine` and emitted by `GetLiteraryRulesPrompt()`.
+6. **One format: everything is a tree of Nodes over Beats.** {#SS-LAW-6} The typed hierarchy
+   (SeriesNode → StoryNode → ChapterNode, TPH on the `Nodes` table, SS-A43) rides the
+   `ParentNodeId` tree — no parallel formats, no new table. Beats attach to ChapterNodes and leaf
+   StoryNodes; a SeriesNode never holds beats. A Beat is a unit of story function, not a
+   typographic paragraph; the Beat Doctrine is codified in `LiteraryRulesData.BeatDoctrine` and
+   emitted by `GetLiteraryRulesPrompt()`.
 7. **No underscore-prefixed fields.** {#SS-LAW-7} Private fields are `camelCase` without the
    leading underscore.
 8. **Φ is QUANTA, never phi.** {#SS-LAW-8} *(GLMZ.)* The symbol Φ is the QUANTA currency symbol
    (quantum compute-time), *never* the Greek letter phi. (Listed among the engine invariants for
    historical id stability, but it is **GLMZ-universe content**, not an engine truth.)
 15. **Every row belongs to exactly one Universe.** {#SS-LAW-15} Every canon/story root
-   (`Entities`, `Strands`, `Books`) carries a non-null `UniverseId`; all generation and retrieval
+   (`Entities`, `Nodes`, `Books`) carries a non-null `UniverseId`; all generation and retrieval
    is universe-scoped. An entity that must appear in two universes is **duplicated** (one row per
    Universe) — never a shared row and never an M:M bridge. (Id 15 is the next free number; the
    narrative laws 9–14 below were allocated earlier.)
@@ -248,8 +252,8 @@ shapes; they do not rewrite canon values.
 from `v3/canon_writes/story_state.md`). Other universes (e.g. Fantasy/Steampunk) get their own
 narrative-law block here when stood up:**
 
-9. **Canon is author-only.** {#SS-LAW-9} `Strand.IsCanon` is set only manually by the author and
-   means "strong enough to draw conclusions from." Only canon strands are authoritative for
+9. **Canon is author-only.** {#SS-LAW-9} `Node.IsCanon` is set only manually by the author and
+   means "strong enough to draw conclusions from." Only canon stories are authoritative for
    voice-harvest, continuity inference, and capability decisions.
 10. **Silence is JUST a sword.** {#SS-LAW-10} No glow, no discharge, no charge state, no
     piezoelectric/triboelectric harvest. The "it shorts BCIs" street myth is a myth; neither Seo
@@ -262,7 +266,7 @@ narrative-law block here when stood up:**
 13. **The Sable reveal sequence is fixed.** {#SS-LAW-13} Sable is a **mystery voice only** in all
     BCODA chapters before Ch13 (The Offer). Her first in-person appearance is at Vey's Antiquity &
     Stationary in the Faraday vault (Ch13): the AI-reveal and the confession *"Your contracts do
-    not come from people."* Her appearance at the motorcycle funeral (Joy strand) is post-Ch13 and
+    not come from people."* Her appearance at the motorcycle funeral (Joy story) is post-Ch13 and
     is correct. Do not place Sable in-person before Ch13 under any circumstance.
 14. **The rogue-AI long con stays unconfirmed.** {#SS-LAW-14} The rogue AI is real and routing
     Kyle's contracts, but the full reveal (it has orchestrated his life) lands many books later.
@@ -270,7 +274,7 @@ narrative-law block here when stood up:**
 
 **Fantasy/Steampunk narrative laws (Universe: fantasy-steampunk — validate any Fantasy/Steampunk rewrite against these):**
 
-16. **Action beats carry thematic weight; contemplative beats have physical immediacy.** {#SS-LAW-16} An action beat that doesn't advance or complicate the strand's central tension is stage business. A contemplative beat without a grounding sensory or physical anchor is abstraction. Both fail. *(Universal beat doctrine — applies to all universes.)*
+16. **Action beats carry thematic weight; contemplative beats have physical immediacy.** {#SS-LAW-16} An action beat that doesn't advance or complicate the story's central tension is stage business. A contemplative beat without a grounding sensory or physical anchor is abstraction. Both fail. *(Universal beat doctrine — applies to all universes.)*
 
 ## 6. Verified state {#SS-§6}
 
@@ -282,7 +286,7 @@ Status legend: `✅ done (verified)` · `🟡 partial` · `⬜ planned` · `🗑
   compiled clean; its only "errors" were DLL-copy file locks from the live Blazor host running
   during the build — an environment condition, not a code regression.)
 - **Tests:** `dotnet test v3/StreetSamurai.UnitTests` (deterministic gate filter) — **114 passed,
-  0 failed, 0 skipped** (8 s). The gate suites are `CanonEngineTests`, `StrandWorkbenchServiceTests`,
+  0 failed, 0 skipped** (8 s). The gate suites are `CanonEngineTests`, `NodeWorkbenchServiceTests`,
   `DiRegistrationTests`/`InterfaceRegistrationTests`, `OutlineGateTests`, `BeatHandleTests`,
   `BeatFormatterTests`. **Known pre-existing failures:** ~43 data-dependent integration tests
   (`*_LoadsRealData`, `RuleScan_*`, `ZoneInference_*`) require seeded data/DB not present in a clean
@@ -313,7 +317,7 @@ Software frontier (the road to the endpoint; ordered) — full backlog with acce
 [docs/USER_STORIES.md](USER_STORIES.md):
 - **F1 Ship present work to prod** ⬜ · **F6 Coverage → action** 🟡 (appearance tracking residual)
 - **F7 In-app review surfaces** ⬜ (`/voice`, `/coverage` pages) · **F8 Autonomous corpus loop** ⬜
-- **Fh Hierarchy + Collection builder** ⬜ (drag-and-drop on `/strands`)
+- **Fh Hierarchy + Collection builder** ⬜ (drag-and-drop on `/nodes`)
 - **F9 Living world tick** ⬜ · **F10 Voice flywheel proof** ⬜
 - **Fs2 Species as a first-class type** ⬜
 - See design notes in [docs/rfc/](rfc/).
@@ -339,11 +343,11 @@ A software feature is **done** only when:
 - ARCHITECTURE/BIBLE status is flipped in the same change that moves the goal, with acceptance
   evidence.
 
-A prose beat/strand is **done** only when:
+A prose beat/node is **done** only when:
 - It obeys the Beat Doctrine and the v8 style register, and passes the forbidden-term scan for
   Silence/Chorus power references ([SS-LAW-10](#SS-§5), [SS-LAW-11](#SS-§5)).
 - It does not violate any narrative continuity law ([SS-LAW-9](#SS-§5)–[SS-LAW-14](#SS-§5)).
-- For canon promotion: the author sets `Strand.IsCanon` ([SS-LAW-9](#SS-§5)).
+- For canon promotion: the author sets `Node.IsCanon` ([SS-LAW-9](#SS-§5)).
 
 ## 9. Glossary {#SS-§9}
 
@@ -358,13 +362,15 @@ A prose beat/strand is **done** only when:
 - **Φ / QUANTA** *(GLMZ)* — the currency: one Φ = one second of certified error-corrected quantum
   coherence. Never the Greek letter phi ([SS-LAW-8](#SS-§5)).
 - **Beat** — a discrete unit of story function (not a paragraph); the atom of prose + audio.
-- **Strand** — an ordered set of beats; the unit generated, validated, reviewed, narrated, published.
-- **Collection / Series** — ordered sets of strands / of collections, on the `ParentStrandId` tree.
-- **Canon** — author-only `Strand.IsCanon` trust gate ([SS-LAW-9](#SS-§5)).
+- **Node** — a member of the typed story tree (SS-A43): **SeriesNode** groups stories;
+  **StoryNode** is a single story arc — the unit generated, validated, reviewed, narrated,
+  published; **ChapterNode** holds beats inside a story. "Strand" is the retired name for this
+  abstraction; story-domain docs may still use it to mean "story".
+- **Canon** — author-only `Node.IsCanon` trust gate ([SS-LAW-9](#SS-§5)).
 - **E.L.F.** *(GLMZ)* — Emergent Life Form; a sentient `Species` living in Characters.
 - **Automaton** *(GLMZ)* — non-sentient machine repo (Iowan Behemoths, robots, drones) — *not alive*.
 - **Facet** — a retired psychology-weighting system, **100% eradicated** ([§6](#SS-§6)).
-- **Voice harvest** — distilling a ≥80%-scoring strand's winning edits into the codified
+- **Voice harvest** — distilling a ≥80%-scoring story's winning edits into the codified
   `literary_rules`/`tone_bible`/character voice fields (propose-then-approve).
 - **Silence** *(GLMZ)* — Kyle's katana; *just a sword* ([SS-LAW-10](#SS-§5)).
 - **Chorus** *(GLMZ)* — Kyle's five-shot revolver shotgun ([SS-LAW-11](#SS-§5)).
@@ -393,15 +399,15 @@ Every **named entity** that appears in the story must be in the DB:
 - CorpoNations: `ss --add-corponation --name "..." [--description "..."]` (or via MCP `add_entity`)
 - Places, Weapons, Documents, etc.: via MCP `add_entity` or the appropriate CLI
 
-Run `ss --scan-entity-mentions --strand <slug>` after every chapter draft to keep coverage current.
+Run `ss --scan-entity-mentions --slug <slug>` after every chapter draft to keep coverage current.
 
 ### Step 3 — Book structure ★
 
-1. Create a **book-level strand** (`kind=book`): `ss --write-strand --seed "..." --kind book`
+1. Create a **book-level story** (`kind=book`): `ss --write-story --seed "..." --kind book`
    or via the UI.
-2. Create **chapter sub-strands** as children of the book strand (`kind=chapter`, `--parent <slug>`).
+2. Create **chapter sub-stories** as children of the book story (`kind=chapter`, `--parent <slug>`).
    Target ~28 chapters for a KDP paperback (~80k words); ~12–15 for a novella.
-3. The authorial spine (14-beat outline or equivalent) is saved as the book strand's `seed` text —
+3. The authorial spine (14-beat outline or equivalent) is saved as the book story's `seed` text —
    it is the **outline**, not the final prose.
 
 ### Step 4 — Prose generation
@@ -409,22 +415,22 @@ Run `ss --scan-entity-mentions --strand <slug>` after every chapter draft to kee
 For each chapter, in order:
 1. **Sonnet draft** — `ss --expand-beat` or the Writer UI (Sonnet is the draft model).
 2. **Opus polish** — mandatory; never ship Sonnet-only prose.
-3. **`ss --reflow-strand --slug <chapter-slug>`** — fix paragraph and dialogue mechanics.
-4. **`ss --review-strand --slug <chapter-slug>`** — Legion panel; target ≥82% before next chapter.
-5. **`ss --scan-entity-mentions --strand <book-slug>`** — keep coverage current after each chapter.
+3. **`ss --reflow-story --slug <chapter-slug>`** — fix paragraph and dialogue mechanics.
+4. **`ss --review-story --slug <chapter-slug>`** — Legion panel; target ≥82% before next chapter.
+5. **`ss --scan-entity-mentions --slug <book-slug>`** — keep coverage current after each chapter.
 
 ### Step 5 — Export and review
 
 - After all chapters reach draft standard: full-book review panel; target ≥85%.
 - `ss --publish-docx --slug <book-slug>` → KDP-ready .docx.
-- Voice harvest if any chapter scores ≥80%: `ss --harvest-voice --strand <chapter-slug>`.
+- Voice harvest if any chapter scores ≥80%: `ss --harvest-voice --slug <chapter-slug>`.
 - Flip all USER_STORIES.md sub-items to ✅ with evidence in the same commit.
 
 > **Invariant (SS-A15):** The emotional depth score (`EmotionalDepthService`) is a side-car signal
 > with a Deep-tier advisory cap. It scores prose against an 8-dimension rubric (0–4 per dimension,
 > 0–100 aggregate) and files blocking Findings for `WantNeedDivergence` / `CostFeltNotAsserted`.
-> A strand with open blocking emotional Findings cannot be marked publish-ready at the Deep gate.
-> It **never** folds into the 82/85 headline reader-panel score; `Strand.Score` and the review gates
+> A story with open blocking emotional Findings cannot be marked publish-ready at the Deep gate.
+> It **never** folds into the 82/85 headline reader-panel score; `Node.Score` and the review gates
 > are untouched by any emotional examination run. See [RFC 0010](rfc/0010-emotional-intelligence-examination.md).
 
 ---
@@ -462,12 +468,12 @@ DB — the most common cause of continuity breakage. If all entities are seeded 
 ([SS-LAW-1](#SS-§5), [§10](#SS-§10)), the scanner finds 0 gaps. Any gap found is the signal to seed
 the entity; the next generation cycle closes it.
 
-**Health signal.** `ss --scan-entity-mentions --strand <slug>` returns 0 unseeded mentions.
+**Health signal.** `ss --scan-entity-mentions --slug <slug>` returns 0 unseeded mentions.
 
 ### Loop 2 — Post-Beat Validation {#SS-§11-L2}
 
 ```
-Beat saved (StrandWorkbenchService.SaveBeatAsync)
+Beat saved (NodeWorkbenchService.SaveBeatAsync)
   → PostBeatValidationService (orchestrator)
       ├─ ProsePatternGuard:             catch anti-patterns (pseudo-profound, substring)
       ├─ GearCarryEnforcer:             verify character carries only seeded gear
@@ -482,7 +488,7 @@ Beat saved (StrandWorkbenchService.SaveBeatAsync)
 earlier beats. Each violation caught here avoids multiple review-panel rewrites later.
 
 **Health signal.** `/findings` inbox is empty, or every open finding has been explicitly adjudicated,
-before a strand is submitted for review.
+before a story is submitted for review.
 
 ### Loop 3 — Continuity {#SS-§11-L3}
 
@@ -505,34 +511,34 @@ explanation. The continuity ledger is the engine's working memory of what has ha
 ### Loop 4 — Review → Voice Harvest (The Flywheel) {#SS-§11-L4}
 
 ```
-Strand complete
-  → StrandReviewService: Legion persona panel (N readers, 1–100 score per reader)
-      → StrandReview rows + StrandReviewSummary aggregate
-      → Strand.Score updated; StrandScoreHistory row appended
-  → Score < 80%: low-score findings raised; strand flagged for rewrite
+Story complete
+  → NodeReviewService: Legion persona panel (N readers, 1–100 score per reader)
+      → NodeReview rows + NodeReviewSummary aggregate
+      → Node.Score updated; NodeScoreHistory row appended
+  → Score < 80%: low-score findings raised; story flagged for rewrite
   → Score ≥ 80%:
       → VOICE-HARVEST finding auto-raised
       → VoiceHarvestService mines temporal Beat history (FOR SYSTEM_TIME ALL)
       → Winning edits → VoiceChangeLog (status: proposed)
       → Author approves → directive folded into literary_rules / tone_bible / Character fields
-  → Next strand generation uses improved rules → higher baseline score
+  → Next story generation uses improved rules → higher baseline score
 ```
 
 **The flywheel property.** The loop is self-reinforcing: better `literary_rules` → better prose →
 higher scores → more harvests → even better rules. The endpoint ([SS-US-F10](#)) is demonstrable:
 batch K+1 mean score > batch K mean score across N harvests.
 
-**What it prevents.** Voice drift. Each ≥80%-scoring strand is proof the engine produced something
-that worked; harvest crystallizes WHY it worked so the next strand starts from a higher baseline.
+**What it prevents.** Voice drift. Each ≥80%-scoring story is proof the engine produced something
+that worked; harvest crystallizes WHY it worked so the next story starts from a higher baseline.
 Without this loop the engine would perpetually forget its own successes.
 
-**Health signal.** Every ≥80%-scoring strand has a non-empty `VoiceChangeLog` set. No strand sits
+**Health signal.** Every ≥80%-scoring story has a non-empty `VoiceChangeLog` set. No story sits
 at ≥80% with 0 harvest rows (unless harvest was explicitly waived by the author).
 
 ### Loop 5 — Semantic Fidelity Guard {#SS-§11-L5}
 
 ```
-Strand review complete
+Story review complete
   → SemanticFidelityService: compare prose embedding centroid to seed embedding
   → Goodhart's Law check: is prose optimising for review vocabulary
     while drifting from the seed's actual intent?
@@ -562,7 +568,7 @@ and places, leaving weapons, pharmaceuticals, automata, and the rest unreachable
 engine's standing self-audit of what it is actually using.
 
 **Health signal.** `ss --coverage` shows >0% for all diegetic types. Any type stuck at 0% for
-two or more consecutive strands is a retrieval bug or an empty entity roster — fix before shipping.
+two or more consecutive stories is a retrieval bug or an empty entity roster — fix before shipping.
 
 ### Loop 7 — World-State / Temporal {#SS-§11-L7}
 
@@ -573,7 +579,7 @@ Generation pre-flight (WorldStatePrecheckService)
   → WorldClockService: advance in-world clock to the beat's timestamp
   → Pre-check failures → generation prompt adjusted before prose fires (not after)
 
-All beats in a strand (and across strands)
+All beats in a story (and across stories)
   → EntityStateEvents ledger: append-only world-state changes
   → Available to any future generation, validation, or continuity check
 ```
@@ -623,7 +629,7 @@ No validation service (`CanonContradictionService`, `ProsePatternGuard`, `GearCa
 `BehavioralInvariantEnforcer`, `ContinuityValidatorService`, `SemanticFidelityService`) may write
 to prose tables. Violations are filed as `Finding` rows. Only `FindingApplyService` (triggered by
 an author approval) writes prose changes. Every correction is traceable and author-gated.
-*Audit: none of the validator services inject `StrandWorkbenchService` or `BeatRepository`.*
+*Audit: none of the validator services inject `NodeWorkbenchService` or `BeatRepository`.*
 
 **SCL-3: Voice changes are always proposed, never applied.**
 `VoiceHarvestService` writes only to `VoiceChangeLog` (status: proposed). Only
@@ -657,7 +663,7 @@ mid-request.
 *Audit: `OutlineGateTests`.*
 
 **SCL-8: Reviews never auto-apply their editorial conclusions.**
-`StrandReviewService` writes scores and summaries. It does not patch beats, does not update voice
+`NodeReviewService` writes scores and summaries. It does not patch beats, does not update voice
 rules, and does not raise rewrites. A review result is observation; action requires the author
 (or an explicitly author-approved agent).
 
@@ -670,22 +676,22 @@ working" observable rather than assumed.
 
 **QI-1: Every generated beat has been through all validation loops before it is considered a
 draft.**
-*Evidence:* `PostBeatValidationService` runs on every `StrandWorkbenchService.SaveBeatAsync`. The
-`/findings` inbox must be empty (or all open findings explicitly adjudicated) before a strand is
+*Evidence:* `PostBeatValidationService` runs on every `NodeWorkbenchService.SaveBeatAsync`. The
+`/findings` inbox must be empty (or all open findings explicitly adjudicated) before a story is
 submitted for review.
 
-**QI-2: Every review-eligible strand has a score.**
-*Evidence:* `Strand.Score` is null only before a review panel has run. A null-score strand cannot
-be published or harvested. `ss --review-strand` must run before `ss --publish-*`.
+**QI-2: Every review-eligible story has a score.**
+*Evidence:* `Node.Score` is null only before a review panel has run. A null-score story cannot
+be published or harvested. `ss --review-story` must run before `ss --publish-*`.
 
-**QI-3: Every ≥80%-scoring strand has triggered a voice harvest attempt.**
-*Evidence:* The `VOICE-HARVEST` finding is auto-raised at the `<80→≥80` crossing. A strand that
+**QI-3: Every ≥80%-scoring story has triggered a voice harvest attempt.**
+*Evidence:* The `VOICE-HARVEST` finding is auto-raised at the `<80→≥80` crossing. A story that
 scores ≥80% with 0 `VoiceChangeLog` rows is a broken flywheel loop — diagnose and re-run
 `ss --harvest-voice --slug <slug>`.
 
 **QI-4: The coverage report shows 0 dead diegetic types.**
 *Evidence:* `ss --coverage` shows >0% for all 28 registered types. A type at 0% for two or more
-consecutive strands is either an empty roster (seed entities) or a retrieval bug (fix
+consecutive stories is either an empty roster (seed entities) or a retrieval bug (fix
 `CanonRetrievalService`).
 
 **QI-5: The DI graph resolves with no missing registrations.**
@@ -693,7 +699,7 @@ consecutive strands is either an empty roster (seed entities) or a retrieval bug
 system's structural self-test — every service referenced by another must be registered.
 
 **QI-6: All entity mentions in prose are seeded in the DB.**
-*Evidence:* `ss --scan-entity-mentions --strand <slug>` produces 0 unseeded mentions. Run after
+*Evidence:* `ss --scan-entity-mentions --slug <slug>` produces 0 unseeded mentions. Run after
 every chapter draft.
 
 **QI-7: Voice changes are not auto-applied.**
@@ -704,16 +710,16 @@ and the approve handler (write).*
 
 **QI-8: No cross-universe data appears in any generation prompt.**
 *Evidence:* `UniverseSegregationTests` (10 tests: query-filter scoping, insert-stamping, shared-key
-visibility, strand scoping, epoch, uuid-v7). A GLMZ-only entity appearing in a Fantasy/Steampunk
+visibility, story scoping, epoch, uuid-v7). A GLMZ-only entity appearing in a Fantasy/Steampunk
 beat's canon-facts block is a segregation failure — check `IUniverseContext` wiring.
 
 **QI-9: All structural pre-flight checks pass before a review panel fires.**
-*Evidence:* `ss --diagnose-strand --slug <slug>` (StructuralDiagnosticService, 12 parallel LLM
+*Evidence:* `ss --diagnose-story --slug <slug>` (StructuralDiagnosticService, 12 parallel LLM
 checks) returns no critical failures. Review panels run against structurally sound prose; a panel
-scoring a fundamentally broken strand wastes voters and produces misleading score history.
+scoring a fundamentally broken story wastes voters and produces misleading score history.
 
-**QI-10: Each strand's score trends upward across its revision history.**
-*Evidence:* `StrandScoreHistory` table. A score that trends downward after voice-harvest application
+**QI-10: Each story's score trends upward across its revision history.**
+*Evidence:* `NodeScoreHistory` table. A score that trends downward after voice-harvest application
 is a signal the harvested directive is incorrect — revert the approval and re-examine the finding.
 The flywheel must demonstrably spin forward.
 
@@ -732,8 +738,8 @@ Continuity validation, world-state reconstruction, and voice harvest all require
 relational, time-aware data. Files cannot deliver this.
 *Revisit when:* The app moves to a client-only model with no server. Not a current direction.
 
-**ADR-2: System-versioned (temporal) tables for Beats and Strands.**
-*Decision:* `Beats`, `Strands`, `StrandBeats`, `ChapterBeats` use `SYSTEM_VERSIONING ON`.
+**ADR-2: System-versioned (temporal) tables for Beats and Nodes.**
+*Decision:* `Beats`, `Nodes`, `NodeBeats`, `ChapterBeats` use `SYSTEM_VERSIONING ON`.
 *Why:* Voice harvest mines `FOR SYSTEM_TIME ALL` to find which edits correlated with score
 improvements. Without temporal history the flywheel has no data to mine.
 *Tradeoff:* Adding a column to a temporal table requires the `SYSTEM_VERSIONING OFF → ALTER →
@@ -756,17 +762,18 @@ panel at lower cost. Not proven; panel diversity remains the safer default.
 *Why:* The LLM's "this is a winning move" verdict is a heuristic, not ground truth. Auto-applying
 would let the system modify its own voice without human review — the Goodhart's Law failure mode at
 the system level, not just the prose level.
-*Revisit when:* F10 demonstrates the flywheel produces consistently ≥90% scores across 50+ strands
+*Revisit when:* F10 demonstrates the flywheel produces consistently ≥90% scores across 50+ stories
 without any author veto on harvested directives. Not before.
 
-**ADR-5: One format (Strand of Beats) — no parallel format tables.**
-*Decision:* Books, chapters, episodes, and collections are all parent/child Strand trees on the
-`ParentStrandId` column. No separate table per format.
+**ADR-5: One format (typed Node tree over Beats) — no parallel format tables.**
+*Decision:* Books, chapters, episodes, and collections are all one typed parent/child Node tree
+(SeriesNode / StoryNode / ChapterNode, TPH on `Nodes`, SS-A43) on the `ParentNodeId` column. No
+separate table per format.
 *Why:* Every new format table is a new maintenance surface. The audio pipeline, review pipeline,
-voice harvest, and export pipeline would each need to handle every format. Strand-of-Beats
+voice harvest, and export pipeline would each need to handle every format. The Node tree
 abstracts over all of them: one pipeline, one set of loops.
-*Tradeoff:* The mental model requires understanding that `kind=book` is a parent strand, not a row
-in a `Books` table. The legacy `Books` table is being retired; its presence is a migration artifact.
+*Tradeoff:* The mental model requires understanding that a book is a StoryNode, not a row in a
+`Books` table. The legacy `Books` table is being retired; its presence is a migration artifact.
 
 **ADR-6: Per-universe entity duplication, not M:M bridging.**
 *Decision:* An entity that must appear in two universes gets two rows (one per Universe), not a

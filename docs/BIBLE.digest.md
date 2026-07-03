@@ -60,17 +60,19 @@ story row belongs to exactly one Universe ([SS-LAW-15](#SS-§5)).
    continuity claims upsert true facts; voice-harvest folds winning prose moves into
    `SpeechPatterns`/`NarrationVoice` (propose-then-approve); state events record change without
    overwriting identity.
-6. **One format: everything is a Strand of Beats.** {#SS-LAW-6} Collection/Series are parent
-   `Strand`s on the `ParentStrandId` tree — no parallel formats, no new table. A Beat is a unit of
-   story function, not a typographic paragraph; the Beat Doctrine is codified in
-   `LiteraryRulesData.BeatDoctrine` and emitted by `GetLiteraryRulesPrompt()`.
+6. **One format: everything is a tree of Nodes over Beats.** {#SS-LAW-6} The typed hierarchy
+   (SeriesNode → StoryNode → ChapterNode, TPH on the `Nodes` table, SS-A43) rides the
+   `ParentNodeId` tree — no parallel formats, no new table. Beats attach to ChapterNodes and leaf
+   StoryNodes; a SeriesNode never holds beats. A Beat is a unit of story function, not a
+   typographic paragraph; the Beat Doctrine is codified in `LiteraryRulesData.BeatDoctrine` and
+   emitted by `GetLiteraryRulesPrompt()`.
 7. **No underscore-prefixed fields.** {#SS-LAW-7} Private fields are `camelCase` without the
    leading underscore.
 8. **Φ is QUANTA, never phi.** {#SS-LAW-8} *(GLMZ.)* The symbol Φ is the QUANTA currency symbol
    (quantum compute-time), *never* the Greek letter phi. (Listed among the engine invariants for
    historical id stability, but it is **GLMZ-universe content**, not an engine truth.)
 15. **Every row belongs to exactly one Universe.** {#SS-LAW-15} Every canon/story root
-   (`Entities`, `Strands`, `Books`) carries a non-null `UniverseId`; all generation and retrieval
+   (`Entities`, `Nodes`, `Books`) carries a non-null `UniverseId`; all generation and retrieval
    is universe-scoped. An entity that must appear in two universes is **duplicated** (one row per
    Universe) — never a shared row and never an M:M bridge. (Id 15 is the next free number; the
    narrative laws 9–14 below were allocated earlier.)
@@ -79,8 +81,8 @@ story row belongs to exactly one Universe ([SS-LAW-15](#SS-§5)).
 from `v3/canon_writes/story_state.md`). Other universes (e.g. Fantasy/Steampunk) get their own
 narrative-law block here when stood up:**
 
-9. **Canon is author-only.** {#SS-LAW-9} `Strand.IsCanon` is set only manually by the author and
-   means "strong enough to draw conclusions from." Only canon strands are authoritative for
+9. **Canon is author-only.** {#SS-LAW-9} `Node.IsCanon` is set only manually by the author and
+   means "strong enough to draw conclusions from." Only canon stories are authoritative for
    voice-harvest, continuity inference, and capability decisions.
 10. **Silence is JUST a sword.** {#SS-LAW-10} No glow, no discharge, no charge state, no
     piezoelectric/triboelectric harvest. The "it shorts BCIs" street myth is a myth; neither Seo
@@ -93,7 +95,7 @@ narrative-law block here when stood up:**
 13. **The Sable reveal sequence is fixed.** {#SS-LAW-13} Sable is a **mystery voice only** in all
     BCODA chapters before Ch13 (The Offer). Her first in-person appearance is at Vey's Antiquity &
     Stationary in the Faraday vault (Ch13): the AI-reveal and the confession *"Your contracts do
-    not come from people."* Her appearance at the motorcycle funeral (Joy strand) is post-Ch13 and
+    not come from people."* Her appearance at the motorcycle funeral (Joy story) is post-Ch13 and
     is correct. Do not place Sable in-person before Ch13 under any circumstance.
 14. **The rogue-AI long con stays unconfirmed.** {#SS-LAW-14} The rogue AI is real and routing
     Kyle's contracts, but the full reveal (it has orchestrated his life) lands many books later.
@@ -101,7 +103,7 @@ narrative-law block here when stood up:**
 
 **Fantasy/Steampunk narrative laws (Universe: fantasy-steampunk — validate any Fantasy/Steampunk rewrite against these):**
 
-16. **Action beats carry thematic weight; contemplative beats have physical immediacy.** {#SS-LAW-16} An action beat that doesn't advance or complicate the strand's central tension is stage business. A contemplative beat without a grounding sensory or physical anchor is abstraction. Both fail. *(Universal beat doctrine — applies to all universes.)*
+16. **Action beats carry thematic weight; contemplative beats have physical immediacy.** {#SS-LAW-16} An action beat that doesn't advance or complicate the story's central tension is stage business. A contemplative beat without a grounding sensory or physical anchor is abstraction. Both fail. *(Universal beat doctrine — applies to all universes.)*
 
 ## 9. Glossary {#SS-§9}
 
@@ -116,13 +118,15 @@ narrative-law block here when stood up:**
 - **Φ / QUANTA** *(GLMZ)* — the currency: one Φ = one second of certified error-corrected quantum
   coherence. Never the Greek letter phi ([SS-LAW-8](#SS-§5)).
 - **Beat** — a discrete unit of story function (not a paragraph); the atom of prose + audio.
-- **Strand** — an ordered set of beats; the unit generated, validated, reviewed, narrated, published.
-- **Collection / Series** — ordered sets of strands / of collections, on the `ParentStrandId` tree.
-- **Canon** — author-only `Strand.IsCanon` trust gate ([SS-LAW-9](#SS-§5)).
+- **Node** — a member of the typed story tree (SS-A43): **SeriesNode** groups stories;
+  **StoryNode** is a single story arc — the unit generated, validated, reviewed, narrated,
+  published; **ChapterNode** holds beats inside a story. "Strand" is the retired name for this
+  abstraction; story-domain docs may still use it to mean "story".
+- **Canon** — author-only `Node.IsCanon` trust gate ([SS-LAW-9](#SS-§5)).
 - **E.L.F.** *(GLMZ)* — Emergent Life Form; a sentient `Species` living in Characters.
 - **Automaton** *(GLMZ)* — non-sentient machine repo (Iowan Behemoths, robots, drones) — *not alive*.
 - **Facet** — a retired psychology-weighting system, **100% eradicated** ([§6](#SS-§6)).
-- **Voice harvest** — distilling a ≥80%-scoring strand's winning edits into the codified
+- **Voice harvest** — distilling a ≥80%-scoring story's winning edits into the codified
   `literary_rules`/`tone_bible`/character voice fields (propose-then-approve).
 - **Silence** *(GLMZ)* — Kyle's katana; *just a sword* ([SS-LAW-10](#SS-§5)).
 - **Chorus** *(GLMZ)* — Kyle's five-shot revolver shotgun ([SS-LAW-11](#SS-§5)).
@@ -134,33 +138,51 @@ narrative-law block here when stood up:**
 - done: 120  partial: 8  planned: 25  cut: 1
 
 ## Latest amendment
-## SS-A42 — Deep Lake: no communities; one sealed black site; "Sky People" = the privileged class {#SS-A42}
+## SS-A43 — Node hierarchy: Strand → SeriesNode / StoryNode / ChapterNode {#SS-A43}
 
-**Date:** 2026-07-03 · **Author:** world-consolidation · **Ref:** retires §A36; confirms §A39-1
-
----
-
-### Underwater communities are retired (binding)
-
-There are no permanent human communities living beneath Lake Michigan. No hermetic-dome neighborhoods. No flooded-port communes. No lakebed settlements. The idea of a subculture choosing to live at the bottom of a freshwater lake — sustaining functional communities there — is cut from GLMZ canon. It has no social logic (the lake offers no aspiration, no benefit, no leverage), no narrative payoff, and dilutes the vertical class axis that actually works.
-
-**What remains on the lakebed:**
-
-- **Ruins.** Fifteen-plus decommissioned corporate research installations from the 2060s–2200s. Most are flooded, structurally failed, and dark. Salvage crews (The Lakebed Scrapers, The Silt Syndicate) work the shallower ruins for hardware and rare materials. Nobody lives in them.
-- **One sealed facility.** Sensor records that Arcturus Civil Security does not officially acknowledge indicate exactly one installation on the lakebed is still drawing power. Its corporate affiliation is not in any public registry. Its coordinates are not on any public map. What it researches is not confirmed. It is not a community. It is a black site. *Treat as one of GLMZ's locked mysteries — real, occupied, never confirmed in-fiction.*
-- **Surface-only operations.** Harbor gangs (The Fathom Line, The Rip), waterfront salvagers, and diving crews work the water and the shallow ruins for economic reasons. They surface. They do not live there.
-
-**§A36 is retired.** "Mermaids" and "Fishmen" as slang for underwater communities are cut along with the communities themselves. There is no community to reference. The Underclan (underground, not underwater) use their own name; any surface-speaker insult for underground dwellers belongs to per-strand bibles, not a GLMZ-wide amendment.
+**Date:** 2026-07-03 · **Author:** engine-refactor · **Ref:** supersedes the single-"Strand" schema described in BIBLE §4; SS-A37 rule updated in place
 
 ---
 
-### Sky People = the privileged class (binding, confirms §A39-1)
+### The engine abstraction is now a typed tree (binding)
 
-**Sky People** are the wealthiest and most privileged residents of GLMZ. They live above the city — aeroblocs, aeroplexes, licensed high-altitude platforms — and the altitude is not incidental. It is the point. Sky People are literally above it all: above the pollution, the Block Wars, the smells and density and consequences of the city they profit from.
+The overloaded **Strand** abstraction — one entity conflating series, story, and chapter — is
+replaced by a typed hierarchy, table-per-hierarchy on the renamed **Nodes** table with a
+**NodeType** discriminator:
 
-Elevation costs money and signals power. The higher you live, the less the city touches you. Sky People pay a premium not just for the view but for the distance. The street does not reach them. That is the amenity.
+```
+SeriesNode      — top-level grouping (saga / anthology). Never holds beats.
+  StoryNode     — a single story arc (book / novella / standalone). A leaf story
+                  with no chapters holds its beats directly.
+    ChapterNode — organizational unit inside a story; holds beats.
+Beat            — prose atom (unchanged).
+```
 
-The **vertical class axis** runs from absent/underground through street-level through sky. There is no competing underwater narrative. The lakebed is where nothing is: ruins, one sealed secret, absence. The sky is where wealth concentrates. The axis is clean.
+**Schema renames (data preserved, nothing dropped):** `Strands`→`Nodes`,
+`StrandBeats`→`NodeBeats` (NOT `ChapterBeats` — that name belongs to the live legacy
+Book/Chapter tables), `StrandAmendments`→`NodeAmendments`, `StrandSpineVersions`→
+`NodeSpineVersions`, plus every Strand-named column/index/constraint (`ParentStrandId`→
+`ParentNodeId`, `StrandCode`→`NodeCode`, `StrandBible`→`NodeBible`, …). System-versioned
+history tables were renamed in lockstep; `NodeType` was backfilled on current AND history
+rows (`series`→series, `chapter`→chapter, everything else→story). Migration:
+`20260703162528_NodeHierarchyRedesign`; local backup `backups/preNodeHierarchy_20260703.bak`.
 
-**Prose directive:** A Sky Person's altitude is a character fact. A street-level character looking up at aeroplex lights at night is making a class statement. The distance between street and sky is not aesthetic — it is political.
+**Beat attachment rule:** beats attach to ChapterNodes and to *leaf* StoryNodes (11 existing
+root stories hold beats directly — preserved, not restructured); SeriesNodes never hold beats.
+`Kind` survives as a free-form display label; the CLR type / NodeType discriminator is the
+structural truth. `NodeFactory.Create(kind)` maps labels to types at data-driven creation sites.
+
+**Surface renames:** MCP `get_story` / `list_stories` / `create_series` / `create_story` /
+`create_chapter` / `review_story` / story-bible family (legacy Book/Chapter tools renamed
+`create_legacy_book` / `create_legacy_chapter`); CLI story-scoped flags are now `--write-story`,
+`--review-story`, `--list-stories`, `--publish-story`, `--story-bible`, `--story-code`, etc.
+(`--slug` and `ss --write-outline --slug` unchanged). Blazor routes `/node/{slug}` + `/nodes`
+remain canonical with `/story/{slug}`, `/strand/{slug}`, `/stories`, `/strands` as aliases.
+
+**SS-A37 (no direct SQL deletes) now reads:** never `DELETE FROM Nodes`, `DELETE FROM Beats`,
+or `DELETE FROM NodeBeats` via raw sqlcmd — same rule, renamed tables.
+
+**Unchanged on purpose:** `docs/strands/<CODE>.md` per-story bibles keep their path and the
+word "strand" in their prose — they are story-domain documents, not engine schema. The term
+"strand" in story-domain contexts now simply means "story".
 

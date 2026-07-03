@@ -1,4 +1,6 @@
 ﻿@page "/node/{IdOrSlug}"
+@page "/story/{IdOrSlug}"
+@page "/strand/{IdOrSlug}"
 @attribute [Authorize(Policy = MaPolicies.Admin)]
 @using Microsoft.EntityFrameworkCore
 @using StreetSamurai.Core.Data

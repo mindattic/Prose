@@ -569,6 +569,19 @@ updated: 2026-06-25
 
 ### Audit log
 
+- **2026-07-03 — Node hierarchy redesign SHIPPED ([SS-A43](AMENDMENTS.md#SS-A43)).** The
+  overloaded "Strand" abstraction became a typed tree: abstract `Node` + `SeriesNode` /
+  `StoryNode` / `ChapterNode`, TPH on the renamed `Nodes` table via a `NodeType` discriminator.
+  Migration `20260703162528_NodeHierarchyRedesign` is rename-only (temporal-safe: versioning
+  suspended, history tables renamed in lockstep, `NodeType` backfilled on current + history rows;
+  53 nodes = 34 chapter / 17 story / 2 series; 2,832 history rows intact). Surfaces renamed: MCP
+  `get_story` / `list_stories` / `create_series` / `create_story` / `create_chapter` (+ legacy
+  Book/Chapter tools renamed `create_legacy_*`), CLI `--write-story` / `--review-story` /
+  `--list-stories` etc.; routes `/node/{slug}` + aliases `/story`, `/strand`. Evidence: unit
+  suite 1,250 passed / 8 pre-existing failures (reproduced on HEAD with only the Media fix
+  applied; unrelated) — the refactor also fixed the suite-wide SQLite breakage from
+  `MediaItemTypeConfiguration` (628 → 8 failures). CLI smoke: `ss --list-stories` reads the
+  migrated DB. Local backup `backups/preNodeHierarchy_20260703.bak`.
 - **2026-06-15 — universe segregation SHIPPED ([RFC 0006](rfc/0006-universe-segregation.md); SS-A4).**
   Closed every cross-over surface beyond canon rows: config (`Settings`/`Species` scoped + SHARED
   sentinel + epoch cache invalidation), the silent embedding leak (`EntityEmbeddings`/`ProseEmbeddings`

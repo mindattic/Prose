@@ -1533,3 +1533,53 @@ Elevation costs money and signals power. The higher you live, the less the city 
 The **vertical class axis** runs from absent/underground through street-level through sky. There is no competing underwater narrative. The lakebed is where nothing is: ruins, one sealed secret, absence. The sky is where wealth concentrates. The axis is clean.
 
 **Prose directive:** A Sky Person's altitude is a character fact. A street-level character looking up at aeroplex lights at night is making a class statement. The distance between street and sky is not aesthetic — it is political.
+
+---
+
+## SS-A43 — Node hierarchy: Strand → SeriesNode / StoryNode / ChapterNode {#SS-A43}
+
+**Date:** 2026-07-03 · **Author:** engine-refactor · **Ref:** supersedes the single-"Strand" schema described in BIBLE §4; SS-A37 rule updated in place
+
+---
+
+### The engine abstraction is now a typed tree (binding)
+
+The overloaded **Strand** abstraction — one entity conflating series, story, and chapter — is
+replaced by a typed hierarchy, table-per-hierarchy on the renamed **Nodes** table with a
+**NodeType** discriminator:
+
+```
+SeriesNode      — top-level grouping (saga / anthology). Never holds beats.
+  StoryNode     — a single story arc (book / novella / standalone). A leaf story
+                  with no chapters holds its beats directly.
+    ChapterNode — organizational unit inside a story; holds beats.
+Beat            — prose atom (unchanged).
+```
+
+**Schema renames (data preserved, nothing dropped):** `Strands`→`Nodes`,
+`StrandBeats`→`NodeBeats` (NOT `ChapterBeats` — that name belongs to the live legacy
+Book/Chapter tables), `StrandAmendments`→`NodeAmendments`, `StrandSpineVersions`→
+`NodeSpineVersions`, plus every Strand-named column/index/constraint (`ParentStrandId`→
+`ParentNodeId`, `StrandCode`→`NodeCode`, `StrandBible`→`NodeBible`, …). System-versioned
+history tables were renamed in lockstep; `NodeType` was backfilled on current AND history
+rows (`series`→series, `chapter`→chapter, everything else→story). Migration:
+`20260703162528_NodeHierarchyRedesign`; local backup `backups/preNodeHierarchy_20260703.bak`.
+
+**Beat attachment rule:** beats attach to ChapterNodes and to *leaf* StoryNodes (11 existing
+root stories hold beats directly — preserved, not restructured); SeriesNodes never hold beats.
+`Kind` survives as a free-form display label; the CLR type / NodeType discriminator is the
+structural truth. `NodeFactory.Create(kind)` maps labels to types at data-driven creation sites.
+
+**Surface renames:** MCP `get_story` / `list_stories` / `create_series` / `create_story` /
+`create_chapter` / `review_story` / story-bible family (legacy Book/Chapter tools renamed
+`create_legacy_book` / `create_legacy_chapter`); CLI story-scoped flags are now `--write-story`,
+`--review-story`, `--list-stories`, `--publish-story`, `--story-bible`, `--story-code`, etc.
+(`--slug` and `ss --write-outline --slug` unchanged). Blazor routes `/node/{slug}` + `/nodes`
+remain canonical with `/story/{slug}`, `/strand/{slug}`, `/stories`, `/strands` as aliases.
+
+**SS-A37 (no direct SQL deletes) now reads:** never `DELETE FROM Nodes`, `DELETE FROM Beats`,
+or `DELETE FROM NodeBeats` via raw sqlcmd — same rule, renamed tables.
+
+**Unchanged on purpose:** `docs/strands/<CODE>.md` per-story bibles keep their path and the
+word "strand" in their prose — they are story-domain documents, not engine schema. The term
+"strand" in story-domain contexts now simply means "story".
