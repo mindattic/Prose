@@ -19,7 +19,7 @@ See global rules in ~/.claude/CLAUDE.md. The rate-limit-monitor skill enforces:
 
 ## Database Access
 
-For **read-only lookups** (strand lists, scores, entity counts, etc.), query the local DB directly — returns in under a second:
+For **read-only lookups** (node lists, scores, entity counts, etc.), query the local DB directly — returns in under a second:
 
 ```
 sqlcmd -S "(localdb)\MSSQLLocalDB" -d StreetSamurai -Q "<query>"
@@ -43,33 +43,33 @@ Only use `dotnet run --project v3/StreetSamurai.Blazor -- <args>` when the CLI's
 - Iowan Behemoths are autonomous machines, NOT synthetic life. They are not alive.
 - Default to mixed heritage from unexpected global combinations (Ubiquitous Diaspora).
 
-## Per-Strand Documentation (SS-A11)
+## Per-Node Documentation (SS-A11)
 
-Every story strand with active prose has its own standalone bible at `docs/strands/<CODE>.md`.
+Every story node with active prose has its own standalone bible at `docs/nodes/<CODE>.md`.
 
-**When working on a specific strand:** read `docs/strands/<CODE>.md` before generating prose.
+**When working on a specific node:** read `docs/nodes/<CODE>.md` before generating prose.
 Do not rely on BIBLE.md alone for story-specific rules — it has engine laws, not story arc.
 
 | Location | Contains |
 |---|---|
 | `docs/BIBLE.md` | Universe laws, architecture, engine invariants — no per-story arc |
-| `docs/strands/<CODE>.md` | Story arc, beat spine, character rules, locks, user stories |
+| `docs/nodes/<CODE>.md` | Story arc, beat spine, character rules, locks, user stories |
 | `docs/books/<name>.md` | Legacy long-form book spines (BCODA; maintained in place) |
 | `docs/USER_STORIES.md` | Epic index + acceptance criteria |
 
-Strand files are **loaded on demand**, not injected at session start. Load only what you need.
+Node bibles are **loaded on demand**, not injected at session start. Load only what you need.
 
-**Existing strand files:**
-- `docs/strands/PNHL.md` — Pinhole / PNHL (Pixel origin story, GLMZ; formerly TDIU / The Door Is Unlocked)
-- `docs/strands/BCODA.md` — Bushido Coda flagship novel (GLMZ)
-- `docs/strands/ATTE.md` — Attendance / Yemina Fola investigation (GLMZ)
-- `docs/strands/VATD.md` — Vultures at the Door / Thomas & Levin (GLMZ)
-- `docs/strands/DWIACE.md` — Death Whispers in a Cat's Ear / Rennick Investigations (GLMZ)
-- `docs/strands/SPRW.md` — Sparrow / Elias Macias & the orbital mystery (GLMZ)
-- `docs/strands/MNEMO.md` — Mnemosync / Amara & Seto (GLMZ, in progress; formerly ULC, redesigned SS-A14)
-- `docs/strands/TEST.md` — Testament / Bear court-martial (GLMZ)
-- `docs/strands/GIW.md` — Grafted Into War / M-101/Soren (Fantasy)
-- `docs/strands/MxG.md` — Magenta & Gunmetal / GLMZ run (GLMZ, planned; Shadowrun-style heist → True Lies finale)
+**Existing node bibles:**
+- `docs/nodes/PNHL.md` — Pinhole / PNHL (Pixel origin story, GLMZ; formerly TDIU / The Door Is Unlocked)
+- `docs/nodes/BCODA.md` — Bushido Coda flagship novel (GLMZ)
+- `docs/nodes/ATTE.md` — Attendance / Yemina Fola investigation (GLMZ)
+- `docs/nodes/VATD.md` — Vultures at the Door / Thomas & Levin (GLMZ)
+- `docs/nodes/DWIACE.md` — Death Whispers in a Cat's Ear / Rennick Investigations (GLMZ)
+- `docs/nodes/SPRW.md` — Sparrow / Elias Macias & the orbital mystery (GLMZ)
+- `docs/nodes/MNEMO.md` — Mnemosync / Amara & Seto (GLMZ, in progress; formerly ULC, redesigned SS-A14)
+- `docs/nodes/TEST.md` — Testament / Bear court-martial (GLMZ)
+- `docs/nodes/GIW.md` — Grafted Into War / M-101/Soren (Fantasy)
+- `docs/nodes/MxG.md` — Magenta & Gunmetal / GLMZ run (GLMZ, planned; Shadowrun-style heist → True Lies finale)
 - `docs/books/bushido-coda-strands-bible.md` — BCODA (legacy long-form; superseded by BCODA.md above)
 
 ## Codex (how to work with the canon)
@@ -151,13 +151,13 @@ MCP: `workflow_status`, `workflow_status_global`, `workflow_beat_modes`
 5. After story complete, run `ss --story-audit --slug <slug>` to audit gateway/sequel commandments
 6. After story complete, run `ss --plant-audit --slug <slug>` to check for orphaned plants
 
-## Multi-Strand Story Review (mandatory after every strand — see memory: feedback_story_accretion)
+## Multi-Node Story Review (mandatory after every node — see memory: feedback_story_accretion)
 
-When writing a multi-strand story (book, series, alternating POV), each completed strand triggers a **mandatory dual review** before the next strand begins. No exceptions.
+When writing a multi-node story (book, series, alternating POV), each completed node triggers a **mandatory dual review** before the next node begins. No exceptions.
 
 **A. Standalone review** — Score ≥82%. If below, fix before continuing.
 
-**B. Cumulative prefix review** — Read all strands Ch1–N in order. Story score must trend toward and hold ≥85%. If this strand drops the cumulative, investigate before proceeding.
+**B. Cumulative prefix review** — Read all nodes Ch1–N in order. Story score must trend toward and hold ≥85%. If this node drops the cumulative, investigate before proceeding.
 
 Use both reviews to diagnose and act:
 - **Prose problems** — voice drift, flat dialogue, missing sensory texture.
@@ -167,5 +167,5 @@ Use both reviews to diagnose and act:
 
 | Measure | Target |
 |---|---|
-| Per-strand standalone | ≥82% |
-| Cumulative story (all strands in reading order) | ≥85% |
+| Per-node standalone | ≥82% |
+| Cumulative story (all nodes in reading order) | ≥85% |

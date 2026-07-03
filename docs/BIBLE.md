@@ -812,3 +812,4 @@ in `Settings` can be updated by the voice-harvest flywheel (with author approval
 change. The flywheel only works if the rules it updates are actually read by generation.
 *Revisit when:* A rule is so structural that it cannot safely change without a code change (e.g.
 universe scoping logic). Those rules belong in code; everything else belongs in Settings.
+

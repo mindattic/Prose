@@ -23,15 +23,15 @@ All amendments through SS-A14 have been merged into their canonical destinations
 | SS-A3 — Multi-Universe implementation | `docs/BIBLE.md` §4.2, §6 |
 | SS-A4 — Universe segregation + UUIDv7 | `docs/BIBLE.md` §4.2 |
 | SS-A5 — Fully relational canon | `docs/BIBLE.md` §4.2 (Records framing updated) |
-| SS-A6 — Underlying Connection design | `docs/strands/MNEMO.md` §3–4 |
-| SS-A7 — Sparrow Act 2+3 design | `docs/strands/SPRW.md` §0, §3, §4 |
-| SS-A8 — ATTE resonance-trace taxonomy | `docs/strands/ATTE.md` §4b |
-| SS-A9 — BCODA arc + 16-chapter spine | `docs/strands/BCODA.md` §1–9 |
-| SS-A10 — Null history + chapter swap | `docs/strands/BCODA.md` §5, §7 |
-| SS-A11 — Pixel origin + per-strand docs | `docs/strands/PNHL.md` §3; `CLAUDE.md` |
-| SS-A12 — Sparrow expansion + Sasha Vo | `docs/strands/SPRW.md` §3, §5–6 |
-| SS-A13 — TVYT redesign as MNEMOSYNC novel | `docs/strands/TVYT.md` (recreated) |
-| SS-A14 — ULC → Mnemosync rename + redesign | `docs/strands/MNEMO.md` |
+| SS-A6 — Underlying Connection design | `docs/nodes/MNEMO.md` §3–4 |
+| SS-A7 — Sparrow Act 2+3 design | `docs/nodes/SPRW.md` §0, §3, §4 |
+| SS-A8 — ATTE resonance-trace taxonomy | `docs/nodes/ATTE.md` §4b |
+| SS-A9 — BCODA arc + 16-chapter spine | `docs/nodes/BCODA.md` §1–9 |
+| SS-A10 — Null history + chapter swap | `docs/nodes/BCODA.md` §5, §7 |
+| SS-A11 — Pixel origin + per-strand docs | `docs/nodes/PNHL.md` §3; `CLAUDE.md` |
+| SS-A12 — Sparrow expansion + Sasha Vo | `docs/nodes/SPRW.md` §3, §5–6 |
+| SS-A13 — TVYT redesign as MNEMOSYNC novel | `docs/nodes/TVYT.md` (recreated) |
+| SS-A14 — ULC → Mnemosync rename + redesign | `docs/nodes/MNEMO.md` |
 
 Full amendment text is preserved in git history. Tag `epoch-1-amendments` marks the graduation commit.
 
@@ -135,7 +135,7 @@ any story beat where Kyle's implant status is relevant.
 ## SS-A18 — Schisms are hyperspace cross-sections; the Gingerbread House mechanism {#SS-A18}
 
 **Date:** 2026-06-23 · **Author:** atte-gateway-redesign · **Ref:** `memory/project_schism.md`,
-`docs/strands/ATTE.md` §4b · **Reference viz:** `D:\Projects\MindAttic\Hyperspace\hyperspace.htm`
+`docs/nodes/ATTE.md` §4b · **Reference viz:** `D:\Projects\MindAttic\Hyperspace\hyperspace.htm`
 
 A **schism is the 3-dimensional cross-section of a higher-dimensional (5D) shape — not a hole.** What
 stands at an intersection is a *slice*, "one dimension thinner than the thing that casts it." The slice
@@ -266,7 +266,7 @@ reviewed 87.0) — Elias Macias and Sparrow alone, ending on the balcony at `RAT
 - **Sparrow is a standalone two-minds novelette with no Sasha Võ and no gun-and-run.** `SPRW.md` is
   reverted to its realized SS-A7 form. Every Sasha reference is removed from Sparrow documentation.
 - **The entire Sasha Võ plan is migrated to a new strand — `Steppin Razor` (StrandCode `SRZR`).**
-  `docs/strands/SRZR.md` is created from the exfiltrated `SPRW.md §6` Act 2B/2C beat spine, §3 Sasha
+  `docs/nodes/SRZR.md` is created from the exfiltrated `SPRW.md §6` Act 2B/2C beat spine, §3 Sasha
   character section, §5 Sasha locks, §7 Root/Machine register, and §0 gun-and-run premise. Nothing
   is lost; it is relocated.
 - **Sasha Võ remains canon** (entity `FA054E75-…`; Signal `154B7168-…`; Noise `722AC515-…`; Võ
@@ -651,7 +651,7 @@ entanglement, not a cable).
 ## SS-A26 — The Rook Trilogy arc + the body-bank harvest (Helix / the Marrow) {#SS-A26}
 
 **Date:** 2026-06-27 · **Author:** rook-trilogy-finale · **Ref:** establishes the canon that
-closes the heist trilogy (MxG → NxR → CxC); see [docs/strands/CxC.md](strands/CxC.md).
+closes the heist trilogy (MxG → NxR → CxC); see [docs/nodes/CxC.md](nodes/CxC.md).
 
 New world canon:
 - **Registered Reads are a harvestable resource.** A Nano Triumvirate member — **Helix
@@ -1482,7 +1482,7 @@ Border Markets are **connective tissue between zones**. They appear in any GLMZ 
 
 ## SS-A41 — Character Doctrine: circumstance → choice → definition {#SS-A41}
 
-**Date:** 2026-07-03 · **Author:** character-doctrine-pass · **Ref:** `docs/strands/PNHL.md` §10a; extends `docs/BIBLE.md` §10 narrative laws; applies to all universes and strands.
+**Date:** 2026-07-03 · **Author:** character-doctrine-pass · **Ref:** `docs/nodes/PNHL.md` §10a; extends `docs/BIBLE.md` §10 narrative laws; applies to all universes and strands.
 
 ---
 
@@ -1581,6 +1581,7 @@ remain canonical with `/story/{slug}` and `/stories` as aliases.
 **SS-A37 (no direct SQL deletes) now reads:** never `DELETE FROM Nodes`, `DELETE FROM Beats`,
 or `DELETE FROM NodeBeats` via raw sqlcmd — same rule, renamed tables.
 
-**Unchanged on purpose:** `docs/strands/<CODE>.md` per-story bibles keep their path and the
-word "strand" in their prose — they are story-domain documents, not engine schema. The term
-"strand" in story-domain contexts now simply means "story".
+**Node bibles** live at `docs/nodes/<CODE>.md`. The directory was renamed from `docs/strands/`
+as part of the full strand→node terminology sweep (2026-07-03). All internal story-domain
+uses of "strand" now read as "node" or "story" per context.
+

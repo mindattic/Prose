@@ -110,7 +110,7 @@ updated: 2026-06-25
 - **SS-US-G5 🟡** As the author, *Bushido Coda* is a complete, arc-coherent flagship novel (16
   chapters, 240 beats, ~90+ mean review score) in which every chapter puts in work toward the
   AI-manipulation reveal in Ch13, and Ch16 closes with Kyle making first contact with the rogue AI.
-  The reader sees the invisible hand; Kyle doesn't. See [BCODA bible](strands/BCODA.md).
+  The reader sees the invisible hand; Kyle doesn't. See [BCODA bible](nodes/BCODA.md).
   *Acceptance: all 16 chapters reviewed at ≥82% standalone; cumulative ≥85%; each chapter can
   be described in one sentence that references what it does for the arc, not just what happens in it.*
   - **G5a ✅** Ch1 Teeth: AI-contract seed beat inserted at sk=250; client field resolves to
@@ -218,7 +218,7 @@ updated: 2026-06-25
   the Pulse from Iowa to GLMZ, is robbed on day one, learns that Arcturus Civil Security is more
   dangerous than the criminals, solves the problem herself with her own technical skills, and ends
   the story as a full, confident person who locks her door and leaves the nine-second routing gap
-  intact. Full arc and locks in [docs/strands/PNHL.md](strands/PNHL.md).
+  intact. Full arc and locks in [docs/nodes/PNHL.md](nodes/PNHL.md).
   *Acceptance: standalone review ≥ 87%; locks in PNHL §8 hold; story ends
   with the door locked, the pinhole gap unclosed, Kyle unanswered.
   (current score: 83.9/100, N=58; Assessor redesign + Ryokan breach cost + character doctrine applied 2026-07-03.)*
@@ -260,7 +260,7 @@ updated: 2026-06-25
   because he surfaced, the surface comes *down*, bringing sport-hunters, a "rescue" mission, and the
   **Bright Fever** the immunologically-naïve clan cannot survive (FernGully / *Jungle 2 Jungle* /
   rumspringa lineage). Full arc, locks, register, and 14-beat spine in
-  [docs/strands/UNDR.md](strands/UNDR.md); world canon in [SS-A22](AMENDMENTS.md). *Acceptance: book
+  [docs/nodes/UNDR.md](nodes/UNDR.md); world canon in [SS-A22](AMENDMENTS.md). *Acceptance: book
   strand seeded + all entities seeded before prose + chapters drafted (Sonnet→Opus) in the DEEP
   register + standalone review ≥82% + cumulative reading-order ≥85%.*
   - **H5a ⬜** Docs: SS-A22 amendment + UNDR bible + this entry; `codex doctor` PASS.
@@ -272,8 +272,8 @@ updated: 2026-06-25
   - **H5d ✅** All 14 chapters drafted (50 beats total, DEEP register, direct SQL insert); manuscript exported to `R:\Desktop\EPub\MindAttic\GLMZ\Underclan\Underclan V1.txt`. *(2026-06-25)*
   - **H5e ✅** Standalone review: 83.2/100 (20-reader panel, StrandReviewService, 2026-06-25). Target ≥82% met.
 
-- **SS-US-H6 ✅** As the author, *Magenta & Gunmetal* (MxG) is the quintessential GLMZ "run" story: five freelancers — Rook (planner), Lace (social engineer), Boiler (demo), Vox (netrunner), Scout (QCE rider) — accept a corporate extraction job against Axiom BioNanics, discover the target hired them first via a cutout, survive a wet-squad pursuit, and end on a storm-lashed Lake Platform in a True Lies / Die Hard finale where Rook jumps off the deck onto a strafing VTOL. Full arc, locks, register (HEIST), and 14-beat spine in [docs/strands/MxG.md](strands/MxG.md). *Acceptance: strand seeded + all entities seeded before prose + 14-beat spine drafted (Sonnet→Opus) + standalone review ≥82%.* *(verified 2026-06-25 via CLI `ss --review-strand`; standalone 86.7%; re-verified 2026-06-27 at **87.1%** after the Character Doctrine behavior pass — dup beats removed, crew rendered as people per [docs/CHARACTER.md](CHARACTER.md))*
-  - **H6a ✅** Docs: MxG strand bible (docs/strands/MxG.md) + this entry; `codex doctor` PASS. *(2026-06-25)*
+- **SS-US-H6 ✅** As the author, *Magenta & Gunmetal* (MxG) is the quintessential GLMZ "run" story: five freelancers — Rook (planner), Lace (social engineer), Boiler (demo), Vox (netrunner), Scout (QCE rider) — accept a corporate extraction job against Axiom BioNanics, discover the target hired them first via a cutout, survive a wet-squad pursuit, and end on a storm-lashed Lake Platform in a True Lies / Die Hard finale where Rook jumps off the deck onto a strafing VTOL. Full arc, locks, register (HEIST), and 14-beat spine in [docs/nodes/MxG.md](nodes/MxG.md). *Acceptance: strand seeded + all entities seeded before prose + 14-beat spine drafted (Sonnet→Opus) + standalone review ≥82%.* *(verified 2026-06-25 via CLI `ss --review-strand`; standalone 86.7%; re-verified 2026-06-27 at **87.1%** after the Character Doctrine behavior pass — dup beats removed, crew rendered as people per [docs/CHARACTER.md](CHARACTER.md))*
+  - **H6a ✅** Docs: MxG strand bible (docs/nodes/MxG.md) + this entry; `codex doctor` PASS. *(2026-06-25)*
   - **H6b ✅** Entities seeded: Inkeri Saarinen `019f00a4061f`, Blessing Agwu `019f00a4408b`, Mikkeli Väinämöinen `019f00a48148`, Tem Okafor `019f00a4cbe2`, Remi Diallo `019f00a51d0a`, Halina Soraya `019f00a571cc` (renamed from "Nadia Vasquez-Park" 2026-06-27 to de-collide with Street Meat's Dr. Nadia Park), Gault `019f00a597aa`; QCE tech `019f00a62820`; PEREGRINE faction `019f00a5c8f7`; Lake Platform `019f00a5f57e`. *(2026-06-25)*
   - **H6c ✅** Strand `MxG` created: id=`019f00a6-5370-7123-843a-7a4831c66e10`, slug=`magenta-gunmetal-019f00a6`. *(2026-06-25)*
   - **H6d ✅** 14 beats drafted Sonnet→Opus, reflowed; surgical passes on beats 4, 6, 7, 9, 11, 13, 14 (PEREGRINE two-cell, exposition cut, Gault teeth, Rook emotional texture, rule plant+break); second pass on beats 11+13 (Gault overlong-absolution cut → body-first ambient moment; Beat 13 rule-break made conscious from inside Rook's POV); exported: *Magenta & Gunmetal V5.docx/epub/pdf/txt* (`R:\Desktop\EPub\MindAttic\GLMZ\Magenta & Gunmetal\`). *(2026-06-25/26)*
@@ -284,7 +284,7 @@ updated: 2026-06-25
   - **H7b ✅** CxC (`marrow-chrome-019f0968`) created; entities seeded (Anneke Oyelowo, The Marrow, Sefi Okonkwo; Helix Biosystems); SS-A26 amendment; 14 beats Sonnet→Opus + AntagonistCost structural beat; review **87.6**. *(2026-06-27)*
   - **H7c ✅** Trilogy seam refactored into MxG (#4745 acquisition-for-a-buyer) + NxR (#4841 relocation-as-harvest) — the diligent-reader payoff planted. Rook redesigned (Lightning leader, rotating cast, no-repeat rule dropped, knows Kyle); Nadia Vasquez-Park → Halina Soraya. *(2026-06-27)*
 
-- **SS-US-H7 ✅** As the author, *Steppin Razor* (SRZR, `steppin-razor-019ef7be`, 15 beats) is written to completion: Sasha Võ is dragged from the quiet edge (Joliet) to the densest crowd on the continent by a 5D intelligence on a camel, discovers the AI cabal is drilling live wells under the towers not the frontier, survives four Axiom operatives with Signal and Noise, and walks onto the Loop platform still angry, still here, without putting her back to the door. Psychedelic GLMZ, *Fear and Loathing* propulsion, deadpan-flat protagonist as her own straight man. Full arc, locks, register in [docs/strands/SRZR.md](strands/SRZR.md). *Acceptance: 15 beats Opus-polished; standalone review ≥82%; Signal/Noise locks hold; exported.* *(verified by CLI `--review-strand --slug steppin-razor-019ef7be`; 86.6/100, N=20; exported Steppin Razor V4.pdf 2026-06-25)*
+- **SS-US-H7 ✅** As the author, *Steppin Razor* (SRZR, `steppin-razor-019ef7be`, 15 beats) is written to completion: Sasha Võ is dragged from the quiet edge (Joliet) to the densest crowd on the continent by a 5D intelligence on a camel, discovers the AI cabal is drilling live wells under the towers not the frontier, survives four Axiom operatives with Signal and Noise, and walks onto the Loop platform still angry, still here, without putting her back to the door. Psychedelic GLMZ, *Fear and Loathing* propulsion, deadpan-flat protagonist as her own straight man. Full arc, locks, register in [docs/nodes/SRZR.md](nodes/SRZR.md). *Acceptance: 15 beats Opus-polished; standalone review ≥82%; Signal/Noise locks hold; exported.* *(verified by CLI `--review-strand --slug steppin-razor-019ef7be`; 86.6/100, N=20; exported Steppin Razor V4.pdf 2026-06-25)*
   - **H7a ✅** SRZR strand bible written; SS-A20/A21 amendments locked; entities seeded (The Man on the Camel `019ef8055bc8`, The Hereafter `019ef8052de9`, The Joliet Schism `019ef805444e`). *(2026-06-23)*
   - **H7b ✅** 15-beat spine seeded in DB (cold open ×5 + journey ×5 + core ×3 + resolution ×2). *(2026-06-25)*
   - **H7c ✅** All 15 beats written at Opus quality (HIGH-tier, LockTier=true). Signal right / Noise left cross-draw correct throughout. *(2026-06-25)*
@@ -559,7 +559,7 @@ updated: 2026-06-25
 
 - **SS-US-M5 ⬜** As an author, the ledger sanity check passes: Rhea (TVYT) has
   Want="keep facts correct / not be managed" and Need="stop calling being-managed competence",
-  matching [TVYT.md §71-73](strands/TVYT.md). *(acceptance: `--examine-emotion --slug tvyt
+  matching [TVYT.md §71-73](nodes/TVYT.md). *(acceptance: `--examine-emotion --slug tvyt
   --effort deep --json` returns Rhea ledger with `Inferred=false`.)*
 
 - **SS-US-M6 ⬜** As an author, a strand with an open blocking emotional dimension cannot be
@@ -620,3 +620,4 @@ updated: 2026-06-25
   total. `AutonomousStory` retired as an artifact; residual: excise the `AutonomousStory` class
   from `StoryDirectorService`/UI internals."* Captured as SS-US-A4 (✅, format) with the class-excise
   residual noted here.
+
