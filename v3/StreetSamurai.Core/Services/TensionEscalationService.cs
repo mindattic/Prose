@@ -3,7 +3,7 @@ using System.Collections.Concurrent;
 namespace StreetSamurai.Core.Services;
 
 /// <summary>
-/// Tracks beat-mode history per strand and warns the prose pipeline when consecutive
+/// Tracks beat-mode history per node and warns the prose pipeline when consecutive
 /// non-escalating beats have been written. Prevents tension stagnation without forcing
 /// every beat to be a climax — only fires when the window shows genuine drift.
 ///
@@ -29,11 +29,11 @@ public class TensionEscalationService
     /// Record the mode of a completed beat. Called fire-and-forget from ProseWriterRouter
     /// after every successful write. Thread-safe.
     /// </summary>
-    public void RecordBeat(Guid strandId, BeatMode mode)
+    public void RecordBeat(Guid nodeId, BeatMode mode)
     {
-        if (strandId == Guid.Empty) return;
+        if (nodeId == Guid.Empty) return;
 
-        var window = recentModes.GetOrAdd(strandId, _ => new LinkedList<BeatMode>());
+        var window = recentModes.GetOrAdd(nodeId, _ => new LinkedList<BeatMode>());
         lock (window)
         {
             window.AddLast(mode);
@@ -43,16 +43,16 @@ public class TensionEscalationService
     }
 
     /// <summary>
-    /// Return a non-empty guidance string when the strand's recent beat history shows tension
+    /// Return a non-empty guidance string when the node's recent beat history shows tension
     /// stagnation. Empty string = no guidance needed (no injection into the prompt).
     /// </summary>
-    /// <param name="strandId">Strand being written.</param>
+    /// <param name="nodeId">Node being written.</param>
     /// <param name="incomingMode">Mode of the beat about to be written (don't warn if already escalating).</param>
-    public string BuildGuidanceBlock(Guid strandId, BeatMode incomingMode)
+    public string BuildGuidanceBlock(Guid nodeId, BeatMode incomingMode)
     {
-        if (strandId == Guid.Empty) return "";
+        if (nodeId == Guid.Empty) return "";
         if (EscalatingModes.Contains(incomingMode)) return "";
-        if (!recentModes.TryGetValue(strandId, out var window)) return "";
+        if (!recentModes.TryGetValue(nodeId, out var window)) return "";
 
         BeatMode[] recent;
         lock (window) { recent = [.. window]; }
@@ -72,13 +72,13 @@ public class TensionEscalationService
             """;
     }
 
-    /// <summary>Returns the recent mode window for a strand (used by tests and the workflow monitor).</summary>
-    public IReadOnlyList<BeatMode> GetRecentModes(Guid strandId)
+    /// <summary>Returns the recent mode window for a node (used by tests and the workflow monitor).</summary>
+    public IReadOnlyList<BeatMode> GetRecentModes(Guid nodeId)
     {
-        if (!recentModes.TryGetValue(strandId, out var window)) return Array.Empty<BeatMode>();
+        if (!recentModes.TryGetValue(nodeId, out var window)) return Array.Empty<BeatMode>();
         lock (window) { return [.. window]; }
     }
 
-    /// <summary>Clear the history for a strand (call when beginning a new writing session on a strand).</summary>
-    public void Reset(Guid strandId) => recentModes.TryRemove(strandId, out _);
+    /// <summary>Clear the history for a node (call when beginning a new writing session on a node).</summary>
+    public void Reset(Guid nodeId) => recentModes.TryRemove(nodeId, out _);
 }

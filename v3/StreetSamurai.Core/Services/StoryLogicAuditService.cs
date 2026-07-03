@@ -6,7 +6,7 @@ using StreetSamurai.Core.Interfaces;
 namespace StreetSamurai.Core.Services;
 
 /// <summary>
-/// Reads a strand's beats and produces:
+/// Reads a node's beats and produces:
 ///   1. A beat-by-beat narrative outline (act-grouped, one sentence per beat)
 ///   2. An adversarial logic audit that flags plot holes, canon violations,
 ///      impossible actions, causality breaks, prop errors, and contradictions.
@@ -22,36 +22,36 @@ public class StoryLogicAuditService(
     // ── Public API ───────────────────────────────────────────────────────────
 
     public async Task<StoryLogicAuditResult> AuditAsync(
-        Guid strandId,
+        Guid nodeId,
         bool includeLogicCheck = true,
         CancellationToken ct = default)
     {
         await using var db = await dbFactory.CreateDbContextAsync(ct);
 
-        var strand = await db.Strands.AsNoTracking()
-            .FirstOrDefaultAsync(s => s.Id == strandId, ct)
-            ?? throw new InvalidOperationException($"Strand {strandId} not found.");
+        var node = await db.Nodes.AsNoTracking()
+            .FirstOrDefaultAsync(s => s.Id == nodeId, ct)
+            ?? throw new InvalidOperationException($"Node {nodeId} not found.");
 
         // Respect the same book/chapter hierarchy StoryAuditService uses.
-        var childChapters = await db.Strands.AsNoTracking()
-            .Where(s => s.ParentStrandId == strandId && s.Kind == "chapter" && !s.IsWIP)
-            .Include(s => s.StrandBeats).ThenInclude(sb => sb.Beat)
+        var childChapters = await db.Nodes.AsNoTracking()
+            .Where(s => s.ParentNodeId == nodeId && s.Kind == "chapter" && !s.IsWIP)
+            .Include(s => s.NodeBeats).ThenInclude(sb => sb.Beat)
             .OrderBy(s => s.SortKey)
             .ToListAsync(ct);
 
-        var strandWithBeats = await db.Strands.AsNoTracking()
-            .Include(s => s.StrandBeats).ThenInclude(sb => sb.Beat)
-            .FirstOrDefaultAsync(s => s.Id == strandId, ct);
+        var nodeWithBeats = await db.Nodes.AsNoTracking()
+            .Include(s => s.NodeBeats).ThenInclude(sb => sb.Beat)
+            .FirstOrDefaultAsync(s => s.Id == nodeId, ct);
 
         var indexedBeats = childChapters.Count > 0
             ? childChapters
-                .SelectMany(ch => ch.StrandBeats
+                .SelectMany(ch => ch.NodeBeats
                     .Where(sb => sb.IsEnabled)
                     .OrderBy(sb => sb.SortKey)
                     .Select(sb => sb.Beat!))
                 .Where(b => !string.IsNullOrWhiteSpace(b.Text))
                 .ToList()
-            : (strandWithBeats?.StrandBeats
+            : (nodeWithBeats?.NodeBeats
                 .Where(sb => sb.IsEnabled)
                 .OrderBy(sb => sb.SortKey)
                 .Select(sb => sb.Beat!)
@@ -61,20 +61,20 @@ public class StoryLogicAuditService(
         if (indexedBeats.Count == 0)
             return new StoryLogicAuditResult
             {
-                StrandId = strandId, Title = strand.Title, BeatCount = 0,
+                NodeId = nodeId, Title = node.Title, BeatCount = 0,
                 Outline = "(No enabled beats found.)", Findings = []
             };
 
         var corpus = BuildCorpus(indexedBeats);
-        var outline = await GenerateOutlineAsync(strand.Title, corpus, ct);
+        var outline = await GenerateOutlineAsync(node.Title, corpus, ct);
         var findings = includeLogicCheck
-            ? await RunLogicAuditAsync(strand.Title, corpus, ct)
+            ? await RunLogicAuditAsync(node.Title, corpus, ct)
             : [];
 
         return new StoryLogicAuditResult
         {
-            StrandId = strandId,
-            Title    = strand.Title,
+            NodeId = nodeId,
+            Title    = node.Title,
             BeatCount = indexedBeats.Count,
             Outline  = outline,
             Findings = findings
@@ -178,7 +178,7 @@ public class StoryLogicAuditService(
 
 public class StoryLogicAuditResult
 {
-    public Guid   StrandId  { get; init; }
+    public Guid   NodeId  { get; init; }
     public string Title     { get; init; } = "";
     public int    BeatCount { get; init; }
     public string Outline   { get; init; } = "";

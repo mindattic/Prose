@@ -16,7 +16,7 @@ namespace StreetSamurai.Core.Services;
 /// <see cref="AudioReconciliationBackgroundService"/> which calls this on a
 /// timer.</para>
 ///
-/// <para>Drops beats whose paths aren't canonical strand-schema shape
+/// <para>Drops beats whose paths aren't canonical node-schema shape
 /// (<c>{slug}/audio/{beatId:N}.{ext}</c>) — legacy episode-era paths stay
 /// at their original location and aren't candidates for blob sync.</para>
 /// </summary>
@@ -137,7 +137,7 @@ public class AudioReconciliationService
         return report;
     }
 
-    /// <summary>Copy bytes from one store to another. Combined strand audio
+    /// <summary>Copy bytes from one store to another. Combined node audio
     /// (100+ MB possible) streams source → destination directly via the
     /// stream-based write — no intermediate byte[] on the LOH. Per-beat
     /// audio (~2 MB) takes the simple in-memory path. Returns false on any
@@ -167,7 +167,7 @@ public class AudioReconciliationService
     }
 
     /// <summary>True when both stores hold byte-identical content for the path.
-    /// Streams both sides in parallel chunks (bounded memory — combined strand
+    /// Streams both sides in parallel chunks (bounded memory — combined node
     /// audio can be 100+ MB) and bails on the first difference. Used to suppress
     /// copies between files that differ only by mtime.</summary>
     private static async Task<bool> ContentsMatchAsync(IAudioStore a, IAudioStore b, string rel, CancellationToken ct)

@@ -7,7 +7,7 @@ namespace StreetSamurai.Blazor.Cli;
 
 /// <summary>
 /// <c>ss --publish-docx (--id &lt;guid|prefix&gt; | --slug &lt;slug&gt;) [--author "Name"] [--export-dir &lt;path&gt;]</c>
-/// — render a strand to a KDP-ready EPUB + Word .docx + PDF in the configured publish
+/// — render a node to a KDP-ready EPUB + Word .docx + PDF in the configured publish
 /// directory (Desktop fallback). <c>--export-dir</c> overrides and persists
 /// <c>PublishExportDirectory</c> for all three formats.
 /// </summary>
@@ -45,21 +45,21 @@ public static class PublishDocxCli
             Console.WriteLine($"[publish-docx] PublishExportDirectory set to: {exportDir}");
         }
 
-        Guid strandId; string strandTitle;
+        Guid nodeId; string nodeTitle;
         await using (var db = await dbFactory.CreateDbContextAsync())
         {
-            var q = db.Strands.AsNoTracking();
-            Strand? strand;
-            if (!string.IsNullOrWhiteSpace(slug)) strand = await q.FirstOrDefaultAsync(s => s.Slug == slug);
-            else if (Guid.TryParse(id, out var g)) strand = await q.FirstOrDefaultAsync(s => s.Id == g);
-            else strand = await q.Where(s => s.Id.ToString().StartsWith(id!.ToLower())).Take(2).ToListAsync() switch
+            var q = db.Nodes.AsNoTracking();
+            Node? node;
+            if (!string.IsNullOrWhiteSpace(slug)) node = await q.FirstOrDefaultAsync(s => s.Slug == slug);
+            else if (Guid.TryParse(id, out var g)) node = await q.FirstOrDefaultAsync(s => s.Id == g);
+            else node = await q.Where(s => s.Id.ToString().StartsWith(id!.ToLower())).Take(2).ToListAsync() switch
             { { Count: 1 } m => m[0], _ => null };
-            if (strand == null) { Console.Error.WriteLine("[publish-docx] Strand not found."); return 1; }
-            strandId = strand.Id; strandTitle = strand.Title;
+            if (node == null) { Console.Error.WriteLine("[publish-docx] Node not found."); return 1; }
+            nodeId = node.Id; nodeTitle = node.Title;
         }
 
         // ── pre-publish mojibake guard ──────────────────────────────────────────
-        var detected = await mojiChecker.DetectStrandAsync(strandId);
+        var detected = await mojiChecker.DetectNodeAsync(nodeId);
         if (detected.BeatsAffected > 0)
         {
             Console.Error.WriteLine($"[publish-docx] ❌ Mojibake detected in {detected.BeatsAffected} beat(s) — run 'ss --repair --fix-mojibake' to correct before publishing.");
@@ -68,17 +68,17 @@ public static class PublishDocxCli
             return 1;
         }
 
-        Console.WriteLine($"[publish-docx] Rendering \"{strandTitle}\" to .docx + .epub + .pdf + .txt…");
+        Console.WriteLine($"[publish-docx] Rendering \"{nodeTitle}\" to .docx + .epub + .pdf + .txt…");
         try
         {
-            // docx first — it increments strand.Version; epub + pdf + txt then read the same version.
-            var docxPath = await docx.ExportStrandAsync(strandId, author);
+            // docx first — it increments node.Version; epub + pdf + txt then read the same version.
+            var docxPath = await docx.ExportNodeAsync(nodeId, author);
             Console.WriteLine($"[publish-docx] Wrote docx: {docxPath}");
-            var epubPath = await manuscript.ExportEpubAsync(strandId, author);
+            var epubPath = await manuscript.ExportEpubAsync(nodeId, author);
             Console.WriteLine($"[publish-docx] Wrote epub: {epubPath}");
-            var pdfPath = await manuscript.ExportPdfAsync(strandId, author);
+            var pdfPath = await manuscript.ExportPdfAsync(nodeId, author);
             Console.WriteLine($"[publish-docx] Wrote pdf:  {pdfPath}");
-            var txtPath = await manuscript.ExportAudioTxtAsync(strandId, author);
+            var txtPath = await manuscript.ExportAudioTxtAsync(nodeId, author);
             Console.WriteLine($"[publish-docx] Wrote txt:  {txtPath}");
 
             // ── post-publish mojibake validation ────────────────────────────────
@@ -91,8 +91,8 @@ public static class PublishDocxCli
             // ── keywords.txt ─────────────────────────────────────────────────────
             await using (var db2 = await dbFactory.CreateDbContextAsync())
             {
-                var kws = await db2.StrandKeywords
-                    .Where(k => k.StrandId == strandId)
+                var kws = await db2.NodeKeywords
+                    .Where(k => k.NodeId == nodeId)
                     .OrderBy(k => k.SortOrder)
                     .Select(k => k.Keyword)
                     .ToListAsync();

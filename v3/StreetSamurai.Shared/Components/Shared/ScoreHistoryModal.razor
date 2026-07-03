@@ -1,5 +1,5 @@
 @namespace StreetSamurai.Shared.Components.Shared
-@inject StrandReviewService ReviewSvc
+@inject NodeReviewService ReviewSvc
 @inject IJSRuntime JS
 
 @if (Visible)
@@ -10,7 +10,7 @@
             <div class="modal-content" style="background:#0f0f1a;border:1px solid #2a2a3e;">
                 <div class="modal-header" style="border-bottom:1px solid #2a2a3e;">
                     <div>
-                        <h5 class="modal-title text-light mb-0">@StrandTitle</h5>
+                        <h5 class="modal-title text-light mb-0">@NodeTitle</h5>
                         <span class="text-muted small">Score history — each point is one review run</span>
                     </div>
                     <button class="btn btn-sm btn-outline-secondary ms-3" @onclick="HandleClose" aria-label="Close">
@@ -54,27 +54,27 @@
 @code {
     [Parameter] public bool          Visible      { get; set; }
     [Parameter] public EventCallback OnClose      { get; set; }
-    [Parameter] public Guid          StrandId     { get; set; }
-    [Parameter] public string        StrandTitle  { get; set; } = "";
+    [Parameter] public Guid          NodeId     { get; set; }
+    [Parameter] public string        NodeTitle  { get; set; } = "";
 
-    private List<StrandReviewService.ScoreHistoryPoint> _points = [];
+    private List<NodeReviewService.ScoreHistoryPoint> _points = [];
     private bool _loading;
     private bool _renderPending;
     private Guid _loadedFor;
 
-    private string CanvasId => $"score-chart-{StrandId:N}";
+    private string CanvasId => $"score-chart-{NodeId:N}";
 
     protected override async Task OnParametersSetAsync()
     {
-        if (Visible && StrandId != Guid.Empty && StrandId != _loadedFor)
+        if (Visible && NodeId != Guid.Empty && NodeId != _loadedFor)
         {
             _loading = true;
             _renderPending = false;
-            _loadedFor = StrandId;
+            _loadedFor = NodeId;
             _points = [];
             StateHasChanged();
 
-            _points = await ReviewSvc.GetScoreHistoryAsync(StrandId);
+            _points = await ReviewSvc.GetScoreHistoryAsync(NodeId);
             _loading = false;
             _renderPending = _points.Count > 0;
         }

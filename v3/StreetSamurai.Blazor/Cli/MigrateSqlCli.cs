@@ -31,64 +31,64 @@ public static class MigrateSqlCli
         var charDropLegacy  = args.Contains("--drop-legacy-json");
         var charNoBackfill  = args.Contains("--no-backfill");
 
-        // Beat soft-delete: add IsEnabled to StrandBeats (and its history table).
-        var strandBeatSoftDelete = args.Contains("--strand-beat-soft-delete");
+        // Beat soft-delete: add IsEnabled to NodeBeats (and its history table).
+        var nodeBeatSoftDelete = args.Contains("--node-beat-soft-delete");
 
-        // Strand + Beat version counter: add Version INT to Beats, Strands (and history tables).
-        var strandBeatVersion = args.Contains("--strand-beat-version");
+        // Node + Beat version counter: add Version INT to Beats, Nodes (and history tables).
+        var nodeBeatVersion = args.Contains("--node-beat-version");
 
         // Entity grammar notes: add GrammarNote NVARCHAR(MAX) to Entities (and history table).
         var entityGrammarNote = args.Contains("--entity-grammar-note");
 
-        // Strand short reference code: add StrandCode NVARCHAR(20) to Strands (+ history) with a
+        // Node short reference code: add NodeCode NVARCHAR(20) to Nodes (+ history) with a
         // unique filtered index (enforced for non-null values only).
-        var strandCode = args.Contains("--strand-code");
+        var nodeCode = args.Contains("--node-code");
 
         // Entity quality reviews: create EntityReviews + EntityReviewSummaries tables.
         var entityReviews = args.Contains("--entity-reviews");
 
-        // Strand Bible: add StrandBible + StrandBibleGeneratedAt to Strands (+ history table).
-        var strandBible = args.Contains("--strand-bible");
+        // Node Bible: add NodeBible + NodeBibleGeneratedAt to Nodes (+ history table).
+        var nodeBible = args.Contains("--node-bible");
 
         // MarkdownFiles: create the MarkdownFiles table so .md files (project rules,
         // Codex docs, Claude Code memory) can be backed up + restored by timestamp.
         var markdownFiles = args.Contains("--markdown-files");
 
-        // Strand spine: add StrandUserStories columns to Strands + create
-        // StrandAmendments and StrandSpineVersions tables.
-        var strandSpine = args.Contains("--strand-spine");
+        // Node spine: add NodeUserStories columns to Nodes + create
+        // NodeAmendments and NodeSpineVersions tables.
+        var nodeSpine = args.Contains("--node-spine");
 
         // Emotional examination (SS-A15): 4 new tables + Beat.EmotionalScore column.
         var emotionalExamination = args.Contains("--emotional-examination");
 
-        // Strand draft flag: add IsDraft BIT to Strands (+ history). Draft strands
+        // Node draft flag: add IsDraft BIT to Nodes (+ history). Draft nodes
         // (and their whole subtree) are ignored by the tools.
-        var strandDraftFlag = args.Contains("--strand-draft-flag");
+        var nodeDraftFlag = args.Contains("--node-draft-flag");
 
         // Review contradictions: add Contradictions NVARCHAR(MAX) to EntityReviews,
-        // StrandReviews, and Gripes+Contradictions to StrandReviewBeatScores.
+        // NodeReviews, and Gripes+Contradictions to NodeReviewBeatScores.
         var reviewContradictions = args.Contains("--review-contradictions");
 
         // Distributed work queue: create DistributedWorkQueue table for multi-machine
-        // entity-review / strand-review / beat-review / beat-write.
+        // entity-review / node-review / beat-review / beat-write.
         var distributedQueue = args.Contains("--distributed-queue");
 
-        if (!schema && !charRelational && !charDropLegacy && !strandBeatSoftDelete && !strandBeatVersion && !entityGrammarNote && !strandCode && !entityReviews && !strandBible && !markdownFiles && !strandSpine && !emotionalExamination && !strandDraftFlag && !reviewContradictions && !distributedQueue)
+        if (!schema && !charRelational && !charDropLegacy && !nodeBeatSoftDelete && !nodeBeatVersion && !entityGrammarNote && !nodeCode && !entityReviews && !nodeBible && !markdownFiles && !nodeSpine && !emotionalExamination && !nodeDraftFlag && !reviewContradictions && !distributedQueue)
         {
             Console.WriteLine("Usage:");
             Console.WriteLine("  ss --migrate-sql --schema                    apply EF migrations + enable SYSTEM_VERSIONING");
-            Console.WriteLine("  ss --migrate-sql --strand-beat-soft-delete   add IsEnabled column to StrandBeats/StrandBeats_History");
-            Console.WriteLine("  ss --migrate-sql --strand-beat-version       add Version INT counter to Beats+Strands (and history tables)");
+            Console.WriteLine("  ss --migrate-sql --node-beat-soft-delete   add IsEnabled column to NodeBeats/NodeBeats_History");
+            Console.WriteLine("  ss --migrate-sql --node-beat-version       add Version INT counter to Beats+Nodes (and history tables)");
             Console.WriteLine("  ss --migrate-sql --entity-grammar-note       add GrammarNote column to Entities (and history table)");
-            Console.WriteLine("  ss --migrate-sql --strand-code               add StrandCode NVARCHAR(20) to Strands (unique per non-null value)");
+            Console.WriteLine("  ss --migrate-sql --node-code               add NodeCode NVARCHAR(20) to Nodes (unique per non-null value)");
             Console.WriteLine("  ss --migrate-sql --entity-reviews            create EntityReviews + EntityReviewSummaries tables");
-            Console.WriteLine("  ss --migrate-sql --strand-bible              add StrandBible + StrandBibleGeneratedAt to Strands (+ history)");
+            Console.WriteLine("  ss --migrate-sql --node-bible              add NodeBible + NodeBibleGeneratedAt to Nodes (+ history)");
             Console.WriteLine("  ss --migrate-sql --markdown-files            create MarkdownFiles table (project-rules, Codex, memory backup)");
-            Console.WriteLine("  ss --migrate-sql --strand-spine              add StrandUserStories to Strands; create StrandAmendments + StrandSpineVersions");
+            Console.WriteLine("  ss --migrate-sql --node-spine              add NodeUserStories to Nodes; create NodeAmendments + NodeSpineVersions");
             Console.WriteLine("  ss --migrate-sql --emotional-examination     create EmotionalExaminations/DimensionResults/BeatScores/CharacterEmotionalLedgers + Beat.EmotionalScore (SS-A15)");
-            Console.WriteLine("  ss --migrate-sql --strand-draft-flag         add IsDraft BIT to Strands (+ history); draft subtrees are ignored by the tools");
-            Console.WriteLine("  ss --migrate-sql --review-contradictions     add Contradictions to EntityReviews + StrandReviews; Gripes+Contradictions to StrandReviewBeatScores");
-            Console.WriteLine("  ss --migrate-sql --distributed-queue         create DistributedWorkQueue table (multi-machine entity/strand/beat review + prose writing)");
+            Console.WriteLine("  ss --migrate-sql --node-draft-flag         add IsDraft BIT to Nodes (+ history); draft subtrees are ignored by the tools");
+            Console.WriteLine("  ss --migrate-sql --review-contradictions     add Contradictions to EntityReviews + NodeReviews; Gripes+Contradictions to NodeReviewBeatScores");
+            Console.WriteLine("  ss --migrate-sql --distributed-queue         create DistributedWorkQueue table (multi-machine entity/node/beat review + prose writing)");
             Console.WriteLine();
             Console.WriteLine("  ss --migrate-sql --character-relational    add relational columns + bridges to Characters,");
             Console.WriteLine("                                             then backfill from Records.Json (--no-backfill skips Phase C)");
@@ -194,31 +194,31 @@ public static class MigrateSqlCli
             failures += rD.Errors.Count > 0 ? 1 : 0;
         }
 
-        if (strandBeatSoftDelete)
+        if (nodeBeatSoftDelete)
         {
             using var scope = sp.CreateScope();
             var db = scope.ServiceProvider.GetRequiredService<StreetSamuraiDbContext>();
 
             Console.WriteLine();
-            Console.WriteLine("[strand-beat-soft-delete]");
+            Console.WriteLine("[node-beat-soft-delete]");
             try
             {
-                // StrandBeats and StrandBeats_History are temporal tables.
+                // NodeBeats and NodeBeats_History are temporal tables.
                 // To add a column we must briefly disable system versioning,
                 // alter both tables, then re-enable it.
                 await db.Database.ExecuteSqlRawAsync("""
                     IF NOT EXISTS (SELECT 1 FROM sys.columns
-                                   WHERE object_id = OBJECT_ID('StrandBeats') AND name = 'IsEnabled')
+                                   WHERE object_id = OBJECT_ID('NodeBeats') AND name = 'IsEnabled')
                     BEGIN
-                        ALTER TABLE [dbo].[StrandBeats] SET (SYSTEM_VERSIONING = OFF);
-                        ALTER TABLE [dbo].[StrandBeats]         ADD [IsEnabled] bit NOT NULL DEFAULT 1;
-                        ALTER TABLE [dbo].[StrandBeats_History] ADD [IsEnabled] bit NOT NULL DEFAULT 1;
-                        ALTER TABLE [dbo].[StrandBeats]
-                            SET (SYSTEM_VERSIONING = ON (HISTORY_TABLE = [dbo].[StrandBeats_History],
+                        ALTER TABLE [dbo].[NodeBeats] SET (SYSTEM_VERSIONING = OFF);
+                        ALTER TABLE [dbo].[NodeBeats]         ADD [IsEnabled] bit NOT NULL DEFAULT 1;
+                        ALTER TABLE [dbo].[NodeBeats_History] ADD [IsEnabled] bit NOT NULL DEFAULT 1;
+                        ALTER TABLE [dbo].[NodeBeats]
+                            SET (SYSTEM_VERSIONING = ON (HISTORY_TABLE = [dbo].[NodeBeats_History],
                                                          DATA_CONSISTENCY_CHECK = OFF));
                     END;
                     """);
-                Console.WriteLine("  ✔ IsEnabled column added to StrandBeats (+ history table).");
+                Console.WriteLine("  ✔ IsEnabled column added to NodeBeats (+ history table).");
             }
             catch (Exception ex)
             {
@@ -227,14 +227,14 @@ public static class MigrateSqlCli
             }
         }
 
-        if (strandBeatVersion)
+        if (nodeBeatVersion)
         {
             using var scope = sp.CreateScope();
             var db = scope.ServiceProvider.GetRequiredService<StreetSamuraiDbContext>();
 
             Console.WriteLine();
-            Console.WriteLine("[strand-beat-version]");
-            foreach (var (table, hist) in new[] { ("Beats", "Beats_History"), ("Strands", "Strands_History") })
+            Console.WriteLine("[node-beat-version]");
+            foreach (var (table, hist) in new[] { ("Beats", "Beats_History"), ("Nodes", "Nodes_History") })
             {
                 try
                 {
@@ -292,46 +292,46 @@ public static class MigrateSqlCli
             }
         }
 
-        if (strandCode)
+        if (nodeCode)
         {
             using var scope = sp.CreateScope();
             var db = scope.ServiceProvider.GetRequiredService<StreetSamuraiDbContext>();
 
             Console.WriteLine();
-            Console.WriteLine("[strand-code]");
+            Console.WriteLine("[node-code]");
             try
             {
                 // Add the column to the temporal table + its history shadow.
                 await db.Database.ExecuteSqlRawAsync("""
                     IF NOT EXISTS (SELECT 1 FROM sys.columns
-                                   WHERE object_id = OBJECT_ID('Strands') AND name = 'StrandCode')
+                                   WHERE object_id = OBJECT_ID('Nodes') AND name = 'NodeCode')
                     BEGIN
-                        ALTER TABLE [dbo].[Strands] SET (SYSTEM_VERSIONING = OFF);
-                        ALTER TABLE [dbo].[Strands]         ADD [StrandCode] NVARCHAR(20) NULL;
-                        ALTER TABLE [dbo].[Strands_History] ADD [StrandCode] NVARCHAR(20) NULL;
-                        ALTER TABLE [dbo].[Strands]
-                            SET (SYSTEM_VERSIONING = ON (HISTORY_TABLE = [dbo].[Strands_History],
+                        ALTER TABLE [dbo].[Nodes] SET (SYSTEM_VERSIONING = OFF);
+                        ALTER TABLE [dbo].[Nodes]         ADD [NodeCode] NVARCHAR(20) NULL;
+                        ALTER TABLE [dbo].[Nodes_History] ADD [NodeCode] NVARCHAR(20) NULL;
+                        ALTER TABLE [dbo].[Nodes]
+                            SET (SYSTEM_VERSIONING = ON (HISTORY_TABLE = [dbo].[Nodes_History],
                                                          DATA_CONSISTENCY_CHECK = OFF));
                     END;
                     """);
-                Console.WriteLine("  ✔ StrandCode column added to Strands (+ Strands_History).");
+                Console.WriteLine("  ✔ NodeCode column added to Nodes (+ Nodes_History).");
 
                 // Unique filtered index: enforces no two non-null codes can match.
                 // Filtered indexes are not temporal-table-gated, so no SYSTEM_VERSIONING dance needed.
                 await db.Database.ExecuteSqlRawAsync("""
                     IF NOT EXISTS (SELECT 1 FROM sys.indexes
-                                   WHERE object_id = OBJECT_ID('Strands') AND name = 'IX_Strands_StrandCode')
+                                   WHERE object_id = OBJECT_ID('Nodes') AND name = 'IX_Nodes_NodeCode')
                     BEGIN
-                        CREATE UNIQUE INDEX [IX_Strands_StrandCode]
-                            ON [dbo].[Strands] ([StrandCode])
-                            WHERE [StrandCode] IS NOT NULL;
+                        CREATE UNIQUE INDEX [IX_Nodes_NodeCode]
+                            ON [dbo].[Nodes] ([NodeCode])
+                            WHERE [NodeCode] IS NOT NULL;
                     END;
                     """);
-                Console.WriteLine("  ✔ Unique filtered index IX_Strands_StrandCode created.");
+                Console.WriteLine("  ✔ Unique filtered index IX_Nodes_NodeCode created.");
             }
             catch (Exception ex)
             {
-                Console.WriteLine($"  ✘ StrandCode migration failed: {ex.Message}");
+                Console.WriteLine($"  ✘ NodeCode migration failed: {ex.Message}");
                 failures++;
             }
         }
@@ -401,116 +401,116 @@ public static class MigrateSqlCli
             }
         }
 
-        if (strandBible)
+        if (nodeBible)
         {
             using var sbScope = sp.CreateScope();
             var sbDb = sbScope.ServiceProvider.GetRequiredService<StreetSamuraiDbContext>();
             Console.WriteLine();
-            Console.WriteLine("[strand-bible]");
+            Console.WriteLine("[node-bible]");
             try
             {
                 await sbDb.Database.ExecuteSqlRawAsync("""
                     IF NOT EXISTS (SELECT 1 FROM sys.columns
-                                   WHERE object_id = OBJECT_ID('Strands') AND name = 'StrandBible')
+                                   WHERE object_id = OBJECT_ID('Nodes') AND name = 'NodeBible')
                     BEGIN
-                        ALTER TABLE [dbo].[Strands] SET (SYSTEM_VERSIONING = OFF);
-                        ALTER TABLE [dbo].[Strands]         ADD [StrandBible]             NVARCHAR(MAX) NULL;
-                        ALTER TABLE [dbo].[Strands_History] ADD [StrandBible]             NVARCHAR(MAX) NULL;
-                        ALTER TABLE [dbo].[Strands]         ADD [StrandBibleGeneratedAt]  DATETIME2     NULL;
-                        ALTER TABLE [dbo].[Strands_History] ADD [StrandBibleGeneratedAt]  DATETIME2     NULL;
-                        ALTER TABLE [dbo].[Strands]
-                            SET (SYSTEM_VERSIONING = ON (HISTORY_TABLE = [dbo].[Strands_History],
+                        ALTER TABLE [dbo].[Nodes] SET (SYSTEM_VERSIONING = OFF);
+                        ALTER TABLE [dbo].[Nodes]         ADD [NodeBible]             NVARCHAR(MAX) NULL;
+                        ALTER TABLE [dbo].[Nodes_History] ADD [NodeBible]             NVARCHAR(MAX) NULL;
+                        ALTER TABLE [dbo].[Nodes]         ADD [NodeBibleGeneratedAt]  DATETIME2     NULL;
+                        ALTER TABLE [dbo].[Nodes_History] ADD [NodeBibleGeneratedAt]  DATETIME2     NULL;
+                        ALTER TABLE [dbo].[Nodes]
+                            SET (SYSTEM_VERSIONING = ON (HISTORY_TABLE = [dbo].[Nodes_History],
                                                          DATA_CONSISTENCY_CHECK = OFF));
                     END;
                     """);
-                Console.WriteLine("  ✔ StrandBible + StrandBibleGeneratedAt columns added to Strands (+ Strands_History).");
+                Console.WriteLine("  ✔ NodeBible + NodeBibleGeneratedAt columns added to Nodes (+ Nodes_History).");
             }
             catch (Exception ex)
             {
-                Console.WriteLine($"  ✘ strand-bible migration failed: {ex.Message}");
+                Console.WriteLine($"  ✘ node-bible migration failed: {ex.Message}");
                 failures++;
             }
         }
 
-        if (strandSpine)
+        if (nodeSpine)
         {
             using var scope = sp.CreateScope();
             var db = scope.ServiceProvider.GetRequiredService<StreetSamuraiDbContext>();
 
             Console.WriteLine();
-            Console.WriteLine("[strand-spine]");
+            Console.WriteLine("[node-spine]");
             try
             {
-                // Phase A: add StrandUserStories + StrandUserStoriesUpdatedAt to Strands
+                // Phase A: add NodeUserStories + NodeUserStoriesUpdatedAt to Nodes
                 // (temporal table — must turn versioning off, alter both tables, then re-enable).
                 await db.Database.ExecuteSqlRawAsync("""
                     IF NOT EXISTS (SELECT 1 FROM sys.columns
-                                   WHERE object_id = OBJECT_ID('Strands') AND name = 'StrandUserStories')
+                                   WHERE object_id = OBJECT_ID('Nodes') AND name = 'NodeUserStories')
                     BEGIN
-                        ALTER TABLE [dbo].[Strands] SET (SYSTEM_VERSIONING = OFF);
-                        ALTER TABLE [dbo].[Strands]         ADD [StrandUserStories]           NVARCHAR(MAX)  NULL;
-                        ALTER TABLE [dbo].[Strands_History] ADD [StrandUserStories]           NVARCHAR(MAX)  NULL;
-                        ALTER TABLE [dbo].[Strands]         ADD [StrandUserStoriesUpdatedAt]  DATETIME2      NULL;
-                        ALTER TABLE [dbo].[Strands_History] ADD [StrandUserStoriesUpdatedAt]  DATETIME2      NULL;
-                        ALTER TABLE [dbo].[Strands]
-                            SET (SYSTEM_VERSIONING = ON (HISTORY_TABLE = [dbo].[Strands_History],
+                        ALTER TABLE [dbo].[Nodes] SET (SYSTEM_VERSIONING = OFF);
+                        ALTER TABLE [dbo].[Nodes]         ADD [NodeUserStories]           NVARCHAR(MAX)  NULL;
+                        ALTER TABLE [dbo].[Nodes_History] ADD [NodeUserStories]           NVARCHAR(MAX)  NULL;
+                        ALTER TABLE [dbo].[Nodes]         ADD [NodeUserStoriesUpdatedAt]  DATETIME2      NULL;
+                        ALTER TABLE [dbo].[Nodes_History] ADD [NodeUserStoriesUpdatedAt]  DATETIME2      NULL;
+                        ALTER TABLE [dbo].[Nodes]
+                            SET (SYSTEM_VERSIONING = ON (HISTORY_TABLE = [dbo].[Nodes_History],
                                                          DATA_CONSISTENCY_CHECK = OFF));
                     END;
                     """);
-                Console.WriteLine("  ✔ StrandUserStories columns added to Strands (+ Strands_History).");
+                Console.WriteLine("  ✔ NodeUserStories columns added to Nodes (+ Nodes_History).");
 
-                // Phase B: create StrandAmendments table.
+                // Phase B: create NodeAmendments table.
                 await db.Database.ExecuteSqlRawAsync("""
-                    IF NOT EXISTS (SELECT 1 FROM sys.objects WHERE object_id = OBJECT_ID(N'[dbo].[StrandAmendments]') AND type = N'U')
+                    IF NOT EXISTS (SELECT 1 FROM sys.objects WHERE object_id = OBJECT_ID(N'[dbo].[NodeAmendments]') AND type = N'U')
                     BEGIN
-                        CREATE TABLE [dbo].[StrandAmendments] (
+                        CREATE TABLE [dbo].[NodeAmendments] (
                             [Id]         UNIQUEIDENTIFIER NOT NULL DEFAULT NEWSEQUENTIALID(),
-                            [StrandId]   UNIQUEIDENTIFIER NOT NULL DEFAULT '00000000-0000-0000-0000-000000000000',
+                            [NodeId]   UNIQUEIDENTIFIER NOT NULL DEFAULT '00000000-0000-0000-0000-000000000000',
                             [SequenceNo] INT              NOT NULL DEFAULT 0,
                             [Code]       NVARCHAR(20)     NOT NULL DEFAULT '',
                             [Summary]    NVARCHAR(500)    NOT NULL DEFAULT '',
                             [Body]       NVARCHAR(MAX)    NOT NULL DEFAULT '',
                             [CreatedAt]  DATETIME2        NOT NULL DEFAULT SYSUTCDATETIME(),
                             [CreatedBy]  NVARCHAR(200)    NOT NULL DEFAULT '',
-                            CONSTRAINT [PK_StrandAmendments] PRIMARY KEY ([Id])
+                            CONSTRAINT [PK_NodeAmendments] PRIMARY KEY ([Id])
                         );
-                        CREATE        INDEX [IX_StrandAmendments_StrandId]            ON [dbo].[StrandAmendments] ([StrandId]);
-                        CREATE UNIQUE INDEX [IX_StrandAmendments_StrandId_SequenceNo] ON [dbo].[StrandAmendments] ([StrandId], [SequenceNo]);
+                        CREATE        INDEX [IX_NodeAmendments_NodeId]            ON [dbo].[NodeAmendments] ([NodeId]);
+                        CREATE UNIQUE INDEX [IX_NodeAmendments_NodeId_SequenceNo] ON [dbo].[NodeAmendments] ([NodeId], [SequenceNo]);
                     END;
                     """);
-                Console.WriteLine("  ✔ StrandAmendments table created (or already exists).");
+                Console.WriteLine("  ✔ NodeAmendments table created (or already exists).");
 
-                // Phase C: create StrandSpineVersions table (bridge).
+                // Phase C: create NodeSpineVersions table (bridge).
                 await db.Database.ExecuteSqlRawAsync("""
-                    IF NOT EXISTS (SELECT 1 FROM sys.objects WHERE object_id = OBJECT_ID(N'[dbo].[StrandSpineVersions]') AND type = N'U')
+                    IF NOT EXISTS (SELECT 1 FROM sys.objects WHERE object_id = OBJECT_ID(N'[dbo].[NodeSpineVersions]') AND type = N'U')
                     BEGIN
-                        CREATE TABLE [dbo].[StrandSpineVersions] (
+                        CREATE TABLE [dbo].[NodeSpineVersions] (
                             [Id]               UNIQUEIDENTIFIER NOT NULL DEFAULT NEWSEQUENTIALID(),
-                            [StrandId]         UNIQUEIDENTIFIER NOT NULL DEFAULT '00000000-0000-0000-0000-000000000000',
-                            [StrandVersion]    INT              NOT NULL DEFAULT 0,
+                            [NodeId]         UNIQUEIDENTIFIER NOT NULL DEFAULT '00000000-0000-0000-0000-000000000000',
+                            [NodeVersion]    INT              NOT NULL DEFAULT 0,
                             [BibleHash]        NVARCHAR(64)     NOT NULL DEFAULT '',
                             [UserStoriesHash]  NVARCHAR(64)     NOT NULL DEFAULT '',
                             [AmendmentCount]   INT              NOT NULL DEFAULT 0,
                             [PinnedAt]         DATETIME2        NOT NULL DEFAULT SYSUTCDATETIME(),
                             [PinnedBy]         NVARCHAR(100)    NOT NULL DEFAULT '',
                             [Notes]            NVARCHAR(1000)   NOT NULL DEFAULT '',
-                            CONSTRAINT [PK_StrandSpineVersions] PRIMARY KEY ([Id])
+                            CONSTRAINT [PK_NodeSpineVersions] PRIMARY KEY ([Id])
                         );
-                        CREATE        INDEX [IX_StrandSpineVersions_StrandId]              ON [dbo].[StrandSpineVersions] ([StrandId]);
-                        CREATE UNIQUE INDEX [IX_StrandSpineVersions_StrandId_StrandVersion] ON [dbo].[StrandSpineVersions] ([StrandId], [StrandVersion]);
+                        CREATE        INDEX [IX_NodeSpineVersions_NodeId]              ON [dbo].[NodeSpineVersions] ([NodeId]);
+                        CREATE UNIQUE INDEX [IX_NodeSpineVersions_NodeId_NodeVersion] ON [dbo].[NodeSpineVersions] ([NodeId], [NodeVersion]);
                     END;
                     """);
-                Console.WriteLine("  ✔ StrandSpineVersions table created (or already exists).");
+                Console.WriteLine("  ✔ NodeSpineVersions table created (or already exists).");
 
                 // Phase D: enable system versioning on the two new tables.
-                Console.WriteLine("  · enabling system versioning on StrandAmendments + StrandSpineVersions…");
+                Console.WriteLine("  · enabling system versioning on NodeAmendments + NodeSpineVersions…");
                 await db.EnableSystemVersioningAsync(onError: (t, ex) =>
                     Console.WriteLine($"  ✘ system versioning failed for {t}: {ex.Message}"));
                 Console.WriteLine("  ✔ both tables are temporal.");
             }
             catch (Exception ex)
             {
-                Console.WriteLine($"  ✘ strand-spine migration failed: {ex.Message}");
+                Console.WriteLine($"  ✘ node-spine migration failed: {ex.Message}");
                 failures++;
             }
         }
@@ -596,7 +596,7 @@ public static class MigrateSqlCli
             Console.WriteLine("[emotional-examination]");
             try
             {
-                // 1. Beat.EmotionalScore — temporal table dance (mirrors --strand-beat-version)
+                // 1. Beat.EmotionalScore — temporal table dance (mirrors --node-beat-version)
                 await eeDb.Database.ExecuteSqlRawAsync("""
                     IF NOT EXISTS (SELECT 1 FROM sys.columns
                                    WHERE object_id = OBJECT_ID('Beats') AND name = 'EmotionalScore')
@@ -617,7 +617,7 @@ public static class MigrateSqlCli
                     BEGIN
                         CREATE TABLE [dbo].[EmotionalExaminations] (
                             [Id]                 UNIQUEIDENTIFIER NOT NULL,
-                            [StrandId]           UNIQUEIDENTIFIER NOT NULL,
+                            [NodeId]           UNIQUEIDENTIFIER NOT NULL,
                             [EffortTier]         NVARCHAR(20)     NOT NULL DEFAULT 'standard',
                             [EmotionalDepthScore] FLOAT           NOT NULL DEFAULT 0,
                             [Register]           NVARCHAR(40)     NOT NULL DEFAULT '',
@@ -628,11 +628,11 @@ public static class MigrateSqlCli
                             [ExaminedAt]         DATETIME2        NOT NULL DEFAULT SYSUTCDATETIME(),
                             [CreatedAt]          DATETIME2        NOT NULL DEFAULT SYSUTCDATETIME(),
                             CONSTRAINT [PK_EmotionalExaminations] PRIMARY KEY ([Id]),
-                            CONSTRAINT [FK_EmotionalExaminations_Strands] FOREIGN KEY ([StrandId])
-                                REFERENCES [dbo].[Strands] ([Id]) ON DELETE CASCADE
+                            CONSTRAINT [FK_EmotionalExaminations_Nodes] FOREIGN KEY ([NodeId])
+                                REFERENCES [dbo].[Nodes] ([Id]) ON DELETE CASCADE
                         );
-                        CREATE INDEX [IX_EmotionalExaminations_StrandId_ExaminedAt]
-                            ON [dbo].[EmotionalExaminations] ([StrandId], [ExaminedAt]);
+                        CREATE INDEX [IX_EmotionalExaminations_NodeId_ExaminedAt]
+                            ON [dbo].[EmotionalExaminations] ([NodeId], [ExaminedAt]);
                     END;
                     """);
                 Console.WriteLine("  ✔ EmotionalExaminations table created (or already exists).");
@@ -682,7 +682,7 @@ public static class MigrateSqlCli
                     BEGIN
                         CREATE TABLE [dbo].[CharacterEmotionalLedgers] (
                             [Id]              UNIQUEIDENTIFIER NOT NULL DEFAULT NEWSEQUENTIALID(),
-                            [StrandId]        UNIQUEIDENTIFIER NOT NULL,
+                            [NodeId]        UNIQUEIDENTIFIER NOT NULL,
                             [Character]       NVARCHAR(200)    NOT NULL,
                             [Want]            NVARCHAR(MAX)        NULL,
                             [Need]            NVARCHAR(MAX)        NULL,
@@ -693,11 +693,11 @@ public static class MigrateSqlCli
                             [SourceBibleHash] NVARCHAR(64)         NULL,
                             [UpdatedAt]       DATETIME2        NOT NULL DEFAULT SYSUTCDATETIME(),
                             CONSTRAINT [PK_CharacterEmotionalLedgers] PRIMARY KEY ([Id]),
-                            CONSTRAINT [FK_CharacterEmotionalLedgers_Strands] FOREIGN KEY ([StrandId])
-                                REFERENCES [dbo].[Strands] ([Id]) ON DELETE CASCADE
+                            CONSTRAINT [FK_CharacterEmotionalLedgers_Nodes] FOREIGN KEY ([NodeId])
+                                REFERENCES [dbo].[Nodes] ([Id]) ON DELETE CASCADE
                         );
-                        CREATE UNIQUE INDEX [IX_CharacterEmotionalLedgers_StrandId_Character]
-                            ON [dbo].[CharacterEmotionalLedgers] ([StrandId], [Character]);
+                        CREATE UNIQUE INDEX [IX_CharacterEmotionalLedgers_NodeId_Character]
+                            ON [dbo].[CharacterEmotionalLedgers] ([NodeId], [Character]);
                     END;
                     """);
                 Console.WriteLine("  ✔ CharacterEmotionalLedgers table created (or already exists).");
@@ -709,39 +709,39 @@ public static class MigrateSqlCli
             }
         }
 
-        if (strandDraftFlag)
+        if (nodeDraftFlag)
         {
             using var scope = sp.CreateScope();
             var db = scope.ServiceProvider.GetRequiredService<StreetSamuraiDbContext>();
 
             Console.WriteLine();
-            Console.WriteLine("[strand-draft-flag]");
+            Console.WriteLine("[node-draft-flag]");
             try
             {
                 await db.Database.ExecuteSqlRawAsync("""
                     IF NOT EXISTS (SELECT 1 FROM sys.columns
-                                   WHERE object_id = OBJECT_ID('Strands') AND name = 'IsDraft')
+                                   WHERE object_id = OBJECT_ID('Nodes') AND name = 'IsDraft')
                     BEGIN
-                        ALTER TABLE [dbo].[Strands] SET (SYSTEM_VERSIONING = OFF);
-                        ALTER TABLE [dbo].[Strands]         ADD [IsDraft] bit NOT NULL DEFAULT 0;
-                        ALTER TABLE [dbo].[Strands_History] ADD [IsDraft] bit NOT NULL DEFAULT 0;
-                        ALTER TABLE [dbo].[Strands]
-                            SET (SYSTEM_VERSIONING = ON (HISTORY_TABLE = [dbo].[Strands_History],
+                        ALTER TABLE [dbo].[Nodes] SET (SYSTEM_VERSIONING = OFF);
+                        ALTER TABLE [dbo].[Nodes]         ADD [IsDraft] bit NOT NULL DEFAULT 0;
+                        ALTER TABLE [dbo].[Nodes_History] ADD [IsDraft] bit NOT NULL DEFAULT 0;
+                        ALTER TABLE [dbo].[Nodes]
+                            SET (SYSTEM_VERSIONING = ON (HISTORY_TABLE = [dbo].[Nodes_History],
                                                          DATA_CONSISTENCY_CHECK = OFF));
                     END;
                     """);
-                Console.WriteLine("  ✔ IsDraft column added to Strands (+ Strands_History).");
+                Console.WriteLine("  ✔ IsDraft column added to Nodes (+ Nodes_History).");
 
                 await db.Database.ExecuteSqlRawAsync("""
                     IF NOT EXISTS (SELECT 1 FROM sys.indexes
-                                   WHERE object_id = OBJECT_ID('Strands') AND name = 'IX_Strands_IsDraft')
-                        CREATE INDEX [IX_Strands_IsDraft] ON [dbo].[Strands] ([IsDraft]);
+                                   WHERE object_id = OBJECT_ID('Nodes') AND name = 'IX_Nodes_IsDraft')
+                        CREATE INDEX [IX_Nodes_IsDraft] ON [dbo].[Nodes] ([IsDraft]);
                     """);
-                Console.WriteLine("  ✔ IX_Strands_IsDraft index created (or already exists).");
+                Console.WriteLine("  ✔ IX_Nodes_IsDraft index created (or already exists).");
             }
             catch (Exception ex)
             {
-                Console.WriteLine($"  ✘ strand-draft-flag migration failed: {ex.Message}");
+                Console.WriteLine($"  ✘ node-draft-flag migration failed: {ex.Message}");
                 failures++;
             }
         }
@@ -763,24 +763,24 @@ public static class MigrateSqlCli
                     """);
                 Console.WriteLine("  ✔ Contradictions added to EntityReviews.");
 
-                // StrandReviews — not temporal.
+                // NodeReviews — not temporal.
                 await db.Database.ExecuteSqlRawAsync("""
                     IF NOT EXISTS (SELECT 1 FROM sys.columns
-                                   WHERE object_id = OBJECT_ID('StrandReviews') AND name = 'Contradictions')
-                        ALTER TABLE [dbo].[StrandReviews] ADD [Contradictions] NVARCHAR(MAX) NULL;
+                                   WHERE object_id = OBJECT_ID('NodeReviews') AND name = 'Contradictions')
+                        ALTER TABLE [dbo].[NodeReviews] ADD [Contradictions] NVARCHAR(MAX) NULL;
                     """);
-                Console.WriteLine("  ✔ Contradictions added to StrandReviews.");
+                Console.WriteLine("  ✔ Contradictions added to NodeReviews.");
 
-                // StrandReviewBeatScores — not temporal.
+                // NodeReviewBeatScores — not temporal.
                 await db.Database.ExecuteSqlRawAsync("""
                     IF NOT EXISTS (SELECT 1 FROM sys.columns
-                                   WHERE object_id = OBJECT_ID('StrandReviewBeatScores') AND name = 'Gripes')
-                        ALTER TABLE [dbo].[StrandReviewBeatScores] ADD [Gripes] NVARCHAR(MAX) NULL;
+                                   WHERE object_id = OBJECT_ID('NodeReviewBeatScores') AND name = 'Gripes')
+                        ALTER TABLE [dbo].[NodeReviewBeatScores] ADD [Gripes] NVARCHAR(MAX) NULL;
                     IF NOT EXISTS (SELECT 1 FROM sys.columns
-                                   WHERE object_id = OBJECT_ID('StrandReviewBeatScores') AND name = 'Contradictions')
-                        ALTER TABLE [dbo].[StrandReviewBeatScores] ADD [Contradictions] NVARCHAR(MAX) NULL;
+                                   WHERE object_id = OBJECT_ID('NodeReviewBeatScores') AND name = 'Contradictions')
+                        ALTER TABLE [dbo].[NodeReviewBeatScores] ADD [Contradictions] NVARCHAR(MAX) NULL;
                     """);
-                Console.WriteLine("  ✔ Gripes + Contradictions added to StrandReviewBeatScores.");
+                Console.WriteLine("  ✔ Gripes + Contradictions added to NodeReviewBeatScores.");
             }
             catch (Exception ex)
             {

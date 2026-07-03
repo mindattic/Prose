@@ -20,27 +20,27 @@ public class OutlineAdherenceService(
     /// Returns a drift score (0=completely off track, 100=perfectly on track) and a summary.
     /// </summary>
     public async Task<AdherenceResult> CheckAsync(
-        Guid strandId,
+        Guid nodeId,
         string chapterSummaryText,
         CancellationToken ct = default)
     {
         if (string.IsNullOrWhiteSpace(chapterSummaryText))
             return new AdherenceResult(100, "No chapter summary to evaluate — skipping drift check.");
 
-        // Load the strand bible and remaining beat goals
+        // Load the node bible and remaining beat goals
         string? bibleText;
         List<string> remainingGoals;
         await using (var db = await dbFactory.CreateDbContextAsync(ct))
         {
-            var strand = await db.Strands.AsNoTracking()
-                .Where(s => s.Id == strandId)
-                .Select(s => new { s.StrandBible })
+            var node = await db.Nodes.AsNoTracking()
+                .Where(s => s.Id == nodeId)
+                .Select(s => new { s.NodeBible })
                 .FirstOrDefaultAsync(ct);
 
-            bibleText = strand?.StrandBible;
+            bibleText = node?.NodeBible;
 
-            remainingGoals = await db.StrandBeats.AsNoTracking()
-                .Where(sb => sb.StrandId == strandId && sb.IsEnabled)
+            remainingGoals = await db.NodeBeats.AsNoTracking()
+                .Where(sb => sb.NodeId == nodeId && sb.IsEnabled)
                 .Join(db.Beats.AsNoTracking().Where(b => b.Text == null || b.Text == ""),
                       sb => sb.BeatId, b => b.Id, (sb, b) => b.Synopsis ?? b.BeatTitle ?? "")
                 .Where(g => g.Length > 0)
@@ -84,7 +84,7 @@ public class OutlineAdherenceService(
     /// Updates Beat.Synopsis in DB. Returns the number of beats recalibrated.
     /// </summary>
     public async Task<int> RecalibrateAsync(
-        Guid strandId,
+        Guid nodeId,
         string driftReason,
         string? bibleText,
         CancellationToken ct = default)
@@ -94,8 +94,8 @@ public class OutlineAdherenceService(
         List<(Guid BeatId, string CurrentGoal)> emptyBeats;
         await using (var db = await dbFactory.CreateDbContextAsync(ct))
         {
-            var rows = await db.StrandBeats.AsNoTracking()
-                .Where(sb => sb.StrandId == strandId && sb.IsEnabled)
+            var rows = await db.NodeBeats.AsNoTracking()
+                .Where(sb => sb.NodeId == nodeId && sb.IsEnabled)
                 .Join(db.Beats.AsNoTracking().Where(b => b.Text == null || b.Text == ""),
                       sb => sb.BeatId, b => b.Id,
                       (sb, b) => new { b.Id, Goal = b.Synopsis ?? b.BeatTitle ?? "" })

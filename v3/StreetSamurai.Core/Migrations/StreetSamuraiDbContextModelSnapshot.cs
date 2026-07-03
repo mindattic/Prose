@@ -1092,13 +1092,13 @@ namespace StreetSamurai.Core.Migrations
                     b.Property<int>("BlockSizeChars")
                         .HasColumnType("int");
 
+                    b.Property<Guid>("NodeId")
+                        .HasColumnType("uniqueidentifier");
+
                     b.Property<string>("Service")
                         .IsRequired()
                         .HasMaxLength(100)
                         .HasColumnType("nvarchar(100)");
-
-                    b.Property<Guid>("StrandId")
-                        .HasColumnType("uniqueidentifier");
 
                     b.Property<Guid>("UniverseId")
                         .HasColumnType("uniqueidentifier");
@@ -1117,7 +1117,7 @@ namespace StreetSamurai.Core.Migrations
                     b.HasIndex("BeatId")
                         .HasFilter("[BeatId] IS NOT NULL");
 
-                    b.HasIndex("StrandId");
+                    b.HasIndex("NodeId");
 
                     b.ToTable("BeatServiceLog", (string)null);
                 });
@@ -2071,12 +2071,12 @@ namespace StreetSamurai.Core.Migrations
                     b.Property<string>("Need")
                         .HasColumnType("nvarchar(max)");
 
+                    b.Property<Guid>("NodeId")
+                        .HasColumnType("uniqueidentifier");
+
                     b.Property<string>("SourceBibleHash")
                         .HasMaxLength(64)
                         .HasColumnType("nvarchar(64)");
-
-                    b.Property<Guid>("StrandId")
-                        .HasColumnType("uniqueidentifier");
 
                     b.Property<DateTime>("UpdatedAt")
                         .HasColumnType("datetime2");
@@ -2093,7 +2093,7 @@ namespace StreetSamurai.Core.Migrations
 
                     b.HasKey("Id");
 
-                    b.HasIndex("StrandId", "Character")
+                    b.HasIndex("NodeId", "Character")
                         .IsUnique();
 
                     b.ToTable("CharacterEmotionalLedgers");
@@ -3669,17 +3669,17 @@ namespace StreetSamurai.Core.Migrations
                         .HasMaxLength(80)
                         .HasColumnType("nvarchar(80)");
 
+                    b.Property<Guid>("NodeId")
+                        .HasColumnType("uniqueidentifier");
+
                     b.Property<string>("Register")
                         .IsRequired()
                         .HasMaxLength(40)
                         .HasColumnType("nvarchar(40)");
 
-                    b.Property<Guid>("StrandId")
-                        .HasColumnType("uniqueidentifier");
-
                     b.HasKey("Id");
 
-                    b.HasIndex("StrandId", "ExaminedAt");
+                    b.HasIndex("NodeId", "ExaminedAt");
 
                     b.ToTable("EmotionalExaminations");
                 });
@@ -6187,6 +6187,657 @@ namespace StreetSamurai.Core.Migrations
                     b.ToTable("NewsLocations");
                 });
 
+            modelBuilder.Entity("StreetSamurai.Core.Data.Entities.Node", b =>
+                {
+                    b.Property<Guid>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("uniqueidentifier");
+
+                    b.Property<DateTime?>("AudioCompletedAt")
+                        .HasColumnType("datetime2");
+
+                    b.Property<DateTime?>("CanonAt")
+                        .HasColumnType("datetime2");
+
+                    b.Property<int>("CharsNarrated")
+                        .HasColumnType("int");
+
+                    b.Property<string>("CombinedAudioPath")
+                        .HasMaxLength(400)
+                        .HasColumnType("nvarchar(400)");
+
+                    b.Property<DateTime>("CreatedAt")
+                        .HasColumnType("datetime2");
+
+                    b.Property<string>("Error")
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<DateTime?>("GenerationCompletedAt")
+                        .HasColumnType("datetime2");
+
+                    b.Property<bool>("IsCanon")
+                        .HasColumnType("bit");
+
+                    b.Property<bool>("IsWIP")
+                        .HasColumnType("bit");
+
+                    b.Property<string>("Kind")
+                        .IsRequired()
+                        .HasMaxLength(40)
+                        .HasColumnType("nvarchar(40)");
+
+                    b.Property<Guid?>("LastPlayedBeatId")
+                        .HasColumnType("uniqueidentifier");
+
+                    b.Property<double?>("LastPlayedSec")
+                        .HasColumnType("float");
+
+                    b.Property<int>("NarratedBeatCount")
+                        .HasColumnType("int");
+
+                    b.Property<string>("NodeBible")
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<DateTime?>("NodeBibleGeneratedAt")
+                        .HasColumnType("datetime2");
+
+                    b.Property<string>("NodeCode")
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<string>("NodeType")
+                        .IsRequired()
+                        .HasMaxLength(20)
+                        .HasColumnType("nvarchar(20)");
+
+                    b.Property<string>("NodeUserStories")
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<DateTime?>("NodeUserStoriesUpdatedAt")
+                        .HasColumnType("datetime2");
+
+                    b.Property<Guid?>("ParentNodeId")
+                        .HasColumnType("uniqueidentifier");
+
+                    b.Property<Guid?>("PreviousNodeId")
+                        .HasColumnType("uniqueidentifier");
+
+                    b.Property<double?>("Score")
+                        .HasColumnType("float");
+
+                    b.Property<DateTime?>("ScoredAt")
+                        .HasColumnType("datetime2");
+
+                    b.Property<string>("ScriptMarkdownPath")
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<string>("ScriptPdfPath")
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<string>("Seed")
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<string>("Slug")
+                        .IsRequired()
+                        .HasMaxLength(200)
+                        .HasColumnType("nvarchar(200)");
+
+                    b.Property<double>("SortKey")
+                        .HasColumnType("float");
+
+                    b.Property<DateTime>("StartedAt")
+                        .HasColumnType("datetime2");
+
+                    b.Property<string>("Status")
+                        .IsRequired()
+                        .HasMaxLength(40)
+                        .HasColumnType("nvarchar(40)");
+
+                    b.Property<string>("Summary")
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<string>("Synopsis")
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<string>("Title")
+                        .IsRequired()
+                        .HasMaxLength(400)
+                        .HasColumnType("nvarchar(400)");
+
+                    b.Property<int>("TotalBeatsToNarrate")
+                        .HasColumnType("int");
+
+                    b.Property<string>("TtsEngine")
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<Guid>("UniverseId")
+                        .HasColumnType("uniqueidentifier");
+
+                    b.Property<DateTime>("UpdatedAt")
+                        .HasColumnType("datetime2");
+
+                    b.Property<int>("Version")
+                        .HasColumnType("int");
+
+                    b.Property<string>("VoiceId")
+                        .HasMaxLength(80)
+                        .HasColumnType("nvarchar(80)");
+
+                    b.Property<string>("VoiceModel")
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<int?>("VoiceSeed")
+                        .HasColumnType("int");
+
+                    b.Property<double?>("VoiceSimilarity")
+                        .HasColumnType("float");
+
+                    b.Property<double?>("VoiceStability")
+                        .HasColumnType("float");
+
+                    b.Property<double?>("VoiceStyle")
+                        .HasColumnType("float");
+
+                    b.HasKey("Id");
+
+                    b.HasIndex("IsWIP");
+
+                    b.HasIndex("Kind");
+
+                    b.HasIndex("PreviousNodeId");
+
+                    b.HasIndex("UniverseId");
+
+                    b.HasIndex("ParentNodeId", "SortKey");
+
+                    b.HasIndex("UniverseId", "Slug")
+                        .IsUnique()
+                        .HasDatabaseName("UX_Nodes_Universe_Slug");
+
+                    b.ToTable("Nodes", (string)null);
+
+                    b.HasDiscriminator<string>("NodeType").HasValue("Node");
+
+                    b.UseTphMappingStrategy();
+                });
+
+            modelBuilder.Entity("StreetSamurai.Core.Data.Entities.NodeAmendment", b =>
+                {
+                    b.Property<Guid>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("uniqueidentifier");
+
+                    b.Property<string>("Body")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<string>("Code")
+                        .IsRequired()
+                        .HasMaxLength(20)
+                        .HasColumnType("nvarchar(20)");
+
+                    b.Property<DateTime>("CreatedAt")
+                        .HasColumnType("datetime2");
+
+                    b.Property<string>("CreatedBy")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<Guid>("NodeId")
+                        .HasColumnType("uniqueidentifier");
+
+                    b.Property<int>("SequenceNo")
+                        .HasColumnType("int");
+
+                    b.Property<string>("Summary")
+                        .IsRequired()
+                        .HasMaxLength(500)
+                        .HasColumnType("nvarchar(500)");
+
+                    b.HasKey("Id");
+
+                    b.HasIndex("NodeId");
+
+                    b.HasIndex("NodeId", "SequenceNo")
+                        .IsUnique();
+
+                    b.ToTable("NodeAmendments");
+                });
+
+            modelBuilder.Entity("StreetSamurai.Core.Data.Entities.NodeAudioEvent", b =>
+                {
+                    b.Property<Guid>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("uniqueidentifier");
+
+                    b.Property<DateTime>("At")
+                        .HasColumnType("datetime2");
+
+                    b.Property<Guid?>("BeatId")
+                        .HasColumnType("uniqueidentifier");
+
+                    b.Property<string>("Detail")
+                        .HasMaxLength(1000)
+                        .HasColumnType("nvarchar(1000)");
+
+                    b.Property<string>("Kind")
+                        .IsRequired()
+                        .HasMaxLength(40)
+                        .HasColumnType("nvarchar(40)");
+
+                    b.Property<Guid>("NodeId")
+                        .HasColumnType("uniqueidentifier");
+
+                    b.Property<Guid?>("PublicationId")
+                        .HasColumnType("uniqueidentifier");
+
+                    b.HasKey("Id");
+
+                    b.HasIndex("PublicationId");
+
+                    b.HasIndex("NodeId", "At");
+
+                    b.ToTable("NodeAudioEvents");
+                });
+
+            modelBuilder.Entity("StreetSamurai.Core.Data.Entities.NodeBeat", b =>
+                {
+                    b.Property<Guid>("NodeId")
+                        .HasColumnType("uniqueidentifier");
+
+                    b.Property<Guid>("BeatId")
+                        .HasColumnType("uniqueidentifier");
+
+                    b.Property<bool>("IsEnabled")
+                        .HasColumnType("bit");
+
+                    b.Property<double>("SortKey")
+                        .HasColumnType("float");
+
+                    b.HasKey("NodeId", "BeatId");
+
+                    b.HasIndex("BeatId");
+
+                    b.HasIndex("NodeId", "SortKey");
+
+                    b.ToTable("NodeBeats");
+                });
+
+            modelBuilder.Entity("StreetSamurai.Core.Data.Entities.NodeChapterSummary", b =>
+                {
+                    b.Property<Guid>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("uniqueidentifier");
+
+                    b.Property<int>("ChapterIndex")
+                        .HasColumnType("int");
+
+                    b.Property<DateTime>("CreatedAt")
+                        .HasColumnType("datetime2");
+
+                    b.Property<string>("FactsJson")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<Guid>("NodeId")
+                        .HasColumnType("uniqueidentifier");
+
+                    b.Property<string>("SummaryText")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<DateTime>("UpdatedAt")
+                        .HasColumnType("datetime2");
+
+                    b.HasKey("Id");
+
+                    b.HasIndex("NodeId", "ChapterIndex")
+                        .IsUnique();
+
+                    b.ToTable("NodeChapterSummaries");
+                });
+
+            modelBuilder.Entity("StreetSamurai.Core.Data.Entities.NodeKeyword", b =>
+                {
+                    b.Property<Guid>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("uniqueidentifier");
+
+                    b.Property<DateTime>("CreatedAt")
+                        .HasColumnType("datetime2");
+
+                    b.Property<string>("Keyword")
+                        .IsRequired()
+                        .HasMaxLength(100)
+                        .HasColumnType("nvarchar(100)");
+
+                    b.Property<Guid>("NodeId")
+                        .HasColumnType("uniqueidentifier");
+
+                    b.Property<int>("SortOrder")
+                        .HasColumnType("int");
+
+                    b.HasKey("Id");
+
+                    b.HasIndex("NodeId");
+
+                    b.ToTable("NodeKeywords");
+                });
+
+            modelBuilder.Entity("StreetSamurai.Core.Data.Entities.NodeOpenThread", b =>
+                {
+                    b.Property<Guid>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("uniqueidentifier");
+
+                    b.Property<string>("Category")
+                        .IsRequired()
+                        .HasMaxLength(50)
+                        .HasColumnType("nvarchar(50)");
+
+                    b.Property<DateTime>("CreatedAt")
+                        .HasColumnType("datetime2");
+
+                    b.Property<string>("Description")
+                        .IsRequired()
+                        .HasMaxLength(500)
+                        .HasColumnType("nvarchar(500)");
+
+                    b.Property<bool>("IsResolved")
+                        .HasColumnType("bit");
+
+                    b.Property<Guid>("NodeId")
+                        .HasColumnType("uniqueidentifier");
+
+                    b.Property<Guid?>("OriginBeatId")
+                        .HasColumnType("uniqueidentifier");
+
+                    b.Property<Guid?>("ResolvedBeatId")
+                        .HasColumnType("uniqueidentifier");
+
+                    b.Property<DateTime>("UpdatedAt")
+                        .HasColumnType("datetime2");
+
+                    b.HasKey("Id");
+
+                    b.HasIndex("NodeId", "IsResolved");
+
+                    b.ToTable("NodeOpenThreads");
+                });
+
+            modelBuilder.Entity("StreetSamurai.Core.Data.Entities.NodePublication", b =>
+                {
+                    b.Property<Guid>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("uniqueidentifier");
+
+                    b.Property<int>("BeatCount")
+                        .HasColumnType("int");
+
+                    b.Property<long>("ByteSize")
+                        .HasColumnType("bigint");
+
+                    b.Property<DateTime?>("CompletedAt")
+                        .HasColumnType("datetime2");
+
+                    b.Property<string>("Error")
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<string>("Format")
+                        .IsRequired()
+                        .HasMaxLength(8)
+                        .HasColumnType("nvarchar(8)");
+
+                    b.Property<Guid>("NodeId")
+                        .HasColumnType("uniqueidentifier");
+
+                    b.Property<string>("Path")
+                        .HasMaxLength(600)
+                        .HasColumnType("nvarchar(600)");
+
+                    b.Property<DateTime>("StartedAt")
+                        .HasColumnType("datetime2");
+
+                    b.Property<string>("Status")
+                        .IsRequired()
+                        .HasMaxLength(20)
+                        .HasColumnType("nvarchar(20)");
+
+                    b.HasKey("Id");
+
+                    b.HasIndex("NodeId", "StartedAt");
+
+                    b.ToTable("NodePublications");
+                });
+
+            modelBuilder.Entity("StreetSamurai.Core.Data.Entities.NodeReview", b =>
+                {
+                    b.Property<Guid>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("uniqueidentifier");
+
+                    b.Property<int>("BeatCount")
+                        .HasColumnType("int");
+
+                    b.Property<int?>("ClusterId")
+                        .HasColumnType("int");
+
+                    b.Property<string>("ClusterLabel")
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<string>("ContentHash")
+                        .IsRequired()
+                        .HasMaxLength(64)
+                        .HasColumnType("nvarchar(64)");
+
+                    b.Property<string>("Contradictions")
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<DateTime>("CreatedAt")
+                        .HasColumnType("datetime2");
+
+                    b.Property<int?>("FlowScore")
+                        .HasColumnType("int");
+
+                    b.Property<Guid?>("FocusGroupId")
+                        .HasColumnType("uniqueidentifier");
+
+                    b.Property<string>("FocusGroupName")
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<string>("Improvements")
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<string>("Model")
+                        .HasMaxLength(80)
+                        .HasColumnType("nvarchar(80)");
+
+                    b.Property<Guid>("NodeId")
+                        .HasColumnType("uniqueidentifier");
+
+                    b.Property<string>("PersonaBlurb")
+                        .HasMaxLength(400)
+                        .HasColumnType("nvarchar(400)");
+
+                    b.Property<string>("PersonaId")
+                        .IsRequired()
+                        .HasMaxLength(40)
+                        .HasColumnType("nvarchar(40)");
+
+                    b.Property<string>("PersonaName")
+                        .IsRequired()
+                        .HasMaxLength(80)
+                        .HasColumnType("nvarchar(80)");
+
+                    b.Property<string>("ProviderId")
+                        .IsRequired()
+                        .HasMaxLength(40)
+                        .HasColumnType("nvarchar(40)");
+
+                    b.Property<string>("ReviewText")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<DateTime>("ReviewedAt")
+                        .HasColumnType("datetime2");
+
+                    b.Property<int>("Score")
+                        .HasColumnType("int");
+
+                    b.Property<DateTime>("UpdatedAt")
+                        .HasColumnType("datetime2");
+
+                    b.HasKey("Id");
+
+                    b.HasIndex("NodeId", "ReviewedAt");
+
+                    b.ToTable("NodeReviews");
+                });
+
+            modelBuilder.Entity("StreetSamurai.Core.Data.Entities.NodeReviewBeatScore", b =>
+                {
+                    b.Property<Guid>("ReviewId")
+                        .HasColumnType("uniqueidentifier");
+
+                    b.Property<int>("BeatNumber")
+                        .HasColumnType("int");
+
+                    b.Property<string>("Contradictions")
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<string>("Gripes")
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<int>("Score")
+                        .HasColumnType("int");
+
+                    b.HasKey("ReviewId", "BeatNumber");
+
+                    b.ToTable("NodeReviewBeatScores");
+                });
+
+            modelBuilder.Entity("StreetSamurai.Core.Data.Entities.NodeReviewSummary", b =>
+                {
+                    b.Property<Guid>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("uniqueidentifier");
+
+                    b.Property<double>("AvgScore")
+                        .HasColumnType("float");
+
+                    b.Property<string>("ContentHash")
+                        .HasMaxLength(64)
+                        .HasColumnType("nvarchar(64)");
+
+                    b.Property<DateTime>("GeneratedAt")
+                        .HasColumnType("datetime2");
+
+                    b.Property<Guid>("NodeId")
+                        .HasColumnType("uniqueidentifier");
+
+                    b.Property<int>("ReviewCount")
+                        .HasColumnType("int");
+
+                    b.Property<string>("ScoreDistributionJson")
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<string>("SummaryMarkdown")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.HasKey("Id");
+
+                    b.HasIndex("NodeId")
+                        .IsUnique();
+
+                    b.ToTable("NodeReviewSummaries");
+                });
+
+            modelBuilder.Entity("StreetSamurai.Core.Data.Entities.NodeScoreHistory", b =>
+                {
+                    b.Property<int>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("int");
+
+                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"));
+
+                    b.Property<int>("BeatCount")
+                        .HasColumnType("int");
+
+                    b.Property<string>("ContentHash")
+                        .IsRequired()
+                        .HasMaxLength(64)
+                        .HasColumnType("nvarchar(64)");
+
+                    b.Property<double>("MeanScore")
+                        .HasColumnType("float");
+
+                    b.Property<Guid>("NodeId")
+                        .HasColumnType("uniqueidentifier");
+
+                    b.Property<DateTime>("RecordedAt")
+                        .HasColumnType("datetime2");
+
+                    b.Property<int>("ReviewCount")
+                        .HasColumnType("int");
+
+                    b.Property<double?>("Sd")
+                        .HasColumnType("float");
+
+                    b.HasKey("Id");
+
+                    b.HasIndex("NodeId", "RecordedAt");
+
+                    b.ToTable("NodeScoreHistories");
+                });
+
+            modelBuilder.Entity("StreetSamurai.Core.Data.Entities.NodeSpineVersion", b =>
+                {
+                    b.Property<Guid>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("uniqueidentifier");
+
+                    b.Property<int>("AmendmentCount")
+                        .HasColumnType("int");
+
+                    b.Property<string>("BibleHash")
+                        .IsRequired()
+                        .HasMaxLength(64)
+                        .HasColumnType("nvarchar(64)");
+
+                    b.Property<Guid>("NodeId")
+                        .HasColumnType("uniqueidentifier");
+
+                    b.Property<int>("NodeVersion")
+                        .HasColumnType("int");
+
+                    b.Property<string>("Notes")
+                        .IsRequired()
+                        .HasMaxLength(1000)
+                        .HasColumnType("nvarchar(1000)");
+
+                    b.Property<DateTime>("PinnedAt")
+                        .HasColumnType("datetime2");
+
+                    b.Property<string>("PinnedBy")
+                        .IsRequired()
+                        .HasMaxLength(100)
+                        .HasColumnType("nvarchar(100)");
+
+                    b.Property<string>("UserStoriesHash")
+                        .IsRequired()
+                        .HasMaxLength(64)
+                        .HasColumnType("nvarchar(64)");
+
+                    b.HasKey("Id");
+
+                    b.HasIndex("NodeId");
+
+                    b.HasIndex("NodeId", "NodeVersion")
+                        .IsUnique();
+
+                    b.ToTable("NodeSpineVersions");
+                });
+
             modelBuilder.Entity("StreetSamurai.Core.Data.Entities.PharmAlias", b =>
                 {
                     b.Property<long>("Id")
@@ -6776,6 +7427,9 @@ namespace StreetSamurai.Core.Migrations
                     b.Property<bool>("IsTransparent")
                         .HasColumnType("bit");
 
+                    b.Property<Guid>("NodeId")
+                        .HasColumnType("uniqueidentifier");
+
                     b.Property<Guid?>("PayoffBeatId")
                         .HasColumnType("uniqueidentifier");
 
@@ -6795,9 +7449,6 @@ namespace StreetSamurai.Core.Migrations
                     b.Property<double>("SortKey")
                         .HasColumnType("float");
 
-                    b.Property<Guid>("StrandId")
-                        .HasColumnType("uniqueidentifier");
-
                     b.Property<string>("TransparencyNote")
                         .HasMaxLength(500)
                         .HasColumnType("nvarchar(500)");
@@ -6810,11 +7461,11 @@ namespace StreetSamurai.Core.Migrations
 
                     b.HasKey("Id");
 
+                    b.HasIndex("NodeId");
+
                     b.HasIndex("PayoffBeatId");
 
                     b.HasIndex("PlantBeatId");
-
-                    b.HasIndex("StrandId");
 
                     b.ToTable("PlantPayoffs");
                 });
@@ -7220,648 +7871,6 @@ namespace StreetSamurai.Core.Migrations
                         .HasDatabaseName("UX_Species_Universe_Name");
 
                     b.ToTable("Species");
-                });
-
-            modelBuilder.Entity("StreetSamurai.Core.Data.Entities.Strand", b =>
-                {
-                    b.Property<Guid>("Id")
-                        .ValueGeneratedOnAdd()
-                        .HasColumnType("uniqueidentifier");
-
-                    b.Property<DateTime?>("AudioCompletedAt")
-                        .HasColumnType("datetime2");
-
-                    b.Property<DateTime?>("CanonAt")
-                        .HasColumnType("datetime2");
-
-                    b.Property<int>("CharsNarrated")
-                        .HasColumnType("int");
-
-                    b.Property<string>("CombinedAudioPath")
-                        .HasMaxLength(400)
-                        .HasColumnType("nvarchar(400)");
-
-                    b.Property<DateTime>("CreatedAt")
-                        .HasColumnType("datetime2");
-
-                    b.Property<string>("Error")
-                        .HasColumnType("nvarchar(max)");
-
-                    b.Property<DateTime?>("GenerationCompletedAt")
-                        .HasColumnType("datetime2");
-
-                    b.Property<bool>("IsCanon")
-                        .HasColumnType("bit");
-
-                    b.Property<bool>("IsWIP")
-                        .HasColumnType("bit");
-
-                    b.Property<string>("Kind")
-                        .IsRequired()
-                        .HasMaxLength(40)
-                        .HasColumnType("nvarchar(40)");
-
-                    b.Property<Guid?>("LastPlayedBeatId")
-                        .HasColumnType("uniqueidentifier");
-
-                    b.Property<double?>("LastPlayedSec")
-                        .HasColumnType("float");
-
-                    b.Property<int>("NarratedBeatCount")
-                        .HasColumnType("int");
-
-                    b.Property<Guid?>("ParentStrandId")
-                        .HasColumnType("uniqueidentifier");
-
-                    b.Property<Guid?>("PreviousStrandId")
-                        .HasColumnType("uniqueidentifier");
-
-                    b.Property<double?>("Score")
-                        .HasColumnType("float");
-
-                    b.Property<DateTime?>("ScoredAt")
-                        .HasColumnType("datetime2");
-
-                    b.Property<string>("ScriptMarkdownPath")
-                        .HasColumnType("nvarchar(max)");
-
-                    b.Property<string>("ScriptPdfPath")
-                        .HasColumnType("nvarchar(max)");
-
-                    b.Property<string>("Seed")
-                        .HasColumnType("nvarchar(max)");
-
-                    b.Property<string>("Slug")
-                        .IsRequired()
-                        .HasMaxLength(200)
-                        .HasColumnType("nvarchar(200)");
-
-                    b.Property<double>("SortKey")
-                        .HasColumnType("float");
-
-                    b.Property<DateTime>("StartedAt")
-                        .HasColumnType("datetime2");
-
-                    b.Property<string>("Status")
-                        .IsRequired()
-                        .HasMaxLength(40)
-                        .HasColumnType("nvarchar(40)");
-
-                    b.Property<string>("StrandBible")
-                        .HasColumnType("nvarchar(max)");
-
-                    b.Property<DateTime?>("StrandBibleGeneratedAt")
-                        .HasColumnType("datetime2");
-
-                    b.Property<string>("StrandCode")
-                        .HasColumnType("nvarchar(max)");
-
-                    b.Property<string>("StrandUserStories")
-                        .HasColumnType("nvarchar(max)");
-
-                    b.Property<DateTime?>("StrandUserStoriesUpdatedAt")
-                        .HasColumnType("datetime2");
-
-                    b.Property<string>("Summary")
-                        .HasColumnType("nvarchar(max)");
-
-                    b.Property<string>("Synopsis")
-                        .HasColumnType("nvarchar(max)");
-
-                    b.Property<string>("Title")
-                        .IsRequired()
-                        .HasMaxLength(400)
-                        .HasColumnType("nvarchar(400)");
-
-                    b.Property<int>("TotalBeatsToNarrate")
-                        .HasColumnType("int");
-
-                    b.Property<string>("TtsEngine")
-                        .HasColumnType("nvarchar(max)");
-
-                    b.Property<Guid>("UniverseId")
-                        .HasColumnType("uniqueidentifier");
-
-                    b.Property<DateTime>("UpdatedAt")
-                        .HasColumnType("datetime2");
-
-                    b.Property<int>("Version")
-                        .HasColumnType("int");
-
-                    b.Property<string>("VoiceId")
-                        .HasMaxLength(80)
-                        .HasColumnType("nvarchar(80)");
-
-                    b.Property<string>("VoiceModel")
-                        .HasColumnType("nvarchar(max)");
-
-                    b.Property<int?>("VoiceSeed")
-                        .HasColumnType("int");
-
-                    b.Property<double?>("VoiceSimilarity")
-                        .HasColumnType("float");
-
-                    b.Property<double?>("VoiceStability")
-                        .HasColumnType("float");
-
-                    b.Property<double?>("VoiceStyle")
-                        .HasColumnType("float");
-
-                    b.HasKey("Id");
-
-                    b.HasIndex("IsWIP");
-
-                    b.HasIndex("Kind");
-
-                    b.HasIndex("PreviousStrandId");
-
-                    b.HasIndex("UniverseId");
-
-                    b.HasIndex("ParentStrandId", "SortKey");
-
-                    b.HasIndex("UniverseId", "Slug")
-                        .IsUnique()
-                        .HasDatabaseName("UX_Strands_Universe_Slug");
-
-                    b.ToTable("Strands");
-                });
-
-            modelBuilder.Entity("StreetSamurai.Core.Data.Entities.StrandAmendment", b =>
-                {
-                    b.Property<Guid>("Id")
-                        .ValueGeneratedOnAdd()
-                        .HasColumnType("uniqueidentifier");
-
-                    b.Property<string>("Body")
-                        .IsRequired()
-                        .HasColumnType("nvarchar(max)");
-
-                    b.Property<string>("Code")
-                        .IsRequired()
-                        .HasMaxLength(20)
-                        .HasColumnType("nvarchar(20)");
-
-                    b.Property<DateTime>("CreatedAt")
-                        .HasColumnType("datetime2");
-
-                    b.Property<string>("CreatedBy")
-                        .IsRequired()
-                        .HasColumnType("nvarchar(max)");
-
-                    b.Property<int>("SequenceNo")
-                        .HasColumnType("int");
-
-                    b.Property<Guid>("StrandId")
-                        .HasColumnType("uniqueidentifier");
-
-                    b.Property<string>("Summary")
-                        .IsRequired()
-                        .HasMaxLength(500)
-                        .HasColumnType("nvarchar(500)");
-
-                    b.HasKey("Id");
-
-                    b.HasIndex("StrandId");
-
-                    b.HasIndex("StrandId", "SequenceNo")
-                        .IsUnique();
-
-                    b.ToTable("StrandAmendments");
-                });
-
-            modelBuilder.Entity("StreetSamurai.Core.Data.Entities.StrandAudioEvent", b =>
-                {
-                    b.Property<Guid>("Id")
-                        .ValueGeneratedOnAdd()
-                        .HasColumnType("uniqueidentifier");
-
-                    b.Property<DateTime>("At")
-                        .HasColumnType("datetime2");
-
-                    b.Property<Guid?>("BeatId")
-                        .HasColumnType("uniqueidentifier");
-
-                    b.Property<string>("Detail")
-                        .HasMaxLength(1000)
-                        .HasColumnType("nvarchar(1000)");
-
-                    b.Property<string>("Kind")
-                        .IsRequired()
-                        .HasMaxLength(40)
-                        .HasColumnType("nvarchar(40)");
-
-                    b.Property<Guid?>("PublicationId")
-                        .HasColumnType("uniqueidentifier");
-
-                    b.Property<Guid>("StrandId")
-                        .HasColumnType("uniqueidentifier");
-
-                    b.HasKey("Id");
-
-                    b.HasIndex("PublicationId");
-
-                    b.HasIndex("StrandId", "At");
-
-                    b.ToTable("StrandAudioEvents");
-                });
-
-            modelBuilder.Entity("StreetSamurai.Core.Data.Entities.StrandBeat", b =>
-                {
-                    b.Property<Guid>("StrandId")
-                        .HasColumnType("uniqueidentifier");
-
-                    b.Property<Guid>("BeatId")
-                        .HasColumnType("uniqueidentifier");
-
-                    b.Property<bool>("IsEnabled")
-                        .HasColumnType("bit");
-
-                    b.Property<double>("SortKey")
-                        .HasColumnType("float");
-
-                    b.HasKey("StrandId", "BeatId");
-
-                    b.HasIndex("BeatId");
-
-                    b.HasIndex("StrandId", "SortKey");
-
-                    b.ToTable("StrandBeats");
-                });
-
-            modelBuilder.Entity("StreetSamurai.Core.Data.Entities.StrandChapterSummary", b =>
-                {
-                    b.Property<Guid>("Id")
-                        .ValueGeneratedOnAdd()
-                        .HasColumnType("uniqueidentifier");
-
-                    b.Property<int>("ChapterIndex")
-                        .HasColumnType("int");
-
-                    b.Property<DateTime>("CreatedAt")
-                        .HasColumnType("datetime2");
-
-                    b.Property<string>("FactsJson")
-                        .IsRequired()
-                        .HasColumnType("nvarchar(max)");
-
-                    b.Property<Guid>("StrandId")
-                        .HasColumnType("uniqueidentifier");
-
-                    b.Property<string>("SummaryText")
-                        .IsRequired()
-                        .HasColumnType("nvarchar(max)");
-
-                    b.Property<DateTime>("UpdatedAt")
-                        .HasColumnType("datetime2");
-
-                    b.HasKey("Id");
-
-                    b.HasIndex("StrandId", "ChapterIndex")
-                        .IsUnique();
-
-                    b.ToTable("StrandChapterSummaries");
-                });
-
-            modelBuilder.Entity("StreetSamurai.Core.Data.Entities.StrandKeyword", b =>
-                {
-                    b.Property<Guid>("Id")
-                        .ValueGeneratedOnAdd()
-                        .HasColumnType("uniqueidentifier");
-
-                    b.Property<DateTime>("CreatedAt")
-                        .HasColumnType("datetime2");
-
-                    b.Property<string>("Keyword")
-                        .IsRequired()
-                        .HasMaxLength(100)
-                        .HasColumnType("nvarchar(100)");
-
-                    b.Property<int>("SortOrder")
-                        .HasColumnType("int");
-
-                    b.Property<Guid>("StrandId")
-                        .HasColumnType("uniqueidentifier");
-
-                    b.HasKey("Id");
-
-                    b.HasIndex("StrandId");
-
-                    b.ToTable("StrandKeywords");
-                });
-
-            modelBuilder.Entity("StreetSamurai.Core.Data.Entities.StrandOpenThread", b =>
-                {
-                    b.Property<Guid>("Id")
-                        .ValueGeneratedOnAdd()
-                        .HasColumnType("uniqueidentifier");
-
-                    b.Property<string>("Category")
-                        .IsRequired()
-                        .HasMaxLength(50)
-                        .HasColumnType("nvarchar(50)");
-
-                    b.Property<DateTime>("CreatedAt")
-                        .HasColumnType("datetime2");
-
-                    b.Property<string>("Description")
-                        .IsRequired()
-                        .HasMaxLength(500)
-                        .HasColumnType("nvarchar(500)");
-
-                    b.Property<bool>("IsResolved")
-                        .HasColumnType("bit");
-
-                    b.Property<Guid?>("OriginBeatId")
-                        .HasColumnType("uniqueidentifier");
-
-                    b.Property<Guid?>("ResolvedBeatId")
-                        .HasColumnType("uniqueidentifier");
-
-                    b.Property<Guid>("StrandId")
-                        .HasColumnType("uniqueidentifier");
-
-                    b.Property<DateTime>("UpdatedAt")
-                        .HasColumnType("datetime2");
-
-                    b.HasKey("Id");
-
-                    b.HasIndex("StrandId", "IsResolved");
-
-                    b.ToTable("StrandOpenThreads");
-                });
-
-            modelBuilder.Entity("StreetSamurai.Core.Data.Entities.StrandPublication", b =>
-                {
-                    b.Property<Guid>("Id")
-                        .ValueGeneratedOnAdd()
-                        .HasColumnType("uniqueidentifier");
-
-                    b.Property<int>("BeatCount")
-                        .HasColumnType("int");
-
-                    b.Property<long>("ByteSize")
-                        .HasColumnType("bigint");
-
-                    b.Property<DateTime?>("CompletedAt")
-                        .HasColumnType("datetime2");
-
-                    b.Property<string>("Error")
-                        .HasColumnType("nvarchar(max)");
-
-                    b.Property<string>("Format")
-                        .IsRequired()
-                        .HasMaxLength(8)
-                        .HasColumnType("nvarchar(8)");
-
-                    b.Property<string>("Path")
-                        .HasMaxLength(600)
-                        .HasColumnType("nvarchar(600)");
-
-                    b.Property<DateTime>("StartedAt")
-                        .HasColumnType("datetime2");
-
-                    b.Property<string>("Status")
-                        .IsRequired()
-                        .HasMaxLength(20)
-                        .HasColumnType("nvarchar(20)");
-
-                    b.Property<Guid>("StrandId")
-                        .HasColumnType("uniqueidentifier");
-
-                    b.HasKey("Id");
-
-                    b.HasIndex("StrandId", "StartedAt");
-
-                    b.ToTable("StrandPublications");
-                });
-
-            modelBuilder.Entity("StreetSamurai.Core.Data.Entities.StrandReview", b =>
-                {
-                    b.Property<Guid>("Id")
-                        .ValueGeneratedOnAdd()
-                        .HasColumnType("uniqueidentifier");
-
-                    b.Property<int>("BeatCount")
-                        .HasColumnType("int");
-
-                    b.Property<int?>("ClusterId")
-                        .HasColumnType("int");
-
-                    b.Property<string>("ClusterLabel")
-                        .HasColumnType("nvarchar(max)");
-
-                    b.Property<string>("ContentHash")
-                        .IsRequired()
-                        .HasMaxLength(64)
-                        .HasColumnType("nvarchar(64)");
-
-                    b.Property<string>("Contradictions")
-                        .HasColumnType("nvarchar(max)");
-
-                    b.Property<DateTime>("CreatedAt")
-                        .HasColumnType("datetime2");
-
-                    b.Property<int?>("FlowScore")
-                        .HasColumnType("int");
-
-                    b.Property<Guid?>("FocusGroupId")
-                        .HasColumnType("uniqueidentifier");
-
-                    b.Property<string>("FocusGroupName")
-                        .HasColumnType("nvarchar(max)");
-
-                    b.Property<string>("Improvements")
-                        .HasColumnType("nvarchar(max)");
-
-                    b.Property<string>("Model")
-                        .HasMaxLength(80)
-                        .HasColumnType("nvarchar(80)");
-
-                    b.Property<string>("PersonaBlurb")
-                        .HasMaxLength(400)
-                        .HasColumnType("nvarchar(400)");
-
-                    b.Property<string>("PersonaId")
-                        .IsRequired()
-                        .HasMaxLength(40)
-                        .HasColumnType("nvarchar(40)");
-
-                    b.Property<string>("PersonaName")
-                        .IsRequired()
-                        .HasMaxLength(80)
-                        .HasColumnType("nvarchar(80)");
-
-                    b.Property<string>("ProviderId")
-                        .IsRequired()
-                        .HasMaxLength(40)
-                        .HasColumnType("nvarchar(40)");
-
-                    b.Property<string>("ReviewText")
-                        .IsRequired()
-                        .HasColumnType("nvarchar(max)");
-
-                    b.Property<DateTime>("ReviewedAt")
-                        .HasColumnType("datetime2");
-
-                    b.Property<int>("Score")
-                        .HasColumnType("int");
-
-                    b.Property<Guid>("StrandId")
-                        .HasColumnType("uniqueidentifier");
-
-                    b.Property<DateTime>("UpdatedAt")
-                        .HasColumnType("datetime2");
-
-                    b.HasKey("Id");
-
-                    b.HasIndex("StrandId", "ReviewedAt");
-
-                    b.ToTable("StrandReviews");
-                });
-
-            modelBuilder.Entity("StreetSamurai.Core.Data.Entities.StrandReviewBeatScore", b =>
-                {
-                    b.Property<Guid>("ReviewId")
-                        .HasColumnType("uniqueidentifier");
-
-                    b.Property<int>("BeatNumber")
-                        .HasColumnType("int");
-
-                    b.Property<string>("Contradictions")
-                        .HasColumnType("nvarchar(max)");
-
-                    b.Property<string>("Gripes")
-                        .HasColumnType("nvarchar(max)");
-
-                    b.Property<int>("Score")
-                        .HasColumnType("int");
-
-                    b.HasKey("ReviewId", "BeatNumber");
-
-                    b.ToTable("StrandReviewBeatScores");
-                });
-
-            modelBuilder.Entity("StreetSamurai.Core.Data.Entities.StrandReviewSummary", b =>
-                {
-                    b.Property<Guid>("Id")
-                        .ValueGeneratedOnAdd()
-                        .HasColumnType("uniqueidentifier");
-
-                    b.Property<double>("AvgScore")
-                        .HasColumnType("float");
-
-                    b.Property<string>("ContentHash")
-                        .HasMaxLength(64)
-                        .HasColumnType("nvarchar(64)");
-
-                    b.Property<DateTime>("GeneratedAt")
-                        .HasColumnType("datetime2");
-
-                    b.Property<int>("ReviewCount")
-                        .HasColumnType("int");
-
-                    b.Property<string>("ScoreDistributionJson")
-                        .HasColumnType("nvarchar(max)");
-
-                    b.Property<Guid>("StrandId")
-                        .HasColumnType("uniqueidentifier");
-
-                    b.Property<string>("SummaryMarkdown")
-                        .IsRequired()
-                        .HasColumnType("nvarchar(max)");
-
-                    b.HasKey("Id");
-
-                    b.HasIndex("StrandId")
-                        .IsUnique();
-
-                    b.ToTable("StrandReviewSummaries");
-                });
-
-            modelBuilder.Entity("StreetSamurai.Core.Data.Entities.StrandScoreHistory", b =>
-                {
-                    b.Property<int>("Id")
-                        .ValueGeneratedOnAdd()
-                        .HasColumnType("int");
-
-                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"));
-
-                    b.Property<int>("BeatCount")
-                        .HasColumnType("int");
-
-                    b.Property<string>("ContentHash")
-                        .IsRequired()
-                        .HasMaxLength(64)
-                        .HasColumnType("nvarchar(64)");
-
-                    b.Property<double>("MeanScore")
-                        .HasColumnType("float");
-
-                    b.Property<DateTime>("RecordedAt")
-                        .HasColumnType("datetime2");
-
-                    b.Property<int>("ReviewCount")
-                        .HasColumnType("int");
-
-                    b.Property<double?>("Sd")
-                        .HasColumnType("float");
-
-                    b.Property<Guid>("StrandId")
-                        .HasColumnType("uniqueidentifier");
-
-                    b.HasKey("Id");
-
-                    b.HasIndex("StrandId", "RecordedAt");
-
-                    b.ToTable("StrandScoreHistories");
-                });
-
-            modelBuilder.Entity("StreetSamurai.Core.Data.Entities.StrandSpineVersion", b =>
-                {
-                    b.Property<Guid>("Id")
-                        .ValueGeneratedOnAdd()
-                        .HasColumnType("uniqueidentifier");
-
-                    b.Property<int>("AmendmentCount")
-                        .HasColumnType("int");
-
-                    b.Property<string>("BibleHash")
-                        .IsRequired()
-                        .HasMaxLength(64)
-                        .HasColumnType("nvarchar(64)");
-
-                    b.Property<string>("Notes")
-                        .IsRequired()
-                        .HasMaxLength(1000)
-                        .HasColumnType("nvarchar(1000)");
-
-                    b.Property<DateTime>("PinnedAt")
-                        .HasColumnType("datetime2");
-
-                    b.Property<string>("PinnedBy")
-                        .IsRequired()
-                        .HasMaxLength(100)
-                        .HasColumnType("nvarchar(100)");
-
-                    b.Property<Guid>("StrandId")
-                        .HasColumnType("uniqueidentifier");
-
-                    b.Property<int>("StrandVersion")
-                        .HasColumnType("int");
-
-                    b.Property<string>("UserStoriesHash")
-                        .IsRequired()
-                        .HasMaxLength(64)
-                        .HasColumnType("nvarchar(64)");
-
-                    b.HasKey("Id");
-
-                    b.HasIndex("StrandId");
-
-                    b.HasIndex("StrandId", "StrandVersion")
-                        .IsUnique();
-
-                    b.ToTable("StrandSpineVersions");
                 });
 
             modelBuilder.Entity("StreetSamurai.Core.Data.Entities.Subsidiary", b =>
@@ -8726,6 +8735,9 @@ namespace StreetSamurai.Core.Migrations
                     b.Property<string>("Evidence")
                         .HasColumnType("nvarchar(max)");
 
+                    b.Property<Guid?>("NodeId")
+                        .HasColumnType("uniqueidentifier");
+
                     b.Property<string>("RuleTarget")
                         .IsRequired()
                         .HasMaxLength(80)
@@ -8741,15 +8753,12 @@ namespace StreetSamurai.Core.Migrations
                         .HasMaxLength(20)
                         .HasColumnType("nvarchar(20)");
 
-                    b.Property<Guid?>("StrandId")
-                        .HasColumnType("uniqueidentifier");
-
                     b.Property<DateTime>("UpdatedAt")
                         .HasColumnType("datetime2");
 
                     b.HasKey("Id");
 
-                    b.HasIndex("StrandId");
+                    b.HasIndex("NodeId");
 
                     b.HasIndex("Status", "CreatedAt");
 
@@ -9107,6 +9116,27 @@ namespace StreetSamurai.Core.Migrations
                     b.ToTable("ContinuityClaims", (string)null);
                 });
 
+            modelBuilder.Entity("StreetSamurai.Core.Data.Entities.ChapterNode", b =>
+                {
+                    b.HasBaseType("StreetSamurai.Core.Data.Entities.Node");
+
+                    b.HasDiscriminator().HasValue("chapter");
+                });
+
+            modelBuilder.Entity("StreetSamurai.Core.Data.Entities.SeriesNode", b =>
+                {
+                    b.HasBaseType("StreetSamurai.Core.Data.Entities.Node");
+
+                    b.HasDiscriminator().HasValue("series");
+                });
+
+            modelBuilder.Entity("StreetSamurai.Core.Data.Entities.StoryNode", b =>
+                {
+                    b.HasBaseType("StreetSamurai.Core.Data.Entities.Node");
+
+                    b.HasDiscriminator().HasValue("story");
+                });
+
             modelBuilder.Entity("StreetSamurai.Core.Data.Entities.Ammunition", b =>
                 {
                     b.HasOne("StreetSamurai.Core.Data.Entities.Entity", "Entity")
@@ -9426,9 +9456,9 @@ namespace StreetSamurai.Core.Migrations
                         .HasForeignKey("BeatId")
                         .OnDelete(DeleteBehavior.Restrict);
 
-                    b.HasOne("StreetSamurai.Core.Data.Entities.Strand", null)
+                    b.HasOne("StreetSamurai.Core.Data.Entities.Node", null)
                         .WithMany()
-                        .HasForeignKey("StrandId")
+                        .HasForeignKey("NodeId")
                         .OnDelete(DeleteBehavior.Cascade)
                         .IsRequired();
                 });
@@ -9658,13 +9688,13 @@ namespace StreetSamurai.Core.Migrations
 
             modelBuilder.Entity("StreetSamurai.Core.Data.Entities.CharacterEmotionalLedger", b =>
                 {
-                    b.HasOne("StreetSamurai.Core.Data.Entities.Strand", "Strand")
+                    b.HasOne("StreetSamurai.Core.Data.Entities.Node", "Node")
                         .WithMany()
-                        .HasForeignKey("StrandId")
+                        .HasForeignKey("NodeId")
                         .OnDelete(DeleteBehavior.Cascade)
                         .IsRequired();
 
-                    b.Navigation("Strand");
+                    b.Navigation("Node");
                 });
 
             modelBuilder.Entity("StreetSamurai.Core.Data.Entities.CharacterGeneticAncestry", b =>
@@ -10079,13 +10109,13 @@ namespace StreetSamurai.Core.Migrations
 
             modelBuilder.Entity("StreetSamurai.Core.Data.Entities.EmotionalExamination", b =>
                 {
-                    b.HasOne("StreetSamurai.Core.Data.Entities.Strand", "Strand")
+                    b.HasOne("StreetSamurai.Core.Data.Entities.Node", "Node")
                         .WithMany()
-                        .HasForeignKey("StrandId")
+                        .HasForeignKey("NodeId")
                         .OnDelete(DeleteBehavior.Cascade)
                         .IsRequired();
 
-                    b.Navigation("Strand");
+                    b.Navigation("Node");
                 });
 
             modelBuilder.Entity("StreetSamurai.Core.Data.Entities.Entertainment", b =>
@@ -10728,6 +10758,130 @@ namespace StreetSamurai.Core.Migrations
                     b.Navigation("Place");
                 });
 
+            modelBuilder.Entity("StreetSamurai.Core.Data.Entities.Node", b =>
+                {
+                    b.HasOne("StreetSamurai.Core.Data.Entities.Node", "ParentNode")
+                        .WithMany("Children")
+                        .HasForeignKey("ParentNodeId")
+                        .OnDelete(DeleteBehavior.Restrict);
+
+                    b.HasOne("StreetSamurai.Core.Data.Entities.Node", "PreviousNode")
+                        .WithMany()
+                        .HasForeignKey("PreviousNodeId")
+                        .OnDelete(DeleteBehavior.Restrict);
+
+                    b.Navigation("ParentNode");
+
+                    b.Navigation("PreviousNode");
+                });
+
+            modelBuilder.Entity("StreetSamurai.Core.Data.Entities.NodeBeat", b =>
+                {
+                    b.HasOne("StreetSamurai.Core.Data.Entities.Beat", "Beat")
+                        .WithMany("NodeBeats")
+                        .HasForeignKey("BeatId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+
+                    b.HasOne("StreetSamurai.Core.Data.Entities.Node", "Node")
+                        .WithMany("NodeBeats")
+                        .HasForeignKey("NodeId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+
+                    b.Navigation("Beat");
+
+                    b.Navigation("Node");
+                });
+
+            modelBuilder.Entity("StreetSamurai.Core.Data.Entities.NodeChapterSummary", b =>
+                {
+                    b.HasOne("StreetSamurai.Core.Data.Entities.Node", "Node")
+                        .WithMany()
+                        .HasForeignKey("NodeId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+
+                    b.Navigation("Node");
+                });
+
+            modelBuilder.Entity("StreetSamurai.Core.Data.Entities.NodeKeyword", b =>
+                {
+                    b.HasOne("StreetSamurai.Core.Data.Entities.Node", "Node")
+                        .WithMany("Keywords")
+                        .HasForeignKey("NodeId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+
+                    b.Navigation("Node");
+                });
+
+            modelBuilder.Entity("StreetSamurai.Core.Data.Entities.NodeOpenThread", b =>
+                {
+                    b.HasOne("StreetSamurai.Core.Data.Entities.Node", "Node")
+                        .WithMany()
+                        .HasForeignKey("NodeId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+
+                    b.Navigation("Node");
+                });
+
+            modelBuilder.Entity("StreetSamurai.Core.Data.Entities.NodePublication", b =>
+                {
+                    b.HasOne("StreetSamurai.Core.Data.Entities.Node", "Node")
+                        .WithMany("Publications")
+                        .HasForeignKey("NodeId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+
+                    b.Navigation("Node");
+                });
+
+            modelBuilder.Entity("StreetSamurai.Core.Data.Entities.NodeReview", b =>
+                {
+                    b.HasOne("StreetSamurai.Core.Data.Entities.Node", "Node")
+                        .WithMany("Reviews")
+                        .HasForeignKey("NodeId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+
+                    b.Navigation("Node");
+                });
+
+            modelBuilder.Entity("StreetSamurai.Core.Data.Entities.NodeReviewBeatScore", b =>
+                {
+                    b.HasOne("StreetSamurai.Core.Data.Entities.NodeReview", "Review")
+                        .WithMany("BeatScores")
+                        .HasForeignKey("ReviewId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+
+                    b.Navigation("Review");
+                });
+
+            modelBuilder.Entity("StreetSamurai.Core.Data.Entities.NodeReviewSummary", b =>
+                {
+                    b.HasOne("StreetSamurai.Core.Data.Entities.Node", "Node")
+                        .WithMany()
+                        .HasForeignKey("NodeId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+
+                    b.Navigation("Node");
+                });
+
+            modelBuilder.Entity("StreetSamurai.Core.Data.Entities.NodeScoreHistory", b =>
+                {
+                    b.HasOne("StreetSamurai.Core.Data.Entities.Node", "Node")
+                        .WithMany()
+                        .HasForeignKey("NodeId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+
+                    b.Navigation("Node");
+                });
+
             modelBuilder.Entity("StreetSamurai.Core.Data.Entities.PharmAlias", b =>
                 {
                     b.HasOne("StreetSamurai.Core.Data.Entities.Pharmaceutical", "Pharmaceutical")
@@ -10934,6 +11088,12 @@ namespace StreetSamurai.Core.Migrations
 
             modelBuilder.Entity("StreetSamurai.Core.Data.Entities.PlantPayoff", b =>
                 {
+                    b.HasOne("StreetSamurai.Core.Data.Entities.Node", "Node")
+                        .WithMany()
+                        .HasForeignKey("NodeId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+
                     b.HasOne("StreetSamurai.Core.Data.Entities.Beat", "PayoffBeat")
                         .WithMany()
                         .HasForeignKey("PayoffBeatId")
@@ -10944,17 +11104,11 @@ namespace StreetSamurai.Core.Migrations
                         .HasForeignKey("PlantBeatId")
                         .OnDelete(DeleteBehavior.NoAction);
 
-                    b.HasOne("StreetSamurai.Core.Data.Entities.Strand", "Strand")
-                        .WithMany()
-                        .HasForeignKey("StrandId")
-                        .OnDelete(DeleteBehavior.Cascade)
-                        .IsRequired();
+                    b.Navigation("Node");
 
                     b.Navigation("PayoffBeat");
 
                     b.Navigation("PlantBeat");
-
-                    b.Navigation("Strand");
                 });
 
             modelBuilder.Entity("StreetSamurai.Core.Data.Entities.Psionic", b =>
@@ -11028,130 +11182,6 @@ namespace StreetSamurai.Core.Migrations
                         .IsRequired();
 
                     b.Navigation("Entity");
-                });
-
-            modelBuilder.Entity("StreetSamurai.Core.Data.Entities.Strand", b =>
-                {
-                    b.HasOne("StreetSamurai.Core.Data.Entities.Strand", "ParentStrand")
-                        .WithMany("Children")
-                        .HasForeignKey("ParentStrandId")
-                        .OnDelete(DeleteBehavior.Restrict);
-
-                    b.HasOne("StreetSamurai.Core.Data.Entities.Strand", "PreviousStrand")
-                        .WithMany()
-                        .HasForeignKey("PreviousStrandId")
-                        .OnDelete(DeleteBehavior.Restrict);
-
-                    b.Navigation("ParentStrand");
-
-                    b.Navigation("PreviousStrand");
-                });
-
-            modelBuilder.Entity("StreetSamurai.Core.Data.Entities.StrandBeat", b =>
-                {
-                    b.HasOne("StreetSamurai.Core.Data.Entities.Beat", "Beat")
-                        .WithMany("StrandBeats")
-                        .HasForeignKey("BeatId")
-                        .OnDelete(DeleteBehavior.Cascade)
-                        .IsRequired();
-
-                    b.HasOne("StreetSamurai.Core.Data.Entities.Strand", "Strand")
-                        .WithMany("StrandBeats")
-                        .HasForeignKey("StrandId")
-                        .OnDelete(DeleteBehavior.Cascade)
-                        .IsRequired();
-
-                    b.Navigation("Beat");
-
-                    b.Navigation("Strand");
-                });
-
-            modelBuilder.Entity("StreetSamurai.Core.Data.Entities.StrandChapterSummary", b =>
-                {
-                    b.HasOne("StreetSamurai.Core.Data.Entities.Strand", "Strand")
-                        .WithMany()
-                        .HasForeignKey("StrandId")
-                        .OnDelete(DeleteBehavior.Cascade)
-                        .IsRequired();
-
-                    b.Navigation("Strand");
-                });
-
-            modelBuilder.Entity("StreetSamurai.Core.Data.Entities.StrandKeyword", b =>
-                {
-                    b.HasOne("StreetSamurai.Core.Data.Entities.Strand", "Strand")
-                        .WithMany("Keywords")
-                        .HasForeignKey("StrandId")
-                        .OnDelete(DeleteBehavior.Cascade)
-                        .IsRequired();
-
-                    b.Navigation("Strand");
-                });
-
-            modelBuilder.Entity("StreetSamurai.Core.Data.Entities.StrandOpenThread", b =>
-                {
-                    b.HasOne("StreetSamurai.Core.Data.Entities.Strand", "Strand")
-                        .WithMany()
-                        .HasForeignKey("StrandId")
-                        .OnDelete(DeleteBehavior.Cascade)
-                        .IsRequired();
-
-                    b.Navigation("Strand");
-                });
-
-            modelBuilder.Entity("StreetSamurai.Core.Data.Entities.StrandPublication", b =>
-                {
-                    b.HasOne("StreetSamurai.Core.Data.Entities.Strand", "Strand")
-                        .WithMany("Publications")
-                        .HasForeignKey("StrandId")
-                        .OnDelete(DeleteBehavior.Cascade)
-                        .IsRequired();
-
-                    b.Navigation("Strand");
-                });
-
-            modelBuilder.Entity("StreetSamurai.Core.Data.Entities.StrandReview", b =>
-                {
-                    b.HasOne("StreetSamurai.Core.Data.Entities.Strand", "Strand")
-                        .WithMany("Reviews")
-                        .HasForeignKey("StrandId")
-                        .OnDelete(DeleteBehavior.Cascade)
-                        .IsRequired();
-
-                    b.Navigation("Strand");
-                });
-
-            modelBuilder.Entity("StreetSamurai.Core.Data.Entities.StrandReviewBeatScore", b =>
-                {
-                    b.HasOne("StreetSamurai.Core.Data.Entities.StrandReview", "Review")
-                        .WithMany("BeatScores")
-                        .HasForeignKey("ReviewId")
-                        .OnDelete(DeleteBehavior.Cascade)
-                        .IsRequired();
-
-                    b.Navigation("Review");
-                });
-
-            modelBuilder.Entity("StreetSamurai.Core.Data.Entities.StrandReviewSummary", b =>
-                {
-                    b.HasOne("StreetSamurai.Core.Data.Entities.Strand", "Strand")
-                        .WithMany()
-                        .HasForeignKey("StrandId")
-                        .OnDelete(DeleteBehavior.Cascade)
-                        .IsRequired();
-
-                    b.Navigation("Strand");
-                });
-
-            modelBuilder.Entity("StreetSamurai.Core.Data.Entities.StrandScoreHistory", b =>
-                {
-                    b.HasOne("StreetSamurai.Core.Data.Entities.Strand", "Strand")
-                        .WithMany()
-                        .HasForeignKey("StrandId")
-                        .OnDelete(DeleteBehavior.Cascade)
-                        .IsRequired();
-
-                    b.Navigation("Strand");
                 });
 
             modelBuilder.Entity("StreetSamurai.Core.Data.Entities.Subsidiary", b =>
@@ -11540,7 +11570,7 @@ namespace StreetSamurai.Core.Migrations
 
             modelBuilder.Entity("StreetSamurai.Core.Data.Entities.Beat", b =>
                 {
-                    b.Navigation("StrandBeats");
+                    b.Navigation("NodeBeats");
                 });
 
             modelBuilder.Entity("StreetSamurai.Core.Data.Entities.Book", b =>
@@ -11789,6 +11819,24 @@ namespace StreetSamurai.Core.Migrations
                     b.Navigation("Locations");
                 });
 
+            modelBuilder.Entity("StreetSamurai.Core.Data.Entities.Node", b =>
+                {
+                    b.Navigation("Children");
+
+                    b.Navigation("Keywords");
+
+                    b.Navigation("NodeBeats");
+
+                    b.Navigation("Publications");
+
+                    b.Navigation("Reviews");
+                });
+
+            modelBuilder.Entity("StreetSamurai.Core.Data.Entities.NodeReview", b =>
+                {
+                    b.Navigation("BeatScores");
+                });
+
             modelBuilder.Entity("StreetSamurai.Core.Data.Entities.Pharmaceutical", b =>
                 {
                     b.Navigation("Aliases");
@@ -11830,24 +11878,6 @@ namespace StreetSamurai.Core.Migrations
                     b.Navigation("KnownPractitioners");
 
                     b.Navigation("StoryHooks");
-                });
-
-            modelBuilder.Entity("StreetSamurai.Core.Data.Entities.Strand", b =>
-                {
-                    b.Navigation("Children");
-
-                    b.Navigation("Keywords");
-
-                    b.Navigation("Publications");
-
-                    b.Navigation("Reviews");
-
-                    b.Navigation("StrandBeats");
-                });
-
-            modelBuilder.Entity("StreetSamurai.Core.Data.Entities.StrandReview", b =>
-                {
-                    b.Navigation("BeatScores");
                 });
 
             modelBuilder.Entity("StreetSamurai.Core.Data.Entities.Subsidiary", b =>

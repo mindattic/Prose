@@ -2381,7 +2381,7 @@ hr {
 .writer-pane-empty { display: flex; flex-direction: column; align-items: center; justify-content: center; gap: .6rem; height: 100%; min-height: 50vh; opacity: .6; text-align: center; }
 .writer-pane-empty i { font-size: 2rem; }
 
-/* Embedded (iframe) mode: the strand page renders bare, no shell chrome */
+/* Embedded (iframe) mode: the node page renders bare, no shell chrome */
 .app-shell.app-embed { padding: 0; }
 .app-shell.app-embed .topnav-main { margin: 0; }
 
@@ -2569,7 +2569,7 @@ hr {
 /* ── Dark theme (explicit alias for the default dark/GLMZ look) ──────────── */
 /* No overrides needed — base CSS styles are the dark theme. */
 
-/* ── TTS engine selector row (Strand editor) ── */
+/* ── TTS engine selector row (Node editor) ── */
 .tts-engine-row { background: #0d0d0d; }
 .tts-engine-row .form-range { accent-color: #0dcaf0; }
 
@@ -2646,7 +2646,7 @@ hr {
 .app-shell[data-theme="light"] .tab-item.active { background: #fbf7f0; border-color: rgba(0,0,0,.12); color: #2c2018; }
 .app-shell[data-theme="light"] .tab-close:hover { background: rgba(0,0,0,.10); }
 
-/* ── Writer tab strand picker ────────────────────────────────────────── */
+/* ── Writer tab node picker ────────────────────────────────────────── */
 .writer-pick { max-width: 520px; padding: 2rem 0 1rem; }
 .writer-pick-label { font-weight: 600; font-size: 1rem; margin-bottom: .75rem; color: #e6edf3; }
 .writer-pick-row { display: flex; gap: .5rem; align-items: center; }

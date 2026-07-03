@@ -7,9 +7,9 @@ using StreetSamurai.Core.Services;
 namespace StreetSamurai.Blazor.Cli;
 
 /// <summary>
-/// ss --write-outline --slug &lt;strandSlug&gt; [--json] [--skip-audit]
+/// ss --write-outline --slug &lt;nodeSlug&gt; [--json] [--skip-audit]
 ///
-/// Generates a beat-by-beat narrative outline of a strand and runs an
+/// Generates a beat-by-beat narrative outline of a node and runs an
 /// adversarial logic audit that finds plot holes, canon violations,
 /// impossible actions, prop errors, and causality breaks.
 ///
@@ -35,7 +35,7 @@ public static class WriteOutlineCli
 
         if (slug == null)
         {
-            Console.Error.WriteLine("Usage: ss --write-outline --slug <strandSlug> [--json] [--skip-audit]");
+            Console.Error.WriteLine("Usage: ss --write-outline --slug <nodeSlug> [--json] [--skip-audit]");
             return 2;
         }
 
@@ -43,27 +43,27 @@ public static class WriteOutlineCli
         var dbFactory = services.GetRequiredService<IDbContextFactory<StreetSamuraiDbContext>>();
         await using var db = await dbFactory.CreateDbContextAsync();
 
-        var strand = await db.Strands.AsNoTracking()
-            .FirstOrDefaultAsync(s => s.Slug == slug || s.StrandCode == slug);
-        if (strand == null)
+        var node = await db.Nodes.AsNoTracking()
+            .FirstOrDefaultAsync(s => s.Slug == slug || s.NodeCode == slug);
+        if (node == null)
         {
-            Console.Error.WriteLine($"Strand '{slug}' not found.");
+            Console.Error.WriteLine($"Node '{slug}' not found.");
             return 2;
         }
 
         if (!jsonMode)
         {
             var mode = skipAudit ? "outline only" : "outline + logic audit";
-            Console.WriteLine($"Writing outline for '{strand.Title}' ({mode})…\n");
+            Console.WriteLine($"Writing outline for '{node.Title}' ({mode})…\n");
         }
 
-        var result = await auditSvc.AuditAsync(strand.Id, includeLogicCheck: !skipAudit);
+        var result = await auditSvc.AuditAsync(node.Id, includeLogicCheck: !skipAudit);
 
         if (jsonMode)
         {
             Console.WriteLine(JsonSerializer.Serialize(new
             {
-                strand_id    = result.StrandId,
+                node_id    = result.NodeId,
                 slug,
                 title        = result.Title,
                 beat_count   = result.BeatCount,

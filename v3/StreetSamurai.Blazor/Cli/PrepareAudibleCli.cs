@@ -7,20 +7,20 @@ namespace StreetSamurai.Blazor.Cli;
 
 /// <summary>
 /// <c>ss --prepare-audible</c> — build an Audible AI-narration hand-off package
-/// for a strand: a narration-clean manuscript (.audible.txt), a pronunciation
+/// for a node: a narration-clean manuscript (.audible.txt), a pronunciation
 /// guide (.pronunciation.md), and a README with submission instructions.
 ///
 /// All three files land in {PublishExportDirectory}/{Title}/Audible/.
 ///
 /// Args (one of --slug / --id required):
-///   --slug &lt;slug&gt;        Strand slug.
-///   --id &lt;guid|prefix&gt;  Strand id; a unique prefix is accepted.
+///   --slug &lt;slug&gt;        Node slug.
+///   --id &lt;guid|prefix&gt;  Node id; a unique prefix is accepted.
 ///   --no-phonetics       Skip the optional LLM phonetics pass (leave "Say it as"
 ///                        column blank for the author to fill in manually).
 ///
 /// Exit codes:
 ///   0 — package written successfully.
-///   1 — bad args / strand not found / write error.
+///   1 — bad args / node not found / write error.
 /// </summary>
 public static class PrepareAudibleCli
 {
@@ -47,25 +47,25 @@ public static class PrepareAudibleCli
         }
 
         var dbFactory = services.GetRequiredService<IDbContextFactory<StreetSamuraiDbContext>>();
-        Guid strandId; string strandSlug, strandTitle;
+        Guid nodeId; string nodeSlug, nodeTitle;
 
         await using (var db = await dbFactory.CreateDbContextAsync())
         {
-            Strand? strand;
+            Node? node;
             if (!string.IsNullOrWhiteSpace(slug))
             {
-                strand = await db.Strands.AsNoTracking()
+                node = await db.Nodes.AsNoTracking()
                     .FirstOrDefaultAsync(s => s.Slug == slug);
             }
             else if (Guid.TryParse(id, out var exact))
             {
-                strand = await db.Strands.AsNoTracking()
+                node = await db.Nodes.AsNoTracking()
                     .FirstOrDefaultAsync(s => s.Id == exact);
             }
             else
             {
                 var prefix = id!.ToLowerInvariant();
-                var matches = await db.Strands.AsNoTracking()
+                var matches = await db.Nodes.AsNoTracking()
                     .Where(s => s.Id.ToString().StartsWith(prefix))
                     .Take(2)
                     .ToListAsync();
@@ -74,25 +74,25 @@ public static class PrepareAudibleCli
                     Console.Error.WriteLine($"[prepare-audible] Id prefix '{id}' is ambiguous. Use a longer prefix or the full id.");
                     return 1;
                 }
-                strand = matches.FirstOrDefault();
+                node = matches.FirstOrDefault();
             }
 
-            if (strand == null)
+            if (node == null)
             {
                 var locator = slug != null ? $"slug '{slug}'" : $"id '{id}'";
-                Console.Error.WriteLine($"[prepare-audible] No strand found for {locator}.");
+                Console.Error.WriteLine($"[prepare-audible] No node found for {locator}.");
                 return 1;
             }
 
-            strandId    = strand.Id;
-            strandSlug  = strand.Slug;
-            strandTitle = strand.Title;
+            nodeId    = node.Id;
+            nodeSlug  = node.Slug;
+            nodeTitle = node.Title;
         }
 
         Console.WriteLine("[prepare-audible] Building Audible package:");
-        Console.WriteLine($"   Id:    {strandId}");
-        Console.WriteLine($"   Slug:  {strandSlug}");
-        Console.WriteLine($"   Title: {strandTitle}");
+        Console.WriteLine($"   Id:    {nodeId}");
+        Console.WriteLine($"   Slug:  {nodeSlug}");
+        Console.WriteLine($"   Title: {nodeTitle}");
         Console.WriteLine($"   Phonetics LLM pass: {(withPhonetics ? "enabled" : "disabled")}");
 
         var service = services.GetRequiredService<AudiblePackageService>();
@@ -100,7 +100,7 @@ public static class PrepareAudibleCli
         AudiblePackageResult result;
         try
         {
-            result = await service.BuildAsync(strandId, withPhonetics);
+            result = await service.BuildAsync(nodeId, withPhonetics);
         }
         catch (Exception ex)
         {

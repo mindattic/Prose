@@ -10,7 +10,7 @@ namespace StreetSamurai.Core.Services;
 // ── Beat-Lens analysis services ───────────────────────────────────────────────
 //
 // Three sibling "behave like people" lenses, each a single-LLM-call read over a
-// strand's ordered, numbered beats. They write advisory Findings (no new DB
+// node's ordered, numbered beats. They write advisory Findings (no new DB
 // tables, no migration) and return a per-lens score + issue list.
 //
 //   CausalityService          — events follow by therefore/but, not "and then".
@@ -21,12 +21,12 @@ namespace StreetSamurai.Core.Services;
 //   ss --causality-check     --slug <slug> [--json]
 //   ss --affect-check        --slug <slug> [--json]
 //   ss --interpersonal-check --slug <slug> [--json]
-//   MCP: causality_check / affect_check / interpersonal_check (strandIdOrSlug)
+//   MCP: causality_check / affect_check / interpersonal_check (nodeIdOrSlug)
 
 public record LensIssue(int? Beat, string Kind, string Evidence, string Fix, string Severity);
 
 public record LensResult(
-    Guid StrandId, string Slug, string Title,
+    Guid NodeId, string Slug, string Title,
     string Lens, double Score,
     IReadOnlyList<LensIssue> Issues, string Recommendation);
 
@@ -58,25 +58,25 @@ public abstract class BeatLensService
     /// <summary>The lens-specific rubric: what to reward, what to flag.</summary>
     protected abstract string Rubric { get; }
 
-    public async Task<LensResult> RunAsync(Guid strandId, int maxChars = 45000, CancellationToken ct = default)
+    public async Task<LensResult> RunAsync(Guid nodeId, int maxChars = 45000, CancellationToken ct = default)
     {
         await using var db = await DbFactory.CreateDbContextAsync(ct);
 
-        var strand = await db.Strands.AsNoTracking()
-            .FirstOrDefaultAsync(s => s.Id == strandId, ct)
-            ?? throw new InvalidOperationException($"Strand {strandId} not found.");
+        var node = await db.Nodes.AsNoTracking()
+            .FirstOrDefaultAsync(s => s.Id == nodeId, ct)
+            ?? throw new InvalidOperationException($"Node {nodeId} not found.");
 
-        var hasChildren = await db.Strands.AsNoTracking()
-            .AnyAsync(s => s.ParentStrandId == strandId && s.Kind == "chapter" && !s.IsWIP, ct);
+        var hasChildren = await db.Nodes.AsNoTracking()
+            .AnyAsync(s => s.ParentNodeId == nodeId && s.Kind == "chapter" && !s.IsWIP, ct);
 
         List<(int Num, string Text)> beats;
         if (hasChildren)
         {
             var rows = await (
-                from s in db.Strands.AsNoTracking()
-                join sb in db.StrandBeats.AsNoTracking() on s.Id equals sb.StrandId
+                from s in db.Nodes.AsNoTracking()
+                join sb in db.NodeBeats.AsNoTracking() on s.Id equals sb.NodeId
                 join b in db.Beats.AsNoTracking() on sb.BeatId equals b.Id
-                where s.ParentStrandId == strandId && s.Kind == "chapter" && !s.IsWIP && sb.IsEnabled
+                where s.ParentNodeId == nodeId && s.Kind == "chapter" && !s.IsWIP && sb.IsEnabled
                 orderby s.SortKey, sb.SortKey
                 select new { b.Text, b.Number }
             ).ToListAsync(ct);
@@ -87,9 +87,9 @@ public abstract class BeatLensService
         else
         {
             var rows = await (
-                from sb in db.StrandBeats.AsNoTracking()
+                from sb in db.NodeBeats.AsNoTracking()
                 join b in db.Beats.AsNoTracking() on sb.BeatId equals b.Id
-                where sb.StrandId == strandId
+                where sb.NodeId == nodeId
                 orderby sb.SortKey
                 select new { b.Text, b.Number }
             ).ToListAsync(ct);
@@ -98,7 +98,7 @@ public abstract class BeatLensService
         }
 
         if (beats.Count == 0)
-            return new LensResult(strandId, strand.Slug, strand.Title, LensName, 0,
+            return new LensResult(nodeId, node.Slug, node.Title, LensName, 0,
                 Array.Empty<LensIssue>(), "No prose to analyse.");
 
         var sb2 = new StringBuilder();
@@ -115,14 +115,14 @@ public abstract class BeatLensService
 
 {{Rubric}}
 
-The prose below is one story strand. Beats are separated and labelled "### Beat N".
+The prose below is one story node. Beats are separated and labelled "### Beat N".
 
 Return ONLY a JSON object with these exact keys:
 {
-  "score": <int 0-100 — overall quality of the strand ON THIS LENS ONLY>,
+  "score": <int 0-100 — overall quality of the node ON THIS LENS ONLY>,
   "issues": [
     {
-      "beat": <int beat number, or null if strand-wide>,
+      "beat": <int beat number, or null if node-wide>,
       "kind": "<short-kebab kind, e.g. and-then / unmotivated / dead-exchange>",
       "evidence": "<a direct quote of the weakest moment>",
       "fix": "<one concrete, beat-scoped directive to repair it>",
@@ -131,7 +131,7 @@ Return ONLY a JSON object with these exact keys:
   ]
 }
 
-Report only real, high-value issues (max 12), worst first. If the strand is strong on this lens,
+Report only real, high-value issues (max 12), worst first. If the node is strong on this lens,
 return few or no issues and a high score. Be specific and quote the text.
 
 PROSE:
@@ -162,20 +162,20 @@ PROSE:
         }
         catch (Exception ex)
         {
-            Log.LogWarning(ex, "{Tag} lens failed for {Slug}", Tag, strand.Slug);
-            return new LensResult(strandId, strand.Slug, strand.Title, LensName, score,
+            Log.LogWarning(ex, "{Tag} lens failed for {Slug}", Tag, node.Slug);
+            return new LensResult(nodeId, node.Slug, node.Title, LensName, score,
                 issues, "Lens call failed — re-run.");
         }
 
-        // Refresh findings for this lens on this strand
-        Findings.DeleteBySummaryPrefix($"strand:{strand.Slug}", Tag + " ");
+        // Refresh findings for this lens on this node
+        Findings.DeleteBySummaryPrefix($"node:{node.Slug}", Tag + " ");
         foreach (var iss in issues)
         {
             var sev = iss.Severity == "High" ? FindingSeverity.High
                     : iss.Severity == "Low"  ? FindingSeverity.Low
                     : FindingSeverity.Medium;
             Findings.Upsert(
-                filePath:     $"strand:{strand.Slug}",
+                filePath:     $"node:{node.Slug}",
                 chapterId:    null,
                 category:     FindingCategory.Other,
                 severity:     sev,
@@ -188,7 +188,7 @@ PROSE:
             ? $"{LensName}: clean ({score:F0}/100)."
             : $"{LensName}: {score:F0}/100; {issues.Count(i => i.Severity == "High")} high / {issues.Count} total issues filed.";
 
-        return new LensResult(strandId, strand.Slug, strand.Title, LensName, score, issues, rec);
+        return new LensResult(nodeId, node.Slug, node.Title, LensName, score, issues, rec);
     }
 
     // ── helpers ───────────────────────────────────────────────────────────────
@@ -262,7 +262,7 @@ public sealed class InterpersonalDynamicsService : BeatLensService
     protected override string Tag => "INTERPERSONAL";
     protected override string LensName => "Interpersonal Dynamics";
     protected override string LensTitle =>
-        "You judge INTERPERSONAL DYNAMICS — the relational layer that lifts a strand to 90+.";
+        "You judge INTERPERSONAL DYNAMICS — the relational layer that lifts a node to 90+.";
     protected override string Rubric => """
         Every scene with two or more people is a relationship under pressure, carried on TWO channels:
         VERBAL (what's said, what's pointedly NOT said, the answer to the question under the question,

@@ -75,7 +75,7 @@ public static class ImportMarkdownCli
 
         Console.WriteLine($"[import-md] Found {beats.Count} beat(s) in file{(dryRun ? " (dry-run)" : "")}.");
 
-        var workbench = services.GetRequiredService<StrandWorkbenchService>();
+        var workbench = services.GetRequiredService<NodeWorkbenchService>();
         var dbFactory = services.GetRequiredService<IDbContextFactory<StreetSamuraiDbContext>>();
 
         int updated = 0, skipped = 0, notFound = 0;

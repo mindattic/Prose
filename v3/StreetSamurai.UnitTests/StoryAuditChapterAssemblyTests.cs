@@ -8,8 +8,8 @@ using StreetSamurai.Core.Services;
 namespace StreetSamurai.UnitTests;
 
 /// <summary>
-/// Pins the 2026-06-23 fix where StoryAuditService audits a BOOK strand against
-/// its live child-chapter prose instead of the book strand's own beats (which
+/// Pins the 2026-06-23 fix where StoryAuditService audits a BOOK node against
+/// its live child-chapter prose instead of the book node's own beats (which
 /// for legacy books still hold an old condensed/outline draft). A capturing fake
 /// ILlmService records the exact prose handed to each commandment check so we can
 /// assert which text was audited — no real model calls, no network.
@@ -30,7 +30,7 @@ public class StoryAuditChapterAssemblyTests
         tempRoot = Path.Combine(Path.GetTempPath(), "ss-audit-tests-" + Guid.NewGuid().ToString("N"));
         Directory.CreateDirectory(tempRoot);
         paths = new TestPathProviderWithRoot(tempRoot);
-        dbFactory = TestDbFactory.For(paths, "strands");
+        dbFactory = TestDbFactory.For(paths, "nodes");
         llm = new CapturingLlmService();
         svc = new StoryAuditService(llm, new PlantPayoffService(dbFactory), dbFactory);
     }
@@ -43,11 +43,11 @@ public class StoryAuditChapterAssemblyTests
     }
 
     [Test]
-    public async Task Audit_BookStrand_UsesLiveChapterProse_NotOwnBeats()
+    public async Task Audit_BookNode_UsesLiveChapterProse_NotOwnBeats()
     {
-        // Book strand whose OWN beat is the stale spine; two child chapters carry
+        // Book node whose OWN beat is the stale spine; two child chapters carry
         // the live manuscript. The audit must read the chapters, not the spine.
-        var bookId = await SeedStrandWithBeatAsync("book", "STALE_SPINE_TEXT — old condensed draft.");
+        var bookId = await SeedNodeWithBeatAsync("book", "STALE_SPINE_TEXT — old condensed draft.");
         await SeedChapterAsync(bookId, sortKey: 1, "LIVE_CHAPTER_ONE — the arcology had no clocks.");
         await SeedChapterAsync(bookId, sortKey: 2, "LIVE_CHAPTER_TWO — managed air, flat light.");
 
@@ -57,13 +57,13 @@ public class StoryAuditChapterAssemblyTests
         Assert.That(prose, Does.Contain("LIVE_CHAPTER_ONE"));
         Assert.That(prose, Does.Contain("LIVE_CHAPTER_TWO"));
         Assert.That(prose, Does.Not.Contain("STALE_SPINE_TEXT"),
-            "Book strands must be audited against live chapter prose, not the legacy spine beats.");
+            "Book nodes must be audited against live chapter prose, not the legacy spine beats.");
     }
 
     [Test]
     public async Task Audit_ChapterChildOrder_IsPreservedBySortKey()
     {
-        var bookId = await SeedStrandWithBeatAsync("book", "SPINE.");
+        var bookId = await SeedNodeWithBeatAsync("book", "SPINE.");
         await SeedChapterAsync(bookId, sortKey: 2, "SECOND.");
         await SeedChapterAsync(bookId, sortKey: 1, "FIRST.");
 
@@ -76,11 +76,11 @@ public class StoryAuditChapterAssemblyTests
     }
 
     [Test]
-    public async Task Audit_LeafStrand_WithNoChildren_UsesOwnBeats()
+    public async Task Audit_LeafNode_WithNoChildren_UsesOwnBeats()
     {
-        // A strand with no child chapters falls back to its own beats — the
-        // pre-existing behavior must be preserved for non-book strands.
-        var leafId = await SeedStrandWithBeatAsync("chapter", "LEAF_OWN_BEAT — direct prose.");
+        // A node with no child chapters falls back to its own beats — the
+        // pre-existing behavior must be preserved for non-book nodes.
+        var leafId = await SeedNodeWithBeatAsync("chapter", "LEAF_OWN_BEAT — direct prose.");
 
         await svc.AuditAsync(leafId);
 
@@ -90,22 +90,20 @@ public class StoryAuditChapterAssemblyTests
 
     // ── seeding helpers ─────────────────────────────────────────────────────
 
-    private async Task<Guid> SeedStrandWithBeatAsync(string kind, string beatText)
+    private async Task<Guid> SeedNodeWithBeatAsync(string kind, string beatText)
     {
         await using var db = await dbFactory.CreateDbContextAsync();
         var id = Guid.CreateVersion7();
-        db.Strands.Add(new Strand
-        {
-            Id = id,
-            Slug = "s-" + Guid.NewGuid().ToString("N")[..8],
-            Title = "T",
-            Kind = kind,
-            Status = "draft",
-            SortKey = 100,
-        });
+        var node = NodeFactory.Create(kind);
+        node.Id = id;
+        node.Slug = "s-" + Guid.NewGuid().ToString("N")[..8];
+        node.Title = "T";
+        node.Status = "draft";
+        node.SortKey = 100;
+        db.Nodes.Add(node);
         var beat = new Beat { Id = Guid.CreateVersion7(), Number = ++beatNumber, Text = beatText };
         db.Beats.Add(beat);
-        db.StrandBeats.Add(new StrandBeat { StrandId = id, BeatId = beat.Id, SortKey = 1, IsEnabled = true });
+        db.NodeBeats.Add(new NodeBeat { NodeId = id, BeatId = beat.Id, SortKey = 1, IsEnabled = true });
         await db.SaveChangesAsync();
         return id;
     }
@@ -114,19 +112,19 @@ public class StoryAuditChapterAssemblyTests
     {
         await using var db = await dbFactory.CreateDbContextAsync();
         var chId = Guid.CreateVersion7();
-        db.Strands.Add(new Strand
+        db.Nodes.Add(new ChapterNode
         {
             Id = chId,
             Slug = "ch-" + Guid.NewGuid().ToString("N")[..8],
             Title = "Ch",
             Kind = "chapter",
             Status = "draft",
-            ParentStrandId = parentId,
+            ParentNodeId = parentId,
             SortKey = sortKey,
         });
         var beat = new Beat { Id = Guid.CreateVersion7(), Number = ++beatNumber, Text = beatText };
         db.Beats.Add(beat);
-        db.StrandBeats.Add(new StrandBeat { StrandId = chId, BeatId = beat.Id, SortKey = 1, IsEnabled = true });
+        db.NodeBeats.Add(new NodeBeat { NodeId = chId, BeatId = beat.Id, SortKey = 1, IsEnabled = true });
         await db.SaveChangesAsync();
     }
 
@@ -148,7 +146,7 @@ public class StoryAuditChapterAssemblyTests
         public string LastAuditedProse()
         {
             var p = Prompts.FirstOrDefault() ?? "";
-            const string marker = "STRAND PROSE:";
+            const string marker = "NODE PROSE:";
             var i = p.IndexOf(marker, StringComparison.Ordinal);
             return i >= 0 ? p[(i + marker.Length)..] : p;
         }

@@ -8,8 +8,8 @@ namespace StreetSamurai.Blazor.Cli;
 /// <summary>
 /// CLI surface for the deterministic timeline-consistency validator (RFC 0009 §5).
 ///
-///   ss --timeline-check --slug &lt;strandSlug&gt;
-///   ss --timeline-check --id   &lt;strandGuid&gt;
+///   ss --timeline-check --slug &lt;nodeSlug&gt;
+///   ss --timeline-check --id   &lt;nodeGuid&gt;
 ///
 /// Exit code 0 when no high-severity findings; exit code 1 when any high-severity
 /// findings are present (medium/low findings still print but don't fail the exit code).
@@ -32,7 +32,7 @@ public static class TimelineCheckCli
 
         if (slug == null && idArg == null)
         {
-            Console.Error.WriteLine("Usage: ss --timeline-check (--slug <strandSlug> | --id <strandGuid>)");
+            Console.Error.WriteLine("Usage: ss --timeline-check (--slug <nodeSlug> | --id <nodeGuid>)");
             return 1;
         }
 
@@ -40,32 +40,32 @@ public static class TimelineCheckCli
         var dbFactory = services.GetRequiredService<IDbContextFactory<StreetSamuraiDbContext>>();
         await using var db = await dbFactory.CreateDbContextAsync();
 
-        Guid strandId;
+        Guid nodeId;
 
         if (!string.IsNullOrEmpty(idArg))
         {
-            if (!Guid.TryParse(idArg, out strandId)
-                && !Guid.TryParseExact(idArg, "N", out strandId))
+            if (!Guid.TryParse(idArg, out nodeId)
+                && !Guid.TryParseExact(idArg, "N", out nodeId))
             {
-                Console.Error.WriteLine($"[timeline-check] Invalid strand GUID: '{idArg}'");
+                Console.Error.WriteLine($"[timeline-check] Invalid node GUID: '{idArg}'");
                 return 1;
             }
         }
         else
         {
-            var strand = await db.Strands.AsNoTracking()
+            var node = await db.Nodes.AsNoTracking()
                 .FirstOrDefaultAsync(s => s.Slug == slug);
-            if (strand == null)
+            if (node == null)
             {
-                Console.Error.WriteLine($"[timeline-check] Strand '{slug}' not found.");
+                Console.Error.WriteLine($"[timeline-check] Node '{slug}' not found.");
                 return 1;
             }
-            strandId = strand.Id;
+            nodeId = node.Id;
         }
 
-        Console.WriteLine($"[timeline-check] Scanning strand {strandId:N}…");
+        Console.WriteLine($"[timeline-check] Scanning node {nodeId:N}…");
 
-        var findings = await svc.CheckStrandAsync(strandId);
+        var findings = await svc.CheckNodeAsync(nodeId);
 
         if (findings.Count == 0)
         {

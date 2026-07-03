@@ -8,21 +8,21 @@ namespace StreetSamurai.Blazor.Cli;
 /// <summary>
 /// <c>ss --burst-beats</c> — break oversized beats into paragraph-sized
 /// pieces. Old book imports left whole chapters in a single Beat row; this
-/// walks every strand (or a chosen subset) and bursts beats above the
-/// length threshold via <see cref="StrandWorkbenchService.SplitBeatByParagraphsAsync"/>.
+/// walks every node (or a chosen subset) and bursts beats above the
+/// length threshold via <see cref="NodeWorkbenchService.SplitBeatByParagraphsAsync"/>.
 ///
 /// Args:
 ///   --min-chars &lt;N&gt;   Only beats with Text.Length &gt; N are burst. Default 800.
-///   --strand &lt;slug&gt;   Restrict to one strand (by slug). Repeatable.
-///   --book &lt;slug&gt;     Descend from a story-level strand into all chapter descendants
-///                        and burst beats on each leaf. Repeatable. Stories-are-strands /
-///                        chapters-are-substrands means filtering on kind="story" alone
+///   --node &lt;slug&gt;   Restrict to one node (by slug). Repeatable.
+///   --book &lt;slug&gt;     Descend from a story-level node into all chapter descendants
+///                        and burst beats on each leaf. Repeatable. Stories-are-nodes /
+///                        chapters-are-subnodes means filtering on kind="story" alone
 ///                        catches zero beats — they live on the chapter children.
-///   --kind &lt;kind&gt;     Restrict to strands of a given Kind ("story", "chapter").
+///   --kind &lt;kind&gt;     Restrict to nodes of a given Kind ("story", "chapter").
 ///   --dry-run            Don't write; just report what would change.
 ///
-/// Shared beats (in &gt;1 strand) are skipped — the burst would create
-/// new beats only in the current strand, leaving the others with a one-
+/// Shared beats (in &gt;1 node) are skipped — the burst would create
+/// new beats only in the current node, leaving the others with a one-
 /// paragraph fragment of what was a chapter. Surface those for manual
 /// handling instead.
 /// </summary>
@@ -31,7 +31,7 @@ public static class BurstBeatsCli
     public static async Task<int> RunAsync(string[] args, IServiceProvider services)
     {
         int minChars = 800;
-        var strandFilters = new List<string>();
+        var nodeFilters = new List<string>();
         var bookFilters = new List<string>();
         string? kindFilter = null;
         bool dryRun = false;
@@ -43,8 +43,8 @@ public static class BurstBeatsCli
                 case "--min-chars":
                     if (i + 1 < args.Length && int.TryParse(args[++i], out var m)) minChars = m;
                     break;
-                case "--strand":
-                    if (i + 1 < args.Length) strandFilters.Add(args[++i]);
+                case "--node":
+                    if (i + 1 < args.Length) nodeFilters.Add(args[++i]);
                     break;
                 case "--book":
                     if (i + 1 < args.Length) bookFilters.Add(args[++i]);
@@ -59,26 +59,26 @@ public static class BurstBeatsCli
         }
 
         var dbFactory = services.GetRequiredService<IDbContextFactory<StreetSamuraiDbContext>>();
-        var workbench = services.GetRequiredService<StrandWorkbenchService>();
+        var workbench = services.GetRequiredService<NodeWorkbenchService>();
 
         await using var db = await dbFactory.CreateDbContextAsync();
 
         // Resolve --book filters into the full descendant set first. A book
-        // strand has chapter children (and possibly grandchildren), and the
+        // node has chapter children (and possibly grandchildren), and the
         // beats live on the leaves — not on the book itself.
         var bookDescendantIds = new HashSet<Guid>();
         if (bookFilters.Count > 0)
         {
-            var allStrands = await db.Strands
-                .Select(s => new { s.Id, s.Slug, s.ParentStrandId })
+            var allNodes = await db.Nodes
+                .Select(s => new { s.Id, s.Slug, s.ParentNodeId })
                 .ToListAsync();
-            var bySlug = allStrands.Where(s => bookFilters.Contains(s.Slug)).Select(s => s.Id).ToList();
+            var bySlug = allNodes.Where(s => bookFilters.Contains(s.Slug)).Select(s => s.Id).ToList();
             if (bySlug.Count == 0)
             {
-                Console.Error.WriteLine($"[burst-beats] No strand matched --book filters: {string.Join(", ", bookFilters)}");
+                Console.Error.WriteLine($"[burst-beats] No node matched --book filters: {string.Join(", ", bookFilters)}");
                 return 2;
             }
-            var byParent = allStrands.GroupBy(s => s.ParentStrandId ?? Guid.Empty).ToDictionary(g => g.Key, g => g.Select(x => x.Id).ToList());
+            var byParent = allNodes.GroupBy(s => s.ParentNodeId ?? Guid.Empty).ToDictionary(g => g.Key, g => g.Select(x => x.Id).ToList());
             var stack = new Stack<Guid>(bySlug);
             while (stack.Count > 0)
             {
@@ -87,16 +87,16 @@ public static class BurstBeatsCli
                 if (byParent.TryGetValue(id, out var kids))
                     foreach (var k in kids) stack.Push(k);
             }
-            Console.WriteLine($"[burst-beats] --book expanded to {bookDescendantIds.Count} strand(s) including descendants");
+            Console.WriteLine($"[burst-beats] --book expanded to {bookDescendantIds.Count} node(s) including descendants");
         }
 
-        var strandsQuery = db.Strands.AsQueryable();
-        if (strandFilters.Count > 0) strandsQuery = strandsQuery.Where(s => strandFilters.Contains(s.Slug));
-        if (bookDescendantIds.Count > 0) strandsQuery = strandsQuery.Where(s => bookDescendantIds.Contains(s.Id));
-        if (!string.IsNullOrEmpty(kindFilter)) strandsQuery = strandsQuery.Where(s => s.Kind == kindFilter);
-        var strands = await strandsQuery.OrderBy(s => s.CreatedAt).ToListAsync();
+        var nodesQuery = db.Nodes.AsQueryable();
+        if (nodeFilters.Count > 0) nodesQuery = nodesQuery.Where(s => nodeFilters.Contains(s.Slug));
+        if (bookDescendantIds.Count > 0) nodesQuery = nodesQuery.Where(s => bookDescendantIds.Contains(s.Id));
+        if (!string.IsNullOrEmpty(kindFilter)) nodesQuery = nodesQuery.Where(s => s.Kind == kindFilter);
+        var nodes = await nodesQuery.OrderBy(s => s.CreatedAt).ToListAsync();
 
-        Console.WriteLine($"[burst-beats] strands={strands.Count} min-chars={minChars} dry-run={dryRun}");
+        Console.WriteLine($"[burst-beats] nodes={nodes.Count} min-chars={minChars} dry-run={dryRun}");
 
         int totalBeatsScanned = 0;
         int totalBurst = 0;
@@ -104,27 +104,27 @@ public static class BurstBeatsCli
         int totalSkippedShared = 0;
         int totalAlreadyParagraphs = 0;
 
-        foreach (var strand in strands)
+        foreach (var node in nodes)
         {
-            // Collect candidate beats (over threshold, present in this strand)
-            // BEFORE bursting — bursting mutates the strand membership list.
+            // Collect candidate beats (over threshold, present in this node)
+            // BEFORE bursting — bursting mutates the node membership list.
             var candidates = await (
-                from sb in db.StrandBeats
+                from sb in db.NodeBeats
                 join b in db.Beats on sb.BeatId equals b.Id
-                where sb.StrandId == strand.Id && b.Text.Length > minChars
+                where sb.NodeId == node.Id && b.Text.Length > minChars
                 orderby sb.SortKey
                 select new { sb.BeatId, b.Text.Length }
             ).ToListAsync();
 
             if (candidates.Count == 0) continue;
-            Console.WriteLine($"[burst-beats] {strand.Kind}:{strand.Slug} — {candidates.Count} oversized beat(s)");
+            Console.WriteLine($"[burst-beats] {node.Kind}:{node.Slug} — {candidates.Count} oversized beat(s)");
 
             foreach (var c in candidates)
             {
                 totalBeatsScanned++;
 
                 // Skip shared beats — see class doc comment.
-                var memberships = await db.StrandBeats.CountAsync(sb => sb.BeatId == c.BeatId);
+                var memberships = await db.NodeBeats.CountAsync(sb => sb.BeatId == c.BeatId);
                 if (memberships > 1)
                 {
                     totalSkippedShared++;
@@ -135,7 +135,7 @@ public static class BurstBeatsCli
                 if (dryRun)
                 {
                     var beat = await db.Beats.AsNoTracking().FirstAsync(b => b.Id == c.BeatId);
-                    var parts = StrandWorkbenchService.SplitIntoParagraphs(beat.Text ?? "");
+                    var parts = NodeWorkbenchService.SplitIntoParagraphs(beat.Text ?? "");
                     if (parts.Count < 2) { totalAlreadyParagraphs++; continue; }
                     totalBurst++;
                     totalNew += parts.Count - 1;
@@ -143,7 +143,7 @@ public static class BurstBeatsCli
                     continue;
                 }
 
-                var newIds = await workbench.SplitBeatByParagraphsAsync(strand.Id, c.BeatId);
+                var newIds = await workbench.SplitBeatByParagraphsAsync(node.Id, c.BeatId);
                 if (newIds.Count == 0) { totalAlreadyParagraphs++; continue; }
                 totalBurst++;
                 totalNew += newIds.Count;

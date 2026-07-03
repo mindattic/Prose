@@ -8,7 +8,7 @@ namespace StreetSamurai.Core.Services;
 /// implementations agree on:
 /// <list type="bullet">
 /// <item><c>{slug}/audio/{beatId:N}.{ext}</c> — one beat's audio file.</item>
-/// <item><c>{slug}/strand.{ext}</c> — the combined strand audio.</item>
+/// <item><c>{slug}/node.{ext}</c> — the combined node audio.</item>
 /// </list>
 /// Both the dual-write cache-back and the reconciler need to parse a
 /// relative path back into the typed write call. When a new audio format
@@ -27,11 +27,11 @@ public static class AudioPath
         RegexOptions.Compiled | RegexOptions.IgnoreCase);
 
     public static readonly Regex CombinedRegex = new(
-        @"^(?<slug>[^/]+)/strand\.(?<ext>" + ExtensionAlternation + @")$",
+        @"^(?<slug>[^/]+)/node\.(?<ext>" + ExtensionAlternation + @")$",
         RegexOptions.Compiled | RegexOptions.IgnoreCase);
 
     /// <summary>True when <paramref name="relativePath"/> looks like a
-    /// canonical strand-schema path. Legacy episode-era filenames
+    /// canonical node-schema path. Legacy episode-era filenames
     /// (numeric stems like "000.mp3") return false — those files stay at
     /// their original on-disk location and aren't candidates for blob sync.</summary>
     public static bool IsCanonical(string relativePath)
@@ -48,7 +48,7 @@ public static class AudioPath
         return (m.Groups["slug"].Value, beatId, m.Groups["ext"].Value);
     }
 
-    /// <summary>Combined-strand shape: (slug, ext) when the path matches
+    /// <summary>Combined-node shape: (slug, ext) when the path matches
     /// <see cref="CombinedRegex"/>, else null.</summary>
     public static (string Slug, string Ext)? TryParseCombined(string relativePath)
     {

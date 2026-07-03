@@ -11,23 +11,23 @@ namespace StreetSamurai.Core.Services;
 /// Mirrors the BuildEmotionalGuidanceAsync pattern — findings with the
 /// "ML-PROSE-SCORE" prefix are pulled from the Findings table and injected
 /// into BeatContext.MlProseGuidanceContext before prose generation so the
-/// LLM is warned about recurring weaknesses in the strand.
+/// LLM is warned about recurring weaknesses in the node.
 /// </summary>
 public class MlProseGuidanceService(IDbContextFactory<StreetSamuraiDbContext> dbFactory)
 {
     public const string FindingPrefix = "ML-PROSE-SCORE";
 
-    public async Task<string> BuildGuidanceAsync(Guid strandId, CancellationToken ct = default)
+    public async Task<string> BuildGuidanceAsync(Guid nodeId, CancellationToken ct = default)
     {
         await using var db = await dbFactory.CreateDbContextAsync(ct);
 
-        var slug = await db.Strands.AsNoTracking()
-            .Where(s => s.Id == strandId)
+        var slug = await db.Nodes.AsNoTracking()
+            .Where(s => s.Id == nodeId)
             .Select(s => s.Slug)
             .FirstOrDefaultAsync(ct);
         if (string.IsNullOrEmpty(slug)) return "";
 
-        var fp        = $"strand:{slug}";
+        var fp        = $"node:{slug}";
         var catKey    = FindingCategory.Other.ToString();
         var statusKey = FindingStatus.New.ToString();
 

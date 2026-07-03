@@ -7,15 +7,15 @@ namespace StreetSamurai.Blazor.Cli;
 
 /// <summary>
 /// Dry-run validation surface for the Doc Context Stack (the dynamic .md working-set engine).
-/// Given a strand and optional scene/goal text, prints the rotating cast of <c>.md</c> docs
+/// Given a node and optional scene/goal text, prints the rotating cast of <c>.md</c> docs
 /// that WOULD load — tier, why it loaded, similarity score, size — plus the assembled context
 /// block and a token estimate. Read-only; changes no prompts and no canon. Use it to tune
 /// tiers/triggers/thresholds before wiring the engine into prose generation or the session.
 ///
-///   ss --doc-context --slug &lt;strand&gt; [--goal "&lt;scene text&gt;"] [--budget &lt;tokens&gt;]
+///   ss --doc-context --slug &lt;node&gt; [--goal "&lt;scene text&gt;"] [--budget &lt;tokens&gt;]
 ///
-///   --slug    strand to act as the active context (its CODE drives strand-tier scope).
-///   --goal    scene/beat text to trigger topic docs against; defaults to the strand synopsis.
+///   --slug    node to act as the active context (its CODE drives node-tier scope).
+///   --goal    scene/beat text to trigger topic docs against; defaults to the node synopsis.
 ///   --budget  token budget for the assembled block (default 2000).
 /// </summary>
 public static class DocContextCli
@@ -28,32 +28,32 @@ public static class DocContextCli
 
         if (string.IsNullOrWhiteSpace(slug))
         {
-            Console.Error.WriteLine("Usage: ss --doc-context --slug <strand> [--goal \"<text>\"] [--budget <tokens>]");
+            Console.Error.WriteLine("Usage: ss --doc-context --slug <node> [--goal \"<text>\"] [--budget <tokens>]");
             return 1;
         }
 
         var dbFactory = sp.GetRequiredService<IDbContextFactory<StreetSamuraiDbContext>>();
-        Guid strandId; string strandCode; string title; string triggerText;
+        Guid nodeId; string nodeCode; string title; string triggerText;
         await using (var db = await dbFactory.CreateDbContextAsync())
         {
-            var strand = await db.Strands.AsNoTracking()
+            var node = await db.Nodes.AsNoTracking()
                 .Where(s => s.Slug == slug)
-                .Select(s => new { s.Id, s.StrandCode, s.Title, s.Synopsis, s.Seed })
+                .Select(s => new { s.Id, s.NodeCode, s.Title, s.Synopsis, s.Seed })
                 .FirstOrDefaultAsync();
-            if (strand == null) { Console.Error.WriteLine($"[doc-context] strand not found: {slug}"); return 1; }
+            if (node == null) { Console.Error.WriteLine($"[doc-context] node not found: {slug}"); return 1; }
 
-            strandId    = strand.Id;
-            strandCode  = strand.StrandCode ?? "";
-            title       = strand.Title ?? slug!;
+            nodeId    = node.Id;
+            nodeCode  = node.NodeCode ?? "";
+            title       = node.Title ?? slug!;
             triggerText = !string.IsNullOrWhiteSpace(goal)            ? goal!
-                        : !string.IsNullOrWhiteSpace(strand.Synopsis) ? strand.Synopsis!
-                        : (strand.Seed ?? "");
+                        : !string.IsNullOrWhiteSpace(node.Synopsis) ? node.Synopsis!
+                        : (node.Seed ?? "");
         }
 
         var svc = sp.GetRequiredService<DocContextService>();
-        var result = await svc.PrepareContextAsync(strandId, strandCode, triggerText, budget);
+        var result = await svc.PrepareContextAsync(nodeId, nodeCode, triggerText, budget);
 
-        Console.WriteLine($"[doc-context] strand=\"{title}\"  code={(string.IsNullOrEmpty(strandCode) ? "(none)" : strandCode)}  budget={budget} tok");
+        Console.WriteLine($"[doc-context] node=\"{title}\"  code={(string.IsNullOrEmpty(nodeCode) ? "(none)" : nodeCode)}  budget={budget} tok");
         Console.WriteLine($"[doc-context] trigger text: {Clip(triggerText, 180)}");
         Console.WriteLine();
         Console.WriteLine($"LOADED {result.Loaded.Count} doc(s), ~{result.EstimatedTokens} tok of {budget}:");

@@ -9,9 +9,9 @@ namespace StreetSamurai.Core.Services;
 ///
 /// <para><b>Scope</b> is one of:
 /// <list type="bullet">
-/// <item><term>global</term><description>applies to every strand review.</description></item>
-/// <item><term>strand:&lt;slug&gt;</term><description>applies only when reviewing that specific strand.</description></item>
-/// <item><term>beat:&lt;id&gt;</term><description>applies only to that beat (future-use; surfaced alongside global + strand).</description></item>
+/// <item><term>global</term><description>applies to every node review.</description></item>
+/// <item><term>node:&lt;slug&gt;</term><description>applies only when reviewing that specific node.</description></item>
+/// <item><term>beat:&lt;id&gt;</term><description>applies only to that beat (future-use; surfaced alongside global + node).</description></item>
 /// </list></para>
 ///
 /// <para><b>Kind</b> values (free-form string; canonical set below):
@@ -78,15 +78,15 @@ public class ProseLessonStore
     }
 
     /// <summary>Returns all <c>global</c> lessons plus any lessons scoped to
-    /// <paramref name="strandSlug"/> (i.e. <c>strand:&lt;slug&gt;</c>).
-    /// When <paramref name="strandSlug"/> is null, returns only global lessons.</summary>
-    public List<ProseLesson> ListForScope(string? strandSlug)
+    /// <paramref name="nodeSlug"/> (i.e. <c>node:&lt;slug&gt;</c>).
+    /// When <paramref name="nodeSlug"/> is null, returns only global lessons.</summary>
+    public List<ProseLesson> ListForScope(string? nodeSlug)
     {
         var all = ListAll();
         return all.Where(l =>
             string.Equals(l.Scope, "global", StringComparison.OrdinalIgnoreCase)
-            || (!string.IsNullOrWhiteSpace(strandSlug)
-                && string.Equals(l.Scope, $"strand:{strandSlug}", StringComparison.OrdinalIgnoreCase)))
+            || (!string.IsNullOrWhiteSpace(nodeSlug)
+                && string.Equals(l.Scope, $"node:{nodeSlug}", StringComparison.OrdinalIgnoreCase)))
             .OrderBy(l => l.AddedAt)
             .ToList();
     }
@@ -94,9 +94,9 @@ public class ProseLessonStore
     /// <summary>Formats the relevant lessons as a reviewer-facing context block
     /// for injection into ballot prompts, or returns null if there are no lessons
     /// applicable to this scope.</summary>
-    public string? FormatBlockForReview(string? strandSlug)
+    public string? FormatBlockForReview(string? nodeSlug)
     {
-        var lessons = ListForScope(strandSlug);
+        var lessons = ListForScope(nodeSlug);
         if (lessons.Count == 0) return null;
 
         var sb = new StringBuilder();

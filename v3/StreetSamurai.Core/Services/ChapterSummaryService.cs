@@ -20,10 +20,10 @@ public class ChapterSummaryService(
 {
     /// <summary>
     /// Summarize the completed chapter prose and persist it.
-    /// Upserts by (strandId, chapterIndex) — safe to call on re-run.
+    /// Upserts by (nodeId, chapterIndex) — safe to call on re-run.
     /// </summary>
     public async Task ExtractAndSaveAsync(
-        Guid strandId,
+        Guid nodeId,
         int chapterIndex,
         string chapterProse,
         CancellationToken ct = default)
@@ -34,8 +34,8 @@ public class ChapterSummaryService(
         if (string.IsNullOrWhiteSpace(summaryText)) return;
 
         await using var db = await dbFactory.CreateDbContextAsync(ct);
-        var existing = await db.StrandChapterSummaries
-            .FirstOrDefaultAsync(s => s.StrandId == strandId && s.ChapterIndex == chapterIndex, ct);
+        var existing = await db.NodeChapterSummaries
+            .FirstOrDefaultAsync(s => s.NodeId == nodeId && s.ChapterIndex == chapterIndex, ct);
 
         if (existing != null)
         {
@@ -44,10 +44,10 @@ public class ChapterSummaryService(
         }
         else
         {
-            db.StrandChapterSummaries.Add(new StrandChapterSummary
+            db.NodeChapterSummaries.Add(new NodeChapterSummary
             {
                 Id           = Guid.CreateVersion7(),
-                StrandId     = strandId,
+                NodeId     = nodeId,
                 ChapterIndex = chapterIndex,
                 SummaryText  = summaryText,
                 CreatedAt    = DateTime.UtcNow,
@@ -59,18 +59,18 @@ public class ChapterSummaryService(
 
     /// <summary>
     /// Build a formatted prior-chapter context block for injection into BeatContext.
-    /// Returns all persisted chapter summaries for this strand — they are always from
+    /// Returns all persisted chapter summaries for this node — they are always from
     /// prior chapters since the current chapter is not persisted until close.
     /// Returns empty string when no summaries exist yet.
     /// </summary>
     public async Task<string> BuildPriorSummaryContextAsync(
-        Guid strandId,
+        Guid nodeId,
         CancellationToken ct = default)
     {
         await using var db = await dbFactory.CreateDbContextAsync(ct);
-        var summaries = await db.StrandChapterSummaries
+        var summaries = await db.NodeChapterSummaries
             .AsNoTracking()
-            .Where(s => s.StrandId == strandId)
+            .Where(s => s.NodeId == nodeId)
             .OrderBy(s => s.ChapterIndex)
             .ToListAsync(ct);
 

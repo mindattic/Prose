@@ -17,16 +17,16 @@ namespace StreetSamurai.Blazor.Cli;
 ///     --scaffold              Generate a plausible flaw from description.
 ///
 ///   dramatic-question  Score how well a beat poses "who is this person really?"
-///     --slug &lt;strandSlug&gt;     Evaluate every beat in the strand.
+///     --slug &lt;nodeSlug&gt;     Evaluate every beat in the node.
 ///     --id &lt;beatId&gt;           Evaluate a single beat.
 ///     --character &lt;slug|id&gt;   Optional: provide character context.
 ///
 ///   scene-anatomy      6-point scene engagement audit.
-///     --slug &lt;strandSlug&gt;     Audit every beat in the strand.
+///     --slug &lt;nodeSlug&gt;     Audit every beat in the node.
 ///     --id &lt;beatId&gt;           Audit a single beat.
 ///
-///   five-act           Map a strand's beats to Storr's 5-act arc.
-///     --slug &lt;strandSlug&gt;     Required.
+///   five-act           Map a node's beats to Storr's 5-act arc.
+///     --slug &lt;nodeSlug&gt;     Required.
 ///
 /// Global flags:
 ///   --json             Emit raw JSON output.
@@ -178,7 +178,7 @@ public static class NarrativeScienceCli
 
     static async Task<int> RunDramaticQuestionAsync(string[] args, IServiceProvider services, string effort = "deep")
     {
-        string? strandSlug = null;
+        string? nodeSlug = null;
         Guid? beatId = null;
         string? characterArg = null;
         bool json = args.Contains("--json");
@@ -188,14 +188,14 @@ public static class NarrativeScienceCli
         {
             switch (args[i])
             {
-                case "--slug":      strandSlug = args[i + 1]; i++; break;
+                case "--slug":      nodeSlug = args[i + 1]; i++; break;
                 case "--id":        if (Guid.TryParse(args[i + 1], out var g)) { beatId = g; i++; } break;
                 case "--character": characterArg = args[i + 1]; i++; break;
             }
         }
 
-        if (strandSlug == null && beatId == null)
-            return PrintUsage("--slug <strandSlug> or --id <beatId> required for dramatic-question");
+        if (nodeSlug == null && beatId == null)
+            return PrintUsage("--slug <nodeSlug> or --id <beatId> required for dramatic-question");
 
         var svc = services.GetRequiredService<NarrativeScienceService>();
         var findingsSvc = services.GetRequiredService<FindingsService>();
@@ -216,21 +216,21 @@ public static class NarrativeScienceCli
         }
         else
         {
-            var strand = await db.Strands.AsNoTracking().FirstOrDefaultAsync(s => s.Slug == strandSlug);
-            if (strand == null) { Console.Error.WriteLine($"Strand '{strandSlug}' not found."); return 1; }
+            var node = await db.Nodes.AsNoTracking().FirstOrDefaultAsync(s => s.Slug == nodeSlug);
+            if (node == null) { Console.Error.WriteLine($"Node '{nodeSlug}' not found."); return 1; }
 
             var beats = await (
-                from sb in db.StrandBeats
+                from sb in db.NodeBeats
                 join b in db.Beats on sb.BeatId equals b.Id
-                where sb.StrandId == strand.Id
+                where sb.NodeId == node.Id
                 orderby sb.SortKey
                 select new { b.Id, b.Number, b.Text }
             ).ToListAsync();
 
             if (beats.Count == 0) { Console.Error.WriteLine("No beats found."); return 1; }
-            Console.WriteLine($"Checking dramatic question in {beats.Count} beats of '{strandSlug}'…");
+            Console.WriteLine($"Checking dramatic question in {beats.Count} beats of '{nodeSlug}'…");
 
-            // Delete stale NARRATIVE-SCIENCE findings for this strand before writing fresh ones.
+            // Delete stale NARRATIVE-SCIENCE findings for this node before writing fresh ones.
             if (persist)
                 PurgeNarrativeScienceFindings(findingsSvc, beats.Select(b => b.Id).ToList(), "NARRATIVE-SCIENCE [dramatic-question]:");
 
@@ -300,7 +300,7 @@ public static class NarrativeScienceCli
 
     static async Task<int> RunSceneAnatomyAsync(string[] args, IServiceProvider services, string effort = "deep")
     {
-        string? strandSlug = null;
+        string? nodeSlug = null;
         Guid? beatId = null;
         bool json = args.Contains("--json");
         bool persist = ShouldPersist(args);
@@ -309,13 +309,13 @@ public static class NarrativeScienceCli
         {
             switch (args[i])
             {
-                case "--slug": strandSlug = args[i + 1]; i++; break;
+                case "--slug": nodeSlug = args[i + 1]; i++; break;
                 case "--id":   if (Guid.TryParse(args[i + 1], out var g)) { beatId = g; i++; } break;
             }
         }
 
-        if (strandSlug == null && beatId == null)
-            return PrintUsage("--slug <strandSlug> or --id <beatId> required for scene-anatomy");
+        if (nodeSlug == null && beatId == null)
+            return PrintUsage("--slug <nodeSlug> or --id <beatId> required for scene-anatomy");
 
         var svc = services.GetRequiredService<NarrativeScienceService>();
         var findingsSvc = services.GetRequiredService<FindingsService>();
@@ -333,21 +333,21 @@ public static class NarrativeScienceCli
         }
         else
         {
-            var strand = await db.Strands.AsNoTracking().FirstOrDefaultAsync(s => s.Slug == strandSlug);
-            if (strand == null) { Console.Error.WriteLine($"Strand '{strandSlug}' not found."); return 1; }
+            var node = await db.Nodes.AsNoTracking().FirstOrDefaultAsync(s => s.Slug == nodeSlug);
+            if (node == null) { Console.Error.WriteLine($"Node '{nodeSlug}' not found."); return 1; }
 
             var beats = await (
-                from sb in db.StrandBeats
+                from sb in db.NodeBeats
                 join b in db.Beats on sb.BeatId equals b.Id
-                where sb.StrandId == strand.Id
+                where sb.NodeId == node.Id
                 orderby sb.SortKey
                 select new { b.Id, b.Number, b.Text }
             ).ToListAsync();
 
             if (beats.Count == 0) { Console.Error.WriteLine("No beats found."); return 1; }
-            Console.WriteLine($"Scene anatomy of {beats.Count} beats in '{strandSlug}'…");
+            Console.WriteLine($"Scene anatomy of {beats.Count} beats in '{nodeSlug}'…");
 
-            // Delete stale NARRATIVE-SCIENCE findings for this strand before writing fresh ones.
+            // Delete stale NARRATIVE-SCIENCE findings for this node before writing fresh ones.
             if (persist)
                 PurgeNarrativeScienceFindings(findingsSvc, beats.Select(b => b.Id).ToList(), "NARRATIVE-SCIENCE [scene-engagement]:");
 
@@ -421,26 +421,26 @@ public static class NarrativeScienceCli
 
     static async Task<int> RunFiveActAsync(string[] args, IServiceProvider services)
     {
-        string? strandSlug = null;
+        string? nodeSlug = null;
         bool json = args.Contains("--json");
         bool persist = ShouldPersist(args);
 
         for (int i = 0; i < args.Length - 1; i++)
-            if (args[i] == "--slug") { strandSlug = args[i + 1]; i++; }
+            if (args[i] == "--slug") { nodeSlug = args[i + 1]; i++; }
 
-        if (strandSlug == null)
-            return PrintUsage("--slug <strandSlug> required for five-act");
+        if (nodeSlug == null)
+            return PrintUsage("--slug <nodeSlug> required for five-act");
 
         var svc = services.GetRequiredService<NarrativeScienceService>();
         var findingsSvc = services.GetRequiredService<FindingsService>();
         var dbFactory = services.GetRequiredService<IDbContextFactory<StreetSamuraiDbContext>>();
         using var db = dbFactory.CreateDbContext();
 
-        var strand = await db.Strands.AsNoTracking().FirstOrDefaultAsync(s => s.Slug == strandSlug);
-        if (strand == null) { Console.Error.WriteLine($"Strand '{strandSlug}' not found."); return 1; }
+        var node = await db.Nodes.AsNoTracking().FirstOrDefaultAsync(s => s.Slug == nodeSlug);
+        if (node == null) { Console.Error.WriteLine($"Node '{nodeSlug}' not found."); return 1; }
 
-        Console.WriteLine($"Mapping five-act structure for '{strandSlug}'…");
-        var result = await svc.MapFiveActStructureAsync(strand.Id);
+        Console.WriteLine($"Mapping five-act structure for '{nodeSlug}'…");
+        var result = await svc.MapFiveActStructureAsync(node.Id);
 
         if (result.Error != null)
         {
@@ -455,7 +455,7 @@ public static class NarrativeScienceCli
         }
 
         Console.WriteLine();
-        Console.WriteLine($"═══ FIVE-ACT MAP: {result.StrandTitle} ({result.BeatCount} beats) ═══");
+        Console.WriteLine($"═══ FIVE-ACT MAP: {result.NodeTitle} ({result.BeatCount} beats) ═══");
         Console.WriteLine();
 
         var actNames = new Dictionary<string, string>
@@ -504,9 +504,9 @@ public static class NarrativeScienceCli
             var gaps = result.StructuralGaps.Count > 0
                 ? string.Join("; ", result.StructuralGaps.Take(3))
                 : "none";
-            var summary = $"{prefix} {strandSlug} — {result.BeatCount} beats. Gaps: {gaps}";
+            var summary = $"{prefix} {nodeSlug} — {result.BeatCount} beats. Gaps: {gaps}";
             findingsSvc.Upsert(
-                filePath: $"strand:{strandSlug}",
+                filePath: $"node:{nodeSlug}",
                 chapterId: null,
                 category: FindingCategory.Other,
                 severity: result.StructuralGaps.Count > 0 ? FindingSeverity.Medium : FindingSeverity.Low,
@@ -554,16 +554,16 @@ public static class NarrativeScienceCli
                 --scaffold              Generate a plausible flaw from existing description.
 
               dramatic-question  Score how well a beat asks "who is this person really?"
-                --slug <strandSlug>     Evaluate all beats in the strand (parallel, up to 8 at once).
+                --slug <nodeSlug>     Evaluate all beats in the node (parallel, up to 8 at once).
                 --id <beatId>           Evaluate a single beat.
                 --character <slug|id>   Optional. Provide character context.
 
               scene-anatomy      6-point scene engagement audit.
-                --slug <strandSlug>     Audit all beats in the strand (parallel, up to 8 at once).
+                --slug <nodeSlug>     Audit all beats in the node (parallel, up to 8 at once).
                 --id <beatId>           Audit a single beat.
 
-              five-act           Map a strand's beats to Storr's 5-act arc.
-                --slug <strandSlug>     Required.
+              five-act           Map a node's beats to Storr's 5-act arc.
+                --slug <nodeSlug>     Required.
 
             Global flags:
               --json             Emit raw JSON output.

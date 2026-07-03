@@ -47,19 +47,19 @@ public sealed class EntityContextService(
     /// ready for injection into BeatContext.EntityStackContext.
     /// </summary>
     public async Task<string> PrepareContextAsync(
-        Guid strandId, Guid beatId, string beatGoal, string sceneSoFar,
+        Guid nodeId, Guid beatId, string beatGoal, string sceneSoFar,
         CancellationToken ct = default)
     {
-        if (strandId == Guid.Empty) return "";
+        if (nodeId == Guid.Empty) return "";
 
-        stack.BeginBeat(strandId);
+        stack.BeginBeat(nodeId);
 
         // 1. Assemble from the beat record (name/alias scan + embedding match)
         if (beatId != Guid.Empty)
         {
             var beatCtx = await assembler.AssembleForBeatAsync(beatId, tokenBudget: 1500, ct);
             if (beatCtx != null)
-                await PushRosterAsync(strandId, beatCtx.Roster, depth: 0, ct);
+                await PushRosterAsync(nodeId, beatCtx.Roster, depth: 0, ct);
         }
 
         // 2. Also scan beat goal text (handles pre-save writes and goal-only references)
@@ -67,13 +67,13 @@ public sealed class EntityContextService(
         {
             var goalCtx = await assembler.AssembleAsync(beatGoal, tokenBudget: 600, ct);
             if (goalCtx != null)
-                await PushRosterAsync(strandId, goalCtx.Roster, depth: 0, ct);
+                await PushRosterAsync(nodeId, goalCtx.Roster, depth: 0, ct);
         }
 
         // 3. Expand edges: for each depth-0 entity, find its semantic neighbors
-        await ExpandEdgesAsync(strandId, maxDepth: 2, ct);
+        await ExpandEdgesAsync(nodeId, maxDepth: 2, ct);
 
-        return BuildContextBlock(strandId);
+        return BuildContextBlock(nodeId);
     }
 
     // ── Post-generation: reconcile prose against entity canon ─────────────────
@@ -84,10 +84,10 @@ public sealed class EntityContextService(
     /// stores any conflicts as Findings for review.
     /// </summary>
     public async Task ReconcileAsync(
-        string prose, Guid strandId, Guid beatId, Guid universeId,
+        string prose, Guid nodeId, Guid beatId, Guid universeId,
         CancellationToken ct = default)
     {
-        if (strandId == Guid.Empty || string.IsNullOrWhiteSpace(prose)) return;
+        if (nodeId == Guid.Empty || string.IsNullOrWhiteSpace(prose)) return;
 
         try
         {
@@ -95,20 +95,20 @@ public sealed class EntityContextService(
             var proseCtx = await assembler.AssembleAsync(prose, tokenBudget: 2000, ct);
             if (proseCtx != null && proseCtx.Roster.Count > 0)
             {
-                stack.RecordMentions(strandId, proseCtx.Roster.Select(r => r.EntityId));
+                stack.RecordMentions(nodeId, proseCtx.Roster.Select(r => r.EntityId));
 
                 // 2. Push any newly-detected entities into the stack
-                await PushRosterAsync(strandId, proseCtx.Roster, depth: 0, ct);
+                await PushRosterAsync(nodeId, proseCtx.Roster, depth: 0, ct);
             }
 
             // 3. Detect canon conflicts in the generated prose
-            var activeEntities = stack.GetActive(strandId)
+            var activeEntities = stack.GetActive(nodeId)
                 .Where(e => !string.IsNullOrWhiteSpace(e.Description))
                 .Take(12) // keep the conflict-check prompt bounded
                 .ToList();
 
             if (activeEntities.Count > 0)
-                await CheckProseConflictsAsync(prose, activeEntities, strandId, beatId, universeId, ct);
+                await CheckProseConflictsAsync(prose, activeEntities, nodeId, beatId, universeId, ct);
         }
         catch (Exception ex)
         {
@@ -118,23 +118,23 @@ public sealed class EntityContextService(
 
     // ── Public utility: inspect the active stack ──────────────────────────────
 
-    /// <summary>Returns the formatted entity context block for a strand without advancing the beat counter.</summary>
-    public string GetContextBlock(Guid strandId) => BuildContextBlock(strandId);
+    /// <summary>Returns the formatted entity context block for a node without advancing the beat counter.</summary>
+    public string GetContextBlock(Guid nodeId) => BuildContextBlock(nodeId);
 
-    /// <summary>Returns all active stack entries for a strand (for monitoring/debug).</summary>
-    public IReadOnlyList<EntityContextStack.StackEntry> GetActiveEntities(Guid strandId) =>
-        stack.GetActive(strandId);
+    /// <summary>Returns all active stack entries for a node (for monitoring/debug).</summary>
+    public IReadOnlyList<EntityContextStack.StackEntry> GetActiveEntities(Guid nodeId) =>
+        stack.GetActive(nodeId);
 
-    /// <summary>Clears the entity working memory for a strand (call at the start of a new session).</summary>
-    public void ClearContext(Guid strandId) => stack.Clear(strandId);
+    /// <summary>Clears the entity working memory for a node (call at the start of a new session).</summary>
+    public void ClearContext(Guid nodeId) => stack.Clear(nodeId);
 
     // ── Edge expansion ────────────────────────────────────────────────────────
 
-    private async Task ExpandEdgesAsync(Guid strandId, int maxDepth, CancellationToken ct)
+    private async Task ExpandEdgesAsync(Guid nodeId, int maxDepth, CancellationToken ct)
     {
         for (int depth = 0; depth < maxDepth; depth++)
         {
-            var atDepth = stack.GetActive(strandId)
+            var atDepth = stack.GetActive(nodeId)
                 .Where(e => e.Depth == depth)
                 .ToList();
 
@@ -150,7 +150,7 @@ public sealed class EntityContextService(
                     foreach (var hit in neighbors.Where(h => h.EntityId != entry.EntityId))
                     {
                         var desc = await LoadDescriptionAsync(hit.EntityId, hit.EntityType, db, ct);
-                        stack.Push(strandId, hit.EntityId, hit.EntityName, hit.EntityType, desc, hit.Similarity, depth: depth + 1);
+                        stack.Push(nodeId, hit.EntityId, hit.EntityName, hit.EntityType, desc, hit.Similarity, depth: depth + 1);
                     }
                 }
                 catch { /* non-blocking — embedding may be cold or entity type unsupported */ }
@@ -163,7 +163,7 @@ public sealed class EntityContextService(
     // ── Roster loading ────────────────────────────────────────────────────────
 
     private async Task PushRosterAsync(
-        Guid strandId,
+        Guid nodeId,
         IEnumerable<SceneEntityRef> roster,
         int depth,
         CancellationToken ct)
@@ -172,7 +172,7 @@ public sealed class EntityContextService(
         foreach (var r in roster)
         {
             var desc = await LoadDescriptionAsync(r.EntityId, r.EntityType, db, ct);
-            stack.Push(strandId, r.EntityId, r.Name, r.EntityType, desc, r.Score, depth);
+            stack.Push(nodeId, r.EntityId, r.Name, r.EntityType, desc, r.Score, depth);
         }
     }
 
@@ -210,12 +210,12 @@ public sealed class EntityContextService(
 
     // Cap how many entities get injected into the prompt. GetActive is recency/depth-ordered, so
     // the top slice is the most relevant; without this the depth-0 set grows unbounded over a long
-    // strand (observed ~160/beat) and floods the prompt with noise.
+    // node (observed ~160/beat) and floods the prompt with noise.
     public const int MaxInjectedEntities = 24;
 
-    private string BuildContextBlock(Guid strandId)
+    private string BuildContextBlock(Guid nodeId)
     {
-        var entries = stack.GetActive(strandId).Take(MaxInjectedEntities).ToList();
+        var entries = stack.GetActive(nodeId).Take(MaxInjectedEntities).ToList();
         if (entries.Count == 0) return "";
 
         var sb = new StringBuilder();
@@ -259,7 +259,7 @@ public sealed class EntityContextService(
     private async Task CheckProseConflictsAsync(
         string prose,
         IReadOnlyList<EntityContextStack.StackEntry> activeEntities,
-        Guid strandId, Guid beatId, Guid universeId,
+        Guid nodeId, Guid beatId, Guid universeId,
         CancellationToken ct)
     {
         var entityNames = string.Join(", ", activeEntities.Select(e => $"\"{e.Name}\""));
@@ -328,7 +328,7 @@ public sealed class EntityContextService(
 
             findings.Upsert(
                 filePath: $"beat:{beatId:N}",
-                chapterId: strandId == Guid.Empty ? null : strandId.ToString("N"),
+                chapterId: nodeId == Guid.Empty ? null : nodeId.ToString("N"),
                 category: FindingCategory.Other,
                 severity: FindingSeverity.Medium,
                 summary: $"ENTITY-CONFLICT [{entity.EntityType}]: \"{entity.Name}\" — prose says \"{proseClaim}\"",

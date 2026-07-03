@@ -12,7 +12,7 @@ namespace StreetSamurai.Core.Services;
 // ── Emotional Ledger Service ───────────────────────────────────────────────────
 //
 // Parses Want / Need / Wound / Flaw / VoiceRegister for each named character
-// from the strand's StrandBible field, caches the result per (StrandId, Character),
+// from the node's NodeBible field, caches the result per (NodeId, Character),
 // and cache-busts when the bible content changes (SourceBibleHash).
 //
 // Fallback: when no bible is present, or a character is not mentioned in the bible,
@@ -24,7 +24,7 @@ namespace StreetSamurai.Core.Services;
 //   MCP: examine_emotional_depth (via EmotionalDepthService)
 
 /// <summary>
-/// Per-character emotional profile (Want/Need/Wound/Flaw) extracted from the strand
+/// Per-character emotional profile (Want/Need/Wound/Flaw) extracted from the node
 /// bible or inferred from prose. Injected into dimension prompts as character context.
 /// </summary>
 public record CharacterLedgerEntry(
@@ -37,7 +37,7 @@ public record CharacterLedgerEntry(
     bool Inferred);
 
 /// <summary>
-/// Parses and caches Want/Need/Wound/Flaw from strand bibles. Cache-busted on bible
+/// Parses and caches Want/Need/Wound/Flaw from node bibles. Cache-busted on bible
 /// content hash. Falls back to LLM prose inference when no bible is available.
 /// </summary>
 public class EmotionalLedgerService
@@ -59,11 +59,11 @@ public class EmotionalLedgerService
     // ── Public entry points ───────────────────────────────────────────────────
 
     /// <summary>
-    /// Returns the current ledger for all characters in the strand, refreshing
+    /// Returns the current ledger for all characters in the node, refreshing
     /// stale cache entries. Force=true always re-extracts even if the hash matches.
     /// </summary>
     public async Task<IReadOnlyList<CharacterLedgerEntry>> GetLedgerAsync(
-        Guid strandId, string? bible, string assembledText,
+        Guid nodeId, string? bible, string assembledText,
         bool force = false, CancellationToken ct = default)
     {
         var bibleHash = bible is { Length: > 0 } b ? Hash(b) : null;
@@ -71,7 +71,7 @@ public class EmotionalLedgerService
         await using var db = await dbFactory.CreateDbContextAsync(ct);
 
         var cached = await db.CharacterEmotionalLedgers.AsNoTracking()
-            .Where(x => x.StrandId == strandId)
+            .Where(x => x.NodeId == nodeId)
             .ToListAsync(ct);
 
         // If bible changed or forced, clear and re-extract
@@ -84,14 +84,14 @@ public class EmotionalLedgerService
 
         // Delete stale entries
         var toDelete = await db.CharacterEmotionalLedgers
-            .Where(x => x.StrandId == strandId)
+            .Where(x => x.NodeId == nodeId)
             .ToListAsync(ct);
         db.CharacterEmotionalLedgers.RemoveRange(toDelete);
 
         // Extract from bible if available, otherwise from prose
         var entries = bible is { Length: > 10 }
-            ? await ExtractFromBibleAsync(strandId, bible, bibleHash!, ct)
-            : await InferFromProseAsync(strandId, assembledText, ct);
+            ? await ExtractFromBibleAsync(nodeId, bible, bibleHash!, ct)
+            : await InferFromProseAsync(nodeId, assembledText, ct);
 
         db.CharacterEmotionalLedgers.AddRange(entries);
         await db.SaveChangesAsync(ct);
@@ -102,15 +102,15 @@ public class EmotionalLedgerService
     // ── Extraction from bible ─────────────────────────────────────────────────
 
     private async Task<List<CharacterEmotionalLedger>> ExtractFromBibleAsync(
-        Guid strandId, string bible, string bibleHash, CancellationToken ct)
+        Guid nodeId, string bible, string bibleHash, CancellationToken ct)
     {
         const string system =
-            "You are a story analyst. Extract character emotional profiles from a strand bible. " +
+            "You are a story analyst. Extract character emotional profiles from a node bible. " +
             "Return ONLY the JSON array requested. No prose, no markdown fences, no explanation.";
 
         var bibleText = Truncate(bible, 8000);
         var prompt = $$"""
-You are reading a strand bible. Identify every named major character and extract their:
+You are reading a node bible. Identify every named major character and extract their:
 - want: the on-page goal (what they consciously pursue)
 - need: the arc-level gap they must grow into (what they actually need)
 - wound: the past event or damage that shapes their flaw
@@ -122,7 +122,7 @@ If a field is genuinely not stated in the bible, use "" (empty string). Do NOT i
 Return ONLY a JSON array of objects:
 [{"character":"<name>","want":"...","need":"...","wound":"...","flaw":"...","voice_register":"..."}]
 
-STRAND BIBLE:
+NODE BIBLE:
 {{bibleText}}
 """;
 
@@ -141,7 +141,7 @@ STRAND BIBLE:
                 results.Add(new CharacterEmotionalLedger
                 {
                     Id              = Guid.NewGuid(),
-                    StrandId        = strandId,
+                    NodeId        = nodeId,
                     Character       = name,
                     Want            = el.TryGetProperty("want",            out var w) ? w.GetString() : null,
                     Need            = el.TryGetProperty("need",            out var n) ? n.GetString() : null,
@@ -157,15 +157,15 @@ STRAND BIBLE:
         }
         catch (Exception ex)
         {
-            log.LogWarning(ex, "Bible extraction failed for strand {StrandId}; falling back to prose inference", strandId);
-            return await InferFromProseAsync(strandId, "", ct);
+            log.LogWarning(ex, "Bible extraction failed for node {NodeId}; falling back to prose inference", nodeId);
+            return await InferFromProseAsync(nodeId, "", ct);
         }
     }
 
     // ── Inference from prose ──────────────────────────────────────────────────
 
     private async Task<List<CharacterEmotionalLedger>> InferFromProseAsync(
-        Guid strandId, string prose, CancellationToken ct)
+        Guid nodeId, string prose, CancellationToken ct)
     {
         if (string.IsNullOrWhiteSpace(prose))
             return new List<CharacterEmotionalLedger>();
@@ -200,7 +200,7 @@ PROSE:
                     return new CharacterEmotionalLedger
                     {
                         Id            = Guid.NewGuid(),
-                        StrandId      = strandId,
+                        NodeId      = nodeId,
                         Character     = name,
                         Want          = el.TryGetProperty("want",           out var w)  ? w.GetString()  : null,
                         Need          = el.TryGetProperty("need",           out var n)  ? n.GetString()  : null,
@@ -216,7 +216,7 @@ PROSE:
         }
         catch (Exception ex)
         {
-            log.LogWarning(ex, "Prose inference failed for strand {StrandId}", strandId);
+            log.LogWarning(ex, "Prose inference failed for node {NodeId}", nodeId);
             return new List<CharacterEmotionalLedger>();
         }
     }

@@ -22,7 +22,7 @@ public class OpenThreadsService(
     /// Non-fatal — failure is logged, not propagated.
     /// </summary>
     public async Task DetectAndRegisterAsync(
-        Guid strandId,
+        Guid nodeId,
         Guid beatId,
         string prose,
         CancellationToken ct = default)
@@ -55,10 +55,10 @@ public class OpenThreadsService(
         await using var db = await dbFactory.CreateDbContextAsync(ct);
         foreach (var line in lines)
         {
-            db.StrandOpenThreads.Add(new StrandOpenThread
+            db.NodeOpenThreads.Add(new NodeOpenThread
             {
                 Id           = Guid.CreateVersion7(),
-                StrandId     = strandId,
+                NodeId     = nodeId,
                 OriginBeatId = beatId,
                 Description  = line.Length > 500 ? line[..500] : line,
                 Category     = "promise",
@@ -75,7 +75,7 @@ public class OpenThreadsService(
     /// Non-fatal — failure is logged, not propagated.
     /// </summary>
     public async Task MarkResolvedAsync(
-        Guid strandId,
+        Guid nodeId,
         Guid beatId,
         string prose,
         CancellationToken ct = default)
@@ -83,8 +83,8 @@ public class OpenThreadsService(
         if (string.IsNullOrWhiteSpace(prose)) return;
 
         await using var db = await dbFactory.CreateDbContextAsync(ct);
-        var open = await db.StrandOpenThreads
-            .Where(t => t.StrandId == strandId && !t.IsResolved)
+        var open = await db.NodeOpenThreads
+            .Where(t => t.NodeId == nodeId && !t.IsResolved)
             .ToListAsync(ct);
 
         if (open.Count == 0) return;
@@ -124,12 +124,12 @@ public class OpenThreadsService(
     /// Build a formatted open-threads context block for injection into BeatContext.
     /// Returns empty string when no open threads exist.
     /// </summary>
-    public async Task<string> BuildContextAsync(Guid strandId, CancellationToken ct = default)
+    public async Task<string> BuildContextAsync(Guid nodeId, CancellationToken ct = default)
     {
         await using var db = await dbFactory.CreateDbContextAsync(ct);
-        var open = await db.StrandOpenThreads
+        var open = await db.NodeOpenThreads
             .AsNoTracking()
-            .Where(t => t.StrandId == strandId && !t.IsResolved)
+            .Where(t => t.NodeId == nodeId && !t.IsResolved)
             .OrderBy(t => t.CreatedAt)
             .Take(15)
             .ToListAsync(ct);

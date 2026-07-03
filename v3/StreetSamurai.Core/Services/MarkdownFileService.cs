@@ -73,11 +73,11 @@ public class MarkdownFileService
                 foreach (var f in Directory.EnumerateFiles(rfcDir, "*.md"))
                     yield return new(f, "project", ToRelative(projectRoot, f), "rfc");
 
-            // docs/strands/*.md — per-strand bibles
-            var strandsDir = Path.Combine(docsDir, "strands");
-            if (Directory.Exists(strandsDir))
-                foreach (var f in Directory.EnumerateFiles(strandsDir, "*.md"))
-                    yield return new(f, "project", ToRelative(projectRoot, f), "strand-bible");
+            // docs/strands/*.md — per-node bibles
+            var nodesDir = Path.Combine(docsDir, "nodes");
+            if (Directory.Exists(nodesDir))
+                foreach (var f in Directory.EnumerateFiles(nodesDir, "*.md"))
+                    yield return new(f, "project", ToRelative(projectRoot, f), "node-bible");
 
             // docs/books/*.md — legacy long-form book spines
             var booksDir = Path.Combine(docsDir, "books");
@@ -194,8 +194,8 @@ public class MarkdownFileService
 
     public readonly record struct DocClassification(string Tier, string Scope, string Triggers, bool AutoTier);
 
-    // Registers are strand-scoped — a story uses exactly ONE. Seed each register's
-    // scope to the strand CODE(s) that use it; unknowns get empty scope (curate via
+    // Registers are node-scoped — a story uses exactly ONE. Seed each register's
+    // scope to the node CODE(s) that use it; unknowns get empty scope (curate via
     // frontmatter). A frontmatter `scope:` always overrides this.
     private static readonly Dictionary<string, string> RegisterScope =
         new(StringComparer.OrdinalIgnoreCase)
@@ -219,7 +219,7 @@ public class MarkdownFileService
         new(StringComparer.OrdinalIgnoreCase)
         {
             // structural / project words
-            "the","and","for","with","from","that","this","into","story","strand",
+            "the","and","for","with","from","that","this","into","story","node",
             "glmz","canon","note","docs","memory","when","what","over","your","their",
             "json","yaml","file","files","rule","rules","page","data",
             // generic common words that produce false topic fires
@@ -238,7 +238,7 @@ public class MarkdownFileService
     /// <summary>
     /// Classify a file for the Doc Context Stack. Frontmatter <c>tier:</c>/<c>scope:</c>/<c>triggers:</c>
     /// win (AutoTier=false); otherwise infer from category/path (AutoTier=true):
-    /// register → strand (scope from RegisterScope) · docs/strands/&lt;CODE&gt;.md → strand scope=CODE ·
+    /// register → node (scope from RegisterScope) · docs/strands/&lt;CODE&gt;.md → node scope=CODE ·
     /// AlwaysFiles → always · everything else → topic (triggers seeded from file name + description).
     /// Pure function of (file, content) so re-sync is idempotent.
     /// </summary>
@@ -262,13 +262,13 @@ public class MarkdownFileService
         if (f.Category.Equals("register", StringComparison.OrdinalIgnoreCase))
         {
             var reg = Path.GetFileNameWithoutExtension(fileName);
-            return new("strand", RegisterScope.GetValueOrDefault(reg, ""), "", AutoTier: true);
+            return new("node", RegisterScope.GetValueOrDefault(reg, ""), "", AutoTier: true);
         }
 
         if (f.RelativePath.Replace('\\', '/').StartsWith("docs/strands/", StringComparison.OrdinalIgnoreCase))
         {
             var code = Path.GetFileNameWithoutExtension(fileName).ToUpperInvariant();
-            return new("strand", code, "", AutoTier: true);
+            return new("node", code, "", AutoTier: true);
         }
 
         return new("topic", "", SeedTriggers(f, fm), AutoTier: true);
@@ -327,7 +327,7 @@ public class MarkdownFileService
     private static string NormalizeTier(string t)
     {
         t = t.Trim().ToLowerInvariant();
-        return t is "always" or "strand" or "topic" ? t : "topic";
+        return t is "always" or "node" or "topic" ? t : "topic";
     }
 
     private static string NormalizeCsv(string s) =>

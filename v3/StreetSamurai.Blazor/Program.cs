@@ -435,19 +435,19 @@ if (args.Contains("--seed"))
     return;
 }
 
-// CLI mode: (re)generate the strand bible for an existing strand.
-//   ss --bible-strand --slug <slug> [--beats N] [--replace-beats]
-if (args.Contains("--bible-strand"))
+// CLI mode: (re)generate the node bible for an existing node.
+//   ss --bible-node --slug <slug> [--beats N] [--replace-beats]
+if (args.Contains("--bible-node"))
 {
     var cliBuilder = WebApplication.CreateBuilder(args);
     cliBuilder.Services.AddStreetSamuraiServices();
     var cliApp = cliBuilder.Build();
-    Environment.ExitCode = await StrandBibleCli.RunAsync(args, cliApp.Services);
+    Environment.ExitCode = await NodeBibleCli.RunAsync(args, cliApp.Services);
     return;
 }
 
-// CLI mode: generate a new strand (bible-first: plan → planned beats → expand in UI).
-// CLI mode: autonomous corpus loop — generate N strands end-to-end and review them.
+// CLI mode: generate a new node (bible-first: plan → planned beats → expand in UI).
+// CLI mode: autonomous corpus loop — generate N nodes end-to-end and review them.
 //   ss --run-corpus --count N [--seed "..."] [--kind episode] [--beats 12] [--ballots 20] [--resume] [--dry-run]
 if (args.Contains("--run-corpus"))
 {
@@ -458,7 +458,7 @@ if (args.Contains("--run-corpus"))
     return;
 }
 
-// CLI mode: expand planned beats in a strand to prose (headless ✨ for each beat).
+// CLI mode: expand planned beats in a node to prose (headless ✨ for each beat).
 //   ss --edit-beat --slug <slug> (--beat-number N | --insert-after N) --file <path>
 if (args.Contains("--edit-beat"))
 {
@@ -469,14 +469,14 @@ if (args.Contains("--edit-beat"))
     return;
 }
 
-// CLI mode: create a new empty root strand (bible-first; no beats yet).
-//   ss --create-strand --title "..." [--code SRZR] [--kind story] [--synopsis "..."] [--seed "..."] [--previous <slug|id>] [--parent <slug|id>]
-if (args.Contains("--create-strand"))
+// CLI mode: create a new empty root node (bible-first; no beats yet).
+//   ss --create-node --title "..." [--code SRZR] [--kind story] [--synopsis "..."] [--seed "..."] [--previous <slug|id>] [--parent <slug|id>]
+if (args.Contains("--create-node"))
 {
     var cliBuilder = WebApplication.CreateBuilder(args);
     cliBuilder.Services.AddStreetSamuraiServices();
     var cliApp = cliBuilder.Build();
-    Environment.ExitCode = await CreateStrandCli.RunAsync(args, cliApp.Services);
+    Environment.ExitCode = await CreateNodeCli.RunAsync(args, cliApp.Services);
     return;
 }
 
@@ -500,19 +500,19 @@ if (args.Contains("--auto-run"))
     return;
 }
 
-//   ss --write-strand --seed "..." [--title "..."] [--kind episode] [--beats 12] [--bible-only]
-if (args.Contains("--write-strand"))
+//   ss --write-node --seed "..." [--title "..."] [--kind episode] [--beats 12] [--bible-only]
+if (args.Contains("--write-node"))
 {
     var cliBuilder = WebApplication.CreateBuilder(args);
     cliBuilder.Services.AddStreetSamuraiServices();
     var cliApp = cliBuilder.Build();
-    Environment.ExitCode = await WriteStrandCli.RunAsync(args, cliApp.Services);
+    Environment.ExitCode = await WriteNodeCli.RunAsync(args, cliApp.Services);
     return;
 }
 
 // CLI mode: delete the 44 legacy book/chapter Entity+Records blobs whose
-// content already lives in the Strands/Beats model. Classifies each as JUNK,
-// REDUNDANT, or ORPHAN (converts orphans to Strands before deleting).
+// content already lives in the Nodes/Beats model. Classifies each as JUNK,
+// REDUNDANT, or ORPHAN (converts orphans to Nodes before deleting).
 //   ss --migrate-legacy-book-chapter
 if (args.Contains("--migrate-legacy-book-chapter"))
 {
@@ -524,16 +524,16 @@ if (args.Contains("--migrate-legacy-book-chapter"))
 }
 
 // CLI mode: migrate legacy Books/Chapters/ChapterBeats/Episodes/EpisodeBeats
-// data into the unified Beat/Strand schema. Idempotent — safe to re-run.
-//   ss --migrate-strands
-if (args.Contains("--migrate-strands"))
+// data into the unified Beat/Node schema. Idempotent — safe to re-run.
+//   ss --migrate-nodes
+if (args.Contains("--migrate-nodes"))
 {
     var cliBuilder = WebApplication.CreateBuilder(args);
     cliBuilder.Services.AddStreetSamuraiServices();
     var cliApp = cliBuilder.Build();
-    var svc = cliApp.Services.GetRequiredService<StrandMigrationService>();
+    var svc = cliApp.Services.GetRequiredService<NodeMigrationService>();
     var report = await svc.MigrateAllAsync();
-    Console.WriteLine($"[migrate-strands] Books={report.BooksAdded} Chapters={report.ChaptersAdded} Beats={report.BeatsAdded} Episodes={report.EpisodesAdded} Standalone={report.StandaloneBeatsAdded} Junctions={report.JunctionRowsAdded}");
+    Console.WriteLine($"[migrate-nodes] Books={report.BooksAdded} Chapters={report.ChaptersAdded} Beats={report.BeatsAdded} Episodes={report.EpisodesAdded} Standalone={report.StandaloneBeatsAdded} Junctions={report.JunctionRowsAdded}");
     return;
 }
 
@@ -541,7 +541,7 @@ if (args.Contains("--migrate-strands"))
 // Companion to DualWriteAudioStore — repairs drift from offline recordings
 // and failed background uploads. Default (no --push/--pull args) is full
 // bidirectional repair. See SyncAudioCli class doc for the full arg list.
-//   ss --sync-audio [--push] [--pull] [--strand SLUG] [--dry-run] [--verbose]
+//   ss --sync-audio [--push] [--pull] [--node SLUG] [--dry-run] [--verbose]
 if (args.Contains("--sync-audio"))
 {
     var cliBuilder = WebApplication.CreateBuilder(args);
@@ -557,16 +557,16 @@ if (args.Contains("--sync-audio"))
     return;
 }
 
-// CLI mode: (re)narrate an EXISTING strand by id (full or prefix) or slug.
+// CLI mode: (re)narrate an EXISTING node by id (full or prefix) or slug.
 // Runs the same NarrateAsync path the Record button uses. Use to re-record a
-// strand whose beats failed (e.g. a TTS 400) without regenerating prose.
-//   ss --narrate-strand (--id <guid|prefix> | --slug <slug>)
-if (args.Contains("--narrate-strand"))
+// node whose beats failed (e.g. a TTS 400) without regenerating prose.
+//   ss --narrate-node (--id <guid|prefix> | --slug <slug>)
+if (args.Contains("--narrate-node"))
 {
     var cliBuilder = WebApplication.CreateBuilder(args);
     cliBuilder.Services.AddStreetSamuraiServices();
     var cliApp = cliBuilder.Build();
-    Environment.ExitCode = await NarrateStrandCli.RunAsync(args, cliApp.Services);
+    Environment.ExitCode = await NarrateNodeCli.RunAsync(args, cliApp.Services);
     return;
 }
 
@@ -584,7 +584,7 @@ if (args.Contains("--make-group"))
 
 // CLI mode: run Legion persona quality voting across canon entity repos.
 // Replaces the old LlmVoting (10 GLMZ residents) with the full 1000-persona library,
-// 1-100 scale, and append-only EntityReview rows (same process as strand reviews).
+// 1-100 scale, and append-only EntityReview rows (same process as node reviews).
 //   ss --review-entity [--type <type>] [--ballots N] [--prose N] [--unrated]
 if (args.Contains("--review-entity"))
 {
@@ -605,7 +605,7 @@ if (args.Contains("--link-weapon-ammo"))
     return;
 }
 
-//   ss --populate-queue --entity-review|--strand-review|--beat-write|--status [options]
+//   ss --populate-queue --entity-review|--node-review|--beat-write|--status [options]
 if (args.Contains("--populate-queue"))
 {
     var cliBuilder = WebApplication.CreateBuilder(args);
@@ -625,17 +625,17 @@ if (args.Contains("--worker-mode"))
     return;
 }
 
-// CLI mode: have N Legion personas each read an EXISTING strand and write an
-// honest, scored reader review (saved to StrandReviews), then synthesize the
+// CLI mode: have N Legion personas each read an EXISTING node and write an
+// honest, scored reader review (saved to NodeReviews), then synthesize the
 // Amazon-style aggregate summary. Round-robins reviewers across the trusted-4.
-//   ss --review-strand (--id <guid|prefix> | --slug <slug>) [--readers N]
+//   ss --review-node (--id <guid|prefix> | --slug <slug>) [--readers N]
 //   ss --run-panel    (legacy alias)
-if (args.Contains("--review-strand") || args.Contains("--run-panel"))
+if (args.Contains("--review-node") || args.Contains("--run-panel"))
 {
     var cliBuilder = WebApplication.CreateBuilder(args);
     cliBuilder.Services.AddStreetSamuraiServices();
     var cliApp = cliBuilder.Build();
-    Environment.ExitCode = await ReviewStrandCli.RunAsync(args, cliApp.Services);
+    Environment.ExitCode = await ReviewNodeCli.RunAsync(args, cliApp.Services);
     return;
 }
 
@@ -662,7 +662,7 @@ if (args.Contains("--runpod"))
 }
 
 // CLI mode: (re)generate the portable per-voter report (JSON + filterable HTM) from
-// a strand's most recent stored review batch, without re-running the panel.
+// a node's most recent stored review batch, without re-running the panel.
 //   ss --review-report (--slug <slug> | --id <guid> | --code <CODE>) [--provider local|cloud|all]
 if (args.Contains("--review-report"))
 {
@@ -677,7 +677,7 @@ if (args.Contains("--review-report"))
 // Lessons are injected into review ballot prompts so reviewers don't penalise
 // beats the author has already ruled are doing their job.
 //   ss --lesson-add --scope <scope> --kind <kind> --text "<text>"
-//   Scope: global | strand:<slug> | beat:<guid>
+//   Scope: global | node:<slug> | beat:<guid>
 //   Kind:  score-vs-function | delight | voice | pacing | continuity | other
 if (args.Contains("--lesson-add"))
 {
@@ -715,30 +715,30 @@ if (args.Contains("--update-register-exemplars"))
 // CLI mode: review-driven auto-editor. Weight the latest reviews, target the
 // lowest / most-flagged beats (raise the floor), and emit conservative
 // before/after rewrite PROPOSALS (JSON) for an approval survey. Nothing is written.
-//   ss --edit-strand (--id <guid|prefix> | --slug <slug>) [--top N]
-if (args.Contains("--edit-strand"))
+//   ss --edit-node (--id <guid|prefix> | --slug <slug>) [--top N]
+if (args.Contains("--edit-node"))
 {
     var cliBuilder = WebApplication.CreateBuilder(args);
     cliBuilder.Services.AddStreetSamuraiServices();
     var cliApp = cliBuilder.Build();
-    Environment.ExitCode = await EditStrandCli.RunAsync(args, cliApp.Services);
+    Environment.ExitCode = await EditNodeCli.RunAsync(args, cliApp.Services);
     return;
 }
 
-// CLI mode: stitch an existing strand's beats into one combined file (WAV →
+// CLI mode: stitch an existing node's beats into one combined file (WAV →
 // MP3), copy it to the publish output dir (Downloads by default), and record
 // the publication run + process-event ledger. Headless Publish button.
-//   ss --publish-strand (--id <guid|prefix> | --slug <slug>)
-if (args.Contains("--publish-strand"))
+//   ss --publish-node (--id <guid|prefix> | --slug <slug>)
+if (args.Contains("--publish-node"))
 {
     var cliBuilder = WebApplication.CreateBuilder(args);
     cliBuilder.Services.AddStreetSamuraiServices();
     var cliApp = cliBuilder.Build();
-    Environment.ExitCode = await PublishStrandCli.RunAsync(args, cliApp.Services);
+    Environment.ExitCode = await PublishNodeCli.RunAsync(args, cliApp.Services);
     return;
 }
 
-// CLI mode: seed Amazon KDP keywords for published strands.
+// CLI mode: seed Amazon KDP keywords for published nodes.
 //   ss --seed-keywords [--slug <slug>]
 if (args.Contains("--seed-keywords"))
 {
@@ -749,7 +749,7 @@ if (args.Contains("--seed-keywords"))
     return;
 }
 
-// CLI mode: render a strand to a KDP-ready Word .docx in Downloads.
+// CLI mode: render a node to a KDP-ready Word .docx in Downloads.
 //   ss --publish-docx (--id <guid|prefix> | --slug <slug>) [--author "Name"]
 if (args.Contains("--publish-docx"))
 {
@@ -760,7 +760,7 @@ if (args.Contains("--publish-docx"))
     return;
 }
 
-// CLI mode: build an Audible AI-narration hand-off package for a strand.
+// CLI mode: build an Audible AI-narration hand-off package for a node.
 // Produces a narration-clean manuscript, pronunciation guide, and README.
 //   ss --prepare-audible (--slug <slug> | --id <guid|prefix>) [--no-phonetics]
 if (args.Contains("--prepare-audible"))
@@ -784,7 +784,7 @@ if (args.Contains("--timeline-check"))
     return;
 }
 
-// CLI mode: set the ParentStrandId on an existing strand (move it into a collection).
+// CLI mode: set the ParentNodeId on an existing node (move it into a collection).
 // X-Ray scene assembly (RFC 0002): print the entity roster + voice context block
 // for a beat or raw prose. CLI twin of the MCP tool assemble_scene_context.
 //   ss --assemble-scene (--beat <guid> | --text "<prose>") [--budget N]
@@ -797,19 +797,19 @@ if (args.Contains("--assemble-scene"))
     return;
 }
 
-//   ss --reparent-strand (--slug <slug> | --id <id>) (--parent-slug <slug> | --parent-id <id>)
-//   ss --reparent-strand --slug <slug> --clear   — detach from parent
-if (args.Contains("--reparent-strand"))
+//   ss --reparent-node (--slug <slug> | --id <id>) (--parent-slug <slug> | --parent-id <id>)
+//   ss --reparent-node --slug <slug> --clear   — detach from parent
+if (args.Contains("--reparent-node"))
 {
     var cliBuilder = WebApplication.CreateBuilder(args);
     cliBuilder.Services.AddStreetSamuraiServices();
     var cliApp = cliBuilder.Build();
-    Environment.ExitCode = await ReparentStrandCli.RunAsync(args, cliApp.Services);
+    Environment.ExitCode = await ReparentNodeCli.RunAsync(args, cliApp.Services);
     return;
 }
 
 
-// CLI mode: render the WHOLE strand as one continuous audiobook (one TTS pass,
+// CLI mode: render the WHOLE node as one continuous audiobook (one TTS pass,
 // tiered to ElevenLabs limits — one request, else per-chapter, else split) and
 // drop the MP3 in Downloads. The headless twin of the "Export Audio" button.
 //   ss --record | --export-audio | --export-mp3 | --publish-audiobook
@@ -836,7 +836,7 @@ if (args.Contains("--seed-voice-rules"))
     return;
 }
 
-// CLI mode: extract a time / elapsed-duration timeline from all beats in a strand.
+// CLI mode: extract a time / elapsed-duration timeline from all beats in a node.
 // Flags clock anchors, infers story-relative timestamps, and surfaces conflicts.
 //   ss --timeline (--slug <slug> | --id <id>)
 if (args.Contains("--timeline"))
@@ -1255,8 +1255,8 @@ if (args.Contains("--retire-records-blobs"))
     return;
 }
 
-// CLI mode: split a monolithic strand into a Collection (parent + chapter
-// child strands) at IsChapterStart boundaries. Backs up to markdown first.
+// CLI mode: split a monolithic node into a Collection (parent + chapter
+// child nodes) at IsChapterStart boundaries. Backs up to markdown first.
 //   ss --split-collection (--slug <s> | --id <guid>)
 if (args.Contains("--split-collection"))
 {
@@ -1279,7 +1279,7 @@ if (args.Contains("--print-voice"))
     return;
 }
 
-// CLI mode: print all beats of a strand as continuous prose to stdout.
+// CLI mode: print all beats of a node as continuous prose to stdout.
 // No headers, no beat numbers, no metadata — just the prose, beats separated by blank lines.
 //   ss --sanitize-beats [--slug <slug> | --all] [--dry-run]
 if (args.Contains("--sanitize-beats"))
@@ -1291,31 +1291,31 @@ if (args.Contains("--sanitize-beats"))
     return;
 }
 
-//   ss --print-strand (--id <guid|prefix> | --slug <slug>)
-if (args.Contains("--print-strand"))
+//   ss --print-node (--id <guid|prefix> | --slug <slug>)
+if (args.Contains("--print-node"))
 {
     var cliBuilder = WebApplication.CreateBuilder(args);
     cliBuilder.Services.AddStreetSamuraiServices();
     var cliApp = cliBuilder.Build();
-    Environment.ExitCode = await PrintStrandCli.RunAsync(args, cliApp.Services);
+    Environment.ExitCode = await PrintNodeCli.RunAsync(args, cliApp.Services);
     return;
 }
 
-// CLI mode: rebuild a strand's beats to the codified beat doctrine via LLM
+// CLI mode: rebuild a node's beats to the codified beat doctrine via LLM
 // re-segmentation (story beats + dialogue/'?' mechanics + gaps). Dry-run by
 // default; --apply backs up to markdown then replaces beats if the word-retention
-// guard passes. --all targets every doctrine-violating strand.
-//   ss --rebeat-strand (--slug <s> | --id <guid> | --all) [--apply]
-if (args.Contains("--rebeat-strand"))
+// guard passes. --all targets every doctrine-violating node.
+//   ss --rebeat-node (--slug <s> | --id <guid> | --all) [--apply]
+if (args.Contains("--rebeat-node"))
 {
     var cliBuilder = WebApplication.CreateBuilder(args);
     cliBuilder.Services.AddStreetSamuraiServices();
     var cliApp = cliBuilder.Build();
-    Environment.ExitCode = await RebeatStrandCli.RunAsync(args, cliApp.Services);
+    Environment.ExitCode = await RebeatNodeCli.RunAsync(args, cliApp.Services);
     return;
 }
 
-// CLI mode: sweep a strand's prose against canon (all entity types) and queue
+// CLI mode: sweep a node's prose against canon (all entity types) and queue
 // contradictions as approval-gated findings — the self-correction pass.
 //   ss --check-canon (--slug <s> | --id <guid> | --all)
 if (args.Contains("--check-canon"))
@@ -1339,7 +1339,7 @@ if (args.Contains("--canon-retrieve"))
     return;
 }
 
-// CLI mode: author-only Canon trust gate — mark a strand strong enough to draw
+// CLI mode: author-only Canon trust gate — mark a node strong enough to draw
 // conclusions about its characters/events (the voice-harvest learns from canon).
 //   ss --mark-canon (--slug <s> | --id <guid>) [--off]
 if (args.Contains("--mark-canon"))
@@ -1351,7 +1351,7 @@ if (args.Contains("--mark-canon"))
     return;
 }
 
-// CLI mode: distill voice rules from winning (≥80%) strands into the codified
+// CLI mode: distill voice rules from winning (≥80%) nodes into the codified
 // DB-backed rules the generator reads. Propose-then-approve.
 //   ss --harvest-voice (--slug <s> | --id <id> | --all-80 | --pending | --apply <guid> | --reject <guid>) [--force]
 if (args.Contains("--harvest-voice"))
@@ -1363,18 +1363,18 @@ if (args.Contains("--harvest-voice"))
     return;
 }
 
-// CLI mode: list every strand as a table (or JSON). Headless twin of /strands.
-//   ss --list-strands [--status <s>] [--kind <k>] [--search <text>] [--limit <n>] [--json]
-if (args.Contains("--list-strands"))
+// CLI mode: list every node as a table (or JSON). Headless twin of /nodes.
+//   ss --list-nodes [--status <s>] [--kind <k>] [--search <text>] [--limit <n>] [--json]
+if (args.Contains("--list-nodes"))
 {
     var cliBuilder = WebApplication.CreateBuilder(args);
     cliBuilder.Services.AddStreetSamuraiServices();
     var cliApp = cliBuilder.Build();
-    Environment.ExitCode = await ListStrandsCli.RunAsync(args, cliApp.Services);
+    Environment.ExitCode = await ListNodesCli.RunAsync(args, cliApp.Services);
     return;
 }
 
-// CLI mode: render a strand to Markdown or PDF in Downloads.
+// CLI mode: render a node to Markdown or PDF in Downloads.
 // Markdown output embeds <!-- beat:N:id7 --> markers for ss --import-md round-trip.
 //   ss (--publish-md | --publish-pdf) (--id <guid|prefix> | --slug <slug>) [--author "Name"]
 if (args.Contains("--publish-md") || args.Contains("--publish-pdf"))
@@ -1400,50 +1400,50 @@ if (args.Contains("--import-md"))
     return;
 }
 
-// CLI mode: bounded copy-edit of a strand — proper paragraph/dialogue spacing, a
+// CLI mode: bounded copy-edit of a node — proper paragraph/dialogue spacing, a
 // "?" on questions that lack one, and "asks"/"asked" (not "says") on question
 // dialogue. Dry-run by default; --apply commits. Beats edited beyond those bounds
 // are rejected (word-token guard) and left untouched.
-//   ss --reflow-strand (--id <guid|prefix> | --slug <slug>) [--apply]
-if (args.Contains("--reflow-strand"))
+//   ss --reflow-node (--id <guid|prefix> | --slug <slug>) [--apply]
+if (args.Contains("--reflow-node"))
 {
     var cliBuilder = WebApplication.CreateBuilder(args);
     cliBuilder.Services.AddStreetSamuraiServices();
     var cliApp = cliBuilder.Build();
-    Environment.ExitCode = await ReflowStrandCli.RunAsync(args, cliApp.Services);
+    Environment.ExitCode = await ReflowNodeCli.RunAsync(args, cliApp.Services);
     return;
 }
 
-// CLI mode: deep-duplicate a strand (and its sub-strand tree) into a fresh,
+// CLI mode: deep-duplicate a node (and its sub-node tree) into a fresh,
 // independent copy — every beat cloned to a new row (prose + metadata kept;
 // audio/score/stale reset). Editing the copy never touches the original.
-//   ss --duplicate-strand (--id <guid|prefix> | --slug <slug>) --title "New Title"
-if (args.Contains("--duplicate-strand"))
+//   ss --duplicate-node (--id <guid|prefix> | --slug <slug>) --title "New Title"
+if (args.Contains("--duplicate-node"))
 {
     var cliBuilder = WebApplication.CreateBuilder(args);
     cliBuilder.Services.AddStreetSamuraiServices();
     var cliApp = cliBuilder.Build();
-    Environment.ExitCode = await DuplicateStrandCli.RunAsync(args, cliApp.Services);
+    Environment.ExitCode = await DuplicateNodeCli.RunAsync(args, cliApp.Services);
     return;
 }
 
-// CLI mode: import a hand-authored .strand file (beat + gap + beat …) into a
-// fresh strand. The complement to --write-strand (LLM-generated): this is for
+// CLI mode: import a hand-authored .node file (beat + gap + beat …) into a
+// fresh node. The complement to --write-node (LLM-generated): this is for
 // drafts written elsewhere (chat exports, transcripts, paper notes typed up).
-// See ImportStrandCli class doc for the file format.
-//   ss --import-strand --file path.strand [--title ...] [--kind ...] [--slug ...] [--parent ...] [--dry-run]
-if (args.Contains("--import-strand"))
+// See ImportNodeCli class doc for the file format.
+//   ss --import-node --file path.node [--title ...] [--kind ...] [--slug ...] [--parent ...] [--dry-run]
+if (args.Contains("--import-node"))
 {
     var cliBuilder = WebApplication.CreateBuilder(args);
     cliBuilder.Services.AddStreetSamuraiServices();
     var cliApp = cliBuilder.Build();
-    Environment.ExitCode = await ImportStrandCli.RunAsync(args, cliApp.Services);
+    Environment.ExitCode = await ImportNodeCli.RunAsync(args, cliApp.Services);
     return;
 }
 
 // CLI mode: import a local image file (png, jpg, webp) into the Media table.
-// Optionally links to a strand by --strand-code and sets the media type.
-//   ss --import-cover --file PATH [--strand-code CODE] [--type TYPE] [--notes TEXT] [--dry-run]
+// Optionally links to a node by --node-code and sets the media type.
+//   ss --import-cover --file PATH [--node-code CODE] [--type TYPE] [--notes TEXT] [--dry-run]
 if (args.Contains("--import-cover"))
 {
     var cliBuilder = WebApplication.CreateBuilder(args);
@@ -1457,7 +1457,7 @@ if (args.Contains("--import-cover"))
 // CLI mode: burst oversized beats (e.g. chapter-as-one-beat from old book
 // imports) into paragraph-sized pieces. Idempotent — already-small beats
 // are skipped on rerun.
-//   ss --burst-beats [--min-chars 800] [--strand slug] [--kind book] [--dry-run]
+//   ss --burst-beats [--min-chars 800] [--node slug] [--kind book] [--dry-run]
 if (args.Contains("--burst-beats"))
 {
     var cliBuilder = WebApplication.CreateBuilder(args);
@@ -1499,7 +1499,7 @@ if (args.Contains("--entity-tree"))
     return;
 }
 
-// ss --prose-check (--slug <strandSlug> | --id <beatId>) [--all] [--json]
+// ss --prose-check (--slug <nodeSlug> | --id <beatId>) [--all] [--json]
 if (args.Contains("--prose-check"))
 {
     var cliBuilder = WebApplication.CreateBuilder(args);
@@ -1509,7 +1509,7 @@ if (args.Contains("--prose-check"))
     return;
 }
 
-// ss --check-fidelity (--slug <strandSlug> | --id <strandId>) [--json]
+// ss --check-fidelity (--slug <nodeSlug> | --id <nodeId>) [--json]
 // Detects the Semantic Fidelity Gap — beats scoring high but drifting from the
 // story's original meaning (Goodhart's Law in prose). Two checks:
 //   Bible alignment: prose vs Seed/Synopsis (north-star drift)
@@ -1534,7 +1534,7 @@ if (args.Contains("--world-state"))
     return;
 }
 
-// ss --gear-check --slug <strandSlug> --character <characterId> [--story-time date]
+// ss --gear-check --slug <nodeSlug> --character <characterId> [--story-time date]
 if (args.Contains("--gear-check"))
 {
     var cliBuilder = WebApplication.CreateBuilder(args);
@@ -1545,7 +1545,7 @@ if (args.Contains("--gear-check"))
 }
 
 // ss --score-trend [--batches N] [--universe <slug>]
-// Print rolling mean score across N chronological batches of scored strands.
+// Print rolling mean score across N chronological batches of scored nodes.
 // Positive Δ confirms the voice-harvest flywheel is spinning forward (SS-US-J6).
 // Exit 0 = positive trend, 1 = flat/declining, 2 = not enough data.
 if (args.Contains("--score-trend"))
@@ -1557,7 +1557,7 @@ if (args.Contains("--score-trend"))
     return;
 }
 
-// ss --write-outline --slug <strandSlug> [--json] [--skip-audit]
+// ss --write-outline --slug <nodeSlug> [--json] [--skip-audit]
 // Generates a beat-by-beat narrative outline (act-grouped, one sentence per beat)
 // and runs an adversarial logic audit: plot holes, canon violations, impossible actions,
 // causality breaks, prop errors, contradictions. Use --skip-audit for outline only.
@@ -1571,21 +1571,21 @@ if (args.Contains("--write-outline"))
     return;
 }
 
-// ss --diagnose-strand --slug <strandSlug> [--json]
+// ss --diagnose-node --slug <nodeSlug> [--json]
 // Pre-flight structural analysis before running the review panel.
 // Runs 12 targeted checks (antagonist cost, protagonist behavior change,
 // exposition density, etc.) and reports Pass/Warn/Fail with evidence + fixes.
 // Exit 0 = ready, 1 = warnings, 2 = blocking failures.
-if (args.Contains("--diagnose-strand"))
+if (args.Contains("--diagnose-node"))
 {
     var cliBuilder = WebApplication.CreateBuilder(args);
     cliBuilder.Services.AddStreetSamuraiServices();
     var cliApp = cliBuilder.Build();
-    Environment.ExitCode = await DiagnoseStrandCli.RunAsync(args, cliApp.Services);
+    Environment.ExitCode = await DiagnoseNodeCli.RunAsync(args, cliApp.Services);
     return;
 }
 
-// ss --examine-emotion --slug <strandSlug> [--effort draft|standard|deep] [--json]
+// ss --examine-emotion --slug <nodeSlug> [--effort draft|standard|deep] [--json]
 // Emotional Intelligence Examination (SS-A15): 8-dimension 0–4 rubric, per-beat curve,
 // character ledger (Want/Need/Wound/Flaw), register-adaptive anchors.
 // Exit 0 = none blocking, 1 = advisory issues, 2 = blocking dimensions open.
@@ -1622,7 +1622,7 @@ if (args.Contains("--list-species"))
     return;
 }
 
-// ss --behavior-check --slug <strandSlug> --character <characterId>
+// ss --behavior-check --slug <nodeSlug> --character <characterId>
 if (args.Contains("--behavior-check"))
 {
     var cliBuilder = WebApplication.CreateBuilder(args);
@@ -1663,12 +1663,12 @@ if (args.Contains("--seed-sensory-hints"))
 }
 
 // ss --beat <subcommand> — fine-grained beat manipulation:
-//   insert  --strand <slug|id> [--after <beatId>] [--text "..."]
-//   delete  --id <beatId> [--strand <slug|id>]
+//   insert  --node <slug|id> [--after <beatId>] [--text "..."]
+//   delete  --id <beatId> [--node <slug|id>]
 //   update  --id <beatId> --text "..."  (use '-' for stdin)
 //   meta    --id <beatId> [--title "..."] [--kind "..."] [--synopsis "..."] [--tone "..."] ...
 //   show    --id <beatId>
-//   list    --strand <slug|id>
+//   list    --node <slug|id>
 if (args.Contains("--beat"))
 {
     var cliBuilder = WebApplication.CreateBuilder(args);
@@ -1742,8 +1742,8 @@ if (args.Contains("--sync-markdown"))
     return;
 }
 
-// CLI mode: two-way sync between synopsis.txt in each strand's publish folder
-// and Strands.Synopsis in the DB. File wins on conflict.
+// CLI mode: two-way sync between synopsis.txt in each node's publish folder
+// and Nodes.Synopsis in the DB. File wins on conflict.
 //   ss --sync-synopsis [--slug <slug>] [--dry-run]
 if (args.Contains("--sync-synopsis"))
 {
@@ -1779,8 +1779,8 @@ if (args.Contains("--recall"))
 }
 
 // CLI mode: Doc Context Stack dry-run — print the rotating cast of .md docs that WOULD
-// load for a strand + optional scene text (tier, reason, score, budget). Read-only.
-//   ss --doc-context --slug <strand> [--goal "<text>"] [--budget <tokens>]
+// load for a node + optional scene text (tier, reason, score, budget). Read-only.
+//   ss --doc-context --slug <node> [--goal "<text>"] [--budget <tokens>]
 if (args.Contains("--doc-context-hook"))
 {
     // UserPromptSubmit hook backend — stdout must contain ONLY the hook JSON, so kill logging.
@@ -1794,7 +1794,7 @@ if (args.Contains("--doc-context-hook"))
 
 // REMOVED 2026-06-24: `--refactor-telemetry` (bulk regenerate-beats-from-synopsis runner).
 // It rebuilt finished beats from their one-line goals, discarding hand-crafted prose — proven
-// to regress finished strands (dual-read: surgical 80.8 > baseline 79.7 > regen 76.2). Doc/Entity
+// to regress finished nodes (dual-read: surgical 80.8 > baseline 79.7 > regen 76.2). Doc/Entity
 // context were validated separately and are KEPT; regen-from-synopsis is not a revision tool and
 // is gone. New-beat generation lives in ProseWriterRouter.WriteAsync, untouched.
 
@@ -1820,7 +1820,7 @@ if (args.Contains("--doc-context"))
 }
 
 // ss --workflow-status [--slug <slug> | --all] [--json]
-// Per-strand or global prose service coverage matrix. Shows which services
+// Per-node or global prose service coverage matrix. Shows which services
 // (Pacing, StoryMethodology, PlantPayoff, StoryAudit, Combat) were active
 // when beats were written, and surfaces gaps where applicable services weren't used.
 if (args.Contains("--workflow-status"))
@@ -1858,22 +1858,22 @@ if (args.Contains("--backfill-synopses") || args.Contains("--backfill-structure-
     return;
 }
 
-// ss --audit-strand --slug <book-or-chapter-slug> [--deep] [--model <id>] [--out <path>]
+// ss --audit-node --slug <book-or-chapter-slug> [--deep] [--model <id>] [--out <path>]
 // The "Player Piano" — one repeatable command running the full QA battery (census +
 // coverage + plant/prose audits; --deep adds per-chapter examine-emotion + story-audit +
 // diagnose + fidelity). --model retargets the deep tier (e.g. Haiku) for the run.
-if (args.Contains("--audit-strand"))
+if (args.Contains("--audit-node"))
 {
     var cliBuilder = WebApplication.CreateBuilder(args);
     cliBuilder.Services.AddStreetSamuraiServices();
     var cliApp = cliBuilder.Build();
-    Environment.ExitCode = await AuditStrandCli.RunAsync(cliApp.Services, args);
+    Environment.ExitCode = await AuditNodeCli.RunAsync(cliApp.Services, args);
     return;
 }
 
-// ss --story-audit --slug <strandSlug> [--json]
-// Audits a strand against 7 commandments — gateway (PreviousStrandId=null) or
-// sequel (PreviousStrandId set). Pass/warn/fail per commandment with fix hints.
+// ss --story-audit --slug <nodeSlug> [--json]
+// Audits a node against 7 commandments — gateway (PreviousNodeId=null) or
+// sequel (PreviousNodeId set). Pass/warn/fail per commandment with fix hints.
 // Exit 0 = all pass, 1 = advisory warnings, 2 = blocking failures.
 if (args.Contains("--story-audit"))
 {
@@ -1884,7 +1884,7 @@ if (args.Contains("--story-audit"))
     return;
 }
 
-// ss --ml-audit [--slug <strandSlug>] [--all] [--skip-gripes] [--json]
+// ss --ml-audit [--slug <nodeSlug>] [--all] [--skip-gripes] [--json]
 // Runs the Python ML beat auditor against the trained nightly model.
 // Writes ML-PROSE-SCORE findings to the Findings table for weak beats.
 // Prerequisites: v3/ml/.venv set up + at least one nightly run completed.
@@ -1931,7 +1931,7 @@ if (args.Contains("--export-personas-json"))
 }
 
 // ss --sanity-scan (--slug <slug|code> | --all) [--json]
-// Deterministic prose checks — no LLM. Catches leaked internal strand codes,
+// Deterministic prose checks — no LLM. Catches leaked internal node codes,
 // undefined all-caps acronyms, encoding corruption, and heft-floor violations.
 // Exit 0 = clean, 1 = warnings only, 2 = any blocks.
 if (args.Contains("--sanity-scan"))
@@ -1943,9 +1943,9 @@ if (args.Contains("--sanity-scan"))
     return;
 }
 
-// ss --plant-audit   --slug <strand> [--json]   audit plant/payoff pairs
-// ss --list-plants   --slug <strand> [--json]   list all pairs
-// ss --add-plant     --slug <strand> --plant "..." --payoff "..." [--cat detail]
+// ss --plant-audit   --slug <node> [--json]   audit plant/payoff pairs
+// ss --list-plants   --slug <node> [--json]   list all pairs
+// ss --add-plant     --slug <node> --plant "..." --payoff "..." [--cat detail]
 if (args.Contains("--plant-audit") || args.Contains("--list-plants") || args.Contains("--add-plant"))
 {
     var cliBuilder = WebApplication.CreateBuilder(args);
@@ -1960,7 +1960,7 @@ if (args.Contains("--plant-audit") || args.Contains("--list-plants") || args.Con
 //   ss --narrative-science sacred-flaw --character <slug|id> [--scaffold]
 //   ss --narrative-science dramatic-question (--slug <s> | --id <beatId>) [--character <slug|id>]
 //   ss --narrative-science scene-anatomy (--slug <s> | --id <beatId>)
-//   ss --narrative-science five-act --slug <strandSlug>
+//   ss --narrative-science five-act --slug <nodeSlug>
 //   (add --json to any subcommand for raw JSON output)
 if (args.Contains("--narrative-science"))
 {
@@ -1971,13 +1971,13 @@ if (args.Contains("--narrative-science"))
     return;
 }
 
-// ss --clone-strand (--id <guid> | --slug <slug>) [--title "New Title"] [--strand-code SM1] [--draft] [--status ready]
-if (args.Contains("--clone-strand"))
+// ss --clone-node (--id <guid> | --slug <slug>) [--title "New Title"] [--node-code SM1] [--draft] [--status ready]
+if (args.Contains("--clone-node"))
 {
     var cliBuilder = WebApplication.CreateBuilder(args);
     cliBuilder.Services.AddStreetSamuraiServices();
     var cliApp = cliBuilder.Build();
-    Environment.ExitCode = await CloneStrandCli.RunAsync(args, cliApp.Services);
+    Environment.ExitCode = await CloneNodeCli.RunAsync(args, cliApp.Services);
     return;
 }
 
@@ -2304,24 +2304,24 @@ app.MapGet("/api/episodes/{episodeId:guid}/episode.wav", async (
     ctx.Response.StatusCode = 404;
 }).RequireAuthorization();
 
-// ── Unified strand audio endpoints ───────────────────────────────────────
+// ── Unified node audio endpoints ───────────────────────────────────────
 // Per-beat audio served from engine/strands/{slug}/audio/{beatId}.{wav|mp3}.
-// File names are Beat.Id ("N" format) so a beat in multiple strands has one
-// rendering — the file path is keyed on the beat, not the strand.
-app.MapGet("/api/strands/{strandId:guid}/beat/{beatId:guid}/audio", async (
-    Guid strandId,
+// File names are Beat.Id ("N" format) so a beat in multiple nodes has one
+// rendering — the file path is keyed on the beat, not the node.
+app.MapGet("/api/nodes/{nodeId:guid}/beat/{beatId:guid}/audio", async (
+    Guid nodeId,
     Guid beatId,
     StreetSamurai.Core.Interfaces.IAudioStore audioStore,
     Microsoft.EntityFrameworkCore.IDbContextFactory<StreetSamurai.Core.Data.StreetSamuraiDbContext> dbFactory) =>
 {
     await using var db = await dbFactory.CreateDbContextAsync();
-    // Validate that this beat is actually a member of the strand in the URL.
+    // Validate that this beat is actually a member of the node in the URL.
     // Without this check, an authenticated user with any beat GUID could pull
-    // its audio by inventing any strand GUID — the strandId segment was
-    // decorative. The unique (StrandId, BeatId) PK on StrandBeats makes this
+    // its audio by inventing any node GUID — the nodeId segment was
+    // decorative. The unique (NodeId, BeatId) PK on NodeBeats makes this
     // an index seek, ~free at any scale.
     var isMember = await Microsoft.EntityFrameworkCore.EntityFrameworkQueryableExtensions
-        .AnyAsync(db.StrandBeats.Where(sb => sb.StrandId == strandId && sb.BeatId == beatId));
+        .AnyAsync(db.NodeBeats.Where(sb => sb.NodeId == nodeId && sb.BeatId == beatId));
     if (!isMember) return Results.NotFound();
     var beat = await Microsoft.EntityFrameworkCore.EntityFrameworkQueryableExtensions
         .FirstOrDefaultAsync(
@@ -2344,28 +2344,28 @@ app.MapGet("/api/strands/{strandId:guid}/beat/{beatId:guid}/audio", async (
     return Results.File(stream, contentType, enableRangeProcessing: true);
 }).RequireAuthorization();
 
-app.MapGet("/api/strands/{strandId:guid}/strand.wav", async (
-    Guid strandId,
+app.MapGet("/api/nodes/{nodeId:guid}/node.wav", async (
+    Guid nodeId,
     StreetSamurai.Core.Interfaces.IAudioStore audioStore,
     Microsoft.EntityFrameworkCore.IDbContextFactory<StreetSamurai.Core.Data.StreetSamuraiDbContext> dbFactory) =>
 {
     await using var db = await dbFactory.CreateDbContextAsync();
-    var strand = await Microsoft.EntityFrameworkCore.EntityFrameworkQueryableExtensions
+    var node = await Microsoft.EntityFrameworkCore.EntityFrameworkQueryableExtensions
         .FirstOrDefaultAsync(
-            Microsoft.EntityFrameworkCore.EntityFrameworkQueryableExtensions.AsNoTracking(db.Strands)
-                .Where(s => s.Id == strandId));
-    if (strand is null) return Results.NotFound();
+            Microsoft.EntityFrameworkCore.EntityFrameworkQueryableExtensions.AsNoTracking(db.Nodes)
+                .Where(s => s.Id == nodeId));
+    if (node is null) return Results.NotFound();
 
     // Try the WAV first, then MP3, then legacy episode-era filenames.
     // Both formats are valid outputs from ExportCombinedAsync depending on
-    // whether the strand's beats were narrated as lossless PCM or MP3.
+    // whether the node's beats were narrated as lossless PCM or MP3.
     string? rel = null, contentType = null, filenameExt = null;
     var candidates = new[]
     {
-        ($"{strand.Slug}/strand.wav",  "audio/wav",  "wav"),
-        ($"{strand.Slug}/strand.mp3",  "audio/mpeg", "mp3"),
-        ($"{strand.Slug}/episode.wav", "audio/wav",  "wav"),
-        ($"{strand.Slug}/episode.mp3", "audio/mpeg", "mp3"),
+        ($"{node.Slug}/node.wav",  "audio/wav",  "wav"),
+        ($"{node.Slug}/node.mp3",  "audio/mpeg", "mp3"),
+        ($"{node.Slug}/episode.wav", "audio/wav",  "wav"),
+        ($"{node.Slug}/episode.mp3", "audio/mpeg", "mp3"),
     };
     foreach (var (r, t, e) in candidates)
     {
@@ -2373,7 +2373,7 @@ app.MapGet("/api/strands/{strandId:guid}/strand.wav", async (
     }
     if (rel == null) return Results.NotFound();
 
-    var fileDownloadName = $"{strand.Slug}.{filenameExt}";
+    var fileDownloadName = $"{node.Slug}.{filenameExt}";
     var localPath = await audioStore.ResolveLocalPathAsync(rel);
     if (localPath != null)
         return Results.File(localPath, contentType!, fileDownloadName, enableRangeProcessing: true);
@@ -2395,7 +2395,7 @@ app.MapGet("/api/media/{filename}", (string filename, MediaService media) =>
 // ── Distributed worker REST API ───────────────────────────────────────────────
 // Auth: X-Worker-Key header must match WorkerSettings:ApiKey in appsettings / env.
 // Workers are stateless: they claim work, run the local LLM, and POST results back.
-// The coordinator (this process) is the only writer to EntityReviews, StrandReviews, Beats, Edges.
+// The coordinator (this process) is the only writer to EntityReviews, NodeReviews, Beats, Edges.
 
 static bool WorkerAuthOk(HttpContext ctx, IConfiguration cfg)
 {

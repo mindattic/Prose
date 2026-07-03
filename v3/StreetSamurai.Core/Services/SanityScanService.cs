@@ -7,12 +7,12 @@ namespace StreetSamurai.Core.Services;
 // ─────────────────────────────────────────────────────────────────────────────
 // SanityScanService
 //
-// Runs a battery of deterministic (no-LLM) checks over a finished strand's
+// Runs a battery of deterministic (no-LLM) checks over a finished node's
 // prose to catch problems that reviewers miss because they're invisible to a
 // reader who doesn't know the internal authoring codes.
 //
 // Checks:
-//   A) Internal strand-code leak  -- "NRST" / "BCODA" / etc. in prose
+//   A) Internal node-code leak  -- "NRST" / "BCODA" / etc. in prose
 //   B) Undefined all-caps acronym -- \b[A-Z]{3,6}\b not in whitelist or entity DB
 //   C) Heft / length floor        -- total word count -> PDF page estimate
 //   D) Mojibake detector          -- UTF-8 -> codepage corruption artifacts
@@ -69,29 +69,29 @@ public class SanityScanService(IDbContextFactory<StreetSamuraiDbContext> dbFacto
 
     // ── Public API ────────────────────────────────────────────────────────────
 
-    public async Task<SanityReport> ScanAsync(Guid strandId, CancellationToken ct = default)
+    public async Task<SanityReport> ScanAsync(Guid nodeId, CancellationToken ct = default)
     {
         await using var db = await dbFactory.CreateDbContextAsync(ct);
 
-        // Load the strand + its ordered beats (same pattern as StoryAuditService)
-        var strand = await db.Strands
+        // Load the node + its ordered beats (same pattern as StoryAuditService)
+        var node = await db.Nodes
             .AsNoTracking()
-            .Include(s => s.StrandBeats)
+            .Include(s => s.NodeBeats)
             .ThenInclude(sb => sb.Beat)
-            .FirstOrDefaultAsync(s => s.Id == strandId, ct)
-            ?? throw new InvalidOperationException($"Strand {strandId} not found.");
+            .FirstOrDefaultAsync(s => s.Id == nodeId, ct)
+            ?? throw new InvalidOperationException($"Node {nodeId} not found.");
 
-        var orderedBeats = strand.StrandBeats
+        var orderedBeats = node.NodeBeats
             .Where(sb => sb.IsEnabled && sb.Beat != null)
             .OrderBy(sb => sb.SortKey)
             .Select(sb => sb.Beat!)
             .ToList();
 
-        // ── Load all strand codes from DB ─────────────────────────────────────
-        var dbCodes = await db.Strands
+        // ── Load all node codes from DB ─────────────────────────────────────
+        var dbCodes = await db.Nodes
             .AsNoTracking()
-            .Where(s => s.StrandCode != null)
-            .Select(s => s.StrandCode!)
+            .Where(s => s.NodeCode != null)
+            .Select(s => s.NodeCode!)
             .ToListAsync(ct);
 
         var allCodes = BuiltinCodes
@@ -152,7 +152,7 @@ public class SanityScanService(IDbContextFactory<StreetSamuraiDbContext> dbFacto
                     Severity:   CodeSeverity(code),
                     Kind:       "InternalCodeLeak",
                     BeatNumber: beat.Number,
-                    Message:    $"Internal strand code \"{code}\" appears in prose -- must be an in-world name.",
+                    Message:    $"Internal node code \"{code}\" appears in prose -- must be an in-world name.",
                     Snippet:    snippet));
             }
 
@@ -220,9 +220,9 @@ public class SanityScanService(IDbContextFactory<StreetSamuraiDbContext> dbFacto
             .ToList();
 
         return new SanityReport(
-            StrandTitle:       strand.Title,
-            StrandSlug:        strand.Slug,
-            StrandCode:        strand.StrandCode,
+            NodeTitle:       node.Title,
+            NodeSlug:        node.Slug,
+            NodeCode:        node.NodeCode,
             BeatCount:         beatIndex,
             WordCount:         totalWords,
             EstimatedPdfPages: estimatedPages,
@@ -277,9 +277,9 @@ public sealed record SanityFinding(
     string? Snippet);
 
 public sealed record SanityReport(
-    string                       StrandTitle,
-    string                       StrandSlug,
-    string?                      StrandCode,
+    string                       NodeTitle,
+    string                       NodeSlug,
+    string?                      NodeCode,
     int                          BeatCount,
     int                          WordCount,
     int                          EstimatedPdfPages,

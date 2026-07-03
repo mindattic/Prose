@@ -8,7 +8,7 @@ using StreetSamurai.Core.Interfaces;
 namespace StreetSamurai.Core.Services;
 
 /// <summary>
-/// Self-correcting canon guard. For a strand's prose it pulls the relevant canon
+/// Self-correcting canon guard. For a node's prose it pulls the relevant canon
 /// across <em>all</em> entity types (<see cref="CanonRetrievalService"/>) and has
 /// an LLM flag every place the prose CONTRADICTS that canon — a wrong attribute,
 /// something impossible per an entity's record, a retired thing used as current,
@@ -24,7 +24,7 @@ namespace StreetSamurai.Core.Services;
 public class CanonContradictionService
 {
     private readonly IDbContextFactory<StreetSamuraiDbContext> dbFactory;
-    private readonly StrandWorkbenchService workbench;
+    private readonly NodeWorkbenchService workbench;
     private readonly CanonRetrievalService retrieval;
     private readonly ILlmService llm;
     private readonly FindingsService findings;
@@ -34,7 +34,7 @@ public class CanonContradictionService
 
     public CanonContradictionService(
         IDbContextFactory<StreetSamuraiDbContext> dbFactory,
-        StrandWorkbenchService workbench,
+        NodeWorkbenchService workbench,
         CanonRetrievalService retrieval,
         ILlmService llm,
         FindingsService findings,
@@ -51,21 +51,21 @@ public class CanonContradictionService
     public sealed record Contradiction(string Entity, string Issue, string? Snippet, string? SuggestedFix, string Severity);
     public sealed record CheckResult(string Slug, int ChunksChecked, List<Contradiction> Contradictions);
 
-    /// <summary>Sweep one strand. Each contradiction is written as an
+    /// <summary>Sweep one node. Each contradiction is written as an
     /// approval-gated CANON-CONTRADICTION finding (nothing rewrites the prose).
     /// When <paramref name="proposeFixes"/> is set, high-severity contradictions
     /// get a concrete canon-honoring rewrite of the offending span generated and
     /// attached to the finding (the bounded self-correction loop — still
     /// approval-gated; the writer applies it).</summary>
-    public async Task<CheckResult> CheckStrandAsync(Guid strandId, bool proposeFixes = false, CancellationToken ct = default)
+    public async Task<CheckResult> CheckNodeAsync(Guid nodeId, bool proposeFixes = false, CancellationToken ct = default)
     {
         await using var db = await dbFactory.CreateDbContextAsync(ct);
-        var strand = await db.Strands.AsNoTracking().FirstOrDefaultAsync(s => s.Id == strandId, ct)
-            ?? throw new InvalidOperationException($"Strand {strandId} not found.");
+        var node = await db.Nodes.AsNoTracking().FirstOrDefaultAsync(s => s.Id == nodeId, ct)
+            ?? throw new InvalidOperationException($"Node {nodeId} not found.");
 
-        var ordered = await workbench.GetOrderedBeatsAsync(strandId, ct);
+        var ordered = await workbench.GetOrderedBeatsAsync(nodeId, ct);
         var prose = string.Join("\n\n", ordered.Select(o => (o.Beat.Text ?? "").Trim()).Where(t => t.Length > 0));
-        if (prose.Length == 0) return new CheckResult(strand.Slug, 0, []);
+        if (prose.Length == 0) return new CheckResult(node.Slug, 0, []);
 
         var all = new List<Contradiction>();
         int chunks = 0;
@@ -108,7 +108,7 @@ public class CanonContradictionService
             try
             {
                 findings.Upsert(
-                    filePath:     $"strand:{strand.Slug}",
+                    filePath:     $"node:{node.Slug}",
                     chapterId:    null,
                     category:     FindingCategory.Contradiction,
                     severity:     ParseSeverity(c.Severity),
@@ -119,8 +119,8 @@ public class CanonContradictionService
             catch (Exception ex) { log.LogWarning(ex, "Failed to queue contradiction finding"); }
         }
 
-        log.LogInformation("Canon check {Slug}: {Chunks} chunks → {N} contradictions.", strand.Slug, chunks, all.Count);
-        return new CheckResult(strand.Slug, chunks, all);
+        log.LogInformation("Canon check {Slug}: {Chunks} chunks → {N} contradictions.", node.Slug, chunks, all.Count);
+        return new CheckResult(node.Slug, chunks, all);
     }
 
     private async Task<List<Contradiction>> DetectAsync(string canon, string prose, CancellationToken ct)

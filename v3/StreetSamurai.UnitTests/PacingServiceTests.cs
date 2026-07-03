@@ -70,7 +70,7 @@ public class PacingServiceDetailedTests
     [TestCase("attack before they can signal", PacingService.PaceMode.Strike)]
     public void GetPacing_FightChaseEscapeAttack_ReturnsStrike(string goal, PacingService.PaceMode expected)
     {
-        // Use mid-strand position that would default to Tighten, to prove override fires
+        // Use mid-node position that would default to Tighten, to prove override fires
         var result = PacingService.GetPacing(5, 12, goal);
         Assert.That(result.Mode, Is.EqualTo(expected));
     }

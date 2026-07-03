@@ -21,12 +21,12 @@ namespace StreetSamurai.Core.Services;
 //   Deep     — Pass 1 + Pass 2 + ledger refresh + weakest-moment fix writes.
 //
 // Advisory cap: blocking dimensions (WantNeedDivergence, CostFeltNotAsserted)
-// file Findings via FindingsService. Does NOT alter Strand.Score or the 82/85
+// file Findings via FindingsService. Does NOT alter Node.Score or the 82/85
 // reader-panel gate.
 //
 // Usage:
 //   ss --examine-emotion --slug <slug> [--effort draft|standard|deep] [--json]
-//   MCP: examine_emotional_depth(strandIdOrSlug, effort, maxChars)
+//   MCP: examine_emotional_depth(nodeIdOrSlug, effort, maxChars)
 
 public enum EmotionalDimension
 {
@@ -55,7 +55,7 @@ public record DimensionResult(
 public record BeatEmotionalScore(int BeatNumber, int Depth, string? Note);
 
 public record EmotionalExaminationResult(
-    Guid StrandId,
+    Guid NodeId,
     string Slug,
     string Title,
     double EmotionalDepthScore,
@@ -116,19 +116,19 @@ public class EmotionalDepthService
 
     // ── Public entry points ───────────────────────────────────────────────────
 
-    public async Task<EmotionalExaminationResult> ExamineStrandAsync(
-        Guid strandId, string effort = "standard", int maxChars = 40000, CancellationToken ct = default)
+    public async Task<EmotionalExaminationResult> ExamineNodeAsync(
+        Guid nodeId, string effort = "standard", int maxChars = 40000, CancellationToken ct = default)
     {
         await using var db = await dbFactory.CreateDbContextAsync(ct);
 
-        var strand = await db.Strands.AsNoTracking()
-            .FirstOrDefaultAsync(s => s.Id == strandId, ct)
-            ?? throw new InvalidOperationException($"Strand {strandId} not found.");
+        var node = await db.Nodes.AsNoTracking()
+            .FirstOrDefaultAsync(s => s.Id == nodeId, ct)
+            ?? throw new InvalidOperationException($"Node {nodeId} not found.");
 
-        // For book strands, examine the LIVE chapter prose (child chapters), not the
-        // book strand's own beats — those may hold a legacy outline/condensed draft.
-        var hasChildren = await db.Strands.AsNoTracking()
-            .AnyAsync(s => s.ParentStrandId == strandId && s.Kind == "chapter" && !s.IsWIP, ct);
+        // For book nodes, examine the LIVE chapter prose (child chapters), not the
+        // book node's own beats — those may hold a legacy outline/condensed draft.
+        var hasChildren = await db.Nodes.AsNoTracking()
+            .AnyAsync(s => s.ParentNodeId == nodeId && s.Kind == "chapter" && !s.IsWIP, ct);
 
         List<string> beats;
         List<int> beatNums;
@@ -137,10 +137,10 @@ public class EmotionalDepthService
         if (hasChildren)
         {
             var rows = await (
-                from s in db.Strands.AsNoTracking()
-                join sb in db.StrandBeats.AsNoTracking() on s.Id equals sb.StrandId
+                from s in db.Nodes.AsNoTracking()
+                join sb in db.NodeBeats.AsNoTracking() on s.Id equals sb.NodeId
                 join b in db.Beats.AsNoTracking() on sb.BeatId equals b.Id
-                where s.ParentStrandId == strandId && s.Kind == "chapter" && !s.IsWIP && sb.IsEnabled
+                where s.ParentNodeId == nodeId && s.Kind == "chapter" && !s.IsWIP && sb.IsEnabled
                 orderby s.SortKey, sb.SortKey
                 select b.Text
             ).ToListAsync(ct);
@@ -152,9 +152,9 @@ public class EmotionalDepthService
         else
         {
             var beatRows = await (
-                from sb in db.StrandBeats.AsNoTracking()
+                from sb in db.NodeBeats.AsNoTracking()
                 join b in db.Beats.AsNoTracking() on sb.BeatId equals b.Id
-                where sb.StrandId == strandId
+                where sb.NodeId == nodeId
                 orderby sb.SortKey
                 select new { b.Text, b.Number }
             ).ToListAsync(ct);
@@ -166,24 +166,24 @@ public class EmotionalDepthService
         var assembled = string.Join("\n\n---\n\n", beats);
 
         return await ExamineTextAsync(
-            strandId, strand.Slug, strand.Title, strand.StrandBible,
+            nodeId, node.Slug, node.Title, node.NodeBible,
             assembled, beatNums, effort, effectiveMax, ct);
     }
 
     public async Task<EmotionalExaminationResult> ExamineTextAsync(
-        Guid strandId, string slug, string title, string? bible,
+        Guid nodeId, string slug, string title, string? bible,
         string text, IReadOnlyList<int> beatNumbers,
         string effort = "standard", int maxChars = 40000, CancellationToken ct = default)
     {
         if (string.IsNullOrWhiteSpace(text))
-            return EmptyResult(strandId, slug, title);
+            return EmptyResult(nodeId, slug, title);
 
         var truncated = Truncate(text, maxChars);
         var register  = DetectRegister(bible);
         var forceRefresh = effort == "deep";
 
         // Ledger extraction (all tiers — cheap, cached)
-        var ledgers = await this.ledger.GetLedgerAsync(strandId, bible, truncated, forceRefresh, ct);
+        var ledgers = await this.ledger.GetLedgerAsync(nodeId, bible, truncated, forceRefresh, ct);
         var whoBlock = BuildWhoBlock(ledgers);
 
         // Pass 1 — 8 parallel dimension calls (all tiers)
@@ -210,7 +210,7 @@ public class EmotionalDepthService
         {
             var sev = dim.Score == 0 ? FindingSeverity.High : FindingSeverity.Medium;
             findings.Upsert(
-                filePath: $"strand:{slug}",
+                filePath: $"node:{slug}",
                 chapterId: null,
                 category: FindingCategory.Other,
                 severity: sev,
@@ -221,12 +221,12 @@ public class EmotionalDepthService
 
         // Persist examination + children
         var hash = Hash(text);
-        await PersistAsync(strandId, effort, depthScore, register, hash,
+        await PersistAsync(nodeId, effort, depthScore, register, hash,
             beatNumbers.Count, blockingCount, dimensions, beatCurve, ct);
 
         // Write Beat.EmotionalScore for Pass 2 results
         if (beatCurve.Count > 0)
-            await UpdateBeatEmotionalScoresAsync(strandId, beatCurve, ct);
+            await UpdateBeatEmotionalScoresAsync(nodeId, beatCurve, ct);
 
         var recommendation = blockingCount > 0
             ? $"⛔ {blockingCount} blocking dimension(s) open — resolve WantNeedDivergence / CostFeltNotAsserted before marking publish-ready."
@@ -237,7 +237,7 @@ public class EmotionalDepthService
                     : "Solid foundation — address the weakest dimensions' beat-scoped fixes to push toward Embodied/Instrument.";
 
         return new EmotionalExaminationResult(
-            strandId, slug, title,
+            nodeId, slug, title,
             Math.Round(depthScore, 1),
             register,
             dimensions,
@@ -363,7 +363,7 @@ PROSE:
     // ── Persistence ───────────────────────────────────────────────────────────
 
     private async Task PersistAsync(
-        Guid strandId, string effort, double score, string register,
+        Guid nodeId, string effort, double score, string register,
         string hash, int beatCount, int blockingCount,
         IReadOnlyList<DimensionResult> dims,
         IReadOnlyList<BeatEmotionalScore> curve,
@@ -374,7 +374,7 @@ PROSE:
         var exam = new EmotionalExamination
         {
             Id                 = Guid.NewGuid(),
-            StrandId           = strandId,
+            NodeId           = nodeId,
             EffortTier         = effort,
             EmotionalDepthScore = score,
             Register           = register,
@@ -411,15 +411,15 @@ PROSE:
     }
 
     private async Task UpdateBeatEmotionalScoresAsync(
-        Guid strandId, IReadOnlyList<BeatEmotionalScore> curve, CancellationToken ct)
+        Guid nodeId, IReadOnlyList<BeatEmotionalScore> curve, CancellationToken ct)
     {
         await using var db = await dbFactory.CreateDbContextAsync(ct);
         var beatNumbers = curve.Select(c => c.BeatNumber).ToHashSet();
 
         var beats = await (
-            from sb in db.StrandBeats
+            from sb in db.NodeBeats
             join b in db.Beats on sb.BeatId equals b.Id
-            where sb.StrandId == strandId && beatNumbers.Contains(b.Number)
+            where sb.NodeId == nodeId && beatNumbers.Contains(b.Number)
             select b
         ).ToListAsync(ct);
 

@@ -1,15 +1,15 @@
 namespace StreetSamurai.Core.Data.Entities;
 
 /// <summary>
-/// A seeded narrative detail (plant) and its payoff, persisted per strand.
+/// A seeded narrative detail (plant) and its payoff, persisted per node.
 /// Enforces the principle: "reward re-reading without requiring it."
-/// IsTransparent must be true before a strand is considered gateway-ready.
+/// IsTransparent must be true before a node is considered gateway-ready.
 /// </summary>
 public class PlantPayoff
 {
     public Guid   Id                { get; set; } = Guid.NewGuid();
     public Guid   UniverseId        { get; set; }
-    public Guid   StrandId          { get; set; }
+    public Guid   NodeId          { get; set; }
 
     /// <summary>Beat where the detail is seeded. Null = planned but not yet written.</summary>
     public Guid?  PlantBeatId       { get; set; }
@@ -40,7 +40,7 @@ public class PlantPayoff
     public DateTime UpdatedAt  { get; set; } = DateTime.UtcNow;
 
     // Navigation
-    public Strand? Strand     { get; set; }
+    public Node? Node     { get; set; }
     public Beat?   PlantBeat  { get; set; }
     public Beat?   PayoffBeat { get; set; }
 }

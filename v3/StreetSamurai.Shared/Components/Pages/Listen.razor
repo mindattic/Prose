@@ -340,8 +340,8 @@
 
     protected override async Task OnInitializedAsync()
     {
-        // Unified cutover: /listen funnels to /strands; /listen?episode={id}
-        // funnels to /strand/{id} since Episode.Id was reused as Strand.Id
+        // Unified cutover: /listen funnels to /nodes; /listen?episode={id}
+        // funnels to /node/{id} since Episode.Id was reused as Node.Id
         // during the migration.
         var uriEarly = NavMgr.ToAbsoluteUri(NavMgr.Uri);
         var qEarly = uriEarly.Query;
@@ -350,11 +350,11 @@
             var m = System.Text.RegularExpressions.Regex.Match(qEarly, @"episode=([0-9a-fA-F-]+)");
             if (m.Success)
             {
-                NavMgr.NavigateTo($"/strand/{m.Groups[1].Value}", replace: true);
+                NavMgr.NavigateTo($"/node/{m.Groups[1].Value}", replace: true);
                 return;
             }
         }
-        NavMgr.NavigateTo("/strands", replace: true);
+        NavMgr.NavigateTo("/nodes", replace: true);
         return;
 
 #pragma warning disable CS0162

@@ -59,7 +59,7 @@ public class LocalReviewLlmTests
         // pass deliberately bogus cloud values to prove they're not used.
         var result = await sut.CallAsync(
             providerId: "claude-api", apiKey: "sk-should-be-ignored", model: "",
-            systemPrompt: "you are a reviewer", userMessage: "rate this strand",
+            systemPrompt: "you are a reviewer", userMessage: "rate this node",
             maxTokens: 256, temperature: 0.85);
 
         Assert.That(result, Is.EqualTo("{\"score\":73}"), "returns choices[0].message.content verbatim");

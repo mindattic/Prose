@@ -7,11 +7,11 @@ using System.Text.RegularExpressions;
 namespace StreetSamurai.Blazor.Cli;
 
 /// <summary>
-/// Two-way sync between <c>synopsis.txt</c> in each strand's publish folder and
-/// <c>Strands.Synopsis</c> in the database.
+/// Two-way sync between <c>synopsis.txt</c> in each node's publish folder and
+/// <c>Nodes.Synopsis</c> in the database.
 ///
-///   ss --sync-synopsis                  # sync all non-draft strands
-///   ss --sync-synopsis --slug &lt;slug&gt;    # sync one strand
+///   ss --sync-synopsis                  # sync all non-draft nodes
+///   ss --sync-synopsis --slug &lt;slug&gt;    # sync one node
 ///   ss --sync-synopsis --dry-run        # report what would change, no writes
 ///
 /// Rules (file wins on conflict):
@@ -41,36 +41,36 @@ public static class SyncSynopsisCli
 
         await using var db = await dbFactory.CreateDbContextAsync();
 
-        var query = db.Strands.Where(s => !s.IsWIP);
+        var query = db.Nodes.Where(s => !s.IsWIP);
         if (slug != null)
             query = query.Where(s => s.Slug == slug);
 
-        var strands = await query.OrderBy(s => s.Title).ToListAsync();
+        var nodes = await query.OrderBy(s => s.Title).ToListAsync();
 
         int fileToDb = 0, dbToFile = 0, conflicts = 0, noOp = 0, errors = 0;
 
-        foreach (var strand in strands)
+        foreach (var node in nodes)
         {
-            var dir = BuildFolderPath(baseDir, strand.Title, strand.ParentStrandId, db);
+            var dir = BuildFolderPath(baseDir, node.Title, node.ParentNodeId, db);
             var filePath = Path.Combine(dir, "synopsis.txt");
 
             var fileText = File.Exists(filePath)
                 ? File.ReadAllText(filePath, new UTF8Encoding(false)).Trim()
                 : null;
-            var dbText = string.IsNullOrWhiteSpace(strand.Synopsis) ? null : strand.Synopsis!.Trim();
+            var dbText = string.IsNullOrWhiteSpace(node.Synopsis) ? null : node.Synopsis!.Trim();
 
             if (fileText == null && dbText == null) { noOp++; continue; }
             if (fileText == dbText) { noOp++; continue; }
 
             if (fileText != null && dbText == null)
             {
-                Console.WriteLine($"  [file→db]  {strand.Title}");
-                if (!dryRun) { strand.Synopsis = fileText; strand.UpdatedAt = DateTime.UtcNow; }
+                Console.WriteLine($"  [file→db]  {node.Title}");
+                if (!dryRun) { node.Synopsis = fileText; node.UpdatedAt = DateTime.UtcNow; }
                 fileToDb++;
             }
             else if (fileText == null && dbText != null)
             {
-                Console.WriteLine($"  [db→file]  {strand.Title}");
+                Console.WriteLine($"  [db→file]  {node.Title}");
                 if (!dryRun)
                 {
                     Directory.CreateDirectory(dir);
@@ -81,8 +81,8 @@ public static class SyncSynopsisCli
             else
             {
                 // Both exist and differ — file wins.
-                Console.WriteLine($"  [conflict→file wins] {strand.Title}");
-                if (!dryRun) { strand.Synopsis = fileText!; strand.UpdatedAt = DateTime.UtcNow; }
+                Console.WriteLine($"  [conflict→file wins] {node.Title}");
+                if (!dryRun) { node.Synopsis = fileText!; node.UpdatedAt = DateTime.UtcNow; }
                 conflicts++;
             }
         }
@@ -102,23 +102,23 @@ public static class SyncSynopsisCli
         return errors > 0 ? 1 : 0;
     }
 
-    private static string BuildFolderPath(string baseDir, string strandTitle, Guid? parentId, StreetSamuraiDbContext db)
+    private static string BuildFolderPath(string baseDir, string nodeTitle, Guid? parentId, StreetSamuraiDbContext db)
     {
         var ancestors = new List<string>();
         var pid = parentId;
         for (var guard = 0; pid is Guid p && guard < 8; guard++)
         {
-            var parent = db.Strands.AsNoTracking()
+            var parent = db.Nodes.AsNoTracking()
                 .Where(s => s.Id == p)
-                .Select(s => new { s.Title, s.ParentStrandId })
+                .Select(s => new { s.Title, s.ParentNodeId })
                 .FirstOrDefault();
             if (parent is null) break;
             ancestors.Insert(0, Sanitize(parent.Title));
-            pid = parent.ParentStrandId;
+            pid = parent.ParentNodeId;
         }
         var parts = new List<string> { baseDir };
         parts.AddRange(ancestors);
-        parts.Add(Sanitize(strandTitle));
+        parts.Add(Sanitize(nodeTitle));
         return Path.Combine(parts.ToArray());
     }
 

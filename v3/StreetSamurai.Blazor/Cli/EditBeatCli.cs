@@ -8,16 +8,16 @@ namespace StreetSamurai.Blazor.Cli;
 /// <c>ss --edit-beat</c> — overwrite one beat's prose, or insert a new beat after a given position.
 ///
 /// Edit mode (default):
-///   --slug &lt;slug&gt;           Strand slug.
+///   --slug &lt;slug&gt;           Node slug.
 ///   --beat-number &lt;N&gt;       1-indexed beat position in reading order.
 ///   --file &lt;path&gt;           Path to a text file whose contents replace the beat prose.
 ///
 /// Insert mode (--insert-after):
-///   --slug &lt;slug&gt;           Strand slug.
+///   --slug &lt;slug&gt;           Node slug.
 ///   --insert-after &lt;N&gt;      Insert a new beat after position N (0 = insert at top).
 ///   --file &lt;path&gt;           Path to a text file whose contents become the new beat prose.
 ///
-/// Exit codes: 0 = success, 1 = bad args / strand not found / beat not found.
+/// Exit codes: 0 = success, 1 = bad args / node not found / beat not found.
 /// </summary>
 public static class EditBeatCli
 {
@@ -67,18 +67,18 @@ public static class EditBeatCli
         }
 
         var dbFactory  = services.GetRequiredService<IDbContextFactory<StreetSamuraiDbContext>>();
-        var workbench  = services.GetRequiredService<StrandWorkbenchService>();
+        var workbench  = services.GetRequiredService<NodeWorkbenchService>();
 
-        // Resolve strand
-        Guid strandId;
+        // Resolve node
+        Guid nodeId;
         await using (var db = await dbFactory.CreateDbContextAsync())
         {
-            var strand = await db.Strands.AsNoTracking().FirstOrDefaultAsync(s => s.Slug == slug);
-            if (strand == null) { Console.Error.WriteLine($"[edit-beat] Strand '{slug}' not found."); return 1; }
-            strandId = strand.Id;
+            var node = await db.Nodes.AsNoTracking().FirstOrDefaultAsync(s => s.Slug == slug);
+            if (node == null) { Console.Error.WriteLine($"[edit-beat] Node '{slug}' not found."); return 1; }
+            nodeId = node.Id;
         }
 
-        var ordered = await workbench.GetOrderedBeatsAsync(strandId);
+        var ordered = await workbench.GetOrderedBeatsAsync(nodeId);
 
         if (insertMode)
         {
@@ -92,7 +92,7 @@ public static class EditBeatCli
                 }
                 afterId = ordered[insertAfter - 1].Beat.Id;
             }
-            var newBeat = await workbench.InsertBeatAsync(strandId, afterId, prose);
+            var newBeat = await workbench.InsertBeatAsync(nodeId, afterId, prose);
             Console.WriteLine($"[edit-beat] Inserted new beat after position {insertAfter} → id {newBeat.Id} ({prose.Length} chars).");
             return 0;
         }

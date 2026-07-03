@@ -58,7 +58,7 @@ public class SqlSeedService
             ["chapter_beats_table_20260518"]    = "create_chapter_beats_table_20260518.sql",
             ["extend_chapter_beats_for_recording_20260518"] = "extend_chapter_beats_for_recording_20260518.sql",
             ["episodebeat_hash_stale_20260518"] = "add_episodebeat_hash_stale_20260518.sql",
-            ["strand_schema_20260518"]          = "create_strand_schema_20260518.sql",
+            ["node_schema_20260518"]          = "create_node_schema_20260518.sql",
             ["beat_number_20260522"]            = "add_beat_number_20260522.sql",
             ["gaps_table_20260522"]             = "add_gaps_table_20260522.sql",
         };

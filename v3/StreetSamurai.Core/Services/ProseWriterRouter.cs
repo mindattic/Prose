@@ -22,7 +22,7 @@ namespace StreetSamurai.Core.Services;
 ///   - BeatModeLog persistence (BeatModeDetector)
 ///
 /// BeatGeneratorService continues to handle plant/payoff + commandment injection
-/// (those are triggered by BeatContext.StrandId, which ProseWriterRouter preserves).
+/// (those are triggered by BeatContext.NodeId, which ProseWriterRouter preserves).
 /// </summary>
 public class ProseWriterRouter(
     BeatGeneratorService generator,
@@ -88,10 +88,10 @@ public class ProseWriterRouter(
     /// combat rules → ambient grounding → dialogue voices → emotional feedback → tension escalation →
     /// reader knowledge state → BeatGeneratorService → coverage logging.
     /// </summary>
-    /// <param name="context">Beat context assembled by SceneContextAssembler. StrandId must be set.</param>
+    /// <param name="context">Beat context assembled by SceneContextAssembler. NodeId must be set.</param>
     /// <param name="beatId">The beat's DB Guid. Use Guid.Empty for pre-save preview writes.</param>
-    /// <param name="beatIndex">Zero-based position of this beat in the strand. 0 if unknown.</param>
-    /// <param name="totalBeats">Total beats in the strand. 0 disables positional pacing/structural injection.</param>
+    /// <param name="beatIndex">Zero-based position of this beat in the node. 0 if unknown.</param>
+    /// <param name="totalBeats">Total beats in the node. 0 disables positional pacing/structural injection.</param>
     /// <param name="universeId">Current universe for log stamping. Guid.Empty = GLMZ (default).</param>
     /// <param name="ct">Cancellation token.</param>
     public async Task<string> WriteAsync(
@@ -107,23 +107,23 @@ public class ProseWriterRouter(
 
         // Entity context stack: load LRU working memory for this beat (non-fatal if unavailable).
         var entityStackContext = "";
-        if (entityContext != null && context.StrandId != Guid.Empty)
+        if (entityContext != null && context.NodeId != Guid.Empty)
         {
-            try { entityStackContext = await entityContext.PrepareContextAsync(context.StrandId, beatId, context.BeatGoal, context.SceneSoFar, ct); }
+            try { entityStackContext = await entityContext.PrepareContextAsync(context.NodeId, beatId, context.BeatGoal, context.SceneSoFar, ct); }
             catch { /* non-blocking — entity context is best-effort */ }
         }
 
         // Doc context stack: load the rotating cast of pertinent canon .md docs (non-fatal).
         DocContextService.DocContextResult? docResult = null;
         var docStackContext = "";
-        if (docContext != null && settings?.DocContextEnabled == true && context.StrandId != Guid.Empty)
+        if (docContext != null && settings?.DocContextEnabled == true && context.NodeId != Guid.Empty)
         {
             try
             {
                 var triggerText = (context.BeatGoal ?? "") + "\n" + (context.SceneSoFar ?? "");
                 docResult = string.IsNullOrEmpty(context.DocScopeCode)
-                    ? await docContext.PrepareForStrandAsync(context.StrandId, triggerText, tokenBudget: 2000, ct)
-                    : await docContext.PrepareContextAsync(context.StrandId, context.DocScopeCode, triggerText, tokenBudget: 2000, ct: ct);
+                    ? await docContext.PrepareForNodeAsync(context.NodeId, triggerText, tokenBudget: 2000, ct)
+                    : await docContext.PrepareContextAsync(context.NodeId, context.DocScopeCode, triggerText, tokenBudget: 2000, ct: ct);
                 docStackContext = docResult.Block;
             }
             catch { /* non-blocking — doc context is best-effort */ }
@@ -150,32 +150,32 @@ public class ProseWriterRouter(
             catch { /* non-blocking */ }
         }
 
-        // Emotional depth feedback: pull prior examination findings for this strand.
+        // Emotional depth feedback: pull prior examination findings for this node.
         var emotionalGuidanceContext = context.EmotionalGuidanceContext;
-        if (string.IsNullOrEmpty(emotionalGuidanceContext) && dbFactory != null && context.StrandId != Guid.Empty)
+        if (string.IsNullOrEmpty(emotionalGuidanceContext) && dbFactory != null && context.NodeId != Guid.Empty)
         {
-            try { emotionalGuidanceContext = await BuildEmotionalGuidanceAsync(context.StrandId, ct); }
+            try { emotionalGuidanceContext = await BuildEmotionalGuidanceAsync(context.NodeId, ct); }
             catch { /* non-blocking */ }
         }
 
         // ML prose quality guidance: findings from the nightly Python model audit.
         var mlProseGuidanceContext = context.MlProseGuidanceContext;
-        if (string.IsNullOrEmpty(mlProseGuidanceContext) && mlProseGuidance != null && context.StrandId != Guid.Empty)
+        if (string.IsNullOrEmpty(mlProseGuidanceContext) && mlProseGuidance != null && context.NodeId != Guid.Empty)
         {
-            try { mlProseGuidanceContext = await mlProseGuidance.BuildGuidanceAsync(context.StrandId, ct); }
+            try { mlProseGuidanceContext = await mlProseGuidance.BuildGuidanceAsync(context.NodeId, ct); }
             catch { /* non-blocking — ML guidance is best-effort */ }
         }
 
         // Tension escalation: warn when recent beats have stagnated at low intensity.
         var tensionGuidanceContext = context.TensionGuidanceContext;
-        if (string.IsNullOrEmpty(tensionGuidanceContext) && tensionService != null && context.StrandId != Guid.Empty)
-            tensionGuidanceContext = tensionService.BuildGuidanceBlock(context.StrandId, mode);
+        if (string.IsNullOrEmpty(tensionGuidanceContext) && tensionService != null && context.NodeId != Guid.Empty)
+            tensionGuidanceContext = tensionService.BuildGuidanceBlock(context.NodeId, mode);
 
-        // Reader knowledge state: what the reader knows so far in this strand.
+        // Reader knowledge state: what the reader knows so far in this node.
         var readerKnowledgeContext = context.ReaderKnowledgeContext;
-        if (string.IsNullOrEmpty(readerKnowledgeContext) && readerKnowledge != null && context.StrandId != Guid.Empty)
+        if (string.IsNullOrEmpty(readerKnowledgeContext) && readerKnowledge != null && context.NodeId != Guid.Empty)
         {
-            try { readerKnowledgeContext = await readerKnowledge.BuildKnowledgeBlockAsync(context.StrandId, ct); }
+            try { readerKnowledgeContext = await readerKnowledge.BuildKnowledgeBlockAsync(context.NodeId, ct); }
             catch { /* non-blocking */ }
         }
 
@@ -221,9 +221,9 @@ public class ProseWriterRouter(
             catch { /* non-blocking */ }
         }
 
-        // Narrative summary: rolling compressed memory of prior beats — long-strand coherence.
+        // Narrative summary: rolling compressed memory of prior beats — long-node coherence.
         var narrativeSummaryContext = context.NarrativeSummaryContext;
-        if (string.IsNullOrEmpty(narrativeSummaryContext) && narrativeSummary != null && context.StrandId != Guid.Empty)
+        if (string.IsNullOrEmpty(narrativeSummaryContext) && narrativeSummary != null && context.NodeId != Guid.Empty)
         {
             try { narrativeSummaryContext = narrativeSummary.GetSummaryChain(); }
             catch { /* non-blocking */ }
@@ -231,17 +231,17 @@ public class ProseWriterRouter(
 
         // Chapter summaries: DB-backed prior-chapter memory (cross-session coherence).
         var chapterSummaryContext = context.ChapterSummaryContext;
-        if (string.IsNullOrEmpty(chapterSummaryContext) && chapterSummary != null && context.StrandId != Guid.Empty)
+        if (string.IsNullOrEmpty(chapterSummaryContext) && chapterSummary != null && context.NodeId != Guid.Empty)
         {
-            try { chapterSummaryContext = await chapterSummary.BuildPriorSummaryContextAsync(context.StrandId, ct); }
+            try { chapterSummaryContext = await chapterSummary.BuildPriorSummaryContextAsync(context.NodeId, ct); }
             catch { /* non-blocking */ }
         }
 
         // Open threads: unresolved promises/plants/questions from prior beats.
         var openThreadsContext = context.OpenThreadsContext;
-        if (string.IsNullOrEmpty(openThreadsContext) && openThreads != null && context.StrandId != Guid.Empty)
+        if (string.IsNullOrEmpty(openThreadsContext) && openThreads != null && context.NodeId != Guid.Empty)
         {
-            try { openThreadsContext = await openThreads.BuildContextAsync(context.StrandId, ct); }
+            try { openThreadsContext = await openThreads.BuildContextAsync(context.NodeId, ct); }
             catch { /* non-blocking */ }
         }
 
@@ -282,7 +282,7 @@ public class ProseWriterRouter(
             {
                 var docs = (docResult?.Loaded ?? (IReadOnlyList<DocContextService.LoadedDoc>)Array.Empty<DocContextService.LoadedDoc>())
                     .Select(d => new ContextTelemetryService.DocLoad(d.RelativePath, d.Tier, d.Reason, d.Score, d.Chars)).ToList();
-                var entList = entityContext?.GetActiveEntities(context.StrandId) ?? new List<EntityContextStack.StackEntry>();
+                var entList = entityContext?.GetActiveEntities(context.NodeId) ?? new List<EntityContextStack.StackEntry>();
                 var ents = entList
                     .Take(EntityContextService.MaxInjectedEntities)
                     .Select(e => new ContextTelemetryService.EntityLoad(e.Name, e.EntityType, "stack", e.Score, e.Depth)).ToList();
@@ -298,54 +298,54 @@ public class ProseWriterRouter(
         var pacingApplicable  = totalBeats > 0;
         var structApplicable  = totalBeats > 0;
         var combatApplicable  = mode == BeatMode.Combat;
-        var strandApplicable  = context.StrandId != Guid.Empty;
+        var nodeApplicable  = context.NodeId != Guid.Empty;
         var capturedResult    = result;
-        var capturedStrandId  = context.StrandId;
+        var capturedNodeId  = context.NodeId;
 
         _ = Task.Run(async () =>
         {
-            await monitor.LogBeatActivityAsync(beatId, context.StrandId, universeId,
+            await monitor.LogBeatActivityAsync(beatId, context.NodeId, universeId,
             [
                 new("Pacing",              IsApplicable: pacingApplicable,  IsActive: pacingApplicable && enriched.PacingGuidance.Length > 0,                 BlockSizeChars: enriched.PacingGuidance.Length),
                 new("StoryMethodology",    IsApplicable: structApplicable,  IsActive: structApplicable && enriched.StructuralRoleGuidance.Length > 0,         BlockSizeChars: enriched.StructuralRoleGuidance.Length),
-                new("PlantPayoff",         IsApplicable: strandApplicable,  IsActive: strandApplicable,                                                       BlockSizeChars: 0),
-                new("StoryAudit",          IsApplicable: strandApplicable,  IsActive: strandApplicable,                                                       BlockSizeChars: 0),
+                new("PlantPayoff",         IsApplicable: nodeApplicable,  IsActive: nodeApplicable,                                                       BlockSizeChars: 0),
+                new("StoryAudit",          IsApplicable: nodeApplicable,  IsActive: nodeApplicable,                                                       BlockSizeChars: 0),
                 new("Combat",              IsApplicable: combatApplicable,  IsActive: combatApplicable,                                                       BlockSizeChars: combatApplicable ? CombatProseGuidance.Length : 0),
-                new("EntityContext",       IsApplicable: strandApplicable,  IsActive: entityStackContext.Length > 0,                                          BlockSizeChars: entityStackContext.Length),
-                new("DocContext",          IsApplicable: strandApplicable,  IsActive: docStackContext.Length > 0,                                             BlockSizeChars: docStackContext.Length),
-                new("SceneContext",        IsApplicable: strandApplicable,  IsActive: locationContext.Length > 0,                                             BlockSizeChars: locationContext.Length),
-                new("DialogueService",     IsApplicable: strandApplicable,  IsActive: dialogueContext.Length > 0,                                             BlockSizeChars: dialogueContext.Length),
-                new("EmotionalGuidance",   IsApplicable: strandApplicable,  IsActive: emotionalGuidanceContext.Length > 0,                                    BlockSizeChars: emotionalGuidanceContext.Length),
-                new("TensionEscalation",   IsApplicable: strandApplicable,          IsActive: tensionGuidanceContext.Length > 0,                                        BlockSizeChars: tensionGuidanceContext.Length),
-                new("ReaderKnowledge",     IsApplicable: strandApplicable,          IsActive: readerKnowledgeContext.Length > 0,                                        BlockSizeChars: readerKnowledgeContext.Length),
-                new("Consequence",         IsApplicable: strandApplicable,          IsActive: consequenceContext.Length > 0,                                            BlockSizeChars: consequenceContext.Length),
+                new("EntityContext",       IsApplicable: nodeApplicable,  IsActive: entityStackContext.Length > 0,                                          BlockSizeChars: entityStackContext.Length),
+                new("DocContext",          IsApplicable: nodeApplicable,  IsActive: docStackContext.Length > 0,                                             BlockSizeChars: docStackContext.Length),
+                new("SceneContext",        IsApplicable: nodeApplicable,  IsActive: locationContext.Length > 0,                                             BlockSizeChars: locationContext.Length),
+                new("DialogueService",     IsApplicable: nodeApplicable,  IsActive: dialogueContext.Length > 0,                                             BlockSizeChars: dialogueContext.Length),
+                new("EmotionalGuidance",   IsApplicable: nodeApplicable,  IsActive: emotionalGuidanceContext.Length > 0,                                    BlockSizeChars: emotionalGuidanceContext.Length),
+                new("TensionEscalation",   IsApplicable: nodeApplicable,          IsActive: tensionGuidanceContext.Length > 0,                                        BlockSizeChars: tensionGuidanceContext.Length),
+                new("ReaderKnowledge",     IsApplicable: nodeApplicable,          IsActive: readerKnowledgeContext.Length > 0,                                        BlockSizeChars: readerKnowledgeContext.Length),
+                new("Consequence",         IsApplicable: nodeApplicable,          IsActive: consequenceContext.Length > 0,                                            BlockSizeChars: consequenceContext.Length),
                 new("AmbientAnomaly",      IsApplicable: !string.IsNullOrEmpty(context.Location), IsActive: ambientAnomalyContext.Length > 0,                          BlockSizeChars: ambientAnomalyContext.Length),
                 new("WorldState",          IsApplicable: beatId != Guid.Empty,      IsActive: worldStateContext.Length > 0,                                             BlockSizeChars: worldStateContext.Length),
-                new("NarrativeSummary",    IsApplicable: strandApplicable,          IsActive: narrativeSummaryContext.Length > 0,                                       BlockSizeChars: narrativeSummaryContext.Length),
-                new("ChapterSummary",      IsApplicable: strandApplicable,          IsActive: chapterSummaryContext.Length > 0,                                         BlockSizeChars: chapterSummaryContext.Length),
-                new("OpenThreads",         IsApplicable: strandApplicable,          IsActive: openThreadsContext.Length > 0,                                            BlockSizeChars: openThreadsContext.Length),
+                new("NarrativeSummary",    IsApplicable: nodeApplicable,          IsActive: narrativeSummaryContext.Length > 0,                                       BlockSizeChars: narrativeSummaryContext.Length),
+                new("ChapterSummary",      IsApplicable: nodeApplicable,          IsActive: chapterSummaryContext.Length > 0,                                         BlockSizeChars: chapterSummaryContext.Length),
+                new("OpenThreads",         IsApplicable: nodeApplicable,          IsActive: openThreadsContext.Length > 0,                                            BlockSizeChars: openThreadsContext.Length),
             ], CancellationToken.None);
 
             await modeDetector.PersistAsync(beatId, universeId, mode, confidence, method, CancellationToken.None);
 
-            if (entityContext != null && context.StrandId != Guid.Empty && capturedResult?.Length > 0)
-                await entityContext.ReconcileAsync(capturedResult, context.StrandId, beatId, universeId, CancellationToken.None);
+            if (entityContext != null && context.NodeId != Guid.Empty && capturedResult?.Length > 0)
+                await entityContext.ReconcileAsync(capturedResult, context.NodeId, beatId, universeId, CancellationToken.None);
 
             // Record tension history and extract reader revelations from the completed beat.
-            tensionService?.RecordBeat(capturedStrandId, mode);
-            if (readerKnowledge != null && capturedStrandId != Guid.Empty && !string.IsNullOrWhiteSpace(capturedResult))
-                await readerKnowledge.ExtractAsync(capturedResult, capturedStrandId, CancellationToken.None);
+            tensionService?.RecordBeat(capturedNodeId, mode);
+            if (readerKnowledge != null && capturedNodeId != Guid.Empty && !string.IsNullOrWhiteSpace(capturedResult))
+                await readerKnowledge.ExtractAsync(capturedResult, capturedNodeId, CancellationToken.None);
 
             // Compress completed beat into rolling narrative summary for next beat.
-            if (narrativeSummary != null && capturedStrandId != Guid.Empty && !string.IsNullOrWhiteSpace(capturedResult))
+            if (narrativeSummary != null && capturedNodeId != Guid.Empty && !string.IsNullOrWhiteSpace(capturedResult))
                 await narrativeSummary.SummarizeSceneAsync(capturedResult, CancellationToken.None);
 
             // Open threads: detect new setups, mark resolved threads from this beat.
-            if (openThreads != null && capturedStrandId != Guid.Empty && beatId != Guid.Empty && !string.IsNullOrWhiteSpace(capturedResult))
+            if (openThreads != null && capturedNodeId != Guid.Empty && beatId != Guid.Empty && !string.IsNullOrWhiteSpace(capturedResult))
             {
-                try { await openThreads.MarkResolvedAsync(capturedStrandId, beatId, capturedResult, CancellationToken.None); }
+                try { await openThreads.MarkResolvedAsync(capturedNodeId, beatId, capturedResult, CancellationToken.None); }
                 catch { /* non-blocking */ }
-                try { await openThreads.DetectAndRegisterAsync(capturedStrandId, beatId, capturedResult, CancellationToken.None); }
+                try { await openThreads.DetectAndRegisterAsync(capturedNodeId, beatId, capturedResult, CancellationToken.None); }
                 catch { /* non-blocking */ }
             }
         }, CancellationToken.None);
@@ -357,11 +357,11 @@ public class ProseWriterRouter(
     /// Backfill coverage logs for an already-written beat WITHOUT regenerating prose.
     /// </summary>
     public async Task LogCoverageAsync(
-        Guid beatId, Guid strandId, string? beatGoal, string? proseHint,
+        Guid beatId, Guid nodeId, string? beatGoal, string? proseHint,
         int beatIndex, int totalBeats, Guid universeId = default,
         CancellationToken ct = default)
     {
-        if (strandId == Guid.Empty) return;
+        if (nodeId == Guid.Empty) return;
 
         var (mode, confidence, method, pacingGuidance, structuralGuidance) =
             ComputeEnrichment(beatGoal, proseHint, beatIndex, totalBeats);
@@ -370,7 +370,7 @@ public class ProseWriterRouter(
         var structApplicable = totalBeats > 0;
         var combatApplicable = mode == BeatMode.Combat;
 
-        await monitor.LogBeatActivityAsync(beatId, strandId, universeId,
+        await monitor.LogBeatActivityAsync(beatId, nodeId, universeId,
         [
             new("Pacing",           IsApplicable: pacingApplicable, IsActive: pacingApplicable && pacingGuidance.Length > 0,     BlockSizeChars: pacingGuidance.Length),
             new("StoryMethodology", IsApplicable: structApplicable, IsActive: structApplicable && structuralGuidance.Length > 0, BlockSizeChars: structuralGuidance.Length),
@@ -410,21 +410,21 @@ public class ProseWriterRouter(
     // ── Emotional guidance helper ─────────────────────────────────────────────
 
     /// <summary>
-    /// Query the Findings table for recent EMOTIONAL-DEPTH blocking findings for this strand
+    /// Query the Findings table for recent EMOTIONAL-DEPTH blocking findings for this node
     /// and format them as a compact generation constraint block.
     /// </summary>
-    private async Task<string> BuildEmotionalGuidanceAsync(Guid strandId, CancellationToken ct)
+    private async Task<string> BuildEmotionalGuidanceAsync(Guid nodeId, CancellationToken ct)
     {
         if (dbFactory == null) return "";
         await using var db = await dbFactory.CreateDbContextAsync(ct);
 
-        var slug = await db.Strands.AsNoTracking()
-            .Where(s => s.Id == strandId)
+        var slug = await db.Nodes.AsNoTracking()
+            .Where(s => s.Id == nodeId)
             .Select(s => s.Slug)
             .FirstOrDefaultAsync(ct);
         if (string.IsNullOrEmpty(slug)) return "";
 
-        var fp = $"strand:{slug}";
+        var fp = $"node:{slug}";
         var catKey = FindingCategory.Other.ToString();
         var statusKey = FindingStatus.New.ToString();
 

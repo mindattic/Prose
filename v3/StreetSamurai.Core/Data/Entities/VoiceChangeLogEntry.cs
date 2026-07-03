@@ -13,7 +13,7 @@ namespace StreetSamurai.Core.Data.Entities;
 ///   <item><b>manual_edit</b> — mined from the temporal beat-version history: the
 ///     diff between a beat as first generated and as the user hand-edited it.</item>
 ///   <item><b>harvest</b> — a rule the <c>VoiceHarvestService</c> distilled from a
-///     ≥80% strand's winning beats (often the commonality across several).</item>
+///     ≥80% node's winning beats (often the commonality across several).</item>
 /// </list>
 ///
 /// Nothing here touches canon or the live rules until a <c>proposed</c> entry is
@@ -28,8 +28,8 @@ public class VoiceChangeLogEntry
     /// <summary>"directive" | "manual_edit" | "harvest".</summary>
     public string Source { get; set; } = "";
 
-    /// <summary>The strand this observation came from, when applicable.</summary>
-    public Guid? StrandId { get; set; }
+    /// <summary>The node this observation came from, when applicable.</summary>
+    public Guid? NodeId { get; set; }
 
     /// <summary>The specific beat the evidence came from, when applicable.</summary>
     public Guid? BeatId { get; set; }
@@ -52,7 +52,7 @@ public class VoiceChangeLogEntry
     /// etc. Drives where an approved change is written.</summary>
     public string RuleTarget { get; set; } = "";
 
-    /// <summary>Provenance so the change is auditable — strand slug + beat number,
+    /// <summary>Provenance so the change is auditable — node slug + beat number,
     /// review score, the directive text, etc.</summary>
     public string? Evidence { get; set; }
 

@@ -239,8 +239,8 @@ public class MarkdownFile
 
     // ── Doc Context Stack (dynamic .md working-set engine) ────────────────────
     // Classify each file for the rotating-context engine (DocContextService).
-    //   Tier:     "always" (universal, every context) | "strand" (one story) | "topic" (triggered)
-    //   Scope:    CSV of strand CODEs the file applies to (strand tier), or "*". Empty = none.
+    //   Tier:     "always" (universal, every context) | "node" (one story) | "topic" (triggered)
+    //   Scope:    CSV of node CODEs the file applies to (node tier), or "*". Empty = none.
     //   Triggers: CSV of keywords/aliases that load a topic file when they appear in scene text.
     //   AutoTier: true = tier/scope/triggers were auto-inferred; false = set from frontmatter.
     public string   Tier          { get; set; } = "topic";

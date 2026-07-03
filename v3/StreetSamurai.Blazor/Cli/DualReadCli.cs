@@ -34,7 +34,7 @@ public static class DualReadCli
         }
 
         var dbFactory = sp.GetRequiredService<IDbContextFactory<StreetSamuraiDbContext>>();
-        var reviewer  = sp.GetRequiredService<StrandReviewService>();
+        var reviewer  = sp.GetRequiredService<NodeReviewService>();
         var settings  = sp.GetRequiredService<SettingsService>();
 
         Guid oldId, newId; string oldTitle, newTitle;
@@ -42,8 +42,8 @@ public static class DualReadCli
         {
             (oldId, oldTitle) = await ResolveAsync(db, oldArg!);
             (newId, newTitle) = await ResolveAsync(db, newArg!);
-            if (oldId == Guid.Empty) { Console.Error.WriteLine($"[dual-read] old strand not found: {oldArg}"); return 1; }
-            if (newId == Guid.Empty) { Console.Error.WriteLine($"[dual-read] new strand not found: {newArg}"); return 1; }
+            if (oldId == Guid.Empty) { Console.Error.WriteLine($"[dual-read] old node not found: {oldArg}"); return 1; }
+            if (newId == Guid.Empty) { Console.Error.WriteLine($"[dual-read] new node not found: {newArg}"); return 1; }
         }
 
         panel ??= $"Panel:{oldId.ToString("N")[..8]}";
@@ -52,12 +52,12 @@ public static class DualReadCli
 
         // Same panel reads both. First call creates/pins the panel; second reuses its exact roster.
         Console.WriteLine("[dual-read] reading OLD…");
-        await reviewer.ReviewStrandAsync(oldId, readers, groupName: panel);
+        await reviewer.ReviewNodeAsync(oldId, readers, groupName: panel);
         Console.WriteLine("[dual-read] reading NEW (same readers)…");
-        await reviewer.ReviewStrandAsync(newId, readers, groupName: panel);
+        await reviewer.ReviewNodeAsync(newId, readers, groupName: panel);
 
-        // Pair the latest review per persona within this panel, across the two strands.
-        List<StrandReview> oldRevs, newRevs;
+        // Pair the latest review per persona within this panel, across the two nodes.
+        List<NodeReview> oldRevs, newRevs;
         await using (var db = await dbFactory.CreateDbContextAsync())
         {
             oldRevs = await LatestPerPersonaAsync(db, oldId, panel);
@@ -65,7 +65,7 @@ public static class DualReadCli
         }
         var newByP = newRevs.ToDictionary(x => x.PersonaId);
 
-        var pairs = new List<(StrandReview Old, StrandReview New)>();
+        var pairs = new List<(NodeReview Old, NodeReview New)>();
         foreach (var o in oldRevs)
             if (newByP.TryGetValue(o.PersonaId, out var n)) pairs.Add((o, n));
 
@@ -105,7 +105,7 @@ public static class DualReadCli
 
     private static string BuildReport(
         string panel, string oldTitle, string newTitle,
-        List<(StrandReview Old, StrandReview New)> pairs,
+        List<(NodeReview Old, NodeReview New)> pairs,
         double meanOld, double meanNew, double meanDelta, int prefNew, int prefOld, int tie)
     {
         var sb = new StringBuilder();
@@ -160,10 +160,10 @@ public static class DualReadCli
         return sb.ToString();
     }
 
-    private static async Task<List<StrandReview>> LatestPerPersonaAsync(StreetSamuraiDbContext db, Guid strandId, string panel)
+    private static async Task<List<NodeReview>> LatestPerPersonaAsync(StreetSamuraiDbContext db, Guid nodeId, string panel)
     {
-        var rows = await db.StrandReviews.AsNoTracking()
-            .Where(r => r.StrandId == strandId && r.FocusGroupName == panel)
+        var rows = await db.NodeReviews.AsNoTracking()
+            .Where(r => r.NodeId == nodeId && r.FocusGroupName == panel)
             .ToListAsync();
         return rows.GroupBy(r => r.PersonaId)
             .Select(g => g.OrderByDescending(x => x.ReviewedAt).First())
@@ -172,8 +172,8 @@ public static class DualReadCli
 
     private static async Task<(Guid id, string title)> ResolveAsync(StreetSamuraiDbContext db, string key)
     {
-        var q = db.Strands.AsNoTracking();
-        Strand? s;
+        var q = db.Nodes.AsNoTracking();
+        Node? s;
         if (Guid.TryParse(key, out var g)) s = await q.FirstOrDefaultAsync(x => x.Id == g);
         else s = await q.FirstOrDefaultAsync(x => x.Slug == key)
               ?? await q.Where(x => x.Id.ToString().StartsWith(key.ToLower())).Take(2).ToListAsync() switch { { Count: 1 } m => m[0], _ => null };

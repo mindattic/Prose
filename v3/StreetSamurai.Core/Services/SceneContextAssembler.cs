@@ -152,7 +152,7 @@ public class SceneContextAssembler(
 
     // Structural/registry entity types that are never "on screen" in a scene.
     private static readonly HashSet<string> ExcludedTypes =
-        new(StringComparer.OrdinalIgnoreCase) { "chapter", "book", "strand", "series", "beat" };
+        new(StringComparer.OrdinalIgnoreCase) { "chapter", "book", "node", "series", "beat" };
 
     // name → (entityId, canonicalName, entityType, singleToken). Built once, refreshed lazily.
     private Dictionary<string, (Guid Id, string Name, string Type, bool SingleToken)>? nameIndex;

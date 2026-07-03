@@ -12,7 +12,7 @@ namespace StreetSamurai.Core.Services;
 /// Two checks per scored beat:
 ///
 ///   Bible alignment  — cosine similarity between the beat's prose and the
-///                      strand's Seed/Synopsis ("the north star"). A high-scoring
+///                      node's Seed/Synopsis ("the north star"). A high-scoring
 ///                      beat that no longer resembles the story it was born from
 ///                      has traded meaning for metric.
 ///
@@ -24,7 +24,7 @@ namespace StreetSamurai.Core.Services;
 /// workflow (apply / dismiss) is the course-correction mechanism.
 ///
 /// The service is called automatically in the background after every review run
-/// (via StrandReviewService) whenever the strand score meets the gaming threshold.
+/// (via NodeReviewService) whenever the node score meets the gaming threshold.
 /// It can also be invoked directly via `ss --check-fidelity` or the
 /// `check_semantic_fidelity` MCP tool.
 /// </summary>
@@ -71,47 +71,47 @@ public class SemanticFidelityService
         string? SuggestedFix);
 
     public record FidelityReport(
-        Guid StrandId,
+        Guid NodeId,
         string Slug,
         int BeatsChecked,
         int BeatsScored,
-        double? StrandScore,
+        double? NodeScore,
         double MeanBibleAlignment,
         double? MeanIntentAlignment,
         IReadOnlyList<FidelityViolation> Violations,
         int FindingsEmitted);
 
     /// <summary>
-    /// Audit a strand's prose for the Semantic Fidelity Gap. Ensures beat
+    /// Audit a node's prose for the Semantic Fidelity Gap. Ensures beat
     /// embeddings are fresh (drift-skipped), ranks every beat against the
     /// story's bible anchor, computes intent alignment for scored beats that
     /// have a Synopsis, then files SEMANTIC-DRIFT findings for violators.
     /// </summary>
-    public async Task<FidelityReport> AuditStrandAsync(
-        Guid strandId, CancellationToken ct = default)
+    public async Task<FidelityReport> AuditNodeAsync(
+        Guid nodeId, CancellationToken ct = default)
     {
         await using var db = await dbFactory.CreateDbContextAsync(ct);
 
-        var strand = await db.Strands.AsNoTracking()
-            .Where(s => s.Id == strandId)
+        var node = await db.Nodes.AsNoTracking()
+            .Where(s => s.Id == nodeId)
             .Select(s => new { s.Id, s.Slug, s.Title, s.Seed, s.Synopsis, s.Score })
             .FirstOrDefaultAsync(ct);
 
-        if (strand == null)
+        if (node == null)
         {
-            log.LogWarning("SemanticFidelity: strand {Id} not found.", strandId);
-            return new FidelityReport(strandId, "", 0, 0, null, 0, null, Array.Empty<FidelityViolation>(), 0);
+            log.LogWarning("SemanticFidelity: node {Id} not found.", nodeId);
+            return new FidelityReport(nodeId, "", 0, 0, null, 0, null, Array.Empty<FidelityViolation>(), 0);
         }
 
         // Story anchor: the Seed (the original one-line story prompt) is the best north
         // star. Fall back to Synopsis, then Title if neither exists.
-        var bibleAnchor = FirstNonEmpty(strand.Seed, strand.Synopsis, strand.Title);
+        var bibleAnchor = FirstNonEmpty(node.Seed, node.Synopsis, node.Title);
         bool hasBibleAnchor = !string.IsNullOrWhiteSpace(bibleAnchor);
 
         var beats = await (
-            from sb in db.StrandBeats.AsNoTracking()
+            from sb in db.NodeBeats.AsNoTracking()
             join b  in db.Beats.AsNoTracking() on sb.BeatId equals b.Id
-            where sb.StrandId == strandId && sb.IsEnabled
+            where sb.NodeId == nodeId && sb.IsEnabled
             orderby sb.SortKey
             select new
             {
@@ -121,38 +121,38 @@ public class SemanticFidelityService
         ).ToListAsync(ct);
 
         if (beats.Count == 0)
-            return new FidelityReport(strandId, strand.Slug, 0, 0, strand.Score, 0, null,
+            return new FidelityReport(nodeId, node.Slug, 0, 0, node.Score, 0, null,
                 Array.Empty<FidelityViolation>(), 0);
 
         // Ensure prose embeddings are current (drift-skipped — cheap if nothing changed).
-        try { await embeddings.ReembedStrandBeatsAsync(strandId, ct); }
+        try { await embeddings.ReembedNodeBeatsAsync(nodeId, ct); }
         catch (Exception ex)
         {
-            log.LogWarning(ex, "SemanticFidelity: re-embed failed for '{Slug}'", strand.Slug);
+            log.LogWarning(ex, "SemanticFidelity: re-embed failed for '{Slug}'", node.Slug);
         }
 
         // ── Bible alignment ───────────────────────────────────────────────
-        // Query all beats in this strand ranked by cosine similarity to the story anchor.
+        // Query all beats in this node ranked by cosine similarity to the story anchor.
         var bibleAlignmentById = new Dictionary<Guid, double>();
         if (hasBibleAnchor)
         {
             try
             {
-                var hits = await embeddings.FindSimilarStrandBeatsAsync(
-                    bibleAnchor!, k: 500, strandScope: strandId, ct: ct);
+                var hits = await embeddings.FindSimilarNodeBeatsAsync(
+                    bibleAnchor!, k: 500, nodeScope: nodeId, ct: ct);
                 foreach (var hit in hits)
                     bibleAlignmentById[hit.ScopeId] = hit.Similarity;
             }
             catch (Exception ex)
             {
-                log.LogWarning(ex, "SemanticFidelity: bible-alignment query failed for '{Slug}'", strand.Slug);
+                log.LogWarning(ex, "SemanticFidelity: bible-alignment query failed for '{Slug}'", node.Slug);
             }
         }
 
         // ── Intent alignment ──────────────────────────────────────────────
         // For beats that score above the gaming threshold AND have a Synopsis, embed
         // synopsis+prose as a pair and compute their cosine similarity. One batch call
-        // per ~64 beats keeps API cost near zero for typical strand lengths.
+        // per ~64 beats keeps API cost near zero for typical node lengths.
         var intentAlignmentById = new Dictionary<Guid, double>();
         var intentCandidates = beats
             .Where(b => (b.Score ?? 0) >= ScoreGamingThreshold
@@ -173,7 +173,7 @@ public class SemanticFidelityService
             }
             catch (Exception ex)
             {
-                log.LogWarning(ex, "SemanticFidelity: intent-alignment batch failed for '{Slug}'", strand.Slug);
+                log.LogWarning(ex, "SemanticFidelity: intent-alignment batch failed for '{Slug}'", node.Slug);
             }
         }
 
@@ -201,7 +201,7 @@ public class SemanticFidelityService
                 violations.Add(new FidelityViolation(
                     b.Id, b.Number, b.BeatTitle, score,
                     bibleAlign.Value, intentAlign, "bible", msg, fix));
-                EmitFinding($"strand:{strand.Slug}", sev,
+                EmitFinding($"node:{node.Slug}", sev,
                     $"SEMANTIC-DRIFT [bible]: {msg}",
                     b.Text?.Length > 200 ? b.Text[..200] : b.Text, fix);
             }
@@ -220,7 +220,7 @@ public class SemanticFidelityService
                 violations.Add(new FidelityViolation(
                     b.Id, b.Number, b.BeatTitle, score,
                     bibleAlign ?? 0, intentAlign, "intent", msg, fix));
-                EmitFinding($"strand:{strand.Slug}", sev,
+                EmitFinding($"node:{node.Slug}", sev,
                     $"SEMANTIC-DRIFT [intent]: {msg}",
                     b.Text?.Length > 200 ? b.Text[..200] : b.Text, fix);
             }
@@ -235,15 +235,15 @@ public class SemanticFidelityService
         log.LogInformation(
             "SemanticFidelity '{Slug}': {Total} beats, {Scored} scored, {V} violations, " +
             "mean bible={Bible:P0}{Intent}",
-            strand.Slug, beats.Count, scoredBeats.Count, violations.Count, meanBible,
+            node.Slug, beats.Count, scoredBeats.Count, violations.Count, meanBible,
             meanIntent.HasValue ? $", mean intent={meanIntent:P0}" : "");
 
         return new FidelityReport(
-            StrandId:           strandId,
-            Slug:               strand.Slug,
+            NodeId:           nodeId,
+            Slug:               node.Slug,
             BeatsChecked:       beats.Count,
             BeatsScored:        scoredBeats.Count,
-            StrandScore:        strand.Score,
+            NodeScore:        node.Score,
             MeanBibleAlignment: meanBible,
             MeanIntentAlignment: meanIntent,
             Violations:         violations,

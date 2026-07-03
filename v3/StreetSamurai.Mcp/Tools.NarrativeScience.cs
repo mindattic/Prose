@@ -16,12 +16,12 @@ namespace StreetSamurai.Mcp;
 //                                 at both surface and subconscious levels?
 //   audit_scene_engagement     — 6-point scene anatomy (change, info-gap,
 //                                 cause-effect, tribal emotion, specificity, show/tell)
-//   map_five_act_structure     — map strand beats to Storr's 5-act arc
+//   map_five_act_structure     — map node beats to Storr's 5-act arc
 //   check_antihero_empathy     — 4 empathy levers for antihero characters
 
 /// <summary>
 /// Tools that apply Will Storr's narrative-science frameworks to character analysis
-/// and beat/strand quality audits. See <c>NarrativeScienceService</c> for the
+/// and beat/node quality audits. See <c>NarrativeScienceService</c> for the
 /// underlying implementation and detailed framework descriptions.
 /// </summary>
 [McpServerToolType]
@@ -109,29 +109,29 @@ public class NarrativeScienceTools(
 
     // ── map_five_act_structure ────────────────────────────────────────────────
 
-    /// <summary>Map a strand's beats to Will Storr's five-act character-change structure: Act I (establish flaw + ignition), Act II (old theory tested), Act III (transformation trigger), Act IV (dark night), Act V (God moment — dramatic question answered). Returns beat assignments per act, identifies ignition/trigger/God-moment beats, flags structural gaps, and gives an overall assessment.</summary>
-    [McpServerTool, Description("Map a strand's beats to Will Storr's five-act character-change arc. Act I: establish the protagonist's flaw + ignition event (unexpected change that pressures the flaw). Act II: character applies old theory of control, it partially works. Act III: transformation trigger — the flaw fails catastrophically or wins at too high a cost. Act IV: dark night — all fears realized, old theory stripped. Act V: God moment — dramatic question answered definitively (comic: transformation; tragic: doubling down). Returns: beat assignments per act, ignition_beat / trigger_beat / god_moment_beat numbers, structural_gaps list, structural_strengths list, resolution type (comic/tragic/unclear), and an overall assessment paragraph. Accepts strand id (GUID) or slug.")]
+    /// <summary>Map a node's beats to Will Storr's five-act character-change structure: Act I (establish flaw + ignition), Act II (old theory tested), Act III (transformation trigger), Act IV (dark night), Act V (God moment — dramatic question answered). Returns beat assignments per act, identifies ignition/trigger/God-moment beats, flags structural gaps, and gives an overall assessment.</summary>
+    [McpServerTool, Description("Map a node's beats to Will Storr's five-act character-change arc. Act I: establish the protagonist's flaw + ignition event (unexpected change that pressures the flaw). Act II: character applies old theory of control, it partially works. Act III: transformation trigger — the flaw fails catastrophically or wins at too high a cost. Act IV: dark night — all fears realized, old theory stripped. Act V: God moment — dramatic question answered definitively (comic: transformation; tragic: doubling down). Returns: beat assignments per act, ignition_beat / trigger_beat / god_moment_beat numbers, structural_gaps list, structural_strengths list, resolution type (comic/tragic/unclear), and an overall assessment paragraph. Accepts node id (GUID) or slug.")]
     public async Task<string> map_five_act_structure(
-        [Description("Strand id (GUID) or slug.")] string strandIdOrSlug)
+        [Description("Node id (GUID) or slug.")] string nodeIdOrSlug)
     {
         await using var db = await dbFactory.CreateDbContextAsync();
-        Guid strandId;
-        if (Guid.TryParse(strandIdOrSlug, out var g))
-            strandId = g;
+        Guid nodeId;
+        if (Guid.TryParse(nodeIdOrSlug, out var g))
+            nodeId = g;
         else
         {
-            var s = await db.Strands.AsNoTracking().FirstOrDefaultAsync(x => x.Slug == strandIdOrSlug || x.StrandCode == strandIdOrSlug);
-            if (s == null) return JsonSerializer.Serialize(new { error = "strand_not_found", strandIdOrSlug }, JsonOpts);
-            strandId = s.Id;
+            var s = await db.Nodes.AsNoTracking().FirstOrDefaultAsync(x => x.Slug == nodeIdOrSlug || x.NodeCode == nodeIdOrSlug);
+            if (s == null) return JsonSerializer.Serialize(new { error = "node_not_found", nodeIdOrSlug }, JsonOpts);
+            nodeId = s.Id;
         }
 
         try
         {
-            var result = await narrativeScience.MapFiveActStructureAsync(strandId);
+            var result = await narrativeScience.MapFiveActStructureAsync(nodeId);
             return JsonSerializer.Serialize(new
             {
-                strand_slug           = result.StrandSlug,
-                strand_title          = result.StrandTitle,
+                node_slug           = result.NodeSlug,
+                node_title          = result.NodeTitle,
                 beat_count            = result.BeatCount,
                 acts                  = result.Acts,
                 structural_gaps       = result.StructuralGaps,
@@ -142,7 +142,7 @@ public class NarrativeScienceTools(
         }
         catch (Exception ex)
         {
-            return JsonSerializer.Serialize(new { error = ex.Message, strandIdOrSlug }, JsonOpts);
+            return JsonSerializer.Serialize(new { error = ex.Message, nodeIdOrSlug }, JsonOpts);
         }
     }
 

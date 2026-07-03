@@ -32,7 +32,7 @@ namespace StreetSamurai.Core.Services;
 /// <item>ResolveLocalPathAsync — primary only. ffmpeg concat still works
 ///   when bytes are on the local volume; on a fresh node where local is
 ///   empty, the workbench stages from secondary to a temp dir first
-///   (already implemented in <see cref="StrandWorkbenchService"/>).</item>
+///   (already implemented in <see cref="NodeWorkbenchService"/>).</item>
 /// </list>
 ///
 /// <para>Selected via <c>AudioStore:Provider = "dual"</c>. Sub-config:
@@ -69,17 +69,17 @@ public class DualWriteAudioStore : IAudioStore
     /// neither side has a local copy.</summary>
     public bool SupportsLocalPaths => primary.SupportsLocalPaths || secondary.SupportsLocalPaths;
 
-    public async Task<string> WriteBeatAsync(string strandSlug, Guid beatId, string extension, byte[] bytes, CancellationToken ct = default)
+    public async Task<string> WriteBeatAsync(string nodeSlug, Guid beatId, string extension, byte[] bytes, CancellationToken ct = default)
     {
-        var rel = await primary.WriteBeatAsync(strandSlug, beatId, extension, bytes, ct);
-        TrackSecondaryWrite(rel, () => secondary.WriteBeatAsync(strandSlug, beatId, extension, bytes), $"WriteBeat {rel}");
+        var rel = await primary.WriteBeatAsync(nodeSlug, beatId, extension, bytes, ct);
+        TrackSecondaryWrite(rel, () => secondary.WriteBeatAsync(nodeSlug, beatId, extension, bytes), $"WriteBeat {rel}");
         return rel;
     }
 
-    public async Task<string> WriteCombinedAsync(string strandSlug, string extension, byte[] bytes, CancellationToken ct = default)
+    public async Task<string> WriteCombinedAsync(string nodeSlug, string extension, byte[] bytes, CancellationToken ct = default)
     {
-        var rel = await primary.WriteCombinedAsync(strandSlug, extension, bytes, ct);
-        TrackSecondaryWrite(rel, () => secondary.WriteCombinedAsync(strandSlug, extension, bytes), $"WriteCombined {rel}");
+        var rel = await primary.WriteCombinedAsync(nodeSlug, extension, bytes, ct);
+        TrackSecondaryWrite(rel, () => secondary.WriteCombinedAsync(nodeSlug, extension, bytes), $"WriteCombined {rel}");
         return rel;
     }
 
@@ -141,8 +141,8 @@ public class DualWriteAudioStore : IAudioStore
             ?? await secondary.ResolveLocalPathAsync(relativePath, ct);
     }
 
-    public string BuildPlaybackUrl(Guid strandId, Guid beatId, string relativePath, string? cacheBust = null)
-        => primary.BuildPlaybackUrl(strandId, beatId, relativePath, cacheBust);
+    public string BuildPlaybackUrl(Guid nodeId, Guid beatId, string relativePath, string? cacheBust = null)
+        => primary.BuildPlaybackUrl(nodeId, beatId, relativePath, cacheBust);
 
     /// <summary>Reconciliation needs both timestamps to choose a winner, so
     /// expose the newer of the two here. Reconciler probes each underlying

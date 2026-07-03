@@ -9,7 +9,7 @@ namespace StreetSamurai.Core.Services;
 ///   <item><b>Draft</b> — mid-draft spot checks / per-beat iteration. Cheapest: tiny ballot
 ///   panel, no diagnosis, no prose upgrades. ~6 calls (−84% vs the old flat default). The
 ///   score CI is intentionally wide; Draft is for "which beats drag", not gate decisions.</item>
-///   <item><b>Standard</b> — the per-strand standalone gate (≥82%) and routine iteration.
+///   <item><b>Standard</b> — the per-node standalone gate (≥82%) and routine iteration.
 ///   Balanced workhorse. ~15 calls (−60%).</item>
 ///   <item><b>Deep</b> — cumulative-prefix gate (≥85%), pre-publish, flagship. Full panel +
 ///   structural diagnosis + prose critique. ~37 calls (the historical default).</item>
@@ -18,7 +18,7 @@ namespace StreetSamurai.Core.Services;
 /// The call-count knobs are the dominant token driver. <see cref="CheapModels"/> adds the
 /// second axis — per-provider model tiering: under Draft the ballots run on the cheapest model
 /// each provider offers (haiku / flash-lite / nano), applied as a per-run override inside
-/// <c>StrandReviewService</c> WITHOUT mutating persisted settings. Standard and Deep keep the
+/// <c>NodeReviewService</c> WITHOUT mutating persisted settings. Standard and Deep keep the
 /// trustworthy mid-tier models because their scores drive gate decisions, where cheap-model
 /// score noise would be a false economy. <see cref="AllowedProviders"/> restricts the ballot
 /// round-robin to a subset of providers for a run (Draft → claude+gemini) without mutating the

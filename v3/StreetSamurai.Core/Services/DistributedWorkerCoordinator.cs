@@ -9,7 +9,7 @@ namespace StreetSamurai.Core.Services;
 /// <summary>
 /// Central coordinator for distributed work.  Remote workers (RunPod pods, local GPU boxes,
 /// etc.) claim batches via the REST API, run their local LLM, and POST results back.
-/// This service is the only layer that writes to EntityReviews, StrandReviews, Edges, or Beats.
+/// This service is the only layer that writes to EntityReviews, NodeReviews, Edges, or Beats.
 ///
 /// Personas come from PersonaLibrary (in-process static registry, not DB).
 /// Claim timeout: 15 minutes.  If a worker dies mid-batch the items auto-release.
@@ -88,34 +88,34 @@ public class DistributedWorkerCoordinator
         return added;
     }
 
-    /// <summary>Seeds the queue with strand-review work items.</summary>
-    public async Task<int> PopulateStrandReviewAsync(
-        IReadOnlyList<Guid>? strandIds = null, int readers = 5,
+    /// <summary>Seeds the queue with node-review work items.</summary>
+    public async Task<int> PopulateNodeReviewAsync(
+        IReadOnlyList<Guid>? nodeIds = null, int readers = 5,
         CancellationToken ct = default)
     {
         await using var db = await dbFactory.CreateDbContextAsync(ct);
 
         var alreadyQueued = await db.DistributedWorkQueue
-            .Where(q => q.WorkType == "strand-review")
+            .Where(q => q.WorkType == "node-review")
             .Select(q => q.TargetId)
             .ToHashSetAsync(ct);
 
-        var query = db.Strands.Where(s => !s.IsWIP);
-        if (strandIds?.Count > 0) query = query.Where(s => strandIds.Contains(s.Id));
+        var query = db.Nodes.Where(s => !s.IsWIP);
+        if (nodeIds?.Count > 0) query = query.Where(s => nodeIds.Contains(s.Id));
 
-        var strands = await query
+        var nodes = await query
             .Select(s => new { s.Id, s.Title, s.Slug })
             .ToListAsync(ct);
 
         int added = 0;
-        foreach (var strand in strands)
+        foreach (var node in nodes)
         {
-            var sid = strand.Id.ToString("N");
+            var sid = node.Id.ToString("N");
             if (alreadyQueued.Contains(sid)) continue;
 
             // Load beat texts via junction.
-            var beatTexts = await db.StrandBeats
-                .Where(sb => sb.StrandId == strand.Id && sb.IsEnabled)
+            var beatTexts = await db.NodeBeats
+                .Where(sb => sb.NodeId == node.Id && sb.IsEnabled)
                 .OrderBy(sb => sb.SortKey)
                 .Select(sb => sb.Beat!.Text ?? "")
                 .ToListAsync(ct);
@@ -125,20 +125,20 @@ public class DistributedWorkerCoordinator
 
             var payload = JsonSerializer.Serialize(new
             {
-                strandId    = sid,
-                strandSlug  = strand.Slug ?? "",
-                strandTitle = strand.Title ?? "",
-                strandText  = fullText,
+                nodeId    = sid,
+                nodeSlug  = node.Slug ?? "",
+                nodeTitle = node.Title ?? "",
+                nodeText  = fullText,
                 readers,
             });
 
             db.DistributedWorkQueue.Add(new DistributedWorkQueue
             {
                 Id          = Guid.CreateVersion7(),
-                WorkType    = "strand-review",
+                WorkType    = "node-review",
                 TargetId    = sid,
-                TargetType  = "strand",
-                TargetName  = strand.Title ?? strand.Slug ?? sid,
+                TargetType  = "node",
+                TargetName  = node.Title ?? node.Slug ?? sid,
                 PayloadJson = payload,
                 Status      = "pending",
                 CreatedAt   = DateTime.UtcNow,
@@ -147,13 +147,13 @@ public class DistributedWorkerCoordinator
         }
 
         await db.SaveChangesAsync(ct);
-        log.LogInformation("DistributedCoordinator: queued {N} strand-review items", added);
+        log.LogInformation("DistributedCoordinator: queued {N} node-review items", added);
         return added;
     }
 
     /// <summary>Seeds the queue with beat-write items for beats that have no text yet.</summary>
     public async Task<int> PopulateBeatWriteAsync(
-        IReadOnlyList<Guid>? strandIds = null, CancellationToken ct = default)
+        IReadOnlyList<Guid>? nodeIds = null, CancellationToken ct = default)
     {
         await using var db = await dbFactory.CreateDbContextAsync(ct);
 
@@ -162,32 +162,32 @@ public class DistributedWorkerCoordinator
             .Select(q => q.TargetId)
             .ToHashSetAsync(ct);
 
-        // Query via the StrandBeat junction — beats are m:m with strands.
-        var query = db.StrandBeats
+        // Query via the NodeBeat junction — beats are m:m with nodes.
+        var query = db.NodeBeats
             .Where(sb => sb.IsEnabled
-                      && !(sb.Strand!.IsWIP)
+                      && !(sb.Node!.IsWIP)
                       && (sb.Beat!.Text == null || sb.Beat.Text == ""));
 
-        if (strandIds?.Count > 0)
-            query = query.Where(sb => strandIds.Contains(sb.StrandId));
+        if (nodeIds?.Count > 0)
+            query = query.Where(sb => nodeIds.Contains(sb.NodeId));
 
-        var strandBeatRows = await query
-            .OrderBy(sb => sb.StrandId).ThenBy(sb => sb.SortKey)
+        var nodeBeatRows = await query
+            .OrderBy(sb => sb.NodeId).ThenBy(sb => sb.SortKey)
             .Select(sb => new
             {
                 BeatId     = sb.BeatId,
-                StrandId   = sb.StrandId,
-                Slug       = sb.Strand!.Slug,
-                Title      = sb.Strand.Title,
+                NodeId   = sb.NodeId,
+                Slug       = sb.Node!.Slug,
+                Title      = sb.Node.Title,
                 SortKey    = sb.SortKey,
                 Synopsis   = sb.Beat!.Synopsis,
             })
             .ToListAsync(ct);
 
-        // Group by strand so we can compute position (1-based index, approximated by SortKey rank).
-        var byStrand = strandBeatRows.GroupBy(sb => sb.StrandId);
+        // Group by node so we can compute position (1-based index, approximated by SortKey rank).
+        var byNode = nodeBeatRows.GroupBy(sb => sb.NodeId);
         int added = 0;
-        foreach (var grp in byStrand)
+        foreach (var grp in byNode)
         {
             var orderedBeats = grp.OrderBy(sb => sb.SortKey).ToList();
             int total = orderedBeats.Count;
@@ -200,9 +200,9 @@ public class DistributedWorkerCoordinator
                 var payload = JsonSerializer.Serialize(new
                 {
                     beatId     = bid,
-                    strandId   = beat.StrandId.ToString("N"),
-                    strandSlug = beat.Slug ?? "",
-                    strandTitle= beat.Title ?? "",
+                    nodeId   = beat.NodeId.ToString("N"),
+                    nodeSlug = beat.Slug ?? "",
+                    nodeTitle= beat.Title ?? "",
                     beatIndex  = i,
                     totalBeats = total,
                     beatSynopsis = beat.Synopsis ?? "",
@@ -272,7 +272,7 @@ public class DistributedWorkerCoordinator
         return result.WorkType switch
         {
             "entity-review" => await SubmitEntityReviewAsync(result, ct),
-            "strand-review" => await SubmitStrandReviewAsync(result, ct),
+            "node-review" => await SubmitNodeReviewAsync(result, ct),
             "beat-write"    => await SubmitBeatWriteAsync(result, ct),
             _               => new WorkSubmitResult(0, 1, $"Unknown WorkType '{result.WorkType}'"),
         };
@@ -331,24 +331,24 @@ public class DistributedWorkerCoordinator
         return new WorkSubmitResult(saved, failed);
     }
 
-    private async Task<WorkSubmitResult> SubmitStrandReviewAsync(WorkerResult result, CancellationToken ct)
+    private async Task<WorkSubmitResult> SubmitNodeReviewAsync(WorkerResult result, CancellationToken ct)
     {
-        if (result.StrandReview == null)
-            return new WorkSubmitResult(0, 1, "no strand review");
+        if (result.NodeReview == null)
+            return new WorkSubmitResult(0, 1, "no node review");
 
         await using var db = await dbFactory.CreateDbContextAsync(ct);
-        var sr = result.StrandReview;
+        var sr = result.NodeReview;
 
-        if (!Guid.TryParse(sr.StrandId, out var strandGuid))
-            return new WorkSubmitResult(0, 1, "bad StrandId");
+        if (!Guid.TryParse(sr.NodeId, out var nodeGuid))
+            return new WorkSubmitResult(0, 1, "bad NodeId");
 
         int saved = 0;
         foreach (var vote in sr.PersonaVotes ?? [])
         {
-            db.StrandReviews.Add(new StrandReview
+            db.NodeReviews.Add(new NodeReview
             {
                 Id             = Guid.CreateVersion7(),
-                StrandId       = strandGuid,
+                NodeId       = nodeGuid,
                 PersonaId      = vote.PersonaId,
                 PersonaName    = vote.PersonaName,
                 PersonaBlurb   = vote.PersonaBlurb,
@@ -489,13 +489,13 @@ public class WorkerResult
 
     public List<BallotResult>? EntityBallots { get; set; }
     public List<EdgeResult>?   Edges         { get; set; }
-    public StrandReviewResult? StrandReview  { get; set; }
+    public NodeReviewResult? NodeReview  { get; set; }
     public BeatWriteResult?    BeatWrite     { get; set; }
 }
 
-public class StrandReviewResult
+public class NodeReviewResult
 {
-    public string  StrandId    { get; set; } = "";
+    public string  NodeId    { get; set; } = "";
     public string? ContentHash { get; set; }
     public List<PersonaVoteResult>? PersonaVotes { get; set; }
 }

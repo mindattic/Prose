@@ -8,11 +8,11 @@ namespace StreetSamurai.Blazor.Cli;
 /// <c>ss --import-cover</c> — import a local image file into the Media table.
 ///
 /// Usage:
-///   ss --import-cover --file PATH [--strand-code CODE] [--type TYPE] [--notes TEXT]
+///   ss --import-cover --file PATH [--node-code CODE] [--type TYPE] [--notes TEXT]
 ///
 /// Arguments:
 ///   --file PATH          Required. Path to the image file (png, jpg, webp).
-///   --strand-code CODE   Associate with a strand by its StrandCode (e.g. ATTE, VATD).
+///   --node-code CODE   Associate with a node by its NodeCode (e.g. ATTE, VATD).
 ///                        Omit for global assets like logos or watermarks.
 ///   --type TYPE          Media type. Default: cover_image.
 ///                        Values: cover_image | logo | watermark | banner | thumbnail | promotional
@@ -20,7 +20,7 @@ namespace StreetSamurai.Blazor.Cli;
 ///   --dry-run            Parse and validate only — do not write to DB.
 ///
 /// Examples:
-///   ss --import-cover --file "R:\Desktop\EPub\MindAttic\GLMZ\Sparrow\cover.jpg" --strand-code SPRW
+///   ss --import-cover --file "R:\Desktop\EPub\MindAttic\GLMZ\Sparrow\cover.jpg" --node-code SPRW
 ///   ss --import-cover --file "R:\Desktop\EPub\MindAttic\GLMZ\M.png" --type logo
 ///   ss --import-cover --file "R:\Desktop\EPub\MindAttic\GLMZ\RedBand.png" --type watermark
 /// </summary>
@@ -29,7 +29,7 @@ public static class ImportCoverImageCli
     public static async Task<int> RunAsync(string[] args, IServiceProvider sp)
     {
         var file       = Arg(args, "--file");
-        var strandCode = Arg(args, "--strand-code");
+        var nodeCode = Arg(args, "--node-code");
         var type       = Arg(args, "--type") ?? "cover_image";
         var notes      = Arg(args, "--notes");
         var dryRun     = args.Contains("--dry-run");
@@ -69,7 +69,7 @@ public static class ImportCoverImageCli
         Console.WriteLine($"Size:    {fileInfo.Length:N0} bytes ({fileInfo.Length / 1024.0:F1} KB)");
         Console.WriteLine($"Type:    {type}");
         Console.WriteLine($"MIME:    {contentType}");
-        if (strandCode is not null) Console.WriteLine($"Strand:  {strandCode}");
+        if (nodeCode is not null) Console.WriteLine($"Node:  {nodeCode}");
         if (dryRun) { Console.WriteLine("DRY-RUN: no DB write."); return 0; }
 
         var factory = sp.GetRequiredService<IDbContextFactory<StreetSamuraiDbContext>>();
@@ -77,20 +77,20 @@ public static class ImportCoverImageCli
 
         int? tenantId = null;
 
-        if (!string.IsNullOrWhiteSpace(strandCode))
+        if (!string.IsNullOrWhiteSpace(nodeCode))
         {
-            var strand = await db.Strands
-                .Where(s => s.StrandCode == strandCode)
+            var node = await db.Nodes
+                .Where(s => s.NodeCode == nodeCode)
                 .Select(s => new { s.Id, s.Title })
                 .FirstOrDefaultAsync();
 
-            if (strand is null)
+            if (node is null)
             {
-                Console.Error.WriteLine($"ERROR: no strand found with StrandCode = '{strandCode}'");
+                Console.Error.WriteLine($"ERROR: no node found with NodeCode = '{nodeCode}'");
                 return 1;
             }
 
-            Console.WriteLine($"Strand:  {strand.Title} ({strand.Id})");
+            Console.WriteLine($"Node:  {node.Title} ({node.Id})");
         }
 
         await using var scope = sp.CreateAsyncScope();

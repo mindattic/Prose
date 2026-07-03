@@ -187,12 +187,12 @@ public class SettingsService : IDisposable
     }
 
     // ── Inter-beat silence pacing (combined-audio export) ──────────────────
-    // When the per-beat audio files are concatenated into the combined strand
-    // audio, the StrandWorkbenchService.ExportCombinedAsync injects a brief
+    // When the per-beat audio files are concatenated into the combined node
+    // audio, the NodeWorkbenchService.ExportCombinedAsync injects a brief
     // window of digital silence between each pair of beats. The amount is
     // chosen per-beat from these four budgets, picked by SceneType and the
     // trailing punctuation of the prose — see ComputeTrailingSilenceMs in
-    // StrandWorkbenchService. Setting any value to 0 disables that tier.
+    // NodeWorkbenchService. Setting any value to 0 disables that tier.
     /// <summary>Silence (ms) inserted after a beat whose SceneType is
     /// <c>section-end</c> — the last paragraph before a <c>##</c> section
     /// header. Long pause; "new chapter section starts here." Default 1800.</summary>
@@ -422,12 +422,12 @@ public class SettingsService : IDisposable
     public bool DocxIncludeToc { get => data.DocxIncludeToc; set { data.DocxIncludeToc = value; ScheduleSave(); } }
 
     /// <summary>Master switch for the Doc Context Stack injection into prose-generation prompts.
-    /// Default ON — injects the strand bible, voice register, and topic docs into every beat prompt.
+    /// Default ON — injects the node bible, voice register, and topic docs into every beat prompt.
     /// Dry-run (`--doc-context`) + MCP tools work regardless of this flag.</summary>
     public bool DocContextEnabled { get => data.DocContextEnabled; set { data.DocContextEnabled = value; ScheduleSave(); } }
 
     // ── Review voting ──────────────────────────────────────────────────────────
-    /// <summary>Default number of cheap score-only ballots per sampled strand review (--ballots).</summary>
+    /// <summary>Default number of cheap score-only ballots per sampled node review (--ballots).</summary>
     public int ReviewBallots { get => data.ReviewBallots; set { data.ReviewBallots = Math.Max(1, value); ScheduleSave(); } }
     /// <summary>Default number of full prose upgrades per sampled run (--prose).</summary>
     public int ReviewProse { get => data.ReviewProse; set { data.ReviewProse = Math.Max(0, value); ScheduleSave(); } }
@@ -444,7 +444,7 @@ public class SettingsService : IDisposable
 
     // ── Local-LLM review (--local) ───────────────────────────────────────────────
     /// <summary>OpenAI-compatible chat-completions endpoint of the local inference server
-    /// (Ollama default). Only used by <c>--local</c> strand reviews; cloud reviews never touch it.</summary>
+    /// (Ollama default). Only used by <c>--local</c> node reviews; cloud reviews never touch it.</summary>
     public string LocalReviewBaseUrl { get => data.LocalReviewBaseUrl; set { data.LocalReviewBaseUrl = value; ScheduleSave(); } }
     /// <summary>Local model tag used by <c>--local</c> reviews (e.g. an Ollama tag with a baked-in num_ctx).</summary>
     public string LocalReviewModel { get => data.LocalReviewModel; set { data.LocalReviewModel = value; ScheduleSave(); } }
@@ -462,15 +462,15 @@ public class SettingsService : IDisposable
     /// run a few large-model generations at once before spilling / OOM.</summary>
     public int LocalReviewMaxConcurrency { get => data.LocalReviewMaxConcurrency; set { data.LocalReviewMaxConcurrency = Math.Max(1, Math.Min(16, value)); ScheduleSave(); } }
     /// <summary>The local model's context window in TOKENS (the Ollama tag's num_ctx). The review
-    /// engine uses this to size segments so an oversized strand is chunked to FIT the local window
+    /// engine uses this to size segments so an oversized node is chunked to FIT the local window
     /// instead of being silently truncated (which drops the system prompt and fails every ballot).
     /// Cloud reviews ignore this. Default 16384 — raise it to match a model rebuilt with a larger
-    /// num_ctx, and big strands will segment into fewer, larger chunks.</summary>
+    /// num_ctx, and big nodes will segment into fewer, larger chunks.</summary>
     public int LocalReviewContextTokens { get => data.LocalReviewContextTokens; set { data.LocalReviewContextTokens = Math.Max(4096, value); ScheduleSave(); } }
 
     // ── Local-LLM generation (--local prose) ─────────────────────────────────────
     /// <summary>OpenAI-compatible chat-completions endpoint for local prose generation
-    /// (Ollama, vLLM, RunPod, etc.). Used by <c>--local</c> beat/strand generation;
+    /// (Ollama, vLLM, RunPod, etc.). Used by <c>--local</c> beat/node generation;
     /// cloud generation never reads it. Empty = local prose generation disabled.</summary>
     public string LocalLlmBaseUrl { get => data.LocalLlmBaseUrl; set { data.LocalLlmBaseUrl = value; ScheduleSave(); } }
     /// <summary>Bearer token for the local generation endpoint. Empty for bare localhost Ollama

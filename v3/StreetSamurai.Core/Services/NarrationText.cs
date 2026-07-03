@@ -4,7 +4,7 @@ namespace StreetSamurai.Core.Services;
 
 /// <summary>
 /// Shared narration-text cleaning and speech-pronunciation helpers used by
-/// every audiobook export path (AudiblePackageService, StrandWorkbenchService).
+/// every audiobook export path (AudiblePackageService, NodeWorkbenchService).
 ///
 /// Two concerns are intentionally kept separate:
 ///   <see cref="Clean"/>              — produces the canonical narration manuscript:

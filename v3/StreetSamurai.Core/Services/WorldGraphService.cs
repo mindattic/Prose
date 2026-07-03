@@ -155,7 +155,7 @@ public class WorldGraphService : IWorldGraphService
                 SELECT MAX(ModifiedAt) t FROM Entities
                 UNION ALL SELECT MAX(UpdatedAt) FROM Records
                 UNION ALL SELECT MAX(UpdatedAt) FROM Beats
-                UNION ALL SELECT MAX(UpdatedAt) FROM Strands
+                UNION ALL SELECT MAX(UpdatedAt) FROM Nodes
                 UNION ALL SELECT MAX(SysStart) FROM Edges
                 UNION ALL SELECT MAX(SysStart) FROM Characters
             ) x";
@@ -444,7 +444,7 @@ public class WorldGraphService : IWorldGraphService
         if (node.Properties.TryGetValue("description", out var desc) && desc.Length > 0)
             lines.Add($"  description: {(desc.Length > 400 ? desc[..397] + "..." : desc)}");
 
-        // Narration voice rules (character-specific, harvested from high-scoring strands)
+        // Narration voice rules (character-specific, harvested from high-scoring nodes)
         if (node.Properties.TryGetValue("narration_voice", out var nv) && nv.Length > 0)
             lines.Add($"  narration_voice: {(nv.Length > 600 ? nv[..597] + "..." : nv)}");
 

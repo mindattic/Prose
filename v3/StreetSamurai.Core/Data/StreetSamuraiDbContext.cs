@@ -41,7 +41,7 @@ public class StreetSamuraiDbContext : DbContext
     public static Guid SharedUniverseId => Universe.SharedId;
 
     /// <summary>
-    /// Stamp <c>UniverseId</c> on freshly-added universe-scoped roots (Entity / Strand / Book) so
+    /// Stamp <c>UniverseId</c> on freshly-added universe-scoped roots (Entity / Node / Book) so
     /// new rows land in the current universe without every call site having to set it. Falls back
     /// to GLMZ when no universe context is active (tests), keeping the NOT NULL column valid.
     /// </summary>
@@ -55,7 +55,7 @@ public class StreetSamuraiDbContext : DbContext
             switch (entry.Entity)
             {
                 case Entity e when e.UniverseId == Guid.Empty: e.UniverseId = target; break;
-                case Strand s when s.UniverseId == Guid.Empty: s.UniverseId = target; break;
+                case Node s when s.UniverseId == Guid.Empty: s.UniverseId = target; break;
                 case Book bk when bk.UniverseId == Guid.Empty: bk.UniverseId = target; break;
                 case Species sp when sp.UniverseId == Guid.Empty: sp.UniverseId = target; break;
                 case Edge ed when ed.UniverseId == Guid.Empty: ed.UniverseId = target; break;
@@ -86,7 +86,7 @@ public class StreetSamuraiDbContext : DbContext
         return base.SaveChangesAsync(acceptAllChangesOnSuccess, cancellationToken);
     }
 
-    // Multi-universe tenancy — every universe-scoped root (Entity, Strand, Book)
+    // Multi-universe tenancy — every universe-scoped root (Entity, Node, Book)
     // carries a UniverseId; reads are filtered to the current universe (SS-LAW-15).
     public DbSet<Universe>               Universes              => Set<Universe>();
 
@@ -111,33 +111,38 @@ public class StreetSamuraiDbContext : DbContext
     public DbSet<EpisodeCorrection>  EpisodeCorrections  => Set<EpisodeCorrection>();
     public DbSet<EpisodeSurvey>      EpisodeSurveys      => Set<EpisodeSurvey>();
 
-    // Unified storytelling schema — Beat = atom of prose+audio, Strand =
-    // ordered composition (replaces Book/Chapter/Episode), StrandBeat =
+    // Unified storytelling schema — Beat = atom of prose+audio, Node =
+    // ordered composition (replaces Book/Chapter/Episode), NodeBeat =
     // junction. The whole system migrates onto these three.
     public DbSet<Beat>               Beats               => Set<Beat>();
     public DbSet<BeatEntityMention>  BeatEntityMentions  => Set<BeatEntityMention>();
-    public DbSet<Strand>             Strands             => Set<Strand>();
-    public DbSet<StrandBeat>         StrandBeats         => Set<StrandBeat>();
-    public DbSet<StrandPublication>  StrandPublications  => Set<StrandPublication>();
-    public DbSet<StrandAudioEvent>   StrandAudioEvents   => Set<StrandAudioEvent>();
-    // Persona reader-reviews + their Amazon-style aggregate summary (strands).
-    public DbSet<StrandReview>          StrandReviews          => Set<StrandReview>();
-    public DbSet<StrandReviewSummary>   StrandReviewSummaries  => Set<StrandReviewSummary>();
+    public DbSet<Node>             Nodes             => Set<Node>();
+    // Typed TPH views over the same Nodes table (legacy Books/Chapters DbSets
+    // below belong to the retired Book/Chapter schema, hence the *Nodes names).
+    public DbSet<SeriesNode>       SeriesNodes       => Set<SeriesNode>();
+    public DbSet<StoryNode>        StoryNodes        => Set<StoryNode>();
+    public DbSet<ChapterNode>      ChapterNodes      => Set<ChapterNode>();
+    public DbSet<NodeBeat>         NodeBeats         => Set<NodeBeat>();
+    public DbSet<NodePublication>  NodePublications  => Set<NodePublication>();
+    public DbSet<NodeAudioEvent>   NodeAudioEvents   => Set<NodeAudioEvent>();
+    // Persona reader-reviews + their Amazon-style aggregate summary (nodes).
+    public DbSet<NodeReview>          NodeReviews          => Set<NodeReview>();
+    public DbSet<NodeReviewSummary>   NodeReviewSummaries  => Set<NodeReviewSummary>();
     // Append-only score timeline — one row per RecomputeScoresAsync call.
-    public DbSet<StrandScoreHistory>    StrandScoreHistories   => Set<StrandScoreHistory>();
-    // Per-strand narrative spine: amendment log + version pins (bridge).
-    public DbSet<StrandAmendment>       StrandAmendments       => Set<StrandAmendment>();
-    public DbSet<StrandSpineVersion>    StrandSpineVersions    => Set<StrandSpineVersion>();
-    // Amazon KDP / storefront search keywords (up to 7 per strand).
-    public DbSet<StrandKeyword>         StrandKeywords         => Set<StrandKeyword>();
+    public DbSet<NodeScoreHistory>    NodeScoreHistories   => Set<NodeScoreHistory>();
+    // Per-node narrative spine: amendment log + version pins (bridge).
+    public DbSet<NodeAmendment>       NodeAmendments       => Set<NodeAmendment>();
+    public DbSet<NodeSpineVersion>    NodeSpineVersions    => Set<NodeSpineVersion>();
+    // Amazon KDP / storefront search keywords (up to 7 per node).
+    public DbSet<NodeKeyword>         NodeKeywords         => Set<NodeKeyword>();
     // Autonomous pipeline — chapter summaries + open threads ledger.
-    public DbSet<StrandChapterSummary>  StrandChapterSummaries => Set<StrandChapterSummary>();
-    public DbSet<StrandOpenThread>      StrandOpenThreads      => Set<StrandOpenThread>();
+    public DbSet<NodeChapterSummary>  NodeChapterSummaries => Set<NodeChapterSummary>();
+    public DbSet<NodeOpenThread>      NodeOpenThreads      => Set<NodeOpenThread>();
     // Persona quality-reviews for canon entities (characters, weapons, tech, etc.).
     public DbSet<EntityReview>          EntityReviews          => Set<EntityReview>();
     public DbSet<EntityReviewSummary>   EntityReviewSummaries  => Set<EntityReviewSummary>();
     public DbSet<EntityReviewQueue>     EntityReviewQueue      => Set<EntityReviewQueue>();
-    // Distributed work queue — entity-review / strand-review / beat-review / beat-write.
+    // Distributed work queue — entity-review / node-review / beat-review / beat-write.
     public DbSet<DistributedWorkQueue>  DistributedWorkQueue   => Set<DistributedWorkQueue>();
     // Append-only audit trail of voice-rule changes (directive / manual_edit / harvest).
     public DbSet<VoiceChangeLogEntry>   VoiceChangeLog         => Set<VoiceChangeLogEntry>();
@@ -147,7 +152,7 @@ public class StreetSamuraiDbContext : DbContext
     public DbSet<FocusGroup>            FocusGroups            => Set<FocusGroup>();
     public DbSet<FocusGroupMember>      FocusGroupMembers      => Set<FocusGroupMember>();
     // Per-beat micro-scores (study mode) — the reviewer x beat matrix.
-    public DbSet<StrandReviewBeatScore> StrandReviewBeatScores => Set<StrandReviewBeatScore>();
+    public DbSet<NodeReviewBeatScore> NodeReviewBeatScores => Set<NodeReviewBeatScore>();
     // Emotional Intelligence Examination (SS-A15): examination parent + dimension/beat children + ledger cache.
     public DbSet<EmotionalExamination>      EmotionalExaminations      => Set<EmotionalExamination>();
     public DbSet<EmotionalDimensionResult>  EmotionalDimensionResults  => Set<EmotionalDimensionResult>();
@@ -420,7 +425,7 @@ public class StreetSamuraiDbContext : DbContext
             e.HasIndex(x => x.EpisodeId).IsUnique();
         });
 
-        // ── Unified strand schema ───────────────────────────────────────────
+        // ── Unified node schema ───────────────────────────────────────────
         b.Entity<Beat>(e =>
         {
             e.HasKey(x => x.Id);
@@ -438,8 +443,17 @@ public class StreetSamuraiDbContext : DbContext
             // inserts instead of letting them silently share a number.
             e.HasIndex(x => x.Number).IsUnique();
         });
-        b.Entity<Strand>(e =>
+        b.Entity<Node>(e =>
         {
+            // Table-per-hierarchy: SeriesNode / StoryNode / ChapterNode share
+            // the Nodes table, discriminated by NodeType. Kind remains the
+            // free-form display label; NodeType is the structural truth.
+            e.ToTable("Nodes");
+            e.HasDiscriminator<string>("NodeType")
+                .HasValue<SeriesNode>("series")
+                .HasValue<StoryNode>("story")
+                .HasValue<ChapterNode>("chapter");
+            e.Property("NodeType").HasMaxLength(20);
             e.HasKey(x => x.Id);
             e.Property(x => x.Slug).HasMaxLength(200).IsRequired();
             e.Property(x => x.Title).HasMaxLength(400).IsRequired();
@@ -447,31 +461,31 @@ public class StreetSamuraiDbContext : DbContext
             e.Property(x => x.Status).HasMaxLength(40).IsRequired();
             e.Property(x => x.VoiceId).HasMaxLength(80);
             e.Property(x => x.CombinedAudioPath).HasMaxLength(400);
-            // Slug unique per universe (the same strand slug may recur in another universe).
-            e.HasIndex(x => new { x.UniverseId, x.Slug }).IsUnique().HasDatabaseName("UX_Strands_Universe_Slug");
+            // Slug unique per universe (the same node slug may recur in another universe).
+            e.HasIndex(x => new { x.UniverseId, x.Slug }).IsUnique().HasDatabaseName("UX_Nodes_Universe_Slug");
             e.HasIndex(x => x.Kind);
-            e.HasIndex(x => new { x.ParentStrandId, x.SortKey });
+            e.HasIndex(x => new { x.ParentNodeId, x.SortKey });
             // WIP subtrees are skipped by the tools; index the flag so the
             // tree-walk and enumeration filters stay cheap.
             e.HasIndex(x => x.IsWIP);
             e.HasIndex(x => x.UniverseId);
-            e.HasOne(x => x.ParentStrand).WithMany(x => x.Children)
-                .HasForeignKey(x => x.ParentStrandId).OnDelete(DeleteBehavior.Restrict);
-            // PreviousStrand: null = gateway (first/standalone); set = sequel.
-            e.HasOne(x => x.PreviousStrand).WithMany()
-                .HasForeignKey(x => x.PreviousStrandId).OnDelete(DeleteBehavior.Restrict);
-            e.HasIndex(x => x.PreviousStrandId);
+            e.HasOne(x => x.ParentNode).WithMany(x => x.Children)
+                .HasForeignKey(x => x.ParentNodeId).OnDelete(DeleteBehavior.Restrict);
+            // PreviousNode: null = gateway (first/standalone); set = sequel.
+            e.HasOne(x => x.PreviousNode).WithMany()
+                .HasForeignKey(x => x.PreviousNodeId).OnDelete(DeleteBehavior.Restrict);
+            e.HasIndex(x => x.PreviousNodeId);
             // Universe scoping (SS-LAW-15). No-op when ScopedUniverseId is Guid.Empty.
             e.HasQueryFilter(x => ScopedUniverseId == Guid.Empty || x.UniverseId == ScopedUniverseId);
         });
-        b.Entity<StrandBeat>(e =>
+        b.Entity<NodeBeat>(e =>
         {
-            e.HasKey(x => new { x.StrandId, x.BeatId });
-            e.HasOne(x => x.Strand).WithMany(x => x.StrandBeats)
-                .HasForeignKey(x => x.StrandId).OnDelete(DeleteBehavior.Cascade);
-            e.HasOne(x => x.Beat).WithMany(x => x.StrandBeats)
+            e.HasKey(x => new { x.NodeId, x.BeatId });
+            e.HasOne(x => x.Node).WithMany(x => x.NodeBeats)
+                .HasForeignKey(x => x.NodeId).OnDelete(DeleteBehavior.Cascade);
+            e.HasOne(x => x.Beat).WithMany(x => x.NodeBeats)
                 .HasForeignKey(x => x.BeatId).OnDelete(DeleteBehavior.Cascade);
-            e.HasIndex(x => new { x.StrandId, x.SortKey });
+            e.HasIndex(x => new { x.NodeId, x.SortKey });
             e.HasIndex(x => x.BeatId);
         });
         b.Entity<PlantPayoff>(e =>
@@ -481,13 +495,13 @@ public class StreetSamuraiDbContext : DbContext
             e.Property(x => x.PayoffDescription).HasMaxLength(500).IsRequired();
             e.Property(x => x.Category).HasMaxLength(50).IsRequired();
             e.Property(x => x.TransparencyNote).HasMaxLength(500);
-            e.HasOne(x => x.Strand).WithMany()
-                .HasForeignKey(x => x.StrandId).OnDelete(DeleteBehavior.Cascade);
+            e.HasOne(x => x.Node).WithMany()
+                .HasForeignKey(x => x.NodeId).OnDelete(DeleteBehavior.Cascade);
             e.HasOne(x => x.PlantBeat).WithMany()
                 .HasForeignKey(x => x.PlantBeatId).OnDelete(DeleteBehavior.NoAction);
             e.HasOne(x => x.PayoffBeat).WithMany()
                 .HasForeignKey(x => x.PayoffBeatId).OnDelete(DeleteBehavior.NoAction);
-            e.HasIndex(x => x.StrandId);
+            e.HasIndex(x => x.NodeId);
             e.HasIndex(x => x.PlantBeatId);
             e.HasIndex(x => x.PayoffBeatId);
         });
@@ -498,9 +512,9 @@ public class StreetSamuraiDbContext : DbContext
             e.ToTable("BeatServiceLog");
             e.HasKey(x => x.Id);
             e.Property(x => x.Service).HasMaxLength(100).IsRequired();
-            e.HasIndex(x => x.StrandId);
+            e.HasIndex(x => x.NodeId);
             e.HasIndex(x => x.BeatId).HasFilter("[BeatId] IS NOT NULL");
-            e.HasOne<Strand>().WithMany().HasForeignKey(x => x.StrandId).OnDelete(DeleteBehavior.Cascade);
+            e.HasOne<Node>().WithMany().HasForeignKey(x => x.NodeId).OnDelete(DeleteBehavior.Cascade);
             e.HasOne<Beat>().WithMany().HasForeignKey(x => x.BeatId).IsRequired(false).OnDelete(DeleteBehavior.Restrict);
         });
         b.Entity<BeatModeLog>(e =>
@@ -514,6 +528,15 @@ public class StreetSamuraiDbContext : DbContext
 
         // ── Media assets ─────────────────────────────────────────────────────
         b.ApplyConfiguration(new MediaItemTypeConfiguration());
+        if (!Database.IsSqlServer())
+        {
+            // MediaItemTypeConfiguration pins SQL Server column types
+            // (varbinary(max) / nvarchar(max)) that SQLite's DDL parser rejects,
+            // which broke every TestDbFactory EnsureCreated. Let the provider
+            // infer storage types on non-SQL-Server (SQLite unit tests).
+            b.Entity<MediaItem>().Property(x => x.Bytes).HasColumnType(null);
+            b.Entity<MediaItem>().Property(x => x.Extra).HasColumnType(null);
+        }
 
         b.Entity<BeatEntityMention>(e =>
         {
@@ -526,28 +549,28 @@ public class StreetSamuraiDbContext : DbContext
             e.Property(x => x.EntityName).HasMaxLength(200);
             e.Property(x => x.EntityType).HasMaxLength(50);
         });
-        b.Entity<StrandPublication>(e =>
+        b.Entity<NodePublication>(e =>
         {
             e.HasKey(x => x.Id);
             e.Property(x => x.Status).HasMaxLength(20).IsRequired();
             e.Property(x => x.Format).HasMaxLength(8).IsRequired();
             e.Property(x => x.Path).HasMaxLength(600);
-            e.HasIndex(x => new { x.StrandId, x.StartedAt });
-            e.HasOne(x => x.Strand).WithMany(x => x.Publications)
-                .HasForeignKey(x => x.StrandId).OnDelete(DeleteBehavior.Cascade);
+            e.HasIndex(x => new { x.NodeId, x.StartedAt });
+            e.HasOne(x => x.Node).WithMany(x => x.Publications)
+                .HasForeignKey(x => x.NodeId).OnDelete(DeleteBehavior.Cascade);
         });
-        b.Entity<StrandAudioEvent>(e =>
+        b.Entity<NodeAudioEvent>(e =>
         {
             e.HasKey(x => x.Id);
             e.Property(x => x.Kind).HasMaxLength(40).IsRequired();
             e.Property(x => x.Detail).HasMaxLength(1000);
-            e.HasIndex(x => new { x.StrandId, x.At });
+            e.HasIndex(x => new { x.NodeId, x.At });
             e.HasIndex(x => x.PublicationId);
-            // Strand-scoped ledger; no hard FK to Strand so recording an event
-            // never fails on a transient strand-row state, and publication
+            // Node-scoped ledger; no hard FK to Node so recording an event
+            // never fails on a transient node-row state, and publication
             // linkage is a soft id (events outlive a deleted publication row).
         });
-        b.Entity<StrandReview>(e =>
+        b.Entity<NodeReview>(e =>
         {
             e.HasKey(x => x.Id);
             e.Property(x => x.PersonaId).HasMaxLength(40).IsRequired();
@@ -556,25 +579,25 @@ public class StreetSamuraiDbContext : DbContext
             e.Property(x => x.ProviderId).HasMaxLength(40).IsRequired();
             e.Property(x => x.Model).HasMaxLength(80);
             e.Property(x => x.ContentHash).HasMaxLength(64);
-            e.HasIndex(x => new { x.StrandId, x.ReviewedAt });
-            e.HasOne(x => x.Strand).WithMany(x => x.Reviews)
-                .HasForeignKey(x => x.StrandId).OnDelete(DeleteBehavior.Cascade);
+            e.HasIndex(x => new { x.NodeId, x.ReviewedAt });
+            e.HasOne(x => x.Node).WithMany(x => x.Reviews)
+                .HasForeignKey(x => x.NodeId).OnDelete(DeleteBehavior.Cascade);
         });
-        b.Entity<StrandReviewSummary>(e =>
+        b.Entity<NodeReviewSummary>(e =>
         {
             e.HasKey(x => x.Id);
             e.Property(x => x.ContentHash).HasMaxLength(64);
-            e.HasIndex(x => x.StrandId).IsUnique();
-            e.HasOne(x => x.Strand).WithMany()
-                .HasForeignKey(x => x.StrandId).OnDelete(DeleteBehavior.Cascade);
+            e.HasIndex(x => x.NodeId).IsUnique();
+            e.HasOne(x => x.Node).WithMany()
+                .HasForeignKey(x => x.NodeId).OnDelete(DeleteBehavior.Cascade);
         });
-        b.Entity<StrandScoreHistory>(e =>
+        b.Entity<NodeScoreHistory>(e =>
         {
             e.HasKey(x => x.Id);
             e.Property(x => x.ContentHash).HasMaxLength(64);
-            e.HasIndex(x => new { x.StrandId, x.RecordedAt });
-            e.HasOne(x => x.Strand).WithMany()
-                .HasForeignKey(x => x.StrandId).OnDelete(DeleteBehavior.Cascade);
+            e.HasIndex(x => new { x.NodeId, x.RecordedAt });
+            e.HasOne(x => x.Node).WithMany()
+                .HasForeignKey(x => x.NodeId).OnDelete(DeleteBehavior.Cascade);
         });
         b.Entity<VoiceChangeLogEntry>(e =>
         {
@@ -583,8 +606,8 @@ public class StreetSamuraiDbContext : DbContext
             e.Property(x => x.RuleTarget).HasMaxLength(80);
             e.Property(x => x.Status).HasMaxLength(20).IsRequired();
             e.HasIndex(x => new { x.Status, x.CreatedAt });
-            e.HasIndex(x => x.StrandId);
-            // No FK to Strands: entries outlive the strands they were learned from.
+            e.HasIndex(x => x.NodeId);
+            // No FK to Nodes: entries outlive the nodes they were learned from.
         });
         b.Entity<Species>(e =>
         {
@@ -611,7 +634,7 @@ public class StreetSamuraiDbContext : DbContext
             e.HasOne(x => x.FocusGroup).WithMany(g => g.Members)
                 .HasForeignKey(x => x.FocusGroupId).OnDelete(DeleteBehavior.Cascade);
         });
-        b.Entity<StrandReviewBeatScore>(e =>
+        b.Entity<NodeReviewBeatScore>(e =>
         {
             e.HasKey(x => new { x.ReviewId, x.BeatNumber });
             e.HasOne(x => x.Review).WithMany(r => r.BeatScores)
@@ -626,9 +649,9 @@ public class StreetSamuraiDbContext : DbContext
             e.Property(x => x.Register).HasMaxLength(40).IsRequired();
             e.Property(x => x.ContentHash).HasMaxLength(64).IsRequired();
             e.Property(x => x.Model).HasMaxLength(80);
-            e.HasOne(x => x.Strand).WithMany()
-                .HasForeignKey(x => x.StrandId).OnDelete(DeleteBehavior.Cascade);
-            e.HasIndex(x => new { x.StrandId, x.ExaminedAt });
+            e.HasOne(x => x.Node).WithMany()
+                .HasForeignKey(x => x.NodeId).OnDelete(DeleteBehavior.Cascade);
+            e.HasIndex(x => new { x.NodeId, x.ExaminedAt });
         });
 
         b.Entity<EmotionalDimensionResult>(e =>
@@ -651,9 +674,9 @@ public class StreetSamuraiDbContext : DbContext
             e.Property(x => x.Character).HasMaxLength(200).IsRequired();
             e.Property(x => x.VoiceRegister).HasMaxLength(2000);
             e.Property(x => x.SourceBibleHash).HasMaxLength(64);
-            e.HasOne(x => x.Strand).WithMany()
-                .HasForeignKey(x => x.StrandId).OnDelete(DeleteBehavior.Cascade);
-            e.HasIndex(x => new { x.StrandId, x.Character }).IsUnique();
+            e.HasOne(x => x.Node).WithMany()
+                .HasForeignKey(x => x.NodeId).OnDelete(DeleteBehavior.Cascade);
+            e.HasIndex(x => new { x.NodeId, x.Character }).IsUnique();
         });
 
         b.Entity<EntityReview>(e =>
@@ -2134,56 +2157,56 @@ public class StreetSamuraiDbContext : DbContext
             e.HasIndex(x => x.Alias);
         });
 
-        // ── StrandAmendment ─────────────────────────────────────────────────
-        b.Entity<StrandAmendment>(e =>
+        // ── NodeAmendment ─────────────────────────────────────────────────
+        b.Entity<NodeAmendment>(e =>
         {
             e.HasKey(x => x.Id);
             e.Property(x => x.Code).HasMaxLength(20).IsRequired();
             e.Property(x => x.Summary).HasMaxLength(500).IsRequired();
-            e.HasIndex(x => x.StrandId);
-            e.HasIndex(x => new { x.StrandId, x.SequenceNo }).IsUnique();
+            e.HasIndex(x => x.NodeId);
+            e.HasIndex(x => new { x.NodeId, x.SequenceNo }).IsUnique();
         });
 
-        // ── StrandSpineVersion ───────────────────────────────────────────────
-        b.Entity<StrandSpineVersion>(e =>
+        // ── NodeSpineVersion ───────────────────────────────────────────────
+        b.Entity<NodeSpineVersion>(e =>
         {
             e.HasKey(x => x.Id);
             e.Property(x => x.BibleHash).HasMaxLength(64);
             e.Property(x => x.UserStoriesHash).HasMaxLength(64);
             e.Property(x => x.PinnedBy).HasMaxLength(100);
             e.Property(x => x.Notes).HasMaxLength(1000);
-            e.HasIndex(x => x.StrandId);
-            e.HasIndex(x => new { x.StrandId, x.StrandVersion }).IsUnique();
+            e.HasIndex(x => x.NodeId);
+            e.HasIndex(x => new { x.NodeId, x.NodeVersion }).IsUnique();
         });
 
-        // ── StrandKeyword ────────────────────────────────────────────────────
-        b.Entity<StrandKeyword>(e =>
+        // ── NodeKeyword ────────────────────────────────────────────────────
+        b.Entity<NodeKeyword>(e =>
         {
             e.HasKey(x => x.Id);
             e.Property(x => x.Keyword).HasMaxLength(100).IsRequired();
-            e.HasIndex(x => x.StrandId);
-            e.HasOne(x => x.Strand).WithMany(x => x.Keywords)
-                .HasForeignKey(x => x.StrandId).OnDelete(DeleteBehavior.Cascade);
+            e.HasIndex(x => x.NodeId);
+            e.HasOne(x => x.Node).WithMany(x => x.Keywords)
+                .HasForeignKey(x => x.NodeId).OnDelete(DeleteBehavior.Cascade);
         });
 
-        // ── StrandChapterSummary ─────────────────────────────────────────────
-        b.Entity<StrandChapterSummary>(e =>
+        // ── NodeChapterSummary ─────────────────────────────────────────────
+        b.Entity<NodeChapterSummary>(e =>
         {
             e.HasKey(x => x.Id);
-            e.HasIndex(x => new { x.StrandId, x.ChapterIndex }).IsUnique();
-            e.HasOne(x => x.Strand).WithMany()
-                .HasForeignKey(x => x.StrandId).OnDelete(DeleteBehavior.Cascade);
+            e.HasIndex(x => new { x.NodeId, x.ChapterIndex }).IsUnique();
+            e.HasOne(x => x.Node).WithMany()
+                .HasForeignKey(x => x.NodeId).OnDelete(DeleteBehavior.Cascade);
         });
 
-        // ── StrandOpenThread ─────────────────────────────────────────────────
-        b.Entity<StrandOpenThread>(e =>
+        // ── NodeOpenThread ─────────────────────────────────────────────────
+        b.Entity<NodeOpenThread>(e =>
         {
             e.HasKey(x => x.Id);
             e.Property(x => x.Category).HasMaxLength(50);
             e.Property(x => x.Description).HasMaxLength(500).IsRequired();
-            e.HasIndex(x => new { x.StrandId, x.IsResolved });
-            e.HasOne(x => x.Strand).WithMany()
-                .HasForeignKey(x => x.StrandId).OnDelete(DeleteBehavior.Cascade);
+            e.HasIndex(x => new { x.NodeId, x.IsResolved });
+            e.HasOne(x => x.Node).WithMany()
+                .HasForeignKey(x => x.NodeId).OnDelete(DeleteBehavior.Cascade);
         });
 
         // ── MarkdownFile ────────────────────────────────────────────────────
@@ -2301,7 +2324,7 @@ public class StreetSamuraiDbContext : DbContext
         "FlyoverEntities", "FlyoverEntityAliases", "FlyoverEntityKnownLocations", "FlyoverEntityStoryHooks",
         "Books", "BookProtagonists", "BookChapterOrder",
         "Chapters", "ChapterCharacters", "ChapterBeats",
-        // Unified strand writer model (Beat / Strand / StrandBeat junction).
+        // Unified node writer model (Beat / Node / NodeBeat junction).
         // System-versioned so every prose edit, metadata change, membership
         // shuffle, AND deletion lands in {Table}_History — that's the rewind
         // the writer's per-beat version cycler reads via FOR SYSTEM_TIME ALL,
@@ -2310,7 +2333,7 @@ public class StreetSamuraiDbContext : DbContext
         // neither table carries a vector index (prose embeddings live in the
         // separate ProseEmbeddings table), so the SQL Server vector-index ↔
         // system-versioning incompatibility doesn't apply here.
-        "Beats", "Strands", "StrandBeats",
+        "Beats", "Nodes", "NodeBeats",
         "ContinuityClaims",
         "EntityStateEvents",
         "WeaponSpecs",
@@ -2320,12 +2343,12 @@ public class StreetSamuraiDbContext : DbContext
         // rows keep the full content, so a catastrophic file deletion can be
         // undone with ss --restore-markdown --as-of <datetime>.
         "MarkdownFiles",
-        // Per-strand narrative spine: amendment log (append-only) and version
+        // Per-node narrative spine: amendment log (append-only) and version
         // pins (bridge linking docx-version → spine hashes). Both versioned so
         // amendments can never be truly deleted and any spine state can be
         // recovered by timestamp.
-        "StrandAmendments",
-        "StrandSpineVersions",
+        "NodeAmendments",
+        "NodeSpineVersions",
     };
 
     /// <summary>

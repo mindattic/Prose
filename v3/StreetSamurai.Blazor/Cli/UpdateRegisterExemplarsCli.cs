@@ -15,8 +15,8 @@ namespace StreetSamurai.Blazor.Cli;
 /// Prerequisites: run --examine-emotion first to populate Beat.EmotionalScore.
 ///
 /// Args:
-///   --slug &lt;slug&gt;   Strand slug. One of --slug / --id required.
-///   --id &lt;guid&gt;     Strand GUID (unique prefix accepted).
+///   --slug &lt;slug&gt;   Node slug. One of --slug / --id required.
+///   --id &lt;guid&gt;     Node GUID (unique prefix accepted).
 ///   --top N         Number of top beats to surface (default 5).
 ///   --dry-run       Print candidates but do not modify the register file.
 /// </summary>
@@ -49,35 +49,35 @@ public static class UpdateRegisterExemplarsCli
         await using var db = services.GetRequiredService<IDbContextFactory<StreetSamuraiDbContext>>()
             .CreateDbContext();
 
-        Guid strandId;
+        Guid nodeId;
         if (slug is not null)
         {
-            var s = await db.Strands.FirstOrDefaultAsync(x => x.Slug == slug);
-            if (s is null) { Console.Error.WriteLine($"Strand '{slug}' not found."); return 1; }
-            strandId = s.Id;
+            var s = await db.Nodes.FirstOrDefaultAsync(x => x.Slug == slug);
+            if (s is null) { Console.Error.WriteLine($"Node '{slug}' not found."); return 1; }
+            nodeId = s.Id;
         }
         else
         {
             var prefix = id!.ToUpperInvariant();
-            var s = await db.Strands.FirstOrDefaultAsync(x =>
+            var s = await db.Nodes.FirstOrDefaultAsync(x =>
                 x.Id.ToString().Replace("-", "").ToUpperInvariant().StartsWith(prefix.Replace("-", "")));
-            if (s is null) { Console.Error.WriteLine($"Strand id '{id}' not found."); return 1; }
-            strandId = s.Id;
+            if (s is null) { Console.Error.WriteLine($"Node id '{id}' not found."); return 1; }
+            nodeId = s.Id;
         }
 
         var svc = services.GetRequiredService<RegisterExemplarService>();
         Console.WriteLine($"Surfacing top {topN} exemplar candidates…");
 
-        var (registerName, strandSlug, candidates) =
-            await svc.FindExemplarsAsync(strandId, topN);
+        var (registerName, nodeSlug, candidates) =
+            await svc.FindExemplarsAsync(nodeId, topN);
 
         if (candidates.Count == 0)
         {
-            Console.WriteLine("No candidates found. Check that --examine-emotion has been run for this strand.");
+            Console.WriteLine("No candidates found. Check that --examine-emotion has been run for this node.");
             return 0;
         }
 
-        Console.WriteLine($"\nRegister: {registerName}  |  Strand: {strandSlug}");
+        Console.WriteLine($"\nRegister: {registerName}  |  Node: {nodeSlug}");
         Console.WriteLine(new string('─', 60));
 
         foreach (var c in candidates)
@@ -90,7 +90,7 @@ public static class UpdateRegisterExemplarsCli
 
         Console.WriteLine();
 
-        var markdown = svc.FormatAsMarkdown(candidates, strandSlug, registerName);
+        var markdown = svc.FormatAsMarkdown(candidates, nodeSlug, registerName);
 
         if (dryRun)
         {

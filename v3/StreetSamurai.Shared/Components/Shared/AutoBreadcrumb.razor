@@ -83,9 +83,9 @@
             "users"           => new(null, null, "Users",            null,          "bi-people-fill"),
             "logging"         => new(null, null, "Logging",          null,          "bi-journal-code"),
             "utilities"       => new(null, null, "Utilities",        null,          "bi-tools"),
-            "strands"         => new(null, null, "Strands",          null,          "bi-collection"),
-            _ when seg.StartsWith("strand/")
-                              => new("Strands",       "/strands",              StrandTitle(seg[7..]), "bi-collection",     "bi-pencil-square"),
+            "nodes"         => new(null, null, "Nodes",          null,          "bi-collection"),
+            _ when seg.StartsWith("node/")
+                              => new("Nodes",       "/nodes",              NodeTitle(seg[7..]), "bi-collection",     "bi-pencil-square"),
             "dashboard"       => new("Tools",          "/board/tools",          "Dashboard",         "bi-grid-3x3-gap",     "bi-speedometer2"),
             "ask"             => new("Tools",          "/board/tools",          "Ask",               "bi-grid-3x3-gap",     "bi-chat-dots"),
             "books"           => new("Tools",          "/board/tools",          "Bookshelf",         "bi-grid-3x3-gap",     "bi-book"),
@@ -168,10 +168,10 @@
         _ => slug.Length == 0 ? "" : char.ToUpper(slug[0]) + slug[1..]
     };
 
-    private static string StrandTitle(string slug)
+    private static string NodeTitle(string slug)
     {
-        if (string.IsNullOrEmpty(slug)) return "Strand";
-        if (Guid.TryParse(slug, out _)) return "Strand";
+        if (string.IsNullOrEmpty(slug)) return "Node";
+        if (Guid.TryParse(slug, out _)) return "Node";
         var s = slug.Replace('_', ' ').Replace('-', ' ').Trim();
         var parts = s.Split(' ', StringSplitOptions.RemoveEmptyEntries);
         if (parts.Length > 1)

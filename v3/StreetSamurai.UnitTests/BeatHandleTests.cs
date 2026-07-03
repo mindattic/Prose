@@ -3,7 +3,7 @@ using StreetSamurai.Core.Services;
 namespace StreetSamurai.UnitTests;
 
 /// <summary>
-/// The dotted "strand-guid.beat-guid" handle is the integration surface
+/// The dotted "node-guid.beat-guid" handle is the integration surface
 /// between the writer UI's LLM bottom sheet, the MCP tool layer, the CLI,
 /// and any chat-side client that wants to address one specific beat. Both
 /// forms (Beat-only Guid and dotted) must parse cleanly; malformed input
@@ -14,12 +14,12 @@ namespace StreetSamurai.UnitTests;
 public class BeatHandleTests
 {
     [Test]
-    public void TryParse_PlainBeatGuid_SetsBeatId_AndStrandIsNull()
+    public void TryParse_PlainBeatGuid_SetsBeatId_AndNodeIsNull()
     {
         var bid = Guid.NewGuid();
-        var ok = BeatHandle.TryParse(bid.ToString(), out var strand, out var beat);
+        var ok = BeatHandle.TryParse(bid.ToString(), out var node, out var beat);
         Assert.That(ok, Is.True);
-        Assert.That(strand, Is.Null);
+        Assert.That(node, Is.Null);
         Assert.That(beat, Is.EqualTo(bid));
     }
 
@@ -28,9 +28,9 @@ public class BeatHandleTests
     {
         var s = Guid.NewGuid();
         var b = Guid.NewGuid();
-        var ok = BeatHandle.TryParse($"{s}.{b}", out var strand, out var beat);
+        var ok = BeatHandle.TryParse($"{s}.{b}", out var node, out var beat);
         Assert.That(ok, Is.True);
-        Assert.That(strand, Is.EqualTo(s));
+        Assert.That(node, Is.EqualTo(s));
         Assert.That(beat, Is.EqualTo(b));
     }
 
@@ -51,9 +51,9 @@ public class BeatHandleTests
     [TestCase("a.b")]
     public void TryParse_BadInput_ReturnsFalse_AndNullsOutParams(string? input)
     {
-        var ok = BeatHandle.TryParse(input, out var strand, out var beat);
+        var ok = BeatHandle.TryParse(input, out var node, out var beat);
         Assert.That(ok, Is.False);
-        Assert.That(strand, Is.Null);
+        Assert.That(node, Is.Null);
         Assert.That(beat, Is.Null);
     }
 
@@ -79,9 +79,9 @@ public class BeatHandleTests
         // "guid.notaguid" must NOT silently treat the input as a beat-only
         // Guid by stripping the trailing junk. Reject the whole thing.
         var s = Guid.NewGuid();
-        var ok = BeatHandle.TryParse($"{s}.not-a-guid", out var strand, out var beat);
+        var ok = BeatHandle.TryParse($"{s}.not-a-guid", out var node, out var beat);
         Assert.That(ok, Is.False);
-        Assert.That(strand, Is.Null);
+        Assert.That(node, Is.Null);
         Assert.That(beat, Is.Null);
     }
 
@@ -93,9 +93,9 @@ public class BeatHandleTests
         var handle = BeatHandle.Format(s, b);
         Assert.That(handle, Is.EqualTo($"{s}.{b}"));
 
-        var ok = BeatHandle.TryParse(handle, out var strand, out var beat);
+        var ok = BeatHandle.TryParse(handle, out var node, out var beat);
         Assert.That(ok, Is.True);
-        Assert.That(strand, Is.EqualTo(s));
+        Assert.That(node, Is.EqualTo(s));
         Assert.That(beat, Is.EqualTo(b));
     }
 }

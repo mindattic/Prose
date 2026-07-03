@@ -6,32 +6,32 @@
 
 <div class="writer-pick">
     <div class="writer-pick-label">
-        <i class="bi bi-pencil-square me-2"></i>Select a strand to write
+        <i class="bi bi-pencil-square me-2"></i>Select a node to write
     </div>
     <div class="writer-pick-row">
         <select class="form-select writer-pick-select" @bind="selectedSlug" @bind:after="OnPicked">
-            <option value="">— select a strand —</option>
-            @foreach (var s in strands)
+            <option value="">— select a node —</option>
+            @foreach (var s in nodes)
             {
                 <option value="@s.Slug">@s.Title</option>
             }
         </select>
-        <a href="/strands" class="btn btn-outline-secondary btn-sm">Browse all</a>
+        <a href="/nodes" class="btn btn-outline-secondary btn-sm">Browse all</a>
     </div>
 </div>
 
 @code {
-    private record StrandRow(string Slug, string Title);
-    private List<StrandRow> strands = [];
+    private record NodeRow(string Slug, string Title);
+    private List<NodeRow> nodes = [];
     private string selectedSlug = "";
 
     protected override void OnInitialized()
     {
         using var db = DbFactory.CreateDbContext();
-        strands = db.Strands.AsNoTracking()
+        nodes = db.Nodes.AsNoTracking()
             .Where(s => s.Slug != null && s.Slug != "")
             .OrderByDescending(s => s.UpdatedAt)
-            .Select(s => new StrandRow(s.Slug, s.Title))
+            .Select(s => new NodeRow(s.Slug, s.Title))
             .Take(150)
             .ToList();
     }
@@ -41,8 +41,8 @@
         if (!firstRender) return;
         try
         {
-            var saved = await JS.InvokeAsync<string>("localStorage.getItem", "writer.strand");
-            if (!string.IsNullOrEmpty(saved) && strands.Any(s => s.Slug == saved))
+            var saved = await JS.InvokeAsync<string>("localStorage.getItem", "writer.node");
+            if (!string.IsNullOrEmpty(saved) && nodes.Any(s => s.Slug == saved))
             {
                 selectedSlug = saved;
                 StateHasChanged();
@@ -54,7 +54,7 @@
     private async Task OnPicked()
     {
         if (string.IsNullOrEmpty(selectedSlug)) return;
-        try { await JS.InvokeVoidAsync("localStorage.setItem", "writer.strand", selectedSlug); } catch { }
-        Nav.NavigateTo($"/strand/{selectedSlug}");
+        try { await JS.InvokeVoidAsync("localStorage.setItem", "writer.node", selectedSlug); } catch { }
+        Nav.NavigateTo($"/node/{selectedSlug}");
     }
 }

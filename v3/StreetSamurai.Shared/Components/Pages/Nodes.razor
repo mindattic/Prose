@@ -1,0 +1,910 @@
+﻿@page "/nodes"
+@attribute [Authorize(Policy = MaPolicies.Admin)]
+@using Microsoft.EntityFrameworkCore
+@using StreetSamurai.Core.Data
+@using StreetSamurai.Shared.Services
+@using NodeEntity = StreetSamurai.Core.Data.Entities.Node
+@inject IDbContextFactory<StreetSamuraiDbContext> DbFactory
+@inject NavigationManager Nav
+@inject ToastNotifier Toast
+@inject IJSRuntime JS
+@inject StreetSamurai.Core.Services.IUniverseContext Universe
+@inject StreetSamurai.Core.Services.NodeWorkbenchService Workbench
+@inject StreetSamurai.Core.Services.DocxExportService Docx
+@inject StreetSamurai.Core.Services.ManuscriptExportService Manuscript
+@inject StreetSamurai.Core.Services.NodeReviewService ReviewSvc
+@inject StreetSamurai.Shared.Services.TabService TabSvc
+@implements IDisposable
+
+@*
+   Node index. Lists every node grouped by kind. Click to open in the
+   unified writer/recorder at /node/{id}. The "+ New node" CTA below
+   creates a blank top-level node and routes you there.
+*@
+
+<div class="container py-3" style="max-width: 1100px;" id="nodes-list-root">
+    <div class="d-flex justify-content-between align-items-center mb-3">
+        <div>
+            <h4 class="text-danger mb-0"><i class="bi bi-collection me-2"></i>Nodes</h4>
+            <div class="text-muted small">Stories contain chapters; chapters contain beats.</div>
+        </div>
+        <div class="d-flex gap-2 align-items-end">
+            <input class="form-control form-control-sm bg-black text-light border-secondary"
+                   placeholder="New node title…" @bind="newTitle" @bind:event="oninput" style="width:240px;" />
+            <select class="form-select form-select-sm bg-black text-light border-secondary" @bind="newKind" style="width:120px;">
+                <option value="series">series</option>
+                <option value="story">story</option>
+                <option value="chapter">chapter</option>
+            </select>
+            <button class="btn btn-sm btn-outline-info" @onclick="CreateAsync" disabled="@(string.IsNullOrWhiteSpace(newTitle))">
+                <i class="bi bi-plus-circle me-1"></i>Create
+            </button>
+        </div>
+    </div>
+
+    @if (loading)
+    {
+        <div class="text-muted"><span class="spinner-border spinner-border-sm me-2"></span>Loading nodes…</div>
+    }
+    else if (nodes.Count == 0)
+    {
+        <div class="card bg-dark border-secondary text-center py-5">
+            <div class="text-muted mb-2">
+                <i class="bi bi-stars" style="font-size:2rem; opacity:0.4;"></i>
+            </div>
+            <h6 class="text-light mb-2">No nodes yet</h6>
+            <div class="text-muted small mb-3">
+                A <em>node</em> is a hierarchical container — a root <em>story</em> or a <em>chapter</em> (leaf) that holds beats.
+                <br />Type a title above and click Create, or run <code>ss --write-node --seed "&hellip;"</code> from the CLI to generate one with the LLM.
+            </div>
+        </div>
+    }
+    else
+    {
+        @foreach (var group in grouped)
+        {
+            <div class="card bg-dark border-secondary mb-3">
+                <div class="card-header py-2 px-3">
+                    <span class="text-uppercase text-muted small">@group.Key</span>
+                    <span class="text-muted small ms-2">@group.Count() node(s)</span>
+                </div>
+                <ul class="list-group list-group-flush">
+                    @foreach (var s in group.OrderBy(x => x.Title))
+                    {
+                        var beatCount = beatCounts.GetValueOrDefault(s.Id, 0);
+                        var childCount = childCounts.GetValueOrDefault(s.Id, 0);
+                        <li class="list-group-item bg-dark text-light border-secondary" data-node-id="@s.Id" data-has-children="@(childCount > 0 ? "true" : "false")">
+                            @if (editingId == s.Id)
+                            {
+                                @* ── Inline edit: title + full description ───────────────── *@
+                                <div class="mb-2">
+                                    <label class="form-label small text-muted mb-1">Title</label>
+                                    <input class="form-control form-control-sm bg-black text-light border-secondary"
+                                           @bind="editTitle" @bind:event="oninput" />
+                                </div>
+                                <div class="mb-2">
+                                    <label class="form-label small text-muted mb-1">Synopsis <span class="text-muted" style="font-size:0.75em">(internal generation seed)</span></label>
+                                    <textarea class="form-control form-control-sm bg-black text-light border-secondary"
+                                              rows="3" placeholder="One-line generation seed / logline"
+                                              @bind="editSynopsis" @bind:event="oninput"></textarea>
+                                </div>
+                                <div class="mb-2">
+                                    <label class="form-label small text-muted mb-1">Summary <span class="text-muted" style="font-size:0.75em">(back-of-book / KDP)</span></label>
+                                    <textarea class="form-control form-control-sm bg-black text-light border-secondary"
+                                              rows="5" placeholder="~100–150 word jacket blurb for KDP / store listings"
+                                              @bind="editSummary" @bind:event="oninput"></textarea>
+                                </div>
+                                <div class="d-flex gap-2">
+                                    <button class="btn btn-sm btn-success" @onclick="SaveEditAsync"
+                                            disabled="@(savingEdit || string.IsNullOrWhiteSpace(editTitle))">
+                                        @if (savingEdit) { <span class="spinner-border spinner-border-sm me-1"></span> }
+                                        <i class="bi bi-check-lg me-1"></i>Save
+                                    </button>
+                                    <button class="btn btn-sm btn-outline-secondary" @onclick="CancelEdit" disabled="@savingEdit">Cancel</button>
+                                    <code class="text-muted node-guid ms-auto align-self-center">@s.Id</code>
+                                </div>
+                            }
+                            else
+                            {
+                                <div class="d-flex justify-content-between align-items-center">
+                                    <span class="node-drag-handle me-2" title="Drag to reorder or move into a collection">
+                                        <i class="bi bi-grip-vertical"></i>
+                                    </span>
+                                    @if (!string.IsNullOrWhiteSpace(s.NodeCode))
+                                    {
+                                        <span class="node-code-chip me-1" title="Node code">@s.NodeCode</span>
+                                    }
+                                    <a href="@($"/node/{s.Slug}")" class="text-info text-decoration-none flex-grow-1"
+                                       @onclick:preventDefault @onclick="() => OpenNode(s.Slug)">
+                                        <strong>@s.Title</strong>
+                                    </a>
+                                    <div class="d-flex align-items-center gap-2 small">
+                                        @if (childCount > 0)
+                                        {
+                                            <button class="btn btn-sm btn-link text-muted p-0 border-0"
+                                                    title="@(expandedParents.Contains(s.Id) ? "Collapse episodes" : "Expand episodes")"
+                                                    @onclick="() => ToggleExpand(s.Id)">
+                                                <i class="bi bi-diagram-3 me-1"></i>@childCount
+                                                <i class="bi bi-chevron-@(expandedParents.Contains(s.Id) ? "up" : "down") ms-1" style="font-size:0.65rem;"></i>
+                                            </button>
+                                        }
+                                        @if (beatCount > 0)
+                                        {
+                                            <span class="text-muted" title="Beats across all episodes">
+                                                <i class="bi bi-three-dots me-1"></i>@beatCount
+                                            </span>
+                                        }
+                                        @{ var pages = pageCounts.GetValueOrDefault(s.Id, 0); }
+                                        @if (pages > 0)
+                                        {
+                                            <span class="text-muted" title="Estimated pages (word count ÷ 250)">
+                                                <i class="bi bi-file-text me-1"></i>@pages pg
+                                            </span>
+                                        }
+                                        @{ var audioDur = audioDurations.GetValueOrDefault(s.Id); }
+                                        @if (!string.IsNullOrEmpty(audioDur))
+                                        {
+                                            <span class="text-muted" title="Estimated audio duration (word count ÷ 150 wpm)">
+                                                <i class="bi bi-headphones me-1"></i>@audioDur
+                                            </span>
+                                        }
+                                        @if (s.Score.HasValue)
+                                        {
+                                            <span class="badge @ScoreBadge((int)Math.Round(s.Score.Value))" title="Reader score (latest run)">
+                                                <i class="bi bi-star-half me-1"></i>@s.Score.Value.ToString("0")%
+                                            </span>
+                                        }
+                                        <span class="badge bg-@StatusColor(s.Status) text-uppercase">@StatusLabel(s.Status)</span>
+                                        <button class="btn btn-sm btn-outline-light" title="Edit title &amp; description"
+                                                @onclick="() => BeginEdit(s)">
+                                            <i class="bi bi-pencil"></i>
+                                        </button>
+                                        <button class="btn btn-sm btn-outline-warning" title="Show reader reviews"
+                                                @onclick="() => OpenReviewsAsync(s)">
+                                            <i class="bi bi-star-half me-1"></i>Reviews
+                                        </button>
+                                        <button class="btn btn-sm btn-outline-info" title="Score history chart"
+                                                @onclick="() => OpenScoreHistory(s)">
+                                            <i class="bi bi-graph-up"></i>
+                                        </button>
+                                        @if (childCount > 0)
+                                        {
+                                            <div class="dropdown">
+                                                <button class="btn btn-sm btn-outline-success dropdown-toggle" type="button"
+                                                        data-bs-toggle="dropdown"
+                                                        disabled="@(exportingCollectionId == s.Id)"
+                                                        title="Export the full collection — all episodes concatenated">
+                                                    @if (exportingCollectionId == s.Id)
+                                                    {
+                                                        <span class="spinner-border spinner-border-sm me-1"></span>
+                                                    }
+                                                    else
+                                                    {
+                                                        <i class="bi bi-collection-play me-1"></i>
+                                                    }
+                                                    Export Collection
+                                                </button>
+                                                <ul class="dropdown-menu dropdown-menu-dark dropdown-menu-end">
+                                                    <li><h6 class="dropdown-header">Audio</h6></li>
+                                                    <li>
+                                                        <button class="dropdown-item" @onclick="() => ExportCollectionAudiobookAsync(s.Id)">
+                                                            <i class="bi bi-mic me-2"></i>Export Audio (.mp3)
+                                                        </button>
+                                                    </li>
+                                                    <li><hr class="dropdown-divider"></li>
+                                                    <li><h6 class="dropdown-header">Manuscript</h6></li>
+                                                    <li>
+                                                        <button class="dropdown-item" @onclick="() => ExportCollectionManuscriptAsync(s.Id)">
+                                                            <i class="bi bi-file-earmark-richtext me-2"></i>Export Manuscript (.epub + .docx + .pdf)
+                                                        </button>
+                                                    </li>
+                                                    <li>
+                                                        <button class="dropdown-item" @onclick='() => ExportCollectionAsync(s.Id, "MARKDOWN", "Markdown .md", id => Manuscript.ExportMarkdownAsync(id))'>
+                                                            <i class="bi bi-markdown me-2"></i>Markdown (.md)
+                                                        </button>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                        }
+                                    </div>
+                                </div>
+                                @* Full description — so you can see what each story is about at a glance. *@
+                                @if (!string.IsNullOrWhiteSpace(s.Synopsis))
+                                {
+                                    <div class="node-synopsis-line mt-1">@s.Synopsis</div>
+                                }
+                                else
+                                {
+                                    <div class="node-synopsis-line node-synopsis-empty mt-1">No description yet — click the pencil to add one.</div>
+                                }
+                                @* Full GUID — a stable handle to refer to this node (CLI, conversation). Click to copy. *@
+                                <code class="text-muted node-guid" title="Click to copy full id"
+                                      @onclick="() => CopyGuidAsync(s.Id)">@s.Id</code>
+                            }
+                        </li>
+                        @* ── Inline child nodes (expanded when the episode count badge is clicked) ── *@
+                        @if (expandedParents.Contains(s.Id) && childNodes.TryGetValue(s.Id, out var kids))
+                        {
+                            @foreach (var kid in kids.OrderBy(k => k.SortKey).ThenBy(k => k.Title))
+                            {
+                                var kidBeats = beatCounts.GetValueOrDefault(kid.Id, 0);
+                                <li class="list-group-item bg-dark text-light border-secondary node-child-row" data-node-id="@kid.Id" data-has-children="false">
+                                    <div class="d-flex justify-content-between align-items-center">
+                                        <span class="node-drag-handle me-1" title="Drag to reorder or move to a different collection">
+                                            <i class="bi bi-grip-vertical"></i>
+                                        </span>
+                                        <a href="@($"/node/{kid.Slug}")" class="text-info text-decoration-none flex-grow-1 ms-2"
+                                           @onclick:preventDefault @onclick="() => OpenNode(kid.Slug)">
+                                            <i class="bi bi-arrow-return-right me-2 text-secondary" style="font-size:0.75rem;"></i>@kid.Title
+                                        </a>
+                                        <div class="d-flex align-items-center gap-2 small">
+                                            @if (kidBeats > 0)
+                                            {
+                                                <span class="text-muted"><i class="bi bi-three-dots me-1"></i>@kidBeats</span>
+                                            }
+                                            @if (kid.Score.HasValue)
+                                            {
+                                                <span class="badge @ScoreBadge((int)Math.Round(kid.Score.Value))">
+                                                    <i class="bi bi-star-half me-1"></i>@kid.Score.Value.ToString("0")%
+                                                </span>
+                                            }
+                                            <span class="badge bg-@StatusColor(kid.Status) text-uppercase">@StatusLabel(kid.Status)</span>
+                                        </div>
+                                    </div>
+                                    @if (!string.IsNullOrWhiteSpace(kid.Synopsis))
+                                    {
+                                        <div class="node-synopsis-line mt-1 ms-4">@kid.Synopsis</div>
+                                    }
+                                </li>
+                            }
+                        }
+                    }
+                </ul>
+            </div>
+        }
+    }
+</div>
+
+@* ── Score history chart modal ───────────────────────────────────────── *@
+<ScoreHistoryModal Visible="scoreHistoryOpen"
+                   NodeId="scoreHistoryNodeId"
+                   NodeTitle="scoreHistoryTitle"
+                   OnClose="() => scoreHistoryOpen = false" />
+
+@* ── Reader-reviews bottom sheet ─────────────────────────────────────── *@
+@if (reviewsOpen)
+{
+    <div class="review-sheet-backdrop" @onclick="CloseReviews"></div>
+    <div class="review-sheet" @onclick:stopPropagation>
+        <div class="review-sheet-header d-flex justify-content-between align-items-start gap-2">
+            <div>
+                <strong class="text-light"><i class="bi bi-star-half me-1 text-warning"></i>Reader reviews — @reviewsTitle</strong>
+                <div><code class="node-guid">@reviewsNodeId</code></div>
+            </div>
+            <button class="btn btn-sm btn-outline-secondary" @onclick="CloseReviews"><i class="bi bi-x-lg"></i></button>
+        </div>
+        <div class="review-sheet-body">
+            @if (reviewsLoading)
+            {
+                <div class="text-muted"><span class="spinner-border spinner-border-sm me-2"></span>Loading reviews…</div>
+            }
+            else if (reviewList.Count == 0)
+            {
+                <div class="text-muted">
+                    No reviews yet for this node. Run
+                    <code>ss --review-node --slug @reviewsSlug --readers 128</code> to generate them.
+                </div>
+            }
+            else
+            {
+                @if (reviewSummary != null)
+                {
+                    <div class="review-summary mb-3">
+                        <div class="d-flex align-items-center gap-3 flex-wrap mb-2">
+                            <span class="review-avg">@reviewSummary.AvgScore.ToString("0.0")<span class="review-avg-max">/100</span></span>
+                            <span class="text-muted small">@reviewSummary.ReviewCount reviews · generated @reviewSummary.GeneratedAt.ToLocalTime().ToString("yyyy-MM-dd HH:mm")</span>
+                            @if (reviewStaleNote)
+                            {
+                                <span class="badge bg-danger" title="The node's beat count changed since these reviews were written.">story edited since</span>
+                            }
+                        </div>
+                        @foreach (var b in scoreBuckets)
+                        {
+                            <div class="d-flex align-items-center gap-2 review-bar-row">
+                                <span class="review-bar-label">@b.Key</span>
+                                <div class="review-bar-track"><div class="review-bar-fill" style="width:@(BarPct(b.Value))%"></div></div>
+                                <span class="review-bar-count">@b.Value</span>
+                            </div>
+                        }
+                        <div class="review-summary-md mt-2">@reviewSummary.SummaryMarkdown</div>
+                    </div>
+                    <hr class="border-secondary" />
+                }
+                <div class="review-list">
+                    @foreach (var r in reviewList)
+                    {
+                        <div class="review-card">
+                            <div class="d-flex justify-content-between align-items-center gap-2 mb-1">
+                                <div>
+                                    <strong class="text-light">@r.PersonaName</strong>
+                                    <span class="badge bg-secondary ms-1" title="@r.Model">@r.ProviderId</span>
+                                </div>
+                                <span class="badge @ScoreBadge(r.Score)">@r.Score/100</span>
+                            </div>
+                            @if (!string.IsNullOrWhiteSpace(r.PersonaBlurb))
+                            {
+                                <div class="text-muted review-blurb">@r.PersonaBlurb</div>
+                            }
+                            <div class="review-text">@r.ReviewText</div>
+                            @if (!string.IsNullOrWhiteSpace(r.Improvements))
+                            {
+                                <ul class="review-fixes">
+                                    @foreach (var fix in r.Improvements.Split('\n', StringSplitOptions.RemoveEmptyEntries | StringSplitOptions.TrimEntries))
+                                    {
+                                        <li>@fix</li>
+                                    }
+                                </ul>
+                            }
+                        </div>
+                    }
+                </div>
+            }
+        </div>
+    </div>
+}
+
+<style>
+    .node-code-chip { font-size: 0.65rem; font-weight: 700; color: #0dcaf0; background: rgba(13,202,240,0.1); border: 1px solid rgba(13,202,240,0.3); border-radius: 3px; padding: 1px 5px; letter-spacing: 0.04em; font-family: monospace; flex-shrink: 0; }
+    .node-guid { font-size: 0.68rem; color: #6c757d; cursor: pointer; }
+    .node-guid:hover { color: #0dcaf0; }
+    .node-synopsis-line { font-size: 0.85rem; color: #adb5bd; white-space: pre-wrap; line-height: 1.35; }
+    .node-synopsis-empty { font-style: italic; color: #5c636a; }
+    .review-sheet-backdrop { position: fixed; inset: 0; background: rgba(0,0,0,0.55); z-index: 1080; }
+    .review-sheet {
+        position: fixed; left: 0; right: 0; bottom: 0; z-index: 1090;
+        background: #0f0f0f; border-top: 1px solid #2a2a2a;
+        box-shadow: 0 -8px 24px rgba(0,0,0,0.5);
+        max-height: 82vh; overflow-y: auto;
+        animation: review-sheet-rise 0.18s ease-out;
+    }
+    @@keyframes review-sheet-rise { from { transform: translateY(100%); } to { transform: translateY(0); } }
+    .review-sheet-header { padding: 0.75rem 1rem; border-bottom: 1px solid #2a2a2a; position: sticky; top: 0; background: #0f0f0f; z-index: 1; }
+    .review-sheet-body { padding: 0.85rem 1rem 1.5rem; max-width: 920px; margin: 0 auto; }
+    .review-avg { font-size: 2rem; font-weight: 700; color: #ffc107; line-height: 1; }
+    .review-avg-max { font-size: 0.9rem; color: #6c757d; font-weight: 400; }
+    .review-bar-row { font-size: 0.75rem; }
+    .review-bar-label { width: 52px; color: #adb5bd; text-align: right; }
+    .review-bar-track { flex-grow: 1; height: 8px; background: #1c1c1c; border-radius: 4px; overflow: hidden; }
+    .review-bar-fill { height: 100%; background: #ffc107; }
+    .review-bar-count { width: 28px; color: #adb5bd; }
+    .review-summary-md { color: #e6edf3; font-size: 0.9rem; white-space: pre-wrap; background: rgba(255,193,7,0.05); border: 1px solid rgba(255,193,7,0.25); border-radius: 6px; padding: 0.6rem 0.8rem; }
+    .review-card { border: 1px solid #2a2a2a; border-radius: 6px; padding: 0.6rem 0.8rem; margin-bottom: 0.6rem; background: #161616; }
+    .review-blurb { font-size: 0.72rem; font-style: italic; margin-bottom: 0.35rem; }
+    .review-text { color: #ced4da; font-size: 0.88rem; white-space: pre-wrap; }
+    .review-fixes { margin: 0.4rem 0 0; padding-left: 1.1rem; color: #9fb6c2; font-size: 0.82rem; }
+    .review-fixes li { margin-bottom: 0.15rem; }
+    .node-child-row { background: #0d0d0d !important; border-left: 2px solid #1a3a2a !important; }
+    .node-child-row:hover { background: #111 !important; }
+    .node-drag-handle { cursor: grab; color: #4a4a4a; user-select: none; flex-shrink: 0; }
+    .node-drag-handle:hover { color: #0dcaf0; }
+    .node-drag-handle:active { cursor: grabbing; }
+    [data-node-id].node-dragging { opacity: 0.45; }
+    [data-node-id].node-drop-before { box-shadow: inset 0 3px 0 0 #0dcaf0 !important; }
+    [data-node-id].node-drop-after  { box-shadow: inset 0 -3px 0 0 #0dcaf0 !important; }
+    [data-node-id].node-drop-child  { background: rgba(13,202,240,0.07) !important; outline: 2px solid rgba(13,202,240,0.45); outline-offset: -2px; }
+</style>
+
+@code {
+    private bool loading = true;
+    private List<NodeEntity> nodes = new();
+    private IEnumerable<IGrouping<string, NodeEntity>> grouped = Array.Empty<IGrouping<string, NodeEntity>>();
+    private DotNetObjectReference<Nodes>? selfRef;
+    private bool dragAttached;
+    /// <summary>Direct-beat count per top-level node id. Lets the index
+    /// show a "this has stuff" cue without opening every node.</summary>
+    private Dictionary<Guid, int> beatCounts = new();
+    /// <summary>Number of direct child nodes per top-level node id —
+    /// e.g. a book node reports its chapter count here.</summary>
+    private Dictionary<Guid, int> childCounts = new();
+    /// <summary>Full child node entities per top-level node id — populated for inline expansion.</summary>
+    private Dictionary<Guid, List<NodeEntity>> childNodes = new();
+    /// <summary>Top-level node ids whose children are currently expanded inline.</summary>
+    private HashSet<Guid> expandedParents = new();
+    /// <summary>Estimated page count per node id (word count / 250).</summary>
+    private Dictionary<Guid, int> pageCounts = new();
+    /// <summary>Estimated audio duration per node id, formatted as "Xh Ym" at 150 wpm.</summary>
+    private Dictionary<Guid, string> audioDurations = new();
+    /// <summary>Id of the parent node currently running a collection export. Null when idle.</summary>
+    private Guid? exportingCollectionId;
+    private string newTitle = "";
+    private string newKind = "story";
+
+    // ── Inline title/synopsis/summary editing ────────────────────────────
+    private Guid? editingId;
+    private string editTitle = "";
+    private string editSynopsis = "";
+    private string editSummary = "";
+    private bool savingEdit;
+
+    private void BeginEdit(NodeEntity s)
+    {
+        editingId = s.Id;
+        editTitle = s.Title;
+        editSynopsis = s.Synopsis ?? "";
+        editSummary = s.Summary ?? "";
+    }
+
+    private void CancelEdit()
+    {
+        editingId = null;
+        editTitle = editSynopsis = editSummary = "";
+    }
+
+    private async Task SaveEditAsync()
+    {
+        if (editingId is not { } id || string.IsNullOrWhiteSpace(editTitle)) return;
+        savingEdit = true;
+        StateHasChanged();
+        try
+        {
+            await using var db = await DbFactory.CreateDbContextAsync();
+            var entity = await db.Nodes.FirstOrDefaultAsync(x => x.Id == id);
+            if (entity == null) { Toast.Error("NODE-EDIT", "Node not found."); return; }
+            entity.Title = editTitle.Trim();
+            entity.Synopsis = string.IsNullOrWhiteSpace(editSynopsis) ? null : editSynopsis.Trim();
+            entity.Summary = string.IsNullOrWhiteSpace(editSummary) ? null : editSummary.Trim();
+            entity.UpdatedAt = DateTime.UtcNow;
+            await db.SaveChangesAsync();
+
+            // Reflect the change in the already-loaded list without a full reload.
+            var local = nodes.FirstOrDefault(x => x.Id == id);
+            if (local != null) { local.Title = entity.Title; local.Synopsis = entity.Synopsis; local.Summary = entity.Summary; }
+            grouped = nodes.GroupBy(s => s.Kind).OrderBy(g => g.Key);
+            CancelEdit();
+            Toast.Info("SAVED", "Node updated.");
+        }
+        catch (Exception ex)
+        {
+            Toast.Error("NODE-EDIT-FAIL", ex.InnerException?.Message ?? ex.Message);
+        }
+        finally
+        {
+            savingEdit = false;
+            StateHasChanged();
+        }
+    }
+
+    protected override async Task OnInitializedAsync()
+    {
+        await LoadAsync();
+    }
+
+    protected override async Task OnAfterRenderAsync(bool firstRender)
+    {
+        if (!dragAttached && !loading)
+        {
+            try
+            {
+                selfRef ??= DotNetObjectReference.Create(this);
+                await JS.InvokeVoidAsync("streetsamurai.attachNodeDragHandlers", "nodes-list-root", selfRef);
+                dragAttached = true;
+            }
+            catch { /* JS not loaded yet — will retry on next render */ }
+        }
+    }
+
+    [Microsoft.JSInterop.JSInvokable]
+    public async Task OnNodeDropped(string draggedId, string targetId, string mode)
+    {
+        if (!Guid.TryParse(draggedId, out var dragId) ||
+            !Guid.TryParse(targetId, out var targetGuid)) return;
+
+        await using var db = await DbFactory.CreateDbContextAsync();
+        var dragged = await db.Nodes.FirstOrDefaultAsync(s => s.Id == dragId);
+        var target  = await db.Nodes.FirstOrDefaultAsync(s => s.Id == targetGuid);
+        if (dragged == null || target == null) return;
+
+        Guid? newParentId;
+        double newSortKey;
+
+        if (mode == "child")
+        {
+            // Append as last child of the target collection.
+            newParentId = target.Id;
+            var maxSk = await db.Nodes
+                .Where(s => s.ParentNodeId == target.Id && s.Id != dragId)
+                .MaxAsync(s => (double?)s.SortKey) ?? 0.0;
+            newSortKey = maxSk + 100.0;
+        }
+        else
+        {
+            // "before" or "after" — insert as sibling of target at target's parent level.
+            newParentId = target.ParentNodeId;
+            var siblings = await db.Nodes
+                .Where(s => s.ParentNodeId == newParentId && s.Id != dragId)
+                .OrderBy(s => s.SortKey)
+                .Select(s => new { s.Id, s.SortKey })
+                .ToListAsync();
+            var targetIdx = siblings.FindIndex(s => s.Id == targetGuid);
+
+            if (mode == "after")
+            {
+                var prevSk = targetIdx >= 0 ? siblings[targetIdx].SortKey : 0.0;
+                var nextSk = (targetIdx >= 0 && targetIdx + 1 < siblings.Count)
+                    ? siblings[targetIdx + 1].SortKey : prevSk + 200.0;
+                newSortKey = (prevSk + nextSk) / 2.0;
+            }
+            else // "before"
+            {
+                var nextSk = targetIdx >= 0 ? siblings[targetIdx].SortKey : 100.0;
+                var prevSk = targetIdx > 0 ? siblings[targetIdx - 1].SortKey : nextSk - 200.0;
+                newSortKey = (prevSk + nextSk) / 2.0;
+            }
+        }
+
+        // Enforce kind hierarchy: series→story→chapter. Reject invalid drops.
+        if (newParentId.HasValue)
+        {
+            var parentNode = mode == "child"
+                ? target
+                : await db.Nodes.AsNoTracking().FirstOrDefaultAsync(s => s.Id == newParentId);
+            if (parentNode != null)
+            {
+                var err = KindCompatibilityError(parentNode.Kind, dragged.Kind);
+                if (err != null) { Toast.Error("DROP-INVALID", err); return; }
+            }
+        }
+        else if (dragged.Kind == "chapter")
+        {
+            Toast.Error("DROP-INVALID", "A chapter must be under a story. Drop it onto a story instead.");
+            return;
+        }
+
+        dragged.ParentNodeId = newParentId;
+        dragged.SortKey = newSortKey;
+        dragged.UpdatedAt = DateTime.UtcNow;
+        await db.SaveChangesAsync();
+
+        dragAttached = false;
+        await InvokeAsync(LoadAsync);
+    }
+
+    public void Dispose()
+    {
+        selfRef?.Dispose();
+    }
+
+    private async Task LoadAsync()
+    {
+        loading = true;
+        StateHasChanged();
+        await using var db = await DbFactory.CreateDbContextAsync();
+        nodes = await db.Nodes
+            .Where(s => s.ParentNodeId == null) // top-level only on this view
+            .AsNoTracking()
+            .ToListAsync();
+        var ids = nodes.Select(s => s.Id).ToHashSet();
+
+        // Recursive descendant count: walk the parent → children map in memory
+        // so a book node reports total beats across all chapter children,
+        // not just the (zero) direct memberships. Single Node read + single
+        // NodeBeat read covers the whole site; the in-memory rollup is O(N)
+        // and cheaper than a recursive CTE per row.
+        var parentMap = await db.Nodes
+            .AsNoTracking()
+            .Where(s => s.ParentNodeId != null)
+            .Select(s => new { s.Id, s.ParentNodeId })
+            .ToListAsync();
+        var byParent = parentMap
+            .GroupBy(s => s.ParentNodeId!.Value)
+            .ToDictionary(g => g.Key, g => g.Select(x => x.Id).ToList());
+
+        var perNodeBeatCount = await db.NodeBeats
+            .GroupBy(sb => sb.NodeId)
+            .Select(g => new { NodeId = g.Key, Count = g.Count() })
+            .ToDictionaryAsync(x => x.NodeId, x => x.Count);
+
+        beatCounts = new Dictionary<Guid, int>(ids.Count);
+        foreach (var top in ids)
+        {
+            int total = 0;
+            var stack = new Stack<Guid>();
+            stack.Push(top);
+            var visited = new HashSet<Guid>();
+            while (stack.Count > 0)
+            {
+                var id = stack.Pop();
+                if (!visited.Add(id)) continue; // cycle guard
+                total += perNodeBeatCount.GetValueOrDefault(id, 0);
+                if (byParent.TryGetValue(id, out var kids))
+                    foreach (var k in kids) stack.Push(k);
+            }
+            beatCounts[top] = total;
+        }
+
+        childCounts = byParent
+            .Where(kvp => ids.Contains(kvp.Key))
+            .ToDictionary(kvp => kvp.Key, kvp => kvp.Value.Count);
+
+        // Load full child node entities for top-level parents that have children,
+        // so the inline expansion view can render them without an extra round-trip.
+        var parentIds = childCounts.Keys.ToHashSet();
+        if (parentIds.Count > 0)
+        {
+            var childList = await db.Nodes
+                .Where(s => s.ParentNodeId != null && parentIds.Contains(s.ParentNodeId.Value))
+                .AsNoTracking()
+                .ToListAsync();
+            childNodes = childList
+                .GroupBy(s => s.ParentNodeId!.Value)
+                .ToDictionary(g => g.Key, g => g.ToList());
+
+            // Also seed beat counts for children so the expanded rows show accurate counts.
+            foreach (var kid in childList)
+                if (!beatCounts.ContainsKey(kid.Id))
+                    beatCounts[kid.Id] = perNodeBeatCount.GetValueOrDefault(kid.Id, 0);
+        }
+        else
+        {
+            childNodes = new();
+        }
+
+        // Page estimates: sum beat text length per node, divide by ~5.2 chars/word / 250 words/page.
+        var allIds = nodes.Select(s => s.Id)
+            .Concat(childNodes.Values.SelectMany(v => v.Select(c => c.Id)))
+            .Distinct().ToList();
+        var charCounts = await db.NodeBeats
+            .AsNoTracking()
+            .Where(sb => allIds.Contains(sb.NodeId) && sb.IsEnabled)
+            .Join(db.Beats.AsNoTracking().Where(b => b.Text != null && b.Text != ""),
+                  sb => sb.BeatId, b => b.Id, (sb, b) => new { sb.NodeId, b.Text })
+            .GroupBy(x => x.NodeId)
+            .Select(g => new { NodeId = g.Key, Chars = g.Sum(x => (long)x.Text!.Length) })
+            .ToDictionaryAsync(x => x.NodeId);
+        pageCounts = charCounts.ToDictionary(kvp => kvp.Key, kvp => (int)(kvp.Value.Chars / 5.2 / 250));
+        audioDurations = charCounts.ToDictionary(kvp => kvp.Key, kvp =>
+        {
+            var totalMinutes = (int)(kvp.Value.Chars / 5.2 / 150);
+            return totalMinutes >= 60
+                ? $"{totalMinutes / 60}h {totalMinutes % 60:D2}m"
+                : $"{totalMinutes}m";
+        });
+
+        grouped = nodes.GroupBy(s => s.Kind).OrderBy(g => g.Key);
+        loading = false;
+        StateHasChanged();
+    }
+
+    private void ToggleExpand(Guid id)
+    {
+        if (!expandedParents.Add(id)) expandedParents.Remove(id);
+        StateHasChanged();
+    }
+
+    private async Task ExportCollectionAudiobookAsync(Guid nodeId)
+    {
+        if (exportingCollectionId != null) return;
+        exportingCollectionId = nodeId;
+        await InvokeAsync(StateHasChanged);
+        try
+        {
+            await Workbench.PublishAudiobookAsync(nodeId);
+            Toast.Success("AUDIOBOOK", "Audiobook published — MP3 saved to Downloads.");
+        }
+        catch (Exception ex) { Toast.Error("AUDIOBOOK-FAIL", ex.Message); }
+        finally { exportingCollectionId = null; await InvokeAsync(StateHasChanged); }
+    }
+
+    private async Task ExportCollectionManuscriptAsync(Guid nodeId)
+    {
+        if (exportingCollectionId != null) return;
+        exportingCollectionId = nodeId;
+        await InvokeAsync(StateHasChanged);
+        try
+        {
+            // docx first — it increments node.Version; the rest then share that version.
+            await Docx.ExportNodeAsync(nodeId);
+            await Manuscript.ExportEpubAsync(nodeId);
+            await Manuscript.ExportPdfAsync(nodeId);
+            await Manuscript.ExportAudioTxtAsync(nodeId);
+            Toast.Success("EXPORT", "Manuscript exported — .docx, .epub, .pdf, and .txt saved to Downloads.");
+        }
+        catch (Exception ex) { Toast.Error("EXPORT-FAIL", ex.Message); }
+        finally { exportingCollectionId = null; await InvokeAsync(StateHasChanged); }
+    }
+
+    private async Task ExportCollectionAsync(Guid nodeId, string tag, string label, Func<Guid, Task<string>> export)
+    {
+        if (exportingCollectionId != null) return;
+        exportingCollectionId = nodeId;
+        await InvokeAsync(StateHasChanged);
+        try
+        {
+            await export(nodeId);
+            Toast.Success(tag, $"{label} saved to Downloads.");
+        }
+        catch (Exception ex) { Toast.Error($"{tag}-FAIL", ex.Message); }
+        finally { exportingCollectionId = null; await InvokeAsync(StateHasChanged); }
+    }
+
+    private async Task CreateAsync()
+    {
+        if (string.IsNullOrWhiteSpace(newTitle)) return;
+        await using var db = await DbFactory.CreateDbContextAsync();
+        var id = Guid.CreateVersion7();
+        var baseSlug = System.Text.RegularExpressions.Regex
+            .Replace(newTitle.ToLowerInvariant(), @"[^a-z0-9]+", "-")
+            .Trim('-');
+        if (string.IsNullOrEmpty(baseSlug)) baseSlug = "node";
+        var slug = $"{baseSlug}-{id.ToString("N")[..8]}";
+
+        // Chapters without a parent are orphans — auto-route to the "Drafts" story.
+        Guid? parentId = null;
+        if (newKind == "chapter")
+        {
+            var universeId = Universe.CurrentId;
+            var drafts = await db.Nodes.FirstOrDefaultAsync(s =>
+                s.Title == "Drafts" && s.Kind == "story" && s.ParentNodeId == null && s.UniverseId == universeId);
+            if (drafts == null)
+            {
+                drafts = new StreetSamurai.Core.Data.Entities.StoryNode
+                {
+                    Id = Guid.CreateVersion7(),
+                    Slug = $"drafts-{Guid.CreateVersion7().ToString("N")[..8]}",
+                    Title = "Drafts",
+                    Status = "draft",
+                    SortKey = (nodes.Count + 2) * 100.0,
+                    UniverseId = universeId,
+                };
+                db.Nodes.Add(drafts);
+            }
+            parentId = drafts.Id;
+            Toast.Info("DRAFTS", "Chapter routed to “Drafts” — assign it to a story when ready.");
+        }
+
+        var newNode = StreetSamurai.Core.Data.Entities.NodeFactory.Create(newKind);
+        newNode.Id = id;
+        newNode.Slug = slug;
+        newNode.Title = newTitle.Trim();
+        newNode.Status = "draft";
+        newNode.ParentNodeId = parentId;
+        newNode.SortKey = (nodes.Count + 1) * 100.0;
+        db.Nodes.Add(newNode);
+        try
+        {
+            await db.SaveChangesAsync();
+        }
+        catch (DbUpdateException ex)
+        {
+            // Slug collision is the only foreseeable unique-index hit here
+            // (two near-simultaneous creates whose titles slugify to the same
+            // base AND whose 8-char id prefixes collide — vanishingly rare
+            // but not impossible). Surface a friendly retry hint instead of
+            // letting the raw SqlException bubble up to the user.
+            var msg = ex.InnerException?.Message ?? ex.Message;
+            Toast.Error("NODE-CREATE-FAIL",
+                msg.Contains("UNIQUE", StringComparison.OrdinalIgnoreCase) || msg.Contains("duplicate", StringComparison.OrdinalIgnoreCase)
+                    ? "A node with that slug already exists. Try a different title or click Create again — the id suffix will reshuffle."
+                    : $"Couldn't save the new node: {msg}");
+            return;
+        }
+        OpenNode(slug);
+    }
+
+    private void OpenNode(string? slug)
+    {
+        if (string.IsNullOrEmpty(slug)) return;
+        TabSvc.Open(new AppTab("writer", "Writer", "bi-pencil-square", "/writer", "/node"));
+        Nav.NavigateTo($"/node/{slug}");
+    }
+
+    private static string StatusColor(string status) => StreetSamurai.Core.Services.NodeWorkbenchService.StatusColor(status);
+    private static string StatusLabel(string status) => StreetSamurai.Core.Services.NodeWorkbenchService.StatusLabel(status);
+
+    // ── Reviews modal ────────────────────────────────────────────────────
+    private bool reviewsOpen;
+    private bool reviewsLoading;
+    private Guid reviewsNodeId;
+    private string reviewsTitle = "";
+    private string reviewsSlug = "";
+    private bool reviewStaleNote;
+    private List<StreetSamurai.Core.Data.Entities.NodeReview> reviewList = new();
+    private StreetSamurai.Core.Data.Entities.NodeReviewSummary? reviewSummary;
+    private List<KeyValuePair<string, int>> scoreBuckets = new();
+
+    private async Task OpenReviewsAsync(NodeEntity s)
+    {
+        reviewsOpen = true;
+        reviewsLoading = true;
+        reviewsNodeId = s.Id;
+        reviewsTitle = s.Title;
+        reviewsSlug = s.Slug;
+        reviewList = new();
+        reviewSummary = null;
+        scoreBuckets = new();
+        reviewStaleNote = false;
+        StateHasChanged();
+
+        await using var db = await DbFactory.CreateDbContextAsync();
+        // Newest run = reviews carrying the most-recent content fingerprint.
+        var latestHash = await db.NodeReviews
+            .Where(r => r.NodeId == s.Id)
+            .OrderByDescending(r => r.ReviewedAt)
+            .Select(r => r.ContentHash)
+            .FirstOrDefaultAsync();
+        if (!string.IsNullOrEmpty(latestHash))
+        {
+            reviewList = await db.NodeReviews
+                .Where(r => r.NodeId == s.Id && r.ContentHash == latestHash)
+                .OrderByDescending(r => r.Score)
+                .AsNoTracking()
+                .ToListAsync();
+        }
+        reviewSummary = await db.NodeReviewSummaries
+            .Where(r => r.NodeId == s.Id)
+            .AsNoTracking()
+            .FirstOrDefaultAsync();
+
+        if (reviewSummary?.ScoreDistributionJson is { Length: > 0 } dj)
+        {
+            try
+            {
+                var d = System.Text.Json.JsonSerializer.Deserialize<Dictionary<string, int>>(dj);
+                if (d != null)
+                {
+                    var order = new[] { "81-100", "61-80", "41-60", "21-40", "1-20" };
+                    scoreBuckets = order.Where(d.ContainsKey).Select(k => new KeyValuePair<string, int>(k, d[k])).ToList();
+                }
+            }
+            catch { }
+        }
+
+        // Cheap staleness cue: the reviewed beat count vs the node's current count.
+        if (reviewList.Count > 0 && beatCounts.TryGetValue(s.Id, out var currentBeats))
+            reviewStaleNote = reviewList[0].BeatCount != currentBeats;
+
+        reviewsLoading = false;
+        StateHasChanged();
+    }
+
+    private void CloseReviews() => reviewsOpen = false;
+
+    // ── Score history chart ──────────────────────────────────────────────
+    private bool   scoreHistoryOpen;
+    private Guid   scoreHistoryNodeId;
+    private string scoreHistoryTitle = "";
+
+    private void OpenScoreHistory(NodeEntity s)
+    {
+        scoreHistoryNodeId = s.Id;
+        scoreHistoryTitle    = s.Title;
+        scoreHistoryOpen     = true;
+    }
+
+    private async Task CopyGuidAsync(Guid id)
+    {
+        try { await JS.InvokeVoidAsync("navigator.clipboard.writeText", id.ToString()); Toast.Info("COPIED", $"{id}"); }
+        catch { /* clipboard blocked — non-fatal */ }
+    }
+
+    private int BarPct(int count)
+    {
+        var max = scoreBuckets.Count > 0 ? scoreBuckets.Max(b => b.Value) : 0;
+        return max <= 0 ? 0 : (int)Math.Round(count * 100.0 / max);
+    }
+
+    private static string ScoreBadge(int score) =>
+        score >= 80 ? "bg-success" : score >= 60 ? "bg-info text-dark" : score >= 40 ? "bg-warning text-dark" : "bg-danger";
+
+    // Enforces the hierarchy: series → story → chapter.
+    // Returns an error message if the combination is invalid, null if OK.
+    private static string? KindCompatibilityError(string parentKind, string childKind) => (parentKind, childKind) switch
+    {
+        ("series", "story")   => null,
+        ("story",  "chapter") => null,
+        ("story",  "story")   => "A story cannot contain another story — only a series can.",
+        ("series", "chapter") => "A chapter must be under a story, not directly under a series.",
+        ("chapter", _)        => "A chapter cannot contain other nodes (it holds beats).",
+        _                     => $"A '{childKind}' cannot be placed under a '{parentKind}'.",
+    };
+}

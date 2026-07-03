@@ -2,7 +2,7 @@ namespace StreetSamurai.Core.Data.Entities;
 
 /// <summary>
 /// A top-level tenant: one self-contained fictional world (GLMZ, Fantasy/Steampunk, …).
-/// Every universe-scoped root — <see cref="Entity"/>, <see cref="Strand"/>, <see cref="Book"/> —
+/// Every universe-scoped root — <see cref="Entity"/>, <see cref="Node"/>, <see cref="Book"/> —
 /// carries a single <c>UniverseId</c> pointing here (1:M). A crossover entity (shared vocabulary)
 /// is DUPLICATED, one row per universe — there is no shared row and no M:M bridge (SS-LAW-15).
 ///

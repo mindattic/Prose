@@ -10,11 +10,11 @@ namespace StreetSamurai.Core.Services;
 /// When a canon entity is updated, finds every beat that mentions it
 /// (via <see cref="BeatEntityMention"/>) and marks those beats
 /// <see cref="Beat.EntityStale"/>. Then scans downstream beats in the
-/// same strand with an LLM ramification check, flagging only those whose
+/// same node with an LLM ramification check, flagging only those whose
 /// content actually conflicts with or depends on the changed entity.
 ///
 /// The index side (<see cref="IndexBeatMentionsAsync"/>) is called by
-/// <see cref="StrandWorkbenchService"/> after every beat write.
+/// <see cref="NodeWorkbenchService"/> after every beat write.
 /// </summary>
 public class EntityRamificationService(
     IDbContextFactory<StreetSamuraiDbContext> dbFactory,
@@ -125,14 +125,14 @@ public class EntityRamificationService(
     {
         await using var db = await dbFactory.CreateDbContextAsync(ct);
 
-        return await db.StrandBeats
+        return await db.NodeBeats
             .Where(sb => sb.Beat!.EntityStale && sb.IsEnabled)
             .Select(sb => new EntityStaleBeatDto
             {
                 BeatId      = sb.BeatId,
                 BeatNumber  = sb.Beat!.Number,
-                StrandId    = sb.StrandId,
-                StrandTitle = sb.Strand!.Title,
+                NodeId    = sb.NodeId,
+                NodeTitle = sb.Node!.Title,
                 SortKey     = sb.SortKey,
                 TextPreview = string.IsNullOrEmpty(sb.Beat.Text) ? "" : sb.Beat.Text.Length > 120 ? sb.Beat.Text.Substring(0, 120) + "…" : sb.Beat.Text,
                 Entities    = db.BeatEntityMentions
@@ -140,7 +140,7 @@ public class EntityRamificationService(
                     .Select(m => m.EntityName)
                     .ToList(),
             })
-            .OrderBy(x => x.StrandTitle).ThenBy(x => x.SortKey)
+            .OrderBy(x => x.NodeTitle).ThenBy(x => x.SortKey)
             .ToListAsync(ct);
     }
 
@@ -163,15 +163,15 @@ public class EntityRamificationService(
 
             foreach (var directBeatId in directBeatIds)
             {
-                var strandPositions = await db.StrandBeats
+                var nodePositions = await db.NodeBeats
                     .Where(sb => sb.BeatId == directBeatId && sb.IsEnabled)
-                    .Select(sb => new { sb.StrandId, sb.SortKey })
+                    .Select(sb => new { sb.NodeId, sb.SortKey })
                     .ToListAsync();
 
-                foreach (var pos in strandPositions)
+                foreach (var pos in nodePositions)
                 {
-                    var downstream = await db.StrandBeats
-                        .Where(sb => sb.StrandId == pos.StrandId
+                    var downstream = await db.NodeBeats
+                        .Where(sb => sb.NodeId == pos.NodeId
                                   && sb.SortKey > pos.SortKey
                                   && sb.IsEnabled)
                         .OrderBy(sb => sb.SortKey)
@@ -226,8 +226,8 @@ public class EntityStaleBeatDto
 {
     public Guid   BeatId      { get; set; }
     public int    BeatNumber  { get; set; }
-    public Guid   StrandId    { get; set; }
-    public string StrandTitle { get; set; } = "";
+    public Guid   NodeId    { get; set; }
+    public string NodeTitle { get; set; } = "";
     public double SortKey     { get; set; }
     public string TextPreview { get; set; } = "";
     public List<string> Entities { get; set; } = [];

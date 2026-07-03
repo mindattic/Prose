@@ -37,10 +37,10 @@ public class AskService
     }
 
     public sealed record Citation(Guid EntityId, string EntityName, string EntityType, double Similarity);
-    public sealed record ProseCitation(Guid BeatId, string StrandSlug, string StrandTitle, int Position, double Similarity);
+    public sealed record ProseCitation(Guid BeatId, string NodeSlug, string NodeTitle, int Position, double Similarity);
     public sealed record AskAnswer(string Answer, IReadOnlyList<Citation> Citations, int CorpusChunks, TimeSpan Duration)
     {
-        /// <summary>Story-prose passages used as context (strand beats). Empty when the
+        /// <summary>Story-prose passages used as context (node beats). Empty when the
         /// question was answered from entity canon alone.</summary>
         public IReadOnlyList<ProseCitation> ProseCitations { get; init; } = Array.Empty<ProseCitation>();
     }
@@ -48,8 +48,8 @@ public class AskService
     /// <summary>
     /// Answer a free-form question. Hybrid retrieval: the K most relevant canon
     /// ENTITIES (character/world facts) plus the most relevant STORY PROSE
-    /// (strand beats). When <paramref name="strandScope"/> is set the prose side
-    /// is scoped to that one strand — and if the strand fits the char budget its
+    /// (node beats). When <paramref name="nodeScope"/> is set the prose side
+    /// is scoped to that one node — and if the node fits the char budget its
     /// whole text is supplied, so single-book Q&amp;A is exhaustive rather than
     /// sampled. Returns a grounded answer with entity + prose citations.
     /// </summary>
@@ -58,7 +58,7 @@ public class AskService
         int retrieveK = 8,
         int maxAnswerTokens = 1500,
         IReadOnlyCollection<string>? entityTypes = null,
-        Guid? strandScope = null,
+        Guid? nodeScope = null,
         int retrieveProse = 6,
         CancellationToken ct = default)
     {
@@ -71,23 +71,23 @@ public class AskService
 
         await using var db = await dbFactory.CreateDbContextAsync(ct);
 
-        // ── Story prose (strand beats) ────────────────────────────────────
+        // ── Story prose (node beats) ────────────────────────────────────
         var proseBlock = new StringBuilder();
         var proseCitations = new List<ProseCitation>();
         int proseChunks = 0;
 
-        if (strandScope is Guid sid)
+        if (nodeScope is Guid sid)
         {
-            // Scoped to one strand: pull every enabled beat in order. A novella
+            // Scoped to one node: pull every enabled beat in order. A novella
             // fits in context, so the answer is drawn from the whole book rather
-            // than a sample. Cap total chars defensively for very long strands.
-            var strand = await db.Strands.AsNoTracking()
+            // than a sample. Cap total chars defensively for very long nodes.
+            var node = await db.Nodes.AsNoTracking()
                 .Where(s => s.Id == sid)
                 .Select(s => new { s.Slug, s.Title })
                 .FirstOrDefaultAsync(ct);
-            var beats = await (from sb in db.StrandBeats.AsNoTracking()
+            var beats = await (from sb in db.NodeBeats.AsNoTracking()
                                join b in db.Beats.AsNoTracking() on sb.BeatId equals b.Id
-                               where sb.StrandId == sid && sb.IsEnabled
+                               where sb.NodeId == sid && sb.IsEnabled
                                orderby sb.SortKey
                                select new { b.Id, b.Text, b.BeatTitle }).ToListAsync(ct);
 
@@ -104,13 +104,13 @@ public class AskService
                 proseBlock.AppendLine();
                 used += b.Text.Length;
                 proseChunks++;
-                proseCitations.Add(new ProseCitation(b.Id, strand?.Slug ?? "", strand?.Title ?? "", pos, 1.0));
+                proseCitations.Add(new ProseCitation(b.Id, node?.Slug ?? "", node?.Title ?? "", pos, 1.0));
             }
         }
         else if (retrieveProse > 0)
         {
-            // Unscoped: semantic retrieval over all embedded strand beats.
-            var proseHits = await embeddings.FindSimilarStrandBeatsAsync(question, retrieveProse, null, ct);
+            // Unscoped: semantic retrieval over all embedded node beats.
+            var proseHits = await embeddings.FindSimilarNodeBeatsAsync(question, retrieveProse, null, ct);
             if (proseHits.Count > 0)
             {
                 var pids = proseHits.Select(h => h.ScopeId).ToHashSet();
@@ -118,8 +118,8 @@ public class AskService
                     .Where(b => pids.Contains(b.Id))
                     .Select(b => new { b.Id, b.Text, b.BeatTitle })
                     .ToDictionaryAsync(b => b.Id, ct);
-                var member = await (from sb in db.StrandBeats.AsNoTracking()
-                                    join s in db.Strands.AsNoTracking() on sb.StrandId equals s.Id
+                var member = await (from sb in db.NodeBeats.AsNoTracking()
+                                    join s in db.Nodes.AsNoTracking() on sb.NodeId equals s.Id
                                     where pids.Contains(sb.BeatId) && sb.IsEnabled
                                     select new { sb.BeatId, s.Slug, s.Title }).ToListAsync(ct);
                 var memberMap = member.GroupBy(m => m.BeatId).ToDictionary(g => g.Key, g => g.First());
@@ -166,14 +166,14 @@ public class AskService
         {
             sw.Stop();
             return new AskAnswer(
-                "I couldn't find any canon material similar to that question. The embedding cache may be empty — run `ss --reembed` (entities), or pass --strand <slug> to index and search a story's beats.",
+                "I couldn't find any canon material similar to that question. The embedding cache may be empty — run `ss --reembed` (entities), or pass --node <slug> to index and search a story's beats.",
                 Array.Empty<Citation>(), 0, sw.Elapsed);
         }
 
         var prompt = new StringBuilder();
         if (proseBlock.Length > 0)
         {
-            prompt.AppendLine(strandScope is null
+            prompt.AppendLine(nodeScope is null
                 ? "STORY PROSE (most relevant passages, best-first):"
                 : "STORY PROSE (the full scoped story, in order):");
             prompt.AppendLine();

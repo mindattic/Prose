@@ -5,9 +5,9 @@ namespace StreetSamurai.Core.Services;
 
 /// <summary>
 /// The historical (and still default) audio backend: writes MP3/WAV files
-/// under <c>{MutableDataDir}/strands/{slug}/audio/{beatId}.{ext}</c>. Cheap,
+/// under <c>{MutableDataDir}/nodes/{slug}/audio/{beatId}.{ext}</c>. Cheap,
 /// streaming-friendly, plays back via the existing
-/// <c>/api/strands/{strandId}/beat/{beatId}/audio</c> minimal API endpoint
+/// <c>/api/nodes/{nodeId}/beat/{beatId}/audio</c> minimal API endpoint
 /// (which handles auth + range requests through ASP.NET Core's static-file
 /// machinery).
 ///
@@ -32,32 +32,32 @@ public class LocalDiskAudioStore : IAudioStore
 
     public bool SupportsLocalPaths => true;
 
-    private string PrimaryRoot => Path.Combine(paths.MutableDataDir, "strands");
+    private string PrimaryRoot => Path.Combine(paths.MutableDataDir, "nodes");
 
-    public async Task<string> WriteBeatAsync(string strandSlug, Guid beatId, string extension, byte[] bytes, CancellationToken ct = default)
+    public async Task<string> WriteBeatAsync(string nodeSlug, Guid beatId, string extension, byte[] bytes, CancellationToken ct = default)
     {
         var ext = extension.TrimStart('.');
-        var rel = $"{strandSlug}/audio/{beatId:N}.{ext}";
+        var rel = $"{nodeSlug}/audio/{beatId:N}.{ext}";
         var full = Path.Combine(PrimaryRoot, rel.Replace('/', Path.DirectorySeparatorChar));
         Directory.CreateDirectory(Path.GetDirectoryName(full)!);
         await File.WriteAllBytesAsync(full, bytes, ct);
         return rel;
     }
 
-    public async Task<string> WriteCombinedAsync(string strandSlug, string extension, byte[] bytes, CancellationToken ct = default)
+    public async Task<string> WriteCombinedAsync(string nodeSlug, string extension, byte[] bytes, CancellationToken ct = default)
     {
         var ext = extension.TrimStart('.');
-        var rel = $"{strandSlug}/strand.{ext}";
+        var rel = $"{nodeSlug}/node.{ext}";
         var full = Path.Combine(PrimaryRoot, rel.Replace('/', Path.DirectorySeparatorChar));
         Directory.CreateDirectory(Path.GetDirectoryName(full)!);
         await File.WriteAllBytesAsync(full, bytes, ct);
         return rel;
     }
 
-    public async Task<string> WriteCombinedFromStreamAsync(string strandSlug, string extension, Stream src, CancellationToken ct = default)
+    public async Task<string> WriteCombinedFromStreamAsync(string nodeSlug, string extension, Stream src, CancellationToken ct = default)
     {
         var ext = extension.TrimStart('.');
-        var rel = $"{strandSlug}/strand.{ext}";
+        var rel = $"{nodeSlug}/node.{ext}";
         var full = Path.Combine(PrimaryRoot, rel.Replace('/', Path.DirectorySeparatorChar));
         Directory.CreateDirectory(Path.GetDirectoryName(full)!);
         await using var fs = new FileStream(full, FileMode.Create, FileAccess.Write, FileShare.None, 64 * 1024, useAsync: true);
@@ -90,10 +90,10 @@ public class LocalDiskAudioStore : IAudioStore
     public Task<string?> ResolveLocalPathAsync(string relativePath, CancellationToken ct = default)
         => Task.FromResult(ResolveExistingFile(relativePath));
 
-    public string BuildPlaybackUrl(Guid strandId, Guid beatId, string relativePath, string? cacheBust = null)
+    public string BuildPlaybackUrl(Guid nodeId, Guid beatId, string relativePath, string? cacheBust = null)
         => string.IsNullOrEmpty(cacheBust)
-            ? $"/api/strands/{strandId}/beat/{beatId}/audio"
-            : $"/api/strands/{strandId}/beat/{beatId}/audio?v={Uri.EscapeDataString(cacheBust)}";
+            ? $"/api/nodes/{nodeId}/beat/{beatId}/audio"
+            : $"/api/nodes/{nodeId}/beat/{beatId}/audio?v={Uri.EscapeDataString(cacheBust)}";
 
     public Task<DateTimeOffset?> GetLastModifiedAsync(string relativePath, CancellationToken ct = default)
     {
@@ -112,8 +112,8 @@ public class LocalDiskAudioStore : IAudioStore
         var rel = relativePath.Replace('/', Path.DirectorySeparatorChar);
         var primary = Path.Combine(PrimaryRoot, rel);
         if (File.Exists(primary)) return primary;
-        var legacyStrands = Path.Combine(paths.DataRoot, "engine", "strands", rel);
-        if (File.Exists(legacyStrands)) return legacyStrands;
+        var legacyNodes = Path.Combine(paths.DataRoot, "engine", "nodes", rel);
+        if (File.Exists(legacyNodes)) return legacyNodes;
         var legacyEpisodes = Path.Combine(paths.DataRoot, "engine", "episodes", rel);
         if (File.Exists(legacyEpisodes)) return legacyEpisodes;
         return null;

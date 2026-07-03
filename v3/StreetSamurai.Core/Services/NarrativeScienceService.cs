@@ -19,7 +19,7 @@ namespace StreetSamurai.Core.Services;
 //   • AuditSceneEngagementAsync   — 6-point scene anatomy against the neural
 //                                   engagement triggers (change, info-gap, cause-
 //                                   effect, tribal emotion, specificity, show/tell)
-//   • MapFiveActStructureAsync    — maps a strand's beats to Storr's 5-act arc
+//   • MapFiveActStructureAsync    — maps a node's beats to Storr's 5-act arc
 //   • CheckAntiheroEmpathyAsync   — scores the 4 antihero empathy levers
 // ─────────────────────────────────────────────────────────────────────────────
 
@@ -196,24 +196,24 @@ public class NarrativeScienceService(
     // ── Five-Act Structure Map ────────────────────────────────────────────────
 
     public async Task<FiveActMap> MapFiveActStructureAsync(
-        Guid strandId, CancellationToken ct = default)
+        Guid nodeId, CancellationToken ct = default)
     {
         await using var db = await dbFactory.CreateDbContextAsync(ct);
 
-        var strand = await db.Strands.AsNoTracking()
-            .FirstOrDefaultAsync(s => s.Id == strandId, ct)
-            ?? throw new InvalidOperationException($"Strand {strandId} not found.");
+        var node = await db.Nodes.AsNoTracking()
+            .FirstOrDefaultAsync(s => s.Id == nodeId, ct)
+            ?? throw new InvalidOperationException($"Node {nodeId} not found.");
 
         var beats = await (
-            from sb in db.StrandBeats
+            from sb in db.NodeBeats
             join b in db.Beats on sb.BeatId equals b.Id
-            where sb.StrandId == strandId
+            where sb.NodeId == nodeId
             orderby sb.SortKey
             select new { b.Number, Title = b.BeatTitle ?? "", Synopsis = b.Synopsis ?? "", b.Text }
         ).ToListAsync(ct);
 
         if (beats.Count == 0)
-            return new FiveActMap { StrandSlug = strand.Slug ?? "", Error = "No beats found." };
+            return new FiveActMap { NodeSlug = node.Slug ?? "", Error = "No beats found." };
 
         var beatList = string.Join("\n", beats.Select(b =>
             $"Beat {b.Number}: {b.Title} — {(string.IsNullOrWhiteSpace(b.Synopsis) ? "(no synopsis)" : b.Synopsis)}"));
@@ -235,7 +235,7 @@ public class NarrativeScienceService(
 
             OUTPUT FORMAT: JSON only, no prose wrapper.
             {
-              "strand_title": "...",
+              "node_title": "...",
               "acts": {
                 "act_I":   { "beat_numbers": [], "ignition_beat": null|N, "assessment": "..." },
                 "act_II":  { "beat_numbers": [], "assessment": "..." },
@@ -250,8 +250,8 @@ public class NarrativeScienceService(
             """;
 
         var user = $"""
-            STRAND: {strand.Title ?? strand.Slug}
-            SEED: {strand.Seed ?? "(none)"}
+            NODE: {node.Title ?? node.Slug}
+            SEED: {node.Seed ?? "(none)"}
 
             BEATS ({beats.Count} total):
             {beatList}
@@ -260,11 +260,11 @@ public class NarrativeScienceService(
         var raw = await llm.GenerateAsync(system, user, temperature: 0.4, maxTokens: 1200, ct: ct);
         var result = ParseJson<FiveActMap>(raw) ?? new FiveActMap
         {
-            StrandSlug = strand.Slug ?? "",
+            NodeSlug = node.Slug ?? "",
             Error = "(parse error)",
             RawResponse = raw,
         };
-        result.StrandSlug = strand.Slug ?? "";
+        result.NodeSlug = node.Slug ?? "";
         result.BeatCount = beats.Count;
         return result;
     }
@@ -425,12 +425,12 @@ public class FiveActEntry
 
 public class FiveActMap
 {
-    [JsonPropertyName("strand_title")]         public string StrandTitle        { get; set; } = "";
+    [JsonPropertyName("node_title")]         public string NodeTitle        { get; set; } = "";
     [JsonPropertyName("acts")]                 public Dictionary<string, FiveActEntry> Acts { get; set; } = new();
     [JsonPropertyName("structural_gaps")]      public List<string> StructuralGaps    { get; set; } = new();
     [JsonPropertyName("structural_strengths")] public List<string> StructuralStrengths { get; set; } = new();
     [JsonPropertyName("overall_assessment")]   public string OverallAssessment   { get; set; } = "";
-    [JsonIgnore] public string  StrandSlug  { get; set; } = "";
+    [JsonIgnore] public string  NodeSlug  { get; set; } = "";
     [JsonIgnore] public int     BeatCount   { get; set; }
     [JsonIgnore] public string? Error       { get; set; }
     [JsonIgnore] public string? RawResponse { get; set; }

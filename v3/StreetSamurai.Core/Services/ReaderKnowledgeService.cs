@@ -8,7 +8,7 @@ using System.Text;
 namespace StreetSamurai.Core.Services;
 
 /// <summary>
-/// Tracks what the reader knows at each point in a strand — distinct from what the POV
+/// Tracks what the reader knows at each point in a node — distinct from what the POV
 /// character knows. Manages dramatic irony: the reader may know things the character doesn't
 /// (dramatic irony), or the character may act on knowledge the reader hasn't been told yet
 /// (mystery withholding). Both are powerful prose tools; unintentional asymmetry is a bug.
@@ -16,11 +16,11 @@ namespace StreetSamurai.Core.Services;
 /// Architecture:
 ///   - ExtractAsync: LLM call after each completed beat, fire-and-forget.
 ///     Extracts key revelations and stores them in the Findings table as
-///     "READER-KNOWS: ..." entries keyed to the strand.
+///     "READER-KNOWS: ..." entries keyed to the node.
 ///   - BuildKnowledgeBlockAsync: called before each beat to inject the current
 ///     reader knowledge state as a prompt constraint.
 ///
-/// Storage: Findings table with FilePath = "reader-knowledge:{strandId}", Category = Other.
+/// Storage: Findings table with FilePath = "reader-knowledge:{nodeId}", Category = Other.
 /// No new migrations required — reuses existing infrastructure.
 /// </summary>
 public class ReaderKnowledgeService(
@@ -32,7 +32,7 @@ public class ReaderKnowledgeService(
     private const int MaxInjected = 6;
     private const int MaxExtractedPerBeat = 3;
 
-    private static string FilePath(Guid strandId) => $"reader-knowledge:{strandId:N}";
+    private static string FilePath(Guid nodeId) => $"reader-knowledge:{nodeId:N}";
 
     // ── Public API ────────────────────────────────────────────────────────────
 
@@ -40,9 +40,9 @@ public class ReaderKnowledgeService(
     /// Extract reader revelations from a just-written beat and persist them.
     /// Fire-and-forget from ProseWriterRouter — never blocks prose output.
     /// </summary>
-    public async Task ExtractAsync(string beatText, Guid strandId, CancellationToken ct = default)
+    public async Task ExtractAsync(string beatText, Guid nodeId, CancellationToken ct = default)
     {
-        if (string.IsNullOrWhiteSpace(beatText) || strandId == Guid.Empty) return;
+        if (string.IsNullOrWhiteSpace(beatText) || nodeId == Guid.Empty) return;
 
         var prompt = $"""
             Read this beat of prose. Identify up to {MaxExtractedPerBeat} concrete facts the READER now knows
@@ -71,7 +71,7 @@ public class ReaderKnowledgeService(
         }
         catch (Exception ex)
         {
-            log.LogWarning(ex, "ReaderKnowledgeService: LLM extraction failed for strand {StrandId}", strandId);
+            log.LogWarning(ex, "ReaderKnowledgeService: LLM extraction failed for node {NodeId}", nodeId);
             return;
         }
 
@@ -90,7 +90,7 @@ public class ReaderKnowledgeService(
         try
         {
             await using var db = await dbFactory.CreateDbContextAsync(ct);
-            var fp = FilePath(strandId);
+            var fp = FilePath(nodeId);
             foreach (var fact in facts)
             {
                 var summary = $"{Prefix}: {fact}";
@@ -118,7 +118,7 @@ public class ReaderKnowledgeService(
         }
         catch (Exception ex)
         {
-            log.LogWarning(ex, "ReaderKnowledgeService: DB write failed for strand {StrandId}", strandId);
+            log.LogWarning(ex, "ReaderKnowledgeService: DB write failed for node {NodeId}", nodeId);
         }
     }
 
@@ -126,14 +126,14 @@ public class ReaderKnowledgeService(
     /// Build the reader-knowledge prompt block for an upcoming beat.
     /// Returns empty string when no revelations have been recorded yet.
     /// </summary>
-    public async Task<string> BuildKnowledgeBlockAsync(Guid strandId, CancellationToken ct = default)
+    public async Task<string> BuildKnowledgeBlockAsync(Guid nodeId, CancellationToken ct = default)
     {
-        if (strandId == Guid.Empty) return "";
+        if (nodeId == Guid.Empty) return "";
 
         try
         {
             await using var db = await dbFactory.CreateDbContextAsync(ct);
-            var fp = FilePath(strandId);
+            var fp = FilePath(nodeId);
             var catKey = FindingCategory.Other.ToString();
             var statusKey = FindingStatus.New.ToString();
 
@@ -156,26 +156,26 @@ public class ReaderKnowledgeService(
         }
         catch (Exception ex)
         {
-            log.LogWarning(ex, "ReaderKnowledgeService: query failed for strand {StrandId}", strandId);
+            log.LogWarning(ex, "ReaderKnowledgeService: query failed for node {NodeId}", nodeId);
             return "";
         }
     }
 
-    /// <summary>Mark all reader-knowledge findings for a strand as Dismissed (call on strand reset/restart).</summary>
-    public async Task ClearAsync(Guid strandId, CancellationToken ct = default)
+    /// <summary>Mark all reader-knowledge findings for a node as Dismissed (call on node reset/restart).</summary>
+    public async Task ClearAsync(Guid nodeId, CancellationToken ct = default)
     {
-        if (strandId == Guid.Empty) return;
+        if (nodeId == Guid.Empty) return;
         try
         {
             await using var db = await dbFactory.CreateDbContextAsync(ct);
-            var fp = FilePath(strandId);
+            var fp = FilePath(nodeId);
             var rows = await db.Findings.Where(f => f.FilePath == fp).ToListAsync(ct);
             foreach (var r in rows) r.Status = FindingStatus.Dismissed.ToString();
             await db.SaveChangesAsync(ct);
         }
         catch (Exception ex)
         {
-            log.LogWarning(ex, "ReaderKnowledgeService: clear failed for strand {StrandId}", strandId);
+            log.LogWarning(ex, "ReaderKnowledgeService: clear failed for node {NodeId}", nodeId);
         }
     }
 }

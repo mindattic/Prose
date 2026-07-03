@@ -24,7 +24,7 @@ public class ConfigTools
         this.docContext = docContext;
     }
 
-    // Deterministic LRU context key per strand (or a shared default) so repeated calls within
+    // Deterministic LRU context key per node (or a shared default) so repeated calls within
     // the MCP server process share the same rotating working set.
     private static Guid SessionKey(string? s) =>
         new(System.Security.Cryptography.MD5.HashData(System.Text.Encoding.UTF8.GetBytes("mcp-doc:" + (s ?? ""))));
@@ -49,7 +49,7 @@ public class ConfigTools
     [McpServerTool, Description(
         "Get the content of a tracked markdown file from the database. " +
         "Pass asOf (ISO 8601 UTC) to retrieve a historical version from the temporal table. " +
-        "relativePath examples: 'CLAUDE.md', 'docs/BIBLE.md', 'feedback_sequential_strand_writing.md'")]
+        "relativePath examples: 'CLAUDE.md', 'docs/BIBLE.md', 'feedback_sequential_node_writing.md'")]
     public async Task<string> GetMarkdownFile(
         [Description("Relative path key, e.g. 'CLAUDE.md' or 'docs/AMENDMENTS.md'.")] string relativePath,
         [Description("Optional ISO 8601 UTC datetime to retrieve the version current at that moment.")] string? asOf = null)
@@ -78,16 +78,16 @@ public class ConfigTools
 
     [McpServerTool, Description(
         "Prepare the Doc Context Stack — the rotating cast of pertinent canon .md docs for a topic/scene. " +
-        "Returns one budgeted block plus the resident docs (tier + why each loaded). Pass strandCode (e.g. " +
+        "Returns one budgeted block plus the resident docs (tier + why each loaded). Pass nodeCode (e.g. " +
         "'BCODA') to include that story's bible + its one register; pass text (scene/goal/conversation) to " +
         "trigger topic docs by keyword and semantic embedding. This is how you load only the few docs that " +
         "matter now instead of dumping hundreds.")]
     public async Task<string> DocContextPrepare(
         [Description("Scene/goal/conversation text to trigger topic docs against.")] string text,
-        [Description("Optional strand CODE (e.g. 'BCODA') to also load that story's bible + register.")] string? strandCode = null,
+        [Description("Optional node CODE (e.g. 'BCODA') to also load that story's bible + register.")] string? nodeCode = null,
         [Description("Token budget for the assembled block. Default 2000.")] int budget = 2000)
     {
-        var result = await docContext.PrepareContextAsync(SessionKey(strandCode), strandCode, text, budget);
+        var result = await docContext.PrepareContextAsync(SessionKey(nodeCode), nodeCode, text, budget);
         return JsonSerializer.Serialize(new
         {
             estimatedTokens = result.EstimatedTokens,
@@ -98,11 +98,11 @@ public class ConfigTools
 
     [McpServerTool, Description(
         "Inspect the current Doc Context Stack working set (the docs resident in the rotating cast) for a " +
-        "strand context, without changing it. Returns each doc's tier, why it loaded, and its score.")]
+        "node context, without changing it. Returns each doc's tier, why it loaded, and its score.")]
     public string DocContextStatus(
-        [Description("Optional strand CODE whose working set to inspect.")] string? strandCode = null)
+        [Description("Optional node CODE whose working set to inspect.")] string? nodeCode = null)
     {
-        var active = docContext.GetActive(SessionKey(strandCode));
+        var active = docContext.GetActive(SessionKey(nodeCode));
         return JsonSerializer.Serialize(new
         {
             count = active.Count,

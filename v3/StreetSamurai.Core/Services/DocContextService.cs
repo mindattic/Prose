@@ -9,15 +9,15 @@ namespace StreetSamurai.Core.Services;
 /// <summary>
 /// Assembles the rotating cast of pertinent canon <c>.md</c> documents for a context — the
 /// document analog of <see cref="EntityContextService"/>. Sources from the <c>MarkdownFiles</c>
-/// table (classified into always/strand/topic by <see cref="MarkdownFileService"/>) and the
+/// table (classified into always/node/topic by <see cref="MarkdownFileService"/>) and the
 /// <c>markdown</c> prose-embedding scope, layering into a token-budgeted block:
 ///
 ///   1. ALWAYS  — the small universal core (every context).
-///   2. STRAND  — docs whose Scope matches the active strand CODE (the one bible + one register).
+///   2. NODE  — docs whose Scope matches the active node CODE (the one bible + one register).
 ///   3. TOPIC (keyword)    — topic docs whose Triggers appear in the scene/goal text.
 ///   4. TOPIC (embedding)  — topic docs semantically near the text (markdown embedding scope).
 ///
-/// The <see cref="DocContextStack"/> holds the working set: pinned always/strand, decaying topic.
+/// The <see cref="DocContextStack"/> holds the working set: pinned always/node, decaying topic.
 /// </summary>
 public sealed class DocContextService(
     IDbContextFactory<StreetSamuraiDbContext> dbFactory,
@@ -42,8 +42,8 @@ public sealed class DocContextService(
     /// resident docs (with provenance). Read-only against canon; safe to call in dry-run.
     /// </summary>
     public async Task<DocContextResult> PrepareContextAsync(
-        Guid contextId, string? strandCode, string? triggerText, int tokenBudget = 2000,
-        bool includeAlways = true, bool includeStrand = true, bool useEmbedding = true,
+        Guid contextId, string? nodeCode, string? triggerText, int tokenBudget = 2000,
+        bool includeAlways = true, bool includeNode = true, bool useEmbedding = true,
         CancellationToken ct = default)
     {
         stack.BeginAction(contextId);
@@ -53,7 +53,7 @@ public sealed class DocContextService(
             .Select(m => new Candidate(m.Id, m.RelativePath, m.Tier, m.Scope, m.Triggers))
             .ToListAsync(ct);
 
-        var code = (strandCode ?? "").Trim();
+        var code = (nodeCode ?? "").Trim();
         var text = triggerText ?? "";
 
         // 1 — always (universal core)
@@ -61,10 +61,10 @@ public sealed class DocContextService(
             foreach (var c in candidates.Where(c => c.Tier == "always"))
                 stack.Push(contextId, MakeEntry(c, "always", 100));
 
-        // 2 — strand (scope match): the story's one bible + one register + story docs
-        if (includeStrand)
-            foreach (var c in candidates.Where(c => c.Tier == "strand" && ScopeMatches(c.Scope, code)))
-                stack.Push(contextId, MakeEntry(c, string.IsNullOrEmpty(code) ? "strand:*" : $"strand:{code}", 90));
+        // 2 — node (scope match): the story's one bible + one register + story docs
+        if (includeNode)
+            foreach (var c in candidates.Where(c => c.Tier == "node" && ScopeMatches(c.Scope, code)))
+                stack.Push(contextId, MakeEntry(c, string.IsNullOrEmpty(code) ? "node:*" : $"node:{code}", 90));
 
         // 3 — topic via keyword triggers
         if (text.Length > 0)
@@ -96,30 +96,30 @@ public sealed class DocContextService(
     }
 
     /// <summary>
-    /// Engine convenience: resolve the strand's CODE from its Id and prepare the doc context,
-    /// using the strand Id as the LRU context key. Used by ProseWriterRouter.
+    /// Engine convenience: resolve the node's CODE from its Id and prepare the doc context,
+    /// using the node Id as the LRU context key. Used by ProseWriterRouter.
     /// </summary>
-    public async Task<DocContextResult> PrepareForStrandAsync(
-        Guid strandId, string? triggerText, int tokenBudget = 2000, CancellationToken ct = default)
+    public async Task<DocContextResult> PrepareForNodeAsync(
+        Guid nodeId, string? triggerText, int tokenBudget = 2000, CancellationToken ct = default)
     {
-        if (strandId == Guid.Empty) return new DocContextResult("", Array.Empty<LoadedDoc>(), 0);
+        if (nodeId == Guid.Empty) return new DocContextResult("", Array.Empty<LoadedDoc>(), 0);
         await using var db = await dbFactory.CreateDbContextAsync(ct);
-        var code = await db.Strands.AsNoTracking()
-            .Where(s => s.Id == strandId)
-            .Select(s => s.StrandCode)
+        var code = await db.Nodes.AsNoTracking()
+            .Where(s => s.Id == nodeId)
+            .Select(s => s.NodeCode)
             .FirstOrDefaultAsync(ct) ?? "";
-        return await PrepareContextAsync(strandId, code, triggerText, tokenBudget, ct: ct);
+        return await PrepareContextAsync(nodeId, code, triggerText, tokenBudget, ct: ct);
     }
 
     /// <summary>
     /// Session-hook convenience: surface ONLY the topic docs pertinent to the latest turn text
-    /// (keyword-only by default for speed — no per-turn embedding API call). Always/strand tiers
+    /// (keyword-only by default for speed — no per-turn embedding API call). Always/node tiers
     /// are session-scope concerns handled elsewhere (SessionStart digest, on-demand bibles).
     /// </summary>
     public Task<DocContextResult> PrepareSessionContextAsync(
         Guid sessionId, string? triggerText, int tokenBudget = 1200, bool useEmbedding = false, CancellationToken ct = default)
-        => PrepareContextAsync(sessionId, strandCode: null, triggerText, tokenBudget,
-                               includeAlways: false, includeStrand: false, useEmbedding: useEmbedding, ct: ct);
+        => PrepareContextAsync(sessionId, nodeCode: null, triggerText, tokenBudget,
+                               includeAlways: false, includeNode: false, useEmbedding: useEmbedding, ct: ct);
 
     /// <summary>Refresh the working set from generated prose / latest turn text (keeps relevant docs warm).</summary>
     public void ReconcileFromText(Guid contextId, string text)

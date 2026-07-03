@@ -16,43 +16,43 @@ public class WorkflowMonitorTools(
     WorkflowMonitorService monitor,
     IDbContextFactory<StreetSamuraiDbContext> dbFactory)
 {
-    [McpServerTool, Description("Get prose service coverage for a strand. Returns which services (Pacing, StoryMethodology, PlantPayoff, StoryAudit, Combat) were active when beats were written, and flags gaps where applicable services weren't used.")]
+    [McpServerTool, Description("Get prose service coverage for a node. Returns which services (Pacing, StoryMethodology, PlantPayoff, StoryAudit, Combat) were active when beats were written, and flags gaps where applicable services weren't used.")]
     public async Task<string> workflow_status(
-        [Description("Strand slug (e.g. 'ATTE', 'BCODA')")] string slug)
+        [Description("Node slug (e.g. 'ATTE', 'BCODA')")] string slug)
     {
         await using var db = await dbFactory.CreateDbContextAsync();
-        var strand = await db.Strands.AsNoTracking()
-            .Where(s => s.Slug == slug || s.StrandCode == slug)
+        var node = await db.Nodes.AsNoTracking()
+            .Where(s => s.Slug == slug || s.NodeCode == slug)
             .Select(s => new { s.Id, s.Title })
             .FirstOrDefaultAsync();
-        if (strand == null) return $"Strand not found: {slug}";
+        if (node == null) return $"Node not found: {slug}";
 
-        var report = await monitor.GetStrandCoverageAsync(strand.Id);
+        var report = await monitor.GetNodeCoverageAsync(node.Id);
         return JsonSerializer.Serialize(report, new JsonSerializerOptions { WriteIndented = true });
     }
 
-    [McpServerTool, Description("Get global prose workflow coverage across all strands. Returns per-service utilization rates and a list of strands with coverage gaps.")]
+    [McpServerTool, Description("Get global prose workflow coverage across all nodes. Returns per-service utilization rates and a list of nodes with coverage gaps.")]
     public async Task<string> workflow_status_global()
     {
         var stats = await monitor.GetGlobalStatsAsync();
-        var gaps  = await monitor.GetAllStrandsWithGapsAsync();
-        return JsonSerializer.Serialize(new { GlobalStats = stats, StrandsWithGaps = gaps },
+        var gaps  = await monitor.GetAllNodesWithGapsAsync();
+        return JsonSerializer.Serialize(new { GlobalStats = stats, NodesWithGaps = gaps },
             new JsonSerializerOptions { WriteIndented = true });
     }
 
-    [McpServerTool, Description("Get the detected beat mode log for a strand. Shows how each beat was classified (Narrative/Combat/EmotionalClimax/Dialogue/Transition/Revelation) and the confidence level.")]
+    [McpServerTool, Description("Get the detected beat mode log for a node. Shows how each beat was classified (Narrative/Combat/EmotionalClimax/Dialogue/Transition/Revelation) and the confidence level.")]
     public async Task<string> workflow_beat_modes(
-        [Description("Strand slug")] string slug)
+        [Description("Node slug")] string slug)
     {
         await using var db = await dbFactory.CreateDbContextAsync();
-        var strand = await db.Strands.AsNoTracking()
-            .Where(s => s.Slug == slug || s.StrandCode == slug)
+        var node = await db.Nodes.AsNoTracking()
+            .Where(s => s.Slug == slug || s.NodeCode == slug)
             .Select(s => new { s.Id })
             .FirstOrDefaultAsync();
-        if (strand == null) return $"Strand not found: {slug}";
+        if (node == null) return $"Node not found: {slug}";
 
-        var beatIds = await db.StrandBeats.AsNoTracking()
-            .Where(sb => sb.StrandId == strand.Id)
+        var beatIds = await db.NodeBeats.AsNoTracking()
+            .Where(sb => sb.NodeId == node.Id)
             .Select(sb => sb.BeatId)
             .ToListAsync();
 

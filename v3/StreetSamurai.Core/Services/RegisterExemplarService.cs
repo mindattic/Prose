@@ -15,7 +15,7 @@ namespace StreetSamurai.Core.Services;
 // docs/registers/<NAME>.md.
 //
 // Usage (via CLI):
-//   ss --update-register-exemplars --slug <strand-slug> [--top N] [--dry-run]
+//   ss --update-register-exemplars --slug <node-slug> [--top N] [--dry-run]
 // ─────────────────────────────────────────────────────────────────────────
 
 public class RegisterExemplarService
@@ -48,33 +48,33 @@ public class RegisterExemplarService
     // ── Public entry point ────────────────────────────────────────────────
 
     public async Task<(string RegisterName, string Slug, List<ExemplarCandidate> Candidates)>
-        FindExemplarsAsync(Guid strandId, int topN = 5, CancellationToken ct = default)
+        FindExemplarsAsync(Guid nodeId, int topN = 5, CancellationToken ct = default)
     {
         await using var db = await dbFactory.CreateDbContextAsync(ct);
 
-        var strand = await db.Strands.AsNoTracking()
-            .FirstOrDefaultAsync(s => s.Id == strandId, ct)
-            ?? throw new InvalidOperationException($"Strand {strandId} not found.");
+        var node = await db.Nodes.AsNoTracking()
+            .FirstOrDefaultAsync(s => s.Id == nodeId, ct)
+            ?? throw new InvalidOperationException($"Node {nodeId} not found.");
 
-        var registerName = DetectRegister(strand.StrandBible);
+        var registerName = DetectRegister(node.NodeBible);
         if (string.IsNullOrEmpty(registerName))
         {
-            log.LogWarning("Strand {Slug} has no detected register — cannot surface exemplars.", strand.Slug);
-            return (registerName, strand.Slug ?? "", []);
+            log.LogWarning("Node {Slug} has no detected register — cannot surface exemplars.", node.Slug);
+            return (registerName, node.Slug ?? "", []);
         }
 
         var registerPrompt = LoadRegisterPrompt(registerName);
         if (string.IsNullOrWhiteSpace(registerPrompt))
         {
             log.LogWarning("Register file for '{Name}' not found or empty.", registerName);
-            return (registerName, strand.Slug ?? "", []);
+            return (registerName, node.Slug ?? "", []);
         }
 
         // Top-N beats by EmotionalScore (beats with NULL score are excluded)
         var topBeats = await (
-            from sb in db.StrandBeats.AsNoTracking()
+            from sb in db.NodeBeats.AsNoTracking()
             join b  in db.Beats.AsNoTracking() on sb.BeatId equals b.Id
-            where sb.StrandId == strandId
+            where sb.NodeId == nodeId
                && sb.IsEnabled
                && b.EmotionalScore != null
                && b.Text != null && b.Text.Length > 0
@@ -85,7 +85,7 @@ public class RegisterExemplarService
         if (topBeats.Count == 0)
         {
             Console.WriteLine("  No beats with EmotionalScore found. Run --examine-emotion first.");
-            return (registerName, strand.Slug ?? "", []);
+            return (registerName, node.Slug ?? "", []);
         }
 
         var candidates = new List<ExemplarCandidate>();
@@ -95,7 +95,7 @@ public class RegisterExemplarService
         var results = await Task.WhenAll(tasks);
         candidates.AddRange(results.Where(r => r is not null)!);
 
-        return (registerName, strand.Slug ?? "", candidates);
+        return (registerName, node.Slug ?? "", candidates);
     }
 
     // ── Classify a single beat against the register laws ─────────────────
@@ -151,11 +151,11 @@ Return a JSON object with these exact keys:
     // ── Format as markdown exemplar entries ──────────────────────────────
 
     public string FormatAsMarkdown(
-        IEnumerable<ExemplarCandidate> candidates, string strandSlug, string registerName)
+        IEnumerable<ExemplarCandidate> candidates, string nodeSlug, string registerName)
     {
         var sb = new StringBuilder();
         sb.AppendLine();
-        sb.AppendLine($"<!-- CANDIDATES — added by --update-register-exemplars from {strandSlug} -->");
+        sb.AppendLine($"<!-- CANDIDATES — added by --update-register-exemplars from {nodeSlug} -->");
         sb.AppendLine($"<!-- Promote to confirmed by removing this comment block. -->");
         sb.AppendLine();
 

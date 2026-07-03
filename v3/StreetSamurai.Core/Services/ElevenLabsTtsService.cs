@@ -102,8 +102,8 @@ public class ElevenLabsTtsService : ITtsService
         // Detect it once and adapt the payload automatically so callers never
         // have to branch on model version — set TtsModel to a v2 or v3 model
         // and narration just works. A per-request ModelId override (used by the
-        // strand voice-profile snapshot) wins over the global setting so a
-        // strand renders every beat on the model it was first narrated with.
+        // node voice-profile snapshot) wins over the global setting so a
+        // node renders every beat on the model it was first narrated with.
         var model = voiceSettings?.ModelId ?? settings.TtsModel;
         var isV3 = IsV3Model(model);
 
@@ -142,7 +142,7 @@ public class ElevenLabsTtsService : ITtsService
         };
 
         // Deterministic seed (both v2 and v3 honour it). Same seed across a
-        // strand's beats anchors the voice realization so the narrator sounds
+        // node's beats anchors the voice realization so the narrator sounds
         // like one continuous performance instead of re-rolling per beat. Only
         // sent when the caller supplies one; range is clamped to ElevenLabs'
         // accepted [0, 2^31-1] window.
@@ -457,11 +457,11 @@ public record TtsModel(string ModelId, string Name, bool IsV3);
 /// <see cref="ElevenLabsTtsService.SynthesizeWithIdAsync"/> to tune
 /// stability/style for emotional pacing.
 /// <para><paramref name="Seed"/> — deterministic generation seed (0..2^31-1).
-/// Sending the same seed across a strand's beats anchors the model to one
+/// Sending the same seed across a node's beats anchors the model to one
 /// voice realization so beats stay acoustically consistent and re-records
 /// reproduce. Null = let ElevenLabs pick a random seed (legacy behaviour).</para>
 /// <para><paramref name="ModelId"/> — overrides the model for THIS request
-/// instead of reading <c>Settings.TtsModel</c>. Lets a strand lock the model
+/// instead of reading <c>Settings.TtsModel</c>. Lets a node lock the model
 /// it was first narrated with so later global changes don't fork its voice.
 /// Null = use the global setting.</para></summary>
 public record TtsVoiceSettings(

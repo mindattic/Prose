@@ -10,7 +10,7 @@ using System.Text.RegularExpressions;
 namespace StreetSamurai.Core.Services;
 
 /// <summary>
-/// Exports a strand as a valid Word <c>.docx</c> in the manuscript shape Kindle
+/// Exports a node as a valid Word <c>.docx</c> in the manuscript shape Kindle
 /// Direct Publishing prefers: a title page, every chapter starting on a fresh
 /// page under a centered heading, and justified block-paragraph body text
 /// (no first-line indent; 8pt spacing after each paragraph) in a readable serif
@@ -20,7 +20,7 @@ namespace StreetSamurai.Core.Services;
 public class DocxExportService
 {
     private readonly IDbContextFactory<StreetSamuraiDbContext> dbFactory;
-    private readonly StrandWorkbenchService workbench;
+    private readonly NodeWorkbenchService workbench;
     private readonly SettingsService settings;
     private readonly PublishCleanupService cleanup;
     private readonly ILogger<DocxExportService> log;
@@ -33,7 +33,7 @@ public class DocxExportService
 
     public DocxExportService(
         IDbContextFactory<StreetSamuraiDbContext> dbFactory,
-        StrandWorkbenchService workbench,
+        NodeWorkbenchService workbench,
         SettingsService settings,
         PublishCleanupService cleanup,
         ILogger<DocxExportService> log)
@@ -45,59 +45,59 @@ public class DocxExportService
         this.log = log;
     }
 
-    /// <summary>Render the strand to a KDP-ready .docx in the publish directory; returns the path.</summary>
-    public async Task<string> ExportStrandAsync(Guid strandId, string? author = null, CancellationToken ct = default)
+    /// <summary>Render the node to a KDP-ready .docx in the publish directory; returns the path.</summary>
+    public async Task<string> ExportNodeAsync(Guid nodeId, string? author = null, CancellationToken ct = default)
     {
         author = string.IsNullOrWhiteSpace(author) ? "MindAttic" : author.Trim();
         await using var db = await dbFactory.CreateDbContextAsync(ct);
-        var strand = await db.Strands.FirstOrDefaultAsync(s => s.Id == strandId, ct)
-            ?? throw new InvalidOperationException($"Strand {strandId} not found.");
-        strand.Version++;
-        strand.UpdatedAt = DateTime.UtcNow;
+        var node = await db.Nodes.FirstOrDefaultAsync(s => s.Id == nodeId, ct)
+            ?? throw new InvalidOperationException($"Node {nodeId} not found.");
+        node.Version++;
+        node.UpdatedAt = DateTime.UtcNow;
         await db.SaveChangesAsync(ct);
-        var ordered = await workbench.GetOrderedBeatsAsync(strandId, ct);
+        var ordered = await workbench.GetOrderedBeatsAsync(nodeId, ct);
 
         var baseDir = (settings.PublishExportDirectory ?? string.Empty).Trim().Trim('"', '\'').Trim();
         if (string.IsNullOrWhiteSpace(baseDir))
             baseDir = Environment.GetFolderPath(Environment.SpecialFolder.Desktop);
-        var safeTitle = SanitizeTitle(strand.Title);
+        var safeTitle = SanitizeTitle(node.Title);
 
-        // De-dup: if a sibling strand produces the same folder name, prefix with
-        // StrandCode — or GUID7 if StrandCode is null or shared with a colliding sibling.
-        var siblings = await db.Strands.AsNoTracking()
-            .Where(s => s.Id != strandId && s.ParentStrandId == strand.ParentStrandId)
-            .Select(s => new { s.Title, s.StrandCode })
+        // De-dup: if a sibling node produces the same folder name, prefix with
+        // NodeCode — or GUID7 if NodeCode is null or shared with a colliding sibling.
+        var siblings = await db.Nodes.AsNoTracking()
+            .Where(s => s.Id != nodeId && s.ParentNodeId == node.ParentNodeId)
+            .Select(s => new { s.Title, s.NodeCode })
             .ToListAsync(ct);
         if (siblings.Any(s => SanitizeTitle(s.Title) == safeTitle))
         {
-            var code = strand.StrandCode;
+            var code = node.NodeCode;
             if (string.IsNullOrWhiteSpace(code) ||
-                siblings.Any(s => SanitizeTitle(s.Title) == safeTitle && s.StrandCode == code))
-                code = strand.Id.ToString("N")[..7];
+                siblings.Any(s => SanitizeTitle(s.Title) == safeTitle && s.NodeCode == code))
+                code = node.Id.ToString("N")[..7];
             safeTitle = $"[{code}] {safeTitle}";
         }
 
-        // Mirror the strand's series/book ancestry in the output path so a story
+        // Mirror the node's series/book ancestry in the output path so a story
         // in a series publishes one level deeper (e.g. ".../Street Samurai/Bushido
         // Coda/Bushido Coda V5.docx"); standalone stories stay at ".../<Title>/...".
         var ancestors = new List<string>();
-        var parentId = strand.ParentStrandId;
+        var parentId = node.ParentNodeId;
         for (var guard = 0; parentId is Guid pid && guard < 8; guard++)
         {
-            var parent = await db.Strands.AsNoTracking()
+            var parent = await db.Nodes.AsNoTracking()
                 .Where(s => s.Id == pid)
-                .Select(s => new { s.Title, s.ParentStrandId })
+                .Select(s => new { s.Title, s.ParentNodeId })
                 .FirstOrDefaultAsync(ct);
             if (parent is null) break;
             ancestors.Insert(0, SanitizeTitle(parent.Title));   // top-down order
-            parentId = parent.ParentStrandId;
+            parentId = parent.ParentNodeId;
         }
         var pathParts = new List<string> { baseDir };
         pathParts.AddRange(ancestors);
         pathParts.Add(safeTitle);
-        var strandDir = Path.Combine(pathParts.ToArray());
-        cleanup.Clean(strandDir);
-        var exportPath = Path.Combine(strandDir, $"{safeTitle} V{strand.Version}.docx");
+        var nodeDir = Path.Combine(pathParts.ToArray());
+        cleanup.Clean(nodeDir);
+        var exportPath = Path.Combine(nodeDir, $"{safeTitle} V{node.Version}.docx");
 
         using (var doc = WordprocessingDocument.Create(exportPath, WordprocessingDocumentType.Document))
         {
@@ -187,35 +187,35 @@ public class DocxExportService
 
             // ── Title page ──
             body.AppendChild(BlankLines(8));
-            body.AppendChild(Centered(strand.Title, Title28, bold: true));
+            body.AppendChild(Centered(node.Title, Title28, bold: true));
             if (!string.IsNullOrWhiteSpace(author))
                 body.AppendChild(Centered(author!, Author14, italic: true));
             body.AppendChild(PageBreak());
 
             // Determine chapter boundaries.
-            var srcIds = ordered.Select(o => o.StrandId).Distinct().ToList();
-            var strandTitles = await db.Strands.AsNoTracking()
+            var srcIds = ordered.Select(o => o.NodeId).Distinct().ToList();
+            var nodeTitles = await db.Nodes.AsNoTracking()
                 .Where(s => srcIds.Contains(s.Id))
                 .ToDictionaryAsync(s => s.Id, s => s.Title, ct);
 
             var isChapterStart = new bool[ordered.Count];
             var chapterTitle = new string?[ordered.Count];
-            Guid? prevStrand = null;
+            Guid? prevNode = null;
             int chapterCount = 0;
             for (int i = 0; i < ordered.Count; i++)
             {
                 var ob = ordered[i];
-                var strandChanged = prevStrand is null || ob.StrandId != prevStrand.Value;
-                if (strandChanged || ob.Beat.IsChapterStart)
+                var nodeChanged = prevNode is null || ob.NodeId != prevNode.Value;
+                if (nodeChanged || ob.Beat.IsChapterStart)
                 {
                     isChapterStart[i] = true;
                     chapterCount++;
                     chapterTitle[i] =
                         !string.IsNullOrWhiteSpace(ob.Beat.BeatTitle) ? ob.Beat.BeatTitle!.Trim()
-                        : strandChanged && strandTitles.TryGetValue(ob.StrandId, out var t) && !string.IsNullOrWhiteSpace(t) ? $"Chapter {chapterCount} - {t.Trim()}"
+                        : nodeChanged && nodeTitles.TryGetValue(ob.NodeId, out var t) && !string.IsNullOrWhiteSpace(t) ? $"Chapter {chapterCount} - {t.Trim()}"
                         : $"Chapter {chapterCount}";
                 }
-                prevStrand = ob.StrandId;
+                prevNode = ob.NodeId;
             }
 
             // Pre-build the TOC entry list so both the SDT and the chapter headings
@@ -258,7 +258,7 @@ public class DocxExportService
             main.Document.Save();
         }
 
-        log.LogInformation("Exported strand {Strand} to {Path}", strand.Slug, exportPath);
+        log.LogInformation("Exported node {Node} to {Path}", node.Slug, exportPath);
         return exportPath;
     }
 

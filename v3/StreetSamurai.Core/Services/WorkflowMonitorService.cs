@@ -6,7 +6,7 @@ namespace StreetSamurai.Core.Services;
 
 /// <summary>
 /// Logs which prose services were active/applicable per beat write, and surfaces
-/// coverage gaps per strand or globally.
+/// coverage gaps per node or globally.
 ///
 /// Called fire-and-forget by ProseWriterRouter after each beat is generated.
 /// Query via ss --workflow-status or the workflow_status MCP tools.
@@ -20,11 +20,11 @@ public class WorkflowMonitorService(IDbContextFactory<StreetSamuraiDbContext> db
     /// prose generation is never blocked by monitoring writes.
     /// </summary>
     public async Task LogBeatActivityAsync(
-        Guid beatId, Guid strandId, Guid universeId,
+        Guid beatId, Guid nodeId, Guid universeId,
         IReadOnlyList<ServiceLogEntry> entries,
         CancellationToken ct = default)
     {
-        if (strandId == Guid.Empty) return;
+        if (nodeId == Guid.Empty) return;
         try
         {
             await using var db = await dbFactory.CreateDbContextAsync(ct);
@@ -35,7 +35,7 @@ public class WorkflowMonitorService(IDbContextFactory<StreetSamuraiDbContext> db
                 {
                     UniverseId = universeId,
                     BeatId = beatId == Guid.Empty ? null : beatId,
-                    StrandId = strandId,
+                    NodeId = nodeId,
                     Service = e.Service,
                     WasApplicable = e.IsApplicable,
                     WasActive = e.IsActive,
@@ -49,24 +49,24 @@ public class WorkflowMonitorService(IDbContextFactory<StreetSamuraiDbContext> db
     }
 
     /// <summary>
-    /// Returns a coverage report for a single strand: per-service activation rates and
+    /// Returns a coverage report for a single node: per-service activation rates and
     /// a list of gaps (services that were applicable but underused or never called).
     /// </summary>
-    public async Task<StrandCoverageReport> GetStrandCoverageAsync(Guid strandId, CancellationToken ct = default)
+    public async Task<NodeCoverageReport> GetNodeCoverageAsync(Guid nodeId, CancellationToken ct = default)
     {
         await using var db = await dbFactory.CreateDbContextAsync(ct);
 
-        // Roll up child strands: a book's coverage is the union of its chapters' logs.
+        // Roll up child nodes: a book's coverage is the union of its chapters' logs.
         // Draft subtrees are out-of-scope material and excluded from coverage.
-        var childIds = await db.Strands.AsNoTracking()
-            .Where(s => s.ParentStrandId == strandId && !s.IsWIP)
+        var childIds = await db.Nodes.AsNoTracking()
+            .Where(s => s.ParentNodeId == nodeId && !s.IsWIP)
             .Select(s => s.Id).ToListAsync(ct);
-        var scopeIds = new List<Guid>(childIds) { strandId };
+        var scopeIds = new List<Guid>(childIds) { nodeId };
 
         var logs = await db.BeatServiceLogs.AsNoTracking()
-            .Where(x => scopeIds.Contains(x.StrandId)).ToListAsync(ct);
-        var strand = await db.Strands.AsNoTracking()
-            .Where(s => s.Id == strandId)
+            .Where(x => scopeIds.Contains(x.NodeId)).ToListAsync(ct);
+        var node = await db.Nodes.AsNoTracking()
+            .Where(s => s.Id == nodeId)
             .Select(s => new { s.Slug, s.Title })
             .FirstOrDefaultAsync(ct);
 
@@ -92,19 +92,19 @@ public class WorkflowMonitorService(IDbContextFactory<StreetSamuraiDbContext> db
         foreach (var svc in knownServices)
         {
             if (!byService.Any(s => s.Service == svc))
-                gaps.Add($"{svc}: never logged (no calls recorded for this strand — use ProseWriterRouter)");
+                gaps.Add($"{svc}: never logged (no calls recorded for this node — use ProseWriterRouter)");
         }
 
-        return new StrandCoverageReport(
-            StrandSlug:       strand?.Slug ?? strandId.ToString(),
-            StrandTitle:      strand?.Title ?? "Unknown",
+        return new NodeCoverageReport(
+            NodeSlug:       node?.Slug ?? nodeId.ToString(),
+            NodeTitle:      node?.Title ?? "Unknown",
             ServiceStats:     byService,
             Gaps:             gaps,
             TotalBeatsLogged: logs.Select(x => x.BeatId).Distinct().Count());
     }
 
     /// <summary>
-    /// Returns global per-service utilization across all strands, ordered by total call count.
+    /// Returns global per-service utilization across all nodes, ordered by total call count.
     /// </summary>
     public async Task<List<ServiceCoverageStat>> GetGlobalStatsAsync(CancellationToken ct = default)
     {
@@ -123,20 +123,20 @@ public class WorkflowMonitorService(IDbContextFactory<StreetSamuraiDbContext> db
     }
 
     /// <summary>
-    /// Returns a summary of all strands that have coverage gaps, ordered by gap count descending.
+    /// Returns a summary of all nodes that have coverage gaps, ordered by gap count descending.
     /// </summary>
-    public async Task<List<StrandGapSummary>> GetAllStrandsWithGapsAsync(CancellationToken ct = default)
+    public async Task<List<NodeGapSummary>> GetAllNodesWithGapsAsync(CancellationToken ct = default)
     {
         await using var db = await dbFactory.CreateDbContextAsync(ct);
-        var strandIds = await db.BeatServiceLogs.AsNoTracking()
-            .Select(x => x.StrandId).Distinct().ToListAsync(ct);
+        var nodeIds = await db.BeatServiceLogs.AsNoTracking()
+            .Select(x => x.NodeId).Distinct().ToListAsync(ct);
 
-        var results = new List<StrandGapSummary>();
-        foreach (var sid in strandIds)
+        var results = new List<NodeGapSummary>();
+        foreach (var sid in nodeIds)
         {
-            var report = await GetStrandCoverageAsync(sid, ct);
+            var report = await GetNodeCoverageAsync(sid, ct);
             if (report.Gaps.Count > 0)
-                results.Add(new StrandGapSummary(report.StrandSlug, report.StrandTitle, report.Gaps.Count, report.Gaps));
+                results.Add(new NodeGapSummary(report.NodeSlug, report.NodeTitle, report.Gaps.Count, report.Gaps));
         }
         return results.OrderByDescending(r => r.GapCount).ToList();
     }
@@ -149,14 +149,14 @@ public record ServiceCoverageStat(
     int ApplicableCalls,
     double ActivationRate);
 
-public record StrandCoverageReport(
-    string StrandSlug,
-    string StrandTitle,
+public record NodeCoverageReport(
+    string NodeSlug,
+    string NodeTitle,
     List<ServiceCoverageStat> ServiceStats,
     List<string> Gaps,
     int TotalBeatsLogged);
 
-public record StrandGapSummary(
+public record NodeGapSummary(
     string Slug,
     string Title,
     int GapCount,

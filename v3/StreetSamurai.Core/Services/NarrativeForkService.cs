@@ -12,21 +12,21 @@ namespace StreetSamurai.Core.Services;
 /// than always committing to the original outline.
 ///
 /// Integrates into ChapterCloseProcessorService (opt-in via ForkCount > 1).
-/// Also callable directly for flat strands via PickNextBeatsArcAsync.
+/// Also callable directly for flat nodes via PickNextBeatsArcAsync.
 /// </summary>
 public class NarrativeForkService(
     IDbContextFactory<StreetSamuraiDbContext> dbFactory,
     ILlmService llm)
 {
     /// <summary>
-    /// Pick the best arc for the next chapter in a book-mode strand.
+    /// Pick the best arc for the next chapter in a book-mode node.
     /// Loads the chapter at index <paramref name="completedChapterIndex"/> + 1,
     /// generates <paramref name="forkCount"/> alternatives, scores them, and
     /// rewrites that chapter's remaining beat goals to match the winner.
     /// Returns an empty ForkResult when there is no next chapter to act on.
     /// </summary>
     public async Task<ForkResult> PickNextChapterArcAsync(
-        Guid parentStrandId,
+        Guid parentNodeId,
         int completedChapterIndex,
         string writtenSoFar,
         int forkCount = 3,
@@ -40,14 +40,14 @@ public class NarrativeForkService(
 
         await using (var db = await dbFactory.CreateDbContextAsync(ct))
         {
-            var strand = await db.Strands.AsNoTracking()
-                .Where(s => s.Id == parentStrandId)
-                .Select(s => new { s.StrandBible })
+            var node = await db.Nodes.AsNoTracking()
+                .Where(s => s.Id == parentNodeId)
+                .Select(s => new { s.NodeBible })
                 .FirstOrDefaultAsync(ct);
-            bibleText = strand?.StrandBible;
+            bibleText = node?.NodeBible;
 
-            var chapterIds = await db.Strands.AsNoTracking()
-                .Where(s => s.ParentStrandId == parentStrandId)
+            var chapterIds = await db.Nodes.AsNoTracking()
+                .Where(s => s.ParentNodeId == parentNodeId)
                 .OrderBy(s => s.CreatedAt)
                 .Select(s => s.Id)
                 .ToListAsync(ct);
@@ -58,8 +58,8 @@ public class NarrativeForkService(
 
             if (nextChapterId.HasValue)
             {
-                var rows = await db.StrandBeats.AsNoTracking()
-                    .Where(sb => sb.StrandId == nextChapterId.Value && sb.IsEnabled)
+                var rows = await db.NodeBeats.AsNoTracking()
+                    .Where(sb => sb.NodeId == nextChapterId.Value && sb.IsEnabled)
                     .Join(db.Beats.AsNoTracking(),
                           sb => sb.BeatId, b => b.Id,
                           (sb, b) => new { b.Id, Goal = b.Synopsis ?? b.BeatTitle ?? "" })
@@ -81,10 +81,10 @@ public class NarrativeForkService(
     }
 
     /// <summary>
-    /// Pick the best arc for the next N unwritten beats in a flat strand.
+    /// Pick the best arc for the next N unwritten beats in a flat node.
     /// </summary>
     public async Task<ForkResult> PickNextBeatsArcAsync(
-        Guid strandId,
+        Guid nodeId,
         string writtenSoFar,
         int forkCount = 3,
         int nextBeatWindow = 6,
@@ -97,14 +97,14 @@ public class NarrativeForkService(
 
         await using (var db = await dbFactory.CreateDbContextAsync(ct))
         {
-            var strand = await db.Strands.AsNoTracking()
-                .Where(s => s.Id == strandId)
-                .Select(s => new { s.StrandBible })
+            var node = await db.Nodes.AsNoTracking()
+                .Where(s => s.Id == nodeId)
+                .Select(s => new { s.NodeBible })
                 .FirstOrDefaultAsync(ct);
-            bibleText = strand?.StrandBible;
+            bibleText = node?.NodeBible;
 
-            var rows = await db.StrandBeats.AsNoTracking()
-                .Where(sb => sb.StrandId == strandId && sb.IsEnabled)
+            var rows = await db.NodeBeats.AsNoTracking()
+                .Where(sb => sb.NodeId == nodeId && sb.IsEnabled)
                 .Join(db.Beats.AsNoTracking().Where(b => b.Text == null || b.Text == ""),
                       sb => sb.BeatId, b => b.Id,
                       (sb, b) => new { b.Id, Goal = b.Synopsis ?? b.BeatTitle ?? "" })
@@ -118,7 +118,7 @@ public class NarrativeForkService(
         if (nextBeats.Count == 0)
             return ForkResult.Empty;
 
-        return await RunForkAsync(strandId, writtenSoFar, bibleText, nextBeats, forkCount, ct);
+        return await RunForkAsync(nodeId, writtenSoFar, bibleText, nextBeats, forkCount, ct);
     }
 
     private async Task<ForkResult> RunForkAsync(

@@ -78,29 +78,29 @@ public class BeatGeneratorService
         var anchorBlock = await BuildBeatAnchorsAsync(context, ct);
 
         // Plant/payoff context: seeded details awaiting payoff, or registered payoffs
-        // to honour in this beat. Injected when StrandId is set + PlantPayoffService
+        // to honour in this beat. Injected when NodeId is set + PlantPayoffService
         // is wired. Non-blocking — silently empty on first-write or cold starts.
         var plantBlock = "";
-        if (plantPayoffs != null && context.StrandId != Guid.Empty)
+        if (plantPayoffs != null && context.NodeId != Guid.Empty)
         {
-            try { plantBlock = await plantPayoffs.BuildPlantContextAsync(context.StrandId, ct); }
+            try { plantBlock = await plantPayoffs.BuildPlantContextAsync(context.NodeId, ct); }
             catch { /* non-blocking */ }
         }
 
-        // Story commandment context: gateway (null PreviousStrandId) or sequel
-        // commandments, injected as writing goals for this strand.
+        // Story commandment context: gateway (null PreviousNodeId) or sequel
+        // commandments, injected as writing goals for this node.
         var commandmentBlock = "";
-        if (storyAudit != null && context.StrandId != Guid.Empty)
+        if (storyAudit != null && context.NodeId != Guid.Empty)
         {
             try
             {
                 await using var db = await dbFactory.CreateDbContextAsync(ct);
-                var s = await db.Strands.AsNoTracking()
-                    .Where(x => x.Id == context.StrandId)
-                    .Select(x => new { x.PreviousStrandId, x.UniverseId })
+                var s = await db.Nodes.AsNoTracking()
+                    .Where(x => x.Id == context.NodeId)
+                    .Select(x => new { x.PreviousNodeId, x.UniverseId })
                     .FirstOrDefaultAsync(ct);
                 if (s != null)
-                    commandmentBlock = storyAudit.BuildCommandmentContext(s.PreviousStrandId.HasValue, s.UniverseId);
+                    commandmentBlock = storyAudit.BuildCommandmentContext(s.PreviousNodeId.HasValue, s.UniverseId);
             }
             catch { /* non-blocking */ }
         }
@@ -802,20 +802,20 @@ public record BeatContext
     public string BeatGoal { get; init; } = "";
 
     /// <summary>
-    /// Strand this beat belongs to. When set, BeatGeneratorService injects:
+    /// Node this beat belongs to. When set, BeatGeneratorService injects:
     ///   - active plant/payoff pairs (PlantPayoffService)
-    ///   - gateway or sequel commandments (StoryAuditService, per PreviousStrandId)
+    ///   - gateway or sequel commandments (StoryAuditService, per PreviousNodeId)
     /// Leave as Guid.Empty to skip both injections (legacy callers).
     /// </summary>
-    public Guid StrandId { get; init; }
+    public Guid NodeId { get; init; }
 
     // ── ProseWriterRouter enrichment ──────────────────────────────────────────
     // These fields are populated by ProseWriterRouter before calling GenerateBeatAsync.
     // Left at their defaults when callers invoke BeatGeneratorService directly (legacy path).
 
-    /// <summary>Position in strand — enables pacing and structural role injection when set by ProseWriterRouter.</summary>
+    /// <summary>Position in node — enables pacing and structural role injection when set by ProseWriterRouter.</summary>
     public int BeatIndex { get; init; }
-    /// <summary>Total beats in the strand — enables positional arc calculations when set by ProseWriterRouter.</summary>
+    /// <summary>Total beats in the node — enables positional arc calculations when set by ProseWriterRouter.</summary>
     public int TotalBeats { get; init; }
 
     /// <summary>Pre-computed pacing guidance block (from PacingService). Empty = skip injection.</summary>
@@ -828,24 +828,24 @@ public record BeatContext
     /// <summary>
     /// Self-referential entity context stack (EntityContextService): the LRU-managed web of
     /// entities currently active in working memory — direct mentions at depth 0, semantic
-    /// neighbors at depth 1–2. Empty when EntityContextService is not wired or StrandId is empty.
+    /// neighbors at depth 1–2. Empty when EntityContextService is not wired or NodeId is empty.
     /// Injected by ProseWriterRouter alongside XRayContext.
     /// </summary>
     public string EntityStackContext { get; init; } = "";
 
     /// <summary>
     /// Doc Context Stack (DocContextService): the rotating cast of pertinent canon .md docs for
-    /// this beat — the universal always-tier core, the story's strand bible + register, and any
+    /// this beat — the universal always-tier core, the story's node bible + register, and any
     /// topic docs triggered by the beat goal/scene. Empty when DocContextService is not wired or
-    /// StrandId is empty. Injected by ProseWriterRouter alongside EntityStackContext.
+    /// NodeId is empty. Injected by ProseWriterRouter alongside EntityStackContext.
     /// </summary>
     public string DocStackContext { get; init; } = "";
 
     /// <summary>
-    /// Explicit strand CODE for Doc Context Stack scope matching, overriding the lookup from
-    /// <see cref="StrandId"/>. Needed when refactoring a DUPLICATE strand (which has no StrandCode):
-    /// pass the source strand's code so its bible + register (scope = that code) still load.
-    /// Empty = resolve the code from StrandId as usual.
+    /// Explicit node CODE for Doc Context Stack scope matching, overriding the lookup from
+    /// <see cref="NodeId"/>. Needed when refactoring a DUPLICATE node (which has no NodeCode):
+    /// pass the source node's code so its bible + register (scope = that code) still load.
+    /// Empty = resolve the code from NodeId as usual.
     /// </summary>
     public string DocScopeCode { get; init; } = "";
 
@@ -867,7 +867,7 @@ public record BeatContext
     public IReadOnlyList<string> CharactersInScene { get; init; } = Array.Empty<string>();
 
     /// <summary>Emotional depth guidance derived from prior EmotionalDepthService examination findings.
-    /// Injected by ProseWriterRouter from recent strand findings — "previous beats scored low on X, address it."
+    /// Injected by ProseWriterRouter from recent node findings — "previous beats scored low on X, address it."
     /// Empty when no prior examination exists or findings have been dismissed.</summary>
     public string EmotionalGuidanceContext { get; init; } = "";
 
@@ -894,12 +894,12 @@ public record BeatContext
     public string WorldStateContext { get; init; } = "";
 
     /// <summary>Rolling compressed scene memory from NarrativeSummaryService.
-    /// Last 10 beats summarized — orients the generator for long-strand coherence without full prior prose.</summary>
+    /// Last 10 beats summarized — orients the generator for long-node coherence without full prior prose.</summary>
     public string NarrativeSummaryContext { get; init; } = "";
 
     /// <summary>ML prose quality guidance from MlProseGuidanceService.
     /// Injected by ProseWriterRouter from recent ML-PROSE-SCORE findings — beats the nightly model
-    /// flagged as weak in this strand. Empty when no model has been trained or no findings exist.</summary>
+    /// flagged as weak in this node. Empty when no model has been trained or no findings exist.</summary>
     public string MlProseGuidanceContext { get; init; } = "";
 
     // ── Autonomous pipeline enrichment fields ─────────────────────────────

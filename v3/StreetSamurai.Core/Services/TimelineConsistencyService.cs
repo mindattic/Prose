@@ -12,7 +12,7 @@ namespace StreetSamurai.Core.Services;
 /// DETECTION 1 — "dead-character-acting"
 ///   Finds entities whose <c>status</c> aspect (EntityStateEvent) is "dead" /
 ///   "deceased" at some AtStoryTime T, then checks whether that entity is
-///   mentioned in any Beat in the strand whose EntityStateEvent story-time is
+///   mentioned in any Beat in the node whose EntityStateEvent story-time is
 ///   later than T. Severity: high.
 ///
 /// DETECTION 2 — "wound-regression"
@@ -46,7 +46,7 @@ public class TimelineConsistencyService
     }
 
     /// <summary>
-    /// Result type returned by <see cref="CheckStrandAsync"/>.
+    /// Result type returned by <see cref="CheckNodeAsync"/>.
     /// </summary>
     public sealed record TimelineFinding(
         string   Kind,
@@ -59,12 +59,12 @@ public class TimelineConsistencyService
     // ──────────────────────────────────────────────────────────────────────
 
     /// <summary>
-    /// Runs both detectors over the given strand and returns any findings.
+    /// Runs both detectors over the given node and returns any findings.
     /// Returns an empty list when the event ledger has no relevant data —
     /// never throws.
     /// </summary>
-    public async Task<List<TimelineFinding>> CheckStrandAsync(
-        Guid strandId,
+    public async Task<List<TimelineFinding>> CheckNodeAsync(
+        Guid nodeId,
         CancellationToken ct = default)
     {
         var findings = new List<TimelineFinding>();
@@ -72,37 +72,37 @@ public class TimelineConsistencyService
         {
             await using var db = await dbFactory.CreateDbContextAsync(ct);
 
-            // Collect the set of entity IDs and beat IDs for this strand.
+            // Collect the set of entity IDs and beat IDs for this node.
             // We join via BeatEntityMention (new unified-schema path).
-            var strandBeatQuery = await (
-                from sb in db.StrandBeats.AsNoTracking()
+            var nodeBeatQuery = await (
+                from sb in db.NodeBeats.AsNoTracking()
                 join b  in db.Beats.AsNoTracking() on sb.BeatId equals b.Id
-                where sb.StrandId == strandId && sb.IsEnabled
+                where sb.NodeId == nodeId && sb.IsEnabled
                 orderby sb.SortKey
                 select new { BeatId = b.Id, b.Number }
             ).ToListAsync(ct);
 
-            if (strandBeatQuery.Count == 0)
+            if (nodeBeatQuery.Count == 0)
             {
-                log.LogDebug("TimelineConsistencyService: strand {StrandId} has no beats — skipping", strandId);
+                log.LogDebug("TimelineConsistencyService: node {NodeId} has no beats — skipping", nodeId);
                 return findings;
             }
 
-            var beatIds = strandBeatQuery.Select(x => x.BeatId).ToHashSet();
-            var beatNumberById = strandBeatQuery.ToDictionary(x => x.BeatId, x => x.Number);
+            var beatIds = nodeBeatQuery.Select(x => x.BeatId).ToHashSet();
+            var beatNumberById = nodeBeatQuery.ToDictionary(x => x.BeatId, x => x.Number);
 
-            // Entity mentions per beat in this strand.
+            // Entity mentions per beat in this node.
             var mentionRows = await db.BeatEntityMentions.AsNoTracking()
                 .Where(m => beatIds.Contains(m.BeatId))
                 .ToListAsync(ct);
 
             if (mentionRows.Count == 0)
             {
-                log.LogDebug("TimelineConsistencyService: strand {StrandId} has no entity mentions — skipping", strandId);
+                log.LogDebug("TimelineConsistencyService: node {NodeId} has no entity mentions — skipping", nodeId);
                 return findings;
             }
 
-            // Unique entity IDs that appear in this strand.
+            // Unique entity IDs that appear in this node.
             var entityIds = mentionRows.Select(m => m.EntityId).Distinct().ToList();
 
             // All EntityStateEvents for these entities (unbounded to story time —
@@ -115,7 +115,7 @@ public class TimelineConsistencyService
 
             if (events.Count == 0)
             {
-                log.LogDebug("TimelineConsistencyService: no EntityStateEvents for strand {StrandId} entities", strandId);
+                log.LogDebug("TimelineConsistencyService: no EntityStateEvents for node {NodeId} entities", nodeId);
                 return findings;
             }
 
@@ -127,7 +127,7 @@ public class TimelineConsistencyService
             // ── DETECTION 1: dead-character-acting ──────────────────────
             // For each entity, find the earliest AtStoryTime at which they
             // become "dead"/"deceased" (status or condition.*.severity).
-            // Then check if any beat in this strand that mentions that entity
+            // Then check if any beat in this node that mentions that entity
             // has a story-time reference AFTER the death time.
             //
             // Since Beat doesn't carry InWorldDate, we infer story time for a
@@ -139,7 +139,7 @@ public class TimelineConsistencyService
             // entity (across the entire ledger). Then check if the entity
             // appears in any event that was recorded AFTER that time.
             // For beats, we use the EntityStateEvent rows whose BeatGuid maps
-            // to beats in this strand — if an event for a "dead" entity is
+            // to beats in this node — if an event for a "dead" entity is
             // recorded in a beat that comes after the death, that's a violation.
 
             var eventsByEntity = events.GroupBy(e => e.EntityId)
@@ -151,7 +151,7 @@ public class TimelineConsistencyService
             // OR null. For new beats we look at BeatEntityMention instead.
 
             // Strategy: for each entity with a death record, find the death time.
-            // Then, for each beat in this strand that mentions that entity,
+            // Then, for each beat in this node that mentions that entity,
             // try to infer the beat's story time. A beat's story time can be
             // inferred from any EntityStateEvent whose BeatGuid matches the beat.
 
@@ -189,7 +189,7 @@ public class TimelineConsistencyService
 
                 var deathTime = deathEvent.AtStoryTime;
 
-                // Find beats in this strand that mention this entity AND
+                // Find beats in this node that mention this entity AND
                 // have a story time AFTER the death time.
                 var mentionedBeats = mentionRows
                     .Where(m => m.EntityId == entityId)
@@ -265,12 +265,12 @@ public class TimelineConsistencyService
             }
 
             log.LogInformation(
-                "TimelineConsistencyService: strand {StrandId} — {Count} finding(s) ({Beats} beats, {Entities} entities, {Events} events)",
-                strandId, findings.Count, beatIds.Count, entityIds.Count, events.Count);
+                "TimelineConsistencyService: node {NodeId} — {Count} finding(s) ({Beats} beats, {Entities} entities, {Events} events)",
+                nodeId, findings.Count, beatIds.Count, entityIds.Count, events.Count);
         }
         catch (Exception ex)
         {
-            log.LogError(ex, "TimelineConsistencyService: unexpected error for strand {StrandId} — returning empty findings", strandId);
+            log.LogError(ex, "TimelineConsistencyService: unexpected error for node {NodeId} — returning empty findings", nodeId);
         }
 
         return findings;

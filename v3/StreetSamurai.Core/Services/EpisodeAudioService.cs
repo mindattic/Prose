@@ -690,7 +690,7 @@ public class EpisodeAudioService
     /// describing a PCM payload of <paramref name="dataChunkSize"/> bytes.
     /// Caller is responsible for writing the PCM bytes that follow. Used by
     /// the streaming concat path so we don't have to materialize the whole
-    /// strand's PCM in memory before stamping the header.</summary>
+    /// node's PCM in memory before stamping the header.</summary>
     public static void WriteWavHeader(Stream dst, int dataChunkSize, int sampleRate, short channels, short bitsPerSample)
     {
         int byteRate = sampleRate * channels * bitsPerSample / 8;

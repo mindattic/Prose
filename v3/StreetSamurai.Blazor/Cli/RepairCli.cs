@@ -78,14 +78,14 @@ public static class RepairCli
             Console.WriteLine();
             Console.WriteLine("[normalize-kinds]");
             await using var db = await sp.GetRequiredService<IDbContextFactory<StreetSamuraiDbContext>>().CreateDbContextAsync();
-            // series/story: root level (ParentStrandId IS NULL), except explicit series strands which stay "series"
-            // story: null-parent strands that aren't already "series"
+            // series/story: root level (ParentNodeId IS NULL), except explicit series nodes which stay "series"
+            // story: null-parent nodes that aren't already "series"
             var storyRows = await db.Database.ExecuteSqlRawAsync(
-                "UPDATE Strands SET Kind = 'story' WHERE ParentStrandId IS NULL AND Kind <> 'series'");
+                "UPDATE Nodes SET Kind = 'story' WHERE ParentNodeId IS NULL AND Kind <> 'series'");
             var chapterRows = await db.Database.ExecuteSqlRawAsync(
-                "UPDATE Strands SET Kind = 'chapter' WHERE ParentStrandId IS NOT NULL AND Kind NOT IN ('story','series')");
-            Console.WriteLine($"  root strands set to story  : {storyRows}");
-            Console.WriteLine($"  child strands set to chapter: {chapterRows}");
+                "UPDATE Nodes SET Kind = 'chapter' WHERE ParentNodeId IS NOT NULL AND Kind NOT IN ('story','series')");
+            Console.WriteLine($"  root nodes set to story  : {storyRows}");
+            Console.WriteLine($"  child nodes set to chapter: {chapterRows}");
         }
 
         if (withOrphans)
@@ -93,8 +93,8 @@ public static class RepairCli
             Console.WriteLine();
             Console.WriteLine("[orphan-chapters]");
             await using var db = await sp.GetRequiredService<IDbContextFactory<StreetSamuraiDbContext>>().CreateDbContextAsync();
-            var orphans = await db.Strands
-                .Where(s => s.Kind == "chapter" && s.ParentStrandId == null)
+            var orphans = await db.Nodes
+                .Where(s => s.Kind == "chapter" && s.ParentNodeId == null)
                 .ToListAsync();
             Console.WriteLine($"  orphan chapters found: {orphans.Count}");
             if (orphans.Count > 0)
@@ -103,13 +103,13 @@ public static class RepairCli
                 foreach (var grp in orphans.GroupBy(o => o.UniverseId))
                 {
                     var uid = grp.Key;
-                    var drafts = await db.Strands.FirstOrDefaultAsync(s =>
-                        s.Title == "Drafts" && s.Kind == "story" && s.ParentStrandId == null && s.UniverseId == uid);
+                    var drafts = await db.Nodes.FirstOrDefaultAsync(s =>
+                        s.Title == "Drafts" && s.Kind == "story" && s.ParentNodeId == null && s.UniverseId == uid);
                     if (drafts == null)
                     {
-                        var maxSort = await db.Strands.Where(s => s.ParentStrandId == null)
+                        var maxSort = await db.Nodes.Where(s => s.ParentNodeId == null)
                             .MaxAsync(s => (double?)s.SortKey) ?? 0;
-                        drafts = new StreetSamurai.Core.Data.Entities.Strand
+                        drafts = new StreetSamurai.Core.Data.Entities.StoryNode
                         {
                             Id = Guid.CreateVersion7(),
                             Slug = $"drafts-{Guid.CreateVersion7().ToString("N")[..8]}",
@@ -119,13 +119,13 @@ public static class RepairCli
                             SortKey = maxSort + 100.0,
                             UniverseId = uid,
                         };
-                        db.Strands.Add(drafts);
+                        db.Nodes.Add(drafts);
                         await db.SaveChangesAsync();
                         Console.WriteLine($"  created Drafts story (universe {uid})");
                     }
                     foreach (var o in grp)
                     {
-                        o.ParentStrandId = drafts.Id;
+                        o.ParentNodeId = drafts.Id;
                         Console.WriteLine($"    → reparented '{o.Title}' to Drafts");
                     }
                 }
@@ -141,8 +141,8 @@ public static class RepairCli
         {
             Console.WriteLine();
             Console.WriteLine("Skipping LLM/repair phases. Add one of:");
-            Console.WriteLine("  --normalize-kinds       set root strands→story, child strands→chapter (idempotent)");
-            Console.WriteLine("  --orphan-chapters       reparent Kind=chapter/no-parent strands to a 'Drafts' story");
+            Console.WriteLine("  --normalize-kinds       set root nodes→story, child nodes→chapter (idempotent)");
+            Console.WriteLine("  --orphan-chapters       reparent Kind=chapter/no-parent nodes to a 'Drafts' story");
             Console.WriteLine("  --continuity            LLM continuity-claim extraction");
             Console.WriteLine("  --beat-facts            knowledge + conditions extraction");
             Console.WriteLine("  --backfill-dates        populate Chapter/Beat InWorldDate via LLM");

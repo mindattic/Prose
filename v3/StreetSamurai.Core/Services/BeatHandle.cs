@@ -1,10 +1,10 @@
 namespace StreetSamurai.Core.Services;
 
 /// <summary>
-/// The dotted "strand-guid.beat-guid" handle the writer UI shows on the
+/// The dotted "node-guid.beat-guid" handle the writer UI shows on the
 /// LLM bottom sheet, surfaced over the MCP layer for chat-side authoring.
-/// Plain Guid (beat-only) is also accepted — the strand id is recovered
-/// from the StrandBeat junction at call time.
+/// Plain Guid (beat-only) is also accepted — the node id is recovered
+/// from the NodeBeat junction at call time.
 ///
 /// Single source of truth so the CLI / MCP tools and the unit-test layer
 /// share one parser. Keep the handle format change here if it ever moves.
@@ -13,19 +13,19 @@ public static class BeatHandle
 {
     /// <summary>Parse a beat handle. Returns true on success.</summary>
     /// <param name="handle">Either a Beat Guid (e.g. <c>019e4d4a-…</c>) or
-    /// the dotted form <c>strand-guid.beat-guid</c>.</param>
-    /// <param name="strandId">Set to the strand portion when the dotted
+    /// the dotted form <c>node-guid.beat-guid</c>.</param>
+    /// <param name="nodeId">Set to the node portion when the dotted
     /// form was supplied, otherwise <c>null</c>.</param>
     /// <param name="beatId">Set to the beat portion. <c>null</c> when the
     /// handle didn't parse.</param>
-    public static bool TryParse(string? handle, out Guid? strandId, out Guid? beatId)
+    public static bool TryParse(string? handle, out Guid? nodeId, out Guid? beatId)
     {
-        strandId = null;
+        nodeId = null;
         beatId = null;
         if (string.IsNullOrWhiteSpace(handle)) return false;
         var trimmed = handle.Trim();
 
-        // Dotted form: strand-guid.beat-guid. Use IndexOf so the lookup
+        // Dotted form: node-guid.beat-guid. Use IndexOf so the lookup
         // is allocation-free (no Split). Reject inputs where the dot lands
         // at either end — "a." and ".a" are malformed.
         var dot = trimmed.IndexOf('.');
@@ -35,7 +35,7 @@ public static class BeatHandle
             var bPart = trimmed[(dot + 1)..];
             if (Guid.TryParse(sPart, out var sg) && Guid.TryParse(bPart, out var bg))
             {
-                strandId = sg;
+                nodeId = sg;
                 beatId = bg;
                 return true;
             }
@@ -51,8 +51,8 @@ public static class BeatHandle
         return false;
     }
 
-    /// <summary>Render the dotted handle "strand-guid.beat-guid". The
+    /// <summary>Render the dotted handle "node-guid.beat-guid". The
     /// writer UI shows this verbatim so the user can copy-paste it into
     /// a CLI call or a chat conversation with Claude.</summary>
-    public static string Format(Guid strandId, Guid beatId) => $"{strandId}.{beatId}";
+    public static string Format(Guid nodeId, Guid beatId) => $"{nodeId}.{beatId}";
 }

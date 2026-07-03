@@ -10,8 +10,8 @@ namespace StreetSamurai.Core.Data.Entities;
 /// live in two tables linked by a string-guid pointer with bidirectional
 /// sync; now they're one row.
 ///
-/// Beats belong to one or more <see cref="Strand"/>s through the
-/// <see cref="StrandBeat"/> junction. A Beat can appear in many strands
+/// Beats belong to one or more <see cref="Node"/>s through the
+/// <see cref="NodeBeat"/> junction. A Beat can appear in many nodes
 /// (the same paragraph reused across an anthology, a chapter, and a
 /// greatest-hits playlist) — the prose lives in one place, the audio file
 /// lives in one place, edits propagate naturally.
@@ -24,7 +24,7 @@ public class Beat
     /// <summary>Small human-readable counter. Globally unique across all
     /// beats. Stable across reordering / inserts / deletions — unlike the
     /// positional "BEAT 042" badge in the writer UI, which shifts whenever
-    /// the strand is restructured. Users and CLI assistants reference beats
+    /// the node is restructured. Users and CLI assistants reference beats
     /// as "Beat #134" using this column.</summary>
     public int Number { get; set; }
 
@@ -51,7 +51,7 @@ public class Beat
 
     /// <summary>True when this beat begins a new chapter. The UI renders a
     /// divider above the beat with <see cref="BeatTitle"/> as the heading.
-    /// Replaces the old "chapters are child strands" model: one flat strand
+    /// Replaces the old "chapters are child nodes" model: one flat node
     /// per work, chapters are just beats with this flag. Orthogonal to
     /// <see cref="Kind"/> — a quote/epigraph can start a chapter too.</summary>
     public bool IsChapterStart { get; set; }
@@ -89,7 +89,7 @@ public class Beat
     // ── Audio ────────────────────────────────────────────────────────────
 
     /// <summary>ElevenLabs voice id of the canonical rendering. Null = use
-    /// the strand's default voice when narrating.</summary>
+    /// the node's default voice when narrating.</summary>
     public string? VoiceId { get; set; }
 
     /// <summary>Relative path under engine/audio/ to the .wav or .mp3 file.
@@ -136,9 +136,9 @@ public class Beat
     public double? EmotionalScore { get; set; }
 
     // ── Trailing gap (silence after this beat, before the next) ─────────
-    // Each Beat owns the gap that follows it. The last beat in a strand
+    // Each Beat owns the gap that follows it. The last beat in a node
     // ignores this field. Null = "use the computed default" from
-    // <see cref="StrandWorkbenchService.ComputeTrailingSilenceMs"/>
+    // <see cref="NodeWorkbenchService.ComputeTrailingSilenceMs"/>
     // (SceneType + terminator punctuation → 200/400/1000/1800ms). A value
     // (including 0) is an explicit override the user set in the UI.
     // Replaces the separate Gap table — gap is a property of the upper beat.
@@ -149,7 +149,7 @@ public class Beat
 
     /// <summary>Optional recorded clip (rain, ambient, sigh) to play instead
     /// of digital silence in the gap after this beat. Path relative to the
-    /// strands audio root. Null = digital silence.</summary>
+    /// nodes audio root. Null = digital silence.</summary>
     public string? GapAfterAudioPath { get; set; }
 
     // ── Provenance ───────────────────────────────────────────────────────
@@ -171,7 +171,7 @@ public class Beat
     [ConcurrencyCheck]
     public DateTime UpdatedAt { get; set; } = DateTime.UtcNow;
 
-    /// <summary>Reverse navigation — which strands include this beat. Set
-    /// by EF Core through the StrandBeats junction.</summary>
-    public List<StrandBeat> StrandBeats { get; set; } = new();
+    /// <summary>Reverse navigation — which nodes include this beat. Set
+    /// by EF Core through the NodeBeats junction.</summary>
+    public List<NodeBeat> NodeBeats { get; set; } = new();
 }

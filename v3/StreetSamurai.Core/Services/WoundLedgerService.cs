@@ -7,7 +7,7 @@ namespace StreetSamurai.Core.Services;
 /// <summary>One wound on a character's literal body map.</summary>
 public sealed record WoundRow(
     long Id, Guid CharacterId, string BodyLocation, string Description, string Severity,
-    string? SourceStrandSlug, Guid? SourceBeatId, DateTime? InWorldDate,
+    string? SourceNodeSlug, Guid? SourceBeatId, DateTime? InWorldDate,
     int ExpectedHealingDays, string Status, string ResidualEffect);
 
 /// <summary>
@@ -36,7 +36,7 @@ public class WoundLedgerService(
                     [BodyLocation]        NVARCHAR(120)  NOT NULL,
                     [Description]         NVARCHAR(500)  NOT NULL,
                     [Severity]            NVARCHAR(20)   NOT NULL,
-                    [SourceStrandSlug]    NVARCHAR(200)  NULL,
+                    [SourceNodeSlug]    NVARCHAR(200)  NULL,
                     [SourceBeatId]        UNIQUEIDENTIFIER NULL,
                     [InWorldDate]         DATETIME2      NULL,
                     [ExpectedHealingDays] INT            NOT NULL DEFAULT 14,
@@ -52,7 +52,7 @@ public class WoundLedgerService(
 
     public virtual async Task<long> AddAsync(
         Guid characterId, string bodyLocation, string description, string severity,
-        string? sourceStrandSlug = null, Guid? sourceBeatId = null, DateTime? inWorldDate = null,
+        string? sourceNodeSlug = null, Guid? sourceBeatId = null, DateTime? inWorldDate = null,
         int expectedHealingDays = 14, string status = "fresh", string residualEffect = "",
         CancellationToken ct = default)
     {
@@ -60,9 +60,9 @@ public class WoundLedgerService(
         await using var db = await dbFactory.CreateDbContextAsync(ct);
         await db.Database.ExecuteSqlRawAsync("""
             INSERT INTO [dbo].[WoundLedger]
-                ([CharacterId],[BodyLocation],[Description],[Severity],[SourceStrandSlug],[SourceBeatId],[InWorldDate],[ExpectedHealingDays],[Status],[ResidualEffect])
+                ([CharacterId],[BodyLocation],[Description],[Severity],[SourceNodeSlug],[SourceBeatId],[InWorldDate],[ExpectedHealingDays],[Status],[ResidualEffect])
             VALUES ({0},{1},{2},{3},{4},{5},{6},{7},{8},{9})
-            """, [characterId, bodyLocation, description, severity, (object?)sourceStrandSlug ?? DBNull.Value, (object?)sourceBeatId ?? DBNull.Value, (object?)inWorldDate ?? DBNull.Value, expectedHealingDays, status, residualEffect], ct);
+            """, [characterId, bodyLocation, description, severity, (object?)sourceNodeSlug ?? DBNull.Value, (object?)sourceBeatId ?? DBNull.Value, (object?)inWorldDate ?? DBNull.Value, expectedHealingDays, status, residualEffect], ct);
         log.LogInformation("Wound logged: {Char} {Loc} ({Sev})", characterId, bodyLocation, severity);
         await using var db2 = await dbFactory.CreateDbContextAsync(ct);
         return await db2.Database.SqlQueryRaw<long>("SELECT MAX(Id) AS [Value] FROM [dbo].[WoundLedger]").FirstAsync(ct);
@@ -77,7 +77,7 @@ public class WoundLedgerService(
         await using var db = await dbFactory.CreateDbContextAsync(ct);
         var rows = await db.Database.SqlQueryRaw<WoundRow>("""
             SELECT [Id],[CharacterId],[BodyLocation],[Description],[Severity],
-                   [SourceStrandSlug],[SourceBeatId],[InWorldDate],[ExpectedHealingDays],[Status],[ResidualEffect]
+                   [SourceNodeSlug],[SourceBeatId],[InWorldDate],[ExpectedHealingDays],[Status],[ResidualEffect]
             FROM [dbo].[WoundLedger] WHERE [CharacterId] = {0} AND [Status] NOT IN ('scarred','healed')
             """, characterId).ToListAsync(ct);
         if (atInWorldDate.HasValue)
@@ -93,7 +93,7 @@ public class WoundLedgerService(
         var wounds = await GetActiveAsync(characterId, atInWorldDate, ct);
         if (wounds.Count == 0) return "";
         var lines = wounds.Select(w =>
-            $"- {w.BodyLocation}: {w.Description} ({w.Severity}{(w.SourceStrandSlug != null ? $", from {w.SourceStrandSlug}" : "")})" +
+            $"- {w.BodyLocation}: {w.Description} ({w.Severity}{(w.SourceNodeSlug != null ? $", from {w.SourceNodeSlug}" : "")})" +
             (w.ResidualEffect.Length > 0 ? $" — {w.ResidualEffect}" : ""));
         return "ACTIVE WOUNDS — the body remembers; exertion costs, movement compensates, and callbacks to the wounding event are earned:\n"
             + string.Join("\n", lines);

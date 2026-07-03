@@ -34,7 +34,7 @@ public static class ServiceCollectionExtensions
                 ?? cfg?.GetConnectionString("StreetSamurai")
                 ?? @"Server=(localdb)\MSSQLLocalDB;Database=StreetSamurai;Trusted_Connection=True;TrustServerCertificate=True;";
             opts.UseSqlServer(connStr);
-            // The multi-universe global query filters live on the Entity/Strand/Book PRINCIPALS;
+            // The multi-universe global query filters live on the Entity/Node/Book PRINCIPALS;
             // their dependents inherit the universe and intentionally carry no filter. EF logs a
             // "required end of a relationship" warning for each such navigation — expected and
             // correct here, so suppress the noise (it would fire on every model build).
@@ -83,7 +83,7 @@ public static class ServiceCollectionExtensions
         // Audio bytes backend. Three modes via AudioStore:Provider:
         //
         //   "local"     (default)  — LocalDiskAudioStore. Files under
-        //                            MutableDataDir/strands/{slug}/audio/…
+        //                            MutableDataDir/nodes/{slug}/audio/…
         //   "azureblob"             — AzureBlobAudioStore. Bytes in an Azure
         //                            Blob container; needs AudioStore:
         //                            ConnectionString + AudioStore:Container.
@@ -95,7 +95,7 @@ public static class ServiceCollectionExtensions
         //                            survive when either side has trouble.
         //
         // Env-var fallbacks: AudioStore__Provider (and the per-backend keys
-        // the individual stores read). The interface keeps StrandWorkbenchService
+        // the individual stores read). The interface keeps NodeWorkbenchService
         // backend-agnostic — see IAudioStore docs.
         services.AddSingleton<IAudioStore>(sp =>
         {
@@ -407,13 +407,13 @@ public static class ServiceCollectionExtensions
         services.AddSingleton<EpisodeAudioService>();
         services.AddSingleton<EpisodeExportService>();
         services.AddSingleton<ChapterRecordingService>();
-        services.AddSingleton<StrandMigrationService>();
-        services.AddSingleton<StrandWorkbenchService>(sp => new StrandWorkbenchService(
+        services.AddSingleton<NodeMigrationService>();
+        services.AddSingleton<NodeWorkbenchService>(sp => new NodeWorkbenchService(
             sp.GetRequiredService<IDbContextFactory<StreetSamuraiDbContext>>(),
             sp.GetRequiredService<ElevenLabsTtsService>(),
             sp.GetRequiredService<IPathProvider>(),
             sp.GetRequiredService<IAudioStore>(),
-            sp.GetRequiredService<Microsoft.Extensions.Logging.ILogger<StrandWorkbenchService>>(),
+            sp.GetRequiredService<Microsoft.Extensions.Logging.ILogger<NodeWorkbenchService>>(),
             sp.GetService<SettingsService>(),
             sp.GetRequiredService<EntityRamificationService>(),
             sp.GetRequiredService<PostBeatValidationService>()));
@@ -582,7 +582,7 @@ public static class ServiceCollectionExtensions
         services.AddSingleton<TextAnalysisService>();
         services.AddSingleton<ContextAnalyzerService>();
         services.AddSingleton<BeatGeneratorService>();
-        services.AddSingleton<StrandBibleService>();
+        services.AddSingleton<NodeBibleService>();
         services.AddSingleton<SceneGenerationService>();
         services.AddSingleton<CombatSceneWriter>();
         services.AddSingleton<StoryStarterService>();
@@ -669,7 +669,7 @@ public static class ServiceCollectionExtensions
         services.AddHttpClient<LegionClient>(c => c.Timeout = TimeSpan.FromMinutes(15));
         services.AddHttpClient<LlmVotingProvider>(c => c.Timeout = TimeSpan.FromMinutes(15));
 
-        // Strand-review transport seam (IReviewLlm). The cloud impl is a thin pass-through
+        // Node-review transport seam (IReviewLlm). The cloud impl is a thin pass-through
         // to LegionClient (the trusted-4 panel, unchanged); the local impl is a
         // self-contained Ollama client used ONLY by `--local` reviews. They never mix.
         services.AddSingleton<StreetSamurai.Core.Services.Local.CloudReviewLlm>();
@@ -723,10 +723,10 @@ public static class ServiceCollectionExtensions
             return new LlmVotingProvider(http, cfg);
         });
         services.AddSingleton<LlmVotingService>();
-        // Persona reader-review system: export a strand to markdown, fan N Legion
+        // Persona reader-review system: export a node to markdown, fan N Legion
         // personas across the trusted-4 to each write an honest scored review,
         // then synthesize the Amazon-style aggregate.
-        services.AddSingleton<StrandMarkdownExporter>();
+        services.AddSingleton<NodeMarkdownExporter>();
         services.AddSingleton<ReviewReportExporter>();
         services.AddSingleton<PublishCleanupService>();
         services.AddSingleton<DocxExportService>();
@@ -734,7 +734,7 @@ public static class ServiceCollectionExtensions
         services.AddSingleton<AudiblePackageService>(sp =>
             new AudiblePackageService(
                 sp.GetRequiredService<IDbContextFactory<StreetSamuraiDbContext>>(),
-                sp.GetRequiredService<StrandWorkbenchService>(),
+                sp.GetRequiredService<NodeWorkbenchService>(),
                 sp.GetRequiredService<SettingsService>(),
                 sp.GetRequiredService<ILogger<AudiblePackageService>>(),
                 sp.GetService<ILlmService>()));
@@ -744,7 +744,7 @@ public static class ServiceCollectionExtensions
         services.AddSingleton<CoverageService>();
         services.AddSingleton<ProseReflowService>();
         services.AddSingleton<BeatRebuildService>();
-        services.AddSingleton<StrandReviewService>();
+        services.AddSingleton<NodeReviewService>();
         services.AddSingleton<StoryQualityService>();
         services.AddSingleton<StoryRefinementService>();
         services.AddSingleton<CanonGroundingService>();
@@ -762,7 +762,7 @@ public static class ServiceCollectionExtensions
         services.AddSingleton<BehavioralInvariantEnforcer>();
         services.AddSingleton<WeaponAmmoCompatibilityService>();
         services.AddSingleton<MarkdownFileService>();
-        services.AddSingleton<StrandSpineService>();
+        services.AddSingleton<NodeSpineService>();
 
         // Auto-validation pipeline (2026-06-20): orchestrates prose guard + gear carry +
         // behavior enforcer after every beat save; files violations as Findings.
@@ -775,8 +775,8 @@ public static class ServiceCollectionExtensions
 
         // Pre-flight structural diagnostics — 12 parallel LLM checks that catch
         // structural problems (missing antagonist cost, passive protagonist, etc.)
-        // BEFORE the 60-ballot review panel. Available via `ss --diagnose-strand`
-        // and the `diagnose_strand` MCP tool.
+        // BEFORE the 60-ballot review panel. Available via `ss --diagnose-node`
+        // and the `diagnose_node` MCP tool.
         services.AddSingleton<StructuralDiagnosticService>();
 
         // Emotional Intelligence Examination (SS-A15): 8-dimension, 0–4, per-beat,
@@ -798,7 +798,7 @@ public static class ServiceCollectionExtensions
         services.AddSingleton<PlantPayoffService>();
 
         // Story commandment audits — gateway (standalone) and sequel commandment sets.
-        // Determined automatically from Strand.PreviousStrandId.
+        // Determined automatically from Node.PreviousNodeId.
         // Available via `ss --story-audit` and the Tools.StoryAudit MCP tools.
         services.AddSingleton<StoryAuditService>();
 

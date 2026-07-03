@@ -31,6 +31,7 @@
 | [Gear Entity Crud](#gear-entity-crud) | 7 |
 | [Lore Triple](#lore-triple) | 7 |
 | [Narrative Science](#narrative-science) | 5 |
+| [Node](#node) | 32 |
 | [Planning](#planning) | 6 |
 | [Plant Payoff](#plant-payoff) | 6 |
 | [Quality](#quality) | 11 |
@@ -40,7 +41,6 @@
 | [Story](#story) | 6 |
 | [Story Audit](#story-audit) | 2 |
 | [Story Logic](#story-logic) | 1 |
-| [Strand](#strand) | 32 |
 | [Universe](#universe) | 3 |
 | [Voice](#voice) | 5 |
 | [Workflow Monitor](#workflow-monitor) | 3 |
@@ -54,21 +54,21 @@
 
 ### `affect_check`
 
-Check whether each character's EMOTION believably DRIVES their ACTION. Flags actions that ignore what just happened, unmotivated calm, feelings named but not enacted. Files advisory Findings; returns score 0-100 + issues. Arg: strand GUID or slug.
+Check whether each character's EMOTION believably DRIVES their ACTION. Flags actions that ignore what just happened, unmotivated calm, feelings named but not enacted. Files advisory Findings; returns score 0-100 + issues. Arg: node GUID or slug.
 
-- `strandIdOrSlug` (string, required) — Strand id (GUID) or slug.
+- `nodeIdOrSlug` (string, required) — Node id (GUID) or slug.
 
 ### `causality_check`
 
-Check a strand's CAUSE-AND-EFFECT: do beats follow by therefore/but rather than 'and then'? Flags episodic transitions, effects without setup, actions against established motive, implausible reactions. Files advisory Findings; returns score 0-100 + issues. Arg: strand GUID or slug.
+Check a node's CAUSE-AND-EFFECT: do beats follow by therefore/but rather than 'and then'? Flags episodic transitions, effects without setup, actions against established motive, implausible reactions. Files advisory Findings; returns score 0-100 + issues. Arg: node GUID or slug.
 
-- `strandIdOrSlug` (string, required) — Strand id (GUID) or slug.
+- `nodeIdOrSlug` (string, required) — Node id (GUID) or slug.
 
 ### `interpersonal_check`
 
-Check INTERPERSONAL DYNAMICS — the 90+ relational lever. Are exchanges doing real relational work on BOTH channels (verbal subtext + non-verbal body/gesture)? Flags info-only dead exchanges, missing non-verbal channel, on-the-nose emotion-naming, bonds that don't change. Files advisory Findings; returns score 0-100 + issues. Arg: strand GUID or slug.
+Check INTERPERSONAL DYNAMICS — the 90+ relational lever. Are exchanges doing real relational work on BOTH channels (verbal subtext + non-verbal body/gesture)? Flags info-only dead exchanges, missing non-verbal channel, on-the-nose emotion-naming, bonds that don't change. Files advisory Findings; returns score 0-100 + issues. Arg: node GUID or slug.
 
-- `strandIdOrSlug` (string, required) — Strand id (GUID) or slug.
+- `nodeIdOrSlug` (string, required) — Node id (GUID) or slug.
 
 ## Bible
 
@@ -174,21 +174,21 @@ Generate an action sequence using the StreetSamurai combat writer. Respects part
 
 ### `doc_context_prepare`
 
-Prepare the Doc Context Stack — the rotating cast of pertinent canon .md docs for a topic/scene. Returns one budgeted block plus the resident docs (tier + why each loaded). Pass strandCode (e.g. 'BCODA') to include that story's bible + its one register; pass text (scene/goal/conversation) to trigger topic docs by keyword and semantic embedding. This is how you load only the few docs that matter now instead of dumping hundreds.
+Prepare the Doc Context Stack — the rotating cast of pertinent canon .md docs for a topic/scene. Returns one budgeted block plus the resident docs (tier + why each loaded). Pass nodeCode (e.g. 'BCODA') to include that story's bible + its one register; pass text (scene/goal/conversation) to trigger topic docs by keyword and semantic embedding. This is how you load only the few docs that matter now instead of dumping hundreds.
 
 - `text` (string, required) — Scene/goal/conversation text to trigger topic docs against.
-- `strandCode` (string, optional) — Optional strand CODE (e.g. 'BCODA') to also load that story's bible + register.
+- `nodeCode` (string, optional) — Optional node CODE (e.g. 'BCODA') to also load that story's bible + register.
 - `budget` (int, optional) — Token budget for the assembled block. Default 2000.
 
 ### `doc_context_status`
 
-Inspect the current Doc Context Stack working set (the docs resident in the rotating cast) for a strand context, without changing it. Returns each doc's tier, why it loaded, and its score.
+Inspect the current Doc Context Stack working set (the docs resident in the rotating cast) for a node context, without changing it. Returns each doc's tier, why it loaded, and its score.
 
-- `strandCode` (string, optional) — Optional strand CODE whose working set to inspect.
+- `nodeCode` (string, optional) — Optional node CODE whose working set to inspect.
 
 ### `get_markdown_file`
 
-Get the content of a tracked markdown file from the database. Pass asOf (ISO 8601 UTC) to retrieve a historical version from the temporal table. relativePath examples: 'CLAUDE.md', 'docs/BIBLE.md', 'feedback_sequential_strand_writing.md'
+Get the content of a tracked markdown file from the database. Pass asOf (ISO 8601 UTC) to retrieve a historical version from the temporal table. relativePath examples: 'CLAUDE.md', 'docs/BIBLE.md', 'feedback_sequential_node_writing.md'
 
 - `relativePath` (string, required) — Relative path key, e.g. 'CLAUDE.md' or 'docs/AMENDMENTS.md'.
 - `asOf` (string, optional) — Optional ISO 8601 UTC datetime to retrieve the version current at that moment.
@@ -572,28 +572,28 @@ List every weapon in canon. Returns name + category + manufacturer. Use this to 
 
 ### `clear_entity_context`
 
-Clear the entity context stack for a strand. Use when starting a new writing session for a strand to reset the LRU working memory.
+Clear the entity context stack for a node. Use when starting a new writing session for a node to reset the LRU working memory.
 
-- `slug` (string, required) — Strand slug
+- `slug` (string, required) — Node slug
 
 ### `get_entity_beat_mentions`
 
-Find every beat in the narrative where a specific entity is mentioned. Returns a list grouped by strand with beat number, beat handle, and a short excerpt. Useful for auditing entity coverage, finding canon moments, and reverse-navigating from entity to story.
+Find every beat in the narrative where a specific entity is mentioned. Returns a list grouped by node with beat number, beat handle, and a short excerpt. Useful for auditing entity coverage, finding canon moments, and reverse-navigating from entity to story.
 
 - `entityId` (string, required) — Entity ID (GUID) or entity slug
 - `limit` (int, optional) — Maximum results to return (default 50)
 
 ### `get_entity_context`
 
-Inspect the entity working memory currently active for a strand. Shows depth-0 (directly named), depth-1 (semantic neighbors), and depth-2 (neighbors of neighbors) entities with their canon descriptions. Call after generating beats to see what was in scope.
+Inspect the entity working memory currently active for a node. Shows depth-0 (directly named), depth-1 (semantic neighbors), and depth-2 (neighbors of neighbors) entities with their canon descriptions. Call after generating beats to see what was in scope.
 
-- `slug` (string, required) — Strand slug (e.g. 'ATTE', 'BCODA')
+- `slug` (string, required) — Node slug (e.g. 'ATTE', 'BCODA')
 
 ### `scan_entity_context`
 
 Run the entity context scanner on a text snippet and return the formatted context block that would be injected into the beat prompt. Useful for testing what entities the scanner picks up from a given passage or beat goal.
 
-- `slug` (string, required) — Strand slug — context is keyed per strand
+- `slug` (string, required) — Node slug — context is keyed per node
 - `text` (string, required) — Text to scan (beat goal, prose excerpt, or entity name)
 
 ## Findings
@@ -828,9 +828,262 @@ Score how well a beat poses or answers the Dramatic Question ('who is this perso
 
 ### `map_five_act_structure`
 
-Map a strand's beats to Will Storr's five-act character-change arc. Act I: establish the protagonist's flaw + ignition event (unexpected change that pressures the flaw). Act II: character applies old theory of control, it partially works. Act III: transformation trigger — the flaw fails catastrophically or wins at too high a cost. Act IV: dark night — all fears realized, old theory stripped. Act V: God moment — dramatic question answered definitively (comic: transformation; tragic: doubling down). Returns: beat assignments per act, ignition_beat / trigger_beat / god_moment_beat numbers, structural_gaps list, structural_strengths list, resolution type (comic/tragic/unclear), and an overall assessment paragraph. Accepts strand id (GUID) or slug.
+Map a node's beats to Will Storr's five-act character-change arc. Act I: establish the protagonist's flaw + ignition event (unexpected change that pressures the flaw). Act II: character applies old theory of control, it partially works. Act III: transformation trigger — the flaw fails catastrophically or wins at too high a cost. Act IV: dark night — all fears realized, old theory stripped. Act V: God moment — dramatic question answered definitively (comic: transformation; tragic: doubling down). Returns: beat assignments per act, ignition_beat / trigger_beat / god_moment_beat numbers, structural_gaps list, structural_strengths list, resolution type (comic/tragic/unclear), and an overall assessment paragraph. Accepts node id (GUID) or slug.
 
-- `strandIdOrSlug` (string, required) — Strand id (GUID) or slug.
+- `nodeIdOrSlug` (string, required) — Node id (GUID) or slug.
+
+## Node
+
+<sub>`NodeTools`</sub>
+
+### `append_node_amendment`
+
+Append an amendment to the node's narrative spine. Amendments are append-only — they form an auditable change log of narrative decisions. Use when: changing a character's motivation after beats are written, retconning world rules, or noting why a section was expanded or cut.
+
+- `idOrSlug` (string, required) — Node id (GUID) or slug.
+- `summary` (string, required) — One-line summary of the change.
+- `body` (string, required) — Full amendment body (markdown). Explain what changed and why.
+
+### `clear_beat_gap_after`
+
+Clear an explicit gap-after-beat override. The audio engine falls back to the auto-computed silence from SceneType + terminator punctuation.
+
+- `beatHandle` (string, required) — Beat Guid OR 'node-guid.beat-guid' handle.
+
+### `clone_node`
+
+Clone a node into a fully independent copy: new Node row + new Beat rows, same prose. Audio, scores, and review history are NOT copied — clone starts fresh. Supports nodeCode and isDraft so the clone can be excluded from score/publish flows until promoted. Use this instead of DuplicateNode when you need nodeCode, isDraft, or per-experiment isolation. Returns new id, slug, beat count.
+
+- `idOrSlug` (string, required) — Source node Guid id or slug.
+- `title` (string, optional) — Title for the clone. Defaults to 'Source Title (Clone)'.
+- `nodeCode` (string, optional) — Optional short reference code for the clone (e.g. 'SM1'). Rejected if already in use.
+- `isDraft` (bool, optional) — Mark the clone as a draft (excluded from review/score/publish flows). Default true.
+- `status` (string, optional) — Status value to stamp on the clone: 'ready', 'draft', etc. Default 'ready'.
+
+### `create_node`
+
+Create a new empty root node (no beats) — the bible-first entry point for a brand-new story. Write the bible/beats afterward via InsertBeat or the UI. UniverseId is stamped to the current universe (GLMZ). Returns the new id, slug, and URL.
+
+- `title` (string, required) — Display title. Required.
+- `code` (string, optional) — Optional short reference code (e.g. 'SRZR'). Upper-cased; rejected if already in use.
+- `kind` (string, optional) — Category: 'story' (default, root), 'book', 'chapter', 'vignette'…
+- `synopsis` (string, optional) — Optional one-line synopsis.
+- `seed` (string, optional) — Optional one-line generator seed / logline.
+- `previous` (string, optional) — Optional prior node this one continues (slug or GUID) — sequel commandments apply.
+- `parent` (string, optional) — Optional parent node (slug or GUID) — makes this a sub-node.
+
+### `create_node`
+
+Create a new node. Pass 'seed' to also generate a node bible and planned beats immediately. Returns the new node's id, slug, url, and (if bible was generated) the bible text.
+
+- `title` (string, required) — Node title. Required.
+- `kind` (string, optional) — Node kind: 'series' (groups stories), 'story' (root publishable work), or 'chapter' (sub-node of a story, contains beats). Default 'story'.
+- `synopsis` (string, optional) — Optional synopsis.
+- `seed` (string, optional) — One-line generation seed. When provided, the node bible and planned beats are created immediately after the node row is inserted.
+- `targetBeats` (int, optional) — Target beat count for the bible spine (only used when seed is provided). Default 12.
+- `parentNodeIdOrSlug` (string, optional) — Optional parent node Guid id (or slug). Empty = top-level.
+- `code` (string, optional) — Optional short author-assigned reference code (e.g. 'ATTE', 'BCODA'). For series and story nodes only — chapters never carry a code. Uppercased and stored as a unique lookup key. Leave empty to skip.
+
+### `delete_beat`
+
+Remove a beat from a node. If the beat is not referenced by any other node, the beat row + audio file are deleted entirely.
+
+- `nodeIdOrSlug` (string, required) — Node Guid id or slug.
+- `beatId` (string, required) — Beat Guid id to delete.
+
+### `duplicate_node`
+
+Deep-duplicate a node (and its sub-node tree) into a fresh, independent copy. Every beat is cloned into a new row — prose and narration metadata are preserved, but audio, review scores, and the stale flag are reset. Editing the copy never affects the original. Accepts a Guid id OR a slug. Returns the new node's id, slug, and writer URL.
+
+- `idOrSlug` (string, required) — Source node Guid id or slug.
+- `newTitle` (string, required) — Title for the new duplicate. Required.
+
+### `generate_node_bible`
+
+Generate (or regenerate) the node bible for a node. Uses the node's Seed field (falls back to Synopsis then Title) plus the literary rules to produce a dry structural plan: logline, premise, register, characters, numbered beat spine, seeds & payoffs. Creates planned Beat rows from the spine when the node has no beats yet. Returns the generated bible text.
+
+- `idOrSlug` (string, required) — Node Guid id or slug.
+- `targetBeats` (int, optional) — Target number of beats in the spine. 0 = auto (use existing beat count or 12).
+
+### `get_beat`
+
+Get a single beat with every authoring field — prose, kind, IsChapterStart, BeatTitle, gap-after, tone/pace/facet metadata, position within node, and the previous/next beat ids for relative insertion. Accepts a plain Beat Guid or the 'node-guid.beat-guid' dotted handle the writer UI shows on the LLM bottom sheet.
+
+- `beatHandle` (string, required) — Beat Guid OR the dotted 'node-guid.beat-guid' handle.
+
+### `get_node`
+
+Get a single node with its beats in reading order. Accepts a Guid id OR a slug. Returns node metadata + ordered beats (id, text, stale, has_audio, beat_title, synopsis).
+
+- `idOrSlug` (string, required) — Node Guid id or slug.
+
+### `get_node_bible`
+
+Get the node bible for a node — the dry structural plan (logline, premise, register, characters, beat spine, seeds & payoffs). Returns the raw markdown text plus the parsed beat spine entries so you can see the planned arc at a glance. Returns has_bible=false when no bible exists yet.
+
+- `idOrSlug` (string, required) — Node Guid id or slug.
+
+### `get_node_spine`
+
+Return the full narrative spine for a node: bible, user stories, all amendments (in order), and the latest spine version pin (which records the content hashes and amendment count at the last docx export). Use this before writing prose to understand the narrative contract.
+
+- `idOrSlug` (string, required) — Node id (GUID) or slug.
+
+### `get_score_history`
+
+Return the score history for a node as a time-series — every review run that produced a summary, with its mean score, SD, review count, and date. Use to track whether an edit moved the needle, or to compare pre/post-edit trajectories. Accepts node id (GUID) or slug.
+
+- `idOrSlug` (string, required) — Node id (GUID) or slug.
+- `limit` (int, optional) — Maximum history points to return (most recent first). Default 20.
+
+### `insert_beat`
+
+Insert a new beat into a node. Pass an empty afterBeatId to insert at the top. Returns the new beat's id.
+
+- `nodeIdOrSlug` (string, required) — Node Guid id or slug.
+- `afterBeatId` (string, optional) — Beat Guid id to insert after, or empty for top-of-node.
+- `text` (string, optional) — Initial prose text for the new beat. May be empty.
+
+### `join_beat`
+
+Merge one beat into the previous one in the node. Audio on the survivor is invalidated.
+
+- `nodeIdOrSlug` (string, required) — Node Guid id or slug.
+- `beatId` (string, required) — Beat Guid id to merge upward.
+
+### `list_nodes`
+
+List nodes. Use kind='story' to list all root stories (no parent); kind='chapter' for all sub-nodes (contain beats). Returns a flat list of id, slug, title, kind, status, beat-count, stale-count.
+
+- `kind` (string, optional) — Optional Kind filter — 'story' (root nodes) or 'chapter' (sub-nodes with beats). Case-insensitive equality match.
+- `limit` (int, optional) — Maximum rows to return. Default 100.
+
+### `list_scores`
+
+List nodes with their latest review score, word count, and estimated page count (250 words/page). Optionally filter by kind ('book', 'chapter', 'episode', etc.) and/or status ('draft', 'canon', 'ready', 'archived'). Returns code, title, kind, status, score (null if unreviewed), words, pages, scored_on. Sorted by score descending (unscored nodes last). Use this for a quick quality dashboard without running new reviews.
+
+- `kind` (string, optional) — Optional kind filter (case-insensitive). E.g. 'book', 'chapter', 'novella'. Empty = all kinds.
+- `status` (string, optional) — Optional status filter (case-insensitive). E.g. 'draft', 'canon', 'ready'. Empty = all statuses except archived.
+- `includeArchived` (bool, optional) — Include archived nodes. Default false.
+- `limit` (int, optional) — Maximum rows to return. Default 200.
+
+### `narrate_node`
+
+Kick off TTS narration for every un-narrated beat in this node (and its child nodes recursively). Returns immediately — narration runs in the background; poll get_node to observe progress. Returns an error response (without spawning anything) if TTS is not configured.
+
+- `nodeIdOrSlug` (string, required) — Node Guid id or slug.
+
+### `pin_node_spine_version`
+
+Create a spine version pin for the node's current docx version. Records the SHA-256 hashes of the current bible and user stories, plus the amendment count, so future drift checks can tell when prose was written against a stale spine. Call this after every significant prose session or whenever the spine changes.
+
+- `idOrSlug` (string, required) — Node id (GUID) or slug.
+- `notes` (string, optional) — Optional human note explaining what changed at this version.
+
+### `prepare_audible`
+
+Build an Audible AI-narration hand-off package for a node. Produces three files in {publishDir}/{Title}/Audible/: (1) a narration-clean manuscript (.audible.txt) with markdown artifacts stripped and Φ expanded to 'QUANTA'; (2) a pronunciation guide (.pronunciation.md) listing entity names with plain-English respellings; (3) AUDIBLE_README.md with submission instructions. No API is called on Audible's side — the author uploads the .audible.txt via ACX/Audible publisher portal. Returns paths + word/term counts.
+
+- `nodeIdOrSlug` (string, required) — Node id (GUID) or slug.
+- `withPhonetics` (bool, optional) — Run the optional LLM phonetics pass to fill in 'Say it as' respellings. Default true. Set false to skip and leave the column blank for manual completion.
+
+### `print_node`
+
+Print all beats of a node as continuous prose — each beat's Text joined by a blank line. No headers, no beat numbers, no metadata. Accepts node id (GUID) or slug. Use this to read the full prose of a node in one call.
+
+- `idOrSlug` (string, required) — Node Guid id or slug.
+
+### `publish_audiobook`
+
+Render the whole node as one continuous narration (no per-beat voice drift) and write the MP3 to the configured publish directory (defaults to Desktop). TTS engine: 'elevenlabs' (default, paid, highest fidelity), 'piper' (free/local, fastest), 'kokoro' (free/local, recommended), 'chatterbox' (free/local, most expressive). Returns the path of the written file, or null if the node has no beat text.
+
+- `nodeIdOrSlug` (string, required) — Node id (GUID) or slug.
+- `ttsEngine` (string, optional) — TTS engine: elevenlabs (default) | piper | kokoro | chatterbox.
+- `robust` (bool, optional) — Set to true to retune this node's frozen voice snapshot to Robust stability (1.0) before recording.
+
+### `publish_docx`
+
+Render a node to a KDP-ready Word .docx and write it to the configured publish directory (defaults to Desktop). Returns the path of the written file. Use get_node first to confirm the node exists.
+
+- `nodeIdOrSlug` (string, required) — Node id (GUID) or slug.
+- `author` (string, optional) — Author name to embed in the document properties. Optional.
+
+### `rebeat_node`
+
+Re-segment a node's beats to the codified beat doctrine via LLM re-segmentation. Dry-run by default (safe to call freely). Set apply=true to export a Markdown backup then replace the beats — only committed if the word-retention guard passes (prevents silent content loss). Returns old/new beat counts, retention %, guard result, and a note if it was blocked.
+
+- `nodeIdOrSlug` (string, required) — Node id (GUID) or slug.
+- `apply` (bool, optional) — Set to true to commit the new segmentation. Default false = dry run.
+
+### `reflow_node`
+
+Copy-edit a node's prose in-place: adds missing '?' on questions, swaps 'says/said' → 'asks/asked' on question dialogue lines, and normalises paragraph/dialogue spacing. Dry-run by default — set apply=true to commit. Beats the model modified beyond those specific edits are rejected and left untouched. Returns changed/unchanged/rejected/errors counts plus per-beat diff previews.
+
+- `nodeIdOrSlug` (string, required) — Node id (GUID) or slug.
+- `apply` (bool, optional) — Set to true to write the edits to the DB. Default false = dry run.
+
+### `set_beat_gap_after`
+
+Set the silence (in ms) the audio engine inserts AFTER this beat, before the next. 0 = no silence (explicit override). Use ClearBeatGapAfter to revert to the auto-computed default from SceneType + terminator punctuation.
+
+- `beatHandle` (string, required) — Beat Guid OR 'node-guid.beat-guid' handle.
+- `durationMs` (int, required) — Silence in milliseconds, 0..6000.
+
+### `set_node_bible`
+
+Manually set or replace the node bible text. Use when you want to hand-write the plan instead of generating it. The text is saved verbatim; beat spine parsing still applies for planned-beat creation. Pass an empty string to clear the bible.
+
+- `idOrSlug` (string, required) — Node Guid id or slug.
+- `bibleText` (string, required) — Full bible markdown text to store. Empty string clears the bible.
+
+### `set_node_user_stories`
+
+Set (replace) the user stories / acceptance criteria for a node. Write this before starting prose — it defines what scenes, arcs, and voice moments must be present for the node to reach ≥82% standalone and ≥85% cumulative story score.
+
+- `idOrSlug` (string, required) — Node id (GUID) or slug.
+- `userStoriesText` (string, required) — Full user stories markdown. Will replace any existing content.
+
+### `split_beat`
+
+Split one beat into two at the nearest sentence boundary near its midpoint. Both halves lose their audio.
+
+- `nodeIdOrSlug` (string, required) — Node Guid id or slug.
+- `beatId` (string, required) — Beat Guid id to split.
+
+### `update_beat_metadata`
+
+Update a beat's metadata: BeatTitle, Synopsis, EmotionalTone, PaceHint, StructureRole, Act, SceneType, IsChapterStart, Kind. Pass empty strings to clear nullable fields. Does NOT touch prose or audio. Use to mark a beat as a chapter start, change its kind to quote/dedication/book-title, or set the tone the next re-record uses.
+
+- `beatHandle` (string, required) — Beat Guid OR 'node-guid.beat-guid' handle.
+- `beatTitle` (string, optional) — Short label. When IsChapterStart=true this is the chapter heading; when Kind=quote this is the attribution.
+- `synopsis` (string, optional) — One-line synopsis fed to LLM regenerations.
+- `emotionalTone` (string, optional) — Emotional tone, e.g. 'quiet' / 'tense' / 'wry'.
+- `paceHint` (string, optional) — Pace hint, e.g. 'flowing' / 'clipped' / 'staccato' / 'languorous'.
+- `structureRole` (string, optional) — Structure role, e.g. 'inciting-incident' / 'rising-action' / 'climax'.
+- `act` (int, optional) — Plot-act number 0–5. 0 = unassigned.
+- `sceneType` (string, optional) — Scene type: scene | summary | transition | interstitial.
+- `isChapterStart` (bool, optional) — True = this beat begins a new chapter / section. The writer renders a divider above it with BeatTitle as the heading.
+- `kind` (string, optional) — Beat kind: prose (default) | book-title | dedication | quote. Free-form so new kinds add no schema cost.
+
+### `update_beat_text`
+
+Update one beat's prose. Recomputes the hash, marks the beat stale, and invalidates its audio. Beat.Text accepts inline markdown (**bold** / *italic* / __underline__ / ~~strike~~) and ElevenLabs-style tone tags ([WHISPERING] [GASP] [LAUGHS] [PAUSES] etc.) that render as emoji in the read view. Accepts a Beat Guid OR the 'node-guid.beat-guid' handle.
+
+- `beatHandle` (string, required) — Beat Guid OR 'node-guid.beat-guid' handle.
+- `text` (string, required) — New prose. Replaces the entire beat text. Markdown markers + tone-tag brackets are preserved verbatim in storage.
+
+### `update_node`
+
+Update a node's metadata fields. Pass only the fields you want to change — omit the rest to leave them unchanged. Editable fields: title, synopsis, kind, status, seed, code (NodeCode), voice_id. Status valid values: draft | ready | canon | archived. Code is uppercased and must be unique across non-null values — pass empty string to clear it. Does NOT touch beats or audio.
+
+- `idOrSlug` (string, required) — Node id (GUID) or slug.
+- `title` (string, optional) — New title. Omit to leave unchanged.
+- `synopsis` (string, optional) — Short synopsis. Omit to leave unchanged; pass empty string to clear.
+- `kind` (string, optional) — Kind label: book | chapter | episode | novella | novel | node | scene | saga | anthology. Omit to leave unchanged.
+- `status` (string, optional) — Status: draft | ready | canon | archived. Omit to leave unchanged.
+- `seed` (string, optional) — Generation seed (one-line premise). Omit to leave unchanged; pass empty string to clear.
+- `code` (string, optional) — Short author reference code (e.g. 'ATTE'). Uppercased; pass empty string to clear. Omit to leave unchanged.
+- `voiceId` (string, optional) — ElevenLabs or local TTS voice id. Omit to leave unchanged; pass empty string to clear.
 
 ## Planning
 
@@ -883,15 +1136,15 @@ Predict a character's likely behavior in a given scene. Pulls from the character
 
 ### `audit_plant_payoffs`
 
-Audit all plant/payoff pairs for a strand. Returns: total_pairs, planted (seeded in a beat), paid_off (payoff also written), orphaned (planted but no payoff), not_transparent (payoff exists but is_transparent=false), a gateway_plant_ready boolean (all planted pairs have transparent payoffs), and detail lists for each problem category. Fix orphaned plants and transparency issues before the strand passes gateway audit. Accepts strand id (GUID) or slug.
+Audit all plant/payoff pairs for a node. Returns: total_pairs, planted (seeded in a beat), paid_off (payoff also written), orphaned (planted but no payoff), not_transparent (payoff exists but is_transparent=false), a gateway_plant_ready boolean (all planted pairs have transparent payoffs), and detail lists for each problem category. Fix orphaned plants and transparency issues before the node passes gateway audit. Accepts node id (GUID) or slug.
 
-- `strandIdOrSlug` (string, required) — Strand id (GUID) or slug.
+- `nodeIdOrSlug` (string, required) — Node id (GUID) or slug.
 
 ### `get_plant_payoffs`
 
-List all registered plant/payoff pairs for a strand. A plant is a narrative detail seeded early (a behavioral tell, an object, a gloss) that resonates or resolves later — rewarding re-readers without requiring first-timers to catch it. Returns all pairs with their status (planned = not yet written, seeded = plant beat written but no payoff yet, paid-off = both beats written), is_transparent flag (must be true for the payoff to work for cold readers), and transparency_note (what the re-reader gains). Accepts strand id (GUID) or slug.
+List all registered plant/payoff pairs for a node. A plant is a narrative detail seeded early (a behavioral tell, an object, a gloss) that resonates or resolves later — rewarding re-readers without requiring first-timers to catch it. Returns all pairs with their status (planned = not yet written, seeded = plant beat written but no payoff yet, paid-off = both beats written), is_transparent flag (must be true for the payoff to work for cold readers), and transparency_note (what the re-reader gains). Accepts node id (GUID) or slug.
 
-- `strandIdOrSlug` (string, required) — Strand id (GUID) or slug.
+- `nodeIdOrSlug` (string, required) — Node id (GUID) or slug.
 
 ### `link_payoff_beat`
 
@@ -909,9 +1162,9 @@ Link the plant beat to a registered plant/payoff pair. Call after writing the be
 
 ### `register_plant_payoff`
 
-Register a new plant/payoff pair for a strand. Call this when you're about to write (or have just written) a detail that will pay off later. plant_description = what is seeded (the observable detail the cold reader sees but doesn't decode); payoff_description = what the re-reader gets (the deeper meaning on return). Category options: detail, echo, irony, motif, character-truth, structural. Optionally link to specific beats by their GUID ids (plant_beat_id, payoff_beat_id). Accepts strand id (GUID) or slug.
+Register a new plant/payoff pair for a node. Call this when you're about to write (or have just written) a detail that will pay off later. plant_description = what is seeded (the observable detail the cold reader sees but doesn't decode); payoff_description = what the re-reader gets (the deeper meaning on return). Category options: detail, echo, irony, motif, character-truth, structural. Optionally link to specific beats by their GUID ids (plant_beat_id, payoff_beat_id). Accepts node id (GUID) or slug.
 
-- `strandIdOrSlug` (string, required) — Strand id (GUID) or slug.
+- `nodeIdOrSlug` (string, required) — Node id (GUID) or slug.
 - `plantDescription` (string, required) — What is seeded — the detail the cold reader encounters but doesn't decode. Example: 'Kyle's hand twitches when he mentions Seo.'
 - `payoffDescription` (string, required) — How it pays off — what the returning reader gets on re-read. Example: 'On re-read, the twitch reveals the mentor was fabricated long before Kyle admits it.'
 - `category` (string, optional) — Category: detail | echo | irony | motif | character-truth | structural
@@ -920,7 +1173,7 @@ Register a new plant/payoff pair for a strand. Call this when you're about to wr
 
 ### `set_plant_transparency`
 
-Record whether a payoff beat stands alone for cold readers (is_transparent) and what the re-reader gains (note). is_transparent=true means the payoff makes complete narrative sense without having read/remembered the plant. is_transparent=false is a writing bug — fix the payoff beat before marking the strand gateway-ready. note should name the specific additional layer the returning reader receives.
+Record whether a payoff beat stands alone for cold readers (is_transparent) and what the re-reader gains (note). is_transparent=true means the payoff makes complete narrative sense without having read/remembered the plant. is_transparent=false is a writing bug — fix the payoff beat before marking the node gateway-ready. note should name the specific additional layer the returning reader receives.
 
 - `plantPayoffId` (string, required) — PlantPayoff id (GUID).
 - `isTransparent` (bool, required) — True = the payoff reads completely for a cold reader; false = it requires catching the plant (writing bug).
@@ -938,31 +1191,31 @@ Run the writing-quality heuristic pass over a book's chapters. Same checks the B
 
 ### `check_canon`
 
-Sweep a strand's prose against the entire canon database (entities, locations, weapons, etc.) and queue each contradiction as a CANON-CONTRADICTION finding with an optional proposed fix. Returns the list of contradictions found. Use list_findings / apply_finding / set_finding_status to manage them afterward. Accepts strand id (GUID) or slug.
+Sweep a node's prose against the entire canon database (entities, locations, weapons, etc.) and queue each contradiction as a CANON-CONTRADICTION finding with an optional proposed fix. Returns the list of contradictions found. Use list_findings / apply_finding / set_finding_status to manage them afterward. Accepts node id (GUID) or slug.
 
-- `strandIdOrSlug` (string, required) — Strand id (GUID) or slug.
+- `nodeIdOrSlug` (string, required) — Node id (GUID) or slug.
 - `proposeFixes` (bool, optional) — Set to true to also draft a suggested rewrite for each contradiction found.
 
 ### `check_semantic_fidelity`
 
-Check the Semantic Fidelity Gap for a strand — Goodhart's Law in prose. Detects beats that score high on the Legion review metric but have drifted from the story's original meaning. Two checks: (1) Bible alignment: cosine similarity between each beat's prose and the strand's Seed/Synopsis — a high-scoring beat that no longer resembles the story it was born from is gaming the metric. (2) Intent alignment: cosine similarity between each beat's Synopsis (stated purpose) and its actual prose — drift here means the rewrite served reviewer patterns, not the beat's purpose. Embeds beats (drift-skipped), queries alignment, files SEMANTIC-DRIFT findings for violators, and returns the full report. Accepts strand id (GUID) or slug.
+Check the Semantic Fidelity Gap for a node — Goodhart's Law in prose. Detects beats that score high on the Legion review metric but have drifted from the story's original meaning. Two checks: (1) Bible alignment: cosine similarity between each beat's prose and the node's Seed/Synopsis — a high-scoring beat that no longer resembles the story it was born from is gaming the metric. (2) Intent alignment: cosine similarity between each beat's Synopsis (stated purpose) and its actual prose — drift here means the rewrite served reviewer patterns, not the beat's purpose. Embeds beats (drift-skipped), queries alignment, files SEMANTIC-DRIFT findings for violators, and returns the full report. Accepts node id (GUID) or slug.
 
-- `strandIdOrSlug` (string, required) — Strand id (GUID) or slug.
+- `nodeIdOrSlug` (string, required) — Node id (GUID) or slug.
 
-### `diagnose_strand`
+### `diagnose_node`
 
-Pre-flight structural analysis before running the review panel. Runs 12 targeted checks in parallel and returns Pass/Warn/Fail for each with evidence (a quote from the text) and a concrete one-action fix. Blocking failures (antagonist cost, protagonist behavior change, stakes embodiment, exposition density) mean the chapter is structurally unsound and will score in the 70s regardless of prose quality. Fix those first, then run review_strand. Accepts strand id (GUID) or slug. max_chars controls how much of the assembled strand text each check sees (default 40000 chars ≈ 10k tokens — covers most chapter-length strands; lower to reduce cost, raise for very long strands).
+Pre-flight structural analysis before running the review panel. Runs 12 targeted checks in parallel and returns Pass/Warn/Fail for each with evidence (a quote from the text) and a concrete one-action fix. Blocking failures (antagonist cost, protagonist behavior change, stakes embodiment, exposition density) mean the chapter is structurally unsound and will score in the 70s regardless of prose quality. Fix those first, then run review_node. Accepts node id (GUID) or slug. max_chars controls how much of the assembled node text each check sees (default 40000 chars ≈ 10k tokens — covers most chapter-length nodes; lower to reduce cost, raise for very long nodes).
 
-- `strandIdOrSlug` (string, required) — Strand id (GUID) or slug.
-- `maxChars` (int, optional) — Max characters of assembled strand text each check reads. Default 40000 (~10k tokens). Lower to reduce cost; raise for very long strands (max practical: ~160000).
+- `nodeIdOrSlug` (string, required) — Node id (GUID) or slug.
+- `maxChars` (int, optional) — Max characters of assembled node text each check reads. Default 40000 (~10k tokens). Lower to reduce cost; raise for very long nodes (max practical: ~160000).
 
 ### `examine_emotional_depth`
 
-Emotional Intelligence Examination (SS-A15). Scores prose against an 8-dimension, 0–4 rubric — per beat, character-aware (Want/Need/Wound/Flaw from the strand bible), register-adaptive (CODA/JOY/SORROW/Fantasy anchors). Returns: EmotionalDepthScore 0–100, per-dimension 0–4 scores with strongest evidence, weakest evidence, weakest beat number, and a beat-scoped craft fix; a per-beat emotional depth curve (Standard/Deep effort); character ledgers. Blocking dimensions (WantNeedDivergence=want/need gap, CostFeltNotAsserted=wins felt not stated) file Findings at /findings. Does NOT change Strand.Score or the 82/85 reader-panel gate. Accepts strand id (GUID) or slug.
+Emotional Intelligence Examination (SS-A15). Scores prose against an 8-dimension, 0–4 rubric — per beat, character-aware (Want/Need/Wound/Flaw from the node bible), register-adaptive (CODA/JOY/SORROW/Fantasy anchors). Returns: EmotionalDepthScore 0–100, per-dimension 0–4 scores with strongest evidence, weakest evidence, weakest beat number, and a beat-scoped craft fix; a per-beat emotional depth curve (Standard/Deep effort); character ledgers. Blocking dimensions (WantNeedDivergence=want/need gap, CostFeltNotAsserted=wins felt not stated) file Findings at /findings. Does NOT change Node.Score or the 82/85 reader-panel gate. Accepts node id (GUID) or slug.
 
-- `strandIdOrSlug` (string, required) — Strand id (GUID) or slug.
+- `nodeIdOrSlug` (string, required) — Node id (GUID) or slug.
 - `effort` (string, optional) — Effort tier: 'draft' (Pass 1 only, cheapest), 'standard' (Pass 1 + beat curve, default), 'deep' (Pass 1 + beat curve + ledger refresh + weakest fixes).
-- `maxChars` (int, optional) — Max characters of assembled strand text each check reads. Default 40000 (~10k tokens).
+- `maxChars` (int, optional) — Max characters of assembled node text each check reads. Default 40000 (~10k tokens).
 
 ### `get_review_settings`
 
@@ -972,23 +1225,23 @@ Return the current review-voting configuration: how many score-ballots and prose
 
 ### `get_review_summary`
 
-Return the stored review summary for a strand — the synthesized aggregate of what readers liked, recurring gripes, and concrete improvement suggestions, written by the judge after the last review run. Includes average score, review count, and content hash so you can tell whether the summary is stale (strand was edited after the last run). Call review_strand to refresh. Accepts strand id (GUID) or slug.
+Return the stored review summary for a node — the synthesized aggregate of what readers liked, recurring gripes, and concrete improvement suggestions, written by the judge after the last review run. Includes average score, review count, and content hash so you can tell whether the summary is stale (node was edited after the last run). Call review_node to refresh. Accepts node id (GUID) or slug.
 
-- `strandIdOrSlug` (string, required) — Strand id (GUID) or slug.
+- `nodeIdOrSlug` (string, required) — Node id (GUID) or slug.
 
-### `list_strand_reviews`
+### `list_node_reviews`
 
-List individual ballot reviews for a strand — one row per persona reader, showing persona name, provider, score, flow score (if study mode), improvements, and content hash. Use to inspect which personas scored low and what they said, or to compare how different providers voted. Results are sorted most-recent-first. Accepts strand id (GUID) or slug.
+List individual ballot reviews for a node — one row per persona reader, showing persona name, provider, score, flow score (if study mode), improvements, and content hash. Use to inspect which personas scored low and what they said, or to compare how different providers voted. Results are sorted most-recent-first. Accepts node id (GUID) or slug.
 
-- `strandIdOrSlug` (string, required) — Strand id (GUID) or slug.
+- `nodeIdOrSlug` (string, required) — Node id (GUID) or slug.
 - `contentHash` (string, optional) — Only return reviews from this content hash (i.e. one specific review run). Leave empty for all reviews.
 - `limit` (int, optional) — Maximum rows to return. Default 50.
 
-### `review_strand`
+### `review_node`
 
-Run the sampled Legion review panel against a strand. STRUCTURAL PRE-FLIGHT runs first: if blocking failures are found (missing antagonist cost, passive protagonist, purely-stated stakes, >70% exposition), the review is blocked and returns the diagnosis instead of ballots — fix the structure first. Non-blocking warnings are always appended to the report. Stratified personas cast score-only ballots then the most informative are upgraded to full prose. Use the 'effort' tier to scale cost to importance. BRAIN: by default ballots run on the CLOUD trusted-4 panel; set use_local=true to run them on the LOCAL LLM instead (Ollama — free, no API tokens, but ONE model = no temperament diversity, so local scores are a SEPARATE baseline, not comparable to cloud means). The response always states which brain ran ('brain': 'cloud'|'local', plus 'model'). Returns: blocked (bool), brain, model, mean_score, SD, CI, report_markdown (includes structural findings), synopsis. GOTCHA: do not edit beats while a review is running. Alias: also accepts strand id (GUID) for the strandIdOrSlug param.
+Run the sampled Legion review panel against a node. STRUCTURAL PRE-FLIGHT runs first: if blocking failures are found (missing antagonist cost, passive protagonist, purely-stated stakes, >70% exposition), the review is blocked and returns the diagnosis instead of ballots — fix the structure first. Non-blocking warnings are always appended to the report. Stratified personas cast score-only ballots then the most informative are upgraded to full prose. Use the 'effort' tier to scale cost to importance. BRAIN: by default ballots run on the CLOUD trusted-4 panel; set use_local=true to run them on the LOCAL LLM instead (Ollama — free, no API tokens, but ONE model = no temperament diversity, so local scores are a SEPARATE baseline, not comparable to cloud means). The response always states which brain ran ('brain': 'cloud'|'local', plus 'model'). Returns: blocked (bool), brain, model, mean_score, SD, CI, report_markdown (includes structural findings), synopsis. GOTCHA: do not edit beats while a review is running. Alias: also accepts node id (GUID) for the nodeIdOrSlug param.
 
-- `strandIdOrSlug` (string, required) — Strand id (GUID) or slug.
+- `nodeIdOrSlug` (string, required) — Node id (GUID) or slug.
 - `ballots` (int, optional) — Number of score-only ballots to cast. 0 = use the effort tier (if given) or the ReviewBallots setting (default 20). A non-zero value overrides the tier.
 - `prose` (int, optional) — Number of full prose reviews to write (upgraded from ballots). 0 = use the effort tier (if given) else 0. A non-zero value overrides the tier.
 - `skipDiagnosis` (bool, optional) — Set true to skip structural pre-flight and run ballots unconditionally. Use only when you have already reviewed and accepted the structural findings.
@@ -1060,7 +1313,7 @@ Log a wound to the WoundLedger. Use when the story wounds a character so the bod
 - `description` (string, required) — What happened, one sentence.
 - `severity` (string, required) — minor | moderate | severe
 - `residualEffect` (string, optional) — Residual effect the prose must honor (e.g. 'grip 90 percent; two-handed work hurts').
-- `sourceStrandSlug` (string, optional) — Source strand slug, if known.
+- `sourceNodeSlug` (string, optional) — Source node slug, if known.
 - `expectedHealingDays` (int, optional) — Expected healing days (default 14; AutoDoc shortens, never zeroes).
 
 ### `set_wound_status`
@@ -1134,17 +1387,17 @@ List every book on the shelf. Returns id, title, premise, chapter count, status,
 
 ### `audit_story_commandments`
 
-Audit a strand against all 7 commandments — gateway (for first/standalone stories) or sequel (for stories with a PreviousStrandId set). Auto-detected: null PreviousStrandId → gateway commandments; set → sequel commandments. Each commandment check returns status (pass/warn/fail), specific evidence from the prose, and a concrete one-sentence fix when not passing. Returns gateway_ready (no failing checks), blocking_count (failures), advisory_count (warnings), plus plant_count and orphaned_plants from the PlantPayoff registry (relevant for the 'reward re-reading' commandment). Accepts strand id (GUID) or slug.
+Audit a node against all 7 commandments — gateway (for first/standalone stories) or sequel (for stories with a PreviousNodeId set). Auto-detected: null PreviousNodeId → gateway commandments; set → sequel commandments. Each commandment check returns status (pass/warn/fail), specific evidence from the prose, and a concrete one-sentence fix when not passing. Returns gateway_ready (no failing checks), blocking_count (failures), advisory_count (warnings), plus plant_count and orphaned_plants from the PlantPayoff registry (relevant for the 'reward re-reading' commandment). Accepts node id (GUID) or slug.
 
-- `strandIdOrSlug` (string, required) — Strand id (GUID) or slug.
+- `nodeIdOrSlug` (string, required) — Node id (GUID) or slug.
 
-### `set_previous_strand`
+### `set_previous_node`
 
-Link a strand to its predecessor, switching it from gateway mode to sequel mode. When previous_strand_id_or_slug is provided, Strand.PreviousStrandId is set — the story will use sequel commandments in audits and beat-writing context. To clear (revert to gateway mode), pass clear=true. Accepts both strand arguments as id (GUID) or slug.
+Link a node to its predecessor, switching it from gateway mode to sequel mode. When previous_node_id_or_slug is provided, Node.PreviousNodeId is set — the story will use sequel commandments in audits and beat-writing context. To clear (revert to gateway mode), pass clear=true. Accepts both node arguments as id (GUID) or slug.
 
-- `strandIdOrSlug` (string, required) — The strand to update — id (GUID) or slug.
-- `previousStrandIdOrSlug` (string, optional) — The preceding strand — id (GUID) or slug. Omit or pass null to clear.
-- `clear` (bool, optional) — Set true to clear PreviousStrandId (revert to gateway mode).
+- `nodeIdOrSlug` (string, required) — The node to update — id (GUID) or slug.
+- `previousNodeIdOrSlug` (string, optional) — The preceding node — id (GUID) or slug. Omit or pass null to clear.
+- `clear` (bool, optional) — Set true to clear PreviousNodeId (revert to gateway mode).
 
 ## Story Logic
 
@@ -1152,263 +1405,10 @@ Link a strand to its predecessor, switching it from gateway mode to sequel mode.
 
 ### `write_outline`
 
-Generate a narrative outline and adversarial logic audit for a strand. Finds plot holes, canon violations, prop errors, causality breaks, and contradictions. Returns outline (beat-by-beat narrative summary grouped by act) + findings list with severity/category/problem/suggestion per issue. Pass skip_audit=true for outline only (faster). Accepts strand id (GUID) or slug.
+Generate a narrative outline and adversarial logic audit for a node. Finds plot holes, canon violations, prop errors, causality breaks, and contradictions. Returns outline (beat-by-beat narrative summary grouped by act) + findings list with severity/category/problem/suggestion per issue. Pass skip_audit=true for outline only (faster). Accepts node id (GUID) or slug.
 
-- `strandIdOrSlug` (string, required) — Strand id (GUID) or slug.
+- `nodeIdOrSlug` (string, required) — Node id (GUID) or slug.
 - `skip_audit` (bool, optional) — Skip the logic audit and return outline only. Default false.
-
-## Strand
-
-<sub>`StrandTools`</sub>
-
-### `append_strand_amendment`
-
-Append an amendment to the strand's narrative spine. Amendments are append-only — they form an auditable change log of narrative decisions. Use when: changing a character's motivation after beats are written, retconning world rules, or noting why a section was expanded or cut.
-
-- `idOrSlug` (string, required) — Strand id (GUID) or slug.
-- `summary` (string, required) — One-line summary of the change.
-- `body` (string, required) — Full amendment body (markdown). Explain what changed and why.
-
-### `clear_beat_gap_after`
-
-Clear an explicit gap-after-beat override. The audio engine falls back to the auto-computed silence from SceneType + terminator punctuation.
-
-- `beatHandle` (string, required) — Beat Guid OR 'strand-guid.beat-guid' handle.
-
-### `clone_strand`
-
-Clone a strand into a fully independent copy: new Strand row + new Beat rows, same prose. Audio, scores, and review history are NOT copied — clone starts fresh. Supports strandCode and isDraft so the clone can be excluded from score/publish flows until promoted. Use this instead of DuplicateStrand when you need strandCode, isDraft, or per-experiment isolation. Returns new id, slug, beat count.
-
-- `idOrSlug` (string, required) — Source strand Guid id or slug.
-- `title` (string, optional) — Title for the clone. Defaults to 'Source Title (Clone)'.
-- `strandCode` (string, optional) — Optional short reference code for the clone (e.g. 'SM1'). Rejected if already in use.
-- `isDraft` (bool, optional) — Mark the clone as a draft (excluded from review/score/publish flows). Default true.
-- `status` (string, optional) — Status value to stamp on the clone: 'ready', 'draft', etc. Default 'ready'.
-
-### `create_strand`
-
-Create a new empty root strand (no beats) — the bible-first entry point for a brand-new story. Write the bible/beats afterward via InsertBeat or the UI. UniverseId is stamped to the current universe (GLMZ). Returns the new id, slug, and URL.
-
-- `title` (string, required) — Display title. Required.
-- `code` (string, optional) — Optional short reference code (e.g. 'SRZR'). Upper-cased; rejected if already in use.
-- `kind` (string, optional) — Category: 'story' (default, root), 'book', 'chapter', 'vignette'…
-- `synopsis` (string, optional) — Optional one-line synopsis.
-- `seed` (string, optional) — Optional one-line generator seed / logline.
-- `previous` (string, optional) — Optional prior strand this one continues (slug or GUID) — sequel commandments apply.
-- `parent` (string, optional) — Optional parent strand (slug or GUID) — makes this a sub-strand.
-
-### `create_strand`
-
-Create a new strand. Pass 'seed' to also generate a strand bible and planned beats immediately. Returns the new strand's id, slug, url, and (if bible was generated) the bible text.
-
-- `title` (string, required) — Strand title. Required.
-- `kind` (string, optional) — Strand kind: 'series' (groups stories), 'story' (root publishable work), or 'chapter' (sub-strand of a story, contains beats). Default 'story'.
-- `synopsis` (string, optional) — Optional synopsis.
-- `seed` (string, optional) — One-line generation seed. When provided, the strand bible and planned beats are created immediately after the strand row is inserted.
-- `targetBeats` (int, optional) — Target beat count for the bible spine (only used when seed is provided). Default 12.
-- `parentStrandIdOrSlug` (string, optional) — Optional parent strand Guid id (or slug). Empty = top-level.
-- `code` (string, optional) — Optional short author-assigned reference code (e.g. 'ATTE', 'BCODA'). For series and story strands only — chapters never carry a code. Uppercased and stored as a unique lookup key. Leave empty to skip.
-
-### `delete_beat`
-
-Remove a beat from a strand. If the beat is not referenced by any other strand, the beat row + audio file are deleted entirely.
-
-- `strandIdOrSlug` (string, required) — Strand Guid id or slug.
-- `beatId` (string, required) — Beat Guid id to delete.
-
-### `duplicate_strand`
-
-Deep-duplicate a strand (and its sub-strand tree) into a fresh, independent copy. Every beat is cloned into a new row — prose and narration metadata are preserved, but audio, review scores, and the stale flag are reset. Editing the copy never affects the original. Accepts a Guid id OR a slug. Returns the new strand's id, slug, and writer URL.
-
-- `idOrSlug` (string, required) — Source strand Guid id or slug.
-- `newTitle` (string, required) — Title for the new duplicate. Required.
-
-### `generate_strand_bible`
-
-Generate (or regenerate) the strand bible for a strand. Uses the strand's Seed field (falls back to Synopsis then Title) plus the literary rules to produce a dry structural plan: logline, premise, register, characters, numbered beat spine, seeds & payoffs. Creates planned Beat rows from the spine when the strand has no beats yet. Returns the generated bible text.
-
-- `idOrSlug` (string, required) — Strand Guid id or slug.
-- `targetBeats` (int, optional) — Target number of beats in the spine. 0 = auto (use existing beat count or 12).
-
-### `get_beat`
-
-Get a single beat with every authoring field — prose, kind, IsChapterStart, BeatTitle, gap-after, tone/pace/facet metadata, position within strand, and the previous/next beat ids for relative insertion. Accepts a plain Beat Guid or the 'strand-guid.beat-guid' dotted handle the writer UI shows on the LLM bottom sheet.
-
-- `beatHandle` (string, required) — Beat Guid OR the dotted 'strand-guid.beat-guid' handle.
-
-### `get_score_history`
-
-Return the score history for a strand as a time-series — every review run that produced a summary, with its mean score, SD, review count, and date. Use to track whether an edit moved the needle, or to compare pre/post-edit trajectories. Accepts strand id (GUID) or slug.
-
-- `idOrSlug` (string, required) — Strand id (GUID) or slug.
-- `limit` (int, optional) — Maximum history points to return (most recent first). Default 20.
-
-### `get_strand`
-
-Get a single strand with its beats in reading order. Accepts a Guid id OR a slug. Returns strand metadata + ordered beats (id, text, stale, has_audio, beat_title, synopsis).
-
-- `idOrSlug` (string, required) — Strand Guid id or slug.
-
-### `get_strand_bible`
-
-Get the strand bible for a strand — the dry structural plan (logline, premise, register, characters, beat spine, seeds & payoffs). Returns the raw markdown text plus the parsed beat spine entries so you can see the planned arc at a glance. Returns has_bible=false when no bible exists yet.
-
-- `idOrSlug` (string, required) — Strand Guid id or slug.
-
-### `get_strand_spine`
-
-Return the full narrative spine for a strand: bible, user stories, all amendments (in order), and the latest spine version pin (which records the content hashes and amendment count at the last docx export). Use this before writing prose to understand the narrative contract.
-
-- `idOrSlug` (string, required) — Strand id (GUID) or slug.
-
-### `insert_beat`
-
-Insert a new beat into a strand. Pass an empty afterBeatId to insert at the top. Returns the new beat's id.
-
-- `strandIdOrSlug` (string, required) — Strand Guid id or slug.
-- `afterBeatId` (string, optional) — Beat Guid id to insert after, or empty for top-of-strand.
-- `text` (string, optional) — Initial prose text for the new beat. May be empty.
-
-### `join_beat`
-
-Merge one beat into the previous one in the strand. Audio on the survivor is invalidated.
-
-- `strandIdOrSlug` (string, required) — Strand Guid id or slug.
-- `beatId` (string, required) — Beat Guid id to merge upward.
-
-### `list_scores`
-
-List strands with their latest review score, word count, and estimated page count (250 words/page). Optionally filter by kind ('book', 'chapter', 'episode', etc.) and/or status ('draft', 'canon', 'ready', 'archived'). Returns code, title, kind, status, score (null if unreviewed), words, pages, scored_on. Sorted by score descending (unscored strands last). Use this for a quick quality dashboard without running new reviews.
-
-- `kind` (string, optional) — Optional kind filter (case-insensitive). E.g. 'book', 'chapter', 'novella'. Empty = all kinds.
-- `status` (string, optional) — Optional status filter (case-insensitive). E.g. 'draft', 'canon', 'ready'. Empty = all statuses except archived.
-- `includeArchived` (bool, optional) — Include archived strands. Default false.
-- `limit` (int, optional) — Maximum rows to return. Default 200.
-
-### `list_strands`
-
-List strands. Use kind='story' to list all root stories (no parent); kind='chapter' for all sub-strands (contain beats). Returns a flat list of id, slug, title, kind, status, beat-count, stale-count.
-
-- `kind` (string, optional) — Optional Kind filter — 'story' (root strands) or 'chapter' (sub-strands with beats). Case-insensitive equality match.
-- `limit` (int, optional) — Maximum rows to return. Default 100.
-
-### `narrate_strand`
-
-Kick off TTS narration for every un-narrated beat in this strand (and its child strands recursively). Returns immediately — narration runs in the background; poll get_strand to observe progress. Returns an error response (without spawning anything) if TTS is not configured.
-
-- `strandIdOrSlug` (string, required) — Strand Guid id or slug.
-
-### `pin_strand_spine_version`
-
-Create a spine version pin for the strand's current docx version. Records the SHA-256 hashes of the current bible and user stories, plus the amendment count, so future drift checks can tell when prose was written against a stale spine. Call this after every significant prose session or whenever the spine changes.
-
-- `idOrSlug` (string, required) — Strand id (GUID) or slug.
-- `notes` (string, optional) — Optional human note explaining what changed at this version.
-
-### `prepare_audible`
-
-Build an Audible AI-narration hand-off package for a strand. Produces three files in {publishDir}/{Title}/Audible/: (1) a narration-clean manuscript (.audible.txt) with markdown artifacts stripped and Φ expanded to 'QUANTA'; (2) a pronunciation guide (.pronunciation.md) listing entity names with plain-English respellings; (3) AUDIBLE_README.md with submission instructions. No API is called on Audible's side — the author uploads the .audible.txt via ACX/Audible publisher portal. Returns paths + word/term counts.
-
-- `strandIdOrSlug` (string, required) — Strand id (GUID) or slug.
-- `withPhonetics` (bool, optional) — Run the optional LLM phonetics pass to fill in 'Say it as' respellings. Default true. Set false to skip and leave the column blank for manual completion.
-
-### `print_strand`
-
-Print all beats of a strand as continuous prose — each beat's Text joined by a blank line. No headers, no beat numbers, no metadata. Accepts strand id (GUID) or slug. Use this to read the full prose of a strand in one call.
-
-- `idOrSlug` (string, required) — Strand Guid id or slug.
-
-### `publish_audiobook`
-
-Render the whole strand as one continuous narration (no per-beat voice drift) and write the MP3 to the configured publish directory (defaults to Desktop). TTS engine: 'elevenlabs' (default, paid, highest fidelity), 'piper' (free/local, fastest), 'kokoro' (free/local, recommended), 'chatterbox' (free/local, most expressive). Returns the path of the written file, or null if the strand has no beat text.
-
-- `strandIdOrSlug` (string, required) — Strand id (GUID) or slug.
-- `ttsEngine` (string, optional) — TTS engine: elevenlabs (default) | piper | kokoro | chatterbox.
-- `robust` (bool, optional) — Set to true to retune this strand's frozen voice snapshot to Robust stability (1.0) before recording.
-
-### `publish_docx`
-
-Render a strand to a KDP-ready Word .docx and write it to the configured publish directory (defaults to Desktop). Returns the path of the written file. Use get_strand first to confirm the strand exists.
-
-- `strandIdOrSlug` (string, required) — Strand id (GUID) or slug.
-- `author` (string, optional) — Author name to embed in the document properties. Optional.
-
-### `rebeat_strand`
-
-Re-segment a strand's beats to the codified beat doctrine via LLM re-segmentation. Dry-run by default (safe to call freely). Set apply=true to export a Markdown backup then replace the beats — only committed if the word-retention guard passes (prevents silent content loss). Returns old/new beat counts, retention %, guard result, and a note if it was blocked.
-
-- `strandIdOrSlug` (string, required) — Strand id (GUID) or slug.
-- `apply` (bool, optional) — Set to true to commit the new segmentation. Default false = dry run.
-
-### `reflow_strand`
-
-Copy-edit a strand's prose in-place: adds missing '?' on questions, swaps 'says/said' → 'asks/asked' on question dialogue lines, and normalises paragraph/dialogue spacing. Dry-run by default — set apply=true to commit. Beats the model modified beyond those specific edits are rejected and left untouched. Returns changed/unchanged/rejected/errors counts plus per-beat diff previews.
-
-- `strandIdOrSlug` (string, required) — Strand id (GUID) or slug.
-- `apply` (bool, optional) — Set to true to write the edits to the DB. Default false = dry run.
-
-### `set_beat_gap_after`
-
-Set the silence (in ms) the audio engine inserts AFTER this beat, before the next. 0 = no silence (explicit override). Use ClearBeatGapAfter to revert to the auto-computed default from SceneType + terminator punctuation.
-
-- `beatHandle` (string, required) — Beat Guid OR 'strand-guid.beat-guid' handle.
-- `durationMs` (int, required) — Silence in milliseconds, 0..6000.
-
-### `set_strand_bible`
-
-Manually set or replace the strand bible text. Use when you want to hand-write the plan instead of generating it. The text is saved verbatim; beat spine parsing still applies for planned-beat creation. Pass an empty string to clear the bible.
-
-- `idOrSlug` (string, required) — Strand Guid id or slug.
-- `bibleText` (string, required) — Full bible markdown text to store. Empty string clears the bible.
-
-### `set_strand_user_stories`
-
-Set (replace) the user stories / acceptance criteria for a strand. Write this before starting prose — it defines what scenes, arcs, and voice moments must be present for the strand to reach ≥82% standalone and ≥85% cumulative story score.
-
-- `idOrSlug` (string, required) — Strand id (GUID) or slug.
-- `userStoriesText` (string, required) — Full user stories markdown. Will replace any existing content.
-
-### `split_beat`
-
-Split one beat into two at the nearest sentence boundary near its midpoint. Both halves lose their audio.
-
-- `strandIdOrSlug` (string, required) — Strand Guid id or slug.
-- `beatId` (string, required) — Beat Guid id to split.
-
-### `update_beat_metadata`
-
-Update a beat's metadata: BeatTitle, Synopsis, EmotionalTone, PaceHint, StructureRole, Act, SceneType, IsChapterStart, Kind. Pass empty strings to clear nullable fields. Does NOT touch prose or audio. Use to mark a beat as a chapter start, change its kind to quote/dedication/book-title, or set the tone the next re-record uses.
-
-- `beatHandle` (string, required) — Beat Guid OR 'strand-guid.beat-guid' handle.
-- `beatTitle` (string, optional) — Short label. When IsChapterStart=true this is the chapter heading; when Kind=quote this is the attribution.
-- `synopsis` (string, optional) — One-line synopsis fed to LLM regenerations.
-- `emotionalTone` (string, optional) — Emotional tone, e.g. 'quiet' / 'tense' / 'wry'.
-- `paceHint` (string, optional) — Pace hint, e.g. 'flowing' / 'clipped' / 'staccato' / 'languorous'.
-- `structureRole` (string, optional) — Structure role, e.g. 'inciting-incident' / 'rising-action' / 'climax'.
-- `act` (int, optional) — Plot-act number 0–5. 0 = unassigned.
-- `sceneType` (string, optional) — Scene type: scene | summary | transition | interstitial.
-- `isChapterStart` (bool, optional) — True = this beat begins a new chapter / section. The writer renders a divider above it with BeatTitle as the heading.
-- `kind` (string, optional) — Beat kind: prose (default) | book-title | dedication | quote. Free-form so new kinds add no schema cost.
-
-### `update_beat_text`
-
-Update one beat's prose. Recomputes the hash, marks the beat stale, and invalidates its audio. Beat.Text accepts inline markdown (**bold** / *italic* / __underline__ / ~~strike~~) and ElevenLabs-style tone tags ([WHISPERING] [GASP] [LAUGHS] [PAUSES] etc.) that render as emoji in the read view. Accepts a Beat Guid OR the 'strand-guid.beat-guid' handle.
-
-- `beatHandle` (string, required) — Beat Guid OR 'strand-guid.beat-guid' handle.
-- `text` (string, required) — New prose. Replaces the entire beat text. Markdown markers + tone-tag brackets are preserved verbatim in storage.
-
-### `update_strand`
-
-Update a strand's metadata fields. Pass only the fields you want to change — omit the rest to leave them unchanged. Editable fields: title, synopsis, kind, status, seed, code (StrandCode), voice_id. Status valid values: draft | ready | canon | archived. Code is uppercased and must be unique across non-null values — pass empty string to clear it. Does NOT touch beats or audio.
-
-- `idOrSlug` (string, required) — Strand id (GUID) or slug.
-- `title` (string, optional) — New title. Omit to leave unchanged.
-- `synopsis` (string, optional) — Short synopsis. Omit to leave unchanged; pass empty string to clear.
-- `kind` (string, optional) — Kind label: book | chapter | episode | novella | novel | strand | scene | saga | anthology. Omit to leave unchanged.
-- `status` (string, optional) — Status: draft | ready | canon | archived. Omit to leave unchanged.
-- `seed` (string, optional) — Generation seed (one-line premise). Omit to leave unchanged; pass empty string to clear.
-- `code` (string, optional) — Short author reference code (e.g. 'ATTE'). Uppercased; pass empty string to clear. Omit to leave unchanged.
-- `voiceId` (string, optional) — ElevenLabs or local TTS voice id. Omit to leave unchanged; pass empty string to clear.
 
 ## Universe
 
@@ -1444,20 +1444,20 @@ Apply a proposed voice rule to the live voice store (the DB-backed rules the gen
 
 ### `harvest_voice`
 
-Distill voice rules from a winning strand (score ≥80) into proposed change-log entries. Nothing touches the live rule store until apply_voice_proposal is called. Pass force=true to harvest even if the strand scored below 80. Returns the list of proposed entries with their ids, rule targets, descriptions, and evidence.
+Distill voice rules from a winning node (score ≥80) into proposed change-log entries. Nothing touches the live rule store until apply_voice_proposal is called. Pass force=true to harvest even if the node scored below 80. Returns the list of proposed entries with their ids, rule targets, descriptions, and evidence.
 
-- `strandIdOrSlug` (string, required) — Strand id (GUID) or slug to harvest from.
-- `force` (bool, optional) — Set to true to harvest even if the strand scored below 80%.
+- `nodeIdOrSlug` (string, required) — Node id (GUID) or slug to harvest from.
+- `force` (bool, optional) — Set to true to harvest even if the node scored below 80%.
 
 ### `harvest_voice_all`
 
-Distill voice rules from every strand scored ≥80%. Returns proposals grouped by strand slug. Nothing is written to the live rule store until apply_voice_proposal is called. Use list_voice_proposals to see all pending entries afterward.
+Distill voice rules from every node scored ≥80%. Returns proposals grouped by node slug. Nothing is written to the live rule store until apply_voice_proposal is called. Use list_voice_proposals to see all pending entries afterward.
 
 - _(no parameters)_
 
 ### `list_voice_proposals`
 
-List voice change-log entries filtered by status. Use status='proposed' to see pending proposals awaiting a decision. Each entry shows its id (use for apply/reject), rule target, description, evidence, and source strand.
+List voice change-log entries filtered by status. Use status='proposed' to see pending proposals awaiting a decision. Each entry shows its id (use for apply/reject), rule target, description, evidence, and source node.
 
 - `status` (string, optional) — Filter by status: 'proposed' | 'applied' | 'rejected' | 'observed'. Default 'proposed'.
 
@@ -1473,19 +1473,19 @@ Reject a proposed voice rule. The entry stays in the audit trail (status = 'reje
 
 ### `workflow_beat_modes`
 
-Get the detected beat mode log for a strand. Shows how each beat was classified (Narrative/Combat/EmotionalClimax/Dialogue/Transition/Revelation) and the confidence level.
+Get the detected beat mode log for a node. Shows how each beat was classified (Narrative/Combat/EmotionalClimax/Dialogue/Transition/Revelation) and the confidence level.
 
-- `slug` (string, required) — Strand slug
+- `slug` (string, required) — Node slug
 
 ### `workflow_status`
 
-Get prose service coverage for a strand. Returns which services (Pacing, StoryMethodology, PlantPayoff, StoryAudit, Combat) were active when beats were written, and flags gaps where applicable services weren't used.
+Get prose service coverage for a node. Returns which services (Pacing, StoryMethodology, PlantPayoff, StoryAudit, Combat) were active when beats were written, and flags gaps where applicable services weren't used.
 
-- `slug` (string, required) — Strand slug (e.g. 'ATTE', 'BCODA')
+- `slug` (string, required) — Node slug (e.g. 'ATTE', 'BCODA')
 
 ### `workflow_status_global`
 
-Get global prose workflow coverage across all strands. Returns per-service utilization rates and a list of strands with coverage gaps.
+Get global prose workflow coverage across all nodes. Returns per-service utilization rates and a list of nodes with coverage gaps.
 
 - _(no parameters)_
 
@@ -1553,9 +1553,9 @@ Create or update a transportation entry (vehicle, transit line, Pulse station, i
 
 ### `add_prose_lesson`
 
-Add an editorial prose lesson — an author ruling that reviewers must respect. Lessons are injected into every future review ballot prompt so the panel does not penalise beats the author has already decided are doing their job in the sequence. scope: 'global' applies to all strands; 'strand:<slug>' to one strand; 'beat:<guid>' to one beat. kind: score-vs-function | delight | voice | pacing | continuity | other.
+Add an editorial prose lesson — an author ruling that reviewers must respect. Lessons are injected into every future review ballot prompt so the panel does not penalise beats the author has already decided are doing their job in the sequence. scope: 'global' applies to all nodes; 'node:<slug>' to one node; 'beat:<guid>' to one beat. kind: score-vs-function | delight | voice | pacing | continuity | other.
 
-- `scope` (string, required) — Scope: 'global', 'strand:<slug>', or 'beat:<guid>'
+- `scope` (string, required) — Scope: 'global', 'node:<slug>', or 'beat:<guid>'
 - `kind` (string, required) — Kind: score-vs-function | delight | voice | pacing | continuity | other
 - `text` (string, required) — The ruling text — what reviewers must respect.
 
@@ -1582,9 +1582,9 @@ Runs the deterministic prose pattern linter on text. Detects: clichés (chrome g
 
 ### `check_timeline`
 
-Deterministic timeline-consistency check for a strand (RFC 0009 §5). Zero LLM calls. Detects two violation classes: (1) dead-character-acting — an entity whose status is 'dead'/'deceased' appears in a later beat; (2) wound-regression — a healed/none event precedes the injury-onset event for the same condition. Returns a list of findings with kind, entityId, entityName, beatNumber, detail, severity. Returns an empty array when no events are in the ledger for this strand — never throws.
+Deterministic timeline-consistency check for a node (RFC 0009 §5). Zero LLM calls. Detects two violation classes: (1) dead-character-acting — an entity whose status is 'dead'/'deceased' appears in a later beat; (2) wound-regression — a healed/none event precedes the injury-onset event for the same condition. Returns a list of findings with kind, entityId, entityName, beatNumber, detail, severity. Returns an empty array when no events are in the ledger for this node — never throws.
 
-- `slugOrId` (string, required) — Strand slug or GUID
+- `slugOrId` (string, required) — Node slug or GUID
 
 ### `clear_entity_stale`
 
@@ -1629,21 +1629,21 @@ Returns the world-state snapshot at a given beat: all entity aspect states (woun
 
 ### `list_entity_stale_beats`
 
-Returns every beat flagged EntityStale — i.e. a canon entity mentioned in the beat was updated after the beat was written. Grouped by strand. Review each beat and call clear_entity_stale when satisfied.
+Returns every beat flagged EntityStale — i.e. a canon entity mentioned in the beat was updated after the beat was written. Grouped by node. Review each beat and call clear_entity_stale when satisfied.
 
 - _(no parameters)_
 
 ### `list_prose_lessons`
 
-List prose lessons from the editorial memory store. When scope is omitted, returns all lessons across all scopes. When scope is provided, returns only lessons whose scope starts with that prefix (e.g. 'global' for all global lessons, 'strand:my-slug' for a specific strand).
+List prose lessons from the editorial memory store. When scope is omitted, returns all lessons across all scopes. When scope is provided, returns only lessons whose scope starts with that prefix (e.g. 'global' for all global lessons, 'node:my-slug' for a specific node).
 
-- `scope` (string, optional) — Optional scope filter prefix (e.g. 'global', 'strand:my-slug'). Omit for all.
+- `scope` (string, optional) — Optional scope filter prefix (e.g. 'global', 'node:my-slug'). Omit for all.
 
-### `scan_strand_violations`
+### `scan_node_violations`
 
-Run the prose pattern guard over every beat in a strand and file violations as Findings. This is the strand-wide sweep equivalent of check_prose — use it after importing or rewriting a strand to catch all clichés, pseudo-profound constructs, on-the-nose interiority, and italicised dialogue in one pass. Returns a per-beat summary of violations found.
+Run the prose pattern guard over every beat in a node and file violations as Findings. This is the node-wide sweep equivalent of check_prose — use it after importing or rewriting a node to catch all clichés, pseudo-profound constructs, on-the-nose interiority, and italicised dialogue in one pass. Returns a per-beat summary of violations found.
 
-- `strandIdOrSlug` (string, required) — Strand id (GUID) or slug.
+- `nodeIdOrSlug` (string, required) — Node id (GUID) or slug.
 
 ### `validate_beat`
 

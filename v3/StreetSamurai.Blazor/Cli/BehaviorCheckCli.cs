@@ -6,21 +6,21 @@ using StreetSamurai.Core.Services;
 namespace StreetSamurai.Blazor.Cli;
 
 /// <summary>
-/// ss --behavior-check --slug &lt;strandSlug&gt; --character &lt;characterId&gt;
-/// LLM-checks each beat of the strand against the character's behavioral rules.
+/// ss --behavior-check --slug &lt;nodeSlug&gt; --character &lt;characterId&gt;
+/// LLM-checks each beat of the node against the character's behavioral rules.
 /// </summary>
 public static class BehaviorCheckCli
 {
     public static async Task<int> RunAsync(string[] args, IServiceProvider services)
     {
-        string? strandSlug = null;
+        string? nodeSlug = null;
         Guid? characterId = null;
 
         for (int i = 0; i < args.Length - 1; i++)
         {
             switch (args[i])
             {
-                case "--slug": strandSlug = args[i + 1]; i++; break;
+                case "--slug": nodeSlug = args[i + 1]; i++; break;
                 case "--character":
                     if (Guid.TryParse(args[i + 1], out var g)) { characterId = g; i++; }
                     i++;
@@ -28,9 +28,9 @@ public static class BehaviorCheckCli
             }
         }
 
-        if (strandSlug == null || characterId == null)
+        if (nodeSlug == null || characterId == null)
         {
-            Console.Error.WriteLine("Usage: ss --behavior-check --slug <strandSlug> --character <characterId>");
+            Console.Error.WriteLine("Usage: ss --behavior-check --slug <nodeSlug> --character <characterId>");
             return 1;
         }
 
@@ -38,13 +38,13 @@ public static class BehaviorCheckCli
         var dbFactory = services.GetRequiredService<IDbContextFactory<StreetSamuraiDbContext>>();
         using var db = dbFactory.CreateDbContext();
 
-        var strand = await db.Strands.AsNoTracking().FirstOrDefaultAsync(s => s.Slug == strandSlug);
-        if (strand == null) { Console.Error.WriteLine($"Strand '{strandSlug}' not found."); return 1; }
+        var node = await db.Nodes.AsNoTracking().FirstOrDefaultAsync(s => s.Slug == nodeSlug);
+        if (node == null) { Console.Error.WriteLine($"Node '{nodeSlug}' not found."); return 1; }
 
         var beats = await (
-            from sb in db.StrandBeats
+            from sb in db.NodeBeats
             join b in db.Beats on sb.BeatId equals b.Id
-            where sb.StrandId == strand.Id
+            where sb.NodeId == node.Id
             orderby sb.SortKey
             select new { b.Id, b.Number, b.Text }
         ).ToListAsync();

@@ -33,7 +33,7 @@ public static class AssembleSceneCli
         if (beatArg == null && textArg == null)
         {
             Console.Error.WriteLine("usage: ss --assemble-scene (--beat <guid> | --text \"<prose>\") [--budget N]");
-            Console.Error.WriteLine("       ss --assemble-scene --backfill --slug <strand-slug> [--harvest]");
+            Console.Error.WriteLine("       ss --assemble-scene --backfill --slug <node-slug> [--harvest]");
             return 2;
         }
 
@@ -62,25 +62,25 @@ public static class AssembleSceneCli
         return 0;
     }
 
-    /// <summary>Backfill BeatEntities for every beat of a strand (tree-walking, so a book
+    /// <summary>Backfill BeatEntities for every beat of a node (tree-walking, so a book
     /// slug covers all chapters). --harvest additionally files XRAY-REVEAL findings:
     /// details the prose reveals about in-scene entities, proposed for explicit approval.</summary>
     private static async Task<int> BackfillAsync(IServiceProvider services, string slug, bool harvest)
     {
         var dbFactory = services.GetRequiredService<IDbContextFactory<StreetSamurai.Core.Data.StreetSamuraiDbContext>>();
-        var workbench = services.GetRequiredService<StrandWorkbenchService>();
+        var workbench = services.GetRequiredService<NodeWorkbenchService>();
         var assembler = services.GetRequiredService<SceneContextAssembler>();
 
-        Guid strandId;
+        Guid nodeId;
         await using (var db = await dbFactory.CreateDbContextAsync())
         {
-            var strand = await Microsoft.EntityFrameworkCore.EntityFrameworkQueryableExtensions
-                .FirstOrDefaultAsync(db.Strands, s => s.Slug == slug);
-            if (strand == null) { Console.Error.WriteLine($"strand not found: {slug}"); return 1; }
-            strandId = strand.Id;
+            var node = await Microsoft.EntityFrameworkCore.EntityFrameworkQueryableExtensions
+                .FirstOrDefaultAsync(db.Nodes, s => s.Slug == slug);
+            if (node == null) { Console.Error.WriteLine($"node not found: {slug}"); return 1; }
+            nodeId = node.Id;
         }
 
-        var beats = await workbench.GetOrderedBeatsAsync(strandId);
+        var beats = await workbench.GetOrderedBeatsAsync(nodeId);
         Console.WriteLine($"[xray-backfill] {slug}: {beats.Count} beats{(harvest ? " (+harvest)" : "")}");
 
         int done = 0, rosterRows = 0, proposals = 0, failed = 0;

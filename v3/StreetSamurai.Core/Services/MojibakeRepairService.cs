@@ -217,22 +217,22 @@ public class MojibakeRepairService
         public List<DetectHit> Hits { get; } = new();
     }
 
-    public sealed record DetectHit(Guid BeatId, string StrandTitle, string Excerpt);
+    public sealed record DetectHit(Guid BeatId, string NodeTitle, string Excerpt);
 
     /// <summary>
-    /// Scan beats belonging to <paramref name="strandId"/> (or all beats when
+    /// Scan beats belonging to <paramref name="nodeId"/> (or all beats when
     /// <c>null</c>) and report any that contain mojibake without modifying them.
     /// </summary>
-    public async Task<DetectResult> DetectStrandAsync(Guid? strandId = null, CancellationToken ct = default)
+    public async Task<DetectResult> DetectNodeAsync(Guid? nodeId = null, CancellationToken ct = default)
     {
         await using var db = await dbFactory.CreateDbContextAsync(ct);
         var result = new DetectResult();
 
         IEnumerable<StreetSamurai.Core.Data.Entities.Beat> beats;
-        if (strandId.HasValue)
+        if (nodeId.HasValue)
         {
-            var beatIds = await db.StrandBeats
-                .Where(sb => sb.StrandId == strandId.Value)
+            var beatIds = await db.NodeBeats
+                .Where(sb => sb.NodeId == nodeId.Value)
                 .Select(sb => sb.BeatId)
                 .ToListAsync(ct);
             beats = await db.Beats.AsNoTracking().Where(b => beatIds.Contains(b.Id)).ToListAsync(ct);
@@ -242,12 +242,12 @@ public class MojibakeRepairService
             beats = await db.Beats.AsNoTracking().ToListAsync(ct);
         }
 
-        string strandTitle = strandId.HasValue
-            ? (await db.Strands.AsNoTracking()
-                .Where(s => s.Id == strandId.Value)
+        string nodeTitle = nodeId.HasValue
+            ? (await db.Nodes.AsNoTracking()
+                .Where(s => s.Id == nodeId.Value)
                 .Select(s => s.Title)
-                .FirstOrDefaultAsync(ct) ?? strandId.Value.ToString())
-            : "(all strands)";
+                .FirstOrDefaultAsync(ct) ?? nodeId.Value.ToString())
+            : "(all nodes)";
 
         foreach (var beat in beats)
         {
@@ -259,7 +259,7 @@ public class MojibakeRepairService
             var sample = (beat.Text ?? beat.BeatTitle ?? "").Length > 120
                 ? (beat.Text ?? beat.BeatTitle ?? "")[..120] + "…"
                 : (beat.Text ?? beat.BeatTitle ?? "");
-            result.Hits.Add(new DetectHit(beat.Id, strandTitle, sample));
+            result.Hits.Add(new DetectHit(beat.Id, nodeTitle, sample));
         }
 
         return result;

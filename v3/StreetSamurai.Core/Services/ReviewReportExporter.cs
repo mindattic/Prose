@@ -18,12 +18,12 @@ namespace StreetSamurai.Core.Services;
 /// there's no fetch/CORS dance — while the .json stays available for tooling.
 ///
 /// <para>Scope is THE RUN, not the content hash: a report is built from the exact
-/// ballots a run produced (passed in by <see cref="StrandReviewService"/>), so
-/// re-runs at the same strand version don't pool into one another.</para>
+/// ballots a run produced (passed in by <see cref="NodeReviewService"/>), so
+/// re-runs at the same node version don't pool into one another.</para>
 ///
-/// <para>Files land in the SAME per-strand publish folder as the manuscript exports —
+/// <para>Files land in the SAME per-node publish folder as the manuscript exports —
 /// <c>&lt;PublishExportDirectory&gt;/&lt;Series…&gt;/&lt;Title&gt;/</c> (Desktop fallback) — named by
-/// title, beside the strand's <c>.docx/.pdf/.epub</c>.</para>
+/// title, beside the node's <c>.docx/.pdf/.epub</c>.</para>
 /// </summary>
 public sealed class ReviewReportExporter
 {
@@ -46,23 +46,23 @@ public sealed class ReviewReportExporter
         return dir;
     }
 
-    /// <summary>The strand's own publish folder: publish-root + its series/book ancestry
+    /// <summary>The node's own publish folder: publish-root + its series/book ancestry
     /// (top-down) + its title — byte-for-byte the layout ManuscriptExportService uses, so
-    /// the report sits in the same folder as the strand's .docx/.pdf/.epub.</summary>
-    private async Task<string> StrandPublishDirAsync(Guid strandId, string title, CancellationToken ct)
+    /// the report sits in the same folder as the node's .docx/.pdf/.epub.</summary>
+    private async Task<string> NodePublishDirAsync(Guid nodeId, string title, CancellationToken ct)
     {
         var ancestors = new List<string>();
         await using (var db = await dbFactory.CreateDbContextAsync(ct))
         {
-            var parentId = await db.Strands.AsNoTracking().Where(s => s.Id == strandId)
-                .Select(s => s.ParentStrandId).FirstOrDefaultAsync(ct);
+            var parentId = await db.Nodes.AsNoTracking().Where(s => s.Id == nodeId)
+                .Select(s => s.ParentNodeId).FirstOrDefaultAsync(ct);
             for (var guard = 0; parentId is Guid pid && guard < 8; guard++)
             {
-                var parent = await db.Strands.AsNoTracking().Where(s => s.Id == pid)
-                    .Select(s => new { s.Title, s.ParentStrandId }).FirstOrDefaultAsync(ct);
+                var parent = await db.Nodes.AsNoTracking().Where(s => s.Id == pid)
+                    .Select(s => new { s.Title, s.ParentNodeId }).FirstOrDefaultAsync(ct);
                 if (parent is null) break;
                 ancestors.Insert(0, SanitizeTitle(parent.Title));
-                parentId = parent.ParentStrandId;
+                parentId = parent.ParentNodeId;
             }
         }
         var parts = new List<string> { PublishRoot() };
@@ -90,9 +90,9 @@ public sealed class ReviewReportExporter
     /// <summary>Everything one report needs. <paramref name="Reviews"/> is the run's
     /// own ballots; the rest is the run's headline + the BRAIN that produced it.</summary>
     public sealed record ReportInput(
-        Guid StrandId, string Slug, string Title, string ContentHash, int BeatCount,
+        Guid NodeId, string Slug, string Title, string ContentHash, int BeatCount,
         string Brain, string Model, double Mean, double Sd, double Ci95, double FlowMean,
-        int Clusters, IReadOnlyList<StrandReview> Reviews);
+        int Clusters, IReadOnlyList<NodeReview> Reviews);
 
     /// <summary>Build + write both files. Returns their absolute paths.
     /// Returns (null,null) if there are no reviews to report.</summary>
@@ -102,7 +102,7 @@ public sealed class ReviewReportExporter
 
         var json = BuildJson(input);
 
-        var dir = await StrandPublishDirAsync(input.StrandId, input.Title, ct);
+        var dir = await NodePublishDirAsync(input.NodeId, input.Title, ct);
         Directory.CreateDirectory(dir);
         // Named by title, brain-suffixed so a cloud run and a local run don't overwrite each
         // other; re-running the SAME brain overwrites (one current report per brain, like the
@@ -202,9 +202,9 @@ public sealed class ReviewReportExporter
         var scores = reviews.Select(r => (double)r.Score).ToList();
         var doc = new
         {
-            strand = new
+            node = new
             {
-                id = input.StrandId,
+                id = input.NodeId,
                 slug = input.Slug,
                 title = input.Title,
                 contentHash = input.ContentHash,
@@ -347,7 +347,7 @@ const sCls = (v,max=100)=>{const p=v/max*100; return p>=85?'s-good':p>=70?'s-ok'
 const heatColor = m => { const t=Math.max(0,Math.min(1,(m-1)/4)); const r=Math.round(218+(46-218)*t), g=Math.round(54+(160-54)*t), b=Math.round(51+(67-51)*t); return `rgb(${r},${g},${b})`; };
 
 // Badges
-(()=>{const r=DATA.run, s=DATA.strand; const brainCls=r.brain==='local'?'b-local':'b-cloud';
+(()=>{const r=DATA.run, s=DATA.node; const brainCls=r.brain==='local'?'b-local':'b-cloud';
   $('#badges').innerHTML =
     `<span class="badge b-score ${sCls(r.mean)}">${r.mean}/100</span>`+
     `<span class="badge ${brainCls}">${r.brain.toUpperCase()} — ${r.model}</span>`+

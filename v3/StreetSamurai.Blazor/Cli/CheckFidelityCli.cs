@@ -6,9 +6,9 @@ using StreetSamurai.Core.Services;
 namespace StreetSamurai.Blazor.Cli;
 
 /// <summary>
-/// ss --check-fidelity (--slug &lt;strandSlug&gt; | --id &lt;strandId&gt;) [--json]
+/// ss --check-fidelity (--slug &lt;nodeSlug&gt; | --id &lt;nodeId&gt;) [--json]
 ///
-/// Detects the Semantic Fidelity Gap for a strand — beats that score high on the
+/// Detects the Semantic Fidelity Gap for a node — beats that score high on the
 /// Legion review metric but have drifted from the story's original meaning.
 ///
 /// Two checks:
@@ -22,42 +22,42 @@ public static class CheckFidelityCli
 {
     public static async Task<int> RunAsync(string[] args, IServiceProvider services)
     {
-        string? strandSlug = null;
-        Guid? strandId = null;
+        string? nodeSlug = null;
+        Guid? nodeId = null;
         bool json = args.Contains("--json");
 
         for (int i = 0; i < args.Length - 1; i++)
         {
             switch (args[i])
             {
-                case "--slug": strandSlug = args[i + 1]; i++; break;
+                case "--slug": nodeSlug = args[i + 1]; i++; break;
                 case "--id":
-                    if (Guid.TryParse(args[i + 1], out var g)) { strandId = g; i++; }
+                    if (Guid.TryParse(args[i + 1], out var g)) { nodeId = g; i++; }
                     break;
             }
         }
 
-        if (strandSlug == null && strandId == null)
+        if (nodeSlug == null && nodeId == null)
         {
-            Console.Error.WriteLine("Usage: ss --check-fidelity (--slug <strandSlug> | --id <strandId>) [--json]");
+            Console.Error.WriteLine("Usage: ss --check-fidelity (--slug <nodeSlug> | --id <nodeId>) [--json]");
             return 2;
         }
 
         var dbFactory = services.GetRequiredService<IDbContextFactory<StreetSamuraiDbContext>>();
         await using var db = dbFactory.CreateDbContext();
 
-        if (strandId == null)
+        if (nodeId == null)
         {
-            var strand = await db.Strands.AsNoTracking()
-                .Where(s => s.Slug == strandSlug)
+            var node = await db.Nodes.AsNoTracking()
+                .Where(s => s.Slug == nodeSlug)
                 .Select(s => new { s.Id })
                 .FirstOrDefaultAsync();
-            if (strand == null)
+            if (node == null)
             {
-                Console.Error.WriteLine($"Strand '{strandSlug}' not found.");
+                Console.Error.WriteLine($"Node '{nodeSlug}' not found.");
                 return 2;
             }
-            strandId = strand.Id;
+            nodeId = node.Id;
         }
 
         var fidelity = services.GetRequiredService<SemanticFidelityService>();
@@ -65,15 +65,15 @@ public static class CheckFidelityCli
         if (!json)
             Console.WriteLine("Running semantic fidelity audit (embedding beats + querying alignment)…");
 
-        var report = await fidelity.AuditStrandAsync(strandId.Value);
+        var report = await fidelity.AuditNodeAsync(nodeId.Value);
 
         if (json)
         {
             Console.WriteLine(System.Text.Json.JsonSerializer.Serialize(new
             {
-                strand_id            = report.StrandId,
+                node_id            = report.NodeId,
                 slug                 = report.Slug,
-                strand_score         = report.StrandScore,
+                node_score         = report.NodeScore,
                 beats_checked        = report.BeatsChecked,
                 beats_scored         = report.BeatsScored,
                 mean_bible_alignment = Math.Round(report.MeanBibleAlignment, 4),
@@ -99,8 +99,8 @@ public static class CheckFidelityCli
 
         // Human-readable output
         Console.WriteLine();
-        Console.WriteLine($"Strand : {report.Slug}");
-        Console.WriteLine($"Score  : {report.StrandScore?.ToString("0.#") ?? "unscored"}%");
+        Console.WriteLine($"Node : {report.Slug}");
+        Console.WriteLine($"Score  : {report.NodeScore?.ToString("0.#") ?? "unscored"}%");
         Console.WriteLine($"Beats  : {report.BeatsChecked} checked, {report.BeatsScored} above score threshold ({SemanticFidelityService.ScoreGamingThreshold:0}%)");
         Console.WriteLine($"Bible alignment (mean) : {report.MeanBibleAlignment:P1}  (floor {SemanticFidelityService.BibleAlignmentFloor:P0})");
         if (report.MeanIntentAlignment.HasValue)

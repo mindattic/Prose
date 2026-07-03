@@ -8,7 +8,7 @@ using StreetSamurai.Core.Interfaces;
 namespace StreetSamurai.Core.Services;
 
 /// <summary>
-/// Bounded copy-editor for strand prose. Beats are stored as run-on blocks with
+/// Bounded copy-editor for node prose. Beats are stored as run-on blocks with
 /// no paragraph breaks, declarative-looking questions (no "?"), and "says" where
 /// a question wants "asks". This pass repairs ONLY those three mechanical things:
 ///   1. paragraph + dialogue line breaks (manuscript convention),
@@ -24,13 +24,13 @@ public class ProseReflowService
 {
     private readonly IDbContextFactory<StreetSamuraiDbContext> dbFactory;
     private readonly ILlmService llm;
-    private readonly StrandWorkbenchService workbench;
+    private readonly NodeWorkbenchService workbench;
     private readonly ILogger<ProseReflowService> log;
 
     public ProseReflowService(
         IDbContextFactory<StreetSamuraiDbContext> dbFactory,
         ILlmService llm,
-        StrandWorkbenchService workbench,
+        NodeWorkbenchService workbench,
         ILogger<ProseReflowService> log)
     {
         this.dbFactory = dbFactory;
@@ -44,8 +44,8 @@ public class ProseReflowService
         int QuestionMarksAdded, int AttributionSwaps,
         string? Reason, string BeforePreview, string AfterPreview);
 
-    public sealed record StrandReflowReport(
-        Guid StrandId, string Slug, bool Applied,
+    public sealed record NodeReflowReport(
+        Guid NodeId, string Slug, bool Applied,
         int Total, int Changed, int Unchanged, int Rejected, int Errors,
         List<BeatReflowResult> Beats);
 
@@ -78,15 +78,15 @@ public class ProseReflowService
         "text — not one word, not one punctuation mark. The text between the breaks must be byte-for-byte identical.\n\n" +
         "PASSAGE:\n" + original;
 
-    /// <summary>Copy-edit every beat in the strand. With <paramref name="apply"/> false
+    /// <summary>Copy-edit every beat in the node. With <paramref name="apply"/> false
     /// this is a dry run (nothing written) — the report carries before/after previews
     /// so a caller can show the diff before committing.</summary>
-    public async Task<StrandReflowReport> ReflowStrandAsync(Guid strandId, bool apply, CancellationToken ct = default)
+    public async Task<NodeReflowReport> ReflowNodeAsync(Guid nodeId, bool apply, CancellationToken ct = default)
     {
         await using var db = await dbFactory.CreateDbContextAsync(ct);
-        var strand = await db.Strands.AsNoTracking().FirstOrDefaultAsync(s => s.Id == strandId, ct)
-            ?? throw new InvalidOperationException($"Strand {strandId} not found.");
-        var ordered = await workbench.GetOrderedBeatsAsync(strandId, ct);
+        var node = await db.Nodes.AsNoTracking().FirstOrDefaultAsync(s => s.Id == nodeId, ct)
+            ?? throw new InvalidOperationException($"Node {nodeId} not found.");
+        var ordered = await workbench.GetOrderedBeatsAsync(nodeId, ct);
 
         var results = new List<BeatReflowResult>();
         int changed = 0, unchanged = 0, rejected = 0, errors = 0, pos = 0;
@@ -157,9 +157,9 @@ public class ProseReflowService
             results.Add(new(beat.Id, pos, "changed", qAdded, swaps, null, Preview(original), Preview(edited)));
         }
 
-        log.LogInformation("Reflow {Mode} strand {Slug}: {Changed} changed, {Unchanged} unchanged, {Rejected} rejected, {Errors} errors",
-            apply ? "APPLIED" : "dry-run", strand.Slug, changed, unchanged, rejected, errors);
-        return new StrandReflowReport(strandId, strand.Slug, apply, ordered.Count, changed, unchanged, rejected, errors, results);
+        log.LogInformation("Reflow {Mode} node {Slug}: {Changed} changed, {Unchanged} unchanged, {Rejected} rejected, {Errors} errors",
+            apply ? "APPLIED" : "dry-run", node.Slug, changed, unchanged, rejected, errors);
+        return new NodeReflowReport(nodeId, node.Slug, apply, ordered.Count, changed, unchanged, rejected, errors, results);
     }
 
     // ── guard ─────────────────────────────────────────────────────────────

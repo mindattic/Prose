@@ -6,9 +6,9 @@ namespace StreetSamurai.Blazor.Cli;
 
 /// <summary>
 /// <c>ss --seed-keywords [--slug &lt;slug&gt;]</c>
-/// — seed Amazon KDP keywords for published strands that have none.
-/// Without --slug, targets every strand where Version > 0.
-/// Skips strands that already have keyword rows.
+/// — seed Amazon KDP keywords for published nodes that have none.
+/// Without --slug, targets every node where Version > 0.
+/// Skips nodes that already have keyword rows.
 /// </summary>
 public static class SeedKeywordsCli
 {
@@ -32,50 +32,50 @@ public static class SeedKeywordsCli
         var dbFactory = services.GetRequiredService<IDbContextFactory<StreetSamuraiDbContext>>();
         await using var db = await dbFactory.CreateDbContextAsync();
 
-        IQueryable<Strand> q = db.Strands.AsNoTracking();
+        IQueryable<Node> q = db.Nodes.AsNoTracking();
         if (!string.IsNullOrWhiteSpace(slug))
             q = q.Where(s => s.Slug == slug);
         else
             q = q.Where(s => s.Version > 0);
 
-        var strands = await q.Select(s => new { s.Id, s.Slug, s.Title }).ToListAsync();
-        if (strands.Count == 0)
+        var nodes = await q.Select(s => new { s.Id, s.Slug, s.Title }).ToListAsync();
+        if (nodes.Count == 0)
         {
-            Console.WriteLine("[seed-keywords] No matching published strands found.");
+            Console.WriteLine("[seed-keywords] No matching published nodes found.");
             return 0;
         }
 
-        var existingIds = await db.StrandKeywords
-            .Where(k => strands.Select(s => s.Id).Contains(k.StrandId))
-            .Select(k => k.StrandId)
+        var existingIds = await db.NodeKeywords
+            .Where(k => nodes.Select(s => s.Id).Contains(k.NodeId))
+            .Select(k => k.NodeId)
             .Distinct()
             .ToListAsync();
 
         int seeded = 0;
-        foreach (var strand in strands)
+        foreach (var node in nodes)
         {
-            if (existingIds.Contains(strand.Id))
+            if (existingIds.Contains(node.Id))
             {
-                Console.WriteLine($"[seed-keywords] {strand.Slug} — already has keywords, skipping.");
+                Console.WriteLine($"[seed-keywords] {node.Slug} — already has keywords, skipping.");
                 continue;
             }
             for (int i = 0; i < DefaultKeywords.Length; i++)
             {
-                db.StrandKeywords.Add(new StrandKeyword
+                db.NodeKeywords.Add(new NodeKeyword
                 {
                     Id        = Guid.NewGuid(),
-                    StrandId  = strand.Id,
+                    NodeId  = node.Id,
                     Keyword   = DefaultKeywords[i],
                     SortOrder = i + 1,
                     CreatedAt = DateTime.UtcNow,
                 });
             }
-            Console.WriteLine($"[seed-keywords] {strand.Slug} — seeded {DefaultKeywords.Length} keywords.");
+            Console.WriteLine($"[seed-keywords] {node.Slug} — seeded {DefaultKeywords.Length} keywords.");
             seeded++;
         }
 
         if (seeded > 0) await db.SaveChangesAsync();
-        Console.WriteLine($"[seed-keywords] Done — {seeded} strand(s) seeded.");
+        Console.WriteLine($"[seed-keywords] Done — {seeded} node(s) seeded.");
         return 0;
     }
 }

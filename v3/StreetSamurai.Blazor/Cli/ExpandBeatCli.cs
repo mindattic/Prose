@@ -6,16 +6,16 @@ using StreetSamurai.Core.Services;
 namespace StreetSamurai.Blazor.Cli;
 
 /// <summary>
-/// <c>ss --expand-beat</c> — expand one or all planned beats in a strand to prose.
+/// <c>ss --expand-beat</c> — expand one or all planned beats in a node to prose.
 ///
-/// This is the headless counterpart to clicking ✨ in the strand writer UI.
-/// It uses <see cref="ProseWriterRouter.WriteAsync"/> with the strand's
-/// literary rules context, then saves via <see cref="StrandWorkbenchService.UpdateBeatTextAsync"/>.
+/// This is the headless counterpart to clicking ✨ in the node writer UI.
+/// It uses <see cref="ProseWriterRouter.WriteAsync"/> with the node's
+/// literary rules context, then saves via <see cref="NodeWorkbenchService.UpdateBeatTextAsync"/>.
 /// Beats that already have prose are skipped unless <c>--force</c> is set.
 ///
 /// Args (one of --slug / --id required):
-///   --slug &lt;slug&gt;             Strand slug.
-///   --id &lt;guid|prefix&gt;        Strand id; a unique prefix is enough.
+///   --slug &lt;slug&gt;             Node slug.
+///   --id &lt;guid|prefix&gt;        Node id; a unique prefix is enough.
 ///   --all                     Expand all planned (no prose) beats. Default when no --beat is given.
 ///   --beat &lt;beatId&gt;           Expand one specific beat by its UUID.
 ///   --force                   Re-expand beats that already have prose (overwrites).
@@ -30,7 +30,7 @@ namespace StreetSamurai.Blazor.Cli;
 ///
 /// Exit codes:
 ///   0 — at least one beat expanded successfully.
-///   1 — bad args, strand not found, or no beats expanded.
+///   1 — bad args, node not found, or no beats expanded.
 /// </summary>
 public static class ExpandBeatCli
 {
@@ -65,7 +65,7 @@ public static class ExpandBeatCli
 
         var dbFactory = services.GetRequiredService<IDbContextFactory<StreetSamuraiDbContext>>();
         var router    = services.GetRequiredService<ProseWriterRouter>();
-        var workbench = services.GetRequiredService<StrandWorkbenchService>();
+        var workbench = services.GetRequiredService<NodeWorkbenchService>();
         var canonDb   = services.GetRequiredService<IDatabaseService>();
 
         // Wire local LLM for this run if requested (ephemeral — not persisted to settings)
@@ -84,28 +84,28 @@ public static class ExpandBeatCli
             Console.WriteLine($"[expand-beat] Model override: {modelOverride}");
         }
 
-        // Resolve strand
-        Guid strandId; string strandSlug, strandTitle;
+        // Resolve node
+        Guid nodeId; string nodeSlug, nodeTitle;
         await using (var db = await dbFactory.CreateDbContextAsync())
         {
-            var query = db.Strands.AsNoTracking();
-            Core.Data.Entities.Strand? strand;
+            var query = db.Nodes.AsNoTracking();
+            Core.Data.Entities.Node? node;
             if (!string.IsNullOrWhiteSpace(slug))
-                strand = await query.FirstOrDefaultAsync(s => s.Slug == slug);
+                node = await query.FirstOrDefaultAsync(s => s.Slug == slug);
             else if (Guid.TryParse(id, out var exact))
-                strand = await query.FirstOrDefaultAsync(s => s.Id == exact);
+                node = await query.FirstOrDefaultAsync(s => s.Id == exact);
             else
             {
                 var prefix = id!.ToLowerInvariant();
                 var matches = await query.Where(s => s.Id.ToString().StartsWith(prefix)).Take(2).ToListAsync();
-                strand = matches.Count == 1 ? matches[0] : null;
+                node = matches.Count == 1 ? matches[0] : null;
                 if (matches.Count > 1) { Console.Error.WriteLine($"[expand-beat] Id prefix '{id}' is ambiguous."); return 1; }
             }
-            if (strand == null) { Console.Error.WriteLine("[expand-beat] Strand not found."); return 1; }
-            strandId = strand.Id; strandSlug = strand.Slug; strandTitle = strand.Title;
+            if (node == null) { Console.Error.WriteLine("[expand-beat] Node not found."); return 1; }
+            nodeId = node.Id; nodeSlug = node.Slug; nodeTitle = node.Title;
         }
 
-        Console.WriteLine($"[expand-beat] Strand: \"{strandTitle}\" ({strandSlug})");
+        Console.WriteLine($"[expand-beat] Node: \"{nodeTitle}\" ({nodeSlug})");
 
         // Resolve protagonist name for CharactersInScene (activates DialogueService + ConsequenceService)
         string? protagonistName = null;
@@ -135,7 +135,7 @@ public static class ExpandBeatCli
         catch { storyBible = ""; }
 
         // Load ordered beats
-        var ordered = await workbench.GetOrderedBeatsAsync(strandId);
+        var ordered = await workbench.GetOrderedBeatsAsync(nodeId);
 
         // Filter to target beat(s)
         Guid? targetBeatId = null;
@@ -190,7 +190,7 @@ public static class ExpandBeatCli
             {
                 var ctx = new BeatContext
                 {
-                    StrandId          = strandId,
+                    NodeId          = nodeId,
                     StoryBibleContext = storyBible,
                     SceneSoFar        = sceneSoFar.Length > 6000 ? sceneSoFar[^6000..] : sceneSoFar,
                     BeatGoal          = goal,

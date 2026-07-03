@@ -5,7 +5,7 @@ namespace StreetSamurai.Core.Interfaces;
 /// audio. Beat.AudioPath stores a backend-agnostic relative path that this
 /// store knows how to map onto a real location:
 /// <list type="bullet">
-/// <item><see cref="LocalDiskAudioStore"/> — files under <c>{MutableDataDir}/strands/{slug}/audio/…</c>.
+/// <item><see cref="LocalDiskAudioStore"/> — files under <c>{MutableDataDir}/nodes/{slug}/audio/…</c>.
 ///   Right for dev, single-instance Azure App Service with <c>SS_MUTABLE_DATA_ROOT</c>,
 ///   and any deployment where one process owns the bytes.</item>
 /// <item><c>AzureBlobAudioStore</c> — bytes in an Azure Blob container.
@@ -36,22 +36,22 @@ public interface IAudioStore
     /// <summary>Persist one beat's audio bytes and return the relative path
     /// that should be stamped onto Beat.AudioPath. The relative path is
     /// canonical across stores: <c>{slug}/audio/{beatId:N}.{ext}</c>.</summary>
-    Task<string> WriteBeatAsync(string strandSlug, Guid beatId, string extension, byte[] bytes, CancellationToken ct = default);
+    Task<string> WriteBeatAsync(string nodeSlug, Guid beatId, string extension, byte[] bytes, CancellationToken ct = default);
 
-    /// <summary>Persist a strand's combined audio at <c>{slug}/strand.{ext}</c>.
-    /// Returns the relative path for Strand.CombinedAudioPath.</summary>
-    Task<string> WriteCombinedAsync(string strandSlug, string extension, byte[] bytes, CancellationToken ct = default);
+    /// <summary>Persist a node's combined audio at <c>{slug}/node.{ext}</c>.
+    /// Returns the relative path for Node.CombinedAudioPath.</summary>
+    Task<string> WriteCombinedAsync(string nodeSlug, string extension, byte[] bytes, CancellationToken ct = default);
 
     /// <summary>Stream-based variant of <see cref="WriteCombinedAsync"/>.
     /// Lets backends that can sink straight to a file or HTTP body (local-
     /// disk FileStream, blob UploadAsync) avoid materializing a 100+ MB
     /// byte[] on the LOH. The default implementation buffers into memory
     /// and delegates — backends should override for the perf win.</summary>
-    async Task<string> WriteCombinedFromStreamAsync(string strandSlug, string extension, Stream src, CancellationToken ct = default)
+    async Task<string> WriteCombinedFromStreamAsync(string nodeSlug, string extension, Stream src, CancellationToken ct = default)
     {
         using var ms = new MemoryStream();
         await src.CopyToAsync(ms, ct);
-        return await WriteCombinedAsync(strandSlug, extension, ms.ToArray(), ct);
+        return await WriteCombinedAsync(nodeSlug, extension, ms.ToArray(), ct);
     }
 
     /// <summary>Delete a relative path. No-op if absent — callers should not
@@ -79,7 +79,7 @@ public interface IAudioStore
     /// <paramref name="cacheBust"/> token (typically Beat.LastRequestId or
     /// UpdatedAt.Ticks) is appended as a query string so a re-record
     /// invalidates the browser cache without a path change.</summary>
-    string BuildPlaybackUrl(Guid strandId, Guid beatId, string relativePath, string? cacheBust = null);
+    string BuildPlaybackUrl(Guid nodeId, Guid beatId, string relativePath, string? cacheBust = null);
 
     /// <summary>Last-modified timestamp of the bytes at <paramref name="relativePath"/>,
     /// or null when the file/blob is absent. Used by the bidirectional

@@ -731,21 +731,21 @@
 
     protected override void OnInitialized()
     {
-        // Unified-strand cutover: /write* routes funnel to /strand/{id} now.
-        // The migration preserved the Chapter.Id → Strand.Id mapping, so a
+        // Unified-node cutover: /write* routes funnel to /node/{id} now.
+        // The migration preserved the Chapter.Id → Node.Id mapping, so a
         // direct hop with the chapter id resolves the same data on the new
-        // surface. /write with no id lands on the strand index.
+        // surface. /write with no id lands on the node index.
         if (!string.IsNullOrEmpty(ChapterId))
         {
-            Nav.NavigateTo($"/strand/{ChapterId}", replace: true);
+            Nav.NavigateTo($"/node/{ChapterId}", replace: true);
             return;
         }
         if (!string.IsNullOrEmpty(BookId))
         {
-            Nav.NavigateTo($"/strand/{BookId}", replace: true);
+            Nav.NavigateTo($"/node/{BookId}", replace: true);
             return;
         }
-        Nav.NavigateTo("/strands", replace: true);
+        Nav.NavigateTo("/nodes", replace: true);
     }
 
     protected override void OnParametersSet()

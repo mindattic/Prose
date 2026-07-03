@@ -8,7 +8,7 @@ namespace StreetSamurai.Core.Services;
 /// Orchestrates everything that runs after a chapter's prose is complete:
 ///
 ///   1. ChapterSummaryService.ExtractAndSaveAsync   — persist chapter facts to DB
-///   2. CanonContradictionService.CheckStrandAsync  — flag contradictions
+///   2. CanonContradictionService.CheckNodeAsync  — flag contradictions
 ///   3. OutlineAdherenceService.CheckAsync          — detect arc drift
 ///   4. Tiered review gate:
 ///        Tier 1 (always): single Sonnet call scoring the chapter 0-100
@@ -22,7 +22,7 @@ public class ChapterCloseProcessorService(
     ChapterSummaryService chapterSummary,
     CanonContradictionService canonChecker,
     OutlineAdherenceService adherence,
-    StrandReviewService reviewer,
+    NodeReviewService reviewer,
     NarrativeForkService forkService,
     ILlmService llm)
 {
@@ -30,7 +30,7 @@ public class ChapterCloseProcessorService(
     public const int HardFloor       = 75;
 
     public async Task<ChapterCloseResult> ProcessAsync(
-        Guid parentStrandId,
+        Guid parentNodeId,
         Guid chapterId,
         int chapterIndex,
         string chapterProse,
@@ -42,7 +42,7 @@ public class ChapterCloseProcessorService(
         // 1. Persist chapter summary
         try
         {
-            await chapterSummary.ExtractAndSaveAsync(parentStrandId, chapterIndex, chapterProse, ct);
+            await chapterSummary.ExtractAndSaveAsync(parentNodeId, chapterIndex, chapterProse, ct);
             result.SummaryPersisted = true;
         }
         catch (Exception ex)
@@ -53,7 +53,7 @@ public class ChapterCloseProcessorService(
         // 2. Contradiction check (non-fatal)
         try
         {
-            var cr = await canonChecker.CheckStrandAsync(chapterId, ct: ct);
+            var cr = await canonChecker.CheckNodeAsync(chapterId, ct: ct);
             result.ContradictionCount = cr.Contradictions.Count;
         }
         catch (Exception ex)
@@ -65,31 +65,31 @@ public class ChapterCloseProcessorService(
         var summaryText = "";
         try
         {
-            var summaries = await chapterSummary.BuildPriorSummaryContextAsync(parentStrandId, ct);
+            var summaries = await chapterSummary.BuildPriorSummaryContextAsync(parentNodeId, ct);
             summaryText   = summaries;
 
             // Use the most recently saved chapter's summary text directly
             await using var db = await dbFactory.CreateDbContextAsync(ct);
-            var latest = await db.StrandChapterSummaries
-                .Where(s => s.StrandId == parentStrandId && s.ChapterIndex == chapterIndex)
+            var latest = await db.NodeChapterSummaries
+                .Where(s => s.NodeId == parentNodeId && s.ChapterIndex == chapterIndex)
                 .OrderByDescending(s => s.UpdatedAt)
                 .Select(s => s.SummaryText)
                 .FirstOrDefaultAsync(ct) ?? "";
 
-            var adherenceResult = await adherence.CheckAsync(parentStrandId, latest, ct);
+            var adherenceResult = await adherence.CheckAsync(parentNodeId, latest, ct);
             result.AdherenceScore   = adherenceResult.Score;
             result.AdherenceSummary = adherenceResult.Summary;
 
             // Recalibrate if significantly off track
             if (adherenceResult.Score < 60)
             {
-                var strand = await db.Strands.AsNoTracking()
-                    .Where(s => s.Id == parentStrandId)
-                    .Select(s => new { s.StrandBible })
+                var node = await db.Nodes.AsNoTracking()
+                    .Where(s => s.Id == parentNodeId)
+                    .Select(s => new { s.NodeBible })
                     .FirstOrDefaultAsync(ct);
 
                 var recalibrated = await adherence.RecalibrateAsync(
-                    parentStrandId, adherenceResult.Summary, strand?.StrandBible, ct);
+                    parentNodeId, adherenceResult.Summary, node?.NodeBible, ct);
                 result.RecalibratedBeats = recalibrated;
             }
         }
@@ -126,7 +126,7 @@ public class ChapterCloseProcessorService(
             try
             {
                 var fork = await forkService.PickNextChapterArcAsync(
-                    parentStrandId, chapterIndex, chapterProse, forkCount, ct);
+                    parentNodeId, chapterIndex, chapterProse, forkCount, ct);
                 if (fork.HasResult)
                 {
                     result.ForkWinnerIndex  = fork.WinnerIndex;

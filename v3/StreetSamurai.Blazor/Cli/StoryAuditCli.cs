@@ -7,11 +7,11 @@ using StreetSamurai.Core.Services;
 namespace StreetSamurai.Blazor.Cli;
 
 /// <summary>
-/// ss --story-audit --slug &lt;strandSlug&gt; [--json]
+/// ss --story-audit --slug &lt;nodeSlug&gt; [--json]
 ///
-/// Audits a strand against its 7 commandments:
-///   • Gateway commandments — when PreviousStrandId is null (standalone / first in series)
-///   • Sequel commandments  — when PreviousStrandId is set
+/// Audits a node against its 7 commandments:
+///   • Gateway commandments — when PreviousNodeId is null (standalone / first in series)
+///   • Sequel commandments  — when PreviousNodeId is set
 ///
 /// Runs all 7 checks in parallel, reports pass/warn/fail per commandment
 /// with evidence and a fix suggestion.
@@ -32,7 +32,7 @@ public static class StoryAuditCli
 
         if (slug == null)
         {
-            Console.Error.WriteLine("Usage: ss --story-audit --slug <strandSlug> [--json]");
+            Console.Error.WriteLine("Usage: ss --story-audit --slug <nodeSlug> [--json]");
             return 2;
         }
 
@@ -40,30 +40,30 @@ public static class StoryAuditCli
         var dbFactory = services.GetRequiredService<IDbContextFactory<StreetSamuraiDbContext>>();
         await using var db = await dbFactory.CreateDbContextAsync();
 
-        var strand = await db.Strands.AsNoTracking()
-            .FirstOrDefaultAsync(s => s.Slug == slug || s.StrandCode == slug);
-        if (strand == null)
+        var node = await db.Nodes.AsNoTracking()
+            .FirstOrDefaultAsync(s => s.Slug == slug || s.NodeCode == slug);
+        if (node == null)
         {
-            Console.Error.WriteLine($"Strand '{slug}' not found.");
+            Console.Error.WriteLine($"Node '{slug}' not found.");
             return 2;
         }
 
-        var isSequel = strand.PreviousStrandId.HasValue;
+        var isSequel = node.PreviousNodeId.HasValue;
         var mode = isSequel ? "sequel" : "gateway";
 
         if (!jsonMode)
-            Console.WriteLine($"Auditing '{strand.Title}' as {mode.ToUpperInvariant()} story — running 7 commandment checks…\n");
+            Console.WriteLine($"Auditing '{node.Title}' as {mode.ToUpperInvariant()} story — running 7 commandment checks…\n");
 
-        var report = await auditSvc.AuditAsync(strand.Id);
+        var report = await auditSvc.AuditAsync(node.Id);
 
         if (jsonMode)
         {
             Console.WriteLine(JsonSerializer.Serialize(new
             {
-                strand_slug     = report.StrandSlug,
-                strand_title    = report.StrandTitle,
+                node_slug     = report.NodeSlug,
+                node_title    = report.NodeTitle,
                 mode            = report.Mode,
-                previous_strand = report.PreviousStrand,
+                previous_node = report.PreviousNode,
                 gateway_ready   = report.GatewayReady,
                 blocking_count  = report.BlockingCount,
                 advisory_count  = report.AdvisoryCount,
@@ -77,8 +77,8 @@ public static class StoryAuditCli
         // ── Human-readable output ──────────────────────────────────────────────
 
         Console.WriteLine($"Mode:    {report.Mode.ToUpperInvariant()}");
-        if (report.PreviousStrand != null)
-            Console.WriteLine($"Sequel to: {report.PreviousStrand}");
+        if (report.PreviousNode != null)
+            Console.WriteLine($"Sequel to: {report.PreviousNode}");
         Console.WriteLine($"Plants:  {report.PlantCount} registered ({report.OrphanedPlants} orphaned)");
         Console.WriteLine();
 
@@ -109,7 +109,7 @@ public static class StoryAuditCli
         {
             Console.WriteLine($"Blocking: {report.BlockingCount}   Advisory: {report.AdvisoryCount}");
             if (report.BlockingCount > 0)
-                Console.WriteLine("Fix failing commandments before publishing this strand.");
+                Console.WriteLine("Fix failing commandments before publishing this node.");
         }
 
         return report.BlockingCount > 0 ? 2 : report.AdvisoryCount > 0 ? 1 : 0;

@@ -10,28 +10,28 @@ using StreetSamurai.Core.Interfaces;
 namespace StreetSamurai.Core.Services;
 
 /// <summary>
-/// Rebuilds a strand's beats to follow the codified beat doctrine
+/// Rebuilds a node's beats to follow the codified beat doctrine
 /// (<see cref="StreetSamurai.Core.Models.Canon.BeatDoctrineRules"/>): re-segments
-/// the strand's full prose into STORY BEATS via the LLM, applies the prose
+/// the node's full prose into STORY BEATS via the LLM, applies the prose
 /// mechanics (dialogue on its own line, '?' on questions, asks/asked), and
-/// assigns inter-beat GAPS — then replaces the strand's beats.
+/// assigns inter-beat GAPS — then replaces the node's beats.
 ///
 /// Safety:
 /// <list type="bullet">
-/// <item>The strand's full text is exported to markdown BEFORE any mutation.</item>
+/// <item>The node's full text is exported to markdown BEFORE any mutation.</item>
 /// <item>A word-retention guard compares the LLM output against the source; if it
 /// diverges past <see cref="MinWordRetention"/> (truncation / dropped scenes /
-/// hallucination) the strand is NOT mutated and is flagged for review.</item>
-/// <item>The strand prose is processed in bounded windows (sentence-aligned) so a
+/// hallucination) the node is NOT mutated and is flagged for review.</item>
+/// <item>The node prose is processed in bounded windows (sentence-aligned) so a
 /// single LLM call never has to swallow a whole novel.</item>
 /// </list>
 /// Source of truth stays the relational beats; this is an author-invoked rewrite,
-/// gated per strand by the report it returns.
+/// gated per node by the report it returns.
 /// </summary>
 public class BeatRebuildService
 {
     private readonly IDbContextFactory<StreetSamuraiDbContext> dbFactory;
-    private readonly StrandWorkbenchService workbench;
+    private readonly NodeWorkbenchService workbench;
     private readonly ILlmService llm;
     private readonly DatabaseService canonDb;
     private readonly ManuscriptExportService export;
@@ -46,7 +46,7 @@ public class BeatRebuildService
 
     public BeatRebuildService(
         IDbContextFactory<StreetSamuraiDbContext> dbFactory,
-        StrandWorkbenchService workbench,
+        NodeWorkbenchService workbench,
         ILlmService llm,
         DatabaseService canonDb,
         ManuscriptExportService export,
@@ -63,7 +63,7 @@ public class BeatRebuildService
     public record RebuiltBeat(string Text, bool SceneEnd);
 
     public record BeatRebuildReport(
-        Guid StrandId, string Slug, string Title, bool Applied,
+        Guid NodeId, string Slug, string Title, bool Applied,
         int OldBeats, int NewBeats, double WordRetention, bool GuardPassed,
         string? BackupPath, string? Note);
 
@@ -74,28 +74,28 @@ public class BeatRebuildService
     }
 
     /// <summary>
-    /// Re-segment one strand. With <paramref name="apply"/>=false this is a dry run:
+    /// Re-segment one node. With <paramref name="apply"/>=false this is a dry run:
     /// it computes the proposed beats + retention and mutates nothing. With
     /// <paramref name="apply"/>=true it exports a backup, then (only if the guard
-    /// passes) replaces the strand's beats and assigns gaps.
+    /// passes) replaces the node's beats and assigns gaps.
     /// </summary>
-    public async Task<BeatRebuildReport> RebuildAsync(Guid strandId, bool apply, CancellationToken ct = default)
+    public async Task<BeatRebuildReport> RebuildAsync(Guid nodeId, bool apply, CancellationToken ct = default)
     {
         string slug, title;
         await using (var db = await dbFactory.CreateDbContextAsync(ct))
         {
-            var s = await db.Strands.AsNoTracking().FirstOrDefaultAsync(x => x.Id == strandId, ct);
-            if (s == null) return new(strandId, "", "", false, 0, 0, 0, false, null, "Strand not found.");
+            var s = await db.Nodes.AsNoTracking().FirstOrDefaultAsync(x => x.Id == nodeId, ct);
+            if (s == null) return new(nodeId, "", "", false, 0, 0, 0, false, null, "Node not found.");
             slug = s.Slug; title = s.Title;
         }
 
-        var ordered = await workbench.GetOrderedBeatsAsync(strandId, ct);
+        var ordered = await workbench.GetOrderedBeatsAsync(nodeId, ct);
         if (ordered.Count == 0)
-            return new(strandId, slug, title, false, 0, 0, 0, false, null, "Strand has no beats — nothing to rebuild.");
+            return new(nodeId, slug, title, false, 0, 0, 0, false, null, "Node has no beats — nothing to rebuild.");
 
         var sourceText = AssembleText(ordered.Select(o => o.Beat.Text ?? ""));
         if (sourceText.Trim().Length == 0)
-            return new(strandId, slug, title, false, ordered.Count, 0, 0, false, null, "Strand beats are empty — nothing to rebuild.");
+            return new(nodeId, slug, title, false, ordered.Count, 0, 0, false, null, "Node beats are empty — nothing to rebuild.");
 
         // ── LLM re-segmentation, windowed ──
         var system = BuildSystemPrompt();
@@ -108,29 +108,29 @@ public class BeatRebuildService
         }
         rebuilt = rebuilt.Where(b => !string.IsNullOrWhiteSpace(b.Text)).ToList();
         if (rebuilt.Count == 0)
-            return new(strandId, slug, title, false, ordered.Count, 0, 0, false, null, "LLM returned no beats — left untouched.");
+            return new(nodeId, slug, title, false, ordered.Count, 0, 0, false, null, "LLM returned no beats — left untouched.");
 
         // ── Word-retention guard ──
         var retention = WordRetention(sourceText, string.Join(" ", rebuilt.Select(b => b.Text)));
         var guardPassed = retention >= MinWordRetention;
 
         if (!apply)
-            return new(strandId, slug, title, false, ordered.Count, rebuilt.Count, retention, guardPassed, null,
+            return new(nodeId, slug, title, false, ordered.Count, rebuilt.Count, retention, guardPassed, null,
                 guardPassed ? "Dry run — re-run with --apply to commit." : $"Dry run — GUARD WOULD BLOCK (retention {retention:P0} < {MinWordRetention:P0}).");
 
         if (!guardPassed)
-            return new(strandId, slug, title, false, ordered.Count, rebuilt.Count, retention, false, null,
+            return new(nodeId, slug, title, false, ordered.Count, rebuilt.Count, retention, false, null,
                 $"BLOCKED: word retention {retention:P0} < {MinWordRetention:P0} — likely truncation/hallucination. Left untouched; review manually.");
 
         // ── Backup, then replace ──
         string? backupPath = null;
-        try { backupPath = await export.ExportMarkdownAsync(strandId, ct: ct); }
+        try { backupPath = await export.ExportMarkdownAsync(nodeId, ct: ct); }
         catch (Exception ex) { log.LogWarning(ex, "Backup export failed for {Slug}; aborting rebuild.", slug);
-            return new(strandId, slug, title, false, ordered.Count, rebuilt.Count, retention, true, null, $"Backup export failed ({ex.Message}) — left untouched."); }
+            return new(nodeId, slug, title, false, ordered.Count, rebuilt.Count, retention, true, null, $"Backup export failed ({ex.Message}) — left untouched."); }
 
-        await ReplaceBeatsAsync(strandId, rebuilt, ct);
-        log.LogInformation("Rebuilt strand {Slug}: {Old} → {New} beats (retention {Ret:P0}).", slug, ordered.Count, rebuilt.Count, retention);
-        return new(strandId, slug, title, true, ordered.Count, rebuilt.Count, retention, true, backupPath, "Rebuilt and gaps assigned.");
+        await ReplaceBeatsAsync(nodeId, rebuilt, ct);
+        log.LogInformation("Rebuilt node {Slug}: {Old} → {New} beats (retention {Ret:P0}).", slug, ordered.Count, rebuilt.Count, retention);
+        return new(nodeId, slug, title, true, ordered.Count, rebuilt.Count, retention, true, backupPath, "Rebuilt and gaps assigned.");
     }
 
     // ── prose assembly / chunking ──
@@ -243,19 +243,19 @@ public class BeatRebuildService
 
     // ── replace ──
 
-    private async Task ReplaceBeatsAsync(Guid strandId, List<RebuiltBeat> beats, CancellationToken ct)
+    private async Task ReplaceBeatsAsync(Guid nodeId, List<RebuiltBeat> beats, CancellationToken ct)
     {
         await using var db = await dbFactory.CreateDbContextAsync(ct);
         await using var tx = await db.Database.BeginTransactionAsync(ct);
 
-        // Drop the strand's existing beats. Beats are referenced only by StrandBeats
+        // Drop the node's existing beats. Beats are referenced only by NodeBeats
         // (verified by FK survey); remove links first, then the now-orphan Beat rows.
-        var oldBeatIds = await db.StrandBeats.Where(sb => sb.StrandId == strandId)
+        var oldBeatIds = await db.NodeBeats.Where(sb => sb.NodeId == nodeId)
             .Select(sb => sb.BeatId).ToListAsync(ct);
-        await db.StrandBeats.Where(sb => sb.StrandId == strandId).ExecuteDeleteAsync(ct);
+        await db.NodeBeats.Where(sb => sb.NodeId == nodeId).ExecuteDeleteAsync(ct);
         if (oldBeatIds.Count > 0)
         {
-            var stillReferenced = await db.StrandBeats
+            var stillReferenced = await db.NodeBeats
                 .Where(sb => oldBeatIds.Contains(sb.BeatId)).Select(sb => sb.BeatId).Distinct().ToListAsync(ct);
             var toDelete = oldBeatIds.Except(stillReferenced).ToList();
             await db.Beats.Where(b => toDelete.Contains(b.Id)).ExecuteDeleteAsync(ct);
@@ -273,19 +273,19 @@ public class BeatRebuildService
                 Id = Guid.CreateVersion7(),
                 Number = baseNumber + i,
                 Text = text,
-                TextHash = StrandWorkbenchService.ComputeTextHash(text),
+                TextHash = NodeWorkbenchService.ComputeTextHash(text),
                 Kind = "prose",
                 SceneType = rb.SceneEnd ? "scene-end" : "scene",
                 Stale = true,
                 GapAfterMs = isLast ? null : GapFor(rb, text),
             };
             db.Beats.Add(beat);
-            db.StrandBeats.Add(new StrandBeat { StrandId = strandId, BeatId = beat.Id, SortKey = sortKey });
+            db.NodeBeats.Add(new NodeBeat { NodeId = nodeId, BeatId = beat.Id, SortKey = sortKey });
             sortKey += 100.0;
         }
 
-        var strand = await db.Strands.FirstOrDefaultAsync(s => s.Id == strandId, ct);
-        if (strand != null) strand.UpdatedAt = DateTime.UtcNow;
+        var node = await db.Nodes.FirstOrDefaultAsync(s => s.Id == nodeId, ct);
+        if (node != null) node.UpdatedAt = DateTime.UtcNow;
 
         await db.SaveChangesAsync(ct);
         await tx.CommitAsync(ct);

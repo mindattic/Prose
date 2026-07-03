@@ -6,7 +6,7 @@ using StreetSamurai.Core.Services;
 namespace StreetSamurai.Blazor.Cli;
 
 /// <summary>
-/// <c>ss --check-canon (--slug &lt;s&gt; | --id &lt;guid&gt; | --all)</c> — sweep a strand's
+/// <c>ss --check-canon (--slug &lt;s&gt; | --id &lt;guid&gt; | --all)</c> — sweep a node's
 /// prose against the canon database ACROSS ALL entity types and queue each
 /// contradiction as a CANON-CONTRADICTION finding with a proposed fix. Self-
 /// correction: the system detects + drafts the fix so an admin no longer diffs by
@@ -40,17 +40,17 @@ public static class CheckCanonCli
         await using (var db = await dbFactory.CreateDbContextAsync())
         {
             if (all)
-                ids = await db.Strands.AsNoTracking().Select(s => s.Id).ToListAsync();
+                ids = await db.Nodes.AsNoTracking().Select(s => s.Id).ToListAsync();
             else
             {
-                var q = db.Strands.AsNoTracking();
-                Strand? strand;
-                if (!string.IsNullOrWhiteSpace(slug)) strand = await q.FirstOrDefaultAsync(s => s.Slug == slug);
-                else if (Guid.TryParse(id, out var g)) strand = await q.FirstOrDefaultAsync(s => s.Id == g);
-                else strand = await q.Where(s => s.Id.ToString().StartsWith(id!.ToLower())).Take(2).ToListAsync() switch
+                var q = db.Nodes.AsNoTracking();
+                Node? node;
+                if (!string.IsNullOrWhiteSpace(slug)) node = await q.FirstOrDefaultAsync(s => s.Slug == slug);
+                else if (Guid.TryParse(id, out var g)) node = await q.FirstOrDefaultAsync(s => s.Id == g);
+                else node = await q.Where(s => s.Id.ToString().StartsWith(id!.ToLower())).Take(2).ToListAsync() switch
                 { { Count: 1 } m => m[0], _ => null };
-                if (strand == null) { Console.Error.WriteLine("[check-canon] Strand not found."); return 1; }
-                ids.Add(strand.Id);
+                if (node == null) { Console.Error.WriteLine("[check-canon] Node not found."); return 1; }
+                ids.Add(node.Id);
             }
         }
 
@@ -59,7 +59,7 @@ public static class CheckCanonCli
         {
             try
             {
-                var r = await checker.CheckStrandAsync(sid, proposeFixes: fix);
+                var r = await checker.CheckNodeAsync(sid, proposeFixes: fix);
                 total += r.Contradictions.Count;
                 Console.WriteLine($"[check-canon] {r.Slug}: {r.ChunksChecked} chunk(s) → {r.Contradictions.Count} contradiction(s).");
                 foreach (var c in r.Contradictions)

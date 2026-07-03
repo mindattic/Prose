@@ -9,7 +9,7 @@ namespace StreetSamurai.Blazor.Cli;
 
 /// <summary>
 /// <c>ss --timeline (--slug slug | --id id)</c>
-///   Scans every beat in a strand (or every episode in a book) for clock and day
+///   Scans every beat in a node (or every episode in a book) for clock and day
 ///   references, infers story-relative timestamps, and prints an elapsed-time table.
 ///   Flags continuity conflicts where stated time contradicts the prior sequence.
 ///
@@ -47,41 +47,41 @@ public static class TimelineCli
         var dbFactory = sp.GetRequiredService<IDbContextFactory<StreetSamuraiDbContext>>();
         await using var db = await dbFactory.CreateDbContextAsync();
 
-        Core.Data.Entities.Strand? strand;
+        Core.Data.Entities.Node? node;
         if (!string.IsNullOrWhiteSpace(code))
-            strand = await db.Strands.AsNoTracking()
-                .FirstOrDefaultAsync(s => s.StrandCode == code.ToUpperInvariant());
+            node = await db.Nodes.AsNoTracking()
+                .FirstOrDefaultAsync(s => s.NodeCode == code.ToUpperInvariant());
         else if (!string.IsNullOrWhiteSpace(slug))
-            strand = await db.Strands.AsNoTracking().FirstOrDefaultAsync(s => s.Slug == slug);
+            node = await db.Nodes.AsNoTracking().FirstOrDefaultAsync(s => s.Slug == slug);
         else
-            strand = await db.Strands.AsNoTracking()
+            node = await db.Nodes.AsNoTracking()
                 .FirstOrDefaultAsync(s => s.Id.ToString().Replace("-", "").StartsWith(id!.Replace("-", "")));
 
-        if (strand is null)
+        if (node is null)
         {
-            Console.Error.WriteLine("[timeline] strand not found");
+            Console.Error.WriteLine("[timeline] node not found");
             return 1;
         }
 
-        Console.WriteLine($"[timeline] {strand.Title}  ({strand.Slug})");
+        Console.WriteLine($"[timeline] {node.Title}  ({node.Slug})");
 
-        // Load direct beats for this strand.
-        var directBeats = await LoadBeatsAsync(db, strand.Id, episodeTitle: null);
+        // Load direct beats for this node.
+        var directBeats = await LoadBeatsAsync(db, node.Id, episodeTitle: null);
 
         // Organise into chunks: either the direct beats chunked, or each episode as its own chunk.
         var chunks = new List<(string? episodeTitle, List<BeatRow> beats)>();
 
         if (directBeats.Count > 0)
         {
-            // Single strand — split into ≤ChunkSize blocks.
+            // Single node — split into ≤ChunkSize blocks.
             for (int start = 0; start < directBeats.Count; start += ChunkSize)
                 chunks.Add((null, directBeats.Skip(start).Take(ChunkSize).ToList()));
         }
         else
         {
             // Book / collection — load each episode separately.
-            var children = await db.Strands.AsNoTracking()
-                .Where(s => s.ParentStrandId == strand.Id)
+            var children = await db.Nodes.AsNoTracking()
+                .Where(s => s.ParentNodeId == node.Id)
                 .OrderBy(s => s.SortKey)
                 .Select(s => new { s.Id, s.Title })
                 .ToListAsync();
@@ -174,7 +174,7 @@ public static class TimelineCli
 
         // Print the combined table.
         Console.WriteLine();
-        Console.WriteLine($"=== Timeline: {strand.Title} ===");
+        Console.WriteLine($"=== Timeline: {node.Title} ===");
         Console.WriteLine();
         Console.WriteLine($"  {"":2} {"sk",6}  {"Time",-24} {"Elapsed",-12} Beat");
         Console.WriteLine(new string('─', 92));
@@ -223,10 +223,10 @@ public static class TimelineCli
     }
 
     private static async Task<List<BeatRow>> LoadBeatsAsync(
-        StreetSamuraiDbContext db, Guid strandId, string? episodeTitle)
+        StreetSamuraiDbContext db, Guid nodeId, string? episodeTitle)
     {
-        var raw = await db.StrandBeats
-            .Where(sb => sb.StrandId == strandId && sb.IsEnabled)
+        var raw = await db.NodeBeats
+            .Where(sb => sb.NodeId == nodeId && sb.IsEnabled)
             .OrderBy(sb => sb.SortKey)
             .Join(db.Beats, sb => sb.BeatId, b => b.Id,
                 (sb, b) => new { sb.SortKey, b.BeatTitle, b.Text })

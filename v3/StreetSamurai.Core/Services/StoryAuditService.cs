@@ -9,10 +9,10 @@ namespace StreetSamurai.Core.Services;
 // ─────────────────────────────────────────────────────────────────────────────
 // StoryAuditService
 //
-// Audits a strand against the 7 Gateway Commandments (standalone / first-in-
-// series) or the 7 Sequel Commandments (when PreviousStrandId is set).
+// Audits a node against the 7 Gateway Commandments (standalone / first-in-
+// series) or the 7 Sequel Commandments (when PreviousNodeId is set).
 //
-// Which set applies is determined automatically from Strand.PreviousStrandId:
+// Which set applies is determined automatically from Node.PreviousNodeId:
 //   null  → gateway commandments (seduce the cold reader)
 //   set   → sequel commandments  (honor the returning reader)
 //
@@ -146,65 +146,65 @@ public class StoryAuditService(
 
     // ── Public API ────────────────────────────────────────────────────────────
 
-    public async Task<StoryAuditReport> AuditAsync(Guid strandId, CancellationToken ct = default)
+    public async Task<StoryAuditReport> AuditAsync(Guid nodeId, CancellationToken ct = default)
     {
         await using var db = await dbFactory.CreateDbContextAsync(ct);
-        var strand = await db.Strands
+        var node = await db.Nodes
             .AsNoTracking()
-            .Include(s => s.StrandBeats)
+            .Include(s => s.NodeBeats)
             .ThenInclude(sb => sb.Beat)
-            .FirstOrDefaultAsync(s => s.Id == strandId, ct)
-            ?? throw new InvalidOperationException($"Strand {strandId} not found.");
+            .FirstOrDefaultAsync(s => s.Id == nodeId, ct)
+            ?? throw new InvalidOperationException($"Node {nodeId} not found.");
 
-        var isSequel = strand.PreviousStrandId.HasValue;
+        var isSequel = node.PreviousNodeId.HasValue;
         var commandments = (isSequel ? SequelCommandments : GatewayCommandments)
-            .Concat(!isSequel && strand.UniverseId == GlmzUniverseId ? GlmzGatewayCommandments : [])
+            .Concat(!isSequel && node.UniverseId == GlmzUniverseId ? GlmzGatewayCommandments : [])
             .ToArray();
         var mode = isSequel ? "sequel" : "gateway";
 
-        // For book strands, audit the LIVE chapter prose (child chapters ordered by
-        // SortKey), not the book strand's own beats — those may hold a legacy outline
+        // For book nodes, audit the LIVE chapter prose (child chapters ordered by
+        // SortKey), not the book node's own beats — those may hold a legacy outline
         // or condensed draft that no longer matches the published manuscript.
-        var childChapters = await db.Strands.AsNoTracking()
-            .Where(s => s.ParentStrandId == strand.Id && s.Kind == "chapter" && !s.IsWIP)
-            .Include(s => s.StrandBeats).ThenInclude(sb => sb.Beat)
+        var childChapters = await db.Nodes.AsNoTracking()
+            .Where(s => s.ParentNodeId == node.Id && s.Kind == "chapter" && !s.IsWIP)
+            .Include(s => s.NodeBeats).ThenInclude(sb => sb.Beat)
             .OrderBy(s => s.SortKey)
             .ToListAsync(ct);
 
         var prose = childChapters.Count > 0
             ? string.Join("\n\n", childChapters
-                .SelectMany(ch => ch.StrandBeats
+                .SelectMany(ch => ch.NodeBeats
                     .Where(sb => sb.IsEnabled)
                     .OrderBy(sb => sb.SortKey)
                     .Select(sb => sb.Beat!.Text))
                 .Where(t => !string.IsNullOrWhiteSpace(t)))
-            : string.Join("\n\n", strand.StrandBeats
+            : string.Join("\n\n", node.NodeBeats
                 .Where(sb => sb.IsEnabled)
                 .OrderBy(sb => sb.SortKey)
                 .Select(sb => sb.Beat!.Text)
                 .Where(t => !string.IsNullOrWhiteSpace(t)));
 
-        var plants = await plantPayoffs.GetByStrandAsync(strandId, ct);
+        var plants = await plantPayoffs.GetByNodeAsync(nodeId, ct);
 
         // run all commandment checks in parallel
         var tasks = commandments.Select(c => CheckCommandmentAsync(c.Key, c.Title, c.Body, prose, plants, isSequel, ct));
         var checks = await Task.WhenAll(tasks);
 
         string? previousTitle = null;
-        if (isSequel && strand.PreviousStrandId.HasValue)
+        if (isSequel && node.PreviousNodeId.HasValue)
         {
-            var prev = await db.Strands.AsNoTracking()
-                .Where(s => s.Id == strand.PreviousStrandId.Value)
+            var prev = await db.Nodes.AsNoTracking()
+                .Where(s => s.Id == node.PreviousNodeId.Value)
                 .Select(s => new { s.Title, s.Slug })
                 .FirstOrDefaultAsync(ct);
-            previousTitle = prev != null ? $"{prev.Title} ({prev.Slug})" : strand.PreviousStrandId.ToString();
+            previousTitle = prev != null ? $"{prev.Title} ({prev.Slug})" : node.PreviousNodeId.ToString();
         }
 
         return new StoryAuditReport(
-            StrandSlug:      strand.Slug,
-            StrandTitle:     strand.Title,
+            NodeSlug:      node.Slug,
+            NodeTitle:     node.Title,
             Mode:            mode,
-            PreviousStrand:  previousTitle,
+            PreviousNode:  previousTitle,
             Checks:          checks.ToList(),
             GatewayReady:    checks.All(c => c.Status != "fail"),
             BlockingCount:   checks.Count(c => c.Status == "fail"),
@@ -234,7 +234,7 @@ public class StoryAuditService(
     {
         var rereadKey = isSequel ? "reward_long_memory" : "reread_reward";
         var plantContext = key == rereadKey && plants.Count > 0
-            ? "\n\nRegistered plant/payoff pairs for this strand:\n" +
+            ? "\n\nRegistered plant/payoff pairs for this node:\n" +
               string.Join("\n", plants.Select(p =>
                   $"  [{p.Category}] PLANT: {p.PlantDescription} | PAYOFF: {p.PayoffDescription} | transparent: {p.IsTransparent}"))
             : "";
@@ -257,10 +257,10 @@ public class StoryAuditService(
             COMMANDMENT: {{title}}
             RULE: {{body}}{{plantContext}}
 
-            STRAND PROSE:
+            NODE PROSE:
             {{ClampProse(prose)}}
 
-            Evaluate: does this strand satisfy the commandment?
+            Evaluate: does this node satisfy the commandment?
             - "pass" = clearly satisfied
             - "warn" = partially present but could be stronger
             - "fail" = absent, violated, or actively working against the commandment
@@ -334,10 +334,10 @@ public record StoryAuditCheck(
     string? Fix);
 
 public record StoryAuditReport(
-    string             StrandSlug,
-    string             StrandTitle,
+    string             NodeSlug,
+    string             NodeTitle,
     string             Mode,            // "gateway" | "sequel"
-    string?            PreviousStrand,
+    string?            PreviousNode,
     List<StoryAuditCheck> Checks,
     bool               GatewayReady,
     int                BlockingCount,

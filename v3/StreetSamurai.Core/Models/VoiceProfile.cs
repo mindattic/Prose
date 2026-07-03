@@ -6,7 +6,7 @@ namespace StreetSamurai.Core.Models;
 /// narrated under this profile gets the same tone and cadence every time.
 ///
 /// One default profile is marked in <see cref="StreetSamurai.Core.Services.SettingsService.DefaultVoiceProfileId"/>
-/// and is used for any beat that doesn't carry its own per-beat or per-strand
+/// and is used for any beat that doesn't carry its own per-beat or per-node
 /// voice override. The point of the bundle is reproducibility: pulling
 /// stability/style/similarity_boost out of free-floating settings and into a
 /// named record means a single switch to a profile id guarantees the exact
@@ -21,7 +21,7 @@ public class VoiceProfile
     public string Id { get; set; } = "";
 
     /// <summary>Human-readable display label — "Oliver Silk — Deep Gravel",
-    /// "Kyle whispering", etc. Shown in the settings list and the strand
+    /// "Kyle whispering", etc. Shown in the settings list and the node
     /// voice picker.</summary>
     public string Label { get; set; } = "";
 

@@ -29,8 +29,8 @@ public sealed class ContextTelemetryService
     public sealed class Run
     {
         public Guid RunId { get; set; }
-        public Guid StrandId { get; set; }
-        public string StrandSlug { get; set; } = "";
+        public Guid NodeId { get; set; }
+        public string NodeSlug { get; set; } = "";
         public string Label { get; set; } = "";
         public bool DocContextEnabled { get; set; }
         public DateTime StartedAt { get; set; }
@@ -48,15 +48,15 @@ public sealed class ContextTelemetryService
     public bool IsActive { get { lock (gate) return current != null; } }
     public Run? Current { get { lock (gate) return current; } }
 
-    public void BeginRun(Guid runId, Guid strandId, string strandSlug, string label, bool docContextEnabled, DateTime startedAt, double baselineScore, double baselineFlow)
+    public void BeginRun(Guid runId, Guid nodeId, string nodeSlug, string label, bool docContextEnabled, DateTime startedAt, double baselineScore, double baselineFlow)
     {
         lock (gate)
         {
             current = new Run
             {
                 RunId = runId,
-                StrandId = strandId,
-                StrandSlug = strandSlug,
+                NodeId = nodeId,
+                NodeSlug = nodeSlug,
                 Label = label,
                 DocContextEnabled = docContextEnabled,
                 StartedAt = startedAt,

@@ -1,7 +1,7 @@
 namespace StreetSamurai.Core.Services;
 
 /// <summary>
-/// Thrown by <see cref="StrandWorkbenchService.UpdateBeatTextAsync"/> when
+/// Thrown by <see cref="NodeWorkbenchService.UpdateBeatTextAsync"/> when
 /// the caller supplied an <c>expectedUpdatedAt</c> that doesn't match the
 /// row's current <c>UpdatedAt</c> — meaning the beat was modified between
 /// when the caller loaded it and when they tried to save.

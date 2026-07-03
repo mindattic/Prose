@@ -14,7 +14,7 @@ namespace StreetSamurai.Blazor.Cli;
 /// which computes which prose services would have fired from the beat's synopsis and
 /// its position in the chapter — then records the logs the workflow monitor reads.
 ///
-/// A book strand (one with chapter children) rolls down into each chapter; pacing and
+/// A book node (one with chapter children) rolls down into each chapter; pacing and
 /// structural role are per-chapter arcs, so each chapter is logged with its own
 /// beatIndex/totalBeats.
 ///
@@ -32,17 +32,17 @@ public static class BackfillCoverageCli
         if (slug == null) { Console.Error.WriteLine("Missing --slug <book-or-chapter-slug>"); return; }
 
         await using var db = await dbFactory.CreateDbContextAsync();
-        var root = await db.Strands.AsNoTracking()
+        var root = await db.Nodes.AsNoTracking()
             .Where(s => s.Slug == slug)
             .Select(s => new { s.Id, s.Title, s.Slug, s.UniverseId })
             .FirstOrDefaultAsync();
-        if (root == null) { Console.Error.WriteLine($"Strand not found: {slug}"); return; }
+        if (root == null) { Console.Error.WriteLine($"Node not found: {slug}"); return; }
 
         // A book fans out into its live chapters; a lone chapter backfills itself.
         // Archived/unincorporated children aren't part of the book — exclude them so the
         // rollup reflects the actual canon chapters, not cut scenes or draft scratch.
-        var children = await db.Strands.AsNoTracking()
-            .Where(s => s.ParentStrandId == root.Id
+        var children = await db.Nodes.AsNoTracking()
+            .Where(s => s.ParentNodeId == root.Id
                      && s.Status != "archived" && s.Status != "unincorporated")
             .OrderBy(s => s.SortKey)
             .Select(s => new { s.Id, s.Title, s.Slug, s.UniverseId })
@@ -56,11 +56,11 @@ public static class BackfillCoverageCli
 
         foreach (var ch in chapters)
         {
-            // Enabled beats in reading order, joined through the StrandBeats bridge.
+            // Enabled beats in reading order, joined through the NodeBeats bridge.
             var beats = await (
-                from sb in db.StrandBeats.AsNoTracking()
+                from sb in db.NodeBeats.AsNoTracking()
                 join b in db.Beats.AsNoTracking() on sb.BeatId equals b.Id
-                where sb.StrandId == ch.Id && sb.IsEnabled
+                where sb.NodeId == ch.Id && sb.IsEnabled
                 orderby sb.SortKey
                 select new { b.Id, b.Synopsis, b.BeatTitle, b.Text }).ToListAsync();
 
@@ -85,7 +85,7 @@ public static class BackfillCoverageCli
             Console.WriteLine($"  {ch.Title,-44} {beats.Count,3} beats logged");
         }
 
-        Console.WriteLine($"\nDone. {totalBeatsLogged} beats logged across {chapters.Count} strand(s).");
+        Console.WriteLine($"\nDone. {totalBeatsLogged} beats logged across {chapters.Count} node(s).");
         Console.WriteLine($"Inspect with: ss --workflow-status --slug {root.Slug}");
     }
 

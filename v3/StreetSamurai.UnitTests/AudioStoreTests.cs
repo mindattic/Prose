@@ -20,9 +20,9 @@ public class AudioPathTests
 {
     [TestCase("rooftop-job-a8f3/audio/0123456789abcdef0123456789abcdef.mp3", true)]
     [TestCase("rooftop-job-a8f3/audio/0123456789ABCDEF0123456789ABCDEF.wav", true)]
-    [TestCase("rooftop-job-a8f3/strand.mp3", true)]
-    [TestCase("rooftop-job-a8f3/strand.wav", true)]
-    [TestCase("rooftop-job-a8f3/strand.m4a", true)]
+    [TestCase("rooftop-job-a8f3/node.mp3", true)]
+    [TestCase("rooftop-job-a8f3/node.wav", true)]
+    [TestCase("rooftop-job-a8f3/node.m4a", true)]
     [TestCase("rooftop-job-a8f3/audio/000.mp3",                     false)] // legacy numeric stem
     [TestCase("rooftop-job-a8f3/audio/not-a-guid.mp3",              false)] // bad GUID
     [TestCase("rooftop-job-a8f3/audio/0123456789abcdef.mp3",        false)] // GUID too short
@@ -47,7 +47,7 @@ public class AudioPathTests
     [Test]
     public void TryParseCombined_ReturnsSlugExt()
     {
-        var parsed = AudioPath.TryParseCombined("the-job/strand.wav");
+        var parsed = AudioPath.TryParseCombined("the-job/node.wav");
         Assert.That(parsed, Is.Not.Null);
         Assert.That(parsed!.Value.Slug, Is.EqualTo("the-job"));
         Assert.That(parsed.Value.Ext,  Is.EqualTo("wav"));
@@ -136,10 +136,10 @@ public class LocalDiskAudioStoreTests
     }
 
     [Test]
-    public async Task WriteCombined_LandsAtStrandRoot()
+    public async Task WriteCombined_LandsAtNodeRoot()
     {
-        var rel = await store.WriteCombinedAsync("my-strand", "wav", [7, 7, 7]);
-        Assert.That(rel, Is.EqualTo("my-strand/strand.wav"));
+        var rel = await store.WriteCombinedAsync("my-node", "wav", [7, 7, 7]);
+        Assert.That(rel, Is.EqualTo("my-node/node.wav"));
         Assert.That(await store.ExistsAsync(rel), Is.True);
     }
 }

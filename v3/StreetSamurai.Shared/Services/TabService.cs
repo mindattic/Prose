@@ -1,6 +1,6 @@
 namespace StreetSamurai.Shared.Services;
 
-/// <param name="MatchPrefix">If set, the tab is also active when the URL starts with this prefix (e.g. Writer tab active for /strand/* paths).</param>
+/// <param name="MatchPrefix">If set, the tab is also active when the URL starts with this prefix (e.g. Writer tab active for /node/* paths).</param>
 public record AppTab(string Key, string Label, string Icon, string Route, string? MatchPrefix = null);
 
 /// <summary>Per-connection tab state. Scoped (one instance per browser session).</summary>

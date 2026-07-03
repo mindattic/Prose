@@ -32,16 +32,16 @@ static class SanitizeBeatsCli
 
         if (slug is not null)
         {
-            var strand = await db.Strands.AsNoTracking()
+            var node = await db.Nodes.AsNoTracking()
                                          .FirstOrDefaultAsync(s => s.Slug == slug);
-            if (strand is null)
+            if (node is null)
             {
-                Console.Error.WriteLine($"Strand not found: {slug}");
+                Console.Error.WriteLine($"Node not found: {slug}");
                 return 1;
             }
 
-            var beatIds = await db.StrandBeats.AsNoTracking()
-                                              .Where(sb => sb.StrandId == strand.Id)
+            var beatIds = await db.NodeBeats.AsNoTracking()
+                                              .Where(sb => sb.NodeId == node.Id)
                                               .Select(sb => sb.BeatId)
                                               .ToListAsync();
             query = query.Where(b => beatIds.Contains(b.Id));
@@ -70,7 +70,7 @@ static class SanitizeBeatsCli
         if (!dryRun && fixed_ > 0)
             await db.SaveChangesAsync();
 
-        var scope = slug is not null ? $" in [{slug}]" : " across all strands";
+        var scope = slug is not null ? $" in [{slug}]" : " across all nodes";
         Console.WriteLine(dryRun
             ? $"\nFound {dirty} beat(s) with mojibake{scope} (dry-run — no changes written)."
             : $"\nFixed {fixed_}/{dirty} beat(s){scope}.");

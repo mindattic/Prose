@@ -7,7 +7,7 @@ namespace StreetSamurai.Blazor.Cli;
 
 /// <summary>
 /// <c>ss --review-report</c> — (re)generate the portable per-voter report (JSON +
-/// filterable HTM) from a strand's MOST RECENT stored review batch, without
+/// filterable HTM) from a node's MOST RECENT stored review batch, without
 /// re-running the panel. Auto-export already fires on every fresh review run; this
 /// is for rebuilding the artifact from history (or after a viewer-template change).
 ///
@@ -42,32 +42,32 @@ public static class ReviewReportCli
         var exporter  = services.GetRequiredService<ReviewReportExporter>();
 
         await using var db = await dbFactory.CreateDbContextAsync();
-        var q = db.Strands.AsNoTracking();
-        Strand? strand;
-        if (!string.IsNullOrWhiteSpace(code)) strand = await q.FirstOrDefaultAsync(s => s.StrandCode == code!.ToUpperInvariant());
-        else if (!string.IsNullOrWhiteSpace(slug)) strand = await q.FirstOrDefaultAsync(s => s.Slug == slug);
-        else if (Guid.TryParse(id, out var g)) strand = await q.FirstOrDefaultAsync(s => s.Id == g);
-        else { var p = id!.ToLowerInvariant(); strand = await q.FirstOrDefaultAsync(s => s.Id.ToString().StartsWith(p)); }
-        if (strand == null) { Console.Error.WriteLine("[review-report] Strand not found."); return 1; }
+        var q = db.Nodes.AsNoTracking();
+        Node? node;
+        if (!string.IsNullOrWhiteSpace(code)) node = await q.FirstOrDefaultAsync(s => s.NodeCode == code!.ToUpperInvariant());
+        else if (!string.IsNullOrWhiteSpace(slug)) node = await q.FirstOrDefaultAsync(s => s.Slug == slug);
+        else if (Guid.TryParse(id, out var g)) node = await q.FirstOrDefaultAsync(s => s.Id == g);
+        else { var p = id!.ToLowerInvariant(); node = await q.FirstOrDefaultAsync(s => s.Id.ToString().StartsWith(p)); }
+        if (node == null) { Console.Error.WriteLine("[review-report] Node not found."); return 1; }
 
         // Latest batch = reviews carrying the most-recent content fingerprint.
-        var latestHash = await db.StrandReviews.Where(r => r.StrandId == strand.Id)
+        var latestHash = await db.NodeReviews.Where(r => r.NodeId == node.Id)
             .OrderByDescending(r => r.ReviewedAt).Select(r => r.ContentHash).FirstOrDefaultAsync();
         if (string.IsNullOrEmpty(latestHash))
         {
-            Console.Error.WriteLine($"[review-report] No reviews found for {strand.Slug}. Run ss --review-strand first.");
+            Console.Error.WriteLine($"[review-report] No reviews found for {node.Slug}. Run ss --review-node first.");
             return 1;
         }
 
-        var query = db.StrandReviews.AsNoTracking()
-            .Where(r => r.StrandId == strand.Id && r.ContentHash == latestHash);
+        var query = db.NodeReviews.AsNoTracking()
+            .Where(r => r.NodeId == node.Id && r.ContentHash == latestHash);
         if (provider == "local")      query = query.Where(r => r.ProviderId == "local");
         else if (provider == "cloud") query = query.Where(r => r.ProviderId != "local");
         var reviews = await query.Include(r => r.BeatScores).ToListAsync();
 
         if (reviews.Count == 0)
         {
-            Console.Error.WriteLine($"[review-report] No '{provider}' ballots in the latest batch for {strand.Slug}.");
+            Console.Error.WriteLine($"[review-report] No '{provider}' ballots in the latest batch for {node.Slug}.");
             return 1;
         }
 
@@ -87,10 +87,10 @@ public static class ReviewReportCli
             : "trusted-4 panel";
 
         var (jsonPath, htmPath) = await exporter.ExportAsync(new ReviewReportExporter.ReportInput(
-            strand.Id, strand.Slug, strand.Title, latestHash, strand.TotalBeatsToNarrate > 0 ? strand.TotalBeatsToNarrate : reviews.Max(r => r.BeatCount),
+            node.Id, node.Slug, node.Title, latestHash, node.TotalBeatsToNarrate > 0 ? node.TotalBeatsToNarrate : reviews.Max(r => r.BeatCount),
             brain, model, Math.Round(mean, 1), Math.Round(sd, 1), Math.Round(ci, 2), flowMean, clusters, reviews));
 
-        Console.WriteLine($"[review-report] {strand.Title} — {reviews.Count} {brain} voters · {Math.Round(mean, 1)}/100 (SD {Math.Round(sd, 1)}, CI ±{Math.Round(ci, 2)})");
+        Console.WriteLine($"[review-report] {node.Title} — {reviews.Count} {brain} voters · {Math.Round(mean, 1)}/100 (SD {Math.Round(sd, 1)}, CI ±{Math.Round(ci, 2)})");
         Console.WriteLine($"[review-report] Report (open in browser): {htmPath}");
         Console.WriteLine($"[review-report] Report data (JSON):       {jsonPath}");
         return 0;

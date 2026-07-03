@@ -7,7 +7,7 @@ using StreetSamurai.Core.Services;
 namespace StreetSamurai.Blazor.Cli;
 
 /// <summary>
-/// ss --examine-emotion --slug &lt;strandSlug&gt; [--effort draft|standard|deep] [--json]
+/// ss --examine-emotion --slug &lt;nodeSlug&gt; [--effort draft|standard|deep] [--json]
 ///
 /// Emotional Intelligence Examination (SS-A15). Scores prose against an
 /// 8-dimension, 0–4 rubric — per beat, character-aware (Want/Need/Wound/Flaw),
@@ -38,7 +38,7 @@ public static class ExamineEmotionCli
 
         if (slug == null)
         {
-            Console.Error.WriteLine("Usage: ss --examine-emotion --slug <strandSlug> [--effort draft|standard|deep] [--json]");
+            Console.Error.WriteLine("Usage: ss --examine-emotion --slug <nodeSlug> [--effort draft|standard|deep] [--json]");
             return 2;
         }
 
@@ -46,18 +46,18 @@ public static class ExamineEmotionCli
         var dbFactory = services.GetRequiredService<IDbContextFactory<StreetSamuraiDbContext>>();
         await using var db = await dbFactory.CreateDbContextAsync();
 
-        var strand = await db.Strands.AsNoTracking().FirstOrDefaultAsync(s => s.Slug == slug);
-        if (strand == null)
+        var node = await db.Nodes.AsNoTracking().FirstOrDefaultAsync(s => s.Slug == slug);
+        if (node == null)
         {
-            Console.Error.WriteLine($"Strand '{slug}' not found.");
+            Console.Error.WriteLine($"Node '{slug}' not found.");
             return 2;
         }
 
         if (!json)
-            Console.WriteLine($"Examining '{strand.Title}' — effort={effort}{(model != null ? $", model={model}" : "")}…\n");
+            Console.WriteLine($"Examining '{node.Title}' — effort={effort}{(model != null ? $", model={model}" : "")}…\n");
 
         // --model retargets the scorer (the default model is rate-limit-sensitive); set it
-        // for the run and restore after, mirroring the audit-strand orchestrator.
+        // for the run and restore after, mirroring the audit-node orchestrator.
         SettingsService? settings = null;
         string? savedModel = null;
         if (model != null)
@@ -68,14 +68,14 @@ public static class ExamineEmotionCli
         }
 
         EmotionalExaminationResult result;
-        try { result = await svc.ExamineStrandAsync(strand.Id, effort); }
+        try { result = await svc.ExamineNodeAsync(node.Id, effort); }
         finally { if (settings != null && savedModel != null) settings.Model = savedModel; }
 
         if (json)
         {
             Console.WriteLine(JsonSerializer.Serialize(new
             {
-                strand_id           = result.StrandId,
+                node_id           = result.NodeId,
                 slug                = result.Slug,
                 title               = result.Title,
                 emotional_depth     = result.EmotionalDepthScore,
@@ -116,7 +116,7 @@ public static class ExamineEmotionCli
         }
 
         // Human-readable output
-        Console.WriteLine($"  Strand  : {result.Title}");
+        Console.WriteLine($"  Node  : {result.Title}");
         Console.WriteLine($"  Score   : {result.EmotionalDepthScore:F1}/100 emotional depth");
         Console.WriteLine($"  Register: {(result.Register.Length > 0 ? result.Register : "unspecified")}");
         Console.WriteLine($"  Blocking: {result.BlockingCount}");

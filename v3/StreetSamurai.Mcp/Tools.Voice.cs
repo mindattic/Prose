@@ -8,13 +8,13 @@ using StreetSamurai.Core.Services;
 namespace StreetSamurai.Mcp;
 
 // ── Voice harvest tools — expose VoiceHarvestService over MCP ─────────────
-// Distill voice rules from winning strands into the DB-backed rule store the
+// Distill voice rules from winning nodes into the DB-backed rule store the
 // generator reads. Propose-then-approve workflow: nothing touches the live
 // rules until an admin applies a proposed entry.
 
 /// <summary>
 /// MCP surface for <see cref="VoiceHarvestService"/>: harvest voice rules from
-/// winning strands, list pending proposals, and apply or reject them.
+/// winning nodes, list pending proposals, and apply or reject them.
 /// </summary>
 [McpServerToolType]
 public class VoiceTools
@@ -28,16 +28,16 @@ public class VoiceTools
         this.dbFactory = dbFactory;
     }
 
-    /// <summary>Harvest voice rules from a single strand. The strand must have a score ≥80 (or pass --force). Returns proposed change-log entries; nothing is written to the live rule store until you call apply_voice_proposal.</summary>
-    [McpServerTool, Description("Distill voice rules from a winning strand (score ≥80) into proposed change-log entries. Nothing touches the live rule store until apply_voice_proposal is called. Pass force=true to harvest even if the strand scored below 80. Returns the list of proposed entries with their ids, rule targets, descriptions, and evidence.")]
+    /// <summary>Harvest voice rules from a single node. The node must have a score ≥80 (or pass --force). Returns proposed change-log entries; nothing is written to the live rule store until you call apply_voice_proposal.</summary>
+    [McpServerTool, Description("Distill voice rules from a winning node (score ≥80) into proposed change-log entries. Nothing touches the live rule store until apply_voice_proposal is called. Pass force=true to harvest even if the node scored below 80. Returns the list of proposed entries with their ids, rule targets, descriptions, and evidence.")]
     public async Task<string> HarvestVoice(
-        [Description("Strand id (GUID) or slug to harvest from.")] string strandIdOrSlug,
-        [Description("Set to true to harvest even if the strand scored below 80%.")] bool force = false)
+        [Description("Node id (GUID) or slug to harvest from.")] string nodeIdOrSlug,
+        [Description("Set to true to harvest even if the node scored below 80%.")] bool force = false)
     {
-        var strandId = await ResolveStrandIdAsync(strandIdOrSlug);
-        if (strandId == null) return Error("strand_not_found", strandIdOrSlug);
+        var nodeId = await ResolveNodeIdAsync(nodeIdOrSlug);
+        if (nodeId == null) return Error("node_not_found", nodeIdOrSlug);
 
-        var r = await harvest.HarvestStrandAsync(strandId.Value, force);
+        var r = await harvest.HarvestNodeAsync(nodeId.Value, force);
         return JsonSerializer.Serialize(new
         {
             slug           = r.Slug,
@@ -49,8 +49,8 @@ public class VoiceTools
         }, CanonTools.JsonOpts);
     }
 
-    /// <summary>Harvest voice rules from all strands scored ≥80% and return the combined proposals grouped by strand.</summary>
-    [McpServerTool, Description("Distill voice rules from every strand scored ≥80%. Returns proposals grouped by strand slug. Nothing is written to the live rule store until apply_voice_proposal is called. Use list_voice_proposals to see all pending entries afterward.")]
+    /// <summary>Harvest voice rules from all nodes scored ≥80% and return the combined proposals grouped by node.</summary>
+    [McpServerTool, Description("Distill voice rules from every node scored ≥80%. Returns proposals grouped by node slug. Nothing is written to the live rule store until apply_voice_proposal is called. Use list_voice_proposals to see all pending entries afterward.")]
     public async Task<string> HarvestVoiceAll()
     {
         var results = await harvest.HarvestAllAboveAsync();
@@ -67,7 +67,7 @@ public class VoiceTools
     }
 
     /// <summary>List voice proposals by status. Status values: "proposed" (awaiting decision), "applied", "rejected", "observed".</summary>
-    [McpServerTool, Description("List voice change-log entries filtered by status. Use status='proposed' to see pending proposals awaiting a decision. Each entry shows its id (use for apply/reject), rule target, description, evidence, and source strand.")]
+    [McpServerTool, Description("List voice change-log entries filtered by status. Use status='proposed' to see pending proposals awaiting a decision. Each entry shows its id (use for apply/reject), rule target, description, evidence, and source node.")]
     public async Task<string> ListVoiceProposals(
         [Description("Filter by status: 'proposed' | 'applied' | 'rejected' | 'observed'. Default 'proposed'.")] string status = "proposed")
     {
@@ -106,7 +106,7 @@ public class VoiceTools
         {
             id          = e.Id,
             source      = e.Source,
-            strand_id   = e.StrandId,
+            node_id   = e.NodeId,
             rule_target = e.RuleTarget,
             description = e.Description,
             evidence    = e.Evidence,
@@ -114,16 +114,16 @@ public class VoiceTools
             created_at  = e.CreatedAt,
         }).ToArray();
 
-    private async Task<Guid?> ResolveStrandIdAsync(string idOrSlug)
+    private async Task<Guid?> ResolveNodeIdAsync(string idOrSlug)
     {
         if (string.IsNullOrWhiteSpace(idOrSlug)) return null;
         await using var db = await dbFactory.CreateDbContextAsync();
         if (Guid.TryParse(idOrSlug, out var guid))
         {
-            var byId = await db.Strands.AsNoTracking().FirstOrDefaultAsync(s => s.Id == guid);
+            var byId = await db.Nodes.AsNoTracking().FirstOrDefaultAsync(s => s.Id == guid);
             if (byId != null) return byId.Id;
         }
-        var bySlug = await db.Strands.AsNoTracking().FirstOrDefaultAsync(s => s.Slug == idOrSlug || s.StrandCode == idOrSlug);
+        var bySlug = await db.Nodes.AsNoTracking().FirstOrDefaultAsync(s => s.Slug == idOrSlug || s.NodeCode == idOrSlug);
         return bySlug?.Id;
     }
 

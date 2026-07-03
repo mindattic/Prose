@@ -16,7 +16,7 @@ namespace StreetSamurai.Core.Services;
 /// <summary>
 /// Legion-persona quality voting for canon entities. Replaces the old LlmVoting
 /// (10 GLMZ residents, 1-10 scale) with the same infrastructure as
-/// <see cref="StrandReviewService"/>: the full 1000-persona library, 1-100 scale,
+/// <see cref="NodeReviewService"/>: the full 1000-persona library, 1-100 scale,
 /// append-only <see cref="EntityReview"/> rows, cheap ballots + prose upgrades for
 /// the most informative voters.
 ///

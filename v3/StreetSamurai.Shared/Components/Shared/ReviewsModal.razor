@@ -3,7 +3,7 @@
 @* Shared, sortable reviews modal. Each row is one PERSONA (sorted by their latest
    score); expand a row to see that persona's psychometric profile + their full
    review history (every run, newest first) with body text and per-beat micro-chips.
-   Used for both STRAND full reviews and per-BEAT micro-reviews. *@
+   Used for both NODE full reviews and per-BEAT micro-reviews. *@
 
 @if (Visible)
 {
@@ -24,7 +24,7 @@
         <div class="rvm-body">
             @if (Items.Count == 0)
             {
-                <div class="text-muted p-4 text-center">No reviews yet — run <code>/review-strand</code>.</div>
+                <div class="text-muted p-4 text-center">No reviews yet — run <code>/review-node</code>.</div>
             }
             else
             {
@@ -95,7 +95,7 @@
 }
 
 @code {
-    /// <summary>One review in a persona's history. Score is raw (0-100 strand / 1-5 beat).
+    /// <summary>One review in a persona's history. Score is raw (0-100 node / 1-5 beat).
     /// BeatScores = this reviewer's per-beat micro-scores (1-5), positional order, or null.</summary>
     public sealed record HistoryEntry(string When, string Version, double Score, string Body, IReadOnlyList<int>? BeatScores);
 

@@ -6,12 +6,12 @@ using StreetSamurai.Core.Services;
 namespace StreetSamurai.Blazor.Cli;
 
 /// <summary>
-/// <c>ss --harvest-voice</c> — distill voice rules from winning strands into the
+/// <c>ss --harvest-voice</c> — distill voice rules from winning nodes into the
 /// codified, DB-backed rules the generator reads. Propose-then-approve.
 ///
-///   ss --harvest-voice --slug &lt;slug&gt; [--force]   harvest one strand (proposals only)
+///   ss --harvest-voice --slug &lt;slug&gt; [--force]   harvest one node (proposals only)
 ///   ss --harvest-voice --id &lt;guid|prefix&gt;        same, by id
-///   ss --harvest-voice --all-80                  harvest every strand scored ≥80%
+///   ss --harvest-voice --all-80                  harvest every node scored ≥80%
 ///   ss --harvest-voice --pending                 list proposed rules awaiting approval
 ///   ss --harvest-voice --apply &lt;entry-guid&gt;       apply one proposed rule to the live store
 ///   ss --harvest-voice --reject &lt;entry-guid&gt;      reject a proposed rule (kept in the trail)
@@ -71,11 +71,11 @@ public static class HarvestVoiceCli
 
         // ── prose-based canon harvest: learn the voice from the finished canon
         //    prose itself (not edit-history). This is what "train on the canon
-        //    voice" means when the canon strands have no workbench edit trail. ──
+        //    voice" means when the canon nodes have no workbench edit trail. ──
         if (args.Contains("--canon-prose"))
         {
             var results = await harvest.HarvestCanonProseAsync();
-            if (results.Count == 0) { Console.WriteLine("[harvest-voice] No strands marked canon yet."); return 0; }
+            if (results.Count == 0) { Console.WriteLine("[harvest-voice] No nodes marked canon yet."); return 0; }
             foreach (var r in results)
                 Console.WriteLine($"[harvest-voice] {r.Slug} (canon): → {r.Proposals.Count} proposals.");
             Console.WriteLine();
@@ -89,7 +89,7 @@ public static class HarvestVoiceCli
         {
             var canonOnly = args.Contains("--canon");
             var results = canonOnly ? await harvest.HarvestCanonAsync() : await harvest.HarvestAllAboveAsync();
-            if (results.Count == 0) { Console.WriteLine(canonOnly ? "[harvest-voice] No strands marked canon yet." : "[harvest-voice] No strands scored ≥80%."); return 0; }
+            if (results.Count == 0) { Console.WriteLine(canonOnly ? "[harvest-voice] No nodes marked canon yet." : "[harvest-voice] No nodes scored ≥80%."); return 0; }
             foreach (var r in results)
                 Console.WriteLine($"[harvest-voice] {r.Slug} ({r.Score:0.#}%): {r.EditCount} edits + {r.DirectiveCount} directives → {r.Proposals.Count} proposals.");
             Console.WriteLine();
@@ -105,22 +105,22 @@ public static class HarvestVoiceCli
         }
 
         var dbFactory = services.GetRequiredService<IDbContextFactory<StreetSamuraiDbContext>>();
-        Guid strandId;
+        Guid nodeId;
         await using (var db = await dbFactory.CreateDbContextAsync())
         {
-            var q = db.Strands.AsNoTracking();
-            Strand? strand;
-            if (!string.IsNullOrWhiteSpace(slug)) strand = await q.FirstOrDefaultAsync(s => s.Slug == slug);
-            else if (Guid.TryParse(id, out var g)) strand = await q.FirstOrDefaultAsync(s => s.Id == g);
-            else strand = await q.Where(s => s.Id.ToString().StartsWith(id!.ToLower())).Take(2).ToListAsync() switch
+            var q = db.Nodes.AsNoTracking();
+            Node? node;
+            if (!string.IsNullOrWhiteSpace(slug)) node = await q.FirstOrDefaultAsync(s => s.Slug == slug);
+            else if (Guid.TryParse(id, out var g)) node = await q.FirstOrDefaultAsync(s => s.Id == g);
+            else node = await q.Where(s => s.Id.ToString().StartsWith(id!.ToLower())).Take(2).ToListAsync() switch
             { { Count: 1 } m => m[0], _ => null };
-            if (strand == null) { Console.Error.WriteLine("[harvest-voice] Strand not found."); return 1; }
-            strandId = strand.Id;
+            if (node == null) { Console.Error.WriteLine("[harvest-voice] Node not found."); return 1; }
+            nodeId = node.Id;
         }
 
         try
         {
-            var r = await harvest.HarvestStrandAsync(strandId, force);
+            var r = await harvest.HarvestNodeAsync(nodeId, force);
             Console.WriteLine($"[harvest-voice] \"{r.Title}\" ({r.Score:0.#}%): {r.EditCount} edits + {r.DirectiveCount} directives → {r.Proposals.Count} proposals.\n");
             PrintProposals(r.Proposals);
             if (r.Proposals.Count > 0)

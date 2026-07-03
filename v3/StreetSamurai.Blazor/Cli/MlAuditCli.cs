@@ -4,7 +4,7 @@ using System.Runtime.InteropServices;
 namespace StreetSamurai.Blazor.Cli;
 
 /// <summary>
-/// ss --ml-audit [--slug &lt;strandSlug&gt;] [--all] [--skip-gripes] [--json]
+/// ss --ml-audit [--slug &lt;nodeSlug&gt;] [--all] [--skip-gripes] [--json]
 ///
 /// Runs the Python ML beat auditor against the trained model artifacts.
 /// Writes ML-PROSE-SCORE findings to the Findings table for beats

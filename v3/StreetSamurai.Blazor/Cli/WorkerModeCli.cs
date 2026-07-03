@@ -19,7 +19,7 @@ namespace StreetSamurai.Blazor.Cli;
 ///     --local-url  https://pod-8000.proxy.runpod.net
 ///     --local-key  vllm_key_...
 ///     --local-model qwen2.5-72b-32k
-///     [--work-type entity-review|strand-review|beat-write]   (default: entity-review)
+///     [--work-type entity-review|node-review|beat-write]   (default: entity-review)
 ///     [--batch 20]
 ///     [--loop]     keep claiming until queue is empty
 /// </summary>
@@ -86,7 +86,7 @@ public static class WorkerModeCli
                     result = workType switch
                     {
                         "entity-review" => await ProcessEntityReviewAsync(item, legion, localUrl, localKey, localModel),
-                        "strand-review" => await ProcessStrandReviewAsync(item, legion, localUrl, localKey, localModel),
+                        "node-review" => await ProcessNodeReviewAsync(item, legion, localUrl, localKey, localModel),
                         "beat-write"    => await ProcessBeatWriteAsync(item, legion, localUrl, localKey, localModel),
                         _ => throw new InvalidOperationException($"unknown workType '{workType}'"),
                     };
@@ -207,17 +207,17 @@ public static class WorkerModeCli
         };
     }
 
-    // ── Strand review ─────────────────────────────────────────────────────────
+    // ── Node review ─────────────────────────────────────────────────────────
 
-    private static async Task<WorkerResult> ProcessStrandReviewAsync(
+    private static async Task<WorkerResult> ProcessNodeReviewAsync(
         WorkItemDto item, LegionClient legion, string localUrl, string localKey, string localModel)
     {
         if (item.PayloadJson == null) throw new InvalidOperationException("missing payload");
         using var doc = JsonDocument.Parse(item.PayloadJson);
         var root        = doc.RootElement;
-        var strandId    = root.GetProperty("strandId").GetString()!;
-        var strandTitle = root.GetProperty("strandTitle").GetString()!;
-        var strandText  = root.GetProperty("strandText").GetString()!;
+        var nodeId    = root.GetProperty("nodeId").GetString()!;
+        var nodeTitle = root.GetProperty("nodeTitle").GetString()!;
+        var nodeText  = root.GetProperty("nodeText").GetString()!;
         var readers     = root.TryGetProperty("readers", out var rProp) ? rProp.GetInt32() : 5;
         // Sample reader personas locally.
         var allPersonas = PersonaLibrary.Enriched.ToList();
@@ -230,7 +230,7 @@ public static class WorkerModeCli
             .Select(p => new PersonaInfo(p.Id, p.Name, FirstLine(p.PersonalityMarkdown)))
             .ToList();
 
-        var contentHash = ComputeHash($"{strandId}:{strandText[..Math.Min(600, strandText.Length)]}");
+        var contentHash = ComputeHash($"{nodeId}:{nodeText[..Math.Min(600, nodeText.Length)]}");
         var votes = new List<PersonaVoteResult>();
 
         await Task.WhenAll(personas.Select(async persona =>
@@ -239,12 +239,12 @@ public static class WorkerModeCli
                             $"{persona.Blurb ?? "You are passionate about gritty, authentic stories."} " +
                             "Read the following story and score it 1-100. Return ONLY JSON: " +
                             "{\"score\":NN,\"improvements\":\"...\",\"contradictions\":\"...or null\"}";
-            var userMsg = $"TITLE: {strandTitle}\n\n{strandText[..Math.Min(8000, strandText.Length)]}";
+            var userMsg = $"TITLE: {nodeTitle}\n\n{nodeText[..Math.Min(8000, nodeText.Length)]}";
 
             try
             {
                 var raw = await legion.CallAsync("local", localKey, localModel, sysPrompt, userMsg, localUrl, maxTokens: 400);
-                if (TryParseStrandVote(raw, out var score, out var improvements, out var contradictions))
+                if (TryParseNodeVote(raw, out var score, out var improvements, out var contradictions))
                 {
                     lock (votes)
                         votes.Add(new PersonaVoteResult
@@ -254,13 +254,13 @@ public static class WorkerModeCli
                         });
                 }
             }
-            catch (Exception ex) { Console.Error.WriteLine($"[worker] strand vote error: {ex.Message}"); }
+            catch (Exception ex) { Console.Error.WriteLine($"[worker] node vote error: {ex.Message}"); }
         }));
 
         return new WorkerResult
         {
-            WorkType = "strand-review", QueueId = item.QueueId,
-            StrandReview = new StrandReviewResult { StrandId = strandId, ContentHash = contentHash, PersonaVotes = votes },
+            WorkType = "node-review", QueueId = item.QueueId,
+            NodeReview = new NodeReviewResult { NodeId = nodeId, ContentHash = contentHash, PersonaVotes = votes },
         };
     }
 
@@ -273,7 +273,7 @@ public static class WorkerModeCli
         using var doc = JsonDocument.Parse(item.PayloadJson);
         var root       = doc.RootElement;
         var beatId     = root.GetProperty("beatId").GetString()!;
-        var strandSlug = root.GetProperty("strandSlug").GetString()!;
+        var nodeSlug = root.GetProperty("nodeSlug").GetString()!;
         var beatIndex  = root.GetProperty("beatIndex").GetInt32();
         var totalBeats = root.GetProperty("totalBeats").GetInt32();
         var beatGoal   = root.GetProperty("beatGoal").GetString()!;
@@ -290,7 +290,7 @@ public static class WorkerModeCli
         {
             sysPrompt = "You are a professional cyberpunk fiction author (2225 GLMZ setting). " +
                         "Write vivid, grounded prose. Close-third POV. No purple prose. Voice is dry, precise, layered.";
-            userMsg   = $"STRAND: {strandSlug}\n" +
+            userMsg   = $"NODE: {nodeSlug}\n" +
                         $"Beat {beatIndex + 1} of {totalBeats}\n\n" +
                         $"GOAL: {beatGoal}\n\n" +
                         (string.IsNullOrWhiteSpace(beatSeed) ? "" : $"SEED NOTES:\n{beatSeed}\n\n") +
@@ -339,7 +339,7 @@ public static class WorkerModeCli
         catch { return false; }
     }
 
-    private static bool TryParseStrandVote(string? raw, out int score, out string? improvements, out string? contradictions)
+    private static bool TryParseNodeVote(string? raw, out int score, out string? improvements, out string? contradictions)
     {
         score = 50; improvements = null; contradictions = null;
         if (string.IsNullOrWhiteSpace(raw)) return false;

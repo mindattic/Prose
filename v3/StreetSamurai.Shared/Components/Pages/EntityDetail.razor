@@ -143,12 +143,12 @@ else
         else
         {
             <table class="table table-sm table-dark table-hover">
-                <thead><tr><th>Strand</th><th>#</th><th>Excerpt</th></tr></thead>
+                <thead><tr><th>Node</th><th>#</th><th>Excerpt</th></tr></thead>
                 <tbody>
                     @foreach (var m in entityMentions)
                     {
                         <tr>
-                            <td><a href="/strand/@m.StrandId" class="text-info">@m.StrandTitle</a></td>
+                            <td><a href="/node/@m.NodeId" class="text-info">@m.NodeTitle</a></td>
                             <td class="text-muted">@m.BeatNumber</td>
                             <td class="text-muted small">@m.Excerpt</td>
                         </tr>

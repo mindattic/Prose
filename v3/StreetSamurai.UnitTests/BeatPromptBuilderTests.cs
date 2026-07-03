@@ -124,7 +124,7 @@ public class BeatPromptBuilderTests
         Assert.That(p.Style,     Is.GreaterThan(BaseStyle));
     }
 
-    // v3 holds stability flat at the strand baseline so the narrator stays on a
+    // v3 holds stability flat at the node baseline so the narrator stays on a
     // single stability preset across beats (liquid, not mode-switching). Emotion
     // is carried by the injected audio tag instead.
     [TestCase("quiet")]

@@ -206,8 +206,8 @@
 
     protected override async Task OnInitializedAsync()
     {
-        // Unified cutover: /recordings → /strands.
-        Nav.NavigateTo("/strands", replace: true);
+        // Unified cutover: /recordings → /nodes.
+        Nav.NavigateTo("/nodes", replace: true);
         await Task.CompletedTask;
         return;
 #pragma warning disable CS0162

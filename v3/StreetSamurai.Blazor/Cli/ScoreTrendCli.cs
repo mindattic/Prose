@@ -7,10 +7,10 @@ namespace StreetSamurai.Blazor.Cli;
 /// <summary>
 /// ss --score-trend [--batches N] [--universe &lt;slug&gt;]
 ///
-/// Prints the rolling mean reader score across chronological batches of strands
+/// Prints the rolling mean reader score across chronological batches of nodes
 /// so the flywheel's direction is visible from the CLI (SS-US-J6 / SS-US-F10).
 ///
-/// Batches: all strands with at least one score-history record are ordered
+/// Batches: all nodes with at least one score-history record are ordered
 /// by their first RecordedAt, split into N equal groups, then the mean score
 /// per group is printed. A positive Δ from batch to batch confirms the voice-
 /// harvest flywheel is spinning forward.
@@ -29,14 +29,14 @@ public static class ScoreTrendCli
         var dbFactory = services.GetRequiredService<IDbContextFactory<StreetSamuraiDbContext>>();
         await using var db = await dbFactory.CreateDbContextAsync();
 
-        // Aggregate: for each strand, take its latest score-history record.
-        // Then order all strands by that RecordedAt (earliest = oldest work).
-        var rows = await db.StrandScoreHistories
+        // Aggregate: for each node, take its latest score-history record.
+        // Then order all nodes by that RecordedAt (earliest = oldest work).
+        var rows = await db.NodeScoreHistories
             .AsNoTracking()
-            .GroupBy(h => h.StrandId)
+            .GroupBy(h => h.NodeId)
             .Select(g => new
             {
-                StrandId    = g.Key,
+                NodeId    = g.Key,
                 EarliestAt  = g.Min(h => h.RecordedAt),
                 LatestScore = g.OrderByDescending(h => h.RecordedAt).Select(h => h.MeanScore).FirstOrDefault(),
             })
@@ -45,15 +45,15 @@ public static class ScoreTrendCli
 
         if (rows.Count < batches)
         {
-            Console.WriteLine($"Not enough scored strands ({rows.Count}) to split into {batches} batches.");
+            Console.WriteLine($"Not enough scored nodes ({rows.Count}) to split into {batches} batches.");
             Console.WriteLine("Run more review panels, then retry.");
             return 2;
         }
 
         int batchSize = (int)Math.Ceiling(rows.Count / (double)batches);
-        Console.WriteLine($"Score trend — {rows.Count} scored strand(s), {batches} batch(es)\n");
+        Console.WriteLine($"Score trend — {rows.Count} scored node(s), {batches} batch(es)\n");
 
-        var header = $"{"Batch",-7} {"Strands",-9} {"Mean Score",-12} {"Δ vs prior"}";
+        var header = $"{"Batch",-7} {"Nodes",-9} {"Mean Score",-12} {"Δ vs prior"}";
         Console.WriteLine(header);
         Console.WriteLine(new string('─', header.Length));
 

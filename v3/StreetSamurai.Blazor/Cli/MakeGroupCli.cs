@@ -7,7 +7,7 @@ namespace StreetSamurai.Blazor.Cli;
 /// named reviewer panel of N enriched personas drawn at random but DISJOINT
 /// from every existing focus group (no persona is on two panels). Cheap: just
 /// sampling + a DB insert, no LLM calls. Reuse the panel later with
-/// <c>--review-strand --group "Group B"</c> to track that audience over versions.
+/// <c>--review-node --group "Group B"</c> to track that audience over versions.
 /// Running several disjoint panels (A/B/C) gives independent replication —
 /// more data mass, lower-variance, less-biased aggregates.
 /// </summary>
@@ -30,12 +30,12 @@ public static class MakeGroupCli
             return 1;
         }
 
-        var reviewer = services.GetRequiredService<StrandReviewService>();
+        var reviewer = services.GetRequiredService<NodeReviewService>();
         try
         {
             var (id, count) = await reviewer.CreateDisjointGroupAsync(name!, size);
             Console.WriteLine($"[make-group] Created panel '{name}' with {count} personas (disjoint from all existing groups). Id {id}.");
-            Console.WriteLine($"[make-group] Run it with:  ss --review-strand --slug <slug> --group \"{name}\"");
+            Console.WriteLine($"[make-group] Run it with:  ss --review-node --slug <slug> --group \"{name}\"");
             return 0;
         }
         catch (Exception ex)

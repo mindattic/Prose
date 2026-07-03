@@ -6,22 +6,22 @@ using StreetSamurai.Core.Interfaces;
 namespace StreetSamurai.Core.Services;
 
 /// <summary>
-/// Generates N competing strand bibles in parallel, scores each with a single
-/// LLM call, commits the winner to the DB, and returns the winning strand's Guid.
+/// Generates N competing node bibles in parallel, scores each with a single
+/// LLM call, commits the winner to the DB, and returns the winning node's Guid.
 ///
-/// Usage: pass --compete N to ss --write-strand. When N=1 (or omitted),
-/// falls back to StrandBibleService directly (no scoring overhead).
+/// Usage: pass --compete N to ss --write-node. When N=1 (or omitted),
+/// falls back to NodeBibleService directly (no scoring overhead).
 /// </summary>
 public class PremiseToOutlineService(
     IDbContextFactory<StreetSamuraiDbContext> dbFactory,
-    StrandBibleService bibleService,
+    NodeBibleService bibleService,
     ILlmService llm)
 {
     /// <summary>
-    /// Create a strand with the best outline from <paramref name="compete"/> competing bibles.
-    /// Returns the new strand's Guid + the winning bible text.
+    /// Create a node with the best outline from <paramref name="compete"/> competing bibles.
+    /// Returns the new node's Guid + the winning bible text.
     /// </summary>
-    public async Task<(Guid StrandId, string BibleText, int WinnerIndex)> CreateStrandAsync(
+    public async Task<(Guid NodeId, string BibleText, int WinnerIndex)> CreateNodeAsync(
         string seed,
         string? title,
         string kind,
@@ -57,31 +57,29 @@ public class PremiseToOutlineService(
         for (int i = 0; i < scores.Length; i++)
             Console.WriteLine($"[compete]   {i + 1}. score={scores[i].Score,3}  {scores[i].Reason}");
 
-        // Create the strand and save the winning bible
-        var strandId = Guid.CreateVersion7();
-        var slug = EpisodeGeneratorService.Slugify(workingTitle) + "-" + strandId.ToString("N")[..8];
+        // Create the node and save the winning bible
+        var nodeId = Guid.CreateVersion7();
+        var slug = EpisodeGeneratorService.Slugify(workingTitle) + "-" + nodeId.ToString("N")[..8];
 
         await using (var db = await dbFactory.CreateDbContextAsync(ct))
         {
-            db.Strands.Add(new Strand
-            {
-                Id        = strandId,
-                Title     = workingTitle,
-                Slug      = slug,
-                Seed      = seed,
-                Kind      = kind,
-                Status    = "draft",
-                Synopsis  = seed.Length > 200 ? seed[..200] : seed,
-                CreatedAt = DateTime.UtcNow,
-                UpdatedAt = DateTime.UtcNow,
-            });
+            var node = NodeFactory.Create(kind);
+            node.Id        = nodeId;
+            node.Title     = workingTitle;
+            node.Slug      = slug;
+            node.Seed      = seed;
+            node.Status    = "draft";
+            node.Synopsis  = seed.Length > 200 ? seed[..200] : seed;
+            node.CreatedAt = DateTime.UtcNow;
+            node.UpdatedAt = DateTime.UtcNow;
+            db.Nodes.Add(node);
             await db.SaveChangesAsync(ct);
         }
 
         var winningBible = outlines[winner.Index].Text;
-        await bibleService.SaveBibleAndCreateBeatsAsync(strandId, winningBible, ct);
+        await bibleService.SaveBibleAndCreateBeatsAsync(nodeId, winningBible, ct);
 
-        return (strandId, winningBible, winner.Index + 1);
+        return (nodeId, winningBible, winner.Index + 1);
     }
 
     private async Task<(int Index, int Score, string Reason)> ScoreOutlineAsync(

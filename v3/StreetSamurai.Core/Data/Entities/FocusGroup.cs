@@ -4,7 +4,7 @@ namespace StreetSamurai.Core.Data.Entities;
 /// A named, reusable panel of persona reviewers — "Group A", "Group B", … — so
 /// review runs can be compared like a recurring focus group. Membership is the
 /// fixed set of Legion personas (<see cref="FocusGroupMember"/>); reusing a
-/// group re-runs the SAME readers against a revised strand. Reviews carry the
+/// group re-runs the SAME readers against a revised node. Reviews carry the
 /// group's id/name so any run can be filtered back to who was in the room.
 /// </summary>
 public class FocusGroup

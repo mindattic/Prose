@@ -20,7 +20,7 @@ namespace StreetSamurai.Blazor.Cli;
 ///       Assign Save-the-Cat StructureRole deterministically. For a BOOK the arc spans the
 ///       whole novel (global reading-order position: Ch1≈Opening/Catalyst, mid≈Midpoint,
 ///       end≈Finale/Final Image) — NOT per-chapter, which would yield 16 "Opening Image"
-///       beats. A standalone strand is positioned within itself. No LLM.
+///       beats. A standalone node is positioned within itself. No LLM.
 ///
 /// Both flags may be combined. Book-aware (fans out into draft chapters in reading order).
 /// </summary>
@@ -39,30 +39,30 @@ public static class BackfillBeatMetaCli
         var dbFactory  = sp.GetRequiredService<IDbContextFactory<StreetSamuraiDbContext>>();
         await using var db = await dbFactory.CreateDbContextAsync();
 
-        var root = await db.Strands.AsNoTracking()
-            .Where(s => s.Slug == slug || s.StrandCode == slug)
+        var root = await db.Nodes.AsNoTracking()
+            .Where(s => s.Slug == slug || s.NodeCode == slug)
             .Select(s => new { s.Id, s.SortKey })
             .FirstOrDefaultAsync();
-        if (root == null) { Console.Error.WriteLine($"Strand not found: {slug}"); return 2; }
+        if (root == null) { Console.Error.WriteLine($"Node not found: {slug}"); return 2; }
 
-        var childIds = await db.Strands.AsNoTracking()
-            .Where(s => s.ParentStrandId == root.Id && s.Status == "draft")
+        var childIds = await db.Nodes.AsNoTracking()
+            .Where(s => s.ParentNodeId == root.Id && s.Status == "draft")
             .OrderBy(s => s.SortKey).Select(s => s.Id).ToListAsync();
-        var strandIds = childIds.Count > 0 ? childIds : [root.Id];
+        var nodeIds = childIds.Count > 0 ? childIds : [root.Id];
 
         // All beats in global reading order: chapter order, then beat SortKey within chapter.
         var ordered = new List<Guid>();
         var beatInfo = new Dictionary<Guid, (string? Text, string? Synopsis, string? Role)>();
-        foreach (var sid in strandIds)
+        foreach (var sid in nodeIds)
         {
-            var beats = await (from sb in db.StrandBeats.AsNoTracking()
+            var beats = await (from sb in db.NodeBeats.AsNoTracking()
                                join b in db.Beats.AsNoTracking() on sb.BeatId equals b.Id
-                               where sb.StrandId == sid && sb.IsEnabled
+                               where sb.NodeId == sid && sb.IsEnabled
                                orderby sb.SortKey
                                select new { b.Id, b.Text, b.Synopsis, b.StructureRole }).ToListAsync();
             foreach (var b in beats) { ordered.Add(b.Id); beatInfo[b.Id] = (b.Text, b.Synopsis, b.StructureRole); }
         }
-        Console.WriteLine($"Backfilling {ordered.Count} beats across {strandIds.Count} strand(s).");
+        Console.WriteLine($"Backfilling {ordered.Count} beats across {nodeIds.Count} node(s).");
 
         // ── Structure roles (deterministic, book-global arc) ─────────────────────
         if (doRoles)

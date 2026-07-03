@@ -9,8 +9,8 @@ namespace StreetSamurai.Blazor.Cli;
 /// <summary>
 /// ss --sanity-scan (--slug &lt;slug|code&gt; | --all) [--json]
 ///
-/// Scans a finished story strand's prose for problems:
-///   A) Internal strand-code leak  — "NRST" / "BCODA" / etc. in prose
+/// Scans a finished story node's prose for problems:
+///   A) Internal node-code leak  — "NRST" / "BCODA" / etc. in prose
 ///   B) Undefined all-caps acronym — possible placeholder or leaked code
 ///   C) Heft / length floor        — estimated PDF page count vs 50-page minimum
 ///   D) Mojibake detector          — UTF-8 encoding corruption artifacts
@@ -45,47 +45,47 @@ public static class SanityScanCli
         if (all)
             return await RunAllAsync(db, scanSvc, jsonMode);
 
-        // ── Single strand ──────────────────────────────────────────────────────
+        // ── Single node ──────────────────────────────────────────────────────
 
-        var strand = await db.Strands.AsNoTracking()
-            .FirstOrDefaultAsync(s => s.Slug == slug || s.StrandCode == slug);
+        var node = await db.Nodes.AsNoTracking()
+            .FirstOrDefaultAsync(s => s.Slug == slug || s.NodeCode == slug);
 
-        if (strand == null)
+        if (node == null)
         {
-            Console.Error.WriteLine($"Strand '{slug}' not found.");
+            Console.Error.WriteLine($"Node '{slug}' not found.");
             return 2;
         }
 
-        var report = await scanSvc.ScanAsync(strand.Id);
+        var report = await scanSvc.ScanAsync(node.Id);
         return PrintReport(report, jsonMode);
     }
 
-    // ── --all: scan every non-draft strand with >2 beats ──────────────────────
+    // ── --all: scan every non-draft node with >2 beats ──────────────────────
 
     static async Task<int> RunAllAsync(
         StreetSamuraiDbContext db,
         SanityScanService scanSvc,
         bool jsonMode)
     {
-        var strands = await db.Strands.AsNoTracking()
+        var nodes = await db.Nodes.AsNoTracking()
             .Where(s => !s.IsWIP)
             .ToListAsync();
 
-        // Filter to strands with >2 beats (by joining StrandBeats)
-        var strandIds = await db.StrandBeats.AsNoTracking()
+        // Filter to nodes with >2 beats (by joining NodeBeats)
+        var nodeIds = await db.NodeBeats.AsNoTracking()
             .Where(sb => sb.IsEnabled)
-            .GroupBy(sb => sb.StrandId)
+            .GroupBy(sb => sb.NodeId)
             .Where(g => g.Count() > 2)
             .Select(g => g.Key)
             .ToListAsync();
 
-        var eligible = strands
-            .Where(s => strandIds.Contains(s.Id))
+        var eligible = nodes
+            .Where(s => nodeIds.Contains(s.Id))
             .OrderBy(s => s.Title)
             .ToList();
 
         if (!jsonMode)
-            Console.WriteLine($"Scanning {eligible.Count} strand(s)…\n");
+            Console.WriteLine($"Scanning {eligible.Count} node(s)…\n");
 
         var reports = new List<SanityReport>();
         int totalBlocks = 0;
@@ -103,11 +103,11 @@ public static class SanityScanCli
 
             if (!jsonMode)
             {
-                var code  = report.StrandCode != null ? $"[{report.StrandCode}]" : "      ";
+                var code  = report.NodeCode != null ? $"[{report.NodeCode}]" : "      ";
                 var pages = $"~{report.EstimatedPdfPages}pp";
                 var blkStr = blocks > 0 ? $"❌ {blocks} block(s)" : "      ";
                 var wrnStr = warns  > 0 ? $"⚠️  {warns} warn(s)"  : "";
-                Console.WriteLine($"{code,-8} {report.StrandTitle,-45} {pages,-8}  {blkStr}  {wrnStr}".TrimEnd());
+                Console.WriteLine($"{code,-8} {report.NodeTitle,-45} {pages,-8}  {blkStr}  {wrnStr}".TrimEnd());
             }
         }
 
@@ -115,9 +115,9 @@ public static class SanityScanCli
         {
             Console.WriteLine(JsonSerializer.Serialize(reports.Select(r => new
             {
-                strand_slug  = r.StrandSlug,
-                strand_title = r.StrandTitle,
-                strand_code  = r.StrandCode,
+                node_slug  = r.NodeSlug,
+                node_title = r.NodeTitle,
+                node_code  = r.NodeCode,
                 beat_count   = r.BeatCount,
                 word_count   = r.WordCount,
                 pdf_pages    = r.EstimatedPdfPages,
@@ -130,7 +130,7 @@ public static class SanityScanCli
         {
             Console.WriteLine();
             Console.WriteLine(new string('─', 70));
-            Console.WriteLine($"Roll-up: {eligible.Count} strand(s), {totalBlocks} block(s), {totalWarns} warn(s)");
+            Console.WriteLine($"Roll-up: {eligible.Count} node(s), {totalBlocks} block(s), {totalWarns} warn(s)");
         }
 
         return totalBlocks > 0 ? 2 : totalWarns > 0 ? 1 : 0;
@@ -147,9 +147,9 @@ public static class SanityScanCli
         {
             Console.WriteLine(JsonSerializer.Serialize(new
             {
-                strand_slug  = report.StrandSlug,
-                strand_title = report.StrandTitle,
-                strand_code  = report.StrandCode,
+                node_slug  = report.NodeSlug,
+                node_title = report.NodeTitle,
+                node_code  = report.NodeCode,
                 beat_count   = report.BeatCount,
                 word_count   = report.WordCount,
                 pdf_pages    = report.EstimatedPdfPages,
@@ -162,8 +162,8 @@ public static class SanityScanCli
 
         // ── Human-readable ─────────────────────────────────────────────────────
 
-        var codeStr = report.StrandCode != null ? $" [{report.StrandCode}]" : "";
-        Console.WriteLine($"Sanity scan: {report.StrandTitle}{codeStr}");
+        var codeStr = report.NodeCode != null ? $" [{report.NodeCode}]" : "";
+        Console.WriteLine($"Sanity scan: {report.NodeTitle}{codeStr}");
         Console.WriteLine($"~{report.EstimatedPdfPages} pages, {report.WordCount} words, {report.BeatCount} beats");
         Console.WriteLine();
 
@@ -183,7 +183,7 @@ public static class SanityScanCli
 
         foreach (var f in report.Findings)
         {
-            var beatLabel = f.BeatNumber.HasValue ? $"Beat #{f.BeatNumber}" : "(strand-level)";
+            var beatLabel = f.BeatNumber.HasValue ? $"Beat #{f.BeatNumber}" : "(node-level)";
             Console.WriteLine($"{Icon(f.Severity)} [{beatLabel}] {f.Message}");
             if (f.Snippet != null)
                 Console.WriteLine($"   └─ \"{f.Snippet}\"");

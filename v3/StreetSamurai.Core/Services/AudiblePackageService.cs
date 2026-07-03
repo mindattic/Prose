@@ -9,7 +9,7 @@ using StreetSamurai.Core.Interfaces;
 namespace StreetSamurai.Core.Services;
 
 /// <summary>
-/// Produces an Audible hand-off package for a strand: a narration-clean manuscript
+/// Produces an Audible hand-off package for a node: a narration-clean manuscript
 /// (.audible.txt), a pronunciation guide (.pronunciation.md), and a human-readable
 /// hand-off README. All three land in {publishDir}/{SanitizedTitle}/Audible/ so they
 /// sit beside existing KDP exports without colliding.
@@ -28,14 +28,14 @@ public class AudiblePackageService
         new(@"\n{3,}", RegexOptions.Compiled);
 
     private readonly IDbContextFactory<StreetSamuraiDbContext> dbFactory;
-    private readonly StrandWorkbenchService workbench;
+    private readonly NodeWorkbenchService workbench;
     private readonly SettingsService settings;
     private readonly ILogger<AudiblePackageService> log;
     private readonly ILlmService? llm;
 
     public AudiblePackageService(
         IDbContextFactory<StreetSamuraiDbContext> dbFactory,
-        StrandWorkbenchService workbench,
+        NodeWorkbenchService workbench,
         SettingsService settings,
         ILogger<AudiblePackageService> log,
         ILlmService? llm = null)
@@ -50,16 +50,16 @@ public class AudiblePackageService
     // ── public surface ─────────────────────────────────────────────────────────
 
     public async Task<AudiblePackageResult> BuildAsync(
-        Guid strandId,
+        Guid nodeId,
         bool withPhonetics = true,
         CancellationToken ct = default)
     {
         await using var db = await dbFactory.CreateDbContextAsync(ct);
-        var strand = await db.Strands.AsNoTracking()
-            .FirstOrDefaultAsync(s => s.Id == strandId, ct)
-            ?? throw new InvalidOperationException($"Strand {strandId} not found.");
+        var node = await db.Nodes.AsNoTracking()
+            .FirstOrDefaultAsync(s => s.Id == nodeId, ct)
+            ?? throw new InvalidOperationException($"Node {nodeId} not found.");
 
-        var ordered = await workbench.GetOrderedBeatsAsync(strandId, ct);
+        var ordered = await workbench.GetOrderedBeatsAsync(nodeId, ct);
         var beatIds = ordered.Select(ob => ob.Beat.Id).ToList();
 
         // Collect distinct entity names from beat mentions (capped at 200).
@@ -80,13 +80,13 @@ public class AudiblePackageService
 
         // Resolve output directory.
         var publishRoot = ResolveExportDir();
-        var safeTitle   = SanitizeTitle(strand.Title);
+        var safeTitle   = SanitizeTitle(node.Title);
         var audibleDir  = Path.Combine(publishRoot, safeTitle, "Audible");
         Directory.CreateDirectory(audibleDir);
 
         // ── (a) narration manuscript ───────────────────────────────────────────
-        var (manuscriptText, wordCount) = BuildManuscript(strand.Title, strand.Slug, ordered);
-        var manuscriptPath = Path.Combine(audibleDir, $"{strand.Slug}.audible.txt");
+        var (manuscriptText, wordCount) = BuildManuscript(node.Title, node.Slug, ordered);
+        var manuscriptPath = Path.Combine(audibleDir, $"{node.Slug}.audible.txt");
         await File.WriteAllTextAsync(manuscriptPath, manuscriptText, new UTF8Encoding(false), ct);
 
         // ── (b) pronunciation guide ────────────────────────────────────────────
@@ -100,17 +100,17 @@ public class AudiblePackageService
         }
 
         var pronunciationText = BuildPronunciationGuide(distinctTerms, phonetics);
-        var pronunciationPath = Path.Combine(audibleDir, $"{strand.Slug}.pronunciation.md");
+        var pronunciationPath = Path.Combine(audibleDir, $"{node.Slug}.pronunciation.md");
         await File.WriteAllTextAsync(pronunciationPath, pronunciationText, new UTF8Encoding(false), ct);
 
         // ── (c) README ────────────────────────────────────────────────────────
         var readmePath = Path.Combine(audibleDir, "AUDIBLE_README.md");
-        var readmeText = BuildReadme(strand.Title, strand.Slug);
+        var readmeText = BuildReadme(node.Title, node.Slug);
         await File.WriteAllTextAsync(readmePath, readmeText, new UTF8Encoding(false), ct);
 
         log.LogInformation(
-            "Audible package for strand {Slug}: manuscript={MS}, lexicon={LEX}, readme={RME}",
-            strand.Slug, manuscriptPath, pronunciationPath, readmePath);
+            "Audible package for node {Slug}: manuscript={MS}, lexicon={LEX}, readme={RME}",
+            node.Slug, manuscriptPath, pronunciationPath, readmePath);
 
         return new AudiblePackageResult(
             ManuscriptPath:    manuscriptPath,
@@ -126,7 +126,7 @@ public class AudiblePackageService
     private static (string Text, int WordCount) BuildManuscript(
         string title,
         string slug,
-        IReadOnlyList<StrandWorkbenchService.OrderedBeat> ordered)
+        IReadOnlyList<NodeWorkbenchService.OrderedBeat> ordered)
     {
         var sb = new StringBuilder();
         sb.AppendLine(title);
@@ -197,7 +197,7 @@ public class AudiblePackageService
         sb.AppendLine("| CorpoNation | corpo nation | world term | Two-word pronunciation |");
         sb.AppendLine("| GLMZ | G-L-M-Z | acronym | Greater Lake Michigan Zone |");
 
-        // ── Entity names from the strand ─────────────────────────────────────
+        // ── Entity names from the node ─────────────────────────────────────
         foreach (var term in terms)
         {
             phonetics.TryGetValue(term, out var ph);
@@ -219,7 +219,7 @@ public class AudiblePackageService
             ## What these files are
 
             This folder contains three files produced by the StreetSamurai engine for the
-            strand **{title}**:
+            node **{title}**:
 
             | File | Purpose |
             |------|---------|

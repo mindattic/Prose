@@ -57,7 +57,7 @@ else
                     <th class="text-end">Embedded</th>
                     <th class="text-end">Missing</th>
                     <th style="min-width:160px;">Embedding</th>
-                    <th class="text-end" title="Embedded entities cited in strand prose">In Strands</th>
+                    <th class="text-end" title="Embedded entities cited in node prose">In Nodes</th>
                     <th>CLI Backfill</th>
                 </tr>
             </thead>
@@ -66,7 +66,7 @@ else
                 {
                     var pct = (int)Math.Round(r.EmbeddedPct);
                     var barCss = pct >= 90 ? "bg-success" : pct >= 50 ? "bg-warning" : "bg-danger";
-                    var strandPct = (int)Math.Round(r.StrandPct);
+                    var nodePct = (int)Math.Round(r.NodePct);
                     <tr>
                         <td><code class="text-info">@r.EntityType</code></td>
                         <td class="text-end">@r.Total.ToString("N0")</td>
@@ -81,9 +81,9 @@ else
                             </div>
                         </td>
                         <td class="text-end">
-                            @if (r.InStrandCount > 0)
+                            @if (r.InNodeCount > 0)
                             {
-                                <span class="text-success small">@r.InStrandCount.ToString("N0")</span>
+                                <span class="text-success small">@r.InNodeCount.ToString("N0")</span>
                             }
                             else
                             {

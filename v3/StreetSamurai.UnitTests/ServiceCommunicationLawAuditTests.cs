@@ -12,7 +12,7 @@ namespace StreetSamurai.UnitTests;
 ///     LiteraryRulesRepository or ToneBibleRepository field (SCL-3).
 /// K4: No public method named GetCurrentWorldState without a beatId
 ///     parameter may exist on any service (SCL-4).
-/// K8: StrandReviewService must not hold a field whose type is a
+/// K8: NodeReviewService must not hold a field whose type is a
 ///     beat-write or prose-apply service (SCL-8).
 /// </summary>
 [TestFixture]
@@ -102,10 +102,10 @@ public class ServiceCommunicationLawAuditTests
     }
 
     [Test]
-    public void K4_WorldStatePrecheckService_TakesStrandOrBeatContext()
+    public void K4_WorldStatePrecheckService_TakesNodeOrBeatContext()
     {
         // WorldStatePrecheckService's public Precheck method must accept some
-        // form of strand/beat context — it must never be parameterless.
+        // form of node/beat context — it must never be parameterless.
         var type = CoreAssembly.GetType("StreetSamurai.Core.Services.WorldStatePrecheckService");
         if (type == null)
         {
@@ -120,19 +120,19 @@ public class ServiceCommunicationLawAuditTests
             .ToList();
 
         Assert.That(parameterlessPrechecks, Is.Empty,
-            "SCL-4: WorldStatePrecheckService.Precheck must accept a strand/beat context, not be parameterless.");
+            "SCL-4: WorldStatePrecheckService.Precheck must accept a node/beat context, not be parameterless.");
     }
 
     // ── K8 — Reviews never auto-apply editorial conclusions (SCL-8) ──────────
 
     [Test]
-    public void K8_StrandReviewService_DoesNotHoldBeatWriteFields()
+    public void K8_NodeReviewService_DoesNotHoldBeatWriteFields()
     {
-        // StrandReviewService must not hold a field whose type can write prose
+        // NodeReviewService must not hold a field whose type can write prose
         // or apply findings. It is an observer only.
         var writeServiceTypes = new HashSet<string>
         {
-            "StrandWorkbenchService",
+            "NodeWorkbenchService",
             "BeatRepository",
             "FindingApplyService",
             "VoiceHarvestService",
@@ -140,38 +140,38 @@ public class ServiceCommunicationLawAuditTests
             "ProseReflowService",
         };
 
-        var fields = typeof(StrandReviewService)
+        var fields = typeof(NodeReviewService)
             .GetFields(BindingFlags.Instance | BindingFlags.NonPublic | BindingFlags.Public)
             .Where(f => writeServiceTypes.Contains(f.FieldType.Name))
             .ToList();
 
         Assert.That(fields, Is.Empty,
-            $"SCL-8 violation: StrandReviewService holds fields that can apply/write prose: " +
+            $"SCL-8 violation: NodeReviewService holds fields that can apply/write prose: " +
             $"{string.Join(", ", fields.Select(f => $"{f.FieldType.Name} {f.Name}"))}. " +
-            $"StrandReviewService is an observer — it scores, it does not fix.");
+            $"NodeReviewService is an observer — it scores, it does not fix.");
     }
 
     [Test]
-    public void K8_StrandReviewService_IsRegistered_AndHasNoProseWriteDependencies()
+    public void K8_NodeReviewService_IsRegistered_AndHasNoProseWriteDependencies()
     {
         // Belt-and-suspenders: verify the service itself resolves (already
         // covered by DiRegistrationTests) and that its constructor parameters
         // contain no prose-write types. Constructor-injection is the only DI
         // path we need to audit here.
-        var ctor = typeof(StrandReviewService)
+        var ctor = typeof(NodeReviewService)
             .GetConstructors(BindingFlags.Public | BindingFlags.Instance)
             .OrderByDescending(c => c.GetParameters().Length)
             .FirstOrDefault();
 
         if (ctor == null)
         {
-            Assert.Ignore("StrandReviewService has no public constructor — skip.");
+            Assert.Ignore("NodeReviewService has no public constructor — skip.");
             return;
         }
 
         var writeServiceTypes = new HashSet<string>
         {
-            "StrandWorkbenchService",
+            "NodeWorkbenchService",
             "FindingApplyService",
             "VoiceHarvestService",
             "ContinuityApplyService",
@@ -182,7 +182,7 @@ public class ServiceCommunicationLawAuditTests
             .ToList();
 
         Assert.That(badParams, Is.Empty,
-            $"SCL-8 violation: StrandReviewService constructor takes prose-write parameters: " +
+            $"SCL-8 violation: NodeReviewService constructor takes prose-write parameters: " +
             $"{string.Join(", ", badParams.Select(p => p.ParameterType.Name))}.");
     }
 }

@@ -26,10 +26,10 @@ public class ProseWriterRouterTests
             monitor:      monitor);
     }
 
-    // ── LogCoverageAsync: early exit on empty strandId ───────────────────────
+    // ── LogCoverageAsync: early exit on empty nodeId ───────────────────────
 
     [Test]
-    public async Task LogCoverageAsync_EmptyStrandId_CompletesWithoutThrowing()
+    public async Task LogCoverageAsync_EmptyNodeId_CompletesWithoutThrowing()
     {
         var router = BuildRouter();
         Assert.DoesNotThrowAsync(() =>
@@ -43,9 +43,9 @@ public class ProseWriterRouterTests
     public async Task LogCoverageAsync_CombatGoal_CompletesWithoutThrowing()
     {
         var router   = BuildRouter();
-        var strandId = Guid.NewGuid();
+        var nodeId = Guid.NewGuid();
         Assert.DoesNotThrowAsync(() =>
-            router.LogCoverageAsync(Guid.NewGuid(), strandId, "fight breaks out in the lobby",
+            router.LogCoverageAsync(Guid.NewGuid(), nodeId, "fight breaks out in the lobby",
                 null, beatIndex: 3, totalBeats: 12));
     }
 
@@ -53,9 +53,9 @@ public class ProseWriterRouterTests
     public async Task LogCoverageAsync_NarrativeGoal_CompletesWithoutThrowing()
     {
         var router   = BuildRouter();
-        var strandId = Guid.NewGuid();
+        var nodeId = Guid.NewGuid();
         Assert.DoesNotThrowAsync(() =>
-            router.LogCoverageAsync(Guid.NewGuid(), strandId, "Kyle waits in the apartment",
+            router.LogCoverageAsync(Guid.NewGuid(), nodeId, "Kyle waits in the apartment",
                 null, beatIndex: 1, totalBeats: 14));
     }
 
@@ -63,9 +63,9 @@ public class ProseWriterRouterTests
     public async Task LogCoverageAsync_ZeroTotalBeats_CompletesWithoutThrowing()
     {
         var router   = BuildRouter();
-        var strandId = Guid.NewGuid();
+        var nodeId = Guid.NewGuid();
         Assert.DoesNotThrowAsync(() =>
-            router.LogCoverageAsync(Guid.NewGuid(), strandId, "negotiation",
+            router.LogCoverageAsync(Guid.NewGuid(), nodeId, "negotiation",
                 null, beatIndex: 0, totalBeats: 0));
     }
 
@@ -166,10 +166,10 @@ public class ProseWriterRouterTests
     {
         // Verify the known service name set by attempting coverage log — does not throw.
         var router   = BuildRouter();
-        var strandId = Guid.NewGuid();
+        var nodeId = Guid.NewGuid();
         // This exercises the full service-entry array construction path
         Assert.DoesNotThrowAsync(() =>
-            router.LogCoverageAsync(Guid.NewGuid(), strandId, "fight in the alley",
+            router.LogCoverageAsync(Guid.NewGuid(), nodeId, "fight in the alley",
                 null, beatIndex: 5, totalBeats: 14, universeId: Guid.NewGuid()));
     }
 }

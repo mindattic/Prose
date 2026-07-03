@@ -9,10 +9,10 @@ using StreetSamurai.Core.Interfaces;
 namespace StreetSamurai.Core.Services;
 
 /// <summary>
-/// Turns a winning strand (reader score ≥80%) into codified, verifiable voice
+/// Turns a winning node (reader score ≥80%) into codified, verifiable voice
 /// rules. It mines three evidence sources — the author's generated→final beat
 /// edits (from the temporal beat-version history), the directives they logged in
-/// conversation, and the strand's highest-scored beats — and asks an LLM to
+/// conversation, and the node's highest-scored beats — and asks an LLM to
 /// distill them into concrete rule candidates. Each candidate is written to the
 /// <see cref="VoiceChangeLogEntry"/> trail as <c>proposed</c>; nothing touches
 /// the live rules until <see cref="ApplyAsync"/> is called on an approved entry.
@@ -26,7 +26,7 @@ namespace StreetSamurai.Core.Services;
 public class VoiceHarvestService
 {
     private readonly IDbContextFactory<StreetSamuraiDbContext> dbFactory;
-    private readonly StrandWorkbenchService workbench;
+    private readonly NodeWorkbenchService workbench;
     private readonly ILlmService llm;
     private readonly LiteraryRulesRepository literaryRules;
     private readonly ToneBibleRepository toneBible;
@@ -45,7 +45,7 @@ public class VoiceHarvestService
 
     public VoiceHarvestService(
         IDbContextFactory<StreetSamuraiDbContext> dbFactory,
-        StrandWorkbenchService workbench,
+        NodeWorkbenchService workbench,
         ILlmService llm,
         LiteraryRulesRepository literaryRules,
         ToneBibleRepository toneBible,
@@ -65,14 +65,14 @@ public class VoiceHarvestService
     /// universal-truth asides") so the next harvest can fold it in. Status
     /// <c>observed</c> — it's evidence, not yet a proposed rule.</summary>
     public async Task<VoiceChangeLogEntry> LogDirectiveAsync(
-        string description, string? ruleTarget = null, Guid? strandId = null, string? evidence = null, CancellationToken ct = default)
+        string description, string? ruleTarget = null, Guid? nodeId = null, string? evidence = null, CancellationToken ct = default)
     {
         await using var db = await dbFactory.CreateDbContextAsync(ct);
         var entry = new VoiceChangeLogEntry
         {
             Id = Guid.CreateVersion7(),
             Source = "directive",
-            StrandId = strandId,
+            NodeId = nodeId,
             Description = description.Trim(),
             RuleTarget = ruleTarget ?? "",
             Evidence = evidence,
@@ -83,17 +83,17 @@ public class VoiceHarvestService
         return entry;
     }
 
-    /// <summary>The harvest result for one strand: the proposals it produced (also
+    /// <summary>The harvest result for one node: the proposals it produced (also
     /// persisted) plus the evidence counts behind them.</summary>
     public record HarvestResult(string Slug, string Title, double Score, int EditCount, int DirectiveCount, List<VoiceChangeLogEntry> Proposals);
 
-    /// <summary>Harvest every strand at or above <paramref name="threshold"/>%.
+    /// <summary>Harvest every node at or above <paramref name="threshold"/>%.
     /// When two or more qualify, the LLM is told which moves recur across them so
-    /// the cross-strand commonality surfaces as the strongest candidates.</summary>
+    /// the cross-node commonality surfaces as the strongest candidates.</summary>
     public async Task<List<HarvestResult>> HarvestAllAboveAsync(double threshold = 80, CancellationToken ct = default)
     {
         await using var db = await dbFactory.CreateDbContextAsync(ct);
-        var ids = await db.Strands.AsNoTracking()
+        var ids = await db.Nodes.AsNoTracking()
             .Where(s => s.Score != null && s.Score >= threshold)
             .OrderByDescending(s => s.Score)
             .Select(s => s.Id)
@@ -103,19 +103,19 @@ public class VoiceHarvestService
         foreach (var id in ids)
         {
             ct.ThrowIfCancellationRequested();
-            results.Add(await HarvestStrandAsync(id, force: true, peerCount: ids.Count - 1, ct));
+            results.Add(await HarvestNodeAsync(id, force: true, peerCount: ids.Count - 1, ct));
         }
         return results;
     }
 
-    /// <summary>Harvest every strand the author has marked Canon — the gold
+    /// <summary>Harvest every node the author has marked Canon — the gold
     /// standard for what the voice SHOULD be (ARCHITECTURE.md §2c). Canon is the
-    /// trust gate, so these are harvested unconditionally (force), and cross-strand
+    /// trust gate, so these are harvested unconditionally (force), and cross-node
     /// commonality across the canon set surfaces the strongest, most-trusted rules.</summary>
     public async Task<List<HarvestResult>> HarvestCanonAsync(CancellationToken ct = default)
     {
         await using var db = await dbFactory.CreateDbContextAsync(ct);
-        var ids = await db.Strands.AsNoTracking()
+        var ids = await db.Nodes.AsNoTracking()
             .Where(s => s.IsCanon)
             .OrderByDescending(s => s.CanonAt)
             .Select(s => s.Id)
@@ -125,23 +125,23 @@ public class VoiceHarvestService
         foreach (var id in ids)
         {
             ct.ThrowIfCancellationRequested();
-            results.Add(await HarvestStrandAsync(id, force: true, peerCount: ids.Count - 1, ct));
+            results.Add(await HarvestNodeAsync(id, force: true, peerCount: ids.Count - 1, ct));
         }
         return results;
     }
 
     /// <summary>
-    /// Prose-based canon harvest: read the FINISHED prose of every canon strand and
+    /// Prose-based canon harvest: read the FINISHED prose of every canon node and
     /// distill the voice directly from it — not from edit-history, which canon
-    /// strands often lack (imported/generated without workbench edits). Emits the
-    /// same proposed change-log rows as <see cref="HarvestStrandAsync"/>, applied
+    /// nodes often lack (imported/generated without workbench edits). Emits the
+    /// same proposed change-log rows as <see cref="HarvestNodeAsync"/>, applied
     /// via <see cref="ApplyAsync"/>. This is how the canon voice is captured into
     /// the codified stores the generator + re-beater read.
     /// </summary>
     public async Task<List<HarvestResult>> HarvestCanonProseAsync(CancellationToken ct = default)
     {
         await using var db = await dbFactory.CreateDbContextAsync(ct);
-        var canon = await db.Strands.AsNoTracking().Where(s => s.IsCanon)
+        var canon = await db.Nodes.AsNoTracking().Where(s => s.IsCanon)
             .OrderByDescending(s => s.CanonAt)
             .Select(s => new { s.Id, s.Slug, s.Title, s.Score }).ToListAsync(ct);
 
@@ -164,7 +164,7 @@ public class VoiceHarvestService
                 {
                     Id = Guid.CreateVersion7(),
                     Source = "harvest",
-                    StrandId = s.Id,
+                    NodeId = s.Id,
                     Description = c.Description.Trim(),
                     RuleTarget = target,
                     Evidence = $"{s.Slug} (canon)" + (string.IsNullOrWhiteSpace(c.Evidence) ? "" : $" — {c.Evidence.Trim()}"),
@@ -186,9 +186,9 @@ public class VoiceHarvestService
     {
         var sample = prose.Length > 16000 ? prose[..16000] : prose;   // bound the model input
         var sb = new StringBuilder();
-        sb.AppendLine($"CANON STRAND: \"{title}\"" + (score > 0 ? $" — reader score {score:0.#}%." : " — author-marked canon."));
+        sb.AppendLine($"CANON NODE: \"{title}\"" + (score > 0 ? $" — reader score {score:0.#}%." : " — author-marked canon."));
         if (peerCount > 0)
-            sb.AppendLine($"NOTE: {peerCount} other canon strands exist. Prefer rules that GENERALIZE across the canon voice, not one-offs.");
+            sb.AppendLine($"NOTE: {peerCount} other canon nodes exist. Prefer rules that GENERALIZE across the canon voice, not one-offs.");
         sb.AppendLine();
         sb.AppendLine("FINISHED CANON PROSE (this is the voice to reproduce):");
         sb.AppendLine(sample);
@@ -212,19 +212,19 @@ public class VoiceHarvestService
         return ParseCandidates(raw);
     }
 
-    /// <summary>Mine one strand and write proposed voice rules. Throws if the
-    /// strand is below 80% unless <paramref name="force"/> is set.</summary>
-    public async Task<HarvestResult> HarvestStrandAsync(Guid strandId, bool force = false, int peerCount = 0, CancellationToken ct = default)
+    /// <summary>Mine one node and write proposed voice rules. Throws if the
+    /// node is below 80% unless <paramref name="force"/> is set.</summary>
+    public async Task<HarvestResult> HarvestNodeAsync(Guid nodeId, bool force = false, int peerCount = 0, CancellationToken ct = default)
     {
         await using var db = await dbFactory.CreateDbContextAsync(ct);
-        var strand = await db.Strands.AsNoTracking().FirstOrDefaultAsync(s => s.Id == strandId, ct)
-            ?? throw new InvalidOperationException($"Strand {strandId} not found.");
-        if (!force && (strand.Score ?? 0) < 80)
-            throw new InvalidOperationException($"Strand '{strand.Slug}' scored {strand.Score:0.#} — below 80%. Pass force to harvest anyway.");
+        var node = await db.Nodes.AsNoTracking().FirstOrDefaultAsync(s => s.Id == nodeId, ct)
+            ?? throw new InvalidOperationException($"Node {nodeId} not found.");
+        if (!force && (node.Score ?? 0) < 80)
+            throw new InvalidOperationException($"Node '{node.Slug}' scored {node.Score:0.#} — below 80%. Pass force to harvest anyway.");
 
         // 1) Mine generated→final edits from the temporal beat history.
-        var ordered = await workbench.GetOrderedBeatsAsync(strandId, ct);
-        var counts = await workbench.GetBeatVersionCountsAsync(strandId, ct);
+        var ordered = await workbench.GetOrderedBeatsAsync(nodeId, ct);
+        var counts = await workbench.GetBeatVersionCountsAsync(nodeId, ct);
         var edits = new List<(int Pos, string Before, string After)>();
         int pos = 0;
         foreach (var ob in ordered)
@@ -237,21 +237,21 @@ public class VoiceHarvestService
             edits.Add((pos, generated.Trim(), final.Trim()));
         }
 
-        // 2) Pull the directives logged against this strand.
+        // 2) Pull the directives logged against this node.
         var directives = await db.VoiceChangeLog.AsNoTracking()
-            .Where(e => e.Source == "directive" && e.StrandId == strandId)
+            .Where(e => e.Source == "directive" && e.NodeId == nodeId)
             .OrderBy(e => e.CreatedAt)
             .Select(e => e.Description)
             .ToListAsync(ct);
 
         if (edits.Count == 0 && directives.Count == 0)
         {
-            log.LogInformation("Harvest {Slug}: no edits or directives to learn from.", strand.Slug);
-            return new HarvestResult(strand.Slug, strand.Title, strand.Score ?? 0, 0, 0, []);
+            log.LogInformation("Harvest {Slug}: no edits or directives to learn from.", node.Slug);
+            return new HarvestResult(node.Slug, node.Title, node.Score ?? 0, 0, 0, []);
         }
 
         // 3) Ask the LLM to distill verifiable rules.
-        var candidates = await DistillAsync(strand.Title, strand.Score ?? 0, edits, directives, peerCount, ct);
+        var candidates = await DistillAsync(node.Title, node.Score ?? 0, edits, directives, peerCount, ct);
 
         // 4) Persist as proposed change-log rows.
         var proposals = new List<VoiceChangeLogEntry>();
@@ -263,10 +263,10 @@ public class VoiceHarvestService
             {
                 Id = Guid.CreateVersion7(),
                 Source = "harvest",
-                StrandId = strandId,
+                NodeId = nodeId,
                 Description = c.Description.Trim(),
                 RuleTarget = target,
-                Evidence = $"{strand.Slug} (score {strand.Score:0.#}%)" + (string.IsNullOrWhiteSpace(c.Evidence) ? "" : $" — {c.Evidence.Trim()}"),
+                Evidence = $"{node.Slug} (score {node.Score:0.#}%)" + (string.IsNullOrWhiteSpace(c.Evidence) ? "" : $" — {c.Evidence.Trim()}"),
                 Before = c.ExampleBefore,
                 After = c.ExampleAfter,
                 Status = "proposed",
@@ -276,8 +276,8 @@ public class VoiceHarvestService
         }
         await db.SaveChangesAsync(ct);
         log.LogInformation("Harvest {Slug}: {Edits} edits + {Dirs} directives → {N} proposals.",
-            strand.Slug, edits.Count, directives.Count, proposals.Count);
-        return new HarvestResult(strand.Slug, strand.Title, strand.Score ?? 0, edits.Count, directives.Count, proposals);
+            node.Slug, edits.Count, directives.Count, proposals.Count);
+        return new HarvestResult(node.Slug, node.Title, node.Score ?? 0, edits.Count, directives.Count, proposals);
     }
 
     private sealed record Candidate(string Description, string RuleTarget, string? Evidence, string? ExampleBefore, string? ExampleAfter);
@@ -286,9 +286,9 @@ public class VoiceHarvestService
         string title, double score, List<(int Pos, string Before, string After)> edits, List<string> directives, int peerCount, CancellationToken ct)
     {
         var sb = new StringBuilder();
-        sb.AppendLine($"STRAND: \"{title}\" — reader score {score:0.#}% (a winner).");
+        sb.AppendLine($"NODE: \"{title}\" — reader score {score:0.#}% (a winner).");
         if (peerCount > 0)
-            sb.AppendLine($"NOTE: {peerCount} other strands also scored ≥80%. Prefer rules that would generalize across winners, not one-offs.");
+            sb.AppendLine($"NOTE: {peerCount} other nodes also scored ≥80%. Prefer rules that would generalize across winners, not one-offs.");
         sb.AppendLine();
         if (directives.Count > 0)
         {

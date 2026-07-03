@@ -9,10 +9,10 @@ namespace StreetSamurai.Core.Services;
 /// queries the embedding index across every type, so any embedded entity can surface
 /// in prose. A type with entities but 0 embedded is dead inventory the engine can't pull.
 ///
-/// <para>Strand tracking: the report also includes <c>InStrandCount</c> — how many
-/// entities of each type have appeared in strand prose (via EntityStateEvents with a
-/// BeatGuid). This closes the entity↔strand appearance tracking loop: types with
-/// 0 InStrandCount are embedded but never cited in canon prose.</para>
+/// <para>Node tracking: the report also includes <c>InNodeCount</c> — how many
+/// entities of each type have appeared in node prose (via EntityStateEvents with a
+/// BeatGuid). This closes the entity↔node appearance tracking loop: types with
+/// 0 InNodeCount are embedded but never cited in canon prose.</para>
 /// </summary>
 public class CoverageService
 {
@@ -21,12 +21,12 @@ public class CoverageService
     public CoverageService(IDbContextFactory<StreetSamuraiDbContext> dbFactory)
         => this.dbFactory = dbFactory;
 
-    public sealed record TypeCoverage(string EntityType, int Total, int Embedded, int InStrandCount = 0)
+    public sealed record TypeCoverage(string EntityType, int Total, int Embedded, int InNodeCount = 0)
     {
         public int Missing => Total - Embedded;
         public double EmbeddedPct => Total > 0 ? 100.0 * Embedded / Total : 0;
-        /// <summary>Percentage of embedded entities that have also appeared in strand prose.</summary>
-        public double StrandPct => Embedded > 0 ? 100.0 * InStrandCount / Embedded : 0;
+        /// <summary>Percentage of embedded entities that have also appeared in node prose.</summary>
+        public double NodePct => Embedded > 0 ? 100.0 * InNodeCount / Embedded : 0;
     }
 
     /// <summary>Per-type coverage, most-populous first.</summary>
@@ -47,24 +47,24 @@ public class CoverageService
             ORDER BY COUNT(*) DESC
             """).ToListAsync(ct);
 
-        // Strand appearance tracking: entities that have been cited in at least one beat
-        var strandRows = await db.Database.SqlQueryRaw<StrandAppearanceRow>(
+        // Node appearance tracking: entities that have been cited in at least one beat
+        var nodeRows = await db.Database.SqlQueryRaw<NodeAppearanceRow>(
             """
             SELECT e.EntityType AS EntityType,
-                   COUNT(DISTINCT e.Id) AS InStrandCount
+                   COUNT(DISTINCT e.Id) AS InNodeCount
             FROM dbo.Entities e
             INNER JOIN dbo.EntityStateEvents ese ON ese.EntityId = e.Id
             WHERE e.IsActive = 1 AND ese.BeatGuid IS NOT NULL
             GROUP BY e.EntityType
             """).ToListAsync(ct);
 
-        var strandMap = strandRows.ToDictionary(r => r.EntityType ?? "", r => r.InStrandCount);
+        var nodeMap = nodeRows.ToDictionary(r => r.EntityType ?? "", r => r.InNodeCount);
 
         return rows.Select(r =>
         {
             var type = r.EntityType ?? "(none)";
-            strandMap.TryGetValue(type, out var inStrand);
-            return new TypeCoverage(type, r.Total, r.Embedded, inStrand);
+            nodeMap.TryGetValue(type, out var inNode);
+            return new TypeCoverage(type, r.Total, r.Embedded, inNode);
         }).ToList();
     }
 
@@ -75,9 +75,9 @@ public class CoverageService
         public int Embedded { get; set; }
     }
 
-    private sealed class StrandAppearanceRow
+    private sealed class NodeAppearanceRow
     {
         public string? EntityType { get; set; }
-        public int InStrandCount { get; set; }
+        public int InNodeCount { get; set; }
     }
 }

@@ -17,7 +17,7 @@ public record PostBeatValidationResult(
 /// and files violations as Findings. Two tiers:
 ///
 ///   QuickValidateAsync — prose pattern guard only (sync, no DB beyond findings write).
-///     Called fire-and-forget by StrandWorkbenchService on every UpdateBeatTextAsync.
+///     Called fire-and-forget by NodeWorkbenchService on every UpdateBeatTextAsync.
 ///
 ///   FullValidateAsync  — prose + gear carry + (opt) behavior invariants.
 ///     Called explicitly via the <c>validate_beat</c> MCP tool or
@@ -35,9 +35,9 @@ public class PostBeatValidationService(
 {
     /// <summary>
     /// Prose guard only — no DB or LLM, safe to fire-and-forget after every beat save.
-    /// <paramref name="strandSlug"/> is used as the finding's filePath prefix.
+    /// <paramref name="nodeSlug"/> is used as the finding's filePath prefix.
     /// </summary>
-    public Task QuickValidateAsync(string strandSlug, string beatText, CancellationToken ct = default)
+    public Task QuickValidateAsync(string nodeSlug, string beatText, CancellationToken ct = default)
     {
         if (string.IsNullOrWhiteSpace(beatText)) return Task.CompletedTask;
         try
@@ -46,7 +46,7 @@ public class PostBeatValidationService(
             foreach (var v in violations)
             {
                 findings.Upsert(
-                    filePath:     $"strand:{strandSlug}",
+                    filePath:     $"node:{nodeSlug}",
                     chapterId:    null,
                     category:     FindingCategory.Cliche,
                     severity:     FindingSeverity.Medium,
@@ -57,14 +57,14 @@ public class PostBeatValidationService(
         }
         catch (Exception ex)
         {
-            log.LogWarning(ex, "QuickValidate prose guard failed for strand {Slug}", strandSlug);
+            log.LogWarning(ex, "QuickValidate prose guard failed for node {Slug}", nodeSlug);
         }
         return Task.CompletedTask;
     }
 
     /// <summary>
     /// Full battery: prose guard + gear carry + optional behavior invariants.
-    /// Resolves beat text and strand slug from DB. When <paramref name="characterIds"/>
+    /// Resolves beat text and node slug from DB. When <paramref name="characterIds"/>
     /// is null, derives characters from the beat's indexed BeatEntityMentions.
     /// </summary>
     public async Task<PostBeatValidationResult> FullValidateAsync(
@@ -82,21 +82,21 @@ public class PostBeatValidationService(
             var beat = await db.Beats.AsNoTracking().FirstOrDefaultAsync(b => b.Id == beatId, ct);
             if (string.IsNullOrWhiteSpace(beat?.Text)) return new(0, 0, 0);
 
-            var strandSlug = await db.StrandBeats.AsNoTracking()
+            var nodeSlug = await db.NodeBeats.AsNoTracking()
                 .Where(sb => sb.BeatId == beatId)
-                .Join(db.Strands, sb => sb.StrandId, s => s.Id, (_, s) => s.Slug)
+                .Join(db.Nodes, sb => sb.NodeId, s => s.Id, (_, s) => s.Slug)
                 .FirstOrDefaultAsync(ct) ?? beatId.ToString();
 
             var text = beat.Text;
-            proseCount = FileProseViolations(text, strandSlug);
+            proseCount = FileProseViolations(text, nodeSlug);
 
             var chars = characterIds ?? await CharactersFromMentionsAsync(db, beatId, ct);
             foreach (var charId in chars)
             {
                 ct.ThrowIfCancellationRequested();
-                gearCount += await FileGearViolationsAsync(text, strandSlug, charId, storyTime, ct);
+                gearCount += await FileGearViolationsAsync(text, nodeSlug, charId, storyTime, ct);
                 if (checkBehavior)
-                    behaviorCount += await FileBehaviorViolationsAsync(text, strandSlug, charId, ct);
+                    behaviorCount += await FileBehaviorViolationsAsync(text, nodeSlug, charId, ct);
             }
         }
         catch (Exception ex)
@@ -108,13 +108,13 @@ public class PostBeatValidationService(
 
     // ── private helpers ──────────────────────────────────────────────────────
 
-    private int FileProseViolations(string text, string strandSlug)
+    private int FileProseViolations(string text, string nodeSlug)
     {
         var violations = proseGuard.Check(text);
         foreach (var v in violations)
         {
             findings.Upsert(
-                filePath:     $"strand:{strandSlug}",
+                filePath:     $"node:{nodeSlug}",
                 chapterId:    null,
                 category:     FindingCategory.Cliche,
                 severity:     FindingSeverity.Medium,
@@ -126,7 +126,7 @@ public class PostBeatValidationService(
     }
 
     private async Task<int> FileGearViolationsAsync(
-        string text, string strandSlug, Guid charId, DateTime? storyTime, CancellationToken ct)
+        string text, string nodeSlug, Guid charId, DateTime? storyTime, CancellationToken ct)
     {
         try
         {
@@ -134,7 +134,7 @@ public class PostBeatValidationService(
             foreach (var v in violations)
             {
                 findings.Upsert(
-                    filePath:     $"strand:{strandSlug}",
+                    filePath:     $"node:{nodeSlug}",
                     chapterId:    null,
                     category:     FindingCategory.GearContradiction,
                     severity:     FindingSeverity.High,
@@ -152,7 +152,7 @@ public class PostBeatValidationService(
     }
 
     private async Task<int> FileBehaviorViolationsAsync(
-        string text, string strandSlug, Guid charId, CancellationToken ct)
+        string text, string nodeSlug, Guid charId, CancellationToken ct)
     {
         try
         {
@@ -160,7 +160,7 @@ public class PostBeatValidationService(
             foreach (var v in violations)
             {
                 findings.Upsert(
-                    filePath:     $"strand:{strandSlug}",
+                    filePath:     $"node:{nodeSlug}",
                     chapterId:    null,
                     category:     FindingCategory.BehaviorContradiction,
                     severity:     FindingSeverity.Medium,

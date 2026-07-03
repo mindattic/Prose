@@ -189,7 +189,7 @@ public class WorldModellingTools(
 
     [McpServerTool, Description(
         "Returns every beat flagged EntityStale — i.e. a canon entity mentioned in " +
-        "the beat was updated after the beat was written. Grouped by strand. " +
+        "the beat was updated after the beat was written. Grouped by node. " +
         "Review each beat and call clear_entity_stale when satisfied.")]
     public async Task<string> ListEntityStaleBeats()
     {
@@ -201,8 +201,8 @@ public class WorldModellingTools(
         {
             beatId      = b.BeatId,
             beatNumber  = b.BeatNumber,
-            strandId    = b.StrandId,
-            strand      = b.StrandTitle,
+            nodeId    = b.NodeId,
+            node      = b.NodeTitle,
             textPreview = b.TextPreview,
             entities    = b.Entities,
         }), CanonTools.JsonOpts);
@@ -266,33 +266,33 @@ public class WorldModellingTools(
     }
 
     [McpServerTool, Description(
-        "Run the prose pattern guard over every beat in a strand and file violations " +
-        "as Findings. This is the strand-wide sweep equivalent of check_prose — " +
-        "use it after importing or rewriting a strand to catch all clichés, " +
+        "Run the prose pattern guard over every beat in a node and file violations " +
+        "as Findings. This is the node-wide sweep equivalent of check_prose — " +
+        "use it after importing or rewriting a node to catch all clichés, " +
         "pseudo-profound constructs, on-the-nose interiority, and italicised dialogue " +
         "in one pass. Returns a per-beat summary of violations found.")]
-    public async Task<string> ScanStrandViolations(
-        [Description("Strand id (GUID) or slug.")] string strandIdOrSlug)
+    public async Task<string> ScanNodeViolations(
+        [Description("Node id (GUID) or slug.")] string nodeIdOrSlug)
     {
         await using var db = await dbFactory.CreateDbContextAsync();
-        Guid strandId;
-        if (Guid.TryParse(strandIdOrSlug, out var g))
-            strandId = g;
+        Guid nodeId;
+        if (Guid.TryParse(nodeIdOrSlug, out var g))
+            nodeId = g;
         else
         {
-            var s = await db.Strands.AsNoTracking().FirstOrDefaultAsync(x => x.Slug == strandIdOrSlug || x.StrandCode == strandIdOrSlug);
+            var s = await db.Nodes.AsNoTracking().FirstOrDefaultAsync(x => x.Slug == nodeIdOrSlug || x.NodeCode == nodeIdOrSlug);
             if (s == null)
-                return JsonSerializer.Serialize(new { error = "strand_not_found", strandIdOrSlug }, CanonTools.JsonOpts);
-            strandId = s.Id;
+                return JsonSerializer.Serialize(new { error = "node_not_found", nodeIdOrSlug }, CanonTools.JsonOpts);
+            nodeId = s.Id;
         }
 
-        var slug = await db.Strands.AsNoTracking()
-            .Where(s => s.Id == strandId)
+        var slug = await db.Nodes.AsNoTracking()
+            .Where(s => s.Id == nodeId)
             .Select(s => s.Slug)
-            .FirstOrDefaultAsync() ?? strandId.ToString();
+            .FirstOrDefaultAsync() ?? nodeId.ToString();
 
-        var beats = await db.StrandBeats.AsNoTracking()
-            .Where(sb => sb.StrandId == strandId)
+        var beats = await db.NodeBeats.AsNoTracking()
+            .Where(sb => sb.NodeId == nodeId)
             .Join(db.Beats, sb => sb.BeatId, b => b.Id, (sb, b) => new { b.Id, b.Number, b.Text })
             .OrderBy(b => b.Number)
             .ToListAsync();
@@ -319,7 +319,7 @@ public class WorldModellingTools(
 
         return JsonSerializer.Serialize(new
         {
-            strand_id       = strandId,
+            node_id       = nodeId,
             slug,
             beats_scanned   = beats.Count,
             total_violations = totalViolations,
@@ -335,10 +335,10 @@ public class WorldModellingTools(
         "Add an editorial prose lesson — an author ruling that reviewers must respect. " +
         "Lessons are injected into every future review ballot prompt so the panel does not " +
         "penalise beats the author has already decided are doing their job in the sequence. " +
-        "scope: 'global' applies to all strands; 'strand:<slug>' to one strand; 'beat:<guid>' to one beat. " +
+        "scope: 'global' applies to all nodes; 'node:<slug>' to one node; 'beat:<guid>' to one beat. " +
         "kind: score-vs-function | delight | voice | pacing | continuity | other.")]
     public string AddProseLesson(
-        [Description("Scope: 'global', 'strand:<slug>', or 'beat:<guid>'")] string scope,
+        [Description("Scope: 'global', 'node:<slug>', or 'beat:<guid>'")] string scope,
         [Description("Kind: score-vs-function | delight | voice | pacing | continuity | other")] string kind,
         [Description("The ruling text — what reviewers must respect.")] string text)
     {
@@ -357,9 +357,9 @@ public class WorldModellingTools(
         "List prose lessons from the editorial memory store. " +
         "When scope is omitted, returns all lessons across all scopes. " +
         "When scope is provided, returns only lessons whose scope starts with that prefix " +
-        "(e.g. 'global' for all global lessons, 'strand:my-slug' for a specific strand).")]
+        "(e.g. 'global' for all global lessons, 'node:my-slug' for a specific node).")]
     public string ListProseLessons(
-        [Description("Optional scope filter prefix (e.g. 'global', 'strand:my-slug'). Omit for all.")] string? scope = null)
+        [Description("Optional scope filter prefix (e.g. 'global', 'node:my-slug'). Omit for all.")] string? scope = null)
     {
         var all = proseLessonStore.ListAll();
         if (!string.IsNullOrWhiteSpace(scope))
@@ -380,7 +380,7 @@ public class WorldModellingTools(
     }
 
     [McpServerTool, Description(
-        "Deterministic timeline-consistency check for a strand (RFC 0009 §5). " +
+        "Deterministic timeline-consistency check for a node (RFC 0009 §5). " +
         "Zero LLM calls. " +
         "Detects two violation classes: " +
         "(1) dead-character-acting — an entity whose status is 'dead'/'deceased' appears " +
@@ -388,31 +388,31 @@ public class WorldModellingTools(
         "(2) wound-regression — a healed/none event precedes the injury-onset event for " +
         "the same condition. " +
         "Returns a list of findings with kind, entityId, entityName, beatNumber, detail, severity. " +
-        "Returns an empty array when no events are in the ledger for this strand — never throws.")]
+        "Returns an empty array when no events are in the ledger for this node — never throws.")]
     public async Task<string> CheckTimeline(
-        [Description("Strand slug or GUID")] string slugOrId)
+        [Description("Node slug or GUID")] string slugOrId)
     {
         await using var db = await dbFactory.CreateDbContextAsync();
 
-        Guid strandId;
-        if (Guid.TryParse(slugOrId, out strandId) || Guid.TryParseExact(slugOrId, "N", out strandId))
+        Guid nodeId;
+        if (Guid.TryParse(slugOrId, out nodeId) || Guid.TryParseExact(slugOrId, "N", out nodeId))
         {
             // already have the GUID
         }
         else
         {
-            var strand = await db.Strands.AsNoTracking()
-                .FirstOrDefaultAsync(s => s.Slug == slugOrId || s.StrandCode == slugOrId);
-            if (strand == null)
-                return JsonSerializer.Serialize(new { error = "strand_not_found", slugOrId }, CanonTools.JsonOpts);
-            strandId = strand.Id;
+            var node = await db.Nodes.AsNoTracking()
+                .FirstOrDefaultAsync(s => s.Slug == slugOrId || s.NodeCode == slugOrId);
+            if (node == null)
+                return JsonSerializer.Serialize(new { error = "node_not_found", slugOrId }, CanonTools.JsonOpts);
+            nodeId = node.Id;
         }
 
-        var findings = await timelineSvc.CheckStrandAsync(strandId);
+        var findings = await timelineSvc.CheckNodeAsync(nodeId);
 
         return JsonSerializer.Serialize(new
         {
-            strand_id = strandId,
+            node_id = nodeId,
             count     = findings.Count,
             findings  = findings.Select(f => new
             {

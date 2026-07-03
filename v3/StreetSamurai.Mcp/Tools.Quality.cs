@@ -34,7 +34,7 @@ public class QualityTools
     private readonly IChapterRepository chapters;
     private readonly MotifService motifs;
     private readonly SettingsService settings;
-    private readonly StrandReviewService reviewer;
+    private readonly NodeReviewService reviewer;
     private readonly CanonContradictionService canonChecker;
     private readonly SemanticFidelityService fidelity;
     private readonly StructuralDiagnosticService structural;
@@ -48,7 +48,7 @@ public class QualityTools
         IChapterRepository chapters,
         MotifService motifs,
         SettingsService settings,
-        StrandReviewService reviewer,
+        NodeReviewService reviewer,
         CanonContradictionService canonChecker,
         SemanticFidelityService fidelity,
         StructuralDiagnosticService structural,
@@ -110,10 +110,10 @@ public class QualityTools
         return JsonSerializer.Serialize(new { book_id = bookId, finding_count = report.Count, findings = report }, CanonTools.JsonOpts);
     }
 
-    /// <summary>Run a sampled Legion review panel against a strand. Automatically runs structural pre-flight first — blocking failures (missing antagonist cost, passive protagonist, etc.) halt the review and tell you what to fix. Non-blocking warnings are appended to the report. Casts score-only ballots and a few full prose upgrades. Returns the pooled mean, SD, 95% CI, per-beat heat map, clustered weakness tags, and the Pareto/contested/seam report.</summary>
-    [McpServerTool, Description("Run the sampled Legion review panel against a strand. STRUCTURAL PRE-FLIGHT runs first: if blocking failures are found (missing antagonist cost, passive protagonist, purely-stated stakes, >70% exposition), the review is blocked and returns the diagnosis instead of ballots — fix the structure first. Non-blocking warnings are always appended to the report. Stratified personas cast score-only ballots then the most informative are upgraded to full prose. Use the 'effort' tier to scale cost to importance. BRAIN: by default ballots run on the CLOUD trusted-4 panel; set use_local=true to run them on the LOCAL LLM instead (Ollama — free, no API tokens, but ONE model = no temperament diversity, so local scores are a SEPARATE baseline, not comparable to cloud means). The response always states which brain ran ('brain': 'cloud'|'local', plus 'model'). Returns: blocked (bool), brain, model, mean_score, SD, CI, report_markdown (includes structural findings), synopsis. GOTCHA: do not edit beats while a review is running. Alias: also accepts strand id (GUID) for the strandIdOrSlug param.")]
-    public async Task<string> ReviewStrand(
-        [Description("Strand id (GUID) or slug.")] string strandIdOrSlug,
+    /// <summary>Run a sampled Legion review panel against a node. Automatically runs structural pre-flight first — blocking failures (missing antagonist cost, passive protagonist, etc.) halt the review and tell you what to fix. Non-blocking warnings are appended to the report. Casts score-only ballots and a few full prose upgrades. Returns the pooled mean, SD, 95% CI, per-beat heat map, clustered weakness tags, and the Pareto/contested/seam report.</summary>
+    [McpServerTool, Description("Run the sampled Legion review panel against a node. STRUCTURAL PRE-FLIGHT runs first: if blocking failures are found (missing antagonist cost, passive protagonist, purely-stated stakes, >70% exposition), the review is blocked and returns the diagnosis instead of ballots — fix the structure first. Non-blocking warnings are always appended to the report. Stratified personas cast score-only ballots then the most informative are upgraded to full prose. Use the 'effort' tier to scale cost to importance. BRAIN: by default ballots run on the CLOUD trusted-4 panel; set use_local=true to run them on the LOCAL LLM instead (Ollama — free, no API tokens, but ONE model = no temperament diversity, so local scores are a SEPARATE baseline, not comparable to cloud means). The response always states which brain ran ('brain': 'cloud'|'local', plus 'model'). Returns: blocked (bool), brain, model, mean_score, SD, CI, report_markdown (includes structural findings), synopsis. GOTCHA: do not edit beats while a review is running. Alias: also accepts node id (GUID) for the nodeIdOrSlug param.")]
+    public async Task<string> ReviewNode(
+        [Description("Node id (GUID) or slug.")] string nodeIdOrSlug,
         [Description("Number of score-only ballots to cast. 0 = use the effort tier (if given) or the ReviewBallots setting (default 20). A non-zero value overrides the tier.")] int ballots = 0,
         [Description("Number of full prose reviews to write (upgraded from ballots). 0 = use the effort tier (if given) else 0. A non-zero value overrides the tier.")] int prose = 0,
         [Description("Set true to skip structural pre-flight and run ballots unconditionally. Use only when you have already reviewed and accepted the structural findings.")] bool skipDiagnosis = false,
@@ -126,14 +126,14 @@ public class QualityTools
             return JsonSerializer.Serialize(new { error = "unknown_effort", effort, known = ReviewEffortProfile.KnownTiers }, CanonTools.JsonOpts);
 
         await using var db = await dbFactory.CreateDbContextAsync();
-        Guid strandId;
-        if (Guid.TryParse(strandIdOrSlug, out var g))
-            strandId = g;
+        Guid nodeId;
+        if (Guid.TryParse(nodeIdOrSlug, out var g))
+            nodeId = g;
         else
         {
-            var s = await db.Strands.AsNoTracking().FirstOrDefaultAsync(x => x.Slug == strandIdOrSlug || x.StrandCode == strandIdOrSlug);
-            if (s == null) return JsonSerializer.Serialize(new { error = "strand_not_found", strandIdOrSlug }, CanonTools.JsonOpts);
-            strandId = s.Id;
+            var s = await db.Nodes.AsNoTracking().FirstOrDefaultAsync(x => x.Slug == nodeIdOrSlug || x.NodeCode == nodeIdOrSlug);
+            if (s == null) return JsonSerializer.Serialize(new { error = "node_not_found", nodeIdOrSlug }, CanonTools.JsonOpts);
+            nodeId = s.Id;
         }
 
         // Explicit ballots/prose win over the tier; otherwise the tier supplies them.
@@ -141,7 +141,7 @@ public class QualityTools
         var effProse   = prose   > 0 ? prose   : (profile?.Prose ?? 0);
         var effSkip    = skipDiagnosis || (profile?.SkipDiagnosis ?? false);
 
-        var result = await reviewer.RunSampledReviewAsync(strandId, effBallots, effProse < 0 ? 0 : effProse,
+        var result = await reviewer.RunSampledReviewAsync(nodeId, effBallots, effProse < 0 ? 0 : effProse,
             skipDiagnosis: effSkip,
             cheapModels: profile?.CheapModels ?? false,
             allowedProvidersOverride: profile?.AllowedProviders,
@@ -153,7 +153,7 @@ public class QualityTools
         {
             try
             {
-                var summary = await reviewer.GenerateSummaryAsync(strandId, useLocal: useLocal, localModelOverride: localModel);
+                var summary = await reviewer.GenerateSummaryAsync(nodeId, useLocal: useLocal, localModelOverride: localModel);
                 synopsis = summary.SummaryMarkdown;
             }
             catch { }
@@ -187,24 +187,24 @@ public class QualityTools
         }, CanonTools.JsonOpts);
     }
 
-    /// <summary>Sweep a strand's prose against the canon database, queue contradictions as CANON-CONTRADICTION findings, and return the list. Pass propose_fixes=true to also draft suggested rewrites for each contradiction.</summary>
-    [McpServerTool, Description("Sweep a strand's prose against the entire canon database (entities, locations, weapons, etc.) and queue each contradiction as a CANON-CONTRADICTION finding with an optional proposed fix. Returns the list of contradictions found. Use list_findings / apply_finding / set_finding_status to manage them afterward. Accepts strand id (GUID) or slug.")]
+    /// <summary>Sweep a node's prose against the canon database, queue contradictions as CANON-CONTRADICTION findings, and return the list. Pass propose_fixes=true to also draft suggested rewrites for each contradiction.</summary>
+    [McpServerTool, Description("Sweep a node's prose against the entire canon database (entities, locations, weapons, etc.) and queue each contradiction as a CANON-CONTRADICTION finding with an optional proposed fix. Returns the list of contradictions found. Use list_findings / apply_finding / set_finding_status to manage them afterward. Accepts node id (GUID) or slug.")]
     public async Task<string> CheckCanon(
-        [Description("Strand id (GUID) or slug.")] string strandIdOrSlug,
+        [Description("Node id (GUID) or slug.")] string nodeIdOrSlug,
         [Description("Set to true to also draft a suggested rewrite for each contradiction found.")] bool proposeFixes = false)
     {
         await using var db = await dbFactory.CreateDbContextAsync();
-        Guid strandId;
-        if (Guid.TryParse(strandIdOrSlug, out var g))
-            strandId = g;
+        Guid nodeId;
+        if (Guid.TryParse(nodeIdOrSlug, out var g))
+            nodeId = g;
         else
         {
-            var s = await db.Strands.AsNoTracking().FirstOrDefaultAsync(x => x.Slug == strandIdOrSlug || x.StrandCode == strandIdOrSlug);
-            if (s == null) return JsonSerializer.Serialize(new { error = "strand_not_found", strandIdOrSlug }, CanonTools.JsonOpts);
-            strandId = s.Id;
+            var s = await db.Nodes.AsNoTracking().FirstOrDefaultAsync(x => x.Slug == nodeIdOrSlug || x.NodeCode == nodeIdOrSlug);
+            if (s == null) return JsonSerializer.Serialize(new { error = "node_not_found", nodeIdOrSlug }, CanonTools.JsonOpts);
+            nodeId = s.Id;
         }
 
-        var result = await canonChecker.CheckStrandAsync(strandId, proposeFixes);
+        var result = await canonChecker.CheckNodeAsync(nodeId, proposeFixes);
         return JsonSerializer.Serialize(new
         {
             slug             = result.Slug,
@@ -222,26 +222,26 @@ public class QualityTools
     }
 
     /// <summary>Pre-flight structural analysis before running the review panel. Runs 12 targeted checks in parallel (antagonist cost, protagonist behavior change, stakes embodiment, exposition density, character embodiment, pacing gear change, affectation lines, dramatic question, passive protagonist, character function, dialogue subtext, jargon front-loading). Returns Pass/Warn/Fail per check with evidence quoted from the text and a concrete fix. Blocking failures mean: fix the structure before running 60 ballots — structural issues cap scores regardless of prose quality.</summary>
-    [McpServerTool, Description("Pre-flight structural analysis before running the review panel. Runs 12 targeted checks in parallel and returns Pass/Warn/Fail for each with evidence (a quote from the text) and a concrete one-action fix. Blocking failures (antagonist cost, protagonist behavior change, stakes embodiment, exposition density) mean the chapter is structurally unsound and will score in the 70s regardless of prose quality. Fix those first, then run review_strand. Accepts strand id (GUID) or slug. max_chars controls how much of the assembled strand text each check sees (default 40000 chars ≈ 10k tokens — covers most chapter-length strands; lower to reduce cost, raise for very long strands).")]
-    public async Task<string> DiagnoseStrand(
-        [Description("Strand id (GUID) or slug.")] string strandIdOrSlug,
-        [Description("Max characters of assembled strand text each check reads. Default 40000 (~10k tokens). Lower to reduce cost; raise for very long strands (max practical: ~160000).")] int maxChars = 40000)
+    [McpServerTool, Description("Pre-flight structural analysis before running the review panel. Runs 12 targeted checks in parallel and returns Pass/Warn/Fail for each with evidence (a quote from the text) and a concrete one-action fix. Blocking failures (antagonist cost, protagonist behavior change, stakes embodiment, exposition density) mean the chapter is structurally unsound and will score in the 70s regardless of prose quality. Fix those first, then run review_node. Accepts node id (GUID) or slug. max_chars controls how much of the assembled node text each check sees (default 40000 chars ≈ 10k tokens — covers most chapter-length nodes; lower to reduce cost, raise for very long nodes).")]
+    public async Task<string> DiagnoseNode(
+        [Description("Node id (GUID) or slug.")] string nodeIdOrSlug,
+        [Description("Max characters of assembled node text each check reads. Default 40000 (~10k tokens). Lower to reduce cost; raise for very long nodes (max practical: ~160000).")] int maxChars = 40000)
     {
         await using var db = await dbFactory.CreateDbContextAsync();
-        Guid strandId;
-        if (Guid.TryParse(strandIdOrSlug, out var g))
-            strandId = g;
+        Guid nodeId;
+        if (Guid.TryParse(nodeIdOrSlug, out var g))
+            nodeId = g;
         else
         {
-            var s = await db.Strands.AsNoTracking().FirstOrDefaultAsync(x => x.Slug == strandIdOrSlug || x.StrandCode == strandIdOrSlug);
-            if (s == null) return JsonSerializer.Serialize(new { error = "strand_not_found", strandIdOrSlug }, CanonTools.JsonOpts);
-            strandId = s.Id;
+            var s = await db.Nodes.AsNoTracking().FirstOrDefaultAsync(x => x.Slug == nodeIdOrSlug || x.NodeCode == nodeIdOrSlug);
+            if (s == null) return JsonSerializer.Serialize(new { error = "node_not_found", nodeIdOrSlug }, CanonTools.JsonOpts);
+            nodeId = s.Id;
         }
 
-        var result = await structural.DiagnoseStrandAsync(strandId, maxChars);
+        var result = await structural.DiagnoseNodeAsync(nodeId, maxChars);
         return JsonSerializer.Serialize(new
         {
-            strand_id    = result.StrandId,
+            node_id    = result.NodeId,
             slug         = result.Slug,
             title        = result.Title,
             pass         = result.PassCount,
@@ -261,28 +261,28 @@ public class QualityTools
         }, CanonTools.JsonOpts);
     }
 
-    /// <summary>Emotional Intelligence Examination (SS-A15). Scores prose against an 8-dimension, 0–4 rubric — per beat, character-aware (Want/Need/Wound/Flaw), register-adaptive (CODA vs JOY/SORROW/Fantasy). Returns EmotionalDepthScore 0–100, per-dimension scores with strongest/weakest evidence and beat-scoped craft fixes, a beat-by-beat depth curve (Standard/Deep), and character ledgers. Blocking dimensions (WantNeedDivergence, CostFeltNotAsserted) file Findings. Does NOT alter Strand.Score or the 82/85 gate.</summary>
-    [McpServerTool, Description("Emotional Intelligence Examination (SS-A15). Scores prose against an 8-dimension, 0–4 rubric — per beat, character-aware (Want/Need/Wound/Flaw from the strand bible), register-adaptive (CODA/JOY/SORROW/Fantasy anchors). Returns: EmotionalDepthScore 0–100, per-dimension 0–4 scores with strongest evidence, weakest evidence, weakest beat number, and a beat-scoped craft fix; a per-beat emotional depth curve (Standard/Deep effort); character ledgers. Blocking dimensions (WantNeedDivergence=want/need gap, CostFeltNotAsserted=wins felt not stated) file Findings at /findings. Does NOT change Strand.Score or the 82/85 reader-panel gate. Accepts strand id (GUID) or slug.")]
+    /// <summary>Emotional Intelligence Examination (SS-A15). Scores prose against an 8-dimension, 0–4 rubric — per beat, character-aware (Want/Need/Wound/Flaw), register-adaptive (CODA vs JOY/SORROW/Fantasy). Returns EmotionalDepthScore 0–100, per-dimension scores with strongest/weakest evidence and beat-scoped craft fixes, a beat-by-beat depth curve (Standard/Deep), and character ledgers. Blocking dimensions (WantNeedDivergence, CostFeltNotAsserted) file Findings. Does NOT alter Node.Score or the 82/85 gate.</summary>
+    [McpServerTool, Description("Emotional Intelligence Examination (SS-A15). Scores prose against an 8-dimension, 0–4 rubric — per beat, character-aware (Want/Need/Wound/Flaw from the node bible), register-adaptive (CODA/JOY/SORROW/Fantasy anchors). Returns: EmotionalDepthScore 0–100, per-dimension 0–4 scores with strongest evidence, weakest evidence, weakest beat number, and a beat-scoped craft fix; a per-beat emotional depth curve (Standard/Deep effort); character ledgers. Blocking dimensions (WantNeedDivergence=want/need gap, CostFeltNotAsserted=wins felt not stated) file Findings at /findings. Does NOT change Node.Score or the 82/85 reader-panel gate. Accepts node id (GUID) or slug.")]
     public async Task<string> ExamineEmotionalDepth(
-        [Description("Strand id (GUID) or slug.")] string strandIdOrSlug,
+        [Description("Node id (GUID) or slug.")] string nodeIdOrSlug,
         [Description("Effort tier: 'draft' (Pass 1 only, cheapest), 'standard' (Pass 1 + beat curve, default), 'deep' (Pass 1 + beat curve + ledger refresh + weakest fixes).")] string effort = "standard",
-        [Description("Max characters of assembled strand text each check reads. Default 40000 (~10k tokens).")] int maxChars = 40000)
+        [Description("Max characters of assembled node text each check reads. Default 40000 (~10k tokens).")] int maxChars = 40000)
     {
         await using var db = await dbFactory.CreateDbContextAsync();
-        Guid strandId;
-        if (Guid.TryParse(strandIdOrSlug, out var g))
-            strandId = g;
+        Guid nodeId;
+        if (Guid.TryParse(nodeIdOrSlug, out var g))
+            nodeId = g;
         else
         {
-            var s = await db.Strands.AsNoTracking().FirstOrDefaultAsync(x => x.Slug == strandIdOrSlug || x.StrandCode == strandIdOrSlug);
-            if (s == null) return JsonSerializer.Serialize(new { error = "strand_not_found", strandIdOrSlug }, CanonTools.JsonOpts);
-            strandId = s.Id;
+            var s = await db.Nodes.AsNoTracking().FirstOrDefaultAsync(x => x.Slug == nodeIdOrSlug || x.NodeCode == nodeIdOrSlug);
+            if (s == null) return JsonSerializer.Serialize(new { error = "node_not_found", nodeIdOrSlug }, CanonTools.JsonOpts);
+            nodeId = s.Id;
         }
 
-        var result = await emotionalDepth.ExamineStrandAsync(strandId, effort, maxChars);
+        var result = await emotionalDepth.ExamineNodeAsync(nodeId, effort, maxChars);
         return JsonSerializer.Serialize(new
         {
-            strand_id       = result.StrandId,
+            node_id       = result.NodeId,
             slug            = result.Slug,
             title           = result.Title,
             emotional_depth = result.EmotionalDepthScore,
@@ -337,35 +337,35 @@ public class QualityTools
         }, CanonTools.JsonOpts);
     }
 
-    /// <summary>Return the stored review summary for a strand — the synthesized "what readers think" aggregate written after the last review run. Cheaper than a new review; stale if the strand has been edited since.</summary>
-    [McpServerTool, Description("Return the stored review summary for a strand — the synthesized aggregate of what readers liked, recurring gripes, and concrete improvement suggestions, written by the judge after the last review run. Includes average score, review count, and content hash so you can tell whether the summary is stale (strand was edited after the last run). Call review_strand to refresh. Accepts strand id (GUID) or slug.")]
+    /// <summary>Return the stored review summary for a node — the synthesized "what readers think" aggregate written after the last review run. Cheaper than a new review; stale if the node has been edited since.</summary>
+    [McpServerTool, Description("Return the stored review summary for a node — the synthesized aggregate of what readers liked, recurring gripes, and concrete improvement suggestions, written by the judge after the last review run. Includes average score, review count, and content hash so you can tell whether the summary is stale (node was edited after the last run). Call review_node to refresh. Accepts node id (GUID) or slug.")]
     public async Task<string> GetReviewSummary(
-        [Description("Strand id (GUID) or slug.")] string strandIdOrSlug)
+        [Description("Node id (GUID) or slug.")] string nodeIdOrSlug)
     {
         await using var db = await dbFactory.CreateDbContextAsync();
-        Guid strandId;
-        if (Guid.TryParse(strandIdOrSlug, out var g))
-            strandId = g;
+        Guid nodeId;
+        if (Guid.TryParse(nodeIdOrSlug, out var g))
+            nodeId = g;
         else
         {
-            var s = await db.Strands.AsNoTracking().FirstOrDefaultAsync(x => x.Slug == strandIdOrSlug || x.StrandCode == strandIdOrSlug);
-            if (s == null) return JsonSerializer.Serialize(new { error = "strand_not_found", strandIdOrSlug }, CanonTools.JsonOpts);
-            strandId = s.Id;
+            var s = await db.Nodes.AsNoTracking().FirstOrDefaultAsync(x => x.Slug == nodeIdOrSlug || x.NodeCode == nodeIdOrSlug);
+            if (s == null) return JsonSerializer.Serialize(new { error = "node_not_found", nodeIdOrSlug }, CanonTools.JsonOpts);
+            nodeId = s.Id;
         }
 
-        var summary = await db.StrandReviewSummaries
+        var summary = await db.NodeReviewSummaries
             .AsNoTracking()
-            .Where(r => r.StrandId == strandId)
+            .Where(r => r.NodeId == nodeId)
             .OrderByDescending(r => r.GeneratedAt)
             .FirstOrDefaultAsync();
 
         if (summary == null)
-            return JsonSerializer.Serialize(new { has_summary = false, strand_id = strandId }, CanonTools.JsonOpts);
+            return JsonSerializer.Serialize(new { has_summary = false, node_id = nodeId }, CanonTools.JsonOpts);
 
         return JsonSerializer.Serialize(new
         {
             has_summary      = true,
-            strand_id        = summary.StrandId,
+            node_id        = summary.NodeId,
             generated_at     = summary.GeneratedAt,
             avg_score        = Math.Round(summary.AvgScore, 2),
             review_count     = summary.ReviewCount,
@@ -375,25 +375,25 @@ public class QualityTools
         }, CanonTools.JsonOpts);
     }
 
-    /// <summary>List individual ballot reviews for a strand — one row per persona reader.</summary>
-    [McpServerTool, Description("List individual ballot reviews for a strand — one row per persona reader, showing persona name, provider, score, flow score (if study mode), improvements, and content hash. Use to inspect which personas scored low and what they said, or to compare how different providers voted. Results are sorted most-recent-first. Accepts strand id (GUID) or slug.")]
-    public async Task<string> ListStrandReviews(
-        [Description("Strand id (GUID) or slug.")] string strandIdOrSlug,
+    /// <summary>List individual ballot reviews for a node — one row per persona reader.</summary>
+    [McpServerTool, Description("List individual ballot reviews for a node — one row per persona reader, showing persona name, provider, score, flow score (if study mode), improvements, and content hash. Use to inspect which personas scored low and what they said, or to compare how different providers voted. Results are sorted most-recent-first. Accepts node id (GUID) or slug.")]
+    public async Task<string> ListNodeReviews(
+        [Description("Node id (GUID) or slug.")] string nodeIdOrSlug,
         [Description("Only return reviews from this content hash (i.e. one specific review run). Leave empty for all reviews.")] string contentHash = "",
         [Description("Maximum rows to return. Default 50.")] int limit = 50)
     {
         await using var db = await dbFactory.CreateDbContextAsync();
-        Guid strandId;
-        if (Guid.TryParse(strandIdOrSlug, out var g))
-            strandId = g;
+        Guid nodeId;
+        if (Guid.TryParse(nodeIdOrSlug, out var g))
+            nodeId = g;
         else
         {
-            var s = await db.Strands.AsNoTracking().FirstOrDefaultAsync(x => x.Slug == strandIdOrSlug || x.StrandCode == strandIdOrSlug);
-            if (s == null) return JsonSerializer.Serialize(new { error = "strand_not_found", strandIdOrSlug }, CanonTools.JsonOpts);
-            strandId = s.Id;
+            var s = await db.Nodes.AsNoTracking().FirstOrDefaultAsync(x => x.Slug == nodeIdOrSlug || x.NodeCode == nodeIdOrSlug);
+            if (s == null) return JsonSerializer.Serialize(new { error = "node_not_found", nodeIdOrSlug }, CanonTools.JsonOpts);
+            nodeId = s.Id;
         }
 
-        var q = db.StrandReviews.AsNoTracking().Where(r => r.StrandId == strandId);
+        var q = db.NodeReviews.AsNoTracking().Where(r => r.NodeId == nodeId);
         if (!string.IsNullOrWhiteSpace(contentHash)) q = q.Where(r => r.ContentHash == contentHash);
 
         var reviews = await q
@@ -421,35 +421,35 @@ public class QualityTools
         var avg = reviews.Count > 0 ? reviews.Average(r => r.score) : 0;
         return JsonSerializer.Serialize(new
         {
-            strand_id    = strandId,
+            node_id    = nodeId,
             count        = reviews.Count,
             avg_score    = reviews.Count > 0 ? Math.Round(avg, 2) : (double?)null,
             reviews,
         }, CanonTools.JsonOpts);
     }
 
-    /// <summary>Check the semantic fidelity of a strand — detect the Goodhart's Law gap where beats score high but drift from the story's original meaning. Returns bible alignment (prose vs story Seed/Synopsis) and intent alignment (prose vs beat Synopsis) for each scored beat, with SEMANTIC-DRIFT findings filed for violations. Run after review_strand to verify the score reflects real quality, not metric gaming.</summary>
-    [McpServerTool, Description("Check the Semantic Fidelity Gap for a strand — Goodhart's Law in prose. Detects beats that score high on the Legion review metric but have drifted from the story's original meaning. Two checks: (1) Bible alignment: cosine similarity between each beat's prose and the strand's Seed/Synopsis — a high-scoring beat that no longer resembles the story it was born from is gaming the metric. (2) Intent alignment: cosine similarity between each beat's Synopsis (stated purpose) and its actual prose — drift here means the rewrite served reviewer patterns, not the beat's purpose. Embeds beats (drift-skipped), queries alignment, files SEMANTIC-DRIFT findings for violators, and returns the full report. Accepts strand id (GUID) or slug.")]
+    /// <summary>Check the semantic fidelity of a node — detect the Goodhart's Law gap where beats score high but drift from the story's original meaning. Returns bible alignment (prose vs story Seed/Synopsis) and intent alignment (prose vs beat Synopsis) for each scored beat, with SEMANTIC-DRIFT findings filed for violations. Run after review_node to verify the score reflects real quality, not metric gaming.</summary>
+    [McpServerTool, Description("Check the Semantic Fidelity Gap for a node — Goodhart's Law in prose. Detects beats that score high on the Legion review metric but have drifted from the story's original meaning. Two checks: (1) Bible alignment: cosine similarity between each beat's prose and the node's Seed/Synopsis — a high-scoring beat that no longer resembles the story it was born from is gaming the metric. (2) Intent alignment: cosine similarity between each beat's Synopsis (stated purpose) and its actual prose — drift here means the rewrite served reviewer patterns, not the beat's purpose. Embeds beats (drift-skipped), queries alignment, files SEMANTIC-DRIFT findings for violators, and returns the full report. Accepts node id (GUID) or slug.")]
     public async Task<string> CheckSemanticFidelity(
-        [Description("Strand id (GUID) or slug.")] string strandIdOrSlug)
+        [Description("Node id (GUID) or slug.")] string nodeIdOrSlug)
     {
         await using var db = await dbFactory.CreateDbContextAsync();
-        Guid strandId;
-        if (Guid.TryParse(strandIdOrSlug, out var g))
-            strandId = g;
+        Guid nodeId;
+        if (Guid.TryParse(nodeIdOrSlug, out var g))
+            nodeId = g;
         else
         {
-            var s = await db.Strands.AsNoTracking().FirstOrDefaultAsync(x => x.Slug == strandIdOrSlug || x.StrandCode == strandIdOrSlug);
-            if (s == null) return JsonSerializer.Serialize(new { error = "strand_not_found", strandIdOrSlug }, CanonTools.JsonOpts);
-            strandId = s.Id;
+            var s = await db.Nodes.AsNoTracking().FirstOrDefaultAsync(x => x.Slug == nodeIdOrSlug || x.NodeCode == nodeIdOrSlug);
+            if (s == null) return JsonSerializer.Serialize(new { error = "node_not_found", nodeIdOrSlug }, CanonTools.JsonOpts);
+            nodeId = s.Id;
         }
 
-        var report = await fidelity.AuditStrandAsync(strandId);
+        var report = await fidelity.AuditNodeAsync(nodeId);
         return JsonSerializer.Serialize(new
         {
-            strand_id             = report.StrandId,
+            node_id             = report.NodeId,
             slug                  = report.Slug,
-            strand_score          = report.StrandScore,
+            node_score          = report.NodeScore,
             beats_checked         = report.BeatsChecked,
             beats_scored          = report.BeatsScored,
             mean_bible_alignment  = Math.Round(report.MeanBibleAlignment, 4),

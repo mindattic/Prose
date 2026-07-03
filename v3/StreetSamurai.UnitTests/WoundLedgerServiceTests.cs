@@ -27,7 +27,7 @@ sealed class SqliteWoundLedgerService : WoundLedgerService
                 BodyLocation        TEXT    NOT NULL,
                 Description         TEXT    NOT NULL,
                 Severity            TEXT    NOT NULL,
-                SourceStrandSlug    TEXT    NULL,
+                SourceNodeSlug    TEXT    NULL,
                 SourceBeatId        TEXT    NULL,
                 InWorldDate         TEXT    NULL,
                 ExpectedHealingDays INTEGER NOT NULL DEFAULT 14,
@@ -41,7 +41,7 @@ sealed class SqliteWoundLedgerService : WoundLedgerService
 
     public override async Task<long> AddAsync(
         Guid characterId, string bodyLocation, string description, string severity,
-        string? sourceStrandSlug = null, Guid? sourceBeatId = null, DateTime? inWorldDate = null,
+        string? sourceNodeSlug = null, Guid? sourceBeatId = null, DateTime? inWorldDate = null,
         int expectedHealingDays = 14, string status = "fresh", string residualEffect = "",
         CancellationToken ct = default)
     {
@@ -53,7 +53,7 @@ sealed class SqliteWoundLedgerService : WoundLedgerService
 
         cmd.CommandText = """
             INSERT INTO WoundLedger
-                (CharacterId, BodyLocation, Description, Severity, SourceStrandSlug, SourceBeatId, InWorldDate, ExpectedHealingDays, Status, ResidualEffect)
+                (CharacterId, BodyLocation, Description, Severity, SourceNodeSlug, SourceBeatId, InWorldDate, ExpectedHealingDays, Status, ResidualEffect)
             VALUES
                 (@charId, @loc, @desc, @sev, @slug, @beatId, @date, @days, @status, @residual)
             """;
@@ -70,7 +70,7 @@ sealed class SqliteWoundLedgerService : WoundLedgerService
         AddParam("@loc", bodyLocation);
         AddParam("@desc", description);
         AddParam("@sev", severity);
-        AddParam("@slug", sourceStrandSlug);
+        AddParam("@slug", sourceNodeSlug);
         AddParam("@beatId", sourceBeatId?.ToString());
         AddParam("@date", inWorldDate?.ToUniversalTime().ToString("yyyy-MM-ddTHH:mm:ss.fffZ"));
         AddParam("@days", expectedHealingDays);
@@ -94,7 +94,7 @@ sealed class SqliteWoundLedgerService : WoundLedgerService
 
         cmd.CommandText = """
             SELECT Id, CharacterId, BodyLocation, Description, Severity,
-                   SourceStrandSlug, SourceBeatId, InWorldDate, ExpectedHealingDays, Status, ResidualEffect
+                   SourceNodeSlug, SourceBeatId, InWorldDate, ExpectedHealingDays, Status, ResidualEffect
             FROM WoundLedger
             WHERE CharacterId = @charId AND Status NOT IN ('scarred','healed')
             """;
@@ -167,13 +167,13 @@ public class WoundLedgerServiceTests
         string bodyLocation = "left arm",
         string description = "gunshot wound",
         string severity = "serious",
-        string? sourceStrandSlug = null,
+        string? sourceNodeSlug = null,
         DateTime? inWorldDate = null,
         int expectedHealingDays = 14,
         string status = "fresh",
         string residualEffect = "") =>
         await svc.AddAsync(CharId, bodyLocation, description, severity,
-            sourceStrandSlug, sourceBeatId: null, inWorldDate, expectedHealingDays, status, residualEffect);
+            sourceNodeSlug, sourceBeatId: null, inWorldDate, expectedHealingDays, status, residualEffect);
 
     sealed class PinnedSqliteFactory(DbContextOptions<StreetSamuraiDbContext> options)
         : IDbContextFactory<StreetSamuraiDbContext>
@@ -207,10 +207,10 @@ public class WoundLedgerServiceTests
     }
 
     [Test]
-    public async Task WoundWithSourceStrandSlug_BlockContainsSource()
+    public async Task WoundWithSourceNodeSlug_BlockContainsSource()
     {
         var charId = Guid.Parse("cccccccc-cccc-cccc-cccc-cccccccccccc");
-        await svc.AddAsync(charId, "left shoulder", "shrapnel", "severe", sourceStrandSlug: "BCODA");
+        await svc.AddAsync(charId, "left shoulder", "shrapnel", "severe", sourceNodeSlug: "BCODA");
 
         var block = await svc.BuildPromptBlockAsync(charId);
 

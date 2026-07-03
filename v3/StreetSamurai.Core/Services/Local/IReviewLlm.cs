@@ -1,7 +1,7 @@
 namespace StreetSamurai.Core.Services.Local;
 
 /// <summary>
-/// The single transport seam the strand-review path calls through. Mirrors the
+/// The single transport seam the node-review path calls through. Mirrors the
 /// <c>LegionClient.CallAsync(provider, key, model, system, user, …)</c> signature
 /// exactly, so swapping the cloud panel for a local model is a binding choice, not
 /// a rewrite of the review machinery.

@@ -12,11 +12,11 @@ namespace StreetSamurai.UnitTests;
 /// All tests run against an in-memory SQLite database — no SQL Server required.
 ///
 /// Tests prove:
-///   1. A clean strand (no events) yields zero findings.
+///   1. A clean node (no events) yields zero findings.
 ///   2. DETECTION 1 fires when a dead character appears in a later beat
 ///      (entity has status=dead at story-time T1; same entity is mentioned in
 ///       a beat whose EntityStateEvent story-time is T2 > T1).
-///   3. A strand where the only event is an injury (no healed-before-injured) yields
+///   3. A node where the only event is an injury (no healed-before-injured) yields
 ///      zero wound-regression findings.
 /// </summary>
 [TestFixture]
@@ -47,59 +47,59 @@ public class TimelineConsistencyServiceTests
     // ── helpers ─────────────────────────────────────────────────────────────
 
     /// <summary>
-    /// Seed a minimal strand with two beats and return the strand ID and both beat IDs.
+    /// Seed a minimal node with two beats and return the node ID and both beat IDs.
     /// Beat A is at sort position 1.0, Beat B at 2.0.
     /// </summary>
-    private async Task<(Guid StrandId, Guid BeatAId, Guid BeatBId)> SeedStrandAsync(
+    private async Task<(Guid NodeId, Guid BeatAId, Guid BeatBId)> SeedNodeAsync(
         StreetSamuraiDbContext db)
     {
-        var strandId = Guid.CreateVersion7();
+        var nodeId = Guid.CreateVersion7();
         var beatAId  = Guid.CreateVersion7();
         var beatBId  = Guid.CreateVersion7();
 
-        db.Strands.Add(new Strand
+        db.Nodes.Add(new ChapterNode
         {
-            Id         = strandId,
-            Slug       = $"test-{strandId:N}",
-            Title      = "Test Strand",
+            Id         = nodeId,
+            Slug       = $"test-{nodeId:N}",
+            Title      = "Test Node",
             Kind       = "chapter",
             UniverseId = Universe.GlmzId,
         });
         db.Beats.Add(new Beat { Id = beatAId, Number = 1, Text = "First beat." });
         db.Beats.Add(new Beat { Id = beatBId, Number = 2, Text = "Second beat." });
-        db.StrandBeats.Add(new StrandBeat { StrandId = strandId, BeatId = beatAId, SortKey = 1.0, IsEnabled = true });
-        db.StrandBeats.Add(new StrandBeat { StrandId = strandId, BeatId = beatBId, SortKey = 2.0, IsEnabled = true });
+        db.NodeBeats.Add(new NodeBeat { NodeId = nodeId, BeatId = beatAId, SortKey = 1.0, IsEnabled = true });
+        db.NodeBeats.Add(new NodeBeat { NodeId = nodeId, BeatId = beatBId, SortKey = 2.0, IsEnabled = true });
 
         await db.SaveChangesAsync();
-        return (strandId, beatAId, beatBId);
+        return (nodeId, beatAId, beatBId);
     }
 
     // ── tests ────────────────────────────────────────────────────────────────
 
     [Test]
-    public async Task CleanStrand_NoBeats_ReturnsEmpty()
+    public async Task CleanNode_NoBeats_ReturnsEmpty()
     {
-        // A strand with no beats and no events should yield zero findings.
+        // A node with no beats and no events should yield zero findings.
         await using var db = dbFactory.CreateDbContext();
-        var strandId = Guid.CreateVersion7();
-        db.Strands.Add(new Strand
+        var nodeId = Guid.CreateVersion7();
+        db.Nodes.Add(new ChapterNode
         {
-            Id = strandId, Slug = $"empty-{strandId:N}", Title = "Empty",
+            Id = nodeId, Slug = $"empty-{nodeId:N}", Title = "Empty",
             Kind = "chapter", UniverseId = Universe.GlmzId,
         });
         await db.SaveChangesAsync();
 
-        var findings = await svc.CheckStrandAsync(strandId);
+        var findings = await svc.CheckNodeAsync(nodeId);
 
-        Assert.That(findings, Is.Empty, "a strand with no beats should produce no findings");
+        Assert.That(findings, Is.Empty, "a node with no beats should produce no findings");
     }
 
     [Test]
-    public async Task CleanStrand_BeatsWithNoEvents_ReturnsEmpty()
+    public async Task CleanNode_BeatsWithNoEvents_ReturnsEmpty()
     {
         // Beats exist with entity mentions but no EntityStateEvents → no findings.
         await using var db = dbFactory.CreateDbContext();
-        var (strandId, beatAId, _) = await SeedStrandAsync(db);
+        var (nodeId, beatAId, _) = await SeedNodeAsync(db);
 
         var entityId = Guid.CreateVersion7();
         db.Entities.Add(new Entity
@@ -114,7 +114,7 @@ public class TimelineConsistencyServiceTests
         });
         await db.SaveChangesAsync();
 
-        var findings = await svc.CheckStrandAsync(strandId);
+        var findings = await svc.CheckNodeAsync(nodeId);
 
         Assert.That(findings, Is.Empty, "beats with mentions but no state events should produce no findings");
     }
@@ -125,7 +125,7 @@ public class TimelineConsistencyServiceTests
         // DETECTION 1: entity marked dead at T1; that same entity is mentioned in
         // a beat whose EntityStateEvent story-time is T2 > T1.
         await using var db = dbFactory.CreateDbContext();
-        var (strandId, beatAId, beatBId) = await SeedStrandAsync(db);
+        var (nodeId, beatAId, beatBId) = await SeedNodeAsync(db);
 
         var entityId = Guid.CreateVersion7();
         db.Entities.Add(new Entity
@@ -145,7 +145,7 @@ public class TimelineConsistencyServiceTests
             Verb        = "set",
             NewValue    = "dead",
             AtStoryTime = deathTime,
-            BeatGuid    = beatAId,   // links to the beat in this strand
+            BeatGuid    = beatAId,   // links to the beat in this node
             Source      = "manual",
             UniverseId  = Universe.GlmzId,
         });
@@ -172,7 +172,7 @@ public class TimelineConsistencyServiceTests
 
         await db.SaveChangesAsync();
 
-        var findings = await svc.CheckStrandAsync(strandId);
+        var findings = await svc.CheckNodeAsync(nodeId);
 
         var deadFindings = findings.Where(f => f.Kind == "dead-character-acting").ToList();
         Assert.That(deadFindings, Has.Count.GreaterThanOrEqualTo(1),
@@ -188,7 +188,7 @@ public class TimelineConsistencyServiceTests
     {
         // Entity has a "wounded" status (not dead) — no detection-1 firing.
         await using var db = dbFactory.CreateDbContext();
-        var (strandId, beatAId, _) = await SeedStrandAsync(db);
+        var (nodeId, beatAId, _) = await SeedNodeAsync(db);
 
         var entityId = Guid.CreateVersion7();
         db.Entities.Add(new Entity
@@ -214,7 +214,7 @@ public class TimelineConsistencyServiceTests
         });
         await db.SaveChangesAsync();
 
-        var findings = await svc.CheckStrandAsync(strandId);
+        var findings = await svc.CheckNodeAsync(nodeId);
 
         Assert.That(findings.Where(f => f.Kind == "dead-character-acting"), Is.Empty,
             "a 'wounded' (not dead) status should not trigger dead-character-acting");
@@ -226,7 +226,7 @@ public class TimelineConsistencyServiceTests
         // DETECTION 2: condition.fracture.severity has a "healed" event BEFORE the
         // injury-onset event for the same condition.
         await using var db = dbFactory.CreateDbContext();
-        var (strandId, beatAId, beatBId) = await SeedStrandAsync(db);
+        var (nodeId, beatAId, beatBId) = await SeedNodeAsync(db);
 
         var entityId = Guid.CreateVersion7();
         db.Entities.Add(new Entity
@@ -270,7 +270,7 @@ public class TimelineConsistencyServiceTests
 
         await db.SaveChangesAsync();
 
-        var findings = await svc.CheckStrandAsync(strandId);
+        var findings = await svc.CheckNodeAsync(nodeId);
 
         var regressions = findings.Where(f => f.Kind == "wound-regression").ToList();
         Assert.That(regressions, Has.Count.GreaterThanOrEqualTo(1),

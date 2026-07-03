@@ -8,10 +8,10 @@ using StreetSamurai.Core.Services;
 namespace StreetSamurai.Mcp;
 
 // ── Plant/Payoff tools ────────────────────────────────────────────────────────
-// Four tools for managing narrative plants and their payoffs per strand.
+// Four tools for managing narrative plants and their payoffs per node.
 // Enforces: "reward re-reading without requiring it."
 //
-//   get_plant_payoffs      — list all registered pairs for a strand
+//   get_plant_payoffs      — list all registered pairs for a node
 //   register_plant_payoff  — register a new plant/payoff pair
 //   link_plant_beat        — bind a pair's plant to its actual beat
 //   link_payoff_beat       — bind a pair's payoff to its actual beat
@@ -27,16 +27,16 @@ public class PlantPayoffTools(
 
     // ── get_plant_payoffs ─────────────────────────────────────────────────────
 
-    /// <summary>List all registered plant/payoff pairs for a strand. Plants are narrative details seeded early in the text that pay off later. Returns id, plant_description, payoff_description, category, is_transparent, transparency_note, status (planned/seeded/paid-off), and the beat ids when linked.</summary>
-    [McpServerTool, Description("List all registered plant/payoff pairs for a strand. A plant is a narrative detail seeded early (a behavioral tell, an object, a gloss) that resonates or resolves later — rewarding re-readers without requiring first-timers to catch it. Returns all pairs with their status (planned = not yet written, seeded = plant beat written but no payoff yet, paid-off = both beats written), is_transparent flag (must be true for the payoff to work for cold readers), and transparency_note (what the re-reader gains). Accepts strand id (GUID) or slug.")]
+    /// <summary>List all registered plant/payoff pairs for a node. Plants are narrative details seeded early in the text that pay off later. Returns id, plant_description, payoff_description, category, is_transparent, transparency_note, status (planned/seeded/paid-off), and the beat ids when linked.</summary>
+    [McpServerTool, Description("List all registered plant/payoff pairs for a node. A plant is a narrative detail seeded early (a behavioral tell, an object, a gloss) that resonates or resolves later — rewarding re-readers without requiring first-timers to catch it. Returns all pairs with their status (planned = not yet written, seeded = plant beat written but no payoff yet, paid-off = both beats written), is_transparent flag (must be true for the payoff to work for cold readers), and transparency_note (what the re-reader gains). Accepts node id (GUID) or slug.")]
     public async Task<string> get_plant_payoffs(
-        [Description("Strand id (GUID) or slug.")] string strandIdOrSlug)
+        [Description("Node id (GUID) or slug.")] string nodeIdOrSlug)
     {
-        var strandId = await ResolveStrandAsync(strandIdOrSlug);
-        if (strandId == null)
-            return JsonSerializer.Serialize(new { error = "strand_not_found", strandIdOrSlug }, JsonOpts);
+        var nodeId = await ResolveNodeAsync(nodeIdOrSlug);
+        if (nodeId == null)
+            return JsonSerializer.Serialize(new { error = "node_not_found", nodeIdOrSlug }, JsonOpts);
 
-        var pairs = await plantPayoffs.GetByStrandAsync(strandId.Value);
+        var pairs = await plantPayoffs.GetByNodeAsync(nodeId.Value);
         return JsonSerializer.Serialize(pairs.Select(p => new
         {
             id                 = p.Id,
@@ -54,10 +54,10 @@ public class PlantPayoffTools(
 
     // ── register_plant_payoff ─────────────────────────────────────────────────
 
-    /// <summary>Register a new plant/payoff pair for a strand. Use before or during writing to track what's seeded and where it pays off. Categories: detail (a fact or observation), echo (a mirrored scene with shifted meaning), irony (a line that reads differently knowing the outcome), motif (a recurring symbol), character-truth (a behavioral tell), structural (an architecture element). Returns the new pair's id.</summary>
-    [McpServerTool, Description("Register a new plant/payoff pair for a strand. Call this when you're about to write (or have just written) a detail that will pay off later. plant_description = what is seeded (the observable detail the cold reader sees but doesn't decode); payoff_description = what the re-reader gets (the deeper meaning on return). Category options: detail, echo, irony, motif, character-truth, structural. Optionally link to specific beats by their GUID ids (plant_beat_id, payoff_beat_id). Accepts strand id (GUID) or slug.")]
+    /// <summary>Register a new plant/payoff pair for a node. Use before or during writing to track what's seeded and where it pays off. Categories: detail (a fact or observation), echo (a mirrored scene with shifted meaning), irony (a line that reads differently knowing the outcome), motif (a recurring symbol), character-truth (a behavioral tell), structural (an architecture element). Returns the new pair's id.</summary>
+    [McpServerTool, Description("Register a new plant/payoff pair for a node. Call this when you're about to write (or have just written) a detail that will pay off later. plant_description = what is seeded (the observable detail the cold reader sees but doesn't decode); payoff_description = what the re-reader gets (the deeper meaning on return). Category options: detail, echo, irony, motif, character-truth, structural. Optionally link to specific beats by their GUID ids (plant_beat_id, payoff_beat_id). Accepts node id (GUID) or slug.")]
     public async Task<string> register_plant_payoff(
-        [Description("Strand id (GUID) or slug.")] string strandIdOrSlug,
+        [Description("Node id (GUID) or slug.")] string nodeIdOrSlug,
         [Description("What is seeded — the detail the cold reader encounters but doesn't decode. Example: 'Kyle's hand twitches when he mentions Seo.'")]
         string plantDescription,
         [Description("How it pays off — what the returning reader gets on re-read. Example: 'On re-read, the twitch reveals the mentor was fabricated long before Kyle admits it.'")]
@@ -66,14 +66,14 @@ public class PlantPayoffTools(
         [Description("Beat GUID where the plant is seeded (omit if not yet written).")] string? plantBeatId = null,
         [Description("Beat GUID where the payoff occurs (omit if not yet written).")] string? payoffBeatId = null)
     {
-        var strandId = await ResolveStrandAsync(strandIdOrSlug);
-        if (strandId == null)
-            return JsonSerializer.Serialize(new { error = "strand_not_found", strandIdOrSlug }, JsonOpts);
+        var nodeId = await ResolveNodeAsync(nodeIdOrSlug);
+        if (nodeId == null)
+            return JsonSerializer.Serialize(new { error = "node_not_found", nodeIdOrSlug }, JsonOpts);
 
         try
         {
             var pp = await plantPayoffs.RegisterAsync(
-                strandId.Value,
+                nodeId.Value,
                 plantDescription,
                 payoffDescription,
                 category,
@@ -124,8 +124,8 @@ public class PlantPayoffTools(
 
     // ── set_plant_transparency ────────────────────────────────────────────────
 
-    /// <summary>Mark whether a payoff beat stands alone for cold readers, and record what re-readers gain. is_transparent must be true before a strand passes gateway audit. note should describe specifically what the returning reader understands that the first-timer doesn't.</summary>
-    [McpServerTool, Description("Record whether a payoff beat stands alone for cold readers (is_transparent) and what the re-reader gains (note). is_transparent=true means the payoff makes complete narrative sense without having read/remembered the plant. is_transparent=false is a writing bug — fix the payoff beat before marking the strand gateway-ready. note should name the specific additional layer the returning reader receives.")]
+    /// <summary>Mark whether a payoff beat stands alone for cold readers, and record what re-readers gain. is_transparent must be true before a node passes gateway audit. note should describe specifically what the returning reader understands that the first-timer doesn't.</summary>
+    [McpServerTool, Description("Record whether a payoff beat stands alone for cold readers (is_transparent) and what the re-reader gains (note). is_transparent=true means the payoff makes complete narrative sense without having read/remembered the plant. is_transparent=false is a writing bug — fix the payoff beat before marking the node gateway-ready. note should name the specific additional layer the returning reader receives.")]
     public async Task<string> set_plant_transparency(
         [Description("PlantPayoff id (GUID).")] string plantPayoffId,
         [Description("True = the payoff reads completely for a cold reader; false = it requires catching the plant (writing bug).")] bool isTransparent,
@@ -143,22 +143,22 @@ public class PlantPayoffTools(
 
     // ── audit_plant_payoffs ───────────────────────────────────────────────────
 
-    /// <summary>Audit all plant/payoff pairs for a strand. Returns orphaned plants (seeded but no payoff written), transparency violations (payoff written but is_transparent=false), total coverage, and a gateway-ready verdict. A strand is plant-ready when: all plants have payoffs, and all payoffs are transparent.</summary>
-    [McpServerTool, Description("Audit all plant/payoff pairs for a strand. Returns: total_pairs, planted (seeded in a beat), paid_off (payoff also written), orphaned (planted but no payoff), not_transparent (payoff exists but is_transparent=false), a gateway_plant_ready boolean (all planted pairs have transparent payoffs), and detail lists for each problem category. Fix orphaned plants and transparency issues before the strand passes gateway audit. Accepts strand id (GUID) or slug.")]
+    /// <summary>Audit all plant/payoff pairs for a node. Returns orphaned plants (seeded but no payoff written), transparency violations (payoff written but is_transparent=false), total coverage, and a gateway-ready verdict. A node is plant-ready when: all plants have payoffs, and all payoffs are transparent.</summary>
+    [McpServerTool, Description("Audit all plant/payoff pairs for a node. Returns: total_pairs, planted (seeded in a beat), paid_off (payoff also written), orphaned (planted but no payoff), not_transparent (payoff exists but is_transparent=false), a gateway_plant_ready boolean (all planted pairs have transparent payoffs), and detail lists for each problem category. Fix orphaned plants and transparency issues before the node passes gateway audit. Accepts node id (GUID) or slug.")]
     public async Task<string> audit_plant_payoffs(
-        [Description("Strand id (GUID) or slug.")] string strandIdOrSlug)
+        [Description("Node id (GUID) or slug.")] string nodeIdOrSlug)
     {
-        var strandId = await ResolveStrandAsync(strandIdOrSlug);
-        if (strandId == null)
-            return JsonSerializer.Serialize(new { error = "strand_not_found", strandIdOrSlug }, JsonOpts);
+        var nodeId = await ResolveNodeAsync(nodeIdOrSlug);
+        if (nodeId == null)
+            return JsonSerializer.Serialize(new { error = "node_not_found", nodeIdOrSlug }, JsonOpts);
 
         try
         {
-            var audit = await plantPayoffs.AuditAsync(strandId.Value);
+            var audit = await plantPayoffs.AuditAsync(nodeId.Value);
             return JsonSerializer.Serialize(new
             {
-                strand_slug          = audit.StrandSlug,
-                strand_title         = audit.StrandTitle,
+                node_slug          = audit.NodeSlug,
+                node_title         = audit.NodeTitle,
                 total_pairs          = audit.TotalPairs,
                 planted              = audit.Planted,
                 paid_off             = audit.PaidOff,
@@ -177,12 +177,12 @@ public class PlantPayoffTools(
 
     // ── Helper ────────────────────────────────────────────────────────────────
 
-    async Task<Guid?> ResolveStrandAsync(string idOrSlug)
+    async Task<Guid?> ResolveNodeAsync(string idOrSlug)
     {
         if (Guid.TryParse(idOrSlug, out var g)) return g;
         await using var db = await dbFactory.CreateDbContextAsync();
-        var s = await db.Strands.AsNoTracking()
-            .Where(x => x.Slug == idOrSlug || x.StrandCode == idOrSlug)
+        var s = await db.Nodes.AsNoTracking()
+            .Where(x => x.Slug == idOrSlug || x.NodeCode == idOrSlug)
             .Select(x => x.Id)
             .FirstOrDefaultAsync();
         return s == Guid.Empty ? null : s;

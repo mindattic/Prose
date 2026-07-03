@@ -6,15 +6,15 @@ using StreetSamurai.Core.Services;
 namespace StreetSamurai.Blazor.Cli;
 
 /// <summary>
-/// <c>ss --auto-run</c> — autonomous end-to-end strand pipeline.
+/// <c>ss --auto-run</c> — autonomous end-to-end node pipeline.
 ///
-/// Expands all empty beats in a strand (or each chapter of a book-level strand)
+/// Expands all empty beats in a node (or each chapter of a book-level node)
 /// via ProseWriterRouter, reflows each chapter, then fires a chapter-close review
 /// at the configured effort tier — no per-beat human approval required.
 ///
 /// Args (one of --slug / --id required):
-///   --slug &lt;slug&gt;           Strand slug (flat or book-level).
-///   --id &lt;guid|prefix&gt;      Strand id; a unique prefix is enough.
+///   --slug &lt;slug&gt;           Node slug (flat or book-level).
+///   --id &lt;guid|prefix&gt;      Node id; a unique prefix is enough.
 ///   --effort draft|standard  Review tier per chapter (default: draft).
 ///   --dry-run                List beats/chapters to process without generating prose.
 ///   --force                  Re-generate beats that already have prose.
@@ -56,7 +56,7 @@ public static class AutoRunCli
 
         var dbFactory   = services.GetRequiredService<IDbContextFactory<StreetSamuraiDbContext>>();
         var router      = services.GetRequiredService<ProseWriterRouter>();
-        var workbench   = services.GetRequiredService<StrandWorkbenchService>();
+        var workbench   = services.GetRequiredService<NodeWorkbenchService>();
         var reflow      = services.GetRequiredService<ProseReflowService>();
         var chapterClose = services.GetRequiredService<ChapterCloseProcessorService>();
         var canonDb     = services.GetRequiredService<IDatabaseService>();
@@ -65,33 +65,33 @@ public static class AutoRunCli
         try { storyBible = canonDb.GetLiteraryRulesPrompt() ?? ""; }
         catch { storyBible = ""; }
 
-        // Resolve the target strand
-        Guid strandId;
-        string strandTitle, strandSlug, strandKind;
+        // Resolve the target node
+        Guid nodeId;
+        string nodeTitle, nodeSlug, nodeKind;
         await using (var db = await dbFactory.CreateDbContextAsync())
         {
-            var q = db.Strands.AsNoTracking();
-            var strand = !string.IsNullOrWhiteSpace(slug)
+            var q = db.Nodes.AsNoTracking();
+            var node = !string.IsNullOrWhiteSpace(slug)
                 ? await q.FirstOrDefaultAsync(s => s.Slug == slug)
                 : Guid.TryParse(id, out var g)
                     ? await q.FirstOrDefaultAsync(s => s.Id == g)
                     : await q.FirstOrDefaultAsync(s => s.Id.ToString().StartsWith(id!.ToLowerInvariant()));
 
-            if (strand == null) { Console.Error.WriteLine("[auto-run] Strand not found."); return 1; }
-            strandId    = strand.Id;
-            strandTitle = strand.Title ?? strand.Slug ?? strandId.ToString();
-            strandSlug  = strand.Slug ?? strandId.ToString();
-            strandKind  = strand.Kind ?? "episode";
+            if (node == null) { Console.Error.WriteLine("[auto-run] Node not found."); return 1; }
+            nodeId    = node.Id;
+            nodeTitle = node.Title ?? node.Slug ?? nodeId.ToString();
+            nodeSlug  = node.Slug ?? nodeId.ToString();
+            nodeKind  = node.Kind ?? "episode";
         }
 
-        Console.WriteLine($"[auto-run] Strand: \"{strandTitle}\" ({strandSlug})  kind={strandKind}  effort={effort}{(forks >= 2 ? $"  forks={forks}" : "")}");
+        Console.WriteLine($"[auto-run] Node: \"{nodeTitle}\" ({nodeSlug})  kind={nodeKind}  effort={effort}{(forks >= 2 ? $"  forks={forks}" : "")}");
 
-        // Determine if this is a book (has chapter children) or a flat strand
+        // Determine if this is a book (has chapter children) or a flat node
         List<(Guid Id, string Title, string Slug)> chapters;
         await using (var db = await dbFactory.CreateDbContextAsync())
         {
-            var children = await db.Strands.AsNoTracking()
-                .Where(s => s.ParentStrandId == strandId)
+            var children = await db.Nodes.AsNoTracking()
+                .Where(s => s.ParentNodeId == nodeId)
                 .OrderBy(s => s.CreatedAt)
                 .Select(s => new { s.Id, s.Title, s.Slug })
                 .ToListAsync();
@@ -102,7 +102,7 @@ public static class AutoRunCli
         bool isBook = chapters.Count > 0;
         Console.WriteLine(isBook
             ? $"[auto-run] Book mode: {chapters.Count} chapter(s)"
-            : "[auto-run] Flat strand mode");
+            : "[auto-run] Flat node mode");
 
         if (isBook)
         {
@@ -111,7 +111,7 @@ public static class AutoRunCli
             {
                 Console.WriteLine();
                 Console.WriteLine($"[auto-run] ── Chapter {totalChapters + 1}: \"{chapterTitle}\" ──");
-                var exp = await ExpandStrandBeatsAsync(chapterId, storyBible, router, workbench, force, dryRun);
+                var exp = await ExpandNodeBeatsAsync(chapterId, storyBible, router, workbench, force, dryRun);
                 totalExpanded += exp;
 
                 if (!dryRun && exp > 0)
@@ -119,7 +119,7 @@ public static class AutoRunCli
                     Console.Write("[auto-run]   reflow… ");
                     try
                     {
-                        var rr = await reflow.ReflowStrandAsync(chapterId, apply: true);
+                        var rr = await reflow.ReflowNodeAsync(chapterId, apply: true);
                         Console.WriteLine($"{rr.Changed}/{rr.Total} beats updated.");
                     }
                     catch (Exception ex) { Console.WriteLine($"failed (continuing): {ex.Message}"); }
@@ -127,7 +127,7 @@ public static class AutoRunCli
                     Console.WriteLine("[auto-run]   chapter close processing…");
                     var beats = await workbench.GetOrderedBeatsAsync(chapterId);
                     var prose = string.Join("\n\n", beats.Select(b => b.Beat.Text).Where(t => !string.IsNullOrWhiteSpace(t)));
-                    var closeResult = await chapterClose.ProcessAsync(strandId, chapterId, totalChapters, prose, forks);
+                    var closeResult = await chapterClose.ProcessAsync(nodeId, chapterId, totalChapters, prose, forks);
                     PrintCloseResult(closeResult);
                 }
                 totalChapters++;
@@ -137,22 +137,22 @@ public static class AutoRunCli
         }
         else
         {
-            var exp = await ExpandStrandBeatsAsync(strandId, storyBible, router, workbench, force, dryRun);
+            var exp = await ExpandNodeBeatsAsync(nodeId, storyBible, router, workbench, force, dryRun);
 
             if (!dryRun && exp > 0)
             {
                 Console.Write("[auto-run] reflow… ");
                 try
                 {
-                    var rr = await reflow.ReflowStrandAsync(strandId, apply: true);
+                    var rr = await reflow.ReflowNodeAsync(nodeId, apply: true);
                     Console.WriteLine($"{rr.Changed}/{rr.Total} beats updated.");
                 }
                 catch (Exception ex) { Console.WriteLine($"failed (continuing): {ex.Message}"); }
 
                 Console.WriteLine("[auto-run] chapter close processing…");
-                var beats = await workbench.GetOrderedBeatsAsync(strandId);
+                var beats = await workbench.GetOrderedBeatsAsync(nodeId);
                 var prose = string.Join("\n\n", beats.Select(b => b.Beat.Text).Where(t => !string.IsNullOrWhiteSpace(t)));
-                var closeResult = await chapterClose.ProcessAsync(strandId, strandId, 0, prose, forks);
+                var closeResult = await chapterClose.ProcessAsync(nodeId, nodeId, 0, prose, forks);
                 PrintCloseResult(closeResult);
             }
 
@@ -162,15 +162,15 @@ public static class AutoRunCli
         return 0;
     }
 
-    private static async Task<int> ExpandStrandBeatsAsync(
-        Guid strandId,
+    private static async Task<int> ExpandNodeBeatsAsync(
+        Guid nodeId,
         string storyBible,
         ProseWriterRouter router,
-        StrandWorkbenchService workbench,
+        NodeWorkbenchService workbench,
         bool force,
         bool dryRun)
     {
-        var ordered = await workbench.GetOrderedBeatsAsync(strandId);
+        var ordered = await workbench.GetOrderedBeatsAsync(nodeId);
         var sceneSoFar = "";
         int expanded = 0;
         int beatIndex = 0;
@@ -203,7 +203,7 @@ public static class AutoRunCli
             {
                 var ctx = new BeatContext
                 {
-                    StrandId          = strandId,
+                    NodeId          = nodeId,
                     StoryBibleContext = storyBible,
                     SceneSoFar        = sceneSoFar.Length > 6000 ? sceneSoFar[^6000..] : sceneSoFar,
                     BeatGoal          = goal,

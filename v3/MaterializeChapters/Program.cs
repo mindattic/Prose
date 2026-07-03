@@ -6,9 +6,9 @@ using StreetSamurai.Core.Extensions;
 using StreetSamurai.Core.Services;
 
 // ── MaterializeChapters ────────────────────────────────────────────────────
-// One-shot. Finds every chapter strand whose StrandBeat row count is zero and
+// One-shot. Finds every chapter node whose NodeBeat row count is zero and
 // whose source Chapter (Records.Json) has body prose, then calls
-// StrandWorkbenchService.MaterializeChapterFromHtmlAsync to burst the prose
+// NodeWorkbenchService.MaterializeChapterFromHtmlAsync to burst the prose
 // into one Beat per paragraph. Idempotent — safe to re-run; chapters with
 // any existing beats are skipped.
 //
@@ -24,26 +24,26 @@ services.AddStreetSamuraiServices();
 using var sp = services.BuildServiceProvider();
 
 var dbFactory = sp.GetRequiredService<IDbContextFactory<StreetSamuraiDbContext>>();
-var workbench = sp.GetRequiredService<StrandWorkbenchService>();
+var workbench = sp.GetRequiredService<NodeWorkbenchService>();
 
 await using var db = await dbFactory.CreateDbContextAsync();
 
-// Find chapter strands with zero StrandBeat rows.
-var emptyChapters = await db.Strands
+// Find chapter nodes with zero NodeBeat rows.
+var emptyChapters = await db.Nodes
     .AsNoTracking()
     .Where(s => s.Kind == "chapter")
-    .Where(s => !db.StrandBeats.Any(sb => sb.StrandId == s.Id))
+    .Where(s => !db.NodeBeats.Any(sb => sb.NodeId == s.Id))
     .OrderBy(s => s.Title)
-    .Select(s => new { s.Id, s.Title, s.Slug, s.ParentStrandId })
+    .Select(s => new { s.Id, s.Title, s.Slug, s.ParentNodeId })
     .ToListAsync();
 
 if (emptyChapters.Count == 0)
 {
-    Console.WriteLine("No chapter strands with zero beats. Nothing to do.");
+    Console.WriteLine("No chapter nodes with zero beats. Nothing to do.");
     return 0;
 }
 
-Console.WriteLine($"Found {emptyChapters.Count} empty chapter strand(s):");
+Console.WriteLine($"Found {emptyChapters.Count} empty chapter node(s):");
 foreach (var c in emptyChapters)
     Console.WriteLine($"  • {c.Title}  ({c.Slug})");
 Console.WriteLine();

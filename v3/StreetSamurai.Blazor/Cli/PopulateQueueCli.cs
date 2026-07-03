@@ -7,8 +7,8 @@ namespace StreetSamurai.Blazor.Cli;
 /// Populates the DistributedWorkQueue with work items for remote workers.
 ///
 ///   ss --populate-queue --entity-review [--types weapon,equipment,...]
-///   ss --populate-queue --strand-review [--strand-id GUID] [--readers 5]
-///   ss --populate-queue --beat-write    [--strand-id GUID]
+///   ss --populate-queue --node-review [--node-id GUID] [--readers 5]
+///   ss --populate-queue --beat-write    [--node-id GUID]
 ///   ss --populate-queue --status
 /// </summary>
 public static class PopulateQueueCli
@@ -26,16 +26,16 @@ public static class PopulateQueueCli
     {
         var coordinator  = sp.GetRequiredService<DistributedWorkerCoordinator>();
         var doEntityReview = args.Contains("--entity-review");
-        var doStrandReview = args.Contains("--strand-review");
+        var doNodeReview = args.Contains("--node-review");
         var doBeatWrite    = args.Contains("--beat-write");
         var doStatus       = args.Contains("--status");
 
-        if (!doEntityReview && !doStrandReview && !doBeatWrite && !doStatus)
+        if (!doEntityReview && !doNodeReview && !doBeatWrite && !doStatus)
         {
             Console.WriteLine("Usage:");
             Console.WriteLine("  ss --populate-queue --entity-review [--types weapon,equipment,...]  [--ballots 10] [--prose 2]");
-            Console.WriteLine("  ss --populate-queue --strand-review [--strand-id GUID] [--readers 5]");
-            Console.WriteLine("  ss --populate-queue --beat-write    [--strand-id GUID]");
+            Console.WriteLine("  ss --populate-queue --node-review [--node-id GUID] [--readers 5]");
+            Console.WriteLine("  ss --populate-queue --beat-write    [--node-id GUID]");
             Console.WriteLine("  ss --populate-queue --status");
             return 0;
         }
@@ -64,20 +64,20 @@ public static class PopulateQueueCli
             Console.WriteLine($"  Added: {added}");
         }
 
-        if (doStrandReview)
+        if (doNodeReview)
         {
-            var strandIds  = ParseGuids(ArgValue(args, "--strand-id"));
+            var nodeIds  = ParseGuids(ArgValue(args, "--node-id"));
             var readers    = int.TryParse(ArgValue(args, "--readers"), out var r) ? r : 5;
-            Console.WriteLine($"Populating strand-review queue...");
-            var added = await coordinator.PopulateStrandReviewAsync(strandIds, readers);
+            Console.WriteLine($"Populating node-review queue...");
+            var added = await coordinator.PopulateNodeReviewAsync(nodeIds, readers);
             Console.WriteLine($"  Added: {added}");
         }
 
         if (doBeatWrite)
         {
-            var strandIds = ParseGuids(ArgValue(args, "--strand-id"));
+            var nodeIds = ParseGuids(ArgValue(args, "--node-id"));
             Console.WriteLine("Populating beat-write queue...");
-            var added = await coordinator.PopulateBeatWriteAsync(strandIds);
+            var added = await coordinator.PopulateBeatWriteAsync(nodeIds);
             Console.WriteLine($"  Added: {added}");
         }
 

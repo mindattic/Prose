@@ -6,15 +6,15 @@ using StreetSamurai.Core.Services;
 namespace StreetSamurai.Blazor.Cli;
 
 /// <summary>
-/// ss --prose-check (--slug &lt;strandSlug&gt; | --id &lt;beatId&gt;) [--all] [--json]
-/// Runs the deterministic ProsePatternGuard linter on a strand's beats or a single beat.
+/// ss --prose-check (--slug &lt;nodeSlug&gt; | --id &lt;beatId&gt;) [--all] [--json]
+/// Runs the deterministic ProsePatternGuard linter on a node's beats or a single beat.
 /// --all includes Low-severity sentence-length checks (default: shows Cliché + PseudoProfound + OnTheNose + ItalicisedDialogue only)
 /// </summary>
 public static class ProseCheckCli
 {
     public static async Task<int> RunAsync(string[] args, IServiceProvider services)
     {
-        string? strandSlug = null;
+        string? nodeSlug = null;
         Guid? beatId = null;
         bool all = args.Contains("--all");
         bool json = args.Contains("--json");
@@ -23,16 +23,16 @@ public static class ProseCheckCli
         {
             switch (args[i])
             {
-                case "--slug": strandSlug = args[i + 1]; i++; break;
+                case "--slug": nodeSlug = args[i + 1]; i++; break;
                 case "--id":
                     if (Guid.TryParse(args[i + 1], out var g)) { beatId = g; i++; }
                     break;
             }
         }
 
-        if (strandSlug == null && beatId == null)
+        if (nodeSlug == null && beatId == null)
         {
-            Console.Error.WriteLine("Usage: ss --prose-check (--slug <strandSlug> | --id <beatId>) [--all] [--json]");
+            Console.Error.WriteLine("Usage: ss --prose-check (--slug <nodeSlug> | --id <beatId>) [--all] [--json]");
             return 1;
         }
 
@@ -52,20 +52,20 @@ public static class ProseCheckCli
         }
         else
         {
-            var strand = await db.Strands.AsNoTracking().FirstOrDefaultAsync(s => s.Slug == strandSlug);
-            if (strand == null) { Console.Error.WriteLine($"Strand '{strandSlug}' not found."); return 1; }
+            var node = await db.Nodes.AsNoTracking().FirstOrDefaultAsync(s => s.Slug == nodeSlug);
+            if (node == null) { Console.Error.WriteLine($"Node '{nodeSlug}' not found."); return 1; }
 
             var beats = await (
-                from sb in db.StrandBeats
+                from sb in db.NodeBeats
                 join b in db.Beats on sb.BeatId equals b.Id
-                where sb.StrandId == strand.Id
+                where sb.NodeId == node.Id
                 orderby sb.SortKey
                 select new { b.Id, b.Number, b.Text }
             ).ToListAsync();
 
-            if (beats.Count == 0) { Console.Error.WriteLine("No beats found for this strand."); return 1; }
+            if (beats.Count == 0) { Console.Error.WriteLine("No beats found for this node."); return 1; }
 
-            Console.WriteLine($"Checking {beats.Count} beats in '{strand.Slug}'…");
+            Console.WriteLine($"Checking {beats.Count} beats in '{node.Slug}'…");
             foreach (var beat in beats)
             {
                 var violations = guard.Check(beat.Text ?? "");

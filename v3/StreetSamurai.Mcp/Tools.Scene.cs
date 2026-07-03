@@ -38,13 +38,13 @@ public class SceneTools
         [Description("What happened, one sentence.")] string description,
         [Description("minor | moderate | severe")] string severity,
         [Description("Residual effect the prose must honor (e.g. 'grip 90 percent; two-handed work hurts').")] string residualEffect = "",
-        [Description("Source strand slug, if known.")] string? sourceStrandSlug = null,
+        [Description("Source node slug, if known.")] string? sourceNodeSlug = null,
         [Description("Expected healing days (default 14; AutoDoc shortens, never zeroes).")] int expectedHealingDays = 14)
     {
         if (!Guid.TryParse(characterId, out var id))
             return JsonSerializer.Serialize(new { error = "bad_guid", characterId });
         var woundId = await wounds.AddAsync(id, bodyLocation, description, severity,
-            sourceStrandSlug, null, null, expectedHealingDays, "fresh", residualEffect);
+            sourceNodeSlug, null, null, expectedHealingDays, "fresh", residualEffect);
         return JsonSerializer.Serialize(new { ok = true, woundId });
     }
 

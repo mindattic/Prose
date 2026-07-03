@@ -9,7 +9,7 @@ public class BeatServiceLog
     public Guid Id { get; set; } = Guid.NewGuid();
     public Guid UniverseId { get; set; }
     public Guid? BeatId { get; set; }
-    public Guid StrandId { get; set; }
+    public Guid NodeId { get; set; }
     public string Service { get; set; } = "";
     public bool WasApplicable { get; set; }
     public bool WasActive { get; set; }

@@ -3,7 +3,7 @@ using System.Collections.Concurrent;
 namespace StreetSamurai.Core.Services;
 
 /// <summary>
-/// Per-strand LRU entity working-memory. Singleton service keyed by StrandId.
+/// Per-node LRU entity working-memory. Singleton service keyed by NodeId.
 ///
 /// Every beat pushed to the stack adds direct entities (depth 0) and their semantic
 /// neighbors (depth 1, 2). Entities not mentioned for EvictAfterBeats beats are
@@ -25,30 +25,30 @@ public sealed class EntityContextStack
         int LastMentionedBeat,
         int Depth);
 
-    private sealed class StrandState
+    private sealed class NodeState
     {
         public readonly ConcurrentDictionary<Guid, StackEntry> Entries = new();
         public int BeatCounter;
     }
 
-    private readonly ConcurrentDictionary<Guid, StrandState> strands = new();
+    private readonly ConcurrentDictionary<Guid, NodeState> nodes = new();
 
-    private StrandState GetOrCreate(Guid strandId) =>
-        strands.GetOrAdd(strandId, _ => new StrandState());
+    private NodeState GetOrCreate(Guid nodeId) =>
+        nodes.GetOrAdd(nodeId, _ => new NodeState());
 
     /// <summary>Call at the start of each beat. Increments LRU counter and evicts stale depth>0 entries.</summary>
-    public void BeginBeat(Guid strandId)
+    public void BeginBeat(Guid nodeId)
     {
-        var state = GetOrCreate(strandId);
+        var state = GetOrCreate(nodeId);
         Interlocked.Increment(ref state.BeatCounter);
         EvictStale(state);
     }
 
     /// <summary>Push an entity onto the stack. If already present, refreshes its LRU timestamp and upgrades to lower depth.</summary>
-    public void Push(Guid strandId, Guid entityId, string name, string entityType, string description, double score, int depth = 0)
+    public void Push(Guid nodeId, Guid entityId, string name, string entityType, string description, double score, int depth = 0)
     {
         if (entityId == Guid.Empty) return;
-        var state = GetOrCreate(strandId);
+        var state = GetOrCreate(nodeId);
 
         state.Entries.AddOrUpdate(entityId,
             _ => new StackEntry(entityId, name, entityType, description, score,
@@ -66,34 +66,34 @@ public sealed class EntityContextStack
     }
 
     /// <summary>Record that the given entities were mentioned in generated prose, refreshing their LRU timestamps.</summary>
-    public void RecordMentions(Guid strandId, IEnumerable<Guid> entityIds)
+    public void RecordMentions(Guid nodeId, IEnumerable<Guid> entityIds)
     {
-        if (!strands.TryGetValue(strandId, out var state)) return;
+        if (!nodes.TryGetValue(nodeId, out var state)) return;
         foreach (var id in entityIds)
             if (state.Entries.TryGetValue(id, out var e))
                 state.Entries[id] = e with { LastMentionedBeat = state.BeatCounter };
     }
 
     /// <summary>Returns active entities ordered by most-recently-mentioned, then by depth.</summary>
-    public IReadOnlyList<StackEntry> GetActive(Guid strandId)
+    public IReadOnlyList<StackEntry> GetActive(Guid nodeId)
     {
-        if (!strands.TryGetValue(strandId, out var state)) return [];
+        if (!nodes.TryGetValue(nodeId, out var state)) return [];
         return [.. state.Entries.Values
             .OrderByDescending(e => e.LastMentionedBeat)
             .ThenBy(e => e.Depth)];
     }
 
-    /// <summary>Clears the stack for a strand (use when starting a new strand session).</summary>
-    public void Clear(Guid strandId) => strands.TryRemove(strandId, out _);
+    /// <summary>Clears the stack for a node (use when starting a new node session).</summary>
+    public void Clear(Guid nodeId) => nodes.TryRemove(nodeId, out _);
 
-    private static void EvictStale(StrandState state)
+    private static void EvictStale(NodeState state)
     {
         foreach (var e in state.Entries.Values.ToList())
             if (e.Depth > 0 && state.BeatCounter - e.LastMentionedBeat >= EvictAfterBeats)
                 state.Entries.TryRemove(e.EntityId, out _);
     }
 
-    private static void EvictLru(StrandState state)
+    private static void EvictLru(NodeState state)
     {
         var lru = state.Entries.Values
             .Where(e => e.Depth > 0)

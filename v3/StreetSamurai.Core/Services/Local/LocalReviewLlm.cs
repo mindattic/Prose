@@ -11,7 +11,7 @@ namespace StreetSamurai.Core.Services.Local;
 /// <para>This is the "don't mix" boundary: it references NO MindAttic.Legion transport
 /// code — not the provider catalog, not the endpoint table, not the circuit breaker.
 /// The cloud panel and the local model share only the persona / scoring machinery in
-/// <see cref="StrandReviewService"/>, never a wire. It is selected ONLY when a review
+/// <see cref="NodeReviewService"/>, never a wire. It is selected ONLY when a review
 /// run is started with <c>--local</c>.</para>
 ///
 /// <para>The cloud <c>providerId</c>/<c>apiKey</c> arguments are intentionally ignored:

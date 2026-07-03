@@ -7,10 +7,10 @@ namespace StreetSamurai.Core.Services;
 // ─────────────────────────────────────────────────────────────────────────────
 // PlantPayoffService
 //
-// Persists narrative "plants" (seeded details) and their payoffs per strand.
+// Persists narrative "plants" (seeded details) and their payoffs per node.
 // Enforces the invariant: "reward re-reading without requiring it."
 //
-//   GetByStrandAsync      — all registered pairs for a strand
+//   GetByNodeAsync      — all registered pairs for a node
 //   BuildPlantContextAsync— context block injected into BeatGeneratorService
 //   RegisterAsync         — create a new plant/payoff pair
 //   LinkPlantBeatAsync    — bind the plant to an actual beat after writing
@@ -21,25 +21,25 @@ namespace StreetSamurai.Core.Services;
 
 public class PlantPayoffService(IDbContextFactory<StreetSamuraiDbContext> dbFactory)
 {
-    public async Task<List<PlantPayoff>> GetByStrandAsync(Guid strandId, CancellationToken ct = default)
+    public async Task<List<PlantPayoff>> GetByNodeAsync(Guid nodeId, CancellationToken ct = default)
     {
         await using var db = await dbFactory.CreateDbContextAsync(ct);
         return await db.PlantPayoffs
             .AsNoTracking()
-            .Where(p => p.StrandId == strandId)
+            .Where(p => p.NodeId == nodeId)
             .OrderBy(p => p.SortKey)
             .ToListAsync(ct);
     }
 
-    public async Task<string> BuildPlantContextAsync(Guid strandId, CancellationToken ct = default)
+    public async Task<string> BuildPlantContextAsync(Guid nodeId, CancellationToken ct = default)
     {
-        var plants = await GetByStrandAsync(strandId, ct);
+        var plants = await GetByNodeAsync(nodeId, ct);
         if (plants.Count == 0) return "";
 
         var sb = new System.Text.StringBuilder();
         sb.AppendLine();
         sb.AppendLine("[PLANTED DETAILS — reward re-reading without requiring it]");
-        sb.AppendLine("These pairs are registered for this strand. Every payoff beat must make");
+        sb.AppendLine("These pairs are registered for this node. Every payoff beat must make");
         sb.AppendLine("complete sense to a cold reader; the plant makes it richer on re-read.");
         foreach (var p in plants)
         {
@@ -55,7 +55,7 @@ public class PlantPayoffService(IDbContextFactory<StreetSamuraiDbContext> dbFact
     }
 
     public async Task<PlantPayoff> RegisterAsync(
-        Guid strandId,
+        Guid nodeId,
         string plantDesc,
         string payoffDesc,
         string category = "detail",
@@ -64,19 +64,19 @@ public class PlantPayoffService(IDbContextFactory<StreetSamuraiDbContext> dbFact
         CancellationToken ct = default)
     {
         await using var db = await dbFactory.CreateDbContextAsync(ct);
-        var strand = await db.Strands.FindAsync(new object[] { strandId }, ct)
-            ?? throw new InvalidOperationException($"Strand {strandId} not found.");
+        var node = await db.Nodes.FindAsync(new object[] { nodeId }, ct)
+            ?? throw new InvalidOperationException($"Node {nodeId} not found.");
 
         var pp = new PlantPayoff
         {
-            StrandId         = strandId,
-            UniverseId       = strand.UniverseId,
+            NodeId         = nodeId,
+            UniverseId       = node.UniverseId,
             PlantDescription = plantDesc.Trim(),
             PayoffDescription= payoffDesc.Trim(),
             Category         = category.ToLowerInvariant(),
             PlantBeatId      = plantBeatId,
             PayoffBeatId     = payoffBeatId,
-            SortKey          = await NextSortKeyAsync(db, strandId, ct),
+            SortKey          = await NextSortKeyAsync(db, nodeId, ct),
         };
         db.PlantPayoffs.Add(pp);
         await db.SaveChangesAsync(ct);
@@ -114,16 +114,16 @@ public class PlantPayoffService(IDbContextFactory<StreetSamuraiDbContext> dbFact
         await db.SaveChangesAsync(ct);
     }
 
-    public async Task<PlantPayoffAudit> AuditAsync(Guid strandId, CancellationToken ct = default)
+    public async Task<PlantPayoffAudit> AuditAsync(Guid nodeId, CancellationToken ct = default)
     {
         await using var db = await dbFactory.CreateDbContextAsync(ct);
-        var strand = await db.Strands.AsNoTracking()
-            .FirstOrDefaultAsync(s => s.Id == strandId, ct)
-            ?? throw new InvalidOperationException($"Strand {strandId} not found.");
+        var node = await db.Nodes.AsNoTracking()
+            .FirstOrDefaultAsync(s => s.Id == nodeId, ct)
+            ?? throw new InvalidOperationException($"Node {nodeId} not found.");
 
         var all = await db.PlantPayoffs
             .AsNoTracking()
-            .Where(p => p.StrandId == strandId)
+            .Where(p => p.NodeId == nodeId)
             .OrderBy(p => p.SortKey)
             .ToListAsync(ct);
 
@@ -133,8 +133,8 @@ public class PlantPayoffService(IDbContextFactory<StreetSamuraiDbContext> dbFact
         var planted      = all.Count(p => p.PlantBeatId  != null);
 
         return new PlantPayoffAudit(
-            StrandSlug:           strand.Slug,
-            StrandTitle:          strand.Title,
+            NodeSlug:           node.Slug,
+            NodeTitle:          node.Title,
             TotalPairs:           all.Count,
             Planted:              planted,
             PaidOff:              paidOff,
@@ -145,10 +145,10 @@ public class PlantPayoffService(IDbContextFactory<StreetSamuraiDbContext> dbFact
             NotTransparentPayoffs: notTransparent);
     }
 
-    static async Task<double> NextSortKeyAsync(StreetSamuraiDbContext db, Guid strandId, CancellationToken ct)
+    static async Task<double> NextSortKeyAsync(StreetSamuraiDbContext db, Guid nodeId, CancellationToken ct)
     {
         var max = await db.PlantPayoffs
-            .Where(p => p.StrandId == strandId)
+            .Where(p => p.NodeId == nodeId)
             .MaxAsync(p => (double?)p.SortKey, ct);
         return (max ?? 0) + 100;
     }
@@ -157,8 +157,8 @@ public class PlantPayoffService(IDbContextFactory<StreetSamuraiDbContext> dbFact
 // ── Result models ─────────────────────────────────────────────────────────────
 
 public record PlantPayoffAudit(
-    string            StrandSlug,
-    string            StrandTitle,
+    string            NodeSlug,
+    string            NodeTitle,
     int               TotalPairs,
     int               Planted,
     int               PaidOff,

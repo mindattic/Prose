@@ -12,14 +12,14 @@ namespace StreetSamurai.Blazor.Cli;
 /// <summary>
 /// <c>ss --migrate-legacy-book-chapter</c> — one-shot cleanup of the 44 legacy
 /// <c>book</c> and <c>chapter</c> entity rows whose content already lives in the
-/// relational <c>Strands</c> + <c>Beats</c> + <c>StrandBeats</c> model.
+/// relational <c>Nodes</c> + <c>Beats</c> + <c>NodeBeats</c> model.
 ///
 /// Three dispositions:
 ///   JUNK     — inactive "Untitled Book" blobs → DELETE Entity + Records row.
-///   REDUNDANT— content is covered by an existing Strand (matched by same GUID,
-///              title, slug-prefix, or membership in a parent book Strand) →
+///   REDUNDANT— content is covered by an existing Node (matched by same GUID,
+///              title, slug-prefix, or membership in a parent book Node) →
 ///              DELETE Entity + Records row.
-///   ORPHAN   — no matching Strand exists → CREATE a new Strand + Beats from
+///   ORPHAN   — no matching Node exists → CREATE a new Node + Beats from
 ///              the blob's beats/html content, then DELETE Entity + Records row.
 ///
 /// A full DB backup was taken before running this tool
@@ -31,7 +31,7 @@ public static class MigrateLegacyBookChapterCli
     // ── GLMZ universe ID (SS-LAW-15) ─────────────────────────────────────────
     private static readonly Guid GlmzUniverseId = Universe.GlmzId;
 
-    // ── Entity IDs: books that already ARE the Strand (same GUID) ────────────
+    // ── Entity IDs: books that already ARE the Node (same GUID) ────────────
     private static readonly HashSet<Guid> RedundantSameId = new()
     {
         Guid.Parse("EB91080D-9C9C-4F2B-9B40-5FA5996BDEA1"), // Bushido Coda
@@ -40,29 +40,29 @@ public static class MigrateLegacyBookChapterCli
         Guid.Parse("15892163-6CE8-4EF7-9126-AB5BF6E298A7"), // The Door Is Unlocked
     };
 
-    // ── Book entity that matches strand by slug prefix ────────────────────────
+    // ── Book entity that matches node by slug prefix ────────────────────────
     private static readonly Guid VulturesEntityId    = Guid.Parse("019EC467-77B7-76E4-98B1-A134F13B89C1");
-    private static readonly Guid VulturesStrandId    = Guid.Parse("019EC467-878A-7B25-8AF3-F72EBF6E57B6");
+    private static readonly Guid VulturesNodeId    = Guid.Parse("019EC467-878A-7B25-8AF3-F72EBF6E57B6");
 
-    // ── The Voice You Trust book entity → matches strand by title ────────────
+    // ── The Voice You Trust book entity → matches node by title ────────────
     private static readonly Guid VoiceYouTrustBookEntityId  = Guid.Parse("5AB1E000-0000-0000-0000-000000000001");
-    private static readonly Guid VoiceYouTrustStrandId      = Guid.Parse("019EA026-DD37-72A1-A42A-524E3115CF91");
+    private static readonly Guid VoiceYouTrustNodeId      = Guid.Parse("019EA026-DD37-72A1-A42A-524E3115CF91");
 
-    // ── Chapters that title-match an existing Strand ─────────────────────────
-    // Map: chapter-entity-id → matched-strand-id
+    // ── Chapters that title-match an existing Node ─────────────────────────
+    // Map: chapter-entity-id → matched-node-id
     private static readonly Dictionary<Guid, Guid> RedundantTitleMatchChapters = new()
     {
-        [Guid.Parse("019DD24F-EB04-7E9F-B9C9-01450389A8B9")] = Guid.Parse("019E9FB2-60D4-7726-9E7A-2C0C5DC450AE"), // A Borrowed Hand → strand
-        [Guid.Parse("6AF2D5EA-6EE3-198C-285F-C152631D82B0")] = Guid.Parse("DE7B5D9C-9EB4-796B-84C1-A1FB29C1BD27"), // Eleven Minutes chapter → strand
-        [Guid.Parse("2A4007BD-AAED-4B1A-996A-155E0130BD76")] = Guid.Parse("15892163-6CE8-4EF7-9126-AB5BF6E298A7"), // The Door Is Unlocked chapter → strand
-        [Guid.Parse("5AB1EC01-0000-0000-0000-000000000001")] = Guid.Parse("019EA026-DD37-72A1-A42A-524E3115CF91"), // The Voice You Trust chapter → strand
+        [Guid.Parse("019DD24F-EB04-7E9F-B9C9-01450389A8B9")] = Guid.Parse("019E9FB2-60D4-7726-9E7A-2C0C5DC450AE"), // A Borrowed Hand → node
+        [Guid.Parse("6AF2D5EA-6EE3-198C-285F-C152631D82B0")] = Guid.Parse("DE7B5D9C-9EB4-796B-84C1-A1FB29C1BD27"), // Eleven Minutes chapter → node
+        [Guid.Parse("2A4007BD-AAED-4B1A-996A-155E0130BD76")] = Guid.Parse("15892163-6CE8-4EF7-9126-AB5BF6E298A7"), // The Door Is Unlocked chapter → node
+        [Guid.Parse("5AB1EC01-0000-0000-0000-000000000001")] = Guid.Parse("019EA026-DD37-72A1-A42A-524E3115CF91"), // The Voice You Trust chapter → node
     };
 
-    // ── Chapters whose prose lives inside a parent book Strand ───────────────
-    // These are chapters belonging to one of the 4 fully-migrated book strands.
+    // ── Chapters whose prose lives inside a parent book Node ───────────────
+    // These are chapters belonging to one of the 4 fully-migrated book nodes.
     // Their individual beats/html (if any) are already present as beats in the
-    // parent strand. We delete the entity blobs only.
-    private static readonly HashSet<Guid> RedundantInParentStrand = new()
+    // parent node. We delete the entity blobs only.
+    private static readonly HashSet<Guid> RedundantInParentNode = new()
     {
         // Bushido Coda chapters (EB91080D)
         Guid.Parse("5A0959EB-5619-BF91-F59F-FB8632C80259"), // A Restless Mind
@@ -73,7 +73,7 @@ public static class MigrateLegacyBookChapterCli
         Guid.Parse("019EA814-5ACC-7580-AEAB-5E136A7B75AF"), // Interlude I: Something Fixed
         Guid.Parse("019EA814-A950-75B2-A962-5BDA00F64718"), // Interlude II: Half a Step
         Guid.Parse("019EA814-FBEE-7352-AB94-52311A822781"), // Interlude III: Before Something Changes
-        Guid.Parse("019EA815-6D90-75E6-8F3F-4C62C1C55142"), // Interlude IV: The Morning (in Bushido strand, no book_id in blob)
+        Guid.Parse("019EA815-6D90-75E6-8F3F-4C62C1C55142"), // Interlude IV: The Morning (in Bushido node, no book_id in blob)
         Guid.Parse("019EA819-4B3D-7417-897A-3C308EDFF59A"), // Sexy Time
         Guid.Parse("019DB31F-E888-7C97-A049-65978B5CCDB3"), // Street Meat
         Guid.Parse("019EA818-579D-7C80-8D7F-D2FE7DA9A330"), // Sunset Clause
@@ -98,7 +98,7 @@ public static class MigrateLegacyBookChapterCli
         Guid.Parse("5AB1EC05-0000-0000-0000-000000000005"), // Sable
     };
 
-    // ── True orphans: no matching Strand — must convert ─────────────────────
+    // ── True orphans: no matching Node — must convert ─────────────────────
     private static readonly Guid ColdChainEntityId = Guid.Parse("18A6455A-D4F3-54FE-CF95-C59D09AD1A7E");
     private static readonly Guid SashaVoEntityId   = Guid.Parse("0260C8B9-D1A7-F4E2-B8C9-D0A1E2F3B4C5");
 
@@ -123,7 +123,7 @@ public static class MigrateLegacyBookChapterCli
         }
 
         int junkDeleted = 0, redundantDeleted = 0, orphansConverted = 0;
-        var newStrandSlugs = new List<(string Slug, int Beats)>();
+        var newNodeSlugs = new List<(string Slug, int Beats)>();
 
         // ── 1. JUNK: inactive "Untitled Book" blobs ───────────────────────────
         var junkIds = new[]
@@ -139,60 +139,60 @@ public static class MigrateLegacyBookChapterCli
             if (deleted) { junkDeleted++; Console.WriteLine($"  JUNK  deleted  {id}  (inactive Untitled Book)"); }
         }
 
-        // ── 2. REDUNDANT: same GUID already is the Strand ────────────────────
+        // ── 2. REDUNDANT: same GUID already is the Node ────────────────────
         foreach (var id in RedundantSameId)
         {
             var deleted = await DeleteEntityAndRecord(db, id);
-            if (deleted) { redundantDeleted++; Console.WriteLine($"  REDUNDANT(same-id)  deleted  {id}  → strand {id}"); }
+            if (deleted) { redundantDeleted++; Console.WriteLine($"  REDUNDANT(same-id)  deleted  {id}  → node {id}"); }
         }
 
-        // ── 3. REDUNDANT: Vultures book → vultures-at-the-door strand ────────
+        // ── 3. REDUNDANT: Vultures book → vultures-at-the-door node ────────
         {
             var deleted = await DeleteEntityAndRecord(db, VulturesEntityId);
-            if (deleted) { redundantDeleted++; Console.WriteLine($"  REDUNDANT(slug-prefix)  deleted  {VulturesEntityId}  'Vultures on the Doorstep' → strand {VulturesStrandId}"); }
+            if (deleted) { redundantDeleted++; Console.WriteLine($"  REDUNDANT(slug-prefix)  deleted  {VulturesEntityId}  'Vultures on the Doorstep' → node {VulturesNodeId}"); }
         }
 
-        // ── 4. REDUNDANT: The Voice You Trust book → title-match strand ───────
+        // ── 4. REDUNDANT: The Voice You Trust book → title-match node ───────
         {
             var deleted = await DeleteEntityAndRecord(db, VoiceYouTrustBookEntityId);
-            if (deleted) { redundantDeleted++; Console.WriteLine($"  REDUNDANT(title-match)  deleted  {VoiceYouTrustBookEntityId}  'The Voice You Trust' → strand {VoiceYouTrustStrandId}"); }
+            if (deleted) { redundantDeleted++; Console.WriteLine($"  REDUNDANT(title-match)  deleted  {VoiceYouTrustBookEntityId}  'The Voice You Trust' → node {VoiceYouTrustNodeId}"); }
         }
 
-        // ── 5. REDUNDANT: chapters with title-matching Strand ─────────────────
-        foreach (var (entityId, strandId) in RedundantTitleMatchChapters)
+        // ── 5. REDUNDANT: chapters with title-matching Node ─────────────────
+        foreach (var (entityId, nodeId) in RedundantTitleMatchChapters)
         {
             var deleted = await DeleteEntityAndRecord(db, entityId);
-            if (deleted) { redundantDeleted++; Console.WriteLine($"  REDUNDANT(title-match)  deleted  {entityId} → strand {strandId}"); }
+            if (deleted) { redundantDeleted++; Console.WriteLine($"  REDUNDANT(title-match)  deleted  {entityId} → node {nodeId}"); }
         }
 
-        // ── 6. REDUNDANT: chapters in parent book strands ────────────────────
-        foreach (var id in RedundantInParentStrand)
+        // ── 6. REDUNDANT: chapters in parent book nodes ────────────────────
+        foreach (var id in RedundantInParentNode)
         {
             var deleted = await DeleteEntityAndRecord(db, id);
             if (deleted) { redundantDeleted++; Console.WriteLine($"  REDUNDANT(in-parent)  deleted  {id}"); }
         }
 
-        // ── 7. ORPHAN: Cold Chain → convert beats → new Strand ───────────────
+        // ── 7. ORPHAN: Cold Chain → convert beats → new Node ───────────────
         {
-            var (slug, beatCount) = await ConvertChapterToStrand(db, ColdChainEntityId, "chapter");
+            var (slug, beatCount) = await ConvertChapterToNode(db, ColdChainEntityId, "chapter");
             if (slug != null)
             {
                 await DeleteEntityAndRecord(db, ColdChainEntityId);
                 orphansConverted++;
-                newStrandSlugs.Add((slug, beatCount));
-                Console.WriteLine($"  ORPHAN  converted  {ColdChainEntityId}  'Cold Chain' → new strand slug={slug}  beats={beatCount}");
+                newNodeSlugs.Add((slug, beatCount));
+                Console.WriteLine($"  ORPHAN  converted  {ColdChainEntityId}  'Cold Chain' → new node slug={slug}  beats={beatCount}");
             }
         }
 
-        // ── 8. ORPHAN: Sasha Võ → convert HTML → single beat Strand ─────────
+        // ── 8. ORPHAN: Sasha Võ → convert HTML → single beat Node ─────────
         {
-            var (slug, beatCount) = await ConvertChapterToStrand(db, SashaVoEntityId, "chapter");
+            var (slug, beatCount) = await ConvertChapterToNode(db, SashaVoEntityId, "chapter");
             if (slug != null)
             {
                 await DeleteEntityAndRecord(db, SashaVoEntityId);
                 orphansConverted++;
-                newStrandSlugs.Add((slug, beatCount));
-                Console.WriteLine($"  ORPHAN  converted  {SashaVoEntityId}  'Sasha Võ' → new strand slug={slug}  beats={beatCount}");
+                newNodeSlugs.Add((slug, beatCount));
+                Console.WriteLine($"  ORPHAN  converted  {SashaVoEntityId}  'Sasha Võ' → new node slug={slug}  beats={beatCount}");
             }
         }
 
@@ -207,8 +207,8 @@ public static class MigrateLegacyBookChapterCli
         Console.WriteLine($"  junk-deleted:      {junkDeleted}");
         Console.WriteLine($"  redundant-deleted: {redundantDeleted}");
         Console.WriteLine($"  orphans-converted: {orphansConverted}");
-        foreach (var (slug, beats) in newStrandSlugs)
-            Console.WriteLine($"    new strand: {slug}  ({beats} beats)");
+        foreach (var (slug, beats) in newNodeSlugs)
+            Console.WriteLine($"    new node: {slug}  ({beats} beats)");
         Console.WriteLine($"  remaining book/chapter Records rows: {remaining}");
 
         if (remaining != 0)
@@ -226,10 +226,10 @@ public static class MigrateLegacyBookChapterCli
 
     /// <summary>
     /// Converts a chapter entity's blob (beats array or HTML) into a new
-    /// Strand + Beat + StrandBeat set. Returns (slug, beatCount) on success,
+    /// Node + Beat + NodeBeat set. Returns (slug, beatCount) on success,
     /// (null, 0) if the entity is missing or has no content to convert.
     /// </summary>
-    private static async Task<(string? Slug, int BeatCount)> ConvertChapterToStrand(
+    private static async Task<(string? Slug, int BeatCount)> ConvertChapterToNode(
         StreetSamuraiDbContext db, Guid entityId, string kind)
     {
         // Load raw JSON blob without EF's universe filter interfering
@@ -256,10 +256,10 @@ public static class MigrateLegacyBookChapterCli
         var slug     = $"{baseSlug}-{shortId}";
 
         // Ensure slug is unique (shouldn't collide but guard anyway)
-        if (await db.Strands.AnyAsync(s => s.Slug == slug))
+        if (await db.Nodes.AnyAsync(s => s.Slug == slug))
             slug = $"{baseSlug}-{shortId}-{Guid.NewGuid():N8}";
 
-        var newStrandId = Guid.CreateVersion7();
+        var newNodeId = Guid.CreateVersion7();
         int nextNumber  = (await db.Beats.MaxAsync(b => (int?)b.Number) ?? 0) + 1;
         int beatCount   = 0;
 
@@ -319,23 +319,21 @@ public static class MigrateLegacyBookChapterCli
 
         if (beatsToInsert.Count == 0)
         {
-            Console.Error.WriteLine($"  [convert] {entityId} '{title}' has no usable content — creating synopsis-only strand with 0 beats.");
+            Console.Error.WriteLine($"  [convert] {entityId} '{title}' has no usable content — creating synopsis-only node with 0 beats.");
         }
 
-        // ── Create the Strand ─────────────────────────────────────────────────
-        db.Strands.Add(new Strand
-        {
-            Id         = newStrandId,
-            UniverseId = GlmzUniverseId,
-            Slug       = slug,
-            Title      = title,
-            Synopsis   = synopsis,
-            Kind       = kind,
-            Status     = "draft",
-            SortKey    = 9999.0,
-        });
+        // ── Create the Node ─────────────────────────────────────────────────
+        var node = NodeFactory.Create(kind);
+        node.Id         = newNodeId;
+        node.UniverseId = GlmzUniverseId;
+        node.Slug       = slug;
+        node.Title      = title;
+        node.Synopsis   = synopsis;
+        node.Status     = "draft";
+        node.SortKey    = 9999.0;
+        db.Nodes.Add(node);
 
-        // ── Create Beats + StrandBeats ────────────────────────────────────────
+        // ── Create Beats + NodeBeats ────────────────────────────────────────
         double sortKey = 100.0;
         foreach (var (bTitle, text, bSyn, bAct, bRole, bScene, _) in beatsToInsert.OrderBy(x => x.Idx))
         {
@@ -352,9 +350,9 @@ public static class MigrateLegacyBookChapterCli
                 StructureRole = bRole,
                 SceneType     = bScene,
             });
-            db.StrandBeats.Add(new StrandBeat
+            db.NodeBeats.Add(new NodeBeat
             {
-                StrandId = newStrandId,
+                NodeId = newNodeId,
                 BeatId   = beatId,
                 SortKey  = sortKey,
             });
@@ -400,13 +398,13 @@ public static class MigrateLegacyBookChapterCli
     // ── Static helpers ────────────────────────────────────────────────────────
 
     /// <summary>
-    /// Mirrors <c>StrandMigrationService.Slugify</c>: lowercase, replace
+    /// Mirrors <c>NodeMigrationService.Slugify</c>: lowercase, replace
     /// non-alphanumeric runs with "-", trim leading/trailing dashes.
     /// </summary>
     private static string Slugify(string s) =>
         Regex.Replace(s.ToLowerInvariant().Trim(), @"[^a-z0-9]+", "-").Trim('-');
 
-    /// <summary>Mirrors <c>StrandMigrationService.ComputeTextHash</c>.</summary>
+    /// <summary>Mirrors <c>NodeMigrationService.ComputeTextHash</c>.</summary>
     private static string ComputeTextHash(string text)
     {
         var normalized = (text ?? "").Trim();

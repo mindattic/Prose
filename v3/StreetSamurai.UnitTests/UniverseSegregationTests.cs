@@ -143,29 +143,29 @@ public class UniverseSegregationTests
     }
 
     [Test]
-    public void Strand_QueryFilter_ScopesToCurrentUniverse()
+    public void Node_QueryFilter_ScopesToCurrentUniverse()
     {
         universe.CurrentId = UniverseA;
         using (var db = factory.CreateDbContext())
         {
-            db.Strands.Add(new Strand { Id = Guid.CreateVersion7(), Slug = "a-tale", Title = "A Tale", Kind = "story", Status = "draft" });
+            db.Nodes.Add(new StoryNode { Id = Guid.CreateVersion7(), Slug = "a-tale", Title = "A Tale", Kind = "story", Status = "draft" });
             db.SaveChanges();
         }
         universe.CurrentId = UniverseB;
         using (var db = factory.CreateDbContext())
         {
-            Assert.That(db.Strands.AsNoTracking().Any(s => s.Slug == "a-tale"), Is.False,
-                "a strand lives in exactly one universe");
+            Assert.That(db.Nodes.AsNoTracking().Any(s => s.Slug == "a-tale"), Is.False,
+                "a node lives in exactly one universe");
         }
     }
 
     [Test]
     public void Bootstrap_ParseSlug_ReadsUniverseFlag()
     {
-        Assert.That(UniverseBootstrap.ParseSlug(new[] { "--review-strand", "--universe", "fantasy-steampunk" }),
+        Assert.That(UniverseBootstrap.ParseSlug(new[] { "--review-node", "--universe", "fantasy-steampunk" }),
             Is.EqualTo("fantasy-steampunk"));
         Assert.That(UniverseBootstrap.ParseSlug(new[] { "--universe=glmz", "--k", "5" }), Is.EqualTo("glmz"));
-        Assert.That(UniverseBootstrap.ParseSlug(new[] { "--list-strands" }), Is.Null);
+        Assert.That(UniverseBootstrap.ParseSlug(new[] { "--list-nodes" }), Is.Null);
     }
 
     [Test]

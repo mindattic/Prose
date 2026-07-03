@@ -6,7 +6,7 @@ namespace StreetSamurai.Core.Services;
 /// <summary>
 /// Common shape for free, fully-local TTS engines plugged into the audiobook pipeline.
 /// Each engine synthesizes a text chunk and returns raw PCM s16le 44.1 kHz mono, so the
-/// segment/silence/encode assembly in <see cref="StrandWorkbenchService.PublishAudiobookAsync"/>
+/// segment/silence/encode assembly in <see cref="NodeWorkbenchService.PublishAudiobookAsync"/>
 /// works unchanged regardless of engine.
 /// </summary>
 public interface ILocalTtsEngine

@@ -25,7 +25,7 @@ public static class BeatLensCli
 
         if (slug == null)
         {
-            Console.Error.WriteLine($"Usage: ss --{lens}-check --slug <strandSlug> [--json]");
+            Console.Error.WriteLine($"Usage: ss --{lens}-check --slug <nodeSlug> [--json]");
             return 2;
         }
 
@@ -39,18 +39,18 @@ public static class BeatLensCli
 
         var dbFactory = services.GetRequiredService<IDbContextFactory<StreetSamuraiDbContext>>();
         await using var db = await dbFactory.CreateDbContextAsync();
-        var strand = await db.Strands.AsNoTracking().FirstOrDefaultAsync(s => s.Slug == slug);
-        if (strand == null) { Console.Error.WriteLine($"Strand '{slug}' not found."); return 2; }
+        var node = await db.Nodes.AsNoTracking().FirstOrDefaultAsync(s => s.Slug == slug);
+        if (node == null) { Console.Error.WriteLine($"Node '{slug}' not found."); return 2; }
 
-        if (!json) Console.WriteLine($"Running {lens} lens on '{strand.Title}'…\n");
+        if (!json) Console.WriteLine($"Running {lens} lens on '{node.Title}'…\n");
 
-        var result = await svc.RunAsync(strand.Id);
+        var result = await svc.RunAsync(node.Id);
 
         if (json)
         {
             Console.WriteLine(JsonSerializer.Serialize(new
             {
-                strand_id = result.StrandId, slug = result.Slug, title = result.Title,
+                node_id = result.NodeId, slug = result.Slug, title = result.Title,
                 lens = result.Lens, score = result.Score, recommendation = result.Recommendation,
                 issues = result.Issues.Select(i => new
                 {

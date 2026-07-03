@@ -8,11 +8,11 @@ using StreetSamurai.Core.Services;
 namespace StreetSamurai.Mcp;
 
 // ── Story Audit tools ─────────────────────────────────────────────────────────
-// Two tools that audit a strand against the appropriate commandment set.
+// Two tools that audit a node against the appropriate commandment set.
 //
 //   audit_story_commandments — run all 7 gateway or sequel commandment checks
-//                              (auto-detected from Strand.PreviousStrandId)
-//   set_previous_strand      — link a strand's predecessor to activate sequel mode
+//                              (auto-detected from Node.PreviousNodeId)
+//   set_previous_node      — link a node's predecessor to activate sequel mode
 
 [McpServerToolType]
 public class StoryAuditTools(
@@ -23,24 +23,24 @@ public class StoryAuditTools(
 
     // ── audit_story_commandments ──────────────────────────────────────────────
 
-    /// <summary>Audit a strand against its 7 commandments. Gateway commandments apply when PreviousStrandId is null (standalone or first in series). Sequel commandments apply when PreviousStrandId is set. Each commandment returns pass/warn/fail with evidence and a fix suggestion. The gateway_ready boolean is true when no commandment fails.</summary>
-    [McpServerTool, Description("Audit a strand against all 7 commandments — gateway (for first/standalone stories) or sequel (for stories with a PreviousStrandId set). Auto-detected: null PreviousStrandId → gateway commandments; set → sequel commandments. Each commandment check returns status (pass/warn/fail), specific evidence from the prose, and a concrete one-sentence fix when not passing. Returns gateway_ready (no failing checks), blocking_count (failures), advisory_count (warnings), plus plant_count and orphaned_plants from the PlantPayoff registry (relevant for the 'reward re-reading' commandment). Accepts strand id (GUID) or slug.")]
+    /// <summary>Audit a node against its 7 commandments. Gateway commandments apply when PreviousNodeId is null (standalone or first in series). Sequel commandments apply when PreviousNodeId is set. Each commandment returns pass/warn/fail with evidence and a fix suggestion. The gateway_ready boolean is true when no commandment fails.</summary>
+    [McpServerTool, Description("Audit a node against all 7 commandments — gateway (for first/standalone stories) or sequel (for stories with a PreviousNodeId set). Auto-detected: null PreviousNodeId → gateway commandments; set → sequel commandments. Each commandment check returns status (pass/warn/fail), specific evidence from the prose, and a concrete one-sentence fix when not passing. Returns gateway_ready (no failing checks), blocking_count (failures), advisory_count (warnings), plus plant_count and orphaned_plants from the PlantPayoff registry (relevant for the 'reward re-reading' commandment). Accepts node id (GUID) or slug.")]
     public async Task<string> audit_story_commandments(
-        [Description("Strand id (GUID) or slug.")] string strandIdOrSlug)
+        [Description("Node id (GUID) or slug.")] string nodeIdOrSlug)
     {
-        var strandId = await ResolveStrandAsync(strandIdOrSlug);
-        if (strandId == null)
-            return JsonSerializer.Serialize(new { error = "strand_not_found", strandIdOrSlug }, JsonOpts);
+        var nodeId = await ResolveNodeAsync(nodeIdOrSlug);
+        if (nodeId == null)
+            return JsonSerializer.Serialize(new { error = "node_not_found", nodeIdOrSlug }, JsonOpts);
 
         try
         {
-            var report = await storyAudit.AuditAsync(strandId.Value);
+            var report = await storyAudit.AuditAsync(nodeId.Value);
             return JsonSerializer.Serialize(new
             {
-                strand_slug      = report.StrandSlug,
-                strand_title     = report.StrandTitle,
+                node_slug      = report.NodeSlug,
+                node_title     = report.NodeTitle,
                 mode             = report.Mode,
-                previous_strand  = report.PreviousStrand,
+                previous_node  = report.PreviousNode,
                 gateway_ready    = report.GatewayReady,
                 blocking_count   = report.BlockingCount,
                 advisory_count   = report.AdvisoryCount,
@@ -58,57 +58,57 @@ public class StoryAuditTools(
         }
         catch (Exception ex)
         {
-            return JsonSerializer.Serialize(new { error = ex.Message, strandIdOrSlug }, JsonOpts);
+            return JsonSerializer.Serialize(new { error = ex.Message, nodeIdOrSlug }, JsonOpts);
         }
     }
 
-    // ── set_previous_strand ───────────────────────────────────────────────────
+    // ── set_previous_node ───────────────────────────────────────────────────
 
-    /// <summary>Set or clear a strand's PreviousStrandId to switch between gateway mode (null) and sequel mode (set). When PreviousStrandId is set, the story automatically uses sequel commandments in audit_story_commandments and in beat-writing context injection.</summary>
-    [McpServerTool, Description("Link a strand to its predecessor, switching it from gateway mode to sequel mode. When previous_strand_id_or_slug is provided, Strand.PreviousStrandId is set — the story will use sequel commandments in audits and beat-writing context. To clear (revert to gateway mode), pass clear=true. Accepts both strand arguments as id (GUID) or slug.")]
-    public async Task<string> set_previous_strand(
-        [Description("The strand to update — id (GUID) or slug.")] string strandIdOrSlug,
-        [Description("The preceding strand — id (GUID) or slug. Omit or pass null to clear.")] string? previousStrandIdOrSlug = null,
-        [Description("Set true to clear PreviousStrandId (revert to gateway mode).")] bool clear = false)
+    /// <summary>Set or clear a node's PreviousNodeId to switch between gateway mode (null) and sequel mode (set). When PreviousNodeId is set, the story automatically uses sequel commandments in audit_story_commandments and in beat-writing context injection.</summary>
+    [McpServerTool, Description("Link a node to its predecessor, switching it from gateway mode to sequel mode. When previous_node_id_or_slug is provided, Node.PreviousNodeId is set — the story will use sequel commandments in audits and beat-writing context. To clear (revert to gateway mode), pass clear=true. Accepts both node arguments as id (GUID) or slug.")]
+    public async Task<string> set_previous_node(
+        [Description("The node to update — id (GUID) or slug.")] string nodeIdOrSlug,
+        [Description("The preceding node — id (GUID) or slug. Omit or pass null to clear.")] string? previousNodeIdOrSlug = null,
+        [Description("Set true to clear PreviousNodeId (revert to gateway mode).")] bool clear = false)
     {
-        var strandId = await ResolveStrandAsync(strandIdOrSlug);
-        if (strandId == null)
-            return JsonSerializer.Serialize(new { error = "strand_not_found", strandIdOrSlug }, JsonOpts);
+        var nodeId = await ResolveNodeAsync(nodeIdOrSlug);
+        if (nodeId == null)
+            return JsonSerializer.Serialize(new { error = "node_not_found", nodeIdOrSlug }, JsonOpts);
 
         Guid? prevId = null;
-        if (!clear && !string.IsNullOrWhiteSpace(previousStrandIdOrSlug))
+        if (!clear && !string.IsNullOrWhiteSpace(previousNodeIdOrSlug))
         {
-            prevId = await ResolveStrandAsync(previousStrandIdOrSlug);
+            prevId = await ResolveNodeAsync(previousNodeIdOrSlug);
             if (prevId == null)
-                return JsonSerializer.Serialize(new { error = "previous_strand_not_found", previousStrandIdOrSlug }, JsonOpts);
+                return JsonSerializer.Serialize(new { error = "previous_node_not_found", previousNodeIdOrSlug }, JsonOpts);
         }
 
         await using var db = await dbFactory.CreateDbContextAsync();
-        var strand = await db.Strands.FindAsync(strandId.Value);
-        if (strand == null)
-            return JsonSerializer.Serialize(new { error = "strand_not_found" }, JsonOpts);
+        var node = await db.Nodes.FindAsync(nodeId.Value);
+        if (node == null)
+            return JsonSerializer.Serialize(new { error = "node_not_found" }, JsonOpts);
 
-        strand.PreviousStrandId = prevId;
-        strand.UpdatedAt = DateTime.UtcNow;
+        node.PreviousNodeId = prevId;
+        node.UpdatedAt = DateTime.UtcNow;
         await db.SaveChangesAsync();
 
         return JsonSerializer.Serialize(new
         {
             status            = "updated",
-            strand_slug       = strand.Slug,
+            node_slug       = node.Slug,
             mode              = prevId.HasValue ? "sequel" : "gateway",
-            previous_strand_id = prevId,
+            previous_node_id = prevId,
         }, JsonOpts);
     }
 
     // ── Helper ────────────────────────────────────────────────────────────────
 
-    async Task<Guid?> ResolveStrandAsync(string idOrSlug)
+    async Task<Guid?> ResolveNodeAsync(string idOrSlug)
     {
         if (Guid.TryParse(idOrSlug, out var g)) return g;
         await using var db = await dbFactory.CreateDbContextAsync();
-        var s = await db.Strands.AsNoTracking()
-            .Where(x => x.Slug == idOrSlug || x.StrandCode == idOrSlug)
+        var s = await db.Nodes.AsNoTracking()
+            .Where(x => x.Slug == idOrSlug || x.NodeCode == idOrSlug)
             .Select(x => x.Id)
             .FirstOrDefaultAsync();
         return s == Guid.Empty ? null : s;

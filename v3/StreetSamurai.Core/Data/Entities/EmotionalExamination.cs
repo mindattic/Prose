@@ -1,15 +1,15 @@
 namespace StreetSamurai.Core.Data.Entities;
 
 /// <summary>
-/// One run of the Emotional Intelligence Examination for a strand (SS-A15).
+/// One run of the Emotional Intelligence Examination for a node (SS-A15).
 /// Parent record; cascades to <see cref="EmotionalDimensionResult"/> and
 /// <see cref="EmotionalBeatScore"/> children.
 /// </summary>
 public class EmotionalExamination
 {
     public Guid Id { get; set; }
-    public Guid StrandId { get; set; }
-    public Strand? Strand { get; set; }
+    public Guid NodeId { get; set; }
+    public Node? Node { get; set; }
 
     /// <summary>"draft" | "standard" | "deep"</summary>
     public string EffortTier { get; set; } = "standard";
@@ -17,7 +17,7 @@ public class EmotionalExamination
     /// <summary>Mean(dimension / 4) × 100 → 0–100 aggregate.</summary>
     public double EmotionalDepthScore { get; set; }
 
-    /// <summary>Register read from the strand bible: "CODA" | "JOY" | "SORROW" | "Fantasy" | "".</summary>
+    /// <summary>Register read from the node bible: "CODA" | "JOY" | "SORROW" | "Fantasy" | "".</summary>
     public string Register { get; set; } = "";
 
     /// <summary>SHA-256 of assembled beat text at examination time (staleness marker).</summary>
@@ -80,14 +80,14 @@ public class EmotionalBeatScore
 }
 
 /// <summary>
-/// Per-(strand, character) cache of Want/Need/Wound/Flaw parsed from the strand bible.
-/// Cache-busted on <see cref="SourceBibleHash"/>. Unique on (StrandId, Character).
+/// Per-(node, character) cache of Want/Need/Wound/Flaw parsed from the node bible.
+/// Cache-busted on <see cref="SourceBibleHash"/>. Unique on (NodeId, Character).
 /// </summary>
 public class CharacterEmotionalLedger
 {
     public Guid Id { get; set; }
-    public Guid StrandId { get; set; }
-    public Strand? Strand { get; set; }
+    public Guid NodeId { get; set; }
+    public Node? Node { get; set; }
 
     public string Character { get; set; } = "";
     public string? Want { get; set; }
@@ -99,7 +99,7 @@ public class CharacterEmotionalLedger
     /// <summary>True when ledger was inferred from prose (no bible heading found).</summary>
     public bool Inferred { get; set; }
 
-    /// <summary>SHA-256 of Strand.StrandBible at extraction time. Null triggers refresh.</summary>
+    /// <summary>SHA-256 of Node.NodeBible at extraction time. Null triggers refresh.</summary>
     public string? SourceBibleHash { get; set; }
 
     public DateTime UpdatedAt { get; set; } = DateTime.UtcNow;

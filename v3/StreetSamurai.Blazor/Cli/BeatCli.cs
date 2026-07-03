@@ -9,18 +9,18 @@ namespace StreetSamurai.Blazor.Cli;
 /// <c>ss --beat &lt;subcommand&gt;</c> — fine-grained beat manipulation without the UI.
 ///
 /// Subcommands:
-///   insert  --strand &lt;slug|id&gt; [--after &lt;beatId&gt;] [--text "..."]
-///           Insert a new beat into a strand. With no --after, inserts at the top.
+///   insert  --node &lt;slug|id&gt; [--after &lt;beatId&gt;] [--text "..."]
+///           Insert a new beat into a node. With no --after, inserts at the top.
 ///   delete  --id &lt;beatId&gt;
-///           Delete a beat (soft-delete; the strand loses it immediately).
+///           Delete a beat (soft-delete; the node loses it immediately).
 ///   update  --id &lt;beatId&gt; --text "..."
 ///           Replace a beat's prose. Use `--text -` to read from stdin.
 ///   meta    --id &lt;beatId&gt; [--title "..."] [--kind "..."] [--note "..."] [--in-world-date "..."]
 ///           Update beat metadata without touching prose.
 ///   show    --id &lt;beatId&gt;
 ///           Print a beat's full text and metadata.
-///   list    --strand &lt;slug|id&gt;
-///           List beats in a strand (position, id, first 80 chars of text).
+///   list    --node &lt;slug|id&gt;
+///           List beats in a node (position, id, first 80 chars of text).
 /// </summary>
 public static class BeatCli
 {
@@ -51,21 +51,21 @@ public static class BeatCli
 
     private static async Task<int> InsertAsync(string[] args, IServiceProvider services)
     {
-        string? strandIdOrSlug = null, afterBeatId = null, text = null;
+        string? nodeIdOrSlug = null, afterBeatId = null, text = null;
         for (int i = 0; i < args.Length; i++)
         {
             switch (args[i])
             {
-                case "--strand": if (i + 1 < args.Length) strandIdOrSlug = args[++i]; break;
+                case "--node": if (i + 1 < args.Length) nodeIdOrSlug = args[++i]; break;
                 case "--after":  if (i + 1 < args.Length) afterBeatId = args[++i]; break;
                 case "--text":   if (i + 1 < args.Length) text = args[++i]; break;
             }
         }
-        if (string.IsNullOrWhiteSpace(strandIdOrSlug)) { Console.Error.WriteLine("[beat insert] --strand is required."); return 1; }
+        if (string.IsNullOrWhiteSpace(nodeIdOrSlug)) { Console.Error.WriteLine("[beat insert] --node is required."); return 1; }
 
-        var workbench = services.GetRequiredService<StrandWorkbenchService>();
-        var strandId = await ResolveStrandIdAsync(strandIdOrSlug, services);
-        if (strandId == null) { Console.Error.WriteLine($"[beat insert] Strand '{strandIdOrSlug}' not found."); return 1; }
+        var workbench = services.GetRequiredService<NodeWorkbenchService>();
+        var nodeId = await ResolveNodeIdAsync(nodeIdOrSlug, services);
+        if (nodeId == null) { Console.Error.WriteLine($"[beat insert] Node '{nodeIdOrSlug}' not found."); return 1; }
 
         Guid? afterId = null;
         if (!string.IsNullOrWhiteSpace(afterBeatId))
@@ -76,7 +76,7 @@ public static class BeatCli
 
         if (text == "-") text = await Console.In.ReadToEndAsync();
 
-        var beat = await workbench.InsertBeatAsync(strandId.Value, afterId, text ?? "");
+        var beat = await workbench.InsertBeatAsync(nodeId.Value, afterId, text ?? "");
         Console.WriteLine($"[beat insert] Created beat {beat.Id} at position after={afterId?.ToString() ?? "top"}.");
         return 0;
     }
@@ -85,37 +85,37 @@ public static class BeatCli
 
     private static async Task<int> DeleteAsync(string[] args, IServiceProvider services)
     {
-        string? beatIdStr = null, strandIdOrSlug = null;
+        string? beatIdStr = null, nodeIdOrSlug = null;
         for (int i = 0; i < args.Length; i++)
         {
             switch (args[i])
             {
                 case "--id":     if (i + 1 < args.Length) beatIdStr = args[++i]; break;
-                case "--strand": if (i + 1 < args.Length) strandIdOrSlug = args[++i]; break;
+                case "--node": if (i + 1 < args.Length) nodeIdOrSlug = args[++i]; break;
             }
         }
         if (string.IsNullOrWhiteSpace(beatIdStr)) { Console.Error.WriteLine("[beat delete] --id <beatGuid> is required."); return 1; }
         if (!Guid.TryParse(beatIdStr, out var beatId)) { Console.Error.WriteLine("[beat delete] --id must be a GUID."); return 1; }
 
-        var workbench = services.GetRequiredService<StrandWorkbenchService>();
+        var workbench = services.GetRequiredService<NodeWorkbenchService>();
         var dbFactory = services.GetRequiredService<IDbContextFactory<StreetSamuraiDbContext>>();
 
-        Guid strandId;
-        if (!string.IsNullOrWhiteSpace(strandIdOrSlug))
+        Guid nodeId;
+        if (!string.IsNullOrWhiteSpace(nodeIdOrSlug))
         {
-            var sid = await ResolveStrandIdAsync(strandIdOrSlug, services);
-            if (sid == null) { Console.Error.WriteLine($"[beat delete] Strand '{strandIdOrSlug}' not found."); return 1; }
-            strandId = sid.Value;
+            var sid = await ResolveNodeIdAsync(nodeIdOrSlug, services);
+            if (sid == null) { Console.Error.WriteLine($"[beat delete] Node '{nodeIdOrSlug}' not found."); return 1; }
+            nodeId = sid.Value;
         }
         else
         {
             await using var db = await dbFactory.CreateDbContextAsync();
-            var sb = await db.StrandBeats.AsNoTracking().FirstOrDefaultAsync(x => x.BeatId == beatId);
-            if (sb == null) { Console.Error.WriteLine($"[beat delete] Beat {beatId} not found in any strand."); return 1; }
-            strandId = sb.StrandId;
+            var sb = await db.NodeBeats.AsNoTracking().FirstOrDefaultAsync(x => x.BeatId == beatId);
+            if (sb == null) { Console.Error.WriteLine($"[beat delete] Beat {beatId} not found in any node."); return 1; }
+            nodeId = sb.NodeId;
         }
 
-        await workbench.DeleteBeatAsync(strandId, beatId);
+        await workbench.DeleteBeatAsync(nodeId, beatId);
         Console.WriteLine($"[beat delete] Deleted beat {beatId}.");
         return 0;
     }
@@ -139,7 +139,7 @@ public static class BeatCli
 
         if (text == "-") text = await Console.In.ReadToEndAsync();
 
-        var workbench = services.GetRequiredService<StrandWorkbenchService>();
+        var workbench = services.GetRequiredService<NodeWorkbenchService>();
         await workbench.UpdateBeatTextAsync(beatId, text);
         Console.WriteLine($"[beat update] Beat {beatId} updated ({text.Length} chars).");
         return 0;
@@ -171,8 +171,8 @@ public static class BeatCli
         if (string.IsNullOrWhiteSpace(beatIdStr)) { Console.Error.WriteLine("[beat meta] --id <beatGuid> is required."); return 1; }
         if (!Guid.TryParse(beatIdStr, out var beatId)) { Console.Error.WriteLine("[beat meta] --id must be a GUID."); return 1; }
 
-        var workbench = services.GetRequiredService<StrandWorkbenchService>();
-        var update = new StrandWorkbenchService.BeatMetadataUpdate(title, synopsis, tone, pace, role, act, sceneType, chapterStart, kind);
+        var workbench = services.GetRequiredService<NodeWorkbenchService>();
+        var update = new NodeWorkbenchService.BeatMetadataUpdate(title, synopsis, tone, pace, role, act, sceneType, chapterStart, kind);
         await workbench.UpdateBeatMetadataAsync(beatId, update);
         Console.WriteLine($"[beat meta] Beat {beatId} metadata updated.");
         return 0;
@@ -207,17 +207,17 @@ public static class BeatCli
 
     private static async Task<int> ListAsync(string[] args, IServiceProvider services)
     {
-        string? strandIdOrSlug = null;
+        string? nodeIdOrSlug = null;
         for (int i = 0; i < args.Length; i++)
-            if (args[i] == "--strand" && i + 1 < args.Length) strandIdOrSlug = args[++i];
+            if (args[i] == "--node" && i + 1 < args.Length) nodeIdOrSlug = args[++i];
 
-        if (string.IsNullOrWhiteSpace(strandIdOrSlug)) { Console.Error.WriteLine("[beat list] --strand <slug|id> is required."); return 1; }
+        if (string.IsNullOrWhiteSpace(nodeIdOrSlug)) { Console.Error.WriteLine("[beat list] --node <slug|id> is required."); return 1; }
 
-        var strandId = await ResolveStrandIdAsync(strandIdOrSlug, services);
-        if (strandId == null) { Console.Error.WriteLine($"[beat list] Strand '{strandIdOrSlug}' not found."); return 1; }
+        var nodeId = await ResolveNodeIdAsync(nodeIdOrSlug, services);
+        if (nodeId == null) { Console.Error.WriteLine($"[beat list] Node '{nodeIdOrSlug}' not found."); return 1; }
 
-        var workbench = services.GetRequiredService<StrandWorkbenchService>();
-        var beats = await workbench.GetOrderedBeatsAsync(strandId.Value);
+        var workbench = services.GetRequiredService<NodeWorkbenchService>();
+        var beats = await workbench.GetOrderedBeatsAsync(nodeId.Value);
 
         Console.WriteLine($"{"Pos",-5} {"Id",-36} {"Text preview"}");
         Console.WriteLine(new string('-', 100));
@@ -235,29 +235,29 @@ public static class BeatCli
 
     // ── helpers ───────────────────────────────────────────────────────────────
 
-    private static async Task<Guid?> ResolveStrandIdAsync(string idOrSlug, IServiceProvider services)
+    private static async Task<Guid?> ResolveNodeIdAsync(string idOrSlug, IServiceProvider services)
     {
         var dbFactory = services.GetRequiredService<IDbContextFactory<StreetSamuraiDbContext>>();
         await using var db = await dbFactory.CreateDbContextAsync();
         if (Guid.TryParse(idOrSlug, out var g))
         {
-            var byId = await db.Strands.AsNoTracking().FirstOrDefaultAsync(s => s.Id == g);
+            var byId = await db.Nodes.AsNoTracking().FirstOrDefaultAsync(s => s.Id == g);
             if (byId != null) return byId.Id;
         }
-        var bySlug = await db.Strands.AsNoTracking()
-            .FirstOrDefaultAsync(s => s.Slug == idOrSlug || s.StrandCode == idOrSlug);
+        var bySlug = await db.Nodes.AsNoTracking()
+            .FirstOrDefaultAsync(s => s.Slug == idOrSlug || s.NodeCode == idOrSlug);
         return bySlug?.Id;
     }
 
     private static int PrintUsage()
     {
         Console.Error.WriteLine("Usage: ss --beat <subcommand> [args]");
-        Console.Error.WriteLine("  insert  --strand <slug|id> [--after <beatId>] [--text \"...\"]");
-        Console.Error.WriteLine("  delete  --id <beatId> [--strand <slug|id>]");
+        Console.Error.WriteLine("  insert  --node <slug|id> [--after <beatId>] [--text \"...\"]");
+        Console.Error.WriteLine("  delete  --id <beatId> [--node <slug|id>]");
         Console.Error.WriteLine("  update  --id <beatId> --text \"...\"  (use '-' for stdin)");
         Console.Error.WriteLine("  meta    --id <beatId> [--title \"...\"] [--kind \"...\"] [--synopsis \"...\"] [--tone \"...\"] [--pace \"...\"] [--role \"...\"] [--scene-type \"...\"] [--act N] [--chapter-start]");
         Console.Error.WriteLine("  show    --id <beatId>");
-        Console.Error.WriteLine("  list    --strand <slug|id>");
+        Console.Error.WriteLine("  list    --node <slug|id>");
         return 1;
     }
 }

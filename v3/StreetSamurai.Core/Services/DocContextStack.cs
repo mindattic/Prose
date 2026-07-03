@@ -4,13 +4,13 @@ namespace StreetSamurai.Core.Services;
 
 /// <summary>
 /// Per-context LRU working memory for canon <c>.md</c> documents — the document analog of
-/// <see cref="EntityContextStack"/>. Keyed by a context id (StrandId for the prose engine;
+/// <see cref="EntityContextStack"/>. Keyed by a context id (NodeId for the prose engine;
 /// a session key for the Claude Code hook). This is the "rotating cast" of pertinent docs:
 /// the few that matter right now are resident; the rest stay in the DB.
 ///
 /// Tier rules:
 ///   <c>always</c> — pinned; never evicted (the small universal core).
-///   <c>strand</c> — pinned while its scope matches the active context; never decays.
+///   <c>node</c> — pinned while its scope matches the active context; never decays.
 ///   <c>topic</c>  — LRU: evicted after <see cref="EvictAfterActions"/> actions without a
 ///                   refresh, and capped at <see cref="TopicCapacity"/> (oldest topic dropped
 ///                   when over). This is the load-when-relevant / unload-when-not behaviour.
@@ -26,7 +26,7 @@ public sealed class DocContextStack
         string Tier,
         string Scope,
         string Triggers,
-        string Reason,            // provenance, e.g. "always" | "strand:BCODA" | "keyword:schism" | "embedding 0.71"
+        string Reason,            // provenance, e.g. "always" | "node:BCODA" | "keyword:schism" | "embedding 0.71"
         double Score,
         int PushedAtAction,
         int LastTouchedAction);
@@ -40,8 +40,8 @@ public sealed class DocContextStack
     private readonly ConcurrentDictionary<Guid, ContextState> contexts = new();
     private ContextState GetOrCreate(Guid contextId) => contexts.GetOrAdd(contextId, _ => new ContextState());
 
-    private static bool IsPinned(StackEntry e) => e.Tier is "always" or "strand";
-    private static int TierRank(string tier) => tier switch { "always" => 0, "strand" => 1, _ => 2 };
+    private static bool IsPinned(StackEntry e) => e.Tier is "always" or "node";
+    private static int TierRank(string tier) => tier switch { "always" => 0, "node" => 1, _ => 2 };
 
     /// <summary>Call at the start of each action/beat/turn. Advances the LRU clock and evicts stale topic docs.</summary>
     public void BeginAction(Guid contextId)
@@ -80,7 +80,7 @@ public sealed class DocContextStack
                 state.Entries[id] = e with { LastTouchedAction = state.ActionCounter };
     }
 
-    /// <summary>Active docs ordered by tier (always → strand → topic), then most-recently-touched, then score.</summary>
+    /// <summary>Active docs ordered by tier (always → node → topic), then most-recently-touched, then score.</summary>
     public IReadOnlyList<StackEntry> GetActive(Guid contextId)
     {
         if (!contexts.TryGetValue(contextId, out var state)) return [];

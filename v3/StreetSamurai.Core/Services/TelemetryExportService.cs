@@ -50,7 +50,7 @@ public sealed class TelemetryExportService
     private sealed record TickDto(int second, int beatIndex, string beatTitle, int docsLoaded, int entitiesLoaded);
     private sealed record FreqDto(string path, string tier, int count);
     private sealed record SummaryDto(
-        string runId, string strandSlug, string label, bool docContextEnabled,
+        string runId, string nodeSlug, string label, bool docContextEnabled,
         string startedAt, string endedAt, double durationSec,
         double baselineScore, double finalScore, double scoreDelta,
         double baselineFlow, double finalFlow, double flowDelta,
@@ -102,7 +102,7 @@ public sealed class TelemetryExportService
 
         var beatCount = run.Beats.Count;
         return new SummaryDto(
-            run.RunId.ToString("N"), run.StrandSlug, run.Label, run.DocContextEnabled,
+            run.RunId.ToString("N"), run.NodeSlug, run.Label, run.DocContextEnabled,
             start.ToString("u"), end.ToString("u"), Math.Round((end - start).TotalSeconds, 1),
             run.BaselineScore, run.FinalScore, Math.Round(run.FinalScore - run.BaselineScore, 2),
             run.BaselineFlow, run.FinalFlow, Math.Round(run.FinalFlow - run.BaselineFlow, 2),
@@ -117,7 +117,7 @@ public sealed class TelemetryExportService
     private static string BuildLog(ContextTelemetryService.Run run, SummaryDto s)
     {
         var sb = new StringBuilder();
-        sb.AppendLine($"=== Doc Context Telemetry — {s.strandSlug} ({s.label}) ===");
+        sb.AppendLine($"=== Doc Context Telemetry — {s.nodeSlug} ({s.label}) ===");
         sb.AppendLine($"runId={s.runId}  DocContext={(s.docContextEnabled ? "ON" : "OFF")}");
         sb.AppendLine($"started={s.startedAt}  ended={s.endedAt}  duration={s.durationSec}s  beats={s.beatCount}");
         sb.AppendLine($"score {s.baselineScore:0.00} -> {s.finalScore:0.00}  (delta {s.scoreDelta:+0.00;-0.00;0.00})");
@@ -153,7 +153,7 @@ public sealed class TelemetryExportService
 <title>Doc Context Telemetry</title>
 <style>
   :root{--bg:#0e1116;--panel:#171b22;--line:#262c36;--ink:#e6edf3;--mut:#8b949e;
-        --always:#f0a868;--strand:#6cb6ff;--topic:#7ee787;--ent:#d2a8ff;--up:#3fb950;--down:#f85149}
+        --always:#f0a868;--node:#6cb6ff;--topic:#7ee787;--ent:#d2a8ff;--up:#3fb950;--down:#f85149}
   *{box-sizing:border-box} body{margin:0;background:var(--bg);color:var(--ink);
     font:14px/1.5 ui-monospace,SFMono-Regular,Menlo,monospace}
   header{padding:20px 24px;border-bottom:1px solid var(--line)}
@@ -180,7 +180,7 @@ public sealed class TelemetryExportService
   <h2>Per-second timeline — bar height = docs+entities loaded; segments by tier</h2>
   <div class="legend">
     <span><span class="dot" style="background:var(--always)"></span>always</span>
-    <span><span class="dot" style="background:var(--strand)"></span>strand</span>
+    <span><span class="dot" style="background:var(--node)"></span>node</span>
     <span><span class="dot" style="background:var(--topic)"></span>topic</span>
     <span><span class="dot" style="background:var(--ent)"></span>entities</span>
   </div>
@@ -192,8 +192,8 @@ public sealed class TelemetryExportService
 <script id="data" type="application/json">__DATA__</script>
 <script>
 const D=JSON.parse(document.getElementById('data').textContent);
-const tierColor={always:'var(--always)',strand:'var(--strand)',topic:'var(--topic)'};
-document.getElementById('title').textContent=`Doc Context Telemetry — ${D.strandSlug}`;
+const tierColor={always:'var(--always)',node:'var(--node)',topic:'var(--topic)'};
+document.getElementById('title').textContent=`Doc Context Telemetry — ${D.nodeSlug}`;
 document.getElementById('meta').textContent=`${D.label} · DocContext ${D.docContextEnabled?'ON':'OFF'} · ${D.beatCount} beats · ${D.durationSec}s · run ${D.runId.slice(0,8)}`;
 const sd=D.scoreDelta, fd=D.flowDelta;
 const card=(k,v,cls='')=>`<div class="card"><div class="k">${k}</div><div class="v ${cls}">${v}</div></div>`;
@@ -210,8 +210,8 @@ const maxLoad=Math.max(1,...D.beats.map(b=>b.docs.length+b.entities.length));
 D.beats.forEach(b=>{
   const total=b.docs.length+b.entities.length;
   const bar=document.createElement('div'); bar.className='bar'; bar.style.height='100%';
-  const tiers={always:0,strand:0,topic:0}; b.docs.forEach(d=>tiers[d.tier]=(tiers[d.tier]||0)+1);
-  const parts=[['always',tiers.always],['strand',tiers.strand],['topic',tiers.topic],['ent',b.entities.length]];
+  const tiers={always:0,node:0,topic:0}; b.docs.forEach(d=>tiers[d.tier]=(tiers[d.tier]||0)+1);
+  const parts=[['always',tiers.always],['node',tiers.node],['topic',tiers.topic],['ent',b.entities.length]];
   parts.forEach(([t,n])=>{ if(!n)return; const seg=document.createElement('div'); seg.className='seg';
     seg.style.height=(n/maxLoad*100)+'%'; seg.style.background=t==='ent'?'var(--ent)':tierColor[t]; bar.appendChild(seg);});
   bar.onmousemove=e=>{tip.style.display='block';tip.style.left=(e.clientX+12)+'px';tip.style.top=(e.clientY+12)+'px';

@@ -8,7 +8,7 @@ namespace StreetSamurai.Core.Services;
 
 // ── Structural Diagnostic Service ─────────────────────────────────────────────
 //
-// Pre-flight structural analysis for prose beats/strands. Runs BEFORE the
+// Pre-flight structural analysis for prose beats/nodes. Runs BEFORE the
 // 60-ballot review panel so you catch category-level problems (missing antagonist
 // cost, passive protagonist, exposition-only chapters) instead of discovering
 // them from a low score after spending 60 LLM votes.
@@ -18,8 +18,8 @@ namespace StreetSamurai.Core.Services;
 // one-action fix. Blocking failures suppress the review recommendation.
 //
 // Usage:
-//   ss --diagnose-strand --slug <slug>
-//   MCP: diagnose_strand(strandIdOrSlug)
+//   ss --diagnose-node --slug <slug>
+//   MCP: diagnose_node(nodeIdOrSlug)
 
 /// <summary>Structural check result tier.</summary>
 public enum StructuralCheckResult { Pass, Warn, Fail }
@@ -33,9 +33,9 @@ public record StructuralCheck(
     string Fix,
     bool IsBlocking);
 
-/// <summary>Full structural diagnosis for a strand.</summary>
+/// <summary>Full structural diagnosis for a node.</summary>
 public record StructuralDiagnosisResult(
-    Guid StrandId,
+    Guid NodeId,
     string Slug,
     string Title,
     int PassCount,
@@ -48,7 +48,7 @@ public record StructuralDiagnosisResult(
 /// <summary>
 /// Pre-flight structural analysis for prose. Runs 12 targeted LLM checks in
 /// parallel and returns typed Pass/Warn/Fail findings with evidence and fixes.
-/// Call this before <c>review_strand</c> — a structural failure will cap scores
+/// Call this before <c>review_node</c> — a structural failure will cap scores
 /// regardless of prose quality, and the fix is always bigger than a line edit.
 /// </summary>
 public class StructuralDiagnosticService
@@ -72,33 +72,33 @@ public class StructuralDiagnosticService
 
     // ── Public entry points ───────────────────────────────────────────────────
 
-    public async Task<StructuralDiagnosisResult> DiagnoseStrandAsync(
-        Guid strandId, int maxChars = 40000, CancellationToken ct = default)
+    public async Task<StructuralDiagnosisResult> DiagnoseNodeAsync(
+        Guid nodeId, int maxChars = 40000, CancellationToken ct = default)
     {
         await using var db = await dbFactory.CreateDbContextAsync(ct);
 
-        var strand = await db.Strands.AsNoTracking()
-            .FirstOrDefaultAsync(s => s.Id == strandId, ct)
-            ?? throw new InvalidOperationException($"Strand {strandId} not found.");
+        var node = await db.Nodes.AsNoTracking()
+            .FirstOrDefaultAsync(s => s.Id == nodeId, ct)
+            ?? throw new InvalidOperationException($"Node {nodeId} not found.");
 
         var beats = await (
-            from sb in db.StrandBeats.AsNoTracking()
+            from sb in db.NodeBeats.AsNoTracking()
             join b in db.Beats.AsNoTracking() on sb.BeatId equals b.Id
-            where sb.StrandId == strandId
+            where sb.NodeId == nodeId
             orderby sb.SortKey
             select b.Text
         ).ToListAsync(ct);
 
         var text = string.Join("\n\n---\n\n", beats.Where(t => !string.IsNullOrWhiteSpace(t)));
 
-        return await DiagnoseTextAsync(strandId, strand.Slug, strand.Title, text, maxChars, ct);
+        return await DiagnoseTextAsync(nodeId, node.Slug, node.Title, text, maxChars, ct);
     }
 
     public async Task<StructuralDiagnosisResult> DiagnoseTextAsync(
-        Guid strandId, string slug, string title, string text, int maxChars = 40000, CancellationToken ct = default)
+        Guid nodeId, string slug, string title, string text, int maxChars = 40000, CancellationToken ct = default)
     {
         if (string.IsNullOrWhiteSpace(text))
-            return Empty(strandId, slug, title);
+            return Empty(nodeId, slug, title);
 
         // Run all 12 checks in parallel — each is a narrow LLM call
         var checkTasks = new[]
@@ -124,22 +124,22 @@ public class StructuralDiagnosticService
         int fail     = checks.Count(c => c.Result == StructuralCheckResult.Fail);
 
         // The blocking checks are CHAPTER-SCOPED ("by the end of the chapter") and
-        // each only sees the first `maxChars` of the strand (see Truncate). When the
-        // strand exceeds that window — a whole book or a long multi-chapter strand —
+        // each only sees the first `maxChars` of the node (see Truncate). When the
+        // node exceeds that window — a whole book or a long multi-chapter node —
         // a "fail" reflects only the opening fragment (e.g. "no behavior change yet"
         // is expected in a book's first 40k chars) and is NOT grounds to block the
         // review. In that case the structural checks are ADVISORY only: surface them
         // as warnings but never block, and don't file false-positive findings. Use
-        // per-segment review (review by act/chapter) to gate large strands properly.
+        // per-segment review (review by act/chapter) to gate large nodes properly.
         bool truncated = text.Length > maxChars;
         bool blocking  = !truncated && checks.Any(c => c.IsBlocking && c.Result == StructuralCheckResult.Fail);
 
         // File blocking failures as findings so they surface at /findings — but only
-        // when the checks actually saw the whole strand (not a truncated opening).
+        // when the checks actually saw the whole node (not a truncated opening).
         foreach (var check in checks.Where(c => !truncated && c.IsBlocking && c.Result == StructuralCheckResult.Fail))
         {
             findings.Upsert(
-                filePath: $"strand:{slug}",
+                filePath: $"node:{slug}",
                 chapterId: null,
                 category: FindingCategory.Other,
                 severity: FindingSeverity.High,
@@ -151,13 +151,13 @@ public class StructuralDiagnosticService
         string recommendation = blocking
             ? "Fix blocking failures before running review panel — structural issues cap scores regardless of prose quality."
             : truncated
-                ? "Strand exceeds the diagnostic window — structural checks ran on the opening fragment only and are ADVISORY (not blocking). Use per-act/segmented review to gate large strands."
+                ? "Node exceeds the diagnostic window — structural checks ran on the opening fragment only and are ADVISORY (not blocking). Use per-act/segmented review to gate large nodes."
                 : fail + warn > 4
                     ? "Address warnings before committing to 60 ballots — multiple weak signals compound into a low score."
                     : "Ready to review.";
 
         return new StructuralDiagnosisResult(
-            strandId, slug, title,
+            nodeId, slug, title,
             pass, warn, fail,
             blocking,
             checks,
@@ -502,6 +502,6 @@ Set jargon_count to an integer. pass = 0-2 jargon terms before first physical be
         return start >= 0 && end > start ? raw[start..(end + 1)] : raw;
     }
 
-    private static StructuralDiagnosisResult Empty(Guid strandId, string slug, string title) =>
-        new(strandId, slug, title, 0, 0, 0, false, [], "No prose found — nothing to diagnose.");
+    private static StructuralDiagnosisResult Empty(Guid nodeId, string slug, string title) =>
+        new(nodeId, slug, title, 0, 0, 0, false, [], "No prose found — nothing to diagnose.");
 }

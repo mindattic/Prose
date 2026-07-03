@@ -17,7 +17,7 @@ namespace StreetSamurai.Core.Services;
 /// <code>
 ///   AudioStore:Provider          = "azureblob"
 ///   AudioStore:ConnectionString  = "DefaultEndpointsProtocol=https;…"
-///   AudioStore:Container         = "strands-audio"          // default
+///   AudioStore:Container         = "nodes-audio"          // default
 ///   AudioStore:SasTtlMinutes     = "30"                     // default 30 min
 /// </code>
 /// The connection string can also be supplied via the env-var fallback
@@ -63,7 +63,7 @@ public class AzureBlobAudioStore : IAudioStore
             ?? throw new InvalidOperationException("AzureBlobAudioStore requires AudioStore:ConnectionString.");
         var containerName = config["MindAttic:Vault:AudioStore:container"]
             ?? config["AudioStore:Container"]
-            ?? "strands-audio";
+            ?? "nodes-audio";
         var ttlMinutes = int.TryParse(config["AudioStore:SasTtlMinutes"], out var t) ? t : 30;
         sasTtl = TimeSpan.FromMinutes(Math.Clamp(ttlMinutes, 1, 60 * 24));
         var serviceClient = new BlobServiceClient(connStr);
@@ -99,11 +99,11 @@ public class AzureBlobAudioStore : IAudioStore
 
     public bool SupportsLocalPaths => false;
 
-    public async Task<string> WriteBeatAsync(string strandSlug, Guid beatId, string extension, byte[] bytes, CancellationToken ct = default)
+    public async Task<string> WriteBeatAsync(string nodeSlug, Guid beatId, string extension, byte[] bytes, CancellationToken ct = default)
     {
         await EnsureContainerAsync(ct);
         var ext = extension.TrimStart('.');
-        var rel = $"{strandSlug}/audio/{beatId:N}.{ext}";
+        var rel = $"{nodeSlug}/audio/{beatId:N}.{ext}";
         var blob = container.GetBlobClient(rel);
         using var ms = new MemoryStream(bytes);
         var headers = new BlobHttpHeaders { ContentType = MimeFor(ext) };
@@ -111,11 +111,11 @@ public class AzureBlobAudioStore : IAudioStore
         return rel;
     }
 
-    public async Task<string> WriteCombinedAsync(string strandSlug, string extension, byte[] bytes, CancellationToken ct = default)
+    public async Task<string> WriteCombinedAsync(string nodeSlug, string extension, byte[] bytes, CancellationToken ct = default)
     {
         await EnsureContainerAsync(ct);
         var ext = extension.TrimStart('.');
-        var rel = $"{strandSlug}/strand.{ext}";
+        var rel = $"{nodeSlug}/node.{ext}";
         var blob = container.GetBlobClient(rel);
         using var ms = new MemoryStream(bytes);
         var headers = new BlobHttpHeaders { ContentType = MimeFor(ext) };
@@ -123,11 +123,11 @@ public class AzureBlobAudioStore : IAudioStore
         return rel;
     }
 
-    public async Task<string> WriteCombinedFromStreamAsync(string strandSlug, string extension, Stream src, CancellationToken ct = default)
+    public async Task<string> WriteCombinedFromStreamAsync(string nodeSlug, string extension, Stream src, CancellationToken ct = default)
     {
         await EnsureContainerAsync(ct);
         var ext = extension.TrimStart('.');
-        var rel = $"{strandSlug}/strand.{ext}";
+        var rel = $"{nodeSlug}/node.{ext}";
         var blob = container.GetBlobClient(rel);
         var headers = new BlobHttpHeaders { ContentType = MimeFor(ext) };
         await blob.UploadAsync(src, new BlobUploadOptions { HttpHeaders = headers }, ct);
@@ -168,17 +168,17 @@ public class AzureBlobAudioStore : IAudioStore
     public Task<string?> ResolveLocalPathAsync(string relativePath, CancellationToken ct = default)
         => Task.FromResult<string?>(null);
 
-    public string BuildPlaybackUrl(Guid strandId, Guid beatId, string relativePath, string? cacheBust = null)
+    public string BuildPlaybackUrl(Guid nodeId, Guid beatId, string relativePath, string? cacheBust = null)
     {
         // Even with blob storage we route through the app's auth-checked
-        // endpoint by default — the api/strands/.../audio handler proxies
+        // endpoint by default — the api/nodes/.../audio handler proxies
         // OpenReadAsync. This keeps the URL stable, auth-enforced, and
         // doesn't leak SAS tokens into browser history. The app can opt
         // into SAS direct-streaming later by overriding this method or
         // adding a config flag.
         return string.IsNullOrEmpty(cacheBust)
-            ? $"/api/strands/{strandId}/beat/{beatId}/audio"
-            : $"/api/strands/{strandId}/beat/{beatId}/audio?v={Uri.EscapeDataString(cacheBust)}";
+            ? $"/api/nodes/{nodeId}/beat/{beatId}/audio"
+            : $"/api/nodes/{nodeId}/beat/{beatId}/audio?v={Uri.EscapeDataString(cacheBust)}";
     }
 
     public async Task<DateTimeOffset?> GetLastModifiedAsync(string relativePath, CancellationToken ct = default)
