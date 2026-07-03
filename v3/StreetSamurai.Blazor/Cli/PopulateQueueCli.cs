@@ -7,7 +7,7 @@ namespace StreetSamurai.Blazor.Cli;
 /// Populates the DistributedWorkQueue with work items for remote workers.
 ///
 ///   ss --populate-queue --entity-review [--types weapon,equipment,...]
-///   ss --populate-queue --node-review [--node-id GUID] [--readers 5]
+///   ss --populate-queue --story-review [--node-id GUID] [--readers 5]
 ///   ss --populate-queue --beat-write    [--node-id GUID]
 ///   ss --populate-queue --status
 /// </summary>
@@ -26,7 +26,7 @@ public static class PopulateQueueCli
     {
         var coordinator  = sp.GetRequiredService<DistributedWorkerCoordinator>();
         var doEntityReview = args.Contains("--entity-review");
-        var doNodeReview = args.Contains("--node-review");
+        var doNodeReview = args.Contains("--story-review");
         var doBeatWrite    = args.Contains("--beat-write");
         var doStatus       = args.Contains("--status");
 
@@ -34,7 +34,7 @@ public static class PopulateQueueCli
         {
             Console.WriteLine("Usage:");
             Console.WriteLine("  ss --populate-queue --entity-review [--types weapon,equipment,...]  [--ballots 10] [--prose 2]");
-            Console.WriteLine("  ss --populate-queue --node-review [--node-id GUID] [--readers 5]");
+            Console.WriteLine("  ss --populate-queue --story-review [--node-id GUID] [--readers 5]");
             Console.WriteLine("  ss --populate-queue --beat-write    [--node-id GUID]");
             Console.WriteLine("  ss --populate-queue --status");
             return 0;

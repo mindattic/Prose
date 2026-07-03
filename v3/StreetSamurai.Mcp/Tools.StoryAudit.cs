@@ -12,7 +12,7 @@ namespace StreetSamurai.Mcp;
 //
 //   audit_story_commandments — run all 7 gateway or sequel commandment checks
 //                              (auto-detected from Node.PreviousNodeId)
-//   set_previous_node      — link a node's predecessor to activate sequel mode
+//   set_previous_story      — link a node's predecessor to activate sequel mode
 
 [McpServerToolType]
 public class StoryAuditTools(
@@ -62,11 +62,11 @@ public class StoryAuditTools(
         }
     }
 
-    // ── set_previous_node ───────────────────────────────────────────────────
+    // ── set_previous_story ───────────────────────────────────────────────────
 
     /// <summary>Set or clear a node's PreviousNodeId to switch between gateway mode (null) and sequel mode (set). When PreviousNodeId is set, the story automatically uses sequel commandments in audit_story_commandments and in beat-writing context injection.</summary>
     [McpServerTool, Description("Link a node to its predecessor, switching it from gateway mode to sequel mode. When previous_node_id_or_slug is provided, Node.PreviousNodeId is set — the story will use sequel commandments in audits and beat-writing context. To clear (revert to gateway mode), pass clear=true. Accepts both node arguments as id (GUID) or slug.")]
-    public async Task<string> set_previous_node(
+    public async Task<string> set_previous_story(
         [Description("The node to update — id (GUID) or slug.")] string nodeIdOrSlug,
         [Description("The preceding node — id (GUID) or slug. Omit or pass null to clear.")] string? previousNodeIdOrSlug = null,
         [Description("Set true to clear PreviousNodeId (revert to gateway mode).")] bool clear = false)

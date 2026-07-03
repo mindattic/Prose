@@ -402,7 +402,7 @@ public class NodeWorkbenchService
     /// <summary>
     /// Create an empty root node (no beats) — the bible-first entry point for a
     /// brand-new story. The author writes/imports the bible and beats afterward
-    /// (via the UI, <c>--edit-beat</c>, or <c>--write-node</c>). UniverseId is
+    /// (via the UI, <c>--edit-beat</c>, or <c>--write-story</c>). UniverseId is
     /// stamped to the current universe on save (GLMZ in headless/CLI). Returns the
     /// new id + slug.
     /// </summary>

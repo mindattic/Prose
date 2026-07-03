@@ -6,7 +6,7 @@ using StreetSamurai.Core.Services;
 namespace StreetSamurai.Blazor.Cli;
 
 /// <summary>
-/// <c>ss --import-node --file path.node</c> — materialize a node from a
+/// <c>ss --import-story --file path.node</c> — materialize a node from a
 /// human-authored "beat + gap + beat" text file. The complement to
 /// <see cref="WriteNodeCli"/> (which generates nodes via the LLM) — this
 /// is for hand-authored content (a draft pasted in from a chat, a transcript,
@@ -67,8 +67,8 @@ public static class ImportNodeCli
 
         if (string.IsNullOrWhiteSpace(file))
         {
-            Console.Error.WriteLine("[import-node] --file is required (or '-' for stdin).");
-            Console.Error.WriteLine("Usage: ss --import-node --file path.node [--title ...] [--kind ...] [--slug ...] [--parent ...] [--dry-run]");
+            Console.Error.WriteLine("[import-story] --file is required (or '-' for stdin).");
+            Console.Error.WriteLine("Usage: ss --import-story --file path.node [--title ...] [--kind ...] [--slug ...] [--parent ...] [--dry-run]");
             return 2;
         }
 
@@ -81,7 +81,7 @@ public static class ImportNodeCli
         {
             if (!File.Exists(file))
             {
-                Console.Error.WriteLine($"[import-node] File not found: {file}");
+                Console.Error.WriteLine($"[import-story] File not found: {file}");
                 return 1;
             }
             raw = await File.ReadAllTextAsync(file);
@@ -91,25 +91,25 @@ public static class ImportNodeCli
         try { parsed = NodeFileParser.Parse(raw); }
         catch (Exception ex)
         {
-            Console.Error.WriteLine($"[import-node] Parse failed: {ex.Message}");
+            Console.Error.WriteLine($"[import-story] Parse failed: {ex.Message}");
             return 1;
         }
 
         if (parsed.Beats.Count == 0)
         {
-            Console.Error.WriteLine("[import-node] No beats found in the file.");
+            Console.Error.WriteLine("[import-story] No beats found in the file.");
             return 1;
         }
 
         var title = !string.IsNullOrWhiteSpace(titleOverride) ? titleOverride : parsed.Title;
         if (string.IsNullOrWhiteSpace(title))
         {
-            Console.Error.WriteLine("[import-node] No # Title: header and no --title override.");
+            Console.Error.WriteLine("[import-story] No # Title: header and no --title override.");
             return 1;
         }
         var kind = !string.IsNullOrWhiteSpace(kindOverride) ? kindOverride : (parsed.Kind ?? "episode");
 
-        Console.WriteLine($"[import-node] file={file} title=\"{title}\" kind={kind} beats={parsed.Beats.Count} dry-run={dryRun}");
+        Console.WriteLine($"[import-story] file={file} title=\"{title}\" kind={kind} beats={parsed.Beats.Count} dry-run={dryRun}");
         for (int i = 0; i < parsed.Beats.Count; i++)
         {
             var b = parsed.Beats[i];
@@ -125,7 +125,7 @@ public static class ImportNodeCli
             Console.WriteLine($"  {i + 1,3}. {preview}{metaStr}");
         }
 
-        if (dryRun) { Console.WriteLine("[import-node] dry-run — nothing written."); return 0; }
+        if (dryRun) { Console.WriteLine("[import-story] dry-run — nothing written."); return 0; }
 
         var dbFactory = services.GetRequiredService<IDbContextFactory<StreetSamuraiDbContext>>();
         await using var db = await dbFactory.CreateDbContextAsync();
@@ -134,7 +134,7 @@ public static class ImportNodeCli
         if (!string.IsNullOrWhiteSpace(parentSlug))
         {
             var p = await db.Nodes.FirstOrDefaultAsync(s => s.Slug == parentSlug);
-            if (p == null) { Console.Error.WriteLine($"[import-node] --parent slug not found: {parentSlug}"); return 1; }
+            if (p == null) { Console.Error.WriteLine($"[import-story] --parent slug not found: {parentSlug}"); return 1; }
             parentNodeId = p.Id;
         }
 
@@ -198,14 +198,14 @@ public static class ImportNodeCli
         await tx.CommitAsync();
 
         Console.WriteLine();
-        Console.WriteLine($"[import-node] OK — {parsed.Beats.Count} beats written.");
+        Console.WriteLine($"[import-story] OK — {parsed.Beats.Count} beats written.");
         Console.WriteLine($"   Id:    {nodeId}");
         Console.WriteLine($"   Slug:  {slug}");
         Console.WriteLine($"   Title: {title}");
         Console.WriteLine($"   Kind:  {kind}");
         if (parentNodeId.HasValue) Console.WriteLine($"   Parent: {parentSlug} ({parentNodeId})");
         Console.WriteLine($"   URL:   https://localhost:7103/node/{slug}");
-        Console.WriteLine($"   Next:  open the URL to edit, or run ss --narrate-node --slug {slug} to record.");
+        Console.WriteLine($"   Next:  open the URL to edit, or run ss --narrate-story --slug {slug} to record.");
         return 0;
     }
 

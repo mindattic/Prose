@@ -7,7 +7,7 @@ using StreetSamurai.Core.Services;
 namespace StreetSamurai.Blazor.Cli;
 
 /// <summary>
-/// <c>ss --review-node</c> — have N Legion personas each read an EXISTING
+/// <c>ss --review-story</c> — have N Legion personas each read an EXISTING
 /// node and write an honest, scored reader review (saved to NodeReviews),
 /// then synthesize the Amazon-style aggregate (NodeReviewSummaries). The
 /// reviewers are round-robined across the trusted-4 providers for genuine model
@@ -100,7 +100,7 @@ public static class ReviewNodeCli
         var profile = ReviewEffortProfile.Resolve(effort);
         if (effort != null && profile == null)
         {
-            Console.Error.WriteLine($"[review-node] Unknown --effort '{effort}'. Known tiers: {ReviewEffortProfile.KnownTiers}.");
+            Console.Error.WriteLine($"[review-story] Unknown --effort '{effort}'. Known tiers: {ReviewEffortProfile.KnownTiers}.");
             return 1;
         }
         if (profile != null)
@@ -112,8 +112,8 @@ public static class ReviewNodeCli
 
         if (string.IsNullOrWhiteSpace(id) && string.IsNullOrWhiteSpace(slug) && string.IsNullOrWhiteSpace(code))
         {
-            Console.Error.WriteLine("[review-node] One of --id, --slug, or --code is required.");
-            Console.Error.WriteLine("Usage: ss --review-node (--id <guid|prefix> | --slug <slug> | --code <code>) [--effort draft|standard|deep] [--readers N]");
+            Console.Error.WriteLine("[review-story] One of --id, --slug, or --code is required.");
+            Console.Error.WriteLine("Usage: ss --review-story (--id <guid|prefix> | --slug <slug> | --code <code>) [--effort draft|standard|deep] [--readers N]");
             Console.Error.WriteLine("  --effort draft     ~6 calls — mid-draft spot check (per-beat gripes; not a gate)");
             Console.Error.WriteLine("  --effort standard  ~15 calls — standalone gate (>=82%)");
             Console.Error.WriteLine("  --effort deep      ~37 calls — cumulative/publish gate (>=85%)");
@@ -131,7 +131,7 @@ public static class ReviewNodeCli
         if (!string.IsNullOrWhiteSpace(genre))
         {
             reviewer.GenreOverride = genre;
-            Console.WriteLine($"[review-node] Genre override: \"{genre}\" — reviewers are {genre} fans, not cyberpunk.");
+            Console.WriteLine($"[review-story] Genre override: \"{genre}\" — reviewers are {genre} fans, not cyberpunk.");
         }
 
         Guid nodeId; string nodeSlug, nodeTitle;
@@ -151,7 +151,7 @@ public static class ReviewNodeCli
                 var matches = await query.Where(s => s.Id.ToString().StartsWith(prefix)).Take(2).ToListAsync();
                 if (matches.Count > 1)
                 {
-                    Console.Error.WriteLine($"[review-node] Id prefix '{id}' is ambiguous. Use a longer prefix or the full id.");
+                    Console.Error.WriteLine($"[review-story] Id prefix '{id}' is ambiguous. Use a longer prefix or the full id.");
                     return 1;
                 }
                 node = matches.FirstOrDefault();
@@ -159,7 +159,7 @@ public static class ReviewNodeCli
             if (node == null)
             {
                 var locator = code != null ? $"code '{code}'" : slug != null ? $"slug '{slug}'" : $"id '{id}'";
-                Console.Error.WriteLine($"[review-node] No node found for {locator}.");
+                Console.Error.WriteLine($"[review-story] No node found for {locator}.");
                 return 1;
             }
             nodeId = node.Id; nodeSlug = node.Slug; nodeTitle = node.Title;
@@ -169,7 +169,7 @@ public static class ReviewNodeCli
         // The census/study/focus-group paths still run on the cloud panel.
         if (useLocal && (study || census || samePersonas || !string.IsNullOrWhiteSpace(group)))
         {
-            Console.Error.WriteLine("[review-node] --local applies to the default sampled review and --by-act only; "
+            Console.Error.WriteLine("[review-story] --local applies to the default sampled review and --by-act only; "
                 + "--census/--study/--group/--same-personas still run on the cloud panel. Ignoring --local for this run.");
             useLocal = false;
         }
@@ -179,23 +179,23 @@ public static class ReviewNodeCli
         if (study)
         {
             if (panel <= 0) panel = 128;
-            Console.WriteLine("[review-node] SEGMENT STUDY:");
+            Console.WriteLine("[review-story] SEGMENT STUDY:");
             Console.WriteLine($"   Id:    {nodeId}");
             Console.WriteLine($"   Slug:  {nodeSlug}");
             Console.WriteLine($"   Title: {nodeTitle}");
             Console.WriteLine($"   Panel: {panel} independent readers (disjoint from Group A), each micro-scoring every beat.");
-            Console.WriteLine("[review-node] Running — each reader scores all beats; this may take several minutes…");
+            Console.WriteLine("[review-story] Running — each reader scores all beats; this may take several minutes…");
             var sp = new Progress<int>(k => { if (k == panel || k % 10 == 0) Console.WriteLine($"   …{k}/{panel} readers done"); });
             try
             {
                 var st = await reviewer.RunSegmentStudyAsync(nodeId, panel, sp);
-                Console.WriteLine($"[review-node] Saved {st.Saved}/{st.Requested} ({st.Failed} failed). " +
+                Console.WriteLine($"[review-story] Saved {st.Saved}/{st.Requested} ({st.Failed} failed). " +
                     $"Overall {st.MeanScore}/100 · flow {st.MeanFlow}/100 · {st.Clusters} clusters · fingerprint {st.ContentHash[..Math.Min(12, st.ContentHash.Length)]}");
                 Console.WriteLine();
                 Console.WriteLine(st.ReportMarkdown);
                 return st.Saved > 0 ? 0 : 1;
             }
-            catch (Exception ex) { Console.Error.WriteLine($"[review-node] Study crashed: {ex.Message}"); return 1; }
+            catch (Exception ex) { Console.Error.WriteLine($"[review-story] Study crashed: {ex.Message}"); return 1; }
         }
 
         // ── Segmented (per-act) review for large books: split into ≈seg-chars parts
@@ -203,21 +203,21 @@ public static class ReviewNodeCli
         //    Large nodes auto-route here even without the flag. ──
         if (byAct)
         {
-            Console.WriteLine("[review-node] SEGMENTED (per-act) REVIEW:");
+            Console.WriteLine("[review-story] SEGMENTED (per-act) REVIEW:");
             Console.WriteLine($"   Id:    {nodeId}");
             Console.WriteLine($"   Slug:  {nodeSlug}");
             Console.WriteLine($"   Title: {nodeTitle}");
             Console.WriteLine($"   ≈{segChars / 1000}k chars/part · {segBallots} ballots/part (distinct personas across parts).");
-            Console.WriteLine("[review-node] Running — one panel per part; this may take several minutes…");
+            Console.WriteLine("[review-story] Running — one panel per part; this may take several minutes…");
             var bpa = new Progress<int>(k => { if (k % 5 == 0) Console.WriteLine($"   …{k} ballots done"); });
             try
             {
                 var sr = await reviewer.RunSegmentedReviewAsync(nodeId, segBallots, prose, segChars, bpa,
                     useLocal: useLocal, localModelOverride: localModel);
-                Console.WriteLine($"[review-node] {sr.BallotsSaved}/{sr.Ballots} ballots ({sr.Failed} failed).");
-                Console.WriteLine($"[review-node] Node {sr.MeanScore}/100  (SD {sr.Sd}, 95% CI ±{sr.Ci95})  ·  {sr.Clusters} clusters  ·  fingerprint {sr.ContentHash[..Math.Min(12, sr.ContentHash.Length)]}");
-                if (!string.IsNullOrEmpty(sr.ReportHtmPath))  Console.WriteLine($"[review-node] Report (open in browser): {sr.ReportHtmPath}");
-                if (!string.IsNullOrEmpty(sr.ReportJsonPath)) Console.WriteLine($"[review-node] Report data (JSON):       {sr.ReportJsonPath}");
+                Console.WriteLine($"[review-story] {sr.BallotsSaved}/{sr.Ballots} ballots ({sr.Failed} failed).");
+                Console.WriteLine($"[review-story] Node {sr.MeanScore}/100  (SD {sr.Sd}, 95% CI ±{sr.Ci95})  ·  {sr.Clusters} clusters  ·  fingerprint {sr.ContentHash[..Math.Min(12, sr.ContentHash.Length)]}");
+                if (!string.IsNullOrEmpty(sr.ReportHtmPath))  Console.WriteLine($"[review-story] Report (open in browser): {sr.ReportHtmPath}");
+                if (!string.IsNullOrEmpty(sr.ReportJsonPath)) Console.WriteLine($"[review-story] Report data (JSON):       {sr.ReportJsonPath}");
                 Console.WriteLine();
                 Console.WriteLine(sr.ReportMarkdown);
                 if (sr.BallotsSaved > 0)
@@ -229,11 +229,11 @@ public static class ReviewNodeCli
                         Console.WriteLine($"=== READER SYNOPSIS ({summary.ReviewCount} reviews, avg {summary.AvgScore:0.0}/100) ===");
                         Console.WriteLine(summary.SummaryMarkdown);
                     }
-                    catch (Exception ex) { Console.Error.WriteLine($"[review-node] Synopsis failed: {ex.Message}"); }
+                    catch (Exception ex) { Console.Error.WriteLine($"[review-story] Synopsis failed: {ex.Message}"); }
                 }
                 return sr.BallotsSaved > 0 ? 0 : 1;
             }
-            catch (Exception ex) { Console.Error.WriteLine($"[review-node] Segmented run crashed: {ex.Message}"); return 1; }
+            catch (Exception ex) { Console.Error.WriteLine($"[review-story] Segmented run crashed: {ex.Message}"); return 1; }
         }
 
         // ── DEFAULT: economical SAMPLED two-tier — cheap score-ballots + a few prose
@@ -245,7 +245,7 @@ public static class ReviewNodeCli
             if (prose < 0) prose = 0;
             var tierLabel = profile != null ? $" [{profile.Name} tier — {profile.Note}]" : "";
             var localTag = localModel ?? settings.LocalReviewModel;
-            Console.WriteLine($"[review-node] SAMPLED REVIEW (economical default):{tierLabel}");
+            Console.WriteLine($"[review-story] SAMPLED REVIEW (economical default):{tierLabel}");
             Console.WriteLine($"   Id:    {nodeId}");
             Console.WriteLine($"   Slug:  {nodeSlug}");
             Console.WriteLine($"   Title: {nodeTitle}");
@@ -267,7 +267,7 @@ public static class ReviewNodeCli
                 + (useLocal ? $"all on local model {localTag}" : "round-robin across the trusted-4")
                 + (profile?.CheapModels == true && !useLocal ? ", on cheap models" : "") + $") + {prose} prose upgrades"
                 + (skipDiagnosis ? " — diagnosis skipped" : " + structural diagnosis") + " — one pass.");
-            Console.WriteLine("[review-node] Running…");
+            Console.WriteLine("[review-story] Running…");
             var bp = new Progress<int>(k => { if (k == ballots || k % 5 == 0) Console.WriteLine($"   …{k}/{ballots} ballots done"); });
             try
             {
@@ -277,17 +277,17 @@ public static class ReviewNodeCli
                     allowedProvidersOverride: providersOverride ?? profile?.AllowedProviders,
                     useLocal: useLocal, localModelOverride: localModel, cloudModelOverride: modelOverride,
                     modelMap: modelMap);
-                Console.WriteLine($"[review-node] {sr.BallotsSaved}/{sr.Ballots} ballots ({sr.Failed} failed), {sr.ProseAdded} prose upgraded.");
-                Console.WriteLine($"[review-node] Node {sr.MeanScore}/100  (SD {sr.Sd}, 95% CI ±{sr.Ci95})  ·  {sr.Clusters} clusters  ·  fingerprint {sr.ContentHash[..Math.Min(12, sr.ContentHash.Length)]}");
-                if (!string.IsNullOrEmpty(sr.ReportHtmPath))  Console.WriteLine($"[review-node] Report (open in browser): {sr.ReportHtmPath}");
-                if (!string.IsNullOrEmpty(sr.ReportJsonPath)) Console.WriteLine($"[review-node] Report data (JSON):       {sr.ReportJsonPath}");
+                Console.WriteLine($"[review-story] {sr.BallotsSaved}/{sr.Ballots} ballots ({sr.Failed} failed), {sr.ProseAdded} prose upgraded.");
+                Console.WriteLine($"[review-story] Node {sr.MeanScore}/100  (SD {sr.Sd}, 95% CI ±{sr.Ci95})  ·  {sr.Clusters} clusters  ·  fingerprint {sr.ContentHash[..Math.Min(12, sr.ContentHash.Length)]}");
+                if (!string.IsNullOrEmpty(sr.ReportHtmPath))  Console.WriteLine($"[review-story] Report (open in browser): {sr.ReportHtmPath}");
+                if (!string.IsNullOrEmpty(sr.ReportJsonPath)) Console.WriteLine($"[review-story] Report data (JSON):       {sr.ReportJsonPath}");
                 Console.WriteLine();
                 Console.WriteLine(sr.ReportMarkdown);
 
                 if (sr.BallotsSaved > 0)
                 {
                     Console.WriteLine();
-                    Console.WriteLine("[review-node] Synthesizing the \"Readers say\" synopsis…");
+                    Console.WriteLine("[review-story] Synthesizing the \"Readers say\" synopsis…");
                     try
                     {
                         var summary = await reviewer.GenerateSummaryAsync(nodeId, useLocal: useLocal, localModelOverride: localModel);
@@ -295,11 +295,11 @@ public static class ReviewNodeCli
                         Console.WriteLine($"=== READER SYNOPSIS ({summary.ReviewCount} reviews, avg {summary.AvgScore:0.0}/100) ===");
                         Console.WriteLine(summary.SummaryMarkdown);
                     }
-                    catch (Exception ex) { Console.Error.WriteLine($"[review-node] Synopsis failed: {ex.Message}"); }
+                    catch (Exception ex) { Console.Error.WriteLine($"[review-story] Synopsis failed: {ex.Message}"); }
                 }
                 return sr.BallotsSaved > 0 ? 0 : 1;
             }
-            catch (Exception ex) { Console.Error.WriteLine($"[review-node] Sampled run crashed: {ex.Message}"); return 1; }
+            catch (Exception ex) { Console.Error.WriteLine($"[review-story] Sampled run crashed: {ex.Message}"); return 1; }
         }
 
         // --census: full-population pass (every enriched persona writes a full review).
@@ -312,20 +312,20 @@ public static class ReviewNodeCli
             personaIds = await reviewer.GetLatestPersonaIdsAsync(nodeId);
             if (personaIds.Count == 0)
             {
-                Console.Error.WriteLine("[review-node] --same-personas: no prior reviews found for this node. Run a normal pass first.");
+                Console.Error.WriteLine("[review-story] --same-personas: no prior reviews found for this node. Run a normal pass first.");
                 return 1;
             }
             readers = personaIds.Count;
         }
 
-        Console.WriteLine("[review-node] Reviewing node:");
+        Console.WriteLine("[review-story] Reviewing node:");
         Console.WriteLine($"   Id:      {nodeId}");
         Console.WriteLine($"   Slug:    {nodeSlug}");
         Console.WriteLine($"   Title:   {nodeTitle}");
         Console.WriteLine($"   Readers: {readers} personas (round-robin across the trusted-4)"
             + (samePersonas ? "  [SAME personas as last run]" : "")
             + (group != null ? $"  [Focus group: {group}]" : ""));
-        Console.WriteLine("[review-node] Running — each persona reads the whole node; this may take a few minutes…");
+        Console.WriteLine("[review-story] Running — each persona reads the whole node; this may take a few minutes…");
 
         var total = readers;
         var progress = new Progress<int>(n =>
@@ -340,21 +340,21 @@ public static class ReviewNodeCli
         }
         catch (Exception ex)
         {
-            Console.Error.WriteLine($"[review-node] Review run crashed: {ex.Message}");
+            Console.Error.WriteLine($"[review-story] Review run crashed: {ex.Message}");
             return 1;
         }
 
-        Console.WriteLine($"[review-node] Saved {run.Saved}/{run.Requested} reviews ({run.Failed} failed). Avg score: {run.AvgScore:0.0}/100");
-        Console.WriteLine($"[review-node] Export: {run.ExportPath}");
-        Console.WriteLine($"[review-node] Content fingerprint: {run.ContentHash[..Math.Min(12, run.ContentHash.Length)]}…");
+        Console.WriteLine($"[review-story] Saved {run.Saved}/{run.Requested} reviews ({run.Failed} failed). Avg score: {run.AvgScore:0.0}/100");
+        Console.WriteLine($"[review-story] Export: {run.ExportPath}");
+        Console.WriteLine($"[review-story] Content fingerprint: {run.ContentHash[..Math.Min(12, run.ContentHash.Length)]}…");
 
         if (run.Saved == 0)
         {
-            Console.Error.WriteLine("[review-node] No reviews saved — check provider API keys / connectivity.");
+            Console.Error.WriteLine("[review-story] No reviews saved — check provider API keys / connectivity.");
             return 1;
         }
 
-        Console.WriteLine("[review-node] Synthesizing Amazon-style summary…");
+        Console.WriteLine("[review-story] Synthesizing Amazon-style summary…");
         try
         {
             var summary = await reviewer.GenerateSummaryAsync(nodeId);
@@ -364,7 +364,7 @@ public static class ReviewNodeCli
         }
         catch (Exception ex)
         {
-            Console.Error.WriteLine($"[review-node] Summary synthesis failed: {ex.Message}");
+            Console.Error.WriteLine($"[review-story] Summary synthesis failed: {ex.Message}");
             // Reviews are saved; summary is best-effort.
         }
 

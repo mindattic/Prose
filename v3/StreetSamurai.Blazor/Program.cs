@@ -436,8 +436,8 @@ if (args.Contains("--seed"))
 }
 
 // CLI mode: (re)generate the node bible for an existing node.
-//   ss --bible-node --slug <slug> [--beats N] [--replace-beats]
-if (args.Contains("--bible-node"))
+//   ss --story-bible --slug <slug> [--beats N] [--replace-beats]
+if (args.Contains("--story-bible"))
 {
     var cliBuilder = WebApplication.CreateBuilder(args);
     cliBuilder.Services.AddStreetSamuraiServices();
@@ -470,8 +470,8 @@ if (args.Contains("--edit-beat"))
 }
 
 // CLI mode: create a new empty root node (bible-first; no beats yet).
-//   ss --create-node --title "..." [--code SRZR] [--kind story] [--synopsis "..."] [--seed "..."] [--previous <slug|id>] [--parent <slug|id>]
-if (args.Contains("--create-node"))
+//   ss --create-story --title "..." [--code SRZR] [--kind story] [--synopsis "..."] [--seed "..."] [--previous <slug|id>] [--parent <slug|id>]
+if (args.Contains("--create-story"))
 {
     var cliBuilder = WebApplication.CreateBuilder(args);
     cliBuilder.Services.AddStreetSamuraiServices();
@@ -500,8 +500,8 @@ if (args.Contains("--auto-run"))
     return;
 }
 
-//   ss --write-node --seed "..." [--title "..."] [--kind episode] [--beats 12] [--bible-only]
-if (args.Contains("--write-node"))
+//   ss --write-story --seed "..." [--title "..."] [--kind episode] [--beats 12] [--bible-only]
+if (args.Contains("--write-story"))
 {
     var cliBuilder = WebApplication.CreateBuilder(args);
     cliBuilder.Services.AddStreetSamuraiServices();
@@ -560,8 +560,8 @@ if (args.Contains("--sync-audio"))
 // CLI mode: (re)narrate an EXISTING node by id (full or prefix) or slug.
 // Runs the same NarrateAsync path the Record button uses. Use to re-record a
 // node whose beats failed (e.g. a TTS 400) without regenerating prose.
-//   ss --narrate-node (--id <guid|prefix> | --slug <slug>)
-if (args.Contains("--narrate-node"))
+//   ss --narrate-story (--id <guid|prefix> | --slug <slug>)
+if (args.Contains("--narrate-story"))
 {
     var cliBuilder = WebApplication.CreateBuilder(args);
     cliBuilder.Services.AddStreetSamuraiServices();
@@ -605,7 +605,7 @@ if (args.Contains("--link-weapon-ammo"))
     return;
 }
 
-//   ss --populate-queue --entity-review|--node-review|--beat-write|--status [options]
+//   ss --populate-queue --entity-review|--story-review|--beat-write|--status [options]
 if (args.Contains("--populate-queue"))
 {
     var cliBuilder = WebApplication.CreateBuilder(args);
@@ -628,9 +628,9 @@ if (args.Contains("--worker-mode"))
 // CLI mode: have N Legion personas each read an EXISTING node and write an
 // honest, scored reader review (saved to NodeReviews), then synthesize the
 // Amazon-style aggregate summary. Round-robins reviewers across the trusted-4.
-//   ss --review-node (--id <guid|prefix> | --slug <slug>) [--readers N]
+//   ss --review-story (--id <guid|prefix> | --slug <slug>) [--readers N]
 //   ss --run-panel    (legacy alias)
-if (args.Contains("--review-node") || args.Contains("--run-panel"))
+if (args.Contains("--review-story") || args.Contains("--run-panel"))
 {
     var cliBuilder = WebApplication.CreateBuilder(args);
     cliBuilder.Services.AddStreetSamuraiServices();
@@ -715,8 +715,8 @@ if (args.Contains("--update-register-exemplars"))
 // CLI mode: review-driven auto-editor. Weight the latest reviews, target the
 // lowest / most-flagged beats (raise the floor), and emit conservative
 // before/after rewrite PROPOSALS (JSON) for an approval survey. Nothing is written.
-//   ss --edit-node (--id <guid|prefix> | --slug <slug>) [--top N]
-if (args.Contains("--edit-node"))
+//   ss --edit-story (--id <guid|prefix> | --slug <slug>) [--top N]
+if (args.Contains("--edit-story"))
 {
     var cliBuilder = WebApplication.CreateBuilder(args);
     cliBuilder.Services.AddStreetSamuraiServices();
@@ -728,8 +728,8 @@ if (args.Contains("--edit-node"))
 // CLI mode: stitch an existing node's beats into one combined file (WAV →
 // MP3), copy it to the publish output dir (Downloads by default), and record
 // the publication run + process-event ledger. Headless Publish button.
-//   ss --publish-node (--id <guid|prefix> | --slug <slug>)
-if (args.Contains("--publish-node"))
+//   ss --publish-story (--id <guid|prefix> | --slug <slug>)
+if (args.Contains("--publish-story"))
 {
     var cliBuilder = WebApplication.CreateBuilder(args);
     cliBuilder.Services.AddStreetSamuraiServices();
@@ -1291,8 +1291,8 @@ if (args.Contains("--sanitize-beats"))
     return;
 }
 
-//   ss --print-node (--id <guid|prefix> | --slug <slug>)
-if (args.Contains("--print-node"))
+//   ss --print-story (--id <guid|prefix> | --slug <slug>)
+if (args.Contains("--print-story"))
 {
     var cliBuilder = WebApplication.CreateBuilder(args);
     cliBuilder.Services.AddStreetSamuraiServices();
@@ -1305,8 +1305,8 @@ if (args.Contains("--print-node"))
 // re-segmentation (story beats + dialogue/'?' mechanics + gaps). Dry-run by
 // default; --apply backs up to markdown then replaces beats if the word-retention
 // guard passes. --all targets every doctrine-violating node.
-//   ss --rebeat-node (--slug <s> | --id <guid> | --all) [--apply]
-if (args.Contains("--rebeat-node"))
+//   ss --rebeat-story (--slug <s> | --id <guid> | --all) [--apply]
+if (args.Contains("--rebeat-story"))
 {
     var cliBuilder = WebApplication.CreateBuilder(args);
     cliBuilder.Services.AddStreetSamuraiServices();
@@ -1364,8 +1364,8 @@ if (args.Contains("--harvest-voice"))
 }
 
 // CLI mode: list every node as a table (or JSON). Headless twin of /nodes.
-//   ss --list-nodes [--status <s>] [--kind <k>] [--search <text>] [--limit <n>] [--json]
-if (args.Contains("--list-nodes"))
+//   ss --list-stories [--status <s>] [--kind <k>] [--search <text>] [--limit <n>] [--json]
+if (args.Contains("--list-stories"))
 {
     var cliBuilder = WebApplication.CreateBuilder(args);
     cliBuilder.Services.AddStreetSamuraiServices();
@@ -1404,8 +1404,8 @@ if (args.Contains("--import-md"))
 // "?" on questions that lack one, and "asks"/"asked" (not "says") on question
 // dialogue. Dry-run by default; --apply commits. Beats edited beyond those bounds
 // are rejected (word-token guard) and left untouched.
-//   ss --reflow-node (--id <guid|prefix> | --slug <slug>) [--apply]
-if (args.Contains("--reflow-node"))
+//   ss --reflow-story (--id <guid|prefix> | --slug <slug>) [--apply]
+if (args.Contains("--reflow-story"))
 {
     var cliBuilder = WebApplication.CreateBuilder(args);
     cliBuilder.Services.AddStreetSamuraiServices();
@@ -1417,8 +1417,8 @@ if (args.Contains("--reflow-node"))
 // CLI mode: deep-duplicate a node (and its sub-node tree) into a fresh,
 // independent copy — every beat cloned to a new row (prose + metadata kept;
 // audio/score/stale reset). Editing the copy never touches the original.
-//   ss --duplicate-node (--id <guid|prefix> | --slug <slug>) --title "New Title"
-if (args.Contains("--duplicate-node"))
+//   ss --duplicate-story (--id <guid|prefix> | --slug <slug>) --title "New Title"
+if (args.Contains("--duplicate-story"))
 {
     var cliBuilder = WebApplication.CreateBuilder(args);
     cliBuilder.Services.AddStreetSamuraiServices();
@@ -1428,11 +1428,11 @@ if (args.Contains("--duplicate-node"))
 }
 
 // CLI mode: import a hand-authored .node file (beat + gap + beat …) into a
-// fresh node. The complement to --write-node (LLM-generated): this is for
+// fresh node. The complement to --write-story (LLM-generated): this is for
 // drafts written elsewhere (chat exports, transcripts, paper notes typed up).
 // See ImportNodeCli class doc for the file format.
-//   ss --import-node --file path.node [--title ...] [--kind ...] [--slug ...] [--parent ...] [--dry-run]
-if (args.Contains("--import-node"))
+//   ss --import-story --file path.node [--title ...] [--kind ...] [--slug ...] [--parent ...] [--dry-run]
+if (args.Contains("--import-story"))
 {
     var cliBuilder = WebApplication.CreateBuilder(args);
     cliBuilder.Services.AddStreetSamuraiServices();
@@ -1442,8 +1442,8 @@ if (args.Contains("--import-node"))
 }
 
 // CLI mode: import a local image file (png, jpg, webp) into the Media table.
-// Optionally links to a node by --node-code and sets the media type.
-//   ss --import-cover --file PATH [--node-code CODE] [--type TYPE] [--notes TEXT] [--dry-run]
+// Optionally links to a node by --story-code and sets the media type.
+//   ss --import-cover --file PATH [--story-code CODE] [--type TYPE] [--notes TEXT] [--dry-run]
 if (args.Contains("--import-cover"))
 {
     var cliBuilder = WebApplication.CreateBuilder(args);
@@ -1571,12 +1571,12 @@ if (args.Contains("--write-outline"))
     return;
 }
 
-// ss --diagnose-node --slug <nodeSlug> [--json]
+// ss --diagnose-story --slug <nodeSlug> [--json]
 // Pre-flight structural analysis before running the review panel.
 // Runs 12 targeted checks (antagonist cost, protagonist behavior change,
 // exposition density, etc.) and reports Pass/Warn/Fail with evidence + fixes.
 // Exit 0 = ready, 1 = warnings, 2 = blocking failures.
-if (args.Contains("--diagnose-node"))
+if (args.Contains("--diagnose-story"))
 {
     var cliBuilder = WebApplication.CreateBuilder(args);
     cliBuilder.Services.AddStreetSamuraiServices();
@@ -1858,11 +1858,11 @@ if (args.Contains("--backfill-synopses") || args.Contains("--backfill-structure-
     return;
 }
 
-// ss --audit-node --slug <book-or-chapter-slug> [--deep] [--model <id>] [--out <path>]
+// ss --audit-story --slug <book-or-chapter-slug> [--deep] [--model <id>] [--out <path>]
 // The "Player Piano" — one repeatable command running the full QA battery (census +
 // coverage + plant/prose audits; --deep adds per-chapter examine-emotion + story-audit +
 // diagnose + fidelity). --model retargets the deep tier (e.g. Haiku) for the run.
-if (args.Contains("--audit-node"))
+if (args.Contains("--audit-story"))
 {
     var cliBuilder = WebApplication.CreateBuilder(args);
     cliBuilder.Services.AddStreetSamuraiServices();
@@ -1971,8 +1971,8 @@ if (args.Contains("--narrative-science"))
     return;
 }
 
-// ss --clone-node (--id <guid> | --slug <slug>) [--title "New Title"] [--node-code SM1] [--draft] [--status ready]
-if (args.Contains("--clone-node"))
+// ss --clone-story (--id <guid> | --slug <slug>) [--title "New Title"] [--story-code SM1] [--draft] [--status ready]
+if (args.Contains("--clone-story"))
 {
     var cliBuilder = WebApplication.CreateBuilder(args);
     cliBuilder.Services.AddStreetSamuraiServices();

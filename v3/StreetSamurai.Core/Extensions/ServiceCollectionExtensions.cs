@@ -775,7 +775,7 @@ public static class ServiceCollectionExtensions
 
         // Pre-flight structural diagnostics — 12 parallel LLM checks that catch
         // structural problems (missing antagonist cost, passive protagonist, etc.)
-        // BEFORE the 60-ballot review panel. Available via `ss --diagnose-node`
+        // BEFORE the 60-ballot review panel. Available via `ss --diagnose-story`
         // and the `diagnose_node` MCP tool.
         services.AddSingleton<StructuralDiagnosticService>();
 

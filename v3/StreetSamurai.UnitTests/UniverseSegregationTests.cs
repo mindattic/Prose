@@ -162,10 +162,10 @@ public class UniverseSegregationTests
     [Test]
     public void Bootstrap_ParseSlug_ReadsUniverseFlag()
     {
-        Assert.That(UniverseBootstrap.ParseSlug(new[] { "--review-node", "--universe", "fantasy-steampunk" }),
+        Assert.That(UniverseBootstrap.ParseSlug(new[] { "--review-story", "--universe", "fantasy-steampunk" }),
             Is.EqualTo("fantasy-steampunk"));
         Assert.That(UniverseBootstrap.ParseSlug(new[] { "--universe=glmz", "--k", "5" }), Is.EqualTo("glmz"));
-        Assert.That(UniverseBootstrap.ParseSlug(new[] { "--list-nodes" }), Is.Null);
+        Assert.That(UniverseBootstrap.ParseSlug(new[] { "--list-stories" }), Is.Null);
     }
 
     [Test]

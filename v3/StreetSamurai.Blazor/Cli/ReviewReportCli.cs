@@ -55,7 +55,7 @@ public static class ReviewReportCli
             .OrderByDescending(r => r.ReviewedAt).Select(r => r.ContentHash).FirstOrDefaultAsync();
         if (string.IsNullOrEmpty(latestHash))
         {
-            Console.Error.WriteLine($"[review-report] No reviews found for {node.Slug}. Run ss --review-node first.");
+            Console.Error.WriteLine($"[review-report] No reviews found for {node.Slug}. Run ss --review-story first.");
             return 1;
         }
 

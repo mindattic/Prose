@@ -4,7 +4,7 @@ using StreetSamurai.Core.Data;
 namespace StreetSamurai.Blazor.Cli;
 
 /// <summary>
-/// <c>ss --print-node</c> — print all beats of a node as continuous prose to stdout.
+/// <c>ss --print-story</c> — print all beats of a node as continuous prose to stdout.
 /// Each beat's Text is separated by a blank line. No headers, no beat numbers, no metadata.
 ///
 /// Args (one of --id / --slug required):
@@ -32,8 +32,8 @@ public static class PrintNodeCli
 
         if (string.IsNullOrWhiteSpace(id) && string.IsNullOrWhiteSpace(slug))
         {
-            Console.Error.WriteLine("[print-node] One of --id or --slug is required.");
-            Console.Error.WriteLine("Usage: ss --print-node (--id <guid|prefix> | --slug <slug>)");
+            Console.Error.WriteLine("[print-story] One of --id or --slug is required.");
+            Console.Error.WriteLine("Usage: ss --print-story (--id <guid|prefix> | --slug <slug>)");
             return 1;
         }
 
@@ -58,7 +58,7 @@ public static class PrintNodeCli
             var matches = await query.Where(s => s.Id.ToString().StartsWith(prefix)).Take(2).ToListAsync();
             if (matches.Count > 1)
             {
-                Console.Error.WriteLine($"[print-node] Id prefix '{id}' is ambiguous. Use a longer prefix or the full id.");
+                Console.Error.WriteLine($"[print-story] Id prefix '{id}' is ambiguous. Use a longer prefix or the full id.");
                 return 1;
             }
             node = matches.FirstOrDefault();
@@ -67,7 +67,7 @@ public static class PrintNodeCli
         if (node == null)
         {
             var locator = slug != null ? $"slug '{slug}'" : $"id '{id}'";
-            Console.Error.WriteLine($"[print-node] No node found for {locator}.");
+            Console.Error.WriteLine($"[print-story] No node found for {locator}.");
             return 1;
         }
 
@@ -85,7 +85,7 @@ public static class PrintNodeCli
 
         if (prose.Count == 0)
         {
-            Console.Error.WriteLine($"[print-node] Node '{node.Slug}' has no prose beats.");
+            Console.Error.WriteLine($"[print-story] Node '{node.Slug}' has no prose beats.");
             return 1;
         }
 

@@ -6,7 +6,7 @@ using StreetSamurai.Core.Services;
 namespace StreetSamurai.Blazor.Cli;
 
 /// <summary>
-/// <c>ss --reflow-node (--id &lt;guid|prefix&gt; | --slug &lt;slug&gt;) [--apply]</c>
+/// <c>ss --reflow-story (--id &lt;guid|prefix&gt; | --slug &lt;slug&gt;) [--apply]</c>
 /// — copy-edit every beat in a node: proper paragraph/dialogue spacing, a "?" on
 /// questions that lack one, and "asks"/"asked" (not "says"/"said") on question
 /// dialogue. Dry-run by default (prints a before/after report and writes NOTHING);
@@ -29,7 +29,7 @@ public static class ReflowNodeCli
         }
         if (string.IsNullOrWhiteSpace(id) && string.IsNullOrWhiteSpace(slug))
         {
-            Console.Error.WriteLine("[reflow-node] One of --id or --slug is required.");
+            Console.Error.WriteLine("[reflow-story] One of --id or --slug is required.");
             return 1;
         }
 
@@ -45,11 +45,11 @@ public static class ReflowNodeCli
             else if (Guid.TryParse(id, out var g)) node = await q.FirstOrDefaultAsync(s => s.Id == g);
             else node = await q.Where(s => s.Id.ToString().StartsWith(id!.ToLower())).Take(2).ToListAsync() switch
             { { Count: 1 } m => m[0], _ => null };
-            if (node == null) { Console.Error.WriteLine("[reflow-node] Node not found."); return 1; }
+            if (node == null) { Console.Error.WriteLine("[reflow-story] Node not found."); return 1; }
             nodeId = node.Id; nodeTitle = node.Title;
         }
 
-        Console.WriteLine($"[reflow-node] {(apply ? "APPLYING to" : "DRY-RUN on")} \"{nodeTitle}\"…");
+        Console.WriteLine($"[reflow-story] {(apply ? "APPLYING to" : "DRY-RUN on")} \"{nodeTitle}\"…");
         try
         {
             var report = await reflow.ReflowNodeAsync(nodeId, apply);
@@ -74,11 +74,11 @@ public static class ReflowNodeCli
                     Console.WriteLine($"    kept  : {b.BeforePreview}");
                 }
             }
-            Console.WriteLine($"\n[reflow-node] {report.Total} beats: " +
+            Console.WriteLine($"\n[reflow-story] {report.Total} beats: " +
                 $"{report.Changed} changed, {report.Unchanged} unchanged, {report.Rejected} rejected, {report.Errors} errors. " +
                 (apply ? "Written to DB." : "Dry run — nothing written. Re-run with --apply to commit."));
             return 0;
         }
-        catch (Exception ex) { Console.Error.WriteLine($"[reflow-node] Failed: {ex.Message}"); return 1; }
+        catch (Exception ex) { Console.Error.WriteLine($"[reflow-story] Failed: {ex.Message}"); return 1; }
     }
 }

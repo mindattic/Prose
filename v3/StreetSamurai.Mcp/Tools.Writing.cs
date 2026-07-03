@@ -34,9 +34,9 @@ public class WritingTools
         this.chapters = chapters;
     }
 
-    /// <summary>Create or upsert a Book record. Pass an empty id to create new; pass a known id to update.</summary>
-    [McpServerTool, Description("Create or upsert a Book record. Pass an empty id to create a new book (a v7 GUID is assigned and returned); pass a known id to update an existing book. Protagonists are resolved by name against the character canon. status defaults to 'drafting'. Returns the persisted Book including assigned id.")]
-    public string CreateBook(
+    /// <summary>Create or upsert a legacy Book record (retired Book/Chapter schema — new work uses create_series / create_story).</summary>
+    [McpServerTool, Description("LEGACY Book/Chapter schema — new work should use create_series / create_story instead. Create or upsert a Book record. Pass an empty id to create a new book (a v7 GUID is assigned and returned); pass a known id to update an existing book. Returns the persisted Book including assigned id.")]
+    public string CreateLegacyBook(
         [Description("Book title. Required.")] string title,
         [Description("One-paragraph premise — feeds the chapter director when extending.")] string premise,
         [Description("Comma-separated protagonist names — first name is the lead. Resolved against character canon.")] string protagonists,
@@ -59,9 +59,9 @@ public class WritingTools
         return JsonSerializer.Serialize(new { ok = true, id = book.Id, title = book.Title }, CanonTools.JsonOpts);
     }
 
-    /// <summary>Create or upsert a Chapter record. Optionally attach to a book and append to its chapter order.</summary>
-    [McpServerTool, Description("Create or upsert a Chapter record. Pass an empty id to create new; pass a known id to update. Pass a non-empty bookId to attach the chapter to a book and append it to the book's chapter_ids in the supplied order position (1-indexed). HTML is the rendered body — pass the prose directly. Returns the persisted Chapter including assigned id.")]
-    public string CreateChapter(
+    /// <summary>Create or upsert a legacy Chapter record (retired Book/Chapter schema — new work uses create_chapter on the node tree).</summary>
+    [McpServerTool, Description("LEGACY Book/Chapter schema — new work should use create_chapter (node tree) instead. Create or upsert a Chapter record. Pass an empty id to create new; pass a known id to update. Returns the persisted Chapter including assigned id.")]
+    public string CreateLegacyChapter(
         [Description("Chapter title. Required.")] string title,
         [Description("One-paragraph chapter synopsis. Required.")] string synopsis,
         [Description("Full chapter prose. HTML or plain text — plain text is wrapped in <p> tags on render.")] string html,

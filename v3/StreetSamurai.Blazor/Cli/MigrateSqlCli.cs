@@ -42,7 +42,7 @@ public static class MigrateSqlCli
 
         // Node short reference code: add NodeCode NVARCHAR(20) to Nodes (+ history) with a
         // unique filtered index (enforced for non-null values only).
-        var nodeCode = args.Contains("--node-code");
+        var nodeCode = args.Contains("--story-code");
 
         // Entity quality reviews: create EntityReviews + EntityReviewSummaries tables.
         var entityReviews = args.Contains("--entity-reviews");
@@ -80,7 +80,7 @@ public static class MigrateSqlCli
             Console.WriteLine("  ss --migrate-sql --node-beat-soft-delete   add IsEnabled column to NodeBeats/NodeBeats_History");
             Console.WriteLine("  ss --migrate-sql --node-beat-version       add Version INT counter to Beats+Nodes (and history tables)");
             Console.WriteLine("  ss --migrate-sql --entity-grammar-note       add GrammarNote column to Entities (and history table)");
-            Console.WriteLine("  ss --migrate-sql --node-code               add NodeCode NVARCHAR(20) to Nodes (unique per non-null value)");
+            Console.WriteLine("  ss --migrate-sql --story-code               add NodeCode NVARCHAR(20) to Nodes (unique per non-null value)");
             Console.WriteLine("  ss --migrate-sql --entity-reviews            create EntityReviews + EntityReviewSummaries tables");
             Console.WriteLine("  ss --migrate-sql --node-bible              add NodeBible + NodeBibleGeneratedAt to Nodes (+ history)");
             Console.WriteLine("  ss --migrate-sql --markdown-files            create MarkdownFiles table (project-rules, Codex, memory backup)");
@@ -298,7 +298,7 @@ public static class MigrateSqlCli
             var db = scope.ServiceProvider.GetRequiredService<StreetSamuraiDbContext>();
 
             Console.WriteLine();
-            Console.WriteLine("[node-code]");
+            Console.WriteLine("[story-code]");
             try
             {
                 // Add the column to the temporal table + its history shadow.

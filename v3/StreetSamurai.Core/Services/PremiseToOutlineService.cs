@@ -9,7 +9,7 @@ namespace StreetSamurai.Core.Services;
 /// Generates N competing node bibles in parallel, scores each with a single
 /// LLM call, commits the winner to the DB, and returns the winning node's Guid.
 ///
-/// Usage: pass --compete N to ss --write-node. When N=1 (or omitted),
+/// Usage: pass --compete N to ss --write-story. When N=1 (or omitted),
 /// falls back to NodeBibleService directly (no scoring overhead).
 /// </summary>
 public class PremiseToOutlineService(

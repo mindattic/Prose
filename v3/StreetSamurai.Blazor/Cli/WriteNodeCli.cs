@@ -6,7 +6,7 @@ using StreetSamurai.Core.Services;
 namespace StreetSamurai.Blazor.Cli;
 
 /// <summary>
-/// <c>ss --write-node</c> — create a new node via the bible-first workflow:
+/// <c>ss --write-story</c> — create a new node via the bible-first workflow:
 ///
 ///   1. Insert a Node row (status=draft, no beats yet).
 ///   2. Call NodeBibleService to generate the node bible and planned beats.
@@ -49,8 +49,8 @@ public static class WriteNodeCli
 
         if (string.IsNullOrWhiteSpace(seed))
         {
-            Console.Error.WriteLine("[write-node] --seed is required.");
-            Console.Error.WriteLine("Usage: ss --write-node --seed \"...\" [--title \"...\"] [--kind episode] [--beats 12] [--compete N] [--bible-only]");
+            Console.Error.WriteLine("[write-story] --seed is required.");
+            Console.Error.WriteLine("Usage: ss --write-story --seed \"...\" [--title \"...\"] [--kind episode] [--beats 12] [--compete N] [--bible-only]");
             return 2;
         }
 
@@ -64,7 +64,7 @@ public static class WriteNodeCli
         {
             // ── Compete mode: N outlines, Legion scores, keep winner ──────────
             var competeService = services.GetRequiredService<PremiseToOutlineService>();
-            Console.WriteLine($"[write-node] Compete mode: {compete} outlines");
+            Console.WriteLine($"[write-story] Compete mode: {compete} outlines");
             try
             {
                 var (wId, wBible, winnerIdx) = await competeService.CreateNodeAsync(
@@ -73,11 +73,11 @@ public static class WriteNodeCli
                 bibleText    = wBible;
                 workingTitle = title ?? DeriveTitle(seed!);
                 slug         = EpisodeGeneratorService.Slugify(workingTitle) + "-" + nodeId.ToString("N")[..8];
-                Console.WriteLine($"[write-node] Outline {winnerIdx} selected as winner.");
+                Console.WriteLine($"[write-story] Outline {winnerIdx} selected as winner.");
             }
             catch (Exception ex)
             {
-                Console.Error.WriteLine($"[write-node] Compete failed: {ex.Message}");
+                Console.Error.WriteLine($"[write-story] Compete failed: {ex.Message}");
                 return 1;
             }
         }
@@ -88,7 +88,7 @@ public static class WriteNodeCli
             workingTitle = !string.IsNullOrEmpty(title) ? title : DeriveTitle(seed!);
             slug         = EpisodeGeneratorService.Slugify(workingTitle) + "-" + nodeId.ToString("N")[..8];
 
-            Console.WriteLine($"[write-node] Creating node: \"{workingTitle}\"");
+            Console.WriteLine($"[write-story] Creating node: \"{workingTitle}\"");
 
             await using (var db = await dbFactory.CreateDbContextAsync())
             {
@@ -105,15 +105,15 @@ public static class WriteNodeCli
                 await db.SaveChangesAsync();
             }
 
-            Console.WriteLine($"[write-node] Node created: {nodeId}");
-            Console.WriteLine($"[write-node] Generating node bible ({targetBeats} beats)…");
+            Console.WriteLine($"[write-story] Node created: {nodeId}");
+            Console.WriteLine($"[write-story] Generating node bible ({targetBeats} beats)…");
             try
             {
                 bibleText = await bibleService.GenerateAndSaveAsync(nodeId, seed!, workingTitle, targetBeats);
             }
             catch (Exception ex)
             {
-                Console.Error.WriteLine($"[write-node] Bible generation failed: {ex.Message}");
+                Console.Error.WriteLine($"[write-story] Bible generation failed: {ex.Message}");
                 return 1;
             }
         }
@@ -127,10 +127,10 @@ public static class WriteNodeCli
 
         // Report planned beats
         var beatPlans = NodeBibleService.ParseBeatSpine(bibleText);
-        Console.WriteLine($"[write-node] {beatPlans.Count} planned beats created from the spine.");
+        Console.WriteLine($"[write-story] {beatPlans.Count} planned beats created from the spine.");
 
         var url = $"https://localhost:7103/node/{slug}";
-        Console.WriteLine($"[write-node] Open in the unified writer to expand beats into prose:");
+        Console.WriteLine($"[write-story] Open in the unified writer to expand beats into prose:");
         Console.WriteLine($"   Id:    {nodeId}");
         Console.WriteLine($"   Slug:  {slug}");
         Console.WriteLine($"   Title: {workingTitle}");

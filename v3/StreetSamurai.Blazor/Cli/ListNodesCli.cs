@@ -5,7 +5,7 @@ using StreetSamurai.Core.Data;
 namespace StreetSamurai.Blazor.Cli;
 
 /// <summary>
-/// <c>ss --list-nodes</c> — print every node as a table (or JSON). Headless
+/// <c>ss --list-stories</c> — print every node as a table (or JSON). Headless
 /// equivalent of the <c>/nodes</c> page. Sorted most-recently-updated first.
 ///
 /// Args (all optional):
@@ -35,7 +35,7 @@ public static class ListNodesCli
                 case "--search": if (i + 1 < args.Length) search = args[++i]; break;
                 case "--limit":
                     if (i + 1 < args.Length && int.TryParse(args[++i], out var n) && n > 0) limit = n;
-                    else { Console.Error.WriteLine("[list-nodes] --limit needs a positive integer."); return 1; }
+                    else { Console.Error.WriteLine("[list-stories] --limit needs a positive integer."); return 1; }
                     break;
                 case "--scores": scores = true; break;
                 case "--json":   json = true; break;
@@ -96,7 +96,7 @@ public static class ListNodesCli
 
         if (rows.Count == 0)
         {
-            Console.WriteLine("[list-nodes] No nodes match.");
+            Console.WriteLine("[list-stories] No nodes match.");
             return 0;
         }
 
@@ -111,7 +111,7 @@ public static class ListNodesCli
                 $"{code,-6}  {Trunc(r.Status, 8),-8}  {Trunc(r.Kind, 10),-10}  {r.Pages,4}  {score,6}  {r.Title}");
         }
         Console.WriteLine(new string('-', 110));
-        Console.WriteLine($"[list-nodes] {rows.Count} node(s).");
+        Console.WriteLine($"[list-stories] {rows.Count} node(s).");
         return 0;
     }
 

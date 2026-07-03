@@ -7,7 +7,7 @@ using StreetSamurai.Core.Services;
 namespace StreetSamurai.Blazor.Cli;
 
 /// <summary>
-/// <c>ss --edit-node</c> — the review-driven auto-editor. Reads the node's
+/// <c>ss --edit-story</c> — the review-driven auto-editor. Reads the node's
 /// latest review batch, weights each beat's fix-priority (floor × prevalence ×
 /// Pareto modifier), and conservatively rewrites the top-N floor-draggers. Emits
 /// the before/after PROPOSALS as JSON to a temp file (for an approval survey) —
@@ -36,8 +36,8 @@ public static class EditNodeCli
         }
         if (string.IsNullOrWhiteSpace(id) && string.IsNullOrWhiteSpace(slug))
         {
-            Console.Error.WriteLine("[edit-node] One of --id or --slug is required.");
-            Console.Error.WriteLine("Usage: ss --edit-node (--id <guid|prefix> | --slug <slug>) [--top N]");
+            Console.Error.WriteLine("[edit-story] One of --id or --slug is required.");
+            Console.Error.WriteLine("Usage: ss --edit-story (--id <guid|prefix> | --slug <slug>) [--top N]");
             return 1;
         }
         if (top <= 0) top = 5;
@@ -58,22 +58,22 @@ public static class EditNodeCli
             {
                 var prefix = id!.ToLowerInvariant();
                 var matches = await query.Where(s => s.Id.ToString().StartsWith(prefix)).Take(2).ToListAsync();
-                if (matches.Count > 1) { Console.Error.WriteLine($"[edit-node] Id prefix '{id}' is ambiguous."); return 1; }
+                if (matches.Count > 1) { Console.Error.WriteLine($"[edit-story] Id prefix '{id}' is ambiguous."); return 1; }
                 node = matches.FirstOrDefault();
             }
             if (node == null)
             {
-                Console.Error.WriteLine($"[edit-node] No node found for {(slug != null ? $"slug '{slug}'" : $"id '{id}'")}.");
+                Console.Error.WriteLine($"[edit-story] No node found for {(slug != null ? $"slug '{slug}'" : $"id '{id}'")}.");
                 return 1;
             }
             nodeId = node.Id; nodeSlug = node.Slug; nodeTitle = node.Title;
         }
 
-        Console.WriteLine("[edit-node] Review-driven auto-editor:");
+        Console.WriteLine("[edit-story] Review-driven auto-editor:");
         Console.WriteLine($"   Slug:  {nodeSlug}");
         Console.WriteLine($"   Title: {nodeTitle}");
         Console.WriteLine($"   Targeting the top {top} floor-dragging beats from the latest review batch (conservative rewrite).");
-        Console.WriteLine("[edit-node] Editing — this calls the editor model once per beat…");
+        Console.WriteLine("[edit-story] Editing — this calls the editor model once per beat…");
 
         List<NodeReviewService.EditProposal> proposals;
         try
@@ -82,13 +82,13 @@ public static class EditNodeCli
         }
         catch (Exception ex)
         {
-            Console.Error.WriteLine($"[edit-node] Editor crashed: {ex.Message}");
+            Console.Error.WriteLine($"[edit-story] Editor crashed: {ex.Message}");
             return 1;
         }
 
         if (proposals.Count == 0)
         {
-            Console.WriteLine("[edit-node] No proposals — either there are no reviews yet, or no beat is below the floor threshold. Run --review-node first.");
+            Console.WriteLine("[edit-story] No proposals — either there are no reviews yet, or no beat is below the floor threshold. Run --review-story first.");
             return 0;
         }
 
@@ -103,7 +103,7 @@ public static class EditNodeCli
         };
         await File.WriteAllTextAsync(outPath, JsonSerializer.Serialize(payload, new JsonSerializerOptions { WriteIndented = true }));
 
-        Console.WriteLine($"[edit-node] {proposals.Count} proposal(s) written to:");
+        Console.WriteLine($"[edit-story] {proposals.Count} proposal(s) written to:");
         Console.WriteLine($"   {outPath}");
         Console.WriteLine();
         foreach (var p in proposals)

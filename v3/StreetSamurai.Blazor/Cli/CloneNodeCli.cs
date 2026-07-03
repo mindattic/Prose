@@ -5,7 +5,7 @@ using StreetSamurai.Core.Data.Entities;
 namespace StreetSamurai.Blazor.Cli;
 
 /// <summary>
-/// <c>ss --clone-node (--id &lt;guid&gt; | --slug &lt;slug&gt;) [--title "New Title"] [--node-code "SM1"] [--draft] [--status &lt;status&gt;]</c>
+/// <c>ss --clone-story (--id &lt;guid&gt; | --slug &lt;slug&gt;) [--title "New Title"] [--story-code "SM1"] [--draft] [--status &lt;status&gt;]</c>
 /// — deep-clone a node: creates a new Node row plus independent copies of every
 /// enabled beat (new IDs, new Numbers). Audio, scores, and review history are NOT
 /// cloned — the clone starts fresh so review scores are independent.
@@ -26,7 +26,7 @@ public static class CloneNodeCli
                 case "--id":           if (i + 1 < args.Length) id          = args[++i]; break;
                 case "--slug":         if (i + 1 < args.Length) slug        = args[++i]; break;
                 case "--title":        if (i + 1 < args.Length) title       = args[++i]; break;
-                case "--node-code":  if (i + 1 < args.Length) nodeCode  = args[++i]; break;
+                case "--story-code":  if (i + 1 < args.Length) nodeCode  = args[++i]; break;
                 case "--status":       if (i + 1 < args.Length) status      = args[++i]; break;
                 case "--draft":        isDraft = true; break;
             }
@@ -34,7 +34,7 @@ public static class CloneNodeCli
 
         if (string.IsNullOrWhiteSpace(id) && string.IsNullOrWhiteSpace(slug))
         {
-            Console.Error.WriteLine("[clone-node] One of --id or --slug is required.");
+            Console.Error.WriteLine("[clone-story] One of --id or --slug is required.");
             return 1;
         }
 
@@ -55,7 +55,7 @@ public static class CloneNodeCli
 
         if (source == null)
         {
-            Console.Error.WriteLine("[clone-node] Source node not found.");
+            Console.Error.WriteLine("[clone-story] Source node not found.");
             return 1;
         }
 
@@ -68,7 +68,7 @@ public static class CloneNodeCli
             if (clash != null)
             {
                 Console.Error.WriteLine(
-                    $"[clone-node] NodeCode '{code}' is already in use by '{clash.Title}' ({clash.Slug}).");
+                    $"[clone-story] NodeCode '{code}' is already in use by '{clash.Title}' ({clash.Slug}).");
                 return 1;
             }
         }
@@ -82,7 +82,7 @@ public static class CloneNodeCli
                   (sb, b) => new { sb.SortKey, Beat = b })
             .ToListAsync();
 
-        Console.WriteLine($"[clone-node] Source: '{source.Title}' ({source.Slug}) — {sourceBeats.Count} beat(s)");
+        Console.WriteLine($"[clone-story] Source: '{source.Title}' ({source.Slug}) — {sourceBeats.Count} beat(s)");
 
         // ── Determine new title and slug ──────────────────────────────────────
         var newTitle = string.IsNullOrWhiteSpace(title)
@@ -167,10 +167,10 @@ public static class CloneNodeCli
 
         await db.SaveChangesAsync();
 
-        Console.WriteLine($"[clone-node] Created '{newTitle}' — {sourceBeats.Count} beat(s) cloned");
-        Console.WriteLine($"[clone-node] id:   {newId}");
-        Console.WriteLine($"[clone-node] slug: {newSlug}");
-        if (isDraft) Console.WriteLine("[clone-node] IsWIP=true — excluded from review/score/publish flows");
+        Console.WriteLine($"[clone-story] Created '{newTitle}' — {sourceBeats.Count} beat(s) cloned");
+        Console.WriteLine($"[clone-story] id:   {newId}");
+        Console.WriteLine($"[clone-story] slug: {newSlug}");
+        if (isDraft) Console.WriteLine("[clone-story] IsWIP=true — excluded from review/score/publish flows");
         return 0;
     }
 

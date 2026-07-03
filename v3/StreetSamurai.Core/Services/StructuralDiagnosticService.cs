@@ -18,7 +18,7 @@ namespace StreetSamurai.Core.Services;
 // one-action fix. Blocking failures suppress the review recommendation.
 //
 // Usage:
-//   ss --diagnose-node --slug <slug>
+//   ss --diagnose-story --slug <slug>
 //   MCP: diagnose_node(nodeIdOrSlug)
 
 /// <summary>Structural check result tier.</summary>

@@ -11,7 +11,7 @@
 > All tools are MCP-prefixed `mcp__streetsamurai__<name>` by the client. Most return a
 > JSON string; the canon is the SQL database, scoped to the active Universe.
 
-**202 tools** across **30 tool families.**
+**203 tools** across **30 tool families.**
 
 ## Families
 
@@ -31,7 +31,7 @@
 | [Gear Entity Crud](#gear-entity-crud) | 7 |
 | [Lore Triple](#lore-triple) | 7 |
 | [Narrative Science](#narrative-science) | 5 |
-| [Node](#node) | 32 |
+| [Node](#node) | 33 |
 | [Planning](#planning) | 6 |
 | [Plant Payoff](#plant-payoff) | 6 |
 | [Quality](#quality) | 11 |
@@ -836,7 +836,7 @@ Map a node's beats to Will Storr's five-act character-change arc. Act I: establi
 
 <sub>`NodeTools`</sub>
 
-### `append_node_amendment`
+### `append_story_amendment`
 
 Append an amendment to the node's narrative spine. Amendments are append-only — they form an auditable change log of narrative decisions. Use when: changing a character's motivation after beats are written, retconning world rules, or noting why a section was expanded or cut.
 
@@ -850,9 +850,9 @@ Clear an explicit gap-after-beat override. The audio engine falls back to the au
 
 - `beatHandle` (string, required) — Beat Guid OR 'node-guid.beat-guid' handle.
 
-### `clone_node`
+### `clone_story`
 
-Clone a node into a fully independent copy: new Node row + new Beat rows, same prose. Audio, scores, and review history are NOT copied — clone starts fresh. Supports nodeCode and isDraft so the clone can be excluded from score/publish flows until promoted. Use this instead of DuplicateNode when you need nodeCode, isDraft, or per-experiment isolation. Returns new id, slug, beat count.
+Clone a node into a fully independent copy: new Node row + new Beat rows, same prose. Audio, scores, and review history are NOT copied — clone starts fresh. Supports nodeCode and isDraft so the clone can be excluded from score/publish flows until promoted. Use this instead of DuplicateStory when you need nodeCode, isDraft, or per-experiment isolation. Returns new id, slug, beat count.
 
 - `idOrSlug` (string, required) — Source node Guid id or slug.
 - `title` (string, optional) — Title for the clone. Defaults to 'Source Title (Clone)'.
@@ -860,29 +860,33 @@ Clone a node into a fully independent copy: new Node row + new Beat rows, same p
 - `isDraft` (bool, optional) — Mark the clone as a draft (excluded from review/score/publish flows). Default true.
 - `status` (string, optional) — Status value to stamp on the clone: 'ready', 'draft', etc. Default 'ready'.
 
-### `create_node`
+### `create_chapter`
 
-Create a new empty root node (no beats) — the bible-first entry point for a brand-new story. Write the bible/beats afterward via InsertBeat or the UI. UniverseId is stamped to the current universe (GLMZ). Returns the new id, slug, and URL.
+Create a ChapterNode under a story. Chapters hold beats and never carry a reference code. parentNodeIdOrSlug is REQUIRED. Returns the new id, slug, and url.
 
-- `title` (string, required) — Display title. Required.
-- `code` (string, optional) — Optional short reference code (e.g. 'SRZR'). Upper-cased; rejected if already in use.
-- `kind` (string, optional) — Category: 'story' (default, root), 'book', 'chapter', 'vignette'…
-- `synopsis` (string, optional) — Optional one-line synopsis.
-- `seed` (string, optional) — Optional one-line generator seed / logline.
-- `previous` (string, optional) — Optional prior node this one continues (slug or GUID) — sequel commandments apply.
-- `parent` (string, optional) — Optional parent node (slug or GUID) — makes this a sub-node.
-
-### `create_node`
-
-Create a new node. Pass 'seed' to also generate a node bible and planned beats immediately. Returns the new node's id, slug, url, and (if bible was generated) the bible text.
-
-- `title` (string, required) — Node title. Required.
-- `kind` (string, optional) — Node kind: 'series' (groups stories), 'story' (root publishable work), or 'chapter' (sub-node of a story, contains beats). Default 'story'.
+- `title` (string, required) — Chapter title. Required.
+- `parentNodeIdOrSlug` (string, required) — Parent StoryNode Guid id or slug. Required.
 - `synopsis` (string, optional) — Optional synopsis.
-- `seed` (string, optional) — One-line generation seed. When provided, the node bible and planned beats are created immediately after the node row is inserted.
+
+### `create_series`
+
+Create a SeriesNode — the top-level grouping (saga / anthology) that StoryNodes hang under. Never holds beats. Returns the new id, slug, and URL.
+
+- `title` (string, required) — Series title. Required.
+- `code` (string, optional) — Optional short reference code (e.g. 'BCODA'). Upper-cased; rejected if already in use.
+- `synopsis` (string, optional) — Optional one-line synopsis.
+
+### `create_story`
+
+Create a StoryNode — a single story arc (book / novella / standalone). Pass 'seed' to also generate a story bible and planned beats immediately. Optional parent makes it part of a series; optional previous marks it a sequel (sequel commandments apply). Returns the new id, slug, url, and (if generated) the bible text.
+
+- `title` (string, required) — Story title. Required.
+- `synopsis` (string, optional) — Optional synopsis.
+- `seed` (string, optional) — One-line generation seed. When provided, the story bible and planned beats are created immediately after the row is inserted.
 - `targetBeats` (int, optional) — Target beat count for the bible spine (only used when seed is provided). Default 12.
-- `parentNodeIdOrSlug` (string, optional) — Optional parent node Guid id (or slug). Empty = top-level.
-- `code` (string, optional) — Optional short author-assigned reference code (e.g. 'ATTE', 'BCODA'). For series and story nodes only — chapters never carry a code. Uppercased and stored as a unique lookup key. Leave empty to skip.
+- `parentNodeIdOrSlug` (string, optional) — Optional parent SeriesNode Guid id (or slug). Empty = standalone.
+- `code` (string, optional) — Optional short author-assigned reference code (e.g. 'ATTE'). Uppercased, unique lookup key.
+- `previous` (string, optional) — Optional prior story this one continues (slug or GUID) — sequel commandments apply.
 
 ### `delete_beat`
 
@@ -891,14 +895,14 @@ Remove a beat from a node. If the beat is not referenced by any other node, the 
 - `nodeIdOrSlug` (string, required) — Node Guid id or slug.
 - `beatId` (string, required) — Beat Guid id to delete.
 
-### `duplicate_node`
+### `duplicate_story`
 
 Deep-duplicate a node (and its sub-node tree) into a fresh, independent copy. Every beat is cloned into a new row — prose and narration metadata are preserved, but audio, review scores, and the stale flag are reset. Editing the copy never affects the original. Accepts a Guid id OR a slug. Returns the new node's id, slug, and writer URL.
 
 - `idOrSlug` (string, required) — Source node Guid id or slug.
 - `newTitle` (string, required) — Title for the new duplicate. Required.
 
-### `generate_node_bible`
+### `generate_story_bible`
 
 Generate (or regenerate) the node bible for a node. Uses the node's Seed field (falls back to Synopsis then Title) plus the literary rules to produce a dry structural plan: logline, premise, register, characters, numbered beat spine, seeds & payoffs. Creates planned Beat rows from the spine when the node has no beats yet. Returns the generated bible text.
 
@@ -911,30 +915,30 @@ Get a single beat with every authoring field — prose, kind, IsChapterStart, Be
 
 - `beatHandle` (string, required) — Beat Guid OR the dotted 'node-guid.beat-guid' handle.
 
-### `get_node`
-
-Get a single node with its beats in reading order. Accepts a Guid id OR a slug. Returns node metadata + ordered beats (id, text, stale, has_audio, beat_title, synopsis).
-
-- `idOrSlug` (string, required) — Node Guid id or slug.
-
-### `get_node_bible`
-
-Get the node bible for a node — the dry structural plan (logline, premise, register, characters, beat spine, seeds & payoffs). Returns the raw markdown text plus the parsed beat spine entries so you can see the planned arc at a glance. Returns has_bible=false when no bible exists yet.
-
-- `idOrSlug` (string, required) — Node Guid id or slug.
-
-### `get_node_spine`
-
-Return the full narrative spine for a node: bible, user stories, all amendments (in order), and the latest spine version pin (which records the content hashes and amendment count at the last docx export). Use this before writing prose to understand the narrative contract.
-
-- `idOrSlug` (string, required) — Node id (GUID) or slug.
-
 ### `get_score_history`
 
 Return the score history for a node as a time-series — every review run that produced a summary, with its mean score, SD, review count, and date. Use to track whether an edit moved the needle, or to compare pre/post-edit trajectories. Accepts node id (GUID) or slug.
 
 - `idOrSlug` (string, required) — Node id (GUID) or slug.
 - `limit` (int, optional) — Maximum history points to return (most recent first). Default 20.
+
+### `get_story`
+
+Get a single node with its beats in reading order. Accepts a Guid id OR a slug. Returns node metadata + ordered beats (id, text, stale, has_audio, beat_title, synopsis).
+
+- `idOrSlug` (string, required) — Node Guid id or slug.
+
+### `get_story_bible`
+
+Get the node bible for a node — the dry structural plan (logline, premise, register, characters, beat spine, seeds & payoffs). Returns the raw markdown text plus the parsed beat spine entries so you can see the planned arc at a glance. Returns has_bible=false when no bible exists yet.
+
+- `idOrSlug` (string, required) — Node Guid id or slug.
+
+### `get_story_spine`
+
+Return the full narrative spine for a node: bible, user stories, all amendments (in order), and the latest spine version pin (which records the content hashes and amendment count at the last docx export). Use this before writing prose to understand the narrative contract.
+
+- `idOrSlug` (string, required) — Node id (GUID) or slug.
 
 ### `insert_beat`
 
@@ -951,13 +955,6 @@ Merge one beat into the previous one in the node. Audio on the survivor is inval
 - `nodeIdOrSlug` (string, required) — Node Guid id or slug.
 - `beatId` (string, required) — Beat Guid id to merge upward.
 
-### `list_nodes`
-
-List nodes. Use kind='story' to list all root stories (no parent); kind='chapter' for all sub-nodes (contain beats). Returns a flat list of id, slug, title, kind, status, beat-count, stale-count.
-
-- `kind` (string, optional) — Optional Kind filter — 'story' (root nodes) or 'chapter' (sub-nodes with beats). Case-insensitive equality match.
-- `limit` (int, optional) — Maximum rows to return. Default 100.
-
 ### `list_scores`
 
 List nodes with their latest review score, word count, and estimated page count (250 words/page). Optionally filter by kind ('book', 'chapter', 'episode', etc.) and/or status ('draft', 'canon', 'ready', 'archived'). Returns code, title, kind, status, score (null if unreviewed), words, pages, scored_on. Sorted by score descending (unscored nodes last). Use this for a quick quality dashboard without running new reviews.
@@ -967,13 +964,20 @@ List nodes with their latest review score, word count, and estimated page count 
 - `includeArchived` (bool, optional) — Include archived nodes. Default false.
 - `limit` (int, optional) — Maximum rows to return. Default 200.
 
-### `narrate_node`
+### `list_stories`
+
+List nodes. Use kind='story' to list all root stories (no parent); kind='chapter' for all sub-nodes (contain beats). Returns a flat list of id, slug, title, kind, status, beat-count, stale-count.
+
+- `kind` (string, optional) — Optional Kind filter — 'story' (root nodes) or 'chapter' (sub-nodes with beats). Case-insensitive equality match.
+- `limit` (int, optional) — Maximum rows to return. Default 100.
+
+### `narrate_story`
 
 Kick off TTS narration for every un-narrated beat in this node (and its child nodes recursively). Returns immediately — narration runs in the background; poll get_node to observe progress. Returns an error response (without spawning anything) if TTS is not configured.
 
 - `nodeIdOrSlug` (string, required) — Node Guid id or slug.
 
-### `pin_node_spine_version`
+### `pin_story_spine_version`
 
 Create a spine version pin for the node's current docx version. Records the SHA-256 hashes of the current bible and user stories, plus the amendment count, so future drift checks can tell when prose was written against a stale spine. Call this after every significant prose session or whenever the spine changes.
 
@@ -987,7 +991,7 @@ Build an Audible AI-narration hand-off package for a node. Produces three files 
 - `nodeIdOrSlug` (string, required) — Node id (GUID) or slug.
 - `withPhonetics` (bool, optional) — Run the optional LLM phonetics pass to fill in 'Say it as' respellings. Default true. Set false to skip and leave the column blank for manual completion.
 
-### `print_node`
+### `print_story`
 
 Print all beats of a node as continuous prose — each beat's Text joined by a blank line. No headers, no beat numbers, no metadata. Accepts node id (GUID) or slug. Use this to read the full prose of a node in one call.
 
@@ -1008,14 +1012,14 @@ Render a node to a KDP-ready Word .docx and write it to the configured publish d
 - `nodeIdOrSlug` (string, required) — Node id (GUID) or slug.
 - `author` (string, optional) — Author name to embed in the document properties. Optional.
 
-### `rebeat_node`
+### `rebeat_story`
 
 Re-segment a node's beats to the codified beat doctrine via LLM re-segmentation. Dry-run by default (safe to call freely). Set apply=true to export a Markdown backup then replace the beats — only committed if the word-retention guard passes (prevents silent content loss). Returns old/new beat counts, retention %, guard result, and a note if it was blocked.
 
 - `nodeIdOrSlug` (string, required) — Node id (GUID) or slug.
 - `apply` (bool, optional) — Set to true to commit the new segmentation. Default false = dry run.
 
-### `reflow_node`
+### `reflow_story`
 
 Copy-edit a node's prose in-place: adds missing '?' on questions, swaps 'says/said' → 'asks/asked' on question dialogue lines, and normalises paragraph/dialogue spacing. Dry-run by default — set apply=true to commit. Beats the model modified beyond those specific edits are rejected and left untouched. Returns changed/unchanged/rejected/errors counts plus per-beat diff previews.
 
@@ -1029,14 +1033,14 @@ Set the silence (in ms) the audio engine inserts AFTER this beat, before the nex
 - `beatHandle` (string, required) — Beat Guid OR 'node-guid.beat-guid' handle.
 - `durationMs` (int, required) — Silence in milliseconds, 0..6000.
 
-### `set_node_bible`
+### `set_story_bible`
 
 Manually set or replace the node bible text. Use when you want to hand-write the plan instead of generating it. The text is saved verbatim; beat spine parsing still applies for planned-beat creation. Pass an empty string to clear the bible.
 
 - `idOrSlug` (string, required) — Node Guid id or slug.
 - `bibleText` (string, required) — Full bible markdown text to store. Empty string clears the bible.
 
-### `set_node_user_stories`
+### `set_story_user_stories`
 
 Set (replace) the user stories / acceptance criteria for a node. Write this before starting prose — it defines what scenes, arcs, and voice moments must be present for the node to reach ≥82% standalone and ≥85% cumulative story score.
 
@@ -1072,7 +1076,7 @@ Update one beat's prose. Recomputes the hash, marks the beat stale, and invalida
 - `beatHandle` (string, required) — Beat Guid OR 'node-guid.beat-guid' handle.
 - `text` (string, required) — New prose. Replaces the entire beat text. Markdown markers + tone-tag brackets are preserved verbatim in storage.
 
-### `update_node`
+### `update_story`
 
 Update a node's metadata fields. Pass only the fields you want to change — omit the rest to leave them unchanged. Editable fields: title, synopsis, kind, status, seed, code (NodeCode), voice_id. Status valid values: draft | ready | canon | archived. Code is uppercased and must be unique across non-null values — pass empty string to clear it. Does NOT touch beats or audio.
 
@@ -1202,7 +1206,7 @@ Check the Semantic Fidelity Gap for a node — Goodhart's Law in prose. Detects 
 
 - `nodeIdOrSlug` (string, required) — Node id (GUID) or slug.
 
-### `diagnose_node`
+### `diagnose_story`
 
 Pre-flight structural analysis before running the review panel. Runs 12 targeted checks in parallel and returns Pass/Warn/Fail for each with evidence (a quote from the text) and a concrete one-action fix. Blocking failures (antagonist cost, protagonist behavior change, stakes embodiment, exposition density) mean the chapter is structurally unsound and will score in the 70s regardless of prose quality. Fix those first, then run review_node. Accepts node id (GUID) or slug. max_chars controls how much of the assembled node text each check sees (default 40000 chars ≈ 10k tokens — covers most chapter-length nodes; lower to reduce cost, raise for very long nodes).
 
@@ -1229,7 +1233,7 @@ Return the stored review summary for a node — the synthesized aggregate of wha
 
 - `nodeIdOrSlug` (string, required) — Node id (GUID) or slug.
 
-### `list_node_reviews`
+### `list_story_reviews`
 
 List individual ballot reviews for a node — one row per persona reader, showing persona name, provider, score, flow score (if study mode), improvements, and content hash. Use to inspect which personas scored low and what they said, or to compare how different providers voted. Results are sorted most-recent-first. Accepts node id (GUID) or slug.
 
@@ -1237,7 +1241,7 @@ List individual ballot reviews for a node — one row per persona reader, showin
 - `contentHash` (string, optional) — Only return reviews from this content hash (i.e. one specific review run). Leave empty for all reviews.
 - `limit` (int, optional) — Maximum rows to return. Default 50.
 
-### `review_node`
+### `review_story`
 
 Run the sampled Legion review panel against a node. STRUCTURAL PRE-FLIGHT runs first: if blocking failures are found (missing antagonist cost, passive protagonist, purely-stated stakes, >70% exposition), the review is blocked and returns the diagnosis instead of ballots — fix the structure first. Non-blocking warnings are always appended to the report. Stratified personas cast score-only ballots then the most informative are upgraded to full prose. Use the 'effort' tier to scale cost to importance. BRAIN: by default ballots run on the CLOUD trusted-4 panel; set use_local=true to run them on the LOCAL LLM instead (Ollama — free, no API tokens, but ONE model = no temperament diversity, so local scores are a SEPARATE baseline, not comparable to cloud means). The response always states which brain ran ('brain': 'cloud'|'local', plus 'model'). Returns: blocked (bool), brain, model, mean_score, SD, CI, report_markdown (includes structural findings), synopsis. GOTCHA: do not edit beats while a review is running. Alias: also accepts node id (GUID) for the nodeIdOrSlug param.
 
@@ -1391,7 +1395,7 @@ Audit a node against all 7 commandments — gateway (for first/standalone storie
 
 - `nodeIdOrSlug` (string, required) — Node id (GUID) or slug.
 
-### `set_previous_node`
+### `set_previous_story`
 
 Link a node to its predecessor, switching it from gateway mode to sequel mode. When previous_node_id_or_slug is provided, Node.PreviousNodeId is set — the story will use sequel commandments in audits and beat-writing context. To clear (revert to gateway mode), pass clear=true. Accepts both node arguments as id (GUID) or slug.
 
@@ -1639,7 +1643,7 @@ List prose lessons from the editorial memory store. When scope is omitted, retur
 
 - `scope` (string, optional) — Optional scope filter prefix (e.g. 'global', 'node:my-slug'). Omit for all.
 
-### `scan_node_violations`
+### `scan_story_violations`
 
 Run the prose pattern guard over every beat in a node and file violations as Findings. This is the node-wide sweep equivalent of check_prose — use it after importing or rewriting a node to catch all clichés, pseudo-profound constructs, on-the-nose interiority, and italicised dialogue in one pass. Returns a per-beat summary of violations found.
 
@@ -1666,9 +1670,9 @@ Append an existing chapter id to a book's chapter_ids list. Use when a chapter a
 - `chapterId` (string, required) — Chapter id to attach.
 - `number` (int, optional) — Chapter position (1-indexed). 0 = append.
 
-### `create_book`
+### `create_legacy_book`
 
-Create or upsert a Book record. Pass an empty id to create a new book (a v7 GUID is assigned and returned); pass a known id to update an existing book. Protagonists are resolved by name against the character canon. status defaults to 'drafting'. Returns the persisted Book including assigned id.
+LEGACY Book/Chapter schema — new work should use create_series / create_story instead. Create or upsert a Book record. Pass an empty id to create a new book (a v7 GUID is assigned and returned); pass a known id to update an existing book. Returns the persisted Book including assigned id.
 
 - `title` (string, required) — Book title. Required.
 - `premise` (string, required) — One-paragraph premise — feeds the chapter director when extending.
@@ -1678,9 +1682,9 @@ Create or upsert a Book record. Pass an empty id to create a new book (a v7 GUID
 - `status` (string, optional) — Book status: drafting | preserved | published | archived. Defaults to 'drafting'.
 - `id` (string, optional) — Optional book id to update an existing record. Empty creates a new book.
 
-### `create_chapter`
+### `create_legacy_chapter`
 
-Create or upsert a Chapter record. Pass an empty id to create new; pass a known id to update. Pass a non-empty bookId to attach the chapter to a book and append it to the book's chapter_ids in the supplied order position (1-indexed). HTML is the rendered body — pass the prose directly. Returns the persisted Chapter including assigned id.
+LEGACY Book/Chapter schema — new work should use create_chapter (node tree) instead. Create or upsert a Chapter record. Pass an empty id to create new; pass a known id to update. Returns the persisted Chapter including assigned id.
 
 - `title` (string, required) — Chapter title. Required.
 - `synopsis` (string, required) — One-paragraph chapter synopsis. Required.
