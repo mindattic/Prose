@@ -1,6 +1,7 @@
 using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.DependencyInjection;
 using StreetSamurai.Core.Data;
+using StreetSamurai.Core.Data.Entities;
 using StreetSamurai.Core.Services;
 
 namespace StreetSamurai.Blazor.Cli;
@@ -94,7 +95,7 @@ public static class RepairCli
             Console.WriteLine("[orphan-chapters]");
             await using var db = await sp.GetRequiredService<IDbContextFactory<StreetSamuraiDbContext>>().CreateDbContextAsync();
             var orphans = await db.Nodes
-                .Where(s => s.Kind == "chapter" && s.ParentNodeId == null)
+                .Where(s => s is ChapterNode && s.ParentNodeId == null)
                 .ToListAsync();
             Console.WriteLine($"  orphan chapters found: {orphans.Count}");
             if (orphans.Count > 0)
@@ -104,7 +105,7 @@ public static class RepairCli
                 {
                     var uid = grp.Key;
                     var drafts = await db.Nodes.FirstOrDefaultAsync(s =>
-                        s.Title == "Drafts" && s.Kind == "story" && s.ParentNodeId == null && s.UniverseId == uid);
+                        s.Title == "Drafts" && s is StoryNode && s.ParentNodeId == null && s.UniverseId == uid);
                     if (drafts == null)
                     {
                         var maxSort = await db.Nodes.Where(s => s.ParentNodeId == null)

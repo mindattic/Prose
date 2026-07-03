@@ -190,7 +190,7 @@ public class NodeMigrationService
         // Legacy code sometimes wrote Chapter.Id as the no-dashes hex form,
         // sometimes with dashes — accept both.
         var chapterIds = await db.Nodes
-            .Where(s => s.Kind == "chapter")
+            .Where(s => s is ChapterNode)
             .Select(s => s.Id)
             .ToListAsync(ct);
         var chapterIdToNode = new Dictionary<string, Guid>(StringComparer.OrdinalIgnoreCase);

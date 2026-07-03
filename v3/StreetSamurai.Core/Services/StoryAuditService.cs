@@ -2,6 +2,7 @@ using System.Text.Json;
 using System.Text.Json.Serialization;
 using Microsoft.EntityFrameworkCore;
 using StreetSamurai.Core.Data;
+using StreetSamurai.Core.Data.Entities;
 using StreetSamurai.Core.Interfaces;
 
 namespace StreetSamurai.Core.Services;
@@ -166,7 +167,7 @@ public class StoryAuditService(
         // SortKey), not the book node's own beats — those may hold a legacy outline
         // or condensed draft that no longer matches the published manuscript.
         var childChapters = await db.Nodes.AsNoTracking()
-            .Where(s => s.ParentNodeId == node.Id && s.Kind == "chapter" && !s.IsWIP)
+            .Where(s => s.ParentNodeId == node.Id && s is ChapterNode && !s.IsWIP)
             .Include(s => s.NodeBeats).ThenInclude(sb => sb.Beat)
             .OrderBy(s => s.SortKey)
             .ToListAsync(ct);

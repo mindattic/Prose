@@ -1,6 +1,7 @@
 using Microsoft.EntityFrameworkCore;
 using System.Text.Json;
 using StreetSamurai.Core.Data;
+using StreetSamurai.Core.Data.Entities;
 using StreetSamurai.Core.Interfaces;
 
 namespace StreetSamurai.Core.Services;
@@ -34,7 +35,7 @@ public class StoryLogicAuditService(
 
         // Respect the same book/chapter hierarchy StoryAuditService uses.
         var childChapters = await db.Nodes.AsNoTracking()
-            .Where(s => s.ParentNodeId == nodeId && s.Kind == "chapter" && !s.IsWIP)
+            .Where(s => s.ParentNodeId == nodeId && s is ChapterNode && !s.IsWIP)
             .Include(s => s.NodeBeats).ThenInclude(sb => sb.Beat)
             .OrderBy(s => s.SortKey)
             .ToListAsync(ct);

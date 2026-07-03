@@ -554,7 +554,7 @@
                 if (err != null) { Toast.Error("DROP-INVALID", err); return; }
             }
         }
-        else if (dragged.Kind == "chapter")
+        else if (dragged is StreetSamurai.Core.Data.Entities.ChapterNode)
         {
             Toast.Error("DROP-INVALID", "A chapter must be under a story. Drop it onto a story instead.");
             return;
@@ -744,7 +744,7 @@
         {
             var universeId = Universe.CurrentId;
             var drafts = await db.Nodes.FirstOrDefaultAsync(s =>
-                s.Title == "Drafts" && s.Kind == "story" && s.ParentNodeId == null && s.UniverseId == universeId);
+                s.Title == "Drafts" && s is StreetSamurai.Core.Data.Entities.StoryNode && s.ParentNodeId == null && s.UniverseId == universeId);
             if (drafts == null)
             {
                 drafts = new StreetSamurai.Core.Data.Entities.StoryNode

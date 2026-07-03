@@ -539,6 +539,9 @@ public class NodeWorkbenchService
             }
         }
 
+        // Display label only — the TPH discriminator (NodeType) is fixed at
+        // creation, so a split leaf keeps its concrete type. Splitting is only
+        // offered on story-level nodes, where type and label already agree.
         parent.Kind = "story";
         parent.UpdatedAt = DateTime.UtcNow;
         await db.SaveChangesAsync(ct);

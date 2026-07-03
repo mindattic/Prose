@@ -31,7 +31,7 @@ await using var db = await dbFactory.CreateDbContextAsync();
 // Find chapter nodes with zero NodeBeat rows.
 var emptyChapters = await db.Nodes
     .AsNoTracking()
-    .Where(s => s.Kind == "chapter")
+    .Where(s => s is ChapterNode)
     .Where(s => !db.NodeBeats.Any(sb => sb.NodeId == s.Id))
     .OrderBy(s => s.Title)
     .Select(s => new { s.Id, s.Title, s.Slug, s.ParentNodeId })
