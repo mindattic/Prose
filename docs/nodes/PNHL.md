@@ -3,21 +3,24 @@ codex: 1
 project: StreetSamurai
 code: PNHL
 title: Pinhole
-layer: strand-bible
+layer: node-bible
 universe: glmz
 status: active
-updated: 2026-07-03
+updated: 2026-07-05
 ---
 
-# STRAND BIBLE — Pinhole (PNHL) {#SS-PNHL}
+# NODE BIBLE — Pinhole (PNHL) {#SS-PNHL}
 
 > **File history.** Originally TDIU / *The Door Is Unlocked*. Story retitled *Pinhole* and
-> rewritten as a 26-beat origin story 2026-07-02. Revised 2026-07-03: MacGuffin corrected from
-> "drone design" to "operator coercion"; Assessor redesigned as a physical character with a
-> dinner-scene introduction; sabotage campaign replaces instrument-theft arc; Kyle's line
-> updated to "Give em hell." Dress element removed 2026-07-03 (per feedback: no dress/makeover
-> beats — Pixel's clothing is functional/signal only); Beat 9 is now a bare invitation and she
-> attends the dinner in her own clothes. Slug: `the-door-is-unlocked-2db1c6ca`.
+> rewritten as a 26-beat origin story 2026-07-02; further revised 2026-07-03 to the current
+> 22-beat form: MacGuffin corrected from "drone design" to "operator coercion"; Assessor
+> redesigned as a physical character with a dinner-scene introduction; sabotage campaign replaces
+> instrument-theft arc; Kyle's line updated to "Give em hell." Dress element removed 2026-07-03
+> (per feedback: no dress/makeover beats — Pixel's clothing is functional/signal only); Beat 9 is
+> now a bare invitation and she attends the dinner in her own clothes. Slug:
+> `the-door-is-unlocked-2db1c6ca`. Revised 2026-07-04: node-bible terminology (SS-A43); aerostatic
+> altitude world context integrated (SS-A32/A42); NSB/Exo vocabulary section added (SS-A34/A38);
+> logic-sweep QA criterion added (SS-A44).
 > When prose and spine disagree, fix one in the same change. See [[../BIBLE]] for universe laws;
 > [[../books/bushido-coda-strands-bible]] for Pixel's role in BCODA.
 
@@ -78,7 +81,7 @@ licensed industry calls it gray-market. She calls it the only market where the w
 **Rule: the wound never surfaces in this story.** It is the engine, not the content. The Assessor
 echoes it — another system that treats consent as expendable — but the echo is never named.
 
-## 3. The VacCell Drone — "Nit" {#SS-PNHL-3}
+## 3. Nit — Her Drone {#SS-PNHL-3}
 
 Nit is her **tool**, not the MacGuffin. The Assessor does not want her drone design. He wants
 *her* — a specialist who can ghost corporate shell networks and read systems nobody else can read.
@@ -137,6 +140,12 @@ She first hears it from Donatella after the climate-system fix ("I'll call you P
 learns it has already traveled when the Assessor uses it at the dinner. She notices the name.
 She does not correct it. (There is no messenger beat — the invitation arrives unsigned.)
 
+**Room-number mechanism (author reference):** The Pivot's room register is accessible via
+management-tier building credentials — the same credential layer the Assessor used to lock
+Pixel out in Beat 12. He read her unit assignment from check-in records before he slipped
+the paper under her door. Pixel deduces this retroactively after the lockout; at Beat 10
+she notes the gap and sets it aside without an answer.
+
 **The earned-name rule:** The name is inseparable from the pinhole gap. The gap is what the
 Assessor noticed. The gap is the story's title. The name came from the same act that started
 everything.
@@ -157,11 +166,26 @@ unlicensed variety.
 Her competence is demonstrated through hands and results, never narrated. She does not name her
 skills to herself or anyone else.
 
+**NSB / Exo vocabulary (SS-A34/A38):** Her remote drone operation is Neuretic Substrate Bridging
+(NSB). She is an Exo operator (street term; formal: Remote Frame Operator / RFO). Her body at
+rest during projection is her Husk; Nit is the frame she occupies. The action is burning a frame,
+threading out, going deep, or — Glooms register — ghost-riding. "Rider" as a job title is retired
+and does not appear in this story.
+
 ## 7. The Blur and the Aerobloc {#SS-PNHL-7}
 
-**The Blur** is the transitional zone between GLMZ and anywhere else — geographic and
-jurisdictional liminal space where CorpoNation coverage thins. Riding the Pulse from Iowa, you
-pass through it.
+**The Blur** is the in-universe name for a Pulse transit — everything between the platform you
+board and the station where you arrive. Not a geographic zone; not jurisdictional. Things pass
+so fast during transit that nothing can be locked onto: the whole journey is called The Blur.
+*"She watched Iowa in The Blur."* *"The Blur thinned."* Riding the Pulse from Iowa into GLMZ,
+The Blur is the ride itself.
+
+**Pulse pod mechanic:** Physically, passengers travel in individual sealed spheres — one per
+person. During transit, neuretics wire together to produce a shared hallucination: the interior
+reads as an old-style intercity train from 200 years earlier, complete with seats, aisles,
+overhead racks, and window feeds from external cameras. Passengers call their pod "the car."
+Nobody finds this odd — shared neuretic constructions are routine in GLMZ. The sphere underneath
+is never described from the inside; characters experience the train, not the pod.
 
 In Beat 2 she sees a **drifting aerobloc** through the Pulse window. An aerobloc is a city block
 built on vacuum-cell buoyancy for voluntary elevation above the GLMZ surface grid. This one is
@@ -173,6 +197,18 @@ by a factor she doesn't want to calculate. She built hers in a barn in Iowa. Som
 one with nine thousand engineers. Both are in the air.
 
 She files it. She keeps watching. She does not expect to feel anything about it and she is wrong.
+
+**Aerostatic altitude in GLMZ (world context — SS-A32/A33/A42):** The float layer above GLMZ —
+aeroblocs, aeroquarters (Float Districts), aeropolises (Cloudtowns) — is where wealth lives.
+**Sky People** are the most privileged residents of GLMZ; their altitude is not incidental. It
+puts distance between money and the city below it. The street does not reach them. **The Low**
+(30–320m altitude) is the ungoverned band beneath the float layer and above ACS patrol ceiling —
+persistent industrial haze, building-wake turbulence, no authority claiming it. Gray-market
+vertical transit uses The Low to move people and cargo without appearing on any official display.
+
+Pixel enters GLMZ at street level and stays there. The float layer is backdrop in this story,
+not a destination. The drifting aerobloc in Beat 2 is her only direct encounter with it — a
+scale reference, a physics puzzle, and a moment she does not expect to feel anything about.
 
 ## 8. Character Rules {#SS-PNHL-8}
 
@@ -205,7 +241,7 @@ She files it. She keeps watching. She does not expect to feel anything about it 
   operation has a theory, and the theory isn't wrong about everything.
 - **What he wants from Pixel:** Her specifically. A 19-year-old who can ghost Tanaka-Arcturus
   infrastructure without triggering a flag, reads systems from the visible to the inference, and
-  built a functional miniaturized VacCell drone in a barn in Iowa. He sees what she'll be in five
+  built a functional miniaturized drone (Nit) in a barn in Iowa. He sees what she'll be in five
   years. He wants to own it before anyone else finds it.
 - **The dinner:** He sends an invitation. He expects compliance. He does not expect
   her to show up in her mother's work boots and drink the Château from the bottle.
@@ -275,6 +311,12 @@ A man across the aisle reads her the way she reads hardware: hands, case, face. 
 what happens to people who sell the work until they can't tell it from selling themselves. She
 says nothing. She runs Nit's equipment check anyway — instrument, not weapon, not for sale.
 
+*(Author note — plant/payoff: this is a thematic plant only. The stranger's framing — "the
+day you can't tell the difference between selling the work and selling yourself is the day they
+have you" — precisely anticipates the Assessor's coercion model. The payoff is structural: the
+Assessor is the thing described. Pixel does not consciously surface the stranger's words at the
+dinner or at the decision. The reader hears the echo; she does not. This is by design.)*
+
 ### Beat 4 (300) — GLMZ Pulse Terminal
 The vertical scale hits her before the sound does. A pickpocket attempts her jacket pocket — she
 catches the wrist by farm reflex, releases without a word. She keeps moving.
@@ -319,6 +361,10 @@ No name, no signature. The paper stock is expensive — the kind chosen by someo
 absence of a name to say the name.
 
 She knows who sent it. She doesn't know how they found her door. She files that too.
+*(Room-number mechanism: management-tier building credentials → The Pivot's room register.
+The Assessor had that access before the invitation; Beat 12 reveals the same credential layer
+when it locks her out. From her POV the gap is unresolved here; the author explanation is in
+§5.)*
 
 She spends the afternoon reading what the public record holds on the restaurant: reservation
 economics, ownership trail, who eats there. She learns more about him from where he chose than
@@ -374,8 +420,9 @@ She intercepts his outgoing financial traffic in the next twelve seconds. Gray-z
 traces everything she touches.
 
 A transfer: 800Φ from an account she doesn't recognize. Routed through four cutouts, but she
-has the Ryokan's routing architecture in her notes, and the fifth hop is a node she's seen before.
-The Assessor's mark on it, invisible to anyone who wasn't already looking.
+has the Ryokan's fault-source path in her notes — not the full node map, but the
+injection-point hops she crossed to reach the fault — and the fifth hop is a node she's seen
+before. The Assessor's mark on it, invisible to anyone who wasn't already looking.
 
 She adapts. She runs the channel solo. The job completes. She files the incident.
 
@@ -507,7 +554,7 @@ This story is close-third, Pixel's POV. She is the camera.
 **What her voice notices:**
 - Hardware before people.
 - Calibration data. The worn latch on 2D. The ACS officer's keyboard cadence. The sweep signal
-  pattern. The VacCell's charge percentage. These are not metaphors. They are observations.
+  pattern. Nit's charge percentage. These are not metaphors. They are observations.
 - Music as a throughline. What she's playing when. Never named aloud — but the prose registers it.
 - Physical sensations translated into technical language: fear is "the neck going cold before
   the thought catches up."
@@ -539,10 +586,12 @@ its footing.
 
 > SS-US-H4: As the author, *Pinhole* (PNHL) tells Pixel's origin story: Iowa → The Blur →
 > GLMZ → relay job → Assessor dinner → coercion campaign → confrontation → stays as Pixel.
-> *Acceptance: all beats at standard; standalone review ≥ 87%; prose passes the locks in §9;
-> final beat: routing gap intact (not erased); aerobloc sighting, Channeler ghost-op, three-class
-> skills, handle origin, and Kyle finale all present.*
+> *Acceptance: logic sweep passes all six dimensions (causality chain, knowledge states, timeline,
+> plant/payoff ledger, orphan references, bible agreement — per SS-A44 SOP); prose passes the
+> locks in §9; final beat: routing gap intact (not erased); aerobloc sighting, Channeler
+> ghost-op, three-class skills, handle origin, and Kyle finale all present. Standalone review
+> ≥ 87% when a panel is explicitly run.*
 
-- **H4a** Story spine complete — beats 1-18.
+- **H4a** Story spine complete — beats 1-22.
 - **H4b** Beats require full prose rewrite to match new arc (2026-07-03 revision).
-- **H4c** Standalone review pending new prose.
+- **H4c** Logic sweep and standalone review pending new prose.

@@ -8692,6 +8692,9 @@ namespace StreetSamurai.Core.Migrations
                     b.Property<string>("UniversePrimer")
                         .HasColumnType("nvarchar(max)");
 
+                    b.Property<string>("WorldFacts")
+                        .HasColumnType("nvarchar(max)");
+
                     b.HasKey("Id");
 
                     b.HasIndex("Slug")

@@ -2,6 +2,7 @@ using System.ComponentModel;
 using System.Text.Json;
 using ModelContextProtocol.Server;
 using StreetSamurai.Core.Services;
+using StreetSamurai.Core.Data.Entities;
 
 namespace StreetSamurai.Mcp;
 
@@ -22,8 +23,13 @@ public class UniverseTools
     private static readonly JsonSerializerOptions JsonOpts = new() { WriteIndented = false };
 
     private readonly IUniverseContext universe;
+    private readonly UniversalFactsService universalFacts;
 
-    public UniverseTools(IUniverseContext universe) => this.universe = universe;
+    public UniverseTools(IUniverseContext universe, UniversalFactsService universalFacts)
+    {
+        this.universe = universe;
+        this.universalFacts = universalFacts;
+    }
 
     [McpServerTool, Description("List every registered universe (slug, name, theme) and which one is currently active. Call this first to discover universe slugs before switch_universe.")]
     public string ListUniverses()
@@ -48,5 +54,27 @@ public class UniverseTools
     {
         var u = universe.CurrentUniverse;
         return JsonSerializer.Serialize(new { slug = universe.CurrentSlug, name = u?.Name, theme = u?.Theme }, JsonOpts);
+    }
+
+    [McpServerTool, Description("Return the universal world facts for the current universe — world mechanics, vocabulary, and social rules injected into every beat generation prompt. These apply to all stories in the universe. Story-specific facts live in each story's node bible instead.")]
+    public async Task<string> GetUniversalFacts()
+    {
+        var facts = await universalFacts.GetWorldFactsAsync();
+        var u = universe.CurrentUniverse;
+        return JsonSerializer.Serialize(new
+        {
+            universe = universe.CurrentSlug,
+            universeName = u?.Name,
+            hasWorldFacts = !string.IsNullOrWhiteSpace(facts),
+            worldFacts = facts
+        }, JsonOpts);
+    }
+
+    [McpServerTool, Description("Set the universal world facts for the current universe. These facts are injected into every beat generation prompt for any story in this universe, so they should cover mechanics and vocabulary that apply everywhere (transport, technology, social structure, prose vocabulary). Story-specific content belongs in the story's node bible, not here.")]
+    public async Task<string> SetUniversalFacts(
+        [Description("The full world facts text in Markdown. Replaces any existing content. Pass empty string to clear.")] string facts)
+    {
+        await universalFacts.SetWorldFactsAsync(facts);
+        return JsonSerializer.Serialize(new { ok = true, universe = universe.CurrentSlug, length = facts.Length }, JsonOpts);
     }
 }

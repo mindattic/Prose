@@ -5,8 +5,7 @@ universe: GLMZ
 kind: book
 status: in-progress
 created: 2026-06-22
-updated: 2026-06-23
-amendment: SS-A14
+updated: 2026-07-04
 supersedes: ULC
 ---
 
@@ -62,6 +61,8 @@ The weirdest entry in the GLMZ collection. A dual-POV investigation novel (~80k 
 removal of meaning from human memory, at scale, by a CorpoNation that has made it look like
 maintenance.
 
+**Present day: 2226** (SS-A28 — the current corpus present is write-year + 200).
+
 **Amara Osei** (news broadcaster, former wellness-tech correspondent) and **Seto Banda** (data
 courier, CorpoNation access routes daily) are both Batch 44-C recipients. Their carrier-grade
 neuretics — which should be hermetically sealed — create an accidental two-way bleed. They share
@@ -87,6 +88,13 @@ terms. Her professional silence in his body. His physical freedom in hers.
 - A Kyle story (Kyle does not appear)
 - A thriller with a gunfight climax (the antagonist's weapon is calibration, not bullets)
 - Stylistically safe (this is the weirdest prose register in the collection — see §6)
+
+**NOT NSB/remote operation:** The neuretics in this story are medical-grade carrier implants worn
+continuously — cognitive enhancement, data-courier carrier systems, always-on. This is distinct
+from **NSB (Neuretic Substrate Bridging)**, which is remote consciousness projection into a frame
+chassis (what Exos do). Orison's product is calibration and maintenance of implanted neuretics.
+No frames. No Shells. No return-handshake risk. The bleed is a malfunction in an implant that
+was never supposed to leak — not a projection artifact.
 
 ---
 
@@ -126,6 +134,16 @@ heaviness." Not a metaphor. A malfunction that arrives as sensation.
 
 **What the bleed is NOT:** mystical, romantic, a bond, a gift. It is a symptom and a liability.
 The story begins in bewilderment and disorientation, not awakening.
+
+**Secondary bleed — Nuru Banda (LOCKED):** Seto's primary bleed harmonic is with Amara. A
+secondary one-way bleed exists with Nuru. When Seto caught up on his missed calibration visits
+in a block booking, Nuru — also Batch 44-C, also behind on visits — attended the same
+high-throughput session at the Orison campus. The concurrent calibration of two adjacent 44-C
+recipients in rapid sequence briefly broadened the channel. Seto received a secondary harmonic:
+Nuru's suppressed memories reached him one-way, silently, during that shared session. He does
+not know until Act 3 what he received or why certain familiar memories arrive weighted
+differently than they should. This secondary harmonic is what makes the reverse transfer in
+Act 3 possible.
 
 ---
 
@@ -192,10 +210,14 @@ your own behavior has been surgically removed. He is pleasant because there is n
 resist. He does not experience the work he does as wrong because the associative node that
 connected *harm* to its *weight* was severed on visit four.
 
-**The Ciro reveal (Act 3):** Amara, receiving one of Ciro's bleed-memories through a calibration
-error, experiences what Ciro used to feel about what he does. Before the visits. Before the
-protocol ran. The memory is a man who was appalled by himself. The weight of that memory, arriving
-in Amara, is enormous. Ciro himself no longer has access to it.
+**The Ciro reveal (Act 3):** During the 8-second broadcast window in Ch24 (The Procedure),
+all 847 Batch 44-C devices open simultaneously. Ciro's most deeply suppressed memories — buried
+deepest because the protocol has run the most cycles on him — break through the open channel
+along with everything else. Because Amara is bleed-connected to Seto, who is executing the
+reverse transfer at the Orison campus, the memory reaches her through that open window: a man
+who was appalled by himself. Before the visits. Before the protocol ran. The weight of that
+memory, arriving in Amara during the same 8 seconds that carry Nuru's memories back to her, is
+enormous. Ciro himself no longer has access to it.
 
 **Heritage:** Portuguese-Brazilian. Hair kept within one millimeter of Orison maximum length
 standard. The precision is the tell — one of the last self-governing behaviors that survived.
@@ -243,8 +265,13 @@ to discredit Amara is evidence of their own protocol working.
 ### Amara Osei (POV — Amara chapters)
 
 - **Identity:** News broadcaster, wellness-tech correspondent. Formerly Tessera Tribune; now
-  under Orison Communications Group following the 2223 acquisition. Entity `019ee11c` (DB update
-  required: profession → broadcaster; affiliation → Tessera/Orison Communications Group).
+  under Orison Communications Group following the 2223 acquisition. Entity
+  `019EE11C-6712-7854-870E-03D2B814EC99` (DB update required: profession → broadcaster;
+  affiliation → Tessera/Orison Communications Group; slug needs assignment).
+- **Media format:** In 2226 the standard broadcast medium is **Volume** — holographic 3D, cast
+  to Tessera surface-coated walls in any home. Amara delivers volumetric segments, not flat 2D.
+  Her credibility lives in the Volume format; her on-air instability is visible in three
+  dimensions to everyone watching the cast.
 - **How she got the neuretics:** Three years ago, she received Batch 44-C as part of a segment
   called "Experience Report: 90 Days with Neuretic Enhancement." The segment ran in four parts.
   Orison's communications team cited it in 27 subsequent press packages as evidence of their
@@ -256,9 +283,12 @@ to discredit Amara is evidence of their own protocol working.
   her coverage has been measured, responsible, fair. It has also been framed by what Orison chose
   to share with her.
 - **Gender:** she/her. Never "they" for Amara.
-- **Class lens — Tier 4+, sheltered.** Amara is a high-tier citizen who has lived a **very sheltered
-  life.** Her POV is insulated: the lower tiers are abstractions, comfort and access the water she
-  swims in. The bleed — and Seto — are her first real contact with how the other tiers live. The
+- **Class lens — Tier 4+, sheltered.** Amara is a high-tier citizen who has lived a **very
+  sheltered life.** Her POV is insulated: the lower tiers are abstractions, comfort and access
+  the water she swims in. The class axis runs from underground through street-level through the
+  float districts — the **Sky People**, Meridian 88's aeroplex-dwelling wealthy, represent the
+  class horizon above her, and she is close enough to accept their framing without inhabiting it.
+  The bleed — and Seto — are her first real contact with how the other tiers live. The
   register carries the blind spots of privilege: not malice, a narrowness she doesn't know she has.
 - **Voice:** Careful, incremental, trained to be believed. She has the broadcaster's reflex: speak
   at the pace of a sentence people can follow, choose the word that survives a transcript read.
@@ -273,16 +303,21 @@ to discredit Amara is evidence of their own protocol working.
   Act 2 is Orison using the instability narrative to dismantle her credibility. By Act 3, she is
   no longer the person people trust. She has to become someone who moves without being seen —
   which means learning from Seto. The bleed has been showing her how for months.
+- **Character doctrine (SS-A41):** What was done to Amara — the calibration, the quiet removal
+  of her professional doubts — is backstory. Her response to it — what she chooses to do once
+  she knows — is the story. Anchor her in her choices, not her victimhood.
 
 ### Seto Banda (POV — Seto chapters)
 
 - **Identity:** Gray Zone data courier. Carrier-grade sealed neuretics. Japanese-Kenyan.
-  Entity `019ee11c` (verify slug — may need separate entity).
+  Entity `019EE11C-BFE9-7EC6-8CFA-8C9B486E9B74` (confirmed distinct from Amara; slug needs
+  assignment).
 - **Class lens — the crosser.** His courier work makes him one of the few who regularly moves
   between **Tier 3 and Tier 4.** He sees both worlds and belongs fully to neither, so he carries a
   **nuanced, lived-in read of the class divide** — neither Amara's insulation nor a have-not's flat
   resentment. He's the street-smart one; that contrast with Amara is a core engine of the two-POV
-  structure.
+  structure. He transits the **Border Market** threshold zones at corp entrances as a routine
+  professional fact, not as a visitor.
 - **How he got the neuretics:** Standard gray-zone upgrade, purchased through a Seam-adjacent
   reseller. Batch 44-C because that was what the reseller stocked in 2222. He did not attend
   calibration visits in person at first — missed the first three, caught up in a block booking,
@@ -310,10 +345,13 @@ to discredit Amara is evidence of their own protocol working.
   slowly closing his access — routes, passes, the infrastructure that makes him possible. By Act
   3 he is working to stay viable, which is the first time in five years he has had to work just
   to exist. The bleed has been showing him why it matters.
+- **Character doctrine (SS-A41):** What was done to Seto — the protocol running without his
+  knowledge — is backstory. His response — tracking the manifest, attempting the reverse
+  transfer, choosing to stay when leaving would be safer — is the story.
 
 ### Ekow Ato
 
-- **Cross-strand (VATD):** After the Han Do-yun incident, Ekow burned his Lotus contract and
+- **Cross-story (VATD):** After the Han Do-yun incident, Ekow burned his Lotus contract and
   went Gray Zone. He takes jobs with clean premises and verifiable targets — the MNEMO brief
   looks like that: stolen neuretic data, a courier with access he shouldn't have. He takes it
   because VATD taught him the cost of serving masters who will discard you. His withdrawal when
@@ -321,8 +359,10 @@ to discredit Amara is evidence of their own protocol working.
   call correct. He has already made this choice once, at higher cost. He does not explain this
   to Seto.
 - Gray Zone contract (not Lotus). Hired on false premise: "courier moving stolen proprietary
-  neuretic data." Gives Seto 7 days and withdraws when the premise collapses on
-  story-publication day.
+  neuretic data." Gives Seto 7 days and withdraws when the Batch 44-C manifest surfaces
+  publicly, making Seto's client-record status visible and collapsing the false premise of
+  stolen proprietary data. Ch21 Thursday Morning: Ekow receives the file termination notice.
+  Ch22 Contract Delayed: last contract; premise has collapsed.
 - VATD-established doctrines carry forward: deliberate patience, minimum footprint,
   compartmentation, information hygiene; machete; handkerchief folded in quarters.
 - **Razor / machete dichotomy with Ciro (LOCKED §3):** His declared agricultural instrument vs.
@@ -417,9 +457,9 @@ The bleed carries suppressed memories to the wrong person WITH their meaning int
 the protocol exists — but only to Amara and Seto. No court, no journalist, no regulatory body
 can receive bleed-memory as evidence.
 
-**The key:** Nuru Banda. Seto has received her suppressed memories through the bleed — the
-memories the protocol stripped of weight. He knows what they felt like to her, before. He has
-them whole.
+**The key:** Nuru Banda. Seto has received her suppressed memories through the secondary bleed
+harmonic established during their shared block-booking calibration session (see §1). He holds
+them whole — what they felt like to her, before the protocol ran.
 
 **The Act 3 engine:** Seto attempts a reverse transfer through the bleed channel — transmitting
 Nuru's suppressed memories back to her WITH the weight they carried when he received them. This
@@ -442,9 +482,9 @@ Group's flagship outlet. It may run in Amara's timeslot, delivered by whoever re
 
 But 847 people had 8 seconds. Some of them remember what they felt.
 
-**The ending:** Ch27 (Zone 7, Tuesday, 9AM) and Ch28 (10:47) — not a triumph. Not a defeat.
+**The ending:** Ch26 (Zone 7, Tuesday, 9AM) and Ch27 (10:47) — not a triumph. Not a defeat.
 The Phase II announcement ships. Orison wins the news cycle. But Nuru Banda does not renew her
-calibration visit. She was scheduled for Tuesday 9AM. She does not go. Ch28 is whoever Amara
+calibration visit. She was scheduled for Tuesday 9AM. She does not go. Ch27 is whoever Amara
 or Seto sees in the lobby at 10:47 — the person who was supposed to show up for their visit
 and didn't.
 
@@ -476,7 +516,7 @@ the black spot, the nothing that means everything.
 
 ### Act 2 — 11 chapters (overhaul COMPLETE; Second Suitor merged into Grooming 2026-06-23)
 
-> **Scores in this table are PRE-OVERHAUL (stale).** Current standalone strand review R6 = **83.0**
+> **Scores in this table are PRE-OVERHAUL (stale).** Current standalone story review R6 = **83.0**
 > (SD 5.4, much tighter than R5's SD 7.1). The Act 2 overhaul is done. See
 > `project_mnemo_rewrite_pending` memory for the live state.
 >
@@ -487,7 +527,7 @@ the black spot, the nothing that means everything.
 > **merged into the front of Grooming** as the night-before movement, so Grooming now arcs
 > gathering-warmth → that warmth weaponized into the floor-32 provisioning trap. The redundant 8/day
 > access-close was dropped (nothing downstream references it). Book is now **27 chapters**; the
-> Second Suitor strand is orphaned (`ParentStrandId=NULL`, content preserved). Also: the repeated Ciro
+> Second Suitor node is orphaned (`ParentNodeId=NULL`, content preserved). Also: the repeated Ciro
 > razor jaw-draw in Managed Liability was trimmed (motif now: Account Liaison intro → The Lunch reading
 > → Grooming → The Turn payoff).
 
@@ -500,7 +540,7 @@ the black spot, the nothing that means everything.
 | 15 | everything-she-carries | Everything She Carries | Amara | Theodora recalibration horror; Amara loses segment |
 | 16 | grooming | Grooming | Amara | **MERGED**: quarterly-gathering/list (ex-Second Suitor) → floor-32 provisioning trap |
 | 17 | off-timing | Off Timing | Amara | 112 gaps; batch query access suspended |
-| 18 | pressure-and-counter-pressure | Pressure & Counter-Pressure | Seto | ACT 2 PEAK — preserve structure |
+| 18 | pressure-and-counter-pressure | Pressure & Counter-Pressure | Seto | ACT 2 PEAK — preserve structure; contains the Amara/Seto Pilsen Veil walk (§2): both physically present in Zone 3, neither names what is wrong until the scene ends |
 | 19 | the-turn | The Turn | Amara | Forced leave; razor payoff (open blade); platform loss |
 | 20 | story-runs | Story Runs | Seto | Convergence; the story is handed off |
 | 21 | thursday-morning | Thursday Morning | Ekow | Ekow receives file termination notice |
@@ -512,12 +552,12 @@ Act 2 onward after the merge; §7 "Ch27/Ch28" are now Ch26/Ch27 = Zone 7, Tuesda
 
 | Ch | Slug | Title | POV | Beat score (R3) | Note |
 |----|------|-------|-----|-----------------|------|
-| 23 | contract-delayed | Contract Delayed | Ekow | 4.4/5 ≈ 88% | Ekow last contract; premise collapses |
-| 24 | the-last-route | The Last Route | Seto | 4.7/5 ≈ 94% | Seto's last route through the Veil |
-| 25 | the-procedure | The Procedure | Seto | 5.0/5 = 100% | The reverse transfer attempt; 8 seconds |
-| 26 | different-frequency | Different Frequency | Amara | 4.6/5 ≈ 92% | Aftermath; Orison Phase II announcement |
-| 27 | zone-7-tuesday-9am | Zone 7, Tuesday, 9AM | Seto | 5.0/5 = 100% | Nuru's scheduled calibration time |
-| 28 | 10-47 | 10:47 | Amara | 5.0/5 = 100% | The person who didn't come in |
+| 22 | contract-delayed | Contract Delayed | Ekow | 4.4/5 ≈ 88% | Ekow last contract; premise collapses (Ch22 after −1 merge shift) |
+| 23 | the-last-route | The Last Route | Seto | 4.7/5 ≈ 94% | Seto's last route through the Veil |
+| 24 | the-procedure | The Procedure | Seto | 5.0/5 = 100% | The reverse transfer attempt; 8-second broadcast — during this window, Ciro's suppressed pre-visit memories reach Amara through the open channel (see §3) |
+| 25 | different-frequency | Different Frequency | Amara | 4.6/5 ≈ 92% | Aftermath; Orison Phase II announcement; Amara carries the weight of Ciro's pre-visit memory (received during the Ch24 broadcast window) — the horror of knowing who he was before Orison removed his objections |
+| 26 | zone-7-tuesday-9am | Zone 7, Tuesday, 9AM | Seto | 5.0/5 = 100% | Nuru's scheduled calibration time |
+| 27 | 10-47 | 10:47 | Amara | 5.0/5 = 100% | The person who didn't come in |
 
 ---
 
@@ -529,7 +569,7 @@ Act 2 onward after the merge; §7 "Ch27/Ch28" are now Ch26/Ch27 = Zone 7, Tuesda
 - Physical involuntary bleed details (jaw tightens, hand flat on terminal, left shoulder forward)
 - Bleed-intrusion sentences in Act 2+ (the formal innovation — see §6)
 - Pilsen Veil flatness done correctly (prose register matching the zone)
-- Ch25 The Procedure: this must be the weirdest chapter in the collection
+- Ch24 The Procedure: this must be the weirdest chapter in the collection
 - Amara noticing the gap between what she has broadcast and what she has known
 - Seto reading corpo environments from the courier's eye — what the lobby is designed not to show
 
@@ -553,8 +593,9 @@ Act 2 onward after the merge; §7 "Ch27/Ch28" are now Ch26/Ch27 = Zone 7, Tuesda
   engine ("what did you give away") present in all acts.
 - **MNEMO-US-1 ✅** Amara Osei, Seto Banda, Ciro Fonseca, Orison Neuretics — all entities seeded.
 - **MNEMO-US-1A ⬜** Amara entity updated — profession=broadcaster, affiliation=Tessera
-  Tribune/Orison Communications Group.
-- **MNEMO-US-2 ✅** Book stub + chapter strands; all prose written. **27 chapters** after the
+  Tribune/Orison Communications Group. (Entity IDs confirmed distinct: Amara=`019EE11C-6712-7854-870E-03D2B814EC99`,
+  Seto=`019EE11C-BFE9-7EC6-8CFA-8C9B486E9B74`; DB field update still pending.)
+- **MNEMO-US-2 ✅** Book stub + chapter nodes; all prose written. **27 chapters** after the
   2026-06-23 Second Suitor→Grooming merge (was 28).
 - **MNEMO-US-3 ⬜** Act 1 refactored — mean ≥ 85.0, no chapter below 83; broadcaster identity
   present throughout.
@@ -562,8 +603,9 @@ Act 2 onward after the merge; §7 "Ch27/Ch28" are now Ch26/Ch27 = Zone 7, Tuesda
   instability narrative builds against Amara.
 - **MNEMO-US-5 ⬜** Ch17 Grooming restored (remove cold-water opening + trim floor-32 ending).
 - **MNEMO-US-6 ⬜** Bleed-intrusion sentences added to all Act 2 Amara+Seto chapters.
-- **MNEMO-US-7 ✅** Act 3 (Ch23–28) written per §7 design. All 6 chapters in DB with full prose;
-  Act 3 scoring 88–100% per beat (R3 n=20). Confirmed 2026-06-23.
+- **MNEMO-US-7 ✅** Act 3 (Ch22–27) written per §7 design. All 6 chapters in DB with full prose;
+  Act 3 scoring 88–100% per beat (R3 n=20). Confirmed 2026-06-23. (Chapter numbers corrected −1
+  after Second Suitor→Grooming merge; was Ch23–28 in pre-merge references.)
 - **MNEMO-US-8 ⬜** Cumulative novel review ≥ 85%. Review history: R1=81.0, R2=79.8 (dirty),
   R3=83.2 (first clean pass), R4=80.9 (cluster flip), R5=82.6 (SD 7.1), R6=83.0 (SD 5.4 — after
   Second Suitor→Grooming merge + razor trim), **R7=84.0 (SD 4.8, flow 80.7 — after Amara-interiority
@@ -586,10 +628,11 @@ Act 2 onward after the merge; §7 "Ch27/Ch28" are now Ch26/Ch27 = Zone 7, Tuesda
 
 ---
 
-## 11. Cross-Strand Authorial Notes {#MNEMO-11}
+## 11. Cross-Story Authorial Notes {#MNEMO-11}
 
-World-consequence connections from other strands. **Beat edits are blocked while MNEMO is near
-the 85% threshold** (R7=84.0%). All connections documented here are docs-layer only.
+World-consequence connections from other stories. All connections documented here are docs-layer
+only. Any beat edits require a logic sweep (SS-A44) before export — the default QA mechanism
+is now the six-dimension logic/continuity sweep, not the legacy 82/85 score threshold.
 
 **Pilsen Veil / ATTE (world geography):** The Pilsen Veil is the same zone Yemina Fola
 investigates in ATTE. Amara Osei published an award-winning piece on the Veil's early reports —
@@ -604,3 +647,67 @@ disrupts Orison's market positioning. This accelerates the Phase II timeline —
 commercial pressure to move the rollout before independent formulas erode share. The formula
 was published after MNEMO's events. If MNEMO is ever extended, the Soraya publication is a live
 world-consequence that shortens Orison's deployment window.
+
+---
+
+## 12. World Context {#MNEMO-12}
+
+Relevant GLMZ world pillars for writers working on this story.
+
+### Neuretics vs. NSB (critical distinction)
+
+The neuretics in this story are **carrier-grade implants** — medical-grade mesh grown into the
+brain, always-on, used for cognitive enhancement and data-courier carrier systems. This is the
+standard neuretic technology all major GLMZ corpos sell and maintain.
+
+This is **not** NSB (Neuretic Substrate Bridging / Coherent Eigenstate Projection) — the
+technology that lets Exos project their consciousness into a remote frame chassis. Exo work
+involves Shells (inert bodies during projection), return handshakes, Black Ice countermeasures,
+and Dollhead dissociation risk. None of that applies here. Orison calibrates implants; they do
+not run projection operations.
+
+The distinction matters because Orison's suppression protocol targets the associative-node
+layer of an always-on implant — something that has no equivalent in the NSB/frame-operation
+domain. The horror is in the implant that never turns off.
+
+### Altitude and the class axis (SS-A32/A33/A42)
+
+GLMZ's class axis is **vertical**: underground → surface → float layer → aeropolis. This is
+the sixth load-bearing pillar of the setting alongside AI, nanotechnology, neuretics, schisms,
+and CorpoNations/Gray Zones.
+
+- **Sky People** — the aeroplex-dwelling wealthy, living above the clouds in float districts
+  and aeropolises. The altitude is the amenity: above the pollution, the Block Wars, the street.
+  Amara at Tier 4+ is adjacent to this class without being part of it.
+- **The Low** — the ungoverned airspace band 30–320m altitude, outside both Arcturus Civil
+  Security's ceiling and MATA's radar floor. Gray-market vertical transit. Seto has no business
+  in The Low but knows the operators who do.
+- **The surface** — where both Amara and Seto operate. Contested, surveilled, and where the
+  story takes place.
+- **The underground** — not relevant to MNEMO's action, but Pilsen Zone 3 is surface-level;
+  the Veil's flatness is a surface phenomenon.
+
+There are **no permanent communities beneath Lake Michigan** (SS-A42 — this canon is retired).
+The lakebed holds decommissioned ruins and one sealed black site. Not relevant to MNEMO but
+noted to prevent accidental world-building errors.
+
+### Media and broadcast format
+
+In 2226, the standard broadcast medium is **Volume** — holographic 3D projected into any
+Tessera-coated surface. "Flat" (2D) media is antiquated. Amara's segments are Volume casts;
+her on-air instability is visible in three dimensions to everyone in the cast's reach. The word
+"video" is what anthropologists use. Her credibility lives in the Volume format; the instability
+narrative Orison builds uses the cast record as evidence.
+
+### CorpoNations as arcologies (SS-A29)
+
+Every CorpoNation in GLMZ — including Orison — is a self-contained arcology over 100 stories
+tall. Calibration suites, HQ offices, and Orison's entire apparatus exist inside sealed towers
+separated from each other by Gray Zones. Seto has legitimate Orison campus passes as a courier;
+he enters through the border threshold, not through any residential wing.
+
+### Present year
+
+The story is set in **2226** — the current GLMZ corpus present (SS-A28: present day = write year
++ 200). Batch 44-C certified in 2222 (four years ago). Tessera Tribune acquired in 2223 (three
+years ago). All historical dates in this bible are correct relative to the 2226 present.

@@ -133,7 +133,7 @@ is the world-truth that enables the SRZR cross-pollination: Sasha Võ's schism-s
 deep-reading converge on the same signal from opposite directions. Do not name Halcyon explicitly
 in UNDR prose — Glim knows *wrong*, not *who*.
 
-**Half a dozen micro-biomes, because the labs above leak.** Run-off from the corpo labs of Meridian
+**Half a dozen micro-biomes, because the labs above leak.** Run-off from the corpo labs of GLMZ
 (reagents, nanite sludge, gene-liquor, reactor warmth, cultivated algae) makes the deep a patchwork of
 impossible little ecologies — a warm fungal jungle under a leaking reactor jacket; a cold dead sump
 where the air kills; a bioluminescent algae-lake; a salt cavern; a methane fen. **"The Made Things"**

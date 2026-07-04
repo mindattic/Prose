@@ -578,6 +578,9 @@ public static class ServiceCollectionExtensions
         services.AddSingleton<AgendaEngine>();
         services.AddSingleton<KnowledgeMapService>();
 
+        // Universal facts — world mechanics / vocabulary injected into every generation prompt
+        services.AddSingleton<UniversalFactsService>();
+
         // Scene generation pipeline
         services.AddSingleton<TextAnalysisService>();
         services.AddSingleton<ContextAnalyzerService>();

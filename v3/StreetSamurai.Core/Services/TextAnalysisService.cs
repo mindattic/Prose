@@ -19,7 +19,7 @@ public class TextAnalysisService
     {
         var canonContext = BuildCanonContext(selectedText);
         var system = $"""
-            You are a lore consistency checker for a near-future world called Meridian City.
+            You are a lore consistency checker for GLMZ (Greater Lake Michigan Zone, also called Meridian 88 or The Glooms, year 2226).
             You have access to the following canon information:
 
             {canonContext}
@@ -58,7 +58,7 @@ public class TextAnalysisService
     {
         var canonContext = BuildCanonContext(selectedText);
         var system = $"""
-            You are continuing a neo-noir novel set in Meridian City. Maintain the exact same voice,
+            You are continuing a neo-noir novel set in GLMZ (Greater Lake Michigan Zone, 2226). Maintain the exact same voice,
             tone, and style. Follow these rules strictly:
             - Sentences max 25 words
             - Every paragraph: action, sensory detail, or a lie

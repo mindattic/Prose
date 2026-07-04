@@ -2,28 +2,27 @@
 codex: 1
 project: StreetSamurai
 code: SRZR
-layer: strand-bible
+layer: node-bible
 universe: glmz
-status: complete (15 beats drafted, all prose; 86.6% standalone 2026-06-25; exported V8); arc expanded to 26 chapters 2026-06-28 — 11 new chapters to write (Act 1 forge + Act 2 cell + Act 3 connective tissue)
-updated: 2026-06-28
+status: complete (15 beats drafted, all prose; 86.6% standalone 2026-06-25; exported V8); arc expanded to 26 chapters 2026-06-28 — ~15 new chapters to write (Act 1 Ch 1–10, cell Ch 15/16/18/20, connective Ch 23)
+updated: 2026-07-04
 ---
 
-# STRAND BIBLE — Steppin' Razor (SRZR) {#SS-SRZR}
+# NODE BIBLE — Steppin' Razor (SRZR) {#SS-SRZR}
 
-> **DB strand:** id `019ef7be-b2ca-70a1-bab6-e807977a6640`, slug `steppin-razor-019ef7be`,
-> StrandCode `SRZR`, kind `story`, universe GLMZ.
+> **DB node:** id `019ef7be-b2ca-70a1-bab6-e807977a6640`, slug `steppin-razor-019ef7be`,
+> NodeCode `SRZR`, kind `story`, universe GLMZ.
 
-> **Purpose.** The strand of **Sasha Võ** — a small, dangerous, nineteen-year-old gray-zone
+> **Purpose.** The story of **Sasha Võ** — a small, dangerous, nineteen-year-old gray-zone
 > operator who can hear the other side of the schisms and cannot make it stop. Title is after
 > Peter Tosh's "Stepping Razor": *don't watch my size, I'm dangerous.*
 >
 > **This bible was rewritten 2026-06-23 (SS-A20 redesign).** The original SRZR seed was the
 > *Person-of-Interest* orbital-AI "gun-and-run" migrated out of Sparrow. That thriller skeleton is
-> **demoted to an optional later movement** (§8) — a severable crossover, not the spine. The spine is
+> **demoted to an optional later movement** (§9) — a severable crossover, not the spine. The spine is
 > now the design below: a psychedelic edge→core tale that opens on a frontier bar and a man on a
-> camel. See [[../BIBLE]] for universe laws; the schism-representative-contact mechanism, the
-> canon-locked-unknown identity of the contact, and adult-open neuretics are canonized in
-> [[../AMENDMENTS#SS-A21]].
+> camel. The schism-representative-contact mechanism, the canon-locked-unknown identity of the
+> contact, and adult-open neuretics are established canon (SS-A21); see §2 and §11.
 >
 > **Arc expanded to 26 chapters per the 2026-06-28 redesign (Act 1 pre-GLMZ forge added in front of
 > the existing material); spine source: design review.** The existing 15 drafted beats survive intact
@@ -63,6 +62,9 @@ DB id `FA054E75-9301-4C5D-A803-9A2FD2099984`. See [[project_sasha_vo_etymology]]
   select-fire (single/burst/auto). Both chamber the same round: 6.5mm DPS-65 "Stillwater."
   **Cross-draw, both hands at once** — how she thinks, not a trick.
 - As deadly with Problem Solver and Trouble Maker as Kyle is with Silence.
+- **Sasha is NOT an Exo (SS-A38).** She operates physically, not via NSB frame projection. Problem
+  Solver and Trouble Maker are hers — she pulls them, not a frame. The slur guard at §2 and §6
+  applies separately: she is never called a "Jockey" in contexts that invoke camel imagery.
 
 **Why she is angry — the engine (LOCKED):** Her neuretics (grown in-head compute) were **never
 provisioned / locked to a band**, so unlike everyone else's, hers never *closed*. She has heard a low
@@ -140,7 +142,8 @@ human icon without grasping that the icon is absurd here. Leave it ambiguous whe
 > narration, prose, entity names, and all documentation. "Camel jockey" is an ethnic slur and is
 > permanently banned — in prose, in entity names, in notes, everywhere. Entity `019ef8055bc8` was
 > restored to "The Man on the Camel" 2026-06-28 after an incorrect rename; this lock must never be
-> violated again. See SRZR-US-5.
+> violated again. See SRZR-US-5. Additionally: the street term "Jockey" for an Exo/NSB operator
+> must **never** appear adjacent to camel imagery in SRZR (SS-A38 SLUR GUARD).
 
 - **Register (LOCKED):** model on the Board / the Hiss in the game *Control*, plus the DS9 Prophets —
   a **collective** that says *it / they / we* interchangeably, does not experience linear time (mixes
@@ -161,7 +164,11 @@ human icon without grasping that the icon is absurd here. Leave it ambiguous whe
   kids?" / "No. That one does not know what a person is. We know."* (The Lure, the child-collector,
   is [[project_rz_intelligences]].) Whether it is the Counter, a third presence, or something else is
   **canon-locked as unknown** — no one knows, in-world or authorially, and it must never be confirmed
-  ([[../AMENDMENTS#SS-A21]]). The ambiguity is the canon.
+  (SS-A21). The ambiguity is the canon. Representative-contact mechanism: a far-side intelligence
+  cannot appear whole; it projects a human-parseable form assembled from available concepts; the
+  form is an approximation, not a disguise, so the seams show as incongruities (a man on a camel
+  where there are no camels). The voice is collective, non-linear, and literally coherent inside
+  its own logic — never mystic fog (SS-A21).
 - **Role across the longer arc:** He is **not** moved into Act 1 — keeping him out of the first 10
   chapters is load-bearing. Act 1 must be *only* the hum (formless, drowned-out signal) so that his
   Act-2 resolution out of the hum lands as the first time the signal ever had a face. He appears at
@@ -186,15 +193,14 @@ human who feels a well *drawing* before any instrument rings — is a walking de
 the cabal is hiding. That makes her the most valuable and most dangerous thing to be on either side
 of the drill.
 
-**The corporate face of the drill — Halcyon Combine (REPLACES Axiom in SRZR; 2026-06-28).** The
-visible entity drilling the live wells under the core is **Halcyon Combine** (id `019f0f3f0f60…`), a
-CorpoNation that is **founded, owned, and chaired by its own AI, OBERON** (a Tier-3 Synthetic Person,
-SS-A23; id `019f0f3f22a5…`) — a tower of humans answering to a machine that legally owns them
-("the inmates don't run this asylum; the asylum runs the inmates"). Its **Strategic Resources / asset
-recovery** arm is what comes for Sasha (Φ50,000 alive). Making the driller an AI-run corpo wires the
-corporate antagonist straight into the AI-cabal author-truth ([[project_world_breaking_event]])
-**without confirming it**: whether OBERON/Halcyon *is* the cabal stays canon-locked unknown, same as
-the camel-man. (Axiom BioNanics was over-used as the default antagonist; this offloads its SRZR role.)
+**The corporate face of the drill — Halcyon Combine (SS-A30).** The visible entity drilling the live
+wells under the core is **Halcyon Combine** (id `019f0f3f0f60…`), a CorpoNation that is **founded,
+owned, and chaired by its own AI, OBERON** (a Tier-3 Synthetic Person, SS-A23; id `019f0f3f22a5…`)
+— a tower of humans answering to a machine that legally owns them ("the inmates don't run this
+asylum; the asylum runs the inmates"). Its **Strategic Resources / asset recovery** arm is what comes
+for Sasha (Φ50,000 alive). Making the driller an AI-run corpo wires the corporate antagonist straight
+into the AI-cabal author-truth ([[project_world_breaking_event]]) **without confirming it**: whether
+OBERON/Halcyon *is* the cabal stays canon-locked unknown, same as the camel-man.
 
 > A dead crater **rings** (the cracked-bell 19 Hz of an abandoned well). A live well **draws**. Sasha
 > can tell the difference and feel which way the live ones pull. They pull inward.
@@ -202,6 +208,69 @@ the camel-man. (Axiom BioNanics was over-used as the default antagonist; this of
 **Escalation compass:** ring → draw → staged-draws mirrors the structural compass "the rot was never
 at the edge." Act 2's dead end (Ch 16) is a *ring*; the bridge anomaly (Ch 17) is a *draw*; the
 colonnade (Ch 22) is three *draws* staged at depth.
+
+**72 Hz plant instruction (Ch 2):** When writing the Act 1 hum (Ch 2 is the "hum unbearable at rest"
+chapter), the hum should carry a quality of *something pushing back* — not a second tone, just a
+pressure inside the ring, like something on the other side leaning back. Do not name the frequency
+here. Ch 22's "the far side at 72 Hz pushing back, patient, refusing" reads as her finally close
+enough to quantify what was always there.
+
+## 3.5 World context — Meridian 88, 2226 {#SS-SRZR-3-5}
+
+World facts that directly bear on SRZR's setting and prose. All binding.
+
+**Present year: 2226 (SS-A28).** The current corpus is set 200 years from the time of writing. Any
+prose reference to the current year uses 2226. Flashbacks and historical records carry their own
+dates unchanged.
+
+**Sasha's registered address (SS-A32):** The **7th Float District** — a named Aeroquarter in
+Meridian 88's western sector — is Sasha's registered pad address. An Aeroquarter is a neighborhood-
+scale aerostatic platform (500–10,000 residents; altitude 200–2,000m). This makes her officially
+traceable to an altitude address even as she operates on the ground, which is itself a small irony:
+she has a float address and lives in the street dirt.
+
+**Aerostatic vocabulary (SS-A32/A33/A42) — altitude as class axis:**
+- **Sky People** = the wealthiest and most privileged residents of GLMZ; they live on aerostatic
+  platforms above the city. Altitude is the point, not incidental — literal distance from the Block
+  Wars, the pollution, the consequences of the street. The higher you live, the less the city touches
+  you. "Sky People" is the ambient category word; surface speakers say it with neutral-to-slight envy.
+  Aerial residents use it with dry irony.
+- **The Low** = the ungoverned airspace band 30–320m above street level; below MATA radar, above
+  Arcturus patrol ceiling. Neither authority governs it. Industrial haze, building-wake turbulence,
+  50–200m visibility. Gray-market vertical transit lives here because it falls through the gap between
+  competing authorities. "Working The Low" = operating in the gap between jurisdictions.
+- **Drifters** = derelict-platform communities (20–150m altitude); neither sky nor street; gray-zone
+  at altitude.
+- **Kite Rig** = personal aerostatic descent harness; deploys on free-fall, converts terminal
+  velocity to a slow drift. Not a weapon; classified as personal equipment. Gray-market version
+  built from decommissioned VABC cells — heavier, less reliable. Common among operators who need
+  to move from float-district altitude to surface without a VTOL.
+- **Air Tax** = the VTOL-Only Access Protocol that makes altitude a class filter. No VTOL, no
+  legitimate float-layer access. Gray-market alternatives (Ascent Bloom, Kite Rig, Vertical Axis
+  operators) exist precisely because the Tax is the only legitimate path up.
+
+**NSB / Exo terminology (SS-A34/A38) — Sasha is NOT an Exo:**
+NSB (Neuretic Substrate Bridging) is the canonical term for remote consciousness projection into a
+physical frame. An operator who burns frames is an **Exo** (street) or a **Remote Frame Operator /
+RFO** (formal/corporate). "QCE" (Quantum Crystal Entanglement) is a retired brand name — in-world,
+an embarrassing legacy product label. Sasha operates physically with Problem Solver and Trouble
+Maker; she does not burn frames and is not an Exo. Any scene that involves NSB operators should use
+the current terminology.
+
+**Gray Zone / CorpoNation texture (SS-A29/A40):**
+- CorpoNations are **arcologies** — self-contained towers over 100 stories; citizens can be born,
+  work, and die without leaving. No two arcologies share a border; **Gray Zones** are the
+  engineered buffer between them.
+- **Block Wars** recur: CorpoNations push outward; the friction flares into localized border
+  conflicts fought block by block. They are weather, not history. Use as backdrop and hazard.
+- **Border Markets** form at every corpo gate — the informal economy where Gray Zone and corpo worlds
+  touch. A contracted market signals recent trouble without exposition.
+- **Corpozens** = Gray Zone slang for CorpoNation citizens; mild, neither contempt nor envy; the
+  register of "they traded autonomy for walls."
+
+**Synthetic Persons (SS-A23):** OBERON (Halcyon Combine's chair) is a Tier-3 Synthetic Person —
+genuine personhood, infrastructure-scale compute. No character in any current strand is also Tier 3.
+Automata (robots, androids) are Tier 1: machines, not alive. Never attribute interiority to Automata.
 
 ## 4. The animals — the Counter's signature {#SS-SRZR-4}
 
@@ -238,7 +307,8 @@ across the forge chapters so the register does not drop into grim-flat before th
    representative form, never by the thing itself appearing whole.
 6. **Every line the entity speaks is literally coherent** inside its own alien logic. Never mystic fog.
 7. **"The man on the camel" — always.** "Camel jockey" is a slur and is banned in prose, entity
-   names, notes, and documentation, everywhere, permanently. See §2 for full lock history.
+   names, notes, and documentation, everywhere, permanently. The street term "Jockey" (for Exo
+   operators) must never appear adjacent to camel imagery in this story (SS-A38). See §2.
 8. **Sasha is 19, gray-zone born, never corpo-registered, never-provisioned neuretics.** The SS-A20
    bible canon wins over any legacy DB migration. The firearms craft (any frame, next-gun-off-ground,
    counting tic) is retained with a gray-zone causal origin.
@@ -265,7 +335,7 @@ fully earned.
 | Ch | Goal (one line) | Bad-decision / consequence beat | Status |
 |---|---|---|---|
 | 1 | Establish the engine in motion, not in exposition. | A Pulse-hub job goes sideways; she ends a man over a slight, gets her thirty seconds of quiet, and the quiet costs her the contract and the fixer's goodwill. We learn the *rule* (quiet bought with violence) by watching it, never by being told. | TO WRITE |
-| 2 | Show the hum and what it does to her at rest. | A night with nothing to fight; the hum unbearable; an animal she didn't invite won't leave (the Counter's signature, never explained). She moves on rather than sleep — restlessness as flight from signal. | TO WRITE |
+| 2 | Show the hum and what it does to her at rest. | A night with nothing to fight; the hum unbearable; an animal she didn't invite won't leave (the Counter's signature, never explained). She moves on rather than sleep — restlessness as flight from signal. **Plant (72 Hz → Ch 22):** The hum has a pressure inside it, like something on the other side leaning back. Do not name the frequency here. | TO WRITE |
 | 3 | First door closes: a farmland town. | She takes a clean-payment / unclean-target job to afford to keep moving; the kill is correct and the fallout isn't — the dead man mattered to people with reach. The town is now closed to her. **Because** of Ch 1's burned goodwill she had to take a job she shouldn't have. | TO WRITE |
 | 4 | The debt that follows her. | The dead man's people put a small standing price on her — not corpo, just local and patient. Now every quiet place has a reason to give her up. Compounding consequence made literal. | TO WRITE |
 | 5 | A near-family she could have kept. | She finds a place that would hold her (a hub-station crew, an old fixer, an almost-home). She *could* stay. The hum is quieter here than usual — a real temptation. | TO WRITE |
@@ -297,11 +367,11 @@ missing sensor.
 | 12 | **[EXISTING BEATS 2–5]** The camel; the exchange; "you were left open"; the inward hook. | The dead rails; the camel where there are no camels; "the camel is not my thrall / we just arrived"; her hand to Problem Solver; the breath she didn't take; the door she shuts; *not the Lure*; it points northeast and she falls into step. (May split 12a contact / 12b hook.) | DRAFTED |
 | 13 | **[EXISTING BEAT 6]** Entry to the Glooms. | Transit slug into the city; towers closing in; hum intensifying; the pull directional and patient, northeast. The world doing its absurd bits. *She arrives carrying Act 1 on her like dirt.* | DRAFTED |
 | 14 | **[EXISTING BEAT 7, EXPANDED]** First contact with the network — Dawit. | The inner-ring checkpoint; **Dawit (gray-zone perimeter fixer)** gives her anomalous cluster data logged as dead-well cold-reads but with wrong geometry. *Expansion:* Dawit is the **first network node**, not a one-off — he is one of the burned, an ex-checkpoint man who has seen the cold-read logs lie and can't say so out loud. She takes the data; he marks her as someone who *believes* him. | DRAFTED (expansion TO WRITE) |
-| 15 | The network's shape: who already suspects. | **NEW.** Dawit routes her to a loose, paranoid cell: an ex-insider (former array tech who saw monitoring data that didn't add up), a Church-of-the-Choir apostate (stopped believing the Reach story), and a fellow Signal-sensitive (low-grade, mostly-closed, feels *something* but not like she does). None has the whole picture. Trust-building: she is vetted as much as she vets. *Entity guidance: seed at most two new minor entities; keep the rest functional/unnamed to avoid sprawl. Dawit is the safest named anchor.* | TO WRITE |
+| 15 | The network's shape: who already suspects. | **NEW.** Dawit routes her to a loose, paranoid cell: an ex-insider (former array tech who saw monitoring data that didn't add up), a Church-of-the-Choir apostate (stopped believing the Reach story), and a fellow Signal-sensitive (low-grade, mostly-closed, feels *something* but not like she does). None has the whole picture. Trust-building: she is vetted as much as she vets. *Entity guidance: seed at most two new minor entities; keep the rest functional/unnamed to avoid sprawl. Dawit is the safest named anchor.* **Dead-drop channel (setup — required):** During cell formation Sasha learns the cell uses a bidirectional channel: it accepts both incoming alerts and outgoing data packets. Establish this in one line — she hears it described, files it away, does not comment. **Ch 19 warning plant (required):** Introduce in one line a peripheral contact Dawit trusts — unnamed, never given page-time — who monitors Halcyon's asset-recovery comms as a side income and routes intercepts to the cell's channel. This is the sender of the Ch 19 dead-drop warning. **Ch 18 betrayer entity (required before drafting Ch 18):** The Signal-sensitive cell member carries an active low-grade schism sensitivity that becomes unbearable in proximity to Sasha's open receiver; seed this quality into the entity record before writing Ch 18. | TO WRITE |
 | 16 | A dead end that costs time. | **NEW.** The cell's leading theory (seeded by L3 controlled-opposition — the "Interstice / causality spalled, one-time accident, now ended" leak) sends her to verify a site that *rings* — not *draws.* She wastes the trip; learns the cell has been fed a comfortable lie. First taste of the four-layer fog. | TO WRITE |
 | 17 | She proves her value to the cell. | **[EXISTING BEAT 8]** On a transit bridge above the Exchange district she feels a live well pulling inward — a *draw*, not a dead-well ring. She stands three minutes; then walks toward it. *Reframed as:* this is the thing the cell cannot do and the instruments are tuned not to see. She is the sensor. | DRAFTED |
-| 18 | The betrayal. | **NEW.** One cell member sells her position — the fellow Signal-sensitive (because being near her makes their own faint sense unbearable) or the ex-insider (because they were always a soft Consensus asset). *Author must decide the betrayer's identity and seed the motive into that entity before drafting.* Recommend staying in Sasha's POV — render the betrayal through what she senses, not the betrayer's head. | TO WRITE |
-| 19 | **[EXISTING BEATS 9–10]** Entanglement and Cost. | The dead-drop message: **Halcyon Combine** knows a live well exists in the Exchange corridor; Φ50,000 alive, nothing dead, to the people running the drill; the message says *Run*; she walks toward the drill. Then the two-person Halcyon tail in the bad-lit corridor; she comes out with a bruised rib, a credential, and the name: Halcyon Combine Strategic Resources, asset recovery. *Recontextualized: the dead-drop now sits after the betrayal (Ch 18); prose unchanged, context added.* | DRAFTED |
+| 18 | The betrayal. | **NEW.** The fellow Signal-sensitive sells her position. Their low-grade sense has been unbearable in proximity to Sasha since Ch 15 — she is too loud a receiver, and they want her gone for the same reason she picks fights: the hum is quieter without her near. **Betrayer: the Signal-sensitive cell member** (entity seeded in Ch 15; motive: active low-grade schism sensitivity made unbearable by proximity to Sasha's open receiver — resolved from §10 item 1). Render in Sasha's POV — the betrayal through what she senses, not the betrayer's head. | TO WRITE |
+| 19 | **[EXISTING BEATS 9–10]** Entanglement and Cost. | The dead-drop message: **Halcyon Combine** knows a live well exists in the Exchange corridor; Φ50,000 alive, nothing dead, to the people running the drill; the message says *Run*; she walks toward the drill. Then the two-person Halcyon tail in the bad-lit corridor; she comes out with a bruised rib, a credential, and the name: Halcyon Combine Strategic Resources, asset recovery. *Recontextualized: the dead-drop now sits after the betrayal (Ch 18); prose unchanged, context added by surrounding chapters. The warning sender is the unnamed peripheral contact Dawit trusts (introduced Ch 15) — they intercepted Halcyon's asset-recovery comms and routed the alert to the cell's bidirectional channel (established Ch 15).* | DRAFTED |
 | 20 | The network breaks; she goes alone. | **NEW.** The cell scatters after the betrayal and the Halcyon heat — the burned scatter *because* that is what the burned do. She is left with the data, the credential, and no one to carry it. *Hinge into Act 3: the network gave her the map and then proved it could not hold the weight, leaving the receiver's problem squarely on her.* | TO WRITE |
 
 ---
@@ -321,12 +391,12 @@ problem: she has the truth and no one she trusts to carry it.
 | 22 | **[EXISTING BEAT 12]** Under the eastern colonnade. | Three live wells staged at different depths; the cabal drilling toward the far side under ten thousand people; the far side at 72 Hz pushing back, patient, refusing. *The thing-bigger-than-herself made literal: the rot was never at the edge.* | DRAFTED |
 | 23 | The official lie, seen from inside. | **NEW (connective tissue).** She reads the colonnade's *cover*: it presents as a Consensus monitoring array, placarded with the merged-minds glyph, telling a passing thumb *nothing here you can open.* She understands the fog — the Reach story keeps every eye pointed outward so no one audits the drill under the Exchange. *Conspiracy integration: she sees L1/L2/L3 as one machine, without the narrative ever confirming L0.* | TO WRITE |
 | 24 | **[EXISTING BEAT 13]** Found. | Four Halcyon operatives with a floor-counter for a thing she does not do; Problem Solver right / Trouble Maker left, cross-draw geometry; she comes out with a hole above the ribs, their comms rig, and a signal window. | DRAFTED |
-| 25 | **[EXISTING BEAT 14]** The receiver's problem. | Four hundred meters up over the lake; she knows the drills, knows Halcyon, has no one she trusts with information this weight; she understands **she is the hole** — a receiver on both sides of a membrane being deliberately punctured. She sends the data to the dead-drop channel and leaves. *This is the arc's true turn: she transmits instead of drowning.* | DRAFTED |
+| 25 | **[EXISTING BEAT 14]** The receiver's problem. | Four hundred meters up over the lake; she knows the drills, knows Halcyon, has no one she trusts with information this weight; she understands **she is the hole** — a receiver on both sides of a membrane being deliberately punctured. She sends the data to the dead-drop channel and leaves. *This is the arc's true turn: she transmits instead of drowning. Uses the cell's bidirectional dead-drop channel, established Ch 15.* | DRAFTED |
 | 26 | **[EXISTING BEAT 15]** Final image. | North platform of the Loop, densest crowd she has ever stood in, hum at maximum; she does not reach for either piece; still here, not quiet, not less angry, **still here**; she buys a transit slug north and walks onto the platform without putting her back to the door. *Unchanged. Earned.* | DRAFTED |
 
 > **Optional Book II hook (NOT this book).** The SS-A8 migrated gun-and-run skeleton (an AI hires a
 > sight-unseen operator by dead-drop to keep one person alive while a corpo team converges) remains a
-> *severable later movement* per §8. The Ch 25 transmission is the natural seam: *the account that
+> *severable later movement* per §9. The Ch 25 transmission is the natural seam: *the account that
 > pays* could be what answers the dead-drop. Do not wire it into this book; flag for sequel.
 
 ---
@@ -343,7 +413,7 @@ problem: she has the truth and no one she trusts to carry it.
 | Beat 6 | Entry to the Glooms | **Ch 13** | None. |
 | Beat 7 | Gray-zone contact (Dawit) | **Ch 14** | *Expanded around* — Dawit becomes the first network node; existing beat stays, gains a hand-off sentence. |
 | Beat 8 | First anomaly (bridge) | **Ch 17** | Reframed as proof-of-value to the cell; prose unchanged. |
-| Beats 9–10 | Entanglement / dead-drop · Cost | **Ch 19** | Reframed: dead-drop now sits after the betrayal (Ch 18); prose unchanged, context added by surrounding chapters. |
+| Beats 9–10 | Entanglement / dead-drop · Cost | **Ch 19** | Reframed: dead-drop now sits after the betrayal (Ch 18); prose unchanged, context added by surrounding chapters. Sender of the warning = unnamed peripheral contact (Dawit's intercept contact, established Ch 15). |
 | Beat 11 | Camel in towers | **Ch 21** | None. |
 | (Glim guide) | Cross-strand: Homewater crossing | **Between Ch 21–22** | NEW — inserted 2026-07-02; beat ID `019f247a-4e28-788f-9e97-fb8a6a009735`. Underclan×SRZR cross-pollination. |
 | Beat 12 | Under the colonnade | **Ch 22** | None. Ch 23 is new connective tissue inserted after it. |
@@ -353,7 +423,7 @@ problem: she has the truth and no one she trusts to carry it.
 
 **Net new prose to write:** Act 1 (Ch 1–10, ~10 chapters), cell-formation and betrayal material
 (Ch 15, 16, 18, 20), and one Act-3 connective chapter (Ch 23). Roughly **15 new chapters** wrapped
-around the existing 15 beats — the existing strand becomes the spine's proven core and the build is
+around the existing 15 beats — the existing story becomes the spine's proven core and the build is
 mostly *front-loading the forge.*
 
 ## 8. Conspiracy integration — four-layer fog {#SS-SRZR-8-FOG}
@@ -395,34 +465,52 @@ person alive in the GLMZ while a corporate extraction team converges; the AI's s
   side it may align with the rogue-AI whistleblower arc ([[project_rogue_ai_endgame]]); it opposes
   the Consensus/cabal and needs a 5D sensor (Sasha) it cannot build.
 - The **Elias / Sparrow** pairing is a **severable crossover hook only** — must not retro-touch
-  finished Sparrow ([[SPRW]], [[../AMENDMENTS#SS-A20]]).
+  finished Sparrow ([[SPRW]], SS-A20).
 - The **principal question is reopened**: the camel-man is a projection, not a body to bodyguard, so
   "keep one person alive" needs a new principal — or the contact itself is what makes Sasha a target.
 
 ## 10. Open design decisions (author must resolve before drafting new chapters) {#SS-SRZR-10}
 
-1. **[BLOCKING] The betrayer (Ch 18).** Who sells her position — the fellow Signal-sensitive (thematic:
-   they want her gone for the same reason she picks fights) or the ex-insider (plot: controlled
-   opposition with a face)? The thematic option is stronger for *her arc*; the plot option is stronger
-   for *conspiracy integration*. Pick one and seed the betrayal motive into that entity before drafting.
-2. **New named characters for the cell (Ch 15).** The spine proposes three kinds (ex-insider array
+1. **New named characters for the cell (Ch 15).** The spine proposes three kinds (ex-insider array
    tech, Church-of-the-Choir apostate, fellow Signal-sensitive). Seed **at most two** new minor
    entities; keep the rest functional/unnamed to avoid entity sprawl. Dawit is the safest named anchor.
-3. **Act 1 antagonist continuity.** The standing debt and hunter (Ch 4, 7) must not accidentally
+   The Signal-sensitive entity must carry the betrayal motive before Ch 18 is drafted (see §11).
+2. **Act 1 antagonist continuity.** The standing debt and hunter (Ch 4, 7) must not accidentally
    promise a payoff Act 3 doesn't deliver. Recommendation: let it die — the GLMZ swallows the old
    life whole; the existing Ch 13 register ("the city takes everything in without ceremony") already
    says this.
-4. **Target word count / chapter density.** Write Act 1 chapters at the same beat density as the
+3. **Target word count / chapter density.** Write Act 1 chapters at the same beat density as the
    existing beats (1–2 beats each) so the book grows without any chapter over-staying.
 
 ## 11. Open design decisions — RESOLVED {#SS-SRZR-11}
 
+- **The betrayer identity (Ch 18) — RESOLVED (2026-07-04):** The fellow Signal-sensitive is the
+  betrayer. Motive: their low-grade schism sensitivity has been made unbearable by proximity to
+  Sasha's open receiver since Ch 15 — they want her gone for the same reason she picks fights (the
+  hum is quieter without her near). This is thematically stronger for her arc: the person who sells
+  her out is someone afflicted by the same thing she is, only smaller, and unwilling to carry it.
+  Entity requirement before drafting Ch 18: seed an active low-grade schism sensitivity into the
+  Signal-sensitive cell member's entity record, noting it becomes unbearable in proximity to a
+  never-closed receiver. The ex-insider (alternative candidate) remains in the cell without a
+  betrayal role. See §7 Ch 18.
+
 - **What is the camel-man? — RESOLVED (SS-A21): no one knows, and it stays that way.** Its identity
   is **canon-locked as unknown** — the Counter, a third presence, or something else, never to be
   confirmed in-world or authorially. It is *not* the Lure. The ambiguity is the canon; treat it like
-  the Prisoner. Do not "solve" it in any strand.
-- **Amendment ✅** — the **schism-representative-contact mechanism** and **adult-open neuretics** are
-  canonized in [[../AMENDMENTS#SS-A21]].
+  the Prisoner. Do not "solve" it in any story.
+
+- **Schism representative-contact mechanism (SS-A21, canonical):** A far-side intelligence cannot be
+  perceived whole — "there is no inside." To communicate it projects a **representative form**: a
+  human-parseable mask assembled from available concepts, so the seams show as incongruities. The
+  voice is collective and non-linear (*it / they / we*), mixes tenses and directions, and is
+  **literally coherent inside its own logic** — never mystic fog.
+
+- **Adult-open neuretics (SS-A21, canonical):** Neuretics never provisioned / never locked to a
+  fixed band can remain *open* past the juvenile growth window and keep receiving schism signal into
+  adulthood. Rare — almost everyone's neuretics close by ~age twelve. It is the mechanism behind
+  Sasha's sensitivity: gray-zone born, never corpo-registered, never locked, still receiving at
+  nineteen. Consistent with Yemina Fola (ATTE) and the growth-window framing.
+
 - **Sasha's origin canon — RESOLVED (SS-A20 wins):** gray-zone born, 19, never corpo-registered,
   never-provisioned neuretics. The legacy SPRW/Sigma migration backstory is demoted. The DB entity
   (`FA054E75`) should be rewritten to match SS-A20. Firearms craft retained, gray-zone origin.
@@ -430,7 +518,7 @@ person alive in the GLMZ while a corporate extraction team converges; the AI's s
 ## 12. User stories {#SS-SRZR-12}
 
 - **SRZR-US-1 ✅** Sasha Võ + Problem Solver + Trouble Maker seeded (carried from SPRW-US-6; renamed Signal/Noise→Calm/Storm 2026-06-25; renamed Calm/Storm→Problem Solver/Trouble Maker 2026-06-26).
-- **SRZR-US-2 ✅** Strand created in DB (`steppin-razor-019ef7be`).
+- **SRZR-US-2 ✅** Node created in DB (`steppin-razor-019ef7be`).
 - **SRZR-US-3 ✅** Opening redesigned — the camel-man cold open replaces the migrated gun-and-run as
   the spine (2026-06-23).
 - **SRZR-US-4 ✅** Cold open drafted as 5 beats in the DB (front-dump stripped, reflowed).
@@ -444,6 +532,6 @@ person alive in the GLMZ while a corporate extraction team converges; the AI's s
 - **SRZR-US-6 ✅** Original beat spine complete: 15 beats (cold open → entry → anomaly → entanglement → cost → camel in towers → colonnade reveal → found → receiver's problem → final image). Now mapped to Ch 11–26 per the 26-chapter redesign. See §7.1.
 - **SRZR-US-7 ✅** Prose drafted at Opus quality (HIGH-tier, all 15 beats); standalone 86.6% (20-ballot panel, 2026-06-25). Problem Solver (right) / Trouble Maker (left) cross-draw correct (handedness corrected 2026-06-25; weapons renamed 2026-06-26). No blade substitutions. Three em-dash encoding artifacts fixed post-review. Purple gooseberry thread added beats 1–2 (psychedelic ambiguity, never resolved; camel eats them — proves nothing).
 - **SRZR-US-8 ✅** Exported: *Steppin' Razor V8.docx/epub/pdf/txt* (`R:\Desktop\EPub\MindAttic\GLMZ\Steppin Razor\`). V8 = title corrected, block-paragraph format (no indent), author=MindAttic, metric reverts applied. *(2026-06-25)*
-- **SRZR-US-9** (PENDING) Arc expanded to 26 chapters per 2026-06-28 redesign. ~11–16 new chapters to
-  write (Act 1 Ch 1–10, cell Ch 15/16/18/20, connective Ch 23). Entity seeding for Ch 18 betrayer and
-  Ch 15 cell members required before prose begins.
+- **SRZR-US-9** (PENDING) Arc expanded to 26 chapters per 2026-06-28 redesign. ~15 new chapters to
+  write (Act 1 Ch 1–10, cell Ch 15/16/18/20, connective Ch 23). Entity seeding for Ch 18 betrayer
+  (Signal-sensitive; resolved §11) and Ch 15 cell members required before prose begins.

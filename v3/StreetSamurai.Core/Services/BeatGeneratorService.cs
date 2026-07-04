@@ -19,6 +19,7 @@ public class BeatGeneratorService
     private readonly IUniverseContext? universe;
     private readonly PlantPayoffService? plantPayoffs;
     private readonly StoryAuditService? storyAudit;
+    private readonly UniversalFactsService? universalFacts;
 
     public BeatGeneratorService(
         ILlmService llm,
@@ -31,7 +32,8 @@ public class BeatGeneratorService
         ActionConfigService? actionConfig = null,
         IUniverseContext? universe = null,
         PlantPayoffService? plantPayoffs = null,
-        StoryAuditService? storyAudit = null)
+        StoryAuditService? storyAudit = null,
+        UniversalFactsService? universalFacts = null)
     {
         this.llm = llm;
         this.graph = graph;
@@ -44,6 +46,7 @@ public class BeatGeneratorService
         this.universe = universe;
         this.plantPayoffs = plantPayoffs;
         this.storyAudit = storyAudit;
+        this.universalFacts = universalFacts;
     }
 
     /// <summary>
@@ -76,6 +79,13 @@ public class BeatGeneratorService
         // keeps the writer's register consistent without copying any specific
         // scene. Empty when the prose-embedding cache is cold.
         var anchorBlock = await BuildBeatAnchorsAsync(context, ct);
+
+        // Universal world facts — always injected regardless of which story is being written.
+        // Facts that apply to every story in this universe (transport mechanics, vocabulary,
+        // social structure) live here rather than in per-story bibles.
+        var worldFactsBlock = universalFacts != null
+            ? await universalFacts.BuildWorldFactsBlockAsync(ct)
+            : "";
 
         // Plant/payoff context: seeded details awaiting payoff, or registered payoffs
         // to honour in this beat. Injected when NodeId is set + PlantPayoffService
@@ -145,7 +155,7 @@ public class BeatGeneratorService
             : "";
 
         var system = $"""
-            {UniverseLine()}
+            {UniverseLine()}{worldFactsBlock}
 
             INNER MONOLOGUE: italicized stand-alone sentences, on their own paragraph, NEVER labeled.
             Source from each POV character's documented psychology — coping_mechanisms, core_fears,

@@ -80,8 +80,8 @@ public class OutlineReviewService
             """;
 
         var worldIdentity = UniverseScope.Current?.UniverseGroundingOr(
-            "You are a ruthless story editor for neo-noir literary fiction set in GLMZ\n            (formerly Meridian City — after the Behemoth arrived, the old name became a joke).")
-            ?? "You are a ruthless story editor for neo-noir literary fiction set in GLMZ\n            (formerly Meridian City — after the Behemoth arrived, the old name became a joke).";
+            "You are a ruthless story editor for neo-noir literary fiction set in GLMZ (Greater Lake Michigan Zone, also called Meridian 88 or The Glooms, year 2226).")
+            ?? "You are a ruthless story editor for neo-noir literary fiction set in GLMZ (Greater Lake Michigan Zone, also called Meridian 88 or The Glooms, year 2226).";
         var worldRulesBlock = (UniverseScope.Current?.IsGlmz ?? true)
             ? "WORLD RULES YOU MUST ENFORCE:\n" +
               "            - There are NO city police. Arcturus Civil Security is the closest equivalent,\n" +

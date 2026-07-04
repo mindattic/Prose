@@ -2,18 +2,19 @@
 codex: 1
 project: StreetSamurai
 code: VATD
-layer: strand-bible
+layer: node-bible
 universe: glmz
 status: complete
-updated: 2026-06-22
+updated: 2026-07-04
+amended: 2026-07-04 (logic-sweep gap fixes: B9/B10/B15 spine labels, §7 voice, §4 lock #4, §5c stale draft, §5c discovery, §5c Casimir chain + aeroplex access, §2 wound payoff note)
 ---
 
-# STRAND BIBLE — Vultures at the Door (VATD) {#SS-VATD}
+# NODE BIBLE — Vultures at the Door (VATD) {#SS-VATD}
 
 > **Purpose.** The spine of Tomas Alvarado and Levin Calder's grandest fuckup: an accidental
 > shooting that leaves them racing a 72-hour clock with a Lotus heir's rare heart. What happens,
 > not how it reads. When prose and spine disagree, fix one in the same change. See [[../BIBLE]]
-> for universe laws; [[../BIBLE#SS-§5]] for universe laws governing synthetics and CorpoNations.
+> for universe laws; [[../BIBLE#SS-§5]] for universe laws governing synthetic persons and CorpoNations.
 
 ## 0. What this story IS {#SS-VATD-0}
 
@@ -73,6 +74,16 @@ the character without something to protect, so he isn't afraid. His depth is the
 **Rule:** Neither wound surfaces as explanation. Tomas's math is in his face when Paz asks.
 Levin's loop is in his eyes and his timing. The prose shows the symptoms, not the accounting.
 
+The wound is never the character (SS-A41). What each man does with his wound — the choices
+made under pressure — is the story. See §10 for the full doctrine note.
+
+**Tomas's wound payoff (§5c redesign note):** The old B9 had Tomas spend the 12,000 Φ therapy
+figure on a black-market heart, paying the wound's cost in action. The §5c redesign replaced that
+purchase with the Maisy OD/donor path; no such transaction now occurs. The payoff for the wound is
+instead the kidney reinstall at the end — a foregone collection fee, the one job Carrion will never
+log, a night of work done at net zero on behalf of a daughter Tomas will not name aloud. The 12,000 Φ
+figure survives as background dread only: the math is always in his face, never a climactic sacrifice.
+
 ## 3. Character rules for this story {#SS-VATD-3}
 
 **Tomas Alvarado (POV):**
@@ -128,7 +139,7 @@ Levin's loop is in his eyes and his timing. The prose shows the symptoms, not th
 - **Levin knew her** — prom dates sixteen years ago; she'd only let him to second base then, and
   now she's a full-time working girl. The bitter joke *and* the human cost: how much a person can
   change in sixteen years. Play it dry; do not sentimentalize.
-- She dies of a plain **Velvet overdose — NOT arranged.** A john finished, went to pay, saw she was dead, pocketed his credstick, and walked. No call-in, no last words; the dispatch comes from building management when a payment bounces.
+- She dies of a plain **Velvet overdose — NOT arranged.** A john finished, went to pay, **misread deep unconsciousness as death** (didn't check; didn't care), pocketed his credstick, and walked. No call-in, no last words; the dispatch comes from building management when a payment bounces. She is **still barely alive** when the Vultures arrive — the Velvet had her far under but not through the door.
 - Her rare-type heart is the donor heart the Scarab installs in Do-yun.
 - Her name in prose is **Maisy**. (Entity record uses "Soledad Achterberg" — cosmetic only.)
 
@@ -147,10 +158,12 @@ Levin's loop is in his eyes and his timing. The prose shows the symptoms, not th
    **the hunt for the heart is how Tomas and Levin mend fences by working together.**
 4. **Maisy Achterberg is the OD'd donor** (RETCON 2026-06-28). The sex worker Levin knew before
    (prom dates, 16 yrs). She dies of a plain **Velvet overdose — NOT arranged.** She's found because
-   **a john finished with her, went to pay, noticed she was dead, kept his credstick, and walked**
-   (no call-in, no last words; "real knight in shining armor"). Her rare-type heart becomes Do-yun's
-   donor. The weight is the squalor of it and that Levin knew her — and **Tomas, still angry at
-   Levin, softens when they find her.**
+   **a john finished with her, went to pay, misread deep unconsciousness as death (didn't check;
+   didn't care), kept his credstick, and walked** (no call-in, no last words; "real knight in
+   shining armor"). Building management's payment-bounce alert dispatches Carrion minutes later.
+   She is **still barely alive** when the Vultures arrive — the Velvet had her far under but not
+   through the door. Her rare-type heart becomes Do-yun's donor. The weight is the squalor of it
+   and that Levin knew her — and **Tomas, still angry at Levin, softens when they find her.**
 5. **The reinstall is a procedure, not a speech.** Tomas and Levin return and reinstall.
    Logged as a discrepancy. "Change of heart" is the whole thing. Do not underline it.
 6. **Bram Osei irony is the back half's comedic engine.** He's spared (arm + Tears stash).
@@ -185,15 +198,15 @@ Closes on the "we just killed ourselves / perfect time to take the edge off" bea
 **Act III — Night (Beats 7–13)**
 B7: Stakes established + Yuen call (off-books surgeon).
 B8: Casimir's victim Reuben Sclose — the Vultures dispatched to clean up Casimir's work.
-B9: Heart sourced from Okwu/Marrow Exchange; costs Paz's 12,000 Φ + a marker.
-B10: Maisy chooses.
+B9: OD dispatch comes in — building management flagged a payment bounce. Vultures rerouted.
+B10: Maisy — OD discovery, the goodbye, the match. (Vultures arrive to find her still alive, barely; Lev↔Maisy goodbye two-hander; she dies, Lev holds her until her heart stops; blood-drive flashback fused at the moment of death; Providence explosion.)
 B11: Levin's Tears stash — dumps it down the grate.
 B12: Bram Osei killed by Casimir → Full Repossession of the man they spared.
 B13: Heart installed; Maisy's death at Yuen's off-books clinic.
 
 **Act IV — Dawn (Beats 14–15)**
 B14: Staging the bed via the Wagon as cover.
-B15: Story holds. Casimir face-to-face — he never knows. The ledger cost.
+B15: Casimir corners them — he knows. The argument: Lotus-on-Lotus serves him better than delivering the heir clean. He flips; provides aeroplex access and helps plant Do-yun + Maisy in the heir's bed.
 
 **Act V — Reckoning (Beats 16–18 + coda)**
 B16: Soledad (Paz Sunday still?) — domestic beat, the math in Tomas's face.
@@ -207,13 +220,16 @@ User-directed redesign of Acts III–V. Recorded here as the spine; the beats st
 - **The heart donor is now a sex worker Levin knew "from before"** — before she started turning
   tricks. The crew gets a call about a hooker OD'ing; at the den/flop **all the working girls know
   them on sight, because the Vultures "come to collect" so often** (left deliberately ambiguous —
-  parts or corpses). The woman dies of an overdose, and **the death was called in before the body
-  was cold** (someone knew; the OD reads as arranged). They pack her in one of the Wagon's larder
-  drawers and drive on with the heart hunt.
+  parts or corpses). The woman dies of an overdose; **the discovery is a payment-bounce flag from building management
+  — not arranged, no one called it in** (a john misreads deep unconsciousness as death, doesn't
+  check, pockets his credstick, and walks). They pack her in one of the Wagon's larder drawers and
+  drive on with the heart hunt.
 - **The OD'd hooker IS Maisy Achterberg** (RESOLVED 2026-06-28). The sex worker **Lev** knew before
   she started turning tricks (prom dates, 16 yrs). She dies of a plain **Velvet overdose — NOT
-  arranged.** Discovered when **a john finishes, goes to pay, sees she's dead, pockets his own
-  credstick, and walks** (no call-in, no last words; "real knight in shining armor"). **Her rare-type
+  arranged.** Discovered when **a john finishes, goes to pay, misreads deep unconsciousness as death
+  (didn't check; didn't care), pockets his own credstick, and walks** (no call-in, no last words;
+  "real knight in shining armor"). Building management's payment-bounce alert dispatches Carrion;
+  she is **still barely alive** when they arrive. **Her rare-type
   heart is the donor** the Scarab installs in Do-yun (replaces old Okwu/Marrow-Exchange sourcing,
   old B9). The weight is the squalor and that Lev knew her; finding her is where **Tomas's anger at
   Lev softens** — the heart-hunt is how the two of them mend fences.
@@ -244,10 +260,11 @@ User-directed redesign of Acts III–V. Recorded here as the spine; the beats st
 - **FORESHADOW the heart-match — plant + payoff; the coincidence is OWNED, not hidden (LOCKED 2026-06-28):**
   - **DO NOT telegraph the answer.** The solution to the heir's heart must NOT be apparent early — no
     "first-page" tell. The blood-drive's significance only lands at the moment of her death.
-  - **DISCOVERY (~beat 3876):** the Vultures are **dispatched to an OD — the john called it in AND kept
-    his credstick** (he finished, saw her going, phoned the body in to Carrion, pocketed his pay, and
-    walked: "real knight in shining armour"). They arrive and it's **Maisy** — Lev's prom date —
-    **still alive, barely.**
+  - **DISCOVERY (~beat 3876):** the Vultures are **dispatched to an OD — building management flagged
+    a payment bounce** (a john finished, misread deep unconsciousness as death, didn't check, pocketed
+    his credstick, and walked: "real knight in shining armour"; no call-in). They arrive and it's
+    **Maisy** — Lev's prom date — **still alive, barely** (the john misread; the Velvet had her far
+    under but not through the door).
   - **FINAL WORDS + DEATH (the Lev↔Maisy two-hander — DO NOT SKIP):** Lev and Maisy **get to say
     goodbye** — a real, dry, sixteen-years-later exchange, no melodrama. Then she dies, and **Lev holds
     her until he feels her heart stop** — the rare-match heart they need, going still under his hand.
@@ -279,6 +296,11 @@ User-directed redesign of Acts III–V. Recorded here as the spine; the beats st
     His instrument is the look that says he can **read every person's sins off them** — your lies
     written on you like a confession letter — so guilty men feel seen. But unlike the dropped Nemesis
     version, **he actually works it out:** these two repo men are who he's hunting.
+    **Investigative chain:** before killing Bram Osei (lock #6), Casimir extracts a Wagon description
+    — two men in Carrion coveralls, a tall one who does the thinking and a short one who is unwell.
+    He cross-references Carrion's lien ledger via a Lotus data contact and flags Tomas and Lev's
+    manifest from that night. The Wagon's route placed it one address ahead of or behind every scene
+    he was cleaning. That is how he finds the bedroom.
   - **THE CONFRONTATION (the payoff scene):** he corners Tomas & Lev — with Do-yun, mid-stage. For a
     beat they are dead men: the Lotus hunter has them, and he KNOWS.
   - **THE TURN — convince him, convincingly (grounded in WHO HE IS):** the argument that flips him is
@@ -291,7 +313,10 @@ User-directed redesign of Acts III–V. Recorded here as the spine; the beats st
     kill was an accident they're trying to fix.) It must be EARNED, not a shrug.
   - **HE HELPS:** Casimir doesn't merely look away — he **helps them get Do-yun home and set up the
     damning evidence** (the heir + the dead Maisy in the bed). The leashed dog slips the leash and
-    lights the match himself. THIS is the point of his whole arc.
+    lights the match himself. THIS is the point of his whole arc. **His cooperation includes keying
+    or escorting the Wagon into the heir's aeroplex — the one thing the Vultures cannot fake on their
+    own.** Without his access credentials, the ground-level repo crew cannot reach a Lotus Sky Person's
+    altitude residence.
   - **Sequencing with lock #6:** he still **kills Bram Osei** and the Vultures still strip the spared
     arm — but that lands BEFORE the turn (his menace/contract self established before he flips). His
     Lotus contract being torched (the collapse) is what frees him after.
@@ -331,9 +356,10 @@ logistics and sanitation: route, pickup, truck, load, drop, manifest, quota, shi
 **What the voice does NOT do:**
 - Underline the irony. The reader feels the Bram Osei loop; the characters can't say it.
 - Editorialize about the Lotus faction. Show the rot through Casimir's position, not commentary.
-- Sentimentalize Maisy's death. She chose. The prose respects the choice by not dramatizing it.
+- Sentimentalize Maisy's death. She died in the squalor of the work — overdose, no last words, a john who pocketed his credstick and walked. Respect the plainness; do not sentimentalize it.
 
 Score: **88.1/100** (N=120 mixed panel, 2026-06-21, hash dd452fbf1ffb). LOCKED.
+Logic sweep (SS-A44) is the mandatory QA mechanism for any prose change before export.
 
 ## 8. User stories {#SS-VATD-8}
 
@@ -344,12 +370,12 @@ Score: **88.1/100** (N=120 mixed panel, 2026-06-21, hash dd452fbf1ffb). LOCKED.
 - **VATD-US-4 ✅** Docx exported (V17, `R:\Desktop\EPub\MindAttic\GLMZ\Vultures at the Door\`).
 - **VATD-US-5 ⬜** Re-export docx for current text (post 2026-06-21 edits).
 
-## 9. Notes for future Vultures strands {#SS-VATD-9}
+## 9. Notes for future Vultures stories {#SS-VATD-9}
 
 Carrion Reclamations + the Vultures are established GLMZ texture. The VULTURES register is
 available for any body-recycler black-comedy noir in the GLMZ.
 
-**Street Meat / BCODA (cross-strand):** Tomas and Levin deliver Kyle's "corpse" in Street Meat.
+**Street Meat / BCODA (cross-story):** Tomas and Levin deliver Kyle's "corpse" in Street Meat.
 Levin is the Vulture Kyle recruits against his will. Kyle doesn't threaten — he arranges: Levin
 wakes already in the job, the Tears are in him, the manifest says non-viable but the eyes are
 open. He does not remember how the call came in. The route log has a number Levin keeps out of
@@ -357,10 +383,68 @@ the route log: a pickup that didn't scan, a delivery that didn't register. It is
 expensive single line in his working life, and no auditor will ever flag it. Levin carries this
 with the rest.
 
-**Tears / Resonance Zone lattice (cross-strand — planted 2026-07-02):** The HPPD residual the
+**Tears / Resonance Zone lattice (cross-story — planted 2026-07-02):** The HPPD residual the
 Tears leave — the crawling geometric grid planted in the finale's coda — is the same
 interference-pattern structure Sasha Võ (SRZR) experiences as her baseline schism sense. They
 are perceiving the same thing from different positions and naming it differently. This is a
 **world truth, not a plot reveal**: it is never confirmed or connected in-text. The plant is in
 VATD beat 900.0 (final wagon drive); the rhyme is in SRZR beat 400.0 (bridge, live-well
 detection). Encode the events; do not confirm the connection.
+
+## 10. World context {#SS-VATD-10}
+
+Self-contained summary of the canonical amendments most relevant to this story. Read this
+instead of checking AMENDMENTS.md for VATD-applicable world facts.
+
+### Character doctrine (SS-A41)
+
+The wound is not the character. The response to the wound is the character. Circumstance defines
+what a character faces; choice defines who they are.
+
+VATD already embodies this:
+- **Tomas:** Paz's therapy bill is circumstance. Firing the round he doesn't want to fire, then
+  turning the Wagon around for the reinstall — those choices define him.
+- **Levin:** The Tears loop is circumstance. Staying cold when Tomas needs him operational,
+  dumping the stash, holding Maisy until her heart stops — those choices define him.
+- **Ekow/Casimir:** Being Lotus's despised outsider dog is circumstance. Choosing to flip —
+  to light the house that owns him from the inside rather than deliver the heir clean — that
+  choice is the character.
+
+Never anchor any of these three in what happened to them. Show what they do next. A wound earns
+its page space only by driving a choice.
+
+### Lotus and altitude (SS-A29, SS-A42)
+
+Lotus Syndicate Stem-class figures — including Han Jeong-suk — are **Sky People**: they live on
+aeroplexes and aeroquarters, literally above the city they own. Han Do-yun's presence in a
+Gray Zone drug house is an altitude transgression as much as a moral one. The gap between his
+world and the Vultures' world is vertical as well as social. Do not editorialize this; let the
+address and the elevator ride do it.
+
+**Lotus's honor system is real theater and real leverage (SS-A29).** They invoke it to justify,
+never to constrain when constraint would cost them. The confrontation that flips Ekow only works
+because he has lived the hypocrisy long enough to read the math correctly: delivering the heir
+clean serves masters who will discard him; collapsing the wedding wounds the house from the
+inside. The story shows the rot through his position; it never editorializes.
+
+### GLMZ vertical class axis (SS-A32, SS-A33, SS-A42)
+
+Altitude is a social axis in 2226 Meridian 88 (SS-A32). Sky People — aeroplex and aeroquarter
+residents — pay a premium not just for the view but for the distance from street consequences.
+**The Low** (30–320m, ungoverned) is the buffer between surface and float layer; no authority
+controls it. The Vultures operate on the ground; their world and the Lotus heir's world are
+separated by meters of air that cost more than Tomas earns in a year. This is texture, not
+exposition — show it through what characters have access to, not through lectures.
+
+### Year and setting
+
+Present day is **2226** (SS-A28). The GLMZ present-day year is 200 years ahead of the
+writing year. All in-story references to the present use 2226. Flashbacks and dated records
+keep their own years as artifacts.
+
+### NSB / Exo terminology (SS-A34, SS-A38)
+
+Not directly relevant to VATD (no remote frame operators appear in this story), but canonical
+for GLMZ reference: remote consciousness operators are **Exos** (street/prose) or **Remote Frame
+Operators / RFOs** (formal/corpo). "Rider" is retired. "QCE" is retired; the mechanism is NSB
+(Neuretic Substrate Bridging). These terms apply if any cross-story reference to frame work arises.

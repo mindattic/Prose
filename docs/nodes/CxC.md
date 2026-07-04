@@ -1,5 +1,5 @@
 ---
-strand: CxC
+nodeCode: CxC
 title: Crimson & Chrome
 kind: story
 universe: GLMZ
@@ -7,10 +7,11 @@ status: complete
 register: HEIST
 previous: NxR
 trilogy: "The Rook Trilogy (MxG → NxR → CxC)"
-note: "Renamed 2026-06-27 from 'Marrow & Chrome'/MCRM → 'Crimson & Chrome' (code then C&C). 2026-06-28: strand code is now CxC (ampersand-free); doc file renamed MCRM.md → CxC.md. Body-bank renamed 'the Marrow' → 'Helix Reclamation' (the Reclamation); color motif marrow→crimson."
+updated: 2026-07-04
+note: "Renamed 2026-06-27 from 'Marrow & Chrome'/MCRM → 'Crimson & Chrome' (code then C&C). 2026-06-28: node code is now CxC (ampersand-free); doc file renamed MCRM.md → CxC.md. Color motif marrow→crimson. SS-A26 arc canon, SS-A34/A38 NSB/Exo terminology, SS-A43 node hierarchy incorporated 2026-07-04."
 ---
 
-# Crimson & Chrome — Strand Bible
+# Crimson & Chrome — Node Bible
 
 ## §0 — Logline
 
@@ -27,7 +28,7 @@ thing worth stealing back.
 - **Neon & Rust** — the *decay underneath*: infrastructure nobody maintained, applied inward.
   (Crack Soraya's partition; find the manifest — sixty-one names, forty delivered, **twenty-one
   walked off** a barge under an unsigned relocation order.)
-- **Marrow & Chrome** — the *body itself*: the human core the machine has been harvesting, under
+- **Crimson & Chrome** — the *body itself*: the human core the machine has been harvesting, under
   the chrome. (Find the twenty-one; stop the harvest the first two jobs unwittingly fed.)
 
 **The reveal that recontextualizes the trilogy:** the crew were never doing three unrelated jobs.
@@ -57,7 +58,7 @@ you'd buy the action figure of.
 > never an excuse to withhold the pleasures. When a choice trades reader payoff for cleverness,
 > reader payoff wins.
 
-Close-third on **Rook**, consistent with both prior strands (Lightning-model leader; depth
+Close-third on **Rook**, consistent with both prior stories (Lightning-model leader; depth
 rationed, never absent). The emotional temperature is the highest of the three: this is where
 the count finally has names in it.
 
@@ -71,25 +72,30 @@ facility, as Adalemo's discipline, as the seamless surfaces that price a person 
 
 The twenty-one names Soraya walked off the barge were **registered Reads** — neuretics-capable
 people the GLMZ logs and the corps covet — saved from an earlier harvest dressed up as a
-relocation order nobody signed. A **Nano Triumvirate member** (the competitor that funded
-PEREGRINE's reconstitution in NxR; named/seeded below) has spent the trilogy quietly assembling
+relocation order nobody signed. **Helix Biosystems**, a Nano Triumvirate member (the competitor
+that funded PEREGRINE's reconstitution in NxR), has spent the trilogy quietly assembling
 the pieces of an industrial-scale program: Axiom's **Class V** neural-tissue pathway (made
-public, now refined by the competitor) plus a **body-bank** — *the Marrow* — that processes
-registered Reads into compatible neural substrate. The twenty-one are the last loose thread: the
-survivors who could testify that the relocation was a harvest. The corp wants them closed.
+public, now refined by Helix without Axiom's liability) plus a **body-bank** — *the Marrow* —
+that processes registered Reads into compatible neural substrate. The twenty-one are the last
+loose thread: the survivors who could testify that the relocation was a harvest. The corp wants
+them closed.
 
 Rook learns the shape of it because the pieces finally line up: Stave surfaces the survivor list
 under duress; Adalemo, no longer willing to leave it uncounted, brings what PEREGRINE knew; and
 Soraya, who has carried the twenty-one as the one unaudited thing in a life of audits, asks Rook
 for the job she has been dreading since MxG — not extraction, not a crack, but **a rescue and a
-burning-down.**
+burning-down.** What Soraya's partition — the one NxR cracked — actually contained was the
+Marrow's internal biometric access layer: credentials Soraya seeded before leaving Axiom, when
+she suspected what the Helix partnership was quietly building. That data is the door Beat 8 pays
+off; without it the secure wing stays sealed.
 
 ## §3 — The Problem
 
-**The job:** Find the twenty-one before the corp does, get them out of reach, and destroy the
-Marrow's processing capability — the one facility that makes Class V harvest industrial rather
-than artisanal. Then make the corp's role undeniable enough that even the GLMZ's indifference
-can't file it away.
+**The job:** Find the twenty-one inside the Marrow before Helix completes the processing cycle —
+Helix has already located and recaptured them, held unprocessed pending the next run — get them
+out of reach, and destroy the Marrow's processing capability, the one facility that makes Class V
+harvest industrial rather than artisanal. Then make the corp's role undeniable enough that even
+the GLMZ's indifference can't file it away.
 
 **The complication (the trilogy's sting):** the crew's own past jobs are the corp's audit trail.
 Stopping the harvest means exposing that they helped build it — and Vox's face, **sold to Stave
@@ -106,7 +112,7 @@ for once, to let those be different people.
 
 Per the [Character Doctrine](../CHARACTER.md) — Drive / Obstacle / the thing only they see — and
 the **Action Figure Test** (silhouette + signature gear + soul). These are the identical people
-from MxG and NxR; this strand resolves each one's standing thread.
+from MxG and NxR; this story resolves each one's standing thread.
 
 - **Rook (Inkeri Saarinen)** — POV, leader/beacon. *Arc completes:* the woman who carries the
   arithmetic so her people don't have to finally counts a job by who walks out, not what clears.
@@ -121,9 +127,11 @@ from MxG and NxR; this strand resolves each one's standing thread.
 - **Boiler (Mikkeli Väinämöinen)** — *Arc:* the man who finds the beauty in a thing under load
   has to bring down a structure full of people, not empty concrete. The cheer meets its limit;
   the doctrine (load = what a thing carries that it wasn't rated for) turns human.
-- **Scout (Remi Diallo)** — *Arc:* the rider who lives in absence has to be *present* —
-  the twenty-one can only be found by someone who can ride into the Marrow and come back. The
+- **Scout (Remi Diallo)** — *Arc:* the Exo who lives in absence has to be *present* —
+  the twenty-one can only be found by someone who can thread into the Marrow and come back. The
   crawler named Gerald she never names finally matters out loud.
+  *(Scout is an NSB operator — see §11. Gerald is her frame; the Marrow infiltration is a
+  projection op, not a physical breach.)*
 - **Stave** — *Arc:* the debt that has been buying their silence. The subject who didn't come back
   is connected to the Marrow; Stave's crack-from-the-outside skill is the only way in, and the
   only way to face what they've been not-facing.
@@ -131,13 +139,21 @@ from MxG and NxR; this strand resolves each one's standing thread.
   one who saw the harvest coming and saved twenty-one anyway. She stops protecting herself from
   that woman and becomes her.
 - **Seun Adalemo** — *Arc:* the mirror finishes crossing. What he was willing to leave uncounted
-  he now counts. Not an enemy neutralized; a man who switched which ledger he served.
+  he now counts. Not an enemy neutralized; a man who switched which ledger he served. *What
+  PEREGRINE knew:* the Marrow's external network perimeter topology — mapped during NxR's
+  surveillance phase — and the Black Ice kill-switch parameters for the return handshake.
+  Adalemo's intel is what makes Scout's projection survivable; Soraya's partition is what gets her
+  through the door. The two contributions are structurally distinct.
 
 **New (to be seeded before prose):**
 - The **Triumvirate executive** running the Marrow program — the trilogy's human face of the
   machine; a planner like Rook, but one who priced people and never stopped.
 - **The Marrow** — the body-bank facility (place); chrome over a charnel logic.
-- The specific **Nano Triumvirate member** corp (verify against SS-A17 Triumvirate canon).
+- The specific **Nano Triumvirate member** corp: **Helix Biosystems** — a Nano Triumvirate member
+  per SS-A26, the competitor that refined Axiom's Class V pathway after it went public in MxG,
+  without Axiom's liability. The original Triumvirate (SS-A17: Tessera Industries, Axiom BioNanics,
+  Null Dynamics) represents the three founding members; Helix is a later entrant whose ascent is
+  the SS-A26 arc.
 - A representative or two of **the twenty-one** — at least one survivor with a name, a face, and
   a Drive, so the rescue is a person and not a number (Character Doctrine).
 
@@ -145,11 +161,12 @@ from MxG and NxR; this strand resolves each one's standing thread.
 
 - **Act One — The Reunion / The Real Job.** Soraya brings the job she's dreaded; the team
   reassembles (rotating cast, all the trusted names); Stave surfaces the survivor list; the scope
-  reveal — the twenty-one are alive and hunted, and the crew's own jobs built the trap.
+  reveal — the twenty-one are alive but already inside the Marrow, held unprocessed while Helix's
+  processing cycle runs, and the crew's own jobs built the trap.
 - **Act Two — The Mirror Crosses / The Way In.** Adalemo brings PEREGRINE's intel and picks a
   side; the Marrow's nature established (chrome over harvest); the plan against a facility that
   cannot be starved or blinded; Vox's sold face flagged as the fatal thread.
-- **Act Three — The Run.** The biggest setpiece — into the Marrow; Scout rides in; the twenty-one
+- **Act Three — The Run.** The biggest setpiece — into the Marrow; Scout threads in; the twenty-one
   found as people; the corp IDs the crew via Vox's face; the cost paid; the executive confronted.
 - **Act Four — The Count.** The harvest capability destroyed; the twenty-one out of reach; the
   corp's role made undeniable; Rook's final count — names, not quanta. The trilogy's last image
@@ -168,8 +185,8 @@ from MxG and NxR; this strand resolves each one's standing thread.
 | 6 | **The Marrow** | The body-bank established: chrome over charnel logic; registered Reads processed into substrate. The horror is procedural, not lurid. One of the twenty-one given a name and a face. |
 | 7 | **The Fatal Thread** | The plan against a facility that can't be starved or blinded; Vox's sold face flagged as the thing that will ID the whole crew. The cost of the way in is named. |
 | 8 | **Soraya Becomes Her** | Soraya stops protecting herself from the woman who saw it coming and saved twenty-one; she gives the crew the key only that woman has. The partition's true contents pay off. |
-| 9 | **The Setup** | Position, prep, the storm-equivalent pressure; Scout will have to ride *in*, not hold the perimeter; Boiler studies a structure full of people, not empty concrete. |
-| 10 | **The Run In** | The big setpiece begins; the Marrow from the inside; Scout rides into the body-bank; the twenty-one found — as people, terrified, real. The procedural horror lands. |
+| 9 | **The Setup** | Position, prep, the storm-equivalent pressure; Scout will have to thread in, not hold the perimeter; Boiler studies a structure full of people, not empty concrete. |
+| 10 | **The Run In** | The big setpiece begins; the Marrow from the inside; Scout burns a frame into the body-bank; the twenty-one found — as people, terrified, real. The procedural horror lands. |
 | 11 | **Vox Steps Into the Light** | The corp pulls the Vox-face thread and IDs the crew; Vox chooses to be seen — the unseen channel becomes the loud one — to pull the corp's attention off the rescue. |
 | 12 | **The Executive** | Rook faces the trilogy's human machine — a planner who priced people and never stopped; the mirror to Rook that Adalemo was to PEREGRINE. The argument neither can win clean. |
 | 13 | **The Burning-Down** | Boiler brings the harvest capability down (the load that was people); the twenty-one out of reach; the cost paid (someone is hurt; the win is not clean — trilogy lock); Adalemo's crossing completes. |
@@ -180,21 +197,22 @@ from MxG and NxR; this strand resolves each one's standing thread.
 1. **Cyberpunk cliché is the contract, played at full volume.** The reunion, the mastermind
    reveal, the mirror-turned-ally, the vault-that-is-a-person, the walk from the explosion — all
    honored. The Character Doctrine is what keeps them from being empty: specific people, every one.
-2. **Tech, cyberware, and hardware/body horror are the engine.** Psionics and sensitives exist in the GLMZ world and may appear as background color; they do not drive the plot. The Reads in the trilogy are tactical reads, not psionic events.
+2. **Tech, cyberware, and hardware/body horror are the engine.** Psionics and sensitives exist in the GLMZ world and may appear as background color; they do not drive the plot. The Reads in the trilogy are tactical reads — neuretics-capability assessments — not psionic events.
 3. **The trilogy's seam is real.** The crew's MxG and NxR jobs genuinely advanced the corp's
-   program. This is retro-fit by planting clues in those strands (§9), not asserted.
+   program. This is retro-fit by planting clues in those stories (§9), not asserted.
 4. **The twenty-one are people, not a MacGuffin.** At least one has a name, a face, and a Drive.
    The rescue must cost and must land as human (Character Doctrine §2).
 5. **Rook's arithmetic completes, it does not reset.** She has carried the count for three
-   strands; here it finally holds names. This is growth as a vector (CHARACTER.md §10), earned
+   stories; here it finally holds names. This is growth as a vector (CHARACTER.md §10), earned
    across the trilogy — not a personality swap.
 6. **The win is not clean.** Something changes and stays changed; someone is hurt; the corp is
    wounded, not erased (the GLMZ does not allow clean wins — trilogy lock).
 7. **Adalemo finishes crossing, on screen.** Not an enemy neutralized; a man who changed ledgers.
 8. **Vox's sold face pays off.** The NxR debt is the fatal thread; her choosing to be seen is her
    arc's completion.
-9. **The title earns itself.** Marrow (the human core) vs Chrome (the machine) appears across the
-   strand as MxG's magenta and NxR's rust did.
+9. **The title earns itself.** Crimson (the color of marrow, blood, human warmth — the core the
+   machine harvests) vs Chrome (the corporate machine, seamless and cold) carries through the
+   story as MxG's magenta and NxR's rust did.
 
 ## §8 — Emotional Architecture
 
@@ -217,10 +235,16 @@ animal"; Scout's Gerald; Boiler's structural empathy turned human; Adalemo's cro
 Competence is still the baseline; the extra thing this time is that they have become people to
 each other, and the job is to refuse to let the machine price that.
 
+**Rook's POV register (binding — per CHARACTER.md §8):** Rook is a Lightning-model leader;
+straight-line narration, no arithmetic metaphor (that's Kyle's register), no filing/parliament
+imagery. Her cognitive tell is the count: who is in the room, who comes out, what it costs.
+Contractions throughout. Short declarative sentences under pressure. Do not borrow Kyle's
+interior vocabulary.
+
 ## §9 — Clue-Plant Refactor (MxG + NxR → CxC)
 
 "All the clues were there." To make that true for the diligent reader, plant the following in the
-prior strands (light touches; never break their standalone reading or their ≥87 scores):
+prior stories (light touches; never break their standalone reading or their ≥87 scores):
 
 **In MxG:**
 - The offer "felt slightly too available" (already present) — sharpen one clause so a re-reader
@@ -241,10 +265,43 @@ that CxC's finale pays off — it is already in both codas; CxC §14 closes it.
 
 ## §10 — Workflow Status
 
-- [x] Docs: this bible + AMENDMENTS SS-A26 + USER_STORIES entry; `codex doctor` PASS (2026-06-27)
+- [x] Docs: this bible + USER_STORIES entry; canon from SS-A26 incorporated here; `codex doctor` PASS (2026-06-27)
 - [x] Entities seeded: Anneke Oyelowo (executive `019f0968f5aa`), The Marrow (place `019f09689d19`), Helix Biosystems (existing corp), Sefi Okonkwo (survivor `019f09693bf8`)
-- [x] Strand `CxC` created (`marrow-chrome-019f0968`) + 14-beat spine
+- [x] StoryNode `CxC` created (`marrow-chrome-019f0968`) + 14-beat spine
 - [x] Clue-plant refactor applied to MxG (#4745 acquisition-for-buyer) + NxR (#4841 relocation-as-harvest)
 - [x] Prose generated (Sonnet→Opus) + reflow + AntagonistCost structural beat added → **review 87.6%** (2026-06-27). Trilogy: MxG 87.1 / NxR 87.7 / CxC 87.6 — all ≥87.
-- [ ] Export (`--publish-docx`); toward-93 polish noted by panel: thicken Vox's prior presence, thin mid-beat ledger exposition, de-dupe Beats 6–7 vs 3–5.
 - [x] Round-2 Opus pass (2026-06-28): purged Kyle counting/arithmetic register from B1/B4; cut AffectationLines chrome simile (B1); consolidated B4 (was re-delivering B3's harvest reveal) into a Rook↔Soraya confession two-hander; trimmed crew-history interior (B2) + Soraya technical block (B8) + Helix-deduction blocks (B6/B7) to dialogue/present-moment; added AntagonistCost + active-Rook opening to B9 (Helix CREDENTIAL OBSERVED flag forces her to abandon the registry probe mid-reach); trimmed Anneke confrontation (B12) and fixed east/west-core continuity error; reconciled Gerald continuity across B9–B13 (crawler/rig, NOT a child — removed "boy/son/children" framing); thinned finger-tap + crimson-light motifs. Did not re-review.
+- [x] Terminology updated 2026-07-04: "Rider" → "Exo" (Scout); "strand"/"strand code" → "story"/"node code" throughout (SS-A43/SS-A38); SS-A26 Helix Biosystems arc canon merged into §2/§4/§5.
+- [ ] Logic sweep (SS-A44 default QA) — run before next export.
+- [ ] Export (`--publish-docx`); toward-93 polish noted by panel: thicken Vox's prior presence, thin mid-beat ledger exposition, de-dupe Beats 6–7 vs 3–5.
+
+## §11 — NSB & Technical Context (SS-A34/A38)
+
+**Scout is an Exo** — a Remote Frame Operator (RFO) in formal/corporate parlance. Her job title
+is the Glooms register: "an Exo." Her work is **NSB (Neuretic Substrate Bridging)**: projecting
+her consciousness as a coherent eigenstate (via **CEP — Coherent Eigenstate Projection**) into a
+remote frame while her body (the **Husk**) remains in managed low-activity suspension.
+
+**Gerald** is Scout's crawler — a physical frame she projects into. It is a piece of hardware,
+not a person. Scout's arc (never naming it) is about her habit of maintaining emotional distance
+from everything she inhabits. When it finally matters out loud, she names it. The naming is the
+arc completing, not a discovery that Gerald was alive.
+
+**The Marrow infiltration (Beat 10)** is an NSB projection op, not a physical breach. Scout
+"burns a frame" (Meridian 88 register) into the Marrow by projecting Gerald through whatever
+network access the team has established. Key vulnerability: the **return handshake** — if the
+Marrow runs **Black Ice** (destructive resonance countermeasure), Scout does not come back
+cleanly. This is the operational risk that makes Beat 10 genuinely high-stakes.
+
+**Exo vocabulary for prose:**
+- "Burning a frame" — executing a projection op (Meridian 88)
+- "Threading out" / "going deep" — beginning / being in projection
+- "Surfacing" — successful return
+- "The Husk" — Scout's body, held in managed low-activity suspension while she projects into
+  Gerald. Not the same as the Shell (which is Gerald, the inhabited frame). If Helix's Black Ice
+  disrupts the return handshake, Scout surfaces into a degraded Husk.
+- "Black Ice" — the countermeasure that kills Exos; Helix runs corpo-grade adaptive Black Ice
+
+**Job-title rule (SS-A38):** "Rider" is retired. Scout is an Exo in prose and dialogue.
+"Remote Frame Operator" appears only if Helix's own records or corp HR paperwork is quoted.
+"Jockey" is valid slang but carries a slur-guard: never adjacent to camel imagery (see SS-A38).

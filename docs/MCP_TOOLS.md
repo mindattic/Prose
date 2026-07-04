@@ -11,7 +11,7 @@
 > All tools are MCP-prefixed `mcp__streetsamurai__<name>` by the client. Most return a
 > JSON string; the canon is the SQL database, scoped to the active Universe.
 
-**206 tools** across **31 tool families.**
+**208 tools** across **31 tool families.**
 
 ## Families
 
@@ -42,7 +42,7 @@
 | [Story](#story) | 6 |
 | [Story Audit](#story-audit) | 2 |
 | [Story Logic](#story-logic) | 1 |
-| [Universe](#universe) | 3 |
+| [Universe](#universe) | 5 |
 | [Voice](#voice) | 5 |
 | [Workflow Monitor](#workflow-monitor) | 3 |
 | [World Entity Crud](#world-entity-crud) | 5 |
@@ -1451,11 +1451,23 @@ Return the universe currently active for this session (slug + name).
 
 - _(no parameters)_
 
+### `get_universal_facts`
+
+Return the universal world facts for the current universe — world mechanics, vocabulary, and social rules injected into every beat generation prompt. These apply to all stories in the universe. Story-specific facts live in each story's node bible instead.
+
+- _(no parameters)_
+
 ### `list_universes`
 
 List every registered universe (slug, name, theme) and which one is currently active. Call this first to discover universe slugs before switch_universe.
 
 - _(no parameters)_
+
+### `set_universal_facts`
+
+Set the universal world facts for the current universe. These facts are injected into every beat generation prompt for any story in this universe, so they should cover mechanics and vocabulary that apply everywhere (transport, technology, social structure, prose vocabulary). Story-specific content belongs in the story's node bible, not here.
+
+- `facts` (string, required) — The full world facts text in Markdown. Replaces any existing content. Pass empty string to clear.
 
 ### `switch_universe`
 

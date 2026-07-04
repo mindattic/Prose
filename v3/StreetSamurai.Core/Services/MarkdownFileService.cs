@@ -84,6 +84,12 @@ public class MarkdownFileService
             if (Directory.Exists(booksDir))
                 foreach (var f in Directory.EnumerateFiles(booksDir, "*.md"))
                     yield return new(f, "project", ToRelative(projectRoot, f), "book-spine");
+
+            // docs/universes/*.md — per-universe world facts (source for Universe.WorldFacts)
+            var universesDir = Path.Combine(docsDir, "universes");
+            if (Directory.Exists(universesDir))
+                foreach (var f in Directory.EnumerateFiles(universesDir, "*.md"))
+                    yield return new(f, "project", ToRelative(projectRoot, f), "universe-facts");
         }
 
         // Claude Code project memory files

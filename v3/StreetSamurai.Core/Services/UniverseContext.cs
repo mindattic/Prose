@@ -7,7 +7,8 @@ namespace StreetSamurai.Core.Services;
 
 /// <summary>Lightweight, serialization-friendly view of a <see cref="Universe"/> row.</summary>
 public sealed record UniverseInfo(
-    Guid Id, string Slug, string Name, string? Theme, string? UniversePrimer, bool IsActive, double SortKey);
+    Guid Id, string Slug, string Name, string? Theme, string? UniversePrimer, bool IsActive, double SortKey,
+    string? WorldFacts = null);
 
 /// <summary>
 /// The currently-selected universe for this process / async flow, and the catalog of all
@@ -256,7 +257,7 @@ public sealed class UniverseContext : IUniverseContext
                 using var db = dbFactory.CreateDbContext();
                 catalog = db.Set<Universe>().AsNoTracking()
                     .OrderBy(u => u.SortKey).ThenBy(u => u.Name)
-                    .Select(u => new UniverseInfo(u.Id, u.Slug, u.Name, u.Theme, u.UniversePrimer, u.IsActive, u.SortKey))
+                    .Select(u => new UniverseInfo(u.Id, u.Slug, u.Name, u.Theme, u.UniversePrimer, u.IsActive, u.SortKey, u.WorldFacts))
                     .ToList();
             }
             catch (Exception ex)

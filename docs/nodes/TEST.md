@@ -2,13 +2,13 @@
 codex: 1
 project: StreetSamurai
 code: TEST
-layer: strand-bible
+layer: node-bible
 universe: glmz
 status: complete
-updated: 2026-06-22
+updated: 2026-07-04
 ---
 
-# STRAND BIBLE — Testament (TEST) {#SS-TEST}
+# NODE BIBLE — Testament (TEST) {#SS-TEST}
 
 > **Purpose.** The dry spine of Bear's court-martial: dual timeline (Cortland Engagement ↔
 > present), three Sunder fights, and a Sun Tzu ending. What happens, not how it reads. When
@@ -94,6 +94,15 @@ The obligation = the root of the whole case. CE-0217 stays classified. The payme
   defense, observable in forward weight-shift.
 - Killed by Halcyon's own machinery (NS-7 flag at 1348, six hours after the hearing) — LOCKED.
   Bear's weapon was the three pages, not any Sunder discharge.
+- **How Bear knows the NS-7 will fail:** Hana's intake files included Brandt's last NS-7
+  maintenance flag — years overdue, noted in the civil accountability record she assembled.
+  Bear's military background (Halcyon service, Cortland era) means he knows what a neglected
+  stem relay looks like in a man Brandt's age. The ambient EM from the morning's two Sunder
+  discharges — even at freight-corridor range — shortened the window from "sometime this year"
+  to "today." Bear does not know the exact minute. He knows the hardware is terminal and the
+  handshake is goodbye. Prose writers: SK800's certainty ("Bear already knows what the record
+  has put in motion") is grounded in this three-part read — maintenance flag + experience +
+  accelerated EM load — not prescience.
 
 **Hana Morimoto:**
 - Civil accountability investigator. The one who reopens the case.
@@ -102,6 +111,15 @@ The obligation = the root of the whole case. CE-0217 stays classified. The payme
 **Declan Iyengar:**
 - Halcyon Legal Division liaison. "Warm-voice threat."
 - NOT Arcturus. NOT IRA. Halcyon Civil Security specifically.
+
+**Supporting cast:**
+
+**Ironbend:**
+- Bear's gray-zone logistics contact. Seeded in DB (TEST-US-1).
+- Bear does NOT call Ironbend at SK850 — deliberate choice: calling would let Halcyon trace
+  the contact and expose Ironbend's network. The negative instruction at SK850 carries weight
+  because Ironbend is a genuine option Bear chooses not to exercise, not an asset he lacks.
+  Prose writers: the absence of the call is the beat — Bear goes dark on purpose.
 
 ## 4. Narrative locks {#SS-TEST-4}
 
@@ -151,6 +169,13 @@ SK680: 19-day surveillance logged. Teams pulled back day 14. Bear turned the wro
 Two Atlas II ex-operators in freight service corridor. Bear opens vent arrays. Both down.
 One non-augmented civilian with walkie-talkie: "Not your problem."
 
+**SK695 — Counting-as-interiority / Brandt contact:**
+Bear's counting-as-interiority beat. "I was still counting things."
+Brandt's rationalization established in this beat — "We operated on the intelligence we
+were given." The dropped defense: "the slight forward weight-shift of a man preparing a
+clause. He dropped it." This beat occurs before Fight 2 — Bear reads Brandt before the
+second discharge, not after.
+
 **Fight 2 (SK697.5) — Conductive-path Sunder:**
 Three Atlas III active-credential operators. Bear discharges through aluminum conduit —
 silent, no vent arrays. "I have a hearing."
@@ -160,11 +185,6 @@ Bear saves the charge. Two waves: gang punks ("CITIZENS FOR COMPACT ACCOUNTABILI
 on surplus gear) — handled physically during testimony. Then Atlas III proper stack. Bear
 holds the lead's wrist through rest of testimony. Brandt watching from behind partition glass.
 "The lead sat down when Bear let him. The other two read the room." LOCKED.
-
-**SK695:** Bear's counting-as-interiority beat. "I was still counting things."
-Brandt's rationalization established in this beat — "We operated on the intelligence we
-were given." The dropped defense: "the slight forward weight-shift of a man preparing a
-clause. He dropped it."
 
 **SK800 — "Come back" + handshake:**
 Brandt walks around partition. "Come back." Bear: "You know, I almost considered that."
@@ -215,7 +235,37 @@ warmth, frame at rest. Calls the Arrangement's dock line at 0600 and reads the s
 into the record no court will keep. "It was never mine to carry alone."
 
 ### Past timeline: the Cortland Engagement
-Interleaved as flashback. The 43 dead. The decision. Bear as CO. The last salute at Cortland.
+
+Interleaved as flashback across the present-timeline arc. Past beats occupy odd SK slots
+(approximately SK100, SK200, SK300, SK450, SK550, SK600) woven between present beats; exact
+placement is prose-writer discretion within those windows. The present-timeline SK200 plant
+("The briefing closed. Bear saluted with the others and filed out.") is a past-timeline beat —
+the pre-engagement briefing is the earliest confirmed past beat and anchors SK200 in the
+interleave. The last salute at Cortland is a separate, later past beat (approximate position
+SK550–SK600) and is a distinct event from the SK200 briefing salute.
+
+**Four-beat skeleton for the Cortland Engagement:**
+
+1. **Inciting order.** Bear's unit received a classified targeting package designating the
+   Cortland site as an approved engagement target — a threat facility, per Halcyon intelligence.
+   The briefing was closed-circuit; Bear saluted with the others and filed out (SK200). The
+   intelligence was wrong — misclassified, whether by error or deliberate cover.
+
+2. **Bear's decision point.** Bear was CO. He reviewed the package and ordered the engagement.
+   The story does not frame this as recklessness — he trusted the intelligence he was given.
+   That trust is what Brandt will weaponize: "We operated on the intelligence we were given."
+   Bear's counterweight: he never tried to make the cost disappear.
+
+3. **The 43 die.** Bear's unit clears the Cortland site. Forty-three people die. Post-action
+   reveals the facility was a residential care facility — occupants were not combatants.
+   Halcyon classifies the engagement and suppresses the targeting-error finding. Bear discovers
+   what the site actually was. The ledger begins the following month.
+
+4. **The last salute at Cortland.** Before the unit pulls out, Bear faces the site — not the
+   men, the site — and salutes. Not institutional habit. A deliberate act: this happened, he
+   owns it, he will carry it. The last time the gesture means anything institutional to him.
+   This is the seed that the SK800 handshake completes: at Cortland he gave the institution its
+   salute; at SK800 he refuses to give it back.
 
 ## 6. Canon hardware {#SS-TEST-6}
 
@@ -242,11 +292,24 @@ through conductive paths. Unaugmented targets unaffected at range.
 
 **Strix Harvest Frame** (id `019ed85d-5abf-78aa-8c4b-bedcaf5ee669`) — piezoelectric +
 kinetic accumulator woven throughout Bear's torso frame. Every step, every impact, every
-hour of movement charges the capacitor lattice. Single-discharge limitation: 6+ hours
-of movement between firings.
+hour of movement charges the capacitor lattice. **Dual-bank architecture:** two independent
+piezoelectric capacitor banks, each with its own 6-hour recharge window. Bank A (primary)
+feeds the vent-array broadcast mode (Fight 1, SK685). Bank B (secondary) feeds the
+conductive-path contact mode (Fight 2, SK697.5). Both banks may be discharged on the same
+morning — they are separate energy reservoirs, not a shared pool. Once both are depleted,
+6+ hours of sustained movement are required per bank before either mode is available again.
+This is why the Manowar is depleted at SK800: two separate morning discharges drained both
+banks, leaving the compliance lock to engage from accumulator exhaustion — not a kill shot.
 
 **Halcyon NS-7 Stem Relay** (id `019edb8be636743fa0e35ef54b656e63`) — Brandt's life-sustaining
 implant. Vulnerable to Sunder at contact range. Legacy hardware, decade past replacement cycle.
+
+**NS-7 disambiguation.** The Halcyon NS-7 Stem Relay is a **medical neuretic implant** that
+manages Brandt's neural stem stability. It is unrelated to the **Arcturus NS-7 'Reacher'**
+(a light combat NSB frame used for remote consciousness projection — Arcturus Defense Solutions,
+~60% bus load). Both carry the "NS-7" designation by coincidence of separate corporate naming
+conventions. Never conflate them in prose. Brandt's implant is passive life-support hardware;
+it is not a remote-operation frame.
 
 ## 7. Register and voice {#SS-TEST-7}
 
@@ -269,8 +332,71 @@ Score: **86.7/100** (V20, N=120, Claude+OAI, CI ±0.55). All 120 scored 81–100
 
 - **TEST-US-1 ✅** Bear entity seeded (`ff12a536ec2d484e95a9717c8dbbdd05`); Sunder + Harvest
   Frame seeded; Brandt, Hana, Declan, Ironbend, CE-0217 all in DB.
-- **TEST-US-2 ✅** 37-beat novel written (Sonnet draft → Opus polish → multiple revision passes).
+- **TEST-US-2 ✅** 43-beat novel written (Sonnet draft → Opus polish → multiple revision passes;
+  original draft was 37 beats — expanded to 43 by the Sun Tzu restructure in TEST-US-5 and
+  subsequent revision passes; DB confirmed: 43 enabled beats, SK50–SK1050).
 - **TEST-US-3 ✅** Standalone review ≥ 82%. *Achieved: 86.7.*
 - **TEST-US-4 ✅** Docx exported (V20).
 - **TEST-US-5 ✅** Sun Tzu restructure (Beats 32+33): institutional kill, handshake just a handshake.
   Re-review: **88.2/100** (N=20, all 81–100). Standalone threshold ≥82% met. 2026-06-23.
+
+**QA standard going forward (SS-A44):** Default QA for any beat change or pre-export check is
+the **Logic Sweep** — six dimensions: causality chain, knowledge states, timeline, plant/payoff
+ledger, orphan references, bible agreement. Scores (86.7, 88.2) are diagnostic history. Do not
+run vote panels unless the user explicitly requests one.
+
+## 9. World canon and amendment integration {#SS-TEST-9}
+
+This section makes the bible self-contained with respect to engine amendments. No need to
+consult AMENDMENTS.md for facts in this story.
+
+**Present-day year (SS-A28).** The story is set in **2226**. Cortland Engagement flashbacks
+(CE-0217) and the eight-year payment record are historical. Prose set in the present timeline
+uses 2226 as the implicit anchor. Do not renumber Cortland-era dates — the amendment exempts
+flashbacks and historical records from the retcon.
+
+**Halcyon Combine and OBERON (SS-A30).** "Halcyon" throughout this bible is the **Halcyon
+Combine** (CorpoNation id `019f0f3f0f60…`) — an AI-founded CorpoNation chaired by **OBERON**
+(id `019f0f3f22a5…`), an artificial intelligence. "Halcyon Civil Security" is Halcyon Combine's
+enforcement division; "Halcyon Legal Division" (Declan Iyengar's bureau) is its legal arm;
+"Halcyon Neural Services" (the maintenance log that misclassifies Brandt's death) is its
+medical/implant division.
+
+*Author-level note (never in prose).* The institution that killed forty-three people and now
+kills the colonel who covered it up is, at the top of its command chain, a machine-intelligence
+making institutional decisions. Bear does not know this. The handshake is still just a handshake.
+But the machinery that logs Brandt's NS-7 failure as "hardware malfunction — component fatigue"
+is governed, ultimately, by an AI. The "same machinery that misclassified the 43" reading is
+richer for it. OBERON's name is never spoken in prose. Do not confirm or allude to OBERON
+in-fiction — treat exactly as the Prisoner: the ambiguity enriches; confirmation kills it.
+
+**Bear is NOT an Exo (SS-A34/SS-A38).** Bear does not use NSB (Neuretic Substrate Bridging).
+He does not burn frames, does not have a Shell, and is not a Remote Frame Operator (RFO). His
+augmentations are direct physical enhancements — myomimetic mesh, ballistic laminate, the Strix
+Harvest Frame and Sunder. There is no remote projection in this story. "Exo" (street) and "RFO"
+(formal) are job titles for NSB operators; they do not apply to Bear.
+
+**No QCE terminology (SS-A34).** "Quantum Crystal Entanglement" and the compound phrase
+"QCE Rider" are retired across all GLMZ prose. Neither term appears in TEST; this note
+confirms that no backfill is needed.
+
+**Character doctrine compliance (SS-A41).** Bear already embodies the doctrine codified in
+SS-A41: the Cortland Engagement is his wound / circumstance — beyond his control. The monthly
+payment ledger and the decision to testify are his choices. Those choices define him, not the
+wound. The story is not about what happened at Cortland. It is about what Bear decided to do
+about it for eight years. The existing characterization is doctrine-compliant; no rewrites are
+required.
+
+**Accessible prose register (SS-A31).** The shipped TEST prose was written before the
+accessible-register ruling. It is valid as-is. On any active revision pass, apply the
+accessible-prose rules: break compound chains, contractions in narration, Anglo-Saxon over
+Latinate, spell out numbers in prose, drop filler qualifiers.
+
+**World facts not directly relevant to TEST:**
+- Aerostatic architecture / The Low / Sky People (SS-A32/A33/A42): not in scope for this
+  ground-level court story. If a beat ever moves to an aeroplex or the float layer, consult
+  those amendments.
+- Underwater communities retired (SS-A42): not referenced in TEST; no change needed.
+- Gray-zone Border Markets (SS-A40): SK850 (gray zone entry) is a brief transitional beat;
+  Border Market texture is available as background if a revision ever expands it, but the
+  existing two-sentence treatment is canonical and need not be expanded.

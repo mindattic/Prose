@@ -2,13 +2,13 @@
 codex: 1
 project: StreetSamurai
 code: ATTE
-layer: strand-bible
+layer: node-bible
 universe: glmz
 status: complete
-updated: 2026-06-23
+updated: 2026-07-04
 ---
 
-# STRAND BIBLE — Attendance (ATTE) {#SS-ATTE}
+# NODE BIBLE — Attendance (ATTE) {#SS-ATTE}
 
 > **Purpose.** The dry spine of Yemina Fola's investigation: three missing children, three neuretics
 > burnout flags, one quiet pattern the system logged as truancy. What happens, not how it reads.
@@ -76,15 +76,16 @@ only lever she controls.
 **The school android (Aldiss Mwangi Community Learning Center):**
 - A 2190s reception design: built to read as warm and approachable by 2190s standards.
 - What 2190s-era warmth looks like from 2226 is its own uncanny texture.
-- Not a character — a bureaucratic interface. Treat it accordingly.
+- Not a character — a bureaucratic interface. A Tier 1 Automaton: machine, not alive; its
+  apparent warmth is optimization, not interiority. Treat it accordingly.
 
 **Bear (supporting; secondary contact):**
 - The one who receives Nadia's folder at the dock gate.
 - Does not open it for four minutes. This is the whole scene.
 - Does not appear again in the story. He is a relay point.
-- **Cross-strand (TEST):** Bear is **Boris Johansen** (entity slug: `boris_johansen`). The
+- **Cross-story (TEST):** Bear is **Boris Johansen** (entity slug: `boris_johansen`). The
   four-minute wait before touching the folder is obligation, not guilt — that is the soldier's
-  move. He is on a mid-GLMZ posting at this point in his arc. His TEST strand runs separately;
+  move. He is on a mid-GLMZ posting at this point in his arc. His TEST story runs separately;
   he does not need to know what is in the folder for this scene to land, and he doesn't open it
   because he is not in the habit of reading other people's mail.
 
@@ -92,6 +93,24 @@ only lever she controls.
 - The contact who hand-delivers the folder.
 - Carries it pressed against her chest like she is keeping it from a wind that doesn't exist.
 - She does not explain why she brought it to Bear instead of Yemina directly. She leaves when asked.
+
+**Ren Vasquez (supporting; adult-open neuretics):**
+- A partially tuned adult sensitive. Her neuretics were never provisioned — born gray-zone,
+  never registered with a CorpoNation, never locked to a fixed frequency band — so they
+  remained open past the juvenile growth window. (SS-A21: this is the adult-persistence case;
+  rare, because almost everyone's neuretics are provisioned and close around age twelve.)
+- She feels the Gingerbread House's pull as a persistent directional sensation and can name
+  its bearing. This is the *heading*'s adult manifestation: not a compulsion strong enough
+  to make her walk, but strong enough to give Yemina a forensic vector.
+- Her unregistered neuretics status is relevant to what courts and authorities can do with
+  her testimony. The same condition that makes her useful makes her inadmissible.
+
+**Selvamani (supporting; forensic specialist):**
+- The analyst who developed the echo/heading taxonomy used by AAMA and by Yemina.
+- Does not appear as a full character — their contribution is methodological, delivered as
+  information Yemina inherits rather than discovers.
+- Their shorthand: *"The echo tells you who it tuned. The heading tells you where they walked.
+  The echo is a fingerprint on a chair. The heading is the smell of the gingerbread."*
 
 ## 4. Narrative locks {#SS-ATTE-4}
 
@@ -132,13 +151,19 @@ imprint*): a low-intensity, weeks-long harmonic mark at the seat, readable on a 
 The echo marks *who was tuned and where they sat* — not a crossing. Nothing crosses at the seat.
 The growth window closes around age twelve; adult neuretics is locked too tightly to take the tune.
 
+**Adult-open exception (SS-A21).** An adult whose neuretics were never provisioned — never
+registered, never locked to a fixed band — can remain open past the growth window and still
+receive schism signal. This is the mechanism behind Ren Vasquez's sensitivity (§3). It is rare;
+gray-zone birth and no CorpoNation registration are the typical conditions. The normal rule
+(adult neuretics locked → immune) still holds for the overwhelming majority of the population.
+
 **The heading — how a tuned child leaves (LOCKED).** Once synchronized, the child's neuretics
 carries a standing bias toward the source: a compulsion, felt as a direction, the way the witch's
 house is *that way* across the woods. The child does not vanish from a room. The child gets up
 during an unsupervised moment — a bathroom pass, a free-reading period, the walk to a bus that is
 never boarded — and **walks out of the school and toward 35th and Halsted**, southwest, however far
 it is, the way you walk toward a smell. At the Gingerbread House the cross-section closes over them.
-A sensitive adult who is partially tuned (Ren Vasquez) feels the same pull and can name its
+A sensitive adult with adult-open neuretics (Ren Vasquez) feels the same pull and can name its
 bearing; this is the *heading*, the second half of the forensic picture. It is not a scanner trace
 in a bathroom — it is a vector, read in the living as orientation and in the record as the fact
 that every missing child was last seen moving the same way, their vanishing points falling on lines
@@ -171,26 +196,52 @@ beat were removed in the SS-A18 mechanism redesign). The investigation proceeds:
 Yemina's POV of the Pilsen Veil zone-seam at 0600: the Arcturus/Meridian contract boundary,
 the city shifting cadence between shifts, the lake cold moving sideways through the corridor
 streets. Establishes GLMZ for first-time readers through administrative familiarity rather
-than awe. Ends: *She had a caseload. Three disappearances. She drove.*
+than awe. The assignment arrived via a sub-authority routing flag she has no record of requesting — an inbox that had been dormant for two years. She notes the irregularity and files it as a discrepancy with no obvious resolution. Ends: *She had a caseload. Three disappearances. She drove.*
+
+**Prologue world texture (for first-time readers).** The prologue is the gateway beat — it must
+land GLMZ without exposition. What Yemina's eye notices at the Pilsen Veil zone-seam:
+- **Altitude as class axis.** Float districts hang overhead — aeroquarters and aeroblocs visible
+  as lit platforms, the derelict layer (Drifters) drifting lower in the haze. Sky People live
+  up there, above the city's weather and consequences. Yemina drives a contractor car at street
+  level. The distance between her and that altitude is not aesthetic; it is political.
+- **The Low.** The ungoverned band between 30 and 320 meters — industrial haze, building-wake
+  turbulence, neither Arcturus patrol ceiling nor MATA radar floor. Things move in it that don't
+  appear on any authority's display. This is not Yemina's world either, but it is over her head.
+- **Zone-seam texture.** The Arcturus/Meridian contract boundary means the city's cadence
+  visibly shifts at the seam — different signage, different security presence, different state
+  of repair. Yemina is fluent in this transition. She crosses it every shift.
+- **What the prologue does NOT do:** explain any of this. Yemina is not explaining her city to
+  a tourist. She is driving to work. The world is the medium of her movement, not the subject.
 
 ### Chapter 1 — The Car and the School
 Yemina drives the contractor car through the Pilsen Veil. The Mwangi Community
 Learning Center: four stories of poured concrete, each repair cycle a geological deposit.
-The 2190s-era android at the reception desk. The roster. Three names.
+A contractor-tier surveillance drone is visible above the schoolyard, its sweep pattern covering two city blocks — authority-stamp mismatched to the school's block assignment. She notes it. The 2190s-era android at the reception desk. The roster. Three names.
 
 ### Chapter 2 — The Flags
 The neuretics burnout flags. Each one filed to a different sub-authority: one to the
 district medical registry, one to the CorpoNation that manufactured the hardware, one
 to the school's own records system. Nobody filed to all three. Nobody had reason to look
-across all three. Yemina does.
+across all three. Yemina does. Cross-referencing the hardware-manufacturer flag against the AAMA
+anomalous-sensitivity registry surfaces a gray-zone adult case filed two years prior in the same
+district corridor — Ren Vasquez, whose unregistered neuretics never closed. The same condition
+that makes her testimony inadmissible makes her the heading's only living source.
 
 ### Chapter 3 — The Gap
 Four to eleven minutes. The timestamps are verifiably inconsistent. She doesn't speculate
-about what filled them. She documents the inconsistency in three parallel filings.
+about what filled them. She documents the inconsistency in three parallel filings. Late in this
+chapter Yemina exercises her cross-district contractor clearance to run the same timestamp
+cross-reference across every site in her access window — 22 sites, 22 months. The 47-child
+aggregate assembles. No single authority held enough of the picture. Her consolation posting
+gave her the clearance; nobody expected it to matter.
 
 ### Chapter 4 — The Folder
-Nadia at the dock gate. Bear with the folder. Four minutes. The locker. Yemina's report
-goes in. The story ends where the investigation hands off to something she cannot follow.
+Nadia at the dock gate. Bear with the folder. Four minutes. The locker. Yemina is not present
+at the dock; she reconstructs the 0540 hand-off from the contractor drone's archived timestamp
+logs — the same drone noted in Chapter 1 above the Mwangi schoolyard, its sweep pattern wide
+enough to cover the dock gate. The footage is her witness; the Bear/folder scene is
+background-narrated through surveillance records she accesses, not a POV shift to Bear.
+Yemina's report goes in. The story ends where the investigation hands off to something she cannot follow.
 
 ## 6. Register and voice {#SS-ATTE-6}
 
@@ -211,15 +262,20 @@ accurately, without sentiment, with attention to what doesn't fit.
 
 **Register:** [[../registers/GREY]] — the GREY register. Administrative horror: not the
 cyberpunk spectacle register — the quieter one. The one where a child is logged as an
-unexcused absence and the system
-moves on to the next item. Yemina's competence makes this visible, not dramatic.
+unexcused absence and the system moves on to the next item. Yemina's competence makes this
+visible, not dramatic.
+
+**Kyle's cognitive vocabulary ban:** Yemina's POV must never use Kyle's cognitive register —
+not *"she filed it,"* not *"she ran the arithmetic,"* not parliament/geometry/gap metaphors
+(SS-A31). Her archival competence is its own register: timestamps, cross-filings, the gap
+between what was logged and what happened. Distinct from Kyle; do not let the registers bleed.
 
 Score: **89.2/100**, narrative-flow **91.7/100** (n=12; prior 87.95/n=20, prior-prior 88.45). Gateway
 designation confirmed. Gateway-commandments audit: **8/8 PASS, 0 advisory** (was 1 advisory on
 `land_past_handoff`). Mechanism redesigned SS-A18 (Gingerbread House; see §4b).
 
 **New-systems surgical pass (2026-06-24).** Rather than bulk-regenerate (the A/B experiments proved
-regen-from-synopsis regresses a finished strand ~−8), three beats were hand-rewritten through the
+regen-from-synopsis regresses a finished story ~−8), three beats were hand-rewritten through the
 DocContext-loaded GREY register + emotional-depth diagnostics: beat 18 (Osei/Lech kitchen — narrated
 withholding → set-place object + memorized-ticket grievance; moved from weakest-of-6-dimensions to
 *strongest* evidence for ObjectsAndGestures + RelationalSubtext); beat 21 (Selvamani's stated

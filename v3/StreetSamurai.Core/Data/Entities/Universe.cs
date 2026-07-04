@@ -29,6 +29,15 @@ public class Universe
     /// hardcoded GLMZ lore, so each universe grounds prose in its own world. Null = none yet.</summary>
     public string? UniversePrimer { get; set; }
 
+    /// <summary>
+    /// Universal world facts for this universe — injected into every beat generation prompt
+    /// regardless of which story is being written. Captures world mechanics (transport, tech,
+    /// social structure, vocabulary) that apply across ALL stories and must never be wrong.
+    /// Story-specific facts live in <c>Node.NodeBible</c> instead.
+    /// Maintained as <c>docs/universes/&lt;slug&gt;.md</c> and synced here via --sync-markdown.
+    /// </summary>
+    public string? WorldFacts { get; set; }
+
     public bool IsActive { get; set; } = true;
 
     /// <summary>Sort order in the SwitchUniverse dropdown; also picks the default universe

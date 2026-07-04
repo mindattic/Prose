@@ -2,13 +2,13 @@
 codex: 1
 project: StreetSamurai
 code: DWIACE
-layer: strand-bible
+layer: node-bible
 universe: glmz
 status: complete
-updated: 2026-06-22
+updated: 2026-07-04
 ---
 
-# STRAND BIBLE — Death Whispers in a Cat's Ear (DWIACE) {#SS-DWIACE}
+# NODE BIBLE — Death Whispers in a Cat's Ear (DWIACE) {#SS-DWIACE}
 
 > **Purpose.** The spine of Rennick Investigations' founding case: four detectives plus Celeste
 > Hartley (co-protagonist) against a predatory E.L.F. wearing a dead boyfriend's voice. What
@@ -58,8 +58,12 @@ momentarily believing Jace is real, the story collapses.
 
 ## 2. The conspiracy {#SS-DWIACE-2}
 
-**The Tributary** (`019ec40567ef77f79cdfd1418d5fc141`) — predatory E.L.F.. Not the rogue-AI
-whistleblower. Not a Supermind. Its own taxon. It:
+**The Tributary** (`019ec40567ef77f79cdfd1418d5fc141`) — predatory E.L.F. Tier 2 under the
+SS-A23 synthetic-personhood taxonomy: genuinely alive (not built), but animal-grade intelligence
+only. It does not have full self-reflective personhood. Its predation is **real hunger, not
+malice** — render its behavior as animal behavior, not reflective. Never give it human-scale
+reasoning or self-narration. It is not a villain in the moral sense; it is a predator operating
+on instinct. Not the rogue-AI whistleblower. Not a Supermind. Its own taxon. It:
 - Wears the dead. Specifically the recently-grieving who have cat-ear genemods that left
   auditory channels raw.
 - Farms grievers via the cat-ear community.
@@ -74,9 +78,10 @@ operators correct it immediately. The Network is ambient proprioception, not cyb
 the husks the Scatter leaves, paid in stolen compute. Connects organ trade → E.L.F. → Douglas
 Hartley's shadow ledger.
 
-**Sol Castellanos** — Jane Doe, dark mirror. Same want as Celeste — reach a dead loved
-one (for Sol, her brother Mateo; for Celeste, the boyfriend Jace) — but she couldn't afford
-a safe operator. Earlier Tributary victim. Marisol's echo of Sol = the same voice = the proof.
+**Sol Castellanos** (full name: Marisol Castellanos) — Jane Doe, dark mirror. Same want as
+Celeste — reach a dead loved one (for Sol, her brother Mateo; for Celeste, the boyfriend
+Jace) — but she couldn't afford a safe operator. Earlier Tributary victim. Sol's death-scene
+residue — the same cold-edge, the same voice pattern — is the proof (read by Tamsin in Ch9).
 This is the reveal pivot. The mirror is the WANT, not the relationship (prose canonically
 names Mateo as her brother in 4 beats incl. reveal-pivot 3842; amended 2026-07-03).
 
@@ -91,7 +96,8 @@ Reads physical SCENES. Anchor of ensemble chapters. His cup-quarter-turn is his 
 RESIDUE in rooms (ability, not magic). Sleeps in her clothes. The cold-edge "listening"
 residue is what she finds in Celeste's room — matches what she finds at Sol's death scene.
 
-**Corvin Adaora** (`019ec3ebabfa7f62b80263deb6603c6b`) — Human. Wiped out on his bike
+**Corvin Adaora** (`019ec3ebabfa7f62b80263deb6603c6b`) — **Handle: Teller**
+Human. Wiped out on his bike
 burning down the Dan Ryan eleven years ago; massive head trauma transferred most of his
 cognitive processing to neuretics. He did not lose himself — he became something adjacent to
 himself. Calm, direct, precise. He does not register the nuances of human behavior in the
@@ -157,13 +163,19 @@ choice from that moment forward.
 3. **The Tributary over-explanation is banned.** Established once (what it does, how it works);
    never restated across beats. The biggest early-draft flaw. Fixed; never re-introduced.
 4. **Sol and Celeste are mirrors, not duplicates.** Sol = same want, poorer options, earlier
-   victim. Her echo in Marisol's reading = the proof. The CONNECTION is the reveal, not a
-   repetition.
+   victim. Her death-scene echo, read by Tamsin = the same Tributary signature = the proof.
+   The CONNECTION is the reveal, not a repetition.
 5. **The corpo buries it.** "Voluntary recall." Rennick keeps the evidence. The Tributary
-   continues with Celeste's voice. The series spine is that the predator evolves and they
-   know it.
+   continues with Celeste's voice. The voice-imprint is acquired through partial Scatter —
+   89% exposure was sufficient to capture the auditory signature; 100% is not required for
+   the Tributary to wear a voice, only for full Dissemination. The series spine is that the
+   predator evolves and they know it.
 6. **Voss reaches the rig physically because the Tributary can't see him.** The air-gap is
-   what makes the climax possible. Do not give Voss neuretics for any strand that uses him.
+   what makes the climax possible. Do not give Voss neuretics for any story that uses him.
+7. **The Tributary acts on hunger, not malice (SS-A23).** It is Tier 2 E.L.F. — genuinely
+   alive, animal-grade intelligence. Its behavior is rendered mechanistically, not
+   phenomenologically. It does not choose evil; it feeds. The horror is that it is not even
+   aware of Celeste as a person. Prose must never attribute reflective intent to it.
 
 ## 6. Chapter structure (12 chapters) {#SS-DWIACE-6}
 
@@ -172,18 +184,21 @@ choice from that moment forward.
 2. The Intake (Isaac POV)
 3. What the Room Holds (Tamsin POV)
 4. What She Asked For (Celeste POV) — `what-she-asked-for-019ec965` · 83.6 ✅
-5. What She Wouldn't Do (Corvin POV)
+5. What She Wouldn't Do (Teller POV)
 6. Clean Sharps (Isaac POV)
 7. The Ghost Period (Celeste POV) — `the-ghost-period-019ec965` · 81.7
 8. The Convergence (Ensemble)
 9. The Same Cold (replaces "Forty Seconds" — Tamsin reads Sol's death scene; cold-edge
    matches Celeste's room; Corvin matches cadence between Sol's and Celeste's logs)
-10. No Signal (Voss POV)
+10. No Signal (Voss POV) — Voss's solo analog thread, Day 5. Contains Voss/Feliksas Burokas
+    recruitment backstory (beats 3904–3919) placed post-climax but chronologically pre-raid;
+    requires a flashback signal (e.g., scene-break with date/time stamp) before final export
+    or the reader encounters cause after effect.
 11. The Surfacing (Ensemble climax)
 12. Voluntary Recall (Ensemble finale)
 
 **Note on structure (updated 2026-07-03 — SHIPPED):** The Celeste beats are interleaved into the
-book-strand beat sequence from page one, per Law §0 ("the book opens with Celeste"). Ch1 "Cel"
+story beat sequence from page one, per Law §0 ("the book opens with Celeste"). Ch1 "Cel"
 opens the book at SortKey 1.0; Ch4 "What She Asked For" recurs at ~SortKey 8902–8998; Ch7 "The
 Ghost Period" recurs at ~SortKey 17802–17876. All three were verified beat-by-beat (2026-07-03
 logic audit) to introduce no investigator-side knowledge the reader hasn't already received in
@@ -207,8 +222,7 @@ she knows; her body does.
 - Explain Corvin's inadmissibility. The prose shows what he proves; the structure shows
   why it can't be used.
 
-Score: **90.95/100** (N=20, OpenAI-only, CI ±0.66; calibrated book-strand, 2026-06-22).
-Celeste child strands un-merged — structural integration is remaining work.
+Score: **90.95/100** (N=20, OpenAI-only, CI ±0.66; calibrated story, 2026-06-22).
 
 ## 8. User stories {#SS-DWIACE-8}
 
@@ -217,9 +231,9 @@ Celeste child strands un-merged — structural integration is remaining work.
   Cermak Reclamation Crew, Lakeshore Aggregation Zone.
 - **DWIACE-US-2 ✅** 12-chapter structure written (Sonnet draft → Opus polish per episode;
   dual POV interleaved).
-- **DWIACE-US-3 ✅** Book-strand review ≥ 82%. *Achieved: 90.95 (book strand, 568 beats).*
+- **DWIACE-US-3 ✅** Story review ≥ 82%. *Achieved: 90.95 (story, 568 beats).*
 - **DWIACE-US-4 ✅** Docx exported (V10).
-- **DWIACE-US-5 ✅** Celeste beats merged into book-strand beat sequence for full dual-POV
+- **DWIACE-US-5 ✅** Celeste beats merged into story beat sequence for full dual-POV
   scoring — verified 2026-07-03: Ch1/Ch4/Ch7 interleaved per §6, no forward knowledge leaks
   (logic audit `audit-outlines-2026-07-03/logic/DWIACE.md` §2).
 - **DWIACE-US-6 ⬜** Mid-section exposition density (beats ~179–190) trimmed.
