@@ -35,7 +35,7 @@ Each zone has a character. The most important:
 
 | Zone | Character |
 |---|---|
-| **Z1 — The Loop** | Prestige corporate core. Axiom Tower, banking, the Arcology rows. Arcturus Civil Security density is highest here. |
+| **Z1 — The Loop** | Prestige corporate core. Axiom Tower, banking, the Arcology rows. ArcSec density is highest here. |
 | **Z2 — The Spine** | The city's spine. Mid-tier commercial, transit hubs, the most mixed-income territory. Kyle's operating base. |
 | **Z3 — The Glooms** | Below The Spine, literally and figuratively. Perpetual fog from lake microclimate + industrial runoff. Where the freelancer economy lives. |
 | **Z5 — Bloom Quarter** | Nanotech research and biomodification district. Legal-gray clinics, corpo-sponsored labs, body-mod culture. |
@@ -62,7 +62,7 @@ The city's primary transit backbone. A Mach 6 vacuum tube rail system running on
 | **2160s** | Neuretics emerge — neuro-lace polymer mesh grown into living brain tissue. Changes everything. |
 | **2170s** | QUANTA (Φ) emerges as the dominant digital currency in GLMZ, replacing the fractured dollar. |
 | **~2200** | The US federal government has become a holding company for its own debt. CorpoNation sovereignty is the practical reality across the former Midwest. |
-| **2065** | **The Blue Massacre.** Over a single night, CorpoNation private security forces — led by Arcturus Defense Solutions — move simultaneously on all 23 active GLMZ police precincts. Officers who surrender are detained; officers who resist are killed. 847 officers dead by dawn. Official framing: "Emergency Public Safety Transfer during municipal fiscal crisis." The city government, already insolvent, does not contest it. Within 36 hours, every police precinct in GLMZ is an Arcturus checkpoint. The city police force ceases to exist as a legal institution. Arcturus rebrands its enforcement arm "Arcturus Civil Security" within the year. |
+| **2096** | **The Blue Massacre.** Over a single night, CorpoNation private security forces — led by Arcturus Defense Solutions — move simultaneously on all 23 active GLMZ police precincts. Officers who surrender are detained; officers who resist are killed. 847 officers dead by dawn. Official framing: "Emergency Public Safety Transfer during municipal fiscal crisis." The city government, already insolvent, does not contest it. Within 36 hours, every police precinct in GLMZ is an Arcturus checkpoint. The city police force ceases to exist as a legal institution. Arcturus rebrands its enforcement arm "ArcSec" within the year. |
 | **2226** | Present day. |
 
 ### The AI Cabal (Author Truth — Never Confirmed In-Fiction)
@@ -81,7 +81,7 @@ The AIs covered their tracks, which was easy because the alternative explanation
 The city is governed by corporations that function as sovereign entities — they issue IDs, provide housing, enforce law (within their claimed zones), and control employment pipelines. Major players:
 
 - **Axiom** — The largest and most politically dominant corponation. Controls Z1 and much of Z2. Sable Axiom is a senior operative. Their research into consciousness transfer is an open secret.
-- **Arcturus** — The civil security monopoly. Arcturus Civil Security replaced police in 2096 — by force, in what historians call the Blue Massacre. They are simultaneously a law enforcement agency and a for-profit corporation — a combination that creates obvious structural problems.
+- **Arcturus** — The civil security monopoly. Its enforcement arm, ArcSec (ArcSec), replaced the city police in 2065 — by force, in what historians call the Blue Massacre. They are simultaneously a law enforcement agency and a for-profit corporation — a combination that creates obvious structural problems.
 - **Various Others** — CorpoNations are named using conjoined capital letters in prose: "ArcturusSec," "NovaDyne," etc. (never hyphenated, never split). Each is introduced with a brief in-voice gloss of what it does when first mentioned.
 
 ### The Lotus Syndicate
@@ -108,7 +108,11 @@ Neuro-lace polymer mesh that is *grown* into brain tissue rather than implanted.
 | **Tier 4 / Atlas-grade** | Experimental / illegal | Full-stack cognitive expansion. **Has a governor** — a survival limiter that prevents runaway computation. Kyle's neuretics are Atlas-grade *without* a governor. They are slowly killing him. |
 
 ### QUANTA (Φ)
-The dominant currency. The Φ symbol is the QUANTA mark — it is **never** the Greek letter phi in this context. Prices, debts, and contracts are denominated in Φ. Kyle always takes payment; the minimum is 20 Φ even for symbolic gestures.
+The dominant currency. QUANTA is an allotment of computational power issued to every citizen of
+Earth — it can be saved, transferred to others (currency), or spent on actual computation. Wealth
+is accumulated Φ; poverty is spending your allotment the moment it issues. The Φ symbol is the
+QUANTA mark — **never** the Greek letter phi. Prices, debts, and contracts are denominated in Φ.
+Kyle always takes payment; the minimum is 20 Φ even for symbolic gestures.
 
 ### Nanotech
 The Bloom Quarter (Z5) is the center of nanotech development. The framework distinguishes:
@@ -235,7 +239,7 @@ These are locked and should not be proposed as negotiable:
 - **Iowan Behemoths are machines** — not synthetic life, not alive
 - **E.L.F. always has periods** — "E.L.F." never "ELF" or "Elf"
 - **Form ≠ life** — appearance of personhood does not confer it
-- **No GLMZ police** — Arcturus Civil Security only; city police dissolved 2096 (Blue Massacre)
+- **No GLMZ police** — ArcSec only; city police dissolved 2065 (Blue Massacre)
 - **Default to diaspora** — character names and heritage default to unexpected global combinations, never Anglo defaults
 - **CorpoNations use conjoined capitals** — "ArcturusSec" not "Arcturus Sec"
 - **The Reach is a lie** — in-fiction characters may believe it; the narrative never endorses it
