@@ -11,7 +11,7 @@
 > All tools are MCP-prefixed `mcp__streetsamurai__<name>` by the client. Most return a
 > JSON string; the canon is the SQL database, scoped to the active Universe.
 
-**208 tools** across **31 tool families.**
+**215 tools** across **32 tool families.**
 
 ## Families
 
@@ -42,6 +42,7 @@
 | [Story](#story) | 6 |
 | [Story Audit](#story-audit) | 2 |
 | [Story Logic](#story-logic) | 1 |
+| [Survey](#survey) | 7 |
 | [Universe](#universe) | 5 |
 | [Voice](#voice) | 5 |
 | [Workflow Monitor](#workflow-monitor) | 3 |
@@ -129,7 +130,7 @@ Load a place / district by name. Returns description, sensory_details, parent te
 
 ### `list_characters`
 
-List every character in canon. Returns name + role + status for each. Cheap — call this first when you need to know who exists.
+List every character in canon. Returns name + role + status for each. Cheap â€” call this first when you need to know who exists.
 
 - _(no parameters)_
 
@@ -227,13 +228,13 @@ Sync all discovered markdown files from disk into the database. Only files whose
 
 ### `get_motifs`
 
-List the registered motifs for a book — recurring objects, phrases, gestures, sensory threads. Mention these in the chapter you're writing where natural; the review pipeline flags chapters that drop the whole inventory.
+List the registered motifs for a book â€” recurring objects, phrases, gestures, sensory threads. Mention these in the chapter you're writing where natural; the review pipeline flags chapters that drop the whole inventory.
 
 - `bookId` (string, required) — Book id.
 
 ### `get_neighbors`
 
-Get a graph node's neighbors (relationships) up to N hops. Use this to walk from a known entity to entities related by canon — alliances, rivalries, family, mentor links, location ownership.
+Get a graph node's neighbors (relationships) up to N hops. Use this to walk from a known entity to entities related by canon â€” alliances, rivalries, family, mentor links, location ownership.
 
 - `nodeId` (string, required) — Node id (use search_semantic or list_characters to find the id).
 - `hops` (int, optional) — Hops to traverse. 1 = direct neighbors. Default 1.
@@ -250,9 +251,9 @@ Plant a new motif in a book's inventory. Idempotent by name (re-planting with a 
 
 ### `search_semantic`
 
-Search the world graph by theme, not by name. TF-IDF cosine similarity across every entity description. Use this to surface entities that are *thematically relevant* to what you're about to write — e.g. searching 'corporate betrayal under-table contract' might return Sable's backstory, the Lotus Syndicate, the Ferrogate enforcement arm. Returns ranked id+name+type+score.
+Search the world graph by theme, not by name. TF-IDF cosine similarity across every entity description. Use this to surface entities that are *thematically relevant* to what you're about to write â€” e.g. searching 'corporate betrayal under-table contract' might return Sable's backstory, the Lotus Syndicate, the Ferrogate enforcement arm. Returns ranked id+name+type+score.
 
-- `query` (string, required) — Free-text query — describe the theme/scene/concept.
+- `query` (string, required) — Free-text query â€” describe the theme/scene/concept.
 - `topK` (int, optional) — Number of top hits to return. Default 8.
 
 ## Continuity
@@ -1376,10 +1377,10 @@ List all species in the current universe. Returns canonical name (key used on Ch
 
 ### `archive_book`
 
-Archive a book: moves the book file from engine/data/books/ to engine/data/archives/books/. Non-destructive — the original chapters stay in place but the book record is removed from the active shelf. Requires the caller to retype the full book id as a confirmation token (matches the UI's type-the-guid modal). Returns ok:true on success or error:'confirmation_mismatch' / error:'not_found' otherwise.
+Archive a book: moves the book file from engine/data/books/ to engine/data/archives/books/. Non-destructive â€” the original chapters stay in place but the book record is removed from the active shelf. Requires the caller to retype the full book id as a confirmation token (matches the UI's type-the-guid modal). Returns ok:true on success or error:'confirmation_mismatch' / error:'not_found' otherwise.
 
 - `id` (string, required) — Book id (32-char hex).
-- `confirmId` (string, required) — Confirmation token — must equal the same full book id. Mismatched or missing values abort the archive.
+- `confirmId` (string, required) — Confirmation token â€” must equal the same full book id. Mismatched or missing values abort the archive.
 
 ### `get_book`
 
@@ -1401,7 +1402,7 @@ Load a single chapter by id: synopsis, full HTML body, persisted beats list (eac
 
 ### `get_director_context`
 
-Build the 'WHERE WE ARE' director context block for writing a specific chapter: PRIOR chapters' content, THIS chapter's outline, UPCOMING chapters' setup needs, plus open book-level threads. This is the highest-value writing-context tool — call it before drafting prose for any chapter that's part of a book.
+Build the 'WHERE WE ARE' director context block for writing a specific chapter: PRIOR chapters' content, THIS chapter's outline, UPCOMING chapters' setup needs, plus open book-level threads. This is the highest-value writing-context tool â€” call it before drafting prose for any chapter that's part of a book.
 
 - `bookId` (string, required) — Book id.
 - `chapterId` (string, required) — Chapter id whose prose you're about to write.
@@ -1440,6 +1441,61 @@ Generate a narrative outline and adversarial logic audit for a node. Finds plot 
 
 - `nodeIdOrSlug` (string, required) — Node id (GUID) or slug.
 - `skip_audit` (bool, optional) — Skip the logic audit and return outline only. Default false.
+
+## Survey
+
+<sub>`SurveyTools`</sub>
+
+### `answer_survey_question`
+
+Record the user's answer for one survey question. selectedOption is the letter key ('a', 'b', 'c', or 'd'). Call this once per question after the user exports their answers from the artifact.
+
+- `surveySlug` (string, required) — Survey slug.
+- `questionKey` (string, required) — Question key, e.g. 'Q-001'.
+- `selectedOption` (string, required) — Selected option letter: 'a', 'b', 'c', or 'd'.
+
+### `complete_survey`
+
+Mark a survey as Completed. All questions should be Applied or Skipped before calling this.
+
+- `slug` (string, required) — Survey slug.
+
+### `create_survey`
+
+Create a new canon-sync or contradiction-resolution survey. questions is a JSON array of {questionKey, title, context?, questionType?, options} where options is an array of {key, label, description?}. questionType values: PlaceDescription, TechnologyDescription, WeaponRename, FactionDescription, CharacterDescription, BeatText, DocUpdate, ContradictionResolve, Custom. Returns the survey id and slug. Call get_survey_html to generate the artifact HTML.
+
+- `slug` (string, required) — URL-safe slug, e.g. 'canon-sync-2026-07-05'.
+- `title` (string, required) — Human-readable title.
+- `questionsJson` (string, required) — JSON array of question objects. Each: {questionKey, title, context?, questionType?, options:[{key,label,description?}]}
+- `purpose` (string, optional) — Optional purpose / scope description.
+- `universeSlug` (string, optional) — Universe slug ('glmz' or 'fantasy'). Omit for universe-neutral.
+
+### `get_survey`
+
+Retrieve a survey with all questions and their current answer state. Returns the survey metadata, each question's key/title/type/options/selectedOption/applyStatus.
+
+- `slug` (string, required) — Survey slug.
+
+### `get_survey_html`
+
+Generate the interactive artifact HTML for a survey. Returns the full HTML string ready to be published as an artifact. After calling this, publish it via the Artifact tool with the survey slug as the filename.
+
+- `slug` (string, required) — Survey slug.
+
+### `list_surveys`
+
+List surveys. Filter by status ('Open' or 'Completed') or omit for all.
+
+- `status` (string, optional) — 'Open' or 'Completed'. Omit for all.
+
+### `mark_survey_question_applied`
+
+Mark a survey question as applied (or skipped) after the fix has been made. applyStatus: 'Applied' (default) or 'Skipped'. applyNotes should describe what was changed (SQL table/column, MCP tool used, etc.).
+
+- `surveySlug` (string, required) — Survey slug.
+- `questionKey` (string, required) — Question key, e.g. 'Q-001'.
+- `applyNotes` (string, required) — Description of what was changed.
+- `applyStatus` (string, optional) — 'Applied' or 'Skipped'. Defaults to 'Applied'.
 
 ## Universe
 

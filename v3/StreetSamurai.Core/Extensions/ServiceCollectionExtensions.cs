@@ -835,6 +835,14 @@ public static class ServiceCollectionExtensions
         // Available via `ss --validate-nouns --slug <slug>` and validate_nouns MCP.
         services.AddSingleton<NounConsistencyService>();
 
+        // Canon-sync survey service — persists questions, answers, and apply logs in
+        // DB so the full decision trail survives across sessions. Generates the
+        // interactive artifact HTML from DB data rather than hand-coding it each round.
+        // MCP: create_survey, get_survey, list_surveys, answer_survey_question,
+        //      mark_survey_question_applied, complete_survey, get_survey_html.
+        // CLI: ss --list-surveys [--status Open|Completed], ss --get-survey --slug <slug>.
+        services.AddSingleton<SurveyService>();
+
         // Beat mode detection + workflow coverage monitoring.
         // ProseWriterRouter is the preferred entry point for all prose generation — it
         // auto-detects beat mode, injects pacing + structural guidance, and logs coverage.

@@ -376,6 +376,12 @@ public class StreetSamuraiDbContext : DbContext
     // not appear in prose. Scanned by NounConsistencyService / validate_nouns MCP.
     public DbSet<DeprecatedEntityName>   DeprecatedEntityNames   => Set<DeprecatedEntityName>();
 
+    // Canon-sync surveys — persisted questions, answers, and apply logs so the
+    // full decision trail survives across sessions. Managed by SurveyService /
+    // survey MCP tools / ss --list-surveys / ss --get-survey.
+    public DbSet<Survey>         Surveys         => Set<Survey>();
+    public DbSet<SurveyQuestion> SurveyQuestions => Set<SurveyQuestion>();
+
     protected override void OnModelCreating(ModelBuilder b)
     {
         base.OnModelCreating(b);
@@ -2252,6 +2258,34 @@ public class StreetSamuraiDbContext : DbContext
                 .IsRequired(false);
             e.HasIndex(x => x.UniverseId);
             e.HasIndex(x => x.EntityId);
+        });
+
+        b.Entity<Survey>(e =>
+        {
+            e.ToTable("Surveys");
+            e.HasKey(x => x.Id);
+            e.Property(x => x.Id).HasDefaultValueSql("NEWSEQUENTIALID()");
+            e.Property(x => x.Slug).HasMaxLength(200).IsRequired();
+            e.Property(x => x.Title).HasMaxLength(500).IsRequired();
+            e.Property(x => x.Status).HasMaxLength(20).IsRequired().HasDefaultValue("Open");
+            e.Property(x => x.CreatedAt).HasDefaultValueSql("GETUTCDATE()");
+            e.HasIndex(x => x.Slug).IsUnique();
+            e.HasIndex(x => x.UniverseId);
+            e.HasMany(x => x.Questions).WithOne(x => x.Survey)
+                .HasForeignKey(x => x.SurveyId).OnDelete(DeleteBehavior.Cascade);
+        });
+
+        b.Entity<SurveyQuestion>(e =>
+        {
+            e.ToTable("SurveyQuestions");
+            e.HasKey(x => x.Id);
+            e.Property(x => x.Id).HasDefaultValueSql("NEWSEQUENTIALID()");
+            e.Property(x => x.QuestionKey).HasMaxLength(20).IsRequired();
+            e.Property(x => x.QuestionType).HasMaxLength(50).IsRequired().HasDefaultValue("Custom");
+            e.Property(x => x.Title).HasMaxLength(500).IsRequired();
+            e.Property(x => x.OptionsJson).IsRequired().HasDefaultValue("[]");
+            e.Property(x => x.ApplyStatus).HasMaxLength(20).IsRequired().HasDefaultValue("Pending");
+            e.HasIndex(x => x.SurveyId);
         });
     }
 

@@ -381,6 +381,18 @@ if (args.Contains("--validate-nouns"))
     return;
 }
 
+// CLI mode: survey management.
+//   ss --list-surveys [--status Open|Completed]
+//   ss --get-survey --slug <slug>
+if (args.Contains("--list-surveys") || args.Contains("--get-survey"))
+{
+    var cliBuilder = WebApplication.CreateBuilder(args);
+    cliBuilder.Services.AddStreetSamuraiServices();
+    var cliApp = cliBuilder.Build();
+    Environment.ExitCode = await SurveyCli.RunAsync(args, cliApp.Services);
+    return;
+}
+
 // CLI mode: backfill BeatEntityMentions — index which entity names appear in
 // each beat so entity-update staleness propagation works.
 //   ss --scan-entity-mentions
