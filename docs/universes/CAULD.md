@@ -176,8 +176,26 @@ Some Spheres have a word for people who simply evaporate without trace. The Caul
 reciprocal record. The origin Sphere has no word for the mechanism.
 
 Famous disappearances, unsolved vanishings, persons who were never found — these are the
-shadow of the Cauld's appetite on every Sphere it can reach. The people taken do not choose.
-They are conscripted into the war or processed into the supply chain.
+shadow of the Cauld's appetite on every Sphere it can reach.
+
+**The Cauld's population is not primarily abductees.** The Cauld is a civilization with its
+own people, born here, who have never been anywhere else. The piercing mechanism is a
+supplement, not the foundation. What it supplies specifically:
+
+- **Conscripts** — military top-up when volunteer intake is insufficient; brought through
+  and sworn into service; their service record does not note the origin Sphere
+- **Slaves** — household labor, skilled workers, servants; taken to order or as opportunity
+  presented; held in House territory
+- **Forced marriages** — the witnessed pierce; a loyalist who has earned enough standing
+  with the Liturgy may request a directed gift; a person from another Sphere selected through
+  Scrying, taken, presented as bestowed
+
+**Loyalists receive gifts.** The reward structure for genuine loyalty to a House and to the
+Liturgy includes not only the Gifted Ceremony and Relics but access to the piercing mechanism
+as a patron benefit. A sufficiently loyal and sufficiently senior House figure may be granted,
+as acknowledgment of their service: a conscript soldier for their command, a skilled worker
+for their estate, a person they selected from another world. The Liturgy administers all of
+it as bestowal. The loyalty structure and the piercing mechanism are the same system.
 
 **Witnessed piercing — the directed gift:** The worst use of the capability, and not uncommon
 among senior House members with the right Liturgy standing. A House member sees a person
@@ -351,21 +369,21 @@ and current posting. Distinguished from conscripts by their access to Scried wea
 reassignability across fronts, and their eligibility for Transmutation — which conscripts are
 not offered.
 
-**Where Myrmidons come from:** The Liturgy pierces the membrane on a House's behalf and takes
-people from other Spheres. The House processes them into service. The oath is administered
-after arrival — in the chamber, or in the days that follow, before the new soldier has enough
-language to understand exactly what they are swearing or enough context to know what refusing
-would mean. The service record opens. The name of the origin Sphere is not in it.
+**Most Myrmidons are Cauld-born.** The Cauld is a living civilization with its own population
+— people born here, raised here, who swore an oath to a House because that was the life they
+chose or the best option available to them. The majority of Myrmidon service records reflect
+this. The oath is genuine. The loyalty is real.
 
-The public story is that Myrmidons are loyal volunteers who sought out House service. Some are.
-The mechanism that supplies the others is not discussed. Both kinds of Myrmidon stand in the
-same formation, carry the same weapons, and are tracked in the same record system. The Houses
-do not distinguish them in their paperwork. The distinction lives only in what the soldier
-knows about how they arrived, and most soldiers who know this have decided not to say it.
+**Some Myrmidons were taken.** When a House needs to supplement its military numbers — after
+a costly campaign, before a planned offensive, when volunteer intake is low — the Liturgy can
+pierce the membrane on that House's behalf and bring soldiers through. The oath is administered
+after arrival, before the new conscript has enough language to understand exactly what they are
+swearing or enough context to understand what refusing would mean. The service record opens.
+The name of the origin Sphere is not in it. They stand in the same formation as the people
+who chose to be there.
 
-The Gifted Ceremony as a loyalty instrument reads differently with this context: the Houses
-are not rewarding the loyal. They are measuring whether the person they took has been
-sufficiently reconciled to staying.
+The Houses do not distinguish pierced conscripts from willing volunteers in their paperwork.
+The distinction lives only in what the soldier knows about how they arrived.
 
 **Death is permanent.** A Myrmidon who dies does not return. Their service record closes.
 The soldier is gone.
