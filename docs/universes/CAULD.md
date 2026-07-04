@@ -78,52 +78,11 @@ coalition alignments. The Warrior Kings who do remember stay quiet.
 
 ## Scrying
 
-**The central technology of the Cauld. It does two things. The Houses know one.**
-
-**Observation:** The transcription of another Sphere's knowledge into the Cauld. A weapon
-design. A method of working metal. A cipher system. Only the knowledge of form crosses;
-the material does not. The design is pressed into local stock and built here. The engineers
-of the source Sphere never know their work was copied. This is the Scrying the Houses teach,
-the Scrying they fight wars over, the Scrying they explain to recruits.
-
-**Extraction:** Scrying can also pull physical matter through the boundary — objects,
-substances, people. The extraction is one-way and silent from the origin Sphere's perspective:
-the thing is simply gone. No trace. No body. No explanation the originating world can produce.
-A cannon disappears from a garrison. A person steps around a corner and does not return. The
-Cauld catalogues what it pulls with a naming convention that records provenance without
-acknowledging mechanism.
-
-This is the Scrying the Houses do not fully understand, do not discuss at coalition tables, and
-in at least three documented cases have officially denied performing.
-
-**The Colchester naming convention:** Objects extracted from other Spheres are catalogued by
-origin — the Sphere-location and Sphere-date of the extraction:
-
-> **Colchester 1648** — a siege cannon of specific bore and cast, extracted from a garrison
-> in a Sphere where it was later recorded as missing without explanation. The Cauld catalogues
-> it as EXTR-1648-GB-14. The world it came from has an unsolved account entry for a cannon
-> that was never found. The name is all that remains of its origin. The Cauld has the cannon.
-> That Sphere has the rhyme soldiers sang about it falling.
-
-The extracted object is named for where it came from. The Cauld treats the theft as a
-provenance record.
-
-**The missing-persons consequence:** In origin Spheres, extraction reads as unexplained
-disappearance. Bodies are not recovered because the person was removed, not killed. The
-arithmetic is notable: more people vanish than bodies are found, by a margin no misadventure
-rate accounts for. Some cultures in some Spheres have a word for people who simply evaporate.
-The Cauld keeps no reciprocal record. The origin Sphere has no word for the mechanism.
-
-Famous disappearances, recovered relics, missing persons who were never found — these are the
-shadow of the Cauld's appetite on every Sphere it can reach. The people taken do not choose.
-They are conscripted. They are useful. They are processed into the war.
-
-**The Gifted matter supply:** The Liturgy's Gifted matter — the substance used in the Gifted
-Ceremony and the material from which Relics are wrought — does not appear in any House Scrying
-catalogue, observation or extraction. Whether the Liturgy extracts it from Spheres the Houses
-cannot reach, or whether it arrives through a mechanism that predates Scrying entirely, is the
-question behind all the other questions. The Liturgy calls it Gifted because their doctrine
-holds it was given to them. By whom, from where, by what mechanism — the Liturgy does not explain.
+**The central technology of the Cauld.** Looking through the membrane between Spheres —
+seeing what is on the other side and transcribing the knowledge here. A weapon design. A method
+of working metal. A cipher system. The membrane stays intact. Only the knowledge of form
+crosses; the material does not. The design is pressed into local stock and built here. The
+engineers of the source Sphere never know their work was copied.
 
 **The physical substrate:** The Scrying apparatus projects a tight-beam infrared signal,
 reflected off the crystal cloud formations that layer the upper atmosphere of the Cauld.
@@ -140,30 +99,84 @@ ORIGIN: Scry-derived / catalogue SCRY-1918-DE-31
         Sphere 31 — Maschinenpistole 18/I
         Theodor Bergmann Waffenfabrik, Suhl, Deutschland
         Sphere date of manufacture: 1918 CE
-
-ORIGIN: Scry-extracted / catalogue EXTR-1648-GB-14
-        Sphere 14 — Colchester 1648 (garrison cannon)
-        Colchester, England
-        Sphere date of extraction: 1648 CE
 ```
 The data block appears. The character does NOT explain it. Trust the reader.
 
-**Local materials (observation-Scried):** Weapons Scried by observation are manufactured
-in-world from local materials — only the design crossed. No material crosses in observation
-Scrying. Only the idea.
+**Local materials:** Weapons Scried by observation are manufactured in-world from local
+materials — only the design crossed. Nothing physical moves in standard Scrying.
 - **Alloy 41** = Cauld's designation for steel.
 - **Yggdra-wood** stocks (yggdra = common hardwood, as ubiquitous as oak; no cosmological
   significance).
 
+---
+
+## Piercing the Membrane
+
+**A different act. A rarer capability. A harder thing.**
+
+Standard Scrying looks through the membrane. Piercing the membrane reaches through it and
+takes what is on the other side. The gun sitting on the shelf in the armory of another Sphere
+— Scrying lets you see it and copy its design; piercing lets you take it off the shelf and
+bring it through.
+
+The membrane stays intact during Scrying. Piercing breaches it, briefly, locally, for
+the duration of the extraction. The act is one-way: the object or person arrives in the Cauld;
+nothing crosses back; the breach closes. The origin Sphere has no record of anything happening.
+It has only the absence where the thing was.
+
+**The Colchester naming convention:** Objects acquired by piercing are catalogued by
+origin — the Sphere-location and Sphere-date of the acquisition:
+
+> **Colchester 1648** — a siege cannon of specific bore and cast, taken from a garrison
+> in a Sphere where it was later recorded as unaccounted for. The Cauld catalogues it as
+> PIERCE-1648-GB-14. The world it came from has an open account entry for a cannon that
+> was never found. The name is all that remains of its origin. The Cauld has the cannon.
+> That Sphere has the nursery rhyme soldiers sang about it falling.
+
+The pierced object is named for where it came from. The Cauld treats the taking as a
+provenance record.
+
+**Pierce notation:**
+```
+ORIGIN: Membrane-pierced / catalogue PIERCE-1648-GB-14
+        Sphere 14 — Colchester 1648 (garrison cannon)
+        Colchester, England
+        Sphere date of acquisition: 1648 CE
+```
+
+**The missing-persons consequence:** When the pierced thing is a person, the origin Sphere
+reads it as an unexplained disappearance. No body is recovered because no body remained —
+the person came through. The arithmetic in Spheres with sustained Cauld interest is notable:
+far more people vanish than bodies are found, by a margin no misadventure rate accounts for.
+Some Spheres have a word for people who simply evaporate without trace. The Cauld keeps no
+reciprocal record. The origin Sphere has no word for the mechanism.
+
+Famous disappearances, unsolved vanishings, persons who were never found — these are the
+shadow of the Cauld's appetite on every Sphere it can reach. The people taken do not choose.
+They are conscripted into the war or processed into the supply chain.
+
+**Who can pierce:** Not every House with a Scrying installation has piercing capability.
+Observation Scrying is the standard. Piercing requires more — a different calibration of the
+apparatus, a practitioner who can hold the breach, or access to a thin-membrane site where
+the barrier is weak enough to work with. The capability exists. It is not universal. Houses
+that have it do not publicize this.
+
+**The Gifted matter supply:** The Liturgy's Gifted matter — the substance used in the Gifted
+Ceremony and the material from which Relics are wrought — does not appear in any House Scrying
+or Piercing catalogue. Whether the Liturgy pierces Spheres the Houses cannot reach, or whether
+the Gifted matter arrives through a mechanism that predates both Scrying and Piercing, is the
+question behind all the other questions. The Liturgy calls it Gifted because their doctrine
+holds it was given to them. By whom, from where, by what mechanism — the Liturgy does not explain.
+
 **Hard bans:**
-- Do not explain Scrying at length in prose. The data block IS the explanation.
-- Do not have characters acknowledge or credit the originating Sphere as a living world with
-  people who noticed. To them, a catalogue number is a catalogue number.
-- Characters do not use the word "theft." The naming convention records the origin without
-  naming what was done. The Cauld has no moral framework for this because it predates the moral
-  frameworks currently in use.
-- Do not show the Cauld coordinating with an origin Sphere or seeking consent. The extraction
-  is silent and one-way, always.
+- Do not explain Scrying or Piercing at length in prose. The notation block IS the explanation.
+- Do not have characters acknowledge the originating Sphere as a living world whose people
+  noticed the loss. To the Cauld, a catalogue number is a catalogue number.
+- Characters do not use the word "theft" for piercing. The naming convention records the origin
+  without naming what was done. The Cauld has no moral framework for this because the practice
+  predates the moral frameworks currently in use.
+- Do not show the Cauld coordinating with an origin Sphere or seeking consent. Piercing is
+  silent and one-way, always.
 
 ---
 
@@ -690,10 +703,10 @@ No House owns the Old Rite. This is part of why soldiers practice it.
 
 | Term | Meaning |
 |---|---|
-| **Scrying** | Two functions: *observation* (design copied, built locally) and *extraction* (physical matter or persons removed from origin Sphere) |
+| **Scrying** | Looking through the membrane between Spheres; design is copied and built locally; the membrane stays intact; nothing physical crosses |
+| **Piercing the membrane** | A distinct, rarer act: reaching through the membrane and taking a physical object or person from another Sphere; the origin Sphere gets an unexplained disappearance |
 | **Sphere** | A parallel Earth; a parallel history |
-| **Extraction** | Scrying's second function: physical removal of matter or persons from an origin Sphere; catalogued by Colchester naming convention; the origin Sphere has no explanation for the loss |
-| **Colchester naming** | Convention for extracted objects: named for the origin-Sphere location and date (e.g., *Colchester 1648*); a provenance record that does not acknowledge the mechanism of acquisition |
+| **Colchester naming** | Convention for objects acquired by piercing: named for the origin-Sphere location and date (e.g., *Colchester 1648*); catalogue prefix PIERCE-; a provenance record that does not acknowledge the mechanism |
 | **Myrmidon** | Professional soldier; House service record |
 | **Champion** | Soldier fully Transmuted past House designation — named, not designated |
 | **Transmutation** | Analytical term for the biological process; not used in casual in-world speech |
