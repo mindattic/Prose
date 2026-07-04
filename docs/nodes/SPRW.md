@@ -34,8 +34,9 @@ Play this straight, not as tragedy: the limitation is the condition, not the fai
 followed by contact. The first movement is the three-answer ambiguity (person / crew / machine). The
 journey resolves it at the source. The long final movement is the two-minds conversation: what it is
 to have a witness six thousand miles up who can hold thirty-seven years without fatigue and cannot
-feel a floor flex underfoot. It ends on an open contract line — `RATE: OPEN` — and a man on a
-balcony who has learned to stand in the cold air and keep his count.
+feel a floor flex underfoot. It ends on an open contract line — `RATE: OPEN` — left standing at
+his desk after he types his rate and clears it, and a man opening the first of six coordinates
+to begin fieldwork. (Desk ending per §5 rule 10, revised 2026-07-03; supersedes the balcony draft.)
 
 **What the story is about:** a man who built his entire life around never going anywhere, and the
 non-human intelligence that needed exactly his kind of attention at the centimeter scale.
@@ -68,8 +69,9 @@ The Zone 4 recognition is the secret second reason he takes the case. He already
 
 **GAD arc:**
 - Beat 1: Pill case on desk. Takes one after accepting the contract.
-- Beat 12: Takes a pill before the failed door attempt. Still can't go. Goes back upstairs. Next
-  morning: packs, takes another pill. Goes through.
+- Beat 12 (**RETIRED-BY-REVISION 2026-07-04:** the failed-door attempt is not in the realized text):
+  realized arc is the packing-morning pill — he takes one from the case and books the flight in the
+  same motion, goes through with no aborted first attempt (beat 4110, added 2026-07-04).
 - Beat 14: Door seals. Notepad out. No pill. **Work is the coping tool that functions under pressure.**
 - Post-Mombasa: field-visit frequency rises; transit time 111th-floor-to-street shortens. The cure
   is not bravery — it is a slow widening of the threshold of "manageable," rendered behaviorally and
@@ -222,7 +224,7 @@ reads (person/crew/machine); Makena's geometry ("this couldn't have survived re-
 the third one."**
 
 ### Movement II — The Source (beats 12–20)
-The journey. Three-day deliberation; the failed door, then through it; the descent; the sealed pod
+The journey. Three-day deliberation; the packing-morning pill, then through the door; the descent; the sealed pod
 where the **notepad, not the pill**, carries him; East Africa; Tadesse and the morning rail-temp
 ritual; the mass driver at geological scale; the four launch logs from a satellite "inactive since
 2187"; the ascending objects; the first contact attempt — an open line, then nothing; **he names

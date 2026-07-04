@@ -494,7 +494,7 @@ the black spot, the nothing that means everything.
 | Ch | Slug | Title | POV | Note |
 |----|------|-------|-----|------|
 | 11 | the-cleanup-list | The Cleanup List | Seto | Contact calibrated; access closed |
-| 12 | managed-liability | Managed Liability | Amara | Ciro's first editorial contact; razor trimmed to static presence |
+| 12 | managed-liability | Managed Liability | Seto | **CUT-BY-REVISION (2026-07-04):** the Amara/Ciro editorial-contact scene described here was never written. Ships as Seto POV, continuing the manifest read from The Cleanup List (no Ciro, no editorial contact on-page). |
 | 13 | the-move | The Move | Amara | First physical Amara/Seto meeting; drive handoff |
 | 14 | sealed-system | Sealed System | Seto | Network closure sweep; Seto reads all 847 names through the bleed |
 | 15 | everything-she-carries | Everything She Carries | Amara | Theodora recalibration horror; Amara loses segment |
