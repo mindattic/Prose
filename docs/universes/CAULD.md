@@ -84,6 +84,16 @@ of working metal. A cipher system. The membrane stays intact. Only the knowledge
 crosses; the material does not. The design is pressed into local stock and built here. The
 engineers of the source Sphere never know their work was copied.
 
+**What citizens believe:** This is all Scrying is — observation and reproduction. You look
+into another world, you understand what you see, you build it here from local materials. The
+Liturgy is revered specifically because they appear to do this at a level no House apparatus
+can match: they observe the Ceremony's Gifted matter, they observe the Relic designs, and they
+*manifest* what they saw with a precision that reads as divine. That is what the public
+believes. That is the source of the Liturgy's sacred standing — they are the people who can
+bridge the gap between seeing and making.
+
+The reality is that they do not reproduce. They take.
+
 **The physical substrate:** The Scrying apparatus projects a tight-beam infrared signal,
 reflected off the crystal cloud formations that layer the upper atmosphere of the Cauld.
 How this penetrates the boundary between Spheres is not discussed in-world — it simply works,
@@ -201,6 +211,19 @@ and Relics (objects wrought from Gifted matter that enhance capability without i
 do not fight wars. They do not take territory. They administer ceremonies, distribute relics,
 and maintain the doctrine of gift-and-loyalty that the Houses have built their entire
 legitimacy onto.
+
+**The basis of their reverence — and what it actually rests on:** Citizens understand Scrying
+as observation: you look into another world, you see a design, you build it here. The Liturgy
+is revered because they appear to be the supreme practitioners of this — the Gifted Ceremony,
+the Relics, all of it attributed to their extraordinary ability to observe and reproduce at a
+level no House can replicate. Citizens do not question how the Gifted matter is produced. They
+assume it is produced — that a Lector's mastery is the reason the Ceremony works, that the
+Relics are the physical fruit of sacred expertise applied to what was observed.
+
+None of this is what the Liturgy does. The Gifted matter was not reproduced from observation.
+The Relics were not manufactured here from a Scried design. They were taken from somewhere
+else and brought through. The reverence is real. The capability being revered is not what
+citizens think it is.
 
 **The Liturgy is not a House organ.** This is the thing the Houses cannot say clearly. The
 Houses present the Gifted Ceremony as their own loyalty instrument — they determine who is
