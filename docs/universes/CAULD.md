@@ -33,10 +33,10 @@ cities whose soldiers carry bolt-action rifles. Champions who fought wars that e
 hundred years ago, still present, still acting. Monsters that predate civilization still eating
 soldiers off a WWI-style causeway. Anachronism is not the aesthetic. It is the physics.
 
-**The scientific paradigm: loyalty rewarded with alien transformation.** The Houses do not
+**The scientific paradigm: loyalty rewarded with Gifted transformation.** The Houses do not
 call it genetics. They call it the Gifted Ceremony — a sacred rite administered by the Liturgy,
 awarded to those who have proven their loyalty. What is actually happening is directed biological
-change: alien material introduced into a living body, guided by Liturgy practitioners (Lectors),
+change: Gifted matter introduced into a living body, guided by Liturgy practitioners (Lectors),
 producing controlled physical ascendance over time. Beautiful when done correctly. Catastrophic
 when not. Monster Meat is the ungoverned version of the same phenomenon. The Liturgy controls
 who receives the ceremony. The Houses believe they do. This gap is the load-bearing secret of
@@ -78,15 +78,52 @@ coalition alignments. The Warrior Kings who do remember stay quiet.
 
 ## Scrying
 
-**The central technology of the Cauld.**
+**The central technology of the Cauld. It does two things. The Houses know one.**
 
-Observation of a parallel Earth — another Sphere, another history — and the transcription of
-what is found there. A weapon design. A method of working metal. A cipher system. Nothing
-crosses the boundary between Spheres; only the knowledge of form does, pressed into local
-materials and built here.
+**Observation:** The transcription of another Sphere's knowledge into the Cauld. A weapon
+design. A method of working metal. A cipher system. Only the knowledge of form crosses;
+the material does not. The design is pressed into local stock and built here. The engineers
+of the source Sphere never know their work was copied. This is the Scrying the Houses teach,
+the Scrying they fight wars over, the Scrying they explain to recruits.
 
-This is why the Cauld looks medieval and fights with rifles: the Houses control which Spheres
-they can observe and what designs they can build. The engineers of the source Sphere never know.
+**Extraction:** Scrying can also pull physical matter through the boundary — objects,
+substances, people. The extraction is one-way and silent from the origin Sphere's perspective:
+the thing is simply gone. No trace. No body. No explanation the originating world can produce.
+A cannon disappears from a garrison. A person steps around a corner and does not return. The
+Cauld catalogues what it pulls with a naming convention that records provenance without
+acknowledging mechanism.
+
+This is the Scrying the Houses do not fully understand, do not discuss at coalition tables, and
+in at least three documented cases have officially denied performing.
+
+**The Colchester naming convention:** Objects extracted from other Spheres are catalogued by
+origin — the Sphere-location and Sphere-date of the extraction:
+
+> **Colchester 1648** — a siege cannon of specific bore and cast, extracted from a garrison
+> in a Sphere where it was later recorded as missing without explanation. The Cauld catalogues
+> it as EXTR-1648-GB-14. The world it came from has an unsolved account entry for a cannon
+> that was never found. The name is all that remains of its origin. The Cauld has the cannon.
+> That Sphere has the rhyme soldiers sang about it falling.
+
+The extracted object is named for where it came from. The Cauld treats the theft as a
+provenance record.
+
+**The missing-persons consequence:** In origin Spheres, extraction reads as unexplained
+disappearance. Bodies are not recovered because the person was removed, not killed. The
+arithmetic is notable: more people vanish than bodies are found, by a margin no misadventure
+rate accounts for. Some cultures in some Spheres have a word for people who simply evaporate.
+The Cauld keeps no reciprocal record. The origin Sphere has no word for the mechanism.
+
+Famous disappearances, recovered relics, missing persons who were never found — these are the
+shadow of the Cauld's appetite on every Sphere it can reach. The people taken do not choose.
+They are conscripted. They are useful. They are processed into the war.
+
+**The Gifted matter supply:** The Liturgy's Gifted matter — the substance used in the Gifted
+Ceremony and the material from which Relics are wrought — does not appear in any House Scrying
+catalogue, observation or extraction. Whether the Liturgy extracts it from Spheres the Houses
+cannot reach, or whether it arrives through a mechanism that predates Scrying entirely, is the
+question behind all the other questions. The Liturgy calls it Gifted because their doctrine
+holds it was given to them. By whom, from where, by what mechanism — the Liturgy does not explain.
 
 **The physical substrate:** The Scrying apparatus projects a tight-beam infrared signal,
 reflected off the crystal cloud formations that layer the upper atmosphere of the Cauld.
@@ -103,19 +140,30 @@ ORIGIN: Scry-derived / catalogue SCRY-1918-DE-31
         Sphere 31 — Maschinenpistole 18/I
         Theodor Bergmann Waffenfabrik, Suhl, Deutschland
         Sphere date of manufacture: 1918 CE
+
+ORIGIN: Scry-extracted / catalogue EXTR-1648-GB-14
+        Sphere 14 — Colchester 1648 (garrison cannon)
+        Colchester, England
+        Sphere date of extraction: 1648 CE
 ```
 The data block appears. The character does NOT explain it. Trust the reader.
 
-**Local materials:** The weapon is manufactured in-world from local materials — only the design
-was Scried. No material crosses Spheres. Only the idea.
+**Local materials (observation-Scried):** Weapons Scried by observation are manufactured
+in-world from local materials — only the design crossed. No material crosses in observation
+Scrying. Only the idea.
 - **Alloy 41** = Cauld's designation for steel.
 - **Yggdra-wood** stocks (yggdra = common hardwood, as ubiquitous as oak; no cosmological
   significance).
 
 **Hard bans:**
-- Do not explain Scrying at length in prose. The label IS the explanation.
-- Do not have characters acknowledge or credit the originating Sphere. To them it is a catalogue number.
-- Do not frame it as theft. The originating Sphere is unaffected and unaware.
+- Do not explain Scrying at length in prose. The data block IS the explanation.
+- Do not have characters acknowledge or credit the originating Sphere as a living world with
+  people who noticed. To them, a catalogue number is a catalogue number.
+- Characters do not use the word "theft." The naming convention records the origin without
+  naming what was done. The Cauld has no moral framework for this because it predates the moral
+  frameworks currently in use.
+- Do not show the Cauld coordinating with an origin Sphere or seeking consent. The extraction
+  is silent and one-way, always.
 
 ---
 
@@ -125,8 +173,8 @@ was Scried. No material crosses Spheres. Only the idea.
 House politics. They existed before the current Houses. They will exist after.
 
 The Liturgy's stated purpose is the identification of the loyal and the rewarding of that
-loyalty with the Gifts: the Gifted Ceremony (biological transformation via alien material)
-and Relics (physical objects of alien origin that enhance capability without infusion). They
+loyalty with the Gifts: the Gifted Ceremony (biological transformation via Gifted matter)
+and Relics (objects wrought from Gifted matter that enhance capability without infusion). They
 do not fight wars. They do not take territory. They administer ceremonies, distribute relics,
 and maintain the doctrine of gift-and-loyalty that the Houses have built their entire
 legitimacy onto.
@@ -139,13 +187,15 @@ speaks with the soldier, performs their own assessment, and sometimes declines t
 The House cannot override this. The Houses have agreed, over generations, to pretend this
 never happens.
 
-**The alien material.** The Catalysts used in the Gifted Ceremony are not Scried. They are
-not derived from any parallel Sphere's technology. They are alien — from outside the Sphere
-system entirely. The Liturgy has worked with this material for longer than the Houses have
-existed. Where it comes from is the Liturgy's deepest classified knowledge. The Houses have
-assumed it is Scried because the Houses assume everything useful is Scried. They are wrong.
-House Fornax refines and distributes what the Liturgy supplies. Fornax believes it understands
-what it is processing. It does not.
+**The Gifted matter.** The Catalysts used in the Gifted Ceremony do not appear in any House
+Scrying catalogue — observation or extraction. Whether the Liturgy acquires it from Spheres the
+Houses cannot reach, or whether it arrives through a mechanism that predates the Scrying apparatus
+entirely, is the question the Houses have never been able to press. The Liturgy has worked with
+this material for longer than the Houses have existed. Where it comes from is the Liturgy's
+deepest classified knowledge. The Houses have assumed it is Scried because the Houses assume
+everything useful is Scried. They are wrong about the mechanism. They may not be wrong about the
+source. House Fornax refines and distributes what the Liturgy supplies. Fornax believes it
+understands what it is processing. It does not.
 
 **The Liturgy's own theology: The Waiting.** The alien material is, in Liturgy doctrine, a
 covenant — a gift from a presence they call The Waiting. Not worshipped in the conventional
@@ -170,12 +220,12 @@ the Ceremony, which would mean losing the loyalty instrument they've built every
   Canon-level intermediaries; their decisions are final and are not explained
 
 **What the Houses know:** The Liturgy administers the Ceremony. Lectors are trusted. The
-alien-material origin of Catalysts is not confirmed or denied by the Liturgy, and the Houses
-have been too dependent to press the question.
+origin of the Gifted matter — the Catalysts — is not confirmed or denied by the Liturgy, and
+the Houses have been too dependent to press the question.
 
 **What the Houses don't know:** The Liturgy's actual assessment criteria for worthiness. The
-source of the alien material. The Silence's agenda. Whether the Lectors report back to the
-Silence on every House they visit, and what those reports contain.
+source and acquisition mechanism of the Gifted matter. The Silence's agenda. Whether the
+Lectors report back to the Silence on every House they visit, and what those reports contain.
 
 **Hard bans on the Liturgy:**
 - The Liturgy has no military force. They do not fight. They have never needed to.
@@ -247,7 +297,7 @@ discussion, the mechanical term is **Transmutation**. In the field, soldiers cal
 They call it "the dose." They call receiving it "being seen." They call dying from it "not
 being seen right."
 
-**What it actually is:** Infusion of alien material (Catalyst class; Xerum 525 primary) into
+**What it actually is:** Infusion of Gifted matter (Catalyst class; Xerum 525 primary) into
 a living person, producing controlled physical change over time. It is not consciousness
 transfer. It is not soul-movement. The body itself is changed; the person who entered the
 procedure is the same person afterward — altered, not replaced.
@@ -394,13 +444,14 @@ them. They do not negotiate with Houses the way Houses negotiate with each other
 
 ## Relics
 
-**Physical objects of alien origin distributed by the Liturgy to the loyal.**
+**Physical objects wrought from Gifted matter, distributed by the Liturgy to the loyal.**
 
 Relics are categorically distinct from Scried technology. A Scried weapon is a design copied
 from another Sphere and manufactured here from local materials. A Relic is an object that
-exists — that came from somewhere else entirely and was brought into the Cauld by the Liturgy.
-No one manufactures a Relic. No Relic has ever been reverse-engineered. The material they are
-made of does not correspond to any Sphere catalogue entry any House has ever produced.
+exists — brought into the Cauld by the Liturgy through a mechanism no House has been able to
+replicate or fully observe. No one manufactures a Relic. No Relic has ever been reverse-engineered.
+The material they are made of does not correspond to any Sphere catalogue entry — observation or
+extraction — any House has ever produced.
 
 **How they are distributed:** A Lector arriving to assess a soldier for the Gifted Ceremony
 may also carry Relics. The distribution of a Relic is a separate assessment from the
@@ -415,7 +466,7 @@ transformation of the Gifted Ceremony. They are enhancements, not replacements:
   physical danger they have not yet consciously perceived. Distributed to soldiers of proven
   loyalty at their first nomination for the Ceremony, or independently if the Lector
   determines they have earned this specific acknowledgment.
-- **The Binding Cord** — a braided length of alien fiber that adheres to a wound and seals
+- **The Binding Cord** — a braided length of Gifted fiber that adheres to a wound and seals
   it at a rate no field medicine explains. Collapses to a small coil when not in use.
   Distributed to Myrmidons who have demonstrated care for their unit's survival above their
   own advancement.
@@ -423,7 +474,7 @@ transformation of the Gifted Ceremony. They are enhancements, not replacements:
   perception of signals that apparatus cannot capture. Rare. Distributed to Scrying operators
   specifically. The Liturgy has very clear criteria for who receives this one and has never
   explained them to a House.
-- **The Meridian Clasp** — a small brooch of alien material that, worn against the skin,
+- **The Meridian Clasp** — a small brooch of Gifted matter that, worn against the skin,
   stabilizes the wearer's internal temperature during the acute first-infusion phase.
   Distributed alongside the Ceremony for subjects the Lector has determined are high-risk
   for thermal shock. Reduces but does not eliminate the 80% first-infusion mortality.
@@ -639,20 +690,23 @@ No House owns the Old Rite. This is part of why soldiers practice it.
 
 | Term | Meaning |
 |---|---|
-| **Scrying** | Observing another Sphere's technology and transcribing the design locally |
+| **Scrying** | Two functions: *observation* (design copied, built locally) and *extraction* (physical matter or persons removed from origin Sphere) |
 | **Sphere** | A parallel Earth; a parallel history |
+| **Extraction** | Scrying's second function: physical removal of matter or persons from an origin Sphere; catalogued by Colchester naming convention; the origin Sphere has no explanation for the loss |
+| **Colchester naming** | Convention for extracted objects: named for the origin-Sphere location and date (e.g., *Colchester 1648*); a provenance record that does not acknowledge the mechanism of acquisition |
 | **Myrmidon** | Professional soldier; House service record |
 | **Champion** | Soldier fully Transmuted past House designation — named, not designated |
 | **Transmutation** | Analytical term for the biological process; not used in casual in-world speech |
 | **The Gifted Ceremony** | In-world name for Transmutation; sacred rite administered by the Liturgy |
-| **Catalyst** | Class of alien substances used in the Ceremony; Xerum 525 is primary |
-| **Xerum 525** | Primary Catalyst (also: Red Mercury); alien origin; 80% first-infusion lethal |
-| **Relic** | Physical object of alien origin distributed by the Liturgy to the loyal; narrow specific function |
+| **Gifted matter** | The Liturgy's ceremonial term for the substance used in the Ceremony and the material of Relics; the Liturgy doctrine holds it was given to them; the acquisition mechanism is the Liturgy's deepest classified knowledge |
+| **Catalyst** | Class of Gifted matter used in the Ceremony; Xerum 525 is primary |
+| **Xerum 525** | Primary Catalyst (also: Red Mercury); Gifted matter; 80% first-infusion lethal |
+| **Relic** | Physical object wrought from Gifted matter, distributed by the Liturgy to the loyal; narrow specific function |
 | **The Liturgy** | Religious-scientific sect; administers the Ceremony and distributes Relics; outside House control |
 | **Lector** | Liturgy field practitioner; administers the Ceremony; assesses worthiness independently |
 | **Canon** | Senior Liturgy authority; oversees Lectors; assesses complex worthiness cases |
 | **The Silence** | Liturgy's governing body; never public; final authority |
-| **The Waiting** | Liturgy term for the source of the alien material; possibly The Prisoner; not confirmed |
+| **The Waiting** | Liturgy term for the source of the Gifted matter; possibly The Prisoner; not confirmed |
 | **Godkin** | Informal term for the deeply Transmuted; the ascendant end of the spectrum |
 | **Knight / Dame** | Formal Transmutation rank; Dame = female Knight; visibly ascendant; earned not appointed |
 | **Paladin** | Rank above Knight; significant ascendance; rare; stepping-stone toward Champion |
