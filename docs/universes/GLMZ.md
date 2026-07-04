@@ -403,16 +403,11 @@ non-propulsive altitude technology. Any reference to "anti-grav" in prose is an 
 
 **The Read** — genuine psionic ability; emerged early-to-mid 2100s. Real, present throughout
 the universe, and a recurring story element across multiple GLMZ strands. Readers perceive
-emotional state, surface cognition, and sometimes deeper intention from other people. Privacy
-is the primary social tension: you cannot keep secrets from a competent Reader. Psionics are
-not marginal — they appear in the fabric of daily GLMZ life and in key character roles.
+emotional state, surface cognition, and sometimes deeper intention from other people.
 
-**The Reach** — the dominant disinformation layer explaining The Schism. The AI cabal that
-actually caused The Schism blamed psionic manipulation to suppress knowledge of what they did.
-This manufactured scapegoating persists in 2226: some characters distrust Readers because of
-The Reach narrative. That distrust is *historically wrong* about The Schism — psionics are
-causally innocent. The privacy concern (a Reader can see what you're hiding) is real and
-separate from The Reach. Both coexist; do not collapse them into one.
+People distrust Psionics (Readers) and AIs. You cannot keep secrets from a competent Reader —
+that is the social tension. It's not fringe or marginal; it's a lived friction in daily GLMZ
+life and a recurring story element.
 
 ---
 
