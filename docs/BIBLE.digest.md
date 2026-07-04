@@ -8,7 +8,7 @@
 StreetSamurai is a canon-grounded, voice-disciplined story-generation engine that takes a
 one-line seed to a published, reader-reviewed, canon-consistent audiobook + manuscript **in any
 registered Universe** — with the human approving, not authoring, canon and voice changes. The
-flagship Universe is **GLMZ** (Greater Lake Michigan Zone, 2226, cyberpunk; the *Bushido Coda*); a
+flagship Universe is **GLMZ** (Great Lakes Metropolitan Zone, 2226, cyberpunk; the *Bushido Coda*); a
 second, **Fantasy/Steampunk**, is being stood up alongside it on the same engine. Every canon and
 story row belongs to exactly one Universe ([SS-LAW-15](#SS-§5)).
 
@@ -67,9 +67,11 @@ story row belongs to exactly one Universe ([SS-LAW-15](#SS-§5)).
    emitted by `GetLiteraryRulesPrompt()`.
 7. **No underscore-prefixed fields.** {#SS-LAW-7} Private fields are `camelCase` without the
    leading underscore.
-8. **Φ is QUANTA, never phi.** {#SS-LAW-8} *(GLMZ.)* The symbol Φ is the QUANTA currency symbol
-   (quantum compute-time), *never* the Greek letter phi. (Listed among the engine invariants for
-   historical id stability, but it is **GLMZ-universe content**, not an engine truth.)
+8. **Φ is QUANTA, never phi.** {#SS-LAW-8} *(GLMZ.)* The symbol Φ is the QUANTA currency symbol.
+   QUANTA is an allotment of computational power — divided among every citizen of Earth — that can
+   be saved, transferred as currency, or spent on actual computation. It is *never* the Greek letter
+   phi. (Listed among the engine invariants for historical id stability, but it is **GLMZ-universe
+   content**, not an engine truth.)
 15. **Every row belongs to exactly one Universe.** {#SS-LAW-15} Every canon/story root
    (`Entities`, `Nodes`, `Books`) carries a non-null `UniverseId`; all generation and retrieval
    is universe-scoped. An entity that must appear in two universes is **duplicated** (one row per
@@ -92,7 +94,7 @@ narrative-law block here when stood up:**
 12. **Kyle has a motorcycle.** {#SS-LAW-12} Used for distance travel. Default: matte black,
     unbranded, ground-level parking.
 13. **The Sable reveal sequence is fixed.** {#SS-LAW-13} Sable is a **mystery voice only** in all
-    BCODA chapters before Ch13 (The Offer). Her first in-person appearance is at Vey's Antiquity &
+    BCODA chapters before Ch13 (The Offer). Her first in-person appearance is at Antiquity &
     Stationary in the Faraday vault (Ch13): the AI-reveal and the confession *"Your contracts do
     not come from people."* Her appearance at the motorcycle funeral (Joy story) is post-Ch13 and
     is correct. Do not place Sable in-person before Ch13 under any circumstance.
@@ -105,7 +107,7 @@ narrative-law block here when stood up:**
 16. **Action beats carry thematic weight; contemplative beats have physical immediacy.** {#SS-LAW-16} An action beat that doesn't advance or complicate the story's central tension is stage business. A contemplative beat without a grounding sensory or physical anchor is abstraction. Both fail. *(Universal beat doctrine — applies to all universes.)*
 17. **Default QA is a logic sweep, not a vote panel.** {#SS-LAW-17} *(SS-A44.)* The canonical QA methodology for any story that changes or needs validation is a **logic & continuity sweep** across six dimensions: (1) causality chain, (2) knowledge states, (3) timeline, (4) plant/payoff ledger, (5) orphan references, (6) bible agreement. Findings are triaged **BLOCKER / MODERATE / MINOR** and fixed with minimal splices. Review panels and Legion votes are expensive — run ONLY when the user explicitly requests a vote/review/score in that conversation. The engine enforces this (voting gate, default OFF; explicit `--allow-votes` / `allowVotes:true` only). Canonical methodology: `docs/LOGIC.md`.
 18. **Character is defined by response, not circumstance.** {#SS-LAW-18} *(SS-A41.)* A character's wound (backstory circumstance) is the engine of motivation, not the character itself. Character is defined by how a person *responds* to circumstance — what choice they make, what they sacrifice, how they define themselves under pressure. A wound is background; the response to it is foreground and must be *earned* on the page. This applies to every universe: do not write backstory as characterisation; write choice as characterisation.
-19. **Death is permanent in the Fantasy universe.** {#SS-LAW-19} In Universe #2 (The Cauld), consciousness does not transfer between bodies. There is no Transmutation, no shell-cycle, no spark-state. A Myrmidon who dies is gone. The theological debate about what follows death (Bheur, the Holding) is unresolvable because no one returns to report. Prose must not imply otherwise: no character survives death in a new body, returns from Bheur as a living agent, or carries memories across a death boundary. Full world facts: `docs/universes/CAULD.md`.
+19. **Death is permanent in the Fantasy universe.** {#SS-LAW-19} In Universe #2 (The Cauld), consciousness does not transfer between bodies. There is no shell-cycle, no spark-state, no return from Bheur. A Myrmidon who dies is gone. Transmutation (guided Catalyst infusion) changes the body of the living person — it does not relocate consciousness; a Transmuted soldier who dies is gone like any other. The theological debate about what follows death (Bheur, the Holding) is unresolvable because no one returns to report. Prose must not imply otherwise: no character survives death in a new body, returns from Bheur as a living agent, or carries memories across a death boundary. Full world facts: `docs/universes/CAULD.md`.
 
 ## 9. Glossary {#SS-§9}
 
@@ -115,10 +117,11 @@ narrative-law block here when stood up:**
   global), so two CLIs — or two browser tabs — can target different universes simultaneously
   ("SwitchUniverse"). Engine terms below are universe-neutral; terms tagged *(GLMZ)* are GLMZ
   content.
-- **GLMZ** *(GLMZ)* — Greater Lake Michigan Zone (a.k.a. *The Glooms*); a 500-km
+- **GLMZ** *(GLMZ)* — Great Lakes Metropolitan Zone (a.k.a. *The Glooms*); a 500-km
   vertical megacity on the western shore of Lake Michigan, year 2226. Universe #1.
-- **Φ / QUANTA** *(GLMZ)* — the currency: one Φ = one second of certified error-corrected quantum
-  coherence. Never the Greek letter phi ([SS-LAW-8](#SS-§5)).
+- **Φ / QUANTA** *(GLMZ)* — the currency: an allotment of computational power issued to every
+  citizen of Earth; can be saved, transferred as currency, or spent on computation. Never the Greek
+  letter phi ([SS-LAW-8](#SS-§5)).
 - **Beat** — a discrete unit of story function (not a paragraph); the atom of prose + audio.
 - **Node** — a member of the typed story tree (SS-A43): **SeriesNode** groups stories;
   **StoryNode** is a single story arc — the unit generated, validated, reviewed, narrated,

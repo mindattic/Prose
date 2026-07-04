@@ -33,12 +33,14 @@ cities whose soldiers carry bolt-action rifles. Champions who fought wars that e
 hundred years ago, still present, still acting. Monsters that predate civilization still eating
 soldiers off a WWI-style causeway. Anachronism is not the aesthetic. It is the physics.
 
-**The scientific paradigm: Genetics as guided by Alchemy.** The Houses do not call it
-genetics. They call it Transmutation. But what they are doing is directed biological change —
-foreign Catalysts introduced into a living body, guided by certified practitioners, producing
-controlled physical ascendance over time. Beautiful when done correctly. Catastrophic when not.
-Monster Meat is the ungoverned version of the same phenomenon. The Houses monopolize the clean
-version as a loyalty instrument. Understanding this is understanding the world.
+**The scientific paradigm: loyalty rewarded with alien transformation.** The Houses do not
+call it genetics. They call it the Gifted Ceremony — a sacred rite administered by the Liturgy,
+awarded to those who have proven their loyalty. What is actually happening is directed biological
+change: alien material introduced into a living body, guided by Liturgy practitioners (Lectors),
+producing controlled physical ascendance over time. Beautiful when done correctly. Catastrophic
+when not. Monster Meat is the ungoverned version of the same phenomenon. The Liturgy controls
+who receives the ceremony. The Houses believe they do. This gap is the load-bearing secret of
+the Cauld's entire power structure. Understanding this is understanding the world.
 
 ---
 
@@ -117,6 +119,74 @@ was Scried. No material crosses Spheres. Only the idea.
 
 ---
 
+## The Liturgy
+
+**The religious-scientific sect that administers the Gifted Ceremony.** They exist outside
+House politics. They existed before the current Houses. They will exist after.
+
+The Liturgy's stated purpose is the identification of the loyal and the rewarding of that
+loyalty with the Gifts: the Gifted Ceremony (biological transformation via alien material)
+and Relics (physical objects of alien origin that enhance capability without infusion). They
+do not fight wars. They do not take territory. They administer ceremonies, distribute relics,
+and maintain the doctrine of gift-and-loyalty that the Houses have built their entire
+legitimacy onto.
+
+**The Liturgy is not a House organ.** This is the thing the Houses cannot say clearly. The
+Houses present the Gifted Ceremony as their own loyalty instrument — they determine who is
+worthy, they arrange the ceremony, they use it as a management tool. The reality: the
+Liturgy assesses worthiness independently. A House can nominate a soldier. The Lector arrives,
+speaks with the soldier, performs their own assessment, and sometimes declines to administer.
+The House cannot override this. The Houses have agreed, over generations, to pretend this
+never happens.
+
+**The alien material.** The Catalysts used in the Gifted Ceremony are not Scried. They are
+not derived from any parallel Sphere's technology. They are alien — from outside the Sphere
+system entirely. The Liturgy has worked with this material for longer than the Houses have
+existed. Where it comes from is the Liturgy's deepest classified knowledge. The Houses have
+assumed it is Scried because the Houses assume everything useful is Scried. They are wrong.
+House Fornax refines and distributes what the Liturgy supplies. Fornax believes it understands
+what it is processing. It does not.
+
+**The Liturgy's own theology: The Waiting.** The alien material is, in Liturgy doctrine, a
+covenant — a gift from a presence they call The Waiting. Not worshipped in the conventional
+sense. Acknowledged as the source of the material and, by extension, the source of all
+ascendance. Whether The Waiting and The Prisoner are the same entity, related entities, or
+entirely separate is unknown. The Liturgy has opinions on this they do not share with the
+Houses. The doctrine is internally consistent; it may also be completely wrong.
+
+**Outside House morality.** The Liturgy will assess worthiness in any person, regardless of
+House affiliation, rank, or whether they are Oathless. A conscript who demonstrates what the
+Liturgy calls loyalty — not House loyalty, but something the Lectors evaluate through their
+own criteria — is eligible for the Ceremony. The Houses find this doctrine destabilizing and
+have never been able to suppress it, because suppressing the Liturgy would mean suppressing
+the Ceremony, which would mean losing the loyalty instrument they've built everything on.
+
+**Liturgy hierarchy — functional, not hereditary:**
+- **Lector** — the field practitioner; travels between Houses; performs the Gifted Ceremony
+  and distributes Relics; assesses worthiness; cannot be commanded by any Warrior King or Seat
+- **Canon** — senior authority; interprets doctrine; oversees Lector assignments; assesses
+  complex worthiness cases the Lectors escalate
+- **The Silence** — the Liturgy's governing body; never appears publicly; communicates through
+  Canon-level intermediaries; their decisions are final and are not explained
+
+**What the Houses know:** The Liturgy administers the Ceremony. Lectors are trusted. The
+alien-material origin of Catalysts is not confirmed or denied by the Liturgy, and the Houses
+have been too dependent to press the question.
+
+**What the Houses don't know:** The Liturgy's actual assessment criteria for worthiness. The
+source of the alien material. The Silence's agenda. Whether the Lectors report back to the
+Silence on every House they visit, and what those reports contain.
+
+**Hard bans on the Liturgy:**
+- The Liturgy has no military force. They do not fight. They have never needed to.
+- No House has successfully placed an agent inside the Liturgy at Canon level or above.
+- The Liturgy does not comment on House politics. They arrive. They assess. They administer
+  or they don't. They leave.
+- Do not resolve The Waiting as The Prisoner or as anything else. The identification is
+  the Liturgy's open question, not the story's answer.
+
+---
+
 ## The Houses
 
 **Seven Houses.** Organized around control of Scrying installations and the people who operate
@@ -168,25 +238,41 @@ The soldier is gone.
 
 ---
 
-## Transmutation
+## Transmutation (The Gifted Ceremony)
 
-**The formal body-refinement procedure of the Houses.** Infusion of a Catalyst into a living
-person, producing controlled physical change over time. It is not consciousness transfer. It
-is not soul-movement. The body itself is changed; the person who entered the procedure is the
-same person afterward — altered, not replaced.
+**Two names for the same act.** In-world, the formal name is **the Gifted Ceremony** — the
+Liturgy's term, which the Houses have adopted because to reject the Liturgy's framing would
+be to reject the Liturgy's authority, and they cannot afford to do that. In analytical
+discussion, the mechanical term is **Transmutation**. In the field, soldiers call it neither.
+They call it "the dose." They call receiving it "being seen." They call dying from it "not
+being seen right."
 
-**Catalysts** — the class of substances used. Plural; different Catalysts produce different
+**What it actually is:** Infusion of alien material (Catalyst class; Xerum 525 primary) into
+a living person, producing controlled physical change over time. It is not consciousness
+transfer. It is not soul-movement. The body itself is changed; the person who entered the
+procedure is the same person afterward — altered, not replaced.
+
+**What it is officially framed as:** A sacred gift awarded by the Liturgy to those who have
+proven loyalty. The loyalty is real. The gift is real. The frame — that the transformation is
+divinely ordained rather than biologically induced — is the Liturgy's doctrine and the
+Houses' convenient fiction simultaneously. Both parties maintain it. Neither acknowledges the
+maintenance.
+
+**Catalysts** — the class of alien substances used. Plural; different Catalysts produce different
 transformation profiles at different speeds. **Xerum 525** (also called Red Mercury in some
 House catalogues) is the primary and most-studied. Others exist; their properties vary. All
-Catalysts are House-controlled and House-classified. In the field, soldiers call it none of
-these names. They call it "the dose."
+Catalysts are nominally House-controlled and House-classified, but the Liturgy is the actual
+source of the supply chain's upper end. In the field, soldiers call it none of these names.
+They call it "the dose."
 
-**Certified administration is mandatory.** Transmutation performed by an unqualified
-practitioner, at a wrong dose, in the wrong sequence, or from an unstable Catalyst produces
-not ascendance but catastrophic uncontrolled mutation — the body changes faster than it can
-adapt, and the result is physically enormous, grotesque, and lethal to everything nearby
-including the subject. The Houses execute unsanctioned Transmuters. Not for monopoly reasons
-alone: a botched infusion is a disaster in a populated area.
+**The Lector administers. No one else legitimately can.** Transmutation performed without a
+Liturgy Lector — by an unqualified practitioner, at a wrong dose, in the wrong sequence, or
+from an unstable Catalyst — produces not ascendance but catastrophic uncontrolled mutation.
+The body changes faster than it can adapt; the result is physically enormous, grotesque, and
+lethal to everything nearby including the subject. The Houses execute unsanctioned Transmuters.
+Not for monopoly reasons alone: a botched infusion is a disaster in a populated area. The
+Liturgy's deeper objection is doctrinal — administering the alien material without the
+assessment of worthiness is, in their framing, a desecration.
 
 **First infusion: 80% lethal.** Even administered correctly by a certified practitioner with
 pure Xerum 525, the body either accepts or it doesn't. Nothing predicts survival. The Houses
@@ -272,8 +358,11 @@ put down.
 - A Transmuted soldier who dies is gone. Transmutation does not circumvent SS-LAW-19.
 - The 80% who die on first infusion are dead. They do not survive in altered states.
 - Botched infusion survivors = bestial monstrosities; not stable, not loyal, not recoverable.
-- Do not make Catalyst origins explicit in prose. Where they come from is House-classified.
-  Whether Scried is classified. Treat them as things that work, unexplained.
+- Do not make Catalyst origins explicit in prose. Characters believe various things about the
+  origin; none of them are confirmed correct. Treat the Catalysts as things that work,
+  with a provenance that is actively suppressed.
+- In-world, no character calls it "Transmutation" in casual dialogue. It is "the Ceremony,"
+  "the dose," "being seen." Transmutation is the analytical term, not the lived vocabulary.
 
 ---
 
@@ -300,6 +389,59 @@ have accumulated past the point where any designation means anything.
 
 **Champions — the Queens on the board:** No House owns one. No House commands one. Houses court
 them. They do not negotiate with Houses the way Houses negotiate with each other.
+
+---
+
+## Relics
+
+**Physical objects of alien origin distributed by the Liturgy to the loyal.**
+
+Relics are categorically distinct from Scried technology. A Scried weapon is a design copied
+from another Sphere and manufactured here from local materials. A Relic is an object that
+exists — that came from somewhere else entirely and was brought into the Cauld by the Liturgy.
+No one manufactures a Relic. No Relic has ever been reverse-engineered. The material they are
+made of does not correspond to any Sphere catalogue entry any House has ever produced.
+
+**How they are distributed:** A Lector arriving to assess a soldier for the Gifted Ceremony
+may also carry Relics. The distribution of a Relic is a separate assessment from the
+assessment for the Ceremony — it can happen before, after, or instead of it. A soldier who
+is not deemed ready for the Ceremony may still receive a Relic. This is the Liturgy's
+acknowledgment that loyalty should be rewarded in degrees.
+
+**What Relics do:** Each has a specific, narrow, consistent function. None produce the broad
+transformation of the Gifted Ceremony. They are enhancements, not replacements:
+- **The Holdstone** — a smooth stone, palm-sized, that stays at slightly above body temperature
+  regardless of external conditions, and pulses with heat when the carrier is approaching
+  physical danger they have not yet consciously perceived. Distributed to soldiers of proven
+  loyalty at their first nomination for the Ceremony, or independently if the Lector
+  determines they have earned this specific acknowledgment.
+- **The Binding Cord** — a braided length of alien fiber that adheres to a wound and seals
+  it at a rate no field medicine explains. Collapses to a small coil when not in use.
+  Distributed to Myrmidons who have demonstrated care for their unit's survival above their
+  own advancement.
+- **The Vigil Glass** — a small lens that, held to the eye at a thin-membrane site, allows
+  perception of signals that apparatus cannot capture. Rare. Distributed to Scrying operators
+  specifically. The Liturgy has very clear criteria for who receives this one and has never
+  explained them to a House.
+- **The Meridian Clasp** — a small brooch of alien material that, worn against the skin,
+  stabilizes the wearer's internal temperature during the acute first-infusion phase.
+  Distributed alongside the Ceremony for subjects the Lector has determined are high-risk
+  for thermal shock. Reduces but does not eliminate the 80% first-infusion mortality.
+
+**What no one admits:** The Houses track Relic distribution more carefully than they track
+Ceremony nominations, because Relics reveal the Liturgy's independent assessment of their
+soldiers. A soldier receiving a Relic the House didn't request is a soldier the Liturgy has
+decided is worth watching. The Houses notice. The Houses do not ask the Liturgy to explain.
+They are afraid of the answer.
+
+**Hard bans on Relics:**
+- No Relic can be manufactured. No Relic has been reverse-engineered. Do not write a plot
+  where a House produces a Relic equivalent.
+- Relics do not work for disloyal carriers. This is documented, not understood. A soldier who
+  betrays their assessed loyalty finds the Holdstone cold and inert. This is the Liturgy's
+  only enforcement mechanism. It is sufficient.
+- A Relic taken by force from a loyal carrier still works for the original carrier. Whether
+  it works for the thief is inconsistently documented. The Liturgy does not comment on this.
 
 ---
 
@@ -499,11 +641,18 @@ No House owns the Old Rite. This is part of why soldiers practice it.
 |---|---|
 | **Scrying** | Observing another Sphere's technology and transcribing the design locally |
 | **Sphere** | A parallel Earth; a parallel history |
-| **Myrmidon** | Professional soldier; M-number designation |
-| **Champion** | Soldier fully Transmuted and Sphere-exposed past House designation — named, not designated |
-| **Transmutation** | Guided biological infusion of a Catalyst; produces controlled physical ascendance |
-| **Catalyst** | Class of substances used in Transmutation; Xerum 525 is primary |
-| **Xerum 525** | Primary Catalyst (also: Red Mercury); House-classified origin; 80% first-infusion lethal |
+| **Myrmidon** | Professional soldier; House service record |
+| **Champion** | Soldier fully Transmuted past House designation — named, not designated |
+| **Transmutation** | Analytical term for the biological process; not used in casual in-world speech |
+| **The Gifted Ceremony** | In-world name for Transmutation; sacred rite administered by the Liturgy |
+| **Catalyst** | Class of alien substances used in the Ceremony; Xerum 525 is primary |
+| **Xerum 525** | Primary Catalyst (also: Red Mercury); alien origin; 80% first-infusion lethal |
+| **Relic** | Physical object of alien origin distributed by the Liturgy to the loyal; narrow specific function |
+| **The Liturgy** | Religious-scientific sect; administers the Ceremony and distributes Relics; outside House control |
+| **Lector** | Liturgy field practitioner; administers the Ceremony; assesses worthiness independently |
+| **Canon** | Senior Liturgy authority; oversees Lectors; assesses complex worthiness cases |
+| **The Silence** | Liturgy's governing body; never public; final authority |
+| **The Waiting** | Liturgy term for the source of the alien material; possibly The Prisoner; not confirmed |
 | **Godkin** | Informal term for the deeply Transmuted; the ascendant end of the spectrum |
 | **Knight / Dame** | Formal Transmutation rank; Dame = female Knight; visibly ascendant; earned not appointed |
 | **Paladin** | Rank above Knight; significant ascendance; rare; stepping-stone toward Champion |
