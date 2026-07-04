@@ -124,25 +124,17 @@ the duration of the extraction. The act is one-way: the object or person arrives
 nothing crosses back; the breach closes. The origin Sphere has no record of anything happening.
 It has only the absence where the thing was.
 
-**The Colchester naming convention:** Objects acquired by piercing are catalogued by
-origin — the Sphere-location and Sphere-date of the acquisition:
+**The Colchester naming convention:** Objects acquired by piercing take the name of where
+they came from. Not catalogued — just called that. The name is what sticks because no one in
+the Cauld has a better one, and no one is going to write down how they got it.
 
 > **Colchester 1648** — a siege cannon of specific bore and cast, taken from a garrison
-> in a Sphere where it was later recorded as unaccounted for. The Cauld catalogues it as
-> PIERCE-1648-GB-14. The world it came from has an open account entry for a cannon that
-> was never found. The name is all that remains of its origin. The Cauld has the cannon.
-> That Sphere has the nursery rhyme soldiers sang about it falling.
+> in a Sphere where it was later recorded as unaccounted for. The world it came from has an
+> open account entry for a cannon that was never found. The name is all that remains of its
+> origin. The Cauld has the cannon. That Sphere has the nursery rhyme soldiers sang about it
+> falling.
 
-The pierced object is named for where it came from. The Cauld treats the taking as a
-provenance record.
-
-**Pierce notation:**
-```
-ORIGIN: Membrane-pierced / catalogue PIERCE-1648-GB-14
-        Sphere 14 — Colchester 1648 (garrison cannon)
-        Colchester, England
-        Sphere date of acquisition: 1648 CE
-```
+The object is named for where it came from. Nobody filed this. It just got called that.
 
 **The missing-persons consequence:** When the pierced thing is a person, the origin Sphere
 reads it as an unexplained disappearance. No body is recovered because no body remained —
@@ -706,7 +698,7 @@ No House owns the Old Rite. This is part of why soldiers practice it.
 | **Scrying** | Looking through the membrane between Spheres; design is copied and built locally; the membrane stays intact; nothing physical crosses |
 | **Piercing the membrane** | A distinct, rarer act: reaching through the membrane and taking a physical object or person from another Sphere; the origin Sphere gets an unexplained disappearance |
 | **Sphere** | A parallel Earth; a parallel history |
-| **Colchester naming** | Convention for objects acquired by piercing: named for the origin-Sphere location and date (e.g., *Colchester 1648*); catalogue prefix PIERCE-; a provenance record that does not acknowledge the mechanism |
+| **Colchester naming** | Informal naming pattern for objects acquired by piercing: called by the origin-Sphere location and date (e.g., *Colchester 1648*); not catalogued; the name is just what it gets called |
 | **Myrmidon** | Professional soldier; House service record |
 | **Champion** | Soldier fully Transmuted past House designation — named, not designated |
 | **Transmutation** | Analytical term for the biological process; not used in casual in-world speech |
