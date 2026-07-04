@@ -733,6 +733,16 @@ public class EmbeddingService
     {
         await EnsureSchemaAsync(ct);
         await using var db = await dbFactory.CreateDbContextAsync(ct);
+
+        // Hygiene: drop embedding rows for archived/inactive entities. Retrieval
+        // already joins on Entities.IsActive = 1, so these rows can never surface
+        // in a similarity hit — they are pure dead weight, and derived data is
+        // rebuildable, so a hard delete is safe here.
+        var purged = await db.Database.ExecuteSqlRawAsync(
+            "DELETE emb FROM dbo.EntityEmbeddings emb JOIN dbo.Entities ent ON ent.Id = emb.EntityId WHERE ent.IsActive = 0;", ct);
+        if (purged > 0)
+            log.LogInformation("ReembedCorpus: purged {Count} embedding row(s) for inactive entities.", purged);
+
         var entities = await db.Entities.AsNoTracking()
             .Where(e => e.IsActive)
             .Select(e => new { e.Id, e.Name, e.EntityType, e.Description })
