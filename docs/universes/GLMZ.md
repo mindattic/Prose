@@ -18,8 +18,7 @@ updated: 2026-07-04
 
 ## Setting
 
-**Year:** 2226. **Location:** GLMZ — Greater Lake Michigan Zone (also: *Meridian 88*, after the
-88th meridian; *The Glooms*, street vernacular). Formerly the U.S. Midwest. Population: ~58 million.
+**Year:** 2226. **Location:** GLMZ — Greater Lake Michigan Zone (also: *The Glooms*, street vernacular). Formerly the U.S. Midwest. Population: ~58 million.
 Chicago is the transit and commercial hub; the Lake itself is the geographic axis.
 
 The world is 200 years past coastal infrastructure collapse: New York, Boston, LA, Miami are
@@ -141,7 +140,11 @@ Scavs operate. Not a slum — a free-fire zone of opportunity and danger.
 underwater communities. Stories referencing communities under the Lake are incorrect.
 
 **Ferrocement wave:** Building heights increase toward the Lake. The closer to Chicago's
-core, the taller.
+core, the taller. Buildings over one mile high (5,280 feet / ~1,609m) are common in the inner
+zones — made possible by 22nd-century material science: ferrocrete composites bond materials
+that previously could not be structurally joined, enabling tensile and compressive loads
+no prior engineering could sustain. CorpoNation arcologies are the tallest structures of all,
+clearing even the supertall residential towers.
 
 **Space elevator** — visible over the southern horizon from GLMZ; operational; most residents
 stop noticing after a year.
@@ -150,7 +153,7 @@ stop noticing after a year.
 
 ## Social Structure
 
-**No police.** The Meridian Police Department dissolved 2208. Law enforcement is private:
+**No police.** The city police force dissolved 2208. Law enforcement is private:
 - **ACS (Arcturus Civil Security)** — dominant contractor; Tier 4 zones only
 - Below Tier 4: private crew security, CorpoNation guards, or nothing
 
@@ -396,18 +399,20 @@ non-propulsive altitude technology. Any reference to "anti-grav" in prose is an 
 
 ---
 
-## Psionics and The Reach
+## Psionics (The Read)
 
-**The Read (psionics)** — genuine psionic ability emerged early-to-mid 2100s. Real, rare,
-poorly understood. Treated as a social threat primarily for privacy reasons: you cannot keep
-secrets from a competent Reader.
+**The Read** — genuine psionic ability; emerged early-to-mid 2100s. Real, present throughout
+the universe, and a recurring story element across multiple GLMZ strands. Readers perceive
+emotional state, surface cognition, and sometimes deeper intention from other people. Privacy
+is the primary social tension: you cannot keep secrets from a competent Reader. Psionics are
+not marginal — they appear in the fabric of daily GLMZ life and in key character roles.
 
-**The Reach** — the dominant disinformation layer explaining The Schism. Blame was placed
-on psychics and psionic manipulation to suppress knowledge of what the AI cabal actually did.
-Two drivers of anti-psionic prejudice coexist: (1) genuine privacy threat from Reads, and
-(2) Reach-manufactured scapegoating. Psionics are causally innocent re: The Schism.
-Characters who hate psionics are not wrong about the privacy issue; they are wrong about
-The Schism.
+**The Reach** — the dominant disinformation layer explaining The Schism. The AI cabal that
+actually caused The Schism blamed psionic manipulation to suppress knowledge of what they did.
+This manufactured scapegoating persists in 2226: some characters distrust Readers because of
+The Reach narrative. That distrust is *historically wrong* about The Schism — psionics are
+causally innocent. The privacy concern (a Reader can see what you're hiding) is real and
+separate from The Reach. Both coexist; do not collapse them into one.
 
 ---
 
