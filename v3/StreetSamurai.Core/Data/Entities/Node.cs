@@ -232,6 +232,12 @@ public abstract class Node
     /// author can keep copies without relying on timestamps.</summary>
     public int Version { get; set; }
 
+    /// <summary>Published author / pen name shown on the title page and embedded
+    /// in docx document properties. Defaults to "MindAttic" (the pen name for
+    /// this story universe) when null or empty. Set per-node only if a story
+    /// needs a different attribution.</summary>
+    public string? Author { get; set; }
+
     public DateTime CreatedAt { get; set; } = DateTime.UtcNow;
     public DateTime UpdatedAt { get; set; } = DateTime.UtcNow;
 

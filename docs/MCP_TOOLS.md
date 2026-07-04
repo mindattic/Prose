@@ -11,7 +11,7 @@
 > All tools are MCP-prefixed `mcp__streetsamurai__<name>` by the client. Most return a
 > JSON string; the canon is the SQL database, scoped to the active Universe.
 
-**203 tools** across **30 tool families.**
+**206 tools** across **31 tool families.**
 
 ## Families
 
@@ -32,6 +32,7 @@
 | [Lore Triple](#lore-triple) | 7 |
 | [Narrative Science](#narrative-science) | 5 |
 | [Node](#node) | 33 |
+| [Noun Consistency](#noun-consistency) | 3 |
 | [Planning](#planning) | 6 |
 | [Plant Payoff](#plant-payoff) | 6 |
 | [Quality](#quality) | 11 |
@@ -1088,6 +1089,31 @@ Update a node's metadata fields. Pass only the fields you want to change — omi
 - `seed` (string, optional) — Generation seed (one-line premise). Omit to leave unchanged; pass empty string to clear.
 - `code` (string, optional) — Short author reference code (e.g. 'ATTE'). Uppercased; pass empty string to clear. Omit to leave unchanged.
 - `voiceId` (string, optional) — ElevenLabs or local TTS voice id. Omit to leave unchanged; pass empty string to clear.
+
+## Noun Consistency
+
+<sub>`NounConsistencyTools`</sub>
+
+### `add_deprecated_name`
+
+Register a deprecated noun rule. Any beat that contains 'deprecatedName' (whole-word, case-insensitive) in the target universe will be flagged by validate_nouns. Use when a named thing is renamed or retired. universeSlug defaults to 'glmz' when omitted.
+
+- `deprecatedName` (string, required) — The old/wrong name to flag in prose (e.g. 'VacCell', 'Rider').
+- `canonicalName` (string, required) — The correct name to use instead (e.g. 'Nit', 'Exo').
+- `notes` (string, optional) — Optional explanation (e.g. 'Renamed in SS-A38 when Rider job was retired').
+- `universeSlug` (string, optional) — Universe slug ('glmz' or 'fantasy'). Defaults to 'glmz'.
+
+### `list_deprecated_names`
+
+List all registered deprecated noun rules. Filter by universeSlug ('glmz' or 'fantasy') or omit for all universes.
+
+- `universeSlug` (string, optional) — Optional universe slug to filter ('glmz' or 'fantasy'). Omit for all.
+
+### `validate_nouns`
+
+Scan a node's prose beats for deprecated or renamed noun references. Returns ok:true when clean; ok:false with a violations list (beatNumber, deprecatedName, canonicalName, snippet) when stale names are found. Register rules first with add_deprecated_name.
+
+- `nodeIdOrSlug` (string, required) — Node slug or GUID to scan.
 
 ## Planning
 

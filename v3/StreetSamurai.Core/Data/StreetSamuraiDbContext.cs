@@ -62,6 +62,7 @@ public class StreetSamuraiDbContext : DbContext
                 case EntityStateEvent ev when ev.UniverseId == Guid.Empty: ev.UniverseId = target; break;
                 case CharacterReadModel rm when rm.UniverseId == Guid.Empty: rm.UniverseId = target; break;
                 case PlantPayoff pp when pp.UniverseId == Guid.Empty: pp.UniverseId = target; break;
+                case DeprecatedEntityName den when den.UniverseId == Guid.Empty: den.UniverseId = target; break;
                 case BeatServiceLog bsl when bsl.UniverseId == Guid.Empty: bsl.UniverseId = target; break;
                 case BeatModeLog bml when bml.UniverseId == Guid.Empty:    bml.UniverseId = target; break;
                 // Config rows: operational/shared keys are tagged with the SHARED sentinel so every
@@ -371,6 +372,10 @@ public class StreetSamuraiDbContext : DbContext
     // Import via ss --import-cover; generate via ss --generate-cover.
     public DbSet<MediaItem>              Media                   => Set<MediaItem>();
 
+    // Noun consistency — registry of renamed/retired noun references that must
+    // not appear in prose. Scanned by NounConsistencyService / validate_nouns MCP.
+    public DbSet<DeprecatedEntityName>   DeprecatedEntityNames   => Set<DeprecatedEntityName>();
+
     protected override void OnModelCreating(ModelBuilder b)
     {
         base.OnModelCreating(b);
@@ -469,6 +474,7 @@ public class StreetSamuraiDbContext : DbContext
             // tree-walk and enumeration filters stay cheap.
             e.HasIndex(x => x.IsWIP);
             e.HasIndex(x => x.UniverseId);
+            e.Property(x => x.Author).HasMaxLength(200);
             e.HasOne(x => x.ParentNode).WithMany(x => x.Children)
                 .HasForeignKey(x => x.ParentNodeId).OnDelete(DeleteBehavior.Restrict);
             // PreviousNode: null = gateway (first/standalone); set = sequel.
@@ -2230,6 +2236,22 @@ public class StreetSamuraiDbContext : DbContext
             e.HasIndex(x => new { x.FileRoot, x.RelativePath }).IsUnique();
             e.HasIndex(x => x.Category);
             e.HasIndex(x => x.LastSyncedAt);
+        });
+
+        // ── Noun consistency — deprecated/renamed noun registry ───────────────
+        b.Entity<DeprecatedEntityName>(e =>
+        {
+            e.ToTable("DeprecatedEntityNames");
+            e.HasKey(x => x.Id);
+            e.Property(x => x.DeprecatedName).HasMaxLength(256).IsRequired();
+            e.Property(x => x.CanonicalName).HasMaxLength(256).IsRequired();
+            e.Property(x => x.Notes).HasMaxLength(512);
+            e.Property(x => x.AddedAt).HasDefaultValueSql("GETUTCDATE()");
+            e.HasOne(x => x.Entity).WithMany()
+                .HasForeignKey(x => x.EntityId).OnDelete(DeleteBehavior.SetNull)
+                .IsRequired(false);
+            e.HasIndex(x => x.UniverseId);
+            e.HasIndex(x => x.EntityId);
         });
     }
 

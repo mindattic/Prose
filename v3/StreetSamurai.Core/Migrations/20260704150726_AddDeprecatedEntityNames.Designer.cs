@@ -3,6 +3,7 @@ using System;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
 using Microsoft.EntityFrameworkCore.Metadata;
+using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 using StreetSamurai.Core.Data;
 
@@ -11,9 +12,11 @@ using StreetSamurai.Core.Data;
 namespace StreetSamurai.Core.Migrations
 {
     [DbContext(typeof(StreetSamuraiDbContext))]
-    partial class StreetSamuraiDbContextModelSnapshot : ModelSnapshot
+    [Migration("20260704150726_AddDeprecatedEntityNames")]
+    partial class AddDeprecatedEntityNames
     {
-        protected override void BuildModel(ModelBuilder modelBuilder)
+        /// <inheritdoc />
+        protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder
@@ -6237,10 +6240,6 @@ namespace StreetSamurai.Core.Migrations
 
                     b.Property<DateTime?>("AudioCompletedAt")
                         .HasColumnType("datetime2");
-
-                    b.Property<string>("Author")
-                        .HasMaxLength(200)
-                        .HasColumnType("nvarchar(200)");
 
                     b.Property<DateTime?>("CanonAt")
                         .HasColumnType("datetime2");

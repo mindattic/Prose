@@ -48,10 +48,14 @@ public class DocxExportService
     /// <summary>Render the node to a KDP-ready .docx in the publish directory; returns the path.</summary>
     public async Task<string> ExportNodeAsync(Guid nodeId, string? author = null, CancellationToken ct = default)
     {
-        author = string.IsNullOrWhiteSpace(author) ? "MindAttic" : author.Trim();
         await using var db = await dbFactory.CreateDbContextAsync(ct);
         var node = await db.Nodes.FirstOrDefaultAsync(s => s.Id == nodeId, ct)
             ?? throw new InvalidOperationException($"Node {nodeId} not found.");
+        // Resolution order: explicit param → node.Author → "MindAttic" (pen name)
+        if (string.IsNullOrWhiteSpace(author))
+            author = string.IsNullOrWhiteSpace(node.Author) ? "MindAttic" : node.Author.Trim();
+        else
+            author = author.Trim();
         node.Version++;
         node.UpdatedAt = DateTime.UtcNow;
         await db.SaveChangesAsync(ct);

@@ -826,6 +826,12 @@ public static class ServiceCollectionExtensions
         // Available via `ss --sanity-scan`.
         services.AddSingleton<SanityScanService>();
 
+        // Deterministic noun consistency scan — no LLM; flags deprecated/renamed
+        // noun references in beat prose (e.g. old drone name "VacCell" → "Nit").
+        // Rules registered in DeprecatedEntityNames table, universe-scoped.
+        // Available via `ss --validate-nouns --slug <slug>` and validate_nouns MCP.
+        services.AddSingleton<NounConsistencyService>();
+
         // Beat mode detection + workflow coverage monitoring.
         // ProseWriterRouter is the preferred entry point for all prose generation — it
         // auto-detects beat mode, injects pacing + structural guidance, and logs coverage.

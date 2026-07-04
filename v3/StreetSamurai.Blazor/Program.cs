@@ -370,6 +370,17 @@ if (args.Contains("--family"))
     return;
 }
 
+// CLI mode: scan beats for deprecated/renamed noun references.
+//   ss --validate-nouns --slug <slug>
+if (args.Contains("--validate-nouns"))
+{
+    var cliBuilder = WebApplication.CreateBuilder(args);
+    cliBuilder.Services.AddStreetSamuraiServices();
+    var cliApp = cliBuilder.Build();
+    Environment.ExitCode = await ValidateNounsCli.RunAsync(args, cliApp.Services);
+    return;
+}
+
 // CLI mode: backfill BeatEntityMentions — index which entity names appear in
 // each beat so entity-update staleness propagation works.
 //   ss --scan-entity-mentions
