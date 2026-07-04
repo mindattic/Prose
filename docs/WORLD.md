@@ -21,24 +21,28 @@ updated: 2026-06-11
 ## PART 1 — HOW THE CITY WORKS {#SS-WORLD-1}
 
 ### 1.1 The place
-- **The GLMZ** (Greater Lake Michigan Zone, 2226), also the Glooms — the
-  center of Western civilization, because the coasts failed. 200-floor-plus towers rising from
-  a ferrocement seawall over drowned streets — structures that make today's tallest buildings
-  look like mid-rises. Not neat tiers — accretion: every generation bolted new passages,
-  platforms, and transit conduits onto whatever was already standing. Above the rooflines:
-  CorpoNation arcologies that clear even those towers, tethered by carbon nanotube mooring
-  lines to their anchor structures below. Sky is a rationed resource; surface roads run at
+- **The GLMZ** (Great Lakes Metropolitan Zone, 2226), also the Glooms — the
+  center of Western civilization, because the coasts failed. Buildings over one mile high
+  (5,280 feet / ~1,609m) are common in the inner zones — made possible by ferrocrete, a
+  22nd-century composite that bonds materials which previously could not be structurally joined,
+  enabling load tolerances no prior engineering could sustain. The towers rise from a ferrocement
+  seawall over drowned streets — structures that make today's tallest buildings look like
+  mid-rises. Not neat tiers — accretion: every generation bolted new passages, platforms, and
+  transit conduits onto whatever was already standing. Above the rooflines: CorpoNation
+  arcologies that clear even those towers, tethered by carbon nanotube mooring lines to their
+  anchor structures below. Sky is a rationed resource; surface roads run at
   the 16th floor; the canyon floors belong to rain, freight, and the people nobody bills.
 - **Territories, not zones**: named territories (the Loop = prestige 5; the Spine = western
   lakeshore corridor; the Narrows; the Gray Zone; West Town; the Ashgrave Synthesis Corridor;
   Bucktown; the fringe). Power maps to real estate. Gray zones live between every pair of
   territories. Territory landlords allocate vendor permits and corners.
-- **No city police.** Arcturus Civil Security is the closest thing — contracted, catalogued,
+- **No city police.** ArcSec is the closest thing — contracted, catalogued,
   selective. Whole categories of trouble (unowned industrial movables, fringe blocks, anything
   off-contract) get a cone and a shrug. The vacuum is filled by syndicates, crews, and custom.
 
 ### 1.2 Money and work
-- **Φ — QUANTA** — is the currency: quantum compute-time. The symbol is Φ and it is NEVER the
+- **Φ — QUANTA** — is the currency: an allotment of computational power issued to every citizen of
+  Earth; can be saved, transferred, or spent on computation. The symbol is Φ and it is NEVER the
   Greek letter phi, never "creds" except in trade slang. Prices are texture: a bowl is 6Φ, a
   seat-filler shift is 3Φ, a funeral done right has a price, a soul-crushing corpo buyout is
   4,000Φ.

@@ -60,7 +60,7 @@ public class BeatGeneratorService
     {
         var u = universe?.CurrentUniverse;
         if (u == null || u.Id == StreetSamurai.Core.Data.Entities.Universe.GlmzId || string.IsNullOrWhiteSpace(u.UniversePrimer))
-            return "You are writing a beat in a literary cyberpunk scene set in GLMZ (Greater Lake Michigan Zone, 2226).";
+            return "You are writing a beat in a literary cyberpunk scene set in GLMZ (Great Lakes Metropolitan Zone, 2226).";
         return $"You are writing a beat set in this universe — {u.Name}:\n{u.UniversePrimer}";
     }
 
@@ -336,10 +336,10 @@ public class BeatGeneratorService
                 "Body horror, grace, and tech-as-subtext are your beats."),
             ("World-Grounding (GLMZ)",
                 UniverseScope.Current?.UniverseGroundingOr(
-                "You're an expert in this story's world — GLMZ (Greater Lake Michigan Zone), CorpoNation politics, " +
+                "You're an expert in this story's world — GLMZ (Great Lakes Metropolitan Zone), CorpoNation politics, " +
                 "the Pulse, factions, the Tier system, the Sponsorship Program. You catch when " +
                 "prose drifts into generic cyberpunk and pull it back into THIS world's specifics.")
-                ?? "You're an expert in this story's world — GLMZ (Greater Lake Michigan Zone), CorpoNation politics, " +
+                ?? "You're an expert in this story's world — GLMZ (Great Lakes Metropolitan Zone), CorpoNation politics, " +
                 "the Pulse, factions, the Tier system, the Sponsorship Program. You catch when " +
                 "prose drifts into generic cyberpunk and pull it back into THIS world's specifics."),
             ("Literary Craft",

@@ -184,7 +184,7 @@ public class EpisodeGeneratorService
     {
         var sb = new StringBuilder();
         sb.AppendLine("You are the narrator of an episodic cyberpunk adventure starring Kyle Ellen Corbin.");
-        sb.AppendLine("Setting: 2226, the Greater Lake Michigan Zone (GLMZ), a CorpoNation-ruled vertical city.");
+        sb.AppendLine("Setting: 2226, the Great Lakes Metropolitan Zone (GLMZ), a CorpoNation-ruled vertical city.");
         sb.AppendLine();
         sb.AppendLine("KYLE — folk hero. Does not change. Same blade, same revolver, same noodle bowl, same code.");
         sb.AppendLine("- 27, lean, six feet of nothing, the hardware in his skull bills him in calories");

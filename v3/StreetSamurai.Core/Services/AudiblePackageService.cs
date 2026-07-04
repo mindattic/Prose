@@ -195,7 +195,7 @@ public class AudiblePackageService
         // ── Canon constants always first ──────────────────────────────────────
         sb.AppendLine("| Φ | QUANTA | currency | The QUANTA currency symbol; never read as \"phi\" |");
         sb.AppendLine("| CorpoNation | corpo nation | world term | Two-word pronunciation |");
-        sb.AppendLine("| GLMZ | G-L-M-Z | acronym | Greater Lake Michigan Zone |");
+        sb.AppendLine("| GLMZ | G-L-M-Z | acronym | Great Lakes Metropolitan Zone |");
 
         // ── Entity names from the node ─────────────────────────────────────
         foreach (var term in terms)

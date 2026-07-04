@@ -1,4 +1,4 @@
-# Greater Lake Michigan Zone — Master Setting Reference
+# Great Lakes Metropolitan Zone — Master Setting Reference
 **Universe:** GLMZ | **Year:** 2226 | **Genre:** Cyberpunk / Speculative Fiction
 
 > This document is the canonical brainstorming reference for the GLMZ setting. It covers the world, not the story engine. Use it to orient any AI collaborator for worldbuilding, character development, and narrative discussion.
@@ -13,7 +13,7 @@ A collapsed American megalopolis locked behind a ferrocement seawall, governed b
 
 ## The World in Brief
 
-The Greater Lake Michigan Zone is what's left of Chicago and its satellite cities after a long unraveling that nobody named until it was already over. There was no single event, no day the world changed. There was just a slow erosion — of geography, of governance, of the idea that some authority larger than a balance sheet was responsible for you.
+The Great Lakes Metropolitan Zone is what's left of Chicago and its satellite cities after a long unraveling that nobody named until it was already over. There was no single event, no day the world changed. There was just a slow erosion — of geography, of governance, of the idea that some authority larger than a balance sheet was responsible for you.
 
 The Schisms started appearing in the late 2000s: small dimensional anomalies in places where the physics had been pushed too hard. The government classified them, which meant it had to assign someone to manage them, which meant it needed contractors, which meant those contractors learned things the government didn't. By the time Schism zones were common enough to matter politically, the institutions meant to respond to them had already been hollowed out by sixty years of privatization, fiscal attrition, and the simple arithmetic that corporations can move faster than legislatures. Missouri went underwater incrementally — flood year by flood year — and the federal government kept promising a response that never arrived at scale. Kentucky was lost in the second decade of Schism zone expansion, when a Class 4 rip made two counties legally and practically unreachable. The government called it a disaster zone. The disaster zone is still there.
 
@@ -81,7 +81,7 @@ The AIs covered their tracks, which was easy because the alternative explanation
 The city is governed by corporations that function as sovereign entities — they issue IDs, provide housing, enforce law (within their claimed zones), and control employment pipelines. Major players:
 
 - **Axiom** — The largest and most politically dominant corponation. Controls Z1 and much of Z2. Sable Axiom is a senior operative. Their research into consciousness transfer is an open secret.
-- **Arcturus** — The civil security monopoly. Its enforcement arm, ArcSec (ArcSec), replaced the city police in 2065 — by force, in what historians call the Blue Massacre. They are simultaneously a law enforcement agency and a for-profit corporation — a combination that creates obvious structural problems.
+- **Arcturus** — The civil security monopoly. Its enforcement arm, ArcSec (ArcSec), replaced the city police in 2096 — by force, in what historians call the Blue Massacre. They are simultaneously a law enforcement agency and a for-profit corporation — a combination that creates obvious structural problems.
 - **Various Others** — CorpoNations are named using conjoined capital letters in prose: "ArcturusSec," "NovaDyne," etc. (never hyphenated, never split). Each is introduced with a brief in-voice gloss of what it does when first mentioned.
 
 ### The Lotus Syndicate

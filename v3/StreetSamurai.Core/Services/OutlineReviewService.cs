@@ -80,11 +80,11 @@ public class OutlineReviewService
             """;
 
         var worldIdentity = UniverseScope.Current?.UniverseGroundingOr(
-            "You are a ruthless story editor for neo-noir literary fiction set in GLMZ (Greater Lake Michigan Zone, also called Meridian 88 or The Glooms, year 2226).")
-            ?? "You are a ruthless story editor for neo-noir literary fiction set in GLMZ (Greater Lake Michigan Zone, also called Meridian 88 or The Glooms, year 2226).";
+            "You are a ruthless story editor for neo-noir literary fiction set in GLMZ (Great Lakes Metropolitan Zone, also called The Glooms, year 2226).")
+            ?? "You are a ruthless story editor for neo-noir literary fiction set in GLMZ (Great Lakes Metropolitan Zone, also called The Glooms, year 2226).";
         var worldRulesBlock = (UniverseScope.Current?.IsGlmz ?? true)
             ? "WORLD RULES YOU MUST ENFORCE:\n" +
-              "            - There are NO city police. Arcturus Civil Security is the closest equivalent,\n" +
+              "            - There are NO city police. ArcSec (Arcturus Civil Security) is the closest equivalent,\n" +
               "              but they're a private contractor with jurisdiction only in contracted zones.\n" +
               "              Writing \"cops showed up\" or \"called the police\" is a world violation.\n" +
               "            - Corponations (Libation Corp, Arcturus, Iron Lotus, etc.) are sovereign entities.\n" +

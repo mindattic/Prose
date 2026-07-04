@@ -215,7 +215,7 @@ updated: 2026-06-25
     *(2026-06-20.)*
 
 - **SS-US-H4 ⬜** As the author, *Pinhole* (PNHL; formerly TDIU / *The Door Is Unlocked*) is Pixel's origin story: she rides
-  the Pulse from Iowa to GLMZ, is robbed on day one, learns that Arcturus Civil Security is more
+  the Pulse from Iowa to GLMZ, is robbed on day one, learns that ArcSec is more
   dangerous than the criminals, solves the problem herself with her own technical skills, and ends
   the story as a full, confident person who locks her door and leaves the nine-second routing gap
   intact. Full arc and locks in [docs/nodes/PNHL.md](nodes/PNHL.md).

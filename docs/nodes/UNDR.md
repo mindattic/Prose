@@ -243,7 +243,7 @@ true believer who would burn the village to save it.
 
 **Corwin Sallow & the Lamplighters (surface antagonist — cruelty).** A surface old-money
 thrill-hunter and the **"deep safari"** club he fronts. They hunt the Underclan **for sport** because
-the Underclan are legally no one (no registry, no police — only **Arcturus Civil Security**, who do
+the Underclan are legally no one (no registry, no police — only **ArcSec**, who do
 not come this far down for the un-counted). Their weapon is **light**: floodlamps that blind and rout
 a dark-adapted people. Sallow collects. He keeps trophies. He is the surface's appetite with a face.
 
@@ -322,7 +322,7 @@ it and rowed. *He gave away his name to come home.*
    and specific, never magic.
 6. **Iowan Behemoths are machines, not life** ([[../BIBLE]]); the Oarsman is a looped automaton, not a
    spirit — the *tribe* mythologizes it; the text knows what it is. Φ is the QUANTA symbol, never phi.
-7. **No GLMZ police.** Only Arcturus Civil Security, who do not descend for the un-counted
+7. **No GLMZ police.** Only ArcSec, who do not descend for the un-counted
    ([[project_no_police]]).
 8. **Glim's two names.** POV = Glim. "Toby" is sound+smell until the reunion. After, the war of names
    is the interior arc; never resolve it cleanly.

@@ -71,7 +71,7 @@ public class OutlineService
             """;
 
         var system = $"""
-            You are a story architect for neo-noir literary fiction set in GLMZ (Greater Lake Michigan Zone, also called Meridian 88 or The Glooms, year 2226).
+            You are a story architect for neo-noir literary fiction set in GLMZ (Great Lakes Metropolitan Zone, also called The Glooms, year 2226).
             Design a complete story arc with act structure.
 
             CHARACTERS:

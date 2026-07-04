@@ -551,8 +551,8 @@ public class EntityReviewService
     private string BuildBallotPrompt(Persona persona, string entityType, string name)
     {
         var who = BuildWhoBlock(persona);
-        var worldLine = UniverseScope.Current?.UniverseGroundingOr("You are rating a worldbuilding entry from GLMZ (Greater Lake Michigan Zone, 2225) — a cyberpunk city ceded to corporate sovereignty.")
-            ?? "You are rating a worldbuilding entry from GLMZ (Greater Lake Michigan Zone, 2225) — a cyberpunk city ceded to corporate sovereignty.";
+        var worldLine = UniverseScope.Current?.UniverseGroundingOr("You are rating a worldbuilding entry from GLMZ (Great Lakes Metropolitan Zone, 2226) — a cyberpunk city ceded to corporate sovereignty.")
+            ?? "You are rating a worldbuilding entry from GLMZ (Great Lakes Metropolitan Zone, 2226) — a cyberpunk city ceded to corporate sovereignty.";
         return
 $@"{who}
 
@@ -562,7 +562,7 @@ The entry below describes a {entityType} called ""{name}"".
 
 Read it as the person described above. Rate how compelling, original, and well-crafted this entry is — whether it would stick with you, feel alive, or reveal something true about how this world works. Reserve high scores for entries that genuinely surprise or unsettle you. Mediocre entries are common.
 
-Also flag any internal contradictions or world-canon violations you spot — things that don't add up within the entry itself, or that clash with the 2225 GLMZ setting.
+Also flag any internal contradictions or world-canon violations you spot — things that don't add up within the entry itself, or that clash with the 2226 GLMZ setting.
 
 Return ONLY a JSON object, nothing else:
 {{""score"": <integer 1-100>, ""weakness"": ""<your single biggest gripe in 8 words or fewer, or 'none'>"", ""contradictions"": [""<contradiction if any, else omit array or leave empty>""]}}";
@@ -571,8 +571,8 @@ Return ONLY a JSON object, nothing else:
     private string BuildReviewPrompt(Persona persona, string entityType, string name)
     {
         var who = BuildWhoBlock(persona);
-        var worldLine = UniverseScope.Current?.UniverseGroundingOr("You are reviewing a worldbuilding entry from GLMZ (Greater Lake Michigan Zone, 2225) — a cyberpunk city ceded to corporate sovereignty.")
-            ?? "You are reviewing a worldbuilding entry from GLMZ (Greater Lake Michigan Zone, 2225) — a cyberpunk city ceded to corporate sovereignty.";
+        var worldLine = UniverseScope.Current?.UniverseGroundingOr("You are reviewing a worldbuilding entry from GLMZ (Great Lakes Metropolitan Zone, 2226) — a cyberpunk city ceded to corporate sovereignty.")
+            ?? "You are reviewing a worldbuilding entry from GLMZ (Great Lakes Metropolitan Zone, 2226) — a cyberpunk city ceded to corporate sovereignty.";
         return
 $@"{who}
 
@@ -766,7 +766,7 @@ React as THIS person: high Openness welcomes strange and original; low wants cla
     private static string BuildRelationshipPrompt(string entityType, string entityName)
     {
         return
-$@"You are a world-graph editor for GLMZ (Greater Lake Michigan Zone, 2225), a cyberpunk city. Your task: read the worldbuilding entry below and identify factual, named-entity-to-named-entity relationships.
+$@"You are a world-graph editor for GLMZ (Great Lakes Metropolitan Zone, 2226), a cyberpunk city. Your task: read the worldbuilding entry below and identify factual, named-entity-to-named-entity relationships.
 
 Rules:
 - Only include a relationship when the TARGET is a specific NAMED entity (brand, company, person, place, faction, product). No generic references like ""consumers"" or ""street gangs"".

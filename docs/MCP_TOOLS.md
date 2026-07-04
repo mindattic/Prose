@@ -129,7 +129,7 @@ Load a place / district by name. Returns description, sensory_details, parent te
 
 ### `list_characters`
 
-List every character in canon. Returns name + role + status for each. Cheap â€” call this first when you need to know who exists.
+List every character in canon. Returns name + role + status for each. Cheap — call this first when you need to know who exists.
 
 - _(no parameters)_
 
@@ -227,13 +227,13 @@ Sync all discovered markdown files from disk into the database. Only files whose
 
 ### `get_motifs`
 
-List the registered motifs for a book â€” recurring objects, phrases, gestures, sensory threads. Mention these in the chapter you're writing where natural; the review pipeline flags chapters that drop the whole inventory.
+List the registered motifs for a book — recurring objects, phrases, gestures, sensory threads. Mention these in the chapter you're writing where natural; the review pipeline flags chapters that drop the whole inventory.
 
 - `bookId` (string, required) — Book id.
 
 ### `get_neighbors`
 
-Get a graph node's neighbors (relationships) up to N hops. Use this to walk from a known entity to entities related by canon â€” alliances, rivalries, family, mentor links, location ownership.
+Get a graph node's neighbors (relationships) up to N hops. Use this to walk from a known entity to entities related by canon — alliances, rivalries, family, mentor links, location ownership.
 
 - `nodeId` (string, required) — Node id (use search_semantic or list_characters to find the id).
 - `hops` (int, optional) — Hops to traverse. 1 = direct neighbors. Default 1.
@@ -250,9 +250,9 @@ Plant a new motif in a book's inventory. Idempotent by name (re-planting with a 
 
 ### `search_semantic`
 
-Search the world graph by theme, not by name. TF-IDF cosine similarity across every entity description. Use this to surface entities that are *thematically relevant* to what you're about to write â€” e.g. searching 'corporate betrayal under-table contract' might return Sable's backstory, the Lotus Syndicate, the Ferrogate enforcement arm. Returns ranked id+name+type+score.
+Search the world graph by theme, not by name. TF-IDF cosine similarity across every entity description. Use this to surface entities that are *thematically relevant* to what you're about to write — e.g. searching 'corporate betrayal under-table contract' might return Sable's backstory, the Lotus Syndicate, the Ferrogate enforcement arm. Returns ranked id+name+type+score.
 
-- `query` (string, required) — Free-text query â€” describe the theme/scene/concept.
+- `query` (string, required) — Free-text query — describe the theme/scene/concept.
 - `topK` (int, optional) — Number of top hits to return. Default 8.
 
 ## Continuity
@@ -1376,10 +1376,10 @@ List all species in the current universe. Returns canonical name (key used on Ch
 
 ### `archive_book`
 
-Archive a book: moves the book file from engine/data/books/ to engine/data/archives/books/. Non-destructive â€” the original chapters stay in place but the book record is removed from the active shelf. Requires the caller to retype the full book id as a confirmation token (matches the UI's type-the-guid modal). Returns ok:true on success or error:'confirmation_mismatch' / error:'not_found' otherwise.
+Archive a book: moves the book file from engine/data/books/ to engine/data/archives/books/. Non-destructive — the original chapters stay in place but the book record is removed from the active shelf. Requires the caller to retype the full book id as a confirmation token (matches the UI's type-the-guid modal). Returns ok:true on success or error:'confirmation_mismatch' / error:'not_found' otherwise.
 
 - `id` (string, required) — Book id (32-char hex).
-- `confirmId` (string, required) — Confirmation token â€” must equal the same full book id. Mismatched or missing values abort the archive.
+- `confirmId` (string, required) — Confirmation token — must equal the same full book id. Mismatched or missing values abort the archive.
 
 ### `get_book`
 
@@ -1401,7 +1401,7 @@ Load a single chapter by id: synopsis, full HTML body, persisted beats list (eac
 
 ### `get_director_context`
 
-Build the 'WHERE WE ARE' director context block for writing a specific chapter: PRIOR chapters' content, THIS chapter's outline, UPCOMING chapters' setup needs, plus open book-level threads. This is the highest-value writing-context tool â€” call it before drafting prose for any chapter that's part of a book.
+Build the 'WHERE WE ARE' director context block for writing a specific chapter: PRIOR chapters' content, THIS chapter's outline, UPCOMING chapters' setup needs, plus open book-level threads. This is the highest-value writing-context tool — call it before drafting prose for any chapter that's part of a book.
 
 - `bookId` (string, required) — Book id.
 - `chapterId` (string, required) — Chapter id whose prose you're about to write.

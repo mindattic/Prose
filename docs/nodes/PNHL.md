@@ -448,7 +448,7 @@ hand-lettered calendar of scheduled handoffs that aren't his. She leaves with th
 with the exact shape of what saying yes to the Assessor looks like from the inside: not chains,
 a clipboard. She maps the counter's access chain on the way out — the node she will burn later.
 
-### Beat 16 (1075) — Arcturus Civil Security
+### Beat 16 (1075) — ArcSec
 She tries the official channel once, to rule it out properly rather than assume. The officer is
 courteous, professional, and files her redirected coupling as a simple misdelivery — a "pattern
 of incidents" would need a harassment inquiry she isn't ready to open. He does his job exactly as

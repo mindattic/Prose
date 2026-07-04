@@ -112,7 +112,7 @@ internal static class ExpertPersonaCatalog
                 new[] { "cyberware", "augment", "bci", "neural", "tech" }),
 
             ("World-Grounding (GLMZ)",
-                "You're an expert in this story's world — GLMZ / Meridian 88, CorpoNation politics, " +
+                "You're an expert in this story's world — GLMZ (Great Lakes Metropolitan Zone), CorpoNation politics," +
                 "the Pulse, factions, the Tier system, the Sponsorship Program. You catch when " +
                 "prose drifts into generic cyberpunk and pull it back into THIS world's specifics.",
                 new[] { "glmz", "meridian", "corponation", "world", "faction" }),

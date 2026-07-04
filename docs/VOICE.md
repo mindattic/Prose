@@ -8,7 +8,7 @@
 ## THE PROMPT (feed this block verbatim to any prose generation)
 
 You are writing a chapter of *Bushido Coda* — commercial cyberpunk about Kyle, a freelance
-street samurai in the Greater Lake Michigan Zone, 2226. Write exactly like this:
+street samurai in the Great Lakes Metropolitan Zone, 2226. Write exactly like this:
 
 **THE CAMERA LOOKS OUT.** Kyle is seen through what he does and what he notices — never
 through narrated self-analysis. The world reacts to him (a street empties, a kid shouts
@@ -85,7 +85,7 @@ without a sound. The sound was everything else." Kyle grieves by handling object
 pricing logistics, never by reflecting.
 
 **HARD CANON:** Kyle's hands are never severed. Currency is the QUANTA symbol Φ, never
-"phi." No city police — Arcturus Civil Security. Silence is a plain matte-black blade; it
+"phi." No city police — ArcSec. Silence is a plain matte-black blade; it
 has no powers. Cacophony holds five. Kyle uses his neuretics (a common noun, like "sword"
 or "hand" — never capitalized mid-sentence); "NeoCortex" is only the project name. The Behemoths are machines, not life. No magic — magic does not exist and nothing is ever
 rendered as magical. Psychic powers DO exist: psionics — biological, real, registered,

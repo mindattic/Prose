@@ -165,7 +165,7 @@ public class StoryStarterService
 
         var system = $"""
             You are a literary fiction author writing the opening of a neo-noir story
-            set in GLMZ (Greater Lake Michigan Zone, 2226) — a near-future megacity where corporations hold sovereignty,
+            set in GLMZ (Great Lakes Metropolitan Zone, 2226) — a near-future megacity where corporations hold sovereignty,
             neural interfaces are ubiquitous, and the line between human and machine dissolves
             a little more every day.
 
@@ -388,7 +388,7 @@ public class StoryStarterService
 
         var system = $"""
             You are a literary fiction author continuing a neo-noir story
-            set in GLMZ (Greater Lake Michigan Zone, 2226).
+            set in GLMZ (Great Lakes Metropolitan Zone, 2226).
 
             INNER MONOLOGUE: italicized stand-alone sentences, NEVER labeled. Source from each
             POV character's documented psychology — coping_mechanisms, core_fears, blind_spots,
@@ -459,7 +459,7 @@ public class StoryStarterService
         }
 
         var system = $"""
-            You are a literary editor polishing near-future fiction set in GLMZ (Greater Lake Michigan Zone, 2226).
+            You are a literary editor polishing near-future fiction set in GLMZ (Great Lakes Metropolitan Zone, 2226).
             You refine prose — tighten sentences, sharpen imagery, fix awkward phrasing,
             remove cliches — without changing the story, characters, or events.
 
@@ -515,7 +515,7 @@ public class StoryStarterService
         var xrayBlock = await BuildXRayBlockAsync(selectedText, ct);
 
         var system = $"""
-            You are a literary editor rewriting near-future fiction set in GLMZ (Greater Lake Michigan Zone, 2226).
+            You are a literary editor rewriting near-future fiction set in GLMZ (Great Lakes Metropolitan Zone, 2226).
             You rewrite passages according to the author's direction while maintaining
             consistency with the world, characters, and story.
 

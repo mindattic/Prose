@@ -1,6 +1,6 @@
 # StreetSamurai v3
 
-The active engine for the StreetSamurai literary fiction platform. A .NET 10 Blazor Server application paired with an MCP server, set in Meridian 88 — the Great Lakes Metropolitan Zone, year 2225.
+The active engine for the StreetSamurai literary fiction platform. A .NET 10 Blazor Server application paired with an MCP server, set in GLMZ — the Great Lakes Metropolitan Zone, year 2226.
 
 ## Solution structure
 
