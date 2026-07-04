@@ -103,7 +103,7 @@
         StateHasChanged();
         try
         {
-            await Reviewer.ReviewAllAsync(skipRated: false, ct: cts.Token);
+            await Reviewer.ReviewAllAsync(skipRated: false, ct: cts.Token, allowVotes: true); // SS-A44: button click = explicit vote request.
         }
         finally
         {
@@ -122,7 +122,7 @@
         StateHasChanged();
         try
         {
-            await Reviewer.ReviewAllAsync(skipRated: true, ct: cts.Token);
+            await Reviewer.ReviewAllAsync(skipRated: true, ct: cts.Token, allowVotes: true); // SS-A44: button click = explicit vote request.
         }
         finally
         {

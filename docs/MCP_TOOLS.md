@@ -1252,6 +1252,7 @@ Run the sampled Legion review panel against a node. STRUCTURAL PRE-FLIGHT runs f
 - `effort` (string, optional) — Cost tier (RFC 0009), scales calls + per-call model to importance: 'draft' = ~6 cheap-model ballots on claude+gemini, no diagnosis, NOT a gate; 'standard' = ~12 ballots + 2 prose, the >=82% standalone gate; 'deep' = ~37 ballots + 4 prose + full structural diagnosis, the >=85%/publish gate. Omit for the configured defaults.
 - `useLocal` (bool, optional) — Run ballots + synopsis on the LOCAL LLM (Ollama) instead of the cloud trusted-4 panel — free, no API tokens. ONE model = no temperament diversity, so the resulting score is a SEPARATE baseline (do NOT compare to cloud means). Default false (cloud).
 - `localModel` (string, optional) — Override the local model tag for this run (e.g. an Ollama tag). Ignored unless use_local=true. Omit to use the configured LocalReviewModel.
+- `allowVotes` (bool, optional) — SS-A44: score panels are DISABLED BY DEFAULT engine-wide. Set true to explicitly run this review; otherwise the call is refused. Default false.
 
 ### `update_review_settings`
 

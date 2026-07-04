@@ -1812,7 +1812,8 @@ else
             var progress = new Progress<int>(n => { reviewProgress = n; _ = InvokeAsync(StateHasChanged); });
             reviewResult = await ReviewSvc.RunSampledReviewAsync(
                 node.Id, Settings.ReviewBallots, Settings.ReviewProse, progress,
-                useLocal: reviewUseLocal);
+                useLocal: reviewUseLocal,
+                allowVotes: true); // SS-A44: the panel button IS the explicit user request to vote.
             if (reviewResult.BlockedByStructure)
                 Toast.Error("REVIEW", "Blocked by structural pre-flight — fix the failures, then re-run.");
             else

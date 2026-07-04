@@ -29,6 +29,7 @@ public class BookReviewService : IBookReviewService
     private readonly DatabaseService db;
     private readonly EmbeddingService? embeddings;
     private readonly ILogger<BookReviewService> log;
+    private readonly VotingGate votingGate;
 
     public BookReviewService(
         IBookRepository books, IChapterRepository chapters,
@@ -36,6 +37,7 @@ public class BookReviewService : IBookReviewService
         WritingQualityService quality, MotifService motifs,
         DatabaseService db,
         ILogger<BookReviewService> log,
+        VotingGate votingGate,
         EmbeddingService? embeddings = null)
     {
         this.books = books;
@@ -47,6 +49,7 @@ public class BookReviewService : IBookReviewService
         this.db = db;
         this.embeddings = embeddings;
         this.log = log;
+        this.votingGate = votingGate;
     }
 
     private static string ReportKey(string bookId) => $"book_review:{bookId}";
@@ -56,8 +59,10 @@ public class BookReviewService : IBookReviewService
     private void SaveReport(BookReviewReport report) => kv.Set(ReportKey(report.BookId), report);
 
     public async Task<BookReviewReport> ReviewAsync(
-        string bookId, IProgress<string>? progress = null, CancellationToken ct = default)
+        string bookId, IProgress<string>? progress = null, CancellationToken ct = default,
+        bool allowVotes = false)
     {
+        votingGate.EnsureAllowed("book-review", allowVotes);
         var book = books.LoadBook(bookId);
         if (book == null)
             return new BookReviewReport { BookId = bookId, Error = "Book not found" };

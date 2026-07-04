@@ -1585,3 +1585,28 @@ or `DELETE FROM NodeBeats` via raw sqlcmd — same rule, renamed tables.
 as part of the full strand→node terminology sweep (2026-07-03). All internal story-domain
 uses of "strand" now read as "node" or "story" per context.
 
+
+## SS-A44 — The Logic Sweep is law; voting off by default {#SS-A44}
+
+**Date:** 2026-07-04. **Origin:** the corpus logic campaign of 2026-07-03/04
+(`audit-outlines-2026-07-03/logic/CORPUS-REPORT.md`), which found and fixed ~25 blocker-level
+logic/continuity defects across all 11 GLMZ stories that months of score panels never localized.
+
+**1. The Logic Sweep ([[LOGIC]], `docs/LOGIC.md`) is the default and MANDATORY quality
+mechanism for all prose.** Whenever a beat is written, rewritten, merged, split, re-ordered, or
+disabled — and before any export — the six-dimension sweep runs: causality chain, knowledge
+states, timeline, plant/payoff ledger (including arithmetic), orphan references, bible
+agreement. Findings triage BLOCKER/MODERATE/MINOR and are fixed by minimal splice. No logical
+or chronological fallacy survives to export.
+
+**2. Voting is OFF by default, engine-wide.** Score panels (`--review-node`), Legion votes,
+census reviews, and any service path that solicits LLM ballots or scores DO NOT RUN unless the
+user explicitly requests a vote/review/score in that conversation, expressed as an explicit
+override flag at the invocation site. Automatic/implicit voting anywhere in the pipeline
+(auto-run, quality services, workflows) is retired. Rationale: cost — panels burn per-ballot
+API spend and localize nothing the sweep doesn't name for free.
+
+**3. Supersession.** This amendment supersedes the "mandatory dual review" workflow
+(standalone ≥82 / cumulative ≥85) as the DEFAULT; that machinery remains available behind the
+explicit override. `CLAUDE.md` §Quality Verification SOP is the working-rules mirror of this
+amendment.

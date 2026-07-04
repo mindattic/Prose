@@ -83,6 +83,9 @@ public static class RunCorpusCli
         string kind = "episode";
         bool resume = args.Contains("--resume");
         bool dryRun = args.Contains("--dry-run");
+        bool allowVotes = args.Contains("--allow-votes");
+        var votingGate = services.GetRequiredService<VotingGate>();
+        bool votingAllowed = votingGate.IsAllowed(allowVotes);
 
         for (int i = 0; i < args.Length; i++)
         {
@@ -234,14 +237,21 @@ public static class RunCorpusCli
                 }
             }
 
-            // Stage 5: review
+            // Stage 5: review (SS-A44 — score panel disabled by default; skip gracefully)
+            if (entry.Stage == "validated" && !votingAllowed)
+            {
+                Console.WriteLine("[run-corpus]   review skipped: voting disabled by default (SS-A44). Pass --allow-votes to score the corpus.");
+                entry.ReviewScore = null;
+                entry.Stage = "reviewed";
+                SaveCheckpoint(state);
+            }
             if (entry.Stage == "validated")
             {
                 Console.WriteLine($"[run-corpus]   review ({ballots} ballots)…");
                 try
                 {
                     var bp = new Progress<int>(k => { if (k % 5 == 0 || k == ballots) Console.WriteLine($"   …{k}/{ballots}"); });
-                    var rv = await reviewer.RunSampledReviewAsync(entry.NodeId, ballots, proseCount: 0, bp);
+                    var rv = await reviewer.RunSampledReviewAsync(entry.NodeId, ballots, proseCount: 0, bp, allowVotes: allowVotes);
                     entry.ReviewScore = rv.MeanScore;
                     entry.Stage = "reviewed";
                     SaveCheckpoint(state);

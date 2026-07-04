@@ -24,7 +24,7 @@ public static class AutoRunCli
     public static async Task<int> RunAsync(string[] args, IServiceProvider services)
     {
         string? slug = null, id = null, effort = "draft";
-        bool dryRun = false, force = false;
+        bool dryRun = false, force = false, allowVotes = false;
         int forks = 0;
 
         for (int i = 0; i < args.Length; i++)
@@ -37,6 +37,7 @@ public static class AutoRunCli
                 case "--forks":  if (i + 1 < args.Length && int.TryParse(args[++i], out var f)) forks = Math.Clamp(f, 0, 5); break;
                 case "--dry-run": dryRun = true; break;
                 case "--force":   force  = true; break;
+                case "--allow-votes": allowVotes = true; break;
             }
         }
 
@@ -127,7 +128,7 @@ public static class AutoRunCli
                     Console.WriteLine("[auto-run]   chapter close processing…");
                     var beats = await workbench.GetOrderedBeatsAsync(chapterId);
                     var prose = string.Join("\n\n", beats.Select(b => b.Beat.Text).Where(t => !string.IsNullOrWhiteSpace(t)));
-                    var closeResult = await chapterClose.ProcessAsync(nodeId, chapterId, totalChapters, prose, forks);
+                    var closeResult = await chapterClose.ProcessAsync(nodeId, chapterId, totalChapters, prose, forks, allowVotes: allowVotes);
                     PrintCloseResult(closeResult);
                 }
                 totalChapters++;
@@ -152,7 +153,7 @@ public static class AutoRunCli
                 Console.WriteLine("[auto-run] chapter close processing…");
                 var beats = await workbench.GetOrderedBeatsAsync(nodeId);
                 var prose = string.Join("\n\n", beats.Select(b => b.Beat.Text).Where(t => !string.IsNullOrWhiteSpace(t)));
-                var closeResult = await chapterClose.ProcessAsync(nodeId, nodeId, 0, prose, forks);
+                var closeResult = await chapterClose.ProcessAsync(nodeId, nodeId, 0, prose, forks, allowVotes: allowVotes);
                 PrintCloseResult(closeResult);
             }
 

@@ -13,7 +13,12 @@ namespace StreetSamurai.Core.Services.Operator.Tools;
 public class ScoreStoryQualityTool : IWriterTool
 {
     private readonly StoryQualityService quality;
-    public ScoreStoryQualityTool(StoryQualityService quality) { this.quality = quality; }
+    private readonly VotingGate votingGate;
+    public ScoreStoryQualityTool(StoryQualityService quality, VotingGate votingGate)
+    {
+        this.quality = quality;
+        this.votingGate = votingGate;
+    }
 
     public string Name => "score_story_quality";
 
@@ -47,6 +52,11 @@ public class ScoreStoryQualityTool : IWriterTool
 
         if (string.IsNullOrWhiteSpace(text))
             return JsonSerializer.Serialize(new { error = "No text to evaluate (active story is empty and no text passed)." });
+
+        // SS-A44: multi-LLM quality scoring is disabled by default. The operator
+        // must not silently spend on a panel — surface the actionable message.
+        if (!votingGate.IsAllowed(false))
+            return JsonSerializer.Serialize(new { error = "voting_disabled", message = VotingGate.DisabledMessage });
 
         var story = new AutonomousStory
         {

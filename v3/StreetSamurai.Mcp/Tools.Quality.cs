@@ -40,6 +40,7 @@ public class QualityTools
     private readonly StructuralDiagnosticService structural;
     private readonly EmotionalDepthService emotionalDepth;
     private readonly IDbContextFactory<StreetSamuraiDbContext> dbFactory;
+    private readonly VotingGate votingGate;
 
     public QualityTools(
         WorldConsistencyService consistency,
@@ -53,7 +54,8 @@ public class QualityTools
         SemanticFidelityService fidelity,
         StructuralDiagnosticService structural,
         EmotionalDepthService emotionalDepth,
-        IDbContextFactory<StreetSamuraiDbContext> dbFactory)
+        IDbContextFactory<StreetSamuraiDbContext> dbFactory,
+        VotingGate votingGate)
     {
         this.consistency    = consistency;
         this.quality        = quality;
@@ -67,6 +69,7 @@ public class QualityTools
         this.structural     = structural;
         this.emotionalDepth = emotionalDepth;
         this.dbFactory      = dbFactory;
+        this.votingGate     = votingGate;
     }
 
     /// <summary>Scan arbitrary prose against every world rule (no city police, no Behemoth-as-alive, no 'the Shelf' district, no wedding-cake tier architecture, no Ferrogate-as-railroad, no metro/Meridian PD, no phi/Greek-letter confusion). Returns matched violations with surrounding context. Call this on a chapter draft before delivering it — catches rule slips an LLM might miss.</summary>
@@ -119,8 +122,13 @@ public class QualityTools
         [Description("Set true to skip structural pre-flight and run ballots unconditionally. Use only when you have already reviewed and accepted the structural findings.")] bool skipDiagnosis = false,
         [Description("Cost tier (RFC 0009), scales calls + per-call model to importance: 'draft' = ~6 cheap-model ballots on claude+gemini, no diagnosis, NOT a gate; 'standard' = ~12 ballots + 2 prose, the >=82% standalone gate; 'deep' = ~37 ballots + 4 prose + full structural diagnosis, the >=85%/publish gate. Omit for the configured defaults.")] string? effort = null,
         [Description("Run ballots + synopsis on the LOCAL LLM (Ollama) instead of the cloud trusted-4 panel — free, no API tokens. ONE model = no temperament diversity, so the resulting score is a SEPARATE baseline (do NOT compare to cloud means). Default false (cloud).")] bool useLocal = false,
-        [Description("Override the local model tag for this run (e.g. an Ollama tag). Ignored unless use_local=true. Omit to use the configured LocalReviewModel.")] string? localModel = null)
+        [Description("Override the local model tag for this run (e.g. an Ollama tag). Ignored unless use_local=true. Omit to use the configured LocalReviewModel.")] string? localModel = null,
+        [Description("SS-A44: score panels are DISABLED BY DEFAULT engine-wide. Set true to explicitly run this review; otherwise the call is refused. Default false.")] bool allowVotes = false)
     {
+        // SS-A44 voting kill-switch — refuse cleanly (no throw) when not overridden.
+        if (!votingGate.IsAllowed(allowVotes))
+            return JsonSerializer.Serialize(new { error = "voting_disabled", message = VotingGate.DisabledMessage }, CanonTools.JsonOpts);
+
         var profile = ReviewEffortProfile.Resolve(effort);
         if (effort != null && profile == null)
             return JsonSerializer.Serialize(new { error = "unknown_effort", effort, known = ReviewEffortProfile.KnownTiers }, CanonTools.JsonOpts);
@@ -146,7 +154,8 @@ public class QualityTools
             cheapModels: profile?.CheapModels ?? false,
             allowedProvidersOverride: profile?.AllowedProviders,
             useLocal: useLocal,
-            localModelOverride: localModel);
+            localModelOverride: localModel,
+            allowVotes: true);
 
         string? synopsis = null;
         if (result.BallotsSaved > 0)

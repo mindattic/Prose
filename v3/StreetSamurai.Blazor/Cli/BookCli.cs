@@ -42,7 +42,7 @@ public static class BookCli
             "show"     => CmdShow(rest, bookRepo),
             "chapters" => CmdChapters(rest, bookRepo, chapterRepo),
             "absorb"   => CmdAbsorb(rest, bookRepo, chapterRepo),
-            "review"   => await CmdReview(rest, services.GetRequiredService<IBookReviewService>()),
+            "review"   => await CmdReview(rest, services.GetRequiredService<IBookReviewService>(), services.GetRequiredService<VotingGate>()),
             "apply"    => await CmdApply(rest, services.GetRequiredService<IBookReviewService>()),
             "export"   => CmdExport(rest, services.GetRequiredService<BookExportService>()),
             "export-all" => CmdExportAll(rest, services.GetRequiredService<BookExportService>()),
@@ -138,13 +138,18 @@ public static class BookCli
         return 0;
     }
 
-    static async Task<int> CmdReview(string[] args, IBookReviewService svc)
+    static async Task<int> CmdReview(string[] args, IBookReviewService svc, VotingGate votingGate)
     {
-        if (args.Length == 0) return Fail("usage: --book review <bookId>");
+        if (args.Length == 0) return Fail("usage: --book review <bookId> [--allow-votes]");
         var bookId = args[0];
+        var allowVotes = args.Contains("--allow-votes");
+
+        // SS-A44: the book review casts a multi-LLM vote panel — disabled by default.
+        try { votingGate.EnsureAllowed("book-review", allowVotes); }
+        catch (VotingDisabledException ex) { Console.Error.WriteLine($"[book review] {ex.Message}"); return 1; }
 
         var progress = new Progress<string>(msg => Console.Error.WriteLine($"[book review] {msg}"));
-        var report = await svc.ReviewAsync(bookId, progress);
+        var report = await svc.ReviewAsync(bookId, progress, allowVotes: allowVotes);
 
         if (!string.IsNullOrEmpty(report.Error))
         {

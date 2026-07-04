@@ -32,6 +32,7 @@ public class NodeReviewService
     private readonly SemanticFidelityService fidelity;
     private readonly StructuralDiagnosticService structural;
     private readonly ILogger<NodeReviewService> log;
+    private readonly VotingGate votingGate;
     private readonly ProseLessonStore? proseLessons;
 
     private int MaxConcurrency => settings.ReviewMaxConcurrency;
@@ -72,6 +73,7 @@ public class NodeReviewService
         SemanticFidelityService fidelity,
         StructuralDiagnosticService structural,
         ILogger<NodeReviewService> log,
+        VotingGate votingGate,
         ProseLessonStore? proseLessons = null)
     {
         this.legion = legion;
@@ -86,6 +88,7 @@ public class NodeReviewService
         this.fidelity = fidelity;
         this.structural = structural;
         this.log = log;
+        this.votingGate = votingGate;
         this.proseLessons = proseLessons;
     }
 
@@ -154,8 +157,10 @@ public class NodeReviewService
     /// Reports completed-reviewer count via <paramref name="progress"/>.</summary>
     public async Task<ReviewRunResult> ReviewNodeAsync(
         Guid nodeId, int readers, IReadOnlyList<string>? personaIds = null,
-        string? groupName = null, IProgress<int>? progress = null, CancellationToken ct = default)
+        string? groupName = null, IProgress<int>? progress = null, CancellationToken ct = default,
+        bool allowVotes = false)
     {
+        votingGate.EnsureAllowed("review-node (full panel)", allowVotes);
         if (readers <= 0) readers = settings.ReviewReaders;
 
         var providers = ReviewProviderIds();
@@ -309,8 +314,9 @@ public class NodeReviewService
         IProgress<int>? progress = null, CancellationToken ct = default,
         bool skipDiagnosis = false, bool cheapModels = false, string? allowedProvidersOverride = null,
         bool useLocal = false, string? localModelOverride = null, string? cloudModelOverride = null,
-        IReadOnlyDictionary<string, string>? modelMap = null)
+        IReadOnlyDictionary<string, string>? modelMap = null, bool allowVotes = false)
     {
+        votingGate.EnsureAllowed("review-node (sampled)", allowVotes);
         if (ballotCount <= 0) ballotCount = settings.ReviewBallots;
         if (proseCount < 0) proseCount = 0;
 
@@ -331,7 +337,7 @@ public class NodeReviewService
                     nodeId, probe.Markdown.Length, useLocal ? "local" : "cloud", threshold);
                 var perSeg = Math.Max(6, (int)Math.Ceiling(ballotCount / 3.0));
                 return await RunSegmentedReviewAsync(nodeId, perSeg, proseCount, segTarget,
-                    progress, ct, allowedProvidersOverride, useLocal, localModelOverride);
+                    progress, ct, allowedProvidersOverride, useLocal, localModelOverride, allowVotes: allowVotes);
             }
         }
 
@@ -369,7 +375,7 @@ public class NodeReviewService
                     progress, ct, skipDiagnosis: true, cheapModels: cheapModels,
                     allowedProvidersOverride: allowedProvidersOverride,
                     useLocal: useLocal, localModelOverride: localModelOverride, cloudModelOverride: cloudModelOverride,
-                    modelMap: modelMap);
+                    modelMap: modelMap, allowVotes: allowVotes);
                 return result with
                 {
                     ReportMarkdown      = AppendStructuralWarnings(result.ReportMarkdown, diagnosis),
@@ -550,8 +556,9 @@ public class NodeReviewService
         Guid nodeId, int ballotsPerSegment, int proseCount, int targetChars,
         IProgress<int>? progress = null, CancellationToken ct = default,
         string? allowedProvidersOverride = null,
-        bool useLocal = false, string? localModelOverride = null)
+        bool useLocal = false, string? localModelOverride = null, bool allowVotes = false)
     {
+        votingGate.EnsureAllowed("review-node (segmented)", allowVotes);
         if (ballotsPerSegment <= 0) ballotsPerSegment = 8;
         // Local segments must fit the box's context window; cloud can take the big default.
         if (targetChars <= 0) targetChars = useLocal ? LocalUsableChars : SegmentTargetChars;
@@ -1077,8 +1084,10 @@ Return ONLY a JSON object, nothing else:
     /// Pareto/contested decision report. Freeze-then-study: nothing is edited
     /// during the run, so groups can't conflict.</summary>
     public async Task<StudyRunResult> RunSegmentStudyAsync(
-        Guid nodeId, int panelSize, IProgress<int>? progress = null, CancellationToken ct = default)
+        Guid nodeId, int panelSize, IProgress<int>? progress = null, CancellationToken ct = default,
+        bool allowVotes = false)
     {
+        votingGate.EnsureAllowed("review-node (study)", allowVotes);
         if (panelSize <= 0) panelSize = settings.ReviewPanel;
         var providers = ReviewProviderIds();
         if (providers.Count == 0)

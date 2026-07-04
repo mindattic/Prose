@@ -23,6 +23,7 @@ public class EntityRatingService
 {
     private readonly LlmVotingService llmVoting;
     private readonly ILogger<EntityRatingService> log;
+    private readonly VotingGate votingGate;
 
     private readonly CharacterRepository characters;
     private readonly TechnologyRepository technology;
@@ -85,6 +86,7 @@ public class EntityRatingService
     public EntityRatingService(
         LlmVotingService llmVoting,
         ILogger<EntityRatingService> log,
+        VotingGate votingGate,
         CharacterRepository characters,
         TechnologyRepository technology,
         WeaponryRepository weaponry,
@@ -108,6 +110,7 @@ public class EntityRatingService
     {
         this.llmVoting      = llmVoting;
         this.log            = log;
+        this.votingGate     = votingGate;
         this.characters     = characters;
         this.technology     = technology;
         this.weaponry       = weaponry;
@@ -134,8 +137,9 @@ public class EntityRatingService
     /// Add another round of votes to every entity. Scores accumulate — run repeatedly
     /// to grow the total vote pool and converge toward a natural interest distribution.
     /// </summary>
-    public async Task RateAllAsync(CancellationToken ct = default)
+    public async Task RateAllAsync(CancellationToken ct = default, bool allowVotes = false)
     {
+        votingGate.EnsureAllowed("rate-entities", allowVotes);
         log.LogInformation("EntityRatingService: RateAllAsync starting");
         await RunBatches(skipRated: false, ct);
         log.LogInformation("EntityRatingService: RateAllAsync complete");
@@ -144,8 +148,9 @@ public class EntityRatingService
     /// <summary>
     /// Rate only entities where Rating == 0. Useful for incremental updates.
     /// </summary>
-    public async Task RateUnratedAsync(CancellationToken ct = default)
+    public async Task RateUnratedAsync(CancellationToken ct = default, bool allowVotes = false)
     {
+        votingGate.EnsureAllowed("rate-entities", allowVotes);
         log.LogInformation("EntityRatingService: RateUnratedAsync starting");
         await RunBatches(skipRated: true, ct);
         log.LogInformation("EntityRatingService: RateUnratedAsync complete");

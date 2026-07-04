@@ -1,5 +1,6 @@
 using Microsoft.Extensions.DependencyInjection;
 using MindAttic.Legion;
+using StreetSamurai.Core.Services;
 
 namespace StreetSamurai.Blazor.Cli;
 
@@ -29,6 +30,11 @@ public static class LegionCli
             PrintUsage();
             return 0;
         }
+
+        // SS-A44: the Legion panel vote is disabled by default. Require the override.
+        var votingGate = sp.GetRequiredService<VotingGate>();
+        try { votingGate.EnsureAllowed($"legion {sub}", args.Contains("--allow-votes")); }
+        catch (VotingDisabledException ex) { Console.Error.WriteLine($"[legion] {ex.Message}"); return 1; }
 
         var voting = sp.GetRequiredService<LlmVotingService>();
         var question = ArgValue(args, "--question") ?? PositionalAfter(args, sub);

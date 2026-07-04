@@ -26,12 +26,18 @@ public static class DualReadCli
         var newArg  = Arg(args, "--new");
         var panel   = Arg(args, "--panel");
         var readers = int.TryParse(Arg(args, "--readers"), out var r) ? r : 12;
+        var allowVotes = args.Contains("--allow-votes");
 
         if (string.IsNullOrWhiteSpace(oldArg) || string.IsNullOrWhiteSpace(newArg))
         {
-            Console.Error.WriteLine("Usage: ss --dual-read --old <slug|id> --new <slug|id> [--panel <name>] [--readers N]");
+            Console.Error.WriteLine("Usage: ss --dual-read --old <slug|id> --new <slug|id> [--panel <name>] [--readers N] [--allow-votes]");
             return 1;
         }
+
+        // SS-A44: dual-read casts two panels of ballots — disabled by default.
+        var votingGate = sp.GetRequiredService<VotingGate>();
+        try { votingGate.EnsureAllowed("dual-read", allowVotes); }
+        catch (VotingDisabledException ex) { Console.Error.WriteLine($"[dual-read] {ex.Message}"); return 1; }
 
         var dbFactory = sp.GetRequiredService<IDbContextFactory<StreetSamuraiDbContext>>();
         var reviewer  = sp.GetRequiredService<NodeReviewService>();
@@ -52,9 +58,9 @@ public static class DualReadCli
 
         // Same panel reads both. First call creates/pins the panel; second reuses its exact roster.
         Console.WriteLine("[dual-read] reading OLD…");
-        await reviewer.ReviewNodeAsync(oldId, readers, groupName: panel);
+        await reviewer.ReviewNodeAsync(oldId, readers, groupName: panel, allowVotes: allowVotes);
         Console.WriteLine("[dual-read] reading NEW (same readers)…");
-        await reviewer.ReviewNodeAsync(newId, readers, groupName: panel);
+        await reviewer.ReviewNodeAsync(newId, readers, groupName: panel, allowVotes: allowVotes);
 
         // Pair the latest review per persona within this panel, across the two nodes.
         List<NodeReview> oldRevs, newRevs;

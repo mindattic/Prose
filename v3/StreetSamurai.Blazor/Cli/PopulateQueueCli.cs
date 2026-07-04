@@ -40,6 +40,15 @@ public static class PopulateQueueCli
             return 0;
         }
 
+        // SS-A44: entity-review / story-review enqueue score-ballot work for
+        // remote workers — disabled by default. beat-write / status are unaffected.
+        if (doEntityReview || doNodeReview)
+        {
+            var votingGate = sp.GetRequiredService<VotingGate>();
+            try { votingGate.EnsureAllowed("populate-queue (review)", args.Contains("--allow-votes")); }
+            catch (VotingDisabledException ex) { Console.Error.WriteLine($"[populate-queue] {ex.Message}"); return 1; }
+        }
+
         if (doStatus)
         {
             var rows = await coordinator.GetStatusAsync();

@@ -48,6 +48,16 @@ public static class WorkerModeCli
             return 1;
         }
 
+        // SS-A44: entity-review / node-review work types cast score ballots and
+        // are disabled by default. beat-write is prose generation and is never
+        // gated. Require --allow-votes to claim ballot work.
+        if (workType is "entity-review" or "node-review")
+        {
+            var votingGate = sp.GetRequiredService<VotingGate>();
+            try { votingGate.EnsureAllowed($"worker-mode {workType}", args.Contains("--allow-votes")); }
+            catch (VotingDisabledException ex) { Console.Error.WriteLine($"[worker] {ex.Message}"); return 1; }
+        }
+
         var legion = sp.GetRequiredService<LegionClient>();
         using var http = new HttpClient();
         http.DefaultRequestHeaders.Add("X-Worker-Key", workerKey);

@@ -151,11 +151,14 @@ MCP: `workflow_status`, `workflow_status_global`, `workflow_beat_modes`
 5. After story complete, run `ss --story-audit --slug <slug>` to audit gateway/sequel commandments
 6. After story complete, run `ss --plant-audit --slug <slug>` to check for orphaned plants
 
-## Quality Verification SOP — Logic Sweeps, NOT Votes (2026-07-04)
+## Quality Verification SOP — Logic Sweeps, NOT Votes (LAW: SS-A44)
 
 **Default QA for any story that changes or needs validation is a LOGIC & CONTINUITY SWEEP,
 not a review panel and not a Legion vote.** Panels and votes are too expensive — run them
-ONLY when the user explicitly asks for a vote/review/score in that conversation.
+ONLY when the user explicitly asks for a vote/review/score in that conversation. The engine
+enforces this (voting gate, default OFF; explicit `--allow-votes` / `allowVotes:true` only).
+
+**Canonical methodology: [docs/LOGIC.md](docs/LOGIC.md). Invocable runbook: `/logic-sweep [slug ...]`.**
 
 **The logic sweep:** agents read the story end-to-end (enabled beats only:
 `NodeBeats.IsEnabled=1 ORDER BY NodeBeats.SortKey`) and audit six dimensions:

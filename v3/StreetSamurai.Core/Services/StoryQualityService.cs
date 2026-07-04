@@ -44,6 +44,7 @@ public class StoryQualityService
     private readonly IPathProvider paths;
     private readonly IDbContextFactory<StreetSamuraiDbContext> dbFactory;
     private readonly ILogger<StoryQualityService> log;
+    private readonly VotingGate votingGate;
 
     private static readonly List<string> RubricDimensions =
     [
@@ -62,12 +63,14 @@ public class StoryQualityService
     public StoryQualityService(
         LlmVotingService llmVoting, IPathProvider paths,
         IDbContextFactory<StreetSamuraiDbContext> dbFactory,
-        ILogger<StoryQualityService> log)
+        ILogger<StoryQualityService> log,
+        VotingGate votingGate)
     {
         this.llmVoting = llmVoting;
         this.paths = paths;
         this.dbFactory = dbFactory;
         this.log = log;
+        this.votingGate = votingGate;
     }
 
     /// <summary>
@@ -91,8 +94,9 @@ public class StoryQualityService
     /// </summary>
     public async Task<StoryQualityReport> EvaluateAsync(
         AutonomousStory story, bool updatePatternAccumulator = true,
-        CancellationToken ct = default)
+        CancellationToken ct = default, bool allowVotes = false)
     {
+        votingGate.EnsureAllowed("story-quality", allowVotes);
         log.LogInformation("StoryQuality evaluation starting: projectId={ProjectId}, title={Title}, textLen={Len}",
             story.ProjectId, story.Title, story.FullText.Length);
 

@@ -135,55 +135,31 @@ narrative-law block here when stood up:**
   ambient proprioceptive information field BCI-augmented people sense (see `network_doc.md`).
 
 ## Status index (from USER_STORIES.md)
-- done: 120  partial: 8  planned: 25  cut: 1
+- done: 125  partial: 8  planned: 25  cut: 1
 
 ## Latest amendment
-## SS-A43 — Node hierarchy: Strand → SeriesNode / StoryNode / ChapterNode {#SS-A43}
+## SS-A44 — The Logic Sweep is law; voting off by default {#SS-A44}
 
-**Date:** 2026-07-03 · **Author:** engine-refactor · **Ref:** supersedes the single-"Strand" schema described in BIBLE §4; SS-A37 rule updated in place
+**Date:** 2026-07-04. **Origin:** the corpus logic campaign of 2026-07-03/04
+(`audit-outlines-2026-07-03/logic/CORPUS-REPORT.md`), which found and fixed ~25 blocker-level
+logic/continuity defects across all 11 GLMZ stories that months of score panels never localized.
 
----
+**1. The Logic Sweep ([[LOGIC]], `docs/LOGIC.md`) is the default and MANDATORY quality
+mechanism for all prose.** Whenever a beat is written, rewritten, merged, split, re-ordered, or
+disabled — and before any export — the six-dimension sweep runs: causality chain, knowledge
+states, timeline, plant/payoff ledger (including arithmetic), orphan references, bible
+agreement. Findings triage BLOCKER/MODERATE/MINOR and are fixed by minimal splice. No logical
+or chronological fallacy survives to export.
 
-### The engine abstraction is now a typed tree (binding)
+**2. Voting is OFF by default, engine-wide.** Score panels (`--review-node`), Legion votes,
+census reviews, and any service path that solicits LLM ballots or scores DO NOT RUN unless the
+user explicitly requests a vote/review/score in that conversation, expressed as an explicit
+override flag at the invocation site. Automatic/implicit voting anywhere in the pipeline
+(auto-run, quality services, workflows) is retired. Rationale: cost — panels burn per-ballot
+API spend and localize nothing the sweep doesn't name for free.
 
-The overloaded **Strand** abstraction — one entity conflating series, story, and chapter — is
-replaced by a typed hierarchy, table-per-hierarchy on the renamed **Nodes** table with a
-**NodeType** discriminator:
-
-```
-SeriesNode      — top-level grouping (saga / anthology). Never holds beats.
-  StoryNode     — a single story arc (book / novella / standalone). A leaf story
-                  with no chapters holds its beats directly.
-    ChapterNode — organizational unit inside a story; holds beats.
-Beat            — prose atom (unchanged).
-```
-
-**Schema renames (data preserved, nothing dropped):** `Strands`→`Nodes`,
-`StrandBeats`→`NodeBeats` (NOT `ChapterBeats` — that name belongs to the live legacy
-Book/Chapter tables), `StrandAmendments`→`NodeAmendments`, `StrandSpineVersions`→
-`NodeSpineVersions`, plus every Strand-named column/index/constraint (`ParentStrandId`→
-`ParentNodeId`, `StrandCode`→`NodeCode`, `StrandBible`→`NodeBible`, …). System-versioned
-history tables were renamed in lockstep; `NodeType` was backfilled on current AND history
-rows (`series`→series, `chapter`→chapter, everything else→story). Migration:
-`20260703162528_NodeHierarchyRedesign`; local backup `backups/preNodeHierarchy_20260703.bak`.
-
-**Beat attachment rule:** beats attach to ChapterNodes and to *leaf* StoryNodes (11 existing
-root stories hold beats directly — preserved, not restructured); SeriesNodes never hold beats.
-`Kind` survives as a free-form display label; the CLR type / NodeType discriminator is the
-structural truth. `NodeFactory.Create(kind)` maps labels to types at data-driven creation sites.
-
-**Surface renames:** MCP `get_story` / `list_stories` / `create_series` / `create_story` /
-`create_chapter` / `review_story` / story-bible family (legacy Book/Chapter tools renamed
-`create_legacy_book` / `create_legacy_chapter`); CLI story-scoped flags are now `--write-story`,
-`--review-node`, `--list-stories`, `--publish-story`, `--story-bible`, `--story-code`, etc.
-(`--slug` and `ss --write-outline --slug` unchanged; `--review-story` and `--run-panel` remain
-as legacy aliases for `--review-node`). Blazor routes `/node/{slug}` + `/nodes`
-remain canonical with `/story/{slug}` and `/stories` as aliases.
-
-**SS-A37 (no direct SQL deletes) now reads:** never `DELETE FROM Nodes`, `DELETE FROM Beats`,
-or `DELETE FROM NodeBeats` via raw sqlcmd — same rule, renamed tables.
-
-**Node bibles** live at `docs/nodes/<CODE>.md`. The directory was renamed from `docs/strands/`
-as part of the full strand→node terminology sweep (2026-07-03). All internal story-domain
-uses of "strand" now read as "node" or "story" per context.
+**3. Supersession.** This amendment supersedes the "mandatory dual review" workflow
+(standalone ≥82 / cumulative ≥85) as the DEFAULT; that machinery remains available behind the
+explicit override. `CLAUDE.md` §Quality Verification SOP is the working-rules mirror of this
+amendment.
 

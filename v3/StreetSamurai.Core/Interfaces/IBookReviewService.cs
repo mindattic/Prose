@@ -5,7 +5,7 @@ namespace StreetSamurai.Core.Interfaces;
 public interface IBookReviewService
 {
     /// <summary>Run a fresh review on the book. Caches results per-chapter checksum so reruns are cheap.</summary>
-    Task<BookReviewReport> ReviewAsync(string bookId, IProgress<string>? progress = null, CancellationToken ct = default);
+    Task<BookReviewReport> ReviewAsync(string bookId, IProgress<string>? progress = null, CancellationToken ct = default, bool allowVotes = false);
 
     /// <summary>Load the most recent persisted report (if any).</summary>
     BookReviewReport? LoadReport(string bookId);

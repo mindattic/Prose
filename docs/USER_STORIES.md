@@ -567,7 +567,56 @@ updated: 2026-06-25
   publish-readiness check consults open blocking `EmotionalDimensionResults`; resolving the Finding
   clears the block; `Strand.Score` is unchanged by the examination.)*
 
+## Epic N — Voting kill-switch (SS-A44) {#epic-n}
+
+> Every engine path that solicits LLM ballots/scores/votes (reader panels, Legion votes, census,
+> entity rating ballots, book/story quality scoring) is DISABLED BY DEFAULT and runs only with an
+> explicit per-invocation override. LLM use for PROSE (generation, drafting, polish) is never gated.
+> One central gate — `VotingGate` — is consulted at the entry of each ballot-soliciting flow.
+> See [SS-A44](AMENDMENTS.md#SS-A44) and [LOGIC.md §6](LOGIC.md).
+
+- **SS-US-N1 ✅** As the engine, voting is OFF by default: the committed root `legion.json` carries
+  `"votingEnabled": false`, and absence of the key resolves to OFF. *(evidence:
+  `VotingGateTests.ReadVotingEnabledDefault_KeyFalse_ReturnsFalse`,
+  `…_KeyAbsent_ReturnsFalse`, `…_NoFile_ReturnsFalse`, `CommittedLegionJson_ShipsVotingDisabled`.)*
+
+- **SS-US-N2 ✅** As an author, a gated flow with no override is refused with the exact, actionable
+  message *"Voting is disabled by default (SS-A44). Pass --allow-votes (CLI) / allowVotes:true (MCP)
+  to run this explicitly."* and one logged warning. *(evidence:
+  `VotingGateTests.EnsureAllowed_Disabled_NoOverride_Throws_WithExactMessage`,
+  `…_IsAllowed_Disabled_NoOverride_IsFalse`.)*
+
+- **SS-US-N3 ✅** As an author, the explicit override lifts the gate — `--allow-votes` on
+  `--review-node`/`--review-entity`/`--dual-read`/`--book review`/`--legion`/`--run-corpus`/
+  `--auto-run`/`--worker-mode`/`--populate-queue`/`--continuity sweep`, `allowVotes:true` on the MCP
+  `review_story` tool, and a UI review-button click. *(evidence:
+  `VotingGateTests.EnsureAllowed_Disabled_WithOverride_DoesNotThrow`,
+  `…_EnabledByDefault_DoesNotThrow_EvenWithoutOverride`; `BallotSolicitingServices_DependOnVotingGate`.)*
+
+- **SS-US-N4 ✅** As the engine, PROSE generation is never gated — `BeatGeneratorService` /
+  `ProseWriterRouter` construct and run without any `VotingGate` dependency, and the auto-run
+  pipeline skips (never fails on) the scoring step when voting is disabled. *(evidence:
+  `VotingGateTests.ProseGenerationServices_DoNotDependOnVotingGate`;
+  `ChapterCloseProcessorService.ProcessAsync` skips tiered review + fork when voting is off.)*
+
 ### Audit log
+
+- **2026-07-04 — Voting kill-switch SHIPPED ([SS-A44](AMENDMENTS.md#SS-A44)).** Central `VotingGate`
+  (`v3/StreetSamurai.Core/Services/VotingGate.cs`) reads `legion.json` `"votingEnabled"` (default
+  OFF). Gated at service entry: `NodeReviewService` (4 ballot methods), `EntityReviewService`,
+  `EntityRatingService`, `StoryQualityService`, `BookReviewService`, and `ChapterCloseProcessorService`
+  (skips the tiered panel + narrative fork gracefully). CLI `--allow-votes` on `--review-node`
+  (+`--review-story`/`--run-panel` aliases), `--review-entity`, `--dual-read`, `--book review`,
+  `--legion`, `--run-corpus`, `--auto-run`, `--worker-mode` (entity/node-review types),
+  `--populate-queue` (entity/story-review), and `--continuity sweep` (auto-resolve/apply); MCP
+  `review_story` gains `allowVotes` (default false, returns a structured `voting_disabled` error);
+  UI panel/vote buttons pass the override (the click is the explicit request); Operator
+  `score_story_quality` tool returns the SS-A44 message when off. NOT gated (deliberate): single-LLM
+  diagnostic analyzers (Logic Sweep, `StructuralDiagnosticService`, `ContinuousQualityService`
+  contradiction/cliché scan, `EmotionalDepthService`, `OutlineReviewService` structural editor,
+  `StoryRefinementService`, `BookOutlineService` outline generation/drift) — they localize concrete
+  failures for free, per SS-A44's rationale. Evidence: `VotingGateTests` (11 tests) green;
+  `dotnet build -c Release` clean across Core/Blazor/MCP. SS-US-N1..N4 → ✅.
 
 - **2026-07-03 — Node hierarchy redesign SHIPPED ([SS-A43](AMENDMENTS.md#SS-A43)).** The
   overloaded "Strand" abstraction became a typed tree: abstract `Node` + `SeriesNode` /

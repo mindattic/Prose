@@ -26,9 +26,15 @@ public static class ReviewEntityCli
         var ballotStr  = Flag(args, "--ballots");
         var proseStr   = Flag(args, "--prose");
         var unrated    = args.Contains("--unrated");
+        var allowVotes = args.Contains("--allow-votes");
 
         int ballots = int.TryParse(ballotStr, out var b) && b > 0 ? b : 30;
         int prose   = int.TryParse(proseStr,  out var p) && p >= 0 ? p : 5;
+
+        // SS-A44: entity ballot panels are disabled by default.
+        var votingGate = sp.GetRequiredService<VotingGate>();
+        try { votingGate.EnsureAllowed("review-entity", allowVotes); }
+        catch (VotingDisabledException ex) { Console.Error.WriteLine($"[review-entity] {ex.Message}"); return 1; }
 
         // ── Local / RunPod mode ───────────────────────────────────────────────
         bool useLocal = args.Contains("--local");
@@ -75,7 +81,8 @@ public static class ReviewEntityCli
             localUrl:    resolvedUrl,
             localKey:    resolvedKey,
             localModel:  resolvedModel,
-            ct:          CancellationToken.None);
+            ct:          CancellationToken.None,
+            allowVotes:  allowVotes);
 
         Console.WriteLine();
         Console.WriteLine("Done. Top-rated leaderboard and EntityReviewSummaries update complete.");

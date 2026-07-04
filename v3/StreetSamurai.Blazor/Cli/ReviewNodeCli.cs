@@ -39,6 +39,7 @@ public static class ReviewNodeCli
         int readers = settings.ReviewReaders, panel = settings.ReviewPanel,
             ballots = settings.ReviewBallots, prose = settings.ReviewProse;
         bool samePersonas = false, study = false, census = false, skipDiagnosis = false, byAct = false;
+        bool allowVotes = false;
         bool useLocal = false; string? localModel = null, localUrl = null, localKey = null, localLabel = null, modelOverride = null, providersOverride = null, modelMapRaw = null; int localCtx = 0;
         int segChars = 90000, segBallots = 8;
         // RFC 0009 §2 — cost tier. Explicit --ballots/--prose/--skip-diagnosis still win over the tier.
@@ -76,8 +77,14 @@ public static class ReviewNodeCli
                 case "--local-key":       if (i + 1 < args.Length) localKey = args[++i]; break;
                 case "--local-ctx":       if (i + 1 < args.Length && int.TryParse(args[++i], out var lc)) localCtx = lc; break;
                 case "--local-label":     if (i + 1 < args.Length) localLabel = args[++i]; break;
+                case "--allow-votes":     allowVotes = true; break;
             }
         }
+
+        // SS-A44: score panels are disabled by default. Require the explicit override.
+        var votingGate = services.GetRequiredService<VotingGate>();
+        try { votingGate.EnsureAllowed("review-node", allowVotes); }
+        catch (VotingDisabledException ex) { Console.Error.WriteLine($"[review-node] {ex.Message}"); return 1; }
 
         // --local-url/--local-key: point this run at a remote/rented OpenAI-compatible
         // endpoint (e.g. a vast.ai/RunPod box). Persisted so the UI + later runs reuse it
@@ -188,7 +195,7 @@ public static class ReviewNodeCli
             var sp = new Progress<int>(k => { if (k == panel || k % 10 == 0) Console.WriteLine($"   …{k}/{panel} readers done"); });
             try
             {
-                var st = await reviewer.RunSegmentStudyAsync(nodeId, panel, sp);
+                var st = await reviewer.RunSegmentStudyAsync(nodeId, panel, sp, allowVotes: allowVotes);
                 Console.WriteLine($"[review-node] Saved {st.Saved}/{st.Requested} ({st.Failed} failed). " +
                     $"Overall {st.MeanScore}/100 · flow {st.MeanFlow}/100 · {st.Clusters} clusters · fingerprint {st.ContentHash[..Math.Min(12, st.ContentHash.Length)]}");
                 Console.WriteLine();
@@ -213,7 +220,7 @@ public static class ReviewNodeCli
             try
             {
                 var sr = await reviewer.RunSegmentedReviewAsync(nodeId, segBallots, prose, segChars, bpa,
-                    useLocal: useLocal, localModelOverride: localModel);
+                    useLocal: useLocal, localModelOverride: localModel, allowVotes: allowVotes);
                 Console.WriteLine($"[review-node] {sr.BallotsSaved}/{sr.Ballots} ballots ({sr.Failed} failed).");
                 Console.WriteLine($"[review-node] Node {sr.MeanScore}/100  (SD {sr.Sd}, 95% CI ±{sr.Ci95})  ·  {sr.Clusters} clusters  ·  fingerprint {sr.ContentHash[..Math.Min(12, sr.ContentHash.Length)]}");
                 if (!string.IsNullOrEmpty(sr.ReportHtmPath))  Console.WriteLine($"[review-node] Report (open in browser): {sr.ReportHtmPath}");
@@ -276,7 +283,7 @@ public static class ReviewNodeCli
                     skipDiagnosis: skipDiagnosis, cheapModels: profile?.CheapModels ?? false,
                     allowedProvidersOverride: providersOverride ?? profile?.AllowedProviders,
                     useLocal: useLocal, localModelOverride: localModel, cloudModelOverride: modelOverride,
-                    modelMap: modelMap);
+                    modelMap: modelMap, allowVotes: allowVotes);
                 Console.WriteLine($"[review-node] {sr.BallotsSaved}/{sr.Ballots} ballots ({sr.Failed} failed), {sr.ProseAdded} prose upgraded.");
                 Console.WriteLine($"[review-node] Node {sr.MeanScore}/100  (SD {sr.Sd}, 95% CI ±{sr.Ci95})  ·  {sr.Clusters} clusters  ·  fingerprint {sr.ContentHash[..Math.Min(12, sr.ContentHash.Length)]}");
                 if (!string.IsNullOrEmpty(sr.ReportHtmPath))  Console.WriteLine($"[review-node] Report (open in browser): {sr.ReportHtmPath}");
@@ -336,7 +343,7 @@ public static class ReviewNodeCli
         NodeReviewService.ReviewRunResult run;
         try
         {
-            run = await reviewer.ReviewNodeAsync(nodeId, readers, personaIds: personaIds, groupName: group, progress: progress);
+            run = await reviewer.ReviewNodeAsync(nodeId, readers, personaIds: personaIds, groupName: group, progress: progress, allowVotes: allowVotes);
         }
         catch (Exception ex)
         {

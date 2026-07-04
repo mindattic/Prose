@@ -29,6 +29,7 @@ public class EntityReviewService
     private readonly VotingConfiguration cfg;
     private readonly IDbContextFactory<StreetSamuraiDbContext> dbFactory;
     private readonly ILogger<EntityReviewService> log;
+    private readonly VotingGate votingGate;
 
     private readonly CharacterRepository characters;
     private readonly TechnologyRepository technology;
@@ -59,6 +60,7 @@ public class EntityReviewService
         VotingConfiguration cfg,
         IDbContextFactory<StreetSamuraiDbContext> dbFactory,
         ILogger<EntityReviewService> log,
+        VotingGate votingGate,
         CharacterRepository characters,
         TechnologyRepository technology,
         WeaponryRepository weaponry,
@@ -84,6 +86,7 @@ public class EntityReviewService
         this.cfg             = cfg;
         this.dbFactory       = dbFactory;
         this.log             = log;
+        this.votingGate      = votingGate;
         this.characters      = characters;
         this.technology      = technology;
         this.weaponry        = weaponry;
@@ -120,8 +123,10 @@ public class EntityReviewService
         string? localUrl = null,
         string? localKey = null,
         string? localModel = null,
-        CancellationToken ct = default)
+        CancellationToken ct = default,
+        bool allowVotes = false)
     {
+        votingGate.EnsureAllowed("review-entity", allowVotes);
         log.LogInformation(
             "EntityReviewService: ReviewAllAsync (skipRated={Skip}, ballots={B}, prose={P}, type={T}, local={L})",
             skipRated, ballotCount, proseCount, entityType ?? "all", localUrl ?? "cloud");

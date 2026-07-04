@@ -231,6 +231,19 @@ public static class ContinuityCli
         var skipApply    = args.Contains("--skip-apply");
         var dryRun       = args.Contains("--dry-run");
 
+        // SS-A44: the auto-resolve (step 3) and apply (step 4) phases decide
+        // canonical values via a Legion panel vote (DecideAsync). Those are
+        // disabled by default — extraction still runs, but resolution/apply are
+        // skipped unless --allow-votes is passed. The sweep never fails on this.
+        var votingGate = services.GetRequiredService<VotingGate>();
+        if (!votingGate.IsAllowed(args.Contains("--allow-votes")))
+        {
+            if (!skipResolve || !skipApply)
+                Console.WriteLine("[sweep] Auto-resolve/apply skipped: voting disabled by default (SS-A44). Pass --allow-votes to let the panel resolve contradictions.");
+            skipResolve = true;
+            skipApply   = true;
+        }
+
         // Resolve scope of chapters
         List<string> chapterIds;
         string scopeLabel;

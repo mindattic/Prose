@@ -24,6 +24,7 @@ public class ChapterCloseProcessorService(
     OutlineAdherenceService adherence,
     NodeReviewService reviewer,
     NarrativeForkService forkService,
+    VotingGate votingGate,
     ILlmService llm)
 {
     public const int MinChapterScore = 80;
@@ -35,9 +36,16 @@ public class ChapterCloseProcessorService(
         int chapterIndex,
         string chapterProse,
         int forkCount = 0,
-        CancellationToken ct = default)
+        CancellationToken ct = default,
+        bool allowVotes = false)
     {
         var result = new ChapterCloseResult { ChapterIndex = chapterIndex };
+
+        // SS-A44: the tiered review gate (step 4) and the narrative fork (step 5)
+        // both solicit LLM scores/ballots. When voting is disabled and not
+        // explicitly overridden, skip them gracefully — the summary/contradiction/
+        // adherence audits (steps 1-3) still run. Auto-run must not fail.
+        var votingAllowed = votingGate.IsAllowed(allowVotes);
 
         // 1. Persist chapter summary
         try
@@ -98,30 +106,39 @@ public class ChapterCloseProcessorService(
             result.Warnings.Add($"Adherence: {ex.Message}");
         }
 
-        // 4. Tiered review gate
-        var chapterScore = await QuickScoreAsync(chapterProse, ct);
-        result.ChapterScore = chapterScore;
-
-        if (chapterScore < HardFloor)
+        // 4. Tiered review gate (SS-A44: scoring — skipped when voting disabled)
+        if (!votingAllowed)
         {
-            // Tier 3: standard panel
-            result.ReviewTier = 3;
-            await RunPanelReviewAsync(chapterId, ReviewEffortProfile.Standard, result, ct);
-        }
-        else if (chapterScore < MinChapterScore)
-        {
-            // Tier 2: draft panel
-            result.ReviewTier = 2;
-            await RunPanelReviewAsync(chapterId, ReviewEffortProfile.Draft, result, ct);
+            result.ReviewTier = 0;
+            result.Warnings.Add("Review scoring skipped: voting disabled by default (SS-A44). Pass --allow-votes to score this chapter close.");
         }
         else
         {
-            // Tier 1: single call passed, no panel needed
-            result.ReviewTier = 1;
+            var chapterScore = await QuickScoreAsync(chapterProse, ct);
+            result.ChapterScore = chapterScore;
+
+            if (chapterScore < HardFloor)
+            {
+                // Tier 3: standard panel
+                result.ReviewTier = 3;
+                await RunPanelReviewAsync(chapterId, ReviewEffortProfile.Standard, result, ct);
+            }
+            else if (chapterScore < MinChapterScore)
+            {
+                // Tier 2: draft panel
+                result.ReviewTier = 2;
+                await RunPanelReviewAsync(chapterId, ReviewEffortProfile.Draft, result, ct);
+            }
+            else
+            {
+                // Tier 1: single call passed, no panel needed
+                result.ReviewTier = 1;
+            }
         }
 
-        // 5. Narrative fork — optional; generates N competing arcs for next chapter, keeps best
-        if (forkCount >= 2)
+        // 5. Narrative fork — optional; generates N competing arcs for next chapter, keeps best.
+        //    Fork selection scores candidates (SS-A44) — skipped when voting disabled.
+        if (forkCount >= 2 && votingAllowed)
         {
             try
             {
@@ -180,7 +197,8 @@ public class ChapterCloseProcessorService(
                 skipDiagnosis: profile.SkipDiagnosis,
                 cheapModels: profile.CheapModels,
                 allowedProvidersOverride: profile.AllowedProviders,
-                ct: ct);
+                ct: ct,
+                allowVotes: true);
 
             result.PanelScore      = sr.MeanScore;
             result.PanelBallotsSaved = sr.BallotsSaved;

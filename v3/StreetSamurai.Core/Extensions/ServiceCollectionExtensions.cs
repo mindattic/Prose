@@ -708,6 +708,17 @@ public static class ServiceCollectionExtensions
             return cfg;
         });
 
+        // SS-A44 voting kill-switch. One central gate consulted at the entry of
+        // every ballot/score/vote-soliciting flow. Default read from legion.json
+        // ("votingEnabled"); absent = OFF. Prose generation is never gated.
+        services.AddSingleton<VotingGate>(sp =>
+        {
+            var pathProvider = sp.GetRequiredService<IPathProvider>();
+            var gateLog      = sp.GetRequiredService<ILogger<VotingGate>>();
+            var enabled      = VotingGate.ReadVotingEnabledDefault(pathProvider.DataRoot);
+            return new VotingGate(enabled, gateLog);
+        });
+
         // Findings store + autonomous quality monitor. The monitor subscribes
         // to IChapterRepository.OnChapterSaved on construction; eager-
         // instantiating it at startup makes the subscription live immediately.
