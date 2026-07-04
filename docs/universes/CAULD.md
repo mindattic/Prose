@@ -99,6 +99,15 @@ reflected off the crystal cloud formations that layer the upper atmosphere of th
 How this penetrates the boundary between Spheres is not discussed in-world — it simply works,
 the way stone burns and water freezes, and no one lectures about it in the field.
 
+**The membrane.** The boundary between Spheres has no name in House doctrine beyond "the
+membrane" — a functional term that operators use without examining. Long-tenure vigil operators,
+the ones who have been at thin-membrane sites for decades, sometimes describe it differently in
+private: as something that breathes. As something that responds. Not to the apparatus — to
+them. This is not in any formal record. It is what operators tell each other on night watches
+at thin-membrane sites, and what they stop saying when anyone from the House administration
+is present. Whether the membrane is a physics boundary, a biological structure, or something
+the Cauld has no category for is a question nobody at any House has been authorized to answer.
+
 **The Houses control Scrying.** Control the installation, control what gets manufactured.
 The war is fought over Scrying access as much as territory. A House that loses its Scrying
 station loses its technological advantage within a generation.
@@ -801,33 +810,60 @@ commandment.
 An extracosmic being. In its native state — outside all Spheres, outside this universe — it is
 simply a being. Not a god in the worshipped sense. A system administrator who made a server and
 fell into it. It created this universe as work. Somewhere in the making, it became subject to
-the rules of what it made. It is now inside, operating at our resolution, unable to return.
+the rules of what it made. It is now inside, unable to return.
 
-**What this may explain:**
-- **Scrying:** The Prisoner's native perception spans all Spheres simultaneously. The Houses found
-  a crack in that perception and learned to look through it. They did not invent the ability.
-  They found the leak.
-- **The Monsters:** The Prisoner's presence, leaking into the physics of the world from the
-  inside, may explain why the monsters exist and why they are wrong in a way animals are not.
-  Nobody knows. No House has investigated this publicly.
-- **Thin-spot sensitivity:** Why some people perceive things at the membrane that apparatus cannot
-  capture. Whether The Prisoner notices them back.
+**The membrane question.** The membrane between Spheres — the tissue Scrying looks through and
+Piercing punctures — is organic in character. Long-tenure Scrying operators describe it as
+something that breathes. The apparatus does not touch stone or field or physics; it touches
+something that responds. What it responds to, how, and whether the response is sensation or
+immunity or something with no name available to the Cauld — nobody has said this clearly, at
+any House, in any public proceeding.
+
+The question the Liturgy has opinions about and the Houses don't know to ask: **Is the Prisoner
+the membrane?** Not trapped inside the universe it made, but become the connective tissue
+between all universes. Its body the boundary. Its nervous system the crystal cloud formations
+that make Scrying possible. Every thin-membrane site a place where it is thin or injured. Every
+piercing a puncture in something alive. A thousand years of war fought partly by stabbing the
+organism that holds all Spheres apart from each other.
+
+**What this would explain:**
+- **Scrying:** Not a crack in physics. A crack in the Prisoner's perception — or its skin.
+  The Houses found the leak without understanding what was leaking.
+- **Piercing:** The membrane closes after a pierce the way living tissue closes, not the way
+  a wall reseals. Because it is living tissue.
+- **The Monsters:** Not native ecology gone wrong. Immune response. Things the organism shed
+  where the membrane was repeatedly breached. They predate civilization because the membrane
+  predates civilization and the first piercings predate the Houses.
+- **Thin-membrane sites:** Where the Prisoner is weak, old, thin. The vigil operators who
+  have been at their post for decades, who perceive things apparatus cannot — they are
+  sensitive to the Prisoner's own experience of having them on its surface.
+- **Bheur:** What the Scrying apparatus sometimes shows when the aim is wrong. Not another
+  Sphere. The other side of the Prisoner's body.
+- **The Vigil Glass anomaly:** Canon Sibylle Vaur's undisclosed finding — the Vigil Glass
+  showing images at non-thin-membrane sites. The Prisoner is moving. Or responding. Something
+  is different from how it has been.
 
 **What nobody knows:**
-- Is The Prisoner still coherent, or has it lost itself after centuries of entrapment?
-- Is Scrying The Prisoner's perception leaking out, or is it calling out?
-- What does it want, if it still wants anything?
-- Would freeing it dissolve the universe it became?
+- Is the Prisoner the membrane, or is the membrane something the Prisoner made and is now
+  trapped inside?
+- Is the Prisoner still coherent, or has it become distributed across every boundary between
+  every Sphere it has ever separated?
+- Does it perceive the piercings? Each one is a needle-prick to something the size of all
+  reality. A thousand years of needle-pricks may not be nothing.
+- Would freeing it — restoring it to its extracosmic state — collapse the membrane? Would
+  every Sphere spill into every other Sphere simultaneously?
+- What does the Liturgy know, and how long have they known it?
 
 **What the Houses argue:** The Prisoner is dormant and must not be disturbed. / Scrying IS The
 Prisoner calling out; to Scry is to answer. / The Harrow legend is what The Prisoner looks like
-at the death-interface. / None of these are correct.
+at the death-interface. / None of these are correct. None of them are asking the right question.
 
 **Hard bans:**
 - The Prisoner is NEVER confirmed as real in-universe. It is the great mystery.
-- No House's theology about it is correct.
+- The membrane-as-organism theory is NEVER confirmed. It is the question nobody in the Cauld
+  has been able to ask clearly. The Liturgy has opinions. They have not shared them.
+- No House's theology about the Prisoner is correct.
 - The Prisoner does not speak clearly to anyone.
-- It is not evil. It is trapped, operating at our resolution, possibly not aware of individual lives.
 - Do not name it anything other than "The Prisoner."
 
 ---
