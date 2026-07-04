@@ -215,6 +215,60 @@ with it.
 The taken person is not told they were selected. They are told they were called. The distinction
 is maintained as long as anyone in the room finds it useful.
 
+**Why the truth does not travel:** The taken person knows what happened to them. The
+information exists. It does not reach anyone who can act on it, for reasons that require no
+suppression program and no amnesia:
+
+- **Language.** A pierced conscript arrives speaking nothing anyone in the Cauld recognizes.
+  By the time they have learned enough Cauld language to give testimony, they have spent months
+  inside the institution that benefits from their silence, learning who to trust and who not
+  to. The moment for testimony has passed before the vocabulary to give it exists.
+
+- **Plausibility collapse.** Citizens understand Scrying as observation only — you look through
+  the membrane, you copy the design, you build it here. A taken person who says "someone reached
+  through and took me from my own world" is making a claim the listener has no framework to
+  receive. It reads as madness, not testimony. An unframeable claim does not travel.
+
+- **No anchor.** The taken person can name their city, their country, their world. None of
+  these appear in any House map or Sphere catalogue. There is no verification path. A sympathetic
+  listener cannot report the claim upward in any form that means anything to anyone above them.
+
+- **Who do you tell.** The institution the taken person is embedded in is the institution that
+  benefits from the taking. Telling your commanding officer that you were abducted is telling
+  your captor that you know you are a captive. Most people understand this without being told.
+
+- **Time.** After five years in the Cauld — language learned, some form of life built — the
+  origin world has become increasingly abstract and the truth no longer changes anything about
+  the present. There is no rescue coming from the origin Sphere. Telling costs something.
+  Staying quiet costs nothing. Most people who have survived long enough to tell have already
+  made this calculation.
+
+- **The information is atomized.** Each taken person knows their own story. They have no way
+  to know how many others there are, where they are, or how to find them. The pattern is
+  invisible from inside a single experience of it.
+
+- **Citizens who could notice choose not to.** The plate that doesn't sit flush on the rifle.
+  The soldier with the accent from no known region. The word that appears once and is never
+  used again. Everyone who could connect these things has strong structural reasons to leave
+  them unconnected.
+
+The truth is available to anyone who assembles the pieces. No one is positioned to assemble
+the pieces. This is not designed. It is the natural shape of a system where the people who
+know are distributed, isolated, and embedded in institutions that benefit from their silence.
+
+**The invisible harm.** The taken person arrives alive, functional, and without visible wounds
+from the taking. The grief of everyone they left behind happened on the other side of the
+membrane — in their origin Sphere, where a family waited and a body was never found and a case
+was filed and eventually closed. None of that is visible in the Cauld. The Cauld cannot see
+it. From inside the Cauld, what the taking looks like is: a person appeared. They were
+available.
+
+This is why the Houses do not experience piercing as moral weight. The harm is entirely
+located somewhere they cannot perceive. The taken person is there, present, functional —
+they have not, from the Cauld's vantage point, lost anything that the Cauld can see. The
+loss is real. It happened. It is being experienced right now by people in a world the Cauld
+has no window into. The Cauld simply does not have access to the evidence of what it costs.
+
 **Who can pierce:** Not every House with a Scrying installation has piercing capability.
 Observation Scrying is the standard. Piercing requires more — a different calibration of the
 apparatus, a practitioner who can hold the breach, or access to a thin-membrane site where
