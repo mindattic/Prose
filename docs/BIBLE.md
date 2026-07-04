@@ -209,9 +209,6 @@ shapes; they do not rewrite canon values.
 
 > **Inherits [MindAttic.HouseRules.md](../../MindAttic.HouseRules.md)** (shared, repo-external).
 > Those house rules apply in full and are not restated here. Project-specific laws follow.
-> **`docs/AMENDMENTS.md` is RETIRED (2026-07-04).** All amendments have been merged into this
-> file and the relevant story bibles. Canon changes go directly into this file or the
-> relevant `docs/nodes/<CODE>.md`. There is no amendment layer.
 
 **Engine invariants (do not violate):**
 
@@ -396,7 +393,6 @@ A prose beat/node is **done** only when:
 - **If the story introduces new world facts** (new CorpoNation, new species, new world event,
   new narrative laws for a character): write them **directly** into `docs/BIBLE.md` (engine/world
   level) or `docs/universes/GLMZ.md` (GLMZ world facts layer), then sync with `ss --sync-markdown`.
-  Do NOT append to `docs/AMENDMENTS.md` — it is retired.
 - **If the story introduces new story-specific facts:** write them into `docs/nodes/<CODE>.md`.
 - **Always**: add a new story entry to `docs/USER_STORIES.md` under the appropriate Epic, with
   sub-items for entity seeding, chapter structure, each act, and the review target.
@@ -446,9 +442,7 @@ For each chapter, in order:
 ---
 
 *Maintenance rule: when you finish a goal, flip its status here and in
-[USER_STORIES.md](USER_STORIES.md) and add acceptance evidence in the same change. This file is the
-authoritative source of truth — write canon changes directly here, not to a separate amendments
-file. `docs/AMENDMENTS.md` is RETIRED; do not reference or append to it.*
+[USER_STORIES.md](USER_STORIES.md) and add acceptance evidence in the same change.*
 
 ---
 

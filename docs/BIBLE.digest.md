@@ -35,9 +35,6 @@ story row belongs to exactly one Universe ([SS-LAW-15](#SS-§5)).
 
 > **Inherits [MindAttic.HouseRules.md](../../MindAttic.HouseRules.md)** (shared, repo-external).
 > Those house rules apply in full and are not restated here. Project-specific laws follow.
-> **`docs/AMENDMENTS.md` is RETIRED (2026-07-04).** All amendments have been merged into this
-> file and the relevant story bibles. Canon changes go directly into this file or the
-> relevant `docs/nodes/<CODE>.md`. There is no amendment layer.
 
 **Engine invariants (do not violate):**
 
