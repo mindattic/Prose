@@ -1,0 +1,55 @@
+DWIACE Round-3 Data Repair — Beat 554 SortKey Correction
+Node: death-whispers-in-a-cats-ear-019ec3fe (019EC3FE-4AA7-75B8-915B-4222005F2E1C)
+Date: 2026-07-03
+
+BEAT
+  BeatId:  019F21AF-2A9E-72DB-8DF6-B0F209CF9F9E
+  Text preview: "He didn't wait for them to come back with something. Thirty years had
+    taught him that the firm holding the records is the firm writing the ending,
+    and he wasn't going to let Meridian write this one from a chair in a tower
+    he'd never see the inside of. ... He put a call through to the mod-clinic
+    on Ashland ... a bored kid ... 'It's gone,' the kid said ... 'Meridian
+    Consulting, legal preservation order, third-party review.'"
+
+SORTKEY CHANGE
+  Old SortKey: 42600.0   (enabled position 554, wedged between Pos 553 "Teller
+               found the stable signature" and Pos 555 "closing entry" — inside
+               the case-closing/payment sequence, AFTER Celeste's rescue,
+               AFTER Douglas Hartley's and Mei-Lin's payments)
+  New SortKey: 2450.0    (between Pos 80 SortKey 2400.0 and Pos 81 SortKey 2500.0)
+
+WHY THIS SLOT
+  - Beat at SortKey 2400.0 (Analog): "Meridian's team is connected. Every
+    checkpoint they pass, every channel they ping, leaves a signature. If
+    Celeste is offline by design at a reputable shop, their approach will
+    look exactly like an aggressive corporate investigation ... the shop will
+    go dark." / Rennick: "We need to be faster than they are."
+  - Beat 554's content is the direct, dramatized payoff of that exact warning:
+    Rennick tries the official/licensed-record channel himself, and Meridian
+    shuts it down in real time ("It locked while I was in it") — proving
+    Analog's prediction and supplying the narrative reason the team pivots to
+    riskier, off-book methods (physical stakeout of the Ashland-Cermak
+    building at SortKey ~14500-14900, Analog's manual tracking, Ines contact).
+  - This occurs BEFORE the team has confirmed the install shop is an
+    unlicensed/lapsed-registration front (that confirmation happens later,
+    SortKey ~14600-15300) — consistent with Rennick still hoping for/expecting
+    an official paper trail at this early point in the investigation.
+  - At its old position (42600.0, enabled pos 554) the same content is
+    chronologically impossible: Celeste has already been physically rescued
+    (~SortKey 36700-38600), Douglas Hartley and Mei-Lin have already paid and
+    closed the case (SortKey 40000-40300, 42400), and Teller has just reported
+    the final "stable signature" (SortKey 42500) one beat before the close-out
+    entry (SortKey 42700). An active, unresolved evidence-chase beat cannot
+    sit there without breaking the closing rhythm — matches panel finding
+    (7/42): "chronologically displaced, redundant with beats 518-529, breaks
+    closing rhythm."
+
+ACTION TAKEN
+  UPDATE NodeBeats SET SortKey = 2450.0
+  WHERE NodeId = '019EC3FE-4AA7-75B8-915B-4222005F2E1C'
+    AND BeatId = '019F21AF-2A9E-72DB-8DF6-B0F209CF9F9E';
+
+ROLLBACK (if ever needed)
+  UPDATE NodeBeats SET SortKey = 42600.0
+  WHERE NodeId = '019EC3FE-4AA7-75B8-915B-4222005F2E1C'
+    AND BeatId = '019F21AF-2A9E-72DB-8DF6-B0F209CF9F9E';

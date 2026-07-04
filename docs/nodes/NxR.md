@@ -55,7 +55,7 @@ Her rule was: no repeat clients, no repeat crew. She agreed to this before fully
 **Wound:** Still present from MxG. Not fixed by a single job that went right. Partial opening only.
 
 ### Tem Okafor ("Vox")
-Running four channels instead of six. The graze wound from the Lake Platform healed. The bandwidth did not fully come back. Vox has been quietly rebuilding the agent network from scratch using older, slower methods — gray-market firmware, deprecated protocols, tools the current security infrastructure does not bother scanning for because nobody uses them anymore. Rust as tactical advantage: the rotting edge of the GLMZ tech ecosystem is precisely what PEREGRINE's signal apparatus is not watching.
+Running four channels instead of six. The graze wound from the safehouse breach healed. The bandwidth did not fully come back. Vox has been quietly rebuilding the agent network from scratch using older, slower methods — gray-market firmware, deprecated protocols, tools the current security infrastructure does not bother scanning for because nobody uses them anymore. Rust as tactical advantage: the rotting edge of the GLMZ tech ecosystem is precisely what PEREGRINE's signal apparatus is not watching.
 
 Quieter than in MxG. Has stopped explaining why.
 

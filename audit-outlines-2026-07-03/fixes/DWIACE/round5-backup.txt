@@ -1,0 +1,62 @@
+DWIACE Round-5 Data Repair — Duplicate Pulse-Departure Sequence (Sequence A disabled)
+Node: death-whispers-in-a-cats-ear-019ec3fe (019EC3FE-4AA7-75B8-915B-4222005F2E1C)
+Date: 2026-07-03
+Source: audit-outlines-2026-07-03/logic/DWIACE.md, §3 Timeline + §4 Plant/Payoff
+  ("DEFERRED — Duplicate Pulse-departure sequence (item d)"), editor call resolved per
+  this task's explicit instruction: keep Sequence B, soft-disable Sequence A.
+
+BACKGROUND
+  Two incompatible tellings of Celeste's Pulse trip out of Evanston exist back-to-back
+  in Ch1 "Cel":
+    Sequence A (SortKey 13.0-14.0, Beat Numbers 4055/4054) — compressed/alternate
+      version: "Evanston Pulse terminus is six blocks south... Chamber 4... luxury pod
+      interior... 680 miles an hour... four minutes nonstop to the Chicago Loop
+      terminus, direct route, no stops." No arrival scene; thread never resumes.
+    Sequence B (SortKey 12.0 + 15.0-29.0+, Numbers 3929, 3930-3944, 4037+) — fuller,
+      load-bearing version: "Twelve minutes to the Pulse station at her pace"
+      (walking), an ordinary pod ride past "the Loyola curve" and "Belmont maintenance
+      platform," surfacing in Uptown, arriving via "Logan Square" — the destination
+      every subsequent beat in the chapter (the bar-assault/Ines-introduction scene)
+      requires.
+  Read in DB order, SortKey 12 has her still walking through her suburb at 02:43;
+  SortKey 13-14 has her already boarded and mid-transit; SortKey 15 restarts with
+  "Twelve minutes to the Pulse station," implying she hasn't left yet — she appears to
+  depart twice. Destinations also conflict (Chicago Loop terminus vs. a Logan Square
+  arrival on foot).
+
+VERIFICATION BEFORE DISABLING (full-text search, all beats, enabled + disabled, in node)
+  - "Chicago Loop terminus" -> 1 hit, SortKey 13.0 only.
+  - "the Manifold" -> 1 hit, SortKey 13.0 only.
+  - "Chamber 4" -> 1 hit, SortKey 13.0 only.
+  - "luxury pod" -> 1 hit, SortKey 13.0 only.
+  - "HAZMAT-C" -> 1 hit, SortKey 13.0 only.
+  - "skeleton staff and cargo" -> 1 hit, SortKey 13.0 only.
+  - "0.6g" -> 1 hit, SortKey 14.0 only.
+  No other beat (enabled or disabled) in the node references any of Sequence A's unique
+  content. Safe to disable with zero live dependency.
+
+BEATS DISABLED
+  BeatId 019ECBF7-87DF-7CB4-B3C2-FCC932F79497 (Number 4055, SortKey 13.0)
+    Text preview: "The Evanston Pulse terminus is six blocks south... the Manifold...
+    assigns Chamber 4 to her booking... four minutes to the Chicago Loop terminus,
+    direct route, no stops. ... She walks in."
+  BeatId 019ECBE0-E595-73A5-9E2D-2D8F23F72C99 (Number 4054, SortKey 14.0)
+    Text preview: "The chamber door closes behind her... Then 0.6g. Forward... Then
+    smooth: 680 miles an hour, south... Four minutes... Hope-posture."
+
+ACTION TAKEN (soft-disable only — no rows deleted, per hard rule SS-A37/A43)
+  UPDATE NodeBeats SET IsEnabled = 0
+  WHERE NodeId = '019EC3FE-4AA7-75B8-915B-4222005F2E1C'
+    AND BeatId IN ('019ECBF7-87DF-7CB4-B3C2-FCC932F79497',
+                   '019ECBE0-E595-73A5-9E2D-2D8F23F72C99');
+
+RESULT
+  Reading order at SortKey 12-15 now: SortKey 12.0 ("Outside. The suburb at 02:43...")
+  -> SortKey 15.0 ("Twelve minutes to the Pulse station at her pace...") — one
+  continuous departure, no restart, no destination conflict.
+
+ROLLBACK (if ever needed)
+  UPDATE NodeBeats SET IsEnabled = 1
+  WHERE NodeId = '019EC3FE-4AA7-75B8-915B-4222005F2E1C'
+    AND BeatId IN ('019ECBF7-87DF-7CB4-B3C2-FCC932F79497',
+                   '019ECBE0-E595-73A5-9E2D-2D8F23F72C99');

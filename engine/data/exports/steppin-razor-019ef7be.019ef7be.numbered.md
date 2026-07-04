@@ -150,6 +150,8 @@ Beecher was behind her. The farm road went south. She walked south with the dog 
 [Beat 4]
 The road south ran flat through harvested fields, the stalks cut to ankle height and the soil the dark gray-brown of something that had been rained on and not yet dried. The Pulse freight corridor ran parallel about four hundred meters west — she could hear it, or feel it more accurately, the low-frequency vibration the maglev rails put into the ground with every load moving north toward the city. The hum of it wasn't the hum she carried in her back teeth, the one that had no external source, the one that had been there since she was small. That hum was internal and constant. The freight hum came and went in waves and was, by comparison, a comfort.
 
+She crouched once and set her palm flat to the ground, reading the freight vibration the way she read everything — through the part of her that took pressure before it took sound. The soil was cold and wet, the way soil was this month. Then, for less than a second, the patch under her hand went warm — blood-warm, wrong, a heat with no business in a cut field in the dark — and when she spread her fingers it was cold wet dirt again, the way it should have been. She stood and wiped her hand on her coat. She had four hours and a shrinking list of open directions; a patch of ground that ran warm and then didn't was not on it, so she left it there and walked.
+
 *The Beecher fixer had a phone. He ran before he used it, but he had it.*
 
 She had maybe four hours before whoever the hardware shop man reported to had a name or a face or a direction. Less if the mother had already talked to the Pulse freight stop, which was the kind of thing a mother in a four-hundred-person town would do because the freight stop was the only place in Beecher with regular outside contact and a logging system. The freight stop would have her on visual from when she'd come in. She hadn't been hiding coming in — she'd had no reason to hide coming in.
@@ -371,7 +373,7 @@ The dog kept pace.
 
 The dog looked up at the change in her voice, then away.
 
-"Braidwood. Closed. The hunter filed a report before I put him down. Thorough of him." A crow lifted off a fence line and resettled. "The flat ground east of the freight road - both operators down, so, active, and the order's about to upgrade the price on the strength of it."
+"Braidwood. Closed. The hunter filed a report before I put him down. Thorough of him." A crow lifted off a fence line and resettled. It called once — and then called again, a half-beat late, identical, from the same fence line and the same throat, though only the one bird had moved and it had already gone still. She stopped. The dog stopped. Stubble and wire and one quiet crow, and nothing else out there to make a sound, let alone make it twice. She started walking again, because a sound that came twice was not a box on the map, and the map was the only thing out here that could kill her. "The flat ground east of the freight road - both operators down, so, active, and the order's about to upgrade the price on the strength of it."
 
 She ran the list to the bottom and checked it against what she knew of the order's distribution and found that the number of places still open to her had shrunk to what she could cross at a walk in a single morning.
 
@@ -636,7 +638,7 @@ She stood with it for a moment — the credential in her pocket, the ache on her
 She pressed her thumb to the recess panel — the same read as the hatch on the bridge, the same patient architecture built for the kind of body that stopped because it felt something — and the coffin lid gave, and the pull came up through the concrete and through the soles of her boots and into the ache in her ribs like a frequency finding its matching string, and she went down into it.
 
 [Beat 24]
-The corridor climbed before it descended — a structural quirk of the Exchange district's layered construction, where the grade-level street sat on top of two generations of older street, and the pedestrian infrastructure had been retrofitted to bridge them. The elevated walkway was twenty floors up by the time she cleared the second lift bank, and the crowd was the kind of crowd the Exchange generated at this hour: six thousand people moving in the coordinated way of people who had somewhere to be and a neuretics-optimized route telling them exactly how to get there. She was the only person on the walkway not moving. She was the only person on the walkway who had stopped.
+The hatch had let her down into the oldest of it — a street two generations buried, roofed over and long forgotten — and down there the pull she'd chased had gone thin and wrong under her ribs, a strong read at a distance that emptied out the closer she got to it. So she went back up toward the light. The corridor climbed before it descended — a structural quirk of the Exchange district's layered construction, where the grade-level street sat on top of two generations of older street, and the pedestrian infrastructure had been retrofitted to bridge them. The elevated walkway was twenty floors up by the time she cleared the second lift bank, and the crowd was the kind of crowd the Exchange generated at this hour: six thousand people moving in the coordinated way of people who had somewhere to be and a neuretics-optimized route telling them exactly how to get there. She was the only person on the walkway not moving. She was the only person on the walkway who had stopped.
 
 The camel was there.
 
@@ -644,9 +646,11 @@ It stood on the walkway's central span with the patient solidity of something th
 
 *Joliet. The storeroom. You told yourself you were stopping.*
 
-She walked toward him through the crowd that did not see him, and when she reached the camel's flank she stopped and looked up at the man and said nothing, because she had already asked all her questions in the underpass and in the corridor and in three years of map and she was done asking. He looked down at her with the patience of something that had been waiting for her, and then he said it simply, the way you say a thing to someone who can finally hear it: not the Exchange floor, not the main hall, not anywhere the signal was clean. The eastern colonnade. Where the instrument read was dirtier. Where the softer signal had been mistaken for noise for ten years, and Halcyon had built their drill site in the noise because the noise was where the source was, and the clean signal was the echo.
+She walked toward him through the crowd that did not see him, and when she reached the camel's flank she stopped and looked up at the man and said nothing, because she had already asked all her questions in the underpass and in the corridor and in three years of map and she was done asking. He looked down at her with the patience of something that had been waiting for her, and then he said it simply, the way you say a thing to someone who can finally hear it: not the clean floor. The eastern colonnade, where the read had been dirty for ten years and everyone had called the dirt noise.
 
 Less than a kilometer.
+
+She had the rest without being told: the clean pull she'd chased down two generations of buried street had been the echo, not the source.
 
 The camel exhaled — a warm pressure against her shoulder, animal and immediate, the most biological thing that had happened to her in the inner ring — and she did not step back. She stood in it. The crowd moved around them both.
 

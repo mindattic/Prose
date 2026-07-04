@@ -176,7 +176,9 @@ B5: The shot. The stoned Han Do-yun (Lotus heir, on the couch) comes up firing; 
 round through the heart (RETCON — was Levin; see lock #3). IdentiScan resolves Do-yun's identity one
 beat too late (mother Han Jeong-suk, Stem). Tomas: "Take care of this."
 B6: Levin (technician-cold) seats the loaner from the Scarab + rare type discovered; **lets Osei keep
-the arm for a single vial of Tears** (the spared limb → lock #6); loads Do-yun into the ward and wires
+the arm for the whole drawer of Tears** (the spared limb → lock #6; reconciled 2026-07-04 — prose at
+275/500/600 was already "whole stock/drawer," so beat 300 was changed to match rather than the other
+way around); loads Do-yun into the ward and wires
 him to life support; doses; drives off — a man on borrowed hardware in the back, 72-hr clock running.
 Closes on the "we just killed ourselves / perfect time to take the edge off" beat and the wedding reveal.
 

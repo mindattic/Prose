@@ -182,10 +182,13 @@ choice from that moment forward.
 11. The Surfacing (Ensemble climax)
 12. Voluntary Recall (Ensemble finale)
 
-**Note on structure:** The Celeste child strands (`cel-019ec965`, `what-she-asked-for-019ec965`,
-`the-ghost-period-019ec965`) are SEPARATE strands not yet stitched into the book-strand beat
-sequence. The review reads 568 beats from the book strand; Celeste's interior voice first
-appears at SK ~47500 (~84%). Structural work needed to weave them into full dual-POV effect.
+**Note on structure (updated 2026-07-03 — SHIPPED):** The Celeste beats are interleaved into the
+book-strand beat sequence from page one, per Law §0 ("the book opens with Celeste"). Ch1 "Cel"
+opens the book at SortKey 1.0; Ch4 "What She Asked For" recurs at ~SortKey 8902–8998; Ch7 "The
+Ghost Period" recurs at ~SortKey 17802–17876. All three were verified beat-by-beat (2026-07-03
+logic audit) to introduce no investigator-side knowledge the reader hasn't already received in
+interleaved order. The prior unmerged/late-appearing structure (Celeste's interior voice not
+surfacing until ~84% through the book) has been fully resolved in the DB.
 
 ## 7. Register and voice {#SS-DWIACE-7}
 
@@ -216,6 +219,7 @@ Celeste child strands un-merged — structural integration is remaining work.
   dual POV interleaved).
 - **DWIACE-US-3 ✅** Book-strand review ≥ 82%. *Achieved: 90.95 (book strand, 568 beats).*
 - **DWIACE-US-4 ✅** Docx exported (V10).
-- **DWIACE-US-5 ⬜** Celeste child strands merged into book-strand beat sequence for full
-  dual-POV scoring.
+- **DWIACE-US-5 ✅** Celeste beats merged into book-strand beat sequence for full dual-POV
+  scoring — verified 2026-07-03: Ch1/Ch4/Ch7 interleaved per §6, no forward knowledge leaks
+  (logic audit `audit-outlines-2026-07-03/logic/DWIACE.md` §2).
 - **DWIACE-US-6 ⬜** Mid-section exposition density (beats ~179–190) trimmed.

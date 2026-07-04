@@ -48,7 +48,7 @@ Color language: **Magenta** and **Gunmetal** are the unofficial colors of the GL
 - **Voice:** Observational, dry, tactical. Treats problems as chess problems. This is also the flaw.
 - **Want:** Successful job, clean payment, no entanglements.
 - **Need:** To trust someone outside the transaction.
-- **Wound:** Got a colleague killed on a bad call during a Meridian surveillance operation — wrong assessment, wrong call, wrong timing. Stopped working with the same person twice after that. This job is an exception she agreed to before fully thinking through the implications.
+- **Wound:** Got a colleague killed on a bad call during the Tidewell extraction contract — wrong assessment, wrong call, wrong timing. Stopped working with the same person twice after that. This job is an exception she agreed to before fully thinking through the implications.
 - **Flaw:** Treats people as variables until the moment they prove otherwise. Even then, slow to update.
 - **Entity name:** Inkeri Saarinen
 - **Handle:** Rook

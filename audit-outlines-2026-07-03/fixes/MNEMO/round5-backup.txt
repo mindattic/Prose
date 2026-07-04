@@ -1,0 +1,62 @@
+MNEMO Round-5 Data Repair — Beat 3350 SortKey + Title Correction
+Node: mnemosync-019ee11e (019EE11E-6AE8-711D-B12D-530FF2497399)
+Date: 2026-07-03
+Source: audit-outlines-2026-07-03/logic/MNEMO.md, Finding 4 (Causality/Timeline/Bible Agreement)
+
+BEAT
+  BeatId: 019F21AD-E6DF-79E0-B68F-C46204F676CF
+  Old BeatTitle: NULL (untitled)
+  New BeatTitle: Route Closure
+  Text preview: "He took the canal route to the Zone 4 relay... He reached the panel and
+    put his hand flat on the reader. The light went green. Then it didn't... Route
+    closure. He knew the word for it now."
+
+SORTKEY CHANGE
+  Old SortKey: 3350.0  (enabled position between "No Clean Line" (3300, Seto's analog/
+               unregistered-lockbox plan) and "Chapter 21 outline" / Story Runs (3400))
+  New SortKey: 3275.0  (between "The Turn" (3250, Amara/Ciro forced-leave scene) and
+               "No Clean Line" (3300))
+
+WHY THIS SLOT (judgment call, per task instruction to justify)
+  - At its old position (3350, after 3300), the beat directly contradicts the plan
+    "No Clean Line" (3300) just committed to one beat earlier: 3300 has Seto reason
+    explicitly that couriers "optimized for speed and frequency and low signature" are
+    exactly what the monitoring node tracks, and settle on an analog, unregistered
+    lockbox at a noodle stall. The very next beat (3350, old position) instead shows
+    him approaching a credentialed, networked drop panel ("put his hand flat on the
+    reader") — precisely the chokepoint 3300 just reasoned him away from — and it gets
+    remotely killed. Read in that order, it is an unreconciled reversal.
+  - Read BEFORE 3300 instead, the same content becomes the setup for 3300's own opening
+    line: "He did not sleep... Tonight the looking produced nothing clean." The
+    credentialed-reader failure at 3350 (moved) IS the "nothing clean" the looking
+    produced — it is the failed attempt that pushes Seto to reason his way to the
+    analog lockbox plan in 3300. This reads as escalation (networked attempt fails →
+    forces the analog fallback) rather than a second, unexplained reversal after the
+    plan is already made.
+  - No enabled beat between 3250 and 3400 references this beat's specific content
+    (the Zone 4 relay panel, "Route closure" as a named term) except 3300's own
+    generalized "the looking produced nothing clean," which is satisfied either way —
+    moving the beat earlier makes that line's antecedent concrete instead of vague.
+  - The bible's own operational vocabulary (§3, Track A: "Operational terminology:
+    route closure") supports the retitle, tying this beat explicitly to Orison's named
+    tactic against Seto.
+  - Residual, not fixed here: the audit also flagged that with this beat kept, three
+    "channel gets closed" beats now sit close together (this one, the certification
+    suspension in Story Runs at 18:03, and the monitoring-node burn in Sealed System).
+    Reordering resolves the causality/timeline contradiction (the mandatory fix); the
+    repetition-vs-escalation concern is a style note, not a contradiction, and is
+    intentionally left for a future pass per the task's minimal-splice instruction.
+
+ACTION TAKEN
+  UPDATE NodeBeats SET SortKey = 3275.0
+  WHERE NodeId = '019EE11E-6AE8-711D-B12D-530FF2497399'
+    AND BeatId = '019F21AD-E6DF-79E0-B68F-C46204F676CF';
+
+  ss --beat meta --id 019F21AD-E6DF-79E0-B68F-C46204F676CF --title "Route Closure"
+
+ROLLBACK (if ever needed)
+  UPDATE NodeBeats SET SortKey = 3350.0
+  WHERE NodeId = '019EE11E-6AE8-711D-B12D-530FF2497399'
+    AND BeatId = '019F21AD-E6DF-79E0-B68F-C46204F676CF';
+
+  ss --beat meta --id 019F21AD-E6DF-79E0-B68F-C46204F676CF --title ""

@@ -218,7 +218,7 @@ He stood up, which he hadn't done in four hours. His back registered the duratio
 
 The kettle ran. He poured the water over the bag and watched the steep, which he didn't usually do. It was something to watch.
 
-The sealed transit case was on the table where Makena had left it - the certified item inside, cased, logged, referenced in the provisional manifest. The invoice on his phone, closed. The registry queries, closed. Three results he couldn't open, the blank orbital designation, and a satellite the registry carried as long dark - how long, it wasn't saying.
+The sealed transit case was on the table where Makena had left it - the certified item inside, cased, logged, referenced in the provisional manifest. The invoice on his phone, closed. The queries, closed. Three results he couldn't open, the blank orbital designation, a satellite logged long-dark with no duration attached.
 
 He picked up the mug. He didn't go back to the desk yet.
 

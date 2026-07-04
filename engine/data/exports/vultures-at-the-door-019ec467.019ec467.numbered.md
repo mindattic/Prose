@@ -672,69 +672,35 @@ Tomas looked at him a moment — this man who'd started everything and was also 
 "Deal," Tomas said.
 
 [Beat 18]
-The old woman's name was on the manifest — Adaya Bernstein, eighty-three, the pacemaker financed eleven years back, one missed payment in the third year and then eight years of automatic deductions from a pension account that cleared by twelve Φ every cycle, so the lien had never quite reached the default threshold and the pacemaker had been theirs-but-not-quite-theirs for a decade. That was the kind of ledger entry nobody looked at twice, because the money came in on time and the account holder was presumably still using the unit. The account holder was not still using the unit.
+They were back in the Wagon, the pacemaker cassette logged in the larder, Levin behind the wheel heading east toward the lower Ward arterial. The old woman had died in her sleep, which was the cleanest way the route ever offered, and the Kid had run the retrieval slow and thorough because the model was eleven years old and the machine had made itself at home in her chest over the decade. Tomas had closed the wound so neatly that even his own hands couldn't have improved on it. He'd left the rest of her the way you left anyone who'd earned a quiet end.
 
-She had died in her sleep, which was the cleanest way the route offered. The neighbor had found her when she didn't answer the door for the morning check, and the building's emergency service had contacted Carrion, and Carrion had put it in the overnight queue because the pacemaker lien flagged it for collection and the rest of her was a flat-rate haul to the processing facility. Routine dispatch. The note on the entry said: account holder deceased, no next of kin on file, assist building management with transition.
-
-Transition meant moving the body. Tomas had moved more bodies than he could account for, which was the point of not accounting for them.
-
-The Kid had done the pacemaker retrieval in four minutes, fifteen seconds, which was just over the unit's nominal time because the model was eleven years old and the tissue integration was thorough. Tomas had run the removal clean — extraction, perfusion, cold-pack, cassette seal, wound closure — and the wound closed so neatly that even his own hands couldn't improve on it. Eleven years of the machine sitting in that chest had given it the patience of a thing that had made itself at home. He respected it, the way he respected anything that had done a job well for a long time.
-
-He left the rest of her the way you left anyone who'd earned a quiet end.
-
-They were back in the Wagon now, the pacemaker cassette logged in the larder, Levin behind the wheel heading east toward the lower Ward arterial. The hallucinatory episode during the pickup had lasted eight minutes, if Tomas's timing was accurate, and had resolved the way Levin's episodes usually resolved: on their own, without Levin admitting they had happened, without Tomas acknowledging that they had. The equilibrium the partnership ran on.
+The episode during the pickup had lasted eight minutes and resolved the way Levin's episodes usually resolved: on its own, without Levin admitting it had happened and without Tomas making him. The equilibrium the partnership ran on.
 
 "What were you seeing," Tomas said, because he hadn't gotten an answer before.
 
-Levin kept his eye on the road for a while before he answered. "Lattice," he said, finally. "In the corners. The way it moves — like it's breathing."
+Levin kept his eye on the road a while. "Lattice," he said, finally. "In the corners. The way it moves — like it's breathing."
 
 "The Resonance Zone geometry."
 
-Levin made no reply to this. He said nothing else, which was more than he'd said on the subject in two years and less than Tomas would have needed to feel better about it, so they were even.
+Levin said nothing else, which was more than he'd said on the subject in two years and less than Tomas would have needed to feel better about it, so they were even.
 
-The Wagon moved east. The city in the early hours of the morning ran on generators and the company of people who had nowhere else to be: a few ground-floor storefronts still lit behind their security films, the overhead transit rail locked for the gap between the late run and the early one, the pavement wet from a drizzle that had come and gone and left its signature in the way the headlights caught the ferrocement. Tomas watched the Pulse caps go by — dark circles in the road, each one sealing the tube below, six meters down, moving the city's cargo at a hum that registered in the body before it registered in the ear.
-
-"How long since your last dose," Tomas said.
-
-Levin didn't answer right away. "A while."
-
-"That's not a time."
-
-"Three hours." He shifted his grip on the wheel. "Maybe three and a half. The episode isn't the dose wearing off. It's the dose coming on — the transition window." He said this with the flat factual calm of a man explaining a plumbing issue. "It smooths out in another twenty minutes."
-
-"And if you don't dose again."
-
-"Then in a few hours the lattice comes back heavier." He looked at the road. "That's how the loop works."
-
-Tomas added this to the running account. Not the first time Levin had explained the loop; he always explained it the same way, with the same flat precision, and it never changed what either of them did about it on shift. It was information without options attached, which was Levin's preferred form of disclosure.
-
-He pulled up the pending manifest on his neuretics. The anonymous recovery from earlier was still in the queue — anonymous caller, female, possible overdose, retrieval for financed corneal mods, account dead eighteen months. He had flagged it to take, because doing the route was the only cover they had, and a crew that ducked its numbers got looked at. He'd left it in the queue to take on the way back.
-
-The clock behind the partition: fifty-eight hours.
-
-He had thought about the numbers in the old woman's bedroom while the Kid ran its sequence — not the ledger of the job, but the other one, the one that lived in his chest and never cleared. Paz's therapy window was four months out. The money was there, the way the money was always there when he looked at it directly, held away from everything else that cost. The money was there and it wouldn't still be there in four months if the night continued to go sideways at its current rate. This was the reckoning, and the reckoning wasn't useful at fifty-eight hours into a problem it couldn't solve, but the reckoning was in him whether he used it or not, the way the larder was two degrees whether he looked at it or not.
-
-He turned it off the way he turned it off on shift: by going back to the manifest.
+The city in the early hours ran on generators and the company of people who had nowhere else to be — a few storefronts lit behind their security films, the transit rail locked for the gap between the late run and the early one, the pavement wet from a drizzle that had come and gone. The Pulse caps went by in the headlights, dark circles sealing the tube six meters down, moving the city's cargo at a hum that landed in the body before it landed in the ear. Behind the partition the loaner clock read fifty-eight hours and counting: Han Do-yun's borrowed heart, ticking down whether Tomas looked at it or not.
 
 "I want to pass by the Osei block on the way," he said.
 
-Levin considered this without surprise. "The hunter."
+Levin considered it without surprise. "The hunter."
 
-"I want to see what shape the building's in." If the hunter had been there and found nothing, the building looked like itself. If the hunter had been there and found something, the building looked the way Reuben Sclose's building had looked — the neighbor afraid on the landing, the floor cleaned but not right, the texture of a space that had recently had violence in it and was trying to forget.
+"I want to see what shape the building's in." If Casimir had been there and found nothing, the building looked like itself. If he'd been there and found something, it looked the way Reuben Sclose's building had looked — the neighbor afraid on the landing, the floor cleaned but not right, the texture of a space that had recently had violence in it and was trying to forget.
 
-"We can route through that way," Levin said.
+"We can route through that way," Levin said, and adjusted the heading, running them north toward the Pilsen-Ward corridor, which put the Osei block on the right two turns later.
 
-He adjusted the heading and ran them north toward the Pilsen-Ward corridor, which put the Osei block on the right side of the road two turns later. They didn't stop. They ran past at the Wagon's navigation speed, Tomas watching the building face in the passenger window, reading what it told him.
+They didn't stop. They ran past at the Wagon's navigation speed, Tomas watching the building face in the passenger window, reading what it told him.
 
 It told him what he needed to know.
 
-"Keep driving," he said. "We'll make the OD recovery before we clear the Z4 boundary."
+"Keep driving," he said, and let the night run its own logic and did not try to run it faster.
 
 Levin kept driving.
-
-The manifest chimed with the anonymous-call pickup coordinates, and Tomas pulled the entry and set it in the queue and said nothing, because the route was the route and you worked what it gave you, and sometimes what it gave you was the next thing and sometimes it was the thing you hadn't known you were looking for.
-
-He watched the Pulse caps go by in the headlights, each one marking the tube below, and he let the night run its own logic and did not try to run it faster.
 
 [Beat 19]
 They had been gone from Osei's apartment for eighteen hours — 4:12 in the morning to ten past ten at night, day shift and night shift and the dead hours between, the city having turned over entirely in the interval. It looked like it had been a year.
@@ -946,32 +912,17 @@ The woman hadn't said thank you. She wouldn't. He didn't look for it — but for
 He set the shape of the morning behind his eyes, where he kept the things he might want later, and put his hands in his pockets, and walked toward the lake, into a city that was about to get very loud behind him, unhurried, early for once, and for once in no one's hand but his own.
 
 [Beat 24]
-The lake was there before the city and it didn't care that the city had arrived. Ekow walked out onto the breakwater where the old concrete was crumbling back into the water at the edges — not decay, just the lake taking back what it had lent — and the wind off the water was cold and flat and political in the way Gray Zone rain was political: indifferent to tier, indifferent to collar, indifferent to the name a house had given a man to keep him useful. The atmospheric processors that scrubbed cloud cover from the Spire quadrants couldn't touch this. The light came up over the water the same way it had come up over this particular water for longer than anyone's accounting of anything, and Ekow stood in it and let it land on him.
+The lake was there before the city and it didn't care that the city had arrived. Ekow walked out onto the breakwater where the old concrete was crumbling back into the water at the edges — not decay, just the lake taking back what it had lent — and the wind off the water was cold and flat and indifferent: to tier, to collar, to the name a house had given a man to keep him useful. The light came up over the water the same way it had come up over this particular water for longer than anyone's accounting of anything, and Ekow stood in it and let it land on him.
 
 *Carrion will audit the gap. It always does.*
 
-He knew it. The gap was real: a job opened, a job not closed, a contract suspended by a house that was now busy bleeding from its own hands. A gap that small, in a data structure that large, might close itself — Carrion consumed what was marked for deletion, not what was simply absent, and a contract suspended pending review was not marked anything yet. It was in a buffer. It was waiting to be named. And if the house finished eating itself before anyone named it, the gap might go the way of everything else the house would want to forget it had ever opened.
+He knew it. The gap was real: a job opened, a job not closed, a contract suspended by a house that was now busy bleeding from its own hands. A buffer entry without a resolution flag — a question the system would eventually ask someone to answer, and the someone it asked would be whoever inherited the contract ledger when the house finished tearing itself apart. That person might be thorough. He had been that person once, in a different house's service, and he knew what thorough found. He let himself think it clean and whole: maybe six weeks before the gap became a name, and the name a question, and the question a knock. Six weeks was enough to be somewhere the knock didn't land. He had never once in his life planned for six weeks — he had always planned for the next job, and the job after that, and the shape of his usefulness going forward. Now the horizon was a number, the number smaller than he'd expected, the smallness of it not collapsing into fear but sitting in his chest like a fact he could work with.
 
-*If.*
+The Carrion Wagon was gone from its block. They'd pulled out while he stood at the water. He noted the absence and didn't fill it with meaning — they had their own accounting to do, their own gap to manage, and the fire was the fire's now, not any of theirs.
 
-He put his hands in his pockets and felt the lake wind and didn't resolve it, because it couldn't be resolved yet — only carried, the way a man carries the cost of a thing he chose while the accounting is still being written. The city was getting loud behind him. He could hear it in the neuretics as a texture before it was a fact: the elevated packet traffic, the house-to-house encrypted bursts that meant solicitors and soldiers both being woken before their hour. The Lotus lines tearing at their seam. He had done that. A tool that had decided. He looked at the water and found he could hold both things — what it might cost him, what it had already been — without one canceling the other, and that was new, and he didn't name it, because the moment you name a thing like that you start protecting it, and he couldn't afford to protect anything yet.
-
-The sun finished rising. He watched it until it was fully up and no longer doing anything dramatic, just being the sun, just being early, just being there the way the lake was there. Then he turned and walked back toward the city, not because the city deserved him back but because that was where the work was, and he had never in his life been a man who stayed at the water.
+The sun finished rising. He watched it until it was no longer doing anything dramatic, just being the sun, just being early, just being there the way the lake was there. Then he turned and walked back toward the city — not because the city deserved him back but because that was where the work was, and he had never in his life been a man who stayed at the water. Already calculating, already for the first time in a long time calculating *for himself*, which was either the most dangerous thing he had ever done or the first honest thing, and he was not yet sure the difference mattered.
 
 [Beat 25]
-The city was already different by the time he crossed back off the breakwater. Not the city — the same cracked aggregate, the same tier-shadow overhead, the same Gray Zone smell of recycled air and someone else's cooking — but the packet texture in his neuretics had shifted quality in the time he'd been standing at the water. Denser. Encrypted bursts multiplying the way they did when solicitors started moving money before the body was cold. He read it the way he read everything: not as meaning yet, just as signal. The Lotus house was sorting its rooms.
-
-*Carrion will have the gap flagged by noon if anyone on the Stem side thinks to push it.*
-
-He walked. The morning crowd was thin here — Gray Zone early was deliverymen and shift-change and the occasional Arcturus Civil Security truck doing its territorial loop along the corponation-adjacent blocks, not for anyone here, just marking the boundary the way a dog marks a fence. He moved through it without moving through it, the practiced transparency of a man who had spent a decade being useful by being invisible. His hands were in his pockets. His hands were the only part of him he was aware of right now — what they had done, what they had declined to do, the hinge of a night that had turned on the inch between those two things.
-
-*The gap doesn't close on its own. You know it doesn't.*
-
-He knew it. A buffer entry without a resolution flag was a question the system would eventually ask someone to answer, and the someone it asked would be whoever inherited the contract ledger when the house finished tearing itself apart. That person might be thorough. That person might be under pressure to demonstrate that they were thorough. He had been that person, once, in a different house's service, and he had been very thorough, and he knew what thorough found. He turned onto the long street that ran parallel to the old freight rail and let himself think it clean and whole: he had maybe six weeks before the gap became a name, and the name became a question, and the question became a knock. Six weeks was enough to be somewhere the knock didn't land. Six weeks was enough to be somewhere the collar didn't reach. He had never once in his life planned for six weeks. He had always planned for the next job, and the job after that, and the shape of his usefulness going forward. He walked and felt the strangeness of it — the horizon replaced by a number, the number smaller than he'd expected, the smallness of it not collapsing into fear but sitting in his chest like a fact he could work with.
-
-The Carrion Wagon was gone from its block. They'd pulled out while he was at the water. He noted the absence and didn't fill it with meaning — they had their own accounting to do, their own gap to manage, and whatever they decided about their night, it would be decided without him. He had no claim on them and they had none on him, and the fire was the fire's now, not any of theirs. He kept walking. The city was getting loud and he was already inside it, already calculating, already for the first time in a long time calculating *for himself*, which was either the most dangerous thing he had ever done or the first honest thing, and he was not yet sure the difference mattered.
-
-[Beat 26]
 Levin was in the stairwell of his building when Tomas got there, sitting on the fourth-floor landing with his back against the wall and his coat on like he'd been about to go somewhere and then reconsidered. His hands were loose on his knees. He looked like a man who had been waiting for a knock he wasn't sure was coming.
 
 "There's something still on the shelf," Tomas said, from the bottom of the stairs, because there was no version of this where preamble made it easier. "The old man's kidney. I pulled it this morning before we went to the Ward and never moved it. It's still viable."
@@ -986,7 +937,7 @@ Levin looked at him for a long time without moving.
 
 Levin stood. He didn't say anything else. He buttoned his coat with hands that weren't quite steady, and he came down the stairs, and he got in the Wagon, and Tomas drove.
 
-[Beat 27]
+[Beat 26]
 The transit platform was a glass-and-steel shelf bolted to the side of a Z4 freight overpass, the kind of infrastructure that had been permitted and budgeted and built and then slowly forgotten by everyone except the people who needed it. Three other people on the platform: a woman in a Helix Biosystems contractor badge still clipped to her lapel, reading something on a wrist display; a man in gray coveralls who had gone to sleep against the safety railing in the slack way of someone who had nowhere better to do it; a teenager with a shaved head and new chrome at both temples, the installation still pink at the seams, standing with the careful stillness of someone who was learning what their new neuretics were showing them and didn't want to miss any of it.
 
 *The kidney is in the rack. The matching algorithm will run.*
@@ -1001,7 +952,7 @@ He was not going to do that.
 
 He got off two stops early and walked the rest of the way home in the cold, because the walking was something to do with his hands, and the cold was real, and counting the Pulse caps had worked before and the pavement here had them too, one every hundred-and-ten meters, the same as everywhere else in the zone, and he counted them all the way to his building and did not arrive at a number that changed anything.
 
-[Beat 28]
+[Beat 27]
 They drove to the depot first — the cold-storage annex behind Carrion's main yard, five aisles of numbered lockers holding everything on the company's books that wasn't attached to a person yet. Tomas already knew which locker. He'd filed the form himself that morning, before the Ward, before any of it: on the manifest, REALLOCATE TO NEW RECIPIENT sat lit and waiting, and RETURN TO ORIGINAL ACCOUNT sat greyed out under a prompt — *Reason required.* He'd typed one anyway. *Clerical error — original excision order issued against incorrect account. Return authorized.* He hadn't sent it. He'd sat with it the rest of the day, the cursor blinking on a decision he wasn't ready to make, and then the night had happened, and by the time he was ready the form was still there, exactly where he'd left it.
 
 He sent it now. The reply came back automated, indifferent, four seconds later: authorization logged, no human in the loop, because nobody had ever built one for this particular kind of mistake.
@@ -1042,7 +993,7 @@ Tomas looked at her. He didn't say anything, because there wasn't anything usefu
 
 They went down the stairs. The lobby was the same. The street outside was cold and bright, early light coming off the windows across the way, and the Wagon was waiting at the curb where they'd left it, engine running, the larder empty and the whole rest of the shift still ahead of them.
 
-[Beat 29]
+[Beat 28]
 In the Wagon, Levin drove, and for a while neither of them said anything, and the city went by the way it went by, vertical and indifferent and full of accounts that hadn't come due yet.
 
 The lattices were still there at the edge of the windshield — the geometric bleed the Tears left behind when they left, a crawling grid laid over the towers like a second city drawn in fine lines over the first, patient and exact and refusing to fade. He had learned not to describe it.

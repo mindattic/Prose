@@ -109,7 +109,7 @@ Working rules:
 3. **Story structure (SS-A43)** — create a **StoryNode** (MCP `create_story` / CLI `--create-story`)
    + **ChapterNode** children (MCP `create_chapter`, parent required). Authorial spine (14-beat
    outline) = the story node's `seed` text.
-4. **Prose** — Sonnet draft → Opus polish → reflow → dual review (see below) → scan entity mentions.
+4. **Prose** — Sonnet draft → Opus polish → reflow → logic sweep (see Quality Verification SOP below) → scan entity mentions.
 5. **Export** — `--publish-docx`; flip USER_STORIES to ✅ with evidence.
 
 Never write prose before steps 1 and 2 are complete.
@@ -151,21 +151,27 @@ MCP: `workflow_status`, `workflow_status_global`, `workflow_beat_modes`
 5. After story complete, run `ss --story-audit --slug <slug>` to audit gateway/sequel commandments
 6. After story complete, run `ss --plant-audit --slug <slug>` to check for orphaned plants
 
-## Multi-Node Story Review (mandatory after every node — see memory: feedback_story_accretion)
+## Quality Verification SOP — Logic Sweeps, NOT Votes (2026-07-04)
 
-When writing a multi-node story (book, series, alternating POV), each completed node triggers a **mandatory dual review** before the next node begins. No exceptions.
+**Default QA for any story that changes or needs validation is a LOGIC & CONTINUITY SWEEP,
+not a review panel and not a Legion vote.** Panels and votes are too expensive — run them
+ONLY when the user explicitly asks for a vote/review/score in that conversation.
 
-**A. Standalone review** — Score ≥82%. If below, fix before continuing.
+**The logic sweep:** agents read the story end-to-end (enabled beats only:
+`NodeBeats.IsEnabled=1 ORDER BY NodeBeats.SortKey`) and audit six dimensions:
+1. **Causality chain** — every event has an established cause, every decision a motivation,
+   every capability an on-page origin.
+2. **Knowledge states** — who knows what, when they learned it; nobody acts on knowledge
+   they don't have.
+3. **Timeline** — reconstruct the story clock; no impossibilities.
+4. **Plant/payoff ledger** — two-way: every plant pays, every payoff was planted.
+5. **Orphan references** — nothing references removed/disabled/merged content.
+6. **Bible agreement** — prose and `docs/nodes/<CODE>.md` tell the same story; fix one in
+   the same change.
 
-**B. Cumulative prefix review** — Read all nodes Ch1–N in order. Story score must trend toward and hold ≥85%. If this node drops the cumulative, investigate before proceeding.
+Reports land in `audit-outlines-<date>/logic/`; findings are triaged
+**BLOCKER / MODERATE / MINOR** and fixed with minimal splices. Fix what a finding names;
+if you can't name the failure, leave the beat alone.
 
-Use both reviews to diagnose and act:
-- **Prose problems** — voice drift, flat dialogue, missing sensory texture.
-- **Pacing problems** — beats that over- or under-stay; repeated emotional register without escalation.
-- **Contradictions** — entity state, wound ledger, timeline, character voice.
-- **Underperforming beats** — expand if underdeveloped, contract if dead weight. Never pad; never cut a beat that's pulling the story forward.
-
-| Measure | Target |
-|---|---|
-| Per-node standalone | ≥82% |
-| Cumulative story (all nodes in reading order) | ≥85% |
+The old dual-review machinery (standalone ≥82 / cumulative ≥85, `--review-node` panels,
+Legion votes) still exists — **on explicit user request only**.

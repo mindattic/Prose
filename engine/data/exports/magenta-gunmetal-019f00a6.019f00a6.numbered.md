@@ -588,7 +588,7 @@ She was aware of it the way you become aware of a held breath: a half-second too
 
 The shooter saw it. That was the part she would meet again on a rail in the rain. He clocked her freeze — the planner gone briefly to stone over a body that wasn't on anyone's manifest — and he read it correctly, and he did not exploit it, because exploiting it wasn't efficient and he wasn't there to kill the runner, he was there to recover an asset. He committed her, the way she would normally have committed him, and adjusted. Two professionals, and one of them had just learned the other one stopped for the dead. He would remember it. So would she.
 
-Then her body came back. She moved — not to the shooter, to Ohara, getting weight between the woman and the gun, because the freeze had cost her nothing she could still spend and the only currency left was speed. She got a grip on the shooter's collar in passing, three seconds of it, long enough to drag him off-balance into the side of a cart, not long enough to put him down. He recovered military-fast and did not pursue. He peeled off clean, no wasted motion, rejoining a partner she never saw — the discipline of a unit run by someone who treated a botched grab as data, not failure. Somewhere behind these two was a hand that had decided exactly how much it was willing to spend and had spent not a gram more. She would meet that hand on a broken railing in three days and know it on sight, because it counted the way she counted, and because, unlike her, it had not stopped.
+Then her body came back. She moved — not to the shooter, to Ohara, getting weight between the woman and the gun, because the freeze had cost her nothing she could still spend and the only currency left was speed. She got a grip on the shooter's collar in passing, three seconds of it, long enough to drag him off-balance into the side of a cart, not long enough to put him down. He recovered military-fast and did not pursue. But the cart's steel edge had opened a thin line high on his cheekbone in the three seconds she'd had him — a mark he'd carry a week, the only receipt she got to write in that corridor — and he peeled off with it, no wasted motion otherwise, rejoining a partner she never saw. The discipline of a unit run by someone who treated a botched grab as data, not failure. Somewhere behind these two was a hand that had decided exactly how much it was willing to spend and had spent not a gram more. She would meet that hand on a broken railing in three days and know it on sight, because it counted the way she counted, and because, unlike her, it had not stopped.
 
 Boiler looked at his own hands, satisfied with the aggregate ratio. There was a small amount of someone else's blood on his left shoulder he had either not noticed or decided wasn't his problem. Rook was already moving Ohara ahead of her — Ohara not running, walking at the controlled pace of someone who understood that running announced itself. She hadn't watched Boiler work. She had watched the shooter, and the woman who went down, and she had not looked away from either. Rook saw her not look away, and set it beside the other things she was carrying out of this corridor.
 
@@ -609,15 +609,37 @@ She did not say it. They needed to move. But she said one thing, because Vox's v
 "One contact means they're already reorganizing," Rook said. "We're not clear. We're ahead." She let them hear the distinction land. "There's a dead woman in the corridor behind us and a crew that walked out of it, and the size of that gap is the only thing keeping any of us breathing, and it will not stay the same size. Move."
 
 [Beat 7]
-The junction split three ways and Rook took the middle without slowing, because the middle was the choice that committed to nothing and the Axiom ad at the far bend gave her a half-second of reflective chrome to read the space behind them — four people, separated by eight meters, moving in the specific way that people moved when they were not shopping. Not running. Pacing. The discipline again, the same hand that had spent exactly what it needed to and nothing more, and now it was spending patience.
+The junction split three ways and Rook took the middle without slowing, because the middle was the choice that committed to nothing and the Axiom ad at the far bend gave her a half-second of reflective chrome to read the space behind them - four people, separated by eight meters, moving in the specific way that people moved when they were not shopping. Not running. Pacing. The discipline again, the same hand that had spent exactly what it needed to and nothing more, and now it was spending patience.
 
 *Forty thousand, four ways. She'd known on day two and she'd needed the money and she'd taken it anyway.*
 
-"Junction," she said. The word was quiet and complete and Vox heard it and angled without being told — pressing Ohara left, into the vendor wall, away from the line of sight the middle passage would give anyone coming fast from behind. Boiler was already sideways, one shoulder to the crowd-flow, scanning back. The four pacers had not accelerated. That was the part that sat wrong in her chest before it sat anywhere else: they should have moved when she moved. They hadn't. They were not chasing. They were steering.
+"Junction," she said. The word was quiet and complete and Vox heard it and angled without being told - pressing Ohara left, into the vendor wall, away from the line of sight the middle passage would give anyone coming fast from behind. Boiler was already sideways, one shoulder to the crowd-flow, scanning back. The four pacers had not accelerated. That was the part that sat wrong in her chest before it sat anywhere else: they should have moved when she moved. They hadn't. They were not chasing. They were steering.
 
 *Which means there's something in front.*
 
-The vendor density was wrong. The signage strobed in overlapping frequencies — magenta, white, the cold blue of a substrate tap running open — and underneath it, underneath the crowd noise and the tap-hiss and Vox's controlled breathing two meters to her left, there was a sound that had no source she could point to. Not loud. The frequency that lives in the back teeth. The hum that meant processing, monitoring, a system running at a load it hadn't been designed to hide.
+The vendor density was wrong. The signage strobed in overlapping frequencies - magenta, white, the cold blue of a substrate tap running open - and underneath it, underneath the crowd noise and the tap-hiss and Vox's controlled breathing two meters to her left, there was a sound that had no source she could point to. Not loud. The frequency that lives in the back teeth. The hum that meant processing, monitoring, a system running at a load it hadn't been designed to hide.
+
+She found what the hum was on the second read of the passage - not a thing at first, a shape the crowd made going around something it hadn't decided to avoid. Twenty meters up the middle, where the stalls should have thinned toward the north mouth and didn't, a service cart stood parked against the flow, panels open, nobody selling out of it. Two techs beside it in maintenance gray that fit them the way the corridor's real maintenance never fit theirs. A folded mast ran along the cart's spine, and the mast was where the hum lived, running hot in the same cold blue as the open tap - not a weapon. A net. A forward scanner throwing a cone up the passage, the crowd bending around the edge of it without knowing why, and the four behind her closing the back of a funnel whose front was a machine built to put a lock on one face and hold it until the hold team arrived.
+
+*They want Ohara in the cone.*
+
+Not a kill. A lock. Walk the researcher inside forty meters of that mast, take a clean read off her, and the corridor stopped being a crowd and became a room with one door that PEREGRINE owned. The crush had been the crew's advantage since they'd chosen the route. Past the mast it was PEREGRINE's. So they did not go past the mast.
+
+"North mouth. Now." She kept it under the crowd noise, the register that carried by going low instead of loud. "Boiler, wall side, break the line. Vox - the cart at twenty, the mast on it. Blind it. Don't slow down doing it."
+
+"It's a scanner, not comms." Vox's hand was already moving over her forearm, her eyes gone to the middle distance. "Four seconds."
+
+"Two."
+
+They broke before the pacers read the break. Rook took Ohara above the elbow - not a grip, a steer, the same steer PEREGRINE had been working on the whole crew, turned back now against the grain of the funnel - and cut them hard left through a gap the herd had left open exactly because no one was meant to want it. A service lane ran behind the vendor row, narrow and dark and sharp with the protein runoff the Quarter never quite washed down, and it ran north, and at the north end of it, nose out and idling, sat the van. Boiler had left it the way a man leaves a thing he means to need fast.
+
+Behind them the mast's hum climbed a half-step and then came apart into nothing - Vox's two seconds, spent clean, the cone folding before it closed on anyone. A pacer said something into a collar. All four gave up shopping at once and moved, fast now, no pretense left in it, and by then it did not matter, because the crew was already folding into the van and Boiler had the wheel and the engine was live under Rook's boots before the door sealed.
+
+The four did not chase them down the lane. They peeled - each one toward a different mouth of the junction, toward vehicles, the funnel converting itself from a room into a road without a wasted motion in the change.
+
+"Roll," Rook said.
+
+He rolled.
 
 [Beat 8]
 The forward PEREGRINE vehicle turned north three blocks ahead of them. Rook caught it in the mirror array — an unmarked black hauler on Meridian plates, no commercial markings, moving at the deliberate pace of something that knew exactly where it was going and exactly what it was boxing.
@@ -817,6 +839,8 @@ Vox's eyes came all the way open. Her mouth shaped a number. Not four.
 *She's down to three. Already.*
 
 The front window ran a thin bar of amber from the street below — neon off the wet pavement, bent and wrong in the way of things that bent in water. A shadow crossed it. One. Two. The second one didn't move the same way as the first, and Rook's stomach dropped a clean half-second before her mind had the word for what the shape was carrying.
+
+Then the word arrived. Breach ram — the squared, stubby silhouette of a hydraulic door-killer carried low against the second body, the tool you brought when you'd already decided not to try the handle. Nobody in the room moved. Everybody in the room was ready, five people gone to stone in the dark, and in the half-second the amber held both shapes Rook had time for exactly one clean thought: the six hours she'd given the safe house had been about four too generous. Then the first shape stepped aside. It cleared a lane for the second, the way you clear a lane for the one holding the tool, and there was nothing left to wait for and no quiet part of the night left to spend.
 
 [Beat 11]
 The door came in on the second shadow.
@@ -1099,7 +1123,7 @@ There it was — the thing under the man. Not a corporate voice reciting a contr
 
 "That's a luxury for a small operation."
 
-"It's the only reason a small operation gets to stay small and alive." She got her weight to the inside. "You sent a round into a crowd today. Or your man did, on terms you wrote. Fifties. A waiver argument. She's the line, Adalemo. You can't see her from where you moved to. I'm not going to be able to stop seeing her. That's the difference between us, and it's the only one that matters tonight."
+"It's the only reason a small operation gets to stay small and alive." She got her weight to the inside. "You sent a round into a crowd today. Or your man did, on terms you wrote. Fifties. A waiver argument. She's the line, Adalemo. You can't see her from where you moved to. I'm not going to be able to stop seeing her."
 
 Something crossed his face that wasn't tactical — quick, and gone, and real. "Maybe," he said. "It's a cold way to be right."
 

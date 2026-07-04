@@ -43,7 +43,7 @@ made her visible to The Assessor. By the end, the routing log is still on her te
 It is her mark. She is not hiding from what she started.
 
 **This is NOT:**
-- A Kyle story. He appears in one beat. He says four words.
+- A Kyle story. He appears in one beat. He says three words.
 - A chosen-one story. She solves a concrete problem with skill and nerve.
 - A story where Bear appears.
 - A story where corporate AIs pursue her.
@@ -199,10 +199,10 @@ She files it. She keeps watching. She does not expect to feel anything about it 
   they capitulate or leave.
 - **His logic:** The gray zone is a design graveyard. Specialists arrive with skills and no
   protection. He argues he's simply accelerating the inevitable — getting them paid before the
-  corpos strip them for free. Two of his past recruits actually agreed. They look at the
-  alternatives and signed on. Their records show them working, not hiding. This is the most
-  disturbing thing about him: his operation has a theory, and the theory isn't wrong about
-  everything.
+  corpos strip them for free. At least two of his past recruits actually agreed — the registry
+  shows two; the true number may be higher. They look at the alternatives and signed on. Their
+  records show them working, not hiding. This is the most disturbing thing about him: his
+  operation has a theory, and the theory isn't wrong about everything.
 - **What he wants from Pixel:** Her specifically. A 19-year-old who can ghost Tanaka-Arcturus
   infrastructure without triggering a flag, reads systems from the visible to the inference, and
   built a functional miniaturized VacCell drone in a barn in Iowa. He sees what she'll be in five
@@ -224,7 +224,7 @@ She files it. She keeps watching. She does not expect to feel anything about it 
 - One beat. Standing in his doorway when she opens hers. Looks like he just came back from
   something — the kind of something she doesn't need to know about tonight.
 - He looks at her. Loaded up, ready to go, about to walk into something.
-- Four words: **"Give em hell."** Door closes.
+- Three words: **"Give em hell."** Door closes.
 - Do not give him interiority. He is observed, not rendered.
 - He does not offer to help. He does not ask what she's doing. He reads the situation and
   responds to it with respect.
@@ -240,7 +240,7 @@ She files it. She keeps watching. She does not expect to feel anything about it 
 
 ## 9. Narrative Locks {#SS-PNHL-9}
 
-1. **She solves it herself.** No one rescues her. Kyle says four words and closes his door.
+1. **She solves it herself.** No one rescues her. Kyle says three words and closes his door.
    The confrontation is hers.
 2. **ACS is not evil — it is structurally unhelpful.** The officer is not corrupt. The
    institution does not serve her interest because her interest is not its mandate.
@@ -257,36 +257,43 @@ She files it. She keeps watching. She does not expect to feel anything about it 
 
 ## 10. The authorial spine {#SS-PNHL-10}
 
-### Beat 1 — Cedar Rapids Pulse Station, 05:47
+> Matches the shipped 22-beat order (SortKey 100–1300) as of 2026-07-03.
+
+### Beat 1 (100) — Cedar Rapids Pulse Station, 05:47
 She boards the Pulse for GLMZ. She launches Nit for one last orbit of Iowa. She calls it back.
 She packs it. She boards with: hard case (primary kit, mother's calibration instruments), soft
 case (Nit), shoulder pouch (secondary kit), her mother's boots (toes padded with folded paper),
 a scrap of paper with a name and an address. She does not look back.
 
-### Beat 2 — Through the Blur
+### Beat 2 (200) — Through the Blur
 On the Pulse car. She passes through The Blur. Through the window: a drifting aerobloc, unmoored,
 floating on thermal currents three hundred meters up. She recognizes the physics — same as Nit,
 scaled enormously. She watches until it vanishes. She does not expect to feel anything. She is wrong.
 
-### Beat 3 — GLMZ Pulse Terminal
+### Beat 3 (250) — The stranger on the Pulse
+A man across the aisle reads her the way she reads hardware: hands, case, face. He tells her
+what happens to people who sell the work until they can't tell it from selling themselves. She
+says nothing. She runs Nit's equipment check anyway — instrument, not weapon, not for sale.
+
+### Beat 4 (300) — GLMZ Pulse Terminal
 The vertical scale hits her before the sound does. A pickpocket attempts her jacket pocket — she
 catches the wrist by farm reflex, releases without a word. She keeps moving.
 
-### Beat 4 — Walk to The Pivot
+### Beat 5 (400) — Walk to The Pivot
 Navigating the street grid with memorized transit map. The texture of GLMZ at street level:
 different from the theory. She files the differences. She doesn't stop.
 
-### Beat 5 — Donatella (lodging + handle origin)
+### Beat 6 (500) — Donatella (lodging + handle origin)
 The Pivot's second-floor climate system is down. She asks to look at it. Cracks the building
 management terminal's proprietary service menu, corrects a temperature calibration offset. Done
 under two hours. She gets the room. Donatella watches the fix and says: "I'll call you Pixel."
 She doesn't like it. It is already true.
 
-### Beat 6 — First night
+### Beat 7 (600) — First night
 She sets up. Learns the building sounds. Notes 2D — active at odd hours. Nit on the windowsill.
 Sleeps eventually.
 
-### Beat 7 — West Town Street Market
+### Beat 8 (700) — West Town Street Market
 Out for supplies. The calibration fluid kid knows she's in the Pivot before she tells him. He
 tells her about a relay job. He also mentions — offhand, not a warning, just neighborhood
 texture — that there's a crew operator in the district who's been running assessments on new
@@ -295,7 +302,7 @@ He doesn't say it like it's a threat. He says it like weather.
 
 She files it. She doesn't ask follow-up questions.
 
-### Beat 8 — Ghost-op (relay job)
+### Beat 9 (800) — Ghost-op (relay job)
 180Φ to fix a relay: six weeks down, three operators failed. She accesses five frames without
 authorization to pull fault signatures.
 
@@ -306,7 +313,7 @@ band. The gap of someone who adapted, not someone who was invisible.
 
 She takes the 180Φ and walks home. Someone had found value in the gap.
 
-### Beat 9 — The invitation
+### Beat 10 (900) — The invitation
 Four days later: a strip of paper under the door of 2E. A restaurant address and a time. 21:00.
 No name, no signature. The paper stock is expensive — the kind chosen by someone who wants the
 absence of a name to say the name.
@@ -317,7 +324,7 @@ She spends the afternoon reading what the public record holds on the restaurant:
 economics, ownership trail, who eats there. She learns more about him from where he chose than
 he intends. She goes in her own clothes and her mother's boots.
 
-### Beat 10 — The dinner
+### Beat 11 (950) — The dinner
 The restaurant is the kind that requires a reservation three months out. He has a corner table.
 White hair, slicked back. Dark sunglasses. Neuretic etching at the temples and jaw — clean
 geometric lines, top-tier installation, worn like decoration. White suit, long coat. He looks like
@@ -350,13 +357,15 @@ The graciousness confirms what she already knows. He is not done. He is just cha
 She walks home thinking about what it costs to take a room away from someone who needs to own it,
 and what it costs them when you do.
 
-### Beat 11 — First contact is the last courtesy
-She reads the situation correctly on the walk home: he accepted her refusal too easily. Someone
-who runs an operation on this model does not take no for an answer. He takes a different approach.
+### Beat 12 (975) — First contact is the last courtesy
+She reads the situation correctly on the walk home: he accepted her refusal too easily. Then her
+thumbprint fails at the Pivot's door — a four-minute lockout, sourced to a management-tier
+credential off the building's registered roll. She pulls the cached access log before it cycles
+out and copies the override's call structure into her own file: not just what he did, but the
+shape of how, a mechanism that will answer wherever a credential lives. Someone who runs an
+operation on this model does not take no for an answer. She starts noting everything that changes.
 
-She starts noting everything that changes.
-
-### Beat 12 — The elevator shaft
+### Beat 13 (1000) — The elevator shaft
 She is on a job — two other operators, access point through an elevator shaft, she is running
 the channel coordination. The third operator was supposed to break the shaft lock from below.
 He comms thirty minutes before: something came up, he has to bounce.
@@ -372,7 +381,7 @@ She adapts. She runs the channel solo. The job completes. She files the incident
 
 He paid someone to strand her and her team. She fixed it. He knows she fixed it.
 
-### Beat 13 — Pattern
+### Beat 14 (1050) — Pattern
 Three more incidents over two weeks. A relay she was contracted to diagnose has been pre-broken
 by someone with deeper access — she spends six hours untangling it. A client cancels twenty
 minutes before a handoff: she intercepts the comm that prompted the cancellation, traces it to
@@ -385,12 +394,34 @@ a hull where someone else controls the rate of the leaks.
 She builds the map. She has the operation. She has had the operation since the elevator shaft.
 She does not need more data. She needs a different kind of move.
 
-### Beat 14 — What staying requires
+### Beat 15 (1060) — The Address
+She follows the redirected coupling to a receiving-counter storefront three blocks from the
+Pivot. The man behind the counter is competent, evasive about "whose redirect," and sits under a
+hand-lettered calendar of scheduled handoffs that aren't his. She leaves with the coupling and
+with the exact shape of what saying yes to the Assessor looks like from the inside: not chains,
+a clipboard. She maps the counter's access chain on the way out — the node she will burn later.
+
+### Beat 16 (1075) — Arcturus Civil Security
+She tries the official channel once, to rule it out properly rather than assume. The officer is
+courteous, professional, and files her redirected coupling as a simple misdelivery — a "pattern
+of incidents" would need a harassment inquiry she isn't ready to open. He does his job exactly as
+it's built to be done. It does nothing for her. ACS is not evil; it is structurally unhelpful.
+
+### Beat 17 (1090) — The one who said no
+She chases the market kid's offhand story — a specialist named Cotter who said no and "just
+left." Three data points, each individually deniable, together a manufactured departure: a bench
+sold at a loss through the Assessor's holding chain, a ticket paid for by a credential with no
+connection to Cotter, four incompletes logged against his name after he was supposedly gone. No
+violence a report could take hold of — a cover story built to survive exactly her kind of look,
+and it nearly did. She logs it, sourced and dated. Then she checks her own reputation ledger.
+
+### Beat 18 (1100) — What staying requires
 She lays the options out: Iowa (crossed off). Leave GLMZ (crossed off). Wait it out (he has
 more patience than she has resources). Join (crossed off before the thought completes).
 
 Confrontation is what's left. She knows where he is — she traced the restaurant, the reservation
-pattern, the building he uses for operations. She has been building that map since Beat 12.
+pattern, the building he uses for operations. She has been building that map since the elevator
+shaft.
 
 She is 19 and she has been in GLMZ for less than two months. She is also Pixel, and she knows
 what she's doing.
@@ -404,16 +435,17 @@ She just needs to make sure she controls the terms when she does it.
 
 She starts preparing.
 
-### Beat 15 — Preparation
+### Beat 19 (1150) — Preparation
 She doesn't go in armed with weapons she doesn't know how to use. She goes in armed with
 everything she does know how to use: her secondary kit, her knowledge of his operation's
 infrastructure, and the documentation she has built since the elevator shaft. She also brings Nit.
 
-She runs a complete equipment check. She notes: her mother's boots are on her feet and she has
-not re-padded the toes since she arrived. She looks at them. She does not re-pad them. She laces
-them tighter.
+She runs a complete equipment check, the dossier staged to project on command and the send staged
+behind it — six channels, each scheduled to release on its own clock unless she cancels it by
+hand. She notes: her mother's boots are on her feet and she has not re-padded the toes since she
+arrived. She looks at them. She does not re-pad them. She laces them tighter.
 
-### Beat 16 — Kyle
+### Beat 20 (1175) — Kyle
 She opens the door of 2E.
 
 Across the hall, Kyle is in the doorway of 2D. He looks like he just came back from something —
@@ -428,11 +460,13 @@ He closes his door.
 
 She goes downstairs.
 
-### Beat 17 — The confrontation
+### Beat 21 (1200) — The confrontation
 She goes to where he is. She walks in. She presents what she has: the documentation, the
 financial traces, the pattern. She tells him the next person who receives this package will not
 be her — it will already be moving through six channels simultaneously the moment she fails to
-cancel a scheduled send. This is not a threat. It is a system description.
+cancel a scheduled send. This is not a threat. It is a system description. To prove it costs
+something real, she turns his own management-tier credential mechanism — the one he used to lock
+her out of her building — back on his receiving-counter node and burns it in nine seconds.
 
 She says: this stops.
 
@@ -445,9 +479,9 @@ She says: I know.
 
 She leaves.
 
-### Beat 18 — Finale
+### Beat 22 (1300) — The Hallway (Finale)
 She comes up the stairs alone. The hallway is empty; the latch on 2D is already engaged. Kyle
-appears in exactly one beat of this story (Beat 16) and this is not it — his four words travel
+appears in exactly one beat of this story (Beat 20) and this is not it — his three words travel
 with her instead: she did what he told her to.
 
 She goes inside.

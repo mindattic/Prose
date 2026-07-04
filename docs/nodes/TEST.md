@@ -41,17 +41,16 @@ Kyle — see register rules below.
 
 ## 1. The central symbol {#SS-TEST-1}
 
-**The salute.** Three plants; one payoff.
+**The salute.** Two plants; one payoff. (Revised from an earlier 3-plant draft — the shipped
+text carries the motif in two beats, not three; see §4 item 2 for the correction.)
 
-- **Beat 5 (past):** "The briefing closed. Bear saluted with the others and filed out."
-  Mechanical habit. The salute means nothing yet.
-- **Beat 12 (past):** "Bear saluted — the same motion, the same angle, the same eight seconds
-  it had always been. He dropped it and walked out into the Cortland morning."
-  Last salute as Bear's CO. The loaded moment.
-- **Beat 22 (lobby, present):** Brandt straightens into colonel's posture (the old reflex);
-  Bear does not mirror it. "He did not move his right hand. He nodded once." No salute.
-  Absence is felt. Sets up Beat 32.
-- **Beat 32 (kill):** Brandt SALUTES Bear — full and formal, last gesture of an institution
+- **SK200 (past, briefing):** "The briefing closed. Bear saluted with the others and filed out."
+  Mechanical habit. The salute means nothing yet. Verbatim, confirmed present.
+- **SK695 (lobby, present):** Brandt straightens into the old colonel's posture — chin up,
+  shoulders set, weight to the balls of the feet — asking for the matching gesture. Bear
+  doesn't give it back. He holds Brandt's eyes instead: "A big man choosing not to move was
+  its own kind of statement." No salute. Absence is felt. Sets up SK800.
+- **SK800 (kill):** Brandt SALUTES Bear — full and formal, last gesture of an institution
   to one of its own. Bear does not return it. Extends his hand. Brandt takes it = the kill.
   LOCKED structural payoff.
 
@@ -109,7 +108,11 @@ The obligation = the root of the whole case. CE-0217 stays classified. The payme
 1. **"He had decided this was tiredness."** SK812.5. Brandt face-down in mashed potato.
    The humanizing line. Brandt had been compensating for 37 minutes without noticing.
    LOCKED. Do not expand or remove.
-2. **The salute payoff.** Beat 32: Brandt salutes; Bear does not return it; extends hand.
+2. **The salute payoff.** Two plants (SK200 briefing salute; SK695 Brandt's old posture,
+   refused) → one payoff (SK800). The shipped text does not carry a third plant at a
+   "walk off base" beat — SK600/650 (the insubordination/walk-off-base scene) contains no
+   salute; do not add one to chase the earlier 3-plant draft. See §1.
+   Beat 32 (SK800): Brandt salutes; Bear does not return it; extends hand.
    Brandt takes it. The handshake is just a handshake — Bear shakes it the way he shakes any
    hand, present and complete. Bear's weapon was the three pages, not the Sunder.
    Compliance lock engages forty-three seconds after contact breaks because the Manowar is
@@ -118,7 +121,11 @@ The obligation = the root of the whole case. CE-0217 stays classified. The payme
    minutes after the submission lands in the record. The institution that killed forty-three
    people now kills the colonel who covered it up. Bear does not deliver this kill. He already
    knew it was coming. The handshake was goodbye. LOCKED.
-3. **"He did not move. The room did."** SK800. LOCKED. Never expand or soften.
+3. **"The room didn't move. He had a body built to make rooms small, and he kept it still, and
+   the stillness was the only place the thing could go."** SK350 (Hana's "you were the only one
+   who kept paying on the twenty-first" reveal). Retired-by-revision: this lock previously cited
+   "He did not move. The room did." at SK800 — that line does not exist in the shipped text; the
+   quote above is the actual line, at SK350, not SK800. LOCKED. Never expand or soften.
 4. **Sternum touch, SK900.** Bear puts a hand flat on his sternum — the absence of Manowar's
    cycle, no warmth, just frame — and calls the number at 0600. LOCKED through-line closure.
 5. **The Meridian Cross, face-down in the service locker.** Symbol of deliberate departure,
@@ -132,13 +139,13 @@ The obligation = the root of the whole case. CE-0217 stays classified. The payme
 
 ## 5. Beat spine {#SS-TEST-5}
 
-37 beats (~46 pages). Dual timeline: Past (Cortland Engagement, CE-0217) ↔ Present (hearing).
+43 beats (SK50–SK1050). Dual timeline: Past (Cortland Engagement, CE-0217) ↔ Present (hearing).
 
 ### Present timeline: the hearing
 SK350: Hana intake — "You were the only one who kept paying on the twenty-first."
-SK450: Decision beat — the window estimate. "He had been carrying it long enough to trust it."
-SK660: 19-day surveillance logged. Teams pulled back day 14. Bear turned the wrong direction
-  at 1158. Kill order called at 1159. 38 minutes to scramble.
+SK500: Decision beat — the window estimate. "He had been carrying it long enough to trust it."
+SK680: 19-day surveillance logged. Teams pulled back day 14. Bear turned the wrong direction
+  at 1158. Kill order called at 1159. 38 minutes to scramble. Inside the freight bay at 1247.
 
 **Fight 1 (SK685) — Range/broadcast Sunder:**
 Two Atlas II ex-operators in freight service corridor. Bear opens vent arrays. Both down.
@@ -176,12 +183,36 @@ Same machinery that misclassified the 43 misclassifies Brandt's death. LOCKED.
 **SK850:** Gray zone entry. Manowar dormant — "the absence of it, the place on his chest
 that used to be warm." Halcyon credentialing node alert handled. Does NOT call Ironbend.
 
-**SK920 — SWAT at empty apartment:**
-Service locker: stainless field-surgical tray (transponder still pinging) + Meridian Cross,
-First Class, face-down. Team lead stands with locker open for a moment.
+**SK875 — Hana's own hearing (39 days later):**
+Bear watches on a throwaway comm in a noodle stall. She names PE-1139 and OD-7704 —
+"residential facility" vs. "approved engagement target" — without knowing he's watching.
+Session runs twelve minutes. Panel needs nine more days, then Halcyon Legal files a
+motion to dismiss.
 
-**SK940:** 7-line comm message image (seventh wished him well). CE-0217 closed non-actionable.
-Runs 16 transfers on the 19th. Sternum touch. Calls the number at 0600. The city answered.
+**SK900 — The motion:**
+Forty-one-page dismissal motion, standing/jurisdiction, routed to Bear via Ledger
+("*Declan.*"). A second file rides with it: a Halcyon transfer manifest moving "forty-three
+residents" from the Cortland site to an unaddressed compound — a *different*, currently-living
+group at a site that kept the registered capacity; the text should read as a second erasure,
+not the original 43 resurrected. Fourteen-day response window opens.
+
+**SK950 — The Fourteen Days:**
+Bear has Ledger splice the transfer manifest into Hana's exhibit (PE-1139) before the window
+closes. On day 13 the panel grants the motion: CE-0217 closed, non-actionable. The manifest
+survives inside the public exhibit regardless — closed is not un-filed.
+
+**SK1000 — The Empty Apartment:**
+Two days after CE-0217 closes, Halcyon's closeout team (Priya Achterberg) finds the
+hostel room swept clean. Service locker holds one object: a Meridian Cross, First Class,
+ribbon stripped, face-down. No surgical tray, no transponder — the transponder decoy is a
+separate object in a separate building (the IRB maintenance corridor, SK825). "He didn't
+run." / "He left."
+
+**SK1050 — The Nineteenth:**
+CE-0217 closed six weeks ago. Bear runs the sixteen transfers two days early, on the
+nineteenth, breaking the twenty-first pattern on principle. Sternum touch — no cycle, no
+warmth, frame at rest. Calls the Arrangement's dock line at 0600 and reads the sixteen names
+into the record no court will keep. "It was never mine to carry alone."
 
 ### Past timeline: the Cortland Engagement
 Interleaved as flashback. The 43 dead. The decision. Bear as CO. The last salute at Cortland.
