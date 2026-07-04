@@ -448,6 +448,144 @@ a story.
 
 ---
 
+## The Seven Houses — Current Alignment
+
+**Current alignment:** two coalition anchors, three opposition bloc, two unaligned.
+
+### House Fornax — The Refinery Seat
+**Coalition status:** Coalition anchor · **Domain:** Catalyst refining
+
+The Forge Hearth — oldest active apparatus in the Cauld. Stretching the membrane at the same
+coordinates for generations. Whether the membrane fully recovers between sessions is not a
+question House Fornax has authorized anyone to investigate.
+
+Fornax controls the upper end of the Catalyst supply chain: refines and distributes what the
+Liturgy supplies. Their institutional position depends entirely on this role.
+
+**The fault line:** Fornax's power depends on not asking where the Catalyst comes from. The
+Liturgy supplies the upper end. Fornax processes and distributes. The question of acquisition
+mechanism — whether the Gifted matter is Scried, Pierced, or arrives through something that
+predates both — has never been pressed. The Houses assume everything useful is Scried. Fornax
+has made institutional peace with this gap because pressing it would end the relationship that
+makes them indispensable. The Liturgy knows Fornax does not understand what it handles. The
+Liturgy has not corrected this. The silence is the arrangement.
+
+---
+
+### House Corvin — The Vigil Seat
+**Coalition status:** Coalition anchor · **Domain:** Thin-membrane access
+
+Corvin Station — oldest installation in the Cauld. Named in historical record more than any
+other. Long-tenure vigil operators stationed here for decades sometimes describe the membrane
+as something that breathes. Something that responds to them, not to the apparatus. They say
+this to each other on night watches. They stop saying it when House administration is present.
+It is not in any formal record.
+
+Corvin controls Sphere access points no other House can reach — the most valued imports from
+location-specific Spheres are Gifted matter Spheres reachable only from specific ground, and
+Corvin Station sits on some of the most contested coordinates in the Cauld for this reason.
+
+**The fault line:** Their most valuable operators have been receiving Catalyst infusions tuned
+for observation work, enhancing the perceptual range that makes an exceptional Scrying operator.
+At sufficient infusion count, these operators are approaching functional ascendance — perception
+at thin-membrane sites beyond apparatus range. These people are becoming hard to hold. The House
+cannot promote them into combat structure. It cannot demote them without losing the capability.
+The vigil operators who have been on the long watch longest are the ones the House most needs
+and can least manage.
+
+---
+
+### House Draught — The Muster Seat
+**Coalition status:** Opposition bloc · **Domain:** Military conscription
+
+The Muster Chamber — calibrated specifically for piercing. When volunteer intake falls short,
+before planned offensives, when numbers need supplementing, the membrane gets breached and
+soldiers come through. The apparatus here is specialized. The capability is not publicized.
+
+Draught holds the largest standing Myrmidon force in the current coalition map. A notable
+fraction arrived through the membrane. The oath is administered after arrival, before the new
+conscript has enough language to understand what they are swearing. The service record opens.
+The name of the origin Sphere is not in it.
+
+**The fault line:** Their Warrior King has been watching the same soldiers for thirty years.
+She knows which ones learned Cauld language faster than a person could. She knows the ones
+who, in their first months, looked at the sky the wrong way — not like someone who had always
+known what sky looked like here, but like someone recalibrating. She has not filed anything.
+She has made the calculation that telling costs something. After thirty years, telling would now
+mean explaining why she waited thirty years to tell.
+
+---
+
+### House Atrament — The Archive Seat
+**Coalition status:** Opposition bloc · **Domain:** Sphere cataloguing
+
+The Deep Archive — broadest Sphere catalogue of any House. More documented access points than
+any installation except Corvin Station. Where Corvin has depth at specific coordinates,
+Atrament has breadth: more Spheres observed, more designs transcribed, more knowledge of what
+exists across the membrane than any other institution in the Cauld.
+
+**The fault line:** The real theological fault line of the Cauld lives inside Atrament. The
+position — voiced rarely and dangerously — that Scrying installations should not be privately
+controlled; that the knowledge of all Spheres belongs to everyone. Their Keeper has not
+suppressed it. Whether this is principled tolerance or strategic positioning is the question
+the other Houses are asking. A House that controls the most knowledge and publicly harbors the
+belief that knowledge should be uncontrolled is either the most dangerous House in the coalition
+map or the most naive. No one has decided which yet.
+
+---
+
+### House Calyx — The Granary Seat
+**Coalition status:** Unaligned · **Domain:** Territory and supply
+
+Calyx Station — sits on territory rich in agricultural land and one of the highest
+monster-predator incursion corridors in the Cauld. The Scrying installation here is not the
+most powerful on the map, but the territory controls a significant portion of food supply for
+the current theater.
+
+**The fault line:** Monster Meat exposure rate among Calyx Oathless is the highest of any
+House. The Seat knows the number. The Seat calls them monsters when they come back changed.
+The House hunts them. Does not ask what they used to be. Does not look too closely at the
+faces. The parallel — the same process that produces a Gifted Knight through careful infusion
+produces what comes out of the wood line when the food runs out — is most legible at Calyx
+and no one in the House has been willing to read it.
+
+---
+
+### House Thresh — The Cutting Seat
+**Coalition status:** Opposition bloc · **Domain:** Covert operations
+
+The Thresh Chamber — modest primary apparatus. Their operational advantage is not what they
+can Scry but what they can deny others: tainted Catalyst supplies, assassinated Transmuters.
+A House that loses its senior Transmuters risks producing monsters from its own loyal soldiers
+when the next dose is administered by an undertrained practitioner with a compromised supply.
+Thresh weaponizes this deliberately.
+
+**The fault line:** They have run enough tainted operations that their own Catalyst supply chain
+is compromised. The same methods used to contaminate enemy supplies create the conditions for
+contamination to travel. The provenance of any given Catalyst batch in Thresh's inventory is no
+longer fully traceable. Their Lectors know. They have flagged it through internal channels. The
+Silence has not responded. Yet.
+
+---
+
+### House Pallor — The Long Seat
+**Coalition status:** Unaligned — courted by both blocs · **Domain:** Champion affiliation
+
+Pallor Station — mid-tier apparatus. Strategically valuable not for what it can reach through
+the membrane but for who is affiliated with it. Their Warrior King has been at the map table
+longer than any other living person, has watched coalition alignments cycle through three
+generations, and has stayed quiet about what they remember. A Champion is affiliated — not
+sworn, not commanded. No House owns a Champion. This one completed the arc from designation
+to name long ago and has not moved on.
+
+**The fault line:** Both coalition anchors are quietly asking: what are they waiting for? What
+does someone who has been fighting this war long enough to remember its original shape know that
+makes staying at Pallor Station the correct move? No one has asked them directly. They have not
+volunteered. The Warrior King who also remembers has stayed quiet for the same reason the other
+Houses have not asked: they are afraid of the answer.
+
+---
+
 ## Myrmidons
 
 The Houses' professional soldier class. Named, ranked, tracked in House service records by name
