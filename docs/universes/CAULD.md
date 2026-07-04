@@ -146,6 +146,20 @@ the Cauld has a better one, and no one is going to write down how they got it.
 
 The object is named for where it came from. Nobody filed this. It just got called that.
 
+**The illusion of manufacture:** A pierced rifle arrives with its original stock — wood from
+another Sphere, grain and finish that no local mill produced. The stock gets replaced with
+Yggdra-wood before the weapon leaves the chamber. That is enough. Citizens see a Yggdra-wood
+stock and read: locally made from a Scried design. They do not look at the barrel. They do
+not look at the action. The Scrying observation of the design did happen — they looked through
+the membrane first, so the notation is technically honest. The physical object also came
+through the membrane. These two facts are not reconciled anywhere in the record because no
+record exists.
+
+The minimum modification for plausibility is one local component in a visible position.
+The stock is standard. Sometimes it is a grip panel. Occasionally it is the furniture on a
+piece of artillery. The principle is the same: enough local material to suggest a forge, not
+enough to constitute one.
+
 **The missing-persons consequence:** When the pierced thing is a person, the origin Sphere
 reads it as an unexplained disappearance. No body is recovered because no body remained —
 the person came through. The arithmetic in Spheres with sustained Cauld interest is notable:
