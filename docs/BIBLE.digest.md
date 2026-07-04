@@ -100,11 +100,12 @@ narrative-law block here when stood up:**
     Kyle's contracts, but the full reveal (it has orchestrated his life) lands many books later.
     Bushido Coda only lands the avatar misdirect (Kyle/Sable's *wrong* hypothesis), nothing more.
 
-**Fantasy/Steampunk narrative laws (Universe: fantasy-steampunk — validate any Fantasy/Steampunk rewrite against these):**
+**Fantasy/Steampunk narrative laws (Universe: fantasy-steampunk — validate any Fantasy/Steampunk rewrite against these). World facts: `docs/universes/CAULD.md`.**
 
 16. **Action beats carry thematic weight; contemplative beats have physical immediacy.** {#SS-LAW-16} An action beat that doesn't advance or complicate the story's central tension is stage business. A contemplative beat without a grounding sensory or physical anchor is abstraction. Both fail. *(Universal beat doctrine — applies to all universes.)*
 17. **Default QA is a logic sweep, not a vote panel.** {#SS-LAW-17} *(SS-A44.)* The canonical QA methodology for any story that changes or needs validation is a **logic & continuity sweep** across six dimensions: (1) causality chain, (2) knowledge states, (3) timeline, (4) plant/payoff ledger, (5) orphan references, (6) bible agreement. Findings are triaged **BLOCKER / MODERATE / MINOR** and fixed with minimal splices. Review panels and Legion votes are expensive — run ONLY when the user explicitly requests a vote/review/score in that conversation. The engine enforces this (voting gate, default OFF; explicit `--allow-votes` / `allowVotes:true` only). Canonical methodology: `docs/LOGIC.md`.
 18. **Character is defined by response, not circumstance.** {#SS-LAW-18} *(SS-A41.)* A character's wound (backstory circumstance) is the engine of motivation, not the character itself. Character is defined by how a person *responds* to circumstance — what choice they make, what they sacrifice, how they define themselves under pressure. A wound is background; the response to it is foreground and must be *earned* on the page. This applies to every universe: do not write backstory as characterisation; write choice as characterisation.
+19. **Death is permanent in the Fantasy universe.** {#SS-LAW-19} In Universe #2 (The Cauld), consciousness does not transfer between bodies. There is no Transmutation, no shell-cycle, no spark-state. A Myrmidon who dies is gone. The theological debate about what follows death (Bheur, the Holding) is unresolvable because no one returns to report. Prose must not imply otherwise: no character survives death in a new body, returns from Bheur as a living agent, or carries memories across a death boundary. Full world facts: `docs/universes/CAULD.md`.
 
 ## 9. Glossary {#SS-§9}
 

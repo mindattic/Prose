@@ -153,7 +153,7 @@ stop noticing after a year.
 
 ## Social Structure
 
-**No police.** The city police force dissolved 2208. Law enforcement is private:
+**No police.** Arcturus Civil Security replaced the city police in 2096 — by force, in what historians call the Blue Massacre. Law enforcement is now private:
 - **ACS (Arcturus Civil Security)** — dominant contractor; Tier 4 zones only
 - Below Tier 4: private crew security, CorpoNation guards, or nothing
 
@@ -405,9 +405,7 @@ non-propulsive altitude technology. Any reference to "anti-grav" in prose is an 
 the universe, and a recurring story element across multiple GLMZ strands. Readers perceive
 emotional state, surface cognition, and sometimes deeper intention from other people.
 
-People distrust Psionics (Readers) and AIs. You cannot keep secrets from a competent Reader —
-that is the social tension. It's not fringe or marginal; it's a lived friction in daily GLMZ
-life and a recurring story element.
+People distrust Psionics (Readers) and AIs.
 
 ---
 
