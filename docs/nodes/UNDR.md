@@ -112,7 +112,7 @@ ages run backward like tree-rings:
   also [[SS-A39]] for the full canonical statement of this mystery.
 
 **The Works (navigation hazard — binding for all GLMZ prose):**
-The surface calls the entire accumulated below-grade infrastructure of Meridian 88 **The Works**: the
+The surface calls the entire accumulated below-grade infrastructure of GLMZ **The Works**: the
 overlapping residue of two centuries of arcology construction, corpo utility builds, abandoned transit
 projects, decommissioned service networks, and Pulse deep-anchoring. It is not a system. It is not a
 map. It is the sediment of every project that ever bored a hole in the ground and never fully closed

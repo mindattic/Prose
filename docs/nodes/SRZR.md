@@ -215,7 +215,7 @@ pressure inside the ring, like something on the other side leaning back. Do not 
 here. Ch 22's "the far side at 72 Hz pushing back, patient, refusing" reads as her finally close
 enough to quantify what was always there.
 
-## 3.5 World context — Meridian 88, 2226 {#SS-SRZR-3-5}
+## 3.5 World context — GLMZ, 2226 {#SS-SRZR-3-5}
 
 World facts that directly bear on SRZR's setting and prose. All binding.
 
@@ -224,7 +224,7 @@ prose reference to the current year uses 2226. Flashbacks and historical records
 dates unchanged.
 
 **Sasha's registered address (SS-A32):** The **7th Float District** — a named Aeroquarter in
-Meridian 88's western sector — is Sasha's registered pad address. An Aeroquarter is a neighborhood-
+GLMZ's western sector — is Sasha's registered pad address. An Aeroquarter is a neighborhood-
 scale aerostatic platform (500–10,000 residents; altitude 200–2,000m). This makes her officially
 traceable to an altitude address even as she operates on the ground, which is itself a small irony:
 she has a float address and lives in the street dirt.

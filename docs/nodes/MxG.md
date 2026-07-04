@@ -44,9 +44,9 @@ Color language: **Magenta** and **Gunmetal** are the unofficial colors of the GL
 
 ### Inkeri Saarinen ("Rook") — POV
 - **Heritage:** Finnish-Nigerian (GLMZ Diaspora)
-- **Role:** Fixer/planner. Former intelligence analyst, Meridian PD, dissolved 2208. Switched to freelance extraction work after the department was absorbed by Arcturus.
+- **Role:** Fixer/planner. Former city police intelligence analyst, dissolved 2208. Switched to freelance extraction work after the department was absorbed by Arcturus.
 - **Cyberware:** Standard package — enhanced low-light vision, encrypted comms implant, subcutaneous transaction processor. Nothing exotic.
-- **Physicality:** Former Meridian PD field operative — not augmented for combat but trained for it. Takes height transitions (drops, dock jumps, gap crossings) without hesitation and without comment. The instinct to commit before calculating is trained, not biological.
+- **Physicality:** Former city police field operative — not augmented for combat but trained for it. Takes height transitions (drops, dock jumps, gap crossings) without hesitation and without comment. The instinct to commit before calculating is trained, not biological.
 - **Voice:** Observational, dry, tactical. Treats problems as chess problems. This is also the flaw.
 - **Want:** Successful job, clean payment, no entanglements.
 - **Need:** To trust someone outside the transaction.

@@ -429,7 +429,7 @@ inside. The story shows the rot through his position; it never editorializes.
 
 ### GLMZ vertical class axis (SS-A32, SS-A33, SS-A42)
 
-Altitude is a social axis in 2226 Meridian 88 (SS-A32). Sky People — aeroplex and aeroquarter
+Altitude is a social axis in 2226 GLMZ (SS-A32). Sky People — aeroplex and aeroquarter
 residents — pay a premium not just for the view but for the distance from street consequences.
 **The Low** (30–320m, ungoverned) is the buffer between surface and float layer; no authority
 controls it. The Vultures operate on the ground; their world and the Lotus heir's world are

@@ -67,7 +67,7 @@ tallest tower the old Midwest ever raised — an ordinary residence in a city wh
 vertical. From the 111th floor the street is both literally and emotionally a long way down; the
 descent itself is part of the wound. (Replaces the earlier "forty-second floor"; SS-A20.)
 
-The vertical axis of Meridian 88 is also a class axis (SS-A42): Sky People — those who live at
+The vertical axis of GLMZ is also a class axis (SS-A42): Sky People — those who live at
 altitude — are literally above the city's noise, pollution, and consequence. Elias is not Sky People
 in the social sense; his building is height without prestige. The 111th floor is a condo, not an
 aeroplex, and the city still reaches him through his manifest-brain whether he descends or not. The
@@ -298,7 +298,7 @@ clean inventory of the instrument she is. The overlap is real; the coincidence n
 
 This section collects world-law anchors relevant to Sparrow so the bible is self-contained.
 
-**Vertical class axis (SS-A32/SS-A42).** Altitude in Meridian 88 is social stratification. Sky
+**Vertical class axis (SS-A32/SS-A42).** Altitude in GLMZ is social stratification. Sky
 People — aeroplex and aeroquarter residents — are the wealthiest and most privileged class, literally
 above the city's consequences. Elias's 111th floor is not aerostatic (no VABC lift, just a
 ferrocement stack), but the height carries the same psychological meaning for him: the street is

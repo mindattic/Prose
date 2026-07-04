@@ -36,10 +36,10 @@ Each zone has a character. The most important:
 | Zone | Character |
 |---|---|
 | **Z1 — The Loop** | Prestige corporate core. Axiom Tower, banking, the Arcology rows. Arcturus Civil Security density is highest here. |
-| **Z2 — Meridian 88** | The city's spine. Mid-tier commercial, transit hubs, the most mixed-income territory. Kyle's operating base. |
-| **Z3 — The Glooms** | Below Meridian 88, literally and figuratively. Perpetual fog from lake microclimate + industrial runoff. Where the freelancer economy lives. |
+| **Z2 — The Spine** | The city's spine. Mid-tier commercial, transit hubs, the most mixed-income territory. Kyle's operating base. |
+| **Z3 — The Glooms** | Below The Spine, literally and figuratively. Perpetual fog from lake microclimate + industrial runoff. Where the freelancer economy lives. |
 | **Z5 — Bloom Quarter** | Nanotech research and biomodification district. Legal-gray clinics, corpo-sponsored labs, body-mod culture. |
-| **Z9 — The Spine** | Western lakeshore industrial strip. Shipyards, heavy manufacturing, Iowan Behemoth staging grounds. |
+| **Z9 — The Yards** | Western lakeshore industrial strip. Shipyards, heavy manufacturing, Iowan Behemoth staging grounds. |
 | **Z∞ — The Null** | Ungoverned. No corpo claim. Where the Scavs operate, where the unwanted go, where nothing is on record. |
 
 ### The Pulse
@@ -62,7 +62,7 @@ The city's primary transit backbone. A Mach 6 vacuum tube rail system running on
 | **2160s** | Neuretics emerge — neuro-lace polymer mesh grown into living brain tissue. Changes everything. |
 | **2170s** | QUANTA (Φ) emerges as the dominant digital currency in GLMZ, replacing the fractured dollar. |
 | **~2200** | The US federal government has become a holding company for its own debt. CorpoNation sovereignty is the practical reality across the former Midwest. |
-| **2208** | Meridian PD formally dissolved. Arcturus Civil Security assumes all enforcement jurisdiction in GLMZ. |
+| **2208** | City police force formally dissolved. Arcturus Civil Security assumes all enforcement jurisdiction in GLMZ. |
 | **2226** | Present day. |
 
 ### The AI Cabal (Author Truth — Never Confirmed In-Fiction)
@@ -162,7 +162,7 @@ Both have been seeded into the Attendance strand's continuity.
 ## Key Characters
 
 ### Kyle (surname withheld)
-The primary POV character across most GLMZ strands. A freelance fixer and investigator operating out of Meridian 88. Dry wit, multilayered, takes every job at a price. Right hand = **Silence** (his blade philosophy); left hand = **Cacophony** (destruction). Always takes payment — 20 Φ minimum even for gestures. His Atlas-grade neuretics without a governor are degrading him.
+The primary POV character across most GLMZ strands. A freelance fixer and investigator operating out of GLMZ. Dry wit, multilayered, takes every job at a price. Right hand = **Silence** (his blade philosophy); left hand = **Cacophony** (destruction). Always takes payment — 20 Φ minimum even for gestures. His Atlas-grade neuretics without a governor are degrading him.
 
 **Kyle's secrets (never confirmed on-page):** He is a composite of 64 neural splices, not a natural person. His mentor Seo was fabricated. The origin of Silence is unresolved.
 
@@ -235,7 +235,7 @@ These are locked and should not be proposed as negotiable:
 - **Iowan Behemoths are machines** — not synthetic life, not alive
 - **E.L.F. always has periods** — "E.L.F." never "ELF" or "Elf"
 - **Form ≠ life** — appearance of personhood does not confer it
-- **No GLMZ police** — Arcturus Civil Security only; Meridian PD dissolved 2208
+- **No GLMZ police** — Arcturus Civil Security only; city police dissolved 2208
 - **Default to diaspora** — character names and heritage default to unexpected global combinations, never Anglo defaults
 - **CorpoNations use conjoined capitals** — "ArcturusSec" not "Arcturus Sec"
 - **The Reach is a lie** — in-fiction characters may believe it; the narrative never endorses it

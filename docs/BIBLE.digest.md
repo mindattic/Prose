@@ -114,7 +114,7 @@ narrative-law block here when stood up:**
   global), so two CLIs — or two browser tabs — can target different universes simultaneously
   ("SwitchUniverse"). Engine terms below are universe-neutral; terms tagged *(GLMZ)* are GLMZ
   content.
-- **GLMZ** *(GLMZ)* — Greater Lake Michigan Zone (a.k.a. Meridian 88, *The Glooms*); a 500-km
+- **GLMZ** *(GLMZ)* — Greater Lake Michigan Zone (a.k.a. *The Glooms*); a 500-km
   vertical megacity on the western shore of Lake Michigan, year 2226. Universe #1.
 - **Φ / QUANTA** *(GLMZ)* — the currency: one Φ = one second of certified error-corrected quantum
   coherence. Never the Greek letter phi ([SS-LAW-8](#SS-§5)).

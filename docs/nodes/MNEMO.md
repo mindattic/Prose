@@ -286,7 +286,7 @@ to discredit Amara is evidence of their own protocol working.
 - **Class lens — Tier 4+, sheltered.** Amara is a high-tier citizen who has lived a **very
   sheltered life.** Her POV is insulated: the lower tiers are abstractions, comfort and access
   the water she swims in. The class axis runs from underground through street-level through the
-  float districts — the **Sky People**, Meridian 88's aeroplex-dwelling wealthy, represent the
+  float districts — the **Sky People**, GLMZ's aeroplex-dwelling wealthy, represent the
   class horizon above her, and she is close enough to accept their framing without inhabiting it.
   The bleed — and Seto — are her first real contact with how the other tiers live. The
   register carries the blind spots of privilege: not malice, a narrowness she doesn't know she has.

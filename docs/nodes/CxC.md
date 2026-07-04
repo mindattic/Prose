@@ -288,13 +288,13 @@ from everything she inhabits. When it finally matters out loud, she names it. Th
 arc completing, not a discovery that Gerald was alive.
 
 **The Marrow infiltration (Beat 10)** is an NSB projection op, not a physical breach. Scout
-"burns a frame" (Meridian 88 register) into the Marrow by projecting Gerald through whatever
+"burns a frame" (GLMZ street register) into the Marrow by projecting Gerald through whatever
 network access the team has established. Key vulnerability: the **return handshake** — if the
 Marrow runs **Black Ice** (destructive resonance countermeasure), Scout does not come back
 cleanly. This is the operational risk that makes Beat 10 genuinely high-stakes.
 
 **Exo vocabulary for prose:**
-- "Burning a frame" — executing a projection op (Meridian 88)
+- "Burning a frame" — executing a projection op (GLMZ street)
 - "Threading out" / "going deep" — beginning / being in projection
 - "Surfacing" — successful return
 - "The Husk" — Scout's body, held in managed low-activity suspension while she projects into

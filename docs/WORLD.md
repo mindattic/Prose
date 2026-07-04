@@ -21,12 +21,14 @@ updated: 2026-06-11
 ## PART 1 — HOW THE CITY WORKS {#SS-WORLD-1}
 
 ### 1.1 The place
-- **The GLMZ** (Greater Lake Michigan Zone, 2226), also Meridian 88, also the Glooms — the
-  center of Western civilization, because the coasts failed. Built as a ferrocement wave over
-  drowned street grids; the original roads flooded in 2174 and the city cut new tiers into the
-  sides of its own buildings and kept going. The city is VERTICAL: sky is a rationed resource;
-  surface roads run at the 16th floor; the canyon floors belong to rain, freight, and the
-  people nobody bills.
+- **The GLMZ** (Greater Lake Michigan Zone, 2226), also the Glooms — the
+  center of Western civilization, because the coasts failed. 200-floor-plus towers rising from
+  a ferrocement seawall over drowned streets — structures that make today's tallest buildings
+  look like mid-rises. Not neat tiers — accretion: every generation bolted new passages,
+  platforms, and transit conduits onto whatever was already standing. Above the rooflines:
+  CorpoNation arcologies that clear even those towers, tethered by carbon nanotube mooring
+  lines to their anchor structures below. Sky is a rationed resource; surface roads run at
+  the 16th floor; the canyon floors belong to rain, freight, and the people nobody bills.
 - **Territories, not zones**: named territories (the Loop = prestige 5; the Spine = western
   lakeshore corridor; the Narrows; the Gray Zone; West Town; the Ashgrave Synthesis Corridor;
   Bucktown; the fringe). Power maps to real estate. Gray zones live between every pair of
