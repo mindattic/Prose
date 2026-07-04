@@ -103,10 +103,12 @@ Levin's loop is in his eyes and his timing. The prose shows the symptoms, not th
 - Lotus Stem. "Remembers the ones who mind their own business."
 - Never directly confronts the Vultures. Looms.
 
-**Casimir Mwamba:**
-- ⚠ NAME DISCREPANCY (resolve in back-check): entity record + memory call this hunter **Ekow Ato
-  (Ghanaian NGRA vet)**; this bible says **Casimir Mwamba (Congolese)**. Same role; pick one. (User
-  refers to him as "Ekow.")
+**Ekow Ato (work name: "Casimir"):**
+- RESOLVED 2026-07-03: he is **Ekow Ato (Ghanaian NGRA vet)** per the entity record; "Casimir"
+  is the work name Lotus knows him by. The prose enforces this as a POV mechanism — narration
+  says "Ekow" only in his own POV beats; Tomas-POV beats say "Casimir" because Tomas never
+  learns the real name ("the name was a collar"). Keep the split; never flatten it.
+  (Stale duplicate entity "Casimir Mwamba" in DB pending merge/archive.)
 - Lotus OUTSIDER hunter. The leashed dog they send when a bone goes missing.
 - Used, never admitted. The lens on the rot.
 - Dispatched to find the "saboteurs" — tortures and kills suspects.

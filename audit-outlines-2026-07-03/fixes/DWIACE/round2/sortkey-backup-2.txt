@@ -1,0 +1,13 @@
+# Round-2 repair backup — Death Whispers in a Cat's Ear (DWIACE)
+# Slug: death-whispers-in-a-cats-ear-019ec3fe | NodeId: 019EC3FE-4AA7-75B8-915B-4222005F2E1C
+# Snapshot taken before soft-disabling positions 97-99 (drafting-debris fragment).
+# Pre-change state: BeatId, Beats.Number, NodeBeats.SortKey, NodeBeats.IsEnabled, NodeId
+#
+# BeatId                                Number  SortKey  IsEnabled  NodeId
+019EC40C-966A-7DAD-9D05-690A0B13E55A     3404    4100.0      1      019EC3FE-4AA7-75B8-915B-4222005F2E1C
+019EC40C-A715-712B-9C5C-0A23435040C6     3407    4200.0      1      019EC3FE-4AA7-75B8-915B-4222005F2E1C
+019EC40C-B6D0-7CD5-901F-D7EE7AD75BDF     3410    4300.0      1      019EC3FE-4AA7-75B8-915B-4222005F2E1C
+#
+# Restore command (if needed):
+# UPDATE NodeBeats SET IsEnabled = 1 WHERE NodeId = '019EC3FE-4AA7-75B8-915B-4222005F2E1C'
+#   AND BeatId IN ('019EC40C-966A-7DAD-9D05-690A0B13E55A','019EC40C-A715-712B-9C5C-0A23435040C6','019EC40C-B6D0-7CD5-901F-D7EE7AD75BDF');

@@ -15,7 +15,9 @@ updated: 2026-07-03
 > rewritten as a 26-beat origin story 2026-07-02. Revised 2026-07-03: MacGuffin corrected from
 > "drone design" to "operator coercion"; Assessor redesigned as a physical character with a
 > dinner-scene introduction; sabotage campaign replaces instrument-theft arc; Kyle's line
-> updated to "Give em hell." Slug: `the-door-is-unlocked-2db1c6ca`.
+> updated to "Give em hell." Dress element removed 2026-07-03 (per feedback: no dress/makeover
+> beats — Pixel's clothing is functional/signal only); Beat 9 is now a bare invitation and she
+> attends the dinner in her own clothes. Slug: `the-door-is-unlocked-2db1c6ca`.
 > When prose and spine disagree, fix one in the same change. See [[../BIBLE]] for universe laws;
 > [[../books/bushido-coda-strands-bible]] for Pixel's role in BCODA.
 
@@ -26,8 +28,8 @@ A coming-of-age story about a predator and a specialist who refuses to be owned.
 A country girl rides the Pulse from Iowa into GLMZ, takes a relay job to pay the rent, and leaves
 a trace a predatory operator uses to find her. The Assessor runs a crew of conscripted specialists —
 not corpos, not heroes, mercenaries for the highest bidder. He sees the nine-second gap and wants
-her. He sends a dress and an invitation to dinner, expecting compliance. She attends — in the dress,
-with her own alterations — and declines. He accepts too graciously, and that is when she knows.
+her. He sends an invitation to dinner, expecting compliance. She attends — on her own terms, in
+her mother's boots — and declines. He accepts too graciously, and that is when she knows.
 
 What follows is a campaign of quiet sabotage: jobs that fall apart, contacts who don't show,
 financial traffic that traces back to a bribe. He is trying to make GLMZ uninhabitable until she
@@ -131,8 +133,9 @@ nine-second gap in the Ryokan frame was too clean for atmospheric noise — the 
 reviewed the logs called it "pixel-work." The name traveled the gray-zone network faster than she
 knew it existed.
 
-She first hears it in the beat where the Assessor's messenger opens with "Heard you worked the
-Haymarket relay, Pixel." She notices the name. She does not correct it.
+She first hears it from Donatella after the climate-system fix ("I'll call you Pixel"), and
+learns it has already traveled when the Assessor uses it at the dinner. She notices the name.
+She does not correct it. (There is no messenger beat — the invitation arrives unsigned.)
 
 **The earned-name rule:** The name is inseparable from the pinhole gap. The gap is what the
 Assessor noticed. The gap is the story's title. The name came from the same act that started
@@ -204,8 +207,8 @@ She files it. She keeps watching. She does not expect to feel anything about it 
   infrastructure without triggering a flag, reads systems from the visible to the inference, and
   built a functional miniaturized VacCell drone in a barn in Iowa. He sees what she'll be in five
   years. He wants to own it before anyone else finds it.
-- **The dinner:** He sends a dress and an invitation. He expects compliance. He does not expect
-  her to show up in the dress with her own alterations and drink the Château from the bottle.
+- **The dinner:** He sends an invitation. He expects compliance. He does not expect
+  her to show up in her mother's work boots and drink the Château from the bottle.
   His near-rage at not being in total control is visible only in precision — he becomes slightly
   too exact, the way a high-tension wire hums.
 - **After she declines:** He does not argue. He smiles. He says something gracious. She registers
@@ -303,13 +306,16 @@ band. The gap of someone who adapted, not someone who was invisible.
 
 She takes the 180Φ and walks home. Someone had found value in the gap.
 
-### Beat 9 — The dress
-Four days later: a parcel at the door of 2E. A dress, her approximate size, no card. Then a
-comm address on a strip of paper underneath. An address and a time. 21:00.
+### Beat 9 — The invitation
+Four days later: a strip of paper under the door of 2E. A restaurant address and a time. 21:00.
+No name, no signature. The paper stock is expensive — the kind chosen by someone who wants the
+absence of a name to say the name.
 
-She knows who sent it. She doesn't know how they found her size. She files that too.
+She knows who sent it. She doesn't know how they found her door. She files that too.
 
-She goes to the Haymarket district in the afternoon and makes three alterations to the dress.
+She spends the afternoon reading what the public record holds on the restaurant: reservation
+economics, ownership trail, who eats there. She learns more about him from where he chose than
+he intends. She goes in her own clothes and her mother's boots.
 
 ### Beat 10 — The dinner
 The restaurant is the kind that requires a reservation three months out. He has a corner table.
@@ -440,18 +446,9 @@ She says: I know.
 She leaves.
 
 ### Beat 18 — Finale
-She comes up the stairs and Kyle is in the hall, loaded up, the look on him that she recognizes
-now — the specific posture of someone who has a heading and the physics to back it up.
-
-He looks at her. She looks at him.
-
-"Give em hell," she says.
-
-She holds up her hand.
-
-He returns it. Clumsily — the timing is slightly off, the angle wrong, a man who handles a
-sword without thinking and has never quite figured out how to receive an offered high five. It
-lands anyway. The door to 2D closes.
+She comes up the stairs alone. The hallway is empty; the latch on 2D is already engaged. Kyle
+appears in exactly one beat of this story (Beat 16) and this is not it — his four words travel
+with her instead: she did what he told her to.
 
 She goes inside.
 

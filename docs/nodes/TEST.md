@@ -154,7 +154,7 @@ on surplus gear) — handled physically during testimony. Then Atlas III proper 
 holds the lead's wrist through rest of testimony. Brandt watching from behind partition glass.
 "The lead sat down when Bear let him. The other two read the room." LOCKED.
 
-**SK746.09375:** Bear's counting-as-interiority beat. "I was still counting things."
+**SK695:** Bear's counting-as-interiority beat. "I was still counting things."
 Brandt's rationalization established in this beat — "We operated on the intelligence we
 were given." The dropped defense: "the slight forward weight-shift of a man preparing a
 clause. He dropped it."
@@ -176,11 +176,11 @@ Same machinery that misclassified the 43 misclassifies Brandt's death. LOCKED.
 **SK850:** Gray zone entry. Manowar dormant — "the absence of it, the place on his chest
 that used to be warm." Halcyon credentialing node alert handled. Does NOT call Ironbend.
 
-**SK862.5 — SWAT at empty apartment:**
+**SK920 — SWAT at empty apartment:**
 Service locker: stainless field-surgical tray (transponder still pinging) + Meridian Cross,
 First Class, face-down. Team lead stands with locker open for a moment.
 
-**SK900:** 7-line comm message image (seventh wished him well). CE-0217 closed non-actionable.
+**SK940:** 7-line comm message image (seventh wished him well). CE-0217 closed non-actionable.
 Runs 16 transfers on the 19th. Sternum touch. Calls the number at 0600. The city answered.
 
 ### Past timeline: the Cortland Engagement

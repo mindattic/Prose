@@ -1,0 +1,105 @@
+﻿# The Cleanup List
+
+The server cabinet smelled of hot aluminum and something older — sealed air, the smell of a room whose ventilation had been running the same loop for months with no human body to metabolize. The cooling fan held a continuous low pitch, the sound of hardware kept alive for reasons it did not know. He cracked the panel without ceremony.
+
+The hardware inside was denser than he expected for legacy infrastructure: four drives and a routing board with dedicated local processing. Not a transit relay. A holding system, built to receive and accumulate without routing anywhere. He had found the node in month four of the silence mapping — not by accident, but because he had been looking for a relay that received and never forwarded, and this was exactly that. He plugged in his reader.
+
+Eleven months of Cellvault contractor records, accumulating in a sealed box on the third floor of a building running 2219 firmware. The access had taken eleven minutes.
+
+He pulled the batch records first.
+
+Batch 44-C appeared on the fifth file. The document header called it a maintenance coordination file. The contents were not maintenance coordination. He recognized what he was looking at before he finished the first column.
+
+Eight hundred and forty-seven rows.
+
+Each row: a name, a neuretics batch code, a facility assignment, a calibration schedule running out eighteen months. The classification field, buried in the metadata, read *Managed remediation. Ongoing. See secondary protocol.*
+
+He kept his back against the cabinet and worked through the list by facility. Zone 6: twenty-two entries. He found Amara's name in the nineteenth row. He had known she was inside the scope since the Monday before last. Eight days of carrying the match. The name made it specific in a way the knowing hadn't.
+
+He kept reading.
+
+*Banda, Nuru. Batch 44-C. Zone 6, Facility C-9. Current status: active.*
+
+He stopped.
+
+He read it again. The name, the batch code, the facility, the status. Then again. The name. His sister's name, in this document, in this room, with this classification attached to it.
+
+The cooling fan ran its continuous pitch. He did not move.
+
+He had built the wall between his work and her life over six years, and he had built it with care. Every decision about how he operated — the sealed neuretics, the routes he never named aloud, the contacts he never introduced to one another — was constructed around one specific fact: she worked in a building with fixed hours and people who expected her at specific times, and nothing that moved through his hands could be allowed to move toward her. The wall was his primary professional achievement. He maintained it with the same discipline he maintained his routes.
+
+The list didn't know about the wall.
+
+He had been inside Orison's receiving bay maybe a hundred times. He knew the calibration suite the way he knew every checkpoint — by what it had asked of him on approach, by the angles of the corridors and the staffing at the desk, by the flat managed light that never told you what time of day it was outside. He had waited in the reception area while packages cleared. He had looked at the people in the chairs — not unhappy, not uncomfortable, not performing anything, just fine — and he had registered it as good facility design, as what money spent on managed environments produced, and he had turned his attention back to the counter because the counter was where his job was.
+
+The calibration suite was four blocks from her clinic.
+
+He had couriered to Facility C-9 sixteen times in three years. He had stood at the receiving counter and signed his paperwork and left. He had been thirty feet from the machine running on his sister and had not known it, because the wall was perfect, because he had built it to be perfect, because it had never occurred to him that the wall only protected her from what he was doing and not from what was being done.
+
+She had mentioned, once, that Orison offered a subsidized calibration program for Zone 6 community healthcare workers. She had said it casually, the way she said things that were simply facts about the administrative landscape of her week. He had heard it. He had kept it where he put things that didn't yet connect to anything. He had not thought about it since.
+
+The current status read: active.
+
+*Current status: active.* Her calibration schedule was still running. Whatever the secondary protocol entailed — whatever the managed remediation visits were doing, visit by visit, over months — it was still happening. She was still going. She was still attending. He could picture her in the reception chairs with the flat overhead light and the managed temperature, holding her wrist out the way she always held things out, with the complete and uncomplicated trust of someone who has never had reason to believe a system was designed against her.
+
+She was fine. She said so in her sign-offs. *Clear. -N.* She sent them every night. He had been reading them as evidence that she was safe.
+
+He put both hands flat against the server cabinet and let the metal hold the weight for a moment. The fan ran. The drive indicators showed green. It was a room that had been doing its job for months without anyone to notice it was wrong.
+
+He read the entry one more time: name, batch code, facility, current status. Then he pulled himself back to the manifest and kept reading, because the work in front of him had not changed, and there was nothing he could do with what he now knew from inside this cabinet except finish what he had come here to do.
+
+Zone 7: eighty-four names across six facilities on his routes. He had been delivering packages past Facility Z-3 on Tuesday mornings for two years — past the checkpoint and the receiving bay, the flat managed light. He had moved through the landscape of this thing without knowing what the landscape was.
+
+He copied the manifest. Encrypted the copy, split it across three drives. Two into his kit bag, third into the inner pocket of his jacket. He locked the cabinet, replaced the panel, and left.
+
+---
+
+The Seam between Zone 7 and Zone 6 ran its morning shift below him. Four days. Ekow Ato had given him seven at the Seam crossing — *walk away from the Orison work, close out the inquiry* — and three were already spent. He had noted, at the time, that Ekow had paused before saying "seven." Not hesitation — calculation. As if the number had been derived on the spot. The offer had been reasonable. That was the shape of a warning before the shape changed.
+
+He reached his block and went upstairs.
+
+The transfer protocol he had been building for six weeks was ready. The relay path ran through Seam beacon infrastructure — legacy firmware, off the main monitoring grids, low traffic. He committed to the move, opened the relay path, and watched the handshake sequence run.
+
+The timing came back wrong.
+
+He had run this path forty times in testing. The Zone 5/6 beacon registered at 340 milliseconds under normal load. Tonight it came back at 340, then at 1,200 as the transfer sequence opened — the gap that appeared when an additional process was monitoring the channel and hadn't finished loading when the first registration fired. The subsequent beacons came back at consistent intervals. Whatever was watching had found its footing.
+
+He aborted before the first real packet cleared. Certain enough.
+
+The monitoring architecture ran on Orison's Zone 7 relay licensing — he recognized the latency profile from two years of checkpoint approach runs. He had been routing through their infrastructure for six weeks and had just told it exactly where he was trying to go.
+
+He sat with the drives in both hands. Three locations on one body, the relay path burned, three days on Ekow's clock. He had spent six weeks building the path and thirty seconds reading the timing before he shut it down.
+
+He set the drives on the table and messaged Amara before he worked out what came next. *I've had your name for eight days. I held it.*
+
+He didn't explain why. The explanation was true and incomplete and she would know both things when she read it.
+
+He did not tell her about Nuru. He needed one day to determine whether telling her would help or just widen the thing he needed to contain. He would tell her tomorrow.
+
+Her reply came while he was still looking at the drives. The message started, broke, restarted: *Eight — how did you — okay. How long have you been inside the Zone 7 facilities?*
+
+He answered. Two years of routes, six facilities, the Tuesday morning window at Z-3.
+
+Then she asked: *Why didn't you tell me when you found it?*
+
+He sat with the question. It was not an accusation — the way she sent it was not that. It was someone asking a real thing, the way you asked a thing when you were entitled to the answer and were not certain you would get it.
+
+He wrote: *Because knowing your name was in the document before I could do anything about it would have been one more weight you were carrying and I hadn't yet found the route.*
+
+A pause. Longer than her pauses usually were.
+
+Then: *That's — yes. Okay.*
+
+Two words. He recognized what they meant: not *okay* as in *I accept this*, but *okay* as in *I understand you, and that was the right call, and I would have done the same.* He knew this because he had received enough of her by now to know the difference between a concession and a recognition. This was a recognition. It landed in his chest as something that was not quite warmth and was not quite relief and was specifically itself, and he didn't reach for a better word for it.
+
+His right hand registered something before he caught it — the heel of the palm and three fingers, the specific torque of a calibration probe withdrawing. Her hands, not his. He did not reach further through.
+
+He looked at the drives. The relay path was burned. Three days on the clock. He needed a different route, and the githeri on the counter had gone cold while he was in the annex.
+
+He ate standing at the counter. He had the name of a journalist in Zone 3 — a gray-zone contact he had moved material for twice before, nothing of this weight, nothing that couldn't be disavowed. He looked up the contact while he ate.
+
+He had not worked out what to do about Nuru by the time he finished. He stood at the counter and looked north, toward Zone 6, for a while after the food was gone. The window framed the boundary lights — the relay masts, the standard grid of a city going about its work in the dark.
+
+She would send her sign-off in three hours. *Clear. -N.* Then the correction a minute later.
+
+He washed the bowl. He sat at the desk. He started building a different path.

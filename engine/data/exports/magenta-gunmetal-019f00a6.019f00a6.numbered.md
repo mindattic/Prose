@@ -31,7 +31,7 @@ Rook let the names settle, and what came with them wasn't assessment so much as 
 
 "Fifth?"
 
-"Diallo. Rider, drone support. NSB specialist. Expensive. Consistent."
+"Diallo. Exo, drone support. NSB specialist. Expensive. Consistent."
 
 The fourth name she'd have picked herself. The warmth that came with it she kept off her face, because the job didn't need it yet, and spending it early was a habit she'd trained out of herself a long time before this.
 
@@ -515,7 +515,7 @@ Nobody had asked her. Nobody answered. Rook let it sit.
 
 "The balance of payment," Rook said.
 
-"A second escrow, structured identically to the first. I can confirm the routing in ten minutes."
+"The Axiom-routed escrow is compromised the moment they realize what happened — they'll freeze it or claw it back the second Gault's channel reports in. So it isn't a balance. It's a replacement." Ohara's voice didn't change register for the correction; she delivered it the way she delivered everything else. "Forty thousand, structured identically to the original, from an account they can't touch. You lose nothing by trusting a channel they haven't burned. You lose everything if you wait on the one they still control."
 
 "Do that." Rook looked at the crew. Boiler's eyes on the road. Vox already working. Lace settled into the side window with the quiet attention of a person who had privately decided something and was waiting to see if the job would make her act on it. "We continue."
 
@@ -715,6 +715,12 @@ Nobody said anything. Boiler had lowered himself onto the arm of the couch, whic
 
 "Eight months ago I began monitoring their internal filing queue. Three weeks ago a classified subsidiary I had no earlier knowledge of appeared in the registry and filed a research initiation notice under the Class IV-approaching-V subcategory." A pause — not for effect, the way she did everything, a pause acknowledging a number worth acknowledging. "They found the Class V pathway without me. Fourteen months from a military filing, by my estimate. That is why I couldn't wait."
 
+Rook turned the timeline over once more before she let it go. "Seven weeks ago, a Z3 logistics outfit lost its Compound 7 vendor access. No incident filed. Just a flag and a review, boxed and unexplained. And your pod transit's been running three standard deviations faster than ambient since before we ever badged in — a standing priority flag on your account, the kind somebody sets on purpose."
+
+Ohara didn't hesitate. "Both of those are the same thing, and both of them are mine, in the sense that I caused them without ordering them. That would have been Axiom's internal audit tightening around my account once the deletions started producing small anomalies — badge logs pulled twice in one week where they'd normally pull them quarterly, a maintenance contractor rotated off my floor with no explanation given, and a flag I never requested and didn't dare remove, because removing it would have looked like an admission." She held Rook's eyes. "They didn't know about your crew seven weeks ago. They didn't know about you at all. But they already had a live nerve running to me, and anything that touched it — your badge exception, Vox's outer-ring pass — was going to read as urgent the moment it moved. That's why the response was so fast. Not because they were waiting for you. Because they were already watching me, and you walked into the light they'd already turned on."
+
+It closed the box she'd drawn around *seven weeks* three days ago, and it didn't make her feel better about the tap Vox had found on their own digital residue, but it made it make sense, which was worth almost as much.
+
 "What's the deck material on the Lake Platform?" Boiler asked. "For the approach."
 
 No one answered him.
@@ -739,15 +745,15 @@ Lace had been watching Ohara since before the explanation started. Rook caught i
 
 "You have a backup copy," Lace said. Not a question.
 
-Ohara looked at her. A clean, direct look, nothing behind it she was hiding and nothing she was offering up. "One."
+Ohara looked at her. A clean, direct look, nothing behind it she was hiding and nothing she was offering up. "One." A beat. "It isn't the formula. It's testimony — dates, filings, the pathway I found and who I told and when. Notarized, timestamped, held by someone who doesn't know what it opens. If I don't reach that terminal, Axiom answers for what's in the testimony. They don't answer for the formula, because the formula dies encoded in a head nobody else can read. The backup buys accountability. It doesn't buy the thing we're actually here for." She said it once, flatly, and did not repeat herself.
 
 Lace nodded and was quiet.
 
-The word sat in the room. Ohara had one backup of the most dangerous and most valuable data anyone in this flat would ever stand next to, and she'd looked at Lace when she confirmed it, and Lace hadn't asked where it was. Two trained people had just had an entire conversation in five words, and Rook had caught only the shape of it. She would think about that later. Not now. Later.
+The word sat in the room anyway. Ohara had drawn the line herself, in five sentences, the same way she drew every line: precisely, and without asking anyone to feel better about it. Two trained people had just had an entire conversation about what could and could not save the mission if the mission failed, and Rook filed the shape of it and moved on. Not now. Later.
 
 "Three miles," Scout said. The first thing she'd said all night. She pulled the crawler case from her pack, found a clear stretch of counter, ejected herself from her Husk and injected into the Shell without another word. Her eyes rolled back. Her breathing slowed, her body went still. She was already in the vents of somewhere she'd been studying on the network since before they found the safe house, mapping a place she had not yet walked.
 
-The thing nobody outside the trade understood about Riders was the cost of admission: to be somewhere else, you had to leave your Husk behind. The body on the counter was hers and undefended now — eyes white, hands open, three miles of judgment gone out of it, a coat over a chair that breathed. Anyone through that door in the next four hours would find a woman who couldn't see them coming. It was why a Rider never rode without people she trusted to stand over the skin she wasn't in.
+The thing nobody outside the trade understood about Exos was the cost of admission: to be somewhere else, you had to leave your Husk behind. The body on the counter was hers and undefended now — eyes white, hands open, three miles of judgment gone out of it, a coat over a chair that breathed. Anyone through that door in the next four hours would find a woman who couldn't see them coming. It was why an Exo never went in without people she trusted to stand over the skin she wasn't in.
 
 Rook looked at the window. The light outside was shifting toward evening — the gray-orange that meant November over the lake, a sky that committed to nothing and delivered on all of it.
 
@@ -941,9 +947,9 @@ Inside, Vox was at a folding table they'd dragged from the break room, her right
 
 ---
 
-Scout was on the ground against the far wall, legs straight out, eyes rolled back to whites. Her body was doing nothing except breathing. She had gone out of herself and left the rest on a cold floor for anyone to find — and in a few minutes, when the shooting started three miles out, the softest target on the whole board would be the Rider lying defenseless in this room, somewhere her own skin couldn't follow. Scout spent that risk every time like it was someone else's money.
+Scout was on the ground against the far wall, legs straight out, eyes rolled back to whites. Her body was doing nothing except breathing. She had gone out of herself and left the rest on a cold floor for anyone to find — and in a few minutes, when the shooting started three miles out, the softest target on the whole board would be the Exo lying defenseless in this room, somewhere her own skin couldn't follow. Scout spent that risk every time like it was someone else's money.
 
-Rook crossed to her and crouched. She did not touch Diallo's shoulder. You didn't interrupt a Rider who'd ejected — a forced return was a seizure waiting to happen, and she had no interest in testing the statistics. She just looked.
+Rook crossed to her and crouched. She did not touch Diallo's shoulder. You didn't interrupt an Exo who'd ejected — a forced return was a seizure waiting to happen, and she had no interest in testing the statistics. She just looked.
 
 The face in repose was younger than it seemed when Diallo was present in it. Jaw unclenched, eyes wide and sightless. Somewhere three miles out across that water something the size of a fist was moving through ductwork and sending back what it saw, and the woman who was reading it had left her body here, breathing, in a circle of people she'd decided were worth lying down blind in front of. You didn't leave your body in a room with people you didn't trust. The trust wasn't warm and wasn't stated; it was structural, as load-bearing as Boiler's column ratios. Diallo lay here undefended because she had decided this crew was worth it, and that decision was as clear as anything she had ever said aloud. Rook had walked past it on two jobs without seeing it for what it was. She saw it now, crouched on a cold floor with a storm coming, and was sorry it had taken her this long.
 
@@ -1067,7 +1073,7 @@ Rook clocked the loose rail and kept moving. A thing to use or a thing to die on
 
 Seun Adalemo was standing at the array shelter's near corner, and he saw her come up the stairwell at the same instant she saw him. Soaked through, coat dark with rain, his position exactly where she'd have put herself in his place — clear line to the stair access, cover behind the shelter angle, wind at his back.
 
-The fourth PEREGRINE member — the one she didn't have a name for — went for Ohara. Ohara wasn't where she was supposed to be. Rook hadn't told her to move laterally behind the structural columns. Ohara had looked at the deck layout for four seconds when they crested the stairs and decided independently. The PEREGRINE member reached the space where Ohara had been, found a support column, and then found himself on the wrong side of the broadcast array shelter with no clean approach and a problem to solve.
+Ohara wasn't where she was supposed to be. Rook hadn't told her to move laterally behind the structural columns. Ohara had looked at the deck layout for four seconds when they crested the stairs and decided, on her own, that a support column beat open sightlines whatever came next — the same read she'd made in the corridor an hour before this one, the same instinct that had put her two meters sideways in the Bloom Quarter before anyone told her to move. Rook clocked the empty space where Ohara should have been, clocked the shape behind the column instead, and let it go. It cost her nothing. It was the correct decision, made by the person best positioned to make it.
 
 Adalemo came at her from the shelter corner, and they closed the distance in a way that made talking briefly impossible.
 
@@ -1111,29 +1117,27 @@ She heard the float inflate before she heard him hit the water.
 
 ---
 
-Boiler's voice: "Rook. I have a firing position."
+Boiler's voice: "Rook. I have a firing position. Relay junction behind the shelter glass — it's feeding the broadcast node's authentication trunk. If I open it up, whatever's racing Ohara's revocation down that line has to find a new road."
 
-"Hold."
+"Do it," Rook said.
 
-"Copy."
+"Copy. You might want to look away from the glass."
 
-She got back from the railing edge and moved toward the array shelter. Through the rain she could see the crane arm — Boiler had swung it to maximum extension, out over the deck 3 edge, and he was at the end of it, hanging off the superstructure in the middle of a November storm, rain running off him in sheets, looking through the viewport glass at exactly the angle she'd have wanted him at if she'd been able to ask. She hadn't asked. He'd read the deck himself and moved to it. He was grinning — she could tell from twenty meters in the dark.
+She didn't look away. Through the rain she could see the crane arm — Boiler had swung it to maximum extension, out over the deck 3 edge, and he was at the end of it, hanging off the superstructure in the middle of a November storm, rain running off him in sheets, sighting through the viewport glass at exactly the angle she'd have wanted him at if she'd been able to ask. He fired once. The reinforced pane starred and blew inward in a sheet of glittering fragments, and behind it something in the relay housing threw a fat blue spark and went dark, and half the deck's running lights stuttered and came back on a different circuit. He was grinning — she could tell from twenty meters in the dark, rain running down a face that had just done something to a Lake Platform relay panel the maintenance logs would spend years failing to explain.
 
-"Stand down," she said. "Platform's clear."
-
-Vox: "Layer three. Ohara. Now."
+Vox: "Whatever that was, thank it. Axiom's revocation just lost its fastest path to this terminal. Layer three. Ohara. Now."
 
 ---
 
 Ohara was already at the terminal.
 
-She'd gotten around the broadcast array shelter's far side while Rook was on the railing. The fourth PEREGRINE member was still on the wrong approach. Ohara had the access panel open — she'd cleared the shelter door with a maintenance code she'd memorized from the platform's published Cooperative documentation six months ago — and her hands were on the input surface, rain-wet, steady.
+She'd gotten around the broadcast array shelter's far side while Rook was on the railing. She had the access panel open — she'd cleared the shelter door with a maintenance code she'd memorized from the platform's published Cooperative documentation six months ago — and her hands were on the input surface, rain-wet, steady.
 
 She entered her credentials. Her Axiom ID, her research tier, her neuretics handshake, all of it. She hadn't revoked them before leaving the compound, because she'd known she would need them for this, and the revocation would have flagged the exit early.
 
 The terminal accepted her.
 
-Vox: "Axiom's revocation has hit eighty-seven nodes. This one hasn't received it yet. You have the window. It is not a large window."
+Vox: "Axiom's revocation is still routing around the junction Boiler just took out. You have the window, and it's wider than it was. Not large. Wider."
 
 "I know," Ohara said.
 

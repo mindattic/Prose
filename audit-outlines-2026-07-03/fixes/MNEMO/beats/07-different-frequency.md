@@ -1,0 +1,58 @@
+---
+action: REPLACE
+target_beat_id: 019EE125-4FB9-7A76-A817-CBD3F29B277B
+chapter_node_id: 019EE11E-6AE8-711D-B12D-530FF2497399
+BeatTitle: Different Frequency
+Synopsis: Locked §7 finale, part 1. Amara is formally pulled from the Tribune rotation; that
+  afternoon Orison ships the Phase II announcement, professional and warm, on its flagship outlet —
+  delivered by her replacement. She loses the last thing Act 3 was meant to cost her: certainty.
+  Seto messages her Nuru's rescheduled Tuesday 9AM calibration window, and she decides to go.
+  Replaces the previous content at this slot (an unforeshadowed anonymous-caller / "the Glooms"
+  subplot with no setup anywhere else in the book — see plan.md Fix 1).
+SortKey: 4000
+POV: Amara
+---
+
+# Different Frequency
+
+Her editor called it a scheduling conversation, which was the word the Tribune used for the conversations that weren't.
+
+"The leave's been extended," he said. He wasn't looking at her when he said it — he was looking at a point slightly past her shoulder, the specific cowardice of a decent man delivering someone else's decision. "Not indefinitely. Under review. I fought for language that keeps the door open."
+
+"Whose door."
+
+"Amara."
+
+"I'm asking whose door you fought for. Mine, or the one that closes on schedule regardless of what you fought for."
+
+He didn't answer that, which was itself an answer, and she let him have the mercy of not making him say it twice. She cleared her desk into a single bag — recorder, the folder Ciro had left her, three source notebooks she was not leaving behind for anyone to read — and rode home through the managed air of a building she was no longer sure she'd be allowed back into on her own terms.
+
+The announcement ran at 18:00.
+
+She watched it from her kitchen table, the same table, because there was a specific dishonesty in watching it anywhere else — some part of her that still needed to receive the news the way a viewer received it, cold, undefended, without the advantage of having lived four months inside the thing being announced. Orison Communications Group's flagship outlet ran it in the slot that had been hers. The anchor was Yewande, whom she had trained on three field pieces two years ago and liked, actually liked, without complication, which made it worse.
+
+*A new standard of care,* Yewande said, warm and unhurried, reading from a script that had clearly been written by someone who understood exactly how much warmth the sentence needed and had metered it precisely. *Beginning next quarter, the calibration protocol piloted in Batch 44-C becomes the baseline standard across all Orison neuretic maintenance contracts in the metro area — bringing this level of care to every client, not just a proof-of-concept cohort.*
+
+*Someone's hand found a bicycle bell that wasn't there and pressed it anyway, twice, out of pure habit, three blocks from a checkpoint that no longer existed for him.*
+
+The sentence arrived and passed through her the way they all did now, unannounced, and she let it go by without breaking stride on the thought she'd been having, because stopping for them cost more than absorbing them.
+
+Yewande's segment ran four minutes. It cited internal satisfaction metrics. It did not cite 847 names, or eight seconds, or a train somewhere west of the Spine where a woman had doubled over holding a grief that had never belonged to her. It did not need to. The segment was accurate in the way Amara's own segments had always been accurate — every sentence verifiable, every claim sourced, and the whole of it constructed to mean something its own facts didn't quite add up to.
+
+She had built a career on the idea that what she could verify was the same as what was true. She sat at her kitchen table and watched the version of that idea that had eaten her, delivered by someone she'd trained, in a cadence she recognized because she had taught it to her.
+
+Orison would win the news cycle. She had known this before the segment aired, the way you know a verdict before it's read because you've already seen the jury's faces. What she had not expected — what these last weeks had apparently been saving for her, the way the protocol saved its worst cuts for the recipients who'd gone longest without objecting — was how completely the certainty went with it. Not her credibility; that had been leaving for weeks, and she'd made her peace with its schedule. The certainty. The specific, load-bearing confidence that if she assembled enough true, sourced, verifiable facts in the right order, something would have to give. Eight seconds had happened. Eight hundred and forty-seven people had felt something real, at the same second, with no name attached to it. And Orison had turned it into a launch date.
+
+She sat with that until the kettle she'd forgotten had finished boiling clicked off on its own.
+
+Her handset lit at 19:12. Not the Tribune. Seto.
+
+*Facility C-9. Tuesday, 9AM. She's on the schedule again. Rescheduled from three weeks ago — they moved her window twice and didn't tell her why.*
+
+*I don't know if she'll go.*
+
+She read it twice, the way she read everything that mattered, and then a third time for the part underneath the words — that he wasn't asking her to do anything, only telling her what he knew, in the register he always used, going directly to what he could offer instead of what he felt about it. She understood, the way she'd understood it since the Shen crossing, that this was the most complete form of company he knew how to give.
+
+She wrote back: *I'll be there.*
+
+She did not know yet what being there would accomplish. She had spent seven years building a career on the conviction that showing up with a recorder changed outcomes, and she no longer entirely believed that, and she was going anyway, because the alternative was staying home to watch Yewande's segment air a second time on the late repeat, and she had done enough of that kind of watching for one life.

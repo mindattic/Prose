@@ -74,9 +74,11 @@ operators correct it immediately. The Network is ambient proprioception, not cyb
 the husks the Scatter leaves, paid in stolen compute. Connects organ trade → E.L.F. → Douglas
 Hartley's shadow ledger.
 
-**Sol Castellanos** — Jane Doe, dark mirror. Same want as Celeste (reach the dead
-boyfriend), couldn't afford a safe operator. Earlier Tributary victim. Marisol's echo of Sol
-= the same voice = the proof. This is the reveal pivot.
+**Sol Castellanos** — Jane Doe, dark mirror. Same want as Celeste — reach a dead loved
+one (for Sol, her brother Mateo; for Celeste, the boyfriend Jace) — but she couldn't afford
+a safe operator. Earlier Tributary victim. Marisol's echo of Sol = the same voice = the proof.
+This is the reveal pivot. The mirror is the WANT, not the relationship (prose canonically
+names Mateo as her brother in 4 beats incl. reveal-pivot 3842; amended 2026-07-03).
 
 ## 3. Agency: Rennick Investigations {#SS-DWIACE-3}
 

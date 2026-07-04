@@ -859,7 +859,7 @@ Coat still on. Hands loose on his knees. The cord-wrapped machete laid flat acro
 
 Tomas stopped the gurney. Levin stopped behind it. Nobody said anything for a moment that had a whole life in it.
 
-"You're better than your truck," the man said, finally. To Tomas. His voice was quiet and courteous and carried no hurry at all. "The truck is very good. I looked past it four times. The fifth time I stopped looking at the truck and started looking at the route — the same blocks, the same nights, a Carrion crew always one address ahead of me or one behind, and a dealer who described two men in coveralls before I gave him a reason to describe anything. A tall one who does the thinking. A short one who is unwell." His eyes went to Levin, and then to the shape on the gurney, and stayed there. "And the boy everyone is hunting for, riding in the back of the wagon that hauls the dead. Three nights I have been finding that out. It is the best-hidden thing I have hunted in years." A pause. "And you have hidden it badly enough that I am sitting in his bedroom."
+"You're better than your truck," the man said, finally. To Tomas. His voice was quiet and courteous and carried no hurry at all. "The truck is very good. I looked past it four times. The fifth time I stopped looking at the truck and started looking at the route — the same blocks, the same nights, a Carrion crew always one address ahead of me or one behind, and a dealer who described two men in coveralls before I gave him a reason to describe anything. A tall one who does the thinking. A short one who is unwell." His eyes went to Levin, and then to the shape on the gurney, and stayed there. "And the boy everyone is hunting for, riding in the back of the wagon that hauls the dead. One night. It is the best-hidden thing I have hunted in years." A pause. "And you have hidden it badly enough that I am sitting in his bedroom."
 
 "He's alive," Tomas said. It was the only card he had and he put it down flat. "Whatever you've been told, the kid's alive. We didn't take him to kill him."
 
@@ -974,7 +974,7 @@ The Carrion Wagon was gone from its block. They'd pulled out while he was at the
 [Beat 26]
 Levin was in the stairwell of his building when Tomas got there, sitting on the fourth-floor landing with his back against the wall and his coat on like he'd been about to go somewhere and then reconsidered. His hands were loose on his knees. He looked like a man who had been waiting for a knock he wasn't sure was coming.
 
-"There's something still on the shelf," Tomas said, from the bottom of the stairs, because there was no version of this where preamble made it easier. "The old man's kidney. I put it in inventory two days ago and I never moved it. It's still viable."
+"There's something still on the shelf," Tomas said, from the bottom of the stairs, because there was no version of this where preamble made it easier. "The old man's kidney. I pulled it this morning before we went to the Ward and never moved it. It's still viable."
 
 Levin looked at him for a long time without moving.
 
@@ -1002,7 +1002,50 @@ He was not going to do that.
 He got off two stops early and walked the rest of the way home in the cold, because the walking was something to do with his hands, and the cold was real, and counting the Pulse caps had worked before and the pavement here had them too, one every hundred-and-ten meters, the same as everywhere else in the zone, and he counted them all the way to his building and did not arrive at a number that changed anything.
 
 [Beat 28]
+They drove to the depot first — the cold-storage annex behind Carrion's main yard, five aisles of numbered lockers holding everything on the company's books that wasn't attached to a person yet. Tomas already knew which locker. He'd filed the form himself that morning, before the Ward, before any of it: on the manifest, REALLOCATE TO NEW RECIPIENT sat lit and waiting, and RETURN TO ORIGINAL ACCOUNT sat greyed out under a prompt — *Reason required.* He'd typed one anyway. *Clerical error — original excision order issued against incorrect account. Return authorized.* He hadn't sent it. He'd sat with it the rest of the day, the cursor blinking on a decision he wasn't ready to make, and then the night had happened, and by the time he was ready the form was still there, exactly where he'd left it.
+
+He sent it now. The reply came back automated, indifferent, four seconds later: authorization logged, no human in the loop, because nobody had ever built one for this particular kind of mistake.
+
+Cold-pack case, standard issue. Protein markers nominal. Carrion's storage protocols were the best in the business — they had to be, given the inventory.
+
+Levin drove. Tomas had the case on his lap.
+
+The building was the same. The lobby tile was the same. The elevator took forty-five seconds, same as before.
+
+Daria Holme answered the door. She was wearing the same coat. She looked at the case, and then at their jackets, and then at Tomas, and she didn't say anything. She stepped back from the door.
+
+The old man was in the bedroom. The dialysis machine was running beside the bed, the lines clean and the cuff fitted. He'd learned to do it himself. He watched them come in the way he'd watched them leave — without surprise, without accusation. He'd been a man who expected exactly as much from the world as the world had given him.
+
+Tomas set the case on the chair. He opened it.
+
+The procedure took twenty-six minutes. Levin assisted. Neither of them spoke.
+
+When they came out, Daria was at the kitchen table with the paperwork Tomas had set in front of her. She was reading it with the careful attention of someone who had signed her name on things she didn't fully understand before.
+
+"His account is cleared," Tomas said. "Discrepancy in the original work order."
+
+"What kind of discrepancy."
+
+"Change of heart," Levin said.
+
+She looked at the paper. She looked at Tomas. She looked at the hallway toward the bedroom.
+
+"He'll need to rest for a few days," Tomas said. "Dialysis can come out in the morning. There's care documentation in the packet."
+
+She nodded.
+
+He picked up the procedure case. Levin was already at the door.
+
+"You came back," Daria said. She wasn't asking.
+
+Tomas looked at her. He didn't say anything, because there wasn't anything useful to say, and because *change of heart* had covered it about as well as anything was going to.
+
+They went down the stairs. The lobby was the same. The street outside was cold and bright, early light coming off the windows across the way, and the Wagon was waiting at the curb where they'd left it, engine running, the larder empty and the whole rest of the shift still ahead of them.
+
+[Beat 29]
 In the Wagon, Levin drove, and for a while neither of them said anything, and the city went by the way it went by, vertical and indifferent and full of accounts that hadn't come due yet.
+
+The lattices were still there at the edge of the windshield — the geometric bleed the Tears left behind when they left, a crawling grid laid over the towers like a second city drawn in fine lines over the first, patient and exact and refusing to fade. He had learned not to describe it.
 
 "Carrion's going to flag it," Levin said, eventually. "The return. Some auditor's going to see a kidney walk back up an elevator and want to know why."
 

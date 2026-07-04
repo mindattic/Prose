@@ -1,0 +1,76 @@
+---
+action: NEW
+target_beat_id: null
+chapter_node_id: 019EE11E-6AE8-711D-B12D-530FF2497399
+BeatTitle: The Turn
+Synopsis: Ciro forces Amara onto a two-week leave, in person, at her desk — the razor payoff (open
+  blade) the bible locks for this chapter. Previously this confrontation happened entirely offscreen
+  and was relayed as dialogue summary a chapter later in "Story Runs"; this beat dramatizes it. Pays
+  off the bone-handle razor established in "Account Liaison" (Ch5) and resolves the audit's Finding
+  7 (Ciro absent from the back half of Act 2) as a side effect. Replaces the title "The Turn" — the
+  existing beat 019EECF2-F2BD-7D8F-9E5A-585FAAAD3E2A (Seto's insomnia/dead-drop planning) should be
+  retitled "No Clean Line" when applied to the DB; its content is unchanged and unaffected by this
+  new beat.
+SortKey: 3250
+POV: Amara
+---
+
+# The Turn
+
+Ciro came to her desk at 16:40, which was itself the information, because Ciro did not come to desks at 16:40. He came at odd minutes, mid-morning gaps, the loose hour before lunch when a person's guard had nowhere useful to stand. Sixteen-forty was end-of-day, the hour a person packed up in, the hour with witnesses thinning out around it. He had chosen a time that would look, on any log, like a routine end-of-shift check-in.
+
+He was not holding a paper cup this time. He was holding a folder, physical, the same pressed-stock instinct as the card he'd given her weeks ago — an object instead of a token, because objects made a moment feel considered rather than automated.
+
+"Do you have a minute," he said. Not a question.
+
+She minimized nothing. There was nothing on her screen worth hiding today; she'd learned that lesson from Off Timing and hadn't run a live query at this desk since. "Of course."
+
+He sat in the angled chair, the one that made a conversation possible without calling it an interview, and set the folder on the desk between them without opening it.
+
+"I want to talk to you about the last six weeks," he said. "Not as a criticism. As someone who's been watching a colleague's coverage and is concerned about the coverage, not the colleague — though I am concerned about the colleague too."
+
+"What about the coverage."
+
+"Three on-air corrections in a month. A delivery flagged twice for pacing. A source call your producer had to finish for you because you lost the thread mid-sentence." He said each one without weight, the way a man reads a list he has already decided the ending of. "I've seen the internal notes. I imagine you have too."
+
+She had. She had told herself each one was explainable — bad night, a cold, the specific fatigue of covering a beat that had stopped making sense to her from the inside. She had not, until this exact moment, seen them assembled into a single document with a header and a date range.
+
+"I'm fine," she said, and heard herself say it in the flat, unbothered register she had spent eight months logging in other people.
+
+"I believe you feel fine," Ciro said. "That's not quite the same question."
+
+He reached into his jacket. The motion was unhurried, the same unhurried it had been the first time, and what came out was the same straight razor, bone handle, folded shut. He opened it with one hand and drew the underside of the blade along the line of his jaw — the checking motion, testing whether a surface had held since morning — and this time he did not fold it closed right away. He held it open, resting flat against his palm, while he talked, the way another man might have held a pen he wasn't currently writing with.
+
+Her eyes went to the blade before her mind had finished deciding what it was doing there. Her hand, flat on the desk, curled very slightly at the fingertips — a small closing, involuntary, gone before she could name it as anything but reflex. She made herself look at his face instead.
+
+"Two weeks," he said. "Starting Monday. Fully paid, no action against your record — I've made sure of that personally. Call it what you like internally. I'm calling it loss mitigation."
+
+"Mitigating what loss."
+
+"Yours." He said it like he meant it kindly, which was the worst part, because she believed that he did. "If this continues in public for another month, there won't be a version of your credibility left to protect. I would rather you disappear for fourteen days on your own terms than have someone else decide the terms for you in six months."
+
+*He had already scheduled it before he walked over.* She understood this the way she understood a story was finished before she'd written the last line of it — not from anything he'd said, but from the specific fluency of a man reciting a plan rather than proposing one.
+
+"And if I decline the leave."
+
+"You can't," he said, gently. "It's already logged. I provisioned it this morning — the same tier access you've had all week stays open through end of day, so you can close out anything urgent before Monday. After that it closes on schedule, whether you've used it or not." A pause, exact. "I'd use it, if I were you. It's the only part of this you still get to choose."
+
+He folded the razor closed. The click was small and complete.
+
+*Someone was running, hard, along a corridor of pale ferrocement, counting beacons that came back wrong.* The sentence arrived and was gone before she could hold it, no attribution, no italics she could see on the page of her own thinking — just there, mid-thought, the way they always were now. She did not slow down for it. She had learned not to.
+
+"You've given me a lot to think about," she said, because it was true and cost her nothing further to say.
+
+"That's all I wanted." He stood, and left the folder on her desk, unopened. "The paperwork explains itself. I'm sorry it has to look like this. I don't think it has to be this, in the end. I think you'll come back from it clearer than you went in."
+
+He crossed the floor and was gone, leaving no afterimage.
+
+She sat with the folder closed under her hand for a long time after the elevator chimed. She did not open it. She already knew, with the specific certainty of a woman who had spent seven years learning to read a room before she read its paperwork, exactly what it would say, and in what order, and how warmly.
+
+Her platform ran itself without her for two weeks starting Monday. Someone else would sit in her chair and say the words in her cadence and mean none of them the way she meant them, and the audience would not be able to tell the difference, because the difference had never been the thing they were tuning in for.
+
+She opened her channel and typed one line before she could talk herself out of the economy of it.
+
+*He came to my desk this time.*
+
+She did not send the rest. There would be time, later, for the rest. Right now there was only the folder, closed, and the fourteen days it had already decided for her.

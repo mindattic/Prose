@@ -1,0 +1,56 @@
+---
+action: NEW
+target_beat_id: null
+chapter_node_id: 019EE11E-6AE8-711D-B12D-530FF2497399
+BeatTitle: Minimum Footprint
+Synopsis: Ekow Ato's on-page introduction — salvaged and expanded from the orphaned compressed-
+  draft beat "Minimum Footprint" (Id 019EE11E-70D5-7DA8-820A-3AB719982165, SortKey 800, part of a
+  superseded 14-beat draft not attached to the live chapter sequence). Ekow confronts Seto on a
+  rooftop about the Orison-adjacent silence-mapping work, on a false premise (stolen proprietary
+  data), and gives him seven days. This is the scene Ch11 ("The Cleanup List") references as
+  already having happened and which was previously missing from the live sequence. Dialogue
+  preserved from the orphaned draft near-verbatim (it was already correct and in-voice); added
+  arrival/sensory setup and one involuntary bodily response per the voice rules.
+SortKey: 2450
+POV: Seto
+---
+
+# Minimum Footprint
+
+The rooftop access door had a bad latch — Seto had clocked it on the way up, filed it the way he filed every door in a building he might need to leave fast — and it was still swinging a half-inch on its hinge behind him when the weight on the back of his neck told him the roof wasn't empty.
+
+He didn't turn first. His weight went back onto his heels before he'd decided anything, the bike bag's strap settling flatter against his spine, a small readiness he hadn't ordered his body to assemble. Then he turned.
+
+Ekow Ato stepped out from behind the HVAC housing at 18:14.
+
+Seto knew the name from the Gray Zone circuit — NGRA veteran, freelance contractor, the kind of work history you didn't have to advertise because the weight of it did the work. Ekow had a machete at his hip, handle worn, nothing decorative about it. His hands were open. He wasn't starting.
+
+He'd read the rooftop before stepping out onto it — Seto could tell. The unhurried certainty of someone who'd already placed everything in the space and confirmed the exits before announcing themselves. The evening light was going the color it went over the Pilsen ridge line this time of year, flat gold turning to iron, and Ekow stood in it like a man who'd stood in worse light waiting on worse people.
+
+"You've been pulling correlations from GLMZ health data against private courier records," Ekow said. He said it the way you stated a logistical fact. "Walk away from the Orison work."
+
+Seto stayed still. "What is the Orison work."
+
+Ekow looked at him.
+
+"I was told," he said slowly, "you were moving stolen proprietary neuretic data."
+
+"I'm not moving anything. I've been mapping silence — information that used to flow that isn't flowing anymore. Specific corridors. Specific knowledge." Seto paused. "What exactly did they tell you was stolen."
+
+The machete stayed at Ekow's hip. His hands were still open. He was mapping it out — Seto could see it. The stillness of a professional reassessing the stated terms of a contract.
+
+"Gray Zone intermediary," Ekow said finally. "I didn't ask the chain."
+
+"You should."
+
+Ekow looked at him for a long moment. He reached into his jacket and took out a folded handkerchief — white, folded in quarters — and turned it once in his fingers without looking at it.
+
+"I have seven days left on this contract," he said. "Make it easy for me and don't be where I can find you for seven days."
+
+He left without touching anything.
+
+Seto stood on the rooftop a while after the access door had swung shut on its bad latch. The gold had gone all the way to iron. He ran it the way he ran a route he didn't like: not for the parts that scared him, for the parts that didn't add up. A man with Ekow's history didn't take a Gray Zone intermediary's word for a target without checking it once, and Ekow had checked nothing while standing in front of him — which meant the checking had already happened, before the rooftop, and Ekow had come here having already decided the story he'd been given didn't fully hold. Seven days wasn't a threat delivered at full conviction. It was a number a careful man gave himself room to be wrong inside.
+
+He thought about seven days. Then he thought about Amara's next scheduled Cellvault maintenance visit, which she'd mentioned once, in passing, the way you mention a dentist's appointment. Eight days.
+
+He called her.

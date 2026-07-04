@@ -1,15 +1,15 @@
-# The Door Is Unlocked
+# Pinhole
 
 [Beat 1]
-The platform sat under the atmospheric grid's first allocation ΓÇö rain aimed here because someone decided Pilsen got the morning's redistribution, and the concrete was wet in the particular intentional way of managed weather. She had been here forty minutes already. The cases were lined up beside her boots on the dry strip under the overhang: the hard case, the soft case she'd sewn herself from feed-store canvas, the pouch against her ribs. The platform clock said 05:47 and she was the only one not watching the arrival board.
+The platform sat under the atmospheric grid's first allocation — rain aimed here because someone decided Pilsen got the morning's redistribution, and the concrete was wet in the particular intentional way of managed weather. She had been here forty minutes already. The cases were lined up beside her boots on the dry strip under the overhang: the hard case, the soft case she'd sewn herself from feed-store canvas, the pouch against her ribs. The platform clock said 05:47 and she was the only one not watching the arrival board.
 
 She was watching the sky.
 
-The VacCell lifted out of the soft case on its dragonfly wings ΓÇö four of them, rear pair slightly longer than the front, iridescent where the grid light caught them at the right angle ΓÇö and climbed until the camera had a clear line over the platform roof and across the fields she'd spent nineteen years in. She kept her eyes on the small screen in her palm: the grain co-op's roofline, the water tower with its faded cooperative mark, the flat dark of the Iowa fields running to the horizon in the exact way she had never not known them.
+Nit lifted out of the soft case on its dragonfly wings — four of them, rear pair slightly longer than the front, iridescent where the grid light caught them at the right angle — and climbed until the camera had a clear line over the platform roof and across the fields she'd spent nineteen years in. She kept her eyes on the small screen in her palm: the grain co-op's roofline, the water tower with its faded cooperative mark, the flat dark of the Iowa fields running to the horizon in the exact way she had never not known them.
 
-*One more circuit. Then you come home.*
+*One more circuit, Nit. Then you come home.*
 
-She let it fly the perimeter once. The screen showed her the platform from above, the road, the town's edge, the place where pavement stopped pretending to be organized. The grid lights were still on, amber against the pre-dawn, and they put their warm marks across everything she'd grown up under. She watched until she'd watched enough. Then she keyed the return signal and the VacCell came back the way it always did ΓÇö not tame, just calibrated ΓÇö settling onto her palm with the gentle touchdown she'd tuned the landing algorithm to produce. She folded the wings and packed it in the soft case and tucked the case beside the hard one.
+She let it fly the perimeter once. The screen showed her the platform from above, the road, the town's edge, the place where pavement stopped pretending to be organized. The grid lights were still on, amber against the pre-dawn, and they put their warm marks across everything she'd grown up under. She watched until she'd watched enough. Then she keyed the return signal and Nit came back the way it always did — not tame, just calibrated — settling onto her palm two centimeters to the left of center, the way it always landed. She'd stopped trying to correct it. She folded the wings and packed it in the soft case and tucked the case beside the hard one.
 
 Her mother's hardware kit was in the hard case. Her mother's boots were on her feet, one size too large, toes packed with folded paper so her feet didn't swim in the toe box. She had not had to re-pad them since last week.
 
@@ -18,19 +18,19 @@ The arrival board said 05:48. The Pulse car came in from the east, slowing to th
 She picked up the cases and got on. She did not look back at Iowa.
 
 [Beat 2]
-The car leveled out at operating speed and Iowa became a function of rate and distance ΓÇö shapes without context, dark and flat, the familiar topography running out faster than she expected. She had a seat that faced forward. The hard case was between her feet, the soft case on the overhead rack, the pouch settled against her ribs. She had been watching the window since she sat down.
+The car leveled out at operating speed and Iowa became a function of rate and distance — shapes without context, dark and flat, the familiar topography running out faster than she expected. She had a seat that faced forward. The hard case was between her feet, the soft case on the overhead rack, the pouch settled against her ribs. She had been watching the window since she sat down.
 
 She was waiting for the Blur.
 
-It arrived without announcement. One moment the darkness outside had the texture of flat land under a managed sky, and then it didn't ΓÇö the air changed quality, something atmospheric she couldn't see directly but could read in the way the window fogged at its edges and then un-fogged, the way the light shifted into a range that wasn't quite dawn and wasn't quite artificial. The Blur was what happened between here and there. She'd read about it. She hadn't known it would feel like falling, a little, like the car floor had decided it didn't belong to any one gravity.
+It arrived without announcement. One moment the darkness outside had the texture of flat land under a managed sky, and then it didn't — the air changed quality, something atmospheric she couldn't see directly but could read in the way the window fogged at its edges and then un-fogged, the way the light shifted into a range that wasn't quite dawn and wasn't quite artificial. The Blur was what happened between here and there. She'd read about it. She hadn't known it would feel like falling, a little, like the car floor had decided it didn't belong to any one gravity.
 
 *There.*
 
-She saw it before she had a frame for it: a block of buildings, floating. Just a block ΓÇö four or five stories, a corner unit, a parking structure on the north end ΓÇö all of it connected, all of it doing exactly what city blocks do except three hundred meters up and moving laterally at a speed wrong for something that large. The aerobloc drifted on a thermal she couldn't feel from inside the car, its tethers gone or cut or failed, one of the free-floating sections that lost its anchoring and became the Blur's problem. She had read about those too.
+She saw it before she had a frame for it: a block of buildings, floating. Just a block — four or five stories, a corner unit, a parking structure on the north end — all of it connected, all of it doing exactly what city blocks do except three hundred meters up and moving laterally at a speed wrong for something that large. The aerobloc drifted on a thermal she couldn't feel from inside the car, its tethers gone or cut or failed, one of the free-floating sections that lost its anchoring and became the Blur's problem. She had read about those too.
 
 What she hadn't read about was the way they moved. Not like debris. More like something that had decided to stop being anchored and was now doing what it had always wanted to do. The windows in the block caught the odd Blur light and gave it back at angles that didn't match the angles of a ground-level building. The parking structure had cars in it, she realized. Parked cars, in a structure three hundred meters up, traveling at twelve klicks an hour in a direction no car had ever meant to go.
 
-She put her hand on the soft case. The VacCell inside was a vacuum-cell ΓÇö a rigid shell with a partial vacuum maintaining positive buoyancy, dragonfly wings for thrust and maneuvering, a camera eye underneath. The aerobloc was a vacuum-cell the size of a city block. Same physics. Different scale by a factor she didn't want to calculate because the number would be too large to carry meaning. She had built the VacCell in her mother's barn over the winter, hands cold, with salvaged components and a calibration rig she'd built from memory. The aerobloc was built by a CorpoNation with nine thousand engineers and a fabrication facility the size of a small town.
+She put her hand on the soft case. Inside, Nit was a vacuum-cell drone — a salvaged aerostatic core fitted into a chassis she'd built herself: dragonfly wings for thrust and maneuvering, a camera eye underneath, a control system she'd tuned by hand over two winters in her mother's barn. The aerobloc was the same physics at a scale she didn't want to calculate — vacuum-cell sections the size of floors, built by a CorpoNation with nine thousand engineers and a fabrication facility the size of a small town. She had taken one discarded panel from a demolition pile and made it work in a different register.
 
 Both of them were in the air right now. One was where it was supposed to be.
 
@@ -39,30 +39,30 @@ The aerobloc passed the window and continued. The Blur closed around it and the 
 She had not expected to feel anything about it. She filed the fact and kept watching the window anyway.
 
 [Beat 3]
-The Blur thinned behind the car and the light shifted toward something that was going to become morning eventually. She opened the soft case on her lap ΓÇö careful of the man asleep two seats forward ΓÇö and ran the VacCell's check without powering up the wings. A silent inventory: charge at 87%, camera calibration nominal, wing-pair seating torque within spec on both pairs. The handshake signal from the primary kit, that quiet periodic ping she'd threaded into the chassis during the last overhaul, was logging its status to the VacCell's memory chip the way it did every four seconds: *here, here, here.* She'd built the signal to be ugly ΓÇö narrow band, idiosyncratic frequency, nothing else in any environment would mistake it for anything ΓÇö specifically so it could be found. It was the thing she'd done instead of worrying.
+The Blur thinned behind the car and the light shifted toward something that was going to become morning eventually. She opened the soft case on her lap — careful of the man asleep two seats forward — and ran the VacCell's check without powering up the wings. A silent inventory: charge at 87%, camera calibration nominal, wing-pair seating torque within spec on both pairs. The handshake signal from the primary kit, that quiet periodic ping she'd threaded into the chassis during the last overhaul, was logging its status to the VacCell's memory chip the way it did every four seconds: *here, here, here.* She'd built the signal to be ugly — narrow band, idiosyncratic frequency, nothing else in any environment would mistake it for anything — specifically so it could be found. It was the thing she'd done instead of worrying.
 
 She packed the case back in the overhead rack and put an earbud in. A track she'd had for years, mixed quiet enough to occupy the background half of her brain and leave the rest to work.
 
-The man across the aisle had woken up. He watched her the way people watched a thing they'd already priced ΓÇö hands, then case, then face, in that order.
+The man across the aisle had woken up. He watched her the way people watched a thing they'd already priced — hands, then case, then face, in that order.
 
 He said: "You're going in to work."
 
 Not a question. She understood the order of his read. She said nothing.
 
-"Hands like that," he said. "A case you won't set down. You'll do fine for a while." He turned his thumb over on his knee, working a callus with the specific attention of a person working the last evidence of something they used to do. "Then somebody'll offer to buy the hands ΓÇö not the case, the hands, what's in them. The day you can't tell the difference between selling the work and selling yourself is the day they have you."
+"Hands like that," he said. "A case you won't set down. You'll do fine for a while." He turned his thumb over on his knee, working a callus with the specific attention of a person working the last evidence of something they used to do. "Then somebody'll offer to buy the hands — not the case, the hands, what's in them. The day you can't tell the difference between selling the work and selling yourself is the day they have you."
 
 *He doesn't know what's in the case. He doesn't know I built the other thing myself.*
 
 She watched him until he turned back to his window. Then she put her eyes on the rack where the soft case sat, canvas worn at the edges from a winter of use, and she kept her hand flat on the hard case between her feet and felt the subtle hum of the handshake signal doing its four-second work. She listened to her music. She let the flat dark run.
 
 [Beat 4]
-The car came up out of the dark and GLMZ arrived all at once ΓÇö not a skyline but a wall of it, tier stacked on tier until the top ones weren't buildings anymore but a suggestion of buildings behind the atmospheric haze the processors kept churning, light bleeding upward into a sky sold off in layers. She took the deceleration in her knees, weight low, and did not reach for the rail.
+The car came up out of the dark and GLMZ arrived all at once — not a skyline but a wall of it, tier stacked on tier until the top ones weren't buildings anymore but a suggestion of buildings behind the atmospheric haze the processors kept churning, light bleeding upward into a sky sold off in layers. She took the deceleration in her knees, weight low, and did not reach for the rail.
 
-The terminal opened around the car like a managed throat. Signage in four scripts crawled the walls and reformed as she watched ΓÇö prices ticking beside every arch, a locker, a stim, a six-hour cot, each one ending in the little squared-off currency mark she'd only ever seen on a screen before, never this many times at once, never in the air. The air had a taste: ozone and hot bearing-grease and something floral engineered over the first two smells and not quite succeeding. Under all of it the hum lived ΓÇö the terminal's own hum, bigger than the hum in the hard case ΓÇö and where the two met in her palms they beat against each other and made a third thing she didn't have a name for.
+The terminal opened around the car like a managed throat. Signage in four scripts crawled the walls and reformed as she watched — prices ticking beside every arch, a locker, a stim, a six-hour cot, each one ending in the little squared-off currency mark she'd only ever seen on a screen before, never this many times at once, never in the air. The air had a taste: ozone and hot bearing-grease and something floral engineered over the first two smells and not quite succeeding. Under all of it the hum lived — the terminal's own hum, bigger than the hum in the hard case — and where the two met in her palms they beat against each other and made a third thing she didn't have a name for.
 
-She had memorized the transit map. She had a heading. She found the sign that said GRAY ZONE TRANSIT in the smallest typeface on the wall ΓÇö they'd made it small on purpose ΓÇö and she pointed herself at it.
+She had memorized the transit map. She had a heading. She found the sign that said GRAY ZONE TRANSIT in the smallest typeface on the wall — they'd made it small on purpose — and she pointed herself at it.
 
-A hand found her jacket pocket from the left: fast, practiced, fingers already sorting the contents by touch before she registered the contact. Her hand came up without consulting her brain ΓÇö farm reflex, barn-door geometry, the kind of response built by reaching for a gate latch in the dark a thousand times and trusting your hands more than your eyes. She caught the wrist. She didn't squeeze. She held it one second, until the person attached to it had read the situation, and then she released.
+A hand found her jacket pocket from the left: fast, practiced, fingers already sorting the contents by touch before she registered the contact. Her hand came up without consulting her brain — farm reflex, barn-door geometry, the kind of response built by reaching for a gate latch in the dark a thousand times and trusting your hands more than your eyes. She caught the wrist. She didn't squeeze. She held it one second, until the person attached to it had read the situation, and then she released.
 
 She kept walking. The contact had been a kid, from the wrist size. Not a threat. Just work.
 
@@ -71,22 +71,26 @@ She checked the jacket pocket. The scrap of paper was still there. She had her c
 She found the transit line and got on it heading north.
 
 [Beat 5]
-The transit put her at the right corner with eleven minutes before the light went completely. She walked the last four blocks because the map she'd memorized and the grid she was standing in were different things, and the only way to update the map was feet.
+﻿﻿The transit put her at the right corner with eleven minutes before the light went completely. She walked the last four blocks because the map she'd memorized and the grid she was standing in were different things, and the only way to update the map was feet.
 
-What she read while walking: the gray zone's seam markers, which buildings faced which corponation's jurisdiction and which ones answered to none. The sight lines ΓÇö where a person standing at a given corner could see everything, and where they couldn't see anything, and who had built their business around each condition. The vendor pricing in the window displays, which she'd studied in databases for two years and was now learning at the speed of actual commerce rather than the speed of a spreadsheet.
+She'd learned this at the co-op: a map tells you where things should be, and a field tells you where they are, and you spend your whole first season learning the difference before the gap stops costing you. Four blocks. She had time.
 
-The Pivot was a corner building with two addresses ΓÇö the number it used on the street it faced and a different number for the street it turned its back on. She came at it from the wrong side first and recognized it anyway from the wear pattern on the front stoop: high traffic, distributed across the whole step rather than worn into a groove, the way institutional foot traffic wears stone rather than household. The buzzer panel had twelve units. 2E was second floor, east. The cooperative mark was on the door frame, small, the kind you recognize before you look for it.
+What she read while walking: the gray zone's seam markers, which buildings faced which corponation's jurisdiction and which ones answered to none. The sight lines — where a person standing at a given corner could see everything, and where they couldn't, and who had built their business around each condition. The vendor pricing in the window displays, which she'd studied in databases for two years and was now learning at the speed of actual commerce rather than the speed of a spreadsheet. She filed it all without deciding to.
+
+The Pivot was a corner building with two addresses — the number it used on the street it faced and a different number for the street it turned its back on. She came at it from the wrong side first and recognized it anyway from the wear pattern on the front stoop: high traffic, distributed across the whole step rather than worn into a groove, the way institutional foot traffic wears stone rather than household. The buzzer panel had twelve units. 2E was second floor, east. The cooperative mark was on the door frame, small, the kind you recognize before you look for it.
+
+She'd read about cooperative buildings in GLMZ — some of them answered to a network that was neither gray-zone nor corpo, a third thing that she hadn't quite understood from the database descriptions. Standing in front of the mark she recognized it. She understood it the way you understand something when you put your hand on it.
 
 She rang up. She waited. Someone came down.
 
 [Beat 6]
-The woman at the door ΓÇö Donatella, she said, building manager since the last one left under circumstances she didn't elaborate ΓÇö was managing four things simultaneously when she answered the buzzer. A keychain, a slate, a ledger, a conversation happening somewhere else. She looked at the cases, read the referral scrap when it was handed to her, and said Unit 2E was available but she couldn't put anyone in it tonight. The whole second-floor climate system had been down since morning. Firmware error she couldn't parse. The licensed service had said tomorrow, maybe.
+The woman at the door — Donatella, she said, building manager since the last one left under circumstances she didn't elaborate — was managing four things simultaneously when she answered the buzzer. A keychain, a slate, a ledger, a conversation happening somewhere else. She looked at the cases, read the referral scrap when it was handed to her, and said unit 2E was available but she couldn't put anyone in it tonight. The whole second-floor climate system had been down since morning. Firmware error she couldn't parse. The licensed service had said tomorrow, maybe.
 
-"I can look at it," Pixel said.
+"I can look at it," she said.
 
 Donatella looked at the hard case between her feet.
 
-"Hardware tech. Calibration. I've worked building climate systems." Three winters at the co-op, maintaining cold storage controls older than this building. She didn't say that part. She let the case do it.
+"Hardware tech. Calibration. I've worked building climate systems." Three winters at the co-op, maintaining cold-storage controls older than this building. She didn't say that part. She let the case do it.
 
 Before Donatella could answer, footsteps on the interior stair, and a man in a gray undershirt stopped two steps above the lobby level, looking down. Mid-forties, the precise, watchful stillness of someone who'd decided to have an opinion before he had any information.
 
@@ -102,67 +106,59 @@ Donatella's expression didn't change. "I'm letting someone who might fix it look
 
 "We didn't know you until you moved in, Reyes."
 
-Reyes looked at Pixel the way people looked at a problem they hadn't decided whether to claim. She looked back without expression. She had learned this on the farm: the way to answer a challenge you didn't pick is to wait. The person who breaks silence first loses ground.
+Reyes looked at her the way people looked at a problem they hadn't decided whether to claim. She looked back without expression. She had learned this on the farm: the way to answer a challenge you didn't pick is to wait. The person who breaks silence first loses ground.
 
-Reyes looked at Donatella. "She breaks something, it's on you."
+He held the silence for three full seconds. Then he shrugged, the gesture of a man filing a complaint he already knew wouldn't be heard. "Your building," he said to Donatella, and went back upstairs without waiting for a response.
 
-"Everything in this building is on me. That's what building manager means." Donatella held the door wider. "Come on then."
+That was the last real conversation she ever had with him. He'd checked his position, found it unsupported, and moved on to the next thing that annoyed him — which, in a building this size, was never in short supply.
 
-The management terminal was in a utility closet on the second floor ΓÇö a proprietary unit, nine years old, running firmware in a language nine years out of date. The error was a string she'd seen before on agricultural equipment from the same vendor family: same encoding structure, different application. She cracked the service access menu in four minutes while Donatella watched from the doorway and Reyes watched from behind Donatella, arms crossed, waiting to be proven right about something.
+The management terminal was in a utility closet on the second floor — a proprietary unit, nine years old, running firmware in a language nine years out of date. The error was a string she'd seen before on agricultural equipment from the same vendor family: same encoding structure, different application. She cracked the service access menu in four minutes while Donatella watched from the doorway.
 
-She pulled the VacCell from the soft case.
+She pulled Nit from the soft case.
 
-"What is that," Reyes said.
+"What is that," came a voice from the stairwell above. Reyes, apparently unable to entirely let it go.
 
 "It goes in the ductwork," she said. "I need to see the damper."
 
-Silence from the doorway. She kept her hands on the rig.
+Silence from the stairwell. She kept her hands on the rig.
 
-"The duct access is wide enough," Donatella said finally. "I've had plumbers through there."
+"The duct access is wide enough," Donatella said. "I've had plumbers through there."
 
-She sent the VacCell through the duct panel and guided it by the small screen in her palm: dust-built-up walls, a damper frozen at thirty percent, and at the junction with the main trunk, a sensor node winking amber. She guided the VacCell back and ran the terminal's diagnostic. The fault was a temperature correction offset ΓÇö someone had calibrated the system three years ago with a sensor reading in the wrong unit, and the offset had been compounding ever since, the system running colder than it reported by a margin wide enough to flag the firmware's safety threshold and trigger the lockdown.
+She sent Nit through the duct panel and guided it by the small screen in her palm: dust-built walls, a damper frozen at thirty percent, and at the junction with the main trunk, a sensor node winking amber. She guided it back and ran the terminal's diagnostic. The fault was a temperature correction offset — someone had calibrated the system three years ago with a sensor reading in the wrong unit, and the offset had been compounding ever since, the system running colder than it reported by a margin wide enough to flag the firmware's safety threshold and trigger the lockdown.
 
 She corrected the baseline and let the system run its self-test. She watched the damper cycle to full open on the camera feed.
 
-Donatella felt the air change. She saw it in her shoulders ΓÇö the slight drop of something that had been held against a problem that was now solved.
-
-Reyes uncrossed his arms. He didn't say anything. He went back upstairs.
+Donatella felt the air change. She saw it in her shoulders — the slight drop of something that had been held against a problem that was now solved.
 
 "Okay," Donatella said. Then again, quieter: "Okay."
 
-She closed the service session and packed the VacCell. As she was carrying her cases up the hall, a door opened on a woman ΓÇö forties, the kind of woman who had decided to watch the whole scene through a cracked door and enjoyed every minute of it.
+She closed the service session, packed Nit, and carried her cases to the end of the hall. Reyes's door was shut. She didn't see him again that day.
 
-"I heard all of that," the woman said. Not apologizing. "What do you call that little flying thing?"
+She paid first and last and got the room. Donatella watched the correction hold on the second diagnostic pass, watched her fold the tools back into the case with the same economy she'd used to unpack them, and said, mostly to herself: "I'll call you Pixel."
 
-"I don't call it anything."
-
-"I'll call you Pixel," the woman said, nodding toward her. "Look at what you just did. Every bit of that was a Pixel job. That's what I'll call you." She was talking about the calibration fix ΓÇö the precision of it, bit-precise, not the VacCell. "That's the name for someone who does that."
-
-She didn't like it. She could hear it settling anyway.
-
-She paid first and last and got the room.
+She didn't like it. It was already true.
 
 [Beat 7]
 She did not sleep until past two.
 
-This wasn't insomnia. The building had sounds she didn't know the origin of yet ΓÇö a pump cycling in the basement on a forty-minute interval that her body wouldn't classify as safe until it had heard the cycle enough times to know it was the same sound each time. After midnight the street below went from aggregate noise to individual sounds: a cart with a loose wheel at twelve-forty, a conversation in two languages at one-fifteen arguing direction. She kept the secondary kit open on the floor beside her so she could see its standby light, faint green in the room the city's ambient glow kept from going dark. The VacCell sat on the windowsill. She'd put it there after the last check. It was the highest point in the room.
+This wasn't insomnia. The building had sounds she didn't know the origin of yet — a pump cycling in the basement on a forty-minute interval that her body wouldn't classify as safe until it had heard the cycle enough times to know it was the same sound each time. After midnight the street below went from aggregate noise to individual sounds: a cart with a loose wheel at twelve-forty, a conversation in two languages at one-fifteen arguing direction. She kept the secondary kit open on the floor beside her so she could see its standby light, faint green in the room the city's ambient glow kept from going dark. The VacCell sat on the windowsill. She'd put it there after the last check. It was the highest point in the room.
 
-At one-oh-three, footsteps in the corridor. Slow. Deliberate. They stopped in front of 2E.
+At one-oh-three, footsteps came slow and deliberate down the corridor and stopped in front of 2E.
 
-She watched the strip of light under the door. A shadow crossed it, paused, moved on. Reyes. She recognized the weight of it ΓÇö the specific pace of a person checking a thing they'd already decided they didn't trust. She didn't move, didn't breathe differently, just catalogued it the way she catalogued everything: 3C, still deciding, willing to check in person in the middle of the night. That was useful information. Not a threat. A data point.
+She watched the strip of light under the door. A shadow crossed it, paused, moved on. Reyes, she was fairly sure — she recognized the weight of it, the specific pace of a person checking a thing they'd already decided they didn't trust. She didn't move, didn't breathe differently, just catalogued it the way she catalogued everything: 3C, still deciding, checking in person once and then apparently satisfied enough to stop. It wasn't a threat, just a data point, and it turned out to be the last one he ever gave her. He never checked her door again.
 
 The footsteps continued to the stairwell, descended. She let out the breath she'd been managing and kept her eyes on the standby light.
 
-She had noted the latch on 2D the first time she'd walked past it ΓÇö worn, the kind that opened with pressure and a push instead of the full throw. Someone had used that door ten thousand times in exactly the same way. At one forty-seven the door opened and closed, no louder than the building's other sounds. Not loudly. The latch engaged with the specific sound of someone who knew exactly where the mechanism sat and used it without thinking. Footsteps to the stairwell. Seventeen minutes. Then back.
+She had noted the latch on 2D the first time she'd walked past it — worn, the kind that opened with pressure and a push instead of the full throw. Someone had used that door ten thousand times in exactly the same way. At one forty-seven the door opened and closed, no louder than the building's other sounds. The latch engaged with the specific sound of someone who knew exactly where the mechanism sat and used it without thinking. Footsteps to the stairwell. Seventeen minutes. Then back.
 
-She added it to the building's catalog the way she'd added the pump: 2D, active at odd hours, exits and returns without pattern. 3C, watchful, not dangerous. Climate system, fixed. She filed it all and let the pump cycle twice and then she slept.
+She added it to the building's catalog the way she'd added the pump: 2D, active at odd hours, exits and returns without pattern. Climate system, fixed. She catalogued it all and let the pump cycle twice and then she slept.
 
 In the morning she would buy calibration fluid and food, and it would be the first morning she had ever woken up in this city.
 
 [Beat 8]
-The market started under the tier-two overpass where the ramp came down and gave the vendors a roof nobody had paid for. She left the VacCell in the room ΓÇö too conspicuous in a market where conspicuous was the last thing you wanted to be ΓÇö and brought only the pouch, because you didn't bring the thing that mattered to a place you hadn't read yet.
+The market started under the tier-two overpass where the ramp came down and gave the vendors a roof nobody had paid for. She left the VacCell in the room — too conspicuous in a market where conspicuous was the last thing you wanted to be — and brought only the pouch, because you didn't bring the thing that mattered to a place you hadn't read yet.
 
-She needed calibration fluid, a thermal coupling, food for three days. She bought the coupling first, at the north end where the components vendors clustered, because component vendors were easier to read than food vendors. Their pricing logic was technical and therefore consistent. The coupling she needed was a spec she knew exactly: inner diameter 3.8mm, ferrite core, rated to 90┬░C. Two stalls had it. One was stale-spec, priced high for people who didn't know what they were buying. She bought from the other stall without a word and the woman behind it didn't say a word back and that was a transaction that went correctly.
+She needed calibration fluid, a thermal coupling, food for three days. She bought the coupling first, at the north end where the components vendors clustered, because component vendors were easier to read than food vendors. Their pricing logic was technical and therefore consistent. The coupling she needed was a spec she knew exactly: inner diameter 3.8mm, ferrite core, rated to 90°C. Two stalls had it. One was stale-spec, priced high for people who didn't know what they were buying. She bought from the other stall without a word and the woman behind it didn't say a word back and that was a transaction that went correctly.
 
 For the calibration fluid she went deeper into the market, into the part that sold gray-zone materials to gray-zone people. She found what she needed at a stall run by a kid who couldn't have been fourteen, working a cracked reader with the focused detachment of someone on their second job before noon. His prices were fair and he quoted them without looking up, which meant he'd priced by the market rather than by the customer, which meant he'd survive longer than the stall that overcharged her on the first pass.
 
@@ -172,344 +168,401 @@ She was three steps away when the kid said, to her back: "You're the one moved i
 
 She stopped.
 
+She stood where she was and thought about what he'd just told her. She'd been in GLMZ for thirty-seven hours. She'd walked four blocks, fixed a climate system, and spent one night. She hadn't spoken to more than four people. And already someone on his second job before noon knew her building and floor.
+
+She turned around.
+
+"You do calibration work," he said. Not a question either — the market ran on the same currency the co-op back home ran on, which was who knew what before you told them. "There's a relay job. Six weeks down, three operators already failed it. 180Φ if you fix it." He recited the comm address once, the way you give something to someone you expect to remember it, and went back to his reader.
+
+She noted the number. Then, because it cost her nothing to ask: "Anything else worth knowing, working this district?"
+
+He didn't look up. "There's a crew operator runs assessments on new arrivals. Comes around eventually if you're any good. He doesn't let people walk." He said it the way you'd mention the weather — not a warning, just texture, the kind of fact that had stopped surprising anyone who'd been here longer than a week. "The ones who say no mostly just leave."
+
+"Leave the district?"
+
+"Leave GLMZ." He shrugged, a small economical motion, already done with the subject. "Or they don't leave. Depends who you ask."
+
+She didn't ask follow-up questions. She'd learned that much already: a question that showed you cared about the answer was a question that cost you standing.
+
+He was already looking at the next customer, the cracked reader in his hands, the detachment of someone who'd said a thing and didn't need a reaction.
+
+She catalogued it as neither a threat nor an invitation, just information about how this city worked. Everyone who passed through was tracked by someone — she was going to have to learn who tracked whom before she understood what being known here actually cost.
+
+She kept walking.
+
 [Beat 9]
-She turned only her head. The kid was still not looking at her ΓÇö hands on the cracked glass, thumbing something that wasn't the market app, the way a person manages a second process they've decided you can't read.
+The contact the kid gave her was a comm address and a note: *relay's been down six weeks, three operators already failed it, 180 Φ if you fix it.* She read it on the walk home. One eighty was two weeks of cheap food and she said yes before she got to the Pivot's front door.
 
-She could read it. She came back one step, then the second, and stood at the edge of his stall the way a customer stands who has one more thing to ask. At this distance the cracked glass was worse than she'd read from three steps: a factory slab rooted to run two processes, one commerce, one something else, his thumb sitting over the not-market process without quite covering it.
+She needed to access each node to pull its fault signature. The nodes were behind the shells' routing tables. There was no one to ask — the operators were gray-zone, which meant off-schedule, which meant the job had been sitting for six weeks because asking permission required finding people who didn't want to be found.
 
-"The fluid's good," she said. "You quote fair."
+She did not ask permission.
 
-"Fair's how you get repeat," the kid said. He looked up, and he was younger in the face than fourteen and older in the eyes, and that gap was a whole neighborhood compressed into one person.
+Twenty-two seconds.
 
-She let the bottle settle in the pouch and kept her voice flat ΓÇö not warm, not a threat, just a door she wasn't opening all the way. "You log everybody who moves in, or just the ones who pay full price without flinching?"
+Second hop: the nearer Meridian. Industrial-grade authentication, but the certificate gap was broader on the Meridians — they'd been built for cargo operators who needed rapid field access. Inside in six seconds. The node behind it had a different fault: a grounding issue causing intermittent signal dropout. She logged it. She exited.
 
-The kid's hands stilled. One beat ΓÇö the same half-beat she'd heard behind the wall of 2D ΓÇö and then back to their work. He said, to the glass and not to her: "Everybody. It's not personal."
+Fifteen seconds.
 
-Which was the most honest thing anyone in this city had said to her yet.
+Frames three and four were similar work: in, fault read, logged, exited. Clean. Four to six seconds inside, the kind of gap that read as sensor noise.
 
-Her fingers tightened once around the calibration bottle. She'd been visible for two days and she was already a line in someone's ledger. But she didn't say that. She said: "So you know where things go."
+The fifth frame was different.
 
-The kid was quiet for a long moment. Then, still to the glass: "Things that aren't chips or pharma. Things with calibration history. Someone's actually using it ΓÇö they usually move it through a place off the old Haymarket block. Ground floor, curtained window." A pause. "I don't know if yours went there."
+She was inside the Ryokan — the commercial shell at the relay's far end, Tanaka-built, older than the others — when something woke up. A maintenance session, passive, not security but logging. Everything. She felt it the way you feel a presence in a room before you see it: a change in the response latency, a half-beat of delay that wasn't there before. She was eight seconds into a fifteen-second pull.
 
-She said nothing. She didn't thank him. He hadn't said it to be thanked. She filed it the same way she filed the pump at forty minutes and the latch on 2D and the man with his thumbed callus on the train. Something to know. A city learning its shape from the inside.
+She cut it at nine. Took only the fault signature, not the full node map. Got out.
 
-She went to buy food.
+The operational log for the Ryokan would show a nine-second gap. The others had shown four to six. Not a large difference. Not anything a standard monitor would flag. But it was outside the band of atmospheric interference. It was the gap of someone who'd adapted, not someone who'd been invisible.
+
+Someone who'd been watching for exactly that would have noticed.
+
+She took the 180Φ transfer and walked home.
+
+Someone had found value in the gap.
 
 [Beat 10]
-She was reading the thermal geometry of a stall's cabling ΓÇö copper braided over ceramic sleeve, interference-concerned, something running nearby that generated it ΓÇö when the transit map appeared from the left. Outstretched hand, folded paper, a voice asking if she could help him find the Pilsen corridor line.
+Four days after the relay job, she found a strip of paper under the door of 2E.
 
-*Wrong question. You can't reach Pilsen from here. No route.*
+She almost missed it — it had slid most of the way under the mat, pale against the floor's darker composite, and she only saw it because she was down on one knee resetting the secondary kit's tripod feet. She picked it up between two fingers, the way you pick up something you already suspect you shouldn't touch bare-handed, though there was nothing on it that could hurt her. Paper, cut clean, no folded creases from being carried. Someone had left it exactly here, exactly like this.
 
-She started to say it. The second person passed on her right. She registered the contact at the same moment she registered that it was wrong ΓÇö too close, the specific geometry of someone who'd been watching her weight shift rather than watching the street. She turned.
+A restaurant name. An address in the district's better third. A time: 21:00.
 
-The hard case was gone.
+No name. No signature.
 
-Both of them were gone. The market kept moving around the space where they'd been, the way a current closes over a stone, and she was standing in the middle of the aisle with her secondary pouch and her new coupling and her calibration fluid and her mother's boots and nothing else.
+She turned it over. Nothing on the back.
 
-She stood still for three seconds.
+She held the stock up to the window light. It had weight — cotton content, not pulp, the kind of paper you paid for by the sheet rather than the ream. Someone had chosen the absence of a name specifically so the absence would say the name. She'd seen that trick before, in a different register: the co-op's biggest supplier never signed his invoices either. He didn't need to. Everyone already knew whose invoice it was.
 
-Then she walked.
+She knew who had sent this. She didn't know how they'd found her door — the referral scrap had her building, not her unit, and Donatella wasn't the kind of building manager who handed out unit numbers to strangers with expensive paper. She set that gap aside the way she set aside everything she couldn't yet explain: a thing to be understood later, not a thing to panic about now.
+
+She spent the afternoon on the restaurant instead of on the gap.
+
+The reservation system was public-facing in the way most GLMZ hospitality systems were — advertised as exclusive, structurally leaky if you knew where the leak was. She found the booking calendar three months out, solid, no openings, the kind of restaurant that turned away money on principle to keep the right people waiting. She found the ownership trail behind it: two shell layers, then a holding entity registered to an address that also held four other properties, all of them the kind of business that photographed well and asked no questions about where the money that ate there had come from. She found the average check. She found, buried in a review aggregator nobody had scrubbed properly, a mention of a corner table that was "always held" — no explanation offered, none needed by anyone who already understood how a room like that worked.
+
+She learned more about him from where he'd chosen to sit than he probably intended her to learn. A man who held a table three months in advance at a restaurant built to make people wait was a man who needed the room to already agree with him before he walked into it.
+
+She thought about the relay boards instead. The nine-second gap had been too clean to pass for atmospheric noise, and the operators who reviewed the logs had a word for that kind of work. The word had traveled the gray-zone network faster than she'd moved through the actual city — faster than she'd known the network existed. Somewhere in that traffic a name had reached a man who bought paper by the sheet, and the man had decided that a strip of it under her door was the right amount of pressure to apply first. An invitation to dinner, at a table held three months out, on stock you didn't touch unless you meant it as a statement — that wasn't a casual ask. That was someone who had already decided how the room would go, and expected her to walk into it agreeing.
+
+She thought about the market kid's line, delivered like weather: *he doesn't let people walk.*
+
+She was not going to not walk. But she understood, reading the paper stock a second time, that whatever this dinner was, it wasn't really an invitation. It was a test of whether she'd show up on his terms.
+
+She decided she would show up. Just not on his terms.
+
+She did not buy anything for the evening. She had clothes that were hers and a pair of boots that were her mother's, and she had decided, somewhere in the two years before she ever got on the Pulse, that she was not going to become a different person to sit at somebody else's table. She checked the boots' toes — the paper padding was holding, same as it had been for a week — and laced them the way she always laced them, and put on the jacket she'd worn off the Pulse car, because it was clean and it was hers and that was the entire criteria that mattered.
+
+At quarter to nine she left 2E and went to find out what a man who reserved a table three months in advance wanted badly enough to leave paper under a stranger's door.
 
 [Beat 11]
-﻿Twice on the walk back, her left arm moved ??? reaching to switch the hard case from one hand to the other, the motion a thing she'd done so many times it came before the thought. Both times her hand found nothing.
+The restaurant announced itself with a door that opened before she reached it, a host who already knew her name — not Vera, not Pixel, just "this way" — and a room built for people who expected rooms to arrange themselves around their arrival. She took the deceleration the way she'd taken the Pulse car's, weight low, and did not let the room's engineering do anything to her stride.
 
-She tallied the loss because tallying was the one thing the city couldn't move on her.
+He had the corner table. She knew him before the host said anything, because there was only one way a person sat in a room like this and made every other table in it feel like furniture.
 
-The microscribe. The reference oscillators ??? both of them, the matched pair her mother had kept calibrated to each other for seven years because the factory tolerance on a single unit wasn't tight enough for the work she was doing. The bore gauge. The field comparator. The multimeter with the trace function, bought used and recalibrated over one winter by hands that had started to shake by then and done it anyway.
+White hair, slicked back, catching the low light in a way that read as deliberate rather than aged. Dark sunglasses, worn indoors, worn the way another man might wear a watch worth more than his car. At his temples and along his jaw, faint geometric lines traced the skin — neuretic etching so fine it looked decorative from across the room and looked, up close, like a receipt for money she couldn't picture spending. White suit. Black shirt. A long coat draped over the empty chair beside him like a second guest he hadn't decided whether to introduce.
 
-Replacement cost, at the kid's fair prices: more than she had.
+He rose halfway — a courtesy calibrated to look complete without costing him anything — and gestured her into the seat across from him.
 
-*The secondary kit does everything the case did. Slower. Rougher. It does it.*
+He had already ordered wine. A bottle stood open and breathing between them, label out, positioned so she'd have to work to avoid reading it. 2029 Château St. Croix. She noted the vintage the way she noted everything: not to be impressed, but because a number was a number and this one told her what he thought the evening was worth.
 
-That was true and it wasn't the thing sitting in her chest. The multimeter had come from her mother's hands to hers. Now it would go from her hands to a fence's, and then up the line to someone who would never know it had been recalibrated by a woman whose hands shook and did it anyway. The tool didn't care. Tools didn't care. She knew that the way she knew the boots were a size too large. She kept walking at the speed of the block and let the wanting-to-turn-around burn itself down to nothing without spending a step on it.
+She sat down. She ordered the filet mignon without opening the menu, because she'd decided on the walk over that she wasn't going to spend one extra second performing indecision for him.
 
-At the corner she stopped ??? a delivery cart swung across the alley mouth, she'd learned that morning to yield to the market's larger animals ??? and she made herself look forward instead of back, at the tide of people none of whom had seen anything, and she watched their faces the way she'd watch instruments at startup: reading, learning which ones were running hot, which ones were sitting cold, which ones were moving at the speed of somewhere to be.
+"You've had an interesting first two weeks," he said. His voice matched the etching — expensive, unhurried, engineered to sound like it wasn't performing anything at all. "A relay job three operators failed. A climate system nobody licensed could parse. And a drone chassis that, as far as I can determine, doesn't exist anywhere else. That's not luck. That's a rate of return I don't often see."
 
-*Next time the hand won't reach for a case that isn't there.*
+"You've been checking."
 
-She didn't believe it yet. She logged it anyway and walked on.
+"I check everyone worth checking." He said it without apology, the way a man states his job title. "Most of them aren't worth a second conversation. You are."
+
+He made his pitch the way she imagined he made every pitch: cleanly, without wasted motion, each sentence arriving already knowing where the last one had landed. She was exactly what his operation needed. Skilled, precise, the kind of work the gray zone didn't produce twice in a generation. He could give her runs worth ten times what she was making now. The right clients. Protection — from exactly the kind of operator who circled new talent before the corpos got a look, which was to say protection from men indistinguishable from him, offered without a flicker of irony. Standing. A name that meant something before she turned twenty.
+
+She listened to the whole thing. She'd learned, calibrating instruments for people who talked more than they needed to, that the fastest way to understand an offer was to let it finish.
+
+When he was done, she picked up the bottle.
+
+She poured a glass — one, for form, so the gesture would read as a choice and not a refusal — and then she drank from the bottle itself, tipped straight back, the label crushed a little against her palm where she gripped it. She set it down without looking at him for a reaction.
+
+His expression didn't change. That was the thing she noticed first — not a flinch, not a flicker, nothing a stranger would have caught. What she caught instead was a kind of tightening, a fractional increase in how exactly he held his own hands on the table edge, the way a high-tension wire hums a half-step higher when the load goes up. He became, in the space of two seconds, very slightly more precise. His voice, when he spoke again, had lost nothing and gained something she couldn't name yet except that it cost her something small and involuntary to sit across from it — her stomach going tight and cold before her mind caught up with why.
+
+She had seen this before. Not in GLMZ. In Iowa, in men who ran equipment cooperatives and could not tolerate a machine, or a season, or a person, that didn't answer to them on schedule. The tell was identical. Something small went sideways and they got quieter, not louder. More controlled, not less. The control was the rage. She'd learned to read it off diesel engines that wouldn't turn over for men who needed them to.
+
+She noted it: he needed the room. Whatever the room actually was — this dinner, the operation, the person sitting across the white tablecloth from him — he needed to own it completely, and a woman drinking his 300Φ bottle straight from the neck instead of sipping from the glass he'd poured was a variable he hadn't designed.
+
+"I'm not interested," she said. Politely. She didn't raise her voice or lower it. She didn't explain, because an explanation was a door and she wasn't opening one.
+
+He didn't argue.
+
+He smiled instead — an expression that arrived on schedule, every muscle in the right place, nothing about it wrong except that nothing about it was for her. "I understand," he said. "The offer stands. I hope you'll reconsider." He said it the way a man says something he's said many times before, to many people, most of whom he expected to come around.
+
+She registered the smile as exactly what it was: not defeat, not even disappointment. A change of register. He was not a man who lost a room. He was a man who found a different way into it.
+
+"Thank you for dinner," she said, and stood before the second course arrived, because she had gotten what she came for and neither of them needed the filet mignon to finish making its point.
+
+He didn't rise this time. "Pixel," he said to her back — the name, not a question, offered the way you hand someone something they've already agreed to carry. She didn't turn around. She didn't correct it, either. It was already true, and arguing about a name that was already true would have cost her more than it bought.
+
+She walked the six blocks back to the Pivot in the cooling night air, past the reservation system's queue still forming outside a restaurant that would never once, in its history, have to try to fill a table. She thought about what it cost to take a room away from a man who needed to own it. She thought about what it would cost him.
+
+She didn't yet know the second number. She was fairly sure she was about to find out.
 
 [Beat 12]
-The district office was on the third floor of a building designed to look civic ΓÇö real stone floor, a bench with a dedication plaque, an elevator that thanked her for visiting in a voice calibrated to be warmer than anyone she'd passed in the street. The waiting room was clean. The air was filtered until it had no character at all: no street under it, no grease, no people. It said *institution* the same way the lobby said *public* ΓÇö loudly, on purpose.
+By the time she reached the Pivot's stoop she'd worked out what had bothered her about the way the dinner ended.
 
-She took a numbered ticket from the dispenser and sat with her back against the wall. Six seats. Two occupied. She read the room from the exits in, from the fixtures to the people, from the things that moved to the things that stayed. The camera in the upper left corner had its indicator light covered with tape, which meant it was recording, and the fact that they'd taped the light suggested they were used to people checking.
+He'd accepted her refusal too easily.
 
-The officer was her father's age, professional, not unkind. She had braced for hostility and found courtesy, and the courtesy threw her timing off.
+A man who reserved a table three months out to make a point didn't fold the point away in one sentence and wish her well. She'd watched him do the math behind his own smile — she was almost sure of it, the same way she was sure of a rig that read clean on every visible metric but still felt wrong under her hands. Something in the timing was off. Nobody ran an operation on conscription and coercion, on fourteen months of "the offer stands," and let a single dinner be the whole of his response to a no.
 
-He pulled up the form. She watched it open across his side of the glass, upside down to her. Forms meant to take complaints were short. This one had the architecture of an intake.
+He had not tried to argue with her at the table because arguing at the table wasn't where he'd decided to make his case. He'd already moved past the dinner in his head before the second glass. She was fairly certain the graciousness she'd walked out with wasn't relief or resignation. It was a door closing on one room so he could open a different one, on his schedule, where he'd get to pick the furniture.
 
-*CorpoNation affiliation?* Freelance. His hands paused ΓÇö two keystrokes, a tab. Freelance was a value the field accepted.
+She let herself into 2E and didn't turn the light on right away. She sat at the secondary kit and opened a blank log — not the calibration log, a new one, timestamped, no fields she'd have to explain to anyone. She titled it, out of habit more than sentiment, the way she titled every file she meant to keep: plain, exact, no editorializing.
 
-*Licensing current or pending?* Working on it.
+*Changes.*
 
-He slowed. Not dramatically ΓÇö just the rhythm of his fingers changing from the steady cadence of a man filling boxes to the spaced, deliberate tap of a man choosing what to enter. She had spent years beside hardware that told you everything in its timing: a clean instrument answered on the beat, a faulting one hesitated a half-step late, deciding. She read his hands the way she read a rig coming up cold.
+She wrote the date. She wrote: *Dinner declined, 21:40. He accepted too fast.*
 
-He asked what spec of hardware. What kind of calibration. She watched him navigate to a field called *Referral Category* and understood she had not walked in to file a complaint. He was building a file on her.
+Then she closed the file and went to bed, because there was nothing yet to add to it, and she had learned a long time ago — watching her mother log instrument drift for eighteen years before anything ever went wrong — that the value of a log wasn't in what you wrote the first night. It was in having somewhere to put the second entry, and the third, before you understood yet what they added up to.
 
-She said: never mind, I think I left it at the station.
-
-She watched the sentence land. It was a clean lie ΓÇö a confused freelancer, a misplaced case, nothing to escalate ΓÇö and it gave him an exit too, which was the point. She'd built it the way she built a coupling to fail safe.
-
-He said: I've noted the inquiry.
-
-His hands did not close the dropdown. The file would stay. The file was the point and had been the point from the first keystroke.
-
-She said thank you. She stood, lifting the chair the half-centimeter that kept it quiet. She walked to the door at the speed of a person with somewhere else to be.
+She fell asleep faster than she expected to. She woke up already listening for what would change first.
 
 [Beat 13]
-﻿The stairwell was concrete and she stopped on the half-landing with one hand flat on the cold rail. She gave herself three seconds. Not more than three.
+The job was straightforward on paper: a service access run through a defunct elevator shaft, two other operators on the channel with her, a third supposed to break the shaft lock from below so the other two could work the panel from above. She was running channel coordination — keeping the three feeds synced, calling timing, the part of the job that made the other two parts possible.
 
-She breathed the managed air down to the bottom of her lungs and made herself feel where her feet were. The boots were too large, the toes still padded with folded paper, and her weight sat in them the way it always did ??? a little forward, ready.
+Thirty minutes before the window, the third operator commed in.
 
-The officer had built a file on her. Not opened one ??? built one, actively, from the moment she'd said freelance. She had walked into a room to report a crime and walked out as a data point in a system she didn't fully understand yet. In Iowa she had known the rules of every system she touched. Here she was learning the rules of systems by breaking them.
+"Something came up. Gotta bounce."
 
-She thought about the referral scrap that had gotten her into the Pivot. About Reyes stopping in the corridor outside 2E at one in the morning. About the kid at the stall who logged her before she'd slept two nights. About the man on the train who'd told her: the day you can't tell the difference between selling the work and selling yourself is the day they have you. About the man across the hall who came home every night at 02:11 and made no sound after ??? she didn't know his name, only his latch.
+He didn't say what. He didn't wait for a response before the channel went quiet on his end. She'd worked with people who bailed on jobs before — it happened, gray-zone work ran on people who had other, less legal priorities some nights — but something about the flatness of it, the total absence of an actual reason, sat wrong in the same register the dinner had.
 
-Three days in this city and she was already in the systems.
+She had twelve seconds before she needed to decide whether the job was salvageable. She used four of them to do what she did on every job without deciding to: trace what she'd touched. His comm handoff had left a data shadow, the ordinary kind, harmless on its own. Behind it, though, a financial transfer had gone out from an account address she didn't recognize, timestamped ninety seconds before his message.
 
-*A file doesn't prove anything. A file is a file. You have the secondary kit. You have the tracer.*
+It was an 800Φ transfer, routed through four cutouts — clean work, the kind that would read as nothing to anyone who wasn't already looking for it.
 
-She straightened her hand off the rail one finger at a time. Then she went down the stairs and out into the street, which smelled of grease and people and machines and nothing that had been processed out of it. She found, walking into it, that she preferred it to the room upstairs that smelled of nothing.
+She was already looking for it. She had the Ryokan's routing architecture sitting in her notes from the ghost-op, the exact map of how a certain kind of operator liked to lay a transfer chain, and the fifth hop in this one matched a node she'd logged from that job: the same shell, the same signature dead-drop pattern, a mark that meant nothing to anyone who hadn't spent eight seconds inside that particular frame two weeks ago.
 
-Three days. She had more than the ACS had.
+His mark. Invisible unless you already knew where to look, and she did.
+
+She had four seconds left of her twelve. She spent zero of them on anger, because anger wasn't a tool that opened a shaft lock.
+
+"He's out," she told the two above her. "I'm taking the lock."
+
+She didn't have the equipment for it — that wasn't her segment of the job — but she had the frame architecture from the initial site survey and enough Slicer instinct to treat an unfamiliar lock the way she treated an unfamiliar terminal: from the visible to the inference. She ran the shaft's maintenance override through the access panel she did have reach to, found the fail-safe the manufacturer had built in for exactly this kind of emergency entry, and forced it. It took her ninety extra seconds. The two above her held position and didn't ask questions, because a channel operator who says *I'm taking the lock* in that tone of voice isn't inviting a discussion.
+
+The job completed on time, minus the ninety seconds, which nobody upstream ever noticed.
+
+She logged the incident that night at the secondary kit, in the file she'd started calling *Changes.* Not as a grievance. As data.
+
+*800Φ, one operator pulled off a job I was running. His mark on the transfer, five hops down, same signature as the Ryokan drop.*
+
+She sat with that for a while before she closed the file.
+
+He had paid a stranger to strand her and two other people on a job that would have cost her the client and the fee if she hadn't caught it in twelve seconds. He hadn't cared whether the job failed outright or just failed expensively — either one taught her the same lesson, which was that GLMZ was about to become a harder place to work in than it had been the week before.
+
+He knew she'd fixed it. She was fairly sure that was the point. A man who wanted to prove a theory about specialists needing him didn't need her to fail. He needed her to notice how much effort it took not to.
+
+She closed the lid on the secondary kit and didn't sleep well, and in the morning she went out and did the next job anyway, because that was the only answer she had to give him yet.
 
 [Beat 14]
-﻿She laid the options on the floor of 2E the way she laid tools out before a job ??? everything visible, nothing obscured, nothing rearranged for comfort.
+The relay came first.
 
-Iowa. Crossed off before she'd finished writing it. She'd already answered that question with her boots.
+A client hired her to diagnose an intermittent dropout on a commercial line — a two-hour job, by the fault description. She got three hops in and found someone had already been inside the same relay, recently, and had left the fault architecture deliberately tangled: three real problems nested inside two fake ones, wired so that fixing the obvious symptom made the actual cause harder to isolate rather than easier. She recognized the hand behind it the way she'd recognize a rewired thermostat that someone had made look like a sensor failure — not incompetence. Design.
 
-Buy replacement tools. She sat with this one longer because sitting with it was honest. The money she had was for living, not for rebuilding a kit that had taken eighteen years to assemble. Even at the kid's fair prices, she was four months short, and the calibration history inside that case ??? eighteen years of logged tolerances, every instrument cross-referenced against every other ??? was not a thing she could buy. New tools could be calibrated. New tools couldn't be calibrated by the hands that had calibrated these, or against the specific provenance those hands had built. She crossed it off and stayed with the weight of what she'd crossed off for a moment longer than she needed to.
+It took her six hours, through the night, working past the point where her eyes started reading code as texture instead of meaning. She fixed it. She billed for the two hours she'd quoted, because the client hadn't asked for six and she wasn't going to charge someone for a mess that wasn't theirs to pay for. She ate the other four hours herself. It was the first money she'd lost in GLMZ that she hadn't lost to her own mistake, and there was nothing to point to — no signature, no message, nothing but a tangle that had taken exactly the kind of care someone with real access would put into it.
 
-The tracer.
+The second one cost her more than money.
 
-She sat with that one.
+A handoff, twenty minutes out, client already in transit — and then a cancellation, terse, no explanation beyond *change of plans.* She traced the comm that had prompted it, because she traced everything she touched, and found it had originated from a source that had no legitimate way of knowing the handoff was scheduled at all. Someone had told the client something. She never found out what. What she found out instead, a week later, was that the client wouldn't take her calls anymore — not hostile, just gone, the specific silence of someone who'd decided, on information she'd never get to see, that working with her was more trouble than it was worth. She'd built that relationship over three jobs. It closed in one conversation she wasn't part of.
 
-She had built the handshake signal into the primary kit's chassis during the last overhaul ??? a low-frequency burst, narrow band, four-second duty cycle, the specific ugly frequency she'd chosen because nothing else in any consumer or professional environment used it. If the case was within range and running, she could find it.
+She logged it: *contact lost, cause unconfirmed, effect confirmed.* She didn't write anything else. There wasn't a version of the sentence that made it hurt less to write.
 
-*Then what?*
+The third was smaller and somehow worse for being smaller: a component she'd ordered — a coupling she needed for a job already half-scheduled — never arrived at her pickup point. She traced the shipment and found it delivered, signed for, at an address she'd never used, three blocks from where she actually lived — not stolen, but redirected, cleanly, by someone who had access to a shipping manifest she hadn't shared with anyone.
 
-That was the problem she'd been avoiding by doing the list. She had no answer to "then what." She wasn't going to call ACS ??? she'd just watched an ACS officer build a file on her while he pretended to take her complaint. She wasn't going to confront whoever had taken it. She was seventeen, five-four, and she didn't know whose territory she'd be standing in. This wasn't Iowa, where you walked up to someone's porch and handled it.
+Each incident on its own was the kind of bad luck that happened to freelancers in a city this size. Together, over two weeks, they made a shape. Deniable individually. Undeniable as a pattern. Each one had cost her something real — money on the relay, a client on the handoff, half a day chasing a coupling to a stranger's door on the third — and each one had cost her something the ledgers didn't have a column for: the specific, cumulative tiredness of running full-time triage on a life that kept getting quietly rewired around her.
 
-She looked at the VacCell on the windowsill.
+She sat with the *Changes* log open one night and read all three entries in a row.
 
-She hadn't flown it in urban terrain. The morning's ductwork run had been enclosed, controlled, predictable by its geometry. GLMZ street canyons were a different problem: thermal variance, wind channels carved by infrastructure she'd never calibrated against. She could wreck the VacCell in the first two blocks. She could lose the receiver she'd have to build. She could end up with no kit, no drone, and no idea where the case had gone.
+She had the operation. She'd had it since the elevator shaft, if she was honest — the mark on that transfer had told her everything the pattern was now confirming in triplicate. She didn't need a fourth incident to know what she already knew. What she needed was a different kind of move, because six more months of this at the current rate of loss would do exactly what he wanted it to do, whether or not she ever agreed to a single one of his terms.
 
-She looked at the options laid out on the floor.
-
-*Get the location. That's the first step. You don't have to know what comes after the first step to take it.*
-
-She thought about where the case had been four hours ago, and that she didn't know where it was now, and that the signal, if it was still running, would be a fact. Facts were what you worked from. She didn't have enough of them yet.
-
-She turned the secondary kit open and started building the receiver.
+She closed the log. She went to bed early for once, because she was going to need to be sharper than tired for whatever came next.
 
 [Beat 15]
-The receiver came together fast because she'd designed it for fast: discriminator, mixer, a length of wire cut to a quarter of 312's wavelength and no cleverer than that. She seated the last coupling twice out of habit, then stopped herself ΓÇö this coupling had no history, it didn't need seating twice, it held the first time. She logged nothing. There was nothing to log yet.
+She tried the official channel exactly once, because she'd decided that ruling it out properly mattered more than assuming she already knew the answer.
 
-She powered up and put the earpiece in. Music in one ear ΓÇö a habit, not a preference; it occupied the background half of her brain and left the rest to work. She turned the gain from the noise floor, the way you approach any signal you're not sure of: from the quiet up, so you learn the shape of the silence before you ask it to speak.
+The district office was on the third floor of a building designed to look civic — real stone floor, a bench with a dedication plaque, an elevator that thanked her for visiting in a voice calibrated to be warmer than anyone she'd passed in the street. The waiting room was clean. The air was filtered until it had no character at all: no street under it, no grease, no people. It said *institution* the same way the lobby said *public* — loudly, on purpose.
 
-Static. The clean gray hiss of a band with nothing on it.
+She took a numbered ticket and sat with her back against the wall. Six seats. Two occupied. She read the room from the exits in, from the fixtures to the people, from the things that moved to the things that stayed. The camera in the upper corner had its indicator light covered with tape, which meant it was recording, and the fact that they'd taped the light suggested they were used to people checking.
 
-She counted to sixteen.
+The officer was her father's age, professional, not unkind. She had braced for indifference and found courtesy, and the courtesy threw her timing off.
 
-There: a pulse, ugly, narrow, the specific frequency she'd chosen because it had no competition, broadcasting exactly where she'd built it to broadcast. She ran it again. Same bearing. She noted the timestamp ΓÇö the signal had been at that location for four hours without moving. Either they hadn't opened the case, or they didn't know what was in it, or they didn't care about the electronics inside. She'd built the signal to be invisible to anyone who didn't know to look for it. Apparently it was working.
+He pulled up the form. Short field for a redirected shipment — a coupling, low value, no theft implied, just a delivery that had gone to the wrong door. He typed it in without hurry.
 
-1.4 miles.
+*CorpoNation affiliation?* Freelance. His hands paused — two keystrokes, a tab. Freelance was a value the field accepted.
 
-She looked at the VacCell on the windowsill.
+*Suspected cause?* She said what she actually thought: someone with access to a shipping manifest she hadn't shared had rerouted her order deliberately, as one incident in a pattern of several.
 
-1.4 miles in GLMZ at street level was a different problem than 1.4 miles across Iowa fields. City canyons, electromagnetic interference, the thermal variance coming off buildings and vehicles. She'd never flown it in an urban environment. She thought about this morning's ductwork run. A duct was harder than an open street.
+He slowed. Not dramatically — just the rhythm of his fingers changing from the steady cadence of a man filling boxes to the spaced, deliberate tap of a man deciding what field that sentence belonged in. She had spent years beside hardware that told you everything in its timing: a clean instrument answered on the beat, a faulting one hesitated a half-step late, deciding. She read his hands the way she read a rig coming up cold.
 
-She pulled the VacCell off the sill and started running the pre-flight check.
+"A pattern of incidents," he said, "is a different filing than a misdelivered package. Do you want to open a harassment inquiry?"
+
+She thought about what a harassment inquiry would actually do. It would generate a case number. It would sit in a queue behind cases with visible injuries and visible losses, because that was how queues worked, and it would ask her to name a suspect she couldn't yet prove without handing an official record her own theory of who was coming after her — a record that, once filed, belonged to the system and not to her.
+
+"No," she said. "Just the package."
+
+He finished the form as filed. "I've logged the misdelivery. If a pattern develops that you can substantiate, come back and we'll open the broader inquiry." He said it kindly. He meant it. It was, by every measure the office used to measure itself, the correct and complete response to what she'd brought him.
+
+It did nothing for her.
+
+She thanked him and left, and on the stairwell down she turned the exchange over the way she turned over a diagnostic that had come back clean when the equipment clearly wasn't. He hadn't lied to her. He hadn't been slow, or rude, or corrupt in any way she could point to. He'd done his job exactly as his job was built to be done, and his job was not built to find a man who was patient, deniable, and careful never to leave a filing-shaped hole in anything he touched.
+
+She noted that too, in the log she kept for herself, not the one the district office kept for the city: *ACS is not going to solve this. Not because they won't. Because the shape of the problem doesn't fit their form.*
+
+She went back to work. She'd known, really, before she went in, that this was how it would go. She'd needed to know it for certain instead of assuming it, because assuming things you hadn't checked was how you ended up wrong about the one thing that mattered.
 
 [Beat 16]
-She found the ACS sweep gap in the public schedule ΓÇö the regulatory cadence posted online because transparency was a value the institution performed ΓÇö and sent the VacCell out in the eleven-minute window between passes.
+She sat on the stairwell's half-landing one evening with one hand flat on the cold rail and made herself lay the options out the way she'd lay out tools before a job: everything visible, nothing arranged for comfort.
 
-It lifted from the windowsill with the precision she'd tuned it for and immediately ran into something she hadn't tuned for: GLMZ street-level turbulence was nothing like Iowa fields. Thermal variance off the buildings and vehicles, wind channels carved by the tier-two overpass three blocks east, bodies adding their small heat signatures to a micro-weather system she'd never calibrated against. She gave it manual override for the first two blocks, hands on the small screen in her palm, adjusting wing timing to the gusts off the overpass until the onboard stabilizer had logged enough data to adapt on its own.
+Iowa. She crossed it off before the thought finished forming. There was nothing to go back to that hadn't already changed shape the day she left it, and going back would mean the eighteen months in her mother's licensed-industry case file had been a warning she'd actually taken. She wasn't going to let his campaign be the reason she agreed with that reading of her own life.
 
-Then she let it navigate and sat at the window in the dark, watching the camera feed.
+Leave GLMZ, go somewhere else entirely. Crossed off almost as fast. She had two months of history here, a room, a reputation, a name she hadn't chosen and had stopped correcting. Starting over somewhere new didn't erase what he now knew about how she worked. It just changed his commute.
 
-The VacCell's camera eye was underneath ΓÇö downward-looking, wide angle, with night-adjustment filtering she'd built for rural dark, which made the GLMZ streets look overlit: everything in sharp relief, the vendors packing up, the ACS vehicle three blocks east running its slow patrol route, the gray zone seam marker she'd noted on her walk that morning, now visible from forty meters up in a way she couldn't have seen from the street.
+Wait it out. She held that one longer, because it was the option that cost the least up front. But she did the math the way she'd have done it on a compressor that was failing on a known schedule: he had more patience than she had resources. Every week she waited was a week of relay jobs quietly poisoned, contacts quietly pulled, small costs compounding the way her mother's mis-calibrated bridge had compounded for eight months before anyone with the authority to fix it noticed there was anything to fix. Waiting wasn't neutral. Waiting was losing slowly enough that it didn't feel like losing until it was.
 
-She sent it north. She followed the bearing.
+Join him. She crossed that one off before the thought completed, the way you pull your hand back from a hot surface before you've consciously registered the heat.
+
+That left confrontation, and she made herself sit with the fact that it was the only line still standing rather than pretending she'd arrived at it by some careful process of elimination. She'd wanted it from the moment she poured that glass and drank from the bottle instead.
+
+She thought about the dinner. The precision-shift in his hands when she hadn't done what he expected. She thought about the market kid, delivering the warning like weather: *he doesn't let people walk.* She turned that phrase over now with two weeks of pattern behind it, and found the piece the kid hadn't said, maybe hadn't thought to say, maybe didn't even see: a man who couldn't tolerate people walking away from him wasn't actually in control of the room. He only looked like it, the way a compressor running hot looks powerful right up until the bearing seizes. Someone who needed every room to go exactly the way he'd designed it was someone who could, in fact, be walked out of a room — you just had to make sure you were the one who decided when.
+
+She thought about the fourteen months and change he'd apparently been running this operation, and the two names she'd found in the gray-zone registry who'd taken the offer and were, by every visible record, working rather than hiding. She didn't judge them for it. She understood the math they'd done, and she understood that his whole business model depended on that math looking reasonable from the inside. He wasn't wrong about everything. The gray zone genuinely was a place where a nineteen-year-old with a novel build had no institutional protection, and he genuinely had built something around that gap that occasionally, for some people, functioned like an answer.
+
+What made him the thing she was about to walk into a room and end was smaller and simpler than his whole theory: he'd decided that a person's consent was a line item he was allowed to zero out when it was inconvenient. Everything else was engineering around that one decision.
+
+She was nineteen. She'd been in GLMZ a little under two months. She was also Pixel, and she'd spent those two months learning exactly what she was capable of reading and reaching.
+
+She wasn't going to walk into his room on his schedule, the way the dinner had been on his schedule and every move since had run on his schedule. She was going to walk in on hers, with everything she'd built since the elevator shaft laid out where he couldn't argue with it, and she was going to make sure the terms were hers before she ever said a word.
+
+She stood up off the rail. She had preparation to do.
 
 [Beat 17]
-The VacCell took twelve minutes to cover 1.4 miles, which was longer than she'd planned and fast enough that the bearing reading was still stable when it arrived. She guided it parallel to the target block ΓÇö a street over, low altitude, below the camera coverage she'd noted on her midday pass. The camera showed her the block's profile: three unmarked storefronts, their cameras angled for door coverage and not for approach, goods arranged in the windows with the studied carelessness that meant someone had been paid to make the space forgettable.
+She didn't go in armed with anything she didn't already know how to use.
 
-She worked the VacCell around the corner.
+She'd thought about it — briefly, the way you think about a tool you've seen other people use well and know you haven't. She didn't own a weapon and didn't know anyone she trusted enough to borrow one from on short notice, and walking into a room carrying something she'd need a half-second to remember how to hold seemed like exactly the kind of variable that got people hurt. What she had instead was everything she'd actually built: the secondary kit, packed the way she packed for a job rather than a fight. The documentation from two weeks of pattern — the elevator shaft transfer, the six-hour relay untangle, the redirected coupling, the ACS log that proved she'd tried the front door before she came in through this one. Her own notes on his routing architecture, going back to the Ryokan frame that had started all of it.
 
-The signal was coming from the building third from the end. She brought it to hover opposite the lit rear window, altitude sixty meters, wings on minimal thrust to hold position in the thermal. A curtained space, the curtain breathing ΓÇö air moving through, rear door. Through the gap at the curtain's edge, in the spill of a work lamp, she could see the edge of a table.
+And Nit.
 
-She could see a corner of her case.
+She almost left it behind out of habit — she'd been thinking of tonight as the kind of work you did alone, unencumbered — and then made herself ask why. Nit wasn't a weapon and wasn't going to be one. It was an instrument, the same as it had always been, and instruments were how she read rooms she hadn't been inside yet. She packed the soft case.
 
-*That's the latch plate. I know that latch plate.*
+She ran a complete equipment check. Charge on the secondary kit's cells. Charge on Nit, camera calibration nominal, wing-pair torque within spec on both pairs. The dossier, staged and ready to project the instant she needed it visible and not one second before. She checked each element twice, the way she'd checked her mother's instruments before every calibration run for three winters, because a check you only ran once wasn't a check, it was a guess with better posture.
 
-She steadied the VacCell and worked the camera through its zoom range. At maximum the image degraded ΓÇö she hadn't built the lens for this distance ΓÇö but she could see enough: the case under the table, pushed back against the far wall, handle-side out, latch facing in. The way you set a thing you've catalogued but haven't decided about yet. Not opened. Parked.
+When she was done, she sat back on her heels and looked down at her own boots.
 
-She logged the bearing and the building number. She called the VacCell home.
+She'd laced them without thinking, the way she laced them every day. She looked at the toes now with actual attention for the first time in what she realized, doing the math, was close to a week. The paper padding was gone. Not worn through — gone, the way a habit goes when you stop needing it and don't notice the exact day you stopped.
+
+She sat with that for a moment. She couldn't place when she'd stopped re-padding them. She hadn't decided to stop. She just had, somewhere in the last several days of relay jobs and dinners and elevator shafts, and her feet had apparently caught up to the boots before the rest of her had thought to check.
+
+She didn't re-pad them now. There wasn't a version of tonight where that made sense — not sentiment, just fact: whatever had changed in the fit had changed for a reason she trusted more than she trusted the folded paper.
+
+She laced them tighter instead, the way you lace boots you mean to walk a long way in, and stood up.
+
+The secondary kit was packed. Nit was packed. The documentation was staged. She had done everything a person could do to make sure the only thing left uncertain tonight was him.
+
+She checked the time. Close enough. She picked up her cases and went to the door.
 
 [Beat 18]
-﻿The VacCell came in through the window and settled on the sill and she ran its memory buffer while it recharged. Sixteen minutes of footage. She watched it twice on the small screen: the approach, the block, the building, the lit window, the curtain breathing at its edge, the corner of the case under the work lamp.
+She opened the door of 2E with the cases in her hands and Nit's soft case slung against her ribs, and across the hall the door of 2D was already open.
 
-Two people visible in that time window. A curtained rear exit, confirmed by the air movement. At the edge of the camera's sweep, a person in the doorway of the adjacent building watching the street ??? not watching the air, which meant the VacCell at sixty meters and near-silent in hover mode was below the threshold of notice.
+Kyle stood in it.
 
-She had the layout. She had the count.
+She knew him the way she knew everything in this building by now — the worn latch, the odd hours, seventeen minutes gone and back without pattern — but she had never once seen his face straight on in good light until this exact moment. He looked like he'd just come back from somewhere with a different set of physics than a hallway. Dust on one shoulder that wasn't street dust. A stillness in how he held himself that she recognized from her own equipment check five minutes ago — the specific readiness of a body that has somewhere to be and already knows the trip has a price.
 
-She went through the options. Going in directly meant walking past at least two people in a space with a rear exit that was in active use. Not alone. Not at night. She didn't have a partner and she didn't have a plan for what came after a confrontation.
+He was looking at her. She was looking at him. Neither of them said anything for a second that lasted longer than a second usually does.
 
-What she had was a building they were using, a product they were sorting, and an operation that required they not be interrupted by anyone who'd want to log them. What she needed was a reason for them to leave that she hadn't put on herself.
+He read her the way she read hardware — from the visible to the inference. The cases. The kit slung tight against her body instead of carried loose. The boots, laced tighter than usual. Whatever conclusion he came to, he came to it fast, and he didn't ask a single question about it.
 
-She thought about the ACS officer. The thing he'd demonstrated: that a record was the point. That a system built to account for things worked in both directions. That if you knew what triggered a response, you could trigger one.
+"Give em hell," he said.
 
-She looked at the VacCell on the windowsill. She thought about the frequency she'd designed to be found. She thought about the one person who'd want to find it.
+Four words carried no inflection that asked her to explain herself, none that offered to come along, none that told her to be careful — just the sentence, flat and certain, the kind of thing you say to someone you've already decided doesn't need anything else from you tonight.
 
-*If I call them, they'll clear the building for me.*
+He stepped back into 2D. The door closed. The worn latch caught with the same sound she'd catalogued a dozen times since her first night in the building.
 
-She sat with it. Then she started working the plan.
+She stood in the hallway a moment longer than she needed to. The pump was cycling somewhere below the floor, on schedule, the sound she'd learned to trust before she trusted anything else in this building. The climate system she'd fixed on her first day held the corridor at a temperature that no longer registered as anything but ordinary.
+
+Nothing about the hallway had changed. She had.
+
+Then she went downstairs, out through the lobby, into the street, toward the building she'd spent two weeks learning how to walk into.
 
 [Beat 19]
-She had gone herself at midday, because some things the camera couldn't give her: the ground-level sight lines, the acoustic signature of the block, how she'd read to someone standing in it.
+The address wasn't hard to find, once she stopped assuming he'd hide it the way an amateur would.
 
-The no-name counter two doors down sold hot grain drink out of a dented urn. She paid in coin because coin left no record, and held the cup both-handed ΓÇö the cover of a person warming her hands, which was nobody's concern in any city. That was the cover. She worked it.
+She'd built it from three directions at once: the reservation trail behind the restaurant, which led to a holding entity that also leased office space two districts over; the routing architecture from the elevator-shaft transfer, whose home node resolved to the same block; and the pattern of incidents themselves, each one timed in a way that told her, once she laid the timestamps side by side, roughly how far a signal had to travel to reach whoever was pulling each trigger. Three lines. One intersection. She'd checked it twice before she trusted it, the way she checked everything twice.
 
-Forty minutes.
+The building didn't announce itself. Mid-rise, clean lobby, a directory board that named four unremarkable tenants and left the fifth floor blank. She'd expected that. A man who valued rooms that agreed with him in advance wasn't going to put his name on a door.
 
-At twenty minutes she had the layout: long table against the left wall, shelving at the back, curtained rear exit that breathed when someone passed behind it ΓÇö air moving through, door in regular use. Two people cycling through the space. One stayed at the table and sorted; one went behind the curtain and came back, went and came back, carrying. They were processing: cataloguing, deciding what each item was worth before it went anywhere. Not selling yet. A repair shop that didn't repair.
+She rode the elevator up alone. Nobody stopped her at the fifth floor, which told her either that he wasn't expecting trouble from this direction or that he was curious enough to let her find out what happened next. She suspected it was the second one.
 
-At forty minutes she saw her case.
+He was behind a desk in an office that looked more like the restaurant than like an office — the same controlled expense in every surface, the same insistence that everything in the room exist to be noticed. He looked up when she came in. He didn't look surprised. She registered that as information: he'd known this was coming, possibly for longer than she had.
 
-Under the table, shoved back against the wall, handle-side out, latch toward the brick. Her chest did something quick and involuntary and she let it, because it passed faster if you didn't fight it. Then she read the case the way she read everything: the latch faced the wall ΓÇö that was how you set a thing you'd catalogued but hadn't decided about, out of the way, oriented so it wouldn't pop open if bumped. It hadn't been opened. She knew it the way she always knew the secondary kit was full-charged without checking: not from looking, from the way the weight of it sat in the space. Eighteen years of her mother's calibrations were in that case and they had not been touched.
+"Pixel," he said. "I wondered when."
 
-She finished the drink, crushed the cup small, and left.
+She didn't sit down. She set the secondary kit's projector on the corner of his desk without asking and let it throw the first page into the air between them: the elevator-shaft transfer, 800Φ, five hops, his mark on the fifth. She let it sit there a second before the next page replaced it — the relay job's tangled fault architecture, timestamped against her own diagnostic log. Then the redirected coupling's shipping record. Then the ACS filing, timestamped, proof she'd tried the front door and found it closed before she ever came looking for the back one.
 
-The VacCell confirmed it all from sixty meters up later that night. Two data points. The case was there and it was intact.
+"You've been thorough," she said. "So have I."
+
+He looked at the projection without hurrying. She'd expected him to reach for it, to touch the data the way people reached for things they wanted to control, and he didn't. He just read it, the way she'd have read an instrument panel, taking in everything before deciding what any of it meant.
+
+"This is a complete package," he said. "I assume it isn't the only copy."
+
+"It's not." She kept her voice level, the way she'd have kept it explaining a fault to a client who didn't need to hear that she'd been frightened at any point in the diagnosis. "It's staged across six channels I control. If I don't cancel the send on a schedule I set, it goes out on its own — to the people in this district who'd be very interested in fourteen months of the same operation run against fourteen different specialists. I'm not telling you this as a threat. I'm telling you because it's true, and you strike me as someone who prefers to know exactly what he's dealing with."
+
+Something in his hands went very still on the desk — not a flinch but its opposite, the same tightening she'd watched happen at dinner. This time she'd walked in expecting it, and she read it differently now that she was a woman who'd decided to be here rather than a guest still deciding whether to stay. Her pulse went quick under her collarbone, a fast cold current she let pass through without fighting it, the way she'd learned to let fear pass instead of arguing with it.
+
+"This stops," she said. "The relay work. The client interference. All of it. Not because you've decided it's not worth the trouble. Because it is now more trouble than you can afford, and I've made sure you know exactly how much."
+
+He was quiet for a while. She let him be quiet. She'd already done the math and she knew what the answer looked like; she didn't need to fill the silence to prove it.
+
+"You understand what I offered you was real," he said finally. "The clients. The protection. Two of the people I approached before you took it and they're doing well. I'm not wrong about the gray zone being a place that eats specialists alive with no one watching."
+
+"You're not wrong about that part," she said. "You're wrong about the part where that gives you a vote in what happens to me."
+
+He almost smiled at that — not the gracious, engineered thing from the restaurant, something smaller and more honest, gone as quickly as it arrived. "You're good," he said. "Better than I estimated, and I don't often make that mistake."
+
+"I know," she said.
+
+She didn't wait for him to say anything else. There wasn't anything else that mattered enough to wait for. She collapsed the projection, closed the kit, and walked out past the blank fifth-floor directory listing, down through the lobby, into the street, without looking back to see whether he'd followed her to the window.
+
+She didn't know yet, walking away, whether he'd actually stop. She thought he would — she'd built the package specifically so that stopping cost him less than continuing, and he struck her as a man who read his own instruments correctly even when he didn't like what they showed. She'd find out for certain over the next few days, the way you find out whether a calibration held: by watching whether the readings stayed where you'd set them.
+
+And the leverage would only hold as long as she held it. The send wasn't a thing she'd done and finished; it was a thing she'd have to keep doing — cancelling it on a schedule she'd set, over and over, for as long as she wanted him stopped. She'd walked in to get a man off her back and walked out having tied a thread from his behavior to her own calendar, permanently. It was a far better trade than the one he'd offered across the white tablecloth. It was still a cost. She'd feel the small recurring weight of that scheduled cancel the way you feel a splinter you've decided not to dig out — and she'd chosen it with her eyes open, which was the whole of the difference between his kind of arrangement and hers.
+
+For tonight, she'd done the only part that was hers to do. She'd walked into the room herself, and she'd walked back out of it the same way.
 
 [Beat 20]
-She had the layout from two sources. She had the sweep schedule from the public feed. She had the plan.
+She came up the stairs at a pace slower than the one she'd gone down at. Her legs had that specific looseness that came after a body decided the danger was over before the mind fully caught up — the same thing she'd have called adrenaline runoff if she'd been narrating it to anyone but herself.
 
-The ACS inquiry band was a narrow, publicly documented frequency reserved for unregistered hardware callbacks ΓÇö specifically the kind of hardware she was carrying in the case that was currently under someone else's table. She knew the band's structure from the regulatory filings she'd read when she was studying the city's infrastructure before she left Iowa. She knew the format of a valid inquiry ping because the format was published in the same documents. She had the kit's chassis ID in her primary kit's handshake memory, which was currently in the VacCell's buffer from the tracer sync.
+The corridor was empty. The door of 2D was shut and silent — whoever lived behind it gone out into the far side of his own night, the same as she'd been gone into hers. The worn latch, the sound she'd catalogued her first night here and every night since, made nothing now; there was no one on the floor to work it. She stood a moment in the hallway she'd learned by sound before she'd learned it by sight. The pump was cycling below the floor, on schedule, the sound she'd trusted before she trusted anything else in this building. The climate she'd fixed her first day held the air at a temperature that no longer registered as anything but ordinary.
 
-At 03:00, in the eleven-minute sweep gap, she would broadcast: chassis ID, band, building address, accurate location tag. Twelve seconds. ACS would log a hit. ACS would send a unit. ACS would find what looked like an unlicensed neuretics calibration cache sitting in a commercial space with no license holder in evidence. They would document it. They would move on the people in the building.
+He'd stood in that doorway on her way out and given her four words, and she'd carried them down the stairs and into the room she'd walked in to end and back out again the same way. She'd done exactly what he told her to do with them. It had turned out to be a thing she could do.
 
-The people in the building, not wanting to be present when ACS arrived with the specific flag she was about to send, would leave through the rear exit the VacCell had confirmed.
+She went inside.
 
-She would wait for ACS to clear. Then she would go in.
+She put on music. Loud — the kind of loud that went through the wall the way the pump's forty-minute cycle went through the floor, present enough to be part of the building rather than a violation of it. She set her cases down and didn't unpack them yet. There was time for that.
 
-She thought about the record. The broadcast would generate a log ΓÇö her chassis ID's handshake, this frequency, this building, this night. If anyone ever worked backward from the inquiry, they'd have a transmission in an unlicensed band from a calibration rig with no registered owner. Not a crime. An anomaly. A data point attached to a frequency she would never use again. She sat with that for a while. Then she checked the sweep gap one more time. Seven weeks, no exceptions. The shot was clean. The field protocols also listed a secondary sweep forty minutes after primary response ΓÇö standard for flagged hardware. She had ninety seconds planned. The window was more than adequate.
+She sat on the floor to take off her boots and stopped with one half-unlaced, looking at the toe.
 
-She set the alarm for 02:45. She didn't think she'd sleep.
+The paper was gone. She'd noticed that already, in preparation, hours ago — noticed it and laced them tighter and gone anyway. She looked again now with the confrontation behind her instead of ahead of her, and the fact sat differently the second time. She still couldn't place the exact day she'd stopped re-padding them. She hadn't decided to stop. It had simply happened somewhere inside the last two weeks of relay jobs and dinners and elevator shafts and one very still office on a blank fifth floor, her feet reshaping the leather a fraction at a time until one day the folded paper had nothing left to do.
 
-[Beat 21]
-The building got quiet after midnight the way she was learning it got quiet: the pump cycling, the person in 2D coming back at 02:11 and the latch engaging with its familiar precision, the climate system she'd fixed running right in a way that was now just the building's baseline instead of a fault. She lay in her mother's boots on top of the blanket. She wasn't sleeping. She was listening to the building the way she'd been learning to listen to everything in this city ΓÇö from the facts in, from the fixtures to the inference, from the sounds that had never once meant something was wrong.
+They were still her mother's boots. They were still, technically, too large. She didn't re-pad them. She set them by the door, toes to the wall, the way her mother had set hers by the porch door for eighteen years, and left them exactly as they were.
 
-At 02:45 the alarm went off. She turned it off before the second pulse.
+She crossed to the secondary kit and opened the terminal.
 
-She sat up. The VacCell was on the windowsill, wings folded, the camera eye pointing at the ceiling. She wasn't bringing it tonight. Tonight she was going herself.
+The routing log was still there from the ghost-op, weeks old now, sitting untouched in the session history: the nine-second gap in the Ryokan frame, the trace that had started all of it. She could delete it in one keystroke. Nobody would ever know it had existed.
 
-She laced the boots tighter ΓÇö a thing you did when you meant to walk ΓÇö and went downstairs.
+She looked at it for a while.
 
-[Beat 22]
-At 03:00 she broadcast.
+She closed the lid without erasing it.
 
-The chassis ID, the inquiry band, the building address rendered in ACS format, accurate location tag. Twelve seconds. She cut the signal.
+It was hers. It was the mark of the exact moment she'd stopped being invisible and started being someone a man with a corner table and a white suit thought was worth owning, and she'd spent two weeks proving him wrong about the second half of that sentence without once wishing she could take back the first half. She wasn't going to bury the evidence of the thing that had made her.
 
-The Pivot had a 24-hour vending counter in the lobby ΓÇö instant coffee, nothing good, hot. She paid for one and took it to the front step. The street at 03:01 was what GLMZ made of quiet: fewer bodies, the same systems on different configurations, delivery vehicles that ran at this hour because the streets let them. She stood with the coffee and watched the three-block stretch between her and the district substation.
+Giving people hell, she thought, seemed to be turning into something like a special talent.
 
-The ACS unit came at 03:07. Lights on, no siren, the careful urgency of a night response to a logged hardware hit with no persons-in-the-building flag. She watched it park. She watched the officers go in. She watched, at 03:11, two people exit the building from the rear ΓÇö she could see the light change at the alley's mouth, the quick geometry of people moving fast without wanting to look like they were moving fast.
-
-She drank the coffee. She waited.
-
-[Beat 23]
-She stayed on the step. The ACS unit stayed fourteen minutes inside ΓÇö the standard processing time for a logged hardware hit with no license holder in evidence. They'd document the location, log the obvious unlicensed items, tag it for follow-up. The case was not an obvious unlicensed item to anyone who hadn't built it. Its signal had been in a narrow proprietary band, not the standard neuretics hardware range they'd been sent to find. They would walk past it.
-
-She had built the plan around the fact that institutions find what they're looking for and stop looking.
-
-At 03:25 the ACS unit came out. Two officers. One went straight to the vehicle. The other stopped on the step and turned and looked down the block ΓÇö not at her, just the sweep a person does when they're deciding whether they've missed something. She didn't move. She was a woman with a cup on a step at 03:25 in the morning. That was nobody's business in any city. The officer got in the vehicle. It left.
-
-She waited three minutes. Then she set the empty cup on the step rail and started walking.
-
-[Beat 24]
-﻿The case was where she'd seen it on the camera feed: under the table, shoved against the brick, handle-side out. She had it off the floor in forty seconds, hands finding the geometry by feel the way hands do when they know what they're reaching for. She sealed the latches by touch. She was heading for the side exit ??? the one on the thirty-second tape loop she'd logged at midday ??? when she heard the front door.
-
-Steps. The specific weight of someone who moved like they were there on a schedule.
-
-She was in the lobby alcove. No time to go back up. She came around the corner naturally, the case against her chest in both arms, the way you carry something fragile and heavy. The officer was halfway to the stairs when she appeared.
-
-He stopped. He looked at her.
-
-"Ma'am."
-
-"Service call." She nodded at the case. "Climate system. The condensate line's been cycling wrong for a month." That was true for the Pivot's building on the next block. She did not clarify which building.
-
-She read him the way she read everything else: from the object in, from the visible to the inference. His hands held the pad at the angle of rote form-filling, not of someone pulling up a flag. His weight was on his back foot ??? the posture of a person still deciding, not of someone who'd already made up their mind. She watched him run the taxonomy: young, tech, equipment, plausible job. Deciding if she was the kind of problem that required more column space on his form.
-
-"Building manager authorize the call?"
-
-"Yes." Donatella had. Not here, but the fact of authorization was true.
-
-He tapped his pad. She watched his face when the result came back. Something loaded ??? she could see the glow change at the edge of the screen. His expression didn't change, which was the thing that mattered. ACS had an inquiry record on her from three days ago: unlicensed freelancer, complaint filed, no escalation flag. The record would read as cooperative. As someone already known to the system.
-
-He wrote something brief ??? not the extended entry of someone starting a file; the quick mark of someone accounting for an encounter and moving on. She waited. The hallway was quiet around them. She thought about the ninety seconds she'd planned, and the forty she'd actually needed, and she had not planned for this.
-
-He flipped the pad back and stepped aside.
-
-She walked past him to the side door, pushed through, and came out into the alley at the same pace someone uses when they've finished and are thinking about the next job. She turned north. She walked two blocks.
-
-Then she counted her hands.
-
-They were steady. They had been steady the whole time, which was the part she hadn't expected. She had been afraid going in. She had not been afraid when it counted. She wasn't sure what to do with that except keep walking.
-
-She walked back to the Pivot with the case against her chest.
-
-[Beat 25]
-Six blocks at the pace of the early-morning city. Delivery workers, cleaners, the people whose jobs started before the light did. The case sat against her chest. She did not switch arms.
-
-*Eighteen years of her mother's hours in foam beds.*
-
-She crossed the main arterial at 04:47 and the Pivot was there, corner building, lit at one window on the second floor where she'd left the amber lamp on out of a habit she hadn't examined. She felt the building before she reached it the way she was learning to feel buildings she knew: the hum of the wiring, the climate system she'd fixed running right, the pump in its forty-minute cycle somewhere below her feet. A known thing. She had mapped it in her first week. She had stopped noticing it in her second, the way you stop noticing a sound that has never once meant something was wrong.
-
-She got the door with her elbow and went up.
-
-[Beat 26]
-She opened the case on the window ledge ΓÇö her workbench now, wide enough, getting the pre-dawn light ΓÇö and ran the sequence. Each instrument out of its foam seat: the field comparator, the reference oscillators, the drift meter her mother had recalibrated by hand every ninety days for eighteen years because she didn't trust the factory interval. The seals had held. The records were undisturbed. Nobody had opened the case, because nobody had been looking for a case.
-
-She checked it all twice anyway.
-
-Then the secondary kit wired in beside it, the two of them sitting on the ledge the way she'd always imagined they should sit ΓÇö the good kit and the backup, side by side, each compensating for the other's blind spots. She found the speakers under a box she hadn't unpacked yet and put music on ΓÇö real music, the kind that took up half a shelf and didn't ask anything of her ΓÇö and the room began, slowly and in the particular way rooms do, to smell and sound like a place she lived instead of a place she was passing through.
-
-She sat down on the floor with her back against the ledge. Her legs had decided without consulting her that they were done.
-
-She was in her mother's boots. She had been in them the whole time ΓÇö through the counter, through the stairwell, through six blocks with the case against her chest. She looked down at the toes now, at the foam she'd packed into the front of them because her mother's feet had been a half-size larger and without it the boots swam on her. She had not re-padded them since she unpacked. They fit the way they fit.
-
-She looked at them for a while, with the rain the atmospheric processors had decided to give the gray zone tapping at the window, and she left them exactly as they were.
-
-[Beat 27]
-﻿She got up when her legs let her. She took the boots off and set them at the threshold ??? work boots stayed at the door, mud and the day's weight left where they belonged, the house kept clean of what you'd walked through. She opened the door to line them flush with the frame, toes to the wall, the way her mother had set hers by the porch door for eighteen years.
-
-That was when the man from 2D came off the elevator.
-
-He was carrying something long, held across both forearms the way you carry something you don't want to set down. Cloth wrapped it end to end ??? dark, tied at two points ??? and the wrap did nothing to disguise the shape. The straightness of it. The slight weight toward one end. The way his hands cupped where a guard would sit. She had spent the last six hours learning exactly what her own arms did around something that mattered. She recognized the posture before she recognized what it described.
-
-"Is that a sword?" she asked.
-
-He looked at her. Not startled, not caught ??? just looking, the way you look at something you're deciding about. Then he went inside. The door shut.
-
-From behind it, low and flat and not unkind: "Lock yours."
-
-She had read the sword the way she read everything ??? from the object in, from the visible to the inference. The cloth was worn at both tie points: handling wear, not storage wear. The weight sat toward the guard end, which meant distance work. The tip showed no oil stain, which meant it had been cleaned before wrapping. Someone who put things away right. She knew what kind of person was on the other side of that door.
-
-She went inside. She went to the ledge.
-
-She opened the case and ran the thirty-second sequence ??? the same thirty seconds in the same order every time, drift meter last, needle to zero ??? and closed it again.
-
-Then she crossed to the door. Her hand found the throw.
-
-She listened. The pump, cycling. The man in 2D's latch, already engaged. The climate system she'd fixed, running right. Outside, the managed rain the atmospheric processors had decided on tonight, tapping against the glass. She knew this building. She'd been listening to it for days, filing every deviation, noting every sound that had never once meant something was wrong. She'd been living here as if the door were unlocked since she'd arrived.
-
-She let the throw go.
-
-She went back to the ledge. She pulled the secondary kit in beside the case and opened it. Both kits on the window ledge, the good one and the backup, side by side, the way she'd always imagined they should sit. She picked up the reference oscillator and began the cross-calibration her mother had run every ninety days because she didn't trust the factory interval.
-
-Outside, the door was unlocked. Inside, there was work to do.
+GLMZ had a great deal of hell left to give, on both sides of that sentence, and she found — sitting on the floor of a room she'd fixed the air in on her first day here, boots by the door, music loud enough to feel in her teeth — that she wanted to be the one giving it.
 
 Her name was Pixel.
+
+She was staying.
 

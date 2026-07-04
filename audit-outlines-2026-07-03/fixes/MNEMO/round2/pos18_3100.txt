@@ -1,0 +1,77 @@
+# Off Timing
+
+She ran the first query at 09:22 with her hands flat on the desk and her calendar open on the secondary monitor so anyone walking past would see a schedule review.
+
+The infrastructure logs were not the clinical panel. They were the system-level records: when calibration protocols ran, which equipment signatures fired, which events were logged versus which were allowed to pass silently. She had access to this tier now — had it since 08:45 yesterday, before Ciro's message arrived — and she had spent an evening learning the query syntax from a facilities manual that lived in the non-clinical index. She was three queries deep when she found it.
+
+Not the data. The shape of the data. The suppression protocol appeared as a gap — an equipment signature that would normally log a specific calibration event, and then nothing. The gap had a timestamp. The gap was systematic. If she ran the batch number against the gap timestamps, she would know whether Batch 44-C was the only batch with gaps, or whether the pattern went further.
+
+She typed the batch number and hit run.
+
+A notification appeared in the corner of her screen: *Fonseca, C. — approaching workstation area.*
+
+She minimized the query window. The progress bar was at 31%.
+
+He appeared at her desk sixteen seconds later — enough time for her to open the calibration request queue on the secondary monitor and look like she'd been reading it for an hour. He was holding a coffee. The cup was the kind from the seventh-floor machine — the tall paper cups that the cultivation floor used. Ciro drank espresso from the sealed-glass dispenser near his office. She had never seen him with a paper cup.
+
+"I was passing," he said.
+
+She nodded. He didn't usually stop when he was passing. Most Account Liaisons waved. He set the paper cup on the edge of her desk — not offering it, just setting it down — and looked at her secondary monitor.
+
+"How's the queue?" he said.
+
+"Manageable," she said.
+
+"Good." He was looking at the secondary monitor but not, she thought, seeing it. He was looking at the room with his peripheral vision. She had done this herself when she was working the neuretics beat from a relay shop, watching foot traffic before a source arrived. "I wanted to confirm — the thirty-two access came through without any issues?"
+
+"Yes," she said. "Yesterday morning."
+
+"Good." He said it again. The same word with a slightly different weight. He picked up the paper cup, held it for a moment, then set it back down. He had forgotten he was holding it.
+
+The freight grid outside the window held its standard morning load — containers on flatbeds, the relay beacon at the junction running its hourly test, the particular diesel-and-stone smell that came through the ventilation when the wind was off the lake. None of that. Only a corner of a building she had never seen, the specific angle where a roof access ladder met a parapet, and the quality of the light at 0640 off grey ferrocement.
+
+"Is there something you needed?" she said.
+
+He looked at her directly. The attention was there — the attention she had come to understand as both real and calibrated at the same time. "No," he said. "Just checking in." A pause. "You've had a busy week."
+
+"It's been eventful," she said.
+
+He looked at her for a moment longer than he needed to, then he said, "Let me know if you need anything," and he left. He did not take the paper cup with him.
+
+She watched him go. She did not open the query window until she could no longer see him at the corridor junction. Then she waited fifteen more seconds, because the junction had a camera she knew the coverage arc of.
+
+She opened the query window. The progress bar was at 31%.
+
+The query had not run. It had paused at the exact moment she minimized the window — not completed, not failed. Paused. Waiting. The proximity notification had done more than alert her. It had suspended her active query and logged the interruption. The infrastructure log now had a record of a query she had started and not completed.
+
+She ran the rest manually, in sections, with the secondary monitor open to the calibration request queue, the paper cup sweating a ring onto the laminate beside her keyboard.
+
+By the time she reached Zone 7, she had one hundred and twelve gaps.
+
+She sat back from the desk. The newsroom was quiet around her, the Tribune's afternoon desk clearing out, the standby lighting warming up toward the day-end cycle, the row of dark monitors throwing back the corridor light. One hundred and twelve. She looked at the number on her screen and felt her hands settle, very deliberately, against the edge of the desk, the way you braced a thing that was heavier than it looked when you picked it up. Her breathing slowed after the number, not before — the body catching up to a count the mind had already finished. Not anxiety. Something more structural. The recognition of a thing that was larger than she had expected and was not going to stop being large.
+
+One hundred and twelve people whose calibration events had been logged and then unlogged. One hundred and twelve gaps where a record should have been and was allowed to pass silently. The number did not feel like data anymore. It felt like a room she was standing in.
+
+And then her left shoulder dropped a half-register — no cause she could locate, no signal from the bleed, just muscle settling under the weight of a bag she was not wearing. A phantom load, the diagonal drag across the shoulder and down. She let it sit there. It was hers or it wasn't; at this point the distinction had stopped mattering.
+
+She opened the pre-paid channel. She didn't compose anything. She held the open field for a moment — not sending, not typing — the way you held a door for someone who was still in the corridor. Then she typed: *112.*
+
+Nothing else. She sent it.
+
+His response came back while she was still watching the screen: *I know.* And then, four seconds later, as if he had started to close the channel and then not: *Write it down. On paper. Not the system.*
+
+She looked at the paper on her desk. She picked up a pen and wrote 112 in the margin of a routing form, pressed down hard enough that the pen left an indent. She looked at it. It was outside the system now. It was real in the way a thing was real when a body had done the work of making it.
+
+She was in it. That recognition arrived last, the way the worst ones did — not as a thought but as a cold settling at the base of her skull, where her own neuretics did their quiet work. She was a ninety-day-cycle recipient. Her next calibration was already on her calendar, logged like a dentist's appointment, and somewhere in a file she had no clearance to open there was a row with her name on it and a window beside it. One of these gaps, someday, would be hers — and she would walk into a room with managed air and walk out fine, and she would not be able to find the place where the fear was, because the fear was the thing they took. She had been reading the list the way a reporter read a list. She made herself read one line of it as the subject she also was.
+
+She had the drive in her jacket pocket. She had the paper with 112 on it, which she had written in the first moment she understood, the kind of thing you wrote because writing it made it real outside your own head.
+
+She was reaching for her bag when the access panel in the corner of her screen changed. Not a banner, not an alert — a quiet system update in the border display: *Infrastructure tier reviewed. Level adjusted per compliance review: historical read-only. Batch query access suspended pending clearance.*
+
+The window he had opened for her was closed.
+
+She registered it the way you registered a door locking behind you — not the sound of it, the fact of it, arriving a half-second after you'd already walked through. Not alarm. Recognition. She had been let in for exactly as long as it took, and the timing of the closing told her more than the access ever had.
+
+She folded the paper twice and put it back. She closed the query and logged out of the desk cleanly, the way she always did, the way a person logged out who had found nothing unusual and was going home at the end of a normal shift.
+
+The newsroom did not know what she had found. The paper with 112 on it was in her jacket pocket, two folds thick against her chest, and she was going to carry it home on the transit with strangers who had their faces turned to the windows — strangers who might, any one of them, have their own number written somewhere they had not yet shown to anyone.

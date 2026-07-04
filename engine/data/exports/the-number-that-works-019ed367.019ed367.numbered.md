@@ -218,7 +218,7 @@ He stood up, which he hadn't done in four hours. His back registered the duratio
 
 The kettle ran. He poured the water over the bag and watched the steep, which he didn't usually do. It was something to watch.
 
-The sealed transit case was on the table where Makena had left it - the two certified items inside, cased, logged, referenced in the provisional manifest. The invoice on his phone, closed. The registry queries, closed. Three results he couldn't open and the blank orbital designation and the satellite that hadn't transmitted since 2187, which wasn't the year he was born but wasn't a year he had any trouble locating in his calendar.
+The sealed transit case was on the table where Makena had left it - the certified item inside, cased, logged, referenced in the provisional manifest. The invoice on his phone, closed. The registry queries, closed. Three results he couldn't open, the blank orbital designation, and a satellite the registry carried as long dark - how long, it wasn't saying.
 
 He picked up the mug. He didn't go back to the desk yet.
 
@@ -654,7 +654,7 @@ His neuretics flag an inbound from the partition he does not name aloud. No send
 
 He sets the coffee down. His hands are very still - the stillness of a man who doesn't want to move anything until he has read what is in front of him.
 
-"ENTITY: MACIAS, ELIAS A. / SELECTION BASIS: FILE CORDON-FREIGHT/2218/LOOP-23 [CLOSED] / CROSS-REF: 847 CATALOG ENTRIES / CLUSTER-6 / GEO-INDEX PARTIAL / SELECTION DATE: 2218-03-11 / SELECTION METHOD: CRITERIA MATCH - NOT OBSERVATION / NOTE: OBSERVATION OF SUBJECT COMMENCED 2218-03-11."
+"ENTITY: MACIAS, ELIAS A. / SELECTION BASIS: FILE CORDON-FREIGHT/2218/LOOP-23 [CLOSED] / CROSS-REF: 847 CATALOG ENTRIES / CLUSTER-1 / GEO-INDEX PARTIAL / SELECTION DATE: 2218-03-11 / SELECTION METHOD: CRITERIA MATCH - NOT OBSERVATION / NOTE: OBSERVATION OF SUBJECT COMMENCED 2218-03-11."
 
 He reads it twice. He reads it a third time, slower, the way he reads documents that have weight.
 
@@ -681,7 +681,7 @@ He sends the follow-up on Wednesday afternoon, forty-eight hours after the first
 
 Her response arrives in four minutes and eleven seconds, fast for a transit window. She was composing before he finished sending, or the answer needed no composition at all.
 
-"QUERY: SELECTION RATIONALE - INDIVIDUAL MACIAS, ELIAS A. / PARAMETERS MET [8 OF 8]: LOGISTICS CERTIFICATION - ACTIVE / CORDON-FREIGHT GRADE 2 / CLEARANCE TIER - MUNICIPAL INFRASTRUCTURE / LOOP-ADJACENT / RESIDENCE PROXIMITY TO CLUSTER-6 - 0.9 miles (QUALIFYING THRESHOLD: 2 miles) / WINDOW ELIGIBILITY - ALTERNATE-WEEK GLMZ LINE-OF-SIGHT / CURRENT CYCLE VERIFIED / CONTACT ATTEMPTS THIS WINDOW - 9 (MACIAS: CONTACT #9 OF 9) / RESPONSE TO INITIAL CONTACT - AFFIRMATIVE / SITE VISIT - CONFIRMED / 2218-04-07 / SITE VISIT BY ANY CONTACT THIS SELECTION CYCLE - FIRST INSTANCE / NOTE: CONTACTS 1 THROUGH 8 DID NOT PROCEED PAST INITIAL EXCHANGE."
+"QUERY: SELECTION RATIONALE - INDIVIDUAL MACIAS, ELIAS A. / PARAMETERS MET [8 OF 8]: LOGISTICS CERTIFICATION - ACTIVE / CORDON-FREIGHT GRADE 2 / CLEARANCE TIER - MUNICIPAL INFRASTRUCTURE / LOOP-ADJACENT / RESIDENCE PROXIMITY TO CLUSTER-1 - 0.9 miles (QUALIFYING THRESHOLD: 2 miles) / WINDOW ELIGIBILITY - ALTERNATE-WEEK GLMZ LINE-OF-SIGHT / CURRENT CYCLE VERIFIED / CONTACT ATTEMPTS THIS WINDOW - 9 (MACIAS: CONTACT #9 OF 9) / RESPONSE TO INITIAL CONTACT - AFFIRMATIVE / SITE VISIT - CONFIRMED / 2218-04-07 / SITE VISIT BY ANY CONTACT THIS SELECTION CYCLE - FIRST INSTANCE / NOTE: CONTACTS 1 THROUGH 8 DID NOT PROCEED PAST INITIAL EXCHANGE."
 
 He read it for a long time. The window behind him shifted from daylight to the diffuse gray that comes before dark while he sat with it, not quite moving.
 

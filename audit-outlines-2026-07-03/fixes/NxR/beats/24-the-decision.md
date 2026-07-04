@@ -1,0 +1,55 @@
+## Beat 24 — The Decision
+
+- **Action:** REWRITE (Structural Requirements 2 and 3)
+- **Target Beat Id:** `019F06E7-F043-7E9C-8C3F-588F0D4D34EB` (#4842)
+- **BeatTitle:** The Decision
+- **Synopsis:** Vox reseals the manifest; Adalemo appears, reveals he killed the reference tone
+  himself, and lets the crew walk. Two additions land here: (1) Adalemo's dialogue now explicitly
+  references the name Vox caught him privately searching in #07 ("The Search He Didn't Log"),
+  confirming his earlier appearance and doubt actually connect to this moment instead of Vox simply
+  guessing at his motive after the fact. (2) Adalemo's mercy is now offered *after* he acknowledges
+  what Boiler/Scout/Lace's set-piece (#19) cost his own stack — three of his four operators delayed,
+  disabled, or turned around by the crew's own skill, not by his generosity. This directly answers
+  the audit's Finding 3 ("nobody on the crew does anything to earn the exit"): Adalemo's walk-away
+  now opens a door the crew has already fought most of the way through, rather than handing an
+  untested crew a freebie. No changes to the reseal mechanics, the corridor walk-out, or the
+  Rook/Vox threshold exchange — all of that already worked.
+- **Proposed SortKey:** 650 (unchanged)
+
+---
+
+She resealed the loud place.
+
+Not all the way — she couldn't, not with the reference gone and PEREGRINE's clock chewing the last forty meters, but she folded the seam back over itself the way Ohara had, leaned on the loud place a second time to make it lie a second time, and felt the manifest sink back under its own credential like a stone going down through water that closed over it without a mark. The live data she left where it lay, clean and shallow and exactly the size of the purchase order. PEREGRINE would get the clock they paid for. They would stand under the wall and read a data-cache and never know they'd been forty meters from sixty-one names and a barge.
+
+Her hand was on the far face when the floor changed. Not a sound — a pressure dropping out of the room the way the reference tone had, except this one had a name on it, and the name came up through the cold reading on Lace's two fingers before it came up through anything she'd have called hearing. Adalemo. Standing in the doorway Rook's lamps didn't reach, having walked the loud room's eighteen months of complaint same as she had, except Adalemo hadn't come for a data-cache and hadn't come for PEREGRINE's clock. PEREGRINE had sent him to confirm what was behind the wall before they spent the last forty meters standing under it — and to confirm it, he'd needed her reference gone, so he'd put his hand on the feed that fed Stave's cabinet in Boiler's building and killed the hum at the source. He hadn't done it to blind her. He'd done it to watch her read a wall with nothing left to lean on but herself, because a Reader with no instrument reads true or reads nothing, and Adalemo had wanted to see which.
+
+*He didn't come to read the wall. He cut my reference so he'd be reading me instead — and the only man who'd burn his own confirmation to watch me choose is one who already knew what twenty-one names in the cold were worth before he ever put his hand on that switch.*
+
+Adalemo crossed the floor the way Rook crossed it — knowing where the lamps didn't reach and using it — and stopped close enough that the cold reading on Lace's fingers logged him as a second body, a second temperature standing off the patch. He moved his left shoulder the way a man moves a joint he's stopped trusting, a small rotation before he committed his weight anywhere near it, and Vox filed that without knowing yet what it meant. It meant plenty. It just wasn't hers to know.
+
+"You sealed it," Adalemo said. Not a question. He had watched the wall stop lying and start again; he knew the shape of a reseal from the outside the way Vox knew it from in.
+
+Vox said nothing, which was the only answer that didn't hand anything over.
+
+"I'm not paid to open it," Adalemo said. "I'm paid to confirm what's behind it. PEREGRINE wants a data-cache. I just watched you build them one." He let it sit. "I read the strain on the loud place from out here. Forty marked, twenty-one bare. I can count, same as you." A pause, and something in it that hadn't been in his voice before, a fraction of weight he set down carefully, the way you set down a thing you've been carrying alone. "*Sefi Okonkwo* is one of the twenty-one. I know that name specifically. I've known it for three months, off the tasking, on my own time, and I've deleted the search every time because I didn't trust the purge to make it not have happened."
+
+Vox went very still, in the specific way a person goes still when a thing they'd filed as a maybe stops being one. *He said the name I caught him carrying before he'd earned the right to say it in front of me. That wasn't a guess. That was a debt he decided to pay off in front of a witness.*
+
+"Three of the four who came in with me tonight are climbing out of a stairwell that decided, very precisely, not to hold them," Adalemo said. "I don't know which of you did that. I'm not going to spend what's left of my morning finding out, because the answer doesn't change what I already knew walking in — that whoever built this crew back for a job with no payment structure and no client chain wasn't doing it for the fee." Then he did the thing that fit on no one's purchase order: he turned, put his own body between the seam and the vector Rook had marked, and faced out, the way you stand when you've decided which side of a wall you're on. "Forty meters, and your people already spent most of it for you. Walk your crew out the load corridor. I confirm a data-cache and I never read a forty-first name."
+
+So she went, because there was nothing left in the room worth the time it would cost to feel anything about it, and the feeling could wait in the corridor where it didn't have a clock on it.
+
+The load corridor was the building's spine before the building had been anything anyone lit — concrete poured for freight, ceiling low enough that the neon someone had strung along it decades ago had been strung sideways, dead tubes and live ones alternating so the light came at her in bands, warm, warm, dark, warm, none of it reaching the floor. Rust had taken the channel struts where the damp got in and left them the color of dried blood, and the whole length of it smelled of cold iron and standing water, the GLMZ underneath the GLMZ, the part that held the rest up and got no maintenance for it. Her steps fell into the dark bands and out of them. Behind her, Adalemo's body stayed where he'd put it, a shape she could feel on the patch sensor going small the way a held note goes small, and she didn't turn around to confirm it, because confirming it would have meant deciding what it was, and she had decided enough in that room for one morning.
+
+She walked out of a room where a man had just chosen a side, and the thing she carried out with her wasn't relief. It was the specific weariness of having watched someone do an expensive thing for a reason they would never be paid for and never explain, and knowing she was the only witness, and knowing the witnessing was the whole of what she'd ever get. The four channels she had left ran quiet in her skull the way they always ran now, and for once she let them stay quiet. There was nothing out there she needed to hear over the sound of her own steps in a corridor that should have been demolished six years ago and was, instead, the only clean way out.
+
+Rook was at the mouth of it.
+
+She had the door cracked the width of a forearm and her back to the jamb, watching the street side, and she turned her head when the light bands caught Vox coming up the spine and read her in the half-second it took — read the channels running quiet, read the hands empty of a transfer brick, read whatever showed on Vox's face that Vox couldn't see herself. Rook's eyes went past Vox's shoulder, down the dark of the corridor, to the place where a second temperature was standing off a sealed wall, and came back. She didn't ask who was back there. She didn't ask why the wall was sealed instead of opened, why the brick was empty, why Vox had walked out of a recovery without the thing recoveries were for.
+
+For a moment Rook's hand, the one that had been flat on the grating all morning, came up and pressed, briefly, against her own sternum — a small involuntary check, as though confirming a thing she'd needed to confirm. Then it came back down. The not-asking was the most Rook thing she did all morning — she had built a crew out of people whose silences she trusted, and she paid the trust now by spending none of it on questions whose answers she could see Vox had already put somewhere they both knew she'd never reopen.
+
+"Boiler's got the truck running on the lake side," Rook said, which meant *I see you, the count is closed, we go.* "Load corridor was clear?"
+
+"It was," Vox said, and stepped past her into the neon coming off the water, where the light meant nothing and looked like everything, and let the door close on the dark behind them.

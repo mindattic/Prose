@@ -564,7 +564,11 @@ The maintenance corridor on the other side smelled like standing water and old f
 
 The corridor connected to the distribution center's loading dock by a service passage that appeared in no Halcyon route analysis of his known movements. He was certain of that. They had watched him for nineteen days; they had built their map of him out of his habits and his transit and his badge swipes, and their map ended at the walls. An eight-pound animal had used this passage and left no record, because nothing about the mouse generated a record. There was a lesson in that he intended to use.
 
-He left what he had brought in the agreed location: three sheets of folded paper, handwritten, no neuretics trace, nothing that had ever touched a network. Paper held still. Paper didn't ping. He set the sheets where they would be found by the one set of hands meant to find them and pressed them flat, and then he straightened — slowly, in the low ceiling — and stood a moment in the dark with his hand not quite at his chest. The work he had carried for eight years was three pages now, and it was out of his hands, and that was the point of all of it.
+He left a second hand of the same three sheets — written twice the night before, at the same narrow table, in the same small hours, because a man who has spent eight years trusting a plan to hold also knows exactly what a freight corridor can do to a plan. He had given the walk to the panel a real chance of failure, not a comfortable one. Two Sunder discharges, a stairwell, a fire door that believed in an alarm it no longer had — any one of those going the other way, and the record would close on a folding chair he never got to sit in, eight years ending in a filed report and a man who never spoke a word of it himself. He wasn't going to let the whole of it ride on his body clearing four hundred yards of Halcyon corridor unscathed. Paper held still. Paper didn't ping. So there were two: the set riding warm against his sternum in his breast pocket, the one he meant to unfold himself in front of the recorder, and this one, folded once more than the first, left here for the one set of hands meant to find them if his didn't make it there.
+
+He had added a fourth page to this copy only. Sixteen names. No case number, no docket, nothing a court had a form for. Just the names, in case the only man who could say them out loud never got the chance to. Ledger would know what to do with them — Ledger always knew what to do with a thing that moved sideways instead of up, and Ledger had never once asked him for a reason before doing the right thing with what he was given. He set the four sheets where they would be found and pressed them flat, and then he straightened — slowly, in the low ceiling — and stood a moment in the dark with his hand not quite at his chest.
+
+Insurance wasn't the same as doubt. He believed in the plan. He had also buried men who believed in plans.
 
 He came out the far side onto a service road. Cracked asphalt, a chain-link run, a sky going pale at the edges. Halcyon's network didn't index this road; it was a seam in the city the same as the seam in the wall, a place the official map had pressed flat and forgotten. He stood in it for a breath, a very large man on an empty road that didn't officially exist, and let the morning find him.
 
@@ -1160,6 +1164,28 @@ He stood in the rain with the Manowar dormant across his chest and the November 
 
 He looked at the doorframe at the end of the alley. He had passed it a dozen times in the weeks since Ironbend. Old wood, unremarkable, standing between a laundromat and eleven years of vacancy. The Threshold, the Zone called it — not as a name, exactly, as a fact. You went through or you didn't, and the going through was the decision, and the decision was the thing that couldn't be walked back. The rain came down. He read the message again, not because the words had changed, but because he was a man who liked to know exactly what he was holding before he decided what to do with it.
 
+He went through.
+
+The door didn't lead to a room so much as a decision that had already been furnished — a narrow hall, warm air pushed by a heater no bigger than a lunch pail, a woman at a fold-table who didn't look up right away because looking up right away would have told him she'd been waiting for him specifically. When she did look up, she was younger than the name had led him to build in his head, and unimpressed with his size in the particular way of someone who dealt in men his size for a living and had stopped finding it interesting years ago.
+
+"Boris Johansen." Not a question.
+
+"That's the name on the file, yeah."
+
+"You've moved a great deal of freight through this district in the last six weeks that never touched a Halcyon manifest." She said it the way an accountant reads a total off a page, no judgment loaded into the number. "We like to know who's doing volume like that before it becomes a habit we didn't vet."
+
+That was all it was. Not a threat dressed as a courtesy, the way Brandt's calls had always been. A ledger, checking its own edges, the same as his. He almost laughed — would have, if the room had been built for it — because he recognized the discipline in her the way he'd recognized it in Hana Morimoto, in every precise person who had ever sat across a table from him and done the actual work instead of performing it.
+
+"You could have asked."
+
+"I did." She nodded once at the message he still held, gone soft and damp at the corner. "You answered by coming."
+
+She gave him a word, not a name — a thing to say if anyone from the House ever stopped him again in this district, the kind of passphrase that wasn't really about the syllables, just about proving someone upstream had already looked at him once and moved on to other business. She didn't offer a hand. He didn't expect one.
+
+"Take care of yourself," Bear told her anyway, and meant it, the way he meant it with everyone, and watched it land somewhere she plainly hadn't braced for.
+
+He walked back out into the rain a free man in a way that had nothing to do with Halcyon, carrying the particular, unhurried satisfaction of a threat that had turned out to be paperwork. The Threshold closed behind him without a sound. He didn't look back at it. There was nothing on the other side of that door that was his to carry.
+
 [Beat 39]
 *Thirty-nine days later.*
 
@@ -1202,7 +1228,7 @@ He ate three bites of the cold noodles because the man across from him had final
 The panel needed nine more days. Nine days later, Halcyon's legal division filed a motion to dismiss.
 
 [Beat 40]
-The motion ran forty-one pages. Bear read it on a cracked public terminal in the Gray Zone transit hub because Ledger had sent it through the routing with a single annotation: *Declan.* That was all. No analysis, no commentary — just the name, which was the analysis. Forty-one pages and a man who used first names, which meant Halcyon had decided the hearing was a cost they could manage if they managed it early enough and quietly enough and with enough warmth.
+The motion ran forty-one pages. Bear read it on a cracked public terminal in the Gray Zone transit hub because Ledger — a name Bear kept for information that moved sideways through the gray zone, not up — had sent it through the routing with a single annotation: *Declan.* That was all. No analysis, no commentary — just the name, which was the analysis. Forty-one pages and a man who used first names, which meant Halcyon had decided the hearing was a cost they could manage if they managed it early enough and quietly enough and with enough warmth.
 
 *They killed the man who knew the compound. Now they're burying the room that named it.*
 
@@ -1213,4 +1239,77 @@ The ward Hana had visited was still in Ward 7. He knew that because Ledger's rou
 *She built for two years and they're going to bury it in a filing.*
 
 He closed the terminal. The transit hub moved around him — the particular shuffle of a crowd that had nowhere urgent to be and no way to get there faster. He thought about Declan Iyengar, who would express concern, who would use Hana's first name, who would explain that the IRB process had integrity concerns the motion was designed to protect. He thought about the forty-one pages and the forty-three people. He thought about a woman who had sent a timestamp and then walked away from the door. He wasn't going to make her look back. That part held. But the door was still unlocked, and he was still standing in front of it, and the motion had a response deadline of fourteen days.
+
+[Beat 41]
+He didn't have a lawyer, and fourteen days wasn't enough time to become the kind of man who needed one. He'd settled that eight years ago on a Tuesday, walking out a gate while a guard looked at the middle distance, and nothing about a forty-one-page motion filed by a man in a good suit changed the shape of that now. The pages argued standing, jurisdiction, harm in a form the charter would recognize — words for people who got to sit inside a room. Bear had never once been let into that room, and he'd stopped waiting for an invitation somewhere around Cortland.
+
+So he didn't answer the motion. He answered the thing underneath it.
+
+Forty-three residents, the manifest said, being moved from the Cortland site to a compound whose address resolved to nowhere Arcturus bothered to patrol. He read that sentence three times the way he'd once read a yellow flag on a briefing slide — a small square of color at the corner of something bigger, easy to move past, built to be moved past. Something in his jaw set on the third read — molars easing together, the body doing what it did with a thing the hands couldn't reach yet, and he let them stay. He knew what happened to people who got relocated to an address that didn't exist. He had spent eight years and sixteen monthly transfers finding out.
+
+He sent one line through the routing to Ledger. *Whatever Hana filed under PE-1139 — put the transfer manifest next to it. Same exhibit. Same case number. Before the fourteen days run out.*
+
+He didn't ask whether it could be done. He'd learned a long time ago that the people who could actually do a thing never wanted to be asked whether they could; they wanted to be told what the thing was for, and then left alone to do it. Ledger came back within the hour, four words, the kind of economy he'd have respected in a soldier. *Already on its way.*
+
+That was the whole of what he could do, and he did it without ceremony, sitting on the edge of a bunk that was a size too small for him in a hostel that would be a different hostel by the end of the week. He didn't watch to see if it worked. Watching would have been for him, a way of standing over the thing to feel useful, and the thing didn't need him standing over it. It needed to exist somewhere Halcyon's own records office couldn't reach in and quietly unwrite it. Once Hana's exhibit had it, that was done. He let it be done and turned his attention to the twenty- first — no, not the twenty-first this month. He was moving that up too, for a reason he'd let himself sit with when the time came.
+
+The fourteen days passed the way institutional days always passed, at the speed of nothing happening until everything happened at once. On the thirteenth, the IRB panel granted Halcyon's motion. Standing, insufficient. Jurisdiction, contested and unresolved. CE-0217, closed, non-actionable — the phrase Halcyon Legal had been building toward since before Bear ever sat down in a submission room, delivered at last in the flat institutional serif that made everything from a death benefit to a war crime read like a parking notice.
+
+He felt the closure land the way he felt most institutional decisions: with no surprise in it at all. The machine had done what the machine did with a thing it couldn't hold — it had reached for the form that made the problem into a category, and filed the category, and moved on to the next one. He'd known that shape since a Cortland tent at 0700, watching a colonel choose *enemy combatants* over three truer, harder words. Nothing here was new. He hadn't expected the record to save him. He had never once built anything on the hope that it would.
+
+What he'd built it on was smaller and did not require Halcyon's cooperation. The manifest — the forty-three residents, the unaddressed compound, the whole quiet machinery of a second erasure running on the same rails as the first — sat now inside the same public exhibit Hana Morimoto had already broadcast to four strangers behind a partition and, through them, to a civic feed anybody in the megalopolis could pull. Closed and non-actionable meant Halcyon owed nothing to anyone in a court. It didn't mean the fact had stopped existing. A closed case was still a filed one, and a filed one could be found, the way he had found a fiscal quarter's worth of deferred maintenance in a corrugated wall. Somebody would find this too, someday, the way Hana had found him. He was laying the ledger down for whoever came looking next. That was the only kind of justice the institution had ever left on the table for him to take, and he took it, the way he took everything that was actually his: quietly, completely, without expecting to be thanked.
+
+[Beat 42]
+The order came down two days after CE-0217 closed. Routine closeout, the tasking read — confirm last known residence vacated, no further action required, file and archive. It went to the same two-person element that had spent nineteen days watching a man buy noodles and pay his sixteen on the twenty-first, because closeout work always went to whoever's case it had been, and because nobody senior enough to say no wanted their name on a folder that had cost this much and produced this little.
+
+The lead was a woman named Priya Achterberg, six years with Halcyon Civil Security, and she had not enjoyed the nineteen days even slightly. Watching a man be exactly who he appeared to be for nineteen consecutive days did something to a person's certainty about their own job. She'd told her partner, once, over cold coffee on day eleven, that she'd started to feel like the surveillance was the thing being tested and not the target. He'd laughed. She hadn't been joking.
+
+The building's super let them in without asking for paperwork he had every right to ask for. The room was small and gray-zone cheap, and it had been cleaned the way a hotel room gets cleaned by someone who used to live rough and never lost the habit of leaving a space better than he found it — swept, aired, the cot stripped down to the frame. No note. No message scrawled anywhere for anyone. Priya had half expected one, the way people who watch a man for nineteen days start expecting him to eventually address them directly, and the absence of it told her something she filed away without examining too closely: he hadn't been leaving this for Halcyon. Halcyon was just going to be the one who happened to walk in.
+
+The service locker was built into the wall by the window, the kind of shallow utility panel every unit in a building this old had, meant for a fuse box or a water shutoff and mostly used for whatever a tenant didn't want in plain sight. It wasn't locked. It didn't need to be; nobody checked a fuse panel for anything but fuses.
+
+Priya opened it.
+
+There was one object inside. A medal, or what had been a medal before someone stripped the ribbon mount and left just the disc and the pin — Meridian Cross, First Class, she recognized the shape of it from a dozen personnel files even before she turned it over and found the engraving worn soft with handling. It sat face-down. Not dropped. Placed, the way you place a thing you've decided is finished with you and want found in a particular order — the blank steel back first, the citation last, so that whoever opened this locker had one full second to wonder what they were holding before the decoration told them.
+
+She stood there longer than the task required, the locker door open in her hand, and didn't say anything for a while. Her partner didn't ask her to. There was a way a man left a room that told you whether he'd been taken from it or had simply finished with it, and this was the second kind, and something about the second kind was harder to file a report on than the first.
+
+"He didn't run," she said finally, mostly to herself.
+
+"No," her partner agreed. "He left."
+
+She closed the locker, photographed it for the record, and wrote the closeout the way the tasking required: *residence vacated, no further action required.* She did not write down what it had felt like to stand in a clean room holding a stranger's decoration face-down in her palm, because there was no field on the form for that, and she had learned, watching him for nineteen days, that the form never had a field for the part that mattered.
+
+[Beat 43]
+He ran the sixteen transfers on the nineteenth.
+
+Not the twenty-first — he'd broken that pattern two months back, the same week the last of the Halcyon surveillance logs would have aged out of anyone's active retention, and he'd kept breaking it since, on principle, the way you keep exercising a joint after the cast comes off even when it doesn't hurt anymore. The twenty-first had belonged to a man who needed watchers to find a rhythm and trust it. He didn't have watchers now. He still had the obligation, and the obligation didn't care what day he paid it, only that he did, so he'd started paying it two days early, on the nineteenth, for no reason except that it was his to decide and for eight years it hadn't been.
+
+He did them the slow way, same as always. Sixteen names, sixteen routing strings, sixteen confirmations, a faint cool tick behind his sternum where the neuretics logged each one and let it go. Account eleven cleared with its forty percent already peeled off toward the bursary, the way it had for years now, a stranger's decision running quietly alongside his own. He paused there the length of a breath, same as always, and then let the last confirmation resolve.
+
+CE-0217 had closed six weeks ago. Non-actionable, the record said, in the same flat serif that had once told him a petition had been filed against him, that had once told a whole tent of soldiers a building held forty-three enemy combatants instead of forty-three people with a laundry line. He'd read the closure once, standing at a public terminal, and felt nothing that surprised him. The institution had done exactly what it always did with a thing it couldn't hold: made it a category and set it aside. It had never once, in eight years, done anything else. He hadn't built the last two months on the hope that it would.
+
+What he'd built the last two months on was smaller. Ledger had confirmed, four days after the motion was granted, that the transfer manifest sat next to Hana's exhibit now, permanent, public, findable by anyone who went looking the way she'd gone looking. *For what it's worth,* the message had ended, *that's the third person this week who's gone out of their way to tell me you did right by this.* He hadn't asked who. It didn't change the ledger either way. But he'd let the warmth of it sit in his chest for a while before he set it down, because a man could let himself have that much without it costing anyone else anything.
+
+He put a hand flat against his sternum, the way he always did now, first thing after the transfers cleared. There was no cycle to feel. No low banked warmth, no accumulator answering his palm — just frame, titanium and graphene and the honest cold of hardware at rest, the place that used to be a second pulse gone as quiet and permanent as a held breath finally let go all the way. He'd stopped waiting for it to come back months ago. What was left where the warmth had been wasn't grief, exactly. It was more like the shape a missing tooth leaves — you found it with your tongue less often as the months went by, and when you did find it, it didn't hurt, it just told you something true about what you used to carry and didn't anymore.
+
+He caught the 0500 transit out to Ironbend, same platform, same cold, and came up onto the dock at the hour that belonged to the people who maintained it and not the people who used it. The gantry cranes were still down for the night shift. A turret cat — a different one, smaller, gray instead of the old dock cat's black-and-white — sat up on the same high shelf of pallets and gave him exactly the amount of attention he'd earned, which was none.
+
+At 0600 he picked up the dock's own line — the one the Arrangement used for shift calls and lost manifests and the odd message somebody needed carried without it touching a network — and got the same unhurried dispatcher who'd told him, weeks ago, to come in person and ask for the Arrangement.
+
+"It's Boris," he said. "I've got something for the board. Not a job."
+
+A pause, not hesitation. "Go ahead."
+
+He read the sixteen names. Slowly, the way he'd have wanted someone to read his own, if it had ever come to that — full names, no titles, no case number attached to any of them, nothing a court had ever had a form for. He didn't explain what they were. He didn't need to. A dock that ran on sixteen years of workers looking out for each other's kids and each other's rent didn't need the context; it only needed the names.
+
+"Got it," she said, when he finished. And then, after a beat that told him she'd actually listened and not just logged it: "That's a lot of names for one man to carry."
+
+"It was never mine to carry alone," Bear said. "It just took me a while to find the right place to set it down."
+
+She read the last one back to him — just the one, the way you confirm receipt of the thing that mattered most in a list — and behind her voice he could hear the dock waking up around the line: a crane groaning to life somewhere, two men trading a laugh over something that had nothing to do with him, the ordinary unbothered noise of a hundred people starting a Tuesday who owed him nothing and had just, without knowing it, taken sixteen names into their morning and made room.
+
+The city didn't know what it had just answered. It answered anyway.
+
+Bear closed the line, put his hand flat on his chest one more time — no warmth, no cycle, just the frame, steady under his palm — and went to find the crane operator who still owed him a nod for the last shift they'd shared. There was a soup he'd been meaning to make. He had the whole rest of the morning, and nowhere he had to be, and sixteen accounts that would clear again in a month, and that was enough. He had decided, a long time ago, exactly what he owed. He had never once, in eight years, missed a payment. He didn't intend to start now that no one was watching to see if he would.
 

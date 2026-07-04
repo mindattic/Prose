@@ -1,0 +1,74 @@
+## Beat 22 — The Second Wall
+
+- **Action:** REWRITE (Structural Requirement 1 — the central fix)
+- **Target Beat Id:** `019F11D2-0805-7F2E-99CD-FB513ABF04C0` (#4903)
+- **BeatTitle:** The Second Wall
+- **Synopsis:** Stave cracks the outer partition and finds a second, older layer underneath. As
+  delivered, Stave told Ohara on the page: *"Someone built this inside you before you locked it.
+  They were using your partition structure as a container for something they needed to move,"* and
+  *"you were used as a vessel for something you didn't know was there... information about what was
+  done to your body."* That is the exact third-party/body-as-container reveal Lock #1 forbids
+  ("the reveal is not Axiom, not PEREGRINE, not a third party. She did it"), and the audit is right
+  that it's a loaded gun the story never fires again — #4841 simply reveals the manifest one beat
+  later as if this material never happened. Rewritten so the inner layer is legibly **Ohara's own
+  hand, from earlier** — built roughly six months before she sealed the outer partition (i.e., in
+  the gap between the Old Harbor barge and the day she walled it off, per the corrected dating in
+  Beat 05) — rather than a mysterious external "someone." The horror stays (this is still a stranger
+  reading something Ohara buried from herself), but the horror is now entirely internal to her,
+  which is the story's actual engine per bible §8 ("whether you trust the version of yourself that
+  did the hiding"). Absolute in-world years (2213/2222) removed in favor of the relative dating
+  already established elsewhere in the strand, avoiding a second numbers-inconsistency. No changes
+  to staging, blocking, Scout's signal exchange, or the Vox/PEREGRINE-coverage warning.
+- **Proposed SortKey:** 575 (unchanged)
+
+---
+
+Stave worked without narrating the work, and this was, Rook had come to understand, a form of courtesy. When the thing you were doing could be narrated, the narration was part of the professional register — it kept the patient from imagining the wrong version of what was happening. When the thing you were doing couldn't be narrated without the narration becoming a distraction from the thing, you withheld it. Stave had made this decision somewhere in the first ninety seconds and hadn't revisited it. The room had the quality of a room where a decision of exactly that kind had been made and accepted.
+
+Rook knew this through the wall. She had been in the hall long enough to know the sound profile of what was happening on the other side, the way you knew a room's activity by its sound signature — the low-frequency carrier of the rig's operation, the absence of movement from Ohara's direction (she was being very still; she was good at it), the occasional adjustment from Stave that registered as a shift in the electrical reading Vox was running.
+
+"Wall's open," Vox said. She hadn't opened her eyes. "I can feel the delta on the channel side. Something in there just changed signal state."
+
+"That would be the partition," Rook said.
+
+"I know that." A pause. "The signal's older than I expected. I've been running GLMZ channels for six years and I've never heard that particular frequency combination. It's not current-gen hardware. It's not the generation before that either." She was very still against the wall. "Whatever Stave's reading in there, it was built before I started."
+
+Rook kept her back against the wall and looked at the corridor, which was the view from the threshold: the stairwell junction at the far end, the compromised timber in the floor boards running west, the one window on the north wall that had been painted over and was holding the paint through inertia and the cold. Scout was at the stairwell junction. Not visible — Scout was at a junction the way shadow was in a corner, present without presenting — but there, sending the smallest possible signal on the channel every four minutes, which was the signal that meant the stairwell was clear and she had counted the minutes herself.
+
+The rig's carrier dropped a register.
+
+"Stave's through the first wall," Vox said.
+
+Rook hadn't been told there was a first wall and a second wall. She had been told there was a partition. The distinction mattered in the way that most distinctions Stave made mattered — not for drama, because Stave didn't work in drama, but because the thing was accurately described as two walls and the word partition was the general-use form that collapsed two things into one for the convenience of people who didn't need to know they were different.
+
+She looked at the door.
+
+Inside, Stave spoke for the first time since the procedure began. Rook heard it through the wall at the register of a voice being careful not to startle someone, the register of a person in a room with a patient who needed to hold still and who had been holding still for thirty-seven minutes. "The outer wall is resolved. I'm reading the secondary now." A pause, longer than calibration pauses usually were. "It's not standard-issue anything. It's built off the Atlas stack, but it's not Atlas — somebody stripped the commercial layer down to bare protocol and built past it by hand. I've seen work like this exactly once before, and it was mine."
+
+Ohara's voice, very quiet, very controlled. "How old?"
+
+"The wrapper's timestamp matches your seal, eighteen months back. That's consistent. That's you, doing what you told us you did." A pause in which Rook could hear the rig's carrier adjusting. "The framework underneath carries an internal build mark six months older than that. It predates the wall it's hiding inside." Stave let the rig's carrier settle before they said the rest of it. "This wasn't built by anyone else, Dr. Ohara. I checked for that first, because it's the answer that would let you off easiest, and it isn't the one I'm reading. This is your hand. Six months before you built the wall I just came through. You made a second thing, quieter, and then you buried it under a first one later, because by the time you built the outer wall, one layer had stopped feeling like enough."
+
+The hall was very quiet. The building did its quiet work of holding the sounds it was asked to hold.
+
+"Can you read it?" Ohara said.
+
+"Yes." Stave's voice wasn't inflected but wasn't flat either — it was the voice of a person who had discovered a thing they had spent two years preparing for was larger than they'd been preparing for, and who had chosen precision over any other response. "But I want you to understand what I'm reading before I tell you what it says. This is going to arrive in your head sounding like something that happened *to* you. It didn't. You did it — earlier than you let yourself remember, for a reason I don't have yet and you might not either. I need you holding onto whose hand this is while I read it, because it would be easier, for about the length of one sentence, to believe it was someone else's." A pause. "I want you to choose whether to know it."
+
+A silence that lasted long enough to have a temperature.
+
+"I choose," Ohara said.
+
+Rook put her hand flat against the wall between her and the room. Not a gesture toward anything. Just contact — the palm against the surface, the surface against the studs, the studs against the room. The closest she was permitted to be.
+
+"Then I'll read it," Stave said. "Hold still."
+
+Vox pulled her knees up against her chest without opening her eyes. "The channel's about to get very different," she said. "Whatever's in that partition, when it comes out, the signal environment in this building is going to change in a way that PEREGRINE can monitor. I've been holding their blind side for two hours. That coverage just got harder." She pressed her back harder against the wall, anchoring. "I need you to know that when I tell you we need to move, I mean immediately."
+
+"I know," Rook said. She looked at the stairwell junction. "Scout."
+
+Scout materialized from the shadow at the junction with the silence of someone who had been completely still and was now choosing not to be. She looked at Rook. Rook held up two fingers, which was the signal for two-minute window. Scout looked at the stairwell, then at the painted window on the north wall, then back at Rook, and held up three. She had information about the approach vector that Rook didn't. Rook changed her signal to three.
+
+Inside the room, the rig's carrier dropped again — lower, almost subsonic, the frequency a person felt in the sternum before they heard it as sound. Rook felt it through the wall. She counted the seconds the way she counted everything: one at a time, without an anchor except the count itself.
+
+From inside the room, Stave said nothing more. But the rig held its note. And Ohara held still.

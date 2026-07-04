@@ -4,8 +4,8 @@ project: StreetSamurai
 code: SPRW
 layer: strand-bible
 universe: glmz
-status: complete (standalone two-minds novelette; SS-A7 realized; reviewed 87.0)
-updated: 2026-06-23
+status: complete (standalone two-minds novelette; SS-A7 realized; reviewed 95.0)
+updated: 2026-07-03
 ---
 
 # STRAND BIBLE — Sparrow (SPRW) {#SS-SPRW}
@@ -144,9 +144,9 @@ The Zone 4 recognition is the secret second reason he takes the case. He already
 
 **Siosaia Tuivaga:** Elias's colleague. Processed the 2202 event. Gave him the number hoping
 he'd look where she didn't.
-**Tadesse Bekele-Sørensen:** Ethiopian-Danish facility caretaker. 20 years under the contract. His
-"it doesn't estimate" / "I think it measured everything it could reach… I can't say whether that is
-the same as noticing" lines are LOCKED.
+**Tadesse Bekele-Sørensen:** Ethiopian-Danish facility caretaker. 22 years under the contract
+(beat 4113: "Twenty-two. The contract renewed automatically."). His line "I think it measured
+everything it could reach… I can't say whether that is the same as noticing" is LOCKED.
 **Makena Varga:** Diver. Objects ascended — she knows the geometry is wrong.
 **Leandro Bautista:** Manifest clerk. Uses "them" for Sparrow (crew-theory voice).
 **Druh Prykhodko:** The large quiet man. "The number works."
@@ -183,10 +183,16 @@ the ascending objects / archive wire into the main GLMZ arc; left open here.)
 1. **"I wrote the third one."** Beat 6. LOCKED.
 2. **Notepad, not pill, gets him through the tunnel.** Beat 14. LOCKED.
 3. **Sparrow credits him for the thing he didn't do** (not examining it). Beat 8. LOCKED.
-4. **Tadesse's "it doesn't estimate."** LOCKED.
+4. **Tadesse's assessment of Sparrow's attention** (beat 4113, LOCKED): *"I think it measured
+   everything it could reach... I can't say whether that is the same as noticing."* (Supersedes
+   the earlier draft phrasing "it doesn't estimate," which is not present in the realized text.)
 5. **Open line, no voice** — the first contact attempt (end of the journey movement) connects to
    held static and then nothing. LOCKED.
-6. **"The third is the most complete explanation. That is what worries him about it."** LOCKED.
+6. RETIRED BY REVISION (2026-07-03). The original quote ("The third is the most complete
+   explanation. That is what worries him about it.") appears nowhere in the realized 58-beat
+   text — the line was cut, not mis-cited. Its function is carried by beat 4098's closing
+   line: *"A system. Running since 2189,"* written "in smaller letters, the way he writes the
+   things he is least willing to be wrong about." Cite that line if a locked quote is needed.
 7. **Transit beats average 77–79%.** Mathematical floor of the form. LOCKED.
 8. **Sparrow's blind spots are structural, not plot conveniences** — each gap has a consistent
    physical explanation (orbital geometry, no acoustic, 4-meter floor, 12-meter subsurface, weather).
@@ -194,8 +200,14 @@ the ascending objects / archive wire into the main GLMZ arc; left open here.)
 9. **`RATE: OPEN`** — the ending register. The one unbounded value an agent who narrows every
    interval cannot bring herself to close. She leaves it to the one human who could name a number.
    He does not name it. LOCKED.
-10. **The story ends on the balcony, no broadcast, no thriller turn.** He keeps the comm in his hand,
-    stands in the cold air, does not name the number, keeps his count. LOCKED.
+10. **The story ends at his desk, not the balcony** (revised 2026-07-03 — see beat 4232, "The
+    Window"; supersedes the earlier balcony-ending draft this rule originally described). He
+    types the number — 400, his standing rate — into the RATE field, holds his finger over
+    submit for the length of one ventilation cycle, then clears it and leaves `RATE: OPEN`
+    standing. No broadcast, no thriller turn: the refusal to name the number is the same
+    restraint the balcony scene once carried, relocated from watching the sky to the work
+    itself. He keeps the field coat on and opens the first of the six coordinates to begin
+    fieldwork. LOCKED.
 
 ## 6. Beat spine — the realized structure (55 beats) {#SS-SPRW-6}
 
@@ -224,8 +236,9 @@ of the Attendance incident she never had the *inside* of; *I do not know* vs. *m
 that*; **Delta-actual** (prediction error gets a name); *Seen* (he finds his own heat-signature in
 her mass layer); the elephant parable returned as a bandwidth problem; the record **"for whoever
 comes after"** and her first unqualified **yes**; **the eleven days**; the **`RATE: OPEN`** work
-order; *Downstairs* (he walks three blocks, eats eggs, uses the front door for the first time); **The
-Window** — the balcony, the comm dark, the count kept.
+order; *Downstairs* (he walks six blocks, eats eggs, passes the lobby's terminal doorman); **The
+Window** — back at his desk, the coat still on: he types 400 into the rate field, clears it,
+leaves `RATE: OPEN` standing, and opens the first of six coordinates to start fieldwork.
 
 ## 7. Voice register {#SS-SPRW-7}
 

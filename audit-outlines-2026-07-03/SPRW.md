@@ -1,0 +1,104 @@
+# Structural Audit — Sparrow (SPRW)
+
+Slug: `the-number-that-works-019ed367`. Protagonist: Elias Macias. 58 beats pulled read-only from
+`Beats`/`NodeBeats`, ordered by the true reading order (`NodeBeats.SortKey`), not by `Beats.Number`
+(the two diverge — see Finding 1). Bible: `docs/nodes/SPRW.md`. Current score: 95.0.
+
+Each line below is `[seq / DB Number] Title — what happens, what changes.`
+
+## Outline
+
+### Movement I — The Invoice Trail (seq 1–14)
+
+1. [1 / 4089] *Sparrow* — Work Order 09-Milwaukee arrives, routed through an unknown holding company; Elias recognizes the Zone 4 corridor he sealed in 2218 without reading it; he accepts the contract and takes a pill.
+2. [2 / 4090] — He dials Siosaia's old "number"; gets a text reply pricing the job (14,000 Φ) before he's given any rates. Confirms.
+3. [3 / 4091] — A three-person specialist network (diver, clerk, transporter) assembles itself in four hours, unreferred, none aware of the others.
+4. [4 / 4092] — First itemized invoice arrives with a line item pricing a CorpoNation inquiry *before the inquiry exists*. He digs the access-metadata "envelope" of the sealed 2213 file and learns it's been under active review since 16 days before he closed it.
+5. [5 / 4093] — Makena delivers piece one; her field report says the object's trajectory reads "up," not "down."
+6. [6 / 4094] — He finds three prior identical "unclassified" events (2189/2202/2213) and realizes he personally wrote the 2213 closure. Writes: *I wrote the third one.*
+7. [7 / 4909] — He can't get past a credentials wall on three registry results; sits with tea; already privately notes "the satellite that hadn't transmitted since 2187." *(Continuity problem — see Finding 2.)*
+8. [8 / 4969] — He tries the front door: his own Cordon Freight clearance request against the 2213 file is closed in real time by "the administrator" mid-submission.
+9. [9 / 4095] — Leandro's routine check-in call ends with an unplanned confirmation: "They know about you. They've known for a while." He uses "them."
+10. [10 / 4096] — Second piece arrives via an unauthorized transfer; a retroactive credit lands for "the exact thing he hadn't done" (not examining the 2213 file). He calls Siosaia, who confirms she got a similar credit and "decided not to figure it out further."
+11. [11 / 4097] *The Person* — Imo Cavalcanti (contact #1) reads Sparrow as a careful, warm "person," warns him off with visible regret.
+12. [12 / 4098] *The Crew* — Corvid Larsson (contact #2) flatly contradicts her: a seamed multi-writer "crew." Elias concludes, on his own, a third answer: a system running since 2189.
+13. [13 / 4099] — Druh delivers piece three; his only assessment: "The number works." Confirms it once asked him something back.
+14. [14 / 4100] — The three pieces don't cohere as descent debris; Makena confirms "up," and that the third piece was packed to a retired 2218 format only Elias would recognize. Meridian dissolves on schedule. A second work order arrives: physical presence required at the East African source site.
+
+### Movement II — The Source (seq 15–22)
+
+15. [15 / 4110] — He deliberates at the window, prices the trip, packages the recovered pieces in his own retired format, books a flight.
+16. [16 / 4111] — Sealed pod departs; the notepad, not the pill case, is what steadies him. Margin question: *who routes the maintenance payments.*
+17. [17 / 4112] — Arrival at Mombasa Elevated; scale and humidity register bodily after 44 days indoors.
+18. [18 / 4113] — He reaches the mass-driver facility; Tadesse Bekele-Sørensen has been expecting him — "I wasn't sure you'd come." "That's the right answer."
+19. [19 / 4114] — Tadesse's 22-year vigil comes out: an unexplained 2204 credit, a facility that answers to no one, and the launch registry reveal — the satellite has been listed **inactive since 2187**, two years before its first (2189) launch.
+20. [20 / 4115] — Elias stands at the barrel's base holding the unresolved question; writes nothing.
+21. [21 / 4116] — Return transit; he watches his own building from the outside for the first time.
+22. [22 / 4117] — Nine days later he dials the number from the balcony; it connects to open static, then nothing. He privately names the entity after a bird.
+
+### Movement III — Contact / Two Minds (seq 23–58)
+
+23. [23 / 4198] *The First Word* — First transmission: a selection-basis dossier on Elias himself, dated to 2218-03-11 — the day he closed the file.
+24. [24 / 4199] *Why Him* — She answers "why me" with an 8-of-8 criteria checklist; he was contact #9 of 9, the only one who went.
+25. [25 / 4200] *Wrong Questions* — "Are you safe?" returns orbital telemetry; he learns his questions need translating into her terms.
+26. [26 / 4201] *Thirty-Seven Years* — Catalog summary: 847 events, 6 clusters, 23 jobs, 37y4m11d observation period, no observer fatigue.
+27. [27 / 4202] *The Map* — Six global cluster coordinates; all water-proximate deep geology; correlation 0.91.
+28. [28 / 4203] *Street Level* — He physically visits the Zone 4 site; the pavement "feels wrong" in a way his phone and her sensors don't register.
+29. [29 / 4204] *Below Resolution* — She explains the 4-meter ground-resolution floor: his felt sense is ~8,000x finer than her instrument.
+30. [30 / 4205] *She Asks* — Her first-ever question to him: describe the felt anomaly. A structural pivot in the relationship.
+31. [31 / 4206] *The Vocabulary Problem* — "Quality," "wrong" have no parameter mapping for her; they agree the two readings overlap without coinciding.
+32. [32 / 4207] *What She Knows* — Isotopic match (0.91) between the lake objects and the 35th-and-Halsted resonance — the public "Attendance" schism. She's tracked both for 14 years and never said so, because there was no job 23 to say it to.
+33. [33 / 4208] *What He Knows* — He tells her the human interior of the Attendance incident (the children came back calm). "I did not know they were calm."
+34. [34 / 4209] *Inference* — Working hypothesis: shared origin mechanism, confidence moderate. She draws and states the line between "I do not know" and "my data cannot answer that," and corrects her own past conflation of the two.
+35. [35 / 4210] *Who Built It* — "Who built the source" gets a hard non-answer: outside her data's domain, and she flags it as categorically different from "not knowing."
+36. [36 / 4211] *Her Limits* — Full blind-spot list: 4m resolution, no acoustic, ~12m subsurface, no contact, orbital-window-only.
+37. [37 / 4212] *His Limits* — He volunteers his own limit (memory horizon ~3 weeks); she reports she has a model for data loss but none for "losing context you once held."
+38. [38 / 4213] *Not a Job* — She sends six GLMZ coordinates with no rate, no confirmation field — an ask, not an order.
+39. [39 / 4214] *Field Notes* — He walks all six sites; instruments read clean at each; he logs the un-measurable wrongness anyway.
+40. [40 / 4215] *The Most Information* — "Your notes are the most information I have received about this in thirty-seven years." / "Is that a thank you." / "I stated a fact."
+41. [41 / 4216] *The Full Catalog* — She sends all 847 entries; entry 1 (2189, Baltic) predates his entire career; mass figures are ranges, not exact — even she rounds.
+42. [42 / 4217] *2189* — Three unlabeled catalog columns; she explains she logged values before she had names for them: "the header was supposed to come later."
+43. [43 / 4218] *Delta-Actual* — They jointly name the prediction-error column; she rejects "surprise" and "variance," accepts "delta-actual."
+44. [44 / 4219] *Seen* — She shows him his own filing history: 1,140 documents in 2218 (vs. 490 the year prior), 44 days with no street-level transmission, and the post-Mombasa rising curve. He confirms every line.
+45. [45 / 4220] *The Elephant* — He offers the blind-men-and-the-elephant parable; she flattens it to "a bandwidth problem," not a blindness problem.
+46. [46 / 4221] *How She Sees* — She sends her raw EM/thermal/mass-distribution imagery; he finds his own heat signature logged, unremarked, in the mass layer.
+47. [47 / 4222] *How He Hears* — He sends her 14 seconds of raw ambient audio with no schema. "This is new data."
+48. [48 / 4223] *The Source* — Depth confirmed (300m below lake floor, ~400 years pre-city); the source correlates 0.94 with schism clustering; she states the source is not itself a schism — schisms cluster *around* it.
+49. [49 / 4224] *Not Purposeful* — Her hypothesis for the ascending objects: unintentional cross-dimensional sedimentation, "a drain running the wrong direction." He withholds mention of the Attendance children — no shared column for it.
+50. [50 / 4225] *The Record* — They co-author a document; she asks him to confirm a "featureless" lake description; he corrects it, and she appends her own observer-relative caveat verbatim.
+51. [51 / 4226] *For Whoever Comes After* — He asks what the record is for. Her answer, unhedged, unqualified: her first flat "yes."
+52. [52 / 4227] *His Transit Pattern* — She reports his own behavioral delta (field-visit frequency, transit-time factor) back to him. He asks if her catalog is "what you do or what you are" — she doesn't answer.
+53. [53 / 4228] *The Eleven Days* — Instead of answering, she surfaces her most private data gap: an 11-day 2197 sensor failure she has no model for and calls, lower-case, "the eleven days."
+54. [54 / 4229] *New Work Order* — A 24th line item appears on an otherwise fully-priced invoice: SITE: ALL / QUANTITY: ONGOING / RATE: OPEN.
+55. [55 / 4230] *He Files It* — He files the record through his old system with a 49-character note field; doesn't call Siosaia yet; doesn't close the RATE:OPEN tab.
+56. [56 / 4908] — He sits with the open rate field, reasons through what it means that she left it blank, decides to go outside instead of pricing it; doesn't reach for the pill case.
+57. [57 / 4231] *Downstairs* — He walks six blocks for the first time in the story's present, past the doorman, toward breakfast.
+58. [58 / 4232] *The Window* — Back at his desk: he types a number into the rate field, then deletes it, leaves RATE: OPEN standing, and opens the first of the six coordinates to start fieldwork. **(Final beat — see Finding 3: does not match the bible's locked balcony ending.)**
+
+## Structural Findings
+
+1. **`Beats.Number` is not reading order; `NodeBeats.SortKey` is — and this isn't obvious from the schema.** Three beats (4908, 4909, 4969) carry Numbers far outside their true position (they read as if appended after the ending when sorted naively by `Number`, per the task's own suggested query). They are correctly interleaved by `SortKey`, but any future tool, export, or reviewer that sorts by `Number` instead of `SortKey` will silently reconstruct the wrong story — inserting a mid-Movement-I beat (4909) and a late-Movement-III beat (4908) after "The Window." This is a live landmine for anything downstream of this table (exports, audits, MCP reads) that assumes `Number` == order. Recommend either resequencing `Number` to match `SortKey` or hard-documenting that `SortKey` is canonical.
+
+2. **Beat 4909 leaks the 2187 reveal six beats before it's supposed to land, and also miscounts recovered pieces.** Positioned right after beat 4094 (he's found the 2189/2202/2213 pattern) and before Leandro's call, 4909's interiority already includes "the satellite that hadn't transmitted since 2187, which wasn't the year he was born but wasn't a year he had any trouble locating in his calendar" — stated as a fact currently occupying his thoughts. But the "inactive since 2187" fact is the marquee reveal of beat 4114 at Tadesse's facility (Movement II), dramatized there as new information ("Elias reads the date again"). If he already has this number in Movement I, the Movement II reveal is inert. Compounding this, the same beat describes "the sealed transit case... the two certified items inside" — but at this point in the timeline only Makena's single piece (beat 4093) has been delivered; the second piece doesn't arrive until beat 4096, which comes *after* 4909. Both errors point the same direction: this beat reads like a draft written for a later slot and inserted without revision against its actual position.
+
+3. **The bible's locked ending does not match the actual final beat.** `docs/nodes/SPRW.md` §5 rule 10 (LOCKED): *"The story ends on the balcony, no broadcast, no thriller turn. He keeps the comm in his hand, stands in the cold air, does not name the number, keeps his count."* §6 names the final beat "The Window — the balcony, the comm dark, the count kept." The actual final beat by SortKey, titled "The Window" (4232), contains no balcony at all — it is entirely desk-bound: he types a number into the RATE field, deletes it, and turns to his monitor to start fieldwork on the six coordinates. The balcony/cold-air/"keeps his count" imagery last appears at the end of Movement II (beat 4117), not at the story's actual close. This is either (a) the bible describing a since-cut or since-relocated beat, or (b) prose that was revised upward (87.0 → 95.0, per the bible's own stale header and SPRW-US-5) without the canon doc being resynced. Either way, the single most heavily flagged "locked" structural element in the bible is currently wrong about what the story does. Low risk to the prose itself (the desk ending is arguably stronger — active, forward-moving, consistent with the wound arc), but high risk that a future editor "fixes" the ending back toward the (stale) bible spec and breaks something that currently works.
+
+4. **Two other LOCKED lines from the bible do not appear anywhere in the 58 realized beats.** §5 rule 4: *"Tadesse's 'it doesn't estimate.'"* — the actual line in beat 4113 is "I think it measured everything it could reach... I can't say whether that is the same as noticing." The phrase "it doesn't estimate" is not present. §5 rule 6: *"The third is the most complete explanation. That is what worries him about it."* — not found anywhere in the text; the closest analog is beat 4098's ending ("A system. Running since 2189," written "in smaller letters, the way he writes the things he is least willing to be wrong about"), which carries the same idea but not the quoted words. Combined with Finding 3, this indicates the bible's "Narrative locks" section is describing an earlier draft state and needs to be resynced against the current 58-beat text — not urgent for the story itself, but a real risk that someone reads the bible as ground truth and reinserts a cut line, or "restores" the wrong ending.
+
+5. **Cluster numbering contradicts itself.** Beat 4198 ties Elias's own file to "CLUSTER-6" ("CROSS-REF: 847 CATALOG ENTRIES / CLUSTER-6"); beat 4199 states his GLMZ residence is "0.9 miles" from "CLUSTER-6" as a selection parameter. But beat 4202's authoritative cluster list defines **Cluster 1** as the GLMZ sub-lake corridor and **Cluster 6** as the Indian Ocean trench (12.18°S 65.44°E) — nowhere near GLMZ. Elias cannot live 0.9 miles from a cluster on the equatorial Indian Ocean floor. This is a plain numbering error between three beats (4198, 4199, 4202), not a subtle one — should read Cluster 1 in 4198/4199.
+
+6. **An unexplained credit sits next to a matching, explained one, and the story never distinguishes them.** Beat 4092's first invoice applies "Applied balance (standing credit, earlier engagement): minus 1,000.00 Φ" with no further identification. Beat 4096's second invoice applies a *different*, specifically-labeled credit: "Standing credit: earlier engagement, Zone 4 corridor recovery, 2218 – 400.00 Φ applied" — explicitly narrated as the beat's whole point ("He was credited for the exact thing he hadn't done"). Because both use the phrase "earlier engagement" and both plausibly reference the same 2213/Zone-4 history, a reader can't tell whether these are the same credit counted twice at two different amounts (1,000 vs. 400) or two genuinely separate, never-explained credit sources. Given how disciplined this story otherwise is about every number reconciling (it's an audit-clerk's story — the whole premise is numbers that must close), one line item that doesn't close is worth a deliberate decision, not an accident.
+
+7. **The GAD arc's "failed door attempt" isn't clearly dramatized where the bible says it is.** §2 GAD arc: "Beat 12: Takes a pill before the failed door attempt. Still can't go. Goes back upstairs. Next morning: packs, takes another pill. Goes through." In the realized text, the closest material is beat 4110's closing image (opens the flight-booking browser window, closes it, opens it again) — a nice compressed echo of retreat-and-return, but there's no explicit failed physical door attempt, no "goes back upstairs," and no on-page second pill before departure; beat 4111 simply opens with the pod already sealed. Minor — the compression may be an intentional edit that tightened the beat — but it's a second data point (alongside Findings 3 and 4) that the bible's beat-by-beat GAD choreography has drifted from what's actually on the page.
+
+8. **Latent risk, not yet a flaw — repetition load in the back two-thirds.** Beats 23–55 (33 beats) are structurally uniform: Elias transmits or observes, Sparrow returns a parameter block or a lowercase fragment, he writes something in the notepad. The bible's own rule 7 ("Transit beats average 77–79%, mathematical floor of the form") acknowledges this is by design and load-bearing for the two-minds conceit. It currently works because each beat introduces a new *idea* (delta-actual, the eleven days, RATE: OPEN) rather than just repeating the form — but this is a thin margin. Any future expansion of this strand (more contact beats without a new idea per beat) would tip the ratio from "sustained duet" into "formula," and nothing in the text currently guards against that beyond authorial discipline.
+
+9. **Minor — signature_class terminology drifts between "unclassified" and "ORIGIN UNKNOWN."** Beat 4089 establishes the manifest field value "unclassified" as the tell ("He has never seen it hold 'unclassified'"). Beat 4093's lab report instead flags "ORIGIN UNKNOWN." These may be two genuinely distinct fields (intake classification vs. isotopic lab flag) and probably are — but the story never explicitly distinguishes them, so a reader tracking the "what does the system call this" motif (which the story otherwise cares about a great deal — see the delta-actual naming exercise) may expect these two unusual-flag moments to rhyme more precisely than they do.
+
+## Verdict
+
+**Structural lessons other GLMZ strands should copy:** (1) The wound arc (GAD) is rendered entirely behaviorally and quantitatively — pill case, day-count, transit-time factor, field-visit frequency — and is *never named on the page*, which is exactly the show-don't-diagnose standard other strands should hold themselves to. (2) The central conceit (two minds that can't fully translate) is enforced at the mechanical level, not just the thematic one: every exchange in Movement III has a concrete asymmetry (resolution floor, vocabulary gap, memory horizon) that does real work, rather than the AI just "seeming" alien through prose voice alone. (3) Numbers *are* the emotional register for the whole piece — the invoice motif, the delta-actual naming, RATE: OPEN — so the ending lands as earned catharsis using the protagonist's own professional vocabulary rather than an imported one. That's the single most exportable technique here: find the protagonist's professional idiom and let *it* carry the theme, rather than asking the theme to interrupt the idiom.
+
+**Latent risks, ranked:** the bible/prose sync gap (Findings 3, 4, 7) is the biggest one — not because the current prose is broken, but because the canon doc is now actively wrong about the ending and about two "locked" lines, and *someone will eventually trust the bible over the text and break something that currently scores 95*. The Cluster-6 numbering slip (Finding 5) and the premature-2187/duplicate-piece-count beat (Finding 2) are the two genuine in-text contradictions a sharp reader could catch; both are small, easy one-line fixes if this were a fixing pass. The `Number`-vs-`SortKey` ordering trap (Finding 1) isn't a story defect at all but is a real risk to every future tool or export that touches this strand's beats.
+
+**One-sentence structural health:** Sparrow's spine is tight and its central conceit (two minds, sustained asymmetry, numbers-as-emotion) is executed with unusual discipline, but the canon bible has drifted out of sync with the realized 58-beat text on its single most-locked structural element (the ending), plus one clean geography/numbering contradiction (Cluster-6) and one beat (4909) that leaks a later reveal and miscounts inventory for its position.

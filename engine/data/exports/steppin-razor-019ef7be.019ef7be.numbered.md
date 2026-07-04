@@ -148,7 +148,7 @@ She said nothing to it. It seemed to consider this adequate.
 Beecher was behind her. The farm road went south. She walked south with the dog at her heel and the new debt in the ledger and the Kankakee debt in the same ledger and the knowledge that the available territory was shrinking from the north faster than she was moving south.
 
 [Beat 4]
-The road south ran flat through harvested fields, the stalks cut to ankle height and the soil the dark gray-brown of something that had been rained on and not yet dried. The Pulse freight corridor ran parallel about four hundred meters west — she could hear it, or feel it more accurately, the low-frequency vibration the maglev rails put into the ground with every load moving north toward the city. The hum of it wasn't the hum she carried in her back teeth, the one that had no external source, the one that had been there since the Sigma installation when she was seventeen. That hum was internal and constant. The freight hum came and went in waves and was, by comparison, a comfort.
+The road south ran flat through harvested fields, the stalks cut to ankle height and the soil the dark gray-brown of something that had been rained on and not yet dried. The Pulse freight corridor ran parallel about four hundred meters west — she could hear it, or feel it more accurately, the low-frequency vibration the maglev rails put into the ground with every load moving north toward the city. The hum of it wasn't the hum she carried in her back teeth, the one that had no external source, the one that had been there since she was small. That hum was internal and constant. The freight hum came and went in waves and was, by comparison, a comfort.
 
 *The Beecher fixer had a phone. He ran before he used it, but he had it.*
 
@@ -408,24 +408,11 @@ She found the bunkhouse on the second attempt; the first location had been conve
 
 The woman looked at the Φ on the counter — she had set it there before the woman finished her sentence — and the woman's objection completed its arc and became a key sliding across a scratched laminate surface, and Sasha picked up the key and went to find the room, and the dog followed, and the hum was inaudible here, buried under diesel and argument and the sound of the city doing its small, contracting business, and she did not know whether that was a relief or a warning and she did not, for now, need to decide.
 
-[Beat 11]
-The camel was a problem in the same way that the stripped track bed was a problem — not in its existence, which was a fact, but in its presence at this specific location, which required explanation. The Corridor ran northeast. Camels were a Corridor animal, pack-transit for the Gray Zone operators who moved bulk cargo between GLMZ and Crosspoint without paying the Corridor Authority's automated toll. A camel at the dead end of a stripped freight line in Joliet was two hundred kilometers off its natural route. The man on it was wearing a duster that had been expensive once and had been repaired with materials that were available rather than materials that were appropriate, which was consistent with Joliet.
-
-She watched from the doorway of the freight inspection office with her right hand at her hip and the dog sitting at her left heel, not growling, which was information.
-
-*The dog had growled at the hunter in Kankakee before she had.*
-
-The man brought the camel to a stop on the gravel where the track bed ended, which was also where the road ended, which was where everything ended. He looked at the end of the track bed for a moment, then looked at her. He had the kind of face that had been doing this for long enough that it had stopped looking like doing anything. He reached into the duster and produced nothing threatening, which she registered without relaxing.
-
-"End of the Line," he said, looking at the sign over the bar.
-
-"Yes," she said.
+She lay back on the bunkhouse cot with her boots still on and ran the list one more time, the way she always did before sleep took whatever it was going to take. Kankakee, closed. Beecher, closed. Wilmington, closed. Braidwood, closed and paying for a hunter's silence. The order's price still climbing somewhere north of her, patient and funded and gray-zone all the way down — money moving hand to hand outside any ledger, hunters bought on reputation and a folding table's word. That was what had let it reach as far as it had: it never had to answer to anyone. It also meant it stopped exactly where that kind of money stopped being useful. North of Joliet the freight interchange ran a Consensus credential check for anyone continuing into the city proper — a checkpoint that took a registered identity, not a rumor and a price. She had neither. The order's hunters didn't either, which meant that for the first time in three years the thing chasing her and the thing she was walking toward wanted two different kinds of proof of who she was, and neither of them had it. It wasn't safety. It was just the first fence in three years built out of something other than money. She let that be enough to sleep on.
 
 ## Steppin Razor
 
-[Beat 12]
-The man on the camel turned out to be named Devereux, and he was heading to the End of the Line because there was nowhere else to go, which he said without apparent irony, and she did not offer any, and they went in together because the door was the door and there was only one of it.
-
+[Beat 11]
 The Hereafter occupied the same building as the End of the Line, which was the same building as everything else this far southwest — a corrugated shell that had been a freight sorting office and was now a bar because the freight had stopped and the drinking had not. Generator-lit, low-ceilinged, smelling of burned fat and the sweet-rot of spilled liquor that had dried and been spilled over again. The screen above the bottles was playing something from the previous century: a man in a white coat showing a studio audience how to break down a whole chicken, his hands moving with the ease of someone who had done this ten thousand times and had stopped noticing that he was doing it. The audience applauded when he separated the thigh joint cleanly. Out here it passed for a window.
 
 She took a stool at the bar, two removed from a man who was already there, who looked at her the way certain men looked at her — not with hostility, which she knew how to read, but with the calculation of a man who had decided that her being small meant she was available to be made smaller. The dog sat at her feet. The man smiled. She gave him a flat look that was not a smile and was not an invitation and was in fact a statement of terms, and he gave her back a second smile, broader, the kind that said *I've decided that was flirting.* She ordered a drink. The bartender set it in front of her.
@@ -434,7 +421,7 @@ She took a stool at the bar, two removed from a man who was already there, who l
 
 The man two stools down reached over and tapped the bar beside her glass — not touching it, not touching her, staying precisely inside the territory of a gesture that could be called friendly — and said something about buying the next one. She picked up the bottle the bartender had left on the rail. Not threatening. Just picking it up. Holding it the way she held things, which was with all of her hand and with the weight distributed for use rather than for resting. The man looked at the bottle. The man looked at her hand. He put his own hand back in his lap, and she set the bottle down, and the chicken on the screen received another round of applause because the man in the white coat had done something perfect with a cleaver, and the quiet that followed was the only kind she ever got: bought, and already ending.
 
-[Beat 13]
+[Beat 12]
 Outside was Joliet, which the city kept the way a man keeps a tooth he means to pull. The towers were sixty miles northeast, a low smear of light on the sky like a sunrise that had gotten stuck and given up. Out here the freight rails ran flat and dead in both directions, rust the color of dried blood, and nobody rode them anymore because nobody came this far on purpose.
 
 She had walked toward the quiet for three weeks. The trouble was the quiet kept thinning out ahead of her, always one town further, and the only direction it hadn't thinned was northeast, toward the light, toward the exact place the hum had always been loudest. She had been too tired to notice the contradiction until tonight: she was hunting silence by walking away from the towers, and the towers were where the silence ran out. She turned that over and put it down. She walked the rail bed north because north was the only direction with a light at the end of it, and because behind her the man was still screaming and she had nowhere in particular to be.
@@ -453,7 +440,7 @@ The hum, which had been quiet all the way out here, was not quiet now. It had co
 
 On the far rail, a gray cat sat with its paws folded under its chest and watched her. Not the camel. Her.
 
-[Beat 14]
+[Beat 13]
 The man on the camel spoke without preamble, the way a fact speaks.
 
 "We have been watching your progress."
@@ -464,7 +451,7 @@ The man on the camel spoke without preamble, the way a fact speaks.
 
 She pulled Problem Solver off her right hip and held it at her side, muzzle down, not aimed at anything, because you didn't aim at a phone call. She aimed at things she could hurt. The man on the camel registered the gun the way a window registers weather.
 
-*Sigma gave her a lot of things. It didn't give her a word for this.*
+*Nobody had taught her a word for this. Out on the road you learned what worked and named it after, if you bothered naming it at all.*
 
 "The camel," she said, because she needed to establish something factual, even if the fact was embarrassing. "It's yours."
 
@@ -482,14 +469,14 @@ The camel put its head down and breathed at her — a long, warm gust from somew
 
 She holstered Problem Solver.
 
-[Beat 15]
+[Beat 14]
 The man on the camel said, "Someone should have closed you."
 
 Not a question. Not a threat. Just the fact of it, delivered the way you'd note a door left open on a cold night.
 
 The breath she didn't take was the tell — that half-second where her chest didn't move and her hand didn't move and the rail bed didn't move and the hum leaned in through the gap like it had been waiting for exactly this width of silence. She felt it arrive. Not through her ears. Through the place behind her sternum where the mesh sat flush against bone, the place that registered wrongness as pressure before the mind had words for it. Something had been inside that held breath with her. She understood that about a half-second too late.
 
-*The mesh had been running open since Ferreira. She'd been managing it. She'd been managing it fine.*
+*The mesh had been running open a long time. She'd been managing it. She'd been managing it fine.*
 
 "Don't," she said.
 
@@ -497,7 +484,7 @@ The breath she didn't take was the tell — that half-second where her chest did
 
 She got the door closed. Whatever door that was — she couldn't have named the mechanism, only the feeling of it: a hand pulling a handle until the latch caught, the small percussion of something sealed. The hum was still there, still present, still leaning, but on the other side of glass now. She breathed out. Her hand was on Problem Solver and she didn't remember putting it there, which meant the body had decided something the mind was still catching up to, and the body was usually right about these things, and the body was also the problem, because the body was the open window.
 
-[Beat 16]
+[Beat 15]
 The man on the camel let her breathe. Then:
 
 "You make a hole in a thing," he said, "and the thing is on both sides of the hole. They dig toward us. We arrive toward them."
@@ -516,11 +503,11 @@ She pulled that apart and put it back together. Something else was out here runn
 
 The man on the camel said nothing. The camel turned its head northeast with the unhurried conviction of an animal that has crossed deserts by instinct and does not require a map.
 
-*She had spent eleven years making sure she was never in the same room as a Sigma installation. The towers were full of them.*
+*She had spent her whole life making sure she was never in a room with a corpo credential reader in it. The towers were nothing but rooms like that, stacked to the sky.*
 
 She started walking.
 
-[Beat 17]
+[Beat 16]
 The man on the camel fell in beside her without being invited, which was consistent with everything else he'd done. The camel's footfalls were wrong for gravel — too quiet, each step landing with a patience that belonged to sand — and she didn't look at its feet because she had already decided she wasn't going to look at its feet. The hum walked with her too, steady now, not leaning, just present the way a frequency is present: not a sound so much as a fact about the air.
 
 "The Arrangement," she said, because it was the only frame she had. "That's what they're calling it out here. Someone brokering something between—" She stopped. She didn't finish it because she didn't know how to finish it without sounding like she'd lost her operational footing, and she had not lost her operational footing.
@@ -531,20 +518,20 @@ The man on the camel fell in beside her without being invited, which was consist
 
 She walked. Gravel shifted under her boots. The light-smear of the towers didn't get closer the way real light got closer — it stayed at the same apparent distance for too many steps, the way a destination stays distant when you're not sure you should arrive. The gray cat had followed them off the rail; she caught it at the edge of her vision, three meters off her left shoulder, moving when she moved, stopping when she stopped, not pretending otherwise. She had stopped finding that strange approximately four minutes ago, which worried her more than the cat did.
 
-Her neuretics were running warm. Not hot — she knew hot, she'd managed hot for a year and a half on a pharmaceutical regimen that cost her most of what she cleared on Ferreira — but warm in the way that meant they were processing something she hadn't asked them to, reaching toward something that was reaching back, and the door she'd latched was holding but it was a latched door and not a wall.
+Her neuretics were running warm. Not hot — she knew hot, she'd run hot before, for the better part of a year, and the only thing that had ever brought it down was distance and a fight loud enough to drown it out, which had cost her more than money ever had — but warm in the way that meant they were processing something she hadn't asked them to, reaching toward something that was reaching back, and the door she'd latched was holding but it was a latched door and not a wall.
 
-[Beat 18]
-The Glooms station was the first Meridian 88 infrastructure Sasha had touched in ten years — the Glooms being the city's lowest working tier, below the credential line, where the towers were already close enough to feel through the floor but the Consensus hadn't yet bothered to verify whether you had a face to put to a name. It smelled like burnt ceramic and the metallic cold of recycled air that had passed through too many filters. The platform was a long concrete shelf under a low vault, walls tiled in the gray-green that someone had decided in 2190 meant transit. A woman sat on a bench beside the pigeons she was feeding, one hand extended flat, the birds climbing her fingers with the indifferent intimacy of animals that had lost all useful fear. The birds were real. Sasha checked twice.
+[Beat 17]
+The Glooms station was the first Meridian 88 infrastructure Sasha had touched in ten years - the Glooms being the city's lowest working tier, below the credential line, where the towers were already close enough to feel through the floor but the Consensus hadn't yet bothered to verify whether you had a face to put to a name. It smelled like burnt ceramic and the metallic cold of recycled air that had passed through too many filters. The platform was a long concrete shelf under a low vault, walls tiled in the gray-green that someone had decided in 2190 meant transit. A woman sat on a bench beside the pigeons she was feeding, one hand extended flat, the birds climbing her fingers with the indifferent intimacy of animals that had lost all useful fear. The birds were real. Sasha checked twice.
 
 *The towers are larger from inside them.*
 
-The busker was against the far pillar — seven strings, shamisen body, something wrong with the tuning that he was either ignoring or had decided was correct, playing a phrase that climbed and didn't resolve. The dog sat down when the sound hit. Sasha kept moving. A corpo tourist in a jacket with the Ferrogate logo on the chest stepped directly into her path and asked her, in the register of someone who believed questions came with answers, whether she could direct him to the Meridian Civic Heritage Plaza. She did not know where the Meridian Civic Heritage Plaza was. She told him this. He looked at her coat and the dog and appeared to recalculate whether she was a viable information source. He moved on.
+The busker was against the far pillar - seven strings, shamisen body, something wrong with the tuning that he was either ignoring or had decided was correct, playing a phrase that climbed and didn't resolve. The dog sat down when the sound hit. Sasha kept moving. A corpo tourist in a jacket with the Ferrogate logo on the chest stepped directly into her path and asked her, in the register of someone who believed questions came with answers, whether she could direct him to the Meridian Civic Heritage Plaza. She did not know where the Meridian Civic Heritage Plaza was. She told him this. He looked at her coat and the dog and appeared to recalculate whether she was a viable information source. He moved on.
 
-The hum was different here. Not louder — denser, the way a crowd is different from a person, the same component frequencies but more of them and closer together and arriving from more directions at once. On the rail bed outside Joliet it had been a single direction, northeast, clean as a compass point. Here it was a field. She was inside it. The pull in her chest had not stopped being directional — it was still northeast, still patient, still the same quality it had been since she was nine and standing at a window she was not supposed to be standing at — but now it had competition, the city's own hum pressing in from the walls and the vault and the floor tiles and the woman's pigeons and the unresolved seventh the busker refused to close.
+The hum was different here. Not louder - denser, the way a crowd is different from a person, the same component frequencies but more of them and closer together and arriving from more directions at once. On the rail bed outside Joliet it had been a single direction, northeast, clean as a compass point. Here it was a field. She was inside it. The pull in her chest had not stopped being directional - it was still northeast, still patient, still the same quality it had been since she was nine and standing at a window she was not supposed to be standing at - but now it had competition, the city's own hum pressing in from the walls and the vault and the floor tiles and the woman's pigeons and the unresolved seventh the busker refused to close.
 
-She found the exit marked GLOOMS SURFACE and went toward it. The dog's nails on the tile. The shamisen climbing its phrase again, still not landing. Behind her the corpo tourist was asking the pigeon woman the same question he had asked Sasha, and the pigeon woman was not answering because she was watching her birds, which was a reasonable priority.
+She found the exit marked GLOOMS SURFACE and went toward it. Before the stairs, she paused. The block where the station sat had been catalogued in the fifteen seconds she'd spent at the platform edge: two rings, both old, both sealed. 35th and Halsted rang louder — the cracked-bell tone of a closed schism, the geometry of a thing that had taken what it needed and sealed behind itself. Not drawing. Whatever had been open at that intersection was done. She filed it as dead. The dog's nails on the tile. The shamisen climbing its phrase again, still not landing. Behind her the corpo tourist was asking the pigeon woman the same question he had asked Sasha, and the pigeon woman was not answering because she was watching her birds, which was a reasonable priority.
 
-[Beat 19]
+[Beat 18]
 The checkpoint was a folding table and a man behind it who had decided the folding table was a wall. Dawit knew her by the walk before he knew her by the face - she watched him decide it, the small recalibration in his shoulders, the way a perimeter man re-files a body the second it stops reading as threat and starts reading as known. He'd run this stretch three years. She'd passed through twice before, the kind of twice that leaves a residue.
 
 "You're early," he said. Covering the gap - he'd expected her eventually and was pretending he'd expected her now.
@@ -573,36 +560,25 @@ He did. Tired eyes, and under the tired a thin ugly hope he'd clearly meant to k
 
 She was already three steps gone, the slate dark in her coat, the bird on her shoulder, the cat at her heel. Dawit glanced at the cat once and filed it without a question, the way gray-zone perimeter men filed the things that came attached to people like her. Behind her his sentence still hung in the ozone air with nobody to take it, lighter for being said. She carried it out the way she carried the data: not knowing what it was for, only that it was load-bearing, and that she had just, without meaning to, agreed to carry it.
 
-[Beat 20]
-The surface exit opened on a corridor that smelled like wet concrete and something older underneath it, and then the Glooms opened in full and Sasha stopped moving for two seconds before she remembered not to. The sky above was the Glooms sky — not absent, technically, but filtered through the tier-stack's underside until it was a gray suggestion of itself, the atmospheric processors having long ago redirected anything useful northeast toward the Spires. What light existed was neon, pooled in the wet, and the rain was coming down in the sideways manner of rain that had been aimed. The dog pressed its flank against her left leg and stayed there.
+[Beat 19]
+The surface exit opened on a corridor that smelled like wet concrete and something older underneath it, and then the Glooms opened in full and Sasha stopped moving for two seconds before she remembered not to. The sky above was the Glooms sky — not absent, technically, but filtered through the tier-stack's underside until it was a gray suggestion of itself, the atmospheric processors having long ago redirected anything useful northeast toward the Spires. What light existed was neon, pooled in the wet, and the rain was coming down in the sideways manner of rain that had been aimed. The cat pressed its flank against her left leg and stayed there.
 
-*The shape matches. The numbers match. The pull has been true for twenty-three years and she has never once gone where it pointed.*
+*The shape of it matches. The pull has been true since she was small, and she has never once gone where it pointed.*
 
 She moved. The Glooms perimeter was a grid of converted logistics bays and checkpoint kiosks and the kind of small commerce that needed no tier credential — food stalls, cable-run repair shops, a TESSERA Docent standing unattended outside a shuttered relay office — TESSERA being the Consensus civic net, the identity system that logged registered faces and verified addresses; this one had nothing left to log, its display cycling a redirect loop for a service that no longer existed at this address. A man with both arms subdermal-sleeved in chrome that had gone to a color chrome shouldn't go stood in a doorway watching the rain with the stillness of someone whose neuretics had given him a more interesting view than the street. He did not look at her. The cat moved ahead and then waited at the next corner, and she followed it because that was what she had been doing for three days and it had not been wrong yet.
 
 The pull sharpened. Not louder — the density of it changed, the same way Dawit's data field had changed from scatter to arc, from weather to intention. Her back teeth ached before she consciously registered the shape of what was ahead: the street bent northeast, and the street was correct. The Docent's redirect loop cycled again behind her. The chrome-armed man had not moved. The rain came down in the rain's political direction, and she kept walking into it, the slate heavy against her ribs, the pull patient and old and no longer alone.
 
-[Beat 21]
-The northeast bend opened into a logistics court that had been repurposed badly and not recently — cargo stanchions still anchored in the concrete, the hooks still there, the chains gone, the space between them now occupied by a market that had no interest in being found by anyone with a tier credential. She smelled it before she saw it: fat rendering, solder, the particular chemical sweetness of nanite bath solution sold in unlabeled canisters at a markup that assumed desperation. The cat stopped at the court's edge and sat down. Stopped moving entirely, which it had not done in three days.
-
-Her neck registered it first — the hair there, which she had never been precious about and which had no opinions — standing. The pull was not a pull anymore. The pull had arrived.
-
-*She should not be able to feel it at this range. She should not be able to feel it at any range. The mesh was ten years in and the ferromagnetic drift was managed, was managed, was pharmaceutical and controlled and Dr. Ferreira had said —*
-
-A stall vendor two rows in had stopped looking at his wares and was looking at her. Not at her coat, not at the bird, not at the chrome-adjacent thing people clocked when they clocked Sasha Võ in a market — at her. The specific point of her. His hands were flat on the table and his shoulders were doing the same thing Dawit's shoulders had done when he'd re-filed her, except reversed: not from threat to known, but from unknown to something he had been waiting to see. The dog pressed harder against her left leg. The vendor did not move. In the stall behind him, a second person had gone very still.
-
-She counted exits without moving her eyes. Three. The cat had not moved.
-
-[Beat 22]
+[Beat 20]
 The bridge was a service span between two transit arteries, the kind you crossed without naming, and she stopped at the middle of it because her feet stopped, which was different from deciding.
 
 Below, the Exchange district ran its lights up the faces of the towers in a code that meant money to the people who'd written it and nothing to her. The lake wind came up the channel, cold off the water - weather instead of climate control, the lake refusing to be managed. The one thing in this city that didn't perform.
 
 She set both hands on the rail and waited for what her body already knew.
 
-A dead well rings backward — 19 Hz, a flat doubled note, the sound of a thing that has stopped reaching and gone hollow. She had catalogued a thousand of them — each one a breach site, a hole pushed through the membrane from this side to whatever the far side was, the place the man on the camel came from, abandoned and gone cold. This didn't sit behind her. It had a face turned toward her, a direction, a held breath not yet let go, and it came off the northeast and pulled at her the way a current pulls at legs that have waded out too far, the ground already gone from under the feet.
+A dead well rings backward - 19 Hz, a flat doubled note, the sound of a thing that has stopped reaching and gone hollow. She had catalogued a thousand of them - each one a breach site, a hole pushed through the membrane from this side to whatever the far side was, the place the man on the camel came from, abandoned and gone cold. This didn't sit behind her. It had a face turned toward her, a direction, a held breath not yet let go, and it came off the northeast and pulled at her the way a current pulls at legs that have waded out too far, the ground already gone from under the feet.
 
-*Not dead.* She let her body answer instead of describing it. The pull moved through her chest and settled to a point - northeast, into the perimeter, nowhere near anything Consensus had logged. Close. Closer than it had any business being. When she reached past the surface read, the depth came back *alive*: directional, awake, sitting inside the wall instead of out past it where the dead things were supposed to scatter and rot.
+*Not dead.* The geometry of it was layered — interference patterns stacked over one another, each slightly offset, each breathing, the kind of structure that only makes sense if there are multiple sources at different depths. She let her body answer instead of describing it. The pull moved through her chest and settled to a point - northeast, into the perimeter, nowhere near anything Consensus had logged. Close. Closer than it had any business being. When she reached past the surface read, the depth came back *alive*: directional, awake, sitting inside the wall instead of out past it where the dead things were supposed to scatter and rot.
 
 Her stomach turned over without asking her. A clean involuntary lurch, the body's verdict arriving ahead of the mind's: *that should not be here.* She gripped the rail until it passed. A live well, inside the densest part of the city, where the only safe assumption was that no one was looking.
 
@@ -612,18 +588,7 @@ The pigeon had gone, sometime in the last block. The cat hadn't. It sat at the n
 
 She lifted her hands off the rail. Her feet were already turned. She walked toward the live thing because stopping had never once made the quiet last, and because a man at a folding table had spent three weeks of silence to put this in her hands, and a debt she hadn't asked for was still a debt.
 
-[Beat 23]
-The well was not in the market. The market was the approach. She understood this only when she had walked through it — vendor eyes tracking her in the same reversed way, the same waiting-to-see — and come out the far side into a narrower service lane where the stanchion hooks continued and the overhead tarp had been replaced with corrugated panel and the panel was new. Someone had put up new construction in the Glooms perimeter in the last sixty days and the only reason to do that quietly was to put something inside it that the existing walls couldn't hold.
-
-The cat stopped at a door.
-
-Not a market door — a transit authority access hatch, gray-green steel, the kind rated for flood barrier duty on the lower logistics level, repurposed up here where it made no structural sense. The seal around the frame had been redone in pneumatic foam, still pale at the edges where it hadn't cured to the surrounding concrete's color. Someone had wanted it airtight. The hum came through the door at 19 Hz and then at something above it, a second layer she felt in her jaw before she heard it, and it was not the hollow doubled note of a dead well — it was the sound of something very large and very awake breathing in a space too small for it. Her neuretics registered the field and threw a number she had not seen outside a lab.
-
-*Ferreira said drift was managed. Ferreira said ten years was early. Ferreira did not say anything about what happens when the thing on the other side is stronger than the pharmaceutical ceiling.*
-
-The door had no handle on the outside. Someone had removed it — recently, the ghost of the mount still bright in the paint. She pressed her palm flat to the steel and the hum moved up her arm to her shoulder and into her back teeth and her vision went white at the edges for one flat second, the mesh spiking hard against its own regulators, and when her vision cleared the cat was gone and behind her the service lane was full of people who had not been there when she walked through the market. Four of them. Standing at the lane's entrance in the stillness of people who had been told to wait and were done waiting. The vendor with the flat hands. Three others she hadn't clocked. The one in front had his arms crossed and his chin down and he was looking at her the way you look at something you have been sent to collect.
-
-[Beat 24]
+[Beat 21]
 The node was a maintenance junction box bolted to the underside of the bridge's eastern footing, the kind of housing that held nothing anyone wanted to steal, which was exactly why someone had used it. She found it the way she'd found the live well - feet first, the pull narrowing from a direction into a doorway into a hand-width of green-corroded steel with a service hatch that opened to a thumb on a panel that had no business reading her thumb. It read it. The hatch sighed.
 
 Inside, where there should have been a relay, there was a slate the size of a playing card, screen-down, waiting. The dust around it was disturbed in a clean arc: someone had set it here and then made themselves not touch it again. She picked it up. It was warm. It had been listening - it knew when a sensor-class body crossed the span and woke.
@@ -640,7 +605,7 @@ A stranger had decided her life was worth burning tradecraft on, and had told he
 
 She closed the slate and put it in her coat next to Dawit's. The pull still sat nineteen degrees off the channel, patient as it had always been. She turned northeast into the lake wind and walked toward the drill, with a perimeter man's three-week silence in one pocket and a stranger's risk in the other, and the cold understanding, new and unwelcome, that two people who had never seen her face had both decided she was worth something - one at fifty thousand alive, one at the cost of a dead-drop and the word *run.* The two prices were the same fact read from opposite sides of the same hole.
 
-[Beat 25]
+[Beat 22]
 She made them while they were still well back - two, moving in the offset stride people learned in rooms where the instructor had never had to do it for real, one trailing low and left, one wide right to close the angle if she broke. Those strides had cost money. They hadn't cost enough. She let her own pace stay the pace of a person who hadn't noticed, and she chose the corridor before they did: a service slot off the transit underbelly, mouth no wider than a coffin stood on end, the kind of dark that ate sightlines and made a long gun furniture.
 
 She stepped sideways into the slot and turned and stood with her hands open and low and visible, which was the courtesy. Daylight at the slot's mouth cut them into two black shapes. She gave them the half-second. She always gave it. It told her what they'd decided before they got here.
@@ -653,11 +618,13 @@ The right one came in fast and committed and wrong, leading with the reach the s
 
 *Halcyon Combine, Strategic Resources - asset recovery.*
 
+Under the seal, in print small enough to read like an afterthought, sat a chartered officer of record — one name, no title a person would use. OBERON. A machine's name where a signature belonged. She filed it without comment and kept moving.
+
 *Recovery.* You didn't recover a person. You recovered a thing that had walked off the inventory. That was what she was to them - a sensor-class body loose in the network, no registration, no legal address, wandering the Exchange corridor feeling drills that weren't supposed to exist. The stranger in the junction box had priced her in tradecraft and the word *run.* Halcyon priced her at fifty thousand, alive only. She pocketed the credential next to two slates, straightened against the new ache, and breathed shallow around it because the deep breath had teeth now.
 
 The cat was at the slot's mouth, sitting where she'd have seen it if she'd looked, which she had not. It made no judgment about the folded shape in the corridor. Neither did she. She thought about the one who'd walked back into the light - just once, just the half-step of a man choosing his own body over a line on a contract. It was the only clean thing that had happened in the corridor, and it had happened because she'd given him the door and he'd been smart enough to take it. She let the slot close behind her and stepped back into the channel wind with one fewer shadow and the northeast pull exactly where she'd left it.
 
-[Beat 26]
+[Beat 23]
 The drill site was a maintenance access point sunk into the channel's northeast wall, the kind of infrastructure that existed on four different maps under four different designations and matched none of them. The depth was right. The vector was right. Nineteen degrees off the channel run, a coffin-lid of recessed concrete with a pull on it like a hand on her sternum, steady and specific and completely indifferent to what it was costing her to stand here breathing shallow around a rib that had opinions.
 
 *Dawit said run. The stranger said run. She was standing at the hole.*
@@ -668,7 +635,7 @@ She stood with it for a moment — the credential in her pocket, the ache on her
 
 She pressed her thumb to the recess panel — the same read as the hatch on the bridge, the same patient architecture built for the kind of body that stopped because it felt something — and the coffin lid gave, and the pull came up through the concrete and through the soles of her boots and into the ache in her ribs like a frequency finding its matching string, and she went down into it.
 
-[Beat 27]
+[Beat 24]
 The corridor climbed before it descended — a structural quirk of the Exchange district's layered construction, where the grade-level street sat on top of two generations of older street, and the pedestrian infrastructure had been retrofitted to bridge them. The elevated walkway was twenty floors up by the time she cleared the second lift bank, and the crowd was the kind of crowd the Exchange generated at this hour: six thousand people moving in the coordinated way of people who had somewhere to be and a neuretics-optimized route telling them exactly how to get there. She was the only person on the walkway not moving. She was the only person on the walkway who had stopped.
 
 The camel was there.
@@ -683,7 +650,68 @@ Less than a kilometer.
 
 The camel exhaled — a warm pressure against her shoulder, animal and immediate, the most biological thing that had happened to her in the inner ring — and she did not step back. She stood in it. The crowd moved around them both.
 
-[Beat 28]
+[Beat 25]
+The draw took her down.
+
+She found the maintenance stair behind a panel marked UTILITY ACCESS — NO ACTIVE CREDENTIAL REQUIRED, which meant either that someone had forgotten to lock it or that someone who understood infrastructure had decided the lock wasn't worth the cost. Two flights straight down, then a turn, then more. The city's noise fell off above her. The air changed — cooler, heavier, the particular smell of concrete that had not seen daylight in decades and had gotten comfortable with that.
+
+At the third level down, she stopped.
+
+Fungus. Growing on the floor in careful rows, dark and low, tended — the kind of thing cultivated across a long span of time, not an accident. The maintenance access ended at a wall. The wall had a seam in it that was not an industrial seam. She put her hand flat against it and felt for a draft. The draft came: not from a gap, from the wall itself, which moved slightly against her palm in a rhythm that wasn't mechanical. A door, balanced perfectly. Decades of use.
+
+She did not touch the handle.
+
+After a moment, the door opened.
+
+He came up to her chin and he stood in the doorway without touching either side of it and looked at her the way you look at an animal that has come close enough to study. Reading her, not threatening. His eyes were large. The dark had made them that. He smelled of stone and fungus and something metabolic she had no word for.
+
+He did not speak. He looked at her, at the direction she'd come from, at the direction she was pointed.
+
+Then: "Northeast."
+
+"Yes," she said.
+
+"The Warm is wrong," he said. He looked at the ceiling above him — eight levels of city above them — the way a person looks at weather. "The hum moves wrong. Six weeks. Something is pulling at it."
+
+The draw sat in her chest, northeast, the direction it had been since the camel's exhalation on the walkway above. She had been following it through ten million people on instruments that existed nowhere outside her own skull. He had been living with the same signal for six weeks and reading it with his nose.
+
+"I know," she said.
+
+He considered this. Then he moved past her and down, and she followed, because he was going the direction she was going, and she had already crossed half this city behind a man on a camel. Following a boy through the underground of the most surveilled city on the continent was, statistically, an improvement.
+
+*The universe was still doing its thing.*
+
+He moved the way people move who learned to move in the dark: every step already decided before the foot fell, economical, precise, reading the tunnel by air-change and drift. She matched him by sound and by the shift in the passage's quality when it turned. The fungus farms gave way to open water — not much of it, perhaps eight meters across, black and still, with a far bank visible as a low concrete ledge. The water smelled of the deep city.
+
+A shape came off the far bank.
+
+Flat-bottomed boat. An android at the stern with a single oar and eyes that had not worked in the way human eyes worked in some time. It rowed toward them without hurrying and stopped with the bow against her feet.
+
+She looked at the boy.
+
+"Pay it," he said. "A thing you have freely."
+
+She reached into her coat and found, by feel, a transit receipt from a Joliet freight line, three months old and completely useless. She had kept it for no reason. She put it in the android's open hand.
+
+The android took it. Did not look at it. It rowed.
+
+She sat in the stern. The boy sat at the bow. The android pulled them across the black water in absolute silence. She looked at the ceiling — the floor of the city far above — and let the draw sit in her chest and thought about nothing she could afford to think about.
+
+The far bank arrived.
+
+"There." He pointed northeast, into a passage that existed on four maps under four different names and matched none of them. "It smells like burning."
+
+"Yes," she said.
+
+"Don't break it," he said. Not a request — the statement of someone naming a fact about a system he lived inside. "The machines that breathe down here. They are not yours to break."
+
+She looked at him. "I'm trying to stop the drilling."
+
+He held her gaze with those large dark-adapted eyes, reading her the way a draft reads a door. Then he stepped back onto the boat, and the android took him back across the water without being asked.
+
+She turned northeast.
+
+[Beat 26]
 The eastern colonnade wore its lie well. From the channel side it read as a Consensus monitoring array - the gray ribbed housings, the slow blink of frequency counters at eye level, the placard with the merged-minds glyph that told a passing thumb *nothing here you can open.* She walked its length with her hands in her coat and let her body do the only honest accounting in the corridor. The housings hummed at the pitch maintenance hardware was supposed to hum at. Behind them, through three meters of old stone and newer ferrocrete, the floor dropped away into something that wasn't monitoring anything. *Monitors listen.* This pulled.
 
 She filed it the same way she filed a frame's pull-weight: data the body kept before the mind named it, no different in kind from knowing a suppressed barrel by the pressure before the report.
@@ -700,7 +728,7 @@ The cat pressed its jaw against her left boot. The first time it had touched her
 
 She was the only person in the city who knew what she was standing over. Ten thousand people on the floor above her didn't know, and wouldn't, unless the only sensor in range decided to do something with what the staircase had just told her.
 
-[Beat 29]
+[Beat 27]
 She was the only body in the city that could feel the third well work, which meant the only way to prove it was to put her hand on the thing itself. Not read it from three meters of stone. Touch the line and take the draw at the source, where the number couldn't be argued into a cold-read.
 
 The maintenance access was a recessed panel in the housing's flank, credential-locked. She had a credential. She'd taken it off a Halcyon body in a bad-lit corridor two days ago with a bruised rib for the trouble, and it had been sitting in her coat since, waiting for a lock it fit. She fit it now. Pressed the flat of it to the reader. The panel accepted the handshake and started to cycle, the seal breaking with a soft pneumatic exhale, cold air and the deeper hum coming through the widening gap, and she got two fingers into it, reaching for the coupling and the live line behind it, the draw climbing her wrist as the gap opened -
@@ -713,7 +741,7 @@ She folded sideways into the stanchion's shadow, back to cold stone, and made he
 
 She had thirty seconds until it did. The draw still pulled up through her boots, unbothered, indifferent to what she had and hadn't managed to touch. She spent the thirty seconds on the only thing left in reach: the placards, an arm's length away on the housing's exterior, telling their patient lie to anyone who came the other way.
 
-[Beat 30]
+[Beat 28]
 The colonnade's cover made sense when she read it from the inside.
 
 She had thirty seconds, pressed against the northeast stanchion of the array's housing while Halcyon's perimeter rotation moved through its pattern. Thirty seconds and a body full of data. Three draws staged below her at different depths, patient and enormous, the 72 Hz pushback coming up through the soles of her boots in the frequency she'd spent three years assuming was her own interior noise. The stone was cold against her shoulder. Her breath was slow on purpose.
@@ -736,7 +764,7 @@ Somewhere above, Halcyon's four-person team was finishing its approach on the co
 
 She moved faster.
 
-[Beat 31]
+[Beat 29]
 They came up the maintenance run she'd left open, four abreast where the corridor let them, and she heard the team before the wells told her - boot weight on stone too clean for the gray zone, the soft double-click of weapons coming off safe in sequence, the discipline of people who had practiced this against a Read and expected a Read. Halcyon field gray, no glyphs, the lead one already raising a flat black emitter that would wash the corridor in Signal and Noise: the loud floor and the silent floor, the two pressures meant to fold a practitioner's column in on itself before she could find north. She felt it begin to open, a false 60 and a false dead-zero crowding her under the ribs, and it didn't touch the three real wells or the steady 72, because none of those were hers.
 
 *They brought a counter for a thing I do not do.*
@@ -751,18 +779,18 @@ She thumbed it open against the housing, found the channel still unlocked - whoe
 
 She sent it plain: *three wells, three depths, eastern colonnade, drill nineteen off channel, ten thousand on the floor, far side at 72 and it is not a deposit.* To the one slate that would know what to do with a number she had no register for. Then she pulled the rig and let it go dead in her hand, and stood in the false array with the four of them down and her own blood warming the inside of her coat, and the steady 72 pushed up through her teeth, patient, refusing, unchanged, as if nothing on this side of the stone had happened at all.
 
-[Beat 32]
+[Beat 30]
 She found the maintenance platform by feel, the Z5 exterior access barely wide enough for one person standing sideways, and when the panel swung open the lake came in — not as smell, not as sound, but as pressure, the cold weight of all that water refusing to be anything other than what it was. She pressed her back against the outer wall and let it hold her. Below, the Gray Zone's outward face was dark at this hour, the lit windows sparse and yellow, and beyond the seawall the lake was simply black, no reflection, no neon reaching this far east. It looked the way it had looked before any of this was built. It didn't know about the drills.
 
 *I am the hole. The hole is on both sides.*
 
-She had three wells at depth. She had the logging data with the inversion gradient. She had the 72 Hz pushback, steady as ever through the soles of her boots, the far side doing what the far side did, indifferent to Axiom's cover story and indifferent to hers. She had the Halcyon comms rig, still warm in her left hand, and a signal window she could measure in breaths. What she didn't have was a name she trusted with the weight of it — the cell was scattered, the one slate she'd sent the plain text to was a dead-drop with no confirmation path, and Axiom had just sent four people who'd drilled against the Read to a location that wasn't on any map she'd filed. Someone had the location. Someone had filed it for them. The closed door on that question had no inspection stamp.
+She had three wells at depth. She had the logging data with the inversion gradient. She had the 72 Hz pushback, steady as ever through the soles of her boots, the far side doing what the far side did, indifferent to Halcyon's cover story and indifferent to hers. She had the Halcyon comms rig, still warm in her left hand, and a signal window she could measure in breaths. What she didn't have was a name she trusted with the weight of it — the cell was scattered, the one slate she'd sent the plain text to was a dead-drop with no confirmation path, and Halcyon had just sent four people who'd drilled against the Read to a location that wasn't on any map she'd filed. Someone had the location. Someone had filed it for them. The closed door on that question had no inspection stamp.
 
 She opened the dead-drop channel one more time and pushed the full packet: logging data, gradient inversion, the power coupling stamp with its seventeen-day cycle, the 72 Hz figure and the three depth readings, the colonnade position and the drill pattern and the Halcyon team composition and the counter-emitter frequency, everything she had reconstructed standing inside the cover looking at the thing directly. She sent it without a header. Anyone who could use it would know what it was. Anyone who couldn't wouldn't know what they were holding.
 
 Then she set the comms rig on the platform railing and left it there. Not dropped, not thrown — set down with care, the way you set down something that belongs to someone else. The lake sat past the seawall, indifferent to all of it, and the 72 Hz came up through the stone of the platform and through the soles of her boots and into the cold line above her ribs, patient, unchanged, the far side maintaining its pressure as if the question of who received the information was simply not a question it had been asked. She turned back toward the access panel, her left hand finding the edge of it in the dark, and the wet edge on her exhale was still there, still small, still something she was deciding about.
 
-[Beat 33]
+[Beat 31]
 The transit platform at the Loop's north edge was not a place anyone stayed - it was a place the city moved through, a bottleneck of bodies and noise and the dense heat of ten thousand separate lives compressed by steel and schedule. Võ bought a slug at the kiosk without looking at her balance. The machine read her palm and deducted and she walked through the gate before she could watch the number settle.
 
 *She still has the comms rig's frequency in her head. Someone on the far end of a silence she cannot verify, and she doesn't know if that is better or worse than knowing.*
