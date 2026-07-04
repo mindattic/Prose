@@ -78,32 +78,39 @@ coalition alignments. The Warrior Kings who do remember stay quiet.
 
 ## Scrying
 
-**The central technology of the Cauld.** Looking through the membrane between Spheres —
-seeing what is on the other side and transcribing the knowledge here. A weapon design. A method
-of working metal. A cipher system. The membrane stays intact. Only the knowledge of form
-crosses; the material does not. The design is pressed into local stock and built here. The
-engineers of the source Sphere never know their work was copied.
+**The central technology of the Cauld.** The Scrying apparatus stretches the membrane between
+Spheres — pulls it thin enough to see through. A weapon design on a workbench in another world.
+A method of working metal. A cipher system. The knowledge crosses; the material does not. The
+design is transcribed and built here from local stock. The engineers of the source Sphere never
+know their work was observed.
 
-**What citizens believe:** This is all Scrying is — observation and reproduction. You look
-into another world, you understand what you see, you build it here from local materials. The
-Liturgy is revered specifically because they appear to do this at a level no House apparatus
-can match: they observe the Ceremony's Gifted matter, they observe the Relic designs, and they
-*manifest* what they saw with a precision that reads as divine. That is what the public
-believes. That is the source of the Liturgy's sacred standing — they are the people who can
-bridge the gap between seeing and making.
+The membrane is stretched, not opened. It returns to its resting state when the apparatus
+stops — or appears to. Whether it fully recovers is not a question the Houses have authorized
+anyone to investigate.
+
+**What citizens believe:** This is all Scrying is — observation and reproduction. You stretch
+the membrane, you see, you build it here from local materials. The Liturgy is revered
+specifically because they appear to do this at a level no House apparatus can match: they
+observe the Ceremony's Gifted matter, they observe what becomes the Relics, and they *manifest*
+what they saw with a precision that reads as divine. That is what the public believes.
 
 The reality is that they do not reproduce. They take.
 
-**The physical substrate:** The Scrying apparatus projects a tight-beam infrared signal,
-reflected off the crystal cloud formations that layer the upper atmosphere of the Cauld.
-How this penetrates the boundary between Spheres is not discussed in-world — it simply works,
-the way stone burns and water freezes, and no one lectures about it in the field.
+**The physical substrate:** The apparatus projects a tight-beam infrared signal, reflected off
+the crystal cloud formations that layer the upper atmosphere of the Cauld. The signal finds the
+membrane and stresses it. How this works is not discussed in-world — it simply works, the way
+stone burns and water freezes.
 
 **The membrane.** What operators call the boundary between Spheres. Long-tenure vigil operators
-— the ones stationed at thin-membrane sites for decades — sometimes describe it in private as
-something that breathes. Something that responds to them, not to the apparatus. They say this
-to each other on night watches. They stop saying it when House administration is present. It
-is not in any formal record.
+— stationed at thin-membrane sites for decades — sometimes describe it in private as something
+that breathes. Something that responds to them, not to the apparatus. They say this to each
+other on night watches. They stop saying it when House administration is present. It is not in
+any formal record.
+
+Thin-membrane sites are where the membrane is already thin. Whether they were always thin, or
+whether they were thinned by historical Scrying at the same location, is not recorded. The
+oldest installations — the Corvin Station, the Forge Hearth's original apparatus — have been
+stretching the membrane at the same coordinates for generations.
 
 **The Houses control Scrying.** Control the installation, control what gets manufactured.
 The war is fought over Scrying access as much as territory. A House that loses its Scrying
@@ -130,15 +137,15 @@ materials — only the design crossed. Nothing physical moves in standard Scryin
 
 **A different act. A rarer capability. A harder thing.**
 
-Standard Scrying looks through the membrane. Piercing the membrane reaches through it and
-takes what is on the other side. The gun sitting on the shelf in the armory of another Sphere
-— Scrying lets you see it and copy its design; piercing lets you take it off the shelf and
-bring it through.
+Where Scrying stretches the membrane thin enough to see through, Piercing goes further —
+through it, and takes what is on the other side. The gun sitting on the shelf in the armory
+of another Sphere: Scrying lets you see it and copy its design; Piercing tears through and
+brings it back.
 
-The membrane stays intact during Scrying. Piercing breaches it, briefly, locally, for
-the duration of the extraction. The act is one-way: the object or person arrives in the Cauld;
-nothing crosses back; the breach closes. The origin Sphere has no record of anything happening.
-It has only the absence where the thing was.
+The membrane closes after a Pierce. Or it appears to. The tear seals — the way living tissue
+seals, not the way a wall reseals. What is left at the site of the tear is not recorded
+because no one in the Cauld has a method for examining it from this side. The origin Sphere
+has only the absence where the thing was.
 
 **The Colchester naming convention:** Objects acquired by piercing take the name of where
 they came from. Not catalogued — just called that. The name is what sticks because no one in
@@ -834,8 +841,8 @@ No House owns the Old Rite. This is part of why soldiers practice it.
 
 | Term | Meaning |
 |---|---|
-| **Scrying** | To see — looking through the membrane between Spheres; the membrane stays intact; nothing physical crosses; design is observed and reproduced locally |
-| **Piercing the membrane** | To enter and take — breaching the membrane and removing a physical object or person from another Sphere; the breach closes; the origin Sphere has only the absence |
+| **Scrying** | Stretching the membrane thin enough to see through it; the design is observed and reproduced locally; nothing physical crosses; the membrane appears to recover when the apparatus stops |
+| **Piercing the membrane** | Tearing through the stretched membrane and taking a physical object or person; the tear appears to close; what it leaves behind is not recorded; the origin Sphere has only the absence |
 | **Sphere** | A parallel Earth; a parallel history |
 | **Colchester naming** | Informal naming for objects acquired by piercing: called by origin-Sphere location and date (e.g., *Colchester 1648*); not catalogued — the name is just what it gets called |
 | **Myrmidon** | Professional soldier; House service record |
