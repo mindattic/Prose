@@ -34,8 +34,10 @@ story row belongs to exactly one Universe ([SS-LAW-15](#SS-§5)).
 ## 5. The Laws {#SS-§5}
 
 > **Inherits [MindAttic.HouseRules.md](../../MindAttic.HouseRules.md)** (shared, repo-external).
-> Those house rules apply in full and are not restated here. Project-specific laws follow. The
-> [Amendments log](AMENDMENTS.md) wins over this section when they conflict.
+> Those house rules apply in full and are not restated here. Project-specific laws follow.
+> **`docs/AMENDMENTS.md` is RETIRED (2026-07-04).** All amendments have been merged into this
+> file and the relevant story bibles. Canon changes go directly into this file or the
+> relevant `docs/nodes/<CODE>.md`. There is no amendment layer.
 
 **Engine invariants (do not violate):**
 
@@ -104,6 +106,8 @@ narrative-law block here when stood up:**
 **Fantasy/Steampunk narrative laws (Universe: fantasy-steampunk — validate any Fantasy/Steampunk rewrite against these):**
 
 16. **Action beats carry thematic weight; contemplative beats have physical immediacy.** {#SS-LAW-16} An action beat that doesn't advance or complicate the story's central tension is stage business. A contemplative beat without a grounding sensory or physical anchor is abstraction. Both fail. *(Universal beat doctrine — applies to all universes.)*
+17. **Default QA is a logic sweep, not a vote panel.** {#SS-LAW-17} *(SS-A44.)* The canonical QA methodology for any story that changes or needs validation is a **logic & continuity sweep** across six dimensions: (1) causality chain, (2) knowledge states, (3) timeline, (4) plant/payoff ledger, (5) orphan references, (6) bible agreement. Findings are triaged **BLOCKER / MODERATE / MINOR** and fixed with minimal splices. Review panels and Legion votes are expensive — run ONLY when the user explicitly requests a vote/review/score in that conversation. The engine enforces this (voting gate, default OFF; explicit `--allow-votes` / `allowVotes:true` only). Canonical methodology: `docs/LOGIC.md`.
+18. **Character is defined by response, not circumstance.** {#SS-LAW-18} *(SS-A41.)* A character's wound (backstory circumstance) is the engine of motivation, not the character itself. Character is defined by how a person *responds* to circumstance — what choice they make, what they sacrifice, how they define themselves under pressure. A wound is background; the response to it is foreground and must be *earned* on the page. This applies to every universe: do not write backstory as characterisation; write choice as characterisation.
 
 ## 9. Glossary {#SS-§9}
 
@@ -138,28 +142,5 @@ narrative-law block here when stood up:**
 - done: 125  partial: 8  planned: 25  cut: 1
 
 ## Latest amendment
-## SS-A44 — The Logic Sweep is law; voting off by default {#SS-A44}
 
-**Date:** 2026-07-04. **Origin:** the corpus logic campaign of 2026-07-03/04
-(`audit-outlines-2026-07-03/logic/CORPUS-REPORT.md`), which found and fixed ~25 blocker-level
-logic/continuity defects across all 11 GLMZ stories that months of score panels never localized.
-
-**1. The Logic Sweep ([[LOGIC]], `docs/LOGIC.md`) is the default and MANDATORY quality
-mechanism for all prose.** Whenever a beat is written, rewritten, merged, split, re-ordered, or
-disabled — and before any export — the six-dimension sweep runs: causality chain, knowledge
-states, timeline, plant/payoff ledger (including arithmetic), orphan references, bible
-agreement. Findings triage BLOCKER/MODERATE/MINOR and are fixed by minimal splice. No logical
-or chronological fallacy survives to export.
-
-**2. Voting is OFF by default, engine-wide.** Score panels (`--review-node`), Legion votes,
-census reviews, and any service path that solicits LLM ballots or scores DO NOT RUN unless the
-user explicitly requests a vote/review/score in that conversation, expressed as an explicit
-override flag at the invocation site. Automatic/implicit voting anywhere in the pipeline
-(auto-run, quality services, workflows) is retired. Rationale: cost — panels burn per-ballot
-API spend and localize nothing the sweep doesn't name for free.
-
-**3. Supersession.** This amendment supersedes the "mandatory dual review" workflow
-(standalone ≥82 / cumulative ≥85) as the DEFAULT; that machinery remains available behind the
-explicit override. `CLAUDE.md` §Quality Verification SOP is the working-rules mirror of this
-amendment.
 

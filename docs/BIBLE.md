@@ -4,7 +4,7 @@ project: StreetSamurai
 code: SS
 layer: bible
 status: living
-updated: 2026-06-18
+updated: 2026-07-04
 ---
 
 # StreetSamurai — Project Bible
@@ -15,9 +15,12 @@ updated: 2026-06-18
 > 1-line pointer for tooling; this file supersedes it. **StreetSamurai is a `mixed` project:** a
 > *universe-agnostic* software story-generation engine AND the narrative canon of its universes.
 > The engine is the product; a **Universe** is content. **GLMZ** (the *Bushido Coda*) is
-> Universe #1; a **Fantasy/Steampunk** universe is being stood up on the same engine
-> (see [SS-A2](AMENDMENTS.md)). §4 is the software canon; §5 carries both engine invariants and
-> per-universe narrative laws; §9 glossary spans both.
+> Universe #1; a **Fantasy/Steampunk** universe is being stood up on the same engine.
+> §4 is the software canon; §5 carries both engine invariants and per-universe narrative laws;
+> §9 glossary spans both.
+> **World-level facts for each universe (geography, transport, social structure, technology)**
+> live in `docs/universes/<slug>.md` (GLMZ: `docs/universes/GLMZ.md`), synced to
+> `Universe.WorldFacts` and injected into every generation prompt.
 
 ## 1. The one sentence {#SS-§1}
 
@@ -205,8 +208,10 @@ shapes; they do not rewrite canon values.
 ## 5. The Laws {#SS-§5}
 
 > **Inherits [MindAttic.HouseRules.md](../../MindAttic.HouseRules.md)** (shared, repo-external).
-> Those house rules apply in full and are not restated here. Project-specific laws follow. The
-> [Amendments log](AMENDMENTS.md) wins over this section when they conflict.
+> Those house rules apply in full and are not restated here. Project-specific laws follow.
+> **`docs/AMENDMENTS.md` is RETIRED (2026-07-04).** All amendments have been merged into this
+> file and the relevant story bibles. Canon changes go directly into this file or the
+> relevant `docs/nodes/<CODE>.md`. There is no amendment layer.
 
 **Engine invariants (do not violate):**
 
@@ -275,6 +280,8 @@ narrative-law block here when stood up:**
 **Fantasy/Steampunk narrative laws (Universe: fantasy-steampunk — validate any Fantasy/Steampunk rewrite against these):**
 
 16. **Action beats carry thematic weight; contemplative beats have physical immediacy.** {#SS-LAW-16} An action beat that doesn't advance or complicate the story's central tension is stage business. A contemplative beat without a grounding sensory or physical anchor is abstraction. Both fail. *(Universal beat doctrine — applies to all universes.)*
+17. **Default QA is a logic sweep, not a vote panel.** {#SS-LAW-17} *(SS-A44.)* The canonical QA methodology for any story that changes or needs validation is a **logic & continuity sweep** across six dimensions: (1) causality chain, (2) knowledge states, (3) timeline, (4) plant/payoff ledger, (5) orphan references, (6) bible agreement. Findings are triaged **BLOCKER / MODERATE / MINOR** and fixed with minimal splices. Review panels and Legion votes are expensive — run ONLY when the user explicitly requests a vote/review/score in that conversation. The engine enforces this (voting gate, default OFF; explicit `--allow-votes` / `allowVotes:true` only). Canonical methodology: `docs/LOGIC.md`.
+18. **Character is defined by response, not circumstance.** {#SS-LAW-18} *(SS-A41.)* A character's wound (backstory circumstance) is the engine of motivation, not the character itself. Character is defined by how a person *responds* to circumstance — what choice they make, what they sacrifice, how they define themselves under pressure. A wound is background; the response to it is foreground and must be *earned* on the page. This applies to every universe: do not write backstory as characterisation; write choice as characterisation.
 
 ## 6. Verified state {#SS-§6}
 
@@ -386,8 +393,11 @@ A prose beat/node is **done** only when:
 
 ### Step 1 — Canon first ★
 
-- **If the story introduces new world facts** (new CorpoNation, new species, new world event, new
-  narrative laws for a character): append a new `SS-AN` entry to `docs/AMENDMENTS.md`.
+- **If the story introduces new world facts** (new CorpoNation, new species, new world event,
+  new narrative laws for a character): write them **directly** into `docs/BIBLE.md` (engine/world
+  level) or `docs/universes/GLMZ.md` (GLMZ world facts layer), then sync with `ss --sync-markdown`.
+  Do NOT append to `docs/AMENDMENTS.md` — it is retired.
+- **If the story introduces new story-specific facts:** write them into `docs/nodes/<CODE>.md`.
 - **Always**: add a new story entry to `docs/USER_STORIES.md` under the appropriate Epic, with
   sub-items for entity seeding, chapter structure, each act, and the review target.
 - Run `powershell -File tools/codex.ps1 doctor` — must pass before proceeding.
@@ -437,8 +447,8 @@ For each chapter, in order:
 
 *Maintenance rule: when you finish a goal, flip its status here and in
 [USER_STORIES.md](USER_STORIES.md) and add acceptance evidence in the same change. This file is the
-source of truth for "what's left and in what order." Amendments are append-only in
-[AMENDMENTS.md](AMENDMENTS.md) and win over this file.*
+authoritative source of truth — write canon changes directly here, not to a separate amendments
+file. `docs/AMENDMENTS.md` is RETIRED; do not reference or append to it.*
 
 ---
 

@@ -573,7 +573,7 @@ updated: 2026-06-25
 > entity rating ballots, book/story quality scoring) is DISABLED BY DEFAULT and runs only with an
 > explicit per-invocation override. LLM use for PROSE (generation, drafting, polish) is never gated.
 > One central gate — `VotingGate` — is consulted at the entry of each ballot-soliciting flow.
-> See [SS-A44](AMENDMENTS.md#SS-A44) and [LOGIC.md §6](LOGIC.md).
+> See [SS-LAW-17](BIBLE.md#SS-LAW-17) and [LOGIC.md §6](LOGIC.md).
 
 - **SS-US-N1 ✅** As the engine, voting is OFF by default: the committed root `legion.json` carries
   `"votingEnabled": false`, and absence of the key resolves to OFF. *(evidence:
@@ -601,7 +601,7 @@ updated: 2026-06-25
 
 ### Audit log
 
-- **2026-07-04 — Voting kill-switch SHIPPED ([SS-A44](AMENDMENTS.md#SS-A44)).** Central `VotingGate`
+- **2026-07-04 — Voting kill-switch SHIPPED ([SS-A44](BIBLE.md#SS-LAW-17)).** Central `VotingGate`
   (`v3/StreetSamurai.Core/Services/VotingGate.cs`) reads `legion.json` `"votingEnabled"` (default
   OFF). Gated at service entry: `NodeReviewService` (4 ballot methods), `EntityReviewService`,
   `EntityRatingService`, `StoryQualityService`, `BookReviewService`, and `ChapterCloseProcessorService`
@@ -618,7 +618,7 @@ updated: 2026-06-25
   failures for free, per SS-A44's rationale. Evidence: `VotingGateTests` (11 tests) green;
   `dotnet build -c Release` clean across Core/Blazor/MCP. SS-US-N1..N4 → ✅.
 
-- **2026-07-03 — Node hierarchy redesign SHIPPED ([SS-A43](AMENDMENTS.md#SS-A43)).** The
+- **2026-07-03 — Node hierarchy redesign SHIPPED ([SS-A43](BIBLE.md#SS-LAW-6)).** The
   overloaded "Strand" abstraction became a typed tree: abstract `Node` + `SeriesNode` /
   `StoryNode` / `ChapterNode`, TPH on the renamed `Nodes` table via a `NodeType` discriminator.
   Migration `20260703162528_NodeHierarchyRedesign` is rename-only (temporal-safe: versioning
