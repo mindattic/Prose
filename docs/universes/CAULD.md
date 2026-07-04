@@ -116,6 +116,25 @@ stretching the membrane at the same coordinates for generations.
 The war is fought over Scrying access as much as territory. A House that loses its Scrying
 station loses its technological advantage within a generation.
 
+**Most Spheres are accessible from any Scrying Chamber.** The apparatus reaches them
+regardless of where in the Cauld it is operated. Location is irrelevant for the majority of
+what the Houses Scry.
+
+**Some Spheres are only accessible from specific ground.** Particular Spheres — the valuable
+ones, the strange ones, the ones whose contents no other location can reach — are only
+accessible from specific geographic coordinates. The membrane is thin there, or the angle is
+right, or the reason is not understood and not required to be. This is what makes holding
+territory worth the cost. Not the land. The access point the land sits on. A House that
+takes a ridge takes whatever Sphere that ridge can reach and no Scrying Chamber elsewhere
+can. A House that loses a valley loses a Sphere it may have been the only one in the Cauld
+to ever observe.
+
+The most valued import from location-specific Spheres is Gifted matter. The Spheres that
+yield it are reachable only from specific ground. The Liturgy knows which ground. This is
+the upper layer of the war that is never discussed at coalition tables: military campaigns
+fought over terrain that looks strategically ordinary but sits on the only coordinates in
+the Cauld that reach a Sphere the Liturgy needs.
+
 **Scrying data notation:**
 ```
 ORIGIN: Scry-derived / catalogue SCRY-1918-DE-31
