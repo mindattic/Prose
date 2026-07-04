@@ -846,10 +846,10 @@ No House owns the Old Rite. This is part of why soldiers practice it.
 
 | Term | Meaning |
 |---|---|
-| **Scrying** | Looking through the membrane between Spheres; design is copied and built locally; the membrane stays intact; nothing physical crosses |
-| **Piercing the membrane** | A distinct, rarer act: reaching through the membrane and taking a physical object or person from another Sphere; the origin Sphere gets an unexplained disappearance |
+| **Scrying** | To see — looking through the membrane between Spheres; the membrane stays intact; nothing physical crosses; design is observed and reproduced locally |
+| **Piercing the membrane** | To enter and take — breaching the membrane and removing a physical object or person from another Sphere; the breach closes; the origin Sphere has only the absence |
 | **Sphere** | A parallel Earth; a parallel history |
-| **Colchester naming** | Informal naming pattern for objects acquired by piercing: called by the origin-Sphere location and date (e.g., *Colchester 1648*); not catalogued; the name is just what it gets called |
+| **Colchester naming** | Informal naming for objects acquired by piercing: called by origin-Sphere location and date (e.g., *Colchester 1648*); not catalogued — the name is just what it gets called |
 | **Myrmidon** | Professional soldier; House service record |
 | **Champion** | Soldier fully Transmuted past House designation — named, not designated |
 | **Transmutation** | Analytical term for the biological process; not used in casual in-world speech |
