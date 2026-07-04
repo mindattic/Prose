@@ -147,6 +147,24 @@ Famous disappearances, unsolved vanishings, persons who were never found — the
 shadow of the Cauld's appetite on every Sphere it can reach. The people taken do not choose.
 They are conscripted into the war or processed into the supply chain.
 
+**Witnessed piercing — the directed gift:** The worst use of the capability, and not uncommon
+among senior House members with the right Liturgy standing. A House member sees a person
+through a Scrying installation — a woman in her own Sphere, her own life, knowing nothing
+about the Cauld — and decides they want her. They request a witnessed pierce. The Liturgy
+administers it as ceremony. The House member is present.
+
+From the taken person's perspective: one moment they were where they were. The next moment
+they are in a stone chamber surrounded by robed figures who chose them. No transition. No
+warning. Just: their world, then this one. The chamber. The robes. The faces of people who
+already know who they are and have been waiting.
+
+The Liturgy calls this a bestowal. The House member calls it a gift. Neither is confused about
+what it is. The language was chosen by people who understood exactly what they were covering
+with it.
+
+The taken person is not told they were selected. They are told they were called. The distinction
+is maintained as long as anyone in the room finds it useful.
+
 **Who can pierce:** Not every House with a Scrying installation has piercing capability.
 Observation Scrying is the standard. Piercing requires more — a different calibration of the
 apparatus, a practitioner who can hold the breach, or access to a thin-membrane site where
