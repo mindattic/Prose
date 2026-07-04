@@ -222,6 +222,45 @@ supplement, not the foundation. What it supplies specifically:
   with the Liturgy may request a directed gift; a person from another Sphere selected through
   Scrying, taken, presented as bestowed
 
+**The operational taxonomy of takings.** The Liturgy and Houses do not use these names; they
+are analytical categories for what the mechanism actually does.
+
+- **Bulk harvest — opportunistic.** The membrane is thin at a location; the Liturgy runs a
+  harvest; whoever is near the access point goes through. No targeting. No specific person
+  selected. The taken person is simply in the wrong place when the apparatus is running. These
+  takings produce the largest volume: military conscripts who were walking to work, domestic
+  laborers who were in a car, children who wandered into the wrong yard. The Cauld reads them
+  as available. There is no more intent than that.
+
+- **Directed gift — political.** A House member with sufficient Liturgy standing selects a
+  specific person through a Scrying installation and requests a witnessed pierce. The person is
+  chosen. The House member is present in the chamber when they arrive. Children are the most
+  common form — gifted to House families as tokens of the loyalty network, placed as wards,
+  absorbed into estates so thoroughly the youngest do not remember anything else.
+
+- **Skill-sorted conscription.** The taking is opportunistic but the placement is not. Arrivals
+  are assessed. A financial analyst, a physician, a broadcaster — these are diverted from the
+  general labor pool and placed where their skills have value. Being useful is the only form of
+  leverage available to someone who has just arrived with no language and no standing. The
+  institution knows this and uses it.
+
+- **Witness removal.** Rare, specific, deliberate. Someone in the origin Sphere saw a Piercing
+  in progress and talked about it. The Liturgy removes them before the testimony reaches anyone
+  who can act on it. What happens after removal is characteristic: the Liturgy does not discard
+  a witness. It employs them. A person with an actress's capacity to memorize and perform
+  becomes a Liturgy herald. The institution that removed a witness for what she knew is now
+  requiring her to speak for it publicly. The effectiveness of this arrangement is the detail
+  that makes it what it is.
+
+- **Recruitment.** The Liturgy's scouts in origin Spheres identify social vulnerability —
+  teenagers leaving dangerous homes, people who have already cut their own ties, individuals
+  looking for somewhere else to be. The recruiter offers them something: a way out, a better
+  place, the honest or dishonest suggestion that what they are leaving is not worth returning
+  to. They come, as much as anyone can come willingly when they are fourteen and an adult with
+  a convincing story is making the offer. In the Cauld they are trained as scouts. They return
+  to origin Spheres to identify the next round of recruits. The institution perpetuates itself
+  through the people it already harvested. This is the Liturgy's most elegant supply chain.
+
 **Loyalists receive gifts.** The reward structure for genuine loyalty to a House and to the
 Liturgy includes not only the Gifted Ceremony and Relics but access to the piercing mechanism
 as a patron benefit. A sufficiently loyal and sufficiently senior House figure may be granted,
