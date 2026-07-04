@@ -160,6 +160,14 @@ The stock is standard. Sometimes it is a grip panel. Occasionally it is the furn
 piece of artillery. The principle is the same: enough local material to suggest a forge, not
 enough to constitute one.
 
+Manufacturer marks — proof stamps, roll marks, factory designations from the origin Sphere —
+are covered with pressed steel plates or scratched out. The work is not careful. A close
+examination of any "Scried" weapon will find plates that don't quite sit flush, scratch
+patterns that follow letters, stampings underneath that were never fully obliterated.
+Nobody examines closely. The Houses have no inspectors for this because the Houses have no
+interest in what an inspection would find. The laziness is structural: there is no one to
+hold them to account, so the minimum effort is the effort applied.
+
 **The missing-persons consequence:** When the pierced thing is a person, the origin Sphere
 reads it as an unexplained disappearance. No body is recovered because no body remained —
 the person came through. The arithmetic in Spheres with sustained Cauld interest is notable:
