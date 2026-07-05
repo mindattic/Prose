@@ -231,13 +231,13 @@ ollama create qwen2.5-32b-writer -f Modelfile
 
 NRSTC (Claude, credits required):
 ```
-dotnet run --project v3/StreetSamurai.Blazor --configuration Release --no-build \
+dotnet run --project v3/StreetSamurai.Cli --configuration Release --no-build \
   -- --expand-beat --slug neon-rust-019f06da
 ```
 
 NRSTQ (Qwen via RunPod):
 ```
-dotnet run --project v3/StreetSamurai.Blazor --configuration Release --no-build \
+dotnet run --project v3/StreetSamurai.Cli --configuration Release --no-build \
   -- --expand-beat --slug neon-rust-qwen-019f06eb \
      --local-url https://ios3aii3ubt1po-11434.proxy.runpod.net/v1/chat/completions \
      --local-model qwen2.5-32b-writer

@@ -140,7 +140,7 @@ narrative-law block here when stood up:**
   ambient proprioceptive information field BCI-augmented people sense (see `network_doc.md`).
 
 ## Status index (from USER_STORIES.md)
-- done: 125  partial: 8  planned: 25  cut: 1
+- done: 132  partial: 8  planned: 26  cut: 1
 
 ## Latest amendment
 

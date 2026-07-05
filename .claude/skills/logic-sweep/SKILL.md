@@ -14,7 +14,7 @@ or reviews from this skill** — if the user wants a score, they will say so exp
   ORDER BY nb.SortKey`. Books: chapter children by `Nodes.SortKey`, beats within by `nb.SortKey`.
   NEVER order by `Beats.Number`.
 - Reports → `audit-outlines-<today>/logic/<CODE>.md`. Fix files → `.../fixes/<CODE>/`.
-- Text pushes via built exe `v3\StreetSamurai.Blazor\bin\Release\net10.0\StreetSamurai.Blazor.exe
+- Text pushes via built exe `v3\StreetSamurai.Cli\bin\Release\net10.0\StreetSamurai.Cli.exe
   --beat update --id <guid> --text -` with OS-level `<` redirection (PowerShell pipelines inject
   BOM; verify `UNICODE(SUBSTRING(Text,1,1)) != 65279` after every push). One CLI invocation at a
   time (port). `dotnet run` may silently drop args — prefer the exe.

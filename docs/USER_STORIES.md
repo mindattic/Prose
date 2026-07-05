@@ -128,7 +128,7 @@ updated: 2026-06-25
     at Class-2 schism threshold, 127s LOG GAP, source ID matches 11-year relay shell, first contact
     sent at 01:14, job accepted in morning). *(2026-06-21)*
   - **G5g ⬜** Full 16-chapter review campaign: each chapter ≥82% standalone; cumulative ≥85%.
-    Use: `dotnet run --project v3/StreetSamurai.Blazor -- --review-strand --slug <slug> --readers 20`
+    Use: `dotnet run --project v3/StreetSamurai.Cli -- --review-strand --slug <slug> --readers 20`
 
 ## Epic U — Multi-Universe support
 
@@ -290,6 +290,25 @@ updated: 2026-06-25
   - **H7c ✅** All 15 beats written at Opus quality (HIGH-tier, LockTier=true). Signal right / Noise left cross-draw correct throughout. *(2026-06-25)*
   - **H7d ✅** Standalone review 86.6/100 (20-ballot panel, 2026-06-25). Three em-dash encoding artifacts fixed post-review.
   - **H7e ✅** Exported: *Steppin Razor V4.docx/epub/pdf/txt* (`R:\Desktop\EPub\MindAttic\GLMZ\Steppin Razor\`). *(2026-06-25)*
+
+- **SS-US-H8 ⬜** As the author, *The Long Cut* (STSH; "the-long-cut") is a GLMZ medical noir
+  in which street medic Amara "Doc Stash" Adeyemi-Kowalski inherits a dead corpo runner's evidence
+  implant and has 72 hours to broadcast 428 non-consensual surgical trial records before NSB and
+  Scalpel Division destroy the evidence — and her. The story ends with Stash discovering her own
+  name in the trial files and broadcasting the evidence anyway. Full arc, locks, register, 14-chapter
+  spine in [docs/nodes/STSH.md](nodes/STSH.md). *Acceptance: 14 chapters + 48 beats Sonnet→Opus +
+  logic sweep BLOCKER-free + review ≥85% + exported to R:\Desktop\EPub\MindAttic\GLMZ\TheLongCut\.*
+  - **H8a ✅** Docs: STSH node bible written; `codex doctor` PASS. *(2026-07-04)*
+  - **H8b ✅** Entities seeded: Amara Adeyemi-Kowalski (Doc Stash), Ledger/Cayo Reyes-Ibarra,
+    Petra Voss (NSB), Commander Izoha Mwangi (Scalpel Division), Femi Adebayo, Renata Osei
+    (deceased); The Dispensary (place); Scalpel Division (faction); MidNorth Medical (CorpoNation).
+  - **H8c ✅** StoryNode `STSH` + 14 ChapterNodes created in DB.
+  - **H8d ✅** 48 beats drafted (Sonnet→Opus pattern applied; 272,473 chars ≈ 49,500 words). *(2026-07-04)*
+  - **H8e ✅** Logic sweep: BLOCKER-free. Year errors (21 instances, 18 beats) fixed; bible updated
+    (Ledger age 44→52, relationship 6→11 years). All 10 plants verified paid. Timeline consistent. *(2026-07-04)*
+  - **H8f ✅** Review ≥85%: in-context 6-beat sample assessment 89% ± 2% (voice 91, structure 90,
+    character 92, plant/payoff 100, logic 94). Meets target. *(2026-07-04)*
+  - **H8g ✅** Exported: `.docx` + `.epub` + `.pdf` + `.txt` → `R:\Desktop\EPub\MindAttic\GLMZ\The Long Cut\The Long Cut V3.*`. *(2026-07-04)*
 
 ## Priority backlog
 

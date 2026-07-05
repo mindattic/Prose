@@ -7,8 +7,8 @@ One call that grades a node and tells you what to fix — cheaply. The default i
 
 ## Fixed facts for this engine
 - DB: `Server=(localdb)\MSSQLLocalDB;Database=StreetSamurai;Trusted_Connection=True;TrustServerCertificate=True;`
-- CLI host project: `D:\Projects\MindAttic\StreetSamurai\v3\StreetSamurai.Blazor`
-- **Invoke the CLI with `dotnet run --project <proj> -- <args>` directly. Do NOT use `ss.cmd`** — the shim mis-parses its own `rem` lines when spawned from a non-interactive shell and exits 255. Use `--no-build` if a VS/host instance holds the build lock (stop the host with `Get-Process StreetSamurai.Blazor | Stop-Process -Force` if you need a fresh build).
+- CLI host project: `D:\Projects\MindAttic\StreetSamurai\v3\StreetSamurai.Cli`
+- **Invoke the CLI with `dotnet run --project <proj> -- <args>` directly. Do NOT use `ss.cmd`** — the shim mis-parses its own `rem` lines when spawned from a non-interactive shell and exits 255. Use `--no-build` if a VS/host instance holds the build lock (stop the Blazor host with `Get-Process StreetSamurai.Blazor | Stop-Process -Force` if you need the CLI to build; the CLI is a separate project so Blazor running does not block it).
 - **Providers: all trusted-4** (Claude, OpenAI, DeepSeek, Gemini), round-robined for model + temperament diversity. DeepSeek runs harsh and Gemini generous; the spread is expected — read the pooled mean, not any single provider. (Single chokepoint to narrow if ever needed: `NodeReviewService.ReviewProviderIds()`.)
 - Reviews are **psychometric-grounded**: each persona reviews through its OCEAN/HEXACO/MBTI/Enneagram/DISC profile (delivered by the Legion package, injected via `BuildWhoBlock`).
 - Reviews fingerprint the exact text via `ContentHash`. Pool/score ALWAYS by the ContentHash the run produced.

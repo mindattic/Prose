@@ -28,7 +28,7 @@ node tools/check-contradictions.js <chapter_id> --dry-run   # inspect prompt, no
 
 Exit codes: `0` = no contradictions, `1` = findings present, `2` = usage or pipeline error.
 
-> **Note:** The prior `extract-lore-triples.js` and `nightly-lore-triple-sweep.cmd` were retired 2026-04-30. Continuity operations now run via `dotnet run --project v3/StreetSamurai.Blazor -- --continuity ...` or the MCP tools `extract_continuity_from_chapter` / `list_continuity_contradictions` / `resolve_continuity_contradiction`.
+> **Note:** The prior `extract-lore-triples.js` and `nightly-lore-triple-sweep.cmd` were retired 2026-04-30. Continuity operations now run via `dotnet run --project v3/StreetSamurai.Cli -- --continuity ...` or the MCP tools `extract_continuity_from_chapter` / `list_continuity_contradictions` / `resolve_continuity_contradiction`.
 
 ---
 

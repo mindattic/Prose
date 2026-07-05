@@ -41,11 +41,11 @@ StreetSamurai is a C#/.NET 10 Blazor Server application — web-only, fully resp
 ## Architecture Overview
 
 ```
-CLI (dotnet run --project v3/StreetSamurai.Blazor -- <args>)
+CLI (dotnet run --project v3/StreetSamurai.Cli -- <args>)
   │
   ▼
 Blazor Server host  (v3/StreetSamurai.Blazor/)
-  │  Web UI (Razor components) + ~118 CLI handlers in Program.cs
+  │  Web UI (Razor components)
   │
   ▼
 Core services  (v3/StreetSamurai.Core/)
@@ -133,10 +133,10 @@ claude mcp add streetsamurai dotnet run --project D:/Projects/MindAttic/StreetSa
 The canonical invocation alias `ss` expands to:
 
 ```powershell
-dotnet run --project v3/StreetSamurai.Blazor -- <args>
+dotnet run --project v3/StreetSamurai.Cli -- <args>
 ```
 
-All ~118 handlers are dispatched from `v3/StreetSamurai.Blazor/Program.cs`.
+All ~152 handlers are dispatched from `v3/StreetSamurai.Cli/Program.cs`.
 
 ### Key commands
 
@@ -205,7 +205,7 @@ For story lists, scores, entity counts, and other read-only lookups, query the D
 sqlcmd -S "(localdb)\MSSQLLocalDB" -d StreetSamurai -Q "SELECT Name, Score FROM Nodes WHERE IsCanon = 1 ORDER BY Score DESC"
 ```
 
-Only use `dotnet run --project v3/StreetSamurai.Blazor -- <args>` when the CLI's business logic is actually needed (write operations, generation, publish, review). Never use it just to answer a lookup question.
+Only use `dotnet run --project v3/StreetSamurai.Cli -- <args>` when the CLI's business logic is actually needed (write operations, generation, publish, review). Never use it just to answer a lookup question.
 
 ### Schema reference
 
@@ -618,7 +618,8 @@ StreetSamurai/
 │   │   ├── Services/            # ~214 services
 │   │   ├── Services/Operator/   # Agentic writer tool-use loop
 │   │   └── Data/                # EF entities, DbContext, Sql/ migration scripts
-│   ├── StreetSamurai.Blazor/    # Blazor Server host — the live site + ~118 CLI handlers
+│   ├── StreetSamurai.Cli/       # Standalone CLI console app — 152 ss handlers
+│   ├── StreetSamurai.Blazor/    # Blazor Server host — the live site
 │   ├── StreetSamurai.Mcp/       # Model Context Protocol server (~195+ tools)
 │   ├── StreetSamurai.UnitTests/ # NUnit + bUnit tests
 │   └── ApplyMigrations/         # One-shot EF Core migration runner

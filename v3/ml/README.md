@@ -96,7 +96,7 @@ cd D:\Projects\MindAttic\StreetSamurai\v3\ml
 
 # Export persona OCEAN profiles for the persona preference model
 # (only needed once; re-export if PersonaLibrary is updated)
-cd ..\StreetSamurai.Blazor
+cd ..\StreetSamurai.Cli
 dotnet run --project . -- --export-personas-json
 cd ..\..\..\ml
 

@@ -28,7 +28,7 @@ sqlcmd -S "(localdb)\MSSQLLocalDB" -d StreetSamurai -Q "<query>"
 - Auth: Windows Authentication (no `-U`/`-P` needed)
 - Same server as `appsettings.json` → `ConnectionStrings.StreetSamurai`
 
-Only use `dotnet run --project v3/StreetSamurai.Blazor -- <args>` when the CLI's business logic is actually needed (write operations, generation, publish, review). Never use it just to answer a lookup question.
+Only use `dotnet run --project v3/StreetSamurai.Cli -- <args>` when the CLI's business logic is actually needed (write operations, generation, publish, review). Never use it just to answer a lookup question.
 
 **HARD RULE — no direct SQL deletes (SS-A37, tables renamed by SS-A43):** Never execute `DELETE FROM Nodes`, `DELETE FROM Beats`, or `DELETE FROM NodeBeats` as raw sqlcmd statements. These tables are system-versioned temporal tables — deleting via raw SQL bypasses all application guards and is unrecoverable without a point-in-time restore. Any story/beat removal must go through the CLI (`ss --beat delete`). If a story genuinely needs to be deleted, get explicit user confirmation naming the story by title and slug before touching the DB.
 
