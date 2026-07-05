@@ -205,7 +205,7 @@ public class DistributedWorkerCoordinator
                     nodeTitle= beat.Title ?? "",
                     beatIndex  = i,
                     totalBeats = total,
-                    beatSynopsis = beat.Synopsis ?? "",
+                    beatGoal   = beat.Synopsis ?? "",
                 });
 
                 db.DistributedWorkQueue.Add(new DistributedWorkQueue

@@ -10,7 +10,6 @@ public class BeatGeneratorService
 {
     private readonly ILlmService llm;
     private readonly WorldGraphService graph;
-    private readonly LoreService canon;
     private readonly EmbeddingService embeddings;
     private readonly IDbContextFactory<StreetSamuraiDbContext> dbFactory;
     private readonly LlmVotingService? voting;
@@ -24,7 +23,6 @@ public class BeatGeneratorService
     public BeatGeneratorService(
         ILlmService llm,
         WorldGraphService graph,
-        LoreService canon,
         EmbeddingService embeddings,
         IDbContextFactory<StreetSamuraiDbContext> dbFactory,
         LlmVotingService? voting = null,
@@ -37,7 +35,6 @@ public class BeatGeneratorService
     {
         this.llm = llm;
         this.graph = graph;
-        this.canon = canon;
         this.embeddings = embeddings;
         this.dbFactory = dbFactory;
         this.voting = voting;
@@ -153,6 +150,9 @@ public class BeatGeneratorService
         var openThreadsBlock = !string.IsNullOrWhiteSpace(context.OpenThreadsContext)
             ? $"\n\n{context.OpenThreadsContext}"
             : "";
+        var continuityBlock = !string.IsNullOrWhiteSpace(context.ContinuityContext)
+            ? $"\n\n{context.ContinuityContext}"
+            : "";
 
         var system = $"""
             {UniverseLine()}{worldFactsBlock}
@@ -167,7 +167,7 @@ public class BeatGeneratorService
 
             WORLD CONTEXT (characters, locations, equipment, relationships — use as canon facts):
             {context.RelationshipContext}
-            {(context.XRayContext.Length > 0 ? "\nSCENE X-RAY — entities on screen RIGHT NOW. Every character below speaks in THEIR OWN documented register, not the narrator's:\n" + context.XRayContext : "")}
+            {(context.XRayContext.Length > 0 ? "\nSCENE X-RAY — entities on screen RIGHT NOW. Every character below speaks in THEIR OWN documented register, not the narrator's:\n" + context.XRayContext : "")}{continuityBlock}
             {(context.EntityStackContext.Length > 0 ? "\nENTITY WORKING MEMORY — proper nouns active in this story thread and their canon facts. Treat these as hard constraints; do not contradict them:\n" + context.EntityStackContext : "")}
             {(context.DocStackContext.Length > 0 ? "\n" + context.DocStackContext : "")}
             {(context.LocationContext.Length > 0 ? "\nADDITIONAL LOCATION DETAIL:\n" + context.LocationContext : "")}{ambientAnomalyBlock}{dialogueBlock}{anchorBlock}{plantBlock}{consequenceBlock}{commandmentBlock}{worldStateBlock}{emotionalBlock}{mlProseBlock}{tensionBlock}{readerBlock}{narrativeSummaryBlock}{chapterSummaryBlock}{openThreadsBlock}{pacingBlock}{structuralBlock}
@@ -925,6 +925,12 @@ public record BeatContext
     /// the generator should address or advance at least one per beat.
     /// Empty when OpenThreadsService is not wired or no open threads exist.</summary>
     public string OpenThreadsContext { get; init; } = "";
+
+    /// <summary>Established canonical facts for characters on screen, from ContinuityService.
+    /// CANONICAL/CONFIRMED claims filtered to entities in CharactersInScene — injected as a
+    /// do-not-contradict block by ProseWriterRouter. Empty when ContinuityService is not wired
+    /// or no matching claims exist.</summary>
+    public string ContinuityContext { get; init; } = "";
 }
 
 /// <summary>

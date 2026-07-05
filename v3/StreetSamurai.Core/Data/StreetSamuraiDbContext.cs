@@ -1268,6 +1268,7 @@ public class StreetSamuraiDbContext : DbContext
             e.HasIndex(x => x.Name);
         });
         ConfigureFactionBridges(b);
+
         // Corponation — fully relational. CommonNames bridge.
         b.Entity<Corponation>(e =>
         {

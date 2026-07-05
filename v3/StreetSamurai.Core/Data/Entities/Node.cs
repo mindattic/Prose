@@ -173,6 +173,11 @@ public abstract class Node
     /// generator.</summary>
     public string? Seed { get; set; }
 
+    /// <summary>Default scene location for this node (e.g. "Zone 4 civic district", "The Spine, Zone 6").
+    /// ProseWriterRouter uses this to auto-populate BeatContext.Location when the caller doesn't set it,
+    /// enabling SceneContextBuilder (ambient sensory grounding) and AmbientAnomalyService to fire.</summary>
+    public string? DefaultLocation { get; set; }
+
     // ── Node Bible ──────────────────────────────────────────────────────
     // A dry, structural plot document generated before prose begins. Defines
     // logline / premise / register / characters / beat spine / seeds+payoffs.

@@ -45,7 +45,9 @@ public class ProseWriterRouter(
     ConsequenceEngine? consequenceEngine = null,
     MlProseGuidanceService? mlProseGuidance = null,
     ChapterSummaryService? chapterSummary = null,
-    OpenThreadsService? openThreads = null)
+    OpenThreadsService? openThreads = null,
+    SceneContextAssembler? sceneAssembler = null,
+    ContinuityService? continuity = null)
 {
     // Extended combat rules — shared with CombatSceneWriter's common block + Dissociated Observer examples.
     static readonly string CombatProseGuidance = """
@@ -113,6 +115,24 @@ public class ProseWriterRouter(
             catch { /* non-blocking — entity context is best-effort */ }
         }
 
+        // Fix 2: auto-populate CharactersInScene from entity context stack (character-type entries).
+        // Fires DialogueService, ConsequenceService, and ConsequenceEngine for every beat once the
+        // stack is warm. Gracefully empty on cold-start (stack fills after first ReconcileAsync).
+        if (context.CharactersInScene.Count == 0 && context.NodeId != Guid.Empty && entityContext != null)
+        {
+            try
+            {
+                var active = entityContext.GetActiveEntities(context.NodeId)
+                    .Where(e => string.Equals(e.EntityType, "character", StringComparison.OrdinalIgnoreCase))
+                    .Take(3)
+                    .Select(e => e.Name)
+                    .ToList();
+                if (active.Count > 0)
+                    context = context with { CharactersInScene = active };
+            }
+            catch { /* non-blocking */ }
+        }
+
         // Doc context stack: load the rotating cast of pertinent canon .md docs (non-fatal).
         DocContextService.DocContextResult? docResult = null;
         var docStackContext = "";
@@ -127,6 +147,24 @@ public class ProseWriterRouter(
                 docStackContext = docResult.Block;
             }
             catch { /* non-blocking — doc context is best-effort */ }
+        }
+
+        // Fix 4: auto-populate Location from StoryNode.DefaultLocation when caller doesn't set it.
+        // Enables SceneContextBuilder (ambient grounding) and AmbientAnomalyService for every beat.
+        if (string.IsNullOrWhiteSpace(context.Location) && context.NodeId != Guid.Empty && dbFactory != null)
+        {
+            try
+            {
+                await using var locDb = await dbFactory.CreateDbContextAsync(ct);
+                var defaultLoc = await locDb.Nodes
+                    .AsNoTracking()
+                    .Where(n => n.Id == context.NodeId)
+                    .Select(n => n.DefaultLocation)
+                    .FirstOrDefaultAsync(ct);
+                if (!string.IsNullOrWhiteSpace(defaultLoc))
+                    context = context with { Location = defaultLoc };
+            }
+            catch { /* non-blocking */ }
         }
 
         // ── New enrichments (SS-A28) ─────────────────────────────────────────
@@ -155,6 +193,49 @@ public class ProseWriterRouter(
         if (string.IsNullOrEmpty(emotionalGuidanceContext) && dbFactory != null && context.NodeId != Guid.Empty)
         {
             try { emotionalGuidanceContext = await BuildEmotionalGuidanceAsync(context.NodeId, ct); }
+            catch { /* non-blocking */ }
+        }
+
+        // Fix 1: auto-populate XRayContext via SceneContextAssembler when beatId is known.
+        // Injects per-character voice/psychology/wound/behavioral profiles for every entity on screen.
+        var xRayContext = context.XRayContext;
+        if (sceneAssembler != null && string.IsNullOrWhiteSpace(xRayContext) && beatId != Guid.Empty)
+        {
+            try
+            {
+                var sc = await sceneAssembler.AssembleForBeatAsync(beatId, tokenBudget: 2000, ct);
+                if (sc != null && !string.IsNullOrWhiteSpace(sc.ContextBlock))
+                    xRayContext = sc.ContextBlock;
+            }
+            catch { /* non-blocking */ }
+        }
+
+        // Fix 3: build canonical facts block for characters in scene from ContinuityService.
+        // Injects CANONICAL/CONFIRMED claims as do-not-contradict constraints before generation.
+        var continuityContext = context.ContinuityContext;
+        if (continuity != null && string.IsNullOrEmpty(continuityContext) && context.CharactersInScene.Count > 0)
+        {
+            try
+            {
+                var sb = new StringBuilder();
+                sb.AppendLine("## ESTABLISHED CANON — do not contradict these facts:");
+                var sceneNames = context.CharactersInScene
+                    .Select(n => n.Trim())
+                    .Where(n => n.Length > 0)
+                    .Take(3)
+                    .ToHashSet(StringComparer.OrdinalIgnoreCase);
+                var claims = continuity.GetByStatus("CANONICAL")
+                    .Concat(continuity.GetByStatus("CONFIRMED"))
+                    .Where(c => sceneNames.Contains(c.EntityName))
+                    .Take(24)
+                    .ToList();
+                if (claims.Count > 0)
+                {
+                    foreach (var claim in claims)
+                        sb.AppendLine($"- {claim.EntityName}: {claim.Predicate} {claim.Object}");
+                    continuityContext = sb.ToString().TrimEnd();
+                }
+            }
             catch { /* non-blocking */ }
         }
 
@@ -254,6 +335,7 @@ public class ProseWriterRouter(
             PacingGuidance         = pacingGuidance,
             StructuralRoleGuidance = structuralGuidance,
             DetectedMode           = mode,
+            XRayContext            = xRayContext,
             EntityStackContext     = entityStackContext,
             DocStackContext        = docStackContext,
             LocationContext        = locationContext,
@@ -268,6 +350,7 @@ public class ProseWriterRouter(
             NarrativeSummaryContext = narrativeSummaryContext,
             ChapterSummaryContext   = chapterSummaryContext,
             OpenThreadsContext      = openThreadsContext,
+            ContinuityContext       = continuityContext,
         };
 
         var startedAt = DateTime.UtcNow;
@@ -324,6 +407,8 @@ public class ProseWriterRouter(
                 new("NarrativeSummary",    IsApplicable: nodeApplicable,          IsActive: narrativeSummaryContext.Length > 0,                                       BlockSizeChars: narrativeSummaryContext.Length),
                 new("ChapterSummary",      IsApplicable: nodeApplicable,          IsActive: chapterSummaryContext.Length > 0,                                         BlockSizeChars: chapterSummaryContext.Length),
                 new("OpenThreads",         IsApplicable: nodeApplicable,          IsActive: openThreadsContext.Length > 0,                                            BlockSizeChars: openThreadsContext.Length),
+                new("SceneContextAssembler", IsApplicable: beatId != Guid.Empty,  IsActive: xRayContext.Length > 0,                                                    BlockSizeChars: xRayContext.Length),
+                new("ContinuityService",   IsApplicable: nodeApplicable,          IsActive: continuityContext.Length > 0,                                              BlockSizeChars: continuityContext.Length),
             ], CancellationToken.None);
 
             await modeDetector.PersistAsync(beatId, universeId, mode, confidence, method, CancellationToken.None);
