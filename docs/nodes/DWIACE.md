@@ -5,7 +5,7 @@ code: DWIACE
 layer: node-bible
 universe: glmz
 status: complete
-updated: 2026-07-04
+updated: 2026-07-05
 ---
 
 # NODE BIBLE — Death Whispers in a Cat's Ear (DWIACE) {#SS-DWIACE}
@@ -191,9 +191,9 @@ choice from that moment forward.
 9. The Same Cold (replaces "Forty Seconds" — Tamsin reads Sol's death scene; cold-edge
    matches Celeste's room; Corvin matches cadence between Sol's and Celeste's logs)
 10. No Signal (Voss POV) — Voss's solo analog thread, Day 5. Contains Voss/Feliksas Burokas
-    recruitment backstory (beats 3904–3919) placed post-climax but chronologically pre-raid;
-    requires a flashback signal (e.g., scene-break with date/time stamp) before final export
-    or the reader encounters cause after effect.
+    recruitment backstory (beats 3904–3919) placed post-climax but chronologically pre-raid.
+    **Flashback signal SHIPPED** (2026-07-05): beat 3907 (SortKey 28500) opens with
+    `*Day 3 — noodle shop on 21st, cash and copper*` as temporal anchor.
 11. The Surfacing (Ensemble climax)
 12. Voluntary Recall (Ensemble finale)
 
@@ -222,7 +222,16 @@ she knows; her body does.
 - Explain Corvin's inadmissibility. The prose shows what he proves; the structure shows
   why it can't be used.
 
-Score: **90.95/100** (N=20, OpenAI-only, CI ±0.66; calibrated story, 2026-06-22).
+**Score history:**
+- **90.95/100** — 2026-06-22, N=20, OpenAI-only (direct GPT endpoint), CI ±0.66. Calibrated
+  story; 568 beats. This is the OpenAI-calibrated baseline.
+- **87.4/100** — 2026-07-05, N=179, claude-sonnet-4-6 only (all providers routing through
+  Anthropic API, no model diversity). 5 of 6 segments scored; segment 6 (beats 515–559,
+  Voluntary Recall) unscored (API credit exhaustion). SD 3.4, CI ±0.5.
+  Segment breakdown: 1/6 86.6 · 2/6 82.5 · 3/6 88.7 · 4/6 90.0 · 5/6 90.8 · 6/6 0.0.
+  Weakness tags: POV intercutting (Part 2), cold-presence repetition, mid-section momentum.
+  **A new confirming run is needed** after: (a) API credits replenished, (b) direct
+  OpenAI/Gemini endpoints restored (not Anthropic routing). 12 beats improved 2026-07-05.
 
 ## 8. User stories {#SS-DWIACE-8}
 
@@ -236,4 +245,8 @@ Score: **90.95/100** (N=20, OpenAI-only, CI ±0.66; calibrated story, 2026-06-22
 - **DWIACE-US-5 ✅** Celeste beats merged into story beat sequence for full dual-POV
   scoring — verified 2026-07-03: Ch1/Ch4/Ch7 interleaved per §6, no forward knowledge leaks
   (logic audit `audit-outlines-2026-07-03/logic/DWIACE.md` §2).
-- **DWIACE-US-6 ⬜** Mid-section exposition density (beats ~179–190) trimmed.
+- **DWIACE-US-6 ⬜** Mid-section exposition density addressed. Approach: EXPANSION (thin
+  1-paragraph data-dumps expanded into dramatic scenes), not trimming. Beats expanded:
+  3415, 3483, 3515, 3524, 3976 (prior session). Revelation sequence (Celeste/Pilsen arc)
+  improved: beats 3969–3971, Part 1 train arc: beats 3931, 3938 (2026-07-05). Part 2 still
+  weakest segment (82.5) in July 5 run. Confirming ≥90 run needed before ✅.
