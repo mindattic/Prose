@@ -82,7 +82,7 @@ const SYSTEM = `You generate descriptions for corporate subsidiaries in GLMZ 220
 World rules:
 - Currency is Φ (Quanta), never dollars
 - Tiers 1-5 (1=poorest Shelf districts, 5=corporate elite)
-- No city police — Arcturus Civil Security is enforcement
+- No city police — ArcSec is enforcement
 - CorpoNations are sovereign entities, subsidiaries are their operating arms with separate branding
 - Tone: matter-of-fact worldbuilding prose, slightly cynical, specific and grounded
 - Do NOT mention brand names of real-world companies

@@ -968,9 +968,9 @@ List nodes with their latest review score, word count, and estimated page count 
 
 ### `list_stories`
 
-List nodes. Use kind='story' to list all root stories (no parent); kind='chapter' for all sub-nodes (contain beats). Returns a flat list of id, slug, title, kind, status, beat-count, stale-count.
+List nodes. Use kind='story' to list all root narratives (includes both kind='story' and kind='book'); kind='chapter' for all sub-nodes (contain beats). Returns a flat list of id, slug, title, kind, status, beat-count, stale-count.
 
-- `kind` (string, optional) — Optional Kind filter — 'story' (root nodes) or 'chapter' (sub-nodes with beats). Case-insensitive equality match.
+- `kind` (string, optional) — Optional Kind filter — 'story' (root nodes, includes book-kind too) or 'chapter' (sub-nodes with beats) or 'book' (book-only). Case-insensitive equality match.
 - `limit` (int, optional) — Maximum rows to return. Default 100.
 
 ### `narrate_story`

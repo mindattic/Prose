@@ -236,11 +236,12 @@ aggregate assembles. No single authority held enough of the picture. Her consola
 gave her the clearance; nobody expected it to matter.
 
 ### Chapter 4 — The Folder
-Nadia at the dock gate. Bear with the folder. Four minutes. The locker. Yemina is not present
-at the dock; she reconstructs the 0540 hand-off from the contractor drone's archived timestamp
-logs — the same drone noted in Chapter 1 above the Mwangi schoolyard, its sweep pattern wide
-enough to cover the dock gate. The footage is her witness; the Bear/folder scene is
-background-narrated through surveillance records she accesses, not a POV shift to Bear.
+Nadia at the dock gate. Bear with the folder. Four minutes. The locker. Yemina drives to the
+freight dock and watches the 0540 hand-off in real time from thirty feet — she is physically
+present, not remote. The contractor-tier drone noted in Chapter 1 above the Mwangi schoolyard
+has been tracking her movements throughout the investigation; its sweep pattern is wide enough
+to cover the dock gate, and it is watching her watch them. The Bear/folder scene is narrated
+from Yemina's direct POV: she is on the ground, close enough to observe without being observed.
 Yemina's report goes in. The story ends where the investigation hands off to something she cannot follow.
 
 ## 6. Register and voice {#SS-ATTE-6}
@@ -281,7 +282,9 @@ withholding → set-place object + memorized-ticket grievance; moved from weakes
 *strongest* evidence for ObjectsAndGestures + RelationalSubtext); beat 21 (Selvamani's stated
 two-year grievance → dead unsent-submission record); beat 40 ending (editorial self-summary → bare
 intake-reorder gesture; flipped the gateway advisory to pass, panel 5.0/5 all clusters). Four
-plant/payoff pairs registered (drone surveillance, blank-sender assignment, never-closed neuretics,
+plant/payoff pairs registered (drone surveillance — off-books system watches Yemina throughout;
+pays off when the same drone covers the dock gate as she watches the 0540 hand-off in person,
+thirty feet out; blank-sender assignment, never-closed neuretics,
 Lure/Counter interposition) — `reread_reward` now cites them. Emotional depth held at 100.
 
 ## 7. User stories {#SS-ATTE-7}

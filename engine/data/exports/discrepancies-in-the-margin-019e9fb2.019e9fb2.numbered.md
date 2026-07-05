@@ -57,7 +57,7 @@ She went home. She did not cook. She drank a glass of cold water from the tap an
 The Glooms — the Tier 1 fringe where the checkpoint grid ended — six miles east. The bank she would, in four days, walk into for the first time.
 
 [Beat 19]
-The bank was called Pacific Edge Mutual. It did not advertise. It served the Tier 1 residents the corponations did not. Its lobby was ten feet wide and lit by a single yellowed fixture. Its safe-deposit boxes were the smallest size the city's deposit-box industry made. She rented a box for eleven years' prepaid, paid in cash, and gave a name that was not Rhea Adesanya-MacGregor and was not yet Sable.
+The bank was called Pacific Edge Mutual. It did not advertise. It served the Tier 1 residents the corponations did not. Its lobby was ten feet wide and lit by a single yellowed fixture. Its safe-deposit boxes were the smallest size the city's deposit-box industry made. She rented a box for eleven years' prepaid, paid in cash, and gave a name that was not Rhea MacGregor and was not yet Sable.
 
 [Beat 20]
 She had spent two days, before walking to the bank, copying the OPTIC-7 document onto thermal paper in a cipher of her own design. The cipher's seed was a page from a book her grandmother had kept on the windowsill in the spare room — a page she had memorized at fourteen, for reasons she had never been able to name. The cipher was simple; it was not intended to survive a serious cryptanalytic attack. It was intended to survive long enough for her to be elsewhere.

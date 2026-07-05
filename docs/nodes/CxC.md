@@ -84,10 +84,9 @@ Rook learns the shape of it because the pieces finally line up: Stave surfaces t
 under duress; Adalemo, no longer willing to leave it uncounted, brings what PEREGRINE knew; and
 Soraya, who has carried the twenty-one as the one unaudited thing in a life of audits, asks Rook
 for the job she has been dreading since MxG — not extraction, not a crack, but **a rescue and a
-burning-down.** What Soraya's partition — the one NxR cracked — actually contained was the
-Marrow's internal biometric access layer: credentials Soraya seeded before leaving Axiom, when
-she suspected what the Helix partnership was quietly building. That data is the door Beat 8 pays
-off; without it the secure wing stays sealed.
+burning-down.** Soraya's partition contains her own covert research file: Class V pathway documentation + a
+complete shutdown sequence. Adalemo separately provides the access credential (his credential was
+never revoked). Both are needed; Beat 8 pays off both.
 
 ## §3 — The Problem
 
@@ -130,8 +129,8 @@ from MxG and NxR; this story resolves each one's standing thread.
 - **Scout (Remi Diallo)** — *Arc:* the Exo who lives in absence has to be *present* —
   the twenty-one can only be found by someone who can thread into the Marrow and come back. The
   crawler named Gerald she never names finally matters out loud.
-  *(Scout is an NSB operator — see §11. Gerald is her frame; the Marrow infiltration is a
-  projection op, not a physical breach.)*
+  *(Scout physically walks the Marrow ramp — in her body, in her boots — with Gerald beside her.
+  This is deliberate; her arc is the inversion of her Exo tradecraft. Beat 10 IS a physical breach.)*
 - **Stave** — *Arc:* the debt that has been buying their silence. The subject who didn't come back
   is connected to the Marrow; Stave's crack-from-the-outside skill is the only way in, and the
   only way to face what they've been not-facing.
@@ -141,9 +140,9 @@ from MxG and NxR; this story resolves each one's standing thread.
 - **Seun Adalemo** — *Arc:* the mirror finishes crossing. What he was willing to leave uncounted
   he now counts. Not an enemy neutralized; a man who switched which ledger he served. *What
   PEREGRINE knew:* the Marrow's external network perimeter topology — mapped during NxR's
-  surveillance phase — and the Black Ice kill-switch parameters for the return handshake.
-  Adalemo's intel is what makes Scout's projection survivable; Soraya's partition is what gets her
-  through the door. The two contributions are structurally distinct.
+  surveillance phase — and his own credential, never formally revoked, which is the key to the
+  secure wing. Soraya's partition documents what is behind it. The two contributions are
+  structurally distinct.
 
 **New (to be seeded before prose):**
 - The **Triumvirate executive** running the Marrow program — the trilogy's human face of the
@@ -270,7 +269,7 @@ that CxC's finale pays off — it is already in both codas; CxC §14 closes it.
 - [x] StoryNode `CxC` created (`marrow-chrome-019f0968`) + 14-beat spine
 - [x] Clue-plant refactor applied to MxG (#4745 acquisition-for-buyer) + NxR (#4841 relocation-as-harvest)
 - [x] Prose generated (Sonnet→Opus) + reflow + AntagonistCost structural beat added → **review 87.6%** (2026-06-27). Trilogy: MxG 87.1 / NxR 87.7 / CxC 87.6 — all ≥87.
-- [x] Round-2 Opus pass (2026-06-28): purged Kyle counting/arithmetic register from B1/B4; cut AffectationLines chrome simile (B1); consolidated B4 (was re-delivering B3's harvest reveal) into a Rook↔Soraya confession two-hander; trimmed crew-history interior (B2) + Soraya technical block (B8) + Helix-deduction blocks (B6/B7) to dialogue/present-moment; added AntagonistCost + active-Rook opening to B9 (Helix CREDENTIAL OBSERVED flag forces her to abandon the registry probe mid-reach); trimmed Anneke confrontation (B12) and fixed east/west-core continuity error; reconciled Gerald continuity across B9–B13 (crawler/rig, NOT a child — removed "boy/son/children" framing); thinned finger-tap + crimson-light motifs. Did not re-review.
+- [x] Round-2 Opus pass (2026-06-28): purged Kyle counting/arithmetic register from B1/B4; cut AffectationLines chrome simile (B1); consolidated B4 (was re-delivering B3's harvest reveal) into a Rook↔Soraya confession two-hander; trimmed crew-history interior (B2) + Soraya technical block (B8) + Helix-deduction blocks (B6/B7) to dialogue/present-moment; added AntagonistCost + active-Rook opening to B9; trimmed Anneke confrontation (B12) and fixed east/west-core continuity error; reconciled Gerald continuity across B9–B13 (crawler/rig, NOT a child — removed "boy/son/children" framing); thinned finger-tap + crimson-light motifs. Did not re-review.
 - [x] Terminology updated 2026-07-04: "Rider" → "Exo" (Scout); "strand"/"strand code" → "story"/"node code" throughout (SS-A43/SS-A38); SS-A26 Helix Biosystems arc canon merged into §2/§4/§5.
 - [ ] Logic sweep (SS-A44 default QA) — run before next export.
 - [ ] Export (`--publish-docx`); toward-93 polish noted by panel: thicken Vox's prior presence, thin mid-beat ledger exposition, de-dupe Beats 6–7 vs 3–5.
@@ -287,19 +286,18 @@ not a person. Scout's arc (never naming it) is about her habit of maintaining em
 from everything she inhabits. When it finally matters out loud, she names it. The naming is the
 arc completing, not a discovery that Gerald was alive.
 
-**The Marrow infiltration (Beat 10)** is an NSB projection op, not a physical breach. Scout
-"burns a frame" (GLMZ street register) into the Marrow by projecting Gerald through whatever
-network access the team has established. Key vulnerability: the **return handshake** — if the
-Marrow runs **Black Ice** (destructive resonance countermeasure), Scout does not come back
-cleanly. This is the operational risk that makes Beat 10 genuinely high-stakes.
+**The Marrow infiltration (Beat 10)** is a physical breach. Scout walks the ramp in her body,
+in her boots, with Gerald beside her. This is the deliberate inversion of her Exo tradecraft —
+she cannot be the absence in a building she is going down into. The operational risk is exposure
+and response from Helix security, not a return-handshake disruption.
 
 **Exo vocabulary for prose:**
 - "Burning a frame" — executing a projection op (GLMZ street)
 - "Threading out" / "going deep" — beginning / being in projection
 - "Surfacing" — successful return
 - "The Husk" — Scout's body, held in managed low-activity suspension while she projects into
-  Gerald. Not the same as the Shell (which is Gerald, the inhabited frame). If Helix's Black Ice
-  disrupts the return handshake, Scout surfaces into a degraded Husk.
+  Gerald (a crawler — a purpose-built projection frame, not an inhabited NSB host body). In CxC
+  Scout is physically present; the Husk is not in managed suspension for this op.
 - "Black Ice" — the countermeasure that kills Exos; Helix runs corpo-grade adaptive Black Ice
 
 **Job-title rule (SS-A38):** "Rider" is retired. Scout is an Exo in prose and dialogue.

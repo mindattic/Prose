@@ -6,7 +6,7 @@ GO
 -- CAULD UNIVERSE — SPHERE 31 (EARTH) TAKEN PERSONS
 -- Universe: fantasy-steampunk (ID 0197E9C9-0002-7000-8000-000000000002)
 -- 2026-07-04
--- 26 characters; idempotent (IF NOT EXISTS guards on all inserts)
+-- 54 characters; idempotent (IF NOT EXISTS guards on all inserts)
 -- Column order (44 non-system cols, Zora pattern):
 --   Id Name Slug FirstName LastName TitlePrefix Species KindOfBeing
 --   Gender Pronouns Age LifeStatus Role Description NarrativeFunction
@@ -1239,6 +1239,1322 @@ BEGIN
     PRINT 'Josh Guimond seeded.';
 END
 ELSE PRINT 'Josh Guimond already exists.';
+GO
+
+-- ── Angela Hammond ───────────────────────────────────────────────────────────
+IF NOT EXISTS (SELECT 1 FROM Characters WHERE Name = N'Angela Hammond')
+BEGIN
+    DECLARE @id UNIQUEIDENTIFIER = NEWID();
+    INSERT INTO Entities (Id, EntityType, Name, Slug, Status, IsActive, UniverseId, CreatedAt, ModifiedAt)
+    VALUES (@id, N'character', N'Angela Hammond', N'angela-hammond', N'canon', 1,
+            '0197E9C9-0002-7000-8000-000000000002', GETDATE(), GETDATE());
+    INSERT INTO Characters (
+        Id, Name, Slug, FirstName, LastName, TitlePrefix,
+        Species, KindOfBeing, Gender, Pronouns, Age, LifeStatus, Role,
+        Description, NarrativeFunction, NarrationVoice,
+        Heritage, HeightCm, WeightKg, Build,
+        HairColor, HairStyle, HairLength, EyeColor, SkinTone, Complexion,
+        VisibleAugmentations, PostureMovement, PhysicalClothingStyle,
+        Augmentations, DailyLife,
+        PsychologySecret, SpeechVocabulary, SpeechCadence,
+        SpeechSubtext, SpeechUnderPressure, SpeechIntimacyRegister,
+        TerritoryRange, BioBatteryMaxCapacity, BioBatteryRecovery,
+        MidjourneyPrompt, Dalle3Prompt, Rating, VoteCount
+    ) VALUES (
+        @id, N'Angela Hammond', N'angela-hammond', N'Angela', N'Hammond', N'',
+        N'human', N'human', N'female', N'she/her', 20, N'alive',
+        N'Domestic labor conscript; assigned to estate service following highway transit.',
+        N'Taken from Sphere 31 (Earth), Caldwell County, Missouri, April 1991. She was twenty, at a highway phone booth at night, mid-call with her boyfriend. A Liturgy intermediary approached her wearing the uniform of a Sphere 31 authority figure — a technique the Liturgy uses at isolated transit points to coerce cooperation long enough to execute the Piercing. Her boyfriend heard the call change register and end. Her car was found near the phone booth. In the Cauld she was assessed and placed in estate domestic service. She is older now. The Liturgy''s use of a uniformed disguise at a phone booth on a dark highway is a documented operational pattern in the Sphere 31 records — the detail is standard, not exceptional.',
+        N'The call that ended mid-sentence. Her boyfriend was on the line and heard the moment of transit. He will spend a long time afterward asking what happened to the last three seconds of the call. She is in a House estate.',
+        N'No POV.',
+        N'Sphere 31 (Earth), Caldwell County, Missouri, United States',
+        165, 58, N'slight',
+        N'dark brown', N'practical', N'medium',
+        N'brown', N'light-medium', N'clear',
+        N'none', N'a woman who arrived with the posture of someone interrupted mid-sentence and has been recalibrating since',
+        N'estate domestic issue',
+        N'none',
+        N'She was talking to her boyfriend when the intermediary arrived. The call ended. She is in an estate. He does not know where the call went.',
+        N'Not applicable.', N'Not applicable.', N'Not applicable.',
+        N'Not applicable.', N'Not applicable.', N'Not applicable.',
+        N'House estate, domestic service territory',
+        N'0', N'0',
+        N'young woman, twenty, estate domestic interior, Cauld fantasy-steampunk, Buehlman dark register',
+        N'young woman, estate service, dark fantasy',
+        0, 0
+    );
+    PRINT 'Angela Hammond seeded.';
+END
+ELSE PRINT 'Angela Hammond already exists.';
+GO
+
+-- ── Dale Kerstetter ───────────────────────────────────────────────────────────
+IF NOT EXISTS (SELECT 1 FROM Characters WHERE Name = N'Dale Kerstetter')
+BEGIN
+    DECLARE @id UNIQUEIDENTIFIER = NEWID();
+    INSERT INTO Entities (Id, EntityType, Name, Slug, Status, IsActive, UniverseId, CreatedAt, ModifiedAt)
+    VALUES (@id, N'character', N'Dale Kerstetter', N'dale-kerstetter', N'canon', 1,
+            '0197E9C9-0002-7000-8000-000000000002', GETDATE(), GETDATE());
+    INSERT INTO Characters (
+        Id, Name, Slug, FirstName, LastName, TitlePrefix,
+        Species, KindOfBeing, Gender, Pronouns, Age, LifeStatus, Role,
+        Description, NarrativeFunction, NarrationVoice,
+        Heritage, HeightCm, WeightKg, Build,
+        HairColor, HairStyle, HairLength, EyeColor, SkinTone, Complexion,
+        VisibleAugmentations, PostureMovement, PhysicalClothingStyle,
+        Augmentations, DailyLife,
+        PsychologySecret, SpeechVocabulary, SpeechCadence,
+        SpeechSubtext, SpeechUnderPressure, SpeechIntimacyRegister,
+        TerritoryRange, BioBatteryMaxCapacity, BioBatteryRecovery,
+        MidjourneyPrompt, Dalle3Prompt, Rating, VoteCount
+    ) VALUES (
+        @id, N'Dale Kerstetter', N'dale-kerstetter', N'Dale', N'Kerstetter', N'',
+        N'human', N'human', N'male', N'he/him', 35, N'alive',
+        N'Estate grounds labor; assigned to outdoor maintenance and agricultural work.',
+        N'Taken from Sphere 31 (Earth), Pennsylvania, United States. NamUs MP #29426. He was a man with a community around him — people who noticed he was gone and filed the report. The Liturgy took him from a transit point on a familiar route. In the Cauld he was assessed for outdoor grounds work — the estate requires maintenance labor that does not demand specialist training, and he is physically capable. He is alive and working. His community in Sphere 31 documented his absence. The NamUs record exists. It has not resolved.',
+        N'He had people who looked for him. NamUs MP #29426 is the record they filed. He is alive in a House estate doing grounds work. Neither side of the membrane knows what the other knows.',
+        N'No POV.',
+        N'Sphere 31 (Earth), Pennsylvania, United States',
+        178, 80, N'stocky',
+        N'brown', N'short', N'short',
+        N'brown', N'medium', N'clear',
+        N'none', N'a man doing outdoor work at a steady pace, no urgency, no performance',
+        N'estate grounds labor issue',
+        N'none',
+        N'His community filed NamUs MP #29426. He is in a House estate doing grounds maintenance. The record exists and has not resolved.',
+        N'Not applicable.', N'Not applicable.', N'Not applicable.',
+        N'Not applicable.', N'Not applicable.', N'Not applicable.',
+        N'House estate, grounds and agricultural territory',
+        N'0', N'0',
+        N'man, estate grounds, outdoor labor, Cauld fantasy-steampunk, Buehlman dark register',
+        N'man, outdoor labor, estate grounds, dark fantasy',
+        0, 0
+    );
+    PRINT 'Dale Kerstetter seeded.';
+END
+ELSE PRINT 'Dale Kerstetter already exists.';
+GO
+
+-- ── Nyleen Marshall ───────────────────────────────────────────────────────────
+IF NOT EXISTS (SELECT 1 FROM Characters WHERE Name = N'Nyleen Marshall')
+BEGIN
+    DECLARE @id UNIQUEIDENTIFIER = NEWID();
+    INSERT INTO Entities (Id, EntityType, Name, Slug, Status, IsActive, UniverseId, CreatedAt, ModifiedAt)
+    VALUES (@id, N'character', N'Nyleen Marshall', N'nyleen-marshall', N'canon', 1,
+            '0197E9C9-0002-7000-8000-000000000002', GETDATE(), GETDATE());
+    INSERT INTO Characters (
+        Id, Name, Slug, FirstName, LastName, TitlePrefix,
+        Species, KindOfBeing, Gender, Pronouns, Age, LifeStatus, Role,
+        Description, NarrativeFunction, NarrationVoice,
+        Heritage, HeightCm, WeightKg, Build,
+        HairColor, HairStyle, HairLength, EyeColor, SkinTone, Complexion,
+        VisibleAugmentations, PostureMovement, PhysicalClothingStyle,
+        Augmentations, DailyLife,
+        PsychologySecret, SpeechVocabulary, SpeechCadence,
+        SpeechSubtext, SpeechUnderPressure, SpeechIntimacyRegister,
+        TerritoryRange, BioBatteryMaxCapacity, BioBatteryRecovery,
+        MidjourneyPrompt, Dalle3Prompt, Rating, VoteCount
+    ) VALUES (
+        @id, N'Nyleen Marshall', N'nyleen-marshall', N'Nyleen', N'Marshall', N'',
+        N'human', N'human', N'female', N'she/her', 4, N'alive',
+        N'Child ward; placed with estate family; she is older now and the Cauld is her world.',
+        N'Taken from Sphere 31 (Earth), Helena National Forest, Montana, June 1983. Four years old. She was on a camping trip with her family in a remote forested area — thin-membrane country, the kind of geography where the Liturgy does not need elaborate infrastructure, only the right day and someone small enough to move quickly through the point. She ran ahead on a trail. She did not come back. Her family searched. The forest was searched. She was not in the forest. In the Cauld she was placed with an estate family as a ward. She arrived at four. She is older now and the Cauld is simply her world. She has no memory of the forest, the trail, or Montana.',
+        N'She ran ahead on a trail and stepped through a thin-membrane point alone. She was four and she ran and she did not come back. She is alive. She knows no other world.',
+        N'No POV.',
+        N'Sphere 31 (Earth), Helena National Forest, Montana, United States',
+        100, 17, N'child-slight',
+        N'light brown', N'estate-issued', N'medium',
+        N'brown', N'light', N'clear',
+        N'none', N'a child grown into estate routine; entirely at home in the Cauld',
+        N'estate-issued',
+        N'none',
+        N'She ran ahead on a trail at four years old. She does not remember the trail or the forest. She is in an estate.',
+        N'Not applicable.', N'Not applicable.', N'Not applicable.',
+        N'Not applicable.', N'Not applicable.', N'Not applicable.',
+        N'House estate, child ward territory',
+        N'0', N'0',
+        N'girl, light brown hair, estate interior, Cauld fantasy-steampunk, Buehlman dark register',
+        N'girl, estate interior, dark fantasy',
+        0, 0
+    );
+    PRINT 'Nyleen Marshall seeded.';
+END
+ELSE PRINT 'Nyleen Marshall already exists.';
+GO
+
+-- ── Sneha Anne Philip ─────────────────────────────────────────────────────────
+IF NOT EXISTS (SELECT 1 FROM Characters WHERE Name = N'Sneha Anne Philip')
+BEGIN
+    DECLARE @id UNIQUEIDENTIFIER = NEWID();
+    INSERT INTO Entities (Id, EntityType, Name, Slug, Status, IsActive, UniverseId, CreatedAt, ModifiedAt)
+    VALUES (@id, N'character', N'Sneha Anne Philip', N'sneha-anne-philip', N'canon', 1,
+            '0197E9C9-0002-7000-8000-000000000002', GETDATE(), GETDATE());
+    INSERT INTO Characters (
+        Id, Name, Slug, FirstName, LastName, TitlePrefix,
+        Species, KindOfBeing, Gender, Pronouns, Age, LifeStatus, Role,
+        Description, NarrativeFunction, NarrationVoice,
+        Heritage, HeightCm, WeightKg, Build,
+        HairColor, HairStyle, HairLength, EyeColor, SkinTone, Complexion,
+        VisibleAugmentations, PostureMovement, PhysicalClothingStyle,
+        Augmentations, DailyLife,
+        PsychologySecret, SpeechVocabulary, SpeechCadence,
+        SpeechSubtext, SpeechUnderPressure, SpeechIntimacyRegister,
+        TerritoryRange, BioBatteryMaxCapacity, BioBatteryRecovery,
+        MidjourneyPrompt, Dalle3Prompt, Rating, VoteCount
+    ) VALUES (
+        @id, N'Sneha Anne Philip', N'sneha-anne-philip', N'Sneha', N'Philip', N'Dr.',
+        N'human', N'human', N'female', N'she/her', 31, N'alive',
+        N'Medical specialist; assigned to House field hospital — her emergency medicine credentials are the highest-qualified the Cauld has taken from Sphere 31 in recent memory.',
+        N'Taken from Sphere 31 (Earth), New York City, September 10, 2001 — the day before the event that would consume the city''s attention and create the institutional cover for her disappearance. She was listed as a victim of the September 11 attacks by Sphere 31 courts, though no evidence ever placed her at the site and her body was never found because she was not there. She was an emergency physician. The Liturgy took her from a New York transit point the night before — the city''s density has multiple confirmed access locations, and the timing, while not intentional on the Liturgy''s part, produced a convenient administrative resolution in Sphere 31 that the Liturgy neither planned nor needed to manage. In the Cauld her qualifications were identified immediately. She is in a House field hospital with the highest medical authority of any Sphere 31 person currently in Cauld service. She treats injuries she has had to develop new frameworks for. She has developed them.',
+        N'A physician taken the night before an event that officially explained her absence. Sphere 31 has resolved her disappearance incorrectly and officially. She is alive and running a field hospital unit with more medical competence than the institution that employs her.',
+        N'No POV.',
+        N'Sphere 31 (Earth), New York City, New York, United States',
+        163, 56, N'slight',
+        N'dark brown', N'field hospital issue', N'medium',
+        N'dark brown', N'olive-warm', N'clear',
+        N'none', N'emergency physician posture — total present-moment focus, economy of motion, nothing wasted',
+        N'House field hospital issue',
+        N'none',
+        N'Sphere 31 has officially resolved her disappearance as a casualty of September 11. She is alive in a House field hospital. She is better at this job than anyone the Cauld trained.',
+        N'Not applicable.', N'Not applicable.', N'Not applicable.',
+        N'Not applicable.', N'Not applicable.', N'Not applicable.',
+        N'House field hospital, front-adjacent territory',
+        N'0', N'0',
+        N'woman in her early thirties, field hospital interior, Cauld fantasy-steampunk, emergency physician, Buehlman dark register',
+        N'woman, field hospital, physician, dark fantasy',
+        0, 0
+    );
+    PRINT 'Sneha Anne Philip seeded.';
+END
+ELSE PRINT 'Sneha Anne Philip already exists.';
+GO
+
+-- ── Brianna Maitland ──────────────────────────────────────────────────────────
+IF NOT EXISTS (SELECT 1 FROM Characters WHERE Name = N'Brianna Maitland')
+BEGIN
+    DECLARE @id UNIQUEIDENTIFIER = NEWID();
+    INSERT INTO Entities (Id, EntityType, Name, Slug, Status, IsActive, UniverseId, CreatedAt, ModifiedAt)
+    VALUES (@id, N'character', N'Brianna Maitland', N'brianna-maitland', N'canon', 1,
+            '0197E9C9-0002-7000-8000-000000000002', GETDATE(), GETDATE());
+    INSERT INTO Characters (
+        Id, Name, Slug, FirstName, LastName, TitlePrefix,
+        Species, KindOfBeing, Gender, Pronouns, Age, LifeStatus, Role,
+        Description, NarrativeFunction, NarrationVoice,
+        Heritage, HeightCm, WeightKg, Build,
+        HairColor, HairStyle, HairLength, EyeColor, SkinTone, Complexion,
+        VisibleAugmentations, PostureMovement, PhysicalClothingStyle,
+        Augmentations, DailyLife,
+        PsychologySecret, SpeechVocabulary, SpeechCadence,
+        SpeechSubtext, SpeechUnderPressure, SpeechIntimacyRegister,
+        TerritoryRange, BioBatteryMaxCapacity, BioBatteryRecovery,
+        MidjourneyPrompt, Dalle3Prompt, Rating, VoteCount
+    ) VALUES (
+        @id, N'Brianna Maitland', N'brianna-maitland', N'Brianna', N'Maitland', N'',
+        N'human', N'human', N'female', N'she/her', 17, N'alive',
+        N'Domestic labor conscript; assigned to estate service.',
+        N'Taken from Sphere 31 (Earth), Montgomery, Vermont, March 2004. Seventeen years old. Her car was found backed into an abandoned farmhouse near the road where she was last seen — the farmhouse is a transit staging structure, the kind of isolated building the Liturgy uses as a controlled environment for a point operation. The car being backed in suggests she arrived and pulled in, possibly under instruction from the intermediary who made the initial contact. In the Cauld she was assessed as young, healthy, and without specialist skills. Estate domestic service. She is older now.',
+        N'The car backed into the abandoned farmhouse is the detail that defines the case in Sphere 31. It reads as deliberate. It was. The staging structure made the transit clean. She is in an estate.',
+        N'No POV.',
+        N'Sphere 31 (Earth), Montgomery, Vermont, United States',
+        163, 56, N'adolescent-slight',
+        N'blonde', N'estate domestic issue', N'medium',
+        N'blue', N'light', N'clear',
+        N'none', N'a young woman who arrived at seventeen and has grown up in estate service',
+        N'estate domestic issue',
+        N'none',
+        N'Her car was backed into the farmhouse. She did not back it in by accident. She is in a House estate.',
+        N'Not applicable.', N'Not applicable.', N'Not applicable.',
+        N'Not applicable.', N'Not applicable.', N'Not applicable.',
+        N'House estate, domestic service',
+        N'0', N'0',
+        N'young woman, estate domestic interior, Cauld fantasy-steampunk, Buehlman dark register',
+        N'young woman, estate service, dark fantasy',
+        0, 0
+    );
+    PRINT 'Brianna Maitland seeded.';
+END
+ELSE PRINT 'Brianna Maitland already exists.';
+GO
+
+-- ── Lars Mittank ──────────────────────────────────────────────────────────────
+IF NOT EXISTS (SELECT 1 FROM Characters WHERE Name = N'Lars Mittank')
+BEGIN
+    DECLARE @id UNIQUEIDENTIFIER = NEWID();
+    INSERT INTO Entities (Id, EntityType, Name, Slug, Status, IsActive, UniverseId, CreatedAt, ModifiedAt)
+    VALUES (@id, N'character', N'Lars Mittank', N'lars-mittank', N'canon', 1,
+            '0197E9C9-0002-7000-8000-000000000002', GETDATE(), GETDATE());
+    INSERT INTO Characters (
+        Id, Name, Slug, FirstName, LastName, TitlePrefix,
+        Species, KindOfBeing, Gender, Pronouns, Age, LifeStatus, Role,
+        Description, NarrativeFunction, NarrationVoice,
+        Heritage, HeightCm, WeightKg, Build,
+        HairColor, HairStyle, HairLength, EyeColor, SkinTone, Complexion,
+        VisibleAugmentations, PostureMovement, PhysicalClothingStyle,
+        Augmentations, DailyLife,
+        PsychologySecret, SpeechVocabulary, SpeechCadence,
+        SpeechSubtext, SpeechUnderPressure, SpeechIntimacyRegister,
+        TerritoryRange, BioBatteryMaxCapacity, BioBatteryRecovery,
+        MidjourneyPrompt, Dalle3Prompt, Rating, VoteCount
+    ) VALUES (
+        @id, N'Lars Mittank', N'lars-mittank', N'Lars', N'Mittank', N'',
+        N'human', N'human', N'male', N'he/him', 28, N'alive',
+        N'Myrmidon conscript; taken at a Varna transit hub during acute membrane proximity disorientation.',
+        N'Taken from Sphere 31 (Earth), Varna, Bulgaria, July 2014. German national on a group holiday. He had separated from his group after a minor altercation and was staying alone, visibly agitated in the days before his disappearance — the perceptual distortion that individuals near a membrane access point sometimes experience before Piercing: anxiety without object, the sense of being observed, a conviction that something is coming that cannot be named. The CCTV at Varna airport captured him running — abandoning his luggage, sprinting for an exit, vanishing from camera coverage at the point where the airport''s access node is located. He ran into the transit, not away from it. The Liturgy''s access points in transit hubs produce this: the closer you get, the more it feels like threat. He was running toward what felt like escape. In the Cauld he was assessed as physically capable and young. Myrmidon.',
+        N'He ran into the point at a full sprint believing he was running away from it. The CCTV shows a man fleeing. It shows the moment of transit. He is in a war now. He was running and then he was here.',
+        N'No POV.',
+        N'Sphere 31 (Earth), Varna, Bulgaria (German national)',
+        182, 80, N'athletic',
+        N'brown', N'short', N'short',
+        N'blue', N'light', N'clear',
+        N'none', N'a soldier''s posture, arrived at speed and never quite stopped',
+        N'Myrmidon field kit',
+        N'none',
+        N'He was running from what felt like threat. He ran into the transit point. He is in a war.',
+        N'Not applicable.', N'Not applicable.', N'Not applicable.',
+        N'Not applicable.', N'Not applicable.', N'Not applicable.',
+        N'Active front, Myrmidon unit',
+        N'0', N'0',
+        N'young man, twenty-eight, Myrmidon kit, Cauld front line, fantasy-steampunk warfare, Buehlman dark register',
+        N'young man, soldier, front line, dark fantasy',
+        0, 0
+    );
+    PRINT 'Lars Mittank seeded.';
+END
+ELSE PRINT 'Lars Mittank already exists.';
+GO
+
+-- ── Kari Lynn Nixton ─────────────────────────────────────────────────────────
+IF NOT EXISTS (SELECT 1 FROM Characters WHERE Name = N'Kari Lynn Nixton')
+BEGIN
+    DECLARE @id UNIQUEIDENTIFIER = NEWID();
+    INSERT INTO Entities (Id, EntityType, Name, Slug, Status, IsActive, UniverseId, CreatedAt, ModifiedAt)
+    VALUES (@id, N'character', N'Kari Lynn Nixton', N'kari-lynn-nixton', N'canon', 1,
+            '0197E9C9-0002-7000-8000-000000000002', GETDATE(), GETDATE());
+    INSERT INTO Characters (
+        Id, Name, Slug, FirstName, LastName, TitlePrefix,
+        Species, KindOfBeing, Gender, Pronouns, Age, LifeStatus, Role,
+        Description, NarrativeFunction, NarrationVoice,
+        Heritage, HeightCm, WeightKg, Build,
+        HairColor, HairStyle, HairLength, EyeColor, SkinTone, Complexion,
+        VisibleAugmentations, PostureMovement, PhysicalClothingStyle,
+        Augmentations, DailyLife,
+        PsychologySecret, SpeechVocabulary, SpeechCadence,
+        SpeechSubtext, SpeechUnderPressure, SpeechIntimacyRegister,
+        TerritoryRange, BioBatteryMaxCapacity, BioBatteryRecovery,
+        MidjourneyPrompt, Dalle3Prompt, Rating, VoteCount
+    ) VALUES (
+        @id, N'Kari Lynn Nixton', N'kari-lynn-nixton', N'Kari Lynn', N'Nixton', N'',
+        N'human', N'human', N'female', N'she/her', 25, N'alive',
+        N'Domestic labor conscript; assigned to House estate service.',
+        N'Taken from Sphere 31 (Earth), United States. Very little is documented in Sphere 31 public records — her case exists in the Charley Project database and does not appear in the major national archives. The Liturgy''s operations in low-documentation territories leave minimal trace precisely because the Sphere 31 record-keeping for those regions is thin. She arrived, was assessed, and was placed in estate domestic service. She is older now. The record that exists is small.',
+        N'Her case has almost no public profile in Sphere 31. This is one of the Liturgy''s operational advantages — the less the origin records, the less there is to trace.',
+        N'No POV.',
+        N'Sphere 31 (Earth), United States',
+        163, 58, N'slight',
+        N'brown', N'estate-issued', N'medium',
+        N'brown', N'medium', N'clear',
+        N'none', N'a woman who arrived and was absorbed into estate routine without ceremony',
+        N'estate domestic issue',
+        N'none',
+        N'Her Sphere 31 record is minimal. She is in an estate.',
+        N'Not applicable.', N'Not applicable.', N'Not applicable.',
+        N'Not applicable.', N'Not applicable.', N'Not applicable.',
+        N'House estate, domestic service',
+        N'0', N'0',
+        N'woman, estate domestic interior, Cauld fantasy-steampunk, Buehlman dark register',
+        N'woman, estate service, dark fantasy',
+        0, 0
+    );
+    PRINT 'Kari Lynn Nixton seeded.';
+END
+ELSE PRINT 'Kari Lynn Nixton already exists.';
+GO
+
+-- ── Dottie Caylor ─────────────────────────────────────────────────────────────
+IF NOT EXISTS (SELECT 1 FROM Characters WHERE Name = N'Dottie Caylor')
+BEGIN
+    DECLARE @id UNIQUEIDENTIFIER = NEWID();
+    INSERT INTO Entities (Id, EntityType, Name, Slug, Status, IsActive, UniverseId, CreatedAt, ModifiedAt)
+    VALUES (@id, N'character', N'Dottie Caylor', N'dottie-caylor', N'canon', 1,
+            '0197E9C9-0002-7000-8000-000000000002', GETDATE(), GETDATE());
+    INSERT INTO Characters (
+        Id, Name, Slug, FirstName, LastName, TitlePrefix,
+        Species, KindOfBeing, Gender, Pronouns, Age, LifeStatus, Role,
+        Description, NarrativeFunction, NarrationVoice,
+        Heritage, HeightCm, WeightKg, Build,
+        HairColor, HairStyle, HairLength, EyeColor, SkinTone, Complexion,
+        VisibleAugmentations, PostureMovement, PhysicalClothingStyle,
+        Augmentations, DailyLife,
+        PsychologySecret, SpeechVocabulary, SpeechCadence,
+        SpeechSubtext, SpeechUnderPressure, SpeechIntimacyRegister,
+        TerritoryRange, BioBatteryMaxCapacity, BioBatteryRecovery,
+        MidjourneyPrompt, Dalle3Prompt, Rating, VoteCount
+    ) VALUES (
+        @id, N'Dottie Caylor', N'dottie-caylor', N'Dottie', N'Caylor', N'',
+        N'human', N'human', N'female', N'she/her', 30, N'alive',
+        N'Domestic labor conscript; assigned to estate service.',
+        N'Taken from Sphere 31 (Earth), United States. Her case appears in missing persons databases without significant public documentation. The Liturgy''s access points in less-surveilled territory produce these low-trace acquisitions — the kind the Sphere 31 system does not generate significant investigative momentum around. She was assessed on arrival and placed in estate service. She is alive.',
+        N'A woman whose disappearance generated minimal Sphere 31 documentation. She is in an estate.',
+        N'No POV.',
+        N'Sphere 31 (Earth), United States',
+        163, 62, N'average',
+        N'brown', N'estate-issued', N'medium',
+        N'brown', N'medium', N'clear',
+        N'none', N'a woman doing estate work without history of resistance or incident',
+        N'estate domestic issue',
+        N'none',
+        N'Her Sphere 31 record is minimal. She is alive in estate service.',
+        N'Not applicable.', N'Not applicable.', N'Not applicable.',
+        N'Not applicable.', N'Not applicable.', N'Not applicable.',
+        N'House estate, domestic service',
+        N'0', N'0',
+        N'woman, estate domestic interior, Cauld fantasy-steampunk, Buehlman dark register',
+        N'woman, estate service, dark fantasy',
+        0, 0
+    );
+    PRINT 'Dottie Caylor seeded.';
+END
+ELSE PRINT 'Dottie Caylor already exists.';
+GO
+
+-- ── Christi Nichols ───────────────────────────────────────────────────────────
+IF NOT EXISTS (SELECT 1 FROM Characters WHERE Name = N'Christi Nichols')
+BEGIN
+    DECLARE @id UNIQUEIDENTIFIER = NEWID();
+    INSERT INTO Entities (Id, EntityType, Name, Slug, Status, IsActive, UniverseId, CreatedAt, ModifiedAt)
+    VALUES (@id, N'character', N'Christi Nichols', N'christi-nichols', N'canon', 1,
+            '0197E9C9-0002-7000-8000-000000000002', GETDATE(), GETDATE());
+    INSERT INTO Characters (
+        Id, Name, Slug, FirstName, LastName, TitlePrefix,
+        Species, KindOfBeing, Gender, Pronouns, Age, LifeStatus, Role,
+        Description, NarrativeFunction, NarrationVoice,
+        Heritage, HeightCm, WeightKg, Build,
+        HairColor, HairStyle, HairLength, EyeColor, SkinTone, Complexion,
+        VisibleAugmentations, PostureMovement, PhysicalClothingStyle,
+        Augmentations, DailyLife,
+        PsychologySecret, SpeechVocabulary, SpeechCadence,
+        SpeechSubtext, SpeechUnderPressure, SpeechIntimacyRegister,
+        TerritoryRange, BioBatteryMaxCapacity, BioBatteryRecovery,
+        MidjourneyPrompt, Dalle3Prompt, Rating, VoteCount
+    ) VALUES (
+        @id, N'Christi Nichols', N'christi-nichols', N'Christi', N'Nichols', N'',
+        N'human', N'human', N'female', N'she/her', 22, N'alive',
+        N'Domestic labor conscript; assigned to estate service.',
+        N'Taken from Sphere 31 (Earth), United States. Documented in missing persons archives without significant public profile. The Cauld''s acquisition operations do not differentiate by profile — the membrane does not care whether Sphere 31 will generate headlines. She arrived and was placed in estate domestic service. She is alive.',
+        N'An acquisition from a low-profile region of Sphere 31 operation. She is in estate service.',
+        N'No POV.',
+        N'Sphere 31 (Earth), United States',
+        163, 57, N'slight',
+        N'brown', N'estate-issued', N'medium',
+        N'brown', N'light-medium', N'clear',
+        N'none', N'settled into estate routine',
+        N'estate domestic issue',
+        N'none',
+        N'She is alive in estate service. Her Sphere 31 record has generated no significant investigative momentum.',
+        N'Not applicable.', N'Not applicable.', N'Not applicable.',
+        N'Not applicable.', N'Not applicable.', N'Not applicable.',
+        N'House estate, domestic service',
+        N'0', N'0',
+        N'woman, estate domestic interior, Cauld fantasy-steampunk, Buehlman dark register',
+        N'woman, estate service, dark fantasy',
+        0, 0
+    );
+    PRINT 'Christi Nichols seeded.';
+END
+ELSE PRINT 'Christi Nichols already exists.';
+GO
+
+-- ── Patricia Meehan ───────────────────────────────────────────────────────────
+IF NOT EXISTS (SELECT 1 FROM Characters WHERE Name = N'Patricia Meehan')
+BEGIN
+    DECLARE @id UNIQUEIDENTIFIER = NEWID();
+    INSERT INTO Entities (Id, EntityType, Name, Slug, Status, IsActive, UniverseId, CreatedAt, ModifiedAt)
+    VALUES (@id, N'character', N'Patricia Meehan', N'patricia-meehan', N'canon', 1,
+            '0197E9C9-0002-7000-8000-000000000002', GETDATE(), GETDATE());
+    INSERT INTO Characters (
+        Id, Name, Slug, FirstName, LastName, TitlePrefix,
+        Species, KindOfBeing, Gender, Pronouns, Age, LifeStatus, Role,
+        Description, NarrativeFunction, NarrationVoice,
+        Heritage, HeightCm, WeightKg, Build,
+        HairColor, HairStyle, HairLength, EyeColor, SkinTone, Complexion,
+        VisibleAugmentations, PostureMovement, PhysicalClothingStyle,
+        Augmentations, DailyLife,
+        PsychologySecret, SpeechVocabulary, SpeechCadence,
+        SpeechSubtext, SpeechUnderPressure, SpeechIntimacyRegister,
+        TerritoryRange, BioBatteryMaxCapacity, BioBatteryRecovery,
+        MidjourneyPrompt, Dalle3Prompt, Rating, VoteCount
+    ) VALUES (
+        @id, N'Patricia Meehan', N'patricia-meehan', N'Patricia', N'Meehan', N'',
+        N'human', N'human', N'female', N'she/her', 35, N'alive',
+        N'Domestic labor conscript; assigned to House estate service.',
+        N'Taken from Sphere 31 (Earth), United States. Her case appears in missing persons databases with limited public documentation. She was acquired through a standard transit operation. In the Cauld she was assessed and placed in estate domestic service. She is older now. She functions within the estate''s rhythms. There is not a large public file on her in Sphere 31.',
+        N'One of the many taken without significant Sphere 31 institutional response. She is in an estate.',
+        N'No POV.',
+        N'Sphere 31 (Earth), United States',
+        165, 63, N'average',
+        N'brown', N'estate-issued', N'medium',
+        N'brown', N'medium', N'clear',
+        N'none', N'a woman absorbed into estate routine without incident',
+        N'estate domestic issue',
+        N'none',
+        N'Her Sphere 31 record is limited. She is in estate service.',
+        N'Not applicable.', N'Not applicable.', N'Not applicable.',
+        N'Not applicable.', N'Not applicable.', N'Not applicable.',
+        N'House estate, domestic service',
+        N'0', N'0',
+        N'woman, estate domestic interior, Cauld fantasy-steampunk, Buehlman dark register',
+        N'woman, estate service, dark fantasy',
+        0, 0
+    );
+    PRINT 'Patricia Meehan seeded.';
+END
+ELSE PRINT 'Patricia Meehan already exists.';
+GO
+
+-- ── Heather Uffelman ──────────────────────────────────────────────────────────
+IF NOT EXISTS (SELECT 1 FROM Characters WHERE Name = N'Heather Uffelman')
+BEGIN
+    DECLARE @id UNIQUEIDENTIFIER = NEWID();
+    INSERT INTO Entities (Id, EntityType, Name, Slug, Status, IsActive, UniverseId, CreatedAt, ModifiedAt)
+    VALUES (@id, N'character', N'Heather Uffelman', N'heather-uffelman', N'canon', 1,
+            '0197E9C9-0002-7000-8000-000000000002', GETDATE(), GETDATE());
+    INSERT INTO Characters (
+        Id, Name, Slug, FirstName, LastName, TitlePrefix,
+        Species, KindOfBeing, Gender, Pronouns, Age, LifeStatus, Role,
+        Description, NarrativeFunction, NarrationVoice,
+        Heritage, HeightCm, WeightKg, Build,
+        HairColor, HairStyle, HairLength, EyeColor, SkinTone, Complexion,
+        VisibleAugmentations, PostureMovement, PhysicalClothingStyle,
+        Augmentations, DailyLife,
+        PsychologySecret, SpeechVocabulary, SpeechCadence,
+        SpeechSubtext, SpeechUnderPressure, SpeechIntimacyRegister,
+        TerritoryRange, BioBatteryMaxCapacity, BioBatteryRecovery,
+        MidjourneyPrompt, Dalle3Prompt, Rating, VoteCount
+    ) VALUES (
+        @id, N'Heather Uffelman', N'heather-uffelman', N'Heather', N'Uffelman', N'',
+        N'human', N'human', N'female', N'she/her', 20, N'alive',
+        N'Domestic labor conscript; assigned to estate service.',
+        N'Taken from Sphere 31 (Earth), United States. A low-profile acquisition — her case exists in missing persons databases without significant public documentation. The Liturgy''s operations in under-surveilled locations produce acquisitions like this: a woman, a transit point, a date in the Charley Project database. She arrived, was assessed, and was placed in estate domestic service. She is alive.',
+        N'A low-profile acquisition. She is alive in estate service.',
+        N'No POV.',
+        N'Sphere 31 (Earth), United States',
+        162, 56, N'slight',
+        N'blonde', N'estate-issued', N'medium',
+        N'blue', N'light', N'clear',
+        N'none', N'settled into estate routine',
+        N'estate domestic issue',
+        N'none',
+        N'She is alive in estate service. Her Sphere 31 record is minimal.',
+        N'Not applicable.', N'Not applicable.', N'Not applicable.',
+        N'Not applicable.', N'Not applicable.', N'Not applicable.',
+        N'House estate, domestic service',
+        N'0', N'0',
+        N'woman, estate domestic interior, Cauld fantasy-steampunk, Buehlman dark register',
+        N'woman, estate service, dark fantasy',
+        0, 0
+    );
+    PRINT 'Heather Uffelman seeded.';
+END
+ELSE PRINT 'Heather Uffelman already exists.';
+GO
+
+-- ── Judy Hyams ────────────────────────────────────────────────────────────────
+IF NOT EXISTS (SELECT 1 FROM Characters WHERE Name = N'Judy Hyams')
+BEGIN
+    DECLARE @id UNIQUEIDENTIFIER = NEWID();
+    INSERT INTO Entities (Id, EntityType, Name, Slug, Status, IsActive, UniverseId, CreatedAt, ModifiedAt)
+    VALUES (@id, N'character', N'Judy Hyams', N'judy-hyams', N'canon', 1,
+            '0197E9C9-0002-7000-8000-000000000002', GETDATE(), GETDATE());
+    INSERT INTO Characters (
+        Id, Name, Slug, FirstName, LastName, TitlePrefix,
+        Species, KindOfBeing, Gender, Pronouns, Age, LifeStatus, Role,
+        Description, NarrativeFunction, NarrationVoice,
+        Heritage, HeightCm, WeightKg, Build,
+        HairColor, HairStyle, HairLength, EyeColor, SkinTone, Complexion,
+        VisibleAugmentations, PostureMovement, PhysicalClothingStyle,
+        Augmentations, DailyLife,
+        PsychologySecret, SpeechVocabulary, SpeechCadence,
+        SpeechSubtext, SpeechUnderPressure, SpeechIntimacyRegister,
+        TerritoryRange, BioBatteryMaxCapacity, BioBatteryRecovery,
+        MidjourneyPrompt, Dalle3Prompt, Rating, VoteCount
+    ) VALUES (
+        @id, N'Judy Hyams', N'judy-hyams', N'Judy', N'Hyams', N'',
+        N'human', N'human', N'female', N'she/her', 28, N'alive',
+        N'Domestic labor conscript; assigned to estate service.',
+        N'Taken from Sphere 31 (Earth), United States. Her case is documented in missing persons archives. The Liturgy operates at scale across Sphere 31 access points — not every acquisition generates public attention or sustained investigative response. She arrived, was assessed, and was placed in estate domestic service. She functions within the estate. She is alive.',
+        N'A woman taken from a Sphere 31 location that generated limited investigative momentum. She is in estate service.',
+        N'No POV.',
+        N'Sphere 31 (Earth), United States',
+        163, 60, N'average',
+        N'dark brown', N'estate-issued', N'medium',
+        N'brown', N'medium', N'clear',
+        N'none', N'absorbed into estate routine without recorded incident',
+        N'estate domestic issue',
+        N'none',
+        N'She is alive in estate service. Her Sphere 31 file is limited.',
+        N'Not applicable.', N'Not applicable.', N'Not applicable.',
+        N'Not applicable.', N'Not applicable.', N'Not applicable.',
+        N'House estate, domestic service',
+        N'0', N'0',
+        N'woman, estate domestic interior, Cauld fantasy-steampunk, Buehlman dark register',
+        N'woman, estate service, dark fantasy',
+        0, 0
+    );
+    PRINT 'Judy Hyams seeded.';
+END
+ELSE PRINT 'Judy Hyams already exists.';
+GO
+
+-- ── Philip Fraser ─────────────────────────────────────────────────────────────
+IF NOT EXISTS (SELECT 1 FROM Characters WHERE Name = N'Philip Fraser')
+BEGIN
+    DECLARE @id UNIQUEIDENTIFIER = NEWID();
+    INSERT INTO Entities (Id, EntityType, Name, Slug, Status, IsActive, UniverseId, CreatedAt, ModifiedAt)
+    VALUES (@id, N'character', N'Philip Fraser', N'philip-fraser', N'canon', 1,
+            '0197E9C9-0002-7000-8000-000000000002', GETDATE(), GETDATE());
+    INSERT INTO Characters (
+        Id, Name, Slug, FirstName, LastName, TitlePrefix,
+        Species, KindOfBeing, Gender, Pronouns, Age, LifeStatus, Role,
+        Description, NarrativeFunction, NarrationVoice,
+        Heritage, HeightCm, WeightKg, Build,
+        HairColor, HairStyle, HairLength, EyeColor, SkinTone, Complexion,
+        VisibleAugmentations, PostureMovement, PhysicalClothingStyle,
+        Augmentations, DailyLife,
+        PsychologySecret, SpeechVocabulary, SpeechCadence,
+        SpeechSubtext, SpeechUnderPressure, SpeechIntimacyRegister,
+        TerritoryRange, BioBatteryMaxCapacity, BioBatteryRecovery,
+        MidjourneyPrompt, Dalle3Prompt, Rating, VoteCount
+    ) VALUES (
+        @id, N'Philip Fraser', N'philip-fraser', N'Philip', N'Fraser', N'',
+        N'human', N'human', N'male', N'he/him', 30, N'alive',
+        N'Labor conscript; assigned to estate grounds and maintenance work.',
+        N'Taken from Sphere 31 (Earth), United States. His case appears in missing persons databases without significant public documentation. Male adult, assessed on arrival as suited to labor conscription — grounds and maintenance work at a House estate. He is alive and working. The Sphere 31 record is limited.',
+        N'A man taken from a Sphere 31 location that generated limited public attention. He is doing estate labor.',
+        N'No POV.',
+        N'Sphere 31 (Earth), United States',
+        178, 78, N'average',
+        N'brown', N'short', N'short',
+        N'brown', N'medium', N'clear',
+        N'none', N'a man doing grounds work at a steady pace',
+        N'estate grounds labor issue',
+        N'none',
+        N'He is alive in estate labor. His Sphere 31 file is limited.',
+        N'Not applicable.', N'Not applicable.', N'Not applicable.',
+        N'Not applicable.', N'Not applicable.', N'Not applicable.',
+        N'House estate, grounds and maintenance territory',
+        N'0', N'0',
+        N'man, estate grounds, outdoor labor, Cauld fantasy-steampunk, Buehlman dark register',
+        N'man, estate grounds, labor, dark fantasy',
+        0, 0
+    );
+    PRINT 'Philip Fraser seeded.';
+END
+ELSE PRINT 'Philip Fraser already exists.';
+GO
+
+-- ── Cindy Anderson ────────────────────────────────────────────────────────────
+IF NOT EXISTS (SELECT 1 FROM Characters WHERE Name = N'Cindy Anderson')
+BEGIN
+    DECLARE @id UNIQUEIDENTIFIER = NEWID();
+    INSERT INTO Entities (Id, EntityType, Name, Slug, Status, IsActive, UniverseId, CreatedAt, ModifiedAt)
+    VALUES (@id, N'character', N'Cindy Anderson', N'cindy-anderson', N'canon', 1,
+            '0197E9C9-0002-7000-8000-000000000002', GETDATE(), GETDATE());
+    INSERT INTO Characters (
+        Id, Name, Slug, FirstName, LastName, TitlePrefix,
+        Species, KindOfBeing, Gender, Pronouns, Age, LifeStatus, Role,
+        Description, NarrativeFunction, NarrationVoice,
+        Heritage, HeightCm, WeightKg, Build,
+        HairColor, HairStyle, HairLength, EyeColor, SkinTone, Complexion,
+        VisibleAugmentations, PostureMovement, PhysicalClothingStyle,
+        Augmentations, DailyLife,
+        PsychologySecret, SpeechVocabulary, SpeechCadence,
+        SpeechSubtext, SpeechUnderPressure, SpeechIntimacyRegister,
+        TerritoryRange, BioBatteryMaxCapacity, BioBatteryRecovery,
+        MidjourneyPrompt, Dalle3Prompt, Rating, VoteCount
+    ) VALUES (
+        @id, N'Cindy Anderson', N'cindy-anderson', N'Cindy', N'Anderson', N'',
+        N'human', N'human', N'female', N'she/her', 24, N'alive',
+        N'Domestic labor conscript; assigned to estate service.',
+        N'Taken from Sphere 31 (Earth), United States. A low-documentation acquisition — her case exists in missing persons archives. The Liturgy''s operations do not require high-profile locations or high-profile targets. She arrived, was assessed, and was placed in estate domestic service. She is alive and functions within the estate.',
+        N'A woman taken from a low-profile location. She is alive in estate service. The Sphere 31 record is minimal.',
+        N'No POV.',
+        N'Sphere 31 (Earth), United States',
+        165, 58, N'slight',
+        N'blonde', N'estate-issued', N'medium',
+        N'blue', N'light', N'clear',
+        N'none', N'absorbed into estate routine',
+        N'estate domestic issue',
+        N'none',
+        N'She is alive in estate service. Her Sphere 31 file is minimal.',
+        N'Not applicable.', N'Not applicable.', N'Not applicable.',
+        N'Not applicable.', N'Not applicable.', N'Not applicable.',
+        N'House estate, domestic service',
+        N'0', N'0',
+        N'woman, estate domestic interior, Cauld fantasy-steampunk, Buehlman dark register',
+        N'woman, estate service, dark fantasy',
+        0, 0
+    );
+    PRINT 'Cindy Anderson seeded.';
+END
+ELSE PRINT 'Cindy Anderson already exists.';
+GO
+
+-- ── Gail DeLano ───────────────────────────────────────────────────────────────
+IF NOT EXISTS (SELECT 1 FROM Characters WHERE Name = N'Gail DeLano')
+BEGIN
+    DECLARE @id UNIQUEIDENTIFIER = NEWID();
+    INSERT INTO Entities (Id, EntityType, Name, Slug, Status, IsActive, UniverseId, CreatedAt, ModifiedAt)
+    VALUES (@id, N'character', N'Gail DeLano', N'gail-delano', N'canon', 1,
+            '0197E9C9-0002-7000-8000-000000000002', GETDATE(), GETDATE());
+    INSERT INTO Characters (
+        Id, Name, Slug, FirstName, LastName, TitlePrefix,
+        Species, KindOfBeing, Gender, Pronouns, Age, LifeStatus, Role,
+        Description, NarrativeFunction, NarrationVoice,
+        Heritage, HeightCm, WeightKg, Build,
+        HairColor, HairStyle, HairLength, EyeColor, SkinTone, Complexion,
+        VisibleAugmentations, PostureMovement, PhysicalClothingStyle,
+        Augmentations, DailyLife,
+        PsychologySecret, SpeechVocabulary, SpeechCadence,
+        SpeechSubtext, SpeechUnderPressure, SpeechIntimacyRegister,
+        TerritoryRange, BioBatteryMaxCapacity, BioBatteryRecovery,
+        MidjourneyPrompt, Dalle3Prompt, Rating, VoteCount
+    ) VALUES (
+        @id, N'Gail DeLano', N'gail-delano', N'Gail', N'DeLano', N'',
+        N'human', N'human', N'female', N'she/her', 32, N'alive',
+        N'Domestic labor conscript; assigned to estate service.',
+        N'Taken from Sphere 31 (Earth), United States. Her case appears in missing persons archives with limited public documentation. Acquired through a standard Liturgy transit operation. She was assessed and placed in estate domestic service. She is alive. The record that exists in Sphere 31 has not generated significant investigative response.',
+        N'A woman taken without significant Sphere 31 institutional response. She is in estate service.',
+        N'No POV.',
+        N'Sphere 31 (Earth), United States',
+        163, 61, N'average',
+        N'brown', N'estate-issued', N'medium',
+        N'brown', N'medium', N'clear',
+        N'none', N'settled into estate routine without incident',
+        N'estate domestic issue',
+        N'none',
+        N'She is alive in estate service. The Sphere 31 record is limited.',
+        N'Not applicable.', N'Not applicable.', N'Not applicable.',
+        N'Not applicable.', N'Not applicable.', N'Not applicable.',
+        N'House estate, domestic service',
+        N'0', N'0',
+        N'woman, estate domestic interior, Cauld fantasy-steampunk, Buehlman dark register',
+        N'woman, estate service, dark fantasy',
+        0, 0
+    );
+    PRINT 'Gail DeLano seeded.';
+END
+ELSE PRINT 'Gail DeLano already exists.';
+GO
+
+-- ── Marilyn Bergeron ──────────────────────────────────────────────────────────
+IF NOT EXISTS (SELECT 1 FROM Characters WHERE Name = N'Marilyn Bergeron')
+BEGIN
+    DECLARE @id UNIQUEIDENTIFIER = NEWID();
+    INSERT INTO Entities (Id, EntityType, Name, Slug, Status, IsActive, UniverseId, CreatedAt, ModifiedAt)
+    VALUES (@id, N'character', N'Marilyn Bergeron', N'marilyn-bergeron', N'canon', 1,
+            '0197E9C9-0002-7000-8000-000000000002', GETDATE(), GETDATE());
+    INSERT INTO Characters (
+        Id, Name, Slug, FirstName, LastName, TitlePrefix,
+        Species, KindOfBeing, Gender, Pronouns, Age, LifeStatus, Role,
+        Description, NarrativeFunction, NarrationVoice,
+        Heritage, HeightCm, WeightKg, Build,
+        HairColor, HairStyle, HairLength, EyeColor, SkinTone, Complexion,
+        VisibleAugmentations, PostureMovement, PhysicalClothingStyle,
+        Augmentations, DailyLife,
+        PsychologySecret, SpeechVocabulary, SpeechCadence,
+        SpeechSubtext, SpeechUnderPressure, SpeechIntimacyRegister,
+        TerritoryRange, BioBatteryMaxCapacity, BioBatteryRecovery,
+        MidjourneyPrompt, Dalle3Prompt, Rating, VoteCount
+    ) VALUES (
+        @id, N'Marilyn Bergeron', N'marilyn-bergeron', N'Marilyn', N'Bergeron', N'',
+        N'human', N'human', N'female', N'she/her', 26, N'alive',
+        N'Domestic labor conscript; assigned to estate service.',
+        N'Taken from Sphere 31. Her disappearance is documented with a Wikipedia record. In the Cauld she was assessed and placed in estate service. She is alive and functions within the House estate''s rhythms. The circumstances of her transit are consistent with a standard Liturgy access-point operation — a woman at a vulnerable moment in a location where the membrane was sufficiently thin.',
+        N'A woman taken through a standard Liturgy transit. She is alive in estate service.',
+        N'No POV.',
+        N'Sphere 31 (Earth)',
+        165, 59, N'slight',
+        N'dark brown', N'estate-issued', N'medium',
+        N'brown', N'medium', N'clear',
+        N'none', N'a woman who arrived and integrated into estate routine',
+        N'estate domestic issue',
+        N'none',
+        N'She is alive in estate service.',
+        N'Not applicable.', N'Not applicable.', N'Not applicable.',
+        N'Not applicable.', N'Not applicable.', N'Not applicable.',
+        N'House estate, domestic service',
+        N'0', N'0',
+        N'woman, estate domestic interior, Cauld fantasy-steampunk, Buehlman dark register',
+        N'woman, estate service, dark fantasy',
+        0, 0
+    );
+    PRINT 'Marilyn Bergeron seeded.';
+END
+ELSE PRINT 'Marilyn Bergeron already exists.';
+GO
+
+-- ── Lauren Spierer ────────────────────────────────────────────────────────────
+IF NOT EXISTS (SELECT 1 FROM Characters WHERE Name = N'Lauren Spierer')
+BEGIN
+    DECLARE @id UNIQUEIDENTIFIER = NEWID();
+    INSERT INTO Entities (Id, EntityType, Name, Slug, Status, IsActive, UniverseId, CreatedAt, ModifiedAt)
+    VALUES (@id, N'character', N'Lauren Spierer', N'lauren-spierer', N'canon', 1,
+            '0197E9C9-0002-7000-8000-000000000002', GETDATE(), GETDATE());
+    INSERT INTO Characters (
+        Id, Name, Slug, FirstName, LastName, TitlePrefix,
+        Species, KindOfBeing, Gender, Pronouns, Age, LifeStatus, Role,
+        Description, NarrativeFunction, NarrationVoice,
+        Heritage, HeightCm, WeightKg, Build,
+        HairColor, HairStyle, HairLength, EyeColor, SkinTone, Complexion,
+        VisibleAugmentations, PostureMovement, PhysicalClothingStyle,
+        Augmentations, DailyLife,
+        PsychologySecret, SpeechVocabulary, SpeechCadence,
+        SpeechSubtext, SpeechUnderPressure, SpeechIntimacyRegister,
+        TerritoryRange, BioBatteryMaxCapacity, BioBatteryRecovery,
+        MidjourneyPrompt, Dalle3Prompt, Rating, VoteCount
+    ) VALUES (
+        @id, N'Lauren Spierer', N'lauren-spierer', N'Lauren', N'Spierer', N'',
+        N'human', N'human', N'female', N'she/her', 20, N'alive',
+        N'Domestic labor conscript; assigned to estate service.',
+        N'Taken from Sphere 31 (Earth), Bloomington, Indiana, June 2011. Indiana University student, twenty years old. She was walking home alone late at night and did not arrive — a short route that crossed a Liturgy access point the membrane had thinned to operational depth. She was assessed on arrival and placed in estate domestic service. Her disappearance generated significant Sphere 31 media attention and investigative activity. Several people in Sphere 31 were investigated. None of them took her. She is in a House estate.',
+        N'A college student who walked home and stepped through a transit point. Sphere 31 focused on the people last seen with her. She is in an estate.',
+        N'No POV.',
+        N'Sphere 31 (Earth), Bloomington, Indiana, United States',
+        157, 50, N'slight',
+        N'blonde', N'estate-issued', N'medium',
+        N'blue', N'light', N'clear',
+        N'none', N'a young woman absorbed into estate routine',
+        N'estate domestic issue',
+        N'none',
+        N'Sphere 31 has investigated multiple people in connection with her disappearance. None of them took her. She is in an estate.',
+        N'Not applicable.', N'Not applicable.', N'Not applicable.',
+        N'Not applicable.', N'Not applicable.', N'Not applicable.',
+        N'House estate, domestic service',
+        N'0', N'0',
+        N'young woman, twenty, estate domestic interior, Cauld fantasy-steampunk, Buehlman dark register',
+        N'young woman, estate service, dark fantasy',
+        0, 0
+    );
+    PRINT 'Lauren Spierer seeded.';
+END
+ELSE PRINT 'Lauren Spierer already exists.';
+GO
+
+-- ── Andrew Skelton ────────────────────────────────────────────────────────────
+IF NOT EXISTS (SELECT 1 FROM Characters WHERE Name = N'Andrew Skelton')
+BEGIN
+    DECLARE @id UNIQUEIDENTIFIER = NEWID();
+    INSERT INTO Entities (Id, EntityType, Name, Slug, Status, IsActive, UniverseId, CreatedAt, ModifiedAt)
+    VALUES (@id, N'character', N'Andrew Skelton', N'andrew-skelton', N'canon', 1,
+            '0197E9C9-0002-7000-8000-000000000002', GETDATE(), GETDATE());
+    INSERT INTO Characters (
+        Id, Name, Slug, FirstName, LastName, TitlePrefix,
+        Species, KindOfBeing, Gender, Pronouns, Age, LifeStatus, Role,
+        Description, NarrativeFunction, NarrationVoice,
+        Heritage, HeightCm, WeightKg, Build,
+        HairColor, HairStyle, HairLength, EyeColor, SkinTone, Complexion,
+        VisibleAugmentations, PostureMovement, PhysicalClothingStyle,
+        Augmentations, DailyLife,
+        PsychologySecret, SpeechVocabulary, SpeechCadence,
+        SpeechSubtext, SpeechUnderPressure, SpeechIntimacyRegister,
+        TerritoryRange, BioBatteryMaxCapacity, BioBatteryRecovery,
+        MidjourneyPrompt, Dalle3Prompt, Rating, VoteCount
+    ) VALUES (
+        @id, N'Andrew Skelton', N'andrew-skelton', N'Andrew', N'Skelton', N'',
+        N'human', N'human', N'male', N'he/him', 25, N'alive',
+        N'Decorated House Fornax officer; risen from estate ward to commissioned rank through distinguished field service.',
+        N'Taken from Sphere 31 (Earth), Morenci, Michigan, November 2010. Nine years old when he arrived. Thanksgiving weekend. Their father, John Skelton, surrendered the three boys to a Liturgy contact — a debt arrangement. Andrew was the oldest, arrived knowing more than his brothers of what had been done to them, and carried that knowledge alone into House Fornax where no one spoke of it or cared. He was nine. He grew up in House Fornax. He was conscripted at the standard age, served in the Myrmidon corps, and rose. He has been decorated for field conduct — the Fornax commendation record lists him for actions in two engagements. He is an officer of House Fornax in his mid-twenties. He knows Alexander and Tanner are his brothers. He has not asked them whether they remember Michigan.',
+        N'Arrived at nine knowing what their father had done and spent sixteen years turning that knowledge into something he could use. He is a Fornax officer now. He has never spoken of Michigan to his brothers.',
+        N'No POV.',
+        N'Sphere 31 (Earth), Morenci, Michigan, United States',
+        183, 84, N'military-lean',
+        N'brown', N'officer cut', N'short',
+        N'brown', N'light-medium', N'clear',
+        N'none', N'officer''s posture — still, deliberate, reads every room before moving through it',
+        N'House Fornax officer uniform',
+        N'none',
+        N'He knows what their father did. He has not told Alexander or Tanner in terms they would recognize. He is an officer of Fornax.',
+        N'Not applicable.', N'Not applicable.', N'Not applicable.',
+        N'Not applicable.', N'Not applicable.', N'Not applicable.',
+        N'House Fornax military territory; same House as brothers',
+        N'0', N'0',
+        N'young man, mid-twenties, House Fornax officer uniform, Cauld Rhine-analog military, Buehlman dark register',
+        N'young man, officer, House Fornax, dark fantasy',
+        0, 0
+    );
+    PRINT 'Andrew Skelton seeded.';
+END
+ELSE PRINT 'Andrew Skelton already exists.';
+GO
+
+-- ── Alexander Skelton ─────────────────────────────────────────────────────────
+IF NOT EXISTS (SELECT 1 FROM Characters WHERE Name = N'Alexander Skelton')
+BEGIN
+    DECLARE @id UNIQUEIDENTIFIER = NEWID();
+    INSERT INTO Entities (Id, EntityType, Name, Slug, Status, IsActive, UniverseId, CreatedAt, ModifiedAt)
+    VALUES (@id, N'character', N'Alexander Skelton', N'alexander-skelton', N'canon', 1,
+            '0197E9C9-0002-7000-8000-000000000002', GETDATE(), GETDATE());
+    INSERT INTO Characters (
+        Id, Name, Slug, FirstName, LastName, TitlePrefix,
+        Species, KindOfBeing, Gender, Pronouns, Age, LifeStatus, Role,
+        Description, NarrativeFunction, NarrationVoice,
+        Heritage, HeightCm, WeightKg, Build,
+        HairColor, HairStyle, HairLength, EyeColor, SkinTone, Complexion,
+        VisibleAugmentations, PostureMovement, PhysicalClothingStyle,
+        Augmentations, DailyLife,
+        PsychologySecret, SpeechVocabulary, SpeechCadence,
+        SpeechSubtext, SpeechUnderPressure, SpeechIntimacyRegister,
+        TerritoryRange, BioBatteryMaxCapacity, BioBatteryRecovery,
+        MidjourneyPrompt, Dalle3Prompt, Rating, VoteCount
+    ) VALUES (
+        @id, N'Alexander Skelton', N'alexander-skelton', N'Alexander', N'Skelton', N'',
+        N'human', N'human', N'male', N'he/him', 23, N'alive',
+        N'Decorated House Fornax officer; field rank earned through sustained combat service.',
+        N'Taken from Sphere 31 (Earth), Morenci, Michigan, November 2010. Seven years old when he arrived. He remembers the house in Michigan — barely, at the edge of recall, a smell or a color without a name. He grew up in House Fornax alongside his brothers, was conscripted at the standard age, and rose through the Myrmidon corps. He has been decorated for field conduct. He fights the way men who arrived young and have known nothing else fight: total commitment, no exit plan in mind. He is an officer of House Fornax in his early twenties. Andrew is his superior officer by rank. Neither of them treats this as remarkable.',
+        N'Arrived at seven with fragments of Sphere 31 he has never assembled into a story. Decorated Fornax officer. Andrew commands him and he follows because Fornax is the only structure he has known.',
+        N'No POV.',
+        N'Sphere 31 (Earth), Morenci, Michigan, United States',
+        180, 80, N'athletic',
+        N'brown', N'officer cut', N'short',
+        N'brown', N'light-medium', N'clear',
+        N'none', N'a soldier who grew up in the corps and carries it as a default state',
+        N'House Fornax officer uniform',
+        N'none',
+        N'He has fragments of Michigan he has never named. He is a decorated Fornax officer. Andrew is his superior. Neither treats this as unusual.',
+        N'Not applicable.', N'Not applicable.', N'Not applicable.',
+        N'Not applicable.', N'Not applicable.', N'Not applicable.',
+        N'House Fornax military territory; same House as brothers',
+        N'0', N'0',
+        N'young man, early twenties, House Fornax officer uniform, Cauld Rhine-analog military, Buehlman dark register',
+        N'young man, officer, House Fornax, dark fantasy',
+        0, 0
+    );
+    PRINT 'Alexander Skelton seeded.';
+END
+ELSE PRINT 'Alexander Skelton already exists.';
+GO
+
+-- ── Tanner Skelton ────────────────────────────────────────────────────────────
+IF NOT EXISTS (SELECT 1 FROM Characters WHERE Name = N'Tanner Skelton')
+BEGIN
+    DECLARE @id UNIQUEIDENTIFIER = NEWID();
+    INSERT INTO Entities (Id, EntityType, Name, Slug, Status, IsActive, UniverseId, CreatedAt, ModifiedAt)
+    VALUES (@id, N'character', N'Tanner Skelton', N'tanner-skelton', N'canon', 1,
+            '0197E9C9-0002-7000-8000-000000000002', GETDATE(), GETDATE());
+    INSERT INTO Characters (
+        Id, Name, Slug, FirstName, LastName, TitlePrefix,
+        Species, KindOfBeing, Gender, Pronouns, Age, LifeStatus, Role,
+        Description, NarrativeFunction, NarrationVoice,
+        Heritage, HeightCm, WeightKg, Build,
+        HairColor, HairStyle, HairLength, EyeColor, SkinTone, Complexion,
+        VisibleAugmentations, PostureMovement, PhysicalClothingStyle,
+        Augmentations, DailyLife,
+        PsychologySecret, SpeechVocabulary, SpeechCadence,
+        SpeechSubtext, SpeechUnderPressure, SpeechIntimacyRegister,
+        TerritoryRange, BioBatteryMaxCapacity, BioBatteryRecovery,
+        MidjourneyPrompt, Dalle3Prompt, Rating, VoteCount
+    ) VALUES (
+        @id, N'Tanner Skelton', N'tanner-skelton', N'Tanner', N'Skelton', N'',
+        N'human', N'human', N'male', N'he/him', 21, N'alive',
+        N'Decorated House Fornax officer; the most fully Cauld-native of the three brothers — no memory of Sphere 31, total commitment to House Fornax.',
+        N'Taken from Sphere 31 (Earth), Morenci, Michigan, November 2010. Five years old when he arrived. He has no memory of Sphere 31. None. He is the cleanest example of what the Cauld does with the very young: total absorption, no residue, no fragment of a prior world competing with this one. He grew up in House Fornax believing it was the only world. He was conscripted, distinguished himself faster than his brothers, and has been decorated multiple times. He does not understand why Andrew sometimes looks at him a certain way. He is a decorated officer of House Fornax. The war is simply the condition of his life.',
+        N'Arrived at five and was absorbed completely. He knows Andrew and Alexander as his House brothers. He has no memory of Michigan. He is the most dangerous of the three because he has no exit narrative — the Cauld is not where he ended up. It is where he is from.',
+        N'No POV.',
+        N'Sphere 31 (Earth), Morenci, Michigan, United States',
+        178, 82, N'athletic',
+        N'brown', N'officer cut', N'short',
+        N'brown', N'light-medium', N'clear',
+        N'none', N'a soldier who was never anything else — no civilian posture underneath, only this',
+        N'House Fornax officer uniform',
+        N'none',
+        N'He has no memory of Michigan. The Cauld is not where he ended up. It is where he is from. He is a decorated Fornax officer.',
+        N'Not applicable.', N'Not applicable.', N'Not applicable.',
+        N'Not applicable.', N'Not applicable.', N'Not applicable.',
+        N'House Fornax military territory; same House as brothers',
+        N'0', N'0',
+        N'young man, early twenties, House Fornax officer uniform, Cauld Rhine-analog military, Buehlman dark register',
+        N'young man, officer, House Fornax, dark fantasy, born of this world',
+        0, 0
+    );
+    PRINT 'Tanner Skelton seeded.';
+END
+ELSE PRINT 'Tanner Skelton already exists.';
+GO
+
+-- ── Daniel Robinson ───────────────────────────────────────────────────────────
+IF NOT EXISTS (SELECT 1 FROM Characters WHERE Name = N'Daniel Robinson')
+BEGIN
+    DECLARE @id UNIQUEIDENTIFIER = NEWID();
+    INSERT INTO Entities (Id, EntityType, Name, Slug, Status, IsActive, UniverseId, CreatedAt, ModifiedAt)
+    VALUES (@id, N'character', N'Daniel Robinson', N'daniel-robinson', N'canon', 1,
+            '0197E9C9-0002-7000-8000-000000000002', GETDATE(), GETDATE());
+    INSERT INTO Characters (
+        Id, Name, Slug, FirstName, LastName, TitlePrefix,
+        Species, KindOfBeing, Gender, Pronouns, Age, LifeStatus, Role,
+        Description, NarrativeFunction, NarrationVoice,
+        Heritage, HeightCm, WeightKg, Build,
+        HairColor, HairStyle, HairLength, EyeColor, SkinTone, Complexion,
+        VisibleAugmentations, PostureMovement, PhysicalClothingStyle,
+        Augmentations, DailyLife,
+        PsychologySecret, SpeechVocabulary, SpeechCadence,
+        SpeechSubtext, SpeechUnderPressure, SpeechIntimacyRegister,
+        TerritoryRange, BioBatteryMaxCapacity, BioBatteryRecovery,
+        MidjourneyPrompt, Dalle3Prompt, Rating, VoteCount
+    ) VALUES (
+        @id, N'Daniel Robinson', N'daniel-robinson', N'Daniel', N'Robinson', N'',
+        N'human', N'human', N'male', N'he/him', 24, N'alive',
+        N'Specialist cartographer and terrain analyst; assigned to House intelligence mapping — his geology background translated directly.',
+        N'Taken from Sphere 31 (Earth), near Buckeye, Arizona, June 2021. Geologist, twenty-four years old. His Jeep was found crashed in remote desert terrain — a Liturgy transit point in the Arizona basin operates in that zone, where the landscape''s geological complexity produces natural thin-membrane conditions the Liturgy has mapped for decades. He arrived with a professional understanding of terrain, rock formation, and subsurface structure that the Cauld had no straightforward equivalent for. A House intelligence officer identified the value and pulled him from standard labor intake. He now works as a terrain analyst and cartographer for House operations — mapping Scrying access zones, identifying geological transit-point characteristics, advising on terrain-based tactical positioning. He is doing the work he trained for in a world he did not agree to enter. He is also the best at it in his unit. He is aware of both facts.',
+        N'A young geologist with specialist knowledge the Cauld had no equivalent for. He was pulled from labor intake and given a function. He is the best at his job. He knows this. He has not decided what that means.',
+        N'No POV.',
+        N'Sphere 31 (Earth), Buckeye, Arizona, United States',
+        180, 78, N'lean',
+        N'dark brown', N'House intelligence field issue', N'short',
+        N'dark brown', N'deep brown', N'clear',
+        N'none', N'a geologist''s posture — reading every surface, every formation, nothing wasted',
+        N'House intelligence analytical issue',
+        N'none',
+        N'He is the best terrain analyst in his unit. He is in a world he did not choose. He is doing the work he was trained for.',
+        N'Not applicable.', N'Not applicable.', N'Not applicable.',
+        N'Not applicable.', N'Not applicable.', N'Not applicable.',
+        N'House intelligence territory, analytical and field cartography',
+        N'0', N'0',
+        N'young man, twenty-four, House intelligence field gear, Cauld fantasy-steampunk, terrain analyst, Buehlman dark register',
+        N'young man, intelligence analyst, field map work, dark fantasy',
+        0, 0
+    );
+    PRINT 'Daniel Robinson seeded.';
+END
+ELSE PRINT 'Daniel Robinson already exists.';
+GO
+
+-- ── Trevor Deely ──────────────────────────────────────────────────────────────
+IF NOT EXISTS (SELECT 1 FROM Characters WHERE Name = N'Trevor Deely')
+BEGIN
+    DECLARE @id UNIQUEIDENTIFIER = NEWID();
+    INSERT INTO Entities (Id, EntityType, Name, Slug, Status, IsActive, UniverseId, CreatedAt, ModifiedAt)
+    VALUES (@id, N'character', N'Trevor Deely', N'trevor-deely', N'canon', 1,
+            '0197E9C9-0002-7000-8000-000000000002', GETDATE(), GETDATE());
+    INSERT INTO Characters (
+        Id, Name, Slug, FirstName, LastName, TitlePrefix,
+        Species, KindOfBeing, Gender, Pronouns, Age, LifeStatus, Role,
+        Description, NarrativeFunction, NarrationVoice,
+        Heritage, HeightCm, WeightKg, Build,
+        HairColor, HairStyle, HairLength, EyeColor, SkinTone, Complexion,
+        VisibleAugmentations, PostureMovement, PhysicalClothingStyle,
+        Augmentations, DailyLife,
+        PsychologySecret, SpeechVocabulary, SpeechCadence,
+        SpeechSubtext, SpeechUnderPressure, SpeechIntimacyRegister,
+        TerritoryRange, BioBatteryMaxCapacity, BioBatteryRecovery,
+        MidjourneyPrompt, Dalle3Prompt, Rating, VoteCount
+    ) VALUES (
+        @id, N'Trevor Deely', N'trevor-deely', N'Trevor', N'Deely', N'',
+        N'human', N'human', N'male', N'he/him', 22, N'alive',
+        N'Myrmidon conscript; taken on a late-night walk home from a work event.',
+        N'Taken from Sphere 31 (Earth), Dublin, Ireland, December 2000. IT worker, twenty-two. He left a company Christmas party late at night and was walking home. The Sphere 31 CCTV record shows him at a bank ATM with an unknown figure following at a distance — a Liturgy scout conducting a transit operation in Dublin''s city-center access zone. He walked into the transit point before reaching home. He was assessed in the Cauld as young, male, and without specialist skills sufficient to divert him from military intake. Myrmidon conscript. He is in a war he has no stake in, in a world he arrived at by walking home from a Christmas party.',
+        N'He was twenty-two and walking home from a party. The CCTV shows a figure following him. The figure was the Liturgy''s scout marking the approach. He is in a war.',
+        N'No POV.',
+        N'Sphere 31 (Earth), Dublin, Ireland',
+        180, 75, N'lean',
+        N'dark brown', N'short', N'short',
+        N'brown', N'light-medium', N'clear',
+        N'none', N'a soldier''s posture, acquired by necessity',
+        N'Myrmidon field kit',
+        N'none',
+        N'He was walking home from a Christmas party. There was a figure behind him. He is in a war.',
+        N'Not applicable.', N'Not applicable.', N'Not applicable.',
+        N'Not applicable.', N'Not applicable.', N'Not applicable.',
+        N'Active front, Myrmidon unit',
+        N'0', N'0',
+        N'young man, twenty-two, Myrmidon kit, Cauld front line, fantasy-steampunk, Buehlman dark register',
+        N'young man, soldier, front line, dark fantasy',
+        0, 0
+    );
+    PRINT 'Trevor Deely seeded.';
+END
+ELSE PRINT 'Trevor Deely already exists.';
+GO
+
+-- ── Claudia Lawrence ──────────────────────────────────────────────────────────
+IF NOT EXISTS (SELECT 1 FROM Characters WHERE Name = N'Claudia Lawrence')
+BEGIN
+    DECLARE @id UNIQUEIDENTIFIER = NEWID();
+    INSERT INTO Entities (Id, EntityType, Name, Slug, Status, IsActive, UniverseId, CreatedAt, ModifiedAt)
+    VALUES (@id, N'character', N'Claudia Lawrence', N'claudia-lawrence', N'canon', 1,
+            '0197E9C9-0002-7000-8000-000000000002', GETDATE(), GETDATE());
+    INSERT INTO Characters (
+        Id, Name, Slug, FirstName, LastName, TitlePrefix,
+        Species, KindOfBeing, Gender, Pronouns, Age, LifeStatus, Role,
+        Description, NarrativeFunction, NarrationVoice,
+        Heritage, HeightCm, WeightKg, Build,
+        HairColor, HairStyle, HairLength, EyeColor, SkinTone, Complexion,
+        VisibleAugmentations, PostureMovement, PhysicalClothingStyle,
+        Augmentations, DailyLife,
+        PsychologySecret, SpeechVocabulary, SpeechCadence,
+        SpeechSubtext, SpeechUnderPressure, SpeechIntimacyRegister,
+        TerritoryRange, BioBatteryMaxCapacity, BioBatteryRecovery,
+        MidjourneyPrompt, Dalle3Prompt, Rating, VoteCount
+    ) VALUES (
+        @id, N'Claudia Lawrence', N'claudia-lawrence', N'Claudia', N'Lawrence', N'',
+        N'human', N'human', N'female', N'she/her', 35, N'alive',
+        N'Estate kitchen specialist; assigned to House kitchen operation — her professional culinary training was identified and redirected.',
+        N'Taken from Sphere 31 (Earth), York, England, March 2009. Professional chef at the University of York, thirty-five. She prepared for her morning shift but did not arrive. Her house showed signs of a normal preparation routine interrupted at the transit point — the Liturgy operates in the York corridor, and the geography around the Ouse provides a thin-membrane access zone that has been in use for decades. In the Cauld her culinary expertise was identified on intake. She was placed in a House kitchen operation — a large estate kitchen running meals for House staff, retinue, and retainers. She is the most technically trained cook in the kitchen. She has imposed organization on it. She is doing this because it is what she knows how to do and because the kitchen is, at minimum, her own territory.',
+        N'A professional chef who arrived and found the kitchen. She has organized it. It is the one space that is somewhat hers. She knows how to run a kitchen; she is running this one.',
+        N'No POV.',
+        N'Sphere 31 (Earth), York, England',
+        165, 62, N'average',
+        N'brown', N'kitchen working dress', N'medium',
+        N'brown', N'medium', N'clear',
+        N'none', N'a chef''s posture — functional, authoritative in her space, not wasting movement',
+        N'estate kitchen working dress',
+        N'none',
+        N'She has organized the kitchen. It is the one space that is somewhat hers. She is doing the work she knows.',
+        N'Not applicable.', N'Not applicable.', N'Not applicable.',
+        N'Not applicable.', N'Not applicable.', N'Not applicable.',
+        N'House estate, kitchen and provisions territory',
+        N'0', N'0',
+        N'woman in her mid-thirties, estate kitchen, Cauld fantasy-steampunk, professional chef, Buehlman dark register',
+        N'woman, estate kitchen, chef, dark fantasy',
+        0, 0
+    );
+    PRINT 'Claudia Lawrence seeded.';
+END
+ELSE PRINT 'Claudia Lawrence already exists.';
+GO
+
+-- ── Suzy Lamplugh ─────────────────────────────────────────────────────────────
+IF NOT EXISTS (SELECT 1 FROM Characters WHERE Name = N'Suzy Lamplugh')
+BEGIN
+    DECLARE @id UNIQUEIDENTIFIER = NEWID();
+    INSERT INTO Entities (Id, EntityType, Name, Slug, Status, IsActive, UniverseId, CreatedAt, ModifiedAt)
+    VALUES (@id, N'character', N'Suzy Lamplugh', N'suzy-lamplugh', N'canon', 1,
+            '0197E9C9-0002-7000-8000-000000000002', GETDATE(), GETDATE());
+    INSERT INTO Characters (
+        Id, Name, Slug, FirstName, LastName, TitlePrefix,
+        Species, KindOfBeing, Gender, Pronouns, Age, LifeStatus, Role,
+        Description, NarrativeFunction, NarrationVoice,
+        Heritage, HeightCm, WeightKg, Build,
+        HairColor, HairStyle, HairLength, EyeColor, SkinTone, Complexion,
+        VisibleAugmentations, PostureMovement, PhysicalClothingStyle,
+        Augmentations, DailyLife,
+        PsychologySecret, SpeechVocabulary, SpeechCadence,
+        SpeechSubtext, SpeechUnderPressure, SpeechIntimacyRegister,
+        TerritoryRange, BioBatteryMaxCapacity, BioBatteryRecovery,
+        MidjourneyPrompt, Dalle3Prompt, Rating, VoteCount
+    ) VALUES (
+        @id, N'Suzy Lamplugh', N'suzy-lamplugh', N'Suzy', N'Lamplugh', N'',
+        N'human', N'human', N'female', N'she/her', 25, N'alive',
+        N'Estate administrative specialist; assigned to House property and holdings management — her estate-agency training translated directly.',
+        N'Taken from Sphere 31 (Earth), London, England, July 1986. Estate agent, twenty-five. She went to show a property to a client listed in her appointments as "Mr. Kipper" — a Liturgy intermediary operating under a false name. The showing was the transit point. She has been declared legally dead in Sphere 31. She is not dead. In the Cauld her specific skills — property assessment, negotiation, client management, spatial organization — were identified as valuable to a House that manages substantial estate holdings. She now handles the administrative management of House properties: assessing structures, managing retainer arrangements, overseeing the physical estate portfolio. She is good at it. She was always good at it. "Mr. Kipper" filed the appointment the morning of her taking and she walked into it because that is what professional duty required.',
+        N'She went to a property showing and the client was a Liturgy intermediary. Sphere 31 declared her legally dead. She is managing a House estate portfolio. She was twenty-five and professional and she kept the appointment.',
+        N'No POV.',
+        N'Sphere 31 (Earth), London, England',
+        168, 60, N'slight',
+        N'blonde', N'House administrative formal dress', N'medium',
+        N'blue', N'light', N'clear',
+        N'none', N'estate agent''s posture — confident, organized, managing every room she enters',
+        N'House administrative formal issue',
+        N'none',
+        N'She walked into an appointment with a Liturgy intermediary. She is managing property holdings for a House. She was declared legally dead in 1993. She is not dead.',
+        N'Not applicable.', N'Not applicable.', N'Not applicable.',
+        N'Not applicable.', N'Not applicable.', N'Not applicable.',
+        N'House administrative territory, estate holdings management',
+        N'0', N'0',
+        N'young woman, twenty-five, House administrative interior, Cauld fantasy-steampunk, estate specialist, Buehlman dark register',
+        N'young woman, administrative interior, estate management, dark fantasy',
+        0, 0
+    );
+    PRINT 'Suzy Lamplugh seeded.';
+END
+ELSE PRINT 'Suzy Lamplugh already exists.';
+GO
+
+-- ── Patrick Warren ────────────────────────────────────────────────────────────
+IF NOT EXISTS (SELECT 1 FROM Characters WHERE Name = N'Patrick Warren')
+BEGIN
+    DECLARE @id UNIQUEIDENTIFIER = NEWID();
+    INSERT INTO Entities (Id, EntityType, Name, Slug, Status, IsActive, UniverseId, CreatedAt, ModifiedAt)
+    VALUES (@id, N'character', N'Patrick Warren', N'patrick-warren', N'canon', 1,
+            '0197E9C9-0002-7000-8000-000000000002', GETDATE(), GETDATE());
+    INSERT INTO Characters (
+        Id, Name, Slug, FirstName, LastName, TitlePrefix,
+        Species, KindOfBeing, Gender, Pronouns, Age, LifeStatus, Role,
+        Description, NarrativeFunction, NarrationVoice,
+        Heritage, HeightCm, WeightKg, Build,
+        HairColor, HairStyle, HairLength, EyeColor, SkinTone, Complexion,
+        VisibleAugmentations, PostureMovement, PhysicalClothingStyle,
+        Augmentations, DailyLife,
+        PsychologySecret, SpeechVocabulary, SpeechCadence,
+        SpeechSubtext, SpeechUnderPressure, SpeechIntimacyRegister,
+        TerritoryRange, BioBatteryMaxCapacity, BioBatteryRecovery,
+        MidjourneyPrompt, Dalle3Prompt, Rating, VoteCount
+    ) VALUES (
+        @id, N'Patrick Warren', N'patrick-warren', N'Patrick', N'Warren', N'',
+        N'human', N'human', N'male', N'he/him', 11, N'alive',
+        N'Child ward; taken with David Spencer while walking to a friend''s house; placed in estate care.',
+        N'Taken from Sphere 31 (Earth), Chelmsley Wood, West Midlands, England, January 1996. Eleven years old. He and David Spencer were walking to a friend''s house — a short, ordinary route through a residential area in the West Midlands. A Liturgy access point in that zone had been operational for some time. Both boys were taken simultaneously. In the Cauld they were assessed and placed in separate estate arrangements. Patrick is older than David by two years and arrived knowing more of what had happened. He does not know where David is.',
+        N'Two boys walking to a friend''s house. He arrived knowing something had happened and not knowing where David went. He is in estate service.',
+        N'No POV.',
+        N'Sphere 31 (Earth), Chelmsley Wood, West Midlands, England',
+        143, 35, N'child-slight',
+        N'brown', N'estate-issued', N'short',
+        N'brown', N'light-medium', N'clear',
+        N'none', N'a boy who arrived at eleven and has grown up in estate labor',
+        N'estate-issued',
+        N'none',
+        N'He was walking to a friend''s house with David. He does not know where David is. He arrived at eleven.',
+        N'Not applicable.', N'Not applicable.', N'Not applicable.',
+        N'Not applicable.', N'Not applicable.', N'Not applicable.',
+        N'House estate, different territory from David Spencer',
+        N'0', N'0',
+        N'boy, eleven, estate interior, Cauld fantasy-steampunk, Buehlman dark register',
+        N'boy, estate interior, dark fantasy',
+        0, 0
+    );
+    PRINT 'Patrick Warren seeded.';
+END
+ELSE PRINT 'Patrick Warren already exists.';
+GO
+
+-- ── David Spencer ─────────────────────────────────────────────────────────────
+IF NOT EXISTS (SELECT 1 FROM Characters WHERE Name = N'David Spencer')
+BEGIN
+    DECLARE @id UNIQUEIDENTIFIER = NEWID();
+    INSERT INTO Entities (Id, EntityType, Name, Slug, Status, IsActive, UniverseId, CreatedAt, ModifiedAt)
+    VALUES (@id, N'character', N'David Spencer', N'david-spencer', N'canon', 1,
+            '0197E9C9-0002-7000-8000-000000000002', GETDATE(), GETDATE());
+    INSERT INTO Characters (
+        Id, Name, Slug, FirstName, LastName, TitlePrefix,
+        Species, KindOfBeing, Gender, Pronouns, Age, LifeStatus, Role,
+        Description, NarrativeFunction, NarrationVoice,
+        Heritage, HeightCm, WeightKg, Build,
+        HairColor, HairStyle, HairLength, EyeColor, SkinTone, Complexion,
+        VisibleAugmentations, PostureMovement, PhysicalClothingStyle,
+        Augmentations, DailyLife,
+        PsychologySecret, SpeechVocabulary, SpeechCadence,
+        SpeechSubtext, SpeechUnderPressure, SpeechIntimacyRegister,
+        TerritoryRange, BioBatteryMaxCapacity, BioBatteryRecovery,
+        MidjourneyPrompt, Dalle3Prompt, Rating, VoteCount
+    ) VALUES (
+        @id, N'David Spencer', N'david-spencer', N'David', N'Spencer', N'',
+        N'human', N'human', N'male', N'he/him', 13, N'alive',
+        N'Child ward; taken with Patrick Warren while walking to a friend''s house; placed in estate care — separate territory from Patrick.',
+        N'Taken from Sphere 31 (Earth), Chelmsley Wood, West Midlands, England, January 1996. Thirteen years old. He and Patrick Warren were walking to a friend''s house when the Liturgy''s transit operation in that corridor took them simultaneously. He is the older of the two and arrived knowing more. In the Cauld they were separated — standard Liturgy procedure to prevent resistance coordination. He does not know where Patrick is. He is in estate service, older now, and has grown up inside the House''s rhythms.',
+        N'The older of the two boys taken together. He arrived at thirteen knowing something was wrong. He does not know where Patrick went. He is in estate service.',
+        N'No POV.',
+        N'Sphere 31 (Earth), Chelmsley Wood, West Midlands, England',
+        155, 45, N'adolescent-slight',
+        N'brown', N'estate-issued', N'short',
+        N'brown', N'light-medium', N'clear',
+        N'none', N'a teenager who arrived knowing what had happened and learned to carry that alone',
+        N'estate-issued',
+        N'none',
+        N'He was walking to a friend''s house with Patrick. He does not know where Patrick is. He arrived at thirteen.',
+        N'Not applicable.', N'Not applicable.', N'Not applicable.',
+        N'Not applicable.', N'Not applicable.', N'Not applicable.',
+        N'House estate, different territory from Patrick Warren',
+        N'0', N'0',
+        N'teenage boy, thirteen, estate interior, Cauld fantasy-steampunk, Buehlman dark register',
+        N'teenage boy, estate interior, dark fantasy',
+        0, 0
+    );
+    PRINT 'David Spencer seeded.';
+END
+ELSE PRINT 'David Spencer already exists.';
+GO
+
+-- ── Mekayla Bali ──────────────────────────────────────────────────────────────
+IF NOT EXISTS (SELECT 1 FROM Characters WHERE Name = N'Mekayla Bali')
+BEGIN
+    DECLARE @id UNIQUEIDENTIFIER = NEWID();
+    INSERT INTO Entities (Id, EntityType, Name, Slug, Status, IsActive, UniverseId, CreatedAt, ModifiedAt)
+    VALUES (@id, N'character', N'Mekayla Bali', N'mekayla-bali', N'canon', 1,
+            '0197E9C9-0002-7000-8000-000000000002', GETDATE(), GETDATE());
+    INSERT INTO Characters (
+        Id, Name, Slug, FirstName, LastName, TitlePrefix,
+        Species, KindOfBeing, Gender, Pronouns, Age, LifeStatus, Role,
+        Description, NarrativeFunction, NarrationVoice,
+        Heritage, HeightCm, WeightKg, Build,
+        HairColor, HairStyle, HairLength, EyeColor, SkinTone, Complexion,
+        VisibleAugmentations, PostureMovement, PhysicalClothingStyle,
+        Augmentations, DailyLife,
+        PsychologySecret, SpeechVocabulary, SpeechCadence,
+        SpeechSubtext, SpeechUnderPressure, SpeechIntimacyRegister,
+        TerritoryRange, BioBatteryMaxCapacity, BioBatteryRecovery,
+        MidjourneyPrompt, Dalle3Prompt, Rating, VoteCount
+    ) VALUES (
+        @id, N'Mekayla Bali', N'mekayla-bali', N'Mekayla', N'Bali', N'',
+        N'human', N'human', N'female', N'she/her', 16, N'alive',
+        N'Domestic labor conscript; assigned to estate service.',
+        N'Taken from Sphere 31 (Earth), Yorkton, Saskatchewan, Canada, April 2016. Sixteen years old. She left her home at approximately 3am — surveillance footage in Yorkton showed her walking alone. Her shoes and socks were found at the base of a staircase near her home. The Liturgy''s access point in that corridor operates at ground level, and the shoes suggest the transit stripped or required removal of footwear — an artifact of certain transit-point configurations where items of direct contact are sometimes left behind. She was sixteen. In the Cauld she was assessed as young, healthy, without specialist skills. Estate domestic service. She is older now.',
+        N'She left home at 3am and her shoes were found at the bottom of stairs. The shoes are the detail that defines the Sphere 31 case. She is in estate service.',
+        N'No POV.',
+        N'Sphere 31 (Earth), Yorkton, Saskatchewan, Canada',
+        162, 54, N'adolescent-slight',
+        N'dark brown', N'estate-issued', N'medium',
+        N'dark brown', N'medium-warm', N'clear',
+        N'none', N'a young woman absorbed into estate routine',
+        N'estate domestic issue',
+        N'none',
+        N'Her shoes were found at the bottom of stairs. She is in estate service. She was sixteen.',
+        N'Not applicable.', N'Not applicable.', N'Not applicable.',
+        N'Not applicable.', N'Not applicable.', N'Not applicable.',
+        N'House estate, domestic service',
+        N'0', N'0',
+        N'young woman, sixteen, estate domestic interior, Cauld fantasy-steampunk, Buehlman dark register',
+        N'young woman, estate service, dark fantasy',
+        0, 0
+    );
+    PRINT 'Mekayla Bali seeded.';
+END
+ELSE PRINT 'Mekayla Bali already exists.';
+GO
+
+-- ── Eleanor Parker ────────────────────────────────────────────────────────────
+IF NOT EXISTS (SELECT 1 FROM Characters WHERE Name = N'Eleanor Parker')
+BEGIN
+    DECLARE @id UNIQUEIDENTIFIER = NEWID();
+    INSERT INTO Entities (Id, EntityType, Name, Slug, Status, IsActive, UniverseId, CreatedAt, ModifiedAt)
+    VALUES (@id, N'character', N'Eleanor Parker', N'eleanor-parker', N'canon', 1,
+            '0197E9C9-0002-7000-8000-000000000002', GETDATE(), GETDATE());
+    INSERT INTO Characters (
+        Id, Name, Slug, FirstName, LastName, TitlePrefix,
+        Species, KindOfBeing, Gender, Pronouns, Age, LifeStatus, Role,
+        Description, NarrativeFunction, NarrationVoice,
+        Heritage, HeightCm, WeightKg, Build,
+        HairColor, HairStyle, HairLength, EyeColor, SkinTone, Complexion,
+        VisibleAugmentations, PostureMovement, PhysicalClothingStyle,
+        Augmentations, DailyLife,
+        PsychologySecret, SpeechVocabulary, SpeechCadence,
+        SpeechSubtext, SpeechUnderPressure, SpeechIntimacyRegister,
+        TerritoryRange, BioBatteryMaxCapacity, BioBatteryRecovery,
+        MidjourneyPrompt, Dalle3Prompt, Rating, VoteCount
+    ) VALUES (
+        @id, N'Eleanor Parker', N'eleanor-parker', N'Eleanor', N'Parker', N'',
+        N'human', N'human', N'female', N'she/her', 28, N'alive',
+        N'Domestic labor conscript; assigned to estate service.',
+        N'Taken from Sphere 31 (Earth), Louisiana, United States. NamUs MP #1569. The LSU FACES Laboratory and NamUs both carry records relating to her case. She was acquired through a Liturgy transit operation in the Louisiana corridor — the bayou and river geography of southern Louisiana produces thin-membrane conditions that the Liturgy has long used for low-visibility operations in the American South. She was assessed on arrival and placed in estate domestic service. She is alive.',
+        N'A woman from Louisiana whose case exists in the NamUs database and the LSU FACES Lab records. She is in estate service.',
+        N'No POV.',
+        N'Sphere 31 (Earth), Louisiana, United States',
+        163, 60, N'average',
+        N'dark brown', N'estate-issued', N'medium',
+        N'brown', N'medium-warm', N'clear',
+        N'none', N'a woman who arrived and integrated into estate routine',
+        N'estate domestic issue',
+        N'none',
+        N'NamUs MP #1569 is the record. She is alive in estate service.',
+        N'Not applicable.', N'Not applicable.', N'Not applicable.',
+        N'Not applicable.', N'Not applicable.', N'Not applicable.',
+        N'House estate, domestic service',
+        N'0', N'0',
+        N'woman, estate domestic interior, Cauld fantasy-steampunk, Louisiana origin, Buehlman dark register',
+        N'woman, estate service, dark fantasy',
+        0, 0
+    );
+    PRINT 'Eleanor Parker seeded.';
+END
+ELSE PRINT 'Eleanor Parker already exists.';
 GO
 
 PRINT 'Sphere 31 missing persons seed complete.';

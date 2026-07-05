@@ -37,7 +37,7 @@ function writeEntity(entity) {
 }
 
 // ============================================================
-// URBAN LEGENDS OF MERIDIAN 88
+// URBAN LEGENDS OF GLMZ
 // ============================================================
 
 const legends = [

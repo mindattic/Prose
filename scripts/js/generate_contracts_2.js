@@ -111,7 +111,7 @@ const SYSTEM_PROMPT = `You generate contract entries for StreetSamurai, a worldb
 
 WORLD RULES:
 - Φ is the Quanta currency symbol (never "phi", never the Greek letter)
-- No city police exist. Arcturus Civil Security is the enforcement arm (corporate, not public)
+- No city police exist. ArcSec is the enforcement arm (corporate, not public)
 - Tier 1-5 society: Tier 1 = poorest Shelf districts, Tier 5 = corporate elite
 - Freelancers are NOT romantic rebels — they are laborers in a brutal informal economy
 - Some freelancers are heroes, some are war criminals, most are trying to survive
@@ -160,7 +160,7 @@ const BATCHES = [
   {
     num: 2,
     label: 'Elimination targets',
-    detail: 'Contracts to remove someone or something. Targets range from: a mid-level Arcturus Civil Security commander running extortion on Shelf merchants, a data broker who sold the wrong list to the wrong buyer, a rival CorpoNation\'s chief R&D director, a gang enforcer who has gone off-script, a blackmailer using synthetic-identity recordings. IMPORTANT: Some of these are morally ambiguous — the person being removed might have done something awful, or might be a scapegoat. Show both clean and dirty moral weights.'
+    detail: 'Contracts to remove someone or something. Targets range from: a mid-level ArcSec commander running extortion on Shelf merchants, a data broker who sold the wrong list to the wrong buyer, a rival CorpoNation\'s chief R&D director, a gang enforcer who has gone off-script, a blackmailer using synthetic-identity recordings. IMPORTANT: Some of these are morally ambiguous — the person being removed might have done something awful, or might be a scapegoat. Show both clean and dirty moral weights.'
   },
   {
     num: 3,

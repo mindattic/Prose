@@ -56,7 +56,7 @@ VALUES (
     N'SPARROW / ORBITAL LOG 2226-02-12
 Altitude: ~740,000 mi / Orbital period: 14 days / Day 8 of current orbit
 
-The contact window for Meridian 88 opens at 09:34 UTC.
+The contact window for GLMZ opens at 09:34 UTC.
 
 She notes:
 
@@ -151,7 +151,7 @@ VALUES (
     N'SPARROW / ORBITAL LOG 2226-04-09
 Altitude: ~740,000 mi / Day 2 of current orbit
 
-The contact window for Meridian 88 opens at 14:12 UTC.
+The contact window for GLMZ opens at 14:12 UTC.
 
 She notes:
 

@@ -307,8 +307,8 @@ public class StoryRefinementService
     static string BuildSystemPrompt()
     {
         var identity = UniverseScope.Current?.UniverseGroundingOr(
-            "You are a developmental editor reviewing one beat of a neo-noir short story set in GLMZ (also called Meridian 88 or The Glooms).")
-            ?? "You are a developmental editor reviewing one beat of a neo-noir short story set in GLMZ (also called Meridian 88 or The Glooms).";
+            "You are a developmental editor reviewing one beat of a neo-noir short story set in GLMZ (also called The Glooms).")
+            ?? "You are a developmental editor reviewing one beat of a neo-noir short story set in GLMZ (also called The Glooms).";
         return identity + SystemPromptSuffix;
     }
 

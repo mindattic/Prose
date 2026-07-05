@@ -774,7 +774,7 @@ emit({
   author: "Vantablack Media News Service",
   date: "2199-04-03",
   classification: "public",
-  description: `MERIDIAN 88 — An Arcturus Defense research facility in the northern industrial corridor has confirmed the escape of twelve cybernetically enhanced wolves following a containment breach on March 29. The animals, designated as Project FENRIR assets, are equipped with subdermal titanium-alloy armor plating, enhanced sensory arrays including thermal and electromagnetic detection, and neural-linked communication implants that allow pack coordination at distances of up to 2 kilometers.
+  description: `GLMZ — An Arcturus Defense research facility in the northern industrial corridor has confirmed the escape of twelve cybernetically enhanced wolves following a containment breach on March 29. The animals, designated as Project FENRIR assets, are equipped with subdermal titanium-alloy armor plating, enhanced sensory arrays including thermal and electromagnetic detection, and neural-linked communication implants that allow pack coordination at distances of up to 2 kilometers.
 
 Arcturus Defense issued a terse public statement acknowledging the escape and advising residents of the northern industrial corridor and adjacent Shelf districts to "exercise caution and report unusual canine activity." The statement notably omitted several details confirmed by sources within the facility: that the wolves are equipped with retractable monofilament claws capable of cutting through commercial-grade steel, that their jaw servos have been enhanced to produce a bite force of approximately 8,000 Newtons (roughly ten times that of a natural wolf), and that the neural-link implants include behavioral conditioning designed to make the animals aggressive toward human targets exhibiting fear responses.
 
@@ -797,7 +797,7 @@ emit({
   author: "The Meridian Independent — Investigative Desk",
   date: "2199-07-22",
   classification: "public",
-  description: `MERIDIAN 88 — Crucible Industries has acknowledged the loss of six cybernetically enhanced peregrine falcons from its Applied Biology Division, marking the third documented escape of augmented predatory animals from a GLMZ corporate facility in the past eighteen months. The falcons, part of a surveillance and reconnaissance program designated TALON WATCH, are equipped with miniaturized camera arrays, encrypted mesh transceivers, and neural augmentation packages that enhance their already formidable hunting instincts with tactical awareness algorithms.
+  description: `GLMZ — Crucible Industries has acknowledged the loss of six cybernetically enhanced peregrine falcons from its Applied Biology Division, marking the third documented escape of augmented predatory animals from a GLMZ corporate facility in the past eighteen months. The falcons, part of a surveillance and reconnaissance program designated TALON WATCH, are equipped with miniaturized camera arrays, encrypted mesh transceivers, and neural augmentation packages that enhance their already formidable hunting instincts with tactical awareness algorithms.
 
 The admission came only after independent drone operators began capturing footage of birds moving at speeds exceeding 500 kilometers per hour through GLMZ's upper air corridors — significantly faster than any natural peregrine falcon and fast enough to pose a collision risk to vertiport traffic. Natural peregrines reach approximately 390 km/h in hunting dives. The Crucible birds have been clocked at 520 km/h in level flight, courtesy of synthetic muscle augmentation and lightweight carbon-composite skeletal reinforcement.
 
@@ -866,7 +866,7 @@ emit({
   author: "Vantablack Media News Service",
   date: "2199-12-02",
   classification: "public",
-  description: `MERIDIAN 88 — Ouroboros Energy has denied any connection to a population of cybernetically augmented feral cats that Underworld residents have been reporting with increasing frequency since mid-2199. The cats, described as "larger than normal, faster than normal, and way too smart," are distinguished from the existing feral cat population by visible cybernetic modifications: ocular implants that glow amber in darkness, retractable claws reinforced with what appears to be carbide or ceramic composite, and in several documented specimens, a spinal-mount antenna array of unknown purpose.
+  description: `GLMZ — Ouroboros Energy has denied any connection to a population of cybernetically augmented feral cats that Underworld residents have been reporting with increasing frequency since mid-2199. The cats, described as "larger than normal, faster than normal, and way too smart," are distinguished from the existing feral cat population by visible cybernetic modifications: ocular implants that glow amber in darkness, retractable claws reinforced with what appears to be carbide or ceramic composite, and in several documented specimens, a spinal-mount antenna array of unknown purpose.
 
 The denial is significant because the antenna arrays bear the manufacturing stamp of Ouroboros Energy's subsidiary, OE Microelectronics, which produces specialized communications equipment for deep-infrastructure monitoring. When confronted with this detail, Ouroboros's public relations office stated that "OE Microelectronics components are widely available through secondary markets and their presence on an unauthorized biological platform does not indicate Ouroboros involvement." This is technically true — OE components are sold to third parties. It is also the kind of technically true statement that corporations make when they are lying.
 
@@ -983,7 +983,7 @@ emit({
   author: "Vantablack Media Op-Ed Desk",
   date: "2200-02-14",
   classification: "public",
-  description: `MERIDIAN 88 — The genetic hybrid pet industry, which operates in a regulatory vacuum between corporate patent law and nonexistent animal welfare legislation, is forcing GLMZ to confront a question that nobody in power wants to answer: what do we owe the things we create?
+  description: `GLMZ — The genetic hybrid pet industry, which operates in a regulatory vacuum between corporate patent law and nonexistent animal welfare legislation, is forcing GLMZ to confront a question that nobody in power wants to answer: what do we owe the things we create?
 
 The industry generates an estimated Φ12 million annually across the Shelf District alone, employing hundreds of breeders and supporting a supply chain of geneware suppliers, veterinary caregivers, specialty food producers, and habitat fabricators. It provides income in a district where income is scarce. It provides beauty in a district where beauty is scarce. It provides companionship in a city where human connection is increasingly mediated by corporate platforms that charge per interaction.
 

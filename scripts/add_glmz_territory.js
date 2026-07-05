@@ -414,7 +414,7 @@ const TERRITORY_MAP = {
     zones: ["Z6", "Z11"],
     primaryZone: "Z6",
     lakefrontAccess: false,
-    description: "Vespid Arcology Cluster — network of hardened research and manufacturing facilities in the eastern Gary Sprawl and Zone 11 Indiana Corridor. Aerospace and autonomous systems; positioned as a lower-profile Arcturus competitor. Zone 6-11 positioning keeps Vespid outside Zone 2's Arcturus Civil Security monitoring range.",
+    description: "Vespid Arcology Cluster — network of hardened research and manufacturing facilities in the eastern Gary Sprawl and Zone 11 Indiana Corridor. Aerospace and autonomous systems; positioned as a lower-profile Arcturus competitor. Zone 6-11 positioning keeps Vespid outside Zone 2's ArcSec monitoring range.",
     grayZoneRelationship: "Vespid facilities are heavily hardened. Gray Zone communities in the adjacent Indiana corridor are aware of where the perimeter is."
   },
 

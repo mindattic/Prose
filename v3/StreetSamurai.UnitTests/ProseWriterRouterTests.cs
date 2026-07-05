@@ -1,3 +1,4 @@
+using Microsoft.Extensions.Logging.Abstractions;
 using StreetSamurai.Core.Services;
 
 namespace StreetSamurai.UnitTests;
@@ -23,7 +24,8 @@ public class ProseWriterRouterTests
             generator:    null!,
             methodology:  methodology,
             modeDetector: modeDetector,
-            monitor:      monitor);
+            monitor:      monitor,
+            log:          NullLogger<ProseWriterRouter>.Instance);
     }
 
     // ── LogCoverageAsync: early exit on empty nodeId ───────────────────────

@@ -11,10 +11,10 @@ THREE CHECKING STRATEGIES:
   semantic -- 20 most embedding-similar entities checked per entity (uses facts.db)
 
 HARDCODED WORLD RULES (always checked):
-  - No city police (Arcturus Civil Security only, Meridian PD dissolved 2208)
+  - No city police (Arcturus Civil Security only, city police dissolved 2208)
   - Currency is Φ (Quanta), never dollars or credits
   - Iowan Behemoths are autonomous machines, not synthetic life
-  - City name is GLMZ, not "Meridian City" or "Meridian 88" (only the Behemoth keeps that name)
+  - City name is GLMZ (also "The Glooms"). "Meridian 88" refers ONLY to the Iowan Behemoth machine.
 
 USAGE:
   python consistency_check.py              # all three strategies
@@ -59,7 +59,7 @@ console = Console()
 WORLD_RULES = [
     {
         "rule": "no_city_police",
-        "description": "No city police exist. Arcturus Civil Security is the closest equivalent. Meridian PD dissolved in 2208. There are no Metro Police, GLMZ Police, or any other municipal law enforcement.",
+        "description": "No city police exist. Arcturus Civil Security is the closest equivalent. City police dissolved in 2208. There are no Metro Police, GLMZ Police, or any other municipal law enforcement.",
         "violation_type": "lore",
         "severity": "critical",
     },
@@ -77,7 +77,7 @@ WORLD_RULES = [
     },
     {
         "rule": "city_name_glmz",
-        "description": "The city is called GLMZ. Do not call it 'Meridian City', 'Meridian 88', or 'New Meridian'. Only the specific Iowan Behemoth machine is allowed to be called 'Meridian 88'.",
+        "description": "The city is called GLMZ (also 'The Glooms' colloquially). Do not call it 'Meridian City', 'Meridian 88', or 'New Meridian'. 'Meridian 88' refers ONLY to the Iowan Behemoth machine.",
         "violation_type": "lore",
         "severity": "moderate",
     },

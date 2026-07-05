@@ -118,7 +118,7 @@ const WORLD_CONTEXT = `You are writing in-world documents for StreetSamurai, set
 
 WORLD RULES — embed these naturally, don't explain them:
 - Φ is the Quanta currency symbol (NEVER "phi", NEVER the Greek letter phi — it is the QUANTA symbol)
-- No city police exist. Arcturus Civil Security is the enforcement arm (corporate, brutal, not public)
+- No city police exist. ArcSec is the enforcement arm (corporate, brutal, not public)
 - Tier 1-5 society: Tier 1 = poorest Shelf districts (packed vertical housing), Tier 5 = corporate elite
 - Freelancers are NOT romantic rebels — they are laborers in a brutal informal economy
 - Some freelancers are heroes. Some are war criminals. Most are just trying to survive.

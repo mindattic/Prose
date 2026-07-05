@@ -239,9 +239,9 @@ function extractTags(doc) {
 
   // Ensure at least 5 tags by adding from the body if needed
   if (tags.size < 5) {
-    // Add "meridian" if meridian 88 is mentioned
-    if (fullText.includes("meridian 88") || fullText.includes("meridian88")) {
-      tags.add("meridian_88");
+    // Add "glmz" tag for GLMZ city references
+    if (fullText.includes("glmz") || fullText.includes("the glooms")) {
+      tags.add("glmz");
     }
     // Try to extract more from the file_name
     if (doc.file_name) {

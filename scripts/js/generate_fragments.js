@@ -242,11 +242,11 @@ const fragments = [
     author: "Unknown / Weather Broadcast",
     date: "unknown",
     classification: "unclassified",
-    description: "A weather broadcast received on standard GLMZ frequencies that describes weather conditions for a city called \"Meridian 89.\" The weather patterns described are familiar but inverted — where GLMZ had rain, 89 had sun. Where 88 was cold, 89 was warm. The broadcast lasted 47 seconds and has not repeated.",
+    description: "A weather broadcast received on standard GLMZ frequencies that describes weather conditions for a city called \"Meridian 89.\" The weather patterns described are familiar but inverted — where GLMZ had rain, 89 had sun. Where GLMZ was cold, 89 was warm. The broadcast lasted 47 seconds and has not repeated.",
     related_entities: [],
     credibility: "unconfirmed",
     story_hooks: ["Does Meridian 89 exist?", "Why are the weather patterns exactly inverted?"],
-    tags: ["document", "fragment", "incomplete", "weather", "meridian 88", "meridian 89", "inverted", "anomaly", "broadcast"]
+    tags: ["document", "fragment", "incomplete", "weather", "glmz", "meridian 89", "inverted", "anomaly", "broadcast"]
   },
   {
     name: "Fragment — Missing Persons Report, Incomplete",

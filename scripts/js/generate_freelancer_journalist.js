@@ -124,8 +124,8 @@ const WORLD_CONTEXT = `You are generating content for StreetSamurai, set in GLMZ
 
 WORLD RULES — embed naturally, do not explain:
 - Φ is the Quanta currency symbol (NEVER "phi", NEVER the Greek letter — it is the QUANTA currency symbol)
-- No city police. Arcturus Civil Security is the enforcement arm (corporate, brutal, not public)
-- Meridian PD dissolved in 2208 — no "Metro Police"
+- No city police. ArcSec is the enforcement arm (corporate, brutal, not public)
+- City police dissolved in 2208 — no "Metro Police"
 - Tier 1-5 society: Tier 1 = poorest Shelf districts, Tier 5 = corporate elite
 - CorpoNations are sovereign — they have territories, borders, their own law
 - The Shelf is dense lower-tier residential. The Narrows is mid-tier. The Canopy is upper-tier.
@@ -404,7 +404,7 @@ const INTERVIEW_SPECS = [
     subject_type: 'civilian who hired a freelancer',
     subject_name: 'Patience Ajani-Svensson — Shelf Tier 1 resident, mother; hired a freelancer to find her missing son',
     doc_type: 'interview_transcript',
-    topic: 'Patience\'s sixteen-year-old son disappeared four months ago. Arcturus Civil Security conducted a two-day search and closed the case. She hired a C-tier freelancer from a community referral using money borrowed from three neighbors. The interview covers: the specific moment she decided to hire a freelancer (what Arcturus told her, what they didn\'t do), how she found the contractor (community mutual-aid network), what the contractor actually did (specific, methodical, very unglamorous), what the outcome was (not clean — the son was found but the circumstances were complicated, and the interview doesn\'t resolve everything cleanly), how much it cost (Φ figure) and where the money came from, what she thinks about a system where a mother in Tier 1 has to do this, what she would say to someone in her position now. The interview is the most emotionally direct piece in the series.'
+    topic: 'Patience\'s sixteen-year-old son disappeared four months ago. ArcSec conducted a two-day search and closed the case. She hired a C-tier freelancer from a community referral using money borrowed from three neighbors. The interview covers: the specific moment she decided to hire a freelancer (what Arcturus told her, what they didn\'t do), how she found the contractor (community mutual-aid network), what the contractor actually did (specific, methodical, very unglamorous), what the outcome was (not clean — the son was found but the circumstances were complicated, and the interview doesn\'t resolve everything cleanly), how much it cost (Φ figure) and where the money came from, what she thinks about a system where a mother in Tier 1 has to do this, what she would say to someone in her position now. The interview is the most emotionally direct piece in the series.'
   },
   {
     file_name: 'undercurrent_interview_small_business_protection',
@@ -456,11 +456,11 @@ const INTERVIEW_SPECS = [
   },
   {
     file_name: 'undercurrent_arcturus_shelf_piece',
-    name: 'The Door at Night: Arcturus Civil Security in the Shelf',
+    name: 'The Door at Night: ArcSec in the Shelf',
     subject_type: 'controversial investigative piece — got journalist in trouble',
     subject_name: 'Reported by ${JOURNALIST_NAME}; published in ${PUBLICATION}; Arcturus filed a formal complaint with The Undercurrent\'s hosting platform',
     doc_type: 'interview_transcript',
-    topic: 'Investigative piece documenting Arcturus Civil Security\'s enforcement patterns in Tier 1 Shelf districts: the frequency of nighttime operations compared to Tier 3+ areas, the rate of "operational incidents" (Arcturus\'s term for injuries and deaths during enforcement), the specific neighborhoods where enforcement is highest and the demographic profile of those neighborhoods, interviews with six Shelf residents (all anonymous) describing specific incidents with Arcturus, the specific contract terms between Arcturus and the CorpoNations that effectively create enforcement-free zones for corporate assets in Shelf space, the formal complaint from a Tier 2 neighborhood council that was dismissed. ${JOURNALIST_NAME} includes the formal Arcturus response, which disputes every specific figure while declining to provide alternative figures. The piece ends with a document she obtained: an internal Arcturus scheduling memo that reveals enforcement operations in the Shelf are calendared around CorpoNation delivery windows rather than crime patterns. The publication of this piece led to a six-week period during which ${JOURNALIST_NAME} needed the protection arrangements she later wrote about.'
+    topic: 'Investigative piece documenting ArcSec\'s enforcement patterns in Tier 1 Shelf districts: the frequency of nighttime operations compared to Tier 3+ areas, the rate of "operational incidents" (Arcturus\'s term for injuries and deaths during enforcement), the specific neighborhoods where enforcement is highest and the demographic profile of those neighborhoods, interviews with six Shelf residents (all anonymous) describing specific incidents with Arcturus, the specific contract terms between Arcturus and the CorpoNations that effectively create enforcement-free zones for corporate assets in Shelf space, the formal complaint from a Tier 2 neighborhood council that was dismissed. ${JOURNALIST_NAME} includes the formal Arcturus response, which disputes every specific figure while declining to provide alternative figures. The piece ends with a document she obtained: an internal Arcturus scheduling memo that reveals enforcement operations in the Shelf are calendared around CorpoNation delivery windows rather than crime patterns. The publication of this piece led to a six-week period during which ${JOURNALIST_NAME} needed the protection arrangements she later wrote about.'
   },
 ];
 

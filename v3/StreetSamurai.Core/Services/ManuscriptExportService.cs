@@ -104,10 +104,9 @@ public class ManuscriptExportService
         var (manuscript, path) = await LoadAsync(nodeId, "pdf", ct);
 
         // 6" × 9" KDP paperback trim (points: 1" = 72pt).
-        // Margins: top/bottom 1", inside/gutter 0.75", outside 0.375".
-        // No mirror-margin support in QuestPDF — left is always the gutter; KDP adjusts for binding.
+        // Margins: top/bottom 1", left/right 0.75" symmetric for screen reading.
         var trim = new PageSize(432, 648);
-        const float marginTop = 72f, marginBottom = 72f, marginInside = 54f, marginOutside = 27f;
+        const float marginTop = 72f, marginBottom = 72f, marginLeft = 54f, marginRight = 54f;
 
         QuestPDF.Fluent.Document.Create(container =>
         {
@@ -116,7 +115,7 @@ public class ManuscriptExportService
             {
                 p.Size(trim);
                 p.MarginTop(marginTop); p.MarginBottom(marginBottom);
-                p.MarginLeft(marginInside); p.MarginRight(marginOutside);
+                p.MarginLeft(marginLeft); p.MarginRight(marginRight);
                 p.PageColor(Colors.White);
                 p.DefaultTextStyle(t => t.FontFamily("Garamond").FontSize(12).FontColor(Colors.Black));
                 p.Content().AlignCenter().AlignMiddle().Column(col =>
@@ -135,7 +134,7 @@ public class ManuscriptExportService
                 {
                     p.Size(trim);
                     p.MarginTop(marginTop); p.MarginBottom(marginBottom);
-                    p.MarginLeft(marginInside); p.MarginRight(marginOutside);
+                    p.MarginLeft(marginLeft); p.MarginRight(marginRight);
                     p.PageColor(Colors.White);
                     p.DefaultTextStyle(t => t.FontFamily("Garamond").FontSize(12).LineHeight(1.4f).FontColor(Colors.Black));
                     p.Content().Column(col =>
@@ -249,8 +248,7 @@ public class ManuscriptExportService
         p.synopsis { text-align: center; color: #666; font-style: italic; margin-top: 1em; }
         body.title-page { text-align: center; }
         h2.chapter-heading { font-size: 1.4em; margin: 2em 0 1em; text-align: center; }
-        p { text-indent: 1.4em; margin: 0.1em 0; }
-        p.no-indent { text-indent: 0; }
+        p { margin: 0.4em 0; }
         em { font-style: italic; }
         """;
 
@@ -299,13 +297,8 @@ public class ManuscriptExportService
         sb.AppendLine($"""<head><title>{EpubEsc(heading)}</title><link rel="stylesheet" type="text/css" href="styles.css"/></head>""");
         sb.AppendLine("<body>");
         sb.AppendLine($"""<h2 class="chapter-heading">{EpubEsc(heading)}</h2>""");
-        bool first = true;
         foreach (var para in chapter.Paragraphs)
-        {
-            var cls = first ? " class=\"no-indent\"" : "";
-            sb.AppendLine($"<p{cls}>{EpubRenderInline(para)}</p>");
-            first = false;
-        }
+            sb.AppendLine($"<p>{EpubRenderInline(para)}</p>");
         sb.AppendLine("</body></html>");
         return sb.ToString();
     }

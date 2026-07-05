@@ -14,7 +14,7 @@ UPDATE Beats SET
     Text = N'SPARROW / ORBITAL LOG 2226-04-09
 Altitude: ~740,000 mi / Day 2 of current orbit
 
-The contact window for Meridian 88 opens at 14:12 UTC.
+The contact window for GLMZ opens at 14:12 UTC.
 
 She notes:
 

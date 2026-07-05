@@ -533,7 +533,7 @@ if (args.Contains("--worker-mode"))
 //   ss --review-story / --run-panel  (legacy aliases)
 if (args.Contains("--review-node") || args.Contains("--review-story") || args.Contains("--run-panel"))
 {
-    var sp = BuildCoreServices(args);
+    var sp = BuildServicesWithVault(args);
     Environment.ExitCode = await ReviewNodeCli.RunAsync(args, sp);
     return;
 }
@@ -1150,6 +1150,16 @@ if (args.Contains("--list-stories"))
 {
     var sp = BuildCoreServices(args);
     Environment.ExitCode = await ListNodesCli.RunAsync(args, sp);
+    return;
+}
+
+//   ss --kdp-status
+//   Show KDP publication status: Published / Outdated / WorkInProgress for all tracked nodes.
+//   Outdated = published but beats edited since last KDP push.
+if (args.Contains("--kdp-status"))
+{
+    var sp = BuildCoreServices(args);
+    Environment.ExitCode = await KdpStatusCli.RunAsync(args, sp);
     return;
 }
 

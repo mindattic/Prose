@@ -69,7 +69,7 @@ const STOP = new Set([
   'Tier','Building','Buildings','Floor','Level','North','South','East','West','Northern','Southern','Eastern','Western',
   'Monday','Tuesday','Wednesday','Thursday','Friday','Saturday','Sunday',
   'January','February','March','April','May','June','July','August','September','October','November','December',
-  'GLMZ','Meridian','Meridian 88','Chicago','Illinois','Iowa','Michigan','Ohio','Indiana','Wisconsin','Minnesota','Kentucky','Missouri','Detroit','Cleveland','Milwaukee','Toledo','Rotterdam',
+  'GLMZ','Meridian','Chicago','Illinois','Iowa','Michigan','Ohio','Indiana','Wisconsin','Minnesota','Kentucky','Missouri','Detroit','Cleveland','Milwaukee','Toledo','Rotterdam',
   'Spires','Circuit','Canopy','Loop','Gray','Zone','Brightmoor','Reclamation','Narrows','Shelf','Spine','Pale','Mile',
   'Arcturus','Axiom','Vossen','Tessera','Crucible','CRUCIBLE','Zheng','Zheng-Dao','Libation','Palladian','Ferrogate',
   'Lake','Michigan','Ontario','Huron','Erie','Superior','Mississippi','Ohio',

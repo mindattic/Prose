@@ -105,12 +105,14 @@ victory is the open question of the series.
   foot, which eye. She has it in her notes. He knows she has it. Neither mentions it.
 
 **Dame Lyra:**
+- **House Ophiuchus.** The Vigil Seat — oldest installation in the Cauld, northern Ridge
+  country, practitioners who have been on the long watch longest.
 - **Rank: Knight, closing on Paladin.** Certified Transmutation researcher and practitioner.
   Title "Dame" is the Knight-rank prefix.
-- **Physical form (Transmutation-shaped):** Over seven feet. Lean, well-proportioned —
-  not a mass build, a functional one. The ascendance has been running long enough to resolve
-  into something that reads as tall and composed rather than monstrous. She is recognizably
-  human. She is not baseline human.
+- **Physical form (Transmutation-shaped):** Six feet five inches currently, lean and
+  well-proportioned — not a mass build, a functional one. Each major battle she survives
+  earns another post-action infusion. She is still growing. The number is not the ceiling.
+  She is recognizably human. She is not baseline human.
 - The alchemist. Reads Soren like her own document.
 - She has seven theories and hasn't confirmed any.
 - Her Interview ritual: established protocol across many campaigns. Yggdra smoke. Old Rite

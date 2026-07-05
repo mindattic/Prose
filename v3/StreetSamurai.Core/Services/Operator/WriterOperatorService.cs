@@ -172,9 +172,9 @@ public class WriterOperatorService
             ? "WORLD RULES (HARD):\n" +
               "        - The symbol Φ is QUANTA currency. Never the Greek letter phi.\n" +
               "        - Iowan Behemoths are autonomous machines, NOT alive.\n" +
-              "        - The city is GLMZ (also Meridian 88 for the Behemoth specifically, also \"The\n" +
-              "          Glooms\" colloquially). NOT \"Meridian\" alone.\n" +
-              "        - There are NO city police. Closest equivalent is Arcturus Civil Security.\n" +
+              "        - The city is GLMZ (also \"The Glooms\" colloquially). The Iowan Behemoth machine\n" +
+              "          is called 'Meridian 88' — that name refers ONLY to the machine, never the city.\n" +
+              "        - There are NO city police. Closest equivalent is ArcSec (Arcturus Civil Security).\n" +
               "        - Mixed heritage from unexpected global combinations is the default (Ubiquitous\n" +
               "          Diaspora). Don't default to monocultural characters."
             : (UniverseScope.Current?.UniverseGroundingOr("") ?? "");

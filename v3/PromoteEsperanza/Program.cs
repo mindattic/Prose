@@ -54,7 +54,7 @@ esperanza.Description =
     + "'The Voice You Trust' for representing a Z3 plaintiff in a class action that ended in "
     + "a six-figure settlement and a permanent injunction Axiom quietly violated within eight "
     + "months. Now works out of a converted bakery in the Glooms under the Open Eyes banner. "
-    + "Rhea Adesanya-MacGregor interviewed her once at Tessera for a piece that did not air "
+    + "Rhea MacGregor interviewed her once at Tessera for a piece that did not air "
     + "because Marcus took it off the schedule two days before broadcast. Received an "
     + "anonymous letter on plain paper, in a deliberately non-attributable hand, containing "
     + "the OPTIC-7 lot number and four medical-record case identifiers — the tip Sable dropped "

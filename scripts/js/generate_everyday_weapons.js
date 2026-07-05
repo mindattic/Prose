@@ -141,7 +141,7 @@ WORLD RULES:
 - Year 2200, city is GLMZ (Great Lakes Megacity Zone, formerly Chicago area, ~100M people)
 - Currency is Φ (Quanta) — this is NOT the Greek letter phi, NOT dollars
 - Tiers 1–5: Tier 1 = lowest access (shelf workers, excluded), Tier 5 = corporate elite. Most everyday weapons are Tier 1–2.
-- No city police exist — Arcturus Civil Security is the closest equivalent; Meridian PD dissolved 2208
+- No city police exist — ArcSec is the closest equivalent; city police destroyed in the 2065 Blue Massacre
 - Caseless ammunition is the military standard by 2200, but brass-cased is still common civilian
 - LASER and PLASMA weapons: common but LESS RELIABLE than conventional firearms — batteries die, optics foul, plasma containment fails in wet/cold/EMP. Conventional and magnetic preferred in the field
 - COILGUN/MAGNETIC weapons: very reliable, no propellant fouling — more reliable than energy, roughly equivalent to conventional gunpowder weapons
@@ -652,7 +652,7 @@ const BATCHES = [
     inspiration: 'Barrett M82 / M107 / KSVK — anti-materiel rifles for vehicle, structure, and armor defeat',
     calibers: ['12.7mm Anti-Materiel', '.50 Heavy Machine Gun', '.338 Precision Long'],
     tiers: ['Tier 5', 'Military/law enforcement only'],
-    flavor: 'ADS anti-materiel platforms are for ending things at distance. Licensed to Arcturus Civil Security strike teams and CorpoNation military forces. Nothing about them is subtle.'
+    flavor: 'ADS anti-materiel platforms are for ending things at distance. Licensed to ArcSec strike teams and CorpoNation military forces. Nothing about them is subtle.'
   },
 
   // ── IRONSIDE ARMAMENTS (Arcturus Defense Solutions) — 4 batches ───────────

@@ -11,10 +11,10 @@ THREE CHECKING STRATEGIES:
   semantic -- 20 most embedding-similar entities checked per entity (uses facts.db)
 
 HARDCODED WORLD RULES (always checked):
-  - No city police (Arcturus Civil Security only, Meridian PD dissolved 2208)
+  - No city police (Arcturus Civil Security only, city police dissolved 2208)
   - Currency is Phi (Quanta), never dollars or credits
   - Iowan Behemoths are autonomous machines, not synthetic life
-  - City name is GLMZ, not "Meridian City" or "Meridian 88" (only the Behemoth keeps that name)
+  - City name is GLMZ (also "The Glooms"). "Meridian 88" refers ONLY to the Iowan Behemoth machine.
 
 USAGE:
   python consistency_check.py              # all three strategies

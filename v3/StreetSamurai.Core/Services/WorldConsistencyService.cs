@@ -70,13 +70,13 @@ public class WorldConsistencyService : PipelineServiceBase
             ["the shelf district", "shelf residential", "living on the shelf",
              "shelf tier", "shelf level"]),
 
-        ("No 'wedding cake' tier architecture",
+        ("No 'wedding cake' tier architecture — GLMZ is 200-floor-plus towers by accretion, with CNT-tethered arcologies above that dwarf even those; not neat stacked layers",
             ["wedding cake city", "wedding cake tiers", "tiered wedding cake",
              "vertical wedding cake"]),
 
-        ("GLMZ is not 'Meridian PD' jurisdiction",
+        ("No city police institution named 'Meridian PD' — term is retired",
             ["meridian pd jurisdiction", "meridian police district",
-             "meridian metropolitan police"]),
+             "meridian metropolitan police", "meridian pd", "meridian police department"]),
 
         ("Ferrogate runs The Pulse rail, not a legacy railroad",
             ["ferrogate railroad", "ferrogate steam", "ferrogate freight train",
@@ -163,17 +163,8 @@ public class WorldConsistencyService : PipelineServiceBase
         Notify("Phase 1 — Rule Scan", records.Count, records.Count, $"{RuleViolations.Count} violations");
     }
 
-    // Meridian PD dissolved in 2208; historical references with explicit past-tense
-    // markers ("dissolved", "former", "disbanded", "dissolution") are canonical and
-    // not violations. Mirrors the rule in WorldLoreTests.LiveData_NoMeridianPDAsActiveInstitution.
-    private static bool IsHistoricallyExempt(string pattern, string lowerText)
-    {
-        if (pattern is not ("meridian pd" or "meridian police department")) return false;
-        return lowerText.Contains("dissolved")
-            || lowerText.Contains("former")
-            || lowerText.Contains("disbanded")
-            || lowerText.Contains("dissolution");
-    }
+    // "Meridian PD" is a retired term — no exemptions. All uses are violations.
+    private static bool IsHistoricallyExempt(string pattern, string lowerText) => false;
 
     /// <summary>
     /// Scan an arbitrary text snippet (typically prose Claude is about to deliver) against
@@ -225,7 +216,7 @@ public class WorldConsistencyService : PipelineServiceBase
                 zone/location inconsistencies, or violations of established world logic.
 
                 World rules:
-                - No city police force (Arcturus Civil Security is closest thing)
+                - No city police force (ArcSec is closest thing)
                 - Iowan Behemoths are autonomous machines, not alive
                 - Φ is the Quanta currency symbol
                 - Tiers are social class only — not physical levels/floors

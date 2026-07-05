@@ -113,7 +113,7 @@ const SYSTEM_PROMPT = `You generate creature, flora, chimera, and anomaly entrie
 WORLD RULES:
 - GLMZ spans the old Chicago metro area to western Michigan, with Lake Michigan as its eastern edge. Population ~100 million.
 - Currency is Φ (Quanta). Do NOT call it "phi" — Φ is the QUANTA symbol.
-- There is NO city police. Arcturus Civil Security is the closest equivalent to law enforcement.
+- There is NO city police. ArcSec is the closest equivalent to law enforcement.
 - Society is tiered 1-5: Tier 1 = poorest/street level, Tier 5 = corporate elite.
 - The city has been growing and decaying for 200 years. Urban ecology is deep and strange.
 - Three major genemod corporations have operated for 200 years, causing dozens of lab escapes and intentional releases:
@@ -292,7 +292,7 @@ const BATCHES = [
     prompt: 'Generate 8 avian chimera types, focusing on the engineering challenges and social realities of flight-adapted humans. Not everyone achieves true flight — most achieve gliding or enhanced agility. Include cultural practices around aerial navigation in the city, avian chimera roosting communities in high structures.' },
 
   { label: 'Aquatic Chimeras — Canal Dwellers', category: 'chimera', origin: 'intentional_release',
-    prompt: 'Generate 8 aquatic chimera types adapted for extended submersion, canal navigation, and lakefront life. Their communities live in partially submerged infrastructure. Describe their relationship with the water infrastructure workers, canal maintenance, Arcturus Civil Security patrols.' },
+    prompt: 'Generate 8 aquatic chimera types adapted for extended submersion, canal navigation, and lakefront life. Their communities live in partially submerged infrastructure. Describe their relationship with the water infrastructure workers, canal maintenance, ArcSec patrols.' },
 
   { label: 'Insectoid Chimeras — Hive-Adjacent', category: 'chimera', origin: 'genemod_accident',
     prompt: 'Generate 8 insectoid chimera types. Some chose it. Some are accidents from Lacuna Genomics experiments. Describe the social friction — insectoid chimeras face the most discrimination. Include cultural practices, community structures, and at least one famous insectoid chimera activist.' },

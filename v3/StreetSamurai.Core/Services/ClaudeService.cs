@@ -24,7 +24,7 @@ public class ClaudeService : ILlmService
     }
 
     public Task<bool> IsConfiguredAsync()
-        => Task.FromResult(!string.IsNullOrWhiteSpace(settings.ApiKey));
+        => Task.FromResult(legion.IsProviderConfigured(settings.ActiveLlmProvider));
 
     public async Task<string> GenerateAsync(
         string system,
@@ -35,26 +35,28 @@ public class ClaudeService : ILlmService
         CancellationToken ct = default)
     {
         var activeModel = model ?? settings.Model;
+        var providerId = settings.ActiveLlmProvider is "claude-api" or "claude-team"
+            ? settings.ActiveLlmProvider
+            : "claude-team";
 
-        if (string.IsNullOrWhiteSpace(settings.ApiKey))
+        if (providerId == "claude-api" && string.IsNullOrWhiteSpace(settings.ApiKey))
         {
-            log.LogError("Claude API key not configured — cannot generate");
+            log.LogError("Claude API key not configured for provider claude-api");
             throw new InvalidOperationException("API key not configured.");
         }
 
-        log.LogDebug("Claude request via Legion: model={Model}, maxTokens={MaxTokens}, temp={Temperature}, systemLen={SystemLen}, userLen={UserLen}",
-            activeModel, maxTokens, temperature, system.Length, user.Length);
+        log.LogDebug("Claude request via Legion: provider={Provider}, model={Model}, maxTokens={MaxTokens}, temp={Temperature}, systemLen={SystemLen}, userLen={UserLen}",
+            providerId, activeModel, maxTokens, temperature, system.Length, user.Length);
 
         try
         {
             var text = (await legion.CallAsync(
-                providerId: "claude-api",
-                apiKey: settings.ApiKey,
-                model: activeModel,
+                providerId: providerId,
                 systemPrompt: system,
                 userMessage: user,
                 maxTokens: maxTokens,
                 temperature: temperature,
+                modelOverride: activeModel,
                 ct: ct)).Trim();
 
             log.LogInformation("Claude response: model={Model}, responseLen={ResponseLen}",

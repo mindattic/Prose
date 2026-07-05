@@ -109,7 +109,7 @@ any formal record.
 
 Thin-membrane sites are where the membrane is already thin. Whether they were always thin, or
 whether they were thinned by historical Scrying at the same location, is not recorded. The
-oldest installations — the Corvin Station, the Forge Hearth's original apparatus — have been
+oldest installations — the Ophiuchus Station, the Forge Hearth's original apparatus — have been
 stretching the membrane at the same coordinates for generations.
 
 **The Houses control Scrying.** Control the installation, control what gets manufactured.
@@ -237,6 +237,20 @@ are analytical categories for what the mechanism actually does.
   chosen. The House member is present in the chamber when they arrive. Children are the most
   common form — gifted to House families as tokens of the loyalty network, placed as wards,
   absorbed into estates so thoroughly the youngest do not remember anything else.
+
+- **Heir bestowal — private petition.** A House couple without living children may petition the
+  Liturgy for an heir. The petition requires documented infertility confirmed by a Liturgy
+  physician, a minimum loyalty tier, and a sponsoring Lector willing to witness the ceremony.
+  A child from another Sphere is selected through Scrying — assessed for age, health, and the
+  absence of visible identifying marks — and taken. The Liturgy performs the ceremony privately.
+  The child arrives in a chamber with robed figures and the waiting couple. House records note a
+  ward received, a placement, an arrival date. The mechanism is never written. The child is too
+  young to give coherent testimony and in any case has no language for the Cauld when they arrive.
+  By the time they do, the House is the only world they have. The oldest children taken this way —
+  those who were five or six at the time — sometimes retain a fragment: a room, a smell, a day
+  that ended and was replaced by something else entirely. This is considered a minor risk. The
+  Liturgy's position is that the fragment is not memory so much as noise. House couples who have
+  raised an heir this way tend to agree. They have to.
 
 - **Skill-sorted conscription.** The taking is opportunistic but the placement is not. Arrivals
   are assessed. A financial analyst, a physician, a broadcaster — these are diverted from the
@@ -487,12 +501,771 @@ a story.
 
 ---
 
+## The Long Record — How the Cauld Became What It Is
+
+The Houses did not spring from a founding document. They accumulated. Each one is the residue
+of something older — a tribe, a wound, a marriage of convenience that outlasted everyone who
+arranged it. To understand the current coalition map you have to understand what each House
+used to be, what it lost, and what it decided to keep.
+
+This is the Cauld's history as the Cauld's own archivists have it. It is not neutral. The
+Houses write their own past, and they write it in ways that justify their current holdings.
+The gaps in the record are as informative as the record itself.
+
+---
+
+### The Geography of the Cauld
+
+The Cauld's landmass maps onto a recognizable European shape: a continent with a warm southern
+coast, a cold northern peninsula, a forested industrial center, a western island nation
+separated from the mainland by a narrow channel, and an eastern breadbasket that grades into
+steppe. The seven Houses each occupy a distinct geographic zone. They border each other. They
+have always had to.
+
+**The Northern Fjords — Draught territory.** Scandinavia analog: long coastlines, cold fjord
+inlets, pine and birch, a culture that went to sea before it went to war. The winters are the
+longest in the Cauld. The people here solved cold and distance before they solved anything
+else. They are not the oldest culture in the Cauld but they have the longest memory of
+maritime raid. Their membrane site sits inland, on a glacial plateau — the only major
+installation that requires a sea crossing to reach from the nearest rival House.
+
+**The Central Forests — Fornax territory.** Germany analog: Rhine and Danube river valleys
+framing a vast forested interior, volcanic ridge country in the west, mineral-rich hills
+throughout. The Fornax culture developed in the forest, built along rivers, and solved metal
+long before the membrane was deliberate. The old-growth forest is still largely intact; the
+installations and river-crossing towns are clearings in it. Everything connects by water.
+
+**The Vine Country — Atrament territory.** France analog: the broad agricultural interior
+west of the Rhine, Atlantic coast to the west, mountain border to the south, narrow channel
+to the north separating it from the island. Temperate, fertile, well-watered, a culture that
+produced written records before any of its neighbors because surplus produced leisure and
+leisure produced scribes. The Atrament installation sits on a river bluff in the interior —
+accessible from all directions, which was always the point.
+
+**The Island — Pallor territory.** Great Britain analog: separated from the mainland by a
+cold channel, rocky in the north, softer and greener in the south, a culture shaped by the
+fact that invading it requires boats. The Pallor installation is inland on the island's
+center — a compromise location between the island's three regional cultures that became the
+institution that unified them. The channel is narrow enough to see across on a clear day.
+Wide enough to matter.
+
+**The Southern Peninsula — Ophiuchus territory.** Italy analog: Alpine ridge descending into
+a warm peninsula running south into the inland sea, a culture with the longest continuous
+written record in the Cauld, the oldest formal membrane study, the first institution to treat
+Scrying as a discipline rather than a ceremony. The Ophiuchus installation sits in the
+northern ridge country where the Alps meet the peninsula — defensible, ancient, watching a
+membrane boundary that has been observed without interruption longer than any other.
+
+**The Western Sea Coast — Lacerta territory.** Iberian analog: the Atlantic-facing coast,
+warm and dry in the south, rougher and wetter in the north, cliffs at the western edge where
+the ocean begins. The Lacerta installation is on the southern cliffs — the westernmost point
+of the Cauld. Beyond it there is only water. No other House can be approached from behind
+here. Lacerta has known this for four hundred years and built its entire institutional
+character around the fact.
+
+**The Eastern Plains — Calyx territory.** Central-eastern European analog: Danube plains
+east of Fornax, broad agricultural lowlands, the Cauld's primary grain supply, a culture
+that was farming organized territory before the Ridge Countries had permanent settlements.
+Calyx borders Fornax to the west, Ophiuchus to the southwest across a low mountain range,
+and grades into borderland steppe to the east where the Cauld's authority has always been
+thinner. Their membrane site is in the agricultural heartland — not dramatic ground, not
+defensible, simply the richest food-producing territory the Cauld contains.
+
+---
+
+### The First Age — Membrane as Horror
+
+Before anyone understood what the membrane was, it killed people.
+
+Not intentionally. Not as something with intent. But people vanished near certain locations,
+and people arrived at certain locations who had not been there before, and neither group was
+the same afterward. The ones who vanished were gone. The ones who arrived were wrong in ways
+that took years to name — their language was not Cauld language, their behavior was not Cauld
+behavior, and everything they described of where they came from was impossible. A traveler who
+has just walked five leagues describes a city with metal towers that moved. A child found near
+the northern ridge describes a sky with two moons. Nobody believed them. Nobody had
+a framework for believing them.
+
+The earliest Cauld peoples responded to membrane sites the way all early peoples respond to
+geography that kills them unpredictably: they made them sacred. Taboo. The circle of stones
+at this location is where the sky tears. Do not go inside the circle. If you go inside the
+circle and survive, you are a holy person now, which is to say you are dangerous and
+untouchable and probably to be avoided. If you do not survive, you are a lesson.
+
+This is the First Age. Nobody was operating anything. The membrane was happening to people.
+
+What the First Age produced, in the long run, was the accumulation of enough oral tradition
+around enough membrane sites that the pattern began to emerge. The season when the sky tears
+most often. The precise location within the circle where people vanish versus where they merely
+see things that aren't there. The materials — stone, geometry, the particular resonance of
+certain arrangements — that seemed to correlate with membrane activity. This knowledge passed
+through generations of people whose job title was "priest" or "holy person" or "the one who
+keeps the old knowledge." It was not science. It was not technology. It was the memory of a
+pattern, held inside a religious framework because that was the only framework available.
+
+Someone eventually tested it deliberately. This is not recorded. The first person who
+intentionally operated a membrane site did so inside a religious ceremony, using the
+accumulated traditional knowledge of that site, and produced a result that was probably
+terrifying and probably repeatable. The knowledge that it was repeatable was the end of the
+First Age and the beginning of everything that followed.
+
+---
+
+### The Blood Century — Tribes at War Over Sacred Ground
+
+The second discovery — that control of a membrane site produced a strategic advantage that
+no other resource could match — produced a century of war.
+
+The logic was simple. A tribe that could bring warriors through the membrane didn't need
+to win against superior numbers. It could replenish faster than the enemy could kill. A tribe
+that could bring skilled workers through didn't need to develop skills internally. It could
+import them. A tribe that controlled the sacred ground controlled who ate this winter.
+
+Eight major tribal confederations controlled the largest active membrane sites in the Cauld.
+They were not all equally powerful. The northern fjord peoples held two sites; the central
+forest and river cultures held two; the southern peninsula held one; the island culture held
+one; the eastern plains held one; the western cliff coast held one. Every region had a site.
+Not every region had a site worth fighting over — the island's apparatus was irregular, the
+cliff coast's was modest — but every region understood what the sites meant. The fighting
+was proportional to what winning would buy.
+
+What followed was not a clean eight-way war. It was a century of shifting alliances, site
+seizures, betrayals of alliance, and occasional outright atrocity. The sites themselves were
+not destroyed — the underlying geology did not move — but the ritual knowledge required to
+operate them was vulnerable. Practitioner families were killed. Records were burned. A site
+that had been reliably operational for fifty years went dark when the tribe holding it
+lost its entire senior practitioner lineage in a single ambush. The incoming tribe could
+hold the ground but could not light the apparatus. They could occupy sacred ground. The
+sacred ground did nothing for them.
+
+Three sites went dark in the Blood Century and have not come back. The locations are known.
+The Cauld has been attempting to reconstruct the operational protocols from partial records
+for two hundred years. Two of the sites produce faint Sphere activity suggesting the membrane
+is present but the apparatus is inert. The third produces nothing at all, which is more
+disturbing: either the membrane has healed completely or something in the ground changed.
+Nobody can tell which.
+
+**What the Blood Century produced:**
+
+The tribes that survived it were the ones with operational depth — not just practitioners,
+but records, redundant lineages of trained operators, administrative structures that could
+absorb the loss of any one family and continue. The accident of who survived shaped which
+institutions exist now. The institutions exist in the forms they do partly because of which
+forms could survive a century of other institutions trying to kill them.
+
+The Blood Century also produced the social memory that makes the current Cauld intelligible.
+Every current House carries wounds from this period. The alliances that feel inexplicable
+now — Fornax and Ophiuchus sitting in the same coalition when their institutional interests
+diverge — make more sense when you know they fought together against a common enemy for
+a generation in the Blood Century and the institutional memory of that cooperation outlasted
+everyone who experienced it. History as ballast. Nobody alive remembers. The alliance still
+moves as if they do.
+
+---
+
+### The Compact — How Institutions Replaced Tribes
+
+The Compact was not a peace treaty. It was a series of operational agreements between
+exhausted institutions that had learned, through a century of war, that destroying a site
+was easier than running it and that running it required stability.
+
+The Compact began as a non-aggression agreement between three of the surviving Basin
+institutions. They had been fighting each other for forty years over the same strip of
+agricultural land and the membrane site that sat in the middle of it. None of them had
+won. All of them had lost enough that the mathematics of continuing had become unfavorable.
+
+The first Compact document is preserved in the Atrament archive. It is eleven lines. It says:
+we will stop raiding each other's sites for two seasons. If the two seasons pass without
+incident we will meet again. That is everything. Eleven lines and the Cauld's permanent
+political structure began.
+
+The institution that grew around maintaining and extending these agreements was the Liturgy
+in its current form. The early Liturgy was not a religious body — it was a clerical one. It
+kept records of which agreements existed, with whom, with what terms. It was trusted across
+tribal lines because it had no membrane site of its own and therefore no territorial stake.
+The tribes used it as neutral ground for negotiations they didn't trust each other to hold.
+The Liturgy learned, slowly, that being trusted by everyone made it more powerful than having
+a site. It began to leverage this.
+
+The Compact's expansion from three Basin parties to all surviving institutions took forty
+years. Some joined willingly. Some were invited with the implicit understanding that non-
+membership meant being treated as prey by members. Two institutions that tried to hold out
+were absorbed through a combination of the Liturgy making their membership necessary for
+access to certain operational protocols, and their immediate neighbors making their
+non-membership too expensive.
+
+The Compact formalized something that had been evolving anyway: the transition from tribe to
+House. A tribe was a people. A House was an institution. The distinction mattered because
+a House could outlive any bloodline, could absorb any family, could change its leadership
+without ceasing to be itself. The tribe that had controlled the Fornax site for four
+generations was replaced, gradually, through marriage alliance and political appointment,
+by a different group of people. The House continued. The founding family became a
+ceremonial tradition, then a story, then a name in the records that the current leadership
+would recognize but not claim descent from. This is not unusual. This is how most of the
+current Houses became what they are.
+
+---
+
+### The Fallen Houses
+
+Seven Houses stand now. More than seven existed at various points in the Cauld's history.
+The ones that fell did not all fall the same way.
+
+---
+
+#### House Meridian — The House That Outsourced Its Soul
+
+Meridian controlled the southernmost major site, in the Dry Interior where the climate
+was most temperate and the written tradition was oldest. They were the wealthiest House in
+the Cauld for two hundred years — not because of their site specifically but because of their
+position: the Dry Interior's trade routes meant that goods from every other region passed
+through Meridian-administered territory.
+
+Wealth produces, eventually, the belief that wealth can substitute for everything else.
+Meridian was the first House to hire out its practitioner corps — to contract its membrane
+operations to a specialist institution rather than maintaining an internal lineage of
+trained operators. The logic was sound: specialists are more efficient than generalists.
+The contracted institution would run the site more reliably than an in-house corps that
+was trained for it but not exclusively devoted to it.
+
+This was correct. For sixty years, the contracted institution ran the Meridian site more
+efficiently than Meridian had. Throughput increased. Meridian's administrators focused on
+other things. The contractors became indispensable.
+
+What Meridian's administrators did not track was that the institutional knowledge was
+accumulating in the contractor, not in Meridian. The Meridian administrators who understood
+the apparatus retired and were not replaced with people who understood it — only with people
+who understood the contract. When the contractor renegotiated the contract in a bad year
+for Meridian, Meridian could not walk away because there was no one left inside the House
+who knew how to operate the apparatus themselves.
+
+A famine year followed. Meridian couldn't pay the contract rate. The contractor changed
+sides — offered its services to a neighboring House for a guaranteed rate Meridian couldn't
+match. Meridian's site went dark. A House that can't run its own installation is a House
+with a name but no power. Meridian's remaining members were absorbed into other Houses
+over the next two generations. The site was eventually brought back online by Atrament,
+whose Sphere catalogue included Meridian's operational records. Atrament now administers it.
+
+**What Meridian represents:** The danger of institutional elegance. The efficiency that
+eats the thing it was supposed to serve.
+
+---
+
+#### House Venn — The House That Walked Into Ophiuchus
+
+Venn was a small northern Highland House, the second of the Frozen Marches sites, operating
+a less significant apparatus than Ophiuchus Station but with a distinct practitioner culture.
+Where Ophiuchus's vigil operators were systematic and record-keeping, Venn's were intuitive.
+They documented less and observed more. Their understanding of the membrane was experiential
+in a way the other Houses found difficult to credit and impossible to replicate.
+
+The merger with Ophiuchus was arranged as a marriage alliance — a political settlement after
+a generation of low-grade conflict over shared territory. It was supposed to be a co-
+governance arrangement that left both institutions intact. What happened was that Venn's
+practitioner culture was gradually incorporated into Ophiuchus's, and Venn's administrative
+layer had nothing left to administer. Within fifty years Venn had ceased to exist as a
+separate institution. The merger was voluntary, which is the detail that distinguishes it
+from conquest, but voluntary dissolution is still dissolution.
+
+What Venn left behind: the word vigil operators at Ophiuchus Station use for the membrane when
+they believe administration isn't listening. It is a Venn word. It does not translate
+cleanly. The closest approximation is "the breathing place" — but in Venn it was a verb, not
+a noun. The membrane breathes. That is the Venn formulation. The membrane is not a thing that
+breathes; it breathes. Ophiuchus's current vigil operators use it without knowing where it came
+from. This is how cultures persist inside the institutions that absorbed them.
+
+**What Venn represents:** Cultures that don't survive merger survive as idiom. Institutional
+absorption preserves the residue of what it consumed.
+
+---
+
+#### House Sinter — The House That Ended Itself
+
+Sinter held a site in the central Ridge Countries — not one of the major installations but
+an active and reliable one, positioned at a Sphere junction that produced particularly dense
+membrane activity. Dense membrane activity means easier Scrying but also less predictable
+Scrying. The membrane at a Sinter-equivalent site is not quiet. It moves.
+
+Sinter's practitioners were experimenters. They were the first institution to seriously
+investigate the question of whether membrane access could be extended beyond fixed coordinates
+— whether an apparatus could be modified to reach a Sphere junction it wasn't built for. The
+question was theoretically interesting and practically enormous: if the answer was yes, the
+geographic monopoly of any fixed-site House could be broken.
+
+They found what appeared to be an answer. They applied it. The experiment ran for eleven
+days before the apparatus lost coherence in a way that the practitioners had no protocol for.
+The Sphere they were attempting to reach was not reached. The membrane they were working
+with did not return to baseline.
+
+The zone around Sinter's installation is still wrong. Not dangerous in a legible way —
+nothing kills you immediately — but wrong in the way the vigil operators from Ophiuchus
+Station describe when they come back from night watches where they have been at their post
+long enough to see things the apparatus isn't showing them. The ground around Sinter's
+installation produces that sensation permanently, at a low level, across a radius of
+approximately three kilometers. The Liturgy maintains the apparatus at minimum output
+because early attempts to shut it down entirely produced larger effects than leaving it on.
+The Cauld does not know what it is keeping running. It only knows that running it is better
+than not running it.
+
+Sinter's surviving practitioners were absorbed into other Houses. Several ended up in
+Atrament, which is why Atrament's records of the Sinter experiment are more complete than
+the Liturgy's official account. Atrament knows what happened. Atrament has made the
+institutional decision that knowing what happened is more valuable than telling anyone.
+
+**What Sinter represents:** The question that cannot be safely asked. The experiment that
+answers more than the experimenter wanted to know.
+
+---
+
+#### House Cresset — The House That Was Read to Death
+
+Cresset held the easternmost major site, at the edge of the Eastern Reaches where the Cauld's
+authority thinned. East of Cresset, other peoples lived, some of whom had their own membrane
+knowledge — reached independently, through different accumulations, producing different
+operational frameworks that were not compatible with Cauld protocols but were functional.
+These eastern membrane cultures had been trading with Cresset through their shared geographic
+margin for generations: not conflict, not alliance, but the pragmatic exchange of people
+living in proximity.
+
+What Cresset did not understand was that the exchange was not reciprocal. The eastern
+cultures were systematically extracting information — Sphere catalogue, apparatus design,
+operational protocols — through the long marginal contact. Not through espionage in the
+aggressive sense but through the patient accumulation of detail across a generation of
+ordinary interaction. A trader who spends forty years trading with an institution knows more
+about that institution than it knows about him. Multiply this by the number of traders, the
+number of years, and the deliberateness of the collection.
+
+By the time Cresset's administration understood what had happened, everything proprietary
+was already known. Their Sphere catalogue had been reconstructed from fragments. Their
+apparatus design had been reverse-engineered. Their operational protocols were understood
+well enough that the eastern cultures could build their own installations without Cresset's
+cooperation. The strategic value of Cresset's site — which was primarily its information, its
+knowledge — had been transferred to another institution without anyone having to take the
+site.
+
+Cresset dissolved formally into collective Compact administration. Their site is now the only
+active installation managed directly by the Silence rather than by a named House. The eastern
+cultures that extracted them are not part of the Cauld. The Cauld does not discuss them
+openly. They are the thing the Cauld's historical record goes quiet about in the same way
+Draught's record goes quiet about the Blood Century.
+
+**What Cresset represents:** The slow theft. The knowledge that has already gone by the time
+you notice the taking.
+
+---
+
+#### House Orvaine — The Founding House That Did Not Survive Its Own Founding
+
+Orvaine is the oldest name in the Compact record. They were the institution that called the
+first meeting — that sent the initial message to the two other Basin powers that produced
+the eleven-line agreement. Orvaine proposed the Compact because Orvaine needed it most: they
+were the smallest of the three original parties and the most vulnerable, and a non-aggression
+agreement was the only thing that bought them time to rebuild after a decade of being the
+site of other institutions' conflicts.
+
+Orvaine's practitioner lineage died in a plague outbreak thirty years after the Compact was
+signed. It was not a remarkable plague — it moved through the region and took people across
+all the Houses — but Orvaine had lost more practitioners than it could replace in the Blood
+Century and had been running with a minimum viable corps ever since. The plague took minimum
+viable down to nothing. Orvaine had no practitioners left who could operate the apparatus.
+
+The Compact's response was the first test of whether the Compact institutions would honor
+their mutual obligations. Three Houses sent practitioners to help Orvaine restore operations.
+One House sent nothing. Orvaine's site eventually came back online with outside help, but
+the House never reconstituted itself as an independent institution. It became a Compact
+administrative body — not a named House with a Seat and a Keeper but a managed site under
+shared administration. The Silence absorbed it.
+
+The House that sent nothing during Orvaine's collapse is House Lacerta. This is four hundred
+years old. It is in the record. Lacerta knows it is in the record and has never disputed it
+or apologized for it. Their position, when pressed, is that the record is correct and the
+decision was the correct one at the time: their own resources were insufficient to spare
+and the political calculation argued against exposure. This is Lacerta's institutional
+character in its earliest documented form. It was what they were before they had a name for
+what they were.
+
+**What Orvaine represents:** The founder who does not survive the thing they founded. The
+institution whose necessity is proven by its absence.
+
+---
+
+### The Living Houses — What They Have Accumulated
+
+The current Seven Houses are not simply organizations with domains. Each one has grown
+around the specific shape of its history, and that history is visible in its present-day
+contradictions.
+
+---
+
+#### House Fornax — The Forge That Doesn't Know What It Burns
+
+Fornax is a central continental House — forested river country, the Rhine and Danube
+analogs forming the twin spines of their territory, heavy woodland pressing against
+everything not yet cleared for settlement. They came out of a culture that solved metallurgy
+inside the forest before the membrane was deliberate: smelting in wooded hill country,
+charcoal from the old growth, iron from the river valley deposits. The industrial character
+was there before they had an institution. The institution grew around it.
+
+Their installation sits on a volcanic ridge in the western part of their territory — a field
+of low, ancient volcanoes not dramatic enough to name but geologically active enough that the
+ground stays warmer than the surrounding forest. The geothermal activity and the Sphere
+activity occupy the same coordinates through coincidence. This coincidence has defined
+Fornax for three hundred years. No other installation in the Cauld operates at the
+temperatures the Forge Hearth runs at, which means no other institution has developed the
+high-temperature Gifted matter handling protocols that Fornax holds. The technical advantage
+was an accident. The monopoly it produced was not.
+
+The forest is an organizational principle. The Rhine-and-Danube river system is an
+organizational principle. The Fornax culture administers territory through river routes and
+woodland roads, through the logic of what the terrain permits and what it costs to move
+through it. They are not Ridge people — they do not build fortresses on heights. They build
+on rivers. They control the crossings. Everything else follows from the crossings.
+
+**The Fornax contradiction** is about selection. Their Keeper is the most technically
+demanding role in the Cauld — the Forge Hearth processes more Catalyst than any other
+installation, at higher temperature tolerances, with smaller error margins. The technical
+requirements for the role are understood and documented. The selection process for the role
+does not use them. The Fornax succession tradition — preserved from the tribal period,
+maintained through the Compact, unchanged for three hundred years — is an omen-reading
+ceremony. The Keeper is chosen by watching how a certain apparatus component behaves when
+three candidate practitioners stand before it. The component in question is a stretch of
+membrane boundary that has been slowly changing in character over the past forty years.
+No one will say what they believe is happening to it. The ceremony continues.
+
+The Forge Hearth produces more Catalyst than any other installation and has been doing so
+for longer than any record can reliably verify. The practitioners who have been working
+it longest describe behavioral changes in the membrane at that specific location that they
+do not report upward, in the way Ophiuchus's vigil operators do not report what they say on
+night watches. The membrane at the Forge Hearth — if it heals between sessions — heals more
+slowly than it used to. The measurement is informal. Nobody has been assigned to make it
+formal.
+
+**What Fornax represents:** Industrial necessity organized around a ritual it cannot
+examine. The institution that keeps the ceremony because asking what the ceremony actually
+measures would be more dangerous than not knowing.
+
+---
+
+#### House Ophiuchus — The Oldest Watch
+
+Ophiuchus came out of the southern peninsula — the Italy analog, warm limestone ridge
+country descending into an inland sea. Their culture was the first in the Cauld to treat
+the membrane as a subject of study rather than a site of worship. Where northern cultures
+built taboo around their membrane locations, the southern peninsula culture sent observers:
+people whose job was not to perform ceremonies but to sit with the boundary and record what
+they noticed. They were not scientists in any modern sense. But they were the first people
+in the Cauld to separate observation from ritual — to say: watch the membrane and write down
+what you see, and separate what you see from what you believe about what you see.
+
+This produced the Ophiuchus practitioner tradition: the vigil. Not a ceremony. A watch.
+The watch is maintained continuously. The records are kept. The records are not shared.
+
+Their installation in the northern ridge country — where the Alps meet the peninsula — is
+the oldest continuously documented membrane site in the Cauld. The word "documented" is doing
+work in that sentence: there are older sites that may have been operated earlier, but Ophiuchus
+has the written record. They have always had the written record. The record is the thing they
+understood was worth keeping when other cultures were still deciding whether the membrane was
+sacred or simply useful. Ophiuchus decided it was both and that the difference did not matter.
+
+House Venn, a smaller Alpine culture on the northern edge of Ophiuchus territory, merged
+into the institution two generations after the Compact. Their practitioner tradition was
+intuitive where Ophiuchus was systematic — they documented less and observed more, or rather
+they internalized what Ophiuchus wrote down and operated from it without consulting the text.
+The merger was voluntary. What Venn left behind is the word Ophiuchus vigil operators use
+for the membrane when administration is not present: a Venn word, a verb, meaning something
+like "the breathing place" or more precisely "it breathes." Ophiuchus's current vigil
+operators use it without knowing its origin. This is how the absorbed culture persists.
+
+Ophiuchus's vigil operators are the longest-tenured practitioners in the Cauld. Thirty years
+at a posting is not unusual. Some have been at the same station for their entire adult lives.
+The institution selects for a particular psychological type — patient, low desire for
+recognition, comfortable with long periods of looking at something that may not change —
+and then puts them in conditions that reinforce it. A vigil operator who has been at the
+same membrane boundary for thirty years has a relationship with that specific location that
+nobody else has. They have watched it at every temperature, in every season, at every hour.
+They know the membrane at that location the way a person knows a room they've lived in alone
+for decades.
+
+What they describe in those conditions is what Ophiuchus's administration has chosen not to
+formally record. The membrane responds to them. Not to the apparatus — to the person. A
+vigil operator who has been at a boundary long enough describes a phenomenon where the
+membrane becomes more active in their presence, where the quality of Sphere access improves
+specifically when they are present rather than when the apparatus is simply running. The
+administration's interpretation: this is practitioner bias, pattern recognition producing
+false signal. The vigil operators' interpretation: they are in a relationship with something
+that is also in a relationship with them, and the relationship is changing.
+
+This is the internal fracture at Ophiuchus that has never been formally named. The
+administration is an extractive institution — the apparatus produces access, the access
+produces advantage, the advantage is the point. The vigil operators are in a different
+relationship with the work than the administration understands. They are doing something
+that feels to them like it requires something from them — not labor but presence, attention,
+something they cannot name and are not asked to name. The Keeper who asks them to name it
+has not existed yet.
+
+**What Ophiuchus represents:** The institution that knows things it cannot tell itself.
+The practitioners who have gone further than the institution is prepared to follow.
+
+---
+
+#### House Draught — The Army That Has No War
+
+Draught came from the northern fjords — the Scandinavian analog, long winters, sea-raid
+culture, a people who had been running mandatory military service and maritime conscription
+before the membrane was deliberate. The transition to House status was the most frictionless
+of all the Compact parties: they were already organized as a military institution, they
+already had systems for processing large numbers of people into service, they already
+understood that an oath sworn before you have the full language is still an oath the
+institution intends to hold you to.
+
+Their membrane site sits on a glacial plateau inland from the fjord coast — the only major
+installation that requires a significant overland journey after the sea crossing to reach.
+This geography produced their institutional character before the membrane did: a culture
+that goes where others can't follow, that returns with what others don't have, that treats
+the crossing as part of the capability rather than an obstacle to it. When the membrane
+became operational, they used it the same way they used the sea. The apparatus was faster
+than longships. The oaths were administered in the same order. The service records opened.
+
+Draught is the House that most clearly records what happened in the Blood Century. This is
+not because they were the most honest — they were not — but because their records are
+administrative. Conscription numbers. Deployment logs. Service records opened and closed.
+The administrative record does not disguise; it accumulates. You can read, in Draught's
+service records from the Blood Century, the shape of what happened without anyone ever
+describing it. The numbers tell it.
+
+What the numbers say about the Blood Century, for Draught: they processed more people
+through their membrane apparatus in a thirty-year period than in any other period before or
+since. They processed them at a rate that, reconstructed, implies the apparatus was running
+almost continuously. The Sphere they were drawing from during this period is not documented.
+The documentation from that period refers to Sphere access only as "the primary draw." No
+Sphere is named. The gap in the record is the record.
+
+Three generations passed before Draught was in a situation where voluntary intake was
+insufficient and the membrane needed to supplement it. When it happened again, they ran the
+same procedures. The oath was administered in the same language. The service records opened.
+But the Warrior King who presided over the second conscription wave was not a person who
+had ever not known what they were doing. She had read the Blood Century record. She had
+understood it. She did it anyway. This is the Draught character: not ignorance of what the
+institution does, but the decision to do it regardless.
+
+**What Draught represents:** The institution that knows what it is and continues to be it.
+Not evil in the way that looks away. Evil in the way that looks directly and chooses.
+
+---
+
+#### House Atrament — The Archive and the Lock
+
+Atrament sits in the broad interior — the France analog, the vine country, temperate and
+fertile and positioned at the geographic center of the Cauld's major institutions. They border
+Fornax to the east, the island nation across a narrow channel to the north, the southern
+peninsula through mountain passes to the southeast, and the western cliff coast along a shared
+southern land border. From Atrament territory you can reach every other House. This has always
+been the point. Their geographic centrality was not accidental. The culture that produced the
+scribes grew where the scribes were most useful: in the middle, where all the roads crossed.
+
+Atrament is the reason the Compact exists in its current form. They were the institution
+that wrote the agreements — not because they were the most powerful party but because they
+were the most literate, the most organized, and the most willing to handle the administrative
+burden nobody else wanted. They were the scribes of the pre-Compact era. Every tribe with
+a membrane site used Atrament's record-keepers because the central country was the only
+territory all parties could reach without crossing an enemy's land. Atrament collected this
+geographic trust over two centuries and never let go of it.
+
+When they wrote the Compact, they wrote it carefully. Nothing in it was dishonest. But
+the party that writes the contract also writes the defaults — the unspecified conditions,
+the edge cases, the precedents. Atrament's Compact specified, among other things, that all
+disputes over Sphere catalogue access would be resolved through Atrament arbitration. This
+clause was uncontroversial at the time: Atrament had no site of its own and seemed the
+obvious neutral party. They acquired a site within a generation of the Compact's signing.
+The arbitration clause has never been repealed.
+
+The real ideological question in the Cauld lives at Atrament because Atrament is the House
+where it cannot be suppressed. Their Sphere catalogue — the broadest in the Cauld — is
+documented evidence that the membrane connects to resources that no single House should
+control. Their Keeper knows this. The position that has been circulating within Atrament
+for fifty years — that Sphere knowledge should be collectively administered, not held by
+individual Houses — is the position that most directly undermines Atrament's own power.
+And their Keeper has not suppressed it.
+
+The other Houses have three theories about this. First: the Keeper is genuinely principled
+and believes it. Second: the Keeper is using the position as leverage — an implicit threat
+that if Atrament's institutional interests are threatened, they will release the catalogue.
+Third: the Keeper is running a longer game, building the political coalition that would
+survive a redistribution of membrane access and positioning Atrament to administer the
+redistribution rather than be subject to it. All three theories are consistent with the
+observable behavior. The Keeper has not clarified.
+
+**What Atrament represents:** The custodian who chooses what gets preserved and what gets
+lost. The archivist whose neutrality was always a position.
+
+---
+
+#### House Calyx — The People Who Feed the Cauld
+
+Calyx is older than its name. The eastern plains culture that became House Calyx — the
+Danube basin east of Fornax, the broad agricultural lowlands running toward the steppe — had
+been farming organized territory before the Rhine-and-Danube forest cultures had permanent
+river settlements. They were not a warrior people. They were the people whose surplus fed
+the warrior people, which is a different and more durable form of power. They understood
+this. It did not save them.
+
+During the Blood Century, the proto-Fornax confederation expanded east along the river
+system. The expansion was not sudden. It took three generations and looked, for the first
+generation, like a trade arrangement. The Fornax river merchants needed the eastern grain.
+The eastern grain culture needed the Fornax metal. The arrangement was mutually beneficial
+until it wasn't — until the dependency had been running long enough that the eastern culture
+could not produce what it needed without Fornax's infrastructure, at which point the
+arrangement became something else. They became clients before they became anything else.
+
+The Compact gave them formal House status over Fornax's objection. Atrament, writing the
+terms, included a clause recognizing the eastern plains culture's institutional standing
+specifically because the Compact needed a food-producing House and the plains culture was the
+only organization with the scale and infrastructure to supply the entire Cauld. Fornax was
+overruled. The wound opened. It has not closed. The eastern plains border Fornax along a
+river line that both Houses have fought over in every generation since the Compact, in low-
+intensity ways that neither formally names as war.
+
+Calyx's name is botanical. The calyx is the outer structure that holds a flower's
+development — what protects the thing while it becomes. Their early practitioners used
+botanical language for the apparatus in a way no other House does: where Ophiuchus speaks of
+the membrane as ground and sky, and Fornax speaks of it as heat and metal, Calyx's oldest
+records describe it as a root system. The Sphere junctions accessible from Calyx Station are
+underground — reached through a membrane boundary that their practitioners describe as going
+down rather than through. This is unusual. Nobody knows if it is accurate or metaphor.
+
+The territory Calyx controls is simultaneously the most agriculturally productive and the
+most monster-afflicted in the Cauld. The monster corridor runs through their farmland. The
+people who grow food and the people who hunt monsters coming out of the wood line are
+frequently the same people. Oathless who survive incursions at high Monster Meat exposure
+come back changed. Calyx classifies them as monsters when the change becomes visible enough
+to name. Calyx hunts them. This is the policy.
+
+What no one at Calyx has formally asked: whether the concentration of monster incursion in
+their territory is connected to their apparatus. Whether the membrane activity at Calyx
+Station produces what comes out of the wood line in the way that the apparatus elsewhere
+produces Gifted soldiers. Whether the distinction between a carefully administered
+Transmutation ceremony and an unguided exposure to Gifted matter in sufficient quantity
+produces not different results but the same result through different channels. The Seat
+knows the incursion numbers. The Seat has not asked this question. This is the Calyx
+administration's version of what Ophiuchus's administration does with vigil operator reports.
+
+**What Calyx represents:** The people who sustain the Cauld and bear the cost of sustaining
+it. The wound that is known and remains unnamed because naming it would require action.
+
+---
+
+#### House Lacerta — The Paranoid Machine
+
+Lacerta is the westernmost House in the Cauld. Their installation sits on coastal cliffs
+above the Atlantic analog — the great western ocean that the Cauld has no record of anyone
+successfully crossing. The sea is behind them. The rest of the Cauld is ahead of them. This
+geographic position, at the edge of the known map, shaped everything that followed.
+
+Lacerta's founding is the ugliest in the Compact record. They did not send help to Orvaine
+when Orvaine was dying. This is documented. This is known. Lacerta's administration, across
+four hundred years, has never apologized for it, disputed it, or lost sleep over it in any
+way that left a record.
+
+Their territory was, at the time of the Blood Century, the contested margin between three
+coastal peoples — not one inland group against another but three maritime cultures who had
+arrived along the same coast from different origins and settled the same warm southern
+coastline. The membrane site they all wanted was not the most productive in the Cauld but
+was the most defensible: cliff ground, stone, the sea at your back. You could hold it with
+fewer soldiers than you needed to take it. Each of the three cultures held it at different
+points. None held it long enough to fully learn it.
+
+The Compact resolved the dispute by making the three-way coast a single House, which meant
+the House was governed, from its founding, by a coalition of three maritime peoples who
+had been raiding each other's shipping within living memory. The Compact required them to
+administer together. They did. The institutional capacity for managing people who want to
+betray each other while appearing not to — this was the founding skill, developed on the
+inside, applied later to the outside.
+
+The sea-facing position gave Lacerta something no other House had: the knowledge that there
+was nothing behind them. The Cauld ends at the western cliffs. Whatever comes at Lacerta
+comes from one direction only. This is a defensible position and a contained one. Lacerta's
+intelligence apparatus has always known exactly where its threats originate. This makes
+them very good at it. It also means the horizon of their imagination ends at the cliff.
+
+Managing a coalition of people who do not trust each other teaches specific skills. You
+learn to have information before you need it. You learn to run multiple working hypotheses
+about what any given person wants. You learn to design systems that function even if any
+individual component is working against the system, because you expect at least one component
+to be doing so at all times. Lacerta became the Cauld's intelligence institution not because
+anyone planned it but because these skills — developed internally, for internal purposes —
+turned out to be applicable externally.
+
+Their Catalyst contamination problem is institutional consequence. The same networks
+they use to route tainted supply into enemy supply chains also route their own supply.
+They have run this operation long enough that provenance is no longer traceable — their
+own people cannot tell a clean batch from a compromised one with certainty. The Lectors
+who flagged this filed reports. The Silence did not respond. Whether the Silence did not
+respond because it agreed with Lacerta's methodology, because it did not understand the
+reports, or because it has made a calculation about what exposing Lacerta would cost —
+this is the question none of the other Houses have been able to answer and all of them
+are trying to.
+
+**What Lacerta represents:** The institution that treats uncertainty as the operating
+condition and builds systems for it. The paranoid machine at the edge of the world, watching
+one direction, very good at what it watches for.
+
+---
+
+#### House Pallor — The Survivors
+
+Pallor is an island House — the Great Britain analog, separated from the mainland by a cold
+channel narrow enough to see across on a clear day and wide enough that it has defined
+everything about how Pallor thinks. You cannot move an army to them without ships. You cannot
+threaten them from the same direction twice. The island does not prevent attack. It changes the
+cost calculation of attack in a way that has historically kept the number of serious attempts
+low.
+
+The island culture was not unified before the Compact. Three regional peoples occupied the
+island — a northern highland culture, a central lowland culture, and a southern maritime
+culture — and they had been contesting the same territory for as long as the record goes.
+Their membrane site, on the island's central upland, was the only thing all three groups
+agreed was worth sharing: too valuable to let one group hold, too dangerous to fight over
+indefinitely. The Compact gave them a framework for that sharing. The framework became the
+House. The House is still internally divided along those three founding lines, quietly,
+in the way institutions are divided when the division predates the institution.
+
+Pallor is the youngest House in the Compact. They were admitted last — not because their
+site was marginal but because the island's three-way deadlock meant no single leadership
+could present itself as the House's authority. The Compact finally admitted them when all
+three regional leaderships jointly signed the petition. Atrament brokered this. Atrament
+brokered most things that required patience.
+
+The secondary history — the destroyed coastal site, the refugee period — comes from the
+southern maritime culture within the island, which genuinely did lose an earlier mainland
+site before retreating to the island. This group carried practitioner knowledge from the
+destroyed mainland location and brought it to the island's installation. This is why Pallor's
+apparatus has capabilities no one expected from a mid-tier site. The southern culture brought
+techniques from a richer site. The installation runs better than it should.
+
+Pallor's Warrior King is the longest-serving in the current map because the island culture
+produces people who wait. The channel taught them to wait. Whatever crosses the channel comes
+in view before it arrives. You have time to decide what to do about it if you have already
+been watching.
+
+The Champion who is affiliated with Pallor but not sworn to it came there for reasons they
+have not explained. They were elsewhere for a long time. They are here now. The Warrior King
+has made the assessment that whatever the Champion is waiting for, it is the same thing the
+Warrior King is waiting for. They have been at the same map table for eleven years without
+naming what they're both watching.
+
+**What Pallor represents:** The institution that waits without urgency. The island people
+who have survived by knowing that whatever is coming is already visible, if you have been
+watching long enough.
+
+---
+
 ## The Seven Houses — Current Alignment
 
 **Current alignment:** two coalition anchors, three opposition bloc, two unaligned.
 
 ### House Fornax — The Refinery Seat
 **Coalition status:** Coalition anchor · **Domain:** Catalyst refining
+**Territory:** Central continental — Germany analog; Rhine and Danube river valleys; forested interior; volcanic ridge in the west. Borders Atrament to the west, Draught to the north, Ophiuchus to the south across the Alpine ridge, Calyx to the east along the river line.
 
 The Forge Hearth — oldest active apparatus in the Cauld. Stretching the membrane at the same
 coordinates for generations. Whether the membrane fully recovers between sessions is not a
@@ -511,18 +1284,19 @@ Liturgy has not corrected this. The silence is the arrangement.
 
 ---
 
-### House Corvin — The Vigil Seat
+### House Ophiuchus — The Vigil Seat
 **Coalition status:** Coalition anchor · **Domain:** Thin-membrane access
+**Territory:** Southern peninsula — Italy analog; Alpine ridge country in the north; warm limestone plateau descending to the inland sea. Borders Fornax to the north, Atrament through mountain passes to the northwest, Calyx to the northeast.
 
-Corvin Station — oldest installation in the Cauld. Named in historical record more than any
+Ophiuchus Station — oldest installation in the Cauld. Named in historical record more than any
 other. Long-tenure vigil operators stationed here for decades sometimes describe the membrane
 as something that breathes. Something that responds to them, not to the apparatus. They say
 this to each other on night watches. They stop saying it when House administration is present.
 It is not in any formal record.
 
-Corvin controls Sphere access points no other House can reach — the most valued imports from
+Ophiuchus controls Sphere access points no other House can reach — the most valued imports from
 location-specific Spheres are Gifted matter Spheres reachable only from specific ground, and
-Corvin Station sits on some of the most contested coordinates in the Cauld for this reason.
+Ophiuchus Station sits on some of the most contested coordinates in the Cauld for this reason.
 
 **The fault line:** Their most valuable operators have been receiving Catalyst infusions tuned
 for observation work, enhancing the perceptual range that makes an exceptional Scrying operator.
@@ -532,10 +1306,26 @@ cannot promote them into combat structure. It cannot demote them without losing 
 The vigil operators who have been on the long watch longest are the ones the House most needs
 and can least manage.
 
+**Dame Lyra — Ophiuchus's active Knight.** Certified Transmutation researcher; the House's
+foremost practitioner of combat-calibrated infusion protocols. Current physical form: six feet
+five inches, lean and well-proportioned, the result of many post-battle infusions administered
+after engagements she survived through distinction. Each confirmed major victory earns her
+another session. The infusions are not decorative — they are functional ascendance, incrementally
+increasing strength, perceptual range at thin-membrane sites, and the physical architecture that
+makes her survivable in situations that end other people. She is getting bigger. She is getting
+harder to kill. The gap between her and a Myrmidon in the same engagement is widening with every
+campaign.
+
+Her institutional role is researcher and practitioner, not command. She does not lead forces.
+She tracks anomalies. She has a standing protocol — renewed across many years and many
+deployments — for routing a specific soldier's post-action reports to her research station. He
+does not know. The reports continue. So does she.
+
 ---
 
 ### House Draught — The Muster Seat
 **Coalition status:** Opposition bloc · **Domain:** Military conscription
+**Territory:** Northern fjords — Scandinavia analog; long fjord coastlines, pine and birch interior, glacial plateau. Borders Fornax to the south; Pallor across the North Sea channel to the west.
 
 The Muster Chamber — calibrated specifically for piercing. When volunteer intake falls short,
 before planned offensives, when numbers need supplementing, the membrane gets breached and
@@ -557,9 +1347,10 @@ mean explaining why she waited thirty years to tell.
 
 ### House Atrament — The Archive Seat
 **Coalition status:** Opposition bloc · **Domain:** Sphere cataloguing
+**Territory:** Vine country — France analog; broad agricultural interior, Atlantic coast to the west, mountain border to the south. Borders Fornax to the east, Lacerta to the southwest, Ophiuchus through the southern passes. Channel crossing north to Pallor.
 
 The Deep Archive — broadest Sphere catalogue of any House. More documented access points than
-any installation except Corvin Station. Where Corvin has depth at specific coordinates,
+any installation except Ophiuchus Station. Where Ophiuchus has depth at specific coordinates,
 Atrament has breadth: more Spheres observed, more designs transcribed, more knowledge of what
 exists across the membrane than any other institution in the Cauld.
 
@@ -575,6 +1366,7 @@ map or the most naive. No one has decided which yet.
 
 ### House Calyx — The Granary Seat
 **Coalition status:** Unaligned · **Domain:** Territory and supply
+**Territory:** Eastern plains — Danube basin analog; broad agricultural lowlands east of Fornax, running southeast toward Ophiuchus's border; grades into borderland steppe to the east. Borders Fornax to the west along the contested river line, Ophiuchus to the southwest across a low range.
 
 Calyx Station — sits on territory rich in agricultural land and one of the highest
 monster-predator incursion corridors in the Cauld. The Scrying installation here is not the
@@ -590,18 +1382,24 @@ and no one in the House has been willing to read it.
 
 ---
 
-### House Thresh — The Cutting Seat
+### House Lacerta — The Cutting Seat
 **Coalition status:** Opposition bloc · **Domain:** Covert operations
+**Territory:** Western Coastal Reach — Atlantic-facing cliff coast, warm, dry, Iberian analog. The westernmost House; sea at their back.
 
-The Thresh Chamber — modest primary apparatus. Their operational advantage is not what they
-can Scry but what they can deny others: tainted Catalyst supplies, assassinated Transmuters.
-A House that loses its senior Transmuters risks producing monsters from its own loyal soldiers
-when the next dose is administered by an undertrained practitioner with a compromised supply.
-Thresh weaponizes this deliberately.
+The Lacerta Chamber — cliff-top installation, stone facing the ocean. Modest membrane apparatus
+by House standards; the Sphere junctions accessible from the western coast are real but not the
+richest in the Cauld. Their strategic value is not what they can reach through the membrane but
+what they can move along the ground: information, contaminated supplies, people who are supposed
+to be somewhere else. The installation matters less than the networks built around it.
+
+Their operational advantage is not what they can Scry but what they can deny others: tainted
+Catalyst supplies, assassinated Transmuters. A House that loses its senior Transmuters risks
+producing monsters from its own loyal soldiers when the next dose is administered by an
+undertrained practitioner with a compromised supply. Lacerta weaponizes this deliberately.
 
 **The fault line:** They have run enough tainted operations that their own Catalyst supply chain
 is compromised. The same methods used to contaminate enemy supplies create the conditions for
-contamination to travel. The provenance of any given Catalyst batch in Thresh's inventory is no
+contamination to travel. The provenance of any given Catalyst batch in Lacerta's inventory is no
 longer fully traceable. Their Lectors know. They have flagged it through internal channels. The
 Silence has not responded. Yet.
 
@@ -609,6 +1407,7 @@ Silence has not responded. Yet.
 
 ### House Pallor — The Long Seat
 **Coalition status:** Unaligned — courted by both blocs · **Domain:** Champion affiliation
+**Territory:** The island — Great Britain analog; separated from the mainland by a cold channel. Rocky highland north, softer lowland south, maritime culture throughout. Channel crossing south to Atrament; North Sea crossing east to Draught.
 
 Pallor Station — mid-tier apparatus. Strategically valuable not for what it can reach through
 the membrane but for who is affiliated with it. Their Warrior King has been at the map table

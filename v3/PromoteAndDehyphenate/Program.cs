@@ -11,7 +11,7 @@ using StreetSamurai.Core.Services;
 //   Pass 1 — promote candidate characters surfaced by the continuity extractor
 //             on "The Voice You Trust": Marcus, Imani, Olu Ferrara, Mira
 //             Quintero-Bekele, Joaquim Da Silva-Lerner, Beatrix Ngalula-Vance,
-//             Hartfield. Add "Rhea Adesanya-MacGregor" as an alias on Sable.
+//             Hartfield. Add "Rhea MacGregor" as an alias on Sable.
 //
 //   Pass 2 — Legion-driven surname dehyphenation. Every character whose Name
 //             contains a hyphenated surname AND is not in the protected list
@@ -90,7 +90,7 @@ Upsert("Marcus", c =>
     c.Pronouns = "he/him";
     c.Location = "Meridian Core — relocated post-acquisition to Axiom Industries Communications and Brand";
     c.Affiliation = "Axiom Industries Communications and Brand (formerly Tessera Media Group)";
-    c.Description = "The director who hired Rhea Adesanya-MacGregor at Tessera Media Group. Believes — or has rehearsed believing — that saying 'you have the voice they trust' is part of what makes it true. Brings bad coffee whenever he is about to deliver news the listener should not yet be told. Did not call her once in the fourteen months between the acquisition and her badge declining at the Meridian Core entrance.";
+    c.Description = "The director who hired Rhea MacGregor at Tessera Media Group. Believes — or has rehearsed believing — that saying 'you have the voice they trust' is part of what makes it true. Brings bad coffee whenever he is about to deliver news the listener should not yet be told. Did not call her once in the fourteen months between the acquisition and her badge declining at the Meridian Core entrance.";
     if (!c.Aliases.Contains("the director")) c.Aliases.Add("the director");
 });
 
@@ -115,7 +115,7 @@ Upsert("Olu Ferrara", c =>
     c.Pronouns = "he/him";
     c.Location = "The Glooms — operates from one of the two independent outlets still filing coverage on CorpoNation expansion";
     c.Affiliation = "Independent media (post-Tessera resignation, with cause, citing editorial independence)";
-    c.Description = "Was a colleague of Rhea Adesanya-MacGregor's at Tessera Media Group before the Axiom Industries acquisition. Walked into the director general's office on the morning of the announcement and resigned in writing, with cause, citing editorial independence. One of four people Rhea envied for a single afternoon. Sable has never made direct contact with him in the years since the restructuring.";
+    c.Description = "Was a colleague of Rhea MacGregor's at Tessera Media Group before the Axiom Industries acquisition. Walked into the director general's office on the morning of the announcement and resigned in writing, with cause, citing editorial independence. One of four people Rhea envied for a single afternoon. Sable has never made direct contact with him in the years since the restructuring.";
 });
 
 Upsert("Mira Quintero-Bekele", c =>
@@ -140,7 +140,7 @@ Upsert("Joaquim Da Silva-Lerner", c =>
     c.Pronouns = "he/him";
     c.Location = "Meridian Core, Floor 47 — Axiom Industries Security Division, Communications Integration";
     c.Affiliation = "Axiom Industries Security Division";
-    c.Description = "A year younger than Rhea Adesanya-MacGregor and two tiers junior at Axiom. Careless with his clipboard; leaves his workstation unlocked when he steps away to the seventh-floor break room. The OPTIC-7 case study Sable read for nineteen minutes was open on his terminal. Internal Affairs has him on logs as the credentialed user; whether he knows what was read off him has never been disclosed.";
+    c.Description = "A year younger than Rhea MacGregor and two tiers junior at Axiom. Careless with his clipboard; leaves his workstation unlocked when he steps away to the seventh-floor break room. The OPTIC-7 case study Sable read for nineteen minutes was open on his terminal. Internal Affairs has him on logs as the credentialed user; whether he knows what was read off him has never been disclosed.";
 });
 
 Upsert("Beatrix Ngalula-Vance", c =>
@@ -152,7 +152,7 @@ Upsert("Beatrix Ngalula-Vance", c =>
     c.Pronouns = "she/her";
     c.Location = "Meridian Core, Floor 47";
     c.Affiliation = "Axiom Industries Security Division — Internal Affairs";
-    c.Description = "Conducted Rhea Adesanya-MacGregor's voluntary separation conversation in the eighth-floor conference room. Folds her hands the way Marcus folded his on the talkback at the moment a segment was done. Did not flinch when Rhea named the agent. Stated the package terms cleanly. Raised a hand a half-inch off the table to silence the Security Division colleague when he started to escalate. The kind of operator who has never had to do this any other way and intends to keep it that way.";
+    c.Description = "Conducted Rhea MacGregor's voluntary separation conversation in the eighth-floor conference room. Folds her hands the way Marcus folded his on the talkback at the moment a segment was done. Did not flinch when Rhea named the agent. Stated the package terms cleanly. Raised a hand a half-inch off the table to silence the Security Division colleague when he started to escalate. The kind of operator who has never had to do this any other way and intends to keep it that way.";
 });
 
 Upsert("Hartfield", c =>
@@ -163,11 +163,11 @@ Upsert("Hartfield", c =>
     c.Gender = "male";
     c.Pronouns = "he/him";
     c.Location = "Meridian Core lobby (Axiom Industries Security Division building)";
-    c.Affiliation = "Arcturus Civil Security (Axiom Industries contract)";
-    c.Description = "Young guard whose nameplate Rhea Adesanya-MacGregor read on the Monday morning her badge first declined. Keyed the override on the third attempt and apologized for the system 'running slow.' His grandmother lived in the Glooms — a detail Sable would learn nine years later in an unrelated context.";
+    c.Affiliation = "ArcSec (Axiom Industries contract)";
+    c.Description = "Young guard whose nameplate Rhea MacGregor read on the Monday morning her badge first declined. Keyed the override on the third attempt and apologized for the system 'running slow.' His grandmother lived in the Glooms — a detail Sable would learn nine years later in an unrelated context.";
 });
 
-// Sable: add Rhea Adesanya-MacGregor as an alias (Sable herself is protected
+// Sable: add Rhea MacGregor as an alias (Sable herself is protected
 // from the dehyphenation pass, so the alias keeps its hyphen).
 if (!skipPromote)
 {
@@ -175,7 +175,7 @@ if (!skipPromote)
     var sable = characters.GetByName("Sable");
     if (sable != null)
     {
-        var rheaAlias = "Rhea Adesanya-MacGregor";
+        var rheaAlias = "Rhea MacGregor";
         if (!sable.Aliases.Contains(rheaAlias))
         {
             if (dryRun)

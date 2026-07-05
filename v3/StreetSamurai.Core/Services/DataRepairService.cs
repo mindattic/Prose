@@ -171,6 +171,10 @@ public class DataRepairService : PipelineServiceBase
             var (sourceFile, subject, predicate, correctValue, id) = repairs[i];
             Notify("Tool 1 — Fact Repair", i, repairs.Count, subject);
 
+            // Tool 1 intentionally writes to filesystem: sourceFile is an absolute path stored
+            // in the lore-triples SQLite DB's flagged_triples.source_file column, pointing to
+            // the engine/data seed corpus JSON files. These are the write-back targets for
+            // lore-triple repairs; all other tools go through SQL (StreetSamurai DB).
             if (!File.Exists(sourceFile))
             {
                 ChangeLog.Add($"[Fact Repair] File not found: {Path.GetFileName(sourceFile)}");
@@ -503,7 +507,7 @@ public class DataRepairService : PipelineServiceBase
             "Tessera occupies the apex of the Loop, running the Tessera Grand Exchange — the world's dominant financial clearinghouse. Their towers define the Z1 skyline from the lakefront inward.",
             "Cooperative — Tessera-backed micro-grants fund Gray Zone innovation labs; talent pipeline from ungoverned districts"),
         ["Arcturus"] = new("Z1", ["Z1", "Z2", "Z3"], true,
-            "Arcturus Civil Security controls Z1 Coldwall Quarter and has civilian-security presence in Z2-Z3. Largest private security force on the Spine.",
+            "ArcSec controls Z1 Coldwall Quarter and has civilian-security presence in Z2-Z3. Largest private security force on the Spine.",
             "Contested — Arcturus patrols Gray Zone borders but does not govern them; extraction contracts with Gray Zone councils"),
         ["Axiom Kinetics"] = new("Z1", ["Z1"], true,
             "Axiom Kinetics holds the southern Loop corridor, specialising in biomechanical augmentation and neural-interface manufacturing.",

@@ -72,8 +72,8 @@ public class QualityTools
         this.votingGate     = votingGate;
     }
 
-    /// <summary>Scan arbitrary prose against every world rule (no city police, no Behemoth-as-alive, no 'the Shelf' district, no wedding-cake tier architecture, no Ferrogate-as-railroad, no metro/Meridian PD, no phi/Greek-letter confusion). Returns matched violations with surrounding context. Call this on a chapter draft before delivering it — catches rule slips an LLM might miss.</summary>
-    [McpServerTool, Description("Scan arbitrary prose against every world rule (no city police, no Behemoth-as-alive, no 'the Shelf' district, no wedding-cake tier architecture, no Ferrogate-as-railroad, no metro/Meridian PD, no phi/Greek-letter confusion). Returns the list of matched violations with the surrounding context. Call this on a chapter draft BEFORE delivering it — catches rule slips Claude might miss.")]
+    /// <summary>Scan arbitrary prose against every world rule (no city police, no Behemoth-as-alive, no 'the Shelf' district, no wedding-cake tier architecture, no Ferrogate-as-railroad, no metro/city police, no phi/Greek-letter confusion). Returns matched violations with surrounding context. Call this on a chapter draft before delivering it — catches rule slips an LLM might miss.</summary>
+    [McpServerTool, Description("Scan arbitrary prose against every world rule (no city police, no Behemoth-as-alive, no 'the Shelf' district, no wedding-cake tier architecture, no Ferrogate-as-railroad, no metro/city police, no phi/Greek-letter confusion). Returns the list of matched violations with the surrounding context. Call this on a chapter draft BEFORE delivering it — catches rule slips Claude might miss.")]
     public string ValidateCanonText(
         [Description("The prose to scan. Pass an entire chapter or a single beat.")] string text)
     {

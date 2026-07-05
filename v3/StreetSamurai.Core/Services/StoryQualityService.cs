@@ -300,11 +300,11 @@ public class StoryQualityService
     private static string BuildEvaluatorContext() =>
         (UniverseScope.Current?.IsGlmz ?? true) ? """
         You are a literary critic evaluating a neo-noir short story set in GLMZ
-        (also called Meridian 88 by informed characters, or The Glooms by Gray Zone residents).
+        (also called The Glooms by Gray Zone residents).
         The city is consumed by corporate sovereignty, aug-culture, and institutional collapse.
         The Gray Zone between CorpoNation territories is a structural DMZ — no police,
         no government, designed to absorb border friction, which is why it has the most violence.
-        There is no city police force (Meridian PD dissolved 2208). Arcturus Civil Security
+        There is no city police force (destroyed in the 2065 Blue Massacre). ArcSec
         holds private contracts but serves CorpoNations, not citizens.
         Currency is Φ (QUANTA). Outside the GLMZ is called The Gap — a thousand little towns
         the Pulse passes through at Mach 6 without stopping.
@@ -345,7 +345,7 @@ public class StoryQualityService
 
         DIALOGUE_QUALITY (1-10): Is dialogue earning its space?
           10 = each line advances conflict OR reveals psychology, voices distinct, subtext present;
-               name choice (GLMZ vs Meridian 88 vs The Glooms) is used as characterization
+               name choice (GLMZ vs The Glooms) is used as characterization
            1 = dialogue conveys only information, all characters sound the same
 
         In flags_bad, include specific genre clichés found with quotes from the text.

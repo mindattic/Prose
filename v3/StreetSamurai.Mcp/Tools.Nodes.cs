@@ -88,14 +88,22 @@ public class NodeTools
             .Where(s => s.Slug == slugOrId || s.NodeCode == slugOrId).Select(s => (Guid?)s.Id).FirstOrDefaultAsync();
     }
 
-    [McpServerTool, Description("List nodes. Use kind='story' to list all root stories (no parent); kind='chapter' for all sub-nodes (contain beats). Returns a flat list of id, slug, title, kind, status, beat-count, stale-count.")]
+    [McpServerTool, Description("List nodes. Use kind='story' to list all root narratives (includes both kind='story' and kind='book'); kind='chapter' for all sub-nodes (contain beats). Returns a flat list of id, slug, title, kind, status, beat-count, stale-count.")]
     public async Task<string> ListStories(
-        [Description("Optional Kind filter — 'story' (root nodes) or 'chapter' (sub-nodes with beats). Case-insensitive equality match.")] string kind = "",
+        [Description("Optional Kind filter — 'story' (root nodes, includes book-kind too) or 'chapter' (sub-nodes with beats) or 'book' (book-only). Case-insensitive equality match.")] string kind = "",
         [Description("Maximum rows to return. Default 100.")] int limit = 100)
     {
         await using var db = await dbFactory.CreateDbContextAsync();
         var q = db.Nodes.AsNoTracking();
-        if (!string.IsNullOrWhiteSpace(kind)) q = q.Where(s => s.Kind == kind);
+        if (!string.IsNullOrWhiteSpace(kind))
+        {
+            // 'story' is the canonical caller-facing value for "root narrative node";
+            // include 'book' nodes too since they are root narratives with chapters.
+            if (kind.Equals("story", StringComparison.OrdinalIgnoreCase))
+                q = q.Where(s => s.Kind == "story" || s.Kind == "book");
+            else
+                q = q.Where(s => s.Kind == kind);
+        }
         var rows = await q.OrderBy(s => s.Kind).ThenBy(s => s.Title).Take(limit).ToListAsync();
 
         var ids = rows.Select(r => r.Id).ToList();

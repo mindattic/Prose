@@ -63,7 +63,7 @@ Modification done **BY** you vs. modification done **TO** you. Celeste's agency 
 
 - **The Network is ambient proprioception, NOT a place.** No jacking in, no goggles, no VR cyberspace, no "entering" anything. Augmented people *feel* the Network like weather (load=temperature, latency=pressure, density=humidity). The Scatter does not send you somewhere; it disperses you into the field. "Cyberspace," "crossing over," "the other side" are VICTIMS' romantic words — operators (Corvin especially) correct them.
 - **Currency is Φ (QUANTA = quantum compute-seconds).** Never "phi," never the Greek letter. Stable/deflationary. Street-broke = "Q-dry."
-- **No city police.** Arcturus Civil Security serves CorpoNations, not citizens. Meridian PD dissolved 2208.
+- **No city police.** ArcSec (Arcturus Civil Security) serves CorpoNations, not citizens. City police destroyed in the 2065 Blue Massacre.
 - **Psionics = "the Read."** Real, biological, registered, feared. Tamsin's ability is the Read — write it as ABILITY, never magic. Vocabulary ladder: "psionics" (clinical), "the Read"/"a Read" (trade), "Psyk" (street), "Psyker" (fear-word, registry men). The slur is never written; refusal does the work.
 - **ELFs are canon** (outsider AIs in legacy machinery; "interested," not aligned; generally not in contact with each other). The Tributary is a *predatory* ELF — temperament precedent exists (AIs consume smaller AIs to grow; *Lacuna* 2222). It is NOT the rogue-AI whistleblower and NOT a Supermind. Its own taxon.
 - **No magic. Nothing rendered as magical.** Everything strange is rendered as sensory wrongness + survival rules, never explained.

@@ -131,14 +131,14 @@ most operators make in a year. He wears it the same way he wears his suit.
 
 **Her handle "Pixel" is GLMZ-acquired.** She did not arrive with it.
 
-The name originated on the Haymarket relay boards after she completed the relay job. Her
-nine-second gap in the Ryokan frame was too clean for atmospheric noise — the relay operators who
-reviewed the logs called it "pixel-work." The name traveled the gray-zone network faster than she
-knew it existed.
+"Pixel" was first coined by Donatella after the climate fix (Beat 500): she watched the
+calibration work and said, "I'll call you Pixel." The relay job (Beat 800) propagated the name
+through the gray-zone network — her nine-second gap in the Ryokan frame was too clean for
+atmospheric noise, and the relay operators who reviewed the logs called it "pixel-work,"
+cementing "Pixel" as her identifier.
 
-She first hears it from Donatella after the climate-system fix ("I'll call you Pixel"), and
-learns it has already traveled when the Assessor uses it at the dinner. She notices the name.
-She does not correct it. (There is no messenger beat — the invitation arrives unsigned.)
+She learns the name has already traveled when the Assessor uses it at the dinner. She notices
+the name. She does not correct it. (There is no messenger beat — the invitation arrives unsigned.)
 
 **Room-number mechanism (author reference):** The Pivot's room register is accessible via
 management-tier building credentials — the same credential layer the Assessor used to lock

@@ -167,6 +167,20 @@ public abstract class Node
     /// </summary>
     public string? TtsEngine { get; set; }
 
+    // ── KDP publication tracking ──────────────────────────────────────────
+
+    /// <summary>KDP publication lifecycle status.
+    /// "Published"      = live on KDP, beats unchanged since last publish.
+    /// "Outdated"       = was published; prose has been edited since — needs republish.
+    /// "WorkInProgress" = not yet on KDP; actively being written or not ready.
+    /// Null             = not tracked (legacy / internal-only nodes).
+    /// </summary>
+    public string? PublicationStatus { get; set; }
+
+    /// <summary>When this node was last successfully published to KDP. Null = never published.
+    /// A node needs republishing when <c>MAX(beats.UpdatedAt) > KdpPublishedAt</c>.</summary>
+    public DateTime? KdpPublishedAt { get; set; }
+
     // ── Generation / cost / resume state ─────────────────────────────────
 
     /// <summary>For LLM-generated nodes, the one-line seed that fed the

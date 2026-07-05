@@ -6270,6 +6270,9 @@ namespace StreetSamurai.Core.Migrations
                     b.Property<bool>("IsWIP")
                         .HasColumnType("bit");
 
+                    b.Property<DateTime?>("KdpPublishedAt")
+                        .HasColumnType("datetime2");
+
                     b.Property<string>("Kind")
                         .IsRequired()
                         .HasMaxLength(40)
@@ -6309,6 +6312,9 @@ namespace StreetSamurai.Core.Migrations
 
                     b.Property<Guid?>("PreviousNodeId")
                         .HasColumnType("uniqueidentifier");
+
+                    b.Property<string>("PublicationStatus")
+                        .HasColumnType("nvarchar(max)");
 
                     b.Property<double?>("Score")
                         .HasColumnType("float");

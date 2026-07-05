@@ -127,7 +127,19 @@ public class WorldLoreTests
 
     // ── Lore rules: banned terms in live data ─────────────────────────────────
 
-    private static readonly string DataRoot = "engine/data";
+    private static readonly string DataRoot = FindDataRoot();
+
+    private static string FindDataRoot()
+    {
+        var dir = AppContext.BaseDirectory;
+        while (!string.IsNullOrEmpty(dir))
+        {
+            var candidate = Path.Combine(dir, "engine", "data");
+            if (Directory.Exists(candidate)) return candidate;
+            dir = Path.GetDirectoryName(dir);
+        }
+        return Path.Combine("engine", "data");
+    }
     private static readonly string[] SkipDirs = ["graph", "archives"];
 
     private static IEnumerable<string> LiveJsonFiles()
@@ -187,19 +199,18 @@ public class WorldLoreTests
     }
 
     [Test]
-    public void LiveData_NoMeridianPDAsActiveInstitution()
+    public void LiveData_NoMeridianPDAnywhere()
     {
         var violations = new List<string>();
         foreach (var file in LiveJsonFiles())
         {
             var text = File.ReadAllText(file);
-            // Meridian PD dissolved 2208. References to it as a current institution are wrong.
-            if (System.Text.RegularExpressions.Regex.IsMatch(text, @"Meridian PD|Meridian Police Department") &&
-                !text.Contains("dissolved") && !text.Contains("former") && !text.Contains("disbanded"))
+            // "Meridian PD" and "Meridian Police Department" are retired terms. No uses permitted.
+            if (System.Text.RegularExpressions.Regex.IsMatch(text, @"Meridian PD|Meridian Police Department"))
                 violations.Add(Path.GetRelativePath(DataRoot, file));
         }
         Assert.That(violations, Is.Empty,
-            "Meridian PD referenced as active institution in:\n" + string.Join("\n", violations));
+            "Retired term 'Meridian PD' found in:\n" + string.Join("\n", violations));
     }
 
     [Test]

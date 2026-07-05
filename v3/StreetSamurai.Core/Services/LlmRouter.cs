@@ -1,4 +1,5 @@
 using Microsoft.Extensions.Logging;
+using MindAttic.Legion;
 using StreetSamurai.Core.Interfaces;
 
 namespace StreetSamurai.Core.Services;
@@ -12,6 +13,7 @@ public class LlmRouter : ILlmService
     private readonly ILlmService claude;
     private readonly ILlmService openAi;
     private readonly ILlmService? local;
+    private readonly LegionClient legion;
     private readonly Func<string?> activeProviderFunc;
     private readonly LastPromptStore prompts;
     private readonly ILogger<LlmRouter> log;
@@ -20,19 +22,20 @@ public class LlmRouter : ILlmService
     private string? runModel;
 
     /// <summary>Production constructor — concrete provider instances + settings-driven routing.</summary>
-    public LlmRouter(ClaudeService claude, OpenAiService openAi, LocalLlmService local, SettingsService settings, LastPromptStore prompts, ILogger<LlmRouter> log)
-        : this(claude, openAi, local, () => settings.ActiveLlmProvider, prompts, log) { }
+    public LlmRouter(ClaudeService claude, OpenAiService openAi, LocalLlmService local, SettingsService settings, LegionClient legion, LastPromptStore prompts, ILogger<LlmRouter> log)
+        : this(claude, openAi, local, () => settings.ActiveLlmProvider, legion, prompts, log) { }
 
     /// <summary>Test-friendly constructor — accepts any <see cref="ILlmService"/> for provider slots and a callback for the active-provider id.</summary>
     public LlmRouter(ILlmService claude, ILlmService openAi, Func<string?> activeProvider, LastPromptStore prompts, ILogger<LlmRouter> log)
-        : this(claude, openAi, local: null, activeProvider, prompts, log) { }
+        : this(claude, openAi, local: null, activeProvider, legion: null, prompts, log) { }
 
     /// <summary>Test-friendly constructor with explicit local provider.</summary>
-    public LlmRouter(ILlmService claude, ILlmService openAi, ILlmService? local, Func<string?> activeProvider, LastPromptStore prompts, ILogger<LlmRouter> log)
+    public LlmRouter(ILlmService claude, ILlmService openAi, ILlmService? local, Func<string?> activeProvider, LegionClient? legion, LastPromptStore prompts, ILogger<LlmRouter> log)
     {
         this.claude = claude;
         this.openAi = openAi;
         this.local = local;
+        this.legion = legion!;
         this.activeProviderFunc = activeProvider;
         this.prompts = prompts;
         this.log = log;
@@ -93,11 +96,14 @@ public class LlmRouter : ILlmService
     {
         var active = runProvider ?? activeProviderFunc();
         var localConfigured = local is not null && await local.IsConfiguredAsync();
+        // "claude-team" is the default when active is null or any legacy alias
+        var isTeam = active is null or "claude-team" || (active != "claude-api" && active != "openai" && active != "local");
         return
         [
-            new() { Id = "claude-api", Name = "Claude (API)", IsConfigured = await claude.IsConfiguredAsync(), IsActive = active != "openai" && active != "local" },
-            new() { Id = "openai", Name = "OpenAI",             IsConfigured = await openAi.IsConfiguredAsync(), IsActive = active == "openai" },
-            new() { Id = "local",  Name = "Local LLM",          IsConfigured = localConfigured,                  IsActive = active == "local"  },
+            new() { Id = "claude-team", Name = "Claude (Team)", IsConfigured = legion?.IsProviderConfigured("claude-team") ?? false, IsActive = isTeam },
+            new() { Id = "claude-api",  Name = "Claude (API)",  IsConfigured = legion?.IsProviderConfigured("claude-api")  ?? false, IsActive = active == "claude-api" },
+            new() { Id = "openai",      Name = "OpenAI",        IsConfigured = await openAi.IsConfiguredAsync(), IsActive = active == "openai" },
+            new() { Id = "local",       Name = "Local LLM",     IsConfigured = localConfigured,                  IsActive = active == "local"  },
         ];
     }
 }

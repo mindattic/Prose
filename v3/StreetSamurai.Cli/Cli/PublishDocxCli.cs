@@ -88,19 +88,35 @@ public static class PublishDocxCli
             else
                 Console.WriteLine("[publish-docx] ✓ Mojibake check passed.");
 
-            // ── keywords.txt ─────────────────────────────────────────────────────
+            // ── keywords.txt + synopsis.txt ──────────────────────────────────────
             await using (var db2 = await dbFactory.CreateDbContextAsync())
             {
+                var meta = await db2.Nodes
+                    .AsNoTracking()
+                    .Where(n => n.Id == nodeId)
+                    .Select(n => new { n.Synopsis })
+                    .FirstOrDefaultAsync();
+
                 var kws = await db2.NodeKeywords
                     .Where(k => k.NodeId == nodeId)
                     .OrderBy(k => k.SortOrder)
                     .Select(k => k.Keyword)
                     .ToListAsync();
+
+                var outDir = Path.GetDirectoryName(docxPath)!;
+
                 if (kws.Count > 0)
                 {
-                    var kwPath = Path.Combine(Path.GetDirectoryName(docxPath)!, "keywords.txt");
+                    var kwPath = Path.Combine(outDir, "keywords.txt");
                     await File.WriteAllLinesAsync(kwPath, kws);
                     Console.WriteLine($"[publish-docx] Wrote keywords: {kwPath}");
+                }
+
+                if (!string.IsNullOrWhiteSpace(meta?.Synopsis))
+                {
+                    var synPath = Path.Combine(outDir, "synopsis.txt");
+                    await File.WriteAllTextAsync(synPath, meta.Synopsis.Trim());
+                    Console.WriteLine($"[publish-docx] Wrote synopsis: {synPath}");
                 }
             }
 

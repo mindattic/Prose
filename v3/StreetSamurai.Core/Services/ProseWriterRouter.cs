@@ -1,4 +1,5 @@
 using Microsoft.EntityFrameworkCore;
+using Microsoft.Extensions.Logging;
 using StreetSamurai.Core.Data;
 using System.Text;
 
@@ -29,6 +30,7 @@ public class ProseWriterRouter(
     StoryMethodologyService methodology,
     BeatModeDetector modeDetector,
     WorkflowMonitorService monitor,
+    ILogger<ProseWriterRouter> log,
     EntityContextService? entityContext = null,
     DocContextService? docContext = null,
     SettingsService? settings = null,
@@ -387,6 +389,8 @@ public class ProseWriterRouter(
 
         _ = Task.Run(async () =>
         {
+          try
+          {
             await monitor.LogBeatActivityAsync(beatId, context.NodeId, universeId,
             [
                 new("Pacing",              IsApplicable: pacingApplicable,  IsActive: pacingApplicable && enriched.PacingGuidance.Length > 0,                 BlockSizeChars: enriched.PacingGuidance.Length),
@@ -433,6 +437,8 @@ public class ProseWriterRouter(
                 try { await openThreads.DetectAndRegisterAsync(capturedNodeId, beatId, capturedResult, CancellationToken.None); }
                 catch { /* non-blocking */ }
             }
+          }
+          catch (Exception ex) { log.LogWarning(ex, "Post-write side effects failed for beat {BeatId}", beatId); }
         }, CancellationToken.None);
 
         return result ?? "";

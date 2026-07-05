@@ -13,7 +13,7 @@ sqlcmd -S "(localdb)\MSSQLLocalDB" -d StreetSamurai -Q "<query>"
 
 ## Conventions
 
-- **229 base tables** are documented below. **171 `*_History` tables** are omitted: each is a
+- **232 base tables** are documented below. **171 `*_History` tables** are omitted: each is a
   system-versioned temporal mirror of its base table with the same columns plus the period columns
   `SysStart` / `SysEnd`. Tables marked **(temporal)** below have such a history twin; query their
   history with `FOR SYSTEM_TIME ALL`.
@@ -22,7 +22,7 @@ sqlcmd -S "(localdb)\MSSQLLocalDB" -d StreetSamurai -Q "<query>"
 
 ## Table index
 
-- [`__EFMigrationsHistory`](#__efmigrationshistory) -- 2 cols, ~10 rows
+- [`__EFMigrationsHistory`](#__efmigrationshistory) -- 2 cols, ~17 rows
 - [`AmmunitionAliases`](#ammunitionaliases) -- 6 cols, ~2 rows *(temporal)*
 - [`AmmunitionCompatibleWeapons`](#ammunitioncompatibleweapons) -- 7 cols, ~64 rows *(temporal)*
 - [`Ammunitions`](#ammunitions) -- 17 cols, ~69 rows *(temporal)*
@@ -54,9 +54,9 @@ sqlcmd -S "(localdb)\MSSQLLocalDB" -d StreetSamurai -Q "<query>"
 - [`AutomatonSensors`](#automatonsensors) -- 6 cols, ~501 rows *(temporal)*
 - [`AutomatonStoryHooks`](#automatonstoryhooks) -- 6 cols, ~299 rows *(temporal)*
 - [`BeatEntities`](#beatentities) -- 7 cols, ~1889 rows
-- [`BeatEntityMentions`](#beatentitymentions) -- 5 cols, ~24350 rows
+- [`BeatEntityMentions`](#beatentitymentions) -- 5 cols, ~24199 rows
 - [`BeatModeLog`](#beatmodelog) -- 6 cols, ~431 rows
-- [`Beats`](#beats) -- 32 cols, ~2592 rows *(temporal)*
+- [`Beats`](#beats) -- 32 cols, ~2667 rows *(temporal)*
 - [`BeatServiceLog`](#beatservicelog) -- 9 cols, ~5098 rows
 - [`BookChapterOrder`](#bookchapterorder) -- 6 cols, ~32 rows *(temporal)*
 - [`BookProtagonists`](#bookprotagonists) -- 7 cols, ~9 rows *(temporal)*
@@ -64,8 +64,8 @@ sqlcmd -S "(localdb)\MSSQLLocalDB" -d StreetSamurai -Q "<query>"
 - [`ChapterBeats`](#chapterbeats) -- 21 cols, ~38 rows *(temporal)*
 - [`ChapterCharacters`](#chaptercharacters) -- 7 cols, ~80 rows *(temporal)*
 - [`Chapters`](#chapters) -- 18 cols, ~34 rows *(temporal)*
-- [`CharacterAffiliations`](#characteraffiliations) -- 7 cols, ~1298 rows *(temporal)*
-- [`CharacterAliases`](#characteraliases) -- 6 cols, ~516 rows *(temporal)*
+- [`CharacterAffiliations`](#characteraffiliations) -- 7 cols, ~1304 rows *(temporal)*
+- [`CharacterAliases`](#characteraliases) -- 6 cols, ~522 rows *(temporal)*
 - [`CharacterAncestryDetails`](#characterancestrydetails) -- 8 cols, ~14505 rows *(temporal)*
 - [`CharacterArchetypeScores`](#characterarchetypescores) -- 6 cols, ~4118 rows *(temporal)*
 - [`CharacterBehavioralMaps`](#characterbehavioralmaps) -- 7 cols, ~6527 rows *(temporal)*
@@ -76,21 +76,21 @@ sqlcmd -S "(localdb)\MSSQLLocalDB" -d StreetSamurai -Q "<query>"
 - [`CharacterChangelog`](#characterchangelog) -- 13 cols, ~0 rows *(temporal)*
 - [`CharacterConditions`](#characterconditions) -- 11 cols, ~13 rows *(temporal)*
 - [`CharacterCyberware`](#charactercyberware) -- 13 cols, ~1606 rows *(temporal)*
-- [`CharacterEmotionalLedgers`](#characteremotionalledgers) -- 11 cols, ~38 rows
-- [`CharacterGeneticAncestries`](#charactergeneticancestries) -- 6 cols, ~5398 rows *(temporal)*
+- [`CharacterEmotionalLedgers`](#characteremotionalledgers) -- 11 cols, ~41 rows
+- [`CharacterGeneticAncestries`](#charactergeneticancestries) -- 6 cols, ~5407 rows *(temporal)*
 - [`CharacterHomeTurfs`](#characterhometurfs) -- 7 cols, ~1202 rows *(temporal)*
 - [`CharacterKnowledge`](#characterknowledge) -- 10 cols, ~27 rows *(temporal)*
 - [`CharacterKnowledgeEntities`](#characterknowledgeentities) -- 6 cols, ~0 rows *(temporal)*
 - [`CharacterNeuralAbilities`](#characterneuralabilities) -- 11 cols, ~10 rows *(temporal)*
 - [`CharacterPhysicalMarks`](#characterphysicalmarks) -- 6 cols, ~3610 rows *(temporal)*
 - [`CharacterPsychologyTraits`](#characterpsychologytraits) -- 7 cols, ~10692 rows *(temporal)*
-- [`CharacterReadModels`](#characterreadmodels) -- 5 cols, ~1722 rows
+- [`CharacterReadModels`](#characterreadmodels) -- 5 cols, ~1996 rows
 - [`CharacterRelationships`](#characterrelationships) -- 13 cols, ~443 rows *(temporal)*
-- [`Characters`](#characters) -- 49 cols, ~1717 rows *(temporal)*
+- [`Characters`](#characters) -- 49 cols, ~2325 rows *(temporal)*
 - [`CharacterSpeechPhrases`](#characterspeechphrases) -- 7 cols, ~5750 rows *(temporal)*
 - [`CharacterStatPhrases`](#characterstatphrases) -- 7 cols, ~8879 rows *(temporal)*
 - [`CharacterStatScalars`](#characterstatscalars) -- 10 cols, ~17198 rows *(temporal)*
-- [`CharacterStoryHooks`](#characterstoryhooks) -- 6 cols, ~3841 rows *(temporal)*
+- [`CharacterStoryHooks`](#characterstoryhooks) -- 6 cols, ~3866 rows *(temporal)*
 - [`CharacterTerritoryReputations`](#characterterritoryreputations) -- 6 cols, ~33 rows *(temporal)*
 - [`CharacterTerritoryZones`](#characterterritoryzones) -- 7 cols, ~118 rows *(temporal)*
 - [`CharacterTimeline`](#charactertimeline) -- 10 cols, ~2605 rows *(temporal)*
@@ -112,10 +112,11 @@ sqlcmd -S "(localdb)\MSSQLLocalDB" -d StreetSamurai -Q "<query>"
 - [`CyberwareItems`](#cyberwareitems) -- 24 cols, ~336 rows *(temporal)*
 - [`CyberwareItemSideEffects`](#cyberwareitemsideeffects) -- 6 cols, ~1008 rows *(temporal)*
 - [`CyberwareItemStoryHooks`](#cyberwareitemstoryhooks) -- 6 cols, ~1069 rows *(temporal)*
+- [`DeprecatedEntityNames`](#deprecatedentitynames) -- 7 cols, ~3 rows
 - [`DistributedWorkQueue`](#distributedworkqueue) -- 13 cols, ~0 rows
 - [`DocumentHeadings`](#documentheadings) -- 6 cols, ~5305 rows *(temporal)*
 - [`Documents`](#documents) -- 14 cols, ~2049 rows *(temporal)*
-- [`Edges`](#edges) -- 14 cols, ~2293 rows *(temporal)*
+- [`Edges`](#edges) -- 14 cols, ~2239 rows *(temporal)*
 - [`EmotionalBeatScores`](#emotionalbeatscores) -- 4 cols, ~76 rows
 - [`EmotionalDimensionResults`](#emotionaldimensionresults) -- 9 cols, ~280 rows
 - [`EmotionalExaminations`](#emotionalexaminations) -- 11 cols, ~35 rows
@@ -123,13 +124,13 @@ sqlcmd -S "(localdb)\MSSQLLocalDB" -d StreetSamurai -Q "<query>"
 - [`EntertainmentItems`](#entertainmentitems) -- 20 cols, ~998 rows *(temporal)*
 - [`EntertainmentKnownFans`](#entertainmentknownfans) -- 7 cols, ~1039 rows *(temporal)*
 - [`EntertainmentStoryHooks`](#entertainmentstoryhooks) -- 6 cols, ~2994 rows *(temporal)*
-- [`Entities`](#entities) -- 17 cols, ~12706 rows *(temporal)*
-- [`EntityEmbeddings`](#entityembeddings) -- 7 cols, ~11972 rows
+- [`Entities`](#entities) -- 17 cols, ~13346 rows *(temporal)*
+- [`EntityEmbeddings`](#entityembeddings) -- 7 cols, ~11629 rows
 - [`EntityProperties`](#entityproperties) -- 10 cols, ~0 rows *(temporal)*
 - [`EntityReviews`](#entityreviews) -- 17 cols, ~0 rows
 - [`EntityReviewSummaries`](#entityreviewsummaries) -- 10 cols, ~0 rows
-- [`EntityStateEvents`](#entitystateevents) -- 18 cols, ~9326 rows *(temporal)*
-- [`EntityTags`](#entitytags) -- 2 cols, ~85297 rows
+- [`EntityStateEvents`](#entitystateevents) -- 18 cols, ~9299 rows *(temporal)*
+- [`EntityTags`](#entitytags) -- 2 cols, ~85337 rows
 - [`EntityTaxonomies`](#entitytaxonomies) -- 5 cols, ~0 rows
 - [`EpisodeBeats`](#episodebeats) -- 21 cols, ~132 rows
 - [`EpisodeCorrections`](#episodecorrections) -- 6 cols, ~0 rows
@@ -137,21 +138,21 @@ sqlcmd -S "(localdb)\MSSQLLocalDB" -d StreetSamurai -Q "<query>"
 - [`EpisodeSurveys`](#episodesurveys) -- 8 cols, ~0 rows
 - [`EquipmentAliases`](#equipmentaliases) -- 6 cols, ~11 rows *(temporal)*
 - [`EquipmentBaseTechnologies`](#equipmentbasetechnologies) -- 7 cols, ~509 rows *(temporal)*
-- [`EquipmentItems`](#equipmentitems) -- 18 cols, ~225 rows *(temporal)*
+- [`EquipmentItems`](#equipmentitems) -- 18 cols, ~228 rows *(temporal)*
 - [`EquipmentKnownUsers`](#equipmentknownusers) -- 7 cols, ~544 rows *(temporal)*
 - [`EquipmentSpecifications`](#equipmentspecifications) -- 6 cols, ~1879 rows *(temporal)*
 - [`EquipmentStoryHooks`](#equipmentstoryhooks) -- 6 cols, ~604 rows *(temporal)*
 - [`ExtractionRuns`](#extractionruns) -- 9 cols, ~0 rows
 - [`FactionAliases`](#factionaliases) -- 6 cols, ~24 rows *(temporal)*
-- [`FactionGoals`](#factiongoals) -- 6 cols, ~102 rows *(temporal)*
+- [`FactionGoals`](#factiongoals) -- 6 cols, ~116 rows *(temporal)*
 - [`FactionMembers`](#factionmembers) -- 10 cols, ~277 rows *(temporal)*
-- [`FactionMethods`](#factionmethods) -- 6 cols, ~1044 rows *(temporal)*
-- [`FactionRelationships`](#factionrelationships) -- 9 cols, ~443 rows *(temporal)*
+- [`FactionMethods`](#factionmethods) -- 6 cols, ~1066 rows *(temporal)*
+- [`FactionRelationships`](#factionrelationships) -- 9 cols, ~456 rows *(temporal)*
 - [`FactionRelationshipTags`](#factionrelationshiptags) -- 6 cols, ~178 rows *(temporal)*
 - [`FactionResources`](#factionresources) -- 6 cols, ~956 rows *(temporal)*
-- [`Factions`](#factions) -- 18 cols, ~229 rows *(temporal)*
+- [`Factions`](#factions) -- 18 cols, ~242 rows *(temporal)*
 - [`FactionStoryHooks`](#factionstoryhooks) -- 6 cols, ~604 rows *(temporal)*
-- [`Findings`](#findings) -- 12 cols, ~5077 rows
+- [`Findings`](#findings) -- 12 cols, ~5211 rows
 - [`FlyoverEntities`](#flyoverentities) -- 18 cols, ~44 rows *(temporal)*
 - [`FlyoverEntityAliases`](#flyoverentityaliases) -- 6 cols, ~120 rows *(temporal)*
 - [`FlyoverEntityKnownLocations`](#flyoverentityknownlocations) -- 7 cols, ~0 rows *(temporal)*
@@ -166,12 +167,12 @@ sqlcmd -S "(localdb)\MSSQLLocalDB" -d StreetSamurai -Q "<query>"
 - [`LabSpecimenKnownLocations`](#labspecimenknownlocations) -- 7 cols, ~111 rows *(temporal)*
 - [`LabSpecimens`](#labspecimens) -- 21 cols, ~52 rows *(temporal)*
 - [`LabSpecimenStoryHooks`](#labspecimenstoryhooks) -- 6 cols, ~112 rows *(temporal)*
-- [`MarkdownFiles`](#markdownfiles) -- 16 cols, ~310 rows *(temporal)*
+- [`MarkdownFiles`](#markdownfiles) -- 16 cols, ~336 rows *(temporal)*
 - [`MaterialAliases`](#materialaliases) -- 6 cols, ~5 rows *(temporal)*
 - [`MaterialApplications`](#materialapplications) -- 6 cols, ~1322 rows *(temporal)*
 - [`MaterialDevelopers`](#materialdevelopers) -- 6 cols, ~209 rows *(temporal)*
 - [`MaterialProperties`](#materialproperties) -- 6 cols, ~1502 rows *(temporal)*
-- [`Materials`](#materials) -- 16 cols, ~291 rows *(temporal)*
+- [`Materials`](#materials) -- 16 cols, ~297 rows *(temporal)*
 - [`MaterialStoryHooks`](#materialstoryhooks) -- 6 cols, ~236 rows *(temporal)*
 - [`Media`](#media) -- 20 cols, ~1 rows
 - [`MotifAppearances`](#motifappearances) -- 7 cols, ~0 rows *(temporal)*
@@ -181,21 +182,21 @@ sqlcmd -S "(localdb)\MSSQLLocalDB" -d StreetSamurai -Q "<query>"
 - [`NewsLocations`](#newslocations) -- 7 cols, ~387 rows *(temporal)*
 - [`NodeAmendments`](#nodeamendments) -- 10 cols, ~0 rows *(temporal)*
 - [`NodeAudioEvents`](#nodeaudioevents) -- 7 cols, ~331 rows
-- [`NodeBeats`](#nodebeats) -- 6 cols, ~1472 rows *(temporal)*
+- [`NodeBeats`](#nodebeats) -- 6 cols, ~1547 rows *(temporal)*
 - [`NodeChapterSummaries`](#nodechaptersummaries) -- 7 cols, ~0 rows
 - [`NodeKeywords`](#nodekeywords) -- 5 cols, ~98 rows
 - [`NodeOpenThreads`](#nodeopenthreads) -- 9 cols, ~0 rows
 - [`NodePublications`](#nodepublications) -- 10 cols, ~9 rows
-- [`NodeReviewBeatScores`](#nodereviewbeatscores) -- 5 cols, ~1031662 rows
-- [`NodeReviews`](#nodereviews) -- 21 cols, ~23176 rows
+- [`NodeReviewBeatScores`](#nodereviewbeatscores) -- 5 cols, ~1052730 rows
+- [`NodeReviews`](#nodereviews) -- 21 cols, ~23759 rows
 - [`NodeReviewSummaries`](#nodereviewsummaries) -- 8 cols, ~15 rows
-- [`Nodes`](#nodes) -- 47 cols, ~53 rows *(temporal)*
-- [`NodeScoreHistories`](#nodescorehistories) -- 8 cols, ~428 rows
+- [`Nodes`](#nodes) -- 51 cols, ~69 rows *(temporal)*
+- [`NodeScoreHistories`](#nodescorehistories) -- 8 cols, ~459 rows
 - [`NodeScoreHistory`](#nodescorehistory) -- 8 cols, ~0 rows
 - [`NodeSpineVersions`](#nodespineversions) -- 11 cols, ~0 rows *(temporal)*
 - [`PharmaceuticalAliases`](#pharmaceuticalaliases) -- 6 cols, ~0 rows *(temporal)*
 - [`PharmaceuticalEffects`](#pharmaceuticaleffects) -- 6 cols, ~1256 rows *(temporal)*
-- [`Pharmaceuticals`](#pharmaceuticals) -- 20 cols, ~268 rows *(temporal)*
+- [`Pharmaceuticals`](#pharmaceuticals) -- 20 cols, ~267 rows *(temporal)*
 - [`PharmaceuticalSideEffects`](#pharmaceuticalsideeffects) -- 6 cols, ~1336 rows *(temporal)*
 - [`PharmaceuticalStoryHooks`](#pharmaceuticalstoryhooks) -- 6 cols, ~755 rows *(temporal)*
 - [`PlaceAdjacencies`](#placeadjacencies) -- 7 cols, ~1080 rows *(temporal)*
@@ -207,7 +208,7 @@ sqlcmd -S "(localdb)\MSSQLLocalDB" -d StreetSamurai -Q "<query>"
 - [`PlaceNotableLocations`](#placenotablelocations) -- 7 cols, ~360 rows *(temporal)*
 - [`PlaceOpportunities`](#placeopportunities) -- 6 cols, ~1153 rows *(temporal)*
 - [`PlaceRelatedEntities`](#placerelatedentities) -- 7 cols, ~3794 rows *(temporal)*
-- [`Places`](#places) -- 19 cols, ~706 rows *(temporal)*
+- [`Places`](#places) -- 19 cols, ~719 rows *(temporal)*
 - [`PlaceStoryHooks`](#placestoryhooks) -- 6 cols, ~898 rows *(temporal)*
 - [`PlantPayoffs`](#plantpayoffs) -- 13 cols, ~4 rows
 - [`ProseEmbeddings`](#proseembeddings) -- 8 cols, ~1643 rows
@@ -225,13 +226,15 @@ sqlcmd -S "(localdb)\MSSQLLocalDB" -d StreetSamurai -Q "<query>"
 - [`Species`](#species) -- 7 cols, ~7 rows
 - [`Subsidiaries`](#subsidiaries) -- 16 cols, ~377 rows *(temporal)*
 - [`SubsidiaryProducts`](#subsidiaryproducts) -- 7 cols, ~23 rows *(temporal)*
+- [`SurveyQuestions`](#surveyquestions) -- 13 cols, ~4 rows
+- [`Surveys`](#surveys) -- 8 cols, ~1 rows
 - [`SyntheticLifeAliases`](#syntheticlifealiases) -- 6 cols, ~0 rows *(temporal)*
 - [`SyntheticLifeKnownAssociations`](#syntheticlifeknownassociations) -- 7 cols, ~12 rows *(temporal)*
 - [`SyntheticLifeStoryHooks`](#syntheticlifestoryhooks) -- 6 cols, ~18 rows *(temporal)*
 - [`SyntheticLives`](#syntheticlives) -- 33 cols, ~327 rows *(temporal)*
-- [`Tags`](#tags) -- 4 cols, ~9405 rows
+- [`Tags`](#tags) -- 4 cols, ~9421 rows
 - [`Taxonomies`](#taxonomies) -- 5 cols, ~0 rows
-- [`Technologies`](#technologies) -- 16 cols, ~307 rows *(temporal)*
+- [`Technologies`](#technologies) -- 16 cols, ~306 rows *(temporal)*
 - [`TechnologyAliases`](#technologyaliases) -- 6 cols, ~65 rows *(temporal)*
 - [`TechnologyBaseTechnologies`](#technologybasetechnologies) -- 7 cols, ~776 rows *(temporal)*
 - [`TechnologyDevelopers`](#technologydevelopers) -- 7 cols, ~429 rows *(temporal)*
@@ -240,14 +243,14 @@ sqlcmd -S "(localdb)\MSSQLLocalDB" -d StreetSamurai -Q "<query>"
 - [`TransportationAliases`](#transportationaliases) -- 6 cols, ~3 rows *(temporal)*
 - [`Transportations`](#transportations) -- 22 cols, ~104 rows *(temporal)*
 - [`TransportationStoryHooks`](#transportationstoryhooks) -- 6 cols, ~202 rows *(temporal)*
-- [`Universe`](#universe) -- 9 cols, ~2 rows
+- [`Universe`](#universe) -- 10 cols, ~2 rows
 - [`VocabularyEntries`](#vocabularyentries) -- 13 cols, ~674 rows *(temporal)*
 - [`VoiceChangeLog`](#voicechangelog) -- 12 cols, ~51 rows
 - [`WeaponAliases`](#weaponaliases) -- 6 cols, ~6 rows *(temporal)*
 - [`WeaponAmmunitionTypes`](#weaponammunitiontypes) -- 7 cols, ~607 rows *(temporal)*
 - [`WeaponBaseTechnologies`](#weaponbasetechnologies) -- 7 cols, ~2276 rows *(temporal)*
 - [`WeaponKnownUsers`](#weaponknownusers) -- 7 cols, ~2222 rows *(temporal)*
-- [`Weapons`](#weapons) -- 17 cols, ~718 rows *(temporal)*
+- [`Weapons`](#weapons) -- 17 cols, ~723 rows *(temporal)*
 - [`WeaponSpecs`](#weaponspecs) -- 7 cols, ~31 rows *(temporal)*
 - [`WeaponStoryHooks`](#weaponstoryhooks) -- 6 cols, ~1697 rows *(temporal)*
 - [`WoundLedger`](#woundledger) -- 12 cols, ~9 rows
@@ -256,7 +259,7 @@ sqlcmd -S "(localdb)\MSSQLLocalDB" -d StreetSamurai -Q "<query>"
 
 ### __EFMigrationsHistory
 
-~10 rows.
+~17 rows.
 
 | # | Column | Type | Null | Key |
 |---|--------|------|------|-----|
@@ -749,7 +752,7 @@ sqlcmd -S "(localdb)\MSSQLLocalDB" -d StreetSamurai -Q "<query>"
 
 ### BeatEntityMentions
 
-~24350 rows.
+~24199 rows.
 
 | # | Column | Type | Null | Key |
 |---|--------|------|------|-----|
@@ -774,7 +777,7 @@ sqlcmd -S "(localdb)\MSSQLLocalDB" -d StreetSamurai -Q "<query>"
 
 ### Beats
 
-~2592 rows. *(temporal -- has `Beats_History`)*
+~2667 rows. *(temporal -- has `Beats_History`)*
 
 | # | Column | Type | Null | Key |
 |---|--------|------|------|-----|
@@ -942,7 +945,7 @@ sqlcmd -S "(localdb)\MSSQLLocalDB" -d StreetSamurai -Q "<query>"
 
 ### CharacterAffiliations
 
-~1298 rows. *(temporal -- has `CharacterAffiliations_History`)*
+~1304 rows. *(temporal -- has `CharacterAffiliations_History`)*
 
 | # | Column | Type | Null | Key |
 |---|--------|------|------|-----|
@@ -956,7 +959,7 @@ sqlcmd -S "(localdb)\MSSQLLocalDB" -d StreetSamurai -Q "<query>"
 
 ### CharacterAliases
 
-~516 rows. *(temporal -- has `CharacterAliases_History`)*
+~522 rows. *(temporal -- has `CharacterAliases_History`)*
 
 | # | Column | Type | Null | Key |
 |---|--------|------|------|-----|
@@ -1124,7 +1127,7 @@ sqlcmd -S "(localdb)\MSSQLLocalDB" -d StreetSamurai -Q "<query>"
 
 ### CharacterEmotionalLedgers
 
-~38 rows.
+~41 rows.
 
 | # | Column | Type | Null | Key |
 |---|--------|------|------|-----|
@@ -1142,7 +1145,7 @@ sqlcmd -S "(localdb)\MSSQLLocalDB" -d StreetSamurai -Q "<query>"
 
 ### CharacterGeneticAncestries
 
-~5398 rows. *(temporal -- has `CharacterGeneticAncestries_History`)*
+~5407 rows. *(temporal -- has `CharacterGeneticAncestries_History`)*
 
 | # | Column | Type | Null | Key |
 |---|--------|------|------|-----|
@@ -1244,7 +1247,7 @@ sqlcmd -S "(localdb)\MSSQLLocalDB" -d StreetSamurai -Q "<query>"
 
 ### CharacterReadModels
 
-~1722 rows.
+~1996 rows.
 
 | # | Column | Type | Null | Key |
 |---|--------|------|------|-----|
@@ -1276,7 +1279,7 @@ sqlcmd -S "(localdb)\MSSQLLocalDB" -d StreetSamurai -Q "<query>"
 
 ### Characters
 
-~1717 rows. *(temporal -- has `Characters_History`)*
+~2325 rows. *(temporal -- has `Characters_History`)*
 
 | # | Column | Type | Null | Key |
 |---|--------|------|------|-----|
@@ -1377,7 +1380,7 @@ sqlcmd -S "(localdb)\MSSQLLocalDB" -d StreetSamurai -Q "<query>"
 
 ### CharacterStoryHooks
 
-~3841 rows. *(temporal -- has `CharacterStoryHooks_History`)*
+~3866 rows. *(temporal -- has `CharacterStoryHooks_History`)*
 
 | # | Column | Type | Null | Key |
 |---|--------|------|------|-----|
@@ -1764,6 +1767,20 @@ sqlcmd -S "(localdb)\MSSQLLocalDB" -d StreetSamurai -Q "<query>"
 | 5 | `SysStart` | datetime2 |  |  |
 | 6 | `SysEnd` | datetime2 |  |  |
 
+### DeprecatedEntityNames
+
+~3 rows.
+
+| # | Column | Type | Null | Key |
+|---|--------|------|------|-----|
+| 1 | `Id` | bigint |  | PK |
+| 2 | `UniverseId` | uniqueidentifier |  |  |
+| 3 | `DeprecatedName` | nvarchar(256) |  |  |
+| 4 | `CanonicalName` | nvarchar(256) |  |  |
+| 5 | `EntityId` | uniqueidentifier |  | -> Entities.Id |
+| 6 | `Notes` | nvarchar(512) |  |  |
+| 7 | `AddedAt` | datetime2 |  |  |
+
 ### DistributedWorkQueue
 
 ~0 rows.
@@ -1820,7 +1837,7 @@ sqlcmd -S "(localdb)\MSSQLLocalDB" -d StreetSamurai -Q "<query>"
 
 ### Edges
 
-~2293 rows. *(temporal -- has `Edges_History`)*
+~2239 rows. *(temporal -- has `Edges_History`)*
 
 | # | Column | Type | Null | Key |
 |---|--------|------|------|-----|
@@ -1953,7 +1970,7 @@ sqlcmd -S "(localdb)\MSSQLLocalDB" -d StreetSamurai -Q "<query>"
 
 ### Entities
 
-~12706 rows. *(temporal -- has `Entities_History`)*
+~13346 rows. *(temporal -- has `Entities_History`)*
 
 | # | Column | Type | Null | Key |
 |---|--------|------|------|-----|
@@ -1977,7 +1994,7 @@ sqlcmd -S "(localdb)\MSSQLLocalDB" -d StreetSamurai -Q "<query>"
 
 ### EntityEmbeddings
 
-~11972 rows.
+~11629 rows.
 
 | # | Column | Type | Null | Key |
 |---|--------|------|------|-----|
@@ -2049,7 +2066,7 @@ sqlcmd -S "(localdb)\MSSQLLocalDB" -d StreetSamurai -Q "<query>"
 
 ### EntityStateEvents
 
-~9326 rows. *(temporal -- has `EntityStateEvents_History`)*
+~9299 rows. *(temporal -- has `EntityStateEvents_History`)*
 
 | # | Column | Type | Null | Key |
 |---|--------|------|------|-----|
@@ -2074,7 +2091,7 @@ sqlcmd -S "(localdb)\MSSQLLocalDB" -d StreetSamurai -Q "<query>"
 
 ### EntityTags
 
-~85297 rows.
+~85337 rows.
 
 | # | Column | Type | Null | Key |
 |---|--------|------|------|-----|
@@ -2204,7 +2221,7 @@ sqlcmd -S "(localdb)\MSSQLLocalDB" -d StreetSamurai -Q "<query>"
 
 ### EquipmentItems
 
-~225 rows. *(temporal -- has `EquipmentItems_History`)*
+~228 rows. *(temporal -- has `EquipmentItems_History`)*
 
 | # | Column | Type | Null | Key |
 |---|--------|------|------|-----|
@@ -2298,7 +2315,7 @@ sqlcmd -S "(localdb)\MSSQLLocalDB" -d StreetSamurai -Q "<query>"
 
 ### FactionGoals
 
-~102 rows. *(temporal -- has `FactionGoals_History`)*
+~116 rows. *(temporal -- has `FactionGoals_History`)*
 
 | # | Column | Type | Null | Key |
 |---|--------|------|------|-----|
@@ -2328,7 +2345,7 @@ sqlcmd -S "(localdb)\MSSQLLocalDB" -d StreetSamurai -Q "<query>"
 
 ### FactionMethods
 
-~1044 rows. *(temporal -- has `FactionMethods_History`)*
+~1066 rows. *(temporal -- has `FactionMethods_History`)*
 
 | # | Column | Type | Null | Key |
 |---|--------|------|------|-----|
@@ -2341,7 +2358,7 @@ sqlcmd -S "(localdb)\MSSQLLocalDB" -d StreetSamurai -Q "<query>"
 
 ### FactionRelationships
 
-~443 rows. *(temporal -- has `FactionRelationships_History`)*
+~456 rows. *(temporal -- has `FactionRelationships_History`)*
 
 | # | Column | Type | Null | Key |
 |---|--------|------|------|-----|
@@ -2383,7 +2400,7 @@ sqlcmd -S "(localdb)\MSSQLLocalDB" -d StreetSamurai -Q "<query>"
 
 ### Factions
 
-~229 rows. *(temporal -- has `Factions_History`)*
+~242 rows. *(temporal -- has `Factions_History`)*
 
 | # | Column | Type | Null | Key |
 |---|--------|------|------|-----|
@@ -2421,7 +2438,7 @@ sqlcmd -S "(localdb)\MSSQLLocalDB" -d StreetSamurai -Q "<query>"
 
 ### Findings
 
-~5077 rows.
+~5211 rows.
 
 | # | Column | Type | Null | Key |
 |---|--------|------|------|-----|
@@ -2664,7 +2681,7 @@ sqlcmd -S "(localdb)\MSSQLLocalDB" -d StreetSamurai -Q "<query>"
 
 ### MarkdownFiles
 
-~310 rows. *(temporal -- has `MarkdownFiles_History`)*
+~336 rows. *(temporal -- has `MarkdownFiles_History`)*
 
 | # | Column | Type | Null | Key |
 |---|--------|------|------|-----|
@@ -2739,7 +2756,7 @@ sqlcmd -S "(localdb)\MSSQLLocalDB" -d StreetSamurai -Q "<query>"
 
 ### Materials
 
-~291 rows. *(temporal -- has `Materials_History`)*
+~297 rows. *(temporal -- has `Materials_History`)*
 
 | # | Column | Type | Null | Key |
 |---|--------|------|------|-----|
@@ -2914,7 +2931,7 @@ sqlcmd -S "(localdb)\MSSQLLocalDB" -d StreetSamurai -Q "<query>"
 
 ### NodeBeats
 
-~1472 rows. *(temporal -- has `NodeBeats_History`)*
+~1547 rows. *(temporal -- has `NodeBeats_History`)*
 
 | # | Column | Type | Null | Key |
 |---|--------|------|------|-----|
@@ -2986,7 +3003,7 @@ sqlcmd -S "(localdb)\MSSQLLocalDB" -d StreetSamurai -Q "<query>"
 
 ### NodeReviewBeatScores
 
-~1031662 rows.
+~1052730 rows.
 
 | # | Column | Type | Null | Key |
 |---|--------|------|------|-----|
@@ -2998,7 +3015,7 @@ sqlcmd -S "(localdb)\MSSQLLocalDB" -d StreetSamurai -Q "<query>"
 
 ### NodeReviews
 
-~23176 rows.
+~23759 rows.
 
 | # | Column | Type | Null | Key |
 |---|--------|------|------|-----|
@@ -3041,7 +3058,7 @@ sqlcmd -S "(localdb)\MSSQLLocalDB" -d StreetSamurai -Q "<query>"
 
 ### Nodes
 
-~53 rows. *(temporal -- has `Nodes_History`)*
+~69 rows. *(temporal -- has `Nodes_History`)*
 
 | # | Column | Type | Null | Key |
 |---|--------|------|------|-----|
@@ -3092,10 +3109,14 @@ sqlcmd -S "(localdb)\MSSQLLocalDB" -d StreetSamurai -Q "<query>"
 | 45 | `IsWIP` | bit |  |  |
 | 46 | `Summary` | nvarchar(max) |  |  |
 | 47 | `NodeType` | nvarchar(20) |  |  |
+| 48 | `Author` | nvarchar(200) |  |  |
+| 49 | `DefaultLocation` | nvarchar(max) |  |  |
+| 50 | `KdpPublishedAt` | datetime2 |  |  |
+| 51 | `PublicationStatus` | nvarchar(max) |  |  |
 
 ### NodeScoreHistories
 
-~428 rows.
+~459 rows.
 
 | # | Column | Type | Null | Key |
 |---|--------|------|------|-----|
@@ -3169,7 +3190,7 @@ sqlcmd -S "(localdb)\MSSQLLocalDB" -d StreetSamurai -Q "<query>"
 
 ### Pharmaceuticals
 
-~268 rows. *(temporal -- has `Pharmaceuticals_History`)*
+~267 rows. *(temporal -- has `Pharmaceuticals_History`)*
 
 | # | Column | Type | Null | Key |
 |---|--------|------|------|-----|
@@ -3350,7 +3371,7 @@ sqlcmd -S "(localdb)\MSSQLLocalDB" -d StreetSamurai -Q "<query>"
 
 ### Places
 
-~706 rows. *(temporal -- has `Places_History`)*
+~719 rows. *(temporal -- has `Places_History`)*
 
 | # | Column | Type | Null | Key |
 |---|--------|------|------|-----|
@@ -3648,6 +3669,41 @@ sqlcmd -S "(localdb)\MSSQLLocalDB" -d StreetSamurai -Q "<query>"
 | 6 | `SysStart` | datetime2 |  |  |
 | 7 | `SysEnd` | datetime2 |  |  |
 
+### SurveyQuestions
+
+~4 rows.
+
+| # | Column | Type | Null | Key |
+|---|--------|------|------|-----|
+| 1 | `Id` | uniqueidentifier |  | PK |
+| 2 | `SurveyId` | uniqueidentifier |  | -> Surveys.Id |
+| 3 | `QuestionKey` | nvarchar(20) |  |  |
+| 4 | `QuestionType` | nvarchar(50) |  |  |
+| 5 | `Title` | nvarchar(500) |  |  |
+| 6 | `Context` | nvarchar(max) |  |  |
+| 7 | `OptionsJson` | nvarchar(max) |  |  |
+| 8 | `SelectedOption` | nvarchar(max) |  |  |
+| 9 | `AnsweredAt` | datetime2 |  |  |
+| 10 | `ApplyStatus` | nvarchar(20) |  |  |
+| 11 | `ApplyNotes` | nvarchar(max) |  |  |
+| 12 | `AppliedAt` | datetime2 |  |  |
+| 13 | `SortOrder` | int |  |  |
+
+### Surveys
+
+~1 rows.
+
+| # | Column | Type | Null | Key |
+|---|--------|------|------|-----|
+| 1 | `Id` | uniqueidentifier |  | PK |
+| 2 | `UniverseId` | uniqueidentifier |  |  |
+| 3 | `Slug` | nvarchar(200) |  |  |
+| 4 | `Title` | nvarchar(500) |  |  |
+| 5 | `Purpose` | nvarchar(max) |  |  |
+| 6 | `Status` | nvarchar(20) |  |  |
+| 7 | `CreatedAt` | datetime2 |  |  |
+| 8 | `CompletedAt` | datetime2 |  |  |
+
 ### SyntheticLifeAliases
 
 ~0 rows. *(temporal -- has `SyntheticLifeAliases_History`)*
@@ -3730,7 +3786,7 @@ sqlcmd -S "(localdb)\MSSQLLocalDB" -d StreetSamurai -Q "<query>"
 
 ### Tags
 
-~9405 rows.
+~9421 rows.
 
 | # | Column | Type | Null | Key |
 |---|--------|------|------|-----|
@@ -3753,7 +3809,7 @@ sqlcmd -S "(localdb)\MSSQLLocalDB" -d StreetSamurai -Q "<query>"
 
 ### Technologies
 
-~307 rows. *(temporal -- has `Technologies_History`)*
+~306 rows. *(temporal -- has `Technologies_History`)*
 
 | # | Column | Type | Null | Key |
 |---|--------|------|------|-----|
@@ -3912,6 +3968,7 @@ sqlcmd -S "(localdb)\MSSQLLocalDB" -d StreetSamurai -Q "<query>"
 | 7 | `IsActive` | bit |  |  |
 | 8 | `SortKey` | float |  |  |
 | 9 | `CreatedAt` | datetime2 |  |  |
+| 10 | `WorldFacts` | nvarchar(max) |  |  |
 
 ### VocabularyEntries
 
@@ -4009,7 +4066,7 @@ sqlcmd -S "(localdb)\MSSQLLocalDB" -d StreetSamurai -Q "<query>"
 
 ### Weapons
 
-~718 rows. *(temporal -- has `Weapons_History`)*
+~723 rows. *(temporal -- has `Weapons_History`)*
 
 | # | Column | Type | Null | Key |
 |---|--------|------|------|-----|

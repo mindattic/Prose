@@ -528,6 +528,7 @@ public static class ServiceCollectionExtensions
             sp.GetRequiredService<OpenAiService>(),
             sp.GetRequiredService<LocalLlmService>(),
             sp.GetRequiredService<SettingsService>(),
+            sp.GetRequiredService<LegionClient>(),
             sp.GetRequiredService<LastPromptStore>(),
             sp.GetRequiredService<ILogger<LlmRouter>>()));
         services.AddSingleton<ILlmService>(sp => sp.GetRequiredService<LlmRouter>());
@@ -686,6 +687,11 @@ public static class ServiceCollectionExtensions
                 ApiKeys =
                 {
                     ["claude-api"]  = s.ApiKey,
+                    // claude-team uses the Claude Code CLI OAuth token (~/.claude/.credentials.json).
+                    // No API key exists; Legion resolves auth via ClaudeCodeOAuthSource. We seed the
+                    // token here so VotingConfiguration.ActiveProviderIds includes claude-team when
+                    // the OAuth token is present, and ResolveKey returns it to the review ballot call.
+                    ["claude-team"] = LegionClient.GetClaudeTeamOAuthToken() ?? "",
                     ["openai"]     = s.OpenAiApiKey,
                     ["gemini"]     = s.GeminiApiKey,
                     ["deepseek"]   = s.DeepSeekApiKey,
@@ -697,7 +703,7 @@ public static class ServiceCollectionExtensions
                     ["fireworks"]  = s.FireworksApiKey,
                     ["cohere"]     = s.CohereApiKey,
                 },
-                JudgeProviderId = "claude-api",
+                JudgeProviderId = "claude-team",
                 // AllowedProviderIds defaults to { claude, openai, deepseek }.
                 // legion.json (when present at the project root) overrides this
                 // so each app declares its own voter panel.

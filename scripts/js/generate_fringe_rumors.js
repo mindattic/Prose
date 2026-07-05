@@ -125,7 +125,7 @@ The world OUTSIDE GLMZ:
 
 People in GLMZ: Ubiquitous Diaspora — everyone is mixed heritage from unexpected global combinations. Names blend freely across all traditions. No distinct ethnic groups.
 
-Key facts: No city police in GLMZ (Arcturus Civil Security is closest thing, Meridian PD dissolved 2208). Tier 1 = Shelf (poorest, darkest). Tier 5 = Spires (ultra-elite). BCI = brain-computer interfaces, common. CorpoNations are sovereign corporate nation-states.`;
+Key facts: No city police in GLMZ (ArcSec is closest thing, city police destroyed in the 2065 Blue Massacre). Tier 1 = Shelf (poorest, darkest). Tier 5 = Spires (ultra-elite). BCI = brain-computer interfaces, common. CorpoNations are sovereign corporate nation-states.`;
 
 // ─── BATCH DEFINITIONS ────────────────────────────────────────────────────────
 
@@ -203,7 +203,7 @@ You generate rumors, urban legends, and fringe reports — things GLMZ residents
 CRITICAL RULES:
 - The Φ symbol is the QUANTA currency. Never call it the Greek letter phi.
 - Iowan Behemoths are autonomous machines. NOT alive. NOT synthetic life. Rumors about them being "alive" are rumors made up by scared humans anthropomorphizing machines.
-- No city police in GLMZ. Arcturus Civil Security is the closest equivalent.
+- No city police in GLMZ. ArcSec is the closest equivalent.
 - Everyone in GLMZ is mixed heritage — Ubiquitous Diaspora. Mixed names from unexpected global combinations.
 - Write with literary quality. These are living-world documents that will be used for storytelling.
 - Each rumor must feel distinct — different tones, different origins (bar story vs zine vs whispered testimony vs child's schoolyard legend).

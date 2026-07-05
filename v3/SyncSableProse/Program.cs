@@ -15,7 +15,7 @@ using StreetSamurai.Core.Interfaces;
 // Esperanza Halberd-Iwu is intentionally left untouched: she is mentioned in
 // the prose but was never promoted to a Character record, so the sweep didn't
 // touch her, and renaming her unilaterally would manufacture canon we haven't
-// committed to yet. Sable's own "Rhea Adesanya-MacGregor" alias is protected.
+// committed to yet. Sable's own "Rhea MacGregor" alias is protected.
 
 const string BookId = "5ab1e000000000000000000000000001";
 

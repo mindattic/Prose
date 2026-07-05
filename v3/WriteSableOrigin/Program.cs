@@ -43,7 +43,7 @@ var book = new Book
     Id           = BookId,
     Title        = "The Voice You Trust",
     Tagline      = "Before she was Sable.",
-    Premise      = "Before she was Sable — the fixer in the tan coat with her hands in the pockets — she was Rhea Adesanya-MacGregor, a Tier 3+ media personality on a five-year track to a Tier 4 anchor seat. Then her network was acquired, she was reassigned, she found something she should not have found, and the company arranged her exit. The exit took her eyes. The black-market clinic gave her new ones. The tan coat she bought on the walk home was not a costume. It was the closing entry in a five-year ledger of dignified mistakes.",
+    Premise      = "Before she was Sable — the fixer in the tan coat with her hands in the pockets — she was Rhea MacGregor, a Tier 3+ media personality on a five-year track to a Tier 4 anchor seat. Then her network was acquired, she was reassigned, she found something she should not have found, and the company arranged her exit. The exit took her eyes. The black-market clinic gave her new ones. The tan coat she bought on the walk home was not a costume. It was the closing entry in a five-year ledger of dignified mistakes.",
     ArcTarget    = "Ends with Sable standing across State and Madison from the building where Tessera Media Group used to be, hands in the pockets of a tan coat she had owned for forty minutes, counting one hour by the internal clock of paired ocular implants she had owned for two. Establishes the annual visit, the refusal of contact, and the operating posture that every later Sable chapter inherits.",
     Status       = "drafting",
     Protagonists = new() { "Sable" },
@@ -64,7 +64,7 @@ var book = new Book
         },
         CanonChanges = new()
         {
-            "Rhea Adesanya-MacGregor is now operating under the name Sable.",
+            "Rhea MacGregor is now operating under the name Sable.",
             "Dr. Adaeze Kovalenko-Hassan's basement clinic in the Circuit is established as the black-market ocular surgery Sable will later return to on others' behalf.",
             "Yelena Chen-Okafor is established as the prior-generation fixer who first put Sable on the freelance roster. (Retires eleven years later and passes her network forward.)",
             "Tessera Media Group's State-and-Madison building has been converted to 'Forty-Seven North,' an upscale restaurant. This is the building Sable visits annually.",
@@ -82,7 +82,7 @@ var ch1 = new Chapter
     Title      = "The Voice You Trust",
     Status     = "draft",
     Characters = new() { "Sable" },
-    Synopsis   = "October 2216. Rhea Adesanya-MacGregor is twenty-five, a Tier 3+ feature voice at Tessera Media Group, two segments away from a Tier 4 anchor seat. She records a long-form piece on Axiom Industries' Z3 expansion at 0712. By 1015 she is in the eighth-floor conference room hearing the words 'wholly owned subsidiary.' By 1119 she is reading the same segment back into the booth with a new title penciled in by Axiom's brand transition liaison. The first thing she loses is not vision. It is the title she chose.",
+    Synopsis   = "October 2216. Rhea MacGregor is twenty-five, a Tier 3+ feature voice at Tessera Media Group, two segments away from a Tier 4 anchor seat. She records a long-form piece on Axiom Industries' Z3 expansion at 0712. By 1015 she is in the eighth-floor conference room hearing the words 'wholly owned subsidiary.' By 1119 she is reading the same segment back into the booth with a new title penciled in by Axiom's brand transition liaison. The first thing she loses is not vision. It is the title she chose.",
     Html       = Html(Prose.Chapter1),
 };
 chapters.SaveChapter(ch1);
@@ -358,7 +358,7 @@ She sat down anyway. She opened the white paper draft. She wrote, with the curso
 
 She went home. She did not cook. She drank a glass of cold water from the tap and stood at the balcony and watched the Pulse station's slugs surface and dip at thirty-second intervals. The thrumline was perceptible through the balcony floor. *The city talking to itself.* The Glooms ten kilometers east. The Tier 1 bank she would, in four days, walk into for the first time.
 
-The bank was called Pacific Edge Mutual. It did not advertise. It served the Tier 1 residents the CorpoNations did not. Its lobby was three meters wide and lit by a single yellowed fixture. Its safe-deposit boxes were the smallest size the city's deposit-box industry made. She rented a box for eleven years' prepaid, paid in cash, and gave a name that was not Rhea Adesanya-MacGregor and was not yet Sable.
+The bank was called Pacific Edge Mutual. It did not advertise. It served the Tier 1 residents the CorpoNations did not. Its lobby was three meters wide and lit by a single yellowed fixture. Its safe-deposit boxes were the smallest size the city's deposit-box industry made. She rented a box for eleven years' prepaid, paid in cash, and gave a name that was not Rhea MacGregor and was not yet Sable.
 
 She had spent two days, before walking to the bank, copying the OPTIC-7 document onto thermal paper in a cipher of her own design. The cipher was simple — a transposition with a seed she had memorized at fourteen, from a children's book her grandmother had loved. The transposition would not survive a serious cryptanalytic attack. It would survive a casual one. It would survive long enough for her to be elsewhere by the time anyone found the box.
 
