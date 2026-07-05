@@ -731,6 +731,7 @@
 
     protected override void OnInitialized()
     {
+        locationGuard = Nav.RegisterLocationChangingHandler(OnLocationChanging);
         // Unified-node cutover: /write* routes funnel to /node/{id} now.
         // The migration preserved the Chapter.Id → Node.Id mapping, so a
         // direct hop with the chapter id resolves the same data on the new
