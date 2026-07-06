@@ -194,6 +194,7 @@ public static class ExpandBeatCli
                     StoryBibleContext = storyBible,
                     SceneSoFar        = sceneSoFar.Length > 6000 ? sceneSoFar[^6000..] : sceneSoFar,
                     BeatGoal          = goal,
+                    Subtext           = beat.Subtext ?? "",
                     CharactersInScene = protagonistName != null ? new[] { protagonistName } : Array.Empty<string>(),
                 };
                 var prose = await router.WriteAsync(ctx, beat.Id, beatIndex, ordered.Count);

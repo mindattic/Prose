@@ -185,11 +185,14 @@ public class BeatGeneratorService
               """
             : "";
 
+        var subtextBlock = string.IsNullOrEmpty(context.Subtext) ? "" :
+            $"\n\nSUBTEXT (what is happening beneath the prose — foreshadowing, unspoken motivations, dramatic irony; the reader never sees this):\n{context.Subtext}";
+
         var user = $"""
             SCENE SO FAR:
             {context.SceneSoFar}
 
-            BEAT GOAL: {context.BeatGoal}
+            BEAT GOAL: {context.BeatGoal}{subtextBlock}
 
             Write the next beat of the scene. Voice comes from the POV character's documented
             speech_patterns and psychology — clipped or warm, deflective or direct, depending on
@@ -810,6 +813,11 @@ public record BeatContext
     public string XRayContext { get; init; } = "";
     public string SceneSoFar { get; init; } = "";
     public string BeatGoal { get; init; } = "";
+
+    /// <summary>What is happening beneath the surface of this beat — foreshadowing,
+    /// unspoken motivations, dramatic irony, hidden agendas. Injected as a SUBTEXT
+    /// block in the writer's user message. Empty = omit the block entirely.</summary>
+    public string Subtext { get; init; } = "";
 
     /// <summary>
     /// Node this beat belongs to. When set, BeatGeneratorService injects:

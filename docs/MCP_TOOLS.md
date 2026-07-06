@@ -1063,6 +1063,7 @@ Update a beat's metadata: BeatTitle, Synopsis, EmotionalTone, PaceHint, Structur
 - `beatHandle` (string, required) — Beat Guid OR 'node-guid.beat-guid' handle.
 - `beatTitle` (string, optional) — Short label. When IsChapterStart=true this is the chapter heading; when Kind=quote this is the attribution.
 - `synopsis` (string, optional) — One-line synopsis fed to LLM regenerations.
+- `subtext` (string, optional) — What is happening beneath the prose — foreshadowing, unspoken motivations, dramatic irony. Visible to the prose writer LLM but never printed.
 - `emotionalTone` (string, optional) — Emotional tone, e.g. 'quiet' / 'tense' / 'wry'.
 - `paceHint` (string, optional) — Pace hint, e.g. 'flowing' / 'clipped' / 'staccato' / 'languorous'.
 - `structureRole` (string, optional) — Structure role, e.g. 'inciting-incident' / 'rising-action' / 'climax'.

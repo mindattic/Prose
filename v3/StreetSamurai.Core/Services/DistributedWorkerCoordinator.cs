@@ -175,12 +175,13 @@ public class DistributedWorkerCoordinator
             .OrderBy(sb => sb.NodeId).ThenBy(sb => sb.SortKey)
             .Select(sb => new
             {
-                BeatId     = sb.BeatId,
+                BeatId   = sb.BeatId,
                 NodeId   = sb.NodeId,
-                Slug       = sb.Node!.Slug,
-                Title      = sb.Node.Title,
-                SortKey    = sb.SortKey,
-                Synopsis   = sb.Beat!.Synopsis,
+                Slug     = sb.Node!.Slug,
+                Title    = sb.Node.Title,
+                SortKey  = sb.SortKey,
+                Synopsis = sb.Beat!.Synopsis,
+                Subtext  = sb.Beat.Subtext,
             })
             .ToListAsync(ct);
 
@@ -203,9 +204,10 @@ public class DistributedWorkerCoordinator
                     nodeId   = beat.NodeId.ToString("N"),
                     nodeSlug = beat.Slug ?? "",
                     nodeTitle= beat.Title ?? "",
-                    beatIndex  = i,
-                    totalBeats = total,
-                    beatGoal   = beat.Synopsis ?? "",
+                    beatIndex   = i,
+                    totalBeats  = total,
+                    beatGoal    = beat.Synopsis ?? "",
+                    beatSubtext = beat.Subtext ?? "",
                 });
 
                 db.DistributedWorkQueue.Add(new DistributedWorkQueue

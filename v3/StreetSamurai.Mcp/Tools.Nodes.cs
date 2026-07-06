@@ -408,6 +408,7 @@ public class NodeTools
             is_chapter_start = beat.IsChapterStart,
             beat_title      = beat.BeatTitle,
             synopsis        = beat.Synopsis,
+            subtext         = beat.Subtext,
             structure_role  = beat.StructureRole,
             act             = beat.Act,
             scene_type      = beat.SceneType,
@@ -437,6 +438,7 @@ public class NodeTools
         [Description("Beat Guid OR 'node-guid.beat-guid' handle.")] string beatHandle,
         [Description("Short label. When IsChapterStart=true this is the chapter heading; when Kind=quote this is the attribution.")] string beatTitle = "",
         [Description("One-line synopsis fed to LLM regenerations.")] string synopsis = "",
+        [Description("What is happening beneath the prose — foreshadowing, unspoken motivations, dramatic irony. Visible to the prose writer LLM but never printed.")] string subtext = "",
         [Description("Emotional tone, e.g. 'quiet' / 'tense' / 'wry'.")] string emotionalTone = "",
         [Description("Pace hint, e.g. 'flowing' / 'clipped' / 'staccato' / 'languorous'.")] string paceHint = "",
         [Description("Structure role, e.g. 'inciting-incident' / 'rising-action' / 'climax'.")] string structureRole = "",
@@ -450,6 +452,7 @@ public class NodeTools
         await workbench.UpdateBeatMetadataAsync(bid.Value, new NodeWorkbenchService.BeatMetadataUpdate(
             BeatTitle:      beatTitle,
             Synopsis:       synopsis,
+            Subtext:        subtext,
             EmotionalTone:  emotionalTone,
             PaceHint:       paceHint,
             StructureRole:  structureRole,

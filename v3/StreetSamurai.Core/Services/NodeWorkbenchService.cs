@@ -57,7 +57,8 @@ public class NodeWorkbenchService
         ILogger<NodeWorkbenchService> log,
         SettingsService? settings = null,
         EntityRamificationService? ramification = null,
-        PostBeatValidationService? postBeatValidator = null)
+        PostBeatValidationService? postBeatValidator = null,
+        SemanticFidelityService? semanticFidelity = null)
     {
         this.dbFactory = dbFactory;
         this.tts = tts;
@@ -67,10 +68,12 @@ public class NodeWorkbenchService
         this.log = log;
         this.ramification = ramification;
         this.postBeatValidator = postBeatValidator;
+        this.semanticFidelity = semanticFidelity;
     }
 
     private readonly EntityRamificationService? ramification;
     private readonly PostBeatValidationService? postBeatValidator;
+    private readonly SemanticFidelityService? semanticFidelity;
 
     // ── Reads ────────────────────────────────────────────────────────────
 
@@ -196,14 +199,26 @@ public class NodeWorkbenchService
         // Fire-and-forget: auto-engage prose quality checks. Resolve slug
         // here while the db context is still open; the validator only needs
         // the slug string + text (no DB access in QuickValidateAsync).
-        if (postBeatValidator != null)
+        string? beatSlug = null;
+        if (postBeatValidator != null || semanticFidelity != null)
         {
-            var slug = await db.NodeBeats.AsNoTracking()
+            beatSlug = await db.NodeBeats.AsNoTracking()
                 .Where(sb => sb.BeatId == beatId)
                 .Join(db.Nodes, sb => sb.NodeId, s => s.Id, (_, s) => s.Slug)
                 .FirstOrDefaultAsync(CancellationToken.None);
-            if (slug != null)
-                _ = Task.Run(() => postBeatValidator.QuickValidateAsync(slug, trimmed), CancellationToken.None);
+        }
+
+        if (postBeatValidator != null && beatSlug != null)
+            _ = Task.Run(() => postBeatValidator.QuickValidateAsync(beatSlug, trimmed), CancellationToken.None);
+
+        if (semanticFidelity != null && beatSlug != null && !string.IsNullOrWhiteSpace(beat.Synopsis))
+        {
+            var number   = beat.Number;
+            var slug2    = beatSlug;
+            var synopsis = beat.Synopsis!;
+            _ = Task.Run(
+                () => semanticFidelity.CheckBeatIntentDriftAsync(number, slug2, trimmed, synopsis),
+                CancellationToken.None);
         }
     }
 
@@ -219,6 +234,7 @@ public class NodeWorkbenchService
             ?? throw new InvalidOperationException($"Beat {beatId} not found.");
         beat.BeatTitle      = string.IsNullOrWhiteSpace(update.BeatTitle)     ? null : update.BeatTitle.Trim();
         beat.Synopsis       = string.IsNullOrWhiteSpace(update.Synopsis)      ? null : update.Synopsis.Trim();
+        beat.Subtext        = string.IsNullOrWhiteSpace(update.Subtext)       ? null : update.Subtext.Trim();
         beat.EmotionalTone  = string.IsNullOrWhiteSpace(update.EmotionalTone) ? null : update.EmotionalTone.Trim().ToLowerInvariant();
         beat.PaceHint       = string.IsNullOrWhiteSpace(update.PaceHint)      ? null : update.PaceHint.Trim().ToLowerInvariant();
         beat.StructureRole  = string.IsNullOrWhiteSpace(update.StructureRole) ? null : update.StructureRole.Trim();
@@ -3020,6 +3036,7 @@ public class NodeWorkbenchService
     public record BeatMetadataUpdate(
         string? BeatTitle,
         string? Synopsis,
+        string? Subtext,
         string? EmotionalTone,
         string? PaceHint,
         string? StructureRole,

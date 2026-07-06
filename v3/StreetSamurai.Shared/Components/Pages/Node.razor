@@ -1294,13 +1294,18 @@ else
                             <div class="beat-row-3-bar d-flex justify-content-between align-items-center flex-wrap">
                         <div class="beat-meta-chips">
                             @{
-                                var tone  = b.EmotionalTone;
-                                var pace  = b.PaceHint;
-                                var btitle = b.BeatTitle;
+                                var tone    = b.EmotionalTone;
+                                var pace    = b.PaceHint;
+                                var btitle  = b.BeatTitle;
+                                var subtext = b.Subtext;
                             }
                             @if (!string.IsNullOrEmpty(btitle))
                             {
                                 <span class="beat-meta-chip" @onclick="() => ToggleMeta(bid)" title="Beat title — short label only, not narrated.">📑 @btitle</span>
+                            }
+                            @if (!string.IsNullOrEmpty(subtext))
+                            {
+                                <span class="beat-meta-chip" @onclick="() => ToggleMeta(bid)" title="@subtext">subtext ▸</span>
                             }
                             <span class="beat-meta-chip @(string.IsNullOrEmpty(tone) ? "unset" : "")"
                                   @onclick="() => ToggleMeta(bid)"
@@ -1350,6 +1355,11 @@ else
                                     <div class="col-md-6">
                                         <label>Synopsis (one line — fed to LLM regenerations)</label>
                                         <input class="form-control form-control-sm" @bind="metaForm.Synopsis" placeholder="What is this beat doing?" />
+                                    </div>
+                                    <div class="col-12">
+                                        <label>Subtext (what is happening beneath the prose — foreshadowing, unspoken motivations, dramatic irony; visible to the LLM writer, never printed)</label>
+                                        <textarea class="form-control form-control-sm" rows="2" @bind="metaForm.Subtext"
+                                                  placeholder="e.g. Kyle knows the contact is lying but can't say so yet. Pixel is watching from the feed and recognises the face." style="resize:vertical;"></textarea>
                                     </div>
                                     <div class="col-md-4">
                                         <label>Emotional tone → audio tag</label>
@@ -2501,6 +2511,7 @@ else
         {
             BeatTitle      = beat.BeatTitle ?? "",
             Synopsis       = beat.Synopsis ?? "",
+            Subtext        = beat.Subtext ?? "",
             EmotionalTone  = beat.EmotionalTone ?? "",
             PaceHint       = beat.PaceHint ?? "",
             StructureRole  = beat.StructureRole ?? "",
@@ -2524,6 +2535,7 @@ else
             await Workbench.UpdateBeatMetadataAsync(beatId, new NodeWorkbenchService.BeatMetadataUpdate(
                 BeatTitle:      metaForm.BeatTitle,
                 Synopsis:       metaForm.Synopsis,
+                Subtext:        metaForm.Subtext,
                 EmotionalTone:  metaForm.EmotionalTone,
                 PaceHint:       metaForm.PaceHint,
                 StructureRole:  metaForm.StructureRole,
@@ -2546,6 +2558,7 @@ else
     {
         public string BeatTitle { get; set; } = "";
         public string Synopsis { get; set; } = "";
+        public string Subtext { get; set; } = "";
         public string EmotionalTone { get; set; } = "";
         public string PaceHint { get; set; } = "";
         public string StructureRole { get; set; } = "";

@@ -149,7 +149,7 @@ public static class BeatCli
 
     private static async Task<int> MetaAsync(string[] args, IServiceProvider services)
     {
-        string? beatIdStr = null, title = null, kind = null, synopsis = null, tone = null, pace = null, role = null, sceneType = null;
+        string? beatIdStr = null, title = null, kind = null, synopsis = null, subtext = null, tone = null, pace = null, role = null, sceneType = null;
         int act = 0;
         bool chapterStart = false;
         for (int i = 0; i < args.Length; i++)
@@ -160,6 +160,7 @@ public static class BeatCli
                 case "--title":         if (i + 1 < args.Length) title = args[++i]; break;
                 case "--kind":          if (i + 1 < args.Length) kind = args[++i]; break;
                 case "--synopsis":      if (i + 1 < args.Length) synopsis = args[++i]; break;
+                case "--subtext":       if (i + 1 < args.Length) subtext = args[++i]; break;
                 case "--tone":          if (i + 1 < args.Length) tone = args[++i]; break;
                 case "--pace":          if (i + 1 < args.Length) pace = args[++i]; break;
                 case "--role":          if (i + 1 < args.Length) role = args[++i]; break;
@@ -172,7 +173,7 @@ public static class BeatCli
         if (!Guid.TryParse(beatIdStr, out var beatId)) { Console.Error.WriteLine("[beat meta] --id must be a GUID."); return 1; }
 
         var workbench = services.GetRequiredService<NodeWorkbenchService>();
-        var update = new NodeWorkbenchService.BeatMetadataUpdate(title, synopsis, tone, pace, role, act, sceneType, chapterStart, kind);
+        var update = new NodeWorkbenchService.BeatMetadataUpdate(title, synopsis, subtext, tone, pace, role, act, sceneType, chapterStart, kind);
         await workbench.UpdateBeatMetadataAsync(beatId, update);
         Console.WriteLine($"[beat meta] Beat {beatId} metadata updated.");
         return 0;

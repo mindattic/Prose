@@ -526,6 +526,7 @@ public class NodeWorkbenchServiceTests
         await svc.UpdateBeatMetadataAsync(b.Id, new NodeWorkbenchService.BeatMetadataUpdate(
             BeatTitle:      "1. The thing that happened",
             Synopsis:       null,
+            Subtext:        null,
             EmotionalTone:  null,
             PaceHint:       null,
             StructureRole:  null,
@@ -550,6 +551,7 @@ public class NodeWorkbenchServiceTests
         await svc.UpdateBeatMetadataAsync(b.Id, new NodeWorkbenchService.BeatMetadataUpdate(
             BeatTitle:      "Bill Coolman",
             Synopsis:       null,
+            Subtext:        null,
             EmotionalTone:  null,
             PaceHint:       null,
             StructureRole:  null,
@@ -579,6 +581,7 @@ public class NodeWorkbenchServiceTests
         await svc.UpdateBeatMetadataAsync(b.Id, new NodeWorkbenchService.BeatMetadataUpdate(
             BeatTitle:      null,
             Synopsis:       null,
+            Subtext:        null,
             EmotionalTone:  null,
             PaceHint:       null,
             StructureRole:  null,

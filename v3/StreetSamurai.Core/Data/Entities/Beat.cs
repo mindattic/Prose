@@ -70,6 +70,12 @@ public class Beat
     /// and ElevenLabs tone direction.</summary>
     public string? Synopsis { get; set; }
 
+    /// <summary>What is happening beneath the surface of this beat —
+    /// foreshadowing, unspoken motivations, dramatic irony, hidden agendas.
+    /// Visible to the prose writer LLM but never printed; it informs the
+    /// writing without appearing in the final text.</summary>
+    public string? Subtext { get; set; }
+
     /// <summary>Story-structure role: "inciting-incident" / "rising-action"
     /// / "climax" / "denouement" / "transition" / "scene-break". Free-form.</summary>
     public string? StructureRole { get; set; }

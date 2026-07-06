@@ -286,8 +286,9 @@ public static class WorkerModeCli
         var nodeSlug = root.GetProperty("nodeSlug").GetString()!;
         var beatIndex  = root.GetProperty("beatIndex").GetInt32();
         var totalBeats = root.GetProperty("totalBeats").GetInt32();
-        var beatGoal   = root.GetProperty("beatGoal").GetString()!;
-        var beatSeed   = root.GetProperty("beatSeed").GetString() ?? "";
+        var beatGoal    = root.GetProperty("beatGoal").GetString()!;
+        var beatSubtext = root.TryGetProperty("beatSubtext", out var bsEl) ? bsEl.GetString() ?? "" : "";
+        var beatSeed    = root.GetProperty("beatSeed").GetString() ?? "";
 
         // If the coordinator baked full prompts, use them; otherwise build a lightweight version.
         string sysPrompt, userMsg;
@@ -298,11 +299,14 @@ public static class WorkerModeCli
         }
         else
         {
+            var subtextSection = string.IsNullOrWhiteSpace(beatSubtext) ? "" :
+                $"SUBTEXT (what is happening beneath the prose — foreshadowing, unspoken motivations, dramatic irony; the reader never sees this):\n{beatSubtext}\n\n";
             sysPrompt = "You are a professional cyberpunk fiction author (2225 GLMZ setting). " +
                         "Write vivid, grounded prose. Close-third POV. No purple prose. Voice is dry, precise, layered.";
             userMsg   = $"NODE: {nodeSlug}\n" +
                         $"Beat {beatIndex + 1} of {totalBeats}\n\n" +
                         $"GOAL: {beatGoal}\n\n" +
+                        subtextSection +
                         (string.IsNullOrWhiteSpace(beatSeed) ? "" : $"SEED NOTES:\n{beatSeed}\n\n") +
                         "Write the full scene for this beat. 600-900 words.";
         }

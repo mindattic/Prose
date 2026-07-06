@@ -406,6 +406,7 @@ public static class RunCorpusCli
                 StoryBibleContext = storyBible,
                 SceneSoFar        = sceneSoFar.Length > 6000 ? sceneSoFar[^6000..] : sceneSoFar,
                 BeatGoal          = goal,
+                Subtext           = beat.Subtext ?? "",
             };
 
             var prose = await router.WriteAsync(ctx, beat.Id, beatIndex, ordered.Count);
