@@ -11,6 +11,7 @@
 @inject StreetSamurai.Core.Services.ContinuityService Continuity
 @inject StreetSamurai.Core.Services.IUniverseContext Universe
 @inject StreetSamurai.Core.Services.AppLinks Links
+@inject TabService TabSvc
 
 <div class="app-banner">
 
@@ -61,42 +62,9 @@
                     </div>
                     <div class="ab-menu-divider"></div>
 
-                    <button class="ab-menu-item" @onclick="OpenSearchAndClose">
-                        <i class="bi bi-search"></i><span>Search</span>
-                    </button>
-                    <a class="ab-menu-item" href="@Links.Writer("/listen")" @onclick="CloseMenu">
-                        <i class="bi bi-headphones"></i><span>Listen</span>
-                    </a>
-                    <AuthorizeView Policy="@MaPolicies.Admin">
-                        <a class="ab-menu-item" href="@Links.Writer("/write")" @onclick="CloseMenu">
-                            <i class="bi bi-pencil-square"></i><span>Write</span>
-                        </a>
-                        <a class="ab-menu-item" href="@Links.Writer("/nodes")" @onclick="CloseMenu">
-                            <i class="bi bi-journal-text"></i><span>Nodes</span>
-                        </a>
-                        <a class="ab-menu-item" href="@Links.Writer("/findings")" @onclick="CloseMenu">
-                            <i class="bi bi-inbox"></i><span>Inbox</span>
-                            @if (inboxCount > 0)
-                            {
-                                <span class="badge bg-warning text-dark ms-auto">@inboxCount</span>
-                            }
-                        </a>
-                        <a class="ab-menu-item" href="@Links.Codex("/")" @onclick="CloseMenu">
-                            <i class="bi bi-collection"></i><span>Codex</span>
-                        </a>
-                        <a class="ab-menu-item" href="@Links.Codex("/voice")" @onclick="CloseMenu">
-                            <i class="bi bi-broadcast"></i><span>Voice Log</span>
-                        </a>
-                        <a class="ab-menu-item" href="@Links.Codex("/coverage")" @onclick="CloseMenu">
-                            <i class="bi bi-grid-3x3-gap"></i><span>Coverage</span>
-                        </a>
-                        <a class="ab-menu-item" href="@Links.Codex("/species")" @onclick="CloseMenu">
-                            <i class="bi bi-diagram-3"></i><span>Species</span>
-                        </a>
-                    </AuthorizeView>
-                    <a class="ab-menu-item" href="/settings" @onclick="CloseMenu">
+                    <button class="ab-menu-item" @onclick="OpenSettingsTab">
                         <i class="bi bi-gear"></i><span>Settings</span>
-                    </a>
+                    </button>
 
                     <div class="ab-menu-divider"></div>
                     <form method="post" action="/_ma-auth/logout" class="ab-menu-logout">
@@ -127,6 +95,12 @@
     private void ToggleMenu() => menuOpen = !menuOpen;
     private void CloseMenu() => menuOpen = false;
     private async Task OpenSearchAndClose() { menuOpen = false; await OpenSearch(); }
+    private void OpenSettingsTab()
+    {
+        menuOpen = false;
+        TabSvc.Open(new AppTab("settings", "Settings", "bi-gear", "/settings"));
+        Nav.NavigateTo("/settings");
+    }
 
     // ── Search ────────────────────────────────────────────────────────────
     private string searchInput = "";
