@@ -41,13 +41,9 @@
             {
                 <div class="ab-menu-backdrop" @onclick="CloseMenu"></div>
             }
-            <button class="topnav-link ab-menu-trigger position-relative @(menuOpen ? "open" : "")"
-                    type="button" @onclick="ToggleMenu" title="@(inboxCount > 0 ? inboxTooltip : "Menu")">
+            <button class="topnav-link ab-menu-trigger @(menuOpen ? "open" : "")"
+                    type="button" @onclick="ToggleMenu" title="Menu">
                 <i class="bi bi-list"></i>
-                @if (inboxCount > 0)
-                {
-                    <span class="badge bg-warning text-dark inbox-count start-100 translate-middle">@inboxCount</span>
-                }
             </button>
 
             @if (menuOpen)
