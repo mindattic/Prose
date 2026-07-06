@@ -1,4 +1,4 @@
-using System.ComponentModel;
+﻿using System.ComponentModel;
 using System.Text.Json;
 using Microsoft.EntityFrameworkCore;
 using ModelContextProtocol.Server;
@@ -291,7 +291,7 @@ public class WorldModellingTools(
             .Select(s => s.Slug)
             .FirstOrDefaultAsync() ?? nodeId.ToString();
 
-        var beats = await db.NodeBeats.AsNoTracking()
+        var beats = await db.BeatNodes.AsNoTracking()
             .Where(sb => sb.NodeId == nodeId)
             .Join(db.Beats, sb => sb.BeatId, b => b.Id, (sb, b) => new { b.Id, b.Number, b.Text })
             .OrderBy(b => b.Number)

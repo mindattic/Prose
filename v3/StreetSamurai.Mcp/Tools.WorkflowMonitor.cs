@@ -1,4 +1,4 @@
-using System.ComponentModel;
+﻿using System.ComponentModel;
 using System.Text.Json;
 using Microsoft.EntityFrameworkCore;
 using ModelContextProtocol.Server;
@@ -51,7 +51,7 @@ public class WorkflowMonitorTools(
             .FirstOrDefaultAsync();
         if (node == null) return $"Node not found: {slug}";
 
-        var beatIds = await db.NodeBeats.AsNoTracking()
+        var beatIds = await db.BeatNodes.AsNoTracking()
             .Where(sb => sb.NodeId == node.Id)
             .Select(sb => sb.BeatId)
             .ToListAsync();

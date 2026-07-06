@@ -36,8 +36,8 @@
     .node-head { position: sticky; top: 0; z-index: 5; background: rgba(15,15,15,0.95); backdrop-filter: blur(6px); border-bottom: 1px solid #2a2a2a; padding: 0.75rem 0; margin-bottom: 1rem; }
     .node-title { background: transparent; border: none; color: #f8f9fa; font-size: 1.5rem; font-weight: 600; padding: 0; outline: none; }
     .node-title:focus { box-shadow: none; border-bottom: 2px solid #0dcaf0; }
-    .node-synopsis { background: transparent; border: none; color: #adb5bd; font-size: 0.9rem; resize: none; padding: 0; outline: none; width: 100%; }
-    .node-synopsis:focus { color: #ced4da; }
+    .node-description { background: transparent; border: none; color: #adb5bd; font-size: 0.9rem; resize: none; padding: 0; outline: none; width: 100%; }
+    .node-description:focus { color: #ced4da; }
     .bible-panel { background: #0d1117; border: 1px solid #2a2a2a; border-radius: 6px; padding: 0.75rem 1rem; margin-top: 0.5rem; }
     .bible-panel pre { white-space: pre-wrap; word-break: break-word; font-size: 0.82rem; color: #adb5bd; margin: 0; }
     .bible-toggle { font-size: 0.8rem; color: #6c757d; cursor: pointer; user-select: none; }
@@ -151,7 +151,7 @@
     .scn-title { font-size: 0.92rem; font-weight: 500; flex-grow: 1; }
     .scn-status { font-size: 0.6rem; flex-shrink: 0; }
     .scn-arrow { color: #495057; font-size: 1.1rem; flex-shrink: 0; }
-    .scn-synopsis { font-size: 0.78rem; color: #8b949e; margin-left: 0.2rem; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; max-width: 40ch; }
+    .scn-description { font-size: 0.78rem; color: #8b949e; margin-left: 0.2rem; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; max-width: 40ch; }
     .beat-gap-inline { display: inline-flex; gap: 0.4rem; align-items: center; font-size: 0.72rem; color: #adb5bd; }
     .beat-gap-inline.custom { color: #ffc107; }
     .beat-gap-input { width: 70px; background: #161616; color: #f8f9fa; border: 1px solid #2a2a2a; padding: 0 0.3rem; font-size: 0.72rem; border-radius: 3px; }
@@ -349,9 +349,9 @@ else
                             <i class="bi @(copiedGuid == node.Id ? "bi-check-lg" : "bi-clipboard")"></i>
                         </button>
                     </div>
-                    <textarea class="node-synopsis mt-1" rows="5" placeholder="Synopsis (optional)"
+                    <textarea class="node-description mt-1" rows="5" placeholder="Description (optional)"
                               style="width:100%; resize:none; overflow-y:auto;"
-                              @bind="node.Synopsis" @bind:event="oninput" @onblur="SaveNodeHeaderAsync"></textarea>
+                              @bind="node.Description" @bind:event="oninput" @onblur="SaveNodeHeaderAsync"></textarea>
 
                     @* ── Node Bible ── *@
                     <div class="mt-2">
@@ -912,9 +912,9 @@ else
                         <a href="/node/@child.Slug" class="node-children-nav-item">
                             <span class="badge bg-secondary text-uppercase scn-kind">@child.Kind</span>
                             <span class="scn-title">@child.Title</span>
-                            @if (!string.IsNullOrWhiteSpace(child.Synopsis))
+                            @if (!string.IsNullOrWhiteSpace(child.Description))
                             {
-                                <span class="scn-synopsis" title="@child.Synopsis">@child.Synopsis</span>
+                                <span class="scn-description" title="@child.Description">@child.Description</span>
                             }
                             @if (child.Score.HasValue)
                             {
@@ -956,7 +956,7 @@ else
                 tocEntries = beats
                     .Where(b => b.Beat.IsChapterStart)
                     .Select(b => (
-                        Label: string.IsNullOrEmpty(b.Beat.BeatTitle) ? "(untitled chapter)" : b.Beat.BeatTitle,
+                        Label: string.IsNullOrEmpty(b.Beat.Title) ? "(untitled chapter)" : b.Beat.Title,
                         BeatId: (Guid?)b.Beat.Id,
                         Href: (string?)null))
                     .ToList();
@@ -1067,7 +1067,7 @@ else
                     {
                         <div class="beat-chapter-divider" data-cy="chapter-divider">
                             <span class="beat-chapter-line"></span>
-                            <span class="beat-chapter-label">@(string.IsNullOrEmpty(b.BeatTitle) ? "New section" : b.BeatTitle)</span>
+                            <span class="beat-chapter-label">@(string.IsNullOrEmpty(b.Title) ? "New section" : b.Title)</span>
                             <span class="beat-chapter-line"></span>
                         </div>
                     }
@@ -1296,7 +1296,7 @@ else
                             @{
                                 var tone    = b.EmotionalTone;
                                 var pace    = b.PaceHint;
-                                var btitle  = b.BeatTitle;
+                                var btitle  = b.Title;
                                 var subtext = b.Subtext;
                             }
                             @if (!string.IsNullOrEmpty(btitle))
@@ -1349,12 +1349,12 @@ else
                             <div class="beat-meta-panel">
                                 <div class="row g-2">
                                     <div class="col-md-6">
-                                        <label>Beat title (label only — not narrated)</label>
-                                        <input class="form-control form-control-sm" @bind="metaForm.BeatTitle" placeholder="e.g. The threshold" />
+                                        <label>Title (label only — not narrated)</label>
+                                        <input class="form-control form-control-sm" @bind="metaForm.Title" placeholder="e.g. The threshold" />
                                     </div>
                                     <div class="col-md-6">
-                                        <label>Synopsis (one line — fed to LLM regenerations)</label>
-                                        <input class="form-control form-control-sm" @bind="metaForm.Synopsis" placeholder="What is this beat doing?" />
+                                        <label>Description (one line — fed to LLM regenerations)</label>
+                                        <input class="form-control form-control-sm" @bind="metaForm.Description" placeholder="What is this beat doing?" />
                                     </div>
                                     <div class="col-12">
                                         <label>Subtext (what is happening beneath the prose — foreshadowing, unspoken motivations, dramatic irony; visible to the LLM writer, never printed)</label>
@@ -1642,7 +1642,7 @@ else
                     PersonaLibrary.GetProfile(g.Key)?.Summary(), history);
             })
             .ToList();
-        var title = string.IsNullOrEmpty(b.BeatTitle) ? $"Beat #{positional}" : $"Beat #{positional} — {b.BeatTitle}";
+        var title = string.IsNullOrEmpty(b.Title) ? $"Beat #{positional}" : $"Beat #{positional} — {b.Title}";
         reviewModalTitle = $"{title} · micro-reviews";
         reviewModalMax = 5; reviewModalSuffix = "/5";
         reviewsOpen = true;
@@ -2408,7 +2408,7 @@ else
             return;
         }
         s.Title = node.Title;
-        s.Synopsis = node.Synopsis;
+        s.Description = node.Description;
         s.VoiceId = node.VoiceId;
         s.TtsEngine = (selectedEngine == "elevenlabs" || selectedEngine == "webspeech") ? null : selectedEngine;
         s.UpdatedAt = DateTime.UtcNow;
@@ -2509,8 +2509,8 @@ else
         if (beat == null) return;
         metaForm = new MetaForm
         {
-            BeatTitle      = beat.BeatTitle ?? "",
-            Synopsis       = beat.Synopsis ?? "",
+            Title          = beat.Title ?? "",
+            Description    = beat.Description ?? "",
             Subtext        = beat.Subtext ?? "",
             EmotionalTone  = beat.EmotionalTone ?? "",
             PaceHint       = beat.PaceHint ?? "",
@@ -2533,8 +2533,8 @@ else
         try
         {
             await Workbench.UpdateBeatMetadataAsync(beatId, new NodeWorkbenchService.BeatMetadataUpdate(
-                BeatTitle:      metaForm.BeatTitle,
-                Synopsis:       metaForm.Synopsis,
+                Title:          metaForm.Title,
+                Description:    metaForm.Description,
                 Subtext:        metaForm.Subtext,
                 EmotionalTone:  metaForm.EmotionalTone,
                 PaceHint:       metaForm.PaceHint,
@@ -2556,8 +2556,8 @@ else
     /// changes without touching the DB.</summary>
     private class MetaForm
     {
-        public string BeatTitle { get; set; } = "";
-        public string Synopsis { get; set; } = "";
+        public string Title { get; set; } = "";
+        public string Description { get; set; } = "";
         public string Subtext { get; set; } = "";
         public string EmotionalTone { get; set; } = "";
         public string PaceHint { get; set; } = "";
@@ -2839,10 +2839,10 @@ else
     private async Task GenerateBibleAsync()
     {
         if (node == null || bibleGenerating) return;
-        var seed = node.Seed ?? node.Synopsis ?? node.Title;
+        var seed = node.Seed ?? node.Description ?? node.Title;
         if (string.IsNullOrWhiteSpace(seed))
         {
-            Toast.Info("BIBLE", "Set a Seed or Synopsis before generating the bible.");
+            Toast.Info("BIBLE", "Set a Seed or Description before generating the bible.");
             return;
         }
 

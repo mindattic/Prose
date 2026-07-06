@@ -1,4 +1,4 @@
-using System.Net.Http.Json;
+﻿using System.Net.Http.Json;
 using System.Security.Cryptography;
 using System.Text;
 using System.Text.Json;
@@ -36,7 +36,7 @@ public class EmbeddingService
     /// <summary>ProseEmbeddings ScopeKind for a node beat (Beat.Id keyed). Distinct
     /// from 'beat' (which keys ChapterBeat.BeatGuid) so the two content models
     /// never collide in the polymorphic prose table.</summary>
-    private const string ScopeNodeBeat = "nodebeat";
+    private const string ScopeBeatNode = "BeatNode";
 
     private readonly IDbContextFactory<StreetSamuraiDbContext> dbFactory;
     private readonly SettingsService settings;
@@ -298,30 +298,30 @@ public class EmbeddingService
 
     /// <summary>
     /// Embed the enabled beats of one node into <c>ProseEmbeddings</c> under
-    /// the <see cref="ScopeNodeBeat"/> scope (keyed on <c>Beat.Id</c>). This
+    /// the <see cref="ScopeBeatNode"/> scope (keyed on <c>Beat.Id</c>). This
     /// is the live node/Beats model — distinct from <see cref="ReembedProseCorpusAsync"/>,
     /// which embeds the older Chapter/ChapterBeat model. Drift-skipped; returns
     /// the count newly (re)embedded. Cheap: a novella is a few cents.
     /// </summary>
-    public async Task<int> ReembedNodeBeatsAsync(Guid nodeId, CancellationToken ct = default)
+    public async Task<int> ReembedBeatNodesAsync(Guid nodeId, CancellationToken ct = default)
     {
         await EnsureSchemaOnceAsync(ct);
         await using var db = await dbFactory.CreateDbContextAsync(ct);
 
-        var beats = await (from sb in db.NodeBeats.AsNoTracking()
+        var beats = await (from sb in db.BeatNodes.AsNoTracking()
                            join b in db.Beats.AsNoTracking() on sb.BeatId equals b.Id
                            where sb.NodeId == nodeId && sb.IsEnabled
                            orderby sb.SortKey
-                           select new { b.Id, b.BeatTitle, b.Synopsis, b.Text }).ToListAsync(ct);
+                           select new { b.Id, b.Title, b.Description, b.Text }).ToListAsync(ct);
         if (beats.Count == 0) return 0;
 
         var prepped = beats
-            .Select(b => { var t = BuildBeatSourceText(b.BeatTitle, b.Synopsis, b.Text); return (b.Id, Text: t, Hash: Hash(t)); })
+            .Select(b => { var t = BuildBeatSourceText(b.Title, b.Description, b.Text); return (b.Id, Text: t, Hash: Hash(t)); })
             .Where(p => !string.IsNullOrWhiteSpace(p.Text))
             .ToList();
 
         var existing = await db.ProseEmbeddings.AsNoTracking()
-            .Where(x => x.ScopeKind == ScopeNodeBeat)
+            .Where(x => x.ScopeKind == ScopeBeatNode)
             .Select(x => new { x.ScopeId, x.SourceHash })
             .ToListAsync(ct);
         var existingDict = existing.ToDictionary(x => x.ScopeId, x => x.SourceHash);
@@ -349,7 +349,7 @@ public class EmbeddingService
             {
                 var v = vectors[i];
                 if (v.Length == 0) continue;
-                await UpsertProseVectorRawAsync(batchDb, ScopeNodeBeat, slice[i].Id, slice[i].Hash, v, ct);
+                await UpsertProseVectorRawAsync(batchDb, ScopeBeatNode, slice[i].Id, slice[i].Hash, v, ct);
                 touched++;
             }
         }
@@ -359,9 +359,9 @@ public class EmbeddingService
     /// <summary>
     /// Top-<paramref name="k"/> node beats most similar to <paramref name="queryText"/>,
     /// optionally restricted to a single node. Only enabled beats are searched
-    /// (the NodeBeats join filters soft-deletes). Returns hits keyed on Beat.Id.
+    /// (the BeatNodes join filters soft-deletes). Returns hits keyed on Beat.Id.
     /// </summary>
-    public async Task<IReadOnlyList<ProseEmbeddingHit>> FindSimilarNodeBeatsAsync(
+    public async Task<IReadOnlyList<ProseEmbeddingHit>> FindSimilarBeatNodesAsync(
         string queryText, int k = 6, Guid? nodeScope = null, CancellationToken ct = default)
     {
         if (string.IsNullOrWhiteSpace(queryText)) return Array.Empty<ProseEmbeddingHit>();
@@ -372,7 +372,7 @@ public class EmbeddingService
         var queryJson = JsonSerializer.Serialize(queryVector);
 
         // Pull 2x then dedupe in C# — a beat can live in more than one node,
-        // so the NodeBeats join can surface the same Beat.Id twice.
+        // so the BeatNodes join can surface the same Beat.Id twice.
         var parameters = new List<Microsoft.Data.SqlClient.SqlParameter>
         {
             new("@p_k", Math.Max(1, k) * 2),
@@ -391,8 +391,8 @@ public class EmbeddingService
                 pe.ScopeId AS ScopeId,
                 1.0 - VECTOR_DISTANCE('cosine', pe.Vector, CAST(@p_query AS VECTOR(1536))) AS Similarity
             FROM dbo.ProseEmbeddings pe
-            JOIN dbo.NodeBeats sb ON sb.BeatId = pe.ScopeId AND sb.IsEnabled = 1
-            WHERE pe.ScopeKind = '{ScopeNodeBeat}'
+            JOIN dbo.BeatNodes sb ON sb.BeatId = pe.ScopeId AND sb.IsEnabled = 1
+            WHERE pe.ScopeKind = '{ScopeBeatNode}'
               AND (@p_universe = '00000000-0000-0000-0000-000000000000' OR pe.UniverseId = @p_universe){scopeFilter}
             ORDER BY VECTOR_DISTANCE('cosine', pe.Vector, CAST(@p_query AS VECTOR(1536))) ASC;
             """;
@@ -403,7 +403,7 @@ public class EmbeddingService
         return rows
             .GroupBy(r => r.ScopeId).Select(g => g.First())
             .Take(Math.Max(1, k))
-            .Select(r => new ProseEmbeddingHit(ScopeNodeBeat, r.ScopeId, r.Similarity))
+            .Select(r => new ProseEmbeddingHit(ScopeBeatNode, r.ScopeId, r.Similarity))
             .ToList();
     }
 
@@ -827,9 +827,68 @@ public class EmbeddingService
     /// Send a batch of texts to OpenAI in a single request. Returns vectors in
     /// the input order. Empty array on full-batch failure (caller logs).
     /// </summary>
+    private async Task<float[]> EmbedLocalAsync(string text, CancellationToken ct)
+    {
+        var url   = settings.LocalEmbeddingBaseUrl;
+        var key   = settings.LocalEmbeddingApiKey;
+        var model = settings.LocalEmbeddingModel;
+        var http  = httpFactory.CreateClient(nameof(EmbeddingService) + "Local");
+        http.Timeout = TimeSpan.FromSeconds(60);
+        var req = new HttpRequestMessage(HttpMethod.Post, url)
+        {
+            Content = JsonContent.Create(new EmbeddingRequest(text, model)),
+        };
+        if (!string.IsNullOrWhiteSpace(key))
+            req.Headers.Authorization = new System.Net.Http.Headers.AuthenticationHeaderValue("Bearer", key);
+        try
+        {
+            var resp = await http.SendAsync(req, ct);
+            if (!resp.IsSuccessStatusCode)
+            {
+                var body = await resp.Content.ReadAsStringAsync(ct);
+                log.LogWarning("Local embedding {Code}: {Body}", (int)resp.StatusCode, Truncate(body, 400));
+                return Array.Empty<float>();
+            }
+            var payload = await resp.Content.ReadFromJsonAsync<EmbeddingResponse>(cancellationToken: ct);
+            return payload?.Data?.FirstOrDefault()?.Embedding ?? Array.Empty<float>();
+        }
+        catch (Exception ex)
+        {
+            log.LogWarning(ex, "Local embedding call failed");
+            return Array.Empty<float>();
+        }
+    }
+
+    private async Task<float[][]> EmbedBatchLocalAsync(IReadOnlyList<string> texts, CancellationToken ct)
+    {
+        var url   = settings.LocalEmbeddingBaseUrl;
+        var key   = settings.LocalEmbeddingApiKey;
+        var model = settings.LocalEmbeddingModel;
+        var http  = httpFactory.CreateClient(nameof(EmbeddingService) + "Local");
+        http.Timeout = TimeSpan.FromSeconds(120);
+        var req = new HttpRequestMessage(HttpMethod.Post, url)
+        {
+            Content = JsonContent.Create(new BatchEmbeddingRequest(texts.ToArray(), model)),
+        };
+        if (!string.IsNullOrWhiteSpace(key))
+            req.Headers.Authorization = new System.Net.Http.Headers.AuthenticationHeaderValue("Bearer", key);
+        var resp = await http.SendAsync(req, ct);
+        if (!resp.IsSuccessStatusCode)
+        {
+            var body = await resp.Content.ReadAsStringAsync(ct);
+            log.LogWarning("Local batch embedding {Code}: {Body}", (int)resp.StatusCode, Truncate(body, 400));
+            return Array.Empty<float[]>();
+        }
+        var payload = await resp.Content.ReadFromJsonAsync<EmbeddingResponse>(cancellationToken: ct);
+        if (payload?.Data == null) return Array.Empty<float[]>();
+        return payload.Data.OrderBy(d => d.Index).Select(d => d.Embedding).ToArray();
+    }
+
     private async Task<float[][]> EmbedBatchAsync(IReadOnlyList<string> texts, CancellationToken ct)
     {
         if (texts.Count == 0) return Array.Empty<float[]>();
+        if (!string.IsNullOrWhiteSpace(settings.LocalEmbeddingBaseUrl))
+            return await EmbedBatchLocalAsync(texts, ct);
         var key = settings.OpenAiApiKey;
         if (string.IsNullOrWhiteSpace(key))
         {
@@ -868,6 +927,8 @@ public class EmbeddingService
 
     private async Task<float[]> EmbedAsync(string text, CancellationToken ct)
     {
+        if (!string.IsNullOrWhiteSpace(settings.LocalEmbeddingBaseUrl))
+            return await EmbedLocalAsync(text, ct);
         var key = settings.OpenAiApiKey;
         if (string.IsNullOrWhiteSpace(key))
         {

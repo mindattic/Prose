@@ -1,6 +1,7 @@
 using System.Net.Http.Headers;
 using System.Text;
 using System.Text.Json;
+using System.Text.RegularExpressions;
 
 namespace StreetSamurai.Core.Services.Local;
 
@@ -28,6 +29,12 @@ public sealed class LocalReviewLlm : IReviewLlm
         this.http = http;
         this.settings = settings;
     }
+
+    // vLLM/RunPod context-overflow 400: the error body contains the exact token counts.
+    // Parse them so we can retry with the correct output cap — no char/token approximation.
+    private static readonly Regex ContextOverflow = new(
+        @"maximum context length is (?<limit>\d+) tokens.*?contains at least (?<input>\d+) input tokens",
+        RegexOptions.Singleline | RegexOptions.Compiled);
 
     public async Task<string> CallAsync(
         string providerId, string apiKey, string model,
@@ -68,6 +75,37 @@ public sealed class LocalReviewLlm : IReviewLlm
                 var json = await res.Content.ReadAsStringAsync(ct);
                 if (!res.IsSuccessStatusCode)
                 {
+                    // Context-overflow (400): the API reports the exact input token count.
+                    // Use it to compute the correct output cap and retry once — exact math,
+                    // no approximation needed.
+                    if (res.StatusCode == System.Net.HttpStatusCode.BadRequest)
+                    {
+                        var m = ContextOverflow.Match(json);
+                        if (m.Success
+                            && int.TryParse(m.Groups["limit"].Value, out var ctxLimit)
+                            && int.TryParse(m.Groups["input"].Value, out var inputToks))
+                        {
+                            var safeOut = Math.Max(64, ctxLimit - inputToks - 1);
+                            var retryPayload = new { model = tag, max_tokens = safeOut, temperature, messages };
+                            using var rq2 = new HttpRequestMessage(HttpMethod.Post, endpoint);
+                            rq2.Headers.Authorization = new AuthenticationHeaderValue("Bearer", bearer);
+                            rq2.Content = new StringContent(JsonSerializer.Serialize(retryPayload), Encoding.UTF8, "application/json");
+                            using var rs2 = await http.SendAsync(rq2, ct);
+                            json = await rs2.Content.ReadAsStringAsync(ct);
+                            if (rs2.IsSuccessStatusCode)
+                            {
+                                using var d2 = JsonDocument.Parse(json);
+                                if (d2.RootElement.TryGetProperty("choices", out var c2)
+                                    && c2.ValueKind == JsonValueKind.Array && c2.GetArrayLength() > 0
+                                    && c2[0].TryGetProperty("message", out var m2)
+                                    && m2.TryGetProperty("content", out var cv2))
+                                    return StripThinkBlocks(cv2.GetString() ?? "");
+                                return "";
+                            }
+                            // retry also failed — fall through to throw with the retry error body
+                        }
+                    }
+
                     var snippet = json.Length > 1024 ? json[..1024] : json;
                     throw new HttpRequestException(
                         $"Local LLM at {endpoint} returned {(int)res.StatusCode} {res.ReasonPhrase}: {snippet}",
@@ -80,10 +118,14 @@ public sealed class LocalReviewLlm : IReviewLlm
                     && choices.ValueKind == JsonValueKind.Array && choices.GetArrayLength() > 0
                     && choices[0].TryGetProperty("message", out var message)
                     && message.TryGetProperty("content", out var content))
-                    return content.GetString() ?? "";
+                    return StripThinkBlocks(content.GetString() ?? "");
                 return "";
             }
             catch (OperationCanceledException) when (ct.IsCancellationRequested) { throw; }
+            catch (HttpRequestException ex) when (ex.StatusCode.HasValue && (int)ex.StatusCode.Value is >= 400 and < 500)
+            {
+                throw; // 4xx = permanent failure; retrying won't help
+            }
             catch (Exception ex)
             {
                 last = ex;
@@ -97,4 +139,9 @@ public sealed class LocalReviewLlm : IReviewLlm
             $"Local LLM at {endpoint} is unreachable after {maxAttempts} attempts. " +
             $"Is Ollama running? (start it with `ollama serve`). Last error: {last?.Message}", last);
     }
+
+    // Qwen3 and other "thinking" models prepend <think>…</think> before the answer.
+    // Strip it so ballot parsers see clean output regardless of model variant.
+    private static string StripThinkBlocks(string text) =>
+        Regex.Replace(text, @"<think>[\s\S]*?</think>", "", RegexOptions.IgnoreCase).TrimStart();
 }

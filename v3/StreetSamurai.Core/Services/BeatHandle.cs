@@ -1,10 +1,10 @@
-namespace StreetSamurai.Core.Services;
+﻿namespace StreetSamurai.Core.Services;
 
 /// <summary>
 /// The dotted "node-guid.beat-guid" handle the writer UI shows on the
 /// LLM bottom sheet, surfaced over the MCP layer for chat-side authoring.
 /// Plain Guid (beat-only) is also accepted — the node id is recovered
-/// from the NodeBeat junction at call time.
+/// from the BeatNode junction at call time.
 ///
 /// Single source of truth so the CLI / MCP tools and the unit-test layer
 /// share one parser. Keep the handle format change here if it ever moves.

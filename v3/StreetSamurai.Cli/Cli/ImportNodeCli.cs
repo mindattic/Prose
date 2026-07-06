@@ -115,7 +115,7 @@ public static class ImportNodeCli
             var b = parsed.Beats[i];
             var preview = b.Text.Length > 60 ? b.Text[..60].Replace('\n', ' ') + "…" : b.Text.Replace('\n', ' ');
             var meta = new List<string>();
-            if (!string.IsNullOrEmpty(b.BeatTitle)) meta.Add($"title=\"{b.BeatTitle}\"");
+            if (!string.IsNullOrEmpty(b.Title)) meta.Add($"title=\"{b.Title}\"");
             if (b.IsChapterStart) meta.Add("chapter-start");
             if (!string.IsNullOrEmpty(b.EmotionalTone)) meta.Add($"tone={b.EmotionalTone}");
             if (!string.IsNullOrEmpty(b.PaceHint)) meta.Add($"pace={b.PaceHint}");
@@ -158,7 +158,7 @@ public static class ImportNodeCli
         node.Slug         = slug;
         node.Title        = title!;
         node.Status       = "draft";
-        node.Synopsis     = parsed.Synopsis;
+        node.Description  = parsed.Description;
         node.VoiceId      = parsed.VoiceId;
         node.ParentNodeId = parentNodeId;
         node.SortKey      = siblingMaxSort + 100.0;
@@ -177,10 +177,10 @@ public static class ImportNodeCli
                 Number         = baseNumber + i,
                 Text           = pb.Text,
                 TextHash       = string.IsNullOrEmpty(pb.Text) ? null : NodeWorkbenchService.ComputeTextHash(pb.Text),
-                BeatTitle      = pb.BeatTitle,
+                Title          = pb.Title,
                 IsChapterStart = pb.IsChapterStart,
                 Kind           = string.IsNullOrEmpty(pb.Kind) ? "prose" : pb.Kind,
-                Synopsis       = pb.Synopsis,
+                Description    = pb.Description,
                 StructureRole  = pb.StructureRole,
                 Act            = pb.Act,
                 SceneType      = string.IsNullOrEmpty(pb.SceneType) ? "scene" : pb.SceneType,
@@ -190,7 +190,7 @@ public static class ImportNodeCli
                 VoiceId        = pb.VoiceId,
             };
             db.Beats.Add(beat);
-            db.NodeBeats.Add(new NodeBeat { NodeId = nodeId, BeatId = beat.Id, SortKey = sortKey });
+            db.BeatNodes.Add(new BeatNode { NodeId = nodeId, BeatId = beat.Id, SortKey = sortKey });
             sortKey += 100.0;
         }
 
@@ -224,7 +224,7 @@ public sealed class ParsedNodeFile
 {
     public string? Title { get; set; }
     public string? Kind { get; set; }
-    public string? Synopsis { get; set; }
+    public string? Description { get; set; }
     public string? VoiceId { get; set; }
     public List<ParsedBeat> Beats { get; } = new();
 }
@@ -232,10 +232,10 @@ public sealed class ParsedNodeFile
 public sealed class ParsedBeat
 {
     public string Text { get; set; } = "";
-    public string? BeatTitle { get; set; }
+    public string? Title { get; set; }
     public bool IsChapterStart { get; set; }
     public string Kind { get; set; } = "prose";
-    public string? Synopsis { get; set; }
+    public string? Description { get; set; }
     public string? StructureRole { get; set; }
     public int Act { get; set; }
     public string SceneType { get; set; } = "scene";
@@ -275,7 +275,7 @@ public static class NodeFileParser
             // Discard beats that have no prose AND no metadata worth keeping.
             // (An empty %% beat followed immediately by another %% beat with
             // no text between them is a writer oversight, not a real beat.)
-            if (current.Text.Length > 0 || current.IsChapterStart || !string.IsNullOrEmpty(current.BeatTitle))
+            if (current.Text.Length > 0 || current.IsChapterStart || !string.IsNullOrEmpty(current.Title))
                 result.Beats.Add(current);
             current = null;
             buf.Clear();
@@ -304,7 +304,7 @@ public static class NodeFileParser
                         {
                             case "title":    result.Title = val; break;
                             case "kind":     result.Kind = val; break;
-                            case "synopsis": result.Synopsis = val; break;
+                            case "synopsis": result.Description = val; break;
                             case "voice":    result.VoiceId = val; break;
                         }
                     }
@@ -357,8 +357,8 @@ public static class NodeFileParser
         {
             switch (key.ToLowerInvariant())
             {
-                case "title":         beat.BeatTitle = val; break;
-                case "synopsis":      beat.Synopsis = val; break;
+                case "title":         beat.Title = val; break;
+                case "synopsis":      beat.Description = val; break;
                 case "tone":          beat.EmotionalTone = val.ToLowerInvariant(); break;
                 case "pace":          beat.PaceHint = val.ToLowerInvariant(); break;
                 case "kind":          beat.Kind = val.ToLowerInvariant(); break;
@@ -368,7 +368,7 @@ public static class NodeFileParser
                 case "structure-role":beat.StructureRole = val; break;
                 case "act":           if (int.TryParse(val, out var act)) beat.Act = act; break;
                 case "gap":           if (int.TryParse(val.TrimEnd('m','s'), out var ms)) beat.GapAfterMs = Math.Clamp(ms, 0, 6000); break;
-                case "chapter":       beat.IsChapterStart = true; beat.BeatTitle = val; break;
+                case "chapter":       beat.IsChapterStart = true; beat.Title = val; break;
                 case "voice":         beat.VoiceId = val; break;
             }
         }

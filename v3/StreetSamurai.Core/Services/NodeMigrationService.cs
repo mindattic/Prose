@@ -1,4 +1,4 @@
-using System.Security.Cryptography;
+﻿using System.Security.Cryptography;
 using System.Text;
 using System.Text.RegularExpressions;
 using Microsoft.EntityFrameworkCore;
@@ -12,7 +12,7 @@ namespace StreetSamurai.Core.Services;
 /// One-shot, idempotent migration from the legacy
 /// Books / Chapters / ChapterBeats / Episodes / EpisodeBeats five-table
 /// world into the unified <see cref="Beat"/> + <see cref="Node"/> +
-/// <see cref="NodeBeat"/> world.
+/// <see cref="BeatNode"/> world.
 ///
 /// Run via <c>ss --migrate-nodes</c> or implicitly at startup (the seed
 /// service queues it). Safe to re-run: every insert is gated on a
@@ -68,7 +68,7 @@ public class NodeMigrationService
                 Id       = b.Id,
                 Slug     = ResolveSlug(b.Slug, b.Title, b.Id),
                 Title    = b.Title ?? "Untitled book",
-                Synopsis = b.Tagline,
+                Description = b.Tagline,
                 Kind     = "story",
                 Status   = "draft",
                 SortKey  = (i + 1) * 100.0,
@@ -97,7 +97,7 @@ public class NodeMigrationService
                 Id             = c.Id,
                 Slug           = UniqueSlug(c.Title ?? "chapter", c.Id, slugIndex),
                 Title          = c.Title ?? "Untitled chapter",
-                Synopsis       = c.Synopsis,
+                Description    = c.Synopsis,
                 Kind           = "chapter",
                 Status         = string.IsNullOrEmpty(c.Status) ? "draft" : c.Status,
                 ParentNodeId = c.BookId,
@@ -109,7 +109,7 @@ public class NodeMigrationService
         return added;
     }
 
-    // ── Phase 3: ChapterBeats → Beat + NodeBeat ────────────────────────
+    // ── Phase 3: ChapterBeats → Beat + BeatNode ────────────────────────
     // The Step-2 schema converged ChapterBeats with audio fields, so each
     // row already carries everything a Beat needs. Beat.Id = ChapterBeat.BeatGuid
     // so SourceBeatGuid links from EpisodeBeats (next phase) still resolve.
@@ -122,7 +122,7 @@ public class NodeMigrationService
                 FROM ChapterBeats")
             .ToListAsync(ct);
         var existingBeatIds = (await db.Beats.Select(b => b.Id).ToListAsync(ct)).ToHashSet();
-        var existingJunctions = (await db.NodeBeats
+        var existingJunctions = (await db.BeatNodes
             .Select(sb => new { sb.NodeId, sb.BeatId })
             .ToListAsync(ct))
             .Select(x => (x.NodeId, x.BeatId)).ToHashSet();
@@ -145,8 +145,8 @@ public class NodeMigrationService
                     Number        = nextNumber++,
                     Text          = cb.Text ?? "",
                     TextHash      = string.IsNullOrEmpty(cb.Text) ? null : ComputeTextHash(cb.Text),
-                    BeatTitle     = cb.Title,
-                    Synopsis      = cb.Synopsis,
+                    Title         = cb.Title,
+                    Description   = cb.Synopsis,
                     StructureRole = cb.StructureRole,
                     Act           = cb.Act,
                     SceneType     = string.IsNullOrEmpty(cb.SceneType) ? "scene" : cb.SceneType,
@@ -162,7 +162,7 @@ public class NodeMigrationService
             }
             if (!existingJunctions.Contains((cb.ChapterId, cb.BeatGuid)))
             {
-                db.NodeBeats.Add(new NodeBeat { NodeId = cb.ChapterId, BeatId = cb.BeatGuid, SortKey = cb.SortKey });
+                db.BeatNodes.Add(new BeatNode { NodeId = cb.ChapterId, BeatId = cb.BeatGuid, SortKey = cb.SortKey });
                 junctionsAdded++;
             }
         }
@@ -214,7 +214,7 @@ public class NodeMigrationService
                                             ? UniqueSlug(e.Title ?? "episode", e.Id, slugIndex)
                                             : EnsureUniqueSlug(e.Slug, e.Id, slugIndex),
                 Title                 = e.Title ?? "Untitled episode",
-                Synopsis              = null,
+                Description           = null,
                 Kind                  = "chapter",
                 Status                = string.IsNullOrEmpty(e.Status) ? "draft" : e.Status,
                 VoiceId               = e.VoiceId,
@@ -253,7 +253,7 @@ public class NodeMigrationService
                 FROM EpisodeBeats")
             .ToListAsync(ct);
         var existingBeatIds = (await db.Beats.Select(b => b.Id).ToListAsync(ct)).ToHashSet();
-        var existingJunctions = (await db.NodeBeats
+        var existingJunctions = (await db.BeatNodes
             .Select(sb => new { sb.NodeId, sb.BeatId })
             .ToListAsync(ct))
             .Select(x => (x.NodeId, x.BeatId)).ToHashSet();
@@ -292,8 +292,8 @@ public class NodeMigrationService
                     Number        = nextNumber++,
                     Text          = eb.Text ?? "",
                     TextHash      = eb.TextHash ?? (string.IsNullOrEmpty(eb.Text) ? null : ComputeTextHash(eb.Text)),
-                    BeatTitle     = eb.BeatTitle,
-                    Synopsis      = eb.Synopsis,
+                    Title         = eb.BeatTitle,
+                    Description   = eb.Synopsis,
                     StructureRole = eb.StructureRole,
                     Act           = eb.Act,
                     SceneType     = string.IsNullOrEmpty(eb.SceneType) ? "scene" : eb.SceneType,
@@ -311,7 +311,7 @@ public class NodeMigrationService
 
             if (!existingJunctions.Contains((eb.EpisodeId, beatId)))
             {
-                db.NodeBeats.Add(new NodeBeat { NodeId = eb.EpisodeId, BeatId = beatId, SortKey = eb.SortKey });
+                db.BeatNodes.Add(new BeatNode { NodeId = eb.EpisodeId, BeatId = beatId, SortKey = eb.SortKey });
                 junctionsAdded++;
             }
         }

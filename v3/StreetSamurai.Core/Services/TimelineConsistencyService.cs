@@ -1,4 +1,4 @@
-using Microsoft.EntityFrameworkCore;
+﻿using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Logging;
 using StreetSamurai.Core.Data;
 
@@ -74,22 +74,22 @@ public class TimelineConsistencyService
 
             // Collect the set of entity IDs and beat IDs for this node.
             // We join via BeatEntityMention (new unified-schema path).
-            var nodeBeatQuery = await (
-                from sb in db.NodeBeats.AsNoTracking()
+            var BeatNodeQuery = await (
+                from sb in db.BeatNodes.AsNoTracking()
                 join b  in db.Beats.AsNoTracking() on sb.BeatId equals b.Id
                 where sb.NodeId == nodeId && sb.IsEnabled
                 orderby sb.SortKey
                 select new { BeatId = b.Id, b.Number }
             ).ToListAsync(ct);
 
-            if (nodeBeatQuery.Count == 0)
+            if (BeatNodeQuery.Count == 0)
             {
                 log.LogDebug("TimelineConsistencyService: node {NodeId} has no beats — skipping", nodeId);
                 return findings;
             }
 
-            var beatIds = nodeBeatQuery.Select(x => x.BeatId).ToHashSet();
-            var beatNumberById = nodeBeatQuery.ToDictionary(x => x.BeatId, x => x.Number);
+            var beatIds = BeatNodeQuery.Select(x => x.BeatId).ToHashSet();
+            var beatNumberById = BeatNodeQuery.ToDictionary(x => x.BeatId, x => x.Number);
 
             // Entity mentions per beat in this node.
             var mentionRows = await db.BeatEntityMentions.AsNoTracking()

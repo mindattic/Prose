@@ -1,4 +1,4 @@
-using Microsoft.EntityFrameworkCore;
+﻿using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Logging;
 using StreetSamurai.Core.Data;
@@ -6,7 +6,7 @@ using StreetSamurai.Core.Extensions;
 using StreetSamurai.Core.Services;
 
 // ── MaterializeChapters ────────────────────────────────────────────────────
-// One-shot. Finds every chapter node whose NodeBeat row count is zero and
+// One-shot. Finds every chapter node whose BeatNode row count is zero and
 // whose source Chapter (Records.Json) has body prose, then calls
 // NodeWorkbenchService.MaterializeChapterFromHtmlAsync to burst the prose
 // into one Beat per paragraph. Idempotent — safe to re-run; chapters with
@@ -28,11 +28,11 @@ var workbench = sp.GetRequiredService<NodeWorkbenchService>();
 
 await using var db = await dbFactory.CreateDbContextAsync();
 
-// Find chapter nodes with zero NodeBeat rows.
+// Find chapter nodes with zero BeatNode rows.
 var emptyChapters = await db.Nodes
     .AsNoTracking()
     .Where(s => s is ChapterNode)
-    .Where(s => !db.NodeBeats.Any(sb => sb.NodeId == s.Id))
+    .Where(s => !db.BeatNodes.Any(sb => sb.NodeId == s.Id))
     .OrderBy(s => s.Title)
     .Select(s => new { s.Id, s.Title, s.Slug, s.ParentNodeId })
     .ToListAsync();

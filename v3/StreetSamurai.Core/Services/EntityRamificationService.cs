@@ -1,4 +1,4 @@
-using Microsoft.EntityFrameworkCore;
+﻿using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Logging;
 using StreetSamurai.Core.Data;
 using StreetSamurai.Core.Data.Entities;
@@ -125,7 +125,7 @@ public class EntityRamificationService(
     {
         await using var db = await dbFactory.CreateDbContextAsync(ct);
 
-        return await db.NodeBeats
+        return await db.BeatNodes
             .Where(sb => sb.Beat!.EntityStale && sb.IsEnabled)
             .Select(sb => new EntityStaleBeatDto
             {
@@ -163,14 +163,14 @@ public class EntityRamificationService(
 
             foreach (var directBeatId in directBeatIds)
             {
-                var nodePositions = await db.NodeBeats
+                var nodePositions = await db.BeatNodes
                     .Where(sb => sb.BeatId == directBeatId && sb.IsEnabled)
                     .Select(sb => new { sb.NodeId, sb.SortKey })
                     .ToListAsync();
 
                 foreach (var pos in nodePositions)
                 {
-                    var downstream = await db.NodeBeats
+                    var downstream = await db.BeatNodes
                         .Where(sb => sb.NodeId == pos.NodeId
                                   && sb.SortKey > pos.SortKey
                                   && sb.IsEnabled)

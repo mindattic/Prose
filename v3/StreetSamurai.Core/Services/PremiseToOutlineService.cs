@@ -69,7 +69,7 @@ public class PremiseToOutlineService(
             node.Slug      = slug;
             node.Seed      = seed;
             node.Status    = "draft";
-            node.Synopsis  = seed.Length > 200 ? seed[..200] : seed;
+            node.Description  = seed.Length > 200 ? seed[..200] : seed;
             node.CreatedAt = DateTime.UtcNow;
             node.UpdatedAt = DateTime.UtcNow;
             db.Nodes.Add(node);

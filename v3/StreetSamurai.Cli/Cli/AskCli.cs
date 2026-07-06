@@ -64,7 +64,7 @@ public static class AskCli
             // also covers this story for future unscoped questions. Cheap.
             var embeddings = sp.GetRequiredService<EmbeddingService>();
             Console.WriteLine($"[ask] indexing story beats for '{scopeSlug}' (drift-skipped)…");
-            var embedded = await embeddings.ReembedNodeBeatsAsync(sid.Value);
+            var embedded = await embeddings.ReembedBeatNodesAsync(sid.Value);
             Console.WriteLine($"[ask] {(embedded == 0 ? "already current" : embedded + " beat(s) embedded")}");
         }
 

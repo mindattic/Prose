@@ -94,7 +94,7 @@ public static class PublishDocxCli
                 var meta = await db2.Nodes
                     .AsNoTracking()
                     .Where(n => n.Id == nodeId)
-                    .Select(n => new { n.Synopsis })
+                    .Select(n => new { n.Description })
                     .FirstOrDefaultAsync();
 
                 var kws = await db2.NodeKeywords
@@ -112,10 +112,10 @@ public static class PublishDocxCli
                     Console.WriteLine($"[publish-docx] Wrote keywords: {kwPath}");
                 }
 
-                if (!string.IsNullOrWhiteSpace(meta?.Synopsis))
+                if (!string.IsNullOrWhiteSpace(meta?.Description))
                 {
                     var synPath = Path.Combine(outDir, "synopsis.txt");
-                    await File.WriteAllTextAsync(synPath, meta.Synopsis.Trim());
+                    await File.WriteAllTextAsync(synPath, meta.Description.Trim());
                     Console.WriteLine($"[publish-docx] Wrote synopsis: {synPath}");
                 }
             }

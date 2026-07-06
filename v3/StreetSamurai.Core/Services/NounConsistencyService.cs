@@ -1,4 +1,4 @@
-using Microsoft.EntityFrameworkCore;
+﻿using Microsoft.EntityFrameworkCore;
 using StreetSamurai.Core.Data;
 using StreetSamurai.Core.Data.Entities;
 
@@ -105,7 +105,7 @@ public class NounConsistencyService(IDbContextFactory<StreetSamuraiDbContext> db
             .ToListAsync(ct);
         nodeIds.AddRange(childIds);
 
-        var beats = await db.NodeBeats
+        var beats = await db.BeatNodes
             .AsNoTracking()
             .Include(nb => nb.Beat)
             .Where(nb => nodeIds.Contains(nb.NodeId) && nb.IsEnabled && nb.Beat != null)

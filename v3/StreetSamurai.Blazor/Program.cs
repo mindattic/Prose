@@ -361,10 +361,10 @@ app.MapGet("/api/nodes/{nodeId:guid}/beat/{beatId:guid}/audio", async (
     // Validate that this beat is actually a member of the node in the URL.
     // Without this check, an authenticated user with any beat GUID could pull
     // its audio by inventing any node GUID — the nodeId segment was
-    // decorative. The unique (NodeId, BeatId) PK on NodeBeats makes this
+    // decorative. The unique (NodeId, BeatId) PK on BeatNodes makes this
     // an index seek, ~free at any scale.
     var isMember = await Microsoft.EntityFrameworkCore.EntityFrameworkQueryableExtensions
-        .AnyAsync(db.NodeBeats.Where(sb => sb.NodeId == nodeId && sb.BeatId == beatId));
+        .AnyAsync(db.BeatNodes.Where(sb => sb.NodeId == nodeId && sb.BeatId == beatId));
     if (!isMember) return Results.NotFound();
     var beat = await Microsoft.EntityFrameworkCore.EntityFrameworkQueryableExtensions
         .FirstOrDefaultAsync(

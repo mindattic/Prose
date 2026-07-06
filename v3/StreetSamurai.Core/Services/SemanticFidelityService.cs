@@ -1,4 +1,4 @@
-using Microsoft.EntityFrameworkCore;
+﻿using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Logging;
 using StreetSamurai.Core.Data;
 
@@ -94,7 +94,7 @@ public class SemanticFidelityService
 
         var node = await db.Nodes.AsNoTracking()
             .Where(s => s.Id == nodeId)
-            .Select(s => new { s.Id, s.Slug, s.Title, s.Seed, s.Synopsis, s.Score })
+            .Select(s => new { s.Id, s.Slug, s.Title, s.Seed, s.Description, s.Score })
             .FirstOrDefaultAsync(ct);
 
         if (node == null)
@@ -104,18 +104,18 @@ public class SemanticFidelityService
         }
 
         // Story anchor: the Seed (the original one-line story prompt) is the best north
-        // star. Fall back to Synopsis, then Title if neither exists.
-        var bibleAnchor = FirstNonEmpty(node.Seed, node.Synopsis, node.Title);
+        // star. Fall back to Description, then Title if neither exists.
+        var bibleAnchor = FirstNonEmpty(node.Seed, node.Description, node.Title);
         bool hasBibleAnchor = !string.IsNullOrWhiteSpace(bibleAnchor);
 
         var beats = await (
-            from sb in db.NodeBeats.AsNoTracking()
+            from sb in db.BeatNodes.AsNoTracking()
             join b  in db.Beats.AsNoTracking() on sb.BeatId equals b.Id
             where sb.NodeId == nodeId && sb.IsEnabled
             orderby sb.SortKey
             select new
             {
-                b.Id, b.Number, b.BeatTitle, b.Synopsis,
+                b.Id, b.Number, b.Title, b.Description,
                 b.Text, b.Score, b.Version
             }
         ).ToListAsync(ct);
@@ -125,7 +125,7 @@ public class SemanticFidelityService
                 Array.Empty<FidelityViolation>(), 0);
 
         // Ensure prose embeddings are current (drift-skipped — cheap if nothing changed).
-        try { await embeddings.ReembedNodeBeatsAsync(nodeId, ct); }
+        try { await embeddings.ReembedBeatNodesAsync(nodeId, ct); }
         catch (Exception ex)
         {
             log.LogWarning(ex, "SemanticFidelity: re-embed failed for '{Slug}'", node.Slug);
@@ -138,7 +138,7 @@ public class SemanticFidelityService
         {
             try
             {
-                var hits = await embeddings.FindSimilarNodeBeatsAsync(
+                var hits = await embeddings.FindSimilarBeatNodesAsync(
                     bibleAnchor!, k: 500, nodeScope: nodeId, ct: ct);
                 foreach (var hit in hits)
                     bibleAlignmentById[hit.ScopeId] = hit.Similarity;
@@ -156,7 +156,7 @@ public class SemanticFidelityService
         var intentAlignmentById = new Dictionary<Guid, double>();
         var intentCandidates = beats
             .Where(b => (b.Score ?? 0) >= ScoreGamingThreshold
-                     && !string.IsNullOrWhiteSpace(b.Synopsis)
+                     && !string.IsNullOrWhiteSpace(b.Description)
                      && !string.IsNullOrWhiteSpace(b.Text))
             .ToList();
 
@@ -165,7 +165,7 @@ public class SemanticFidelityService
             try
             {
                 var pairs = intentCandidates
-                    .Select(b => (b.Synopsis!, b.Text!))
+                    .Select(b => (b.Description!, b.Text!))
                     .ToList();
                 var sims = await embeddings.ComputeSimilaritiesBatchAsync(pairs, ct);
                 for (int i = 0; i < intentCandidates.Count; i++)
@@ -199,7 +199,7 @@ public class SemanticFidelityService
                            $"Story seed: \"{(bibleAnchor!.Length > 120 ? bibleAnchor[..120] + "…" : bibleAnchor)}\". " +
                            $"Avoid rewriting purely to satisfy stylistic patterns the reviewers reward if it pulls the beat away from the story's centre of gravity.";
                 violations.Add(new FidelityViolation(
-                    b.Id, b.Number, b.BeatTitle, score,
+                    b.Id, b.Number, b.Title, score,
                     bibleAlign.Value, intentAlign, "bible", msg, fix));
                 EmitFinding($"node:{node.Slug}", sev,
                     $"SEMANTIC-DRIFT [bible]: {msg}",
@@ -212,13 +212,13 @@ public class SemanticFidelityService
                 var sev = intentAlign.Value < 0.35 ? FindingSeverity.High
                         : intentAlign.Value < 0.43 ? FindingSeverity.Medium
                         : FindingSeverity.Low;
-                var synopsis = b.Synopsis!.Length > 120 ? b.Synopsis[..120] + "…" : b.Synopsis;
+                var synopsis = b.Description!.Length > 120 ? b.Description[..120] + "…" : b.Description;
                 var msg  = $"Beat #{b.Number} scores {score:0.#}% but its prose aligns only {intentAlign.Value:P0} with its stated intent (\"{synopsis}\"). " +
                            $"The rewrite served the score rubric, not the beat's purpose.";
-                var fix  = $"Beat #{b.Number} was supposed to: \"{b.Synopsis}\". " +
+                var fix  = $"Beat #{b.Number} was supposed to: \"{b.Description}\". " +
                            $"Revise to fulfil that purpose rather than chasing stylistic reviewer rewards.";
                 violations.Add(new FidelityViolation(
-                    b.Id, b.Number, b.BeatTitle, score,
+                    b.Id, b.Number, b.Title, score,
                     bibleAlign ?? 0, intentAlign, "intent", msg, fix));
                 EmitFinding($"node:{node.Slug}", sev,
                     $"SEMANTIC-DRIFT [intent]: {msg}",
@@ -248,6 +248,42 @@ public class SemanticFidelityService
             MeanIntentAlignment: meanIntent,
             Violations:         violations,
             FindingsEmitted:    violations.Count);
+    }
+
+    /// <summary>
+    /// Lightweight per-beat drift check wired into the beat-save path.
+    /// Runs without a score gate — unlike <see cref="AuditNodeAsync"/>, this
+    /// fires the moment prose changes so drift is caught before a review run.
+    /// Swallows all exceptions: quality checks must never block a save.
+    /// </summary>
+    public async Task CheckBeatIntentDriftAsync(
+        int beatNumber, string nodeSlug, string beatText, string synopsis,
+        CancellationToken ct = default)
+    {
+        if (string.IsNullOrWhiteSpace(synopsis) || string.IsNullOrWhiteSpace(beatText))
+            return;
+        try
+        {
+            var similarity = await embeddings.ComputeSimilarityAsync(synopsis, beatText, ct);
+            if (similarity >= IntentAlignmentFloor) return;
+
+            var sev = similarity < 0.35 ? FindingSeverity.High
+                    : similarity < 0.43 ? FindingSeverity.Medium
+                    : FindingSeverity.Low;
+            var snip  = synopsis.Length > 120 ? synopsis[..120] + "…" : synopsis;
+            var msg   = $"Beat #{beatNumber} prose aligns only {similarity:P0} with its stated intent (\"{snip}\"). " +
+                        "Prose may have drifted from its purpose on save.";
+            var fix   = $"Beat #{beatNumber} was supposed to: \"{synopsis}\". " +
+                        "Revise to fulfil that purpose.";
+            EmitFinding($"node:{nodeSlug}", sev,
+                $"SEMANTIC-DRIFT [intent]: {msg}",
+                beatText.Length > 200 ? beatText[..200] : beatText, fix);
+        }
+        catch (Exception ex)
+        {
+            log.LogWarning(ex, "CheckBeatIntentDrift failed for Beat #{Number} node {Slug}",
+                beatNumber, nodeSlug);
+        }
     }
 
     private void EmitFinding(

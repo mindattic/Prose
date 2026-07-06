@@ -1,4 +1,4 @@
-using System.Text.Json;
+﻿using System.Text.Json;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Logging;
 using StreetSamurai.Core.Data;
@@ -114,7 +114,7 @@ public class DistributedWorkerCoordinator
             if (alreadyQueued.Contains(sid)) continue;
 
             // Load beat texts via junction.
-            var beatTexts = await db.NodeBeats
+            var beatTexts = await db.BeatNodes
                 .Where(sb => sb.NodeId == node.Id && sb.IsEnabled)
                 .OrderBy(sb => sb.SortKey)
                 .Select(sb => sb.Beat!.Text ?? "")
@@ -162,8 +162,8 @@ public class DistributedWorkerCoordinator
             .Select(q => q.TargetId)
             .ToHashSetAsync(ct);
 
-        // Query via the NodeBeat junction — beats are m:m with nodes.
-        var query = db.NodeBeats
+        // Query via the BeatNode junction — beats are m:m with nodes.
+        var query = db.BeatNodes
             .Where(sb => sb.IsEnabled
                       && !(sb.Node!.IsWIP)
                       && (sb.Beat!.Text == null || sb.Beat.Text == ""));
@@ -171,7 +171,7 @@ public class DistributedWorkerCoordinator
         if (nodeIds?.Count > 0)
             query = query.Where(sb => nodeIds.Contains(sb.NodeId));
 
-        var nodeBeatRows = await query
+        var BeatNodeRows = await query
             .OrderBy(sb => sb.NodeId).ThenBy(sb => sb.SortKey)
             .Select(sb => new
             {
@@ -180,13 +180,13 @@ public class DistributedWorkerCoordinator
                 Slug     = sb.Node!.Slug,
                 Title    = sb.Node.Title,
                 SortKey  = sb.SortKey,
-                Synopsis = sb.Beat!.Synopsis,
+                Description = sb.Beat!.Description,
                 Subtext  = sb.Beat.Subtext,
             })
             .ToListAsync(ct);
 
         // Group by node so we can compute position (1-based index, approximated by SortKey rank).
-        var byNode = nodeBeatRows.GroupBy(sb => sb.NodeId);
+        var byNode = BeatNodeRows.GroupBy(sb => sb.NodeId);
         int added = 0;
         foreach (var grp in byNode)
         {
@@ -206,7 +206,7 @@ public class DistributedWorkerCoordinator
                     nodeTitle= beat.Title ?? "",
                     beatIndex   = i,
                     totalBeats  = total,
-                    beatGoal    = beat.Synopsis ?? "",
+                    beatGoal    = beat.Description ?? "",
                     beatSubtext = beat.Subtext ?? "",
                 });
 

@@ -1,4 +1,4 @@
-using System.Collections.Concurrent;
+﻿using System.Collections.Concurrent;
 using System.Security.Cryptography;
 using System.Text;
 using System.Text.Json;
@@ -21,7 +21,7 @@ namespace StreetSamurai.Core.Services;
 /// transition, but new code paths flow through here.
 ///
 /// Operates on the unified <see cref="Beat"/> / <see cref="Node"/> /
-/// <see cref="NodeBeat"/> schema. A Beat appearing in multiple nodes
+/// <see cref="BeatNode"/> schema. A Beat appearing in multiple nodes
 /// edits in one place; one audio rendering per beat.
 /// </summary>
 public class NodeWorkbenchService
@@ -102,7 +102,7 @@ public class NodeWorkbenchService
 
         // Direct beats first, in SortKey order. Soft-deleted beats are excluded
         // by default; pass includeDisabled=true to make them visible (grey + restore button).
-        var direct = await db.NodeBeats
+        var direct = await db.BeatNodes
             .Where(sb => sb.NodeId == nodeId && (includeDisabled || sb.IsEnabled))
             .OrderBy(sb => sb.SortKey)
             .Join(db.Beats, sb => sb.BeatId, b => b.Id, (sb, b) => new { sb.SortKey, sb.IsEnabled, Beat = b })
@@ -130,7 +130,7 @@ public class NodeWorkbenchService
     public async Task<int> CountBeatsAsync(Guid nodeId, CancellationToken ct = default)
     {
         await using var db = await dbFactory.CreateDbContextAsync(ct);
-        return await db.NodeBeats.CountAsync(sb => sb.NodeId == nodeId && sb.IsEnabled, ct);
+        return await db.BeatNodes.CountAsync(sb => sb.NodeId == nodeId && sb.IsEnabled, ct);
     }
 
     // ── Edits ────────────────────────────────────────────────────────────
@@ -202,7 +202,7 @@ public class NodeWorkbenchService
         string? beatSlug = null;
         if (postBeatValidator != null || semanticFidelity != null)
         {
-            beatSlug = await db.NodeBeats.AsNoTracking()
+            beatSlug = await db.BeatNodes.AsNoTracking()
                 .Where(sb => sb.BeatId == beatId)
                 .Join(db.Nodes, sb => sb.NodeId, s => s.Id, (_, s) => s.Slug)
                 .FirstOrDefaultAsync(CancellationToken.None);
@@ -211,11 +211,11 @@ public class NodeWorkbenchService
         if (postBeatValidator != null && beatSlug != null)
             _ = Task.Run(() => postBeatValidator.QuickValidateAsync(beatSlug, trimmed), CancellationToken.None);
 
-        if (semanticFidelity != null && beatSlug != null && !string.IsNullOrWhiteSpace(beat.Synopsis))
+        if (semanticFidelity != null && beatSlug != null && !string.IsNullOrWhiteSpace(beat.Description))
         {
             var number   = beat.Number;
             var slug2    = beatSlug;
-            var synopsis = beat.Synopsis!;
+            var synopsis = beat.Description!;
             _ = Task.Run(
                 () => semanticFidelity.CheckBeatIntentDriftAsync(number, slug2, trimmed, synopsis),
                 CancellationToken.None);
@@ -232,8 +232,8 @@ public class NodeWorkbenchService
         await using var db = await dbFactory.CreateDbContextAsync(ct);
         var beat = await db.Beats.FirstOrDefaultAsync(b => b.Id == beatId, ct)
             ?? throw new InvalidOperationException($"Beat {beatId} not found.");
-        beat.BeatTitle      = string.IsNullOrWhiteSpace(update.BeatTitle)     ? null : update.BeatTitle.Trim();
-        beat.Synopsis       = string.IsNullOrWhiteSpace(update.Synopsis)      ? null : update.Synopsis.Trim();
+        beat.Title          = string.IsNullOrWhiteSpace(update.Title)          ? null : update.Title.Trim();
+        beat.Description    = string.IsNullOrWhiteSpace(update.Description)   ? null : update.Description.Trim();
         beat.Subtext        = string.IsNullOrWhiteSpace(update.Subtext)       ? null : update.Subtext.Trim();
         beat.EmotionalTone  = string.IsNullOrWhiteSpace(update.EmotionalTone) ? null : update.EmotionalTone.Trim().ToLowerInvariant();
         beat.PaceHint       = string.IsNullOrWhiteSpace(update.PaceHint)      ? null : update.PaceHint.Trim().ToLowerInvariant();
@@ -300,7 +300,7 @@ public class NodeWorkbenchService
         clone.Title        = title;
         clone.Kind         = src.Kind;
         clone.Status       = "draft";
-        clone.Synopsis     = src.Synopsis;
+        clone.Description  = src.Description;
         clone.VoiceId      = src.VoiceId;
         clone.ParentNodeId = newParentId;
         clone.SortKey      = sortKey;
@@ -310,7 +310,7 @@ public class NodeWorkbenchService
         // (AudioPath/NarratedAt/DurationSec/LastRequestId/GapAfterAudioPath),
         // review (Score/ScoredAt), Stale and WasCorrected are intentionally left
         // at defaults — a duplicate has no recordings, no reviews, nothing stale.
-        var srcBeats = await db.NodeBeats
+        var srcBeats = await db.BeatNodes
             .Where(sb => sb.NodeId == srcNodeId)
             .OrderBy(sb => sb.SortKey)
             .Join(db.Beats, sb => sb.BeatId, b => b.Id, (sb, b) => new { sb.SortKey, Beat = b })
@@ -325,10 +325,10 @@ public class NodeWorkbenchService
                 Number         = nextNumber[0]++,
                 Text           = s.Text,
                 TextHash       = s.TextHash,
-                BeatTitle      = s.BeatTitle,
+                Title          = s.Title,
                 IsChapterStart = s.IsChapterStart,
                 Kind           = s.Kind,
-                Synopsis       = s.Synopsis,
+                Description    = s.Description,
                 StructureRole  = s.StructureRole,
                 Act            = s.Act,
                 SceneType      = s.SceneType,
@@ -340,7 +340,7 @@ public class NodeWorkbenchService
                 UpdatedAt      = now,
             };
             db.Beats.Add(nb);
-            db.NodeBeats.Add(new NodeBeat { NodeId = newId, BeatId = nb.Id, SortKey = row.SortKey });
+            db.BeatNodes.Add(new BeatNode { NodeId = newId, BeatId = nb.Id, SortKey = row.SortKey });
         }
 
         // Recurse into child nodes, preserving their order.
@@ -373,7 +373,7 @@ public class NodeWorkbenchService
     /// beat is marked a chapter start when <paramref name="chapterStartFirst"/>.
     /// </summary>
     public async Task<Guid> CreateNodeFromBeatsAsync(
-        string title, IReadOnlyList<string> beatTexts, string? synopsis = null,
+        string title, IReadOnlyList<string> beatTexts, string? description = null,
         string kind = "story", string? seed = null, bool chapterStartFirst = false, CancellationToken ct = default)
     {
         await using var db = await dbFactory.CreateDbContextAsync(ct);
@@ -384,7 +384,7 @@ public class NodeWorkbenchService
             .Select(s => (double?)s.SortKey).MaxAsync(ct) ?? 0;
         var node = NodeFactory.Create(kind);
         node.Id = nodeId; node.Slug = slug; node.Title = title; node.Status = "draft";
-        node.Synopsis = synopsis; node.Seed = seed; node.SortKey = maxSort + 100.0;
+        node.Description = description; node.Seed = seed; node.SortKey = maxSort + 100.0;
         db.Nodes.Add(node);
 
         var baseNumber = (await db.Beats.MaxAsync(b => (int?)b.Number, ct) ?? 0) + 1;
@@ -405,7 +405,7 @@ public class NodeWorkbenchService
                 IsChapterStart = chapterStartFirst && i == 0,
             };
             db.Beats.Add(beat);
-            db.NodeBeats.Add(new NodeBeat { NodeId = nodeId, BeatId = beat.Id, SortKey = sortKey });
+            db.BeatNodes.Add(new BeatNode { NodeId = nodeId, BeatId = beat.Id, SortKey = sortKey });
             sortKey += 100.0;
             i++;
         }
@@ -424,14 +424,14 @@ public class NodeWorkbenchService
     /// </summary>
     /// <param name="title">Display title (required).</param>
     /// <param name="kind">Free-form category — "story" (root), "book", "chapter", etc.</param>
-    /// <param name="synopsis">Optional one-line synopsis.</param>
+    /// <param name="description">Optional back-of-book description.</param>
     /// <param name="seed">Optional one-line generator seed / logline.</param>
     /// <param name="nodeCode">Optional short reference code (e.g. "SRZR"). Upper-cased;
     /// rejected if already in use by another node in this universe.</param>
     /// <param name="previousNodeId">Optional prior node this one continues (sequel commandments).</param>
     /// <param name="parentNodeId">Optional parent (makes this a sub-node under a book/saga).</param>
     public async Task<(Guid Id, string Slug)> CreateNodeAsync(
-        string title, string kind = "story", string? synopsis = null, string? seed = null,
+        string title, string kind = "story", string? description = null, string? seed = null,
         string? nodeCode = null, Guid? previousNodeId = null, Guid? parentNodeId = null,
         CancellationToken ct = default)
     {
@@ -470,7 +470,7 @@ public class NodeWorkbenchService
         node.Title          = title;
         node.NodeCode       = code;
         node.Status         = "draft";
-        node.Synopsis       = synopsis;
+        node.Description    = description;
         node.Seed           = seed;
         node.ParentNodeId   = parentNodeId;
         node.PreviousNodeId = previousNodeId;
@@ -508,10 +508,10 @@ public class NodeWorkbenchService
                 $"'{parent.Title}' already has {existingChildren} child node(s) — it's already a Collection. " +
                 "Splitting its direct beats would duplicate chapters. Reconcile the existing children first.");
 
-        var rows = await db.NodeBeats.Where(sb => sb.NodeId == nodeId)
+        var rows = await db.BeatNodes.Where(sb => sb.NodeId == nodeId)
             .OrderBy(sb => sb.SortKey)
             .Join(db.Beats, sb => sb.BeatId, b => b.Id,
-                  (sb, b) => new { sb.BeatId, sb.SortKey, b.IsChapterStart, b.BeatTitle })
+                  (sb, b) => new { sb.BeatId, sb.SortKey, b.IsChapterStart, b.Title })
             .ToListAsync(ct);
         if (rows.Count == 0) throw new InvalidOperationException("Node has no beats to split.");
 
@@ -521,7 +521,7 @@ public class NodeWorkbenchService
         {
             if (r.IsChapterStart || segments.Count == 0)
             {
-                var t = (r.BeatTitle ?? "").Trim();
+                var t = (r.Title ?? "").Trim();
                 if (t.Length == 0) t = $"{parent.Title} — Chapter {segments.Count + 1}";
                 segments.Add((t, new List<Guid>()));
             }
@@ -531,8 +531,8 @@ public class NodeWorkbenchService
             throw new InvalidOperationException($"Node has {segments.Count} chapter segment(s) — nothing to split. Mark IsChapterStart on beats first.");
 
         // Drop the parent's direct beat links (beats themselves are kept and re-linked to children).
-        var oldLinks = await db.NodeBeats.Where(sb => sb.NodeId == nodeId).ToListAsync(ct);
-        db.NodeBeats.RemoveRange(oldLinks);
+        var oldLinks = await db.BeatNodes.Where(sb => sb.NodeId == nodeId).ToListAsync(ct);
+        db.BeatNodes.RemoveRange(oldLinks);
 
         double parentSort = 100.0;
         int beatCount = 0;
@@ -549,7 +549,7 @@ public class NodeWorkbenchService
             double sk = 100.0;
             foreach (var bid in beatIds)
             {
-                db.NodeBeats.Add(new NodeBeat { NodeId = childId, BeatId = bid, SortKey = sk });
+                db.BeatNodes.Add(new BeatNode { NodeId = childId, BeatId = bid, SortKey = sk });
                 sk += 100.0;
                 beatCount++;
             }
@@ -589,7 +589,7 @@ public class NodeWorkbenchService
     public async Task<Beat> InsertBeatAsync(Guid nodeId, Guid? afterBeatId, string initialText = "", CancellationToken ct = default)
     {
         await using var db = await dbFactory.CreateDbContextAsync(ct);
-        var ordered = await db.NodeBeats
+        var ordered = await db.BeatNodes
             .Where(sb => sb.NodeId == nodeId)
             .OrderBy(sb => sb.SortKey)
             .ToListAsync(ct);
@@ -616,13 +616,13 @@ public class NodeWorkbenchService
         {
             await RestripeSortKeysAsync(nodeId, ct);
             // Restripe ran on its own DbContext and committed fresh SortKeys.
-            // Our local `db` still has the old NodeBeat instances tracked
+            // Our local `db` still has the old BeatNode instances tracked
             // with their pre-restripe values — a re-query would return those
             // same tracked instances (EF identity resolution), not the new
             // DB values. Detach so the next ToListAsync materialises fresh
             // rows with the post-restripe ladder.
             db.ChangeTracker.Clear();
-            ordered = await db.NodeBeats
+            ordered = await db.BeatNodes
                 .Where(sb => sb.NodeId == nodeId)
                 .OrderBy(sb => sb.SortKey)
                 .ToListAsync(ct);
@@ -650,7 +650,7 @@ public class NodeWorkbenchService
             Stale        = false,
         };
         db.Beats.Add(beat);
-        db.NodeBeats.Add(new NodeBeat
+        db.BeatNodes.Add(new BeatNode
         {
             NodeId = nodeId,
             BeatId   = beat.Id,
@@ -670,14 +670,14 @@ public class NodeWorkbenchService
     /// across thousands of subdivisions on a 100-step initial spacing.</summary>
     private const double MinSortKeyGap = 0.001;
 
-    /// <summary>Rewrite every <see cref="NodeBeat.SortKey"/> in this node
+    /// <summary>Rewrite every <see cref="BeatNode.SortKey"/> in this node
     /// to a fresh 100-step ladder (100, 200, 300, …). Preserves the current
     /// reading order. O(N) and runs in a single transaction. Audio stays
     /// valid — only the junction's SortKey changes.</summary>
     public async Task<int> RestripeSortKeysAsync(Guid nodeId, CancellationToken ct = default)
     {
         await using var db = await dbFactory.CreateDbContextAsync(ct);
-        var siblings = await db.NodeBeats
+        var siblings = await db.BeatNodes
             .Where(sb => sb.NodeId == nodeId)
             .OrderBy(sb => sb.SortKey)
             .ToListAsync(ct);
@@ -689,7 +689,7 @@ public class NodeWorkbenchService
             sk += 100.0;
         }
         await db.SaveChangesAsync(ct);
-        log.LogInformation("Restriped {N} NodeBeat rows in node {Node}", siblings.Count, nodeId);
+        log.LogInformation("Restriped {N} BeatNode rows in node {Node}", siblings.Count, nodeId);
         return siblings.Count;
     }
 
@@ -708,7 +708,7 @@ public class NodeWorkbenchService
             throw new InvalidOperationException("Cannot move a beat to a position after itself.");
 
         await using var db = await dbFactory.CreateDbContextAsync(ct);
-        var siblings = await db.NodeBeats
+        var siblings = await db.BeatNodes
             .Where(sb => sb.NodeId == nodeId)
             .OrderBy(sb => sb.SortKey)
             .ToListAsync(ct);
@@ -740,7 +740,7 @@ public class NodeWorkbenchService
             // returns fresh post-restripe SortKeys, not the tracked stale
             // values from the first ToListAsync above.
             db.ChangeTracker.Clear();
-            siblings = await db.NodeBeats
+            siblings = await db.BeatNodes
                 .Where(sb => sb.NodeId == nodeId)
                 .OrderBy(sb => sb.SortKey)
                 .ToListAsync(ct);
@@ -806,7 +806,7 @@ public class NodeWorkbenchService
         if (firstHalf.Length == 0 || secondHalf.Length == 0)
             throw new InvalidOperationException("Split would leave one half empty — pick a different cursor position.");
 
-        var siblings = await db.NodeBeats
+        var siblings = await db.BeatNodes
             .Where(sb => sb.NodeId == nodeId)
             .OrderBy(sb => sb.SortKey)
             .ToListAsync(ct);
@@ -836,7 +836,7 @@ public class NodeWorkbenchService
             WasCorrected  = true,
         };
         db.Beats.Add(second);
-        db.NodeBeats.Add(new NodeBeat
+        db.BeatNodes.Add(new BeatNode
         {
             NodeId = nodeId,
             BeatId   = second.Id,
@@ -869,7 +869,7 @@ public class NodeWorkbenchService
             throw new InvalidOperationException("Could not find a clean split point.");
 
         // Find the target's SortKey in this node to slot the new beat.
-        var siblings = await db.NodeBeats
+        var siblings = await db.BeatNodes
             .Where(sb => sb.NodeId == nodeId)
             .OrderBy(sb => sb.SortKey)
             .ToListAsync(ct);
@@ -901,7 +901,7 @@ public class NodeWorkbenchService
             WasCorrected  = true,
         };
         db.Beats.Add(second);
-        db.NodeBeats.Add(new NodeBeat
+        db.BeatNodes.Add(new BeatNode
         {
             NodeId = nodeId,
             BeatId   = second.Id,
@@ -934,7 +934,7 @@ public class NodeWorkbenchService
         var paragraphs = SplitIntoParagraphs(target.Text ?? "");
         if (paragraphs.Count < 2) return new List<Guid>();
 
-        var siblings = await db.NodeBeats
+        var siblings = await db.BeatNodes
             .Where(sb => sb.NodeId == nodeId)
             .OrderBy(sb => sb.SortKey)
             .ToListAsync(ct);
@@ -978,7 +978,7 @@ public class NodeWorkbenchService
                 Stale         = true,
             };
             db.Beats.Add(b);
-            db.NodeBeats.Add(new NodeBeat
+            db.BeatNodes.Add(new BeatNode
             {
                 NodeId = nodeId,
                 BeatId   = b.Id,
@@ -1021,7 +1021,7 @@ public class NodeWorkbenchService
     /// Take a chapter node whose prose is sitting in the legacy
     /// <c>Chapter.Html</c> / <c>Chapter.Markdown</c> blob (because it was written
     /// before the Node+Beat schema landed) and burst it into one Beat per
-    /// paragraph, attached to the chapter node via NodeBeat junctions.
+    /// paragraph, attached to the chapter node via BeatNode junctions.
     ///
     /// Idempotent: if the chapter node already has any beats, returns 0 and
     /// leaves them alone. Parses Markdown-flavoured prose conventions:
@@ -1029,7 +1029,7 @@ public class NodeWorkbenchService
     /// <item>First <c>#</c> chapter-title line is dropped (already on Node.Title).</item>
     /// <item><c>*Protagonist: …*</c> front-matter line is dropped.</item>
     /// <item><c>## Section Heading</c> becomes the next paragraph beat's
-    ///   <see cref="Beat.BeatTitle"/>, and the preceding paragraph beat's
+    ///   <see cref="Beat.Title"/>, and the preceding paragraph beat's
     ///   <see cref="Beat.SceneType"/> is upgraded to <c>"section-end"</c>.</item>
     /// <item><c>---</c> scene breaks mark the preceding paragraph beat's
     ///   SceneType as <c>"scene-end"</c>.</item>
@@ -1056,7 +1056,7 @@ public class NodeWorkbenchService
         var node = await db.Nodes.FirstOrDefaultAsync(s => s.Id == chapterNodeId, ct)
             ?? throw new InvalidOperationException($"Node {chapterNodeId} not found.");
 
-        var existingCount = await db.NodeBeats.CountAsync(sb => sb.NodeId == chapterNodeId, ct);
+        var existingCount = await db.BeatNodes.CountAsync(sb => sb.NodeId == chapterNodeId, ct);
         if (existingCount > 0)
         {
             log.LogInformation("Node {S} ({T}) already has {N} beats; not materialising.",
@@ -1122,13 +1122,13 @@ public class NodeWorkbenchService
                 Number    = baseNumber + numberOffset++,
                 Text      = pb.Text,
                 TextHash  = ComputeTextHash(pb.Text),
-                BeatTitle = pb.BeatTitle,
+                Title = pb.Title,
                 SceneType = pb.SceneType,
                 CreatedAt = now,
                 UpdatedAt = now,
             };
             db.Beats.Add(beat);
-            db.NodeBeats.Add(new NodeBeat
+            db.BeatNodes.Add(new BeatNode
             {
                 NodeId = chapterNodeId,
                 BeatId   = beat.Id,
@@ -1151,7 +1151,7 @@ public class NodeWorkbenchService
     private static readonly Regex ChapterBodyProtagonistLine = new(@"^\s*\*Protagonist:\s*[^*]+\*\s*$", RegexOptions.Compiled);
     private static readonly Regex ChapterBodySceneBreak = new(@"^\s*(?:---+|\*\*\*+|[-*]\s*[-*]\s*[-*][-*\s]*)\s*$", RegexOptions.Compiled);
 
-    private record ParsedBeat(string Text, string? BeatTitle, string SceneType);
+    private record ParsedBeat(string Text, string? Title, string SceneType);
 
     private static List<ParsedBeat> ParseChapterBodyIntoBeats(string body)
     {
@@ -1178,7 +1178,7 @@ public class NodeWorkbenchService
             // Protagonist marker — front matter, drop.
             if (ChapterBodyProtagonistLine.IsMatch(firstLine)) continue;
 
-            // ## Section heading — capture for next beat's BeatTitle; mark
+            // ## Section heading — capture for next beat's Title; mark
             // the prior beat as section-end so the silence pacer drops a
             // longer gap before the section opener.
             if (firstLine.StartsWith("## "))
@@ -1232,7 +1232,7 @@ public class NodeWorkbenchService
     public async Task JoinBeatWithPreviousAsync(Guid nodeId, Guid beatId, CancellationToken ct = default)
     {
         await using var db = await dbFactory.CreateDbContextAsync(ct);
-        var siblings = await db.NodeBeats
+        var siblings = await db.BeatNodes
             .Where(sb => sb.NodeId == nodeId)
             .OrderBy(sb => sb.SortKey)
             .ToListAsync(ct);
@@ -1252,10 +1252,10 @@ public class NodeWorkbenchService
         prev.UpdatedAt    = DateTime.UtcNow;
 
         // Drop the merged junction.
-        db.NodeBeats.Remove(siblings[pos]);
+        db.BeatNodes.Remove(siblings[pos]);
 
         // Delete the absorbed beat row if no other node still holds it.
-        var otherMemberships = await db.NodeBeats
+        var otherMemberships = await db.BeatNodes
             .Where(sb => sb.BeatId == beatId && sb.NodeId != nodeId)
             .AnyAsync(ct);
         if (!otherMemberships)
@@ -1267,14 +1267,14 @@ public class NodeWorkbenchService
         log.LogInformation("Joined beat {Beat} into {Prev} in node {Node}", beatId, prevId, nodeId);
     }
 
-    /// <summary>Soft-delete a beat from a node: sets <c>NodeBeat.IsEnabled = false</c>
+    /// <summary>Soft-delete a beat from a node: sets <c>BeatNode.IsEnabled = false</c>
     /// on the junction row. The Beat row and all its temporal history are preserved;
     /// <see cref="RestoreBeatAsync"/> can un-hide it. Audio is invalidated so a restore
     /// triggers re-narration rather than playing stale audio.</summary>
     public async Task DeleteBeatAsync(Guid nodeId, Guid beatId, CancellationToken ct = default)
     {
         await using var db = await dbFactory.CreateDbContextAsync(ct);
-        var junction = await db.NodeBeats
+        var junction = await db.BeatNodes
             .FirstOrDefaultAsync(sb => sb.NodeId == nodeId && sb.BeatId == beatId, ct);
         if (junction == null) return;
         if (!junction.IsEnabled) return; // already disabled — no-op
@@ -1288,13 +1288,13 @@ public class NodeWorkbenchService
         await db.SaveChangesAsync(ct);
     }
 
-    /// <summary>Restore a previously soft-deleted beat: sets <c>NodeBeat.IsEnabled = true</c>.
+    /// <summary>Restore a previously soft-deleted beat: sets <c>BeatNode.IsEnabled = true</c>.
     /// The beat re-appears in the normal (non-disabled) view. Audio remains stale until
     /// re-narrated.</summary>
     public async Task RestoreBeatAsync(Guid nodeId, Guid beatId, CancellationToken ct = default)
     {
         await using var db = await dbFactory.CreateDbContextAsync(ct);
-        var junction = await db.NodeBeats
+        var junction = await db.BeatNodes
             .FirstOrDefaultAsync(sb => sb.NodeId == nodeId && sb.BeatId == beatId, ct);
         if (junction == null || junction.IsEnabled) return;
         junction.IsEnabled = true;
@@ -1325,7 +1325,7 @@ public class NodeWorkbenchService
             """
             SELECT b.Id AS Id, COUNT(*) AS Cnt
             FROM [Beats] FOR SYSTEM_TIME ALL AS b
-            WHERE b.Id IN (SELECT BeatId FROM [NodeBeats] WHERE NodeId = {0})
+            WHERE b.Id IN (SELECT BeatId FROM [BeatNodes] WHERE NodeId = {0})
             GROUP BY b.Id
             """, nodeId).ToListAsync(ct);
         return rows.ToDictionary(r => r.Id, r => r.Cnt);
@@ -1902,7 +1902,7 @@ public class NodeWorkbenchService
                     var seg = segments[si];
                     var text = AssembleSegmentText(seg, ref chars);
                     exportProgress[nodeId] = new ExportProgress(si + 1, segments.Count,
-                        string.IsNullOrWhiteSpace(seg[0].Beat.BeatTitle) ? $"Segment {si + 1}/{segments.Count}" : seg[0].Beat.BeatTitle);
+                        string.IsNullOrWhiteSpace(seg[0].Beat.Title) ? $"Segment {si + 1}/{segments.Count}" : seg[0].Beat.Title);
 
                     // Last-ditch tier: a segment (e.g. a single over-long beat, or a
                     // chapter that alone exceeds the budget) can still top the per-request
@@ -2155,7 +2155,7 @@ public class NodeWorkbenchService
                             ct.ThrowIfCancellationRequested();
                             var o = ordered[i];
                             exportProgress[nodeId] = new ExportProgress(i + 1, ordered.Count,
-                                string.IsNullOrWhiteSpace(o.Beat.BeatTitle) ? $"Beat {i + 1}" : o.Beat.BeatTitle);
+                                string.IsNullOrWhiteSpace(o.Beat.Title) ? $"Beat {i + 1}" : o.Beat.Title);
                             var bytes = await ReadAllAudioAsync(o.Beat.AudioPath!, ct);
                             if (bytes == null || bytes.Length <= 44) continue;
                             await fs.WriteAsync(bytes.AsMemory(44), ct);
@@ -2203,7 +2203,7 @@ public class NodeWorkbenchService
                         ct.ThrowIfCancellationRequested();
                         k++;
                         exportProgress[nodeId] = new ExportProgress(k, ordered.Count,
-                            string.IsNullOrWhiteSpace(o.Beat.BeatTitle) ? $"Beat {k}" : o.Beat.BeatTitle);
+                            string.IsNullOrWhiteSpace(o.Beat.Title) ? $"Beat {k}" : o.Beat.Title);
                         var bytes = await ReadAllAudioAsync(o.Beat.AudioPath!, ct);
                         if (bytes == null) continue;
                         await msx.WriteAsync(bytes, ct);
@@ -2230,7 +2230,7 @@ public class NodeWorkbenchService
                             ct.ThrowIfCancellationRequested();
                             k++;
                             exportProgress[nodeId] = new ExportProgress(k, ordered.Count,
-                                string.IsNullOrWhiteSpace(o.Beat.BeatTitle) ? $"Beat {k}" : o.Beat.BeatTitle);
+                                string.IsNullOrWhiteSpace(o.Beat.Title) ? $"Beat {k}" : o.Beat.Title);
                             var local = await audioStore.ResolveLocalPathAsync(o.Beat.AudioPath!, ct);
                             if (local == null)
                             {
@@ -3034,8 +3034,8 @@ public class NodeWorkbenchService
     /// of these touch prose or audio — they just steer the narration's
     /// tone the next time the beat is re-recorded.</summary>
     public record BeatMetadataUpdate(
-        string? BeatTitle,
-        string? Synopsis,
+        string? Title,
+        string? Description,
         string? Subtext,
         string? EmotionalTone,
         string? PaceHint,

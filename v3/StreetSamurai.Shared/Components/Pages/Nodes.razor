@@ -86,10 +86,10 @@
                                            @bind="editTitle" @bind:event="oninput" />
                                 </div>
                                 <div class="mb-2">
-                                    <label class="form-label small text-muted mb-1">Synopsis <span class="text-muted" style="font-size:0.75em">(internal generation seed)</span></label>
+                                    <label class="form-label small text-muted mb-1">Description <span class="text-muted" style="font-size:0.75em">(back-of-book text)</span></label>
                                     <textarea class="form-control form-control-sm bg-black text-light border-secondary"
-                                              rows="3" placeholder="One-line generation seed / logline"
-                                              @bind="editSynopsis" @bind:event="oninput"></textarea>
+                                              rows="3" placeholder="Back-of-book description"
+                                              @bind="editDescription" @bind:event="oninput"></textarea>
                                 </div>
                                 <div class="mb-2">
                                     <label class="form-label small text-muted mb-1">Summary <span class="text-muted" style="font-size:0.75em">(back-of-book / KDP)</span></label>
@@ -212,13 +212,13 @@
                                     </div>
                                 </div>
                                 @* Full description — so you can see what each story is about at a glance. *@
-                                @if (!string.IsNullOrWhiteSpace(s.Synopsis))
+                                @if (!string.IsNullOrWhiteSpace(s.Description))
                                 {
-                                    <div class="node-synopsis-line mt-1">@s.Synopsis</div>
+                                    <div class="node-description-line mt-1">@s.Description</div>
                                 }
                                 else
                                 {
-                                    <div class="node-synopsis-line node-synopsis-empty mt-1">No description yet — click the pencil to add one.</div>
+                                    <div class="node-description-line node-description-empty mt-1">No description yet — click the pencil to add one.</div>
                                 }
                                 @* Full GUID — a stable handle to refer to this node (CLI, conversation). Click to copy. *@
                                 <code class="text-muted node-guid" title="Click to copy full id"
@@ -254,9 +254,9 @@
                                             <span class="badge bg-@StatusColor(kid.Status) text-uppercase">@StatusLabel(kid.Status)</span>
                                         </div>
                                     </div>
-                                    @if (!string.IsNullOrWhiteSpace(kid.Synopsis))
+                                    @if (!string.IsNullOrWhiteSpace(kid.Description))
                                     {
-                                        <div class="node-synopsis-line mt-1 ms-4">@kid.Synopsis</div>
+                                        <div class="node-description-line mt-1 ms-4">@kid.Description</div>
                                     }
                                 </li>
                             }
@@ -360,8 +360,8 @@
     .node-code-chip { font-size: 0.65rem; font-weight: 700; color: #0dcaf0; background: rgba(13,202,240,0.1); border: 1px solid rgba(13,202,240,0.3); border-radius: 3px; padding: 1px 5px; letter-spacing: 0.04em; font-family: monospace; flex-shrink: 0; }
     .node-guid { font-size: 0.68rem; color: #6c757d; cursor: pointer; }
     .node-guid:hover { color: #0dcaf0; }
-    .node-synopsis-line { font-size: 0.85rem; color: #adb5bd; white-space: pre-wrap; line-height: 1.35; }
-    .node-synopsis-empty { font-style: italic; color: #5c636a; }
+    .node-description-line { font-size: 0.85rem; color: #adb5bd; white-space: pre-wrap; line-height: 1.35; }
+    .node-description-empty { font-style: italic; color: #5c636a; }
     .review-sheet-backdrop { position: fixed; inset: 0; background: rgba(0,0,0,0.55); z-index: 1080; }
     .review-sheet {
         position: fixed; left: 0; right: 0; bottom: 0; z-index: 1090;
@@ -425,7 +425,7 @@
     // ── Inline title/synopsis/summary editing ────────────────────────────
     private Guid? editingId;
     private string editTitle = "";
-    private string editSynopsis = "";
+    private string editDescription = "";
     private string editSummary = "";
     private bool savingEdit;
 
@@ -433,14 +433,14 @@
     {
         editingId = s.Id;
         editTitle = s.Title;
-        editSynopsis = s.Synopsis ?? "";
+        editDescription = s.Description ?? "";
         editSummary = s.Summary ?? "";
     }
 
     private void CancelEdit()
     {
         editingId = null;
-        editTitle = editSynopsis = editSummary = "";
+        editTitle = editDescription = editSummary = "";
     }
 
     private async Task SaveEditAsync()
@@ -454,14 +454,14 @@
             var entity = await db.Nodes.FirstOrDefaultAsync(x => x.Id == id);
             if (entity == null) { Toast.Error("NODE-EDIT", "Story not found."); return; }
             entity.Title = editTitle.Trim();
-            entity.Synopsis = string.IsNullOrWhiteSpace(editSynopsis) ? null : editSynopsis.Trim();
+            entity.Description = string.IsNullOrWhiteSpace(editDescription) ? null : editDescription.Trim();
             entity.Summary = string.IsNullOrWhiteSpace(editSummary) ? null : editSummary.Trim();
             entity.UpdatedAt = DateTime.UtcNow;
             await db.SaveChangesAsync();
 
             // Reflect the change in the already-loaded list without a full reload.
             var local = nodes.FirstOrDefault(x => x.Id == id);
-            if (local != null) { local.Title = entity.Title; local.Synopsis = entity.Synopsis; local.Summary = entity.Summary; }
+            if (local != null) { local.Title = entity.Title; local.Description = entity.Description; local.Summary = entity.Summary; }
             grouped = nodes.GroupBy(s => s.Kind).OrderBy(g => g.Key);
             CancelEdit();
             Toast.Info("SAVED", "Story updated.");
@@ -591,7 +591,7 @@
         // Recursive descendant count: walk the parent → children map in memory
         // so a book node reports total beats across all chapter children,
         // not just the (zero) direct memberships. Single Node read + single
-        // NodeBeat read covers the whole site; the in-memory rollup is O(N)
+        // BeatNode read covers the whole site; the in-memory rollup is O(N)
         // and cheaper than a recursive CTE per row.
         var parentMap = await db.Nodes
             .AsNoTracking()
@@ -602,7 +602,7 @@
             .GroupBy(s => s.ParentNodeId!.Value)
             .ToDictionary(g => g.Key, g => g.Select(x => x.Id).ToList());
 
-        var perNodeBeatCount = await db.NodeBeats
+        var perBeatNodeCount = await db.BeatNodes
             .GroupBy(sb => sb.NodeId)
             .Select(g => new { NodeId = g.Key, Count = g.Count() })
             .ToDictionaryAsync(x => x.NodeId, x => x.Count);
@@ -618,7 +618,7 @@
             {
                 var id = stack.Pop();
                 if (!visited.Add(id)) continue; // cycle guard
-                total += perNodeBeatCount.GetValueOrDefault(id, 0);
+                total += perBeatNodeCount.GetValueOrDefault(id, 0);
                 if (byParent.TryGetValue(id, out var kids))
                     foreach (var k in kids) stack.Push(k);
             }
@@ -645,7 +645,7 @@
             // Also seed beat counts for children so the expanded rows show accurate counts.
             foreach (var kid in childList)
                 if (!beatCounts.ContainsKey(kid.Id))
-                    beatCounts[kid.Id] = perNodeBeatCount.GetValueOrDefault(kid.Id, 0);
+                    beatCounts[kid.Id] = perBeatNodeCount.GetValueOrDefault(kid.Id, 0);
         }
         else
         {
@@ -656,7 +656,7 @@
         var allIds = nodes.Select(s => s.Id)
             .Concat(childNodes.Values.SelectMany(v => v.Select(c => c.Id)))
             .Distinct().ToList();
-        var charCounts = await db.NodeBeats
+        var charCounts = await db.BeatNodes
             .AsNoTracking()
             .Where(sb => allIds.Contains(sb.NodeId) && sb.IsEnabled)
             .Join(db.Beats.AsNoTracking().Where(b => b.Text != null && b.Text != ""),

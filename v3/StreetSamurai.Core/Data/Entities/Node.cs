@@ -1,4 +1,4 @@
-namespace StreetSamurai.Core.Data.Entities;
+﻿namespace StreetSamurai.Core.Data.Entities;
 
 /// <summary>
 /// Abstract base of the story tree (table-per-hierarchy on the Nodes table,
@@ -10,7 +10,7 @@ namespace StreetSamurai.Core.Data.Entities;
 ///                 is a standalone/leaf story with no chapter children.
 ///       ChapterNode — organizational unit inside a story; holds beats.
 ///
-/// Beats attach via <see cref="NodeBeat"/> to ChapterNodes and to leaf
+/// Beats attach via <see cref="BeatNode"/> to ChapterNodes and to leaf
 /// StoryNodes; a SeriesNode never holds beats directly. Walking the tree in
 /// SortKey order gives the reading sequence.
 ///
@@ -39,9 +39,9 @@ public abstract class Node
 
     public string Title { get; set; } = "";
 
-    /// <summary>Short synopsis — what this node is about. Surfaces in
+    /// <summary>Back-of-book description — what this node is about. Surfaces in
     /// listings and feeds LLM context.</summary>
-    public string? Synopsis { get; set; }
+    public string? Description { get; set; }
 
     /// <summary>Back-of-book / KDP blurb — longer marketing summary distinct
     /// from the internal Synopsis. Optional.</summary>
@@ -263,7 +263,7 @@ public abstract class Node
     // ── Navigation ───────────────────────────────────────────────────────
 
     public List<Node> Children { get; set; } = new();
-    public List<NodeBeat> NodeBeats { get; set; } = new();
+    public List<BeatNode> BeatNodes { get; set; } = new();
 
     /// <summary>Publish-run history (1:M). Each Publish appends one row; the
     /// latest completed run's file is what <see cref="CombinedAudioPath"/>

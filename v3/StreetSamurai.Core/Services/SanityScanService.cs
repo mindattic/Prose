@@ -1,4 +1,4 @@
-using System.Text.RegularExpressions;
+﻿using System.Text.RegularExpressions;
 using Microsoft.EntityFrameworkCore;
 using StreetSamurai.Core.Data;
 
@@ -76,12 +76,12 @@ public class SanityScanService(IDbContextFactory<StreetSamuraiDbContext> dbFacto
         // Load the node + its ordered beats (same pattern as StoryAuditService)
         var node = await db.Nodes
             .AsNoTracking()
-            .Include(s => s.NodeBeats)
+            .Include(s => s.BeatNodes)
             .ThenInclude(sb => sb.Beat)
             .FirstOrDefaultAsync(s => s.Id == nodeId, ct)
             ?? throw new InvalidOperationException($"Node {nodeId} not found.");
 
-        var orderedBeats = node.NodeBeats
+        var orderedBeats = node.BeatNodes
             .Where(sb => sb.IsEnabled && sb.Beat != null)
             .OrderBy(sb => sb.SortKey)
             .Select(sb => sb.Beat!)

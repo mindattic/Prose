@@ -1,4 +1,4 @@
-using System.Text;
+﻿using System.Text;
 using Microsoft.Data.SqlClient;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Logging;
@@ -231,7 +231,7 @@ public class MojibakeRepairService
         IEnumerable<StreetSamurai.Core.Data.Entities.Beat> beats;
         if (nodeId.HasValue)
         {
-            var beatIds = await db.NodeBeats
+            var beatIds = await db.BeatNodes
                 .Where(sb => sb.NodeId == nodeId.Value)
                 .Select(sb => sb.BeatId)
                 .ToListAsync(ct);
@@ -252,13 +252,13 @@ public class MojibakeRepairService
         foreach (var beat in beats)
         {
             bool textDirty  = !string.IsNullOrEmpty(beat.Text)      && ContainsMojibake(beat.Text!);
-            bool titleDirty = !string.IsNullOrEmpty(beat.BeatTitle)  && ContainsMojibake(beat.BeatTitle!);
+            bool titleDirty = !string.IsNullOrEmpty(beat.Title)  && ContainsMojibake(beat.Title!);
             if (!textDirty && !titleDirty) continue;
 
             result.BeatsAffected++;
-            var sample = (beat.Text ?? beat.BeatTitle ?? "").Length > 120
-                ? (beat.Text ?? beat.BeatTitle ?? "")[..120] + "…"
-                : (beat.Text ?? beat.BeatTitle ?? "");
+            var sample = (beat.Text ?? beat.Title ?? "").Length > 120
+                ? (beat.Text ?? beat.Title ?? "")[..120] + "…"
+                : (beat.Text ?? beat.Title ?? "");
             result.Hits.Add(new DetectHit(beat.Id, nodeTitle, sample));
         }
 

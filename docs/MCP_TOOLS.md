@@ -868,7 +868,7 @@ Create a ChapterNode under a story. Chapters hold beats and never carry a refere
 
 - `title` (string, required) — Chapter title. Required.
 - `parentNodeIdOrSlug` (string, required) — Parent StoryNode Guid id or slug. Required.
-- `synopsis` (string, optional) — Optional synopsis.
+- `description` (string, optional) — Optional back-of-book description.
 
 ### `create_series`
 
@@ -876,14 +876,14 @@ Create a SeriesNode — the top-level grouping (saga / anthology) that StoryNode
 
 - `title` (string, required) — Series title. Required.
 - `code` (string, optional) — Optional short reference code (e.g. 'BCODA'). Upper-cased; rejected if already in use.
-- `synopsis` (string, optional) — Optional one-line synopsis.
+- `description` (string, optional) — Optional one-line description (back-of-book text).
 
 ### `create_story`
 
 Create a StoryNode — a single story arc (book / novella / standalone). Pass 'seed' to also generate a story bible and planned beats immediately. Optional parent makes it part of a series; optional previous marks it a sequel (sequel commandments apply). Returns the new id, slug, url, and (if generated) the bible text.
 
 - `title` (string, required) — Story title. Required.
-- `synopsis` (string, optional) — Optional synopsis.
+- `description` (string, optional) — Optional back-of-book description.
 - `seed` (string, optional) — One-line generation seed. When provided, the story bible and planned beats are created immediately after the row is inserted.
 - `targetBeats` (int, optional) — Target beat count for the bible spine (only used when seed is provided). Default 12.
 - `parentNodeIdOrSlug` (string, optional) — Optional parent SeriesNode Guid id (or slug). Empty = standalone.
@@ -926,7 +926,7 @@ Return the score history for a node as a time-series — every review run that p
 
 ### `get_story`
 
-Get a single node with its beats in reading order. Accepts a Guid id OR a slug. Returns node metadata + ordered beats (id, text, stale, has_audio, beat_title, synopsis).
+Get a single node with its beats in reading order. Accepts a Guid id OR a slug. Returns node metadata + ordered beats (id, text, stale, has_audio, title, description).
 
 - `idOrSlug` (string, required) — Node Guid id or slug.
 
@@ -1058,18 +1058,18 @@ Split one beat into two at the nearest sentence boundary near its midpoint. Both
 
 ### `update_beat_metadata`
 
-Update a beat's metadata: BeatTitle, Synopsis, EmotionalTone, PaceHint, StructureRole, Act, SceneType, IsChapterStart, Kind. Pass empty strings to clear nullable fields. Does NOT touch prose or audio. Use to mark a beat as a chapter start, change its kind to quote/dedication/book-title, or set the tone the next re-record uses.
+Update a beat's metadata: Title, Description, EmotionalTone, PaceHint, StructureRole, Act, SceneType, IsChapterStart, Kind. Pass empty strings to clear nullable fields. Does NOT touch prose or audio. Use to mark a beat as a chapter start, change its kind to quote/dedication/book-title, or set the tone the next re-record uses.
 
 - `beatHandle` (string, required) — Beat Guid OR 'node-guid.beat-guid' handle.
-- `beatTitle` (string, optional) — Short label. When IsChapterStart=true this is the chapter heading; when Kind=quote this is the attribution.
-- `synopsis` (string, optional) — One-line synopsis fed to LLM regenerations.
+- `title` (string, optional) — Short label. When IsChapterStart=true this is the chapter heading; when Kind=quote this is the attribution.
+- `description` (string, optional) — One-line description fed to LLM regenerations.
 - `subtext` (string, optional) — What is happening beneath the prose — foreshadowing, unspoken motivations, dramatic irony. Visible to the prose writer LLM but never printed.
 - `emotionalTone` (string, optional) — Emotional tone, e.g. 'quiet' / 'tense' / 'wry'.
 - `paceHint` (string, optional) — Pace hint, e.g. 'flowing' / 'clipped' / 'staccato' / 'languorous'.
 - `structureRole` (string, optional) — Structure role, e.g. 'inciting-incident' / 'rising-action' / 'climax'.
 - `act` (int, optional) — Plot-act number 0–5. 0 = unassigned.
 - `sceneType` (string, optional) — Scene type: scene | summary | transition | interstitial.
-- `isChapterStart` (bool, optional) — True = this beat begins a new chapter / section. The writer renders a divider above it with BeatTitle as the heading.
+- `isChapterStart` (bool, optional) — True = this beat begins a new chapter / section. The writer renders a divider above it with Title as the heading.
 - `kind` (string, optional) — Beat kind: prose (default) | book-title | dedication | quote. Free-form so new kinds add no schema cost.
 
 ### `update_beat_text`
@@ -1081,11 +1081,11 @@ Update one beat's prose. Recomputes the hash, marks the beat stale, and invalida
 
 ### `update_story`
 
-Update a node's metadata fields. Pass only the fields you want to change — omit the rest to leave them unchanged. Editable fields: title, synopsis, kind, status, seed, code (NodeCode), voice_id. Status valid values: draft | ready | canon | archived. Code is uppercased and must be unique across non-null values — pass empty string to clear it. Does NOT touch beats or audio.
+Update a node's metadata fields. Pass only the fields you want to change — omit the rest to leave them unchanged. Editable fields: title, description, kind, status, seed, code (NodeCode), voice_id. Status valid values: draft | ready | canon | archived. Code is uppercased and must be unique across non-null values — pass empty string to clear it. Does NOT touch beats or audio.
 
 - `idOrSlug` (string, required) — Node id (GUID) or slug.
 - `title` (string, optional) — New title. Omit to leave unchanged.
-- `synopsis` (string, optional) — Short synopsis. Omit to leave unchanged; pass empty string to clear.
+- `description` (string, optional) — Back-of-book description. Omit to leave unchanged; pass empty string to clear.
 - `kind` (string, optional) — Kind label: book | chapter | episode | novella | novel | node | scene | saga | anthology. Omit to leave unchanged.
 - `status` (string, optional) — Status: draft | ready | canon | archived. Omit to leave unchanged.
 - `seed` (string, optional) — Generation seed (one-line premise). Omit to leave unchanged; pass empty string to clear.

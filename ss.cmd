@@ -2,8 +2,7 @@
 rem ──────────────────────────────────────────────────────────────────────────
 rem  ss — StreetSamurai CLI shim
 rem
-rem  Forwards every argument to the Blazor host project, which dispatches to
-rem  the appropriate CLI handler (MigrateSqlCli, BookCli, AskCli, etc.).
+rem  Forwards every argument to the standalone CLI project.
 rem
 rem  Usage examples:
 rem    ss --migrate-sql --rebuild
@@ -19,11 +18,11 @@ setlocal
 
 rem Locate this script's directory (the repo root) so `ss` works from anywhere.
 set "REPO_ROOT=%~dp0"
-set "BLAZOR_PROJ=%REPO_ROOT%v3\StreetSamurai.Blazor"
+set "CLI_PROJ=%REPO_ROOT%v3\StreetSamurai.Cli"
 
 rem `dotnet run` does an incremental build automatically — fast on warm builds,
 rem and always up-to-date when source has changed. Pass-through every arg.
-dotnet run --project "%BLAZOR_PROJ%" -- %*
+dotnet run --project "%CLI_PROJ%" -- %*
 
 endlocal
 exit /b %ERRORLEVEL%

@@ -12,7 +12,7 @@ namespace StreetSamurai.Cli;
 ///   --title "..."          Display title. Required.
 ///   --code &lt;CODE&gt;          Optional short reference code (e.g. SRZR). Upper-cased; must be unique.
 ///   --kind &lt;k&gt;             Category — "story" (default), "book", "chapter", "vignette"…
-///   --synopsis "..."       Optional one-line synopsis.
+///   --description "..."       Optional one-line description.
 ///   --logline "..."        Optional one-line generator seed / logline (stored in Node.Seed).
 ///                          (Named --logline, not --seed, to avoid the global DB seed-runner flag.)
 ///   --previous &lt;slug|id&gt;   Optional prior node this one continues (sequel commandments).
@@ -24,7 +24,7 @@ public static class CreateNodeCli
 {
     public static async Task<int> RunAsync(string[] args, IServiceProvider services)
     {
-        string? title = null, code = null, synopsis = null, seed = null, previous = null, parent = null;
+        string? title = null, code = null, description = null, seed = null, previous = null, parent = null;
         string kind = "story";
 
         for (int i = 0; i < args.Length; i++)
@@ -34,7 +34,7 @@ public static class CreateNodeCli
                 case "--title":    if (i + 1 < args.Length) title    = args[++i]; break;
                 case "--code":     if (i + 1 < args.Length) code     = args[++i]; break;
                 case "--kind":     if (i + 1 < args.Length) kind     = args[++i]; break;
-                case "--synopsis": if (i + 1 < args.Length) synopsis = args[++i]; break;
+                case "--description": if (i + 1 < args.Length) description = args[++i]; break;
                 case "--logline":  if (i + 1 < args.Length) seed     = args[++i]; break;
                 case "--previous": if (i + 1 < args.Length) previous = args[++i]; break;
                 case "--parent":   if (i + 1 < args.Length) parent   = args[++i]; break;
@@ -44,7 +44,7 @@ public static class CreateNodeCli
         if (string.IsNullOrWhiteSpace(title))
         {
             Console.Error.WriteLine("[create-story] --title is required.");
-            Console.Error.WriteLine("Usage: ss --create-story --title \"...\" [--code SRZR] [--kind story] [--synopsis \"...\"] [--logline \"...\"] [--previous <slug|id>] [--parent <slug|id>]");
+            Console.Error.WriteLine("Usage: ss --create-story --title \"...\" [--code SRZR] [--kind story] [--description \"...\"] [--logline \"...\"] [--previous <slug|id>] [--parent <slug|id>]");
             return 2;
         }
 
@@ -67,7 +67,7 @@ public static class CreateNodeCli
         try
         {
             var (id, slug) = await workbench.CreateNodeAsync(
-                title!, kind, synopsis, seed, code, previousId, parentId);
+                title!, kind, description, seed, code, previousId, parentId);
 
             Console.WriteLine($"[create-story] Created node:");
             Console.WriteLine($"   Id:    {id}");

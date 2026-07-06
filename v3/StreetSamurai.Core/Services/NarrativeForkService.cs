@@ -1,4 +1,4 @@
-using Microsoft.EntityFrameworkCore;
+﻿using Microsoft.EntityFrameworkCore;
 using StreetSamurai.Core.Data;
 using StreetSamurai.Core.Interfaces;
 using System.Text.RegularExpressions;
@@ -58,11 +58,11 @@ public class NarrativeForkService(
 
             if (nextChapterId.HasValue)
             {
-                var rows = await db.NodeBeats.AsNoTracking()
+                var rows = await db.BeatNodes.AsNoTracking()
                     .Where(sb => sb.NodeId == nextChapterId.Value && sb.IsEnabled)
                     .Join(db.Beats.AsNoTracking(),
                           sb => sb.BeatId, b => b.Id,
-                          (sb, b) => new { b.Id, Goal = b.Synopsis ?? b.BeatTitle ?? "" })
+                          (sb, b) => new { b.Id, Goal = b.Description ?? b.Title ?? "" })
                     .Where(x => x.Goal != "")
                     .OrderBy(x => x.Id)
                     .ToListAsync(ct);
@@ -103,11 +103,11 @@ public class NarrativeForkService(
                 .FirstOrDefaultAsync(ct);
             bibleText = node?.NodeBible;
 
-            var rows = await db.NodeBeats.AsNoTracking()
+            var rows = await db.BeatNodes.AsNoTracking()
                 .Where(sb => sb.NodeId == nodeId && sb.IsEnabled)
                 .Join(db.Beats.AsNoTracking().Where(b => b.Text == null || b.Text == ""),
                       sb => sb.BeatId, b => b.Id,
-                      (sb, b) => new { b.Id, Goal = b.Synopsis ?? b.BeatTitle ?? "" })
+                      (sb, b) => new { b.Id, Goal = b.Description ?? b.Title ?? "" })
                 .Where(x => x.Goal != "")
                 .OrderBy(x => x.Id)
                 .Take(nextBeatWindow)
@@ -239,7 +239,7 @@ public class NarrativeForkService(
         {
             var beat = await db.Beats.FindAsync([beats[i].BeatId], ct);
             if (beat == null) continue;
-            beat.Synopsis  = lines[i].Length > 500 ? lines[i][..500] : lines[i];
+            beat.Description  = lines[i].Length > 500 ? lines[i][..500] : lines[i];
             beat.UpdatedAt = DateTime.UtcNow;
             updated++;
         }

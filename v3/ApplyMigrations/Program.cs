@@ -1,4 +1,4 @@
-using Microsoft.EntityFrameworkCore;
+﻿using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Logging;
 using StreetSamurai.Core.Data;
@@ -158,7 +158,7 @@ Console.WriteLine($"    ✓ {foldedNodes} nested node(s) folded, {chapterStarts}
 
 // ── Temporal versioning ────────────────────────────────────────────────
 // Turn on SQL Server SYSTEM_VERSIONING for every table in the temporal set
-// (Beats / Nodes / NodeBeats + the canon tables). Idempotent: tables
+// (Beats / Nodes / BeatNodes + the canon tables). Idempotent: tables
 // already temporal are skipped, so this is a near no-op on re-deploys and
 // self-heals any table newly added to the set. Runs AFTER the .sql column
 // migrations (so each table has its final shape before the period columns
@@ -182,7 +182,7 @@ var gapsTableGone    = await db.Database.SqlQueryRaw<int>(
         "SELECT CASE WHEN OBJECT_ID('dbo.Gaps','U') IS NULL THEN 1 ELSE 0 END AS Value")
     .SingleAsync();
 var nodeTemporalOn = await db.Database.SqlQueryRaw<int>(
-        "SELECT COUNT(*) AS Value FROM sys.tables WHERE name IN ('Beats','Nodes','NodeBeats') AND temporal_type = 2")
+        "SELECT COUNT(*) AS Value FROM sys.tables WHERE name IN ('Beats','Nodes','BeatNodes') AND temporal_type = 2")
     .SingleAsync();
 Console.WriteLine();
 Console.WriteLine($"Beats total                : {beatCount}");
@@ -191,7 +191,7 @@ Console.WriteLine($"Beats with GapAfterMs set  : {beatsWithGapMs}");
 Console.WriteLine($"Beats marked IsChapterStart: {beatsAsChapter}");
 Console.WriteLine($"Nested (non-root) nodes  : {nestedNodes}  (should be 0)");
 Console.WriteLine($"Gaps table dropped         : {(gapsTableGone == 1 ? "yes" : "no")}");
-Console.WriteLine($"Node temporal tables on  : {nodeTemporalOn}/3  (Beats, Nodes, NodeBeats)");
+Console.WriteLine($"Node temporal tables on  : {nodeTemporalOn}/3  (Beats, Nodes, BeatNodes)");
 return 0;
 
 // ───────────────────────────────────────────────────────────────────────
@@ -217,7 +217,7 @@ async Task<(int nodesFolded, int chapterMarkers)> FoldNestedNodesAsync(
             // Flat node — just ensure beat #1 is marked as a chapter start
             // so the UI renders "Chapter 1: <node title>" above the first beat.
             await using var flatDb = await factory.CreateDbContextAsync();
-            var firstBeatId = await flatDb.NodeBeats
+            var firstBeatId = await flatDb.BeatNodes
                 .Where(sb => sb.NodeId == root.Id)
                 .OrderBy(sb => sb.SortKey)
                 .Select(sb => sb.BeatId)
@@ -252,7 +252,7 @@ async Task<(int nodesFolded, int chapterMarkers)> FoldNestedNodesAsync(
         // Pull all junctions for the subtree, then rebuild contiguously.
         await using var workDb = await factory.CreateDbContextAsync();
         var subtreeIds = subtree.Select(s => s.Id).ToHashSet();
-        var allJunctions = await workDb.NodeBeats
+        var allJunctions = await workDb.BeatNodes
             .Where(sb => subtreeIds.Contains(sb.NodeId))
             .ToListAsync();
 
@@ -276,12 +276,12 @@ async Task<(int nodesFolded, int chapterMarkers)> FoldNestedNodesAsync(
         }
 
         // Wipe all subtree junctions and re-add under the root with new keys.
-        workDb.NodeBeats.RemoveRange(allJunctions);
+        workDb.BeatNodes.RemoveRange(allJunctions);
         await workDb.SaveChangesAsync();
 
         foreach (var p in plan)
         {
-            workDb.NodeBeats.Add(new NodeBeat
+            workDb.BeatNodes.Add(new BeatNode
             {
                 NodeId = root.Id,
                 BeatId   = p.beatId,

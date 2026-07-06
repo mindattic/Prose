@@ -1,4 +1,4 @@
-using Microsoft.EntityFrameworkCore;
+﻿using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.ChangeTracking;
 using MindAttic.Media;
 using StreetSamurai.Core.Data.Entities;
@@ -113,7 +113,7 @@ public class StreetSamuraiDbContext : DbContext
     public DbSet<EpisodeSurvey>      EpisodeSurveys      => Set<EpisodeSurvey>();
 
     // Unified storytelling schema — Beat = atom of prose+audio, Node =
-    // ordered composition (replaces Book/Chapter/Episode), NodeBeat =
+    // ordered composition (replaces Book/Chapter/Episode), BeatNode =
     // junction. The whole system migrates onto these three.
     public DbSet<Beat>               Beats               => Set<Beat>();
     public DbSet<BeatEntityMention>  BeatEntityMentions  => Set<BeatEntityMention>();
@@ -123,7 +123,7 @@ public class StreetSamuraiDbContext : DbContext
     public DbSet<SeriesNode>       SeriesNodes       => Set<SeriesNode>();
     public DbSet<StoryNode>        StoryNodes        => Set<StoryNode>();
     public DbSet<ChapterNode>      ChapterNodes      => Set<ChapterNode>();
-    public DbSet<NodeBeat>         NodeBeats         => Set<NodeBeat>();
+    public DbSet<BeatNode>         BeatNodes         => Set<BeatNode>();
     public DbSet<NodePublication>  NodePublications  => Set<NodePublication>();
     public DbSet<NodeAudioEvent>   NodeAudioEvents   => Set<NodeAudioEvent>();
     // Persona reader-reviews + their Amazon-style aggregate summary (nodes).
@@ -443,7 +443,7 @@ public class StreetSamuraiDbContext : DbContext
             e.Property(x => x.Text).IsRequired();
             e.Property(x => x.SceneType).HasMaxLength(40).IsRequired();
             e.Property(x => x.Slug).HasMaxLength(200);
-            e.Property(x => x.BeatTitle).HasMaxLength(400);
+            e.Property(x => x.Title).HasMaxLength(400);
             e.Property(x => x.AudioPath).HasMaxLength(400);
             e.Property(x => x.TextHash).HasMaxLength(80);
             e.Property(x => x.LastRequestId).HasMaxLength(120);
@@ -490,12 +490,12 @@ public class StreetSamuraiDbContext : DbContext
             // Universe scoping (SS-LAW-15). No-op when ScopedUniverseId is Guid.Empty.
             e.HasQueryFilter(x => ScopedUniverseId == Guid.Empty || x.UniverseId == ScopedUniverseId);
         });
-        b.Entity<NodeBeat>(e =>
+        b.Entity<BeatNode>(e =>
         {
             e.HasKey(x => new { x.NodeId, x.BeatId });
-            e.HasOne(x => x.Node).WithMany(x => x.NodeBeats)
+            e.HasOne(x => x.Node).WithMany(x => x.BeatNodes)
                 .HasForeignKey(x => x.NodeId).OnDelete(DeleteBehavior.Cascade);
-            e.HasOne(x => x.Beat).WithMany(x => x.NodeBeats)
+            e.HasOne(x => x.Beat).WithMany(x => x.BeatNodes)
                 .HasForeignKey(x => x.BeatId).OnDelete(DeleteBehavior.Cascade);
             e.HasIndex(x => new { x.NodeId, x.SortKey });
             e.HasIndex(x => x.BeatId);
@@ -2382,7 +2382,7 @@ public class StreetSamuraiDbContext : DbContext
         "FlyoverEntities", "FlyoverEntityAliases", "FlyoverEntityKnownLocations", "FlyoverEntityStoryHooks",
         "Books", "BookProtagonists", "BookChapterOrder",
         "Chapters", "ChapterCharacters", "ChapterBeats",
-        // Unified node writer model (Beat / Node / NodeBeat junction).
+        // Unified node writer model (Beat / Node / BeatNode junction).
         // System-versioned so every prose edit, metadata change, membership
         // shuffle, AND deletion lands in {Table}_History — that's the rewind
         // the writer's per-beat version cycler reads via FOR SYSTEM_TIME ALL,
@@ -2391,7 +2391,7 @@ public class StreetSamuraiDbContext : DbContext
         // neither table carries a vector index (prose embeddings live in the
         // separate ProseEmbeddings table), so the SQL Server vector-index ↔
         // system-versioning incompatibility doesn't apply here.
-        "Beats", "Nodes", "NodeBeats",
+        "Beats", "Nodes", "BeatNodes",
         "ContinuityClaims",
         "EntityStateEvents",
         "WeaponSpecs",

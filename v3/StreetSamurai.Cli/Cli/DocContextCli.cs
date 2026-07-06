@@ -38,15 +38,15 @@ public static class DocContextCli
         {
             var node = await db.Nodes.AsNoTracking()
                 .Where(s => s.Slug == slug)
-                .Select(s => new { s.Id, s.NodeCode, s.Title, s.Synopsis, s.Seed })
+                .Select(s => new { s.Id, s.NodeCode, s.Title, s.Description, s.Seed })
                 .FirstOrDefaultAsync();
             if (node == null) { Console.Error.WriteLine($"[doc-context] node not found: {slug}"); return 1; }
 
             nodeId    = node.Id;
             nodeCode  = node.NodeCode ?? "";
             title       = node.Title ?? slug!;
-            triggerText = !string.IsNullOrWhiteSpace(goal)            ? goal!
-                        : !string.IsNullOrWhiteSpace(node.Synopsis) ? node.Synopsis!
+            triggerText = !string.IsNullOrWhiteSpace(goal)               ? goal!
+                        : !string.IsNullOrWhiteSpace(node.Description) ? node.Description!
                         : (node.Seed ?? "");
         }
 

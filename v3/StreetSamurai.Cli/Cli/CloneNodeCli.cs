@@ -74,7 +74,7 @@ public static class CloneNodeCli
         }
 
         // ── Load enabled beats in SortKey order ───────────────────────────────
-        var sourceBeats = await db.NodeBeats
+        var sourceBeats = await db.BeatNodes
             .AsNoTracking()
             .Where(sb => sb.NodeId == source.Id && sb.IsEnabled)
             .OrderBy(sb => sb.SortKey)
@@ -107,7 +107,7 @@ public static class CloneNodeCli
         newNode.NodeCode        = code;
         newNode.Kind            = source.Kind;
         newNode.Status          = status;
-        newNode.Synopsis        = source.Synopsis;
+        newNode.Description     = source.Description;
         newNode.Seed            = source.Seed;
         newNode.UniverseId      = source.UniverseId;
         newNode.VoiceId         = source.VoiceId;
@@ -136,8 +136,8 @@ public static class CloneNodeCli
                 Id              = beatId,
                 Number          = nextNum++,
                 Text            = src.Text,
-                BeatTitle       = src.BeatTitle,
-                Synopsis        = src.Synopsis,
+                Title           = src.Title,
+                Description     = src.Description,
                 StructureRole   = src.StructureRole,
                 Act             = src.Act,
                 SceneType       = src.SceneType,
@@ -156,7 +156,7 @@ public static class CloneNodeCli
             };
             db.Beats.Add(cloned);
 
-            db.NodeBeats.Add(new NodeBeat
+            db.BeatNodes.Add(new BeatNode
             {
                 NodeId  = newId,
                 BeatId    = beatId,

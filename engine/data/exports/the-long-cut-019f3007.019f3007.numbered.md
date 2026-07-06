@@ -14,9 +14,9 @@ The closing stitch is a 2-0 Prolene, and Jude Adeyemi places it the way she plac
 
 The power flickers. The Unit's lighting drops to half for four seconds, then catches again. She does not look up. The stabilizer on the wall has been complaining for three weeks; she knows its rhythms the way you know a colleague's bad shoulder. It will hold until morning. The runner on the table will be awake by morning.
 
-His name is Dalco. Twenty-two years old, West African-Korean parentage, an NREN courier who took a punch blade to the lower left chest on what he described to her as a package dispute. The punch blade caught a branch of the left anterior descending, nicked the pericardium, and introduced approximately 380 milliliters of blood into a cavity that does not benefit from blood. She had drained it, patched the nicked vessel, flushed, and now she was closing. He would be sore for six weeks. He would need physical therapy he would not receive. He would be fine.
+His name is Rudeboi. Twenty-two years old, West African-Korean parentage, an NREN courier who took a punch blade to the lower left chest on what he described to her as a package dispute. The punch blade caught a branch of the left anterior descending, nicked the pericardium, and introduced approximately 380 milliliters of blood into a cavity that does not benefit from blood. She had drained it, patched the nicked vessel, flushed, and now she was closing. He would be sore for six weeks. He would need physical therapy he would not receive. He would be fine.
 
-He had been conscious when he came in, which is not always the case with this kind of injury. He had said two things: his name, and that he didn't have money. She had told him to lie down. She had told Femi, who had been awake because Femi is frequently awake when she needs him to be, to start the prep. She had opened the chest twenty minutes after Dalco arrived at the door and closed it a little over two hours later. This is splicer work. This is what has been done, in this space, in spaces like this, in every ungoverned margin where the corpo clinics don't run night hours and the nearest NSB-adjacent emergency unit is forty minutes and three jurisdictional checks away. You open the chest. You close the chest. You count the sponges.
+He had been conscious when he came in, which is not always the case with this kind of injury. He had said two things: his name, and that he didn't have money. She had told him to lie down. She had told Femi, who had been awake because Femi is frequently awake when she needs him to be, to start the prep. She had opened the chest twenty minutes after Rudeboi arrived at the door and closed it a little over two hours later. This is splicer work. This is what has been done, in this space, in spaces like this, in every ungoverned margin where the corpo clinics don't run night hours and the nearest NSB-adjacent emergency unit is forty minutes and three jurisdictional checks away. You open the chest. You close the chest. You count the sponges.
 
 She works her way along the sternotomy with the Prolene. Her back aches in a band across the L4-L5 junction, the particular ache of surgical posture maintained too long. She catalogs this without acting on it. Pain is information.
 
@@ -26,13 +26,13 @@ Outside, the Gray Zone runs at its own rhythm. Austin at 0311 is not silent -- i
 
 She finishes the sternotomy closure and moves to the subcutaneous layer. 3-0 Vicryl, buried interrupted. The technique is automatic. She lets it be automatic and takes stock of the supply tray: two more Vicryl packages, one chromic gut, a partial box of 4-0 Monocryl for the skin closure. Three pairs of gloves left after this case. The supply run is overdue.
 
-She does not have money for the supply run. She has Dalco's case, which will produce no money. She has the chest infection case, which will produce no money. She has, in her general account, two hundred and eight Phi, which is enough for rent through the end of the month and approximately half of what she needs for supplies.
+She does not have money for the supply run. She has Rudeboi's case, which will produce no money. She has the chest infection case, which will produce no money. She has, in her general account, two hundred and eight Phi, which is enough for rent through the end of the month and approximately half of what she needs for supplies.
 
 The Unit has run this way for seven years. Not always at two hundred and eight Phi -- there have been months with more and months with considerably less -- but always on the arithmetic of a place that charges what people can pay, which is a number that bears an inconsistent relationship to the cost of operating. She ran the math when she started and concluded the clinic would fail within two years, and she ran the math again last quarter and concluded the same thing, and the clinic is in its seventh year, which means the math is wrong in some structural way she has not identified. She has stopped running the formal calculation. The formal calculation does not capture the things the clinic runs on: the Bloom Quarter collective's payment extensions, the surplus sales in the West Town corridor, Femi's ability to find exactly what she needs for exactly less than she expects to pay.
 
 She closes the skin with the Monocryl. Running subcuticular, no knots. The work is clean. She pulls off her gloves, drops them in the biohazard bin, and begins her count of the supply tray before she has consciously decided to do it. Needles: four used, four on the tray, eight total on account. Sponges: six used, four on tray, ten on account. Instruments: all present. She has been counting since she was a junior field surgeon learning that counting prevented the particular horror of leaving things inside people. The count has become reflex; she trusts reflex more than intention.
 
-Dalco is breathing. His chest moves with the even regularity of someone who has crossed back over the line. She strips off the surgical drapes, bags them, and begins breaking down the field.
+Rudeboi is breathing. His chest moves with the even regularity of someone who has crossed back over the line. She strips off the surgical drapes, bags them, and begins breaking down the field.
 
 There is no one to assist her. Femi is asleep in the back room; she does not wake him for cases that can be managed alone. He is seventeen, and he came to her three years ago with a badly set compound fracture, and stayed because she asked him if he could count and he said yes, he could count anything. He will wake up at six and start the morning routine without being told. She has not asked him why he does this. She has not asked because the answer involves a mother who is no longer present, and information of that kind requires something from her that she cannot currently afford.
 
@@ -40,9 +40,9 @@ What she knows about Femi is this: he is reliable in the way of someone who has 
 
 She mops the floor around the table with a dilute chlorhexidine solution. The work is unglamorous. She does it without resentment because resentment requires energy and energy is a resource she manages carefully. The table will be clean. The room will be ready for the next case. This is what the night requires of her and she provides it.
 
-By 0347 the surgical suite is reset. She writes Dalco's case notes by hand in the physical chart she keeps for each patient: time in, time out, procedure, materials used, post-op instructions. The handwriting is precise. She dates the entry and sets the chart in the active rack.
+By 0347 the surgical suite is reset. She writes Rudeboi's case notes by hand in the physical chart she keeps for each patient: time in, time out, procedure, materials used, post-op instructions. The handwriting is precise. She dates the entry and sets the chart in the active rack.
 
-She does not send Dalco an invoice. She has sent invoices to approximately twelve people in the last three years, of whom four have paid, and she has stopped sending invoices and started accepting payment when offered and not asking when it is not. This is not generosity. Generosity implies a surplus. This is a working theory about what the job requires of her.
+She does not send Rudeboi an invoice. She has sent invoices to approximately twelve people in the last three years, of whom four have paid, and she has stopped sending invoices and started accepting payment when offered and not asking when it is not. This is not generosity. Generosity implies a surplus. This is a working theory about what the job requires of her.
 
 She turns off the surgical suite light. She makes not-quite-coffee in the office -- water run through the filter twice, with the single remaining packet of the powdered supplement that tastes approximately forty percent like coffee and provides approximately sixty percent of the functional benefit -- and sits down with the supply invoices and Ledger's two-day-old message and forty-three Phi in the petty cash box. The message is eight words: "When you have a moment. -L." She knows what it concerns because she always knows what it concerns when the message is that short. She has not returned it because returning it requires a decision she has not made yet and she makes decisions when she has enough information to make them, not before.
 
@@ -65,7 +65,7 @@ The boy is not crying. He is the age where not-crying is a point of pride and he
 
 "A man in Garfield," the girl says. "He charged forty Phi."
 
-She does not say what she thinks about the man in Garfield and the forty Phi. She opens a suture removal kit. The nylon comes out cleanly; the infection is superficial, not deep. She irrigates the wound, debrids the four sites, closes with 4-0 Vicryl placed correctly -- knots inverted, intervals appropriate -- and puts the boy on a short oral antibiotic course she has to search for in the back supply cabinet. The back supply cabinet has been getting steadily more sparse over the past two months, a fact she notes each morning and does not address because addressing it requires money she does not have.
+She does not say what she thinks about the man in Garfield and the forty Phi. She opens a suture removal kit. The nylon comes out cleanly; the infection is superficial, not deep. She irrigates the wound, debrides the four sites, closes with 4-0 Vicryl placed correctly -- knots inverted, intervals appropriate -- and puts the boy on a short oral antibiotic course she has to search for in the back supply cabinet. The back supply cabinet has been getting steadily more sparse over the past two months, a fact she notes each morning and does not address because addressing it requires money she does not have.
 
 The boy watches her work. He has migrated from not-crying to watching, which is a different management strategy for the same objective. He watches her hands, the way children watch skilled adults -- not with fear but with the attention of someone cataloging information about what competent people look like. She does not explain what she is doing. If he wants to know he can ask.
 
@@ -115,16 +115,16 @@ She does not know if this is true. She operates as though it is.
 
 The Unit runs on this operating assumption. It runs on it the way a body runs on a flawed heart: with workarounds, with careful management, with the knowledge that the workarounds are temporary and the management requires vigilance. She has been managing it for seven years. She will manage it today.
 
-She finishes the resupply inventory and goes to check on Dalco.
+She finishes the resupply inventory and goes to check on Rudeboi.
 
 [Beat 3]
-The supply invoice from the Bloom Quarter medical collective sits in the drawer under her desk. She put it there two weeks ago because looking at it does not change the number on it and not looking at it does not change the number on it. The number is four hundred and twelve Phi. She has, between the general account and the petty cash box, two hundred and sixty-three Phi. The shortfall is not one she can close this week. She has been managing this kind of shortfall for seven years, which means she has developed a set of workarounds and the workarounds have a maintenance cost and the maintenance cost is part of the reason she is currently looking at the drawer instead of the invoice.
+The supply invoice from the Bloom Quarter medical collective sits in the drawer under her desk. She put it there two weeks ago because looking at it does not change the number on it and not looking at it does not change the number on it. The number is four hundred and twelve Phi. She has, between the general account and the petty cash box, two hundred and sixty-three Phi. The shortfall is not one she can close this week. She has been managing this kind of shortfall for seven years, which means she has developed a set of workarounds and the workarounds have a maintenance cost and the maintenance cost is part of the reason she is currently looking at the drawer instead of the invoice. One of the workarounds is the Neighborhood Relay & Exchange Network — a Gray Zone courier cooperative, person-to-person package relay, no corpo registry, partial payment accepted when Phi runs short. Three of last month's drops came in through the Network's Z-7 circuit. The drivers know her freight access code.
 
 Ledger's message is two days old. She has not returned it because she knows what it concerns: a job. Something that requires her skills and will pay in quantities that would close the gap, probably several times over. She has done three of these jobs in seven years. Each one paid well. Each one left a residue she spent months processing. The residue is not guilt, exactly. It is more like the specific weight of having used her skills for a purpose that was not the purpose she built them for.
 
 She has not returned his message because she is calculating whether she can afford to take a job right now. Which is to say calculating whether she can afford not to.
 
-Dalco is awake. She checks his vitals at the nine-hour mark: heart rate 72, blood pressure within normal limits for someone in post-operative inflammatory response, oxygen saturation 97 on room air. His chest dressing is clean. He asks if he can have water and she says yes and Femi brings it. He asks when he can leave and she says three days minimum.
+Rudeboi is awake. She checks his vitals at the nine-hour mark: heart rate 72, blood pressure within normal limits for someone in post-operative inflammatory response, oxygen saturation 97 on room air. His chest dressing is clean. He asks if he can have water and she says yes and Femi brings it. He asks when he can leave and she says three days minimum.
 
 "I don't have three days," he says.
 
@@ -134,11 +134,17 @@ He considers this with the expression of someone adding up costs. He is forty-so
 
 "Yes."
 
-She leaves him to his calls.
+She leaves him to his calls. When she passes the doorway ten minutes later his jaw is moving in the minimal way of someone on a neuretic line — she catches the audible fraction: *—NREN's still holding the package, junction twelve, you need it cleared before 0800—* She keeps walking.
 
-The chest infection patient -- a woman named Augustina, sixty-four, long-term Austin resident -- has a temperature of 38.1, which is down from yesterday's 38.8. The antibiotic is working. Stash adjusts the dosing interval and notes it in the chart. Augustina has been cooperative throughout, which is to say she has done everything Stash asked and only asked the same question three times: is it serious. Each time Stash has said the same thing: it was, and it is less serious now, and it will not be serious at all in five days if the course completes.
+The chest infection patient -- a woman named Augustina, sixty-four, long-term Austin resident -- has a temperature of 38.1, which is down from yesterday's 38.8. The antibiotic is working. She adjusts the dosing interval and notes it in the chart. Augustina has been cooperative throughout, which is to say she has done everything Stash asked and only asked the same question three times: is it serious. Each time Stash has said the same thing: it was, and it is less serious now, and it will not be serious at all in five days if the course completes.
 
-The orbital fracture kid -- his name is Marco and he is sixteen -- is doing exactly what she told him not to do, which is to say nothing specific, only looking at the screen of his phone with an intensity that suggests the orbital muscles are under more load than she recommended. She tells him to rest his eyes. He says okay. She gives this four minutes.
+The orbital fracture kid -- his name is Marco and he is sixteen -- is doing exactly what she told him not to do. His eyes are tracking and twitching in the short-range way: micro-saccades at arm's length, the involuntary orbital load of someone running AR close-projection. She stands in the doorway until he registers her.
+
+"What?" he says.
+
+"Your orbital wall," she says. "Two fractures. Every close-range session you run loads the muscle that is trying to hold it together." She waits. "Just watch a movie or something on max projection distance. Point it at the ceiling. The load profile is completely different."
+
+He says okay. She gives this four minutes.
 
 She does her rounds by 0930. Four patients, all stable. The Unit is operating at normal capacity, which is to say past its designed capacity, which is to say it has no designed capacity because it was not designed, it evolved. Seven years ago it was a two-room unit she used as a consulting space while doing corp contract work. The corp contract work ended when she decided she was done with corp contract work. The consulting space became the only space. She added the ward partition two years in, when she started admitting patients who needed more than a single visit. She added the second exam table in year four.
 
@@ -313,7 +319,7 @@ She sits in the chair by the door that Femi was sitting in, and she stares at th
 
 Then she picks up the container. She takes it to the office and puts it in the locked drawer and sits down at her desk.
 
-She opens her phone. She looks at Ledger's two-day-old message. She closes her phone.
+She opens her handset. She looks at Ledger's two-day-old message. She closes her handset.
 
 She opens it again. She calls him. It is 0641.
 
@@ -350,19 +356,7 @@ She thinks: I was not ready for her. She thinks: she counted on that.
 
 Then she goes back inside and checks on her patients.
 
-Dalco is recovering well. Heart rate 72, blood pressure within normal limits for someone in post-operative inflammatory response, oxygen saturation 97 on room air. His chest dressing is clean. He asks when he can leave and she says three days minimum.
-
-"I don't have three days," he says.
-
-"The anastomosis needs seventy-two hours to establish patency," she says. "You can leave in three days and risk a secondary bleed, or you can stay and not."
-
-He considers this with the expression of someone adding up costs. He is forty-something, Gray Zone long-term, the kind of person who has been doing this kind of arithmetic his entire adult life and has developed strong opinions about when to accept the calculation and when to push back. "Can I make calls?"
-
-"Yes."
-
-She leaves him to his calls. The chest infection patient -- a woman named Augustina, sixty-four, long-term Austin resident -- has a temperature of 38.1, which is down from yesterday's 38.8. The antibiotic is working. Stash adjusts the dosing interval and notes it in the chart. Augustina thanks her, which she accepts.
-
-The orbital fracture kid -- his name is Marco and he is sixteen -- is doing exactly what she told him not to do, which is to say nothing specific, only looking at the screen of his phone with an intensity that suggests the orbital muscles are under more load than she recommended. She tells him to rest his eyes. He says okay. She gives this four minutes.
+Rudeboi's vitals are unchanged: heart rate 72, pressure within limits, oxygen 97 on room air. He has accepted the three-day timeline, reluctantly. He is on his comm when she enters and does not look up. Augustina's temperature is at 38.1, down from yesterday's 38.8; the antibiotic is working. She adjusts the dosing interval and notes it in the chart. Marco is still running his neuretics, eyes tracking side to side. She tells him to rest his eyes. He says okay. She gives this four minutes.
 
 She writes the notes. She updates the charts. She checks the supply inventory Femi runs each morning, which he has left on the desk with his neat handwriting and two small notations in the margins.
 
@@ -425,7 +419,7 @@ She sits in the locked office and thinks about frequency 412.7. She has run it t
 
 The device is broadcasting on a dead channel to an unregistered frequency. Whatever it is sending, it is sending to a receiver that does not officially exist, that it was built to reach before the channel was dead.
 
-She picks up her phone and calls Ledger. It is 1600. He picks up.
+She picks up her handset and calls Ledger. It is 1600. He picks up.
 
 "I've been looking at it," she says.
 
@@ -528,11 +522,11 @@ He leaves.
 
 She sits in the office with the specimen container for twenty minutes without moving. She is not indecisive. She has decided. She is giving the decision time to settle, which is a different thing.
 
-At 2252 she goes to the ward. Dalco is asleep, oxygen saturation 97 on room air, dressing clean. Augustina is asleep. Marco is asleep with the phone still in his hand; she removes it carefully, sets it on the chair beside him. She checks their charts and writes the 2300 notation. Normal vital signs. Stable. Expected overnight course.
+At 2252 she goes to the ward. Rudeboi is asleep, oxygen saturation 97 on room air, dressing clean. Augustina is asleep. Marco is asleep, eyes still. She checks their charts and writes the 2300 notation. Normal vital signs. Stable. Expected overnight course.
 
 She wakes Femi at 2310. He comes awake without confusion, which is the quality she noticed about him three years ago and which has not changed. He is awake, and then he is paying attention.
 
-"I need you to stay with the patients tonight," she says. "I need to go off-site. I will be back in the morning. If anything changes -- dressing leak on Dalco, temperature spike on Augustina, any change at all -- you call me." She gives him the number she uses when she does not want the call to be logged. He writes it down. "You are not to answer questions about where I am. You can say I'm on a house call. You can say I'm sleeping. You can say nothing. Any of those."
+"I need you to stay with the patients tonight," she says. "I need to go off-site. I will be back in the morning. If anything changes -- dressing leak on Rudeboi, temperature spike on Augustina, any change at all -- you call me." She gives him the number she uses when she does not want the call to be logged. He writes it down. "You are not to answer questions about where I am. You can say I'm on a house call. You can say I'm sleeping. You can say nothing. Any of those."
 
 He looks at her. He looks at the locked drawer, which he has never been told about and which she has never explained.
 
@@ -573,7 +567,7 @@ She is protecting him anyway. She accepts that this is a failure of the logic sh
 
 Then she goes back inside and checks on her patients.
 
-Dalco is recovering well. He will be discharged tomorrow; she has already arranged a follow-up protocol with a contact in Bloom Quarter. Augustina's temperature is 37.4, trending normal; she will be discharged in two days. Marco's orbital is stable; she told him this morning he could go home and he asked if he could stay one more day and she said yes, because he is sixteen and she suspects home is a more complicated concept for him than it is for some people. She has said yes to this before for the same reason. She does not analyze the reason further.
+Rudeboi is recovering well. He will be discharged tomorrow; she has already arranged a follow-up protocol with a contact in Bloom Quarter. Augustina's temperature is 37.4, trending normal; she will be discharged in two days. Marco's orbital is stable; she told him this morning he could go home and he asked if he could stay one more day and she said yes, because he is sixteen and she suspects home is a more complicated concept for him than it is for some people. She has said yes to this before for the same reason. She does not analyze the reason further.
 
 She writes the notes. She updates the charts. She checks the supply inventory Femi runs each morning, which he has left on the desk with his neat handwriting and a small notation in the margin: *adhesive - 2 units remaining.*
 
@@ -595,7 +589,7 @@ She walks. The Low at 0800 is its own world. Not underground -- thirty meters up
 
 She carries the medical bag. She catalogs the weight of the specimen container against her hip as she moves. The device is broadcasting. She knows this because it has been broadcasting since Renata arrived and it has not stopped. She thinks, briefly, about whether broadcasting while walking creates a moving signal source that narrows the triangulation problem for whoever is looking. She decides the movement is not enough to materially improve the triangulation -- a receiver that has been locked on the signal for thirty-seven hours already knows the Austin sector.
 
-She does not think about what Ledger will find when he opens it. She thinks about the route, the ferrocement overhead, the morning light coming through the ventilation slats. She thinks about Femi at the Bloom Quarter collective with a supply list and a hundred Phi. She thinks about Dalco's anastomosis holding. She does not think about Renata.
+She does not think about what Ledger will find when he opens it. She thinks about the route, the ferrocement overhead, the morning light coming through the ventilation slats. She thinks about Femi at the Bloom Quarter collective with a supply list and a hundred Phi. She thinks about Rudeboi's anastomosis holding. She does not think about Renata.
 
 She walks.
 
@@ -889,9 +883,9 @@ She nods. She nods once, slowly, and then she stops nodding and she sits very st
 "Then let's keep going," she says.
 
 [Beat 16]
-The alert comes from her phone's camera feed.
+The alert comes from her handset's camera feed.
 
-She has three exterior cameras on the Unit: one at the entrance panel, one at the freight access, one at the walkway junction above. She monitors them on her phone when she is away from the clinic. She has been monitoring them on and off since she left that morning, the way she monitors a patient's vitals when she cannot be in the room: checking, noting, returning to the other work.
+She has three exterior cameras on the Unit: one at the entrance panel, one at the freight access, one at the walkway junction above. She monitors them on her handset when she is away from the clinic. She has been monitoring them on and off since she left that morning, the way she monitors a patient's vitals when she cannot be in the room: checking, noting, returning to the other work.
 
 She checks them now, at 1847, because she is beginning to feel the particular tension of having left her patients in an empty clinic for longer than she planned, the tension of having two inpatients and one young man she told to go home and has not received confirmation from.
 
@@ -909,7 +903,7 @@ He looks at it for three seconds. "Scalpel Division," he says. "The scanner mode
 
 She is watching the feed from the office camera now. The drawer she usually keeps locked is standing open, the charts removed. The operative handling the charts is doing so with efficiency: pulling, scanning, stacking. Not destructive. Professional. This is not vandalism; it is a records search.
 
-The feed from the ward shows Dalco still in his bed, watching. One of the Scalpel operatives says something to him. He does not respond. The operative takes the chart from the end of his bed and adds it to the stack. Dalco watches with the expression of someone who has been in Austin long enough to know that responding to people in gray operational wear is usually not the correct move.
+The feed from the ward shows Rudeboi still in his bed, watching. One of the Scalpel operatives says something to him. He does not respond. The operative takes the chart from the end of his bed and adds it to the stack. Rudeboi watches with the expression of someone who has been in Austin long enough to know that responding to people in gray operational wear is usually not the correct move.
 
 Marco is not in his bed. The bed is empty and the feed shows no sign of where he has gone. He was supposed to stay until she returned. She does not know if he left voluntarily or if something happened, and she cannot call the clinic number to check because that is a clinic she cannot admit to being away from right now. She sends Femi a message: *Are you at the clinic?* He responds in under two minutes: *No, still at West Town. Why?*
 
@@ -927,7 +921,7 @@ Stash sits on the stool by Ledger's workbench and she watches the feed and she w
 
 "Take it," he says.
 
-She sits with the phone in her hands. The camera feed shows her empty clinic: her resupplied shelves, her clean surgical suite, her ward with two patients still in it and one empty bed. The patient files are gone. She built those files across seven years. Every patient she has ever seen in the Unit: names, presenting complaints, treatments, follow-ups, outcomes. The collective memory of seven years of work.
+She sits with the feed in front of her. The camera feed shows her empty clinic: her resupplied shelves, her clean surgical suite, her ward with two patients still in it and one empty bed. The patient files are gone. She built those files across seven years. Every patient she has ever seen in the Unit: names, presenting complaints, treatments, follow-ups, outcomes. The collective memory of seven years of work.
 
 The breath catches somewhere in the middle. She does not call it grief. She calls it a pressure deficit in the chest, which is the same thing, and it passes in approximately forty seconds, which is approximately how long she allows these things.
 
@@ -939,11 +933,11 @@ The breath catches somewhere in the middle. She does not call it grief. She call
 
 "Yes." He pauses. "What do you need from me to finish the decryption?"
 
-She looks at the camera feed. The Unit is quiet. Two patients. An empty bed.
+She looks at the feed. The Unit is quiet. Two patients. An empty bed.
 
 "Time," she says. "And for you to keep going."
 
-She puts the phone in her pocket.
+She puts the feed away.
 
 "Then let's keep going," she says.
 
@@ -1076,13 +1070,13 @@ Stash is quiet for a long moment. She thinks about thirty-one practitioners who 
 He nods, and goes back to work.
 
 [Beat 19]
-Her phone rings at 0917 the next morning. She does not recognize the number. She almost does not answer it.
+Her handset rings at 0917 the next morning. She does not recognize the number. She almost does not answer it.
 
 She has not slept. The chair in Ledger's workspace is not designed for sleeping, which is why she used it -- if she is upright she will not sleep, and if she does not sleep she will not have to account for what she has dreamed, which seems like a reasonable trade. Ledger is in his own chair across the room, actually asleep, his shoes still on, his chin dropped toward his chest at the angle of someone who fell asleep in the middle of intending to stay awake.
 
 The device is in its modified containment housing on the work table. It is still broadcasting. She has been watching the frequency counter for most of the night, not because it requires watching, but because it is something to do with her eyes.
 
-When the phone rings she looks at it for four full seconds.
+When the handset rings she looks at it for four full seconds.
 
 She picks up.
 
@@ -1094,7 +1088,7 @@ The room is very quiet. The frequency counter ticks steadily. Ledger has not wok
 
 "The unaffiliated female patient," Petra says. "I'd like to talk with you about the circumstances. Before things go somewhere that neither of us can walk back from."
 
-Stash is quiet for a moment. She sets down the not-quite-coffee from Ledger's unit, which has gone cold. She thinks about what she knows about the NSB Field Division. She thinks about what she knows about the four levels of protocol a call like this normally passes through before it reaches a field agent's direct line. This call came to her phone. Her personal number, which is not listed in the clinic's official filings.
+Stash is quiet for a moment. She sets down the not-quite-coffee from Ledger's unit, which has gone cold. She thinks about what she knows about the NSB Field Division. She thinks about what she knows about the four levels of protocol a call like this normally passes through before it reaches a field agent's direct line. This call came to her handset. Her personal number, which is not listed in the clinic's official filings.
 
 "What do you mean by that?" she says.
 
@@ -1128,7 +1122,7 @@ Petra is not running standard asset recovery. Petra is running something she has
 
 "Give me the location," she says.
 
-She writes it on the inside of her left forearm in the way she marks things she does not want to forget: one line, small, in the location she will see when she holds the phone. She memorizes it in the thirty seconds while Petra is reciting it, converts the zone-grid notation to a building she knows, confirms she can reach it in forty minutes walking through the Low.
+She writes it on the inside of her left forearm in the way she marks things she does not want to forget: one line, small, in the location she will see when she holds the handset. She memorizes it in the thirty seconds while Petra is reciting it, converts the zone-grid notation to a building she knows, confirms she can reach it in forty minutes walking through the Low.
 
 She does not wake Ledger. She leaves him a note that says: meeting. back in two hours.
 
@@ -1435,7 +1429,7 @@ The Austin medical monitoring network was built in 2219 -- she has the history f
 
 The hub of the network -- the transmitter that relayed signals to all forty nodes -- is the old Austin monitoring station at the north end of the Austin axis. It is inside the Scalpel Division search perimeter that has been established since Scalpel identified the van's signal.
 
-"From the hub," Ledger says, "a single broadcast on 412.7 reaches all forty nodes simultaneously. All forty nodes rebroadcast on their local frequencies. The data goes into every connected device in a two-kilometer radius of each node." He looks at her. "Forty nodes covering all of Austin and most of Garfield. Every phone, every screen, every receivable device in that footprint."
+"From the hub," Ledger says, "a single broadcast on 412.7 reaches all forty nodes simultaneously. All forty nodes rebroadcast on their local frequencies. The data goes into every connected device in a two-kilometer radius of each node." He looks at her. "Forty nodes covering all of Austin and most of Garfield. Every handset, every screen, every receivable device in that footprint."
 
 She is looking at the map. She is looking at the monitoring station icon at the north end, inside the red zone that Ledger has shaded for the Scalpel perimeter.
 
@@ -1479,7 +1473,7 @@ She looks at the route on the map. She looks at the monitoring station at the en
 
 He looks at her. He does not argue. "Tonight," he says. "We need to be in position before Scalpel narrows the track."
 
-She nods. She picks up her phone.
+She nods. She picks up her handset.
 
 ## Triangulation
 
@@ -1530,7 +1524,7 @@ They leave Ledger's workspace at 1427. She takes the medical bag with the device
 
 They walk. They do not run, because running is conspicuous in the freight corridor at mid-afternoon and conspicuous is what they cannot be. They walk with the practiced pace of people who are going somewhere specific and not urgently, and she carries the medical bag against her hip and she can feel the device's weight in it, broadcasting, patient, steady.
 
-At 1441, one hundred and forty meters from the tunnel access, her phone picks up the Scalpel operational frequency she has been monitoring on a passive scan since day two.
+At 1441, one hundred and forty meters from the tunnel access, her handset picks up the Scalpel operational frequency she has been monitoring on a passive scan since day two.
 
 She does not stop walking. She does not change pace. She listens. It takes twelve seconds to confirm: breach team, target location confirmed to building scale, south approach vector.
 
@@ -1590,19 +1584,19 @@ She stands up, carefully, in the low tunnel. She picks up the medical bag. The d
 "Then let's go," she says.
 
 [Beat 27]
-They reach the maintenance junction at 1621 and they have been there for thirty-nine minutes when Ledger's phone shows a camera alert.
+They reach the maintenance junction at 1621 and they have been there for thirty-nine minutes when an alert comes through on Ledger's neuretics.
 
-He set up a passive camera at the freight tunnel entrance above ground before they went in, a small commercial lens disguised as building hardware, linked to his phone. The alert means motion. He pulls up the feed.
+He set up a passive camera at the freight tunnel entrance above ground before they went in, a small commercial lens disguised as building hardware, linked to his neuretics. The alert means motion. He pulls up the feed.
 
-Four people in Scalpel operational gray. And behind them, someone who is not in gray: a woman in a dark jacket, moving with the particular economy of someone who does not waste motion, who has learned to conserve everything including her physical presence. She is not large. She is authoritative in the way that has nothing to do with size.
+Four people in Scalpel operational gray. And behind them, someone who is not in gray: a man in a dark jacket, moving with the particular economy of someone who does not waste motion, who has learned to conserve everything including his physical presence. He is not large. He is authoritative in the way that has nothing to do with size.
 
-"That's Mwangi," Ledger says. He says it the way he says names in his operational database: without explanation, as though the name speaks for itself.
+"That's Brauer," Ledger says. He says it the way he says names in his operational database: without explanation, as though the name speaks for itself.
 
-"You know her?"
+"You know him?"
 
-"I know of her. She is Scalpel Division's field commander for GLMZ asset recovery." He looks at the feed. "She does not typically run this kind of search personally. This is an asset they have assessed as significant."
+"I know of him. He is Scalpel Division's field commander for GLMZ asset recovery." He looks at the feed. "He does not typically run this kind of search personally. This is an asset they have assessed as significant."
 
-They are not at the freight tunnel entrance. They are in the maintenance junction forty minutes south and deep enough that the signal is below the detectable threshold of any civilian-grade receiver. Mwangi and her team are above them, looking for a van that is not there and a signal they cannot currently track.
+They are not at the freight tunnel entrance. They are in the maintenance junction forty minutes south and deep enough that the signal is below the detectable threshold of any civilian-grade receiver. Brauer and his team are above them, looking for a van that is not there and a signal they cannot currently track.
 
 But Ledger's van is parked two blocks from the freight tunnel entrance. She realizes this at the same moment he does.
 
@@ -1610,11 +1604,11 @@ But Ledger's van is parked two blocks from the freight tunnel entrance. She real
 
 "Yes," he says.
 
-She watches the feed. Mwangi's team is scanning the freight corridor, not the tunnel. They are working the surface. The van is on the surface.
+She watches the feed. Brauer's team is scanning the freight corridor, not the tunnel. They are working the surface. The van is on the surface.
 
-She watches Mwangi move through the footage with the efficiency of someone who has done this before in worse conditions. No wasted gestures. No checking behind for threat. She is not looking behind because she has accounted for the threat behind her; she is looking forward because that is where the work is. One of the operatives has a scanner on his left hip and is running it across building surfaces as they move. She watches them find the van at 1714. The approach is methodical: one operative with the scanner, three establishing a perimeter, Mwangi at the rear. The scanner reads the van's surface and then reads the interior through the window and then the team opens the van and Stash watches them climb inside.
+She watches Brauer move through the footage with the efficiency of someone who has done this before in worse conditions. No wasted gestures. No checking behind for threat. He is not looking behind because he has accounted for the threat behind him; he is looking forward because that is where the work is. One of the operatives has a scanner on his left hip and is running it across building surfaces as they move. She watches them find the van at 1714. The approach is methodical: one operative with the scanner, three establishing a perimeter, Brauer at the rear. The scanner reads the van's surface and then reads the interior through the window and then the team opens the van and Stash watches them climb inside.
 
-Ledger watches them take the frequency analyzer he left in the van. He watches them take the equipment case he left in the van. He watches Mwangi stand at the open side door and look at what remains and look at the freight junction beyond.
+Ledger watches them take the frequency analyzer he left in the van. He watches them take the equipment case he left in the van. He watches Brauer stand at the open side door and look at what remains and look at the freight junction beyond.
 
 He is watching his equipment disappear with the expression of someone watching an acceptable outcome. Not the hoped-for outcome. The acceptable one.
 
@@ -1681,9 +1675,9 @@ She is systematically terrified. She knows this because she has been here before
 
 She opens her medical bag and catalogs its contents.
 
-One specimen containment unit, modified, containing the device. One field surgical kit: scalpel, forceps, suture, local anesthetic, irrigation, gloves. One phone, battery at 23%, no charger. Forty-three Phi in chips. One pen.
+One specimen containment unit, modified, containing the device. One field surgical kit: scalpel, forceps, suture, local anesthetic, irrigation, gloves. One handset, battery at 23%, no charger. Forty-three Phi in chips. One pen.
 
-She looks at this list. She looks at forty-three Phi and a pen and a phone at 23% and a field surgical kit and the most contested piece of medical evidence in GLMZ. She thinks: this is what I have. She thinks: I need to broadcast it and I cannot do it from here.
+She looks at this list. She looks at forty-three Phi and a pen and a handset at 23% and a field surgical kit and the most contested piece of medical evidence in GLMZ. She thinks: this is what I have. She thinks: I need to broadcast it and I cannot do it from here.
 
 She opens Ledger's contact. She sends a message rather than calling, because calling costs more battery and because if he is in a room with Scalpel, the call is worse than no contact: *Are you safe? Can you call?*
 
@@ -1701,7 +1695,7 @@ She sends: *Don't go anywhere. I'll explain tomorrow.*
 
 His response is immediate: *Ok.*
 
-She puts the phone down. She sits in the empty exam room and she is very afraid and she does not show it to anyone because there is no one there to show it to, which means she does not have to perform composure, only maintain it. This is easier and harder at the same time.
+She puts the handset down. She sits in the empty exam room and she is very afraid and she does not show it to anyone because there is no one there to show it to, which means she does not have to perform composure, only maintain it. This is easier and harder at the same time.
 
 She sits with this for eleven minutes. She breathes. She catalogs.
 
@@ -1711,12 +1705,12 @@ She looks at Femi's last message: *Ok.*
 
 She closes her eyes for a moment.
 
-Then she picks up the phone.
+Then she picks up the handset.
 
 [Beat 29]
 Petra calls at 2013.
 
-She almost does not answer it. She has been in the empty clinic for ninety minutes. Her phone is at 14%, which she has been managing as a finite resource, which means every call is a cost she has to justify before she accepts it. A call from a number associated with the NSB, in the current circumstances, could go several different directions, and only some of them are useful to her.
+She almost does not answer it. She has been in the empty clinic for ninety minutes. Her handset is at 14%, which she has been managing as a finite resource, which means every call is a cost she has to justify before she accepts it. A call from a number associated with the NSB, in the current circumstances, could go several different directions, and only some of them are useful to her.
 
 She answers it.
 
@@ -1772,9 +1766,9 @@ Stash thinks about this. She thinks about what it means for an NSB agent to want
 
 She hangs up.
 
-Stash sits in the empty exam room with her phone at 11% and the device in her medical bag and Petra's three hours. She thinks: Femi is at the clinic. He knows the tunnels. He has contacts in the Gray Zone infrastructure, and the building authority code is the kind of thing those contacts have.
+Stash sits in the empty exam room with her handset at 11% and the device in her medical bag and Petra's three hours. She thinks: Femi is at the clinic. He knows the tunnels. He has contacts in the Gray Zone infrastructure, and the building authority code is the kind of thing those contacts have.
 
-She picks up the phone.
+She picks up the handset.
 
 [Beat 30]
 She plays it at 0034, in the maintenance junction below the Austin freight corridor, while Femi sleeps against the wall with his jacket over his face.
@@ -1834,7 +1828,7 @@ She knows this because he is awake at 0112, sitting up against the wall with his
 
 "A video," she says.
 
-He nods. He does not ask what video. He does not ask why she is in this tunnel at 0112 with a medical bag and a field surgical kit and a phone on a power pack. He does not ask because he has been in this tunnel for four days and he has already assessed the situation he is in.
+He nods. He does not ask what video. He does not ask why she is in this tunnel at 0112 with a medical bag and a field surgical kit and a handset on a power pack. He does not ask because he has been in this tunnel for four days and he has already assessed the situation he is in.
 
 She looks at him. He is seventeen. He was supposed to be on a supply run to Bloom Quarter. Instead he is sitting against a ferrocement wall in the sub-Low at one in the morning, watching her, with the static discharge rod laid across his knees at the angle of someone who put it there deliberately and knows what it is for.
 
@@ -1844,11 +1838,11 @@ She looks at him. He is seventeen. He was supposed to be on a supply run to Bloo
 
 "Before that."
 
-He looks at her steadily, the way he looks at a supply count that is not adding up: patient, systematic, not going to stop until the numbers reconcile. "I went to the tunnels," he says. "After you sent me. I've been watching the exterior camera on my phone. You gave me feed access six months ago and I don't think you remembered."
+He looks at her steadily, the way he looks at a supply count that is not adding up: patient, systematic, not going to stop until the numbers reconcile. "I went to the tunnels," he says. "After you sent me. I've been watching the exterior camera on my handset. You gave me feed access six months ago and I don't think you remembered."
 
 She did not remember. She gave him the feed access because she thought he might need to get into the Unit while she was operating and she wrote down the access code and gave it to him and then did not think about it again, which means she gave him information that she did not fully account for, which is a clinical oversight in a different register.
 
-"I saw the Scalpel sweep," he says. "And then you sent me a message saying stay at the clinic and I went to the clinic and Dalco was gone and Augustina and Marco were there and Marco helped me with the inventory and I waited." He pauses. "And then Petra's name went up on the Garfield security feeds as associated with a NSB field action in Austin and I thought I should find you."
+"I saw the Scalpel sweep," he says. "And then you sent me a message saying stay at the clinic and I went to the clinic and Rudeboi was gone and Augustina and Marco were there and Marco helped me with the inventory and I waited." He pauses. "And then Petra's name went up on the Garfield security feeds as associated with a NSB field action in Austin and I thought I should find you."
 
 She looks at him. "How did you find me?"
 
@@ -1880,7 +1874,7 @@ She looks at him. She thinks about the records. The four hundred and twenty-eigh
 
 He considers this. He accepts it.
 
-"The monitoring station is a Austin building cooperative property," he says. "They use the standard key system. My contacts use the building authority emergency access codes for the cooperative properties." He pulls out his phone. "I can get the code."
+"The monitoring station is a Austin building cooperative property," he says. "They use the standard key system. My contacts use the building authority emergency access codes for the cooperative properties." He pulls out his handset. "I can get the code."
 
 She exhales slowly. "How long?"
 
@@ -1907,11 +1901,11 @@ She nods once. "Then let's go," she says.
 ## Ledger's Call
 
 [Beat 32]
-Her phone buzzes at 0227.
+Her handset buzzes at 0227.
 
 She is in the tunnel, thirty minutes into the route to the monitoring station, moving carefully through a section of partially collapsed ferrocement infrastructure that Femi has navigated eleven times and she is navigating for the first time. She checks the display. Ledger.
 
-She puts the phone to her ear. The tunnel ambient is low and her own breathing is the loudest thing she can hear. The ferrocement overhead drips at irregular intervals -- a slow mineral seep that has been working through the substrate for years, depositing pale streaks on the dark walls. Femi has stopped a few meters ahead and is watching her from the shadow, close enough to hear without hearing.
+She puts the handset to her ear. The tunnel ambient is low and her own breathing is the loudest thing she can hear. The ferrocement overhead drips at irregular intervals -- a slow mineral seep that has been working through the substrate for years, depositing pale streaks on the dark walls. Femi has stopped a few meters ahead and is watching her from the shadow, close enough to hear without hearing.
 
 Ledger does not say hello.
 
@@ -1933,7 +1927,7 @@ He hangs up.
 
 She stands in the tunnel for a moment. The drip continues overhead. Femi is watching her with the patient stillness of someone who has been in tunnels before and knows that the information you receive in tunnels sometimes requires processing before it becomes motion.
 
-She runs the implications. If Ledger is on the phone with Scalpel in the room, he is not a witness to his own deception -- he is managing a situation where he has been taken, where Scalpel has found his workspace and found him, where they are asking for the location of the person with the device, and he is giving them a wrong location with the delivery of someone giving a right one. This requires two things: the ability to perform certainty, and the willingness to accept the consequences of the performance being discovered.
+She runs the implications. If Ledger is on the line with Scalpel in the room, he is not a witness to his own deception -- he is managing a situation where he has been taken, where Scalpel has found his workspace and found him, where they are asking for the location of the person with the device, and he is giving them a wrong location with the delivery of someone giving a right one. This requires two things: the ability to perform certainty, and the willingness to accept the consequences of the performance being discovered.
 
 She thinks about what Scalpel does when they discover the coordinates are wrong. She does not want to think about this for long. She thinks about it for the length of two drips from the ceiling, which is approximately four seconds, and then she does what she can with the time the wrong coordinates have purchased.
 
@@ -1949,7 +1943,7 @@ He has just moved outside that level.
 
 She does not have the ability to thank him. She does not have the ability to do anything about what he has done except use the time it buys her.
 
-At 0241, her phone buzzes again. Femi, who has been walking ahead of her with his phone out reading the code response from his building authority contact, turns back. "The code came through," he says. "Austin building cooperative emergency access. Six digits."
+At 0241, her handset buzzes again. Femi, who has been walking ahead of her with his handset out reading the code response from his building authority contact, turns back. "The code came through," he says. "Austin building cooperative emergency access. Six digits."
 
 She nods. She files the code number.
 
@@ -1960,7 +1954,7 @@ They keep moving.
 [Beat 33]
 The old clinic is on the way.
 
-Not on the direct route Femi has plotted -- it is one hundred and forty meters off the direct route, accessible from a service junction that adds twenty minutes to the travel time. She knows this because she has been tracking their position against the building map of the Austin axis for the past forty minutes on her phone, and when she sees the service junction notation she knows immediately what is on the other side of it.
+Not on the direct route Femi has plotted -- it is one hundred and forty meters off the direct route, accessible from a service junction that adds twenty minutes to the travel time. She knows this because she has been tracking their position against the building map of the Austin axis for the past forty minutes on her handset, and when she sees the service junction notation she knows immediately what is on the other side of it.
 
 She tells Femi: take the next junction east.
 
@@ -1982,7 +1976,7 @@ The loading door from the freight elevator opens directly into the storage room 
 
 Seven years. The examination table is here, same as the examination table in the first clinic she went to tonight, for the same reason: too heavy to move. The shelving units on the wall are the same ones she installed in 2212. The supply drawers are the same. The light fixtures are still in place, though the power has been disconnected for two years.
 
-She turns on her phone's light.
+She turns on her handset's light.
 
 The space is smaller than she remembers. She has noticed this before -- that places shrink between visits -- and she knows it is not the space that has changed. She has been in here with patients. She has been in here at night, alone, filing records after the last patient left. She has been in here in every season for twelve years. The Austin community clinic was opened in 2210 and she worked here from the beginning: a junior post, then more senior as the staff turned over, then the person who stayed when the others went to better positions, because she had decided by then that staying was what she was for.
 
@@ -1992,7 +1986,7 @@ Against the wall, under the shelving unit in the corner, there is a physical sto
 
 She picks up the drive. The case is dusty. The seal is intact.
 
-She hears the Scalpel team at the same moment the exterior camera alert fires on her phone -- a sound she has not heard in four days and recognizes immediately. They are at street level, coming up the freight elevator.
+She hears the Scalpel team at the same moment the exterior camera alert fires on her handset -- a sound she has not heard in four days and recognizes immediately. They are at street level, coming up the freight elevator.
 
 She looks at the drive in her hand.
 
@@ -2004,7 +1998,7 @@ She puts it down.
 
 There is a calculation involved and she does not permit herself to examine it in full, because examining it in full would require spending time she does not have. The calculation is: the records cannot help the dead people, and the broadcast can. The records cannot help the people who do not yet know what was done to them, and the broadcast might. The records are the past and the broadcast is the future, and she can only carry one thing.
 
-She goes back through the supply room. She goes down the service stairs alongside the freight elevator shaft, four flights in the dark, her phone flashlight off because the Scalpel team will see the light on the elevator's camera. She finds the loading corridor by touch. She finds the service junction by the sound of Femi's careful breathing.
+She goes back through the supply room. She goes down the service stairs alongside the freight elevator shaft, four flights in the dark, her handset flashlight off because the Scalpel team will see the light on the elevator's camera. She finds the loading corridor by touch. She finds the service junction by the sound of Femi's careful breathing.
 
 "What happened?" he says.
 
@@ -2017,11 +2011,11 @@ She walks.
 [Beat 34]
 Femi finds her at 0341, seven minutes after she comes to a stop in the tunnel access corridor two hundred meters from the monitoring station.
 
-She has stopped because her phone is at 4% and she cannot afford to use the light anymore, and the tunnel at this section is dark in a way that requires either the light or a guide, and she has neither. She is sitting on the floor of the tunnel with her back against the wall and the medical bag in her lap and she is doing what she does when the situation exceeds what she has available: she catalogs.
+She has stopped because her handset is at 4% and she cannot afford to use the light anymore, and the tunnel at this section is dark in a way that requires either the light or a guide, and she has neither. She is sitting on the floor of the tunnel with her back against the wall and the medical bag in her lap and she is doing what she does when the situation exceeds what she has available: she catalogs.
 
-Medical bag: device in containment, field surgical kit, forty-three Phi, phone at 4%, one pen.
+Medical bag: device in containment, field surgical kit, forty-three Phi, handset at 4%, one pen.
 
-She catalogs. The device. Forty-three Phi. The phone. The kit. The pen. She does this the way she does a supply inventory: without sentiment, item by item, noting what is present and what is absent and what the absence implies.
+She catalogs. The device. Forty-three Phi. The handset. The kit. The pen. She does this the way she does a supply inventory: without sentiment, item by item, noting what is present and what is absent and what the absence implies.
 
 She is sitting in a tunnel in the sub-Low at 0334 with four percent battery and the patient records she has kept for twelve years in Scalpel's possession and Ledger in a room somewhere being asked to provide information he has already falsified. She catalogs all of this. She does not embellish and she does not elide.
 
@@ -2033,13 +2027,13 @@ And then the footstep she recognizes because she has been listening to it for fo
 
 "Here," she says.
 
-He sits down next to her. He has the power pack. He plugs her phone in without asking -- he knows without asking because he has been in this tunnel for four days and he has watched her phone percentage at every check-in and he has been carrying the pack since 2100 for this specific contingency. The phone begins charging. He turns on his own phone's light and puts it between them so the light illuminates without blinding.
+He sits down next to her. He has the power pack. He plugs her handset in without asking -- he knows without asking because he has been in this tunnel for four days and he has watched her handset percentage at every check-in and he has been carrying the pack since 2100 for this specific contingency. The handset begins charging. He turns on his own handset's light and puts it between them so the light illuminates without blinding.
 
 "They took the records," she says. "From the old clinic."
 
 "I know. I heard."
 
-She looks at the tunnel wall. She looks at the faint ring of light from Femi's phone. She looks at the medical bag in her lap. She looks at the power cable connecting to her phone.
+She looks at the tunnel wall. She looks at the faint ring of light from Femi's handset. She looks at the medical bag in her lap. She looks at the power cable connecting to her handset.
 
 She catalogs herself the way she catalogs a patient. She does this with patients who are too distressed to give a coherent history: start with the observable facts, work from the outside in, do not accept the patient's self-assessment as complete or accurate. Observable: cold. Exhausted. Forty-three Phi. A surgical kit. A pen. A device containing 14.3 gigabytes of evidence.
 
@@ -2059,7 +2053,7 @@ Femi does not say anything. He gives her the water from the pack in his jacket p
 
 "I have it."
 
-"I need six more minutes of phone battery."
+"I need six more minutes of handset battery."
 
 "The pack will give you thirty."
 
@@ -2081,7 +2075,7 @@ He is quiet for a moment. Then: "Okay."
 
 "We can get into the building," he says.
 
-She looks at her phone. 9%. She needs 15 to read the code safely with margin.
+She looks at her handset. 9%. She needs 15 to read the code safely with margin.
 
 "Does anything about this change your mind?" she asks.
 
@@ -2093,9 +2087,9 @@ He thinks about this seriously, which is the only way he thinks about things. "N
 
 "Yes."
 
-"Then we should go," he says. "When the phone is ready."
+"Then we should go," he says. "When the handset is ready."
 
-She nods. She sits. She breathes. The phone charges. The tunnel is dark and cold and quiet, and two hundred meters ahead of them is the transmitter, and she is going to reach it.
+She nods. She sits. She breathes. The handset charges. The tunnel is dark and cold and quiet, and two hundred meters ahead of them is the transmitter, and she is going to reach it.
 
 At 15% she stands up.
 
@@ -2106,9 +2100,9 @@ At 15% she stands up.
 [Beat 35]
 At 17% she opens the partial data copy.
 
-She pulled it before the van move -- copied the accessible layers to her phone's local storage while Ledger was working on the outer encryption, a backup she made without telling him because she has a habit of making backups without telling anyone. It is a habit from the clinic: always keep a copy you control. Always know what you have. The copy is incomplete: it has the first three fragments in full, the intake log index, the financial summary header, and the Fragment Six file. It does not have the full trial record. It has enough.
+She pulled it before the van move -- copied the accessible layers to her handset's local storage while Ledger was working on the outer encryption, a backup she made without telling him because she has a habit of making backups without telling anyone. It is a habit from the clinic: always keep a copy you control. Always know what you have. The copy is incomplete: it has the first three fragments in full, the intake log index, the financial summary header, and the Fragment Six file. It does not have the full trial record. It has enough.
 
-The phone is at 22% by the time Femi shows her the response from his building authority contact with the six-digit code. He reads it to her twice. She files it. Her phone is at 26% and she has thirty minutes of battery left.
+The handset is at 22% by the time Femi shows her the response from his building authority contact with the six-digit code. He reads it to her twice. She files it. Her handset is at 26% and she has thirty minutes of battery left.
 
 She opens the Fragment Six file.
 
@@ -2142,7 +2136,7 @@ For four seconds she does not say anything. She does not look away. She looks at
 
 Then she reaches forward and cuts the feed.
 
-The phone screen goes dark.
+The handset screen goes dark.
 
 Stash sits in the tunnel with the dark screen and Femi quiet beside her. She is aware of his presence the way she is aware of her own breathing: as a given, as something that is there and does not require acknowledgment.
 
@@ -2154,7 +2148,7 @@ What she feels, sitting in the dark tunnel, is something she does not have preci
 
 She does not say anything for a long time.
 
-The code is filed. The phone is at 28% and charging from Femi's power pack.
+The code is filed. The handset is at 28% and charging from Femi's power pack.
 
 "Let's go," she says.
 
@@ -2166,8 +2160,6 @@ They go.
 She closes the screen.
 
 She sits in the tunnel, and she does not cry, and she does not speak.
-
-The fragment is three minutes and eight seconds long. She has watched it once. She knows she will not need to watch it again.
 
 Femi is watching her. He is quiet, because he has learned that some moments require stillness from the people who are witnesses to them, and he is a good witness. He waits.
 
@@ -2183,7 +2175,7 @@ She is quiet for a moment. "She came to my clinic," she says, "knowing the kills
 
 "Yes," he says quietly.
 
-She looks at the dark phone screen. She thinks about a woman spending eleven years on a calculation and walking into a clinic at midnight with the calculation complete.
+She looks at the dark handset screen. She thinks about a woman spending eleven years on a calculation and walking into a clinic at midnight with the calculation complete.
 
 "I need to be honest with you," she says to Femi. "My name is in the records. In the trial records she was carrying. My initials are in the post-operative follow-up column for thirty-one subjects."
 
@@ -2205,10 +2197,6 @@ He nods. "Are we both wrong?"
 
 She does not answer this. She does not have an answer for it that feels sufficient yet. She suspects she will not have an answer for it that feels sufficient for some time. She has sat with more difficult clinical findings than this one, but those findings were about other people, not about herself, and there is a specific quality to sitting with a finding about yourself that requires a different kind of patience.
 
-She thinks about what the sixth fragment said. Renata, 2225, three months before she walked into the Unit. The same table. The same stillness. "I have thought about everything I am asking of her," Renata said, "and I have decided she is the right person to ask. I am not asking because she owes it. I am asking because she can do it, and because I want someone to do it who knows what the doing costs." She paused. "I am asking because she already paid once. I think she deserves to know what she paid for."
-
-That was what the sixth fragment said.
-
 Stash has been awake for forty-three hours. She is forty-three hours into something that started with a woman staggering through the door with a punch blade entry wound and the name she could not yet have known, and she is now sitting in a tunnel maintenance junction with a seventeen-year-old who is waiting for her to tell him what she needs.
 
 "She said she wanted me to know what I paid for," she says. "In the last fragment. That's what she said."
@@ -2219,7 +2207,7 @@ Femi is quiet.
 
 "And what do you decide?" Femi asks.
 
-She looks at the dark phone. She thinks about the monitoring station at the north end of Austin. She thinks about forty nodes and a dead channel and a transmitter that has been waiting seven years for someone to plug a device into it.
+She looks at the dark handset. She thinks about the monitoring station at the north end of Austin. She thinks about forty nodes and a dead channel and a transmitter that has been waiting seven years for someone to plug a device into it.
 
 "I decide we go to the station," she says.
 
@@ -2309,7 +2297,7 @@ They went.
 ## The Plan
 
 [Beat 38]
-She maps the route to the monitoring station from inside the tunnel access, on Femi's phone, while hers finishes charging to 40%.
+She maps the route to the monitoring station from inside the tunnel access, on Femi's handset, while hers finishes charging to 40%.
 
 Four kilometers. The direct tunnel route is three and a half; the route that avoids the Scalpel checkpoints is four. Femi knows both. He has been navigating these tunnels for four days, and he has the map in his head the way she has surgical anatomy in hers: not referenced but known, reliable in the dark, available without looking.
 
@@ -2365,7 +2353,7 @@ She nods. "Then we move fast across the thirty meters. We go at 0500, before the
 
 He nods. "0500."
 
-She looks at her phone. It is 0417. Forty-three minutes.
+She looks at her handset. It is 0417. Forty-three minutes.
 
 She closes her eyes.
 
@@ -2545,15 +2533,15 @@ Six minutes.
 The door at the far end of the room opens.
 
 [Beat 42]
-Commander Mwangi enters last.
+Commander Brauer enters last.
 
 The breach is professional: two operatives from the street-level entrance, two from a secondary access she did not know existed -- a service hatch in the east wall of the equipment room, behind a false panel that Femi says later he knew was there but did not know was in use. The four of them establish positions in the equipment room in under eight seconds. They are in gray operational wear, no insignia, with the equipment of people who came here for a specific purpose and are now proceeding toward it.
 
-Mwangi enters through the street-level door last.
+Brauer enters through the street-level door last.
 
-She is not large -- medium height, Ghanaian features, a quiet physical presence that does not require size to establish itself. Former NGRA, from the bearing; former military in general from the way she scans a room, left to right, threat assessment by sector, face second. She carries the Cascade suppressor on her right hip. She looks at Stash and then at the transmitter panel and then at Femi and then back at Stash, and her assessment of the situation is visible in the sequence: transmitter is the asset, medical professional is the variable, the boy is a secondary consideration.
+He is not large -- medium height, a quiet physical presence that does not require size to establish itself. Former NGRA, from the bearing; former military in general from the way he scans a room, left to right, threat assessment by sector, face second. He carries the Cascade suppressor on his right hip. He looks at Stash and then at the transmitter panel and then at Femi and then back at Stash, and his assessment of the situation is visible in the sequence: transmitter is the asset, medical professional is the variable, the boy is a secondary consideration.
 
-"Dr. Adeyemi-Kowalski," she says. It is the same tone Petra used on the phone: neutral, professional, containing no threat because the threat is implicit and stating it would be redundant. "Stop the transmission."
+"Dr. Adeyemi-Kowalski," he says. It is the same tone Petra used on the line: neutral, professional, containing no threat because the threat is implicit and stating it would be redundant. "Stop the transmission."
 
 "I can't stop it," Stash says.
 
@@ -2561,65 +2549,65 @@ This is true. The broadcast is initiated, the data package is mid-transmission, 
 
 She has thought about this before climbing to this building. She has accepted this as the terms.
 
-Mwangi assesses the statement for approximately two seconds. Then she moves toward the transmitter panel.
+Brauer assesses the statement for approximately two seconds. Then he moves toward the transmitter panel.
 
-She is going to disconnect the power relay.
+He is going to disconnect the power relay.
 
-Stash stands up. She steps between Mwangi and the transmitter panel. She has the bone saw in her hand -- field surgical kit, thirty centimeters, carbide-tipped, rated for dense bone. She holds it the way she holds it in a surgical suite: not as a threat but as a tool, in her right hand with the grip she uses when she is working. Her elbow is bent at the angle that produces optimal control with a downstroke. This is not theatrical. It is the way she holds this instrument when she uses it for its intended purpose.
+Stash stands up. She steps between Brauer and the transmitter panel. She has the bone saw in her hand -- field surgical kit, thirty centimeters, carbide-tipped, rated for dense bone. She holds it the way she holds it in a surgical suite: not as a threat but as a tool, in her right hand with the grip she uses when she is working. Her elbow is bent at the angle that produces optimal control with a downstroke. This is not theatrical. It is the way she holds this instrument when she uses it for its intended purpose.
 
-Mwangi stops. She looks at the bone saw. She looks at Stash's hand. She looks at the distance between Stash and the panel.
+Brauer stops. He looks at the bone saw. He looks at Stash's hand. He looks at the distance between Stash and the panel.
 
-She makes a calculation. Stash can see her making it: this person is a surgeon, not a trained combatant; this saw is a tool not a weapon; the size disparity is significant; the distance to the panel is greater than the distance to the person blocking; the simplest path to the panel is around.
+He makes a calculation. Stash can see him making it: this person is a surgeon, not a trained combatant; this saw is a tool not a weapon; the size disparity is significant; the distance to the panel is greater than the distance to the person blocking; the simplest path to the panel is around.
 
-Mwangi goes around. She moves left and Stash moves to block and Mwangi moves right and steps past her arm's reach and continues to the panel.
+Brauer goes around. He moves left and Stash moves to block and Brauer moves right and steps past her arm's reach and continues to the panel.
 
-Stash does not pursue. She cannot stop Mwangi from reaching the panel. Mwangi is correct in her assessment.
+Stash does not pursue. She cannot stop Brauer from reaching the panel. Brauer is correct in his assessment.
 
 She steps back. She looks at the panel. She looks at the counter.
 
 Four minutes.
 
-Mwangi is at the power relay. Her hand is on the switch.
+Brauer is at the power relay. His hand is on the switch.
 
 Femi says: "Wait."
 
-Mwangi turns to look at him. He is seventeen and slight and he is holding the static discharge rod with the correct grip -- the grip you learn from someone who has worked in electrical environments, which means he learned it from a tunnel contact or a building cooperative member, the kind of knowledge that comes from spending years in the infrastructure below and above the Low. He is not threatening her. He is presenting a variable.
+Brauer turns to look at him. He is seventeen and slight and he is holding the static discharge rod with the correct grip -- the grip you learn from someone who has worked in electrical environments, which means he learned it from a tunnel contact or a building cooperative member, the kind of knowledge that comes from spending years in the infrastructure below and above the Low. He is not threatening Brauer. He is presenting a variable.
 
-Mwangi looks at the discharge rod. She looks at the panel. She looks at the counter.
+Brauer looks at the discharge rod. He looks at the panel. He looks at the counter.
 
-She looks at Stash.
+He looks at Stash.
 
 "The data is already being received," Stash says. "A partial transmission to forty nodes is recoverable. A full transmission is complete. In four minutes, the question of whether this has happened or not is no longer a question." She pauses. "In four minutes, it has happened."
 
-Mwangi looks at the power relay switch. She looks at the counter.
+Brauer looks at the power relay switch. He looks at the counter.
 
 Three minutes and forty seconds.
 
-She does not move her hand from the relay.
+He does not move his hand from the relay.
 
-But she has not pulled the switch.
+But he has not pulled the switch.
 
-Stash looks at Mwangi's hand. She watches the hand with the attention she brings to monitoring a patient during a critical interval -- looking for the small indicators that precede a change of state, the micro-adjustments that tell her whether the situation is stable or about to become unstable. The hand is on the relay. The hand is still. The hand has not moved in twelve seconds.
+Stash looks at Brauer's hand. She watches the hand with the attention she brings to monitoring a patient during a critical interval -- looking for the small indicators that precede a change of state, the micro-adjustments that tell her whether the situation is stable or about to become unstable. The hand is on the relay. The hand is still. The hand has not moved in twelve seconds.
 
 Three minutes and twenty-four seconds.
 
 "You already know what's on it," Stash says. "You've known for at least fourteen months. That's how long Petra has been looking."
 
-Mwangi's expression does not change. She is looking at the counter.
+Brauer's expression does not change. He is looking at the counter.
 
 "Pull the relay and it's a partial record," Stash says. "Four hundred and twenty-eight names truncated somewhere in the middle. Sixty-seven budget lines. An incomplete provenance chain." She pauses. "That's a story without an ending. That goes into the Gray Zone network and lives there as an allegation. Complete, it's a record."
 
 Three minutes and two seconds.
 
-Mwangi has not moved.
+Brauer has not moved.
 
-Stash waits. She is very practiced at waiting. The next ninety-three seconds are between Mwangi and herself, and there is nothing she can do to make them move faster. She waits, and she breathes, and she looks at the counter, and she waits.
+Stash waits. She is very practiced at waiting. The next ninety-three seconds are between Brauer and herself, and there is nothing she can do to make them move faster. She waits, and she breathes, and she looks at the counter, and she waits.
 
 Two minutes and forty-seven seconds.
 
-Mwangi takes her hand off the relay.
+Brauer takes his hand off the relay.
 
-She does not say anything. She steps back from the panel one step and stands with her hands at her sides and she looks at the counter. Two minutes and forty-seven seconds. Then she turns and looks at one of her operatives and gives a very small nod, the nod of someone acknowledging a situation they have assessed and decided to accept.
+He does not say anything. He steps back from the panel one step and stands with his hands at his sides and looks at the counter. Two minutes and forty-seven seconds. Then he turns and looks at one of his operatives and gives a very small nod, the nod of someone acknowledging a situation they have assessed and decided to accept.
 
 Stash breathes.
 
@@ -2634,43 +2622,41 @@ Three people come through the tunnel access.
 
 The two in front are NSB field agents, in standard gray operational clothing with the equipment of people who have been briefed on a situation and are entering it prepared. They are professional and calm and they establish positions without being directed to, which is the behavior of people who have done this before. The third is Petra Voss, in the dark jacket she wore to the food hall meeting, and she looks exactly as she looked then: composed, rational, dangerous in the specific way of someone who has made all her calculations in advance and is now observing results.
 
-She looks at Mwangi.
+She looks at Brauer.
 
-Mwangi looks at her.
+Brauer looks at her.
 
 The room has, in the space of ninety seconds, become a situation that nobody in it was briefed to expect. Scalpel did not know NSB was coming. NSB did not know Scalpel was already here. Both teams arrived at the same room from different directions following different intelligence, and the intelligence that brought each of them here was correct, and they are now sharing a room with two incompatible orders and a broadcast running.
 
-Mwangi's four Scalpel operatives are at the room's four corners. Petra's two NSB agents are at the tunnel access. Mwangi has her hand on the power relay. Petra is standing in the center of the room. Femi is against the north wall with the discharge rod. Stash is three meters from the transmitter panel, close enough to read the counter.
+Brauer's four Scalpel operatives are at the room's four corners. Petra's two NSB agents are at the tunnel access. Brauer has his hand on the power relay. Petra is standing in the center of the room. Femi is against the north wall with the discharge rod. Stash is three meters from the transmitter panel, close enough to read the counter.
 
 Two minutes and forty-eight seconds.
 
-Petra does not speak to Stash. She does not speak to Femi. She speaks to Mwangi with the directness of two professionals who have no time for framing.
+Petra does not speak to Stash. She does not speak to Femi. She speaks to Brauer with the directness of two professionals who have no time for framing.
 
 "Commander," she says. It is not a greeting.
 
-"Agent Voss," Mwangi says. It is not a greeting either.
+"Agent Voss," Brauer says. It is not a greeting either.
 
 "You're outside your operational brief," Petra says.
 
-"The asset is within my operational parameters," Mwangi says. Her hand has not moved from the power relay. "The transmitter is a Sable Industries installation in administrative closure. Scalpel has recovery authority over Sable assets in administrative closure in GLMZ."
+"The asset is within my operational parameters," Brauer says. His hand has not moved from the power relay. "The transmitter is a Sable Industries installation in administrative closure. Scalpel has recovery authority over Sable assets in administrative closure in GLMZ."
 
-"The transmission is mid-broadcast," Petra says. "Interrupting it now produces a partial data set that reaches forty nodes in a degraded but recoverable form. You have made the situation worse by arriving here, not better. A partial transmission is worse for Sable than a complete transmission that can be attributed to a single source."
+Petra looks at the counter. She looks at Brauer. She says: "Let it finish."
 
-Mwangi looks at the counter. Two minutes and twelve seconds. She is doing arithmetic: the arithmetic of what a partial transmission costs Scalpel versus a complete one, the arithmetic of two enforcement arms arriving at the same room with incompatible orders, the arithmetic of whether the power relay is still worth pulling.
+Brauer says nothing.
 
-"I have a standing order," Mwangi says.
+"That is my instruction," Petra says. "Let it finish."
 
-"I know," Petra says.
+There is a moment -- one second, two -- when Brauer's hand does not move from the relay and nothing in the room is certain. Then Brauer looks at the counter, and at Petra, and something in his expression shifts: the arithmetic of two enforcement arms sharing a room with incompatible orders, and someone who outranks him standing in the center of it.
 
-They look at each other. They are two professionals who have arrived at the same room from different directions with incompatible orders, and neither of them is what the other expected to find, and the counter is still running, and the options available to either of them are diminishing with each second.
+Two minutes and twelve seconds.
+
+Brauer does not pull the relay. He does not give any order to his team. He takes his hand from the relay and he stands.
 
 One minute and fifty seconds.
 
-Mwangi moves for the relay. Petra nods to her agents. The NSB agents move to interpose. What happens next is brief and professional and Stash turns away from it because she has seen what she needed to see -- the counter at one minute forty-three, running -- and she cannot do anything about what is happening behind her, and the thing she came here for is on the transmitter panel.
-
-One minute and three seconds.
-
-She turns to the panel and she watches the counter.
+Stash turns to the panel and she watches the counter.
 
 Forty-two seconds.
 
@@ -2690,7 +2676,7 @@ She closes her fingers around it. She holds it for a moment. Then she sets it on
 
 She turns around.
 
-Petra is standing three meters away, looking at her. She does not say anything about what happened behind Stash's back. She looks at Stash with the expression of someone taking in a result -- not a verdict, not a judgment, the neutral assessment of someone measuring what has occurred against what was possible.
+Petra is standing three meters away, looking at her. She does not say anything about what happened. She looks at Stash with the expression of someone taking in a result -- not a verdict, not a judgment, the neutral assessment of someone measuring what has occurred against what was possible.
 
 "Is it done?" Femi says, from the north wall.
 
@@ -2861,7 +2847,7 @@ Petra is quiet for a moment. Then: "You're welcome," she says. She says it witho
 Stash walks out of the monitoring station into the Austin service corridor and into the gray morning light.
 
 [Beat 46]
-She does not watch it happen in real time. She watches it afterward, in the new space, on a phone that Femi borrowed from the Garfield clinic after hers died.
+She does not watch it happen in real time. She watches it afterward, in the new space, on a handset that Femi borrowed from the Garfield clinic after hers died.
 
 By 1400 three Gray Zone data brokers have confirmed receipt of the full data package and have mirrored it to external network nodes. The mirrors are redundant: the data exists in at least six separate locations by 1400, and copying it now would require simultaneously suppressing six distinct repositories, which is not achievable by any single actor. The data is in the network.
 
@@ -2875,7 +2861,7 @@ The governor protocol is under review. Not suspended: the licensing board has is
 
 She knew it would not be clean.
 
-She reads the updates on the borrowed phone, in the new space -- a sub-level unit in West Town that one of Femi's contacts has offered for temporary use, two rooms, functional heat, a working water line. She reads without comment. She does not feel what the situation seems to call for her to feel, which is resolution. She feels what she has felt since 0600: the particular quiet of something that has been completed and now simply is.
+She reads the updates on the borrowed handset, in the new space -- a sub-level unit in West Town that one of Femi's contacts has offered for temporary use, two rooms, functional heat, a working water line. She reads without comment. She does not feel what the situation seems to call for her to feel, which is resolution. She feels what she has felt since 0600: the particular quiet of something that has been completed and now simply is.
 
 She reads the statement from the GLMZ Medical Licensing Board. It is four paragraphs, formal language, the language of an institution that is managing an obligation it did not seek. It acknowledges the filing. It confirms the review process will open. It states that the governor protocol remains authorized during the review. It does not use the words "Sable Industries" or "Austin" or "four hundred and twenty-eight." It uses the phrase "the relevant program" twice.
 
@@ -2883,21 +2869,21 @@ She notes these word choices. They are the word choices of an institution that i
 
 The data is authenticated. The the Loop fringe legal collective has confirmed the authentication chain from Renata's encryption architecture to the original Sable Industries document set. The chain is intact. Renata built it correctly.
 
-Ledger is released by 1900. She does not know how, because he does not explain how. He calls her from an unknown number at 1903 and says he is out and that he needs twenty-four hours and that he will explain the wrong-coordinates decision when she is ready to hear the explanation. She says she already understood the explanation. He says okay and hangs up.
+Ledger is released by 1900. She does not know how, because he does not explain how. He calls her on the handset from an unknown number at 1903 and says he is out and that he needs twenty-four hours and that he will explain the wrong-coordinates decision when she is ready to hear the explanation. She says she already understood the explanation. He says okay and hangs up.
 
-She puts the borrowed phone down on the floor of the West Town unit.
+She puts the borrowed handset down on the floor of the West Town unit.
 
 She sits in the middle of the main room, which has no furniture, and she looks at the walls. The walls are bare ferrocement. The floor is bare ferrocement. The room is, at this moment, nothing: no history in this space, no prior occupants she knows about, no furniture that carries the shape of someone who has been sitting in it.
 
-She thinks about the Unit. She thinks about Augustina, who is stable and nearly recovered. She thinks about Marco, who is fine and went home. She thinks about Dalco, who went home yesterday. She thinks about the patient files that Scalpel took and that Petra is working on. She thinks about four hundred and twenty-eight people whose names she does not know and whose identifier codes she has read in a data index at 0214 on a Tuesday morning.
+She thinks about the Unit. She thinks about Augustina, who is stable and nearly recovered. She thinks about Marco, who is fine and went home. She thinks about Rudeboi, who went home yesterday. She thinks about the patient files that Scalpel took and that Petra is working on. She thinks about four hundred and twenty-eight people whose names she does not know and whose identifier codes she has read in a data index at 0214 on a Tuesday morning.
 
 She thinks about Renata Emmei, who spent eleven years on a calculation and decided nine percent was enough and was right.
 
 She does not try to resolve it. It will not resolve. What happened in 2211 happened and cannot unhappen. What happened in the monitoring station happened and will continue to happen in the legal structures and the journalism and the licensing reviews for the next several years. What she did in the tunnel and the monitoring station happened and she is not sorry about it.
 
-She has forty-three Phi and no patient files and no clinic and a phone with 23% battery and a calculation she will spend the next several years with.
+She has forty-three Phi and no patient files and no clinic and a handset with 23% battery and a calculation she will spend the next several years with.
 
-She picks up the phone. She calls Femi.
+She picks up the handset. She calls Femi.
 
 "Where are you?" she says.
 
@@ -2913,7 +2899,7 @@ She hangs up.
 
 She sits in the empty room and she looks at the walls and she catalogs what she has.
 
-She has forty-three Phi. She has the field surgical kit. She has the device, dark and discharged, which she has carried for six days and has not put down since the monitoring station. She has a borrowed phone. She has Femi's contacts and Ledger's agreed percentage and Petra's promise to work on the records.
+She has forty-three Phi. She has the field surgical kit. She has the device, dark and discharged, which she has carried for six days and has not put down since the monitoring station. She has a borrowed handset. She has Femi's contacts and Ledger's agreed percentage and Petra's promise to work on the records.
 
 She has the work. The work is not the payment. But it is what she has and it is what she does and it is what she will continue doing.
 
@@ -2958,7 +2944,7 @@ She is reshelving the irrigation supplies. She does not look up. "I told you I c
 
 "I know," he says. "I know that." He comes further into the room. He stands at the supply shelf across from her. "The the Loop fringe legal collective filed their formal license challenge this morning. The licensing board has accepted it. The review process opens next month."
 
-"I know," she says. She has been following it on the borrowed phone, which she has stopped thinking of as borrowed and started thinking of as hers.
+"I know," she says. She has been following it on the borrowed handset, which she has stopped thinking of as borrowed and started thinking of as hers.
 
 "The authentication chain held," he says. "Renata built it correctly."
 

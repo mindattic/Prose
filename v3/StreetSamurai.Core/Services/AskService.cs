@@ -1,4 +1,4 @@
-using System.Text;
+﻿using System.Text;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Logging;
 using StreetSamurai.Core.Data;
@@ -85,11 +85,11 @@ public class AskService
                 .Where(s => s.Id == sid)
                 .Select(s => new { s.Slug, s.Title })
                 .FirstOrDefaultAsync(ct);
-            var beats = await (from sb in db.NodeBeats.AsNoTracking()
+            var beats = await (from sb in db.BeatNodes.AsNoTracking()
                                join b in db.Beats.AsNoTracking() on sb.BeatId equals b.Id
                                where sb.NodeId == sid && sb.IsEnabled
                                orderby sb.SortKey
-                               select new { b.Id, b.Text, b.BeatTitle }).ToListAsync(ct);
+                               select new { b.Id, b.Text, b.Title }).ToListAsync(ct);
 
             const long CharBudget = 90_000; // ~22k tokens — safe for a novella
             long used = 0;
@@ -98,7 +98,7 @@ public class AskService
             {
                 pos++;
                 if (used > CharBudget) break;
-                var heading = string.IsNullOrWhiteSpace(b.BeatTitle) ? $"Ch {pos}" : $"Ch {pos} — {b.BeatTitle}";
+                var heading = string.IsNullOrWhiteSpace(b.Title) ? $"Ch {pos}" : $"Ch {pos} — {b.Title}";
                 proseBlock.AppendLine($"[{heading}]");
                 proseBlock.AppendLine(b.Text);
                 proseBlock.AppendLine();
@@ -110,15 +110,15 @@ public class AskService
         else if (retrieveProse > 0)
         {
             // Unscoped: semantic retrieval over all embedded node beats.
-            var proseHits = await embeddings.FindSimilarNodeBeatsAsync(question, retrieveProse, null, ct);
+            var proseHits = await embeddings.FindSimilarBeatNodesAsync(question, retrieveProse, null, ct);
             if (proseHits.Count > 0)
             {
                 var pids = proseHits.Select(h => h.ScopeId).ToHashSet();
                 var texts = await db.Beats.AsNoTracking()
                     .Where(b => pids.Contains(b.Id))
-                    .Select(b => new { b.Id, b.Text, b.BeatTitle })
+                    .Select(b => new { b.Id, b.Text, b.Title })
                     .ToDictionaryAsync(b => b.Id, ct);
-                var member = await (from sb in db.NodeBeats.AsNoTracking()
+                var member = await (from sb in db.BeatNodes.AsNoTracking()
                                     join s in db.Nodes.AsNoTracking() on sb.NodeId equals s.Id
                                     where pids.Contains(sb.BeatId) && sb.IsEnabled
                                     select new { sb.BeatId, s.Slug, s.Title }).ToListAsync(ct);
@@ -130,7 +130,7 @@ public class AskService
                     if (!texts.TryGetValue(h.ScopeId, out var b)) continue;
                     memberMap.TryGetValue(h.ScopeId, out var m);
                     var chunk = b.Text.Length > MaxPerBeat ? b.Text[..MaxPerBeat] + "…" : b.Text;
-                    var label = (m?.Title ?? "story") + (string.IsNullOrWhiteSpace(b.BeatTitle) ? "" : " — " + b.BeatTitle);
+                    var label = (m?.Title ?? "story") + (string.IsNullOrWhiteSpace(b.Title) ? "" : " — " + b.Title);
                     proseBlock.AppendLine($"--- {label} (similarity {h.Similarity:F3}) ---");
                     proseBlock.AppendLine(chunk);
                     proseBlock.AppendLine();

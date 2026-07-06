@@ -1,4 +1,4 @@
-using System.ComponentModel;
+﻿using System.ComponentModel;
 using System.Text.Json;
 using Microsoft.EntityFrameworkCore;
 using ModelContextProtocol.Server;
@@ -56,26 +56,26 @@ public class NodeTools
     public Task<string> CreateSeries(
         [Description("Series title. Required.")] string title,
         [Description("Optional short reference code (e.g. 'BCODA'). Upper-cased; rejected if already in use.")] string code = "",
-        [Description("Optional one-line synopsis.")] string synopsis = "")
-        => CreateNodeCoreAsync(title, "series", synopsis, seed: "", targetBeats: 0, parentNodeIdOrSlug: "", code: code, previous: "");
+        [Description("Optional one-line description (back-of-book text).")] string description = "")
+        => CreateNodeCoreAsync(title, "series", description, seed: "", targetBeats: 0, parentNodeIdOrSlug: "", code: code, previous: "");
 
     [McpServerTool, Description("Create a StoryNode — a single story arc (book / novella / standalone). Pass 'seed' to also generate a story bible and planned beats immediately. Optional parent makes it part of a series; optional previous marks it a sequel (sequel commandments apply). Returns the new id, slug, url, and (if generated) the bible text.")]
     public Task<string> CreateStory(
         [Description("Story title. Required.")] string title,
-        [Description("Optional synopsis.")] string synopsis = "",
+        [Description("Optional back-of-book description.")] string description = "",
         [Description("One-line generation seed. When provided, the story bible and planned beats are created immediately after the row is inserted.")] string seed = "",
         [Description("Target beat count for the bible spine (only used when seed is provided). Default 12.")] int targetBeats = 12,
         [Description("Optional parent SeriesNode Guid id (or slug). Empty = standalone.")] string parentNodeIdOrSlug = "",
         [Description("Optional short author-assigned reference code (e.g. 'ATTE'). Uppercased, unique lookup key.")] string code = "",
         [Description("Optional prior story this one continues (slug or GUID) — sequel commandments apply.")] string previous = "")
-        => CreateNodeCoreAsync(title, "story", synopsis, seed, targetBeats, parentNodeIdOrSlug, code, previous);
+        => CreateNodeCoreAsync(title, "story", description, seed, targetBeats, parentNodeIdOrSlug, code, previous);
 
     [McpServerTool, Description("Create a ChapterNode under a story. Chapters hold beats and never carry a reference code. parentNodeIdOrSlug is REQUIRED. Returns the new id, slug, and url.")]
     public Task<string> CreateChapter(
         [Description("Chapter title. Required.")] string title,
         [Description("Parent StoryNode Guid id or slug. Required.")] string parentNodeIdOrSlug,
-        [Description("Optional synopsis.")] string synopsis = "")
-        => CreateNodeCoreAsync(title, "chapter", synopsis, seed: "", targetBeats: 0, parentNodeIdOrSlug: parentNodeIdOrSlug, code: "", previous: "");
+        [Description("Optional back-of-book description.")] string description = "")
+        => CreateNodeCoreAsync(title, "chapter", description, seed: "", targetBeats: 0, parentNodeIdOrSlug: parentNodeIdOrSlug, code: "", previous: "");
 
     /// <summary>Resolve a node reference (GUID or slug) to its id. Empty input → null.</summary>
     private async Task<Guid?> ResolveNodeIdAsync(string? slugOrId)
@@ -107,7 +107,7 @@ public class NodeTools
         var rows = await q.OrderBy(s => s.Kind).ThenBy(s => s.Title).Take(limit).ToListAsync();
 
         var ids = rows.Select(r => r.Id).ToList();
-        var beatCounts = await db.NodeBeats
+        var beatCounts = await db.BeatNodes
             .Where(sb => ids.Contains(sb.NodeId))
             .GroupBy(sb => sb.NodeId)
             .Select(g => new { NodeId = g.Key, Count = g.Count() })
@@ -127,7 +127,7 @@ public class NodeTools
         return JsonSerializer.Serialize(result, CanonTools.JsonOpts);
     }
 
-    [McpServerTool, Description("Get a single node with its beats in reading order. Accepts a Guid id OR a slug. Returns node metadata + ordered beats (id, text, stale, has_audio, beat_title, synopsis).")]
+    [McpServerTool, Description("Get a single node with its beats in reading order. Accepts a Guid id OR a slug. Returns node metadata + ordered beats (id, text, stale, has_audio, title, description).")]
     public async Task<string> GetStory(
         [Description("Node Guid id or slug.")] string idOrSlug)
     {
@@ -137,7 +137,7 @@ public class NodeTools
         return JsonSerializer.Serialize(new
         {
             id = node.Id, slug = node.Slug, title = node.Title, kind = node.Kind,
-            status = node.Status, synopsis = node.Synopsis, seed = node.Seed,
+            status = node.Status, description = node.Description, seed = node.Seed,
             voice_id = node.VoiceId,
             parent_node_id = node.ParentNodeId, chars_narrated = node.CharsNarrated,
             has_bible = node.NodeBible != null,
@@ -150,15 +150,15 @@ public class NodeTools
                 stale = b.Beat.Stale,
                 has_audio = !string.IsNullOrEmpty(b.Beat.AudioPath),
                 duration_sec = b.Beat.DurationSec,
-                beat_title = b.Beat.BeatTitle,
-                synopsis = b.Beat.Synopsis,
+                title = b.Beat.Title,
+                description = b.Beat.Description,
             }),
         }, CanonTools.JsonOpts);
     }
 
     /// <summary>Shared implementation behind CreateSeries / CreateStory / CreateChapter.</summary>
     private async Task<string> CreateNodeCoreAsync(
-        string title, string kind, string synopsis, string seed,
+        string title, string kind, string description, string seed,
         int targetBeats, string parentNodeIdOrSlug, string code, string previous)
     {
         if (string.IsNullOrWhiteSpace(title))
@@ -198,7 +198,7 @@ public class NodeTools
         node.Id = id;
         node.Slug = slug;
         node.Title = title ?? "";
-        node.Synopsis = string.IsNullOrEmpty(synopsis) ? null : synopsis;
+        node.Description = string.IsNullOrEmpty(description) ? null : description;
         node.Seed = string.IsNullOrEmpty(seed) ? null : seed;
         node.Status = "draft";
         node.ParentNodeId = parentId;
@@ -258,7 +258,7 @@ public class NodeTools
 
         await using var db = await dbFactory.CreateDbContextAsync();
 
-        var sourceBeats = await db.Set<NodeBeat>()
+        var sourceBeats = await db.Set<BeatNode>()
             .AsNoTracking()
             .Where(sb => sb.NodeId == source.Id && sb.IsEnabled)
             .OrderBy(sb => sb.SortKey)
@@ -282,7 +282,7 @@ public class NodeTools
         clone.NodeCode        = code;
         clone.Kind            = source.Kind;
         clone.Status          = status;
-        clone.Synopsis        = source.Synopsis;
+        clone.Description     = source.Description;
         clone.Seed            = source.Seed;
         clone.UniverseId      = source.UniverseId;
         clone.VoiceId         = source.VoiceId;
@@ -310,8 +310,8 @@ public class NodeTools
                 Id               = beatId,
                 Number           = nextNum++,
                 Text             = src.Text,
-                BeatTitle        = src.BeatTitle,
-                Synopsis         = src.Synopsis,
+                Title            = src.Title,
+                Description      = src.Description,
                 StructureRole    = src.StructureRole,
                 Act              = src.Act,
                 SceneType        = src.SceneType,
@@ -324,7 +324,7 @@ public class NodeTools
                 CreatedAt        = now,
                 UpdatedAt        = now,
             });
-            db.NodeBeats.Add(new NodeBeat
+            db.BeatNodes.Add(new BeatNode
             {
                 NodeId  = newId,
                 BeatId    = beatId,
@@ -373,8 +373,8 @@ public class NodeTools
         if (beat == null) return JsonSerializer.Serialize(new { error = "beat_not_found", beatHandle }, CanonTools.JsonOpts);
 
         // Resolve the node that owns this beat — either the one from the
-        // dotted handle (if any), or the first NodeBeat junction.
-        var nodeId = parsedNode ?? (await db.NodeBeats.AsNoTracking()
+        // dotted handle (if any), or the first BeatNode junction.
+        var nodeId = parsedNode ?? (await db.BeatNodes.AsNoTracking()
             .Where(sb => sb.BeatId == beat.Id)
             .Select(sb => (Guid?)sb.NodeId)
             .FirstOrDefaultAsync());
@@ -406,8 +406,8 @@ public class NodeTools
             text            = beat.Text,
             kind            = beat.Kind,
             is_chapter_start = beat.IsChapterStart,
-            beat_title      = beat.BeatTitle,
-            synopsis        = beat.Synopsis,
+            title           = beat.Title,
+            description     = beat.Description,
             subtext         = beat.Subtext,
             structure_role  = beat.StructureRole,
             act             = beat.Act,
@@ -433,25 +433,25 @@ public class NodeTools
         return JsonSerializer.Serialize(new { ok = true, id = bid.Value }, CanonTools.JsonOpts);
     }
 
-    [McpServerTool, Description("Update a beat's metadata: BeatTitle, Synopsis, EmotionalTone, PaceHint, StructureRole, Act, SceneType, IsChapterStart, Kind. Pass empty strings to clear nullable fields. Does NOT touch prose or audio. Use to mark a beat as a chapter start, change its kind to quote/dedication/book-title, or set the tone the next re-record uses.")]
+    [McpServerTool, Description("Update a beat's metadata: Title, Description, EmotionalTone, PaceHint, StructureRole, Act, SceneType, IsChapterStart, Kind. Pass empty strings to clear nullable fields. Does NOT touch prose or audio. Use to mark a beat as a chapter start, change its kind to quote/dedication/book-title, or set the tone the next re-record uses.")]
     public async Task<string> UpdateBeatMetadata(
         [Description("Beat Guid OR 'node-guid.beat-guid' handle.")] string beatHandle,
-        [Description("Short label. When IsChapterStart=true this is the chapter heading; when Kind=quote this is the attribution.")] string beatTitle = "",
-        [Description("One-line synopsis fed to LLM regenerations.")] string synopsis = "",
+        [Description("Short label. When IsChapterStart=true this is the chapter heading; when Kind=quote this is the attribution.")] string title = "",
+        [Description("One-line description fed to LLM regenerations.")] string description = "",
         [Description("What is happening beneath the prose — foreshadowing, unspoken motivations, dramatic irony. Visible to the prose writer LLM but never printed.")] string subtext = "",
         [Description("Emotional tone, e.g. 'quiet' / 'tense' / 'wry'.")] string emotionalTone = "",
         [Description("Pace hint, e.g. 'flowing' / 'clipped' / 'staccato' / 'languorous'.")] string paceHint = "",
         [Description("Structure role, e.g. 'inciting-incident' / 'rising-action' / 'climax'.")] string structureRole = "",
         [Description("Plot-act number 0–5. 0 = unassigned.")] int act = 0,
         [Description("Scene type: scene | summary | transition | interstitial.")] string sceneType = "scene",
-        [Description("True = this beat begins a new chapter / section. The writer renders a divider above it with BeatTitle as the heading.")] bool isChapterStart = false,
+        [Description("True = this beat begins a new chapter / section. The writer renders a divider above it with Title as the heading.")] bool isChapterStart = false,
         [Description("Beat kind: prose (default) | book-title | dedication | quote. Free-form so new kinds add no schema cost.")] string kind = "prose")
     {
         if (!BeatHandle.TryParse(beatHandle, out _, out var bid) || bid == null)
             return JsonSerializer.Serialize(new { error = "bad_beat_handle", beatHandle }, CanonTools.JsonOpts);
         await workbench.UpdateBeatMetadataAsync(bid.Value, new NodeWorkbenchService.BeatMetadataUpdate(
-            BeatTitle:      beatTitle,
-            Synopsis:       synopsis,
+            Title:          title,
+            Description:    description,
             Subtext:        subtext,
             EmotionalTone:  emotionalTone,
             PaceHint:       paceHint,
@@ -575,14 +575,14 @@ public class NodeTools
         var node = await ResolveNodeAsync(idOrSlug);
         if (node == null) return JsonSerializer.Serialize(new { error = "node_not_found", idOrSlug }, CanonTools.JsonOpts);
 
-        var seed = node.Seed ?? node.Synopsis ?? node.Title;
+        var seed = node.Seed ?? node.Description ?? node.Title;
         if (string.IsNullOrWhiteSpace(seed))
-            return JsonSerializer.Serialize(new { error = "no_seed", message = "Node has no Seed or Synopsis to drive generation. Set one first with SetStoryBible or UpdateBeatMetadata." }, CanonTools.JsonOpts);
+            return JsonSerializer.Serialize(new { error = "no_seed", message = "Node has no Seed or Description to drive generation. Set one first with SetStoryBible or UpdateBeatMetadata." }, CanonTools.JsonOpts);
 
         if (targetBeats <= 0)
         {
             await using var db = await dbFactory.CreateDbContextAsync();
-            targetBeats = await db.NodeBeats.CountAsync(sb => sb.NodeId == node.Id && sb.IsEnabled);
+            targetBeats = await db.BeatNodes.CountAsync(sb => sb.NodeId == node.Id && sb.IsEnabled);
             if (targetBeats <= 0) targetBeats = 12;
         }
 
@@ -735,7 +735,7 @@ public class NodeTools
             .ToDictionaryAsync(x => x.NodeId);
 
         // Word counts from beats
-        var wordCounts = await db.NodeBeats
+        var wordCounts = await db.BeatNodes
             .AsNoTracking()
             .Where(sb => ids.Contains(sb.NodeId) && sb.IsEnabled)
             .Join(db.Beats.AsNoTracking().Where(b => b.Text != null && b.Text != ""),
@@ -772,11 +772,11 @@ public class NodeTools
         return JsonSerializer.Serialize(new { count = rows.Count, nodes = rows }, CanonTools.JsonOpts);
     }
 
-    [McpServerTool, Description("Update a node's metadata fields. Pass only the fields you want to change — omit the rest to leave them unchanged. Editable fields: title, synopsis, kind, status, seed, code (NodeCode), voice_id. Status valid values: draft | ready | canon | archived. Code is uppercased and must be unique across non-null values — pass empty string to clear it. Does NOT touch beats or audio.")]
+    [McpServerTool, Description("Update a node's metadata fields. Pass only the fields you want to change — omit the rest to leave them unchanged. Editable fields: title, description, kind, status, seed, code (NodeCode), voice_id. Status valid values: draft | ready | canon | archived. Code is uppercased and must be unique across non-null values — pass empty string to clear it. Does NOT touch beats or audio.")]
     public async Task<string> UpdateStory(
         [Description("Node id (GUID) or slug.")] string idOrSlug,
         [Description("New title. Omit to leave unchanged.")] string? title = null,
-        [Description("Short synopsis. Omit to leave unchanged; pass empty string to clear.")] string? synopsis = null,
+        [Description("Back-of-book description. Omit to leave unchanged; pass empty string to clear.")] string? description = null,
         [Description("Kind label: book | chapter | episode | novella | novel | node | scene | saga | anthology. Omit to leave unchanged.")] string? kind = null,
         [Description("Status: draft | ready | canon | archived. Omit to leave unchanged.")] string? status = null,
         [Description("Generation seed (one-line premise). Omit to leave unchanged; pass empty string to clear.")] string? seed = null,
@@ -793,7 +793,7 @@ public class NodeTools
             if (row == null) return JsonSerializer.Serialize(new { error = "node_row_missing", id = node.Id }, CanonTools.JsonOpts);
 
             if (title    != null) row.Title    = title;
-            if (synopsis != null) row.Synopsis = string.IsNullOrEmpty(synopsis) ? null : synopsis;
+            if (description != null) row.Description = string.IsNullOrEmpty(description) ? null : description;
             if (kind     != null) row.Kind     = kind;
             if (status   != null) row.Status   = status;
             if (seed     != null) row.Seed     = string.IsNullOrEmpty(seed) ? null : seed;
@@ -1050,7 +1050,7 @@ public class NodeTools
 
         await using var db = await dbFactory.CreateDbContextAsync();
 
-        var texts = await db.NodeBeats
+        var texts = await db.BeatNodes
             .AsNoTracking()
             .Where(sb => sb.NodeId == node.Id && sb.IsEnabled)
             .OrderBy(sb => sb.SortKey)

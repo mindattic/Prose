@@ -923,12 +923,11 @@ namespace StreetSamurai.Core.Migrations
                         .HasMaxLength(400)
                         .HasColumnType("nvarchar(400)");
 
-                    b.Property<string>("BeatTitle")
-                        .HasMaxLength(400)
-                        .HasColumnType("nvarchar(400)");
-
                     b.Property<DateTime>("CreatedAt")
                         .HasColumnType("datetime2");
+
+                    b.Property<string>("Description")
+                        .HasColumnType("nvarchar(max)");
 
                     b.Property<double?>("DurationSec")
                         .HasColumnType("float");
@@ -992,9 +991,6 @@ namespace StreetSamurai.Core.Migrations
                     b.Property<string>("Subtext")
                         .HasColumnType("nvarchar(max)");
 
-                    b.Property<string>("Synopsis")
-                        .HasColumnType("nvarchar(max)");
-
                     b.Property<string>("Text")
                         .IsRequired()
                         .HasColumnType("nvarchar(max)");
@@ -1002,6 +998,10 @@ namespace StreetSamurai.Core.Migrations
                     b.Property<string>("TextHash")
                         .HasMaxLength(80)
                         .HasColumnType("nvarchar(80)");
+
+                    b.Property<string>("Title")
+                        .HasMaxLength(400)
+                        .HasColumnType("nvarchar(400)");
 
                     b.Property<DateTime>("UpdatedAt")
                         .IsConcurrencyToken()
@@ -1081,6 +1081,29 @@ namespace StreetSamurai.Core.Migrations
                     b.HasKey("BeatId");
 
                     b.ToTable("BeatModeLog", (string)null);
+                });
+
+            modelBuilder.Entity("StreetSamurai.Core.Data.Entities.BeatNode", b =>
+                {
+                    b.Property<Guid>("NodeId")
+                        .HasColumnType("uniqueidentifier");
+
+                    b.Property<Guid>("BeatId")
+                        .HasColumnType("uniqueidentifier");
+
+                    b.Property<bool>("IsEnabled")
+                        .HasColumnType("bit");
+
+                    b.Property<double>("SortKey")
+                        .HasColumnType("float");
+
+                    b.HasKey("NodeId", "BeatId");
+
+                    b.HasIndex("BeatId");
+
+                    b.HasIndex("NodeId", "SortKey");
+
+                    b.ToTable("BeatNodes");
                 });
 
             modelBuilder.Entity("StreetSamurai.Core.Data.Entities.BeatServiceLog", b =>
@@ -6261,6 +6284,9 @@ namespace StreetSamurai.Core.Migrations
                     b.Property<string>("DefaultLocation")
                         .HasColumnType("nvarchar(max)");
 
+                    b.Property<string>("Description")
+                        .HasColumnType("nvarchar(max)");
+
                     b.Property<string>("Error")
                         .HasColumnType("nvarchar(max)");
 
@@ -6351,9 +6377,6 @@ namespace StreetSamurai.Core.Migrations
                         .HasColumnType("nvarchar(40)");
 
                     b.Property<string>("Summary")
-                        .HasColumnType("nvarchar(max)");
-
-                    b.Property<string>("Synopsis")
                         .HasColumnType("nvarchar(max)");
 
                     b.Property<string>("Title")
@@ -6495,29 +6518,6 @@ namespace StreetSamurai.Core.Migrations
                     b.HasIndex("NodeId", "At");
 
                     b.ToTable("NodeAudioEvents");
-                });
-
-            modelBuilder.Entity("StreetSamurai.Core.Data.Entities.NodeBeat", b =>
-                {
-                    b.Property<Guid>("NodeId")
-                        .HasColumnType("uniqueidentifier");
-
-                    b.Property<Guid>("BeatId")
-                        .HasColumnType("uniqueidentifier");
-
-                    b.Property<bool>("IsEnabled")
-                        .HasColumnType("bit");
-
-                    b.Property<double>("SortKey")
-                        .HasColumnType("float");
-
-                    b.HasKey("NodeId", "BeatId");
-
-                    b.HasIndex("BeatId");
-
-                    b.HasIndex("NodeId", "SortKey");
-
-                    b.ToTable("NodeBeats");
                 });
 
             modelBuilder.Entity("StreetSamurai.Core.Data.Entities.NodeChapterSummary", b =>
@@ -9627,6 +9627,25 @@ namespace StreetSamurai.Core.Migrations
                         .IsRequired();
                 });
 
+            modelBuilder.Entity("StreetSamurai.Core.Data.Entities.BeatNode", b =>
+                {
+                    b.HasOne("StreetSamurai.Core.Data.Entities.Beat", "Beat")
+                        .WithMany("BeatNodes")
+                        .HasForeignKey("BeatId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+
+                    b.HasOne("StreetSamurai.Core.Data.Entities.Node", "Node")
+                        .WithMany("BeatNodes")
+                        .HasForeignKey("NodeId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+
+                    b.Navigation("Beat");
+
+                    b.Navigation("Node");
+                });
+
             modelBuilder.Entity("StreetSamurai.Core.Data.Entities.BeatServiceLog", b =>
                 {
                     b.HasOne("StreetSamurai.Core.Data.Entities.Beat", null)
@@ -10963,25 +10982,6 @@ namespace StreetSamurai.Core.Migrations
                     b.Navigation("PreviousNode");
                 });
 
-            modelBuilder.Entity("StreetSamurai.Core.Data.Entities.NodeBeat", b =>
-                {
-                    b.HasOne("StreetSamurai.Core.Data.Entities.Beat", "Beat")
-                        .WithMany("NodeBeats")
-                        .HasForeignKey("BeatId")
-                        .OnDelete(DeleteBehavior.Cascade)
-                        .IsRequired();
-
-                    b.HasOne("StreetSamurai.Core.Data.Entities.Node", "Node")
-                        .WithMany("NodeBeats")
-                        .HasForeignKey("NodeId")
-                        .OnDelete(DeleteBehavior.Cascade)
-                        .IsRequired();
-
-                    b.Navigation("Beat");
-
-                    b.Navigation("Node");
-                });
-
             modelBuilder.Entity("StreetSamurai.Core.Data.Entities.NodeChapterSummary", b =>
                 {
                     b.HasOne("StreetSamurai.Core.Data.Entities.Node", "Node")
@@ -11769,7 +11769,7 @@ namespace StreetSamurai.Core.Migrations
 
             modelBuilder.Entity("StreetSamurai.Core.Data.Entities.Beat", b =>
                 {
-                    b.Navigation("NodeBeats");
+                    b.Navigation("BeatNodes");
                 });
 
             modelBuilder.Entity("StreetSamurai.Core.Data.Entities.Book", b =>
@@ -12020,11 +12020,11 @@ namespace StreetSamurai.Core.Migrations
 
             modelBuilder.Entity("StreetSamurai.Core.Data.Entities.Node", b =>
                 {
+                    b.Navigation("BeatNodes");
+
                     b.Navigation("Children");
 
                     b.Navigation("Keywords");
-
-                    b.Navigation("NodeBeats");
 
                     b.Navigation("Publications");
 

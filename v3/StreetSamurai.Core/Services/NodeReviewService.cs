@@ -1,4 +1,4 @@
-using System.Security.Cryptography;
+﻿using System.Security.Cryptography;
 using System.Text;
 using System.Text.Json;
 using System.Text.RegularExpressions;
@@ -922,7 +922,7 @@ Be honest and use the whole scale.";
             .Select(g => g.OrderByDescending(r => r.ReviewedAt).First()).ToList();
         if (reviews.Count == 0) return new List<EditProposal>();
 
-        var ordered = await db.NodeBeats.Where(sb => sb.NodeId == nodeId)
+        var ordered = await db.BeatNodes.Where(sb => sb.NodeId == nodeId)
             .OrderBy(sb => sb.SortKey).Include(sb => sb.Beat).Select(sb => sb.Beat!).ToListAsync(ct);
         int n = ordered.Count;
         if (n == 0) return new List<EditProposal>();
@@ -1709,7 +1709,7 @@ Be specific; do not invent praise the reviews don't support.";
             // perBeat is keyed by POSITIONAL beat index (1..N, the order the study saw the
             // beats), NOT the global Beat.Number. Map positional → the node's beats in
             // reading (SortKey) order.
-            var ordered = await db.NodeBeats
+            var ordered = await db.BeatNodes
                 .Where(sb => sb.NodeId == nodeId)
                 .OrderBy(sb => sb.SortKey)
                 .Include(sb => sb.Beat)
@@ -1728,7 +1728,7 @@ Be specific; do not invent praise the reviews don't support.";
             double? sd = latestPerPersona.Count > 1
                 ? Math.Sqrt(latestPerPersona.Sum(r => Math.Pow((double)r.Score - mean, 2)) / latestPerPersona.Count)
                 : null;
-            var beatCount = await db.NodeBeats.CountAsync(sb => sb.NodeId == nodeId && sb.IsEnabled, ct);
+            var beatCount = await db.BeatNodes.CountAsync(sb => sb.NodeId == nodeId && sb.IsEnabled, ct);
             db.NodeScoreHistories.Add(new Data.Entities.NodeScoreHistory
             {
                 NodeId    = nodeId,
@@ -2135,7 +2135,7 @@ Be specific; do not invent praise the reviews don't support.";
     private async Task<IReadOnlyDictionary<int, string>> LoadBeatHashesAsync(Guid nodeId, CancellationToken ct)
     {
         await using var db = await dbFactory.CreateDbContextAsync(ct);
-        var hashes = await db.NodeBeats
+        var hashes = await db.BeatNodes
             .Where(nb => nb.NodeId == nodeId && nb.IsEnabled)
             .OrderBy(nb => nb.SortKey)
             .Select(nb => nb.Beat!.TextHash)
@@ -2173,7 +2173,7 @@ Be specific; do not invent praise the reviews don't support.";
             if (node == null) return new DeltaRunResult(0, 0, 0, 0, 0, "Node not found.");
             nodeTitle = node.Title;
 
-            orderedBeats = await db.NodeBeats
+            orderedBeats = await db.BeatNodes
                 .Where(nb => nb.NodeId == nodeId && nb.IsEnabled)
                 .OrderBy(nb => nb.SortKey)
                 .Include(nb => nb.Beat)

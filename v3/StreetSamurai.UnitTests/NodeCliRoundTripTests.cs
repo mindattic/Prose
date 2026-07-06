@@ -205,8 +205,8 @@ public class NodeCliRoundTripTests
         var beat = ordered[0].Beat;
 
         await workbench.UpdateBeatMetadataAsync(beat.Id, new NodeWorkbenchService.BeatMetadataUpdate(
-            BeatTitle:      "The whisper",
-            Synopsis:       "Quiet open — set the mood",
+            Title:      "The whisper",
+            Description:       "Quiet open — set the mood",
             Subtext:        null,
             EmotionalTone:  "quiet",
             PaceHint:       "languorous",

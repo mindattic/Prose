@@ -1,6 +1,6 @@
 {
   "votingEnabled": false,
-  "voters": ["claude-team"],
+  "voters": ["claude-api", "claude-team"],
   "judge": "claude-team",
   "models": {
     "claude-team": "claude-sonnet-4-6",

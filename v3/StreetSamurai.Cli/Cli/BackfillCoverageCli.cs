@@ -56,13 +56,13 @@ public static class BackfillCoverageCli
 
         foreach (var ch in chapters)
         {
-            // Enabled beats in reading order, joined through the NodeBeats bridge.
+            // Enabled beats in reading order, joined through the BeatNodes bridge.
             var beats = await (
-                from sb in db.NodeBeats.AsNoTracking()
+                from sb in db.BeatNodes.AsNoTracking()
                 join b in db.Beats.AsNoTracking() on sb.BeatId equals b.Id
                 where sb.NodeId == ch.Id && sb.IsEnabled
                 orderby sb.SortKey
-                select new { b.Id, b.Synopsis, b.BeatTitle, b.Text }).ToListAsync();
+                select new { b.Id, b.Description, b.Title, b.Text }).ToListAsync();
 
             if (beats.Count == 0) continue;
 
@@ -71,8 +71,8 @@ public static class BackfillCoverageCli
                 var beat = beats[i];
                 // The synopsis is the closest proxy to the original BeatGoal; fall back to
                 // the title. A short prose tail sharpens mode detection (combat vs dialogue).
-                var goal = !string.IsNullOrWhiteSpace(beat.Synopsis) ? beat.Synopsis
-                         : beat.BeatTitle ?? "";
+                var goal = !string.IsNullOrWhiteSpace(beat.Description) ? beat.Description
+                         : beat.Title ?? "";
                 var proseHint = beat.Text is { Length: > 0 and < 500 } ? beat.Text : null;
 
                 await router.LogCoverageAsync(

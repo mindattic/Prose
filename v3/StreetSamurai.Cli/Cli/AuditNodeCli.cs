@@ -216,17 +216,17 @@ public static class AuditNodeCli
 
     private static async Task<Census> CensusChapterAsync(StreetSamuraiDbContext db, Guid chapterId)
     {
-        var beats = await (from sb in db.NodeBeats.AsNoTracking()
+        var beats = await (from sb in db.BeatNodes.AsNoTracking()
                            join b in db.Beats.AsNoTracking() on sb.BeatId equals b.Id
                            where sb.NodeId == chapterId && sb.IsEnabled
-                           select new { b.Id, b.Text, b.Synopsis, b.StructureRole, b.EmotionalTone, b.Score, b.EmotionalScore }).ToListAsync();
+                           select new { b.Id, b.Text, b.Description, b.StructureRole, b.EmotionalTone, b.Score, b.EmotionalScore }).ToListAsync();
         var ids = beats.Select(b => b.Id).ToList();
         var mentionBeats = await db.BeatEntityMentions.AsNoTracking()
             .Where(m => ids.Contains(m.BeatId)).Select(m => m.BeatId).Distinct().CountAsync();
         return new Census(
             Beats:        beats.Count,
             Text:         beats.Count(b => !string.IsNullOrEmpty(b.Text)),
-            Syn:          beats.Count(b => !string.IsNullOrEmpty(b.Synopsis)),
+            Syn:          beats.Count(b => !string.IsNullOrEmpty(b.Description)),
             Struct:       beats.Count(b => b.StructureRole != null),
             Tone:         beats.Count(b => b.EmotionalTone != null),
             Scored:       beats.Count(b => b.Score != null),

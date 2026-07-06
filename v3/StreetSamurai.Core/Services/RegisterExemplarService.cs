@@ -1,4 +1,4 @@
-using System.Text;
+﻿using System.Text;
 using System.Text.Json;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Logging;
@@ -72,7 +72,7 @@ public class RegisterExemplarService
 
         // Top-N beats by EmotionalScore (beats with NULL score are excluded)
         var topBeats = await (
-            from sb in db.NodeBeats.AsNoTracking()
+            from sb in db.BeatNodes.AsNoTracking()
             join b  in db.Beats.AsNoTracking() on sb.BeatId equals b.Id
             where sb.NodeId == nodeId
                && sb.IsEnabled

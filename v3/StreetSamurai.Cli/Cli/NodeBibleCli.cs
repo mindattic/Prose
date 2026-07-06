@@ -52,17 +52,17 @@ public static class NodeBibleCli
             return 1;
         }
 
-        var seed = node.Seed ?? node.Synopsis ?? node.Title;
+        var seed = node.Seed ?? node.Description ?? node.Title;
         if (string.IsNullOrWhiteSpace(seed))
         {
-            Console.Error.WriteLine($"[story-bible] Node '{slug}' has no Seed or Synopsis to drive generation. Set one first.");
+            Console.Error.WriteLine($"[story-bible] Node '{slug}' has no Seed or Description to drive generation. Set one first.");
             return 1;
         }
 
         // Determine target beat count
         if (targetBeats <= 0)
         {
-            targetBeats = await db.NodeBeats.CountAsync(sb => sb.NodeId == node.Id && sb.IsEnabled);
+            targetBeats = await db.BeatNodes.CountAsync(sb => sb.NodeId == node.Id && sb.IsEnabled);
             if (targetBeats <= 0) targetBeats = 12;
         }
 
@@ -73,7 +73,7 @@ public static class NodeBibleCli
         if (replaceBeats)
         {
             // Remove existing planned beats (empty prose only — don't nuke written beats)
-            var emptyBeats = await db.NodeBeats
+            var emptyBeats = await db.BeatNodes
                 .Where(sb => sb.NodeId == node.Id && sb.IsEnabled)
                 .Join(db.Beats, sb => sb.BeatId, b => b.Id, (sb, b) => new { sb, b })
                 .Where(x => string.IsNullOrEmpty(x.b.Text))

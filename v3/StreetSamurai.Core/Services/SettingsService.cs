@@ -479,6 +479,16 @@ public class SettingsService : IDisposable
     /// <summary>Model tag used for local prose generation (e.g. "qwen2.5-32b").</summary>
     public string LocalLlmModel { get => data.LocalLlmModel; set { data.LocalLlmModel = value; ScheduleSave(); } }
 
+    // ── Local-LLM embeddings ─────────────────────────────────────────────────────
+    /// <summary>Full URL to an OpenAI-compatible /v1/embeddings endpoint on the local/remote GPU
+    /// (e.g. <c>https://&lt;runpod&gt;/v1/embeddings</c>). When set, EmbeddingService routes ALL
+    /// embed calls here instead of OpenAI — no OpenAI key needed for local review runs.</summary>
+    public string LocalEmbeddingBaseUrl { get => data.LocalEmbeddingBaseUrl; set { data.LocalEmbeddingBaseUrl = value; ScheduleSave(); } }
+    /// <summary>Bearer token for the local embedding endpoint. Empty = no auth header sent (bare Ollama).</summary>
+    public string LocalEmbeddingApiKey  { get => data.LocalEmbeddingApiKey;  set { data.LocalEmbeddingApiKey  = value; ScheduleSave(); } }
+    /// <summary>Model tag for the local embedding endpoint (e.g. "Qwen/Qwen3-Embedding-0.6B").</summary>
+    public string LocalEmbeddingModel   { get => data.LocalEmbeddingModel;   set { data.LocalEmbeddingModel   = value; ScheduleSave(); } }
+
     /// <summary>vast.ai REST API key for <c>ss --gpu</c> (start/stop/destroy the rented review box).
     /// Read straight from the shared MindAttic credential vault — <c>VAST_API_KEY</c> env, then
     /// %APPDATA%/MindAttic/LLM/<c>vast.json</c>, then the <c>vast</c> entry in <c>providers.json</c>,
@@ -818,6 +828,10 @@ public class SettingsService : IDisposable
         public string LocalLlmBaseUrl { get; set; } = "";
         public string LocalLlmApiKey { get; set; } = "";
         public string LocalLlmModel { get; set; } = "qwen2.5-32b";
+        // Local-LLM embeddings
+        public string LocalEmbeddingBaseUrl { get; set; } = "";
+        public string LocalEmbeddingApiKey  { get; set; } = "";
+        public string LocalEmbeddingModel   { get; set; } = "";
         /// <summary>When false, ContinuousQualityService does not fire on beat save. Reviews must be called manually.</summary>
         public bool ReviewAutoRunEnabled { get; set; } = true;
         /// <summary>When true, WorldTickService is active — advances story clock + writes EntityStateEvents per tick.</summary>

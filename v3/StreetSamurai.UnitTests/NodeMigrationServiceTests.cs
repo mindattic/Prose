@@ -1,4 +1,4 @@
-using Microsoft.EntityFrameworkCore;
+﻿using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Logging.Abstractions;
 using StreetSamurai.Core.Data;
 using StreetSamurai.Core.Data.Entities;
@@ -10,7 +10,7 @@ namespace StreetSamurai.UnitTests;
 /// Locks in the contract of <see cref="NodeMigrationService"/>:
 /// <list type="bullet">
 /// <item>Books / Chapters / ChapterBeats / Episodes / EpisodeBeats translate
-///   to Nodes / Beats / NodeBeats with parent-child wiring preserved.</item>
+///   to Nodes / Beats / BeatNodes with parent-child wiring preserved.</item>
 /// <item>Re-running on a partially-migrated DB picks up only the new rows
 ///   (idempotent — a key property since the migration runs on startup and
 ///   when new episodes are generated via the CLI).</item>
@@ -87,7 +87,7 @@ public class NodeMigrationServiceTests
         Assert.That(await db.Nodes.CountAsync(s => s.Kind == "story"),   Is.EqualTo(2));
         Assert.That(await db.Nodes.CountAsync(s => s.Kind == "chapter"), Is.EqualTo(6));
         Assert.That(await db.Beats.CountAsync(),                            Is.EqualTo(24));
-        Assert.That(await db.NodeBeats.CountAsync(),                      Is.EqualTo(24));
+        Assert.That(await db.BeatNodes.CountAsync(),                      Is.EqualTo(24));
 
         // Parent-child wiring: every chapter node points at a story node.
         var orphans = await db.Nodes
@@ -112,7 +112,7 @@ public class NodeMigrationServiceTests
 
         await using var db = await dbFactory.CreateDbContextAsync();
         Assert.That(await db.Beats.CountAsync(),       Is.EqualTo(6),  "Re-run must not duplicate beat rows");
-        Assert.That(await db.NodeBeats.CountAsync(), Is.EqualTo(6),  "Re-run must not duplicate junction rows");
+        Assert.That(await db.BeatNodes.CountAsync(), Is.EqualTo(6),  "Re-run must not duplicate junction rows");
     }
 
     [Test]

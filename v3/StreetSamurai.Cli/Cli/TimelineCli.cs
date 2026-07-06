@@ -225,14 +225,14 @@ public static class TimelineCli
     private static async Task<List<BeatRow>> LoadBeatsAsync(
         StreetSamuraiDbContext db, Guid nodeId, string? episodeTitle)
     {
-        var raw = await db.NodeBeats
+        var raw = await db.BeatNodes
             .Where(sb => sb.NodeId == nodeId && sb.IsEnabled)
             .OrderBy(sb => sb.SortKey)
             .Join(db.Beats, sb => sb.BeatId, b => b.Id,
-                (sb, b) => new { sb.SortKey, b.BeatTitle, b.Text })
+                (sb, b) => new { sb.SortKey, b.Title, b.Text })
             .ToListAsync();
 
-        return raw.Select(r => new BeatRow(r.SortKey, r.BeatTitle, r.Text, episodeTitle)).ToList();
+        return raw.Select(r => new BeatRow(r.SortKey, r.Title, r.Text, episodeTitle)).ToList();
     }
 
     private static async Task<List<TimelineRow>?> CallLlmChunkAsync(
@@ -272,7 +272,7 @@ public static class TimelineCli
         {
             var b = beats[i];
             var epPart   = b.EpisodeTitle is not null ? $" / ep=\"{b.EpisodeTitle}\"" : "";
-            var beatPart = b.BeatTitle is not null ? $" / \"{b.BeatTitle}\"" : "";
+            var beatPart = b.Title is not null ? $" / \"{b.Title}\"" : "";
             sb.AppendLine($"[BEAT {globalBeatOffset + i + 1} / sk={b.SortKey:F0}{epPart}{beatPart}]");
             sb.AppendLine(b.Text.Trim());
             sb.AppendLine();
@@ -321,7 +321,7 @@ public static class TimelineCli
         return m == 0 ? $"{h}h" : $"{h}h {m}m";
     }
 
-    private record BeatRow(double SortKey, string? BeatTitle, string Text, string? EpisodeTitle);
+    private record BeatRow(double SortKey, string? Title, string Text, string? EpisodeTitle);
 
     private class TimelineRow
     {

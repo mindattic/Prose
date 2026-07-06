@@ -1,4 +1,4 @@
-using Microsoft.EntityFrameworkCore;
+﻿using Microsoft.EntityFrameworkCore;
 using StreetSamurai.Core.Data;
 
 namespace StreetSamurai.Core.Services;
@@ -20,7 +20,7 @@ public class EntityMentionService(IDbContextFactory<StreetSamuraiDbContext> dbFa
 
         var rows = await db.BeatEntityMentions
             .Where(m => m.EntityId == entityId)
-            .Join(db.NodeBeats,
+            .Join(db.BeatNodes,
                 m  => m.BeatId,
                 sb => sb.BeatId,
                 (m, sb) => new { m, sb })

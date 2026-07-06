@@ -47,7 +47,7 @@ public static class GearCheckCli
         if (node == null) { Console.Error.WriteLine($"Node '{nodeSlug}' not found."); return 1; }
 
         var beats = await (
-            from sb in db.NodeBeats
+            from sb in db.BeatNodes
             join b in db.Beats on sb.BeatId equals b.Id
             where sb.NodeId == node.Id
             orderby sb.SortKey

@@ -68,7 +68,7 @@ public static class ProseHealthCli
         Console.ResetColor();
         foreach (var r in tier)
         {
-            var title = r.BeatTitle is { Length: > 0 } t ? ("\"" + t + "\"") : ("#" + r.BeatNumber);
+            var title = r.Title is { Length: > 0 } t ? ("\"" + t + "\"") : ("#" + r.BeatNumber);
             var signals = BuildSignalLine(r);
             Console.WriteLine($"  {r.NodeCode ?? r.NodeSlug,-6} #{r.BeatNumber,-4} {title,-35}  {signals}");
         }

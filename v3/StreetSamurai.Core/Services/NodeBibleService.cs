@@ -1,4 +1,4 @@
-using System.Text.RegularExpressions;
+﻿using System.Text.RegularExpressions;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Logging;
 using StreetSamurai.Core.Data;
@@ -243,7 +243,7 @@ public class NodeBibleService
         List<BeatPlan>        plans,
         CancellationToken     ct)
     {
-        var existing = await db.NodeBeats.CountAsync(sb => sb.NodeId == nodeId, ct);
+        var existing = await db.BeatNodes.CountAsync(sb => sb.NodeId == nodeId, ct);
         if (existing > 0)
         {
             log.LogInformation("[bible] Node {NodeId} already has {Count} beats — skipping planned beat creation.", nodeId, existing);
@@ -259,15 +259,15 @@ public class NodeBibleService
             {
                 Id            = Guid.CreateVersion7(),
                 Number        = baseNumber + beatIndex++,
-                BeatTitle     = plan.Title,
-                Synopsis      = plan.Goal,
+                Title         = plan.Title,
+                Description   = plan.Goal,
                 StructureRole = MapStructureRole(plan.StructureRole),
                 Text          = "",
                 CreatedAt     = now,
                 UpdatedAt     = now,
             };
             db.Beats.Add(beat);
-            db.NodeBeats.Add(new NodeBeat
+            db.BeatNodes.Add(new BeatNode
             {
                 NodeId  = nodeId,
                 BeatId    = beat.Id,

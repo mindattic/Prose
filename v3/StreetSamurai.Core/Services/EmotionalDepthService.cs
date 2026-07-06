@@ -1,4 +1,4 @@
-using System.Security.Cryptography;
+﻿using System.Security.Cryptography;
 using System.Text;
 using System.Text.Json;
 using Microsoft.EntityFrameworkCore;
@@ -138,7 +138,7 @@ public class EmotionalDepthService
         {
             var rows = await (
                 from s in db.Nodes.AsNoTracking()
-                join sb in db.NodeBeats.AsNoTracking() on s.Id equals sb.NodeId
+                join sb in db.BeatNodes.AsNoTracking() on s.Id equals sb.NodeId
                 join b in db.Beats.AsNoTracking() on sb.BeatId equals b.Id
                 where s.ParentNodeId == nodeId && s is ChapterNode && !s.IsWIP && sb.IsEnabled
                 orderby s.SortKey, sb.SortKey
@@ -152,7 +152,7 @@ public class EmotionalDepthService
         else
         {
             var beatRows = await (
-                from sb in db.NodeBeats.AsNoTracking()
+                from sb in db.BeatNodes.AsNoTracking()
                 join b in db.Beats.AsNoTracking() on sb.BeatId equals b.Id
                 where sb.NodeId == nodeId
                 orderby sb.SortKey
@@ -417,7 +417,7 @@ PROSE:
         var beatNumbers = curve.Select(c => c.BeatNumber).ToHashSet();
 
         var beats = await (
-            from sb in db.NodeBeats
+            from sb in db.BeatNodes
             join b in db.Beats on sb.BeatId equals b.Id
             where sb.NodeId == nodeId && beatNumbers.Contains(b.Number)
             select b

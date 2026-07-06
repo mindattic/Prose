@@ -361,7 +361,7 @@ public static class RunCorpusCli
             node.Slug      = slug;
             node.Seed      = seed;
             node.Status    = "draft";
-            node.Synopsis  = seed.Length > 200 ? seed[..200] : seed;
+            node.Description = seed.Length > 200 ? seed[..200] : seed;
             node.CreatedAt = DateTime.UtcNow;
             node.UpdatedAt = DateTime.UtcNow;
             db.Nodes.Add(node);
@@ -397,7 +397,7 @@ public static class RunCorpusCli
             var beat = ob.Beat;
             // Skip beats that already have prose
             if (!string.IsNullOrWhiteSpace(beat.Text)) { sceneSoFar += "\n\n" + beat.Text; beatIndex++; continue; }
-            var goal = beat.Synopsis ?? beat.BeatTitle ?? $"Beat {beat.Number}";
+            var goal = beat.Description ?? beat.Title ?? $"Beat {beat.Number}";
             if (string.IsNullOrWhiteSpace(goal)) { beatIndex++; continue; }
 
             var ctx = new BeatContext

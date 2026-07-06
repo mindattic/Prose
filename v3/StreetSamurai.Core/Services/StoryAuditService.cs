@@ -1,4 +1,4 @@
-using System.Text.Json;
+﻿using System.Text.Json;
 using System.Text.Json.Serialization;
 using Microsoft.EntityFrameworkCore;
 using StreetSamurai.Core.Data;
@@ -152,7 +152,7 @@ public class StoryAuditService(
         await using var db = await dbFactory.CreateDbContextAsync(ct);
         var node = await db.Nodes
             .AsNoTracking()
-            .Include(s => s.NodeBeats)
+            .Include(s => s.BeatNodes)
             .ThenInclude(sb => sb.Beat)
             .FirstOrDefaultAsync(s => s.Id == nodeId, ct)
             ?? throw new InvalidOperationException($"Node {nodeId} not found.");
@@ -168,18 +168,18 @@ public class StoryAuditService(
         // or condensed draft that no longer matches the published manuscript.
         var childChapters = await db.Nodes.AsNoTracking()
             .Where(s => s.ParentNodeId == node.Id && s is ChapterNode && !s.IsWIP)
-            .Include(s => s.NodeBeats).ThenInclude(sb => sb.Beat)
+            .Include(s => s.BeatNodes).ThenInclude(sb => sb.Beat)
             .OrderBy(s => s.SortKey)
             .ToListAsync(ct);
 
         var prose = childChapters.Count > 0
             ? string.Join("\n\n", childChapters
-                .SelectMany(ch => ch.NodeBeats
+                .SelectMany(ch => ch.BeatNodes
                     .Where(sb => sb.IsEnabled)
                     .OrderBy(sb => sb.SortKey)
                     .Select(sb => sb.Beat!.Text))
                 .Where(t => !string.IsNullOrWhiteSpace(t)))
-            : string.Join("\n\n", node.NodeBeats
+            : string.Join("\n\n", node.BeatNodes
                 .Where(sb => sb.IsEnabled)
                 .OrderBy(sb => sb.SortKey)
                 .Select(sb => sb.Beat!.Text)

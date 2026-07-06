@@ -261,15 +261,15 @@ TISSUE MATCH — RARE PHENOTYPE. NO COMPATIBLE UNIT IN REGIONAL STOCK.
 
 The arm ticket was still live on the pad. Levin let it go dark.
 
-"Your arm's current," he said. "Clerical error. The recall's voided — you keep it." He crouched, which on Tears took him a moment to organize, and his voice did the one warm thing it knew how to do, the thing it did when it wanted something. "You never saw two men today. You never saw a sick kid on your couch. You never heard a sound." A beat. "And you give me one out of the drawer. The Tears. One's plenty."
+"Your arm's current," he said. "Clerical error. The recall's voided — you keep it." He crouched, which on Tears took him a moment to organize, and his voice did the one warm thing it knew how to do, the thing it did when it wanted something. "You never saw two men today. You never saw a sick kid on your couch. You never heard a sound." A beat. "And give me the drawer. The whole thing."
 
-Osei reached down beside the chair, found the low drawer he kept for the customers who couldn't reach high, and put a single vial in Levin's hand.
+Osei reached down beside the chair, found the low drawer he kept for the customers who couldn't reach high, and put the whole drawer in Levin's hands.
 
-"Don't call us," Levin said, and pocketed it.
+"Don't call us," Levin said, and set the drawer just inside the door to bring down with the case.
 
 Then he did the part Tomas couldn't. He folded the carapace down over Han Do-yun and lifted the boy and the shell and the borrowed heart all together, carried him down four flights, and laid him in the ward where the life-support berth came up out of the floor and closed around him — vent waking, perfuser waking, the loaner ticking in his chest six feet from the cold racks of the larder where, if the night went the way nights like this went, he'd be riding by tomorrow. Levin wired him in, checked the feed twice, and only then went back up for the case.
 
-He came down with it light in one hand, loaded it into the back, and in the half-second it took to swing the doors shut he capped a fresh bead of Osei's Tears into one eye, then the other, the way another man might roll his shoulders. Then he got into the driver's seat.
+He came down with the case light in one hand and the drawer under the other arm, loaded both into the back, and in the half-second it took to swing the doors shut he capped a fresh bead of Osei's Tears into one eye, then the other, the way another man might roll his shoulders. Then he got into the driver's seat.
 
 Tomas was already in the cab, hands flat on his knees, not looking at them.
 
@@ -277,7 +277,7 @@ Tomas was already in the cab, hands flat on his knees, not looking at them.
 
 "Sorry." Levin started the Wagon. "We just killed ourselves back there. Feels like exactly the right time to take the edge off."
 
-Tomas didn't have an answer to that, because there wasn't one. The Wagon pulled out of the block at a quarter to three in the morning with a Lotus Stem's son breathing on borrowed hardware in the ward, the clock in the back reading 71:48:09 and counting.
+Tomas didn't have an answer to that, because there wasn't one. The Wagon pulled out of the block at a quarter to six in the morning with a Lotus Stem's son breathing on borrowed hardware in the ward, the clock in the back reading 71:48:09 and counting.
 
 "Pull up what you can find on him," Tomas said, when he could. "I want to know why a Stem's son was buying off the floor on a Tuesday."
 
@@ -460,6 +460,21 @@ The palm stayed on his chest a second past comfortable. The man was reading him 
 And he bought two coffees he didn't want, exact change in Φ, hands dead steady, and carried them back to a truck with a Lotus heir breathing in the back of it, past the men sent to find exactly that. Paz's therapy did not get paid by men who couldn't buy coffee in front of the people hunting them. It was, he decided, the single most expensive cup he had ever purchased, and he hadn't even tasted it yet.
 
 [Beat 14]
+He knocked, and waited.
+
+The dealer opened on the third knock, because by the third knock a man has decided the knocking won't stop.
+
+Inside: one room, the smell of old fear, a man who had been trying very hard to be somewhere else in his own apartment. Ekow stepped in and without preamble set the machete on the counter between them — handle toward himself, not a threat, or not only a threat. An introduction. This is what I carry. This is what I am. You now have all the information you need to decide how the next few minutes go.
+
+The dealer looked at it for a moment. Then he talked.
+
+He came out with what the room had owed him. Two men, Carrion coveralls — one tall and still, the kind of still that does the thinking; one shorter, unwell, the hands of him not right. A refrigerated Wagon. South down the Pilsen-Ward corridor, the boy carried like freight, which on this trail meant the boy was hurt and the boy was wanted alive, because you do not run cold storage for cargo you mean to leave. South toward clinics. There were a dozen in that corridor that would take a no-questions body. There were three that could keep a complicated one breathing, and of the three, one was scrubbed clean enough that clean itself was the tell — a converted bay in the lower Ward run by a woman who used to cut for people like the Lotus and had stopped.
+
+On the top step, going down, he took the handkerchief from his pocket and folded it into quarters and set it on the stair. He always did it when a search closed and his hands wanted something orderly to finish on, the way another man squares a stack of paper before he leaves a desk. It wasn't a signature. It was just his hands, needing the day to have an edge.
+
+He was already running the woman's name through the network before his shoe touched the street. Yuen.
+
+[Beat 15]
 There was no shelf with the heart on it. Tomas worked the channels he had — the gray-zone brokers, the screening-clinic catalogs that typed half the lower Ward without anyone signing a thing, the off-book exchange that could source a common organ out of a drawer in an hour. Every one of them came back the same. A rare phenotype wasn't a sale; it was a commission, and a commission meant they harvested one to order, which meant a week, which they didn't have, and a name on a ledger that outlived the people who signed it, which they couldn't afford. Three brokers, an hour, nothing. The match the kid needed wasn't a thing you bought. It was a thing that was inside one specific stranger, somewhere, and there was no finding that stranger before the loaner quit.
 
 "Dead end," Tomas said. "Every shelf in the region. There's no heart for him."
@@ -470,7 +485,7 @@ It came in tagged standard — a call-in at a residential flop near the Gray Zon
 
 "Caller stayed on?" Tomas asked.
 
-"Called it in and hung up. Anonymous." Levin read the intake off his neuretics, head against the glass. "John, probably. Finished, saw she was going or gone, phoned the body to Carrion so it wouldn't be on him, and walked." A pause. "Receipt says he closed his tab on the way out, too. Kept his own credstick. Real knight in shining armour."
+"Called it in and hung up. Anonymous." Levin read the intake off his neuretics, head against the glass. "John, probably. Finished, saw she was going or gone, called the body in to Carrion so it wouldn't be on him, and walked." A pause. "Receipt says he closed his tab on the way out, too. Kept his own credstick. Real knight in shining armour."
 
 "Take it," Tomas said. "We do the route. Like it's any other day."
 
@@ -544,7 +559,7 @@ In the cab Levin had his hands flat on his knees and was watching the city go by
 
 Tomas drove. The clock behind the partition read sixty-three hours.
 
-[Beat 15]
+[Beat 16]
 The Wagon moved north and the clock behind the partition read sixty-three hours, and for a while the only sound was the ward breathing a man's borrowed time in and out.
 
 Tomas had held the anger since the den, held it the way he held everything, in the place behind the work where it couldn't get at his hands. He found he was done holding it.
@@ -553,7 +568,7 @@ Tomas had held the anger since the den, held it the way he held everything, in t
 
 Levin didn't answer right away. He was looking out at the dark towers, and the glass behind his eyes was thin tonight, worn down to a man instead of a mood. "I know."
 
-"You went for the piece first and it snagged, because you were four drops in on shift. And I ate the round that should've been yours." Tomas kept his eyes forward, on the empty road, because looking at Levin while he said it would have turned it into something they had to survive instead of something they had to get through. "I've put a kid I never had a ticket on in the back of our truck. I've made a phone call I can't take back. I spent the night so far cleaning up after your hands, and your hands are the reason any of it happened."
+"You went for the piece first and it snagged, because you were four drops in on shift. And I ate the round that should've been yours." Tomas kept his eyes forward, on the empty road, because looking at Levin while he said it would have turned it into something they had to survive instead of something they had to get through. "I've put a kid I never had a ticket on in the back of our truck. I've made a call I can't take back. I spent the night so far cleaning up after your hands, and your hands are the reason any of it happened."
 
 Levin took it. He didn't reach for the door pocket, didn't go far away behind the glass, didn't do any of the things he did when a thing got too close. He just sat in it. "I know," he said again, and it came out level and bare, the most honest sound he was capable of making, no angle anywhere on it.
 
@@ -598,21 +613,6 @@ The manifest chimed. Tomas almost didn't look, because they were full up on the 
 It was a Full Repossession. Strip the whole body, every organ, every limb, the most thorough job the company ever ordered, reserved for a corpse with no one left to care what was taken.
 
 The address was Bram Osei's.
-
-[Beat 16]
-He knocked, and waited.
-
-The dealer opened on the third knock, because by the third knock a man has decided the knocking won't stop.
-
-Inside: one room, the smell of old fear, a man who had been trying very hard to be somewhere else in his own apartment. Ekow stepped in and without preamble set the machete on the counter between them — handle toward himself, not a threat, or not only a threat. An introduction. This is what I carry. This is what I am. You now have all the information you need to decide how the next few minutes go.
-
-The dealer looked at it for a moment. Then he talked.
-
-He came out with what the room had owed him. Two men, Carrion coveralls — one tall and still, the kind of still that does the thinking; one shorter, unwell, the hands of him not right. A refrigerated Wagon. South down the Pilsen-Ward corridor, the boy carried like freight, which on this trail meant the boy was hurt and the boy was wanted alive, because you do not run cold storage for cargo you mean to leave. South toward clinics. There were a dozen in that corridor that would take a no-questions body. There were three that could keep a complicated one breathing, and of the three, one was scrubbed clean enough that clean itself was the tell — a converted bay in the lower Ward run by a woman who used to cut for people like the Lotus and had stopped.
-
-On the top step, going down, he took the handkerchief from his pocket and folded it into quarters and set it on the stair. He always did it when a search closed and his hands wanted something orderly to finish on, the way another man squares a stack of paper before he leaves a desk. It wasn't a signature. It was just his hands, needing the day to have an edge.
-
-He was already running the woman's name through the network before his shoe touched the street. Yuen.
 
 [Beat 17]
 By the second pickup of the night — a clean one, an old woman dead in her sleep with a financed pacemaker, the kindest stop on any manifest — Levin had stopped being a half-second behind the room and started being somewhere else entirely. Tomas knew the signs the way a man knows weather. The over-wet eyes that didn't track. The pauses that came back from too far. The way Levin kept glancing at the corners of the old woman's bedroom, at the doorway, at the place behind Tomas's shoulder where there was nothing, and then making himself look back.
@@ -684,7 +684,7 @@ Levin kept his eye on the road a while. "Lattice," he said, finally. "In the cor
 
 Levin said nothing else, which was more than he'd said on the subject in two years and less than Tomas would have needed to feel better about it, so they were even.
 
-The city in the early hours ran on generators and the company of people who had nowhere else to be — a few storefronts lit behind their security films, the transit rail locked for the gap between the late run and the early one, the pavement wet from a drizzle that had come and gone. The Pulse caps went by in the headlights, dark circles sealing the tube six meters down, moving the city's cargo at a hum that landed in the body before it landed in the ear. Behind the partition the loaner clock read fifty-eight hours and counting: Han Do-yun's borrowed heart, ticking down whether Tomas looked at it or not.
+The city in the early hours ran on generators and the company of people who had nowhere else to be — a few storefronts lit behind their security films, the Pulse service locked for the gap between the late run and the early one, the pavement wet from a drizzle that had come and gone. The Pulse caps went by in the headlights, dark circles sealing the tube six meters down, moving the city's cargo at a hum that landed in the body before it landed in the ear. Behind the partition the loaner clock read fifty-eight hours and counting: Han Do-yun's borrowed heart, ticking down whether Tomas looked at it or not.
 
 "I want to pass by the Osei block on the way," he said.
 
@@ -703,7 +703,7 @@ It told him what he needed to know.
 Levin kept driving.
 
 [Beat 19]
-They had been gone from Osei's apartment for eighteen hours — 4:12 in the morning to ten past ten at night, day shift and night shift and the dead hours between, the city having turned over entirely in the interval. It looked like it had been a year.
+They had been gone from Osei's apartment for sixteen hours — a quarter to six in the morning to ten past ten at night, day shift and night shift and the dead hours between, the city having turned over entirely in the interval. It looked like it had been a year.
 
 The hunter had been here. Tomas knew it before the door, smelled the long patient fear of it on the landing the way he'd smelled it over the laundromat, and there on the top stair was the handkerchief, folded in quarters, squared away. Casimir — Tomas didn't have a name yet, only the shape of him, the courtesy and the patience and the speed — had worked his way down Do-yun's last day, and Do-yun's last day had a dealer in it, and the dealer had known exactly which two men carried a sick kid down four flights, because the dealer had been on the floor saying I'm not here, I'm not here while it happened.
 
@@ -711,13 +711,11 @@ Bram Osei had known their faces. And Bram Osei, a survivor his whole life, a man
 
 He'd held out a while — you could read how long a man held out in this trade, the way you read tree rings — but everyone says everything eventually, and somewhere in the long patient middle of it he'd given up two men in Carrion coveralls and a refrigerated truck. The only mercy was that he almost certainly hadn't known their names, because Tomas had never offered one and neither had Levin, and a description of two Vultures in a city full of Vultures was a needle in a stack of needles. It had bought him nothing.
 
-And now the company wanted him stripped. Financed parts — the arm, at least, the arm Levin had told him he could keep — and a dead man with financed parts and no next of kin was a Full Repossession, and a Full Repossession went to the nearest crew, and the nearest crew, on this block, on this night, was the two men who had stood in this room eighteen hours ago and let him live.
+And now the company wanted him stripped. Financed parts — the arm, at least, the arm Levin had told him he could keep — and a dead man with financed parts and no next of kin was a Full Repossession, and a Full Repossession went to the nearest crew, and the nearest crew, on this block, on this night, was the two men who had stood in this room sixteen hours ago and let him live.
 
-"I told him he could keep the arm," Levin said. He was in the doorway. He hadn't come in. "I looked at him and I said clerical error and I told him he could keep the arm."
+"I told him he could keep the arm," Levin said. He was in the doorway. He hadn't come in.
 
 "I know."
-
-"And now we're here to take the arm." Levin's voice was very level, the drug-level, the dangerous level. "And the rest of him. We let him live, so the hunter found him alive to ask, so now he's dead, so now he's ours. We made him into the thing we're here to collect."
 
 Tomas didn't argue it. There was nothing to argue.
 
@@ -725,7 +723,7 @@ Tomas didn't argue it. There was nothing to argue.
 
 "No." Levin came in. He set the orange case down and cracked it and lifted Mama out, and his glassy eyes were dry and far away and steady. "I do have to. I'm the reason there's an order at all. You want to talk about who does what tonight, I'll be the one who takes the arm I gave him."
 
-So they worked the worst job of the week on a man who'd made a deal with them and kept it. Tomas ran the recall pad on the financed arm first, the same pad, the same five-digit handshake, and the arm Levin had let him keep let go at the socket with the same soft clunk it would have made eighteen hours ago — except eighteen hours ago Osei had been alive to feel his account go to zero, and now he wasn't, and that was the whole difference between mercy and this: eighteen hours and a folded handkerchief. Then Mama came down on what was left and took the rest, methodical, total, the carapace working the chest cavity open and the undercarriage going in wet and exact, lifting out a liver, a pair of kidneys, the long red lengths of bowel, packing each into its cassette and snapping it cold while Osei's emptied face watched the ceiling. Levin called the steps and didn't look away once.
+So they worked the worst job of the week on a man who'd made a deal with them and kept it. Tomas ran the recall pad on the financed arm first, the same pad, the same five-digit handshake, and the arm Levin had let him keep let go at the socket with the same soft clunk it would have made sixteen hours ago — except sixteen hours ago Osei had been alive to feel his account go to zero, and now he wasn't, and that was the whole difference between mercy and this: sixteen hours and a folded handkerchief. Then Mama came down on what was left and took the rest, methodical, total, the carapace working the chest cavity open and the undercarriage going in wet and exact, lifting out a liver, a pair of kidneys, the long red lengths of bowel, packing each into its cassette and snapping it cold while Osei's emptied face watched the ceiling. Levin called the steps and didn't look away once.
 
 When it was done, the drawer they'd bought from him that morning was still in the Wagon, between Levin's feet. The Tears that had been the price of a silence that killed him.
 
@@ -827,6 +825,8 @@ Tomas stopped the gurney. Levin stopped behind it. Nobody said anything for a mo
 
 "You're better than your truck," the man said, finally. To Tomas. His voice was quiet and courteous and carried no hurry at all. "The truck is very good. I looked past it four times. The fifth time I stopped looking at the truck and started looking at the route — the same blocks, the same nights, a Carrion crew always one address ahead of me or one behind, and a dealer who described two men in coveralls before I gave him a reason to describe anything. A tall one who does the thinking. A short one who is unwell." His eyes went to Levin, and then to the shape on the gurney, and stayed there. "And the boy everyone is hunting for, riding in the back of the wagon that hauls the dead. One night. It is the best-hidden thing I have hunted in years." A pause. "And you have hidden it badly enough that I am sitting in his bedroom."
 
+"The access layer that brought you through the service dock runs on Han family credentials. I could have sealed it at six points before you reached the elevator. I chose not to."
+
 "He's alive," Tomas said. It was the only card he had and he put it down flat. "Whatever you've been told, the kid's alive. We didn't take him to kill him."
 
 "I can hear that he's alive. I can hear the machine he came off of." Casimir — the dog they sent when a bone went missing, here now in a soft son's bedroom with his blade on his knees — tilted his head a degree. "You shot him."
@@ -856,9 +856,9 @@ Casimir looked at him a long time. Then he looked at the boy on the gurney — t
 [Beat 22]
 So they built the story in the heir's bedroom one careful piece at a time, and the dog the Lotus kept for finding things showed them where the seams went.
 
-The boy went into his own bed, alive, sedated, breathing on a real heart, the chest under his half-open shirt unmarked — no line, no dressing, nothing the Scarab's weld hadn't already swallowed, so that a man who looked at him saw a man sleeping and not a man who'd been opened. Around him they laid the grammar of a bender that had gone over a cliff — the bottles, the spilled product from a drawer that was no longer Levin's to spill, the phone face-down, the wreck of a last free night thrown away by a soft rich boy with one day left before the rest of his life.
+The boy went into his own bed, alive, sedated, breathing on a real heart, the chest under his half-open shirt unmarked — no line, no dressing, nothing the Scarab's weld hadn't already swallowed, so that a man who looked at him saw a man sleeping and not a man who'd been opened. Around him they laid the grammar of a bender that had gone over a cliff — the bottles, the spilled product from a drawer that was no longer Levin's to spill, the handset face-down, the wreck of a last free night thrown away by a soft rich boy with one day left before the rest of his life.
 
-Casimir moved through the room ahead of them, quiet, correcting. The bottles were wrong — too many, too neat; a real bender left fewer and worse. He took two away and knocked the rest into the disorder of a man who'd stopped counting. He turned the phone face-up, not down — "A man hiding it puts it down. A man who didn't care anymore left it where it fell." He knew which drawer the boy kept his private shame in and put the product there, because the family would look there first and needed to find it themselves, the lie landing hardest when they thought they'd uncovered it. He glanced once at the hall and named the two cameras that watched it and the one blind stretch between them, and walked Tomas through it without being asked, the way a man shows another man a job he's the only one who knows.
+Casimir moved through the room ahead of them, quiet, correcting. The bottles were wrong — too many, too neat; a real bender left fewer and worse. He took two away and knocked the rest into the disorder of a man who'd stopped counting. He turned the handset face-up, not down — "A man hiding it puts it down. A man who didn't care anymore left it where it fell." He knew which drawer the boy kept his private shame in and put the product there, because the family would look there first and needed to find it themselves, the lie landing hardest when they thought they'd uncovered it. He glanced once at the hall and named the two cameras that watched it and the one blind stretch between them, and walked Tomas through it without being asked, the way a man shows another man a job he's the only one who knows.
 
 "You've done this," Levin said. Not quite a question.
 
@@ -925,7 +925,7 @@ The sun finished rising. He watched it until it was no longer doing anything dra
 [Beat 25]
 Levin was in the stairwell of his building when Tomas got there, sitting on the fourth-floor landing with his back against the wall and his coat on like he'd been about to go somewhere and then reconsidered. His hands were loose on his knees. He looked like a man who had been waiting for a knock he wasn't sure was coming.
 
-"There's something still on the shelf," Tomas said, from the bottom of the stairs, because there was no version of this where preamble made it easier. "The old man's kidney. I pulled it this morning before we went to the Ward and never moved it. It's still viable."
+"There's something still on the shelf," Tomas said, from the bottom of the stairs, because there was no version of this where preamble made it easier. "The old man's kidney. I pulled it yesterday morning before we went to the Ward and never moved it. It's still viable."
 
 Levin looked at him for a long time without moving.
 
@@ -938,21 +938,6 @@ Levin looked at him for a long time without moving.
 Levin stood. He didn't say anything else. He buttoned his coat with hands that weren't quite steady, and he came down the stairs, and he got in the Wagon, and Tomas drove.
 
 [Beat 26]
-The transit platform was a glass-and-steel shelf bolted to the side of a Z4 freight overpass, the kind of infrastructure that had been permitted and budgeted and built and then slowly forgotten by everyone except the people who needed it. Three other people on the platform: a woman in a Helix Biosystems contractor badge still clipped to her lapel, reading something on a wrist display; a man in gray coveralls who had gone to sleep against the safety railing in the slack way of someone who had nowhere better to do it; a teenager with a shaved head and new chrome at both temples, the installation still pink at the seams, standing with the careful stillness of someone who was learning what their new neuretics were showing them and didn't want to miss any of it.
-
-*The kidney is in the rack. The matching algorithm will run.*
-
-The Pulse car arrived on the overhead rail with a sound like a slow intake of breath, and Tomas got on, and found a seat near the rear door, and sat with his bag between his feet and his coat still buttoned. The car was mostly empty. The overhead strips ran at their night setting, amber rather than white, and the windows showed Z4 moving past in the way it moved at this hour: loading docks and grated shopfronts and the occasional lit window where someone was awake for reasons the city didn't ask about. The freight overpass gave way to the open arterial corridor, and for a moment the car was between structures and the sky was visible — the low orange ceiling of cloud that GLMZ wore most nights, the atmospheric processors somewhere above it doing whatever the atmospheric processors did for the zones that paid for them to do it.
-
-*He had the viable window. Twelve more hours, maybe fourteen.*
-
-Tomas watched the sky until the next structure closed over it. Then he watched his hands, which were resting on his knees, the hands of a man who had locked the Wagon and walked away. He was not going to sit on a Pulse car in the amber light and revise his position on any of it.
-
-He was not going to do that.
-
-He got off two stops early and walked the rest of the way home in the cold, because the walking was something to do with his hands, and the cold was real, and counting the Pulse caps had worked before and the pavement here had them too, one every hundred-and-ten meters, the same as everywhere else in the zone, and he counted them all the way to his building and did not arrive at a number that changed anything.
-
-[Beat 27]
 They drove to the depot first — the cold-storage annex behind Carrion's main yard, five aisles of numbered lockers holding everything on the company's books that wasn't attached to a person yet. Tomas already knew which locker. He'd filed the form himself that morning, before the Ward, before any of it: on the manifest, REALLOCATE TO NEW RECIPIENT sat lit and waiting, and RETURN TO ORIGINAL ACCOUNT sat greyed out under a prompt — *Reason required.* He'd typed one anyway. *Clerical error — original excision order issued against incorrect account. Return authorized.* He hadn't sent it. He'd sat with it the rest of the day, the cursor blinking on a decision he wasn't ready to make, and then the night had happened, and by the time he was ready the form was still there, exactly where he'd left it.
 
 He sent it now. The reply came back automated, indifferent, four seconds later: authorization logged, no human in the loop, because nobody had ever built one for this particular kind of mistake.
@@ -993,7 +978,7 @@ Tomas looked at her. He didn't say anything, because there wasn't anything usefu
 
 They went down the stairs. The lobby was the same. The street outside was cold and bright, early light coming off the windows across the way, and the Wagon was waiting at the curb where they'd left it, engine running, the larder empty and the whole rest of the shift still ahead of them.
 
-[Beat 28]
+[Beat 27]
 In the Wagon, Levin drove, and for a while neither of them said anything, and the city went by the way it went by, vertical and indifferent and full of accounts that hadn't come due yet.
 
 The lattices were still there at the edge of the windshield — the geometric bleed the Tears left behind when they left, a crawling grid laid over the towers like a second city drawn in fine lines over the first, patient and exact and refusing to fade. He had learned not to describe it.
@@ -1006,9 +991,9 @@ The lattices were still there at the edge of the windshield — the geometric bl
 
 "Clerical error." Tomas watched the strata slide past. He said nothing else, because the answer that sounded like an answer was the one you hoped nobody tested.
 
-Levin almost smiled. It was the first thing close to a smile Tomas had seen on him in four days, since the storm grate, and it cost him something, the way everything cost him something now that there was nothing in the door pocket to pay with but himself.
+Levin almost smiled. It was the first thing close to a smile Tomas had seen on him in a day, since the storm grate, and it cost him something, the way everything cost him something now that there was nothing in the door pocket to pay with but himself.
 
-At a light, Levin took out his phone, and he looked at the photograph.
+At a light, Levin took out his handset, and he looked at the photograph.
 
 Tomas had seen him hold it a hundred times and never once look at it. A man at thirty-one, a few years and a whole life ago, before the trade and before the drops, squinting into a sun somewhere that wasn't the GLMZ, grinning at whoever held the camera. Levin kept it to prove there'd been a before. For years he'd kept it the way you keep a thing you can't bear to look at. Now he looked at it, at the light, with his sick clean shaking hands, and then he put it away, gently, and put both hands back on the wheel.
 

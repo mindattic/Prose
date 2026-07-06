@@ -109,7 +109,7 @@ public static class BurstBeatsCli
             // Collect candidate beats (over threshold, present in this node)
             // BEFORE bursting — bursting mutates the node membership list.
             var candidates = await (
-                from sb in db.NodeBeats
+                from sb in db.BeatNodes
                 join b in db.Beats on sb.BeatId equals b.Id
                 where sb.NodeId == node.Id && b.Text.Length > minChars
                 orderby sb.SortKey
@@ -124,7 +124,7 @@ public static class BurstBeatsCli
                 totalBeatsScanned++;
 
                 // Skip shared beats — see class doc comment.
-                var memberships = await db.NodeBeats.CountAsync(sb => sb.BeatId == c.BeatId);
+                var memberships = await db.BeatNodes.CountAsync(sb => sb.BeatId == c.BeatId);
                 if (memberships > 1)
                 {
                     totalSkippedShared++;

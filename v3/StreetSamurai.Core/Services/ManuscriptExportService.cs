@@ -72,7 +72,7 @@ public class ManuscriptExportService
             if (beat.IsChapterStart)
             {
                 chapterNo++;
-                var heading = !string.IsNullOrWhiteSpace(beat.BeatTitle) ? beat.BeatTitle!.Trim() : $"Chapter {chapterNo}";
+                var heading = !string.IsNullOrWhiteSpace(beat.Title) ? beat.Title!.Trim() : $"Chapter {chapterNo}";
                 md.AppendLine($"## {heading}");
                 md.AppendLine();
             }
@@ -313,8 +313,8 @@ public class ManuscriptExportService
         sb.AppendLine($"""  <dc:title>{EpubEsc(m.Title)}</dc:title>""");
         sb.AppendLine($"""  <dc:creator opf:role="aut">{EpubEsc(author)}</dc:creator>""");
         sb.AppendLine("""  <dc:language>en</dc:language>""");
-        if (!string.IsNullOrWhiteSpace(m.Synopsis))
-            sb.AppendLine($"""  <dc:description>{EpubEsc(m.Synopsis)}</dc:description>""");
+        if (!string.IsNullOrWhiteSpace(m.Description))
+            sb.AppendLine($"""  <dc:description>{EpubEsc(m.Description)}</dc:description>""");
         sb.AppendLine($"""  <meta property="dcterms:modified">{DateTime.UtcNow:yyyy-MM-ddTHH:mm:ssZ}</meta>""");
         sb.AppendLine("</metadata>");
         sb.AppendLine("<manifest>");
@@ -365,7 +365,7 @@ public class ManuscriptExportService
 
     // ── shared load + beat walk ──────────────────────────────────────────────
 
-    private sealed record Manuscript(string Title, string Slug, string? Synopsis, List<Chapter> Chapters);
+    private sealed record Manuscript(string Title, string Slug, string? Description, List<Chapter> Chapters);
     private sealed record Chapter(string? Heading, List<string> Paragraphs);
 
     /// <summary>Resolve the node, walk its ordered beats into chapters, and
@@ -386,7 +386,7 @@ public class ManuscriptExportService
             if (beat.IsChapterStart)
             {
                 chapterNo++;
-                var heading = !string.IsNullOrWhiteSpace(beat.BeatTitle) ? beat.BeatTitle!.Trim() : $"Chapter {chapterNo}";
+                var heading = !string.IsNullOrWhiteSpace(beat.Title) ? beat.Title!.Trim() : $"Chapter {chapterNo}";
                 current = new Chapter(heading, new List<string>());
                 chapters.Add(current);
             }
@@ -451,7 +451,7 @@ public class ManuscriptExportService
 
         var path = Path.Combine(nodeDir, $"{safeTitle} V{node.Version}.{ext}");
 
-        return (new Manuscript(node.Title, node.Slug, node.Synopsis, chapters), path);
+        return (new Manuscript(node.Title, node.Slug, node.Description, chapters), path);
     }
 
     private string ResolveExportDir()

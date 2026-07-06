@@ -1,4 +1,4 @@
-using System.Text;
+﻿using System.Text;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Logging;
 using StreetSamurai.Core.Data;
@@ -9,7 +9,7 @@ namespace StreetSamurai.Core.Services;
 public sealed record BeatHealthRecord(
     Guid       BeatId,
     int        BeatNumber,
-    string?    BeatTitle,
+    string?    Title,
     string     NodeSlug,
     string?    NodeCode,
     double?    Score,
@@ -45,8 +45,8 @@ public class NightlyHealthService
 {
     // Risk thresholds for individual signals
     private const double AdverbDensityThreshold = 0.05;  // 5% of words
-    private const int    PassiveThreshold        = 3;
-    private const int    TellingThreshold        = 3;
+    private const int    PassiveThreshold        = 6;
+    private const int    TellingThreshold        = 5;
     private const double OutlierSigmaThreshold   = 1.5;
     private const double PredictedScoreLow       = 72.0;
 
@@ -183,7 +183,7 @@ public class NightlyHealthService
             records.Add(new BeatHealthRecord(
                 BeatId:             ob.BeatId,
                 BeatNumber:         ob.Number,
-                BeatTitle:          ob.BeatTitle,
+                Title:          ob.Title,
                 NodeSlug:           story.Slug,
                 NodeCode:           story.NodeCode,
                 Score:              ob.Score,
@@ -229,7 +229,7 @@ public class NightlyHealthService
     private void WriteFinding(BeatHealthRecord r, FindingSeverity severity)
     {
         var signals = BuildSignalText(r);
-        var title   = r.BeatTitle is { Length: > 0 } t ? ("\"" + t + "\""): ("Beat #" + r.BeatNumber);
+        var title   = r.Title is { Length: > 0 } t ? ("\"" + t + "\""): ("Beat #" + r.BeatNumber);
         try
         {
             findings.Upsert(
@@ -268,7 +268,7 @@ public class NightlyHealthService
     private sealed record OrderedBeatMeta(
         Guid    BeatId,
         int     Number,
-        string? BeatTitle,
+        string? Title,
         string? Text,
         double? Score);
 
@@ -303,15 +303,15 @@ public class NightlyHealthService
     {
         if (!visited.Add(nodeId)) return;
 
-        var direct = await db.NodeBeats
+        var direct = await db.BeatNodes
             .Where(sb => sb.NodeId == nodeId && sb.IsEnabled)
             .OrderBy(sb => sb.SortKey)
             .Join(db.Beats, sb => sb.BeatId, b => b.Id,
-                (sb, b) => new { b.Id, b.Number, b.BeatTitle, b.Text, b.Score })
+                (sb, b) => new { b.Id, b.Number, b.Title, b.Text, b.Score })
             .ToListAsync(ct);
 
         foreach (var d in direct)
-            acc.Add(new OrderedBeatMeta(d.Id, d.Number, d.BeatTitle, d.Text, d.Score));
+            acc.Add(new OrderedBeatMeta(d.Id, d.Number, d.Title, d.Text, d.Score));
 
         var children = await db.Nodes
             .Where(n => n.ParentNodeId == nodeId && !n.IsWIP)
@@ -342,7 +342,7 @@ public class NightlyHealthService
             sb.AppendLine("|---|---|---|---|---|---|---|---|---|");
             foreach (var r in tier)
             {
-                var title = r.BeatTitle is { Length: > 0 } t
+                var title = r.Title is { Length: > 0 } t
                     ? (t.Length > 30 ? t[..27] + "…" : t)
                     : "-";
                 sb.AppendLine(

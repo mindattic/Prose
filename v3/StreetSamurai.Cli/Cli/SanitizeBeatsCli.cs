@@ -40,7 +40,7 @@ static class SanitizeBeatsCli
                 return 1;
             }
 
-            var beatIds = await db.NodeBeats.AsNoTracking()
+            var beatIds = await db.BeatNodes.AsNoTracking()
                                               .Where(sb => sb.NodeId == node.Id)
                                               .Select(sb => sb.BeatId)
                                               .ToListAsync();

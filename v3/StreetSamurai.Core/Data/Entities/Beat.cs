@@ -1,4 +1,4 @@
-using System.ComponentModel.DataAnnotations;
+﻿using System.ComponentModel.DataAnnotations;
 
 namespace StreetSamurai.Core.Data.Entities;
 
@@ -11,7 +11,7 @@ namespace StreetSamurai.Core.Data.Entities;
 /// sync; now they're one row.
 ///
 /// Beats belong to one or more <see cref="Node"/>s through the
-/// <see cref="NodeBeat"/> junction. A Beat can appear in many nodes
+/// <see cref="BeatNode"/> junction. A Beat can appear in many nodes
 /// (the same paragraph reused across an anthology, a chapter, and a
 /// greatest-hits playlist) — the prose lives in one place, the audio file
 /// lives in one place, edits propagate naturally.
@@ -47,28 +47,28 @@ public class Beat
     /// <summary>Optional short label for the beat. e.g. "The threshold".
     /// When <see cref="IsChapterStart"/> is true, this doubles as the chapter
     /// heading rendered above the beat in the writer/listener.</summary>
-    public string? BeatTitle { get; set; }
+    public string? Title { get; set; }
 
     /// <summary>True when this beat begins a new chapter. The UI renders a
-    /// divider above the beat with <see cref="BeatTitle"/> as the heading.
+    /// divider above the beat with <see cref="Title"/> as the heading.
     /// Replaces the old "chapters are child nodes" model: one flat node
     /// per work, chapters are just beats with this flag. Orthogonal to
     /// <see cref="Kind"/> — a quote/epigraph can start a chapter too.</summary>
     public bool IsChapterStart { get; set; }
 
     /// <summary>What kind of beat this is. One of: "prose" (default),
-    /// "book-title" (front-matter title page; Text=title, BeatTitle=author),
+    /// "book-title" (front-matter title page; Text=title, Title=author),
     /// "dedication" (centered italic line; Text=dedication),
-    /// "quote" (blockquote; Text=quote, BeatTitle=attribution).
+    /// "quote" (blockquote; Text=quote, Title=attribution).
     /// Kept as a free-form string so new kinds can be added without a
     /// schema migration. IsChapterStart is orthogonal — set both for an
     /// epigraph that opens a chapter.</summary>
     public string Kind { get; set; } = "prose";
 
-    /// <summary>One-line of what this beat is doing — "Kyle reads the room
+    /// <summary>One-line description of what this beat is doing — "Kyle reads the room
     /// and decides he's not leaving." Feeds into LLM regeneration prompts
     /// and ElevenLabs tone direction.</summary>
-    public string? Synopsis { get; set; }
+    public string? Description { get; set; }
 
     /// <summary>What is happening beneath the surface of this beat —
     /// foreshadowing, unspoken motivations, dramatic irony, hidden agendas.
@@ -178,6 +178,6 @@ public class Beat
     public DateTime UpdatedAt { get; set; } = DateTime.UtcNow;
 
     /// <summary>Reverse navigation — which nodes include this beat. Set
-    /// by EF Core through the NodeBeats junction.</summary>
-    public List<NodeBeat> NodeBeats { get; set; } = new();
+    /// by EF Core through the BeatNodes junction.</summary>
+    public List<BeatNode> BeatNodes { get; set; } = new();
 }

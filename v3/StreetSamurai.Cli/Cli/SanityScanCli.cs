@@ -71,8 +71,8 @@ public static class SanityScanCli
             .Where(s => !s.IsWIP)
             .ToListAsync();
 
-        // Filter to nodes with >2 beats (by joining NodeBeats)
-        var nodeIds = await db.NodeBeats.AsNoTracking()
+        // Filter to nodes with >2 beats (by joining BeatNodes)
+        var nodeIds = await db.BeatNodes.AsNoTracking()
             .Where(sb => sb.IsEnabled)
             .GroupBy(sb => sb.NodeId)
             .Where(g => g.Count() > 2)

@@ -112,19 +112,19 @@ He climbed out. He went to work.
 [Beat 4]
 The hum came from below.
 
-Not always, and not at a frequency the ear processed as sound exactly — more as a pressure behind the sternum, a sensation that was not quite feeling and not quite hearing. The Underclan called it *the Current's voice* and Listener Vesh said it was the Deep One speaking in the only frequency that could pass through stone and water and the centuries of forgetting that lay between wherever the Current dwelled and wherever they were. Glim believed this in the way he believed most of what Vesh taught him: genuinely and without quite being able to feel the edges of what he believed.
+Not always, and not at a frequency the ear processed as sound exactly - more as a pressure behind the sternum, a sensation that was not quite feeling and not quite hearing. The Underclan called it *the Current's voice* and Listener Vesh said it was the Deep One speaking in the only frequency that could pass through stone and water and the centuries of forgetting that lay between wherever the Current dwelled and wherever they were. Glim believed this in the way he believed most of what Vesh taught him: genuinely and without quite being able to feel the edges of what he believed.
 
-What he knew was that the hum was real. He had felt it first at his First Hearing, when he was small enough that he had been carried to the ceremony in Knuckle's arms — the massive man who trained the Braves had arms like old machinery, all functional structure and no softness — and Vesh had pressed his ear to the largest pipe in the Warm and told him to listen. The Warm was the strata below Homewater: live infrastructure, the heat-sources and pump-halls the surface had built and forgotten, where the Current's voice was loudest. The hum had come up through the pipe and through his ear and into his chest and stayed there. Sixteen years later it was still there.
+What he knew was that the hum was real. He had felt it first at his First Hearing, when he was small enough that he had been carried to the ceremony in Knuckle's arms - the massive man who trained the Braves had arms like old machinery, all functional structure and no softness - and Vesh had pressed his ear to the largest pipe in the Warm and told him to listen. The Warm was the strata below Homewater: live infrastructure, the heat-sources and pump-halls the surface had built and forgotten, where the Current's voice was loudest. The hum had come up through the pipe and through his ear and into his chest and stayed there. Twelve years later it was still there.
 
-What he also remembered: after the hum had entered him, Knuckle had set him down. He had been very small, and the ground had seemed further away than it should have been after the height of those arms. He had looked up at Knuckle's face. Knuckle's face had done something — a movement in the jaw, the particular working of a person who has just felt something they did not expect to feel and are deciding what to do about it. He had looked back at the pipe and put his hand on the child's head, briefly, the way you put your hand on a candle to shield it from a draft, and then he had let go and they had both gone back to Homewater.
+What he also remembered: after the hum had entered him, Knuckle had set him down. He had been very small, and the ground had seemed further away than it should have been after the height of those arms. He had looked up at Knuckle's face. Knuckle's face had done something - a movement in the jaw, the particular working of a person who has just felt something they did not expect to feel and are deciding what to do about it. He had looked back at the pipe and put his hand on the child's head, briefly, the way you put your hand on a candle to shield it from a draft, and then he had let go and they had both gone back to Homewater.
 
 Glim had never told anyone he remembered this. He wasn't certain he was supposed to. It seemed like the kind of thing you kept in the part of the self that held the things no action was attached to: carefully, without weight, for later.
 
 The Oarsman rowed without sound. The black water was quiet.
 
-Glim pressed his hand flat against the side of the boat and felt the vibration come through the hull. Below the hull, below the water, below the rock: the Warm's tokamak ring — the great heat-machine that warmed the whole of the deep — cycling its thousandth thousand cycle, and below that something that was not the Warm but was older. *First the hum*, Vesh taught. *Then the Word. Then us.*
+Glim pressed his hand flat against the side of the boat and felt the vibration come through the hull. Below the hull, below the water, below the rock: the Warm's tokamak ring - the great heat-machine that warmed the whole of the deep - cycling its thousandth thousand cycle, and below that something that was not the Warm but was older. *First the hum*, Vesh taught. *Then the Word. Then us.*
 
-He was a Brave, or nearly — his Surfacing had been called. In twelve more sleep-cycles he would climb to the Skin and look on the Burning Eye and come back. Sorrel had done it already. She had come back smelling of the surface in a way that had taken a month to fade, with a new scar on her left palm and a certain quality of stillness in her eyes that Glim had not been able to name. She had said the surface was loud and white and the light was a violence.
+He was a Brave, or nearly - his Surfacing had been called. In twelve more sleep-cycles he would climb to the Skin and look on the Burning Eye and come back. Sorrel had done it already. She had come back smelling of the surface in a way that had taken a month to fade, with a new scar on her left palm and a certain quality of stillness in her eyes that Glim had not been able to name. She had said the surface was loud and white and the light was a violence.
 
 She had come back.
 
@@ -134,7 +134,7 @@ The Oarsman rested its oar across its knees and the boat ground softly against t
 
 He did not go to the harvest.
 
-He went to the edge of the jetty instead — the far end, where the planks stopped and the black water was directly below — and he crouched there with his palm flat against the wood and listened for the hum. It came up from below the cistern at its ordinary frequency. The same pressure behind the sternum. The same depth of it.
+He went to the edge of the jetty instead - the far end, where the planks stopped and the black water was directly below - and he crouched there with his palm flat against the wood and listened for the hum. It came up from below the cistern at its ordinary frequency. The same pressure behind the sternum. The same depth of it.
 
 In twelve sleeps he would be on the surface. He would have nothing below him.
 
@@ -773,21 +773,21 @@ He chose the dark.
 [Beat 23]
 He had been underground for an hour when the lights found him.
 
-Not candles. Not the Cogs' working lamps, which were warm and directed and made sense in the dark because they did what the candle did: illuminated a space. These were floods — white, total, scouring — and they came from behind him and lit everything in front of him and took his eyes again, completely and without warning, in the way that a blow takes the breath: not gradually but all at once.
+Not candles. Not the Cogs' working lamps, which were warm and directed and made sense in the dark because they did what the candle did: illuminated a space. These were the pouring white - white, total, scouring - and they came from behind him and lit everything in front of him and took his eyes again, completely and without warning, in the way that a blow takes the breath: not gradually but all at once.
 
 He had thought he was safe in the Works. He had been wrong.
 
-He had gone down two levels below the grating, moving quickly, counting his steps the way Knuckle had taught him — count so you know how far you've gone, because your sense of distance in a strange tunnel is unreliable — and had been doing everything right, hand on the wall, candle out and shielded, breathing the air for warnings. The Works were occupied by the Cogs, whom the Underclan didn't trust but who followed their own rules, and the Cogs did not come into the eastern Works without their own signaling — three taps on the pipe, the old treaty knock.
+He had gone down two levels below the grating, moving quickly, counting his steps the way Knuckle had taught him - count so you know how far you've gone, because your sense of distance in a strange tunnel is unreliable - and had been doing everything right, hand on the wall, candle out and shielded, breathing the air for warnings. The Works were occupied by the Cogs, whom the Underclan didn't trust but who followed their own rules, and the Cogs did not come into the eastern Works without their own signaling - three taps on the pipe, the old treaty knock.
 
-The flood-lamps came with no knock. They came from behind a door he had identified and noted and placed in his mental map as a storage junction, no active access. The door opened and the floods came through it and he was blind before he understood what was happening.
+The pouring white came with no knock. It came from behind a door he had identified and noted and placed in his mental map as a storage junction, no active access. The door opened and the pouring white came through it and he was blind before he understood what was happening.
 
-They were fast. He was faster in the dark — years of navigating without eyes made the dark a medium he could move through the way surface people moved through lit space — but the floods negated the dark, turned it into a uniform white hell where his advantage vanished. He moved anyway. He hit a wall he hadn't mapped. He bounced off it and changed direction and hit another.
+They were fast. He was faster in the dark - years of navigating without eyes made the dark a medium he could move through the way surface people moved through lit space - but the pouring white negated the dark, turned it into a uniform white hell where his advantage vanished. He moved anyway. He hit a wall he hadn't mapped. He bounced off it and changed direction and hit another.
 
-There were at least three of them. Their footsteps were surface footsteps — heavy, certain, with no habit of moving quietly. Surface people who came into the deep didn't practice quiet because they had never needed to, and that particular arrogance left its signature even when the person trying was otherwise skilled.
+There were at least three of them. Their footsteps were surface footsteps - heavy, certain, with no habit of moving quietly. Surface people who came into the deep didn't practice quiet because they had never needed to, and that particular arrogance left its signature even when the person trying was otherwise skilled.
 
 He almost made it. His hand found the junction-box and he identified it by texture and knew he was fifteen feet from the pipe-shaft that would take him back down to the Works-level and from there to the Warm and from there to Homewater, and he was running the last feet when something caught his shoulder and that was that.
 
-He went down. The floods held. He was visible.
+He went down. The pouring white held. He was visible.
 
 He was caught.
 
@@ -856,7 +856,7 @@ Noor didn't answer for a long moment. She was looking at a photograph of a stran
 
 "Custody transfer's in progress. He'll be brought to a secondary facility, not the first one — the recovery team's methods aren't something we advertise." A pause, careful. "He hasn't spoken. Not one word, in either direction. They don't know if he can't or won't."
 
-Noor sat with the phone against her ear and the three images open on the table in front of her — a stranger's kneeling shape, a stranger's eyebrow, a stranger's stubborn hair — and let herself, for the first time in eleven years of files that closed themselves and hers that hadn't, believe a caseworker's eleven o'clock certainty over her own body's practiced distrust.
+Noor sat with the line still live and the three images open on the table in front of her — a stranger's kneeling shape, a stranger's eyebrow, a stranger's stubborn hair — and let herself, for the first time in eleven years of files that closed themselves and hers that hadn't, believe a caseworker's eleven o'clock certainty over her own body's practiced distrust.
 
 She was at the facility before dawn. She did not touch him. She stood in a doorway and looked at a boy who did not look back, and before she understood anything else about him, she understood the eyebrow and the crown of his head, because she had looked for exactly those two things, specifically, for twelve years, in every child's face the surface had ever shown her by mistake.
 
@@ -1039,9 +1039,9 @@ He couldn't stop being in a situation where he wasn't paying attention. Each day
 
 He waited until Noor was in what he understood was her sleeping state - not confirmed by sight, since the ceiling-light was dim enough that he couldn't read her clearly from the floor, but by the change in her breathing and the absence of movement - and then he rose without making sound, which wasn't difficult. He had been lying still for hours building the exit in his mind: the window's lower panel, the latch mechanism he had studied for two days, the outside wall.
 
-He went out through the window's lower panel, which he operated in one motion with the knowledge of exact location and exact mechanism, and then down the outside of the structure by the same logic he used on tunnel walls - grip, test, move, grip. The outside of the building was a different texture than the inside: rough, dusty, with the particular grip-quality of a surface that had been exposed to weather, which was a thing he understood abstractly and now understood with his palms.
+He went out through the window's lower panel, which he operated in one motion with the knowledge of exact location and exact mechanism, and then down the outside of the structure by the same logic he used on tunnel walls - grip, test, move, grip. The outside of the structure was a different texture than the inside: rough, dusty, with the particular grip-quality of a surface that had been exposed to weather, which was a thing he understood abstractly and now understood with his palms.
 
-He reached for the second handhold at the distance his memory of the climb up had given him, four days old and confident, and his fingers closed on nothing - the hold was a hand's width lower than the memory said, the wall's texture shifting there in a way his palm hadn't recorded on the way up, distracted that first night by everything else the surface was doing to him at once. He corrected in the same motion, weight already committed, and found the true hold before the miss had cost him anything but a half-second of his heart going loud. He told himself it was fatigue, or the dark, or a memory laid down badly the one time instead of worn smooth by repetition the way his tunnel-memory was. He did not enjoy how easily he believed himself.
+He reached for the second handhold at the distance his study of the wall had given him, three days of measuring from the inside out, and his fingers closed on nothing - the hold was a hand's width lower than the window's framing had shown it, the wall's texture shifting there in a way the glass hadn't conveyed, reading stone through a transparent pane being different from reading stone with the palm. He corrected in the same motion, weight already committed, and found the true hold before the miss had cost him anything but a half-second of his heart going loud. He told himself it was the glass, or the dark, or an estimate made from insufficient data instead of worn smooth by repetition the way his tunnel-knowledge was. He did not enjoy how easily he believed himself.
 
 He descended one level and then another. The surface corridor below was lit but quiet in the deep of the sleep-cycle, and he dropped the last distance and landed with the weight absorption he had been taught, and then he was in the corridor.
 
@@ -1216,7 +1216,7 @@ He didn't stop moving. He couldn't. The chain was forming, the grips propagating
 
 Behind them, Sallow's voice said something short and satisfied, the tone of a man closing an account, and did not follow. He had more to do there.
 
-Glim led the chain into the tunnel's dark. He did not yet know, precisely, what he had heard happen to Leaf. He would know, with the rest of the Hollow, by nightfall. He noted the name Corwin and filed it where he filed things that mattered and had no use yet.
+Glim led the chain into the tunnel's dark. He did not yet know, precisely, what he had heard happen to Leaf. He would know, with the rest of the Hollow, by nightfall. He noted the name. He would keep it, for whatever use it might eventually have.
 
 [Beat 40]
 Lark was coughing.

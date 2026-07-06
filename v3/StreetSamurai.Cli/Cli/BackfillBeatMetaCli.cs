@@ -52,15 +52,15 @@ public static class BackfillBeatMetaCli
 
         // All beats in global reading order: chapter order, then beat SortKey within chapter.
         var ordered = new List<Guid>();
-        var beatInfo = new Dictionary<Guid, (string? Text, string? Synopsis, string? Role)>();
+        var beatInfo = new Dictionary<Guid, (string? Text, string? Description, string? Role)>();
         foreach (var sid in nodeIds)
         {
-            var beats = await (from sb in db.NodeBeats.AsNoTracking()
+            var beats = await (from sb in db.BeatNodes.AsNoTracking()
                                join b in db.Beats.AsNoTracking() on sb.BeatId equals b.Id
                                where sb.NodeId == sid && sb.IsEnabled
                                orderby sb.SortKey
-                               select new { b.Id, b.Text, b.Synopsis, b.StructureRole }).ToListAsync();
-            foreach (var b in beats) { ordered.Add(b.Id); beatInfo[b.Id] = (b.Text, b.Synopsis, b.StructureRole); }
+                               select new { b.Id, b.Text, b.Description, b.StructureRole }).ToListAsync();
+            foreach (var b in beats) { ordered.Add(b.Id); beatInfo[b.Id] = (b.Text, b.Description, b.StructureRole); }
         }
         Console.WriteLine($"Backfilling {ordered.Count} beats across {nodeIds.Count} node(s).");
 
@@ -84,7 +84,7 @@ public static class BackfillBeatMetaCli
         if (doSynopses)
         {
             var llm = sp.GetRequiredService<ILlmService>();
-            var targets = ordered.Where(id => force || string.IsNullOrWhiteSpace(beatInfo[id].Synopsis))
+            var targets = ordered.Where(id => force || string.IsNullOrWhiteSpace(beatInfo[id].Description))
                                   .Where(id => !string.IsNullOrWhiteSpace(beatInfo[id].Text)).ToList();
             Console.WriteLine($"  Synopses: {targets.Count} beat(s) to generate (model={model ?? "default"})…");
 
@@ -112,7 +112,7 @@ public static class BackfillBeatMetaCli
                 finally { sem.Release(); }
             }));
 
-            await ApplyAsync(dbFactory, results.ToDictionary(k => k.Key, v => v.Value), (b, v) => b.Synopsis = v);
+            await ApplyAsync(dbFactory, results.ToDictionary(k => k.Key, v => v.Value), (b, v) => b.Description = v);
             Console.WriteLine($"  Synopses: {results.Count} beat(s) written.");
         }
 

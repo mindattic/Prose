@@ -112,7 +112,7 @@ public static class AutoRunCli
             {
                 Console.WriteLine();
                 Console.WriteLine($"[auto-run] ── Chapter {totalChapters + 1}: \"{chapterTitle}\" ──");
-                var exp = await ExpandNodeBeatsAsync(chapterId, storyBible, router, workbench, force, dryRun);
+                var exp = await ExpandBeatNodesAsync(chapterId, storyBible, router, workbench, force, dryRun);
                 totalExpanded += exp;
 
                 if (!dryRun && exp > 0)
@@ -138,7 +138,7 @@ public static class AutoRunCli
         }
         else
         {
-            var exp = await ExpandNodeBeatsAsync(nodeId, storyBible, router, workbench, force, dryRun);
+            var exp = await ExpandBeatNodesAsync(nodeId, storyBible, router, workbench, force, dryRun);
 
             if (!dryRun && exp > 0)
             {
@@ -163,7 +163,7 @@ public static class AutoRunCli
         return 0;
     }
 
-    private static async Task<int> ExpandNodeBeatsAsync(
+    private static async Task<int> ExpandBeatNodesAsync(
         Guid nodeId,
         string storyBible,
         ProseWriterRouter router,
@@ -188,7 +188,7 @@ public static class AutoRunCli
                 continue;
             }
 
-            var goal = beat.Synopsis ?? beat.BeatTitle ?? $"Beat {beat.Number}";
+            var goal = beat.Description ?? beat.Title ?? $"Beat {beat.Number}";
             if (string.IsNullOrWhiteSpace(goal)) { beatIndex++; continue; }
 
             if (dryRun)

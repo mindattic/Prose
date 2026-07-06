@@ -1,4 +1,4 @@
-using Microsoft.EntityFrameworkCore;
+﻿using Microsoft.EntityFrameworkCore;
 using StreetSamurai.Core.Data;
 using StreetSamurai.Core.Interfaces;
 
@@ -39,10 +39,10 @@ public class OutlineAdherenceService(
 
             bibleText = node?.NodeBible;
 
-            remainingGoals = await db.NodeBeats.AsNoTracking()
+            remainingGoals = await db.BeatNodes.AsNoTracking()
                 .Where(sb => sb.NodeId == nodeId && sb.IsEnabled)
                 .Join(db.Beats.AsNoTracking().Where(b => b.Text == null || b.Text == ""),
-                      sb => sb.BeatId, b => b.Id, (sb, b) => b.Synopsis ?? b.BeatTitle ?? "")
+                      sb => sb.BeatId, b => b.Id, (sb, b) => b.Description ?? b.Title ?? "")
                 .Where(g => g.Length > 0)
                 .ToListAsync(ct);
         }
@@ -94,11 +94,11 @@ public class OutlineAdherenceService(
         List<(Guid BeatId, string CurrentGoal)> emptyBeats;
         await using (var db = await dbFactory.CreateDbContextAsync(ct))
         {
-            var rows = await db.NodeBeats.AsNoTracking()
+            var rows = await db.BeatNodes.AsNoTracking()
                 .Where(sb => sb.NodeId == nodeId && sb.IsEnabled)
                 .Join(db.Beats.AsNoTracking().Where(b => b.Text == null || b.Text == ""),
                       sb => sb.BeatId, b => b.Id,
-                      (sb, b) => new { b.Id, Goal = b.Synopsis ?? b.BeatTitle ?? "" })
+                      (sb, b) => new { b.Id, Goal = b.Description ?? b.Title ?? "" })
                 .Where(x => x.Goal != "")
                 .OrderBy(x => x.Id)
                 .ToListAsync(ct);
@@ -137,7 +137,7 @@ public class OutlineAdherenceService(
             {
                 var beat = await db.Beats.FindAsync([emptyBeats[i].BeatId], ct);
                 if (beat == null) continue;
-                beat.Synopsis  = lines[i].Length > 500 ? lines[i][..500] : lines[i];
+                beat.Description  = lines[i].Length > 500 ? lines[i][..500] : lines[i];
                 beat.UpdatedAt = DateTime.UtcNow;
                 updated++;
             }

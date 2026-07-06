@@ -1,4 +1,4 @@
-using Microsoft.EntityFrameworkCore;
+﻿using Microsoft.EntityFrameworkCore;
 using StreetSamurai.Core.Data;
 
 namespace StreetSamurai.Cli;
@@ -45,7 +45,7 @@ public static class KdpStatusCli
         }
 
         // For Published nodes: check whether any beat was edited after KdpPublishedAt
-        // Collect story-level latest-beat-edit via both direct NodeBeats and chapter children
+        // Collect story-level latest-beat-edit via both direct BeatNodes and chapter children
         var nodeIds = await db.Nodes
             .AsNoTracking()
             .Where(n => n.PublicationStatus != null)
@@ -56,14 +56,14 @@ public static class KdpStatusCli
         var viaChapters = await db.Nodes
             .AsNoTracking()
             .Where(n => n.ParentNodeId != null && nodeIds.Contains(n.ParentNodeId.Value))
-            .Join(db.NodeBeats.AsNoTracking(), ch => ch.Id, nb => nb.NodeId, (ch, nb) => new { ch.ParentNodeId, nb.BeatId })
+            .Join(db.BeatNodes.AsNoTracking(), ch => ch.Id, nb => nb.NodeId, (ch, nb) => new { ch.ParentNodeId, nb.BeatId })
             .Join(db.Beats.AsNoTracking(), x => x.BeatId, b => b.Id, (x, b) => new { StoryId = x.ParentNodeId!.Value, b.UpdatedAt })
             .GroupBy(x => x.StoryId)
             .Select(g => new { StoryId = g.Key, LastEdit = g.Max(x => x.UpdatedAt) })
             .ToListAsync();
 
-        // Latest beat edit via direct NodeBeats on the story node
-        var direct = await db.NodeBeats
+        // Latest beat edit via direct BeatNodes on the story node
+        var direct = await db.BeatNodes
             .AsNoTracking()
             .Where(nb => nodeIds.Contains(nb.NodeId))
             .Join(db.Beats.AsNoTracking(), nb => nb.BeatId, b => b.Id, (nb, b) => new { nb.NodeId, b.UpdatedAt })

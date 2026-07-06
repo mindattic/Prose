@@ -1,4 +1,4 @@
-using Microsoft.EntityFrameworkCore;
+﻿using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Logging;
 using StreetSamurai.Core.Data;
 
@@ -82,7 +82,7 @@ public class PostBeatValidationService(
             var beat = await db.Beats.AsNoTracking().FirstOrDefaultAsync(b => b.Id == beatId, ct);
             if (string.IsNullOrWhiteSpace(beat?.Text)) return new(0, 0, 0);
 
-            var nodeSlug = await db.NodeBeats.AsNoTracking()
+            var nodeSlug = await db.BeatNodes.AsNoTracking()
                 .Where(sb => sb.BeatId == beatId)
                 .Join(db.Nodes, sb => sb.NodeId, s => s.Id, (_, s) => s.Slug)
                 .FirstOrDefaultAsync(ct) ?? beatId.ToString();

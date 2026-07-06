@@ -39,7 +39,7 @@ The aerobloc passed the window and continued. The Blur closed around it and the 
 She had not expected to feel anything about it. She filed the fact and kept watching the window anyway.
 
 [Beat 3]
-The Blur thinned behind the car and the light shifted toward something that was going to become morning eventually. She opened the soft case on her lap — careful of the man asleep two seats forward — and ran the VacCell's check without powering up the wings. A silent inventory: charge at 87%, camera calibration nominal, wing-pair seating torque within spec on both pairs. The handshake signal from the primary kit, that quiet periodic ping she'd threaded into the chassis during the last overhaul, was logging its status to the VacCell's memory chip the way it did every four seconds: *here, here, here.* She'd built the signal to be ugly — narrow band, idiosyncratic frequency, nothing else in any environment would mistake it for anything — specifically so it could be found. It was the thing she'd done instead of worrying.
+The Blur thinned behind the car and the light shifted toward something that was going to become morning eventually. She opened the soft case on her lap — careful of the man asleep two seats forward — and ran Nit's check without powering up the wings. A silent inventory: charge at 87%, camera calibration nominal, wing-pair seating torque within spec on both pairs. The handshake signal from the primary kit, that quiet periodic ping she'd threaded into the chassis during the last overhaul, was logging its status to Nit's memory chip the way it did every four seconds: *here, here, here.* She'd built the signal to be ugly — narrow band, idiosyncratic frequency, nothing else in any environment would mistake it for anything — specifically so it could be found. It was the thing she'd done instead of worrying.
 
 She packed the case back in the overhead rack and put an earbud in. A track she'd had for years, mixed quiet enough to occupy the background half of her brain and leave the rest to work.
 
@@ -75,7 +75,7 @@ She found the transit line and got on it heading north.
 
 She'd learned this at the co-op: a map tells you where things should be, and a field tells you where they are, and you spend your whole first season learning the difference before the gap stops costing you. Four blocks. She had time.
 
-What she read while walking: the gray zone's seam markers, which buildings faced which corponation's jurisdiction and which ones answered to none. The sight lines — where a person standing at a given corner could see everything, and where they couldn't, and who had built their business around each condition. The vendor pricing in the window displays, which she'd studied in databases for two years and was now learning at the speed of actual commerce rather than the speed of a spreadsheet. She filed it all without deciding to.
+What she read while walking: the gray zone's seam markers, which buildings faced which corponation's jurisdiction and which ones answered to none. The sight lines — where a person standing at a given corner could see everything, and where they couldn't, and who had built their business around each condition. The vendor pricing in the window displays, which she'd studied in databases for two years and was now learning at the speed of actual commerce rather than the speed of a spreadsheet. She catalogued it all without deciding to.
 
 The Pivot was a corner building with two addresses — the number it used on the street it faced and a different number for the street it turned its back on. She came at it from the wrong side first and recognized it anyway from the wear pattern on the front stoop: high traffic, distributed across the whole step rather than worn into a groove, the way institutional foot traffic wears stone rather than household. The buzzer panel had twelve units. 2E was second floor, east. The cooperative mark was on the door frame, small, the kind you recognize before you look for it.
 
@@ -141,7 +141,7 @@ She didn't like it. It was already true.
 [Beat 7]
 She did not sleep until past two.
 
-This wasn't insomnia. The building had sounds she didn't know the origin of yet — a pump cycling in the basement on a forty-minute interval that her body wouldn't classify as safe until it had heard the cycle enough times to know it was the same sound each time. After midnight the street below went from aggregate noise to individual sounds: a cart with a loose wheel at twelve-forty, a conversation in two languages at one-fifteen arguing direction. She kept the secondary kit open on the floor beside her so she could see its standby light, faint green in the room the city's ambient glow kept from going dark. The VacCell sat on the windowsill. She'd put it there after the last check. It was the highest point in the room.
+This wasn't insomnia. The building had sounds she didn't know the origin of yet — a pump cycling in the basement on a forty-minute interval that her body wouldn't classify as safe until it had heard the cycle enough times to know it was the same sound each time. After midnight the street below went from aggregate noise to individual sounds: a cart with a loose wheel at twelve-forty, a conversation in two languages at one-fifteen arguing direction. She kept the secondary kit open on the floor beside her so she could see its standby light, faint green in the room the city's ambient glow kept from going dark. Nit sat on the windowsill. She'd put it there after the last check. It was the highest point in the room.
 
 At one-oh-three, footsteps came slow and deliberate down the corridor and stopped in front of 2E.
 
@@ -156,7 +156,7 @@ She added it to the building's catalog the way she'd added the pump: 2D, active 
 In the morning she would buy calibration fluid and food, and it would be the first morning she had ever woken up in this city.
 
 [Beat 8]
-The market started under the tier-two overpass where the ramp came down and gave the vendors a roof nobody had paid for. She left the VacCell in the room — too conspicuous in a market where conspicuous was the last thing you wanted to be — and brought only the pouch, because you didn't bring the thing that mattered to a place you hadn't read yet.
+The market started under the tier-two overpass where the ramp came down and gave the vendors a roof nobody had paid for. She left Nit in the room — too conspicuous in a market where conspicuous was the last thing you wanted to be — and brought only the pouch, because you didn't bring the thing that mattered to a place you hadn't read yet.
 
 She needed calibration fluid, a thermal coupling, food for three days. She bought the coupling first, at the north end where the components vendors clustered, because component vendors were easier to read than food vendors. Their pricing logic was technical and therefore consistent. The coupling she needed was a spec she knew exactly: inner diameter 3.8mm, ferrite core, rated to 90°C. Two stalls had it. One was stale-spec, priced high for people who didn't know what they were buying. She bought from the other stall without a word and the woman behind it didn't say a word back and that was a transaction that went correctly.
 
@@ -181,6 +181,8 @@ He didn't look up. "There's a crew operator runs assessments on new arrivals. Co
 "Leave the district?"
 
 "Leave GLMZ." He shrugged, a small economical motion, already done with the subject. "Or they don't leave. Depends who you ask."
+
+He added it unprompted, the way he'd told her which floor she lived on. "Guy I used to trade parts with got the visit, maybe eight months back. Didn't want in. Booked out east inside the week — somebody saw the manifest, his name right there on it. So I guess that's leaving." He was already reaching for the next customer's coupling. "Good tech. Hate that he's gone."
 
 She didn't ask follow-up questions. She'd learned that much already: a question that showed you cared about the answer was a question that cost you standing.
 
@@ -253,49 +255,49 @@ She did not buy anything for the evening. She had clothes that were hers and a p
 At quarter to nine she left 2E and went to find out what a man who reserved a table three months in advance wanted badly enough to leave paper under a stranger's door.
 
 [Beat 11]
-The restaurant announced itself with a door that opened before she reached it, a host who already knew her name — not Vera, not Pixel, just "this way" — and a room built for people who expected rooms to arrange themselves around their arrival. She took the deceleration the way she'd taken the Pulse car's, weight low, and did not let the room's engineering do anything to her stride.
+The restaurant announced itself with a door that opened before she reached it, a host who already knew her name - not Vera, not Pixel, just "this way" - and a room built for people who expected rooms to arrange themselves around their arrival. She took the deceleration the way she'd taken the Pulse car's, weight low, and did not let the room's engineering do anything to her stride.
 
 He had the corner table. She knew him before the host said anything, because there was only one way a person sat in a room like this and made every other table in it feel like furniture.
 
-White hair, slicked back, catching the low light in a way that read as deliberate rather than aged. Dark sunglasses, worn indoors, worn the way another man might wear a watch worth more than his car. At his temples and along his jaw, faint geometric lines traced the skin — neuretic etching so fine it looked decorative from across the room and looked, up close, like a receipt for money she couldn't picture spending. White suit. Black shirt. A long coat draped over the empty chair beside him like a second guest he hadn't decided whether to introduce.
+White hair, slicked back, catching the low light in a way that read as deliberate rather than aged. Dark sunglasses, worn indoors, worn the way another man might wear a watch worth more than his car. At his temples and along his jaw, faint geometric lines traced the skin - neuretic etching so fine it looked decorative from across the room and looked, up close, like a receipt for money she couldn't picture spending. White suit. Black shirt. A long coat draped over the empty chair beside him like a second guest he hadn't decided whether to introduce.
 
-He rose halfway — a courtesy calibrated to look complete without costing him anything — and gestured her into the seat across from him.
+He rose halfway - a courtesy calibrated to look complete without costing him anything - and gestured her into the seat across from him.
 
-He had already ordered wine. A bottle stood open and breathing between them, label out, positioned so she'd have to work to avoid reading it. 2029 Château St. Croix. She noted the vintage the way she noted everything: not to be impressed, but because a number was a number and this one told her what he thought the evening was worth.
+He had already ordered wine. A bottle stood open and breathing between them, label out, positioned so she'd have to work to avoid reading it. 2211 Château St. Croix. She noted the vintage the way she noted everything: not to be impressed, but because a number was a number and this one told her what he thought the evening was worth.
 
 She sat down. She ordered the filet mignon without opening the menu, because she'd decided on the walk over that she wasn't going to spend one extra second performing indecision for him.
 
-"You've had an interesting first two weeks," he said. His voice matched the etching — expensive, unhurried, engineered to sound like it wasn't performing anything at all. "A relay job three operators failed. A climate system nobody licensed could parse. And a drone chassis that, as far as I can determine, doesn't exist anywhere else. That's not luck. That's a rate of return I don't often see."
+"You've had an interesting first two weeks," he said. His voice matched the etching - expensive, unhurried, engineered to sound like it wasn't performing anything at all. "A relay job three operators failed. A climate system nobody licensed could parse. And a drone chassis that, as far as I can determine, doesn't exist anywhere else. That's not luck. That's a rate of return I don't often see."
 
 "You've been checking."
 
 "I check everyone worth checking." He said it without apology, the way a man states his job title. "Most of them aren't worth a second conversation. You are."
 
-He made his pitch the way she imagined he made every pitch: cleanly, without wasted motion, each sentence arriving already knowing where the last one had landed. She was exactly what his operation needed. Skilled, precise, the kind of work the gray zone didn't produce twice in a generation. He could give her runs worth ten times what she was making now. The right clients. Protection — from exactly the kind of operator who circled new talent before the corpos got a look, which was to say protection from men indistinguishable from him, offered without a flicker of irony. Standing. A name that meant something before she turned twenty.
+He made his pitch the way she imagined he made every pitch: cleanly, without wasted motion, each sentence arriving already knowing where the last one had landed. She was exactly what his operation needed. Skilled, precise, the kind of work the gray zone didn't produce twice in a generation. He could give her runs worth ten times what she was making now. The right clients. Protection - from exactly the kind of operator who circled new talent before the corpos got a look, which was to say protection from men indistinguishable from him, offered without a flicker of irony. Standing. A name that meant something before she turned twenty.
 
 She listened to the whole thing. She'd learned, calibrating instruments for people who talked more than they needed to, that the fastest way to understand an offer was to let it finish.
 
 When he was done, she picked up the bottle.
 
-She poured a glass — one, for form, so the gesture would read as a choice and not a refusal — and then she drank from the bottle itself, tipped straight back, the label crushed a little against her palm where she gripped it. She set it down without looking at him for a reaction.
+She poured a glass - one, for form, so the gesture would read as a choice and not a refusal - and then she drank from the bottle itself, tipped straight back, the label crushed a little against her palm where she gripped it. She set it down without looking at him for a reaction.
 
-His expression didn't change. That was the thing she noticed first — not a flinch, not a flicker, nothing a stranger would have caught. What she caught instead was a kind of tightening, a fractional increase in how exactly he held his own hands on the table edge, the way a high-tension wire hums a half-step higher when the load goes up. He became, in the space of two seconds, very slightly more precise. His voice, when he spoke again, had lost nothing and gained something she couldn't name yet except that it cost her something small and involuntary to sit across from it — her stomach going tight and cold before her mind caught up with why.
+His expression didn't change. That was the thing she noticed first - not a flinch, not a flicker, nothing a stranger would have caught. What she caught instead was a kind of tightening, a fractional increase in how exactly he held his own hands on the table edge, the way a high-tension wire hums a half-step higher when the load goes up. He became, in the space of two seconds, very slightly more precise. His voice, when he spoke again, had lost nothing and gained something she couldn't name yet except that it cost her something small and involuntary to sit across from it - her stomach going tight and cold before her mind caught up with why.
 
 She had seen this before. Not in GLMZ. In Iowa, in men who ran equipment cooperatives and could not tolerate a machine, or a season, or a person, that didn't answer to them on schedule. The tell was identical. Something small went sideways and they got quieter, not louder. More controlled, not less. The control was the rage. She'd learned to read it off diesel engines that wouldn't turn over for men who needed them to.
 
-She noted it: he needed the room. Whatever the room actually was — this dinner, the operation, the person sitting across the white tablecloth from him — he needed to own it completely, and a woman drinking his 300Φ bottle straight from the neck instead of sipping from the glass he'd poured was a variable he hadn't designed.
+She noted it: he needed the room. Whatever the room actually was - this dinner, the operation, the person sitting across the white tablecloth from him - he needed to own it completely, and a woman drinking his 300Φ bottle straight from the neck instead of sipping from the glass he'd poured was a variable he hadn't designed.
 
 "I'm not interested," she said. Politely. She didn't raise her voice or lower it. She didn't explain, because an explanation was a door and she wasn't opening one.
 
 He didn't argue.
 
-He smiled instead — an expression that arrived on schedule, every muscle in the right place, nothing about it wrong except that nothing about it was for her. "I understand," he said. "The offer stands. I hope you'll reconsider." He said it the way a man says something he's said many times before, to many people, most of whom he expected to come around.
+He smiled instead - an expression that arrived on schedule, every muscle in the right place, nothing about it wrong except that nothing about it was for her. "I understand," he said. "The offer stands. I hope you'll reconsider." He said it the way a man says something he's said many times before, to many people, most of whom he expected to come around.
 
 She registered the smile as exactly what it was: not defeat, not even disappointment. A change of register. He was not a man who lost a room. He was a man who found a different way into it.
 
 "Thank you for dinner," she said, and stood before the second course arrived, because she had gotten what she came for and neither of them needed the filet mignon to finish making its point.
 
-He didn't rise this time. "Pixel," he said to her back — the name, not a question, offered the way you hand someone something they've already agreed to carry. She didn't turn around. She didn't correct it, either. It was already true, and arguing about a name that was already true would have cost her more than it bought.
+He didn't rise this time. "Pixel," he said to her back - the name, not a question, offered the way you hand someone something they've already agreed to carry. She didn't turn around. She didn't correct it, either. It was already true, and arguing about a name that was already true would have cost her more than it bought.
 
 She walked the six blocks back to the Pivot in the cooling night air, past the reservation system's queue still forming outside a restaurant that would never once, in its history, have to try to fill a table. She thought about what it cost to take a room away from a man who needed to own it. She thought about what it would cost him.
 
@@ -318,7 +320,7 @@ At four minutes the panel went green on the fifth try, silent, as if nothing had
 
 She went up the stairs without stopping at 2E's door first. She wanted the building's access log before whatever had just happened cycled itself out of memory the way these systems were built to do — property management terminals kept a rolling cache, not a permanent record, unless you knew which folder held the tail before it overwrote itself. She'd learned that cracking the Pivot's climate menu her first week. She used the same door now.
 
-The tail was still there. An override, sourced from a management-tier credential that wasn't Donatella's and wasn't listed anywhere on the building's registered access roll, had suspended her thumbprint's read window starting at 21:52 and released it at 21:56. Four minutes. She checked the time against her own memory of the evening without needing to: 21:52 was roughly when she'd still been four blocks out, thinking about a corner table and a bottle of wine crushed a little against her palm. He — or someone working for him, which she'd already stopped bothering to distinguish — had reached the building she lived in while she was still in transit from the room where she'd told him no, held the door shut on her for exactly as long as it took to prove he could, and let it go before she'd covered the distance to notice anything but a red light and four cold minutes on a street she'd thought was hers.
+The tail was still there. An override, sourced from a management-tier credential that wasn't Donatella's and wasn't listed anywhere on the building's registered access roll, had suspended her thumbprint's read window starting at 21:52 and released it at 21:56. Four minutes. She checked the time against her own memory of the evening without needing to: 21:52 was roughly when she'd still been four blocks out, thinking about a corner table and a bottle of wine crushed a little against her palm. He — or someone working for him, which she'd already stopped bothering to distinguish — had reached the building she lived in while she was still in transit from the room where she'd told him no, held the door shut on her for exactly as long as it took to prove he could, and let it go before she'd covered the distance to notice anything but a red light and four cold minutes on a street she'd thought was hers. She copied the override's call structure into her own file before the cache aged it out — not just what he'd done to her, but the shape of how, a mechanism that would answer wherever a credential lived, not only hers.
 
 Nothing was stolen. No one had touched 2E, or the case inside it, or the thing on the windowsill that mattered more than anything else she owned. That was, she understood standing in the stairwell with the cached log open on her screen, exactly the point. He hadn't broken in. He'd shown her he didn't need to.
 
@@ -345,7 +347,7 @@ She had twelve seconds before she needed to decide whether the job was salvageab
 
 It was an 800Φ transfer, routed through four cutouts — clean work, the kind that would read as nothing to anyone who wasn't already looking for it.
 
-She was already looking for it. She had the Ryokan's routing architecture sitting in her notes from the ghost-op, the exact map of how a certain kind of operator liked to lay a transfer chain, and the fifth hop in this one matched a node she'd logged from that job: the same shell, the same signature dead-drop pattern, a mark that meant nothing to anyone who hadn't spent eight seconds inside that particular frame two weeks ago.
+She was already looking for it. She had the Ryokan's fault-source path in her notes from the ghost-op — not the full node map, but the injection-point hops she'd crossed to reach the fault, the partial trace any careful operator kept — and the fifth hop in this one matched a node she'd logged from that job: the same shell, the same signature dead-drop pattern, a mark that meant nothing to anyone who hadn't spent eight seconds inside that particular frame two weeks ago.
 
 His mark. Invisible unless you already knew where to look, and she did.
 
@@ -453,6 +455,31 @@ She noted that too, in the log she kept for herself, not the one the district of
 She went back to work. She'd known, really, before she went in, that this was how it would go. She'd needed to know it for certain instead of assuming it, because assuming things you hadn't checked was how you ended up wrong about the one thing that mattered.
 
 [Beat 17]
+The ACS ticket had closed nothing, but it reminded her what she was actually good at: checking things everyone else had already decided didn't need checking.
+
+She went back to the one thread from West Town she hadn't pulled. The market kid's story, tossed off between customers — a guy he used to trade parts with, who got the assessment and said no. Booked out east inside the week. Somebody saw the manifest, his name right there on it. Weather, the kid had called it without calling it that, and weather was exactly the kind of information nobody thought to check. She checked it anyway, the way she checked everything she touched — a habit that had never once cost her anything for being thorough.
+
+Finding the handle took most of an evening: cross the parts-trading boards against six weeks of gray-zone job postings, narrow by specialty, narrow again by the shape of silence that follows a name that's stopped posting. The handle was Cotter. Calibration and coupling work, mostly — the kind of trade she'd have swapped parts with herself if she'd been here eight months longer instead of two.
+
+Cotter had owned a bench. Registered gray-zone equipment carried liens the same as anything financed, and Cotter's — a real asset, new enough to still be worth something — sold at a loss of 2,200Φ against its own registered valuation, four days after the assessment date, routed through a holding-company chain she already recognized. She'd traced its far end once before, to a restaurant reservation and a fifth-floor office with no name on the directory. A person leaving for a new city sells a bench he can't carry. That much made sense on its own. She kept going because one data point lining up with a chain she already knew the shape of wasn't a coincidence she trusted.
+
+The transit manifest was the second point, and it was the one that made her reread the line twice before she believed it. The ticket east had been paid for — not from any account of Cotter's, which showed no unusual withdrawal anywhere near the departure date, but by a third-party credential that had never, in two years of visible transaction history, touched anything connected to Cotter at all. No shared job. No payment either direction, ever. A stranger had bought a man a one-way ticket out of a district he'd worked for two years, and the manifest wore Cotter's name like a label addressed by somebody else's hand.
+
+The third point was the quietest and did the most work. In the five weeks after the departure date, four incompletes landed on Cotter's gray-zone account — jobs marked started-and-abandoned, each one timestamped for a date after the manifest, each one worded in the flat procedural language of a platform that never asked who had actually typed it. Nobody audited a departed specialist's abandoned jobs. That was the whole design. The incompletes weren't punishment for leaving. They were insurance against ever coming back — small, boring, permanently attached facts that would make any future employer pass on Cotter without a second thought, forever, with no one having laid a hand on him to make it true.
+
+The cold reached her before the words did. It settled low in her stomach, the way it had the few times a rig was seconds from failing and her hands knew it a half-step ahead of the readout — the body arriving at the conclusion before the part of her that would have to prove it caught up.
+
+Then she made herself put it into words, because words were the only thing she could hold up to anyone else. Nothing here was violence, not in any sense a report could take hold of. Nobody had hurt Cotter, as far as any record showed. Cotter had simply left — sold his equipment, bought his ticket, stopped showing up — exactly the way the kid had described it, the way weather describes itself. What she kept coming back to wasn't a cover story built to survive a glance. It was one built to survive her kind of look, from the visible to the inference, and it had very nearly held.
+
+The kid hadn't lied to her. The kid had repeated, faithfully and without malice, exactly what the record was built to make him believe. Three separate systems, three separate administrative facts, none of them false enough on its own to flag, all of them true enough together to hold up a departure that had never happened the way it read. "The ones who say no mostly just leave" wasn't street wisdom passed down from something that happened once. It was product, manufactured with the same care as the ticket and the bench and the four incompletes, circulating exactly as designed, mouth to mouth, becoming folklore because the paperwork underneath it never gave anyone a reason to doubt it.
+
+She logged Cotter's name and the three points under it, dated and sourced, the way she logged anything she meant to be able to prove later. She was slow over the entry, and it wasn't fear of the Assessor that made her slow — she'd priced him in weeks ago. It was the plain new fact of what one man could do to another with nothing but paperwork, and how nearly it had worked without a single thing about it looking wrong.
+
+Without quite deciding to, she pulled up her own account next — the job history, the reputation ledger, the two incompletes she'd genuinely earned and the clean record around them — and checked, line by line, how much of it lived in systems she didn't personally hold the keys to.
+
+Most of it did.
+
+[Beat 18]
 She sat on the stairwell's half-landing one evening with one hand flat on the cold rail and made herself lay the options out the way she'd lay out tools before a job: everything visible, nothing arranged for comfort.
 
 Iowa. She crossed it off before the thought finished forming. There was nothing to go back to that hadn't already changed shape the day she left it, and going back would mean the eighteen months in her mother's licensed-industry case file had been a warning she'd actually taken. She wasn't going to let his campaign be the reason she agreed with that reading of her own life.
@@ -477,7 +504,7 @@ She wasn't going to walk into his room on his schedule, the way the dinner had b
 
 She stood up off the rail. She had preparation to do.
 
-[Beat 18]
+[Beat 19]
 She didn't go in armed with anything she didn't already know how to use.
 
 She'd thought about it — briefly, the way you think about a tool you've seen other people use well and know you haven't. She didn't own a weapon and didn't know anyone she trusted enough to borrow one from on short notice, and walking into a room carrying something she'd need a half-second to remember how to hold seemed like exactly the kind of variable that got people hurt. What she had instead was everything she'd actually built: the secondary kit, packed the way she packed for a job rather than a fight. The documentation from two weeks of pattern — the elevator shaft transfer, the six-hour relay untangle, the redirected coupling, the ACS log that proved she'd tried the front door before she came in through this one. Her own notes on his routing architecture, going back to the Ryokan frame that had started all of it.
@@ -486,7 +513,7 @@ And Nit.
 
 She almost left it behind out of habit — she'd been thinking of tonight as the kind of work you did alone, unencumbered — and then made herself ask why. Nit wasn't a weapon and wasn't going to be one. It was an instrument, the same as it had always been, and instruments were how she read rooms she hadn't been inside yet. She packed the soft case.
 
-She ran a complete equipment check. Charge on the secondary kit's cells. Charge on Nit, camera calibration nominal, wing-pair torque within spec on both pairs. The dossier, staged and ready to project the instant she needed it visible and not one second before. She checked each element twice, the way she'd checked her mother's instruments before every calibration run for three winters, because a check you only ran once wasn't a check, it was a guess with better posture.
+She ran a complete equipment check. Charge on the secondary kit's cells. Charge on Nit, camera calibration nominal, wing-pair torque within spec on both pairs. The dossier, staged and ready to project the instant she needed it visible and not one second before. The send staged behind it: six channels, each scheduled to release on its own clock unless she cancelled it by hand, redundant the way she built anything she needed to trust without being there to watch it. She checked each element twice, the way she'd checked her mother's instruments before every calibration run for three winters, because a check you only ran once wasn't a check, it was a guess with better posture.
 
 When she was done, she sat back on her heels and looked down at her own boots.
 
@@ -502,7 +529,7 @@ The secondary kit was packed. Nit was packed. The documentation was staged. She 
 
 She checked the time. Close enough. She picked up her cases and went to the door.
 
-[Beat 19]
+[Beat 20]
 She opened the door of 2E with the cases in her hands and Nit's soft case slung against her ribs, and across the hall the door of 2D was already open.
 
 Kyle stood in it.
@@ -515,7 +542,7 @@ He read her the way she read hardware — from the visible to the inference. The
 
 "Give em hell," he said.
 
-Four words carried no inflection that asked her to explain herself, none that offered to come along, none that told her to be careful — just the sentence, flat and certain, the kind of thing you say to someone you've already decided doesn't need anything else from you tonight.
+Three words carried no inflection that asked her to explain herself, none that offered to come along, none that told her to be careful — just the sentence, flat and certain, the kind of thing you say to someone you've already decided doesn't need anything else from you tonight.
 
 He stepped back into 2D. The door closed. The worn latch caught with the same sound she'd catalogued a dozen times since her first night in the building.
 
@@ -525,7 +552,7 @@ Nothing about the hallway had changed. She had.
 
 Then she went downstairs, out through the lobby, into the street, toward the building she'd spent two weeks learning how to walk into.
 
-[Beat 20]
+[Beat 21]
 The address wasn't hard to find, once she stopped assuming he'd hide it the way an amateur would.
 
 She'd built it from four directions at once: the reservation trail behind the restaurant, which led to a holding entity that also leased office space two districts over; the routing architecture from the elevator-shaft transfer, whose home node resolved to the same block; the pattern of incidents themselves, each one timed in a way that told her, once she laid the timestamps side by side, roughly how far a signal had to travel to reach whoever was pulling each trigger; and the receiving-counter address three blocks from her own door, which shared a manifest system with the same holding entity. Four lines. One intersection. She'd checked it twice before she trusted it, the way she checked everything twice.
@@ -539,6 +566,8 @@ He was behind a desk in an office that looked more like the restaurant than like
 "Pixel," he said. "I wondered when."
 
 She didn't sit down. She set the secondary kit's projector on the corner of his desk without asking and let it throw the first page into the air between them: the elevator-shaft transfer, 800Φ, five hops, his mark on the fifth. She let it sit there a second before the next page replaced it — the relay's poisoned routing table, timestamped against her own repair log. Then the spoofed safety-flag that had frozen a handoff and cost her a client for good. Then the redirect that had sent a coupling three blocks to a counter she'd since visited in person. Then the exterior credential override at her own building, four minutes, reverted before purge, caught anyway.
+
+Then one page longer than the rest: a calibration bench sold at a loss through the same holding chain now leasing this floor, a transit manifest paid for by a credential that had never once touched the account it named, four incompletes marked against a gray-zone handle called Cotter, each one dated after he was supposedly already gone. She let that page sit the longest of all.
 
 "You've been thorough," she said. "So have I."
 
@@ -574,6 +603,16 @@ Her pulse went quick and cold under her collarbone, watching it happen — not f
 
 Something in his hands went very still on the desk — not a flinch but its opposite, the tightening she'd learned to read off him the way she'd once read it off men in Iowa who couldn't tolerate a machine that didn't answer to them on schedule.
 
+"That page with Cotter's name on it isn't only about him," she said. "It's about what 'he left' means, coming from you. I'm not only telling this district you sabotage the people who tell you no. I'm telling them you rewrite what happened to the ones who disappear — cleanly enough that nobody thinks to check. It's not a rumor anymore. It's documented, timestamped, and sitting in the same six channels as everything else on this desk."
+
+Whatever had gone still in his hands wound one turn tighter — the wire pulled past where she'd watched it hold all night, the pitch of it climbing without once breaking into strain.
+
+"That's a serious inference to build from a bench and a manifest," he said, when he spoke, each word set down with more care than the sentence needed.
+
+"It's not an inference," she said. "It's sourced. Same as the rest of it."
+
+He didn't say anything else about Cotter. He'd answered everything else she'd set in front of him tonight — disputed some of it, absorbed the rest, met all of it head-on. This was the one page he declined to touch, and declining to touch it was the nearest thing to a confession he was going to give her.
+
 "This stops," she said. "The relay work. The client interference. The building. All of it. Not because you've decided it's not worth the trouble. Because it is now more trouble than you can afford, and I've made sure you know exactly how much, on a channel I'm prepared to keep spending until you believe the rest without me having to spend them."
 
 He was quiet for a while. She let him be quiet. She'd already done the math and she knew what the answer looked like; she didn't need to fill the silence to prove it.
@@ -594,12 +633,12 @@ And the leverage would only hold as long as she held it. The send wasn't a thing
 
 For tonight, she'd done the only part that was hers to do. She'd walked into the room herself, made him spend something real to prove she wasn't bluffing, and walked back out of it the same way.
 
-[Beat 21]
+[Beat 22]
 She came up the stairs at a pace slower than the one she'd gone down at. Her legs had that specific looseness that came after a body decided the danger was over before the mind fully caught up — the same thing she'd have called adrenaline runoff if she'd been narrating it to anyone but herself.
 
 The corridor was empty. The door of 2D was shut and silent — whoever lived behind it gone out into the far side of his own night, the same as she'd been gone into hers. The worn latch, the sound she'd catalogued her first night here and every night since, made nothing now; there was no one on the floor to work it. She stood a moment in the hallway she'd learned by sound before she'd learned it by sight. The pump was cycling below the floor, on schedule, the sound she'd trusted before she trusted anything else in this building. The climate she'd fixed her first day held the air at a temperature that no longer registered as anything but ordinary.
 
-He'd stood in that doorway on her way out and given her four words, and she'd carried them down the stairs and into the room she'd walked in to end and back out again the same way. She'd done exactly what he told her to do with them. It had turned out to be a thing she could do.
+He'd stood in that doorway on her way out and given her three words, and she'd carried them down the stairs and into the room she'd walked in to end and back out again the same way. She'd done exactly what he told her to do with them. It had turned out to be a thing she could do.
 
 She went inside.
 

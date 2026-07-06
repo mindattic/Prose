@@ -57,7 +57,7 @@ public static class SyncSynopsisCli
             var fileText = File.Exists(filePath)
                 ? File.ReadAllText(filePath, new UTF8Encoding(false)).Trim()
                 : null;
-            var dbText = string.IsNullOrWhiteSpace(node.Synopsis) ? null : node.Synopsis!.Trim();
+            var dbText = string.IsNullOrWhiteSpace(node.Description) ? null : node.Description!.Trim();
 
             if (fileText == null && dbText == null) { noOp++; continue; }
             if (fileText == dbText) { noOp++; continue; }
@@ -65,7 +65,7 @@ public static class SyncSynopsisCli
             if (fileText != null && dbText == null)
             {
                 Console.WriteLine($"  [file→db]  {node.Title}");
-                if (!dryRun) { node.Synopsis = fileText; node.UpdatedAt = DateTime.UtcNow; }
+                if (!dryRun) { node.Description = fileText; node.UpdatedAt = DateTime.UtcNow; }
                 fileToDb++;
             }
             else if (fileText == null && dbText != null)
@@ -82,7 +82,7 @@ public static class SyncSynopsisCli
             {
                 // Both exist and differ — file wins.
                 Console.WriteLine($"  [conflict→file wins] {node.Title}");
-                if (!dryRun) { node.Synopsis = fileText!; node.UpdatedAt = DateTime.UtcNow; }
+                if (!dryRun) { node.Description = fileText!; node.UpdatedAt = DateTime.UtcNow; }
                 conflicts++;
             }
         }

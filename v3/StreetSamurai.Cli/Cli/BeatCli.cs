@@ -110,7 +110,7 @@ public static class BeatCli
         else
         {
             await using var db = await dbFactory.CreateDbContextAsync();
-            var sb = await db.NodeBeats.AsNoTracking().FirstOrDefaultAsync(x => x.BeatId == beatId);
+            var sb = await db.BeatNodes.AsNoTracking().FirstOrDefaultAsync(x => x.BeatId == beatId);
             if (sb == null) { Console.Error.WriteLine($"[beat delete] Beat {beatId} not found in any node."); return 1; }
             nodeId = sb.NodeId;
         }
@@ -149,7 +149,7 @@ public static class BeatCli
 
     private static async Task<int> MetaAsync(string[] args, IServiceProvider services)
     {
-        string? beatIdStr = null, title = null, kind = null, synopsis = null, subtext = null, tone = null, pace = null, role = null, sceneType = null;
+        string? beatIdStr = null, title = null, kind = null, description = null, subtext = null, tone = null, pace = null, role = null, sceneType = null;
         int act = 0;
         bool chapterStart = false;
         for (int i = 0; i < args.Length; i++)
@@ -159,7 +159,7 @@ public static class BeatCli
                 case "--id":            if (i + 1 < args.Length) beatIdStr = args[++i]; break;
                 case "--title":         if (i + 1 < args.Length) title = args[++i]; break;
                 case "--kind":          if (i + 1 < args.Length) kind = args[++i]; break;
-                case "--synopsis":      if (i + 1 < args.Length) synopsis = args[++i]; break;
+                case "--description":      if (i + 1 < args.Length) description = args[++i]; break;
                 case "--subtext":       if (i + 1 < args.Length) subtext = args[++i]; break;
                 case "--tone":          if (i + 1 < args.Length) tone = args[++i]; break;
                 case "--pace":          if (i + 1 < args.Length) pace = args[++i]; break;
@@ -173,7 +173,7 @@ public static class BeatCli
         if (!Guid.TryParse(beatIdStr, out var beatId)) { Console.Error.WriteLine("[beat meta] --id must be a GUID."); return 1; }
 
         var workbench = services.GetRequiredService<NodeWorkbenchService>();
-        var update = new NodeWorkbenchService.BeatMetadataUpdate(title, synopsis, subtext, tone, pace, role, act, sceneType, chapterStart, kind);
+        var update = new NodeWorkbenchService.BeatMetadataUpdate(title, description, subtext, tone, pace, role, act, sceneType, chapterStart, kind);
         await workbench.UpdateBeatMetadataAsync(beatId, update);
         Console.WriteLine($"[beat meta] Beat {beatId} metadata updated.");
         return 0;
@@ -196,7 +196,7 @@ public static class BeatCli
         if (beat == null) { Console.Error.WriteLine($"[beat show] Beat {beatId} not found."); return 1; }
 
         Console.WriteLine($"Id:           {beat.Id}");
-        Console.WriteLine($"Title:        {beat.BeatTitle ?? "(none)"}");
+        Console.WriteLine($"Title:        {beat.Title ?? "(none)"}");
         Console.WriteLine($"Kind:         {beat.Kind ?? "(none)"}");
         Console.WriteLine($"UpdatedAt:    {beat.UpdatedAt:u}");
         Console.WriteLine();
@@ -256,7 +256,7 @@ public static class BeatCli
         Console.Error.WriteLine("  insert  --node <slug|id> [--after <beatId>] [--text \"...\"]");
         Console.Error.WriteLine("  delete  --id <beatId> [--node <slug|id>]");
         Console.Error.WriteLine("  update  --id <beatId> --text \"...\"  (use '-' for stdin)");
-        Console.Error.WriteLine("  meta    --id <beatId> [--title \"...\"] [--kind \"...\"] [--synopsis \"...\"] [--tone \"...\"] [--pace \"...\"] [--role \"...\"] [--scene-type \"...\"] [--act N] [--chapter-start]");
+        Console.Error.WriteLine("  meta    --id <beatId> [--title \"...\"] [--kind \"...\"] [--description \"...\"] [--tone \"...\"] [--pace \"...\"] [--role \"...\"] [--scene-type \"...\"] [--act N] [--chapter-start]");
         Console.Error.WriteLine("  show    --id <beatId>");
         Console.Error.WriteLine("  list    --node <slug|id>");
         return 1;

@@ -1,4 +1,4 @@
-using System.Text;
+﻿using System.Text;
 using System.Text.Json;
 using System.Text.Json.Serialization;
 using Microsoft.EntityFrameworkCore;
@@ -248,14 +248,14 @@ public class BeatRebuildService
         await using var db = await dbFactory.CreateDbContextAsync(ct);
         await using var tx = await db.Database.BeginTransactionAsync(ct);
 
-        // Drop the node's existing beats. Beats are referenced only by NodeBeats
+        // Drop the node's existing beats. Beats are referenced only by BeatNodes
         // (verified by FK survey); remove links first, then the now-orphan Beat rows.
-        var oldBeatIds = await db.NodeBeats.Where(sb => sb.NodeId == nodeId)
+        var oldBeatIds = await db.BeatNodes.Where(sb => sb.NodeId == nodeId)
             .Select(sb => sb.BeatId).ToListAsync(ct);
-        await db.NodeBeats.Where(sb => sb.NodeId == nodeId).ExecuteDeleteAsync(ct);
+        await db.BeatNodes.Where(sb => sb.NodeId == nodeId).ExecuteDeleteAsync(ct);
         if (oldBeatIds.Count > 0)
         {
-            var stillReferenced = await db.NodeBeats
+            var stillReferenced = await db.BeatNodes
                 .Where(sb => oldBeatIds.Contains(sb.BeatId)).Select(sb => sb.BeatId).Distinct().ToListAsync(ct);
             var toDelete = oldBeatIds.Except(stillReferenced).ToList();
             await db.Beats.Where(b => toDelete.Contains(b.Id)).ExecuteDeleteAsync(ct);
@@ -280,7 +280,7 @@ public class BeatRebuildService
                 GapAfterMs = isLast ? null : GapFor(rb, text),
             };
             db.Beats.Add(beat);
-            db.NodeBeats.Add(new NodeBeat { NodeId = nodeId, BeatId = beat.Id, SortKey = sortKey });
+            db.BeatNodes.Add(new BeatNode { NodeId = nodeId, BeatId = beat.Id, SortKey = sortKey });
             sortKey += 100.0;
         }
 

@@ -1,4 +1,4 @@
-using System.Collections.Concurrent;
+﻿using System.Collections.Concurrent;
 using Microsoft.EntityFrameworkCore;
 using StreetSamurai.Core.Data;
 using StreetSamurai.Core.Data.Entities;
@@ -103,7 +103,7 @@ public class StoryAuditChapterAssemblyTests
         db.Nodes.Add(node);
         var beat = new Beat { Id = Guid.CreateVersion7(), Number = ++beatNumber, Text = beatText };
         db.Beats.Add(beat);
-        db.NodeBeats.Add(new NodeBeat { NodeId = id, BeatId = beat.Id, SortKey = 1, IsEnabled = true });
+        db.BeatNodes.Add(new BeatNode { NodeId = id, BeatId = beat.Id, SortKey = 1, IsEnabled = true });
         await db.SaveChangesAsync();
         return id;
     }
@@ -124,7 +124,7 @@ public class StoryAuditChapterAssemblyTests
         });
         var beat = new Beat { Id = Guid.CreateVersion7(), Number = ++beatNumber, Text = beatText };
         db.Beats.Add(beat);
-        db.NodeBeats.Add(new NodeBeat { NodeId = chId, BeatId = beat.Id, SortKey = 1, IsEnabled = true });
+        db.BeatNodes.Add(new BeatNode { NodeId = chId, BeatId = beat.Id, SortKey = 1, IsEnabled = true });
         await db.SaveChangesAsync();
     }
 

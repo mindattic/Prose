@@ -31,11 +31,11 @@ public static class MigrateSqlCli
         var charDropLegacy  = args.Contains("--drop-legacy-json");
         var charNoBackfill  = args.Contains("--no-backfill");
 
-        // Beat soft-delete: add IsEnabled to NodeBeats (and its history table).
-        var nodeBeatSoftDelete = args.Contains("--node-beat-soft-delete");
+        // Beat soft-delete: add IsEnabled to BeatNodes (and its history table).
+        var BeatNodesoftDelete = args.Contains("--node-beat-soft-delete");
 
         // Node + Beat version counter: add Version INT to Beats, Nodes (and history tables).
-        var nodeBeatVersion = args.Contains("--node-beat-version");
+        var BeatNodeVersion = args.Contains("--node-beat-version");
 
         // Entity grammar notes: add GrammarNote NVARCHAR(MAX) to Entities (and history table).
         var entityGrammarNote = args.Contains("--entity-grammar-note");
@@ -73,11 +73,11 @@ public static class MigrateSqlCli
         // entity-review / node-review / beat-review / beat-write.
         var distributedQueue = args.Contains("--distributed-queue");
 
-        if (!schema && !charRelational && !charDropLegacy && !nodeBeatSoftDelete && !nodeBeatVersion && !entityGrammarNote && !nodeCode && !entityReviews && !nodeBible && !markdownFiles && !nodeSpine && !emotionalExamination && !nodeDraftFlag && !reviewContradictions && !distributedQueue)
+        if (!schema && !charRelational && !charDropLegacy && !BeatNodesoftDelete && !BeatNodeVersion && !entityGrammarNote && !nodeCode && !entityReviews && !nodeBible && !markdownFiles && !nodeSpine && !emotionalExamination && !nodeDraftFlag && !reviewContradictions && !distributedQueue)
         {
             Console.WriteLine("Usage:");
             Console.WriteLine("  ss --migrate-sql --schema                    apply EF migrations + enable SYSTEM_VERSIONING");
-            Console.WriteLine("  ss --migrate-sql --node-beat-soft-delete   add IsEnabled column to NodeBeats/NodeBeats_History");
+            Console.WriteLine("  ss --migrate-sql --node-beat-soft-delete   add IsEnabled column to BeatNodes/BeatNodes_History");
             Console.WriteLine("  ss --migrate-sql --node-beat-version       add Version INT counter to Beats+Nodes (and history tables)");
             Console.WriteLine("  ss --migrate-sql --entity-grammar-note       add GrammarNote column to Entities (and history table)");
             Console.WriteLine("  ss --migrate-sql --story-code               add NodeCode NVARCHAR(20) to Nodes (unique per non-null value)");
@@ -194,7 +194,7 @@ public static class MigrateSqlCli
             failures += rD.Errors.Count > 0 ? 1 : 0;
         }
 
-        if (nodeBeatSoftDelete)
+        if (BeatNodesoftDelete)
         {
             using var scope = sp.CreateScope();
             var db = scope.ServiceProvider.GetRequiredService<StreetSamuraiDbContext>();
@@ -203,22 +203,22 @@ public static class MigrateSqlCli
             Console.WriteLine("[node-beat-soft-delete]");
             try
             {
-                // NodeBeats and NodeBeats_History are temporal tables.
+                // BeatNodes and BeatNodes_History are temporal tables.
                 // To add a column we must briefly disable system versioning,
                 // alter both tables, then re-enable it.
                 await db.Database.ExecuteSqlRawAsync("""
                     IF NOT EXISTS (SELECT 1 FROM sys.columns
-                                   WHERE object_id = OBJECT_ID('NodeBeats') AND name = 'IsEnabled')
+                                   WHERE object_id = OBJECT_ID('BeatNodes') AND name = 'IsEnabled')
                     BEGIN
-                        ALTER TABLE [dbo].[NodeBeats] SET (SYSTEM_VERSIONING = OFF);
-                        ALTER TABLE [dbo].[NodeBeats]         ADD [IsEnabled] bit NOT NULL DEFAULT 1;
-                        ALTER TABLE [dbo].[NodeBeats_History] ADD [IsEnabled] bit NOT NULL DEFAULT 1;
-                        ALTER TABLE [dbo].[NodeBeats]
-                            SET (SYSTEM_VERSIONING = ON (HISTORY_TABLE = [dbo].[NodeBeats_History],
+                        ALTER TABLE [dbo].[BeatNodes] SET (SYSTEM_VERSIONING = OFF);
+                        ALTER TABLE [dbo].[BeatNodes]         ADD [IsEnabled] bit NOT NULL DEFAULT 1;
+                        ALTER TABLE [dbo].[BeatNodes_History] ADD [IsEnabled] bit NOT NULL DEFAULT 1;
+                        ALTER TABLE [dbo].[BeatNodes]
+                            SET (SYSTEM_VERSIONING = ON (HISTORY_TABLE = [dbo].[BeatNodes_History],
                                                          DATA_CONSISTENCY_CHECK = OFF));
                     END;
                     """);
-                Console.WriteLine("  ✔ IsEnabled column added to NodeBeats (+ history table).");
+                Console.WriteLine("  ✔ IsEnabled column added to BeatNodes (+ history table).");
             }
             catch (Exception ex)
             {
@@ -227,7 +227,7 @@ public static class MigrateSqlCli
             }
         }
 
-        if (nodeBeatVersion)
+        if (BeatNodeVersion)
         {
             using var scope = sp.CreateScope();
             var db = scope.ServiceProvider.GetRequiredService<StreetSamuraiDbContext>();

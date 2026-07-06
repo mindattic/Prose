@@ -1,4 +1,4 @@
-using Microsoft.Data.Sqlite;
+﻿using Microsoft.Data.Sqlite;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Logging.Abstractions;
 using StreetSamurai.Core.Data;
@@ -67,8 +67,8 @@ public class TimelineConsistencyServiceTests
         });
         db.Beats.Add(new Beat { Id = beatAId, Number = 1, Text = "First beat." });
         db.Beats.Add(new Beat { Id = beatBId, Number = 2, Text = "Second beat." });
-        db.NodeBeats.Add(new NodeBeat { NodeId = nodeId, BeatId = beatAId, SortKey = 1.0, IsEnabled = true });
-        db.NodeBeats.Add(new NodeBeat { NodeId = nodeId, BeatId = beatBId, SortKey = 2.0, IsEnabled = true });
+        db.BeatNodes.Add(new BeatNode { NodeId = nodeId, BeatId = beatAId, SortKey = 1.0, IsEnabled = true });
+        db.BeatNodes.Add(new BeatNode { NodeId = nodeId, BeatId = beatBId, SortKey = 2.0, IsEnabled = true });
 
         await db.SaveChangesAsync();
         return (nodeId, beatAId, beatBId);

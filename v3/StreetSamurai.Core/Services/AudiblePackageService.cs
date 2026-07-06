@@ -142,8 +142,8 @@ public class AudiblePackageService
             {
                 if (hadContent) sb.AppendLine();   // blank line before new chapter
                 chapterNo++;
-                var heading = !string.IsNullOrWhiteSpace(beat.BeatTitle)
-                    ? beat.BeatTitle!.Trim()
+                var heading = !string.IsNullOrWhiteSpace(beat.Title)
+                    ? beat.Title!.Trim()
                     : $"Chapter {chapterNo}";
                 sb.AppendLine(heading);
                 sb.AppendLine();

@@ -176,10 +176,10 @@ public static class ExpandBeatCli
                 continue;
             }
 
-            var goal = beat.Synopsis ?? beat.BeatTitle ?? $"Beat #{beat.Number}";
+            var goal = beat.Description ?? beat.Title ?? $"Beat #{beat.Number}";
             if (string.IsNullOrWhiteSpace(goal))
             {
-                Console.WriteLine($"[expand-beat]   Beat #{beat.Number}: no synopsis — skipped.");
+                Console.WriteLine($"[expand-beat]   Beat #{beat.Number}: no description — skipped.");
                 skipped++;
                 continue;
             }

@@ -12,7 +12,7 @@ namespace StreetSamurai.Cli;
 /// <summary>
 /// <c>ss --migrate-legacy-book-chapter</c> — one-shot cleanup of the 44 legacy
 /// <c>book</c> and <c>chapter</c> entity rows whose content already lives in the
-/// relational <c>Nodes</c> + <c>Beats</c> + <c>NodeBeats</c> model.
+/// relational <c>Nodes</c> + <c>Beats</c> + <c>BeatNodes</c> model.
 ///
 /// Three dispositions:
 ///   JUNK     — inactive "Untitled Book" blobs → DELETE Entity + Records row.
@@ -226,7 +226,7 @@ public static class MigrateLegacyBookChapterCli
 
     /// <summary>
     /// Converts a chapter entity's blob (beats array or HTML) into a new
-    /// Node + Beat + NodeBeat set. Returns (slug, beatCount) on success,
+    /// Node + Beat + BeatNode set. Returns (slug, beatCount) on success,
     /// (null, 0) if the entity is missing or has no content to convert.
     /// </summary>
     private static async Task<(string? Slug, int BeatCount)> ConvertChapterToNode(
@@ -328,12 +328,12 @@ public static class MigrateLegacyBookChapterCli
         node.UniverseId = GlmzUniverseId;
         node.Slug       = slug;
         node.Title      = title;
-        node.Synopsis   = synopsis;
+        node.Description = synopsis;
         node.Status     = "draft";
         node.SortKey    = 9999.0;
         db.Nodes.Add(node);
 
-        // ── Create Beats + NodeBeats ────────────────────────────────────────
+        // ── Create Beats + BeatNodes ────────────────────────────────────────
         double sortKey = 100.0;
         foreach (var (bTitle, text, bSyn, bAct, bRole, bScene, _) in beatsToInsert.OrderBy(x => x.Idx))
         {
@@ -344,13 +344,13 @@ public static class MigrateLegacyBookChapterCli
                 Number        = nextNumber++,
                 Text          = text,
                 TextHash      = ComputeTextHash(text),
-                BeatTitle     = string.IsNullOrEmpty(bTitle) ? null : bTitle,
-                Synopsis      = bSyn,
+                Title         = string.IsNullOrEmpty(bTitle) ? null : bTitle,
+                Description   = bSyn,
                 Act           = bAct,
                 StructureRole = bRole,
                 SceneType     = bScene,
             });
-            db.NodeBeats.Add(new NodeBeat
+            db.BeatNodes.Add(new BeatNode
             {
                 NodeId = newNodeId,
                 BeatId   = beatId,

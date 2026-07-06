@@ -1,4 +1,4 @@
-using Microsoft.EntityFrameworkCore;
+﻿using Microsoft.EntityFrameworkCore;
 using StreetSamurai.Core.Data;
 
 namespace StreetSamurai.Core.Services;
@@ -93,8 +93,8 @@ public class NarrativeChartService(IDbContextFactory<StreetSamuraiDbContext> dbF
             .FirstOrDefaultAsync(ct)
             ?? throw new ArgumentException($"Node {nodeId} not found.");
 
-        // Load beats for this node in story order (via NodeBeat join to Beat)
-        var beatRows = await db.NodeBeats
+        // Load beats for this node in story order (via BeatNode join to Beat)
+        var beatRows = await db.BeatNodes
             .AsNoTracking()
             .Where(nb => nb.NodeId == nodeId && nb.IsEnabled)
             .OrderBy(nb => nb.SortKey)

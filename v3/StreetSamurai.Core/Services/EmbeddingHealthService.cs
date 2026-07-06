@@ -1,4 +1,4 @@
-using Microsoft.Data.SqlClient;
+﻿using Microsoft.Data.SqlClient;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Logging;
 using StreetSamurai.Core.Data;
@@ -17,12 +17,12 @@ public sealed record AdjacentBeatPair(Guid BeatIdA, Guid BeatIdB, double Similar
 ///
 /// Note on DISTINCT: SQL Server 2025's VECTOR type is not comparable, so DISTINCT
 /// cannot be applied to columns containing it. We join without DISTINCT; the
-/// occasional beat appearing in more than one NodeBeat row is a harmless edge case
+/// occasional beat appearing in more than one BeatNode row is a harmless edge case
 /// that slightly over-weights the duplicate in the cross-join average.
 /// </summary>
 public class EmbeddingHealthService
 {
-    private const string ScopeNodeBeat = "nodebeat";
+    private const string ScopeBeatNode = "BeatNode";
     private const double MonotonousThreshold = 0.94;
     private const double JarringThreshold    = 0.25;
 
@@ -49,7 +49,7 @@ public class EmbeddingHealthService
         StoryBeats AS (
             SELECT pe.ScopeId, pe.Vector
             FROM dbo.ProseEmbeddings pe
-            JOIN dbo.NodeBeats nb ON nb.BeatId = pe.ScopeId AND nb.IsEnabled = 1
+            JOIN dbo.BeatNodes nb ON nb.BeatId = pe.ScopeId AND nb.IsEnabled = 1
             WHERE pe.ScopeKind = @p_scope
               AND nb.NodeId IN (SELECT Id FROM SubtreeNodes)
         )
@@ -86,7 +86,7 @@ public class EmbeddingHealthService
 
             var rows = await db.Database.SqlQueryRaw<KnnRow>(sql,
                     new SqlParameter("@p_k",      Math.Max(1, k)),
-                    new SqlParameter("@p_scope",  ScopeNodeBeat),
+                    new SqlParameter("@p_scope",  ScopeBeatNode),
                     new SqlParameter("@p_beatId", beatId))
                 .ToListAsync(ct);
 
@@ -133,7 +133,7 @@ public class EmbeddingHealthService
 
             var rows = await db.Database.SqlQueryRaw<OutlierRow>(sql,
                     new SqlParameter("@p_root",  rootNodeId),
-                    new SqlParameter("@p_scope", ScopeNodeBeat))
+                    new SqlParameter("@p_scope", ScopeBeatNode))
                 .ToListAsync(ct);
 
             if (rows.Count < 3) return Array.Empty<BeatOutlierResult>();
@@ -190,7 +190,7 @@ public class EmbeddingHealthService
 
             var rows = await db.Database.SqlQueryRaw<DriftRow>(sql,
                     new SqlParameter("@p_root",  rootNodeId),
-                    new SqlParameter("@p_scope", ScopeNodeBeat))
+                    new SqlParameter("@p_scope", ScopeBeatNode))
                 .ToListAsync(ct);
 
             if (rows.Count == 0 || rows.All(r => r.TopBeatCount < 4))
@@ -235,7 +235,7 @@ public class EmbeddingHealthService
                 valueRows.Add($"(@a{i}, @b{i}, {i})");
             }
 
-            pParams.Add(new SqlParameter("@p_scope", ScopeNodeBeat));
+            pParams.Add(new SqlParameter("@p_scope", ScopeBeatNode));
 
             var sql = $"""
                 SELECT

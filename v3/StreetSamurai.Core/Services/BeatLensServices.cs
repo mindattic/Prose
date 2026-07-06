@@ -1,4 +1,4 @@
-using System.Text;
+﻿using System.Text;
 using System.Text.Json;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Logging;
@@ -75,7 +75,7 @@ public abstract class BeatLensService
         {
             var rows = await (
                 from s in db.Nodes.AsNoTracking()
-                join sb in db.NodeBeats.AsNoTracking() on s.Id equals sb.NodeId
+                join sb in db.BeatNodes.AsNoTracking() on s.Id equals sb.NodeId
                 join b in db.Beats.AsNoTracking() on sb.BeatId equals b.Id
                 where s.ParentNodeId == nodeId && s is ChapterNode && !s.IsWIP && sb.IsEnabled
                 orderby s.SortKey, sb.SortKey
@@ -88,7 +88,7 @@ public abstract class BeatLensService
         else
         {
             var rows = await (
-                from sb in db.NodeBeats.AsNoTracking()
+                from sb in db.BeatNodes.AsNoTracking()
                 join b in db.Beats.AsNoTracking() on sb.BeatId equals b.Id
                 where sb.NodeId == nodeId
                 orderby sb.SortKey

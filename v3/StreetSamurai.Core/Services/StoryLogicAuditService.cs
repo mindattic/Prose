@@ -1,4 +1,4 @@
-using Microsoft.EntityFrameworkCore;
+﻿using Microsoft.EntityFrameworkCore;
 using System.Text.Json;
 using StreetSamurai.Core.Data;
 using StreetSamurai.Core.Data.Entities;
@@ -36,23 +36,23 @@ public class StoryLogicAuditService(
         // Respect the same book/chapter hierarchy StoryAuditService uses.
         var childChapters = await db.Nodes.AsNoTracking()
             .Where(s => s.ParentNodeId == nodeId && s is ChapterNode && !s.IsWIP)
-            .Include(s => s.NodeBeats).ThenInclude(sb => sb.Beat)
+            .Include(s => s.BeatNodes).ThenInclude(sb => sb.Beat)
             .OrderBy(s => s.SortKey)
             .ToListAsync(ct);
 
         var nodeWithBeats = await db.Nodes.AsNoTracking()
-            .Include(s => s.NodeBeats).ThenInclude(sb => sb.Beat)
+            .Include(s => s.BeatNodes).ThenInclude(sb => sb.Beat)
             .FirstOrDefaultAsync(s => s.Id == nodeId, ct);
 
         var indexedBeats = childChapters.Count > 0
             ? childChapters
-                .SelectMany(ch => ch.NodeBeats
+                .SelectMany(ch => ch.BeatNodes
                     .Where(sb => sb.IsEnabled)
                     .OrderBy(sb => sb.SortKey)
                     .Select(sb => sb.Beat!))
                 .Where(b => !string.IsNullOrWhiteSpace(b.Text))
                 .ToList()
-            : (nodeWithBeats?.NodeBeats
+            : (nodeWithBeats?.BeatNodes
                 .Where(sb => sb.IsEnabled)
                 .OrderBy(sb => sb.SortKey)
                 .Select(sb => sb.Beat!)
@@ -88,8 +88,8 @@ public class StoryLogicAuditService(
         string.Join("\n\n", beats.Select((b, i) =>
         {
             var header = $"[Beat {i + 1}]";
-            if (!string.IsNullOrWhiteSpace(b.Synopsis))
-                header += $" {b.Synopsis}";
+            if (!string.IsNullOrWhiteSpace(b.Description))
+                header += $" {b.Description}";
             return $"{header}\n{b.Text.Trim()}";
         }));
 

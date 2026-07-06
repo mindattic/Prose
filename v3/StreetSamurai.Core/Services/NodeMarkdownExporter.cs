@@ -50,9 +50,9 @@ public class NodeMarkdownExporter
         var md = new StringBuilder();
         md.AppendLine($"# {node.Title}");
         md.AppendLine();
-        if (!string.IsNullOrWhiteSpace(node.Synopsis))
+        if (!string.IsNullOrWhiteSpace(node.Description))
         {
-            md.AppendLine($"_{node.Synopsis.Trim()}_");
+            md.AppendLine($"_{node.Description.Trim()}_");
             md.AppendLine();
         }
 
@@ -65,9 +65,9 @@ public class NodeMarkdownExporter
         foreach (var ob in ordered)
         {
             var beat = ob.Beat;
-            if (beat.IsChapterStart && !string.IsNullOrWhiteSpace(beat.BeatTitle))
+            if (beat.IsChapterStart && !string.IsNullOrWhiteSpace(beat.Title))
             {
-                md.AppendLine($"## {beat.BeatTitle.Trim()}");
+                md.AppendLine($"## {beat.Title.Trim()}");
                 md.AppendLine();
             }
             var text = (beat.Text ?? "").Trim();
@@ -119,7 +119,7 @@ public class NodeMarkdownExporter
             if (text.Length == 0) continue;
             n++;
             var chStart = ob.Beat.IsChapterStart;
-            rendered.Add((n, text, chStart, chStart ? ob.Beat.BeatTitle?.Trim() : null));
+            rendered.Add((n, text, chStart, chStart ? ob.Beat.Title?.Trim() : null));
             proseForHash.Append(text).Append('\n');
         }
         var contentHash = Sha256Hex(proseForHash.ToString().Trim());

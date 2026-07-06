@@ -71,7 +71,7 @@ public static class PrintNodeCli
             return 1;
         }
 
-        var beats = await db.NodeBeats
+        var beats = await db.BeatNodes
             .AsNoTracking()
             .Where(sb => sb.NodeId == node.Id && sb.IsEnabled)
             .OrderBy(sb => sb.SortKey)

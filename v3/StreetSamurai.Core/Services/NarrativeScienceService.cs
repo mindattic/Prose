@@ -1,4 +1,4 @@
-using System.Text.Json;
+﻿using System.Text.Json;
 using System.Text.Json.Serialization;
 using Microsoft.EntityFrameworkCore;
 using StreetSamurai.Core.Data;
@@ -205,18 +205,18 @@ public class NarrativeScienceService(
             ?? throw new InvalidOperationException($"Node {nodeId} not found.");
 
         var beats = await (
-            from sb in db.NodeBeats
+            from sb in db.BeatNodes
             join b in db.Beats on sb.BeatId equals b.Id
             where sb.NodeId == nodeId
             orderby sb.SortKey
-            select new { b.Number, Title = b.BeatTitle ?? "", Synopsis = b.Synopsis ?? "", b.Text }
+            select new { b.Number, Title = b.Title ?? "", Description = b.Description ?? "", b.Text }
         ).ToListAsync(ct);
 
         if (beats.Count == 0)
             return new FiveActMap { NodeSlug = node.Slug ?? "", Error = "No beats found." };
 
         var beatList = string.Join("\n", beats.Select(b =>
-            $"Beat {b.Number}: {b.Title} — {(string.IsNullOrWhiteSpace(b.Synopsis) ? "(no synopsis)" : b.Synopsis)}"));
+            $"Beat {b.Number}: {b.Title} — {(string.IsNullOrWhiteSpace(b.Description) ? "(no description)" : b.Description)}"));
 
         var system = """
             You are a narrative-science analyst. Map the provided story beats to Will Storr's

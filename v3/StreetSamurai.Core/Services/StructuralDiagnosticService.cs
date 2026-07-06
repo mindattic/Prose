@@ -1,4 +1,4 @@
-using System.Text.Json;
+﻿using System.Text.Json;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Logging;
 using StreetSamurai.Core.Data;
@@ -82,7 +82,7 @@ public class StructuralDiagnosticService
             ?? throw new InvalidOperationException($"Node {nodeId} not found.");
 
         var beats = await (
-            from sb in db.NodeBeats.AsNoTracking()
+            from sb in db.BeatNodes.AsNoTracking()
             join b in db.Beats.AsNoTracking() on sb.BeatId equals b.Id
             where sb.NodeId == nodeId
             orderby sb.SortKey

@@ -1,4 +1,4 @@
-using Microsoft.EntityFrameworkCore;
+﻿using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Logging.Abstractions;
 using StreetSamurai.Core.Data;
 using StreetSamurai.Core.Data.Entities;
@@ -228,7 +228,7 @@ public class NodeWorkbenchServiceTests
         // Beat row survives (soft-delete preserves history).
         Assert.That(await db.Beats.AnyAsync(x => x.Id == b.Id), Is.True, "Beat row must survive soft-delete");
         // Junction survives but IsEnabled = false.
-        var junction = await db.NodeBeats.FirstOrDefaultAsync(sb => sb.BeatId == b.Id && sb.NodeId == s.Id);
+        var junction = await db.BeatNodes.FirstOrDefaultAsync(sb => sb.BeatId == b.Id && sb.NodeId == s.Id);
         Assert.That(junction, Is.Not.Null);
         Assert.That(junction!.IsEnabled, Is.False);
         // Excluded from default ordered list.
@@ -261,7 +261,7 @@ public class NodeWorkbenchServiceTests
         // Cross-link the beat into s2.
         await using (var db = await dbFactory.CreateDbContextAsync())
         {
-            db.NodeBeats.Add(new NodeBeat { NodeId = s2.Id, BeatId = b.Id, SortKey = 100 });
+            db.BeatNodes.Add(new BeatNode { NodeId = s2.Id, BeatId = b.Id, SortKey = 100 });
             await db.SaveChangesAsync();
         }
 
@@ -270,8 +270,8 @@ public class NodeWorkbenchServiceTests
         await using var db2 = await dbFactory.CreateDbContextAsync();
         Assert.That(await db2.Beats.AnyAsync(x => x.Id == b.Id), Is.True, "Beat row must survive in both cases");
         // s1's junction is disabled; s2's junction is untouched (IsEnabled=true).
-        var j1 = await db2.NodeBeats.FirstOrDefaultAsync(sb => sb.BeatId == b.Id && sb.NodeId == s1.Id);
-        var j2 = await db2.NodeBeats.FirstOrDefaultAsync(sb => sb.BeatId == b.Id && sb.NodeId == s2.Id);
+        var j1 = await db2.BeatNodes.FirstOrDefaultAsync(sb => sb.BeatId == b.Id && sb.NodeId == s1.Id);
+        var j2 = await db2.BeatNodes.FirstOrDefaultAsync(sb => sb.BeatId == b.Id && sb.NodeId == s2.Id);
         Assert.That(j1!.IsEnabled, Is.False, "s1 junction disabled");
         Assert.That(j2!.IsEnabled, Is.True, "s2 junction unaffected");
         // Beat still visible in s2.
@@ -524,8 +524,8 @@ public class NodeWorkbenchServiceTests
         var b = await svc.InsertBeatAsync(s.Id, null, "Chapter opener prose.");
 
         await svc.UpdateBeatMetadataAsync(b.Id, new NodeWorkbenchService.BeatMetadataUpdate(
-            BeatTitle:      "1. The thing that happened",
-            Synopsis:       null,
+            Title:      "1. The thing that happened",
+            Description:       null,
             Subtext:        null,
             EmotionalTone:  null,
             PaceHint:       null,
@@ -538,7 +538,7 @@ public class NodeWorkbenchServiceTests
         await using var db = await dbFactory.CreateDbContextAsync();
         var fresh = await db.Beats.AsNoTracking().FirstAsync(x => x.Id == b.Id);
         Assert.That(fresh.IsChapterStart, Is.True);
-        Assert.That(fresh.BeatTitle, Is.EqualTo("1. The thing that happened"));
+        Assert.That(fresh.Title, Is.EqualTo("1. The thing that happened"));
         Assert.That(fresh.Kind, Is.EqualTo("prose"));
     }
 
@@ -549,8 +549,8 @@ public class NodeWorkbenchServiceTests
         var b = await svc.InsertBeatAsync(s.Id, null, "Quotation text.");
 
         await svc.UpdateBeatMetadataAsync(b.Id, new NodeWorkbenchService.BeatMetadataUpdate(
-            BeatTitle:      "Bill Coolman",
-            Synopsis:       null,
+            Title:      "Bill Coolman",
+            Description:       null,
             Subtext:        null,
             EmotionalTone:  null,
             PaceHint:       null,
@@ -579,8 +579,8 @@ public class NodeWorkbenchServiceTests
         }
 
         await svc.UpdateBeatMetadataAsync(b.Id, new NodeWorkbenchService.BeatMetadataUpdate(
-            BeatTitle:      null,
-            Synopsis:       null,
+            Title:      null,
+            Description:       null,
             Subtext:        null,
             EmotionalTone:  null,
             PaceHint:       null,
