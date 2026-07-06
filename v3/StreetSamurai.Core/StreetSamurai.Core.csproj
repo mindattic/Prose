@@ -28,13 +28,7 @@
     <PackageReference Include="Microsoft.Extensions.Http" Version="10.0.9" />
     <PackageReference Include="MindAttic.Legion" Version="14.0.0" />
     <PackageReference Include="MindAttic.Vault" Version="1.0.0" />
-    <!-- Prod uses this clean published package (the dev auth bypass is compiled out — MA_DEV_AUTH
-         undefined in the Release pack). In DEBUG only, we ALSO reference the lib as source below;
-         MSBuild prefers the project output over the same-identity package, so a dev/Debug build picks
-         up the lib's Debug build (MA_DEV_AUTH defined → localhost dev-login bypass present). The bypass
-         therefore can never exist in a release build, and Release restore is unchanged. -->
     <PackageReference Include="MindAttic.Authentication" Version="2.0.0" />
-    <ProjectReference Include="..\..\..\MindAttic.Authentication\src\MindAttic.Authentication\MindAttic.Authentication.csproj" Condition="'$(Configuration)' == 'Debug'" />
     <PackageReference Include="QuestPDF" Version="2026.5.0" />
     <PackageReference Include="QuikGraph" Version="2.5.0" />
     <PackageReference Include="QuikGraph.Serialization" Version="2.5.0" />
