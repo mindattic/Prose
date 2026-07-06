@@ -53,20 +53,9 @@
             @if (menuOpen)
             {
                 <div class="ab-menu-panel">
-                    <div class="ab-menu-user">
-                        <i class="bi bi-person-circle ab-menu-user-avatar"></i>
-                        <div class="ab-menu-user-meta">
-                            <div class="ab-menu-user-name">@Access.CurrentUserName</div>
-                            <div class="ab-menu-user-role">@Access.CurrentUserRole</div>
-                        </div>
-                    </div>
-                    <div class="ab-menu-divider"></div>
-
                     <button class="ab-menu-item" @onclick="OpenSettingsTab">
                         <i class="bi bi-gear"></i><span>Settings</span>
                     </button>
-
-                    <div class="ab-menu-divider"></div>
                     <form method="post" action="/_ma-auth/logout" class="ab-menu-logout">
                         <Microsoft.AspNetCore.Components.Forms.AntiforgeryToken />
                         <button type="submit" class="ab-menu-item ab-menu-logout-btn">
