@@ -327,20 +327,12 @@ else
             </div>
 
             <div class="d-flex gap-2 flex-wrap mt-2 align-items-center">
-                <div class="dropdown">
-                    <button class="btn btn-sm btn-outline-success dropdown-toggle" type="button" data-bs-toggle="dropdown"
-                            disabled="@(publishing || exportBusy)">
-                        @if (publishing || exportBusy) { <span class="spinner-border spinner-border-sm me-1"></span> }
-                        else { <i class="bi bi-download me-1"></i> }
-                        Export
-                    </button>
-                    <ul class="dropdown-menu dropdown-menu-dark">
-                        <li><button class="dropdown-item" @onclick="PublishDocxAsync"><i class="bi bi-file-earmark-word me-2"></i>Word (.docx)</button></li>
-                        <li><button class="dropdown-item" @onclick="PublishEpubAsync"><i class="bi bi-book me-2"></i>EPUB (.epub)</button></li>
-                        <li><button class="dropdown-item" @onclick="PublishPdfAsync"><i class="bi bi-file-pdf me-2"></i>PDF (.pdf)</button></li>
-                        <li><button class="dropdown-item" @onclick="PublishAudioTxtAsync"><i class="bi bi-file-earmark-text me-2"></i>Plain text (.txt)</button></li>
-                    </ul>
-                </div>
+                <button class="btn btn-sm btn-outline-success" @onclick="ExportAllAsync"
+                        disabled="@(publishing || exportBusy)">
+                    @if (publishing || exportBusy) { <span class="spinner-border spinner-border-sm me-1"></span> }
+                    else { <i class="bi bi-download me-1"></i> }
+                    Export
+                </button>
                 <div class="ms-auto">
                     <a href="/nodes" class="btn btn-sm btn-link text-muted">
                         <i class="bi bi-arrow-left me-1"></i>All nodes
@@ -1986,6 +1978,23 @@ else
             Toast.Success(tag, $"{label} published — saved to your Downloads.");
         }
         catch (Exception ex) { Toast.Error($"{tag}-FAIL", ex.Message); }
+        finally { exportBusy = false; await InvokeAsync(StateHasChanged); }
+    }
+
+    private async Task ExportAllAsync()
+    {
+        if (node == null || publishing || exportBusy) return;
+        exportBusy = true;
+        await InvokeAsync(StateHasChanged);
+        try
+        {
+            await Docx.ExportNodeAsync(node.Id);
+            await Manuscript.ExportEpubAsync(node.Id);
+            await Manuscript.ExportPdfAsync(node.Id);
+            await Manuscript.ExportAudioTxtAsync(node.Id);
+            Toast.Success("EXPORT", "All formats exported — saved to your Downloads.");
+        }
+        catch (Exception ex) { Toast.Error("EXPORT-FAIL", ex.Message); }
         finally { exportBusy = false; await InvokeAsync(StateHasChanged); }
     }
 
