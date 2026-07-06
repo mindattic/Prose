@@ -19,6 +19,11 @@ public class NodeReviewBeatScore
     /// <summary>1-5: 1 = hurt the story, 3 = fine, 5 = highlight.</summary>
     public int Score { get; set; }
 
+    /// <summary>SHA-256 hex of the beat's prose at review time (<see cref="Beat.TextHash"/>
+    /// snapshotted during the run). Delta review uses this to skip re-scoring beats whose
+    /// text hasn't changed since this row was written. Null on legacy rows.</summary>
+    public string? BeatTextHash { get; set; }
+
     /// <summary>Short gripes about this beat (one per line). Append-only — never cleared.</summary>
     public string? Gripes { get; set; }
 

@@ -1,3 +1,4 @@
+using System.Security.Cryptography;
 using System.Text;
 using System.Text.Json;
 using System.Text.RegularExpressions;
@@ -390,6 +391,7 @@ public class NodeReviewService
 
         var export = await exporter.ExportAsync(nodeId, numberBeats: true, ct);
         var beatCount = export.BeatCount;
+        var beatHashes = await LoadBeatHashesAsync(nodeId, ct);
         // "Group"-prefixed so the headline node Score (RecomputeScores) counts these ballots.
         var groupName = $"Group Sample {export.ContentHash[..6]}";
         var personas = SampleEnrichedPersonas(ballotCount);
@@ -423,7 +425,7 @@ public class NodeReviewService
                 await sem.WaitAsync(ct);
                 try
                 {
-                    var r = await BallotOnceAsync(nodeId, export, persona, provider, route, ct, lessonsBlock, cheapModels);
+                    var r = await BallotOnceAsync(nodeId, export, persona, provider, route, ct, lessonsBlock, cheapModels, beatHashes);
                     if (r != null) { r.FocusGroupName = groupName; bag.Add(r); }
                     else Interlocked.Increment(ref failed);
                 }
@@ -573,6 +575,7 @@ public class NodeReviewService
             return new SampledRunResult(0, 0, 0, 0, 0, 0, 0, 0, seg.ContentHash, "_No beats to review._", "");
         var totalBeatCount = seg.BeatCount;
         var groupName = $"Group Seg {seg.ContentHash[..6]}";
+        var beatHashes = await LoadBeatHashesAsync(nodeId, ct);
 
         string? nodeSlug = null;
         if (proseLessons != null)
@@ -606,7 +609,7 @@ public class NodeReviewService
                     await sem.WaitAsync(ct);
                     try
                     {
-                        var r = await SegmentBallotOnceAsync(nodeId, seg.Title, s, totalBeatCount, persona, provider, route, ct, lessonsBlock);
+                        var r = await SegmentBallotOnceAsync(nodeId, seg.Title, s, totalBeatCount, persona, provider, route, ct, lessonsBlock, beatHashes);
                         if (r != null) { r.FocusGroupName = groupName; r.ContentHash = seg.ContentHash; localBag.Add(r); }
                         else Interlocked.Increment(ref failed);
                     }
@@ -747,7 +750,8 @@ Return ONLY a JSON object and nothing else:
 
     private async Task<NodeReview?> SegmentBallotOnceAsync(
         Guid nodeId, string title, NodeMarkdownExporter.NodeSegment segment, int totalBeatCount,
-        Persona persona, string provider, ReviewRoute route, CancellationToken ct, string? lessonsBlock)
+        Persona persona, string provider, ReviewRoute route, CancellationToken ct, string? lessonsBlock,
+        IReadOnlyDictionary<int, string>? beatHashes = null)
     {
         var key = route.KeyFor(provider);
         if (string.IsNullOrWhiteSpace(key)) { log.LogWarning("No API key for provider {Provider}", provider); return null; }
@@ -782,7 +786,13 @@ Return ONLY a JSON object and nothing else:
         };
         if (beatScores != null)
             foreach (var kv in beatScores)
-                review.BeatScores.Add(new NodeReviewBeatScore { ReviewId = review.Id, BeatNumber = kv.Key, Score = kv.Value });
+                review.BeatScores.Add(new NodeReviewBeatScore
+                {
+                    ReviewId = review.Id,
+                    BeatNumber = kv.Key,
+                    Score = kv.Value,
+                    BeatTextHash = beatHashes?.GetValueOrDefault(kv.Key),
+                });
         return review;
     }
 
@@ -1078,6 +1088,11 @@ Return ONLY a JSON object, nothing else:
     public sealed record StudyRunResult(int Requested, int Saved, int Failed, int Clusters,
         double MeanScore, double MeanFlow, string ContentHash, string ReportMarkdown);
 
+    /// <summary>Result of a delta (changed-beats-only) review pass.</summary>
+    public sealed record DeltaRunResult(
+        int Requested, int Saved, int Failed,
+        int ChangedBeats, int TotalBeats, string Summary);
+
     /// <summary>Segment study: one large INDEPENDENT panel (disjoint from Group A)
     /// reads the node and micro-scores every beat; reviewers are then clustered
     /// into emergent audiences and the per-beat scores aggregated into a
@@ -1095,6 +1110,7 @@ Return ONLY a JSON object, nothing else:
 
         var export = await exporter.ExportAsync(nodeId, numberBeats: true, ct);
         var beatCount = export.BeatCount;
+        var beatHashes = await LoadBeatHashesAsync(nodeId, ct);
 
         // Fresh panel, disjoint from Group A (fresh eyes, no anchoring).
         var (_, groupAIds) = await GetGroupAsync("Group A", ct);
@@ -1113,7 +1129,7 @@ Return ONLY a JSON object, nothing else:
                 await sem.WaitAsync(ct);
                 try
                 {
-                    var r = await ReviewOnceAsync(nodeId, export, persona, provider, studyMode: true, ct);
+                    var r = await ReviewOnceAsync(nodeId, export, persona, provider, studyMode: true, ct, beatHashes);
                     if (r != null && r.BeatScores.Count > 0) reviews.Add(r);
                     else Interlocked.Increment(ref failed);
                 }
@@ -1206,7 +1222,7 @@ Return ONLY a JSON object, nothing else:
 
     private async Task<NodeReview?> ReviewOnceAsync(
         Guid nodeId, NodeMarkdownExporter.NodeExport export, Persona persona, string provider,
-        bool studyMode, CancellationToken ct)
+        bool studyMode, CancellationToken ct, IReadOnlyDictionary<int, string>? beatHashes = null)
     {
         var key = ResolveKey(provider);
         if (string.IsNullOrWhiteSpace(key)) { log.LogWarning("No API key for provider {Provider}", provider); return null; }
@@ -1261,7 +1277,13 @@ Return ONLY a JSON object, nothing else:
         };
         if (beatScores != null)
             foreach (var kv in beatScores)
-                review.BeatScores.Add(new NodeReviewBeatScore { ReviewId = review.Id, BeatNumber = kv.Key, Score = kv.Value });
+                review.BeatScores.Add(new NodeReviewBeatScore
+                {
+                    ReviewId = review.Id,
+                    BeatNumber = kv.Key,
+                    Score = kv.Value,
+                    BeatTextHash = beatHashes?.GetValueOrDefault(kv.Key),
+                });
         return review;
     }
 
@@ -1293,7 +1315,7 @@ Return ONLY a JSON object, nothing else:
 
     private async Task<NodeReview?> BallotOnceAsync(
         Guid nodeId, NodeMarkdownExporter.NodeExport export, Persona persona, string provider, ReviewRoute route, CancellationToken ct,
-        string? lessonsBlock = null, bool cheapModels = false)
+        string? lessonsBlock = null, bool cheapModels = false, IReadOnlyDictionary<int, string>? beatHashes = null)
     {
         var key = route.KeyFor(provider);
         if (string.IsNullOrWhiteSpace(key)) { log.LogWarning("No API key for provider {Provider}", provider); return null; }
@@ -1330,7 +1352,13 @@ Return ONLY a JSON object, nothing else:
         };
         if (beatScores != null)
             foreach (var kv in beatScores)
-                review.BeatScores.Add(new NodeReviewBeatScore { ReviewId = review.Id, BeatNumber = kv.Key, Score = kv.Value });
+                review.BeatScores.Add(new NodeReviewBeatScore
+                {
+                    ReviewId = review.Id,
+                    BeatNumber = kv.Key,
+                    Score = kv.Value,
+                    BeatTextHash = beatHashes?.GetValueOrDefault(kv.Key),
+                });
         return review;
     }
 
@@ -1651,14 +1679,20 @@ Be specific; do not invent praise the reviews don't support.";
 
         // Node score: the FOCUS-GROUP result only (the A/B/C/D panels), latest review
         // per persona → mean overall (0-100). Study reviews use a beat-focused prompt and
-        // are excluded from the headline node score.
+        // are excluded from the headline node score. Delta reviews ("Delta" FocusGroupName)
+        // carry no overall score and are also excluded — Node.Score is preserved as-is.
         var latestPerPersona = reviews
             .Where(r => r.FocusGroupName != null && r.FocusGroupName.StartsWith("Group"))
             .GroupBy(r => r.PersonaId)
             .Select(g => g.OrderByDescending(r => r.ReviewedAt).First())
             .ToList();
-        node.Score = latestPerPersona.Count > 0 ? latestPerPersona.Average(r => (double)r.Score) : (double?)null;
-        node.ScoredAt = DateTime.UtcNow;
+        var freshPanel = latestPerPersona.Count > 0;
+        if (freshPanel)
+        {
+            node.Score = latestPerPersona.Average(r => (double)r.Score);
+            node.ScoredAt = DateTime.UtcNow;
+        }
+        // else: delta run — no panel reviews in this batch; preserve existing Node.Score unchanged.
 
         // Beat scores: from the study reviews (those carrying per-beat micro-scores),
         // latest study review per persona, then per beat number mean(1-5) → percentage.
@@ -1686,8 +1720,9 @@ Be specific; do not invent praise the reviews don't support.";
                 if (perBeat.TryGetValue(pos, out var pct)) { ordered[pos - 1].Score = pct; ordered[pos - 1].ScoredAt = now; }
         }
 
-        // Append a score-history row so we can chart score evolution over time.
-        if (node.Score.HasValue)
+        // Append score history and fire post-score triggers only on genuine panel runs.
+        // Delta runs update per-beat scores only; the node headline and history are preserved.
+        if (freshPanel && node.Score.HasValue)
         {
             var mean = node.Score.Value;
             double? sd = latestPerPersona.Count > 1
@@ -1708,38 +1743,36 @@ Be specific; do not invent praise the reviews don't support.";
 
         await db.SaveChangesAsync(ct);
 
-        // Auto-flag a freshly-crowned winner (crossed <80 → ≥80) for a voice
-        // harvest. Lightweight on purpose — it raises a VOICE-HARVEST finding for
-        // visibility; the actual (LLM-heavy) harvest runs on demand via
-        // `ss --harvest-voice`, keeping the review loop cheap.
-        if ((previousScore ?? 0) < 80 && (node.Score ?? 0) >= 80)
+        if (freshPanel)
         {
-            try
+            // Auto-flag a freshly-crowned winner (crossed <80 → ≥80) for a voice harvest.
+            if ((previousScore ?? 0) < 80 && (node.Score ?? 0) >= 80)
             {
-                findings.Upsert(
-                    filePath:     $"node:{node.Slug}",
-                    chapterId:    null,
-                    category:     FindingCategory.Voice,
-                    severity:     FindingSeverity.Medium,
-                    summary:      $"VOICE-HARVEST: \"{node.Title}\" reached {node.Score:0.#}% — harvest its voice into the rules ( ss --harvest-voice --slug {node.Slug} ).",
-                    snippet:      null,
-                    suggestedFix: "Run the voice harvest, then approve the proposed rules.");
-                log.LogInformation("Node {Slug} crossed 80% ({Score:0.#}) — raised VOICE-HARVEST finding.", node.Slug, node.Score);
+                try
+                {
+                    findings.Upsert(
+                        filePath:     $"node:{node.Slug}",
+                        chapterId:    null,
+                        category:     FindingCategory.Voice,
+                        severity:     FindingSeverity.Medium,
+                        summary:      $"VOICE-HARVEST: \"{node.Title}\" reached {node.Score:0.#}% — harvest its voice into the rules ( ss --harvest-voice --slug {node.Slug} ).",
+                        snippet:      null,
+                        suggestedFix: "Run the voice harvest, then approve the proposed rules.");
+                    log.LogInformation("Node {Slug} crossed 80% ({Score:0.#}) — raised VOICE-HARVEST finding.", node.Slug, node.Score);
+                }
+                catch (Exception ex) { log.LogWarning(ex, "Failed to raise VOICE-HARVEST finding for {Slug}", node.Slug); }
             }
-            catch (Exception ex) { log.LogWarning(ex, "Failed to raise VOICE-HARVEST finding for {Slug}", node.Slug); }
-        }
 
-        // Auto-trigger semantic fidelity audit whenever the node scores above the
-        // gaming threshold. Fire-and-forget — doesn't block the review response.
-        // Drift-skipped embeddings keep the cost near zero on unchanged beats.
-        if ((node.Score ?? 0) >= SemanticFidelityService.ScoreGamingThreshold)
-        {
-            var capturedId = nodeId;
-            _ = Task.Run(async () =>
+            // Auto-trigger semantic fidelity audit above the gaming threshold.
+            if ((node.Score ?? 0) >= SemanticFidelityService.ScoreGamingThreshold)
             {
-                try { await fidelity.AuditNodeAsync(capturedId, CancellationToken.None); }
-                catch (Exception ex) { log.LogWarning(ex, "Background fidelity audit failed for node {Id}", capturedId); }
-            });
+                var capturedId = nodeId;
+                _ = Task.Run(async () =>
+                {
+                    try { await fidelity.AuditNodeAsync(capturedId, CancellationToken.None); }
+                    catch (Exception ex) { log.LogWarning(ex, "Background fidelity audit failed for node {Id}", capturedId); }
+                });
+            }
         }
     }
 
@@ -2093,5 +2126,292 @@ Be specific; do not invent praise the reviews don't support.";
             return score > 0;
         }
         catch { return false; }
+    }
+
+    // ── Delta review (changed-beats-only re-scoring) ──────────────────────────
+
+    /// <summary>Load per-beat TextHash in reading order for this node.
+    /// Returns a 1-based positional dict (position → TextHash), omitting beats with null hashes.</summary>
+    private async Task<IReadOnlyDictionary<int, string>> LoadBeatHashesAsync(Guid nodeId, CancellationToken ct)
+    {
+        await using var db = await dbFactory.CreateDbContextAsync(ct);
+        var hashes = await db.NodeBeats
+            .Where(nb => nb.NodeId == nodeId && nb.IsEnabled)
+            .OrderBy(nb => nb.SortKey)
+            .Select(nb => nb.Beat!.TextHash)
+            .ToListAsync(ct);
+        return hashes
+            .Select((h, i) => (pos: i + 1, hash: h))
+            .Where(x => x.hash != null)
+            .ToDictionary(x => x.pos, x => x.hash!);
+    }
+
+    /// <summary>Re-score only beats whose text has changed since the last review run.
+    /// Compares each beat's current <c>Beat.TextHash</c> against the most-recent
+    /// <c>NodeReviewBeatScore.BeatTextHash</c> for that position. Changed beats get a
+    /// fresh panel ballot (per-beat 1-5 only — no overall or flow score); unchanged
+    /// beats keep their cached <c>Beat.Score</c>. <c>Node.Score</c> is NOT updated —
+    /// call a full <see cref="RunSampledReviewAsync"/> to refresh the headline.
+    ///
+    /// Auto-promotes to a full sampled run when &gt;30% of beats have changed.</summary>
+    public async Task<DeltaRunResult> RunDeltaReviewAsync(
+        Guid nodeId, int ballotCount, IProgress<int>? progress = null, CancellationToken ct = default,
+        bool allowVotes = false, bool useLocal = false, string? localModelOverride = null,
+        string? allowedProvidersOverride = null, string? cloudModelOverride = null,
+        IReadOnlyDictionary<string, string>? modelMap = null)
+    {
+        votingGate.EnsureAllowed("review-node (delta)", allowVotes);
+        if (ballotCount <= 0) ballotCount = settings.ReviewBallots;
+
+        // ── Load beats and find changed positions ─────────────────────────────
+        List<Beat> orderedBeats;
+        string nodeTitle;
+        IReadOnlyDictionary<int, string> latestScoredHashByPos;
+        await using (var db = await dbFactory.CreateDbContextAsync(ct))
+        {
+            var node = await db.Nodes.AsNoTracking().FirstOrDefaultAsync(n => n.Id == nodeId, ct);
+            if (node == null) return new DeltaRunResult(0, 0, 0, 0, 0, "Node not found.");
+            nodeTitle = node.Title;
+
+            orderedBeats = await db.NodeBeats
+                .Where(nb => nb.NodeId == nodeId && nb.IsEnabled)
+                .OrderBy(nb => nb.SortKey)
+                .Include(nb => nb.Beat)
+                .Select(nb => nb.Beat!)
+                .ToListAsync(ct);
+
+            latestScoredHashByPos = await db.NodeReviewBeatScores
+                .Where(bs => bs.Review!.NodeId == nodeId && bs.BeatTextHash != null)
+                .GroupBy(bs => bs.BeatNumber)
+                .Select(g => new { Pos = g.Key, Hash = g.OrderByDescending(bs => bs.Review!.ReviewedAt).First().BeatTextHash! })
+                .ToDictionaryAsync(x => x.Pos, x => x.Hash, ct);
+        }
+
+        if (orderedBeats.Count == 0)
+            return new DeltaRunResult(0, 0, 0, 0, 0, "No enabled beats found.");
+
+        var changedPositions = new List<int>();
+        for (int i = 0; i < orderedBeats.Count; i++)
+        {
+            var pos = i + 1;
+            var beat = orderedBeats[i];
+            if (!latestScoredHashByPos.TryGetValue(pos, out var scoredHash)
+                || scoredHash != beat.TextHash
+                || beat.TextHash == null)
+                changedPositions.Add(pos);
+        }
+
+        if (changedPositions.Count == 0)
+            return new DeltaRunResult(0, 0, 0, 0, orderedBeats.Count, "No changed beats — all scores are current.");
+
+        double changeRatio = changedPositions.Count / (double)orderedBeats.Count;
+        if (changeRatio > 0.30)
+            return new DeltaRunResult(0, 0, 0, changedPositions.Count, orderedBeats.Count,
+                $"Too many changes ({changedPositions.Count}/{orderedBeats.Count} beats, {changeRatio:0%}). " +
+                "Run a full review instead: ss --review-node --allow-votes");
+
+        // Build per-beat text hash map for stamping BeatTextHash on new score rows.
+        var beatHashes = orderedBeats
+            .Select((b, i) => (pos: i + 1, hash: b.TextHash))
+            .Where(x => x.hash != null)
+            .ToDictionary(x => x.pos, x => x.hash!);
+
+        // Compute the node's current content hash (same algorithm as NodeMarkdownExporter).
+        var contentHash = ComputeNodeContentHash(orderedBeats);
+        var changedSet = changedPositions.ToHashSet();
+
+        // ── Run delta ballots ─────────────────────────────────────────────────
+        var route = BuildRoute(useLocal, allowedProvidersOverride, localModelOverride, cloudModelOverride, modelMap);
+        if (route.Providers.Count == 0)
+            throw new InvalidOperationException("No trusted LLM providers are configured — cannot run delta review.");
+
+        var personas = SampleEnrichedPersonas(ballotCount);
+        var sem = new SemaphoreSlim(route.MaxConcurrencyValue);
+        var bag = new System.Collections.Concurrent.ConcurrentBag<NodeReview>();
+        var done = 0; var failed = 0;
+        var tasks = new List<Task>(personas.Count);
+
+        for (int i = 0; i < personas.Count; i++)
+        {
+            var persona = personas[i];
+            var provider = route.Providers[i % route.Providers.Count];
+            tasks.Add(Task.Run(async () =>
+            {
+                await sem.WaitAsync(ct);
+                try
+                {
+                    var r = await DeltaBallotOnceAsync(nodeId, nodeTitle, orderedBeats, changedSet, contentHash,
+                        persona, provider, route, beatHashes, ct);
+                    if (r != null) bag.Add(r);
+                    else Interlocked.Increment(ref failed);
+                }
+                catch (Exception ex)
+                {
+                    Interlocked.Increment(ref failed);
+                    log.LogWarning(ex, "Delta ballot failed: {P}", persona.Id);
+                }
+                finally { sem.Release(); progress?.Report(Interlocked.Increment(ref done)); }
+            }, ct));
+        }
+        await Task.WhenAll(tasks);
+
+        var saved = bag.ToList();
+        if (saved.Count == 0)
+            return new DeltaRunResult(personas.Count, 0, failed, changedPositions.Count, orderedBeats.Count,
+                "_No ballots saved — check provider API keys / connectivity._");
+
+        await using (var saveDb = await dbFactory.CreateDbContextAsync(ct))
+        {
+            saveDb.NodeReviews.AddRange(saved);
+            await saveDb.SaveChangesAsync(ct);
+        }
+        await RecomputeScoresAsync(nodeId, ct);
+
+        return new DeltaRunResult(
+            personas.Count, saved.Count, failed,
+            changedPositions.Count, orderedBeats.Count,
+            $"Delta: {saved.Count}/{personas.Count} reviewers re-scored {changedPositions.Count}/{orderedBeats.Count} changed beats.");
+    }
+
+    private async Task<NodeReview?> DeltaBallotOnceAsync(
+        Guid nodeId, string title, List<Beat> orderedBeats, HashSet<int> changedPositions,
+        string contentHash, Persona persona, string provider, ReviewRoute route,
+        IReadOnlyDictionary<int, string> beatHashes, CancellationToken ct)
+    {
+        var key = route.KeyFor(provider);
+        if (string.IsNullOrWhiteSpace(key)) { log.LogWarning("No API key for provider {Provider}", provider); return null; }
+        var model = route.ModelFor(provider, false);
+
+        var system = BuildDeltaBallotSystemPrompt(persona, title, changedPositions, orderedBeats.Count);
+        var userContent = BuildDeltaBallotUserContent(orderedBeats, changedPositions);
+        var maxTok = Math.Min(3000, 500 + changedPositions.Count * 8);
+
+        var raw = await route.Llm.CallAsync(provider, key!, model, system, userContent, maxTokens: maxTok, temperature: 0.85, ct);
+        if (!TryParseDeltaBallot(raw, changedPositions, out var beatScores))
+        {
+            log.LogWarning("Unparseable delta ballot from {Persona} via {Provider}", persona.Id, provider);
+            return null;
+        }
+
+        var review = new NodeReview
+        {
+            Id           = Guid.CreateVersion7(),
+            NodeId       = nodeId,
+            PersonaId    = persona.Id,
+            PersonaName  = persona.Name,
+            PersonaBlurb = FirstLine(persona.PersonalityMarkdown),
+            ProviderId   = provider,
+            Model        = string.IsNullOrWhiteSpace(model) ? null : model,
+            Score        = 0,       // no overall score in delta; excluded from Node.Score by FocusGroupName
+            FocusGroupName = "Delta",
+            ContentHash  = contentHash,
+            BeatCount    = orderedBeats.Count,
+            ReviewedAt   = DateTime.UtcNow,
+            CreatedAt    = DateTime.UtcNow,
+            UpdatedAt    = DateTime.UtcNow,
+        };
+        foreach (var kv in beatScores)
+            review.BeatScores.Add(new NodeReviewBeatScore
+            {
+                ReviewId = review.Id,
+                BeatNumber = kv.Key,
+                Score = kv.Value,
+                BeatTextHash = beatHashes.GetValueOrDefault(kv.Key),
+            });
+        return review;
+    }
+
+    private string BuildDeltaBallotSystemPrompt(Persona persona, string title, HashSet<int> changedPositions, int totalBeats)
+    {
+        var who = BuildWhoBlock(persona);
+        var changedList = string.Join(", ", changedPositions.OrderBy(x => x).Select(p => $"Beat {p}"));
+        return
+$@"{who}
+
+You are scoring REVISED BEATS in the audio-fiction story ""{title}"" (total {totalBeats} beats). Only beats marked [SCORE THIS] have changed since the last review. The rest are brief context markers — read them for narrative continuity, but DO NOT score them.
+
+Judge each [SCORE THIS] beat for how it LANDS IN CONTEXT (its job in the sequence, given what comes before and after) — not standalone quality.
+
+Return ONLY a JSON object with a single field:
+- ""beat_scores"": rate ONLY the [SCORE THIS] beats 1-5 in context (1 = hurts the story, 3 = fine, 5 = highlight), keyed by beat number: {{""3"":4,""7"":2}}.
+
+Changed beats to score: {changedList}. Do not output scores for beats marked [CONTEXT].";
+    }
+
+    private static string BuildDeltaBallotUserContent(List<Beat> orderedBeats, HashSet<int> changedPositions)
+    {
+        const int ContextWindow = 2;
+        var include = new HashSet<int>(changedPositions);
+        foreach (var pos in changedPositions)
+            for (int d = 1; d <= ContextWindow; d++)
+            {
+                if (pos - d >= 1) include.Add(pos - d);
+                if (pos + d <= orderedBeats.Count) include.Add(pos + d);
+            }
+
+        var sb = new StringBuilder();
+        int lastShown = 0;
+        for (int i = 0; i < orderedBeats.Count; i++)
+        {
+            var pos = i + 1;
+            if (!include.Contains(pos)) continue;
+            if (lastShown > 0 && lastShown < pos - 1)
+                sb.AppendLine($"[... {pos - lastShown - 1} unchanged beat(s) omitted ...]");
+            var tag = changedPositions.Contains(pos) ? "[SCORE THIS" : "[CONTEXT";
+            sb.AppendLine($"{tag} — Beat {pos}]");
+            sb.AppendLine(orderedBeats[i].Text);
+            sb.AppendLine();
+            lastShown = pos;
+        }
+        if (lastShown < orderedBeats.Count)
+            sb.AppendLine($"[... {orderedBeats.Count - lastShown} unchanged beat(s) omitted ...]");
+        return sb.ToString();
+    }
+
+    private static bool TryParseDeltaBallot(string? raw, HashSet<int> changedPositions, out Dictionary<int, int> beatScores)
+    {
+        beatScores = new Dictionary<int, int>();
+        if (string.IsNullOrWhiteSpace(raw)) return false;
+        var text = raw.Trim();
+        if (text.StartsWith("```"))
+        {
+            var nl = text.IndexOf('\n');
+            if (nl >= 0) text = text[(nl + 1)..];
+            if (text.EndsWith("```")) text = text[..^3];
+            text = text.Trim();
+        }
+        var open = text.IndexOf('{');
+        var close = text.LastIndexOf('}');
+        if (open < 0 || close <= open) return false;
+        try
+        {
+            using var doc = JsonDocument.Parse(text[open..(close + 1)]);
+            if (!doc.RootElement.TryGetProperty("beat_scores", out var bsEl) || bsEl.ValueKind != JsonValueKind.Object)
+                return false;
+            foreach (var prop in bsEl.EnumerateObject())
+            {
+                if (!int.TryParse(prop.Name, out var beatNum) || !changedPositions.Contains(beatNum)) continue;
+                int v;
+                if (prop.Value.ValueKind == JsonValueKind.Number && prop.Value.TryGetInt32(out var iv)) v = iv;
+                else if (prop.Value.ValueKind == JsonValueKind.String && int.TryParse(prop.Value.GetString(), out var sv)) v = sv;
+                else continue;
+                beatScores[beatNum] = Math.Clamp(v, 1, 5);
+            }
+            return beatScores.Count > 0;
+        }
+        catch { return false; }
+    }
+
+    private static string ComputeNodeContentHash(IEnumerable<Beat> orderedBeats)
+    {
+        var sb = new StringBuilder();
+        foreach (var b in orderedBeats)
+        {
+            var text = (b.Text ?? "").Trim();
+            if (text.Length > 0) sb.Append(text).Append('\n');
+        }
+        using var sha = SHA256.Create();
+        var bytes = sha.ComputeHash(Encoding.UTF8.GetBytes(sb.ToString().Trim()));
+        return Convert.ToHexString(bytes).ToLowerInvariant();
     }
 }

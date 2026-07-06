@@ -38,7 +38,7 @@ public static class ReviewNodeCli
         var settings = services.GetRequiredService<SettingsService>();
         int readers = settings.ReviewReaders, panel = settings.ReviewPanel,
             ballots = settings.ReviewBallots, prose = settings.ReviewProse;
-        bool samePersonas = false, study = false, census = false, skipDiagnosis = false, byAct = false;
+        bool samePersonas = false, study = false, census = false, skipDiagnosis = false, byAct = false, delta = false;
         bool allowVotes = false;
         bool useLocal = false; string? localModel = null, localUrl = null, localKey = null, localLabel = null, modelOverride = null, providersOverride = null, modelMapRaw = null; int localCtx = 0;
         int segChars = 90000, segBallots = 8;
@@ -65,6 +65,7 @@ public static class ReviewNodeCli
                 case "--segmented":       byAct = true; break;
                 case "--seg-chars":       if (i + 1 < args.Length && int.TryParse(args[++i], out var scc)) segChars = scc; break;
                 case "--seg-ballots":     if (i + 1 < args.Length && int.TryParse(args[++i], out var sbc)) segBallots = sbc; break;
+                case "--delta":            delta = true; break;
                 case "--skip-diagnosis":  skipDiagnosis = true; skipSet = true; break;
                 case "--effort":
                 case "--tier":            if (i + 1 < args.Length) effort = args[++i]; break;
@@ -179,6 +180,33 @@ public static class ReviewNodeCli
             Console.Error.WriteLine("[review-node] --local applies to the default sampled review and --by-act only; "
                 + "--census/--study/--group/--same-personas still run on the cloud panel. Ignoring --local for this run.");
             useLocal = false;
+        }
+
+        // ── Delta mode: re-score only beats whose prose changed since the last run.
+        //    Unchanged beats keep their cached Beat.Score. Node.Score is not updated
+        //    (no overall ballot); auto-promotes to a full run when >30% changed. ──
+        if (delta)
+        {
+            Console.WriteLine("[review-node] DELTA REVIEW (changed beats only):");
+            Console.WriteLine($"   Id:    {nodeId}");
+            Console.WriteLine($"   Slug:  {nodeSlug}");
+            Console.WriteLine($"   Title: {nodeTitle}");
+            Console.WriteLine($"   {ballots} ballot(s) — only beats with changed prose are re-scored.");
+            Console.WriteLine("[review-node] Scanning for changed beats…");
+            try
+            {
+                var dr = await reviewer.RunDeltaReviewAsync(nodeId, ballots,
+                    new Progress<int>(k => { if (k % 5 == 0) Console.WriteLine($"   …{k}/{ballots} ballots done"); }),
+                    allowVotes: allowVotes, useLocal: useLocal, localModelOverride: localModel,
+                    allowedProvidersOverride: providersOverride, cloudModelOverride: modelOverride,
+                    modelMap: ParseModelMap(modelMapRaw));
+                Console.WriteLine($"[review-node] {dr.Summary}");
+                if (dr.ChangedBeats > 0 && dr.Saved > 0)
+                    Console.WriteLine($"[review-node] {dr.Saved}/{dr.Requested} reviewers saved ({dr.Failed} failed). " +
+                        $"Re-scored {dr.ChangedBeats}/{dr.TotalBeats} changed beats.");
+                return dr.Saved > 0 ? 0 : (dr.ChangedBeats == 0 ? 0 : 1);
+            }
+            catch (Exception ex) { Console.Error.WriteLine($"[review-node] Delta run crashed: {ex.Message}"); return 1; }
         }
 
         // ── Segment-study mode: one independent panel, per-beat micro-scores,

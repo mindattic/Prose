@@ -651,6 +651,7 @@ public class StreetSamuraiDbContext : DbContext
             e.HasKey(x => new { x.ReviewId, x.BeatNumber });
             e.HasOne(x => x.Review).WithMany(r => r.BeatScores)
                 .HasForeignKey(x => x.ReviewId).OnDelete(DeleteBehavior.Cascade);
+            e.Property(x => x.BeatTextHash).HasMaxLength(80);
         });
 
         // ── Emotional Intelligence Examination (SS-A15) ──────────────────────
