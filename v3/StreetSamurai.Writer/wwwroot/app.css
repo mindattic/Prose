@@ -137,17 +137,7 @@ html, body {
     padding: 10px;
     min-height: 0;
 }
-/* Node page sticky header — declared globally so Blazor CSS scoping + overflow-clip don't interfere */
-.node-head {
-    position: sticky;
-    top: 0;
-    z-index: 10;
-    background: rgba(15,15,15,0.97);
-    backdrop-filter: blur(6px);
-    border-bottom: 1px solid #2a2a2a;
-    padding: 0.75rem 0;
-    margin-bottom: 1rem;
-}
+
 /* ── Mobile: release fixed-height shell so entity pages use native page scroll ── */
 @media (max-width: 767.98px) {
     .app-shell { height: auto; min-height: 100dvh; overflow: visible; }
