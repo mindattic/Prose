@@ -1,0 +1,77 @@
+@inherits LayoutComponentBase
+@layout StreetSamurai.Shared.Components.Layout.MainLayout
+@inject NavigationManager Nav
+@inject IJSRuntime JS
+
+@* Codex two-pane shell: persistent Writer pane on the left (the Writer APP loaded
+   cross-process in an iframe via AppLinks:WriterBaseUrl), Codex content on the right.
+   The pane is collapsible and remembers its state per browser. *@
+
+<style>
+    .codex-two-pane { display: flex; gap: .75rem; align-items: stretch; min-height: 70vh; }
+    .codex-two-pane .codex-writer-col { flex: 0 0 38%; min-width: 320px; max-width: 48rem; display: flex; flex-direction: column; }
+    .codex-two-pane .codex-content-col { flex: 1 1 auto; min-width: 0; }
+    .codex-two-pane.pane-collapsed .codex-writer-col { display: none; }
+    .codex-pane-toggle { position: fixed; bottom: 3rem; left: .4rem; z-index: 1040; opacity: .65; }
+    .codex-pane-toggle:hover { opacity: 1; }
+</style>
+
+@if (embed)
+{
+    @Body
+}
+else
+{
+    <div class="codex-two-pane @(paneOpen ? "" : "pane-collapsed")">
+        <div class="codex-writer-col">
+            <StreetSamurai.Shared.Components.Layout.WriterPane />
+        </div>
+        <div class="codex-content-col">
+            @Body
+        </div>
+    </div>
+    <button class="btn btn-sm btn-outline-secondary codex-pane-toggle"
+            title="@(paneOpen ? "Hide writer pane" : "Show writer pane")"
+            @onclick="TogglePane">
+        <i class="bi @(paneOpen ? "bi-chevron-double-left" : "bi-pencil-square")"></i>
+    </button>
+}
+
+@code {
+    private bool paneOpen;   // default collapsed — Codex is a browsing app first
+    private bool embed;
+
+    protected override void OnInitialized()
+    {
+        embed = Nav.Uri.Contains("embed=1", StringComparison.OrdinalIgnoreCase);
+        // A shared link carrying ?node= means "show me this node in the pane" —
+        // the query string is the source of truth so the URL describes the view.
+        paneOpen = Nav.Uri.Contains("node=", StringComparison.OrdinalIgnoreCase);
+    }
+
+    protected override async Task OnAfterRenderAsync(bool firstRender)
+    {
+        if (!firstRender || paneOpen) return;
+        try
+        {
+            var saved = await JS.InvokeAsync<string>("localStorage.getItem", "codex.writerPane");
+            if (saved == "open")
+            {
+                paneOpen = true;
+                StateHasChanged();
+            }
+        }
+        catch { /* prerender / JS unavailable */ }
+    }
+
+    private async Task TogglePane()
+    {
+        paneOpen = !paneOpen;
+        try { await JS.InvokeVoidAsync("localStorage.setItem", "codex.writerPane", paneOpen ? "open" : "closed"); } catch { }
+        if (!paneOpen && Nav.Uri.Contains("node=", StringComparison.OrdinalIgnoreCase))
+        {
+            // Closing the pane drops ?node= so the URL keeps matching what's on screen.
+            Nav.NavigateTo(Nav.GetUriWithQueryParameter("node", (string?)null), replace: true);
+        }
+    }
+}

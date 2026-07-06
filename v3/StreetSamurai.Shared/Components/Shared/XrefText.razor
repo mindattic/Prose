@@ -6,6 +6,7 @@
 
 @inject XrefService Xref
 @inject NavigationManager Nav
+@inject StreetSamurai.Core.Services.AppLinks Links
 
 @if (Paragraphs)
 {
@@ -55,7 +56,8 @@ else
                 else
                 {
                     builder.OpenElement(seq++, "a");
-                    builder.AddAttribute(seq++, "href", $"{xref.Entry.Route}?id={xref.Entry.Id}");
+                    // Entity pages live in the Codex host — cross-app when this renders in Writer.
+                    builder.AddAttribute(seq++, "href", Links.Codex($"{xref.Entry.Route}?id={xref.Entry.Id}"));
                     builder.AddAttribute(seq++, "class", $"xref-link xref-{xref.Entry.Type}");
                     builder.AddAttribute(seq++, "title", string.IsNullOrWhiteSpace(xref.Entry.Subtitle)
                         ? xref.Entry.Type

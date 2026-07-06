@@ -14,7 +14,59 @@ namespace StreetSamurai.Core.Extensions;
 
 public static class ServiceCollectionExtensions
 {
+    /// <summary>
+    /// Full service profile: every StreetSamurai service INCLUDING background
+    /// hosted services. This is what the Codex host, CLI, and MCP call.
+    /// </summary>
     public static IServiceCollection AddStreetSamuraiServices(this IServiceCollection services)
+    {
+        services.AddStreetSamuraiCoreServices();
+        services.AddStreetSamuraiBackgroundServices();
+        return services;
+    }
+
+    /// <summary>
+    /// Lean profile for the Writer host: all singletons (lazy — they cost nothing
+    /// until first resolve) but NO background hosted services. The Writer's job is
+    /// interactive beat editing and generation; long-running sweeps (home-stats
+    /// refresh, global-search warmup, audio reconciliation, world tick, continuity
+    /// long sweep) belong to the Codex host. Event-subscription services that fire
+    /// on beat/chapter save (ContinuousQualityService, BeatStateExtractor) are
+    /// registered here — the Writer host eagerly instantiates them at startup.
+    /// </summary>
+    public static IServiceCollection AddWriterServices(this IServiceCollection services)
+    {
+        services.AddStreetSamuraiCoreServices();
+        return services;
+    }
+
+    /// <summary>
+    /// The background hosted services — periodic/long-running work that should run
+    /// in exactly ONE process (the Codex host) to avoid duplicate sweeps against
+    /// the shared database. Singleton registrations for these classes live in
+    /// AddStreetSamuraiCoreServices; this only adds the IHostedService bindings.
+    /// </summary>
+    public static IServiceCollection AddStreetSamuraiBackgroundServices(this IServiceCollection services)
+    {
+        // Home-page tile-board stats refresh (reads entity counts on a timer).
+        services.AddHostedService<HomeStatsRefreshService>();
+        // Bidirectional newest-wins audio sync (no-op unless AudioStore:Provider=dual).
+        services.AddHostedService<AudioReconciliationBackgroundService>();
+        // Global search index warmup.
+        services.AddHostedService<GlobalSearchWarmupService>();
+        // Once-a-day continuity contradiction re-scan.
+        services.AddHostedService(sp => sp.GetRequiredService<ContinuityLongSweepService>());
+        // Living-world story-time tick (ships disabled-by-default).
+        services.AddHostedService(sp => sp.GetRequiredService<WorldTickService>());
+        return services;
+    }
+
+    /// <summary>
+    /// Every StreetSamurai singleton/scoped service registration EXCEPT the
+    /// hosted background services. All singletons are lazy — registration is
+    /// free; construction happens on first resolve.
+    /// </summary>
+    public static IServiceCollection AddStreetSamuraiCoreServices(this IServiceCollection services)
     {
         // ── EF Core: SQL Server StreetSamurai database ──────────────────────────
         // Connection string priority: env var ConnectionStrings__StreetSamurai →
@@ -69,10 +121,21 @@ public static class ServiceCollectionExtensions
         // memory; no SQL queries fire on each page load. See HomeStatsCache.cs
         // and HomeStatsRefreshService.cs for the contract.
         services.AddSingleton<HomeStatsCache>();
-        services.AddHostedService<HomeStatsRefreshService>();
 
         // Application logging — reads daily Serilog log files for the UI viewer
         services.AddSingleton<LoggingService>();
+
+        // Cross-app URL resolver (Writer/Codex split). Each host sets the OTHER
+        // app's base URL in AppLinks:*BaseUrl; empty = links stay relative/local.
+        services.AddSingleton(sp =>
+        {
+            var cfg = sp.GetService<IConfiguration>();
+            return new AppLinks
+            {
+                WriterBaseUrl = cfg?["AppLinks:WriterBaseUrl"] ?? "",
+                CodexBaseUrl  = cfg?["AppLinks:CodexBaseUrl"] ?? "",
+            };
+        });
 
         // Settings auto-detects canon root path on first run.
         // API keys route through MindAttic.Legion.MindAtticCredentialStore at
@@ -116,7 +179,6 @@ public static class ServiceCollectionExtensions
         // it unconditionally keeps the DI graph simple and lets a config
         // change (single → dual) take effect on next restart without rewiring.
         services.AddSingleton<AudioReconciliationService>();
-        services.AddHostedService<AudioReconciliationBackgroundService>();
         // Typed repositories — every directory repo now lives on the unified
         // SQL Server StreetSamurai database via EfRepository<T>. The explicit
         // factory functions disambiguate between the production
@@ -241,7 +303,6 @@ public static class ServiceCollectionExtensions
         services.AddSingleton<AssignTiersService>();
         services.AddSingleton<CrossReferenceService>();
         services.AddSingleton<GlobalSearchService>();
-        services.AddHostedService<GlobalSearchWarmupService>();
         services.AddSingleton<SearchTriggerService>();
         services.AddSingleton<LoreService>();
         services.AddSingleton<MarkdownService>();
@@ -258,7 +319,6 @@ public static class ServiceCollectionExtensions
         // the long-sweep audit isn't gated on a /continuity page click.
         // PeriodicTimer-based BackgroundService — no Quartz/Hangfire dep.
         services.AddSingleton<ContinuityLongSweepService>();
-        services.AddHostedService(sp => sp.GetRequiredService<ContinuityLongSweepService>());
 
         // Universal KV façade over the Settings table — used by every per-book /
         // per-world JSON store that previously wrote to engine_data/*.json.
@@ -293,7 +353,6 @@ public static class ServiceCollectionExtensions
         // disabled-by-default (see WorldTickService.Enabled) so infrastructure
         // can land before the rule layer.
         services.AddSingleton<WorldTickService>();
-        services.AddHostedService(sp => sp.GetRequiredService<WorldTickService>());
 
         // Cross-book "character at two places at once" detector.
         services.AddSingleton<LocationContradictionService>();

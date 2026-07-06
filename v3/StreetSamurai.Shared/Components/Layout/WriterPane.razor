@@ -1,10 +1,14 @@
 @using Microsoft.EntityFrameworkCore
 @inject Microsoft.EntityFrameworkCore.IDbContextFactory<StreetSamurai.Core.Data.StreetSamuraiDbContext> DbFactory
 @inject IJSRuntime JS
+@inject NavigationManager Nav
+@inject StreetSamurai.Core.Services.AppLinks Links
 
 @* The persistent Writer pane: pick a node up top, write in the embedded editor below. The editor
    is the real /node page loaded in an iframe (?embed=1 renders it bare) so its heavy, route-driven
-   state is fully isolated and it survives navigation in the repositories pane beside it. *@
+   state is fully isolated and it survives navigation in the repositories pane beside it.
+   The selected node rides the ?node= query string so the full view is a shareable URL;
+   localStorage is only a fallback when the URL carries no selection. *@
 <div class="writer-pane">
     <div class="writer-pane-head">
         <span class="writer-pane-title"><i class="bi bi-pencil-square me-2"></i>Writer</span>
@@ -17,7 +21,7 @@
         </select>
         @if (!string.IsNullOrEmpty(selectedSlug))
         {
-            <a class="btn btn-sm btn-outline-secondary" href="/node/@selectedSlug" target="_blank" title="Open full-screen"><i class="bi bi-arrows-fullscreen"></i></a>
+            <a class="btn btn-sm btn-outline-secondary" href="@Links.Writer($"/node/{selectedSlug}")" target="_blank" title="Open full-screen"><i class="bi bi-arrows-fullscreen"></i></a>
         }
     </div>
     <div class="writer-pane-body">
@@ -25,12 +29,12 @@
         {
             <div class="writer-pane-empty">
                 <i class="bi bi-pencil-square"></i>
-                <div>Select a node above to start writing, or <a href="/nodes">browse all nodes</a>.</div>
+                <div>Select a node above to start writing, or <a href="@Links.Writer("/nodes")">browse all nodes</a>.</div>
             </div>
         }
         else
         {
-            <iframe class="writer-pane-frame" src="@($"/node/{selectedSlug}?embed=1")" title="Writer"></iframe>
+            <iframe class="writer-pane-frame" src="@Links.Writer($"/node/{selectedSlug}?embed=1")" title="Writer"></iframe>
         }
     </div>
 </div>
@@ -49,11 +53,16 @@
             .Select(s => new NodeRow(s.Slug, s.Title))
             .Take(100)
             .ToList();
+
+        // Query string wins — a shared link opens exactly what the sender saw.
+        var fromUrl = GetQueryParam("node");
+        if (!string.IsNullOrEmpty(fromUrl) && nodes.Any(s => s.Slug == fromUrl))
+            selectedSlug = fromUrl;
     }
 
     protected override async Task OnAfterRenderAsync(bool firstRender)
     {
-        if (!firstRender) return;
+        if (!firstRender || !string.IsNullOrEmpty(selectedSlug)) return;
         try
         {
             var saved = await JS.InvokeAsync<string>("localStorage.getItem", "writer.node");
@@ -69,5 +78,21 @@
     private async Task OnSelected()
     {
         try { await JS.InvokeVoidAsync("localStorage.setItem", "writer.node", selectedSlug ?? ""); } catch { }
+        // Reflect the selection in the URL (replace, no reload) so the link is shareable.
+        var target = Nav.GetUriWithQueryParameter("node", string.IsNullOrEmpty(selectedSlug) ? null : selectedSlug);
+        Nav.NavigateTo(target, replace: true);
+    }
+
+    private string GetQueryParam(string key)
+    {
+        var query = new Uri(Nav.Uri).Query;
+        if (string.IsNullOrEmpty(query)) return "";
+        foreach (var pair in query.TrimStart('?').Split('&'))
+        {
+            var kv = pair.Split('=', 2);
+            if (kv.Length == 2 && Uri.UnescapeDataString(kv[0]).Equals(key, StringComparison.OrdinalIgnoreCase))
+                return Uri.UnescapeDataString(kv[1]);
+        }
+        return "";
     }
 }

@@ -1,0 +1,562 @@
+<title>GLMZ Chicago 2226 — Territorial Survey</title>
+<style>
+*{box-sizing:border-box;margin:0;padding:0}
+html,body{width:100%;height:100%;background:#060810;color:#7A98B8;font-family:'Courier New',Courier,monospace;overflow:hidden}
+#lay{display:flex;height:100vh}
+#mapwrap{flex:0 0 62%;position:relative;overflow:hidden}
+canvas{display:block;width:100%;height:100%;cursor:crosshair}
+#panel{flex:1;display:flex;flex-direction:column;border-left:1px solid #1A2A40;background:#04060C;min-width:240px;max-width:360px}
+#ph{padding:12px 16px 9px;border-bottom:1px solid #0F1E30;background:#040710}
+#ph .ey{font-size:9px;letter-spacing:.2em;color:#1E3050;text-transform:uppercase;margin-bottom:3px}
+#ph .hd{font-size:15px;font-weight:700;color:#B8C8D8;letter-spacing:.06em}
+#ph .sb{font-size:9px;color:#1E3050;margin-top:2px;letter-spacing:.1em}
+#term{flex:1;padding:14px 16px;overflow-y:auto;font-size:11px;line-height:1.78}
+.tl{font-size:12px;font-weight:700;color:#F0A830;text-transform:uppercase;letter-spacing:.1em;margin-bottom:5px}
+.tc{font-size:9px;letter-spacing:.15em;margin-bottom:9px;text-transform:uppercase}
+.td{color:#507080;margin-bottom:9px;line-height:1.8}
+.tf{color:#2A3C4C;border-left:2px solid #0E1C2C;padding-left:9px;font-style:italic;margin-bottom:11px;line-height:1.7}
+.xl{font-size:9px;letter-spacing:.18em;color:#1A2E40;text-transform:uppercase;margin-bottom:3px}
+.xe{color:#3A6878;font-size:11px;line-height:1.7}
+.tw{font-size:9px;color:#7A2828;letter-spacing:.09em;margin-top:9px;text-transform:uppercase}
+#leg{padding:9px 16px;border-top:1px solid #0D1820;font-size:9px}
+.lr{display:flex;flex-wrap:wrap;gap:8px 14px;margin-bottom:5px}
+.li{display:flex;align-items:center;gap:4px;color:#28384A;letter-spacing:.09em;text-transform:uppercase}
+.ld{width:8px;height:8px;border-radius:50%;flex-shrink:0}
+.ll{width:13px;height:2px;flex-shrink:0}
+#mc{padding:4px 16px;font-size:9px;color:#182838;border-top:1px solid #080E18;letter-spacing:.1em}
+</style>
+
+<div id="lay">
+  <div id="mapwrap"><canvas id="c"></canvas></div>
+  <div id="panel">
+    <div id="ph">
+      <div class="ey">GLMZ TERRITORIAL SURVEY v8.0 // MERIDIAN 2226.07</div>
+      <div class="hd">CHICAGO SECTOR MAP</div>
+      <div class="sb">HOVER TO NAVIGATE // TIER SCAN ACTIVE</div>
+    </div>
+    <div id="term">
+      <div class="tl" id="tl">THE LOOP — Z1</div>
+      <div class="tc" id="tc" style="color:#7040C8">⬡ AXIOM BIONICS SOVEREIGN // TIER 5 ACCESS</div>
+      <div class="td" id="td">Prestige core. Bounded by Chicago River (N), Congress (S), Lake Shore (E), Halsted (W). Axiom BioNanics on Jackson. Mirrorwell Media on LaSalle, sovereign from 4th floor up by treaty. Nine customs nodes around two square miles. Arcturus at maximum density.</div>
+      <div class="tf" id="tf">"The glass is always clean here. The people inside are always watching."</div>
+      <div class="xl">— PULSE / TRANSIT —</div>
+      <div class="xe" id="xe">LAKELINE: State/Madison berth platform (Tier 3+)<br>CROSSTOWN: Dearborn depot<br>INDUSTRIAL: Congress spur south</div>
+      <div class="tw" id="tw">⚠ TIER 3+ MINIMUM — CUSTOMS ACTIVE AT ALL NINE ENTRY NODES</div>
+    </div>
+    <div id="leg">
+      <div class="lr">
+        <div class="li"><div class="ld" style="background:#5030A0"></div>CorpoNation</div>
+        <div class="li"><div class="ld" style="background:#18202C"></div>Gray Zone</div>
+        <div class="li"><div class="ld" style="background:#06070A"></div>Z∞ Null</div>
+        <div class="li"><div class="ld" style="background:#030A1C"></div>Lake</div>
+      </div>
+      <div class="lr">
+        <div class="li"><div class="ll" style="background:#F0A830"></div>Lakeline</div>
+        <div class="li"><div class="ll" style="background:#C040E0"></div>Crosstown</div>
+        <div class="li"><div class="ll" style="background:#30B0E0"></div>Industrial</div>
+        <div class="li"><div class="ld" style="background:rgba(140,160,255,.22)"></div>Aeroplex</div>
+        <div class="li"><div class="ld" style="background:#1040A0"></div>Submerged</div>
+      </div>
+    </div>
+    <div id="mc">LAT — // LNG —</div>
+  </div>
+</div>
+
+<script>
+const cv=document.getElementById('c'),ctx=cv.getContext('2d');
+const B={w:-87.88,s:41.60,e:-87.49,n:42.05};
+let W,H;
+function sz(){W=cv.width=cv.offsetWidth;H=cv.height=cv.offsetHeight}
+function px(lng,lat){return[(lng-B.w)/(B.e-B.w)*W,(B.n-lat)/(B.n-B.s)*H]}
+
+// Major E-W streets [lat, label, isBold]
+const EW=[
+  [42.019,'Howard',1],[41.998,'Devon',1],[41.984,'Bryn Mawr',0],[41.977,'Foster',0],
+  [41.969,'Lawrence',1],[41.954,'Irving Park',1],[41.947,'Addison',0],[41.939,'Belmont',1],
+  [41.932,'Diversey',0],[41.925,'Fullerton',1],[41.910,'North Ave',1],[41.897,'Chicago Ave',1],
+  [41.882,'Madison',1],[41.867,'Roosevelt',1],[41.852,'Cermak',1],[41.838,'31st',0],
+  [41.830,'35th',1],[41.817,'43rd',0],[41.809,'47th',1],[41.795,'55th',1],
+  [41.781,'63rd',1],[41.766,'71st',1],[41.751,'79th',1],[41.736,'87th',1],
+  [41.722,'95th',1],[41.707,'103rd',1],[41.692,'111th',0],[41.677,'119th',0],[41.661,'130th',1],
+];
+// Major N-S streets [lng, label, isBold]
+const NS=[
+  [-87.624,'Michigan',1],[-87.628,'State',0],[-87.635,'Wells',0],[-87.648,'Halsted',1],
+  [-87.657,'Racine',0],[-87.665,'Ashland',1],[-87.676,'Damen',0],[-87.683,'Western',1],
+  [-87.695,'California',0],[-87.706,'Kedzie',1],[-87.715,'Homan',0],[-87.726,'Pulaski',1],
+  [-87.745,'Cicero',1],[-87.766,'Central',0],[-87.803,'Harlem',1],
+];
+// Diagonal streets
+const DIAG=[
+  {nm:'Milwaukee',pts:[[-87.633,41.891],[-87.650,41.904],[-87.672,41.917],[-87.694,41.928],[-87.718,41.941],[-87.750,41.956],[-87.785,41.970]]},
+  {nm:'Lincoln',pts:[[-87.630,41.892],[-87.648,41.910],[-87.663,41.929],[-87.671,41.950],[-87.683,41.972],[-87.709,42.013]]},
+  {nm:'Clark N',pts:[[-87.631,41.890],[-87.641,41.905],[-87.648,41.920],[-87.655,41.936]]},
+  {nm:'Grand',pts:[[-87.638,41.891],[-87.660,41.897],[-87.693,41.907],[-87.722,41.917],[-87.757,41.926]]},
+  {nm:'Ogden',pts:[[-87.635,41.879],[-87.655,41.876],[-87.680,41.873],[-87.722,41.867]]},
+  {nm:'Ridge',pts:[[-87.660,41.973],[-87.671,41.988],[-87.679,42.003],[-87.690,42.018]]},
+  {nm:'Vincennes',pts:[[-87.626,41.869],[-87.636,41.856],[-87.648,41.841],[-87.663,41.820],[-87.679,41.800],[-87.694,41.773]]},
+  {nm:'Stony Isl',pts:[[-87.586,41.832],[-87.583,41.795],[-87.579,41.759],[-87.575,41.728]]},
+];
+// Ferrocement Wave
+const WAVE=[
+  [-87.660,42.05],[-87.647,42.019],[-87.636,42.000],[-87.627,41.984],[-87.614,41.968],
+  [-87.607,41.956],[-87.600,41.941],[-87.594,41.930],[-87.591,41.916],
+  [-87.587,41.906],[-87.582,41.896],[-87.578,41.886],[-87.576,41.876],
+  [-87.575,41.863],[-87.572,41.850],[-87.570,41.838],[-87.566,41.821],
+  [-87.558,41.802],[-87.553,41.782],[-87.547,41.762],[-87.543,41.742],
+  [-87.538,41.722],[-87.534,41.702],[-87.527,41.665],[-87.520,41.625],
+];
+// Neighborhood centroid labels [lng, lat, name]
+const NHDS=[
+  [-87.651,42.008,'Rogers Park'],[-87.706,42.005,'West Ridge'],[-87.650,41.975,'Edgewater'],
+  [-87.663,41.964,'Uptown'],[-87.712,41.965,'Lincoln Sq'],[-87.700,41.951,'North Center'],
+  [-87.650,41.944,'Lakeview'],[-87.694,41.935,'Logan Square'],[-87.645,41.934,'Lincoln Park'],
+  [-87.684,41.919,'Avondale'],[-87.693,41.907,'Hermosa'],[-87.710,41.903,'Humboldt Pk'],
+  [-87.671,41.904,'Bucktown'],[-87.661,41.900,'Wicker Park'],[-87.667,41.891,'Ukrainian Vill'],
+  [-87.667,41.884,'East Village'],[-87.760,41.896,'Austin'],[-87.731,41.895,'Belmont Cragin'],
+  [-87.716,41.876,'Garfield Pk'],[-87.638,41.895,'River North'],[-87.604,41.896,'Streeterville'],
+  [-87.629,41.882,'The Loop'],[-87.651,41.882,'West Loop'],[-87.658,41.863,'Near W Side'],
+  [-87.659,41.851,'Pilsen'],[-87.654,41.842,'Bridgeport'],[-87.659,41.856,'Bloom Qtr'],
+  [-87.630,41.852,'Chinatown'],[-87.648,41.833,'McKinley Pk'],[-87.648,41.822,'Back o Yards'],
+  [-87.636,41.815,'Canaryville'],[-87.603,41.799,'Hyde Park'],[-87.614,41.789,'Woodlawn'],
+  [-87.567,41.764,'South Shore'],[-87.619,41.773,'Grand Xing'],[-87.571,41.730,'Calumet Hts'],
+  [-87.626,41.745,'Roseland'],[-87.617,41.681,'Pullman'],[-87.650,41.766,'Auburn Gresham'],
+  [-87.650,41.737,'Wash Heights'],[-87.650,41.668,'Morgan Park'],[-87.558,41.650,'East Side/Gary'],
+];
+// Pulse routes
+const PULSE=[
+  {id:'L',c:'#F0A830',g:'rgba(240,168,48,.3)',lbl:'LAKELINE',
+   pts:[[-87.618,42.025],[-87.616,42.010],[-87.613,41.995],[-87.610,41.978],
+        [-87.607,41.965],[-87.604,41.951],[-87.601,41.935],[-87.598,41.921],
+        [-87.596,41.907],[-87.621,41.886],[-87.619,41.874],[-87.618,41.862],
+        [-87.615,41.840],[-87.612,41.812],[-87.607,41.783],[-87.604,41.760],
+        [-87.598,41.737],[-87.575,41.700]]},
+  {id:'X',c:'#C040E0',g:'rgba(192,64,224,.3)',lbl:'CROSSTOWN',
+   pts:[[-87.840,41.882],[-87.800,41.882],[-87.766,41.882],[-87.740,41.884],
+        [-87.706,41.886],[-87.683,41.887],[-87.666,41.888],[-87.648,41.888],
+        [-87.635,41.888],[-87.622,41.888],[-87.606,41.888]]},
+  {id:'I',c:'#30B0E0',g:'rgba(48,176,224,.3)',lbl:'INDUSTRIAL',
+   pts:[[-87.630,41.889],[-87.640,41.878],[-87.648,41.868],[-87.655,41.858],
+        [-87.648,41.843],[-87.638,41.830],[-87.628,41.815],[-87.617,41.800],
+        [-87.606,41.783],[-87.594,41.762],[-87.581,41.738],[-87.568,41.715],
+        [-87.554,41.690],[-87.540,41.660]]},
+];
+// Pulse stations [lng, lat, name, lineId]
+const STAS=[
+  [-87.621,41.886,'Loop Central','L'],[-87.621,41.886,'Loop Central','X'],
+  [-87.621,41.886,'Loop Central','I'],[-87.606,41.888,'Waxwing Spur','X'],
+  [-87.618,41.862,'Narrows','L'],[-87.607,41.783,'Hyde Park','L'],
+  [-87.607,41.965,'Uptown','L'],[-87.613,41.995,'Rogers Pk','L'],
+  [-87.575,41.700,'South Chicago Hub','L'],[-87.800,41.882,'Austin Terminal','X'],
+  [-87.706,41.886,'Kedzie Node','X'],[-87.640,41.878,'Bloom Quarter','I'],
+  [-87.540,41.660,'Gary Freight','I'],
+];
+// Aeroplex shadows [lng, lat, radiusDeg]
+const AERO=[
+  [-87.631,41.882,0.013],[-87.610,41.888,0.008],[-87.619,41.876,0.007],
+  [-87.626,41.883,0.006],[-87.637,41.975,0.005],[-87.636,41.858,0.006],
+  [-87.567,41.714,0.010],[-87.608,41.635,0.018],
+];
+// Underwater [lng, lat, name, type]
+const UWTR=[
+  [-87.553,41.883,'Bathysphere Hub — 40m depth','node'],
+  [-87.520,41.823,'Kelpline Freight Node 7','tunnel'],
+  [-87.533,41.754,'Fishmen Settlement — Old South Beach','colony'],
+  [-87.512,41.912,'Bathysphere Station North','node'],
+  [-87.543,41.703,'Cinderfall Thermal Drill 3','thermal'],
+  [-87.554,41.655,'Marrowvault Entry Shaft','cryogenic'],
+  [-87.522,41.785,'Fishmen Settlement — Hyde Shelf','colony'],
+  [-87.503,41.852,'Pelican Drift Platform 7','platform'],
+];
+
+// CorpoNation + territory zones — polygons follow real street boundaries
+const ZONES=[
+  {id:'loop',nm:'THE LOOP — Z1',corp:'AXIOM BIONICS / MIRRORWELL / HALCYON COMBINE',cc:'#7040C8',tier:5,
+   poly:[[-87.648,41.889],[-87.618,41.889],[-87.614,41.883],[-87.614,41.875],[-87.648,41.875]],
+   fill:'#0D0820',sk:'#5030A8',
+   td:'Prestige core. Bounded by Chicago River (N), Congress (S), Lake Shore (E), Halsted (W). Axiom BioNanics on Jackson. Mirrorwell Media on LaSalle, sovereign from 4th floor up by treaty. Arcturus at maximum density. Nine customs nodes around two square miles.',
+   tf:'"The glass is always clean. The people inside are always watching."',
+   xe:'LAKELINE: State/Madison berth (Tier 3+)\nCROSSTOWN: Dearborn depot\nINDUSTRIAL: Congress spur',
+   tw:'TIER 3+ MINIMUM // NINE CUSTOMS NODES // NEURETIC DEEP-SCAN'},
+
+  {id:'waxwing',nm:'WAXWING SPIRE DISTRICT',corp:'WAXWING NEUROMEDIA',cc:'#2040B8',tier:3,
+   poly:[[-87.624,41.903],[-87.595,41.903],[-87.594,41.896],[-87.598,41.889],[-87.614,41.889],[-87.624,41.889]],
+   fill:'#060818',sk:'#1030A0',
+   td:'3.2 sq km in former Streeterville. Oak St to the river, Michigan to the lake. The 94-story Waxwing Spire at Michigan and Erie — direct neural broadcast, cognitive advertising, ambient engagement. The Hive: 11 floors of server below the water table, extending 11 stories down into the lakebed.',
+   tf:'"The Hive doesn\'t store data. It remembers what you almost wanted."',
+   xe:'LAKELINE: Waxwing platform (Tier 3+ boarding)\nStreet: Michigan Ave / Erie St / Ontario',
+   tw:'TIER 3+ REQUIRED // COGNITIVE CONSENT WAIVER AT ENTRY'},
+
+  {id:'river_north',nm:'RIVER NORTH / GOOSE ISLAND',corp:'ORISON NEURETICS — Z4 CAMPUS',cc:'#207090',tier:3,
+   poly:[[-87.636,41.897],[-87.614,41.897],[-87.614,41.889],[-87.636,41.889]],
+   fill:'#081418',sk:'#186080',
+   td:'Orison Neuretics Zone 4 cultivation towers. Neuretic mesh grown on lattice scaffolds before harvest, distributed into licensed maintenance corridors Z2-Z9. The Chicago River runs the south edge. The water quality monitored by Emberlace sensors that no one is authorized to service.',
+   tf:'"The mesh doesn\'t feel like anything while it grows. That\'s how you know it\'s working."',
+   xe:'CROSSTOWN: Goose Island depot\nWaterway: Chicago River (restricted)',
+   tw:'TIER 3+ REQUIRED // BIOMESH AIRBORNE — FILTER RECOMMENDED'},
+
+  {id:'gold_coast',nm:'GOLD COAST / NEAR NORTH',corp:'GRAY ZONE (ACS MONITORED)',cc:'#4A5870',tier:0,
+   poly:[[-87.632,41.910],[-87.594,41.910],[-87.594,41.903],[-87.632,41.903]],
+   fill:'#0C1218',sk:'#20303C',
+   td:'Oak St to North Ave, lakefront to Clark. High-income residential. Arcturus holds a private monitoring contract here that nobody announces. Canyon walls are new construction on pre-flood footprints — the old brass address plates from the original buildings are visible 14 floors down in the submerged strata.',
+   tf:'"The money here is old enough to have its own legal team."',
+   xe:'LAKELINE: Chicago Ave / Oak St platforms\nStreet: Lake Shore Dr / Michigan Ave / Dearborn',
+   tw:null},
+
+  {id:'lincoln_park',nm:'LINCOLN PARK',corp:'GRAY ZONE',cc:'#4A5870',tier:0,
+   poly:[[-87.648,41.925],[-87.601,41.925],[-87.594,41.918],[-87.594,41.910],[-87.648,41.910]],
+   fill:'#0C1218',sk:'#1C2428',
+   td:'North Ave to Fullerton, Halsted to the lake. The park runs a kilometer of open-air ferrocement deck above the canyon floor. Fixer meetings here because no one claims jurisdiction over unmarked pavement. The zoo animals are all second-generation vat-bred. Lincoln Ave cuts diagonally through the western edge.',
+   tf:'"The deer have never seen anything but the city. They don\'t seem to care."',
+   xe:'LAKELINE: Fullerton / Armitage platforms\nStreet: Fullerton Ave / Clark St / Lincoln Ave',
+   tw:null},
+
+  {id:'lakeview',nm:'LAKEVIEW / WRIGLEYVILLE',corp:'GRAY ZONE',cc:'#4A5060',tier:0,
+   poly:[[-87.665,41.939],[-87.630,41.939],[-87.594,41.932],[-87.594,41.925],[-87.665,41.925]],
+   fill:'#0C0E18',sk:'#1C1E28',
+   td:'Fullerton to Belmont, lakefront to Ashland. The old stadium at Clark and Addison is a rooftop market now — 16 floors of vendor permits built over the original roof line. Emberlace Systems runs traffic and flood gates throughout but holds no territorial claim. The ferrocement understructure shows through on the east side at grade.',
+   tf:'"The bleachers face north now. They rebuilt the whole thing upside down."',
+   xe:'LAKELINE: Belmont / Addison platforms\nStreet: Belmont Ave / Clark St / Halsted',
+   tw:null},
+
+  {id:'bucktown',nm:'BUCKTOWN / WICKER PARK — FREELANCER QUARTER',corp:'BUCKTOWN COMPACT',cc:'#6A7A40',tier:0,
+   poly:[[-87.683,41.932],[-87.648,41.932],[-87.648,41.910],[-87.683,41.910]],
+   fill:'#0E140C',sk:'#3A4A1C',
+   td:'Diversey to North Ave, Halsted to Western. Named territory. Not ruled, recognized — the Bucktown Compact splits permit corners between fixer networks and bloc crews, 12 years and no paper. Milwaukee Ave cuts diagonally through on its way northwest, breaking the grid. Kyle operates out of here when the Loop runs hot.',
+   tf:'"You don\'t need a corp badge. You need a rep and a solid second."',
+   xe:'CROSSTOWN: Damen Node\nStreet: Milwaukee Ave / North Ave / Damen Ave',
+   tw:'COMPACT LAW // BADGES NOT RECOGNIZED'},
+
+  {id:'west_town',nm:'WEST TOWN / UKRAINIAN VILLAGE',corp:'NAMED TERRITORY — THE WESTERNS',cc:'#5A5040',tier:0,
+   poly:[[-87.683,41.897],[-87.648,41.897],[-87.648,41.882],[-87.683,41.882]],
+   fill:'#141008',sk:'#3A3020',
+   td:'Chicago Ave to Madison, Halsted to Western. The Western family has held the permit map 30 years — no deed, no army, just presence and institutional memory. Grand Ave cuts through diagonally, making the retail strip a study in improvised geometry. Three food-vendor permits on the same corner, none expiring the same month.',
+   tf:'"Every door here opens into someone else\'s business."',
+   xe:'CROSSTOWN: Grand Ave node\nStreet: Grand Ave / Chicago Ave / Damen Ave',
+   tw:'COMPACT LAW — WESTERNS TERRITORY'},
+
+  {id:'uptown',nm:'UPTOWN / EDGEWATER',corp:'GRAY ZONE',cc:'#4A6070',tier:0,
+   poly:[[-87.660,41.984],[-87.638,41.984],[-87.629,41.978],[-87.594,41.973],[-87.594,41.962],[-87.660,41.962]],
+   fill:'#0E1520',sk:'#1E2A38',
+   td:'Lawrence to Bryn Mawr, lakefront to Ravenswood. Former entertainment corridor never fully rebuilt after the 2174 flood cycle. A Kelpline Logistics access shaft is in a bodega on Wilson Ave that has been "temporarily closed" for six years. Dense Emberlace sensor mesh overhead. Broadway runs diagonally through as the old lakeshore road.',
+   tf:'"Uptown smells like food and static. Never a bad sign."',
+   xe:'LAKELINE: Wilson / Lawrence / Argyle platforms\nStreet: Lawrence Ave / Broadway / Sheridan Rd',
+   tw:'NO CORPO AUTHORITY // SCAV NETWORK ACTIVE'},
+
+  {id:'rogers',nm:'ROGERS PARK',corp:'GRAY ZONE / VELLICHOR EDGE',cc:'#4A6070',tier:0,
+   poly:[[-87.669,42.019],[-87.636,42.019],[-87.629,42.012],[-87.594,42.008],[-87.594,41.998],[-87.669,41.998]],
+   fill:'#0E1520',sk:'#1E2A38',
+   td:'Howard to Devon, city\'s northern edge. Vellichor Institute\'s Reading Room occupies the lakefront strip — brutalist skywalks, manicured grounds, off-limits. Everything else is open freelancer territory. Block crews hold corners by street. Ridge Ave cuts diagonally through, creating a wedge of ambiguous permit territory near the northwest.',
+   tf:'"North of Howard is still Chicago. Chicago just doesn\'t agree."',
+   xe:'LAKELINE: Rogers Park / Morse platforms\nStreet: Howard Ave / Sheridan Rd / Ridge Ave',
+   tw:'NO CORPO AUTHORITY // BLOCK CREW JURISDICTION'},
+
+  {id:'vellichor',nm:'VELLICHOR INSTITUTE — THE READING ROOM',corp:'VELLICHOR INSTITUTE',cc:'#2A8A7A',tier:4,
+   poly:[[-87.632,41.997],[-87.594,41.997],[-87.594,41.981],[-87.614,41.979],[-87.632,41.984]],
+   fill:'#08201C',sk:'#208070',
+   td:'Northern lakeshore research campus on Sheridan Rd. Low-rise brutalist buildings connected by enclosed skywalks. Neurotechnology and memory engineering — "archival cognitive research." The grounds are one of the few green spaces in the GLMZ not attached to an arcology. Credentials only, no exceptions, no day passes.',
+   tf:'"You can see the lake from every room. That is not an accident."',
+   xe:'LAKELINE: Vellichor private platform (Tier 4+)\nWaterway: private shore access only',
+   tw:'TIER 4+ REQUIRED // NEURETIC DEEP-SCAN AT ENTRY'},
+
+  {id:'lacuna',nm:'LACUNA GENOMICS / ZION CAMPUS',corp:'LACUNA GENOMICS',cc:'#9A2040',tier:4,
+   poly:[[-87.840,42.042],[-87.820,42.042],[-87.820,42.020],[-87.840,42.020]],
+   fill:'#1A0810',sk:'#6A1030',
+   td:'14-sq-km biozone on former Zion wetlands, north of GLMZ proper. The Sterile Ring: aerosol nanotech sensors at the perimeter. If you carry unauthorized genomods, the gate logs you before your boots hit the driveway. No road access. Lacuna spur from the Lakeline only.',
+   tf:'"They built it on a wetland because the runoff has nowhere to go."',
+   xe:'PULSE: Lakeline — Lacuna spur (restricted, Tier 4+)\nNo road access',
+   tw:'TIER 4+ REQUIRED // BIOSCREEN MANDATORY // STERILE RING ACTIVE'},
+
+  {id:'logan_sq',nm:'LOGAN SQUARE / HERMOSA',corp:'GRAY ZONE',cc:'#4A4850',tier:0,
+   poly:[[-87.726,41.932],[-87.683,41.932],[-87.683,41.910],[-87.726,41.910]],
+   fill:'#0C0C18',sk:'#1C1C28',
+   td:'Diversey to North Ave, Western to Pulaski. Three scav networks split the permit corners without a compact. The median trees on Logan Blvd are wrapped in Emberlace sensor mesh — locals call it "the Wire." Milwaukee Ave cuts diagonally through as the main corridor and de facto Block War boundary.',
+   tf:'"The trees know more than they are allowed to say."',
+   xe:'CROSSTOWN: Kedzie platform\nStreet: Milwaukee Ave / Logan Blvd / Pulaski Rd',
+   tw:'GRAY ZONE // SCAV NETWORK CONTESTED'},
+
+  {id:'humboldt',nm:'HUMBOLDT PARK',corp:'GRAY ZONE — BLOCK WARS ACTIVE',cc:'#503840',tier:0,
+   poly:[[-87.726,41.910],[-87.695,41.910],[-87.695,41.882],[-87.726,41.882]],
+   fill:'#100A0A',sk:'#281818',
+   td:'North Ave to Madison, Kedzie to Pulaski. Block Wars have run here continuously since 2219. The Pulse Crosstown passes through underground — the platform sealed after the 2221 incident. Nobody describes the 2221 incident. The park lagoon is on Emberlace flood control; the water level rises sometimes without a stated reason.',
+   tf:'"You don\'t get lost in Humboldt Park. You arrive somewhere different."',
+   xe:'CROSSTOWN: Sealed platform — no stop\nStreet: Division St / Pulaski Rd',
+   tw:'BLOCK WAR ACTIVE // NO SAFE PASSAGE GUARANTEE'},
+
+  {id:'austin_null',nm:'AUSTIN — Z∞ WEST APPROACH',corp:'Z∞ UNGOVERNED',cc:'#303030',tier:-1,
+   poly:[[-87.803,41.910],[-87.766,41.910],[-87.766,41.861],[-87.803,41.861]],
+   fill:'#060608',sk:'#101010',
+   td:'Former Austin, widest neighborhood in old Chicago, now the GLMZ western non-boundary. Where administered territory gives way to nothing — not Block Wars, just the absence of claim. Ironclad Agrisystems drones pass overhead on Iowa-Chicago runs. Pulse Crosstown terminates at an unmanned station at Austin Blvd.',
+   tf:'"The city ends. The city does not announce this."',
+   xe:'CROSSTOWN: Austin Terminal (unmanned end-of-line)\nSurface: Cicero Ave heading west (unmaintained)',
+   tw:'Z∞ // CITY AUTHORITY ENDS // NO RECORD // NO RECOVERY'},
+
+  {id:'west_loop',nm:'WEST LOOP / NEAR WEST SIDE',corp:'GRAY ZONE',cc:'#4A5060',tier:0,
+   poly:[[-87.666,41.889],[-87.648,41.889],[-87.648,41.875],[-87.666,41.875]],
+   fill:'#0C1018',sk:'#1C2028',
+   td:'Chicago River to Congress, Halsted to Damen. Transit junction — Crosstown and Industrial lines cross here. Busy with commuter traffic but unsettled. Ironclad Meridian Solutions runs enforcement on a rolling Gray Zone charter. Ogden Ave cuts diagonally, creating a wedge of contested corners near Ashland.',
+   tf:'"Between two kingdoms, everyone is their own law."',
+   xe:'CROSSTOWN: Halsted/Madison\nINDUSTRIAL: Congress spur south\nStreet: Madison St / Ogden Ave / Halsted',
+   tw:'GRAY ZONE // IRONCLAD MERIDIAN ON ROLLING CONTRACT'},
+
+  {id:'bloom',nm:'BLOOM QUARTER — Z5',corp:'BLOOM SCIENCES COLLECTIVE',cc:'#1A8A30',tier:2,
+   poly:[[-87.676,41.867],[-87.648,41.867],[-87.648,41.852],[-87.676,41.852]],
+   fill:'#081410',sk:'#186028',
+   td:'Roosevelt to Cermak, Halsted to Damen. Nanotech research and biomodification district. Legal-gray clinics two blocks from Bloom Sciences\' legitimate compound. Class I-III nanotech is the public face. Body-mod culture most visible here — functional and decorative modifications displayed without apology.',
+   tf:'"You want clean work, you go to Z5. Work that passes a checkpoint scan — different conversation."',
+   xe:'INDUSTRIAL: Bloom Quarter spur\nStreet: Halsted St / Cermak Rd / Damen Ave',
+   tw:'TIER 2 ACCESS // BIOMOD SCAN AT ENTRY — UNDECLARED MODS FLAGGED'},
+
+  {id:'chinatown',nm:'CHINATOWN / BRIDGEPORT — THE NARROWS',corp:'GRAY ZONE (CONTESTED)',cc:'#504060',tier:0,
+   poly:[[-87.648,41.852],[-87.628,41.852],[-87.628,41.830],[-87.648,41.830]],
+   fill:'#10080E',sk:'#2A1828',
+   td:'Cermak to 35th, Wentworth to Halsted. The Narrows: Axiom\'s southern boundary and the Lotus Syndicate\'s informal claim run parallel two blocks apart. Both corpos run overlapping scans. The old Chinatown neighborhood markers are still up. Nobody took them down. Wentworth Ave scan density doubles after 22:00.',
+   tf:'"Two bosses means no boss. In practice it means two sets of fees."',
+   xe:'LAKELINE: Chinatown/Cermak platform\nStreet: Cermak Rd / Wentworth Ave / Archer Ave',
+   tw:'CONTESTED ZONE // LOTUS SYNDICATE CLAIM // DUAL CORPO SCAN ACTIVE'},
+
+  {id:'canaryville',nm:'CANARYVILLE / NEW UNION PROCESSING CORRIDOR',corp:'OMNI PRO BIOSYSTEMS',cc:'#A06020',tier:0,
+   poly:[[-87.666,41.817],[-87.633,41.817],[-87.633,41.795],[-87.666,41.795]],
+   fill:'#181008',sk:'#783010',
+   td:'43rd to 55th, Halsted to Western. OmniPro Biosystems on the footprint of the old stockyards. Vat-grown protein production, gray-market bio-slurry. Not a sovereign-charter corp, so no customs gate — Arcturus holds the perimeter contract instead. The smell reaches three zones. Vincennes Ave cuts south through here.',
+   tf:'"The yards never stopped running. The product just changed."',
+   xe:'INDUSTRIAL: Canaryville node\nStreet: 47th St / Halsted St / Vincennes Ave',
+   tw:'OMNI PRO RESTRICTED PROCESSING // ACS PERIMETER CONTRACT'},
+
+  {id:'pilsen',nm:'PILSEN / LITTLE VILLAGE',corp:'GRAY ZONE',cc:'#484850',tier:0,
+   poly:[[-87.683,41.852],[-87.648,41.852],[-87.648,41.830],[-87.683,41.830]],
+   fill:'#0C0E18',sk:'#1C1E28',
+   td:'Cermak to 31st, Ashland to Western. Dense residential — diaspora-layered over multiple generations. Bloom Quarter clinic network extends unlicensed maintenance shops south through here. The ferrocement understructure carries flood-control conduits; on wet nights the walls sweat.',
+   tf:'"The city flooded this neighborhood twice. They stayed both times."',
+   xe:'No Pulse (cargo lift or walk)\nStreet: 18th St / Blue Island Ave / 26th St',
+   tw:null},
+
+  {id:'hyde_park',nm:'HYDE PARK / KENWOOD',corp:'GRAY ZONE — ACADEMIC BUFFER',cc:'#486070',tier:0,
+   poly:[[-87.606,41.802],[-87.571,41.802],[-87.565,41.795],[-87.565,41.781],[-87.606,41.781]],
+   fill:'#0A1014',sk:'#1A2530',
+   td:'51st to 63rd, Cottage Grove to the lake. Vellichor Institute\'s southern satellite in the old university buildings, licensed not sovereign. The Midway is a Pulse engineering buffer zone; the Industrial line runs beneath it. Stand still at 55th and you feel the 19Hz Pulse hum in your molars. Stony Island Ave follows old lakefront geometry south.',
+   tf:'"You can hear the Pulse if you stand still long enough."',
+   xe:'LAKELINE: Hyde Park platform (public, Tier 0)\nINDUSTRIAL: sub-Midway (no stop)\nStreet: 55th St / Cottage Grove / Stony Island',
+   tw:null},
+
+  {id:'south_shore',nm:'WOODLAWN / SOUTH SHORE',corp:'GRAY ZONE / VANTABLACK SPIRE',cc:'#4A5060',tier:0,
+   poly:[[-87.606,41.781],[-87.553,41.781],[-87.548,41.769],[-87.545,41.751],[-87.606,41.751]],
+   fill:'#0C1018',sk:'#1C2028',
+   td:'63rd to 79th, lakeshore corridor. The Ferrocement Wave is closest to grade here — the 90-meter concrete face visible at every east-west street end. Vantablack Media\'s Lakeshore Sector 7 broadcast facility is embedded in the Wave itself, floors 4 through 18 doing double duty as a transmission tower.',
+   tf:'"The Wave is the city wall. It just doesn\'t face out."',
+   xe:'LAKELINE: 71st / 75th platforms\nStreet: 71st St / Stony Island Ave / South Shore Dr',
+   tw:null},
+
+  {id:'south_chicago',nm:'SOUTH CHICAGO / CALUMET — CRUCIBLE CAMPUS',corp:'CRUCIBLE GENOMICS',cc:'#8A3010',tier:4,
+   poly:[[-87.600,41.751],[-87.534,41.751],[-87.530,41.738],[-87.527,41.718],[-87.540,41.700],[-87.600,41.700]],
+   fill:'#180800',sk:'#702008',
+   td:'Walled 22-sq-km compound on reclaimed Calumet River industrial land. Sealed greenhouse biomes, gene-forge facilities, and the Protein Theater — where the labor biology program results are evaluated. Nobody elaborates. Stony Island Ave runs through the perimeter as a controlled-access corridor.',
+   tf:'"You sign a 5-year contract. The work is \'biological logistics.\' Read the small print."',
+   xe:'INDUSTRIAL: South Chicago Hub\nLake: Calumet Harbor (restricted)\nStreet: 79th St / Stony Island / Indianapolis Blvd',
+   tw:'TIER 4+ REQUIRED // BIOHAZARD ACTIVE // GENOME SCAN AT ENTRY'},
+
+  {id:'pullman',nm:'PULLMAN / ROSELAND — Z∞ EDGE',corp:'GRAY ZONE',cc:'#40484A',tier:0,
+   poly:[[-87.683,41.700],[-87.600,41.700],[-87.600,41.660],[-87.683,41.660]],
+   fill:'#0A0C10',sk:'#181E24',
+   td:'103rd to 130th. Transition from administered GLMZ to the Null. Block Wars cycle fast — street maps go wrong inside a week. Pulse Industrial passes through underground; passenger stations decommissioned, platforms became squatter infrastructure. The Pullman clock tower still stands. Nobody knows who maintains it.',
+   tf:'"The Pulse platforms are the only level ground left down here."',
+   xe:'INDUSTRIAL: freight only — no passenger stop\nStreet: 111th St / Halsted St / Michigan Ave',
+   tw:'Z∞ BOUNDARY // BLOCK WAR ACTIVE // NO CORPO AUTHORITY'},
+
+  {id:'null_south',nm:'Z∞ — THE NULL (SOUTH SPRAWL)',corp:'Z∞ UNGOVERNED',cc:'#282830',tier:-1,
+   poly:[[-87.803,41.660],[-87.540,41.660],[-87.520,41.640],[-87.500,41.610],[-87.803,41.610]],
+   fill:'#060608',sk:'#141418',
+   td:'Former Calumet City, Harvey, Dolton. No corpo claim. No block law beyond visual range. Scavs run salvage. Iowan Behemoths from decommissioned Gary lines wander through. Nothing is on record. The Indiana state line is a concept here.',
+   tf:'"The Null doesn\'t need a map. Everyone who matters knows which way is out."',
+   xe:'No Pulse\nSurface only — unmonitored',
+   tw:'Z∞ // NO LAW // NO RECORD // NO RECOVERY'},
+
+  {id:'gary',nm:'ASHGRAVE SYNTHESIS CORRIDOR / GARY SPRAWL',corp:'ASHGRAVE MATERIALS + SLAGWORKS INDUSTRIAL',cc:'#907020',tier:3,
+   poly:[[-87.803,41.620],[-87.495,41.620],[-87.490,41.600],[-87.803,41.600]],
+   fill:'#141200',sk:'#706010',
+   td:'60km linear industrial zone through former Gary, Indiana. One of GLMZ\'s most polluted sovereign territories — acknowledged in Ashgrave investor documentation. Slagworks Foundry Belt runs parallel: 34km of continuous heavy industrial along the lakeshore. Iowan Behemoth staging grounds in the eastern yards. N95+ filter rating minimum.',
+   tf:'"You can see the Corridor glow from the air. Ashgrave calls that their brand."',
+   xe:'INDUSTRIAL: Gary Freight Hub (Tier 3+ restricted)\nLake: industrial harbor\nStreet: Indianapolis Blvd / US-12',
+   tw:'TIER 3+ ACCESS // INDUSTRIAL HAZARD // RESPIRATORY FILTER REQUIRED'},
+];
+
+let activeZone=null;
+function drawMap(){
+  ctx.clearRect(0,0,W,H);
+  // Lake Michigan base
+  ctx.fillStyle='#020914';ctx.fillRect(0,0,W,H);
+  // Land background west of Wave
+  ctx.fillStyle='#060810';
+  ctx.beginPath();ctx.moveTo(0,0);
+  for(const[lng,lat] of WAVE){const[x,y]=px(lng,lat);ctx.lineTo(x,y);}
+  ctx.lineTo(W,H);ctx.lineTo(0,H);ctx.closePath();ctx.fill();
+
+  // Minor grid (~8-block intervals)
+  ctx.lineWidth=0.3;
+  for(let lat=Math.ceil(B.s/0.007)*0.007;lat<B.n;lat+=0.007){
+    ctx.strokeStyle='#0B1220';
+    const[x1,y]=px(B.w,lat);const[x2]=px(B.e,lat);
+    ctx.beginPath();ctx.moveTo(x1,y);ctx.lineTo(x2,y);ctx.stroke();
+  }
+  for(let lng=Math.ceil(B.w/0.006)*0.006;lng<B.e;lng+=0.006){
+    ctx.strokeStyle='#0B1220';
+    const[x,y1]=px(lng,B.n);const[,y2]=px(lng,B.s);
+    ctx.beginPath();ctx.moveTo(x,y1);ctx.lineTo(x,y2);ctx.stroke();
+  }
+  // Major E-W streets
+  for(const[lat,,bold] of EW){
+    const[x1,y]=px(B.w,lat);const[x2]=px(B.e,lat);
+    ctx.strokeStyle=bold?'#16243A':'#0F1A2C';ctx.lineWidth=bold?0.6:0.35;
+    ctx.beginPath();ctx.moveTo(x1,y);ctx.lineTo(x2,y);ctx.stroke();
+  }
+  // Major N-S streets
+  for(const[lng,,bold] of NS){
+    const[x,y1]=px(lng,B.n);const[,y2]=px(lng,B.s);
+    ctx.strokeStyle=bold?'#16243A':'#0F1A2C';ctx.lineWidth=bold?0.6:0.35;
+    ctx.beginPath();ctx.moveTo(x,y1);ctx.lineTo(x,y2);ctx.stroke();
+  }
+  // Diagonal streets
+  ctx.strokeStyle='#16243A';ctx.lineWidth=0.6;
+  for(const d of DIAG){
+    ctx.beginPath();
+    d.pts.forEach(([lng,lat],i)=>{const[x,y]=px(lng,lat);i?ctx.lineTo(x,y):ctx.moveTo(x,y)});
+    ctx.stroke();
+  }
+
+  // Zone fills (semi-transparent so grid shows through)
+  for(const z of ZONES){
+    ctx.globalAlpha=activeZone===z.id?0.88:0.78;
+    ctx.fillStyle=z.fill;
+    ctx.beginPath();
+    z.poly.forEach(([lng,lat],i)=>{const[x,y]=px(lng,lat);i?ctx.lineTo(x,y):ctx.moveTo(x,y)});
+    ctx.closePath();ctx.fill();ctx.globalAlpha=1;
+    ctx.strokeStyle=activeZone===z.id?z.sk:z.sk+'90';
+    ctx.lineWidth=activeZone===z.id?1.6:0.7;
+    ctx.beginPath();
+    z.poly.forEach(([lng,lat],i)=>{const[x,y]=px(lng,lat);i?ctx.lineTo(x,y):ctx.moveTo(x,y)});
+    ctx.closePath();ctx.stroke();
+  }
+
+  // Aeroplex shadows
+  for(const[lng,lat,rad] of AERO){
+    const[cx,cy]=px(lng,lat);
+    const rx=rad/(B.e-B.w)*W,ry=rad/(B.n-B.s)*H;
+    const g=ctx.createRadialGradient(cx,cy,0,cx,cy,Math.max(rx,ry));
+    g.addColorStop(0,'rgba(130,150,255,.15)');g.addColorStop(.6,'rgba(100,120,220,.05)');g.addColorStop(1,'rgba(80,100,200,0)');
+    ctx.save();ctx.scale(1,ry/rx);
+    ctx.beginPath();ctx.arc(cx,cy*rx/ry,rx,0,Math.PI*2);
+    ctx.fillStyle=g;ctx.fill();ctx.restore();
+  }
+
+  // Pulse routes
+  for(const r of PULSE){
+    ctx.beginPath();r.pts.forEach(([lng,lat],i)=>{const[x,y]=px(lng,lat);i?ctx.lineTo(x,y):ctx.moveTo(x,y)});
+    ctx.strokeStyle=r.g;ctx.lineWidth=5;ctx.stroke();
+    ctx.beginPath();r.pts.forEach(([lng,lat],i)=>{const[x,y]=px(lng,lat);i?ctx.lineTo(x,y):ctx.moveTo(x,y)});
+    ctx.strokeStyle=r.c;ctx.lineWidth=1.3;ctx.setLineDash([6,4]);ctx.stroke();ctx.setLineDash([]);
+  }
+
+  // Ferrocement Wave
+  ctx.beginPath();WAVE.forEach(([lng,lat],i)=>{const[x,y]=px(lng,lat);i?ctx.lineTo(x,y):ctx.moveTo(x,y)});
+  ctx.strokeStyle='#607888';ctx.lineWidth=1.8;ctx.stroke();
+
+  // Pulse stations
+  for(const[lng,lat,,line] of STAS){
+    const[x,y]=px(lng,lat);const col=PULSE.find(p=>p.id===line)?.c||'#F0A830';
+    ctx.fillStyle='#06080E';ctx.strokeStyle=col;ctx.lineWidth=1;
+    ctx.fillRect(x-3,y-3,6,6);ctx.strokeRect(x-3,y-3,6,6);
+  }
+
+  // Underwater markers
+  for(const[lng,lat,,type] of UWTR){
+    const[x,y]=px(lng,lat);
+    const col=type==='colony'?'#0040C0':type==='platform'?'#0060A8':'#003898';
+    const g=ctx.createRadialGradient(x,y,0,x,y,8);
+    g.addColorStop(0,col+'CC');g.addColorStop(1,col+'00');
+    ctx.beginPath();ctx.arc(x,y,8,0,Math.PI*2);ctx.fillStyle=g;ctx.fill();
+    ctx.beginPath();ctx.arc(x,y,2.5,0,Math.PI*2);ctx.fillStyle=col;ctx.fill();
+  }
+
+  // Neighborhood centroid labels
+  ctx.font='6px Courier New';ctx.textAlign='center';ctx.textBaseline='middle';
+  ctx.fillStyle='rgba(200,220,255,0.11)';
+  for(const[lng,lat,nm] of NHDS){
+    const[x,y]=px(lng,lat);ctx.fillText(nm,x,y);
+  }
+
+  // Street name labels (bold major arterials)
+  ctx.font='5.5px Courier New';ctx.textAlign='left';ctx.fillStyle='#1C2E42';
+  for(const[lat,lbl,bold] of EW){
+    if(!bold)continue;
+    const[x,y]=px(B.w+0.004,lat);ctx.fillText(lbl,x,y-2.5);
+  }
+  ctx.textAlign='right';
+  for(const[lng,lbl,bold] of NS){
+    if(!bold)continue;
+    const[x,y]=px(lng,B.n-0.002);
+    ctx.save();ctx.translate(x-2,y);ctx.rotate(-Math.PI/2);ctx.fillText(lbl,0,0);ctx.restore();
+  }
+
+  // Pulse line labels
+  ctx.font='bold 7px Courier New';ctx.textAlign='left';
+  for(const r of PULSE){
+    const m=r.pts[2];const[x,y]=px(m[0],m[1]);
+    ctx.fillStyle=r.c;ctx.fillText(r.lbl,x+5,y-4);
+  }
+}
+
+function hitZone(mx,my){
+  for(let i=ZONES.length-1;i>=0;i--){
+    const z=ZONES[i];let inside=false;const n=z.poly.length;
+    for(let a=0,b=n-1;a<n;b=a++){
+      const[x1,y1]=px(z.poly[a][0],z.poly[a][1]);
+      const[x2,y2]=px(z.poly[b][0],z.poly[b][1]);
+      if((y1>my)!==(y2>my)&&mx<(x2-x1)*(my-y1)/(y2-y1)+x1)inside=!inside;
+    }
+    if(inside)return z;
+  }
+  for(const[lng,lat,nm,type] of UWTR){
+    const[x,y]=px(lng,lat);
+    if(Math.hypot(mx-x,my-y)<10)return{
+      id:'uw',nm:nm.toUpperCase(),corp:'SUBMERGED / BATHYSPHERE NETWORKS',cc:'#1050C0',tier:3,
+      td:`Submerged infrastructure (${type}). Access via pressurized transit capsule from Pulse Industrial line or direct lake-dive with rated pressure suit. Bathysphere Networks holds sovereign lakebed status — entering without clearance is a charter violation.`,
+      tf:'"The underwater networks are older than the corpos that claim them."',
+      xe:'Sub-lake transit capsule only',tw:'PRESSURIZED ENTRY // DEPTH CLEARANCE REQUIRED'};
+  }
+  return null;
+}
+
+function upd(z){
+  if(!z){
+    document.getElementById('tl').textContent='—';
+    document.getElementById('tc').textContent='NO SECTOR DATA';
+    document.getElementById('td').textContent='Move cursor over the map to navigate sectors.';
+    document.getElementById('tf').textContent='';document.getElementById('xe').textContent='';
+    document.getElementById('tw').style.display='none';return;
+  }
+  document.getElementById('tl').textContent=z.nm;
+  const tier=z.tier>0?`TIER ${z.tier}+`:z.tier===0?'GRAY ZONE':'Z∞ UNGOVERNED';
+  document.getElementById('tc').textContent=`⬡ ${z.corp} // ${tier}`;
+  document.getElementById('tc').style.color=z.cc;
+  document.getElementById('td').textContent=z.td;
+  document.getElementById('tf').textContent=z.tf;
+  document.getElementById('xe').textContent=z.xe||'';
+  const w=document.getElementById('tw');
+  if(z.tw){w.textContent='⚠ '+z.tw;w.style.display='';}else{w.style.display='none';}
+}
+
+cv.addEventListener('mousemove',e=>{
+  const r=cv.getBoundingClientRect();
+  const mx=(e.clientX-r.left)*(cv.width/r.width);
+  const my=(e.clientY-r.top)*(cv.height/r.height);
+  const z=hitZone(mx,my);
+  if((z?.id||null)!==activeZone){activeZone=z?.id||null;upd(z);drawMap();}
+  const lng=(B.w+mx/W*(B.e-B.w)).toFixed(4);
+  const lat=(B.n-my/H*(B.n-B.s)).toFixed(4);
+  document.getElementById('mc').textContent=`LAT ${lat} // LNG ${lng}${z?' // '+z.nm.slice(0,26):''}`;
+});
+cv.addEventListener('mouseleave',()=>{activeZone=null;upd(null);drawMap();});
+function init(){sz();drawMap();upd(ZONES.find(z=>z.id==='loop'));}
+window.addEventListener('resize',()=>{sz();drawMap();});
+init();
+</script>
