@@ -33,7 +33,7 @@
 
 <style>
     .node-shell { max-width: 1040px; }
-    .node-head { position: sticky; top: 0; z-index: 5; background: rgba(15,15,15,0.95); backdrop-filter: blur(6px); border-bottom: 1px solid #2a2a2a; padding: 0.75rem 0; margin-bottom: 1rem; }
+    .node-head { background: rgba(15,15,15,0.95); border-bottom: 1px solid #2a2a2a; padding: 0.75rem 0; margin-bottom: 1rem; }
     .node-title { background: transparent; border: none; color: #f8f9fa; font-size: 1.5rem; font-weight: 600; padding: 0; outline: none; }
     .node-title:focus { box-shadow: none; border-bottom: 2px solid #0dcaf0; }
     .node-description { background: transparent; border: none; color: #adb5bd; font-size: 0.9rem; resize: none; padding: 0; outline: none; width: 100%; }
@@ -140,13 +140,13 @@
     /* Children nav — shown on collection nodes (those with direct children).
        Each child node is a row: kind badge · title · score/status · arrow.
        Clicking navigates to /node/{child.Slug} to edit that node alone. */
-    .node-children-nav { border: 1px solid #2a2a2a; border-radius: 6px; background: #0f0f0f; margin-bottom: 1rem; }
-    .node-children-nav-head { font-size: 0.7rem; text-transform: uppercase; letter-spacing: 0.1em; color: #8b949e; padding: 0.45rem 0.9rem 0.3rem; border-bottom: 1px solid #1a1a1a; }
-    .node-children-nav-list { display: flex; flex-direction: column; }
-    .node-children-nav-item { display: flex; align-items: center; gap: 0.4rem; padding: 0.45rem 0.9rem; text-decoration: none; color: #e9ecef; border-bottom: 1px solid #1a1a1a; transition: background 0.1s ease; }
-    .node-children-nav-item:last-child { border-bottom: none; border-radius: 0 0 5px 5px; }
-    .node-children-nav-item:hover { background: rgba(13,202,240,0.06); color: #f8f9fa; }
-    .node-children-nav-item:hover .scn-arrow { color: #0dcaf0; }
+    .node-toc { border: 1px solid #2a2a2a; border-radius: 6px; background: #0f0f0f; margin-bottom: 1.5rem; }
+    .node-toc-head { font-size: 0.7rem; text-transform: uppercase; letter-spacing: 0.1em; color: #8b949e; padding: 0.45rem 0.9rem 0.3rem; border-bottom: 1px solid #1a1a1a; }
+    .node-toc-item { display: flex; align-items: center; gap: 0.5rem; padding: 0.4rem 0.9rem; text-decoration: none; color: #adb5bd; border-bottom: 1px solid #1a1a1a; transition: color 0.1s ease; font-size: 0.9rem; }
+    .node-toc-item:last-child { border-bottom: none; }
+    .node-toc-item:hover { color: #0dcaf0; }
+    .node-toc-num { color: #495057; font-size: 0.8rem; min-width: 1.5rem; }
+    .chapter-heading { font-size: 1rem; font-weight: 600; color: #8b949e; text-transform: uppercase; letter-spacing: 0.08em; padding: 0.5rem 0 0.4rem; border-top: 1px solid #2a2a2a; margin-top: 1.5rem; margin-bottom: 0.75rem; }
     .scn-kind { font-size: 0.6rem; flex-shrink: 0; }
     .scn-title { font-size: 0.92rem; font-weight: 500; flex-grow: 1; }
     .scn-status { font-size: 0.6rem; flex-shrink: 0; }
@@ -251,7 +251,7 @@
        overlay is gone. */
     /* Gutter insert: faintly visible at rest so the affordance is
        discoverable, full strength when the pointer enters the gutter. */
-    .insert-bar { display: flex; align-items: center; gap: 0.5rem; opacity: 0.22; transition: opacity 0.15s ease; padding: 0.25rem 0; }
+    .insert-bar { display: flex; align-items: center; gap: 0.5rem; opacity: 0.22; transition: opacity 0.15s ease; padding: 0.25rem 0; margin-bottom: 0.5rem; }
     .insert-bar:hover, .insert-bar:focus-within { opacity: 1; }
     .insert-bar-line { flex-grow: 1; height: 1px; background: #2a2a2a; }
     .beat-meta-chips { display: flex; flex-wrap: wrap; gap: 0.25rem; margin-top: 0.35rem; font-size: 0.7rem; }
@@ -295,21 +295,6 @@ else if (node == null)
 else
 {
     <div class="container node-shell py-3">
-        @if (ancestors.Count > 0)
-        {
-            <nav aria-label="node breadcrumb" class="mb-2">
-                <ol class="d-flex flex-wrap gap-1 small text-muted mb-0 ps-0" style="list-style:none;">
-                    <li><a href="/nodes" class="text-decoration-none text-muted">nodes</a></li>
-                    @foreach (var a in ancestors)
-                    {
-                        <li>›</li>
-                        <li><a href="@($"/node/{a.Slug}")" class="text-decoration-none text-info">@a.Title</a><span class="text-muted ms-1">(@a.Kind)</span></li>
-                    }
-                    <li>›</li>
-                    <li><span class="text-light">@node.Title</span></li>
-                </ol>
-            </nav>
-        }
         <div class="node-head">
             <div class="d-flex align-items-start gap-3">
                 <div class="flex-grow-1">
@@ -333,43 +318,24 @@ else
                     else { <i class="bi bi-download me-1"></i> }
                     Export
                 </button>
-                <div class="ms-auto">
-                    <a href="/nodes" class="btn btn-sm btn-link text-muted">
-                        <i class="bi bi-arrow-left me-1"></i>All nodes
-                    </a>
-                </div>
             </div>
 
         </div>
 
-        @* Children navigation — when this is a collection, list direct child nodes
-           so the user can click into each one to edit it in isolation. *@
+        @* Table of Contents — anchor links to each chapter section below. *@
         @if (children.Count > 0)
         {
-            <div class="node-children-nav">
-                <div class="node-children-nav-head">
-                    <i class="bi bi-diagram-3 me-1"></i>@children.Count contained node(s) — click to open and edit
-                </div>
-                <div class="node-children-nav-list">
-                    @for (var ci = 0; ci < children.Count; ci++)
-                    {
-                        var child = children[ci];
-                        <a href="/node/@child.Slug" class="node-children-nav-item">
-                            <span class="badge bg-secondary text-uppercase scn-kind">@child.Kind</span>
-                            <span class="scn-title">@(string.IsNullOrWhiteSpace(child.Title) ? $"Chapter {ci + 1}" : child.Title)</span>
-                            @if (!string.IsNullOrWhiteSpace(child.Description))
-                            {
-                                <span class="scn-description" title="@child.Description">@child.Description</span>
-                            }
-                            @if (child.Score.HasValue)
-                            {
-                                <span class="badge @ScorePctColor(child.Score.Value) ms-1">@child.Score.Value.ToString("0")%</span>
-                            }
-                            <span class="badge bg-@StatusColor(child.Status) text-uppercase ms-1 scn-status">@StatusLabel(child.Status)</span>
-                            <i class="bi bi-arrow-right-short scn-arrow"></i>
-                        </a>
-                    }
-                </div>
+            <div class="node-toc">
+                <div class="node-toc-head">Table of Contents</div>
+                @for (var ci = 0; ci < children.Count; ci++)
+                {
+                    var child = children[ci];
+                    var chTitle = string.IsNullOrWhiteSpace(child.Title) ? $"Chapter {ci + 1}" : child.Title;
+                    <a href="#chapter-@child.Id.ToString("N")" class="node-toc-item">
+                        <span class="node-toc-num">@(ci + 1).</span>
+                        <span>@chTitle</span>
+                    </a>
+                }
             </div>
         }
 
@@ -399,11 +365,25 @@ else
                     <div class="insert-bar-line"></div>
                 </div>
 
-                @{ int position = 0; }
+                @{ int position = 0; Guid lastChapterId = Guid.Empty; }
                 @foreach (var entry in beats)
                 {
                     position++;
                     var b = entry.Beat;
+                    @* Chapter section header — injected whenever the NodeId changes (only relevant
+                       for story nodes whose beats come from multiple chapter children). *@
+                    @if (children.Count > 0 && entry.NodeId != lastChapterId)
+                    {
+                        lastChapterId = entry.NodeId;
+                        var chapterNode = children.FirstOrDefault(c => c.Id == entry.NodeId);
+                        var chapterIndex = children.IndexOf(chapterNode!);
+                        var chapterLabel = chapterNode == null ? "" :
+                            string.IsNullOrWhiteSpace(chapterNode.Title) ? $"Chapter {chapterIndex + 1}" : chapterNode.Title;
+                        if (chapterNode != null)
+                        {
+                            <h5 class="chapter-heading" id="chapter-@entry.NodeId.ToString("N")">@chapterLabel</h5>
+                        }
+                    }
                     var bid = b.Id;
                     // Every beat is always an editable textarea (no read-only
                     // rendered view). "editing" here means the draft has

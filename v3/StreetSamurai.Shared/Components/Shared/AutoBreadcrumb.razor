@@ -85,7 +85,7 @@
             "utilities"       => new(null, null, "Utilities",        null,          "bi-tools"),
             "nodes"         => new(null, null, "Nodes",          null,          "bi-collection"),
             _ when seg.StartsWith("node/")
-                              => new("Nodes",       "/nodes",              NodeTitle(seg[7..]), "bi-collection",     "bi-pencil-square"),
+                              => new("Nodes",       "/nodes",              NodeTitle(seg[5..]), "bi-collection",     "bi-pencil-square"),
             "dashboard"       => new("Tools",          "/board/tools",          "Dashboard",         "bi-grid-3x3-gap",     "bi-speedometer2"),
             "ask"             => new("Tools",          "/board/tools",          "Ask",               "bi-grid-3x3-gap",     "bi-chat-dots"),
             "books"           => new("Tools",          "/board/tools",          "Bookshelf",         "bi-grid-3x3-gap",     "bi-book"),

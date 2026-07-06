@@ -107,55 +107,50 @@
                                     <code class="text-muted node-guid ms-auto align-self-center">@s.Id</code>
                                 </div>
                             }
+                            else if (s.Kind == "series")
+                            {
+                                @* Series = section header, not a clickable story *@
+                                <div class="d-flex align-items-center gap-2">
+                                    <i class="bi bi-collection text-muted"></i>
+                                    <span class="text-muted text-uppercase fw-bold small">@s.Title</span>
+                                    @if (!string.IsNullOrWhiteSpace(s.NodeCode))
+                                    {
+                                        <span class="badge bg-secondary text-uppercase" style="font-size:0.65rem;">@s.NodeCode</span>
+                                    }
+                                    <button class="btn btn-sm btn-outline-light ms-auto" title="Edit series title"
+                                            @onclick="() => BeginEdit(s)">
+                                        <i class="bi bi-pencil"></i>
+                                    </button>
+                                </div>
+                            }
                             else
                             {
                                 <div class="d-flex justify-content-between align-items-center">
                                     <span class="node-drag-handle me-2" title="Drag to reorder or move into a collection">
                                         <i class="bi bi-grip-vertical"></i>
                                     </span>
-                                    @if (!string.IsNullOrWhiteSpace(s.NodeCode))
-                                    {
-                                        <span class="node-code-chip me-1" title="Node code">@s.NodeCode</span>
-                                    }
                                     <a href="@($"/node/{s.Slug}")" class="text-info text-decoration-none flex-grow-1"
                                        @onclick:preventDefault @onclick="() => OpenNode(s.Slug, s.NodeCode)">
                                         <strong>@s.Title</strong>
+                                        @if (!string.IsNullOrWhiteSpace(s.NodeCode))
+                                        {
+                                            <span class="text-muted ms-2 small">[@s.NodeCode]</span>
+                                        }
                                     </a>
                                     <div class="d-flex align-items-center gap-2 small">
-                                        @if (childCount > 0)
-                                        {
-                                            <button class="btn btn-sm btn-link text-muted p-0 border-0"
-                                                    title="@(expandedParents.Contains(s.Id) ? "Collapse episodes" : "Expand episodes")"
-                                                    @onclick="() => ToggleExpand(s.Id)">
-                                                <i class="bi bi-diagram-3 me-1"></i>@childCount
-                                                <i class="bi bi-chevron-@(expandedParents.Contains(s.Id) ? "up" : "down") ms-1" style="font-size:0.65rem;"></i>
-                                            </button>
-                                        }
                                         @if (beatCount > 0)
                                         {
-                                            <span class="text-muted" title="Beats across all episodes">
-                                                <i class="bi bi-three-dots me-1"></i>@beatCount
-                                            </span>
+                                            <span class="text-muted" title="Beats"><i class="bi bi-three-dots me-1"></i>@beatCount</span>
                                         }
                                         @{ var pages = pageCounts.GetValueOrDefault(s.Id, 0); }
                                         @if (pages > 0)
                                         {
-                                            <span class="text-muted" title="Estimated pages (word count ÷ 250)">
-                                                <i class="bi bi-file-text me-1"></i>@pages pg
-                                            </span>
+                                            <span class="text-muted" title="Estimated pages"><i class="bi bi-file-text me-1"></i>@pages pg</span>
                                         }
                                         @{ var audioDur = audioDurations.GetValueOrDefault(s.Id); }
                                         @if (!string.IsNullOrEmpty(audioDur))
                                         {
-                                            <span class="text-muted" title="Estimated audio duration (word count ÷ 150 wpm)">
-                                                <i class="bi bi-headphones me-1"></i>@audioDur
-                                            </span>
-                                        }
-                                        @if (s.Score.HasValue)
-                                        {
-                                            <span class="badge @ScoreBadge((int)Math.Round(s.Score.Value))" title="Reader score (latest run)">
-                                                <i class="bi bi-star-half me-1"></i>@s.Score.Value.ToString("0")%
-                                            </span>
+                                            <span class="text-muted" title="Estimated audio duration"><i class="bi bi-headphones me-1"></i>@audioDur</span>
                                         }
                                         <span class="badge bg-@StatusColor(s.Status) text-uppercase">@StatusLabel(s.Status)</span>
                                         <button class="btn btn-sm btn-outline-light" title="Edit title &amp; description"
@@ -164,7 +159,6 @@
                                         </button>
                                     </div>
                                 </div>
-                                @* Full description — so you can see what each story is about at a glance. *@
                                 @if (!string.IsNullOrWhiteSpace(s.Description))
                                 {
                                     <div class="node-description-line mt-1">@s.Description</div>
@@ -173,13 +167,12 @@
                                 {
                                     <div class="node-description-line node-description-empty mt-1">No description yet — click the pencil to add one.</div>
                                 }
-                                @* Full GUID — a stable handle to refer to this node (CLI, conversation). Click to copy. *@
                                 <code class="text-muted node-guid" title="Click to copy full id"
                                       @onclick="() => CopyGuidAsync(s.Id)">@s.Id</code>
                             }
                         </li>
-                        @* ── Inline child nodes (expanded when the episode count badge is clicked) ── *@
-                        @if (expandedParents.Contains(s.Id) && childNodes.TryGetValue(s.Id, out var kids))
+                        @* ── Series children always shown; story children shown when expanded ── *@
+                        @if ((s.Kind == "series" || expandedParents.Contains(s.Id)) && childNodes.TryGetValue(s.Id, out var kids))
                         {
                             var orderedKids = kids.OrderBy(k => k.SortKey).ThenBy(k => k.Title).ToList();
                             for (var ci = 0; ci < orderedKids.Count; ci++)
@@ -212,6 +205,10 @@
                                             <a href="@($"/node/{kid.Slug}")" class="text-info text-decoration-none flex-grow-1 ms-2"
                                                @onclick:preventDefault @onclick="() => OpenNode(kid.Slug, kid.NodeCode)">
                                                 <i class="bi bi-arrow-return-right me-2 text-secondary" style="font-size:0.75rem;"></i>@kidTitle
+                                                @if (!string.IsNullOrWhiteSpace(kid.NodeCode))
+                                                {
+                                                    <span class="text-muted ms-2 small">[@kid.NodeCode]</span>
+                                                }
                                             </a>
                                             <div class="d-flex align-items-center gap-2 small">
                                                 @if (kidBeats > 0)
