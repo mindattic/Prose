@@ -1276,6 +1276,16 @@ if (args.Contains("--prose-check"))
     return;
 }
 
+// ss --prose-health [--slug <nodeSlug>] [--json] [--out <dir>]
+// Zero-cost overnight health scan: surface stats + kNN score prediction +
+// semantic outlier detection using cached ProseEmbeddings. No API calls.
+if (args.Contains("--prose-health"))
+{
+    var sp = BuildCoreServices(args);
+    Environment.ExitCode = await ProseHealthCli.RunAsync(args, sp);
+    return;
+}
+
 // ss --check-fidelity (--slug <nodeSlug> | --id <nodeId>) [--json]
 // Detects the Semantic Fidelity Gap — beats scoring high but drifting from the
 // story's original meaning (Goodhart's Law in prose). Two checks:
@@ -1703,7 +1713,11 @@ static IServiceProvider BuildServicesWithVault(string[] args)
         .ConfigureAppConfiguration(cfg =>
             cfg.AddMindAtticVaultFiles())
         .ConfigureLogging(lb => lb.AddConsole())
-        .ConfigureServices((_, svc) => svc.AddStreetSamuraiServices())
+        .ConfigureServices((ctx, svc) =>
+        {
+            SettingsService.VaultConfiguration = ctx.Configuration;
+            svc.AddStreetSamuraiServices();
+        })
         .Build()
         .Services;
 
@@ -1716,6 +1730,7 @@ static IServiceProvider BuildServicesWithVaultAndAuth(string[] args)
         .ConfigureLogging(lb => lb.AddConsole())
         .ConfigureServices((ctx, svc) =>
         {
+            SettingsService.VaultConfiguration = ctx.Configuration;
             svc.AddStreetSamuraiServices();
             svc.AddMindAtticAuthentication<StreetSamuraiAuthDbContext>(
                 ctx.Configuration,

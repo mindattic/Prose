@@ -793,6 +793,11 @@ public static class ServiceCollectionExtensions
         // `ss --check-fidelity` and the `check_semantic_fidelity` MCP tool.
         services.AddSingleton<SemanticFidelityService>();
 
+        // Overnight prose health pipeline — zero API cost; uses cached ProseEmbeddings
+        // and text-only stats. Available via `ss --prose-health`.
+        services.AddSingleton<EmbeddingHealthService>();
+        services.AddSingleton<NightlyHealthService>();
+
         // Pre-flight structural diagnostics — 12 parallel LLM checks that catch
         // structural problems (missing antagonist cost, passive protagonist, etc.)
         // BEFORE the 60-ballot review panel. Available via `ss --diagnose-story`
