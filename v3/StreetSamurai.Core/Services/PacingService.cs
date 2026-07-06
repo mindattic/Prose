@@ -105,6 +105,7 @@ public record PacingInstruction(PacingService.PaceMode Mode)
             - Sensory details return but they're different: the same place feels altered by what happened in it.
             - Let the character process. Interior monologue is welcome here. Let them sit with it.
             - This is where the reader feels the weight of the story.
+            - HARD STOP: do NOT have the narrator summarize what the scene or story meant. No 'and in that moment she understood that...' — no moral gloss, no retrospective explanation of significance. The images and the cost are the meaning. Naming it kills it.
             """,
         _ => ""
     };

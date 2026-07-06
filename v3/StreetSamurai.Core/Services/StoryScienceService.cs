@@ -74,6 +74,24 @@ public class StoryScienceService
         "vague sacred flaw — 'he is controlling' tells nothing; flaw must generate a specific suite of behaviors",
     ];
 
+    // ── StoryScope anti-patterns (University of Maryland / Google DeepMind, 2025) ─
+    // From a 61,608-story study: narrative-structure classifiers distinguish human from AI
+    // fiction at 93.2% accuracy without reading a single word of prose. These are the
+    // structural decisions that give AI-written stories away.
+
+    private static readonly string[] StoryScopeAntiPatterns =
+    [
+        "narratorial moral gloss — the beat that ends with the narrator labeling what it 'meant'; let the scene deliver its verdict in images and action; the reader produces the theme, the narrator does not announce it",
+        "philosophy-seminar dialogue — characters debating abstract positions at length; dialogue is a status battle between two people who want different things, not a symposium on ideas",
+        "all-embodied emotion — routing every emotional cue through body sensations (tightening chest, cold sweat, caught breath) with no explicit labels ever; use 'she was afraid' or 'he was furious' once per scene — the direct label earns authority precisely because the body work surrounds it",
+        "clean internal resolution exit — a beat that closes with the protagonist achieving internal understanding or peace; internal states may shift, but the external situation must stay open, worsen, or complicate",
+        "description-first character entry — a new character who arrives as a physical inventory before doing or saying anything; introduce through action in the scene or through how another character responds to their presence",
+        "front-loaded revelation — disclosing information in the order events happened rather than the order they land hardest; the fact that recontextualizes everything belongs near the end of the beat, not the opening",
+        "flat event escalation — each beat registering at the same emotional intensity as the last; every beat must feel larger, more costly, or more irreversible than what came before; a plateau of events at equal weight is the single strongest AI fiction signal in structural classifier studies",
+        "event monoculture — writing three confrontations in a row, or three discoveries; vary the event type: confession → chase → ceremony → negotiation → ambush → loss; sameness of event type is a measurable AI fingerprint",
+        "reflexive epilogue — closing with a retrospective narration of what the story 'meant' from an outside-time vantage; the story ends on the last event, not a narrator's commentary on its significance",
+    ];
+
     // ── Curiosity gap by arc stage (Storr: curiosity is pleasantly unpleasant dopamine) ──
 
     private static string GetCuriosityInstruction(ChangeArcStage stage, BeatMode mode) => stage switch
@@ -91,10 +109,10 @@ public class StoryScienceService
             "CURIOSITY GAP — PIVOT: The flaw has failed. Commitment to change (or refusal) is now locked in. A new question opens: 'Can the protagonist survive what the flaw was protecting them from?' The gap transforms — do not close the original one, evolve it.",
 
         ChangeArcStage.WorstCaseRealised =>
-            "CURIOSITY GAP — MAXIMUM TENSION: Everything the flaw protected against is now happening. The reader knows the dramatic question must be answered soon — use that expectation as pressure. Do NOT resolve it here; let the reader squirm.",
+            "CURIOSITY GAP — MAXIMUM TENSION: Everything the flaw protected against is now happening. This beat must be the most intense thing in the story so far — flat escalation (each beat at the same intensity) is the single strongest AI fiction signal in classifier studies; do not plateau here. The reader knows the dramatic question must be answered soon — use that expectation as pressure. Do NOT resolve it here; let the reader squirm.",
 
         ChangeArcStage.GodMoment =>
-            "CURIOSITY GAP — CLOSE: The dramatic question is being answered. The closing must have sufficient force that the reader feels it as permanent. Do not soft-pedal the answer. The God Moment delivers control — internal or external — definitively.",
+            "CURIOSITY GAP — CLOSE: The dramatic question is being answered. The closing must have sufficient force that the reader feels it as permanent. Do not soft-pedal the answer. The God Moment delivers control — internal or external — definitively. End on the event itself or the last image of it. Do NOT follow with a retrospective narration explaining what the story meant — that is the narrator's vanity, not the story's truth. Avalanche endings over quiet ones.",
 
         _ => ""
     };
@@ -139,7 +157,7 @@ public class StoryScienceService
         • Sensory specificity: at least one non-visual sense per scene (sound, smell, texture, temperature). The brain simulates what the senses provide.
         • Paragraph rhythm: short paragraphs = fast, nervous. Dense paragraphs = weight, inevitability. Match to the beat's emotional register.
         • Metaphor must illuminate: if a comparison does not clarify, remove it. Clichéd metaphors no longer fire neural networks — they are dead noise.
-        • Show state, never name it: body before mind. 'Her hand found the door frame before she knew she was moving' > 'She was afraid.'
+        • Body before mind by default: 'Her hand found the door frame before she knew she was moving.' But one explicit emotion label per scene used deliberately — 'she was afraid', 'he was furious' — earns authority precisely because the body work surrounds it. The failure mode is exclusive reliance on either: all body-language with no label is AI-distinctive; all label with no body is lazy.
         """;
 
     // ── Situation vs Plot (King's core doctrine) ──────────────────────────────
@@ -150,6 +168,19 @@ public class StoryScienceService
         • What happens in this beat should emerge from who the characters ARE under this pressure — not from where the outline says the story must go.
         • If a character acts in a way that serves the plot but contradicts who they've been shown to be, the beat is false.
         • Ask: given this person's sacred flaw, given what they want and fear, given who else is in this room — what would THEY actually do?
+        """;
+
+    // ── StoryScope: human narrative markers (what makes fiction read as human) ──
+    // These are the positive structural patterns that human fiction uses and AI defaults away from.
+    // Derived from University of Maryland / Google DeepMind StoryScope study, 2025.
+
+    private static readonly string HumanNarrativeMarkers = """
+        HUMAN NARRATIVE MARKERS — structural choices that distinguish human fiction:
+        • Escalate: this beat must feel larger, more costly, or more irreversible than the last. Ask: what is the single highest-stakes thing that could happen right now given what has been established?
+        • Vary event type: identify what the last two beats were (confrontation, discovery, chase, confession, ceremony, ambush, negotiation, loss, betrayal). This beat should be a different type.
+        • Back-load the revelation: if this beat contains a fact that recontextualizes what came before, hold it until the end of the beat — do not open with it.
+        • Leave the moral question open: do not resolve who was right. The protagonist's choice should have a genuine cost on the path not taken. Ambivalence is not weakness; it is human.
+        • Introduce new characters through what they do and say — not through a physical description given before they act or speak.
         """;
 
     // ── Neural narrative: because-chains (Storr's brain-science finding) ──────
@@ -265,6 +296,8 @@ public class StoryScienceService
         parts.Add("");
         parts.Add(SituationNotPlot);
         parts.Add("");
+        parts.Add(HumanNarrativeMarkers);
+        parts.Add("");
         parts.Add(GetAntiPatternBlock(mode));
 
         return string.Join("\n", parts).Trim();
@@ -272,20 +305,32 @@ public class StoryScienceService
 
     private static string GetAntiPatternBlock(BeatMode mode)
     {
-        var selected = KingAntiPatterns.Take(5).Concat(StorrAntiPatterns.Take(4)).ToList();
+        List<string> selected;
 
-        // Surface combat-relevant ones for combat beats
         if (mode == BeatMode.Combat)
         {
-            selected = new List<string>
-            {
-                KingAntiPatterns[0], // adverbs in attribution
-                KingAntiPatterns[1], // passive voice
-                KingAntiPatterns[6], // announcing character state
-                StorrAntiPatterns[6], // abstract adjectives
-                StorrAntiPatterns[1], // and-then plotting
-                StorrAntiPatterns[7], // milieu as substitute
-            };
+            selected =
+            [
+                KingAntiPatterns[0],        // adverbs in attribution
+                KingAntiPatterns[1],        // passive voice
+                KingAntiPatterns[6],        // announcing character state
+                StorrAntiPatterns[6],       // abstract adjectives
+                StorrAntiPatterns[1],       // and-then plotting
+                StorrAntiPatterns[7],       // milieu as substitute
+                StoryScopeAntiPatterns[6],  // flat event escalation
+                StoryScopeAntiPatterns[7],  // event monoculture
+            ];
+        }
+        else
+        {
+            selected =
+            [
+                ..KingAntiPatterns.Take(5),
+                ..StorrAntiPatterns.Take(4),
+                StoryScopeAntiPatterns[0],  // narratorial moral gloss
+                StoryScopeAntiPatterns[2],  // all-embodied emotion
+                StoryScopeAntiPatterns[6],  // flat event escalation
+            ];
         }
 
         return "ANTI-PATTERNS — these are failures, not choices:\n" +
