@@ -11,7 +11,7 @@ namespace StreetSamurai.Cli;
 /// Fills missing beat metadata WITHOUT touching prose.
 ///
 ///   ss --backfill-synopses        --slug &lt;s&gt; [--model &lt;id&gt;] [--force]
-///       Generate a 1–2 sentence Synopsis from each beat's prose (LLM). The synopsis is
+///       Generate a 1–2 sentence Description from each beat's prose (LLM). The description is
 ///       the BeatGoal proxy the engine reads for mode detection + pacing, so filling it
 ///       sharpens coverage/mode signal. Use --model claude-haiku-4-5-20251001 for a cheap
 ///       pass. Skips beats that already have one unless --force.
@@ -86,7 +86,7 @@ public static class BackfillBeatMetaCli
             var llm = sp.GetRequiredService<ILlmService>();
             var targets = ordered.Where(id => force || string.IsNullOrWhiteSpace(beatInfo[id].Description))
                                   .Where(id => !string.IsNullOrWhiteSpace(beatInfo[id].Text)).ToList();
-            Console.WriteLine($"  Synopses: {targets.Count} beat(s) to generate (model={model ?? "default"})…");
+            Console.WriteLine($"  Descriptions: {targets.Count} beat(s) to generate (model={model ?? "default"})…");
 
             const string system = "You write terse editorial beat synopses. Given a story beat's prose, "
                 + "return ONE sentence (max two) stating what happens and its narrative purpose. "
@@ -113,7 +113,7 @@ public static class BackfillBeatMetaCli
             }));
 
             await ApplyAsync(dbFactory, results.ToDictionary(k => k.Key, v => v.Value), (b, v) => b.Description = v);
-            Console.WriteLine($"  Synopses: {results.Count} beat(s) written.");
+            Console.WriteLine($"  Descriptions: {results.Count} beat(s) written.");
         }
 
         return 0;

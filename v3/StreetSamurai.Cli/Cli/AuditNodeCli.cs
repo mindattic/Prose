@@ -68,7 +68,7 @@ public static class AuditNodeCli
         // ── SECTION 1: CENSUS ────────────────────────────────────────────────────
         W("## 1. Population / tagging / scoring census");
         W();
-        W("| Ch | Title | Beats | Text | Syn | Struct | Tone | Score | EQ | Mentions |");
+        W("| Ch | Title | Beats | Text | Desc | Struct | Tone | Score | EQ | Mentions |");
         W("|----|-------|-------|------|-----|--------|------|-------|----|----------|");
 
         var gaps = new List<string>();
@@ -85,7 +85,7 @@ public static class AuditNodeCli
         W();
 
         if (totText < totBeats)  gaps.Add($"{totBeats - totText} beat(s) have no prose text.");
-        if (totSyn < totBeats)   gaps.Add($"{totBeats - totSyn} beat(s) missing Synopsis (degrades mode detection + pacing — backfill or generate).");
+        if (totSyn < totBeats)   gaps.Add($"{totBeats - totSyn} beat(s) missing Description (degrades mode detection + pacing — backfill or generate).");
         if (totStruct < totBeats) gaps.Add($"{totBeats - totStruct} beat(s) missing StructureRole (derivable from position — deterministic backfill).");
         if (totEq == 0)          gaps.Add("EmotionalScore never populated (run --audit-story --deep, or ss --examine-emotion).");
         if (totMentionBeats < totBeats) gaps.Add($"{totBeats - totMentionBeats} beat(s) not entity-scanned (run ss --scan-entity-mentions).");

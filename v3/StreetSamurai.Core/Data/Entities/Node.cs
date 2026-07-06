@@ -114,13 +114,6 @@ public abstract class Node
     /// after narration completes.</summary>
     public string? CombinedAudioPath { get; set; }
 
-    /// <summary>Markdown export of the node's prose. Used for offline
-    /// reading and PDF generation.</summary>
-    public string? ScriptMarkdownPath { get; set; }
-
-    /// <summary>PDF export of the node's prose.</summary>
-    public string? ScriptPdfPath { get; set; }
-
     /// <summary>Default narrator voice for this node. Beats with their own
     /// <c>VoiceId</c> override it; otherwise the node's voice is used.</summary>
     public string? VoiceId { get; set; }
@@ -216,7 +209,6 @@ public abstract class Node
     public DateTime? NodeUserStoriesUpdatedAt { get; set; }
 
     public DateTime StartedAt { get; set; } = DateTime.UtcNow;
-    public DateTime? GenerationCompletedAt { get; set; }
     public DateTime? AudioCompletedAt { get; set; }
 
     /// <summary>Sum of characters sent to TTS across this node's beats.</summary>

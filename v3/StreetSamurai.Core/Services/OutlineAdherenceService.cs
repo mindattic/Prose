@@ -81,7 +81,7 @@ public class OutlineAdherenceService(
     /// <summary>
     /// When drift score is below the threshold, rewrite the remaining beat goals to
     /// re-anchor the story toward the original bible's promised arc.
-    /// Updates Beat.Synopsis in DB. Returns the number of beats recalibrated.
+    /// Updates Beat.Description in DB. Returns the number of beats recalibrated.
     /// </summary>
     public async Task<int> RecalibrateAsync(
         Guid nodeId,

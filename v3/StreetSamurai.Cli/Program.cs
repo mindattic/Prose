@@ -401,7 +401,7 @@ if (args.Contains("--edit-beat"))
 }
 
 // CLI mode: create a new empty root node (bible-first; no beats yet).
-//   ss --create-story --title "..." [--code SRZR] [--kind story] [--synopsis "..."] [--seed "..."] [--previous <slug|id>] [--parent <slug|id>]
+//   ss --create-story --title "..." [--code SRZR] [--kind story] [--description "..."] [--seed "..."] [--previous <slug|id>] [--parent <slug|id>]
 if (args.Contains("--create-story"))
 {
     var sp = BuildCoreServices(args);
@@ -1289,8 +1289,8 @@ if (args.Contains("--prose-health"))
 // ss --check-fidelity (--slug <nodeSlug> | --id <nodeId>) [--json]
 // Detects the Semantic Fidelity Gap — beats scoring high but drifting from the
 // story's original meaning (Goodhart's Law in prose). Two checks:
-//   Bible alignment: prose vs Seed/Synopsis (north-star drift)
-//   Intent alignment: prose vs beat Synopsis (purpose drift)
+//   Bible alignment: prose vs Seed/Description (north-star drift)
+//   Intent alignment: prose vs beat Description (purpose drift)
 // Files SEMANTIC-DRIFT findings; also runs automatically after every review.
 if (args.Contains("--check-fidelity"))
 {
@@ -1417,7 +1417,7 @@ if (args.Contains("--seed-sensory-hints"))
 //   insert  --node <slug|id> [--after <beatId>] [--text "..."]
 //   delete  --id <beatId> [--node <slug|id>]
 //   update  --id <beatId> --text "..."  (use '-' for stdin)
-//   meta    --id <beatId> [--title "..."] [--kind "..."] [--synopsis "..."] [--tone "..."] ...
+//   meta    --id <beatId> [--title "..."] [--kind "..."] [--description "..."] [--tone "..."] ...
 //   show    --id <beatId>
 //   list    --node <slug|id>
 if (args.Contains("--beat"))
@@ -1482,7 +1482,7 @@ if (args.Contains("--sync-markdown"))
 }
 
 // CLI mode: two-way sync between synopsis.txt in each node's publish folder
-// and Nodes.Synopsis in the DB. File wins on conflict.
+// and Node.Description in the DB. File wins on conflict.
 //   ss --sync-synopsis [--slug <slug>] [--dry-run]
 if (args.Contains("--sync-synopsis"))
 {

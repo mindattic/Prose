@@ -178,8 +178,8 @@ public class NodeMigrationService
     {
         var rows = await db.Database
             .SqlQueryRaw<EpisodeRow>(@"
-                SELECT Id, Slug, Seed, Title, VoiceId, StartedAt, GenerationCompletedAt, AudioCompletedAt, Status,
-                       CharsNarrated, Error, ScriptMarkdownPath, ScriptPdfPath, CombinedAudioPath,
+                SELECT Id, Slug, Seed, Title, VoiceId, StartedAt, AudioCompletedAt, Status,
+                       CharsNarrated, Error, CombinedAudioPath,
                        LastPlayedSec, ParentEpisodeId, BookId, ChapterId
                 FROM Episodes")
             .ToListAsync(ct);
@@ -222,12 +222,9 @@ public class NodeMigrationService
                 SortKey               = 100.0,
                 Seed                  = e.Seed,
                 StartedAt             = e.StartedAt,
-                GenerationCompletedAt = e.GenerationCompletedAt,
                 AudioCompletedAt      = e.AudioCompletedAt,
                 CharsNarrated         = e.CharsNarrated,
                 CombinedAudioPath     = e.CombinedAudioPath,
-                ScriptMarkdownPath    = e.ScriptMarkdownPath,
-                ScriptPdfPath         = e.ScriptPdfPath,
                 LastPlayedSec         = e.LastPlayedSec,
                 Error                 = e.Error,
             });
@@ -368,10 +365,9 @@ public class NodeMigrationService
         DateTime? NarratedAt, string? LastRequestId, bool WasCorrected);
     public record EpisodeRow(
         Guid Id, string? Slug, string? Seed, string? Title, string? VoiceId,
-        DateTime StartedAt, DateTime? GenerationCompletedAt, DateTime? AudioCompletedAt,
-        string? Status, int CharsNarrated, string? Error, string? ScriptMarkdownPath,
-        string? ScriptPdfPath, string? CombinedAudioPath, double? LastPlayedSec,
-        Guid? ParentEpisodeId, Guid? BookId, string? ChapterId);
+        DateTime StartedAt, DateTime? AudioCompletedAt,
+        string? Status, int CharsNarrated, string? Error, string? CombinedAudioPath,
+        double? LastPlayedSec, Guid? ParentEpisodeId, Guid? BookId, string? ChapterId);
     public record EpisodeBeatRow(
         Guid EpisodeId, int Index, string? Text, string? AudioPath, DateTime? NarratedAt,
         double? DurationSec, bool WasCorrected, double SortKey, string? BeatTitle,

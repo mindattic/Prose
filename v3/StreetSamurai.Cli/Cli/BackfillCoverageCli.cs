@@ -69,7 +69,7 @@ public static class BackfillCoverageCli
             for (var i = 0; i < beats.Count; i++)
             {
                 var beat = beats[i];
-                // The synopsis is the closest proxy to the original BeatGoal; fall back to
+                // The description is the closest proxy to the original BeatGoal; fall back to
                 // the title. A short prose tail sharpens mode detection (combat vs dialogue).
                 var goal = !string.IsNullOrWhiteSpace(beat.Description) ? beat.Description
                          : beat.Title ?? "";

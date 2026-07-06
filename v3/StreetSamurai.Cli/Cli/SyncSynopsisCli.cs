@@ -8,7 +8,7 @@ namespace StreetSamurai.Cli;
 
 /// <summary>
 /// Two-way sync between <c>synopsis.txt</c> in each node's publish folder and
-/// <c>Nodes.Synopsis</c> in the database.
+/// <c>Node.Description</c> in the database.
 ///
 ///   ss --sync-synopsis                  # sync all non-draft nodes
 ///   ss --sync-synopsis --slug &lt;slug&gt;    # sync one node

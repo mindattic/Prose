@@ -837,17 +837,10 @@ public record BeatContext
     // These fields are populated by ProseWriterRouter before calling GenerateBeatAsync.
     // Left at their defaults when callers invoke BeatGeneratorService directly (legacy path).
 
-    /// <summary>Position in node — enables pacing and structural role injection when set by ProseWriterRouter.</summary>
-    public int BeatIndex { get; init; }
-    /// <summary>Total beats in the node — enables positional arc calculations when set by ProseWriterRouter.</summary>
-    public int TotalBeats { get; init; }
-
     /// <summary>Pre-computed pacing guidance block (from PacingService). Empty = skip injection.</summary>
     public string PacingGuidance { get; init; } = "";
     /// <summary>Pre-computed structural role block (from StoryMethodologyService). Empty = skip injection.</summary>
     public string StructuralRoleGuidance { get; init; } = "";
-    /// <summary>Detected beat mode (Combat/Narrative/EmotionalClimax/etc.) from BeatModeDetector.</summary>
-    public BeatMode DetectedMode { get; init; } = BeatMode.Narrative;
 
     /// <summary>
     /// Self-referential entity context stack (EntityContextService): the LRU-managed web of

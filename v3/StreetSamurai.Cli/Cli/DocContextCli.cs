@@ -15,7 +15,7 @@ namespace StreetSamurai.Cli;
 ///   ss --doc-context --slug &lt;node&gt; [--goal "&lt;scene text&gt;"] [--budget &lt;tokens&gt;]
 ///
 ///   --slug    node to act as the active context (its CODE drives node-tier scope).
-///   --goal    scene/beat text to trigger topic docs against; defaults to the node synopsis.
+///   --goal    scene/beat text to trigger topic docs against; defaults to the node description.
 ///   --budget  token budget for the assembled block (default 2000).
 /// </summary>
 public static class DocContextCli
