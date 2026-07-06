@@ -1,5 +1,7 @@
 using System.Text.RegularExpressions;
+using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Logging;
+using StreetSamurai.Core.Data;
 using StreetSamurai.Core.Models.Canon;
 
 namespace StreetSamurai.Core.Services;
@@ -78,6 +80,7 @@ public class XrefService
     private readonly object syncLock = new();
     private readonly ILogger<XrefService> logger;
     private readonly SettingsService settings;
+    private readonly IDbContextFactory<StreetSamuraiDbContext> dbFactory;
     private List<XrefConflict> conflicts = [];
 
     public XrefService(
@@ -104,11 +107,13 @@ public class XrefService
         LabSpecimenRepository labSpecimens,
         PsionicRepository psionics,
         ILogger<XrefService> logger,
-        SettingsService settings
+        SettingsService settings,
+        IDbContextFactory<StreetSamuraiDbContext> dbFactory
         )
     {
         this.logger = logger;
         this.settings = settings;
+        this.dbFactory = dbFactory;
         this.characters = characters;
         this.districts = districts;
         this.factions = factions;
@@ -180,6 +185,24 @@ public class XrefService
         var newIndexById = new Dictionary<string, XrefEntry>(StringComparer.OrdinalIgnoreCase);
         var newConflicts = new List<XrefConflict>();
 
+        // Beat-mention counts, keyed by entity ID in "N" format (lowercase, no dashes).
+        // Entities that appear in actual prose win disambiguation over zero-mention entities.
+        Dictionary<string, int> beatCounts;
+        if (dbFactory != null)
+        {
+            using var db = dbFactory.CreateDbContext();
+            beatCounts = db.BeatEntityMentions
+                .AsNoTracking()
+                .GroupBy(m => m.EntityId)
+                .Select(g => new { EntityId = g.Key, Count = g.Count() })
+                .ToList()
+                .ToDictionary(x => x.EntityId.ToString("N"), x => x.Count, StringComparer.OrdinalIgnoreCase);
+        }
+        else
+        {
+            beatCounts = [];
+        }
+
         void Add(string name, string id, string type, string route, string subtitle = "")
         {
             if (string.IsNullOrWhiteSpace(name) || name.Length < 3) return;
@@ -187,22 +210,36 @@ public class XrefService
             if (!newIndex.TryAdd(name, entry))
             {
                 var existing = newIndex[name];
-                // Self-overlap: the same record reaches Add twice because its
-                // Name, ProductName, and an entry in Aliases are all the same
-                // string. Not a real disambiguation conflict — just a noisy
-                // index pass — so swallow it instead of warning.
+                // Self-overlap: same record reaching Add twice — swallow.
                 if (existing.Type == type && string.Equals(existing.Id, id, StringComparison.OrdinalIgnoreCase))
                 {
                     newIndexById.TryAdd(id, entry);
                     return;
                 }
-                newConflicts.Add(new XrefConflict(name, existing, entry));
-                if (existing.Type == type)
+
+                // Prefer the entity that actually appears in story prose.
+                var existingBeats = beatCounts.GetValueOrDefault(existing.Id, 0);
+                var challengerBeats = beatCounts.GetValueOrDefault(id, 0);
+                XrefEntry winner, loser;
+                if (challengerBeats > existingBeats)
+                {
+                    newIndex[name] = entry;
+                    winner = entry;
+                    loser = existing;
+                }
+                else
+                {
+                    winner = existing;
+                    loser = entry;
+                }
+
+                newConflicts.Add(new XrefConflict(name, winner, loser));
+                if (winner.Type == loser.Type)
                     logger.LogWarning("Xref disambiguation conflict: \"{Name}\" claimed by {TypeA}/{IdA} and {TypeB}/{IdB}",
-                        name, existing.Type, existing.Id, type, id);
+                        name, winner.Type, winner.Id, loser.Type, loser.Id);
                 else
                     logger.LogDebug("Xref cross-type overlap: \"{Name}\" claimed by {TypeA}/{IdA} and {TypeB}/{IdB}",
-                        name, existing.Type, existing.Id, type, id);
+                        name, winner.Type, winner.Id, loser.Type, loser.Id);
             }
             newIndexById.TryAdd(id, entry);
         }

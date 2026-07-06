@@ -118,7 +118,7 @@
                                         <span class="node-code-chip me-1" title="Node code">@s.NodeCode</span>
                                     }
                                     <a href="@($"/node/{s.Slug}")" class="text-info text-decoration-none flex-grow-1"
-                                       @onclick:preventDefault @onclick="() => OpenNode(s.Slug)">
+                                       @onclick:preventDefault @onclick="() => OpenNode(s.Slug, s.NodeCode)">
                                         <strong>@s.Title</strong>
                                     </a>
                                     <div class="d-flex align-items-center gap-2 small">
@@ -162,53 +162,6 @@
                                                 @onclick="() => BeginEdit(s)">
                                             <i class="bi bi-pencil"></i>
                                         </button>
-                                        <button class="btn btn-sm btn-outline-warning" title="Show reader reviews"
-                                                @onclick="() => OpenReviewsAsync(s)">
-                                            <i class="bi bi-star-half me-1"></i>Reviews
-                                        </button>
-                                        <button class="btn btn-sm btn-outline-info" title="Score history chart"
-                                                @onclick="() => OpenScoreHistory(s)">
-                                            <i class="bi bi-graph-up"></i>
-                                        </button>
-                                        @if (childCount > 0)
-                                        {
-                                            <div class="dropdown">
-                                                <button class="btn btn-sm btn-outline-success dropdown-toggle" type="button"
-                                                        data-bs-toggle="dropdown"
-                                                        disabled="@(exportingCollectionId == s.Id)"
-                                                        title="Export the full collection — all episodes concatenated">
-                                                    @if (exportingCollectionId == s.Id)
-                                                    {
-                                                        <span class="spinner-border spinner-border-sm me-1"></span>
-                                                    }
-                                                    else
-                                                    {
-                                                        <i class="bi bi-collection-play me-1"></i>
-                                                    }
-                                                    Export Collection
-                                                </button>
-                                                <ul class="dropdown-menu dropdown-menu-dark dropdown-menu-end">
-                                                    <li><h6 class="dropdown-header">Audio</h6></li>
-                                                    <li>
-                                                        <button class="dropdown-item" @onclick="() => ExportCollectionAudiobookAsync(s.Id)">
-                                                            <i class="bi bi-mic me-2"></i>Export Audio (.mp3)
-                                                        </button>
-                                                    </li>
-                                                    <li><hr class="dropdown-divider"></li>
-                                                    <li><h6 class="dropdown-header">Manuscript</h6></li>
-                                                    <li>
-                                                        <button class="dropdown-item" @onclick="() => ExportCollectionManuscriptAsync(s.Id)">
-                                                            <i class="bi bi-file-earmark-richtext me-2"></i>Export Manuscript (.epub + .docx + .pdf)
-                                                        </button>
-                                                    </li>
-                                                    <li>
-                                                        <button class="dropdown-item" @onclick='() => ExportCollectionAsync(s.Id, "MARKDOWN", "Markdown .md", id => Manuscript.ExportMarkdownAsync(id))'>
-                                                            <i class="bi bi-markdown me-2"></i>Markdown (.md)
-                                                        </button>
-                                                    </li>
-                                                </ul>
-                                            </div>
-                                        }
                                     </div>
                                 </div>
                                 @* Full description — so you can see what each story is about at a glance. *@
@@ -228,35 +181,54 @@
                         @* ── Inline child nodes (expanded when the episode count badge is clicked) ── *@
                         @if (expandedParents.Contains(s.Id) && childNodes.TryGetValue(s.Id, out var kids))
                         {
-                            @foreach (var kid in kids.OrderBy(k => k.SortKey).ThenBy(k => k.Title))
+                            var orderedKids = kids.OrderBy(k => k.SortKey).ThenBy(k => k.Title).ToList();
+                            for (var ci = 0; ci < orderedKids.Count; ci++)
                             {
+                                var kid = orderedKids[ci];
+                                var kidIndex = ci;
                                 var kidBeats = beatCounts.GetValueOrDefault(kid.Id, 0);
+                                var kidTitle = string.IsNullOrWhiteSpace(kid.Title) ? $"Chapter {kidIndex + 1}" : kid.Title;
                                 <li class="list-group-item bg-dark text-light border-secondary node-child-row" data-node-id="@kid.Id" data-has-children="false">
-                                    <div class="d-flex justify-content-between align-items-center">
-                                        <span class="node-drag-handle me-1" title="Drag to reorder or move to a different collection">
-                                            <i class="bi bi-grip-vertical"></i>
-                                        </span>
-                                        <a href="@($"/node/{kid.Slug}")" class="text-info text-decoration-none flex-grow-1 ms-2"
-                                           @onclick:preventDefault @onclick="() => OpenNode(kid.Slug)">
-                                            <i class="bi bi-arrow-return-right me-2 text-secondary" style="font-size:0.75rem;"></i>@kid.Title
-                                        </a>
-                                        <div class="d-flex align-items-center gap-2 small">
-                                            @if (kidBeats > 0)
-                                            {
-                                                <span class="text-muted"><i class="bi bi-three-dots me-1"></i>@kidBeats</span>
-                                            }
-                                            @if (kid.Score.HasValue)
-                                            {
-                                                <span class="badge @ScoreBadge((int)Math.Round(kid.Score.Value))">
-                                                    <i class="bi bi-star-half me-1"></i>@kid.Score.Value.ToString("0")%
-                                                </span>
-                                            }
-                                            <span class="badge bg-@StatusColor(kid.Status) text-uppercase">@StatusLabel(kid.Status)</span>
-                                        </div>
-                                    </div>
-                                    @if (!string.IsNullOrWhiteSpace(kid.Description))
+                                    @if (editingId == kid.Id)
                                     {
-                                        <div class="node-description-line mt-1 ms-4">@kid.Description</div>
+                                        <div class="d-flex gap-2 align-items-start flex-wrap">
+                                            <input class="form-control form-control-sm flex-grow-1" @bind="editTitle" placeholder="Title" />
+                                            <button class="btn btn-sm btn-success" @onclick="SaveEditAsync" disabled="@savingEdit">
+                                                @if (savingEdit) { <span class="spinner-border spinner-border-sm"></span> }
+                                                else { <i class="bi bi-check-lg"></i> }
+                                            </button>
+                                            <button class="btn btn-sm btn-outline-secondary" @onclick="CancelEdit">
+                                                <i class="bi bi-x-lg"></i>
+                                            </button>
+                                        </div>
+                                        <textarea class="form-control form-control-sm mt-1" rows="2" @bind="editDescription" placeholder="Description (optional)"></textarea>
+                                    }
+                                    else
+                                    {
+                                        <div class="d-flex justify-content-between align-items-center">
+                                            <span class="node-drag-handle me-1" title="Drag to reorder or move to a different collection">
+                                                <i class="bi bi-grip-vertical"></i>
+                                            </span>
+                                            <a href="@($"/node/{kid.Slug}")" class="text-info text-decoration-none flex-grow-1 ms-2"
+                                               @onclick:preventDefault @onclick="() => OpenNode(kid.Slug, kid.NodeCode)">
+                                                <i class="bi bi-arrow-return-right me-2 text-secondary" style="font-size:0.75rem;"></i>@kidTitle
+                                            </a>
+                                            <div class="d-flex align-items-center gap-2 small">
+                                                @if (kidBeats > 0)
+                                                {
+                                                    <span class="text-muted"><i class="bi bi-three-dots me-1"></i>@kidBeats</span>
+                                                }
+                                                <span class="badge bg-@StatusColor(kid.Status) text-uppercase">@StatusLabel(kid.Status)</span>
+                                                <button class="btn btn-sm btn-outline-light" title="Edit title &amp; description"
+                                                        @onclick="() => BeginEdit(kid)">
+                                                    <i class="bi bi-pencil"></i>
+                                                </button>
+                                            </div>
+                                        </div>
+                                        @if (!string.IsNullOrWhiteSpace(kid.Description))
+                                        {
+                                            <div class="node-description-line mt-1 ms-4">@kid.Description</div>
+                                        }
                                     }
                                 </li>
                             }
@@ -794,10 +766,11 @@
         OpenNode(slug);
     }
 
-    private void OpenNode(string? slug)
+    private void OpenNode(string? slug, string? nodeCode = null)
     {
         if (string.IsNullOrEmpty(slug)) return;
-        TabSvc.Open(new AppTab("writer", "Writer", "bi-pencil-square", "/writer", "/node"));
+        var code = nodeCode ?? slug;
+        TabSvc.Open(new AppTab($"node-{code}", code, "bi-pencil-square", $"/node/{slug}", "/node"));
         Nav.NavigateTo($"/node/{slug}");
     }
 

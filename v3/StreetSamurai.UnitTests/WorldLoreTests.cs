@@ -328,7 +328,7 @@ public class WorldLoreTests
             new(paths), new(paths), new(paths), new(paths), new(paths), new(paths),
             new(paths), new(paths), new(paths), new(paths), new(paths),
             Microsoft.Extensions.Logging.Abstractions.NullLogger<XrefService>.Instance,
-            xrefSettings);
+            xrefSettings, null!);
     }
 
     [OneTimeTearDown]

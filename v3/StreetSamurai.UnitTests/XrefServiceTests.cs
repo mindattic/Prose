@@ -65,7 +65,7 @@ public class XrefServiceTests
             automata, subsidiaries, entertainment, apparel, materials,
             pharmaceuticals, consumerGoods, contracts, labSpecimens, psionics,
             Microsoft.Extensions.Logging.Abstractions.NullLogger<XrefService>.Instance,
-            settings);
+            settings, null!);
     }
 
     [TearDown]
