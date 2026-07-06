@@ -650,6 +650,16 @@ public static class ServiceCollectionExtensions
         // Pacing — static helper, registered for completeness
         services.AddSingleton<PacingService>();
 
+        // Story Science: distilled craft laws from King (On Writing) + Storr (Science of Storytelling).
+        // Injects psychometric consistency, status dynamics, curiosity gap, causal chain,
+        // theory of mind, sensory specificity, and prose anti-patterns into every beat prompt.
+        services.AddSingleton<StoryScienceService>();
+
+        // Narrative Chart: XKCD-style character proximity chart data.
+        // Each beat is a temporal cross-section showing onscreen/offscreen character streams.
+        // Offscreen activity is injected as parallel-world subtext in the generation prompt.
+        services.AddSingleton<NarrativeChartService>();
+
         // Milestone 3 — outline review + quality feedback loop
         services.AddSingleton(sp => new OutlineReviewService(
             sp.GetRequiredService<ILlmService>(),

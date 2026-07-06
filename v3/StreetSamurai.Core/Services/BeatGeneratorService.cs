@@ -153,6 +153,12 @@ public class BeatGeneratorService
         var continuityBlock = !string.IsNullOrWhiteSpace(context.ContinuityContext)
             ? $"\n\n{context.ContinuityContext}"
             : "";
+        var storyScienceBlock = !string.IsNullOrWhiteSpace(context.StoryScienceGuidance)
+            ? $"\n\n{context.StoryScienceGuidance}"
+            : "";
+        var offscreenBlock = !string.IsNullOrWhiteSpace(context.OffscreenActivityContext)
+            ? $"\n\n{context.OffscreenActivityContext}"
+            : "";
 
         var system = $"""
             {UniverseLine()}{worldFactsBlock}
@@ -170,7 +176,7 @@ public class BeatGeneratorService
             {(context.XRayContext.Length > 0 ? "\nSCENE X-RAY — entities on screen RIGHT NOW. Every character below speaks in THEIR OWN documented register, not the narrator's:\n" + context.XRayContext : "")}{continuityBlock}
             {(context.EntityStackContext.Length > 0 ? "\nENTITY WORKING MEMORY — proper nouns active in this story thread and their canon facts. Treat these as hard constraints; do not contradict them:\n" + context.EntityStackContext : "")}
             {(context.DocStackContext.Length > 0 ? "\n" + context.DocStackContext : "")}
-            {(context.LocationContext.Length > 0 ? "\nADDITIONAL LOCATION DETAIL:\n" + context.LocationContext : "")}{ambientAnomalyBlock}{dialogueBlock}{anchorBlock}{plantBlock}{consequenceBlock}{commandmentBlock}{worldStateBlock}{emotionalBlock}{mlProseBlock}{tensionBlock}{readerBlock}{narrativeSummaryBlock}{chapterSummaryBlock}{openThreadsBlock}{pacingBlock}{structuralBlock}
+            {(context.LocationContext.Length > 0 ? "\nADDITIONAL LOCATION DETAIL:\n" + context.LocationContext : "")}{ambientAnomalyBlock}{dialogueBlock}{anchorBlock}{plantBlock}{consequenceBlock}{commandmentBlock}{worldStateBlock}{emotionalBlock}{mlProseBlock}{tensionBlock}{readerBlock}{narrativeSummaryBlock}{chapterSummaryBlock}{openThreadsBlock}{pacingBlock}{structuralBlock}{offscreenBlock}{storyScienceBlock}
             """;
 
         var hasDialogue = context.DialogueContext.Length > 0;
@@ -939,6 +945,24 @@ public record BeatContext
     /// do-not-contradict block by ProseWriterRouter. Empty when ContinuityService is not wired
     /// or no matching claims exist.</summary>
     public string ContinuityContext { get; init; } = "";
+
+    /// <summary>
+    /// Story Science guidance block from StoryScienceService (King + Storr craft laws).
+    /// Covers: sacred-flaw psychometric consistency, status dynamics, curiosity gap,
+    /// neural narrative (because-chains), sensory specificity, prose anti-patterns,
+    /// theory of mind, dialogue honesty, and the change arc position for this beat.
+    /// Injected by ProseWriterRouter. Empty when StoryScienceService is not wired.
+    /// </summary>
+    public string StoryScienceGuidance { get; init; } = "";
+
+    /// <summary>
+    /// Parallel-world offscreen activity block from NarrativeChartService.
+    /// Describes what characters NOT in this scene are doing in parallel — their
+    /// implied preparation for their next onscreen moment. Injected as subtext
+    /// context so the prose engine knows the world is continuous and non-idle.
+    /// Empty when NarrativeChartService is not wired or beat has no chart data.
+    /// </summary>
+    public string OffscreenActivityContext { get; init; } = "";
 }
 
 /// <summary>

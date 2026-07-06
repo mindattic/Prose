@@ -49,7 +49,9 @@ public class ProseWriterRouter(
     ChapterSummaryService? chapterSummary = null,
     OpenThreadsService? openThreads = null,
     SceneContextAssembler? sceneAssembler = null,
-    ContinuityService? continuity = null)
+    ContinuityService? continuity = null,
+    StoryScienceService? storyScience = null,
+    NarrativeChartService? narrativeChart = null)
 {
     // Extended combat rules — shared with CombatSceneWriter's common block + Dissociated Observer examples.
     static readonly string CombatProseGuidance = """
@@ -328,6 +330,33 @@ public class ProseWriterRouter(
             catch { /* non-blocking */ }
         }
 
+        // Story Science: King + Storr craft laws — psychometric consistency, status dynamics,
+        // curiosity gap, neural narrative, sensory specificity, prose anti-patterns, theory of mind.
+        var storyScienceGuidance = context.StoryScienceGuidance;
+        if (string.IsNullOrEmpty(storyScienceGuidance) && storyScience != null && totalBeats > 0)
+        {
+            try { storyScienceGuidance = storyScience.GetBeatGuidance(context, beatIndex, totalBeats, mode); }
+            catch { /* non-blocking */ }
+        }
+
+        // Narrative Chart: offscreen character parallel activity — what characters not in this
+        // scene are doing in parallel. Keeps the world continuous; injected as subtext context.
+        var offscreenActivityContext = context.OffscreenActivityContext;
+        if (string.IsNullOrEmpty(offscreenActivityContext) && narrativeChart != null
+            && context.NodeId != Guid.Empty && totalBeats > 0)
+        {
+            try
+            {
+                var chart = await narrativeChart.BuildChartAsync(context.NodeId, ct);
+                if (beatIndex < chart.Beats.Count)
+                {
+                    var crossSection = chart.Beats[beatIndex];
+                    offscreenActivityContext = NarrativeChartService.BuildOffscreenContextBlock(crossSection);
+                }
+            }
+            catch { /* non-blocking */ }
+        }
+
         // ── Assemble enriched context ─────────────────────────────────────────
 
         var enriched = context with
@@ -347,12 +376,14 @@ public class ProseWriterRouter(
             TensionGuidanceContext = tensionGuidanceContext,
             ReaderKnowledgeContext = readerKnowledgeContext,
             ConsequenceContext     = consequenceContext,
-            AmbientAnomalyContext   = ambientAnomalyContext,
-            WorldStateContext       = worldStateContext,
-            NarrativeSummaryContext = narrativeSummaryContext,
-            ChapterSummaryContext   = chapterSummaryContext,
-            OpenThreadsContext      = openThreadsContext,
-            ContinuityContext       = continuityContext,
+            AmbientAnomalyContext    = ambientAnomalyContext,
+            WorldStateContext        = worldStateContext,
+            NarrativeSummaryContext  = narrativeSummaryContext,
+            ChapterSummaryContext    = chapterSummaryContext,
+            OpenThreadsContext       = openThreadsContext,
+            ContinuityContext        = continuityContext,
+            StoryScienceGuidance     = storyScienceGuidance,
+            OffscreenActivityContext = offscreenActivityContext,
         };
 
         var startedAt = DateTime.UtcNow;
@@ -413,6 +444,8 @@ public class ProseWriterRouter(
                 new("OpenThreads",         IsApplicable: nodeApplicable,          IsActive: openThreadsContext.Length > 0,                                            BlockSizeChars: openThreadsContext.Length),
                 new("SceneContextAssembler", IsApplicable: beatId != Guid.Empty,  IsActive: xRayContext.Length > 0,                                                    BlockSizeChars: xRayContext.Length),
                 new("ContinuityService",   IsApplicable: nodeApplicable,          IsActive: continuityContext.Length > 0,                                              BlockSizeChars: continuityContext.Length),
+                new("StoryScience",        IsApplicable: totalBeats > 0,          IsActive: storyScienceGuidance.Length > 0,                                             BlockSizeChars: storyScienceGuidance.Length),
+                new("NarrativeChart",      IsApplicable: nodeApplicable,          IsActive: offscreenActivityContext.Length > 0,                                         BlockSizeChars: offscreenActivityContext.Length),
             ], CancellationToken.None);
 
             await modeDetector.PersistAsync(beatId, universeId, mode, confidence, method, CancellationToken.None);
