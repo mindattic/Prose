@@ -2332,6 +2332,7 @@ hr {
 /* compact, theme-aware universe dropdown (not page-width, not white-on-dark) */
 .app-banner-universe.form-select {
     width: auto; min-width: 150px; max-width: 230px;
+    padding: 2px 5px 2px 5px;
     background-color: #1a1d23; color: #e6e6e6; border-color: rgba(255,255,255,.15);
     background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16'%3e%3cpath fill='none' stroke='%23999' stroke-linecap='round' stroke-linejoin='round' stroke-width='2' d='M2 5l6 6 6-6'/%3e%3c/svg%3e");
 }
@@ -2435,9 +2436,9 @@ hr {
 .app-shell[data-theme="fantasy"] .form-check-input { background-color: #f2efea !important; border-color: rgba(0,0,0,.3) !important; }
 .app-shell[data-theme="fantasy"] .form-check-input:checked { background-color: #c9a227 !important; border-color: #c9a227 !important; }
 
-/* ── In-pane breadcrumb ───────────────────────────────────────────────────── */
+/* ── In-pane breadcrumb — hidden in Writer (tab bar is the nav) ────────────── */
 .auto-breadcrumb {
-    display: flex; align-items: center; gap: 0;
+    display: none; align-items: center; gap: 0;
     padding: .3rem .1rem .4rem; margin-bottom: .35rem;
     border-bottom: 1px solid rgba(255,255,255,.07); font-size: .82rem;
 }

@@ -86,13 +86,6 @@
             book = Books.LoadBook(BookId);
             if (book != null)
             {
-                var totalChars = 0;
-                foreach (var cid in book.ChapterIds)
-                {
-                    // Lightweight estimate via chapter HTML length — over-counts a bit because of
-                    // tags but the rough scale is what the user wants for cost intuition.
-                    // (We don't load chapter prose here to keep the page fast.)
-                }
                 bookSize = $"{book.ChapterIds.Count} chapter(s)";
             }
         }

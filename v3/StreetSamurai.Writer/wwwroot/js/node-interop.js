@@ -499,4 +499,22 @@
         return true;
     }
     window.streetsamurai.focusElement         = focusElement;
+
+    // Make all elements matching `selector` the same height as the tallest.
+    // Pass reset=true to clear the fixed heights and let them breathe again.
+    function equalizeHeights(selector, reset) {
+        const els = Array.from(document.querySelectorAll(selector));
+        if (!els.length) return;
+        els.forEach(function (el) { el.style.minHeight = ''; });
+        if (reset) return;
+        const max = els.reduce(function (m, el) { return Math.max(m, el.offsetHeight); }, 0);
+        els.forEach(function (el) { el.style.minHeight = max + 'px'; });
+    }
+    window.streetsamurai.equalizeHeights = equalizeHeights;
+
+    function scrollToId(id) {
+        const el = document.getElementById(id);
+        if (el) el.scrollIntoView({ behavior: 'smooth', block: 'start' });
+    }
+    window.streetsamurai.scrollToId = scrollToId;
 })();

@@ -16,8 +16,6 @@
 @inject StreetSamurai.Core.Services.ManuscriptExportService Manuscript
 @inject StreetSamurai.Core.Services.NodeReviewService ReviewSvc
 @inject StreetSamurai.Shared.Services.TabService TabSvc
-@implements IDisposable
-
 @*
    Story index over the node tree (SeriesNode / StoryNode / ChapterNode).
    Lists every top-level node grouped by kind. Click to open in the
@@ -25,217 +23,84 @@
    blank top-level node and routes you there.
 *@
 
-<div class="container py-3" style="max-width: 1100px;" id="nodes-list-root">
-    <div class="d-flex justify-content-between align-items-center mb-3">
-        <div>
-            <h4 class="text-danger mb-0"><i class="bi bi-collection me-2"></i>Stories</h4>
-            <div class="text-muted small">Series contain stories; stories contain chapters; chapters contain beats.</div>
-        </div>
-        <div class="d-flex gap-2 align-items-end">
-            <input class="form-control form-control-sm bg-black text-light border-secondary"
-                   placeholder="New story title…" @bind="newTitle" @bind:event="oninput" style="width:240px;" />
-            <select class="form-select form-select-sm bg-black text-light border-secondary" @bind="newKind" style="width:120px;">
-                <option value="series">series</option>
-                <option value="story">story</option>
-                <option value="chapter">chapter</option>
-            </select>
-            <button class="btn btn-sm btn-outline-info" @onclick="CreateAsync" disabled="@(string.IsNullOrWhiteSpace(newTitle))">
-                <i class="bi bi-plus-circle me-1"></i>Create
-            </button>
-        </div>
-    </div>
+<div class="container py-3" style="max-width: 900px;">
+    <h4 class="text-light mb-3"><i class="bi bi-book me-2"></i>Stories</h4>
 
     @if (loading)
     {
-        <div class="text-muted"><span class="spinner-border spinner-border-sm me-2"></span>Loading stories…</div>
+        <div class="text-muted"><span class="spinner-border spinner-border-sm me-2"></span>Loading…</div>
     }
-    else if (nodes.Count == 0)
+    else if (allStories.Count == 0)
     {
-        <div class="card bg-dark border-secondary text-center py-5">
-            <div class="text-muted mb-2">
-                <i class="bi bi-stars" style="font-size:2rem; opacity:0.4;"></i>
-            </div>
-            <h6 class="text-light mb-2">No stories yet</h6>
-            <div class="text-muted small mb-3">
-                The tree has three levels — a <em>series</em> groups stories, a <em>story</em> is a single arc, and its <em>chapters</em> hold the beats.
-                <br />Type a title above and click Create, or run <code>ss --write-story --seed "&hellip;"</code> from the CLI to generate one with the LLM.
-            </div>
-        </div>
+        <div class="text-muted">No stories found.</div>
     }
     else
     {
-        @foreach (var group in grouped)
-        {
-            <div class="card bg-dark border-secondary mb-3">
-                <div class="card-header py-2 px-3">
-                    <span class="text-uppercase text-muted small">@group.Key</span>
-                    <span class="text-muted small ms-2">@group.Count() node(s)</span>
-                </div>
-                <ul class="list-group list-group-flush">
-                    @foreach (var s in group.OrderBy(x => x.Title))
+        <ul class="nodes-list">
+            @foreach (var s in allStories)
+            {
+                var beatCount = beatCounts.GetValueOrDefault(s.Id, 0);
+                <li class="story-row @(editingId == s.Id ? "story-row--editing" : "")">
+                    @if (editingId == s.Id)
                     {
-                        var beatCount = beatCounts.GetValueOrDefault(s.Id, 0);
-                        var childCount = childCounts.GetValueOrDefault(s.Id, 0);
-                        <li class="list-group-item bg-dark text-light border-secondary" data-node-id="@s.Id" data-has-children="@(childCount > 0 ? "true" : "false")">
-                            @if (editingId == s.Id)
+                        <div class="mb-2">
+                            <label class="form-label small text-muted mb-1">Title</label>
+                            <input class="form-control form-control-sm bg-black text-light border-secondary"
+                                   @bind="editTitle" @bind:event="oninput" />
+                        </div>
+                        <div class="mb-2">
+                            <label class="form-label small text-muted mb-1">Description</label>
+                            <textarea class="form-control form-control-sm bg-black text-light border-secondary"
+                                      rows="3" @bind="editDescription" @bind:event="oninput"></textarea>
+                        </div>
+                        <div class="mb-2">
+                            <label class="form-label small text-muted mb-1">Summary <span class="text-muted" style="font-size:0.75em">(KDP jacket blurb)</span></label>
+                            <textarea class="form-control form-control-sm bg-black text-light border-secondary"
+                                      rows="5" @bind="editSummary" @bind:event="oninput"></textarea>
+                        </div>
+                        <div class="d-flex gap-2">
+                            <button class="btn btn-sm btn-success" @onclick="SaveEditAsync"
+                                    disabled="@(savingEdit || string.IsNullOrWhiteSpace(editTitle))">
+                                @if (savingEdit) { <span class="spinner-border spinner-border-sm me-1"></span> }
+                                <i class="bi bi-check-lg me-1"></i>Save
+                            </button>
+                            <button class="btn btn-sm btn-outline-secondary" @onclick="CancelEdit" disabled="@savingEdit">Cancel</button>
+                        </div>
+                    }
+                    else
+                    {
+                        <div class="story-header">
+                            <a href="@($"/node/{s.Slug}")" class="story-title-link"
+                               @onclick:preventDefault @onclick="() => OpenNode(s.Slug, s.NodeCode)">
+                                @s.Title
+                            </a>
+                            @if (!string.IsNullOrWhiteSpace(s.NodeCode))
                             {
-                                @* ── Inline edit: title + full description ───────────────── *@
-                                <div class="mb-2">
-                                    <label class="form-label small text-muted mb-1">Title</label>
-                                    <input class="form-control form-control-sm bg-black text-light border-secondary"
-                                           @bind="editTitle" @bind:event="oninput" />
-                                </div>
-                                <div class="mb-2">
-                                    <label class="form-label small text-muted mb-1">Description <span class="text-muted" style="font-size:0.75em">(back-of-book text)</span></label>
-                                    <textarea class="form-control form-control-sm bg-black text-light border-secondary"
-                                              rows="3" placeholder="Back-of-book description"
-                                              @bind="editDescription" @bind:event="oninput"></textarea>
-                                </div>
-                                <div class="mb-2">
-                                    <label class="form-label small text-muted mb-1">Summary <span class="text-muted" style="font-size:0.75em">(back-of-book / KDP)</span></label>
-                                    <textarea class="form-control form-control-sm bg-black text-light border-secondary"
-                                              rows="5" placeholder="~100–150 word jacket blurb for KDP / store listings"
-                                              @bind="editSummary" @bind:event="oninput"></textarea>
-                                </div>
-                                <div class="d-flex gap-2">
-                                    <button class="btn btn-sm btn-success" @onclick="SaveEditAsync"
-                                            disabled="@(savingEdit || string.IsNullOrWhiteSpace(editTitle))">
-                                        @if (savingEdit) { <span class="spinner-border spinner-border-sm me-1"></span> }
-                                        <i class="bi bi-check-lg me-1"></i>Save
-                                    </button>
-                                    <button class="btn btn-sm btn-outline-secondary" @onclick="CancelEdit" disabled="@savingEdit">Cancel</button>
-                                    <code class="text-muted node-guid ms-auto align-self-center">@s.Id</code>
-                                </div>
+                                <span class="story-code">@s.NodeCode</span>
                             }
-                            else if (s.Kind == "series")
-                            {
-                                @* Series = section header, not a clickable story *@
-                                <div class="d-flex align-items-center gap-2">
-                                    <i class="bi bi-collection text-muted"></i>
-                                    <span class="text-muted text-uppercase fw-bold small">@s.Title</span>
-                                    @if (!string.IsNullOrWhiteSpace(s.NodeCode))
-                                    {
-                                        <span class="badge bg-secondary text-uppercase" style="font-size:0.65rem;">@s.NodeCode</span>
-                                    }
-                                    <button class="btn btn-sm btn-outline-light ms-auto" title="Edit series title"
-                                            @onclick="() => BeginEdit(s)">
-                                        <i class="bi bi-pencil"></i>
-                                    </button>
-                                </div>
-                            }
-                            else
-                            {
-                                <div class="d-flex justify-content-between align-items-center">
-                                    <span class="node-drag-handle me-2" title="Drag to reorder or move into a collection">
-                                        <i class="bi bi-grip-vertical"></i>
-                                    </span>
-                                    <a href="@($"/node/{s.Slug}")" class="text-info text-decoration-none flex-grow-1"
-                                       @onclick:preventDefault @onclick="() => OpenNode(s.Slug, s.NodeCode)">
-                                        <strong>@s.Title</strong>
-                                        @if (!string.IsNullOrWhiteSpace(s.NodeCode))
-                                        {
-                                            <span class="text-muted ms-2 small">[@s.NodeCode]</span>
-                                        }
-                                    </a>
-                                    <div class="d-flex align-items-center gap-2 small">
-                                        @if (beatCount > 0)
-                                        {
-                                            <span class="text-muted" title="Beats"><i class="bi bi-three-dots me-1"></i>@beatCount</span>
-                                        }
-                                        @{ var pages = pageCounts.GetValueOrDefault(s.Id, 0); }
-                                        @if (pages > 0)
-                                        {
-                                            <span class="text-muted" title="Estimated pages"><i class="bi bi-file-text me-1"></i>@pages pg</span>
-                                        }
-                                        @{ var audioDur = audioDurations.GetValueOrDefault(s.Id); }
-                                        @if (!string.IsNullOrEmpty(audioDur))
-                                        {
-                                            <span class="text-muted" title="Estimated audio duration"><i class="bi bi-headphones me-1"></i>@audioDur</span>
-                                        }
-                                        <span class="badge bg-@StatusColor(s.Status) text-uppercase">@StatusLabel(s.Status)</span>
-                                        <button class="btn btn-sm btn-outline-light" title="Edit title &amp; description"
-                                                @onclick="() => BeginEdit(s)">
-                                            <i class="bi bi-pencil"></i>
-                                        </button>
-                                    </div>
-                                </div>
-                                @if (!string.IsNullOrWhiteSpace(s.Description))
-                                {
-                                    <div class="node-description-line mt-1">@s.Description</div>
-                                }
-                                else
-                                {
-                                    <div class="node-description-line node-description-empty mt-1">No description yet — click the pencil to add one.</div>
-                                }
-                                <code class="text-muted node-guid" title="Click to copy full id"
-                                      @onclick="() => CopyGuidAsync(s.Id)">@s.Id</code>
-                            }
-                        </li>
-                        @* ── Series children always shown; story children shown when expanded ── *@
-                        @if ((s.Kind == "series" || expandedParents.Contains(s.Id)) && childNodes.TryGetValue(s.Id, out var kids))
+                            @if (beatCount > 0) { <span class="story-stat">@beatCount beats</span> }
+                            @if (s.Score.HasValue) { <span class="story-stat story-stat--score">@s.Score.Value.ToString("0")%</span> }
+                            @{ var pages = pageCounts.GetValueOrDefault(s.Id, 0); }
+                            @if (pages > 0) { <span class="story-stat">@pages pg</span> }
+                            @{ var dur = audioDurations.GetValueOrDefault(s.Id); }
+                            @if (!string.IsNullOrEmpty(dur)) { <span class="story-stat">@dur</span> }
+                            <code class="story-guid" title="Click to copy full ID" @onclick="() => CopyGuidAsync(s.Id)">@s.Id.ToString()[..8]…</code>
+                            <span class="story-spacer"></span>
+                            <button class="story-edit-btn" title="Edit" @onclick="() => BeginEdit(s)">
+                                <i class="bi bi-pencil"></i>
+                            </button>
+                        </div>
+                        @if (!string.IsNullOrWhiteSpace(s.Description))
                         {
-                            var orderedKids = kids.OrderBy(k => k.SortKey).ThenBy(k => k.Title).ToList();
-                            for (var ci = 0; ci < orderedKids.Count; ci++)
-                            {
-                                var kid = orderedKids[ci];
-                                var kidIndex = ci;
-                                var kidBeats = beatCounts.GetValueOrDefault(kid.Id, 0);
-                                var kidTitle = string.IsNullOrWhiteSpace(kid.Title) ? $"Chapter {kidIndex + 1}" : kid.Title;
-                                <li class="list-group-item bg-dark text-light border-secondary node-child-row" data-node-id="@kid.Id" data-has-children="false">
-                                    @if (editingId == kid.Id)
-                                    {
-                                        <div class="d-flex gap-2 align-items-start flex-wrap">
-                                            <input class="form-control form-control-sm flex-grow-1" @bind="editTitle" placeholder="Title" />
-                                            <button class="btn btn-sm btn-success" @onclick="SaveEditAsync" disabled="@savingEdit">
-                                                @if (savingEdit) { <span class="spinner-border spinner-border-sm"></span> }
-                                                else { <i class="bi bi-check-lg"></i> }
-                                            </button>
-                                            <button class="btn btn-sm btn-outline-secondary" @onclick="CancelEdit">
-                                                <i class="bi bi-x-lg"></i>
-                                            </button>
-                                        </div>
-                                        <textarea class="form-control form-control-sm mt-1" rows="2" @bind="editDescription" placeholder="Description (optional)"></textarea>
-                                    }
-                                    else
-                                    {
-                                        <div class="d-flex justify-content-between align-items-center">
-                                            <span class="node-drag-handle me-1" title="Drag to reorder or move to a different collection">
-                                                <i class="bi bi-grip-vertical"></i>
-                                            </span>
-                                            <a href="@($"/node/{kid.Slug}")" class="text-info text-decoration-none flex-grow-1 ms-2"
-                                               @onclick:preventDefault @onclick="() => OpenNode(kid.Slug, kid.NodeCode)">
-                                                <i class="bi bi-arrow-return-right me-2 text-secondary" style="font-size:0.75rem;"></i>@kidTitle
-                                                @if (!string.IsNullOrWhiteSpace(kid.NodeCode))
-                                                {
-                                                    <span class="text-muted ms-2 small">[@kid.NodeCode]</span>
-                                                }
-                                            </a>
-                                            <div class="d-flex align-items-center gap-2 small">
-                                                @if (kidBeats > 0)
-                                                {
-                                                    <span class="text-muted"><i class="bi bi-three-dots me-1"></i>@kidBeats</span>
-                                                }
-                                                <span class="badge bg-@StatusColor(kid.Status) text-uppercase">@StatusLabel(kid.Status)</span>
-                                                <button class="btn btn-sm btn-outline-light" title="Edit title &amp; description"
-                                                        @onclick="() => BeginEdit(kid)">
-                                                    <i class="bi bi-pencil"></i>
-                                                </button>
-                                            </div>
-                                        </div>
-                                        @if (!string.IsNullOrWhiteSpace(kid.Description))
-                                        {
-                                            <div class="node-description-line mt-1 ms-4">@kid.Description</div>
-                                        }
-                                    }
-                                </li>
-                            }
+                            <div class="story-desc">@s.Description</div>
                         }
                     }
-                </ul>
-            </div>
-        }
+                </li>
+            }
+        </ul>
     }
 </div>
+
 
 @* ── Score history chart modal ───────────────────────────────────────── *@
 <ScoreHistoryModal Visible="scoreHistoryOpen"
@@ -355,23 +220,36 @@
     .review-text { color: #ced4da; font-size: 0.88rem; white-space: pre-wrap; }
     .review-fixes { margin: 0.4rem 0 0; padding-left: 1.1rem; color: #9fb6c2; font-size: 0.82rem; }
     .review-fixes li { margin-bottom: 0.15rem; }
-    .node-child-row { background: #0d0d0d !important; border-left: 2px solid #1a3a2a !important; }
-    .node-child-row:hover { background: #111 !important; }
-    .node-drag-handle { cursor: grab; color: #4a4a4a; user-select: none; flex-shrink: 0; }
-    .node-drag-handle:hover { color: #0dcaf0; }
-    .node-drag-handle:active { cursor: grabbing; }
-    [data-node-id].node-dragging { opacity: 0.45; }
-    [data-node-id].node-drop-before { box-shadow: inset 0 3px 0 0 #0dcaf0 !important; }
-    [data-node-id].node-drop-after  { box-shadow: inset 0 -3px 0 0 #0dcaf0 !important; }
-    [data-node-id].node-drop-child  { background: rgba(13,202,240,0.07) !important; outline: 2px solid rgba(13,202,240,0.45); outline-offset: -2px; }
+    .nodes-list { list-style: none; margin: 0; padding: 0; display: flex; flex-direction: column; gap: 0.55rem; }
+    /* story card — mirrors .beat-card from Node.razor */
+    .story-row { background: #161616; border: 1px solid #2a2a2a; border-radius: 8px; overflow: hidden; transition: border-color 0.15s ease, box-shadow 0.15s ease; }
+    .story-row:hover { border-color: #0dcaf0; box-shadow: 0 0 0 1px rgba(13,202,240,0.18); }
+    .story-row--editing { padding: 0.75rem; border-color: #0dcaf0; }
+    /* header row — the "title bar" of each pane */
+    .story-header { display: flex; align-items: center; gap: 0.55rem; padding: 0.45rem 0.9rem; background: #1b1b1b; border-bottom: 1px solid #242424; overflow: hidden; }
+    .story-row:not(.story-row--editing) .story-header:only-child { border-bottom: none; }
+    .story-title-link { font-size: 0.92rem; font-weight: 600; color: #d0d7de; text-decoration: none; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; flex-shrink: 1; min-width: 4rem; }
+    .story-title-link:hover { color: #0dcaf0; }
+    .story-code { font-size: 0.66rem; font-family: monospace; background: rgba(13,202,240,0.07); color: #79d2e8; padding: 1px 5px; border-radius: 10px; white-space: nowrap; flex-shrink: 0; }
+    .story-stat { font-size: 0.68rem; color: #6c757d; white-space: nowrap; flex-shrink: 0; }
+    .story-stat--score { color: #8ab4f8; font-weight: 500; }
+    .story-guid { font-size: 0.6rem; font-family: monospace; color: #2e2e2e; cursor: pointer; transition: color 0.12s; user-select: none; white-space: nowrap; flex-shrink: 0; }
+    .story-row:hover .story-guid { color: #4a4a4a; }
+    .story-guid:hover { color: #0dcaf0 !important; }
+    .story-spacer { flex: 1; }
+    .story-edit-btn { flex-shrink: 0; background: none; border: none; color: #444; cursor: pointer; padding: 3px 7px; border-radius: 4px; font-size: 0.75rem; line-height: 1; transition: color 0.1s, background 0.1s; }
+    .story-edit-btn:hover { color: #adb5bd; background: #242424; }
+    /* body — clipped description below the header */
+    .story-desc { padding: 0.45rem 0.9rem 0.55rem; font-size: 0.77rem; color: #6c757d; line-height: 1.55; }
 </style>
 
 @code {
     private bool loading = true;
     private List<NodeEntity> nodes = new();
+    private List<NodeEntity> allStories = new();
+#pragma warning disable CS0414
     private IEnumerable<IGrouping<string, NodeEntity>> grouped = Array.Empty<IGrouping<string, NodeEntity>>();
-    private DotNetObjectReference<Nodes>? selfRef;
-    private bool dragAttached;
+#pragma warning restore CS0414
     /// <summary>Direct-beat count per top-level node id. Lets the index
     /// show a "this has stuff" cue without opening every node.</summary>
     private Dictionary<Guid, int> beatCounts = new();
@@ -432,6 +310,9 @@
             var local = nodes.FirstOrDefault(x => x.Id == id);
             if (local != null) { local.Title = entity.Title; local.Description = entity.Description; local.Summary = entity.Summary; }
             grouped = nodes.GroupBy(s => s.Kind).OrderBy(g => g.Key);
+            allStories = nodes.Where(n => n.Kind == "story")
+                .Concat(childNodes.Values.SelectMany(kids => kids.Where(k => k.Kind == "story")))
+                .OrderBy(s => s.SortKey).ThenBy(s => s.Title).ToList();
             CancelEdit();
             Toast.Info("SAVED", "Story updated.");
         }
@@ -453,98 +334,10 @@
 
     protected override async Task OnAfterRenderAsync(bool firstRender)
     {
-        if (!dragAttached && !loading)
-        {
-            try
-            {
-                selfRef ??= DotNetObjectReference.Create(this);
-                await JS.InvokeVoidAsync("streetsamurai.attachNodeDragHandlers", "nodes-list-root", selfRef);
-                dragAttached = true;
-            }
-            catch { /* JS not loaded yet — will retry on next render */ }
-        }
+        if (!loading)
+            await JS.InvokeVoidAsync("streetsamurai.equalizeHeights", ".story-row", false);
     }
 
-    [Microsoft.JSInterop.JSInvokable]
-    public async Task OnNodeDropped(string draggedId, string targetId, string mode)
-    {
-        if (!Guid.TryParse(draggedId, out var dragId) ||
-            !Guid.TryParse(targetId, out var targetGuid)) return;
-
-        await using var db = await DbFactory.CreateDbContextAsync();
-        var dragged = await db.Nodes.FirstOrDefaultAsync(s => s.Id == dragId);
-        var target  = await db.Nodes.FirstOrDefaultAsync(s => s.Id == targetGuid);
-        if (dragged == null || target == null) return;
-
-        Guid? newParentId;
-        double newSortKey;
-
-        if (mode == "child")
-        {
-            // Append as last child of the target collection.
-            newParentId = target.Id;
-            var maxSk = await db.Nodes
-                .Where(s => s.ParentNodeId == target.Id && s.Id != dragId)
-                .MaxAsync(s => (double?)s.SortKey) ?? 0.0;
-            newSortKey = maxSk + 100.0;
-        }
-        else
-        {
-            // "before" or "after" — insert as sibling of target at target's parent level.
-            newParentId = target.ParentNodeId;
-            var siblings = await db.Nodes
-                .Where(s => s.ParentNodeId == newParentId && s.Id != dragId)
-                .OrderBy(s => s.SortKey)
-                .Select(s => new { s.Id, s.SortKey })
-                .ToListAsync();
-            var targetIdx = siblings.FindIndex(s => s.Id == targetGuid);
-
-            if (mode == "after")
-            {
-                var prevSk = targetIdx >= 0 ? siblings[targetIdx].SortKey : 0.0;
-                var nextSk = (targetIdx >= 0 && targetIdx + 1 < siblings.Count)
-                    ? siblings[targetIdx + 1].SortKey : prevSk + 200.0;
-                newSortKey = (prevSk + nextSk) / 2.0;
-            }
-            else // "before"
-            {
-                var nextSk = targetIdx >= 0 ? siblings[targetIdx].SortKey : 100.0;
-                var prevSk = targetIdx > 0 ? siblings[targetIdx - 1].SortKey : nextSk - 200.0;
-                newSortKey = (prevSk + nextSk) / 2.0;
-            }
-        }
-
-        // Enforce kind hierarchy: series→story→chapter. Reject invalid drops.
-        if (newParentId.HasValue)
-        {
-            var parentNode = mode == "child"
-                ? target
-                : await db.Nodes.AsNoTracking().FirstOrDefaultAsync(s => s.Id == newParentId);
-            if (parentNode != null)
-            {
-                var err = KindCompatibilityError(parentNode.Kind, dragged.Kind);
-                if (err != null) { Toast.Error("DROP-INVALID", err); return; }
-            }
-        }
-        else if (dragged is StreetSamurai.Core.Data.Entities.ChapterNode)
-        {
-            Toast.Error("DROP-INVALID", "A chapter must be under a story. Drop it onto a story instead.");
-            return;
-        }
-
-        dragged.ParentNodeId = newParentId;
-        dragged.SortKey = newSortKey;
-        dragged.UpdatedAt = DateTime.UtcNow;
-        await db.SaveChangesAsync();
-
-        dragAttached = false;
-        await InvokeAsync(LoadAsync);
-    }
-
-    public void Dispose()
-    {
-        selfRef?.Dispose();
-    }
 
     private async Task LoadAsync()
     {
@@ -643,6 +436,10 @@
         });
 
         grouped = nodes.GroupBy(s => s.Kind).OrderBy(g => g.Key);
+        allStories = nodes.Where(n => n.Kind == "story")
+            .Concat(childNodes.Values.SelectMany(kids => kids.Where(k => k.Kind == "story")))
+            .OrderBy(s => s.SortKey).ThenBy(s => s.Title)
+            .ToList();
         loading = false;
         StateHasChanged();
     }
@@ -773,6 +570,14 @@
 
     private static string StatusColor(string status) => StreetSamurai.Core.Services.NodeWorkbenchService.StatusColor(status);
     private static string StatusLabel(string status) => StreetSamurai.Core.Services.NodeWorkbenchService.StatusLabel(status);
+    private static string KindLabel(string kind) => kind switch
+    {
+        "series"    => "Series",
+        "story"     => "Stories",
+        "chapter"   => "Chapters",
+        "reference" => "Reference",
+        _           => kind,
+    };
 
     // ── Reviews modal ────────────────────────────────────────────────────
     private bool reviewsOpen;

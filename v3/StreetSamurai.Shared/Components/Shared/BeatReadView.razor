@@ -1,11 +1,22 @@
-@* Read-only beat prose renderer. Renders text through XrefText with NER enabled so entity
-   names become clickable links. Node.razor shows this when a beat is not dirty; switches
-   back to the textarea when the user clicks to edit. *@
+@* Read-only beat prose renderer. Renders plain paragraphs — wiki-link markup [[...]] is stripped. *@
 
 <div class="beat-prose-render">
-    <XrefText Text="@Text" Paragraphs="true" EnableNer="false" />
+    @foreach (var para in GetParagraphs())
+    {
+        <p>@para</p>
+    }
 </div>
 
 @code {
     [Parameter, EditorRequired] public string Text { get; set; } = "";
+
+    private static readonly System.Text.RegularExpressions.Regex WikiLink =
+        new(@"\[\[([^\]\|]+)(?:\|[^\]]+)?\]\]",
+            System.Text.RegularExpressions.RegexOptions.Compiled);
+
+    private IEnumerable<string> GetParagraphs()
+    {
+        var clean = WikiLink.Replace(Text ?? "", m => m.Groups[1].Value);
+        return clean.Split(["\n\n", "\r\n\r\n"], StringSplitOptions.RemoveEmptyEntries);
+    }
 }

@@ -1,5 +1,6 @@
 ﻿@page "/node/{IdOrSlug}"
 @page "/story/{IdOrSlug}"
+@page "/stories/{IdOrSlug}"
 @attribute [Authorize(Policy = MaPolicies.Admin)]
 @using Microsoft.EntityFrameworkCore
 @using StreetSamurai.Core.Data
@@ -251,7 +252,7 @@
        overlay is gone. */
     /* Gutter insert: faintly visible at rest so the affordance is
        discoverable, full strength when the pointer enters the gutter. */
-    .insert-bar { display: flex; align-items: center; gap: 0.5rem; opacity: 0.22; transition: opacity 0.15s ease; padding: 0.25rem 0; margin-bottom: 0.5rem; }
+    .insert-bar { display: flex; align-items: center; gap: 0.5rem; opacity: 0.22; transition: opacity 0.15s ease; padding: 0.25rem 0; margin: 0.75rem 0; }
     .insert-bar:hover, .insert-bar:focus-within { opacity: 1; }
     .insert-bar-line { flex-grow: 1; height: 1px; background: #2a2a2a; }
     .beat-meta-chips { display: flex; flex-wrap: wrap; gap: 0.25rem; margin-top: 0.35rem; font-size: 0.7rem; }
@@ -298,10 +299,12 @@ else
         <div class="node-head">
             <div class="d-flex align-items-start gap-3">
                 <div class="flex-grow-1">
-                    <div class="d-flex align-items-center gap-2 mb-1 flex-wrap">
-                        <span class="badge bg-secondary node-meta-chip text-uppercase">@node.Kind</span>
-                        <span class="badge bg-@StatusColor(node.Status) node-meta-chip text-uppercase">@StatusLabel(node.Status)</span>
-                    </div>
+                    @if (node.Score.HasValue)
+                    {
+                        <div class="mb-1">
+                            <span class="badge @ScorePctColor(node.Score.Value) node-meta-chip">@node.Score.Value.ToString("0")%</span>
+                        </div>
+                    }
                     <input class="node-title w-100" placeholder="Untitled node"
                            @bind="node.Title" @bind:event="oninput" @onblur="SaveNodeHeaderAsync" />
                     <textarea class="node-description mt-1" rows="5" placeholder="Description (optional)"
@@ -331,7 +334,8 @@ else
                 {
                     var child = children[ci];
                     var chTitle = string.IsNullOrWhiteSpace(child.Title) ? $"Chapter {ci + 1}" : child.Title;
-                    <a href="#chapter-@child.Id.ToString("N")" class="node-toc-item">
+                    <a href="#chapter-@child.Id.ToString("N")" class="node-toc-item"
+                       @onclick:preventDefault @onclick="() => ScrollToChapterAsync(child.Id)">
                         <span class="node-toc-num">@(ci + 1).</span>
                         <span>@chTitle</span>
                     </a>
@@ -477,10 +481,12 @@ else
     private NodeEntity? node;
 
     // ── Reviews modal (shared sortable component; node = full reviews, beat = micro) ──
+#pragma warning disable CS0414, CS0649
     private bool reviewsOpen;
     private string reviewModalTitle = "";
     private double reviewModalMax = 100;
     private string reviewModalSuffix = "/100";
+#pragma warning restore CS0414, CS0649
     private List<ReviewsModal.Item> reviewModalItems = new();
 
     // Traffic-light thresholds per SS-US-J4: ≥80 green, 70–79 yellow, <70 red.
@@ -581,7 +587,9 @@ else
     private List<NodeEntity> children = new();
     private bool loading = true;
     private bool working;
+#pragma warning disable CS0414
     private bool showBible;
+#pragma warning restore CS0414
     private bool bibleGenerating;
     /// <summary>The beat whose Save is mid-flight (drives the spinner on that
     /// one row's check button). Null when nothing is saving.</summary>
@@ -706,10 +714,12 @@ else
     private int publishTotal;
     private string? publishLabel;
 
-    // ── Reader panel (in-UI sampled review) — EXPLICIT Cloud/Local brain. ──────
+    // ── Reader panel (in-UI sampled review) ──────────────────────────────────────
     private bool reviewRunning;
-    private bool reviewUseLocal;            // selected brain; false = cloud trusted-4 (default)
     private int reviewProgress;
+#pragma warning disable CS0649
+    private bool reviewUseLocal;
+#pragma warning restore CS0649
     private bool reviewRanLocal;            // brain that actually produced reviewResult
     private string reviewRanModel = "";
     private NodeReviewService.SampledRunResult? reviewResult;
@@ -794,7 +804,9 @@ else
     private string llmSheetInstruction = "";
     private string llmSheetProposal = "";
     private bool llmSheetRunning;
+#pragma warning disable CS0414
     private bool llmSheetIdCopied;
+#pragma warning restore CS0414
     /// <summary>Stable node.beat reference printed in the sheet header
     /// and used as the CLI handle ("node-guid.beat-guid"). Built when
     /// the sheet opens so it's always populated alongside the beat.</summary>
@@ -808,7 +820,9 @@ else
     // pin it to this node and/or save it as a reusable profile. editorProfile
     // is the live dial set being tuned; it is seeded from the node's current
     // voice snapshot whenever a node loads.
+#pragma warning disable CS0169
     private bool showVoiceStudio;
+#pragma warning restore CS0169
     private StreetSamurai.Core.Models.VoiceProfile editorProfile = new() { Model = "eleven_multilingual_v2", Stability = 0.5, SimilarityBoost = 0.75, Style = 0.0, UseSpeakerBoost = true };
     private bool demoing;
     private string? studioAudioUrl;
@@ -833,7 +847,9 @@ else
     private List<WebSpeechVoice> webSpeechVoices = new();
     private string? webSpeechVoice;
     private double webSpeechRate = 1.0;
+#pragma warning disable CS0414
     private bool webSpeaking;
+#pragma warning restore CS0414
 
     public class WebSpeechVoice { public string Name { get; set; } = ""; public string Lang { get; set; } = ""; }
 
@@ -1068,7 +1084,7 @@ else
     /// <summary>Stable .NET-to-JS callback shim. JS holds this for play
     /// progress AND drag-drop callbacks. Disposed in Dispose so the GC can
     /// collect the page after navigation.</summary>
-    private DotNetObjectReference<Node>? selfRef;
+    private DotNetObjectReference<Story>? selfRef;
 
     /// <summary>Beat currently being synthesised by the per-beat preview
     /// button. Drives the spinner on that row; disables the play button
@@ -1666,6 +1682,11 @@ else
 
     /// <summary>Copy a guid (node id or beat id, UUIDv7) to the clipboard as a
     /// quick reference handle. Flashes the icon and toasts the value.</summary>
+    private async Task ScrollToChapterAsync(Guid chapterId)
+    {
+        await JS.InvokeVoidAsync("streetsamurai.scrollToId", $"chapter-{chapterId:N}");
+    }
+
     private async Task CopyGuidAsync(Guid id, string label)
     {
         try
