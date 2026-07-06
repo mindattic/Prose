@@ -8,7 +8,7 @@ public class TabService
 {
     private readonly List<AppTab> tabs = [HomeTab];
 
-    public static readonly AppTab HomeTab = new("home", "Nodes", "bi-diagram-3", "/");
+    public static readonly AppTab HomeTab = new("home", "Stories", "bi-book", "/");
 
     public IReadOnlyList<AppTab> Tabs => tabs;
     public string ActiveKey { get; private set; } = "home";
