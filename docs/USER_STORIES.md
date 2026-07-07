@@ -310,6 +310,31 @@ updated: 2026-06-25
     character 92, plant/payoff 100, logic 94). Meets target. *(2026-07-04)*
   - **H8g ✅** Exported: `.docx` + `.epub` + `.pdf` + `.txt` → `R:\Desktop\EPub\MindAttic\GLMZ\The Long Cut\The Long Cut V3.*`. *(2026-07-04)*
 
+- **SS-US-H9 ⬜** As the author, *Ballast* (BLST) is a GLMZ community story — Aerobloc Candelaria
+  is sinking toward The Low on a public descent schedule, and ballast engineer Teo Mamani runs
+  the jettison ledger while an Ashgrave Materials salvage offer splits the forty-one households.
+  Not an investigation; nothing hidden; the bloc is not saved. First story generated end-to-end
+  under the StoryScope pipeline (pre-prose structural blueprint → blueprint-injected prose →
+  duel-gated fixes). Full arc, locks, register in [docs/nodes/BLST.md](nodes/BLST.md).
+  *Acceptance: ~30 beats/~100 pages, blueprint before prose, all beats via ProseWriterRouter,
+  logic sweep + storyscope-audit clean, review ≥87, exported to R:\Desktop\EPub\MindAttic\GLMZ\Ballast\.*
+  - **H9a ✅** Docs: BLST node bible written; `codex doctor` PASS. *(2026-07-07)*
+  - **H9b ✅** Entities seeded before prose: Teo Mamani, Ruslan Adeyinka, Sigrun Ferreira,
+    Priya Guðmundsen, Kaja Guðmundsen, Wen Castellanos, Dagny Obuya (characters); Almagre
+    (automaton); Aerobloc Candelaria (place). AshgraveMaterials pre-existing. Seed JSONs in
+    `tools/seeds/blst/`. *(2026-07-07)*
+  - **H9c ✅** StoryNode `ballast-019f3ac7` (NodeCode BLST) + bible + 30-beat spine generated
+    via `--write-node`; bible/synopses reconciled to entity canon (Teo she/34; Kaja adopted;
+    grandson→apprentice; ages aligned). ChapterNodes deferred to post-prose split. *(2026-07-07)*
+  - **H9d ✅** Pre-prose structural blueprint generated (first-ever): subplot parallel on
+    abstention-as-violence, linear, external resolution (physics decides; vote 23-17-1),
+    ambivalent, sawtooth escalation to 10, ledger-interleave form device, avalanche/no-epilogue,
+    5 in-world document anchors. *(2026-07-07)*
+  - **H9e ⬜** All beats written via ProseWriterRouter; StructuralBlueprint coverage active.
+  - **H9f ⬜** QA: reflow + logic sweep BLOCKER-free + storyscope-audit clean + plant-audit clean.
+  - **H9g ⬜** Review ≥ 87.
+  - **H9h ⬜** Exported docx/epub/pdf/txt.
+
 ## Priority backlog
 
 > Dependency-ordered toward the headline goal (a fresh seed → published, reviewed, canon-consistent

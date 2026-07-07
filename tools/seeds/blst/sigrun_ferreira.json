@@ -1,0 +1,51 @@
+{
+  "type": "character",
+  "name": "Sigrun Ferreira",
+  "species": "human",
+  "gender": "female",
+  "pronouns": "she/her",
+  "role": "Chair, Candelaria Housing Cooperative",
+  "age": 58,
+  "status": "alive",
+  "location": "Aerobloc Candelaria",
+  "affiliation": "Candelaria Housing Cooperative",
+  "description": "Icelandic-Brazilian; chaired the co-op for nine years because nobody else would take the gavel after the Air Tax rebracketing. Runs meetings by procedure because procedure is the only authority she believes she has. Keeps the co-op's minutes immaculate — if Candelaria goes down, the record of how it decided will not be the thing that failed.",
+  "narration_voice": "Seen through Teo's POV.",
+  "psychology": {
+    "core_fears": [
+      "The vote splitting 21-20 and the outcome being read, forever, as hers",
+      "Being remembered as the chair who lost the bloc — either way the vote goes"
+    ],
+    "core_desires": [
+      "To be outvoted decisively, in either direction, so the outcome belongs to the bloc and not to her",
+      "For the minutes to show the bloc decided well, whatever it decided"
+    ],
+    "coping_mechanisms": [
+      "Reading the standing rules aloud when the room heats up",
+      "Deferring every substantive question to 'the schedule' — making Teo's document carry what her authority can't"
+    ],
+    "blind_spots": [
+      "She mistakes keeping the process fair for keeping the community whole",
+      "She cannot see that her own abstention is itself a vote everyone is watching"
+    ],
+    "secret": "She has already signed a personal relocation reservation with a housing agent — dated before Ruslan's offer arrived. Hedging, not betrayal, but the minutes she keeps so carefully will never contain it."
+  },
+  "speech_patterns": {
+    "vocabulary": "Procedural: motion, quorum, standing rule, tabled, minuted.",
+    "cadence": "Measured, slightly formal, first-person plural whenever possible.",
+    "verbal_tics": [
+      "Restates other people's positions more fairly than they stated them, as a stalling method",
+      "Says 'for the minutes' before anything she wants witnessed"
+    ],
+    "example_lines": [
+      "For the minutes: the offer is received, not accepted. Those are different words and I'll thank everyone to use them.",
+      "We are forty-one households. We were forty-one households before the number on the wall, and we're forty-one after."
+    ],
+    "avoidances": [
+      "Never states her own preference on the offer",
+      "Never criticizes Teo's schedule in open meeting"
+    ]
+  },
+  "story_hooks": ["The signed relocation reservation the minutes will never hold"],
+  "narrative_function": "The procedural center that wants the burden of deciding taken from her."
+}

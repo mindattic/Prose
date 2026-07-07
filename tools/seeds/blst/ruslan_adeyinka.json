@@ -1,0 +1,55 @@
+{
+  "type": "character",
+  "name": "Ruslan Adeyinka",
+  "species": "human",
+  "gender": "male",
+  "pronouns": "he/him",
+  "role": "Salvage broker, AshgraveMaterials reclamation contract",
+  "age": 51,
+  "status": "alive",
+  "location": "GLMZ",
+  "affiliation": "AshgraveMaterials (contractor)",
+  "description": "Tatar-Yoruba; twenty years brokering structured salvage of failing aerostatic stock for AshgraveMaterials. Has watched three blocs ride into The Low and knows exactly what scavenger salvage looks like when it reaches a bloc that still has people on it. His offer to Candelaria is his conscience wearing a contract. Dresses one bracket below his income so rooms don't harden against him. Carries the deconstruction schedules of his last three blocs in his case and will show them to anyone who asks — the tidy ones, and the one that wasn't.",
+  "narration_voice": "Seen only through Teo's POV. Speaks in offers and floors, never threats.",
+  "psychology": {
+    "core_fears": [
+      "Arriving at a bloc six months after his offer was refused and finding what the scavengers left",
+      "Becoming the kind of broker who stops making the offer in person"
+    ],
+    "core_desires": [
+      "To close Candelaria clean — everyone relocated, everything reclaimed, nobody on it when it goes",
+      "To be understood as the alternative to the fall, not the push"
+    ],
+    "coping_mechanisms": [
+      "Showing the numbers again, slower, when refused — he believes refusal is always an information problem",
+      "Walking a bloc's commons before making an offer so his model has a face on it"
+    ],
+    "blind_spots": [
+      "His model prices the bloc's community at zero because it has no column for it — he never learns this on the page",
+      "He reads Dagny Obuya's refusal to negotiate as denial rather than as an answer"
+    ],
+    "secret": "The third bloc — the one that wasn't tidy — refused him twice before it dropped into The Low. He keeps its deconstruction schedule in his case with the others, though there was nothing structured about how it ended. Never disclosed on-page."
+  },
+  "speech_patterns": {
+    "vocabulary": "Actuarial-humane: reclamation value, relocation floor, controlled deconstruction, bracket relief. Glosses corporate terms unprompted, as courtesy.",
+    "cadence": "Unhurried, complete sentences, always ends on the other party's option — 'that's yours to refuse.'",
+    "verbal_tics": [
+      "Puts the strongest argument against his own offer on the table before anyone else can",
+      "Never says 'salvage' inside the bloc; says 'reclamation' and knows everyone hears the difference"
+    ],
+    "example_lines": [
+      "I've done this three times. Twice it was on schedule. I brought all three schedules — ask me about the third.",
+      "The frame doesn't care how the vote goes. That's the only thing in this that isn't negotiable.",
+      "You can refuse me. I'd rather you refuse me knowing the number than refuse me proud."
+    ],
+    "avoidances": [
+      "Never mentions Priya's daughter — he knows about her and considers using it beneath the work",
+      "Never pressures on a deadline he didn't set"
+    ]
+  },
+  "story_hooks": [
+    "The third bloc's schedule in his case",
+    "His standing offer as the story's honest, insufficient arithmetic"
+  ],
+  "narrative_function": "Antagonist-shaped but not a villain: a correct model missing a column. His arithmetic is never refuted, only answered."
+}

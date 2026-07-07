@@ -377,7 +377,11 @@ if (args.Contains("--legion"))
 //   ss --seed                     list known seeds
 //   ss --seed <name>              apply one
 //   ss --seed --all [--force]     apply every known seed in order
-if (args.Contains("--seed"))
+// NOTE: --seed is also the prompt flag of --write-node / --write-story /
+// --create-story — those commands must win the dispatch or their calls get
+// hijacked by the SQL seeder.
+if (args.Contains("--seed") && !args.Contains("--write-node")
+    && !args.Contains("--write-story") && !args.Contains("--create-story"))
 {
     var sp = BuildCoreServices(args);
     Environment.ExitCode = await SeedCli.RunAsync(args, sp);

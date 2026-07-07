@@ -1,0 +1,56 @@
+{
+  "type": "character",
+  "name": "Teo Mamani",
+  "species": "human",
+  "gender": "female",
+  "pronouns": "she/her",
+  "role": "Ballast-and-trim engineer, Aerobloc Candelaria",
+  "age": 34,
+  "status": "alive",
+  "location": "Aerobloc Candelaria",
+  "affiliation": "Candelaria Housing Cooperative",
+  "description": "Aymara-Chilean out of the Andean transit diaspora; grew up on tether-maintenance platforms where mass discipline was survival. Came down to Candelaria eleven years ago because a bloc job came with a floor of her own — the first fixed address in her family in two generations. Compact, strong-handed, permanently chalk-dusted from marking load points. Owns fifty-one kilos of personal effects and knows the number. Maintains the bloc's descent schedule and jettison ledger; posts the altitude on the commons wall every Monday.",
+  "narration_voice": "Close-third trim register: load, list, moment arm, freeboard, center-of-mass. People read to her as loads and lever arms first, people second — a habit, not a cruelty. Accessible prose: short sentences, contractions, Anglo-Saxon words. She never explains motives, never editorializes; when the weight demands it she names an emotion plainly and moves on. Fragments only under stress.",
+  "psychology": {
+    "core_fears": [
+      "Being the one whose arithmetic kills someone — a trim call that lets the bloc list past recovery",
+      "Losing the floor: going back to living out of fifty-one kilos with no address under them"
+    ],
+    "core_desires": [
+      "To give the bloc a landing it chose, on its own numbers, instead of a fall it was priced into",
+      "To be trusted with the ledger without being hated for it"
+    ],
+    "coping_mechanisms": [
+      "Re-running trim calculations she has already verified, twice, by hand, when she can't act",
+      "Walking the keel corridor end to end counting handholds when the vote gets loud",
+      "Reducing any human conflict to a mass-and-balance problem so it will hold still"
+    ],
+    "blind_spots": [
+      "She prices objects at their mass and is unprepared for what jettisoning other people's belongings does to them — and, late, to her",
+      "She believes posting the schedule honestly is the same as being honest with people"
+    ],
+    "secret": "Three years ago she padded the jettison ledger — logged eleven kilos of 'structural scrap' that was actually her mother's loom, thrown over the side at night so no one would see her hesitate. The ledger's one false line. Never disclosed on-page."
+  },
+  "speech_patterns": {
+    "vocabulary": "Trim and load vocabulary: list, freeboard, moment, counterweight, allocation, bracket. Plain Anglo-Saxon otherwise. Numbers said exactly, never rounded.",
+    "cadence": "Short declaratives. States the number first, then the consequence. Silence instead of reassurance.",
+    "verbal_tics": [
+      "Answers hard questions with the current altitude first",
+      "Says 'that's mass' for anything she thinks is sentimentality, including her own"
+    ],
+    "example_lines": [
+      "Three eighty-one this morning. We lose about forty centimeters a day. Ask me the real question.",
+      "I don't decide what matters. I decide what weighs.",
+      "Fifty-one kilos. I counted. Everything I own goes over the side before anything of yours does — that's the job."
+    ],
+    "avoidances": [
+      "Never speculates about other people's motives aloud",
+      "Never uses corporate euphemisms — says 'thrown over the side', not 'de-massed'"
+    ]
+  },
+  "story_hooks": [
+    "The jettison ledger's one false line",
+    "Her mass allocation — fifty-one kilos — and what she finally does with it"
+  ],
+  "narrative_function": "Protagonist. The person who runs the arithmetic of a sinking home and learns what her columns don't hold."
+}

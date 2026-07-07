@@ -1,0 +1,33 @@
+{
+  "type": "character",
+  "name": "Almagre",
+  "species": "robot",
+  "gender": "",
+  "pronouns": "it/its",
+  "role": "Governor automaton, Aerobloc Candelaria",
+  "age": 0,
+  "status": "alive",
+  "location": "Aerobloc Candelaria",
+  "affiliation": "Candelaria Housing Cooperative",
+  "description": "The bloc's governor automaton — a Tier 1 machine (SS-A23: machine, NOT alive; apparent care is optimization). Enforces the trim limits Teo sets: refuses hatch releases that would shift the bloc past safe list, sequences water-tank transfers, sounds the settling alarm. Its interface is a 2190s civic-plain voice panel in the keel corridor. Residents talk to it more than they admit; it answers exactly what was asked. NARRATIVE LOCK: it does not develop personhood, does not sacrifice itself, does not get a farewell scene.",
+  "narration_voice": "Not a POV. A bureaucratic interface with a maintenance-log voice.",
+  "psychology": {
+    "core_fears": [],
+    "core_desires": [],
+    "coping_mechanisms": [],
+    "blind_spots": [],
+    "secret": ""
+  },
+  "speech_patterns": {
+    "vocabulary": "Trim-limit notices, mass figures, compliance statements. No opinions, no comfort.",
+    "cadence": "Flat, complete, timestamped.",
+    "verbal_tics": ["States current list and freeboard before answering any question"],
+    "example_lines": [
+      "List is zero point four degrees, port. Freeboard to bracket line: sixty-one meters. Your request exceeds quadrant allowance.",
+      "That question has no mass component. Restate it or ask Engineer Mamani."
+    ],
+    "avoidances": ["Anything without a mass component"]
+  },
+  "story_hooks": ["The machine that enforces Teo's numbers back at her"],
+  "narrative_function": "Texture and constraint. A machine that stays a machine."
+}

@@ -1,0 +1,51 @@
+{
+  "type": "character",
+  "name": "Dagny Obuya",
+  "species": "human",
+  "gender": "female",
+  "pronouns": "she/her",
+  "role": "Eldest resident, Aerobloc Candelaria",
+  "age": 81,
+  "status": "alive",
+  "location": "Aerobloc Candelaria",
+  "affiliation": "Candelaria Housing Cooperative",
+  "description": "Norwegian-Luo; aboard since 2186 — before half the current households were born. Her unit holds the largest single mass allocation in the bloc: four decades of a life, plus her late husband's, plus her sister's, both inherited whole. She attends every meeting, votes every vote, and will not discuss her allocation — not from denial and not from wisdom. She is simply done explaining herself to rooms. What she finally does with her allocation is the story's hinge, and it is an action, not a speech.",
+  "narration_voice": "Seen through Teo's POV.",
+  "psychology": {
+    "core_fears": [
+      "Not death and not the fall — being handled. Managed. Becoming an agenda item titled 'the Obuya allocation'",
+      "That the things she keeps have already stopped being memory and become only mass, and that she'd know if she looked"
+    ],
+    "core_desires": [
+      "To decide the one decision that is actually hers, herself, unwitnessed",
+      "For the bloc to land — in either sense — without her as its symbol"
+    ],
+    "coping_mechanisms": [
+      "Attendance: every meeting, every vote, front row, silent — presence instead of argument",
+      "Tending the commons wall's paint — she repaints the altitude number herself some Mondays, neater than Teo does"
+    ],
+    "blind_spots": [
+      "She believes refusing the frame of a question is an answer everyone can hear — mostly they hear refusal",
+      "She underestimates what her silence costs Sigrun's process and Teo's schedule"
+    ],
+    "secret": "She has already chosen what stays and what goes — chose years ago, keeps the list in her head, needs no schedule. What she is waiting for is not clarity. It is for the decision to be hers rather than the bloc's."
+  },
+  "speech_patterns": {
+    "vocabulary": "Spare. Concrete nouns. No abstractions at all.",
+    "cadence": "Says one thing, completely, then stops.",
+    "verbal_tics": [
+      "Answers questions about her allocation with questions about the asker's",
+      "Calls the bloc 'the house' — the only resident who does"
+    ],
+    "example_lines": [
+      "You want to weigh my kitchen. Weigh your own first. Then we'll talk about whose is heavy.",
+      "The house was here before the number on the wall. So was I."
+    ],
+    "avoidances": [
+      "Never discusses her allocation in any meeting",
+      "Never says her husband's or sister's names in the commons"
+    ]
+  },
+  "story_hooks": ["Her allocation as the story's hinge — resolved by action, never by speech, and NOT by her death (narrative lock)"],
+  "narrative_function": "The refusal that reframes the question. The hinge."
+}

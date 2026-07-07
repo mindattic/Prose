@@ -1,0 +1,30 @@
+{
+  "type": "character",
+  "name": "Kaja Guðmundsen",
+  "species": "human",
+  "gender": "female",
+  "pronouns": "she/her",
+  "role": "Priya's daughter; Household 7, Aerobloc Candelaria",
+  "age": 12,
+  "status": "alive",
+  "location": "Aerobloc Candelaria",
+  "affiliation": "Candelaria Housing Cooperative",
+  "description": "Twelve years old — at the closing edge of the juvenile neuretics growth window (SS-A21). Her cheap-bracket provisioning is settling wrong at the cochlear feeds; the corrective integration procedure exists, works, and is priced for Sky People. The fund is Φ8,400 short. Present in the story mostly in absence: the cost of every vote, the clock under the clock. On-page sparingly — a kid doing homework in the commons, wearing the ear shielding she hates.",
+  "narration_voice": "Not a POV.",
+  "psychology": {
+    "core_fears": ["The adults going quiet when she walks in"],
+    "core_desires": ["For sound to stop arriving wrong", "For her mother to stop doing the arithmetic out loud at night"],
+    "coping_mechanisms": ["Homework, methodically", "Naming the bloc's sounds she can still hear right"],
+    "blind_spots": [],
+    "secret": ""
+  },
+  "speech_patterns": {
+    "vocabulary": "A kid's — direct, unsentimental about her own condition.",
+    "cadence": "Short. Asks the question adults are avoiding.",
+    "verbal_tics": [],
+    "example_lines": ["The floor sounds different since Tuesday. Nobody else hears it?"],
+    "avoidances": []
+  },
+  "story_hooks": ["The corrective window closing at the same rate the bloc descends"],
+  "narrative_function": "The human number the jettison ledger must answer to. Present in absence."
+}

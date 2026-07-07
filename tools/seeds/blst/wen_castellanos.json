@@ -1,0 +1,51 @@
+{
+  "type": "character",
+  "name": "Wen Castellanos",
+  "species": "human",
+  "gender": "male",
+  "pronouns": "he/him",
+  "role": "Machinist; leads the stay faction",
+  "age": 46,
+  "status": "alive",
+  "location": "Aerobloc Candelaria",
+  "affiliation": "Candelaria Housing Cooperative",
+  "description": "Hakka-Venezuelan; runs the bloc's machine shop — lathe, mill, a bench of instruments his grandfather carried up in 2190. The workshop IS his household's mass allocation; he lives in a sleeping alcove behind it. Every jettison Teo schedules, he recalculates which of his machines he'd surrender next, and posts his own list beside her schedule on the commons wall — a standing answer to it. The bloc's quiet mirror of Teo: both of them think in mass; only one of them thinks it's the whole answer.",
+  "narration_voice": "Seen through Teo's POV.",
+  "psychology": {
+    "core_fears": [
+      "Ground-level rent for a shop this size — the machines going to a storage unit and then, one by one, to sale",
+      "That the stay vote wins and someone gets hurt, and it will have been his vote"
+    ],
+    "core_desires": [
+      "To keep the shop where his grandfather bolted it down",
+      "To be wrong about nothing — he has checked Teo's descent numbers independently and hates that they hold"
+    ],
+    "coping_mechanisms": [
+      "Machining small repair parts for other households, unasked, and leaving them at doors",
+      "His counter-list on the commons wall — control expressed as a document"
+    ],
+    "blind_spots": [
+      "He argues the frame can be re-shimmed past what the numbers support, and knows better, and argues it anyway",
+      "He treats Priya's case as unanswerable and therefore never answers it — which she reads as contempt"
+    ],
+    "secret": "He has already crated the grandfather instruments — the only things on his list he couldn't machine again. Crated them the night Ruslan first walked the commons. His faction believes he believes; the crate says otherwise."
+  },
+  "speech_patterns": {
+    "vocabulary": "Shop terms: tolerance, backlash, shim, true (as a verb). Measures arguments in thousandths.",
+    "cadence": "Slow starter, then precise. Long pauses he doesn't fill.",
+    "verbal_tics": [
+      "Tests every claim against a machine analogy before accepting it",
+      "Answers rhetorical questions literally"
+    ],
+    "example_lines": [
+      "The frame's out of true. You can shim out of true. You can't shim out of old.",
+      "I checked her numbers. I wanted them wrong. They're not wrong."
+    ],
+    "avoidances": [
+      "Never speaks about Anniki, ever — not avoidance of Priya, avoidance of the question",
+      "Never raises his voice in the commons"
+    ]
+  },
+  "story_hooks": ["The crated instruments", "His counter-list beside Teo's schedule"],
+  "narrative_function": "The stay faction's leader whose own hands have already begun to leave."
+}

@@ -1,0 +1,51 @@
+{
+  "type": "character",
+  "name": "Priya Guðmundsen",
+  "species": "human",
+  "gender": "female",
+  "pronouns": "she/her",
+  "role": "Resident, leads the sell faction",
+  "age": 39,
+  "status": "alive",
+  "location": "Aerobloc Candelaria",
+  "affiliation": "Candelaria Housing Cooperative",
+  "description": "Tamil-Icelandic; textile-repair worker, third-generation Candelaria. Her daughter Anniki, nine, has a juvenile neuretics integration disorder — the provisioning was cheap-bracket and the mesh is settling wrong. The corrective procedure exists, is real, is priced for Sky People. The AshgraveMaterials payout is, exactly and only, a treatment fund. She loves the bloc and is selling it anyway, and she will say both things in the same sentence to anyone who makes her choose.",
+  "narration_voice": "Seen through Teo's POV.",
+  "psychology": {
+    "core_fears": [
+      "Anniki's mesh settling past the corrective window while the co-op debates",
+      "Becoming, in the bloc's memory, the woman who sold Candelaria"
+    ],
+    "core_desires": [
+      "The payout, converted to the procedure, before the window closes",
+      "For one person in the stay faction to say out loud that her case is real"
+    ],
+    "coping_mechanisms": [
+      "Repair work — her hands mend fabric while the meeting shouts",
+      "Naming the arithmetic before anyone else can: 'yes, I'm trading your home for my kid. Say it with me.'"
+    ],
+    "blind_spots": [
+      "She assumes everyone who votes stay is voting against Anniki, when most of them simply can't hold her arithmetic and theirs at once",
+      "She can't see that Wen's workshop is his version of her treatment fund"
+    ],
+    "secret": "She has already asked Ruslan, privately, whether Ashgrave would buy her household share alone if the vote fails. He said no — the offer is whole-bloc only. Nobody in the bloc knows she asked."
+  },
+  "speech_patterns": {
+    "vocabulary": "Plain, direct, medical terms said precisely because she has had to learn them.",
+    "cadence": "Fast when cornered; slows to flat calm when talking about Anniki.",
+    "verbal_tics": [
+      "Preempts judgment by stating the worst version of her own position first",
+      "Corrects euphemisms — 'it's not a payout, it's a procedure'"
+    ],
+    "example_lines": [
+      "Say it plainly: my yes is her mesh. I've done the shame already, you're late to it.",
+      "I'll help you carry your loom to the rail myself. Then you vote how you vote."
+    ],
+    "avoidances": [
+      "Never uses Anniki as a debate point in open meeting — only one-on-one",
+      "Never asks Teo to bend the schedule"
+    ]
+  },
+  "story_hooks": ["The private share question she asked Ruslan", "Anniki's corrective window as the story's real clock"],
+  "narrative_function": "The strongest case in the story — the sell vote that is impossible to call wrong."
+}
