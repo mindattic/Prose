@@ -152,7 +152,10 @@ public class StructuralBlueprintService
         log.LogInformation("[blueprint] Generating ({Mode}, {Granularity}) for node {Title} — {Beats} beats / {Units} units",
             retrofit ? "retrofit" : "pre-prose", granularity, node.Title, beats.Count, units.Count);
 
-        var raw = await llm.GenerateAsync(system, user, temperature: 0.8, maxTokens: 4096, ct: ct);
+        // Response budget scales with unit count — per-unit escalation + event entries
+        // overflow 4k tokens at ~45+ units and truncate the JSON mid-array.
+        var maxTokens = Math.Clamp(units.Count * 130 + 2000, 4096, 16000);
+        var raw = await llm.GenerateAsync(system, user, temperature: 0.8, maxTokens: maxTokens, ct: ct);
         var parsed = ParseResponse(raw, units.Count);
 
         // Replace any existing blueprint (cascade removes beat tags).
@@ -540,14 +543,28 @@ public class StructuralBlueprintService
                 text = text[(firstNewline + 1)..lastFence].Trim();
         }
 
-        var start = text.IndexOf('{');
-        var end   = text.LastIndexOf('}');
-        if (start < 0 || end <= start)
-            throw new InvalidOperationException("Blueprint LLM response contained no JSON object.");
-        text = text[start..(end + 1)];
+        // The model sometimes emits reasoning fragments with braces, or several JSON
+        // objects, around the real payload — first-brace..last-brace gluing produces
+        // invalid JSON. Scan for COMPLETE balanced top-level objects (string-aware)
+        // and take the largest that deserializes.
+        var candidates = ExtractBalancedObjects(text);
+        if (candidates.Count == 0)
+            throw new InvalidOperationException("Blueprint LLM response contained no complete JSON object.");
 
-        var parsed = JsonSerializer.Deserialize<BlueprintResponse>(text, JsonOpts)
-            ?? throw new InvalidOperationException("Blueprint JSON deserialized to null.");
+        BlueprintResponse? parsed = null;
+        string? lastError = null;
+        foreach (var candidate in candidates.OrderByDescending(c => c.Length))
+        {
+            try
+            {
+                parsed = JsonSerializer.Deserialize<BlueprintResponse>(candidate, JsonOpts);
+                if (parsed != null) break;
+            }
+            catch (JsonException ex) { lastError = ex.Message; }
+        }
+        if (parsed == null)
+            throw new InvalidOperationException(
+                $"No JSON candidate deserialized ({candidates.Count} found; likely truncated response): {lastError}");
 
         // Clamp the escalation curve to the beat count; pad by repeating the last value.
         if (parsed.EscalationCurve is { Count: > 0 } curve)
@@ -558,6 +575,38 @@ public class StructuralBlueprintService
         }
 
         return parsed;
+    }
+
+    /// <summary>All complete top-level {...} spans in the text, string-aware
+    /// (braces inside JSON strings don't count). Incomplete trailing objects
+    /// (truncation) are simply not returned.</summary>
+    internal static List<string> ExtractBalancedObjects(string text)
+    {
+        var results = new List<string>();
+        int i = 0;
+        while (i < text.Length)
+        {
+            if (text[i] != '{') { i++; continue; }
+            int depth = 0, start = i;
+            bool inString = false, escaped = false, closed = false;
+            int j = i;
+            for (; j < text.Length; j++)
+            {
+                var ch = text[j];
+                if (escaped) { escaped = false; continue; }
+                if (ch == '\\' && inString) { escaped = true; continue; }
+                if (ch == '"') { inString = !inString; continue; }
+                if (inString) continue;
+                if (ch == '{') depth++;
+                else if (ch == '}')
+                {
+                    depth--;
+                    if (depth == 0) { results.Add(text[start..(j + 1)]); closed = true; break; }
+                }
+            }
+            i = closed ? j + 1 : start + 1;
+        }
+        return results;
     }
 
     // ── Response DTOs (internal for unit tests) ───────────────────────────

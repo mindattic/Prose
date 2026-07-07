@@ -913,6 +913,11 @@ public static class ServiceCollectionExtensions
         // beat prompts via the STORYSCOPE Findings prefix).
         services.AddSingleton<StoryScopeAuditService>();
 
+        // Beat duels — blind A/B panel gate for beat rewrites (3 voters, escalate
+        // to 7 on dissent). SS-A44: duels are votes; allowVotes must be passed
+        // consciously under an explicit user instruction. `ss --duel`.
+        services.AddSingleton<BeatDuelService>();
+
         // "Behave like people" beat lenses (Findings-only; no new DB tables).
         //   CausalityService            — therefore/but, not "and then"     (ss --causality-check;     causality_check)
         //   AffectBehaviorService       — emotion plausibly drives action   (ss --affect-check;        affect_check)

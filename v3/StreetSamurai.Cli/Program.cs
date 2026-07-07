@@ -1680,6 +1680,19 @@ if (args.Contains("--storyscope-audit"))
     return;
 }
 
+// ss --duel --beat-id <guid> --candidate <file> [--goal "..."] [--apply] [--json]
+// Blind A/B duel: beat's current prose vs a candidate revision. 3 voters
+// (register/goal/reader lenses), three-way ballot; replace needs >=2 better
+// with zero dissent; splits escalate to 7 voters with written rationales.
+// Verdicts hash-cached by text pair. SS-A44: invoking this IS the explicit ask.
+// Exit 0 = replace, 1 = keep, 2 = error.
+if (args.Contains("--duel"))
+{
+    var sp = BuildCoreServices(args);
+    Environment.ExitCode = await BeatDuelCli.RunAsync(args, sp);
+    return;
+}
+
 // ss --ml-audit [--slug <nodeSlug>] [--all] [--skip-gripes] [--json]
 // Runs the Python ML beat auditor against the trained nightly model.
 // Writes ML-PROSE-SCORE findings to the Findings table for weak beats.

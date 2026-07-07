@@ -381,6 +381,10 @@ public class StreetSamuraiDbContext : DbContext
     // BeatTextHash ballot caching).
     public DbSet<StructuralReading>      StructuralReadings      => Set<StructuralReading>();
 
+    // Beat duel verdicts — blind A/B panel decisions on beat rewrites, cached by
+    // the SHA-256 pair of both texts. SS-A44: duels are votes; explicit ask only.
+    public DbSet<BeatDuelVerdict>        BeatDuelVerdicts        => Set<BeatDuelVerdict>();
+
     // Workflow monitoring — tracks which prose services were active per beat write.
     // Populated by ProseWriterRouter. Query via ss --workflow-status or workflow_status MCP tools.
     public DbSet<BeatServiceLog>         BeatServiceLogs         => Set<BeatServiceLog>();
@@ -584,6 +588,17 @@ public class StreetSamuraiDbContext : DbContext
             e.Property(x => x.UnitHash).HasMaxLength(80).IsRequired();
             e.Property(x => x.EventType).HasMaxLength(60).IsRequired();
             e.Property(x => x.RevelationMode).HasMaxLength(20).IsRequired();
+        });
+        b.Entity<BeatDuelVerdict>(e =>
+        {
+            e.ToTable("BeatDuelVerdicts");
+            e.HasKey(x => x.Id);
+            e.Property(x => x.OriginalHash).HasMaxLength(80).IsRequired();
+            e.Property(x => x.RevisionHash).HasMaxLength(80).IsRequired();
+            e.Property(x => x.Verdict).HasMaxLength(10).IsRequired();
+            e.Property(x => x.Goal).HasMaxLength(500);
+            e.HasIndex(x => new { x.OriginalHash, x.RevisionHash }).IsUnique();
+            e.HasIndex(x => x.BeatId);
         });
 
         // ── Workflow monitoring ──────────────────────────────────────────────
