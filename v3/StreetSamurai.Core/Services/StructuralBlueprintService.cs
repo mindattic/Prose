@@ -162,25 +162,29 @@ public class StructuralBlueprintService
         if (existing.Count > 0)
             db.NodeStructuralBlueprints.RemoveRange(existing);
 
+        // Clamp free-text fields to their column caps — the LLM doesn't know the schema.
+        static string? Cap(string? s, int max) =>
+            string.IsNullOrWhiteSpace(s) ? null : (s.Length <= max ? s : s[..max]);
+
         var blueprint = new NodeStructuralBlueprint
         {
             NodeId       = nodeId,
             UniverseId   = node.UniverseId,
             HasSubplot   = parsed.Subplot?.Summary is { Length: > 0 },
-            SubplotSummary = parsed.Subplot?.Summary,
-            SubplotTheme   = parsed.Subplot?.ThematicParallel,
+            SubplotSummary = Cap(parsed.Subplot?.Summary, 1000),
+            SubplotTheme   = Cap(parsed.Subplot?.ThematicParallel, 500),
             TemporalScheme = NormalizeChoice(parsed.Temporal?.Scheme, ["linear", "frame", "nonlinear"], "linear"),
-            AnachronyPlan  = parsed.Temporal?.AnachronyPlan,
+            AnachronyPlan  = Cap(parsed.Temporal?.AnachronyPlan, 1000),
             ResolutionMode = NormalizeChoice(parsed.Resolution?.Mode, ["external", "unresolved", "mixed"], "external"),
-            ResolutionNote = parsed.Resolution?.Note,
+            ResolutionNote = Cap(parsed.Resolution?.Note, 500),
             MoralPolarity  = NormalizeChoice(parsed.Moral?.Polarity, ["ambivalent", "clear"], "ambivalent"),
-            MoralPolarityNote = parsed.Moral?.Note,
+            MoralPolarityNote = Cap(parsed.Moral?.Note, 500),
             EscalationCurveJson = JsonSerializer.Serialize(parsed.EscalationCurve ?? []),
             EventTypePaletteJson = JsonSerializer.Serialize(parsed.Events ?? []),
-            FormDevice  = string.IsNullOrWhiteSpace(parsed.FormDevice) ? null : parsed.FormDevice,
+            FormDevice  = Cap(parsed.FormDevice, 200),
             EndingStyle = NormalizeChoice(parsed.Ending?.Style, ["avalanche", "quiet"], "avalanche"),
             NoEpilogue  = parsed.Ending?.NoEpilogue ?? true,
-            EndingNote  = parsed.Ending?.Note,
+            EndingNote  = Cap(parsed.Ending?.Note, 500),
             IntertextualAnchorsJson = JsonSerializer.Serialize(parsed.IntertextualAnchors ?? []),
             Granularity = granularity,
             GeneratedBy = retrofit ? "retrofit" : "llm",
