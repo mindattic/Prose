@@ -506,6 +506,28 @@ public class StoryScopeAuditService(
         _           => "MINOR",
     };
 
+    /// <summary>
+    /// Run ONLY the consensus-cliché scan for a node — one LLM call. Used by
+    /// `ss --storyscope-audit --cliches-only` for cheap blocklist-corroboration
+    /// sweeps (the full audit is ~15 calls; promotion only needs this one).
+    /// Updates the ConsensusCliches table exactly like the full audit.
+    /// </summary>
+    public async Task<StoryScopeCheck> ScanClichesAsync(Guid nodeId, CancellationToken ct = default)
+    {
+        await using var db = await dbFactory.CreateDbContextAsync(ct);
+        var node = await db.Nodes.AsNoTracking().FirstOrDefaultAsync(n => n.Id == nodeId, ct)
+            ?? throw new InvalidOperationException($"Node {nodeId} not found.");
+
+        var beats = (await workbench.GetOrderedBeatsAsync(nodeId, ct))
+            .Where(b => !string.IsNullOrWhiteSpace(b.Beat.Text))
+            .ToList();
+        if (beats.Count == 0)
+            throw new InvalidOperationException($"Node '{node.Title}' has no written prose to scan.");
+
+        var prose = string.Join("\n\n", beats.Select(b => b.Beat.Text));
+        return await RunConsensusClicheScanAsync(db, node, prose, ct);
+    }
+
     // ── LLM layer: consensus-cliché scan ─────────────────────────────────────
 
     async Task<StoryScopeCheck> RunConsensusClicheScanAsync(

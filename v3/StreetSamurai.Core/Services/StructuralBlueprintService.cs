@@ -351,6 +351,26 @@ public class StructuralBlueprintService
         if (blueprint.MoralPolarity == "ambivalent" && (unitIndex >= totalUnits * 0.5))
             lines.Add("MORAL POLARITY: ambivalent — the protagonist's choices carry genuine cost on the path not taken. Do not resolve who was right.");
 
+        // Promoted consensus clichés (FlagCount >= 2): devices LLMs converge on in this
+        // universe, corroborated across 2+ stories by audits. Blocked at write time.
+        try
+        {
+            await using var db = await dbFactory.CreateDbContextAsync(ct);
+            var blockedDevices = await db.ConsensusCliches.AsNoTracking()
+                .Where(c => c.UniverseId == blueprint.UniverseId && c.FlagCount >= 2)
+                .OrderByDescending(c => c.FlagCount)
+                .Take(8)
+                .Select(c => c.Device)
+                .ToListAsync(ct);
+            if (blockedDevices.Count > 0)
+            {
+                lines.Add("CONSENSUS CLICHÉS — these devices recur across this universe's stories because " +
+                          "models converge on them; do NOT reach for them here:");
+                lines.AddRange(blockedDevices.Select(d => $"• {d}"));
+            }
+        }
+        catch { /* non-blocking */ }
+
         return lines.Count > 1 ? string.Join("\n", lines) : "";
     }
 

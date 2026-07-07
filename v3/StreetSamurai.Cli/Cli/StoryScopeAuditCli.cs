@@ -28,6 +28,7 @@ public static class StoryScopeAuditCli
     {
         string? slug = null;
         bool jsonMode = args.Contains("--json");
+        bool clichesOnly = args.Contains("--cliches-only");
 
         for (int i = 0; i < args.Length - 1; i++)
         {
@@ -36,7 +37,7 @@ public static class StoryScopeAuditCli
 
         if (slug == null)
         {
-            Console.Error.WriteLine("Usage: ss --storyscope-audit --slug <nodeSlug> [--json]");
+            Console.Error.WriteLine("Usage: ss --storyscope-audit --slug <nodeSlug> [--cliches-only] [--json]");
             return 2;
         }
 
@@ -50,6 +51,29 @@ public static class StoryScopeAuditCli
         {
             Console.Error.WriteLine($"Node '{slug}' not found.");
             return 2;
+        }
+
+        if (clichesOnly)
+        {
+            try
+            {
+                var scan = await auditSvc.ScanClichesAsync(node.Id);
+                if (jsonMode)
+                {
+                    Console.WriteLine(JsonSerializer.Serialize(scan, new JsonSerializerOptions { WriteIndented = true }));
+                }
+                else
+                {
+                    Console.WriteLine($"Cliché scan: {node.Title} → {scan.Severity}");
+                    Console.WriteLine($"  {scan.Evidence}");
+                }
+                return scan.Severity is "PASS" or "DEVIATION" ? 0 : 1;
+            }
+            catch (InvalidOperationException ex)
+            {
+                Console.Error.WriteLine($"Scan failed: {ex.Message}");
+                return 2;
+            }
         }
 
         if (!jsonMode)
