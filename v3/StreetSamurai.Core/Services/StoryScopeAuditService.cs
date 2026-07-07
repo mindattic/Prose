@@ -272,6 +272,44 @@ public class StoryScopeAuditService(
         var (granularity, units) = StructuralBlueprintService.GroupUnits(beats);
         var unitLabel = granularity == "chapter" ? "Chapter" : "Beat";
 
+        // Hash cache: reuse prior readings for units whose prose is unchanged
+        // (mirrors Legion's BeatTextHash ballot caching). A re-audit after a
+        // one-beat splice re-reads one unit, not the whole story.
+        var unitHashes = units.ToDictionary(
+            u => u.Index,
+            u => NodeWorkbenchService.ComputeTextHash(string.Join("\n\n", u.Beats.Select(b => b.Beat.Text ?? ""))));
+        var unitFirstBeatIds = units.ToDictionary(u => u.Index, u => u.Beats[0].Beat.Id);
+
+        var cached = new Dictionary<int, BeatReading>();
+        try
+        {
+            await using var cacheDb = await dbFactory.CreateDbContextAsync(ct);
+            var firstIds = unitFirstBeatIds.Values.ToList();
+            var rows = await cacheDb.StructuralReadings.AsNoTracking()
+                .Where(r => firstIds.Contains(r.BeatId))
+                .ToListAsync(ct);
+            var byBeatId = rows.ToDictionary(r => r.BeatId);
+            foreach (var u in units)
+                if (byBeatId.TryGetValue(unitFirstBeatIds[u.Index], out var row)
+                    && row.UnitHash == unitHashes[u.Index])
+                    cached[u.Index] = new BeatReading
+                    {
+                        Index = u.Index, Stakes = row.Stakes,
+                        EventType = row.EventType, RevelationMode = row.RevelationMode,
+                    };
+        }
+        catch (Exception ex)
+        {
+            log.LogWarning(ex, "[storyscope] reading cache load failed — reading everything fresh");
+        }
+
+        var toRead = units.Where(u => !cached.ContainsKey(u.Index)).ToList();
+        log.LogInformation("[storyscope] progressive reading: {Cached}/{Total} units from cache, {Fresh} to read",
+            cached.Count, units.Count, toRead.Count);
+
+        if (toRead.Count == 0)
+            return cached.Values.OrderBy(r => r.Index).ToList();
+
         var system = $$"""
             You are reading a story {{unitLabel.ToLowerInvariant()}}-by-{{unitLabel.ToLowerInvariant()}} and scoring each {{unitLabel.ToLowerInvariant()}} on three axes.
             For EVERY {{unitLabel.ToLowerInvariant()}}, return:
@@ -289,7 +327,19 @@ public class StoryScopeAuditService(
             ? Math.Clamp(60000 / Math.Max(units.Count, 1), 700, 2000)
             : 900;
         var sb = new System.Text.StringBuilder();
-        foreach (var u in units)
+
+        // When reading a subset, give the model the cached neighbors' readings so
+        // subset stakes stay calibrated against the rest of the story.
+        if (cached.Count > 0)
+        {
+            sb.AppendLine($"CONTEXT — already-scored {unitLabel.ToLowerInvariant()}s (unchanged since last read; do NOT re-score these):");
+            foreach (var r in cached.Values.OrderBy(r => r.Index))
+                sb.AppendLine($"  {unitLabel} {r.Index}: stakes {r.Stakes}/10, {r.EventType}, {r.RevelationMode}");
+            sb.AppendLine();
+            sb.AppendLine($"Score ONLY the {unitLabel.ToLowerInvariant()}s below, keeping stakes consistent with the context above:");
+        }
+
+        foreach (var u in toRead)
         {
             sb.AppendLine($"--- {unitLabel} {u.Index} ---");
             var text = string.Join("\n\n", u.Beats.Select(b => b.Beat.Text ?? ""));
@@ -302,12 +352,41 @@ public class StoryScopeAuditService(
         {
             var raw = await llm.GenerateAsync(system, sb.ToString(), temperature: 0.2, maxTokens: 4096, ct: ct);
             var parsed = ParseJson<ProgressiveRaw>(raw);
-            return parsed?.Beats;
+            var fresh = parsed?.Beats;
+            if (fresh == null) return cached.Count > 0 ? cached.Values.OrderBy(r => r.Index).ToList() : null;
+
+            // Persist fresh readings to the cache (upsert by unit-first BeatId).
+            try
+            {
+                await using var writeDb = await dbFactory.CreateDbContextAsync(ct);
+                foreach (var r in fresh.Where(r => unitFirstBeatIds.ContainsKey(r.Index)))
+                {
+                    var beatId = unitFirstBeatIds[r.Index];
+                    var row = await writeDb.StructuralReadings.FindAsync([beatId], ct);
+                    if (row == null)
+                    {
+                        row = new StructuralReading { BeatId = beatId };
+                        writeDb.StructuralReadings.Add(row);
+                    }
+                    row.UnitHash       = unitHashes[r.Index];
+                    row.Stakes         = r.Stakes;
+                    row.EventType      = r.EventType ?? "";
+                    row.RevelationMode = r.RevelationMode ?? "";
+                    row.ReadAt         = DateTime.UtcNow;
+                }
+                await writeDb.SaveChangesAsync(ct);
+            }
+            catch (Exception ex)
+            {
+                log.LogWarning(ex, "[storyscope] reading cache write failed — results still returned");
+            }
+
+            return cached.Values.Concat(fresh).OrderBy(r => r.Index).ToList();
         }
         catch (Exception ex)
         {
             log.LogWarning(ex, "[storyscope] progressive reading failed");
-            return null;
+            return cached.Count > 0 ? cached.Values.OrderBy(r => r.Index).ToList() : null;
         }
     }
 

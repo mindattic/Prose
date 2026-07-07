@@ -375,6 +375,12 @@ public class StreetSamuraiDbContext : DbContext
     // anti-pattern block for their universe.
     public DbSet<ConsensusCliche>        ConsensusCliches        => Set<ConsensusCliche>();
 
+    // Cached per-unit progressive readings (stakes/event/revelation) from the
+    // StoryScope audit, keyed by unit-first BeatId and invalidated by prose hash —
+    // re-audits only re-read units whose text changed (mirrors Legion's
+    // BeatTextHash ballot caching).
+    public DbSet<StructuralReading>      StructuralReadings      => Set<StructuralReading>();
+
     // Workflow monitoring — tracks which prose services were active per beat write.
     // Populated by ProseWriterRouter. Query via ss --workflow-status or workflow_status MCP tools.
     public DbSet<BeatServiceLog>         BeatServiceLogs         => Set<BeatServiceLog>();
@@ -570,6 +576,14 @@ public class StreetSamuraiDbContext : DbContext
             e.Property(x => x.FirstFlaggedInSlug).HasMaxLength(200);
             e.Property(x => x.AddedAt).HasDefaultValueSql("GETUTCDATE()");
             e.HasIndex(x => x.UniverseId);
+        });
+        b.Entity<StructuralReading>(e =>
+        {
+            e.ToTable("StructuralReadings");
+            e.HasKey(x => x.BeatId);
+            e.Property(x => x.UnitHash).HasMaxLength(80).IsRequired();
+            e.Property(x => x.EventType).HasMaxLength(60).IsRequired();
+            e.Property(x => x.RevelationMode).HasMaxLength(20).IsRequired();
         });
 
         // ── Workflow monitoring ──────────────────────────────────────────────
