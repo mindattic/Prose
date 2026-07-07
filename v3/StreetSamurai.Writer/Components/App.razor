@@ -7,6 +7,7 @@
     <base href="/" />
     <ResourcePreloader />
     <link rel="stylesheet" href="@Assets["lib/bootstrap/dist/css/bootstrap.min.css"]" />
+    <link rel="stylesheet" href="_content/StreetSamurai.UiUx/css/shared.css" />
     <link rel="stylesheet" href="@Assets["app.css"]" />
     <link rel="stylesheet" href="@Assets["StreetSamurai.Writer.styles.css"]" />
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css" />
@@ -24,12 +25,10 @@
     </div>
     <script src="js/loader.js"></script>
     <script src="js/home-bg.js?v=3"></script>
-    <script src="js/pin-footer.js"></script>
-    @* MindAttic.UiUx auth-visual components (synced into wwwroot/js by sync-streetsamurai.ps1;
-       CSS arrives via the app.css marker blocks). *@
-    <script src="js/user-login.js"></script>
-    <script src="js/user-circle.js"></script>
-    <script src="js/user-timeout.js"></script>
+    <script src="_content/StreetSamurai.UiUx/js/pin-footer.js"></script>
+    <script src="_content/StreetSamurai.UiUx/js/user-login.js"></script>
+    <script src="_content/StreetSamurai.UiUx/js/user-circle.js"></script>
+    <script src="_content/StreetSamurai.UiUx/js/user-timeout.js"></script>
     <Routes @rendermode="InteractiveServer" />
     <ReconnectModal />
     <script src="@Assets["_framework/blazor.web.js"]"></script>

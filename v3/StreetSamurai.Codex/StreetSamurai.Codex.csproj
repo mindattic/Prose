@@ -3,6 +3,7 @@
   <ItemGroup>
     <ProjectReference Include="..\StreetSamurai.Core\StreetSamurai.Core.csproj" />
     <ProjectReference Include="..\StreetSamurai.Shared\StreetSamurai.Shared.csproj" />
+    <ProjectReference Include="..\StreetSamurai.UiUx\StreetSamurai.UiUx.csproj" />
   </ItemGroup>
 
   <ItemGroup>
@@ -41,17 +42,5 @@
       <Link>engine\data\%(RecursiveDir)%(Filename)%(Extension)</Link>
     </Content>
   </ItemGroup>
-
-  <!-- Pull latest subscribed components from MindAttic.UiUx into wwwroot before each build.
-       Idempotent: when MindAttic.UiUx hasn't changed, this is a no-op rewrite.
-       If MindAttic.UiUx isn't checked out next to this repo, the target is skipped. -->
-  <Target Name="SyncMindAtticComponents" BeforeTargets="BeforeBuild">
-    <PropertyGroup>
-      <_ContentSync>$(MSBuildThisFileDirectory)..\..\..\MindAttic.UiUx\sync\sync-streetsamurai.ps1</_ContentSync>
-    </PropertyGroup>
-    <Exec Command="powershell -NoProfile -ExecutionPolicy Bypass -File &quot;$(_ContentSync)&quot;"
-          Condition="Exists('$(_ContentSync)')"
-          ContinueOnError="true" />
-  </Target>
 
 </Project>
