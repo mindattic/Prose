@@ -156,6 +156,9 @@ public class BeatGeneratorService
         var storyScienceBlock = !string.IsNullOrWhiteSpace(context.StoryScienceGuidance)
             ? $"\n\n{context.StoryScienceGuidance}"
             : "";
+        var structuralBlueprintBlock = !string.IsNullOrWhiteSpace(context.StructuralBlueprintGuidance)
+            ? $"\n\n{context.StructuralBlueprintGuidance}"
+            : "";
         var offscreenBlock = !string.IsNullOrWhiteSpace(context.OffscreenActivityContext)
             ? $"\n\n{context.OffscreenActivityContext}"
             : "";
@@ -176,7 +179,7 @@ public class BeatGeneratorService
             {(context.XRayContext.Length > 0 ? "\nSCENE X-RAY — entities on screen RIGHT NOW. Every character below speaks in THEIR OWN documented register, not the narrator's:\n" + context.XRayContext : "")}{continuityBlock}
             {(context.EntityStackContext.Length > 0 ? "\nENTITY WORKING MEMORY — proper nouns active in this story thread and their canon facts. Treat these as hard constraints; do not contradict them:\n" + context.EntityStackContext : "")}
             {(context.DocStackContext.Length > 0 ? "\n" + context.DocStackContext : "")}
-            {(context.LocationContext.Length > 0 ? "\nADDITIONAL LOCATION DETAIL:\n" + context.LocationContext : "")}{ambientAnomalyBlock}{dialogueBlock}{anchorBlock}{plantBlock}{consequenceBlock}{commandmentBlock}{worldStateBlock}{emotionalBlock}{mlProseBlock}{tensionBlock}{readerBlock}{narrativeSummaryBlock}{chapterSummaryBlock}{openThreadsBlock}{pacingBlock}{structuralBlock}{offscreenBlock}{storyScienceBlock}
+            {(context.LocationContext.Length > 0 ? "\nADDITIONAL LOCATION DETAIL:\n" + context.LocationContext : "")}{ambientAnomalyBlock}{dialogueBlock}{anchorBlock}{plantBlock}{consequenceBlock}{commandmentBlock}{worldStateBlock}{emotionalBlock}{mlProseBlock}{tensionBlock}{readerBlock}{narrativeSummaryBlock}{chapterSummaryBlock}{openThreadsBlock}{pacingBlock}{structuralBlock}{offscreenBlock}{storyScienceBlock}{structuralBlueprintBlock}
             """;
 
         var hasDialogue = context.DialogueContext.Length > 0;
@@ -956,6 +959,16 @@ public record BeatContext
     /// Empty when NarrativeChartService is not wired or beat has no chart data.
     /// </summary>
     public string OffscreenActivityContext { get; init; } = "";
+
+    /// <summary>
+    /// Per-beat slice of this node's StructuralBlueprint — the pre-committed
+    /// StoryScope anti-tell decisions that apply to THIS beat (subplot carrier,
+    /// anachrony cut, escalation floor, event type, intertextual anchor,
+    /// ending/resolution mode on final beats). Built by StructuralBlueprintService
+    /// via ProseWriterRouter. Empty when the node has no blueprint; never blocks
+    /// generation.
+    /// </summary>
+    public string StructuralBlueprintGuidance { get; init; } = "";
 }
 
 /// <summary>

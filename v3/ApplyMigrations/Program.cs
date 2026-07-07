@@ -228,8 +228,8 @@ async Task<(int nodesFolded, int chapterMarkers)> FoldNestedNodesAsync(
                 if (!firstBeat.IsChapterStart)
                 {
                     firstBeat.IsChapterStart = true;
-                    if (string.IsNullOrEmpty(firstBeat.BeatTitle))
-                        firstBeat.BeatTitle = root.Title;
+                    if (string.IsNullOrEmpty(firstBeat.Title))
+                        firstBeat.Title = root.Title;
                     firstBeat.UpdatedAt = DateTime.UtcNow;
                     await flatDb.SaveChangesAsync();
                     chapterMarkers++;
@@ -298,8 +298,8 @@ async Task<(int nodesFolded, int chapterMarkers)> FoldNestedNodesAsync(
             if (!beat.IsChapterStart)
             {
                 beat.IsChapterStart = true;
-                if (string.IsNullOrEmpty(beat.BeatTitle))
-                    beat.BeatTitle = p.owner.Title;
+                if (string.IsNullOrEmpty(beat.Title))
+                    beat.Title = p.owner.Title;
                 beat.UpdatedAt = DateTime.UtcNow;
                 chapterMarkers++;
             }

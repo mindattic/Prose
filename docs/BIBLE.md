@@ -420,6 +420,26 @@ Run `ss --scan-entity-mentions --slug <slug>` after every chapter draft to keep 
 3. The authorial spine (14-beat outline or equivalent) is saved as the book story's `seed` text —
    it is the **outline**, not the final prose.
 
+### Step 3b — Structural blueprint ★ (StoryScope countermeasures)
+
+After the bible/spine exists and before any prose, commit the structural anti-tell decisions:
+`ss --generate-blueprint --slug <slug>` (MCP `generate_structural_blueprint`). The blueprint
+records, per story: a thematically-parallel subplot with carrier beats; temporal scheme
+(linear/frame/nonlinear); resolution mode (external/unresolved/mixed — never
+protagonist-achieves-internal-peace); moral polarity (ambivalent default); a per-beat 1–10
+escalation curve (monotonic to the climax — flat escalation is the strongest measured AI-fiction
+fingerprint); a per-beat event-type + revelation-mode palette (no back-to-back repeats); an
+optional form device; ending style (avalanche default, no epilogue); and 3–5 intertextual anchors
+pulled from the entity DB. Rationale: StoryScope (UMD/Google DeepMind 2025, arXiv 2604.03136) —
+narrative-structure classifiers detect AI fiction at 93.2% with zero style signals, and prose
+editing does not remove the tells; the counters must be decided at the structure layer.
+`ProseWriterRouter` injects the beat-relevant slice into every beat write. Mirror the decisions
+into a `## Structural Blueprint {#SS-<CODE>-BP}` section of `docs/nodes/<CODE>.md` (hand-authored,
+like every canon doc). For pre-blueprint stories, `--retrofit` infers the structure from written
+prose. Verify after writing with `ss --storyscope-audit --slug <slug>` — findings triage
+BLOCKER/MODERATE/MINOR per the logic-sweep SOP, and BLOCKER/MODERATE findings loop back into
+future beat prompts automatically via the `STORYSCOPE` Findings prefix.
+
 ### Step 4 — Prose generation
 
 For each chapter, in order:

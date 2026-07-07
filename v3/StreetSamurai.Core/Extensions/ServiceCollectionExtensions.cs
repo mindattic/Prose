@@ -902,6 +902,17 @@ public static class ServiceCollectionExtensions
         // Available via `ss --story-audit` and the Tools.StoryAudit MCP tools.
         services.AddSingleton<StoryAuditService>();
 
+        // Structural blueprints — pre-prose StoryScope anti-tell commitments
+        // (subplot, chronology, resolution mode, escalation curve, event palette,
+        // ending style, intertextual anchors). Generated via `ss --generate-blueprint`;
+        // injected per-beat by ProseWriterRouter; verified via `ss --storyscope-audit`.
+        services.AddSingleton<StructuralBlueprintService>();
+
+        // StoryScope audit — verifies the structural anti-tells held after writing
+        // (deterministic checks + LLM-graded checks; findings loop back into future
+        // beat prompts via the STORYSCOPE Findings prefix).
+        services.AddSingleton<StoryScopeAuditService>();
+
         // "Behave like people" beat lenses (Findings-only; no new DB tables).
         //   CausalityService            — therefore/but, not "and then"     (ss --causality-check;     causality_check)
         //   AffectBehaviorService       — emotion plausibly drives action   (ss --affect-check;        affect_check)

@@ -117,10 +117,17 @@ Working rules:
 3. **Story structure (SS-A43)** — create a **StoryNode** (MCP `create_story` / CLI `--create-story`)
    + **ChapterNode** children (MCP `create_chapter`, parent required). Authorial spine (14-beat
    outline) = the story node's `seed` text.
-4. **Prose** — Sonnet draft → Opus polish → reflow → logic sweep (see Quality Verification SOP below) → scan entity mentions.
-5. **Export** — `--publish-docx`; flip USER_STORIES to ✅ with evidence.
+4. **Structural blueprint (StoryScope countermeasures)** — after the bible/spine exists, run
+   `ss --generate-blueprint --slug <slug>` (MCP `generate_structural_blueprint`). This commits the
+   structural anti-tell decisions BEFORE prose: thematically-parallel subplot + carrier beats,
+   temporal scheme, resolution mode (never internal-understanding), moral polarity (ambivalent
+   default), per-beat escalation curve, event-type + revelation-mode palette, optional form device,
+   ending style (avalanche, no epilogue), 3-5 intertextual anchors from the entity DB. Mirror the
+   decisions into a `## Structural Blueprint` section of `docs/nodes/<CODE>.md`.
+5. **Prose** — Sonnet draft → Opus polish → reflow → logic sweep (see Quality Verification SOP below) → scan entity mentions.
+6. **Export** — `--publish-docx`; flip USER_STORIES to ✅ with evidence.
 
-Never write prose before steps 1 and 2 are complete.
+Never write prose before steps 1, 2, and 4 are complete.
 
 ## Prose Engine Services (use all of these — see SS-A16)
 
@@ -143,6 +150,7 @@ for all prose writing — it coordinates all the services below and logs coverag
 | `PlantPayoffService` | Active plant/payoff pairs for the story | `BeatContext.NodeId != Guid.Empty` |
 | `StoryAuditService` | Gateway or Sequel commandments (7 each, auto-detected from `PreviousNodeId`) | `BeatContext.NodeId != Guid.Empty` |
 | `CombatProseGuidance` | Verbs-first, fragment sentences, no emotion-naming, dissociated observer | `BeatMode.Combat` |
+| `StructuralBlueprintService` | Per-beat StoryScope anti-tell slice: subplot carrier, anachrony cut, escalation floor, event type, ending/resolution mode + STORYSCOPE audit-finding loop-back | Node has a blueprint (`ss --generate-blueprint`) |
 
 ### Coverage monitoring
 ```
@@ -158,6 +166,9 @@ MCP: `workflow_status`, `workflow_status_global`, `workflow_beat_modes`
 4. After enough beats scored, run `ss --update-register-exemplars --slug <slug>` to update the voice register
 5. After story complete, run `ss --story-audit --slug <slug>` to audit gateway/sequel commandments
 6. After story complete, run `ss --plant-audit --slug <slug>` to check for orphaned plants
+7. After story complete, run `ss --storyscope-audit --slug <slug>` to verify the structural
+   anti-tells held (escalation monotonic, event types varied, no moral gloss, no epilogue,
+   subplot executed). BLOCKER findings fix per logic-sweep minimal-splice rules, then re-audit.
 
 ## Quality Verification SOP — Logic Sweeps, NOT Votes (LAW: SS-A44)
 

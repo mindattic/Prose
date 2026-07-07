@@ -11,7 +11,7 @@
 > All tools are MCP-prefixed `mcp__streetsamurai__<name>` by the client. Most return a
 > JSON string; the canon is the SQL database, scoped to the active Universe.
 
-**215 tools** across **32 tool families.**
+**218 tools** across **33 tool families.**
 
 ## Families
 
@@ -42,6 +42,7 @@
 | [Story](#story) | 6 |
 | [Story Audit](#story-audit) | 2 |
 | [Story Logic](#story-logic) | 1 |
+| [Story Scope](#story-scope) | 3 |
 | [Survey](#survey) | 7 |
 | [Universe](#universe) | 5 |
 | [Voice](#voice) | 5 |
@@ -1441,6 +1442,29 @@ Generate a narrative outline and adversarial logic audit for a node. Finds plot 
 
 - `nodeIdOrSlug` (string, required) — Node id (GUID) or slug.
 - `skip_audit` (bool, optional) — Skip the logic audit and return outline only. Default false.
+
+## Story Scope
+
+<sub>`StoryScopeTools`</sub>
+
+### `generate_structural_blueprint`
+
+Generate the StructuralBlueprint for a story node — pre-prose structural anti-tell commitments (StoryScope countermeasures): thematically-parallel subplot with carrier beats, temporal scheme (linear/frame/nonlinear), resolution mode (external/unresolved/mixed — never internal-understanding), moral polarity (ambivalent default), per-beat 1-10 escalation curve (kills flat escalation, Claude's #1 fingerprint), per-beat event-type + revelation-mode palette (kills event monoculture), optional form device, ending style (avalanche default, no epilogue), and 3-5 intertextual anchors pulled from the entity DB. The blueprint is injected per-beat into prose generation and verified afterward by the storyscope audit. Requires Node.NodeBible unless retrofit=true (infers from written prose). Accepts node id (GUID) or slug.
+
+- `nodeIdOrSlug` (string, required) — Node id (GUID) or slug.
+- `retrofit` (bool, optional) — Set true to infer the blueprint from already-written prose (for stories that predate the blueprint system).
+
+### `get_structural_blueprint`
+
+Read a story node's StructuralBlueprint (pre-prose anti-tell commitments) if one exists. Returns the full blueprint including per-beat tags, or exists=false. Accepts node id (GUID) or slug.
+
+- `nodeIdOrSlug` (string, required) — Node id (GUID) or slug.
+
+### `storyscope_audit`
+
+Audit a story against the measurable structural tells of AI fiction (StoryScope countermeasures verification). Deterministic checks: blueprint-vs-execution drift (subplot planned but unwritten = BLOCKER), beat-mode run-length, emotional-depth plateaus, social-network breadth, deviation surfacing. LLM-graded checks: per-beat stakes reading (flat escalation — Claude's #1 fingerprint), event-type diversity, information-dynamics flatline, narrator moral gloss, embodied-vs-labeled emotion ratio, character-introduction method, dialogue-as-philosophy, resolution mode as written, intertextual anchor presence, TTCW originality (form + takeaway), plot-function characters, subtext, single-track causality, LAMP line mechanics, consensus-cliché scan. Severity: BLOCKER/MODERATE/MINOR per logic-sweep SOP, plus DEVIATION (legal escape hatch, surfaced for human judgment) and PASS. Findings write to the Findings table with the STORYSCOPE prefix and automatically constrain future beat writes. Accepts node id (GUID) or slug. Requires written prose; run generate_structural_blueprint first for full coverage.
+
+- `nodeIdOrSlug` (string, required) — Node id (GUID) or slug.
 
 ## Survey
 

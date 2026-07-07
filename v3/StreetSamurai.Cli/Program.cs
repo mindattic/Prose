@@ -1655,6 +1655,31 @@ if (args.Contains("--story-audit"))
     return;
 }
 
+// ss --generate-blueprint --slug <nodeSlug> [--retrofit] [--json]
+// Generates the StructuralBlueprint — pre-prose anti-tell commitments (subplot,
+// temporal scheme, resolution mode, escalation curve, event palette, ending,
+// intertextual anchors). StoryScope countermeasures; bible → blueprint → prose.
+// --retrofit infers the blueprint from already-written prose.
+if (args.Contains("--generate-blueprint"))
+{
+    var sp = BuildCoreServices(args);
+    Environment.ExitCode = await GenerateBlueprintCli.RunAsync(args, sp);
+    return;
+}
+
+// ss --storyscope-audit --slug <nodeSlug> [--json]
+// Verifies the story against measurable AI-fiction structural tells (StoryScope):
+// flat escalation, event monoculture, moral gloss, emotion ratio, char-intro
+// method, resolution mode, subplot execution, consensus clichés, TTCW originality.
+// Findings triaged BLOCKER/MODERATE/MINOR; loop back into future beat prompts.
+// Exit 0 = clean, 1 = moderate/minor, 2 = any blocker.
+if (args.Contains("--storyscope-audit"))
+{
+    var sp = BuildCoreServices(args);
+    Environment.ExitCode = await StoryScopeAuditCli.RunAsync(args, sp);
+    return;
+}
+
 // ss --ml-audit [--slug <nodeSlug>] [--all] [--skip-gripes] [--json]
 // Runs the Python ML beat auditor against the trained nightly model.
 // Writes ML-PROSE-SCORE findings to the Findings table for weak beats.

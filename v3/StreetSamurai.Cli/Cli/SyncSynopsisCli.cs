@@ -1,5 +1,6 @@
 ﻿using Microsoft.EntityFrameworkCore;
 using StreetSamurai.Core.Data;
+using StreetSamurai.Core.Data.Entities;
 using StreetSamurai.Core.Services;
 using System.Text;
 using System.Text.RegularExpressions;
@@ -41,7 +42,7 @@ public static class SyncSynopsisCli
 
         await using var db = await dbFactory.CreateDbContextAsync();
 
-        var query = db.Nodes;
+        IQueryable<Node> query = db.Nodes;
         if (slug != null)
             query = query.Where(s => s.Slug == slug);
 

@@ -51,7 +51,8 @@ public class ProseWriterRouter(
     SceneContextAssembler? sceneAssembler = null,
     ContinuityService? continuity = null,
     StoryScienceService? storyScience = null,
-    NarrativeChartService? narrativeChart = null)
+    NarrativeChartService? narrativeChart = null,
+    StructuralBlueprintService? structuralBlueprint = null)
 {
     // Built from CombatProseConstants — single source of truth shared with CombatSceneWriter.
     static readonly string CombatProseGuidance =
@@ -314,6 +315,32 @@ public class ProseWriterRouter(
             catch { /* non-blocking */ }
         }
 
+        // Structural Blueprint: this story's pre-committed anti-tell decisions (StoryScope
+        // countermeasures) — subplot carrier, anachrony cut, escalation floor, event type,
+        // ending/resolution mode. Empty when the node has no blueprint; never blocks writing.
+        var structuralBlueprintGuidance = context.StructuralBlueprintGuidance;
+        if (string.IsNullOrEmpty(structuralBlueprintGuidance) && structuralBlueprint != null
+            && context.NodeId != Guid.Empty && totalBeats > 0)
+        {
+            try { structuralBlueprintGuidance = await structuralBlueprint.BuildBeatInjectionAsync(context.NodeId, beatId, beatIndex, totalBeats, ct); }
+            catch { /* non-blocking */ }
+        }
+
+        // StoryScope audit loop-back: prior audit findings for this node become
+        // generation constraints — the audit corrects future beats, not just reports.
+        if (context.NodeId != Guid.Empty && dbFactory != null)
+        {
+            try
+            {
+                var storyScopeGuidance = await BuildStoryScopeGuidanceAsync(context.NodeId, ct);
+                if (storyScopeGuidance.Length > 0)
+                    structuralBlueprintGuidance = structuralBlueprintGuidance.Length > 0
+                        ? structuralBlueprintGuidance + "\n\n" + storyScopeGuidance
+                        : storyScopeGuidance;
+            }
+            catch { /* non-blocking */ }
+        }
+
         // Narrative Chart: offscreen character parallel activity — what characters not in this
         // scene are doing in parallel. Keeps the world continuous; injected as subtext context.
         var offscreenActivityContext = context.OffscreenActivityContext;
@@ -356,6 +383,7 @@ public class ProseWriterRouter(
             ContinuityContext        = continuityContext,
             StoryScienceGuidance     = storyScienceGuidance,
             OffscreenActivityContext = offscreenActivityContext,
+            StructuralBlueprintGuidance = structuralBlueprintGuidance,
         };
 
         var startedAt = DateTime.UtcNow;
@@ -418,6 +446,7 @@ public class ProseWriterRouter(
                 new("ContinuityService",   IsApplicable: nodeApplicable,          IsActive: continuityContext.Length > 0,                                              BlockSizeChars: continuityContext.Length),
                 new("StoryScience",        IsApplicable: totalBeats > 0,          IsActive: storyScienceGuidance.Length > 0,                                             BlockSizeChars: storyScienceGuidance.Length),
                 new("NarrativeChart",      IsApplicable: nodeApplicable,          IsActive: offscreenActivityContext.Length > 0,                                         BlockSizeChars: offscreenActivityContext.Length),
+                new("StructuralBlueprint", IsApplicable: nodeApplicable && totalBeats > 0, IsActive: structuralBlueprintGuidance.Length > 0,                              BlockSizeChars: structuralBlueprintGuidance.Length),
             ], CancellationToken.None);
 
             await modeDetector.PersistAsync(beatId, universeId, mode, confidence, method, CancellationToken.None);
@@ -501,6 +530,52 @@ public class ProseWriterRouter(
             structuralGuidance = CombatProseGuidance + (structuralGuidance.Length > 0 ? "\n\n" + structuralGuidance : "");
 
         return (mode, confidence, method, pacingInstruction?.ProseGuidance ?? "", structuralGuidance);
+    }
+
+    // ── StoryScope guidance helper ────────────────────────────────────────────
+
+    /// <summary>
+    /// Query the Findings table for recent STORYSCOPE audit findings for this node
+    /// and format them as generation constraints. Same loop-back pattern as
+    /// BuildEmotionalGuidanceAsync — the audit corrects future writing.
+    /// </summary>
+    private async Task<string> BuildStoryScopeGuidanceAsync(Guid nodeId, CancellationToken ct)
+    {
+        if (dbFactory == null) return "";
+        await using var db = await dbFactory.CreateDbContextAsync(ct);
+
+        var slug = await db.Nodes.AsNoTracking()
+            .Where(s => s.Id == nodeId)
+            .Select(s => s.Slug)
+            .FirstOrDefaultAsync(ct);
+        if (string.IsNullOrEmpty(slug)) return "";
+
+        var fp = $"node:{slug}";
+        var catKey = FindingCategory.Other.ToString();
+        var statusKey = FindingStatus.New.ToString();
+
+        var summaries = await db.Findings.AsNoTracking()
+            .Where(f => f.FilePath == fp
+                        && f.Category == catKey
+                        && f.Status == statusKey
+                        && f.Summary.StartsWith("STORYSCOPE"))
+            .OrderBy(f => f.Severity == "High" ? 0 : 1)
+            .ThenByDescending(f => f.DetectedAt)
+            .Take(3)
+            .Select(f => new { f.Summary, f.SuggestedFix })
+            .ToListAsync(ct);
+
+        if (summaries.Count == 0) return "";
+
+        var sb = new StringBuilder();
+        sb.AppendLine("STORYSCOPE AUDIT GUIDANCE — a structural audit found these AI-fiction tells in this story; do not reproduce them in this beat:");
+        foreach (var s in summaries)
+        {
+            sb.AppendLine($"• {s.Summary.Replace("STORYSCOPE ", "").Trim()}");
+            if (!string.IsNullOrEmpty(s.SuggestedFix))
+                sb.AppendLine($"  → {s.SuggestedFix}");
+        }
+        return sb.ToString().TrimEnd();
     }
 
     // ── Emotional guidance helper ─────────────────────────────────────────────
