@@ -162,6 +162,9 @@ public class BeatGeneratorService
         var offscreenBlock = !string.IsNullOrWhiteSpace(context.OffscreenActivityContext)
             ? $"\n\n{context.OffscreenActivityContext}"
             : "";
+        var plotEventsBlock = !string.IsNullOrWhiteSpace(context.PlotEventsContext)
+            ? $"\n\n{context.PlotEventsContext}"
+            : "";
 
         var system = $"""
             {UniverseLine()}{worldFactsBlock}
@@ -179,7 +182,7 @@ public class BeatGeneratorService
             {(context.XRayContext.Length > 0 ? "\nSCENE X-RAY — entities on screen RIGHT NOW. Every character below speaks in THEIR OWN documented register, not the narrator's:\n" + context.XRayContext : "")}{continuityBlock}
             {(context.EntityStackContext.Length > 0 ? "\nENTITY WORKING MEMORY — proper nouns active in this story thread and their canon facts. Treat these as hard constraints; do not contradict them:\n" + context.EntityStackContext : "")}
             {(context.DocStackContext.Length > 0 ? "\n" + context.DocStackContext : "")}
-            {(context.LocationContext.Length > 0 ? "\nADDITIONAL LOCATION DETAIL:\n" + context.LocationContext : "")}{ambientAnomalyBlock}{dialogueBlock}{anchorBlock}{plantBlock}{consequenceBlock}{commandmentBlock}{worldStateBlock}{emotionalBlock}{mlProseBlock}{tensionBlock}{readerBlock}{narrativeSummaryBlock}{chapterSummaryBlock}{openThreadsBlock}{pacingBlock}{structuralBlock}{offscreenBlock}{storyScienceBlock}{structuralBlueprintBlock}
+            {(context.LocationContext.Length > 0 ? "\nADDITIONAL LOCATION DETAIL:\n" + context.LocationContext : "")}{ambientAnomalyBlock}{dialogueBlock}{anchorBlock}{plantBlock}{consequenceBlock}{commandmentBlock}{worldStateBlock}{emotionalBlock}{mlProseBlock}{tensionBlock}{readerBlock}{narrativeSummaryBlock}{chapterSummaryBlock}{openThreadsBlock}{plotEventsBlock}{pacingBlock}{structuralBlock}{offscreenBlock}{storyScienceBlock}{structuralBlueprintBlock}
             """;
 
         var hasDialogue = context.DialogueContext.Length > 0;
@@ -947,6 +950,17 @@ public record BeatContext
     /// the generator should address or advance at least one per beat.
     /// Empty when OpenThreadsService is not wired or no open threads exist.</summary>
     public string OpenThreadsContext { get; init; } = "";
+
+    /// <summary>
+    /// Arc-level plot state snapshot from StoryStateLedgerService.
+    /// Named plot states (crises, dramatic questions, objectives, threats, alliances,
+    /// information reveals) with their current status — Open, Escalated, Resolved, etc.
+    /// Terminal states (Resolved, Answered, Achieved, Failed) are flagged do-not-reopen
+    /// so the generator cannot accidentally re-open a settled crisis or repeat a completed
+    /// objective. The core fix for the BLST-style crisis-amnesia pattern.
+    /// Empty when StoryStateLedgerService is not wired or no events exist yet.
+    /// </summary>
+    public string PlotEventsContext { get; init; } = "";
 
     /// <summary>Established canonical facts for characters on screen, from ContinuityService.
     /// CANONICAL/CONFIRMED claims filtered to entities in CharactersInScene — injected as a

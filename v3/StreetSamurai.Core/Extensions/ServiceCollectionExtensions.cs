@@ -964,6 +964,7 @@ public static class ServiceCollectionExtensions
         services.AddSingleton<ReaderKnowledgeService>();
         services.AddSingleton<ChapterSummaryService>();
         services.AddSingleton<OpenThreadsService>();
+        services.AddSingleton<StoryStateLedgerService>();
         services.AddSingleton<PremiseToOutlineService>();
         services.AddSingleton<OutlineAdherenceService>();
         services.AddSingleton<NarrativeForkService>();

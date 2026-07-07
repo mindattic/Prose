@@ -52,7 +52,8 @@ public class ProseWriterRouter(
     ContinuityService? continuity = null,
     StoryScienceService? storyScience = null,
     NarrativeChartService? narrativeChart = null,
-    StructuralBlueprintService? structuralBlueprint = null)
+    StructuralBlueprintService? structuralBlueprint = null,
+    StoryStateLedgerService? storyStateLedger = null)
 {
     // Built from CombatProseConstants — single source of truth shared with CombatSceneWriter.
     static readonly string CombatProseGuidance =
@@ -338,6 +339,15 @@ public class ProseWriterRouter(
             catch { /* non-blocking */ }
         }
 
+        // Story plot state: arc-level named states (crises, dramatic questions, objectives,
+        // threats, alliances) across all beats — prevents crisis-amnesia on long nodes.
+        var plotEventsContext = context.PlotEventsContext;
+        if (string.IsNullOrEmpty(plotEventsContext) && storyStateLedger != null && context.NodeId != Guid.Empty)
+        {
+            try { plotEventsContext = await storyStateLedger.BuildContextAsync(context.NodeId, ct); }
+            catch { /* non-blocking */ }
+        }
+
         // Story Science: King + Storr craft laws — psychometric consistency, status dynamics,
         // curiosity gap, neural narrative, sensory specificity, prose anti-patterns, theory of mind.
         var storyScienceGuidance = context.StoryScienceGuidance;
@@ -412,6 +422,7 @@ public class ProseWriterRouter(
             NarrativeSummaryContext  = narrativeSummaryContext,
             ChapterSummaryContext    = chapterSummaryContext,
             OpenThreadsContext       = openThreadsContext,
+            PlotEventsContext        = plotEventsContext,
             ContinuityContext        = continuityContext,
             StoryScienceGuidance     = storyScienceGuidance,
             OffscreenActivityContext = offscreenActivityContext,
@@ -474,6 +485,7 @@ public class ProseWriterRouter(
                 new("NarrativeSummary",    IsApplicable: nodeApplicable,          IsActive: narrativeSummaryContext.Length > 0,                                       BlockSizeChars: narrativeSummaryContext.Length),
                 new("ChapterSummary",      IsApplicable: nodeApplicable,          IsActive: chapterSummaryContext.Length > 0,                                         BlockSizeChars: chapterSummaryContext.Length),
                 new("OpenThreads",         IsApplicable: nodeApplicable,          IsActive: openThreadsContext.Length > 0,                                            BlockSizeChars: openThreadsContext.Length),
+                new("StoryStateLedger",    IsApplicable: nodeApplicable,          IsActive: plotEventsContext.Length > 0,                                             BlockSizeChars: plotEventsContext.Length),
                 new("SceneContextAssembler", IsApplicable: beatId != Guid.Empty,  IsActive: xRayContext.Length > 0,                                                    BlockSizeChars: xRayContext.Length),
                 new("ContinuityService",   IsApplicable: nodeApplicable,          IsActive: continuityContext.Length > 0,                                              BlockSizeChars: continuityContext.Length),
                 new("StoryScience",        IsApplicable: totalBeats > 0,          IsActive: storyScienceGuidance.Length > 0,                                             BlockSizeChars: storyScienceGuidance.Length),
@@ -501,6 +513,13 @@ public class ProseWriterRouter(
                 try { await openThreads.MarkResolvedAsync(capturedNodeId, beatId, capturedResult, CancellationToken.None); }
                 catch { /* non-blocking */ }
                 try { await openThreads.DetectAndRegisterAsync(capturedNodeId, beatId, capturedResult, CancellationToken.None); }
+                catch { /* non-blocking */ }
+            }
+
+            // Story plot state: extract arc-level state transitions from the completed beat.
+            if (storyStateLedger != null && capturedNodeId != Guid.Empty && beatId != Guid.Empty && !string.IsNullOrWhiteSpace(capturedResult))
+            {
+                try { await storyStateLedger.ExtractAndRecordAsync(capturedNodeId, beatId, beatIndex, capturedResult, CancellationToken.None); }
                 catch { /* non-blocking */ }
             }
           }

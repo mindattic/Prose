@@ -136,9 +136,10 @@ public class StreetSamuraiDbContext : DbContext
     public DbSet<NodeSpineVersion>    NodeSpineVersions    => Set<NodeSpineVersion>();
     // Amazon KDP / storefront search keywords (up to 7 per node).
     public DbSet<NodeKeyword>         NodeKeywords         => Set<NodeKeyword>();
-    // Autonomous pipeline — chapter summaries + open threads ledger.
+    // Autonomous pipeline — chapter summaries + open threads + plot-state ledger.
     public DbSet<NodeChapterSummary>  NodeChapterSummaries => Set<NodeChapterSummary>();
     public DbSet<NodeOpenThread>      NodeOpenThreads      => Set<NodeOpenThread>();
+    public DbSet<StoryPlotEvent>      StoryPlotEvents      => Set<StoryPlotEvent>();
     // Persona quality-reviews for canon entities (characters, weapons, tech, etc.).
     public DbSet<EntityReview>          EntityReviews          => Set<EntityReview>();
     public DbSet<EntityReviewSummary>   EntityReviewSummaries  => Set<EntityReviewSummary>();
@@ -2302,6 +2303,23 @@ public class StreetSamuraiDbContext : DbContext
             e.Property(x => x.Category).HasMaxLength(50);
             e.Property(x => x.Description).HasMaxLength(500).IsRequired();
             e.HasIndex(x => new { x.NodeId, x.IsResolved });
+            e.HasOne(x => x.Node).WithMany()
+                .HasForeignKey(x => x.NodeId).OnDelete(DeleteBehavior.Cascade);
+        });
+
+        // ── StoryPlotEvent ────────────────────────────────────────────────
+        b.Entity<StoryPlotEvent>(e =>
+        {
+            e.HasKey(x => x.Id);
+            e.Property(x => x.StateKey).HasMaxLength(200).IsRequired();
+            e.Property(x => x.StateType).HasMaxLength(50).IsRequired();
+            e.Property(x => x.Verb).HasMaxLength(50).IsRequired();
+            e.Property(x => x.Label).HasMaxLength(500).IsRequired();
+            e.Property(x => x.NewValue).HasMaxLength(100).IsRequired();
+            e.Property(x => x.Source).HasMaxLength(50).IsRequired();
+            // Hot path: "what is the current state of key X in node N?" — index by (NodeId, StateKey)
+            e.HasIndex(x => new { x.NodeId, x.StateKey });
+            e.HasIndex(x => new { x.NodeId, x.CreatedAt });
             e.HasOne(x => x.Node).WithMany()
                 .HasForeignKey(x => x.NodeId).OnDelete(DeleteBehavior.Cascade);
         });
