@@ -197,6 +197,15 @@ public class BeatGeneratorService
         var subtextBlock = string.IsNullOrEmpty(context.Subtext) ? "" :
             $"\n\nSUBTEXT (what is happening beneath the prose — foreshadowing, unspoken motivations, dramatic irony; the reader never sees this):\n{context.Subtext}";
 
+        // Length instruction: default is the short-beat form (2-4 paragraphs); a
+        // TargetWords hint switches to full-scene mode for chapter-scale beats
+        // (~1000-word beats are the proven STSH shape for 100+ page works).
+        var lengthInstruction = context.TargetWords > 0
+            ? $"Write this beat as a FULL SCENE of approximately {context.TargetWords} words. " +
+              "Give it scene shape — entry in motion, a turn, an exit that leans forward. " +
+              "Earn the length with texture and interaction, never with summary or repetition. Make every word count."
+            : "Write 2-4 paragraphs. Make every word count.";
+
         var user = $"""
             SCENE SO FAR:
             {context.SceneSoFar}
@@ -208,10 +217,13 @@ public class BeatGeneratorService
             whose head we're in. Inner thoughts surface as *italicized stand-alone lines*, never
             labeled — a person arguing with themselves about a specific named thing.{dialogueInstruction}
 
-            Write 2-4 paragraphs. Make every word count.
+            {lengthInstruction}
             """;
 
-        return await llm.GenerateAsync(system, user, temperature: 0.85, maxTokens: 2048, ct: ct);
+        var maxTokens = context.TargetWords > 0
+            ? Math.Clamp(context.TargetWords * 3, 2048, 8192)
+            : 2048;
+        return await llm.GenerateAsync(system, user, temperature: 0.85, maxTokens: maxTokens, ct: ct);
     }
 
     /// <summary>
@@ -969,6 +981,14 @@ public record BeatContext
     /// generation.
     /// </summary>
     public string StructuralBlueprintGuidance { get; init; } = "";
+
+    /// <summary>
+    /// Target prose length for this beat in words. 0 = the classic short-beat
+    /// instruction (2-4 paragraphs, ~350 words). Set ~950 for chapter-scale
+    /// full-scene beats (the proven STSH shape: ~1000-word beats for 100+ page
+    /// works). Raises the generation maxTokens accordingly.
+    /// </summary>
+    public int TargetWords { get; init; } = 0;
 }
 
 /// <summary>

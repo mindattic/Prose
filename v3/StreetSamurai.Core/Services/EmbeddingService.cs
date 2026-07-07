@@ -213,7 +213,7 @@ public class EmbeddingService
         return embedded;
     }
 
-    private static async Task UpsertProseVectorRawAsync(
+    private async Task UpsertProseVectorRawAsync(
         StreetSamuraiDbContext db, string scopeKind, Guid scopeId, byte[] hash, float[] vector, CancellationToken ct)
     {
         var json = JsonSerializer.Serialize(vector);
@@ -240,7 +240,7 @@ public class EmbeddingService
             new Microsoft.Data.SqlClient.SqlParameter("@p_json", json),
             new Microsoft.Data.SqlClient.SqlParameter("@p_dims", vector.Length),
             new Microsoft.Data.SqlClient.SqlParameter("@p_at", DateTime.UtcNow),
-            new Microsoft.Data.SqlClient.SqlParameter("@p_model", Model));
+            new Microsoft.Data.SqlClient.SqlParameter("@p_model", EffectiveModel));
     }
 
     /// <summary>
@@ -620,7 +620,7 @@ public class EmbeddingService
     /// <c>Guid.Empty</c> means "no scope" and the SQL predicate lets every universe through.</summary>
     private static Guid QueryUniverseId() => UniverseScope.EffectiveId;
 
-    private static async Task UpsertVectorRawAsync(
+    private async Task UpsertVectorRawAsync(
         StreetSamuraiDbContext db, Guid entityId, byte[] hash, float[] vector, CancellationToken ct)
     {
         var json = JsonSerializer.Serialize(vector);
@@ -646,7 +646,7 @@ public class EmbeddingService
             new Microsoft.Data.SqlClient.SqlParameter("@p_json", json),
             new Microsoft.Data.SqlClient.SqlParameter("@p_dims", vector.Length),
             new Microsoft.Data.SqlClient.SqlParameter("@p_at", DateTime.UtcNow),
-            new Microsoft.Data.SqlClient.SqlParameter("@p_model", Model));
+            new Microsoft.Data.SqlClient.SqlParameter("@p_model", EffectiveModel));
     }
 
     /// <summary>
@@ -772,11 +772,11 @@ public class EmbeddingService
             return 0;
         }
 
-        // 3) Batch the API calls. OpenAI text-embedding-3-small accepts up to 2048
-        //    inputs per request; per-input cap is 8191 tokens. We chunk at 128 to
-        //    keep total wire time bounded and parallelism manageable, and so a
-        //    single rate-limit/transient failure costs ≤128 entities.
-        const int BatchSize = 128;
+        // 3) Batch the API calls. OpenAI accepts up to 2048 inputs per request, but
+        //    Gemini's OpenAI-compat endpoint hard-caps at 100 — 100 is the safe
+        //    ceiling across both providers, and a single rate-limit/transient
+        //    failure costs ≤100 entities.
+        const int BatchSize = 100;
         int touched = 0;
         int processed = 0;
         for (int start = 0; start < toEmbed.Count; start += BatchSize)
@@ -850,7 +850,7 @@ public class EmbeddingService
                 return Array.Empty<float>();
             }
             var payload = await resp.Content.ReadFromJsonAsync<EmbeddingResponse>(cancellationToken: ct);
-            return payload?.Data?.FirstOrDefault()?.Embedding ?? Array.Empty<float>();
+            return NormalizeVector(payload?.Data?.FirstOrDefault()?.Embedding ?? Array.Empty<float>());
         }
         catch (Exception ex)
         {
@@ -955,13 +955,42 @@ public class EmbeddingService
                 return Array.Empty<float>();
             }
             var payload = await resp.Content.ReadFromJsonAsync<EmbeddingResponse>(cancellationToken: ct);
-            return payload?.Data?.FirstOrDefault()?.Embedding ?? Array.Empty<float>();
+            return NormalizeVector(payload?.Data?.FirstOrDefault()?.Embedding ?? Array.Empty<float>());
         }
         catch (Exception ex)
         {
             log.LogWarning(ex, "Embedding API call failed");
             return Array.Empty<float>();
         }
+    }
+
+    /// <summary>Effective model label for stored rows — the configured endpoint's
+    /// model when one is set, else the OpenAI default.</summary>
+    private string EffectiveModel =>
+        !string.IsNullOrWhiteSpace(settings.LocalEmbeddingBaseUrl) && !string.IsNullOrWhiteSpace(settings.LocalEmbeddingModel)
+            ? settings.LocalEmbeddingModel
+            : Model;
+
+    /// <summary>Fit a provider vector to the VECTOR(1536) schema. MRL-style models
+    /// (gemini-embedding-001, text-embedding-3-*) remain valid under truncation +
+    /// L2 renormalization; providers that ignore the "dimensions" request param get
+    /// clamped here instead of failing the SQL insert. Undersized vectors are
+    /// rejected (empty) — padding would fabricate signal.</summary>
+    private float[] NormalizeVector(float[] v)
+    {
+        if (v.Length == 0) return v;
+        if (v.Length < Dimensions)
+        {
+            log.LogWarning("Embedding vector {Len} < {Dim} — provider/model mismatch; discarding", v.Length, Dimensions);
+            return Array.Empty<float>();
+        }
+        if (v.Length == Dimensions) return v;
+        var t = new float[Dimensions];
+        Array.Copy(v, t, Dimensions);
+        double norm = 0; foreach (var x in t) norm += (double)x * x;
+        norm = Math.Sqrt(norm);
+        if (norm > 1e-9) for (var i = 0; i < t.Length; i++) t[i] = (float)(t[i] / norm);
+        return t;
     }
 
     private static double CosineSimilarity(float[] a, float[] b)
@@ -981,13 +1010,19 @@ public class EmbeddingService
 
     // ── DTOs ──────────────────────────────────────────────────────────────
 
+    // "dimensions" pins the output width to the VECTOR(1536) schema. OpenAI honors
+    // it (1536 is text-embedding-3-small's default anyway); Gemini's OpenAI-compat
+    // endpoint needs it because gemini-embedding-001's native output is 3072.
+    // NormalizeVector below is the defensive net for providers that ignore it.
     private sealed record EmbeddingRequest(
         [property: JsonPropertyName("input")] string Input,
-        [property: JsonPropertyName("model")] string Model);
+        [property: JsonPropertyName("model")] string Model,
+        [property: JsonPropertyName("dimensions")] int Dimensions = EmbeddingService.Dimensions);
 
     private sealed record BatchEmbeddingRequest(
         [property: JsonPropertyName("input")] string[] Input,
-        [property: JsonPropertyName("model")] string Model);
+        [property: JsonPropertyName("model")] string Model,
+        [property: JsonPropertyName("dimensions")] int Dimensions = EmbeddingService.Dimensions);
 
     private sealed record EmbeddingResponse(
         [property: JsonPropertyName("data")] List<EmbeddingDatum>? Data);

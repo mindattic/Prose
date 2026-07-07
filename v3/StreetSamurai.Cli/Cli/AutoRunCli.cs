@@ -25,7 +25,7 @@ public static class AutoRunCli
     {
         string? slug = null, id = null, effort = "draft";
         bool dryRun = false, force = false, allowVotes = false;
-        int forks = 0;
+        int forks = 0, targetWords = 0;
 
         for (int i = 0; i < args.Length; i++)
         {
@@ -35,6 +35,7 @@ public static class AutoRunCli
                 case "--id":     if (i + 1 < args.Length) id     = args[++i]; break;
                 case "--effort": if (i + 1 < args.Length) effort = args[++i]; break;
                 case "--forks":  if (i + 1 < args.Length && int.TryParse(args[++i], out var f)) forks = Math.Clamp(f, 0, 5); break;
+                case "--target-words": if (i + 1 < args.Length && int.TryParse(args[++i], out var tw)) targetWords = Math.Clamp(tw, 0, 2500); break;
                 case "--dry-run": dryRun = true; break;
                 case "--force":   force  = true; break;
                 case "--allow-votes": allowVotes = true; break;
@@ -112,7 +113,7 @@ public static class AutoRunCli
             {
                 Console.WriteLine();
                 Console.WriteLine($"[auto-run] ── Chapter {totalChapters + 1}: \"{chapterTitle}\" ──");
-                var exp = await ExpandBeatNodesAsync(chapterId, storyBible, router, workbench, force, dryRun);
+                var exp = await ExpandBeatNodesAsync(chapterId, storyBible, router, workbench, force, dryRun, targetWords);
                 totalExpanded += exp;
 
                 if (!dryRun && exp > 0)
@@ -138,7 +139,7 @@ public static class AutoRunCli
         }
         else
         {
-            var exp = await ExpandBeatNodesAsync(nodeId, storyBible, router, workbench, force, dryRun);
+            var exp = await ExpandBeatNodesAsync(nodeId, storyBible, router, workbench, force, dryRun, targetWords);
 
             if (!dryRun && exp > 0)
             {
@@ -169,7 +170,8 @@ public static class AutoRunCli
         ProseWriterRouter router,
         NodeWorkbenchService workbench,
         bool force,
-        bool dryRun)
+        bool dryRun,
+        int targetWords = 0)
     {
         var ordered = await workbench.GetOrderedBeatsAsync(nodeId);
         var sceneSoFar = "";
@@ -209,6 +211,7 @@ public static class AutoRunCli
                     SceneSoFar        = sceneSoFar.Length > 6000 ? sceneSoFar[^6000..] : sceneSoFar,
                     BeatGoal          = goal,
                     Subtext           = beat.Subtext ?? "",
+                    TargetWords       = targetWords,
                 };
                 var prose = await router.WriteAsync(ctx, beat.Id, beatIndex, ordered.Count);
                 if (string.IsNullOrWhiteSpace(prose))
