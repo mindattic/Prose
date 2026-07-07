@@ -376,8 +376,10 @@ public class StoryScopeAuditService(
         var tail = prose.Length <= 25000 ? prose : prose[^25000..];
 
         yield return new HolisticCheck("moral_gloss", "Narrator moral gloss",
-            "Does the narrator (or a character serving as the narrator's mouthpiece) explicitly state the story's theme, moral, or what events 'meant'? AI stories do this 77% of the time vs 52% for humans — usually in the closing beats ('and in that moment she understood...'). Quote the offending line if present. The images and costs should carry the meaning unnamed.",
-            tail, "BLOCKER", false);
+            "Does the narrator explicitly state the story's theme, moral, or what events 'meant' — a lesson-learned paragraph, an 'and in that moment she understood that...' epiphany, a closing summary of significance? CALIBRATION: human stories do this 52% of the time (AI: 77%) — some thematic naming is normal, not a defect. FAIL only for unambiguous, explicit theme-statement in the narrator's voice. NOT gloss: interiority rendered in the POV character's own documented register; a character weighing a concrete situation; concrete imagery and action (closing image fragments are the OPPOSITE of gloss — never flag them); plot facts restated. If the strongest candidate is borderline or in-register, status=pass and say why. Do not escalate to the next-most-reflective passage in a story whose worst gloss is already mild.",
+            tail, "MODERATE", false);   // MODERATE, not BLOCKER: verdicts on interiority-heavy registers
+                                        // drift between runs (ATTE-sweep ratchet) — blocking authority
+                                        // stays with deterministic checks; findings still loop back.
 
         yield return new HolisticCheck("emotion_ratio", "Embodied-vs-labeled emotion",
             "How is emotion rendered? AI fiction routes 81% of emotion through body sensations (tightening chest, cold sweat, held breath) and uses explicit labels ('she was afraid') only 8% of the time; humans label 29% of the time. FAIL if the story exclusively uses embodied rendering with zero (or near-zero) direct emotion labels; PASS if there's a working mix. Count roughly.",
@@ -396,8 +398,8 @@ public class StoryScopeAuditService(
             : "";
         yield return new HolisticCheck("resolution_mode", "Resolution mode as written",
             resolutionCommitment +
-            "How does the story actually exit? FAIL if the resolution is the protagonist achieving internal understanding/acceptance/peace (AI: 47%, humans: 27%), or if a retrospective epilogue narrates significance after the last event. PASS if the outcome is decided externally, stays genuinely open, or is mixed — and the story ends on its last event.",
-            tail, "BLOCKER", false);
+            "How does the story actually exit? FAIL if the resolution is the protagonist achieving NARRATED internal understanding/acceptance/peace (AI: 47%, humans: 27%) — an epiphany the prose spells out — or if a retrospective epilogue narrates significance after the last event. PASS if the outcome is decided externally, stays genuinely open, or is mixed — and the story ends on its last event. CALIBRATION: a protagonist making an external CHOICE (staying, leaving, sending, refusing) rendered as action or image is an external resolution, not internal understanding — never flag a choice shown through action. Humans resolve internally 27% of the time; only the explicit narrated-peace exit is the tell.",
+            tail, "MODERATE", false);  // MODERATE, not BLOCKER — same rationale as moral_gloss.
 
         if (blueprint != null && blueprint.IntertextualAnchorsJson.Length > 4)
             yield return new HolisticCheck("anchors_presence", "Intertextual anchors present",
