@@ -395,12 +395,15 @@ public class StoryScopeAuditService(
         var results = new List<StoryScopeCheck>();
         var ordered = readings.OrderBy(r => r.Index).ToList();
 
-        // Flat escalation — Claude's #1 fingerprint (SHAP 0.402).
+        // Flat escalation — Claude's #1 fingerprint (SHAP 0.402). Window is 4+
+        // consecutive equal scores: stakes readings carry ±1 run-to-run noise, and
+        // 3-in-a-row exact equality fires on that noise (two cold reads of the same
+        // story produced different 3-plateau sets in the Sparrow fix pass).
         var stakes = ordered.Select(r => r.Stakes).ToList();
         var plateaus = new List<string>();
-        for (int i = 0; i + 2 < stakes.Count; i++)
-            if (stakes[i] == stakes[i + 1] && stakes[i] == stakes[i + 2])
-                plateaus.Add($"beats {i}-{i + 2} at {stakes[i]}/10");
+        for (int i = 0; i + 3 < stakes.Count; i++)
+            if (stakes[i] == stakes[i + 1] && stakes[i] == stakes[i + 2] && stakes[i] == stakes[i + 3])
+                plateaus.Add($"beats {i}-{i + 3} at {stakes[i]}/10");
         var climaxZoneStart = (int)(stakes.Count * 0.6);
         var maxStakes = stakes.Count > 0 ? stakes.Max() : 0;
         var peakIndex = stakes.IndexOf(maxStakes);
@@ -743,6 +746,10 @@ public class StoryScopeAuditService(
         {
             try
             {
+                // Replace semantics per check key: derived checks' evidence text moves
+                // between runs (plateau locations, counts), which changes the dedup key —
+                // without this, superseded findings accumulate at Status=New.
+                findings.DeleteBySummaryPrefix($"node:{node.Slug}", $"{FindingPrefix} {check.Key}:");
                 findings.Upsert(
                     filePath:     $"node:{node.Slug}",
                     chapterId:    null,
