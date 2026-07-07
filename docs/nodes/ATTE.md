@@ -189,8 +189,26 @@ Osei) to avoid collision with the adult Amara Osei in Mnemosync. All three prose
 
 ## 5. Story structure {#SS-ATTE-5}
 
-40 beats across a prologue + 4 chapters (was 42; the bathroom-sweep beat and a duplicate Selvamani
-beat were removed in the SS-A18 mechanism redesign). The investigation proceeds:
+**31 beats across 5 chapter nodes** (restructured 2026-07-05 via `--split-collection`; was
+40 beats/4 chapters, before that 42 — the bathroom-sweep beat and a duplicate Selvamani beat
+were removed in the SS-A18 mechanism redesign). Current chapter nodes and beat counts:
+
+| Part | Title | Beats |
+|---|---|---|
+| One | The Assignment | 7 |
+| Two | Yemina in the System | 7 |
+| Three | The Bramley Case | 7 |
+| Four | The Limits | 7 |
+| Five | The Record | 3 |
+
+The prologue's Pilsen Veil 0600 opening is now Part One's first beat. Verified beat anchors
+(0-based, reading order): Ren Vasquez interview ~beat 8; Cross-Corp Case Registry 47-record
+query ~beat 14; Coherent Schism Emission neuretics search ~beat 19; Selvamani's apartment and
+resonance maps ~beat 20; Chinwe Bramley status notice ~beat 23; dock hand-off, locker, filing,
+and *She drove.* close Part Five.
+
+The narrative movements below predate the 5-part split — they describe the investigation's
+sequence, which is unchanged; their beat groupings now span the part boundaries above.
 
 ### Prologue — GLMZ (gateway beat)
 Yemina's POV of the Pilsen Veil zone-seam at 0600: the Arcturus/Meridian contract boundary,
@@ -243,6 +261,30 @@ has been tracking her movements throughout the investigation; its sweep pattern 
 to cover the dock gate, and it is watching her watch them. The Bear/folder scene is narrated
 from Yemina's direct POV: she is on the ground, close enough to observe without being observed.
 Yemina's report goes in. The story ends where the investigation hands off to something she cannot follow.
+
+## 5b. Structural Blueprint {#SS-ATTE-BP}
+
+Retrofitted 2026-07-07 (`ss --generate-blueprint --retrofit`; StoryScope countermeasures,
+BIBLE §10 Step 3b). Live copy in `NodeStructuralBlueprints`; this section is the human record.
+
+- **Subplot (thematic parallel):** Ren Vasquez — a witness whose institutional role forbids him
+  to report what he saw, mirroring Yemina's own silencing by prior administrative action. Both
+  plots ask what happens when institutional logic forbids naming what has been observed.
+  Carrier beats written 4/4.
+- **Temporal scheme:** linear. **Resolution:** unresolved — the report enters a queue that will
+  not act; the children are not recovered; the system's silence is the ending.
+- **Moral polarity:** ambivalent. **Form device:** none (conventional; the prose-as-case-file
+  texture is the story's formal signature).
+- **Ending:** quiet, no epilogue — a **logged deviation** from the avalanche default, justified:
+  administrative horror lands on institutional silence, not dramatic consequence (GREY register).
+- **Intertextual anchors (verified in prose):** Resonance Incident Report (beat ~8),
+  Cross-Corp Case Registry (~14), Coherent Schism Emission classification (~19),
+  Selvamani's resonance maps (~20), Status Notice to Chinwe Bramley (~23).
+- **Audit state (2026-07-07):** CLEAN — 0 BLOCKER, 15 PASS. Open MODERATEs: stakes peak at
+  beat 14 then deliberate de-escalation (GREY-register choice; candidate for DEVIATION status),
+  event-type repeats (surveillance ×2, discovery ×2 back-to-back), consensus-cliché note on the
+  "noble futility" emotional resolution. None acted on — per story-craft rule, fix only what a
+  named failure demands.
 
 ## 6. Register and voice {#SS-ATTE-6}
 

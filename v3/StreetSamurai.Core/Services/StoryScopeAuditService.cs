@@ -71,9 +71,17 @@ public class StoryScopeAuditService(
         checks.AddRange(await RunDeterministicChecksAsync(db, node, beats, blueprint, ct));
 
         // ── LLM-graded layer ─────────────────────────────────────────────────
+        // The bible excerpt travels with every holistic check so the judge's fix
+        // suggestions don't contradict the story's own deliberate design (narrative
+        // locks, register choices) — the ATTE pilot showed judges recommending
+        // against locked decisions when blind to them.
+        var bibleExcerpt = string.IsNullOrWhiteSpace(node.NodeBible)
+            ? ""
+            : node.NodeBible.Length <= 6000 ? node.NodeBible : node.NodeBible[..6000] + " …[clamped]";
+
         var progressiveTask = ReadProgressiveAsync(beats, ct);
         var holisticTasks = BuildHolisticChecks(node, prose, blueprint)
-            .Select(c => RunHolisticCheckAsync(c, ct))
+            .Select(c => RunHolisticCheckAsync(c, bibleExcerpt, ct))
             .ToList();
         var clicheTask = RunConsensusClicheScanAsync(db, node, prose, ct);
 
@@ -380,7 +388,7 @@ public class StoryScopeAuditService(
             full, "MODERATE", false);
 
         yield return new HolisticCheck("dialogue_philosophy", "Dialogue-as-philosophy",
-            "Does dialogue function as philosophical debate — characters trading abstract positions — rather than as a status battle between people who want different things? AI: 59%, humans: 34%. Quote the most seminar-like exchange if present.",
+            "Does dialogue function as philosophical debate — characters trading abstract positions — rather than as a status battle between people who want different things? AI: 59%, humans: 34%. PASS means dialogue is transactional/status-driven (the human-like state — its ABSENCE of philosophy is good, not a gap); FAIL means characters conduct seminars. Quote the most seminar-like exchange if present. Do NOT recommend adding philosophical debate.",
             full, "MODERATE", false);
 
         var resolutionCommitment = blueprint != null
@@ -421,11 +429,14 @@ public class StoryScopeAuditService(
             full, "MINOR", false);
     }
 
-    async Task<StoryScopeCheck> RunHolisticCheckAsync(HolisticCheck check, CancellationToken ct)
+    async Task<StoryScopeCheck> RunHolisticCheckAsync(HolisticCheck check, string bibleExcerpt, CancellationToken ct)
     {
         var system = """
             You are auditing one structural property of a story — a measurable tell that separates
             AI fiction from human fiction. Be specific: cite prose, name beats, count when asked.
+            If the story's design notes (bible) show a flagged property is a deliberate, locked
+            choice, say so in the evidence and never propose a fix that contradicts a lock —
+            deliberate design is reported, not corrected.
             Respond as JSON only:
             {
               "status":     "pass" | "warn" | "fail",
@@ -436,10 +447,14 @@ public class StoryScopeAuditService(
             }
             """;
 
+        var bibleBlock = bibleExcerpt.Length > 0
+            ? $"\nSTORY DESIGN NOTES (the story's own bible — locks and register choices are deliberate):\n{bibleExcerpt}\n"
+            : "";
+
         var user = $"""
             CHECK: {check.Title}
             QUESTION: {check.Question}
-
+            {bibleBlock}
             STORY PROSE:
             {check.ProseSlice}
             """;
@@ -503,6 +518,12 @@ public class StoryScopeAuditService(
             devices, e.g. "the mentor dies passing on one last clue", "the protagonist watches the
             hand-off from a parked car", "time is a river" metaphors). Different model families
             collapse onto the same devices, so the presence of one is a measurable tell.
+
+            STRICT BAR for flagging a device: it must be a genre-generic choice you would expect
+            most LLMs to produce for ANY story of this type — NOT the story's own premise, its
+            locked design choices, or elements specific to its world. "The investigator follows a
+            paper trail" in a procedural is the genre, not a cliché. Maximum 5 devices; fewer is
+            better; an empty list is a valid answer.
             Respond as JSON only:
             {
               "status": "pass" | "warn" | "fail",
@@ -515,8 +536,8 @@ public class StoryScopeAuditService(
         var user = $"""
             {blockedList}
 
-            Also flag NEW stock devices this story leans on that you would expect most LLMs to
-            produce for this premise — the statistically safe choices.
+            Also flag NEW stock devices (max 5, strict bar above) this story leans on that you
+            would expect most LLMs to produce for this premise — the statistically safe choices.
 
             STORY PROSE:
             {ClampProse(prose)}
@@ -573,6 +594,18 @@ public class StoryScopeAuditService(
 
     void WriteFindings(Node node, List<StoryScopeCheck> checks)
     {
+        // Auto-heal: a check that now passes retires any stale finding it wrote on a
+        // prior run — otherwise superseded findings sit at Status=New forever and
+        // eventually pollute the beat-prompt loop-back.
+        foreach (var check in checks.Where(c => c.Severity == "PASS"))
+        {
+            try { findings.DeleteBySummaryPrefix($"node:{node.Slug}", $"{FindingPrefix} {check.Key}:"); }
+            catch (Exception ex)
+            {
+                log.LogWarning(ex, "[storyscope] stale finding cleanup failed for {Key}", check.Key);
+            }
+        }
+
         foreach (var check in checks.Where(c => c.Severity is "BLOCKER" or "MODERATE"))
         {
             try
