@@ -538,6 +538,7 @@ public class StreetSamuraiDbContext : DbContext
             e.Property(x => x.MoralPolarity).HasMaxLength(20).IsRequired();
             e.Property(x => x.EndingStyle).HasMaxLength(20).IsRequired();
             e.Property(x => x.GeneratedBy).HasMaxLength(20).IsRequired();
+            e.Property(x => x.Granularity).HasMaxLength(20).IsRequired().HasDefaultValue("beat");
             e.Property(x => x.SubplotSummary).HasMaxLength(1000);
             e.Property(x => x.SubplotTheme).HasMaxLength(500);
             e.Property(x => x.AnachronyPlan).HasMaxLength(1000);

@@ -268,10 +268,14 @@ public class StoryScopeAuditService(
     async Task<List<BeatReading>?> ReadProgressiveAsync(
         List<NodeWorkbenchService.OrderedBeat> beats, CancellationToken ct)
     {
-        var system = """
-            You are reading a story beat-by-beat and scoring each beat on three axes.
-            For EVERY beat, return:
-              - stakes: 1-10 — how large/costly/irreversible the events of this beat feel in context
+        // Book-scale nodes read at chapter granularity — same unit rule as the blueprint.
+        var (granularity, units) = StructuralBlueprintService.GroupUnits(beats);
+        var unitLabel = granularity == "chapter" ? "Chapter" : "Beat";
+
+        var system = $$"""
+            You are reading a story {{unitLabel.ToLowerInvariant()}}-by-{{unitLabel.ToLowerInvariant()}} and scoring each {{unitLabel.ToLowerInvariant()}} on three axes.
+            For EVERY {{unitLabel.ToLowerInvariant()}}, return:
+              - stakes: 1-10 — how large/costly/irreversible the events feel in context
               - eventType: one word — the dominant plot event (confrontation, discovery, chase,
                 confession, ceremony, negotiation, ambush, loss, betrayal, arrival, departure,
                 exchange, vigil, repair, filing, surveillance ... choose the truest word)
@@ -281,12 +285,17 @@ public class StoryScopeAuditService(
             Return STRICT JSON only: { "beats": [ { "index": 0, "stakes": 3, "eventType": "arrival", "revelationMode": "curiosity" }, ... ] }
             """;
 
+        var perUnitClamp = granularity == "chapter"
+            ? Math.Clamp(60000 / Math.Max(units.Count, 1), 700, 2000)
+            : 900;
         var sb = new System.Text.StringBuilder();
-        foreach (var (b, i) in beats.Select((b, i) => (b, i)))
+        foreach (var u in units)
         {
-            sb.AppendLine($"--- Beat {i} ---");
-            var text = b.Beat.Text!;
-            sb.AppendLine(text.Length <= 900 ? text : text[..900] + " …");
+            sb.AppendLine($"--- {unitLabel} {u.Index} ---");
+            var text = string.Join("\n\n", u.Beats.Select(b => b.Beat.Text ?? ""));
+            sb.AppendLine(text.Length <= perUnitClamp
+                ? text
+                : text[..(int)(perUnitClamp * 0.65)] + "\n…[middle elided]…\n" + text[^(perUnitClamp - (int)(perUnitClamp * 0.65))..]);
         }
 
         try
@@ -509,10 +518,27 @@ public class StoryScopeAuditService(
             .Select(c => c.Device)
             .ToListAsync(ct);
 
+        // Provisional devices (FlagCount = 1) are shown so the judge REUSES their exact
+        // wording when the same device recurs — free-text re-phrasing means exact-match
+        // corroboration never fires and nothing ever gets promoted to the active blocklist.
+        var provisional = await db.ConsensusCliches.AsNoTracking()
+            .Where(c => c.UniverseId == node.UniverseId && c.FlagCount == 1)
+            .OrderByDescending(c => c.AddedAt)
+            .Take(60)
+            .Select(c => c.Device)
+            .ToListAsync(ct);
+
         var blockedList = blocked.Count > 0
             ? "KNOWN CONSENSUS CLICHÉS for this universe (LLMs converge on these — flag any that appear):\n" +
               string.Join("\n", blocked.Select(d => $"  - {d}"))
-            : "No blocklist exists yet for this universe.";
+            : "No active blocklist exists yet for this universe.";
+
+        var provisionalList = provisional.Count > 0
+            ? "\n\nPROVISIONAL DEVICES already flagged once in this universe. If a device you see in " +
+              "this story matches one below IN SUBSTANCE, return the wording below VERBATIM in your " +
+              "devices array (corroboration is exact-match); only invent new wording for genuinely new devices:\n" +
+              string.Join("\n", provisional.Select(d => $"  - {d}"))
+            : "";
 
         var system = """
             You are scanning a story for CONSENSUS CLICHÉS — concrete narrative devices that language
@@ -536,7 +562,7 @@ public class StoryScopeAuditService(
             """;
 
         var user = $"""
-            {blockedList}
+            {blockedList}{provisionalList}
 
             Also flag NEW stock devices (max 5, strict bar above) this story leans on that you
             would expect most LLMs to produce for this premise — the statistically safe choices.
@@ -560,7 +586,11 @@ public class StoryScopeAuditService(
                     .FirstOrDefaultAsync(c => c.UniverseId == node.UniverseId && c.Device == trimmed, ct);
                 if (existing != null)
                 {
-                    if (existing.FirstFlaggedInSlug != node.Slug)
+                    // One corroboration per story: skip if this slug already counted
+                    // (either as the first flagger or a prior corroborator in Notes).
+                    var alreadyCounted = existing.FirstFlaggedInSlug == node.Slug
+                        || (existing.Notes?.Contains(node.Slug) ?? false);
+                    if (!alreadyCounted)
                     {
                         existing.FlagCount++;
                         existing.UpdatedAt = DateTime.UtcNow;

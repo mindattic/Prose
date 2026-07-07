@@ -84,4 +84,48 @@ public class StructuralBlueprintServiceTests
         var parsed = StructuralBlueprintService.ParseResponse(noisy, beatCount: 10);
         Assert.That(parsed.Resolution!.Mode, Is.EqualTo("unresolved"));
     }
+
+    static List<NodeWorkbenchService.OrderedBeat> MakeBeats(params (Guid owner, int count)[] chapters)
+    {
+        var beats = new List<NodeWorkbenchService.OrderedBeat>();
+        double key = 100;
+        foreach (var (owner, count) in chapters)
+            for (var i = 0; i < count; i++)
+                beats.Add(new NodeWorkbenchService.OrderedBeat(
+                    new StreetSamurai.Core.Data.Entities.Beat { Id = Guid.NewGuid() }, owner, key += 100));
+        return beats;
+    }
+
+    [Test]
+    public void GroupUnits_SmallStory_OneUnitPerBeat()
+    {
+        var ch = Guid.NewGuid();
+        var (granularity, units) = StructuralBlueprintService.GroupUnits(MakeBeats((ch, 30)));
+        Assert.That(granularity, Is.EqualTo("beat"));
+        Assert.That(units, Has.Count.EqualTo(30));
+        Assert.That(units[7].Index, Is.EqualTo(7));
+    }
+
+    [Test]
+    public void GroupUnits_BookScale_OneUnitPerChapterRun()
+    {
+        var ch1 = Guid.NewGuid(); var ch2 = Guid.NewGuid(); var ch3 = Guid.NewGuid();
+        var (granularity, units) = StructuralBlueprintService.GroupUnits(
+            MakeBeats((ch1, 40), (ch2, 25), (ch3, 30)));
+        Assert.That(granularity, Is.EqualTo("chapter"));
+        Assert.That(units, Has.Count.EqualTo(3));
+        Assert.That(units[1].Beats, Has.Count.EqualTo(25));
+        Assert.That(units[1].OwnerNodeId, Is.EqualTo(ch2));
+        Assert.That(units[2].Index, Is.EqualTo(2));
+    }
+
+    [Test]
+    public void GroupUnits_ForceChapter_GroupsSmallStoryByOwner()
+    {
+        var ch1 = Guid.NewGuid(); var ch2 = Guid.NewGuid();
+        var (granularity, units) = StructuralBlueprintService.GroupUnits(
+            MakeBeats((ch1, 7), (ch2, 7)), forceChapter: true);
+        Assert.That(granularity, Is.EqualTo("chapter"));
+        Assert.That(units, Has.Count.EqualTo(2));
+    }
 }

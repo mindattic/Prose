@@ -541,11 +541,13 @@ She doesn't re-pad them. She leaves them as they are.
 The routing log is still on the terminal — the nine-second gap, right where she left it. She
 looks at it. She closes the lid without erasing it.
 
-She thinks: giving them hell seems to be her special talent.
-
-GLMZ has a lot of hell to give. She decides to stay and give it.
-
 Her name was Pixel.
+
+*(Revised 2026-07-07, StoryScope sweep: the beat previously closed with narrated realization —
+the "special talent" thought and "she decides to stay and give it." Both cut from prose and
+spine in the same change. Staying is shown, not decided on the page: she goes inside, puts on
+music, leaves the boots as they are, keeps the log. The name-claim stands alone as the final
+line — a declaration, not an explanation.)*
 
 ## 11. Register and Voice {#SS-PNHL-11}
 

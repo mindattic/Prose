@@ -95,6 +95,12 @@ public class NodeStructuralBlueprint
     /// in-world works/brands/places from the entity DB that the prose must touch.</summary>
     public string IntertextualAnchorsJson { get; set; } = "[]";
 
+    /// <summary>beat | chapter. Book-scale nodes (more than 60 beats) plan and audit at
+    /// chapter granularity: the escalation curve, event palette, and beat tags index
+    /// CHAPTER units instead of individual beats (tags attach to each chapter's first
+    /// beat). Set at generation time; readers must honor it when interpreting the arrays.</summary>
+    public string   Granularity { get; set; } = "beat";
+
     /// <summary>llm | manual | retrofit</summary>
     public string   GeneratedBy { get; set; } = "llm";
     public DateTime GeneratedAt { get; set; } = DateTime.UtcNow;

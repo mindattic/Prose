@@ -35,6 +35,40 @@ public class StructuralBlueprintService
 
     private static readonly string[] AnchorEntityTypes = ["entertainment", "document", "news", "quote"];
 
+    /// <summary>Above this beat count, blueprints plan at CHAPTER granularity — per-beat
+    /// escalation/event arrays don't fit a response window at book scale, and the
+    /// structural decisions live at chapter level anyway for long works.</summary>
+    public const int ChapterGranularityThreshold = 60;
+
+    /// <summary>One planning unit: a beat (short works) or a chapter's run of beats (books).</summary>
+    public sealed record StructuralUnit(int Index, Guid OwnerNodeId, string? Title, List<NodeWorkbenchService.OrderedBeat> Beats);
+
+    /// <summary>Group ordered beats into planning units. Short works: one unit per beat.
+    /// Book-scale works (beats > threshold): one unit per consecutive same-owner run
+    /// (i.e., per chapter, in reading order).</summary>
+    public static (string Granularity, List<StructuralUnit> Units) GroupUnits(
+        List<NodeWorkbenchService.OrderedBeat> beats,
+        IReadOnlyDictionary<Guid, string>? ownerTitles = null,
+        bool forceChapter = false)
+    {
+        if (!forceChapter && beats.Count <= ChapterGranularityThreshold)
+            return ("beat", beats
+                .Select((b, i) => new StructuralUnit(i, b.NodeId, b.Beat.Title, [b]))
+                .ToList());
+
+        var units = new List<StructuralUnit>();
+        var i = 0;
+        while (i < beats.Count)
+        {
+            var owner = beats[i].NodeId;
+            var run = new List<NodeWorkbenchService.OrderedBeat>();
+            while (i < beats.Count && beats[i].NodeId == owner) { run.Add(beats[i]); i++; }
+            var title = ownerTitles != null && ownerTitles.TryGetValue(owner, out var t) ? t : null;
+            units.Add(new StructuralUnit(units.Count, owner, title, run));
+        }
+        return ("chapter", units);
+    }
+
     public StructuralBlueprintService(
         ILlmService llm,
         IDbContextFactory<StreetSamuraiDbContext> dbFactory,
@@ -105,14 +139,21 @@ public class StructuralBlueprintService
             log.LogWarning(ex, "[blueprint] anchor candidate lookup failed for {NodeId} — continuing without", nodeId);
         }
 
-        var system = BuildSystemPrompt(retrofit);
-        var user   = await BuildUserPromptAsync(db, node, beats, anchorCandidates, retrofit, ct);
+        // Book-scale nodes plan at chapter granularity — one unit per chapter.
+        var ownerIds = beats.Select(b => b.NodeId).Distinct().ToList();
+        var ownerTitles = await db.Nodes.AsNoTracking()
+            .Where(n => ownerIds.Contains(n.Id))
+            .ToDictionaryAsync(n => n.Id, n => n.Title, ct);
+        var (granularity, units) = GroupUnits(beats, ownerTitles);
 
-        log.LogInformation("[blueprint] Generating ({Mode}) for node {Title} — {Beats} beats",
-            retrofit ? "retrofit" : "pre-prose", node.Title, beats.Count);
+        var system = BuildSystemPrompt(retrofit, granularity);
+        var user   = BuildUserPrompt(node, units, granularity, anchorCandidates, retrofit);
+
+        log.LogInformation("[blueprint] Generating ({Mode}, {Granularity}) for node {Title} — {Beats} beats / {Units} units",
+            retrofit ? "retrofit" : "pre-prose", granularity, node.Title, beats.Count, units.Count);
 
         var raw = await llm.GenerateAsync(system, user, temperature: 0.8, maxTokens: 4096, ct: ct);
-        var parsed = ParseResponse(raw, beats.Count);
+        var parsed = ParseResponse(raw, units.Count);
 
         // Replace any existing blueprint (cascade removes beat tags).
         var existing = await db.NodeStructuralBlueprints
@@ -141,12 +182,14 @@ public class StructuralBlueprintService
             NoEpilogue  = parsed.Ending?.NoEpilogue ?? true,
             EndingNote  = parsed.Ending?.Note,
             IntertextualAnchorsJson = JsonSerializer.Serialize(parsed.IntertextualAnchors ?? []),
+            Granularity = granularity,
             GeneratedBy = retrofit ? "retrofit" : "llm",
         };
         db.NodeStructuralBlueprints.Add(blueprint);
 
         // Beat tags: subplot carriers, anachrony cut, anchor touch-points.
-        foreach (var tag in BuildBeatTags(parsed, beats, blueprint.Id))
+        // Chapter granularity: a unit index resolves to that chapter's FIRST beat.
+        foreach (var tag in BuildBeatTags(parsed, units, blueprint.Id))
             db.NodeStructuralBlueprintBeatTags.Add(tag);
 
         await db.SaveChangesAsync(ct);
@@ -156,10 +199,10 @@ public class StructuralBlueprintService
     }
 
     private static IEnumerable<NodeStructuralBlueprintBeatTag> BuildBeatTags(
-        BlueprintResponse parsed, List<NodeWorkbenchService.OrderedBeat> beats, Guid blueprintId)
+        BlueprintResponse parsed, List<StructuralUnit> units, Guid blueprintId)
     {
         Guid? BeatIdAt(int index) =>
-            index >= 0 && index < beats.Count ? beats[index].Beat.Id : null;
+            index >= 0 && index < units.Count ? units[index].Beats[0].Beat.Id : null;
 
         foreach (var idx in parsed.Subplot?.BeatIndexes ?? [])
             if (BeatIdAt(idx) is { } id)
@@ -205,6 +248,24 @@ public class StructuralBlueprintService
         var blueprint = await GetAsync(nodeId, ct);
         if (blueprint == null) return "";
 
+        // Chapter-granular blueprints index chapters, not beats — map this beat to
+        // its unit so the curve/palette lookups read the right entry.
+        var unitIndex = beatIndex;
+        var totalUnits = totalBeats;
+        var unitLabel = "beat";
+        if (blueprint.Granularity == "chapter")
+        {
+            var ordered = await workbench.GetOrderedBeatsAsync(nodeId, ct);
+            var (_, units) = GroupUnits(ordered, forceChapter: true);
+            var containing = units.FirstOrDefault(u => u.Beats.Any(b => b.Beat.Id == beatId));
+            if (containing == null && beatIndex >= 0 && beatIndex < ordered.Count)
+                containing = units.FirstOrDefault(u => u.Beats.Any(b => b.Beat.Id == ordered[beatIndex].Beat.Id));
+            if (containing == null) return "";
+            unitIndex = containing.Index;
+            totalUnits = units.Count;
+            unitLabel = "chapter";
+        }
+
         var lines = new List<string>
         {
             "[STRUCTURAL BLUEPRINT — this story's pre-committed anti-tell decisions]"
@@ -225,33 +286,33 @@ public class StructuralBlueprintService
 
         // Escalation floor from the curve
         var curve = TryDeserialize<List<int>>(blueprint.EscalationCurveJson);
-        if (curve is { Count: > 0 } && beatIndex < curve.Count)
+        if (curve is { Count: > 0 } && unitIndex < curve.Count)
         {
-            var target = curve[beatIndex];
-            if (beatIndex > 0 && beatIndex - 1 < curve.Count)
+            var target = curve[unitIndex];
+            if (unitIndex > 0 && unitIndex - 1 < curve.Count)
             {
-                var prev = curve[beatIndex - 1];
-                lines.Add($"ESCALATION: this beat's stakes target is {target}/10 (previous beat: {prev}/10). " +
+                var prev = curve[unitIndex - 1];
+                lines.Add($"ESCALATION: this {unitLabel}'s stakes target is {target}/10 (previous {unitLabel}: {prev}/10). " +
                           "It must feel larger, more costly, or more irreversible than what came before — flat escalation is the strongest measurable AI-fiction signal.");
             }
             else
             {
-                lines.Add($"ESCALATION: this beat's stakes target is {target}/10.");
+                lines.Add($"ESCALATION: this {unitLabel}'s stakes target is {target}/10.");
             }
         }
 
         // Event type + revelation mode from the palette
         var palette = TryDeserialize<List<EventPaletteEntry>>(blueprint.EventTypePaletteJson);
-        var entry = palette?.FirstOrDefault(e => e.BeatIndex == beatIndex);
+        var entry = palette?.FirstOrDefault(e => e.BeatIndex == unitIndex);
         if (entry != null)
         {
             var prevTypes = palette!
-                .Where(e => e.BeatIndex == beatIndex - 1 || e.BeatIndex == beatIndex - 2)
+                .Where(e => e.BeatIndex == unitIndex - 1 || e.BeatIndex == unitIndex - 2)
                 .Select(e => e.EventType)
                 .Where(t => !string.IsNullOrEmpty(t))
                 .ToList();
-            var prevNote = prevTypes.Count > 0 ? $" (recent beats were: {string.Join(", ", prevTypes)} — do not repeat)" : "";
-            lines.Add($"EVENT TYPE: this beat is a {entry.EventType?.ToUpperInvariant()}{prevNote}.");
+            var prevNote = prevTypes.Count > 0 ? $" (recent {unitLabel}s were: {string.Join(", ", prevTypes)} — do not repeat)" : "";
+            lines.Add($"EVENT TYPE: this {unitLabel} is a {entry.EventType?.ToUpperInvariant()}{prevNote}.");
             if (!string.IsNullOrEmpty(entry.RevelationMode) && entry.RevelationMode != "none")
                 lines.Add($"INFORMATION DYNAMICS: {entry.RevelationMode} — " + entry.RevelationMode switch
                 {
@@ -262,8 +323,8 @@ public class StructuralBlueprintService
                 });
         }
 
-        // Ending guidance on the final ~15% of beats
-        if (totalBeats > 0 && beatIndex >= totalBeats * 0.85)
+        // Ending guidance on the final ~15% of units
+        if (totalUnits > 0 && unitIndex >= totalUnits * 0.85)
         {
             var epilogue = blueprint.NoEpilogue
                 ? " No epilogue, no retrospective narration of what it all meant — end on the last event itself."
@@ -283,7 +344,7 @@ public class StructuralBlueprintService
         }
 
         // Moral polarity is story-wide; remind mid-story and at the end.
-        if (blueprint.MoralPolarity == "ambivalent" && (beatIndex >= totalBeats * 0.5))
+        if (blueprint.MoralPolarity == "ambivalent" && (unitIndex >= totalUnits * 0.5))
             lines.Add("MORAL POLARITY: ambivalent — the protagonist's choices carry genuine cost on the path not taken. Do not resolve who was right.");
 
         return lines.Count > 1 ? string.Join("\n", lines) : "";
@@ -297,8 +358,9 @@ public class StructuralBlueprintService
 
     // ── Prompts ───────────────────────────────────────────────────────────
 
-    private static string BuildSystemPrompt(bool retrofit) => $$"""
+    private static string BuildSystemPrompt(bool retrofit, string granularity) => $$"""
         You are a story architect making STRUCTURAL decisions {{(retrofit ? "by reading a finished story and inferring the structure it actually has" : "BEFORE any prose is written")}}.
+        {{(granularity == "chapter" ? "GRANULARITY: this is a book-scale work — every per-unit decision below (beatIndexes, cutBeatIndex, escalationCurve, events, anchor beatIndex) indexes CHAPTERS (0-based, in reading order), not individual beats." : "")}}
 
         These decisions counter measurable AI-fiction tells (StoryScope, UMD/Google DeepMind 2025 —
         61,608 stories; narrative-structure classifiers detect AI fiction at 93.2% without reading
@@ -358,15 +420,16 @@ public class StructuralBlueprintService
         }
         """;
 
-    private async Task<string> BuildUserPromptAsync(
-        StreetSamuraiDbContext db, Node node, List<NodeWorkbenchService.OrderedBeat> beats,
-        IReadOnlyList<EmbeddingHit> anchorCandidates, bool retrofit, CancellationToken ct)
+    private static string BuildUserPrompt(
+        Node node, List<StructuralUnit> units, string granularity,
+        IReadOnlyList<EmbeddingHit> anchorCandidates, bool retrofit)
     {
+        var unitLabel = granularity == "chapter" ? "CHAPTER" : "Beat";
         var parts = new List<string>
         {
             $"STORY: {node.Title}",
             node.Seed is { Length: > 0 } ? $"SEED: {node.Seed}" : "",
-            $"BEAT COUNT: {beats.Count} (0-based indexes 0..{beats.Count - 1})",
+            $"{unitLabel.ToUpperInvariant()} COUNT: {units.Count} (0-based indexes 0..{units.Count - 1})",
             "",
         };
 
@@ -377,21 +440,28 @@ public class StructuralBlueprintService
             parts.Add("");
         }
 
+        // Per-unit text budget: keep the whole prompt bounded regardless of scale.
+        var perUnitClamp = granularity == "chapter"
+            ? Math.Clamp(60000 / Math.Max(units.Count, 1), 800, 2400)
+            : (retrofit ? 1200 : 400);
+
         if (retrofit)
         {
-            parts.Add("WRITTEN BEATS (infer the structure the story actually has; where a decision was never made, propose the one that best fits what's on the page):");
-            foreach (var (b, i) in beats.Select((b, i) => (b, i)))
+            parts.Add($"WRITTEN {unitLabel.ToUpperInvariant()}S (infer the structure the story actually has; where a decision was never made, propose the one that best fits what's on the page):");
+            foreach (var u in units)
             {
-                var text = b.Beat.Text ?? b.Beat.Description ?? "";
-                parts.Add($"--- Beat {i}{(b.Beat.Title is { Length: > 0 } t ? $" ({t})" : "")} ---");
-                parts.Add(ClampText(text, 1200));
+                var text = granularity == "chapter"
+                    ? HeadAndTail(string.Join("\n\n", u.Beats.Select(b => b.Beat.Text ?? "")), perUnitClamp)
+                    : ClampText(u.Beats[0].Beat.Text ?? u.Beats[0].Beat.Description ?? "", perUnitClamp);
+                parts.Add($"--- {unitLabel} {u.Index}{(TitleOf(u) is { Length: > 0 } t ? $" ({t})" : "")} ---");
+                parts.Add(text);
             }
         }
         else
         {
-            parts.Add("BEAT SPINE (planned synopses — prose does not exist yet):");
-            foreach (var (b, i) in beats.Select((b, i) => (b, i)))
-                parts.Add($"{i}. {(b.Beat.Title is { Length: > 0 } t ? $"[{t}] " : "")}{ClampText(b.Beat.Description ?? b.Beat.Text ?? "(no synopsis)", 400)}");
+            parts.Add($"{unitLabel.ToUpperInvariant()} SPINE (planned synopses — prose does not exist yet):");
+            foreach (var u in units)
+                parts.Add($"{u.Index}. {(TitleOf(u) is { Length: > 0 } t ? $"[{t}] " : "")}{ClampText(u.Beats[0].Beat.Description ?? u.Beats[0].Beat.Text ?? "(no synopsis)", perUnitClamp)}");
         }
         parts.Add("");
 
@@ -413,6 +483,18 @@ public class StructuralBlueprintService
 
     private static string ClampText(string text, int max) =>
         text.Length <= max ? text : text[..max] + " …[clamped]";
+
+    /// <summary>Chapter clamp keeps head AND tail so chapter endings register.</summary>
+    private static string HeadAndTail(string text, int max)
+    {
+        if (text.Length <= max) return text;
+        var head = (int)(max * 0.65);
+        var tailLen = max - head;
+        return text[..head] + "\n…[chapter middle elided]…\n" + text[^tailLen..];
+    }
+
+    private static string? TitleOf(StructuralUnit u) =>
+        u.Title ?? u.Beats[0].Beat.Title;
 
     // ── Response parsing ──────────────────────────────────────────────────
 
