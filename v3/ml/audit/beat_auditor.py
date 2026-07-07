@@ -32,8 +32,7 @@ SELECT
 FROM StrandBeats sb
 JOIN Beats b   ON b.Id  = sb.BeatId
 JOIN Strands s ON s.Id  = sb.StrandId
-WHERE s.IsWIP    = 0
-  AND sb.IsEnabled = 1
+WHERE sb.IsEnabled = 1
   AND b.Text IS NOT NULL
   AND LEN(TRIM(b.Text)) > 100
 """
@@ -42,8 +41,7 @@ STRAND_GRIPES_SQL = """
 SELECT sr.Improvements AS GripeText
 FROM StrandReviews sr
 JOIN Strands s ON s.Id = sr.StrandId
-WHERE s.IsWIP  = 0
-  AND s.Slug   = ?
+WHERE s.Slug   = ?
   AND sr.Improvements IS NOT NULL
   AND LEN(TRIM(sr.Improvements)) > 10
 """
@@ -54,7 +52,7 @@ def run_gripe_audit(conn, miner: GripeMiner, slug: str | None) -> list[dict]:
     if slug:
         slugs_to_audit = [slug]
     else:
-        cursor.execute("SELECT DISTINCT Slug FROM Strands WHERE IsWIP = 0")
+        cursor.execute("SELECT DISTINCT Slug FROM Strands")
         slugs_to_audit = [r[0] for r in cursor.fetchall()]
 
     all_findings = []

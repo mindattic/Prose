@@ -110,14 +110,9 @@ public class NodeWorkbenchService
         foreach (var d in direct)
             acc.Add(new OrderedBeat(d.Beat, nodeId, d.SortKey, d.IsEnabled));
 
-        // Then child nodes in SortKey order (recursive). Draft nodes — and
-        // therefore their whole subtree — are skipped: a Drafts bucket, cut
-        // scene, archived chapter, or unincorporated draft hung under a work
-        // must never pollute that work's review, score, publish, or narration.
-        // (Targeting a draft node DIRECTLY via GetOrderedBeatsAsync still
-        // returns its beats — the exclusion is for what a parent pulls in.)
+        // Then child nodes in SortKey order (recursive).
         var children = await db.Nodes
-            .Where(s => s.ParentNodeId == nodeId && !s.IsWIP)
+            .Where(s => s.ParentNodeId == nodeId)
             .OrderBy(s => s.SortKey)
             .Select(s => s.Id)
             .ToListAsync(ct);

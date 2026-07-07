@@ -854,12 +854,11 @@ Clear an explicit gap-after-beat override. The audio engine falls back to the au
 
 ### `clone_story`
 
-Clone a node into a fully independent copy: new Node row + new Beat rows, same prose. Audio, scores, and review history are NOT copied — clone starts fresh. Supports nodeCode and isDraft so the clone can be excluded from score/publish flows until promoted. Use this instead of DuplicateStory when you need nodeCode, isDraft, or per-experiment isolation. Returns new id, slug, beat count.
+Clone a node into a fully independent copy: new Node row + new Beat rows, same prose. Audio, scores, and review history are NOT copied — clone starts fresh. Supports nodeCode for per-experiment isolation. Use this instead of DuplicateStory when you need nodeCode or per-experiment isolation. Returns new id, slug, beat count.
 
 - `idOrSlug` (string, required) — Source node Guid id or slug.
 - `title` (string, optional) — Title for the clone. Defaults to 'Source Title (Clone)'.
 - `nodeCode` (string, optional) — Optional short reference code for the clone (e.g. 'SM1'). Rejected if already in use.
-- `isDraft` (bool, optional) — Mark the clone as a draft (excluded from review/score/publish flows). Default true.
 - `status` (string, optional) — Status value to stamp on the clone: 'ready', 'draft', etc. Default 'ready'.
 
 ### `create_chapter`

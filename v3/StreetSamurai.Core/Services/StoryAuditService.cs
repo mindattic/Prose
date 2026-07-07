@@ -167,7 +167,7 @@ public class StoryAuditService(
         // SortKey), not the book node's own beats — those may hold a legacy outline
         // or condensed draft that no longer matches the published manuscript.
         var childChapters = await db.Nodes.AsNoTracking()
-            .Where(s => s.ParentNodeId == node.Id && s is ChapterNode && !s.IsWIP)
+            .Where(s => s.ParentNodeId == node.Id && s is ChapterNode)
             .Include(s => s.BeatNodes).ThenInclude(sb => sb.Beat)
             .OrderBy(s => s.SortKey)
             .ToListAsync(ct);

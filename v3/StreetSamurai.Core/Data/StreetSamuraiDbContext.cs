@@ -476,9 +476,6 @@ public class StreetSamuraiDbContext : DbContext
             e.HasIndex(x => new { x.UniverseId, x.Slug }).IsUnique().HasDatabaseName("UX_Nodes_Universe_Slug");
             e.HasIndex(x => x.Kind);
             e.HasIndex(x => new { x.ParentNodeId, x.SortKey });
-            // WIP subtrees are skipped by the tools; index the flag so the
-            // tree-walk and enumeration filters stay cheap.
-            e.HasIndex(x => x.IsWIP);
             e.HasIndex(x => x.UniverseId);
             e.Property(x => x.Author).HasMaxLength(200);
             e.HasOne(x => x.ParentNode).WithMany(x => x.Children)

@@ -21,8 +21,7 @@ SELECT
     sr.ClusterLabel
 FROM StrandReviews sr
 JOIN Strands s ON s.Id = sr.StrandId
-WHERE s.IsWIP = 0
-  AND sr.Improvements IS NOT NULL
+WHERE sr.Improvements IS NOT NULL
   AND LEN(TRIM(sr.Improvements)) > 10
 """
 

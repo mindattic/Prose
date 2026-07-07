@@ -419,7 +419,7 @@ public class NodeWorkbenchServiceTests
             drafts = new StoryNode
             {
                 Id = Guid.CreateVersion7(), Slug = "drafts-" + Guid.NewGuid().ToString("N")[..6],
-                Title = "Drafts", Kind = "story", Status = "draft", IsWIP = true,
+                Title = "Drafts", Kind = "story", Status = "draft",
                 ParentNodeId = root.Id, SortKey = 200,
             };
             draftGrandchild = new ChapterNode

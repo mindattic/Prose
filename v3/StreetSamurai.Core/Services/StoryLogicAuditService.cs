@@ -35,7 +35,7 @@ public class StoryLogicAuditService(
 
         // Respect the same book/chapter hierarchy StoryAuditService uses.
         var childChapters = await db.Nodes.AsNoTracking()
-            .Where(s => s.ParentNodeId == nodeId && s is ChapterNode && !s.IsWIP)
+            .Where(s => s.ParentNodeId == nodeId && s is ChapterNode)
             .Include(s => s.BeatNodes).ThenInclude(sb => sb.Beat)
             .OrderBy(s => s.SortKey)
             .ToListAsync(ct);

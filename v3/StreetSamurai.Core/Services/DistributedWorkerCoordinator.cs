@@ -100,7 +100,7 @@ public class DistributedWorkerCoordinator
             .Select(q => q.TargetId)
             .ToHashSetAsync(ct);
 
-        var query = db.Nodes.Where(s => !s.IsWIP);
+        IQueryable<Node> query = db.Nodes;
         if (nodeIds?.Count > 0) query = query.Where(s => nodeIds.Contains(s.Id));
 
         var nodes = await query
@@ -165,7 +165,6 @@ public class DistributedWorkerCoordinator
         // Query via the BeatNode junction — beats are m:m with nodes.
         var query = db.BeatNodes
             .Where(sb => sb.IsEnabled
-                      && !(sb.Node!.IsWIP)
                       && (sb.Beat!.Text == null || sb.Beat.Text == ""));
 
         if (nodeIds?.Count > 0)

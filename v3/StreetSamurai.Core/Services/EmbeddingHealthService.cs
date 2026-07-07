@@ -41,10 +41,10 @@ public class EmbeddingHealthService
 
     private const string SubtreeCte = """
         SubtreeNodes AS (
-            SELECT Id FROM dbo.Nodes WHERE Id = @p_root AND IsWIP = 0
+            SELECT Id FROM dbo.Nodes WHERE Id = @p_root
             UNION ALL
             SELECT n.Id FROM dbo.Nodes n
-            JOIN SubtreeNodes s ON n.ParentNodeId = s.Id WHERE n.IsWIP = 0
+            JOIN SubtreeNodes s ON n.ParentNodeId = s.Id
         ),
         StoryBeats AS (
             SELECT pe.ScopeId, pe.Vector

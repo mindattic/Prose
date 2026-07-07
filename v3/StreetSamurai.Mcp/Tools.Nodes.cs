@@ -236,12 +236,11 @@ public class NodeTools
         return JsonSerializer.Serialize(new { ok = true, id, slug, title = newTitle, url = $"/node/{slug}", source_id = source.Id }, CanonTools.JsonOpts);
     }
 
-    [McpServerTool, Description("Clone a node into a fully independent copy: new Node row + new Beat rows, same prose. Audio, scores, and review history are NOT copied — clone starts fresh. Supports nodeCode and isDraft so the clone can be excluded from score/publish flows until promoted. Use this instead of DuplicateStory when you need nodeCode, isDraft, or per-experiment isolation. Returns new id, slug, beat count.")]
+    [McpServerTool, Description("Clone a node into a fully independent copy: new Node row + new Beat rows, same prose. Audio, scores, and review history are NOT copied — clone starts fresh. Supports nodeCode for per-experiment isolation. Use this instead of DuplicateStory when you need nodeCode or per-experiment isolation. Returns new id, slug, beat count.")]
     public async Task<string> CloneStory(
         [Description("Source node Guid id or slug.")] string idOrSlug,
         [Description("Title for the clone. Defaults to 'Source Title (Clone)'.")] string title = "",
         [Description("Optional short reference code for the clone (e.g. 'SM1'). Rejected if already in use.")] string nodeCode = "",
-        [Description("Mark the clone as a draft (excluded from review/score/publish flows). Default true.")] bool isDraft = true,
         [Description("Status value to stamp on the clone: 'ready', 'draft', etc. Default 'ready'.")] string status = "ready")
     {
         var source = await ResolveNodeAsync(idOrSlug);
@@ -292,7 +291,6 @@ public class NodeTools
         clone.VoiceStyle      = source.VoiceStyle;
         clone.VoiceSeed       = source.VoiceSeed;
         clone.TtsEngine       = source.TtsEngine;
-        clone.IsWIP           = isDraft;
         clone.SortKey         = maxSort + 100.0;
         clone.CreatedAt       = now;
         clone.UpdatedAt       = now;
@@ -341,7 +339,6 @@ public class NodeTools
             slug       = newSlug,
             title      = newTitle,
             code,
-            isDraft,
             beat_count = sourceBeats.Count,
             source_id  = source.Id,
             url        = $"/node/{newSlug}",

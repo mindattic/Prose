@@ -68,7 +68,6 @@ public static class SanityScanCli
         bool jsonMode)
     {
         var nodes = await db.Nodes.AsNoTracking()
-            .Where(s => !s.IsWIP)
             .ToListAsync();
 
         // Filter to nodes with >2 beats (by joining BeatNodes)

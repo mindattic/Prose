@@ -19,8 +19,7 @@ SELECT
 FROM StrandBeats sb
 JOIN Beats b   ON b.Id  = sb.BeatId
 JOIN Strands s ON s.Id  = sb.StrandId
-WHERE s.IsWIP    = 0
-  AND sb.IsEnabled = 1
+WHERE sb.IsEnabled = 1
   AND b.Text IS NOT NULL
   AND LEN(TRIM(b.Text)) > 100
 """

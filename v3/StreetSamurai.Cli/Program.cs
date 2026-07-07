@@ -1,4 +1,5 @@
-﻿using Microsoft.Extensions.DependencyInjection;
+﻿using Microsoft.EntityFrameworkCore;
+using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
 using Microsoft.Extensions.Logging;
 using MindAttic.Authentication;
@@ -304,6 +305,17 @@ if (args.Contains("--validate-nouns"))
 {
     var sp = BuildCoreServices(args);
     Environment.ExitCode = await ValidateNounsCli.RunAsync(args, sp);
+    return;
+}
+
+// ss --repair-slugs [--apply] [--family entities|nodes|books|series|episodes] [--json]
+// Regenerate every slug from its Name/Title metadata and update slug-carrying
+// references (beat audio paths, publication paths, on-disk dirs, alt_slug).
+// DRY-RUN by default; --apply writes. Slugs are loose keys — guid is the key.
+if (args.Contains("--repair-slugs"))
+{
+    var sp = BuildCoreServices(args);
+    Environment.ExitCode = await SlugRepairCli.RunAsync(args, sp);
     return;
 }
 
@@ -1425,6 +1437,49 @@ if (args.Contains("--beat"))
     var sp = BuildCoreServices(args);
     var beatArgs = args.SkipWhile(a => a != "--beat").Skip(1).ToArray();
     Environment.ExitCode = await BeatCli.RunAsync(beatArgs, sp);
+    return;
+}
+
+// ss --delete-node --id <guid>   Hard-delete a node and its BeatNode memberships.
+// Beats that are exclusively owned by this node are also deleted.
+// HARD RULE: never use raw sqlcmd DELETE on Nodes — use this command instead.
+if (args.Contains("--delete-node"))
+{
+    var idStr = args.SkipWhile(a => a != "--id").Skip(1).FirstOrDefault();
+    if (!Guid.TryParse(idStr, out var deleteNodeId))
+    {
+        Console.Error.WriteLine("Usage: ss --delete-node --id <guid>");
+        Environment.ExitCode = 1;
+        return;
+    }
+    var sp = BuildCoreServices(args);
+    await using var scope = sp.CreateAsyncScope();
+    var dbFactory = scope.ServiceProvider.GetRequiredService<IDbContextFactory<StreetSamurai.Core.Data.StreetSamuraiDbContext>>();
+    await using var db = await dbFactory.CreateDbContextAsync();
+    var target = await db.Nodes.FindAsync(deleteNodeId);
+    if (target == null) { Console.Error.WriteLine($"Node {deleteNodeId} not found."); Environment.ExitCode = 1; return; }
+
+    // Beats exclusively owned by this node should also be deleted.
+    var beatIds = await db.BeatNodes
+        .Where(bn => bn.NodeId == deleteNodeId)
+        .Select(bn => bn.BeatId)
+        .ToListAsync();
+    var exclusiveBeats = await db.BeatNodes
+        .Where(bn => beatIds.Contains(bn.BeatId) && bn.NodeId != deleteNodeId)
+        .Select(bn => bn.BeatId).Distinct().ToListAsync();
+    var toDeleteBeats = beatIds.Except(exclusiveBeats).ToList();
+
+    var memberships = await db.BeatNodes.Where(bn => bn.NodeId == deleteNodeId).ToListAsync();
+    db.BeatNodes.RemoveRange(memberships);
+    if (toDeleteBeats.Count > 0)
+    {
+        var beats = await db.Beats.Where(b => toDeleteBeats.Contains(b.Id)).ToListAsync();
+        db.Beats.RemoveRange(beats);
+        Console.WriteLine($"  Deleting {beats.Count} exclusive beat(s).");
+    }
+    db.Nodes.Remove(target);
+    await db.SaveChangesAsync();
+    Console.WriteLine($"[delete-node] Deleted: {target.Title} ({deleteNodeId})");
     return;
 }
 

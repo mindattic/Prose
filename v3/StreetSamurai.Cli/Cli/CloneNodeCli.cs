@@ -9,8 +9,6 @@ namespace StreetSamurai.Cli;
 /// — deep-clone a node: creates a new Node row plus independent copies of every
 /// enabled beat (new IDs, new Numbers). Audio, scores, and review history are NOT
 /// cloned — the clone starts fresh so review scores are independent.
-/// IsWIP is set by default so the clone is excluded from global review/score/publish
-/// flows until the author promotes it.
 /// </summary>
 public static class CloneNodeCli
 {
@@ -117,7 +115,6 @@ public static class CloneNodeCli
         newNode.VoiceStyle      = source.VoiceStyle;
         newNode.VoiceSeed       = source.VoiceSeed;
         newNode.TtsEngine       = source.TtsEngine;
-        newNode.IsWIP           = isDraft;
         newNode.SortKey         = maxSort + 100.0;
         newNode.CreatedAt       = now;
         newNode.UpdatedAt       = now;
@@ -170,7 +167,6 @@ public static class CloneNodeCli
         Console.WriteLine($"[clone-story] Created '{newTitle}' — {sourceBeats.Count} beat(s) cloned");
         Console.WriteLine($"[clone-story] id:   {newId}");
         Console.WriteLine($"[clone-story] slug: {newSlug}");
-        if (isDraft) Console.WriteLine("[clone-story] IsWIP=true — excluded from review/score/publish flows");
         return 0;
     }
 

@@ -147,7 +147,7 @@
     .node-toc-item:last-child { border-bottom: none; }
     .node-toc-item:hover { color: #0dcaf0; }
     .node-toc-num { color: #495057; font-size: 0.8rem; min-width: 1.5rem; }
-    .chapter-heading { font-size: 1rem; font-weight: 600; color: #8b949e; text-transform: uppercase; letter-spacing: 0.08em; padding: 0.5rem 0 0.4rem; border-top: 1px solid #2a2a2a; margin-top: 1.5rem; margin-bottom: 0.75rem; }
+    .chapter-heading { font-size: 1rem; font-weight: 600; color: #8b949e; text-transform: uppercase; letter-spacing: 0.08em; padding: 0.5rem 0 0.4rem; }
     .scn-kind { font-size: 0.6rem; flex-shrink: 0; }
     .scn-title { font-size: 0.92rem; font-weight: 500; flex-grow: 1; }
     .scn-status { font-size: 0.6rem; flex-shrink: 0; }
@@ -252,7 +252,7 @@
        overlay is gone. */
     /* Gutter insert: faintly visible at rest so the affordance is
        discoverable, full strength when the pointer enters the gutter. */
-    .insert-bar { display: flex; align-items: center; gap: 0.5rem; opacity: 0.22; transition: opacity 0.15s ease; padding: 0.25rem 0; margin: 0.75rem 0; }
+    .insert-bar { display: flex; align-items: center; opacity: 0.22; transition: opacity 0.15s ease; }
     .insert-bar:hover, .insert-bar:focus-within { opacity: 1; }
     .insert-bar-line { flex-grow: 1; height: 1px; background: #2a2a2a; }
     .beat-meta-chips { display: flex; flex-wrap: wrap; gap: 0.25rem; margin-top: 0.35rem; font-size: 0.7rem; }
@@ -299,30 +299,21 @@ else
         <div class="node-head">
             <div class="d-flex align-items-start gap-3">
                 <div class="flex-grow-1">
-                    @if (node.Score.HasValue)
-                    {
-                        <div class="mb-1">
-                            <span class="badge @ScorePctColor(node.Score.Value) node-meta-chip">@node.Score.Value.ToString("0")%</span>
-                        </div>
-                    }
                     <input class="node-title w-100" placeholder="Untitled node"
                            @bind="node.Title" @bind:event="oninput" @onblur="SaveNodeHeaderAsync" />
                     <textarea class="node-description mt-1" rows="5" placeholder="Description (optional)"
                               style="width:100%; resize:none; overflow-y:auto;"
                               @bind="node.Description" @bind:event="oninput" @onblur="SaveNodeHeaderAsync"></textarea>
-
+                </div>
+                <div class="flex-shrink-0">
+                    <button class="btn btn-sm btn-outline-success" @onclick="ExportAllAsync"
+                            disabled="@(publishing || exportBusy)">
+                        @if (publishing || exportBusy) { <span class="spinner-border spinner-border-sm me-1"></span> }
+                        else { <i class="bi bi-download me-1"></i> }
+                        Export
+                    </button>
                 </div>
             </div>
-
-            <div class="d-flex gap-2 flex-wrap mt-2 align-items-center">
-                <button class="btn btn-sm btn-outline-success" @onclick="ExportAllAsync"
-                        disabled="@(publishing || exportBusy)">
-                    @if (publishing || exportBusy) { <span class="spinner-border spinner-border-sm me-1"></span> }
-                    else { <i class="bi bi-download me-1"></i> }
-                    Export
-                </button>
-            </div>
-
         </div>
 
         @* Table of Contents — anchor links to each chapter section below. *@
@@ -403,23 +394,25 @@ else
                         <div class="beat-row-1 d-flex align-items-center gap-2 mb-2">
                             <span class="beat-id-chip" data-cy="beat-id" title="@($"Position {rowPosition} in node — Beat guid {bid}")">#@rowPosition.ToString("D3")</span>
                             <div class="beat-actions d-flex align-items-center gap-1 ms-auto">
-                                <button class="btn btn-sm btn-success"
-                                        @onclick="() => SaveBeatEditAsync(bid)"
-                                        @onclick:stopPropagation
-                                        disabled="@(savingBeatId == bid || !isDirty)"
-                                        title="Save (⌘/Ctrl+Enter)"
-                                        data-cy="beat-save">
-                                    @if (savingBeatId == bid) { <span class="spinner-border spinner-border-sm"></span> }
-                                    else { <i class="bi bi-check-lg"></i> }
-                                </button>
-                                <button class="btn btn-sm btn-outline-secondary"
-                                        @onclick="() => RevertDraft(b)"
-                                        @onclick:stopPropagation
-                                        disabled="@(!isDirty)"
-                                        title="Revert unsaved changes (Esc)"
-                                        data-cy="beat-cancel">
-                                    <i class="bi bi-x-lg"></i>
-                                </button>
+                                @if (isDirty)
+                                {
+                                    <button class="btn btn-sm btn-success"
+                                            @onclick="() => SaveBeatEditAsync(bid)"
+                                            @onclick:stopPropagation
+                                            disabled="@(savingBeatId == bid)"
+                                            title="Save (⌘/Ctrl+Enter)"
+                                            data-cy="beat-save">
+                                        @if (savingBeatId == bid) { <span class="spinner-border spinner-border-sm"></span> }
+                                        else { <i class="bi bi-check-lg"></i> }
+                                    </button>
+                                    <button class="btn btn-sm btn-outline-secondary"
+                                            @onclick="() => RevertDraft(b)"
+                                            @onclick:stopPropagation
+                                            title="Revert unsaved changes (Esc)"
+                                            data-cy="beat-cancel">
+                                        <i class="bi bi-x-lg"></i>
+                                    </button>
+                                }
                                 <button class="btn btn-sm btn-outline-danger"
                                         title="Delete this beat"
                                         @onclick="async () => { RequestDeleteAsync(bid); await ConfirmDeleteAsync(); }"
@@ -431,31 +424,15 @@ else
                             </div>
                         </div>
 
-                        @* ── Row 2: the beat body.
-                           When the beat has saved text and no pending draft (not dirty),
-                           render a read-only prose view via BeatReadView (XrefText with NER).
-                           Clicking the read view or starting a fresh beat opens the textarea.
-                           @bind:get/@bind:set route through the per-beat draft dictionary so
-                           each beat is independently editable; Save commits, Revert restores.
-                           No rows attribute — JS autoSizeTextarea sizes height to content. ── *@
+                        @* ── Row 2: beat body — always textarea, always editable. ── *@
                         <div class="beat-row-2">
-                            @if (IsDirty(b) || string.IsNullOrEmpty(b.Text) || activeBeatEditId == bid)
-                            {
-                                <textarea class="beat-textarea" id="@($"beat-{bid:N}-edit")"
-                                          placeholder="(empty beat — write here)"
-                                          @bind:get="DraftFor(b)"
-                                          @bind:set="@(v => OnDraftSet(bid, v))"
-                                          @bind:event="oninput"
-                                          @onkeyup="@(() => AutoSizeTextareaAsync(bid))"
-                                          @onkeydown="@(e => OnEditorKeydown(e, b))"
-                                          @onblur="@(() => { if (!IsDirty(b)) activeBeatEditId = Guid.Empty; })"></textarea>
-                            }
-                            else
-                            {
-                                <div class="beat-read-wrapper" @onclick="@(() => StartReadViewEdit(bid))">
-                                    <BeatReadView Text="@(b.Text ?? "")" />
-                                </div>
-                            }
+                            <textarea class="beat-textarea" id="@($"beat-{bid:N}-edit")"
+                                      placeholder="(empty beat — write here)"
+                                      @bind:get="DraftFor(b)"
+                                      @bind:set="@(v => OnDraftSet(bid, v))"
+                                      @bind:event="oninput"
+                                      @onkeyup="@(() => AutoSizeTextareaAsync(bid))"
+                                      @onkeydown="@(e => OnEditorKeydown(e, b))"></textarea>
                         </div>
 
                     </div>

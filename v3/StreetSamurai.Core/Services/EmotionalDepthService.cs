@@ -128,7 +128,7 @@ public class EmotionalDepthService
         // For book nodes, examine the LIVE chapter prose (child chapters), not the
         // book node's own beats — those may hold a legacy outline/condensed draft.
         var hasChildren = await db.Nodes.AsNoTracking()
-            .AnyAsync(s => s.ParentNodeId == nodeId && s is ChapterNode && !s.IsWIP, ct);
+            .AnyAsync(s => s.ParentNodeId == nodeId && s is ChapterNode, ct);
 
         List<string> beats;
         List<int> beatNums;
@@ -140,7 +140,7 @@ public class EmotionalDepthService
                 from s in db.Nodes.AsNoTracking()
                 join sb in db.BeatNodes.AsNoTracking() on s.Id equals sb.NodeId
                 join b in db.Beats.AsNoTracking() on sb.BeatId equals b.Id
-                where s.ParentNodeId == nodeId && s is ChapterNode && !s.IsWIP && sb.IsEnabled
+                where s.ParentNodeId == nodeId && s is ChapterNode && sb.IsEnabled
                 orderby s.SortKey, sb.SortKey
                 select b.Text
             ).ToListAsync(ct);

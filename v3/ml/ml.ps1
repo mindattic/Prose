@@ -37,7 +37,7 @@ function Invoke-ML {
 
 function Get-Strands {
     $rows = sqlcmd -S "(localdb)\MSSQLLocalDB" -d StreetSamurai `
-        -Q "SET NOCOUNT ON; SELECT Slug FROM Strands WHERE IsWIP = 0 ORDER BY Slug" `
+        -Q "SET NOCOUNT ON; SELECT Slug FROM Strands ORDER BY Slug" `
         -h -1 2>$null
     return @($rows |
         Where-Object { $_ -and $_.Trim() -ne "" } |

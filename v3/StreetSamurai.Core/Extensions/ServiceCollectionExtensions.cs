@@ -404,6 +404,12 @@ public static class ServiceCollectionExtensions
         services.AddSingleton<WorldConsistencyService>();
         services.AddSingleton<DataConsistencyService>();
         services.AddSingleton<DataRepairService>();
+
+        // Slug repair — regenerate every slug from its Name/Title metadata and
+        // update all slug-carrying references (beat audio paths, publication
+        // paths, on-disk dirs, entity alt_slug). Slugs are loose keys; the
+        // UUIDv7 id is the real key. CLI: ss --repair-slugs [--apply].
+        services.AddSingleton<SlugRepairService>();
         // JsonArchivalService and JsonPruneService retired 2026-05-08 —
         // engine/data/*.json no longer exists, so file-vs-DB verification
         // and pruning have no work to do. Files deleted, CLI verbs removed.

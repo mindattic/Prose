@@ -70,10 +70,7 @@
                     else
                     {
                         <div class="story-header">
-                            <a href="@($"/node/{s.Slug}")" class="story-title-link"
-                               @onclick:preventDefault @onclick="() => OpenNode(s.Slug, s.NodeCode)">
-                                @s.Title
-                            </a>
+                            <span class="story-title-link">@s.Title</span>
                             @if (!string.IsNullOrWhiteSpace(s.NodeCode))
                             {
                                 <span class="story-code">@s.NodeCode</span>
@@ -94,6 +91,11 @@
                         {
                             <div class="story-desc">@s.Description</div>
                         }
+                        <div class="story-footer">
+                            <button class="story-open-btn" @onclick="() => OpenNode(s.Slug, s.NodeCode)">
+                                Open <i class="bi bi-arrow-right-short"></i>
+                            </button>
+                        </div>
                     }
                 </li>
             }
@@ -228,8 +230,7 @@
     /* header row — the "title bar" of each pane */
     .story-header { display: flex; align-items: center; gap: 0.55rem; padding: 0.45rem 0.9rem; background: #1b1b1b; border-bottom: 1px solid #242424; overflow: hidden; }
     .story-row:not(.story-row--editing) .story-header:only-child { border-bottom: none; }
-    .story-title-link { font-size: 0.92rem; font-weight: 600; color: #d0d7de; text-decoration: none; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; flex-shrink: 1; min-width: 4rem; }
-    .story-title-link:hover { color: #0dcaf0; }
+    .story-title-link { font-size: 0.92rem; font-weight: 600; color: #d0d7de; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; flex-shrink: 1; min-width: 4rem; }
     .story-code { font-size: 0.66rem; font-family: monospace; background: rgba(13,202,240,0.07); color: #79d2e8; padding: 1px 5px; border-radius: 10px; white-space: nowrap; flex-shrink: 0; }
     .story-stat { font-size: 0.68rem; color: #6c757d; white-space: nowrap; flex-shrink: 0; }
     .story-stat--score { color: #8ab4f8; font-weight: 500; }
@@ -239,8 +240,12 @@
     .story-spacer { flex: 1; }
     .story-edit-btn { flex-shrink: 0; background: none; border: none; color: #444; cursor: pointer; padding: 3px 7px; border-radius: 4px; font-size: 0.75rem; line-height: 1; transition: color 0.1s, background 0.1s; }
     .story-edit-btn:hover { color: #adb5bd; background: #242424; }
-    /* body — clipped description below the header */
-    .story-desc { padding: 0.45rem 0.9rem 0.55rem; font-size: 0.77rem; color: #6c757d; line-height: 1.55; }
+    /* body — description below the header */
+    .story-desc { padding: 0.45rem 0.9rem 0.3rem; font-size: 0.77rem; color: #6c757d; line-height: 1.55; min-height: 200px; }
+    /* footer — Open button row */
+    .story-footer { display: flex; justify-content: flex-end; padding: 0.3rem 0.6rem 0.35rem; border-top: 1px solid #1e1e1e; }
+    .story-open-btn { background: none; border: none; color: #4a9eff; font-size: 0.75rem; cursor: pointer; padding: 2px 6px; border-radius: 4px; transition: color 0.1s, background 0.1s; }
+    .story-open-btn:hover { color: #fff; background: #1a3a5c; }
 </style>
 
 @code {
@@ -404,10 +409,25 @@
                 .GroupBy(s => s.ParentNodeId!.Value)
                 .ToDictionary(g => g.Key, g => g.ToList());
 
-            // Also seed beat counts for children so the expanded rows show accurate counts.
+            // Seed beat counts for children using the same recursive DFS as top-level nodes,
+            // so story nodes that own chapter children (e.g. BCODA, JOY) report the full total.
             foreach (var kid in childList)
-                if (!beatCounts.ContainsKey(kid.Id))
-                    beatCounts[kid.Id] = perBeatNodeCount.GetValueOrDefault(kid.Id, 0);
+            {
+                if (beatCounts.ContainsKey(kid.Id)) continue;
+                int total = 0;
+                var stack = new Stack<Guid>();
+                stack.Push(kid.Id);
+                var visited = new HashSet<Guid>();
+                while (stack.Count > 0)
+                {
+                    var id = stack.Pop();
+                    if (!visited.Add(id)) continue;
+                    total += perBeatNodeCount.GetValueOrDefault(id, 0);
+                    if (byParent.TryGetValue(id, out var grandkids))
+                        foreach (var gk in grandkids) stack.Push(gk);
+                }
+                beatCounts[kid.Id] = total;
+            }
         }
         else
         {

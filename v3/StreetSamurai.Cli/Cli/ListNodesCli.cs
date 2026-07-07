@@ -14,7 +14,6 @@ namespace StreetSamurai.Cli;
 ///   --search &lt;text&gt;    Filter by case-insensitive substring of title or slug.
 ///   --limit &lt;n&gt;        Show at most N rows.
 ///   --scores            Sort by score descending instead of updated-at; include page estimates.
-///   --include-drafts    Include nodes flagged IsWIP (the Drafts bucket / cut / archived). Hidden by default.
 ///   --json              Emit a JSON array instead of the table.
 ///
 /// Exit codes: 0 — listed (even when empty); 1 — bad args.
@@ -25,7 +24,7 @@ public static class ListNodesCli
     {
         string? status = null, kind = null, search = null;
         int? limit = null;
-        bool json = false, scores = false, includeDrafts = false;
+        bool json = false, scores = false;
         for (int i = 0; i < args.Length; i++)
         {
             switch (args[i])
@@ -39,7 +38,6 @@ public static class ListNodesCli
                     break;
                 case "--scores": scores = true; break;
                 case "--json":   json = true; break;
-                case "--include-drafts": includeDrafts = true; break;
             }
         }
 
@@ -47,10 +45,6 @@ public static class ListNodesCli
         await using var db = await dbFactory.CreateDbContextAsync();
 
         var query = db.Nodes.AsNoTracking();
-        // Draft nodes (and the Drafts bucket) are out-of-scope material; hide
-        // them unless explicitly asked for. Mirrors the tree-walk exclusion.
-        if (!includeDrafts)
-            query = query.Where(s => !s.IsWIP);
         if (!string.IsNullOrWhiteSpace(status))
             query = query.Where(s => s.Status == status);
         if (!string.IsNullOrWhiteSpace(kind))

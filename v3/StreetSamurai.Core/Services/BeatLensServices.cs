@@ -68,7 +68,7 @@ public abstract class BeatLensService
             ?? throw new InvalidOperationException($"Node {nodeId} not found.");
 
         var hasChildren = await db.Nodes.AsNoTracking()
-            .AnyAsync(s => s.ParentNodeId == nodeId && s is ChapterNode && !s.IsWIP, ct);
+            .AnyAsync(s => s.ParentNodeId == nodeId && s is ChapterNode, ct);
 
         List<(int Num, string Text)> beats;
         if (hasChildren)
@@ -77,7 +77,7 @@ public abstract class BeatLensService
                 from s in db.Nodes.AsNoTracking()
                 join sb in db.BeatNodes.AsNoTracking() on s.Id equals sb.NodeId
                 join b in db.Beats.AsNoTracking() on sb.BeatId equals b.Id
-                where s.ParentNodeId == nodeId && s is ChapterNode && !s.IsWIP && sb.IsEnabled
+                where s.ParentNodeId == nodeId && s is ChapterNode && sb.IsEnabled
                 orderby s.SortKey, sb.SortKey
                 select new { b.Text, b.Number }
             ).ToListAsync(ct);

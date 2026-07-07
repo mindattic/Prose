@@ -2321,7 +2321,7 @@ hr {
 /* ── App banner (brand + universe switch) ─────────────────────────────────── */
 .app-banner {
     display: flex; align-items: center; justify-content: space-between;
-    padding: .35rem .9rem; border-bottom: 1px solid rgba(255,255,255,.08);
+    padding: .35rem .5rem; border-bottom: 1px solid rgba(255,255,255,.08);
     background: #0c0e12;
 }
 .app-banner-brand { display: inline-flex; align-items: baseline; gap: .5rem; }

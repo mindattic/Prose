@@ -275,7 +275,7 @@ public class NightlyHealthService
     private async Task<List<StoryMeta>> ResolveStoriesAsync(string? slug, CancellationToken ct)
     {
         await using var db = await dbFactory.CreateDbContextAsync(ct);
-        var query = db.Nodes.OfType<StoryNode>().AsNoTracking().Where(n => !n.IsWIP);
+        var query = db.Nodes.OfType<StoryNode>().AsNoTracking();
         if (slug != null)
             query = query.Where(n => n.Slug == slug);
         return await query
@@ -314,7 +314,7 @@ public class NightlyHealthService
             acc.Add(new OrderedBeatMeta(d.Id, d.Number, d.Title, d.Text, d.Score));
 
         var children = await db.Nodes
-            .Where(n => n.ParentNodeId == nodeId && !n.IsWIP)
+            .Where(n => n.ParentNodeId == nodeId)
             .OrderBy(n => n.SortKey)
             .Select(n => n.Id)
             .ToListAsync(ct);

@@ -74,17 +74,6 @@ public abstract class Node
     /// <summary>When the author marked this node canon (null = never).</summary>
     public DateTime? CanonAt { get; set; }
 
-    /// <summary>Draft / out-of-scope flag. When true, this node — and every
-    /// node beneath it in the <see cref="ParentNodeId"/> tree — is IGNORED
-    /// by the tools: it is excluded from a parent's ordered beats (so it never
-    /// pollutes a review, score, publish, or narration of the work it hangs
-    /// under), and enumeration tools skip it by default. Use it for the
-    /// "Drafts" bucket, cut scenes, archived chapters, unincorporated drafts,
-    /// and bonus material that should not count toward the finished work. The
-    /// flag is inherited down the tree: marking a container WIP drafts its
-    /// whole subtree. Distinct from <see cref="Status"/> "draft" (the
-    /// generation-lifecycle default), which carries no exclusion semantics.</summary>
-    public bool IsWIP { get; set; }
 
     /// <summary>Optional parent node. A book node has chapter-node
     /// children; a saga node has book-node children; a standalone
