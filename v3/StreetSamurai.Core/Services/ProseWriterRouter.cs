@@ -118,11 +118,43 @@ public class ProseWriterRouter(
             {
                 var triggerText = (context.BeatGoal ?? "") + "\n" + (context.SceneSoFar ?? "");
                 docResult = string.IsNullOrEmpty(context.DocScopeCode)
-                    ? await docContext.PrepareForNodeAsync(context.NodeId, triggerText, tokenBudget: 2000, ct)
-                    : await docContext.PrepareContextAsync(context.NodeId, context.DocScopeCode, triggerText, tokenBudget: 2000, ct: ct);
+                    ? await docContext.PrepareForNodeAsync(context.NodeId, triggerText, tokenBudget: 3000, ct)
+                    : await docContext.PrepareContextAsync(context.NodeId, context.DocScopeCode, triggerText, tokenBudget: 3000, ct: ct);
                 docStackContext = docResult.Block;
             }
             catch { /* non-blocking — doc context is best-effort */ }
+        }
+
+        // Node-bible fallback: an empty doc stack means the story's bible never reached the prompt
+        // (typically docs/nodes/<CODE>.md not yet synced into MarkdownFiles). A story node must never
+        // generate bible-blind — fall back to Nodes.NodeBible and warn so the missing sync stays visible.
+        if (docStackContext.Length == 0 && settings?.DocContextEnabled == true
+            && context.NodeId != Guid.Empty && dbFactory != null)
+        {
+            try
+            {
+                await using var bibleDb = await dbFactory.CreateDbContextAsync(ct);
+                var nodeBible = await bibleDb.Nodes.AsNoTracking()
+                    .Where(n => n.Id == context.NodeId)
+                    .Select(n => n.NodeBible)
+                    .FirstOrDefaultAsync(ct);
+                if (!string.IsNullOrWhiteSpace(nodeBible))
+                {
+                    const int maxBibleChars = 16000;
+                    docStackContext = "## NODE BIBLE (authoritative for this story — do not contradict)\n"
+                        + (nodeBible.Length > maxBibleChars ? nodeBible[..maxBibleChars] : nodeBible);
+                    log.LogWarning(
+                        "Doc context stack EMPTY for node {NodeId} — fell back to Nodes.NodeBible ({Chars} chars). Run 'ss --sync-markdown' to restore the full doc stack.",
+                        context.NodeId, docStackContext.Length);
+                }
+                else
+                {
+                    log.LogWarning(
+                        "Doc context stack EMPTY for node {NodeId} and no NodeBible on the node — prose will generate WITHOUT canon context.",
+                        context.NodeId);
+                }
+            }
+            catch { /* non-blocking */ }
         }
 
         // Fix 4: auto-populate Location from StoryNode.DefaultLocation when caller doesn't set it.

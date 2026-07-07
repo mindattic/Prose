@@ -6,7 +6,7 @@ title: Pinhole
 layer: node-bible
 universe: glmz
 status: active
-updated: 2026-07-05
+updated: 2026-07-06
 ---
 
 # NODE BIBLE — Pinhole (PNHL) {#SS-PNHL}
@@ -20,7 +20,12 @@ updated: 2026-07-05
 > now a bare invitation and she attends the dinner in her own clothes. Slug:
 > `the-door-is-unlocked-2db1c6ca`. Revised 2026-07-04: node-bible terminology (SS-A43); aerostatic
 > altitude world context integrated (SS-A32/A42); NSB/Exo vocabulary section added (SS-A34/A38);
-> logic-sweep QA criterion added (SS-A44).
+> logic-sweep QA criterion added (SS-A44). Revised 2026-07-06: Nit's lift source changed from a
+> generic vacuum-cell/"VacCell" core to a scavenged eigenlift coherence-frame shard, matching the
+> retirement of "VacCell"/"VABC" terminology across GLMZ canon. Revised again 2026-07-07: ANGEL
+> itself fully retired GLMZ-wide (not just its boring acronym) — Eigenlift is now the *only*
+> aerostatic technology at every scale; §7's aerobloc is now unambiguously eigenlift, same as Nit
+> (see [[../universes/GLMZ]] Aerostatic Architecture, Eigenlift).
 > When prose and spine disagree, fix one in the same change. See [[../BIBLE]] for universe laws;
 > [[../books/bushido-coda-strands-bible]] for Pixel's role in BCODA.
 
@@ -86,24 +91,32 @@ echoes it — another system that treats consent as expendable — but the echo 
 Nit is her **tool**, not the MacGuffin. The Assessor does not want her drone design. He wants
 *her* — a specialist who can ghost corporate shell networks and read systems nobody else can read.
 
-She built the drone chassis over two winters in her mother's barn, fitted around a discarded
-vacuum-cell core from a demolition pile. The vacuum-cell physics is city infrastructure — common
-knowledge to any aerostatic engineer. What she solved is the application nobody tried: how to
-make a single vacuum-cell panel generate stable drone-scale lift when the industry only built them
-in floor-sized sections. The chassis, wing geometry, and control architecture are her work.
+She built the drone chassis over two winters in her mother's barn, fitted around a cracked
+coherence-frame shard scavenged from a demolition pile — a fist-sized fragment of the kind of
+civic eigenlift lattice that holds up buildings, thrown out because nobody miniaturizes that tech
+below platform scale. It's not a secret: the physics is well understood, published, taught to
+any aerostatic engineer. What nobody had bothered to do is drive a shard that small. Corpo R&D
+never tried because there's no margin in a drone-sized coherence frame — the whole industry is
+built around city-block contracts. She had a barn, two winters, and no reason to know it was
+supposed to be a dead end. Small systems hold coherence longer than large ones; she just needed
+a driver circuit small enough to exploit that, and time to find it by hand. The chassis, wing
+geometry, control architecture, and the driver board are her work.
 
 She calls it **Nit**. It always lands two centimeters to the left of center on her palm. She
 stopped trying to correct it.
 
 **Nit's physical description:**
-- Vacuum-cell core: salvaged aerostatic panel, partial vacuum maintained for positive buoyancy
+- Coherence-frame core: salvaged eigenlift shard, driven at drone scale — the frame suppresses
+  Nit's effective weight rather than generating physical lift
 - Two pairs of dragonfly wings (rear pair slightly longer than front) for thrust and maneuvering
 - Camera eye mounted beneath for downward surveillance
 - Charges off a standard power line; handshakes with her primary kit's tracer signal every four seconds
 
 **NSB riding:** She can inject into Nit and perceive through its sensor suite directly. Her Husk
 sits still while she occupies the frame. For routine use she pilots by screen. She goes riding
-when she needs full spatial awareness.
+when she needs full spatial awareness. She has never said this to anyone, but she is fairly sure
+Nit's coherence frame and the trick that lets her ride it are the same physics wearing two
+different licenses — nobody selling either technology has an interest in saying so out loud.
 
 **Nit in the story:**
 - Beat 1 (Cedar Rapids): Final orbit of Iowa from above before boarding
@@ -188,13 +201,16 @@ Nobody finds this odd — shared neuretic constructions are routine in GLMZ. The
 is never described from the inside; characters experience the train, not the pod.
 
 In Beat 2 she sees a **drifting aerobloc** through the Pulse window. An aerobloc is a city block
-built on vacuum-cell buoyancy for voluntary elevation above the GLMZ surface grid. This one is
+held up by an eigenlift coherence frame — the same technology, at any scale, that keeps the
+whole float layer aloft — for voluntary elevation above the GLMZ surface grid. This one is
 unmoored — drifting freely on thermal currents through The Blur. It is not in distress; it is
 simply going where the thermals take it.
 
-**What she recognizes:** Same vacuum buoyancy principle as Nit. Same rigid-shell physics, scaled
-by a factor she doesn't want to calculate. She built hers in a barn in Iowa. Someone built that
-one with nine thousand engineers. Both are in the air.
+**What she recognizes:** The same fight against the same force as the shard in Nit's chest — a
+coherence frame, just an unimaginable number of nodes bigger, tuned by a crew she'll never meet.
+She built hers in a barn in Iowa out of something someone else threw away. Someone built that
+one with nine thousand engineers and a line of credit she can't picture. Both are cheating the
+same weight. Both are in the air.
 
 She files it. She keeps watching. She does not expect to feel anything about it and she is wrong.
 
@@ -303,8 +319,9 @@ a scrap of paper with a name and an address. She does not look back.
 
 ### Beat 2 (200) — Through the Blur
 On the Pulse car. She passes through The Blur. Through the window: a drifting aerobloc, unmoored,
-floating on thermal currents three hundred meters up. She recognizes the physics — same as Nit,
-scaled enormously. She watches until it vanishes. She does not expect to feel anything. She is wrong.
+floating on thermal currents three hundred meters up. She recognizes the fight, if not the exact
+tech — the same trick as the shard in Nit's chest, scaled enormously. She watches until it vanishes.
+She does not expect to feel anything. She is wrong.
 
 ### Beat 3 (250) — The stranger on the Pulse
 A man across the aisle reads her the way she reads hardware: hands, case, face. He tells her

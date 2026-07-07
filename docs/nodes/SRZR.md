@@ -243,7 +243,7 @@ she has a float address and lives in the street dirt.
   at altitude.
 - **Kite Rig** = personal aerostatic descent harness; deploys on free-fall, converts terminal
   velocity to a slow drift. Not a weapon; classified as personal equipment. Gray-market version
-  built from decommissioned VABC cells — heavier, less reliable. Common among operators who need
+  built from decommissioned gray nodes — heavier, unevenly tuned, no failure warning. Common among operators who need
   to move from float-district altitude to surface without a VTOL.
 - **Air Tax** = the VTOL-Only Access Protocol that makes altitude a class filter. No VTOL, no
   legitimate float-layer access. Gray-market alternatives (Ascent Bloom, Kite Rig, Vertical Axis
@@ -252,10 +252,9 @@ she has a float address and lives in the street dirt.
 **NSB / Exo terminology (SS-A34/A38) — Sasha is NOT an Exo:**
 NSB (Neuretic Substrate Bridging) is the canonical term for remote consciousness projection into a
 physical frame. An operator who burns frames is an **Exo** (street) or a **Remote Frame Operator /
-RFO** (formal/corporate). "QCE" (Quantum Crystal Entanglement) is a retired brand name — in-world,
-an embarrassing legacy product label. Sasha operates physically with Problem Solver and Trouble
+RFO** (formal/corporate). Sasha operates physically with Problem Solver and Trouble
 Maker; she does not burn frames and is not an Exo. Any scene that involves NSB operators should use
-the current terminology.
+the current terminology (deprecated legacy terms are enforced via DeprecatedEntityNames).
 
 **Gray Zone / CorpoNation texture (SS-A29/A40):**
 - CorpoNations are **arcologies** — self-contained towers over 100 stories; citizens can be born,

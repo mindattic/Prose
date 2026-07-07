@@ -239,7 +239,7 @@ These are locked and should not be proposed as negotiable:
 - **Iowan Behemoths are machines** — not synthetic life, not alive
 - **E.L.F. always has periods** — "E.L.F." never "ELF" or "Elf"
 - **Form ≠ life** — appearance of personhood does not confer it
-- **No GLMZ police** — ArcSec only; city police dissolved 2065 (Blue Massacre)
+- **No GLMZ police** — ArcSec only; city police dissolved 2096 (Blue Massacre)
 - **Default to diaspora** — character names and heritage default to unexpected global combinations, never Anglo defaults
 - **CorpoNations use conjoined capitals** — "ArcturusSec" not "Arcturus Sec"
 - **The Reach is a lie** — in-fiction characters may believe it; the narrative never endorses it

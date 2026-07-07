@@ -300,8 +300,8 @@ This section collects world-law anchors relevant to Sparrow so the bible is self
 
 **Vertical class axis (SS-A32/SS-A42).** Altitude in GLMZ is social stratification. Sky
 People — aeroplex and aeroquarter residents — are the wealthiest and most privileged class, literally
-above the city's consequences. Elias's 111th floor is not aerostatic (no VABC lift, just a
-ferrocement stack), but the height carries the same psychological meaning for him: the street is
+above the city's consequences. Elias's 111th floor is not aerostatic (no eigenlift frame,
+just a ferrocement stack), but the height carries the same psychological meaning for him: the street is
 far below, and the distance is the point. His GAD arc is also a vertical arc — he descends,
 literally and figuratively.
 

@@ -300,7 +300,9 @@ public class StructuralBlueprintService
             {
                 var prev = curve[unitIndex - 1];
                 lines.Add($"ESCALATION: this {unitLabel}'s stakes target is {target}/10 (previous {unitLabel}: {prev}/10). " +
-                          "It must feel larger, more costly, or more irreversible than what came before — flat escalation is the strongest measurable AI-fiction signal.");
+                          "It must feel more costly or more irreversible than what came before — flat escalation is the strongest measurable AI-fiction signal. " +
+                          "Escalation is FELT COST — what a choice destroys, forecloses, or makes permanent — never physical danger the premise doesn't authorize. " +
+                          "Do not invent peril, deadlines, or threats to life to hit the number; deepen what the events already cost the people in them.");
             }
             else
             {
@@ -415,12 +417,19 @@ public class StructuralBlueprintService
            "clear" only if the premise demands it, and say why.
         5. ESCALATION CURVE — one intensity integer 1-10 per beat, in beat order. Non-decreasing
            act-over-act to the climax; never three identical values in a row. Flat escalation is
-           the single strongest AI fingerprint measured.
+           the single strongest AI fingerprint measured. Intensity measures the COST and
+           irreversibility of what happens to the people in the beat — not physical danger.
+           If the bible's premise or narrative locks exclude danger-to-life, the curve must be
+           achievable through social, moral, and material cost alone.
         6. EVENT-TYPE PALETTE — assign each beat one event type (confrontation, discovery, chase,
            confession, ceremony, negotiation, ambush, loss, betrayal, escape, vigil, exchange,
            repair, arrival, departure — or a better word of your own). No type twice in a row.
            Also assign each beat a revelationMode: suspense | curiosity | surprise | none —
-           at most half the beats may be "none".
+           at most half the beats may be "none". HARD OVERRIDE: if the bible's narrative locks
+           declare that nothing is hidden / nothing is revealed / no reveal recontextualizes,
+           then "surprise" and "suspense" are FORBIDDEN, "revelation" is not a valid event type,
+           and the half-"none" cap does not apply — use "curiosity" (effect shown, cause
+           withheld) or "none" only. The bible's locks outrank every statistical target above.
         7. FORM DEVICE (optional) — one formal/structural originality choice: document interleave,
            dual timeline, epistolary fragment, second-person interlude, inventory-as-narrative,
            or null for conventional form. Professional writers show formal originality 64% of the

@@ -1499,6 +1499,16 @@ if (args.Contains("--wound"))
     return;
 }
 
+// CLI mode: harvest entities + edges from open text (design notes, canon briefs).
+// Routed BEFORE the bare --universe command: --universe here is the scope flag, not a subcommand.
+//   ss --harvest-entities --file <path> [--universe glmz] [--dry-run]
+if (args.Contains("--harvest-entities"))
+{
+    var sp = BuildCoreServices(args);
+    Environment.ExitCode = await HarvestEntitiesCli.RunAsync(args, sp);
+    return;
+}
+
 // ss --universe <subcommand> — universe management:
 //   list      Print all universes
 //   current   Print the active universe

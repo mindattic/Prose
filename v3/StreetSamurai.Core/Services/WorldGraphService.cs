@@ -1388,6 +1388,32 @@ public class WorldGraphService : IWorldGraphService
 
     // ── Helpers ──────────────────────────────────────────────
 
+    /// <summary>Canonical slugifier for the whole engine: fold diacritics to
+    /// ASCII (Möller → moller, Cissé → cisse), lowercase, collapse everything
+    /// else to "-". Hyphen style unified 2026-07-06 (was underscore, which
+    /// dropped non-ASCII letters and mangled diaspora names — Cissé → ciss_).
+    /// Slugs are LOOSE keys: `ss --repair-slugs` regenerates them all and
+    /// preserves old ones as alt_slug; the UUIDv7 id is the real key.</summary>
     public static string Slugify(string name) =>
-        Regex.Replace(name.ToLowerInvariant().Trim(), @"[^a-z0-9]+", "_").Trim('_');
+        Regex.Replace(FoldToAscii(name ?? "").ToLowerInvariant().Trim(), @"[^a-z0-9]+", "-").Trim('-');
+
+    /// <summary>Strip combining marks via FormD decomposition (é→e, ö→o) plus
+    /// the handful of Latin letters that don't decompose.</summary>
+    public static string FoldToAscii(string text)
+    {
+        var sb = new System.Text.StringBuilder(text.Length);
+        foreach (var ch in text.Normalize(System.Text.NormalizationForm.FormD))
+        {
+            if (System.Globalization.CharUnicodeInfo.GetUnicodeCategory(ch)
+                == System.Globalization.UnicodeCategory.NonSpacingMark) continue;
+            sb.Append(ch switch
+            {
+                'ß' => "ss", 'Æ' or 'æ' => "ae", 'Ø' or 'ø' => "o", 'Œ' or 'œ' => "oe",
+                'Đ' or 'đ' or 'Ð' or 'ð' => "d", 'Ł' or 'ł' => "l", 'Þ' or 'þ' => "th",
+                'İ' or 'ı' => "i",
+                _ => ch.ToString(),
+            });
+        }
+        return sb.ToString();
+    }
 }

@@ -376,9 +376,9 @@ augmentations are direct physical enhancements — myomimetic mesh, ballistic la
 Harvest Frame and Sunder. There is no remote projection in this story. "Exo" (street) and "RFO"
 (formal) are job titles for NSB operators; they do not apply to Bear.
 
-**No QCE terminology (SS-A34).** "Quantum Crystal Entanglement" and the compound phrase
-"QCE Rider" are retired across all GLMZ prose. Neither term appears in TEST; this note
-confirms that no backfill is needed.
+**Retired-term hygiene (SS-A34).** All retired remote-operation terminology is enforced via
+DeprecatedEntityNames (NounConsistencyService); none of it appears in TEST and no backfill is
+needed.
 
 **Character doctrine compliance (SS-A41).** Bear already embodies the doctrine codified in
 SS-A41: the Cortland Engagement is his wound / circumstance — beyond his control. The monthly

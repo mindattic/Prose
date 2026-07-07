@@ -333,6 +333,17 @@ public class SceneContextAssembler(
         }
     }
 
+    // Bare single tokens AND article+noun names ("The Ledger", "The Spine") hold to
+    // case-sensitive matching: their nouns are ordinary prose words ("the ledger is
+    // open") and ignore-case containment attaches the wrong entity to the scene —
+    // the BLST contamination vector. Multi-word proper names keep ignore-case.
+    private static bool RequiresStrictCase(string name)
+    {
+        var tokens = name.Split(' ', StringSplitOptions.RemoveEmptyEntries);
+        return tokens.Length == 1
+            || (tokens.Length == 2 && tokens[0].ToLowerInvariant() is "the" or "a" or "an");
+    }
+
     private async Task<Dictionary<string, (Guid, string, string, bool)>> GetNameIndexAsync(CancellationToken ct)
     {
         if (nameIndex != null && DateTime.UtcNow - nameIndexBuiltAt < NameIndexTtl) return nameIndex;
@@ -350,7 +361,7 @@ public class SceneContextAssembler(
                 .ToListAsync(ct);
             foreach (var e in entities)
                 if (!ExcludedTypes.Contains(e.EntityType) && !e.Name.StartsWith('('))
-                    idx.TryAdd(e.Name, (e.Id, e.Name, e.EntityType, !e.Name.Contains(' ')));
+                    idx.TryAdd(e.Name, (e.Id, e.Name, e.EntityType, RequiresStrictCase(e.Name)));
 
             // character aliases ("Pixel" for a character whose canonical name differs, etc.)
             var aliases = await db.Set<CharacterAlias>().AsNoTracking()
@@ -362,7 +373,7 @@ public class SceneContextAssembler(
                 .ToDictionaryAsync(c => c.Id, c => c.Name, ct);
             foreach (var a in aliases)
                 if (characterNames.TryGetValue(a.CharacterId, out var canonical))
-                    idx.TryAdd(a.Value, (a.CharacterId, canonical, "character", !a.Value.Contains(' ')));
+                    idx.TryAdd(a.Value, (a.CharacterId, canonical, "character", RequiresStrictCase(a.Value)));
 
             nameIndex = idx;
             nameIndexBuiltAt = DateTime.UtcNow;

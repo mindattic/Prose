@@ -446,5 +446,5 @@ keep their own years as artifacts.
 
 Not directly relevant to VATD (no remote frame operators appear in this story), but canonical
 for GLMZ reference: remote consciousness operators are **Exos** (street/prose) or **Remote Frame
-Operators / RFOs** (formal/corpo). "Rider" is retired. "QCE" is retired; the mechanism is NSB
+Operators / RFOs** (formal/corpo). "Rider" is retired. The mechanism is NSB
 (Neuretic Substrate Bridging). These terms apply if any cross-story reference to frame work arises.

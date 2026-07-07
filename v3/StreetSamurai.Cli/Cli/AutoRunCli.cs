@@ -84,6 +84,15 @@ public static class AutoRunCli
             nodeTitle = node.Title ?? node.Slug ?? nodeId.ToString();
             nodeSlug  = node.Slug ?? nodeId.ToString();
             nodeKind  = node.Kind ?? "episode";
+
+            // The story-level seed is the binding premise. Without it at prompt-top the
+            // writer drifts toward genre priors (thrillers invent conspiracies, disasters
+            // invent collapses) no matter what the doc stack says further down.
+            if (!string.IsNullOrWhiteSpace(node.Seed))
+                storyBible = storyBible
+                    + "\n\n=== STORY PREMISE (BINDING — every beat must comply; contradicting it is a defect) ===\n"
+                    + node.Seed.Trim()
+                    + "\nInvent NO named characters beyond those in the premise; background residents stay unnamed.";
         }
 
         Console.WriteLine($"[auto-run] Node: \"{nodeTitle}\" ({nodeSlug})  kind={nodeKind}  effort={effort}{(forks >= 2 ? $"  forks={forks}" : "")}");

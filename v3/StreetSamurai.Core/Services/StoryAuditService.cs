@@ -73,6 +73,14 @@ public class StoryAuditService(
          "that orients without lecturing. Enough for a stranger to keep their footing; never an info-dump. " +
          "Weave it into prose the POV would naturally produce."),
 
+        ("acronym_after_term",
+         "Never an acronym before its term",
+         "Every acronym is preceded, at its first appearance in THIS story, by the full term it abbreviates, " +
+         "glossed in-voice (e.g. 'Neuretic Substrate Bridging' before 'NSB'). Any book could be a reader's " +
+         "first GLMZ book: an acronym whose expansion never appears on the page before it is a fail, no matter " +
+         "how established the term is elsewhere in the universe. After the first full-term use, the bare acronym " +
+         "is preferred — do not re-expand."),
+
         ("human_crack",
          "Give the POV character one human crack",
          "A gateway protagonist needs a single moment where the reader feels them, not just their function — " +
@@ -120,6 +128,13 @@ public class StoryAuditService(
          "Returning readers half-remember the vocabulary. A glancing re-gloss — a term used in a context that re-teaches " +
          "its meaning — beats both a full re-explanation and assuming total recall. Trust more than you would with a stranger; " +
          "assume less than you would with yourself."),
+
+        ("acronym_after_term",
+         "Never an acronym before its term",
+         "Even in a sequel, any book could be a reader's first: every acronym is preceded, at its first appearance in " +
+         "THIS story, by the full term it abbreviates, glossed in-voice ('Neuretic Substrate Bridging' before 'NSB'). " +
+         "An acronym whose expansion never appears on the page before it is a fail. After the first full-term use, the " +
+         "bare acronym is preferred — do not re-expand."),
 
         ("pay_previous_due",
          "Pay the previous story its due, then move",

@@ -758,7 +758,7 @@ public class SettingsService : IDisposable
         public string DefaultVoiceProfileId { get; set; } = "";
         public string OpenAiApiKey { get; set; } = "";
         public string OpenAiModel { get; set; } = "gpt-4.1-mini";
-        public string ActiveLlmProvider { get; set; } = "claude-team";
+        public string ActiveLlmProvider { get; set; } = "claude-api";
         public int EditorFontSize { get; set; } = 14;
         public int AutoSaveIntervalMs { get; set; } = 2000;
         public string GeminiApiKey { get; set; } = "";

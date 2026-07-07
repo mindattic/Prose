@@ -118,7 +118,11 @@ questions: 34
 
 - [ ] **A** — Yes — update all four entities to remove anti-grav per SS-A35 *(source: DB:Prose)*
 - [ ] **B** — No — keep anti-grav in entity descriptions as acceptable legacy text *(source: DB:Transportation)*
-- [x] **C** — Custom: No, there is no antigrav technology; if it suspended in air its due to VacCells
+- [x] **C** — Custom: No, there is no antigrav technology; if it suspended in air its due to ANGEL
+  cells (*terminology update 2026-07-06: "VacCell"/"VABC" retired in favor of the branded ANGEL
+  cell. Superseded again 2026-07-07: ANGEL itself is retired — Eigenlift (Coherent Mass-State
+  Suspension), CEP's mass-branch sibling technology, is now the one and only aerostatic
+  technology at every scale — see [[../universes/GLMZ]] Aerostatic Architecture*)
 
 ---
 

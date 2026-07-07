@@ -239,12 +239,13 @@ public class MarkdownFileService
             "update","status","version","snapshot","workflow","campaign","playbook",
             "pattern","loop","brief","recall","sync","export","deploy","goal","goals",
             "review","quality","engine","system","refactor","subsystem","feedback",
+            "first","book","story","outline","canon","service","descent",
         };
 
     /// <summary>
     /// Classify a file for the Doc Context Stack. Frontmatter <c>tier:</c>/<c>scope:</c>/<c>triggers:</c>
     /// win (AutoTier=false); otherwise infer from category/path (AutoTier=true):
-    /// register → node (scope from RegisterScope) · docs/strands/&lt;CODE&gt;.md → node scope=CODE ·
+    /// register → node (scope from RegisterScope) · docs/nodes/&lt;CODE&gt;.md (or legacy docs/strands/) → node scope=CODE ·
     /// AlwaysFiles → always · everything else → topic (triggers seeded from file name + description).
     /// Pure function of (file, content) so re-sync is idempotent.
     /// </summary>
@@ -271,7 +272,10 @@ public class MarkdownFileService
             return new("node", RegisterScope.GetValueOrDefault(reg, ""), "", AutoTier: true);
         }
 
-        if (f.RelativePath.Replace('\\', '/').StartsWith("docs/strands/", StringComparison.OrdinalIgnoreCase))
+        // Node bibles live in docs/nodes/<CODE>.md (SS-A43); docs/strands/ kept for legacy layouts.
+        var relPath = f.RelativePath.Replace('\\', '/');
+        if (relPath.StartsWith("docs/nodes/", StringComparison.OrdinalIgnoreCase)
+            || relPath.StartsWith("docs/strands/", StringComparison.OrdinalIgnoreCase))
         {
             var code = Path.GetFileNameWithoutExtension(fileName).ToUpperInvariant();
             return new("node", code, "", AutoTier: true);

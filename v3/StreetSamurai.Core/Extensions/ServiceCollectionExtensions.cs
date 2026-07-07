@@ -957,6 +957,7 @@ public static class ServiceCollectionExtensions
         services.AddScoped<EntityMentionService>();
         services.AddSingleton<DocContextStack>();
         services.AddSingleton<DocContextService>();
+        services.AddSingleton<EntityHarvestService>();
         services.AddSingleton<ContextTelemetryService>();
         services.AddSingleton<TelemetryExportService>();
         services.AddSingleton<TensionEscalationService>();

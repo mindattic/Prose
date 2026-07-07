@@ -161,7 +161,9 @@ public sealed class DocContextService(
 
         foreach (var e in active)
         {
-            var perDocCap = e.Tier == "topic" ? 800 : 1500;
+            // Node-tier docs are the story's bible + register — the do-not-contradict layer.
+            // A 1500c clip loses character rules and locks (how BLST drifted); give them room.
+            var perDocCap = e.Tier switch { "topic" => 800, "node" => 6000, _ => 1500 };
             var clip = StripFrontmatter(contentById.GetValueOrDefault(e.DocId, ""));
             if (clip.Length > perDocCap) clip = clip[..perDocCap].TrimEnd() + "…";
 

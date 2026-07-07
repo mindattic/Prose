@@ -133,7 +133,7 @@ lock after ~age twelve. Rare adult-open cases exist (SS-A21) but are exceptional
 unaugmented → Tier 1 → Tier 4 is qualitative, not gradient. Tier 1 subsidized in core
 districts via NeoCortex Access Initiative.
 
-**NSB (Neuretic Shell Bonding):** The protocol for occupying a machine body (Shell).
+**NSB (Neuretic Substrate Bridging):** The protocol for occupying a machine body (Shell).
 - **Husk** — the biological body sitting dormant while bonded to a Shell
 - **Shell** — the machine body being occupied
 - **Riding / inject** — entering a Shell; consciousness relocates
@@ -141,7 +141,20 @@ districts via NeoCortex Access Initiative.
 
 Vocabulary rules: characters **inject**, **ride**, **ghost**, **haunt**, or **slot** into
 Shells. They **eject** or **return** to their Husk. Never "transfer" or "upload" — those
-imply copying, not relocation.
+imply copying, not relocation. "Rider" as a standalone job title is retired (SS-A38); use
+Exo (street) or Remote Frame Operator / RFO (formal).
+
+**The physics (Coherent Eigenstate Projection / CEP):** NSB is the applied engineering; CEP
+is the underlying mechanism. The operator's neuretic array encodes their active cognitive
+state as a coherent eigenstate waveform and projects it into any resonant cavity with a
+compatible neural bus — the Shell. Nothing is copied or transmitted; the cognitive process
+itself migrates, the way a standing wave can be sustained in a second medium. The Husk drops
+to managed low-activity suspension for the duration — breathing, alive, absent. Return
+requires a clean handshake between the Shell's neural bus and the waiting Husk; a disrupted
+handshake (Black Ice attack, hardware failure, forced extraction) carries seizure risk that
+scales with how long the projection has been displaced, and extended forced displacement is
+fatal. CEP is also the physics behind Eigenlift (see Aerostatic Architecture) — the same
+discovery applied to mass instead of mind.
 
 ---
 
@@ -311,27 +324,119 @@ the QUANTA currency symbol. Write: *"She owes 200Φ."*
 
 ## Aerostatic Architecture
 
-**ANGEL (Aerogel Null Globe Evacuated Lifter):** The core tech behind the float layer.
-Visual: translucent milky sphere, ghost-lamp glow; a vacuum micropump disc at the north pole
-maintains the interior vacuum. Modular by design — personal/Axis Rig units run 8–20cm;
-platform-scale arrays stack into much larger lift systems. The acronym ANGEL is locked — do not vary it.
+**Tone (binding for prose).** Floating architecture is infrastructure, not spectacle — as
+unremarkable to a GLMZ native as an overpass is to a modern commuter. A Sky Person doesn't
+marvel at their own building; a street-level native doesn't gawk upward any more than a city
+dweller gawks at skyscrapers today. Wonder is reserved for outsiders (Pixel's first sight of a
+drifting aerobloc in PNHL is character-specific — Iowa unfamiliarity, not an authorial claim
+that floating cities are rare or exceptional). The float layer has building codes, homeowners'
+associations, insurance actuaries, slumlords, bored commuters, and a municipal inspection
+sticker peeling off a doorframe. **Avoid:** hidden-utopia reveals, giant balloon/dirigible/
+propeller silhouettes, brass-and-marble Victorian-patriotic or religious-utopian iconography,
+and a signature giant sky-guardian automaton — these read as *Bioshock Infinite*, not GLMZ.
+Eigenlift's whole visual identity cuts the other way: nothing to see except a scatter of small
+glowing nodes, and no other visible means of support at all. Keep the Sky People/Glooms class
+axis about wealth and altitude only — never blend it with the Lotus Syndicate's blood-purity
+doctrine, which is a separate axis entirely.
 
-**Aerobloc** — a city block built on vacuum-cell (ANGEL) buoyancy for voluntary elevation;
-can be moored or free-floating.
+**Eigenlift (Coherent Mass-State Suspension) is the one aerostatic technology.** It is CEP's
+sibling discovery — the same trick (externally imposed coherent eigenstates) applied to bulk
+matter instead of cognition. A powered **coherence frame** woven through a structure's (or
+vehicle's, or wearer's) skeleton continuously drives the matter in its field into a partially
+decohered mass-state, suppressing — not eliminating — its coupling to the local gravitational
+field. Rest mass, inertia, and structural integrity are unchanged; only the gravitational
+coupling is reduced. This is *not* Graviton Manipulation Theory (SS-A35; detection without
+control, permanently dead-ended) — it doesn't touch the field, it changes how strongly the
+object's own mass-state answers to it. There is no other lift technology in GLMZ — no vacuum
+cells, no antigrav, no balloons. (Historical note: an earlier, cruder "vacuum-cell buoyancy"
+generation — branded ANGEL — has been fully superseded and is retired from canon; see
+[[../surveys/canon-sync-2026-07-04]] Q-008 and [[../../memory/project_eigenlift_canon]].)
 
-**Mooring doctrine:** Aeroblocs anchor to arcologies via CNT-steel **Black Wire** (carbon
-nanotube cable). The corpo holding the arcology owns the hold. "Who holds your tether" is
-a live political question — cut wire = a free-floating bloc, which is either freedom or
-a fall depending on wind.
+**Hardware:** the visible unit is an **Eigenlift node** — a small, solid-state emitter, no
+moving parts, no interior to fail catastrophically. Nodes cluster at a structure's tensegrity
+attachment points (see TGP, below) the way ANGEL cells once did, so the "constellation of small
+glowing components" silhouette survives even though the mechanism underneath changed
+completely. A **coherence driver** (palm-sized control unit) tunes and re-tunes each node
+continuously; this is the part that actually strains under load, not the node itself.
 
-**ANGEL sabotage = ghost ball cracking** — controlled failure over hours or days, not a
-sudden drop. The heartbeat (aggregate hum of healthy micropump array) goes silent before
-the descent begins. Silence = danger.
+**Why the scale runs backward from what people expect.** Real decoherence physics: the more
+degrees of freedom a system has (particles, thermal modes, boundary interactions with its
+environment), the faster imposed coherence collapses — macroscopic objects decohere in an
+instant; small, simple systems can be held coherent far longer. Eigenlift inherits this
+directly:
+- **Person/drone scale** — few enough degrees of freedom that a compact frame holds a high
+  suppression fraction cheaply. The physics is easy here; what's rare is the frame hardware
+  and driver electronics, which are patent-locked and power-hungry, not the coherence itself.
+  A wearable rig (see Zheng-Dao GAMP-2) can suppress 60-80% of a person's effective weight for
+  minutes at a time; a barn-built drone (Nit, PNHL) can run a shard of coherence frame
+  indefinitely because it's tiny and nobody in corpo R&D bothered to try below platform scale.
+- **Vehicle scale (VTOL airframes)** — a frame integrated into the airframe sustains a solid
+  suppression fraction, cutting fuel and lift load hard, but needs real onboard power and
+  vibration/thermal shielding to hold coherence against a moving structure.
+- **City-block scale (Aerobloc/Aeroplex)** — astronomical degrees of freedom; full coherence
+  may be asymptotically unreachable. Civic-grade frames hold a district at only 3-8%
+  suppression; CNT-steel tethers and conventional structure carry the remainder. Pushing past
+  ~90% is where the horror stories live. This is the real class story: everyone's building runs
+  the same technology — the difference between a Sky People aeroplex and a Gloom-tier Aerobloc
+  is frame maintenance and node age, not two different technologies. A rich district's frame is
+  new, evenly tuned, and silent. A poor district's frame is patched, uneven, and audible.
+
+**Failure modes:**
+- *Eigenfault / stutter* — the frame loses tune for a fraction of a second and true mass
+  reasserts; a half-second stutter is a lurch in the knees and inner ear, a two-second fault
+  is snapped tethers.
+- *Sag* — chronic undertuning from a degraded or underpowered frame; the district gets heavy
+  slowly, moorings strain, ride height drops meter by meter — a district's finances read
+  straight off its altitude.
+- *Resonance bleed* — the frame doesn't perfectly discriminate between structural mass and
+  the people inside its envelope; long-term residents report proprioceptive strangeness
+  (dreams of falling, scales reading slightly low). Corpo-funded studies call it
+  psychosomatic. The studies are corpo-funded. Float-district folk belief holds that the
+  frames tune more than matter — that years inside a coherence envelope leave a person
+  slightly easier to project, which is either superstition or the reason NSB frame-operator
+  recruiters buy so much ad space up there.
+- *Comedown* — catastrophic decoherence; the platform's owners have run it into full failure.
+  Rare, always a scandal, always a maintenance-budget story before it's a physics story.
+
+**The Hush and the Hum (binding sound design):** a healthy Eigenlift frame is completely
+silent — no creak, no pump-thrum, nothing. That silence is **the Hush**, and it is the *normal*
+state, not a warning sign — this is deliberately the opposite of a mechanical hum-means-healthy
+motif. A frame under strain produces a faint, rising audible hum as its driver fights to hold
+tune — **the Hum** — and a Webwalker or a long-time resident reads a platform's health by how
+much Hum has crept into the Hush. "Holding the Hush" = stable. "I heard the Hum start" = dread,
+a slow-burn warning with hours or days before anything visible happens (graceful failure, not a
+jump-scare drop). Sabotage (tampering with a coherence driver to force decoherence) is called
+**detuning** (professional) or **breaking someone's Hush** (street) — never "cracking" anything;
+there's no shell to crack anymore.
+
+**Three-register naming (binding, per GLMZ naming convention):**
+- *Official:* **Coherent Mass-State Suspension (CMS)**; the hardware is a **coherence frame**;
+  failure events are **decoherence incidents**.
+- *Professional:* **eigenlift**; a building is **framed** / **on frame**; a flicker is a
+  **stutter**; sag is **sag**.
+- *Street:* a framed district is **the Hush** (eigenlift platforms are eerily silent — no cell
+  creak, no ballast pumps); a flicker is **the building remembering its weight**; a catastrophic
+  decoherence is a **comedown**.
+
+**The loaded gun:** if a lattice can make a structure decline its weight, a weaponized lattice
+can make something accept *more* than its share — mass-state suppression run in reverse.
+Officially, that is forbidden research. Officially.
+
+**Mooring doctrine:** Aeroblocs still anchor to arcologies via CNT-steel **Black Wire** (carbon
+nanotube cable) — Eigenlift only suppresses part of a structure's weight, so physical tethers
+still matter even on a well-framed platform. The corpo holding the arcology owns the hold.
+"Who holds your tether" is a live political question — cut wire = a free-floating bloc, which
+is either freedom or a fall depending on wind and frame quality.
 
 **Key aerostatic slang:**
-- *Vac-skin* — aerogel wealth signaling; high-end exteriors
+- *Clean* — a node or frame holding tune; *cold* — a dead, dark node (the glow goes out)
+- *Gray node* — decommissioned or hacked node, common in Drifter communities; heavier,
+  unevenly tuned, no failure warning
+- *Vac-skin* — legacy term, now just meaning "expensive lightweight aerogel cladding," used for
+  wealth signaling on high-end exteriors (the material outlived the vacuum tech it was named for)
 - *Ghost glass eyes* — insulated by altitude; can't see the street below
-- *Webwalkers* — float maintenance workers; live between the mooring cables
+- *Webwalkers* — float maintenance workers who service the frame's node network; live between
+  the mooring cables
 - *The Hold* — mooring system collectively
 
 **Air Tax** — fee charged for altitude above street level; collected by arcology owners or
@@ -444,9 +549,15 @@ Flat screens are antique; the Volume is ambient and spatial.
 **Nano gutter service** — has stopped in neglected districts. Iridescent residue film on
 neglected curbs and walls. Clean curbs = corpo-adjacent class signal.
 
-**No anti-gravity. No zero-point energy.** Aerostatic lift (vacuum cells/ANGEL) is the only
-non-propulsive altitude technology. Any reference to "anti-grav" in prose or entity
-descriptions is an error.
+**No graviton manipulation. No zero-point energy extraction.** Graviton Manipulation Theory
+is a confirmed dead end (detection without control, SS-A35) and ZPE extraction remains
+thermodynamically impossible. Any reference to "anti-grav" or "ANGEL"/"vacuum-cell" in prose or
+entity descriptions is an error — Eigenlift (coherent mass-state suspension, see Aerostatic
+Architecture) is the only altitude technology. Eigenlift is not anti-gravity in the graviton
+sense — it suppresses an object's gravitational *coupling* via CEP-derived coherence, it does
+not touch the field — but it is GLMZ's one deliberate exception to "nothing defies weight":
+exactly one deep discovery (externally imposed coherent eigenstates), two commercial branches
+(NSB for minds, Eigenlift for mass).
 
 ---
 
