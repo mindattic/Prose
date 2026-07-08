@@ -71,7 +71,8 @@ The machine is not a monster. It is a tool that outlived its context. The kaiju 
 Farm family, Davenport area, Iowa. 13.
 **Arc:** Watches the machine mourn → climbs on to keep it alive → rides fifty miles on the Crown → ends by answering a question he has been hearing all day.
 **Register:** Tom Sawyer — "aw shucks" surface, absolutely relentless underneath. He shrugs before he acts. He doesn't argue; he just moves. Adults spend sentences explaining why something can't be done while Wes is already doing it. When the drones start coming down around him and the field below looks like junkyard, Wes holds on and keeps listening.
-**Lock:** He has a private name for the machine that he has never said aloud to anyone. He does not say it in this story. The reader never learns it.
+**Lock:** He has a private name for the machine — Lord Long Legs (3L) — that he has never said aloud to anyone until Beat 14, when CJ asks. He tells her. She looks at him. "I was five," he says.
+**Lock:** Wes does not have neuretics. CJ and Wes communicate by shouting throughout ICFI.
 **Lock:** He is not reckless. The climb was not impulsive. He has been watching this machine his entire life. Today was the right moment because today was the only moment.
 **Lock:** He saw the mourning scene. He is the only one who knows what is happening and why.
 
@@ -101,7 +102,7 @@ CJ's superior. Off-site. Voice on the channel only.
 **Lock:** He is not a villain. He does not know what CJ knows because he is not where CJ is. The system worked exactly as designed and it was still wrong.
 
 ### The Scav Crew
-Three to five people operating a salvage camp at the Erie drainage break. They found the dead Behemoth in a field south of Rock Island (assumed mechanical failure; did not read the Schism twist), stripped it over two weeks, and sold the load to Ferko Nzambe. Some of them or their associates are still at the Erie camp when CROWFOOT-7 arrives.
+Three to five people operating a salvage camp at the Erie drainage break. They found the dead Behemoth in a field south of Rock Island (assumed mechanical failure; did not read the Schism twist), stripped it over two weeks, and sold the load to Ferko Nzambe. Some of them or their associates are still at the Erie camp when Lord Long Legs arrives.
 **Lock:** One gets crushed. The machine's sensor array scanned the flatbed, identified the hull plating from its companion's hull, and made a decision. Whether "decision" is the right word is the same question as the maggots: not answered. The man with the winch walked into the stride path at the wrong moment. The machine was stepping, and it did not deviate, and those are facts. What they mean is harder.
 
 ### Ferko Nzambe
@@ -113,7 +114,9 @@ Junker, mid-fifties. Runs an Eigenlift cargo platform — old flatbed model, gra
 
 ## THE MACHINE
 
-No manufacturer. No transponder. No registry. Wes has a name for it he has never said aloud.
+**Name: Lord Long Legs (3L).** Wes named it when he was small — the legs, the dome on top like a crown, the way it walked. The name never got corrected because he never told anyone. In ICFI's prose the machine is always "the machine." Lord Long Legs / 3L is established in retrospect, for future use.
+
+No manufacturer. No transponder. No registry.
 
 **Form:** Three locomotion legs — two long lateral legs, one on each side, very thin for the mass they carry, jointed at mid-height with an inverted knee (heron-geometry, lower section swinging forward on each stride); one shorter rear support leg for balance and tripodal stability. The legs are spindly relative to the body: arachnid, designed for standing over crops without crushing them. They carry the body forty to fifty feet off the ground. The body itself is bulbous: a rounded mass, weathered to a color between brass and bone. Sensor array at the forward face, asymmetric. Two apertures catch low-angle light in a way that reads as eyes. This is not intentional. They are soil-moisture sensors.
 
@@ -200,7 +203,7 @@ A Behemoth the machine knew — same Iowa heritage, same unregistered lineage. I
 
 ## WORLD NOTES (canon facts established in ICFI — flag for BIBLE.md)
 
-- **AgriCore operated Crowfoot-class Behemoths in Iowa.** The historical CorpoNation operator of Crowfoot-class agricultural Behemoths is AgriCore. Zone-12's outer buffer is former AgriCore leasehold territory — the reason Behemoths were planting and harvesting this corridor for decades before the boundary moved. AgriCore's records on CROWFOOT-7 show it went off-grid months before ICFI events; they did not report it. Characters seeded from this history: Priya Johansdóttir (AgriCore Eastern Division Liaison), Maris Delacroix-Oye (Zone-12 surveyor), Yusuf Tamboli-Nkosi (former AgriCore Behemoth tech, worked on CROWFOOT), Lt. Kaden Vũ (ArcSec Zone-12 commander).
+- **AgriCore operated Crowfoot-class Behemoths in Iowa.** The historical CorpoNation operator of Crowfoot-class agricultural Behemoths is AgriCore. Zone-12's outer buffer is former AgriCore leasehold territory — the reason Behemoths were planting and harvesting this corridor for decades before the boundary moved. AgriCore's records on Lord Long Legs (3L) show it went off-grid months before ICFI events; they did not report it. Characters seeded from this history: Priya Johansdóttir (AgriCore Eastern Division Liaison), Maris Delacroix-Oye (Zone-12 surveyor), Yusuf Tamboli-Nkosi (former AgriCore Behemoth tech, worked on Lord Long Legs), Lt. Kaden Vũ (ArcSec Zone-12 commander).
 - **Mobile Schisms exist.** Not all Schisms are static phenomena. Some move through an area like a weather system, warping reality as they pass. Things the Schism moves through may be physically altered — geometry changed, structure twisted, what was true before made wrong. The dead Behemoth died by walking through a moving Schism. Its hull shows the evidence. This should be added to `docs/BIBLE.md` §Schism when confirmed.
 - **Behemoths may be partly organic.** The dead Behemoth's hull, warped by the Schism, shows maggots from an interior seam. Something inside was biological and is decomposing. Whether Behemoths are machines with organic components, living creatures in metal shells, or something else is not confirmed anywhere in the story — but the question is real and the evidence is on-page.
 
@@ -214,14 +217,15 @@ A Behemoth the machine knew — same Iowa heritage, same unregistered lineage. I
 - Pip is male. He lifts his leg. This matters.
 - Pip does not get hurt.
 - **CJ never sees the dead Behemoth.** Telemetry only, until Wes tells her from the Crown.
-- Wes's private name for the machine is never spoken or written.
+- Wes's private name for the machine is Lord Long Legs (3L). It is spoken once, in Beat 14: CJ asks, Wes tells her, she looks at him, he says "I was five."
 - The dead Behemoth was twisted by a Schism. The story never names the Schism explicitly. Wes observes the evidence; he doesn't have the word.
 - The scav who gets crushed: the machine had identified the flatbed's contents and made a decision. Or it was stepping and did not deviate. Both things can be true. Do not resolve which.
 - The drone-swatting is not strategic. Removal of obstacles near the hull. The arm fires, the unit drops, the machine keeps walking.
 - The threat-wail's second frequency is old in a way that doesn't fit manufactured equipment. Do not resolve what it is.
 - The Eigenlift towers rise from the cornfields without transition. Corn, tower, corn. The machine walks between them.
 - CJ's vehicle is a repulsor skimmer — Eigenlift ground-effect, hovers one to two feet off any surface, never truly airborne, 120+ mph capable at full throttle, terrain-agnostic. Not a VTOL. Not a drone. She rides it.
-- CJ's defiance is closing her comms. Not a speech.
+- CJ's defiance is closing the neuretic channel. Not a speech. One sub-vocal gesture.
+- All CJ/Hauser comms are neuretics. Wes does not have neuretics. CJ and Wes shout throughout ICFI.
 - Hauser is not a villain.
 - The new sound in beat 12: what it is NOT, what it does to the people hearing it. Never named. Never resolved.
 - No weapon is fired.
