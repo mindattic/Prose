@@ -11,7 +11,7 @@
 
 ## LOGLINE
 
-A Behemoth with no registry and no kill-switch walks fifty miles toward the edge of GLMZ, swatting Eigenlift interdiction drones from the sky like King Kong swatting biplanes — while a thirteen-year-old Iowa farm boy rides the Crown, a male terrier runs below, and a junior ArcSec scout from Kansas City chases the whole thing on a repulsor skimmer trying to figure out why before her commander's fire order lands.
+A Behemoth with no registry and no kill-switch walks fifty miles toward the edge of GLMZ, swatting Eigenlift interdiction drones from the sky like King Kong swatting biplanes — while a ten-year-old Iowa farm boy rides the Crown, a male terrier runs below, and a junior ArcSec scout from Kansas City chases the whole thing on a repulsor skimmer trying to figure out why before her commander's fire order lands.
 
 ---
 
@@ -68,7 +68,7 @@ The machine is not a monster. It is a tool that outlived its context. The kaiju 
 ## CHARACTERS
 
 ### Wes Keith
-Farm family, Davenport area, Iowa. 13.
+Farm family, Davenport area, Iowa. 10.
 **Arc:** Watches the machine mourn → climbs on to keep it alive → rides fifty miles on the Crown → ends by answering a question he has been hearing all day.
 **Register:** Tom Sawyer — "aw shucks" surface, absolutely relentless underneath. He shrugs before he acts. He doesn't argue; he just moves. Adults spend sentences explaining why something can't be done while Wes is already doing it. When the drones start coming down around him and the field below looks like junkyard, Wes holds on and keeps listening.
 **Lock:** He has a private name for the machine — Lord Long Legs (3L) — that he has never said aloud to anyone until Beat 14, when CJ asks. He tells her. She looks at him. "I was five," he says.
@@ -204,6 +204,7 @@ A Behemoth the machine knew — same Iowa heritage, same unregistered lineage. I
 ## WORLD NOTES (canon facts established in ICFI — flag for BIBLE.md)
 
 - **AgriCore operated Crowfoot-class Behemoths in Iowa.** The historical CorpoNation operator of Crowfoot-class agricultural Behemoths is AgriCore. Zone-12's outer buffer is former AgriCore leasehold territory — the reason Behemoths were planting and harvesting this corridor for decades before the boundary moved. AgriCore's records on Lord Long Legs (3L) show it went off-grid months before ICFI events; they did not report it. Characters seeded from this history: Priya Johansdóttir (AgriCore Eastern Division Liaison), Maris Delacroix-Oye (Zone-12 surveyor), Yusuf Tamboli-Nkosi (former AgriCore Behemoth tech, worked on Lord Long Legs), Lt. Kaden Vũ (ArcSec Zone-12 commander).
+- **Neuretics minimum installation age is 12.** The mesh requires a minimum degree of cortical maturity to integrate without catastrophic failure rate. Nobody gets neuretics before twelve — not by regulation, by biology. Wes is ten; he can't have them yet. Flag for `docs/BIBLE.md` §Neuretics when confirmed.
 - **Mobile Schisms exist.** Not all Schisms are static phenomena. Some move through an area like a weather system, warping reality as they pass. Things the Schism moves through may be physically altered — geometry changed, structure twisted, what was true before made wrong. The dead Behemoth died by walking through a moving Schism. Its hull shows the evidence. This should be added to `docs/BIBLE.md` §Schism when confirmed.
 - **Behemoths may be partly organic.** The dead Behemoth's hull, warped by the Schism, shows maggots from an interior seam. Something inside was biological and is decomposing. Whether Behemoths are machines with organic components, living creatures in metal shells, or something else is not confirmed anywhere in the story — but the question is real and the evidence is on-page.
 
@@ -225,7 +226,8 @@ A Behemoth the machine knew — same Iowa heritage, same unregistered lineage. I
 - The Eigenlift towers rise from the cornfields without transition. Corn, tower, corn. The machine walks between them.
 - CJ's vehicle is a repulsor skimmer — Eigenlift ground-effect, hovers one to two feet off any surface, never truly airborne, 120+ mph capable at full throttle, terrain-agnostic. Not a VTOL. Not a drone. She rides it.
 - CJ's defiance is closing the neuretic channel. Not a speech. One sub-vocal gesture.
-- All CJ/Hauser comms are neuretics. Wes does not have neuretics. CJ and Wes shout throughout ICFI.
+- All CJ/Hauser comms are neuretics. Wes does not have neuretics — he is ten; minimum installation age is twelve. CJ and Wes shout throughout ICFI.
+- **Beat 9 pantomime:** CJ taps her temple twice (standard contact request). Wes, ninety feet up, taps his own temple once, then draws a flat hand across the side of his head (slicing motion — no), then holds up all ten fingers. The machine lurches on one stride placement and he drops low, grabs the dome edge, almost goes over. Machine restabilizes. He comes back up and holds up the ten fingers again. CJ reads it: no neuretics; ten years old. She raises her voice against the wind: "Shouting works fine."
 - Hauser is not a villain.
 - The new sound in beat 12: what it is NOT, what it does to the people hearing it. Never named. Never resolved.
 - No weapon is fired.
