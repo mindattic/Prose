@@ -1638,7 +1638,7 @@ Return ONLY a JSON object and nothing else:
 
             var raw = await cloudLlm.CallAsync(judge, key!, "claude-haiku-4-5-20251001",
                 system, $"Gripes from {reviews.Count} readers:\n\n{inputSb}",
-                maxTokens: 3000, temperature: 0.3, ct);
+                maxTokens: 8000, temperature: 0.3, ct);
 
             var text = raw?.Trim() ?? "";
             if (text.StartsWith("```"))
