@@ -602,6 +602,8 @@ public class NodeReviewService
         if (targetChars <= 0) targetChars = useLocal ? LocalUsableChars : SegmentTargetChars;
         else if (useLocal) targetChars = Math.Min(targetChars, LocalUsableChars);
         var route = BuildRoute(useLocal, allowedProvidersOverride, localModelOverride);
+        long rawOutputChars = 0L;
+        void TrackOutput(int chars) => Interlocked.Add(ref rawOutputChars, chars);
         var providers = route.Providers;
         if (providers.Count == 0)
             throw new InvalidOperationException("No trusted LLM providers are configured with API keys — cannot run reviews.");
@@ -645,7 +647,7 @@ public class NodeReviewService
                     await sem.WaitAsync(ct);
                     try
                     {
-                        var r = await SegmentBallotOnceAsync(nodeId, seg.Title, s, totalBeatCount, persona, provider, route, ct, lessonsBlock, beatHashes);
+                        var r = await SegmentBallotOnceAsync(nodeId, seg.Title, s, totalBeatCount, persona, provider, route, ct, lessonsBlock, beatHashes, TrackOutput);
                         if (r != null) { r.FocusGroupName = groupName; r.ContentHash = seg.ContentHash; localBag.Add(r); }
                         else Interlocked.Increment(ref failed);
                     }
@@ -680,7 +682,7 @@ public class NodeReviewService
                 {
                     var persona = PersonasByIds(new[] { rv.PersonaId }).FirstOrDefault();
                     if (persona == null || !segOf.TryGetValue(rv.Id, out var sg)) return;
-                    var prose = await SegmentProseOnceAsync(seg.Title, sg, persona, rv.ProviderId, route, ct);
+                    var prose = await SegmentProseOnceAsync(seg.Title, sg, persona, rv.ProviderId, route, ct, TrackOutput);
                     if (prose != null)
                     {
                         rv.ReviewText = prose.Value.review.Trim();
@@ -748,23 +750,40 @@ public class NodeReviewService
         var (reportJson, reportHtm) = await WriteRunReportAsync(nodeId, seg.Title, seg.ContentHash,
             totalBeatCount, useLocal, localModelOverride, saved, Math.Round(mean, 1), Math.Round(sd, 1), Math.Round(ci, 2), clusters, ct);
 
+        string? actualCostTable = null;
+        try
+        {
+            var storyTokens = seg.Segments.Sum(s => s.Markdown?.Length ?? 0) / 4;
+            var votersFired = saved.Count + proseAdded;
+            var receiptModel = saved.FirstOrDefault()?.Model ?? ReviewCostEstimator.CheapModelFor("claude-api");
+            var ballotOnly = proseAdded == 0;
+            var actualOutputTokens = (int)(rawOutputChars / 4);
+            var actualEstimate = ReviewCostEstimator.EstimateActual(
+                seg.Title, totalBeatCount, storyTokens, votersFired, receiptModel, ballotOnly, actualOutputTokens);
+            actualCostTable = ReviewCostEstimator.RenderActualTable(actualEstimate, actualOutputTokens);
+        }
+        catch { }
+
         return new SampledRunResult(pool.Count, saved.Count, proseAdded, failed,
             Math.Round(mean, 1), Math.Round(sd, 1), Math.Round(ci, 2), clusters,
             seg.ContentHash, sb.ToString(), "",
-            ReportJsonPath: reportJson, ReportHtmPath: reportHtm);
+            ReportJsonPath: reportJson, ReportHtmPath: reportHtm,
+            ActualCostTable: actualCostTable);
     }
 
     /// <summary>Per-segment prose review: the persona re-reads ONE part and writes a full
     /// prose review of it (same JSON contract as the whole-node reviewer). Scoped to the
     /// segment so the prompt fits the local context window.</summary>
     private async Task<(string review, List<string> improvements)?> SegmentProseOnceAsync(
-        string title, NodeMarkdownExporter.NodeSegment segment, Persona persona, string provider, ReviewRoute route, CancellationToken ct)
+        string title, NodeMarkdownExporter.NodeSegment segment, Persona persona, string provider, ReviewRoute route, CancellationToken ct,
+        Action<int>? trackOutput = null)
     {
         var key = route.KeyFor(provider);
         if (string.IsNullOrWhiteSpace(key)) return null;
         var model = route.ModelFor(provider, false);
         var system = BuildSegmentProsePrompt(persona, title, segment);
         var raw = await route.Llm.CallAsync(provider, key!, model, system, segment.Markdown, maxTokens: 1400, temperature: 0.85, ct);
+        trackOutput?.Invoke(raw?.Length ?? 0);
         return TryParseReview(raw, out _, out var review, out var improvements) ? (review, improvements) : null;
     }
 
@@ -787,7 +806,7 @@ Return ONLY a JSON object and nothing else:
     private async Task<NodeReview?> SegmentBallotOnceAsync(
         Guid nodeId, string title, NodeMarkdownExporter.NodeSegment segment, int totalBeatCount,
         Persona persona, string provider, ReviewRoute route, CancellationToken ct, string? lessonsBlock,
-        IReadOnlyDictionary<int, string>? beatHashes = null)
+        IReadOnlyDictionary<int, string>? beatHashes = null, Action<int>? trackOutput = null)
     {
         var key = route.KeyFor(provider);
         if (string.IsNullOrWhiteSpace(key)) { log.LogWarning("No API key for provider {Provider}", provider); return null; }
@@ -796,6 +815,7 @@ Return ONLY a JSON object and nothing else:
         var segBeats = segment.LastBeat - segment.FirstBeat + 1;
         var maxTok = Math.Min(8000, 900 + segBeats * 6);
         var raw = await route.Llm.CallAsync(provider, key!, model, system, segment.Markdown, maxTokens: maxTok, temperature: 0.85, ct);
+        trackOutput?.Invoke(raw?.Length ?? 0);
         if (!TryParseBallot(raw, totalBeatCount, out var score, out var flow, out var proseGripe, out var logicGripe, out var beatScores))
         {
             log.LogWarning("Unparseable segment ballot from {Persona} via {Provider}", persona.Id, provider);
