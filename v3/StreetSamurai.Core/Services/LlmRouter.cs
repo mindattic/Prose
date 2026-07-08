@@ -82,6 +82,37 @@ public class LlmRouter : ILlmService
         }
     }
 
+    public async Task<string> GenerateWithCachedPrefixAsync(
+        string cachedPrefix,
+        string dynamicSystem,
+        string user,
+        double temperature = 0.8,
+        int maxTokens = 4096,
+        string? model = null,
+        CancellationToken ct = default)
+    {
+        var provider = runProvider ?? activeProviderFunc() ?? "claude-api";
+        log.LogDebug("LlmRouter dispatching cached-prefix request to provider={Provider}", provider);
+        var sw = System.Diagnostics.Stopwatch.StartNew();
+        try
+        {
+            var response = await GetActiveProvider().GenerateWithCachedPrefixAsync(
+                cachedPrefix, dynamicSystem, user, temperature, maxTokens, model ?? runModel, ct);
+            sw.Stop();
+            prompts.Capture(provider, model ?? "(default)", temperature, maxTokens,
+                cachedPrefix + "\n\n" + dynamicSystem, user, response, (int)sw.ElapsedMilliseconds);
+            return response;
+        }
+        catch (Exception ex)
+        {
+            sw.Stop();
+            prompts.Capture(provider, model ?? "(default)", temperature, maxTokens,
+                cachedPrefix + "\n\n" + dynamicSystem, user, $"(ERROR: {ex.Message})", (int)sw.ElapsedMilliseconds);
+            log.LogError(ex, "LlmRouter: cached-prefix generation failed via provider={Provider}", provider);
+            throw;
+        }
+    }
+
     private ILlmService GetActiveProvider() => (runProvider ?? activeProviderFunc()) switch
     {
         "openai" => openAi,

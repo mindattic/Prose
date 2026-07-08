@@ -75,6 +75,40 @@ public class ClaudeService : ILlmService
         }
     }
 
+    public async Task<string> GenerateWithCachedPrefixAsync(
+        string cachedPrefix,
+        string dynamicSystem,
+        string user,
+        double temperature = 0.8,
+        int maxTokens = 4096,
+        string? model = null,
+        CancellationToken ct = default)
+    {
+        var activeModel = model ?? settings.Model;
+        var providerId = settings.ActiveLlmProvider is "claude-api" or "claude-team"
+            ? settings.ActiveLlmProvider
+            : "claude-team";
+
+        if (providerId == "claude-api" && string.IsNullOrWhiteSpace(settings.ApiKey))
+            throw new InvalidOperationException("API key not configured.");
+
+        log.LogDebug("Claude cached-prefix request: provider={Provider}, model={Model}, prefixLen={PrefixLen}, dynamicLen={DynamicLen}",
+            providerId, activeModel, cachedPrefix.Length, dynamicSystem.Length);
+
+        var text = (await legion.CallAsync(
+            providerId:          providerId,
+            systemPrompt:        dynamicSystem,
+            userMessage:         user,
+            maxTokens:           maxTokens,
+            temperature:         temperature,
+            modelOverride:       activeModel,
+            cachedSystemPrefix:  cachedPrefix,
+            ct:                  ct)).Trim();
+
+        log.LogInformation("Claude cached-prefix response: model={Model}, responseLen={ResponseLen}", activeModel, text.Length);
+        return text;
+    }
+
     public Task<string> GenerateFromDocumentAsync(
         byte[] documentBytes,
         string mediaType,
