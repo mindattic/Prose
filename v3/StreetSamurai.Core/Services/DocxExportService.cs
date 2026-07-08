@@ -105,6 +105,11 @@ public class DocxExportService
 
         using (var doc = WordprocessingDocument.Create(exportPath, WordprocessingDocumentType.Document))
         {
+            // Explicitly set document metadata so Word doesn't pull Creator from
+            // the Windows/Microsoft account of whoever opens the file.
+            doc.PackageProperties.Creator = author;
+            doc.PackageProperties.LastModifiedBy = author;
+
             var main = doc.AddMainDocumentPart();
             main.Document = new DocumentFormat.OpenXml.Wordprocessing.Document();
 
