@@ -185,13 +185,13 @@ public class NodeReviewService
             }
             else
             {
-                personas = (personaIds is { Count: > 0 }) ? PersonasByIds(personaIds) : SampleEnrichedPersonas(readers);
+                personas = (personaIds is { Count: > 0 }) ? PersonasByIds(personaIds) : EditorPanel.GetPanel(readers);
                 groupId = await CreateGroupAsync(groupName!, personas, ct);
             }
         }
         else
         {
-            personas = (personaIds is { Count: > 0 }) ? PersonasByIds(personaIds) : SampleEnrichedPersonas(readers);
+            personas = (personaIds is { Count: > 0 }) ? PersonasByIds(personaIds) : EditorPanel.GetPanel(readers);
         }
 
         var sem = new SemaphoreSlim(MaxConcurrency);
@@ -302,8 +302,21 @@ public class NodeReviewService
         }
     }
 
+    /// <summary>Estimates the cost of running a sampled review without spending anything.
+    /// Exports the node (read-only DB) to measure story size, then calls ReviewCostEstimator.</summary>
+    public async Task<ReviewCostEstimator.CostEstimate> EstimateCostAsync(
+        Guid nodeId, int voterCount, bool ballotOnly = true, string? model = null, CancellationToken ct = default)
+    {
+        var export = await exporter.ExportAsync(nodeId, numberBeats: false, ct);
+        var storyTokens = export.Markdown.Length / 4;
+        var effectiveModel = string.IsNullOrWhiteSpace(model)
+            ? ReviewCostEstimator.CheapModelFor("claude-api")
+            : model;
+        return ReviewCostEstimator.Estimate(export.Title, export.BeatCount, storyTokens, voterCount, effectiveModel, ballotOnly);
+    }
+
     /// <summary>Economical default: a stratified SAMPLE of personas casts cheap
-    /// score-only BALLOTS (overall + flow + per-beat 1-5 + one weakness tag), then
+    /// score-only BALLOTS (overall + flow + per-beat 1-5 + prose/logic gripes), then
     /// only the most informative ballots (harshest / median / most generous) are
     /// upgraded with a full prose review. The ballots double as the segment study —
     /// clustered into emergent audiences with a Pareto/contested per-beat report —
@@ -394,7 +407,7 @@ public class NodeReviewService
         var beatHashes = await LoadBeatHashesAsync(nodeId, ct);
         // "Group"-prefixed so the headline node Score (RecomputeScores) counts these ballots.
         var groupName = $"Group Sample {export.ContentHash[..6]}";
-        var personas = SampleEnrichedPersonas(ballotCount);
+        var personas = EditorPanel.GetPanel(ballotCount);
 
         // ── Prose-lessons injection ───────────────────────────────────────────
         // Resolve the node slug (needed for node-scoped lessons). Fetched once
@@ -441,7 +454,7 @@ public class NodeReviewService
         if (failed > 0 && !bag.IsEmpty)
         {
             var workingProviders = bag.Select(r => r.ProviderId).Distinct().ToList();
-            var retryPersonas = SampleEnrichedPersonas(failed);
+            var retryPersonas = EditorPanel.GetPanel(failed);
             var retryTasks = new List<Task>(failed);
             var retriesDone = 0;
             for (int i = 0; i < retryPersonas.Count; i++)
@@ -588,7 +601,7 @@ public class NodeReviewService
 
         // Distinct personas across the WHOLE run (one review per persona survives
         // RecomputeScores, so a persona must ballot at most one segment).
-        var pool = SampleEnrichedPersonas(seg.Segments.Count * ballotsPerSegment);
+        var pool = EditorPanel.GetPanel(seg.Segments.Count * ballotsPerSegment);
 
         var sem = new SemaphoreSlim(route.MaxConcurrencyValue);
         var done = 0; var failed = 0;
@@ -760,29 +773,30 @@ Return ONLY a JSON object and nothing else:
         var segBeats = segment.LastBeat - segment.FirstBeat + 1;
         var maxTok = Math.Min(8000, 900 + segBeats * 6);
         var raw = await route.Llm.CallAsync(provider, key!, model, system, segment.Markdown, maxTokens: maxTok, temperature: 0.85, ct);
-        if (!TryParseBallot(raw, totalBeatCount, out var score, out var flow, out var weakness, out var beatScores))
+        if (!TryParseBallot(raw, totalBeatCount, out var score, out var flow, out var proseGripe, out var logicGripe, out var beatScores))
         {
             log.LogWarning("Unparseable segment ballot from {Persona} via {Provider}", persona.Id, provider);
             return null;
         }
         var review = new NodeReview
         {
-            Id           = Guid.CreateVersion7(),
-            NodeId     = nodeId,
-            PersonaId    = persona.Id,
-            PersonaName  = persona.Name,
-            PersonaBlurb = FirstLine(persona.PersonalityMarkdown),
-            ProviderId   = provider,
-            Model        = string.IsNullOrWhiteSpace(model) ? null : model,
-            Score        = Math.Clamp(score, 1, 100),
-            FlowScore    = flow.HasValue ? Math.Clamp(flow.Value, 1, 100) : null,
-            ReviewText   = "",
-            Improvements = string.IsNullOrWhiteSpace(weakness) ? null : weakness.Trim(),
-            ContentHash  = "",   // caller stamps the node-wide hash
-            BeatCount    = totalBeatCount,
-            ReviewedAt   = DateTime.UtcNow,
-            CreatedAt    = DateTime.UtcNow,
-            UpdatedAt    = DateTime.UtcNow,
+            Id             = Guid.CreateVersion7(),
+            NodeId         = nodeId,
+            PersonaId      = persona.Id,
+            PersonaName    = persona.Name,
+            PersonaBlurb   = FirstLine(persona.PersonalityMarkdown),
+            ProviderId     = provider,
+            Model          = string.IsNullOrWhiteSpace(model) ? null : model,
+            Score          = Math.Clamp(score, 1, 100),
+            FlowScore      = flow.HasValue ? Math.Clamp(flow.Value, 1, 100) : null,
+            ReviewText     = "",
+            Improvements   = string.IsNullOrWhiteSpace(proseGripe) ? null : proseGripe.Trim(),
+            Contradictions = string.IsNullOrWhiteSpace(logicGripe) ? null : logicGripe.Trim(),
+            ContentHash    = "",   // caller stamps the node-wide hash
+            BeatCount      = totalBeatCount,
+            ReviewedAt     = DateTime.UtcNow,
+            CreatedAt      = DateTime.UtcNow,
+            UpdatedAt      = DateTime.UtcNow,
         };
         if (beatScores != null)
             foreach (var kv in beatScores)
@@ -1114,7 +1128,7 @@ Return ONLY a JSON object, nothing else:
 
         // Fresh panel, disjoint from Group A (fresh eyes, no anchoring).
         var (_, groupAIds) = await GetGroupAsync("Group A", ct);
-        var personas = SampleEnrichedPersonasExcluding(panelSize, groupAIds.ToHashSet());
+        var personas = EditorPanel.GetPanel(panelSize, groupAIds.ToHashSet());
 
         var sem = new SemaphoreSlim(MaxConcurrency);
         var reviews = new System.Collections.Concurrent.ConcurrentBag<NodeReview>();
@@ -1206,18 +1220,6 @@ Return ONLY a JSON object, nothing else:
             for (int j = 0; j < beatCount; j++) m[i][j] = present[i][j] ?? colMean[j];
         }
         return m;
-    }
-
-    private static List<Persona> SampleEnrichedPersonasExcluding(int count, HashSet<string> exclude)
-    {
-        var pool = PersonaLibrary.Enriched.Where(p => !exclude.Contains(p.Id)).ToList();
-        var rng = Random.Shared;
-        for (int i = 0; i < Math.Min(count, pool.Count); i++)
-        {
-            int j = rng.Next(i, pool.Count);
-            (pool[i], pool[j]) = (pool[j], pool[i]);
-        }
-        return pool.Take(Math.Min(count, pool.Count)).ToList();
     }
 
     private async Task<NodeReview?> ReviewOnceAsync(
@@ -1326,7 +1328,7 @@ Return ONLY a JSON object, nothing else:
         // output budget must too (a 535-beat book node needs ~4k tokens of ballot).
         var maxTok = Math.Min(8000, 900 + export.BeatCount * 6);
         var raw = await route.Llm.CallAsync(provider, key!, model, system, export.Markdown, maxTokens: maxTok, temperature: 0.85, ct, cacheUserMessage: true);
-        if (!TryParseBallot(raw, export.BeatCount, out var score, out var flow, out var weakness, out var beatScores))
+        if (!TryParseBallot(raw, export.BeatCount, out var score, out var flow, out var proseGripe, out var logicGripe, out var beatScores))
         {
             log.LogWarning("Unparseable ballot from {Persona} via {Provider}", persona.Id, provider);
             return null;
@@ -1334,7 +1336,7 @@ Return ONLY a JSON object, nothing else:
         var review = new NodeReview
         {
             Id           = Guid.CreateVersion7(),
-            NodeId     = nodeId,
+            NodeId       = nodeId,
             PersonaId    = persona.Id,
             PersonaName  = persona.Name,
             PersonaBlurb = FirstLine(persona.PersonalityMarkdown),
@@ -1343,7 +1345,8 @@ Return ONLY a JSON object, nothing else:
             Score        = Math.Clamp(score, 1, 100),
             FlowScore    = flow.HasValue ? Math.Clamp(flow.Value, 1, 100) : null,
             ReviewText   = "",
-            Improvements = string.IsNullOrWhiteSpace(weakness) ? null : weakness.Trim(),
+            Improvements  = string.IsNullOrWhiteSpace(proseGripe) ? null : proseGripe.Trim(),
+            Contradictions = string.IsNullOrWhiteSpace(logicGripe) ? null : logicGripe.Trim(),
             ContentHash  = export.ContentHash,
             BeatCount    = export.BeatCount,
             ReviewedAt   = DateTime.UtcNow,
@@ -1389,10 +1392,11 @@ Judge each beat for how it LANDS IN CONTEXT (its job in the sequence), not its s
 Return ONLY a JSON object, nothing else:
 - ""score"": integer 1-100 — your overall reaction as this reader. Use the WHOLE scale; do not default to the 70s.
 - ""flow"": integer 1-100 — how well it hangs together as a sequence (momentum, payoffs, transitions), separate from beat quality.
-- ""weakness"": your single biggest gripe in EIGHT WORDS OR FEWER (e.g. ""ending drags"", ""kid's dialogue too writerly"", ""jargon overload""), or ""none"".
+- ""prose_gripe"": your sharpest CRAFT complaint in TEN WORDS OR FEWER (voice inconsistency, purple prose, flat sentences, repetitive cadence, unearned metaphor) — or ""none"".
+- ""logic_gripe"": your sharpest STORY-LOGIC complaint in TEN WORDS OR FEWER (causality gap, character knowledge error, timeline impossibility, orphaned setup, unearned resolution) — or ""none"".
 - ""beat_scores"": rate EVERY beat 1-5 in context (1 = hurt the story, 3 = fine, 5 = highlight), keyed by beat number 1..{beatCount}: {{""1"":4,""2"":3}}.
 
-Be honest and use the whole scale.";
+Be honest and use the whole scale. Gripes must name a SPECIFIC flaw, not praise with soft hedging.";
     }
 
     /// <summary>The persona's voice + their measured psychometric profile (from the
@@ -1874,7 +1878,7 @@ Be specific; do not invent praise the reviews don't support.";
         if (await db.FocusGroups.AnyAsync(g => g.Name == name, ct))
             throw new InvalidOperationException($"Focus group '{name}' already exists.");
         var used = (await db.FocusGroupMembers.Select(m => m.PersonaId).Distinct().ToListAsync(ct)).ToHashSet();
-        var personas = SampleEnrichedPersonasExcluding(size, used);
+        var personas = EditorPanel.GetPanel(size, used);
         if (personas.Count == 0)
             throw new InvalidOperationException("No un-used enriched personas left to staff a new disjoint panel.");
         var gid = await CreateGroupAsync(name, personas, ct);
@@ -1912,19 +1916,6 @@ Be specific; do not invent praise the reviews don't support.";
         foreach (var id in ids)
             if (byId.TryGetValue(id, out var p)) list.Add(p);
         return list;
-    }
-
-    private static List<Persona> SampleEnrichedPersonas(int count)
-    {
-        var pool = PersonaLibrary.Enriched.ToList();
-        var rng = Random.Shared;
-        // Fisher-Yates partial shuffle.
-        for (int i = 0; i < Math.Min(count, pool.Count); i++)
-        {
-            int j = rng.Next(i, pool.Count);
-            (pool[i], pool[j]) = (pool[j], pool[i]);
-        }
-        return pool.Take(Math.Min(count, pool.Count)).ToList();
     }
 
     private static string? FirstLine(string? s)
@@ -2075,12 +2066,13 @@ Be specific; do not invent praise the reviews don't support.";
         catch { return false; }
     }
 
-    /// <summary>Ballot parse: overall score + flow + one weakness tag + the per-beat
+    /// <summary>Ballot parse: overall score + flow + separate prose/logic gripes + the per-beat
     /// micro-score object. No prose review expected. Tolerant of fences/preamble.</summary>
     private static bool TryParseBallot(
-        string? raw, int beatCount, out int score, out int? flow, out string weakness, out Dictionary<int, int>? beatScores)
+        string? raw, int beatCount, out int score, out int? flow,
+        out string proseGripe, out string logicGripe, out Dictionary<int, int>? beatScores)
     {
-        score = 0; flow = null; weakness = ""; beatScores = null;
+        score = 0; flow = null; proseGripe = ""; logicGripe = ""; beatScores = null;
         if (string.IsNullOrWhiteSpace(raw)) return false;
         var text = raw.Trim();
         if (text.StartsWith("```"))
@@ -2107,8 +2099,14 @@ Be specific; do not invent praise the reviews don't support.";
                 if (fEl.ValueKind == JsonValueKind.Number && fEl.TryGetInt32(out var fi)) flow = fi;
                 else if (fEl.ValueKind == JsonValueKind.String && int.TryParse(fEl.GetString(), out var fs)) flow = fs;
             }
-            if (root.TryGetProperty("weakness", out var wEl) && wEl.ValueKind == JsonValueKind.String)
-                weakness = wEl.GetString() ?? "";
+            if (root.TryGetProperty("prose_gripe", out var pgEl) && pgEl.ValueKind == JsonValueKind.String)
+                proseGripe = pgEl.GetString() ?? "";
+            if (root.TryGetProperty("logic_gripe", out var lgEl) && lgEl.ValueKind == JsonValueKind.String)
+                logicGripe = lgEl.GetString() ?? "";
+            // Backward-compat: old ballots used a single "weakness" field.
+            if (string.IsNullOrWhiteSpace(proseGripe) && string.IsNullOrWhiteSpace(logicGripe)
+                && root.TryGetProperty("weakness", out var wEl) && wEl.ValueKind == JsonValueKind.String)
+                proseGripe = wEl.GetString() ?? "";
             if (root.TryGetProperty("beat_scores", out var bEl) && bEl.ValueKind == JsonValueKind.Object)
             {
                 var d = new Dictionary<int, int>();
@@ -2225,7 +2223,7 @@ Be specific; do not invent praise the reviews don't support.";
         if (route.Providers.Count == 0)
             throw new InvalidOperationException("No trusted LLM providers are configured — cannot run delta review.");
 
-        var personas = SampleEnrichedPersonas(ballotCount);
+        var personas = EditorPanel.GetPanel(ballotCount);
         var sem = new SemaphoreSlim(route.MaxConcurrencyValue);
         var bag = new System.Collections.Concurrent.ConcurrentBag<NodeReview>();
         var done = 0; var failed = 0;

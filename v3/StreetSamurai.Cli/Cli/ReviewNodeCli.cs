@@ -39,7 +39,7 @@ public static class ReviewNodeCli
         int readers = settings.ReviewReaders, panel = settings.ReviewPanel,
             ballots = settings.ReviewBallots, prose = settings.ReviewProse;
         bool samePersonas = false, study = false, census = false, skipDiagnosis = false, byAct = false, delta = false;
-        bool allowVotes = false;
+        bool allowVotes = false, forceReview = false;
         bool useLocal = false; string? localModel = null, localUrl = null, localKey = null, localLabel = null, modelOverride = null, providersOverride = null, modelMapRaw = null; int localCtx = 0;
         int segChars = 90000, segBallots = 8;
         // RFC 0009 §2 — cost tier. Explicit --ballots/--prose/--skip-diagnosis still win over the tier.
@@ -79,6 +79,7 @@ public static class ReviewNodeCli
                 case "--local-ctx":       if (i + 1 < args.Length && int.TryParse(args[++i], out var lc)) localCtx = lc; break;
                 case "--local-label":     if (i + 1 < args.Length) localLabel = args[++i]; break;
                 case "--allow-votes":     allowVotes = true; break;
+                case "--force":           forceReview = true; break;
             }
         }
 
@@ -302,6 +303,29 @@ public static class ReviewNodeCli
                 + (useLocal ? $"all on local model {localTag}" : "round-robin across the trusted-4")
                 + (profile?.CheapModels == true && !useLocal ? ", on cheap models" : "") + $") + {prose} prose upgrades"
                 + (skipDiagnosis ? " — diagnosis skipped" : " + structural diagnosis") + " — one pass.");
+            // ── Cost estimate + confirmation ──────────────────────────────────
+            if (!forceReview)
+            {
+                try
+                {
+                    var costModel = useLocal ? null : ReviewCostEstimator.CheapModelFor("claude-api");
+                    var estimate  = await reviewer.EstimateCostAsync(nodeId, ballots, ballotOnly: prose <= 0, model: costModel);
+                    Console.WriteLine();
+                    Console.WriteLine(ReviewCostEstimator.RenderTable(estimate));
+                    Console.Write("Proceed with this review? [y/N] ");
+                    var answer = Console.ReadLine()?.Trim().ToLowerInvariant();
+                    if (answer is not ("y" or "yes"))
+                    {
+                        Console.WriteLine("[review-node] Cancelled.");
+                        return 0;
+                    }
+                    Console.WriteLine();
+                }
+                catch (Exception ex)
+                {
+                    Console.Error.WriteLine($"[review-node] Cost estimate failed (proceeding anyway): {ex.Message}");
+                }
+            }
             Console.WriteLine("[review-node] Running…");
             var bp = new Progress<int>(k => { if (k == ballots || k % 5 == 0) Console.WriteLine($"   …{k}/{ballots} ballots done"); });
             try
