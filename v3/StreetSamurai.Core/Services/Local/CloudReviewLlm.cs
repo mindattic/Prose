@@ -18,6 +18,8 @@ public sealed class CloudReviewLlm : IReviewLlm
     public Task<string> CallAsync(
         string providerId, string apiKey, string model,
         string systemPrompt, string userMessage,
-        int maxTokens = 2048, double temperature = 0.7, CancellationToken ct = default)
-        => legion.CallAsync(providerId, apiKey, model, systemPrompt, userMessage, maxTokens, temperature, ct);
+        int maxTokens = 2048, double temperature = 0.7, CancellationToken ct = default,
+        bool cacheUserMessage = false)
+        => legion.CallAsync(providerId, apiKey, model, systemPrompt, userMessage, maxTokens, temperature, ct,
+            cachedSystemPrefix: null, cacheUserMessage: cacheUserMessage);
 }

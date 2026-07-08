@@ -39,7 +39,8 @@ public sealed class LocalReviewLlm : IReviewLlm
     public async Task<string> CallAsync(
         string providerId, string apiKey, string model,
         string systemPrompt, string userMessage,
-        int maxTokens = 2048, double temperature = 0.7, CancellationToken ct = default)
+        int maxTokens = 2048, double temperature = 0.7, CancellationToken ct = default,
+        bool cacheUserMessage = false)
     {
         var endpoint = settings.LocalReviewBaseUrl;
         if (string.IsNullOrWhiteSpace(endpoint))

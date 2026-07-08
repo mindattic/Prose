@@ -1235,7 +1235,7 @@ Return ONLY a JSON object, nothing else:
             : BuildReviewerSystemPrompt(persona, export.Title);
         // study mode also returns a per-beat score object — budget grows with beat count
         var maxTok = studyMode ? Math.Min(8000, Math.Max(2400, 900 + export.BeatCount * 6)) : 1400;
-        var raw = await legion.CallAsync(provider, key!, model, system, export.Markdown, maxTokens: maxTok, temperature: 0.85, ct);
+        var raw = await legion.CallAsync(provider, key!, model, system, export.Markdown, maxTokens: maxTok, temperature: 0.85, ct, cacheUserMessage: true);
 
         int score; string reviewText; List<string> improvements;
         int? flow = null; Dictionary<int, int>? beatScores = null;
@@ -1325,7 +1325,7 @@ Return ONLY a JSON object, nothing else:
         // beat_scores must cover every beat — the JSON grows with beat count, so the
         // output budget must too (a 535-beat book node needs ~4k tokens of ballot).
         var maxTok = Math.Min(8000, 900 + export.BeatCount * 6);
-        var raw = await route.Llm.CallAsync(provider, key!, model, system, export.Markdown, maxTokens: maxTok, temperature: 0.85, ct);
+        var raw = await route.Llm.CallAsync(provider, key!, model, system, export.Markdown, maxTokens: maxTok, temperature: 0.85, ct, cacheUserMessage: true);
         if (!TryParseBallot(raw, export.BeatCount, out var score, out var flow, out var weakness, out var beatScores))
         {
             log.LogWarning("Unparseable ballot from {Persona} via {Provider}", persona.Id, provider);
@@ -1372,7 +1372,7 @@ Return ONLY a JSON object, nothing else:
         if (string.IsNullOrWhiteSpace(key)) return null;
         var model = route.ModelFor(provider, cheapModels);
         var system = BuildReviewerSystemPrompt(persona, export.Title);
-        var raw = await route.Llm.CallAsync(provider, key!, model, system, export.Markdown, maxTokens: 1400, temperature: 0.85, ct);
+        var raw = await route.Llm.CallAsync(provider, key!, model, system, export.Markdown, maxTokens: 1400, temperature: 0.85, ct, cacheUserMessage: true);
         return TryParseReview(raw, out _, out var review, out var improvements) ? (review, improvements) : null;
     }
 

@@ -29,5 +29,6 @@ public interface IReviewLlm
         string userMessage,
         int maxTokens = 2048,
         double temperature = 0.7,
-        CancellationToken ct = default);
+        CancellationToken ct = default,
+        bool cacheUserMessage = false);
 }
