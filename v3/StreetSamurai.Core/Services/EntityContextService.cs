@@ -278,32 +278,45 @@ public sealed class EntityContextService(
 
         if (string.IsNullOrWhiteSpace(claimsText)) return;
 
-        foreach (var line in claimsText.Split('\n', StringSplitOptions.RemoveEmptyEntries | StringSplitOptions.TrimEntries))
+        // Parse all claim lines into (entity, claim) pairs first
+        var claims = claimsText
+            .Split('\n', StringSplitOptions.RemoveEmptyEntries | StringSplitOptions.TrimEntries)
+            .Select(line =>
+            {
+                var parts = line.Split('|', 2);
+                if (parts.Length != 2) return default;
+                var entityName = parts[0].Trim().Trim('"');
+                var proseClaim = parts[1].Trim();
+                if (string.IsNullOrWhiteSpace(proseClaim)) return default;
+                var entity = activeEntities.FirstOrDefault(e =>
+                    string.Equals(e.Name, entityName, StringComparison.OrdinalIgnoreCase));
+                return entity == null ? default : (entity, proseClaim);
+            })
+            .Where(c => c != default)
+            .ToList();
+
+        if (claims.Count == 0) return;
+
+        // Run all YES/NO conflict checks concurrently — each is independent
+        var checkSystem = "You detect factual conflicts between a prose claim and a canon entity description. Answer YES or NO only.";
+        var verdicts = await Task.WhenAll(claims.Select(async c =>
         {
-            var parts = line.Split('|', 2);
-            if (parts.Length != 2) continue;
+            var checkUser = $"Entity: {c.entity.Name} ({c.entity.EntityType})\nCanon: {c.entity.Description[..Math.Min(c.entity.Description.Length, 350)]}\n\nProse claims: \"{c.proseClaim}\"\n\nIs there a factual conflict?";
+            try
+            {
+                var v = await llm.GenerateAsync(checkSystem, checkUser, temperature: 0.0, maxTokens: 5, model: LlmModels.Haiku, ct: ct);
+                return (c.entity, c.proseClaim, isConflict: v.Contains("YES", StringComparison.OrdinalIgnoreCase));
+            }
+            catch { return (c.entity, c.proseClaim, isConflict: false); }
+        }));
 
-            var entityName = parts[0].Trim().Trim('"');
-            var proseClaim = parts[1].Trim();
-            if (string.IsNullOrWhiteSpace(proseClaim)) continue;
-
-            var entity = activeEntities.FirstOrDefault(e =>
-                string.Equals(e.Name, entityName, StringComparison.OrdinalIgnoreCase));
-            if (entity == null) continue;
-
-            // Cheap YES/NO conflict check
-            var checkSystem = "You detect factual conflicts between a prose claim and a canon entity description. Answer YES or NO only.";
-            var checkUser = $"Entity: {entity.Name} ({entity.EntityType})\nCanon: {entity.Description[..Math.Min(entity.Description.Length, 350)]}\n\nProse claims: \"{proseClaim}\"\n\nIs there a factual conflict?";
-
-            string verdict;
-            try { verdict = await llm.GenerateAsync(checkSystem, checkUser, temperature: 0.0, maxTokens: 5, model: LlmModels.Haiku, ct: ct); }
-            catch { continue; }
-
-            if (!verdict.Contains("YES", StringComparison.OrdinalIgnoreCase)) continue;
+        // Handle confirmed conflicts sequentially (rare — Legion calls are expensive)
+        foreach (var (entity, proseClaim, isConflict) in verdicts)
+        {
+            if (!isConflict) continue;
 
             log.LogInformation("Entity conflict: {Name} — prose says: {Claim}", entity.Name, proseClaim);
 
-            // Legion decides: fix prose or update entity
             string legionChoice;
             string legionReasoning;
             try

@@ -316,10 +316,16 @@ public class ProseWriterRouter(
         }
 
         // Narrative summary: rolling compressed memory of prior beats — long-node coherence.
+        // LoadAsync restores the chain from DB so it survives app restarts.
         var narrativeSummaryContext = context.NarrativeSummaryContext;
-        if (string.IsNullOrEmpty(narrativeSummaryContext) && narrativeSummary != null && context.NodeId != Guid.Empty)
+        if (narrativeSummary != null && context.NodeId != Guid.Empty)
         {
-            try { narrativeSummaryContext = narrativeSummary.GetSummaryChain(); }
+            try
+            {
+                await narrativeSummary.LoadAsync(context.NodeId, ct);
+                if (string.IsNullOrEmpty(narrativeSummaryContext))
+                    narrativeSummaryContext = narrativeSummary.GetSummaryChain();
+            }
             catch { /* non-blocking */ }
         }
 
@@ -503,9 +509,9 @@ public class ProseWriterRouter(
             if (readerKnowledge != null && capturedNodeId != Guid.Empty && !string.IsNullOrWhiteSpace(capturedResult))
                 await readerKnowledge.ExtractAsync(capturedResult, capturedNodeId, CancellationToken.None);
 
-            // Compress completed beat into rolling narrative summary for next beat.
+            // Compress completed beat into rolling narrative summary and persist for next session.
             if (narrativeSummary != null && capturedNodeId != Guid.Empty && !string.IsNullOrWhiteSpace(capturedResult))
-                await narrativeSummary.SummarizeSceneAsync(capturedResult, CancellationToken.None);
+                await narrativeSummary.SummarizeSceneAsync(capturedResult, capturedNodeId, beatId == Guid.Empty ? null : beatId, CancellationToken.None);
 
             // Open threads: detect new setups, mark resolved threads from this beat.
             if (openThreads != null && capturedNodeId != Guid.Empty && beatId != Guid.Empty && !string.IsNullOrWhiteSpace(capturedResult))

@@ -188,7 +188,7 @@ public class SceneGenerationService
 
         // Compress completed scene into summary for the narrative chain
         if (sceneSoFar.Length > 0)
-            await summaries.SummarizeSceneAsync(sceneSoFar, ct);
+            await summaries.SummarizeSceneAsync(sceneSoFar, ct: ct);
 
         return scene with { Beats = beats };
     }

@@ -1,23 +1,50 @@
+using Microsoft.EntityFrameworkCore;
+using StreetSamurai.Core.Data;
+using StreetSamurai.Core.Data.Entities;
 using StreetSamurai.Core.Interfaces;
 
 namespace StreetSamurai.Core.Services;
 
 /// <summary>
 /// Maintains a compressed scene-to-scene memory chain. After each scene,
-/// generates a 3-4 sentence summary. The next scene gets the summary chain
-/// instead of the full text — enabling long-form coherence without burning
-/// context tokens.
+/// generates a 3-4 sentence summary and persists it so the chain survives
+/// app restarts. The next scene gets the summary chain instead of the full
+/// text — enabling long-form coherence without burning context tokens.
 /// </summary>
 public class NarrativeSummaryService
 {
     private readonly ILlmService llm;
+    private readonly IDbContextFactory<StreetSamuraiDbContext>? dbFactory;
 
-    // Running chain of summaries — acts as the story's short-term memory
+    // Running chain of summaries for the current node (loaded from DB on init)
     private readonly List<string> summaryChain = [];
+    private Guid loadedNodeId = Guid.Empty;
 
-    public NarrativeSummaryService(ILlmService llm)
+    public NarrativeSummaryService(ILlmService llm, IDbContextFactory<StreetSamuraiDbContext>? dbFactory = null)
     {
         this.llm = llm;
+        this.dbFactory = dbFactory;
+    }
+
+    /// <summary>
+    /// Load the persisted summary chain for <paramref name="nodeId"/> from the database.
+    /// Call this once before writing beats on a node (typically from ProseWriterRouter).
+    /// </summary>
+    public async Task LoadAsync(Guid nodeId, CancellationToken ct = default)
+    {
+        if (nodeId == Guid.Empty || nodeId == loadedNodeId || dbFactory == null) return;
+
+        await using var db = await dbFactory.CreateDbContextAsync(ct);
+        var entries = await db.NarrativeSummaryEntries
+            .AsNoTracking()
+            .Where(e => e.NodeId == nodeId)
+            .OrderBy(e => e.SortKey)
+            .Select(e => e.Summary)
+            .ToListAsync(ct);
+
+        summaryChain.Clear();
+        summaryChain.AddRange(entries);
+        loadedNodeId = nodeId;
     }
 
     /// <summary>The full summary chain formatted for injection into the next scene's prompt.</summary>
@@ -34,8 +61,12 @@ public class NarrativeSummaryService
             + string.Join("\n", recent.Select((s, i) => $"Scene {i + 1}: {s}"));
     }
 
-    /// <summary>Compress a completed scene into a brief summary and add to the chain.</summary>
-    public async Task SummarizeSceneAsync(string sceneText, CancellationToken ct = default)
+    /// <summary>Compress a completed scene into a brief summary and persist it.</summary>
+    public async Task SummarizeSceneAsync(
+        string sceneText,
+        Guid nodeId = default,
+        Guid? beatId = null,
+        CancellationToken ct = default)
     {
         if (string.IsNullOrWhiteSpace(sceneText)) return;
 
@@ -47,11 +78,41 @@ public class NarrativeSummaryService
             """;
 
         var summary = await llm.GenerateAsync(system, sceneText, 0.3, 256, model: LlmModels.Haiku, ct: ct);
-        summaryChain.Add(summary.Trim());
+        var trimmed = summary.Trim();
+
+        summaryChain.Add(trimmed);
+
+        // Persist so the chain survives restarts (no-op when dbFactory is null, e.g. in unit tests)
+        if (nodeId != Guid.Empty && dbFactory != null)
+        {
+            try
+            {
+                await using var db = await dbFactory.CreateDbContextAsync(ct);
+                var sortKey = await db.NarrativeSummaryEntries
+                    .Where(e => e.NodeId == nodeId)
+                    .CountAsync(ct) + 1;
+
+                db.NarrativeSummaryEntries.Add(new NarrativeSummaryEntry
+                {
+                    Id         = Guid.CreateVersion7(),
+                    NodeId     = nodeId,
+                    BeatId     = beatId,
+                    SortKey    = sortKey,
+                    Summary    = trimmed.Length > 2000 ? trimmed[..2000] : trimmed,
+                    RecordedAt = DateTime.UtcNow,
+                });
+                await db.SaveChangesAsync(ct);
+            }
+            catch { /* non-fatal — chain is still in-memory for this session */ }
+        }
     }
 
-    /// <summary>Clear the chain (for new story).</summary>
-    public void Reset() => summaryChain.Clear();
+    /// <summary>Clear the in-memory chain (does not delete DB entries).</summary>
+    public void Reset()
+    {
+        summaryChain.Clear();
+        loadedNodeId = Guid.Empty;
+    }
 
     /// <summary>Get the number of scenes summarized.</summary>
     public int SceneCount => summaryChain.Count;
