@@ -340,6 +340,11 @@ public static class ReviewNodeCli
                 Console.WriteLine($"[review-node] Node {sr.MeanScore}/100  (SD {sr.Sd}, 95% CI ±{sr.Ci95})  ·  {sr.Clusters} clusters  ·  fingerprint {sr.ContentHash[..Math.Min(12, sr.ContentHash.Length)]}");
                 if (!string.IsNullOrEmpty(sr.ReportHtmPath))  Console.WriteLine($"[review-node] Report (open in browser): {sr.ReportHtmPath}");
                 if (!string.IsNullOrEmpty(sr.ReportJsonPath)) Console.WriteLine($"[review-node] Report data (JSON):       {sr.ReportJsonPath}");
+                if (!string.IsNullOrEmpty(sr.ActualCostTable))
+                {
+                    Console.WriteLine();
+                    Console.WriteLine(sr.ActualCostTable);
+                }
                 Console.WriteLine();
                 Console.WriteLine(sr.ReportMarkdown);
 

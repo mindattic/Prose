@@ -249,7 +249,9 @@ public class NodeReviewService
         bool BlockedByStructure = false,
         StructuralDiagnosisResult? StructuralDiagnosis = null,
         // Per-run review report (voters JSON + filterable HTM viewer); null if export failed.
-        string? ReportJsonPath = null, string? ReportHtmPath = null);
+        string? ReportJsonPath = null, string? ReportHtmPath = null,
+        // Formatted actual-spend receipt printed after the run completes.
+        string? ActualCostTable = null);
 
     /// <summary>Export this run's own ballots to a portable report (voters JSON + a
     /// filterable HTM viewer) under the export dir. Best-effort: a failure here never
@@ -409,6 +411,10 @@ public class NodeReviewService
         var groupName = $"Group Sample {export.ContentHash[..6]}";
         var personas = EditorPanel.GetPanel(ballotCount);
 
+        // Track actual output chars across all API calls (ballot + prose) for the receipt.
+        long rawOutputChars = 0L;
+        void TrackOutput(int chars) => Interlocked.Add(ref rawOutputChars, chars);
+
         // ── Prose-lessons injection ───────────────────────────────────────────
         // Resolve the node slug (needed for node-scoped lessons). Fetched once
         // here and captured into the lambda closures below so each ballot call
@@ -438,7 +444,7 @@ public class NodeReviewService
                 await sem.WaitAsync(ct);
                 try
                 {
-                    var r = await BallotOnceAsync(nodeId, export, persona, provider, route, ct, lessonsBlock, cheapModels, beatHashes);
+                    var r = await BallotOnceAsync(nodeId, export, persona, provider, route, ct, lessonsBlock, cheapModels, beatHashes, TrackOutput);
                     if (r != null) { r.FocusGroupName = groupName; bag.Add(r); }
                     else Interlocked.Increment(ref failed);
                 }
@@ -466,7 +472,7 @@ public class NodeReviewService
                     await sem.WaitAsync(ct);
                     try
                     {
-                        var r = await BallotOnceAsync(nodeId, export, persona, provider, route, ct, lessonsBlock, cheapModels);
+                        var r = await BallotOnceAsync(nodeId, export, persona, provider, route, ct, lessonsBlock, cheapModels, trackOutput: TrackOutput);
                         if (r != null) { r.FocusGroupName = groupName; bag.Add(r); }
                     }
                     catch (Exception ex) { log.LogWarning(ex, "Retry ballot failed: {P}", persona.Id); }
@@ -495,7 +501,7 @@ public class NodeReviewService
                 {
                     var persona = PersonasByIds(new[] { rv.PersonaId }).FirstOrDefault();
                     if (persona == null) return;
-                    var prose = await ProseOnceAsync(export, persona, rv.ProviderId, route, ct, cheapModels);
+                    var prose = await ProseOnceAsync(export, persona, rv.ProviderId, route, ct, cheapModels, TrackOutput);
                     if (prose != null)
                     {
                         rv.ReviewText = prose.Value.review.Trim();
@@ -553,10 +559,27 @@ public class NodeReviewService
         var (reportJson, reportHtm) = await WriteRunReportAsync(nodeId, export.Title, export.ContentHash,
             beatCount, useLocal, localModelOverride, saved, Math.Round(mean, 1), Math.Round(sd, 1), Math.Round(ci, 2), clusters, ct);
 
+        // ── Build the actual-spend receipt ────────────────────────────────────
+        var totalCallsMade = saved.Count + proseAdded;
+        var actualOutputTokens = (int)(rawOutputChars / 4);
+        var receiptModel = saved.FirstOrDefault()?.Model
+                           ?? ReviewCostEstimator.CheapModelFor("claude-api");
+        var ballotOnlyRun = proseAdded == 0;
+        string? actualCostTable = null;
+        try
+        {
+            var actualEstimate = ReviewCostEstimator.EstimateActual(
+                export.Title, beatCount, export.Markdown.Length / 4,
+                totalCallsMade, receiptModel, ballotOnlyRun, actualOutputTokens);
+            actualCostTable = ReviewCostEstimator.RenderActualTable(actualEstimate, actualOutputTokens);
+        }
+        catch (Exception ex) { log.LogWarning(ex, "Could not compute actual cost receipt"); }
+
         return new SampledRunResult(personas.Count, saved.Count, proseAdded, failed,
             Math.Round(mean, 1), Math.Round(sd, 1), Math.Round(ci, 2), clusters,
             export.ContentHash, report, export.Path,
-            ReportJsonPath: reportJson, ReportHtmPath: reportHtm);
+            ReportJsonPath: reportJson, ReportHtmPath: reportHtm,
+            ActualCostTable: actualCostTable);
     }
 
     /// <summary>Segmented (per-act) review for large books that can't be reviewed
@@ -1317,7 +1340,8 @@ Return ONLY a JSON object, nothing else:
 
     private async Task<NodeReview?> BallotOnceAsync(
         Guid nodeId, NodeMarkdownExporter.NodeExport export, Persona persona, string provider, ReviewRoute route, CancellationToken ct,
-        string? lessonsBlock = null, bool cheapModels = false, IReadOnlyDictionary<int, string>? beatHashes = null)
+        string? lessonsBlock = null, bool cheapModels = false, IReadOnlyDictionary<int, string>? beatHashes = null,
+        Action<int>? trackOutput = null)
     {
         var key = route.KeyFor(provider);
         if (string.IsNullOrWhiteSpace(key)) { log.LogWarning("No API key for provider {Provider}", provider); return null; }
@@ -1328,6 +1352,7 @@ Return ONLY a JSON object, nothing else:
         // output budget must too (a 535-beat book node needs ~4k tokens of ballot).
         var maxTok = Math.Min(8000, 900 + export.BeatCount * 6);
         var raw = await route.Llm.CallAsync(provider, key!, model, system, export.Markdown, maxTokens: maxTok, temperature: 0.85, ct, cacheUserMessage: true);
+        trackOutput?.Invoke(raw?.Length ?? 0);
         if (!TryParseBallot(raw, export.BeatCount, out var score, out var flow, out var proseGripe, out var logicGripe, out var beatScores))
         {
             log.LogWarning("Unparseable ballot from {Persona} via {Provider}", persona.Id, provider);
@@ -1369,13 +1394,14 @@ Return ONLY a JSON object, nothing else:
     /// the most informative ballots with readable text (returns text only).</summary>
     private async Task<(string review, List<string> improvements)?> ProseOnceAsync(
         NodeMarkdownExporter.NodeExport export, Persona persona, string provider, ReviewRoute route, CancellationToken ct,
-        bool cheapModels = false)
+        bool cheapModels = false, Action<int>? trackOutput = null)
     {
         var key = route.KeyFor(provider);
         if (string.IsNullOrWhiteSpace(key)) return null;
         var model = route.ModelFor(provider, cheapModels);
         var system = BuildReviewerSystemPrompt(persona, export.Title);
         var raw = await route.Llm.CallAsync(provider, key!, model, system, export.Markdown, maxTokens: 1400, temperature: 0.85, ct, cacheUserMessage: true);
+        trackOutput?.Invoke(raw?.Length ?? 0);
         return TryParseReview(raw, out _, out var review, out var improvements) ? (review, improvements) : null;
     }
 
