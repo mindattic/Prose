@@ -1,6 +1,6 @@
 # NODE BIBLE: It Came From Iowa (ICFI)
 
-**Status:** Active — pre-prose
+**Status:** Complete — 14 beats written
 **Universe:** GLMZ (2226)
 **Kind:** Story
 **Slug:** `it-came-from-iowa-019f3eb2`
@@ -25,7 +25,7 @@ A Behemoth with no registry and no kill-switch walks fifty miles toward the edge
 
 **CJ's vehicle:** ArcSec Eigenlift repulsor skimmer — hovers 2 to 3 feet off any surface, never truly airborne. Cruises at 45 mph. Quiet when healthy: low hum, no engine noise. Can cross open fields, drainage ditches, road debris. CJ rides out from Dixon and intercepts the machine near Lyndon, riding alongside the old 88 corridor. This is the Twister element: she runs ahead, circles back, positions herself for the next intercept point, watching the machine from fifty feet away.
 
-**The landscape:** GLMZ has swallowed the Midwest. Even out here on the old 88 corridor, Eigenlift towers rise from the Illinois fields — 30-story vertical structures built without clearing the surrounding corn. Corn, corn, corn, then a tower, then corn again. No suburbs, no transition. The machine walks between them as if they are just more tall things in a flat land. This is the kaiju visual: a hull the color of old brass, forty feet high, framed against cornfields and skyscrapers with no city in between.
+**The landscape:** GLMZ has swallowed the Midwest. Even out here on the old 88 corridor, Eigenlift towers rise from the Illinois fields — 30-story vertical structures built without clearing the surrounding corn. Corn, corn, corn, then a tower, then corn again. No suburbs, no transition. The machine walks between them as if they are just more tall things in a flat land. This is the kaiju visual: a hull the color of old brass, ninety feet high, framed against cornfields and skyscrapers with no city in between.
 
 **Dixon, Illinois:** The closest GLMZ-administered zone on the machine's bearing. ArcSec buffer post, small regional Eigenlift node, the Rock River still running through it. CJ's posting. She has been here three months. Before this morning nothing had happened.
 
@@ -37,7 +37,7 @@ Before dawn, Wes walks out into the north field following a sound he has never h
 
 Wes stands at the edge of the clearing and watches one Behemoth mourn another.
 
-The machine begins to move south at dawn. Straight line. Five miles per hour. Wes catches the hull struts and climbs forty feet to the Crown. Pip — his terrier, male, opinionated about territory — trots alongside at the base of the tines with the confidence of a dog who has decided this is his business too.
+The machine begins to move south at dawn. Straight line. Five miles per hour. Wes cuts cross-field to the Riordan grain elevator at the county road — a hundred-foot concrete stave structure he has climbed twice on dares and never all the way. He knows the machine's route passes close enough. He climbs to the top platform and jumps across as the Crown passes level. Pip — his terrier, male, opinionated about territory — trots alongside at the base of the tines with the confidence of a dog who has decided this is his business too.
 
 Fifty miles away in Dixon, CJ Anderson has been posted to the outer buffer for three months. Her ArcSec alert board lights up at 0614: unregistered autonomous mass on direct bearing from Davenport, no transponder, no kill-switch response, 5 mph. Commander Hauser wants demolition assets pre-authorized. CJ asks for time. Hauser gives her less than she wants.
 
@@ -117,13 +117,13 @@ No manufacturer. No transponder. No registry. Wes has a name for it he has never
 - A drill-tine: soil core sampler.
 - A sowing tube: sealed, retracted. It has not sowed anything in a long time.
 
-**Scale:** Forty tons. Tine spread: roughly 25 feet across the base. Hull height at the Crown: 40 feet. When it steps, the ground registers it.
+**Scale:** Forty tons. Tine spread: roughly 25 feet across the base. Hull height at the Crown: 90 feet. When it steps, the ground registers it.
 
 **Movement — normal:** Precise, agricultural, near-silent. 0.25 mph. A smell of turned earth before you hear it. Footfalls aerate the soil.
 
 **Movement — traveling:** 5 mph. Stride interval roughly two seconds. Each footfall placed well enough to avoid what it can; not well enough to avoid everything smaller than it. You hear it from a quarter mile. You smell it from a hundred yards.
 
-**The Crown:** Flat apex of the carapace dome, 40 feet up. Room for one person. The machine's internal sounds transmit through the hull. The broadcast signal is in there.
+**The Crown:** Flat apex of the carapace dome, 90 feet up. Room for one person. The machine's internal sounds transmit through the hull. The broadcast signal is in there.
 
 **The sounds:**
 - *The mourning wail:* Low, sustained, between a chord and a groan. Not in any maintenance record. The machine has made this sound since it found the dead Behemoth.
@@ -153,7 +153,7 @@ Pip is there when Wes walks back. He will have made his own way home by then —
 |---|------|----------|
 | 1 | OPENING — Pre-dawn, Davenport area. Wes follows the mourning wail into the north field. Dead Behemoth in the tall grass. The living machine is prodding it, waiting. Wes stands at the edge and watches. | The gut-punch before the plot |
 | 2 | QUIET MOMENT — Pip trots across the clearing and sits down beside the dead machine. The living machine stops prodding. The wail again — quieter. Wes already knows what it means. At dawn, the machine begins to move. South. Five miles per hour. | Proof; trigger |
-| 3 | CROWN — Wes runs. He catches the hull struts, climbs 40 feet to the Crown. Pip appears at the base of the tines, trotting alongside. He does not stop. | Committed; the journey begins |
+| 3 | CROWN — Wes runs cross-field to the Riordan grain elevator at the county road, climbs to the top platform, and jumps onto the Crown as the machine passes. Pip appears at the base of the tines, trotting alongside. He does not stop. | Committed; the journey begins |
 | 4 | CJ'S TRACK — Dixon, 0614. CJ Anderson at her outer buffer post — halfway to Iowa or the edge of the world. Alert: unregistered mass, 5 mph, bearing from Davenport, no transponder, no kill-switch response. Hauser: *"First interdiction wave authorized."* | Parallel track; clock starts |
 | 5 | DRONES — First Eigenlift interdiction wave arrives in formation over the Hillsdale cornfields. The machine's scythe-arm takes them down one by one without breaking stride — no urgency, no targeting, the rotating blade catching each unit clean. Wes watches them fall into the corn. Pip does not look up. | King Kong; military futility |
 | 6 | SCAV CAMP — Near Erie. The machine's path crosses a buffer-zone scav camp. Wes on the Crown shouting for them to stop. A scav attaches a winch line to a forward tine. The machine steps. The tine comes down. The threat-wail starts — layered, wrong, the second frequency old in a way manufactured equipment should not be. The scavs scatter. The machine keeps walking. | Cost; the machine is not safe |
