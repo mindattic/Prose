@@ -1,6 +1,7 @@
 using Microsoft.EntityFrameworkCore;
 using StreetSamurai.Core.Data;
 using StreetSamurai.Core.Data.Entities;
+using System.Collections.Concurrent;
 
 namespace StreetSamurai.Core.Services;
 
@@ -21,6 +22,9 @@ public class UniversalFactsService
     private readonly IDbContextFactory<StreetSamuraiDbContext> dbFactory;
     private readonly IUniverseContext universe;
 
+    // WorldFacts is large, stable, and never changes mid-session; cache it per universe.
+    private static readonly ConcurrentDictionary<Guid, string> worldFactsCache = new();
+
     public UniversalFactsService(
         IDbContextFactory<StreetSamuraiDbContext> dbFactory,
         IUniverseContext universe)
@@ -37,13 +41,19 @@ public class UniversalFactsService
     {
         var id = universe.CurrentId;
         if (id == Guid.Empty) return "";
+
+        if (worldFactsCache.TryGetValue(id, out var cached))
+            return cached;
+
         await using var db = await dbFactory.CreateDbContextAsync(ct);
         var facts = await db.Set<Universe>()
             .AsNoTracking()
             .Where(u => u.Id == id)
             .Select(u => u.WorldFacts)
             .FirstOrDefaultAsync(ct);
-        return facts ?? "";
+        var value = facts ?? "";
+        worldFactsCache[id] = value;
+        return value;
     }
 
     /// <summary>
@@ -76,6 +86,7 @@ public class UniversalFactsService
             ?? throw new InvalidOperationException($"Universe {id} not found.");
         row.WorldFacts = string.IsNullOrWhiteSpace(facts) ? null : facts.Trim();
         await db.SaveChangesAsync(ct);
+        worldFactsCache.TryRemove(id, out _);
         universe.Refresh();
     }
 

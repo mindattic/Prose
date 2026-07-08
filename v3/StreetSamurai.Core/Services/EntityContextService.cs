@@ -272,7 +272,7 @@ public sealed class EntityContextService(
         string claimsText;
         try
         {
-            claimsText = await llm.GenerateAsync(extractSystem, extractUser, temperature: 0.1, maxTokens: 400, ct: ct);
+            claimsText = await llm.GenerateAsync(extractSystem, extractUser, temperature: 0.1, maxTokens: 400, model: LlmModels.Haiku, ct: ct);
         }
         catch { return; }
 
@@ -296,7 +296,7 @@ public sealed class EntityContextService(
             var checkUser = $"Entity: {entity.Name} ({entity.EntityType})\nCanon: {entity.Description[..Math.Min(entity.Description.Length, 350)]}\n\nProse claims: \"{proseClaim}\"\n\nIs there a factual conflict?";
 
             string verdict;
-            try { verdict = await llm.GenerateAsync(checkSystem, checkUser, temperature: 0.0, maxTokens: 5, ct: ct); }
+            try { verdict = await llm.GenerateAsync(checkSystem, checkUser, temperature: 0.0, maxTokens: 5, model: LlmModels.Haiku, ct: ct); }
             catch { continue; }
 
             if (!verdict.Contains("YES", StringComparison.OrdinalIgnoreCase)) continue;

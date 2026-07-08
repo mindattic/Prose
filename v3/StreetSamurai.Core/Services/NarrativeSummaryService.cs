@@ -46,7 +46,7 @@ public class NarrativeSummaryService
             Do NOT editorialize or add interpretation. Just the facts of what occurred.
             """;
 
-        var summary = await llm.GenerateAsync(system, sceneText, 0.3, 256, ct: ct);
+        var summary = await llm.GenerateAsync(system, sceneText, 0.3, 256, model: LlmModels.Haiku, ct: ct);
         summaryChain.Add(summary.Trim());
     }
 

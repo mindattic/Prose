@@ -40,6 +40,7 @@ public class OpenThreadsService(
             user: prose,
             temperature: 0.2,
             maxTokens: 400,
+            model: LlmModels.Haiku,
             ct: ct);
 
         if (string.IsNullOrWhiteSpace(raw) || raw.Trim().Equals("NONE", StringComparison.OrdinalIgnoreCase))
@@ -99,6 +100,7 @@ public class OpenThreadsService(
             user: $"OPEN THREADS:\n{threadList}\n\nPROSE:\n{prose}",
             temperature: 0.2,
             maxTokens: 100,
+            model: LlmModels.Haiku,
             ct: ct);
 
         if (string.IsNullOrWhiteSpace(raw) || raw.Trim().Equals("NONE", StringComparison.OrdinalIgnoreCase))

@@ -209,9 +209,13 @@ public class BeatGeneratorService
               "Earn the length with texture and interaction, never with summary or repetition. Make every word count."
             : "Write 2-4 paragraphs. Make every word count.";
 
+        var sceneSoFar = context.SceneSoFar?.Length > 6000
+            ? context.SceneSoFar[^6000..]
+            : context.SceneSoFar ?? "";
+
         var user = $"""
             SCENE SO FAR:
-            {context.SceneSoFar}
+            {sceneSoFar}
 
             BEAT GOAL: {context.BeatGoal}{subtextBlock}
 

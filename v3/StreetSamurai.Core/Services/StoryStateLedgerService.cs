@@ -127,6 +127,7 @@ public class StoryStateLedgerService(
                 user: prose,
                 temperature: 0.1,
                 maxTokens: 400,
+                model: LlmModels.Haiku,
                 ct: ct);
         }
         catch (Exception ex)
