@@ -253,7 +253,20 @@ public static class ReviewNodeCli
                 Console.WriteLine($"[review-node] {sr.BallotsSaved}/{sr.Ballots} ballots ({sr.Failed} failed).");
                 Console.WriteLine($"[review-node] Node {sr.MeanScore}/100  (SD {sr.Sd}, 95% CI ±{sr.Ci95})  ·  {sr.Clusters} clusters  ·  fingerprint {sr.ContentHash[..Math.Min(12, sr.ContentHash.Length)]}");
                 if (!string.IsNullOrEmpty(sr.ReportHtmPath))  Console.WriteLine($"[review-node] Report (open in browser): {sr.ReportHtmPath}");
-                if (!string.IsNullOrEmpty(sr.ReportJsonPath)) Console.WriteLine($"[review-node] Report data (JSON):       {sr.ReportJsonPath}");
+                if (!string.IsNullOrEmpty(sr.ActualCostTable))
+                {
+                    Console.WriteLine();
+                    Console.WriteLine(sr.ActualCostTable);
+                }
+                if (!string.IsNullOrEmpty(sr.ContentHash))
+                {
+                    try
+                    {
+                        var gripes = await reviewer.ConsolidateGripesAsync(nodeId, sr.ContentHash);
+                        if (!string.IsNullOrEmpty(gripes)) { Console.WriteLine(); Console.WriteLine(gripes); }
+                    }
+                    catch (Exception ex) { Console.Error.WriteLine($"[review-node] Gripe consolidation failed: {ex.Message}"); }
+                }
                 Console.WriteLine();
                 Console.WriteLine(sr.ReportMarkdown);
                 if (sr.BallotsSaved > 0)
@@ -339,11 +352,19 @@ public static class ReviewNodeCli
                 Console.WriteLine($"[review-node] {sr.BallotsSaved}/{sr.Ballots} ballots ({sr.Failed} failed), {sr.ProseAdded} prose upgraded.");
                 Console.WriteLine($"[review-node] Node {sr.MeanScore}/100  (SD {sr.Sd}, 95% CI ±{sr.Ci95})  ·  {sr.Clusters} clusters  ·  fingerprint {sr.ContentHash[..Math.Min(12, sr.ContentHash.Length)]}");
                 if (!string.IsNullOrEmpty(sr.ReportHtmPath))  Console.WriteLine($"[review-node] Report (open in browser): {sr.ReportHtmPath}");
-                if (!string.IsNullOrEmpty(sr.ReportJsonPath)) Console.WriteLine($"[review-node] Report data (JSON):       {sr.ReportJsonPath}");
                 if (!string.IsNullOrEmpty(sr.ActualCostTable))
                 {
                     Console.WriteLine();
                     Console.WriteLine(sr.ActualCostTable);
+                }
+                if (!string.IsNullOrEmpty(sr.ContentHash))
+                {
+                    try
+                    {
+                        var gripes = await reviewer.ConsolidateGripesAsync(nodeId, sr.ContentHash);
+                        if (!string.IsNullOrEmpty(gripes)) { Console.WriteLine(); Console.WriteLine(gripes); }
+                    }
+                    catch (Exception ex) { Console.Error.WriteLine($"[review-node] Gripe consolidation failed: {ex.Message}"); }
                 }
                 Console.WriteLine();
                 Console.WriteLine(sr.ReportMarkdown);

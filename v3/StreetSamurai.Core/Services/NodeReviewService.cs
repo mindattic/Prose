@@ -1576,6 +1576,151 @@ Return ONLY a JSON object and nothing else:
         return existing;
     }
 
+    // ── Gripe consolidation ────────────────────────────────────────────────────
+
+    private sealed class GripeGroupDto
+    {
+        public string Type    { get; set; } = "";
+        public string Issue   { get; set; } = "";
+        public List<GripeVoterDto> Voters { get; set; } = [];
+    }
+    private sealed class GripeVoterDto
+    {
+        public string Name  { get; set; } = "";
+        public int    Score { get; set; }
+        public string Quote { get; set; } = "";
+    }
+
+    /// <summary>Queries the run's ballots by content hash, asks Haiku to group
+    /// similar gripes under parent issues (one sentence each), and returns a
+    /// formatted console block. Falls back to a flat per-voter listing if the
+    /// LLM call fails or returns unparseable JSON.</summary>
+    public async Task<string> ConsolidateGripesAsync(Guid nodeId, string contentHash, CancellationToken ct = default)
+    {
+        await using var db = await dbFactory.CreateDbContextAsync(ct);
+        var reviews = await db.NodeReviews.AsNoTracking()
+            .Where(r => r.NodeId == nodeId && r.ContentHash == contentHash)
+            .Where(r => r.Improvements != null || r.Contradictions != null)
+            .OrderBy(r => r.Score)
+            .ToListAsync(ct);
+        if (reviews.Count == 0) return "";
+
+        var inputSb = new StringBuilder();
+        foreach (var r in reviews)
+        {
+            if (!string.IsNullOrWhiteSpace(r.Improvements))
+                inputSb.AppendLine($"PROSE | {r.PersonaName} ({r.Score}/100): {r.Improvements.Trim()}");
+            if (!string.IsNullOrWhiteSpace(r.Contradictions))
+                inputSb.AppendLine($"LOGIC | {r.PersonaName} ({r.Score}/100): {r.Contradictions.Trim()}");
+        }
+
+        try
+        {
+            var judgeId = settings.ReviewJudgeProvider;
+            var judge = cfg.ActiveProviderIds.Contains(judgeId)
+                ? judgeId
+                : cfg.ActiveProviderIds.FirstOrDefault() ?? "claude-api";
+            var key = ResolveKey(judge);
+            if (string.IsNullOrWhiteSpace(key)) return RenderGripesFlat(reviews);
+
+            const string system =
+                "You consolidate story reader gripes into distinct recurring issues. " +
+                "Each input gripe is labeled PROSE (craft issue) or LOGIC (story-logic issue).\n\n" +
+                "Group similar or identical gripes under a single concise parent issue — " +
+                "one specific sentence naming the actual problem. " +
+                "Under each parent issue, list each reader's exact words as the quote.\n\n" +
+                "Return ONLY a JSON array, nothing else:\n" +
+                "[{\"type\":\"prose\",\"issue\":\"...\",\"voters\":[{\"name\":\"...\",\"score\":N,\"quote\":\"...\"}]}]\n\n" +
+                "Both prose and logic go in the same array. " +
+                "Sort by voter count descending. " +
+                "A unique gripe with only one reader still gets its own entry. " +
+                "Do NOT invent or rephrase problems that are not in the input.";
+
+            var raw = await cloudLlm.CallAsync(judge, key!, "claude-haiku-4-5-20251001",
+                system, $"Gripes from {reviews.Count} readers:\n\n{inputSb}",
+                maxTokens: 3000, temperature: 0.3, ct);
+
+            var text = raw?.Trim() ?? "";
+            if (text.StartsWith("```"))
+            {
+                var nl = text.IndexOf('\n');
+                if (nl >= 0) text = text[(nl + 1)..];
+                if (text.EndsWith("```")) text = text[..^3];
+                text = text.Trim();
+            }
+            var aOpen  = text.IndexOf('[');
+            var aClose = text.LastIndexOf(']');
+            if (aOpen < 0 || aClose <= aOpen) return RenderGripesFlat(reviews);
+
+            var groups = JsonSerializer.Deserialize<List<GripeGroupDto>>(
+                text[aOpen..(aClose + 1)],
+                new JsonSerializerOptions { PropertyNameCaseInsensitive = true });
+            if (groups == null || groups.Count == 0) return RenderGripesFlat(reviews);
+            return RenderGripesGrouped(groups, reviews.Count);
+        }
+        catch (Exception ex)
+        {
+            log.LogWarning(ex, "Gripe consolidation LLM call failed — falling back to flat list");
+            return RenderGripesFlat(reviews);
+        }
+    }
+
+    private static string RenderGripesGrouped(List<GripeGroupDto> groups, int totalWithGripes)
+    {
+        var sep = new string('━', 60);
+        var sb = new StringBuilder();
+        sb.AppendLine(sep);
+        sb.AppendLine($"  CONSOLIDATED GRIPES  ({totalWithGripes} voter{(totalWithGripes == 1 ? "" : "s")} with feedback)");
+        sb.AppendLine(sep);
+
+        var prose = groups.Where(g => g.Type.Equals("prose", StringComparison.OrdinalIgnoreCase)).ToList();
+        var logic = groups.Where(g => g.Type.Equals("logic", StringComparison.OrdinalIgnoreCase)).ToList();
+
+        void WriteSection(string label, List<GripeGroupDto> items)
+        {
+            sb.AppendLine();
+            sb.AppendLine($"  {label}");
+            if (items.Count == 0) { sb.AppendLine("  (none)"); return; }
+            for (int i = 0; i < items.Count; i++)
+            {
+                var g = items[i];
+                var voterLabel = g.Voters.Count == 1 ? "1 reader" : $"{g.Voters.Count} readers";
+                sb.AppendLine();
+                sb.AppendLine($"  #{i + 1} · {g.Issue}  [{voterLabel}]");
+                foreach (var v in g.Voters)
+                    sb.AppendLine($"      {v.Name} ({v.Score}/100): {v.Quote.Trim()}");
+            }
+        }
+
+        WriteSection("PROSE — craft issues", prose);
+        WriteSection("LOGIC — story issues", logic);
+
+        sb.AppendLine();
+        sb.Append(sep);
+        return sb.ToString();
+    }
+
+    private static string RenderGripesFlat(List<NodeReview> reviews)
+    {
+        var sep = new string('━', 60);
+        var sb = new StringBuilder();
+        sb.AppendLine(sep);
+        sb.AppendLine($"  VOTER GRIPES  ({reviews.Count} voter{(reviews.Count == 1 ? "" : "s")} with feedback, lowest score first)");
+        sb.AppendLine(sep);
+        foreach (var r in reviews)
+        {
+            sb.AppendLine();
+            sb.AppendLine($"  [{r.Score}/100] {r.PersonaName}");
+            if (!string.IsNullOrWhiteSpace(r.Improvements))
+                sb.AppendLine($"  PROSE  {r.Improvements.Trim()}");
+            if (!string.IsNullOrWhiteSpace(r.Contradictions))
+                sb.AppendLine($"  LOGIC  {r.Contradictions.Trim()}");
+        }
+        sb.AppendLine();
+        sb.Append(sep);
+        return sb.ToString();
+    }
+
     private async Task<string> SynthesizeSummaryAsync(
         List<NodeReview> reviews, double avg, Dictionary<string, int> dist, CancellationToken ct,
         bool useLocal = false, string? localModelOverride = null)
