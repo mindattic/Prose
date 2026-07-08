@@ -477,8 +477,16 @@ Set jargon_count to an integer. pass = 0-2 jargon terms before first physical be
                 "fail" => StructuralCheckResult.Fail,
                 _      => StructuralCheckResult.Warn,
             };
-            var evidence = root.TryGetProperty("evidence", out var ep) ? ep.GetString() ?? "" : "";
-            var fix      = root.TryGetProperty("fix",      out var fp) ? fp.GetString() ?? "" : "";
+            var evidence = root.TryGetProperty("evidence", out var ep)
+                ? ep.ValueKind == JsonValueKind.Array
+                    ? string.Join(", ", ep.EnumerateArray().Select(e => e.GetString() ?? "").Where(s => s.Length > 0))
+                    : ep.GetString() ?? ""
+                : "";
+            var fix = root.TryGetProperty("fix", out var fp)
+                ? fp.ValueKind == JsonValueKind.Array
+                    ? string.Join(", ", fp.EnumerateArray().Select(e => e.GetString() ?? "").Where(s => s.Length > 0))
+                    : fp.GetString() ?? ""
+                : "";
 
             return new StructuralCheck(name, description, result, evidence, fix, isBlocking);
         }
