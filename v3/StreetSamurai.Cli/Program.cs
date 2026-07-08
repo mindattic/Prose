@@ -1473,6 +1473,24 @@ if (args.Contains("--delete-node"))
         .Select(bn => bn.BeatId).Distinct().ToListAsync();
     var toDeleteBeats = beatIds.Except(exclusiveBeats).ToList();
 
+    // Clean up structural blueprints and their beat tags (FK on Beats) before deleting beats.
+    var blueprintIds = await db.NodeStructuralBlueprints
+        .Where(bp => bp.NodeId == deleteNodeId)
+        .Select(bp => bp.Id)
+        .ToListAsync();
+    if (blueprintIds.Count > 0)
+    {
+        var beatTags = await db.NodeStructuralBlueprintBeatTags
+            .Where(t => blueprintIds.Contains(t.BlueprintId))
+            .ToListAsync();
+        db.NodeStructuralBlueprintBeatTags.RemoveRange(beatTags);
+        var blueprints = await db.NodeStructuralBlueprints
+            .Where(bp => blueprintIds.Contains(bp.Id))
+            .ToListAsync();
+        db.NodeStructuralBlueprints.RemoveRange(blueprints);
+        Console.WriteLine($"  Deleting {blueprints.Count} blueprint(s) and {beatTags.Count} beat tag(s).");
+    }
+
     var memberships = await db.BeatNodes.Where(bn => bn.NodeId == deleteNodeId).ToListAsync();
     db.BeatNodes.RemoveRange(memberships);
     if (toDeleteBeats.Count > 0)

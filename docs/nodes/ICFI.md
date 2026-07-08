@@ -23,7 +23,7 @@ A Behemoth with no registry and no kill-switch walks fifty miles toward the edge
 
 **Pip's journey:** Pip runs approximately 40 miles on paw before CJ picks him up near Lyndon. He has been trotting since dawn. He is exhausted and lets himself be scooped. CJ carries him the final 10 miles. At Dixon he is put down beside the machine.
 
-**CJ's vehicle:** ArcSec Eigenlift repulsor skimmer — hovers 2 to 3 feet off any surface, never truly airborne. Cruises at 45 mph. Quiet when healthy: low hum, no engine noise. Can cross open fields, drainage ditches, road debris. CJ rides out from Dixon and intercepts the machine near Lyndon, riding alongside the old 88 corridor. This is the Twister element: she runs ahead, circles back, positions herself for the next intercept point, watching the machine from fifty feet away.
+**CJ's vehicle:** ArcSec Eigenlift repulsor skimmer — hovers one to two feet off any surface, never truly airborne. Capable of 120+ mph at full throttle; typically cruises at 45 mph on approach runs. Repulsor field is terrain-agnostic: takes drainage culverts, road shoulders, and field edges at speed without adjusting height or geometry. Quiet when healthy: low hum that pitches up under load. CJ rides out from Dixon and intercepts the machine near Lyndon, riding alongside the old 88 corridor. This is the Twister element: she runs ahead, circles back, positions herself for the next intercept point, watching the machine from fifty feet away.
 
 **The landscape:** GLMZ has swallowed the Midwest. Even out here on the old 88 corridor, Eigenlift towers rise from the Illinois fields — 30-story vertical structures built without clearing the surrounding corn. Corn, corn, corn, then a tower, then corn again. No suburbs, no transition. The machine walks between them as if they are just more tall things in a flat land. This is the kaiju visual: a hull the color of old brass, ninety feet high, framed against cornfields and skyscrapers with no city in between.
 
@@ -101,8 +101,13 @@ CJ's superior. Off-site. Voice on the channel only.
 **Lock:** He is not a villain. He does not know what CJ knows because he is not where CJ is. The system worked exactly as designed and it was still wrong.
 
 ### The Scav Crew
-Three to five people in the 88 corridor buffer zone. They see an unregistered machine and a kid on top and they go for it. One of them miscalculates.
-**Lock:** One gets crushed by a tine footfall. The machine was stepping. It did not deviate. Consequence, not aggression.
+Three to five people operating a salvage camp at the Erie drainage break. They found the dead Behemoth in a field south of Rock Island (assumed mechanical failure; did not read the Schism twist), stripped it over two weeks, and sold the load to Ferko Nzambe. Some of them or their associates are still at the Erie camp when CROWFOOT-7 arrives.
+**Lock:** One gets crushed. The machine's sensor array scanned the flatbed, identified the hull plating from its companion's hull, and made a decision. Whether "decision" is the right word is the same question as the maggots: not answered. The man with the winch walked into the stride path at the wrong moment. The machine was stepping, and it did not deviate, and those are facts. What they mean is harder.
+
+### Ferko Nzambe
+Junker, mid-fifties. Runs an Eigenlift cargo platform — old flatbed model, gray, beat-up — on the GLMZ-Midwest corridor. Deals in salvage, doesn't ask what things are, has a reputation for both. Took the scav load four days before the story's events. Knew the broadcasting modules were in the load; filed it as "batteries that don't die."
+**Lock:** He survives. CJ returns the module; Nzambe hands it over and says "you can find me, when this is done." He is a future-story entity: an illegal salvage operator who has now had direct contact with an unregistered Behemoth event and an ArcSec junior scout who broke protocol.
+**Entity:** Seed as Character in DB (slug: ferko_nzambe).
 
 ---
 
@@ -110,12 +115,14 @@ Three to five people in the 88 corridor buffer zone. They see an unregistered ma
 
 No manufacturer. No transponder. No registry. Wes has a name for it he has never said aloud.
 
-**Form:** Tripodal base with two secondary stabilizer tines — five legs total, splayed for load distribution. The carapace body sits high: a domed hull weathered to a color between brass and bone. Sensor apertures asymmetric on the forward face. Two catch low-angle light in a way that reads as eyes. This is not intentional. They are soil-moisture sensors.
+**Form:** Three locomotion legs — two long lateral legs, one on each side, very thin for the mass they carry, jointed at mid-height with an inverted knee (heron-geometry, lower section swinging forward on each stride); one shorter rear support leg for balance and tripodal stability. The legs are spindly relative to the body: arachnid, designed for standing over crops without crushing them. They carry the body forty to fifty feet off the ground. The body itself is bulbous: a rounded mass, weathered to a color between brass and bone. Sensor array at the forward face, asymmetric. Two apertures catch low-angle light in a way that reads as eyes. This is not intentional. They are soil-moisture sensors.
 
-**Appendages:** Three tentacle-style manipulator arms ending in:
-- A scythe-ring: harvest arm, rotating ceramic blade. This is what catches the drones.
-- A drill-tine: soil core sampler.
-- A sowing tube: sealed, retracted. It has not sowed anything in a long time.
+**Appendages:** Multiple tool clusters housed in the bulbous body. Each is a retractable tentacle-style appendage, long enough when extended to reach the ground from working height. All appendages retract into chassis ports when traveling; the machine is clean-lined at speed. Tools include:
+- Scythe-ring: rotating ceramic harvest arm. Extends on the primary manipulator. This is what takes down the drones.
+- Drill-tines: soil core samplers, post-driver configuration.
+- Sowing tube: sealed, retracted. Has not sowed in a long time.
+- Grabbing manipulators: three-fingered, for material handling. Used to receive and place the module.
+- Others: the chassis ports suggest more tools in storage than have been deployed on-page.
 
 **Scale:** Forty tons. Tine spread: roughly 25 feet across the base. Hull height at the Crown: 90 feet. When it steps, the ground registers it.
 
@@ -127,13 +134,14 @@ No manufacturer. No transponder. No registry. Wes has a name for it he has never
 
 **The sounds:**
 - *The mourning wail:* Low, sustained, between a chord and a groan. Not in any maintenance record. The machine has made this sound since it found the dead Behemoth.
-- *The broadcast signal:* Short-interval acoustic pulses, steady rhythm. A question in the pattern. Every matching return reduces the machine's measured agitation by a small, consistent increment.
-- *The threat-wail:* When the machine is attacked. Layered frequencies: electronic shriek on top; underneath, something older and rawer and wrong — the kind of sound that empties the stomach before the mind catches up. Carries a quarter mile in still air. The scav crew hears this and runs.
-- *The new sound:* Only at the climax, when Wes and CJ both answer simultaneously. No analogue. Described by what it is NOT and what it does to the people hearing it. Never named.
+- *The broadcast signal:* Short-interval acoustic pulses (eleven seconds), steady rhythm. Not a question — a locator. The machine is tracking its companion's core control module via return-bounce from the signal Nzambe's load is emitting. Every eleven seconds it knows approximately where the module is.
+- *The threat-wail:* When the machine identifies the scavs at Erie. Layered frequencies: electronic shriek on top; underneath, something older and rawer and wrong — the kind of sound that empties the stomach before the mind catches up. Carries a quarter mile in still air. The scav crew hears this and runs.
+- *The honoring harmonic:* When the machine holds the recovered module. Two notes at once, low, internal. Not broadcast-level. The hull making a sound that has no maintenance-record entry. Not for an audience.
+- *The burial sounds:* The post-driver percussion of the tines. Not a voice. Work.
 
 **The drones:** ArcSec Eigenlift interdiction units, hovering and silent until they aren't. The machine's scythe-arm takes them down without urgency — not targeted aggression, just removal of an obstacle near the hull. First wave: three units. Second wave: five units. Third wave: the formation stays at a distance. The corn around the route is full of drone wreckage by the time CJ rides through. She picks her way through it on the skimmer.
 
-**Why GLMZ?** The machine has found something dead that it knew. It could not wake it. It is now traveling toward the largest concentration of human activity its sensors can resolve. Whether this is grief made navigable, blame, appeal, or a protocol misfiring in a context it was never designed for — the story does not say. It walks like it knows where it is going.
+**Why GLMZ?** The machine found its companion dead in the north field — hull twisted by a mobile Schism, stripped by scavs who sold the transmitting parts to a junker heading south. The machine is not walking toward GLMZ for density or signal. It is following the broadcast from its companion's core control module, which Ferko Nzambe is carrying toward the Zone boundary. It knows where that module is. It is going to retrieve it. Everything else — the drones, the escalation, the fifty miles of corn — is obstacle, not destination.
 
 ---
 
@@ -141,9 +149,13 @@ No manufacturer. No transponder. No registry. Wes has a name for it he has never
 
 A Behemoth the machine knew — same Iowa heritage, same unregistered lineage. Inert in the north field at Wes's farm near Davenport. Hull darker, more oxidized. Dead for days or weeks. The living machine found it on circuit and would not leave.
 
-Pip is there when Wes walks back. He will have made his own way home by then — 40 miles on paw was enough for one day.
+**How it died:** Passed through a mobile Schism. Wes observes the evidence: the forward strut is twisted in a direction metal doesn't go on its own — geometric deformation consistent with a reality-warping event, not mechanical failure. The hull panels have warped the same wrongward direction. The Schism moved through the area like a weather system and the machine walked into it.
 
-**Lock:** The dead machine is not explained. Its presence is the emotional fact. Its origin and cause of death are not the point.
+**What Wes sees at the hull:** Maggots. A thin line of them from a seam where the forward panel has warped away from the chassis. Something inside the dead machine is decomposing. Something organic was in there. The story never explains this. Whether Behemoths are machines with organic components, or living things clad in metal, is not answered. Wes files this in the category of things he doesn't have words for yet.
+
+**What the scavs did:** Found the machine dead in the field (it looks like equipment failure to someone who doesn't read the twist). Stripped it over two weeks. Sold the load to Ferko Nzambe. The core control module — still broadcasting at eleven-second intervals — was in that load.
+
+**Lock:** The dead machine is not explained. Its presence is the emotional fact. The maggots are real. What they mean is the question the story leaves open.
 
 ---
 
@@ -156,15 +168,15 @@ Pip is there when Wes walks back. He will have made his own way home by then —
 | 3 | CROWN — Wes runs cross-field to the Riordan grain elevator at the county road, climbs to the top platform, and jumps onto the Crown as the machine passes. Pip appears at the base of the tines, trotting alongside. He does not stop. | Committed; the journey begins |
 | 4 | CJ'S TRACK — Dixon, 0614. CJ Anderson at her outer buffer post — halfway to Iowa or the edge of the world. Alert: unregistered mass, 5 mph, bearing from Davenport, no transponder, no kill-switch response. Hauser: *"First interdiction wave authorized."* | Parallel track; clock starts |
 | 5 | DRONES — First Eigenlift interdiction wave arrives in formation over the Hillsdale cornfields. The machine's scythe-arm takes them down one by one without breaking stride — no urgency, no targeting, the rotating blade catching each unit clean. Wes watches them fall into the corn. Pip does not look up. | King Kong; military futility |
-| 6 | SCAV CAMP — Near Erie. The machine's path crosses a buffer-zone scav camp. Wes on the Crown shouting for them to stop. A scav attaches a winch line to a forward tine. The machine steps. The tine comes down. The threat-wail starts — layered, wrong, the second frequency old in a way manufactured equipment should not be. The scavs scatter. The machine keeps walking. | Cost; the machine is not safe |
-| 7 | AFTERMATH — ArcSec patrol at the scav camp radios CJ: *"Civilian down. Machine bearing unchanged, still mobile."* Hauser files escalation request four. CJ asks for more time. The 88 corridor ahead is open farmland and Eigenlift towers growing out of the corn. | Stakes crystallize; the visual of GLMZ in the heartland |
-| 8 | SECOND WAVE + NAP — A larger drone formation arrives near Prophetstown. The machine takes its time: three arm movements, methodical, one unit after another. After the last drone drops it broadcasts the signal louder — as if answering back. Then: the threat-wail fades. The machine resumes rhythm. Five miles per hour, the hull a steady drum. Wes, awake since before dawn and through the violence, falls asleep somewhere in the Illinois fields. He wakes when the light has changed. The machine is still moving. | Escalation; the odyssey; trust shown in sleep |
-| 9 | CJ INTERCEPTS — CJ rides out from Dixon on her skimmer along the 88 corridor. She passes drone wreckage, the scav camp aftermath, empty corn. Near Lyndon she finds Pip: small dog, trotting, paws raw, doing 5 mph like it is just what he does. She scoops him up. He lets her. She calls up to the Crown. | The two tracks converge; CJ gets Pip |
-| 10 | REVELATION — Wes tells her about the north field. The mourning scene. The dead Behemoth. CJ pulls up the six hours of acoustic telemetry while riding alongside the machine. The broadcast signal is constant: same interval, same rhythm, a question. Every matching return reduces agitation. The machine is asking something. It came to where the most people are because it thinks someone here will answer. | The correct interpretation; full picture |
-| 11 | BOTH ANSWER — CJ riding alongside, Wes on the Crown. They start transmitting the pattern: Wes with his knuckles on the hull, CJ from her skimmer below. Hauser's fire order goes live. Dixon, the Rock River, the Zone-12 boundary ahead. | Convergence; clock expires |
-| 12 | CLIMAX — The machine crosses into Dixon. Both transmit simultaneously. The mourning wail stops. The machine goes still. The new sound. | Resolution |
-| 13 | RESOLUTION — CJ closes her comms. Hauser's channel goes to static. The machine stands at the edge of Dixon, dormant, framed against an Eigenlift tower and the flat Illinois sky. Nobody fires. | Aftermath |
-| 14 | QUIET MOMENT + CLOSING — Wes comes down from the Crown. CJ puts Pip down. Pip trots to the nearest tine, sniffs it, and lifts his leg. The machine does nothing. CJ and Wes are standing there having just heard the new sound, and Pip is marking the machine as his. CJ files her report: behavioral anomaly, origin unknown, threat level zero. She recommends the dead machine in Iowa be left in place. She does not write the new sound. She knows what would happen to that line. | The comedy that earns the warmth; the final image |
+| 6 | SCAV CAMP — Near Erie. The machine's sensor array scans the flatbed as it approaches: hull plating from its companion on the load. Wes sees the array lock. The machine recognizes what it's looking at. A scav attaches a winch line to a forward tine. The tine comes down. The threat-wail: layered, wrong, the second frequency old in a way equipment shouldn't be. The scavs scatter. The machine keeps walking, now following the signal from Nzambe's load ahead. | Recognition; the machine is purposeful |
+| 7 | AFTERMATH / INTERROGATION — CJ diverts to Erie. Interrogates the surviving scav (Dorn). Learns: Rock Island site, dead machine stripped, broadcasting modules sold to Ferko Nzambe (Eigenlift cargo platform, GLMZ run). CJ understands: the broadcast is a locator, not a question. Hauser files escalation request four. She logs non-concurrence. She still has to find Nzambe. | Motive established; CJ has the plan |
+| 8 | SECOND WAVE + NAP — Drone formation near Prophetstown. Three arm movements. After the last unit drops, a louder broadcast pulse — amplitude spike, then back to interval. Then rhythm. Then Wes, awake since before four and through the violence, falls asleep on the Crown. He wakes when the light has changed. | Odyssey; trust shown in sleep |
+| 9 | CJ INTERCEPTS — CJ rides west along the 88 corridor. Drone wreckage, the scav camp aftermath. Near Lyndon she finds Pip: small, trotting, paws raw, five mph like it is simply what he does. She scoops him up. He immediately shoves his head out the side of the skimmer, tongue out, ears flat in the wind. She lets him. She calls up to the Crown. | The two tracks converge; CJ gets Pip |
+| 10 | REVELATION + PLAN — Wes tells CJ: the north field, the mourning scene, the dead machine. The tool marks. The twisted strut. The void where the module was. CJ confirms: the scav crew, the Rock Island site, Ferko Nzambe heading south. The broadcast is a locator. Wes demonstrates the interpreter language: three raps, machine scrapes back, two raps, breathe into exhaust vent. The hull is warmer at the sensor cluster — the signal is close. CJ: "I can go ahead. Buy me time." She opens the throttle west. | Full picture; plan forms; clock running |
+| 11 | RETRIEVAL — CJ at 120+ mph on the flat 88. Finds Nzambe at the Zone-12 staging checkpoint. He knows her name. She explains. He hands over the core control module without a fight. "You can find me when this is done." She rides back east with the module in her lap, Pip in the wind, the machine's dot growing on the display. | Action climax; the retrieval |
+| 12 | RETURN — CJ brings the module back. Wes tells her to set it down in front of the forward tine. The machine's grabbing manipulator descends, careful, and takes it. Holds it up level with the sensor array. The honoring harmonic: two notes at once, internal, no maintenance entry for it. Twenty seconds. Then the manipulator lowers the module back to the asphalt. The tines begin to move. | Emotional climax; the honoring |
+| 13 | BURIAL — The drill-tines go straight down. Post-driver geometry, precise, a rectangular hole the dimensions of the module. Five feet. The manipulator lowers the module in. The broadcast stops: the signal that has been running since Davenport goes flat. Tines compact the earth back. The hole closes. The machine stands over it. | The act; resolution |
+| 14 | DEPARTURE — The machine takes a north bearing and begins walking home. Wes climbs down. He and CJ watch the machine go. Five miles per hour, heading for Iowa. The long legs eating the flat distance. CJ presses the comms key. One button. Hauser's channel goes to static. Pip sits at the burial site and watches it go. Wes watches until the machine is gone. "Forty miles to your farm?" / "Give or take." / "I'll walk." | The machine leaves; the humans remain; the final image |
 
 ---
 
@@ -186,20 +198,29 @@ Pip is there when Wes walks back. He will have made his own way home by then —
 
 ---
 
+## WORLD NOTES (canon facts established in ICFI — flag for BIBLE.md)
+
+- **AgriCore operated Crowfoot-class Behemoths in Iowa.** The historical CorpoNation operator of Crowfoot-class agricultural Behemoths is AgriCore. Zone-12's outer buffer is former AgriCore leasehold territory — the reason Behemoths were planting and harvesting this corridor for decades before the boundary moved. AgriCore's records on CROWFOOT-7 show it went off-grid months before ICFI events; they did not report it. Characters seeded from this history: Priya Johansdóttir (AgriCore Eastern Division Liaison), Maris Delacroix-Oye (Zone-12 surveyor), Yusuf Tamboli-Nkosi (former AgriCore Behemoth tech, worked on CROWFOOT), Lt. Kaden Vũ (ArcSec Zone-12 commander).
+- **Mobile Schisms exist.** Not all Schisms are static phenomena. Some move through an area like a weather system, warping reality as they pass. Things the Schism moves through may be physically altered — geometry changed, structure twisted, what was true before made wrong. The dead Behemoth died by walking through a moving Schism. Its hull shows the evidence. This should be added to `docs/BIBLE.md` §Schism when confirmed.
+- **Behemoths may be partly organic.** The dead Behemoth's hull, warped by the Schism, shows maggots from an interior seam. Something inside was biological and is decomposing. Whether Behemoths are machines with organic components, living creatures in metal shells, or something else is not confirmed anywhere in the story — but the question is real and the evidence is on-page.
+
+---
+
 ## LOCKS
 
 - The machine's sentience is **ambiguous**. Never confirm it either way. Any prose that resolves this in either direction violates the lock.
-- **Pip is present at the end.** CJ carries him the final 10 miles and puts him down. He marks the machine. This is the heartwarming moment AND the comedy. Both at once.
+- Whether Behemoths are alive is **ambiguous**. The maggots raise the question. The story does not answer it.
+- **Pip is present at the end.** CJ carries him the final 10 miles and puts him down. He sits at the burial site and watches the machine go. This is the heartwarming moment AND the quiet image.
 - Pip is male. He lifts his leg. This matters.
 - Pip does not get hurt.
 - **CJ never sees the dead Behemoth.** Telemetry only, until Wes tells her from the Crown.
 - Wes's private name for the machine is never spoken or written.
-- The dead Behemoth's origin and cause of death are not explained.
-- The scav who gets crushed: the machine was stepping. Not aggression. Consequence.
+- The dead Behemoth was twisted by a Schism. The story never names the Schism explicitly. Wes observes the evidence; he doesn't have the word.
+- The scav who gets crushed: the machine had identified the flatbed's contents and made a decision. Or it was stepping and did not deviate. Both things can be true. Do not resolve which.
 - The drone-swatting is not strategic. Removal of obstacles near the hull. The arm fires, the unit drops, the machine keeps walking.
 - The threat-wail's second frequency is old in a way that doesn't fit manufactured equipment. Do not resolve what it is.
 - The Eigenlift towers rise from the cornfields without transition. Corn, tower, corn. The machine walks between them.
-- CJ's vehicle is a repulsor skimmer — Eigenlift ground-effect, hovers 2-3 feet off any surface, never truly airborne, ~45 mph capable. Not a VTOL. Not a drone. She rides it.
+- CJ's vehicle is a repulsor skimmer — Eigenlift ground-effect, hovers one to two feet off any surface, never truly airborne, 120+ mph capable at full throttle, terrain-agnostic. Not a VTOL. Not a drone. She rides it.
 - CJ's defiance is closing her comms. Not a speech.
 - Hauser is not a villain.
 - The new sound in beat 12: what it is NOT, what it does to the people hearing it. Never named. Never resolved.
