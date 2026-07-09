@@ -1812,6 +1812,18 @@ if (args.Contains("--clone-story"))
     return;
 }
 
+// CLI mode: show running token cost tally for the current process.
+//   ss --cost              print session cost table
+//   ss --cost --json       emit summary as JSON
+//   ss --cost --reset      clear the ledger
+// When appended to another command (e.g. ss --write-node --slug foo --cost),
+// the cost of that command's LLM calls is printed after the command finishes.
+if (args.Contains("--cost") && args.Length == 1)
+{
+    var sp = BuildCoreServices(args);
+    Environment.ExitCode = await CostCli.RunAsync(args, sp);
+    return;
+}
 
 // ────────────────────────────────────────────────────────────────────────────
 // DI bootstrap helpers — replace WebApplication.CreateBuilder in every CLI block.

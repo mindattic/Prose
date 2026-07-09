@@ -17,11 +17,47 @@ public class ConfigTools
 
     private readonly MarkdownFileService svc;
     private readonly DocContextService docContext;
+    private readonly TokenLedger ledger;
 
-    public ConfigTools(MarkdownFileService svc, DocContextService docContext)
+    public ConfigTools(MarkdownFileService svc, DocContextService docContext, TokenLedger ledger)
     {
         this.svc = svc;
         this.docContext = docContext;
+        this.ledger = ledger;
+    }
+
+    [McpServerTool, Description(
+        "Show the running token cost tally for the current MCP server session. " +
+        "Returns call count, input/output token estimates, and USD cost broken down by model. " +
+        "Token counts are estimated from text length (chars / 4) since the Legion transport " +
+        "does not expose Anthropic usage objects. Pass reset=true to clear the ledger.")]
+    public string GetCostReport(
+        [Description("If true, clear the ledger after reporting. Default false.")] bool reset = false)
+    {
+        var summary = ledger.GetSummary();
+        var result  = JsonSerializer.Serialize(new
+        {
+            sessionStart  = summary.SessionStart,
+            callCount     = summary.CallCount,
+            inputTokens   = summary.InputTokens,
+            outputTokens  = summary.OutputTokens,
+            totalCostUsd  = Math.Round(summary.TotalCost, 6),
+            note          = "Token counts estimated via chars/4 heuristic; actual API costs may differ.",
+            byModel = summary.ByModel.Values
+                .OrderByDescending(m => m.TotalCost)
+                .Select(m => new
+                {
+                    model        = m.Model,
+                    label        = m.Label,
+                    callCount    = m.CallCount,
+                    inputTokens  = m.InputTokens,
+                    outputTokens = m.OutputTokens,
+                    totalCostUsd = Math.Round(m.TotalCost, 6),
+                }),
+        }, new JsonSerializerOptions { WriteIndented = true });
+
+        if (reset) ledger.Clear();
+        return result;
     }
 
     // Deterministic LRU context key per node (or a shared default) so repeated calls within

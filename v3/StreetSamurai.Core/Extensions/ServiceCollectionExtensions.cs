@@ -588,6 +588,7 @@ public static class ServiceCollectionExtensions
         services.AddSingleton<OpenAiService>();
         services.AddSingleton<LocalLlmService>();
         services.AddSingleton<DallEService>();
+        services.AddSingleton<TokenLedger>();
         services.AddSingleton<LlmRouter>(sp => new LlmRouter(
             sp.GetRequiredService<ClaudeService>(),
             sp.GetRequiredService<OpenAiService>(),
@@ -595,6 +596,7 @@ public static class ServiceCollectionExtensions
             sp.GetRequiredService<SettingsService>(),
             sp.GetRequiredService<LegionClient>(),
             sp.GetRequiredService<LastPromptStore>(),
+            sp.GetRequiredService<TokenLedger>(),
             sp.GetRequiredService<ILogger<LlmRouter>>()));
         services.AddSingleton<ILlmService>(sp => sp.GetRequiredService<LlmRouter>());
 

@@ -11,7 +11,7 @@
 > All tools are MCP-prefixed `mcp__streetsamurai__<name>` by the client. Most return a
 > JSON string; the canon is the SQL database, scoped to the active Universe.
 
-**218 tools** across **33 tool families.**
+**219 tools** across **33 tool families.**
 
 ## Families
 
@@ -21,7 +21,7 @@
 | [Bible](#bible) | 3 |
 | [Canon](#canon) | 9 |
 | [Combat](#combat) | 1 |
-| [Config](#config) | 7 |
+| [Config](#config) | 8 |
 | [Context](#context) | 4 |
 | [Continuity](#continuity) | 2 |
 | [Core Entity Crud](#core-entity-crud) | 4 |
@@ -188,6 +188,12 @@ Prepare the Doc Context Stack — the rotating cast of pertinent canon .md docs 
 Inspect the current Doc Context Stack working set (the docs resident in the rotating cast) for a node context, without changing it. Returns each doc's tier, why it loaded, and its score.
 
 - `nodeCode` (string, optional) — Optional node CODE whose working set to inspect.
+
+### `get_cost_report`
+
+Show the running token cost tally for the current MCP server session. Returns call count, input/output token estimates, and USD cost broken down by model. Token counts are estimated from text length (chars / 4) since the Legion transport does not expose Anthropic usage objects. Pass reset=true to clear the ledger.
+
+- `reset` (bool, optional) — If true, clear the ledger after reporting. Default false.
 
 ### `get_markdown_file`
 

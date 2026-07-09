@@ -7,6 +7,7 @@ namespace StreetSamurai.Core.Services;
 /// <summary>
 /// Routes LLM calls to the active provider based on settings.
 /// Supports runtime provider switching without restarting the app.
+/// All successful calls are recorded in <see cref="TokenLedger"/> for cost tracking.
 /// </summary>
 public class LlmRouter : ILlmService
 {
@@ -16,21 +17,26 @@ public class LlmRouter : ILlmService
     private readonly LegionClient legion;
     private readonly Func<string?> activeProviderFunc;
     private readonly LastPromptStore prompts;
+    private readonly TokenLedger? ledger;
     private readonly ILogger<LlmRouter> log;
 
     private string? runProvider;
     private string? runModel;
 
     /// <summary>Production constructor — concrete provider instances + settings-driven routing.</summary>
-    public LlmRouter(ClaudeService claude, OpenAiService openAi, LocalLlmService local, SettingsService settings, LegionClient legion, LastPromptStore prompts, ILogger<LlmRouter> log)
-        : this(claude, openAi, local, () => settings.ActiveLlmProvider, legion, prompts, log) { }
+    public LlmRouter(ClaudeService claude, OpenAiService openAi, LocalLlmService local, SettingsService settings, LegionClient legion, LastPromptStore prompts, TokenLedger ledger, ILogger<LlmRouter> log)
+        : this(claude, openAi, local, () => settings.ActiveLlmProvider, legion, prompts, ledger, log) { }
 
     /// <summary>Test-friendly constructor — accepts any <see cref="ILlmService"/> for provider slots and a callback for the active-provider id.</summary>
     public LlmRouter(ILlmService claude, ILlmService openAi, Func<string?> activeProvider, LastPromptStore prompts, ILogger<LlmRouter> log)
-        : this(claude, openAi, local: null, activeProvider, legion: null, prompts, log) { }
+        : this(claude, openAi, local: null, activeProvider, legion: null, prompts, ledger: null, log) { }
 
-    /// <summary>Test-friendly constructor with explicit local provider.</summary>
+    /// <summary>Test-friendly constructor with explicit local provider and no ledger.</summary>
     public LlmRouter(ILlmService claude, ILlmService openAi, ILlmService? local, Func<string?> activeProvider, LegionClient? legion, LastPromptStore prompts, ILogger<LlmRouter> log)
+        : this(claude, openAi, local, activeProvider, legion, prompts, ledger: null, log) { }
+
+    /// <summary>Full constructor — all dependencies explicit.</summary>
+    public LlmRouter(ILlmService claude, ILlmService openAi, ILlmService? local, Func<string?> activeProvider, LegionClient? legion, LastPromptStore prompts, TokenLedger? ledger, ILogger<LlmRouter> log)
     {
         this.claude = claude;
         this.openAi = openAi;
@@ -38,6 +44,7 @@ public class LlmRouter : ILlmService
         this.legion = legion!;
         this.activeProviderFunc = activeProvider;
         this.prompts = prompts;
+        this.ledger = ledger;
         this.log = log;
     }
 
@@ -63,20 +70,22 @@ public class LlmRouter : ILlmService
         string? model = null,
         CancellationToken ct = default)
     {
-        var provider = runProvider ?? activeProviderFunc() ?? "claude-api";
+        var provider     = runProvider ?? activeProviderFunc() ?? "claude-api";
+        var resolvedModel = model ?? runModel ?? "(default)";
         log.LogDebug("LlmRouter dispatching to provider={Provider}", provider);
         var sw = System.Diagnostics.Stopwatch.StartNew();
         try
         {
             var response = await GetActiveProvider().GenerateAsync(system, user, temperature, maxTokens, model ?? runModel, ct);
             sw.Stop();
-            prompts.Capture(provider, model ?? "(default)", temperature, maxTokens, system, user, response, (int)sw.ElapsedMilliseconds);
+            prompts.Capture(provider, resolvedModel, temperature, maxTokens, system, user, response, (int)sw.ElapsedMilliseconds);
+            ledger?.Record(provider, resolvedModel, system + user, response);
             return response;
         }
         catch (Exception ex)
         {
             sw.Stop();
-            prompts.Capture(provider, model ?? "(default)", temperature, maxTokens, system, user, $"(ERROR: {ex.Message})", (int)sw.ElapsedMilliseconds);
+            prompts.Capture(provider, resolvedModel, temperature, maxTokens, system, user, $"(ERROR: {ex.Message})", (int)sw.ElapsedMilliseconds);
             log.LogError(ex, "LlmRouter: generation failed via provider={Provider}", provider);
             throw;
         }
@@ -91,7 +100,8 @@ public class LlmRouter : ILlmService
         string? model = null,
         CancellationToken ct = default)
     {
-        var provider = runProvider ?? activeProviderFunc() ?? "claude-api";
+        var provider      = runProvider ?? activeProviderFunc() ?? "claude-api";
+        var resolvedModel = model ?? runModel ?? "(default)";
         log.LogDebug("LlmRouter dispatching cached-prefix request to provider={Provider}", provider);
         var sw = System.Diagnostics.Stopwatch.StartNew();
         try
@@ -99,14 +109,15 @@ public class LlmRouter : ILlmService
             var response = await GetActiveProvider().GenerateWithCachedPrefixAsync(
                 cachedPrefix, dynamicSystem, user, temperature, maxTokens, model ?? runModel, ct);
             sw.Stop();
-            prompts.Capture(provider, model ?? "(default)", temperature, maxTokens,
-                cachedPrefix + "\n\n" + dynamicSystem, user, response, (int)sw.ElapsedMilliseconds);
+            var fullInput = cachedPrefix + "\n\n" + dynamicSystem;
+            prompts.Capture(provider, resolvedModel, temperature, maxTokens, fullInput, user, response, (int)sw.ElapsedMilliseconds);
+            ledger?.Record(provider, resolvedModel, fullInput + user, response);
             return response;
         }
         catch (Exception ex)
         {
             sw.Stop();
-            prompts.Capture(provider, model ?? "(default)", temperature, maxTokens,
+            prompts.Capture(provider, resolvedModel, temperature, maxTokens,
                 cachedPrefix + "\n\n" + dynamicSystem, user, $"(ERROR: {ex.Message})", (int)sw.ElapsedMilliseconds);
             log.LogError(ex, "LlmRouter: cached-prefix generation failed via provider={Provider}", provider);
             throw;
@@ -120,9 +131,7 @@ public class LlmRouter : ILlmService
         _        => claude,
     };
 
-    /// <summary>
-    /// Returns all configured providers and their status.
-    /// </summary>
+    /// <summary>Returns all configured providers and their status.</summary>
     public async Task<List<LlmProviderStatus>> GetProvidersAsync()
     {
         var active = runProvider ?? activeProviderFunc();
