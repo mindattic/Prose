@@ -1,0 +1,125 @@
+﻿Vox had the equipment unpacked in eleven minutes.
+
+The bench workspace ran along the north wall — three meters of surface, adequate for the documentation and the relay equipment and the secondary screen she used for threaded feeds. The equipment closet was sealed and clear, the access panel keyed to the Axiom authorization credentials. No exterior windows. The Axiom lease had been built for exactly this; the absence of sightlines to the exterior was a selection criterion, not a coincidence.
+
+She ran the channel check first. Four frequencies, sequential: the gray-market relay through the Z4 secondary node, the technical bounce through the guild's mutual aid frequency, the direct channel to Priya's personal neuretics address, and the fourth — the one that ran in parallel with everything else, the monitoring thread she maintained at four channels because she had decided to stay at four. She had been at six once. She had come back from six and rebuilt to four and chosen to stop there. The fourth channel's check took three seconds. It came back clean.
+
+She moved to the crawlers.
+
+Scout had the two units unpacked on the equipment closet floor and running on passive mode. They were maintenance-scale hardware — the form factor of a ventilation inspection unit, the kind of equipment the Spine's building management sent through the utility corridors on scheduled checks. Unremarkable in that environment. The corridors they would enter were full of unremarkable equipment doing routine work.
+
+Scout was already threading. Rook could read it in her posture — the specific quality of distributed attention, the slight abstraction in her gaze that meant part of her occupied a different location. Gerald was still on the Z3 safe house exterior three hundred and forty meters below, threading the building's perimeter while Scout's physical body occupied a Level 14 office chair. The dual presence had been continuous since the VTOL boarding at 0600.
+
+"Gerald is holding the safe house perimeter," Scout said. The detached register she used when threading — precise, slightly removed from the immediate physical. "The Spine crawlers are passive at the equipment closet threshold. I'm threading into the Level 12 service junction now."
+
+"Grade 3 key working?" Rook asked.
+
+"Clean access. Boiler sourced it at 0800 and it reads as valid maintenance authorization." A short pause while two locations processed simultaneously. "I'm in the utility corridor network. Forty-five minutes to the Level 11 cluster at maintenance protocol speed. I'll have eyes on the housing before the extraction channel opens."
+
+Ekow was at the equipment closet threshold — not sitting, not working, physically present in the way he was present when his operational role was not yet active. The Spine's infrastructure was the Syndicate's infrastructure. Twelve years of operating inside it had given him an instinctive read on the environment that could not be replicated from documentation. He was there because if the building's behavior changed in a way Vox's channels wouldn't catch, he would catch it before it reached the operations room door.
+
+Vox opened Priya's channel at 0840.
+
+Ninety seconds for the relay to establish — the encryption handshake, the bounce through the guild frequency, the confirmation that the channel was clean in both directions. Priya's voice arrived: the South Indian accent with Scottish inflections, the GLMZ vowels of twenty years in the city, the measured register that was not calm but was controlled. The register of a woman who had decided the fear was not running this conversation.
+
+"Channel is live," Vox said.
+
+"I'm wired in. Clean on my end."
+
+"The topology first," Vox said. "Level 9 through 14, civic grid nodes only. Scout's threading into the utility corridors. I need the architecture before she arrives at Level 11."
+
+Priya walked them through it.
+
+The Spine's civic grid infrastructure was distributed across six levels — a design requirement from the Meridian Charter's physical security provisions for neuretics registration systems. No single-node concentration. The distribution was the security: any unauthorized access attempt had to penetrate six separate node locations simultaneously, which made remote exploitation prohibitively complex. For a Grade 4 Civic Systems Engineer who had maintained the system for six years, the topology was not documentation — it was spatial knowledge, the three-dimensional understanding of where each component lived and how they connected. She described it from that understanding. She did not simplify. She spoke to Vox as a technical peer who needed the architecture.
+
+Node by node, level by level: the Level 9 administrative nodes with read-access permissions only; the Level 10 query routing cluster that handled data request pipelines without accepting firmware modifications; the Level 11 neuretics registration cluster that served as the system's coordination hub; the Level 12 and 13 residential access nodes isolated from the primary civic infrastructure; the Level 14 operational management interface where Priya's administrative access tier lived.
+
+"The coordination function is what makes Level 11 the key insertion point," she said. "The distributed firmware is already in place — it's running dormant across all six levels as an overlay on the legitimate architecture. The Z6 test cluster validated the design. The full grid deployment needs the coordination node to bring the distributed components online as a unified query system." A pause. "Without the key, the firmware is six separate inert components. The key goes into Level 11, activates the coordination function, and the distributed components wake up as one system."
+
+"Physical presence requirement," Vox said.
+
+"Meridian Charter security provisions for cluster-level coordination nodes. Firmware modifications require biometric authorization at the physical housing — it's a write-once physical lock at the hardware level. Remote installation is blocked by design." A pause. "I'm the only person with cluster authorization registered in the system. The hardware token the Syndicate delivered at month three is the key itself. It's been on my person since they gave it to me."
+
+"The rollback procedure," Vox said.
+
+"Same node, same physical presence requirement. The Charter's rollback mandate requires that any distributed firmware include a documented emergency shutdown path. The backdoor was designed to look like a legitimate civic grid update — it had to comply with the rollback requirement or it would fail a security audit." She said this with a specific flatness: the description of a measure intended to protect public infrastructure being used as a design constraint for the thing the measure was meant to protect against. "The rollback runs from the coordination node in fourteen minutes. I confirmed it in the Phase 0 test environment."
+
+"The Z6 test cluster," Vox said.
+
+A quiet of two seconds. The specific quiet of someone who had been waiting for this particular question.
+
+"The test cluster is different," she said. "It went live eleven days ago. Three test nodes in the Z6 buffer zone — the same nodes I identified in the original audit. I thought it was technical validation. After seven days of continuous deployment, the firmware propagates to the offline backup registers on those nodes. The backup registers are not addressed by the coordination node rollback." She said this clearly, not as an apology, as a technical fact. "A rollback at Level 11 stops the full grid deployment. It does not reach the Z6 backup registers. The Phase 0 data — the 200,000 Z6 registered neuretics records — was being queried from the moment the test cluster went live. That data is already in Lotus possession. The rollback doesn't retrieve it."
+
+Vox looked at Rook.
+
+Rook looked at the documentation. Phase 0: 200,000 registered neuretics users in the Z6 buffer zone. Eleven days of live deployment. Heritage classification data, civic identity records, neuretics access levels, all of it in Lotus possession since day one of the test cluster. Three weeks before the crew's first job.
+
+This was not new information. Vox had mapped the probability from the architecture three days ago. Hearing it confirmed from the person who had built the system placed it in a different register: from probability to fact. From calculation to consequence.
+
+"The rollback at Level 11 stops the full grid deployment," Vox said.
+
+"Yes," Priya confirmed. "The 2.3 million GLMZ neuretics registrations stay clean. The Phase 0 data is already in Lotus possession and the rollback doesn't reach it." She said this precisely, without editorial, as a person giving a complete and accurate briefing rather than the version of events she wished were true. "I know that's not complete. I know the Z6 data is already gone. I'm telling you what the rollback accomplishes."
+
+"We stop what we can stop," Rook said.
+
+Nobody argued. It was not an argument. It was the operational statement of a problem with a solution and a residual, and the residual was known, and the solution was still the correct action. The 2.3 million clean registrations were not nothing because 200,000 had already been compromised. That was not how the arithmetic worked.
+
+The channel continued. Vox worked through the access topology node by node, asking the technical questions that produced the complete architecture of the distributed civic grid infrastructure across the Spine's six administrative tiers. Priya answered each question with the precision of six years of maintenance knowledge. She knew where every junction lived, which nodes had redundant access paths, which sections of the utility corridor network ran adjacent to residential units, where the cable conduit passed close enough to a maintenance access panel that a personnel approach would read as maintenance activity rather than anomalous access.
+
+She knew this building the way a person knew a building they had been maintaining for years. Not fondly — the way you knew something you had been responsible for through three software generations and two Charter compliance audits, something you understood so completely that understanding it had stopped feeling like expertise and had become background awareness, the constant low-level read of a system you were responsible for keeping correct.
+
+At 0932, Scout said: "I have eyes on the Level 11 cluster."
+
+The sensor feed appeared on Vox's secondary screen — small, in the lower right corner, the view from a maintenance crawler positioned in the utility corridor above the Level 11 neuretics registration cluster's access panel. Iron maintenance corridor: cable conduit runs, load-bearing column sections, the matte-gray surface of the infrastructure the Spine's silk levels were installed over and depended on and were designed to make invisible.
+
+The cluster housing was two meters wide by one meter tall, mounted on the north corridor wall, flanked by conduit runs on both sides. Clean. Well-maintained. The indicator array on the external panel showed green across all registered functions — the distributed firmware running dormant, inert without the coordination key, the system doing exactly what it was supposed to do in the seconds before it was told to do something else.
+
+On the left side of the housing, at approximately mid-height: the firmware access slot. A recessed panel with a physical lock. The mechanism for the coordination key. The piece that connected the dormant distributed components to the active query function that would give the Lotus the GLMZ's complete neuretics registry.
+
+"I see the slot," Rook said.
+
+"I need to be physically present for the biometric lock," Priya said. "The access panel reads my fingerprint. I can guide someone through the rollback procedure step by step but the panel does not open for anyone else's biometric. I have to be at the node."
+
+"We extract you first," Rook said. "You come to the node yourself."
+
+A pause on the channel. Not hesitation — the quality of a person receiving confirmation of something they had been building toward for months without being certain when the confirmation would arrive or in what form.
+
+"I'll be ready at 1200," she said.
+
+"Pack exactly what you packed when you first prepared for this."
+
+"I've been packed for three months," she said.
+
+Rook looked at the sensor feed. The Level 11 corridor. The cluster housing. The indicator lights green across all registered functions, the iron infrastructure of the GLMZ's neuretics registration system working correctly behind the Spine's silk surface, maintaining the civic identity backbone for 2.3 million people in the same maintenance corridor where Scout's crawler hovered at the junction access panel, waiting.
+
+"Channel closes," Vox said.
+
+The documentation was complete. Six levels, one coordination node, one firmware slot on a sealed housing in a Level 11 maintenance corridor. Fourteen minutes to run the rollback once Priya had her fingerprint on the panel and the hardware token in the slot. Forty-five minutes until Scout had both crawlers in full position around the housing.
+
+Less than three hours until 1200.
+
+Rook picked up the Level 9 floor plan from the bench.
+
+"Extraction route," she said.
+
+Ekow pushed off from the equipment closet threshold and came to the bench. He had been waiting for this part of the conversation — not with impatience, with the specific quality of a man who had been inside the building's operational logic for twelve years and had already mapped the extraction route before anyone asked for it. He put his hand on the floor plan and indicated Level 9.
+
+"There's a maintenance stairwell on the north face of Level 9 that runs directly to Level 11," he said. "Non-monitored — it's a utility access stairwell, not a resident access route. If we bring Priya out through the residential unit's maintenance access panel rather than the corridor, she enters the stairwell inside the building's maintenance envelope. She reaches Level 11 without a single resident corridor crossing."
+
+"How does she reach the cluster from the stairwell," Vox said.
+
+"The Level 11 utility corridor access is at the stairwell landing," he said. "Same access key as the service junction — Grade 3 maintenance authorization. Boiler's key opens it."
+
+Rook looked at the floor plan. The stairwell. The Level 11 corridor. The cluster housing forty meters from the stairwell landing.
+
+"Ekow and Boiler on Priya's extraction at Level 9," she said. "Scout's crawlers hold the corridor while Priya runs the rollback. Vox on the channel with Priya for technical guidance through the procedure."
+
+She looked at the secondary screen. The sensor feed. The green indicator lights on the cluster housing.
+
+"Three hours," she said.
+
+The clock was the entry credential. Three days from now the credential failed and the Spine operation became impossible. Three hours from now they would have Priya at the Level 11 cluster and fourteen minutes to run a rollback that stopped 2.3 million neuretics registrations from becoming a Lotus query database.
+
+The topology was mapped. The extraction route was planned. The crawlers were in position.
+
+They went to work.

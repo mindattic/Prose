@@ -1,0 +1,32 @@
+﻿SET QUOTED_IDENTIFIER ON;
+UPDATE Beats SET [Text]=N'Ruslan came up through the freight lock instead of the passenger one, which Teo noticed before she noticed anything else about him — a man from AshgraveMaterials choosing the entrance built for cargo instead of the one built for guests, as if he''d wanted the bloc to know from his first step inside it that he understood what kind of visit this was. Sigrun met him there. Teo was asked to walk the spine with them both, because a salvage broker touring a structure without its ballast engineer present was, in her line of work, close to malpractice.
+
+The wall at the lock read three hundred sixty-nine meters. Ruslan looked at it the way a man looks at a number he already knew and had come a long way to confirm in person.
+
+"I''ve walked three blocs into The Low," he said, not as an opening, just as a fact he wanted on the table before he said anything else. "Two of them further than yours. I''m not going to pretend this visit is neutral. I work for Ashgrave. But I didn''t come up here to sell you anything today. Sigrun asked me to look at the frame with your engineer, and I''m going to do that honestly, whatever it costs the offer."
+
+They walked the spine the long way, past the households, past the commons wall, down to the maintenance gantry that ran the coherence frame''s full length, and Teo let him look at what she looked at every week without narrating it for him — the drivers'' housing, the feedback rails, the places where forty years of corrosion inhibitor had worn thin enough to need re-coating twice a decade instead of once. He didn''t ask her permission to put his hand on the housing near driver eleven, the one that had been running hottest on her last three readings, and she didn''t stop him.
+
+"I can hear it," he said, after a moment, and he wasn''t wrong. The Hum was there, faint, the kind most residents walked past without registering, the kind Teo registered the way another person registered a held breath.
+
+"It''s within tolerance," she said. "For now."
+
+"For now," he agreed. "That''s the whole of my argument, if you want it in three words instead of the version I put in writing. I''m not disputing your tolerance band. I''ve read your postings same as anyone. I''m telling you what happens on the far side of it, because I''ve stood on blocs that reached the far side without anyone having told them plainly enough, soon enough, to do anything but improvise once they got there."
+
+Sigrun, walking a half-step behind them both, hadn''t said much since the freight lock. She said something now. "You told my board the offer doesn''t expire. I want that said again in front of my engineer, because I don''t want this bloc voting on a number that quietly isn''t there anymore by the time we vote on it."
+
+"It doesn''t expire in the sense you mean," Ruslan said. "Ashgrave signed eight hundred forty-seven thousand against this structure and that figure doesn''t move, doesn''t tick down while you deliberate, doesn''t get renegotiated because your board took longer than my desk expected. I meant what I put in writing. What I''m telling you today is narrower than that, and I want to be exact about the difference, because I think this bloc deserves exactness more than it deserves comfort." He stopped walking, near the section of gantry where the frame''s stress plot ran clearest, a place Teo herself favored for exactly that reason. "The offer buys a bloc that''s still airborne and still has people choosing to leave it in an orderly way. Six weeks from today, on your own coherence curve — not mine, hers" — he nodded at Teo — "this structure crosses a line where nobody''s choosing anything anymore. It comes down whether anyone''s voted or not. Ashgrave doesn''t buy structures that have already crossed into The Low on their own. Nobody does. There''s no market for a bloc the city''s already written off, and there''s no controlled relocation for the people who were still living in it when it went. There''s an emergency evacuation, and somebody else''s budget line covers the cost of that, and it never once resembles the number I quoted you."
+
+"So the offer''s real today," Sigrun said, "and stops being available in six weeks, and you''re telling me that isn''t the offer changing."
+
+"It isn''t," Ruslan said. "The eight hundred forty-seven thousand doesn''t change. What changes is whether there''s still a structure standing that number can be attached to. I''d tell you the same thing if I liked this bloc less than I do, and I''d tell you the same thing if I liked it more. It''s not persuasion. It''s just what the calendar does to a coherence curve, and your own engineer can confirm the curve, because it''s hers."
+
+He looked at Teo directly for the first time since the gantry, not for validation, she thought, but because he genuinely wanted the number checked by the one person in the bloc whose job it was to check it.
+
+"The curve''s hers," Teo said. "The six weeks is arithmetic on top of it, and the arithmetic''s clean. I don''t love saying that in front of a room that hasn''t voted yet, but you asked me to walk this spine so I''d tell you the truth about it, not a comfortable version of it."
+
+Sigrun didn''t answer right away. She looked down the length of the gantry, past driver eleven''s faint hum, toward the section of wall two decks down where the altitude number waited to be repainted again on Monday, and said, finally, "Then I''ll tell the households exactly what you told me. Both halves. The number that doesn''t move and the six weeks that does."
+
+"That''s all I came up here to ask," Ruslan said. "I''m not trying to rush your vote. I''m trying to make sure that whenever it happens, it happens with the whole clock in the room, not half of it."
+
+They walked the rest of the spine mostly in silence, and Teo found herself doing the arithmetic anyway, the way she did it on every walk now whether asked or not — six weeks against three hundred sixty-nine meters, against a Hum that hadn''t gotten quieter since the last time she''d stood at driver eleven, against a household vote that hadn''t been scheduled yet and would need, whenever it came, every honest number this walk had just put on the table.' WHERE Id='019F3AC8-397D-760A-8E5B-5B39A6E2CEB8';

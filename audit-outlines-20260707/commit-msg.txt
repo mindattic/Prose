@@ -1,0 +1,24 @@
+fix(prose-engine): restore bible injection + kill structural drift; BLST authored to 87/100
+
+Root-caused why generated prose ignored node bibles: DocContextEnabled was off,
+docs/nodes/*.md bibles classified as topic-tier since the SS-A43 rename, node
+docs clipped to 1500 chars, entity name-scan attaching wrong entities by
+case-insensitive substring (the ledger -> Ledger), blueprint per-beat guidance
+commanding revelations/escalation the bible bans, and unscoped CLI runs leaking
+cross-universe entities. All fixed: node-tier classification for docs/nodes/,
+NodeBible fallback + warning in ProseWriterRouter, 6000-char bible clips, strict-
+case name matching for single-token and article+noun names, lock-aware blueprint
+generation (escalation = felt cost, not danger; surprise/suspense forbidden for
+nothing-hidden stories), node seed injected at prompt-top in auto-run.
+
+New: EntityHarvestService + ss --harvest-entities (open text -> nouns -> stub
+entities + edges); SS-LAW-20 term-before-acronym as gateway/sequel commandment;
+CEP/eigenlift canon unification (three-register naming, failure modes, loaded
+gun) with QCE obliterated per user directive.
+
+Ballast (BLST): pipeline generation could not hold 30-beat structure (6000-char
+rolling memory -> stacked votes, re-resolved crises across 7 runs); story was
+authored via sequential full-memory agents against a binding brief. Review:
+87/100, flow 86.9, target met. Next: StoryStateLedger service.
+
+Co-Authored-By: Claude Opus 4.6 <noreply@anthropic.com>

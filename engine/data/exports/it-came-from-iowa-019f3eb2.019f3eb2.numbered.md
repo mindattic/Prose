@@ -5,21 +5,39 @@ The smell reached him first. Turned earth and warm metal, the smell of a field r
 
 Then the sound.
 
-Low. Sustained. Not a mechanical failure sound — not a bearing going wrong or a stuck actuator, not any of the dozen sounds he'd catalogued over thirteen years of watching. What a stuck actuator sounded like was a repetition, a stuttering thing. What a bearing going wrong sounded like was a rising pitch, a shimmy in the ground. This was neither. It held a single note, low enough to feel in the chest before the ears could name it, something between a chord and a groan. No mechanical purpose he knew. No maintenance record he'd ever read described anything like it.
+Low. Sustained. Not a mechanical failure sound — not a bearing going wrong or a stuck actuator, not any of the dozen sounds he'd catalogued over thirteen years. It held a single note, low enough to feel in the chest before the ears could name it, something between a chord and a groan. No maintenance record he'd ever read described anything like it.
 
-He dressed in the dark without turning on the light. He'd done that enough times it was automatic. He went out through the kitchen, the screen door, and across the yard in his boots, laces only half-done because there wasn't time to be fussy about it. Two Eigenlift towers stood to the south in the pre-dawn grey, thirty stories each, rising from the corn with no suburb around them the way they'd been doing since before he was born. Corn, tower, corn. He'd grown up with them the same way he'd grown up with the machine. They were just part of what Iowa looked like now.
+He dressed in the dark without turning on the light. He'd done that enough times it was automatic. He went out through the kitchen quiet, past his parents' door. They were still sleeping; the house hadn't woken up yet, and this wasn't the kind of sound you pulled someone out of bed over before you knew what it was. He went out through the screen door and across the yard in his boots, laces only half-done because there wasn't time to be fussy about it. Two Eigenlift towers stood to the south in the pre-dawn grey, thirty stories each, rising from the corn with no suburb around them the way they'd been doing since before he was born. Corn, tower, corn. He'd grown up with them the same way he'd grown up with the machine. They were just part of what Iowa looked like now.
 
-The sound continued.
+The vibration reached him through the ground before he'd crossed the yard. Not a footfall — the machine didn't move that way at rest. Something else. He crossed the yard faster and went through the gate at the field margin without stopping.
 
-The north field ran about two hundred yards to the treeline, and beyond the treeline was the clearing where the machine spent most of its off-hours. He'd been out there hundreds of times, had climbed the lower struts on a dozen of those, had sat with his back against the secondary stabilizer in the middle of summer and eaten the lunch he'd brought. The machine had tolerated it the way it tolerated everything that wasn't a field to work — with complete indifference, going about its calibration cycles, running the drill-tine into the earth and withdrawing it, making its own sounds.
+He knew the north field and the treeline and the clearing beyond it better than he knew most things. He knew every sound the machine made — had learned them like a language, without meaning to. The calibration cycles. The drill-tine. The maintenance sounds, all their frequencies catalogued somewhere behind his ribs.
 
-He knew all those sounds. He'd learned them like a language, without meaning to.
-
-The sound tonight was not in that language.
+This was not in that language.
 
 He reached the treeline and pushed through the underbrush and stepped into the clearing. His feet stopped.
 
 The dead machine was at the far edge. Collapsed onto two tines, the third one snapped at the joint so the whole carapace tilted forward like a ship taking on water. The hull was darker than the living machine's — more oxidized, the brass gone to something closer to char. It had been there at least days. Maybe longer. He hadn't come to the clearing in a week, and he hadn't known to look.
+
+He moved closer and stopped. The hull had tool marks on it. Straight cuts at the panel seams, the kind a circular saw left when it was working fast and not caring about the surface. A mounting bracket pulled away from the chassis the wrong way: pried, not unbolted. And in the lower section of the hull, a rectangular void. An empty recess, twenty inches by fourteen, where a module had been seated in its bracket and was now gone. The edges of the void were clean. Removed, not torn.
+
+He looked at the primary strut at the forward joint. The strut was wrong. Not broken. Not bent from the collapse. Twisted: the metal going in two directions at once, the geometry of it impossible if you knew what a strut was supposed to look like, which he did. He'd read maintenance manuals since he was eight. He knew what mechanical failure looked like. He knew what stress fractures looked like and what overload looked like and what impact looked like. This wasn't any of those. This was the strut doing something metal didn't do on its own.
+
+He was looking at the strut when he saw the movement at the hull seam.
+
+Thin. A slow line of them, moving through the gap where the forward panel had warped away from the chassis in the same wrongward direction as the strut. Small enough that in the pre-dawn he almost missed them. He stood very still.
+
+He'd grown up watching this machine work the north field. He'd read every manual his father kept in the barn. He thought he knew what a Behemoth was. What it contained.
+
+He did not know what to do with what he was looking at.
+
+He stood there for a long moment. Then he looked at the living machine, still nudging the dark hull. The mourning wail that hadn't stopped.
+
+If something was inside the dead machine that could be eaten. Then something inside had been alive.
+
+He didn't finish the thought. He put it away in the same place he put other things that didn't have words yet.
+
+Someone had been in the field. Someone had taken something out of it.
 
 The living machine was beside it.
 
@@ -91,7 +109,9 @@ The top platform was steel grating, a rusted rail he tested and didn't trust. He
 
 The machine came down the corridor between the corn.
 
-It moved slower than its scale said it should — a quality of very large things. The stride was long enough that each step had its own duration. The brass hull was going gold in the morning light. He watched the Crown approach. At forty yards he could see the dome detail. At twenty he could see the sensor array at the forward edge. At ten he could see that the apex was coming level — maybe six feet below where he was standing, maybe eight. Close enough that six or eight didn't feel like different numbers.
+It moved slower than its scale said it should — a quality of very large things. The stride was long enough that each step had its own duration. The brass hull was going gold in the morning light. He watched the legs first: two long lateral ones, thin for the forty tons they carried, the knee joint at mid-height bending the wrong way -- inverted, heron-geometry, the lower section swinging forward on each stride while the upper section held. The rear support leg shorter, balancing. All three folding and unfolding across the county road with the patience of something that had been doing this for years. The body rode above them, a rounded mass, the forward sensor array at the face catching the low sun. From up here he could see the chassis ports where the manipulators retracted: closed now, all of them, the hull smooth.
+
+He watched the Crown approach. At forty yards he could see the dome detail. At twenty he could see the sensor array at the forward edge. At ten he could see that the apex was coming level — maybe six feet below where he was standing, maybe eight. Close enough that six or eight didn't feel like different numbers.
 
 He waited for the leading edge.
 
@@ -149,7 +169,7 @@ No manufacturer tag. No registry pull — the system had queried twice and retur
 
 She put the coffee down.
 
-She pulled up the aerial relay from the 88 corridor network. Low-angle feed, the morning light just arriving, but the carapace was visible: domed hull, brass-colored, ninety feet at the apex per the scale readout. Tripodal base. Moving at a bearing that hadn't deviated in the six minutes of telemetry available. Two Eigenlift towers framed it — one on each side of the corridor, thirty stories, rising from the corn with nothing around them. The machine walked between them like they were just two more tall things in a flat land.
+She pulled up the aerial relay from the 88 corridor network. Low-angle feed, the morning light just arriving, but the carapace was visible: domed hull, brass-colored, ninety feet at the apex per the scale readout. Three legs visible in the feed: two long lateral ones, thin for the bulk they carried, the knee joint bending the wrong way at mid-height like something designed for a different kind of ground; one shorter rear stabilizer. The body sat high on them, a bulbous mass with the forward sensor array at the face. Tripodal. Moving at a bearing that hadn't deviated in the six minutes of telemetry available. Two Eigenlift towers framed it — one on each side of the corridor, thirty stories, rising from the corn with nothing around them. The machine walked between them like they were just two more tall things in a flat land.
 
 Her channel chimed. Command priority.
 
@@ -229,6 +249,18 @@ The drainage break at Erie ran under a concrete span, maybe forty feet of shadow
 
 Wes saw it from the Crown about two minutes out. He knew right away.
 
+The sensor array moved first.
+
+He'd watched it angle down toward Pip and toward the corn and toward the road all morning, the two forward apertures tracking whatever was below the hull. Now it swung toward the flatbed and locked. The whole array rotated, precise, and held.
+
+The hull changed under him. A vibration he'd felt once before: in the clearing at dawn, when the scythe-arm kept returning to the void in the dead machine's chassis. The same frequency. The same short interval of it.
+
+He looked at the flatbed's load. Machine-salvage brackets in the sun. Stripped housings. Copper conduit. And there, half-covered under a section of housing panel: a color he recognized. Not from thirteen years of maintenance records. From before that. From being three years old in the north field and looking up at something that didn't have a name yet but was the biggest and most permanent thing in his world and always would be.
+
+The dead machine's hull plating. That exact weathered brass-to-bone shade.
+
+He understood what was on the flatbed. And he understood, in the half-second before anything else happened, that the machine had understood it too.
+
 He leaned forward over the forward edge — careful, always careful with the sensor array, never touch the array — and shouted.
 
 The wind took it. The machine's footfall ate it. He shouted again, louder, the kind of loud that tore the throat, and one of the men below looked up. Just for a second. Then he went back to work.
@@ -282,67 +314,79 @@ He held on.
 [Beat 7]
 The call came in at 0947. ArcSec mobile, pattern five from the 88 corridor.
 
-"Anderson." The officer's voice had the professional flatness of a man who needed the log to reflect the precise time and manner of the report. "Mass event near Erie. Civilian down. Non-responsive. Scav camp at the drainage break, approximate coordinates—"
+"Anderson. Mass event near Erie. Civilian down, non-responsive." The officer's voice had the careful flatness of a man building a log. "Scav camp at the drainage break. Coordinates follow."
 
-She wrote them. She didn't ask twice.
+She wrote them on the skimmer display and diverted south.
 
-"Machine still mobile?"
+The drainage break at Erie had a mobile unit already staged, a single officer named Mistry who met her at the concrete span with the efficiency of someone who'd been waiting. The scene: a flatbed with its load still on it, a winch cable in the dirt, a yellow safety vest near the tine impression in the drainage concrete. One man gone. Two survivors: one in the mobile unit, sedated; one ambulatory, sitting against the drainage wall with a taped cut above his left eye.
 
-"Bearing unchanged. Speed unchanged. We attempted an interdiction-class proximity approach and the—" A pause. The flatness cracked a little. "There's wreckage in the camp. The cable's still attached to the tine. The machine walked it out."
+CJ crouched next to the ambulatory one. Male, mid-thirties. The cut was recent, badly closed, already bruising underneath.
 
-She thanked him and closed the channel.
+"You were here for the salvage," she said.
 
-Hauser came in forty seconds later.
+He nodded.
 
-"Anderson. I have the Erie report. Logging escalation request four. I want your concurrence on demolition authorization."
+"What kind."
 
-"Request more time, sir."
+"Machine parts." He looked at the flatbed instead of her. "Agricultural. We had a site south of Rock Island. Found a unit in a field, already down, nobody around. Stripped it over two weeks."
+
+"When did you find it."
+
+"Eight days ago."
+
+"What parts specifically."
+
+He pressed his hand against the taped cut. "Housing brackets. Drive components. Sensor-array housings." A pause. "Some of the modules were still running when we pulled them. Broadcasting. We figured they'd die out."
+
+"Did they."
+
+He didn't answer that right away.
+
+"We sold the load four days ago. A junker who runs the corridor. Name's Ferko Nzambe. He takes whatever you have, doesn't ask what it is. Runs an Eigenlift cargo platform, old flatbed type, beat-up gray. Was heading south for the GLMZ run."
+
+"He took the broadcasting modules."
+
+"We didn't mention it." He looked at the drainage concrete. "He didn't ask."
+
+CJ stood.
+
+She looked at the flatbed: machine-salvage brackets in the sun, copper conduit, stripped housings. The parts that hadn't sold. She looked at the tine impression in the drainage concrete. Then at the 88 running west.
+
+She thanked Mistry and left.
+
+Hauser came in forty seconds after she was back on the road.
+
+"Anderson. Logging escalation request four. I want your concurrence on demolition authorization."
+
+She was moving. The skimmer's display had the machine's telemetry dot, 4.9 mph, bearing unchanged. She had it now: the machine wasn't walking toward the zone density. It was walking toward Cahill's load. The broadcast wasn't a question. It was a tracking signal. Every eleven seconds, the same pulse, the same interval: a locator. The machine knew where the parts were the way you knew where a sound was coming from before you turned your head.
+
+It had been following those parts for fifty miles.
+
+"Request more time, sir," she said.
 
 "Define more time."
 
-She looked at her display. The 88 corridor spread flat from Dixon west, satellite overlay, and she could trace every telemetry point: the drone wreckage near Hillsdale, two clusters, a third further east she hadn't looked at yet. The scav camp coordinates. And the moving dot that was still moving — bearing true south, 4.9 mph, unchanged. Eigenlift towers stood along the corridor at irregular intervals, each one thirty stories out of the corn with nothing around it. Corn, tower, corn. It looked wrong and it looked exactly right, both at once — GLMZ had swallowed the whole Midwest and it hadn't replaced any of it, just planted its infrastructure in the fields and let the fields keep being fields.
+"Three hours." She let the throttle open on the straight stretch. "Logging non-concurrence on demolition at 0951."
 
-"Three hours before it reaches the zone boundary," she said. "I'd like to use the time to assess the behavioral profile. The machine hasn't deviated from its bearing in nine hours of telemetry. It hasn't altered pace. It isn't reactive — it answers proximity, but it doesn't change course for it."
-
-"Request four is in the log. I'm moving it up the chain on my authorization."
-
-"Sir—"
-
-"Civilian down, Anderson. I'm moving it up."
-
-Her thumb found the channel key. The concurrence was one keystroke — Hauser had the doctrine and the civilian down and the log already written, and she was standing in Dixon with her coffee gone cold and a story she hadn't filed yet. The doctrine was not wrong in the abstract. Her thumb was on the key.
-
-The broadcast spike registered on the lower display.
-
-Same pattern as after Hillsdale — same amplitude jump, same narrow timing window. The machine had done something, then broadcast, and the agitation markers had ticked down. The spike was live, a bright column in the nine-hour graph, still resolving.
-
-She looked at the column. Her thumb came off the key.
-
-"I'm not concurring on demolition," she said. "Logging my non-concurrence at—" she checked the timestamp "—0949."
-
-Hauser was quiet for two seconds. That was about as much pause as he allowed himself. "Logged. This doesn't stop the escalation."
+Hauser let the channel go quiet for two seconds. That was his version of consideration. "The escalation proceeds without your concurrence."
 
 "Understood."
 
-He closed the channel. He always closed when the conversation was finished, not when the frustration peaked — she'd clocked that in three months, and she didn't dislike it. He had a doctrine and a timeline, and the doctrine wasn't wrong in the abstract. He just wasn't where she was.
+He closed it. He always closed when the conversation was done, not when the frustration peaked. She'd clocked that in three months. He had a doctrine and a timeline and the doctrine wasn't wrong. He just didn't know what she'd learned at the drainage break.
 
-She pulled up the acoustic telemetry.
+She still had to find Ferko Nzambe.
 
-Six hours of data. The broadcast was steady — not a distress call, not a navigation ping, not anything in the ArcSec catalog of known Behemoth maintenance signals. It repeated on an interval of about eleven seconds. Same pattern. Every repetition identical to the last, which meant it wasn't degrading, wasn't shifting with mechanical state. The same signal at mile one as at mile forty.
+She pulled up the display. The junction checkpoint at the Zone-12 boundary was forty-five minutes ahead of the machine at its current pace. Cahill had been on the road for four days. He was probably close to the boundary, maybe at it, maybe just inside. She had the gray hauler description and a name and a load that had been pulsing at eleven-second intervals since Rock Island.
 
-She'd flagged it for the Behemoth registry cross-reference two hours ago. No match.
+The skimmer opened up on the flat 88.
 
-She set two streams side by side: the broadcast, and the behavioral signatures — stride variance, speed variance, heading variance, anything that moved off baseline.
+She had time. Not much, but time.
 
-When the drones arrived the first time, one of the behavioral signals had spiked. Not direction. Not speed. Something in the hull resonance, something the Hillsdale relay had caught and she'd almost scrolled past. The spike had lasted about eight seconds.
+She looked at the telemetry display. The machine's bearing was unchanged. The broadcast interval was unchanged. The agitation markers had ticked down slightly since the drainage break -- she'd noticed that earlier and filed it, and now she understood why. The machine had found the crew that stripped its companion. It had done something about that. The agitation markers reflected it.
 
-After the drones went down, the machine had broadcast.
+Whatever it needed next, it wasn't more kilometers. It was a rectangular module, maybe twenty inches, broadcasting at eleven-second intervals from the back of Cahill's cargo load.
 
-She highlighted the interval. Looked at the pattern. Looked at the timing.
-
-Three hours.
-
-She still didn't have the match.
+She went west.
 
 [Beat 8]
 The second wave came in near Prophetstown.
@@ -390,6 +434,8 @@ He held the edge and watched Pip run.
 [Beat 9]
 CJ went west on the 88 corridor at 0645, the skimmer two feet off the asphalt, the hum in good register, the morning air cold enough to want the layer she'd forgotten to grab off the rack.
 
+The 88 ran flat and empty at this hour, and for one open stretch she let the throttle go. The repulsor field carried a fixed geometry two feet above the surface and did not negotiate with terrain. Asphalt, road shoulder, soft gravel, drainage break at the Dixon perimeter — same hum, same height, no adjustment. At full throttle it moved like something very fast that had also decided. She pulled back before the drone wreckage.
+
 The first drone wreckage showed from the road: a unit down in the corn about thirty yards north of the shoulder, nav light still cycling green, body canted at an angle that meant it had come down hard and fast. She marked it on the display without stopping. The second cluster was a half-mile on — two units, dark, no lights, lying in the rows at angles. She noted the positions. The camera had caught what it needed to catch.
 
 The scav camp at Erie she reached near Hillsdale. She slowed the skimmer. Yellow vest on the ground by the drainage break. ArcSec mobile already there, one unit, the officer she'd spoken to on the radio. She logged her position, radioed it in, kept moving. Nothing she could do there that wasn't already being done. The machine was ahead.
@@ -420,6 +466,10 @@ He let her.
 
 No fight. No snap. No protest. He just let himself be lifted the way you let yourself be lifted when you've been moving forty miles and your body has said everything it has to say. She held him against her chest and he turned his head and looked ahead at the machine — brass hull, forty feet, walking south like it had already arrived — and his ears stayed forward and his tail was going against her forearm.
 
+She brought the skimmer back up to speed. He immediately shoved his head out the left side into the slipstream, ears flat, mouth wide, tongue lolling in the full loose commitment of a dog who had assessed the situation and found it acceptable.
+
+She let him.
+
 Forty miles in. Still going.
 
 She looked ahead at the machine.
@@ -428,226 +478,294 @@ She cupped her free hand around her mouth.
 
 "Hey. Who's up there."
 
-A pause. The machine walked. Then a voice came down from the Crown — a boy's voice, maybe twelve or thirteen, roughed at the edges by a whole day of sun.
+A pause. The machine walked. Then a voice came down from the Crown — a boy's voice, maybe eleven or twelve, roughed at the edges by a whole day of sun.
 
 "Name's Wes."
 
+CJ tapped her temple twice. Standard contact request.
+
+Ninety feet up, a pause. Then the boy tapped his own temple once — and then made a gesture she didn't immediately parse: a flat hand pulled across the side of his head, quick, like clearing something away. Then he held both arms out from the edge of the Crown, fingers spread.
+
+All ten.
+
+The machine's stride shifted.
+
+One leg placement wrong — not badly, not a stumble, just a degree or two off the rhythm it had held for fifty miles. The Crown lurched and she watched the small figure drop fast, one knee braced against the dome, both hands grabbing for the edge. Not sliding. But close. Close enough that she stopped breathing for a second.
+
+The machine restabilized. Three strides, normal geometry.
+
+The boy came back up to standing, slow, checking his feet. He looked back down.
+
+Held up the ten fingers again.
+
+Ten. No neuretics. Too young.
+
+She'd heard his voice and thought eleven, twelve. The gesture said ten.
+
+"Okay," she said, and raised her voice against the wind. "Shouting works fine."
+
 [Beat 10]
-She pulled up the acoustic telemetry on the skimmer's display without a word. Six hours of data, the signal graph across the lower third.
+She pulled up the acoustic telemetry on the skimmer's display without a word. Six hours of data, the signal graph across the lower third of the screen.
 
-"There was a sound," he said.
+"There was a sound," Wes said.
 
-"I have it. I've had it since Davenport."
+"I've had it since Davenport."
 
-"Like a mourning sound?"
+"The mourning sound."
 
 She looked at the data. She didn't answer that.
 
-"It did the full shutdown sequence before it left," Wes said. "All the tools retracted one by one, the way they go at the end of a work cycle. Then it took a bearing, and it hasn't changed it since."
+"It did the full shutdown sequence before it left," he said. "All the tools retracted one by one, the way they go at the end of a work cycle. Then it took a bearing and it hasn't changed it since."
 
-"It stopped and left."
+"It found something dead," CJ said. "In the north field. Something it knew."
 
-"Yes."
+He was quiet for a moment. "Yes."
 
-She was watching the telemetry. The broadcast: constant interval, about eleven seconds. The same short pulse every eleven seconds since the first hit. Not growing louder, not weakening. Not changing in any way that read as mechanical degradation. She'd been on it for six hours, and the signal at mile one was identical to the signal at mile forty.
+"Tell me what you saw."
 
-She pulled up the behavioral correlation she'd been building since 0630: hull resonance signatures, stride variance, the markers she'd labeled agitation for lack of a better word. The two drone-swatting events had thrown spikes. The threat-wail at Erie had thrown a spike. After each event, the machine had broadcast, and after it broadcast, the agitation markers had dropped.
+He described the clearing: the dead machine collapsed onto two tines, the hull oxidized darker than the living one. The living machine beside it, the scythe-arm extended and nudging the dead hull. The sound that had pulled him out of bed.
 
-Not to zero. By a fraction.
+"The hull had marks on it," he said. "The dead one. Tool marks. Saw lines at the panel seams, mounting brackets pulled back wrong. A rectangular void in the lower chassis, about twenty inches. Something had been cut out."
 
-As if something had answered. Or as if the broadcasting was itself the answer — an output that needed no return and kept going because nothing had told it to stop.
+CJ looked at the telemetry. The broadcast interval: eleven seconds, steady, the same line at mile one as at mile forty.
 
-She looked at the Eigenlift towers ahead on the corridor. Dixon was five miles out, the Rock River running east-west past it. On the far side of the river, the outer ring of Zone-12 infrastructure. Not GLMZ proper yet, but the first real concentration of it — towers no longer a mile apart but clustered, grouped, the kind of density that meant when you put out a signal at this frequency and this amplitude, someone would hear it.
+"South of Rock Island," she said. "A scav crew found a machine in a field eight days ago and stripped it. Some of the modules were still broadcasting when they pulled them. They sold the load to a junker named Cahill. Gray hauler, running south."
 
-Three million people in the first ring. Beyond that, in full GLMZ, thirty-six million more.
+He was quiet for long enough that she counted the interval: eleven seconds. The machine broadcast. Nothing returned.
 
-She looked at the interval data. Every eleven seconds, going out. Every time: no answer. Agitation ticking up by a fraction. Broadcast again.
+"It's not asking," he said. "Is it."
 
-It came to where the most people are because it thinks someone here will answer.
+"No." She looked at the signal. "I thought it was a question. An interval looking for a matching return. But the agitation markers ticked down after Erie, not up. It's been following the signal. Broadcasting is how it locates. Every return bounce, every surface that reflects the pulse back, tells it where the source is. Cahill's load has been doing that from wherever he's parked."
 
-She didn't say it aloud. The data said it. She read it off the graph the way she'd read the raw pads on the dog now warm and breathing against her chest — a body's evidence, sitting on a skimmer two feet off the asphalt, the machine walking the road five feet to her right with no name and no registry and no explanation for what lived under the threat-wail's second frequency.
+He put his hand flat on the hull near the forward sensor cluster. Held it there.
 
-Hauser's channel opened. She let it open.
+"It's warmer here than anywhere else on the Crown," he said. "Been like that since Lyndon. Warmer means the signal's close."
 
-"Anderson. Escalation request five. Fire order is pre-armed. I need your concurrence or your non-concurrence on the record in the next fifteen minutes."
+She looked at the distance on the display. The Zone-12 boundary was ahead. The checkpoint, the staging lanes, Cahill's gray hauler somewhere in that vicinity.
 
-She didn't answer him yet.
+"I can find him," she said. "I can go ahead and come back."
 
-She looked at the towers. Then at the machine. Then up at the Crown — at Wes, a hundred feet up, one hand on the edge, sunburned down one side from an afternoon she'd only reached the end of.
+He looked down at her. At the skimmer. Then he knocked on the hull with the flat of his knuckles: three short raps, a specific weight and timing, not random. A beat she'd heard once before, somewhere she couldn't place.
 
-She had the full picture.
+From inside the hull: a sound. A scraping mechanism -- something like a lock or actuator shifting, a component she'd never heard on any audio profile in her catalog. A mechanical response that came back in about a second.
 
-She had no idea how to file it.
+Then Wes knocked twice.
+
+The hull vibration changed. Not the footfall rhythm. Not the broadcast or the mourning wail. Something lower, a half-second pulse, the kind of sound that arrived in the teeth before the ears named it.
+
+"That's it saying yes," he said. "I've been working it out. Three raps is a call. It answers with the scrape. Two raps is go-ahead. And if you breathe into the forward exhaust vent" -- he moved six inches to the right and exhaled slowly into a vent she could see at the Crown's forward edge, a deliberate warm breath -- "it goes quiet and warm."
+
+The hull changed temperature. She couldn't feel it from down here but she could read it in his expression, the way he had his palm on the plating.
+
+"That's yes," he said. "Or close. I'm still working out the range."
+
+She looked at the display. The boundary was close. Cahill was close. At a hundred-plus on the 88, she could reach the checkpoint, get the module, and come back before the machine crossed the boundary.
+
+She looked up at him.
+
+"Keep it slow," she said. "Buy me time."
+
+She looked at Pip.
+
+"Keep him too."
+
+She opened the throttle.
+
+Hauser's channel opened sixty seconds after she left, but she was already moving at speed on the flat Illinois road and by the time he finished the escalation request she was two miles ahead of the machine and the wind was taking everything else.
 
 [Beat 11]
-The signal had been in his chest for so long he'd stopped hearing it as separate from the hull.
+CJ opened the throttle on the straight stretch west of Lyndon.
 
-That was the thing about the eleven-second interval — after the first hour you stopped counting it consciously. Your body learned the count. You breathed around it. Somewhere west of Prophetstown, before he'd fallen asleep, Wes had stopped registering it as a sound and started registering it as a rhythm, the way you eventually stopped registering your own heartbeat.
+The skimmer's repulsor field didn't negotiate with what was below it. The 88 ran flat and the skimmer ran two feet above whatever the 88 was doing, which at speed meant the drainage culverts and gravel shoulders and heaved-asphalt stretches from forty cycles of freeze-thaw were all equally irrelevant. At full throttle it moved the way something moved when it had decided. She let it go and the machine behind her, still doing its five miles per hour toward the Zone boundary, shrank in the display to a slow dot and stayed slow.
 
-He'd woken in the afternoon shadow with the interval still going and the count still somewhere behind his ribs, and now, approaching Dixon, he knew a thing he hadn't bothered to put into words: he had the pattern. Not in his head — in his hands, in his chest, the exact weight and gap of it. Six hours carried.
+She found Ferko Nzambe at the Zone-12 entry checkpoint staging lane, his Eigenlift cargo platform fourth in the queue, hovering two feet off the road surface, the salvage load stacked under a weathered cargo net. She cut the throttle. The skimmer went from over a hundred to a stop in the time it took to breathe out.
 
-He looked down.
+Nzambe was mid-fifties, a broad man in a gray work jacket. He looked at the ArcSec logo on her jacket. Then at the skimmer. Then at her face.
 
-The scout was below on the skimmer, the display screen pulled up, Pip in the crook of her left arm. She was watching the telemetry. Her right hand was on the scanner.
+"Anderson," he said. He knew her name. She filed that for later.
 
-He looked at the hull under his knuckles.
+"You bought a load south of Rock Island. Four days ago. Scav crew."
 
-His hands had been on it all day. This was no different, except that he meant it.
+"I buy a lot of loads."
 
-He knocked. The pattern's rhythm — three short beats and the pause, the same shape the machine sent every eleven seconds, the same weight, the same gap. He did it with the flat of his knuckles against the hull plating, not hard, not soft. A contact. A knock.
+"This one had agricultural machine parts in it. Some of the modules were still broadcasting when you took them." She held up the scanner. Eleven-second interval, clean on the display. She was very close to the source. "I need those modules."
 
-Below, CJ heard it the second time he did it. She looked up. He was doing it again: the rhythm, the interval, the space.
+He looked at the staging queue ahead of him. At the Zone boundary towers. At the flat Illinois sky. He was the kind of man who had a reading on every situation he found himself in and knew how to wait for the right card.
 
-She looked at her scanner.
+"There's a forty-ton unregistered Behemoth doing five miles an hour toward this checkpoint right now," she said. "It has been following that load since Davenport, Iowa. If I bring it what it's looking for, it turns around. If I don't, it reaches the boundary in about ninety minutes. Nobody at this checkpoint has anything that will stop it."
 
-It was a field survey unit, not a transmitter. Not designed for it. The frequency range overlapped with the machine's broadcast band — she'd verified that an hour ago without being entirely sure why she was checking. She adjusted the output to its highest gain and keyed transmit and sent the pattern into the air at the same frequency the machine had been using since Davenport.
+He looked at her for a moment.
 
-It wasn't clean. It wasn't exactly right. It was field-expedient, which was what she had.
+Then he got off the platform.
 
-She sent it anyway.
+The module was near the forward left corner of the load, under a section of broken housing panel and a coil of stripped conduit. He went straight to it, no searching. He'd known it was there and had been thinking about it. The module was rectangular, twenty inches on its longest side, the surface oxidized the same brass-to-bone color as the hull she'd been watching on telemetry all day. Still warm. Still broadcasting. Close enough that she could hear it without the scanner: a subsonic pulse in the teeth, eleven-second interval, patient and steady.
 
-Eleven seconds. Pattern. Pause. Again.
+She took it in both hands.
 
-From above: knuckles on hull. From below: the scanner pulsing at the broadcast frequency.
+It was heavier than its size. She felt that weight the moment she had it.
 
-The machine walked. Dixon was two miles out. The towers ahead were different from the corridor singles — not spread a mile apart with nothing between them. Grouped. Clustered. The junction node, thirty stories, and around it the first real density of Zone-12 infrastructure. CJ had counted seven towers on the forward display. Beyond the Rock River, the number multiplied.
+"Thank you," she said.
 
-Her comms opened. Hauser's channel.
+Nzambe looked at the module. Then at her. His face was the same as it had been since she arrived: not surprised, not relieved, not visibly calculating. The face of a man who had made his choices a long time ago and wasn't revisiting them. He'd taken a load he shouldn't have taken, and he'd known it, and he hadn't asked. That was his business model and it had caught up with him and he was adjusting.
 
-"Anderson. Fire order is live. Authorization on my signature only. I'm telling you because the log requires it and because you are in the field." A pause — not hesitation, just him building the record. "This is not a request for concurrence."
+"You can find me," he said. "When this is done."
 
-The scanner pulsed. Eleven seconds. Pattern.
+She didn't know what he meant. She didn't have time to ask.
 
-She heard the fire order. She was transmitting. She did not stop.
+She went east at full throttle with the module in her lap, Pip wedged between her arm and the module's side, his head shoved into the wind. The scanner showed the eleven-second interval. She was moving fast toward the machine, and the module was still broadcasting, and the machine was still walking south, and all three of them were converging on the same point at different speeds.
 
-Wes was knocking on the hull. The interval had become his breathing. His eyes were ahead. Dixon was coming up in the flat distance, the junction node's tower visible now above the tree line of the Rock River, thirty stories, no transition, just the sky and then the tower.
+On the display, the machine's dot grew.
 
-He didn't know if this was right. He'd known exactly once what was right — at the clearing, before dawn, when he'd known without thinking. He didn't have that certainty now. He had the interval and his knuckles and the warm hull under them, and he had CJ below doing the same thing from a different angle in a different key with equipment that wasn't made for it.
+She came alongside near the Dixon perimeter and matched its pace. Five miles per hour felt very slow after the speed she'd just been running.
 
-He didn't argue about the odds of it. He knocked.
+"Wes."
 
-The pattern went out above and below. The towers at the Dixon junction grew at the horizon. The machine walked.
+He leaned over the Crown edge. She held up the module with one hand.
+
+He was quiet for a moment.
+
+"Okay," he said.
 
 [Beat 12]
-The Dixon city marker was a steel post at the road shoulder, orange reflective banding, a stenciled number and administrative code. The machine's forward tine passed it at 1403 and the number didn't matter and then it was behind them.
+"Put it down," Wes said. "In front of the forward tine. Step back."
 
-Wes was still knocking. The interval had become his breathing. He didn't count anymore — it was just there, the rhythm as automatic as anything his body had been doing all day.
+CJ dismounted. Set the module on the Dixon asphalt. Straightened. Stepped back six feet. Pip pressed against her left leg and looked at it too.
 
-CJ was still transmitting. Scanner in her right hand, Pip in the crook of her left arm, the skimmer steady two feet off the asphalt. The junction node ahead — thirty stories, rising from the river tree line — was close enough now to see the maintenance bands on the lower third.
+The machine stood still.
 
-Hauser's channel opened.
+For maybe three seconds it stood still. The module sat between the forward tines, still broadcasting at its eleven-second interval, and the machine's sensor array was angled toward it and nothing else moved.
 
-"Final authorization. Fire."
+Then the arm extended.
 
-She heard it. Her thumb stayed on the transmit key.
+Not the scythe-ring. A different one -- a manipulator she hadn't seen deployed before, narrower configuration, three-fingered at the tip. It came down the way all large things came down: slow, because they couldn't afford not to be. Ninety feet of arm descent over maybe eight seconds. She watched the manipulator lower over the module, read the module's dimensions in the pause before closing, then close.
 
-The pattern went out. Above: knuckles on hull. Below: scanner at broadcast frequency. Eleven seconds. Pattern. Pause. Eleven seconds.
+Not hard. Not fast. The way you picked something up when you knew exactly how much it weighed and you had learned to respect the weight.
 
-The mourning wail stopped.
+It held the module up.
 
-Not a fade. A stop — full stop, mid-note, as if someone had lifted the needle. The absence hit Wes before the silence did, a pressure differential, his ears adjusting to what had been in them for hours and was now not. He went still on the Crown, both palms flat on the hull.
+The arm raised the module level with the sensor array -- forty feet off the ground, the machine looking at what it was holding. The array angled toward it. Two apertures caught the afternoon light in a way that read as eyes.
 
-The machine stopped.
+They weren't eyes. She knew that. Soil-moisture sensors in an agricultural array, built to read field saturation from a working height of four stories. She knew what they were.
 
-Not a slowing. The tines planted in sequence — forward right, forward left, rear — and the body swung level and the momentum absorbed and then there was no momentum left to absorb because the machine was standing. Three tines in the Dixon asphalt. Hull a hundred feet above the road.
+The machine held the module for a long time.
 
-Still.
+Wes had both palms flat on the hull. He wasn't looking at CJ. He was looking at the Crown plating under his hands, feeling something she couldn't feel from down here. She watched him: the way he held still, the careful quality of it, like someone in a room where they didn't want to make noise.
 
-The new sound.
+The sound the machine made: not the mourning wail. Not the broadcast pulse or the threat-wail or the interval signal. Something underneath all of those. A harmonic -- two notes at once, low, the kind of sound the hull made when nothing else was demanding it. Internal. The sound of a system at a temperature it had been carrying for a long time, doing something no maintenance manual had a field for.
 
-It was not a wail. It was not the broadcast pulse. It was not the threat-wail and not the mourning sound and not anything in three years of maintenance manuals or twelve years of watching a machine work a field at sunrise. There was no record of it. There was no category it would have been filed under.
+It held the module for maybe twenty seconds.
 
-What it did to them: something in the chest, not pressing in but releasing — a loosening behind the sternum that had no mechanical cause and no physical explanation. Not the stomach-drop the threat-wail had brought. Something different in direction. Something that went up rather than down.
+Wes took his hands off the hull.
 
-The back of the neck first. The hairs there, both of them — Wes on the Crown with his palms flat on the cooling hull, CJ two feet off the Dixon asphalt with Pip in her arm — the neck before anything else. Then the chest. The body got there before the mind came to help.
+"Okay," he said, quietly. Not to her. Just out loud.
 
-CJ's grip on the skimmer handle went tight.
+The manipulator arm began to lower the module. Back down, slowly, all the way to the asphalt, where it set the module precisely where CJ had put it before. Then the arm withdrew.
 
-Wes did not move.
+The machine stood over the module.
 
-The sowing tube moved.
-
-It had been sealed at the tip and latched in its rest bracket since before Davenport. The seed chamber behind it quiet, the tube retracted, the tip flush. Now the seal shifted — just a fraction, just enough to see the gap open where it had been flush — and the tube extended three inches from its bracket. Then it stopped.
-
-Held.
-
-Three inches. The beginning of a gesture. Not finished.
-
-The new sound held over the Dixon road and the junction tower and the flat Illinois sky. Ten seconds. Maybe twelve. Then it faded — not to silence but to ordinary sound coming back in around the edges: wind across the corn, the Rock River somewhere nearby, Pip breathing.
+Then the tines began to move.
 
 [Beat 13]
-She pressed the comms key.
+The drill-tine came down at a ninety-degree angle.
+
+Not the walking angle -- that was diagonal, a stride placement, weight distribution across five legs. This was vertical: post-driver geometry, straight into the Dixon asphalt. The tine tip went through the road surface the way it went through clay in a north Iowa field in April. Smooth. The asphalt cracked in a clean ring around the entry point. Two feet of depth. Three. The tine withdrew, clean, leaving a cylindrical hole with packed walls.
+
+A second tine. Adjacent to the first. Same line, same geometry.
+
+CJ stood at the skimmer with Pip at her feet. She didn't move. The tines drove and withdrew in sequence, the machine working the hole into a shape, the pattern deliberate and recognizable: the dimensions of the module. Rectangular. Precise. Four feet deep when she tried to measure it by the tine geometry, then five.
+
+The corn on both sides of the 88 was very still. The Eigenlift towers stood at the field edges and did not do anything about it.
+
+Wes had both palms on the Crown plating. The vibration of the tines driving down was different from walking -- he could feel it -- percussive, purposeful, a rhythm that had nothing to do with covering ground.
+
+The hole reached depth.
+
+The manipulator arm extended again. The same three-fingered configuration. It picked up the module from the asphalt the same way it had the first time: slowly, reading the weight. Then it lowered the module into the hole. The arm reached six feet down and released the module at the bottom.
+
+Withdrew.
+
+The module rested in the clay. On CJ's scanner: the eleven-second interval. Regular. Regular. Regular.
+
+Then: interval, and nothing. Interval, and nothing. The broadcast continued at eleven seconds. No return signal came. No return signal had ever come -- it had been doing this since Davenport and no return signal had ever come.
+
+But this time the machine stopped broadcasting.
+
+Not a gradual fade. The signal on her scanner dropped flat. The display showed the prior readings: a hundred miles of data, the same interval maintained across every minute of that, the broadcast holding steady through drone strikes and threat-wails and scav camps and a hundred feet of asphalt and the flat Illinois distance.
+
+Now: nothing.
+
+She looked at the line going flat.
+
+The tine began compacting.
+
+Not the blade side -- the flat side, the broad agricultural surface, pressing the clay in from one edge of the hole, then the other. Methodical. Not rough. The way you tamped earth around the base of a fence post when you meant for it to hold through freeze-thaw. Layer by layer, the clay folding back. The module disappeared under it. The hole filled. The asphalt crack-ring at the surface pressed back into shape, not perfectly -- a slight discoloration at the surface, the clay changing the color of the road where it had been compacted -- but level.
+
+Five minutes. Maybe six.
+
+The machine stood over the burial site.
+
+The sounds the hull was making were not the mourning wail. They were not the broadcast or the threat-wail or the harmonic it had made when holding the module. They were the sounds a hull made when a long work cycle was finished: the cooling-down sequence, systems returning to baseline, the bioreactor heat settling, the sensor array cycling through its post-work diagnostic sweep.
+
+Wes kept his hands on the hull.
+
+He didn't say anything. There was nothing to say that what the machine had just done hadn't already said.
+
+[Beat 14]
+The machine stood over the burial site for a long time.
+
+Long enough that Wes counted his pulse against it: somewhere past forty beats, maybe sixty. The machine was doing nothing visible, or doing something inside that produced no external sign, or there was no difference between those two things and there never had been. He'd been on the hull all day and he still couldn't have said which.
+
+Then the tines shifted.
+
+The stride-prep sequence. He knew it by feel now: forward right finding its weight, forward left, the rear pair, the fifth stabilizer settling into its new geometry. The body swung to find the direction.
+
+North.
+
+He looked at the flat Illinois horizon. Corn rows running north, Eigenlift towers in the corn to the north, Iowa somewhere north at the end of five miles an hour. The north field. His parents, who still didn't know where he was.
+
+He started down.
+
+No one helped him. He didn't need help. He'd learned the hull's seams by feel on the climb up. The strut edges, the maintenance plate edges, the repair-seam on the southwest face he'd used as a landmark twice without meaning to. He went down the way the machine had been going all day: deliberate and unhurried, because hurrying was how you fell. CJ was there when he reached the last strut, close enough to put a hand on his elbow when he landed.
+
+He came off the last two feet and hit the Dixon road gravel. Scraped hands. Sunburned right cheek. Boots dirty from the Crown and the struts and from the yard in the dark before four in the morning when he'd gone out with his laces half-done.
+
+He stood beside CJ and they watched the machine go.
+
+It walked north at five miles per hour. The five long legs eating distance with the patient deliberateness of something built to cover a season's worth of ground at a time: high-jointed, the stride long, the pace slow enough that each footfall had its own weight. The brass hull going gold in the late afternoon. The sensor array angled forward, then forward, then forward, as the machine put more of the flat Illinois land behind it. The retracted manipulator arms: folded in the chassis housings, every port sealed, the full shutdown sequence complete. Just legs and hull and the forward array and the 88 running north.
+
+Corn on both sides. Eigenlift towers rising from the fields with nothing around them. The machine passed between them the way it had always passed between them: without acknowledging them, because they were just more tall things in a flat land, and it had work to get back to.
+
+CJ pressed the comms key.
 
 One button. The channel went to static.
 
-Not a speech. Not an argument. The fire order was live in Hauser's system and the escalation protocol required the field officer's confirmation and she was the field officer and she had not confirmed. That was all she'd done. One button. The channel going to static was the confirmation that no confirmation was coming.
+Hauser's fire order was live. The escalation protocol required the field officer's confirmation. She was the field officer. She had not confirmed, and she was not going to confirm, and the machine was walking north.
 
-She set the scanner down on the skimmer's carrier rack. Her hands were steadier than she expected.
+She set the scanner on the carrier rack. Her hands were steady.
 
-The machine was thirty feet to her right. Dormant — no vibration in the air around it, no hull resonance, the tine impressions in the Dixon asphalt already gone still. A hundred feet at the Crown, framed against the junction node's lower third and the flat Illinois sky. Old brass hull in the afternoon light, pitted and genuine, the seams and replacement plates and the repair joint on the southwest face. No transponder. No registry. No name.
+Pip went to the burial site. He'd been patient through all of it -- the burial, the descent, the departure -- and now he did what he'd been doing at every significant stop today. He sniffed the surface at the sealed patch of asphalt. Thorough. Starting at one end, working the perimeter, the slight discoloration at the center where the clay showed through the compressed road surface. He took his time.
 
-The fire order was live. She was standing ground-side of the target, and without her confirmation Hauser's system could not execute. She knew that. She was not moving.
+Then he sat down beside it. Ears up. Watching the machine go.
 
-The Rock River was audible to the east. A low sound, water over stone, the flat land funneling it north before it turned. She hadn't expected to hear it from here. She'd thought the road noise would cover it.
+The machine walked. The brass hull went from gold to something darker as the afternoon light pulled at an angle, and the distance took the detail, and then it was a shape, and then the shape was gone into the flat line of the horizon.
 
-Wes was still on the Crown. She could see his boots at the hull's lip — he hadn't come down yet. No hurry, from up there. The hull was cooling. The broadcast signal had stopped. The entire audio profile she'd been tracking since 0614 — the mourning wail, the broadcast pulse, the agitation signatures, the threat-wail — had gone flat. The telemetry display showed nothing but the straight line of a machine at rest.
+The corn stood in the late light. The Rock River ran somewhere to the east, audible if you listened. The towers stood.
 
-She looked at that line.
+Wes watched the horizon for a while after.
 
-Hauser's channel was static. She had a few minutes before the escalation system logged the non-confirmation and routed the fire order up the chain to someone with authority over junior scouts. She had those minutes and she was using them by standing beside her skimmer in Dixon, Illinois, in the shadow of an unregistered machine that had walked fifty miles to ask a question.
+"What do you call it?" CJ said.
 
-Pip was still in the crook of her arm. She looked down at him. He was watching the machine — ears forward, the same focused look he'd had at five miles an hour forty miles back. He knew where he was.
+He didn't look at her. "Lord Long Legs."
 
-She looked up at the junction node above them. Thirty stories. The maintenance bands on the lower third, the indicator lights blinking their slow cycle. Just a tower. Just the flat sky above it and the river somewhere east.
+She looked at him.
 
-It had stopped.
+"I was five," he said.
 
-Nobody had died in the last hour. The afternoon was very quiet.
+"How far to your farm?" CJ said.
 
-[Beat 14]
-Wes came down the way he'd gone up. No rushing it — the hull was cooling, the vibration gone, the struts just struts now. Without the machine's pulse to time his movements around, the descent was quieter than the climb had been. He found the seam edges by feel. Stayed off the plate with the flex. Took it steady.
+He thought about it. "Forty miles, give or take."
 
-It took about five minutes.
+She looked at the skimmer. He shook his head.
 
-He landed in the Dixon road gravel without drama. Scraped hands, right cheek still sunburned, boots dirty from the Crown and the struts and from the yard at four in the morning when he'd gone out with his laces half-done. He straightened up and looked at CJ.
-
-CJ put Pip down.
-
-Pip had been still in the crook of her arm through the whole of it — the stillness of an animal that had run forty miles and had nothing left to prove to anyone. His pads were raw. He'd been patient about everything.
-
-He hit the ground and shook himself once — the full-body shake, ears flopping, everything recalibrated — and put his nose down.
-
-The tine. He started at the base, a thorough sniff moving along the ceramic surface at ground level. The joint. The mechanism where the tine met the mounting socket. The underside of the strut bracket. He moved around the base in a deliberate circuit, nose down, reading it the way a dog read something entirely new and needed to file it properly before he committed.
-
-He took his time.
-
-The machine did not move. The tine did not retract. The manipulator arms stayed in their brackets. The forty-ton hull stood in the Dixon afternoon and did not do anything at all about the ten-pound terrier at its base.
-
-Pip finished the circuit.
-
-He lifted his leg.
-
-CJ made a sound that was not a laugh but was not not a laugh.
-
-Wes looked at the tine, at Pip, at CJ.
-
-He shrugged.
-
-CJ sat down on the skimmer. She pulled up the report interface. The cursor blinked.
-
-She typed:
-
-*Behavioral anomaly. Origin unknown. Threat level: zero. Recommendation: unregistered autonomous system to be placed under observation, not demolition. Additionally: unrelated inert unit in Iowa agricultural zone, coordinates to follow — recommend no action, leave in place.*
-
-She stopped.
-
-She looked at the space below that line. The space where the third thing would go. She knew what was in that space. She could describe the telemetry — the signal, the interval, the sowing tube — and it would go into a queue and the queue would generate a response and the response would contain none of what had happened in the ten seconds the new sound held.
-
-She knew what would happen to that line.
-
-She closed the report.
-
-The machine stood in Dixon, dormant, framed against the Eigenlift tower. Wes stood beside it with his scraped hands at his sides. Pip sat at the base of the tine, ears up, watching the road.
-
-The Rock River ran somewhere east. The sky was flat and very wide.
+"I'll walk," he said.
 

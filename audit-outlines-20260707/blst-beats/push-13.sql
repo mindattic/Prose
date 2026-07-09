@@ -1,0 +1,30 @@
+﻿SET QUOTED_IDENTIFIER ON;
+UPDATE Beats SET [Text]=N'Wen didn''t wait for a meeting to be called. He came to the common space on an ordinary evening, when the room was doing nothing more than what it always did between votes — a card game at the far table, two women from the fourth floor comparing Air Tax brackets, the wall outside reading three hundred seventy meters in the same flat paint it had read every number before it — and he brought help this time: a neighbor from the third floor, a hand truck, two crates, and a canvas roll that clanked when it settled.
+
+Teo was at the near table logging a driver reading when the sound turned every head in the room, the way any unfamiliar weight moving through a familiar space turns heads, load announcing itself before anyone''s asked what it is.
+
+Wen unrolled the canvas across the vote table without asking permission from anyone, because nobody in the room had the authority to grant or refuse it, and laid the jigs out one at a time, spaced the way a man spaces things he means for people to look at individually and not as a pile. Six of them. Teo recognized two from her load readings in his shop — a boring jig, a fixture plate worn pale at the clamps — and didn''t recognize the other four, which didn''t matter, because recognizing them wasn''t the point of them being there.
+
+"I''m not calling this a meeting," he said, to the room generally, not raising his voice, which made the room quiet faster than shouting would have. "Nobody''s voting on anything tonight. I just wanted you looking at these instead of hearing about them, because a number on a wall and a jig on a table aren''t the same kind of true, and I think this bloc''s been living on the first kind for a while now."
+
+Nobody answered him. The card game had stopped without anyone setting the cards down.
+
+"My grandfather cut this one" — he touched the boring jig, two fingers, the same economy of motion Teo had watched him use on the machines themselves — "the year after he bolted the shop into the floor. Forty years ago. I''ve recalibrated it eleven times since I took the shop over, and every time I do, it holds tighter than the time before, because that''s what calibration is — you don''t finish it, you keep closing the gap between what the tool does and what it''s supposed to do, and the gap gets smaller every year you''re willing to keep closing it." He moved to the next one. "This one''s mine. Built it at twenty-two, under his eye, and it took me four tries before he''d let me bolt it down instead of setting it back on the bench. I still remember which four tries failed and why."
+
+He didn''t ask anyone to touch them. Nobody did. Teo watched a machinist from the third floor lean in close to the fixture plate without laying a hand on it, the way people looked at things in a case even when there wasn''t a case.
+
+"I know what recycling looks like from the inside of a scrap contract," Wen said. "I''ve read the salvage terms Ashgrave posted with the offer, same as anyone could. Structural steel, certified salvage — melted, re-rolled, sold by the ton to whoever''s building something that isn''t this. That''s not a guess about what happens to six jigs and two lathes if this bloc sells. That''s the plain language of the contract, and I''m not going to stand here and tell you I found a loophole in it, because I didn''t look for one. I looked at the number instead, and the number''s honest about what it buys."
+
+He straightened, finally, and looked at the room instead of the table.
+
+"I''ve said no to this offer already, in a room some of you were in. I''m saying it again tonight, in front of these, because a refusal that lives only in a meeting minutes file is easy to forget the shape of by the time it matters. This is the shape of it. Forty years, on a table, in front of you. I''m not asking you to vote on it. That''s not why it''s here. I just didn''t want anyone deciding this bloc''s future without having stood in a room with what I''d be losing, the same way I''ve stood in a room with what Priya''d be losing, because her daughter''s shortfall was never an abstraction to me either, once she said the number out loud."
+
+Sigrun, near the door, didn''t call the room to order, because there was no order to call it to — nothing about this was procedural, nothing about it required a chair. She let it sit a moment, then said, quietly, to Wen rather than the room, "Anyone need to say anything back to that?"
+
+Nobody did. Teo understood why. There wasn''t a rebuttal shaped to fit what he''d put on the table — you couldn''t out-argue a jig, only ignore it or look at it, and everyone in the room was looking at it.
+
+Wen didn''t cover them back up. He left the canvas open, the six pieces spaced the way he''d spaced them, and told the room he''d collect them himself in the morning, that he didn''t want anyone thinking he''d forgotten them there or that leaving them out overnight was itself a kind of argument. It wasn''t, he said. He just hadn''t finished wanting people to see them yet.
+
+Teo stayed at her table a long while after the room thinned, the driver reading forgotten in her hand, looking at the jigs from across the room the way she looked at a load she hadn''t finished trimming. She thought, in the only vocabulary that had ever made emotion legible to her, that Wen had brought forty years of calibrated mass into a room and set it down where the vote would happen, not to move anyone''s number, because nothing about tonight had been arithmetic, but to make sure that whatever number the room eventually landed on, it landed with the weight of this specific loss sitting visibly in the same room, instead of filed somewhere behind a Monday posting where a person could learn to stop seeing it.
+
+She didn''t write any of it into the ledger. There wasn''t a column for it. She noted only, in her own hand, in the margin she kept for things that weren''t figures: Household 23, jigs — witnessed, not weighed. She left it at that and went home.' WHERE Id='019F3AC8-397D-7821-A8A3-44247B0F7149';

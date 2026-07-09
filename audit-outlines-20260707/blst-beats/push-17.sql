@@ -1,0 +1,28 @@
+﻿SET QUOTED_IDENTIFIER ON;
+UPDATE Beats SET [Text]=N'His grandson came up from the Gray Zone on a Tuesday, unannounced except for a single line on Wen''s wrist an hour before, and Wen met him at the passenger lock the way he''d have met anyone he loved and hadn''t seen in a while — a hand on the shoulder, no embrace, both of them built from the same economy of gesture, three generations of men who''d learned to say the important things with their hands on machinery instead of on each other.
+
+The boy — not a boy anymore, not for years now, but Wen still thought of him that way, the way a person thinks of family members frozen at whatever age loved them most uncomplicatedly — had grown up two zones down, in a stretch of the Low that governed itself the way the Gray Zone always had, buffer-territory rules, buffer-territory prices, none of the tenancy protections Candelaria still clung to for however many more weeks it had them. He knew what a bloc looked like on the wrong side of three hundred twenty meters, because he''d grown up walking past the salvage yards where blocs like that ended up, stripped down to their frames, picked over by scavengers who didn''t ask whether anyone had lived there.
+
+He didn''t say any of that directly. He let Wen walk him down to the shop first, the way Wen always did, because showing the shop to family before saying anything hard was its own kind of ritual by now, and the grandson ran his hand along the same fixture plate Teo had once read for load, the same one that had sat on canvas in the commons a week ago, and said, "You''ve kept it exactly the same."
+
+"I''ve kept it better than the same," Wen said. "I recalibrated the boring jig again in the spring. It holds tighter than it did when you were last up here."
+
+The grandson smiled at that, but it didn''t hold, and Wen watched it not hold, and knew what was coming before it came, because he''d raised this boy''s father and half-raised the boy himself and had learned, across two generations of the same face, what it looked like when someone was working up to saying something they''d already decided.
+
+"It''s a beautiful thing," the grandson said, meaning the shop, meaning all of it, the lathes and the dies and the thirty years of marks on every surface his grandfather''s hands had touched. "I''ve never once doubted that it''s a beautiful thing. But you''re not a young man anymore, and this bloc is going down whether you''re on it or not, and I don''t understand why a beautiful thing is worth staying for something that''s already decided."
+
+"It''s not already decided," Wen said. "There''s a vote."
+
+"There''s a vote about the money," the grandson said, not unkindly, the way a person corrects someone they love without wanting the correction to land as an attack. "There isn''t a vote about the frame. I''ve read the same postings you have. I know what a coherence curve looks like when nobody''s stopping it. You''re going to end up down here whether Candelaria sells or not — the only question the vote decides is whether you land with money in your hand or without it, and either way, you''re going to be an old man in the Gray Zone with a shop that''s either been paid for or wasn''t."
+
+Wen didn''t answer immediately. He ran his own hand over the boring jig, the way he did when he wanted his hands occupied while his mind worked something out that his mouth wasn''t ready to say yet.
+
+"You''re not wrong about the frame," he said finally. "I''ve never once told anyone in that commons that you were wrong about the frame. I''m not going to tell you that either. What I''m telling you is that the shop isn''t worth staying for because I think it''ll save me from the descent. It''s worth staying for because it''s the only place left where forty years of my life still means exactly what it always meant, right up until the day someone takes it away from me instead of me deciding to walk away from it myself. I know the difference sounds small to you. It isn''t small to me. A man gets to choose very little, by the time he''s my age, about how the things he built get to end. I''d like this to be one of the few things I still get to choose the ending of."
+
+"That''s not a reason," the grandson said. "That''s just refusing to be the one who lets go first."
+
+"Maybe," Wen said. "I''ve thought about whether that''s all it is. I don''t think it changes what I''m going to do about it either way."
+
+The grandson didn''t press further. He''d said what he''d come up to say, plainly, the way his grandfather had taught him to say hard things, and he understood, standing in the shop with his hand still resting on the fixture plate, that he wasn''t going to talk an old man out of a shop by being right about a coherence curve the man had never once disputed.
+
+They stayed another hour, mostly quiet, the grandson asking about specific jigs the way he had as a child, Wen answering the way he always had, and when the boy left on the evening shuttle down, Wen stood at the lock a long while after the door had sealed behind him, thinking that he''d told the truth about the shop and hadn''t told the whole of it, because the whole of it — that staying was the only conversation he still knew how to have with a man forty years dead — wasn''t the kind of thing that belonged in a passenger lock, or in a vote, or anywhere else but exactly where he''d left it, bolted into the floor of Household 23.' WHERE Id='019F3AC8-397D-7BC6-BB85-247E016FFB37';

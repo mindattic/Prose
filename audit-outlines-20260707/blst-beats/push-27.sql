@@ -1,0 +1,38 @@
+﻿SET QUOTED_IDENTIFIER ON;
+UPDATE Beats SET [Text]=N'The vote record went up on the commons wall the next morning, the same wall that carried the altitude number every Monday, because Sigrun had decided, and nobody had argued otherwise, that a vote counted in front of the whole bloc shouldn''t finish its life folded inside a co-op minute book nobody but the chair ever opened. Forty-one household numbers, one column each, yes or no or the single line that meant Sigrun''s own abstention, posted plain, the same way Teo posted everything else that mattered in this bloc.
+
+Priya read down the column the way she''d read every sheet Teo had ever pinned to that wall, household by household, until she found twelve.
+
+Yes.
+
+She stood there longer than the reading itself required, the way she''d stood at that same wall reading Φ8,400 down to nothing, and then she left the passenger deck and went, before she''d fully decided to, toward Household 12.
+
+Dagny opened the door before Priya had finished knocking, which told her, the way it had told Teo weeks before, that she''d been expected.
+
+"I know what you''re going to say," Dagny said, "before you say it."
+
+"I don''t think you do," Priya said, though she suspected Dagny was closer to right than she wanted to admit. "I came to say thank you. Just that. I''m not going to make you stand in your own doorway while I say more than that, unless you want me to."
+
+Dagny didn''t step back to let her in, and didn''t close the door either, and the two of them stood in the gap between the hallway and the room the way people stand when one of them hasn''t decided how long the conversation is allowed to run.
+
+"You''re welcome to say it," Dagny said. "I''d rather you understand something first, though, before you spend it on the wrong reason."
+
+"What reason would that be?"
+
+"The one you''ve probably already built in your head on the walk over. That I sat in that room last night, thought about your daughter, and voted yes for her sake. I didn''t." Dagny''s voice hadn''t sharpened at all, hadn''t gone cold; it stayed exactly as level as it had stayed through every conversation Priya had ever half-overheard her have. "I want that said plainly, because I think you deserve the plain version more than you deserve the comfortable one, and I think you''re the kind of person who''d rather have it plain, even now."
+
+"Then why," Priya asked, "if not for her."
+
+"Because this bloc is sinking," Dagny said, "and it was sinking the day I moved into that room forty years ago, slower than anyone wanted to admit, and it''s sinking now, faster, and I''ve spent four decades watching people in this bloc pretend otherwise in one form or another — pretend the frame would hold if enough people believed in it hard enough, pretend the co-op could recalibrate its way out of physics, pretend that not voting was the same as not choosing. I don''t have the years left to keep affording that particular pretense. I voted yes because the bloc is going down whichever way this went, and I decided I''d rather it go down with a number attached to it than without one, and that decision didn''t have your daughter''s name anywhere inside it. It had mine. It had four decades of rooms I''ve known since before either of your parents were born, and a choice about what those rooms were finally going to be worth to somebody, since they were never again going to be worth what they were to me."
+
+Priya took that in without answering right away, and found, standing there, that she believed every word of it, which made the thanking harder rather than easier.
+
+"Is there a difference," she asked finally, "between voting yes because the bloc''s sinking and voting yes because it closes my daughter''s shortfall? I don''t mean that as an argument. I mean it plainly, the way you just meant your answer."
+
+Dagny looked at her for a long moment, the same unspent stillness Priya had learned to read as neither agreement nor refusal, just a woman declining, once more, to spend any part of herself on being understood by someone else''s arithmetic.
+
+She didn''t answer.
+
+She let the silence sit long enough that Priya understood it was the whole of the answer she was going to receive, and after a moment Priya said only, "Thank you," again, quieter this time, and Dagny nodded once, the way she nodded to close anything, and stepped back from the door at last, not to invite Priya in, only to close it, gently, on a conversation that had already said everything it was going to say.
+
+Priya walked back down the corridor the way she''d come, past doors that had nothing posted on them at all, and didn''t try to answer her own question either, not out loud, not yet, though she carried it with her the rest of that day the way she carried every number that hadn''t finished resolving — present, unclosed, hers to keep turning over whether she wanted to or not.' WHERE Id='019F3AC8-397D-79CA-A9E8-0F755BB8F7FC';

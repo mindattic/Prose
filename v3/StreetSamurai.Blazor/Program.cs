@@ -227,7 +227,7 @@ app.MapStaticAssets();
 
 app.MapRazorComponents<App>()
     .AddInteractiveServerRenderMode()
-    .AddAdditionalAssemblies(typeof(StreetSamurai.Shared.Components.Pages.Home).Assembly);
+    .AddAdditionalAssemblies(typeof(StreetSamurai.Shared.Components.Pages.Login).Assembly);
 
 // MindAttic.Authentication HTTP endpoints — /_ma-auth/{login,mfa-challenge,logout,
 // change-password,reset/request,reset/confirm}. These OWN sign-in (the Razor components

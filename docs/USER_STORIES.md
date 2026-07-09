@@ -335,6 +335,16 @@ updated: 2026-06-25
   - **H9g ⬜** Review ≥ 87.
   - **H9h ⬜** Exported docx/epub/pdf/txt.
 
+- **SS-US-H10 ⬜** As the author, *Iron & Silk* (IxS) is a ~100,000-word GLMZ heist novel — Book 4 of the Rook Series, picking up months after *Crimson & Chrome*. Three unrelated jobs (art recovery, defector extraction, civic grid exfiltration) converge on a single source: the Lotus Syndicate's forty-year Purification Protocol, a demographic registry and civic backdoor designed to systematically displace the Gray Zone's non-"pure" populations. Rook's crew must stop the Protocol without destroying the community infrastructure the Gray Zone depends on. Casimir Mwamba joins as sixth crew member. The Root (Yim Seul-ki) is not killed, not redeemed — the Protocol is dismantled and she continues. Rook's arithmetic learns a future tense. Full arc, locks, color language, and 14-chapter spine in [docs/nodes/IxS.md](nodes/IxS.md). *Acceptance: 14 chapters + 47 beats Sonnet→Opus + logic sweep BLOCKER-free + storyscope-audit clean + review ≥87 + exported.*
+  - **H10a ✅** Docs: IxS node bible written (docs/nodes/IxS.md); `codex doctor` PASS. *(2026-07-08)*
+  - **H10b ✅** Entities seeded: Yim Seul-ki `019f43ce097b`, Park Gi-su `019f43ce40b3`, Lee Nari `019f43ce8008`, Priya Ramanujan-Cross `019f43ceb808`, Adaeze Nnodu-Park `019f43cee2ab`, Casimir Mwamba `019EC6EF` (existing VATD); *Headcount* document `019f43cf0019`. *(2026-07-08)*
+  - **H10c ✅** StoryNode `iron-silk-019f43b9` + 14 ChapterNodes + 47 beats created in DB; story bible + user stories set. *(2026-07-08)*
+  - **H10d ✅** Structural blueprint generated (pre-prose). *(2026-07-08)*
+  - **H10e ✅** 47 beats × ~2,423 words avg = **113,889 words** written (6 sequential authoring agents, full story memory + binding brief). *(2026-07-08)*
+  - **H10f ✅** QA: reflow ✅ clean; plant-audit ✅ 10/10 paid off; storyscope ✅ 0 BLOCKERs; logic sweep ✅ CLEAN (0 BLOCKERs, 4 MODERATEs + 6 MINORs fixed; `audit-outlines-20260708/logic/IxS.md`). *(2026-07-09)*
+  - **H10g ✅** Review **88.87 / 86.1 flow** (70 ballots, SD 1.98, range 81–91); 11 compression fixes (interiority loops, altitude beat, diner motif, finale close) → V4.docx. *(2026-07-09)*
+  - **H10h ✅** Exported docx/epub/pdf/txt → `R:\Desktop\EPub\MindAttic\GLMZ\Rook\Iron & Silk\Iron & Silk V4.docx`. *(2026-07-09)*
+
 ## Priority backlog
 
 > Dependency-ordered toward the headline goal (a fresh seed → published, reviewed, canon-consistent
