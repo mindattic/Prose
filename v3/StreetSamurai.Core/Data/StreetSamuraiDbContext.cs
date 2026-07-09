@@ -392,6 +392,19 @@ public class StreetSamuraiDbContext : DbContext
     public DbSet<BeatServiceLog>         BeatServiceLogs         => Set<BeatServiceLog>();
     public DbSet<BeatModeLog>            BeatModeLogs            => Set<BeatModeLog>();
 
+    // Cost tracking — append-only log of CLI command cost history.
+    // Populated by CostGateCli.RecordActualAsync; queried by CommandCostEstimatorService to self-calibrate.
+    public DbSet<CommandCostHistory>     CommandCostHistories    => Set<CommandCostHistory>();
+
+    // Injectable context overrides — user-managed pin/exclude list for DocContextStack.
+    // Managed by UserContextService; applied by DocContextService.PrepareForNodeAsync.
+    // Rows expire after 24 hours or on explicit --context clear.
+    public DbSet<ContextOverride>        ContextOverrides        => Set<ContextOverride>();
+
+    // Liberty reports — per-beat creative-departure analysis (Rule of Cool).
+    // Written by LibertyReportService post-write; queried via --liberty-report and get_liberty_report MCP.
+    public DbSet<LibertyReport>          LibertyReports          => Set<LibertyReport>();
+
     // Media assets (cover images, logos, watermarks).
     // Import via ss --import-cover; generate via ss --generate-cover.
     public DbSet<MediaItem>              Media                   => Set<MediaItem>();

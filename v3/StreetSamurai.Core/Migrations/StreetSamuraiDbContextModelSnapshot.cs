@@ -2797,6 +2797,39 @@ namespace StreetSamurai.Core.Migrations
                     b.ToTable("ClaimContradictions", (string)null);
                 });
 
+            modelBuilder.Entity("StreetSamurai.Core.Data.Entities.CommandCostHistory", b =>
+                {
+                    b.Property<int>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("int");
+
+                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"));
+
+                    b.Property<double>("AccuracyRatio")
+                        .HasColumnType("float");
+
+                    b.Property<double>("ActualCost")
+                        .HasColumnType("float");
+
+                    b.Property<string>("CommandName")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<double>("EstimatedCost")
+                        .HasColumnType("float");
+
+                    b.Property<string>("Provider")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<DateTime>("RunAt")
+                        .HasColumnType("datetime2");
+
+                    b.HasKey("Id");
+
+                    b.ToTable("CommandCostHistories");
+                });
+
             modelBuilder.Entity("StreetSamurai.Core.Data.Entities.ConsensusCliche", b =>
                 {
                     b.Property<long>("Id")
@@ -2974,6 +3007,39 @@ namespace StreetSamurai.Core.Migrations
                     b.HasIndex("ConsumerGoodId", "Position");
 
                     b.ToTable("ConsumerGoodStoryHooks");
+                });
+
+            modelBuilder.Entity("StreetSamurai.Core.Data.Entities.ContextOverride", b =>
+                {
+                    b.Property<int>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("int");
+
+                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"));
+
+                    b.Property<string>("Action")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<DateTime>("CreatedAt")
+                        .HasColumnType("datetime2");
+
+                    b.Property<DateTime>("ExpiresAt")
+                        .HasColumnType("datetime2");
+
+                    b.Property<Guid>("MarkdownFileId")
+                        .HasColumnType("uniqueidentifier");
+
+                    b.Property<Guid?>("NodeId")
+                        .HasColumnType("uniqueidentifier");
+
+                    b.Property<string>("SessionKey")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.HasKey("Id");
+
+                    b.ToTable("ContextOverrides");
                 });
 
             modelBuilder.Entity("StreetSamurai.Core.Data.Entities.Contract", b =>
@@ -5883,6 +5949,32 @@ namespace StreetSamurai.Core.Migrations
                     b.HasIndex("LabSpecimenId", "Position");
 
                     b.ToTable("LabSpecimenStoryHooks");
+                });
+
+            modelBuilder.Entity("StreetSamurai.Core.Data.Entities.LibertyReport", b =>
+                {
+                    b.Property<int>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("int");
+
+                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"));
+
+                    b.Property<Guid>("BeatId")
+                        .HasColumnType("uniqueidentifier");
+
+                    b.Property<int>("CoolFactorMax")
+                        .HasColumnType("int");
+
+                    b.Property<DateTime>("GeneratedAt")
+                        .HasColumnType("datetime2");
+
+                    b.Property<string>("LibertiesJson")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.HasKey("Id");
+
+                    b.ToTable("LibertyReports");
                 });
 
             modelBuilder.Entity("StreetSamurai.Core.Data.Entities.MarkdownFile", b =>

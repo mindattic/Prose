@@ -23,7 +23,8 @@ public sealed class DocContextService(
     IDbContextFactory<StreetSamuraiDbContext> dbFactory,
     DocContextStack stack,
     EmbeddingService embeddings,
-    ILogger<DocContextService> log)
+    ILogger<DocContextService> log,
+    UserContextService? userContext = null)
 {
     /// <summary>ProseEmbeddings ScopeKind for a tracked markdown file (MarkdownFile.Id keyed).</summary>
     public const string ScopeMarkdown = "markdown";
@@ -41,9 +42,13 @@ public sealed class DocContextService(
     /// Load the doc working set for this context and return the budgeted block plus the
     /// resident docs (with provenance). Read-only against canon; safe to call in dry-run.
     /// </summary>
+    /// <param name="pinnedDocIds">Doc IDs to force-include regardless of LRU tier (score 999).</param>
+    /// <param name="excludedDocIds">Doc IDs to exclude even if they would normally be injected.</param>
     public async Task<DocContextResult> PrepareContextAsync(
         Guid contextId, string? nodeCode, string? triggerText, int tokenBudget = 2000,
         bool includeAlways = true, bool includeNode = true, bool useEmbedding = true,
+        IReadOnlySet<Guid>? pinnedDocIds = null,
+        IReadOnlySet<Guid>? excludedDocIds = null,
         CancellationToken ct = default)
     {
         stack.BeginAction(contextId);
@@ -55,6 +60,11 @@ public sealed class DocContextService(
 
         var code = (nodeCode ?? "").Trim();
         var text = triggerText ?? "";
+
+        // 0 — user-pinned docs (override tier — always included, score 999)
+        if (pinnedDocIds is { Count: > 0 })
+            foreach (var c in candidates.Where(c => pinnedDocIds.Contains(c.Id)))
+                stack.Push(contextId, MakeEntry(c, "pinned", 999));
 
         // 1 — always (universal core)
         if (includeAlways)
@@ -92,23 +102,43 @@ public sealed class DocContextService(
             }
         }
 
-        return await BuildBlockAsync(db, contextId, tokenBudget, ct);
+        return await BuildBlockAsync(db, contextId, tokenBudget, excludedDocIds, ct);
     }
 
     /// <summary>
     /// Engine convenience: resolve the node's CODE from its Id and prepare the doc context,
     /// using the node Id as the LRU context key. Used by ProseWriterRouter.
+    /// Loads active user context overrides (pin/exclude) from <see cref="UserContextService"/>
+    /// when the service is wired, and applies them before building the block.
     /// </summary>
     public async Task<DocContextResult> PrepareForNodeAsync(
         Guid nodeId, string? triggerText, int tokenBudget = 2000, CancellationToken ct = default)
     {
         if (nodeId == Guid.Empty) return new DocContextResult("", Array.Empty<LoadedDoc>(), 0);
-        await using var db = await dbFactory.CreateDbContextAsync(ct);
-        var code = await db.Nodes.AsNoTracking()
-            .Where(s => s.Id == nodeId)
-            .Select(s => s.NodeCode)
-            .FirstOrDefaultAsync(ct) ?? "";
-        return await PrepareContextAsync(nodeId, code, triggerText, tokenBudget, ct: ct);
+
+        string code;
+        await using (var db = await dbFactory.CreateDbContextAsync(ct))
+        {
+            code = await db.Nodes.AsNoTracking()
+                .Where(s => s.Id == nodeId)
+                .Select(s => s.NodeCode)
+                .FirstOrDefaultAsync(ct) ?? "";
+        }
+
+        IReadOnlySet<Guid>? pinned   = null;
+        IReadOnlySet<Guid>? excluded = null;
+        if (userContext != null)
+        {
+            var overrides = await userContext.GetActiveAsync(nodeId, ct: ct);
+            if (overrides.Count > 0)
+            {
+                pinned   = overrides.Where(o => o.Action == "pin")    .Select(o => o.MarkdownFileId).ToHashSet();
+                excluded = overrides.Where(o => o.Action == "exclude") .Select(o => o.MarkdownFileId).ToHashSet();
+            }
+        }
+
+        return await PrepareContextAsync(nodeId, code, triggerText, tokenBudget,
+            pinnedDocIds: pinned, excludedDocIds: excluded, ct: ct);
     }
 
     /// <summary>
@@ -138,9 +168,14 @@ public sealed class DocContextService(
     // ── block building ────────────────────────────────────────────────────────
 
     private async Task<DocContextResult> BuildBlockAsync(
-        StreetSamuraiDbContext db, Guid contextId, int tokenBudget, CancellationToken ct)
+        StreetSamuraiDbContext db, Guid contextId, int tokenBudget,
+        IReadOnlySet<Guid>? excludedDocIds, CancellationToken ct)
     {
-        var active = stack.GetActive(contextId);
+        var all    = stack.GetActive(contextId);
+        var active = excludedDocIds is { Count: > 0 }
+            ? all.Where(e => !excludedDocIds.Contains(e.DocId)).ToList()
+            : all;
+
         if (active.Count == 0)
             return new DocContextResult("", Array.Empty<LoadedDoc>(), 0);
 

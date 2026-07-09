@@ -222,35 +222,25 @@ public static class ServiceCollectionExtensions
         // Daily trivia — pre-generates 100 facts from canon data, cached to disk
         services.AddSingleton<TriviaService>();
 
-        // Auto-register all directory repos as IExportableRepository for discovery
-        services.AddSingleton<IExportableRepository>(sp => sp.GetRequiredService<CharacterRepository>());
-        services.AddSingleton<IExportableRepository>(sp => sp.GetRequiredService<CorponationRepository>());
-        services.AddSingleton<IExportableRepository>(sp => sp.GetRequiredService<DistrictRepository>());
-        services.AddSingleton<IExportableRepository>(sp => sp.GetRequiredService<FactionRepository>());
-        services.AddSingleton<IExportableRepository>(sp => sp.GetRequiredService<WorldbuildingDocRepository>());
-        services.AddSingleton<IExportableRepository>(sp => sp.GetRequiredService<WeaponryRepository>());
-        services.AddSingleton<IExportableRepository>(sp => sp.GetRequiredService<AmmunitionRepository>());
-        services.AddSingleton<IExportableRepository>(sp => sp.GetRequiredService<EquipmentRepository>());
-        services.AddSingleton<IExportableRepository>(sp => sp.GetRequiredService<TechnologyRepository>());
-        services.AddSingleton<IExportableRepository>(sp => sp.GetRequiredService<CyberwareRepository>());
-        services.AddSingleton<IExportableRepository>(sp => sp.GetRequiredService<VocabularyRepository>());
-        services.AddSingleton<IExportableRepository>(sp => sp.GetRequiredService<GenemodRepository>());
-        services.AddSingleton<IExportableRepository>(sp => sp.GetRequiredService<TransportationRepository>());
-        services.AddSingleton<IExportableRepository>(sp => sp.GetRequiredService<QuoteRepository>());
-        services.AddSingleton<IExportableRepository>(sp => sp.GetRequiredService<ContractRepository>());
-        services.AddSingleton<IExportableRepository>(sp => sp.GetRequiredService<NewsRepository>());
-        services.AddSingleton<IExportableRepository>(sp => sp.GetRequiredService<ArchetypeRepository>());
-        services.AddSingleton<IExportableRepository>(sp => sp.GetRequiredService<MaterialRepository>());
-        services.AddSingleton<IExportableRepository>(sp => sp.GetRequiredService<PharmaceuticalRepository>());
-        services.AddSingleton<IExportableRepository>(sp => sp.GetRequiredService<ConsumerGoodRepository>());
-        services.AddSingleton<IExportableRepository>(sp => sp.GetRequiredService<AutomatonRepository>());
-        services.AddSingleton<IExportableRepository>(sp => sp.GetRequiredService<ApparelRepository>());
-        services.AddSingleton<IExportableRepository>(sp => sp.GetRequiredService<SubsidiaryRepository>());
-        services.AddSingleton<IExportableRepository>(sp => sp.GetRequiredService<EntertainmentRepository>());
-        services.AddSingleton<IExportableRepository>(sp => sp.GetRequiredService<LabSpecimenRepository>());
-        services.AddSingleton<IExportableRepository>(sp => sp.GetRequiredService<FlyoverEntityRepository>());
-        services.AddSingleton<IExportableRepository>(sp => sp.GetRequiredService<PsionicRepository>());
-        services.AddSingleton<IExportableRepository>(sp => sp.GetRequiredService<MotifRepository>());
+        // Auto-register all directory repos as IExportableRepository for discovery.
+        // Each type is captured per-iteration so the lambda closes over the correct value.
+        foreach (var exportableType in new[]
+        {
+            typeof(CharacterRepository),    typeof(CorponationRepository),  typeof(DistrictRepository),
+            typeof(FactionRepository),      typeof(WorldbuildingDocRepository), typeof(WeaponryRepository),
+            typeof(AmmunitionRepository),   typeof(EquipmentRepository),    typeof(TechnologyRepository),
+            typeof(CyberwareRepository),    typeof(VocabularyRepository),   typeof(GenemodRepository),
+            typeof(TransportationRepository), typeof(QuoteRepository),      typeof(ContractRepository),
+            typeof(NewsRepository),         typeof(ArchetypeRepository),    typeof(MaterialRepository),
+            typeof(PharmaceuticalRepository), typeof(ConsumerGoodRepository), typeof(AutomatonRepository),
+            typeof(ApparelRepository),      typeof(SubsidiaryRepository),   typeof(EntertainmentRepository),
+            typeof(LabSpecimenRepository),  typeof(FlyoverEntityRepository), typeof(PsionicRepository),
+            typeof(MotifRepository),
+        })
+        {
+            var captured = exportableType;
+            services.AddSingleton<IExportableRepository>(sp => (IExportableRepository)sp.GetRequiredService(captured));
+        }
 
         // Export discovery — auto-finds all IExportableRepository instances
         services.AddSingleton<ExportDiscoveryService>();
@@ -573,7 +563,6 @@ public static class ServiceCollectionExtensions
             sp.GetRequiredService<WeaponryRepository>().OnEntitySaved       += (id, name) => _ = Task.Run(() => ramSvc.ProcessEntityUpdateAsync(id, name));
             sp.GetRequiredService<EquipmentRepository>().OnEntitySaved      += (id, name) => _ = Task.Run(() => ramSvc.ProcessEntityUpdateAsync(id, name));
             sp.GetRequiredService<TechnologyRepository>().OnEntitySaved     += (id, name) => _ = Task.Run(() => ramSvc.ProcessEntityUpdateAsync(id, name));
-            sp.GetRequiredService<DistrictRepository>().OnEntitySaved        += (id, name) => _ = Task.Run(() => ramSvc.ProcessEntityUpdateAsync(id, name));
             sp.GetRequiredService<PharmaceuticalRepository>().OnEntitySaved += (id, name) => _ = Task.Run(() => ramSvc.ProcessEntityUpdateAsync(id, name));
             sp.GetRequiredService<CyberwareRepository>().OnEntitySaved      += (id, name) => _ = Task.Run(() => ramSvc.ProcessEntityUpdateAsync(id, name));
 
@@ -589,6 +578,7 @@ public static class ServiceCollectionExtensions
         services.AddSingleton<LocalLlmService>();
         services.AddSingleton<DallEService>();
         services.AddSingleton<TokenLedger>();
+        services.AddSingleton<CommandCostEstimatorService>();
         services.AddSingleton<LlmRouter>(sp => new LlmRouter(
             sp.GetRequiredService<ClaudeService>(),
             sp.GetRequiredService<OpenAiService>(),
@@ -927,6 +917,8 @@ public static class ServiceCollectionExtensions
         services.AddSingleton<CausalityService>();
         services.AddSingleton<AffectBehaviorService>();
         services.AddSingleton<InterpersonalDynamicsService>();
+        services.AddSingleton<BeatAuditService>();
+        services.AddSingleton<BeatRepairService>();
 
         // Deterministic prose sanity scan — no LLM; catches leaked internal codes,
         // undefined acronyms, encoding corruption, and heft floor violations.
@@ -958,6 +950,7 @@ public static class ServiceCollectionExtensions
         services.AddSingleton<EntityContextService>();
         services.AddScoped<EntityMentionService>();
         services.AddSingleton<DocContextStack>();
+        services.AddSingleton<UserContextService>();
         services.AddSingleton<DocContextService>();
         services.AddSingleton<EntityHarvestService>();
         services.AddSingleton<ContextTelemetryService>();
@@ -972,6 +965,7 @@ public static class ServiceCollectionExtensions
         services.AddSingleton<NarrativeForkService>();
         services.AddSingleton<ChapterCloseProcessorService>();
         services.AddSingleton<ProseWriterRouter>();
+        services.AddSingleton<LibertyReportService>();
         services.AddSingleton<StoryLogicAuditService>();
 
         return services;

@@ -59,7 +59,11 @@ if (args.Contains("--reset-password"))
 if (args.Contains("--write-story"))
 {
     var sp = BuildCoreServices(args);
+    var (proceed1, est1) = await CostGateCli.ConfirmAsync("--write-story", args, sp);
+    if (!proceed1) return;
+    var before1 = CostGateCli.SnapshotCost(sp);
     Environment.ExitCode = await StoryWriterCli.RunAsync(args, sp);
+    await CostGateCli.RecordActualAsync("--write-story", est1, before1, sp);
     return;
 }
 
@@ -68,7 +72,11 @@ if (args.Contains("--write-story"))
 if (args.Contains("--refine-story"))
 {
     var sp = BuildCoreServices(args);
+    var (proceed2, est2) = await CostGateCli.ConfirmAsync("--refine-story", args, sp);
+    if (!proceed2) return;
+    var before2 = CostGateCli.SnapshotCost(sp);
     Environment.ExitCode = await StoryRefineCli.RunAsync(args, sp);
+    await CostGateCli.RecordActualAsync("--refine-story", est2, before2, sp);
     return;
 }
 
@@ -437,7 +445,11 @@ if (args.Contains("--expand-beat"))
 if (args.Contains("--auto-run"))
 {
     var sp = BuildCoreServices(args);
+    var (proceedAr, estAr) = await CostGateCli.ConfirmAsync("--auto-run", args, sp);
+    if (!proceedAr) return;
+    var beforeAr = CostGateCli.SnapshotCost(sp);
     Environment.ExitCode = await AutoRunCli.RunAsync(args, sp);
+    await CostGateCli.RecordActualAsync("--auto-run", estAr, beforeAr, sp);
     return;
 }
 
@@ -550,7 +562,13 @@ if (args.Contains("--worker-mode"))
 if (args.Contains("--review-node") || args.Contains("--review-story") || args.Contains("--run-panel"))
 {
     var sp = BuildServicesWithVault(args);
+    var cmdRn = args.Contains("--review-node") ? "--review-node"
+              : args.Contains("--review-story") ? "--review-story" : "--run-panel";
+    var (proceedRn, estRn) = await CostGateCli.ConfirmAsync(cmdRn, args, sp);
+    if (!proceedRn) return;
+    var beforeRn = CostGateCli.SnapshotCost(sp);
     Environment.ExitCode = await ReviewNodeCli.RunAsync(args, sp);
+    await CostGateCli.RecordActualAsync(cmdRn, estRn, beforeRn, sp);
     return;
 }
 
@@ -769,15 +787,45 @@ if (args.Contains("--create-repository"))
     return;
 }
 
-// CLI mode: backfill the Factions relational schema from Records.Json blobs.
-// Run once after applying add_faction_relationship_tags_20260615.sql.
-// ADDITIVE — Records.Json is never modified. (RFC 0007)
-//   ss --rebuild-faction-relational
-if (args.Contains("--rebuild-faction-relational"))
+// Table-driven: each --rebuild-*-relational flag maps to its CLI handler. ADDITIVE — Records.Json is never modified. (RFC 0007)
 {
-    var sp = BuildCoreServices(args);
-    Environment.ExitCode = await RebuildFactionRelationalCli.RunAsync(args, sp);
-    return;
+    var rebuildRelational = new Dictionary<string, Func<string[], IServiceProvider, Task<int>>>(StringComparer.Ordinal)
+    {
+        ["--rebuild-faction-relational"]        = RebuildFactionRelationalCli.RunAsync,
+        ["--rebuild-quote-relational"]          = RebuildQuoteRelationalCli.RunAsync,
+        ["--rebuild-news-relational"]           = RebuildNewsRelationalCli.RunAsync,
+        ["--rebuild-contract-relational"]       = RebuildContractRelationalCli.RunAsync,
+        ["--rebuild-vocabulary-relational"]     = RebuildVocabularyRelationalCli.RunAsync,
+        ["--rebuild-archetype-relational"]      = RebuildArchetypeRelationalCli.RunAsync,
+        ["--rebuild-genemod-relational"]        = RebuildGenemodRelationalCli.RunAsync,
+        ["--rebuild-material-relational"]       = RebuildMaterialRelationalCli.RunAsync,
+        ["--rebuild-psionic-relational"]        = RebuildPsionicRelationalCli.RunAsync,
+        ["--rebuild-motif-relational"]          = RebuildMotifRelationalCli.RunAsync,
+        ["--rebuild-lab-specimen-relational"]   = RebuildLabSpecimenRelationalCli.RunAsync,
+        ["--rebuild-flyover-entity-relational"] = RebuildFlyoverEntityRelationalCli.RunAsync,
+        ["--rebuild-automaton-relational"]      = RebuildAutomatonRelationalCli.RunAsync,
+        ["--rebuild-ammunition-relational"]     = RebuildAmmunitionRelationalCli.RunAsync,
+        ["--rebuild-transportation-relational"] = RebuildTransportationRelationalCli.RunAsync,
+        ["--rebuild-corponation-relational"]    = RebuildCorponationRelationalCli.RunAsync,
+        ["--rebuild-equipment-relational"]      = RebuildEquipmentRelationalCli.RunAsync,
+        ["--rebuild-technology-relational"]     = RebuildTechnologyRelationalCli.RunAsync,
+        ["--rebuild-pharmaceutical-relational"] = RebuildPharmaceuticalRelationalCli.RunAsync,
+        ["--rebuild-cyberware-relational"]      = RebuildCyberwareRelationalCli.RunAsync,
+        ["--rebuild-consumer-good-relational"]  = RebuildConsumerGoodRelationalCli.RunAsync,
+        ["--rebuild-synthetic-relational"]      = RebuildSyntheticRelationalCli.RunAsync,
+        ["--rebuild-place-relational"]          = RebuildPlaceRelationalCli.RunAsync,
+        ["--rebuild-document-relational"]       = RebuildDocumentRelationalCli.RunAsync,
+        ["--rebuild-entertainment-relational"]  = RebuildEntertainmentRelationalCli.RunAsync,
+        ["--rebuild-weapon-relational"]         = RebuildWeaponRelationalCli.RunAsync,
+        ["--rebuild-apparel-relational"]        = RebuildApparelRelationalCli.RunAsync,
+        ["--rebuild-subsidiary-relational"]     = RebuildSubsidiaryRelationalCli.RunAsync,
+    };
+    if (Array.Find(args, a => rebuildRelational.ContainsKey(a)) is { } rebuildVerb)
+    {
+        var sp = BuildCoreServices(args);
+        Environment.ExitCode = await rebuildRelational[rebuildVerb](args, sp);
+        return;
+    }
 }
 
 // CLI mode: materialize relational rows for active characters that are blob-only
@@ -790,275 +838,6 @@ if (args.Contains("--backfill-missing-characters"))
     return;
 }
 
-// CLI mode: backfill the Quotes relational schema from Records.Json blobs.
-// ADDITIVE — Records.Json is never modified. (RFC 0007)
-//   ss --rebuild-quote-relational
-if (args.Contains("--rebuild-quote-relational"))
-{
-    var sp = BuildCoreServices(args);
-    Environment.ExitCode = await RebuildQuoteRelationalCli.RunAsync(args, sp);
-    return;
-}
-
-// CLI mode: backfill the News relational schema from Records.Json blobs.
-// ADDITIVE — Records.Json is never modified. (RFC 0007)
-//   ss --rebuild-news-relational
-if (args.Contains("--rebuild-news-relational"))
-{
-    var sp = BuildCoreServices(args);
-    Environment.ExitCode = await RebuildNewsRelationalCli.RunAsync(args, sp);
-    return;
-}
-
-// CLI mode: backfill the Contracts relational schema from Records.Json blobs.
-// ADDITIVE — Records.Json is never modified. (RFC 0007)
-//   ss --rebuild-contract-relational
-if (args.Contains("--rebuild-contract-relational"))
-{
-    var sp = BuildCoreServices(args);
-    Environment.ExitCode = await RebuildContractRelationalCli.RunAsync(args, sp);
-    return;
-}
-
-// CLI mode: backfill the VocabularyEntries relational schema from Records.Json blobs.
-// ADDITIVE — Records.Json is never modified. (RFC 0007)
-//   ss --rebuild-vocabulary-relational
-if (args.Contains("--rebuild-vocabulary-relational"))
-{
-    var sp = BuildCoreServices(args);
-    Environment.ExitCode = await RebuildVocabularyRelationalCli.RunAsync(args, sp);
-    return;
-}
-
-// CLI mode: backfill the Archetypes relational schema from Records.Json blobs.
-// ADDITIVE — Records.Json is never modified. (RFC 0007)
-//   ss --rebuild-archetype-relational
-if (args.Contains("--rebuild-archetype-relational"))
-{
-    var sp = BuildCoreServices(args);
-    Environment.ExitCode = await RebuildArchetypeRelationalCli.RunAsync(args, sp);
-    return;
-}
-
-// CLI mode: backfill the Genemods relational schema from Records.Json blobs.
-// ADDITIVE — Records.Json is never modified. (RFC 0007)
-//   ss --rebuild-genemod-relational
-if (args.Contains("--rebuild-genemod-relational"))
-{
-    var sp = BuildCoreServices(args);
-    Environment.ExitCode = await RebuildGenemodRelationalCli.RunAsync(args, sp);
-    return;
-}
-
-// CLI mode: backfill the Materials relational schema from Records.Json blobs.
-// ADDITIVE — Records.Json is never modified. (RFC 0007)
-//   ss --rebuild-material-relational
-if (args.Contains("--rebuild-material-relational"))
-{
-    var sp = BuildCoreServices(args);
-    Environment.ExitCode = await RebuildMaterialRelationalCli.RunAsync(args, sp);
-    return;
-}
-
-// CLI mode: backfill the Psionics relational schema from Records.Json blobs.
-// ADDITIVE — Records.Json is never modified. (RFC 0007)
-//   ss --rebuild-psionic-relational
-if (args.Contains("--rebuild-psionic-relational"))
-{
-    var sp = BuildCoreServices(args);
-    Environment.ExitCode = await RebuildPsionicRelationalCli.RunAsync(args, sp);
-    return;
-}
-
-// CLI mode: backfill the Motifs relational schema from Records.Json blobs.
-// ADDITIVE — Records.Json is never modified. (RFC 0007)
-//   ss --rebuild-motif-relational
-if (args.Contains("--rebuild-motif-relational"))
-{
-    var sp = BuildCoreServices(args);
-    Environment.ExitCode = await RebuildMotifRelationalCli.RunAsync(args, sp);
-    return;
-}
-
-// CLI mode: backfill the LabSpecimens relational schema from Records.Json blobs.
-// ADDITIVE — Records.Json is never modified. (RFC 0007)
-//   ss --rebuild-lab-specimen-relational
-if (args.Contains("--rebuild-lab-specimen-relational"))
-{
-    var sp = BuildCoreServices(args);
-    Environment.ExitCode = await RebuildLabSpecimenRelationalCli.RunAsync(args, sp);
-    return;
-}
-
-// CLI mode: backfill the FlyoverEntities relational schema from Records.Json blobs.
-// ADDITIVE — Records.Json is never modified. (RFC 0007)
-//   ss --rebuild-flyover-entity-relational
-if (args.Contains("--rebuild-flyover-entity-relational"))
-{
-    var sp = BuildCoreServices(args);
-    Environment.ExitCode = await RebuildFlyoverEntityRelationalCli.RunAsync(args, sp);
-    return;
-}
-
-// CLI mode: backfill the Automata relational schema from Records.Json blobs.
-// ADDITIVE — Records.Json is never modified. (RFC 0007)
-//   ss --rebuild-automaton-relational
-if (args.Contains("--rebuild-automaton-relational"))
-{
-    var sp = BuildCoreServices(args);
-    Environment.ExitCode = await RebuildAutomatonRelationalCli.RunAsync(args, sp);
-    return;
-}
-
-// CLI mode: backfill the Ammunitions relational schema from Records.Json blobs.
-// ADDITIVE — Records.Json is never modified. (RFC 0007)
-//   ss --rebuild-ammunition-relational
-if (args.Contains("--rebuild-ammunition-relational"))
-{
-    var sp = BuildCoreServices(args);
-    Environment.ExitCode = await RebuildAmmunitionRelationalCli.RunAsync(args, sp);
-    return;
-}
-
-// CLI mode: backfill the Transportations relational schema from Records.Json blobs.
-// ADDITIVE — Records.Json is never modified. (RFC 0007)
-//   ss --rebuild-transportation-relational
-if (args.Contains("--rebuild-transportation-relational"))
-{
-    var sp = BuildCoreServices(args);
-    Environment.ExitCode = await RebuildTransportationRelationalCli.RunAsync(args, sp);
-    return;
-}
-
-// CLI mode: backfill the Corponations relational schema from Records.Json blobs.
-// ADDITIVE — Records.Json is never modified. (RFC 0007)
-//   ss --rebuild-corponation-relational
-if (args.Contains("--rebuild-corponation-relational"))
-{
-    var sp = BuildCoreServices(args);
-    Environment.ExitCode = await RebuildCorponationRelationalCli.RunAsync(args, sp);
-    return;
-}
-
-// CLI mode: backfill the EquipmentItems relational schema from Records.Json blobs.
-// ADDITIVE — Records.Json is never modified. (RFC 0007)
-//   ss --rebuild-equipment-relational
-if (args.Contains("--rebuild-equipment-relational"))
-{
-    var sp = BuildCoreServices(args);
-    Environment.ExitCode = await RebuildEquipmentRelationalCli.RunAsync(args, sp);
-    return;
-}
-
-// CLI mode: backfill the Technologies relational schema from Records.Json blobs.
-// ADDITIVE — Records.Json is never modified. (RFC 0007)
-//   ss --rebuild-technology-relational
-if (args.Contains("--rebuild-technology-relational"))
-{
-    var sp = BuildCoreServices(args);
-    Environment.ExitCode = await RebuildTechnologyRelationalCli.RunAsync(args, sp);
-    return;
-}
-
-// CLI mode: backfill the Pharmaceuticals relational schema from Records.Json blobs.
-// ADDITIVE — Records.Json is never modified. (RFC 0007)
-//   ss --rebuild-pharmaceutical-relational
-if (args.Contains("--rebuild-pharmaceutical-relational"))
-{
-    var sp = BuildCoreServices(args);
-    Environment.ExitCode = await RebuildPharmaceuticalRelationalCli.RunAsync(args, sp);
-    return;
-}
-
-// CLI mode: backfill the CyberwareItems relational schema from Records.Json blobs.
-// ADDITIVE — Records.Json is never modified. (RFC 0007)
-//   ss --rebuild-cyberware-relational
-if (args.Contains("--rebuild-cyberware-relational"))
-{
-    var sp = BuildCoreServices(args);
-    Environment.ExitCode = await RebuildCyberwareRelationalCli.RunAsync(args, sp);
-    return;
-}
-
-// CLI mode: backfill the ConsumerGoods relational schema from Records.Json blobs.
-// ADDITIVE — Records.Json is never modified. (RFC 0007)
-//   ss --rebuild-consumer-good-relational
-if (args.Contains("--rebuild-consumer-good-relational"))
-{
-    var sp = BuildCoreServices(args);
-    Environment.ExitCode = await RebuildConsumerGoodRelationalCli.RunAsync(args, sp);
-    return;
-}
-
-// CLI mode: backfill the SyntheticLives relational schema from Records.Json blobs.
-// ADDITIVE — Records.Json is never modified. (RFC 0007)
-//   ss --rebuild-synthetic-relational
-if (args.Contains("--rebuild-synthetic-relational"))
-{
-    var sp = BuildCoreServices(args);
-    Environment.ExitCode = await RebuildSyntheticRelationalCli.RunAsync(args, sp);
-    return;
-}
-
-// CLI mode: backfill the Places relational schema from Records.Json blobs.
-// ADDITIVE — Records.Json is never modified. (RFC 0007)
-//   ss --rebuild-place-relational
-if (args.Contains("--rebuild-place-relational"))
-{
-    var sp = BuildCoreServices(args);
-    Environment.ExitCode = await RebuildPlaceRelationalCli.RunAsync(args, sp);
-    return;
-}
-
-// CLI mode: backfill the Documents relational schema from Records.Json blobs.
-// ADDITIVE — Records.Json is never modified. (RFC 0007)
-//   ss --rebuild-document-relational
-if (args.Contains("--rebuild-document-relational"))
-{
-    var sp = BuildCoreServices(args);
-    Environment.ExitCode = await RebuildDocumentRelationalCli.RunAsync(args, sp);
-    return;
-}
-
-// CLI mode: backfill the EntertainmentItems relational schema from Records.Json blobs.
-// ADDITIVE — Records.Json is never modified. (RFC 0007)
-//   ss --rebuild-entertainment-relational
-if (args.Contains("--rebuild-entertainment-relational"))
-{
-    var sp = BuildCoreServices(args);
-    Environment.ExitCode = await RebuildEntertainmentRelationalCli.RunAsync(args, sp);
-    return;
-}
-
-// CLI mode: backfill the Weapons relational schema from Records.Json blobs.
-// ADDITIVE — Records.Json is never modified. (RFC 0007)
-//   ss --rebuild-weapon-relational
-if (args.Contains("--rebuild-weapon-relational"))
-{
-    var sp = BuildCoreServices(args);
-    Environment.ExitCode = await RebuildWeaponRelationalCli.RunAsync(args, sp);
-    return;
-}
-
-// CLI mode: backfill the Apparels relational schema from Records.Json blobs.
-// ADDITIVE — Records.Json is never modified. (RFC 0007)
-//   ss --rebuild-apparel-relational
-if (args.Contains("--rebuild-apparel-relational"))
-{
-    var sp = BuildCoreServices(args);
-    Environment.ExitCode = await RebuildApparelRelationalCli.RunAsync(args, sp);
-    return;
-}
-
-// CLI mode: backfill the Subsidiaries relational schema from Records.Json blobs.
-// ADDITIVE — Records.Json is never modified. (RFC 0007)
-//   ss --rebuild-subsidiary-relational
-if (args.Contains("--rebuild-subsidiary-relational"))
-{
-    var sp = BuildCoreServices(args);
-    Environment.ExitCode = await RebuildSubsidiaryRelationalCli.RunAsync(args, sp);
-    return;
-}
 
 // CLI mode: RFC 0007 unified blob-retirement gate — backfill all 29 relational types
 // from Records.Json, validate, and delete the blobs in a single pass. (RFC 0007)
@@ -1156,7 +935,11 @@ if (args.Contains("--mark-canon"))
 if (args.Contains("--harvest-voice"))
 {
     var sp = BuildCoreServices(args);
+    var (proceedHv, estHv) = await CostGateCli.ConfirmAsync("--harvest-voice", args, sp);
+    if (!proceedHv) return;
+    var beforeHv = CostGateCli.SnapshotCost(sp);
     Environment.ExitCode = await HarvestVoiceCli.RunAsync(args, sp);
+    await CostGateCli.RecordActualAsync("--harvest-voice", estHv, beforeHv, sp);
     return;
 }
 
@@ -1373,7 +1156,11 @@ if (args.Contains("--diagnose-story"))
 if (args.Contains("--examine-emotion"))
 {
     var sp = BuildCoreServices(args);
+    var (proceedEe, estEe) = await CostGateCli.ConfirmAsync("--examine-emotion", args, sp);
+    if (!proceedEe) return;
+    var beforeEe = CostGateCli.SnapshotCost(sp);
     Environment.ExitCode = await ExamineEmotionCli.RunAsync(args, sp);
+    await CostGateCli.RecordActualAsync("--examine-emotion", estEe, beforeEe, sp);
     return;
 }
 
@@ -1384,8 +1171,13 @@ if (args.Contains("--causality-check") || args.Contains("--affect-check") || arg
 {
     var lens = args.Contains("--causality-check") ? "causality"
              : args.Contains("--affect-check") ? "affect" : "interpersonal";
+    var cmdLens = $"--{lens}-check";
     var sp = BuildCoreServices(args);
+    var (proceedLens, estLens) = await CostGateCli.ConfirmAsync(cmdLens, args, sp);
+    if (!proceedLens) return;
+    var beforeLens = CostGateCli.SnapshotCost(sp);
     Environment.ExitCode = await BeatLensCli.RunAsync(args, sp, lens);
+    await CostGateCli.RecordActualAsync(cmdLens, estLens, beforeLens, sp);
     return;
 }
 
@@ -1523,7 +1315,11 @@ if (args.Contains("--wound"))
 if (args.Contains("--harvest-entities"))
 {
     var sp = BuildCoreServices(args);
+    var (proceedHe, estHe) = await CostGateCli.ConfirmAsync("--harvest-entities", args, sp);
+    if (!proceedHe) return;
+    var beforeHe = CostGateCli.SnapshotCost(sp);
     Environment.ExitCode = await HarvestEntitiesCli.RunAsync(args, sp);
+    await CostGateCli.RecordActualAsync("--harvest-entities", estHe, beforeHe, sp);
     return;
 }
 
@@ -1601,6 +1397,29 @@ if (args.Contains("--recall"))
 // CLI mode: Doc Context Stack dry-run — print the rotating cast of .md docs that WOULD
 // load for a node + optional scene text (tier, reason, score, budget). Read-only.
 //   ss --doc-context --slug <node> [--goal "<text>"] [--budget <tokens>]
+// CLI mode: manage user context overrides for the DocContextStack.
+//   ss --context add     --doc <path|guid> [--node <slug>]   Pin doc into prompts
+//   ss --context exclude --doc <path|guid> [--node <slug>]   Exclude doc
+//   ss --context remove  --doc <path|guid> [--node <slug>]   Remove override
+//   ss --context clear   [--node <slug>]                     Clear all overrides
+//   ss --context status                                       Show active overrides
+if (args.Contains("--context"))
+{
+    var sp = BuildCoreServices(args);
+    var ctxArgs = args.SkipWhile(a => a != "--context").Skip(1).ToArray();
+    Environment.ExitCode = await ContextCli.RunAsync(ctxArgs, sp);
+    return;
+}
+
+// ss --liberty-report [--beat <guid> | --slug <slug>]
+// Show liberty analysis + Rule of Cool findings for a beat or all beats in a story.
+if (args.Contains("--liberty-report"))
+{
+    var sp = BuildCoreServices(args);
+    Environment.ExitCode = await LibertyReportCli.RunAsync(args, sp);
+    return;
+}
+
 if (args.Contains("--doc-context-hook"))
 {
     // UserPromptSubmit hook backend — stdout must contain ONLY the hook JSON, so kill logging.
@@ -1695,7 +1514,11 @@ if (args.Contains("--story-audit"))
 if (args.Contains("--generate-blueprint"))
 {
     var sp = BuildCoreServices(args);
+    var (proceedGb, estGb) = await CostGateCli.ConfirmAsync("--generate-blueprint", args, sp);
+    if (!proceedGb) return;
+    var beforeGb = CostGateCli.SnapshotCost(sp);
     Environment.ExitCode = await GenerateBlueprintCli.RunAsync(args, sp);
+    await CostGateCli.RecordActualAsync("--generate-blueprint", estGb, beforeGb, sp);
     return;
 }
 
@@ -1708,7 +1531,11 @@ if (args.Contains("--generate-blueprint"))
 if (args.Contains("--storyscope-audit"))
 {
     var sp = BuildCoreServices(args);
+    var (proceedSsa, estSsa) = await CostGateCli.ConfirmAsync("--storyscope-audit", args, sp);
+    if (!proceedSsa) return;
+    var beforeSsa = CostGateCli.SnapshotCost(sp);
     Environment.ExitCode = await StoryScopeAuditCli.RunAsync(args, sp);
+    await CostGateCli.RecordActualAsync("--storyscope-audit", estSsa, beforeSsa, sp);
     return;
 }
 

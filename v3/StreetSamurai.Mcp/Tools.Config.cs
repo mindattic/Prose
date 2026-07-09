@@ -1,6 +1,8 @@
 using System.ComponentModel;
 using System.Text.Json;
+using Microsoft.EntityFrameworkCore;
 using ModelContextProtocol.Server;
+using StreetSamurai.Core.Data;
 using StreetSamurai.Core.Services;
 
 namespace StreetSamurai.Mcp;
@@ -17,13 +19,25 @@ public class ConfigTools
 
     private readonly MarkdownFileService svc;
     private readonly DocContextService docContext;
+    private readonly UserContextService userContext;
+    private readonly LibertyReportService libertyReport;
+    private readonly IDbContextFactory<StreetSamuraiDbContext> dbFactory;
     private readonly TokenLedger ledger;
 
-    public ConfigTools(MarkdownFileService svc, DocContextService docContext, TokenLedger ledger)
+    public ConfigTools(
+        MarkdownFileService svc,
+        DocContextService docContext,
+        UserContextService userContext,
+        LibertyReportService libertyReport,
+        IDbContextFactory<StreetSamuraiDbContext> dbFactory,
+        TokenLedger ledger)
     {
-        this.svc = svc;
-        this.docContext = docContext;
-        this.ledger = ledger;
+        this.svc          = svc;
+        this.docContext   = docContext;
+        this.userContext  = userContext;
+        this.libertyReport = libertyReport;
+        this.dbFactory    = dbFactory;
+        this.ledger       = ledger;
     }
 
     [McpServerTool, Description(
@@ -216,5 +230,197 @@ public class ConfigTools
             skipped = result.Skipped,
             errors  = result.Errors,
         }, JsonOpts);
+    }
+
+    // ── User context overrides ────────────────────────────────────────────────
+    // Pin or exclude specific canon docs from the DocContextStack for the
+    // current session. Overrides expire after 24 h or on clear_context.
+    // ─────────────────────────────────────────────────────────────────────────
+
+    [McpServerTool, Description(
+        "Pin a canon .md doc so it is always included in every beat prompt, regardless of LRU tier. " +
+        "Identify the doc by relative path fragment (e.g. 'ICFI', 'BIBLE', 'wound') or its GUID. " +
+        "The override lasts 24 h or until remove_context_doc / clear_context is called. " +
+        "Optionally scope to a single story with nodeSlug so only that story's beats include it.")]
+    public async Task<string> AddContextDoc(
+        [Description("Relative path fragment or GUID of the markdown doc to pin.")] string doc,
+        [Description("Optional story slug to scope the pin (e.g. 'icfi'). Omit for session-global.")] string? nodeSlug = null)
+    {
+        var (docId, docPath, err) = await ResolveDocIdAsync(doc);
+        if (err != null) return JsonSerializer.Serialize(new { error = err }, JsonOpts);
+
+        var nodeId = nodeSlug != null ? await ResolveNodeIdAsync(nodeSlug) : null;
+        if (nodeSlug != null && nodeId == null)
+            return JsonSerializer.Serialize(new { error = $"node_not_found: '{nodeSlug}'" }, JsonOpts);
+
+        await userContext.PinAsync(docId, nodeId);
+        return JsonSerializer.Serialize(new
+        {
+            action   = "pinned",
+            doc      = docPath,
+            nodeSlug = nodeSlug ?? "(global)",
+            expiresIn = "24h",
+        }, JsonOpts);
+    }
+
+    [McpServerTool, Description(
+        "Exclude a canon .md doc from the DocContextStack so it is never injected even if it would " +
+        "normally match. Identify the doc by relative path fragment or GUID. " +
+        "The override lasts 24 h or until remove_context_doc / clear_context is called.")]
+    public async Task<string> ExcludeContextDoc(
+        [Description("Relative path fragment or GUID of the markdown doc to exclude.")] string doc,
+        [Description("Optional story slug to scope the exclusion. Omit for session-global.")] string? nodeSlug = null)
+    {
+        var (docId, docPath, err) = await ResolveDocIdAsync(doc);
+        if (err != null) return JsonSerializer.Serialize(new { error = err }, JsonOpts);
+
+        var nodeId = nodeSlug != null ? await ResolveNodeIdAsync(nodeSlug) : null;
+        if (nodeSlug != null && nodeId == null)
+            return JsonSerializer.Serialize(new { error = $"node_not_found: '{nodeSlug}'" }, JsonOpts);
+
+        await userContext.ExcludeAsync(docId, nodeId);
+        return JsonSerializer.Serialize(new
+        {
+            action   = "excluded",
+            doc      = docPath,
+            nodeSlug = nodeSlug ?? "(global)",
+            expiresIn = "24h",
+        }, JsonOpts);
+    }
+
+    [McpServerTool, Description(
+        "Remove a specific pin or exclude override for a canon doc. " +
+        "Pass the same doc path/GUID and optional nodeSlug used when the override was created.")]
+    public async Task<string> RemoveContextDoc(
+        [Description("Relative path fragment or GUID of the markdown doc whose override to remove.")] string doc,
+        [Description("Optional story slug the override was scoped to.")] string? nodeSlug = null)
+    {
+        var (docId, docPath, err) = await ResolveDocIdAsync(doc);
+        if (err != null) return JsonSerializer.Serialize(new { error = err }, JsonOpts);
+
+        var nodeId = nodeSlug != null ? await ResolveNodeIdAsync(nodeSlug) : null;
+        await userContext.RemoveAsync(docId, nodeId);
+        return JsonSerializer.Serialize(new { action = "removed", doc = docPath, nodeSlug = nodeSlug ?? "(global)" }, JsonOpts);
+    }
+
+    [McpServerTool, Description(
+        "Clear ALL active context overrides for this session (both pins and excludes). " +
+        "Pass nodeSlug to clear only overrides scoped to that story; omit for session-wide clear.")]
+    public async Task<string> ClearContext(
+        [Description("Optional story slug to clear only overrides for that node. Omit for full session clear.")] string? nodeSlug = null)
+    {
+        var nodeId = nodeSlug != null ? await ResolveNodeIdAsync(nodeSlug) : null;
+        if (nodeSlug != null && nodeId == null)
+            return JsonSerializer.Serialize(new { error = $"node_not_found: '{nodeSlug}'" }, JsonOpts);
+
+        await userContext.ClearAsync(nodeId);
+        return JsonSerializer.Serialize(new { action = "cleared", scope = nodeSlug ?? "(global)" }, JsonOpts);
+    }
+
+    [McpServerTool, Description(
+        "Show all active context overrides (pins and excludes) for this session. " +
+        "Includes the doc path, action, scope (global or node), and expiry time.")]
+    public async Task<string> GetContextStatus()
+    {
+        var report = await userContext.GetStatusAsync();
+        return JsonSerializer.Serialize(new
+        {
+            session  = report.SessionKey,
+            count    = report.Entries.Count,
+            entries  = report.Entries.Select(e => new
+            {
+                action      = e.Action,
+                doc         = e.RelativePath,
+                nodeId      = e.NodeId?.ToString() ?? "(global)",
+                expiresAt   = e.ExpiresAt.ToString("u"),
+            }),
+        }, JsonOpts);
+    }
+
+    // ── Liberty Report (Rule of Cool) ─────────────────────────────────────────
+
+    [McpServerTool, Description(
+        "Show the liberty analysis (Rule of Cool) for a single beat or all beats in a story. " +
+        "A 'liberty' is any creative departure from the beat goal or entity roster: " +
+        "entity_invention (name not in DB), tech_departure (GLMZ physics violated), " +
+        "or creative_departure (plot beyond the beat goal). " +
+        "Each liberty is scored CoolFactor 0–10: ≥8 → CANON-ADDITION-CANDIDATE finding, " +
+        "5–7 → LIBERTY-CONSIDER advisory, ≤4 entity invention → LIBERTY-WARNING. " +
+        "Reports are written automatically after each beat write; this tool reads them.")]
+    public async Task<string> GetLibertyReport(
+        [Description("Beat GUID to retrieve the report for that specific beat.")] string? beatId = null,
+        [Description("Story slug (e.g. 'icfi') to retrieve all reports for that story, newest first.")] string? slug = null)
+    {
+        if (beatId != null)
+        {
+            if (!Guid.TryParse(beatId, out var gid))
+                return JsonSerializer.Serialize(new { error = $"invalid_beat_id: '{beatId}'" }, JsonOpts);
+
+            var liberties = await libertyReport.GetAsync(gid);
+            return JsonSerializer.Serialize(new
+            {
+                beatId,
+                count = liberties.Count,
+                liberties = liberties.Select(l => new
+                {
+                    l.Kind, l.Name, l.Evidence, l.Explanation, l.CoolFactor,
+                    tag = l.CoolFactor >= 8 ? "CANON-ADDITION-CANDIDATE" :
+                          l.CoolFactor >= 5 ? "LIBERTY-CONSIDER" : "LIBERTY-WARNING",
+                }),
+            }, JsonOpts);
+        }
+
+        if (slug != null)
+        {
+            var reports = await libertyReport.GetForNodeAsync(slug);
+            var flat = reports.SelectMany(r => r.Liberties.Select(l => new
+            {
+                r.BeatId, r.GeneratedAt, l.Kind, l.Name, l.Evidence, l.Explanation, l.CoolFactor,
+                tag = l.CoolFactor >= 8 ? "CANON-ADDITION-CANDIDATE" :
+                      l.CoolFactor >= 5 ? "LIBERTY-CONSIDER" : "LIBERTY-WARNING",
+            })).ToList();
+            return JsonSerializer.Serialize(new
+            {
+                slug,
+                totalBeats    = reports.Count,
+                totalLiberties = flat.Count,
+                candidates    = flat.Count(l => l.CoolFactor >= 8),
+                advisories    = flat.Count(l => l.CoolFactor is >= 5 and < 8),
+                warnings      = flat.Count(l => l.Kind == "entity_invention" && l.CoolFactor < 5),
+                liberties     = flat,
+            }, JsonOpts);
+        }
+
+        return JsonSerializer.Serialize(new { error = "provide beatId or slug" }, JsonOpts);
+    }
+
+    // ── Helpers ───────────────────────────────────────────────────────────────
+
+    private async Task<(Guid Id, string Path, string? Error)> ResolveDocIdAsync(string doc)
+    {
+        if (Guid.TryParse(doc, out var g)) return (g, doc, null);
+
+        await using var db = await dbFactory.CreateDbContextAsync();
+        var hits = await db.MarkdownFiles.AsNoTracking()
+            .Where(m => m.RelativePath.Contains(doc))
+            .Select(m => new { m.Id, m.RelativePath })
+            .Take(5)
+            .ToListAsync();
+
+        if (hits.Count == 0)
+            return (Guid.Empty, "", $"doc_not_found: no markdown file matches '{doc}'");
+        if (hits.Count > 1)
+            return (Guid.Empty, "", $"doc_ambiguous: {hits.Count} files match '{doc}': {string.Join(", ", hits.Select(h => h.RelativePath))}");
+
+        return (hits[0].Id, hits[0].RelativePath, null);
+    }
+
+    private async Task<Guid?> ResolveNodeIdAsync(string slug)
+    {
+        await using var db = await dbFactory.CreateDbContextAsync();
+        return await db.Nodes.AsNoTracking()
+            .Where(n => n.Slug == slug)
+            .Select(n => (Guid?)n.Id)
+            .FirstOrDefaultAsync();
     }
 }

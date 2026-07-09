@@ -53,7 +53,10 @@ public class ProseWriterRouter(
     StoryScienceService? storyScience = null,
     NarrativeChartService? narrativeChart = null,
     StructuralBlueprintService? structuralBlueprint = null,
-    StoryStateLedgerService? storyStateLedger = null)
+    StoryStateLedgerService? storyStateLedger = null,
+    WorldGraphService? worldGraph = null,
+    CanonGroundingService? canonGrounding = null,
+    LibertyReportService? libertyReport = null)
 {
     // Built from CombatProseConstants — single source of truth shared with CombatSceneWriter.
     static readonly string CombatProseGuidance =
@@ -89,7 +92,7 @@ public class ProseWriterRouter(
         if (entityContext != null && context.NodeId != Guid.Empty)
         {
             try { entityStackContext = await entityContext.PrepareContextAsync(context.NodeId, beatId, context.BeatGoal, context.SceneSoFar, ct); }
-            catch { /* non-blocking — entity context is best-effort */ }
+            catch (Exception ex) { log.LogWarning(ex, "[ProseWriterRouter] {Service} failed, continuing", nameof(EntityContextService)); }
         }
 
         // Fix 2: auto-populate CharactersInScene from entity context stack (character-type entries).
@@ -107,7 +110,7 @@ public class ProseWriterRouter(
                 if (active.Count > 0)
                     context = context with { CharactersInScene = active };
             }
-            catch { /* non-blocking */ }
+            catch (Exception ex) { log.LogWarning(ex, "[ProseWriterRouter] CharactersInScene auto-populate failed, continuing"); }
         }
 
         // Doc context stack: load the rotating cast of pertinent canon .md docs (non-fatal).
@@ -123,7 +126,7 @@ public class ProseWriterRouter(
                     : await docContext.PrepareContextAsync(context.NodeId, context.DocScopeCode, triggerText, tokenBudget: 3000, ct: ct);
                 docStackContext = docResult.Block;
             }
-            catch { /* non-blocking — doc context is best-effort */ }
+            catch (Exception ex) { log.LogWarning(ex, "[ProseWriterRouter] {Service} failed, continuing", nameof(DocContextService)); }
         }
 
         // Node-bible fallback: an empty doc stack means the story's bible never reached the prompt
@@ -155,7 +158,7 @@ public class ProseWriterRouter(
                         context.NodeId);
                 }
             }
-            catch { /* non-blocking */ }
+            catch (Exception ex) { log.LogWarning(ex, "[ProseWriterRouter] NodeBibleFallback failed, continuing"); }
         }
 
         // Fix 4: auto-populate Location from StoryNode.DefaultLocation when caller doesn't set it.
@@ -173,7 +176,7 @@ public class ProseWriterRouter(
                 if (!string.IsNullOrWhiteSpace(defaultLoc))
                     context = context with { Location = defaultLoc };
             }
-            catch { /* non-blocking */ }
+            catch (Exception ex) { log.LogWarning(ex, "[ProseWriterRouter] DefaultLocation fallback failed, continuing"); }
         }
 
         // ── New enrichments (SS-A28) ─────────────────────────────────────────
@@ -183,26 +186,36 @@ public class ProseWriterRouter(
         if (sceneBuilder != null && string.IsNullOrEmpty(locationContext) && !string.IsNullOrEmpty(context.Location))
         {
             try { locationContext = sceneBuilder.BuildAmbientContext(context.Location, context.TimeOfDay, context.Weather); }
-            catch { /* non-blocking */ }
+            catch (Exception ex) { log.LogWarning(ex, "[ProseWriterRouter] {Service} failed, continuing", nameof(SceneContextBuilder)); }
         }
 
         // Dialogue voice profiles: auto-fire on Dialogue/EmotionalClimax beats when characters are listed.
+        // Gate: only inject voice profiles when the beat mode actually calls for dialogue.
         var dialogueContext = context.DialogueContext;
-        if (dialogue != null
-            && string.IsNullOrEmpty(dialogueContext)
-            && context.CharactersInScene.Count > 0
-            && (mode == BeatMode.Dialogue || mode == BeatMode.EmotionalClimax))
+        if (dialogue != null && string.IsNullOrEmpty(dialogueContext) && context.CharactersInScene.Count > 0)
         {
-            try { dialogueContext = dialogue.BuildDialogueContext(context.CharactersInScene.ToList()); }
-            catch { /* non-blocking */ }
+            if (mode == BeatMode.Dialogue || mode == BeatMode.EmotionalClimax)
+            {
+                try { dialogueContext = dialogue.BuildDialogueContext(context.CharactersInScene.ToList()); }
+                catch (Exception ex) { log.LogWarning(ex, "[ProseWriterRouter] {Service} failed, continuing", nameof(DialogueService)); }
+            }
+            else
+                log.LogDebug("[gate] DialogueService skipped (mode={Mode}, not Dialogue/EmotionalClimax)", mode);
         }
 
         // Emotional depth feedback: pull prior examination findings for this node.
         var emotionalGuidanceContext = context.EmotionalGuidanceContext;
         if (string.IsNullOrEmpty(emotionalGuidanceContext) && dbFactory != null && context.NodeId != Guid.Empty)
         {
-            try { emotionalGuidanceContext = await BuildEmotionalGuidanceAsync(context.NodeId, ct); }
-            catch { /* non-blocking */ }
+            try
+            {
+                emotionalGuidanceContext = await BuildFindingsGuidanceAsync(
+                    context.NodeId,
+                    summaryPrefix: "EMOTIONAL-DEPTH",
+                    headerLine: "EMOTIONAL DEPTH GUIDANCE — prior examination found these weaknesses; address them in this beat:",
+                    ct: ct);
+            }
+            catch (Exception ex) { log.LogWarning(ex, "[ProseWriterRouter] {Service} failed, continuing", nameof(EmotionalDepthService)); }
         }
 
         // Fix 1: auto-populate XRayContext via SceneContextAssembler when beatId is known.
@@ -220,7 +233,7 @@ public class ProseWriterRouter(
                     _ = Task.Run(() => sceneAssembler.PersistRosterAsync(beatId, sc, CancellationToken.None));
                 }
             }
-            catch { /* non-blocking */ }
+            catch (Exception ex) { log.LogWarning(ex, "[ProseWriterRouter] {Service} failed, continuing", nameof(SceneContextAssembler)); }
         }
 
         // Fix 3: build canonical facts block for characters in scene from ContinuityService.
@@ -249,7 +262,7 @@ public class ProseWriterRouter(
                     continuityContext = sb.ToString().TrimEnd();
                 }
             }
-            catch { /* non-blocking */ }
+            catch (Exception ex) { log.LogWarning(ex, "[ProseWriterRouter] {Service} failed, continuing", nameof(ContinuityService)); }
         }
 
         // ML prose quality guidance: findings from the nightly Python model audit.
@@ -257,20 +270,26 @@ public class ProseWriterRouter(
         if (string.IsNullOrEmpty(mlProseGuidanceContext) && mlProseGuidance != null && context.NodeId != Guid.Empty)
         {
             try { mlProseGuidanceContext = await mlProseGuidance.BuildGuidanceAsync(context.NodeId, ct); }
-            catch { /* non-blocking — ML guidance is best-effort */ }
+            catch (Exception ex) { log.LogWarning(ex, "[ProseWriterRouter] {Service} failed, continuing", nameof(MlProseGuidanceService)); }
         }
 
         // Tension escalation: warn when recent beats have stagnated at low intensity.
+        // Gate: fewer than 3 prior beats means no escalation history to analyse.
         var tensionGuidanceContext = context.TensionGuidanceContext;
         if (string.IsNullOrEmpty(tensionGuidanceContext) && tensionService != null && context.NodeId != Guid.Empty)
-            tensionGuidanceContext = tensionService.BuildGuidanceBlock(context.NodeId, mode);
+        {
+            if (beatIndex > 2)
+                tensionGuidanceContext = tensionService.BuildGuidanceBlock(context.NodeId, mode);
+            else
+                log.LogDebug("[gate] TensionEscalationService skipped (beatIndex={BeatIndex} ≤ 2, insufficient history)", beatIndex);
+        }
 
         // Reader knowledge state: what the reader knows so far in this node.
         var readerKnowledgeContext = context.ReaderKnowledgeContext;
         if (string.IsNullOrEmpty(readerKnowledgeContext) && readerKnowledge != null && context.NodeId != Guid.Empty)
         {
             try { readerKnowledgeContext = await readerKnowledge.BuildKnowledgeBlockAsync(context.NodeId, ct); }
-            catch { /* non-blocking */ }
+            catch (Exception ex) { log.LogWarning(ex, "[ProseWriterRouter] {Service} failed, continuing", nameof(ReaderKnowledgeService)); }
         }
 
         // Character state constraints: gear, cyberware, status — zero LLM cost, pure DB query.
@@ -278,7 +297,7 @@ public class ProseWriterRouter(
         if (string.IsNullOrEmpty(consequenceContext) && consequence != null && context.CharactersInScene.Count > 0)
         {
             try { consequenceContext = consequence.BuildConstraints(context.CharactersInScene.ToList()); }
-            catch { /* non-blocking */ }
+            catch (Exception ex) { log.LogWarning(ex, "[ProseWriterRouter] {Service} failed, continuing", nameof(ConsequenceService)); }
         }
 
         // Cross-story persistent consequences for named characters (contract outcomes, faction burns).
@@ -292,7 +311,7 @@ public class ProseWriterRouter(
                         ? engineBlock
                         : consequenceContext + "\n\n" + engineBlock;
             }
-            catch { /* non-blocking */ }
+            catch (Exception ex) { log.LogWarning(ex, "[ProseWriterRouter] {Service} failed, continuing", nameof(ConsequenceEngine)); }
         }
 
         // Ambient anomaly: New Weird background detail tagged to scene location (60% chance gate).
@@ -300,7 +319,7 @@ public class ProseWriterRouter(
         if (string.IsNullOrEmpty(ambientAnomalyContext) && ambientAnomaly != null && !string.IsNullOrEmpty(context.Location))
         {
             try { ambientAnomalyContext = ambientAnomaly.FormatHints(context.Location); }
-            catch { /* non-blocking */ }
+            catch (Exception ex) { log.LogWarning(ex, "[ProseWriterRouter] {Service} failed, continuing", nameof(AmbientAnomalyService)); }
         }
 
         // World state at beat: live entity state snapshot from EntityStateEvents (temporal, drifted from canon).
@@ -312,7 +331,7 @@ public class ProseWriterRouter(
                 var snapshot = await worldStateAtBeat.SnapshotAsync(beatId, ct: ct);
                 worldStateContext = snapshot.FormatAsContextBlock();
             }
-            catch { /* non-blocking */ }
+            catch (Exception ex) { log.LogWarning(ex, "[ProseWriterRouter] {Service} failed, continuing", nameof(WorldStateAtBeatService)); }
         }
 
         // Narrative summary: rolling compressed memory of prior beats — long-node coherence.
@@ -326,15 +345,21 @@ public class ProseWriterRouter(
                 if (string.IsNullOrEmpty(narrativeSummaryContext))
                     narrativeSummaryContext = narrativeSummary.GetSummaryChain();
             }
-            catch { /* non-blocking */ }
+            catch (Exception ex) { log.LogWarning(ex, "[ProseWriterRouter] {Service} failed, continuing", nameof(NarrativeSummaryService)); }
         }
 
         // Chapter summaries: DB-backed prior-chapter memory (cross-session coherence).
+        // Gate: beat 0 cannot have prior chapter summaries to inject; skip the DB query.
         var chapterSummaryContext = context.ChapterSummaryContext;
         if (string.IsNullOrEmpty(chapterSummaryContext) && chapterSummary != null && context.NodeId != Guid.Empty)
         {
-            try { chapterSummaryContext = await chapterSummary.BuildPriorSummaryContextAsync(context.NodeId, ct); }
-            catch { /* non-blocking */ }
+            if (beatIndex > 0)
+            {
+                try { chapterSummaryContext = await chapterSummary.BuildPriorSummaryContextAsync(context.NodeId, ct); }
+                catch (Exception ex) { log.LogWarning(ex, "[ProseWriterRouter] {Service} failed, continuing", nameof(ChapterSummaryService)); }
+            }
+            else
+                log.LogDebug("[gate] ChapterSummaryService skipped (beatIndex=0, no prior chapters yet)");
         }
 
         // Open threads: unresolved promises/plants/questions from prior beats.
@@ -342,7 +367,7 @@ public class ProseWriterRouter(
         if (string.IsNullOrEmpty(openThreadsContext) && openThreads != null && context.NodeId != Guid.Empty)
         {
             try { openThreadsContext = await openThreads.BuildContextAsync(context.NodeId, ct); }
-            catch { /* non-blocking */ }
+            catch (Exception ex) { log.LogWarning(ex, "[ProseWriterRouter] {Service} failed, continuing", nameof(OpenThreadsService)); }
         }
 
         // Story plot state: arc-level named states (crises, dramatic questions, objectives,
@@ -351,7 +376,7 @@ public class ProseWriterRouter(
         if (string.IsNullOrEmpty(plotEventsContext) && storyStateLedger != null && context.NodeId != Guid.Empty)
         {
             try { plotEventsContext = await storyStateLedger.BuildContextAsync(context.NodeId, ct); }
-            catch { /* non-blocking */ }
+            catch (Exception ex) { log.LogWarning(ex, "[ProseWriterRouter] {Service} failed, continuing", nameof(StoryStateLedgerService)); }
         }
 
         // Story Science: King + Storr craft laws — psychometric consistency, status dynamics,
@@ -360,7 +385,7 @@ public class ProseWriterRouter(
         if (string.IsNullOrEmpty(storyScienceGuidance) && storyScience != null && totalBeats > 0)
         {
             try { storyScienceGuidance = storyScience.GetBeatGuidance(context, beatIndex, totalBeats, mode); }
-            catch { /* non-blocking */ }
+            catch (Exception ex) { log.LogWarning(ex, "[ProseWriterRouter] {Service} failed, continuing", nameof(StoryScienceService)); }
         }
 
         // Structural Blueprint: this story's pre-committed anti-tell decisions (StoryScope
@@ -371,7 +396,7 @@ public class ProseWriterRouter(
             && context.NodeId != Guid.Empty && totalBeats > 0)
         {
             try { structuralBlueprintGuidance = await structuralBlueprint.BuildBeatInjectionAsync(context.NodeId, beatId, beatIndex, totalBeats, ct); }
-            catch { /* non-blocking */ }
+            catch (Exception ex) { log.LogWarning(ex, "[ProseWriterRouter] {Service} failed, continuing", nameof(StructuralBlueprintService)); }
         }
 
         // StoryScope audit loop-back: prior audit findings for this node become
@@ -380,31 +405,42 @@ public class ProseWriterRouter(
         {
             try
             {
-                var storyScopeGuidance = await BuildStoryScopeGuidanceAsync(context.NodeId, ct);
+                var storyScopeGuidance = await BuildFindingsGuidanceAsync(
+                    context.NodeId,
+                    summaryPrefix: "STORYSCOPE",
+                    headerLine: "STORYSCOPE AUDIT GUIDANCE — a structural audit found these AI-fiction tells in this story; do not reproduce them in this beat:",
+                    includeSuggestedFix: true,
+                    ct: ct);
                 if (storyScopeGuidance.Length > 0)
                     structuralBlueprintGuidance = structuralBlueprintGuidance.Length > 0
                         ? structuralBlueprintGuidance + "\n\n" + storyScopeGuidance
                         : storyScopeGuidance;
             }
-            catch { /* non-blocking */ }
+            catch (Exception ex) { log.LogWarning(ex, "[ProseWriterRouter] StoryScopeGuidance failed, continuing"); }
         }
 
         // Narrative Chart: offscreen character parallel activity — what characters not in this
         // scene are doing in parallel. Keeps the world continuous; injected as subtext context.
+        // Gate: first 3 beats have no parallel activity context worth fetching.
         var offscreenActivityContext = context.OffscreenActivityContext;
         if (string.IsNullOrEmpty(offscreenActivityContext) && narrativeChart != null
             && context.NodeId != Guid.Empty && totalBeats > 0)
         {
-            try
+            if (beatIndex > 2)
             {
-                var chart = await narrativeChart.BuildChartAsync(context.NodeId, ct);
-                if (beatIndex < chart.Beats.Count)
+                try
                 {
-                    var crossSection = chart.Beats[beatIndex];
-                    offscreenActivityContext = NarrativeChartService.BuildOffscreenContextBlock(crossSection);
+                    var chart = await narrativeChart.BuildChartAsync(context.NodeId, ct);
+                    if (beatIndex < chart.Beats.Count)
+                    {
+                        var crossSection = chart.Beats[beatIndex];
+                        offscreenActivityContext = NarrativeChartService.BuildOffscreenContextBlock(crossSection);
+                    }
                 }
+                catch (Exception ex) { log.LogWarning(ex, "[ProseWriterRouter] {Service} failed, continuing", nameof(NarrativeChartService)); }
             }
-            catch { /* non-blocking */ }
+            else
+                log.LogDebug("[gate] NarrativeChartService skipped (beatIndex={BeatIndex} ≤ 2, no prior activity to cross-cut)", beatIndex);
         }
 
         // ── Assemble enriched context ─────────────────────────────────────────
@@ -435,6 +471,27 @@ public class ProseWriterRouter(
             StructuralBlueprintGuidance = structuralBlueprintGuidance,
         };
 
+        // ── C1: Entity pre-check (soft gate — warns, never blocks) ────────────────
+        // Extract candidate proper nouns from BeatGoal and flag any that are not in
+        // the canon WorldGraph. Unknown names get an ENTITY PRE-CHECK WARNINGS block
+        // injected into the dynamic system prompt so the LLM keeps them ambiguous.
+        if (worldGraph != null && !string.IsNullOrWhiteSpace(context.BeatGoal))
+        {
+            try
+            {
+                var unknowns = FindUnknownEntityNames(context.BeatGoal, worldGraph);
+                if (unknowns.Count > 0)
+                {
+                    var warnBlock = "ENTITY PRE-CHECK WARNINGS — the following names in the beat goal are NOT established in canon:\n" +
+                        string.Join("\n", unknowns.Select(n => $"  • {n}")) + "\n" +
+                        "Do not invent backstory, abilities, or relationships for these names. " +
+                        "If you reference them, keep them ambiguous until the user seeds them into the database.\n\n";
+                    enriched = enriched with { EntityPreCheckWarnings = warnBlock };
+                }
+            }
+            catch (Exception ex) { log.LogWarning(ex, "[ProseWriterRouter] Entity pre-check failed, continuing"); }
+        }
+
         var startedAt = DateTime.UtcNow;
         var sw = System.Diagnostics.Stopwatch.StartNew();
         var result = await generator.GenerateBeatAsync(enriched, ct);
@@ -456,16 +513,18 @@ public class ProseWriterRouter(
                 telemetry.RecordBeat(new ContextTelemetryService.BeatRecord(
                     beatIndex, beatId.ToString("N"), title, startedAt, sw.Elapsed.TotalMilliseconds, result?.Length ?? 0, docs, ents));
             }
-            catch { /* telemetry is best-effort — never affect prose */ }
+            catch (Exception ex) { log.LogWarning(ex, "[ProseWriterRouter] {Service} failed, skipped", nameof(ContextTelemetryService)); }
         }
 
         // Fire-and-forget: coverage logging + reconciliation + tension recording + reader knowledge extraction.
         var pacingApplicable  = totalBeats > 0;
         var structApplicable  = totalBeats > 0;
         var combatApplicable  = mode == BeatMode.Combat;
-        var nodeApplicable  = context.NodeId != Guid.Empty;
+        var nodeApplicable    = context.NodeId != Guid.Empty;
         var capturedResult    = result;
-        var capturedNodeId  = context.NodeId;
+        var capturedNodeId    = context.NodeId;
+        var capturedBeatGoal  = context.BeatGoal;
+        var capturedEntityRoster = entityStackContext.Length > 0 ? entityStackContext : null;
 
         _ = Task.Run(async () =>
         {
@@ -475,28 +534,28 @@ public class ProseWriterRouter(
             [
                 new("Pacing",              IsApplicable: pacingApplicable,  IsActive: pacingApplicable && enriched.PacingGuidance.Length > 0,                 BlockSizeChars: enriched.PacingGuidance.Length),
                 new("StoryMethodology",    IsApplicable: structApplicable,  IsActive: structApplicable && enriched.StructuralRoleGuidance.Length > 0,         BlockSizeChars: enriched.StructuralRoleGuidance.Length),
-                new("PlantPayoff",         IsApplicable: nodeApplicable,  IsActive: nodeApplicable,                                                       BlockSizeChars: 0),
-                new("StoryAudit",          IsApplicable: nodeApplicable,  IsActive: nodeApplicable,                                                       BlockSizeChars: 0),
+                new("PlantPayoff",         IsApplicable: nodeApplicable,    IsActive: nodeApplicable,                                                         BlockSizeChars: 0),
+                new("StoryAudit",          IsApplicable: nodeApplicable,    IsActive: nodeApplicable,                                                         BlockSizeChars: 0),
                 new("Combat",              IsApplicable: combatApplicable,  IsActive: combatApplicable,                                                       BlockSizeChars: combatApplicable ? CombatProseGuidance.Length : 0),
-                new("EntityContext",       IsApplicable: nodeApplicable,  IsActive: entityStackContext.Length > 0,                                          BlockSizeChars: entityStackContext.Length),
-                new("DocContext",          IsApplicable: nodeApplicable,  IsActive: docStackContext.Length > 0,                                             BlockSizeChars: docStackContext.Length),
-                new("SceneContext",        IsApplicable: nodeApplicable,  IsActive: locationContext.Length > 0,                                             BlockSizeChars: locationContext.Length),
-                new("DialogueService",     IsApplicable: nodeApplicable,  IsActive: dialogueContext.Length > 0,                                             BlockSizeChars: dialogueContext.Length),
-                new("EmotionalGuidance",   IsApplicable: nodeApplicable,  IsActive: emotionalGuidanceContext.Length > 0,                                    BlockSizeChars: emotionalGuidanceContext.Length),
-                new("TensionEscalation",   IsApplicable: nodeApplicable,          IsActive: tensionGuidanceContext.Length > 0,                                        BlockSizeChars: tensionGuidanceContext.Length),
-                new("ReaderKnowledge",     IsApplicable: nodeApplicable,          IsActive: readerKnowledgeContext.Length > 0,                                        BlockSizeChars: readerKnowledgeContext.Length),
-                new("Consequence",         IsApplicable: nodeApplicable,          IsActive: consequenceContext.Length > 0,                                            BlockSizeChars: consequenceContext.Length),
-                new("AmbientAnomaly",      IsApplicable: !string.IsNullOrEmpty(context.Location), IsActive: ambientAnomalyContext.Length > 0,                          BlockSizeChars: ambientAnomalyContext.Length),
-                new("WorldState",          IsApplicable: beatId != Guid.Empty,      IsActive: worldStateContext.Length > 0,                                             BlockSizeChars: worldStateContext.Length),
-                new("NarrativeSummary",    IsApplicable: nodeApplicable,          IsActive: narrativeSummaryContext.Length > 0,                                       BlockSizeChars: narrativeSummaryContext.Length),
-                new("ChapterSummary",      IsApplicable: nodeApplicable,          IsActive: chapterSummaryContext.Length > 0,                                         BlockSizeChars: chapterSummaryContext.Length),
-                new("OpenThreads",         IsApplicable: nodeApplicable,          IsActive: openThreadsContext.Length > 0,                                            BlockSizeChars: openThreadsContext.Length),
-                new("StoryStateLedger",    IsApplicable: nodeApplicable,          IsActive: plotEventsContext.Length > 0,                                             BlockSizeChars: plotEventsContext.Length),
-                new("SceneContextAssembler", IsApplicable: beatId != Guid.Empty,  IsActive: xRayContext.Length > 0,                                                    BlockSizeChars: xRayContext.Length),
-                new("ContinuityService",   IsApplicable: nodeApplicable,          IsActive: continuityContext.Length > 0,                                              BlockSizeChars: continuityContext.Length),
-                new("StoryScience",        IsApplicable: totalBeats > 0,          IsActive: storyScienceGuidance.Length > 0,                                             BlockSizeChars: storyScienceGuidance.Length),
-                new("NarrativeChart",      IsApplicable: nodeApplicable,          IsActive: offscreenActivityContext.Length > 0,                                         BlockSizeChars: offscreenActivityContext.Length),
-                new("StructuralBlueprint", IsApplicable: nodeApplicable && totalBeats > 0, IsActive: structuralBlueprintGuidance.Length > 0,                              BlockSizeChars: structuralBlueprintGuidance.Length),
+                new("EntityContext",       IsApplicable: nodeApplicable,    IsActive: entityStackContext.Length > 0,                                          BlockSizeChars: entityStackContext.Length),
+                new("DocContext",          IsApplicable: nodeApplicable,    IsActive: docStackContext.Length > 0,                                             BlockSizeChars: docStackContext.Length),
+                new("SceneContext",        IsApplicable: nodeApplicable,    IsActive: locationContext.Length > 0,                                             BlockSizeChars: locationContext.Length),
+                new("DialogueService",     IsApplicable: nodeApplicable,    IsActive: dialogueContext.Length > 0,                                             BlockSizeChars: dialogueContext.Length),
+                new("EmotionalGuidance",   IsApplicable: nodeApplicable,    IsActive: emotionalGuidanceContext.Length > 0,                                    BlockSizeChars: emotionalGuidanceContext.Length),
+                new("TensionEscalation",   IsApplicable: nodeApplicable,    IsActive: tensionGuidanceContext.Length > 0,                                      BlockSizeChars: tensionGuidanceContext.Length),
+                new("ReaderKnowledge",     IsApplicable: nodeApplicable,    IsActive: readerKnowledgeContext.Length > 0,                                      BlockSizeChars: readerKnowledgeContext.Length),
+                new("Consequence",         IsApplicable: nodeApplicable,    IsActive: consequenceContext.Length > 0,                                          BlockSizeChars: consequenceContext.Length),
+                new("AmbientAnomaly",      IsApplicable: !string.IsNullOrEmpty(context.Location), IsActive: ambientAnomalyContext.Length > 0,                 BlockSizeChars: ambientAnomalyContext.Length),
+                new("WorldState",          IsApplicable: beatId != Guid.Empty,  IsActive: worldStateContext.Length > 0,                                       BlockSizeChars: worldStateContext.Length),
+                new("NarrativeSummary",    IsApplicable: nodeApplicable,    IsActive: narrativeSummaryContext.Length > 0,                                     BlockSizeChars: narrativeSummaryContext.Length),
+                new("ChapterSummary",      IsApplicable: nodeApplicable,    IsActive: chapterSummaryContext.Length > 0,                                       BlockSizeChars: chapterSummaryContext.Length),
+                new("OpenThreads",         IsApplicable: nodeApplicable,    IsActive: openThreadsContext.Length > 0,                                          BlockSizeChars: openThreadsContext.Length),
+                new("StoryStateLedger",    IsApplicable: nodeApplicable,    IsActive: plotEventsContext.Length > 0,                                           BlockSizeChars: plotEventsContext.Length),
+                new("SceneContextAssembler", IsApplicable: beatId != Guid.Empty, IsActive: xRayContext.Length > 0,                                            BlockSizeChars: xRayContext.Length),
+                new("ContinuityService",   IsApplicable: nodeApplicable,    IsActive: continuityContext.Length > 0,                                           BlockSizeChars: continuityContext.Length),
+                new("StoryScience",        IsApplicable: totalBeats > 0,    IsActive: storyScienceGuidance.Length > 0,                                        BlockSizeChars: storyScienceGuidance.Length),
+                new("NarrativeChart",      IsApplicable: nodeApplicable,    IsActive: offscreenActivityContext.Length > 0,                                    BlockSizeChars: offscreenActivityContext.Length),
+                new("StructuralBlueprint", IsApplicable: nodeApplicable && totalBeats > 0, IsActive: structuralBlueprintGuidance.Length > 0,                  BlockSizeChars: structuralBlueprintGuidance.Length),
             ], CancellationToken.None);
 
             await modeDetector.PersistAsync(beatId, universeId, mode, confidence, method, CancellationToken.None);
@@ -517,16 +576,37 @@ public class ProseWriterRouter(
             if (openThreads != null && capturedNodeId != Guid.Empty && beatId != Guid.Empty && !string.IsNullOrWhiteSpace(capturedResult))
             {
                 try { await openThreads.MarkResolvedAsync(capturedNodeId, beatId, capturedResult, CancellationToken.None); }
-                catch { /* non-blocking */ }
+                catch (Exception ex) { log.LogWarning(ex, "[ProseWriterRouter] {Service}.MarkResolvedAsync failed", nameof(OpenThreadsService)); }
                 try { await openThreads.DetectAndRegisterAsync(capturedNodeId, beatId, capturedResult, CancellationToken.None); }
-                catch { /* non-blocking */ }
+                catch (Exception ex) { log.LogWarning(ex, "[ProseWriterRouter] {Service}.DetectAndRegisterAsync failed", nameof(OpenThreadsService)); }
             }
 
             // Story plot state: extract arc-level state transitions from the completed beat.
             if (storyStateLedger != null && capturedNodeId != Guid.Empty && beatId != Guid.Empty && !string.IsNullOrWhiteSpace(capturedResult))
             {
                 try { await storyStateLedger.ExtractAndRecordAsync(capturedNodeId, beatId, beatIndex, capturedResult, CancellationToken.None); }
-                catch { /* non-blocking */ }
+                catch (Exception ex) { log.LogWarning(ex, "[ProseWriterRouter] {Service}.ExtractAndRecordAsync failed", nameof(StoryStateLedgerService)); }
+            }
+
+            // C2: CanonGroundingService — flag PROVISIONAL-ENTITY findings for invented names (opt-in).
+            if (canonGrounding != null && (settings?.AutoCanonGrounding ?? false) && beatId != Guid.Empty && !string.IsNullOrWhiteSpace(capturedResult))
+            {
+                try { await canonGrounding.AnalyzeAndScaffoldAsync(capturedResult, $"beat:{beatId}", CancellationToken.None); }
+                catch (Exception ex) { log.LogWarning(ex, "[ProseWriterRouter] {Service}.AnalyzeAndScaffoldAsync failed", nameof(CanonGroundingService)); }
+            }
+
+            // C3: HarvestRevealedDetails — propose XRAY-REVEAL findings for new details revealed in prose (opt-in).
+            if (sceneAssembler != null && (settings?.AutoHarvestRevealedDetails ?? false) && beatId != Guid.Empty && !string.IsNullOrWhiteSpace(capturedResult))
+            {
+                try { await sceneAssembler.HarvestRevealedDetailsAsync(beatId, CancellationToken.None); }
+                catch (Exception ex) { log.LogWarning(ex, "[ProseWriterRouter] {Service}.HarvestRevealedDetailsAsync failed", nameof(SceneContextAssembler)); }
+            }
+
+            // D: Liberty Report — Rule of Cool analysis (always fires when beatId is real; Haiku call, ~$0.002).
+            if (libertyReport != null && beatId != Guid.Empty && !string.IsNullOrWhiteSpace(capturedResult))
+            {
+                try { await libertyReport.AnalyseAsync(beatId, capturedResult, capturedBeatGoal, capturedEntityRoster, CancellationToken.None); }
+                catch (Exception ex) { log.LogWarning(ex, "[ProseWriterRouter] {Service}.AnalyseAsync failed", nameof(LibertyReportService)); }
             }
           }
           catch (Exception ex) { log.LogWarning(ex, "Post-write side effects failed for beat {BeatId}", beatId); }
@@ -589,14 +669,15 @@ public class ProseWriterRouter(
         return (mode, confidence, method, pacingInstruction?.ProseGuidance ?? "", structuralGuidance);
     }
 
-    // ── StoryScope guidance helper ────────────────────────────────────────────
-
     /// <summary>
-    /// Query the Findings table for recent STORYSCOPE audit findings for this node
-    /// and format them as generation constraints. Same loop-back pattern as
-    /// BuildEmotionalGuidanceAsync — the audit corrects future writing.
+    /// Query the Findings table for recent audit findings matching a summary prefix
+    /// and format them as generation constraints (the audit loop-back pattern).
+    /// Replaces the former BuildEmotionalGuidanceAsync and BuildStoryScopeGuidanceAsync methods.
     /// </summary>
-    private async Task<string> BuildStoryScopeGuidanceAsync(Guid nodeId, CancellationToken ct)
+    private async Task<string> BuildFindingsGuidanceAsync(
+        Guid nodeId, string summaryPrefix, string headerLine,
+        bool includeSuggestedFix = false, int maxItems = 3,
+        CancellationToken ct = default)
     {
         if (dbFactory == null) return "";
         await using var db = await dbFactory.CreateDbContextAsync(ct);
@@ -608,71 +689,59 @@ public class ProseWriterRouter(
         if (string.IsNullOrEmpty(slug)) return "";
 
         var fp = $"node:{slug}";
-        var catKey = FindingCategory.Other.ToString();
+        var catKey    = FindingCategory.Other.ToString();
         var statusKey = FindingStatus.New.ToString();
 
-        var summaries = await db.Findings.AsNoTracking()
+        var findings = await db.Findings.AsNoTracking()
             .Where(f => f.FilePath == fp
                         && f.Category == catKey
                         && f.Status == statusKey
-                        && f.Summary.StartsWith("STORYSCOPE"))
+                        && f.Summary.StartsWith(summaryPrefix))
             .OrderBy(f => f.Severity == "High" ? 0 : 1)
             .ThenByDescending(f => f.DetectedAt)
-            .Take(3)
+            .Take(maxItems)
             .Select(f => new { f.Summary, f.SuggestedFix })
             .ToListAsync(ct);
 
-        if (summaries.Count == 0) return "";
+        if (findings.Count == 0) return "";
 
         var sb = new StringBuilder();
-        sb.AppendLine("STORYSCOPE AUDIT GUIDANCE — a structural audit found these AI-fiction tells in this story; do not reproduce them in this beat:");
-        foreach (var s in summaries)
+        sb.AppendLine(headerLine);
+        foreach (var f in findings)
         {
-            sb.AppendLine($"• {s.Summary.Replace("STORYSCOPE ", "").Trim()}");
-            if (!string.IsNullOrEmpty(s.SuggestedFix))
-                sb.AppendLine($"  → {s.SuggestedFix}");
+            sb.AppendLine($"• {f.Summary.Replace(summaryPrefix + " ", "").Trim()}");
+            if (includeSuggestedFix && !string.IsNullOrEmpty(f.SuggestedFix))
+                sb.AppendLine($"  → {f.SuggestedFix}");
         }
         return sb.ToString().TrimEnd();
     }
 
-    // ── Emotional guidance helper ─────────────────────────────────────────────
+    // C1 helper — extract capitalized word-groups from the beat goal that look like proper nouns
+    // and are NOT found in the WorldGraph. Short words (≤2 chars) and common English words are
+    // filtered. Zero-cost: graph is already in memory.
+    private static readonly System.Text.RegularExpressions.Regex ProperNounPattern =
+        new(@"\b([A-Z][a-z]{2,}(?:\s+[A-Z][a-z]{2,})*)\b",
+            System.Text.RegularExpressions.RegexOptions.Compiled);
 
-    /// <summary>
-    /// Query the Findings table for recent EMOTIONAL-DEPTH blocking findings for this node
-    /// and format them as a compact generation constraint block.
-    /// </summary>
-    private async Task<string> BuildEmotionalGuidanceAsync(Guid nodeId, CancellationToken ct)
+    private static readonly HashSet<string> CommonWords = new(StringComparer.OrdinalIgnoreCase)
     {
-        if (dbFactory == null) return "";
-        await using var db = await dbFactory.CreateDbContextAsync(ct);
+        "The", "This", "That", "Here", "There", "When", "What", "Where", "Who", "Which",
+        "And", "But", "Yet", "For", "Nor", "So", "Then", "Now", "Just", "Still",
+        "He", "She", "They", "His", "Her", "Their", "Its", "Our", "Your", "My",
+        "After", "Before", "During", "Inside", "Outside", "Through", "Against",
+    };
 
-        var slug = await db.Nodes.AsNoTracking()
-            .Where(s => s.Id == nodeId)
-            .Select(s => s.Slug)
-            .FirstOrDefaultAsync(ct);
-        if (string.IsNullOrEmpty(slug)) return "";
+    private static List<string> FindUnknownEntityNames(string beatGoal, WorldGraphService graph)
+    {
+        var allNodes   = graph.AllNodes();
+        var knownNames = new HashSet<string>(allNodes.Select(n => n.Name), StringComparer.OrdinalIgnoreCase);
 
-        var fp = $"node:{slug}";
-        var catKey = FindingCategory.Other.ToString();
-        var statusKey = FindingStatus.New.ToString();
+        var candidates = ProperNounPattern.Matches(beatGoal)
+            .Select(m => m.Value.Trim())
+            .Where(n => !CommonWords.Contains(n) && n.Length > 3)
+            .Distinct(StringComparer.OrdinalIgnoreCase)
+            .ToList();
 
-        var summaries = await db.Findings.AsNoTracking()
-            .Where(f => f.FilePath == fp
-                        && f.Category == catKey
-                        && f.Status == statusKey
-                        && f.Summary.StartsWith("EMOTIONAL-DEPTH"))
-            .OrderBy(f => f.Severity == "High" ? 0 : 1)
-            .ThenByDescending(f => f.DetectedAt)
-            .Take(3)
-            .Select(f => f.Summary)
-            .ToListAsync(ct);
-
-        if (summaries.Count == 0) return "";
-
-        var sb = new StringBuilder();
-        sb.AppendLine("EMOTIONAL DEPTH GUIDANCE — prior examination found these weaknesses; address them in this beat:");
-        foreach (var s in summaries)
-            sb.AppendLine($"• {s.Replace("EMOTIONAL-DEPTH ", "").Trim()}");
-        return sb.ToString().TrimEnd();
+        return candidates.Where(c => !knownNames.Contains(c)).ToList();
     }
 }

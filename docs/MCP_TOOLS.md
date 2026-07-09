@@ -11,7 +11,7 @@
 > All tools are MCP-prefixed `mcp__streetsamurai__<name>` by the client. Most return a
 > JSON string; the canon is the SQL database, scoped to the active Universe.
 
-**219 tools** across **33 tool families.**
+**225 tools** across **33 tool families.**
 
 ## Families
 
@@ -21,7 +21,7 @@
 | [Bible](#bible) | 3 |
 | [Canon](#canon) | 9 |
 | [Combat](#combat) | 1 |
-| [Config](#config) | 8 |
+| [Config](#config) | 14 |
 | [Context](#context) | 4 |
 | [Continuity](#continuity) | 2 |
 | [Core Entity Crud](#core-entity-crud) | 4 |
@@ -175,6 +175,19 @@ Generate an action sequence using the StreetSamurai combat writer. Respects part
 
 <sub>`ConfigTools`</sub>
 
+### `add_context_doc`
+
+Pin a canon .md doc so it is always included in every beat prompt, regardless of LRU tier. Identify the doc by relative path fragment (e.g. 'ICFI', 'BIBLE', 'wound') or its GUID. The override lasts 24 h or until remove_context_doc / clear_context is called. Optionally scope to a single story with nodeSlug so only that story's beats include it.
+
+- `doc` (string, required) — Relative path fragment or GUID of the markdown doc to pin.
+- `nodeSlug` (string, optional) — Optional story slug to scope the pin (e.g. 'icfi'). Omit for session-global.
+
+### `clear_context`
+
+Clear ALL active context overrides for this session (both pins and excludes). Pass nodeSlug to clear only overrides scoped to that story; omit for session-wide clear.
+
+- `nodeSlug` (string, optional) — Optional story slug to clear only overrides for that node. Omit for full session clear.
+
 ### `doc_context_prepare`
 
 Prepare the Doc Context Stack — the rotating cast of pertinent canon .md docs for a topic/scene. Returns one budgeted block plus the resident docs (tier + why each loaded). Pass nodeCode (e.g. 'BCODA') to include that story's bible + its one register; pass text (scene/goal/conversation) to trigger topic docs by keyword and semantic embedding. This is how you load only the few docs that matter now instead of dumping hundreds.
@@ -189,11 +202,31 @@ Inspect the current Doc Context Stack working set (the docs resident in the rota
 
 - `nodeCode` (string, optional) — Optional node CODE whose working set to inspect.
 
+### `exclude_context_doc`
+
+Exclude a canon .md doc from the DocContextStack so it is never injected even if it would normally match. Identify the doc by relative path fragment or GUID. The override lasts 24 h or until remove_context_doc / clear_context is called.
+
+- `doc` (string, required) — Relative path fragment or GUID of the markdown doc to exclude.
+- `nodeSlug` (string, optional) — Optional story slug to scope the exclusion. Omit for session-global.
+
+### `get_context_status`
+
+Show all active context overrides (pins and excludes) for this session. Includes the doc path, action, scope (global or node), and expiry time.
+
+- _(no parameters)_
+
 ### `get_cost_report`
 
 Show the running token cost tally for the current MCP server session. Returns call count, input/output token estimates, and USD cost broken down by model. Token counts are estimated from text length (chars / 4) since the Legion transport does not expose Anthropic usage objects. Pass reset=true to clear the ledger.
 
 - `reset` (bool, optional) — If true, clear the ledger after reporting. Default false.
+
+### `get_liberty_report`
+
+Show the liberty analysis (Rule of Cool) for a single beat or all beats in a story. A 'liberty' is any creative departure from the beat goal or entity roster: entity_invention (name not in DB), tech_departure (GLMZ physics violated), or creative_departure (plot beyond the beat goal). Each liberty is scored CoolFactor 0–10: ≥8 → CANON-ADDITION-CANDIDATE finding, 5–7 → LIBERTY-CONSIDER advisory, ≤4 entity invention → LIBERTY-WARNING. Reports are written automatically after each beat write; this tool reads them.
+
+- `beatId` (string, optional) — Beat GUID to retrieve the report for that specific beat.
+- `slug` (string, optional) — Story slug (e.g. 'icfi') to retrieve all reports for that story, newest first.
 
 ### `get_markdown_file`
 
@@ -214,6 +247,13 @@ Recall (call up) the select few tracked markdown files relevant to a keyword, st
 
 - `keyword` (string, required) — Keyword to match against path/name/category (and body when includeContent=true).
 - `includeContent` (bool, optional) — Also search inside file bodies, not just names. Default false.
+
+### `remove_context_doc`
+
+Remove a specific pin or exclude override for a canon doc. Pass the same doc path/GUID and optional nodeSlug used when the override was created.
+
+- `doc` (string, required) — Relative path fragment or GUID of the markdown doc whose override to remove.
+- `nodeSlug` (string, optional) — Optional story slug the override was scoped to.
 
 ### `restore_markdown_file`
 

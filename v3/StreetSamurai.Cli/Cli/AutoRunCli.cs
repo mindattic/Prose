@@ -1,4 +1,4 @@
-﻿using Microsoft.EntityFrameworkCore;
+using Microsoft.EntityFrameworkCore;
 using StreetSamurai.Core.Data;
 using StreetSamurai.Core.Interfaces;
 using StreetSamurai.Core.Services;
@@ -9,8 +9,8 @@ namespace StreetSamurai.Cli;
 /// <c>ss --auto-run</c> — autonomous end-to-end node pipeline.
 ///
 /// Expands all empty beats in a node (or each chapter of a book-level node)
-/// via ProseWriterRouter, reflows each chapter, then fires a chapter-close review
-/// at the configured effort tier — no per-beat human approval required.
+/// via ProseWriterRouter, reflows each chapter, fires a chapter-close review,
+/// then runs a self-repair pass if the post-chapter lens audit finds BLOCKERs.
 ///
 /// Args (one of --slug / --id required):
 ///   --slug &lt;slug&gt;           Node slug (flat or book-level).
@@ -18,13 +18,27 @@ namespace StreetSamurai.Cli;
 ///   --effort draft|standard  Review tier per chapter (default: draft).
 ///   --dry-run                List beats/chapters to process without generating prose.
 ///   --force                  Re-generate beats that already have prose.
+///   --no-repair              Skip the post-chapter self-repair pass.
 /// </summary>
 public static class AutoRunCli
 {
+    private const int MaxRepairAttempts = 2;
+
+    private sealed record SessionStats
+    {
+        public int Written        { get; set; }
+        public int Skipped        { get; set; }
+        public int RepairAttempts { get; set; }
+        public int RepairSuccess  { get; set; }
+        public int GaveUp         { get; set; }
+        public int BlockersRemaining { get; set; }
+        public int ModeratesRemaining { get; set; }
+    }
+
     public static async Task<int> RunAsync(string[] args, IServiceProvider services)
     {
         string? slug = null, id = null, effort = "draft";
-        bool dryRun = false, force = false, allowVotes = false;
+        bool dryRun = false, force = false, allowVotes = false, noRepair = false;
         int forks = 0, targetWords = 0;
 
         for (int i = 0; i < args.Length; i++)
@@ -36,16 +50,17 @@ public static class AutoRunCli
                 case "--effort": if (i + 1 < args.Length) effort = args[++i]; break;
                 case "--forks":  if (i + 1 < args.Length && int.TryParse(args[++i], out var f)) forks = Math.Clamp(f, 0, 5); break;
                 case "--target-words": if (i + 1 < args.Length && int.TryParse(args[++i], out var tw)) targetWords = Math.Clamp(tw, 0, 2500); break;
-                case "--dry-run": dryRun = true; break;
-                case "--force":   force  = true; break;
+                case "--dry-run":    dryRun    = true; break;
+                case "--force":      force     = true; break;
                 case "--allow-votes": allowVotes = true; break;
+                case "--no-repair":  noRepair  = true; break;
             }
         }
 
         if (string.IsNullOrWhiteSpace(slug) && string.IsNullOrWhiteSpace(id))
         {
             Console.Error.WriteLine("[auto-run] One of --slug or --id is required.");
-            Console.Error.WriteLine("Usage: ss --auto-run (--slug <slug> | --id <guid>) [--effort draft|standard] [--dry-run] [--force]");
+            Console.Error.WriteLine("Usage: ss --auto-run (--slug <slug> | --id <guid>) [--effort draft|standard] [--dry-run] [--force] [--no-repair]");
             return 1;
         }
 
@@ -56,12 +71,15 @@ public static class AutoRunCli
             return 1;
         }
 
-        var dbFactory   = services.GetRequiredService<IDbContextFactory<StreetSamuraiDbContext>>();
-        var router      = services.GetRequiredService<ProseWriterRouter>();
-        var workbench   = services.GetRequiredService<NodeWorkbenchService>();
-        var reflow      = services.GetRequiredService<ProseReflowService>();
+        var dbFactory    = services.GetRequiredService<IDbContextFactory<StreetSamuraiDbContext>>();
+        var router       = services.GetRequiredService<ProseWriterRouter>();
+        var workbench    = services.GetRequiredService<NodeWorkbenchService>();
+        var reflow       = services.GetRequiredService<ProseReflowService>();
         var chapterClose = services.GetRequiredService<ChapterCloseProcessorService>();
-        var canonDb     = services.GetRequiredService<IDatabaseService>();
+        var canonDb      = services.GetRequiredService<IDatabaseService>();
+        var beatAudit    = services.GetRequiredService<BeatAuditService>();
+        var beatRepair   = services.GetRequiredService<BeatRepairService>();
+        var ledger       = services.GetRequiredService<TokenLedger>();
 
         string storyBible;
         try { storyBible = canonDb.GetLiteraryRulesPrompt() ?? ""; }
@@ -85,9 +103,6 @@ public static class AutoRunCli
             nodeSlug  = node.Slug ?? nodeId.ToString();
             nodeKind  = node.Kind ?? "episode";
 
-            // The story-level seed is the binding premise. Without it at prompt-top the
-            // writer drifts toward genre priors (thrillers invent conspiracies, disasters
-            // invent collapses) no matter what the doc stack says further down.
             if (!string.IsNullOrWhiteSpace(node.Seed))
                 storyBible = storyBible
                     + "\n\n=== STORY PREMISE (BINDING — every beat must comply; contradicting it is a defect) ===\n"
@@ -95,7 +110,11 @@ public static class AutoRunCli
                     + "\nInvent NO named characters beyond those in the premise; background residents stay unnamed.";
         }
 
-        Console.WriteLine($"[auto-run] Node: \"{nodeTitle}\" ({nodeSlug})  kind={nodeKind}  effort={effort}{(forks >= 2 ? $"  forks={forks}" : "")}");
+        Console.WriteLine($"[auto-run] Node: \"{nodeTitle}\" ({nodeSlug})  kind={nodeKind}  effort={effort}{(forks >= 2 ? $"  forks={forks}" : "")}{(noRepair ? "  --no-repair" : "")}");
+
+        var stats    = new SessionStats();
+        var started  = DateTime.UtcNow;
+        var costBefore = ledger.GetSummary().TotalCost;
 
         // Determine if this is a book (has chapter children) or a flat node
         List<(Guid Id, string Title, string Slug)> chapters;
@@ -117,63 +136,131 @@ public static class AutoRunCli
 
         if (isBook)
         {
-            int totalExpanded = 0, totalChapters = 0;
-            foreach (var (chapterId, chapterTitle, chapterSlug) in chapters)
+            int totalChapters = 0;
+            foreach (var (chapterId, chapterTitle, _) in chapters)
             {
                 Console.WriteLine();
                 Console.WriteLine($"[auto-run] ── Chapter {totalChapters + 1}: \"{chapterTitle}\" ──");
-                var exp = await ExpandBeatNodesAsync(chapterId, storyBible, router, workbench, force, dryRun, targetWords);
-                totalExpanded += exp;
-
-                if (!dryRun && exp > 0)
-                {
-                    Console.Write("[auto-run]   reflow… ");
-                    try
-                    {
-                        var rr = await reflow.ReflowNodeAsync(chapterId, apply: true);
-                        Console.WriteLine($"{rr.Changed}/{rr.Total} beats updated.");
-                    }
-                    catch (Exception ex) { Console.WriteLine($"failed (continuing): {ex.Message}"); }
-
-                    Console.WriteLine("[auto-run]   chapter close processing…");
-                    var beats = await workbench.GetOrderedBeatsAsync(chapterId);
-                    var prose = string.Join("\n\n", beats.Select(b => b.Beat.Text).Where(t => !string.IsNullOrWhiteSpace(t)));
-                    var closeResult = await chapterClose.ProcessAsync(nodeId, chapterId, totalChapters, prose, forks, allowVotes: allowVotes);
-                    PrintCloseResult(closeResult);
-                }
+                await ExpandAndRepairAsync(chapterId, nodeId, storyBible, router, workbench, reflow,
+                    chapterClose, beatAudit, beatRepair, stats, force, dryRun, targetWords,
+                    forks, allowVotes, noRepair, totalChapters);
                 totalChapters++;
             }
             Console.WriteLine();
-            Console.WriteLine($"[auto-run] Done: {totalExpanded} beats expanded across {totalChapters} chapters.");
+            Console.WriteLine($"[auto-run] Done: {stats.Written} beats expanded across {totalChapters} chapters.");
         }
         else
         {
-            var exp = await ExpandBeatNodesAsync(nodeId, storyBible, router, workbench, force, dryRun, targetWords);
-
-            if (!dryRun && exp > 0)
-            {
-                Console.Write("[auto-run] reflow… ");
-                try
-                {
-                    var rr = await reflow.ReflowNodeAsync(nodeId, apply: true);
-                    Console.WriteLine($"{rr.Changed}/{rr.Total} beats updated.");
-                }
-                catch (Exception ex) { Console.WriteLine($"failed (continuing): {ex.Message}"); }
-
-                Console.WriteLine("[auto-run] chapter close processing…");
-                var beats = await workbench.GetOrderedBeatsAsync(nodeId);
-                var prose = string.Join("\n\n", beats.Select(b => b.Beat.Text).Where(t => !string.IsNullOrWhiteSpace(t)));
-                var closeResult = await chapterClose.ProcessAsync(nodeId, nodeId, 0, prose, forks, allowVotes: allowVotes);
-                PrintCloseResult(closeResult);
-            }
-
-            Console.WriteLine($"[auto-run] Done: {exp} beats expanded.");
+            await ExpandAndRepairAsync(nodeId, nodeId, storyBible, router, workbench, reflow,
+                chapterClose, beatAudit, beatRepair, stats, force, dryRun, targetWords,
+                forks, allowVotes, noRepair, chapterIndex: 0);
+            Console.WriteLine($"[auto-run] Done: {stats.Written} beats expanded.");
         }
 
+        PrintSessionReport(nodeTitle, nodeSlug, stats, started, costBefore, ledger);
         return 0;
     }
 
-    private static async Task<int> ExpandBeatNodesAsync(
+    private static async Task ExpandAndRepairAsync(
+        Guid chapterId, Guid nodeId, string storyBible,
+        ProseWriterRouter router, NodeWorkbenchService workbench,
+        ProseReflowService reflow, ChapterCloseProcessorService chapterClose,
+        BeatAuditService beatAudit, BeatRepairService beatRepair,
+        SessionStats stats,
+        bool force, bool dryRun, int targetWords,
+        int forks, bool allowVotes, bool noRepair,
+        int chapterIndex)
+    {
+        var (written, skipped) = await ExpandBeatNodesAsync(chapterId, storyBible, router, workbench, force, dryRun, targetWords);
+        stats.Written  += written;
+        stats.Skipped  += skipped;
+
+        if (dryRun || written == 0) return;
+
+        Console.Write("[auto-run]   reflow… ");
+        try
+        {
+            var rr = await reflow.ReflowNodeAsync(chapterId, apply: true);
+            Console.WriteLine($"{rr.Changed}/{rr.Total} beats updated.");
+        }
+        catch (Exception ex) { Console.WriteLine($"failed (continuing): {ex.Message}"); }
+
+        Console.WriteLine("[auto-run]   chapter close processing…");
+        var beats = await workbench.GetOrderedBeatsAsync(chapterId);
+        var prose = string.Join("\n\n", beats.Select(b => b.Beat.Text).Where(t => !string.IsNullOrWhiteSpace(t)));
+        var closeResult = await chapterClose.ProcessAsync(nodeId, chapterId, chapterIndex, prose, forks, allowVotes: allowVotes);
+        PrintCloseResult(closeResult);
+
+        if (noRepair) return;
+
+        // Self-repair pass: run lens audits; fix BLOCKERs with beat-targeted re-writes.
+        Console.WriteLine("[auto-run]   repair audit…");
+        BeatAuditService.BeatAuditResult? audit = null;
+        try { audit = await beatAudit.AuditAsync(chapterId); }
+        catch (Exception ex) { Console.WriteLine($"[auto-run]   audit failed (skipping repair): {ex.Message}"); return; }
+
+        if (audit.FailedLensCount > 0)
+            Console.WriteLine($"[auto-run]   ⚠ {audit.FailedLensCount}/3 audit lenses failed — coverage degraded; repair may miss defects.");
+
+        if (audit.IsClean)
+        {
+            Console.WriteLine("[auto-run]   audit clean — no blockers.");
+            return;
+        }
+
+        Console.WriteLine($"[auto-run]   {audit.Blockers.Count} blocker(s) found — starting repair pass…");
+
+        var ordered       = await workbench.GetOrderedBeatsAsync(chapterId);
+        var beatsByNumber = ordered.ToDictionary(ob => ob.Beat.Number, ob => ob);
+
+        var beatBlockers = audit.Blockers
+            .Where(i => i.Beat.HasValue)
+            .GroupBy(i => i.Beat!.Value)
+            .ToList();
+
+        foreach (var group in beatBlockers)
+        {
+            if (!beatsByNumber.TryGetValue(group.Key, out var ob)) continue;
+            var beatId = ob.Beat.Id;
+            var repaired = false;
+
+            for (var attempt = 0; attempt < MaxRepairAttempts; attempt++)
+            {
+                stats.RepairAttempts++;
+                Console.Write($"[auto-run]   repair beat #{group.Key} (attempt {attempt + 1}/{MaxRepairAttempts})… ");
+                try
+                {
+                    var newText = await beatRepair.RepairAsync(beatId, chapterId, group.ToList());
+                    if (string.IsNullOrWhiteSpace(newText)) { Console.WriteLine("empty — skipped."); break; }
+
+                    await workbench.UpdateBeatTextAsync(beatId, newText, expectedUpdatedAt: null);
+                    Console.WriteLine($"ok ({newText.Length} chars).");
+                    repaired = true;
+                    break;
+                }
+                catch (Exception ex) { Console.WriteLine($"failed: {ex.Message}"); }
+            }
+
+            if (repaired) stats.RepairSuccess++;
+            else stats.GaveUp++;
+        }
+
+        // Final audit tally after repair.
+        try
+        {
+            var final = await beatAudit.AuditAsync(chapterId);
+            stats.BlockersRemaining  += final.Blockers.Count;
+            stats.ModeratesRemaining += final.Moderates.Count;
+            Console.WriteLine($"[auto-run]   post-repair: {final.Blockers.Count} blocker(s) · {final.Moderates.Count} moderate(s) remaining.");
+        }
+        catch (Exception ex)
+        {
+            // [SS-AutoRun-001] Post-repair audit failed — counts in session report will be incomplete.
+            Console.WriteLine($"[auto-run]   post-repair audit failed: {ex.Message}");
+        }
+    }
+
+    private static async Task<(int Written, int Skipped)> ExpandBeatNodesAsync(
         Guid nodeId,
         string storyBible,
         ProseWriterRouter router,
@@ -184,7 +271,7 @@ public static class AutoRunCli
     {
         var ordered = await workbench.GetOrderedBeatsAsync(nodeId);
         var sceneSoFar = "";
-        int expanded = 0;
+        int expanded = 0, skipped = 0;
         int beatIndex = 0;
 
         foreach (var ob in ordered)
@@ -196,6 +283,7 @@ public static class AutoRunCli
             {
                 sceneSoFar += "\n\n" + beat.Text;
                 beatIndex++;
+                skipped++;
                 continue;
             }
 
@@ -215,7 +303,7 @@ public static class AutoRunCli
             {
                 var ctx = new BeatContext
                 {
-                    NodeId          = nodeId,
+                    NodeId            = nodeId,
                     StoryBibleContext = storyBible,
                     SceneSoFar        = sceneSoFar.Length > 6000 ? sceneSoFar[^6000..] : sceneSoFar,
                     BeatGoal          = goal,
@@ -244,12 +332,40 @@ public static class AutoRunCli
 
         if (!dryRun)
             Console.WriteLine($"[auto-run]   {expanded}/{ordered.Count} beats expanded.");
-        return expanded;
+        return (expanded, skipped);
+    }
+
+    private static void PrintSessionReport(
+        string title, string slug,
+        SessionStats stats,
+        DateTime started,
+        double costBefore,
+        TokenLedger ledger)
+    {
+        var elapsed    = DateTime.UtcNow - started;
+        var actualCost = ledger.GetSummary().TotalCost - costBefore;
+        var separator  = new string('═', 47);
+
+        Console.WriteLine();
+        Console.WriteLine(separator);
+        Console.WriteLine($"  Auto-Run Session Report");
+        Console.WriteLine($"  Story   : {title} ({slug})");
+        Console.WriteLine($"  Written : {stats.Written,-6} Skipped : {stats.Skipped}");
+        if (stats.RepairAttempts > 0)
+            Console.WriteLine($"  Repaired: {stats.RepairSuccess,-6} Gave up : {stats.GaveUp}  (of {stats.RepairAttempts} attempt(s))");
+        if (stats.BlockersRemaining > 0 || stats.ModeratesRemaining > 0)
+            Console.WriteLine($"  Remaining: {stats.BlockersRemaining} BLOCKER · {stats.ModeratesRemaining} MODERATE");
+        Console.WriteLine($"  Elapsed : {FormatElapsed(elapsed)}");
+        if (actualCost > 0)
+            Console.WriteLine($"  Cost    : ${actualCost:F4}");
+        if (stats.Written > 0)
+            Console.WriteLine($"  Liberty : ss --liberty-report --slug {slug}  (Rule of Cool; runs async)");
+        Console.WriteLine(separator);
     }
 
     private static void PrintCloseResult(ChapterCloseResult r)
     {
-        var tier = r.ReviewTier switch { 1 => "pass (no panel)", 2 => "draft panel", 3 => "standard panel", _ => "?" };
+        var tier  = r.ReviewTier switch { 1 => "pass (no panel)", 2 => "draft panel", 3 => "standard panel", _ => "?" };
         var panel = r.ReviewTier >= 2 ? $" → panel {r.PanelScore:0.0}/100 ({r.PanelBallotsSaved} ballots)" : "";
         Console.WriteLine($"[auto-run]   quick={r.ChapterScore}/100 tier={tier}{panel}  adherence={r.AdherenceScore}/100  contradictions={r.ContradictionCount}");
         if (r.RecalibratedBeats > 0)
@@ -258,5 +374,12 @@ public static class AutoRunCli
             Console.WriteLine($"[auto-run]   fork: arc {r.ForkWinnerIndex} selected (score {r.ForkWinnerScore}/100)  {r.ForkBeatsUpdated} next-chapter beats updated");
         foreach (var w in r.Warnings)
             Console.WriteLine($"[auto-run]   ⚠ {w}");
+    }
+
+    private static string FormatElapsed(TimeSpan t)
+    {
+        if (t.TotalSeconds < 60)  return $"{t.TotalSeconds:F1}s";
+        if (t.TotalMinutes < 60)  return $"{(int)t.TotalMinutes}m {t.Seconds}s";
+        return $"{(int)t.TotalHours}h {t.Minutes}m";
     }
 }

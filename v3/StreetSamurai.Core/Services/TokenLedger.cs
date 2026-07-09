@@ -45,6 +45,7 @@ public sealed class TokenLedger
     /// <summary>
     /// Records one LLM call. Token counts are estimated from text length (chars / 4).
     /// Call this from <see cref="LlmRouter"/> after each successful generation.
+    /// Prefer <see cref="RecordActual"/> when the API response surfaces exact token counts.
     /// </summary>
     public void Record(string provider, string model, string inputText, string outputText)
     {
@@ -66,6 +67,27 @@ public sealed class TokenLedger
             OutputTokens: outputTok,
             InputCost:    inputCost,
             OutputCost:   outputCost));
+    }
+
+    /// <summary>
+    /// Records one LLM call using exact token counts from the API response.
+    /// Use this overload when the transport surfaces Anthropic usage objects —
+    /// it is more accurate than the chars/4 estimation in <see cref="Record"/>.
+    /// </summary>
+    public void RecordActual(string provider, string model, int inputTokens, int outputTokens)
+    {
+        var pricing = Pricing.TryGetValue(model, out var p)
+            ? p
+            : Pricing[LlmModels.Haiku];
+
+        entries.Add(new LedgerEntry(
+            At:          DateTimeOffset.UtcNow,
+            Provider:    provider,
+            Model:       model,
+            InputTokens:  Math.Max(1, inputTokens),
+            OutputTokens: Math.Max(1, outputTokens),
+            InputCost:    Math.Max(1, inputTokens)  / 1_000_000.0 * pricing.InputPerMtok,
+            OutputCost:   Math.Max(1, outputTokens) / 1_000_000.0 * pricing.OutputPerMtok));
     }
 
     /// <summary>Returns a snapshot of all recorded entries, oldest first.</summary>

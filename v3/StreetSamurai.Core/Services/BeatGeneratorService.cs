@@ -165,6 +165,12 @@ public class BeatGeneratorService
         var plotEventsBlock = !string.IsNullOrWhiteSpace(context.PlotEventsContext)
             ? $"\n\n{context.PlotEventsContext}"
             : "";
+        var repairConstraintBlock = !string.IsNullOrWhiteSpace(context.RepairConstraintContext)
+            ? $"MANDATORY REPAIR CONSTRAINTS — correct every item listed before writing anything else:\n{context.RepairConstraintContext}\n\n"
+            : "";
+        var entityPreCheckBlock = !string.IsNullOrWhiteSpace(context.EntityPreCheckWarnings)
+            ? context.EntityPreCheckWarnings
+            : "";
 
         // Stable prefix: content identical for every beat in the same story session.
         // Sent as an Anthropic ephemeral cache block — 60-80% input token saving after beat 1.
@@ -182,7 +188,7 @@ public class BeatGeneratorService
 
         // Dynamic suffix: per-beat context that varies and must not be cached.
         var dynamicSystem = $"""
-            WORLD CONTEXT (characters, locations, equipment, relationships — use as canon facts):
+            {repairConstraintBlock}{entityPreCheckBlock}WORLD CONTEXT (characters, locations, equipment, relationships — use as canon facts):
             {context.RelationshipContext}
             {(context.XRayContext.Length > 0 ? "\nSCENE X-RAY — entities on screen RIGHT NOW. Every character below speaks in THEIR OWN documented register, not the narrator's:\n" + context.XRayContext : "")}{continuityBlock}
             {(context.EntityStackContext.Length > 0 ? "\nENTITY WORKING MEMORY — proper nouns active in this story thread and their canon facts. Treat these as hard constraints; do not contradict them:\n" + context.EntityStackContext : "")}
@@ -1012,6 +1018,22 @@ public record BeatContext
     /// works). Raises the generation maxTokens accordingly.
     /// </summary>
     public int TargetWords { get; init; } = 0;
+
+    /// <summary>
+    /// Mandatory self-repair constraints injected at the top of the dynamic system prompt.
+    /// Set by <see cref="BeatRepairService"/> when the audit flagged specific defects that
+    /// MUST be fixed before anything else. Empty = normal generation with no repair overlay.
+    /// When non-empty, BeatGeneratorService prepends a MANDATORY REPAIR CONSTRAINTS block
+    /// above all world-context so the model addresses the defects first.
+    /// </summary>
+    public string RepairConstraintContext { get; init; } = "";
+
+    /// <summary>
+    /// Soft entity pre-check warnings injected before world context.
+    /// Populated by ProseWriterRouter when names in BeatGoal are not found in the WorldGraph.
+    /// Empty = all names verified (or pre-check disabled). Does NOT block generation.
+    /// </summary>
+    public string EntityPreCheckWarnings { get; init; } = "";
 }
 
 /// <summary>
