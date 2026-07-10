@@ -102,7 +102,7 @@ public class NodeTools
             if (kind.Equals("story", StringComparison.OrdinalIgnoreCase))
                 q = q.Where(s => s.Kind == "story" || s.Kind == "book");
             else
-                q = q.Where(s => s.Kind == kind);
+                q = q.Where(s => s.Kind == kind.ToLowerInvariant());
         }
         var rows = await q.OrderBy(s => s.Kind).ThenBy(s => s.Title).Take(limit).ToListAsync();
 

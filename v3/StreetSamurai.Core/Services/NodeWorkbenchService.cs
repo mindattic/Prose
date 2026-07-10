@@ -189,7 +189,9 @@ public class NodeWorkbenchService
         // Fire-and-forget: re-index which entities this beat mentions so
         // future entity saves can propagate EntityStale to this beat.
         if (ramification != null)
-            _ = Task.Run(() => ramification.IndexBeatMentionsAsync(beatId, trimmed), CancellationToken.None);
+            _ = Task.Run(() => ramification.IndexBeatMentionsAsync(beatId, trimmed), CancellationToken.None)
+                .ContinueWith(t => log.LogError(t.Exception, "IndexBeatMentionsAsync background task failed"),
+                    TaskContinuationOptions.OnlyOnFaulted);
 
         // Fire-and-forget: auto-engage prose quality checks. Resolve slug
         // here while the db context is still open; the validator only needs
@@ -200,11 +202,13 @@ public class NodeWorkbenchService
             beatSlug = await db.BeatNodes.AsNoTracking()
                 .Where(sb => sb.BeatId == beatId && sb.IsEnabled)
                 .Join(db.Nodes, sb => sb.NodeId, s => s.Id, (_, s) => s.Slug)
-                .FirstOrDefaultAsync(CancellationToken.None);
+                .FirstOrDefaultAsync(ct);
         }
 
         if (postBeatValidator != null && beatSlug != null)
-            _ = Task.Run(() => postBeatValidator.QuickValidateAsync(beatSlug, trimmed), CancellationToken.None);
+            _ = Task.Run(() => postBeatValidator.QuickValidateAsync(beatSlug, trimmed), CancellationToken.None)
+                .ContinueWith(t => log.LogError(t.Exception, "QuickValidateAsync background task failed"),
+                    TaskContinuationOptions.OnlyOnFaulted);
 
         if (semanticFidelity != null && beatSlug != null && !string.IsNullOrWhiteSpace(beat.Description))
         {
@@ -212,8 +216,10 @@ public class NodeWorkbenchService
             var slug2    = beatSlug;
             var synopsis = beat.Description!;
             _ = Task.Run(
-                () => semanticFidelity.CheckBeatIntentDriftAsync(number, slug2, trimmed, synopsis),
-                CancellationToken.None);
+                    () => semanticFidelity.CheckBeatIntentDriftAsync(number, slug2, trimmed, synopsis),
+                    CancellationToken.None)
+                .ContinueWith(t => log.LogError(t.Exception, "CheckBeatIntentDriftAsync background task failed"),
+                    TaskContinuationOptions.OnlyOnFaulted);
         }
     }
 
@@ -629,8 +635,16 @@ public class NodeWorkbenchService
             else
             {
                 var pos = ordered.FindIndex(sb => sb.BeatId == afterBeatId.Value);
-                prevSk = ordered[pos].SortKey;
-                nextSk = pos + 1 < ordered.Count ? ordered[pos + 1].SortKey : prevSk + 100.0;
+                if (pos < 0)
+                {
+                    prevSk = ordered.Count > 0 ? ordered[^1].SortKey : 0.0;
+                    nextSk = prevSk + 100.0;
+                }
+                else
+                {
+                    prevSk = ordered[pos].SortKey;
+                    nextSk = pos + 1 < ordered.Count ? ordered[pos + 1].SortKey : prevSk + 100.0;
+                }
             }
         }
 

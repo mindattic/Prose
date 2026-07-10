@@ -23,11 +23,11 @@ public static class GearCheckCli
             {
                 case "--slug": nodeSlug = args[i + 1]; i++; break;
                 case "--character":
-                    if (Guid.TryParse(args[i + 1], out var g)) { characterId = g; i++; }
+                    if (Guid.TryParse(args[i + 1], out var g)) characterId = g;
                     i++;
                     break;
                 case "--story-time":
-                    if (DateTime.TryParse(args[i + 1], out var dt)) { storyTime = dt; i++; }
+                    if (DateTime.TryParse(args[i + 1], out var dt)) storyTime = dt;
                     i++;
                     break;
             }

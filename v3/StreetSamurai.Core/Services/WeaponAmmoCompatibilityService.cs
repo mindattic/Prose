@@ -61,7 +61,7 @@ public class WeaponAmmoCompatibilityService
         Guid ammoEntityId,
         CancellationToken ct = default)
     {
-        using var db = dbFactory.CreateDbContext();
+        await using var db = await dbFactory.CreateDbContextAsync(ct);
 
         var fromWeaponAmmoTypes = await db.WeaponAmmunitionTypes.AsNoTracking()
             .Where(w => w.AmmunitionId == ammoEntityId)
@@ -87,7 +87,7 @@ public class WeaponAmmoCompatibilityService
         Guid weaponId,
         CancellationToken ct = default)
     {
-        using var db = dbFactory.CreateDbContext();
+        await using var db = await dbFactory.CreateDbContextAsync(ct);
 
         var weapon = await db.Weapons.AsNoTracking()
             .Where(w => w.Id == weaponId)
@@ -155,7 +155,7 @@ public class WeaponAmmoCompatibilityService
         DateTime? asOfDate = null,
         CancellationToken ct = default)
     {
-        using var db = dbFactory.CreateDbContext();
+        await using var db = await dbFactory.CreateDbContextAsync(ct);
 
         var character = await db.Entities.AsNoTracking()
             .Where(e => e.Id == characterId)
