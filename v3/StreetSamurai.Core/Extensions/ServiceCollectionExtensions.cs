@@ -214,6 +214,7 @@ public static class ServiceCollectionExtensions
         services.AddSingleton(sp => new LabSpecimenRepository(Db(sp)));
         services.AddSingleton(sp => new FlyoverEntityRepository(Db(sp)));
         services.AddSingleton(sp => new PsionicRepository(Db(sp)));
+        services.AddSingleton(sp => new SyntheticLifeRepository(Db(sp)));
         // Bible singletons — explicit factory routes through the SQL Settings
         // ctor. Without this, DI sees both the SQL ctor and the IPathProvider
         // test-fixture ctor and throws "ambiguous constructors".
@@ -484,6 +485,7 @@ public static class ServiceCollectionExtensions
             sp.GetRequiredService<DatabaseService>(),
             sp.GetRequiredService<Microsoft.Extensions.Logging.ILogger<BookOutlineService>>()));
         services.AddSingleton<CoWriterService>();
+        services.AddSingleton<ConversationalWriterService>();
         services.AddSingleton<LastPromptStore>();
         // Graph builds from canon on first access. With the SQL cutover, freshness
         // is driven by Records.UpdatedAt — the IDbContextFactory ctor receives the

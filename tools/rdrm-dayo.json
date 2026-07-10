@@ -1,0 +1,62 @@
+{
+  "type": "character",
+  "name": "Dayo Ferreira",
+  "species": "human",
+  "gender": "male",
+  "pronouns": "he/him",
+  "age": 42,
+  "status": "alive",
+  "role": "Gray-market compound supplier and entertainment-circuit broker, Milwaukee–Chicago corridor",
+  "affiliation": "Independent",
+  "description": "A slim Nigerian-Brazilian man in early forties with cedar-brown skin, a low fade, and a matte-black jacket that costs more than the Velvet Tine's PA system. He has been supplying Fenris and similar acts in the Milwaukee–Chicago corridor for nearly a decade. His business model sits at the legal-gray intersection of entertainment, hospitality, and controlled-substance supply — what some circuits call a 'provider,' what the law would call a pimp and a dealer, what his clients call 'Dayo.' He speaks very little. The goods do the talking. He arrives with a cold-box of compounds and company, sets it on the table, opens it, and waits. The gesture is the whole thing. He is not a villain. He exists in an economic ecosystem that produces him, and he is very good at existing in it. His composure when Koss's crew breaks through the door is the composure of a man who has done the math on exactly how often this happens in his line of work — the math was optimistic by one incident.",
+  "narrative_function": "The mechanism by which Faith and the other party guests arrive at the Velvet Tine. His shooting provides Mona's cover (she hides under his unconscious body). His survival provides a future story hook.",
+  "psychology": {
+    "secret": "He has been shot before. Not like this.",
+    "core_wound": "He has made his peace with the life he lives by deciding never to need it to be different.",
+    "desire": "Not to need anything from anyone.",
+    "fear": "Owing someone."
+  },
+  "speech_patterns": {
+    "vocabulary": "Precise, sparse. He selects words with the deliberation of someone who has learned that talking too much is a liability.",
+    "cadence": "Slow and complete. No filler. Sentences arrive finished.",
+    "subtext": "Almost everything. Dayo communicates in implication.",
+    "under_pressure": "Gets quieter. Does not perform fear.",
+    "intimacy_register": "Does not exist in observable form."
+  },
+  "physical_description": {
+    "height_cm": 183,
+    "build": "Slim, controlled. The posture of someone who has spent time in environments where physical confidence is currency.",
+    "hair_color": "Black",
+    "hair_style": "Low fade, clean line",
+    "eye_color": "Dark brown",
+    "skin_tone": "Cedar brown, Nigerian-Brazilian heritage",
+    "complexion": "Clear",
+    "visible_augmentations": "None visible. Whether there is anything concealed is deliberately ambiguous.",
+    "posture_movement": "Economy of motion. Very still when not moving. Moves purposefully when he does."
+  },
+  "genetic_ancestry": {
+    "Yoruba Nigerian": 0.55,
+    "Brazilian (mixed Portuguese/African)": 0.45
+  },
+  "operating_territory": {
+    "home": "Milwaukee, GLMZ (The Low, Zone 4-adjacent)",
+    "range": "Milwaukee–Chicago corridor; occasional GLMZ core"
+  },
+  "story_hooks": [
+    "His crew was targeted. Someone who knew his route tipped Koss. He will want to know who.",
+    "He survives. He regains consciousness before the paramedics leave. His first question to Mona when he can speak: 'Who was the one they couldn't find?'"
+  ],
+  "tags": ["glmz", "provider", "gray-market", "milwaukee", "rdrm-strand", "fenris-adjacent"],
+  "relationships": [
+    {
+      "name": "Fenris",
+      "type": "supplier",
+      "notes": "Has supplied the band for approximately four years. Professional relationship only."
+    },
+    {
+      "name": "Faith Larson",
+      "type": "acquaintance (circuit)",
+      "notes": "Brought her to the Tine. Does not know what she is."
+    }
+  ]
+}

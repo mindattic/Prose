@@ -13,6 +13,7 @@ public class TriviaService(
     WeaponryRepository weaponRepo,
     CyberwareRepository cyberRepo,
     VocabularyRepository vocabRepo,
+    SyntheticLifeRepository synthRepo,
     TechnologyRepository techRepo,
     FactionRepository factionRepo,
     EquipmentRepository equipRepo,
@@ -80,6 +81,12 @@ public class TriviaService(
             var desc = FirstSentence(d.Description);
             if (desc.Length > 20)
                 pool.Add($"{d.Name} — {desc}");
+        }
+
+        foreach (var e in synthRepo.GetAll().OrderBy(_ => Random.Shared.Next()))
+        {
+            if (pool.Count >= 500) break;
+            pool.Add($"An E.L.F. called '{e.Name}' ({e.Disposition}) inhabits {e.Location}. {FirstSentence(e.ObservedBehavior)}");
         }
 
         foreach (var v in vocabRepo.GetAll().OrderBy(_ => Random.Shared.Next()))

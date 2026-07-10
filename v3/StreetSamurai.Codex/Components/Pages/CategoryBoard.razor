@@ -28,6 +28,7 @@
 @inject LabSpecimenRepository LabSpecimenRepo
 @inject FlyoverEntityRepository FlyoverRepo
 @inject PsionicRepository PsionicRepo
+@inject SyntheticLifeRepository SynthRepo
 @inject IWriteAccessProvider Access
 
 
@@ -105,6 +106,7 @@ else
                 new("bi-gem",                 "/materials",       "Materials",       MaterialRepo.Count(), false, "Construction materials and their properties: ferrocement, smart polymers, carbon weave, etc."),
                 new("bi-cpu",                 "/technology",      "Technology",      TechRepo.Count(), false, "Tech concepts and systems: BCI, NeoCortex, ballistic precognition, the network layer."),
                 new("bi-robot",               "/automata",        "Automata",        AutomatonRepo.Count(), false, "Autonomous machines — NOT synthetic life. Iowan Behemoths, security drones, factory units."),
+                new("bi-broadcast",           "/synthetics",      "Synthetic Life",  SynthRepo.Count(), false, "E.L.F.s (Electronic Life Forms), Rogue AIs, and Superminds — synthetic intelligence that exists outside the shell/automaton boundary."),
                 new("bi-eyedropper",          "/specimens",       "Lab Specimens",   LabSpecimenRepo.Count(), false, "Captured / cataloged biological samples studied in corp labs and academic facilities. The strange biology of the post-Collapse world."),
                 new("bi-bug",                 "/wasteland",       "Wasteland",       FlyoverRepo.Count(), false, "Flyover entities — the wildlife (and worse) that survives outside the corridor. Mutated fauna, drift-zone creatures, undocumented species."),
                 new("bi-book",                "/rules",           "Universe Rules",     0, true, "Hard prose constraints (literary_rules.json) injected into every generation call as NON-NEGOTIABLE."),

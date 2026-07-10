@@ -1,0 +1,49 @@
+{
+  "type": "character",
+  "name": "Kostas Mirković",
+  "species": "human",
+  "gender": "male",
+  "pronouns": "he/him",
+  "age": 46,
+  "status": "alive",
+  "role": "Professional crew operator, soft-target robbery and extortion, Milwaukee Low",
+  "affiliation": "Independent (crew operator)",
+  "description": "Handle: Koss. Serbian-Greek origin, mid-forties, compact and dark. Runs a crew that targets soft-money operations in Milwaukee's Low — musicians, artists, and suppliers after payday shows. The work is professional, quiet, and rarely makes the Continuity Office record because his targets rarely report. He knows venues, knows the circuits, knows exactly who will be in which green room and when. His register has no performance in it. He does not threaten. He states. He does not hurry. He waits. The calm kind of dangerous — the kind that has had time to decide everything important before you were in the room. In the RDRM standoff: Koss made the decision to shoot before Ethan walked back in. The decision was operational, not emotional. Faith reads this and understands that it is not a bluff and cannot be negotiated. She tells Ethan now. He fires wide. She catches part of it. He goes down. He is stopped, not killed.",
+  "narrative_function": "The antagonist. His professional calm is the engine of the third act's tension. Faith reads his decision and the reading is what makes the standoff non-negotiable. He is not a monster — he is a professional whose profession requires certain decisions, and he has made the relevant one.",
+  "psychology": {
+    "secret": "He has never enjoyed it. This is not the same as remorse.",
+    "core_wound": "He learned early that the alternative to being the kind of man who makes certain decisions is being the kind of man those decisions get made about.",
+    "desire": "To run an operation cleanly. Tonight was not clean.",
+    "fear": "Improvisation."
+  },
+  "speech_patterns": {
+    "vocabulary": "Flat, functional. No ornamentation.",
+    "cadence": "Even. Complete sentences. No question unless he already knows the answer.",
+    "subtext": "Minimal. He says what he means.",
+    "under_pressure": "Identical to his baseline. This is the frightening thing.",
+    "intimacy_register": "Does not apply."
+  },
+  "physical_description": {
+    "height_cm": 178,
+    "build": "Compact, dense. Not visibly augmented. Carries himself with the particular stillness of someone who has made all the relevant decisions.",
+    "hair_color": "Black, close-cut",
+    "eye_color": "Dark",
+    "skin_tone": "Medium olive, Serbian-Greek",
+    "visible_augmentations": "None visible.",
+    "posture_movement": "Economical. Does not shift his weight without purpose."
+  },
+  "genetic_ancestry": {
+    "Serbian": 0.55,
+    "Greek": 0.45
+  },
+  "operating_territory": {
+    "home": "Milwaukee, The Low",
+    "range": "Milwaukee–Chicago corridor lower zones"
+  },
+  "story_hooks": [
+    "He is stopped but not dead. He will eventually leave whatever medical facility or holding situation he ends up in. He will want to know who came back for the band and who helped them.",
+    "His crew tipped him to the Tine tonight via an information source he trusts. That source is now compromised by events."
+  ],
+  "tags": ["glmz", "antagonist", "crew-operator", "milwaukee", "rdrm-strand", "professional-criminal"],
+  "relationships": []
+}

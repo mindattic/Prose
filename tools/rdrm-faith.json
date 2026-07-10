@@ -1,0 +1,64 @@
+{
+  "type": "character",
+  "name": "Faith Larson",
+  "species": "human",
+  "gender": "female",
+  "pronouns": "she/her",
+  "age": 24,
+  "status": "alive",
+  "role": "Read (latent psionic receptor); party-circuit GLMZ periphery",
+  "affiliation": "Independent",
+  "description": "A small, compact woman with a blonde bob cut and open-faced, bright-eyed attention that reads as harmless right up until it isn't. Grew up in Racine, GLMZ outer periphery. Scandinavian. A natural Read: receives surface thoughts and strong emotional states of people within range (~25m baseline; up to ~60m when empathy-circuit amplifiers like Candor are active). Does not know she is a Read at the start of RDRM. Has spent her life attributing her uncanny perceptiveness to intuition and people-reading. The Candor trigger in RDRM is her first full-aperture event. She has never transmitted a thought, planted a suggestion, or done anything other than receive — pure signal. Quick, dry humor. Conversational tempo that runs slightly ahead of its interlocutor. Not malicious about it: she uses the advantage to keep things moving, not to win. The fact that she ends up shot in a noise-rock band's green room and finds it mostly interesting rather than traumatic tells you most of what you need to know about her.",
+  "narrative_function": "Faith's origin story as a Read. The first story in which she discovers what she is. Also the structural vehicle for the weapon-ladder climax in RDRM — her real-time psionic feed of enemy mind-state is the operational advantage Ethan needs. Her ending on the green room floor (alive) is the emotional payoff of the story.",
+  "psychology": {
+    "secret": "She has known since she was eleven that other people were too easy to read. She told her mother once. Her mother said she was perceptive. She has not told anyone else.",
+    "core_wound": "The suspicion that she has never had a private thought around another person, and that no one has ever had a private thought around her — and that this makes real intimacy impossible.",
+    "desire": "To be surprised by someone.",
+    "fear": "That knowing what people think means she can never be wrong about them, which means she can never trust herself to be wrong about them in the good way."
+  },
+  "speech_patterns": {
+    "vocabulary": "Short, clean. Anglo-Saxon preference. Occasional deliberate formality for ironic effect.",
+    "cadence": "Fast. She has usually processed where the sentence is going before it arrives. Her own sentences are over before you expect them.",
+    "subtext": "Almost none. She says the thing. This can read as blunt; it is actually the opposite of evasive.",
+    "under_pressure": "Goes quieter and more precise. The dry humor evaporates. What's left is clean signal.",
+    "intimacy_register": "Rare but direct. When she is genuinely moved she names it without softening it."
+  },
+  "physical_description": {
+    "height_cm": 162,
+    "build": "Small, compact, light-framed. Moves efficiently, no wasted motion.",
+    "hair_color": "Blonde",
+    "hair_style": "Short bob, clean-cut, sits just below the jaw. Not styled so much as maintained.",
+    "eye_color": "Grey-blue",
+    "skin_tone": "Fair, Scandinavian",
+    "complexion": "Clear",
+    "visible_augmentations": "None. No neuretics. This is significant: she has no mesh interface, which means her Read ability is entirely biological/neurological, not technologically mediated.",
+    "posture_movement": "Open posture. Looks at things directly. The kind of stillness that reads as ease but is actually attention."
+  },
+  "genetic_ancestry": {
+    "Swedish": 0.55,
+    "Norwegian": 0.45
+  },
+  "operating_territory": {
+    "home": "Racine, GLMZ outer periphery",
+    "range": "Milwaukee corridor, occasional GLMZ core"
+  },
+  "story_hooks": [
+    "She has no neuretics. Her Read ability is entirely biological. What does that mean for the corp infrastructure that would love to study it?",
+    "Ethan Wolfe is the only person outside Fenris who knows what she is. That is a bond neither of them signed up for.",
+    "Koss's crew does not know a Read was present. Dayo Ferreira does not know either. If either finds out, the story has a sequel.",
+    "She is in the front row three months later. She already knew the words. The song is about her and she knows it and she doesn't tell him."
+  ],
+  "tags": ["glmz", "read", "psionic", "rdrm-strand", "milwaukee", "no-neuretics", "origin-story"],
+  "relationships": [
+    {
+      "name": "Ethan Wolfe",
+      "type": "strand connection",
+      "notes": "The only person who knows what she is after RDRM. She read the last line of his four-year song and reflected it back to him. He doesn't know she knows."
+    },
+    {
+      "name": "Dayo Ferreira",
+      "type": "acquaintance (provider circuit)",
+      "notes": "She came to the Velvet Tine through Dayo's network. He does not know what she is."
+    }
+  ]
+}

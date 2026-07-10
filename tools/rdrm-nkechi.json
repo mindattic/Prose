@@ -1,0 +1,31 @@
+{
+  "type": "character",
+  "name": "Nkechi Eze",
+  "species": "human",
+  "gender": "female",
+  "pronouns": "she/her",
+  "age": 27,
+  "status": "alive",
+  "role": "Party-circuit GLMZ; companion to Dayo Ferreira's client network",
+  "affiliation": "Independent",
+  "description": "Nigerian, 27. Loud, funny, already in motion from the moment she enters a room. Came to the Velvet Tine green room through Dayo's network alongside Faith. When Koss's crew breaches, she screams and runs — the instinctive correct response, not a failure of nerve — and ends up hiding under the equipment table. She does not look at where Mona is hiding. This is the most courageous single thing anyone does in the room and it is not noted on the page.",
+  "narrative_function": "The second woman Dayo brings. Her instinctive reaction during the breach (scream, run) is correct. Her not looking at Mona is the act that keeps Mona's cover intact. Future story hook: she saw more than she showed.",
+  "physical_description": {
+    "height_cm": 170,
+    "build": "Medium, expressive in posture",
+    "hair_color": "Black",
+    "hair_style": "Natural, mid-length",
+    "skin_tone": "Deep brown, Igbo Nigerian"
+  },
+  "genetic_ancestry": {
+    "Igbo Nigerian": 1.0
+  },
+  "tags": ["glmz", "rdrm-strand", "witness", "dayo-adjacent"],
+  "relationships": [
+    {
+      "name": "Dayo Ferreira",
+      "type": "acquaintance (circuit)",
+      "notes": "Arrived at the Tine through his network."
+    }
+  ]
+}

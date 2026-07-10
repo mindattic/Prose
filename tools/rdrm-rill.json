@@ -1,0 +1,44 @@
+{
+  "type": "character",
+  "name": "Rill Nakashima",
+  "species": "human",
+  "gender": "male",
+  "pronouns": "he/him",
+  "age": 29,
+  "status": "alive",
+  "role": "Drummer, Fenris",
+  "affiliation": "Fenris",
+  "description": "Japanese-Korean, 29. The drummer of Fenris. Speaks very little. Completely present behind a kit; politely absent the rest of the time. Takes Glass on party nights, which gives him a precision-about-nothing-in-particular that is indistinguishable from his sober state. He is the third member of the three-piece: where Ethan Wolfe is voltage and Mona Dominique is architecture, Rill is rhythm and substrate — the person without whom the other two have nowhere to put their energy. Offstage he observes without commenting. This is not unfriendliness; it is how he processes the world. When Koss's crew breaks in, Rill puts his hands up immediately and complies. This is not cowardice: it is the fastest way to reduce the number of variables in the room. He is freed mid-fight and stays down, which is also the correct call.",
+  "narrative_function": "Grounding element. The third point of the Fenris triangle. His quiet keeps the green room from feeling like a two-person show. His immediate compliance during the breach keeps the situation from escalating before Mona can go still.",
+  "physical_description": {
+    "height_cm": 175,
+    "build": "Lean, wiry. Drummer's forearms. The specific musculature of someone who has played hard for ten years.",
+    "hair_color": "Black",
+    "hair_style": "Short, maintenance cut",
+    "eye_color": "Dark brown",
+    "skin_tone": "Light-medium, Japanese-Korean",
+    "visible_augmentations": "Subdermal vibration dampeners in both wrists (standard for prolonged percussion; reduces lateral joint stress)."
+  },
+  "genetic_ancestry": {
+    "Japanese": 0.55,
+    "Korean": 0.45
+  },
+  "tags": ["glmz", "musician", "fenris", "rdrm-strand", "drummer"],
+  "relationships": [
+    {
+      "name": "Fenris",
+      "type": "member",
+      "notes": "Drummer. Third member of the three-piece."
+    },
+    {
+      "name": "Ethan Wolfe",
+      "type": "bandmate",
+      "notes": ""
+    },
+    {
+      "name": "Mona Dominique",
+      "type": "bandmate",
+      "notes": ""
+    }
+  ]
+}
