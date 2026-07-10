@@ -243,6 +243,13 @@ public class NodeBibleService
         List<BeatPlan>        plans,
         CancellationToken     ct)
     {
+        // Serializable transaction guards against concurrent bible generations producing
+        // duplicate Beat.Number values (MAX+1 race).
+        await using var tx = await db.Database.BeginTransactionAsync(
+            System.Data.IsolationLevel.Serializable, ct);
+        try
+        {
+
         // SS-A43: beats live on chapter children for book-mode stories.
         // Fetch chapter children in reading order (SortKey) so beat distribution is deterministic.
         var childIds = await db.Nodes.AsNoTracking()
@@ -254,6 +261,7 @@ public class NodeBibleService
         if (existing > 0)
         {
             log.LogInformation("[bible] Node {NodeId} already has {Count} beats — skipping planned beat creation.", nodeId, existing);
+            await tx.RollbackAsync(CancellationToken.None);
             return;
         }
 
@@ -289,7 +297,15 @@ public class NodeBibleService
         }
 
         await db.SaveChangesAsync(ct);
+        await tx.CommitAsync(ct);
         log.LogInformation("[bible] Created {Count} planned beats for node {NodeId}", plans.Count, nodeId);
+
+        } // end try
+        catch
+        {
+            await tx.RollbackAsync(CancellationToken.None);
+            throw;
+        }
     }
 
     private static string MapStructureRole(string bibleRole) => bibleRole.ToUpperInvariant() switch

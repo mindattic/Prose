@@ -231,8 +231,15 @@ public class MojibakeRepairService
         IEnumerable<StreetSamurai.Core.Data.Entities.Beat> beats;
         if (nodeId.HasValue)
         {
+            // SS-A43: beats live on chapter children for book-mode stories.
+            var childIds = await db.Nodes.AsNoTracking()
+                .Where(n => n.ParentNodeId == nodeId.Value)
+                .Select(n => n.Id)
+                .ToListAsync(ct);
+            var searchIds = childIds.Count > 0 ? childIds : new List<Guid> { nodeId.Value };
+
             var beatIds = await db.BeatNodes
-                .Where(sb => sb.NodeId == nodeId.Value && sb.IsEnabled)
+                .Where(sb => searchIds.Contains(sb.NodeId) && sb.IsEnabled)
                 .Select(sb => sb.BeatId)
                 .ToListAsync(ct);
             beats = await db.Beats.AsNoTracking().Where(b => beatIds.Contains(b.Id)).ToListAsync(ct);

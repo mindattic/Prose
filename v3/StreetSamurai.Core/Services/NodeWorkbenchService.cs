@@ -378,6 +378,13 @@ public class NodeWorkbenchService
         string kind = "story", string? seed = null, bool chapterStartFirst = false, CancellationToken ct = default)
     {
         await using var db = await dbFactory.CreateDbContextAsync(ct);
+        // Serializable transaction guards the two MaxAsync calls (Node.SortKey and
+        // Beat.Number) against concurrent story-creation races producing duplicates.
+        await using var tx = await db.Database.BeginTransactionAsync(
+            System.Data.IsolationLevel.Serializable, ct);
+        try
+        {
+
         var nodeId = Guid.CreateVersion7();
         var slug = $"{Slugify(string.IsNullOrWhiteSpace(title) ? "untitled" : title)}-{nodeId.ToString("N")[..8]}";
 
@@ -412,8 +419,16 @@ public class NodeWorkbenchService
         }
 
         await db.SaveChangesAsync(ct);
+        await tx.CommitAsync(ct);
         log.LogInformation("Persisted generated story '{Title}' as node {Slug} ({Beats} beats)", title, slug, i);
         return nodeId;
+
+        } // end try
+        catch
+        {
+            await tx.RollbackAsync(CancellationToken.None);
+            throw;
+        }
     }
 
     /// <summary>

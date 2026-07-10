@@ -44,7 +44,7 @@ public static class CheckFidelityCli
         }
 
         var dbFactory = services.GetRequiredService<IDbContextFactory<StreetSamuraiDbContext>>();
-        await using var db = dbFactory.CreateDbContext();
+        await using var db = await dbFactory.CreateDbContextAsync();
 
         if (nodeId == null)
         {

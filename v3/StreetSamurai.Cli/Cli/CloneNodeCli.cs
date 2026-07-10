@@ -41,6 +41,8 @@ public static class CloneNodeCli
 
         var dbFactory = services.GetRequiredService<IDbContextFactory<StreetSamuraiDbContext>>();
         await using var db = await dbFactory.CreateDbContextAsync();
+        await using var tx = await db.Database.BeginTransactionAsync(
+            System.Data.IsolationLevel.Serializable);
 
         // ── Resolve source node ─────────────────────────────────────────────
         Node? source;
@@ -167,6 +169,7 @@ public static class CloneNodeCli
         }
 
         await db.SaveChangesAsync();
+        await tx.CommitAsync();
 
         Console.WriteLine($"[clone-story] Created '{newTitle}' — {sourceBeats.Count} beat(s) cloned");
         Console.WriteLine($"[clone-story] id:   {newId}");

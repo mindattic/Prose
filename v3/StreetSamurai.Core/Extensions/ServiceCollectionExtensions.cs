@@ -551,20 +551,30 @@ public static class ServiceCollectionExtensions
         // canon repository so entity patches automatically flag referencing beats.
         services.AddSingleton<EntityRamificationService>(sp =>
         {
+            var ramLog = sp.GetRequiredService<Microsoft.Extensions.Logging.ILogger<EntityRamificationService>>();
             var ramSvc = new EntityRamificationService(
                 sp.GetRequiredService<IDbContextFactory<StreetSamuraiDbContext>>(),
                 sp.GetRequiredService<ILlmService>(),
-                sp.GetRequiredService<Microsoft.Extensions.Logging.ILogger<EntityRamificationService>>());
+                ramLog);
 
-            sp.GetRequiredService<CharacterRepository>().OnEntitySaved      += (id, name) => _ = Task.Run(() => ramSvc.ProcessEntityUpdateAsync(id, name));
-            sp.GetRequiredService<CorponationRepository>().OnEntitySaved    += (id, name) => _ = Task.Run(() => ramSvc.ProcessEntityUpdateAsync(id, name));
-            sp.GetRequiredService<DistrictRepository>().OnEntitySaved       += (id, name) => _ = Task.Run(() => ramSvc.ProcessEntityUpdateAsync(id, name));
-            sp.GetRequiredService<FactionRepository>().OnEntitySaved        += (id, name) => _ = Task.Run(() => ramSvc.ProcessEntityUpdateAsync(id, name));
-            sp.GetRequiredService<WeaponryRepository>().OnEntitySaved       += (id, name) => _ = Task.Run(() => ramSvc.ProcessEntityUpdateAsync(id, name));
-            sp.GetRequiredService<EquipmentRepository>().OnEntitySaved      += (id, name) => _ = Task.Run(() => ramSvc.ProcessEntityUpdateAsync(id, name));
-            sp.GetRequiredService<TechnologyRepository>().OnEntitySaved     += (id, name) => _ = Task.Run(() => ramSvc.ProcessEntityUpdateAsync(id, name));
-            sp.GetRequiredService<PharmaceuticalRepository>().OnEntitySaved += (id, name) => _ = Task.Run(() => ramSvc.ProcessEntityUpdateAsync(id, name));
-            sp.GetRequiredService<CyberwareRepository>().OnEntitySaved      += (id, name) => _ = Task.Run(() => ramSvc.ProcessEntityUpdateAsync(id, name));
+            // async void is the correct pattern for sync event handlers that need
+            // to fire async work. The try/catch ensures exceptions are logged rather
+            // than silently swallowed as unobserved Task faults.
+            async void OnSaved(Guid id, string name)
+            {
+                try { await ramSvc.ProcessEntityUpdateAsync(id, name); }
+                catch (Exception ex) { ramLog.LogError(ex, "[ram] entity-ramification failed for {Name}", name); }
+            }
+
+            sp.GetRequiredService<CharacterRepository>().OnEntitySaved      += OnSaved;
+            sp.GetRequiredService<CorponationRepository>().OnEntitySaved    += OnSaved;
+            sp.GetRequiredService<DistrictRepository>().OnEntitySaved       += OnSaved;
+            sp.GetRequiredService<FactionRepository>().OnEntitySaved        += OnSaved;
+            sp.GetRequiredService<WeaponryRepository>().OnEntitySaved       += OnSaved;
+            sp.GetRequiredService<EquipmentRepository>().OnEntitySaved      += OnSaved;
+            sp.GetRequiredService<TechnologyRepository>().OnEntitySaved     += OnSaved;
+            sp.GetRequiredService<PharmaceuticalRepository>().OnEntitySaved += OnSaved;
+            sp.GetRequiredService<CyberwareRepository>().OnEntitySaved      += OnSaved;
 
             return ramSvc;
         });

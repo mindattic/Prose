@@ -365,14 +365,21 @@ public class StoryScopeAuditService(
             if (fresh == null) return cached.Count > 0 ? cached.Values.OrderBy(r => r.Index).ToList() : null;
 
             // Persist fresh readings to the cache (upsert by unit-first BeatId).
+            // Bulk-load existing rows to avoid N+1 FindAsync inside the loop.
             try
             {
                 await using var writeDb = await dbFactory.CreateDbContextAsync(ct);
-                foreach (var r in fresh.Where(r => unitFirstBeatIds.ContainsKey(r.Index)))
+                var freshToWrite = fresh.Where(r => unitFirstBeatIds.ContainsKey(r.Index)).ToList();
+                var beatIdsToLoad = freshToWrite.Select(r => unitFirstBeatIds[r.Index]).ToList();
+                var existingRows = await writeDb.StructuralReadings
+                    .Where(sr => beatIdsToLoad.Contains(sr.BeatId))
+                    .ToListAsync(ct);
+                var rowsByBeatId = existingRows.ToDictionary(sr => sr.BeatId);
+
+                foreach (var r in freshToWrite)
                 {
                     var beatId = unitFirstBeatIds[r.Index];
-                    var row = await writeDb.StructuralReadings.FindAsync([beatId], ct);
-                    if (row == null)
+                    if (!rowsByBeatId.TryGetValue(beatId, out var row))
                     {
                         row = new StructuralReading { BeatId = beatId };
                         writeDb.StructuralReadings.Add(row);
@@ -385,6 +392,7 @@ public class StoryScopeAuditService(
                 }
                 await writeDb.SaveChangesAsync(ct);
             }
+            catch (OperationCanceledException) { throw; }
             catch (Exception ex)
             {
                 log.LogWarning(ex, "[storyscope] reading cache write failed — results still returned");
@@ -392,6 +400,7 @@ public class StoryScopeAuditService(
 
             return cached.Values.Concat(fresh).OrderBy(r => r.Index).ToList();
         }
+        catch (OperationCanceledException) { throw; }
         catch (Exception ex)
         {
             log.LogWarning(ex, "[storyscope] progressive reading failed");

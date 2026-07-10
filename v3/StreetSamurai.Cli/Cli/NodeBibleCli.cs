@@ -59,10 +59,17 @@ public static class NodeBibleCli
             return 1;
         }
 
+        // SS-A43: beats live on chapter children for book-mode stories.
+        var childNodeIds = await db.Nodes.AsNoTracking()
+            .Where(n => n.ParentNodeId == node.Id)
+            .Select(n => n.Id)
+            .ToListAsync();
+        var searchIds = childNodeIds.Count > 0 ? childNodeIds : new List<Guid> { node.Id };
+
         // Determine target beat count
         if (targetBeats <= 0)
         {
-            targetBeats = await db.BeatNodes.CountAsync(sb => sb.NodeId == node.Id && sb.IsEnabled);
+            targetBeats = await db.BeatNodes.CountAsync(sb => searchIds.Contains(sb.NodeId) && sb.IsEnabled);
             if (targetBeats <= 0) targetBeats = 12;
         }
 
@@ -74,7 +81,7 @@ public static class NodeBibleCli
         {
             // Remove existing planned beats (empty prose only — don't nuke written beats)
             var emptyBeats = await db.BeatNodes
-                .Where(sb => sb.NodeId == node.Id && sb.IsEnabled)
+                .Where(sb => searchIds.Contains(sb.NodeId) && sb.IsEnabled)
                 .Join(db.Beats, sb => sb.BeatId, b => b.Id, (sb, b) => new { sb, b })
                 .Where(x => string.IsNullOrEmpty(x.b.Text))
                 .ToListAsync();

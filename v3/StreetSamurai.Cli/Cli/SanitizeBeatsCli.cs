@@ -24,8 +24,8 @@ static class SanitizeBeatsCli
             return 1;
         }
 
-        await using var db = services.GetRequiredService<IDbContextFactory<StreetSamuraiDbContext>>()
-                                     .CreateDbContext();
+        await using var db = await services.GetRequiredService<IDbContextFactory<StreetSamuraiDbContext>>()
+                                           .CreateDbContextAsync();
 
         // Build the beat query
         var query = db.Beats.AsQueryable();

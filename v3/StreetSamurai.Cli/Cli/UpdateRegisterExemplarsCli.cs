@@ -46,8 +46,8 @@ public static class UpdateRegisterExemplarsCli
             return 1;
         }
 
-        await using var db = services.GetRequiredService<IDbContextFactory<StreetSamuraiDbContext>>()
-            .CreateDbContext();
+        await using var db = await services.GetRequiredService<IDbContextFactory<StreetSamuraiDbContext>>()
+            .CreateDbContextAsync();
 
         Guid nodeId;
         if (slug is not null)

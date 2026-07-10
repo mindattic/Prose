@@ -64,6 +64,7 @@ public class DialogueService
 
             IReadOnlyList<EmbeddingHit> hits;
             try { hits = await embeddings.FindSimilarAsync(query, k: 4, entityTypes: new[] { "character" }, ct); }
+            catch (OperationCanceledException) { throw; }
             catch { continue; }
 
             sb.AppendLine();
