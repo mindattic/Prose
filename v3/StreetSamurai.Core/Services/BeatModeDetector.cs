@@ -71,6 +71,7 @@ public class BeatModeDetector(IDbContextFactory<StreetSamuraiDbContext> dbFactor
             }
             await db.SaveChangesAsync(ct);
         }
+        catch (OperationCanceledException) { throw; }
         catch { /* non-blocking */ }
     }
 }

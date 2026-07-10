@@ -53,7 +53,7 @@ public class EntityMentionService(IDbContextFactory<StreetSamuraiDbContext> dbFa
             NodeId:    r.NodeId,
             BeatNumber:  r.BeatNumber,
             Handle:      $"{r.NodeId}.{r.BeatId}",
-            Excerpt:     r.Text.Length > 120 ? r.Text[..120] + "…" : r.Text
+            Excerpt:     (r.Text?.Length ?? 0) > 120 ? r.Text![..120] + "…" : r.Text ?? ""
         )).ToList();
     }
 

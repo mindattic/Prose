@@ -235,10 +235,13 @@ public class NarrativeForkService(
 
         int updated = 0;
         await using var db = await dbFactory.CreateDbContextAsync(ct);
+        var beatIdSet = beats.Select(b => b.BeatId).ToHashSet();
+        var beatMap = await db.Beats
+            .Where(b => beatIdSet.Contains(b.Id))
+            .ToDictionaryAsync(b => b.Id, ct);
         for (int i = 0; i < Math.Min(lines.Count, beats.Count); i++)
         {
-            var beat = await db.Beats.FindAsync([beats[i].BeatId], ct);
-            if (beat == null) continue;
+            if (!beatMap.TryGetValue(beats[i].BeatId, out var beat)) continue;
             beat.Description  = lines[i].Length > 500 ? lines[i][..500] : lines[i];
             beat.UpdatedAt = DateTime.UtcNow;
             updated++;

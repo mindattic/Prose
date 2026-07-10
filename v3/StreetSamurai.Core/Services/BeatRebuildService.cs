@@ -246,7 +246,7 @@ public class BeatRebuildService
     private async Task ReplaceBeatsAsync(Guid nodeId, List<RebuiltBeat> beats, CancellationToken ct)
     {
         await using var db = await dbFactory.CreateDbContextAsync(ct);
-        await using var tx = await db.Database.BeginTransactionAsync(ct);
+        await using var tx = await db.Database.BeginTransactionAsync(System.Data.IsolationLevel.Serializable, ct);
 
         // Drop the node's existing beats. Beats are referenced only by BeatNodes
         // (verified by FK survey); remove links first, then the now-orphan Beat rows.

@@ -40,8 +40,11 @@ static class SanitizeBeatsCli
                 return 1;
             }
 
+            var childIds = await db.Nodes.AsNoTracking()
+                .Where(n => n.ParentNodeId == node.Id).Select(n => n.Id).ToListAsync();
+            var searchIds = childIds.Count > 0 ? childIds : new List<Guid> { node.Id };
             var beatIds = await db.BeatNodes.AsNoTracking()
-                                              .Where(sb => sb.NodeId == node.Id)
+                                              .Where(sb => searchIds.Contains(sb.NodeId) && sb.IsEnabled)
                                               .Select(sb => sb.BeatId)
                                               .ToListAsync();
             query = query.Where(b => beatIds.Contains(b.Id));

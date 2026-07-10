@@ -1059,9 +1059,13 @@ public class NodeTools
 
         await using var db = await dbFactory.CreateDbContextAsync();
 
+        var childIds = await db.Nodes.AsNoTracking()
+            .Where(n => n.ParentNodeId == node.Id).Select(n => n.Id).ToListAsync();
+        var searchIds = childIds.Count > 0 ? childIds : new List<Guid> { node.Id };
+
         var texts = await db.BeatNodes
             .AsNoTracking()
-            .Where(sb => sb.NodeId == node.Id && sb.IsEnabled)
+            .Where(sb => searchIds.Contains(sb.NodeId) && sb.IsEnabled)
             .OrderBy(sb => sb.SortKey)
             .Join(db.Beats.AsNoTracking(),
                   sb => sb.BeatId,

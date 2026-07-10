@@ -203,7 +203,7 @@ public static class NarrativeScienceCli
         if (characterArg != null) charId = await ResolveCharacterAsync(characterArg, services);
 
         var dbFactory = services.GetRequiredService<IDbContextFactory<StreetSamuraiDbContext>>();
-        using var db = dbFactory.CreateDbContext();
+        await using var db = await dbFactory.CreateDbContextAsync();
 
         if (beatId.HasValue)
         {
@@ -320,7 +320,7 @@ public static class NarrativeScienceCli
         var svc = services.GetRequiredService<NarrativeScienceService>();
         var findingsSvc = services.GetRequiredService<FindingsService>();
         var dbFactory = services.GetRequiredService<IDbContextFactory<StreetSamuraiDbContext>>();
-        using var db = dbFactory.CreateDbContext();
+        await using var db = await dbFactory.CreateDbContextAsync();
 
         if (beatId.HasValue)
         {
@@ -434,7 +434,7 @@ public static class NarrativeScienceCli
         var svc = services.GetRequiredService<NarrativeScienceService>();
         var findingsSvc = services.GetRequiredService<FindingsService>();
         var dbFactory = services.GetRequiredService<IDbContextFactory<StreetSamuraiDbContext>>();
-        using var db = dbFactory.CreateDbContext();
+        await using var db = await dbFactory.CreateDbContextAsync();
 
         var node = await db.Nodes.AsNoTracking().FirstOrDefaultAsync(s => s.Slug == nodeSlug);
         if (node == null) { Console.Error.WriteLine($"Node '{nodeSlug}' not found."); return 1; }
@@ -534,7 +534,7 @@ public static class NarrativeScienceCli
     {
         if (Guid.TryParse(idOrSlug, out var g)) return g;
         var dbFactory = services.GetRequiredService<IDbContextFactory<StreetSamuraiDbContext>>();
-        using var db = dbFactory.CreateDbContext();
+        await using var db = await dbFactory.CreateDbContextAsync();
         var id = await db.Entities.AsNoTracking()
             .Where(e => e.Slug == idOrSlug && e.EntityType == "character")
             .Select(e => e.Id)

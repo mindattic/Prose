@@ -153,7 +153,11 @@ public class ChapterRecordingService
         catch (Exception ex) { log.LogWarning(ex, "Chapter recording script export failed (non-fatal)"); }
 
         // Narration in the background — caller's UI polls Episode.Status.
-        _ = Task.Run(() => audio.NarrateAsync(episode.Id));
+        _ = Task.Run(async () =>
+        {
+            try { await audio.NarrateAsync(episode.Id); }
+            catch (Exception ex) { log.LogError(ex, "Background narration failed for episode {Id}", episode.Id); }
+        });
 
         return episode.Id;
     }

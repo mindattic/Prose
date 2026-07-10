@@ -274,6 +274,7 @@ public sealed class EntityContextService(
         {
             claimsText = await llm.GenerateAsync(extractSystem, extractUser, temperature: 0.1, maxTokens: 400, model: LlmModels.Haiku, ct: ct);
         }
+        catch (OperationCanceledException) { throw; }
         catch { return; }
 
         if (string.IsNullOrWhiteSpace(claimsText)) return;

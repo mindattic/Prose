@@ -308,9 +308,13 @@ public class EmbeddingService
         await EnsureSchemaOnceAsync(ct);
         await using var db = await dbFactory.CreateDbContextAsync(ct);
 
+        var childIds = await db.Nodes.AsNoTracking()
+            .Where(n => n.ParentNodeId == nodeId).Select(n => n.Id).ToListAsync(ct);
+        var searchIds = childIds.Count > 0 ? childIds : new List<Guid> { nodeId };
+
         var beats = await (from sb in db.BeatNodes.AsNoTracking()
                            join b in db.Beats.AsNoTracking() on sb.BeatId equals b.Id
-                           where sb.NodeId == nodeId && sb.IsEnabled
+                           where searchIds.Contains(sb.NodeId) && sb.IsEnabled
                            orderby sb.SortKey
                            select new { b.Id, b.Title, b.Description, b.Text }).ToListAsync(ct);
         if (beats.Count == 0) return 0;
