@@ -94,10 +94,10 @@ public class ImagePromptRegenService
             }
             rec.Json      = rewritten;
             rec.UpdatedAt = DateTime.UtcNow;
-            await db.SaveChangesAsync(ct);
             stamped++;
             progress?.Report((scanned, ids.Count));
         }
+        if (stamped > 0) await db.SaveChangesAsync(ct);
         log.LogInformation("BackfillHashes: scanned={S} stamped={St} already={A} no-ancestry={N}",
             scanned, stamped, alreadyHashed, noAncestry);
         return new BackfillReport(scanned, stamped, alreadyHashed, noAncestry);

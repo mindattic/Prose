@@ -78,10 +78,23 @@ public class SceneContextAssembler(
         await EnsureSchemaAsync(ct);
         await using var db = await dbFactory.CreateDbContextAsync(ct);
         await db.Database.ExecuteSqlRawAsync("DELETE FROM [dbo].[BeatEntities] WHERE [BeatId] = {0}", [beatId], ct);
-        foreach (var r in ctx.Roster)
-            await db.Database.ExecuteSqlRawAsync(
-                "INSERT INTO [dbo].[BeatEntities] ([BeatId],[EntityId],[Name],[EntityType],[MatchSource],[Score]) VALUES ({0},{1},{2},{3},{4},{5})",
-                [beatId, r.EntityId, r.Name, r.EntityType, r.MatchSource, r.Score], ct);
+        if (ctx.Roster.Count == 0) return;
+        var sql = new System.Text.StringBuilder(
+            "INSERT INTO [dbo].[BeatEntities] ([BeatId],[EntityId],[Name],[EntityType],[MatchSource],[Score]) VALUES ");
+        var parameters = new List<object?> { beatId };
+        for (int i = 0; i < ctx.Roster.Count; i++)
+        {
+            var r = ctx.Roster[i];
+            int b = 1 + i * 5;
+            if (i > 0) sql.Append(',');
+            sql.Append($"({{0}},{{{b}}},{{{b+1}}},{{{b+2}}},{{{b+3}}},{{{b+4}}})");
+            parameters.Add(r.EntityId);
+            parameters.Add(r.Name);
+            parameters.Add(r.EntityType);
+            parameters.Add(r.MatchSource);
+            parameters.Add((object?)r.Score);
+        }
+        await db.Database.ExecuteSqlRawAsync(sql.ToString(), parameters.ToArray(), ct);
     }
 
     /// <summary>

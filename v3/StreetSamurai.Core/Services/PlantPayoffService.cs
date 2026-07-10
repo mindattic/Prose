@@ -24,9 +24,15 @@ public class PlantPayoffService(IDbContextFactory<StreetSamuraiDbContext> dbFact
     public async Task<List<PlantPayoff>> GetByNodeAsync(Guid nodeId, CancellationToken ct = default)
     {
         await using var db = await dbFactory.CreateDbContextAsync(ct);
+        // SS-A43: for book-mode nodes, plants are registered on chapter children.
+        var childIds = await db.Nodes.AsNoTracking()
+            .Where(n => n.ParentNodeId == nodeId)
+            .Select(n => n.Id).ToListAsync(ct);
+        var searchIds = new List<Guid> { nodeId };
+        searchIds.AddRange(childIds);
         return await db.PlantPayoffs
             .AsNoTracking()
-            .Where(p => p.NodeId == nodeId)
+            .Where(p => searchIds.Contains(p.NodeId))
             .OrderBy(p => p.SortKey)
             .ToListAsync(ct);
     }
@@ -121,9 +127,15 @@ public class PlantPayoffService(IDbContextFactory<StreetSamuraiDbContext> dbFact
             .FirstOrDefaultAsync(s => s.Id == nodeId, ct)
             ?? throw new InvalidOperationException($"Node {nodeId} not found.");
 
+        // SS-A43: for book-mode nodes, plants are registered on chapter children.
+        var childIds = await db.Nodes.AsNoTracking()
+            .Where(n => n.ParentNodeId == nodeId)
+            .Select(n => n.Id).ToListAsync(ct);
+        var searchIds = new List<Guid> { nodeId };
+        searchIds.AddRange(childIds);
         var all = await db.PlantPayoffs
             .AsNoTracking()
-            .Where(p => p.NodeId == nodeId)
+            .Where(p => searchIds.Contains(p.NodeId))
             .OrderBy(p => p.SortKey)
             .ToListAsync(ct);
 

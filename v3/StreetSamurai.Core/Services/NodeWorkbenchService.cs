@@ -673,7 +673,7 @@ public class NodeWorkbenchService
     {
         await using var db = await dbFactory.CreateDbContextAsync(ct);
         var siblings = await db.BeatNodes
-            .Where(sb => sb.NodeId == nodeId)
+            .Where(sb => sb.NodeId == nodeId && sb.IsEnabled)
             .OrderBy(sb => sb.SortKey)
             .ToListAsync(ct);
         if (siblings.Count == 0) return 0;
@@ -1320,7 +1320,7 @@ public class NodeWorkbenchService
             """
             SELECT b.Id AS Id, COUNT(*) AS Cnt
             FROM [Beats] FOR SYSTEM_TIME ALL AS b
-            WHERE b.Id IN (SELECT BeatId FROM [BeatNodes] WHERE NodeId = {0})
+            WHERE b.Id IN (SELECT BeatId FROM [BeatNodes] WHERE NodeId = {0} AND IsEnabled = 1)
             GROUP BY b.Id
             """, nodeId).ToListAsync(ct);
         return rows.ToDictionary(r => r.Id, r => r.Cnt);

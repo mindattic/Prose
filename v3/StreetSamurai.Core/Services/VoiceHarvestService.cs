@@ -175,10 +175,10 @@ public class VoiceHarvestService
                 db.VoiceChangeLog.Add(entry);
                 proposals.Add(entry);
             }
-            await db.SaveChangesAsync(ct);
             log.LogInformation("Canon-prose harvest {Slug}: {N} proposals.", s.Slug, proposals.Count);
             results.Add(new HarvestResult(s.Slug, s.Title, s.Score ?? 0, 0, 0, proposals));
         }
+        await db.SaveChangesAsync(ct);
         return results;
     }
 

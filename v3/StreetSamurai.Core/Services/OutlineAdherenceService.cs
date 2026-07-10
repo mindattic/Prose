@@ -107,6 +107,7 @@ public class OutlineAdherenceService(
             // SS-A43: beats live on chapter nodes (children), not directly on the story node.
             var childIds = await db.Nodes.AsNoTracking()
                 .Where(s => s.ParentNodeId == nodeId)
+                .OrderBy(s => s.SortKey)
                 .Select(s => s.Id)
                 .ToListAsync(ct);
             var beatNodeIds = childIds.Count > 0 ? childIds : new List<Guid> { nodeId };
@@ -115,12 +116,16 @@ public class OutlineAdherenceService(
                 .Where(sb => beatNodeIds.Contains(sb.NodeId) && sb.IsEnabled)
                 .Join(db.Beats.AsNoTracking().Where(b => b.Text == null || b.Text == ""),
                       sb => sb.BeatId, b => b.Id,
-                      (sb, b) => new { b.Id, SortKey = sb.SortKey, Goal = b.Description ?? b.Title ?? "" })
+                      (sb, b) => new { b.Id, sb.NodeId, BeatSortKey = sb.SortKey, Goal = b.Description ?? b.Title ?? "" })
                 .Where(x => x.Goal != "")
-                .OrderBy(x => x.SortKey)
                 .ToListAsync(ct);
 
-            emptyBeats = rows.Select(x => (x.Id, x.Goal)).ToList();
+            // SS-A43: for book-mode nodes order by chapter position first, then beat SortKey within chapter.
+            emptyBeats = rows
+                .OrderBy(x => childIds.Count > 0 ? childIds.IndexOf(x.NodeId) : 0)
+                .ThenBy(x => x.BeatSortKey)
+                .Select(x => (x.Id, x.Goal))
+                .ToList();
         }
 
         if (emptyBeats.Count == 0) return 0;

@@ -168,13 +168,18 @@ public class ContinuityService
     {
         using var db = dbFactory.CreateDbContext();
         var edges = db.ClaimContradictions.AsNoTracking().ToList();
+        if (edges.Count == 0) return [];
+        var allUids = edges.SelectMany(e => new[] { e.AUid, e.BUid }).Distinct().ToList();
+        var claimMap = db.ContinuityClaims.AsNoTracking()
+            .Where(c => allUids.Contains(c.ClaimUid))
+            .ToDictionary(c => c.ClaimUid);
         var pairs = new List<ContradictionPair>();
         foreach (var e in edges)
         {
-            var a = db.ContinuityClaims.AsNoTracking().FirstOrDefault(c => c.ClaimUid == e.AUid);
-            var b = db.ContinuityClaims.AsNoTracking().FirstOrDefault(c => c.ClaimUid == e.BUid);
-            if (a != null && b != null && a.Status == "CONTRADICTED" && b.Status == "CONTRADICTED")
-                pairs.Add(new ContradictionPair { A = a, B = b });
+            if (!claimMap.TryGetValue(e.AUid, out var a) || !claimMap.TryGetValue(e.BUid, out var b)) continue;
+            if (a.Status is "REJECTED" or "SUPERSEDED" || b.Status is "REJECTED" or "SUPERSEDED") continue;
+            if (a.Status != "CONTRADICTED" && b.Status != "CONTRADICTED") continue;
+            pairs.Add(new ContradictionPair { A = a, B = b });
         }
         return pairs;
     }
