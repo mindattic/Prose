@@ -85,7 +85,8 @@ public static class LibertyReportCli
         foreach (var l in liberties.OrderByDescending(x => x.CoolFactor))
         {
             var tag = l.CoolFactor >= 8 ? "🌟 CANDIDATE" :
-                      l.CoolFactor >= 5 ? "💡 CONSIDER"  : "⚠  WARNING  ";
+                      l.CoolFactor >= 5 ? "💡 CONSIDER"  :
+                      l.Kind == "entity_invention" ? "⚠  WARNING  " : "🔽 LOW-CF   ";
             Console.WriteLine($"  {tag}  [{l.Kind}]  CF={l.CoolFactor}/10  {l.Name}");
             Console.WriteLine($"          {l.Explanation}");
             if (!string.IsNullOrWhiteSpace(l.Evidence))

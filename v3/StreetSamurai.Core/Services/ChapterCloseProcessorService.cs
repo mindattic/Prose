@@ -70,12 +70,8 @@ public class ChapterCloseProcessorService(
         }
 
         // 3. Outline adherence check
-        var summaryText = "";
         try
         {
-            var summaries = await chapterSummary.BuildPriorSummaryContextAsync(parentNodeId, ct);
-            summaryText   = summaries;
-
             // Use the most recently saved chapter's summary text directly
             await using var db = await dbFactory.CreateDbContextAsync(ct);
             var latest = await db.NodeChapterSummaries

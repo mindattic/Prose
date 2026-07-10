@@ -365,7 +365,8 @@ public class ConfigTools
                 {
                     l.Kind, l.Name, l.Evidence, l.Explanation, l.CoolFactor,
                     tag = l.CoolFactor >= 8 ? "CANON-ADDITION-CANDIDATE" :
-                          l.CoolFactor >= 5 ? "LIBERTY-CONSIDER" : "LIBERTY-WARNING",
+                          l.CoolFactor >= 5 ? "LIBERTY-CONSIDER" :
+                          l.Kind == "entity_invention" ? "LIBERTY-WARNING" : "LIBERTY-LOW",
                 }),
             }, JsonOpts);
         }
@@ -377,7 +378,8 @@ public class ConfigTools
             {
                 r.BeatId, r.GeneratedAt, l.Kind, l.Name, l.Evidence, l.Explanation, l.CoolFactor,
                 tag = l.CoolFactor >= 8 ? "CANON-ADDITION-CANDIDATE" :
-                      l.CoolFactor >= 5 ? "LIBERTY-CONSIDER" : "LIBERTY-WARNING",
+                      l.CoolFactor >= 5 ? "LIBERTY-CONSIDER" :
+                      l.Kind == "entity_invention" ? "LIBERTY-WARNING" : "LIBERTY-LOW",
             })).ToList();
             return JsonSerializer.Serialize(new
             {

@@ -254,6 +254,6 @@ public sealed class DocContextService(
         var end = text.IndexOf("\n---", 4, StringComparison.Ordinal);
         if (end < 0) return text.Trim();
         var after = end + 4;
-        return after < text.Length ? text[after..].TrimStart('\n', '-', ' ').Trim() : "";
+        return after < text.Length ? text[after..].TrimStart('\n').Trim() : "";
     }
 }

@@ -148,8 +148,14 @@ public class LibertyReportService(
                 .FirstOrDefaultAsync(ct);
             if (nodeId == null) return [];
 
+            // SS-A43: beats live on chapter nodes (children), not directly on the story node.
+            var childIds = await db.Nodes.AsNoTracking()
+                .Where(n => n.ParentNodeId == nodeId)
+                .Select(n => n.Id).ToListAsync(ct);
+            var beatNodeIds = childIds.Count > 0 ? childIds : new List<Guid> { nodeId!.Value };
+
             var beatIds = await db.BeatNodes.AsNoTracking()
-                .Where(bn => bn.NodeId == nodeId)
+                .Where(bn => beatNodeIds.Contains(bn.NodeId))
                 .Select(bn => bn.BeatId)
                 .ToListAsync(ct);
 
@@ -206,7 +212,7 @@ public class LibertyReportService(
 
         var system = "You are a literary continuity auditor for a cyberpunk story engine. Return ONLY the JSON objects described — no preamble, no explanation, no markdown.";
 
-        var raw = await llm.GenerateAsync(system, prompt, temperature: 0.1, maxTokens: 512, model: "claude-haiku-4-5-20251001", ct: ct);
+        var raw = await llm.GenerateAsync(system, prompt, temperature: 0.1, maxTokens: 512, model: LlmModels.Haiku, ct: ct);
 
         var items = new List<LibertyItem>();
         foreach (var line in raw.Split('\n', StringSplitOptions.RemoveEmptyEntries | StringSplitOptions.TrimEntries))

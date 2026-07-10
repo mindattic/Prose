@@ -108,10 +108,16 @@ public class SemanticFidelityService
         var bibleAnchor = FirstNonEmpty(node.Seed, node.Description, node.Title);
         bool hasBibleAnchor = !string.IsNullOrWhiteSpace(bibleAnchor);
 
+        // SS-A43: beats live on chapter nodes (children), not directly on the story node.
+        var childIds = await db.Nodes.AsNoTracking()
+            .Where(n => n.ParentNodeId == nodeId)
+            .Select(n => n.Id).ToListAsync(ct);
+        var beatNodeIds = childIds.Count > 0 ? childIds : new List<Guid> { nodeId };
+
         var beats = await (
             from sb in db.BeatNodes.AsNoTracking()
             join b  in db.Beats.AsNoTracking() on sb.BeatId equals b.Id
-            where sb.NodeId == nodeId && sb.IsEnabled
+            where beatNodeIds.Contains(sb.NodeId) && sb.IsEnabled
             orderby sb.SortKey
             select new
             {

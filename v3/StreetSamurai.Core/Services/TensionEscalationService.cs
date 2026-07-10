@@ -59,11 +59,17 @@ public class TensionEscalationService
 
         if (recent.Length < StagnationThreshold) return "";
 
-        var nonEscalatingCount = recent.Count(m => !EscalatingModes.Contains(m));
+        // Count consecutive trailing non-escalating beats, not total in window.
+        var trailingNonEscalating = recent
+            .Reverse()
+            .TakeWhile(m => !EscalatingModes.Contains(m))
+            .Reverse()
+            .ToArray();
+        var nonEscalatingCount = trailingNonEscalating.Length;
         if (nonEscalatingCount < StagnationThreshold) return "";
 
         return $"""
-            TENSION ESCALATION — the last {nonEscalatingCount} consecutive beats have been low-intensity ({string.Join(", ", recent.TakeLast(nonEscalatingCount).Select(m => m.ToString()))}).
+            TENSION ESCALATION — the last {nonEscalatingCount} consecutive beats have been low-intensity ({string.Join(", ", trailingNonEscalating.Select(m => m.ToString()))}).
             This beat must raise the stakes. Do not write another quiet beat.
             Options (choose what fits the scene): introduce new information that recontextualises what came before,
             deepen or surface an existing conflict, apply a consequence the POV character cannot ignore,

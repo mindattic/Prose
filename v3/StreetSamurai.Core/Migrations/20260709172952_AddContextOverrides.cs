@@ -17,7 +17,7 @@ namespace StreetSamurai.Core.Migrations
                 {
                     Id = table.Column<int>(type: "int", nullable: false)
                         .Annotation("SqlServer:Identity", "1, 1"),
-                    SessionKey = table.Column<string>(type: "nvarchar(max)", nullable: false),
+                    SessionKey = table.Column<string>(type: "nvarchar(256)", maxLength: 256, nullable: false),
                     NodeId = table.Column<Guid>(type: "uniqueidentifier", nullable: true),
                     Action = table.Column<string>(type: "nvarchar(max)", nullable: false),
                     MarkdownFileId = table.Column<Guid>(type: "uniqueidentifier", nullable: false),
@@ -28,11 +28,20 @@ namespace StreetSamurai.Core.Migrations
                 {
                     table.PrimaryKey("PK_ContextOverrides", x => x.Id);
                 });
+
+            migrationBuilder.CreateIndex(
+                name: "IX_ContextOverrides_SessionKey",
+                table: "ContextOverrides",
+                column: "SessionKey");
         }
 
         /// <inheritdoc />
         protected override void Down(MigrationBuilder migrationBuilder)
         {
+            migrationBuilder.DropIndex(
+                name: "IX_ContextOverrides_SessionKey",
+                table: "ContextOverrides");
+
             migrationBuilder.DropTable(
                 name: "ContextOverrides");
         }

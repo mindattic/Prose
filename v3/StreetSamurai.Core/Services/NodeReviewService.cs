@@ -463,6 +463,7 @@ public class NodeReviewService
             var retryPersonas = EditorPanel.GetPanel(failed);
             var retryTasks = new List<Task>(failed);
             var retriesDone = 0;
+            int bagSizeBefore = bag.Count;
             for (int i = 0; i < retryPersonas.Count; i++)
             {
                 var persona = retryPersonas[i];
@@ -480,7 +481,7 @@ public class NodeReviewService
                 }, ct));
             }
             await Task.WhenAll(retryTasks);
-            failed = 0;
+            failed = Math.Max(0, failed - (bag.Count - bagSizeBefore));
         }
 
         var saved = bag.ToList();
@@ -1921,7 +1922,7 @@ Be specific; do not invent praise the reviews don't support.";
         {
             var mean = node.Score.Value;
             double? sd = latestPerPersona.Count > 1
-                ? Math.Sqrt(latestPerPersona.Sum(r => Math.Pow((double)r.Score - mean, 2)) / latestPerPersona.Count)
+                ? Math.Sqrt(latestPerPersona.Sum(r => Math.Pow((double)r.Score - mean, 2)) / (latestPerPersona.Count - 1))
                 : null;
             var beatCount = await db.BeatNodes.CountAsync(sb => sb.NodeId == nodeId && sb.IsEnabled, ct);
             db.NodeScoreHistories.Add(new Data.Entities.NodeScoreHistory

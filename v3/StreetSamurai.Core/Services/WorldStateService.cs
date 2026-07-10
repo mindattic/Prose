@@ -106,8 +106,10 @@ public class WorldStateService
             if (!db.Database.IsSqlServer()) return null;
 
             var formatted = sysTime.ToUniversalTime().ToString("yyyy-MM-dd HH:mm:ss.fffffff");
-            var sql = $"SELECT [Json] FROM [dbo].[Records] FOR SYSTEM_TIME AS OF '{formatted}' WHERE [EntityId] = '{id}'";
-            var json = db.Database.SqlQueryRaw<string>(sql).AsEnumerable().FirstOrDefault();
+            // FOR SYSTEM_TIME AS OF requires a literal datetime — EF cannot parameterize it.
+            // EntityId is parameterized to follow the safe-query contract.
+            var sql = $"SELECT [Json] FROM [dbo].[Records] FOR SYSTEM_TIME AS OF '{formatted}' WHERE [EntityId] = @p0";
+            var json = db.Database.SqlQueryRaw<string>(sql, id.ToString()).AsEnumerable().FirstOrDefault();
             return json;
         }
         catch (Exception ex)
@@ -442,7 +444,7 @@ public class WorldStateService
         {
             var asOfChapter = ParseChapterFromStoryPoint(storyPoint);
             var recent = chapters.ListChapters()
-                .OrderByDescending(c => c.Number ?? int.MaxValue)
+                .OrderByDescending(c => c.Number ?? int.MinValue)
                 .ThenByDescending(c => c.Created)
                 .Take(8)
                 .ToList();

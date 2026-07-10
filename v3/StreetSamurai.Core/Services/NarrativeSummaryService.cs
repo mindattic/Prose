@@ -57,8 +57,9 @@ public class NarrativeSummaryService
             ? summaryChain.Skip(summaryChain.Count - 10).ToList()
             : summaryChain;
 
+        var offset = summaryChain.Count - recent.Count;
         return "STORY SO FAR (compressed summaries of previous scenes):\n"
-            + string.Join("\n", recent.Select((s, i) => $"Scene {i + 1}: {s}"));
+            + string.Join("\n", recent.Select((s, i) => $"Scene {offset + i + 1}: {s}"));
     }
 
     /// <summary>Compress a completed scene into a brief summary and persist it.</summary>
@@ -88,9 +89,9 @@ public class NarrativeSummaryService
             try
             {
                 await using var db = await dbFactory.CreateDbContextAsync(ct);
-                var sortKey = await db.NarrativeSummaryEntries
+                var sortKey = (await db.NarrativeSummaryEntries
                     .Where(e => e.NodeId == nodeId)
-                    .CountAsync(ct) + 1;
+                    .MaxAsync(e => (int?)e.SortKey, ct) ?? 0) + 1;
 
                 db.NarrativeSummaryEntries.Add(new NarrativeSummaryEntry
                 {

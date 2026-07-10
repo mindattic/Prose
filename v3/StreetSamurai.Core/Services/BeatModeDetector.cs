@@ -28,8 +28,8 @@ public class BeatModeDetector(IDbContextFactory<StreetSamuraiDbContext> dbFactor
             return (BeatMode.Narrative, 0.5f, "default");
 
         var text = beatGoal.ToLowerInvariant();
-        if (proseHint != null && proseHint.Length < 500)
-            text = text + " " + proseHint.ToLowerInvariant();
+        if (proseHint != null)
+            text = text + " " + (proseHint.Length > 500 ? proseHint[..500] : proseHint).ToLowerInvariant();
 
         if (CombatKw.Any(k => text.Contains(k)))     return (BeatMode.Combat,          0.85f, "keyword");
         if (EmotionalKw.Any(k => text.Contains(k)))  return (BeatMode.EmotionalClimax,  0.80f, "keyword");

@@ -54,6 +54,14 @@ public class OpenThreadsService(
         if (lines.Count == 0) return;
 
         await using var db = await dbFactory.CreateDbContextAsync(ct);
+
+        // Remove any threads already registered from this beat (handles beat regeneration).
+        var stale = await db.NodeOpenThreads
+            .Where(t => t.OriginBeatId == beatId && !t.IsResolved)
+            .ToListAsync(ct);
+        if (stale.Count > 0)
+            db.NodeOpenThreads.RemoveRange(stale);
+
         foreach (var line in lines)
         {
             db.NodeOpenThreads.Add(new NodeOpenThread

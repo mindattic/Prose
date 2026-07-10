@@ -224,7 +224,10 @@ public class VoiceHarvestService
 
         // 1) Mine generated→final edits from the temporal beat history.
         var ordered = await workbench.GetOrderedBeatsAsync(nodeId, ct);
-        var counts = await workbench.GetBeatVersionCountsAsync(nodeId, ct);
+        // SS-A43: GetBeatVersionCountsAsync queries BeatNodes by NodeId directly, which
+        // returns 0 for book-mode stories. Use the beat IDs from the recursive walk.
+        var beatIds = ordered.Select(ob => ob.Beat.Id);
+        var counts = await workbench.GetBeatVersionCountsByIdsAsync(beatIds, ct);
         var edits = new List<(int Pos, string Before, string After)>();
         int pos = 0;
         foreach (var ob in ordered)

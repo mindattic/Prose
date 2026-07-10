@@ -389,7 +389,8 @@ if (args.Contains("--legion"))
 // --create-story — those commands must win the dispatch or their calls get
 // hijacked by the SQL seeder.
 if (args.Contains("--seed") && !args.Contains("--write-node")
-    && !args.Contains("--write-story") && !args.Contains("--create-story"))
+    && !args.Contains("--write-story") && !args.Contains("--create-story")
+    && !args.Contains("--run-corpus"))
 {
     var sp = BuildCoreServices(args);
     Environment.ExitCode = await SeedCli.RunAsync(args, sp);
@@ -1645,7 +1646,7 @@ if (args.Contains("--clone-story"))
 //   ss --cost --reset      clear the ledger
 // When appended to another command (e.g. ss --write-node --slug foo --cost),
 // the cost of that command's LLM calls is printed after the command finishes.
-if (args.Contains("--cost") && args.Length == 1)
+if (args.Contains("--cost") && (args.Length == 1 || (args.Length == 2 && (args.Contains("--json") || args.Contains("--reset")))))
 {
     var sp = BuildCoreServices(args);
     Environment.ExitCode = await CostCli.RunAsync(args, sp);

@@ -108,7 +108,7 @@ public class NodeTools
 
         var ids = rows.Select(r => r.Id).ToList();
         var beatCounts = await db.BeatNodes
-            .Where(sb => ids.Contains(sb.NodeId))
+            .Where(sb => ids.Contains(sb.NodeId) && sb.IsEnabled)
             .GroupBy(sb => sb.NodeId)
             .Select(g => new { NodeId = g.Key, Count = g.Count() })
             .ToDictionaryAsync(x => x.NodeId, x => x.Count);
@@ -296,6 +296,11 @@ public class NodeTools
         clone.UpdatedAt       = now;
         db.Nodes.Add(clone);
 
+        // Serializable isolation prevents two concurrent clones from reading the
+        // same beatMax and then colliding on Beat.Number's unique constraint.
+        await using var tx = await db.Database.BeginTransactionAsync(
+            System.Data.IsolationLevel.Serializable);
+
         var beatMax = await db.Beats.MaxAsync(b => (int?)b.Number) ?? 0;
         int nextNum = beatMax + 1;
 
@@ -332,6 +337,7 @@ public class NodeTools
         }
 
         await db.SaveChangesAsync();
+        await tx.CommitAsync();
         return JsonSerializer.Serialize(new
         {
             ok         = true,

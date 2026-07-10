@@ -105,7 +105,9 @@ public class StoryStateService
 
         try
         {
-            var response = await llm.GenerateAsync(system, $"NEW TEXT:\n{newText}", 0.1, 1024, ct: ct);
+            var priorContext = string.IsNullOrWhiteSpace(fullStorySoFar) ? ""
+                : $"PRIOR STORY CONTEXT (for reference — extract changes from NEW TEXT only):\n{(fullStorySoFar.Length > 4000 ? fullStorySoFar[^4000..] : fullStorySoFar)}\n\n";
+            var response = await llm.GenerateAsync(system, $"{priorContext}NEW TEXT:\n{newText}", 0.1, 1024, ct: ct);
             var json = response.Trim();
             json = JsonDefaults.StripCodeFences(json);
 
@@ -159,7 +161,7 @@ public class StoryStateService
         }
 
         // Hard constraints derived from state
-        var dead = state.Characters.Where(kv => kv.Value.Status == "dead").Select(kv => kv.Key).ToList();
+        var dead = state.Characters.Where(kv => "dead".Equals(kv.Value.Status, StringComparison.OrdinalIgnoreCase)).Select(kv => kv.Key).ToList();
         if (dead.Count > 0)
             lines.Add($"DO NOT write these characters as alive or acting: {string.Join(", ", dead)}");
 

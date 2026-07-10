@@ -308,7 +308,7 @@ public class NodeWorkbenchService
         var srcBeats = await db.BeatNodes
             .Where(sb => sb.NodeId == srcNodeId)
             .OrderBy(sb => sb.SortKey)
-            .Join(db.Beats, sb => sb.BeatId, b => b.Id, (sb, b) => new { sb.SortKey, Beat = b })
+            .Join(db.Beats, sb => sb.BeatId, b => b.Id, (sb, b) => new { sb.SortKey, sb.IsEnabled, Beat = b })
             .ToListAsync(ct);
         var now = DateTime.UtcNow;
         foreach (var row in srcBeats)
@@ -335,7 +335,7 @@ public class NodeWorkbenchService
                 UpdatedAt      = now,
             };
             db.Beats.Add(nb);
-            db.BeatNodes.Add(new BeatNode { NodeId = newId, BeatId = nb.Id, SortKey = row.SortKey });
+            db.BeatNodes.Add(new BeatNode { NodeId = newId, BeatId = nb.Id, SortKey = row.SortKey, IsEnabled = row.IsEnabled });
         }
 
         // Recurse into child nodes, preserving their order.
@@ -1323,6 +1323,25 @@ public class NodeWorkbenchService
             WHERE b.Id IN (SELECT BeatId FROM [BeatNodes] WHERE NodeId = {0})
             GROUP BY b.Id
             """, nodeId).ToListAsync(ct);
+        return rows.ToDictionary(r => r.Id, r => r.Cnt);
+    }
+
+    /// <summary>Like <see cref="GetBeatVersionCountsAsync"/> but scoped to an explicit set of beat IDs.
+    /// Use this for book-mode nodes where beats live on ChapterNode children (SS-A43).</summary>
+    public async Task<Dictionary<Guid, int>> GetBeatVersionCountsByIdsAsync(IEnumerable<Guid> beatIds, CancellationToken ct = default)
+    {
+        var idList = beatIds.ToList();
+        if (idList.Count == 0) return new();
+        await using var db = await dbFactory.CreateDbContextAsync(ct);
+        if (!db.Database.IsSqlServer()) return new();
+        var inClause = string.Join(",", idList.Select(id => $"'{id:D}'"));
+        var rows = await db.Database.SqlQueryRaw<BeatVersionCountRow>(
+            $"""
+            SELECT b.Id AS Id, COUNT(*) AS Cnt
+            FROM [Beats] FOR SYSTEM_TIME ALL AS b
+            WHERE b.Id IN ({inClause})
+            GROUP BY b.Id
+            """).ToListAsync(ct);
         return rows.ToDictionary(r => r.Id, r => r.Cnt);
     }
 

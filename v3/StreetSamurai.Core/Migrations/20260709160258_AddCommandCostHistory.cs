@@ -17,7 +17,7 @@ namespace StreetSamurai.Core.Migrations
                 {
                     Id = table.Column<int>(type: "int", nullable: false)
                         .Annotation("SqlServer:Identity", "1, 1"),
-                    CommandName = table.Column<string>(type: "nvarchar(max)", nullable: false),
+                    CommandName = table.Column<string>(type: "nvarchar(256)", maxLength: 256, nullable: false),
                     EstimatedCost = table.Column<double>(type: "float", nullable: false),
                     ActualCost = table.Column<double>(type: "float", nullable: false),
                     AccuracyRatio = table.Column<double>(type: "float", nullable: false),
@@ -28,11 +28,20 @@ namespace StreetSamurai.Core.Migrations
                 {
                     table.PrimaryKey("PK_CommandCostHistories", x => x.Id);
                 });
+
+            migrationBuilder.CreateIndex(
+                name: "IX_CommandCostHistories_CommandName",
+                table: "CommandCostHistories",
+                column: "CommandName");
         }
 
         /// <inheritdoc />
         protected override void Down(MigrationBuilder migrationBuilder)
         {
+            migrationBuilder.DropIndex(
+                name: "IX_CommandCostHistories_CommandName",
+                table: "CommandCostHistories");
+
             migrationBuilder.DropTable(
                 name: "CommandCostHistories");
         }

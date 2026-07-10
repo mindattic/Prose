@@ -28,6 +28,7 @@ public class BeatRepairService(
     public async Task<string?> RepairAsync(
         Guid beatId, Guid nodeId,
         IReadOnlyList<LensIssue> blockers,
+        string? storyBibleOverride = null,
         CancellationToken ct = default)
     {
         if (blockers.Count == 0) return null;
@@ -56,7 +57,9 @@ public class BeatRepairService(
                 .Where(n => n.Id == nodeId)
                 .Select(n => new { n.Seed, n.NodeBible })
                 .FirstOrDefaultAsync(ct);
-            if (node != null)
+            if (storyBibleOverride != null)
+                storyBible = storyBibleOverride;
+            else if (node != null)
                 storyBible = node.Seed ?? node.NodeBible ?? "";
         }
         catch (Exception ex)

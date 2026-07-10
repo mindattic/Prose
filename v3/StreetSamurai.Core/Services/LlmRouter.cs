@@ -71,7 +71,7 @@ public class LlmRouter : ILlmService
         CancellationToken ct = default)
     {
         var provider     = runProvider ?? activeProviderFunc() ?? "claude-api";
-        var resolvedModel = model ?? runModel ?? "(default)";
+        var resolvedModel = model ?? runModel ?? LlmModels.Sonnet;
         log.LogDebug("LlmRouter dispatching to provider={Provider}", provider);
         var sw = System.Diagnostics.Stopwatch.StartNew();
         try
@@ -101,7 +101,7 @@ public class LlmRouter : ILlmService
         CancellationToken ct = default)
     {
         var provider      = runProvider ?? activeProviderFunc() ?? "claude-api";
-        var resolvedModel = model ?? runModel ?? "(default)";
+        var resolvedModel = model ?? runModel ?? LlmModels.Sonnet;
         log.LogDebug("LlmRouter dispatching cached-prefix request to provider={Provider}", provider);
         var sw = System.Diagnostics.Stopwatch.StartNew();
         try

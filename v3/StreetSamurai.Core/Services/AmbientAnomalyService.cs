@@ -10,20 +10,22 @@ public class AmbientAnomalyService
     private readonly WorldbuildingDocRepository docRepo;
     private readonly DistrictRepository districtRepo;
 
-    // Anomaly documents cached on first access
-    private List<(string title, string snippet, List<string> tags)>? anomalyCache;
+    // Thread-safe lazy cache — populated once on first access from any circuit thread.
+    private readonly Lazy<List<(string title, string snippet, List<string> tags)>> anomalyCache;
 
     public AmbientAnomalyService(WorldbuildingDocRepository docRepo, DistrictRepository districtRepo)
     {
         this.docRepo = docRepo;
         this.districtRepo = districtRepo;
+        this.anomalyCache = new Lazy<List<(string, string, List<string>)>>(
+            BuildCache, LazyThreadSafetyMode.ExecutionAndPublication);
     }
 
     /// <summary>Get 0-2 ambient anomaly hints for a scene location.</summary>
     public List<string> GetAmbientHints(string? location, int maxHints = 2)
     {
-        EnsureCache();
-        if (anomalyCache == null || anomalyCache.Count == 0) return [];
+        var cache = anomalyCache.Value;
+        if (cache.Count == 0) return [];
 
         var hints = new List<string>();
         var locationLower = (location ?? "").ToLowerInvariant();
@@ -32,11 +34,11 @@ public class AmbientAnomalyService
         if (!RandomGatePasses()) return [];
 
         // Prefer location-relevant anomalies, fall back to universal ones
-        var relevant = anomalyCache
+        var relevant = cache
             .Where(a => a.tags.Any(t => locationLower.Contains(t)))
             .ToList();
 
-        var pool = relevant.Count >= 2 ? relevant : anomalyCache;
+        var pool = relevant.Count >= 2 ? relevant : cache;
 
         // Pick 1-2 random anomalies
         var count = Random.Shared.Next(1, Math.Min(maxHints + 1, pool.Count + 1));
@@ -62,11 +64,9 @@ public class AmbientAnomalyService
 
     protected virtual bool RandomGatePasses() => Random.Shared.NextDouble() <= 0.6;
 
-    private void EnsureCache()
+    private List<(string title, string snippet, List<string> tags)> BuildCache()
     {
-        if (anomalyCache != null) return;
-
-        anomalyCache = docRepo.GetAll()
+        return docRepo.GetAll()
             .Where(d => d.Tags.Any(t =>
                 t.Contains("anomaly") || t.Contains("inexplicable") || t.Contains("new_weird") ||
                 t.Contains("ghost_building") || t.Contains("lost_block")))
@@ -85,3 +85,4 @@ public class AmbientAnomalyService
             .ToList();
     }
 }
+

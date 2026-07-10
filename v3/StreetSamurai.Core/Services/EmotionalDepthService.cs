@@ -142,11 +142,11 @@ public class EmotionalDepthService
                 join b in db.Beats.AsNoTracking() on sb.BeatId equals b.Id
                 where s.ParentNodeId == nodeId && s is ChapterNode && sb.IsEnabled
                 orderby s.SortKey, sb.SortKey
-                select b.Text
+                select new { b.Text, b.Number }
             ).ToListAsync(ct);
 
-            beats    = rows.Where(t => !string.IsNullOrWhiteSpace(t)).ToList();
-            beatNums = Enumerable.Range(1, beats.Count).ToList();   // one curve point per chapter beat
+            beats    = rows.Where(r => !string.IsNullOrWhiteSpace(r.Text)).Select(r => r.Text).ToList();
+            beatNums = rows.Where(r => !string.IsNullOrWhiteSpace(r.Text)).Select(r => r.Number).ToList();
             effectiveMax = Math.Max(maxChars, 100000);             // representative whole-novel read
         }
         else
@@ -154,7 +154,7 @@ public class EmotionalDepthService
             var beatRows = await (
                 from sb in db.BeatNodes.AsNoTracking()
                 join b in db.Beats.AsNoTracking() on sb.BeatId equals b.Id
-                where sb.NodeId == nodeId
+                where sb.NodeId == nodeId && sb.IsEnabled
                 orderby sb.SortKey
                 select new { b.Text, b.Number }
             ).ToListAsync(ct);
@@ -416,10 +416,16 @@ PROSE:
         await using var db = await dbFactory.CreateDbContextAsync(ct);
         var beatNumbers = curve.Select(c => c.BeatNumber).ToHashSet();
 
+        // SS-A43: beats live on chapter nodes (children) for book-mode stories.
+        var childIds = await db.Nodes.AsNoTracking()
+            .Where(n => n.ParentNodeId == nodeId)
+            .Select(n => n.Id).ToListAsync(ct);
+        var beatNodeIds = childIds.Count > 0 ? childIds : new List<Guid> { nodeId };
+
         var beats = await (
             from sb in db.BeatNodes
             join b in db.Beats on sb.BeatId equals b.Id
-            where sb.NodeId == nodeId && beatNumbers.Contains(b.Number)
+            where beatNodeIds.Contains(sb.NodeId) && beatNumbers.Contains(b.Number)
             select b
         ).ToListAsync(ct);
 

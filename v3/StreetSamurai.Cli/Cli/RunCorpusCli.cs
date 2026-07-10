@@ -172,6 +172,8 @@ public static class RunCorpusCli
         foreach (var entry in state.Nodes)
         {
             if (entry.Stage is "reviewed" or "harvested") continue;
+            // Reset failed nodes so --resume retries them from the start.
+            if (entry.Stage == "failed") entry.Stage = "created";
 
             Console.WriteLine();
             Console.WriteLine($"[run-corpus] ── {entry.Title} ({entry.Slug}) stage={entry.Stage} ──");

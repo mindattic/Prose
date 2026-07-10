@@ -181,8 +181,20 @@ public class FindingsService
             DedupKey     = dedup,
         };
         db.Findings.Add(row);
-        db.SaveChanges();
-        return row.Id;
+        try
+        {
+            db.SaveChanges();
+            return row.Id;
+        }
+        catch (DbUpdateException)
+        {
+            // Concurrent upsert: another caller inserted the same dedup key between our
+            // FirstOrDefault check and our SaveChanges. Re-read the winner's row.
+            db.ChangeTracker.Clear();
+            var winner = db.Findings.FirstOrDefault(f => f.DedupKey == dedup);
+            if (winner != null) return winner.Id;
+            throw;
+        }
     }
 
     public IReadOnlyList<Finding> List(FindingStatus? status = null, int limit = 200)

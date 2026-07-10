@@ -192,6 +192,8 @@ public class ProseReflowService
             if (IsAllowedVerbSwap(a[i], b[i])) { swaps++; continue; }
             return (false, $"word changed at token {i + 1}: '{a[i]}' → '{b[i]}'", swaps);
         }
+        if (CountChar(edited, '?') < CountChar(original, '?'))
+            return (false, "question mark removed", swaps);
         return (true, "", swaps);
     }
 

@@ -14,21 +14,24 @@ public static class CloneNodeCli
 {
     public static async Task<int> RunAsync(string[] args, IServiceProvider services)
     {
-        string? id = null, slug = null, title = null, nodeCode = null, status = "ready";
-        bool isDraft = false;
+        string? id = null, slug = null, title = null, nodeCode = null;
+        string status = "ready";
+        bool isDraft = false, statusExplicit = false;
 
         for (int i = 0; i < args.Length; i++)
         {
             switch (args[i])
             {
-                case "--id":           if (i + 1 < args.Length) id          = args[++i]; break;
-                case "--slug":         if (i + 1 < args.Length) slug        = args[++i]; break;
-                case "--title":        if (i + 1 < args.Length) title       = args[++i]; break;
-                case "--story-code":  if (i + 1 < args.Length) nodeCode  = args[++i]; break;
-                case "--status":       if (i + 1 < args.Length) status      = args[++i]; break;
+                case "--id":           if (i + 1 < args.Length) id       = args[++i]; break;
+                case "--slug":         if (i + 1 < args.Length) slug     = args[++i]; break;
+                case "--title":        if (i + 1 < args.Length) title    = args[++i]; break;
+                case "--story-code":   if (i + 1 < args.Length) nodeCode = args[++i]; break;
+                case "--status":       if (i + 1 < args.Length) { status = args[++i]; statusExplicit = true; } break;
                 case "--draft":        isDraft = true; break;
             }
         }
+
+        if (isDraft && !statusExplicit) status = "draft";
 
         if (string.IsNullOrWhiteSpace(id) && string.IsNullOrWhiteSpace(slug))
         {

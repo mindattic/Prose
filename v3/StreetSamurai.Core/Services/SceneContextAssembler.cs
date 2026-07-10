@@ -181,7 +181,7 @@ public class SceneContextAssembler(
         // P4: inject stored science guidance (deterministic DB read, no LLM call).
         var scienceBlock = BuildScienceBlock(beatId);
         var effectiveBudget = scienceBlock.Length > 0
-            ? Math.Max(tokenBudget - ScienceBlockCharBudget / CharsPerToken, 200)
+            ? Math.Max(tokenBudget - scienceBlock.Length / CharsPerToken, 200)
             : tokenBudget;
 
         var ctx = await AssembleAsync(beat.Text, effectiveBudget, ct);

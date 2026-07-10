@@ -70,8 +70,6 @@ public class ContinuityApplyService
     /// </summary>
     public async Task<ApplyResult> ApplyAsync(string claimUid, CancellationToken ct = default)
     {
-        var byEntity = store.GetByEntity("");  // not useful; we need a single-claim lookup
-        // Find the claim
         var all = new List<ContinuityClaim>();
         foreach (var s in new[] { "CANONICAL", "CONFIRMED", "NEW" })
             all.AddRange(store.GetByStatus(s));

@@ -265,9 +265,7 @@ public class StructuralBlueprintService
             var ordered = await workbench.GetOrderedBeatsAsync(nodeId, ct);
             var (_, units) = GroupUnits(ordered, forceChapter: true);
             var containing = units.FirstOrDefault(u => u.Beats.Any(b => b.Beat.Id == beatId));
-            if (containing == null && beatIndex >= 0 && beatIndex < ordered.Count)
-                containing = units.FirstOrDefault(u => u.Beats.Any(b => b.Beat.Id == ordered[beatIndex].Beat.Id));
-            if (containing == null) return "";
+            if (containing == null) return "";  // new beat not yet in snapshot — don't inject from wrong chapter
             unitIndex = containing.Index;
             totalUnits = units.Count;
             unitLabel = "chapter";

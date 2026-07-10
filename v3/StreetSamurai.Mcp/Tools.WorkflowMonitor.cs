@@ -51,8 +51,14 @@ public class WorkflowMonitorTools(
             .FirstOrDefaultAsync();
         if (node == null) return $"Node not found: {slug}";
 
+        // SS-A43: beats live on chapter children for book-mode stories.
+        var childIds = await db.Nodes.AsNoTracking()
+            .Where(n => n.ParentNodeId == node.Id)
+            .Select(n => n.Id).ToListAsync();
+        var beatNodeIds = childIds.Count > 0 ? childIds : new List<Guid> { node.Id };
+
         var beatIds = await db.BeatNodes.AsNoTracking()
-            .Where(sb => sb.NodeId == node.Id)
+            .Where(sb => beatNodeIds.Contains(sb.NodeId))
             .Select(sb => sb.BeatId)
             .ToListAsync();
 

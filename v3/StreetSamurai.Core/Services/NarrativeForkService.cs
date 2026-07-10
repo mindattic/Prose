@@ -48,7 +48,7 @@ public class NarrativeForkService(
 
             var chapterIds = await db.Nodes.AsNoTracking()
                 .Where(s => s.ParentNodeId == parentNodeId)
-                .OrderBy(s => s.CreatedAt)
+                .OrderBy(s => s.SortKey)
                 .Select(s => s.Id)
                 .ToListAsync(ct);
 
@@ -62,9 +62,9 @@ public class NarrativeForkService(
                     .Where(sb => sb.NodeId == nextChapterId.Value && sb.IsEnabled)
                     .Join(db.Beats.AsNoTracking(),
                           sb => sb.BeatId, b => b.Id,
-                          (sb, b) => new { b.Id, Goal = b.Description ?? b.Title ?? "" })
+                          (sb, b) => new { b.Id, SortKey = sb.SortKey, Goal = b.Description ?? b.Title ?? "" })
                     .Where(x => x.Goal != "")
-                    .OrderBy(x => x.Id)
+                    .OrderBy(x => x.SortKey)
                     .ToListAsync(ct);
                 nextBeats = rows.Select(x => (x.Id, x.Goal)).ToList();
             }
@@ -107,9 +107,9 @@ public class NarrativeForkService(
                 .Where(sb => sb.NodeId == nodeId && sb.IsEnabled)
                 .Join(db.Beats.AsNoTracking().Where(b => b.Text == null || b.Text == ""),
                       sb => sb.BeatId, b => b.Id,
-                      (sb, b) => new { b.Id, Goal = b.Description ?? b.Title ?? "" })
+                      (sb, b) => new { b.Id, SortKey = sb.SortKey, Goal = b.Description ?? b.Title ?? "" })
                 .Where(x => x.Goal != "")
-                .OrderBy(x => x.Id)
+                .OrderBy(x => x.SortKey)
                 .Take(nextBeatWindow)
                 .ToListAsync(ct);
             nextBeats = rows.Select(x => (x.Id, x.Goal)).ToList();

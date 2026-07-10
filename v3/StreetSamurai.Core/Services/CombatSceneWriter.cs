@@ -449,14 +449,13 @@ public class CombatSceneWriter
 
             if (!updated.TryGetValue(charName, out var res)) continue;
 
-            // Parse ammo — "WeaponName=N/max" or "WeaponName=N"
+            // Parse ammo — "WeaponName=N/max" or "WeaponName=N" (scoped to AMMO section only)
             var ammo = new Dictionary<string, int>(res.AmmoByWeapon, StringComparer.OrdinalIgnoreCase);
-            foreach (Match m in Regex.Matches(data, @"(\w[\w\s\-']*?)=(\d+)(?:/\d+)?",
-                RegexOptions.IgnoreCase))
+            var ammoSection = Regex.Match(data, @"AMMO\s+(.+?)(?:\s*\||\s*$)", RegexOptions.IgnoreCase);
+            if (ammoSection.Success)
             {
-                var key = m.Groups[1].Value.Trim();
-                if (!key.Equals("NEURAL", StringComparison.OrdinalIgnoreCase))
-                    ammo[key] = int.Parse(m.Groups[2].Value);
+                foreach (Match m in Regex.Matches(ammoSection.Groups[1].Value, @"(\w[\w\-']*?)=(\d+)(?:/\d+)?"))
+                    ammo[m.Groups[1].Value.Trim()] = int.Parse(m.Groups[2].Value);
             }
 
             // Parse neural charge

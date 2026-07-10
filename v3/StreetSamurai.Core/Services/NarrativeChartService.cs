@@ -93,10 +93,16 @@ public class NarrativeChartService(IDbContextFactory<StreetSamuraiDbContext> dbF
             .FirstOrDefaultAsync(ct)
             ?? throw new ArgumentException($"Node {nodeId} not found.");
 
+        // SS-A43: beats live on chapter children for book-mode stories.
+        var childIds = await db.Nodes.AsNoTracking()
+            .Where(n => n.ParentNodeId == nodeId)
+            .Select(n => n.Id).ToListAsync(ct);
+        var beatNodeIds = childIds.Count > 0 ? childIds : new List<Guid> { nodeId };
+
         // Load beats for this node in story order (via BeatNode join to Beat)
         var beatRows = await db.BeatNodes
             .AsNoTracking()
-            .Where(nb => nb.NodeId == nodeId && nb.IsEnabled)
+            .Where(nb => beatNodeIds.Contains(nb.NodeId) && nb.IsEnabled)
             .OrderBy(nb => nb.SortKey)
             .Include(nb => nb.Beat)
             .Select(nb => new

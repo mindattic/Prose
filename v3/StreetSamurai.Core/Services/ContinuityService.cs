@@ -73,6 +73,20 @@ public class ContinuityService
             return new ClaimUpsertResult { Outcome = "CONFIRMED", Claim = existing };
         }
 
+        // Existing but inactive (REJECTED/SUPERSEDED) — reactivate rather than re-insert (PK collision).
+        if (existing != null)
+        {
+            existing.Status          = "NEW";
+            existing.LastConfirmedAt = now;
+            existing.ExtractedBy     = MergeExtractors(existing.ExtractedBy, incoming.ExtractedBy);
+            db.SaveChanges();
+
+            RecordConfirmation(db, incoming.ClaimUid, incoming.SourceChapterId, incoming.SourcePath, now);
+            db.SaveChanges();
+            tx.Commit();
+            return new ClaimUpsertResult { Outcome = "NEW", Claim = existing };
+        }
+
         // Look for a different-object claim on the same (entity, predicate).
         var conflict = db.ContinuityClaims
             .Where(c => c.EntityId == incoming.EntityId

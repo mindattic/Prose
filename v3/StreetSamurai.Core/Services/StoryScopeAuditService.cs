@@ -182,9 +182,11 @@ public class StoryScopeAuditService(
                 $"{runLength} consecutive beats classified as {runMode} starting around beat {runStart}. Event-type monoculture is Claude's #2 measured fingerprint.",
                 "Vary the event type across the run — the blueprint's event palette assigns one per beat.",
                 "replace", null));
-        else if (modesInOrder.Count > 0)
+        else
             results.Add(Pass("beat_mode_monoculture", "Beat-mode variety",
-                $"Longest same-mode run: {runLength} ({runMode ?? "n/a"}). Coverage: {modesInOrder.Count}/{beats.Count} beats have mode logs."));
+                modesInOrder.Count > 0
+                    ? $"Longest same-mode run: {runLength} ({runMode ?? "n/a"}). Coverage: {modesInOrder.Count}/{beats.Count} beats have mode logs."
+                    : "No beat-mode logs for this story — monoculture check skipped."));
 
         // 4. Emotional-depth plateau (weak secondary signal — labeled as such)
         var exam = await db.EmotionalExaminations.AsNoTracking()

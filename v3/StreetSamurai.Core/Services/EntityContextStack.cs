@@ -95,9 +95,12 @@ public sealed class EntityContextStack
 
     private static void EvictLru(NodeState state)
     {
+        // Prefer evicting low-priority (depth > 0) entries first; fall back to
+        // any LRU entry when all entries are depth-0 to keep count within capacity.
         var lru = state.Entries.Values
-            .Where(e => e.Depth > 0)
-            .MinBy(e => e.LastMentionedBeat);
+                      .Where(e => e.Depth > 0)
+                      .MinBy(e => e.LastMentionedBeat)
+                  ?? state.Entries.Values.MinBy(e => e.LastMentionedBeat);
         if (lru != null)
             state.Entries.TryRemove(lru.EntityId, out _);
     }

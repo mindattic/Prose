@@ -1,3 +1,5 @@
+using System.ComponentModel.DataAnnotations;
+
 namespace StreetSamurai.Core.Data.Entities;
 
 /// <summary>
@@ -8,6 +10,7 @@ namespace StreetSamurai.Core.Data.Entities;
 public class CommandCostHistory
 {
     public int      Id            { get; set; }
+    [MaxLength(256)]
     public string   CommandName   { get; set; } = "";   // e.g. "--write-story"
     public double   EstimatedCost { get; set; }
     public double   ActualCost    { get; set; }

@@ -243,7 +243,12 @@ public class NodeBibleService
         List<BeatPlan>        plans,
         CancellationToken     ct)
     {
-        var existing = await db.BeatNodes.CountAsync(sb => sb.NodeId == nodeId, ct);
+        // SS-A43: beats live on chapter children for book-mode stories.
+        var childIds = await db.Nodes.AsNoTracking()
+            .Where(n => n.ParentNodeId == nodeId)
+            .Select(n => n.Id).ToListAsync(ct);
+        var searchIds = childIds.Count > 0 ? childIds : new List<Guid> { nodeId };
+        var existing = await db.BeatNodes.CountAsync(sb => searchIds.Contains(sb.NodeId), ct);
         if (existing > 0)
         {
             log.LogInformation("[bible] Node {NodeId} already has {Count} beats — skipping planned beat creation.", nodeId, existing);

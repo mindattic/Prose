@@ -56,9 +56,7 @@ public class DocxExportService
             author = string.IsNullOrWhiteSpace(node.Author) ? "MindAttic" : node.Author.Trim();
         else
             author = author.Trim();
-        node.Version++;
-        node.UpdatedAt = DateTime.UtcNow;
-        await db.SaveChangesAsync(ct);
+        var nextVersion = node.Version + 1;  // commit to DB only after file is written
         var ordered = await workbench.GetOrderedBeatsAsync(nodeId, ct);
 
         var baseDir = (settings.PublishExportDirectory ?? string.Empty).Trim().Trim('"', '\'').Trim();
@@ -101,7 +99,7 @@ public class DocxExportService
         pathParts.Add(safeTitle);
         var nodeDir = Path.Combine(pathParts.ToArray());
         cleanup.Clean(nodeDir);
-        var exportPath = Path.Combine(nodeDir, $"{safeTitle} V{node.Version}.docx");
+        var exportPath = Path.Combine(nodeDir, $"{safeTitle} V{nextVersion}.docx");
 
         using (var doc = WordprocessingDocument.Create(exportPath, WordprocessingDocumentType.Document))
         {
@@ -266,6 +264,11 @@ public class DocxExportService
             body.AppendChild(SectionProps());
             main.Document.Save();
         }
+
+        // Commit version increment only after the file is successfully written.
+        node.Version = nextVersion;
+        node.UpdatedAt = DateTime.UtcNow;
+        await db.SaveChangesAsync(ct);
 
         log.LogInformation("Exported node {Node} to {Path}", node.Slug, exportPath);
         return exportPath;

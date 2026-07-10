@@ -1,3 +1,5 @@
+using System.ComponentModel.DataAnnotations;
+
 namespace StreetSamurai.Core.Data.Entities;
 
 /// <summary>
@@ -12,6 +14,7 @@ namespace StreetSamurai.Core.Data.Entities;
 public class ContextOverride
 {
     public int      Id             { get; set; }
+    [MaxLength(256)]
     public string   SessionKey     { get; set; } = "";
     public Guid?    NodeId         { get; set; }   // null = applies to all nodes in this session
     public string   Action         { get; set; } = "";  // "pin" | "exclude"

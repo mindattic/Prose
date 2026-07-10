@@ -259,7 +259,7 @@ public class DataRepairService : PipelineServiceBase
                 var (node, _) = LoadEntityJson(ent.Id);
                 if (node == null) continue;
 
-                if (!DryRun && node["glmzTerritory"] != null) continue;  // Already assigned
+                if (node["glmzTerritory"] != null) continue;  // Already assigned — skip regardless of DryRun
 
                 var name = node["name"]?.GetValue<string>() ?? ent.Name;
                 if (!TerritoryMap.TryGetValue(name, out var territory)) continue;
@@ -477,7 +477,7 @@ public class DataRepairService : PipelineServiceBase
                 // Skip if inside an existing [[...]] link
                 if (linked.Any(s => m.Index >= s.Start && m.Index + m.Length <= s.End)) continue;
                 // Skip if already in replacements
-                if (replacements.Any(r => m.Index >= r.Start && m.Index <= r.Start + r.Length)) continue;
+                if (replacements.Any(r => m.Index < r.Start + r.Length && m.Index + m.Length > r.Start)) continue;
 
                 replacements.Add((m.Index, m.Length, $"[[{canonical}]]"));
             }

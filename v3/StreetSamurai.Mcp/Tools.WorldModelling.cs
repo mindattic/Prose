@@ -292,9 +292,9 @@ public class WorldModellingTools(
             .FirstOrDefaultAsync() ?? nodeId.ToString();
 
         var beats = await db.BeatNodes.AsNoTracking()
-            .Where(sb => sb.NodeId == nodeId)
-            .Join(db.Beats, sb => sb.BeatId, b => b.Id, (sb, b) => new { b.Id, b.Number, b.Text })
-            .OrderBy(b => b.Number)
+            .Where(sb => sb.NodeId == nodeId && sb.IsEnabled)
+            .Join(db.Beats, sb => sb.BeatId, b => b.Id, (sb, b) => new { b.Id, b.Number, sb.SortKey, b.Text })
+            .OrderBy(b => b.SortKey)
             .ToListAsync();
 
         int totalViolations = 0;

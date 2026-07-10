@@ -530,7 +530,7 @@ public class ProseWriterRouter(
         {
           try
           {
-            await monitor.LogBeatActivityAsync(beatId, context.NodeId, universeId,
+            try { await monitor.LogBeatActivityAsync(beatId, context.NodeId, universeId,
             [
                 new("Pacing",              IsApplicable: pacingApplicable,  IsActive: pacingApplicable && enriched.PacingGuidance.Length > 0,                 BlockSizeChars: enriched.PacingGuidance.Length),
                 new("StoryMethodology",    IsApplicable: structApplicable,  IsActive: structApplicable && enriched.StructuralRoleGuidance.Length > 0,         BlockSizeChars: enriched.StructuralRoleGuidance.Length),
@@ -542,6 +542,7 @@ public class ProseWriterRouter(
                 new("SceneContext",        IsApplicable: nodeApplicable,    IsActive: locationContext.Length > 0,                                             BlockSizeChars: locationContext.Length),
                 new("DialogueService",     IsApplicable: nodeApplicable,    IsActive: dialogueContext.Length > 0,                                             BlockSizeChars: dialogueContext.Length),
                 new("EmotionalGuidance",   IsApplicable: nodeApplicable,    IsActive: emotionalGuidanceContext.Length > 0,                                    BlockSizeChars: emotionalGuidanceContext.Length),
+                new("MlProseGuidance",     IsApplicable: nodeApplicable,    IsActive: mlProseGuidanceContext.Length > 0,                                      BlockSizeChars: mlProseGuidanceContext.Length),
                 new("TensionEscalation",   IsApplicable: nodeApplicable,    IsActive: tensionGuidanceContext.Length > 0,                                      BlockSizeChars: tensionGuidanceContext.Length),
                 new("ReaderKnowledge",     IsApplicable: nodeApplicable,    IsActive: readerKnowledgeContext.Length > 0,                                      BlockSizeChars: readerKnowledgeContext.Length),
                 new("Consequence",         IsApplicable: nodeApplicable,    IsActive: consequenceContext.Length > 0,                                          BlockSizeChars: consequenceContext.Length),
@@ -556,21 +557,32 @@ public class ProseWriterRouter(
                 new("StoryScience",        IsApplicable: totalBeats > 0,    IsActive: storyScienceGuidance.Length > 0,                                        BlockSizeChars: storyScienceGuidance.Length),
                 new("NarrativeChart",      IsApplicable: nodeApplicable,    IsActive: offscreenActivityContext.Length > 0,                                    BlockSizeChars: offscreenActivityContext.Length),
                 new("StructuralBlueprint", IsApplicable: nodeApplicable && totalBeats > 0, IsActive: structuralBlueprintGuidance.Length > 0,                  BlockSizeChars: structuralBlueprintGuidance.Length),
-            ], CancellationToken.None);
+            ], CancellationToken.None); }
+            catch (Exception ex) { log.LogWarning(ex, "[ProseWriterRouter] {Service} failed", nameof(WorkflowMonitorService)); }
 
-            await modeDetector.PersistAsync(beatId, universeId, mode, confidence, method, CancellationToken.None);
+            try { await modeDetector.PersistAsync(beatId, universeId, mode, confidence, method, CancellationToken.None); }
+            catch (Exception ex) { log.LogWarning(ex, "[ProseWriterRouter] {Service} failed", nameof(BeatModeDetector)); }
 
-            if (entityContext != null && context.NodeId != Guid.Empty && capturedResult?.Length > 0)
-                await entityContext.ReconcileAsync(capturedResult, context.NodeId, beatId, universeId, CancellationToken.None);
+            if (entityContext != null && context.NodeId != Guid.Empty && !string.IsNullOrWhiteSpace(capturedResult))
+            {
+                try { await entityContext.ReconcileAsync(capturedResult, context.NodeId, beatId, universeId, CancellationToken.None); }
+                catch (Exception ex) { log.LogWarning(ex, "[ProseWriterRouter] {Service}.ReconcileAsync failed", nameof(EntityContextStack)); }
+            }
 
             // Record tension history and extract reader revelations from the completed beat.
             tensionService?.RecordBeat(capturedNodeId, mode);
             if (readerKnowledge != null && capturedNodeId != Guid.Empty && !string.IsNullOrWhiteSpace(capturedResult))
-                await readerKnowledge.ExtractAsync(capturedResult, capturedNodeId, CancellationToken.None);
+            {
+                try { await readerKnowledge.ExtractAsync(capturedResult, capturedNodeId, CancellationToken.None); }
+                catch (Exception ex) { log.LogWarning(ex, "[ProseWriterRouter] {Service}.ExtractAsync failed", nameof(ReaderKnowledgeService)); }
+            }
 
             // Compress completed beat into rolling narrative summary and persist for next session.
             if (narrativeSummary != null && capturedNodeId != Guid.Empty && !string.IsNullOrWhiteSpace(capturedResult))
-                await narrativeSummary.SummarizeSceneAsync(capturedResult, capturedNodeId, beatId == Guid.Empty ? null : beatId, CancellationToken.None);
+            {
+                try { await narrativeSummary.SummarizeSceneAsync(capturedResult, capturedNodeId, beatId == Guid.Empty ? null : beatId, CancellationToken.None); }
+                catch (Exception ex) { log.LogWarning(ex, "[ProseWriterRouter] {Service}.SummarizeSceneAsync failed", nameof(NarrativeSummaryService)); }
+            }
 
             // Open threads: detect new setups, mark resolved threads from this beat.
             if (openThreads != null && capturedNodeId != Guid.Empty && beatId != Guid.Empty && !string.IsNullOrWhiteSpace(capturedResult))

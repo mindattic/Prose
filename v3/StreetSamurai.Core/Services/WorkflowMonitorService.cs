@@ -100,7 +100,7 @@ public class WorkflowMonitorService(IDbContextFactory<StreetSamuraiDbContext> db
             NodeTitle:      node?.Title ?? "Unknown",
             ServiceStats:     byService,
             Gaps:             gaps,
-            TotalBeatsLogged: logs.Select(x => x.BeatId).Distinct().Count());
+            TotalBeatsLogged: logs.Where(x => x.BeatId != null).Select(x => x.BeatId).Distinct().Count());
     }
 
     /// <summary>

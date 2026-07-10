@@ -26,11 +26,20 @@ namespace StreetSamurai.Core.Migrations
                 {
                     table.PrimaryKey("PK_LibertyReports", x => x.Id);
                 });
+
+            migrationBuilder.CreateIndex(
+                name: "IX_LibertyReports_BeatId",
+                table: "LibertyReports",
+                column: "BeatId");
         }
 
         /// <inheritdoc />
         protected override void Down(MigrationBuilder migrationBuilder)
         {
+            migrationBuilder.DropIndex(
+                name: "IX_LibertyReports_BeatId",
+                table: "LibertyReports");
+
             migrationBuilder.DropTable(
                 name: "LibertyReports");
         }

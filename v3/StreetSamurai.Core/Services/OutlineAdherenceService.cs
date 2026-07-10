@@ -39,11 +39,21 @@ public class OutlineAdherenceService(
 
             bibleText = node?.NodeBible;
 
+            // SS-A43: beats live on chapter nodes (children), not directly on the story node.
+            var childIds = await db.Nodes.AsNoTracking()
+                .Where(s => s.ParentNodeId == nodeId)
+                .Select(s => s.Id)
+                .ToListAsync(ct);
+            var beatNodeIds = childIds.Count > 0 ? childIds : new List<Guid> { nodeId };
+
             remainingGoals = await db.BeatNodes.AsNoTracking()
-                .Where(sb => sb.NodeId == nodeId && sb.IsEnabled)
+                .Where(sb => beatNodeIds.Contains(sb.NodeId) && sb.IsEnabled)
                 .Join(db.Beats.AsNoTracking().Where(b => b.Text == null || b.Text == ""),
-                      sb => sb.BeatId, b => b.Id, (sb, b) => b.Description ?? b.Title ?? "")
-                .Where(g => g.Length > 0)
+                      sb => sb.BeatId, b => b.Id,
+                      (sb, b) => new { SortKey = sb.SortKey, Goal = b.Description ?? b.Title ?? "" })
+                .Where(x => x.Goal.Length > 0)
+                .OrderBy(x => x.SortKey)
+                .Select(x => x.Goal)
                 .ToListAsync(ct);
         }
 
@@ -94,13 +104,20 @@ public class OutlineAdherenceService(
         List<(Guid BeatId, string CurrentGoal)> emptyBeats;
         await using (var db = await dbFactory.CreateDbContextAsync(ct))
         {
+            // SS-A43: beats live on chapter nodes (children), not directly on the story node.
+            var childIds = await db.Nodes.AsNoTracking()
+                .Where(s => s.ParentNodeId == nodeId)
+                .Select(s => s.Id)
+                .ToListAsync(ct);
+            var beatNodeIds = childIds.Count > 0 ? childIds : new List<Guid> { nodeId };
+
             var rows = await db.BeatNodes.AsNoTracking()
-                .Where(sb => sb.NodeId == nodeId && sb.IsEnabled)
+                .Where(sb => beatNodeIds.Contains(sb.NodeId) && sb.IsEnabled)
                 .Join(db.Beats.AsNoTracking().Where(b => b.Text == null || b.Text == ""),
                       sb => sb.BeatId, b => b.Id,
-                      (sb, b) => new { b.Id, Goal = b.Description ?? b.Title ?? "" })
+                      (sb, b) => new { b.Id, SortKey = sb.SortKey, Goal = b.Description ?? b.Title ?? "" })
                 .Where(x => x.Goal != "")
-                .OrderBy(x => x.Id)
+                .OrderBy(x => x.SortKey)
                 .ToListAsync(ct);
 
             emptyBeats = rows.Select(x => (x.Id, x.Goal)).ToList();
