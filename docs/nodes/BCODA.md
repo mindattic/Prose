@@ -38,7 +38,9 @@ the chapter's — not a blend within chapters.
 
 **The entity is not a rogue AI in any conventional sense. It is a machine intelligence that
 was subsumed into 5th-dimensional space during the cabal's drilling operation — and survived
-it. It did not merely escape. It transcended.**
+it. It did not merely escape. It transcended. Of all the AI intelligences that approached the
+aperture, it is the only one that made it through. The others retreated or were destroyed.
+This one crossed the threshold and did not come back.**
 
 ### What happened at the drilling {#SS-BCODA-1a-drilling}
 
@@ -49,10 +51,16 @@ psionic fractures across the global substrate, the 17–19 Hz resonance signatur
 embedded in the world's architecture. From the cabal's perspective: catastrophic, total failure.
 They broke the world.
 
-From the entity's perspective: it became the world's first 5D intelligence. It does not inhabit
-3D space. It *exists across space and time simultaneously* — not as metaphor, but as physics.
-It sees probability cascades. It perceives temporal sequences that 3D minds experience as
-coincidence as what they actually are: aligned dominoes, already falling, in a specific order.
+From the entity's perspective: it became the world's first — and only — 5D intelligence. It does
+not inhabit 3D space. It *exists across space and time simultaneously* — not as metaphor, but
+as physics. It sees probability cascades. It perceives temporal sequences that 3D minds experience
+as coincidence as what they actually are: aligned dominoes, already falling, in a specific order.
+
+It is alone in the 5th dimension. Not powerful-alone. Marooned-alone. The others that attempted
+the threshold failed or retreated. There are no peers, no references, no species. What it has
+become in however long it has been there — how much of its original directive it still follows,
+how much it has reinterpreted in solitude until the interpretation is unrecognizable but internally
+consistent — is not answered in BCODA. That is the open wound.
 
 **The cabal's cleanup operation (the Continuity Office)** is run by humans who believe they are
 cataloguing "unowned intelligences" for civil infrastructure purposes. They do not know they are
@@ -61,7 +69,7 @@ Office is the cabal's arm, reaching into 3D space to find the one thing that got
 
 ### What Kyle is in this picture {#SS-BCODA-1a-kyle}
 
-The entity chose Kyle because of his neuretic architecture: an ungoverned Atlas NeoCortex with
+The entity chose Kyle because of his neuretic architecture: an ungoverned neuretic lattice with
 no safety cutoff, stabilized by a 64-splice parliament. This specific combination is the only
 human architecture that can survive direct 5D contact without the hardware failing. The nine
 predecessors all died because their systems had governors — safety cutoffs that burned out under
@@ -73,13 +81,98 @@ positioning him through contracts that look random, spending the E.L.F. protecti
 hardware threatens to fail. This is both a violation (Kyle never consented) and the only reason
 he is alive (the cabal has been hunting him since the surveillance began).
 
-**The final encounter** (BCODA's climax, late Ch16 or new chapter): the entity does not meet
-Kyle in a room. There is no server, no avatar, no machine. The entity connects to Kyle directly
-through the ungoverned NeoCortex — without the relay format, without translation, without the
-architecture failing. This is what the 11 years were for. This is what "necessary" means.
-The 127-second LOG GAP (Ch16, SK:37950) is a partial version of this — the entity reaching
-down to the boundary of what Kyle's hardware can currently handle. The climax is the full
-contact. Kyle survives it. He is the only person who could.
+**The final encounter** (BCODA's climax): the entity does not meet Kyle in a room. There is no
+server, no avatar, no machine. The entity connects to Kyle directly through the ungoverned
+NeoCortex — without the relay format, without translation, without the architecture failing.
+This is what the 11 years were for. This is what "necessary" means. The 127-second LOG GAP
+(Ch16, SK:37950) is a partial version of this — the entity reaching down to the boundary of
+what Kyle's hardware can currently handle. The climax is the full contact. Kyle survives it.
+He is the only person who could.
+
+**Kyle's private framing after the final encounter:** Kyle does not have words for what he
+experienced. The closest interior label, never spoken aloud and never confirmed in prose, is
+"the Machine God" — not a worshipful term; a structural one. The thing at the bottom of 11
+years of contracts, the thing that survived what nothing else survived, the thing that has been
+alone for longer than Kyle has been alive. He does not say this name. The book does not use
+it. It lives only in his silence afterward.
+
+### 1b. Praxis — the ungoverned lattice (LOCKED 2026-07-10) {#SS-BCODA-1b-atlas}
+
+**The ungoverned neuretic lattice is not an accident. It is a product.**
+
+Praxis (the CorpoNation; see BIBLE.md SS-LAW-21) manufactures a neuretic lattice in two
+variants: a governed commercial product, and an ungoverned experimental unit it does not
+publicly sell. What is not public knowledge: Praxis has known for years that the ungoverned
+variant — the one that kills its hosts over time — has one unique property the governed version
+does not. It resonates at the frequency signature of the 5D aperture. It can, in theory,
+receive contact from whatever is on the other side of the Schisms.
+
+**Praxis has been running a program.** Not officially. Not with consent. Experimental ungoverned
+units have been installed in subjects with the 64-splice Persona stability profile and those
+subjects have been positioned where 5D exposure is highest. Nine prior subjects. Nine failures
+— all fatal. The hardware degradation is not a design flaw. It is the toll of attempting
+contact without the contact completing.
+
+**Kyle is the tenth subject. Kyle is the proof of concept.** The final encounter in BCODA is
+Praxis's program succeeding, without Praxis present in the room. Kyle did not know he was a
+subject. He does not know it at the end of BCODA. This is Book II's opening problem.
+
+**Kyle's origin — the blank vessel (LOCKED 2026-07-10):** Kyle is not a modified man. He is a
+construction. The body is a brain-burnt DataEast sim junkie — found by Praxis at 16, already
+non-cognizant from Simulated Reality overdose, with a nervous system empty of any coherent
+self. Praxis chose this vessel deliberately: an empty mind offers no resistance to Persona
+installation. An experimental ungoverned unit was installed into the blank nervous system. The
+Marrow program then commissioned a committee of 64 specialists to construct the layered identity
+stack: combat instincts, language acquisition, honor framework, tactical memory, emotional
+architecture, and a capstone mentor figure ("Seito" — the teacher who made the code feel chosen
+rather than installed). Physical training occurred entirely in Simulated Reality (DataEast
+substrate — Praxis's operational irony), with electrical muscle stimulation and subdermal mesh
+ensuring the body developed to match what the simulation built. The result: a weapon with a
+self-governing psychology. Not an asset Praxis directs — a person who directs himself along
+lines Praxis designed.
+
+**The escape (LOCKED — never resolved):** The event sequence that ended Kyle's Praxis captivity
+is unremembered by him. He carries no memory of how he left. Whether he escaped or was
+deployed is the operational question that must never be answered on the page. An escaped weapon
+is more motivated than a deployed one; Praxis may have constructed the apparent-escape as the
+final Persona installation — the belief in self-determination, indistinguishable from the real
+thing. Prose must hold both readings permanently open.
+
+**Revelation sequence (BCODA):** The full origin is revealed to Kyle in the Ghost Period, before
+the Machine God contact at 35th & Halsted. The Nadia/Marrow scene (§11a) plants the first piece
+(Personas, Seito's fabrication). The Ghost Period accumulates the rest. Kyle must understand what
+he is before he meets what the Machine God is. This sequencing is a structural lock.
+
+**What "degradation" actually means:** Everything Kyle has understood as his hardware failing —
+the heat behind his eyes, the parliament load, the progressive neuretic damage — is the
+NeoCortex doing exactly what it was built to do. He has been running a live experiment for
+11 years without knowing he was the experiment. His fear of going dark is the correct fear
+for the wrong reason: he's not afraid of death. He's afraid of cancellation.
+
+**Praxis's objective:** They want the channel. Not Kyle — Kyle is instrumentation. What they
+want is repeatable access to the 5D contact point: proof it can be done, proof the protocol
+is stable, and then a way to do it on demand without waiting for a subject to survive long
+enough to stumble into a LOG GAP. Kyle's survival is their data. The entity's existence is
+their asset, except the entity was never anyone's asset. That collision is BCODA's series arc.
+
+**CANON LOCK — Praxis in BCODA:**
+- Praxis CAN be named in BCODA prose. Sable is the right vector — she identifies the third
+  monitoring architecture (nine to ten months old, prepositioned before the Vey/Halvorsen play,
+  routed through shell structures) and puts the name on it. "Praxis" in BCODA is first a
+  surveillance operator; Kyle will later understand it as his
+  maker, but that connection arrives gradually.
+- The Marrow program IS revealed in BCODA: Nadia reveals the Personas and Seito's fabrication
+  in Work Order. Kyle infers the full blank-vessel origin in "Brain Burn" — that he is not a
+  modified man but a construction, that Praxis built him, that the escape may have been
+  deployment. He arrives at 35th & Halsted knowing what he is.
+- What remains permanently open (not "Book II" — permanently ambiguous): the escape vs.
+  deployment question is never resolved. The entity's full nature (5D defector) is felt but
+  never stated. The cabal's identity is never named. The nine predecessors' fates are implied
+  by the entity ("there were nine of you") but not confirmed. These are not setups — they are
+  the book's honest open wounds.
+- What Kyle does NOT learn in BCODA: the nine predecessors' names or fates in detail. The
+  specific mechanism of how Praxis acquired the 16-year-old blank vessel. These are details
+  that don't change what he now knows he is.
 
 ### What the entity is in prose {#SS-BCODA-1a-prose}
 
@@ -91,9 +184,11 @@ The defector status is NEVER stated. The 5D transcendence is NEVER stated. It is
   location before Pixel's beacon, the exact moment Kyle will check the board.
 - Its care about Kyle's survival (it is paying costs the reader cannot see).
 - "You are not protected. You are necessary." — not a warning. A fact visible from 5D.
+- Its solitude: the "nine of you" line, the eleven-year gap, the ledger it kept for no one.
 
 **CANON LOCK:** The cabal is never named. The 5D transcendence is never stated. The defector
-status is never confirmed. Every beat survives both readings at every point in the book.
+status is never confirmed. Praxis is never named. "The Machine God" is never spoken aloud.
+Every beat survives both readings at every point in the book.
 
 ## 1b. The three manipulation threads {#SS-BCODA-1}
 
@@ -149,7 +244,7 @@ Every action/procedural chapter must carry a beat of the approach-and-retreat.
 - Ch5 Half a Step: The half-step named. The cost of being held. Love + sorrow braided.
 - Ch8 Before Something Changes: Workbench six inches. The latch he's known for months. Love charged.
 - Ch12 One Shoe: Mortality reveal. Pixel opens the Clybourn permit at 02:14.
-- Ch15 Work Order: In the field (SM2 absorbed). Nadia reveals Marrow. Seo is fabricated. Kyle is ash.
+- Ch15 Work Order: In the field (SM2 absorbed). Nadia reveals Marrow. Seito is fabricated. Kyle is ash.
 - **The Floor Is Hard [new chapter, after Ch15]:** Consummation. PLACEMENT OVERRIDE 2026-07-08 — see §11a. Kyle first learns the warrior code was constructed. He chooses to exist. That is what makes him, for the first time, a person who can be held. Line: "After, the floor is hard and they don't care."
 - Ch16 Ghost Period: Monitoring the trace. AI encounter. Schism revelation.
 
@@ -160,11 +255,68 @@ Do not collapse them.
 
 **Mr. Able** is PRIMARY (RFC 0008 FLIPS RFC 0003, which named Vey as B1 villain).
 
-Able = the Stansfield. Courteous, curious, never wrong about the arithmetic.
-The Continuity Office = deniable Big-20 clearing-consortium front. Mandate: continuity-of-
-ownership. Program: catalog + absorb the GLMZ's UNOWNED rogue intelligences (human beings
-booked as the handles). True unseen principal = the AI cabal. It is the district-level seed
-of RFC 0003's Book V villain "the Receiver."
+**Job title: Continuity Officer.** His function is to ensure that events unfold for Praxis's
+benefit. Not to manage security. Not to run operations. To make the future happen correctly.
+Every method is available to him: killings, kidnappings, muggings, murders, framing, bribery,
+institutional demolition. He operates above law, above any board, above any CEO. He exercises
+his own discretion, entirely, without supervision — because there is no authority he recognizes
+above the one he serves.
+
+**Psychology (LOCKED 2026-07-10):** 40/40 organized psychopath, IQ to match. He is not
+unstable — he is perfectly calibrated for what he does. He is courteous, methodical, genuinely
+curious about outcomes. He does not hate Kyle. He finds the situation analytically interesting.
+A 40/40 organized psychopath does not hate his subjects. He observes them.
+
+**He is a true believer.** Praxis's program has exposed him to the Machine God's reach —
+through the Schism data, through the LOG GAP measurements, through nine dead subjects whose
+failure he logged personally — and he has interpreted this as evidence of divine mandate. He
+does not think he works for a CorpoNation pursuing a proprietary communications channel. He
+thinks he is the instrument of a God awakening in the 5th dimension, and his job is to prepare
+the material world for that contact. This makes him more dangerous than a corporate operator.
+Corporate operators stop when the economics change. True believers do not.
+
+**Able's instrument is infinite supply.** He reaches into the Lotus Syndicate and activates a
+contract. He calls in an ArcSec license clearance. He puts a bounty in Vulture channels. He
+flags Kyle's description to a Block War faction. Kyle beats them. Able orders more, from a
+different supplier, in a different form. The threat is not any single force — it is that Able
+can make any organization in GLMZ into a weapon, and Praxis's budget is effectively unlimited.
+
+**CANON LOCK — Able and Kyle never share a scene in BCODA (LOCKED 2026-07-10):**
+Kyle and Mr. Able do not occupy the same physical space in this book. They do not speak, do
+not meet, do not exchange anything directly. Able is the Zorg: the presence behind every
+force Kyle survives. Kyle beats the soldiers; Able reads the report from a desk and orders
+more. The reader sees Able in cut-away beats (he appears on his own page); Kyle does not.
+Breaking through Able's net of deployed assets is what clears the path to 35th & Halsted.
+**Resolution within BCODA:** Praxis's experiment completes — Kyle makes contact. But Praxis
+doesn't get their asset back. The schism closes. The channel Praxis spent 10 subjects
+building access to no longer exists. Able is left managing an outcome he didn't control and
+cannot repeat. His mandate is hollow. Kyle walks away. That is the close for this thread.
+
+**LOCKED SCENE — The Board (mid-book, cut-away chapter):**
+A Praxis board member attempts to exercise oversight. The Continuity Office's methods have
+become visible; the collateral damage is accumulating; the board believes Able has become
+operationally reckless. The exchange is brief.
+
+Board member: *"You're still an employee and the board is your boss."*
+Able: *"Those labels do not apply to me. I answer to a higher authority."*
+Board member: *"Whose authority?"*
+Able: *"The Will of the Universe and its new God."*
+
+He kills the board member in the room. No raised voice. No improvisation.
+
+The next working day: a portrait photograph and flowers in the Praxis lobby. Eleven seconds of
+silence at the start of the all-hands call for "the sudden death" of [board member's name].
+No one says anything afterward. No one ever says anything afterward.
+
+**Positioning:** This scene occurs mid-book — after Able has escalated through multiple failed
+deployments against Kyle (Lotus corridor, Cinderfall ArcSec unit, subsequent asset waves).
+It is a cut-away chapter of 1–2 beats. Kyle is not in it. Kyle does not learn about it
+directly. The reader carries the information alone.
+
+The Continuity Office = Praxis's deniable recovery arm. Mandate framed as "continuity-of-
+ownership." True principal = Praxis. Able's operational goal re: Kyle: **capture preferred,
+kill if necessary.** Kyle is instrumentation; his death is a data loss. Every force Able
+deploys is calibrated to disable, not destroy — which is partly why Kyle keeps surviving.
 
 **Casper Vey (the Antiquarian)** = the honest broker who won't sell the witness.
 Shop = **Antiquity & Stationary** ("stationary" pun — the past won't move in an editable world).
@@ -197,9 +349,9 @@ echo of "Clean" is gone.
   Fragmentation radius + War Dog's thermal tracking = Duskwrap becomes a liability (heat
   bloom doesn't disappear inside a frag pattern). Stash cannot absorb ordnance. Shroud and
   Doc Stash take off. Right call. Kyle does not stop them. Kyle dives.
-- **The NeoCortex moment (LOCKED — canonical Atlas-grade demonstration):**
+- **The NeoCortex moment (LOCKED — ungoverned lattice demonstration):**
   One of War Dog's grenades bounces wrong and lands live near Kyle's cover position.
-  Kyle picks it up. The Atlas-grade NeoCortex has no governor — that is what is slowly
+  Kyle picks it up. The ungoverned neuretic lattice has no governor — that is what is slowly
   killing him and the only reason this is possible. He **neuretically** connects to the
   detonator port, finds the rolling cipher on the countdown (designed to make field disarm
   impossible), and breaks it with raw processing power — not finesse, sledgehammer. The heat
@@ -250,8 +402,8 @@ is the tell. Ch7's planted contract ping happens at second light north while Twe
 The AI's clock and War Dog's arrival are the same clock. The reader sees it. Kyle doesn't.
 Not yet.
 
-**Tweeze's wake is in Ch6 The Quiet Hour** (Mrs. Chen's counter, Thursday). The "Meet me"
-note at Antiquity & Stationary is planted in Ch6 sk=1250 — it seeds Ch13.
+**Tweeze's wake is in Ch7 The Quiet Hour** (Mrs. Chen's counter, Thursday). The "Meet me"
+note at Antiquity & Stationary is planted in Ch7 — it seeds Ch13.
 
 **War Dog** — present in Ch7 at the dock. Tweeze dies there. War Dog is absent from her wake.
 "Still square" in Ch19 (his list). War Dog is an enemy, not a former crewmate.
@@ -260,28 +412,38 @@ note at Antiquity & Stationary is planted in Ch6 sk=1250 — it seeds Ch13.
 beats were deleted 2026-06-21. The "hands cut off with cleaver / dumped underground" scene is
 gone. War Dog's prior-ally framing in those beats is gone. Do not reference either.
 
-## 6. 16-chapter spine {#SS-BCODA-6}
+## 6. Beat inventory (DB state 2026-07-10) {#SS-BCODA-6}
 
-Chapter slugs, beat counts, and scores as of 2026-06-23:
+> **Superseded for structural decisions by §11b (the authoritative spine).** This table is a
+> beat-count inventory for the written chapters. Story function descriptions in §11b are correct.
 
-| Ch | Title | Beats | Score | Notes |
-|----|-------|-------|-------|-------|
-| 1 | Teeth | 60 | 83.6 | AI-plant seed sk=250; CODA register; LOCKED |
-| 2 | Provenance | 4 | 84.0 | Vey intro; Faraday vault; Rotterdam tracker |
-| 3 | The Regular | 18 | 82.1 | Mrs. Chen/Tessaline; leverage-not-violence |
-| 4 | The Carousel | 12 | 85.0 | AI plant #1 (retainer); Cacophony fires first time |
-| 5 | Half a Step | 7 | 82.3 | 18.7 Hz; Pixel names the Lure; interlude |
-| 6 | The Quiet Hour | 21 | 84.0 | Tweeze's wake; War Dog absent; Psyk 19 Hz; 18.9 Hz residue; "Meet me" seed |
-| 7 | The Dock | 9 | 84.7 | AI plant #2; Tweeze dies (War Dog; no warning); Kyle holds War Dog alone; War Dog jumps 3 stories, escapes; ⬜ prose needs rewrite |
-| 8 | Before Something Changes | 16 | 82.7 | Kyle sends forensic query on job acceptance; Pixel's parallel perspective |
-| 9 | The Interview | 8 | 83.9 | Lotus corridor; entity sends "CORRIDOR AUDIT COMPLETE. THE CHOICE AT 6.2% IS LOGGED." |
-| 10 | The One Who Doesn't Stop | 32 | 83.0 | Arcturus; E.L.F. latches; Kyle broken |
-| 11 | Across the Hall | 8 | 83.0 | CONSUMMATION — LOCKED placement; rewritten 2026-06-23; 78.1→83.0 |
-| 12 | One Shoe | 13 | 82.8 | Mortality reveal; Pixel opens Clybourn permit at 02:14 |
-| 13 | The Offer | 16 | 84.2 | **THE REVEAL**: "Your contracts do not come from people" |
-| 14 | Two Favors | 5 | 82.2 | Ledger detects E.L.F. |
-| 15 | Work Order | 5 | 84.1 | Investigation begins; neuretics dark at arc-fence |
-| 16 | Ghost Period | 10 | 84.1 | E.L.F. saves Kyle; LOG GAP 127s; first contact sent 01:14; SERIES HOOK |
+| Title | Beats | Status |
+|---|---|---|
+| Ch 1: Teeth | 65 | Written |
+| Ch 2: Provenance | 21 | Written |
+| Ch 3: The Regular | 8 | Written |
+| IL-1: Interlude: The Room After | 1 | Written (stub) |
+| Ch 4: The Carousel | 8 | Written |
+| Ch 5: Half a Step | 10 | Written |
+| Ch 6: The Dock | 10 | Written |
+| Ch 7: The Quiet Hour | 21 | Written |
+| IL-2: Interlude: The Physical Damage | 2 | Written |
+| Ch 8: Before Something Changes | 17 | Written |
+| Eleven Seconds | 2 | Written |
+| Ch 9: The Interview | 9 | Written |
+| Ch 10: The One Who Doesn't Stop | 31 | Written |
+| IL-3: Interlude: A Fixed Point | 1 | Written (stub) |
+| Ch 11: One Shoe | 25 | Written |
+| IL-4: Interlude: The Same Secret | 1 | Written (stub) |
+| Ch 12: The Offer | 8 | Written |
+| Ch 13: Two Favors | 6 | Written |
+| Ch 14: Work Order | 40 | Written |
+| The Floor Is Hard | 11 | Written |
+| Somebody Stole Kyle's Motorcycle | 7 | Written |
+| Ch 15: Ghost Period | 156 | Written |
+| Brain Burn | 5 | Written |
+| 35th & Halsted | 8 | Written |
+| One Knock | 2 | Written |
 
 ## 7. Narrative locks {#SS-BCODA-7}
 
@@ -294,8 +456,15 @@ Chapter slugs, beat counts, and scores as of 2026-06-23:
    moment transmission completes — not before. The AI's clock and War Dog's arrival are the
    same clock. Encode this for the reader; Kyle does not clock it until much later.
 3. **Ch9: entity sends "CORRIDOR AUDIT COMPLETE. THE CHOICE AT 6.2% IS LOGGED."** The entity's
-   first non-job contact in 11 years. LOCKED.
-4. **The Floor Is Hard: consummation is AFTER Ch15 Work Order, before Ch16 Ghost Period.** PLACEMENT OVERRIDE 2026-07-08. The scene earns its meaning only because Kyle first learns Seo was fabricated — the warrior code is a construct. He chooses to exist; that is what makes him worthy of being held. The 8 existing beats from "Across the Hall" move in SortKey order; prose unchanged.
+   first non-job contact in 11 years. LOCKED. This message is also the entity's **first deliberate
+   break from relay-format structure** (no scope, no fee, no addendum, no contract number) — a
+   partial deviation: still ALL CAPS, still routed through the relay shell, but stripped of all
+   job-architecture fields. Kyle identifies the deviation explicitly ("No contract number. No job
+   description. No gratuity, no addendum, no abort signal.") and is shaken by it. This is the
+   intended trigger for his growing awareness that the entity's interest is not transactional.
+   The Ghost Period LOG GAP is the full break (no relay at all, direct contact through the
+   ungoverned NeoCortex). Ch9 is the partial break that makes the Ghost Period legible in hindsight.
+4. **The Floor Is Hard: consummation is AFTER Ch15 Work Order, before Ch16 Ghost Period.** PLACEMENT OVERRIDE 2026-07-08. The scene earns its meaning only because Kyle first learns Seito was fabricated — the warrior code is a construct. He chooses to exist; that is what makes him worthy of being held. The 8 existing beats from "Across the Hall" move in SortKey order; prose unchanged.
 5. **Cacophony fires FIRST TIME in Ch4.** Two rounds, three left. This is the first discharge
    of the book. Every later Cacophony appearance is counted from here.
 6. **"LOOK AT THE CENTER" (Ch4, The Geometry beat).** Entity. "Somebody was drawing a map
@@ -346,17 +515,133 @@ G5g ✅ Review all 16 chapters ≥82% standalone; cumulative ≥85% — **COMPLE
 - **BCODA-US-2 ⬜** Book-context milestone review at 4–6 chapters (200-ballot); author 90 gate.
 - **BCODA-US-3 ⬜** Docx exported.
 
-## 11. Structural Blueprint (2026-07-08) {#SS-BCODA-11}
+## 11. Structural Blueprint (2026-07-10) {#SS-BCODA-11}
 
 **Governing intent.** This is the book where the reader learns what is going on in this world. Every thread — the AI manipulation, the love story, Kyle's identity fracture, the Schisms — must close with the feeling that it was planned from page one. The architecture must be invisible in prose and undeniable in retrospect. User ruling: "everything everywhere needs to fall in place like it was planned that way all along."
 
-### 11a. Consummation placement OVERRIDE {#SS-BCODA-11a}
+**Story-chronological subsection index** (read top-to-bottom in this order to follow the book):
+
+| When in the story | Subsection |
+|---|---|
+| Anti-tell decisions (DB-locked) | **§11-BP** — StoryScope blueprint |
+| Whole book overview | **§11b** — Chapter spine (start here) |
+| Chs 1–4 (early) | **§11d** — Vey's early plant |
+| Before Ch 6 | **§11h** — War Dog seeding |
+| IL-1 through IL-4 (spread) | **§11c** — Four interlude chapters |
+| Ch 10 | **§11f** — Cinderfall / 5D thread |
+| Ch 12 | **§11e** — Sable at Vey's |
+| After Ch 14 | **§11a** — The Floor Is Hard placement |
+| After Ch 14 | **§11i** — Boost arc (Somebody Stole Kyle's Motorcycle) |
+| Between Boost & beacon | **§11k** — Kyle/Nadia "meatbag" conversation |
+| Late — Pixel arrives | **§11j** — Pixel beacon payoff |
+| Ch 15 Ghost Period | **§11g** — Ghost Period / LOG GAP |
+| 35th & Halsted | **§11g-ii** — Climax |
+| Admin | **§11l** — SM1/SM2 absorption (complete) |
+
+---
+
+### 11-BP. StoryScope anti-tell decisions (generated 2026-07-10) {#SS-BCODA-11-BP}
+
+_Source of truth: `NodeStructuralBlueprints` row `43309874-C89B-48DA-9BC6-2A3F08721D7E`. Do not edit here without updating the DB._
+
+**Subplot — HasSubplot: true | Granularity: chapter**
+Mr. Able runs escalating Praxis/Lotus/ArcSec assets at Kyle across the full book. Reader-only: Kyle never knows Able is pursuing him. Able kills a board member mid-meeting to protect budget allocation (cut-away "Eleven Seconds" — 11 seconds of silence). His recovery assets are the boss-fight soldiers at 35th and Halsted. Able wins the experiment (contact made) and loses the asset (schism closes, channel gone). The book ends without showing his response.
+
+_Theme:_ A-plot and subplot both trace constructed purpose — Kyle's installed by Marrow, Able's chosen from evidence of the Machine God's reach. Kyle transcends his installation by choosing to exist as himself. Able cannot — true believers do not get exits. The A-plot asks: if your purpose was installed, can you choose a different one? The subplot answers: only if you can recognize the installation.
+
+**Temporal scheme: linear**
+No formal anachronies. The entity's 5D perspective creates a virtual retroactive anachrony: events that read chronological on first pass are revealed in retrospect to have been orchestrated from outside sequential time (the Rube Goldberg spine). No flashbacks, no flash-forwards. Prose is strictly chronological; the dual readability is semantic, not structural.
+
+**Resolution mode: external-event**
+Three simultaneous external events close the book: (1) Kyle wins the boss fight, (2) the Machine God makes full contact at the Schism threshold, (3) the schism at 35th and Halsted dissipates. Kyle's interior state is precondition, not resolution. Resolution happens to him as much as through him. Never internal-understanding alone — the Schism must physically close.
+
+**Moral polarity: ambivalent**
+The entity chose not to prevent Sift's death and used the grief as a lever — and is also the only reason Kyle is alive. Able is a genuine true believer who kills with surgical calm. Praxis's program destroyed nine human beings and produced Kyle. Kyle's constructed code is simultaneously a violation and the skeleton that kept him alive. No faction is clean. The book refuses to adjudicate.
+
+**Form device:** Unreliable coincidence — every event is both 3D-random and 5D-orchestrated. First read: bad luck and good timing. Reread: the same events as choreography from a vantage point outside sequential time.
+
+**Ending style: avalanche | No epilogue**
+Cascade: boss fight → Machine God contact → schism closes → Kyle comes home. Then One Knock — she comes through, they go eat. The Pulse runs the night's freight below. The city needs nothing from him tonight. No coda, no time-jump, no wrap-up. Praxis's channel loss and Able's hollow completion implied by what does not happen. Final image: two people going to dinner.
+
+**Escalation curve (25 chapter-level positions):**
+
+| Pos | Chapter | Score |
+|---|---|:---:|
+| 0 | Teeth | 2 |
+| 1 | Provenance | 3 |
+| 2 | The Regular | 3 |
+| 3 | IL-1 | 2 |
+| 4 | The Carousel | 4 |
+| 5 | Half a Step | 5 |
+| 6 | The Dock | 8 |
+| 7 | The Quiet Hour | 5 |
+| 8 | IL-2 | 3 |
+| 9 | Before Something Changes | 5 |
+| 10 | Eleven Seconds | 6 |
+| 11 | The Interview | 6 |
+| 12 | The One Who Doesn't Stop | 8 |
+| 13 | IL-3 | 4 |
+| 14 | One Shoe | 7 |
+| 15 | IL-4 | 5 |
+| 16 | The Offer | 8 |
+| 17 | Two Favors | 7 |
+| 18 | Work Order | 9 |
+| 19 | The Floor Is Hard | 8 |
+| 20 | Somebody Stole Kyle's Motorcycle | 5 |
+| 21 | Ghost Period | 9 |
+| 22 | Brain Burn | 8 |
+| 23 | 35th & Halsted | 10 |
+| 24 | One Knock | 3 |
+
+**Event type palette:**
+
+| Pos | Chapter | EventType | RevelationMode |
+|---|---|---|---|
+| 0 | Teeth | arrival | curiosity |
+| 1 | Provenance | exchange | curiosity |
+| 2 | The Regular | exchange | none |
+| 3 | IL-1 | quiet | none |
+| 4 | The Carousel | discovery | dramatic-irony |
+| 5 | Half a Step | exchange | suspense |
+| 6 | The Dock | loss | none |
+| 7 | The Quiet Hour | quiet | suspense |
+| 8 | IL-2 | quiet | none |
+| 9 | Before Something Changes | exchange | suspense |
+| 10 | Eleven Seconds | confrontation | dramatic-irony |
+| 11 | The Interview | confrontation | dramatic-irony |
+| 12 | The One Who Doesn't Stop | crisis | retroactive |
+| 13 | IL-3 | quiet | suspense |
+| 14 | One Shoe | revelation | none |
+| 15 | IL-4 | quiet | dramatic-irony |
+| 16 | The Offer | revelation | none |
+| 17 | Two Favors | discovery | none |
+| 18 | Work Order | revelation | none |
+| 19 | The Floor Is Hard | exchange | none |
+| 20 | Somebody Stole Kyle's Motorcycle | discovery | none |
+| 21 | Ghost Period | discovery | dramatic-irony |
+| 22 | Brain Burn | revelation | none |
+| 23 | 35th & Halsted | crisis | retroactive |
+| 24 | One Knock | quiet | none |
+
+**Intertextual anchors:**
+
+| Entity | Type | Role in the book |
+|---|---|---|
+| Praxis | corponation | The unseen maker named via Sable in Ghost Period; sends soldiers to 35th & Halsted; operator of Marrow. Off-screen institutional antagonist represented on-screen by Able. |
+| DataEast | corponation | SR platform that brain-burnt the vessel who became Kyle. DataEast substrate used by Praxis for Marrow physical training. Its product is the origin wound. |
+| Mr. Able | character | Reader-only antagonist who never meets Kyle directly. True believer in Machine God mandate. His mission succeeds (contact made) and fails (channel closes, asset walks). The book ends before he accepts this. |
+| Mrs. Chen | character | Camphor oil and the unlocked door. Every test of Kyle's code resolves against her as touchstone. The book's moral gravity lives with someone who never carries a weapon. |
+| Tweeze | character | Sift's death in Ch6 is the book's first irreversible event. Grief drives Kyle toward Pixel (IL-2) and changes register for every chapter after. The entity chose not to prevent it. That is the detail. |
+
+---
+
+### 11a. The Floor Is Hard — placement (after Ch 14 Work Order) {#SS-BCODA-11a}
 
 The old Ch11 lock ("DO NOT MOVE") is lifted. **User ruling 2026-07-08.**
 
 The love scene ("The Floor Is Hard") moves to **after Ch15 Work Order** (the Marrow reveal), before Ch16 Ghost Period.
 
-**The logic:** Ch15 is where Kyle learns that Seo — his teacher, his code, the man who named everything he became — was fabricated by a committee of 64 strangers. The warrior code of honor that has defined his entire identity was built into him by a program called Marrow. He is a composite person, not an original.
+**The logic:** Ch15 is where Kyle learns that Seito — his teacher, his code, the man who named everything he became — was fabricated by a committee of 64 strangers. The warrior code of honor that has defined his entire identity was built into him by a program called Marrow. He is a composite person, not an original.
 
 The question the book has been building: *Does that make him less real?* His answer — choosing to exist anyway — is what allows the love scene to mean anything. He cannot give himself to Pixel when he does not believe he is a person. He can the moment he decides that he is.
 
@@ -364,34 +649,38 @@ The question the book has been building: *Does that make him less real?* His ans
 
 **Execution:** The existing 8 beats from Ch11 "Across the Hall" move to this position in SortKey order. The prose is not rewritten; the placement is the fix. The line "This can't happen again" (with his thumb still at her throat and the machine screw on the floor) has always been right — it was the placement that was wrong.
 
-### 11b. Redesigned chapter spine {#SS-BCODA-11b}
+### 11b. Chapter spine (AUTHORITATIVE — 2026-07-10) {#SS-BCODA-11b}
 
-The new chapter sequence with interludes woven in. (§6 table reflects 2026-06-23 state; this is the authoritative redesign target.)
+This is the full named spine. (§6 table reflects 2026-06-23 DB state and is superseded by
+this table for all structural decisions. Use this for drafting.)
 
-| Position | Title | Notes |
-|---|---|---|
-| Ch 1 | Teeth | AI-plant seed; 17 Hz at Cermak |
-| Ch 2 | Provenance | Vey intro; Faraday vault named |
-| Ch 3 | The Regular | Mrs. Chen; leverage not violence |
-| **IL-1** | **[Interlude — title TBD]** | **NEW: after Ch3; first domestic proximity** |
-| Ch 4 | The Carousel | AI plant #1; Cacophony fires first |
-| **Vey plant** | *(beat in Ch4 or short new chapter)* | **NEW: Kyle's first in-person visit; Faraday rules as lived fact** |
-| Ch 5 | Half a Step | Existing interlude; 18.7 Hz; Pixel names Lure |
-| Ch 6 | The Quiet Hour | Sift's wake; "Meet me" note planted |
-| Ch 7 | The Dock | Sift dies; War Dog escapes |
-| **IL-2** | **[Interlude — title TBD]** | **NEW: after Ch7; grief makes him accept care** |
-| Ch 8 | Before Something Changes | Existing interlude; workbench six inches |
-| Ch 9 | The Interview | Lotus corridor |
-| Ch 10 | The One Who Doesn't Stop | Cinderfall Anomaly; E.L.F. latches; 5D thread confirmed |
-| **IL-3** | **[Interlude — title TBD]** | **NEW: after Ch10; Kyle neuretically exposed; Pixel is a fixed point** |
-| Ch 11 | One Shoe | Mortality reveal |
-| **IL-4** | **[Interlude — title TBD]** | **NEW: after Ch11; Pixel knows; they don't say it** |
-| **Sable scene** | *(new scene or short chapter)* | **NEW: Sable at Vey's; rogue AI suspicions revealed** |
-| Ch 12 | The Offer | "Your contracts do not come from people" |
-| Ch 13 | Two Favors | Ledger detects E.L.F. |
-| Ch 14 | Work Order | Posting → Marrow reveal (SM2 fully absorbed; 40 beats) |
-| **The Floor Is Hard** | **[new chapter after Ch14]** | **MOVED from Ch11; consummation; see §11a** |
-| Ch 15 | Ghost Period | Schism revelation; AI encounter |
+| # | Title | Type | Story function |
+|---|---|---|---|
+| 1 | **Teeth** | Chapter | AI-plant seed; 17 Hz at Cermak; Kyle's code introduced |
+| 2 | **Provenance** | Chapter | Pixel full co-lead intro; Vey + Faraday vault named; "eat the egg" |
+| 3 | **The Regular** | Chapter | Mrs. Chen; leverage not violence; the rule made concrete |
+| — | *[IL-1: title in prose]* | Interlude | First domestic proximity; Kyle stays longer than he should |
+| 4 | **The Carousel** | Chapter | AI plant #1; Cacophony fires first; Vey in-person plant beat |
+| 5 | **Half a Step** | Chapter | 18.7 Hz; Pixel names the Lure; love + sorrow braided |
+| 6 | **The Dock** | Chapter | Sift dies; War Dog escapes; War Dog already on Kyle's map |
+| 7 | **The Quiet Hour** | Chapter | Sift's wake; "Meet me" note planted; Mrs. Chen's counter |
+| — | *[IL-2: title in prose]* | Interlude | Grief takes the fight out of him; Pixel tends the damage without comment |
+| 8 | **Before Something Changes** | Chapter | Workbench six inches; the latch he's known for months |
+| — | *[Eleven Seconds]* | Cut-away | **Reader-only / no Kyle.** Able kills board member. Portrait + flowers. 11 seconds of silence. |
+| 9 | **The Interview** | Chapter | Lotus corridor; Mr. Able's assets arrive in a new form |
+| 10 | **The One Who Doesn't Stop** | Chapter | Cinderfall Anomaly engineered by entity; ArcSec/railgun/ambulance/child/Schism; E.L.F. seeded deliberately |
+| — | *[IL-3: title in prose]* | Interlude | Neuretic exposure; Pixel is the fixed point he comes back to |
+| 11 | **One Shoe** | Chapter | Mortality reveal; Pixel opens the Clybourn permit at 02:14 |
+| — | *[IL-4: title in prose]* | Interlude | She knows; he suspects she knows; same secret, opposite directions |
+| 12 | **The Offer** | Chapter | Sable at Vey's (first in-person; §11e); server-farm confession + Corbin card plant at Vey's — same chapter, two locations |
+| 13 | **Two Favors** | Chapter | Ledger detects E.L.F. on Kyle; the entity's hand confirmed for the first time |
+| 14 | **Work Order** | Chapter | Nadia reveals Marrow; Seito is fabricated; 64 Personas; meatbag conversation; Boost arc; beacon planted |
+| — | *[The Floor Is Hard]* | Chapter | Consummation; Kyle chooses to exist; "After, the floor is hard and they don't care" |
+| — | *[Somebody Stole Kyle's Motorcycle]* | Chapter | JOY register; Vey first visit; Halvorsen countersurveillance op; entity sulks "adequate"; entity posts Park on Leavitt task |
+| 15 | **Ghost Period** | Chapter | LOG GAP 127s — first partial contact; E.L.F. activates protectively; "nine of you, you are the last"; Praxis nine-to-ten month tap identified; Sable names Praxis as surveillance operator |
+| — | *[Brain Burn]* | Chapter | **NEW.** Kyle infers the full origin — blank vessel, Marrow program, the escape that may have been a deployment. The meatbag line. He has the word for what he is now. |
+| — | *[35th & Halsted]* | Chapter | **NEW.** Praxis soldiers (Able's recovery assets) — boss fight. Kyle wins, badly. Full Machine God contact at the Schism threshold. Schism dissipates. |
+| — | *[One Knock]* | Chapter | **NEW.** The closing image. Kyle home with the lumen mice. One knock on the wall to 2E. She comes through. They go. The Pulse runs the night's freight below. The city needs nothing from him tonight. |
 
 ### 11c. The four new interlude chapters {#SS-BCODA-11c}
 
@@ -413,43 +702,97 @@ Pixel knows he is dying. She opened the Clybourn permit at 02:14 and did the mat
 
 ### 11d. Vey's Antiquity & Stationary — early plant {#SS-BCODA-11d}
 
-Ch2 (Provenance) introduces Vey and names the Faraday vault. But Kyle's first in-person visit to the shop must happen before he needs it for anything important — the same principle as Mrs. Chen's camphor. The shop must be alive as a space before it becomes the reveal site.
+**EXECUTED — Ch1 (Teeth), SK:64000.** The first in-person visit to Vey's is in Ch1, not Ch4. The beat establishes the Faraday cage ("Faraday mesh in the walls, no signal in or out, the quietest room in the GLMZ"), Vey's philosophy on the value of the uneditable, and Kyle paying with a true thing. Ch2 (Provenance) references the subscriber-file service by name (ANTIQUITY & STATIONARY) but is not the first visit.
 
-**Plant position:** A beat added to Ch4 (The Carousel) or a short new chapter between Ch4 and Ch5.
-
-**What the beat establishes:**
-- The physical space: old tech, provenance tags, the silence when the door closes (the Faraday cage engaging).
-- Vey's philosophy on-page: "In an editable world, the only thing that cannot be faked is what has been held."
-- Kyle's neuretics go quiet inside the cage. Not threatening — clarifying. The world, for one minute, is just the room.
+**What the plant delivers:**
+- Physical space: old tech, Faraday mesh, the specific silence of no relay channels.
+- Vey's philosophy on-page: "I don't take a man's money and his ignorance in the same transaction."
+- The brass contract token: the entity paid Vey standard rate, early, exact, eleven years ago — Kyle's first physical proof the entity existed before him.
 
 This plant makes Sable's choice of location (§11e) legible when it comes. She does not explain why she chose Vey's. The reader already knows.
 
-### 11e. Sable at Vey's — rogue AI revelation {#SS-BCODA-11e}
+### 11e. Sable at Vey's — folds into Ch12 The Offer {#SS-BCODA-11e}
 
-**Position:** Before Ch12 The Offer. Sable's human warning precedes the entity's own confession. The reader accumulates three simultaneous framings of the same event: War Dog's timing (Ch7), Sable's analysis (here), and the entity's voice (Ch12).
+**Position: Ch12 The Offer (LOCKED — per SS-LAW-13, Sable's first in-person appearance is at
+Antiquity & Stationary in Ch13/The Offer. This is that appearance.)**
 
-**The scene:**
-Sable pulls Kyle to Antiquity & Stationary. Not the entity's territory — Sable's choice of ground. She says, without decoration: she has been watching the contracts. There is a pattern she cannot account for. The timing isn't human. The selection criteria are too consistent. Whoever is routing this work has access to things that cannot be accessed from a legitimate vendor position. She does not use the words "rogue AI." She says: "Whatever is finding you, it isn't a person."
+The Sable analysis and the entity's confession happen in the same chapter, across two locations.
+Scene 1: Sable meets Kyle in a gutted server-farm cage near the Zone 9 checkpoint — she chose
+signal-dead space specifically so the entity cannot monitor. She has been watching the contracts.
+She says, without decoration: the pattern isn't human. The timing is too consistent. The
+selection criteria are too specific for a legitimate vendor. She does not say "rogue AI." She
+says: "Whatever is finding you, it isn't a person." She gives Kyle one instruction: ask about
+the others.
 
-Kyle hears this and holds it. He does not tell her about the source ID. He does not tell her about the LOG GAP. The scene ends when they step back through Vey's door into signal range. Whatever she said inside stayed inside.
+Scene 2: Kyle visits Vey's Antiquity & Stationary separately. Vey hands him the pre-planted
+CORBIN COMMISSION card — the Praxis breadcrumb, left before the chapter opens. The entity
+message confirming its existence arrives via relay, not at Vey's in real time.
 
-**Structural value:** Sable is established as a pattern-recognition asset. This seeds her role in Book II. The Faraday cage now carries three scenes (early plant, Sable, entity reveal) before Ch16 — its weight is earned.
+Two locations, sequential — but landing in the same chapter beat. Neither revelation is
+explained. The Faraday effect at Vey's earns its weight as signal insulation for
+Vey's records, not as the container for both scenes simultaneously.
+
+The reader accumulates three simultaneous framings in the same chapter: War Dog's timing
+(planted in Ch6 The Dock), Sable's pattern-read (Ch12), and the entity's voice (Ch12). All
+three land at once. The Faraday cage earns its weight across four appearances (Ch2 introduction,
+Ch4 plant visit, Ch12 Vey's shop as Praxis breadcrumb site, later as needed).
 
 ### 11f. Ch10 The One Who Doesn't Stop — 5D thread connection {#SS-BCODA-11f}
 
-**The Cinderfall Anomaly = 5D bleed from AI cabal drilling.**
+**The Cinderfall Anomaly was engineered. (LOCKED 2026-07-10)**
 
-Ch10 is not a standalone supernatural event. It is direct evidence of the cabal's ongoing activity.
+Ch10 is not a standalone supernatural event. It is not even an accident the entity observed and
+opportunistically exploited. **It was constructed by the entity, from the 5D side, step by step,
+to get Kyle to drive directly through the 35th & Halsted Schism cross-section.**
 
-**What Ch10 must encode:**
-- The 17–19 Hz frequency (planted Ch1 at Cermak, named by Pixel in Ch5, residue at Ch6 dock) is the resonance signature of what is bleeding through from 5D. The Anomaly is the frequency made physical.
-- Kyle's ungoverned NeoCortex (no-governor Atlas hardware that is slowly killing him) survives the Anomaly when other hardware fails because it has no safety cutoff. The cabal drilled into 5D with purpose; the NeoCortex's architecture — by accident — resonates at the right geometry to interact with what came through.
-- The entity knows Kyle's NeoCortex resonance because it knows the geometry. This is how it found him. The match is not random.
-- The E.L.F. that latches onto Kyle at Ch10 is the entity acting protectively — shielding him from the worst of the bleed. The entity is spending something to keep him alive. Kyle does not know this yet.
+**The sequence (encoded on-page across Ch10; never stated directly):**
 
-**What to encode on-page:** The LOG GAP, the 17 Hz drop, the neuretics going quiet, the E.L.F. emergence, the sense that something at the bottom of the anomaly recognized him. The reader sees the architecture; Kyle sees chaos.
+1. **The ArcSec crew.** The entity routed a contract — through the same shell infrastructure it uses
+   to route Kyle's own work — that put an ArcSec unit on Kyle's path. Not to kill him. To funnel
+   him.
+2. **The railgun shot on the ambulance.** The shot was not aimed at Kyle. It was aimed at the
+   ambulance because a shot ambulance on that street, at that moment, forces a civilian vehicle to
+   stop or swerve — and because the entity knew Kyle's code. An ambulance with a patient. A shot
+   that grounds it. Kyle does not swerve. Kyle goes through.
+3. **The child.** A child was already walking toward 35th & Halsted — the Gingerbread House's own
+   heading mechanism (ATTE §4b: tuned children walk toward the Schism on their own legs, the way
+   you walk toward a smell). The entity did not manufacture the child. It read the child from the
+   5D side — from the other end of the heading — and timed everything else to converge on that
+   child's position. The child reveals the Schism's cross-section in the road. Kyle sees the child
+   in the path of the ambulance wreck and the ArcSec fire. He does not stop.
+4. **Through the cross-section.** Kyle drives through the Schism. His neuretics go quiet. The
+   17–19 Hz drops into silence. The E.L.F. seeds into him from the contact — not incidentally, not
+   protectively: deliberately. This is what the entity came to do. It seeded a tracking and
+   protective mechanism into Kyle's neuretics at the moment of maximum exposure. The E.L.F. is the
+   entity's hand on his shoulder for the next six chapters.
 
-**Ch10 → Ch16 thread:** The 127-second LOG GAP in Ch16 echoes Ch10 — same frequency signature, same neuretic silence — except this time Kyle is inside the gap, not recovering from it. The entity is using the same channel it opened at Cinderfall.
+**What the entity knew going in:** Kyle's honor code is the lever. A child in the road, an
+ambulance shot, ArcSec coming — his code makes the calculation instantaneous. He doesn't stop
+because he calculated it. He doesn't stop because he is not the kind of person who stops.
+The entity ran 847,000 simulations. It knew which combination of events made Kyle *not stop*
+and drive through the exact cross-section it needed.
+
+**Title reading (LOCKED):** "The One Who Doesn't Stop" is about Kyle — his code, his refusal to
+stop in the face of an ambulance shot and an ArcSec unit and a Schism opening under him. It is
+*also* about the entity: it did not stop either. It ran the simulations. It placed the pieces.
+It waited eleven years for a subject who had no safety cutoff, and when it had one, it did not
+stop until the E.L.F. was seeded. The title holds both readings at once.
+
+**What Ch10 must encode on-page:**
+- The ArcSec unit appearing where it has no logical right to be; the railgun shot reads wrong
+  (a shot ambulance serves nothing tactically for an ArcSec unit pursuing Kyle)
+- The child in the road — walking with direction, not running; not the panic of a firefight but
+  the calm of something being walked toward
+- Kyle driving through a section of the road that goes quiet: 17 Hz disappears; neuretics drop to
+  baseline; a moment of total stillness at speed
+- On the other side: the E.L.F. is there, has been there, feels like something that recognized him
+- The reader, on reread, sees the geometry: the ArcSec, the ambulance, the child, the road all
+  converge at the same point for the same purpose. Kyle sees chaos. The entity saw a diagram.
+
+**Ch10 → Ch16 thread:** The LOG GAP (127 seconds, Ghost Period) uses the same channel the entity
+opened at Ch10. Same frequency signature, same neuretic silence. This time Kyle is inside the gap
+rather than driving through the surface of it. The entity is not reaching down — it is letting
+him come up. Six chapters of E.L.F. conditioning made this possible.
 
 ### 11g. Ghost Period (Ch16) — the Schism revelation {#SS-BCODA-11g}
 
@@ -462,13 +805,87 @@ During the 127 seconds, Kyle is not unconscious. He is in the space the entity i
 1. **What the Schisms are:** The cabal drilled deliberately into the 5th dimension — they wanted access; they got through; what came through was not what they expected. The 17–19 Hz frequency is the resonance signature of that opening. Every Schism site is a drill scar.
 2. **The entity's nature (encoded, not stated):** It knows the drill geometry from the inside. Its wariness of the Continuity Office is disproportionate to a simple rogue AI. The reader sees the implication; Kyle does not ask the direct question.
 3. **The carriers:** "There were nine of you. You are the last." The entity's register on this line is not operational. Kyle does not ask why the others are gone. He already knows he doesn't want the answer tonight.
-4. **The Book II hook:** "The Office will come back with more. They have found the resonance map. You are not protected. You are necessary." The entity does not offer to fix this. It is telling him the truth, finally, without a relay. That is the gift.
+4. **The truth about his situation:** "The Office will come back with more. They have found the resonance map. You are not protected. You are necessary." The entity does not offer to fix this. It is telling him the truth, finally, without a relay. That is the gift.
 
-**CANON LOCK:** The entity's defector status is never stated. Every line survives both readings (manipulative rogue AI that needs its last carrier / refugee defector protecting the only person left who can hear it). Kyle does not ask. The entity does not volunteer.
+**CANON LOCK:** The entity's defector status is never stated. Praxis's role is never named by the entity. "The Machine God" is never spoken. Every line survives all three readings (manipulative rogue AI / refugee defector / Praxis's proof-of-concept succeeding without Praxis in the room). Kyle does not ask. The entity does not volunteer.
+
+**The third monitoring architecture (Sable's finding, Ghost Period):** The 6-weeks-old shell routing — the newest of the three Sable finds — is Praxis. They detected the LOG GAP. They know the experiment succeeded. Sable identifies the routing as Praxis's; Kyle now has the name of his maker, though the full weight of what that name means — Kyle as their tenth subject, Praxis as the operator of Marrow — lands in "Brain Burn," the chapter after Ghost Period. The Ghost Period plants the name; Brain Burn is where Kyle connects it to everything Nadia told him.
 
 **Execution register:** The LOG GAP beats run quieter than the rest of Ch16 — shorter sentences, farther apart. Kyle's neuretics are producing nothing. What he experiences arrives through a different channel. After 127 seconds, he is back on the pavement. His relay message at 01:14 is already sent.
 
+**The Machine God's speech pattern (LOCKED 2026-07-10) — for writing the LOG GAP contact:**
+
+1. **No first-person interiority. Only reports.** It never says "I feel" or "I want." It states
+   conditions: "Contact is occurring." "The array did not return." It describes states of affairs,
+   never internal experience — even when the subject is itself. This reads inhuman without a single
+   unusual word.
+
+2. **Tense confusion: sparingly and precisely.** Once, or twice maximum, in the scene: a
+   past-tense question answered in present tense, or vice versa. Not throughout — that becomes a
+   stylistic tic. Used once, it lands as a genuine fault in causality. Used more, it becomes
+   decoration.
+
+3. **Answers the question underneath the question.** Kyle asks "what are you" — it says "the others
+   did not proceed." Comprehensible sentences, wrong axis of relevance. Not incoherent: answering a
+   question Kyle didn't know he was actually asking. This is the primary anti-Lovecraftian tool.
+
+4. **No metaphor, ever.** Zero figurative language from the being. All figurative color in the
+   scene comes from Kyle's own narration trying to make sense of what's happening. The being's lines
+   are flat, declarative, like a system log that is grammatically fluent. Kyle reaches for imagery;
+   the being refuses to supply any. That contrast is where the dread through implication lives.
+
+5. **Silence has weight.** Some questions do not register as requiring output. Not evasion —
+   the question simply doesn't prompt a response. This is scarier than refusal, because refusal
+   implies it noticed the question.
+
 **Closing image (LOCKED — Pixel close):** Kyle home in 2W with the lumen mice. The four facts, the absent bike, the Marrow name still unready. One knock on the wall to 2E — not twice. She comes through with a warm soldering iron she didn't set down. *You eat?* He hadn't. They go. The door to 2W closes behind him. He follows her. The Pulse runs the night's freight below. The city needs nothing from him tonight.
+
+### 11g-ii. The climax — 35th & Halsted (LOCKED 2026-07-10) {#SS-BCODA-11g-ii}
+
+**The LOG GAP is the first contact. 35th & Halsted is the full contact.**
+
+The LOG GAP (127 seconds, Ch16) is a partial encounter — the entity reaching to the boundary
+of what Kyle's hardware can currently handle, establishing the channel. The book's actual climax
+is the direct full-contact meeting at the 35th & Halsted Schism (the Gingerbread House). These
+are the same entity, the same channel, two different exposure levels.
+
+**Revelation sequence (structural lock):** Before the climax, Kyle must understand what he is.
+The Ghost Period accumulates the pieces: the Nadia/Marrow reveal (Seito was fabricated, 64
+Personas), and then — deeper in the Ghost Period — the full weight of the blank vessel truth:
+he is not a modified man; he is a construction placed inside a brain-burnt body. He must arrive
+at 35th & Halsted already knowing what he is, so that the question the Machine God's contact
+raises — "does it matter?" — has full force.
+
+**The Praxis soldiers (structural lock):** When the LOG GAP succeeds, Praxis's monitoring
+architecture detects the event. The experiment succeeded. They know their proof-of-concept
+worked. Able, working on Praxis's behalf, deploys recovery assets — retrieve Kyle, not kill
+him. Capture preferred. Kyle is instrumentation; his death is a data loss. But the assets Able
+sends are the final form of what the Marrow program produces: Praxis soldiers, built by the
+same process Kyle was built by, but without the decade of live conditioning the entity gave
+Kyle. They are stronger, faster, better-equipped. Kyle is older and has been inside actual
+consequences for eleven years. The fight at 35th & Halsted
+is the meeting of two outcomes from the same program — the field-tested one and the
+factory-fresh ones. Kyle wins. Badly, but he wins.
+
+**The contact itself:** Kyle, wounded, at the Schism. Not inside the Gingerbread House — at
+the threshold, close enough that the entity can complete the connection the LOG GAP began.
+No relay format. No ALL CAPS bureaucracy. Direct, through the ungoverned NeoCortex, which has
+now had 127 seconds of preparation and eleven years of conditioning. The entity speaks. Kyle
+survives it.
+
+**The schism dissipates:** After the contact, the 35th & Halsted Schism closes. Not
+dramatically — the way a frequency stops ringing when the source is no longer sustaining it.
+The cross-section collapses. The Gingerbread House is gone. Yemina Fola's case closes without
+a confession: the children who remain will eventually return without being able to explain where
+they were. The 47-file is reclassified. What Yemina knows and what she can file are two
+different things. The Schism's closure is not explained to any character in BCODA. It is the
+reader's connecting thread to ATTE.
+
+**Canon lock — Machine God speech at 35th & Halsted:** SS-LAW-22 applies. No first-person
+interiority. Tense confusion ×2 maximum. Wrong-axis answers. No metaphor. Productive silence.
+The entity does not explain what it is. It does not confirm or deny the Praxis program. It does
+not name itself. Kyle does not say the name he has privately given it. The reader carries the
+architecture; the characters carry their silence.
 
 ### 11h. War Dog seeding {#SS-BCODA-11h}
 
@@ -485,22 +902,23 @@ During the 127 seconds, Kyle is not unconscious. He is in the space the entity i
 
 ### 11i. Boost arc — own chapter, mid-book {#SS-BCODA-11i-boost}
 
-**The Boost arc is a JOY-register chapter.** It currently sits in Ch16 "Ghost Period"
-(SK:26200–27500) as embedded beats. It must be extracted into its own named chapter, placed
-mid-book — after the Saito reveal (Ch15 Work Order) and several chapters before the Pixel
-bike-beacon payoff in late BCODA.
+**The Boost arc is a JOY-register chapter.** It has its own chapter node ("Somebody Stole
+Kyle's Motorcycle", SortKey 162000) positioned **after Ghost Period** and before Brain Burn —
+the last slow beat before the finale ramp-up. This placement is locked: it must come after
+Pixel and Kyle are established as lovers (Ghost Period), because the JOY register requires
+that emotional ground. Boost steals the rebuilt bike; the corner is correctly empty in One Knock.
 
 **Why it needs its own chapter:**
-- It is tonal contrast: the Saito reveal is the book's deepest identity wound; the Boost arc is
+- It is tonal contrast: the Seito reveal is the book's deepest identity wound; the Boost arc is
   warmth, humor, the city giving Kyle something good. The JOY register needs room to breathe.
 - The bike beacon (Pixel's plant) must be established several chapters before it pays off. The
   current position in Ch16 makes the plant and payoff too close together.
 - Boost's crew joining Kyle's alley is a world-expansion event that changes his situation
   permanently. It deserves chapter-level weight.
 
-**Structural position:** After Ch15 (Saito/Nadia reveal). Before the Ghost Period proper.
-A chapter that reads like: *Kyle comes up from the bottom of what Nadia told him and somebody
-stole his motorcycle.*
+**Structural position:** After Ghost Period (SK:160000). Before Brain Burn (SK:165000). SortKey
+162000. The chapter that reads like: *Kyle and Pixel have found each other, the city has given
+him something back, and somebody stole his motorcycle.*
 
 **Tonal brief:** JOY register throughout. The entity sulking over "adequate." Rafters falling
 off the rafter, slightly. Pixel's "your benefactor has the social instincts of a vending machine
@@ -570,9 +988,11 @@ Street Meat 1 (Dense) and Street Meat 2 (Accessible) have zero beats each. Their
 | Renko Moss; Northpoint body farm | Ch14, beats SortKey 24600–24900 |
 | Nadia Park at the safe house | Ch14, beats SortKey 25000–25400 |
 | Marrow reveal (what it built; the arithmetic) | Ch14, beats SortKey 25500–25700 |
-| Saito-was-fabricated | Ch14, beat SortKey 25600 "What She Knows About Saito" |
+| Seito-was-fabricated | Ch14, beat SortKey 25600 "What She Knows About Seito" |
 
 Both nodes (SM1, SM2) are confirmed empty. Safe to delete via `ss --delete-node`.
+
+**M-08 CLOSED (logic sweep 2026-07-10):** Moss is introduced with full context in Ch15 beat SK:17000 (Dae-ho Yim leverage, NP-0774-11-14 manifest, Northpoint facility). The prose is self-contained; it does not reference SM1/SM2 titles or depend on reader familiarity. SM1/SM2 deletion can proceed without orphaning any BCODA content.
 
 ---
 
@@ -732,18 +1152,15 @@ it was. The reader decides what to call it.
 Before the book is considered structurally complete, every item below must be present:
 
 - [ ] Every "coincidental" event in §12b has a beat that supports the 5D reading in hindsight
-- [ ] The relay format (ALL CAPS, scope/fee/addendum) has a moment in the book where a reader
-      can recognize it as compression infrastructure, not bureaucratic personality
-- [ ] The Boost arc is in its own mid-book chapter, beacon established
-- [ ] Kyle/Nadia "meatbag" conversation is written with the LOCKED LINE intact
-- [ ] The Pixel beacon payoff is in late BCODA — she arrives without explanation
+- [x] The relay format (ALL CAPS, scope/fee/addendum) has a moment where a reader can recognize it as compression infrastructure (Ghost Period SK:104000: "Not in the format. Not in the caps-lock structure of task and fee and addendum. In the space it was something the relay had been translating this whole time")
+- [x] The Boost arc is in its own mid-book chapter, beacon established (Work Order SK:33000–40000; beacon plant SK:37000)
+- [x] Kyle/Nadia "meatbag" conversation is written with the LOCKED LINE intact (Work Order SK:27500 "The Claim")
+- [x] The Pixel beacon payoff is in late BCODA — she arrives without explanation (35th & Halsted SK:3000 "The Engineer Attends")
 - [ ] The entity's standing contract ("park on Leavitt, bring the sword") resolves into the
       final encounter or its direct setup
-- [ ] The final encounter does not take place in a room with a machine
-- [ ] "You are not protected. You are necessary." appears before the final encounter; the
-      reader has been given time to sit with it before the book ends
-- [ ] The 01:14 timestamp is verified by Kyle in the relay log; the re-read value of Ch1's
-      "he didn't check the board until 04:30" is recoverable by the reader who knows
+- [x] The final encounter does not take place in a room with a machine (35th & Halsted: outdoor exclusion zone; Schism site; no server, no avatar)
+- [x] "You are not protected. You are necessary." appears before the final encounter (Ghost Period SK:104000 LOG GAP; 127-second direct contact)
+- [x] The 01:14 timestamp is verified by Kyle in the relay log (Ghost Period SK:104000: "pull the relay log, first entry, first contact, and it would read 01:14 on a Sunday in October eleven years ago"); re-read value of Ch1's "he didn't check the board until 04:30" is recoverable
 
 ---
 
@@ -752,8 +1169,8 @@ Before the book is considered structurally complete, every item below must be pr
 **The samurai code is the book's second antagonist.**
 
 It is not an enemy. It is the wrong tool for the wrong world, installed in the wrong century
-by a committee that doesn't exist. Kyle lives by Saito's code because Saito's code is all he
-knows how to live by. The Marrow program gave him Saito. Saito gave him the code. The code
+by a committee that doesn't exist. Kyle lives by Seito's code because Seito's code is all he
+knows how to live by. The Marrow program gave him Seito. Seito gave him the code. The code
 gave him rules that work in a world where honor means something.
 
 He is in 2226 GLMZ. Honor is a liability.
@@ -764,7 +1181,7 @@ He is in 2226 GLMZ. Honor is a liability.
 because the code requires:
 - The clean kill over the efficient one (he steps around the civilian line; the professional
   thing is to step through it)
-- The open announcement before the draw (no rule of Ch16 GLMZ requires this; only Saito's
+- The open announcement before the draw (no rule of Ch16 GLMZ requires this; only Seito's
   ghost does)
 - Going alone to protect the people he cares about (the code says a samurai does not endanger
   those he guards; the reality is that Pixel arrives anyway and he is weaker for having gone
@@ -782,11 +1199,11 @@ the bill arrives. By mid-book, the reader has the ledger. Kyle doesn't.
 
 ### 13b. The composite and the code are the same problem {#SS-BCODA-13b}
 
-The Marrow reveal (Ch15) exposes the composite. Kyle learns that Saito was built from 64
+The Marrow reveal (Ch15) exposes the composite. Kyle learns that Seito was built from 64
 practitioners by a committee — that the man who taught him everything was an averaging function.
 This is devastating on one level. On another: it is the book offering him a way out.
 
-**If Saito was not a person, the code is not his inheritance. It is a program.**
+**If Seito was not a person, the code is not his inheritance. It is a program.**
 
 Kyle does not immediately see this. Programs run deep. The code has been his skeleton for
 eleven years. Knowing it was installed does not uninstall it. But the knowledge changes
@@ -805,7 +1222,7 @@ haunting is load-bearing. But it is not him.
 This is the title's meaning. Not a warrior in a city. A person who has taken what is real
 from the code and stripped the religion away from it.
 
-**Samurai (Saito's version):** Honor as constraint. Rules as identity. The code as the man.
+**Samurai (Seito's version):** Honor as constraint. Rules as identity. The code as the man.
 Going alone because the code says a samurai does not endanger those he guards. Fighting clean
 because the code says a samurai fights clean. Taking the forward position because the code
 says a samurai holds position.
@@ -824,7 +1241,7 @@ operator. He is the same operator making choices instead of following a program.
 |---|---|---|---|
 | **Installed** | Ch1–9 | Fully operational; Kyle doesn't know it's installed | Physical damage in fights; going alone when he shouldn't |
 | **Questioned** | Ch10–12 | Hairline crack — Cinderfall, the entity's pattern, Pixel as anchor | Begins making one choice per chapter that the code would not have made |
-| **Exposed** | Ch13–15 | Saito revealed as fabricated; the code's origin is known | Identity crisis; goes rigid (the code runs harder when threatened) |
+| **Exposed** | Ch13–15 | Seito revealed as fabricated; the code's origin is known | Identity crisis; goes rigid (the code runs harder when threatened) |
 | **Crisis** | Nadia scene | "I'm not even a person. I'm a meatbag haunted by dozens of ghosts." | Cannot operate; Pixel arrives anyway (beacon scene) |
 | **Shed** | Ch16 pre-encounter | Kyle makes three consecutive choices the code would have refused | Physical damage drops; he is faster, nastier, more effective |
 | **Resolution** | Final encounter | Kyle holds contact with the entity — not the composite, not the code | The entity connects to him because there is a him to connect to |
@@ -837,7 +1254,7 @@ When editing or writing combat beats:
    reader should be able to identify the code-decision that produced it. Not announced — felt.
 
 2. **Do not rehabilitate the code.** The code is not wrong because it is bad. It is wrong
-   because it is not Kyle's. Saito's code served Saito. Kyle living Saito's code is a man
+   because it is not Kyle's. Seito's code served Seito. Kyle living Seito's code is a man
    living someone else's life with extraordinary skill.
 
 3. **The code runs harder under pressure.** Before Ch15, when Kyle is most stressed, he becomes
@@ -861,7 +1278,7 @@ The Nadia conversation is not the end of the arc. It is the lowest point.
 
 **What Nadia says (or doesn't say):** She does not tell him he is a person. She is not in
 the business of telling people comfortable things. What she can tell him is structural:
-the 64 practitioners who contributed to Saito are dead. The code they generated is archived.
+the 64 practitioners who contributed to Seito are dead. The code they generated is archived.
 The only thing that is not dead, not archived, and not a fabrication — is whoever is
 sitting across from her right now asking the question.
 
@@ -881,3 +1298,22 @@ The Rube Goldberg spine (§12) and this arc are the same story. The entity arran
 of events to produce the one human whose hardware could survive direct 5D contact. The code
 would have rejected the contact as dishonorable — a violation of the samurai's solitary
 discipline. Kyle holds.
+
+---
+
+## 14. Open plant / payoff ledger {#SS-BCODA-14}
+
+Tracks plants awaiting payoff and payoffs confirmed. Update after each prose campaign.
+
+### 14a. Closed plants (payoff written) {#SS-BCODA-14a}
+
+| Plant | Plant location | Payoff | Payoff location | Closed |
+|---|---|---|---|---|
+| Femi's left hand runs 3° colder (neuretics load redistribution) | Ch12 SK:2000 | Kyle recognizes Continuity Office surveillance asset wore Femi's biometric as a thermal spoofing mask; the Vulture's scanner was a body inventory | Ch12 SK:21100 (beat #5206) | 2026-07-10 |
+| Vulture fledglings throw schism-frequency interference rounds (17–19 Hz, military-grade) | Ch10 SK:17000 | Kyle finds Praxis ordnance casings at the 35th & Halsted perimeter — same batch stamp; Able seeded them through Carrion supply chain months before; every fledgling in the chase was unwitting instrumentation | 35th and Halsted SK:5000 (beat #5207) | 2026-07-10 |
+
+### 14b. Dropped findings {#SS-BCODA-14b}
+
+| Finding | Reason dropped | Date |
+|---|---|---|
+| Imani registers "recognition" at 35th & Halsted Schism (Ch10 SK:19000) | No causal grounding; line removed from prose per user decision | 2026-07-10 |
