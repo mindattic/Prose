@@ -207,7 +207,7 @@ public class NarrativeScienceService(
         var beats = await (
             from sb in db.BeatNodes
             join b in db.Beats on sb.BeatId equals b.Id
-            where sb.NodeId == nodeId
+            where sb.NodeId == nodeId && sb.IsEnabled
             orderby sb.SortKey
             select new { b.Number, Title = b.Title ?? "", Description = b.Description ?? "", b.Text }
         ).ToListAsync(ct);

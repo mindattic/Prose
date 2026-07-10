@@ -84,7 +84,7 @@ public class StructuralDiagnosticService
         var beats = await (
             from sb in db.BeatNodes.AsNoTracking()
             join b in db.Beats.AsNoTracking() on sb.BeatId equals b.Id
-            where sb.NodeId == nodeId
+            where sb.NodeId == nodeId && sb.IsEnabled
             orderby sb.SortKey
             select b.Text
         ).ToListAsync(ct);

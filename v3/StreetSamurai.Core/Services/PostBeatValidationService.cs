@@ -83,7 +83,7 @@ public class PostBeatValidationService(
             if (string.IsNullOrWhiteSpace(beat?.Text)) return new(0, 0, 0);
 
             var nodeSlug = await db.BeatNodes.AsNoTracking()
-                .Where(sb => sb.BeatId == beatId)
+                .Where(sb => sb.BeatId == beatId && sb.IsEnabled)
                 .Join(db.Nodes, sb => sb.NodeId, s => s.Id, (_, s) => s.Slug)
                 .FirstOrDefaultAsync(ct) ?? beatId.ToString();
 

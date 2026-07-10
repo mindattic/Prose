@@ -378,7 +378,7 @@ public class NodeTools
         // Resolve the node that owns this beat — either the one from the
         // dotted handle (if any), or the first BeatNode junction.
         var nodeId = parsedNode ?? (await db.BeatNodes.AsNoTracking()
-            .Where(sb => sb.BeatId == beat.Id)
+            .Where(sb => sb.BeatId == beat.Id && sb.IsEnabled)
             .Select(sb => (Guid?)sb.NodeId)
             .FirstOrDefaultAsync());
         Node? node = null;

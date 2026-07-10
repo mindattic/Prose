@@ -244,11 +244,13 @@ public class NodeBibleService
         CancellationToken     ct)
     {
         // SS-A43: beats live on chapter children for book-mode stories.
+        // Fetch chapter children in reading order (SortKey) so beat distribution is deterministic.
         var childIds = await db.Nodes.AsNoTracking()
             .Where(n => n.ParentNodeId == nodeId)
+            .OrderBy(n => n.SortKey)
             .Select(n => n.Id).ToListAsync(ct);
         var searchIds = childIds.Count > 0 ? childIds : new List<Guid> { nodeId };
-        var existing = await db.BeatNodes.CountAsync(sb => searchIds.Contains(sb.NodeId), ct);
+        var existing = await db.BeatNodes.CountAsync(sb => searchIds.Contains(sb.NodeId) && sb.IsEnabled, ct);
         if (existing > 0)
         {
             log.LogInformation("[bible] Node {NodeId} already has {Count} beats — skipping planned beat creation.", nodeId, existing);
@@ -257,13 +259,16 @@ public class NodeBibleService
 
         var baseNumber = (await db.Beats.MaxAsync(b => (int?)b.Number, ct) ?? 0) + 1;
         var now = DateTime.UtcNow;
-        int beatIndex = 0;
-        foreach (var plan in plans.OrderBy(p => p.Index))
+        // Distribute beats evenly across chapter children in SortKey order.
+        var sortedPlans = plans.OrderBy(p => p.Index).ToList();
+        int totalPlans = sortedPlans.Count;
+        for (int i = 0; i < totalPlans; i++)
         {
+            var plan = sortedPlans[i];
             var beat = new Beat
             {
                 Id            = Guid.CreateVersion7(),
-                Number        = baseNumber + beatIndex++,
+                Number        = baseNumber + i,
                 Title         = plan.Title,
                 Description   = plan.Goal,
                 StructureRole = MapStructureRole(plan.StructureRole),
@@ -274,7 +279,9 @@ public class NodeBibleService
             db.Beats.Add(beat);
             db.BeatNodes.Add(new BeatNode
             {
-                NodeId    = childIds.Count > 0 ? childIds[0] : nodeId,
+                NodeId    = childIds.Count > 0
+                    ? childIds[i * childIds.Count / totalPlans]
+                    : nodeId,
                 BeatId    = beat.Id,
                 SortKey   = plan.Index * 100.0,
                 IsEnabled = true,

@@ -58,7 +58,7 @@ public class WorkflowMonitorTools(
         var beatNodeIds = childIds.Count > 0 ? childIds : new List<Guid> { node.Id };
 
         var beatIds = await db.BeatNodes.AsNoTracking()
-            .Where(sb => beatNodeIds.Contains(sb.NodeId))
+            .Where(sb => beatNodeIds.Contains(sb.NodeId) && sb.IsEnabled)
             .Select(sb => sb.BeatId)
             .ToListAsync();
 
