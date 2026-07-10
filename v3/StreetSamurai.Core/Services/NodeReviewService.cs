@@ -2013,7 +2013,7 @@ Be specific; do not invent praise the reviews don't support.";
                     RecordedAt:  g.Key,
                     Score:       perChild.Average(h => h.MeanScore),
                     Sd:          null,
-                    ReviewCount: perChild.Sum(h => h.ReviewCount));
+                    ReviewCount: (int)perChild.Average(h => h.ReviewCount));
             })
             .OrderBy(p => p.RecordedAt)
             .ToList();

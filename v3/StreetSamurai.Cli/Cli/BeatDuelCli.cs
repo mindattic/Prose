@@ -71,7 +71,7 @@ public static class BeatDuelCli
             // Resolve owning story (walking up from the beat's owner chapter) for
             // title + register notes; pull the preceding beat for continuity context.
             var owner = await db.BeatNodes.AsNoTracking()
-                .Where(bn => bn.BeatId == beatId)
+                .Where(bn => bn.BeatId == beatId && bn.IsEnabled)
                 .Join(db.Nodes.AsNoTracking(), bn => bn.NodeId, n => n.Id, (bn, n) => new { bn.SortKey, Node = n })
                 .FirstOrDefaultAsync();
             storyTitle = owner?.Node.Title ?? "(unknown story)";

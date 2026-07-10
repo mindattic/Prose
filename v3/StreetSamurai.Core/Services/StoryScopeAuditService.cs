@@ -230,7 +230,7 @@ public class StoryScopeAuditService(
                     counts.Add(reader.GetInt32(1));
             }
             var recurring = counts.Count(c => c >= 2);
-            if (recurring > 0 && recurring < 3)
+            if (recurring < 3)
                 results.Add(new StoryScopeCheck("social_network_breadth", "Social-network breadth",
                     "MINOR",
                     $"Only {recurring} character(s) appear in 2+ beats. AI fiction has measurably simpler social structures than human fiction.",
@@ -424,6 +424,9 @@ public class StoryScopeAuditService(
                 $"The stakes peak ({maxStakes}/10) lands at beat {peakIndex} of {stakes.Count} — before the final 40%. The story de-escalates into its own ending.",
                 "Move the largest consequence into the climax zone, or escalate past the current peak in the final act.",
                 "replace", null));
+        else if (stakes.Count >= 5)
+            results.Add(Pass("early_peak", "Escalation peak placement",
+                $"Escalation peak correctly placed in climax zone (beat {peakIndex} of {stakes.Count})."));
 
         // Event monoculture — Claude's #2 fingerprint.
         var types = ordered.Select(r => r.EventType?.ToLowerInvariant() ?? "").ToList();
