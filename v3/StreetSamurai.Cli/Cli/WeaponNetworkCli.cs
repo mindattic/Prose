@@ -24,11 +24,11 @@ public static class WeaponNetworkCli
                     if (Guid.TryParse(args[i + 1], out var g)) { weaponId = g; i++; }
                     break;
                 case "--character":
-                    if (Guid.TryParse(args[i + 1], out var c)) { characterId = c; i++; }
+                    if (Guid.TryParse(args[i + 1], out var c)) characterId = c;
                     i++;
                     break;
                 case "--as-of":
-                    if (DateTime.TryParse(args[i + 1], out var dt)) { asOf = dt; i++; }
+                    if (DateTime.TryParse(args[i + 1], out var dt)) asOf = dt;
                     i++;
                     break;
             }

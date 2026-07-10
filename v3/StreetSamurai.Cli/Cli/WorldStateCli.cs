@@ -23,7 +23,7 @@ public static class WorldStateCli
                     if (Guid.TryParse(args[i + 1], out var g)) { beatId = g; i++; }
                     break;
                 case "--story-time":
-                    if (DateTime.TryParse(args[i + 1], out var dt)) { storyTime = dt; i++; }
+                    if (DateTime.TryParse(args[i + 1], out var dt)) storyTime = dt;
                     i++;
                     break;
             }

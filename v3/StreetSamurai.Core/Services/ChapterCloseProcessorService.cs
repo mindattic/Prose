@@ -175,6 +175,7 @@ public class ChapterCloseProcessorService(
             var m = System.Text.RegularExpressions.Regex.Match(raw, @"SCORE:\s*(\d+)");
             return m.Success && int.TryParse(m.Groups[1].Value, out var s) ? Math.Clamp(s, 0, 100) : 75;
         }
+        catch (OperationCanceledException) { throw; }
         catch { return 75; }
     }
 

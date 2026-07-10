@@ -22,7 +22,7 @@ public static class BehaviorCheckCli
             {
                 case "--slug": nodeSlug = args[i + 1]; i++; break;
                 case "--character":
-                    if (Guid.TryParse(args[i + 1], out var g)) { characterId = g; i++; }
+                    if (Guid.TryParse(args[i + 1], out var g)) characterId = g;
                     i++;
                     break;
             }

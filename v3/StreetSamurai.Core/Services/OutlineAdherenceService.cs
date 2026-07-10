@@ -155,10 +155,13 @@ public class OutlineAdherenceService(
         int updated = 0;
         await using (var db = await dbFactory.CreateDbContextAsync(ct))
         {
+            var ids = emptyBeats.Take(lines.Count).Select(e => e.BeatId).ToHashSet();
+            var beatMap = await db.Beats
+                .Where(b => ids.Contains(b.Id))
+                .ToDictionaryAsync(b => b.Id, ct);
             for (int i = 0; i < Math.Min(lines.Count, emptyBeats.Count); i++)
             {
-                var beat = await db.Beats.FindAsync([emptyBeats[i].BeatId], ct);
-                if (beat == null) continue;
+                if (!beatMap.TryGetValue(emptyBeats[i].BeatId, out var beat)) continue;
                 beat.Description  = lines[i].Length > 500 ? lines[i][..500] : lines[i];
                 beat.UpdatedAt = DateTime.UtcNow;
                 updated++;

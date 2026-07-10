@@ -20,11 +20,11 @@ public static class AmbientPaletteCli
             switch (args[i])
             {
                 case "--character":
-                    if (Guid.TryParse(args[i + 1], out var g)) { characterId = g; i++; }
+                    if (Guid.TryParse(args[i + 1], out var g)) characterId = g;
                     i++;
                     break;
                 case "--as-of":
-                    if (DateTime.TryParse(args[i + 1], out var dt)) { asOf = dt; i++; }
+                    if (DateTime.TryParse(args[i + 1], out var dt)) asOf = dt;
                     i++;
                     break;
             }

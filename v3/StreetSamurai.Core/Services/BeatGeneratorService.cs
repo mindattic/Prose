@@ -316,6 +316,7 @@ public class BeatGeneratorService
         {
             result = await voting.VoteWithProfilesAsync(request, Quorum.Plurality, experts, ct);
         }
+        catch (OperationCanceledException) { throw; }
         catch
         {
             return new List<string>();
@@ -500,6 +501,7 @@ public class BeatGeneratorService
             var v = result.IndividualVotes.FirstOrDefault(v => !v.IsError && !string.IsNullOrWhiteSpace(v.Decision));
             return v?.Decision?.Trim().Trim('"').Trim() ?? "";
         }
+        catch (OperationCanceledException) { throw; }
         catch
         {
             return "";
@@ -736,6 +738,7 @@ public class BeatGeneratorService
 
         string raw;
         try { raw = await llm.GenerateAsync(system, user, temperature: 0.2, maxTokens: 600, ct: ct); }
+        catch (OperationCanceledException) { throw; }
         catch { return new List<OocFinding>(); }
 
         return ParseOocFindings(raw);
@@ -812,6 +815,7 @@ public class BeatGeneratorService
 
         IReadOnlyList<ProseEmbeddingHit> hits;
         try { hits = await embeddings.FindSimilarProseAsync(query, k: 4, scopeKind: "beat", ct); }
+        catch (OperationCanceledException) { throw; }
         catch { return ""; }
         if (hits.Count == 0) return "";
 
