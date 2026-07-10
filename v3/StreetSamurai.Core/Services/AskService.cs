@@ -206,6 +206,7 @@ public class AskService
             answer = await llm.GenerateAsync(SystemPrompt, prompt.ToString(), temperature: 0.2,
                 maxTokens: maxAnswerTokens, ct: ct);
         }
+        catch (OperationCanceledException) { throw; }
         catch (Exception ex)
         {
             log.LogWarning(ex, "AskService LLM call failed");

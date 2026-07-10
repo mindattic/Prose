@@ -100,6 +100,7 @@ public class AgendaEngine
             log.LogInformation("Generated {Count} character agendas", agendas.Count);
             return agendas;
         }
+        catch (OperationCanceledException) { throw; }
         catch (Exception ex)
         {
             log.LogError(ex, "Agenda generation failed for characters=[{Characters}]", string.Join(", ", characterNames));

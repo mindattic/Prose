@@ -273,8 +273,14 @@ public class NodeTools
         var parts     = sanitised.Split('-').Where(p => p.Length > 0).Take(8);
         var newSlug   = $"{string.Join("-", parts)}-{newId.ToString("N")[..8]}";
 
+        var now = DateTime.UtcNow;
+
+        // Serializable isolation covers both the SortKey MAX (prevents duplicate sort order)
+        // and the Beat.Number MAX (prevents duplicate-key on concurrent clones).
+        await using var tx = await db.Database.BeginTransactionAsync(
+            System.Data.IsolationLevel.Serializable);
+
         var maxSort = await db.Nodes.Where(s => s.ParentNodeId == null).Select(s => (double?)s.SortKey).MaxAsync() ?? 0;
-        var now     = DateTime.UtcNow;
 
         var clone = NodeFactory.CreateLike(source);
         clone.Id              = newId;
@@ -297,11 +303,6 @@ public class NodeTools
         clone.CreatedAt       = now;
         clone.UpdatedAt       = now;
         db.Nodes.Add(clone);
-
-        // Serializable isolation prevents two concurrent clones from reading the
-        // same beatMax and then colliding on Beat.Number's unique constraint.
-        await using var tx = await db.Database.BeginTransactionAsync(
-            System.Data.IsolationLevel.Serializable);
 
         var beatMax = await db.Beats.MaxAsync(b => (int?)b.Number) ?? 0;
         int nextNum = beatMax + 1;

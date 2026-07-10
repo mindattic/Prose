@@ -665,6 +665,7 @@ public class NodeWorkbenchService
             }
         }
 
+        await using var insertTx = await db.Database.BeginTransactionAsync(System.Data.IsolationLevel.Serializable, ct);
         var beat = new Beat
         {
             Id           = Guid.CreateVersion7(),
@@ -683,6 +684,7 @@ public class NodeWorkbenchService
             SortKey  = (prevSk + nextSk) / 2.0,
         });
         await db.SaveChangesAsync(ct);
+        await insertTx.CommitAsync(ct);
         log.LogInformation("Inserted beat {BeatId} into node {NodeId} between SortKey {Prev} and {Next}",
             beat.Id, nodeId, prevSk, nextSk);
         return beat;
@@ -848,6 +850,7 @@ public class NodeWorkbenchService
         InvalidateAudioOnBeat(target);
         target.UpdatedAt    = DateTime.UtcNow;
 
+        await using var splitPosTx = await db.Database.BeginTransactionAsync(System.Data.IsolationLevel.Serializable, ct);
         var second = new Beat
         {
             Id            = Guid.CreateVersion7(),
@@ -869,6 +872,7 @@ public class NodeWorkbenchService
             SortKey  = (prevSk + nextSk) / 2.0,
         });
         await db.SaveChangesAsync(ct);
+        await splitPosTx.CommitAsync(ct);
         log.LogInformation("Split beat {BeatId} at position {Pos} (snapped to {Snap}) → ({First}|{Second}) in node {NodeId}",
             beatId, splitPosition, snapped, firstHalf.Length, secondHalf.Length, nodeId);
         return second;
@@ -1282,7 +1286,7 @@ public class NodeWorkbenchService
 
         // Delete the absorbed beat row if no other node still holds it.
         var otherMemberships = await db.BeatNodes
-            .Where(sb => sb.BeatId == beatId && sb.NodeId != nodeId)
+            .Where(sb => sb.BeatId == beatId && sb.NodeId != nodeId && sb.IsEnabled)
             .AnyAsync(ct);
         if (!otherMemberships)
         {

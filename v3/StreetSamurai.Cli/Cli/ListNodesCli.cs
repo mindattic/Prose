@@ -61,7 +61,7 @@ public static class ListNodesCli
         if (limit is int lim) query = query.Take(lim);
 
         var nodes = await query
-            .Select(s => new { s.Id, s.Title, s.Slug, s.Kind, s.Status, s.NodeCode, s.Score, s.UpdatedAt, BeatCount = s.BeatNodes.Count })
+            .Select(s => new { s.Id, s.Title, s.Slug, s.Kind, s.Status, s.NodeCode, s.Score, s.UpdatedAt, BeatCount = s.BeatNodes.Count(nb => nb.IsEnabled) })
             .ToListAsync();
 
         // Word / page count — one join instead of N queries

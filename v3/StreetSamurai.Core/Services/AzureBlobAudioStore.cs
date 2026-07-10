@@ -146,6 +146,7 @@ public class AzureBlobAudioStore : IAudioStore
     public async Task<bool> ExistsAsync(string relativePath, CancellationToken ct = default)
     {
         try { return (await container.GetBlobClient(relativePath).ExistsAsync(ct)).Value; }
+        catch (OperationCanceledException) { throw; }
         catch { return false; }
     }
 
