@@ -87,6 +87,22 @@ public class SanityScanService(IDbContextFactory<StreetSamuraiDbContext> dbFacto
             .Select(sb => sb.Beat!)
             .ToList();
 
+        // SS-A43: book-mode nodes have beats on chapter children, not directly on the story node.
+        if (orderedBeats.Count == 0)
+        {
+            var childIds = await db.Nodes.AsNoTracking()
+                .Where(n => n.ParentNodeId == nodeId)
+                .Select(n => n.Id).ToListAsync(ct);
+            if (childIds.Count > 0)
+                orderedBeats = await (
+                    from sb in db.BeatNodes.AsNoTracking()
+                    join b in db.Beats.AsNoTracking() on sb.BeatId equals b.Id
+                    where childIds.Contains(sb.NodeId) && sb.IsEnabled
+                    orderby sb.SortKey
+                    select b
+                ).ToListAsync(ct);
+        }
+
         // ── Load all node codes from DB ─────────────────────────────────────
         var dbCodes = await db.Nodes
             .AsNoTracking()

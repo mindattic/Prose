@@ -46,7 +46,7 @@ public static class BackfillBeatMetaCli
         if (root == null) { Console.Error.WriteLine($"Node not found: {slug}"); return 2; }
 
         var childIds = await db.Nodes.AsNoTracking()
-            .Where(s => s.ParentNodeId == root.Id && s.Status == "draft")
+            .Where(s => s.ParentNodeId == root.Id)
             .OrderBy(s => s.SortKey).Select(s => s.Id).ToListAsync();
         var nodeIds = childIds.Count > 0 ? childIds : [root.Id];
 

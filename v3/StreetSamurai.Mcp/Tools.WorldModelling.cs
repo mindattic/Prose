@@ -291,8 +291,12 @@ public class WorldModellingTools(
             .Select(s => s.Slug)
             .FirstOrDefaultAsync() ?? nodeId.ToString();
 
+        // SS-A43: expand to chapter children for book-mode nodes.
+        var childIds = await db.Nodes.AsNoTracking()
+            .Where(n => n.ParentNodeId == nodeId).Select(n => n.Id).ToListAsync();
+        var searchIds = childIds.Count > 0 ? childIds : new List<Guid> { nodeId };
         var beats = await db.BeatNodes.AsNoTracking()
-            .Where(sb => sb.NodeId == nodeId && sb.IsEnabled)
+            .Where(sb => searchIds.Contains(sb.NodeId) && sb.IsEnabled)
             .Join(db.Beats, sb => sb.BeatId, b => b.Id, (sb, b) => new { b.Id, b.Number, sb.SortKey, b.Text })
             .OrderBy(b => b.SortKey)
             .ToListAsync();

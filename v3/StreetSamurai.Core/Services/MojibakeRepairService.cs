@@ -232,7 +232,7 @@ public class MojibakeRepairService
         if (nodeId.HasValue)
         {
             var beatIds = await db.BeatNodes
-                .Where(sb => sb.NodeId == nodeId.Value)
+                .Where(sb => sb.NodeId == nodeId.Value && sb.IsEnabled)
                 .Select(sb => sb.BeatId)
                 .ToListAsync(ct);
             beats = await db.Beats.AsNoTracking().Where(b => beatIds.Contains(b.Id)).ToListAsync(ct);

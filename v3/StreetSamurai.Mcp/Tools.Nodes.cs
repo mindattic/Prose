@@ -359,7 +359,13 @@ public class NodeTools
     {
         var node = await ResolveNodeAsync(nodeIdOrSlug);
         if (node == null) return JsonSerializer.Serialize(new { error = "node_not_found", nodeIdOrSlug }, CanonTools.JsonOpts);
-        Guid? after = string.IsNullOrWhiteSpace(afterBeatId) ? null : Guid.Parse(afterBeatId);
+        Guid? after = null;
+        if (!string.IsNullOrWhiteSpace(afterBeatId))
+        {
+            if (!Guid.TryParse(afterBeatId, out var ag))
+                return JsonSerializer.Serialize(new { error = "bad_beat_id", afterBeatId }, CanonTools.JsonOpts);
+            after = ag;
+        }
         var beat = await workbench.InsertBeatAsync(node.Id, after, text ?? "");
         return JsonSerializer.Serialize(new { ok = true, id = beat.Id, node_id = node.Id }, CanonTools.JsonOpts);
     }

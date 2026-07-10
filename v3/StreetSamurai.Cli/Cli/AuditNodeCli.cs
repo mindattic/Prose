@@ -46,7 +46,7 @@ public static class AuditNodeCli
         if (root == null) { Console.Error.WriteLine($"Node not found: {slug}"); return 2; }
 
         var children = await db.Nodes.AsNoTracking()
-            .Where(s => s.ParentNodeId == root.Id && s.Status == "draft")
+            .Where(s => s.ParentNodeId == root.Id)
             .OrderBy(s => s.SortKey)
             .Select(s => new ChapterRef(s.Id, s.Title, s.Slug, s.Score, s.Seed))
             .ToListAsync();

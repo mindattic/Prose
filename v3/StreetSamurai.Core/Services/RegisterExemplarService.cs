@@ -70,11 +70,17 @@ public class RegisterExemplarService
             return (registerName, node.Slug ?? "", []);
         }
 
+        // SS-A43: for book-mode nodes, beats live on chapter children.
+        var childIds = await db.Nodes.AsNoTracking()
+            .Where(n => n.ParentNodeId == nodeId)
+            .Select(n => n.Id).ToListAsync(ct);
+        var searchIds = childIds.Count > 0 ? childIds : new List<Guid> { nodeId };
+
         // Top-N beats by EmotionalScore (beats with NULL score are excluded)
         var topBeats = await (
             from sb in db.BeatNodes.AsNoTracking()
             join b  in db.Beats.AsNoTracking() on sb.BeatId equals b.Id
-            where sb.NodeId == nodeId
+            where searchIds.Contains(sb.NodeId)
                && sb.IsEnabled
                && b.EmotionalScore != null
                && b.Text != null && b.Text.Length > 0
