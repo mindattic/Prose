@@ -425,7 +425,7 @@ PROSE:
         var beats = await (
             from sb in db.BeatNodes
             join b in db.Beats on sb.BeatId equals b.Id
-            where beatNodeIds.Contains(sb.NodeId) && beatNumbers.Contains(b.Number)
+            where beatNodeIds.Contains(sb.NodeId) && sb.IsEnabled && beatNumbers.Contains(b.Number)
             select b
         ).ToListAsync(ct);
 

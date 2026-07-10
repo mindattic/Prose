@@ -37,6 +37,7 @@ public class BeatRepairService(
         string? beatGoal    = null;
         string? subtext     = null;
         string  storyBible  = "";
+        Guid    storyNodeId = nodeId; // updated below if nodeId is a chapter child (book-mode)
 
         try
         {
@@ -55,8 +56,9 @@ public class BeatRepairService(
 
             var node = await db.Nodes.AsNoTracking()
                 .Where(n => n.Id == nodeId)
-                .Select(n => new { n.Seed, n.NodeBible })
+                .Select(n => new { n.Seed, n.NodeBible, n.ParentNodeId })
                 .FirstOrDefaultAsync(ct);
+            if (node?.ParentNodeId != null) storyNodeId = node.ParentNodeId.Value;
             if (storyBibleOverride != null)
                 storyBible = storyBibleOverride;
             else if (node != null)
@@ -113,7 +115,7 @@ public class BeatRepairService(
 
         var ctx = new BeatContext
         {
-            NodeId                  = nodeId,
+            NodeId                  = storyNodeId,
             StoryBibleContext       = storyBible,
             SceneSoFar              = sceneSoFar,
             BeatGoal                = beatGoal ?? "",

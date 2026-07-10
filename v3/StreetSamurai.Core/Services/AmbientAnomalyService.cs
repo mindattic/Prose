@@ -38,7 +38,7 @@ public class AmbientAnomalyService
             .Where(a => a.tags.Any(t => locationLower.Contains(t)))
             .ToList();
 
-        var pool = relevant.Count >= 2 ? relevant : cache;
+        var pool = relevant.Count >= 1 ? relevant : cache;
 
         // Pick 1-2 random anomalies
         var count = Random.Shared.Next(1, Math.Min(maxHints + 1, pool.Count + 1));

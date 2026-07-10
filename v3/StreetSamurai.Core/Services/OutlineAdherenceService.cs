@@ -46,15 +46,15 @@ public class OutlineAdherenceService(
                 .ToListAsync(ct);
             var beatNodeIds = childIds.Count > 0 ? childIds : new List<Guid> { nodeId };
 
-            remainingGoals = await db.BeatNodes.AsNoTracking()
-                .Where(sb => beatNodeIds.Contains(sb.NodeId) && sb.IsEnabled)
-                .Join(db.Beats.AsNoTracking().Where(b => b.Text == null || b.Text == ""),
-                      sb => sb.BeatId, b => b.Id,
-                      (sb, b) => new { SortKey = sb.SortKey, Goal = b.Description ?? b.Title ?? "" })
-                .Where(x => x.Goal.Length > 0)
-                .OrderBy(x => x.SortKey)
-                .Select(x => x.Goal)
-                .ToListAsync(ct);
+            remainingGoals = await (
+                from sb in db.BeatNodes.AsNoTracking()
+                where beatNodeIds.Contains(sb.NodeId) && sb.IsEnabled
+                join b in db.Beats.AsNoTracking().Where(b => b.Text == null || b.Text == "") on sb.BeatId equals b.Id
+                join n in db.Nodes.AsNoTracking() on sb.NodeId equals n.Id
+                where (b.Description ?? b.Title ?? "").Length > 0
+                orderby n.SortKey, sb.SortKey
+                select b.Description ?? b.Title ?? ""
+            ).ToListAsync(ct);
         }
 
         if (remainingGoals.Count == 0)
@@ -74,7 +74,7 @@ public class OutlineAdherenceService(
                 SCORE: <integer 0-100>  (100=fully on track, 0=completely off course)
                 SUMMARY: <one sentence — what drifted or what's still aligned>
                 """,
-            user: $"CHAPTER SUMMARY:\n{chapterSummaryText}\n\nREMAINING PLANNED BEATS:\n{remainingBlock}",
+            user: $"STORY BIBLE:\n{bibleText![..Math.Min(1500, bibleText.Length)]}\n\nCHAPTER SUMMARY:\n{chapterSummaryText}\n\nREMAINING PLANNED BEATS:\n{remainingBlock}",
             temperature: 0.2,
             maxTokens: 150,
             ct: ct);

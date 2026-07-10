@@ -60,7 +60,7 @@ public class NarrativeForkService(
             {
                 var rows = await db.BeatNodes.AsNoTracking()
                     .Where(sb => sb.NodeId == nextChapterId.Value && sb.IsEnabled)
-                    .Join(db.Beats.AsNoTracking(),
+                    .Join(db.Beats.AsNoTracking().Where(b => b.Text == null || b.Text == ""),
                           sb => sb.BeatId, b => b.Id,
                           (sb, b) => new { b.Id, SortKey = sb.SortKey, Goal = b.Description ?? b.Title ?? "" })
                     .Where(x => x.Goal != "")

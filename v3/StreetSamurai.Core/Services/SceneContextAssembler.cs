@@ -184,7 +184,7 @@ public class SceneContextAssembler(
             ? Math.Max(tokenBudget - scienceBlock.Length / CharsPerToken, 200)
             : tokenBudget;
 
-        var ctx = await AssembleAsync(beat.Text, effectiveBudget, ct);
+        var ctx = await AssembleAsync(beat.Text ?? "", effectiveBudget, ct);
         if (scienceBlock.Length == 0) return ctx;
 
         return new SceneContext

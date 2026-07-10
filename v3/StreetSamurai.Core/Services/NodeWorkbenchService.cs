@@ -525,8 +525,8 @@ public class NodeWorkbenchService
         if (segments.Count < 2)
             throw new InvalidOperationException($"Node has {segments.Count} chapter segment(s) — nothing to split. Mark IsChapterStart on beats first.");
 
-        // Drop the parent's direct beat links (beats themselves are kept and re-linked to children).
-        var oldLinks = await db.BeatNodes.Where(sb => sb.NodeId == nodeId).ToListAsync(ct);
+        // Drop only enabled beat links — disabled (soft-deleted) rows stay on the parent so they remain restorable.
+        var oldLinks = await db.BeatNodes.Where(sb => sb.NodeId == nodeId && sb.IsEnabled).ToListAsync(ct);
         db.BeatNodes.RemoveRange(oldLinks);
 
         double parentSort = 100.0;
@@ -802,7 +802,7 @@ public class NodeWorkbenchService
             throw new InvalidOperationException("Split would leave one half empty — pick a different cursor position.");
 
         var siblings = await db.BeatNodes
-            .Where(sb => sb.NodeId == nodeId)
+            .Where(sb => sb.NodeId == nodeId && sb.IsEnabled)
             .OrderBy(sb => sb.SortKey)
             .ToListAsync(ct);
         var pos = siblings.FindIndex(sb => sb.BeatId == beatId);
@@ -865,7 +865,7 @@ public class NodeWorkbenchService
 
         // Find the target's SortKey in this node to slot the new beat.
         var siblings = await db.BeatNodes
-            .Where(sb => sb.NodeId == nodeId)
+            .Where(sb => sb.NodeId == nodeId && sb.IsEnabled)
             .OrderBy(sb => sb.SortKey)
             .ToListAsync(ct);
         var pos = siblings.FindIndex(sb => sb.BeatId == beatId);
@@ -930,7 +930,7 @@ public class NodeWorkbenchService
         if (paragraphs.Count < 2) return new List<Guid>();
 
         var siblings = await db.BeatNodes
-            .Where(sb => sb.NodeId == nodeId)
+            .Where(sb => sb.NodeId == nodeId && sb.IsEnabled)
             .OrderBy(sb => sb.SortKey)
             .ToListAsync(ct);
         var pos = siblings.FindIndex(sb => sb.BeatId == beatId);
@@ -1500,12 +1500,12 @@ public class NodeWorkbenchService
                     // extra DB round-trip.
                     if (!string.IsNullOrEmpty(newReqId))
                         ordered[idx].Beat.LastRequestId = newReqId;
-                    node.CharsNarrated += tracked.Text.Length;
+                    node.CharsNarrated += tracked.Text?.Length ?? 0;
                     // Bump the progress counter so the polling UI reads a
                     // single int instead of scanning the beats collection.
                     node.NarratedBeatCount++;
                     db.NodeAudioEvents.Add(NewAudioEvent(nodeId, tracked.Id, null, "beat-recorded",
-                        $"{tracked.Text.Length} chars, voice {voiceForBeat}"));
+                        $"{tracked.Text?.Length ?? 0} chars, voice {voiceForBeat}"));
                     await db.SaveChangesAsync(ct);
                 }
                 catch (OperationCanceledException)
