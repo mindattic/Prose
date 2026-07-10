@@ -674,6 +674,17 @@ if (args.Contains("--publish-docx"))
     return;
 }
 
+// CLI mode: hard-delete all disabled (IsEnabled=false) beats from a story.
+// Use ONLY when a story is publish-ready and placeholder beats will never be used.
+// Temporal history retains all deleted beats; data is recoverable by a DBA.
+//   ss --prune-disabled --slug <slug> [--dry-run] [--yes]
+if (args.Contains("--prune-disabled"))
+{
+    var sp = BuildCoreServices(args);
+    Environment.ExitCode = await PruneDisabledCli.RunAsync(args, sp);
+    return;
+}
+
 // CLI mode: build an Audible AI-narration hand-off package for a node.
 // Produces a narration-clean manuscript, pronunciation guide, and README.
 //   ss --prepare-audible (--slug <slug> | --id <guid|prefix>) [--no-phonetics]
