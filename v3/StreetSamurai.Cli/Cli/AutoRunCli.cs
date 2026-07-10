@@ -185,6 +185,7 @@ public static class AutoRunCli
             var rr = await reflow.ReflowNodeAsync(chapterId, apply: true);
             Console.WriteLine($"{rr.Changed}/{rr.Total} beats updated.");
         }
+        catch (OperationCanceledException) { throw; }
         catch (Exception ex) { Console.WriteLine($"failed (continuing): {ex.Message}"); }
 
         Console.WriteLine("[auto-run]   chapter close processing…");

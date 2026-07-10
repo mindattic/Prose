@@ -501,7 +501,10 @@ public static class ServiceCollectionExtensions
                 sp.GetRequiredService<DatabaseService>(),
                 sp.GetRequiredService<IDbContextFactory<StreetSamuraiDbContext>>());
             graph.EnsureLoaded();
-            _ = Task.Run(graph.RefreshIfStale);
+            var graphLogger = sp.GetRequiredService<ILoggerFactory>().CreateLogger<WorldGraphService>();
+            _ = Task.Run(graph.RefreshIfStale)
+                .ContinueWith(t => graphLogger.LogError(t.Exception, "[WorldGraph] RefreshIfStale failed"),
+                    TaskContinuationOptions.OnlyOnFaulted);
             return graph;
         });
 

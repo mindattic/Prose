@@ -190,6 +190,7 @@ public class NodeTools
         if (string.IsNullOrEmpty(baseSlug)) baseSlug = "node";
         var slug = $"{baseSlug}-{id.ToString("N")[..8]}";
 
+        await using var nodeSortTx = await db.Database.BeginTransactionAsync(System.Data.IsolationLevel.Serializable);
         var maxSort = parentId.HasValue
             ? await db.Nodes.Where(s => s.ParentNodeId == parentId).Select(s => (double?)s.SortKey).MaxAsync() ?? 0
             : await db.Nodes.Where(s => s.ParentNodeId == null).Select(s => (double?)s.SortKey).MaxAsync() ?? 0;
@@ -207,6 +208,7 @@ public class NodeTools
         node.NodeCode = resolvedKind == "chapter" || string.IsNullOrWhiteSpace(code) ? null : code.Trim().ToUpperInvariant();
         db.Nodes.Add(node);
         await db.SaveChangesAsync();
+        await nodeSortTx.CommitAsync();
 
         // If a seed was provided, generate the node bible and planned beats immediately.
         string? bibleText = null;

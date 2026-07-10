@@ -475,6 +475,7 @@ public class NodeWorkbenchService
         var nodeId = Guid.CreateVersion7();
         var slug = $"{Slugify(title)}-{nodeId.ToString("N")[..8]}";
 
+        await using var sortTx = await db.Database.BeginTransactionAsync(System.Data.IsolationLevel.Serializable, ct);
         var siblingMaxSort = parentNodeId is { } p
             ? await db.Nodes.Where(s => s.ParentNodeId == p).Select(s => (double?)s.SortKey).MaxAsync(ct) ?? 0
             : await db.Nodes.Where(s => s.ParentNodeId == null).Select(s => (double?)s.SortKey).MaxAsync(ct) ?? 0;
@@ -495,6 +496,7 @@ public class NodeWorkbenchService
         node.UpdatedAt      = now;
         db.Nodes.Add(node);
         await db.SaveChangesAsync(ct);
+        await sortTx.CommitAsync(ct);
         log.LogInformation("Created empty node '{Title}' ({Slug}) code={Code} kind={Kind}",
             title, slug, code ?? "-", kind);
         return (nodeId, slug);

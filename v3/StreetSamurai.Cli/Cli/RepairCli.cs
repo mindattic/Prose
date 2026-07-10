@@ -108,6 +108,7 @@ public static class RepairCli
                         s.Title == "Drafts" && s is StoryNode && s.ParentNodeId == null && s.UniverseId == uid);
                     if (drafts == null)
                     {
+                        await using var repairTx = await db.Database.BeginTransactionAsync(System.Data.IsolationLevel.Serializable);
                         var maxSort = await db.Nodes.Where(s => s.ParentNodeId == null)
                             .MaxAsync(s => (double?)s.SortKey) ?? 0;
                         drafts = new StreetSamurai.Core.Data.Entities.StoryNode
@@ -122,6 +123,7 @@ public static class RepairCli
                         };
                         db.Nodes.Add(drafts);
                         await db.SaveChangesAsync();
+                        await repairTx.CommitAsync();
                         Console.WriteLine($"  created Drafts story (universe {uid})");
                     }
                     foreach (var o in grp)

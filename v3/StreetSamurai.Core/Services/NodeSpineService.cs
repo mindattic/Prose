@@ -158,6 +158,7 @@ public class NodeSpineService
         Guid nodeId, string notes, string pinnedBy, CancellationToken ct = default)
     {
         await using var db = await dbFactory.CreateDbContextAsync(ct);
+        await using var tx = await db.Database.BeginTransactionAsync(System.Data.IsolationLevel.Serializable, ct);
         var node = await db.Nodes.FirstOrDefaultAsync(x => x.Id == nodeId, ct);
         if (node == null) throw new InvalidOperationException($"Node {nodeId} not found.");
 
@@ -182,6 +183,7 @@ public class NodeSpineService
             existing.PinnedBy        = pinnedBy;
             existing.Notes           = notes;
             await db.SaveChangesAsync(ct);
+            await tx.CommitAsync(ct);
             return existing;
         }
 
@@ -199,6 +201,7 @@ public class NodeSpineService
         };
         db.NodeSpineVersions.Add(pin);
         await db.SaveChangesAsync(ct);
+        await tx.CommitAsync(ct);
         return pin;
     }
 

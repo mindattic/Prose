@@ -980,7 +980,10 @@ Be honest and use the whole scale.";
             .Select(g => g.OrderByDescending(r => r.ReviewedAt).First()).ToList();
         if (reviews.Count == 0) return new List<EditProposal>();
 
-        var ordered = await db.BeatNodes.Where(sb => sb.NodeId == nodeId && sb.IsEnabled)
+        var reviewChildIds = await db.Nodes.AsNoTracking()
+            .Where(n => n.ParentNodeId == nodeId).Select(n => n.Id).ToListAsync(ct);
+        var reviewSearchIds = reviewChildIds.Count > 0 ? reviewChildIds : new List<Guid> { nodeId };
+        var ordered = await db.BeatNodes.Where(sb => reviewSearchIds.Contains(sb.NodeId) && sb.IsEnabled)
             .OrderBy(sb => sb.SortKey).Include(sb => sb.Beat).Select(sb => sb.Beat!).ToListAsync(ct);
         int n = ordered.Count;
         if (n == 0) return new List<EditProposal>();

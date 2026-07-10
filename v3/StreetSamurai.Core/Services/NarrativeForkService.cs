@@ -103,8 +103,14 @@ public class NarrativeForkService(
                 .FirstOrDefaultAsync(ct);
             bibleText = node?.NodeBible;
 
+            var childIds = await db.Nodes.AsNoTracking()
+                .Where(n => n.ParentNodeId == nodeId)
+                .Select(n => n.Id)
+                .ToListAsync(ct);
+            var forkSearchIds = childIds.Count > 0 ? childIds : new List<Guid> { nodeId };
+
             var rows = await db.BeatNodes.AsNoTracking()
-                .Where(sb => sb.NodeId == nodeId && sb.IsEnabled)
+                .Where(sb => forkSearchIds.Contains(sb.NodeId) && sb.IsEnabled)
                 .Join(db.Beats.AsNoTracking().Where(b => b.Text == null || b.Text == ""),
                       sb => sb.BeatId, b => b.Id,
                       (sb, b) => new { b.Id, SortKey = sb.SortKey, Goal = b.Description ?? b.Title ?? "" })

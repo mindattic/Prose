@@ -260,6 +260,7 @@ public static class MigrateLegacyBookChapterCli
             slug = $"{baseSlug}-{shortId}-{Guid.NewGuid():N8}";
 
         var newNodeId = Guid.CreateVersion7();
+        await using var beatTx = await db.Database.BeginTransactionAsync(System.Data.IsolationLevel.Serializable);
         int nextNumber  = (await db.Beats.MaxAsync(b => (int?)b.Number) ?? 0) + 1;
         int beatCount   = 0;
 
@@ -361,6 +362,7 @@ public static class MigrateLegacyBookChapterCli
         }
 
         await db.SaveChangesAsync();
+        await beatTx.CommitAsync();
         return (slug, beatCount);
     }
 

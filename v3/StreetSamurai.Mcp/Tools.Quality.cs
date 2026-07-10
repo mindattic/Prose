@@ -165,6 +165,7 @@ public class QualityTools
                 var summary = await reviewer.GenerateSummaryAsync(nodeId, useLocal: useLocal, localModelOverride: localModel);
                 synopsis = summary.SummaryMarkdown;
             }
+            catch (OperationCanceledException) { throw; }
             catch { }
         }
 
