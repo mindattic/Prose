@@ -263,7 +263,7 @@ public class EfRepository<T> : IExportableRepository, IJsonImportable where T : 
     public int Count()
     {
         using var db = dbFactory.CreateDbContext();
-        return db.Entities.Count(e => e.EntityType == entityType && e.Status != "archived");
+        return db.Entities.Count(e => e.EntityType == entityType && e.IsActive);
     }
 
     public List<(string name, string json)> GetExportEntries()

@@ -217,6 +217,13 @@ public class FindingsService
         return rows.Select(ToFinding).ToList();
     }
 
+    public Finding? Get(long id)
+    {
+        using var db = dbFactory.CreateDbContext();
+        var row = db.Findings.AsNoTracking().FirstOrDefault(f => f.Id == id);
+        return row == null ? null : ToFinding(row);
+    }
+
     public int CountByStatus(FindingStatus status)
     {
         using var db = dbFactory.CreateDbContext();

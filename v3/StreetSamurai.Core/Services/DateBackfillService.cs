@@ -197,7 +197,7 @@ public class DateBackfillService
                 DateTimeStyles.AssumeUniversal | DateTimeStyles.AdjustToUniversal,
                 out var dt))
             return null;
-        if (dt.Year < 2100 || dt.Year > 2299) return null; // not in canon window
+        if (dt.Year < 2200 || dt.Year > 2299) return null; // not in canon window
         return DateTime.SpecifyKind(dt, DateTimeKind.Utc);
     }
 

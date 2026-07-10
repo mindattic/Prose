@@ -71,7 +71,9 @@ public class WritingTools
         [Description("Chapter status: draft | revising | reviewed | published. Defaults to 'draft'.")] string status = "draft",
         [Description("Optional chapter id to update an existing record. Empty creates new.")] string id = "")
     {
-        var chapter = string.IsNullOrEmpty(id) ? new Chapter() : (chapters.LoadChapter(id) ?? new Chapter { Id = id });
+        if (!string.IsNullOrEmpty(id) && chapters.LoadChapter(id) == null)
+            return $"Chapter not found: {id}";
+        var chapter = string.IsNullOrEmpty(id) ? new Chapter() : chapters.LoadChapter(id)!;
         chapter.Title      = title;
         chapter.Synopsis   = synopsis ?? "";
         chapter.Html       = NormalizeHtml(html ?? "");

@@ -130,8 +130,12 @@ public class LocationContradictionService
                 var a = ordered[i];
                 var b = ordered[i + 1];
                 if (string.IsNullOrEmpty(a.PlaceName) || string.IsNullOrEmpty(b.PlaceName)) continue;
-                if (a.PlaceId == null || b.PlaceId == null) continue;       // need real places to compare
-                if (a.PlaceId == b.PlaceId) continue;                       // same place — no conflict
+                if (a.PlaceId != null && b.PlaceId != null)
+                {
+                    if (a.PlaceId == b.PlaceId) continue;                   // same place — no conflict
+                }
+                else if (a.PlaceId != b.PlaceId) continue;                  // one edge, one beat — can't compare locations
+                // both PlaceId == null: beat-vs-beat temporal collision — fall through to delta check
 
                 var delta = b.At - a.At;
                 if (delta < TimeSpan.FromMinutes(MinTravelMinutes))

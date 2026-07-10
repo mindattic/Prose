@@ -387,6 +387,8 @@ public class NarrativeSessionContext
         knownIds.Clear();
         loadOrder.Clear();
         primaryIds.Clear();
+        semanticIds.Clear();
+        inferredEdges.Clear();
         estimatedTokens = 0;
     }
 

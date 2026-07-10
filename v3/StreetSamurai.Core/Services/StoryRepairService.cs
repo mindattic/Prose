@@ -197,13 +197,14 @@ public class StoryRepairService
             }
         }
 
-        // Persist every character we touched.
+        // Persist every character we touched — use the in-memory (mutated) copy from
+        // allCharacters, not a fresh fetch which would discard the accumulated mutations.
+        var byName = allCharacters.ToDictionary(c => c.Name, StringComparer.OrdinalIgnoreCase);
         foreach (var name in result.TouchedCharacters)
         {
             try
             {
-                var c = characters.GetByName(name);
-                if (c != null) characters.Save(c);
+                if (byName.TryGetValue(name, out var c)) characters.Save(c);
             }
             catch (Exception ex) { log.LogWarning(ex, "Failed to save character '{Name}' after beat-fact merge", name); result.Errors.Add($"{name}: {ex.Message}"); }
         }

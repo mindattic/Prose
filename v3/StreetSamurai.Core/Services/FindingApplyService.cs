@@ -45,7 +45,7 @@ public class FindingApplyService
 
     public async Task<FindingApplyResult> ApplyAsync(long findingId, CancellationToken ct = default)
     {
-        var f = findings.List(limit: 10000).FirstOrDefault(x => x.Id == findingId);
+        var f = findings.Get(findingId);
         if (f is null) return new(ApplyOutcome.Failed, "Finding not found.");
         if (string.IsNullOrWhiteSpace(f.SuggestedFix)) return new(ApplyOutcome.NoSuggestedFix);
         if (string.IsNullOrWhiteSpace(f.Snippet))      return new(ApplyOutcome.NoSnippet);

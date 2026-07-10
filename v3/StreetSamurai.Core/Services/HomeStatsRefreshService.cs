@@ -108,6 +108,7 @@ public class HomeStatsRefreshService : BackgroundService
             cache.Materials       = s.GetRequiredService<MaterialRepository>().Count();
             cache.Technology      = s.GetRequiredService<TechnologyRepository>().Count();
             cache.Automata        = s.GetRequiredService<AutomatonRepository>().Count();
+            cache.SyntheticLife   = s.GetRequiredService<SyntheticLifeRepository>().Count();
             cache.LabSpecimens    = s.GetRequiredService<LabSpecimenRepository>().Count();
             cache.Wasteland       = s.GetRequiredService<FlyoverEntityRepository>().Count();
 

@@ -145,7 +145,7 @@ public class ChapterRepository : IChapterRepository
             });
         }
 
-        sub.Beats.Clear();
+        if (chapter.Beats.Count > 0) sub.Beats.Clear();
         foreach (var beat in chapter.Beats.OrderBy(b => b.Index))
             sub.Beats.Add(new ChapterBeatEntity
             {

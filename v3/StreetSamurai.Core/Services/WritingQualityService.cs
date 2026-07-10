@@ -46,9 +46,6 @@ public class WritingQualityService
     {
         var findings = new List<ReviewFinding>();
 
-        // Voice fingerprints per protagonist — built from their existing prose + canonical speech_patterns.
-        var fingerprints = BuildVoiceFingerprints(book, ordered);
-
         for (int i = 0; i < ordered.Count; i++)
         {
             var c = ordered[i];
@@ -61,6 +58,9 @@ public class WritingQualityService
             if (motifs != null)
                 findings.AddRange(CheckMotifReuse(c, plain, motifs));
 
+            // Exclude the current chapter from its own fingerprint — including it
+            // makes the comparison circular (it will always match itself).
+            var fingerprints = BuildVoiceFingerprints(book, ordered, excludeId: c.Id);
             if (fingerprints.Count > 1)
                 findings.AddRange(CheckVoiceCadence(c, plain, fingerprints));
         }
@@ -239,14 +239,14 @@ public class WritingQualityService
     /// its fingerprint to the expected one — drift means the prose sounds like
     /// a different character than the chapter claims.
     /// </summary>
-    private Dictionary<string, HashSet<string>> BuildVoiceFingerprints(Book book, List<Chapter> ordered)
+    private Dictionary<string, HashSet<string>> BuildVoiceFingerprints(Book book, List<Chapter> ordered, string? excludeId = null)
     {
         var fingerprints = new Dictionary<string, HashSet<string>>(StringComparer.OrdinalIgnoreCase);
 
         foreach (var protagonist in book.Protagonists)
         {
             var chars = ordered
-                .Where(c => c.Characters.Contains(protagonist, StringComparer.OrdinalIgnoreCase))
+                .Where(c => c.Id != excludeId && c.Characters.Contains(protagonist, StringComparer.OrdinalIgnoreCase))
                 .SelectMany(c => DistinctiveTokens(StripHtmlAndMarkdown(c.Html ?? "")));
 
             // Augment with canonical speech_patterns.example_lines if available — even
