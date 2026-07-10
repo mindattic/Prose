@@ -81,7 +81,7 @@ public class WorldStateAtBeatService
         IEnumerable<Guid>? entityIds = null,
         CancellationToken ct = default)
     {
-        using var db = dbFactory.CreateDbContext();
+        await using var db = await dbFactory.CreateDbContextAsync(ct);
 
         // Infer story time from beat events when not provided
         var effectiveTime = storyTime;

@@ -112,6 +112,8 @@ public class NodeSpineService
         Guid nodeId, string summary, string body, string createdBy, CancellationToken ct = default)
     {
         await using var db = await dbFactory.CreateDbContextAsync(ct);
+        await using var tx = await db.Database.BeginTransactionAsync(
+            System.Data.IsolationLevel.Serializable, ct);
 
         var maxSeq = await db.NodeAmendments
             .Where(x => x.NodeId == nodeId)
@@ -135,6 +137,7 @@ public class NodeSpineService
 
         db.NodeAmendments.Add(row);
         await db.SaveChangesAsync(ct);
+        await tx.CommitAsync(ct);
         return row;
     }
 

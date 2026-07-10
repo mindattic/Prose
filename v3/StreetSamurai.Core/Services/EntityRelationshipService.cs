@@ -39,7 +39,7 @@ public class EntityRelationshipService
         DateTime? asOfStoryDate = null,
         CancellationToken ct = default)
     {
-        using var db = dbFactory.CreateDbContext();
+        await using var db = await dbFactory.CreateDbContextAsync(ct);
 
         var root = await db.Entities.AsNoTracking()
             .Where(e => e.Id == entityId)

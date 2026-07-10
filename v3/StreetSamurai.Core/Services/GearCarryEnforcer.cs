@@ -67,7 +67,7 @@ public class GearCarryEnforcer
     {
         if (string.IsNullOrWhiteSpace(beatText)) return [];
 
-        using var db = dbFactory.CreateDbContext();
+        await using var db = await dbFactory.CreateDbContextAsync(ct);
 
         // Load character name
         var character = await db.Entities.AsNoTracking()

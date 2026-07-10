@@ -72,7 +72,7 @@ public static class FindingsCli
     static int CmdShow(string[] rest, FindingsService store)
     {
         if (rest.Length == 0 || !long.TryParse(rest[0], out var id)) return Fail("missing id");
-        var f = store.List(limit: 10000).FirstOrDefault(x => x.Id == id);
+        var f = store.Get(id);
         if (f is null) return Fail($"finding #{id} not found");
 
         Console.WriteLine($"#{f.Id}  [{f.Severity}] [{f.Category}] [{f.Status}]");

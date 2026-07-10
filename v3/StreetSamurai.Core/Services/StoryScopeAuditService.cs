@@ -221,13 +221,20 @@ public class StoryScopeAuditService(
             var counts = new List<int>();
             var conn = db.Database.GetDbConnection();
             await db.Database.OpenConnectionAsync(ct);
-            await using (var cmd = conn.CreateCommand())
+            try
             {
-                cmd.CommandText = sql;
-                cmd.Parameters.AddRange(parameters);
-                await using var reader = await cmd.ExecuteReaderAsync(ct);
-                while (await reader.ReadAsync(ct))
-                    counts.Add(reader.GetInt32(1));
+                await using (var cmd = conn.CreateCommand())
+                {
+                    cmd.CommandText = sql;
+                    cmd.Parameters.AddRange(parameters);
+                    await using var reader = await cmd.ExecuteReaderAsync(ct);
+                    while (await reader.ReadAsync(ct))
+                        counts.Add(reader.GetInt32(1));
+                }
+            }
+            finally
+            {
+                await db.Database.CloseConnectionAsync();
             }
             var recurring = counts.Count(c => c >= 2);
             if (recurring < 3)

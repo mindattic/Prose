@@ -113,9 +113,13 @@ public class ReaderKnowledgeService(
                         Status      = FindingStatus.New.ToString(),
                         DedupKey    = dedup,
                     });
+                    // Save each fact individually so a DedupKey race on one row
+                    // doesn't silently drop every other valid fact in the batch.
+                    try { await db.SaveChangesAsync(ct); }
+                    catch (Microsoft.EntityFrameworkCore.DbUpdateException)
+                    { db.ChangeTracker.Clear(); }
                 }
             }
-            await db.SaveChangesAsync(ct);
         }
         catch (Exception ex)
         {

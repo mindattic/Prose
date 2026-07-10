@@ -89,6 +89,8 @@ public class NarrativeSummaryService
             try
             {
                 await using var db = await dbFactory.CreateDbContextAsync(ct);
+                await using var tx = await db.Database.BeginTransactionAsync(
+                    System.Data.IsolationLevel.Serializable, ct);
                 var sortKey = (await db.NarrativeSummaryEntries
                     .Where(e => e.NodeId == nodeId)
                     .MaxAsync(e => (int?)e.SortKey, ct) ?? 0) + 1;
@@ -103,6 +105,7 @@ public class NarrativeSummaryService
                     RecordedAt = DateTime.UtcNow,
                 });
                 await db.SaveChangesAsync(ct);
+                await tx.CommitAsync(ct);
             }
             catch { /* non-fatal — chain is still in-memory for this session */ }
         }
