@@ -46,7 +46,7 @@ public static class ExamineEmotionCli
         var dbFactory = services.GetRequiredService<IDbContextFactory<StreetSamuraiDbContext>>();
         await using var db = await dbFactory.CreateDbContextAsync();
 
-        var node = await db.Nodes.AsNoTracking().FirstOrDefaultAsync(s => s.Slug == slug);
+        var node = await db.Nodes.AsNoTracking().FirstOrDefaultAsync(s => s.Slug == slug || s.NodeCode == slug);
         if (node == null)
         {
             Console.Error.WriteLine($"Node '{slug}' not found.");

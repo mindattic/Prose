@@ -145,7 +145,7 @@ public class SemanticFidelityService
             try
             {
                 var hits = await embeddings.FindSimilarBeatNodesAsync(
-                    bibleAnchor!, k: 500, nodeScope: nodeId, ct: ct);
+                    bibleAnchor!, k: beats.Count + 10, nodeScope: nodeId, ct: ct);
                 foreach (var hit in hits)
                     bibleAlignmentById[hit.ScopeId] = hit.Similarity;
             }

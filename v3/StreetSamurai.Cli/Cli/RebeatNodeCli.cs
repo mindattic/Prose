@@ -92,14 +92,17 @@ public static class RebeatNodeCli
     /// </summary>
     private static async Task<List<(Guid, string)>> FindViolatorsAsync(StreetSamuraiDbContext db)
     {
-        var nodeIds = await db.Nodes.AsNoTracking().Select(s => new { s.Id, s.Title }).ToListAsync();
+        var nodes = await db.Nodes.AsNoTracking().Select(s => new { s.Id, s.Title }).ToListAsync();
+        var allBeats = await db.BeatNodes.AsNoTracking()
+            .Where(sb => sb.IsEnabled)
+            .Join(db.Beats.AsNoTracking(), sb => sb.BeatId, b => b.Id,
+                  (sb, b) => new { sb.NodeId, b.Text, b.TextHash })
+            .ToListAsync();
+        var beatsByNode = allBeats.ToLookup(x => x.NodeId);
         var result = new List<(Guid, string)>();
-        foreach (var s in nodeIds)
+        foreach (var s in nodes)
         {
-            var lens = await db.BeatNodes.AsNoTracking().Where(sb => sb.NodeId == s.Id && sb.IsEnabled)
-                .Join(db.Beats.AsNoTracking(), sb => sb.BeatId, b => b.Id,
-                      (sb, b) => new { b.Text, b.TextHash })
-                .ToListAsync();
+            var lens = beatsByNode[s.Id].ToList();
             if (lens.Count == 0) continue;
 
             int beats = lens.Count;

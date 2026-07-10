@@ -54,7 +54,7 @@ public class BehavioralInvariantEnforcer
     {
         if (string.IsNullOrWhiteSpace(beatText)) return [];
 
-        using var db = dbFactory.CreateDbContext();
+        await using var db = await dbFactory.CreateDbContextAsync(ct);
 
         var character = await db.Entities.AsNoTracking()
             .Where(e => e.Id == characterId)

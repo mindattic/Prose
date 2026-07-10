@@ -338,6 +338,24 @@ public class VoiceHarvestService
         if (entry == null || entry.Status == "applied") return false;
 
         var rule = entry.Description.Trim();
+
+        // Validate target before touching DB — unknown targets return false without side-effects.
+        if (entry.RuleTarget is not ("literary_rules.prohibitions"
+            or "literary_rules.paragraph_requirements"
+            or "tone_bible.tone_rules"
+            or "tone_bible.dialogue_rules")
+            && !entry.RuleTarget.EndsWith(".narration_voice"))
+        {
+            log.LogWarning("Unknown rule target {Target} on entry {Id}", entry.RuleTarget, entryId);
+            return false;
+        }
+
+        // Commit DB status BEFORE mutating the live rule store so a SaveChanges failure
+        // leaves the store clean and the log entry still at "proposed" (re-apply is safe).
+        entry.Status = "applied";
+        entry.UpdatedAt = DateTime.UtcNow;
+        await db.SaveChangesAsync(ct);
+
         switch (entry.RuleTarget)
         {
             case "literary_rules.prohibitions":
@@ -350,14 +368,8 @@ public class VoiceHarvestService
                 MutateToneBible(tb => AddDistinct(tb.DialogueRules, rule)); break;
             case string t when t.EndsWith(".narration_voice"):
                 ApplyToCharacterNarrationVoice(t[..^".narration_voice".Length], rule); break;
-            default:
-                log.LogWarning("Unknown rule target {Target} on entry {Id}", entry.RuleTarget, entryId);
-                return false;
         }
 
-        entry.Status = "applied";
-        entry.UpdatedAt = DateTime.UtcNow;
-        await db.SaveChangesAsync(ct);
         log.LogInformation("Applied voice rule → {Target}: {Rule}", entry.RuleTarget, Clip(rule));
         return true;
     }

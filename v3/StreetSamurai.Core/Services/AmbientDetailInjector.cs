@@ -46,7 +46,7 @@ public class AmbientDetailInjector
         DateTime? asOfDate = null,
         CancellationToken ct = default)
     {
-        using var db = dbFactory.CreateDbContext();
+        await using var db = await dbFactory.CreateDbContextAsync(ct);
 
         var character = await db.Entities.AsNoTracking()
             .Where(e => e.Id == characterId)

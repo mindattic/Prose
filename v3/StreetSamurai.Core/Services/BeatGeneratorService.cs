@@ -91,7 +91,7 @@ public class BeatGeneratorService
         if (plantPayoffs != null && context.NodeId != Guid.Empty)
         {
             try { plantBlock = await plantPayoffs.BuildPlantContextAsync(context.NodeId, ct); }
-            catch { /* non-blocking */ }
+            catch (Exception ex) when (ex is not OperationCanceledException) { /* non-blocking */ }
         }
 
         // Story commandment context: gateway (null PreviousNodeId) or sequel
@@ -109,7 +109,7 @@ public class BeatGeneratorService
                 if (s != null)
                     commandmentBlock = storyAudit.BuildCommandmentContext(s.PreviousNodeId.HasValue, s.UniverseId);
             }
-            catch { /* non-blocking */ }
+            catch (Exception ex) when (ex is not OperationCanceledException) { /* non-blocking */ }
         }
 
         // Pacing + structural role guidance — pre-computed by ProseWriterRouter and
