@@ -980,7 +980,7 @@ Be honest and use the whole scale.";
             .Select(g => g.OrderByDescending(r => r.ReviewedAt).First()).ToList();
         if (reviews.Count == 0) return new List<EditProposal>();
 
-        var ordered = await db.BeatNodes.Where(sb => sb.NodeId == nodeId)
+        var ordered = await db.BeatNodes.Where(sb => sb.NodeId == nodeId && sb.IsEnabled)
             .OrderBy(sb => sb.SortKey).Include(sb => sb.Beat).Select(sb => sb.Beat!).ToListAsync(ct);
         int n = ordered.Count;
         if (n == 0) return new List<EditProposal>();
@@ -1906,7 +1906,7 @@ Be specific; do not invent praise the reviews don't support.";
             // beats), NOT the global Beat.Number. Map positional → the node's beats in
             // reading (SortKey) order.
             var ordered = await db.BeatNodes
-                .Where(sb => sb.NodeId == nodeId)
+                .Where(sb => sb.NodeId == nodeId && sb.IsEnabled)
                 .OrderBy(sb => sb.SortKey)
                 .Include(sb => sb.Beat)
                 .Select(sb => sb.Beat!)

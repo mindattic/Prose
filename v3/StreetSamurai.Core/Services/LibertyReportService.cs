@@ -155,7 +155,7 @@ public class LibertyReportService(
             var beatNodeIds = childIds.Count > 0 ? childIds : new List<Guid> { nodeId!.Value };
 
             var beatIds = await db.BeatNodes.AsNoTracking()
-                .Where(bn => beatNodeIds.Contains(bn.NodeId))
+                .Where(bn => beatNodeIds.Contains(bn.NodeId) && bn.IsEnabled)
                 .Select(bn => bn.BeatId)
                 .ToListAsync(ct);
 

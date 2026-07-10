@@ -92,9 +92,9 @@ public static class CloneNodeCli
         var newId   = Guid.CreateVersion7();
         var newSlug = $"{Slugify(newTitle)}-{newId.ToString("N")[..8]}";
 
-        // ── Sort key: append after all existing root nodes ─────────────────
+        // ── Sort key: append after all siblings at the same parent level ──────
         var maxSort = await db.Nodes
-            .Where(s => s.ParentNodeId == null)
+            .Where(s => s.ParentNodeId == source.ParentNodeId)
             .Select(s => (double?)s.SortKey)
             .MaxAsync() ?? 0;
 

@@ -198,7 +198,7 @@ public class NodeWorkbenchService
         if (postBeatValidator != null || semanticFidelity != null)
         {
             beatSlug = await db.BeatNodes.AsNoTracking()
-                .Where(sb => sb.BeatId == beatId)
+                .Where(sb => sb.BeatId == beatId && sb.IsEnabled)
                 .Join(db.Nodes, sb => sb.NodeId, s => s.Id, (_, s) => s.Slug)
                 .FirstOrDefaultAsync(CancellationToken.None);
         }
@@ -306,7 +306,7 @@ public class NodeWorkbenchService
         // review (Score/ScoredAt), Stale and WasCorrected are intentionally left
         // at defaults — a duplicate has no recordings, no reviews, nothing stale.
         var srcBeats = await db.BeatNodes
-            .Where(sb => sb.NodeId == srcNodeId)
+            .Where(sb => sb.NodeId == srcNodeId && sb.IsEnabled)
             .OrderBy(sb => sb.SortKey)
             .Join(db.Beats, sb => sb.BeatId, b => b.Id, (sb, b) => new { sb.SortKey, sb.IsEnabled, Beat = b })
             .ToListAsync(ct);
@@ -585,7 +585,7 @@ public class NodeWorkbenchService
     {
         await using var db = await dbFactory.CreateDbContextAsync(ct);
         var ordered = await db.BeatNodes
-            .Where(sb => sb.NodeId == nodeId)
+            .Where(sb => sb.NodeId == nodeId && sb.IsEnabled)
             .OrderBy(sb => sb.SortKey)
             .ToListAsync(ct);
 
@@ -618,7 +618,7 @@ public class NodeWorkbenchService
             // rows with the post-restripe ladder.
             db.ChangeTracker.Clear();
             ordered = await db.BeatNodes
-                .Where(sb => sb.NodeId == nodeId)
+                .Where(sb => sb.NodeId == nodeId && sb.IsEnabled)
                 .OrderBy(sb => sb.SortKey)
                 .ToListAsync(ct);
             if (afterBeatId == null)
@@ -704,7 +704,7 @@ public class NodeWorkbenchService
 
         await using var db = await dbFactory.CreateDbContextAsync(ct);
         var siblings = await db.BeatNodes
-            .Where(sb => sb.NodeId == nodeId)
+            .Where(sb => sb.NodeId == nodeId && sb.IsEnabled)
             .OrderBy(sb => sb.SortKey)
             .ToListAsync(ct);
         var subject = siblings.FirstOrDefault(sb => sb.BeatId == beatId)
@@ -736,7 +736,7 @@ public class NodeWorkbenchService
             // values from the first ToListAsync above.
             db.ChangeTracker.Clear();
             siblings = await db.BeatNodes
-                .Where(sb => sb.NodeId == nodeId)
+                .Where(sb => sb.NodeId == nodeId && sb.IsEnabled)
                 .OrderBy(sb => sb.SortKey)
                 .ToListAsync(ct);
             subject = siblings.First(sb => sb.BeatId == beatId);
@@ -1051,7 +1051,7 @@ public class NodeWorkbenchService
         var node = await db.Nodes.FirstOrDefaultAsync(s => s.Id == chapterNodeId, ct)
             ?? throw new InvalidOperationException($"Node {chapterNodeId} not found.");
 
-        var existingCount = await db.BeatNodes.CountAsync(sb => sb.NodeId == chapterNodeId, ct);
+        var existingCount = await db.BeatNodes.CountAsync(sb => sb.NodeId == chapterNodeId && sb.IsEnabled, ct);
         if (existingCount > 0)
         {
             log.LogInformation("Node {S} ({T}) already has {N} beats; not materialising.",
@@ -1334,15 +1334,24 @@ public class NodeWorkbenchService
         if (idList.Count == 0) return new();
         await using var db = await dbFactory.CreateDbContextAsync(ct);
         if (!db.Database.IsSqlServer()) return new();
-        var inClause = string.Join(",", idList.Select(id => $"'{id:D}'"));
-        var rows = await db.Database.SqlQueryRaw<BeatVersionCountRow>(
-            $"""
-            SELECT b.Id AS Id, COUNT(*) AS Cnt
-            FROM [Beats] FOR SYSTEM_TIME ALL AS b
-            WHERE b.Id IN ({inClause})
-            GROUP BY b.Id
-            """).ToListAsync(ct);
-        return rows.ToDictionary(r => r.Id, r => r.Cnt);
+        // Batch into chunks of 500 to keep the IN clause within safe SQL text limits.
+        const int batchSize = 500;
+        var result = new Dictionary<Guid, int>();
+        for (int offset = 0; offset < idList.Count; offset += batchSize)
+        {
+            var batch = idList.Skip(offset).Take(batchSize).ToList();
+            var inClause = string.Join(",", batch.Select(id => $"'{id:D}'"));
+            var rows = await db.Database.SqlQueryRaw<BeatVersionCountRow>(
+                $"""
+                SELECT b.Id AS Id, COUNT(*) AS Cnt
+                FROM [Beats] FOR SYSTEM_TIME ALL AS b
+                WHERE b.Id IN ({inClause})
+                GROUP BY b.Id
+                """).ToListAsync(ct);
+            foreach (var row in rows)
+                result[row.Id] = row.Cnt;
+        }
+        return result;
     }
 
     /// <summary>The beat's prose at a newest-first version index — 0 = current,

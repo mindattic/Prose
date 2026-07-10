@@ -230,7 +230,9 @@ public class ProseWriterRouter(
                 {
                     xRayContext = sc.ContextBlock;
                     // Populate BeatEntities from the canonical write path (fire-and-forget).
-                    _ = Task.Run(() => sceneAssembler.PersistRosterAsync(beatId, sc, CancellationToken.None));
+                    var capturedBeatId = beatId;
+                    _ = Task.Run(() => sceneAssembler.PersistRosterAsync(capturedBeatId, sc, CancellationToken.None))
+                        .ContinueWith(t => { if (t.IsFaulted) log.LogWarning(t.Exception, "[ProseWriterRouter] PersistRosterAsync failed for beat {Id}", capturedBeatId); }, TaskScheduler.Default);
                 }
             }
             catch (Exception ex) { log.LogWarning(ex, "[ProseWriterRouter] {Service} failed, continuing", nameof(SceneContextAssembler)); }

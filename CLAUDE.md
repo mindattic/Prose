@@ -38,6 +38,20 @@ Only use `dotnet run --project v3/StreetSamurai.Cli -- <args>` when the CLI's bu
 - Web-only project (Blazor Server). No MAUI host.
 - The null-conditional operator `?.` (and `?[]`) is **not allowed inside an EF Core expression-tree lambda** (anything that becomes a SQL query — `Select`/`Where`/`GroupBy` projections, etc.). It fails to compile (`CS8072`). Project the scalar **before** the terminal operator instead: write `g.OrderByDescending(h => h.RecordedAt).Select(h => h.MeanScore).FirstOrDefault()`, not `g.OrderByDescending(...).FirstOrDefault()?.MeanScore ?? 0`.
 
+## Prose Content — Graphic Adult Content
+
+Adult content in this project is **graphic adult content**: real adult situations rendered with real adult reactions. This is NOT ultraviolence (gratuitous gore for spectacle's sake) and NOT pornography (arousal-focused titillation).
+
+What it means in practice:
+- **Violence**: describe what the body actually experiences — the broken bottle dragged through a face, the weight of a corpse, bone under pressure. Physical consequence, not spectacle.
+- **Sex**: the body's involuntary responses — the shaking, the orgasmic contractions, the specific physical sensation. Not euphemism, not fade-to-black unless the scene demands it.
+- **Extreme affect**: the body does what it does under adrenaline and extremity — the vibrating rat-tat-tat of a heavy machine gun that gives someone a hard-on. Write it.
+- The frame is always **literary authenticity**: what a person actually feels, grounded in physical reality.
+
+**Hard limits — absolutely non-negotiable:**
+- No sexual content involving minors. No exceptions.
+- No sexual content involving animals. No exceptions.
+
 ## World Rules
 - The symbol Φ is the QUANTA currency symbol. It is NEVER the Greek letter phi.
 - Iowan Behemoths are autonomous machines, NOT synthetic life. They are not alive.
@@ -70,7 +84,7 @@ Node bibles are **loaded on demand**, not injected at session start. Load only w
 - `docs/nodes/TEST.md` — Testament / Bear court-martial (GLMZ)
 - `docs/nodes/GIW.md` — Grafted Into War / M-101/Soren (Fantasy)
 - `docs/nodes/MxG.md` — Magenta & Gunmetal / GLMZ run (GLMZ, planned; Shadowrun-style heist → True Lies finale)
-- `docs/nodes/RDRM.md` — Read the Room / Faith Larson & Ethan Wolfe (GLMZ; Fenris band; Faith is a Read; Milwaukee dive club)
+- `docs/nodes/RTR.md` — Read the Room / Faith Larson & Ethan Wolfe (GLMZ; Fenris band; Faith is a Read; Milwaukee dive club)
 - `docs/books/bushido-coda-strands-bible.md` — BCODA (legacy long-form; superseded by BCODA.md above)
 
 ## Codex (how to work with the canon)
