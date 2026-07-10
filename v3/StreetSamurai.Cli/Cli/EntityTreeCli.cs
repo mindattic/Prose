@@ -45,7 +45,7 @@ public static class EntityTreeCli
         if (entityId == null && slug != null)
         {
             var dbFactory = services.GetRequiredService<IDbContextFactory<StreetSamuraiDbContext>>();
-            using var db = dbFactory.CreateDbContext();
+            await using var db = await dbFactory.CreateDbContextAsync();
             entityId = await db.Entities.AsNoTracking()
                 .Where(e => e.Slug == slug)
                 .Select(e => (Guid?)e.Id)

@@ -65,7 +65,7 @@ public static class SeedSensoryHintsCli
         }
 
         var dbFactory = services.GetRequiredService<IDbContextFactory<StreetSamuraiDbContext>>();
-        using var db = dbFactory.CreateDbContext();
+        await using var db = await dbFactory.CreateDbContextAsync();
 
         if (list)
             return await ListHints(db);

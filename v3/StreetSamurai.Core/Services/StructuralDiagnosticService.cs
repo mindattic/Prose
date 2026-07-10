@@ -81,10 +81,14 @@ public class StructuralDiagnosticService
             .FirstOrDefaultAsync(s => s.Id == nodeId, ct)
             ?? throw new InvalidOperationException($"Node {nodeId} not found.");
 
+        var childIds = await db.Nodes.AsNoTracking()
+            .Where(n => n.ParentNodeId == nodeId).Select(n => n.Id).ToListAsync(ct);
+        var searchIds = childIds.Count > 0 ? childIds : new List<Guid> { nodeId };
+
         var beats = await (
             from sb in db.BeatNodes.AsNoTracking()
             join b in db.Beats.AsNoTracking() on sb.BeatId equals b.Id
-            where sb.NodeId == nodeId && sb.IsEnabled
+            where searchIds.Contains(sb.NodeId) && sb.IsEnabled
             orderby sb.SortKey
             select b.Text
         ).ToListAsync(ct);

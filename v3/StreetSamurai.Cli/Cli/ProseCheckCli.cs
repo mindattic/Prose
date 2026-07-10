@@ -38,7 +38,7 @@ public static class ProseCheckCli
 
         var guard = services.GetRequiredService<ProsePatternGuard>();
         var dbFactory = services.GetRequiredService<IDbContextFactory<StreetSamuraiDbContext>>();
-        using var db = dbFactory.CreateDbContext();
+        await using var db = await dbFactory.CreateDbContextAsync();
 
         var totalViolations = 0;
 
@@ -55,10 +55,14 @@ public static class ProseCheckCli
             var node = await db.Nodes.AsNoTracking().FirstOrDefaultAsync(s => s.Slug == nodeSlug);
             if (node == null) { Console.Error.WriteLine($"Node '{nodeSlug}' not found."); return 1; }
 
+            var childIds = await db.Nodes.AsNoTracking()
+                .Where(n => n.ParentNodeId == node.Id).Select(n => n.Id).ToListAsync();
+            var searchIds = childIds.Count > 0 ? childIds : new List<Guid> { node.Id };
+
             var beats = await (
                 from sb in db.BeatNodes
                 join b in db.Beats on sb.BeatId equals b.Id
-                where sb.NodeId == node.Id && sb.IsEnabled
+                where searchIds.Contains(sb.NodeId) && sb.IsEnabled
                 orderby sb.SortKey
                 select new { b.Id, b.Number, b.Text }
             ).ToListAsync();

@@ -85,9 +85,13 @@ public class AskService
                 .Where(s => s.Id == sid)
                 .Select(s => new { s.Slug, s.Title })
                 .FirstOrDefaultAsync(ct);
+            var askChildIds = await db.Nodes.AsNoTracking()
+                .Where(n => n.ParentNodeId == sid).Select(n => n.Id).ToListAsync(ct);
+            var askSearchIds = askChildIds.Count > 0 ? askChildIds : new List<Guid> { sid };
+
             var beats = await (from sb in db.BeatNodes.AsNoTracking()
                                join b in db.Beats.AsNoTracking() on sb.BeatId equals b.Id
-                               where sb.NodeId == sid && sb.IsEnabled
+                               where askSearchIds.Contains(sb.NodeId) && sb.IsEnabled
                                orderby sb.SortKey
                                select new { b.Id, b.Text, b.Title }).ToListAsync(ct);
 
@@ -102,7 +106,7 @@ public class AskService
                 proseBlock.AppendLine($"[{heading}]");
                 proseBlock.AppendLine(b.Text);
                 proseBlock.AppendLine();
-                used += b.Text.Length;
+                used += b.Text?.Length ?? 0;
                 proseChunks++;
                 proseCitations.Add(new ProseCitation(b.Id, node?.Slug ?? "", node?.Title ?? "", pos, 1.0));
             }
@@ -129,7 +133,7 @@ public class AskService
                 {
                     if (!texts.TryGetValue(h.ScopeId, out var b)) continue;
                     memberMap.TryGetValue(h.ScopeId, out var m);
-                    var chunk = b.Text.Length > MaxPerBeat ? b.Text[..MaxPerBeat] + "…" : b.Text;
+                    var chunk = (b.Text?.Length ?? 0) > MaxPerBeat ? b.Text![..MaxPerBeat] + "…" : b.Text ?? "";
                     var label = (m?.Title ?? "story") + (string.IsNullOrWhiteSpace(b.Title) ? "" : " — " + b.Title);
                     proseBlock.AppendLine($"--- {label} (similarity {h.Similarity:F3}) ---");
                     proseBlock.AppendLine(chunk);
