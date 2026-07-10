@@ -138,6 +138,10 @@ public static class PruneDisabledCli
         var orphanBeatIds = linkBeatIds.Except(stillReferenced).ToList();
         if (orphanBeatIds.Count > 0)
         {
+            // Clean up associated LibertyReport rows before the Beat rows (no DB-level cascade).
+            var libertyOrphans = await wdb.LibertyReports.Where(r => orphanBeatIds.Contains(r.BeatId)).ToListAsync();
+            if (libertyOrphans.Count > 0) { wdb.LibertyReports.RemoveRange(libertyOrphans); await wdb.SaveChangesAsync(); }
+
             var orphans = await wdb.Beats.Where(b => orphanBeatIds.Contains(b.Id)).ToListAsync();
             wdb.Beats.RemoveRange(orphans);
             await wdb.SaveChangesAsync();

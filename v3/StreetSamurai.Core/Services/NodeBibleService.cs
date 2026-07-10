@@ -274,7 +274,7 @@ public class NodeBibleService
             db.Beats.Add(beat);
             db.BeatNodes.Add(new BeatNode
             {
-                NodeId  = nodeId,
+                NodeId    = childIds.Count > 0 ? childIds[0] : nodeId,
                 BeatId    = beat.Id,
                 SortKey   = plan.Index * 100.0,
                 IsEnabled = true,

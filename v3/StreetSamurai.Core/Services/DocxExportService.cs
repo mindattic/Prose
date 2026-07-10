@@ -465,8 +465,11 @@ public class DocxExportService
         bool italic = false;
         foreach (var seg in segments)
         {
-            if (seg.Length > 0) runs.Add(MakeRun(seg, Body12, italic: italic));
-            italic = !italic;
+            if (seg.Length > 0)
+            {
+                runs.Add(MakeRun(seg, Body12, italic: italic));
+                italic = !italic;
+            }
         }
         if (runs.Count == 0) runs.Add(MakeRun(text, Body12));
         return runs;

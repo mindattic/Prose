@@ -74,7 +74,7 @@ public class LibertyReportService(
             await db.SaveChangesAsync(ct);
 
             // File findings for notable liberties.
-            var filePath = $"beat:{beatId}";
+            var filePath = $"beat:{beatId:N}";
             foreach (var liberty in liberties)
             {
                 if (liberty.CoolFactor >= CanonCandidateFloor)

@@ -92,7 +92,7 @@ public class ContinuityService
             .Where(c => c.EntityId == incoming.EntityId
                      && c.Predicate == incoming.Predicate
                      && c.Object.ToLower().Trim() != incoming.Object.ToLower().Trim()
-                     && c.Status != "REJECTED" && c.Status != "SUPERSEDED")
+                     && c.Status != "REJECTED" && c.Status != "SUPERSEDED" && c.Status != "CANONICAL")
             .OrderByDescending(c => c.LastConfirmedAt)
             .FirstOrDefault();
 

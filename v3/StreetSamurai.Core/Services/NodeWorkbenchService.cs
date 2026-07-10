@@ -503,7 +503,7 @@ public class NodeWorkbenchService
                 $"'{parent.Title}' already has {existingChildren} child node(s) — it's already a Collection. " +
                 "Splitting its direct beats would duplicate chapters. Reconcile the existing children first.");
 
-        var rows = await db.BeatNodes.Where(sb => sb.NodeId == nodeId)
+        var rows = await db.BeatNodes.Where(sb => sb.NodeId == nodeId && sb.IsEnabled)
             .OrderBy(sb => sb.SortKey)
             .Join(db.Beats, sb => sb.BeatId, b => b.Id,
                   (sb, b) => new { sb.BeatId, sb.SortKey, b.IsChapterStart, b.Title })
@@ -1228,7 +1228,7 @@ public class NodeWorkbenchService
     {
         await using var db = await dbFactory.CreateDbContextAsync(ct);
         var siblings = await db.BeatNodes
-            .Where(sb => sb.NodeId == nodeId)
+            .Where(sb => sb.NodeId == nodeId && sb.IsEnabled)
             .OrderBy(sb => sb.SortKey)
             .ToListAsync(ct);
         var pos = siblings.FindIndex(sb => sb.BeatId == beatId);

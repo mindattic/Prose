@@ -105,6 +105,7 @@ public static class CloneNodeCli
         newNode.Id              = newId;
         newNode.Slug            = newSlug;
         newNode.Title           = newTitle;
+        newNode.ParentNodeId    = source.ParentNodeId;
         newNode.NodeCode        = code;
         newNode.Kind            = source.Kind;
         newNode.Status          = status;

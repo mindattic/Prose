@@ -76,7 +76,7 @@ public class LlmRouter : ILlmService
         var sw = System.Diagnostics.Stopwatch.StartNew();
         try
         {
-            var response = await GetActiveProvider().GenerateAsync(system, user, temperature, maxTokens, model ?? runModel, ct);
+            var response = await GetActiveProvider().GenerateAsync(system, user, temperature, maxTokens, resolvedModel, ct);
             sw.Stop();
             prompts.Capture(provider, resolvedModel, temperature, maxTokens, system, user, response, (int)sw.ElapsedMilliseconds);
             ledger?.Record(provider, resolvedModel, system + user, response);
@@ -107,7 +107,7 @@ public class LlmRouter : ILlmService
         try
         {
             var response = await GetActiveProvider().GenerateWithCachedPrefixAsync(
-                cachedPrefix, dynamicSystem, user, temperature, maxTokens, model ?? runModel, ct);
+                cachedPrefix, dynamicSystem, user, temperature, maxTokens, resolvedModel, ct);
             sw.Stop();
             var fullInput = cachedPrefix + "\n\n" + dynamicSystem;
             prompts.Capture(provider, resolvedModel, temperature, maxTokens, fullInput, user, response, (int)sw.ElapsedMilliseconds);

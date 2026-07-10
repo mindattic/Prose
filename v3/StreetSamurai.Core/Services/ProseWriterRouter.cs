@@ -412,7 +412,7 @@ public class ProseWriterRouter(
                     includeSuggestedFix: true,
                     ct: ct);
                 if (storyScopeGuidance.Length > 0)
-                    structuralBlueprintGuidance = structuralBlueprintGuidance.Length > 0
+                    structuralBlueprintGuidance = !string.IsNullOrEmpty(structuralBlueprintGuidance)
                         ? structuralBlueprintGuidance + "\n\n" + storyScopeGuidance
                         : storyScopeGuidance;
             }
@@ -556,7 +556,7 @@ public class ProseWriterRouter(
                 new("ContinuityService",   IsApplicable: nodeApplicable,    IsActive: continuityContext.Length > 0,                                           BlockSizeChars: continuityContext.Length),
                 new("StoryScience",        IsApplicable: totalBeats > 0,    IsActive: storyScienceGuidance.Length > 0,                                        BlockSizeChars: storyScienceGuidance.Length),
                 new("NarrativeChart",      IsApplicable: nodeApplicable,    IsActive: offscreenActivityContext.Length > 0,                                    BlockSizeChars: offscreenActivityContext.Length),
-                new("StructuralBlueprint", IsApplicable: nodeApplicable && totalBeats > 0, IsActive: structuralBlueprintGuidance.Length > 0,                  BlockSizeChars: structuralBlueprintGuidance.Length),
+                new("StructuralBlueprint", IsApplicable: nodeApplicable && totalBeats > 0, IsActive: !string.IsNullOrEmpty(structuralBlueprintGuidance),         BlockSizeChars: structuralBlueprintGuidance?.Length ?? 0),
             ], CancellationToken.None); }
             catch (Exception ex) { log.LogWarning(ex, "[ProseWriterRouter] {Service} failed", nameof(WorkflowMonitorService)); }
 
