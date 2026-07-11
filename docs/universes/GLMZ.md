@@ -319,6 +319,13 @@ user can queue a swipe-gesture to suppress any individual AR overlay — but at 
 there are hundreds of simultaneous projections in any archology corridor. Suppressing them all
 would take all day. Nobody bothers. You learn to see through the holograms like rain.
 
+The scale is total. It is not just named brand products. A freshly opened can of seltzer water
+sprays animated pixelated bubbles from the pull-tab. A transit platform countdown ticker
+dissolves and respawns with each number change. The wall-paint in a corridor shifts color
+at 60-second intervals per the building's ad-rotation contract. The world is illusions on top
+of illusions. Characters who have lived in GLMZ their whole lives do not register most of
+this any more than they register the smell of the city — it is the texture of the air.
+
 In gray zone territory, physical-layer AR emitters are absent or dead — the silence is
 conspicuous. First time a character arrives in a gray zone from inside the Veil, they notice the
 absence before they notice anything else.
@@ -761,6 +768,12 @@ the Schisms — that detail has never mattered to the people doing the discrimin
   Describe both. Always.
 - **Brand names are mandatory** — no generic objects; every manufactured item has a manufacturer
   and model (SS-LAW-28); augmented characters auto-identify via overlay
+- **Hyper Reality texture in every city scene** — every scene set inside an archology, on a
+  GLMZ street, or in any built city environment must include at least one ambient Hyper Reality
+  detail (SS-LAW-29). It need not be a major brand moment. A seltzer can sprays animated
+  pixelated bubbles when opened. A jacket throws its brand ident into the air as a stranger
+  passes. A wall-panel cycles color on its ad-rotation schedule. The world is illusions on top
+  of illusions. Gray zone scenes invert this: the absence of Hyper Reality is the texture.
 - **No 2020s slang** — words like "fit", "drip", "rizz", "vibe", "slay", "bussin", "no cap"
   will not survive 200 years; do not use them. Invented slang must be grounded in 2226 culture
   (neuretics, CorpoNations, the Schisms, eigenlift, ghosting, credstick, quanta) — not
