@@ -310,10 +310,7 @@ E.L.F.s / Tier 3 Synthetic Persons) is background world law but does not resolve
 classification — she is outside the Accord's registry entirely. See §3 Sparrow for the full note.
 The story's open-ness on what she is must be preserved in all cross-reference.
 
-**NSB / Exo technology (SS-A34/SS-A38).** Sparrow's story has no Neuretic Substrate Bridging, no
-frame operation, no Exos. Elias is a logistics auditor, not a Remote Frame Operator. Sparrow
-communicates via standard data packet, not NSB projection. These technologies exist in 2226 GLMZ
-but are not load-bearing here — do not introduce them.
+**Ghost / ECT technology (SS-LAW-26).** Sparrow's story has no eigenstate conscience transfer, no frame operation, no Ghosts. Elias is a logistics auditor, not a Ghost operator. Sparrow communicates via standard data packet, not ECT projection. These technologies exist in 2226 GLMZ but are not load-bearing here — do not introduce them.
 
 **No underwater GLMZ communities (SS-A42).** The lakebed features in Sparrow's anomaly catalog as
 a geological source site, not a habitation zone. The ascending objects predate and have no

@@ -184,7 +184,7 @@ Brief notes on world canon directly relevant to NxR. Full definitions in BIBLE.m
 
 **No underwater communities (SS-A42):** The lake references in this story (Adalemo surviving the lake, the final diner looking out at the neon on the water) are geographic, not communal. There are no permanent human communities below Lake Michigan. What is on the lakebed is ruins, salvage operations, and one sealed black site. The lake is backdrop, not setting.
 
-**Neuretics forensics vs. NSB:** The partition crack in NxR is a neuretics forensics procedure — physical hardware work on Ohara's implant from the outside. It is not remote consciousness projection (NSB / Neuretic Substrate Bridging, SS-A34/A38). Exos (street) / Remote Frame Operators (formal) operate via NSB into external frames; Stave is doing neuretics surgery on the hardware inside a living person's skull. Different discipline, same technology stack. The Atlas-grade implant is the physical substrate; the partition is a software/firmware-level encrypted enclosure within it.
+**Neuretics forensics vs. ECT/Ghosting:** The partition crack in NxR is a neuretics forensics procedure — physical hardware work on Ohara's implant from the outside. It is not remote consciousness projection (ECT / eigenstate conscience transfer, SS-LAW-26). Ghosts operate via ECT into external frames; Stave is doing neuretics surgery on the hardware inside a living person's skull. Different discipline, same technology stack. The Atlas-grade implant is the physical substrate; the partition is a software/firmware-level encrypted enclosure within it.
 
 ## §9 — The Parallel Writing Experiment
 

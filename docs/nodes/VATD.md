@@ -442,9 +442,6 @@ Present day is **2226** (SS-A28). The GLMZ present-day year is 200 years ahead o
 writing year. All in-story references to the present use 2226. Flashbacks and dated records
 keep their own years as artifacts.
 
-### NSB / Exo terminology (SS-A34, SS-A38)
+### Ghost / ECT terminology (SS-LAW-26)
 
-Not directly relevant to VATD (no remote frame operators appear in this story), but canonical
-for GLMZ reference: remote consciousness operators are **Exos** (street/prose) or **Remote Frame
-Operators / RFOs** (formal/corpo). "Rider" is retired. The mechanism is NSB
-(Neuretic Substrate Bridging). These terms apply if any cross-story reference to frame work arises.
+Not directly relevant to VATD (no Ghost operators appear in this story), but canonical for GLMZ reference: remote consciousness operators are **Ghosts** — the operator class for ECT (eigenstate conscience transfer; street verb: *ghosting*). Retired synonyms: Exo, RFO, NSB, Rider. These terms apply if any cross-story reference to Ghost work arises.

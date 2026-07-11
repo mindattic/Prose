@@ -89,10 +89,9 @@ terms. Her professional silence in his body. His physical freedom in hers.
 - A thriller with a gunfight climax (the antagonist's weapon is calibration, not bullets)
 - Stylistically safe (this is the weirdest prose register in the collection — see §6)
 
-**NOT NSB/remote operation:** The neuretics in this story are medical-grade carrier implants worn
+**NOT ECT/Ghosting:** The neuretics in this story are medical-grade carrier implants worn
 continuously — cognitive enhancement, data-courier carrier systems, always-on. This is distinct
-from **NSB (Neuretic Substrate Bridging)**, which is remote consciousness projection into a frame
-chassis (what Exos do). Orison's product is calibration and maintenance of implanted neuretics.
+from **ECT (eigenstate conscience transfer / ghosting)**, which is remote consciousness projection into a frame chassis (what Ghosts do). Orison's product is calibration and maintenance of implanted neuretics.
 No frames. No Shells. No return-handshake risk. The bleed is a malfunction in an implant that
 was never supposed to leak — not a projection artifact.
 
@@ -654,20 +653,16 @@ world-consequence that shortens Orison's deployment window.
 
 Relevant GLMZ world pillars for writers working on this story.
 
-### Neuretics vs. NSB (critical distinction)
+### Neuretics vs. ECT/Ghosting (critical distinction)
 
 The neuretics in this story are **carrier-grade implants** — medical-grade mesh grown into the
 brain, always-on, used for cognitive enhancement and data-courier carrier systems. This is the
 standard neuretic technology all major GLMZ corpos sell and maintain.
 
-This is **not** NSB (Neuretic Substrate Bridging / Coherent Eigenstate Projection) — the
-technology that lets Exos project their consciousness into a remote frame chassis. Exo work
-involves Shells (inert bodies during projection), return handshakes, Black Ice countermeasures,
-and Dollhead dissociation risk. None of that applies here. Orison calibrates implants; they do
-not run projection operations.
+This is **not** ECT (eigenstate conscience transfer / ghosting) — the technology that lets Ghosts project their consciousness into a remote frame chassis. Ghost work involves Husks (bodies at rest during projection), return handshakes, Black Ice countermeasures, and Dollhead dissociation risk. None of that applies here. Orison calibrates implants; they do not run projection operations.
 
 The distinction matters because Orison's suppression protocol targets the associative-node
-layer of an always-on implant — something that has no equivalent in the NSB/frame-operation
+layer of an always-on implant — something that has no equivalent in the ECT/frame-operation
 domain. The horror is in the implant that never turns off.
 
 ### Altitude and the class axis (SS-A32/A33/A42)

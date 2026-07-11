@@ -370,11 +370,7 @@ is governed, ultimately, by an AI. The "same machinery that misclassified the 43
 richer for it. OBERON's name is never spoken in prose. Do not confirm or allude to OBERON
 in-fiction — treat exactly as the Prisoner: the ambiguity enriches; confirmation kills it.
 
-**Bear is NOT an Exo (SS-A34/SS-A38).** Bear does not use NSB (Neuretic Substrate Bridging).
-He does not burn frames, does not have a Shell, and is not a Remote Frame Operator (RFO). His
-augmentations are direct physical enhancements — myomimetic mesh, ballistic laminate, the Strix
-Harvest Frame and Sunder. There is no remote projection in this story. "Exo" (street) and "RFO"
-(formal) are job titles for NSB operators; they do not apply to Bear.
+**Bear is NOT a Ghost (SS-LAW-26).** Bear does not use ECT (eigenstate conscience transfer / ghosting). He does not ghost into frames, does not have a Husk in suspension, and is not a Ghost operator. His augmentations are direct physical enhancements — myomimetic mesh, ballistic laminate, the Strix Harvest Frame and Sunder. There is no remote projection in this story. "Ghost" is the operator class for ECT work; it does not apply to Bear.
 
 **Retired-term hygiene (SS-A34).** All retired remote-operation terminology is enforced via
 DeprecatedEntityNames (NounConsistencyService); none of it appears in TEST and no backfill is

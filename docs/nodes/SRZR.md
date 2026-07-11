@@ -62,7 +62,7 @@ DB id `FA054E75-9301-4C5D-A803-9A2FD2099984`. See [[project_sasha_vo_etymology]]
   select-fire (single/burst/auto). Both chamber the same round: 6.5mm DPS-65 "Stillwater."
   **Cross-draw, both hands at once** — how she thinks, not a trick.
 - As deadly with Problem Solver and Trouble Maker as Kyle is with Silence.
-- **Sasha is NOT an Exo (SS-A38).** She operates physically, not via NSB frame projection. Problem
+- **Sasha is NOT a Ghost (SS-LAW-26).** She operates physically, not via ECT (ghosting). Problem
   Solver and Trouble Maker are hers — she pulls them, not a frame. The slur guard at §2 and §6
   applies separately: she is never called a "Jockey" in contexts that invoke camel imagery.
 
@@ -142,8 +142,8 @@ human icon without grasping that the icon is absurd here. Leave it ambiguous whe
 > narration, prose, entity names, and all documentation. "Camel jockey" is an ethnic slur and is
 > permanently banned — in prose, in entity names, in notes, everywhere. Entity `019ef8055bc8` was
 > restored to "The Man on the Camel" 2026-06-28 after an incorrect rename; this lock must never be
-> violated again. See SRZR-US-5. Additionally: the street term "Jockey" for an Exo/NSB operator
-> must **never** appear adjacent to camel imagery in SRZR (SS-A38 SLUR GUARD).
+> violated again. See SRZR-US-5. Additionally: the street term "Jockey" for a Ghost/ECT operator
+> must **never** appear adjacent to camel imagery in SRZR (SS-LAW-26 SLUR GUARD).
 
 - **Register (LOCKED):** model on the Board / the Hiss in the game *Control*, plus the DS9 Prophets —
   a **collective** that says *it / they / we* interchangeably, does not experience linear time (mixes
@@ -249,12 +249,8 @@ she has a float address and lives in the street dirt.
   legitimate float-layer access. Gray-market alternatives (Ascent Bloom, Kite Rig, Vertical Axis
   operators) exist precisely because the Tax is the only legitimate path up.
 
-**NSB / Exo terminology (SS-A34/A38) — Sasha is NOT an Exo:**
-NSB (Neuretic Substrate Bridging) is the canonical term for remote consciousness projection into a
-physical frame. An operator who burns frames is an **Exo** (street) or a **Remote Frame Operator /
-RFO** (formal/corporate). Sasha operates physically with Problem Solver and Trouble
-Maker; she does not burn frames and is not an Exo. Any scene that involves NSB operators should use
-the current terminology (deprecated legacy terms are enforced via DeprecatedEntityNames).
+**Ghost / ECT terminology (SS-LAW-26) — Sasha is NOT a Ghost:**
+ECT (eigenstate conscience transfer) is the canonical remote-operation mechanism — street verb: *ghosting*. An operator who ghosts into frames is a **Ghost**. Retired synonyms: Exo, RFO, NSB. Sasha operates physically with Problem Solver and Trouble Maker; she does not ghost into frames and is not a Ghost. Any scene that involves Ghost operators should use the current terminology — "Exo," "NSB," and "RFO" are retired under SS-LAW-26.
 
 **Gray Zone / CorpoNation texture (SS-A29/A40):**
 - CorpoNations are **arcologies** — self-contained towers over 100 stories; citizens can be born,
@@ -306,8 +302,8 @@ across the forge chapters so the register does not drop into grim-flat before th
    representative form, never by the thing itself appearing whole.
 6. **Every line the entity speaks is literally coherent** inside its own alien logic. Never mystic fog.
 7. **"The man on the camel" — always.** "Camel jockey" is a slur and is banned in prose, entity
-   names, notes, and documentation, everywhere, permanently. The street term "Jockey" (for Exo
-   operators) must never appear adjacent to camel imagery in this story (SS-A38). See §2.
+   names, notes, and documentation, everywhere, permanently. The street term "Jockey" (for Ghost
+   operators) must never appear adjacent to camel imagery in this story (SS-LAW-26). See §2.
 8. **Sasha is 19, gray-zone born, never corpo-registered, never-provisioned neuretics.** The SS-A20
    bible canon wins over any legacy DB migration. The firearms craft (any frame, next-gun-off-ground,
    counting tic) is retained with a gray-zone causal origin.

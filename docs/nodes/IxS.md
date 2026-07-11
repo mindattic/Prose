@@ -111,7 +111,7 @@ Returns. Still running four channels. Has rebuilt the gray-market agent network 
 ### Remi Diallo ("Scout")
 Returns. Named Gerald. That's enough. She is different in the ways that mattered and the same in the ways that made her good at this.
 
-*Arc:* The Exo who learned to be present. IxS puts her back in an NSB operation — the civic grid is a distributed network architecture that is exactly what her crawlers are designed for. The operation requires presence AND threading. She has to do both in the same window. This is technically possible. She's never tried it.
+*Arc:* The Ghost who learned to be present. IxS puts her back in an ECT operation — the civic grid is a distributed network architecture that is exactly what her crawlers are designed for. The operation requires presence AND threading. She has to do both in the same window. This is technically possible. She's never tried it.
 
 ### Lee Nari ("the witness")
 **Heritage:** Korean-Vietnamese (Lotus blood-eligible on both sides — this is the bitterest part of it for her: she was pure by their standards and she left anyway)  
