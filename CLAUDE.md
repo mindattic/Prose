@@ -100,6 +100,14 @@ The project follows the **MindAttic Codex** documentation standard. The source o
   **The single source of truth for that StoryNode.** All story-specific facts live here.
 - **`docs/USER_STORIES.md`** (L2) — test-cited stories + backlog + audit log. Every `✅` names its
   verifying test or recorded evidence.
+- **`docs/series/GLMZ.md`** — GLMZ universe story coordination board: main series chapter
+  roster (Books 1–5), standalone story roster, character arc ledger, villain supply chain,
+  cross-story plant/payoff registry, world-revelation sequencing, entity seeding roadmap.
+  **Update this doc whenever a story is added, a character state is resolved, or a plant/payoff
+  is confirmed.** This is a planning instrument, not a canon source.
+- **`docs/planning/_TEMPLATE.md`** — mandatory 10-section story brief template. Every new GLMZ
+  story fills `docs/planning/<CODE>-brief.md` from this template before a node bible is created
+  (see New Story Workflow Step 0 below).
 - **`docs/rfc/`** — design notes that graduate into BIBLE.md or story bibles.
 - **`docs/data/`** (L5) — canon-as-data: JSON Schemas + the master entity-identity table for the
   `engine_data/*.json` seed corpus. **Live canon is the SQL DB, not files** (SS-LAW-1).
@@ -124,6 +132,12 @@ Working rules:
 
 **Every new story/book follows this sequence without exception:**
 
+0. **Series Brief** — fill `docs/planning/<CODE>-brief.md` using the template at
+   `docs/planning/_TEMPLATE.md`. The brief must cover all 10 sections before a node bible is
+   created. A story that cannot answer all 10 sections does not belong in the roster yet.
+   After filing: update `docs/series/GLMZ.md` Story Roster (§1–2), Character Arc Ledger exit
+   states (§3), and Plant/Payoff Registry (§5). Check World-Revelation Sequencing (§6) — this
+   story must not reveal anything before its designated book.
 1. **Docs first** — if new world facts, write them DIRECTLY into `docs/BIBLE.md` (engine/world-level)
    or the relevant `docs/nodes/<CODE>.md` (story-specific). Add story entry to
    `docs/USER_STORIES.md`; run `codex doctor`. Do NOT use `docs/AMENDMENTS.md` — it is retired.
@@ -142,7 +156,7 @@ Working rules:
 5. **Prose** — Sonnet draft → Opus polish → reflow → logic sweep (see Quality Verification SOP below) → scan entity mentions.
 6. **Export** — `--publish-docx`; flip USER_STORIES to ✅ with evidence.
 
-Never write prose before steps 1, 2, and 4 are complete.
+Never write prose before steps 0, 1, 2, and 4 are complete.
 
 ## Prose Engine Services (use all of these — see SS-A16)
 

@@ -457,7 +457,8 @@ narrative-law block here when stood up:**
 17. **Default QA is a logic sweep, not a vote panel.** {#SS-LAW-17} *(SS-A44.)* The canonical QA methodology for any story that changes or needs validation is a **logic & continuity sweep** across six dimensions: (1) causality chain, (2) knowledge states, (3) timeline, (4) plant/payoff ledger, (5) orphan references, (6) bible agreement. Findings are triaged **BLOCKER / MODERATE / MINOR** and fixed with minimal splices. Review panels and Legion votes are expensive — run ONLY when the user explicitly requests a vote/review/score in that conversation. The engine enforces this (voting gate, default OFF; explicit `--allow-votes` / `allowVotes:true` only). Canonical methodology: `docs/LOGIC.md`.
 18. **Character is defined by response, not circumstance.** {#SS-LAW-18} *(SS-A41.)* A character's wound (backstory circumstance) is the engine of motivation, not the character itself. Character is defined by how a person *responds* to circumstance — what choice they make, what they sacrifice, how they define themselves under pressure. A wound is background; the response to it is foreground and must be *earned* on the page. This applies to every universe: do not write backstory as characterisation; write choice as characterisation.
 19. **Death is permanent in the Fantasy universe.** {#SS-LAW-19} In Universe #2 (The Cauld), consciousness does not transfer between bodies. There is no shell-cycle, no spark-state, no return from Bheur. A Myrmidon who dies is gone. Transmutation (guided Catalyst infusion) changes the body of the living person — it does not relocate consciousness; a Transmuted soldier who dies is gone like any other. The theological debate about what follows death (Bheur, the Holding) is unresolvable because no one returns to report. Prose must not imply otherwise: no character survives death in a new body, returns from Bheur as a living agent, or carries memories across a death boundary. Full world facts: `docs/universes/CAULD.md`.
-20. **Term before acronym, in every story.** {#SS-LAW-20} Any book could be a reader's first: an acronym never appears in a story before the full term it abbreviates has appeared on the page, glossed in-voice ("Neuretic Substrate Bridging" before "NSB"). After the first full-term use, the bare acronym is preferred — do not re-expand. Enforced as a gateway/sequel commandment in `StoryAuditService` (`acronym_after_term`). *(Universal — applies to all universes.)*
+20. **Term before acronym, in every story.** {#SS-LAW-20} Any book could be a reader's first: an acronym never appears in a story before the full term it abbreviates has appeared on the page, glossed in-voice ("eigenstate conscience transfer" before "ECT"). After the first full-term use, the bare acronym is preferred — do not re-expand. Enforced as a gateway/sequel commandment in `StoryAuditService` (`acronym_after_term`). *(Universal — applies to all universes.)*
+22. **Operator class vocabulary is fixed.** {#SS-LAW-22-ops} *(2026-07-11; formerly Exo/NSB/RFO/Rider — all retired.)* Three gray-zone operator classes exist in GLMZ and must be referenced by these names only: **Channeler** (session-injection into networked frames; direct AI negotiation), **Ghost** (eigenstate conscience transfer — inhabiting any machine with coherent circuitry; formal term: ECT; the body at rest during a ghost = **Husk**), **Splicer** (hardware/software attack surface, credential work, physical build). "Rider", "Exo", "RFO" (Remote Frame Operator), and "NSB" (Neuretic Substrate Bridging) are **retired** — do not use them in prose or dialogue. The street term for casual use of the Ghost ability is *ghosting* (lowercase, as a verb: "she ghosted the stoplight green"). *(GLMZ.)*
 
 ## 6. Verified state {#SS-§6}
 
@@ -556,6 +557,12 @@ A prose beat/node is **done** only when:
 - **Facet** — a retired psychology-weighting system, **100% eradicated** ([§6](#SS-§6)).
 - **Voice harvest** — distilling a ≥80%-scoring story's winning edits into the codified
   `literary_rules`/`tone_bible`/character voice fields (propose-then-approve).
+- **Ghost** *(GLMZ)* — operator class; performs eigenstate conscience transfer (ECT): conscious perception transferred into any machine with coherent circuitry. Retired synonyms: Exo, Rider, RFO. See [SS-LAW-22-ops](#SS-§5).
+- **Ghosting** *(GLMZ)* — the act of ECT, used as a verb; also used casually for minor transfers (stoplights, cameras, door locks). The body at rest during a ghost = **Husk**.
+- **ECT** *(GLMZ)* — eigenstate conscience transfer; the formal term for ghosting. Term must precede acronym on first use per [SS-LAW-20](#SS-§5).
+- **Channeler** *(GLMZ)* — operator class; session-injection into networked frames; also direct AI negotiation (undocumented edge). See [SS-LAW-22-ops](#SS-§5).
+- **Splicer** *(GLMZ)* — operator class; hardware/software attack surface, credential cracking, physical build. See [SS-LAW-22-ops](#SS-§5).
+- **Husk** *(GLMZ)* — a Ghost operator's body at rest during an eigenstate conscience transfer.
 - **Silence** *(GLMZ)* — Kyle's katana; *just a sword* ([SS-LAW-10](#SS-§5)).
 - **Chorus** *(GLMZ)* — Kyle's five-shot revolver shotgun ([SS-LAW-11](#SS-§5)).
 - **Bushido Coda** *(GLMZ)* — GLMZ's flagship narrative work; Book One is an 8-chapter spine.
@@ -567,6 +574,20 @@ A prose beat/node is **done** only when:
 > **Invariant: docs and entities before prose.** No prose is generated until every step marked
 > ★ is complete for this story. This order is enforced; skipping it produces stories that reference
 > characters or CorpoNations that don't exist in the DB, breaking continuity retrieval.
+
+### Step 0 — Series Brief ★
+
+Before a node bible or DB record is created, fill `docs/planning/<CODE>-brief.md` using the
+template at `docs/planning/_TEMPLATE.md`. Ten sections cover: series position, arc contribution,
+prerequisites (named NodeCodes), character entry/exit states, cross-story plants and payoffs,
+thematic complement, structural blueprint seed, and entity seeding. After filing:
+
+- Update `docs/series/GLMZ.md` Story Roster (§1–2) and Character Arc Ledger (§3) with exit states.
+- Add plant/payoff rows to `docs/series/GLMZ.md §5`.
+- Check `docs/series/GLMZ.md §6` World-Revelation Sequencing — this story must not reveal
+  anything before its designated book.
+
+A story that cannot complete all 10 brief sections is not ready to enter production.
 
 ### Step 1 — Canon first ★
 
