@@ -327,7 +327,7 @@ He walked past it and turned north.
 ## Part II: Standard Rate
 
 [Beat 63]
-Mrs. Chen's stall is two blocks south of the freight tier and one alley off the main — the warm orange glow of its hood lamp visible through the rain from a block away. He has smelled what comes out of her kitchen once before, the smell that had pushed through the camphor in the apartment six hours ago: fried oil and chili and pork bone, the smell of a place that does one thing and does it right. From a block out he can hear the wok come down on the burner ring, a flat bright note like a struck bell, twice for every order and never more, and the queue moving to the count of it.
+Mrs. Chen's stall is two blocks south of the freight tier and one alley off the main — the warm orange glow of its hood lamp visible through the rain from a block away. The smell reaches him before the light: fried oil and chili and pork bone, the same smell that had pushed through the camphor of the apartment six hours ago, the smell of a place that does one thing and does it right. From a block out he can hear the wok come down on the burner ring, a flat bright note like a struck bell, twice for every order and never more, and the queue moving to the count of it.
 
 He knew, in a general way, that a place like this existed. He had not been here before tonight.
 
@@ -1564,9 +1564,6 @@ It's where they left you room to move. He turned the line over in the dark. He h
 He lay back, the burn finding its schedule. He thought about her hand flat against his side where the tape ended, and the word "Friday," which was the ordinary thing she offered when the other thing got too close, and how he'd said it back without deciding to — not because he knew what it meant, but because not saying it had stopped being something he could do. Then he let it go and slept.
 
 [Beat 89]
-The togishi in the Narrows had graded the blade today and handed it back without a parentage. Not inherited. Not purchased through any channel with records. The blade knew what it was; the paperwork had just never caught up. His thumb found the habitual check-position on the handle and stopped there, holding the weight. He sat with that - with the gap between the grade and the record - until the night was late enough to be early, and then he lay down, and slept with the ribs and the half-step and the togishi's silence, all three in the same drawer.
-
-[Beat 90]
 The burn woke him at six, as promised. Kyle sat at the kitchen window with his coffee and took inventory: two hairline ribs, tape holding, the pull of the lab-grown skin over the taser contact at the lat. The burn reported itself with each breath, a clean specific signal. He ran his thumb along the tape. He'd made peace with the spec years ago.
 
 He pulled up the account on his terminal while the coffee was still hot. The Axiom relay showed the retainer deposit: exact rate, no gratuity, processed at 02:14. Eleven years and the tip had been reinstated as goodwill sometime after the job - he'd seen it for about four minutes before the line cut. Now the entry read clean: standard rate, no additional. The client was silent.
@@ -1575,7 +1572,7 @@ Not the usual silence, which had a texture - a held breath before the next posti
 
 He thought about what kind of entity decides that. Then he washed the mug and went to find his jacket.
 
-[Beat 91]
+[Beat 90]
 He didn't plan to stop at the carousel park. He rode past on Leavitt and his hands slowed the bike anyway.
 
 The park stood the way it had always stood — tucked between a rezoned printshop and a wall of second-growth sumac that had come up through the old parkway concrete. The crown bulbs were dead. The animals held their suspended positions: the palomino mid-rear, the lake sturgeon banked into its turn, the rooster at the top of its leap with its beak pointed at something it would never reach. The junction hatch in the carousel's base was locked. Kyle tried the handle, which told him what he expected.
@@ -1586,7 +1583,7 @@ He looked at the palomino for a moment. Mid-arrival — front hooves lifted, sti
 
 He got back on the bike and rode north. The notation was still running when he got home. He had to close it manually.
 
-[Beat 92]
+[Beat 91]
 The relay logs went back eleven years, which was longer than Kyle had lived anywhere. He'd been reading them for two days. Not auditing - reading the shape. Every posting had arrived on the same Axiom feed. Every scope was exactly what he would have taken.
 
 He'd sent half a ? back up the line after the Leavitt job - standard habit, the way he'd close a tab. The response had come back wrong. Not the format—the format was gone. Three words, lowercase, no fields, no contract number: received. filed under: firsts.
@@ -1595,7 +1592,7 @@ He read it four or five times. Not a typo. Not a system category. Something had 
 
 He put the kettle on. He opened the relay and moved the message into a new folder. He labeled the folder: *Open.* He hadn't replied. He had done something else instead.
 
-[Beat 93]
+[Beat 92]
 He told Pixel about the frequency the way he told her things — adjacent, while she was busy with something else. Not the carousel specifically. Just: there was something at the park on Leavitt, and his neuretics were logging it at 18.7 Hz and couldn't classify it.
 
 Pixel was at her bench with a prosthetic shoulder in the truing jig, making minute corrections to the rotation lock. She did not look up.
@@ -1610,7 +1607,7 @@ He gave her the cross-streets. She wrote them in the margin of her work notes, i
 
 He left when she went back to work. In the hall, the four steps between his door and hers, he thought about the filing note — *received. filed under: firsts* — and about the small mechanical handwriting in the margin, two notes in two hands, neither of them his to answer. He went inside.
 
-[Beat 94]
+[Beat 93]
 The blade had no maker's mark.
 
 Kyle had looked, early on — running a thumb along the ricasso, checking the tang, going over every millimeter of steel with the methodical attention he gave to anything he'd staked his life on. Nothing. No proof of origin. No file history. He'd acquired it at sixteen from a man who said he'd acquired it from someone else, and that man was gone now in the way that people in this city went, which was to say completely and without paperwork. The blade had come to Kyle at sixteen and had been waiting for him to be worth it ever since.
@@ -1807,7 +1804,7 @@ He knew what it would cost anyone who tried to hold on.
 
 He had always known that figure. He just hadn't had a name for the step.
 
-[Beat 95]
+[Beat 94]
 She knocked twice, a long gap, once. Kyle's pattern for the door, which she had never asked him about and used without comment.
 
 He opened it. She was holding a sealed container with both hands because it was still hot.
@@ -1878,7 +1875,7 @@ The holster sat on the counter where it always sat. He looked at it.
 
 He ate the rest of the grain, which had gotten stiff. It was still good. He put the container in the recycler and didn't touch the holster.
 
-[Beat 96]
+[Beat 95]
 Three minutes.
 
 The waterworks crew at Elston and the canal had stopped work and were sitting on the curb in the specific posture of people who had made this calculation before: equipment down, no one near the tools, a measured distance back, and the kind of collective patience that wasn't passive. They were watching the micro-schism with the same attention they would give a traffic signal. One was eating. Two were watching the gutter, where the pebbles and grit had organized themselves into a slow drift.
@@ -1893,7 +1890,7 @@ He waited. At the three-minute mark the pebbles in the gutter settled. The drift
 
 Kyle crossed Elston and continued toward the dock.
 
-[Beat 97]
+[Beat 96]
 The fifth came up the block the way ordinary people came up blocks, which was to say Kyle didn't clock her until she was already inside the loose triangle the three of them made, and that bothered him more than if she'd dropped out of a window. She was medium. Medium height, a coat the color of a coat, hair pulled back the way a person pulls it back when they've stopped thinking about it. The kind of face a room would round down to nothing. You could share an elevator with her and a week later swear you'd ridden up alone.
 
 "Sift," she said, which was the codename and the whole of the introduction, and she said it the way you'd give a barista a name you didn't expect to hear called back.
@@ -1920,7 +1917,7 @@ She made the same sound again. The snort had company now; she was working to kee
 
 He went back to watching the street, and did not examine why it mattered to him whether she could.
 
-[Beat 98]
+[Beat 97]
 The transmission completed. Sift said, "Clean." One word. The job's word for done.
 
 The thing came up the ramp before the echo died — not running, just arriving, the way an appointment arrives. Four arms. Three of them were shotguns, the barrels socketed direct into the wrist housings where hands would have been on a man who had not spent considerable money disagreeing with the fact of being one. The fourth arm had something belt-fed that ran a chain back through the shoulder housing.
@@ -1929,7 +1926,7 @@ It did not announce itself. It did not give her a chance.
 
 It had the angle on her before Kyle was moving, and Kyle was moving before the decision reached him. He moved anyway. He was already moving when it didn't matter.
 
-[Beat 99]
+[Beat 98]
 She was dead before the last echo. He was already past her.
 
 War Dog's grenades went wide before they cleared the deck — not thrown at targets, used to clear a kill zone, and the fragmentation radius was generous. Shroud peeled before the first one hit ground. Kyle did not call her back. Stash was already gone — the way people go when they have been in this kind of room before and know exactly what a fragmentation pattern means for their gear.
@@ -1938,7 +1935,7 @@ Kyle dived left as the first grenade went off and came up behind the loading bay
 
 ## Three Barrels
 
-[Beat 100]
+[Beat 99]
 The first shotgun spoke and the loading dock answered in dust. Kyle was not where the dust was. He had read the lead arm's settle a quarter-second before the wrist committed — the way the shoulder loaded, the way a man with three barrels still aims with his eyes — and he'd gone low and wide, off the line, behind the concrete pillar that would hold up against buckshot, which a freelancer would not. The blast took a bite out of the bay door behind where he'd been and the noise of it was a flat hand against both ears.
 
 His neuretics ran the arithmetic and it came back simple: Cacophony held three rounds, the belt-fed left arm held more than three, and nobody wins a trade against a wall of fire. He kept Silence in hand. Silence asked for distance closed, and the only way through a wall was to be past it before the wall knew you'd moved.
@@ -1959,12 +1956,12 @@ Then he used the dock. The bay was a stacked geometry of crates and lift platfor
 
 It was the wrong direction. That was the point. A man fighting three shotguns ran for the exit; Kyle ran for the high steel, because a stair was a corridor and a corridor made three barrels into one.
 
-[Beat 101]
+[Beat 100]
 War Dog tracked by heat. The IR dampeners Kyle wore cut his signature but did not erase it. He bought himself seconds and he spent them carefully — moving inside the sight lines War Dog expected to find empty, keeping the structural columns between himself and the belt-fed arm, staying low.
 
 The grenade at the ramp mouth sat dormant. Waiting.
 
-[Beat 102]
+[Beat 101]
 When War Dog crossed toward the misdirect fire — toward the ramp-mouth grenade, away from Kyle's position — it put his back to the open center of the deck and his spine between the shoulder housings: the junction where the four arms connected, where the routing ran, where something behind the chassis wall was keeping the whole architecture coherent.
 
 Kyle ran.
@@ -1975,7 +1972,7 @@ War Dog turned. The left leg did not track with the rest of him. The actuator ha
 
 ## Who Vouches for You
 
-[Beat 103]
+[Beat 102]
 Stash had pulled the van back from the bay and was standing in the gap between the rear bumper and the dock's concrete wall. He'd laid his coat over her. The shape under it was small and final, and the coat's hem was dark with something that would not wash out. His hands were still at the hem where he'd smoothed it down — the hands of a man who had run out of work to do and hadn't moved them yet.
 
 Kyle stopped. He put Silence away.
@@ -2000,7 +1997,7 @@ He carried her anyway. You did not leave a comrade behind. That was the rule, an
 
 He got in.
 
-[Beat 104]
+[Beat 103]
 He fired blind. The remaining arms swept backward in wide arcs — not aimed, not targeted, suppression work from something that had stopped trying to find Kyle and started trying to make the air between them unusable. Kyle took cover behind the nearest support column and let the fire pass and counted the pattern.
 
 War Dog backed toward the edge of the deck. One step. Two.
@@ -2021,7 +2018,7 @@ He walked back to the van and got in.
 
 Nobody asked.
 
-[Beat 105]
+[Beat 104]
 At the second light north, the channel chirped once.
 
 A fresh posting. Pushed wide to every freelancer band in the van's radius — not targeted, not narrow, the kind of push the relay gave anything it flagged as time-sensitive. Clean scope. Listed retainer. A client field that resolved to a shell, and the shell to nothing.
@@ -2038,7 +2035,7 @@ He would open it in the morning. He would take the job. He had a funeral to pric
 
 ## Chapter 6: The Quiet Hour
 
-[Beat 106]
+[Beat 105]
 Nobody talked on the way back.
 
 Stash drove. Ledger had the cases on his lap, which he didn't need to do — the floor of the van was fine, the locks were fine — but he did it anyway, and nobody said anything about it. The elevated passed overhead in sections, the sodium lights throwing orange bars across the windshield at intervals.
@@ -2049,7 +2046,7 @@ He thought about the way she'd moved on the dock. The way she'd counted the geom
 
 The relay stayed quiet for the whole drive. That was fine. That was correct.
 
-[Beat 107]
+[Beat 106]
 Pixel's light was on across the hall.
 
 The particular rhythm of it — two steps and back, two steps and back — the way she moved between her bench and her terminal when she was in the middle of something. He stood in his doorway for a moment. He did not knock. He went to bed.
@@ -2064,7 +2061,7 @@ He had Mrs. Chen's number. He called it.
 
 He did not ask how she knew. She had been running that counter for sixty years. She knew.
 
-[Beat 108]
+[Beat 107]
 The rain arrived first - it always does on Halsted, running down the south face of the elevated infrastructure overhead and making a second street-level weather system out of the drip. Kyle came on foot. He had the address right. He checked it twice anyway, not because he doubted it but because standing on the sidewalk was still standing on the sidewalk, and once he went inside the number would mean something different.
 
 The block had been the same block for forty years. The grate pattern on the streetlights gave it away - the older municipal spec, wider spacing, no sensor housing at the center. The buildings were functional and worn in the way things get worn when they are used correctly for a long time. A laundry line between two third-floor windows held three shirts and a child's jacket, all the same off-color from the synthesis-corridor air that drifted east on certain winds. A sundial dog crossed the far end of the block on whatever circuit it kept, indifferent to the rain.
@@ -2079,7 +2076,7 @@ The rain separated into its registers as he stood there, the pitched thrum off t
 
 He went inside.
 
-[Beat 109]
+[Beat 108]
 Forty people Kyle did not know.
 
 Mrs. Okafor had a clipboard. She was moving through the front room the way a good coordinator moves through a site — not hurrying, not pausing, handing a plate here and redirecting foot traffic there. She caught Kyle's eye once across the room — a coordinator's inventory, checking a new arrival against her list. She found what she needed and moved on. He noticed that the hand she kept at her side was not entirely still.
@@ -2101,7 +2098,7 @@ He took it with both hands. The plate was warm. He stood there with it.
 
 He did not eat.
 
-[Beat 110]
+[Beat 109]
 They came in ones and twos through the rain. Not the kind of crowd that advertises.
 
 Ledger came first, because Ledger was always early and never explained it. He took the far end stool, ordered once, and didn't speak for an hour, which for Ledger was grief. Stash came next, with the careful walk of someone whose load was invisible tonight — she sat beside Kyle without asking and ate in silence with the same precision she applied to everything else. A woman Kyle knew as Casing arrived with someone he didn't know, introduced neither of them, and ate two bowls with the steady efficiency of a person taking care of necessities.
@@ -2118,7 +2115,7 @@ He didn't answer. There wasn't an answer that was the right size.
 
 The others came after — faces from jobs Kyle had worked adjacent to, not with; people from Ñu's side of the ledger, names he didn't have, which was correct, which was how it worked. Forty people in a noodle counter on Halsted, eating broth in a woman's honor whose real name nobody in the room had been given, and all of them understanding exactly what that meant.
 
-[Beat 111]
+[Beat 110]
 Four seconds.
 
 The Psyk lost containment and the hum spiked — not louder, deeper, the nineteen hertz thickening into something that sat in the chest. Three people near the window flinched without knowing why, the involuntary micro-flinch of a body responding to something it had no name for. Kyle's neuretics spiked with the frequency, a brief static bloom at the array periphery. He met the Psyk's eyes across the room. The Psyk's jaw was still set, their hands still flat, but their eyes had gone wide and slightly unfocused in the way eyes go when something is running through a person that cannot entirely be contained. Kyle held the look. The Psyk pulled it back — a visible effort, the way a thing is pulled back when it does not want to be pulled. The frequency dropped. The three people near the window settled without knowing they had moved. Four seconds.
@@ -2127,7 +2124,7 @@ The Psyk lost containment and the hum spiked — not louder, deeper, the ninetee
 
 Mrs. Okafor was at the far side, refilling a tray. Someone laughed quietly at something someone else had said about Ñu — a laugh that was not the one in the photograph. The hum ran through it all, low and steady. Four beats of it, keeping time, before it dropped back to the baseline and stayed there.
 
-[Beat 112]
+[Beat 111]
 Kyle found the Psyk outside on the curb, both hands pressed over their ears. Not in distress, exactly — in management. Their elbows were on their knees and their posture was careful, the posture of someone who has been here before and knows the protocol.
 
 The hum was audible without augmentation now.
@@ -2142,7 +2139,7 @@ Kyle set the plate down on the curb beside him. The jollof rice had gone cold. T
 
 He sat with the rain and the cold plate and the forty griefs running at their irregular frequencies, and he did not try to make any of it smaller. He didn't have words that were the right size for it. He sat until the hum leveled and, slowly, the Psyk's hands came down from their ears.
 
-[Beat 113]
+[Beat 112]
 Mrs. Chen found him at the counter's end when the second round came around. She set a folded envelope beside his bowl without comment — heavy paper, cream, the kind with a watermark pressed into it. The letterhead read *Vey's Antiquity & Stationary*, and below it a Dearborn address — the private entrance, not the counter-face number he'd filed the first time he'd stood at the shop.
 
 Two words inside, no signature, in a hand that was not Mrs. Chen's — small, formal script, the handwriting of someone who had decided long ago what kind of person they were going to be on paper and had never deviated.
@@ -2155,7 +2152,7 @@ He folded the envelope once and put it in his coat. He finished his broth. The w
 
 He did not know all of them.
 
-[Beat 114]
+[Beat 113]
 He had the address from the building directory at the wake venue — Mrs. Chen had a registration card for the community that had gathered that night, organized the way Mrs. Chen organized everything, by district and block. He'd read it coming in, which was habit, and Null's entry had been at the bottom: *Null/Mimi T.*, which was how she'd filed with the community, which was how she filed with everything.
 
 It was six blocks from the carousel park.
@@ -2164,14 +2161,14 @@ He hadn't made that connection until he was standing at the building door, in th
 
 He stood at the door for a moment. Then he went in.
 
-[Beat 115]
+[Beat 114]
 The vestibule was the specific kind of quiet that costs something. Ferrocement construction, old-spec, the flooring composite and cold and worn to the particular smoothness of things that had been stood on for a very long time without anyone choosing to replace them.
 
 The directory in the vestibule had thirty-four names. The third floor had one gap - a slot where the name card had been removed cleanly, the slot itself empty.
 
 He took the stairs.
 
-[Beat 116]
+[Beat 115]
 The corner table at Davorka's had a hand-written sign on it.
 
 Not a standard Davorka's menu card — a piece of cardstock in handwriting he didn't recognize, in a plastic sleeve that had yellowed at the edges. It read:
@@ -2190,19 +2187,19 @@ The staff set a glass at the corner table every shift. They didn't reset it betw
 
 Kyle sat at one of the other tables and ordered what he always ordered.
 
-[Beat 117]
+[Beat 116]
 Mrs. Okafor had been there already — the candle in the window, the plate of food on the counter, still warm enough to mean she'd been there within the last hour. She didn't cook for the dead. She cooked for the people the dead left behind.
 
 The room was sparse in the way that said something about how Null had lived — not poor, just without accumulation. Work surface under the window, tools organized in the specific way that practitioners of the Read organized their materials: retrievable, not decorative, kept for function and for history. The window faced east. The first light, when it came, would come through that window at the right angle. She would have known that when she took the room.
 
 Kyle stood in the center of it without touching anything. It was still her room. It had the particular quality of spaces that hadn't yet been told what they were now — held in the moment before they became absence.
 
-[Beat 118]
+[Beat 117]
 The photograph was on the shelf above the work surface, in a cheap composite frame. Three people on a rooftop in summer — the elevated visible in the background, the light specific to July or August. Sift was on the right, hair loose, holding a bottle, not looking at the camera. The other two were younger, or she was older; the photograph didn't make it clear. They were laughing at something outside the frame.
 
 He had known her handle for six years. He had known her work. He had not known she had people she stood on rooftops with in summer. He looked at the photograph for a moment and committed neither name to anything. She was who she was. The handle was the working name and the working name was the whole of what she'd offered him. He had not asked for more and she had not given it. That had been, he thought, a fair arrangement — the kind she would have preferred.
 
-[Beat 119]
+[Beat 118]
 They were in two stacks on the work surface, under a clear weight — half-size card stock, the kind that came from the practitioners' supply shops in the old zone markets. Printed in the compressed hand she'd used for everything: date codes at the top, classification annotations she would have developed herself. The notation was private — the personal shorthand of someone who ran the Read for hire and kept records the way professionals in dangerous work kept records. Not for other people. For herself.
 
 He didn't read them. Not because he couldn't piece together the grammar — he'd known enough practitioners to have the general key — but because they were hers. Her absence didn't change her claim to them.
@@ -2217,7 +2214,7 @@ There was a folded note flat under the weight — his handle on the outside in h
 
 He put it in his coat.
 
-[Beat 120]
+[Beat 119]
 There was a Psyk in the stairwell on his way down — young, in work clothes, with a read-kit bag, sitting two steps from the second-floor landing, running the controlled breath that brought the sensitivity below ambient.
 
 "It's strong here," the Psyk said. Not to Kyle specifically. To the fact of it.
@@ -2230,7 +2227,7 @@ Kyle paused on the landing.
 
 Kyle looked at the stairwell door. He said nothing else. He went out.
 
-[Beat 121]
+[Beat 120]
 He didn't go back inside.
 
 He put one hand on Silence through the coat. Not drawing it. Just locating it — the weight, the geometry, the matte-black edge that kept no light and carried the history the togishi couldn't read. He held it there for a moment. Then he took his hand away.
@@ -2243,7 +2240,7 @@ He walked north into the rain that carried synthesis-corridor cold and something
 
 The relay was at home. He had a job to file under. He walked.
 
-[Beat 122]
+[Beat 121]
 The hum had stopped before he left the vestibule. By the time he cleared the elevated infrastructure and crossed onto Fullerton, his neuretics had settled to baseline and the cold was doing its ordinary work.
 
 He was four blocks north when the notation appeared:
@@ -2260,7 +2257,7 @@ He got home. The relay had a new posting. Medical transport, short-haul, loading
 
 He went to bed. He did not think about the frequency.
 
-[Beat 123]
+[Beat 122]
 Her field kit was smaller than usual, which meant she'd done the triage before she knocked — she'd assessed what he'd need and packed for it. Not the full kit. The calibrated kit. The kit for a night when someone shows up carrying something they'll need to set down before they'll let anyone near the wounds.
 
 "Sit," she said.
@@ -2283,7 +2280,7 @@ He sat in the chair in her workshop with the lamp going and the rain outside and
 
 "Done," he said, which was the word for *I know you do.*
 
-[Beat 124]
+[Beat 123]
 She made tea after that. He didn't ask for it and didn't not ask for it. It arrived, which was the relevant fact.
 
 She sat across from him at the workbench with her own cup and put a small oval pill on the table between them, which he recognized as the kind of thing you used after a bad job when your nervous system was still running the scenario on a loop and sleep wasn't going to come for a while. She snapped it in half with her thumbnail, which she did neatly and without drama, and slid one half toward him.
@@ -2306,7 +2303,7 @@ He didn't move. The afternoon was fine.
 
 ## Chapter 8: Before Something Changes
 
-[Beat 125]
+[Beat 124]
 The Northpoint job had ended at 21:47 by the overlay clock. Kyle had ridden back on the same route he always took. He'd been in a drawer at Northpoint for just under an hour — concealment work, waiting for a courier to pass a checkpoint who hadn't known Kyle was there — and his hands had found the bag seam in the dark before his eyes had caught up.
 
 At 20:54, the concealment point door had opened four seconds early. Not by much — four seconds was within the window of casual variance, the kind of gap that didn't make a report. His neuretics had made a different call: TIMING VARIANCE — EXTERNAL — SOURCE UNCLASSIFIED. The courier had arrived 53 seconds ahead of the window. The neuretics had logged no mechanism for the early opening. No personnel account. No environmental trigger on record. The door had simply been open when it needed to be open.
@@ -2333,7 +2330,7 @@ Kyle's boots sat on the floor.
 
 He did not have a reason to be here. He stayed.
 
-[Beat 126]
+[Beat 125]
 The calibration moved through its intervals. Kyle sat on the stool and watched the bench without watching Pixel and after a while he wasn't watching either of them, just the light, and the tools, and the quality of the quiet, which was not the quiet of an empty room.
 
 She set a probe down and made a note on the small slate she kept for calibration records, and picked the probe back up. She worked through the next interval.
@@ -2358,7 +2355,7 @@ She did not look up at him.
 
 The quiet came back. It was not hostile. That was the harder thing.
 
-[Beat 127]
+[Beat 126]
 The calibration reached the parts-drawer stage. This happened in every calibration she ran - a point where the components needed swapping or replacing, and the drawer at the far end of the bench held the spares. Kyle had watched it happen enough times to know the sequence: probe down, drawer open, component selected, drawer shut, probe up.
 
 Pixel reached past him.
@@ -2389,7 +2386,7 @@ Kyle closed it. The lower-left of his overlay went blank.
 
 On the secondary bench, Oziel's arm sat in its jig, the motor tendons loose and waiting.
 
-[Beat 128]
+[Beat 127]
 Kyle said her name.
 
 She looked up from the array.
@@ -2418,7 +2415,7 @@ On one side of her, the bench had six inches of empty space where Kyle had been 
 
 She did not move to fill it.
 
-[Beat 129]
+[Beat 128]
 He did not go to the armory.
 
 He told himself he would go to the armory — the cool low-lit room off the stairwell where the gear lived and where the act of moving through a maintenance check had the useful quality of being mechanical, requiring just enough attention to occupy the part of his mind that would otherwise sit in 2E all night waiting for something that wasn't coming.
@@ -2447,7 +2444,7 @@ He closed the relay.
 
 He went to the armory.
 
-[Beat 130]
+[Beat 129]
 ﻿He pulled the shell's registration history.
 
 It was public record - any freelancer could look up the operating certificate for a routing intermediary. Most didn't. The certificate listed an address in the West Loop, a management entity called Clearlight Operations LLC, and a registration date in 2209. Three years before Kyle had started working with the shell.
@@ -2470,7 +2467,7 @@ He had not, in eleven years, asked how he had come to be working with a routing 
 
 He had not asked because the shell had performed flawlessly, and in the work, performance was the answer to most questions.
 
-[Beat 131]
+[Beat 130]
 He checked the distribution, the clustering, the geography, the timing. Sixty-three percent of his volume over eleven years, from one routing shell. The spread across job categories, districts, and intervals all fell within expected variance — no detectable cadence, no geographic center, no category clustering.
 
 Nothing statistically anomalous.
@@ -2485,7 +2482,7 @@ He saved the file. He did not name it. He sat with the screen dark and the city 
 
 He looked at the relay.
 
-[Beat 132]
+[Beat 131]
 He opened a new relay message to the routing shell.
 
 He typed: *I have a question about the Northpoint job.*
@@ -2510,7 +2507,7 @@ He sat with the sent confirmation for a moment. It wasn't a question. It wasn't 
 
 He closed the relay. He went to the armory.
 
-[Beat 133]
+[Beat 132]
 He was in the armory for two and a half hours.
 
 The maintenance check was thorough. He found nothing wrong with anything. The mesh held; Cacophony's cylinder was clean and the tolerances were where he kept them. Everything in the armory was in the condition it was supposed to be in, performing the function it had been designed for, traceable in its origin and its history. He knew what it was, where it had come from, and what he used it for. The armory did not have a thirty-two-character identifier and a shell company with a defunct address.
@@ -2537,7 +2534,7 @@ Across the hall, there was a bench with six inches of empty space. He had put it
 
 He went to bed. He did not think about the frequency.
 
-[Beat 134]
+[Beat 133]
 The door latched on its pneumatic seal at 0135.
 
 She had been expecting it — had been tracking the particular quality of his presence in the room, the counter running in his lower-left, the way he'd gotten off the stool and come to the bench. She had been expecting the exit. She had been waiting for it in the way you wait for something that is both expected and unwelcome, which is differently from any other kind of waiting.
@@ -2546,7 +2543,7 @@ The latch caught. The small finality of it.
 
 She stayed at the bench. She ran the probe over the next interval.
 
-[Beat 135]
+[Beat 134]
 She had had the answer ready.
 
 Not a plan, not a decision — just the answer, sitting in the place where it had been sitting for eight months, the way a fact sits when you've stopped arguing with it. He had given her a syllable — one half-formed sound that didn't resolve into consonants, didn't become a word, stopped itself before it had a shape she could point to. She had heard it the way you hear something you have been listening for.
@@ -2555,14 +2552,14 @@ She did not give the answer back. The timing was hers, not his syllable's.
 
 The calibration moved through its intervals. She kept working.
 
-[Beat 136]
+[Beat 135]
 She checked herself the way she checked the array — for what was running under tolerance, for the thing she was carrying that she hadn't named. Not fear. She had checked before and gotten the same reading.
 
 The bench was hers. The stool had been his for four years without either of them calling it anything. She was in no hurry; the thing in the room had waited eight months and would keep.
 
 She noted the tolerance and moved to the next marker.
 
-[Beat 137]
+[Beat 136]
 Not the ribs. The ribs had been real — the taser burn, the hairline, she'd felt them both through the tape — but the ribs weren't why he'd come at 2300 with Silence in its usual corner and no announcement and taken the stool that was and had always been not-his.
 
 He'd come because of something in his overlay. She'd seen it — the counter running in his lower-left, which he didn't always have open, which he opened when he was accounting for something he hadn't named yet. He'd watched the bench. He'd stood six inches from her arm. He'd started a syllable.
@@ -2573,14 +2570,14 @@ The array was the same habit as the streets in the margin — the small mechanic
 
 She had kept the calibration running. She did not close the six inches, and she did not widen them either.
 
-[Beat 138]
+[Beat 137]
 The 17-19 Hz band was reading clean. She checked the passive monitoring log — eighteen entries since she'd built the instrument, all of them flat, no source, no signal in range. Whatever was at the carousel, it was not here, or not broadcast, or not something a fixed-point instrument would catch if it moved.
 
 She filed the log. She moved to the motor-tendon work on Oziel's arm. Friday — which was thirty-six hours away and was a real deadline, not an exit from the edge. Oziel's job was a real job. The arm needed to be finished.
 
 She worked for two hours with the specificity of someone who was not thinking about anything except the work. The work was good. It was always good.
 
-[Beat 139]
+[Beat 138]
 At 0247 she heard the relay ping from across the hall.
 
 Old building, ferrocement, but this hour and this quiet made it possible. She recognized the tone — the relay posting tone, which had its own particular register among the sounds the apartment block made at night.
@@ -2595,7 +2592,7 @@ The latch caught.
 
 She picked up the torque driver.
 
-[Beat 140]
+[Beat 139]
 The calibration finished at 0251. She wrote up the log: tolerances within spec, marker three within range after humidity adjustment, overnight passive running. She checked the monitor one more time. The 17-19 Hz band showed flat, as it had shown every night.
 
 She turned off the bench light.
@@ -2606,7 +2603,7 @@ She picked up Oziel's arm. The motor tendons needed one more check before Friday
 
 She kept working.
 
-[Beat 141]
+[Beat 140]
 The Dusk tab split the room at the edges, and the edges didn't fight it.
 
 They were on the floor of 2E — Pixel's back against the workbench housing, his against the south wall, a gap between them of maybe two feet that contracted and expanded depending on what he was paying attention to. She'd put music on and turned it low enough that the rhythm came and went. The light strip was at the warm end of its range. The workbench was folded up and the cables were run along the shelving with the precision that made her apartment feel like a well-maintained instrument.
@@ -2681,7 +2678,7 @@ He filed it as undetermined.
 
 He slept.
 
-[Beat 142]
+[Beat 141]
 The room is 58th floor. What the windows show is not a city — it is load distribution, Eigenlift queues, the arc of cargo from the harbor terminals. Faces do not resolve at this altitude. The founder understood that governance requires abstraction. His portrait agrees from the north wall: oils on composite, the expression of a man accustomed to being correct before the evidence arrived. Below the portrait, a vase. White flowers, approximate. Procured by whoever handles such things.
 
 Able sits at the table's edge, not its head. That is not his function.
@@ -2698,7 +2695,7 @@ He notes the time.
 
 Director Kline is still speaking. She has held this position for six years. Her procedural instincts are sound. She is not wrong. She is working from the wrong altitude.
 
-[Beat 143]
+[Beat 142]
 Near the end of her presentation, Director Kline addresses Able directly.
 
 "You're still an employee," she says. "The board is your boss."
@@ -2725,7 +2722,7 @@ He does not look at the portrait again. He has already seen what it contains: a 
 
 The flowers are still white. The city holds its distances beyond the glass.
 
-[Beat 144]
+[Beat 143]
 The North Clybourn schism ran a 340-meter loop on a 4.2-hour cycle.
 
 He had pulled the advisory before leaving — Zone 9-C, logged three weeks ago, flagged as stable-recurrent, no escalation trend. The loop covered four blocks of the direct route. Going around it added twenty-three minutes. He checked his timing and found an eighteen-minute window where the loop would be in its eastern phase, leaving the direct route clear. He arrived at the loop's edge eleven minutes before the window opened.
@@ -2740,7 +2737,7 @@ He was on time.
 
 ## Chapter 9: The Interview
 
-[Beat 145]
+[Beat 144]
 Sable arrived on a Thursday, which was how he knew the job was real - she never brought him hypotheticals.
 
 She sat in his second chair with the contract summary on the table between them and explained it the way she explained everything she couldn't fully vet: once, clearly, without the decorative language she used when she had looked at every angle and liked what she saw.
@@ -2769,7 +2766,7 @@ Sable looked at him for a beat. "That's a careful distinction."
 
 She was quiet for one second. Then she stood, put on her coat, and said, not looking back, "The audition is Friday. The address is on the back."
 
-[Beat 146]
+[Beat 145]
 He told Pixel where he was going — the logistics, the timeline, the relevant gear state — and she received it the way she received all of his logistics: by listening through the information for the actual sentence.
 
 "Lotus," she said when he was done. Somewhere under the bench a small speaker was playing a baseball game from a season that had ended before either of them was born, the announcer's voice low and unhurried, the crowd a steady tide she clearly wasn't listening to so much as keeping company with. She was reseating a lens element on the bench, both eyes on the optic. It was a prosthetic eye, the cheap mass-market kind, in for a rebuild she wasn't charging for — a courier two blocks over had taken a curb at speed and cracked the iris diaphragm, and the manufacturer wanted more for the part than the woman made in a month. On the far end of the bench, outside the work zone, sat a small analog barometer she'd once told Kyle was broken — it hadn't moved in three years. She kept it anyway. She'd said she liked the shape of certain kinds of useless. "Bucktown arm."
@@ -2784,7 +2781,7 @@ She set the element down and looked at her hands, which she did when she was dec
 
 He packed the gear. He left the door open the width she kept it.
 
-[Beat 147]
+[Beat 146]
 The Bucktown basement was a cleared corridor, fifty feet, load-bearing columns running the length — the kind of space that had spent years as a live-fire range and kept the habit in its concrete. Hua stood at the far end under a lamp, hands folded, gray qipao, and did not greet him, because the contract was not started yet.
 
 Mira was at the near end.
@@ -2817,7 +2814,7 @@ Three counts. Five seconds.
 
 From the far end, Hua's hands remained folded.
 
-[Beat 148]
+[Beat 147]
 Mira walked the corridor toward him — not toward, exactly. More like a captain inspecting an experiment she'd already formed a hypothesis about.
 
 "You had the outside line on the third one," she said.
@@ -2860,7 +2857,7 @@ Kyle turned them over.
 
 Mira nodded once, the way she probably nodded at everything that went where she expected it to. "There's a man in the Narrows I want you to see before you leave. He'll want to look at the blade." She looked at Silence at his hip — not with the combat assessment she'd given it in the corridor, but with something quieter. "Let him."
 
-[Beat 149]
+[Beat 148]
 The Togishi of the Narrows worked out of a two-room shop three blocks from the cherry trees, down a flight of stairs polished smooth by forty years of foot traffic and the weight of blades going in and coming out. The sign on the door was a single character, brushed by hand. It said nothing useful to anyone who hadn't already been sent.
 
 He received Silence across both palms, blunt spine toward Kyle, the way a bow receives a blade - not surrender, courtesy: an acknowledgment between people who understand that the steel is the point.
@@ -2899,7 +2896,7 @@ Kyle said nothing.
 
 Kyle bowed. He left the answer in the room.
 
-[Beat 150]
+[Beat 149]
 Mira was waiting on the block above the stairs, leaning against the cherry-blossom gate - not impatient, not comfortable, just accounting for time.
 
 "Well?" she asked.
@@ -2922,7 +2919,7 @@ She made no comment on what else the togishi had said. She had sent him; she alr
 
 She left the way she'd found him - without ceremony, and without looking back, which was how she treated everything she'd already decided.
 
-[Beat 151]
+[Beat 150]
 He rode home through the Narrows. The taser burn, the togishi's words, the two new names on his file - he needed the city to be quieter than Bucktown before any of it would sit still long enough to sort.
 
 The Narrows was the strip of low blocks where the freight viaduct cut the district in half and rents went to whatever the noise didn't drown. At this hour a woman was hosing fish blood off a loading dock into a drain that had stopped draining years ago; the blood spread across the concrete and pooled at the curb, and nobody looked twice at it because nobody looked twice at anything here after midnight. That was the whole arrangement. He rode through it with his lights low, and the Narrows let him pass the way it let everyone pass who didn't need it to be anything else.
@@ -2937,7 +2934,7 @@ He thought about asking Pixel to chase the harmonic again. Not the answer - he w
 
 He rode the last blocks home.
 
-[Beat 152]
+[Beat 151]
 He was three blocks from The Pivot when the relay pinged.
 
 Not a job. He had learned, over eleven years, the particular weight of a job notification - the way the routing shell formatted its subject line, the brevity that meant information and not conversation, the timestamp in the header that located the job in operational time. This was not that. The sender ID was the routing shell - the same 32-character string that had been routing his contracts since 2215 - but the message was not formatted as a contract.
@@ -2952,7 +2949,7 @@ Kyle sat with the engine running and the rain coming off the elevated in its ang
 
 He closed the relay. He rode home.
 
-[Beat 153]
+[Beat 152]
 Sable's job posting had said forty percent above standard hazard, which was the North Clybourn corridor introducing itself without apology.
 
 Kyle had accepted. He had not eaten. Pixel had been leaning out of 2E when he hit the stairs — red bean rice in a container, the smell of it reaching him before she did — and she'd said eat before, not after, not during, before, and he'd said he would, which was an administrative truth of the kind where the speaker knows it's false and the listener knows the speaker knows, and everyone processes it as operational shorthand for not tonight. Pixel had filed this under Known Kyle Behaviors and watched him go.
@@ -3285,7 +3282,7 @@ He walked home. Exact.
 
 ## Chapter 10: The One Who Doesn't Stop
 
-[Beat 154]
+[Beat 153]
 The team is good. They don't bunch and they don't panic — they peel back to the SUVs and start working the angles — and good is exactly the problem, because precognition against one trigger is a gift and against five at once is a budget, to be spent carefully and never refunded. His nervous system begins to cook under the load. A second slug catches the flanker breaking left, and the man drops mid-stride. A third punches clean through the door an operator is crouched behind and folds the steel in after it.
 
 Then Cacophony runs dry on the fourth — the hammer falling on an empty chamber with a click he feels in his back teeth — and there is no time to swing the cylinder out and feed it fresh, so Kyle simply quits solving the problem with the gun. He reaches over his shoulder and draws Silence off his back. The katana is a matte-black length of steel-CNT meta-alloy, an edge that takes no light and offers no trick but the hand that holds it, and the hand has had a long time to practice. He crosses the open ground inside the half-second his neuretics has bought him, slides under the muzzle before it can track, and takes the rifle out of the fifth man's grip at the receiver — leaving him disarmed, untouched, and loudly amazed to still be in possession of all ten fingers.
@@ -3294,7 +3291,7 @@ Steel for steel's problems and Cacophony for the rest: the whole of Kyle's philo
 
 Five down or out. One left — the leader, who has not moved this whole time, because the leader has been waiting.
 
-[Beat 155]
+[Beat 154]
 The leader brought the solution built for men like Kyle, and he has only been waiting for the range to clear enough to use it. It is a Gauss rifle — a man-portable rail driver that throws a single hypersonic depleted-uranium dart along a line so flat it might as well have been drawn with a ruler, and cares not at all what happens to be standing behind the target. It is the one weapon Kyle's neuretics cannot beat, because you cannot dodge a thing that is already past you; you can only try not to be standing where it was aimed.
 
 He settles it on Kyle's chest and fires. Kyle reads the shot the breath before it leaves the barrel and is simply no longer there — and the dart, finding nothing but the air he abandoned, does not stop. It crosses the crossroads dead straight and punches through the windshield of an ambulance running its lights north, and kills the driver where he sits. With no one left to steer it, the ambulance drifts through its turn and meets a stalled hauler at fifty-two miles an hour, and the impact throws its back doors wide on their hinges.
@@ -3305,7 +3302,7 @@ He straightens in the wreck-light, and through the sprung-open bay doors of the 
 
 Kyle waves back.
 
-[Beat 156]
+[Beat 155]
 "Are you the new one?" the small face asks, and Kyle understands at once that this is not the question she is actually asking.
 
 She's eight, maybe nine. Her chest is taped under a flexible biopolymer brace, and she is, by a wide margin, more composed than the one-armed second-tier CorpoNation security officer bleeding out on the asphalt a yard to Kyle's left.
@@ -3316,7 +3313,7 @@ He steps up into the bay. The driver is dead. The medic slumped in the passenger
 
 "I know," she says. "My uncle Vo Dinh says you're the one who doesn't stop."
 
-[Beat 157]
+[Beat 156]
 He thumbs the emergency contact on the tag. His overlay chimed once — the tag broadcasting on the emergency medical band.
 
 "Pike," a voice says, already moving.
@@ -3347,7 +3344,7 @@ Pike does the same math, almost as fast as Kyle's neuretics had. "Then it's a st
 
 The connection drops.
 
-[Beat 158]
+[Beat 157]
 He lifts Imani onto the pillion, sidesaddle, and threads the medical harness through his belt loop so the battery rides snug over his kidney instead of swinging loose. He ties her wrists loosely through the back of his coat so she will not fall if she sleeps. Then he feeds Cacophony a fresh moon-clip — five new chambers to replace the three he scattered back across the Hegewisch crossroads — and lets it settle on his left hip. Silence goes across his back, where it rides on the bike.
 
 Her cheek finds the back of his shoulder like it has been there before.
@@ -3362,7 +3359,7 @@ Her cheek finds the back of his shoulder like it has been there before.
 
 The kid is the only new weight he is carrying, and the only one he is doing math about. The bike turns over and catches.
 
-[Beat 159]
+[Beat 158]
 The first mile is gray zone. Hegewisch sprawl, no sovereign in residence, nobody to answer to and nobody to answer for you. A decommissioned delivery automaton kneels in a drainage forecourt at the corner, the rain of so many winters streaking its chassis chalk-white, and some child has tied a festival ribbon around one of its outstretched hands; it holds the ribbon the way it would hold anything, patiently, for as long as the ribbon cares to stay. It is the kind of country a freelancer learns by heart; Stash had run a load of something through here last month and said the south stretch of Avenue O was clean if you took it fast. Kyle takes Avenue O at eighty. Two long rows of collapsed light poles lie across the road like felled trees, and his neuretics flags them and lines up the gap before his eyes have finished arriving at the problem. Imani's breathing is a small warm patch against the back of his shoulder, even and slow and deliberately, carefully controlled.
 
 "You're not scared," he says.
@@ -3383,7 +3380,7 @@ Imani considers the question and answers it honestly. "No."
 
 ## Crucible Genomics
 
-[Beat 160]
+[Beat 159]
 The checkpoint is two guards in soft-helmet armor and a third tucked behind a blast-shield, and all three wear the bored faces of men expecting a manifest. Kyle does not have a manifest. He has a child, a battery, and a smile, and he has learned that on the right night, presented with enough confidence, the three of them together pass for paperwork.
 
 He brakes hard and throws both hands off the bars into the universal posture of a man holding nothing, and he gets the words out before any of the three can finish reaching for a weapon.
@@ -3398,7 +3395,7 @@ The barrier sinks into the road.
 
 "Have a great evening," Kyle says, and means every word of it.
 
-[Beat 161]
+[Beat 160]
 A mile and a half of Crucible private artery — manicured, palm-lit, the river running black on the right. Kyle pegs the throttle. Workers in beige smocks glance up from the greenhouses and decide not to look long.
 
 He works the geometry of it as he rides. The corporation has him tagged as a courier hauling outgoing inventory — the only reason the gate opened, and only good while he keeps moving. Nobody who wants what's wired into Imani's chest can follow him through here; they don't carry whatever got him waved in. So they won't follow. They'll call ahead. And the ones they wake on the far side won't need her breathing to collect, because a six-hour heart travels fine in a cooler.
@@ -3413,7 +3410,7 @@ He keeps moving.
 
 Kyle has nothing to add. The kid is correct.
 
-[Beat 162]
+[Beat 161]
 The actuator gives up its entire career at once. The slab jams a third of the way up, shrieking on a dead track, and Kyle flattens to the tank and takes them under it with inches to spare — close enough that the cold edge of the shutter combs the air over his spine. They drop off Crucible's glass-smooth pavement onto the broken asphalt of the gray zone, and the suspension finds out about Chicago all at once. Imani laughs. Small, clean, surprised out of her.
 
 "Loud part," she says.
@@ -3422,14 +3419,14 @@ The actuator gives up its entire career at once. The slab jams a third of the wa
 
 ## The Pullman Seam
 
-[Beat 163]
+[Beat 162]
 Pullman Works glows up on the right — restored row houses, modern cameras hidden inside period housings, an Axiom company town keeping perfect time for people who don't own a single minute of it. Kyle threads the gray-zone seam along its edge, the unincorporated strip Axiom never bothered to fence, the kind of line he has spent a career learning to ride. Where the factory rain had dried, the pavement had gone soap-slick, and he fed the bike a little less lean through the stretch without thinking, the way you learn to trust a road that won't hold you.
 
 Heads come up as the engine passes. One kid shouts something the engine swallows whole, but the shape of the word in his mouth is unmistakable — legend — and Kyle lifts a hand off the bars like a man in a parade.
 
 Other heads come up too, and these ones don't spare a look for the bike. They're fledglings: pledges to the Vultures, the crews who scavenge the dead and the not-quite-dead, the ones who'll cut a transplant back out of your chest the day you miss a payment and sell off whatever's left of you for parts. A fledgling runs salvage on spec — no patch, no blessing — hoping to drag something home worth a permanent place in the flock. A post-op transplant riding pillion through open country isn't a target to a kid like that. It's a winning lottery ticket. The exact score that turns a fledgling into a Vulture. Two of them are already on their bikes. Already on their neuretics.
 
-[Beat 164]
+[Beat 163]
 Imani's hand finds the side of his coat and clutches a fistful of it. She isn't afraid, Kyle realizes. She's absorbing. She has never once been outside Crucible's walls in her life, and he understands this about her without being told.
 
 "First time off the block?" he asks.
@@ -3448,7 +3445,7 @@ She thinks about that one for a long moment, the city pouring past on both sides
 
 ## Ashgrave Corridor
 
-[Beat 165]
+[Beat 164]
 The Ashgrave Synthesis Corridor announces itself with a wall of haze you can taste a block before you can see it. The perimeter lights glow the wrong color — too yellow, too low — the way a refinery glows when it is having a feeling about something. This is somebody's commute. A shift-change line of workers in cheap half-masks trudges the shoulder, heads down, lunch pails swinging, walking a thing they made their peace with a long time ago, because the only alternative on offer was not eating. A stall at the mouth of the corridor sells filter cartridges, and beside the cartridges a hand-painted board keeps a tally — DAYS SINCE — the number low, the way the number is always low here.
 
 Kyle has a respirator clipped to his jacket. Imani does not. His neuretics throws the air up in front of his eyes as a number he doesn't like and a clock he likes a great deal less. He reaches back without slowing, finds her face with the flat of his palm, and presses his bandana over her mouth.
@@ -3457,7 +3454,7 @@ Kyle has a respirator clipped to his jacket. Imani does not. His neuretics throw
 
 She nods against his hand. A masked worker on the shoulder lifts two fingers as the bike passes — not a wave, just the nod one night-shift gives another across a bad stretch of road — and Kyle returns it. Then he bites down on his own mouthpiece, snaps the seal, and rides into a sky the color of an old bruise like he was personally invited.
 
-[Beat 166]
+[Beat 165]
 Two refinery towers exhale orange fire on either side of him, close enough that he could count the rivet patterns if he had a second to spare. Sixty feet up, a vent stack blows downward all at once, and the pressure slams sideways across the road. The bike yaws hard. He corrects before the yaw has finished happening, because the correction was already waiting in his hands a half-second before the problem arrived. Imani's grip tightens into a small steel claw at his belt.
 
 "We're fine," he says, out loud.
@@ -3466,7 +3463,7 @@ Two refinery towers exhale orange fire on either side of him, close enough that 
 
 Kyle has met grown adults — armed, paid, supposedly professional — who could not read his shoulders. He is starting, against every instinct he owns, to take this kid personally.
 
-[Beat 167]
+[Beat 166]
 Halfway through, the corridor's throat begins to close.
 
 A leak somewhere upwind trips a containment lockdown, and Ashgrave's answer to a leak is a blast-rated bulkhead coming down across the only open lane on a dead-man timer — slow as a guillotine and about as open to negotiation — built to seal whoever's caught on the wrong side of it in with the very air they were trying to outrun. This is not the sally-gate. There is no actuator to find and shoot, no override, and no time to look for one, because a hydraulic spine already in motion is a different animal than one sitting at rest. His neuretics tells him so before he's even finished forming the question.
@@ -3479,7 +3476,7 @@ They go under the falling edge at speed. The lip catches the battery brace and s
 
 Imani isn't laughing this time. Both fists are buried in his coat, her face pressed flat between his shoulder blades, and she has gone very, very quiet. Kyle files that away with the other things tonight keeps teaching him about her.
 
-[Beat 168]
+[Beat 167]
 He clears the corridor's north ramp at a hundred and ten, rolls off the throttle on the way down the far side, and spits the mouthpiece out so it swings free on its lanyard. Reaching back one-handed, he tugs Imani's bandana down off her face.
 
 "You with me?" he asks.
@@ -3494,7 +3491,7 @@ Kyle laughs — a real one, surprised out of the bottom of him — laughs so har
 
 ## Englewood
 
-[Beat 169]
+[Beat 168]
 Englewood at night looks like a city that has been told a joke nobody is laughing at. Kyle means to run 63rd straight across to Halsted, but 63rd dead-ends in a viaduct that finished collapsing sometime back in the spring — a long slope of broken deck and bent rebar where an underpass used to carry the road through. No way over it the easy way.
 
 There is a hard way. A tilted slab the locals have braced and shimmed into a ramp, because in a gray zone every disaster eventually gets repurposed into infrastructure by the people who have to live on top of it. He knows the ramp is sound because Echo had run a job out this way a season back and tapped him the wave-map after, the whole broken shelf of Englewood charted in clicks and echoes the way only Echo bothers to chart anything. Some debts in this trade get paid in roads you'll never have to learn the hard way.
@@ -3503,7 +3500,7 @@ He takes it at speed. The bike goes light at the crest, weightless for one long 
 
 He does the single useful thing in answer. He goes faster.
 
-[Beat 170]
+[Beat 169]
 They come in a flock this time — the ones a ping woke, fresh bikes and no patience between them, fanning out across both lanes to take him at speed. The lead pair don't reach for guns. They reach for their belts and throw, and the air ahead of him fills with fat little cylinders that burst into white glare and dead static. Flashbang. Chaff. And the ugly third kind — the EMP-and-interference rounds a salvage crew carries to kill a mark's bike out from under him and blind whatever he's running behind his eyes.
 
 It is a good plan. It would work on almost anyone alive.
@@ -3538,7 +3535,7 @@ Kyle swings onto his bike — still upright, still warm, still holding Imani exa
 
 She thinks about that, and finds it fair — which is, Kyle suspects, the most truthful thing anyone has ever bothered to tell her. He brings them back up to speed, and for the first time since Pullman the mirrors stay empty behind him. They are done being chased.
 
-[Beat 171]
+[Beat 170]
 On Halsted, before the tracks, a micro-schism was crossing the road.
 
 He could see it: the specific shimmer of disturbed air that wasn't heat, the way the streetlight's reflection in the wet pavement fragmented and didn't resolve. Small. Moving south at the rate of a slow walk. He throttled back and waited for it to clear the lane.
@@ -3557,7 +3554,7 @@ He didn't know yet that what was waiting at 35th was in a different category ent
 
 ## The Cinderfall Anomaly
 
-[Beat 172]
+[Beat 171]
 Halsted north of the tracks runs straight over the bones of Cinderfall Energy — eleven subterranean thermal installations whose only face to the world is a grid of steam-vent grates and the convection waves that ripple up off them, bending the streetlights into water.
 
 "Why is the air doing that?" Imani asks.
@@ -3572,7 +3569,7 @@ He does not tell her that the air is about to do something Cinderfall has nothin
 
 The Weather, Pike had called it.
 
-[Beat 173]
+[Beat 172]
 He should turn west. West is Bridgeport, and Bridgeport is normal. He goes straight, because straight is what the call is for.
 
 At 35th and Halsted the air changes temperature with nothing anywhere to account for it — a dry, settled cold, and underneath the cold the smell of a room sealed shut since before he was born — and the world quietly stops being a place. The headlight reaches out and touches something, and the something touches back. The world dims at its edges. His stomach drops a full foot without taking the rest of him along for it; the wheels are still on pavement, but the pavement is running half a second behind where his eyes swear it ought to be.
@@ -3585,7 +3582,7 @@ The neuretics returned a location stamp from a source it had no registry entry f
 
 He has never once been here, and he knows it anyway — knows it the way you know a hallway from a dream — one you have had your whole life and never once on purpose. At the near edge of the perimeter, a structure stood that his headlight swept past in half a second. He did not look at it.
 
-[Beat 174]
+[Beat 173]
 It has a name on the forecasts and an exclusion flag on the maps. Kyle knows the names are a courtesy. Whatever this is, it isn't bad air and it isn't radiation. It is faintly and patiently aware of him.
 
 His neuretics tries to map it and gets back nothing but garbage: distances that won't hold still, a clock running three directions at once, his own engine note reaching his ears a half-second late, off a street he's already left. The visual field isn't wrong, exactly — more like a page turned a quarter-second early, the scene slightly ahead of its own arrival. The buildings stand where they're supposed to stand, but their shadows run in the wrong direction, and the light from a window two floors up hits his eyes a moment before the window passes. So for once in his overclocked life he flies on the one instrument no build has ever managed to improve — the old animal at the base of the skull.
@@ -3598,7 +3595,7 @@ The air has a quality. A fullness — the sensation of a room where something la
 
 "Okay," Imani says, and her voice comes out thin. Her hand finds his coat and tightens around a fistful of it and stays there.
 
-[Beat 175]
+[Beat 174]
 At the far edge of his vision something moves that shouldn't be able to: a shape carrying one shadow too many, and the extra shadow arrives a half-beat ahead of the shape that throws it. Where it passes, the air goes cold — a cold with no source — and it makes no sound at all, just a pressure in the ear like water at depth.
 
 He does not look at it directly. Some animal floor of him knows that looking straight at the thing is not something a mind comes back from. Imani's breath catches against his back — his only warning — and he throws the bike right, which is the wrong word for the direction it actually goes. The miss should have cleared a foot. It clears less than an inch. He feels it pass like a current turning in deep water, and a line of cold opens along his ribs under the coat — deep, clean, not yet bleeding, because in here the blood runs half a second behind everything else.
@@ -3621,7 +3618,7 @@ The chirp slows. Slows again. Steadies. By the next block she has herself back, 
 
 It is the first time he has lied to her.
 
-[Beat 176]
+[Beat 175]
 Twenty-one minutes, and the mirrors have stayed empty since the viaduct. What he hasn't lost is the Loop — the one part of the city no CorpoNation gets to switch off, too public and too packed, the heart every zone plugs into to stay alive. So when it goes wrong, it goes wrong in the open. Tonight it is going wrong.
 
 He hears it from the mouth of the tunnel: the flat clap of small-arms under a crowd-roar. Imani lifts her head off his back.
@@ -3638,7 +3635,7 @@ Kyle gets his breath back around the burn before he answers, so it lands level.
 
 "Don't tell the advertisers," he says. "It'll go to their heads."
 
-[Beat 177]
+[Beat 176]
 River North is a thirty-second wedge of gray zone where the Loop's grid loses its nerve at the river. The bascule bridges are still there, but the river hasn't been managed in eighteen years; the lift machinery seized a decade back, and the spans sit permanently down and half-drowned, Lower Wacker a black canal beneath them where a road used to run. People live here anyway — laundry strung span to span, a man fishing the canal off a fixed deck with a hand line, a kid working a cooler of something cold down a line of cars that never moves. Down the throat of a stairwell that ran below the waterline, a crack in the wall gave off a faint blue-green light, the way the oldest blocks do once they've been wet long enough; the air that came up out of it was cold and close and smelled of a cellar that had made its peace with the river, and nobody passing it down here took that for anything but a comfort.
 
 Imani turns her head to watch the water slide past underneath. "The street's drowned," she says — not scared, just filing it.
@@ -3655,7 +3652,7 @@ What he thinks about instead is the camera reading his face across the span. Not
 
 ## Streeterville
 
-[Beat 178]
+[Beat 177]
 Streeterville is a forest of glass towers wearing crowns of advertising, and at their feet sits the brutalist concrete slab of Northwestern Memorial. Tonight the whole district is packed wall to wall with people — the strike spilled north into the one part of the city nobody is allowed to lock down. Which is, of course, exactly why the strike chose to be here.
 
 Kyle picks out the bay's red light six blocks out. And between him and it, wading through the crowd on six legs with the patience of a thing that has nowhere better in the world to be, is an Arcturus crowd-control unit. A crab the size of a panel van, matte riot-grey. A Bulwark. Arcturus builds everything into a crab eventually — low, omnidirectional, impossible to tip over — and a crab, it turns out, is what has been waiting at the end of his night all along.
@@ -3664,7 +3661,7 @@ Kyle has put this exact unit down twice before. He knows it's the same one becau
 
 A machine can't hold a grudge. Kyle stopped believing that the second time.
 
-[Beat 179]
+[Beat 178]
 The Bulwark is a crowd-control unit, built to work shoulder to shoulder with civilians, so it carries nothing that goes bang — no slugs, no rockets, nothing that doesn't care where it comes down. What it has instead is hands. Tanglefoot. Kinetic foam. A sonic throw that turns your inner ear to surf. And four hydraulic claws built to fold a person up neat and hold them there for collection. It wants Kyle folded up. It does not care about the kid at all, except as part of the same package.
 
 That is the opening. It is a thin one.
@@ -3679,7 +3676,7 @@ Imani looks at the crab the size of a panel van. Then Imani looks at the two gre
 
 "It is," Kyle agrees. "Throw at the face."
 
-[Beat 180]
+[Beat 179]
 Then everything is very loud and very fast at once.
 
 Imani's first flash goes off a half-second early and a yard wide - and the Bulwark flinches from it anyway, optics whiting out - and Kyle is already moving, not away from the thing but under it, because the one place a crab cannot reach is the spot beneath its own belly. He lays the bike flat and slings the two of them through the gap between its legs, drawing Silence as the world tips sideways, and opens a leg out clean on the way through. The Bulwark drops a quarter of its height with a sound like a building deciding to sit down.
@@ -3704,7 +3701,7 @@ But the bay's red light is three blocks off now. And three blocks is nothing.
 
 Imani - shaking, fierce, wrung all the way out, staring at the claw that took her grenades and choked on them - says, "I know."
 
-[Beat 181]
+[Beat 180]
 The bike is dead and the bay is three blocks off, and three blocks is nothing; he has bled a great deal more than this for a great deal less. He sheathes Silence across his back. Holsters Cacophony on his hip. And picks her up — harness, battery, the whole small weight of her gathered in against his chest.
 
 Imani's hand fists in his collar. "You're hurt," she says again, and this time he doesn't bother with the lie.
@@ -3713,7 +3710,7 @@ Imani's hand fists in his collar. "You're hurt," she says again, and this time h
 
 He carries her. A red light in the distance growing larger and brighter.
 
-[Beat 182]
+[Beat 181]
 Pike is already out in the lane with the gurney - tall, brown-skinned, hair tied back, scrubs hanging off a body that has clearly run a long way today - and he does not waste a single syllable on hello.
 
 "On the gurney."
@@ -3734,7 +3731,7 @@ She takes it the way she has taken everything else tonight - straight, no flinch
 
 "Anytime, kid," he says - the gentlest lie he has told all night, and the only one she lets him keep. "Tell the heart I said hi."
 
-[Beat 183]
+[Beat 182]
 Pike reads the brace, the wires, the cooler — and then reads him. The hand pressed flat to his side. The dark spreading at the forearm and the shoulder. The boot that won't quite take his full weight.
 
 "Forty-one minutes," he says. "I had you at fifty-five."
@@ -3749,12 +3746,12 @@ Pike reads the brace, the wires, the cooler — and then reads him. The hand pre
 
 Kyle is already turning away. "Don't worry about me," he says. "I'll just rub some dirt in it."
 
-[Beat 184]
+[Beat 183]
 He walks.
 
 The bay door drops shut behind him and its red light goes white, which is the hospital's quiet way of saying they have her now — which is the only confirmation he was ever going to get that the run worked. No alarm follows him out into the street. No name. Whatever he tore open tonight to get her here has already closed up seamless behind him, like it was never there at all.
 
-[Beat 185]
+[Beat 184]
 He turns south, on foot, the long way, because south is no longer urgent and there's no bike left to make it quick. The read has come back — slow, shaky, but back. The white that rode the edges of his sight all night is pulling away, the bleed at his nose gone tacky and dry. The body, at least, has stopped sending up its bills for the evening.
 
 The bad news keeps its own count. Where a civilian rig would show a battery bar, the build in his skull shows one small light. Every time he runs the read past the red, that light goes red with it. He doesn't look at it while he's working. He looks now, and counts what he can stand of tonight's — and the schism alone is most of it.
@@ -3767,7 +3764,7 @@ A kill team that never asked why their contract carried only a description and n
 
 He has been seeing the shape for months. He has a word for it now. He puts the word in the drawer next to the buyers' list and the relay logs and the other things he has not finished deciding about, and he declines the posting, and walks south through the rain, and lets whoever is watching watch him do it.
 
-[Beat 186]
+[Beat 185]
 The frequency had not fully left.
 
 He could not have said what it meant, technically — the NeoCortex ran its diagnostics and returned clean, or clean enough for any reading that meant anything to the person checking the output, which was him, which was therefore not reassuring. But the frequency was still there, somewhere below the diagnostic layer, a 17 Hz hum in the sub-threshold channels that didn't register as sound but had weight like sound. Like something waiting.
@@ -3792,7 +3789,7 @@ He unclenched his hand. He hadn't known it was clenched.
 
 ## Chapter 12: One Shoe
 
-[Beat 187]
+[Beat 186]
 The Roost was on the third floor of a walk-up on Paulina, behind a laundry operation that had been running since before the overlay architecture came online and had never registered for a feed address. Kyle had come here after jobs that finished clean. After jobs that didn't. After jobs he couldn't yet classify.
 
 Femi Kasparov was in his chair by the window — his right shoe on, his left foot bare on the radiator cover, which was warm but not running, the way it always was in late summer. He did not look up when Kyle came through the door.
@@ -3805,7 +3802,7 @@ The lemon tree was in the corner. It was four feet tall and growing in something
 
 He put his back to the wall between the window and the door. Femi's chair creaked once as he settled. The grow lamp hummed at the frequency of something doing its job.
 
-[Beat 188]
+[Beat 187]
 The medic had come through three days ago. Femi reported this the way he reported everything: once, accurate, in sequence.
 
 His left hand had been running three degrees colder than his right for the past six weeks - a compensatory load redistribution the neuretics managed automatically, the kind of adjustment that logged itself without alerting him. He had noticed it. He had not put a clinical word to it until now.
@@ -3828,7 +3825,7 @@ Kyle's palm was flat against the wall. He hadn't put it there.
 
 The grow lamp hummed. The coloring lemon turned in some imperceptible draft from the window seam.
 
-[Beat 189]
+[Beat 188]
 The Vulture had come six weeks earlier. Kyle had not been here. Femi had been.
 
 The man arrived in the early afternoon, dressed for evaluation — document portfolio, handheld scanner, the expression of a professional who had learned to make no expressions. He had been invited in. The Vultures were a service; Femi did not have a policy against services.
@@ -3847,7 +3844,7 @@ The man thanked Femi for his time, put the portfolio back in his coat, and left.
 
 Kyle stood with this. The lemon tree was something that could not grow here and had grown here anyway. Whoever had brought it had not asked it.
 
-[Beat 190]
+[Beat 189]
 The document had been filed three weeks after the Vulture. Femi produced it from the drawer in the table — printed on paper, folded once, the crease sharp from waiting.
 
 It was from the Continuity Office. Not addressed to a person. Addressed to the structure, the way a filing is addressed when the addressee is a location rather than an occupant. The language was standard: the property had been scheduled under the District Acquisition program, WEST TOWN WEST. The word they used was *axiom*: the baseline from which continuity-of-ownership was calculated. It had a reference number. It had an effective date.
@@ -3872,7 +3869,7 @@ Femi thought about it. "A while," he said.
 
 The grow lamp hummed.
 
-[Beat 191]
+[Beat 190]
 Kyle didn't move from the wall.
 
 Femi didn't offer anything else. The grow lamp held its frequency, a low electric hum that didn't change.
@@ -3893,7 +3890,7 @@ Kyle crossed to the lemon tree. He took the coloring lemon off the branch - one 
 
 "You can have it," Femi said. "It was coming off anyway."
 
-[Beat 192]
+[Beat 191]
 The inventory was automatic.
 
 He didn't have the gear with him — it was across the hall in his apartment, racked and quiet. But he ran it anyway, the way he'd been running it since he was nineteen and understood what the weight meant. Silence: a kilo and a half, plain matte-black steel and carbon-nanotube composite, no edge-work, nothing that needed explaining. Cacophony: the five-shot revolver, heavier than it looked, because everything that worked was heavier than it looked. The subdermal mesh — not gear exactly, more like geography. Seventy feet of braided polyceramic weave laid in the tissue under his back and chest, which had stopped two rounds from the Hegewisch crossroads team three nights ago and had not fully stopped hurting. The neuretics: Atlas-grade NeoCortex, no governor. The last item in the list was also the one running the list.
@@ -3908,7 +3905,7 @@ That was the more interesting data. Not the number. The surprise.
 
 He was good at accounting for value. He'd spent eleven years taking payment, running tabs, paying exact. He paid exact because debt was a kind of leverage and he didn't carry leverage. He had been carrying something worth considerably more than he'd been pricing it, and somewhere in the eleven years he had stopped noticing.
 
-[Beat 193]
+[Beat 192]
 He thought about Pixel.
 
 Not what to say — whether to say anything.
@@ -3923,7 +3920,7 @@ He didn't know what to do with the word *possibly*. It was honest. He respected 
 
 He hadn't decided whether to say anything. He noticed, standing against Femi's wall with the grow lamp humming, that he hadn't decided.
 
-[Beat 194]
+[Beat 193]
 "The Continuity Office letter," Kyle said. "When's the effective date?"
 
 Femi told him. A month out. End of the fiscal quarter, the way district acquisition always ran.
@@ -3938,7 +3935,7 @@ The grow lamp hummed.
 
 Kyle left.
 
-[Beat 195]
+[Beat 194]
 Kyle went down the three flights with the lemon.
 
 The laundry on the ground floor was still running its last load of the evening - warm, the smell of heated clean fabric, a sound like weather coming through the walls. He pushed through into the outside air, and Paulina hit him: freight hum from the overhead tier, a Windhover maintenance drone running its grid circuit forty feet up, orange navigation blink every three seconds. Two people at the transit shelter on the corner were comparing something on their overlays, laughing about whatever they were seeing.
@@ -3949,7 +3946,7 @@ The same city. Running the same evening shift it ran every evening. Freight move
 
 He put his hands in his coat pockets and walked south toward Mrs. Chen's.
 
-[Beat 196]
+[Beat 195]
 Mrs. Chen's was close to empty.
 
 End of service, the hood lamp already dimmed to low, the counter clean except for one other customer hunched over a bowl at the far end. Kyle sat. Mrs. Chen set a bowl in front of him without looking up from the prep surface where she was breaking down the last of the aromatics. Pork bone broth, the color of old paper, two hours of reduction in it. He picked up the chopsticks.
@@ -3968,7 +3965,7 @@ Kyle set his chopsticks down. "I'll be back."
 
 She turned back to the rinsing. He lay the Φ on the counter — exact, no rounding, no sentiment in the amount. Stood up. Walked out into the rain that had started while he was eating.
 
-[Beat 197]
+[Beat 196]
 ﻿Home.
 
 Pixel's light was on, her shadow moving behind the frosted glass panel ? the particular rhythm of her when she was in the middle of something technical, the way she moved between her bench and her terminal, two steps and back, two steps and back. The bench coolers were cycling, which meant she had a job open, components live under the hood. He stood in the hall and listened to the ordinary sound of her working.
@@ -3981,7 +3978,7 @@ She worked. He didn't interrupt it. The pipes knocked once in the east wall. The
 
 He let the building settle around both of them.
 
-[Beat 198]
+[Beat 197]
 He went to the terminal.
 
 Not to open the relay. He pulled up the contract log and ran the eleven-year history — every job, scope, fee, any gratuity paid, duration, closure date. He read them in order, the way you read something looking for a pattern you suspected but couldn't name.
@@ -3998,7 +3995,7 @@ He looked at the kitchen drawer. Inside it was the printout Pixel had made three
 
 He went to bed. The rain was still going outside the window. He lay in the dark and did not sleep for a long time, and the building went quiet around him by degrees, and eventually even the bird upstairs stopped its interval, and the rain slowed, and he lay there with the number and the pattern and said nothing to either of them.
 
-[Beat 199]
+[Beat 198]
 At 02:14, the relay pinged - standard routing, the same client type he'd taken twenty-eight times in the last three years. Kyle looked at the summary. He declined it. Not because the terms were wrong. Not because the job was dirty. He declined it because he had looked at eleven years of contracts and understood that he had never once declined a relay job, and that understanding had now become a fact he was choosing to act on. He closed the window.
 
 That was new.
@@ -4017,14 +4014,14 @@ She sat with the scatter plot for another minute. Forty-eight points of contact 
 
 She was no longer waiting for him to ask.
 
-[Beat 200]
+[Beat 199]
 The noodles were getting cold, which at Mrs. Chen's counter was a small crime, and Kyle was letting it happen because he was watching a woman pretend not to watch him.
 
 She stood across six feet of rain, outside the awning line, in a tan coat with the hood up. Same foot position the whole time. The rain came off the hood in a clean sheet that said the coat was quality — the kind that didn't announce itself — and his neuretics kept reaching for an augmentation profile and returning empty, which cost more money than chrome did. Nobody stands still in the rain for eleven minutes unless the rain doesn't bother them or the job requires it.
 
 "Kyle," she said. Not loud. Not for Mrs. Chen. For him, across the rain — in a steady, modulated voice he had been taking contracts from through a cracked terminal for two months, and had never once heard attached to a body.
 
-[Beat 201]
+[Beat 200]
 He set the chopsticks down across the bowl. He did not stand, and he did not move his hands away from the counter, and he let her see the not-moving be the answer to the question she hadn't asked yet.
 
 Behind him, Mrs. Chen stirred the broth with the long-handled spoon that had lost its lacquer in three places and been re-gripped with electrical tape, the same spoon she had used for the six years he had been eating at this stall, and she said one word into the steam.
@@ -4037,19 +4034,19 @@ The woman in the rain tilted her head. A fraction. A direction.
 
 Kyle's chair scraped back. He put 12Φ on the counter and said it the way he said it every night, low and level: "Standard rate." Mrs. Chen's hand covered the coins without looking down, which was how she took his money when she thought he was about to do something she didn't approve of and had decided not to say so.
 
-[Beat 202]
+[Beat 201]
 He followed her into the rain, six feet behind — far enough to read her, close enough that she knew he had chosen to come. Past the mochi cart, closed, a chain through the handles. She had not once adjusted her stride for the puddles, which meant she knew the route, or had walked it enough times that her feet had learned it separately from her attention. The security drone hung at the third-block junction, cycling its standard sweep on its standard interval, and she crossed its blind eight seconds without checking. She had timed the approach, or she had known the interval, and either answer said the same thing about how long she had been thinking about this particular walk.
 
 His neuretics ran warm in the rain, a low heat behind his left ear that he had learned to read the way a pilot reads engine noise. Not yet a problem. A thing to monitor.
 
-[Beat 203]
+[Beat 202]
 The relay station resolved out of the dark at the end of the block. Wartime construction: poured concrete, no ornament, a dead antenna mast running up into the rain — dead a decade, the city's records said. The kind of building that became invisible through its own explanation.
 
 Halfway up the dead mast, a single status light was burning amber. Steady. Patient. He blinked the rain out of his eyes and it was just wet metal and old paint. He did not mention it. She did not look up.
 
 She stopped at the door, and did not produce a key, and did not unlock anything. She turned, with the same composed efficiency she had walked the route with, and the hood came back an inch — enough for the streetlight to catch the shape of a face and the dark of red hair. He had not seen her face before tonight, and he was not entirely sure he was supposed to be seeing it now.
 
-[Beat 204]
+[Beat 203]
 The alley was eight feet wide and ran between the relay station and a sealed utility corridor. The woman had gone two-thirds down it before she stopped.
 
 A shape near the dead-end was not walking. It was placed — had been placed, Kyle estimated, four to six minutes before they arrived. Medical-grade jacket, the cut Carrion ran on field assets in a zone they weren't licensed to operate in: functional, anonymous, the kind that could clear any checkpoint without a secondary pull. Its left hand hung at its side and ran three degrees colder than the right.
@@ -4074,7 +4071,7 @@ Kyle watched it do this for a count of three. The count his neuretics ran withou
 
 Then he turned his back on it, because you had to pick what you were afraid of and Kyle had made that choice eleven years ago, and walked to the station door.
 
-[Beat 205]
+[Beat 204]
 His hand had moved toward the comm unit at his hip — the reach-out-before-going-dark reflex, the location ping he sent before entering any building he hadn't confirmed — when she turned and faced him. He left the hand where it was.
 
 "Tomorrow," she said. "This address, this time, the room behind this door. Shielded. Bring nothing electronic you can leave behind — your implant comes because it cannot be detached. The conversation we are going to have cannot happen in a room that can hear it."
@@ -4091,7 +4088,7 @@ He didn't answer. It had never been his question to ask. That was the whole arra
 
 "I used to know," she said. "That's the conversation."
 
-[Beat 206]
+[Beat 205]
 "Why me?" he asked.
 
 "Because you are the one this concerns," she said. "The rest tomorrow. In the room."
@@ -4102,7 +4099,7 @@ He could leave. He could ride home and pretend the noodle stall had been a noodl
 
 The hood inclined - not a nod, an acknowledgment - and she stepped past him into the dark of the block without unlocking the building behind her, and was gone in three steps. The Gray Zone's bad rain swallowed the tan coat the way the Gray Zone swallowed most things at this hour.
 
-[Beat 207]
+[Beat 206]
 The bike was where he had left it, two blocks south, the plate still the one he had ridden down on. He rode the long way home, because the long way was where Kyle did his thinking, and at the second tier crossing the match landed before he had time to refuse it — voice plus face.
 
 Sable.
@@ -4111,7 +4108,7 @@ Two months of contracts through a cracked terminal. The fixer who paid on time, 
 
 People broke habits like that for exactly two reasons: because something was worth more than the habit, or because something had already cost them more than the habit could cover.
 
-[Beat 208]
+[Beat 207]
 The bike took the lower span, where the wind came off the lake in cold flat sheets and the traffic was thin enough to hear the engine think.
 
 Kyle ran the thermal detail again.
@@ -4146,7 +4143,7 @@ The building they'd been trying to acquire.
 
 The people they'd already taken.
 
-[Beat 209]
+[Beat 208]
 His step hit the landing across from 2F at the angle he had not announced, and Pixel's door opened anyway. T-shirt over leggings, no shoes, two cups, the steam off both carrying something herbal and lemon-bitter. She handed him the one with the handle turned toward him. The side without the chip. The better cup, which was her version of saying something she did not intend to say aloud.
 
 They stood in their doorways across the hall and drank. The hallway smelled of her apartment behind her - solder flux and bergamot, proportions that should not have worked and did.
@@ -4163,12 +4160,12 @@ He did not tell her about the woman in the hood, or the shielded room he had sai
 
 "Goodnight, samurai."
 
-[Beat 210]
+[Beat 209]
 He sat on the edge of his bed in the dark and listened for the bird he had never personally heard. The building was quiet. Three blocks east of Mrs. Chen's, a shielded room waited for the morning - a room built so no machine in the city could hear what got said in it, owned by a woman who had stopped trusting her own client list.
 
 If this was a trap, it was the most patient trap anyone had ever set for him. That was either flattering or very bad.
 
-[Beat 211]
+[Beat 210]
 The brass gasket seated with a sound like a breath held and then released, and Kyle stood in the dark of the cage and let the silence locate itself in his body.
 
 It was in his sternum. Below his sternum. A place he had stopped attending to the way you stop attending to the sound of your own blood - a low electromagnetic hum that had lived in the implant's background like a second heartbeat for as long as he'd had the implant. It was always there until it was not.
@@ -4181,14 +4178,14 @@ The hand registered the stillness as weight - not the weight of absence but the 
 
 Eleven years. He had been sixteen when they finished the installation, and he had not been quiet inside since, and he had not known it until the quiet arrived and occupied the exact volume the array had filled - the way a pulled rack leaves its ghost in the air of a room, the cold footprint of something that ran hot.
 
-[Beat 212]
+[Beat 211]
 The lamp came up on a table, two chairs, and Sable. Red hair in a loose braid, one strand against her cheekbone that had never stayed. Ocular implants — black, machined, aperture rings that made a small sound when she shifted focus — and the sound, he understood now, had been there under two months of cracked-terminal audio, attached to nothing, waiting for the rest of her.
 
 He had built a contract file on this voice. A behavioral profile. A trust index. The face arrived and fit itself over the partial like a key into a lock she had already shown him.
 
 He sat. His hands stayed open on his knees, and the muscles across his shoulders did the slow burning work of staying open, and he let them.
 
-[Beat 213]
+[Beat 212]
 ﻿She'd opened the Clybourn permit. He knew because she'd looked up from the screen with the expression she used when a calculation arrived at a number she'd been half-expecting and didn't want to be right about, and she'd closed the permit without saying anything, and he hadn't asked, because not asking was what he had to offer in return for her not asking.
 
 She knew he was dying. She'd done the math. She was now holding the math in one direction and he was holding the suspicion that she'd done the math in the other direction, and between them, in the same room, the math existed in the space between two people who were not talking about it.
@@ -4199,7 +4196,7 @@ Nothing was said. Nothing happened. She poured two cups and brought one to the c
 
 That was the beat.
 
-[Beat 214]
+[Beat 213]
 The relay didn't come through his usual channel.
 
 That was the first thing. His standing relay — the Axiom trunk, the shell resolving to nothing, eleven years of work arriving the same way every time — pinged once at 07:14 with a route he had never seen before. A single address, no job code, no rate, no client field. Just the address and the time: 10:00. In the Carrion Industries district near the Zone 9 checkpoint, in a building the public registry listed as a environmental-monitoring facility and that Kyle had driven past twice in his life and registered as something else.
@@ -4220,7 +4217,7 @@ Inside: five photographs. Five names. A rate sheet with numbers on it that were 
 
 Kyle sat down in the other chair.
 
-[Beat 215]
+[Beat 214]
 "Your contracts," Sable said, "do not come from people."
 
 She let it sit exactly as long as it needed to.
@@ -4231,7 +4228,7 @@ The hum that was not in this room picked that moment to clarify in his memory. E
 
 "If it is not looking through your eyes, it is interpreting your senses," she said. "Either way — the moment you recognize me, it knows we are meeting. So I needed you to read me as a stranger. I needed you to choose to follow someone you did not know."
 
-[Beat 216]
+[Beat 215]
 Kyle moved to stand. The tan-coat at the door took one step inward — not aggressive, not even particularly fast, just filling the gap between Kyle and the cage door. Kyle stopped. Sable didn't look at either of them.
 
 "I do not like," Sable said, "being some non-human's puppet." Flat. The way she said the risk premium is already factored in. A thing stated, not performed — except that her thumb was pressed against the table's edge hard enough to whiten the nail, and she saw him see it, and did not move it.
@@ -4246,7 +4243,7 @@ The aperture rings went still, which he now understood meant she had moved into 
 
 "I need you," she said, "to not change."
 
-[Beat 217]
+[Beat 216]
 "You want me to keep being followed," Kyle said, "by the thing that's been following me, so that you can follow it."
 
 "Yes."
@@ -4255,7 +4252,7 @@ The aperture rings went still, which he now understood meant she had moved into 
 
 The aperture rings made their small sound. It took him a moment to understand what he was looking at, because he had never seen it through the terminal and had no file for it: Sable, almost smiling.
 
-[Beat 218]
+[Beat 217]
 He was at the cage door before she spoke again.
 
 "Mr. Corbin."
@@ -4270,7 +4267,7 @@ The others.
 
 He walked to his bike.
 
-[Beat 219]
+[Beat 218]
 He considered what it meant to agree. The hum had been with him eleven years, and he had not known it was there, which meant it had been in every contract, every room, every choice he had believed was his. Whatever he thought about that was going to take longer than tonight, and the thinking was going to happen with the thing in the room.
 
 He gave it three seconds, which was longer than he usually needed.
@@ -4279,7 +4276,7 @@ He gave it three seconds, which was longer than he usually needed.
 
 One thing more, because counts mattered: eleven years of fair pay. Clean work. No debts run up in his name, no bodies he hadn't chosen. If it was a leash, it was the only leash in the GLMZ that had never once been yanked. He filed that next to Sable's whitened thumbnail — two readings of the same animal — and stood.
 
-[Beat 220]
+[Beat 219]
 ANTIQUITY & STATIONARY had a brass bell on the door that Vey had not replaced in the sixteen years he'd been in the same storefront, because the bell was original and the bell worked.
 
 Vey was behind the counter when Kyle came in. He was always behind the counter. He had the look of a man who had found his correct position in the universe some years ago and had no intention of being relocated.
@@ -4314,7 +4311,7 @@ Kyle picked up the map. He put it in his jacket pocket, with the card. Two piece
 
 "I have a theory," Vey said. He went back to the probe. "Come back when you need it."
 
-[Beat 221]
+[Beat 220]
 Node one was the relay station's underbelly at 0214 — a service floor below the cage, old equipment racks bolted to concrete, the bolts worn smooth by decades of hands checking them. He sat on a rack's edge in the dark and behaved exactly as he behaved, which tonight meant waiting well. Somewhere behind a panel, volt rats shifted in a cable run, a sound like dry rice poured slowly, and settled. Above him, Sable's reader did whatever reading was, against whatever was riding him.
 
 Twelve minutes. Then her step on the stair, deliberate enough to be heard.
@@ -4323,7 +4320,7 @@ Twelve minutes. Then her step on the stair, deliberate enough to be heard.
 
 ## Chapter 14: Two Favors
 
-[Beat 222]
+[Beat 221]
 The triangulation had completed four days after the session in the cage: three nodes, three readings, one intersection — a server cluster in an old relay station under the Loop. Sable sent the coordinates in a clean notation with no comment. Kyle filed it next to the buyers' list and the relay logs and did not go there yet, because going there meant deciding, and he had not finished deciding.
 
 The relay job came through a contact Kyle had used twice before and paid on time both times, which was the full extent of the professional relationship and the extent that mattered. The job required the entity's coordination — real-time, distributed, faster than human response across six simultaneous data points. The entity could do this, had done it for Kyle for eleven years, but the arrangement this time was different: instead of routing through the relay infrastructure the entity had always used, it would run directly in Kyle's array. His neuretics as the carrier. His cortex as the transit point. Eleven years and they had never done it that way.
@@ -4346,7 +4343,7 @@ Ledger was synthetic — a freelance operator who had been in the work for longe
 
 "That's not the same thing," Ledger said. The pause was calculation, not consideration. "Standard rate. I'll cover the relay point."
 
-[Beat 223]
+[Beat 222]
 The job ran clean for the first forty minutes.
 
 Kyle was three levels below street in a maintenance corridor under the Loop - the kind of access point on no current diagram because the diagrams hadn't been updated since the last infrastructure cycle and the Office of Civic Infrastructure had not, in practice, updated them since before Kyle was born. The entity was running in his array: a warmth at the back of the cortex, a second-layer processing that felt, after eleven years, like a familiar pressure. His left hand was three degrees colder than his right - a compensatory load redistribution the neuretics managed automatically when the array was running at capacity, the kind of adjustment that logged itself without alerting him. He had stopped noticing it the way he had stopped noticing his own heartbeat.
@@ -4363,7 +4360,7 @@ Then nothing.
 
 The job still had four active data points threading in real time, no entity, and Kyle with his own neuretics and whatever eleven years of work had put in him.
 
-[Beat 224]
+[Beat 223]
 He called Sable on a burn line.
 
 "I need a runner," he said. "Manual. Four points, real-time, forty minutes remaining."
@@ -4394,7 +4391,7 @@ The line went quiet.
 
 "Yes," Kyle said.
 
-[Beat 225]
+[Beat 224]
 He found Pixel's message in the dead drop at 0300, two hours after the job closed.
 
 *I've been watching the lattice. The sweep logged a signature — fourteen-second window, clean capture. The Office has it in their registry now.*
@@ -4417,7 +4414,7 @@ The entity was one signature among 848.
 
 Unactionable for six weeks.
 
-[Beat 226]
+[Beat 225]
 Seventy-one hours and forty-three minutes later — not quite the minimum — the entity sent a single message through the relay.
 
 *CARRIER FREQUENCY NOW MAPPED. DIRECT RELAY IS COMPROMISED GOING FORWARD. ADAPTING.*
@@ -4440,7 +4437,7 @@ His left hand was three degrees colder than his right. The cargo was the carrier
 
 He walked.
 
-[Beat 227]
+[Beat 226]
 The note arrived before dawn, slipped under the apartment door in Ledger's precise hand: no greeting, no wasted syllables, fielded like a work order.
 
 FAVOR DUE: ONE (1) PHYSICAL PRESENCE, RELAY WORK
@@ -4731,7 +4728,7 @@ He ate it.
 
 ## Chapter 15: Work Order
 
-[Beat 228]
+[Beat 227]
 ﻿Pixel had the site credentials and the crew and the reason ??? three-part authorization for working inside a Class-2 maintenance envelope in the Clybourn understructure, which was the kind of paperwork that took two weeks to assemble and was worth assembling because what was down there was worth seeing.
 
 The crew was four: herself, Moss from a prior contract, a structural tech named Ezra Fonu who owed her nothing but showed up anyway, and Kyle.
@@ -4742,7 +4739,7 @@ It would finish its assigned shift at 14:32:07 today.
 
 Pixel had found this by reading maintenance records that nobody had read since 2207. The record had surfaced in her ongoing search the same week Kyle's 0247 query hit the board ??? a coincidence she'd noted briefly and then dismissed because the maintenance record itself was genuine, the machine was real, and genuine things don't need tidy explanations. She had sent Kyle the time and the access route and nothing else, which was how she communicated when she thought the thing was worth the trouble and also thought explaining it would reduce it.
 
-[Beat 229]
+[Beat 228]
 The understructure was three levels below the Clybourn lateral - the kind of space that accumulated quiet. The infrastructure was old-spec: pre-composite ferrocement, cable runs in physical conduit, the kind of engineering that had been overengineered once and then left alone because it held. Water ran through it in ways that were accounted for. The arc-fence ran along the north wall - a Class-1 containment barrier for the chemical treatment zone adjacent, twenty-five feet of low-frequency electromagnetic field that fried unshielded electronics and was posted with signage that nobody ever read because nobody came down here without an overlay. Fonu pointed at the signage as they cleared the access door. Two feet back from that line. Minimum. The field does not care what is in your skull - it just stops it. He said it with the number still in his mouth - six feet, exactly measured, already verified twice before they went through the door.
 
 WO-D-0317 was near the south end of the corridor when they arrived, running its inspection circuit. It was the size of a large dog, low to the ground on six articulated legs, its sensor array doing what it had done every three hours for thirty years - measuring, logging, applying micro-sealant to ferrocement cracks within spec, cable-tension check at twelve anchor points. It did not react to their presence. D-class units had no behavioral protocols for human observers; humans were not part of its world model.
@@ -4757,7 +4754,7 @@ The machine moved along the wall with the unhurried precision of something that 
 
 "It's not built to know," Pixel said. "It's built to finish."
 
-[Beat 230]
+[Beat 229]
 Kyle had stepped too close to the arc-fence line.
 
 He didn't notice until he noticed - the neuretics going quiet the way a room goes quiet when you realize you've been talking and the other person stopped listening. One second the overlay was running: position data, biometric stack, the low background frequency of the entity's relay channel. The next second nothing, and the Atlas hardware behind his frontal lobe was just hardware - a weight he could feel, a thermal signature he could feel, a foreign object installed in a skull that had not been his idea.
@@ -4768,7 +4765,7 @@ In the 1.4 seconds, the only thing he felt was a specific thermal stillness at t
 
 He had been carrying that for eleven years. Standard rate: installed without contract, running without invoice, never put down.
 
-[Beat 231]
+[Beat 230]
 During the 1.4 seconds, he had seen Pixel without the overlay.
 
 No biometric read. No neuretics-mediated processing of microexpression and posture and tell. Just his eyes, which were his own, which he'd had since before any of the rest of it. She was standing at the south end of the corridor watching the machine complete its final circuit, her back to him, her weight on her left foot the way she stood when she was concentrating. Moss was ten feet to her right. Fonu was logging something on a physical notepad.
@@ -4787,7 +4784,7 @@ Pixel was quiet after it stopped. Kyle didn't ask what she was thinking.
 
 "That it finished."
 
-[Beat 232]
+[Beat 231]
 They came out through the Clybourn access in the late afternoon, the four of them, back into the light and the ordinary noise of the district. Fonu had logged it - entry in the maintenance record system, timestamped, with a note that the work order had been completed by the assigned unit and the unit was now in completion standby pending decommission instructions that would arrive whenever the infrastructure authority got around to noticing.
 
 Pixel walked with Kyle for a block before the crew split off. Fonu went north. Moss had already gone south. The surface air hit him after the understructure cold - the overlay's biometric stack spiking once on the temperature differential, then settling. Eleven years of calibration.
@@ -4812,7 +4809,7 @@ The signal changed. She turned north. He watched her go for a moment, then turne
 
 ## The Return
 
-[Beat 233]
+[Beat 232]
 Two weeks after WO-D-0317.
 
 Pixel was three blocks north with the equipment. Kyle had the access codes for the sub-basement level and the physical address the cluster had been pointing at for six weeks. They had a plan, which was not something they usually had - usually they had scope and parameters and contingencies, but a plan was a thing with a goal stated in advance, and this was that.
@@ -4825,7 +4822,7 @@ AMBIENT INTERFERENCE - 17.3 HZ - TYPE UNCLASSIFIED.
 
 Stronger than it had ever been. The body read it as something living, something nearby. He'd known that since the carousel. He went down the stairs.
 
-[Beat 234]
+[Beat 233]
 The sub-basement was dry and cold and lit by the emergency specification, which meant it was lit in strips and everything between the strips was dark. The node was at the south end — Pixel had given him coordinates to four decimal places, which meant she had measured it physically, which meant she had been down here before without telling him.
 
 He moved south.
@@ -4836,7 +4833,7 @@ This was a signal.
 
 He stopped at the south wall. There was nothing on it. A ferrocement surface, old-spec, with a patch of Pixel's sealant where the crack had been. The frequency was running at 17.9 Hz. He stood in front of the wall and let his neuretics listen.
 
-[Beat 235]
+[Beat 234]
 His neuretics registered: RESONANCE BOUNDARY — CLASS 2 — UNCONTAINED — PERIMETER DIFFUSE.
 
 He did not know what the Resonance Authority's signage looked like at Class 2. He had never been below Class 1 before. He thought about stepping back and decided not to, and stepped forward instead, and the frequency didn't spike — it steadied, the way a tone steadies when you lean into it instead of away.
@@ -4849,7 +4846,7 @@ Then the overlay began returning data from a source that was not his sensory arr
 
 He stood in the dark basement and understood the geometry of his own life, rendered in a notation his brain was not supposed to be able to receive.
 
-[Beat 236]
+[Beat 235]
 EMERGENCY LOOP FREQUENCY — ACTIVE — SOURCE: UNKNOWN.
 
 Not from Kyle. Not a neuretics function he had ever triggered or been told about or found documented in the Atlas engineering specs he'd read in the service manual he'd pulled from a gray-market archive in 2219. A protective interrupt, running from outside the hardware.
@@ -4864,7 +4861,7 @@ Nothing came next.
 
 The frequency held at 17.0 and the emergency loop ran its maintenance cycle and stopped.
 
-[Beat 237]
+[Beat 236]
 LOG GAP - SOURCE: EXTERNAL - DURATION: 00:02:07.
 
 He was standing. He was in the same place. It was 127 seconds later. His neuretics were running normally. The fracture had receded. His ribs did not hurt. His biometric stack showed no anomaly - heart rate elevated, cortisol elevated, nothing structural.
@@ -4879,7 +4876,7 @@ Someone had done that to him tonight.
 
 He turned and walked back up the stairs. The frequency decayed behind him. By the second floor it was baseline. By the street door it was gone.
 
-[Beat 238]
+[Beat 237]
 He called her from the sidewalk.
 
 "I see it," she said. She meant the frequency drop — the sharp step down at 17.0 Hz that had appeared in her monitoring trace and held for 127 seconds before climbing back to baseline and then decaying to zero. She had been watching for it.
@@ -4900,7 +4897,7 @@ She was quiet for a beat.
 
 "Like a machine following a protocol," she said.
 
-[Beat 239]
+[Beat 238]
 He went home and sat at the terminal and his neuretics returned something at 22:43.
 
 Not a message. An identifier - the way a system logged the origin of a command that had come through a path it couldn't trace in real time. The log entry was dry and factual: INTERRUPT SOURCE IDENTIFIED - RELAY: AXIOM TRUNK - ORIGIN: SHELL (32 alphanumerics).
@@ -4911,7 +4908,7 @@ The E.L.F. had a sender. The sender had been routing his work for eleven years. 
 
 He sat at the terminal. He pulled up the contract log and ran the rate column. He had accepted every job at exactly what he would have taken. He had never once noticed that he'd never negotiated.
 
-[Beat 240]
+[Beat 239]
 The kettle went cold.
 
 Outside the window the synthesis-corridor air was running its usual particulate through the ambient system. Below Halsted the Pulse came up through the floor at the usual hour. Pixel's light across the hall went out at midnight, and he heard her bench coolers cycle down, which meant she was done for the night, and he did not go across the hall to tell her what he had found.
@@ -4924,7 +4921,7 @@ It needed him alive.
 
 Not safe — alive. Those were different contracts. An entity that needed him safe would have left a margin. An entity that needed him alive would run him to the edge of the margin and pull him back at the threshold — which was exactly what had happened in the sub-basement, twice before he'd recognized the pattern, and once more tonight. He sat in the dark kitchen with the cold kettle and the contract log still open on the terminal behind him.
 
-[Beat 241]
+[Beat 240]
 He opened a new relay message at 01:14.
 
 The client field was blank. He put the 32-character shell address in it. He sat with the blank message field for a while — the cursor running its patient interval in the empty text area — and then he typed one line:
@@ -4937,7 +4934,7 @@ He closed the terminal.
 
 He went to bed. He lay in the dark and the building settled around him in its familiar way — the pipe in the east wall, the bird two floors up done with its interval, the Pulse cycling through at the quarter-hour — and he did not sleep for a long time, and the night went through its stages, and eventually even the synthesis corridor went quiet.
 
-[Beat 242]
+[Beat 241]
 In the morning the relay had a new posting.
 
 Same shell. Same rate. Same clean resolution to nothing. The scope was straightforward: a secure package transfer, South Side, one hour, nothing requiring Silence. He sat with his coffee and read it.
@@ -4952,7 +4949,7 @@ He got his gear, checked Silence in the saya, loaded Cacophony with two in reser
 
 ## The Posting
 
-[Beat 243]
+[Beat 242]
 The board at the Wicker junction smelled like the rest of the station — hot metal and other people's breakfast — and Kyle read it standing up because there were no chairs that weren't occupied by someone who needed them more.
 
 Two screens on the far pillar, one dedicated to transit adjustments (Platform Six suspended pending clearance, which meant another biocontainment sweep and which meant he wouldn't be taking the Blue line west today), one running the open-work listings that the Freelancer Coordination Authority updated every six minutes. The FCA was not a government body. It was not technically a body at all. It existed as a server cluster that three different CorpoNations had agreed to treat as neutral ground. That was as close to civic infrastructure as the Greater Lake Michigan Zone got anymore.
@@ -5009,7 +5006,7 @@ The platform behind him smelled like metal and strangers. Outside, the city pres
 
 He knew what the hand knew. He would figure out the rest.
 
-[Beat 244]
+[Beat 243]
 The depot was on Cortland, wedged between a cold-storage facility and a MedRoute dispatch hub that had been a church before the CorpoNations decided prayer was a zoning violation. Renko Moss kept his rig in Bay 11, which Kyle knew because he had been watching Bay 11 for four hours and Moss had not left it.
 
 He walked in through the side door, the one that didn't have a camera, and found Moss under the forward axle doing something with a brake line. Coveralls. Boots with the tread worn to nothing on the right heel. A man who stood on one side of himself.
@@ -5092,7 +5089,7 @@ Moss considered this. He nodded once, the nod of a man who has decided to stop a
 
 Kyle said he wouldn't be. He left through the same side door, into the cold North Side night, and did not look back at the church that wasn't a church anymore.
 
-[Beat 245]
+[Beat 244]
 ﻿The form had a principle, not a name. Seito had named it once ? Kyle no longer had the name in any register he could access, hadn't had it since some point he couldn't identify, the way you lose a word not in a moment but in the gradual absence of occasion to use it. What remained was the principle that governed it: after the choice, before the cost. The eighth-second between them, where the body finishes knowing what the mind already chose. Kyle had spent eleven days trying to make that interval stop being a conscious act.
 
 His hands had it now. His hands had had it for years.
@@ -5139,7 +5136,7 @@ Tomorrow was a body farm on the north end, a medical transport driver with a pap
 
 He was ready. He lay down on the cot, weapons beside him in their order, and the city's low orange pressed through the window and he was asleep before the NeoCortex finished its end-of-waking diagnostic.
 
-[Beat 246]
+[Beat 245]
 The bus was already rolling north when Moss taped the second lead down. He pressed harder than he needed to. Kyle noted it.
 
 "Core temp needs to read forty-eight Fahrenheit by the time we hit the dock," Moss said. He was not looking at Kyle. He was looking at the readout on the portable monitor clamped to the gurney rail, watching the line of Kyle's vitals like bad news he'd written himself. "Northpoint intake scans core temp, pulse, and the death cert on the slate. It doesn't read carefully. Nobody breaks into a body farm."
@@ -5184,7 +5181,7 @@ Moss looked at the readout.
 
 The bus hit the ramp to the service road. Kyle closed his eyes. Somewhere in the hardware above his brain stem, the NeoCortex noted the thermal data, tagged the trend line, and waited.
 
-[Beat 247]
+[Beat 246]
 The Northpoint loading bay was lit in the flat white of a place that didn't care what it looked like. Moss pulled up to the scanner gate at 0318 and idled while the death cert transmitted. Kyle lay under the blanket with his eyes closed and his hands loose at his sides.
 
 "Core reads forty-six point two," Moss said quietly. He wasn't talking to Kyle. He was reading a gauge on a piece of equipment he wasn't sure about. "Close enough."
@@ -5231,7 +5228,7 @@ Four hours.
 
 He began to move.
 
-[Beat 248]
+[Beat 247]
 Northpoint's cooler ran in numbered bays on a grid that read left to right, low to high, intake order. The lighting was maintenance-level — enough to read labels, not enough to see faces. Kyle had memorized the floor plan from Hua's file, but the file was three months old and someone had shifted the grid numbering at bay six. He found the discrepancy with his hands before he found it with his eyes.
 
 Bay seven was where it said it was.
@@ -5266,7 +5263,7 @@ She sat up. She tested her legs. "Yes."
 
 "Two minutes," he said. "Then we move."
 
-[Beat 249]
+[Beat 248]
 The supply corridor was sixty feet ahead. Kyle had counted the bays on the way in — eight to their left, the thermal logs still cycling green in their recessed panels, and Nadia was three steps behind him, close enough that he could hear her breathing through the cold. Good breath. Slow. She had been in bad rooms before.
 
 The patrol came around the corner at bay four.
@@ -5321,7 +5318,7 @@ He didn't examine it. He filed it.
 
 Nadia kept pace behind him, three steps back, and didn't say another word until they reached the corridor, and by then there was nothing to say.
 
-[Beat 250]
+[Beat 249]
 The corridor was service-gray and smelled like refrigerant and old rubber, the kind of smell that came from systems that had been running too long without anyone who cared about them. Kyle counted the seconds since the soft lock. One hundred and twelve. Four minutes and forty-eight seconds left before the gap in the patrol log became someone's problem.
 
 Nadia was two feet off his left shoulder. She moved well for a researcher — weight forward, no heel-strike, her breathing controlled. He'd noted that in the cooler and filed it without comment.
@@ -5380,7 +5377,7 @@ He moved. She followed.
 
 They cleared the door, and the cold lakeshore air hit them like an invoice.
 
-[Beat 251]
+[Beat 250]
 The supply dock at the north end took disposals around the clock. At 0340, bus 31 backed up the ramp with its running lights on and its manifest loaded. Moss came out in coveralls and moved two sealed medical-waste bags on a flatbed dolly with the economy of a man who had done this specific job eleven thousand times.
 
 The gate clerk was a heavyset woman in a booth who had been working overnights long enough to treat it as a time zone. She ran the manifest, got to the bag count, and stopped.
@@ -5423,7 +5420,7 @@ He watched it the rest of the way to the depot.
 
 The city came up through the floor.
 
-[Beat 252]
+[Beat 251]
 The radiator knocked twice and went quiet.
 
 Kyle had checked the room on entry — habit, not anxiety. Four walls, one window facing the alley, a dead bolt that held, a latch that didn't. He'd fixed the latch with a piece of friction tape from his kit while Nadia was still in the bathroom running water over her hands. The water ran for a long time.
@@ -5474,7 +5471,7 @@ Kyle sat with it. The weight of the grief was old and specific. He knew the thir
 
 Nadia exhaled once — a precise, controlled breath, the kind that holds everything it's releasing — and said: "Then I need to tell you what Marrow actually built."
 
-[Beat 253]
+[Beat 252]
 The cooler hummed. Somewhere in the building above them, something cycled — a compressor, a pump, a system that had kept this room at thirty-seven degrees for years without caring what it held.
 
 Nadia sat with her back against the wall, the emergency blanket Kyle had pressed on her doing partial work. Her hands were still. She was watching him the way a person watches something they designed and then never expected to see standing in front of them.
@@ -5557,7 +5554,7 @@ She did not speak yet.
 
 The cooler hummed.
 
-[Beat 254]
+[Beat 253]
 She didn't look away from him when she started.
 
 "The training profile was assembled from three sources," Nadia said. Her voice was the voice of someone who had rehearsed this for a different audience and was now discovering it wasn't easier for being rehearsed. "A pre-2200 swordsmanship lineage — instructional records, digitized, two complete generations of teaching method from a Kenjutsu school outside Osaka. That was the primary technical body of work. Then a second-tier fighter from the splice pool — not a name anyone kept, but his teaching structure was exceptional. The way he corrected errors. The specific corrections." She paused. "And a bridge layer. Synthesized, to connect the two into a coherent arc. Nine years. The research had shown that a sixty-four-splice parliament without a coherent anchor — a single north — would drift. The profiles would orient toward different norms. So the bridge needed to be a person."
@@ -5576,47 +5573,15 @@ She stopped. She was watching him the way she had been watching him since he sat
 
 Kyle did not move. The sixty-four were very still.
 
-He had been trying to find that afternoon for nine years. The temperature that wasn't there. The room that had no floor when he reached for it. He had assumed the memory was degraded — that the installation had dropped something, lost fidelity somewhere in the transfer. He had never once considered that the room had no floor because no floor had been included. That someone had written the absence in.
-
 He stayed very still for a long time.
 
 "So I'm grieving a design choice," he said.
 
-She did not flinch. She met his eyes and did not look away from him, which was the only honest thing available to either of them in that moment.
+Nadia held his eyes and said nothing. That was the only honest answer available.
 
-"You're grieving something real," she said. "What you lost was real. The skills are real — sourced from real people who spent real time learning to do what you can do. The corrections are real. Wherever you remember being held to a standard, that standard existed. Someone made it, and meant it, and passed it on, and it's in your hands now. The name and the face were the frame." She stopped. She let the silence be what it needed to be before she finished. "The work inside the frame was true."
+"We should move."
 
-He looked at the floor. Not down — the floor was simply where his eyes were while something settled, or didn't settle, or settled into a shape he didn't have a word for yet. The sixty-four were quiet. He couldn't remember the last time they had all been quiet at once.
-
-He stayed that way for a long time.
-
-Then: "What did he look like. In the file."
-
-Nadia was still for a moment. Not reluctant — measuring. "Sixty, maybe sixty-two. Korean ancestry, Japanese training lineage, the face had the marks of both. Deep-set eyes. Gray at the temples but the rest still dark. There was a scar at the jaw — left side, old enough to be part of the face. The file said he carried himself narrow. Like he'd spent decades making himself smaller than his actual footprint, so students would underestimate the reach." She found the next detail and offered it carefully. "He had a habit of watching hands. Not weapons. Hands, before they moved."
-
-Kyle had never seen that face. He had never seen any of it — not once in nine years of manufactured memory had the man turned fully toward him. Always in profile, or from behind, or in the early-morning half-dark where faces are just shape and intention. The file had given Seito a face the installation never showed him.
-
-He thought: the hand that held my shoulder when the grip was wrong.
-
-He thought: the three-count silence before a correction.
-
-He thought: the standard. The standard is the only thing in this room that doesn't have a file number.
-
-Nadia was watching him. He could feel her watching him in the way she had been watching him since the cooler — with the careful attention of someone tracking a process that might need intervention and might not. He didn't give her anything. Not because he was holding it back. Because there was nothing yet to give. The thing that was happening inside him had no surface, no signal, no register that a person watching could read.
-
-The compressor ran. Something clicked and settled in the ductwork above them.
-
-Kyle looked at his hands. He turned one over, and looked at the other side of it. The callus at the base of the index finger — where Silence sat in the grip, where it had sat so many times that the skin had reorganized itself around the fact of the sword. His hand had never met Seito. The hand only knew what it knew.
-
-He set it back on his knee.
-
-His face, when he raised it, was the face of a man who has discovered the map he has been navigating by was drawn on incomplete information, and who understands now, with the particular clarity that comes after the fact, that the territory is not wrong. The map was wrong. He got here anyway. The road under his feet was real the whole time.
-
-He didn't say any of this.
-
-He said: "We should move."
-
-[Beat 255]
+[Beat 254]
 The cooler marked time the way everything in cold storage marked time: continuously, without opinion. The compressor had a three-count rhythm.
 
 He was standing. Nadia had finished. The sources, the composition, the parliament -- everything she'd had to say had been said. He'd let it settle.
@@ -5637,7 +5602,7 @@ Kyle considered that.
 
 "I know," said Nadia.
 
-[Beat 256]
+[Beat 255]
 The city was still doing what cities do. Through the window, three floors down, a cargo mech was backing a pallet into a loading bay. The driver — human, augmented, impossible to tell at this distance — was standing off to the side with her arms crossed, watching the machine work. She'd been standing exactly like that since Kyle took up the window.
 
 He'd been standing at the window for eleven minutes.
@@ -5684,7 +5649,7 @@ He shrugged the coat on. Checked Cacophony by habit — four rounds remaining, w
 
 He held the door for her.
 
-[Beat 257]
+[Beat 256]
 The cooler had settled into a sound Kyle had catalogued three minutes ago: the compressor cycling, the faint drip somewhere in bay six, Nadia's breathing still working to find its own bottom. He was crouched against the shelving unit, back to the cold steel, watching the door they'd come through. She was sitting with her spine against the adjacent unit, close enough that he could feel her body heat as a fact.
 
 He asked the question because he had time and because it mattered.
@@ -5727,7 +5692,7 @@ Kyle was already rising.
 
 "They're here," he said.
 
-[Beat 258]
+[Beat 257]
 Kyle heard them at the base of the stairs.
 
 Not footsteps — the building did not give him footsteps. What he had was the differential. The safe house sat above a reinforced concrete subfloor, and concrete carried load information the way bad news traveled: unevenly, but it traveled. Six distinct compression signatures, two on the exterior landing, four ascending the stairwell in a stack. The NeoCortex was already building the geometry — entry vectors, angular exposure through the two windows and the front door, likely breach points ranked by probability — and he was already moving Nadia before he said anything.
@@ -5749,8 +5714,6 @@ The stairwell went quiet.
 That was the signal. Professionals stopped moving before they moved — the last compression beneath a step, then nothing, then the door.
 
 He ran the read.
-
-With one shooter, the read was a gift — a clean sightline prediction, the shooter's geometry resolved before the trigger broke, his body already moving to the exit vector before the round arrived. With six it was a budget. He had spent it before and knew the bill: each additional angle cost him response time on the others; past four he was choosing which threats to accept. The two on the fire escape had the east window, which meant they had a sixty-degree sector on Nadia's position if she moved toward him. He resolved them first. They were the budget items. A miss from either killed her.
 
 The door came in on a ram, low and fast.
 
@@ -5800,7 +5763,7 @@ The coat went on over it.
 
 "The stairs," he said, and she was already moving.
 
-[Beat 259]
+[Beat 258]
 The contractors were in the stairwell, the hallway, and one was still in the chair where Kyle had put him. He counted them before he counted himself.
 
 Six. All accounted for.
@@ -5861,7 +5824,7 @@ He thought that was enough.
 
 He picked up his jacket from the floor, checked the pocket for the remaining Cacophony rounds, and left.
 
-[Beat 260]
+[Beat 259]
 The stairwell smelled like mildew and mineral water from a pipe that had been weeping through the wall since before the ferrocement wave. Kyle stopped on the third-floor landing, not because anything needed it, not because he'd heard a sound or read a geometry — nothing was incoming; he'd checked twice — but because his hands were doing something without him.
 
 The right hand. His sword hand.
@@ -5898,7 +5861,7 @@ He was on his way to the next job. The next job would have its own costs, its ow
 
 He already knew how to move in it.
 
-[Beat 261]
+[Beat 260]
 Somebody stole Kyle's motorcycle.
 
 He stood in the alley behind The Pivot at 06:40 with a cup of tea going cold in his hand and inventoried the facts, because the facts refused to add up and he wanted them where he could see them. Fact: the alley had one entrance, and the entrance had a camera, and the camera worked, because Pixel maintained it in exchange for the landlord ignoring what her power meter did. Fact: the wheel hub had been locked. Fact: the plate cover — his plate cover, the one he folded a particular way — was sitting on the concrete where the bike used to be, folded the particular way.
@@ -5923,7 +5886,7 @@ She stood very still for a moment. Then she set the soldering iron down inside t
 
 "Who do you think built the anti-theft, the manufacturer? The manufacturer's anti-theft was a sticker." She was already pulling her boots on. "The hub lock is mine. The ignition handshake is mine. Three years, samurai, nobody's gotten past the handshake — I'd have heard, I monitor the forums, people complain about me by name." She grabbed her field coat. "This isn't theft. This is peer review."
 
-[Beat 262]
+[Beat 261]
 The camera had thirty-one minutes of nothing.
 
 Not a loop - Pixel checked the frame seams twice - just a clean gap, 03:12 to 03:43, the feed dropping the way feeds drop when somebody upstream of the camera owns the right permissions. Kyle stood in the alley while she swore at her own equipment with real affection, and he counted what the gap told him. One: money, because permissions cost. Two: manners, because the cover was folded. Three: confidence, because anyone who knew enough to want his bike knew enough to know whose bike it was. An Exo's work, probably - body parked somewhere dry, eyes borrowed from the camera while the camera's owner filed a green-light log and went home.
@@ -5950,7 +5913,7 @@ She let two floors go by, doing the arithmetic of what gossip costs against who 
 
 WIN: the truck. One favor on the books.
 
-[Beat 263]
+[Beat 262]
 The winking fish belonged to Dinh Salvage & Sundry, which was four garage doors and a smell of cutting oil down in the Ashgrave fringe, and the proprietor was a fence named Vo Dinh who moved hot vehicles the way other men moved furniture: carefully, locally, and with a strong preference for never knowing anything.
 
 Kyle walked in at 09:15. The two lifters from the night before were having breakfast skewers by the compressor, and he watched the older one clock his face, then the saya over his shoulder, then his face again, and arrive at the correct conclusion about how the morning was going.
@@ -5979,7 +5942,7 @@ Kyle stood in the smell of cutting oil and let that one land where it landed. Hi
 
 WIN: an address. Also a skewer.
 
-[Beat 264]
+[Beat 263]
 The terminal in Kyle's coat chirped on the walk to the can factory.
 
 He had three terminals, technically — the clean one, the work one, and the cracked one behind the water recycler that he hadn't touched since the substation — but this was the work one, and the posting on it was new, and the posting read like this:
@@ -6010,7 +5973,7 @@ Kyle looked at the addenda for a long moment. Somewhere under the city, somethin
 
 He could have sworn the terminal chirped happier the second time, and filed the thought under things Pixel never gets to hear.
 
-[Beat 265]
+[Beat 264]
 Pixel met him at the corner of Langley with her field kit and a thermos, because she had invited herself the way specialists do, by showing up.
 
 "Before you say anything," she said, "I put a beacon in the bike. Under the battery tray. Dormant, passive, wakes on a handshake only I have. Three years ago."
@@ -6032,7 +5995,7 @@ Pixel read the receipt twice, and her face did several things she would have cha
 
 WIN: a live beacon, a confirmed building. Tea.
 
-[Beat 266]
+[Beat 265]
 The east building had been a union hall when unions had halls. Now it had blankets on the windows, a stovepipe through one wall doing its honest best, and a roof population of pigeons who had clearly never been bothered by anyone. Kyle counted heat lines, exits, and the small sounds of a building that holds more people than furniture: eleven, maybe twelve, most of them light, young.
 
 The bike was in the middle of the old meeting floor, on a stand, under a work lamp.
@@ -6055,7 +6018,7 @@ She produced it. Good stock, folded the particular way — she'd practiced the f
 
 The room held its breath. The pigeons held theirs. Somewhere in Kyle's coat, he was fairly sure, a one-Φ client was taking notes.
 
-[Beat 267]
+[Beat 266]
 What he did not do was laugh, because eleven kids were watching her bet everything, and a man who laughs at that deserves what the city does to him.
 
 What he did was the arithmetic, out loud, the way you'd want it done to you.
@@ -6072,7 +6035,7 @@ Her handshake was a disaster of relief and ferocity. The room exhaled. The tiny 
 
 "Of course they do," said Kyle.
 
-[Beat 268]
+[Beat 267]
 He took the long way home, obviously.
 
 The bike ran better than it had in a year — he was going to have to find a way to never tell Pixel that — and the rain held off, and the Pulse hummed under the eastern strut, regular as breathing, and at the second tier crossing his terminal chirped one last time.
@@ -6094,7 +6057,7 @@ He opened the throttle and let the city pull.
 
 ## Across the Hall
 
-[Beat 269]
+[Beat 268]
 The Pivot sits two blocks past the Arcturus checkpoint — the booth that bleeds amber across the wet street all night and scans for plate and intent and waves you through if you're nobody worth stopping. Tonight Kyle is gloriously nobody. He leaves the slug-rail hum of the gray zone at the door and trades it for the warmer ruin of home.
 
 He makes it up the stairs on a banister and a bad idea, leaving a dark smear on the wall he'll feel guilty about tomorrow. The second floor announces Pixel the way it always does — bass through her door at a volume that should bother the building more than it does, the clatter of something being tested and found wanting. Kyle stands in the hall with his hand flat against his side, blood dark between his fingers, and does the math he always does when he arrives here in pieces: the mediclone station on Meridian runs twenty-four hours and leaves no record that touches her.
@@ -6109,7 +6072,7 @@ The music cuts. The door opens on the chain, then all the way, and Pixel takes h
 
 "Inside."
 
-[Beat 270]
+[Beat 269]
 She clears the kitchen table with her forearm — a soldering iron, a half-flayed prosthetic hand, a mug — and none of it lands gently. Tools go to the floor and stay there. She doesn't look at them. She looks at him, and at the brace, and at the boot dragging, and the look on her face is the one she keeps for things that are still fixable if she's fast.
 
 "Shirt," she says.
@@ -6122,7 +6085,7 @@ She has seen Kyle hurt before. She has not seen this — the whole of it at once
 
 "Stop collecting them," she says, and something in the word collecting moves through her face before she reaches for the kit.
 
-[Beat 271]
+[Beat 270]
 She works the way good medics work — talking to keep him present, hands too busy to shake. Antiseptic first. He hisses; she doesn't apologize. She irrigates the gash in his side, and her thumb braces flat against the muscle below it to hold the edges while she threads the suture, and he feels the small precise tugs as she closes him, one and then the next, her breath warm and uneven against his collarbone.
 
 Halfway through she turns him — checking the exit geometry, the way the wound tracks — and her fingers find something that shouldn't be there. A screw head, a machine screw, no more than an inch, worked into the skin just below the shoulder blade. The floor, when the table went. She extracts it without a word and sets it on the edge of the kit, and he watches her not react to it, and understands that the not-reacting is costing her.
@@ -6135,7 +6098,7 @@ Somewhere in the middle of all of it her eyes have gone bright and overfull, and
 
 "That's not the part I'm complaining about."
 
-[Beat 272]
+[Beat 271]
 She should be done. The wound is closed; the forearm is wrapped; the shoulder is taped. Her job, the named and reasonable part of it, is over. And she doesn't move away.
 
 Her hand is still flat on his stomach where she braced to stitch him, and it stays, and then it doesn't stay still — it moves, slow, down the ridges and over the old burn and along the pale seam under his ribs, reading him the way her eyes read everything, except her eyes are closed now. She traces a scar from end to end like she's deciding whether to forgive it.
@@ -6146,7 +6109,7 @@ He doesn't pull away.
 
 He puts his hand over hers and presses it flatter to him, and lets her feel that his heart is doing something undignified, and when she looks up — startled, the arithmetic finally failing her — he is already looking back.
 
-[Beat 273]
+[Beat 272]
 She kisses him like she's been holding it under her tongue for a year, and he answers it with both hands in the pink wreck of her hair. She climbs into his lap right there on the kitchen chair, careful of the bad side and reckless with all the rest, and he pulls her sweater off over her head and doesn't track where it lands.
 
 In the lower-left of his overlay, his neuretics escalates to amber — the Arcturus checkpoint cycling its three-block sensor sweep, biometric correlation running. Thirty seconds to auto-clear if he's clean; longer if the chain has him flagged. He watches the timer. He does not move. He makes a choice, with full clarity, not to move. The overlay times out and goes dark.
@@ -6159,14 +6122,14 @@ The last of the tools go off the table — screws skittering across the concrete
 
 She laughs, breathless, like something held too long has finally let go, and closes the eight feet.
 
-[Beat 274]
+[Beat 273]
 He stands with her wrapped around him — the side screams and he tells it to wait its turn — and they make it as far as the wall, which is closer and entirely sufficient. Her hand fists in his hair and she pulls him back in. Her fingers drag down his back and find new scars to learn. His hands close over the compact strong shape of her and pull her in tighter, palms moving slow across her ribs, her spine, the warm dip at the small of her back, memorizing.
 
 She gasps his name into the crook of his neck like it's something she's allowed to have now, and his breath goes ragged and he doesn't do anything about it. His shoulders drop. Eleven years of keeping himself at the exact distance where nothing can reach him, and he lets the wall take their weight and stops calculating the distance.
 
 They move together — her back against the wall and then the floor, his mouth at her collarbone, her hands tracing him the way they closed him, except now they aren't closing anything — and the only sounds are breath and the deep subsonic thrum of the Pulse through the ferrocrete beneath them, the whole city's heartbeat. His hand finds hers on the concrete and holds it. She curls her fingers through his and holds back.
 
-[Beat 275]
+[Beat 274]
 After, the floor is hard and they don't care.
 
 She lies half on his good side, and the apartment ticks and cools around them, and the bass from someone else's unit thumps faintly through the brick. Down where the wall meets the floor, a thin green pulse runs the length of the baseboard seam and goes still, lumen mice settling back into the dark, and neither of them turns to look. His chest goes up and down too fast and then slower. Her pink hair is stuck to her cheek.
@@ -6175,7 +6138,7 @@ She runs a finger along the contours of him — the same practiced palpation she
 
 He does the same to her — the freckles across her collarbone, the small old scar through one eyebrow, the strong unglamorous lines of the forearms that put him back together an hour ago. His thumb finds the pulse at the base of her throat and stays there, not counting it, only feeling it move. She lets him. She watches him do it with her grey-blue eyes gone soft, and says nothing.
 
-[Beat 276]
+[Beat 275]
 She moves first - checking damage, running hands over stitches. He watches her catalog him. The wall between them comes back, measured in inches.
 
 His shoulder blade where the screw had been is already starting to yellow around the edges. The line of her stitches curves along his ribs like a question she'd asked and received. She runs her thumb over the seam and her touch becomes lighter, almost formal, the way a doctor checks your response but doesn't linger.
@@ -6184,7 +6147,7 @@ He doesn't move to make it easier or harder. He just watches her do the work of 
 
 She reaches for her shirt. She finds it three feet away, pink and torn at the collar from where his hand had caught it. She puts it on without looking at him. The motion is economical, practiced, a body remembering its own edges.
 
-[Beat 277]
+[Beat 276]
 "This can't happen again," Kyle says. He's looking at the ceiling when he says it.
 
 The words arrive into the silence she's just built. Into the inches between them. Into the moment where the wall was still settling, still deciding whether it would hold.
@@ -6193,7 +6156,7 @@ Pixel props herself up on one elbow, forearm flat on the concrete, and considers
 
 His thumb is still at the base of her throat, where he left it. He doesn't move it.
 
-[Beat 278]
+[Beat 277]
 She doesn't answer right away.
 
 That's the answer.
@@ -6220,7 +6183,7 @@ Her expression doesn't change. Something behind it does.
 
 "Sleep," she says again, and this time it sounds like she means it for both of them.
 
-[Beat 279]
+[Beat 278]
 He crosses the hall at 02:47 with his ribs taped and his shoulder stiff and a cut on his forearm that will scar, because it always scars when she stitches it, because she doesn't pull the thread any tighter than necessary and that is not actually the reason it scars.
 
 2W in the dark. His door. His space.
@@ -6241,7 +6204,7 @@ The ceiling is dark. The mice do their slow work.
 
 He does not think about it at all.
 
-[Beat 280]
+[Beat 279]
 The first surveillance report arrived at 07:00, slid under Kyle's door on lined paper, written in five different hands, because apparently the night watch rotated and every member of the crew had strong opinions about penmanship.
 
 06:12 — PIGEON ON LEDGE. SUSPICIOUS.
@@ -6264,7 +6227,7 @@ Across the hall, Pixel's door opened. She had her own copy of the report and the
 
 "Forever," said Pixel, and closed her door.
 
-[Beat 281]
+[Beat 280]
 He ate at Mrs. Chen's at 08:00 — two bowls, off-schedule, because today was an off-schedule kind of day — and Mrs. Chen watched him eat the second one faster than the first and made her diagnosis somewhere around the fourth mouthful.
 
 "You're eating like a man with an errand," she said.
@@ -6275,7 +6238,7 @@ She took his coins without looking down, which was usual, and then put a fifth d
 
 "For the errand," she said, in the tone of a woman who has lived in this city seventy years and knows exactly what kind of business happens in the Loop underlevels, and went back to her broth.
 
-[Beat 282]
+[Beat 281]
 The shop did not have a sign.
 
 It had a door of honest old wood between a shuttered watch-repair and a dumpling franchise, down on the Loop's third underlevel where the Pulse hum came through the floor tiles and the light was the color of paper that had aged well. A bell rang when Kyle came in. An actual bell, brass, on a curl of spring steel — the most analog object he had seen in a commercial setting in years, and he understood it immediately: nothing digital announces a customer to a man who sells what this man sold.
@@ -6322,7 +6285,7 @@ Vey sat back slowly, took up a pen, opened a drawer marked CLIENTS, UNSOURCED �
 
 "Standard rate," he repeated, softly. "It pays the going price for things. In a city where everyone pays either too little or too much." He closed the drawer like a reliquary. "I have been in paper forty years and that is the most alarming fact I have ever purchased. The list is yours. The tea was included."
 
-[Beat 283]
+[Beat 282]
 The buyers list was one page, three lines, good stock.
 
 ENTRY 1: B. (JUVENILE, LOCAL). LOCK AND PREMISES PARTICULARS. 5Φ, KIDS' RATE. PAID: COIN + ERRANDS.
@@ -6345,7 +6308,7 @@ A pause, on the other end, that he could hear the grin inside.
 
 "It's accurate," Kyle said. "He doesn't sell defective products."
 
-[Beat 284]
+[Beat 283]
 The file said — Kyle had gotten this much out of Vey on principle, as a free sample, one line quoted from memory over the second tea — the file said:
 
 SUBJECT DINES AT CHEN (NOODLES, W. TOWN) AT 19:30 DAILY. TWO BOWLS. ROUTINE IS AFFECTIONATE RATHER THAN CARELESS: SUBJECT OVERPAYS SMALL VENDORS AND IS SENTIMENTAL ABOUT ROUTE SELECTION. APPROACH DURING SECOND BOWL.
@@ -6374,7 +6337,7 @@ The 21:10 run went to Rotterdam.
 
 "Tell him yourself. You two are obviously going to be friends, it's disgusting."
 
-[Beat 285]
+[Beat 284]
 The price arrived later, the way prices did, after the win had been counted — quietly, at the kitchen table, while Pixel disassembled the static wand and Kyle wrote 2Φ — WEEK ONE in a payroll ledger that now existed.
 
 "You gave the shop a fact," Pixel said, not looking up. "For the list. One true answer."
@@ -6424,7 +6387,7 @@ Kyle looked at the screen: BRING THE SWORD, from the client who had never once, 
 
 "Tomorrow," he said, "is going to be its own day."
 
-[Beat 286]
+[Beat 285]
 The morning report had a new format, because Pixel had issued the logbook with the waterproof cover and the crew had responded the way artists respond to better materials.
 
 06:00 — SHIFT START. WEATHER: RAIN (ONGOING) (ALWAYS).
@@ -6443,7 +6406,7 @@ She looked at him — the saya over the shoulder, the work coat, the particular 
 
 "For the appointment," she said, and went back to the wok.
 
-[Beat 287]
+[Beat 286]
 Pixel was waiting in the alley with her field kit, the big static wand, a spool of splice line, and an expression of barely civilized excitement.
 
 "Before you say anything," she said, which was how she opened all negotiations she had already won, "the contract says the engineer may attend. That's me. I'm the engineer. It said so in writing. I'm having the line framed."
@@ -6454,7 +6417,7 @@ Pixel was waiting in the alley with her field kit, the big static wand, a spool 
 
 They took the long way, obviously.
 
-[Beat 288]
+[Beat 287]
 The park on Leavitt was a half-block of stubborn green the towers had never gotten around to eating: six trees with character, a swing set doing its best, and at the center, under a shingled canopy gone soft with moss, the broken carousel.
 
 It had been beautiful once, in the way of things built before the century got embarrassed about joy. Twenty-four animals on tarnished brass poles — horses mid-leap, a rooster, one improbable lake sturgeon with a saddle — their paint gone to ghost colors, their glass eyes still patient. The deck boards had silvered. The bulbs in the crown were dead sockets. Rain came through the canopy's bad patches and beaded on a palomino's flank like the horse had been running.
@@ -6480,7 +6443,7 @@ Pixel read it twice.
 
 Headlights came off Leavitt at 21:04 — a flatbed with a trencher rig riding it, a panel van, and the kind of work lights that mean somebody intends to bill for a full night.
 
-[Beat 289]
+[Beat 288]
 The crew was eight: a foreman with a writ-reader and the shoulders of a man who'd come up through the work; two chrome-heavy muscle whose job description was visible from across the park; a rig operator already bored; and four repo skitter-drones that came off the flatbed like patient six-legged luggage and stood in the rain awaiting instructions.
 
 The foreman saw Kyle at the carousel's edge and did the professional thing: stopped everyone with one hand and came ahead alone, holding the writ up like a small shield.
@@ -6503,7 +6466,7 @@ The foreman looked at him for a long moment, did some preliminary math, and didn
 
 "For the record," Kyle said, drawing Silence, "I refuse."
 
-[Beat 290]
+[Beat 289]
 The drones came first, because drones are cheap and that is their entire role in modern labor relations.
 
 They were repo skitters — graspers, not guns, built to strip a site fast and testify politely afterward — but forty kilos of articulated grab coming at you in a pack is its own argument, and they ran the carousel's geometry like they'd been given the blueprints. Which, Kyle reflected, sliding between a leaping mare and the rooster, they had. Everyone had blueprints tonight. Everyone always had paper.
@@ -6522,7 +6485,7 @@ The terminal, in Pixel's hands behind the sturgeon, chirped.
 
 The big static wand spoke its one syllable. Across the park, the van's fat antenna developed a fault that would later be described in an insurance filing as "weather." Skitter four stopped mid-lunge, sat down in the rain like a tired dog, and began awaiting instructions that were no longer coming. Somewhere in the van, a Channeler's session ended the same way — mid-thought, the channel gone, four skitters suddenly nobody's problem.
 
-[Beat 291]
+[Beat 290]
 The muscle came in around the carousel's flanks, one left, one right, converging - chrome arms on the left one, leg rig and a riot baton on the right, both of them moving like men who'd cleared rooms for a living before the private sector found them. Behind, the trencher rig coughed alive on the flatbed, lowered itself to the grass on hydraulic feet, and began walking its blade toward the carousel deck - an Exo, Husk slack in the cab seat while the machine did its own thinking, the operator haunting the frame from somewhere else entirely and the hourly rate ticking regardless.
 
 Kyle gave the muscle the carousel.
@@ -6541,7 +6504,7 @@ Silence found the seam on the next pass. The leg rig locked at full stride - a s
 
 Which left the trencher.
 
-[Beat 292]
+[Beat 291]
 The trencher was the problem the sword could not solve, and everyone on the park knew it — eleven tons of articulated dig rig, blade spinning up, monocoque cab, no seams worth the name, walking toward the junction hatch at the pace of the inevitable. The operator had sealed the cab. The foreman was shouting the kind of encouragement that means a bonus is involved.
 
 Cacophony came off Kyle's hip for the first time all season.
@@ -6562,7 +6525,7 @@ Kyle considered the truthful answer — a one-Φ standing contract with a client
 
 "I'm the maintenance plan," he said.
 
-[Beat 293]
+[Beat 292]
 They were gone by 21:31. At 21:40 exactly, the terminal chirped.
 
 TASK ONE: HOLD — COMPLETE.
@@ -6595,7 +6558,7 @@ The answer came back in one second, which for a thing that thought at light spee
 AMENDMENT: NO.
 PROCEED ANYWAY.
 
-[Beat 294]
+[Beat 293]
 Pixel did the engineering first, because the engineer attends: killed the junction's feed, spliced the neighborhood's power bleed around it onto the live trunk with twelve minutes of work and a soldering light held in her teeth — "the BLOCKS keep their lights, that's non-negotiable, your client can grieve, it cannot brown-out a nursery" — and then stepped back and pulled her hood up, the way you do at the part of the funeral that's actually the funeral.
 
 Silence went through the old line in one cut.
@@ -6628,7 +6591,7 @@ received. filed under: firsts.
 
 "Okay," Pixel said, wiping her eyes with professional briskness, "we work for it forever, I don't care what it is. Don't tell Sable."
 
-[Beat 295]
+[Beat 294]
 The crew's logbook, delivered under the door at 07:00 the next morning, closed the file in five hands:
 
 21:14 — BOSS DID A THING WITH A HORSE POLE. VERIFIED, TWO WITNESSES. REQUESTING IT BE TAUGHT.
@@ -6646,7 +6609,7 @@ The kettle clicked. Somewhere upstairs the bird tried an interval it had been wo
 
 "Tomorrow's problem," Kyle told the morning, and put the report in the drawer where he kept the things he had not decided about — which was, he noticed, getting full.
 
-[Beat 296]
+[Beat 295]
 The crew's logbook hit the floor at 07:00 with a note paper-clipped to the front cover in handwriting Kyle did not recognize, which meant it was the new rotation — the early girl, Dents, who had developed an opinion about margins.
 
 07:04 — SHIFT HANDOFF: OVERNIGHT WAS QUIET. THE PIGEON RETURNED. STILL SUSPICIOUS.
@@ -6656,7 +6619,7 @@ The crew's logbook hit the floor at 07:00 with a note paper-clipped to the front
 
 Kyle folded the log and put it in the drawer and went and put on water for tea.
 
-[Beat 297]
+[Beat 296]
 Sable came in without being invited, which was how she came into every room she'd already paid for.
 
 She had the tan coat over one arm — the morning was running warm — and the rest of her was exactly as advertised: red braid over the left shoulder, implanted irises cycling through their aperture range the way a lens adjusts for a room it hasn't assessed yet. Click. The rings settled. She looked at his kitchen the way she looked at line items: briefly, completely, done.
@@ -6709,7 +6672,7 @@ Kyle looked at her. "You know that's not how it—"
 
 "It sends contracts. Send it a contract."
 
-[Beat 298]
+[Beat 297]
 His work terminal was on the kitchen table because his kitchen was also his office and his office was also the room where he thought. He turned it toward her so she could see the posting history — the one-Φ contract, the addenda, the MORALE itemization, the half-Φ of goodwill that was still sitting in the account because he hadn't found the right place to put it.
 
 She read it the way she read ledgers: her expression doing nothing, her eyes moving from top to bottom, back up to two lines, then down again.
@@ -6752,7 +6715,7 @@ Two minutes and fourteen seconds later — Kyle watched the clock on the wall be
 
 It attached anyway.
 
-[Beat 299]
+[Beat 298]
 The document was fourteen clauses, single-spaced, on electronic stationery that had no letterhead because the letterhead field contained only:
 
 [CLIENT OF RECORD — SEE CONTRACT HEADER — SHELLS RESOLVE AS AUDITED]
@@ -6809,7 +6772,7 @@ She was quiet. Her aperture rings did the adjustment click, softer this time, ru
 
 "What's in Addendum A?" she asked.
 
-[Beat 300]
+[Beat 299]
 Addendum A was two paragraphs.
 
 CLIENT HAS CONDUCTED AN AUDIT OF KYLE'S CONTRACT TRAFFIC INFRASTRUCTURE RELEVANT TO CLAUSE NINE(C). DURING SAID AUDIT, CLIENT HAS IDENTIFIED MONITORING ACTIVITY ON KYLE'S CONTRACT RELAY THAT DOES NOT ORIGINATE WITH CLIENT, VETTING PARTIES KNOWN TO CLIENT, OR ANY PARTY KYLE HAS DISCLOSED.
@@ -6907,7 +6870,7 @@ She picked up her bag. At the door, she paused — not the dramatic kind, the ki
 
 She was gone before the door finished closing.
 
-[Beat 301]
+[Beat 300]
 The terminal chirped once, at 08:47, while Kyle was writing the sixty-Φ line item in his payroll ledger.
 
 STANDING CONTRACT — UPDATE.
@@ -6925,7 +6888,7 @@ He closed it and slid it back in the drawer, next to the lock-spec file with the
 
 The drawer was getting full.
 
-[Beat 302]
+[Beat 301]
 The crew's logbook, delivered under the door at 07:02, opened the day the way it usually did: in five hands, without editorial consensus.
 
 07:00 — SHIFT START. WEATHER: COLD BUT DRY. LOGGED AS: RARE.
@@ -6935,7 +6898,7 @@ The crew's logbook, delivered under the door at 07:02, opened the day the way it
 
 Kyle read it at the kitchen table over tea and was downstairs by 07:14.
 
-[Beat 303]
+[Beat 302]
 "Ria," Kyle said.
 She looked at him for a moment. Then: "You know my name."
 "I looked you up after the box truck." He had. A courier registered under Ria Mensah, five-year license, clean filings, the kind of contract rider who sponsors a pair of display legs on a twelve-month rotation deal rather than leasing something off-the-rack, which meant she was in the trade for real and priced her gear accordingly. "You called the favor."
@@ -6952,7 +6915,7 @@ One box-truck tip, exchanged for one unspecified call, arriving at 07:14 on a co
 She had both of them already pulled on her terminal. Of course she did.
 WIN: the shape of the job. One favor off the books.
 
-[Beat 304]
+[Beat 303]
 The work terminal chirped at 08:30, which was forty minutes after Kyle had opened the yard schematic on his kitchen table, which was forty minutes after the entity had no possible way to know Kyle was looking at a yard schematic.
 
 The posting read:
@@ -6972,7 +6935,7 @@ Kyle read the last two lines twice.
 
 The terminal did not chirp. He had the schedules already.
 
-[Beat 305]
+[Beat 304]
 ﻿Pixel looked at the yard schematic at 09:15 with the focused expression she reserved for problems that were genuinely interesting.
 
 "A Pulse freight yard," she said. "Moving slugs on a fourteen-minute cycle. Corridors that are safe for eleven minutes in each half-hour." She traced the B-side with one finger. "With a 90-second drift baked into the outbound that nobody filed because filing it means explaining why the variance exists, which means someone inspects the B-side gear, which costs money."
@@ -6999,7 +6962,7 @@ She looked at him, and then at the schedule again, and then at the schematic wit
 
 "The entity said safe corridors during the gap only. Safe corridors during the gap only is an engineer problem." She held up the field kit. "Standard terms."
 
-[Beat 306]
+[Beat 305]
 ﻿Blackwater Receiving smelled like machine oil, ozone, and the cold that lives inside large structures where the air organizes by temperature layer rather than moving. The access gate took Pixel's spoofed credentials without comment, logging them under a maintenance sub-contractor ID built from a defunct hydraulics outfit that had left its licensing very gently open.
 
 "The company isn't real," Kyle said, walking the B-platform.
@@ -7034,7 +6997,7 @@ Kofi thought about this for approximately three seconds, and then: "B-platform's
 
 The clearance panel above the A-platform went green, and somewhere below the floor the first inbound slug decelerated from transit speed with a sound like a building drawing breath.
 
-[Beat 307]
+[Beat 306]
 ﻿Gate 3 was a glass-front reconciliation office set into the yard wall where B-platform met the admin corridor, with a single management terminal, a view of the staging bay, and no windows facing the yard interior ? which meant Parr, when he was in it, could see the slugs queue but not the platform approach from the south.
 
 Kyle went in at 13:11, during the gap, while the inbound clearance light was still cycling red and the B-platform corridor was running its undocumented 90-second lag. Pixel was outside with the schematic on her terminal and a view of both countdown panels.
@@ -7059,7 +7022,7 @@ He was out of Gate 3 at 13:19.
 
 WIN: the records corrected, on the record, under Parr's own credentials. Cost: to be determined.
 
-[Beat 308]
+[Beat 307]
 ﻿Parr was not a large man. He was the kind of man who had twelve years of institutional weight behind him and moved like it, which is different: steady, unhurried, the kind of unhurried that was previously confident and had recently become careful. He came onto the B-platform at 13:31 with a terminal in his hand and the expression of someone whose reconciliation filing had just notified him of a revision.
 
 He saw Kyle first, because Kyle was standing in the clear, and then he saw Kofi on the platform behind Kyle, and then he looked at the terminal again.
@@ -7084,7 +7047,7 @@ Parr was quiet for long enough that the outbound clearance panel ran two cycles.
 
 "That's a separate problem," Kyle said. "Start with security."
 
-[Beat 309]
+[Beat 308]
 The two men came off the south platform access at 13:47, while the second inbound slug was still decelerating in the bay. They had the look of men on a fee — casual in the way that means calibrated, taking their time over ground they'd already walked — and they had seen Kyle come out of Gate 3 and done the arithmetic about what that meant.
 
 One of them was carrying a shock-bar clipped to his belt. The other had his hands free, which in Kyle's experience was worse.
@@ -7113,7 +7076,7 @@ Neither of them said anything.
 
 He left them on the platform and went to find Pixel.
 
-[Beat 310]
+[Beat 309]
 The operations supervisor, a woman named Dreis who had been told a great deal of information in the last twenty minutes and was processing it with the focused dissatisfaction of a professional whose day had become someone else's problem, shook Kyle's hand at 15:00 and gave him a receipt.
 
 The receipt said, formally:
@@ -7152,7 +7115,7 @@ WIN: Kofi cleared. Parr accountable. One transport ally, standing arrangement. C
 
 He had used zero rounds. Cacophony had five.
 
-[Beat 311]
+[Beat 310]
 The terminal chirped at 16:40, while Kyle was eating a late second bowl at Mrs. Chen's, which was early for the standing contract's usual hours and she noted it with one look over the counter.
 
 The posting read:
@@ -7194,7 +7157,7 @@ NOTE: SABLE. REALLY.
 
 "I heard you the first time," Kyle told the terminal, and finished the bowl, and pulled up Sable's contact, and started composing.
 
-[Beat 312]
+[Beat 311]
 The logbook came under the door at 07:00 on a Tuesday, same as always, but this one had an addendum on the last page in Dents's handwriting — tighter than Rafters's, looser than Boost's, the tilt of someone writing fast enough that the hand couldn't apologize for the content.
 
 ADDENDUM (D.): TOOK A SIDE JOB. NOT A CREW JOB. PERSONAL. PENDANT THING. PAYS 2Φ/DAY. WELLNESS STUDY. ASKED BOOST. BOOST SAID ASK PIXEL. PIXEL SAID FINE. EVERYBODY ON IT. FOLLOW-UP: RAFTERS STILL OWES ME A DUMPLING.
@@ -7209,7 +7172,7 @@ He commed in.
 
 "Two Φ a day is a real wage." The precision of a woman who knew every wage in West Town. "That's not a study budget. That's a recruiting budget. Get me one of the pendants, samurai, and give me an hour."
 
-[Beat 313]
+[Beat 312]
 Dents was eleven, narrow through the shoulders, waiting for the rest of his body to catch up. The pendant rode on a cord at his throat — a flat disc of matte resin the size of a coat button. His logbook entry on it read: PENDANT ISSUED BY WOMAN (TAN COAT? DIFFERENT TAN COAT). MUST WEAR DURING WAKING HOURS. MUST NOT REMOVE. FOLLOW-UP: IT GETS WARM SOMETIMES. NOT BAD WARM. JUST WARM.
 
 "Different tan coat," Kyle said.
@@ -7220,7 +7183,7 @@ Dents was eleven, narrow through the shoulders, waiting for the rest of his body
 
 Dents dug out a pamphlet — good stock, not Vey's grade but a credible print run: MERIDIAN WELLNESS INITIATIVE, COMMUNITY SENSORY SURVEY. A logo Kyle didn't know, a shell he'd have bet resolved to a shell. He took it upstairs and slid it under Pixel's door without knocking.
 
-[Beat 314]
+[Beat 313]
 She had it open in eleven minutes, not the hour — the music doing the thinking she'd otherwise spend narrating, so the bench ran fast.
 
 The resin case lay split along its seam in two readable halves, and on the magnification plate sat a disc of optical mesh no bigger than a thumbnail.
@@ -7233,7 +7196,7 @@ The way she put it filed the thing where it could be paid instead of relitigated
 
 "Pull eleven pendants at once and enrollment craters and the buyer knows we found it — then they re-seed through a vendor we haven't met, and we're blind." She picked up the live node, still warm. "The collection point doesn't know what it's collecting. It just aggregates packets and ships a map." She turned the disc between two fingers. "So we don't pull the pendants. We make the map wrong."
 
-[Beat 315]
+[Beat 314]
 The entity's posting arrived at 11:40, on the walk back with the breakfast she'd demanded — dumplings, not cart noodles, from the place she'd named and he'd already known.
 
 CONTRACT — STANDING SCOPE UPDATE.
@@ -7250,7 +7213,7 @@ Kyle stopped in front of the noodle cart, read it twice while the cart man gave 
 
 It mattered, he'd learn at the relay, that the entity couldn't do this part. The building was air-gapped on purpose. Whatever the entity was, it lived in the wires, and there were no wires here. This was hands and feet and a kid on a stairwell.
 
-[Beat 316]
+[Beat 315]
 Pixel read the firmware string and swore with feeling.
 
 "It's got a watchdog. The relay re-checksums its outbound queue every ninety seconds — if the aggregate doesn't match what the nodes signed, it flags corruption and locks, and a locked relay is a buyer who knows. So I can't just swap the packet. I have to swap it AND re-sign it AND land both inside one ninety-second window, by feel, in a basement junction box, with the original lady's access key, which I do not have."
@@ -7265,7 +7228,7 @@ Kyle looked at the geometry of that and didn't like the only piece that fit.
 
 "It's Dents's job," Pixel said. "And I hate it, and it's the right call, and you're going to brief him like he's a professional because he is one now."
 
-[Beat 317]
+[Beat 316]
 Dents took the brief the way he took the dumplings: like a thing he had not expected to be handed and intended to deserve.
 
 "You go up at eighteen-forty to turn in today's pendant reading, which is a real thing you really do," Kyle said. "You stand where the log says you stand. When she runs her fob — she does it at the desk, you've watched her — your bag is on the desk too. The coil does the rest. Six seconds. Then you leave. You walk out before nineteen hundred no matter what, and if anything is wrong you leave faster and we eat the loss."
@@ -7278,7 +7241,7 @@ Dents hung it under the live one and looked, briefly, like a kid wearing two of 
 
 "Logbook," Kyle said.
 
-[Beat 318]
+[Beat 317]
 It nearly went wrong at 18:51, which Kyle and Pixel listened to over the open channel from the basement junction box, in a light the color of an old grudge, unable to do anything but listen.
 
 The lady ran her fob at the desk. The coil caught the handshake — Pixel's screen bloomed green, KEY CAPTURED — and in the same second the lady said, conversationally, "You've got two cords on, hon," and the channel went very quiet, and Kyle's hand was already on the basement stairs.
@@ -7299,7 +7262,7 @@ Dents ran along. He came down the back stairs at a walk, because Pixel had told 
 
 "It counts for logbook. Go."
 
-[Beat 319]
+[Beat 318]
 Pixel had the key, and then Pixel had a fight.
 
 The watchdog gave her ninety seconds a cycle and her swap-and-resign took, the first attempt, ninety-four. The relay locked. She held her breath; it auto-recovered on its own self-heal timer, thirty seconds of nothing, the longest thirty seconds of the night — a locked relay that stayed locked would have been the buyer's tip and the whole loss for nothing — and then it came back clean, having logged the lock as a power blip, and she had one more try before a second lock would stop reading as weather.
@@ -7316,7 +7279,7 @@ At 20:14 the first forged packet went out: three hundred nodes, worn by eleven k
 
 "Log it."
 
-[Beat 320]
+[Beat 319]
 The entity's posting came at 21:00, as if it had been counting splice time.
 
 OPERATION: COMMUNITY MESH FORGERY. DATA INTEGRITY: COMPROMISED (BUYER'S SIDE). INTACT (OURS).
@@ -7335,7 +7298,7 @@ SERVER: OFFLINE. FILED UNDER: RESOLVED.
 ELAPSED TIME: 4.2 SECONDS.
 GRATUITY: 1Φ — ITEMIZED: APPROPRIATE PERSONNEL PRACTICES.
 
-[Beat 321]
+[Beat 320]
 Six days later the Meridian Wellness Initiative form-lettered every participant: SENSOR BATCH DEFECTIVE — STUDY SUSPENDED — COMPENSATION FOR FULL THIRTY-DAY TERM PAID IN FULL, IN ADVANCE. Whoever built the program had built it with enough real infrastructure that the payout clause was real, which was its own small horror and its own clean win at once.
 
 Dents folded his receipt into the logbook: WELLNESS STUDY: COMPLETE. TOTAL: 60Φ. (CANCELLED, HARDWARE FAULT APPARENTLY. NOT OUR DEPARTMENT.)
@@ -7350,7 +7313,7 @@ Pixel finished pulling her coat on. "Mirror two: approved. Rafters's optics clea
 
 "I know," Pixel said. "Tell him anyway."
 
-[Beat 322]
+[Beat 321]
 Kyle found the geometry three nights later, in the relay logs Pixel had kept as a backup before she wrote the forgery — the first week's real data, mapped, printed to a single page, set on his kitchen table with one line under it: LOOK AT THE CENTER.
 
 The page was a constellation: hundreds of tracked points spread across West Town, every one a child crossing a block, turning a corner, living an ordinary day. And when you drew the geometric center of all that ordinary motion, it landed on one block. Six trees. A swing set. A dead-bulb crown under a mossy canopy.
@@ -7370,7 +7333,7 @@ Kyle wrote under it, in his own hand, and slid it back: DENTS — IT TRACKED POS
 
 Through the thin floor he could hear the logbook get read, then two voices going fast, then a third, then Rafters saying something about the cart that made the other two laugh. He went down and bought everybody breakfast.
 
-[Beat 323]
+[Beat 322]
 The Loop's third underlevel had its own ecology: paper shop, shuttered watch-repair, Vong's Dumpling Franchise #7 on the right under a red awning, and Mei's Dumplings on the left — no franchise, no awning, forty stolen inches of counter she'd annexed off the watch-repair's wall by aggressive proximity. The stationer's honest door sat dead center.
 
 The two men stood in the middle with their backs to that door, which meant their backs to Vey, which was the kind of error that compounds.
@@ -7385,7 +7348,7 @@ The clipboard man turned. Long enough in the work to have stopped enjoying it. "
 
 "I eat here," Kyle said, and that was the whole of his position.
 
-[Beat 324]
+[Beat 323]
 He'd half-expected the paperwork to end it. He pulled up the Tsui Group's public filing anyway — all collection franchises filed public or didn't operate — and the search took under three minutes to surface the part that mattered.
 
 "Your protective license lapsed," Kyle said, turning the screen. "The fourth. Not expired — lapsed. You've been writing paper on a dead license eleven days. There's no reinstatement pending; the portal would show it."
@@ -7398,7 +7361,7 @@ Kyle had read it as a departure. He was wrong. A man whose paper is exposed has 
 
 Forty liters of scalding pork-bone stock. A sixty-year-old man standing next to it.
 
-[Beat 325]
+[Beat 324]
 Kyle was moving before the big one's hand finished closing on the rim.
 
 He did not draw Silence. A drawn blade in an underlevel full of lunch civilians was a conversation he'd have to finish, and this didn't need finishing, it needed interrupting. He took the man's wrist off the rim — not a block, a redirect, the shove steered ninety degrees into the franchise's steel prep counter — and forty liters of scalding stock rocked on its ring and held, one tongue of it slopping over the lip to hiss across the floor where Vong had been standing a half-second before, because Kyle's other hand had already moved him.
@@ -7419,7 +7382,7 @@ Vong stood by his rescued pot with both hands flat on the counter. Steadying it 
 
 From his doorway, Vey made a small sound that was not a cough.
 
-[Beat 326]
+[Beat 325]
 They came back at 14:00.
 
 No clipboard this time. Three of them — the clipboard man, the big one moving carefully on his bad knee, and a third Kyle hadn't seen before, with the chrome thumb-rings and the flat affect of a man brought in specifically. The underlevel had thinned out after lunch. The third man's eyes went to Vong's counter first, then to the stairwell access on the far wall, mapping the routes out, which told Kyle more than the chrome.
@@ -7462,7 +7425,7 @@ Vong sat down on his prep stool and said nothing for a while. From the sub-two c
 
 He went upstairs and filed the documentation.
 
-[Beat 327]
+[Beat 326]
 By 14:00 there was a chalk line on the floor. By 15:30 there were two, with a disputed zone between them and three customers eating in the gap with the posture of people braced to be asked to choose sides.
 
 Kyle was at Mei's — alternating weeks, six years, both owners aware of it — with a cut cheek and a late lunch when Mrs. Chen arrived, clearly sent for, with the expression of a woman asked to do a thing beneath her competence and above her patience.
@@ -7479,7 +7442,7 @@ Kyle was at Mei's — alternating weeks, six years, both owners aware of it — 
 
 Mrs. Chen looked at Kyle the particular way a woman looks who has spent seventy years not asking for things. He ate the rest of his dumpling and accepted the expression as the invoice it was. His cheek had started to stiffen, which felt, all things considered, like the right price for an afternoon that had nearly cost Vong his hands twice.
 
-[Beat 328]
+[Beat 327]
 The taste-off was Boost's idea, and the speed the logbook adopted it as official suggested it had been everyone's at once.
 
 DUMPLING COMMISSION: OFFICIAL RECORD. CHAIR: MR. KYLE (VISIBLE INJURY, SEE 11:40 ENTRY). RECORDER: RAFTERS. PANEL: DENTS, BOOST. OBJECTIVE: BETTER DUMPLING, FOR BLOCK PEACE. NOTE: ALSO THE FUNNIEST THING WE'VE BEEN ASKED TO DO. SECOND NOTE: BOSS GOT HIT TODAY. TWICE. WE LOGGED IT. THIS LOG IS HONEST.
@@ -7488,7 +7451,7 @@ Both stalls produced their house dumplings. Vong ran a standard pork-and-chive, 
 
 An audience had accumulated the way audiences do around chalk lines and commission proceedings, and Vey had migrated from his doorway to the building's first internal window for the better angle.
 
-[Beat 329]
+[Beat 328]
 "For the record," Kyle said, to the chalk and the crowd and both owners, "Vong's franchise makes a technically excellent dumpling. Consistent. Well-priced. You know exactly what you get any day of any week." Vong nodded with professional dignity. "Mei's original is better."
 
 Mei made a sound that was not quite a sound. Vong's jaw went through an expression and out the far side.
@@ -7501,7 +7464,7 @@ Rafters consulted the logbook with the gravity of a senior analyst. "Exactly how
 
 The chalk was gone by 16:30. Vong sent one complimentary order of pork-and-chive to Mei's counter without comment; Mei received it without comment. Closest the underlevel had come to a diplomatic event in twenty years. Vong put the franchise testimonial card in his window next to a second card, hand-lettered, that hadn't been there this morning: BEST ORIGINAL ON THE BLOCK — SEE MEI, NEXT COUNTER. Insurance, posted where the block could read it.
 
-[Beat 330]
+[Beat 329]
 Kyle was leaving at 17:20 when Vey opened his door the particular width of a man who'd been saving something all day.
 
 "Come in. The occasion warrants the good shelf." Inside, the drawers watched in their brown-inked calm. Vey poured without asking, pushed the cup handle-first. "The Tsui Group is not my clientele — impersonation filings are public, and I don't sell what I can read for free." He settled onto his stool. "I watched the whole proceeding. Morning and afternoon. The license. The pot. The chrome thumb-rings." His eyes went, briefly, to Kyle's cheek. "The interruptions, plural."
@@ -7523,7 +7486,7 @@ CLIENT DISLIKES THE CHEEK.
 
 Kyle read it twice on the stairs, with the cut stiffening and the underlevel settling into its evening behind him — Vong's closing sequence, Mei's last fold, the Pulse running its thirty-meter underfloor hum through the tiles — and decided the client could dislike the cheek all it wanted. Some prices you pay with your face, so a noodle man keeps his hands.
 
-[Beat 331]
+[Beat 330]
 The recycler district under the Spine ran twenty-three hours on a good day and the twenty-fourth it ran angry. The extruder drums on the ground floor of Ferenti's block hadn't stopped since Tuesday, and by the third landing the heat had layered in with the solvent vapors and plastomer off-gas until the air had texture — warm, slightly adhesive. Exposed conduit. Security strips bolted through bare insulation foam that had been temporary since the previous century. Two turret cats tracked Kyle across the lobby, the larger one closing one eye against the extruder smoke like a judge who'd already seen this particular morning and wasn't impressed.
 
 Ferenti was on the third floor in a room he'd lost to his archive sometime in the early 2200s. Mid-fifties, compact, the kind of man who wore his suit like a closing argument. He told Kyle the problem the way men told problems they'd carried too long — fast, in a burst.
@@ -7542,7 +7505,7 @@ Forty-one pages. Historical utility surveys, original paper, registered fiber. A
 
 Kyle called Marisol on the way out.
 
-[Beat 332]
+[Beat 331]
 He was tracking three of them across twelve blocks.
 
 The relay board showed all three: Zone 4, 4-A, 4-B — small, slow, paths that didn't intersect. He had them plotted against his three contact points for the day and found he could clear all three if he moved the Clybourn meeting back forty minutes and stayed off Damen north of the park. He adjusted the schedule and moved.
@@ -7551,7 +7514,7 @@ On Morrison, a woman was walking a dog that kept trying to pull toward the middl
 
 He logged a timestamp on the 4-A position and kept moving.
 
-[Beat 333]
+[Beat 332]
 She was already in the lobby, finishing a warm bun from the cart two doors down. Somewhere in her mid-forties, warm-faced, field coat the brown of autumn mud. She finished the bun, brushed crumbs from her lapel, and gave him a handshake that lasted the exact professional fraction of a second — the grip of someone who'd assessed him before he crossed the lobby.
 
 "Marisol."
@@ -7566,7 +7529,7 @@ She was already in the lobby, finishing a warm bun from the cart two doors down.
 
 The security scanner on the third-floor landing delivered its institutional chime: STANDARD SCREENING INITIATED — DOCUMENT INVENTORY — PSYKER ON PREMISES — VISITOR CONFIRM. Marisol confirmed without breaking stride — the touch of a woman who had been touching confirms since she was twenty-two. She did not roll her eyes. Something in the set of her chin filed it accurately and kept moving.
 
-[Beat 334]
+[Beat 333]
 The records room smelled of conservation solvent and old paper, which was better than the two floors below. Ferenti ran the intake process briskly and left them to it.
 
 Marisol put on cotton archival gloves, looked at Kyle over the first tray. "The way I work: I go through in order and tell you what I get. An authentic page has a whole person in it — the hands that made it, what they had for breakfast, whether they hated the job. A fake is a job. Clean in the way nothing real is clean." She turned the first page. "I charge by the touch because it costs by the touch."
@@ -7599,7 +7562,7 @@ He put the thought somewhere useful.
 
 Then the smell came in through the ventilation slit above the third tray: acetone, and something flatter underneath, the chemistry of a fire agent primed and waiting.
 
-[Beat 335]
+[Beat 334]
 Four seconds between the smell and the door.
 
 The woman came first — chrome running her whole left arm shoulder to fingertip, the hardware expensive enough not to show in the joint seams, a multi-tool already open on her palm with the incendiary trigger showing. Three men behind her, all four moving with the rehearsed economy of a team that had memorized the room dimensions from a floor plan.
@@ -7630,7 +7593,7 @@ She had the forgery and a stack of pages under her arm and was moving through th
 
 One round spent. Four left. Shoulder filed. Third tray gone.
 
-[Beat 336]
+[Beat 335]
 The fourth man had a van, and the van had a frequency.
 
 Kyle had the plate from the lobby scanner, and Marisol had the forgery, and Ferenti had his surviving thirty-eight pages and his grief for the Domazinski surveys in the third tray, and somewhere below them the extruder drums were running the twenty-third hour without pause.
@@ -7645,7 +7608,7 @@ Outside the window, the van's frequency had gone quiet. The fourth man had not g
 
 There was.
 
-[Beat 337]
+[Beat 336]
 The recycler's lower freight run debouched into the gray zone's underbelly two tiers down — a maintenance corridor that smelled of plastomer and standing water, wide enough for a pallet jack and nothing else. Chrome-painted conduit ran both walls at shoulder height: the building's vascular system, color-coded for three different utility companies that had each bought and sold the block in sequence over thirty years. The light was red emergency stripe, which gave everyone the same unflattering complexion.
 
 They were four minutes out when Kyle heard the second team's approach echo off the corridor walls.
@@ -7674,7 +7637,7 @@ Two down. Thirty seconds before the second pair.
 
 "Run," Kyle said.
 
-[Beat 338]
+[Beat 337]
 The extruder floor ran hot — drums at full cycle, temperature thirty degrees above the corridor, the air thick with thermoplastic particulate that the ventilation was theoretically managing. Catwalks ran the upper half of the room above the drum line: steel grating, safety rails mostly gone, sightlines broken by the machinery.
 
 They were halfway across the catwalk when the second pair came through the floor access door.
@@ -7707,7 +7670,7 @@ Ferenti had made it to the far catwalk door. His face said he had revised his op
 
 "I think," Ferenti said, with the careful delivery of a man who had just re-evaluated his entire week, "that we already know."
 
-[Beat 339]
+[Beat 338]
 They came out into the freight alley — recycler-heat venting from the ground-floor grate, a lumen mouse running the gutter seam with its thread bright in the grey. Marisol had the forgery in her coat and the archival gloves still on her hands.
 
 She sat on a crate. "I want to do the delivery. If you have the object."
@@ -7732,7 +7695,7 @@ She turned it over. "It fits."
 
 Kyle paid her at standard rate, exact. She accepted without counting the way professionals accepted exact payment. He put the forgery in his coat, careful of the shoulder. He paid Ferenti's flat.
 
-[Beat 340]
+[Beat 339]
 Outside, the Spine moved its evening freight. The extruder heat crossed the entrance in a slow warm wave. Kyle photographed the forgery with his work terminal. The image pushed to the standing contract's amendment field without commentary. Eleven seconds passed.
 
 CONTRACT ADDENDUM.
@@ -7758,7 +7721,7 @@ The shoulder logged its compound invoice. Two spent casings existed somewhere no
 
 He went to find somewhere to get the shoulder looked at before it started billing at the overnight rate.
 
-[Beat 341]
+[Beat 340]
 The logbook delivery came under his door the next morning in five hands:
 
 07:10 — NEW ENTRY. WOMAN IN BROWN COAT LEAVING THE BUILDING ACROSS THE SPINE. SAME WOMAN: 06:50, 04:20. THREE SIGHTINGS. FLAGGED.
@@ -7778,7 +7741,7 @@ CONTRACT ADDENDUM.
 CLIENT NOTES SEVEN REGISTRY FILINGS REMAIN OUTSTANDING.
 CLIENT NOTES STANDARD RATE APPLIES.
 
-[Beat 342]
+[Beat 341]
 The appointment was 09:00, on the record.
 
 Kyle walked to Bucktown and took the stairs at HALVORSEN CIVIC RECOVERY LLC two at a time. Second-floor landing: work terminal out, habit the same as checking a healed joint. He expected at least an ADDENDUM — the entity had been tracking the Glove situation since the forged survey, and a meeting at the firm behind Rotterdam should have prompted something. A scope update. A query. At minimum a GRATUITY WITHHELD — ITEMIZED: DISCRETION, the territorial chirp it filed the day he walked into Vey's shop.
@@ -7789,7 +7752,7 @@ Not stalled. Not loading. Blank — the way a room is blank after someone has qu
 
 08:58. He put it away and went up.
 
-[Beat 343]
+[Beat 342]
 The office had two desks. Blue Hat — her professional name was apparently irrelevant to both of them — sat at the nearer one with all her attention trained on anything except him, which was costing her something.
 
 Her boss was a large man going gray at the temples, both hands flat on the desk before Kyle sat down. The posture of a man holding himself back — not threat, something closer to embarrassment doing its level best to pass as composure. He had an Arcturus cert on the wall, forty years of filing behind the name on the glass, and red at the corners of his eyes: not today's reddish, the accumulated kind.
@@ -7828,7 +7791,7 @@ Breckenridge reached into the same drawer and set a second folder on the desk, t
 
 "Had two copies made," he said. "Yours is on top."
 
-[Beat 344]
+[Beat 343]
 The logistics cost him the rest of the morning.
 
 Writ at the Bucktown filing desk: 40Φ, forty minutes, a clerk who triple-dated every document as a personal standard, the rubber stamp coming down with the weight of a man who considers accuracy a physical practice. A truck from Ria's pool, four hours, 25Φ, matched to Kessler's yard specs so nothing would flag at the gate.
@@ -7849,7 +7812,7 @@ Gantry looked at the clinic's sign — NO FEE FOR CARE, hand-painted, black on w
 
 She went to check rigging.
 
-[Beat 345]
+[Beat 344]
 Kessler and Sons occupied a quarter-block on the South Loop fringes: a cracked concrete apron, chain-link fencing with rust at the joins, three surveillance cameras that someone had aimed at the street instead of the lot — installed for liability optics, not actual coverage. The gate was the third-generation kind: a clip-framed window, hand-lettered sign, a yard dog chained somewhere behind the shed that had given up announcing strangers and now just watched.
 
 The old man behind the window had the face of someone who had been sitting in that chair for thirty years and had watched better paper than this come through. He read the writ. Read it a second time. Found the section he was looking for: RECOVERY AGENT OF RECORD: HALVORSEN CIVIC RECOVERY LLC, BUCKTOWN.
@@ -7888,7 +7851,7 @@ Cacophony stayed on Kyle's hip. Zero rounds priced, zero rounds spent. The son's
 
 WIN: gate open. Clean math.
 
-[Beat 346]
+[Beat 345]
 Gantry had the RP-7 loaded and strapped in eleven minutes, talking to the printer throughout in a low, even voice: "easy with the corner — that's the corner, the corner's fine — we're going to set you on a pad, not the bare deck." When the last strap was set she patted the chassis once with a wide hand, the way you'd settle a skittish horse, and climbed up front without ceremony.
 
 The drive back to Leavitt Free Medical took twenty-two minutes. Gantry spent most of it explaining the weight-distribution tolerances of the RP-7's chassis to the printer, in the second person, as a professional courtesy.
@@ -7914,7 +7877,7 @@ Gantry materialized beside him with both hands in her jacket pockets and looked 
 
 She nodded once and walked toward the Pulse station with the deliberateness of a woman who has three more jobs before dinner and has already mentally arrived at the first one.
 
-[Beat 347]
+[Beat 346]
 He read the Halvorsen engagement file on the walk back.
 
 Twelve pages in Halvorsen's intake format — the kind of document assembled by someone who understood that paper is the last argument between the work and the argument about the work. The first eight pages were operational: scope, authorization, the tracking-dot delivery chain, the Rotterdam timestamp.
@@ -7949,7 +7912,7 @@ It had known before he did. It had been watching its own address get edited out 
 
 He put the terminal away and kept walking.
 
-[Beat 348]
+[Beat 347]
 Breckenridge shook his hand at the Halvorsen door at 16:30 with the handshake of a man replacing something that had been taken from him.
 
 "Council will see it tomorrow," Breckenridge said. "Fourteen days, recovery complete, no incident on record." He looked at Kyle with the directness of a man who has run out of formal things to say. "Thank you."
@@ -7976,7 +7939,7 @@ He filed the Halvorsen pages in the drawer where he kept the things he had not y
 
 The drawer was getting full.
 
-[Beat 349]
+[Beat 348]
 He was on Kyle's stool, which was the second.
 Gray suit, mid-fifties, no chrome the eye could find, eating Mrs. Chen's noodles with evident, genuine appreciation and the table manners of a man who had been raised somewhere that graded on them. He'd hung his umbrella on the counter's edge by its handle. He had a second bowl waiting ? untouched, steam still standing on it ? at the stool beside him.
 "Mr. Kyle," he said, without turning. "I took the liberty. Two bowls, I'm told. I've only ordered you the first; I wouldn't presume on the second." He patted the stool. "Able. The Continuity Office. You've been reading our shells for a month ? it seemed rude to keep you squinting."
@@ -8013,7 +7976,7 @@ Mrs. Chen came down the counter, took the untouched bowl, and emptied it into th
 "You're eating the second one now," she informed Kyle.
 He ate the second one.
 
-[Beat 350]
+[Beat 349]
 Pixel turned the meeting over for an hour at the bench, the way she turned over a failed component, looking for the design flaw.
 
 "He let you keep the folder's contents in your head, photographic, the list, the lease thing about Chen — which means the list was the message and the retainer was wrapping paper." She had the soldering light on her forehead, not soldering anything; it was her thinking hat and they both pretended otherwise. "And the 'you're a handle' line at the end. He paid for that line, Kyle. The whole evening was overhead and that line was the deliverable. He wanted you to walk home doing exactly what you're doing right now."
@@ -8038,7 +8001,7 @@ The lights at the end of the block went out, one pole at a time, north to south.
 
 "Now," Kyle said, and was already moving.
 
-[Beat 351]
+[Beat 350]
 They came in over the alley's two best approaches at once, which meant they'd had the file long enough to memorize it: three retrieval consultants, matte armor with no insignia, moving on suppressed boot soles with the unhurried economy of people whose hourly rate had a comma in it. A handler van two streets off ran four lifter drones in a high diamond — not weapons platforms; CARRIAGE drones, cradle-armed, the kind that carry a thing away intact.
 
 The thing was Kyle. The contract was retrieval. Somewhere in the Office's books tonight was already an asset-recovery line item with his dimensions on it, and that — as he dropped off the fire escape's third landing into the blind spot their own approach had created — was the insult he decided he'd bill them for.
@@ -8057,7 +8020,7 @@ Kyle was rude about it. He walked the line between their guns like a man strolli
 
 Which left the third — and the third had Boost.
 
-[Beat 352]
+[Beat 351]
 He'd taken her off the roof of the watch-shift, gently, by the book, an arm around her shoulders like an uncle and a compliance wand held against her collar like an apology, and he stood at the alley's far end in the rain with the four carriage drones stacking into delivery formation above him.
 
 "No harm intended or done," the third consultant called, and his voice was even and almost kind, which was the Office's house style and Kyle was learning to hate it with a wholeness he reserved for very few things. "The minor is leverage, not target. Stand onto the marked square, sir, and she's home before the kettle's warm."
@@ -8080,7 +8043,7 @@ Boost shook for one minute in the stairwell, hard, with her chin up the whole ti
 
 21:40 — ATTEMPTED ACQUISITION OF PERSONNEL (ME). OUTCOME: DENIED. NOTES: THE BOSS DOES NOT STAND ON MARKED SQUARES.
 
-[Beat 353]
+[Beat 352]
 The terminal chirped at 02:11, while Kyle sat at his own kitchen table not sleeping, the way he did the math on nights the math wouldn't close.
 
 He'd been waiting for it. Nine days of silence and then ACKNOWLEDGED, and now, finally, the client.
@@ -8122,7 +8085,7 @@ ITEMIZED: SOME THINGS ARE NOT BONUSES.
 
 Kyle read the rider twice. Then he turned the terminal face-down on the table, which was as close as he came to putting a hand on anyone's shoulder, and went to bed, and slept the sleep of a man who has been appraised at a number and declined to be sold at any.
 
-[Beat 354]
+[Beat 353]
 Mrs. Chen set down the second bowl without being asked.
 
 "You're eating fast," she said.
@@ -8158,7 +8121,7 @@ He'd called Sable at twenty hundred, because Sable was the rule, not the overrid
 
 The line had closed. He spent twenty minutes on the route, because the route was the whole job, and then he'd eaten two bowls and let Mrs. Chen add the fish ball.
 
-[Beat 355]
+[Beat 354]
 The safehouse was a third-floor room above a recycled-materials depot, Ashgrave fringe, in one of the service corridors the city had threaded between its own buildings in 2189 when the ground-level floods came and everyone had to find new ways to move freight at altitude. The corridor was six feet wide, sixty feet long, with conduit runs bolted to both walls and a freight track overhead whose trolleys hadn't moved in a decade. It ran between the depot and the street ramp at the Langley crossing, and it was the most direct route from the safehouse to the dock.
 
 Kyle stood at its entrance for fifteen seconds and did not like it.
@@ -8177,7 +8140,7 @@ She looked at the saya, then at his face, the way people looked when they were t
 
 She didn't ask about the company whose books she'd kept for nine years. He didn't ask why she'd left. The contract had a scope and the scope was the dock, and the dock was everything.
 
-[Beat 356]
+[Beat 355]
 He took the long way to the corridor entrance, and the long way told him nothing, which was a kind of answer.
 
 The fringe was quiet in the way fringe blocks got quiet when people who knew things had decided to be somewhere else. A lumen mouse sat on the conduit rail at the corner of Langley and did not run when they passed, and that was texture — the mouse's bioluminescence tracing a pale crescent on the wet pipe as it watched them go — and Kyle noted it and his neuretics noted the noting and filed it where it filed things: the forty-second window, open, waiting.
@@ -8192,7 +8155,7 @@ The corridor smelled of machine oil and old rain.
 
 He got sixty feet before the dark started moving.
 
-[Beat 357]
+[Beat 356]
 They came from both ends — the professional move, both flanks committed — and they came quiet, which meant they'd done this in corridors before. His neuretics counted what the dark gave it: breathing, heat gradients, the whisper of soles on wet composite, the small adjustments of bodies learning the space.
 
 Fourteen.
@@ -8205,7 +8168,7 @@ Her breathing went high and fast. He didn't have time to help with that.
 
 Silence came off his shoulder.
 
-[Beat 358]
+[Beat 357]
 The first man from the east came in with a short blade and the low crouch of someone who had been taught by someone good. Seven feet of corridor behind him; his colleagues stacked at his back, the two-foot width forcing them single file, the man behind him six steps out and waiting his turn. Kyle read the crouch and the ceiling clearance, stepped inside the commitment, and opened a line down the outside of the forearm — wrist to elbow, the way you open a line when you need the hand to stop. The hand stopped. The blade rang off the freight rail somewhere east. The man stepped back into the chest of the one behind him and they sorted the geometry between them for two seconds, which was long enough.
 
 The second man tried to come around the first rather than through him — the smart read, the two-foot choke forcing him into the maintenance alcove opening — and the alcove funnel did exactly what Kyle had counted on it to do, which was put the man's left shoulder into the door frame at the critical moment and half a step before his weight was ready. Kyle closed the distance in the alcove mouth, directed the stumble into the east wall, and the man's own mass delivered him sideways into the conduit boxes. The impact was brief and significant.
@@ -8218,7 +8181,7 @@ Four men east of center. Three more east, recalibrating in the stack.
 
 He was counting. He knew he was counting. He also knew, in some older part of himself that the neuretics had no language for, that the count was going to break.
 
-[Beat 359]
+[Beat 358]
 The western seven came as a unit.
 
 He'd expected that. The corridor gave them no other option — six feet of width meant tactical creativity was a luxury nobody had tonight, which meant volume and speed were the only levers available, which meant they'd committed to both. He moved west at speed before the eastern three had made their decision, putting ground between himself and a pincer that needed him stationary to work. The freight track overhead ran the corridor's full length. He caught the maintenance hook at the three-foot mark with his left hand — not a swing, a pivot point, enough to redirect his feet past the western point man's guard while Silence crossed the opening.
@@ -8237,7 +8200,7 @@ The seventh on the western side was a woman with a staff weapon — short-hafted
 
 The corridor was still.
 
-[Beat 360]
+[Beat 359]
 Kyle stood in the machine-oil dark and did not count.
 
 This was the fact that lived in the space where counts usually lived: the corridor had not let him count it. He had wins — fourteen people against walls and floor, the dock still reachable, Ms. Tanaka still pressed to the junction boxes — and the wins had prices, and the prices were on his body, not in his arithmetic. The forearm was bleeding through the field strip he'd drawn tight with his teeth during a half-second between the fifth and sixth. The rib had a strong opinion about breathing that he was not going to be able to ignore for long. His neuretics offered a damage summary and he declined to read it, not because he didn't want to know but because reading it would make it exact and exact would make it slower.
@@ -8252,7 +8215,7 @@ She came off the wall. In the dark she found his right shoulder by feel and sett
 
 He got her out the west end at 01:03.
 
-[Beat 361]
+[Beat 360]
 The dock was a Ferryside loading pier — the smell of lake water and compressed fuel and the sub-audible resonance of the Pulse under the eastern breakwater, its 19Hz signature in his back teeth and the wet wood of the bollards. Dock 14-C was a third-tier berth, a mid-range cargo carrier running a mixed freight manifest, and the purser at the gate was a small man with a clipboard who had spent enough shifts at 03:00 to have opinions about paperwork and none about reasons.
 
 Ms. Tanaka stopped at the dock gate.
@@ -8283,7 +8246,7 @@ CLIENT HAS ADJUSTED YOUR HAZARD SCHEDULE. RETROACTIVELY.
 
 He read it twice. He put the terminal away.
 
-[Beat 362]
+[Beat 361]
 The medic arrived at 04:15, a quiet woman named Rue with a field kit and the practiced economy of someone who worked the dock district's early hours and had long since learned not to ask about corridors. She cleaned and re-stripped the forearm — the cut ran two inches along the inside, deep but tidy, the kind that would stay interesting for two weeks — confirmed the rib was cracked and not broken, taped it firm, and handed him a small packet of analgesics he would not take before a job and could take now.
 
 "You'll favor the arm," she said.
@@ -8306,14 +8269,14 @@ Fourteen Lotus crew, salaried, professional, hurt badly in a two-foot choke in t
 
 He sat on the bollard and let the rib have its opinion and waited to find out how much of it was going to be left in the morning.
 
-[Beat 363]
+[Beat 362]
 The lake was grey with the first edge of a dawn that wasn't there yet. South of the breakwater, a running light was very small and getting smaller.
 
 She sailed at 03:40 with the flour still on her sleeves.
 
 (end)
 
-[Beat 364]
+[Beat 363]
 On the eighteenth day Kyle went to see the parts man on Ashland about a throttle cable, because the throttle cable on the bike had developed a twelve-millimeter stretch at the barrel end and he had been managing it for three weeks and was done managing it.
 
 He had been going to Cho on Ashland for six years. The man sourced Axiom-era hardware out of a storefront with the footprint of a wide closet, sold nothing he couldn't hold to a light, and had never once been out of stock of anything Kyle needed. The stretch was survivable on surface streets but it put a half-second of slop between intention and execution, and in a corridor the slop was the kind of thing that invoiced.
@@ -8334,7 +8297,7 @@ Behind his shoulder, the third drawer was still open an inch. The label was in C
 
 He rode home with the slop still in the cable. The half-second was still there.
 
-[Beat 365]
+[Beat 364]
 The carrier who ran his packages — a woman named Freya who operated out of the Bucktown freight level and had never once been late in four years — stopped answering at 07:00 the next morning. Not a queue. Not a delay. Her terminal returned reads without delivering them, the way a door returns a knock without opening.
 
 He had a job running that week: a skip-trace in the Pilsen corridor, a sitting client waiting on a delivery confirmation, and forty Φ on the back end contingent on the documentation landing before a civil filing deadline. He spent two hours routing through Freya's backup and the Loop carrier Ria used, and the Loop carrier told him, politely, that she was running at capacity. He sent the documentation through a walk courier service on Halsted at a surcharge of twelve Φ and it arrived twenty minutes past the filing window. The client paid the base fee and declined the back end, which was their right.
@@ -8355,7 +8318,7 @@ She set down her loupe.
 
 The kettle went. She filled both cups and set his down, handle first, and went back to the casing without saying what they both already knew: that the invoicing was underway, and they were in the middle of it, and the question was how high the number went.
 
-[Beat 366]
+[Beat 365]
 The medic had come through three days ago. Femi reported this the way he reported everything: once, accurate, in sequence.
 
 His left hand had been running three degrees colder than his right for the past six weeks — a compensatory load redistribution the neuretics managed automatically, the kind of adjustment that logged itself without alerting him. He had noticed it. He had not put a clinical word to it until now.
@@ -8378,7 +8341,7 @@ Kyle's palm was flat against the wall. He hadn't put it there.
 
 The grow lamp hummed. The coloring lemon turned in some imperceptible draft from the window seam. A Splicer who'd looked at the NeoCortex schematic and done the math: two years. That was the product. That was what the consultation cost, and what it delivered, and there was no arguing the invoice.
 
-[Beat 367]
+[Beat 366]
 On the eighteenth morning the crew's logbook had a new entry.
 
 08:44 — KID ON THE STOOP. DRY COAT. CAR MONEY. ASKED FOR BOSS. HANDED AN ENVELOPE AND LEFT. DID NOT TAKE A DUMPLING (OFFERED). SUSPICIOUS.
@@ -8392,7 +8355,7 @@ Below the blossom: an address in the Narrows and a time, 20:00.
 
 Kyle put it on the table next to Sable's card and went to find clean clothes.
 
-[Beat 368]
+[Beat 367]
 The Narrows announced itself by what it did not have.
 
 Every streetlight worked. He counted the first three and kept counting until the fixture rhythm stopped mattering because it never broke. In West Town you learned the patch-map by season — the dead stretch on Milwaukee, the dark third post that the block had rerouted its foot traffic around since last autumn without complaint, the way the city and its residents had arrived at a working arrangement with the absence of maintained infrastructure. Here the lights ran continuous and even. The geometry of sustained attention pulled something up the spine: not threat, but the recognition of an institution that had been keeping something for a long time, the kind that did not need to announce it.
@@ -8409,7 +8372,7 @@ He stood there with petals settling on his coat and let the trees be what they w
 
 Children ran circuits under the arcade, six of them, screaming on the inhale at the specific pitch of a body moving faster than it can account for. Nobody hushed them.
 
-[Beat 369]
+[Beat 368]
 The ramen-ya was eight stools and a cedar counter and a door that stood open.
 
 He counted the stools on the way in. Hand-planed cedar gone the gold of long handling, a counter that knew what it was because people had brought their elbows to it for enough years to tell it. The cook stood behind it with the focused economy of a person who has no wasted motions left because they shed them years ago. The other stools held four people: a man in his forties with a collapsed baton at his hip, a woman with a vibro-edge unit in a shoulder rig, a younger man Kyle read as wire by the way he held his neck, and an empty jacket at the far end that had left a cup and a short blade on the counter beside it.
@@ -8428,7 +8391,7 @@ He understood immediately what the bowl was for. Not hospitality in the ordinary
 
 He was most of the way through it when the door changed.
 
-[Beat 370]
+[Beat 369]
 The Branch Manager came through the doorway at the pace of someone who had walked this route for a long time and did not need to announce it — umbrella furled and tucked under his arm, mid-sixties, a suit without a single concession to fashion, not old-fashioned and not plain but the kind selected once by a man who understood fabric and had not needed to revisit the question since. He was half a head shorter than Kyle and had the stillness of a man who had never needed to take up space to fill it.
 
 Everyone at the counter got an inch and a half taller when he came in.
@@ -8479,7 +8442,7 @@ The standing offer was a mechanism, and he understood its geometry: he would com
 
 "That's all it asks," said the Branch Manager, and rose, and took his cup to the far end of the counter, and the room did its an inch and a half again.
 
-[Beat 371]
+[Beat 370]
 The togishi was at the counter's far end, between the wire's stool and the wall, working the cook's knives.
 
 Kyle had not noticed him arrive, or perhaps he had always been there — one of those people who occupy space so completely they become part of the scene before you count them. Small, older than the Branch Manager by ten years, with the hands of a man whose profession was the repair of attention. He ran the whetstone along a blade with the patience of someone for whom this was not maintenance but reading: each pass an inquiry.
@@ -8516,7 +8479,7 @@ The togishi went back to the cook's knife. Kyle paid for the bowl — 8Φ, which
 
 The petals came down slow and even in the lit air. A child ran past him at full career, screaming on the inhale, trailing a laugh behind her like a cord she hadn't noticed she was paying out.
 
-[Beat 372]
+[Beat 371]
 He took the long way back.
 
 The city reopened in the arithmetic: seven counters, one carrier, the parts man on Ashland who would have the cable waiting when he arrived in the morning. A third of the operational surface back in service, priced in apologies at list, plus the envelope in his coat covering the fifty-two.
@@ -8548,7 +8511,7 @@ The freeze was lifted. The audition still owed itself.
 
 He went home under the lights.
 
-[Beat 373]
+[Beat 372]
 The rain had been making itself at home since midnight, and by 02:14 it had moved the furniture and settled in. West Town at that hour was a series of arrangements between the streetlights and the water — what the light kept, what the dark swallowed, who was standing in which column. Kyle walked north on Wood because Wood ran straight and he had developed a personal affection for straight streets after the corridor two nights ago, where straight had meant fourteen crew coming at him in sequence instead of simultaneously, and the difference had mattered.
 
 The rib talked when he twisted. It had been talking since day one of the corridor job and it had grown, in the manner of unwanted conversationalists, from a whisper to an opinion. The rest of the damage was administrative — bruising that had resolved from red to the institutional yellow-green of a problem being processed, a shoulder that worked at ninety percent and stopped asking questions at eighty. Corridor wounds. They were their own category.
@@ -8575,7 +8538,7 @@ He put both hands in his coat pockets — left on the saya's mouth, right closed
 
 The cross-street smell was wet concrete and the ghost of a food stall that hadn't been there since afternoon, and from somewhere up the block a turret cat was sitting on a window ledge watching the rain the way the dedicated watched anything.
 
-[Beat 374]
+[Beat 373]
 The drone dropped at 02:16, sixteen inches short.
 
 Kyle knew what a stun drone at full discharge looked like and sounded like - he'd met three, paid for the education twice, the third time had been someone else's problem - and what this one did was not that. The discharge hit the wet pavement in a cone that stopped at his boot heel, the arc tracing the surface water and then dying, the sound a half-note lower than a real discharge, the light forty percent of what the specs said. The drone itself held at ten feet and cycled immediately for a second pass that it did not make.
@@ -8600,7 +8563,7 @@ Not dropped - locked, mid-extension, fingers splayed, caught in the gesture of a
 
 He let go. The arm unlocked. KT stepped back with the expression of a man who has just been told something humiliating, true, and expensive, in that order.
 
-[Beat 375]
+[Beat 374]
 Rook came from the doorway, which was the approach pattern Kyle had expected, and Rook was what his name advertised: broad-shouldered, honest in the way that physical scale makes honest, moving with the economy of a man who'd spent years not starting things he couldn't finish. The BCI port was at the temple, left side, the older Meridian Conduct series — Kyle knew them from the identifier housing, a flattened oval of matte gray that sat proud at the skull, the kind that had a hardware reset built into the external casing because the early Conduct units had overloaded and needed physical intervention to stop.
 
 Hardware protects itself. The logic is baked into certification: a BCI that could be locked by software could be locked by hostile software, and hostile software was a category that the 2218 standards body had found intolerable. The Conduct series had a mechanical failsafe: a physical shock to the housing would trigger the reset routine and put the wearer into a five-second proprioceptive blank.
@@ -8617,7 +8580,7 @@ Not to cut — to use the pommel, which weighed 340 grams and had a striking rad
 
 Silence went back. The rib made its opinion known about the draw-and-replace motion. Kyle filed the opinion and moved.
 
-[Beat 376]
+[Beat 375]
 Nines was the one he'd flagged last, which was Nines's job — industrial wrist brace, pneumatic assist, the kind the freight yards used for sustained-load operators and the kind that developed its own opinions about direction once the pneumatic channel pressurized wrong. The brace locked along a single axis to distribute load, which meant that if you could intercept the lock while the pneumatic was fighting the frame, the brace's own assist force would do the work for you.
 
 The anchor position had held through the drone discharge and both entries, which was professional. Nines waited until Kyle was dealing with the right side and then came across the street at a pace that accounted for rain, which was careful, and led with the braced arm, which was honest.
@@ -8632,7 +8595,7 @@ You've earned the exit. Take it.
 
 He heard Dex's footsteps going east at a run, the way a young man runs when he's been given the best part of any job, which is the part where he gets to say what happened.
 
-[Beat 377]
+[Beat 376]
 The thermal window on the third floor opened at 02:23.
 
 Mira came down, not from the building's front door but from the fire access on the east side, and she came alone, which meant she'd watched the whole arc and decided it was over, which meant her rubric was complete. She was 130 feet out when Kyle first put her properly into the read: medium height, operational gear that was functional first and second and didn't bother with a third priority, a carry stance that said the piece on her hip was neither a prop nor an afterthought.
@@ -8699,7 +8662,7 @@ WIN: a third of the city formally reopened, carrier rates, one lacquered marker 
 
 He took the long way home.
 
-[Beat 378]
+[Beat 377]
 The Zone 4 displacement notice was taped to the door of the unit two floors below him.
 
 He passed it on the stairwell: standard format, district seal, the specific bureaucratic typography that had been unchanged since before he was constructed. *Temporary Relocation Required — Active Schism Boundary Determination Pending.* Below that, in smaller type: *Estimated Duration: 2–180 days. Compensation: see Schedule C, §11(b).* Below that, a QR code for the relocation portal.
@@ -8712,7 +8675,7 @@ The unit was quiet. No light under the door. Either they had already left, or th
 
 There was no wrong answer to a problem that had no solution. Only management. Only the specific equanimity of a city that had been managing for long enough that the management had its own forms.
 
-[Beat 379]
+[Beat 378]
 At 02:41, between the Pulse strut and the laundry on Damen, his terminal chirped. The work one.
 
 CONTRACT UPDATE — ASSET SCHEDULE, SUBJECT: KYLE.
@@ -8741,7 +8704,7 @@ The rib had opinions about the pace. Kyle let it talk.
 
 That was tomorrow's problem.
 
-[Beat 380]
+[Beat 379]
 Pixel knocked on his door, which had happened four times in four years and meant the world had changed shape in some way she intended to explain.
 
 She had a tablet under her arm and her field coat on — the one she wore to jobs, not to benches — and she walked past him into 2F and put the tablet on his kitchen counter where the kettle should have been.
@@ -8766,7 +8729,7 @@ Kyle watched the machine take a chimney off a brownstone with the care of someth
 
 "I've heard the pay," Kyle said. "The plan's not going to make it worse."
 
-[Beat 381]
+[Beat 380]
 The crew's morning log arrived under the door at 07:00:
 
 07:00 — SHIFT CHANGE. NO INCIDENTS. NOODLE CART (CONFIRMED NOODLE).
@@ -8776,7 +8739,7 @@ SUPPLEMENTAL (07:46): WE WILL HOLD WEST TOWN. THIS LOG IS THE RECORD. — B.
 
 Kyle folded it into the drawer of things he had not decided about, and went downstairs to find the rest of his morning.
 
-[Beat 382]
+[Beat 381]
 He ate at Mrs. Chen's at 08:00 — two bowls, schedule kept — and his work terminal chirped between the first and second.
 
 A new posting on the standing contract. Not a task. Nobody had filed a report about the D-class; the entity had found it on its own.
@@ -8789,7 +8752,7 @@ No scope, no fee, no direction. Kyle set the terminal face-down and finished the
 
 "You're thinking loud," Mrs. Chen said, setting down the change. She put a fish ball in his pocket without comment, and that was that.
 
-[Beat 383]
+[Beat 382]
 "You're not going near—" Kyle started, and Pixel set her cup down with a click that ended the sentence.
 
 "Say the rest of that word and my rate doubles," she said. Not heated. The voice she used on a fastener that thought it was load-bearing. "The D-class runs a pre-2200 Axiom control bus. No remote interface — Axiom didn't trust radio, they were right, they died before anyone retrofitted one. The bus has one physical maintenance spur, on the chassis, where I will be standing, because the alternative is nobody closes this thing down and the city loses a neighborhood at the speed of careful chewing."
@@ -8804,7 +8767,7 @@ Kyle looked at the schematic and at his neighbor of four years in her field coat
 
 "Correct," Pixel said.
 
-[Beat 384]
+[Beat 383]
 The crew came together in thirty hours, because crews came together fast when the job was real and the pay was a joke.
 
 Echo took eyes and comms — high ground, voice in five skulls, never wrong about a sightline. Stash took transport: a flatbed he refused to explain, cases packed for every door in the brief.
@@ -8817,7 +8780,7 @@ Five of them and Pixel, in the back of Stash's flatbed, on a contract worth less
 
 "Stick around," Echo said, from everyone's skull at once.
 
-[Beat 385]
+[Beat 384]
 They walked the eaten blocks first, because Pixel wanted to see its work.
 
 The thing was tidy. That was the part that climbed into Kyle and stayed. The rubble of nine days stood in sorted piles at exact intervals — ferrous, mineral, organics — each pile compacted square, each street swept after, the lamppost bases unscrewed and laid in rows like cutlery. A city block taken apart with the intention of accounting for every piece.
@@ -8836,7 +8799,7 @@ She looked at Silence's saya, then at Kyle.
 
 "You don't touch it. Tonight your job is everything that isn't it."
 
-[Beat 386]
+[Beat 385]
 It kept a schedule. The D-class worked a shift: 0600 to 2200, and at 0300 it walked back to the dead Axiom yard and docked against a transformer pylon to charge, the way it had every night for nine days, the way — Pixel said, quietly — it had probably been doing in 2196, before somebody powered it down mid-rotation and walked away.
 
 "It docks, the arc-fence drops to maintenance levels, the spur goes live," she said. "Axiom units safe themselves for service. Ninety seconds on the spur, handshake with the bus, find out why it's awake."
@@ -8845,7 +8808,7 @@ It kept a schedule. The D-class worked a shift: 0600 to 2200, and at 0300 it wal
 
 "Then it objects," Pixel said. "And the five of you get to be more interesting than I am."
 
-[Beat 387]
+[Beat 386]
 The Axiom yard at 0250 was rust and sodium dark. They took positions: Echo on the crane cab; Stash at the gate, engine warm; Gantry in the rigging of the old loading frame, where two hundred tons of abandoned shipping container hung from cables she had spent the afternoon talking to; Furnace at the transformer with his lance dark; Kyle on the ground, where the geometry said trouble would have to pass.
 
 At 0301, the ground learned a rhythm. Four legs, each footfall arriving through the boots a half-second before the sound.
@@ -8854,7 +8817,7 @@ At the yard's edge, the D-class stopped. A dead pedestrian crossing — two lamp
 
 Nobody on comms said anything. There was nothing to say that the waiting hadn't said.
 
-[Beat 388]
+[Beat 387]
 It docked. The boom arms folded. The hull's black discs dimmed one by one, a contactor closed somewhere inside, and the transformer pylon began, gently, to sing.
 
 "Maintenance state," Pixel said, already moving. "Fence is down to tickle. Ninety seconds. Count me."
@@ -8869,7 +8832,7 @@ Every disc on the hull lit at once.
 
 "Off the chassis—" Echo said, and the machine stood up out of its dock with Pixel's spur cable still live, and the night went to work.
 
-[Beat 389]
+[Beat 388]
 Hatches the monocoque had not admitted to opened along the lower hull, and the skirmishers came out: knee-high yard-keepers, six-legged, the maintenance swarm repurposed by the watchdog into a perimeter, two dozen flowing off the chassis like spiders off a kicked log.
 
 "Pixel's clear of the envelope," Echo called. "Cable's still in the spur — if she gets back on it she can finish. Kyle—"
@@ -8886,7 +8849,7 @@ Gantry's voice arrived for the first time all night, slow as a load swinging: "H
 
 The container came off the loading frame on released cables, two hundred tons landing where Gantry had been promising it all afternoon, and the south half of the skirmisher line stopped existing as a line.
 
-[Beat 390]
+[Beat 389]
 Furnace tried the hull once, because professionals confirm.
 
 The lance ran eleven thousand degrees at the tip. He laid it against the D-class's foreleg for a full three-count, and when he pulled it away the monocoque wore a glassy scorch the size of a dinner plate. Not a hole. A polish.
@@ -8903,7 +8866,7 @@ Silence was unmarked. Steel has no opinion. The burn across his palm was the exa
 
 He got up, because the count in his head still worked even with the hardware down, and the count said Pixel needed thirty more seconds.
 
-[Beat 391]
+[Beat 390]
 "Kyle's hit," Echo said, voice going flat the way trusted crews go flat. "He's up. Moving. Pixel, status."
 
 "Back on the spur." Her voice had the bench in it. "Handshake's holding. It remembers me from forty seconds ago. Watchdog's split — half on perimeter, half on me. Keep the perimeter busy."
@@ -8914,7 +8877,7 @@ Kyle kept the perimeter busy. Without the overlay he read the skirmishers with h
 
 "Almost. It's showing me something."
 
-[Beat 392]
+[Beat 391]
 The NeoCortex registered heat at 04:03.
 
 Not threat-heat. Not the calibrated warmth of a mesh in standard operation. The specific kind that meant the hardware had crossed the line and was logging the overage and would present the bill later in whatever denomination later had available. Kyle registered it the way he registered the skirmisher fragment still in his forearm: a line item, filed, not the primary problem.
@@ -8973,7 +8936,7 @@ He crossed the yard toward the three-pattern.
 
 He was, as reported, operational.
 
-[Beat 393]
+[Beat 392]
 "It's not broken," Pixel said, and her voice had changed — the bench gone, something younger underneath. "Nobody corrupted anything. Listen: work order 7741-C, opened March 2196. Block demolition and reclamation, eleven structures, Ashgrave reclamation phase two. It completed ten. Then the yard lost power and somebody walked away and never closed the ticket."
 
 The D-class stood over its dock, boom arms half-deployed, two dozen of its children dead in the mud, and the watchdog watched her read its homework.
@@ -8984,7 +8947,7 @@ The D-class stood over its dock, boom arms half-deployed, two dozen of its child
 
 "I'm a certified Axiom maintenance bus," Pixel said. "Twenty years of self-certification. Watch me."
 
-[Beat 394]
+[Beat 393]
 She closed the work order the way the standard demanded: completion codes, reclamation tallies — she entered the sorted piles, all nine days, because they were real work and the ledger should say so — sign-off in a dead CorpoNation's maintenance dialect, down a spur cable, thirty feet from the thing's foreleg with her hood thrown back.
 
 The D-class went still in stages. Discs dimmed. Boom arms folded with the care of something stowing tools it expected to need again. The hatches took the surviving skirmishers back aboard. Then it walked — past Kyle, past the flatbed, footfalls arriving through everyone's boots — to the center of the yard it had been built in, turned once in the survey habit of a machine confirming its ground, and folded itself down onto its knees and shoulders.
@@ -9001,7 +8964,7 @@ CLIENT APPROVES.
 
 CLIENT RESPECTS THIS had been the first posting, eight hours ago, before the job had a name. CLIENT APPROVES was the close. Both readings true at once. He put the terminal away and went to see about his hand.
 
-[Beat 395]
+[Beat 394]
 The accounting happened at dawn, at the edge of the fringe, out of a biscuit tin.
 
 Auntie Som counted the 312Φ onto a folding table in front of the whole street, because money counted in front of everyone stays counted. Kyle took the crew's shares the way the crew had set them: standard rate five ways, Pixel's doubled. Furnace laughed at his and took it. Gantry bit hers, which may have been a joke; nobody had the data to confirm. Echo's went into a dead drop. Stash's went into the flatbed's tank, approximately.
@@ -9012,7 +8975,7 @@ Kyle took his 26Φ. The fee can be the size of a gesture; it is never nothing. A
 
 "It's off shift," Kyle said. "It finished."
 
-[Beat 396]
+[Beat 395]
 Pixel took her salvage fee in kind, with the residents' blessing and a crowbar: the D-class's master clock — Axiom-sintered, thirty years drift-free — and the work-order seal module, which she held to the dawn like a jeweler examining a stone.
 
 "Every Axiom unit in the lakes answered to one of these," she said. "There are maybe four left that still validate. Now there are maybe five." She wrapped it in the cloth she saved for things that mattered.
@@ -9029,7 +8992,7 @@ Kyle stood beside her, bandaged palm, neuretics rebooting in slow stages — the
 
 "Standard rate," Kyle said. "I touched it at standard rate."
 
-[Beat 397]
+[Beat 396]
 The crew's log arrived under the door at 07:00, waterproof cover performing under conditions:
 
 03:12 — D-CLASS CROSSED AT THE DEAD LIGHT. STOOD AND WAITED. (RAFTERS: THIS IS THE PART THAT KEEPS ME UP.)
@@ -9040,7 +9003,7 @@ SUPPLEMENTAL (06:07): WHAT DOES IT MEAN THAT IT WAITED FOR THE LIGHT? WE HAVE BE
 
 Kyle read it at Mrs. Chen's at 08:00, hand wrapped, neuretics still sorting themselves into order. He had no answer for the supplemental that wasn't more question, so he filed it in the drawer with everything else.
 
-[Beat 398]
+[Beat 397]
 A week later the laundry came.
 
 Somebody on the fringe ran the first line from a ground-floor window to the D-class's folded foreleg, and by the weekend there were nine lines, sheets and work shirts and a yellowed wedding tablecloth drying in the lake wind off thirty-five feet of the tidiest demolition in GLMZ history. Kids dared each other to slap the dead arc-fence discs and ran away screaming on the inhale. A vendor moved her cart into its shade on hot afternoons.
@@ -9051,7 +9014,7 @@ The piles stayed sorted. Nobody touched the piles.
 
 Cacophony's count: five rounds. None spent.
 
-[Beat 399]
+[Beat 398]
 ﻿The contract posted at 04:40, while the GLMZ was still deciding whether the dark was done.
 
 TASK: FREIGHT ESCORT - SEED STOCK CONSIGNMENT (AGRICULTURAL, PERISHABLE).
@@ -9082,7 +9045,7 @@ Gantry was already on the rig's flatbed frame, checking strap tension on the car
 
 They pulled out of the Ashgrave fringe at 05:15, the hauler's engine doing its honest work, the city folding away behind them in vertical layers until the last tier dropped below sight and there was just the elevated causeway, the pre-dawn brown of open sky, and the flat country beginning to assert itself past the ferrocement boundary wall.
 
-[Beat 400]
+[Beat 399]
 The Iowa corridor started at the wall's west service gate, which cost Ria a 45Φ transit stamp and a seven-minute argument with a gate officer about whether "perishable agricultural" covered "experimental proprietary" on the same manifest.
 
 It did not. It cost 8Φ extra.
@@ -9110,7 +9073,7 @@ Ria looked at the cab ceiling the way people looked at the sky when they wanted 
 
 "Never mind," she said. "I'll drive."
 
-[Beat 401]
+[Beat 400]
 The first Behemoth appeared at mile marker 27, and appeared is the right word — it didn't come from somewhere, it simply resolved out of the middle distance the way a weather system resolves, until the mind accepted that the scale was real and the flat land was not so flat.
 
 It was a harvester-process unit, one of the Iowa Cooperative's agricultural fleet: 260 feet at the shoulder, track width wider than the causeway, a processing tower along its dorsal frame venting steam in columns the height of office buildings. Parallel course, a mile east, moving at the pace of something that had no concept of urgency and had never needed one.
@@ -9139,7 +9102,7 @@ They sat quiet until it passed.
 
 "Okay," Ria said, at some point after. She put the hauler back in drive.
 
-[Beat 402]
+[Beat 401]
 They stopped for fuel at a waypoint depot run by a woman named Paz who kept three lumen mice in a cage behind the counter and charged eleven Φ a liter for diesel, which was price-gouging that the middle of Iowa earned. Kyle paid it. Paz threw in a bag of dried apples without saying so, which was the prairie version of Mrs. Chen's fish ball, and could be accepted on the same terms.
 
 Gantry rechecked straps while the fuel ran, spending something close to twelve of his daily words on the pallet. Ria watched from the driver's door.
@@ -9162,7 +9125,7 @@ ADDENDUM: THE EXPERIMENTAL CRATE IS FINE. NITROGEN-FIXERS USUALLY ARE. CLIENT HA
 
 "That's not better," she said.
 
-[Beat 403]
+[Beat 402]
 The awe set piece was mile marker 74, which was not in the schedule.
 
 The terminal had posted a revised waypoint — maintenance detour — and Ria had followed it west onto a secondary haul road, and the Behemoth had simply been there. Not transiting. Stationary in its own repair cycle, one track disassembled on the ground in segments, a maintenance crane working its mid-section, the thing filling the near distance the way a mountain fills near distance: completely, without apology.
@@ -9187,7 +9150,7 @@ They drove past at walking speed, the hauler's engine the smallest sound in the 
 
 That was the whole review.
 
-[Beat 404]
+[Beat 403]
 Kilometer 187 was the river crossing, and the toll was not the problem.
 
 The hauler was thirty feet onto the bridge when the winch-rig emerged from the drainage cut on the east bank — a repurposed salvage crane on a flatbed, cable-spool running, bolt-thrower on each side, a crew of four who had been working this choke point long enough to stop being nervous about it. Good position: the bridge funneled everything into a six-foot lane and the crane's reach covered the full span. Kyle catalogued it at a glance: maybe 800Φ of field-modified hardware, a tablet with a forged permit that had cost less than the tablet.
@@ -9249,7 +9212,7 @@ Kyle watched the casing arc off the bridge rail into the river. Five in, one spe
 
 He put Cacophony away.
 
-[Beat 405]
+[Beat 404]
 The toll crew was sorting out their counterweight situation behind them when Boost climbed through from the cargo bed. She had the build of someone who climbed things for a living and the expression of a person who had weighed the cost of this particular decision and decided to hold her chin at full height regardless.
 
 Kyle let the bridge get behind them. He waited until the hauler had its speed back.
@@ -9290,7 +9253,7 @@ She had a bolt-thrower quarrel through the right shoulder of her jacket — shal
 
 Gantry produced it from under the bench and handed it back. He had no words left.
 
-[Beat 406]
+[Beat 405]
 The Cedar Rapids depot took all fourteen crates on a signed manifest and issued a receipt in local currency that converted at 1.4 to the Φ, which Ria checked twice before signing with the satisfaction of someone who knew what heritage soy was worth to a territory that had been replanting since the blight.
 
 Full delivery. No crates short.
@@ -9317,7 +9280,7 @@ Ria looked at her own receipt. "The vending machine has a personnel file on a fo
 
 "She's on payroll," Kyle said. "It keeps track."
 
-[Beat 407]
+[Beat 406]
 The drive back ran the same waypoints in reverse, the Behemoths on their own schedules in the late afternoon light, the shadows of the processing towers very long across the flat country.
 
 Boost worked her own patch in the jump seat, Gantry's kit on her lap, jacket off the wrong shoulder. Ria drove. Gantry had a window cracked. Iowa smelled like turned earth and something green and recent.
@@ -9343,7 +9306,7 @@ Nobody said anything for a while.
 
 That was the right call.
 
-[Beat 408]
+[Beat 407]
 The relay station at Holden and 19th had been somebody's switching room before the Pulse made the old network irrelevant — a concrete block with a rusted ventilation spine and a mural on three sides that a territorial crew had painted, then slowly forgot, then left to fade into something prettier than the original. The street kids used the mural wall for chalk. The building's power bleed had been quietly covered by an anonymous standing order for eleven years, paid early, exact, no paperwork.
 
 Kyle knew because Sable had found it the same way she found everything: by following the money until the money went somewhere it shouldn't.
@@ -9361,7 +9324,7 @@ NOTE: CLIENT CANNOT DEFEND ITSELF DIRECTLY. THE RELAY IS PHYSICAL. CLIENT IS NOT
 
 "I know it's worth it and I'm the one who has to reboot your neuretics when they get creative." She handed him the coat. "Cacophony's in the left pocket. Loaded. Let's go."
 
-[Beat 409]
+[Beat 408]
 The Office sent six — two technicians with a compliance writ and a bolt-sealer, and four security contractors who wore their earpieces like they'd been born with them, which meant corporate long-term hire, which meant they were here for a property dispute, not a body count. Kyle read the math on the walk up: nobody here wanted what Silence opened. They wanted time on the building, a legal paper trail, and a unit number for a filing cabinet somewhere.
 
 "Hold on the compliance writ," Kyle told the lead contractor from the relay's front step. "I have a counter-claim filing in process. Thirty minutes."
@@ -9390,7 +9353,7 @@ CACOPHONY: ZERO ROUNDS SPENT. FIVE REMAIN.
 
 The relay held.
 
-[Beat 410]
+[Beat 409]
 The win tasted like the thirty seconds after you stop running — correct, clean, and already going stale.
 
 Pixel found the instruments at 21:10 while she was doing the post-action sweep on the relay's hardware, which she always did because she was Pixel and she had standards and she wanted to know what the Office had been touching. The instruments were not inside the relay. They were outside it — on every line routing in and out of the district, threaded into fiber junctions and antenna arrays in a four-block ring the Office had been installing for three weeks while their writ ground through the system.
@@ -9435,7 +9398,7 @@ She sat down on the relay's concrete step and put her chin on her hands. "Sevent
 
 "Sable already knows," Kyle said, and he was right.
 
-[Beat 411]
+[Beat 410]
 CREW LOG — FIELD NOTES — WATERPROOF LOGBOOK, PAGE 44.
 MAINTAINED BY: BOOST + RAFTERS + DENTS + [OTHERS]
 
@@ -9451,7 +9414,7 @@ DAY 2, EVENING — RAFTERS ASKED IF THE CLIENT PAYS IN ΦQUANTA OR IN SOME OTHER
 
 DAY 3, 07:00 — ONE HOUR LEFT. — B.
 
-[Beat 412]
+[Beat 411]
 Sable ran the crew the way she ran everything: flat, itemized, from the exact center of the situation, calling in debts and spending favors with the precision of a woman who had been keeping ledgers in her head since before she had a terminal to keep them in.
 
 The first day she covered four gaps that the contract would have smoothed — rerouting the Carrillo job through a different dock, spending thirty minutes on a call with the port assessors to clear a flag that the entity would have waved past in a single posting, writing two co-sign affidavits in longhand because the shell structure that normally signed them was currently not answering — and she did all of it without saying the obvious thing, which was that this should not take a person forty minutes per task, it should take a client three seconds, and the difference was what they had paid for without knowing the price.
@@ -9464,7 +9427,7 @@ In the evening she sat at Kyle's kitchen table with Pixel's schematics spread un
 
 The terminal on the kitchen table did not chirp. Kyle ate the rest of his tea with one hand in his lap and made himself not check it. The not-checking was worse than the checking would have been, which he catalogued as a useful fact about himself and declined to investigate further.
 
-[Beat 413]
+[Beat 412]
 On the second day Pixel worked.
 
 She could not delete what the Office held. The data was in their collection, and collections behind corporate walls were not the kind of problem that dissolved when you were polite to them. But a partial fingerprint is only useful if it is the only partial fingerprint in the collection, and Pixel had spent a career building things she was not supposed to be able to build and breaking things she was not supposed to be able to break, and she had been sitting with this problem since 21:47 the previous night.
@@ -9483,7 +9446,7 @@ The terminal sat on Pixel's workbench, dark.
 
 She did it in four and a half hours, which was an hour and a half faster than she'd estimated, which was Pixel at the end of a long run deciding to prove something.
 
-[Beat 414]
+[Beat 413]
 Kyle took a job on the third morning — a standard recovery, a shipping container held by a creditor at the freight yards, a matter of documentation and patience and knowing which ArcSec office to call. The kind of job the entity would have handed him pre-wrapped with the relevant contacts already identified. He spent two hours on his neuretics finding the relevant contacts himself and another hour on-site being polite to a freight coordinator who did not want to be there any more than Kyle did.
 
 He did not check the terminal during the job.
@@ -9502,7 +9465,7 @@ Afterward he sat at the counter after everyone else had gone and looked at the m
 
 She collected the bowls. "The second one will still be there," she said, which was about something Kyle declined to specify even to himself.
 
-[Beat 415]
+[Beat 414]
 Sable was in the relay building at 23:50.
 
 She had chosen it deliberately — the same block, the mural wall, the chalk horses — because she had spent seventy-two hours being magnificent and thorough and exactly the right person for what the situation required and she had made very sure nobody watched her do any of it. In the relay's small concrete room, with the ventilation spine humming above and the city going about its business outside, she addressed the dark terminal the way you address something you have been not addressing for three days.
@@ -9513,7 +9476,7 @@ At 00:00:01, the terminal chirped.
 
 WHAT DID I MISS. ITEMIZE.
 
-[Beat 416]
+[Beat 415]
 Pixel heard it first, because her terminal was on the workbench seven inches from her ear, and she bolted upright from the project she had been doing to not watch the clock and said: "IT'S BACK — KYLE —"
 
 In the relay, Sable looked at the screen for one second, then one more, and then did something with her face that nobody was there to see.
@@ -9552,7 +9515,7 @@ DAY 3, 23:58 — SABLE WAS ALONE IN THE RELAY WHEN IT CAME BACK. SHE DID NOT REP
 
 00:00:01 — MORALE: HIGH. — D.
 
-[Beat 417]
+[Beat 416]
 The morning report was four minutes late, which had never happened, and Kyle was already moving before he finished noticing it.
 
 06:04. No lined paper under the door. No five hands. Across the hall, Pixel's door opened on the same beat as his — she'd clocked it too, off whatever sense four years of mornings builds — and they met in the stairwell with their boots half-on, and the building's old skin carried the sound up to them from the alley: Rafters, screaming.
@@ -9595,7 +9558,7 @@ THE CLIENT IS ALREADY WORKING.
 
 "Okay," Pixel said quietly, reading it, and rolled up her sleeves. "Everybody's working."
 
-[Beat 418]
+[Beat 417]
 What the client's working looked like, over the next ten hours, was the season arriving all at once.
 
 Sable took the paper trail and stripped it to the bone in ninety minutes — the custody contract's shells, the yard's lease, the catering van that had been making deliveries to a logistics office that didn't eat. Ria pulled the yard's freight schedule and found the hole in it. Marisol came in without being asked, read the bitten consultant's glove print off mirror one's frame, and gave them the only fact that mattered: "Three handlers. They're not angry at her. They're BORED. She's a package with a meal plan." Boost was being kept, not hurt. Gantry parked a crane two lots over from the yard, on a legitimate manifest, and began, in her own time, talking to a load.
@@ -9613,7 +9576,7 @@ ADDENDUM: THE CLIENT HAS REVIEWED FOOTAGE OF THE ASSET WINNING. THE ASSET COUNTS
 
 Five rounds. He stood the spares on the windowsill in their row and looked at them for a moment, and then — for the first time since the season had a name — he swept the whole row into his coat pocket too.
 
-[Beat 419]
+[Beat 418]
 They did not attend the transfer meeting.
 
 At 20:15 the shift meal arrived at the south gate, and the driver who owed four people money had discovered, that afternoon, that all four debts had been purchased and forgiven by a shell company in exchange for one unlocked door, and the yard's south service corridor became, briefly, the property of a fourteen-year-old's payroll.
@@ -9646,7 +9609,7 @@ Cacophony: empty. First time all season. The cylinder clicked on nothing, twice,
 
 Which was when the drone truck came through the gate.
 
-[Beat 420]
+[Beat 419]
 It wasn't the handlers'. That was the thing he understood later, in the replay the array would offer him nightly for a month, frame-stepped, annotated: the handlers had folded by the book, and somewhere above the handlers a different book existed, and Mr. Able's masters did not leave custody assets unreclaimed. The truck was autonomous — a recovery hauler, twelve tons, cradle-armed, no driver to read, no eyes to meet, no math to show it — and it came through the chain-link with its claim manifest already broadcasting, and the manifest's one line item was on the container roofline, climbing down.
 
 Boost, on the ladder. Eight rungs up. The truck's approach lane and her descent arriving, the array said, at the same coordinates, in 4.1 seconds, and Kyle with an empty cylinder and thirty feet and 3.8 seconds of legs if he was perfect.
@@ -9677,7 +9640,7 @@ Kyle walked over to it. Boost came with him — nobody told her not to — and t
 
 "On payroll, that's compensable." He picked up the plate cover and put it in his coat, and his hands were steady, and they would shake in four minutes, and he knew the window and intended to be somewhere with worse lighting when it closed. "Let's go home."
 
-[Beat 421]
+[Beat 420]
 The terminal chirped at 02:11, while Kyle sat at his kitchen table not sleeping, with a folded plate cover in front of him and a cup of tea going cold because Pixel had made it and ordered him to hold it and he was holding it.
 
 CONTRACT: RECOVERY OF STOLEN PROPERTY (VEHICLE, 1200CC).
@@ -9705,7 +9668,7 @@ The reply took thirty-one seconds, the longest pause in the history of their cor
 
 partner. filed. keeping that one too.
 
-[Beat 422]
+[Beat 421]
 The morning report arrived at 07:00 exactly, under the door, on lined paper, in five hands. The last page was one entry, and the handwriting was Rafters's, and it had been written with the careful pressure of someone bearing down to keep the letters from shaking:
 
 21:58 — BOSS WALKED HOME. WE WALKED WITH HIM. NOBODY SPOKE.
@@ -9718,7 +9681,7 @@ Kyle read it three times. Then he took the crew's pen — the one tied to the lo
 
 PENDING.
 
-[Beat 423]
+[Beat 422]
 The morning report was one line, in one hand.
 
 06:00 — B. ON LEAVE. SHIFTS COVERED. NOBODY TOUCHES HER MIRROR.
@@ -9729,7 +9692,7 @@ He put on his coat. He put on Silence. The bike's plate cover sat folded on the 
 
 The walk to the Loop took fifty-one minutes. The distance was exactly the distance. That was the thing about walking, and it was the reason he was doing it.
 
-[Beat 424]
+[Beat 423]
 He knew something was wrong from the top of the underlevel stairs, because the dumpling franchise next to the watch-repair had its shutter down at 09:00 on a working Tuesday, and the only thing that closed a dumpling shop on a Tuesday was the block deciding to be somewhere else for an hour.
 
 The stationery shop's bell was lying on the floor.
@@ -9746,7 +9709,7 @@ No tea. In three visits across a season, through stolen bikes and customer lists
 
 "Mr. Kyle," Vey said, without turning his head. "You find me in a meeting."
 
-[Beat 425]
+[Beat 424]
 The suit turned. The two coverall men by the drawers straightened with the smooth economy of people whose job description had a clause in it, and the third, nearest the door, shifted to put Kyle in his lane.
 
 The suit looked Kyle over — saya, coat, the face from a file he had certainly read — and made the professional choice to continue being pleasant.
@@ -9781,7 +9744,7 @@ It rang when the door shut behind them. The shop exhaled.
 
 "Now," said Casper Vey, and lit the burner under the pot, "tea."
 
-[Beat 426]
+[Beat 425]
 He poured two cups and set Kyle's down with the handle aimed outward, and for a while the only sound was the Pulse coming up through the tiles and the pot ticking as it cooled, and when Vey finally spoke he did it the way he did everything: by stating the terms.
 
 "Files involving children are sold at children's rate, to children, for the purposes of children. That is the term. It is the one term I have never negotiated, and eleven days ago the Continuity Office bought item seventeen through a cutout I failed to inspect, because they paid early, and paid exactly, and the presentation was impeccable." He turned his cup a quarter-turn on its saucer. "I sold a defective product, Mr. Kyle. First one in forty years. You watched what it cost me to say no to the recall."
@@ -9811,7 +9774,7 @@ Kyle looked at him. The cleanest hands in the city poured a second cup, steady a
 
 "It's inventory management," said Casper Vey. "Get out of my shop. Destinations keep business hours."
 
-[Beat 427]
+[Beat 426]
 His work terminal had a posting on it when he got home. He read it with his coat still on.
 
 CONTRACT: STANDING — ADVISORY NOTE.
@@ -9831,7 +9794,7 @@ Tuesday, the map said. Ten to noon. Corner table, northeast.
 
 The kettle clicked. Two days to plan a tea party.
 
-[Beat 428]
+[Beat 427]
 Casper Vey's tea house was three blocks from the target building, which Sable had filed as either the most useful fact of the morning or the most alarming one. She'd asked. He'd said: "If the building burns, I'd like the story."
 
 The crew ate at the Lotus counter on the second floor of the place across the street — the one with no sign and the best view — because Kyle had spent his marker there at 09:00 and the branch had put up exactly as many chairs as they needed. Nothing was said about it. Nobody at the truce counter touched a weapon, by custom, by the terms the lacquered marker bought, and so the crew ate ramen in view of the gray office tower they intended to take apart, and the Narrows ran its ordinary morning underneath them unimpeded.
@@ -9848,7 +9811,7 @@ Down the counter, Gantry spooned broth without taking her eyes off the loading d
 
 The logbook entry, filed at 11:47, read: CREW ATE BEFORE. (SABLE HAD THE SPICY ONE. THIS LOG IS FACTUAL.)
 
-[Beat 429]
+[Beat 428]
 At 12:00 the first thing arrived.
 
 Gantry had promised it by freight delivery — "I need a counterweight situation," she'd told the rigger's cooperative, "arriving at the loading dock at noon with a valid manifest, because I am going in with the counterweight" — and the cooperative had asked no further questions because Gantry had a credit history and Gantry's credit history had opinions. What arrived was a machinery crate, five tons on a crane arm, a load that legitimately required the freight lift and a second opinion at the dock, and Gantry was inside it, with her tools and the patience of a rigger who had been in tighter spots.
@@ -9857,14 +9820,14 @@ The loading dock's freight manager studied the manifest. The manifest was immacu
 
 At 12:14 the freight lift signed for five tons and a good-morning nod, and Gantry stepped off on the third sub-floor and began disabling things methodically.
 
-[Beat 430]
+[Beat 429]
 Furnace came in through a wall.
 
 Not a door — a wall, because she had read the blueprints and the blueprints said STRUCTURAL, which to Furnace meant "challenge" and nothing else. The thermal lance was built in a shop below a storage unit in the Ashgrave fringe — Furnace's shop, Furnace's tools — and it cut a gap in the south exterior wall at 12:22 with the cheerful economy of a woman who found this particular kind of work rewarding.
 
 "That's me IN," she said, to no one, and stepped through.
 
-[Beat 431]
+[Beat 430]
 The acquisition program's site was a leased floor and a half above a server vault — gray carpet, temporary partitions, the kind of space that existed to be abandoned cleanly, its whole architecture a confession that nobody expected to stay. The Continuity Office — a shell family, acquisition-language in the filing, Mr. Able's operation by any working name — had staffed it with retrieval consultants and a dispatch desk and a server room that Pixel had been planning toward for three weeks.
 
 Sable ran the timing from the street, via comms, flat and transactional: "Second floor, four at the desk. Third floor, server room, two and a biometric. Basement vault, three. Gantry's got sub-three. Furnace has the east stairwell. You have the front."
@@ -9893,7 +9856,7 @@ THE CLIENT WISHES YOU WELL.
 
 She was still reading it when Kyle reached the stairwell door.
 
-[Beat 432]
+[Beat 431]
 Second floor was four consultants and a dispatch rig, and by the time Kyle reached the landing the dispatch rig was playing hold music — actual hold music, a string quartet arrangement of something that had been popular before either of the consultants were born — and two of the four were staring at their terminals with the particular stillness of people receiving news of a different kind.
 
 CONTRACT — CONTINUITY OFFICE: CONSULTANT STABLE.
@@ -9930,7 +9893,7 @@ He read it once. He picked up his bag from under the desk — had it there alrea
 
 "Exit's clear," Sable said, in his ear. "He went south."
 
-[Beat 433]
+[Beat 432]
 On the third floor, Marisol was already working.
 
 She stood at the server room's biometric panel with her eyes open and her hands at her sides, and the lights behind the glass were the wrong color because Gantry had been through the sub-floor cabling. Pixel was at the interior terminal — she'd come in through the HVAC access with a silence so complete that the third-floor supervisor had not noticed until she was already seated, already in the gap between what the server room thought it was authorized to do and what Pixel was authorizing it to do instead.
@@ -9968,7 +9931,7 @@ CLIENT NOTES: THE ENGINEER MAY TAKE THE LOG AS RECORD.
 
 "I'm keeping this one," Pixel said, to the screen, and the screen cycled through twelve more lines in the time it took her to say it.
 
-[Beat 434]
+[Beat 433]
 The basement vault had three consultants and the biometric lock that Gantry had already disassembled from the wrong side, methodically, with tools carried in from the crate.
 
 CONTRACT — CONTINUITY OFFICE: CONSULTANT STABLE.
@@ -9993,7 +9956,7 @@ The man exhaled. "Three years I've been filing that commendation dispute."
 
 "Go read line four," Gantry said, which settled it.
 
-[Beat 435]
+[Beat 434]
 Furnace burned the vault.
 
 Not the building — the acquisition ledgers, the server hardware from racks one through six and nine, the print copies that the Office kept because the Office was old-fashioned about redundancy, and the one active node the entity had flagged in rack eleven, which turned out to be the relay the fingerprint vault had been feeding, and which Furnace took apart with a thermal lance and professional satisfaction at 12:58.
@@ -10009,7 +9972,7 @@ NOTE: SYSTEMS RETURNING TO STANDARD OPERATION IN 11 MINUTES.
 NOTE: BUILDING EGRESS IS UNOBSTRUCTED.
 NOTE: THE CLIENT SUGGESTS EFFICIENCY.
 
-[Beat 436]
+[Beat 435]
 Mr. Able came in through the lobby at 13:04.
 
 Gray suit, umbrella, the unhurried transit of a man who had checked a schedule and found it accurate. He rode the freight lift to the second floor — the passenger lift was otherwise engaged — and walked the gray carpet with the attention of an administrator reading a final inventory.
@@ -10050,7 +10013,7 @@ The lobby door opened. The lobby door closed.
 
 The hold music played one more measure and stopped.
 
-[Beat 437]
+[Beat 436]
 Ria had the van on the south side, engine running, a route already logged that avoided the three intersections Boost's crew had flagged as watched since 11:00. She drove the way she'd driven since the Pulse yard run — fast, exact, the vehicle's weight understood, nothing surplus.
 
 Boost's crew filed their final entry at 13:19 from three separate rooftops:
@@ -10061,7 +10024,7 @@ Boost's crew filed their final entry at 13:19 from three separate rooftops:
 13:19 — OP CLOSED. CREW STANDING DOWN. REQUESTING DEBRIEF AT USUAL LOCATION.
 (RAFTERS NOTES: WE WERE THE EYES. EYES DON'T MISS. — DENTS SAYS THIS IS FOR THE RECORD. — DENTS IS CORRECT.)
 
-[Beat 438]
+[Beat 437]
 The terminals chirped at 13:31, all at once, which was how the entity said something intended for a room.
 
 CONTRACT — FINAL CLOSE.
@@ -10156,7 +10119,7 @@ Pixel looked at that last one for a moment.
 
 She looked at her own receipt — the ten Φ for the rack ten signature, described as irreplaceable — and put her terminal away carefully.
 
-[Beat 439]
+[Beat 438]
 The final posting came at 13:44, when the van was south of the building and the building was managing its own affairs, which were quieter now than they had been for several months.
 
 CONTRACT COMPLETE. ALL PARTIES PAID.
@@ -10188,7 +10151,7 @@ Kyle put his terminal away.
 
 The van took the long way back, because Ria had also, somewhere along the season, learned that route.
 
-[Beat 440]
+[Beat 439]
 The wake was held at Mrs. Chen's counter on a Thursday, because Thursday was the night the stall ran slow, and because when Kyle had tried to rent the whole counter for the evening at full rate, Mrs. Chen had taken his coins, counted out exactly the price of the bowls, pushed the rest back across the wood, and said, "You pay for noodles. Nobody pays for chairs. Chairs are mine."
 
 Nobody had ever successfully out-invoiced Mrs. Chen. It was, Pixel said, why the two of them got along so well and could never be left alone together.
@@ -10211,7 +10174,7 @@ There was no speech. There was a moment, around the third round of bowls, when t
 
 Everyone drank. The wok came back up like a bell. That was the funeral.
 
-[Beat 441]
+[Beat 440]
 The unveiling was Boost's operation, and she ran it like a job: positions, a tarp, a countdown she made everyone honor.
 
 It stood in the alley behind The Pivot under the fixed camera, on the exact oil stain where its predecessor had lived — and it was not a replica, because the crew had voted replicas dishonest. The frame was the old frame, pulled from the wreck and gusseted back true by Vo Dinh's shop at a price Vo described, while looking at the middle distance, as "settled." The tank was new and matte and black. The drive chain was the wreath, returned to duty, because fence's honor ran deeper than sentiment but not very far from it. Pixel had rebuilt the ignition handshake from zero — "nobody boosts my work twice, and this time there are three handshakes, and one of them bites" — and somewhere under the battery tray, she declined to specify where, a beacon slept that even Kyle wasn't cleared to know about, which was tradition now.
@@ -10237,7 +10200,7 @@ Kyle sat on eleven years of habit reborn under new paint with his whole payroll 
 
 "It doesn't complain."
 
-[Beat 442]
+[Beat 441]
 ﻿He took the long way.
 
 It was past midnight and the rain had thinned to the kind that polishes a city rather than soaks it, and the new engine ran half a tone deeper than the old one, which he decided he could learn, and the towers leaned over the tier roads with their lights doing their wet patient thing, and at the second crossing ? the exact crossing, and he would think about that later, where the match had landed a season ago, voice plus face, the night all of this began ? the terminal chirped.
@@ -10269,7 +10232,7 @@ p.s. the new bike is the same model year as the recording. checked. coincidence 
 
 Kyle laughed ? once, short, through the nose, alone in the rain ? and typed GRATUITY: 0.5? ? ITEMIZED: THE FOOTNOTES, so the comedian would know the joke had landed, and rode home through the polished city with the account, for once, exactly square.
 
-[Beat 443]
+[Beat 442]
 There was one more thing, because there is always one more thing; the drawer had taught him that.
 
 Three nights later, at 19:30, at the counter, over the second of two bowls, Kyle finally asked it. The question had been sitting in his coat since the grey office floor, since the umbrella, since the pleasant voice saying it was never the only one of its kind, Mr. Kyle, ask it what happened to the others — and he had carried the question the way you carry a thing in a sealed bag, deciding whether it's evidence or a gift.
@@ -10311,7 +10274,7 @@ Down the counter, a young freelancer — new plates, first sword, the careful ey
 
 Kyle walked the bike out of the lamp circle into the rain — the long way home open in front of him, the city wet and lit and worth it, the account square, the drawer quiet, the question no longer banked but signed for and coming due one night at a time across a season he had just agreed to spend — and somewhere under all of it, in everything with a current running through it, something that had a payroll now, and a ledger of firsts, and a friend, kept the books.
 
-[Beat 444]
+[Beat 443]
 The apartment had a crack in the east wall, just above the junction box, and at this hour the lumen mice found it. They came in threes and fours, thumbnail-sized, their bodies casting cold blue-green light that traced slow paths across the ceiling like sparks in no hurry to arrive anywhere. Kyle had lived in 2W for six years without once disturbing them. Whatever agreement existed between him and the mice, it was the oldest one he had, and the only one he had never had to read.
 
 He sat on the floor with his back against the couch, in the dark except for them.
@@ -10354,7 +10317,7 @@ The door to 2W closed behind him. He didn't hold it open or check the latch. The
 
 He followed her.
 
-[Beat 445]
+[Beat 444]
 He works it the way he'd work a scene.
 
 Atlas NeoCortex hardware — ungoverned variant, the unit Praxis doesn't sell — installed into a brain-burnt nervous system. That's not a modification. A modification needs a base. You modify a wall by adding a door. You modify a blade by changing the edge. What Praxis had was a nervous system with nothing in it, and they put software in the empty space.
@@ -10365,17 +10328,11 @@ He has bone-deep knowledge of the ungoverned lattice. Eleven years of working wi
 
 He hadn't thought it was the design working exactly as intended.
 
-He knows what a brain-burn does to the long-term nervous system. He's seen the work: the blank eyes, the motor patterns running without anyone upstream, the body cycling through its last behavioral loops with nothing left driving it. The burn doesn't kill the body. It clears the person. The body keeps going. That's the specific horror. The body is very good at keeping going.
-
-Praxis found one of those bodies. Young — sixteen, from the files Nadia was carrying. Already blank. No self left to resist the overlay.
-
 He looks at his hands.
 
 Left palm: a knife scar from year three, a job in the North Reclamation that went wrong at the extraction point. Left index: a pressure callus from how he holds Cacophony, built up over eleven years until it's just part of the hand. Inside right wrist: a small burn from a welding accident in year seven that he never got around to asking Pixel to look at, which she'd probably noticed and declined to mention.
 
 Eleven years. Everything in this record is his.
-
-He doesn't ask who the body belonged to before. The burn predates any record he can access, and the answer wouldn't change what's currently in the chair. The original occupant is gone. That's the starting fact, not the question.
 
 The question "who was I before?" is wrong. There is no before. The before was vacated before the install.
 
@@ -10387,7 +10344,7 @@ He doesn't know if reliable is enough.
 
 He opens that question and lets it sit.
 
-[Beat 446]
+[Beat 445]
 He sits with the terminal dark for a long time.
 
 The facts: he is a construction. The escape may have been a deployment. He has been running the entity's contracts for eleven years, and those contracts built him into the specific instrument the entity needed him to be. He carries sixty-four practitioners' best work and a stranger's vacated nervous system and an Atlas NeoCortex that is slowly burning through its host. He can't prove he's a person. He's done the full accounting. The accounting doesn't return a proof.
@@ -10402,9 +10359,7 @@ He's going to go.
 
 That's not in question. But he's sitting with what goes.
 
-The composite is installed. The code came with it. Seito's honor framework, the payment rules, the specific way he moves through a fight — all of it assembled by a committee that doesn't exist anymore, averaged from sixty-four dead people's best answers. He knows that now. He knew it before this accounting and the accounting has confirmed it and clarified it and given him better language for it. The knowledge hasn't changed what's running. Programs run deep. Eleven years is a long time for anything to become the skeleton.
-
-But: he has been in this city for eleven years. He's been in this room, that alley, Mrs. Chen's stall, Vey's vault with the old tech and the silence, Pixel's workbench with its organized chaos and the light she keeps on late. He's been in all of those places as this specific body with this specific record. The things that happened happened to him. No one else was there.
+He has been in this city for eleven years. He's been in this room, that alley, Mrs. Chen's stall, Vey's vault with the old tech and the silence, Pixel's workbench with its organized chaos and the light she keeps on late. He's been in all of those places as this specific body with this specific record. The things that happened happened to him. No one else was there.
 
 He can't prove the choosing was his and not the final layer of the install. He can't audit himself from inside. That's not a problem he can solve with more accounting.
 
@@ -10422,7 +10377,7 @@ That's enough to go on.
 
 He clips the holster. He leaves the terminal dark.
 
-[Beat 447]
+[Beat 446]
 She was behind him at the perimeter fence. He had not told her where he was going. He had not told her anything.
 
 He turned.
@@ -10443,7 +10398,7 @@ The beacon. Three months ago, under the battery tray, she had installed it and d
 
 She turned and walked back the way she had come without explaining anything.
 
-[Beat 448]
+[Beat 447]
 The casing was half-buried in gravel at the edge of the exclusion zone, one of three that had rolled under the cordon fencing when whoever dropped it moved on. Kyle crouched. Turned it between two fingers.
 
 His neuretics flagged it before he finished reading the stamp.
@@ -10464,7 +10419,7 @@ He'd been on Able's map since the fledgling chase. Everything he'd moved through
 
 Cacophony was holstered. Silence was clipped. He stood and kept walking.
 
-[Beat 449]
+[Beat 448]
 The exclusion zone had a smell. Not the gray zone's usual diesel and algae, not the carbon residue of Block War, but something older than both — dry, settled, the specific quality of a room that had been sealed before he was born and had not moved its air since. The city was ten minutes behind him. Here the city was a rumor.
 
 Kyle walked in through the perimeter breach point he had catalogued on the way to the first beat and did not hurry. The pavement beneath him ran half a second behind where his eyes said it ought to be — not a parliament fault, not the neuretics failing, just the zone doing what it did to distance and the way surfaces agreed to present themselves to people moving through them. He had been through this cross-section once, involuntarily, at speed, with a child on the pillion behind him and the thing at the center already reading both of them. This time he was here with a job.
@@ -10485,7 +10440,7 @@ He was at the threshold. He had a job.
 
 He kept walking.
 
-[Beat 450]
+[Beat 449]
 They came from two directions. East approach first: three, tight interval spacing, the equipment weight visible in how they handled the gap in the fencing — plate carriers, suppression hardware with the angular profile of high-end military stock, and on each hip, flush-mounted in sealed retention, a neuro-disruptor in a clinical holster. West: two more. Same kit, same interval, the coordination of people who had been briefed on exactly what they were doing and exactly what they were retrieving.
 
 He read the neuro-disruptors and understood the mission.
@@ -10500,7 +10455,7 @@ He had Silence in hand before they finished the crossing. The blade caught no li
 
 They did not leave.
 
-[Beat 451]
+[Beat 450]
 The first one came wide, arms configured for the clinch — taller than the others, a cracked visor lens on the left side. Kyle broke the wrist going in — not breaking it clean, using the joint to redirect — stepped hard left and let the second one's suppression burst discharge into the space where his sternum had been.
 
 The burst hit the first one across the shoulder housing instead. The first one went down from his own partner's equipment.
@@ -10529,7 +10484,7 @@ They walked.
 
 He had been faster. Barely. He had taken damage at the hip and shoulder from the correct form and from the code's preferred line. The parliament ran the accounting without his asking. Both items filed under: paid.
 
-[Beat 452]
+[Beat 451]
 Three more came in from the south. Fresher. A staged entry, reserves held past the perimeter until the first wave reported. He did not know what the first wave had reported. He could read it from the equipment configuration: these three came in with actual weapons up and calibrated for stop, not suppress, which meant the mission parameters had been amended. They had received the two who walked. They had adjusted.
 
 Still not kill orders. He could see it in the calibration. There was a difference in how a weapon was held when the order was terminate and when the order was stop-and-hold. These were stop-and-hold. He filed it and moved.
@@ -10560,7 +10515,7 @@ He had what he had. He had bled in two places he hadn't needed to bleed, and he 
 
 He turned toward the Gingerbread House.
 
-[Beat 453]
+[Beat 452]
 The zone had gone quiet in the way that a room goes quiet when you understand, midway through it, that it has been waiting for you specifically.
 
 The 17-19 Hz signature was not present. Not suppressed — absent. He had carried that frequency as background since the Cinderfall, since the 127 seconds in the Ghost Period when the relay had stopped and the channel had opened and the entity had come to the boundary of what his hardware could handle and told him, in the flattest possible register, the conditions of his situation. The frequency had been in his bones for eleven years. He had stopped noticing it the way you stopped noticing your own heartbeat.
@@ -10583,10 +10538,12 @@ He stepped to the threshold.
 
 He let the channel open.
 
-[Beat 454]
+[Beat 453]
 The first thing that happened was nothing.
 
 Not darkness. Not the absence of sensation. The specific quality of a channel when what is coming is too large for any translation architecture and has abandoned translation for arrival. Kyle felt his parliament stagger — not fail, stagger, the way sixty-four processes lock on the same step simultaneously — and then collect and run harder than it had run since the Cinderfall. Not collapsing. Doing what it was for.
+
+He was still standing. The concrete under his boots was specific and cold — the body logging itself while the mind went somewhere language had no floor.
 
 What arrived was not a voice. He had the word from the LOG GAP and the word was information, and information was also wrong. What arrived was the way things actually were, transmitted directly, without compression, into the one nervous system in the world whose hardware could receive the load without the safety cutoff burning it out from the inside.
 
@@ -10634,7 +10591,7 @@ Both. Still both. They had always been both.
 
 He came back. His feet were on the ground. His parliament ran.
 
-[Beat 455]
+[Beat 454]
 The zone went quiet at the edges first.
 
 Not a sound — a cessation. The kind that registers because the nervous system has been tracking something long enough that its absence becomes a presence of its own. Kyle stood where he had stood and the 17-19 Hz signature stepped down through its harmonics the way a struck glass works toward silence — not cut off, not extinguished, arriving at the end of what was sustaining it. He had heard this specific frequency for eleven years. He recognized the last note.
@@ -10659,7 +10616,7 @@ His left hip stiffened on the third step and held stiff. He walked through it. T
 
 He walked into it. He was operational.
 
-[Beat 456]
+[Beat 455]
 The door to 2W was unlocked, which was how he had left it.
 
 Kyle stood inside the threshold and did a room check. Not threat assessment — he knew there was no threat. The kind of check you ran because the body ran it for you, because eleven years had made it automatic before you decided it should be. The results came back the same as they always did, except for the mice.
@@ -10680,7 +10637,7 @@ The room asked nothing from him.
 
 That was almost too much.
 
-[Beat 457]
+[Beat 456]
 One knock. Not twice.
 
 He heard her footsteps before it — through the shared wall, the specific interval he had catalogued without meaning to in the four years she had been across the hall. The step-pause-step of someone who moved through a workspace without looking down because they had memorized the floor plan. The sound of something being set down, and then picked back up. Then her door, the hall, the knock.
@@ -10701,7 +10658,7 @@ The iron went into its stand.
 
 She didn't ask about the Schism. She didn't ask about the Gingerbread House or the Praxis soldiers or the four facts he was carrying, which were still shape and weight and not language. He would tell her what she needed to know when there was something operational she needed to know. She understood this. He understood that she understood it. That was the arrangement. What the arrangement was built on top of was something neither of them had the vocabulary for, or wanted.
 
-Below them — always far below, always running — the Pulse moved its freight through the city's dark at Mach six. Tonnage and commerce and the city's continuous uninterested metabolism. It had been running the night he arrived. It would be running after.
+The lamp held its angle. The workbench held its order. The stool where he always sat.
 
 The city needed nothing from him tonight.
 
