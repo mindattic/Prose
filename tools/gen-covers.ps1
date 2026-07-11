@@ -3,7 +3,7 @@
 
 $timestamp = Get-Date -Format "yyyy-MM-ddTHH-mm-ss"
 $basePath  = "R:\Desktop\EPub\MindAttic\GLMZ"
-$project   = "D:\Projects\MindAttic\StreetSamurai\v3\StreetSamurai.Blazor"
+$project   = "D:\Projects\MindAttic\StreetSamurai\v3\StreetSamurai.Cli"
 
 $strands = @(
     @{

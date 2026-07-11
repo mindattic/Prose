@@ -11,9 +11,9 @@ powershell -NoProfile -ExecutionPolicy Bypass -Command "cd D:\Projects\MindAttic
 It will:
 
 1. `git pull` the sibling `MindAttic.UiUx` repo (hard-fail if dirty).
-2. Run `MindAttic.UiUx/sync/sync-streetsamurai.ps1` to splice latest components into `v3/StreetSamurai.Blazor/wwwroot/`.
-3. `dotnet build v3/StreetSamurai.Blazor -c Release` to catch compile errors locally before pushing.
-4. `git add v3/StreetSamurai.Blazor/wwwroot`.
+2. Run `MindAttic.UiUx/sync/sync-streetsamurai.ps1` to splice latest components into the web host wwwroot (Writer/Codex).
+3. `dotnet build` of the web host project(s) to catch compile errors locally before pushing.
+4. `git add` the updated wwwroot.
 5. If anything staged: `git commit -m "Sync MindAttic.UiUx for deploy (UTC)"`.
 6. `git push origin master` — Azure CI/CD fires automatically: **build → migrate → deploy**. The `migrate` stage applies schema + enables temporal versioning against Azure SQL via the OIDC service principal before `deploy` ships the app.
 7. Print the Actions URL for monitoring: <https://github.com/mindattic/StreetSamurai/actions/workflows/azure-deploy.yml>.

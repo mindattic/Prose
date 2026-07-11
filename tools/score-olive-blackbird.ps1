@@ -31,7 +31,7 @@ $StartTime = Get-Date
 
 foreach ($Type in $Types) {
     Write-Host "[$([datetime]::UtcNow.ToString('HH:mm:ss'))] Starting type: $Type"
-    dotnet "D:\Temp\olive-build\StreetSamurai.Blazor.dll" `
+    dotnet "D:\Temp\olive-build\StreetSamurai.Cli.dll" `
         --review-entity `
         --type $Type `
         --ballots 10 --prose 2 --unrated `

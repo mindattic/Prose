@@ -16,7 +16,7 @@ Write-Host "URL   : $MagentaUrl"
 Write-Host "Model : $MagentaModel"
 Write-Host ""
 
-dotnet "D:\Temp\olive-build\StreetSamurai.Blazor.dll" `
+dotnet "D:\Temp\olive-build\StreetSamurai.Cli.dll" `
     --review-entity `
     --ballots 10 --prose 2 --unrated `
     "--local-url" $MagentaUrl `

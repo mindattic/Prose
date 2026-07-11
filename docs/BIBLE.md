@@ -126,12 +126,14 @@ Solution: `v3/StreetSamurai.slnx` (.NET 10). Active engine lives under `v3/`.
 |---|---|
 | `v3/StreetSamurai.Shared/` | POCOs, enums, DTOs shared by every project |
 | `v3/StreetSamurai.Core/` | Canon services, generation pipeline, embeddings, review |
-| `v3/StreetSamurai.Blazor/` | ASP.NET Core Blazor Server host — the live site (web-only) |
+| `v3/StreetSamurai.Writer/` | ASP.NET Core Blazor Server host — the live writing UI (web-only, port 5200/7200) |
+| `v3/StreetSamurai.Codex/` | ASP.NET Core Blazor Server host — the full codex/admin UI (web-only, port 7201) |
+| `v3/StreetSamurai.Cli/` | Standalone console app — all CLI commands (`ss` shim targets this) |
 | `v3/StreetSamurai.Mcp/` | Model Context Protocol server exposing canon to Claude clients |
 | `v3/StreetSamurai.UnitTests/` | NUnit + bUnit tests |
 | `v3/ApplyMigrations/` + `Apply*`/`Promote*`/`Sync*`/`Write*` consoles | One-shot migration/backfill tools (not runtime) |
 
-The `ss` CLI dispatches from `Program.cs`. Stack: .NET 10, Blazor Server, SQL Server 2025
+The `ss` CLI dispatches from `v3/StreetSamurai.Cli/Program.cs` (separate from the web host). Stack: .NET 10, Blazor Server, SQL Server 2025
 (LocalDB in dev), ElevenLabs TTS, Legion/LLMVoting (11 providers), embeddings (`VECTOR_DISTANCE`),
 QuikGraph. Quick start: `README.md`.
 
