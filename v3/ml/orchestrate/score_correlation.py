@@ -42,17 +42,17 @@ SELECT
     m.FleschReadingEase,
     m.AvgSyllablesPerWord,
     m.DialogueProportion,
-    AVG(b.EmotionalScore)             AS EmotionalScore
+    b.EmotionalScore                  AS EmotionalScore
 FROM BeatProseMetrics m
-JOIN NodeReviewBeatScores s ON s.BeatNumber = (
-    SELECT b2.Number FROM Beats b2 WHERE b2.Id = m.BeatId
-)
-JOIN Beats b ON b.Id = m.BeatId
+JOIN Beats b             ON b.Id       = m.BeatId
+JOIN NodeReviews r       ON r.NodeId   = m.NodeId
+JOIN NodeReviewBeatScores s ON s.ReviewId = r.Id AND s.BeatNumber = b.Number
 GROUP BY
-    m.BeatId,
+    m.BeatId, m.NodeId,
     m.WordCount, m.AvgWordsPerSentence, m.TypeTokenRatio,
     m.LexicalDiversityMtld, m.FleschKincaidGrade, m.FleschReadingEase,
-    m.AvgSyllablesPerWord, m.DialogueProportion
+    m.AvgSyllablesPerWord, m.DialogueProportion,
+    b.EmotionalScore
 HAVING COUNT(s.Score) >= 2
 """
 
