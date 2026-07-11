@@ -420,8 +420,10 @@ When she appears in a scene, describe what she's wearing.
 - **Crucible Armaments** — institutional service weapons; NCID V-7 sidearm; ArcSec secondary arms; telemetry built in
 
 *Ammunition:*
-- **Meridian Ordnance** — premium military-spec; MO-9 hollow point; the benchmark; archology-tier price
+- **Meridian Ordnance** — premium military-spec; MO-9 hollow point, MO-12 12-gauge slug, MO-556 5.56mm AP (most-stolen round in GLMZ); archology-tier price
 - **Pulse Hollow** — standard licensed street ammo; adequate in every way; what Border Markets stock
+- **Ghost Grain Munitions** — gray zone specialty; subsonic loads for suppressed work; GG-9 9mm subsonic is the quiet-work standard; plain black cardboard box, ghost-white GG stamp; no storefront; Border Market only
+- **Carrion Defense Works** — CDW-14 Entropic Shell (14-gauge, proprietary; unpredictable fragmentation); matched to CDW revolver shotguns
 
 *Vehicles — ground:*
 - **Meridian Motor** — the standard GLMZ consumer car; MM-5 sedan; hydrogen cell; what contractors and cabs drive
@@ -435,6 +437,16 @@ When she appears in a scene, describe what she's wearing.
 - **Ferrogate Aero** (FA-9) — the transit bus of the sky; boxy, loud, gray-white, reliable; what contractors fly
 - **Cormorant Defense** (CV-7) — ArcSec assault VTOL; angular, dark, armored; loud by design; intimidation is the product
 - **Rampart Ascent** — gray zone VTOL service; reclaimed ex-Ferrogate/ex-Cormorant airframes; every one looks different; no flight log
+
+*Medical & field equipment:*
+- **Steadfast Medical Systems** — licensed-street trauma hardware; SFS-4 field kit (nanocoagulant applicator, synth skin roll, bone-set foam; matte-green case); no pharma; priced for gray zone accessibility
+- **Oma Nano-Therapeutics** — medical nanotech; NanoSeal NS-2 trauma patch (seals lacerations under 4cm, dissolves in 6h; Φ80 each; widely secondhand in gray zone)
+- **Vestis Protective Systems** — rebreathers, eye protection, hazard suits; R-3 Rebreather (matte gray, green cartridge) standard in construction zones, salvage, gray zone corridors with uncertain air quality
+
+*Industrial & tools:*
+- **Ironhold Industries** — ferrocement and structural materials; their brand is stamped on GLMZ wave architecture, rebar, structural panels; power tools (IF-9 plasma cutter)
+- **Gridlock Tools** (Ironhold subsidiary) — licensed-street tool line; GL-7 power wrench in every workshop in GLMZ
+- **Palladian Construction** — heavy infrastructure; PCS-3 concrete sprayer standard for wave maintenance and gray zone squatter sealing
 
 *Neuretics:*
 - **Praxis NeoCortex** — consumer neuretics; Standard → Extend → Prime → Sovereign; Praxis is the public face; Marrow is the real product
@@ -450,8 +462,12 @@ When she appears in a scene, describe what she's wearing.
 - **Ringo** + subsidiaries — food, retail, banking, residential; the closed consumer loop
 - **CramIt** (Amber Harvest Foods, Ringo) — nutrition bars; contractor-issue; taste like someone described chocolate to someone who had never eaten food
 - **Ringo Lager** (Ringo) — the beer of GLMZ; cheap; what 60% of GLMZ bars serve; AR label pulses three seconds on the can
+- **Deepfield Foods** (Ringo subsidiary) — archology-tier lab-cultured protein; Deepfield Cultured Steak 80g (Φ12; genome provenance neuretic overlay; never seen below Zone 5)
 - **Deepwell Coffee** — ubiquitous gray zone / licensed street kiosk coffee; mediocre; reliable; hot
 - **Bright Ratio** — archology-tier energy drink with nano-additive neuretic enhancement; Φ18/unit; not available below Zone 5 infrastructure
+- **Koji Press** — fermented soy-algae protein bars; four zone-named flavors; Zone 4 Umami is ops standard; Φ4; fits under body armor
+- **Saltline** — bare-bones licensed-street electrolyte pouch; Φ1.50; silver foil; even Saltline has an HR logo animation on the pouch; gray zone corner stores, ArcSec break rooms
+- **Old Harbor Collective Kitchen** — gray zone food collective; Hokkien Instant Noodle Packs (Φ2, 12 zone-flavor varieties; neuretic olfactory sim on packaging); every corner store that still works
 
 ---
 
