@@ -37,7 +37,7 @@ her credibility. She was choosing what to report. She did not know she was also 
 suppress.
 
 **Why heartwarming:** The bleed is involuntary and unwanted. It is also the only mechanism in the
-novel that treats the characters' interior lives as worth preserving. Amara receives Seto's memory
+novel that treats the characters' interior lives as worth preserving. Amara receives Vargus's memory
 of running a route at dawn — the city from below, the specific physics of a corner taken at speed,
 a world entirely ungoverned, unsuppressed, unmanaged. The warmth comes from the specificity of
 another person arriving *whole.*
@@ -63,21 +63,21 @@ maintenance.
 
 **Present day: 2226** (SS-A28 — the current corpus present is write-year + 200).
 
-**Amara Osei** (news broadcaster, former wellness-tech correspondent) and **Seto Banda** (data
+**Amara Osei** (news broadcaster, former wellness-tech correspondent) and **Vargus Banda** (data
 courier, CorpoNation access routes daily) are both Batch 44-C recipients. Their carrier-grade
 neuretics — which should be hermetically sealed — create an accidental two-way bleed. They share
 each other's memories.
 
 The memories that arrive are the suppressed ones. The ones the Batch 44-C calibration protocol
 stripped of meaning. When they land in the wrong person — in someone the protocol hasn't touched
-— they arrive *whole*. Seto receives Amara's memory of sitting down to record a wellness segment
+— they arrive *whole*. Vargus receives Amara's memory of sitting down to record a wellness segment
 she had questions about and choosing not to ask them on air, and it lands in him with the full
 weight of the silence she is no longer capable of feeling.
 
 The bleed is an accidental memory-restoration machine. It gives back to the wrong person what
 Orison took from the right one.
 
-**The asymmetry:** Amara gave up something public — her voice, her record, her credibility. Seto
+**The asymmetry:** Amara gave up something public — her voice, her record, her credibility. Vargus
 gave up something private — his freedom to be seen, to have a name anyone knows, to matter beyond
 the transaction at hand. The bleed shows each of them what the other sacrificed, in the other's
 terms. Her professional silence in his body. His physical freedom in hers.
@@ -114,18 +114,18 @@ accurate, and entirely inert.
 This is **targeted associative-node suppression.** Not erasure. Something more precise. Harder to
 detect. No visible damage. The client reports that calibration went well.
 
-**Visible only as absence:** On Seto's route map, the Pilsen Veil corridor is a black spot —
+**Visible only as absence:** On Vargus's route map, the Pilsen Veil corridor is a black spot —
 the gray-zone passage where no courier goes twice, not because anything happens there, but because
 nothing happens there. The clients don't report problems. They stop reporting anything.
 
 ### The bleed (LOCKED)
 
-Seto's neuretics are carrier-grade, sealed, zero-leakage. The bleed should be impossible.
+Vargus's neuretics are carrier-grade, sealed, zero-leakage. The bleed should be impossible.
 That impossibility is the first evidence that something is wrong with the batch.
 
 **What bleeds:** suppressed memories. The ones the protocol stripped of meaning arrive in the
 bleed partner WITH their original emotional charge intact — because the bleed bypasses the
-suppression layer. Seto receives Amara's suppressed memories complete; Amara receives Seto's.
+suppression layer. Vargus receives Amara's suppressed memories complete; Amara receives Vargus's.
 
 **What the bleed feels like in prose:** physical and specific. It lands in the body before the
 mind. Phantom weight in exact tendons. The jaw tightening for no reason. Not "emotional
@@ -134,11 +134,11 @@ heaviness." Not a metaphor. A malfunction that arrives as sensation.
 **What the bleed is NOT:** mystical, romantic, a bond, a gift. It is a symptom and a liability.
 The story begins in bewilderment and disorientation, not awakening.
 
-**Secondary bleed — Nuru Banda (LOCKED):** Seto's primary bleed harmonic is with Amara. A
-secondary one-way bleed exists with Nuru. When Seto caught up on his missed calibration visits
+**Secondary bleed — Nuru Banda (LOCKED):** Vargus's primary bleed harmonic is with Amara. A
+secondary one-way bleed exists with Nuru. When Vargus caught up on his missed calibration visits
 in a block booking, Nuru — also Batch 44-C, also behind on visits — attended the same
 high-throughput session at the Orison campus. The concurrent calibration of two adjacent 44-C
-recipients in rapid sequence briefly broadened the channel. Seto received a secondary harmonic:
+recipients in rapid sequence briefly broadened the channel. Vargus received a secondary harmonic:
 Nuru's suppressed memories reached him one-way, silently, during that shared session. He does
 not know until Act 3 what he received or why certain familiar memories arrive weighted
 differently than they should. This secondary harmonic is what makes the reverse transfer in
@@ -188,7 +188,7 @@ No arguments. No friction. Municipal petitions pass unanimously. Community meeti
 short. The buildings are clean. The neighbors wave. There has not been a noise complaint filed in
 Pilsen in fourteen months.
 
-Amara and Seto walk through it in Act 2 and it takes them both a while to name what is wrong:
+Amara and Vargus walk through it in Act 2 and it takes them both a while to name what is wrong:
 everyone they see looks *fine*. Not resigned, not defeated. Fine. The community organizer who
 tried to stop the land transfer is fine with how it went. The courier who lost their route
 doesn't mind. The woman who signed the form she should never have signed is at peace with it.
@@ -212,7 +212,7 @@ connected *harm* to its *weight* was severed on visit four.
 **The Ciro reveal (Act 3):** During the 8-second broadcast window in Ch24 (The Procedure),
 all 847 Batch 44-C devices open simultaneously. Ciro's most deeply suppressed memories — buried
 deepest because the protocol has run the most cycles on him — break through the open channel
-along with everything else. Because Amara is bleed-connected to Seto, who is executing the
+along with everything else. Because Amara is bleed-connected to Vargus, who is executing the
 reverse transfer at the Orison campus, the memory reaches her through that open window: a man
 who was appalled by himself. Before the visits. Before the protocol ran. The weight of that
 memory, arriving in Amara during the same 8 seconds that carry Nuru's memories back to her, is
@@ -237,7 +237,7 @@ does one of these:
 
 - He calibrates a device. The target loses the meaning of something specific. Not their memories —
   just the weight. The target is fine. They say so.
-- He schedules a visit for someone Amara or Seto is relying on. The visit happens. Nothing visible
+- He schedules a visit for someone Amara or Vargus is relying on. The visit happens. Nothing visible
   changes. Days later, the person stops caring about the thing they were helping with.
 - He contacts Amara's editor with a "concern" — phrased as care, sourced in the bleed's visible
   symptoms (the errors on air, the distracted delivery). The instability narrative is already
@@ -247,7 +247,7 @@ does one of these:
 
 **Orison's two-track problem:**
 
-- **Track A — Seto:** A Gray Zone courier with no public profile, no corpo affiliation, no one to
+- **Track A — Vargus:** A Gray Zone courier with no public profile, no corpo affiliation, no one to
   ask questions. Easy to retire. Operational terminology: *route closure.*
 - **Track B — Amara:** She is visible. She is trusted. She has been their credibility for two
   years. If she disappears or surfaces damaged, she becomes a larger story than the one Orison
@@ -287,7 +287,7 @@ to discredit Amara is evidence of their own protocol working.
   the water she swims in. The class axis runs from underground through street-level through the
   float districts — the **Sky People**, GLMZ's aeroplex-dwelling wealthy, represent the
   class horizon above her, and she is close enough to accept their framing without inhabiting it.
-  The bleed — and Seto — are her first real contact with how the other tiers live. The
+  The bleed — and Vargus — are her first real contact with how the other tiers live. The
   register carries the blind spots of privilege: not malice, a narrowness she doesn't know she has.
 - **Voice:** Careful, incremental, trained to be believed. She has the broadcaster's reflex: speak
   at the pace of a sentence people can follow, choose the word that survives a transcript read.
@@ -301,12 +301,12 @@ to discredit Amara is evidence of their own protocol working.
 - **The emotional arc:** She has been Orison's most valuable public asset without knowing it.
   Act 2 is Orison using the instability narrative to dismantle her credibility. By Act 3, she is
   no longer the person people trust. She has to become someone who moves without being seen —
-  which means learning from Seto. The bleed has been showing her how for months.
+  which means learning from Vargus. The bleed has been showing her how for months.
 - **Character doctrine (SS-A41):** What was done to Amara — the calibration, the quiet removal
   of her professional doubts — is backstory. Her response to it — what she chooses to do once
   she knows — is the story. Anchor her in her choices, not her victimhood.
 
-### Seto Banda (POV — Seto chapters)
+### Vargus Banda (POV — Vargus chapters)
 
 - **Identity:** Gray Zone data courier. Carrier-grade sealed neuretics. Japanese-Kenyan.
   Entity `019EE11C-BFE9-7EC6-8CFA-8C9B486E9B74` (confirmed distinct from Amara; slug needs
@@ -340,11 +340,11 @@ to discredit Amara is evidence of their own protocol working.
   as cost. As the specific weight of a choice made in a quiet room, on a day when the door was
   still open. He didn't know that kind of choice could have weight. He has never had a platform
   to waste.
-- **The emotional arc:** Seto's independence was never as absolute as he believed. Act 2 is Ciro
+- **The emotional arc:** Vargus's independence was never as absolute as he believed. Act 2 is Ciro
   slowly closing his access — routes, passes, the infrastructure that makes him possible. By Act
   3 he is working to stay viable, which is the first time in five years he has had to work just
   to exist. The bleed has been showing him why it matters.
-- **Character doctrine (SS-A41):** What was done to Seto — the protocol running without his
+- **Character doctrine (SS-A41):** What was done to Vargus — the protocol running without his
   knowledge — is backstory. His response — tracking the manifest, attempting the reverse
   transfer, choosing to stay when leaving would be safer — is the story.
 
@@ -356,10 +356,10 @@ to discredit Amara is evidence of their own protocol working.
   because VATD taught him the cost of serving masters who will discard you. His withdrawal when
   the premise collapses is load-bearing: he will not be the instrument of something he cannot
   call correct. He has already made this choice once, at higher cost. He does not explain this
-  to Seto.
+  to Vargus.
 - Gray Zone contract (not Lotus). Hired on false premise: "courier moving stolen proprietary
-  neuretic data." Gives Seto 7 days and withdraws when the Batch 44-C manifest surfaces
-  publicly, making Seto's client-record status visible and collapsing the false premise of
+  neuretic data." Gives Vargus 7 days and withdraws when the Batch 44-C manifest surfaces
+  publicly, making Vargus's client-record status visible and collapsing the false premise of
   stolen proprietary data. Ch21 Thursday Morning: Ekow receives the file termination notice.
   Ch22 Contract Delayed: last contract; premise has collapsed.
 - VATD-established doctrines carry forward: deliberate patience, minimum footprint,
@@ -371,9 +371,9 @@ to discredit Amara is evidence of their own protocol working.
 
 ### Nuru Banda
 
-- Seto's sister. Zone 6, Facility C-9. Nutritionist at a community clinic.
+- Vargus's sister. Zone 6, Facility C-9. Nutritionist at a community clinic.
 - Row 19 on the Batch 44-C manifest.
-- Seto has known for 8 days before Ch11.
+- Vargus has known for 8 days before Ch11.
 - She is the personal cost. She is also the key to Act 3.
 - She is fine. She says so. The thing she signed she has no strong feelings about. She is doing
   well. She is fine.
@@ -384,9 +384,9 @@ to discredit Amara is evidence of their own protocol working.
 
 1. **The bleed is physical and specific.** Phantom weight in exact tendons, not "emotional
    heaviness." Never literary. If it sounds mystical, rewrite it.
-2. **The black spot is visible as absence.** Not a dramatic discovery — Seto notices what is NOT
+2. **The black spot is visible as absence.** Not a dramatic discovery — Vargus notices what is NOT
    there. The absence is the clue.
-3. **Seto = he/him throughout.** No exceptions.
+3. **Vargus = he/him throughout.** No exceptions.
 4. **Ciro's blows are calibration events.** Quiet, specific, permanent. Not threats — scheduled
    visits. The weapon is maintenance.
 5. **The horror of the Pilsen Veil is that it does not look like horror.** Never describe the
@@ -423,16 +423,16 @@ them (in-world they arrive as physical sensation, not as language). They happen.
 > left a transit token on the third step. The log showed a clean close on all twelve nodes,
 > which meant either the client was wrong or the log had been written after the fact.
 
-*(The italicized sentence is Seto's sensory memory from a Gray Zone route run three hours
+*(The italicized sentence is Vargus's sensory memory from a Gray Zone route run three hours
 earlier. Amara doesn't know this. The reader will, eventually.)*
 
 **The rule:** no more than one bleed-intrusion per beat, no two beats in a row, not in Act 1.
-Begin using them sparingly in Act 2 (one per Amara chapter, one per Seto chapter). In Act 3,
+Begin using them sparingly in Act 2 (one per Amara chapter, one per Vargus chapter). In Act 3,
 the frequency increases as the bleed amplifies.
 
 ### The Pilsen Veil prose rule
 
-When Amara or Seto are IN the Pilsen Veil, the prose register flattens. Short declarative
+When Amara or Vargus are IN the Pilsen Veil, the prose register flattens. Short declarative
 sentences. No friction-words (conflict, resist, push, argue, fight). Active verbs, present
 objects, neutral descriptors. The flatness IS the horror. Do not add atmosphere. Let the prose
 match the zone.
@@ -453,14 +453,14 @@ Act 3 is not yet written. This is the locked design.
 
 **The problem:** The only evidence of the suppression protocol's existence is the bleed itself.
 The bleed carries suppressed memories to the wrong person WITH their meaning intact. This proves
-the protocol exists — but only to Amara and Seto. No court, no journalist, no regulatory body
+the protocol exists — but only to Amara and Vargus. No court, no journalist, no regulatory body
 can receive bleed-memory as evidence.
 
-**The key:** Nuru Banda. Seto has received her suppressed memories through the secondary bleed
+**The key:** Nuru Banda. Vargus has received her suppressed memories through the secondary bleed
 harmonic established during their shared block-booking calibration session (see §1). He holds
 them whole — what they felt like to her, before the protocol ran.
 
-**The Act 3 engine:** Seto attempts a reverse transfer through the bleed channel — transmitting
+**The Act 3 engine:** Vargus attempts a reverse transfer through the bleed channel — transmitting
 Nuru's suppressed memories back to her WITH the weight they carried when he received them. This
 is technically impossible per Orison's specifications. The bleed channel is read-only, one
 direction, passive transfer only.
@@ -484,7 +484,7 @@ But 847 people had 8 seconds. Some of them remember what they felt.
 **The ending:** Ch26 (Zone 7, Tuesday, 9AM) and Ch27 (10:47) — not a triumph. Not a defeat.
 The Phase II announcement ships. Orison wins the news cycle. But Nuru Banda does not renew her
 calibration visit. She was scheduled for Tuesday 9AM. She does not go. Ch27 is whoever Amara
-or Seto sees in the lobby at 10:47 — the person who was supposed to show up for their visit
+or Vargus sees in the lobby at 10:47 — the person who was supposed to show up for their visit
 and didn't.
 
 **Why this ending:** The story cannot stop Phase II. The protagonists are not powerful enough.
@@ -501,14 +501,14 @@ the black spot, the nothing that means everything.
 | Ch | Title | POV | Score | Status |
 |----|-------|-----|-------|--------|
 | 1 | The Log She Didn't File | Amara | 82.6 | reframe to broadcast environment |
-| 2 | The Dry Corridor | Seto | 83.0 | ✅ strong, minor polish only |
+| 2 | The Dry Corridor | Vargus | 83.0 | ✅ strong, minor polish only |
 | 3 | Interference Pattern | Amara | 81.3 | first bleed — amplify emotional register |
-| 4 | The Other Side of the Noise | Seto | 72.2 | **FULL REWRITE** — worst Act 1 chapter |
+| 4 | The Other Side of the Noise | Vargus | 72.2 | **FULL REWRITE** — worst Act 1 chapter |
 | 5 | Account Liaison | Amara | 82.6 | reframe Amara's insider access |
 | 6 | Something Borrowed | Amara | 81.4 | emotional register lift needed |
 | 7 | The Lunch | Amara | 82.5 | minor polish |
-| 8 | Black Spot | Seto | 81.3 | amplify what-is-not-there quality |
-| 9 | Rooftop, Zone 7 | Seto | 80.6 | emotional register lift needed |
+| 8 | Black Spot | Vargus | 81.3 | amplify what-is-not-there quality |
+| 9 | Rooftop, Zone 7 | Vargus | 80.6 | emotional register lift needed |
 | 10 | What She Knows | Amara | 79.3 | **SIGNIFICANT REWRITE** — discovery must devastate |
 
 **Act 1 score target:** mean ≥ 85.0, no chapter below 83.
@@ -532,16 +532,16 @@ the black spot, the nothing that means everything.
 
 | Ch | Slug | Title | POV | Note |
 |----|------|-------|-----|------|
-| 11 | the-cleanup-list | The Cleanup List | Seto | Contact calibrated; access closed |
-| 12 | managed-liability | Managed Liability | Seto | **CUT-BY-REVISION (2026-07-04):** the Amara/Ciro editorial-contact scene described here was never written. Ships as Seto POV, continuing the manifest read from The Cleanup List (no Ciro, no editorial contact on-page). |
-| 13 | the-move | The Move | Amara | First physical Amara/Seto meeting; drive handoff |
-| 14 | sealed-system | Sealed System | Seto | Network closure sweep; Seto reads all 847 names through the bleed |
+| 11 | the-cleanup-list | The Cleanup List | Vargus | Contact calibrated; access closed |
+| 12 | managed-liability | Managed Liability | Vargus | **CUT-BY-REVISION (2026-07-04):** the Amara/Ciro editorial-contact scene described here was never written. Ships as Vargus POV, continuing the manifest read from The Cleanup List (no Ciro, no editorial contact on-page). |
+| 13 | the-move | The Move | Amara | First physical Amara/Vargus meeting; drive handoff |
+| 14 | sealed-system | Sealed System | Vargus | Network closure sweep; Vargus reads all 847 names through the bleed |
 | 15 | everything-she-carries | Everything She Carries | Amara | Theodora recalibration horror; Amara loses segment |
 | 16 | grooming | Grooming | Amara | **MERGED**: quarterly-gathering/list (ex-Second Suitor) → floor-32 provisioning trap |
 | 17 | off-timing | Off Timing | Amara | 112 gaps; batch query access suspended |
-| 18 | pressure-and-counter-pressure | Pressure & Counter-Pressure | Seto | ACT 2 PEAK — preserve structure; contains the Amara/Seto Pilsen Veil walk (§2): both physically present in Zone 3, neither names what is wrong until the scene ends |
+| 18 | pressure-and-counter-pressure | Pressure & Counter-Pressure | Vargus | ACT 2 PEAK — preserve structure; contains the Amara/Vargus Pilsen Veil walk (§2): both physically present in Zone 3, neither names what is wrong until the scene ends |
 | 19 | the-turn | The Turn | Amara | Forced leave; razor payoff (open blade); platform loss |
-| 20 | story-runs | Story Runs | Seto | Convergence; the story is handed off |
+| 20 | story-runs | Story Runs | Vargus | Convergence; the story is handed off |
 | 21 | thursday-morning | Thursday Morning | Ekow | Ekow receives file termination notice |
 
 **Act 2 score target:** mean ≥ 85.0, no chapter below 83. *(NB: global chapter numbers shifted −1 from
@@ -552,10 +552,10 @@ Act 2 onward after the merge; §7 "Ch27/Ch28" are now Ch26/Ch27 = Zone 7, Tuesda
 | Ch | Slug | Title | POV | Beat score (R3) | Note |
 |----|------|-------|-----|-----------------|------|
 | 22 | contract-delayed | Contract Delayed | Ekow | 4.4/5 ≈ 88% | Ekow last contract; premise collapses (Ch22 after −1 merge shift) |
-| 23 | the-last-route | The Last Route | Seto | 4.7/5 ≈ 94% | Seto's last route through the Veil |
-| 24 | the-procedure | The Procedure | Seto | 5.0/5 = 100% | The reverse transfer attempt; 8-second broadcast — during this window, Ciro's suppressed pre-visit memories reach Amara through the open channel (see §3) |
+| 23 | the-last-route | The Last Route | Vargus | 4.7/5 ≈ 94% | Vargus's last route through the Veil |
+| 24 | the-procedure | The Procedure | Vargus | 5.0/5 = 100% | The reverse transfer attempt; 8-second broadcast — during this window, Ciro's suppressed pre-visit memories reach Amara through the open channel (see §3) |
 | 25 | different-frequency | Different Frequency | Amara | 4.6/5 ≈ 92% | Aftermath; Orison Phase II announcement; Amara carries the weight of Ciro's pre-visit memory (received during the Ch24 broadcast window) — the horror of knowing who he was before Orison removed his objections |
-| 26 | zone-7-tuesday-9am | Zone 7, Tuesday, 9AM | Seto | 5.0/5 = 100% | Nuru's scheduled calibration time |
+| 26 | zone-7-tuesday-9am | Zone 7, Tuesday, 9AM | Vargus | 5.0/5 = 100% | Nuru's scheduled calibration time |
 | 27 | 10-47 | 10:47 | Amara | 5.0/5 = 100% | The person who didn't come in |
 
 ---
@@ -570,19 +570,19 @@ Act 2 onward after the merge; §7 "Ch27/Ch28" are now Ch26/Ch27 = Zone 7, Tuesda
 - Pilsen Veil flatness done correctly (prose register matching the zone)
 - Ch24 The Procedure: this must be the weirdest chapter in the collection
 - Amara noticing the gap between what she has broadcast and what she has known
-- Seto reading corpo environments from the courier's eye — what the lobby is designed not to show
+- Vargus reading corpo environments from the courier's eye — what the lobby is designed not to show
 
 **What kills scores:**
 - "Not its physical weight, which was negligible, but its informational weight" — recycled
   affectation; banned
 - "She thought about X. She thought about Y" — mechanical enumeration
 - Over-explaining the bleed mechanics
-- Seto pronoun errors (he/him; zero exceptions)
+- Vargus pronoun errors (he/him; zero exceptions)
 - Adding description to Act 2 chapters WITHOUT an accompanying calibration event
 - Making the Pilsen Veil look like a horror set piece — it must look FINE
 - Emotional stakes that stay abstract: costs must be named, specific, irreversible
 - Amara's grief presented as observation rather than sensation
-- Seto's independence framed as competence rather than flaw
+- Vargus's independence framed as competence rather than flaw
 
 ---
 
@@ -590,10 +590,10 @@ Act 2 onward after the merge; §7 "Ch27/Ch28" are now Ch26/Ch27 = Zone 7, Tuesda
 
 - **MNEMO-US-0 ⬜** Bible restructured — Amara as broadcaster, two-track antagonist, emotional
   engine ("what did you give away") present in all acts.
-- **MNEMO-US-1 ✅** Amara Osei, Seto Banda, Ciro Fonseca, Orison Neuretics — all entities seeded.
+- **MNEMO-US-1 ✅** Amara Osei, Vargus Banda, Ciro Fonseca, Orison Neuretics — all entities seeded.
 - **MNEMO-US-1A ⬜** Amara entity updated — profession=broadcaster, affiliation=Tessera
   Tribune/Orison Communications Group. (Entity IDs confirmed distinct: Amara=`019EE11C-6712-7854-870E-03D2B814EC99`,
-  Seto=`019EE11C-BFE9-7EC6-8CFA-8C9B486E9B74`; DB field update still pending.)
+  Vargus=`019EE11C-BFE9-7EC6-8CFA-8C9B486E9B74`; DB field update still pending.)
 - **MNEMO-US-2 ✅** Book stub + chapter nodes; all prose written. **27 chapters** after the
   2026-06-23 Second Suitor→Grooming merge (was 28).
 - **MNEMO-US-3 ⬜** Act 1 refactored — mean ≥ 85.0, no chapter below 83; broadcaster identity
@@ -601,7 +601,7 @@ Act 2 onward after the merge; §7 "Ch27/Ch28" are now Ch26/Ch27 = Zone 7, Tuesda
 - **MNEMO-US-4 ⬜** Act 2 structural overhaul — Ciro lands one calibration event per chapter;
   instability narrative builds against Amara.
 - **MNEMO-US-5 ⬜** Ch17 Grooming restored (remove cold-water opening + trim floor-32 ending).
-- **MNEMO-US-6 ⬜** Bleed-intrusion sentences added to all Act 2 Amara+Seto chapters.
+- **MNEMO-US-6 ⬜** Bleed-intrusion sentences added to all Act 2 Amara+Vargus chapters.
 - **MNEMO-US-7 ✅** Act 3 (Ch22–27) written per §7 design. All 6 chapters in DB with full prose;
   Act 3 scoring 88–100% per beat (R3 n=20). Confirmed 2026-06-23. (Chapter numbers corrected −1
   after Second Suitor→Grooming merge; was Ch23–28 in pre-merge references.)
@@ -675,9 +675,9 @@ and CorpoNations/Gray Zones.
   and aeropolises. The altitude is the amenity: above the pollution, the Block Wars, the street.
   Amara at Tier 4+ is adjacent to this class without being part of it.
 - **The Low** — the ungoverned airspace band 30–320m altitude, outside both Arcturus Civil
-  Security's ceiling and MATA's radar floor. Gray-market vertical transit. Seto has no business
+  Security's ceiling and MATA's radar floor. Gray-market vertical transit. Vargus has no business
   in The Low but knows the operators who do.
-- **The surface** — where both Amara and Seto operate. Contested, surveilled, and where the
+- **The surface** — where both Amara and Vargus operate. Contested, surveilled, and where the
   story takes place.
 - **The underground** — not relevant to MNEMO's action, but Pilsen Zone 3 is surface-level;
   the Veil's flatness is a surface phenomenon.
@@ -698,7 +698,7 @@ narrative Orison builds uses the cast record as evidence.
 
 Every CorpoNation in GLMZ — including Orison — is a self-contained arcology over 100 stories
 tall. Calibration suites, HQ offices, and Orison's entire apparatus exist inside sealed towers
-separated from each other by Gray Zones. Seto has legitimate Orison campus passes as a courier;
+separated from each other by Gray Zones. Vargus has legitimate Orison campus passes as a courier;
 he enters through the border threshold, not through any residential wing.
 
 ### Present year

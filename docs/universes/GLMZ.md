@@ -326,6 +326,22 @@ at 60-second intervals per the building's ad-rotation contract. The world is ill
 of illusions. Characters who have lived in GLMZ their whole lives do not register most of
 this any more than they register the smell of the city — it is the texture of the air.
 
+**Civic infrastructure layer (Waxwing Neuromedia):**
+The Hyper Reality extends to public safety and civic management. Under the Corridor Authority
+municipal contract, Waxwing Neuromedia operates the civic AR layer: holographic stop signs
+hang at intersections (regulation red, neuretic-readable, legally binding the same as physical
+signs). Semi-transparent blue barriers materialize to designate pedestrian queues at transit
+platforms and Border Market checkpoints. Holographic traffic cones mark construction zones and
+incident perimeters. Crowd-flow arrows pulse on ground surfaces during high-density events.
+Emergency AR barriers can be deployed corridor-wide in under six seconds when ArcSec or NCID
+authorize it — instant cordon, no physical setup required. For the augmented majority, these
+constructs are as visually authoritative as poured concrete. They have been trained since
+childhood to stop at a holographic sign. For the unaugmented, none of this exists. Unaugmented
+residents navigate by following augmented people, by the faded physical infrastructure that was
+never fully decommissioned, and by the fact that the city does not particularly accommodate
+them. In the gray zone, the civic AR layer is absent entirely — hand-painted signs, physical
+barriers, and the institutional memory of whoever lives there.
+
 In gray zone territory, physical-layer AR emitters are absent or dead — the silence is
 conspicuous. First time a character arrives in a gray zone from inside the Veil, they notice the
 absence before they notice anything else.
@@ -382,13 +398,60 @@ based on context. Pixel's wardrobe specifically rotates daily — she is a fashi
 When she appears in a scene, describe what she's wearing.
 
 **Key consumer brands seeded in the DB:**
-- **Casque & Veil** — archology luxury fashion; structured techwear; neural-overlay advertising
-- **Greymark Unseen** — gray zone street label; anti-surveillance design; no advertising; certified by field use
-- **Aries Performance Vehicles** — personal motorcycles and ground vehicles; not corporate; not military; Pilsen-built
-- **Praxis NeoCortex** — consumer neuretics; Standard → Extend → Prime → Sovereign tiers; Praxis is the manufacturer
-- **Carrion Defense Works** — weapons; brutal and functional; no corpo polish
-- **Ringo Corponation** + subsidiaries — food, retail, banking, residential; the closed loop
-- **CramIt** (Amber Harvest Foods, Ringo) — nutrition bars; contractor-issue; taste like someone described chocolate to a person who had never eaten food
+
+*Fashion — archology-tier:*
+- **Casque & Veil** — luxury techwear; augmentation-integrated cuts; neural overlay advertising; logs proximity data
+- **Mekong Form** — SE Asian–East African diaspora aesthetic; flowing structural shapes; neural-thread accent lacing; second-tier archology luxury
+- **Thornfield** — British-West African tailoring; architectural and restrained; no overlay advertising; the brand for executives who don't need to announce it
+
+*Fashion — licensed street:*
+- **Ironmoth** — Korean-Brazilian; bold color blocking; the visible everyday brand of Zones 3–5
+- **Calibre Basics** (Ringo subsidiary) — the cheapest new clothing available; functional workwear; no aesthetic; omnipresent
+- **Hexline** — technical workwear; reinforced; maximum pockets; what medics, electricians, and operators actually wear
+
+*Fashion — gray zone:*
+- **Greymark Unseen** — anti-surveillance design; no advertising; operators' first choice; logs nothing
+- **Thornback** — music scene; distressed; hand-screen-printed; Zone 4 Milwaukee origin; no two pieces identical
+- **Velasca** — gray zone artisan; hand-finished; reputation-only; no storefront; found at Border Markets
+
+*Weapons:*
+- **Carrion Defense Works (CDW)** — brutal, functional, no corpo polish; CDW-RS5 'Chorus' is Kyle's revolver shotgun
+- **Wyvern Arms** — the XS combat shotgun everyone knows; licensed street; civilian working weapons
+- **Crucible Armaments** — institutional service weapons; NCID V-7 sidearm; ArcSec secondary arms; telemetry built in
+
+*Ammunition:*
+- **Meridian Ordnance** — premium military-spec; MO-9 hollow point; the benchmark; archology-tier price
+- **Pulse Hollow** — standard licensed street ammo; adequate in every way; what Border Markets stock
+
+*Vehicles — ground:*
+- **Meridian Motor** — the standard GLMZ consumer car; MM-5 sedan; hydrogen cell; what contractors and cabs drive
+- **Volk** — archology-tier executive ground transport; V-Series; sculpted, quiet, no AR glamour
+- **Aries Performance Vehicles** — performance motorcycles and ground vehicles; Pilsen-built; mid-tier independent; Kyle rides the Viper Predator MDK-2
+- **Block Runner Fabrication** — gray zone operator transport; BR-4; looks like a cargo van; isn't; high-clearance armored; modified constantly
+- **Ferrogate** — contractor-issue vehicles; CI-4 is NCID/ArcSec field transport; also operates Pulse franchise
+
+*Vehicles — VTOL:*
+- **Stratos Aeroworks** — archology-tier personal VTOL; near-silent; AR-glass canopy; Sky People's private transit; Φ400,000+
+- **Ferrogate Aero** (FA-9) — the transit bus of the sky; boxy, loud, gray-white, reliable; what contractors fly
+- **Cormorant Defense** (CV-7) — ArcSec assault VTOL; angular, dark, armored; loud by design; intimidation is the product
+- **Rampart Ascent** — gray zone VTOL service; reclaimed ex-Ferrogate/ex-Cormorant airframes; every one looks different; no flight log
+
+*Neuretics:*
+- **Praxis NeoCortex** — consumer neuretics; Standard → Extend → Prime → Sovereign; Praxis is the public face; Marrow is the real product
+
+*Technology:*
+- **Lattice Systems** — the dominant consumer tech platform; what most personal devices run on; decade-old Lattice hardware still works
+
+*Neural advertising infrastructure:*
+- **Mirrorwell Media** — commercial overlay injection; involuntary sensory brand impressions; owns the first 200ms of proximity attention
+- **Waxwing Neuromedia** — civic AR infrastructure (holographic signs, queue fences, traffic cones); municipal contract; behavioral data harvest
+
+*Food & beverage:*
+- **Ringo** + subsidiaries — food, retail, banking, residential; the closed consumer loop
+- **CramIt** (Amber Harvest Foods, Ringo) — nutrition bars; contractor-issue; taste like someone described chocolate to someone who had never eaten food
+- **Ringo Lager** (Ringo) — the beer of GLMZ; cheap; what 60% of GLMZ bars serve; AR label pulses three seconds on the can
+- **Deepwell Coffee** — ubiquitous gray zone / licensed street kiosk coffee; mediocre; reliable; hot
+- **Bright Ratio** — archology-tier energy drink with nano-additive neuretic enhancement; Φ18/unit; not available below Zone 5 infrastructure
 
 ---
 
