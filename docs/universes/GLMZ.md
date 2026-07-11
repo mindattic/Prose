@@ -1,4 +1,4 @@
----
+﻿---
 universe: glmz
 title: Great Lakes Metropolitan Zone — Universal World Facts
 layer: universe-facts
@@ -318,7 +318,7 @@ phenomena. Use "rift," "seep," "intrusion," etc.
 Each person's allotment can be saved, transferred to others (serving as currency), or spent
 directly on computation. Wealth is accumulated QUANTA — those who cannot save spend their
 allotment as fast as it issues. The symbol Φ is NEVER the Greek letter phi — it is always
-the QUANTA currency symbol. Write: *"She owes 200Φ."*
+the QUANTA currency symbol. Write: *"She owes Φ200."*
 
 ---
 

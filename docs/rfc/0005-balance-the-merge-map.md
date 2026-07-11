@@ -75,7 +75,7 @@ Coda/Sorrow strand. Duplicates are RESOLVED here, not shipped twice.
 | # | Balance chapter | Base | Fuse / donates | Register note |
 |---|---|---|---|---|
 | 1 | **Teeth** | S: Part I: Teeth (78b, 8k, brutalist masterwork) | J banter cadence in the hire + door; the array's Φ-pricing comedy (already in the With-Teeth Joy experiment) | The brutalist opener, kept; lightened only in the hire scene and the invoice column. The bow stays sacred. |
-| 2 | **The Long Way Home** | J: The Bike (want-on-p1, Boost, 1Φ contract) | S: The Regular's wound-ride + Pixel kitchen-table patch + Tessaline/Chen B-plot | THE keystone fuse: Joy's stolen-bike engine carries Sorrow's ride-home-wounded + the introduction of Pixel and the entity's first warm contract. Establishes all three threads at once. |
+| 2 | **The Long Way Home** | J: The Bike (want-on-p1, Boost, Φ1 contract) | S: The Regular's wound-ride + Pixel kitchen-table patch + Tessaline/Chen B-plot | THE keystone fuse: Joy's stolen-bike engine carries Sorrow's ride-home-wounded + the introduction of Pixel and the entity's first warm contract. Establishes all three threads at once. |
 | 3 | **Good Paper** | J: Good Paper (Vey, "information prices in information") | — | Joy near-whole; Vey is the season's quartermaster. Add one brutalist underlevel descent (Sorrow texture). |
 | 4 | **The Quiet Hour** | S: The Quiet Hour (7.9k, the elegy, Nü, "she made it stick") | J pacing trims; one banter beat in the crew brief | The complete-job-with-cost standard. Sorrow elegy intact; tightened to Joy rhythm. The sacred death stays silent. |
 | 5 | **Interlude: Something Fixed** | S: Interlude I | J logbook voice | The goodness-between-violence beat. Keep short. |

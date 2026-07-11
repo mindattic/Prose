@@ -244,7 +244,9 @@ shapes; they do not rewrite canon values.
 8. **Φ is QUANTA, never phi.** {#SS-LAW-8} *(GLMZ.)* The symbol Φ is the QUANTA currency symbol.
    QUANTA is an allotment of computational power — divided among every citizen of Earth — that can
    be saved, transferred as currency, or spent on actual computation. It is *never* the Greek letter
-   phi. (Listed among the engine invariants for historical id stability, but it is **GLMZ-universe
+   phi. **Format rule:** Φ precedes numbers like a dollar sign — write Φ100, not 100Φ. Terminology:
+   "quanta", "Q", or "Qs" (informal plural). Physical medium: credstick only — no coins, no bills.
+   (Listed among the engine invariants for historical id stability, but it is **GLMZ-universe
    content**, not an engine truth.)
 15. **Every row belongs to exactly one Universe.** {#SS-LAW-15} Every canon/story root
    (`Entities`, `Nodes`, `Books`) carries a non-null `UniverseId`; all generation and retrieval

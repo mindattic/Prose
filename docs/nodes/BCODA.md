@@ -1,4 +1,4 @@
----
+﻿---
 codex: 1
 project: StreetSamurai
 code: BCODA
@@ -1108,7 +1108,7 @@ Each event below carries its surface reading and its 5D reading.
 - 5D: The entity saw Boost's crew surveilling Kyle's alley and recognized what they were —
   the specific local intelligence asset Kyle would need when the Office made its final approach.
   The entity arranged the MORALE contract not to recover the bike but to formalize the
-  relationship. The 0.5Φ tip (ITEMIZED: MORALE) is the entity investing in Kyle's support
+  relationship. The Φ0.5 tip (ITEMIZED: MORALE) is the entity investing in Kyle's support
   infrastructure for what comes next.
 
 **The standing contract — "The park on Leavitt. Bring the sword."**

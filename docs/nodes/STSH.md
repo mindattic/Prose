@@ -1,4 +1,4 @@
----
+﻿---
 codex: 1
 project: StreetSamurai
 code: STSH
@@ -96,7 +96,7 @@ her own hands when she finishes a surgery.
     situational, not habitual.
   - She does not perform competence. She is competent and occasionally wrong and both
     things show.
-- She takes payment. Not 20Φ minimum like Kyle — she takes what people have. She has
+- She takes payment. Not Φ20 minimum like Kyle — she takes what people have. She has
   received ration chips, labor, a promise of help, and one extremely clean piece of scav
   tech. She does not pretend money doesn't matter. She does not pretend it matters enough
   to refuse someone who is dying.

@@ -43,9 +43,9 @@ updated: 2026-06-11
 ### 1.2 Money and work
 - **Φ — QUANTA** — is the currency: an allotment of computational power issued to every citizen of
   Earth; can be saved, transferred, or spent on computation. The symbol is Φ and it is NEVER the
-  Greek letter phi, never "creds" except in trade slang. Prices are texture: a bowl is 6Φ, a
-  seat-filler shift is 3Φ, a funeral done right has a price, a soul-crushing corpo buyout is
-  4,000Φ.
+  Greek letter phi, never "creds" except in trade slang. Prices are texture: a bowl is Φ6, a
+  seat-filler shift is Φ3, a funeral done right has a price, a soul-crushing corpo buyout is
+  Φ4,000.
 - **The freelancer ecosystem**: fixers vet clients and route contracts (the freelancer never
   needs to know more than their piece); crews assemble per job with strangers whose codenames
   are the whole introduction; carriers, riggers, Reads, muscle, wire — every piece named and
@@ -172,8 +172,8 @@ frequencies.
   discipline asked for him").
 
 ### 2.2 The code (non-negotiable, shown not stated)
-- **Kyle always takes payment and always pays — exact.** The fee can be symbolic (1Φ to a
-  polisher, 20Φ); it is never zero; no debt either direction. Gifts that are not payment
+- **Kyle always takes payment and always pays — exact.** The fee can be symbolic (Φ1 to a
+  polisher, Φ20); it is never zero; no debt either direction. Gifts that are not payment
   (an egg in the bowl, two foil containers) may be accepted without arithmetic — that's the
   loophole both sides honor.
 - **Nonlethal by preference, lethal by necessity**: disarming lines over killing lines, paid

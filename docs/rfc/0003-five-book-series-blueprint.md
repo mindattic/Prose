@@ -380,7 +380,7 @@ misdirect at full pressure, the Unanimity tightening, and Kyle's own hardware.
   out. Your employer's plan, as you understand it, cannot work. It has always known that.* —
   and the hum, for the first time since the cage, goes silent everywhere.
 - **Closer/state change:** winter. Dead, dark, alone, hopeless, dying — the series' floor.
-  Then the paper letter, hand-delivered by a child paid exactly 1Φ: almost-human e's.
+  Then the paper letter, hand-delivered by a child paid exactly Φ1: almost-human e's.
   *"I expected this too. Standard rate doubles for the last mile."* The reader's dread and
   hope are now the same object.
 

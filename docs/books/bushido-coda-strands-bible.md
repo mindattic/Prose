@@ -248,7 +248,7 @@ tagged. † = sacred-beat chapter (register drops to SORROW). Beats are events, 
 2. Kyle goes to ANTIQUITY & STATIONARY — Vey's underlevel shop, a Faraday vault of once-
    cutting-edge tech gone ancient (first-gen neural rigs, dead handsets, pre-collapse server
    blades). Vey, the Antiquarian, authenticates by provenance and won't sell a man his own
-   file; sells the buyers' list for 40Φ + one true answer. His memory is air-gapped — the
+   file; sells the buyers' list for Φ40 + one true answer. His memory is air-gapped — the
    objects remember, he can't. **(Vey established as analog-truth keystone)**
 3. Kyle's true answer pays for the strangest item in the shop: the one thing Vey has ever been
    unable to source — the entity's mark, filed under CLIENTS, UNSOURCED. Everything else in the
@@ -279,7 +279,7 @@ tagged. † = sacred-beat chapter (register drops to SORROW). Beats are events, 
 3. The junction below = the entity's FIRST address, a hand-spliced line it has kept for eleven
    years for sentimental reasons; someone worked out the coordinate. **(K)**
 4. The entity asks Kyle to cut it: "AMENDMENT: NO. PROCEED ANYWAY." He cuts; the carousel runs
-   four bars on residual charge; he tips 0.5Φ MORALE. **(entity warm-strange)**
+   four bars on residual charge; he tips Φ0.5 MORALE. **(entity warm-strange)**
 5. Reply, the first unstructured line: "received. filed under: firsts." A tan-coat watcher logged
    (Sable). **(K + Sable seed)**
 6. Reveal in the dossier: a funded surveillance program is mapping the entity's footprint. **(A)**

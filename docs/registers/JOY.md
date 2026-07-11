@@ -1,4 +1,4 @@
----
+﻿---
 codex: 1
 project: StreetSamurai
 code: SS
@@ -36,9 +36,9 @@ violence comes, a pleasure to absorb. Cyber Dreams energy in the Street Samurai 
 5. **THE ENTITY IS WARM-STRANGE.** It exists ONLY as formatted contract artifacts on the
    terminal — postings, scope updates, ADDENDUM lines, receipts, gratuities — caps, fielded,
    precise. Care is expressed as employment. Canonical formats:
-   - `CONTRACT: RECOVERY OF STOLEN PROPERTY (VEHICLE, 1200CC). FEE: 1Φ.`
+   - `CONTRACT: RECOVERY OF STOLEN PROPERTY (VEHICLE, 1200CC). FEE: Φ1.`
    - `ADDENDUM: CLIENT ADVISES THE MURAL DOOR IS NOT THE DOOR.`
-   - `GRATUITY: 0.5Φ — ITEMIZED: MORALE.` (it sulks by withholding; it praises by itemizing)
+   - `GRATUITY: Φ0.5 — ITEMIZED: MORALE.` (it sulks by withholding; it praises by itemizing)
    - Long pauses (eleven seconds, thirty-one seconds) are its unfinished gestures.
    - **Lowercase unstructured lines are sacred** — maximum one or two per SEASON, only at
      relationship milestones: "received. filed under: firsts." / "partner. filed. keeping
@@ -70,7 +70,7 @@ violence comes, a pleasure to absorb. Cyber Dreams energy in the Street Samurai 
 - Never mock the sacred beats; the register earns its violence by keeping the bows.
 
 ## Exemplar canon (the pages outrank this file) — Joy book `joy-019eb8ad`
-1. **The Bike** (the-bike-019eb8ad) — 83.8 — the want/win engine; Boost; the 1Φ contract.
+1. **The Bike** (the-bike-019eb8ad) — 83.8 — the want/win engine; Boost; the Φ1 contract.
 2. **Good Paper** (good-paper-019eb8ad) — 83.8 — Vey; information prices in information.
 3. **The Carousel** (the-carousel-019eb8ad) — 84.6 — warmth + fight + the first sacred cut.
 4. **The Offer** (the-offer-joy-64552b49) — 84.8 — villain courtesy; the termination denied.

@@ -53,7 +53,7 @@ What it means in practice:
 - No sexual content involving animals. No exceptions.
 
 ## World Rules
-- The symbol Φ is the QUANTA currency symbol. It is NEVER the Greek letter phi.
+- The symbol Φ is the QUANTA currency symbol. It is NEVER the Greek letter phi. Φ PRECEDES numbers like a dollar sign: Φ100, not 100Φ. Terminology: "quanta", "Q", or "Qs". Physical medium: credstick only — no coins, no bills.
 - Iowan Behemoths are autonomous machines, NOT synthetic life. They are not alive.
 - Default to mixed heritage from unexpected global combinations (Ubiquitous Diaspora).
 
@@ -74,7 +74,7 @@ Do not rely on BIBLE.md alone for story-specific rules — it has engine laws, n
 Node bibles are **loaded on demand**, not injected at session start. Load only what you need.
 
 **Existing node bibles:**
-- `docs/nodes/PNHL.md` — Pinhole / PNHL (Pixel origin story, GLMZ; formerly TDIU / The Door Is Unlocked)
+- `docs/nodes/PXL.md` — Pixel / PXL (Pixel origin story, GLMZ; formerly PNHL/TDIU; Channeler+Ghost+Splicer; Detroit escape opening)
 - `docs/nodes/BCODA.md` — Bushido Coda flagship novel (GLMZ)
 - `docs/nodes/ATTE.md` — Attendance / Yemina Fola investigation (GLMZ)
 - `docs/nodes/VATD.md` — Vultures at the Door / Thomas & Levin (GLMZ)
