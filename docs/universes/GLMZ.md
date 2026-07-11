@@ -73,12 +73,17 @@ and arrival. Not a geographic zone. Not jurisdictional. Everything passes so fas
 locked onto: the whole ride is called The Blur. *"She watched Iowa in The Blur."* *"The Blur
 thinned"* (arriving). Correct usage: "somewhere in The Blur" = during transit.
 
-**Pulse pod mechanic — spheres + neuretic hallucination:** Physically, passengers ride in
-individual sealed spheres (one per person). During transit, neuretics wire together to produce
-a shared hallucination: the interior appears as an old-style intercity train from 200 years
-earlier — seats, aisles, overhead racks, window feeds from external cameras. Passengers call
-their pod **"the car."** Nobody finds this odd. Shared neuretic constructions are routine in
-GLMZ. The sphere underneath is never described from inside; characters experience the train.
+**Pulse pod mechanic — spheres + Hyper Reality:** Physically, passengers ride in individual
+sealed spheres (one per person), pitch-black inside, lit only by the GIDS-4 status ring.
+During transit, neuretics wire together and surface a shared Hyper Reality: a vintage
+intercity train from 200 years earlier — seats, aisles, overhead racks, window feeds from
+external cameras mounted on the pod exterior. Other passengers are visible across the aisle;
+they are each in their own sealed sphere, their social presence rendered by the shared
+construct. Passengers call their pod **"the car."** Nobody finds this odd. When the slug
+reaches the destination platform and the sphere cracks open, the train dissolves mid-breath.
+Characters describe this as: stepping off an empty platform, or a room evaporating. The
+sphere underneath is never described from inside; characters experience only the Hyper
+Reality. See [## Hyper Reality](#SS-GLMZ-hyperreality) for the full canon.
 
 **GIDS-4 (Gradient Inertial Distribution System):** Why passengers survive 19g acceleration.
 The superconducting interior coil array acts on every ferromagnetic/conductive component
@@ -229,6 +234,57 @@ Ongoing, low-level, economically motivated. Residents treat them as weather.
 
 **Border Markets** — neutral-ground trading posts at Gray Zone / arcology perimeters.
 Goods and people move through them that wouldn't survive either side's legal framework.
+
+---
+
+## Hyper Reality {#SS-GLMZ-hyperreality}
+
+**Hyper Reality** is the GLMZ term for everything perceived through neuretic augmentation that has
+no physical counterpart — overlays, constructs, shared hallucinations, branded skins on bare
+physical substrate. Not a metaphor. A condition.
+
+The Pulse train interior is the canonical Hyper Reality: passengers in pitch-black sealed
+acceleration spheres share a neuretically-constructed vintage intercity train car — seats,
+overhead racks, window feeds from external cameras, other passengers visible across the aisle.
+The other passengers are real people in their own pods; the Hyper Reality lets them occupy a
+social space together without being physically co-located. Nobody finds this unusual.
+The train is more real than the pod, because the pod is just dark.
+
+**How it works in the archologies:**
+Physical infrastructure in archology zones is built as Hyper Reality substrate — walls optimized
+for AR rendering, corridors tiled in machine-readable surfacing, ceilings calibrated for
+projection geometry. Strip the overlay in an archology lobby and you find engineered blankness:
+featureless panels, ambient drone, the building equivalent of a green screen. The Hyper Reality
+IS the architecture. The physical form is just load-bearing.
+
+**Tiered access:**
+Premium neuretic tiers (Praxis Sovereign, equivalent) receive curated Hyper Reality — clean
+interfaces, minimal commercial intrusion, bespoke environmental skins. Standard and Extend tiers
+receive the ad-supported layer: every surface in the overlay is a monetized impression, every
+AR product emitter fires its animation whether the character wants it or not. The commercial
+density of someone's Hyper Reality is a direct readout of their economic tier. NCID forensics
+can tell where you've been and what tier you ride by the ad-fingerprint in your overlay history.
+
+**Gray zone:**
+No substrate optimization. No AR emitter infrastructure. The physical world in the gray zone
+looks like itself — concrete, rust, hand-painted signage, the actual colors of things. Augmented
+characters arriving from inside the Veil notice the Hyper Reality going quiet before they notice
+anything else. The silence is disorienting. Some describe it as vertigo. Some describe it as the
+first breath of cold air after a long time indoors.
+
+**Unaugmented perspective:**
+The unaugmented see the substrate wherever they go — the blank panels, the purposeless corridors,
+the physical world designed to mean nothing without an overlay. Archology spaces are incomprehensible
+to the unaugmented: no wayfinding, no pricing, no identity display on the people passing them.
+They are commercially invisible and spatially lost. This is not metaphorical — the archologies
+were designed that way intentionally.
+
+**In prose:**
+Use "Hyper Reality" to name the overlay experience directly when a character registers the
+construct as distinct from physical reality: stepping off the Pulse and feeling the train
+dissolve, entering a branded space and noting the skin, watching AR product holograms fire
+in their peripheral vision. The term does not need a long explanation — characters in 2226
+use it the way people use "the news."
 
 ---
 
