@@ -18,8 +18,8 @@ updated: 2026-07-04
 ## 0. What this story IS {#SS-STSH-0}
 
 A medical noir in three acts. A street medic in the Gray Zone inherits a dead corpo runner's
-evidence implant and has 72 hours to broadcast it before two competing kill-teams — one NSB,
-one corporate — eliminate the problem.
+evidence implant and has 72 hours to broadcast it before two competing kill-teams — one NSB
+(Neuretic Security Bureau, Halcyon Civil Security), one corporate — eliminate the problem.
 
 The story is about complicity: what it means to have done something wrong without knowing it,
 and what it costs to correct the record once you know.
@@ -125,7 +125,7 @@ her own hands when she finishes a surgery.
 
 ### Petra Voss {#SS-STSH-3c}
 
-- NSB Agent, GLMZ Field Division. Late 40s. Finnish-Somali heritage.
+- Halcyon Civil Security — Neuretic Security Bureau (NSB) Agent, GLMZ Field Division. Late 40s. Finnish-Somali heritage.
 - Her logic: the neuretics governor tech that uses the stolen trial data saves
   approximately 1,200 corpo employees per year from Atlas NeoCortex runaway syndrome.
   If the trial records are broadcast, the program is legally compromised and those
