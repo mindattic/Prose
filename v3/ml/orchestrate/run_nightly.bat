@@ -6,6 +6,7 @@ rem Runs as current user — Windows Auth to LocalDB (no credentials needed).
 setlocal
 set ROOT=D:\Projects\MindAttic\StreetSamurai\v3\ml
 set LOG=D:\Projects\MindAttic\StreetSamurai\v3\ml_nightly.log
+set PYTHONIOENCODING=utf-8
 
 cd /d "%ROOT%"
 call .venv\Scripts\activate.bat

@@ -35,9 +35,9 @@ SELECT
     CONVERT(nvarchar(36), n.Id)   AS NodeId,
     ISNULL(
         -- direct story node
-        CASE WHEN n.ParentNodeId IS NULL THEN n.Code ELSE NULL END,
+        CASE WHEN n.ParentNodeId IS NULL THEN n.NodeCode ELSE NULL END,
         -- chapter → story node (parent)
-        (SELECT TOP 1 p.Code FROM Nodes p WHERE p.Id = n.ParentNodeId AND p.ParentNodeId IS NULL)
+        (SELECT TOP 1 p.NodeCode FROM Nodes p WHERE p.Id = n.ParentNodeId AND p.ParentNodeId IS NULL)
     )                             AS StoryCode
 FROM BeatNodes bn
 JOIN Beats b  ON b.Id  = bn.BeatId

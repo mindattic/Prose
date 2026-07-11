@@ -77,7 +77,7 @@ def run():
         console.print(f"[yellow]Only {len(df)} scored beats — need ≥20 to train. Run reviews first.[/yellow]")
         return
 
-    console.print(f"[green]Training on {len(df)} beats with ≥2 reviews.[/green]")
+    console.print(f"[green]Training on {len(df)} beats with >=2 reviews.[/green]")
 
     # Fill missing EmotionalScore with column mean
     df["EmotionalScore"] = pd.to_numeric(df["EmotionalScore"], errors="coerce")
