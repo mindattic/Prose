@@ -172,6 +172,19 @@ that converge on one intersection.
 **Selvamani's shorthand (LOCKED):** *"The echo tells you who it tuned. The heading tells you where
 they walked. The echo is a fingerprint on a chair. The heading is the smell of the gingerbread."*
 
+**Selvamani's technical note on bearing (LOCKED):** *"The echo has no bearing. A scanner reads the
+imprint — frequency, intensity, duration. It cannot give you a source coordinate. Every other
+neuretics interference signature in the database has a point source. Something physical you can
+walk to and put a meter against. This one doesn't. Whatever left that mark doesn't occupy a point
+in this space."*
+
+**Emission profile (LOCKED, established prose 2026-07-10).** The AAMA has classified the 35th &
+Halsted schism emission as *non-directional* — the only such classification in the interference
+registry. Every other documented neuretics interference signature has a point source. This one has
+no source coordinate. The emission shows no attenuation across the 22-month period, no attenuation
+with distance from the schism site, and sits on an identical 17–19 Hz band across all 47 case
+records regardless of the child's district or proximity to the schism.
+
 **Why children disappear without witnesses (LOCKED).** A tuned child walking out of a building is
 not an alarm. One child not back from the bathroom is logged as an unexcused absence or a presumed
 guardian pickup; a child seen leaving the yard is a child going home early. The teacher assumes the
