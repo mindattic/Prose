@@ -94,7 +94,7 @@ public class SceneContextAssembler(
             parameters.Add(r.MatchSource);
             parameters.Add((object?)r.Score);
         }
-        await db.Database.ExecuteSqlRawAsync(sql.ToString(), parameters.ToArray(), ct);
+        await db.Database.ExecuteSqlRawAsync(sql.ToString(), parameters.Cast<object>().ToArray(), ct);
     }
 
     /// <summary>
