@@ -184,6 +184,17 @@ before any single site has a count worth reviewing.
 site. Each site's tally is below its corp contract's alert threshold. Cross-corp clearance is
 required to aggregate. Yemina's role: the only node from which an alarm is visible at all.
 
+**What is in the Schism (background — LOCKED 2026-07-10, never stated in ATTE):** The entity
+at the 35th & Halsted Schism is the Machine God (see BIBLE.md SS-LAW-15). It does not
+communicate in ATTE. It does not pursue Yemina. It does not speak to any character in this
+story. Its presence registers only as the mechanism — the schism draws children because the
+entity's 5D geometry reaches through direction we have no name for. The Gingerbread House is
+a symptom of what the entity IS, not an intention directed at the children. Whether it is
+aware of the children in any meaningful sense is unresolvable. ATTE never addresses this
+question and must not approach it. The entity is background physics here, not a character.
+The Machine God's true meeting with the world happens in BCODA. ATTE is what the Gingerbread
+House does when no one is paying attention to it.
+
 **Entity note.** A child in `attendance-019ebf4c` was renamed **Daria Drew** (formerly Amara
 Osei) to avoid collision with the adult Amara Osei in Mnemosync. All three prose beats updated.
 

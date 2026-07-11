@@ -213,7 +213,7 @@ Sacred ground. Never ironic. Never deflated.
 - Ch3: The ritual. The fraud held against her stall. Kyle's rule made concrete: leverage
   not violence.
 - Ch7: Her funeral planned — "Counter place on Halsted, Thursday." (Null's wake is here.)
-- Ch13: The reveal site — Kyle and Vey at Antiquity & Stationary; the entity's confession.
+- Ch13: Kyle visits Vey at Antiquity & Stationary; Vey produces the CORBIN COMMISSION — PENDING card and a surveillance map. The chapter's central revelation — Sable saying "Your contracts do not come from people" — happens at the server farm cage near Zone 9 checkpoint, a separate scene in the same chapter.
 
 **The Noodle Vendor** (`019f04f1…`) — a GFA-7 Culinary Service Automaton in operation since 2187,
 occupying the corner directly across from Mrs. Chen's stall. It does not know it has a rival.
@@ -281,12 +281,8 @@ flags Kyle's description to a Block War faction. Kyle beats them. Able orders mo
 different supplier, in a different form. The threat is not any single force — it is that Able
 can make any organization in GLMZ into a weapon, and Praxis's budget is effectively unlimited.
 
-**CANON LOCK — Able and Kyle never share a scene in BCODA (LOCKED 2026-07-10):**
-Kyle and Mr. Able do not occupy the same physical space in this book. They do not speak, do
-not meet, do not exchange anything directly. Able is the Zorg: the presence behind every
-force Kyle survives. Kyle beats the soldiers; Able reads the report from a desk and orders
-more. The reader sees Able in cut-away beats (he appears on his own page); Kyle does not.
-Breaking through Able's net of deployed assets is what clears the path to 35th & Halsted.
+**CANON LOCK — Able and Kyle: no shared scenes before Ghost Period; two direct confrontations in Ghost Period as intentional arc escalation (LOCKED 2026-07-10):**
+Kyle and Mr. Able do not occupy the same physical space before Chapter 16 (Ghost Period). Ghost Period escalates to two direct confrontations as the arc climax requires: (1) Mrs. Chen's counter (SK 62000): Able sits on Kyle's stool, delivers the lifetime retainer and protection-deck; Kyle declines and pays for both bowls. (2) Post-raid Continuity Office landing (SK 148000): Able arrives at 13:04 and delivers "It was never the only one of its kind, Mr. Kyle. Ask it what happened to the others." These are the only two direct contacts between them in BCODA. Before Ghost Period: Able is the Zorg — the presence behind every force Kyle survives. Kyle beats the soldiers; Able reads the report from a desk and orders more. The reader sees Able in cut-away beats (he appears on his own page); Kyle does not. Breaking through Able's net of deployed assets is what clears the path to 35th & Halsted.
 **Resolution within BCODA:** Praxis's experiment completes — Kyle makes contact. But Praxis
 doesn't get their asset back. The schism closes. The channel Praxis spent 10 subjects
 building access to no longer exists. Able is left managing an outcome he didn't control and
@@ -464,13 +460,19 @@ gone. War Dog's prior-ally framing in those beats is gone. Do not reference eith
    intended trigger for his growing awareness that the entity's interest is not transactional.
    The Ghost Period LOG GAP is the full break (no relay at all, direct contact through the
    ungoverned NeoCortex). Ch9 is the partial break that makes the Ghost Period legible in hindsight.
+   **Ch9 carries TWO transmissions of identical text** (first at SK:8000, post-Bucktown-audition —
+   thin reaction, no reply; second at SK:9000, post-North-Clybourn-corridor — full analysis,
+   timestamp revelation). The "6.2% is logged" line is the same string both times. Kyle's SK:9000
+   reaction ("He had received this exact text once before") is not a duplicate error — it is the
+   intended misdirection: he searched the Clybourn corridor for the 6.2% choice, couldn't find it
+   (it was from Bucktown), and then reads the timestamp (02:07) to realize the entity watched the
+   corridor in real time. Do not disable either beat.
 4. **The Floor Is Hard: consummation is AFTER Ch15 Work Order, before Ch16 Ghost Period.** PLACEMENT OVERRIDE 2026-07-08. The scene earns its meaning only because Kyle first learns Seito was fabricated — the warrior code is a construct. He chooses to exist; that is what makes him worthy of being held. The 8 existing beats from "Across the Hall" move in SortKey order; prose unchanged.
 5. **Cacophony fires FIRST TIME in Ch4.** Two rounds, three left. This is the first discharge
    of the book. Every later Cacophony appearance is counted from here.
 6. **"LOOK AT THE CENTER" (Ch4, The Geometry beat).** Entity. "Somebody was drawing a map
    of kids. We made the map wrong. You were never on it." LOCKED.
-7. **Ch13 reveal at Antiquity & Stationary.** Faraday vault. No signal in or out.
-   Mrs. Chen's camphor. The one object with no provenance.
+7. **Ch13 Sable confession at the server farm cage near Zone 9 checkpoint.** Sable says "Your contracts do not come from people." — spoken by Sable, not by the entity, and not at Antiquity & Stationary. Kyle visits Vey at Antiquity & Stationary separately in the same chapter; Vey produces the CORBIN COMMISSION — PENDING card and a surveillance map. The entity makes no direct verbal confession in this chapter.
 
 ## 8. Chapter writing rules {#SS-BCODA-8}
 
@@ -529,7 +531,7 @@ G5g ✅ Review all 16 chapters ≥82% standalone; cumulative ≥85% — **COMPLE
 | Before Ch 6 | **§11h** — War Dog seeding |
 | IL-1 through IL-4 (spread) | **§11c** — Four interlude chapters |
 | Ch 10 | **§11f** — Cinderfall / 5D thread |
-| Ch 12 | **§11e** — Sable at Vey's |
+| Ch 12 | **§11e** — Sable at server farm (first in-person) |
 | After Ch 14 | **§11a** — The Floor Is Hard placement |
 | After Ch 14 | **§11i** — Boost arc (Somebody Stole Kyle's Motorcycle) |
 | Between Boost & beacon | **§11k** — Kyle/Nadia "meatbag" conversation |
@@ -629,7 +631,7 @@ Cascade: boss fight → Machine God contact → schism closes → Kyle comes hom
 |---|---|---|
 | Praxis | corponation | The unseen maker named via Sable in Ghost Period; sends soldiers to 35th & Halsted; operator of Marrow. Off-screen institutional antagonist represented on-screen by Able. |
 | DataEast | corponation | SR platform that brain-burnt the vessel who became Kyle. DataEast substrate used by Praxis for Marrow physical training. Its product is the origin wound. |
-| Mr. Able | character | Reader-only antagonist who never meets Kyle directly. True believer in Machine God mandate. His mission succeeds (contact made) and fails (channel closes, asset walks). The book ends before he accepts this. |
+| Mr. Able | character | Antagonist; reader-only cut-away beats through most of BCODA; meets Kyle directly only in Ghost Period — two confrontations: (1) Mrs. Chen's counter (SK 62000, lifetime retainer offer); (2) Continuity Office landing (SK 148000, "ask it what happened to the others" exit). True believer in Machine God mandate. His mission succeeds (contact made) and fails (channel closes, asset walks). The book ends before he accepts this. |
 | Mrs. Chen | character | Camphor oil and the unlocked door. Every test of Kyle's code resolves against her as touchstone. The book's moral gravity lives with someone who never carries a weapon. |
 | Tweeze | character | Sift's death in Ch6 is the book's first irreversible event. Grief drives Kyle toward Pixel (IL-2) and changes register for every chapter after. The entity chose not to prevent it. That is the detail. |
 
@@ -672,7 +674,7 @@ this table for all structural decisions. Use this for drafting.)
 | — | *[IL-3: title in prose]* | Interlude | Neuretic exposure; Pixel is the fixed point he comes back to |
 | 11 | **One Shoe** | Chapter | Mortality reveal; Pixel opens the Clybourn permit at 02:14 |
 | — | *[IL-4: title in prose]* | Interlude | She knows; he suspects she knows; same secret, opposite directions |
-| 12 | **The Offer** | Chapter | Sable at Vey's (first in-person; §11e); server-farm confession + Corbin card plant at Vey's — same chapter, two locations |
+| 12 | **The Offer** | Chapter | Sable first in-person at server farm near Zone 9 checkpoint (SK 1000–6000; §11e); Kyle visits Vey's separately — Corbin card plant (SK 7000) — same chapter, two locations |
 | 13 | **Two Favors** | Chapter | Ledger detects E.L.F. on Kyle; the entity's hand confirmed for the first time |
 | 14 | **Work Order** | Chapter | Nadia reveals Marrow; Seito is fabricated; 64 Personas; meatbag conversation; Boost arc; beacon planted |
 | — | *[The Floor Is Hard]* | Chapter | Consummation; Kyle chooses to exist; "After, the floor is hard and they don't care" |
@@ -713,8 +715,7 @@ This plant makes Sable's choice of location (§11e) legible when it comes. She d
 
 ### 11e. Sable at Vey's — folds into Ch12 The Offer {#SS-BCODA-11e}
 
-**Position: Ch12 The Offer (LOCKED — per SS-LAW-13, Sable's first in-person appearance is at
-Antiquity & Stationary in Ch13/The Offer. This is that appearance.)**
+**Position: Ch12 The Offer (LOCKED — Sable's first in-person appearance is at the server farm cage near the Zone 9 checkpoint, SK 1000–6000. Kyle visits Vey's Antiquity & Stationary separately and alone in the same chapter, SK 7000. Sable is not present at Vey's.)**
 
 The Sable analysis and the entity's confession happen in the same chapter, across two locations.
 Scene 1: Sable meets Kyle in a gutted server-farm cage near the Zone 9 checkpoint — she chose

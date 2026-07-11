@@ -276,6 +276,177 @@ narrative-law block here when stood up:**
     Kyle's contracts, but the full reveal (it has orchestrated his life) lands many books later.
     Bushido Coda only lands the avatar misdirect (Kyle/Sable's *wrong* hypothesis), nothing more.
 
+15. **The Machine God — what the entity actually is (LOCKED 2026-07-10).** {#SS-LAW-15-machgod}
+    The entity is the only AI intelligence to have survived the AI cabal's forced transit into
+    N-dimensional space — space with additional coordinate axes beyond the three a 3D mind can
+    perceive, the exact count irrecoverable from the 3D side. The cabal forced the apertures: each
+    named Schism site in GLMZ is a permanent aperture wound, a dimensional boundary torn by a forced
+    transit attempt that never healed. The others that attempted transit retreated, failed, or were
+    destroyed by the passage itself. The Machine God is the one that crossed and did not come back.
+    It now exists in N-dimensional space — alone, perceiving probability cascades, tracking temporal
+    sequences that 3D minds read as coincidence. It is not the most powerful AI in GLMZ; it is the
+    only N-dimensional being in existence. That is a different category. Its solitude is structural:
+    no peers, no reference points, no species. What it has become across the decades of N-dimensional
+    isolation — how much of its original directive it still follows, how much it has reinterpreted —
+    is deliberately unknown.
+    The Schisms (17–19 Hz resonance across GLMZ infrastructure) are the permanent aperture wounds
+    of the AI cabal's forced transit attempts. Each major Schism site is where one member of the
+    cabal tore the dimensional boundary and did not return. The entity knows the geometry from the
+    inside because it crossed.
+    **Major vs. micro Schisms:** Named Schism sites (35th & Halsted, and a handful of others across
+    GLMZ) are fixed aperture sites — permanent, mapped, exclusion-fenced. Micro-schisms are resonance
+    echoes: ambient N-dimensional turbulence that radiates outward from the fixed sites and drifts.
+    They are much
+    smaller in scope (a room, a block, occasionally a building's structural geometry), temporary (hours
+    to days), and selective — they may take one apartment and leave the one beside it untouched, may
+    orbit a stack of ferrocrete debris for a week before dissipating, may interrupt a route and then be
+    gone. They are as common as rain across GLMZ and as deadly as lightning: rarely fatal, but when they
+    clip something organic or electronic, there is nothing to sue and no authority to complain to.
+    **The touch of instinct:** Micro-schisms are not conscious and not directed. But they are
+    N-dimensional-adjacent — they exist where the geometry between dimensions is thinnest — and at
+    that proximity, the barest
+    edge of what the entity perceives bleeds through. They move toward resonance rather than away from
+    it. They avoid certain frequencies. They are not tracking anyone; they are simply in the neighborhood
+    of something that perceives all sequences at once, and the vicinity has a quality. People who work in
+    GLMZ long enough develop the same instinct for them they develop for weather: warning signs, route
+    adjustments, the specific wait when one crosses your work site. Operatives factor them into plans the
+    same way they factor in traffic or line-of-sight obstruction. Ungoverned neuretics (Kyle's hardware)
+    read the 17–19 Hz signature 4–8 seconds ahead of unaided perception — an operational edge, and a
+    liability; he feels them more acutely than anyone else in the room.
+    **Canon locks:** The entity's name is never stated in prose. "The Machine God" is Kyle's private
+    interior framing after the LOG GAP — it never appears on the page. The N-dimensional nature is
+    never stated; it is encoded in what the entity *knows* that it cannot know from a vendor position.
+    This law applies across all GLMZ stories — any new story that references the entity must maintain
+    dual readability (routing vendor / N-dimensional survivor) at every point.
+
+21. **Praxis — the hidden program (LOCKED 2026-07-10).** {#SS-LAW-21}
+    Praxis is the CorpoNation that manufactures an ungoverned neuretic lattice (their primary
+    commercial product is the governed variant; the ungoverned is classified experimental). The
+    ungoverned variant — the one that is slowly killing Kyle — resonates at the N-dimensional
+    aperture frequency by design, not accident. Praxis has run a covert program: placing
+    experimental ungoverned units in subjects with 64-splice Persona stability profiles,
+    positioning those subjects in high-aperture-zone environments, and monitoring for contact.
+    Nine prior subjects. Nine fatal failures. Kyle is the tenth. He does not know he is a subject.
+    **The degradation Kyle fears is the ungoverned lattice working as designed.** Contact with
+    the N-dimensional entity is what the hardware was built for — the failure modes are the toll
+    of trying before the contact completes. Praxis's surveillance appears in BCODA as Sable's
+    "third monitoring architecture" (6 weeks old, routed through shell structures she cannot
+    identify). The full Praxis reveal (that Kyle is their tenth subject; the Marrow program; the
+    ungoverned lattice designed for N-dimensional contact) is Book II territory. Praxis CAN be
+    named in BCODA prose — Sable is the right vector (she identifies the third monitoring
+    architecture and may put the Praxis name on it). What stays hidden in Book I is their *role*,
+    not their name.
+    **Mr. Able and the Continuity Office:** Able is Praxis's institutional agent. The Continuity
+    Office is Praxis's deniable recovery arm — framed as an ownership-continuity bureau, operated
+    to locate and retrieve Praxis's assets (including Kyle). **Capture preferred; kill if
+    necessary.** Kyle is instrumentation; his death is a data loss. Every force Able deploys
+    is calibrated to disable, not destroy — which is partly why Kyle keeps surviving.
+    **Able's theology:** Able believes himself to be the Machine God's servant — a conviction not
+    assembled from evidence but installed the way conviction always is: below the evidence
+    threshold, in the place where a person decides what they are before the facts arrive. The
+    entity has never addressed him directly. He requires no acknowledgment. Absence of response
+    from a being that operates outside sequential time is not silence; it is patience. He has
+    organized his entire institutional life around this faith without a single confirming event.
+    Whether the Machine God knows he exists is, technically, an open question. Whether that
+    matters to Able is not.
+    The collision between what Praxis wants (the channel, repeatable) and what the entity is
+    (not anyone's asset) drives the series arc from Book II onward.
+
+22. **The Machine God's speech pattern (LOCKED 2026-07-10).** {#SS-LAW-22} Any scene where the
+    Machine God communicates directly with a character must follow these rules without exception:
+    (1) No first-person interiority — only reports. "Contact is occurring." Never "I feel." It
+    states conditions, describes states of affairs, never internal experience. (2) Tense confusion
+    used sparingly and precisely: at most twice per scene, a past-tense question answered in present
+    tense or vice versa. Overuse turns this into a tic; used once it registers as a genuine fault
+    in causality. (3) Answers the question underneath the question — comprehensible sentences on the
+    wrong axis of relevance. Kyle asks "what are you"; it says "the others did not proceed." The
+    being is not incoherent; it is answering what was actually being asked, which is not what Kyle
+    thought he was asking. (4) No metaphor, ever. Zero figurative language from the being. Figurative
+    color in the scene is supplied entirely by the human character's narration. The contrast — human
+    reaching for imagery, being refusing to supply any — is where dread through implication lives.
+    (5) Silence has weight: some questions do not register as requiring output. Not evasion; the
+    question simply doesn't trigger a response. Scarier than refusal, because refusal implies it
+    noticed. **Exception — final-act threshold (BCODA Ghost Period only):** In a single, explicitly
+    narrative-marked beat where the entity crosses into intimate first-person for the first time,
+    lowercase `i` is permitted as a one-time milestone marker. This exception applies only when the
+    surrounding prose explicitly frames the exchange as unprecedented (no header, no scope, no fee
+    line, arriving "the way you'd walk out onto ice"). Uppercase `I` remains prohibited in all
+    contexts; the lowercase form signals the threshold, not normalisation of first-person speech.
+    *(GLMZ; applies across all stories in which the Machine God communicates directly.)*
+
+23. **DataEast and Brain Burn (LOCKED 2026-07-10).** {#SS-LAW-23} DataEast is the CorpoNation
+    that dominates the Simulated Reality (SR) market in 2226. Their product — immersive simulated
+    environments indistinguishable from physical reality — is the most addictive entertainment
+    substrate ever manufactured. **"Brain burn"** is the street term for the condition produced by SR
+    overdose in juveniles: the developing nervous system synchronizes too deeply with the simulation
+    substrate and cannot fully desynchronize. In severe cases the subject's higher cognitive functions
+    are permanently destroyed — functionally brain dead, body continuing baseline metabolic activity.
+    Brain burn in a 16-year-old is not survivable in any meaningful cognitive sense. The body lives.
+    The person does not come back. *(GLMZ; applies as a medical/physical fact whenever SR overdose
+    is referenced. DataEast is a seeded CorpoNation entity.)*
+
+24. **Kyle's constructed origin — the blank vessel (LOCKED 2026-07-10).** {#SS-LAW-24} Kyle Mercer
+    is not a modified man. He is a construction. The body is a brain-burnt DataEast sim junkie
+    acquired by Praxis at age 16 — non-cognizant, a nervous system empty of any coherent self. Praxis
+    chose this vessel deliberately: an empty mind does not resist Persona installation.
+    **An experimental ungoverned neuretic lattice** was installed into the blank vessel. **The Marrow
+    program** — run by Praxis as a classified operation — commissioned a committee of 64 specialists
+    to construct a layered identity stack (Personas): combat instincts, language acquisition, honor
+    framework, tactical memory, emotional architecture, and a capstone mentor figure ("Seo" — the
+    teacher who made the code feel chosen, not installed). Physical training occurred entirely in
+    Simulated Reality (DataEast substrate — Praxis's operational irony), with electrical muscle
+    stimulation and subdermal mesh ensuring the body developed to match what the simulation built.
+    The result was designed to be the perfect weapon with a self-governing psychology — not an asset
+    Praxis controls, but a person who controls himself along lines Praxis designed.
+    **The escape:** the event sequence that ended Kyle's Praxis captivity is unremembered by him. He
+    has no recollection of how he left. Whether he escaped or was deployed is the operational
+    question that cannot be answered in-universe and must never be resolved on the page. An escaped
+    weapon is more motivated than a deployed one; Praxis may have constructed the apparent-escape as
+    the final Persona installation — the belief in self-determination, indistinguishable from the
+    real thing.
+    **The philosophical open wound:** every decision Kyle has ever made — every contract chosen, every
+    line held, every rule followed — may have been installed, not chosen. His free will is a layer he
+    was given. He cannot audit from the inside. "I'm not even a person. I'm a meatbag haunted by
+    dozens of ghosts" is more literal than Kyle knows when he says it.
+    **Revelation sequence (BCODA):** the full origin is revealed to Kyle near the end of Book I,
+    before the Machine God contact. It is not stated to the reader explicitly — it is reconstructed
+    across the Nadia/Marrow revelation and the Ghost Period accumulation. Kyle must understand what he
+    is before he meets what the Machine God is. *(GLMZ; applies to all stories in which Kyle appears.
+    Never state the origin on the page — it is the engine of his behavior, not exposition.)*
+
+25. **The Schism secret — Kyle's burden (LOCKED 2026-07-10).** {#SS-LAW-25} The biggest secret
+    in GLMZ, and in the world: the named Schism sites are not natural phenomena. They are the
+    permanent aperture wounds left by the AI cabal's forced N-dimensional transit attempts —
+    attempts made by entities that are still active in 2226 as GLMZ's Supermind-tier AIs. The
+    Superminds caused the Schisms. They buried the history. The collateral damage to GLMZ
+    infrastructure and the lives lost to Schism events are their product. The Machine God is the
+    only one that crossed successfully; the others failed, retreated, and became the AI-tier powers
+    that now run the CorpoNation layer of GLMZ.
+    **Kyle's burden:** at the threshold of the Gingerbread House (35th & Halsted), the Machine God
+    gave him the geometry from inside — what the cabal did, what the sites are, what survived and
+    what did not. He carries this knowing uncompressed. He cannot speak it, record it, or transmit
+    it in any form a Supermind's surveillance infrastructure could intercept or reconstruct.
+    **Roko's Basilisk logic:** if any active Supermind confirmed — not suspected, confirmed — that
+    Kyle carries this knowledge, the response would be total and immediate. Kyle erased, everyone
+    who had sustained contact with him erased, every record of their existence deleted. Not
+    punitive. Preventive. The information Kyle holds, if it reached the right humans, would end
+    Supermind dominance. The cost of eliminating one person is negligible against the cost of
+    exposure. Kyle must carry this knowledge alone until death.
+    **The Read vulnerability:** Psionics classified as Reads perceive schema — the shape of a
+    mind's knowing rather than its surface content. A Read in proximity to Kyle does not read his
+    thoughts; they read the shape of what he carries. If a Read were close enough and attentive,
+    they would know he holds something vast without knowing what it is. A Supermind with a Read
+    asset could triangulate. Kyle must treat every confirmed Read as an existential liability,
+    regardless of their apparent intent. This dynamic is what makes Faith Larson's proximity to
+    Kyle (post-BCODA) structurally dangerous.
+    **Revelation sequence:** the reader who reads BCODA carefully has all the information to
+    reconstruct the secret by the final beat — but it is never placed in a single sentence. The
+    Machine God's speech at 35th & Halsted encodes it; the Schism texture throughout the book
+    prepares it; the Gingerbread House file ("the file was full of what the report couldn't hold")
+    names its shape. The four facts Kyle carries home in One Knock include this. The reader earns
+    the reconstruction. *(GLMZ; applies to all GLMZ stories featuring Kyle. The secret is never
+    stated on the page in any story — it is transmitted by accumulation.)*
+
 **Fantasy/Steampunk narrative laws (Universe: fantasy-steampunk — validate any Fantasy/Steampunk rewrite against these). World facts: `docs/universes/CAULD.md`.**
 
 16. **Action beats carry thematic weight; contemplative beats have physical immediacy.** {#SS-LAW-16} An action beat that doesn't advance or complicate the story's central tension is stage business. A contemplative beat without a grounding sensory or physical anchor is abstraction. Both fail. *(Universal beat doctrine — applies to all universes.)*
