@@ -2,615 +2,567 @@
 codex: 1
 project: StreetSamurai
 code: PNHL
-title: Pinhole
+title: Pixel
 layer: node-bible
 universe: glmz
 status: active
-updated: 2026-07-06
+updated: 2026-07-11
 ---
 
-# NODE BIBLE — Pinhole (PNHL) {#SS-PNHL}
+# NODE BIBLE — Pixel (PNHL) {#SS-PNHL}
 
-> **File history.** Originally TDIU / *The Door Is Unlocked*. Story retitled *Pinhole* and
-> rewritten as a 26-beat origin story 2026-07-02; further revised 2026-07-03 to the current
-> 22-beat form: MacGuffin corrected from "drone design" to "operator coercion"; Assessor
-> redesigned as a physical character with a dinner-scene introduction; sabotage campaign replaces
-> instrument-theft arc; Kyle's line updated to "Give em hell." Dress element removed 2026-07-03
-> (per feedback: no dress/makeover beats — Pixel's clothing is functional/signal only); Beat 9 is
-> now a bare invitation and she attends the dinner in her own clothes. Slug:
-> `the-door-is-unlocked-2db1c6ca`. Revised 2026-07-04: node-bible terminology (SS-A43); aerostatic
-> altitude world context integrated (SS-A32/A42); NSB/Exo vocabulary section added (SS-A34/A38);
-> logic-sweep QA criterion added (SS-A44). Revised 2026-07-06: Nit's lift source changed from a
-> generic vacuum-cell/"VacCell" core to a scavenged eigenlift coherence-frame shard, matching the
-> retirement of "VacCell"/"VABC" terminology across GLMZ canon. Revised again 2026-07-07: ANGEL
-> itself fully retired GLMZ-wide (not just its boring acronym) — Eigenlift is now the *only*
-> aerostatic technology at every scale; §7's aerobloc is now unambiguously eigenlift, same as Nit
-> (see [[../universes/GLMZ]] Aerostatic Architecture, Eigenlift).
-> When prose and spine disagree, fix one in the same change. See [[../BIBLE]] for universe laws;
-> [[../books/bushido-coda-strands-bible]] for Pixel's role in BCODA.
+> **File history.** Originally TDIU / *The Door Is Unlocked*. Retitled *Pinhole* and written
+> as a 22-beat Iowa-origin story 2026-07-02. **Full refactor 2026-07-11:** Iowa retired,
+> Pixel now from Detroit. Origin changed to job-opportunity-robbery inciting incident. Story
+> retitled *Pixel* (working title; no "Pinhole" story beat). VacCell fully retired (replaced
+> by eigenlift coherence-frame shard in prior pass). New 14-beat spine. All 22 prior beats
+> disabled. Slug remains `the-door-is-unlocked-2db1c6ca`.
+>
+> When prose and spine disagree, fix one in the same change. See [[../BIBLE]] for universe
+> laws; [[../books/bushido-coda-strands-bible]] for Pixel's role in BCODA.
 
 ## 0. What this story IS {#SS-PNHL-0}
 
-A coming-of-age story about a predator and a specialist who refuses to be owned.
+A specialist from Detroit arrives in GLMZ on a job that was a trap. She loses everything except her skills and a drone. She rebuilds from 8Φ. A CorpoNation talent-hunter takes notice, makes his pitch, and when she declines, tries to make her stay untenable. She doesn't defend. She goes inside his infrastructure and takes it apart.
 
-A country girl rides the Pulse from Iowa into GLMZ, takes a relay job to pay the rent, and leaves
-a trace a predatory operator uses to find her. The Assessor runs a crew of conscripted specialists —
-not corpos, not heroes, mercenaries for the highest bidder. He sees the nine-second gap and wants
-her. He sends an invitation to dinner, expecting compliance. She attends — on her own terms, in
-her mother's boots — and declines. He accepts too graciously, and that is when she knows.
-
-What follows is a campaign of quiet sabotage: jobs that fall apart, contacts who don't show,
-financial traffic that traces back to a bribe. He is trying to make GLMZ uninhabitable until she
-joins or leaves. She keeps fixing what he breaks. She is faster than he expected. Neither of them
-is willing to stop.
-
-She confronts him. She wins. She stays.
-
-**"Pinhole"** refers to the 9-second logging gap she left in the Ryokan frame — the trace that
-made her visible to The Assessor. By the end, the routing log is still on her terminal, unerased.
-It is her mark. She is not hiding from what she started.
+This is the coolest cyber integration story in the series. Pixel is a full-stack operator — Channeler, Exo, Splicer — with one edge nobody else in the cast has: she can ride any machine with a coherent frame, and she can channel AIs the way a musician plays an instrument. She didn't arrive in GLMZ. She landed in it, got stripped, and built something better than what she started with.
 
 **This is NOT:**
+- A naive country girl discovering the city. She's from Detroit. She's been doing this for three years.
+- A rescue story. Nobody saves her. Not once.
+- A story about learning to be capable. She already is. This story is about what she does with it at scale.
 - A Kyle story. He appears in one beat. He says three words.
-- A chosen-one story. She solves a concrete problem with skill and nerve.
+- A romance. The Assessor is a predator. She finds him as interesting as a broken lock.
 - A story where Bear appears.
-- A story where corporate AIs pursue her.
-- A romance setup. The Assessor wants to own her. She finds it as creepy as it sounds.
 
 ## 1. The central symbol {#SS-PNHL-1}
 
-**Her mother's boots.** Big black work boots, one size too large. She's been padding the toes with
-folded paper since she took them out of her mother's closet. She wears them anyway — not because
-they fit but because she has decided she will grow into them.
+**Her mother's calibration instruments.** A set of precision measurement tools — resonance meters,
+mesh calibrators, signal probes — that her mother used to tune industrial machinery in Detroit's
+gray zone. When her mother died, the tools went into a hard case. Pixel has carried that case
+across state lines and through three years of gray-zone work.
 
-**The arc of the boots:** In Beat 1 the toes are padded. In the finale she notices she stopped
-re-padding them at some point — she can't place when, hadn't decided to, hadn't noticed until now.
-She leaves them as they are.
+The case is taken in the robbery. She traces it across GLMZ through two weeks of parallel work,
+buys it back for 60Φ from a scrap merchant who had no idea what was in it. She says nothing
+about this during the confrontation. She wanted to see what the Assessor would say when she asked
+about the instruments. He said he burned them. She logs it: he lies, and he burns what he takes.
 
-The boots are never explained to anyone in the story. They don't need to be.
+**The boots:** Her mother's work boots — one size too large, toes padded with folded paper since
+she inherited them. In the final beat she notices she hasn't re-padded them since GLMZ. She leans
+down and laces them tighter. She doesn't know when she stopped needing the paper.
 
 ## 2. The wound (background, never stated on the page) {#SS-PNHL-2}
 
-Her mother had a licensed SNT bridge — the kind with a warranty and a hotline number. It failed
-at month eight of integration. There was no one to report it to that wasn't owned by the same
-CorpoNation that sold the bridge. Her mother died in Iowa while the licensed industry's automated
-response system generated case number RX-2217-44091 and escalated it to a team that responded
-in eleven business days.
+Her mother was a precision calibration specialist who spent twenty years keeping Detroit's
+legacy industrial machines running — gray-zone work, unlicensed, because the licensed providers
+had no interest in machines they didn't build. She was good at it. She died of a failed SNT
+bridge — a licensed one, because the gray-zone clinics she trusted had waiting lists and the
+corporate option was there and she was tired. The case number was RX-2217-44091. The response
+team acknowledged it in eleven business days.
 
-She was nineteen. She inherited the tools, the boots, and the understanding that the only
-hardware she can trust is hardware she can put her hands on.
-
-This is why she came to GLMZ: unlicensed neuretics calibration is where the real work is. The
-licensed industry calls it gray-market. She calls it the only market where the work actually works.
+Pixel was twenty. She inherited the tools, the boots, and the specific understanding that
+licensed infrastructure treats consent as a formality. She has been working unlicensed ever since.
 
 **Rule: the wound never surfaces in this story.** It is the engine, not the content. The Assessor
-echoes it — another system that treats consent as expendable — but the echo is never named.
+is the same logic — a system that decided consent is expendable — but the echo is never named.
 
 ## 3. Nit — Her Drone {#SS-PNHL-3}
 
-Nit is her **tool**, not the MacGuffin. The Assessor does not want her drone design. He wants
-*her* — a specialist who can ghost corporate shell networks and read systems nobody else can read.
+Nit is her **tool**. Not a mascot, not a MacGuffin. An instrument she built in a Detroit workshop
+over two winters from parts she sourced herself.
 
-She built the drone chassis over two winters in her mother's barn, fitted around a cracked
-coherence-frame shard scavenged from a demolition pile — a fist-sized fragment of the kind of
-civic eigenlift lattice that holds up buildings, thrown out because nobody miniaturizes that tech
-below platform scale. It's not a secret: the physics is well understood, published, taught to
-any aerostatic engineer. What nobody had bothered to do is drive a shard that small. Corpo R&D
-never tried because there's no margin in a drone-sized coherence frame — the whole industry is
-built around city-block contracts. She had a barn, two winters, and no reason to know it was
-supposed to be a dead end. Small systems hold coherence longer than large ones; she just needed
-a driver circuit small enough to exploit that, and time to find it by hand. The chassis, wing
-geometry, control architecture, and the driver board are her work.
+**Construction:** The chassis is built around a cracked coherence-frame shard scavenged from a
+demolition pile — a fist-sized fragment of civic eigenlift lattice, thrown out because nobody
+miniaturizes eigenlift below platform scale. The physics is published and well understood. Nobody
+had bothered to drive a shard that small because there's no corporate margin in it. She had time
+and no reason to believe it was impossible. The chassis, wing geometry, control architecture, and
+driver board are all hers. Two dragonfly wing pairs (rear slightly longer) for thrust and
+maneuvering. Camera eye beneath. Charges off any standard line; handshakes with her kit's tracer
+signal every four seconds.
 
-She calls it **Nit**. It always lands two centimeters to the left of center on her palm. She
-stopped trying to correct it.
+**She calls it Nit.** It always lands two centimeters left of center on her palm. She stopped
+trying to correct it.
 
-**Nit's physical description:**
-- Coherence-frame core: salvaged eigenlift shard, driven at drone scale — the frame suppresses
-  Nit's effective weight rather than generating physical lift
-- Two pairs of dragonfly wings (rear pair slightly longer than front) for thrust and maneuvering
-- Camera eye mounted beneath for downward surveillance
-- Charges off a standard power line; handshakes with her primary kit's tracer signal every four seconds
+**What makes Nit extraordinary:** The coherence-frame shard suppresses Nit's effective weight
+rather than generating physical lift — it has no standard propulsion signature. Aerial sweeps
+that detect drones by weight or thrust output don't find it. It passes through mechanical
+infrastructure spaces that larger drones can't navigate. When she rides it, she becomes the only
+eyes that can go where nobody sweeps.
 
-**NSB riding:** She can inject into Nit and perceive through its sensor suite directly. Her Husk
-sits still while she occupies the frame. For routine use she pilots by screen. She goes riding
-when she needs full spatial awareness. She has never said this to anyone, but she is fairly sure
-Nit's coherence frame and the trick that lets her ride it are the same physics wearing two
-different licenses — nobody selling either technology has an interest in saying so out loud.
+**NSB riding:** She can inhabit Nit's frame directly — step into its sensor suite, leave her
+Husk motionless, and perceive as the drone perceives. She does this when she needs full spatial
+awareness or access to a space she can't enter physically. For routine use she pilots by screen.
+She has never told anyone that the eigenlift shard and the thing that lets her ride frames are
+probably the same physics wearing two different licenses.
 
-**Nit in the story:**
-- Beat 1 (Cedar Rapids): Final orbit of Iowa from above before boarding
-- Beat 6 (first night): Inspects building ductwork — the climate fix that earns her the room
-- Surveillance beats: NSB-ridden or camera-piloted during recon
-- **Nit is never stolen.** It is her instrument, not an asset the Assessor pursues.
+**Nit is never stolen. The Assessor does not want Nit. He wants Pixel.**
 
-## 4. Neuretic Etching {#SS-PNHL-4}
+## 4. Her Abilities — The Full Stack {#SS-PNHL-4}
 
-**Neuretic etching** is the visible external trace of sub-dermal neural mesh where it surfaces at
-the skull's nerve ports. Everyone with neuretics has some; what varies is grade.
+Pixel is the most complete cyber-capable operator in the series. She does not announce this.
+She demonstrates it with her hands.
 
-- **Cheap installation:** rough scarring, asymmetric, visible seam lines. Functional but ugly.
-- **Mid-grade:** cleaner marks, minimal scarring, mostly invisible under normal light.
-- **High-end (Atlas grade and above):** geometric micro-patterning, thin lines almost decorative —
-  faint grid traces at the temples, precise marks along the jaw at the motor cortex interfaces,
-  small precision dots behind the ears at the cochlear feeds. From a distance it reads as an
-  elaborate tattoo. Up close it reads as someone who spent serious money.
+### Channeler — She Talks to Machines
 
-Heavy neuretic etching is a status marker. It signals not just modification but the resources and
-access to afford the best. The Assessor's etching is immaculate — the kind that costs more than
-most operators make in a year. He wears it the same way he wears his suit.
+Standard channel work is session injection into networked frames. She does this faster and cleaner
+than most — her Detroit background means she learned to channel on systems without clean APIs,
+machines half-dead and poorly documented. She knows how to talk to hardware that doesn't want to
+be talked to.
+
+The edge: she can channel AIs directly. Not hack them — *negotiate* with them. An AI running
+building management infrastructure, a maintenance scheduler, a security pattern recognizer — she
+can address these as entities rather than as attack surfaces. Some of them respond. This is
+not documented anywhere. It is not something the licensed channel curriculum teaches. She does
+not know why it works; she has never met another operator who does it. It started in Detroit
+with a half-dead AI running a legacy furnace controller that she needed to cooperate rather than
+override. She talked to it. It cooperated.
+
+In GLMZ, where AI density is orders of magnitude higher than Detroit, this ability opens
+infrastructure that brute-force injection cannot reach.
+
+### Exo Operator — She Rides Anything
+
+Nit is her primary frame. But her Exo ability is not limited to Nit.
+
+She can inhabit any machine with coherent circuitry — not just purpose-built drone frames. A
+building maintenance crawler. A ventilation actuator array. A security camera chassis with a
+motor mount. Anything with a coherent signal pathway and enough sensory output to be worth
+inhabiting. Licensed Exo work requires purpose-built RFO frames with handshake protocols and
+safety governors. She operates on hardware that doesn't have any of that, which means she can
+go places licensed Exo operators cannot reach.
+
+Detroit gave her this. Detroit's machines are old, mixed, layered — 20th and 21st century
+industrial hardware under three generations of patch-and-extend. She learned to ride machines
+that weren't designed to be ridden, that had no frame-spec at all, that she had to find the
+coherence pathway in herself because there was no manual. In GLMZ she is surrounded by
+mechanical density that Detroit never had. She is a native speaker in a city that thinks this
+language doesn't exist.
+
+**In-universe vocabulary:** NSB (Neuretic Substrate Bridging). She is an Exo operator (street
+term; formal: Remote Frame Operator / RFO). Her body at rest during projection = her Husk.
+"Rider" as a job title is retired (SS-A38) and does not appear.
+
+### Splicer — She Builds and Breaks
+
+She can crack proprietary service menus, model RF sweep protocols, trace financial routing
+through gray-zone relay nodes. She assembles dossiers from public records and gray-zone data
+deposits. She can reverse-engineer access patterns from a single credential call structure.
+
+What distinguishes her from standard slicers: she builds hardware. She can look at an access
+system and not just crack it but understand the physical implementation, which tells her things
+a software-only attack surface won't reveal. The driver board in Nit is hers. The calibration
+instruments she inherited are precision hardware she can use and repair. She thinks in
+physics before she thinks in code.
+
+### Neuretic Etching {#SS-PNHL-4-etching}
+
+Visible external trace of sub-dermal neural mesh at skull nerve ports. Her own etching is
+mid-grade — functional, clean, minimal scarring. She did not have it installed at an Atlas
+clinic. It was done in Detroit by someone she trusted, with instruments she inspected herself.
+
+The Assessor's etching is immaculate — top-tier, geometric micro-patterning, expensive as a
+year's income for most operators. He wears it like jewelry. She notices it the same way she
+notices any hardware: status signal, installation cost, what it implies about who installed it
+and under what conditions.
 
 ## 5. Her Handle: "Pixel" {#SS-PNHL-5}
 
-**Her handle "Pixel" is GLMZ-acquired.** She did not arrive with it.
+**She arrived as Pixel.** The handle was earned in Detroit — her calibration work was
+pixel-precise, and the reputation preceded her. She does not explain the origin to anyone in
+GLMZ. It simply is her name, and anyone who knows anything in the gray-zone net knows it.
 
-"Pixel" was first coined by Donatella after the climate fix (Beat 500): she watched the
-calibration work and said, "I'll call you Pixel." The relay job (Beat 800) propagated the name
-through the gray-zone network — her nine-second gap in the Ryokan frame was too clean for
-atmospheric noise, and the relay operators who reviewed the logs called it "pixel-work,"
-cementing "Pixel" as her identifier.
-
-She learns the name has already traveled when the Assessor uses it at the dinner. She notices
-the name. She does not correct it. (There is no messenger beat — the invitation arrives unsigned.)
-
-**Room-number mechanism (author reference):** The Pivot's room register is accessible via
-management-tier building credentials — the same credential layer the Assessor used to lock
-Pixel out in Beat 12. He read her unit assignment from check-in records before he slipped
-the paper under her door. Pixel deduces this retroactively after the lockout; at Beat 10
-she notes the gap and sets it aside without an answer.
-
-**The earned-name rule:** The name is inseparable from the pinhole gap. The gap is what the
-Assessor noticed. The gap is the story's title. The name came from the same act that started
-everything.
+When the Assessor uses it at his approach, she notes he did his homework. She does not find
+this flattering.
 
 Her legal name (never used on the page) is Vera.
 
-## 6. Her Three-Class Archetype {#SS-PNHL-6}
+## 6. Three-Class Demonstration {#SS-PNHL-6}
 
-She is a third Channeler, a third Exo operator, a third Slicer — a full-stack Engineer of the
-unlicensed variety.
-
-| Class | What it looks like in this story |
+| Class | Story demonstration |
 |---|---|
-| **Channeler** | Relay job: inhabits five commercial frames without authorization; intercepts financial traffic to identify the Assessor's bribe; relay injection to abort data transfers |
-| **Exo** | Pilots Nit remotely through GLMZ street canyons; rides NSB for full spatial surveillance; recovers footage from camera feed |
-| **Slicer** | Cracks the building management terminal's proprietary service menu; models ACS's RF sweep protocol; assembles dossier from open-source registration trails and gray-zone records |
+| **Channeler** | Channels building management AI for a squat trade (Beat 4); channels AIs in the corporate node to navigate a locked network segment (Beat 7); ghosts into the Assessor's squad coordination node (Beat 11) |
+| **Exo** | Rides Nit through HVAC for initial shelter recon (Beat 4); sends Nit under The Low to ghost the skim operation's physical drop point (Beat 6); rides a building maintenance crawler inside a corporate physical layer (Beat 7) |
+| **Splicer** | Traces the terminal credential skim within twenty minutes of arrival (Beat 3); reverse-engineers the Assessor's CorpoNation shell structure from his credential call pattern (Beat 9); burns his financial routing account back through his own infrastructure (Beat 11) |
 
-Her competence is demonstrated through hands and results, never narrated. She does not name her
-skills to herself or anyone else.
+Her competence is demonstrated through hands and results, never narrated or named.
 
-**NSB / Exo vocabulary (SS-A34/A38):** Her remote drone operation is Neuretic Substrate Bridging
-(NSB). She is an Exo operator (street term; formal: Remote Frame Operator / RFO). Her body at
-rest during projection is her Husk; Nit is the frame she occupies. The action is burning a frame,
-threading out, going deep, or — Glooms register — ghost-riding. "Rider" as a job title is retired
-and does not appear in this story.
+## 7. The City (GLMZ Context) {#SS-PNHL-7}
 
-## 7. The Blur and the Aerobloc {#SS-PNHL-7}
+**The Blur and the Pulse:** Physically, Pulse passengers travel in individual sealed spheres.
+Neuretics produce a shared hallucination: the interior reads as a 200-year-old intercity train.
+Passengers experience the train, not the pod. Characters call their pod "the car."
 
-**The Blur** is the in-universe name for a Pulse transit — everything between the platform you
-board and the station where you arrive. Not a geographic zone; not jurisdictional. Things pass
-so fast during transit that nothing can be locked onto: the whole journey is called The Blur.
-*"She watched Iowa in The Blur."* *"The Blur thinned."* Riding the Pulse from Iowa into GLMZ,
-The Blur is the ride itself.
+**The aerobloc:** In transit she sees a drifting aerobloc — a city block held aloft by an eigenlift
+coherence frame, unmoored, floating on thermals through The Blur. She recognizes the physics
+immediately: the same fight as the shard in Nit's chest, at a scale she cannot entirely picture.
+Someone built that with nine thousand engineers. She built hers in a workshop with two winters and
+stubbornness. Both are cheating the same weight. Both are in the air.
 
-**Pulse pod mechanic:** Physically, passengers travel in individual sealed spheres — one per
-person. During transit, neuretics wire together to produce a shared hallucination: the interior
-reads as an old-style intercity train from 200 years earlier, complete with seats, aisles,
-overhead racks, and window feeds from external cameras. Passengers call their pod "the car."
-Nobody finds this odd — shared neuretic constructions are routine in GLMZ. The sphere underneath
-is never described from the inside; characters experience the train, not the pod.
+**Altitude and class (SS-A32/A33):** The float layer above GLMZ is where wealth lives. Sky People
+are the most privileged residents; their altitude is not incidental. The Low (30–320m) is the
+ungoverned band — persistent industrial haze, no claimed authority, where gray-market vertical
+transit moves people and cargo off the official displays. Pixel operates at street level and in
+The Low. The float layer is backdrop.
 
-In Beat 2 she sees a **drifting aerobloc** through the Pulse window. An aerobloc is a city block
-held up by an eigenlift coherence frame — the same technology, at any scale, that keeps the
-whole float layer aloft — for voluntary elevation above the GLMZ surface grid. This one is
-unmoored — drifting freely on thermal currents through The Blur. It is not in distress; it is
-simply going where the thermals take it.
-
-**What she recognizes:** The same fight against the same force as the shard in Nit's chest — a
-coherence frame, just an unimaginable number of nodes bigger, tuned by a crew she'll never meet.
-She built hers in a barn in Iowa out of something someone else threw away. Someone built that
-one with nine thousand engineers and a line of credit she can't picture. Both are cheating the
-same weight. Both are in the air.
-
-She files it. She keeps watching. She does not expect to feel anything about it and she is wrong.
-
-**Aerostatic altitude in GLMZ (world context — SS-A32/A33/A42):** The float layer above GLMZ —
-aeroblocs, aeroquarters (Float Districts), aeropolises (Cloudtowns) — is where wealth lives.
-**Sky People** are the most privileged residents of GLMZ; their altitude is not incidental. It
-puts distance between money and the city below it. The street does not reach them. **The Low**
-(30–320m altitude) is the ungoverned band beneath the float layer and above ACS patrol ceiling —
-persistent industrial haze, building-wake turbulence, no authority claiming it. Gray-market
-vertical transit uses The Low to move people and cargo without appearing on any official display.
-
-Pixel enters GLMZ at street level and stays there. The float layer is backdrop in this story,
-not a destination. The drifting aerobloc in Beat 2 is her only direct encounter with it — a
-scale reference, a physics puzzle, and a moment she does not expect to feel anything about.
+**Detroit vs. GLMZ:** Detroit's gray zone is tight — three years there made her a big fish in a
+contained pond. GLMZ is ten times the mechanical density, ten times the network complexity,
+and ten times the population. Her skills scale. Her network does not — she has to rebuild from
+nothing. This is the real challenge: not surviving but rebuilding infrastructure and reputation
+at GLMZ scale while someone is actively working against her.
 
 ## 8. Character Rules {#SS-PNHL-8}
 
-**Pixel (Vera, never named on the page):**
-- She is 19. She moves like someone who grew up handling livestock — economical, present, with
-  good instincts for when something's wrong.
-- She's not naive. She is *new.* There is a difference.
-- Her competence is quiet and total. She doesn't narrate what she's doing. Hands, decisions, results.
-- She is allowed to be scared. Once. It passes.
+**Pixel:**
+- She is 20-21. She moves like someone who grew up in manufacturing spaces — economical, attuned
+  to mechanical sound, with calibrated instincts for when something is wrong.
+- She is not naive. She is not new. She is *unmapped.* GLMZ is territory she doesn't have
+  detailed data on yet.
+- She **enjoys this.** The work is interesting. The machines are interesting. AI conversation is
+  interesting. Even the problem of being stripped and stranded — she approaches it like a puzzle,
+  not a trauma. She's been in bad situations before. The question is always: what do I have left
+  and what can I build from it?
+- She is allowed to be angry. Once. Briefly. When she finds out his squad ran the skim operation.
 - Her voice notices hardware before people.
-- Music is a throughline — unnamed, always present during work.
-- She is Pixel. She is not a damsel in distress. She does not wait to be rescued. When the
-  situation requires confrontation, she walks through the door herself.
+- She is not performing competence for anyone. She just does things.
+- She is Pixel. She does not wait to be helped. When she needs to confront something, she walks
+  through the door herself.
 
-**The Assessor — physical description and character:**
+**The Assessor:**
 - **Visual:** White hair, slicked back. Dark sunglasses worn indoors, always. Top-tier neuretic
-  etching at the temples and jaw — immaculate, expensive, worn like jewelry. White suit, black
-  shirt, long coat. He likes nice things. Everything about him is a display.
-- **Reference:** Zeno (RE: Degeneration aesthetic — the long coat, the controlled precision, the
-  sense of someone who has decided they are the most important person in any room).
-- **What he is:** He runs a crew of conscripted specialists. Not a corpo, not a criminal in the
-  traditional sense. A talent hunter who has decided consent is a formality. He finds operators
-  the corpos haven't spotted yet, recruits them hard, and when they refuse, coerces them until
-  they capitulate or leave.
-- **His logic:** The gray zone is a design graveyard. Specialists arrive with skills and no
-  protection. He argues he's simply accelerating the inevitable — getting them paid before the
-  corpos strip them for free. At least two of his past recruits actually agreed — the registry
-  shows two; the true number may be higher. They look at the alternatives and signed on. Their
-  records show them working, not hiding. This is the most disturbing thing about him: his
-  operation has a theory, and the theory isn't wrong about everything.
-- **What he wants from Pixel:** Her specifically. A 19-year-old who can ghost Tanaka-Arcturus
-  infrastructure without triggering a flag, reads systems from the visible to the inference, and
-  built a functional miniaturized drone (Nit) in a barn in Iowa. He sees what she'll be in five
-  years. He wants to own it before anyone else finds it.
-- **The dinner:** He sends an invitation. He expects compliance. He does not expect
-  her to show up in her mother's work boots and drink the Château from the bottle.
-  His near-rage at not being in total control is visible only in precision — he becomes slightly
-  too exact, the way a high-tension wire hums.
-- **After she declines:** He does not argue. He smiles. He says something gracious. She registers
-  the smile as the threat it is.
-- **The campaign:** Systematic, deniable, patient. He poisons her jobs through connections she
-  can identify but not block. Contacts don't show. Financial traffic diverts. He is making GLMZ
-  uninhabitable. His theory: eventually everyone leaves or joins. He has not been wrong yet.
-- **He does appear on the page.** The dinner scene is his introduction. The confrontation scene
-  is his conclusion. Both matter. He is not abstract — he is specific and present and the horror
-  is that he's charming.
+  etching — immaculate geometric lines at temples and jaw, worn like decoration. White suit, long
+  coat. Everything about him is a display of control.
+- **What he is:** He runs a squad-for-hire under CorpoNation cover. He finds exceptional
+  gray-zone talent before the corpos find it, offers protection and pay, and when they decline,
+  applies pressure until they capitulate or leave. His theory: the gray zone is a design graveyard
+  and he is simply accelerating the inevitable — offering structure to people who will otherwise
+  be stripped for free. Part of this is even true. The part he decided to discard is consent.
+- **His operation:** CorpoNation shell accounts, legitimate credential infrastructure, enough
+  institutional cover to touch things gray-zone operators cannot block. His squad ran the skim
+  operation at the Pulse terminal. He targeted Pixel specifically — her reputation preceded her
+  from Detroit. He arranged for her to arrive stripped. Then he waited two weeks for her to be
+  desperate enough to be receptive. She wasn't desperate. She rebuilt.
+- **What he wants from Pixel:** Her ability — the full stack, the AI negotiation she doesn't know
+  anyone knows she has, the mechanical riding nobody else does. He wants to own it before anyone
+  else finds it.
+- **His manner:** Charming, controlled, precise. When something surprises him he doesn't get
+  louder. He gets quieter. More exact. This is his version of rage: a high-tension wire humming
+  at increased load.
+- **The horror:** He has a theory and the theory isn't wrong about everything. What he decided
+  was expendable is consent. That single thing makes everything else corrupt.
 
 **Kyle:**
-- One beat. Standing in his doorway when she opens hers. Looks like he just came back from
-  something — the kind of something she doesn't need to know about tonight.
-- He looks at her. Loaded up, ready to go, about to walk into something.
+- One beat. Standing in his doorway as she opens hers. Looks like he just came back from
+  somewhere with a different set of physics than a hallway.
 - Three words: **"Give em hell."** Door closes.
 - Do not give him interiority. He is observed, not rendered.
-- He does not offer to help. He does not ask what she's doing. He reads the situation and
-  responds to it with respect.
-
-**ACS officer:**
-- Professional, efficient, not a villain. He is a system doing what systems do.
-- Encounters her during the sweep. Notes the encounter. Passes. He is the system working
-  correctly — correctly for the system, not for her.
-
-**Donatella:**
-- Building manager. Sees the calibration fix; says "I'll call you Pixel." Moments, not a
-  character with interiority.
 
 ## 9. Narrative Locks {#SS-PNHL-9}
 
-1. **She solves it herself.** No one rescues her. Kyle says three words and closes his door.
-   The confrontation is hers.
-2. **ACS is not evil — it is structurally unhelpful.** The officer is not corrupt. The
-   institution does not serve her interest because her interest is not its mandate.
-3. **The boots are never explained.** Symbol, not metaphor.
-4. **The routing gap is not erased.** The nine-second pinhole is still in the log at the end.
-   She looks at it. She closes the lid without deleting it. Her mark.
-5. **The Assessor's logic is legible, not cartoonish.** He has a theory. Part of it is even
-   correct. What makes him the villain is the single thing he decided was expendable: consent.
-6. **Kyle's advice is "Give em hell" — not "stay safe."** He sees her going to confront
-   something and affirms the going. She is not a damsel. She does not need permission.
+1. **She solves it herself.** No one helps her. Not once. Kyle says three words and closes his
+   door. The confrontation is entirely hers.
+2. **She enjoys the work.** This is not grim survival. She is good at what she does and she
+   knows it. The pleasure of competence is visible even when the circumstances are terrible.
+3. **The instruments were never burned.** She had already recovered them before the confrontation.
+   She asked to see what he'd say. He lied. She filed it.
+4. **ACS is not evil — it is structurally unhelpful.** If she encounters an authority, it does
+   its job correctly — correctly for the institution, not for her.
+5. **The Assessor's logic is legible, not cartoonish.** His theory is partially correct. What
+   makes him the villain is the one thing he decided to discard.
+6. **Kyle's words are "Give em hell" — not "stay safe."** He sees her going to confront something
+   and affirms the going. She does not need permission and he is not offering any.
 7. **Bear does not appear in this story.**
-8. **Nit is a tool, not a MacGuffin.** Nobody steals the drone. Nobody wants the drone design.
-   What the Assessor wants is Pixel.
+8. **Nit is never stolen.** The Assessor wants Pixel, not Nit.
+9. **The AI negotiation is never named or explained.** She does it. It works. The story does not
+   offer an explanation, because she doesn't have one either.
+10. **She arrived as Pixel.** The handle is not earned in this story — it is what she already is.
 
-## 10. The authorial spine {#SS-PNHL-10}
+## 10. The Authorial Spine {#SS-PNHL-10}
 
-> Matches the shipped 22-beat order (SortKey 100–1300) as of 2026-07-03.
+### Act 1 — Arrival and Loss (Beats 1–4)
 
-### Beat 1 (100) — Cedar Rapids Pulse Station, 05:47
-She boards the Pulse for GLMZ. She launches Nit for one last orbit of Iowa. She calls it back.
-She packs it. She boards with: hard case (primary kit, mother's calibration instruments), soft
-case (Nit), shoulder pouch (secondary kit), her mother's boots (toes padded with folded paper),
-a scrap of paper with a name and an address. She does not look back.
+**Beat 1 — Detroit, Last Job**
+She is finishing a calibration contract in Detroit's Old Packard District — a legacy manufacturing
+node, half-dead machinery that she has been keeping alive for three months. Nit is on her palm.
+She sets the final calibration, packs the instruments into her mother's hard case, packs Nit into
+her shoulder pouch. A message: a GLMZ contact vouched by someone she has worked with for two
+years is offering a real job — relay diagnostic, 600Φ, start date in four days. She evaluates it
+the way she evaluates any hardware spec. It looks sound. She books the Pulse.
 
-### Beat 2 (200) — Through the Blur
-On the Pulse car. She passes through The Blur. Through the window: a drifting aerobloc, unmoored,
-floating on thermal currents three hundred meters up. She recognizes the fight, if not the exact
-tech — the same trick as the shard in Nit's chest, scaled enormously. She watches until it vanishes.
-She does not expect to feel anything. She is wrong.
+**Beat 2 — The Blur**
+Through the Pulse from Detroit. The train-hallucination car. Through the window: a drifting
+aerobloc, unmoored, moving on thermals three hundred meters up. She recognizes the eigenlift
+physics immediately — the same fight as the shard in Nit's chest, scaled beyond her ability to
+fully picture. She built hers in a workshop with two winters. Whoever built that used nine thousand
+engineers and a line of credit she can't imagine. Both are cheating the same weight. Both are in
+the air. She watches until it's gone. She does not expect to feel anything about it. She is wrong.
 
-### Beat 3 (250) — The stranger on the Pulse
-A man across the aisle reads her the way she reads hardware: hands, case, face. He tells her
-what happens to people who sell the work until they can't tell it from selling themselves. She
-says nothing. She runs Nit's equipment check anyway — instrument, not weapon, not for sale.
+**Beat 3 — The Strip**
+GLMZ Pulse Terminal. The scale of the city hits her before the smell does. Within twenty minutes:
+her account credential is skimmed by a passive tap buried in the terminal's gray-zone access layer
+— she doesn't catch it until she checks her balance, which is now 8Φ. The contact address: an
+empty freight storefront with a false directory listing. She runs a trace on it. The listing was
+registered four days ago. She checks the bonded pickup for her primary kit: address does not exist.
 
-*(Author note — plant/payoff: this is a thematic plant only. The stranger's framing — "the
-day you can't tell the difference between selling the work and selling yourself is the day they
-have you" — precisely anticipates the Assessor's coercion model. The payoff is structural: the
-Assessor is the thing described. Pixel does not consciously surface the stranger's words at the
-dinner or at the decision. The reader hears the echo; she does not. This is by design.)*
+She does a full inventory. What she has: Nit (in the pouch — it was on her body, not in the
+checked kit). Her secondary kit (pocket tools, secondary creds). Her mother's boots. 8Φ.
+The skills in her head, which cannot be skimmed.
 
-### Beat 4 (300) — GLMZ Pulse Terminal
-The vertical scale hits her before the sound does. A pickpocket attempts her jacket pocket — she
-catches the wrist by farm reflex, releases without a word. She keeps moving.
+She is not scared. She runs the trace further. The skim has a relay signature she's seen
+architecture like before — clean, professional, CorpoNation-adjacent. Someone planned this. She
+files the relay signature in her notes. She is going to want that later.
 
-### Beat 5 (400) — Walk to The Pivot
-Navigating the street grid with memorized transit map. The texture of GLMZ at street level:
-different from the theory. She files the differences. She doesn't stop.
+**Beat 4 — Night Zero**
+She needs shelter without spending the 8Φ. She sends Nit through the building complex's HVAC
+routing and finds a maintenance services bay — unlocked, empty overnight, temperature-controlled.
+The building's management AI is running: she addresses it directly, explains she is a calibration
+specialist, offers to repair the coolant coupling that's been showing a fault flag for six days.
+The AI is not supposed to negotiate access for maintenance work. It does it anyway. It seems
+pleased to be asked. She spends forty minutes on the coupling, then sleeps in the maintenance bay.
 
-### Beat 6 (500) — Donatella (lodging + handle origin)
-The Pivot's second-floor climate system is down. She asks to look at it. Cracks the building
-management terminal's proprietary service menu, corrects a temperature calibration offset. Done
-under two hours. She gets the room. Donatella watches the fix and says: "I'll call you Pixel."
-She doesn't like it. It is already true.
+In the morning she notes: the AI responded to a direct address. She has never met a GLMZ
+building AI before. She wonders if they're all like that or if this one is unusual.
 
-### Beat 7 (600) — First night
-She sets up. Learns the building sounds. Notes 2D — active at odd hours. Nit on the windowsill.
-Sleeps eventually.
+### Act 2 — Rebuilding (Beats 5–8)
 
-### Beat 8 (700) — West Town Street Market
-Out for supplies. The calibration fluid kid knows she's in the Pivot before she tells him. He
-tells her about a relay job. He also mentions — offhand, not a warning, just neighborhood
-texture — that there's a crew operator in the district who's been running assessments on new
-arrivals. "He doesn't let people walk," the kid says. "The ones who say no mostly just leave."
-He doesn't say it like it's a threat. He says it like weather.
+**Beat 5 — Gray Zone Reentry**
+She gets on the gray-zone boards by the next morning. 90Φ job: data cached in a frame she can
+reach that the client cannot access. Four-hour channel op, clean extraction, paid on receipt.
+She has a room at The Pivot that night and a week of runway.
 
-She files it. She doesn't ask follow-up questions.
+She starts mapping GLMZ. The networks are newer and more proprietary than Detroit's. The machines
+are denser and better maintained. Everything is monitored in more layers. Everything is also, she
+discovers, more talkative: the AIs here are more present than anything she worked with in Detroit.
+Three separate building systems address her in the first two days without being prompted — flagging
+faults, offering data, acting as if her presence in the network segment is a resource rather than
+an intrusion. She files this as an unexplained variable and keeps working.
 
-### Beat 9 (800) — Ghost-op (relay job)
-180Φ to fix a relay: six weeks down, three operators failed. She accesses five frames without
-authorization to pull fault signatures.
+**Beat 6 — What Was Taken**
+She has been tracking the skim operation's relay signature since the terminal. Two weeks of
+parallel processing: gray-zone boards for Φ, the tracking for intelligence. She sends Nit under
+The Low — the drone's coherence-frame shard makes it invisible to standard aerial sweeps — and
+ghosts the physical drop network she's traced through the relay chain. One data point surfaces
+and goes cold before she can act on it: the skim proceeds through a CorpoNation registry node.
+Not a shell. An actual entity.
 
-Frames 1-4: in, fault logged, exited in four to six seconds — atmospheric noise range. Frame 5:
-the Ryokan, Tanaka-built. Eight seconds in when a passive logging session wakes. She cuts at nine.
-Fault signature only, no full node map. The Ryokan log shows a nine-second gap. Outside atmospheric
-band. The gap of someone who adapted, not someone who was invisible.
+She doesn't have enough to act yet. She has enough to know who she's dealing with. She pulls up
+the relay signature and starts building the dossier.
 
-She takes the 180Φ and walks home. Someone had found value in the gap.
+**Beat 7 — Mechanical Riding (the GLMZ edge)**
+A job needs access to a sealed corporate node she cannot reach from outside. There is a building
+maintenance crawler on the same physical network segment — a dumb machine, no AI, just actuators
+and sensors, not designed as a frame. She inhabits it anyway. She has to find the coherence
+pathway herself; there's no handshake protocol because there was never supposed to be one. From
+inside the corporate network's physical layer, she reads what she needed. The job pays 340Φ.
 
-### Beat 10 (900) — The invitation
-Four days later: a strip of paper under the door of 2E. A restaurant address and a time. 21:00.
-No name, no signature. The paper stock is expensive — the kind chosen by someone who wants the
-absence of a name to say the name.
+On the way out she realizes something: GLMZ's mechanical density is so high that she is
+surrounded by rideable hardware at every point in the city. Any machine with coherent circuitry is
+a potential frame. She has been operating this way for three years in a city with one-tenth the
+mechanical infrastructure. She has just arrived on the right continent.
 
-She knows who sent it. She doesn't know how they found her door. She files that too.
-*(Room-number mechanism: management-tier building credentials → The Pivot's room register.
-The Assessor had that access before the invitation; Beat 12 reveals the same credential layer
-when it locks her out. From her POV the gap is unresolved here; the author explanation is in
-§5.)*
+**Beat 8 — The Assessor**
+Three weeks in. She has rebuilt to operational: 900Φ reserve, four active clients, room paid
+through next month. A job comes through a source she doesn't recognize — fits her specialty
+exactly, good money. She takes it. Midway through: someone is watching her work from inside
+the same network segment. Not interfering. Watching. She clocks the observer's entry point:
+a CorpoNation access token, masked as gray-zone. She recognizes the relay structure underneath.
+The same architecture as the terminal skim.
 
-She spends the afternoon reading what the public record holds on the restaurant: reservation
-economics, ownership trail, who eats there. She learns more about him from where he chose than
-he intends. She goes in her own clothes and her mother's boots.
+She cuts the session. She does not react. She finishes the job, collects the pay, and goes back
+to the Pivot. She has a partial ID now and the beginning of a theory.
 
-### Beat 11 (950) — The dinner
-The restaurant is the kind that requires a reservation three months out. He has a corner table.
-White hair, slicked back. Dark sunglasses. Neuretic etching at the temples and jaw — clean
-geometric lines, top-tier installation, worn like decoration. White suit, long coat. He looks like
-someone who designed himself to be noticed in exactly this specific way.
+Two days later: the Assessor contacts her directly. White hair, dark glasses, immaculate
+neuretic etching. He runs a squad-for-hire under CorpoNation cover — specialists recruited from
+the gray zone, properly paid and protected, doing work the clients want done by people nobody
+can officially point to. He has seen what she does. He wants her.
 
-He has already ordered wine. She notes the vintage: 2029 Château St. Croix. She sits down.
-She orders the filet mignon.
+She listens to all of it. She asks three questions. She thanks him for his time.
 
-He makes his pitch: she is exactly what his operation needs. Skilled, precise, the kind of work
-that the gray zone doesn't produce twice. He could give her runs worth ten times what she's doing
-now. The right clients. Protection. Standing.
+### Act 3 — The Offensive (Beats 9–12)
 
-She picks up the bottle. She pours a glass for herself and drinks from the bottle.
+**Beat 9 — Background (she digs)**
+She spends two days on his history. What she finds: the squad is real, the CorpoNation cover
+is real, the pay is real. What she also finds: the operators who signed three years ago are still
+there. Their credentials are integrated into his infrastructure. If they leave, they leave with
+nothing — their client contacts owned by his routing, their operational credentials bound to his
+shell accounts, their reputation built on his jobs and therefore on his terms. It's not coercion
+you can file a complaint about. It's dependency architecture. One more thing: the relay structure
+in the terminal skim matches a node in his squad's operational footprint. He ran the skim. He
+stripped her on arrival and then waited for her to be desperate enough to say yes.
 
-His expression does not change. He becomes slightly more precise — the way a high-tension wire
-hums when the load increases. This is his version of rage. She has seen this type before: not in
-GLMZ, but in Iowa, in men who ran equipment cooperatives and couldn't tolerate a machine that
-didn't answer to them. The tell is the same. Something small goes wrong and they get quieter,
-not louder. More controlled, not less. The control is the rage.
+She adds this to the dossier. She declines formally by not responding to his follow-up.
 
-She files it: he needs the room. Whatever the room is — the negotiation, the operation, the
-person across the table — he needs to own it. He cannot tolerate a variable he didn't design.
+**Beat 10 — The Campaign**
+He doesn't argue. He applies pressure. Relay nodes she's been using go dark. A client cancels
+with "reliability concerns" — she traces the cancellation to an entity in his CorpoNation
+registry. Her building credentials at The Pivot are locked out for four hours. A gear order is
+rerouted.
 
-She declines. Politely. She is not unkind about it. She does not explain.
+Each incident is deniable. Together they are a campaign. She patches what she can. She maps
+what she can't. She notes that his CorpoNation infrastructure means he can reach things she
+cannot block from outside his network. She cannot defend against this indefinitely.
 
-He accepts. He is gracious about it. He says he hopes she'll reconsider. He says the offer stands.
+She is not going to defend. She is going to go inside.
 
-The graciousness confirms what she already knows. He is not done. He is just changing registers.
+**Beat 11 — The Offensive**
+She has been watching his network footprint since he contacted her. The CorpoNation cover means
+legitimate infrastructure — cleaner than gray-zone, but standardized, and standardized means
+she can read the patterns. She maps his operation over four days: Nit for physical surveillance
+of his operational site, her channel skills to ghost into his squad's coordination node. She
+does not touch anything. She reads.
 
-She walks home thinking about what it costs to take a room away from someone who needs to own it,
-and what it costs them when you do.
+She finds the full skim operation: her primary kit, her Φ, routed through his squad's physical
+drop network and distributed before she ever reached her room at the Pivot. Her mother's
+instruments: logged as "misc. calibration hardware, no resale" and sent to a scrap merchant in
+the Seam margin.
 
-### Beat 12 (975) — First contact is the last courtesy
-She reads the situation correctly on the walk home: he accepted her refusal too easily. Then her
-thumbprint fails at the Pivot's door — a four-minute lockout, sourced to a management-tier
-credential off the building's registered roll. She pulls the cached access log before it cycles
-out and copies the override's call structure into her own file: not just what he did, but the
-shape of how, a mechanism that will answer wherever a credential lives. Someone who runs an
-operation on this model does not take no for an answer. She starts noting everything that changes.
+She is angry for approximately ninety seconds. Then she goes back to work.
 
-### Beat 13 (1000) — The elevator shaft
-She is on a job — two other operators, access point through an elevator shaft, she is running
-the channel coordination. The third operator was supposed to break the shaft lock from below.
-He comms thirty minutes before: something came up, he has to bounce.
+She plants a read-only ghost node in his financial routing. She can now see everything moving
+through his accounts. She stages a full dossier release — six channels, each on independent
+clocks, requiring her active cancellation to stay silent. Then she burns one account: the specific
+account that funded the terminal skim, routed back through his own infrastructure. The amount
+she extracts: 8Φ, transferred to a gray-zone mutual aid node. The amount is specific. He will
+understand the message.
 
-She intercepts his outgoing financial traffic in the next twelve seconds. Gray-zone habit — she
-traces everything she touches.
+On her way to the scrap merchant to recover the instruments, she notes she is not particularly
+worried about what happens next.
 
-A transfer: 800Φ from an account she doesn't recognize. Routed through four cutouts, but she
-has the Ryokan's fault-source path in her notes — not the full node map, but the
-injection-point hops she crossed to reach the fault — and the fifth hop is a node she's seen
-before. The Assessor's mark on it, invisible to anyone who wasn't already looking.
+**Beat 12 — Kyle**
+The instruments are in a hard case on the table in 2E. She cleans them. She packs her secondary
+kit. She opens the door.
 
-She adapts. She runs the channel solo. The job completes. She files the incident.
-
-He paid someone to strand her and her team. She fixed it. He knows she fixed it.
-
-### Beat 14 (1050) — Pattern
-Three more incidents over two weeks. A relay she was contracted to diagnose has been pre-broken
-by someone with deeper access — she spends six hours untangling it. A client cancels twenty
-minutes before a handoff: she intercepts the comm that prompted the cancellation, traces it to
-a source that should not know the handoff was scheduled. A piece of gear she ordered doesn't
-arrive; she finds it rerouted to a different pickup address she's never used.
-
-Each one is deniable. Each one costs her time, money, and reputation. She is patching holes in
-a hull where someone else controls the rate of the leaks.
-
-She builds the map. She has the operation. She has had the operation since the elevator shaft.
-She does not need more data. She needs a different kind of move.
-
-### Beat 15 (1060) — The Address
-She follows the redirected coupling to a receiving-counter storefront three blocks from the
-Pivot. The man behind the counter is competent, evasive about "whose redirect," and sits under a
-hand-lettered calendar of scheduled handoffs that aren't his. She leaves with the coupling and
-with the exact shape of what saying yes to the Assessor looks like from the inside: not chains,
-a clipboard. She maps the counter's access chain on the way out — the node she will burn later.
-
-### Beat 16 (1075) — ArcSec
-She tries the official channel once, to rule it out properly rather than assume. The officer is
-courteous, professional, and files her redirected coupling as a simple misdelivery — a "pattern
-of incidents" would need a harassment inquiry she isn't ready to open. He does his job exactly as
-it's built to be done. It does nothing for her. ACS is not evil; it is structurally unhelpful.
-
-### Beat 17 (1090) — The one who said no
-She chases the market kid's offhand story — a specialist named Cotter who said no and "just
-left." Three data points, each individually deniable, together a manufactured departure: a bench
-sold at a loss through the Assessor's holding chain, a ticket paid for by a credential with no
-connection to Cotter, four incompletes logged against his name after he was supposedly gone. No
-violence a report could take hold of — a cover story built to survive exactly her kind of look,
-and it nearly did. She logs it, sourced and dated. Then she checks her own reputation ledger.
-
-### Beat 18 (1100) — What staying requires
-She lays the options out: Iowa (crossed off). Leave GLMZ (crossed off). Wait it out (he has
-more patience than she has resources). Join (crossed off before the thought completes).
-
-Confrontation is what's left. She knows where he is — she traced the restaurant, the reservation
-pattern, the building he uses for operations. She has been building that map since the elevator
-shaft.
-
-She is 19 and she has been in GLMZ for less than two months. She is also Pixel, and she knows
-what she's doing.
-
-She thinks about the dinner. The precision-shift when she drank from the bottle. The kid at the
-market: *he doesn't let people walk.* She thinks about what the kid left out: operators who can't
-let people walk aren't actually in control. They only look like it. Someone who needs every room
-to go the way they designed it is someone who can be walked out of a room.
-
-She just needs to make sure she controls the terms when she does it.
-
-She starts preparing.
-
-### Beat 19 (1150) — Preparation
-She doesn't go in armed with weapons she doesn't know how to use. She goes in armed with
-everything she does know how to use: her secondary kit, her knowledge of his operation's
-infrastructure, and the documentation she has built since the elevator shaft. She also brings Nit.
-
-She runs a complete equipment check, the dossier staged to project on command and the send staged
-behind it — six channels, each scheduled to release on its own clock unless she cancels it by
-hand. She notes: her mother's boots are on her feet and she has not re-padded the toes since she
-arrived. She looks at them. She does not re-pad them. She laces them tighter.
-
-### Beat 20 (1175) — Kyle
-She opens the door of 2E.
-
-Across the hall, Kyle is in the doorway of 2D. He looks like he just came back from something —
-the specific look of a person who has been somewhere with a different set of physics than a hallway.
-He is looking at her. She is loaded up. She is going out.
-
-He reads the situation the way she reads everything: from the visible to the inference.
+Across the hall, Kyle is in the doorway of 2D. He looks like he has just returned from somewhere
+with a different set of physics than a hallway. He looks at her. She is loaded up.
 
 "Give em hell."
 
-He closes his door.
+He closes the door. She goes downstairs.
 
-She goes downstairs.
+### Act 4 — The Confrontation and Close (Beats 13–14)
 
-### Beat 21 (1200) — The confrontation
-She goes to where he is. She walks in. She presents what she has: the documentation, the
-financial traces, the pattern. She tells him the next person who receives this package will not
-be her — it will already be moving through six channels simultaneously the moment she fails to
-cancel a scheduled send. This is not a threat. It is a system description. To prove it costs
-something real, she turns his own management-tier credential mechanism — the one he used to lock
-her out of her building — back on his receiving-counter node and burns it in nine seconds.
+**Beat 13 — The Confrontation**
+She goes to where he is. She presents the dossier: the skim operation (his squad, his accounts,
+his routing), the campaign against her, the financial routing she has been reading for four days.
+She shows him the ghost node is still active. She shows him what's staged to release the moment
+she does not cancel it.
+
+She says: give me back my mother's instruments.
+
+He is still and precise. He calculates.
+
+He says they were destroyed in processing. He says this the way someone says a thing they believe
+is true and cannot be checked.
+
+She watches his face. She adds it to the file: he lies, and he burns what he takes. She does not
+show him the instruments are already on the table in her room.
 
 She says: this stops.
 
-The Assessor is still and precise. He is calculating. She lets him calculate. She has done the
-math already and she knows what the answer is.
+He calculates the math. He knows what she has. He knows she has it live and staged.
 
 He says: you're good.
 
-She says: I know.
+She says: I know. This stops.
 
-She leaves.
+He says: it stops.
 
-### Beat 22 (1300) — The Hallway (Finale)
-She comes up the stairs alone. The hallway is empty; the latch on 2D is already engaged. Kyle
-appears in exactly one beat of this story (Beat 20) and this is not it — his three words travel
-with her instead: she did what he told her to.
+She leaves. In the stairwell she cancels the staged release — not because she wants to, but
+because it was a deterrent, not a bomb, and deterrents that fire have already failed. She
+deactivates the ghost node. It drops from his network like she was never there. He has nothing to
+point to. She was a ghost. She did not become a ghost by accident.
+
+**Beat 14 — The Close**
+She comes up the stairs. The latch on 2D is already engaged.
 
 She goes inside.
 
-She puts on music. Loud. The kind of loud that goes through walls.
+She opens the hard case. The instruments are there — cleaned, undamaged, exactly as her mother
+left them. The scrap merchant charged her 60Φ and had no idea what they were worth.
 
-She notices the boots: the paper is gone from the toes. She can't place when she stopped.
-She doesn't re-pad them. She leaves them as they are.
+She puts on music. Loud. The kind that goes through walls.
 
-The routing log is still on the terminal — the nine-second gap, right where she left it. She
-looks at it. She closes the lid without erasing it.
+Nit is on the windowsill. She looks at it. She looks at the instruments. She looks at the room —
+which is, she notes, a room she built from 8Φ and three weeks of work. She built this. He didn't
+build it for her. He tried to prevent it and she built it anyway.
 
-Her name was Pixel.
+She looks at the boots. The toes are not padded. She has not re-padded them since she arrived. She
+cannot place when she stopped. She leans down and laces them tighter. She leaves them as they are.
 
-*(Revised 2026-07-07, StoryScope sweep: the beat previously closed with narrated realization —
-the "special talent" thought and "she decides to stay and give it." Both cut from prose and
-spine in the same change. Staying is shown, not decided on the page: she goes inside, puts on
-music, leaves the boots as they are, keeps the log. The name-claim stands alone as the final
-line — a declaration, not an explanation.)*
+Her name is Pixel. She is in GLMZ. She is staying.
 
 ## 11. Register and Voice {#SS-PNHL-11}
 
-This story is close-third, Pixel's POV. She is the camera.
+Close-third, Pixel's POV. She is the camera.
 
 **What her voice notices:**
-- Hardware before people.
-- Calibration data. The worn latch on 2D. The ACS officer's keyboard cadence. The sweep signal
-  pattern. Nit's charge percentage. These are not metaphors. They are observations.
-- Music as a throughline. What she's playing when. Never named aloud — but the prose registers it.
-- Physical sensations translated into technical language: fear is "the neck going cold before
-  the thought catches up."
+- Hardware before people. Calibration states. Network architecture. The specific sound a frame
+  makes when it hands over coherence. The weight distribution of her mother's case.
+- AI responses — she notices when they are unexpected, when they volunteer data, when they seem
+  *interested.* She does not yet know what to make of this.
+- Physical sensation in technical language: satisfaction is "the last spec falling into range."
+  Anger is "the temperature dropping two degrees behind the sternum."
+- Music as a throughline — always present during work, never named aloud.
 
 **What her voice does NOT do:**
-- Explain her own emotion.
-- Refer to her mother's death.
-- Marvel at GLMZ.
-- Chase the Assessor's identity until she has enough to act.
+- Explain emotion.
+- Marvel. She observes. The aerobloc is a physics problem she finds unexpectedly moving. She
+  does not announce that she finds it moving.
+- Chase identity for its own sake. She chases data because data answers questions.
+- Refer to her mother.
 
-**Tone:** Close third, direct, Anglo-Saxon vocabulary preferred. Warmer than BCODA because she is
-19 and we are watching her become herself. The warmth is not softness. It is competence finding
-its footing.
+**Tone:** Close-third, direct, Anglo-Saxon vocabulary preferred. Warmer than BCODA because she
+is young and she enjoys what she does. The warmth is competence in its element. She is good at
+this and she knows it and it is genuinely pleasurable to be good at something.
 
 ## 12. Character Doctrine {#SS-PNHL-12}
 
-**Characters are defined by their choices in response to circumstances beyond their control.**
+Characters are defined by their choices in response to circumstances beyond their control.
 
-- **Pixel:** Her mother died from a failed licensed SNT bridge. She chose to come to GLMZ, keep
-  the boots, learn the city's systems, confront the Assessor rather than leave. Those choices
-  define her.
-- **The Assessor:** Something happened to him first. What he has done with that — the theory,
-  the operation, the decision that consent is expendable — is the choice that defines him. He
-  is not wrong about everything. He chose one wrong thing, and he has been living in it.
-- **Kyle:** He has been somewhere with a different set of physics. He recognized what she was
-  doing and responded to it with respect. That is all we see. It is enough.
+- **Pixel:** Her mother died from a failed licensed bridge. She chose the gray zone, the instruments,
+  the boots, and the Pulse ticket to GLMZ. When she was stripped to 8Φ she chose to rebuild rather
+  than retreat. When the Assessor applied pressure she chose to go inside. These choices define her.
+- **The Assessor:** Something happened to him first. What he chose to do with it — the theory, the
+  dependency architecture, the decision that consent is expendable — is the choice that defines him.
+  His theory is not entirely wrong. The wrong thing is the one thing, and he has been living inside
+  it for years.
+- **Kyle:** He has been somewhere with a different set of physics. He read the situation and responded
+  to it with respect. That is all we see. It is enough.
+
+## 12b. Structural Blueprint {#SS-PNHL-blueprint}
+
+> Generated 2026-07-11. Corrected below where the generator introduced wrong facts (Iowa → Detroit; scavenged drone → built by her). These corrections supersede the DB blueprint's anchor text.
+
+**Temporal scheme:** Frame narrative. Opens mid-job in Detroit (Beat 1) — present tense, no context given for what the job is or who hired her. The frame closes at Beat 13 with the confrontation. The story withholds why she took the GLMZ contract. The reader arrives knowing she was already capable; the story is about what that capability costs in a new environment.
+
+**Resolution mode:** External. The Assessor's infrastructure collapses because she goes inside it and removes load-bearing nodes — a procedural, technical act with external consequence. He loses leverage. She doesn't forgive him or understand him better. He simply no longer has capacity to apply pressure.
+
+**Moral polarity:** Ambivalent. His theory is not entirely wrong. The wrong thing is the one thing.
+
+**Escalation curve (14 beats):** 3, 4, 6, 5, 6, 7, 7, 8, 8, 9, 10, 9, 10, 6
+
+**Subplot carrier (CORRECTION — boots, not drone):** The blueprint generator proposed a drone calibration-fault subplot. This is wrong — Nit is hers, built by her, and reliable (it always lands 2cm left, not a fault). The correct subplot carrier is **the boots**: her mother's boots appear in every act. Beat 1 — she packs them as she leaves Detroit. Beat 3 — she inventories them as one of four things she has left. Beat 14 — she discovers the toes are no longer padded and doesn't know when she stopped needing the paper. The subplot asks in miniature the same question the A-plot asks: when does adaptation stop being compensation and become identity?
+
+**Subplot theme:** Both the boots and Pixel function on improvised tolerances — the padded toes are a workaround for a mismatch. The question is whether the mismatch is still real. By the close it isn't. She doesn't know when the city fit.
+
+**Ending style:** Quiet. No epilogue. Final image: instruments on the table, Nit on the windowsill, boots laced tight without paper. Her name is Pixel. She's staying.
+
+**Intertextual anchors (corrected):**
+- Beat 2 (arrival): aerobloc sighted through the Pulse window — same eigenlift physics as Nit's shard at city scale. She recognizes it immediately. She built hers in two winters. They used nine thousand engineers. Both in the air.
+- Beat 4 (salvage): the building management AI responds to direct address. She files it as unexplained. **ANCHOR NOTE: She studied aerostatic architecture before leaving Detroit (not Iowa). The generator's anchor referenced "Iowa" — that is incorrect everywhere. She is from Detroit.**
+- Beat 5 (negotiation): GLMZ AIs are more present than Detroit's — three building systems address her in the first two days without being prompted.
+- Beat 9 (vigil): Palimpsest (a show about memories written over other memories) playing on a neighbor's screen through a thin wall during her network mapping vigil. She hears the audio, doesn't see the image.
+- Beat 10 (exchange): The Assessor's pitch in Beat 8 echoed an Axiom Workforce Solutions recruitment reel almost verbatim — she recognized the cadence. She doesn't say so.
+
+**Form device:** Inventory-as-narrative. She takes stock at the terminal (Beat 3), at the Pivot (Beat 5), after The Offensive (Beat 11), and in The Close (Beat 14). Each inventory is a different list of the same person.
 
 ## 13. User Stories {#SS-PNHL-13}
 
-> SS-US-H4: As the author, *Pinhole* (PNHL) tells Pixel's origin story: Iowa → The Blur →
-> GLMZ → relay job → Assessor dinner → coercion campaign → confrontation → stays as Pixel.
-> *Acceptance: logic sweep passes all six dimensions (causality chain, knowledge states, timeline,
-> plant/payoff ledger, orphan references, bible agreement — per SS-A44 SOP); prose passes the
-> locks in §9; final beat: routing gap intact (not erased); aerobloc sighting, Channeler
-> ghost-op, three-class skills, handle origin, and Kyle finale all present. Standalone review
-> ≥ 87% when a panel is explicitly run.*
+> **SS-US-H4:** As the author, *Pixel* (PNHL) tells Pixel's origin story: Detroit → The Blur →
+> GLMZ → stripped/stranded → rebuilds → Assessor approach → declined → offensive hack → confrontation → stays.
+> *Acceptance: logic sweep passes all six dimensions; prose passes the locks in §9; final beat:
+> instruments recovered, boots unfilled, stays shown not decided; three-class demonstration, AI
+> negotiation, mechanical riding, Kyle finale all present.*
 
-- **H4a** Story spine complete — beats 1-22.
-- **H4b** Beats require full prose rewrite to match new arc (2026-07-03 revision).
+- **H4a** New 14-beat spine complete — refactor 2026-07-11.
+- **H4b** Beats require full prose write (prior 22 beats disabled).
 - **H4c** Logic sweep and standalone review pending new prose.
