@@ -17,6 +17,7 @@ $ROOT    = Split-Path $PSScriptRoot -Parent
 $ML_ROOT = Join-Path $ROOT "v3\ml"
 $VENV    = Join-Path $ML_ROOT ".venv\Scripts\Activate.ps1"
 $LOG     = Join-Path $ROOT "v3\ml_nightly.log"
+$SS      = Join-Path $ROOT "ss.cmd"
 
 # ── Display helpers ────────────────────────────────────────────────────────────
 
@@ -109,7 +110,7 @@ function Invoke-SS {
     Write-Host ""
     Write-Host "  > ss $SsArgs" -ForegroundColor DarkCyan
     Write-Host ""
-    & ss @SsArgs
+    & $SS @SsArgs
 }
 
 function Invoke-Python {
