@@ -12,24 +12,24 @@ console = Console()
 
 GRIPES_SQL = """
 SELECT
-    s.Slug       AS StrandSlug,
-    sr.ContentHash,
-    sr.ReviewedAt,
-    sr.PersonaId,
-    sr.Score,
-    sr.Improvements AS GripeText,
-    sr.ClusterLabel
-FROM StrandReviews sr
-JOIN Strands s ON s.Id = sr.StrandId
-WHERE sr.Improvements IS NOT NULL
-  AND LEN(TRIM(sr.Improvements)) > 10
+    n.Slug       AS StrandSlug,
+    nr.ContentHash,
+    nr.ReviewedAt,
+    nr.PersonaId,
+    nr.Score,
+    nr.Improvements AS GripeText,
+    nr.ClusterLabel
+FROM NodeReviews nr
+JOIN Nodes n ON n.Id = nr.NodeId
+WHERE nr.Improvements IS NOT NULL
+  AND LEN(TRIM(nr.Improvements)) > 10
 """
 
 
 def run() -> pd.DataFrame:
     with get_connection() as conn:
         df = fetchdf(conn, GRIPES_SQL)
-    console.print(f"[green]{len(df):,} gripe rows from {df['StrandSlug'].nunique()} strands[/green]")
+    console.print(f"[green]{len(df):,} gripe rows from {df['StrandSlug'].nunique()} nodes[/green]")
     df.to_parquet(GRIPES_CACHE_PATH, index=False)
     return df
 

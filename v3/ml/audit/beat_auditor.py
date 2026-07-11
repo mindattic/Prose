@@ -25,25 +25,25 @@ console = Console()
 
 ALL_BEATS_SQL = """
 SELECT
-    s.Slug AS StrandSlug,
-    ROW_NUMBER() OVER (PARTITION BY sb.StrandId ORDER BY sb.SortKey) AS BeatNumber,
+    n.Slug AS StrandSlug,
+    ROW_NUMBER() OVER (PARTITION BY bn.NodeId ORDER BY bn.SortKey) AS BeatNumber,
     CONVERT(nvarchar(36), b.Id) AS BeatId,
     b.Text AS BeatText
-FROM StrandBeats sb
-JOIN Beats b   ON b.Id  = sb.BeatId
-JOIN Strands s ON s.Id  = sb.StrandId
-WHERE sb.IsEnabled = 1
+FROM BeatNodes bn
+JOIN Beats b  ON b.Id  = bn.BeatId
+JOIN Nodes n  ON n.Id  = bn.NodeId
+WHERE bn.IsEnabled = 1
   AND b.Text IS NOT NULL
   AND LEN(TRIM(b.Text)) > 100
 """
 
 STRAND_GRIPES_SQL = """
-SELECT sr.Improvements AS GripeText
-FROM StrandReviews sr
-JOIN Strands s ON s.Id = sr.StrandId
-WHERE s.Slug   = ?
-  AND sr.Improvements IS NOT NULL
-  AND LEN(TRIM(sr.Improvements)) > 10
+SELECT nr.Improvements AS GripeText
+FROM NodeReviews nr
+JOIN Nodes n ON n.Id = nr.NodeId
+WHERE n.Slug  = ?
+  AND nr.Improvements IS NOT NULL
+  AND LEN(TRIM(nr.Improvements)) > 10
 """
 
 
@@ -52,7 +52,7 @@ def run_gripe_audit(conn, miner: GripeMiner, slug: str | None) -> list[dict]:
     if slug:
         slugs_to_audit = [slug]
     else:
-        cursor.execute("SELECT DISTINCT Slug FROM Strands")
+        cursor.execute("SELECT DISTINCT Slug FROM Nodes")
         slugs_to_audit = [r[0] for r in cursor.fetchall()]
 
     all_findings = []

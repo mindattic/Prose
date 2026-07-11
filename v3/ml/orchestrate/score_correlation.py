@@ -77,11 +77,14 @@ def run():
         console.print(f"[yellow]Only {len(df)} scored beats — need ≥20 to train. Run reviews first.[/yellow]")
         return
 
+    # Deduplicate by BeatId — if a beat somehow appears more than once (edge case
+    # from multi-chapter node memberships), keep the first occurrence.
+    df = df.drop_duplicates(subset=["BeatId"]).reset_index(drop=True)
     console.print(f"[green]Training on {len(df)} beats with >=2 reviews.[/green]")
 
     # Fill missing EmotionalScore with column mean
     df["EmotionalScore"] = pd.to_numeric(df["EmotionalScore"], errors="coerce")
-    df["EmotionalScore"].fillna(df["EmotionalScore"].mean(), inplace=True)
+    df["EmotionalScore"] = df["EmotionalScore"].fillna(df["EmotionalScore"].mean())
 
     X = df[FEATURES].fillna(0).values
     y = df["MeanScore"].values

@@ -12,14 +12,14 @@ console = Console()
 
 BEATS_SQL = """
 SELECT
-    s.Slug AS StrandSlug,
-    ROW_NUMBER() OVER (PARTITION BY sb.StrandId ORDER BY sb.SortKey) AS BeatNumber,
+    n.Slug AS StrandSlug,
+    ROW_NUMBER() OVER (PARTITION BY bn.NodeId ORDER BY bn.SortKey) AS BeatNumber,
     CONVERT(nvarchar(36), b.Id) AS BeatId,
     b.Text AS BeatText
-FROM StrandBeats sb
-JOIN Beats b   ON b.Id  = sb.BeatId
-JOIN Strands s ON s.Id  = sb.StrandId
-WHERE sb.IsEnabled = 1
+FROM BeatNodes bn
+JOIN Beats b  ON b.Id  = bn.BeatId
+JOIN Nodes n  ON n.Id  = bn.NodeId
+WHERE bn.IsEnabled = 1
   AND b.Text IS NOT NULL
   AND LEN(TRIM(b.Text)) > 100
 """
@@ -28,7 +28,7 @@ WHERE sb.IsEnabled = 1
 def run() -> pd.DataFrame:
     with get_connection() as conn:
         df = fetchdf(conn, BEATS_SQL)
-    console.print(f"[green]{len(df):,} beats from {df['StrandSlug'].nunique()} strands[/green]")
+    console.print(f"[green]{len(df):,} beats from {df['StrandSlug'].nunique()} nodes[/green]")
     df.to_parquet(BEATS_CACHE_PATH, index=False)
     return df
 

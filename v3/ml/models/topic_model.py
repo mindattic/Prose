@@ -28,7 +28,11 @@ class GripeMiner:
         from sklearn.feature_extraction.text import CountVectorizer
 
         console.print(f"[cyan]Training BERTopic on {len(texts):,} gripe texts...[/cyan]")
-        embedder   = SentenceTransformer(EMBED_MODEL, local_files_only=True)
+        try:
+            embedder = SentenceTransformer(EMBED_MODEL, local_files_only=True)
+        except (OSError, ValueError, Exception):
+            console.print("[yellow]Model not in local cache — downloading from HuggingFace...[/yellow]")
+            embedder = SentenceTransformer(EMBED_MODEL)
         hdbscan    = HDBSCAN(min_cluster_size=15, min_samples=5,
                              metric="euclidean", cluster_selection_method="eom",
                              prediction_data=True)

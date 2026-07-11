@@ -34,8 +34,8 @@ FIND_DEDUP_SQL  = "SELECT Id FROM Findings WHERE DedupKey = ?"
 
 DELETE_PREFIX_SQL = """
 DELETE FROM Findings
-WHERE FilePath LIKE ?
-  AND Summary  LIKE ?
+WHERE FilePath LIKE ? ESCAPE '!'
+  AND Summary  LIKE ? ESCAPE '!'
 """
 
 
@@ -65,9 +65,16 @@ def upsert(
                                    snippet, suggested_fix, dedup))
 
 
+def _like_escape(s: str) -> str:
+    """Escape SQL Server LIKE special chars when using ESCAPE '!'."""
+    return s.replace("!", "!!").replace("%", "!%").replace("_", "!_")
+
+
 def delete_stale(conn, file_path_prefix: str, summary_prefix: str) -> int:
     cursor = conn.cursor()
-    cursor.execute(DELETE_PREFIX_SQL, (file_path_prefix + "%", summary_prefix + "%"))
+    cursor.execute(DELETE_PREFIX_SQL,
+                   (_like_escape(file_path_prefix) + "%",
+                    _like_escape(summary_prefix)   + "%"))
     return cursor.rowcount
 
 

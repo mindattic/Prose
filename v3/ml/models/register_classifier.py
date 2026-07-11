@@ -72,7 +72,7 @@ class RegisterClassifier:
             )),
             ("lr", LogisticRegression(
                 C=1.0, max_iter=1000, class_weight="balanced",
-                solver="lbfgs", multi_class="multinomial",
+                solver="lbfgs",
             )),
         ])
         self.pipeline.fit(X, y)
@@ -150,11 +150,17 @@ def main():
         clf.train(df)
 
     if args.top_words:
+        if not clf.model_path.exists():
+            print(json.dumps({"error": "model not trained yet — run --train first"}))
+            return
         clf.load()
         words = clf.top_discriminating_words(args.top_words)
         print(json.dumps([{"word": w, "coef": round(c, 4)} for w, c in words], indent=2))
 
     if args.infer:
+        if not clf.model_path.exists():
+            print(json.dumps({"error": "model not trained yet — run --train first"}))
+            return
         clf.load()
         if not args.text:
             print(json.dumps({"error": "no --text provided"}))

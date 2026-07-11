@@ -3,7 +3,8 @@ import os
 from pathlib import Path
 
 ML_ROOT = Path(__file__).parent
-ARTIFACTS = Path(os.environ["APPDATA"]) / "MindAttic" / "ML"
+_appdata = os.environ.get("APPDATA") or str(Path.home() / "AppData" / "Roaming")
+ARTIFACTS = Path(_appdata) / "MindAttic" / "ML"
 ARTIFACTS.mkdir(parents=True, exist_ok=True)
 
 # SQL Server LocalDB — Windows Auth, no credentials needed.

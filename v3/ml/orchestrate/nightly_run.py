@@ -146,12 +146,12 @@ def phase_compute_metrics():
 
 
 def phase_find_near_dupes():
-    from find_near_dupes import run as find_run
+    from orchestrate.find_near_dupes import run as find_run
     find_run()
 
 
 def phase_score_correlation():
-    from score_correlation import run as corr_run
+    from orchestrate.score_correlation import run as corr_run
     corr_run()
 
 

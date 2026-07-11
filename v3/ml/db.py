@@ -27,7 +27,7 @@ def fetchdf(conn, sql: str, params=()) -> pd.DataFrame:
     else:
         cursor.execute(sql)
     cols = [col[0] for col in cursor.description]
-    return pd.DataFrame(cursor.fetchall(), columns=cols)
+    return pd.DataFrame.from_records(cursor.fetchall(), columns=cols)
 
 
 def execute(conn, sql: str, params=()) -> None:
