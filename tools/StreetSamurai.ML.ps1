@@ -95,6 +95,11 @@ function Write-Menu {
     Write-Host "        Audit phases. Same as what runs at 1 AM automatically." -ForegroundColor DarkGray
     Write-Host "        Use this when you want a full refresh mid-day." -ForegroundColor DarkGray
     Write-Host ""
+    Write-Host "   [F]  First-run seed sequence  (4 → 7 → 8 → 1)        ~20 min" -ForegroundColor Green
+    Write-Host "        Runs compute metrics, near-dupe detection, score model," -ForegroundColor DarkGray
+    Write-Host "        then prints the morning report. Run this once after a" -ForegroundColor DarkGray
+    Write-Host "        fresh install or after adding a large batch of new beats." -ForegroundColor DarkGray
+    Write-Host ""
     Write-Host "   [Q]  Quit" -ForegroundColor DarkGray
     Write-Host ""
 }
@@ -211,6 +216,29 @@ while ($true) {
             Write-Host "  Running full pipeline (~15 min) — Task Scheduler runs this at 1 AM." -ForegroundColor Yellow
             Write-Host ""
             Invoke-Python "all"
+            Pause-After
+        }
+
+        "F" {
+            Write-Header
+            Write-Host "  First-run seed sequence: compute metrics → near-dupes → score model → report" -ForegroundColor Green
+            Write-Host ""
+
+            Write-Host "  ── Step 1/4: Compute prose metrics ─────────────────────────" -ForegroundColor Cyan
+            Invoke-SS "--compute-metrics", "--all"
+
+            Write-Host ""
+            Write-Host "  ── Step 2/4: Find near-duplicates ──────────────────────────" -ForegroundColor Cyan
+            Invoke-Python "find_near_dupes"
+
+            Write-Host ""
+            Write-Host "  ── Step 3/4: Score correlation model ───────────────────────" -ForegroundColor Cyan
+            Invoke-Python "score_correlation"
+
+            Write-Host ""
+            Write-Host "  ── Step 4/4: Morning report ────────────────────────────────" -ForegroundColor Cyan
+            Invoke-SS "--morning-report", "--since", "168"
+
             Pause-After
         }
 
