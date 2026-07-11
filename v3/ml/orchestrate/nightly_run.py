@@ -1,16 +1,16 @@
-"""
+﻿"""
 StreetSamurai ML orchestration pipeline.
 
 Phases:
-    extract_gripes    → pull reviewer gripes from DB → Parquet cache
-    extract_beats     → pull current beat texts → Parquet cache
-    train_topics      → train BERTopic gripe miner
-    train_register    → train protagonist register classifier
-    audit_gripes      → apply topic model → write Findings
-    audit_register    → apply register classifier → write Findings
-    compute_metrics   → CPU-only per-beat prose quality metrics (BeatProseMetrics table)
-    find_near_dupes   → cross-story near-duplicate detection via sentence-transformers
-    score_correlation → beat score vs prose feature correlation model (GradientBoosting)
+    extract_gripes    -> pull reviewer gripes from DB -> Parquet cache
+    extract_beats     -> pull current beat texts -> Parquet cache
+    train_topics      -> train BERTopic gripe miner
+    train_register    -> train protagonist register classifier
+    audit_gripes      -> apply topic model -> write Findings
+    audit_register    -> apply register classifier -> write Findings
+    compute_metrics   -> CPU-only per-beat prose quality metrics (BeatProseMetrics table)
+    find_near_dupes   -> cross-story near-duplicate detection via sentence-transformers
+    score_correlation -> beat score vs prose feature correlation model (GradientBoosting)
 
 Usage:
     python nightly_run.py [--phases all|<phase1>,<phase2>,...] [--strand <slug>]
@@ -39,7 +39,7 @@ PHASES = [
     "train_register",
     "audit_gripes",
     "audit_register",
-    # Canon Audit Suite — CPU-only quality metrics and cross-story analysis.
+    # Canon Audit Suite - CPU-only quality metrics and cross-story analysis.
     "compute_metrics",
     "find_near_dupes",
     "score_correlation",
@@ -61,20 +61,20 @@ def phase_train_topics():
     from models.topic_model import GripeMiner
     from config import GRIPES_CACHE_PATH
     if not GRIPES_CACHE_PATH.exists():
-        console.print("[yellow]No gripes cache — running extract_gripes first.[/yellow]")
+        console.print("[yellow]No gripes cache - running extract_gripes first.[/yellow]")
         phase_extract_gripes()
     df    = pd.read_parquet(GRIPES_CACHE_PATH)
     texts = df["GripeText"].dropna().str.strip().tolist()
     texts = [t for t in texts if len(t) > 5]
     if len(texts) < 50:
-        console.print(f"[yellow]Only {len(texts)} gripe texts — skipping (need >= 50).[/yellow]")
+        console.print(f"[yellow]Only {len(texts)} gripe texts - skipping (need >= 50).[/yellow]")
         return
     miner = GripeMiner()
     miner.train(texts)
     summary = miner.get_topic_summary()
     console.print(f"\n[bold]Top topics ({len(summary)} total):[/bold]")
     for t in summary[:10]:
-        console.print(f"  {t['size']:4d}  {t['label']}  — {', '.join(t['keywords'][:5])}")
+        console.print(f"  {t['size']:4d}  {t['label']}  - {', '.join(t['keywords'][:5])}")
 
 
 def phase_train_register():
@@ -82,7 +82,7 @@ def phase_train_register():
     from models.register_classifier import RegisterClassifier
     from config import BEATS_CACHE_PATH
     if not BEATS_CACHE_PATH.exists():
-        console.print("[yellow]No beats cache — running extract_beats first.[/yellow]")
+        console.print("[yellow]No beats cache - running extract_beats first.[/yellow]")
         phase_extract_beats()
     df  = pd.read_parquet(BEATS_CACHE_PATH)
     clf = RegisterClassifier()
@@ -102,7 +102,7 @@ def phase_audit_gripes(strand: str | None):
     from audit.beat_auditor import run_gripe_audit
     from config import TOPIC_MODEL_PATH
     if not Path(TOPIC_MODEL_PATH).exists():
-        console.print("[red]Topic model not trained — run train_topics first.[/red]")
+        console.print("[red]Topic model not trained - run train_topics first.[/red]")
         return
     miner = GripeMiner()
     miner.load()
@@ -117,7 +117,7 @@ def phase_audit_register(strand: str | None):
     from audit.beat_auditor import run_register_audit
     from config import REGISTER_MODEL_PATH
     if not Path(REGISTER_MODEL_PATH).exists():
-        console.print("[red]Register model not trained — run train_register first.[/red]")
+        console.print("[red]Register model not trained - run train_register first.[/red]")
         return
     clf = RegisterClassifier()
     clf.load()

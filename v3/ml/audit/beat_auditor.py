@@ -88,7 +88,7 @@ def run_register_audit(conn, clf: RegisterClassifier, slug: str | None) -> list[
     all_findings = []
     for strand_slug, beats in strands.items():
         if strand_slug not in clf.trained_slugs:
-            console.print(f"[yellow]  {strand_slug} not in register model — skipping[/yellow]")
+            console.print(f"[yellow]  {strand_slug} not in register model - skipping[/yellow]")
             continue
         console.print(f"[cyan]Register check: {strand_slug} ({len(beats)} beats)[/cyan]")
         delete_stale(conn, f"strand:{strand_slug}", "ML-REGISTER-BLEED")
@@ -148,7 +148,7 @@ def main():
 
     total = len(gripe_findings) + len(register_findings)
     if total == 0:
-        console.print("[green]Audit clean — no findings.[/green]")
+        console.print("[green]Audit clean - no findings.[/green]")
     else:
         if gripe_findings:
             t = Table(title="Gripe Topic Findings")

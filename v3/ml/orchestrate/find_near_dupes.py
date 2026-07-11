@@ -65,7 +65,7 @@ def embed_texts(texts: list[str], batch_size: int = 256) -> np.ndarray:
     try:
         model = SentenceTransformer(EMBED_MODEL, local_files_only=True)
     except (OSError, ValueError, Exception):
-        console.print("[yellow]Model not in local cache — downloading from HuggingFace...[/yellow]")
+        console.print("[yellow]Model not in local cache - downloading from HuggingFace...[/yellow]")
         model = SentenceTransformer(EMBED_MODEL)
     console.print(f"[cyan]Embedding {len(texts)} beats (batch={batch_size})...[/cyan]")
     vecs = model.encode(texts, batch_size=batch_size, show_progress_bar=True,
@@ -155,7 +155,7 @@ def run(threshold: float = SIMILARITY_THRESHOLD, batch_size: int = 256):
         sim     = float(sim_matrix[i, j])
         story_a = story_codes[i] or "unknown"
         story_b = story_codes[j] or "unknown"
-        summary = (f"Beat #{beat_nums[i]} ≈ Beat #{beat_nums[j]} "
+        summary = (f"Beat #{beat_nums[i]} ~= Beat #{beat_nums[j]} "
                    f"({sim:.3f}) across {story_a}/{story_b}")
         fp      = f"beat:{beat_ids[i]}"
         snippet = f"Also: beat:{beat_ids[j]}"

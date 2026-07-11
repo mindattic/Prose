@@ -279,11 +279,15 @@ The tine came down.
 
 The man was in the path of the footfall.
 
-Wes looked away before the impact fully landed and looked back and the tine was already rising into the natural stride and the cable had gone slack and the yellow vest was on the ground near the drainage concrete and the machine was taking the next step and the next, same pace, same bearing, south.
+Wes kept his eyes open.
 
-That was the whole of it. The machine had been stepping. It did not deviate.
+The tine completed its arc. There wasn't time — not for the man, not for a warning, nothing in the gap between the step and what the step did. The cable went slack. The yellow vest was on the drainage concrete and the machine was taking the next step, already, same pace, same bearing, south.
 
-Wes gripped the Crown edge. He did not look back at the drainage concrete.
+He made himself look.
+
+The man had worn the high-visibility yellow that was supposed to mean *I am here, take account of me*. He'd been working the winch clip the way you worked a job you'd done before — fast, efficient — because that was how you got through what you had to get through. The parts were worth something, the copper was worth something. You went out early and you worked the load. Same reason Wes had spent thirteen years on a maintenance crew. Same work. From the other end of the ownership line.
+
+Wes gripped the Crown edge.
 
 The threat-wail came from somewhere inside the hull.
 
@@ -349,7 +353,7 @@ She thanked Mistry and left.
 
 Hauser came in forty seconds after she was back on the road.
 
-"Anderson. Logging escalation request four. I want your concurrence on demolition authorization."
+"Anderson. Civilian casualty confirmed at Erie. Eight interdiction assets destroyed or disabled. Zone-Twelve perimeter breach in approximately ninety minutes at current pace." A pause. Not frustration — accounting. "My authorization doesn't require your concurrence. I'm asking because you were at the drainage break. What are you seeing?"
 
 She was moving. The skimmer's display had the machine's telemetry dot, 4.9 mph, bearing unchanged. She had it now: the machine wasn't walking toward the zone density. It was walking toward Cahill's load. The broadcast wasn't a question. It was a tracking signal. Every eleven seconds, the same pulse, the same interval: a locator. The machine knew where the parts were the way you knew where a sound was coming from before you turned your head.
 
@@ -365,7 +369,7 @@ Hauser let the channel go quiet for two seconds. That was his version of conside
 
 "Understood."
 
-He closed it. He always closed when the conversation was done, not when the frustration peaked. She'd clocked that in three months. He had a doctrine and a timeline and the doctrine wasn't wrong. He just didn't know what she'd learned at the drainage break.
+He closed it. He always closed when the conversation was done, not when the frustration peaked. She'd clocked that in three months. She was logging non-concurrence against a case she couldn't refute. That was the reality of it. He had a doctrine and a timeline and the doctrine wasn't wrong. He just didn't know what she'd learned at the drainage break.
 
 She still had to find Ferko Nzambe.
 
@@ -417,9 +421,13 @@ He woke when the light had changed — lower, the kind of afternoon shadow that 
 
 Pip was below, in the shadow of the secondary stabilizer. Trotting. Raw pads on the road gravel and still doing five miles per hour, that low, focused run, not looking up until Wes leaned over the edge — then a flick of the ear, and back to the ground.
 
-Forty-some miles. The road and the corn and the machine's shadow shifting with the sun.
+He'd fallen asleep on the back of the thing he'd watched kill a man.
 
-He'd fallen asleep on the back of the thing he'd watched kill a man. He hadn't decided to. He'd just gone under, the way you go under when your body has decided it's safe and doesn't consult you about it.
+The first thing when he woke was the yellow vest. Not as a thought — as a shape, sitting behind his eyes in the half-second before the stiff neck and the sun and the road came back. The man with the winch cable. The way he'd looked up, just once, and gone back to work. The tine rising into the stride like nothing had interrupted it.
+
+He held the Crown edge until the world was solid again.
+
+Forty-some miles. The road and the corn and the machine's shadow pulling long.
 
 He held the edge and watched Pip run.
 
@@ -427,11 +435,9 @@ CJ went west on the 88 corridor at 0645, the skimmer two feet off the asphalt, t
 
 The 88 ran flat and empty at this hour, and for one open stretch she let the throttle go. The repulsor field carried a fixed geometry two feet above the surface and did not negotiate with terrain. Asphalt, road shoulder, soft gravel, drainage break at the Dixon perimeter — same hum, same height, no adjustment. At full throttle it moved like something very fast that had also decided. She pulled back before the drone wreckage.
 
-The first drone wreckage showed from the road: a unit down in the corn about thirty yards north of the shoulder, nav light still cycling green, body canted at an angle that meant it had come down hard and fast. She marked it on the display without stopping. The second cluster was a half-mile on — two units, dark, no lights, lying in the rows at angles. She noted the positions. The camera had caught what it needed to catch.
+The drone wreckage was where it had landed: three units in the Hillsdale corn, a scatter she marked on the display without stopping.
 
-The scav camp at Erie she reached near Hillsdale. She slowed the skimmer. Yellow vest on the ground by the drainage break. ArcSec mobile already there, one unit, the officer she'd spoken to on the radio. She logged her position, radioed it in, kept moving. Nothing she could do there that wasn't already being done. The machine was ahead.
-
-The tine impressions ran along the shoulder where the gravel went soft — the drainage side, still wet from the night. Five prints to a stride, pressed maybe six inches down, then grass, then the next five. You could pace out the stride length from the saddle. She counted three full sets from where the skimmer idled.
+The yellow vest was still at the drainage break. ArcSec mobile already there. She logged her position and kept moving. Nothing she could do that wasn't already being done.
 
 She went west.
 

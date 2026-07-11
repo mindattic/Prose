@@ -95,7 +95,7 @@ def write_register_finding(
         f"ML-REGISTER-BLEED: Beat #{beat_number} reads as '{predicted_slug}' "
         f"({confidence:.0%} confidence)"
     )
-    snippet = (beat_text_snippet[:200] + "…") if len(beat_text_snippet) > 200 else beat_text_snippet
+    snippet = (beat_text_snippet[:200] + "...") if len(beat_text_snippet) > 200 else beat_text_snippet
     suggested_fix = (
         f"Vocabulary in this beat registers as '{predicted_slug}' rather than '{strand_slug}'. "
         "Check for: arithmetic/gap/parliament/filing (Kyle), Signal/Noise/instinct (Sasha), "

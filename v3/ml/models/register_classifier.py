@@ -85,11 +85,11 @@ class RegisterClassifier:
             "n_strands":        len(eligible),
             "n_beats":          len(df),
         }
-        console.print(f"[green]CV accuracy: {scores.mean():.2%} ± {scores.std():.2%}[/green]")
+        console.print(f"[green]CV accuracy: {scores.mean():.2%} +/- {scores.std():.2%}[/green]")
 
         with open(self.model_path, "wb") as f:
             pickle.dump({"pipeline": self.pipeline, "trained_slugs": self.trained_slugs}, f)
-        console.print(f"[green]Register classifier saved → {self.model_path}[/green]")
+        console.print(f"[green]Register classifier saved -> {self.model_path}[/green]")
         return metrics
 
     def load(self) -> None:
@@ -151,7 +151,7 @@ def main():
 
     if args.top_words:
         if not clf.model_path.exists():
-            print(json.dumps({"error": "model not trained yet — run --train first"}))
+            print(json.dumps({"error": "model not trained yet - run --train first"}))
             return
         clf.load()
         words = clf.top_discriminating_words(args.top_words)
@@ -159,7 +159,7 @@ def main():
 
     if args.infer:
         if not clf.model_path.exists():
-            print(json.dumps({"error": "model not trained yet — run --train first"}))
+            print(json.dumps({"error": "model not trained yet - run --train first"}))
             return
         clf.load()
         if not args.text:

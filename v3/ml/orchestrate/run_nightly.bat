@@ -7,6 +7,8 @@ setlocal
 set ROOT=D:\Projects\MindAttic\StreetSamurai\v3\ml
 set LOG=D:\Projects\MindAttic\StreetSamurai\v3\ml_nightly.log
 set PYTHONIOENCODING=utf-8
+set PYTHONUTF8=1
+set NO_COLOR=1
 
 cd /d "%ROOT%"
 call .venv\Scripts\activate.bat

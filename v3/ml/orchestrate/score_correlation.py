@@ -74,7 +74,7 @@ def run():
         df = fetchdf(conn, QUERY)
 
     if df.empty or len(df) < 20:
-        console.print(f"[yellow]Only {len(df)} scored beats — need ≥20 to train. Run reviews first.[/yellow]")
+        console.print(f"[yellow]Only {len(df)} scored beats -- need >=20 to train. Run reviews first.[/yellow]")
         return
 
     # Deduplicate by BeatId — if a beat somehow appears more than once (edge case
@@ -107,15 +107,15 @@ def run():
     )
 
     lines = [
-        f"Score Correlation Model — {pd.Timestamp.now():%Y-%m-%d}",
+        f"Score Correlation Model - {pd.Timestamp.now():%Y-%m-%d}",
         f"Training beats    : {len(df)}",
-        f"CV RMSE (5-fold)  : {rmse_mean:.3f} ± {rmse_std:.3f}",
-        f"Train R²          : {r2:.3f}",
+        f"CV RMSE (5-fold)  : {rmse_mean:.3f} +/- {rmse_std:.3f}",
+        f"Train R^2         : {r2:.3f}",
         "",
         "Feature Importance (permutation, descending):",
     ]
     for feat, imp in importances:
-        bar = "█" * max(0, int(imp * 30))
+        bar = "#" * max(0, int(imp * 30))
         lines.append(f"  {feat:<28} {imp:+.4f}  {bar}")
 
     report = "\n".join(lines)
