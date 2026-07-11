@@ -252,6 +252,21 @@ you walk past an ad-enrolled surface or person. Unaugmented individuals are comm
 invisible to the network and report the archologies as "strangely quiet." Augmented residents
 do not notice the advertising any more than they notice breathing.
 
+**AR product holograms (physical layer):**
+Products also project AR holographic effects into shared space — not purely overlay-injected,
+but physically anchored to the object via embedded emitters and broadcast on a neuretic-readable
+AR channel. A shelf of energy drinks pulses with animated light sculptures. A parked Aries bike
+trails a slow-burning chromatic ghost of itself when the proximity sensor detects an augmented
+viewer. A Casque & Veil jacket worn by a passing stranger throws a two-second brand ident into
+the air behind them like a comet tail. These effects are technically dismissible — an augmented
+user can queue a swipe-gesture to suppress any individual AR overlay — but at street density
+there are hundreds of simultaneous projections in any archology corridor. Suppressing them all
+would take all day. Nobody bothers. You learn to see through the holograms like rain.
+
+In gray zone territory, physical-layer AR emitters are absent or dead — the silence is
+conspicuous. First time a character arrives in a gray zone from inside the Veil, they notice the
+absence before they notice anything else.
+
 **The aspiration gradient:**
 Gray zone residents know exactly what archology-tier gear looks like, what it costs, and what
 wearing it signals. Many aspire to it. Many more have decided that branded corpo gear reads as
