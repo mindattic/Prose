@@ -2026,6 +2026,11 @@ Be specific; do not invent praise the reviews don't support.";
 
     private string? ResolveKey(string provider)
     {
+        // OAuth providers must always be resolved fresh — the token in cfg.ApiKeys is a
+        // startup snapshot that expires mid-session.  GetClaudeTeamOAuthToken() calls
+        // ClaudeCodeOAuthSource which auto-refreshes when within 60 s of expiry.
+        if (string.Equals(provider, "claude-team", StringComparison.OrdinalIgnoreCase))
+            return LegionClient.GetClaudeTeamOAuthToken();
         if (cfg.ApiKeys.TryGetValue(provider, out var k) && !string.IsNullOrWhiteSpace(k)) return k;
         return MindAtticCredentialStore.GetKey(provider);
     }
