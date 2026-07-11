@@ -211,7 +211,21 @@ are common in the inner districts — made possible by ferrocrete composites. Co
 arcologies are the tallest structures, clearing even supertall residential towers.
 
 **Space elevator** — visible over the southern horizon from GLMZ; operational; most residents
-stop noticing after a year.
+stop noticing after a year. Street names: **the Thread**, **the Stitch**. Corporate designation:
+Apex Tether Authority (ATA), private concessional operator.
+
+At night, the Thread is the most striking object in the southern sky: a near-invisible filament
+rising from the horizon to a point that vanishes into the upper atmosphere, and along it the
+cargo and transit pods rise and descend like a gossamer string of water droplets — lit against
+the dark, widely spaced, moving so slowly they seem still until you track one for a few seconds
+and watch it drift. The tether itself is not visible without augmentation; the pods are the
+visual. GLMZ residents who grew up with it do not see it anymore. Visitors and people having
+a very good or very bad night always do.
+
+**Prose ground rule:** Any night scene with a clear view of the southern sky — outdoor,
+rooftop, elevated, wide open — must include at least one reference to the Thread. It does
+not need to be foregrounded; a single clause is enough. The character's relationship to it
+(noticing it / not noticing it / watching a pod for a moment) is a register detail.
 
 ---
 
