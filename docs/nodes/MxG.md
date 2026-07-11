@@ -223,3 +223,31 @@ Relevant world facts for this story. No cross-reference to AMENDMENTS.md require
 **No underwater communities (SS-A42):** There are no permanent human communities living beneath Lake Michigan. The deep lake has ruins (decommissioned corporate research installations from the 2060s–2200s) and one sealed black-site facility drawing power — not communities. The Lake Platform is a surface-level civic station on the lake, not an underwater installation. The lake is weather and setting, not society.
 
 **Present-day year:** 2226.
+
+## §10 — Brand Environment & Character Loadout {#SS-MxG-brands}
+
+**Rook Trilogy shared environment** — this section applies to MxG, NxR, and CxC.
+
+### Crew loadouts (canonical)
+
+| Character | Item | Brand + Model | Notes |
+|---|---|---|---|
+| Rook (Inkeri Saarinen) | Sidearm | TBD — gray zone / street custom | she doesn't advertise her hardware |
+| Scout (Remi Diallo) | ECT rig | Praxis NeoCortex Extend | minimum spec for reliable ghosting |
+| Scout | Crawler | **Gerald** — chassis TBD, needs a manufacturer | treat like a worn-in second body |
+| Vox | Channeling rig | archology-tier — Casque & Veil neural integration layer | the expensive visible part; the AI stable is the actual tool |
+| Agwu / Boiler | weapons | existing DB entries — gray zone reclaim tier | functional, no brand flash |
+
+### Natural insertion points
+
+Brands slip in when something is *used* or *seen* — not as inventory. The crew's gear comes up when it matters:
+- Scout surfaces from a crawl: her Shell's vacant eyes, the make/model of the crawler she was in when something happened
+- Rook pulls a weapon: the mechanism tells you what it is
+- Vox puts on the rig: the Casque & Veil tag on the neural sleeve; he paid for the advertising to stop but it never fully stops
+- Entering an archology lobby: one sentence of brand saturation is enough to establish the world; not every surface needs calling out
+
+### Consumerism texture
+
+MxG plays in the Axiom BioNanics end of GLMZ — archology-tier corpo territory. Contrast between:
+- **Inside the Veil (archology):** every surface is branded, ads inject via neuretics without asking; Rook's overlay never stops working; she knows the price of everything she sees and resents it
+- **Gray zone (Bloom Quarter, staging areas):** brand presence is reclaimed, modified, or hand-painted; Greymark Unseen and street custom dominate; the air feels different

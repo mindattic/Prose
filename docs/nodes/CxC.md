@@ -291,3 +291,12 @@ that CxC's finale pays off — it is already in both codas; CxC §14 closes it.
 - "Black Ice" — the countermeasure that kills Ghosts; Helix runs corpo-grade adaptive Black Ice
 
 **Job-title rule (SS-LAW-26):** "Rider," "Exo," and "RFO" are all retired. Scout is a Ghost in prose and dialogue. "Remote Frame Operator" does not appear even in Helix paperwork — use "Ghost operator" in formal register. "Jockey" is valid slang but carries a slur-guard: never adjacent to camel imagery.
+
+## §9 — Brand Environment {#SS-CxC-brands}
+
+Brand environment shared with the Rook Trilogy — see MxG.md §10 for full loadout table and texture notes.
+
+**CxC-specific insertion points:**
+- Anneke Oyelowo (antagonist) will be wearing archology-tier — Casque & Veil or equivalent; her brands are armor; Rook's overlay clocks the price before she clocks the threat
+- Helix Biosystems infrastructure: branded corridors, branded security hardware; the corp wants you to know whose territory you're in
+- Scout is physically present in CxC (not ghosting from a safe house); Gerald appears but Scout is in-body for the finale — the crawler's manufacturer comes up when it takes damage

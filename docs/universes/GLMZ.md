@@ -104,7 +104,7 @@ full network — regional franchise holders per segment.
 
 ---
 
-## Neuretics and NSB
+## Neuretics
 
 **Neuretics** are neural mesh grown into brain tissue — not implanted hardware, grown.
 Integration takes 8–24 months and can fail catastrophically (autoimmune rejection = death
@@ -118,13 +118,15 @@ trace of mesh at the skull's nerve ports (temples, jaw, behind ears). Grade sign
 | Tier 1 | Common; corpo-subsidized | Basic AR overlay, communications, ID verification |
 | Tier 2 | Mid-tier; requires employment contract | Sensory enhancement, memory indexing |
 | Tier 3 | High-tier; restricted | Tactical processing, heuristic combat assist |
-| Tier 4 / Atlas | Experimental or illegal | Full-stack cognitive expansion; models interlocutor's likely response before they finish speaking |
+| Tier 4 / Sovereign | Experimental or illegal | Full-stack cognitive expansion; models interlocutor's likely response before they finish speaking |
 
-**AtlasCorps NeoCortex brand tiers (correspond to Tier 1–4 above):**
-Standard (12 threads) → Extend (48) → Prime (240) → Atlas (2,400 threads, Φ600/day, Accord registration required)
+**Praxis NeoCortex brand tiers** (Praxis is the manufacturer; NeoCortex is the consumer-facing brand; see SS-LAW-21 for what Praxis actually is):
+Standard (12 threads) → Extend (48) → Prime (240) → Sovereign (2,400 threads, Φ600/day, Accord registration required)
+
+*(Note: the Sovereign tier was formerly labeled "Atlas" — an artifact of the prior corporate name, now retired.)*
 
 **The Governor** — thermal/electrochemical survival system in all neuretics (not a performance
-cap). Ungoverned Atlas = fatal within 1–3 years.
+cap). Ungoverned Sovereign-tier = fatal within 1–3 years.
 
 **Growth-window lock:** Neuretics must be grown during a developmental window; nearly universal
 lock after ~age twelve. Rare adult-open cases exist (SS-A21) but are exceptional.
@@ -133,28 +135,35 @@ lock after ~age twelve. Rare adult-open cases exist (SS-A21) but are exceptional
 unaugmented → Tier 1 → Tier 4 is qualitative, not gradient. Tier 1 subsidized in core
 districts via NeoCortex Access Initiative.
 
-**NSB (Neuretic Substrate Bridging):** The protocol for occupying a machine body (Shell).
-- **Husk** — the biological body sitting dormant while bonded to a Shell
+**GLMZ penetration:** In GLMZ specifically, neuretics penetration exceeds 92% of the resident
+population. The 18% global figure reflects regions without access infrastructure; GLMZ is not
+one of them. In GLMZ prose, assume neuretics as default. Unaugmented characters are notable
+and should be treated as exceptions with specific reasons (late arrival, religious objection,
+failed integration, deliberate choice). The neuretic auto-identification overlay (see Consumer
+Culture §) is the default perceptual layer for nearly every character in every GLMZ story.
+
+**ECT — Eigenstate Conscience Transfer (Ghosting):** The protocol for a Ghost operator to
+occupy a machine body. See [SS-LAW-26](../BIBLE.md#SS-§5) for operator class vocabulary.
+- **Husk** — the biological body at rest while the Ghost is displaced
 - **Shell** — the machine body being occupied
-- **Riding / inject** — entering a Shell; consciousness relocates
-- **Eject / return** — leaving a Shell; consciousness returns to the Husk
+- **Ghosting** — the act of ECT; street verb ("she ghosted the door green")
+- **Surfacing** — leaving a Shell; eigenstate reseats in the Husk
 
-Vocabulary rules: characters **inject**, **ride**, **ghost**, **haunt**, or **slot** into
-Shells. They **eject** or **return** to their Husk. Never "transfer" or "upload" — those
-imply copying, not relocation. "Rider" as a standalone job title is retired (SS-A38); use
-Exo (street) or Remote Frame Operator / RFO (formal).
+Vocabulary rules: Ghost operators **ghost into** or **transit** Shells. They **surface** or
+**return** to their Husk. Never "transfer" or "upload" — those imply copying, not relocation.
+**Retired terms (SS-LAW-26):** "Rider", "Exo", "RFO", "inject/ride/slot" as operator vocabulary,
+"NSB (Neuretic Substrate Bridging)", "CEP (Coherent Eigenstate Projection)".
 
-**The physics (Coherent Eigenstate Projection / CEP):** NSB is the applied engineering; CEP
-is the underlying mechanism. The operator's neuretic array encodes their active cognitive
-state as a coherent eigenstate waveform and projects it into any resonant cavity with a
-compatible neural bus — the Shell. Nothing is copied or transmitted; the cognitive process
-itself migrates, the way a standing wave can be sustained in a second medium. The Husk drops
-to managed low-activity suspension for the duration — breathing, alive, absent. Return
-requires a clean handshake between the Shell's neural bus and the waiting Husk; a disrupted
-handshake (Black Ice attack, hardware failure, forced extraction) carries seizure risk that
-scales with how long the projection has been displaced, and extended forced displacement is
-fatal. CEP is also the physics behind Eigenlift (see Aerostatic Architecture) — the same
-discovery applied to mass instead of mind.
+**The physics:** The operator's neuretic array encodes their active cognitive state as a
+coherent eigenstate waveform and projects it into any resonant cavity with a compatible neural
+bus — the Shell. Nothing is copied or transmitted; the cognitive process itself migrates, the
+way a standing wave can be sustained in a second medium. The Husk drops to managed
+low-activity suspension for the duration — breathing, alive, absent. Return requires a clean
+handshake between the Shell's neural bus and the waiting Husk; a disrupted handshake (Black
+Ice attack, hardware failure, forced extraction) carries seizure risk that scales with how
+long the projection has been displaced, and extended forced displacement is fatal. The same
+underlying eigenstate physics governs Eigenlift (see Aerostatic Architecture) — applied to
+mass instead of mind.
 
 ---
 
@@ -203,9 +212,7 @@ stop noticing after a year.
 
 ## Social Structure
 
-**No police.** ArcSec (Arcturus Civil Security) replaced the city police in 2096 — the Blue
-Massacre. Law enforcement is now private. ArcSec is simultaneously a civil security monopoly
-and a for-profit corporation: it polices where it is contracted to police.
+**No police.** ArcSec (Arcturus Military Command, field enforcement arm of Arcturus Defense Solutions) replaced the city police in 2096 — the Blue Massacre. Law enforcement is now private. ArcSec is simultaneously a civil security monopoly and a for-profit corporation: it polices where it is contracted to police.
 - **ArcSec** — dominant in high-Tier districts and wherever clients pay
 - Uncontracted areas: private crew security, CorpoNation guards, or nothing
 
@@ -222,6 +229,77 @@ Ongoing, low-level, economically motivated. Residents treat them as weather.
 
 **Border Markets** — neutral-ground trading posts at Gray Zone / arcology perimeters.
 Goods and people move through them that wouldn't survive either side's legal framework.
+
+---
+
+## Consumer Culture & Brand Ecosystem {#SS-GLMZ-brands}
+
+See [SS-LAW-28](../BIBLE.md#SS-§5). Every manufactured object in GLMZ carries a brand. Brand
+names are mandatory in prose. Characters do not own generic objects; they own specific
+products from specific manufacturers.
+
+**The brand tier hierarchy:**
+- **Archology-tier** — licensed CorpoNation product; quality-controlled; aspirational from below. The standard against which everything else is measured and found wanting.
+- **Licensed street** — official product sold below the Veil; older model or reduced spec; omnipresent. What most gray zone residents actually own if they're buying new.
+- **Gray zone reclaim** — secondhand, modified, or counterfeit. May outperform corpo in specific applications (a modified gray zone knockoff with a hotter load-out than the factory version). No warranty. No support.
+- **Street custom** — locally fabricated from scavenged components; no brand. Often the best thing in the room. The fabricator's name is the brand.
+
+**The advertising layer:**
+Neural advertising is the dominant commercial medium. Mirrorwell Media and Waxwing Neuromedia
+inject brand impressions directly onto neuretic overlays — not pop-ups, not banners; brief
+involuntary sensory associations, the feel of cashmere or the smell of coffee, triggered when
+you walk past an ad-enrolled surface or person. Unaugmented individuals are commercially
+invisible to the network and report the archologies as "strangely quiet." Augmented residents
+do not notice the advertising any more than they notice breathing.
+
+**The aspiration gradient:**
+Gray zone residents know exactly what archology-tier gear looks like, what it costs, and what
+wearing it signals. Many aspire to it. Many more have decided that branded corpo gear reads as
+affiliation and choose gray zone reclaim deliberately. Operators specifically avoid archology-tier
+clothing because Casque & Veil jackets have been logging neuretic proximity data since 2218.
+
+**Neuretic brand identification (auto-overlay):**
+Neuretics include product identification software as a baseline feature of all tiers. When
+an augmented person looks at a manufactured object — a weapon, a jacket, a vehicle, a tool —
+their overlay surfaces the brand, model, and approximate tier within a fraction of a second.
+Involuntary, always-on, cannot be turned off without disabling the entire overlay. Characters
+with neuretics do not have to try to identify gear; they simply see it. A Tier 1 resident
+walking through a Border Market gets a constant stream of product identification they cannot
+silence. A gray zone operator who has learned to suppress the impulse to look at labels still
+has their overlay tagging everything in their peripheral vision.
+
+This makes brand awareness not a choice but a biological condition of augmentation. The inverse:
+unaugmented characters are brand-blind unless they deliberately seek out labels. Corpo personnel
+know immediately if someone's gear is archology-tier or gray zone reclaim. NCID investigators
+use the ID layer as forensic tool — a weapon's manufacture history comes up automatically.
+
+In prose: a neuretic-augmented character looking at gear sees the brand. *"Her overlay tagged
+the jacket: Casque & Veil, current season, Apex Cerulean colorway. Retail Φ8,400."* This is
+not a deliberate scan — it is involuntary perception.
+
+**Brand literacy is universal:**
+Everyone in GLMZ can read a brand at a glance — augmented people instantly, unaugmented people
+by eye and experience. The cut of a jacket, the matte finish on a weapon, the hydrogen-cell
+whisper of an Aries turbine versus the combustion rumble of a knockoff — these are class signals
+as legible as accent or posture. A character noticing someone's gear is a character doing social
+reading. For neuretic users, the reading is automatic.
+
+**Fashion rotates:**
+Characters change clothes. A person seen today is wearing something different tomorrow. 
+Fashion in 2226 is 200 years more interesting than today: nano-filament that shifts color,
+electrochromic panels that respond to mood-state, structural garments that reshape silhouette
+based on context. Pixel's wardrobe specifically rotates daily — she is a fashion person
+(neo-boho / tech e-girl / neon + psychedelic), and her outfits are as expressive as dialogue.
+When she appears in a scene, describe what she's wearing.
+
+**Key consumer brands seeded in the DB:**
+- **Casque & Veil** — archology luxury fashion; structured techwear; neural-overlay advertising
+- **Greymark Unseen** — gray zone street label; anti-surveillance design; no advertising; certified by field use
+- **Aries Performance Vehicles** — personal motorcycles and ground vehicles; not corporate; not military; Pilsen-built
+- **Praxis NeoCortex** — consumer neuretics; Standard → Extend → Prime → Sovereign tiers; Praxis is the manufacturer
+- **Carrion Defense Works** — weapons; brutal and functional; no corpo polish
+- **Ringo Corponation** + subsidiaries — food, retail, banking, residential; the closed loop
+- **CramIt** (Amber Harvest Foods, Ringo) — nutrition bars; contractor-issue; taste like someone described chocolate to a person who had never eaten food
 
 ---
 
@@ -527,13 +605,16 @@ cosmology. Treat as canonical but unreachable for story purposes.
 
 ## Job Vocabulary
 
+See [SS-LAW-26](../BIBLE.md#SS-§5) for the binding operator class vocabulary.
+
 | Term | Meaning |
 |---|---|
-| **Exo** | NSB operator; a person who neuretically bonds to machine bodies (Shells) via Neuretic Shell Bonding; not a general freelancer term |
+| **Ghost** | Operator class: eigenstate conscience transfer (ECT); inhabits any machine with coherent circuitry. Body at rest = Husk. Street verb: ghosting. **Retired synonyms: Exo, RFO, Rider.** |
+| **Channeler** | Operator class: session-injection into networked frames; direct AI negotiation |
+| **Splicer** | Operator class: hardware/software attack surface, credential cracking, physical build; tech specialist |
+| **Jockey** | Alt street slang for a Ghost operator. ⚠️ Must never appear adjacent to camel imagery (SS-LAW-26 SLUR GUARD). |
 | **operator / freelancer** | General term for independent runners doing Gray Zone work (combat, recon, extraction, coercion) |
 | **street samurai** | Nickname/title used for certain operators (notably Kyle); not a job category |
-| **Splicer** | Tech specialist; neuretics calibration, hardware modification, cyberware |
-| **Jockey** | Alt slang for an NSB operator; informal |
 | **scav** | Unaffiliated gray-zone opportunist; no gang; always lowercase |
 
 ---
@@ -588,3 +669,9 @@ the Schisms — that detail has never mattered to the people doing the discrimin
 - **Shared neuretic spaces are mundane** — characters don't marvel at them; they're Tuesday
 - **Ubiquitous Diaspora** — mixed heritage is default; no Anglo default; no duplicate first/last
   names; double-barrel surnames are rare
+- **Brand names are mandatory** — no generic objects; every manufactured item has a manufacturer
+  and model (SS-LAW-28); augmented characters auto-identify via overlay
+- **No 2020s slang** — words like "fit", "drip", "rizz", "vibe", "slay", "bussin", "no cap"
+  will not survive 200 years; do not use them. Invented slang must be grounded in 2226 culture
+  (neuretics, CorpoNations, the Schisms, eigenlift, ghosting, credstick, quanta) — not
+  projected forward from the current era

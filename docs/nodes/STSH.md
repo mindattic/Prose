@@ -46,7 +46,7 @@ The implant contains:
 - 14.3 GB of encrypted trial records from the Sable Industries/MidNorth Medical neuretics
   governor program, 2211. The records document 428 non-consensual surgical subjects — Block War
   refugees held in the Z-7 gray zone relocation camps — used to test governor suppression chips
-  for the Atlas NeoCortex line.
+  for the Praxis NeoCortex line.
 - Six video diary fragments recorded by Renata Osei, the runner, between 2218 and 2225.
   These play as non-continuous B-story interludes in the prose. They show what Renata witnessed
   and remembered; they do not show what Stash suspects until the final fragment.
@@ -128,7 +128,7 @@ her own hands when she finishes a surgery.
 
 - Halcyon Civil Security — Neuretic Crime Investigation Division (NCID / RaNCID) Agent, GLMZ Field Division. Late 40s. Finnish-Somali heritage.
 - Her logic: the neuretics governor tech that uses the stolen trial data saves
-  approximately 1,200 corpo employees per year from Atlas NeoCortex runaway syndrome.
+  approximately 1,200 corpo employees per year from Praxis NeoCortex runaway syndrome.
   If the trial records are broadcast, the program is legally compromised and those
   1,200 people face neuretic cascade. She has done the arithmetic. The 428 victims were
   already dead. The 1,200 are alive now.
@@ -268,7 +268,7 @@ Word target: ~50,000 words. Average beat ~1,050 words. Beats marked [C] = Combat
   428 subjects. The fragment ends.
 
 - **Beat 4.4** [D] — *What Ledger knows.* After the fragment: Ledger explains that the neuretics
-  governor program has been public knowledge for years — it's what keeps Atlas NeoCortex users
+  governor program has been public knowledge for years — it's what keeps Praxis NeoCortex users
   from cascade failure. What is not public knowledge is what the test data cost. He has been
   trying to find the provenance for two years. The source always dried up before he could price
   it. He tells Stash what the implant is worth in money. She tells him that is not the
@@ -619,3 +619,32 @@ except during Renata's fragments (which are first-person video diary format, dir
 - The governor program is not shut down by the end of the story. The legal process takes years.
 - Stash does not seek forgiveness. She does not get it. She does not need the story to provide it.
 - Renata's name goes on the wall. This is the final image and it is not negotiable.
+
+## Brand Environment & Character Loadout {#SS-STSH-brands}
+
+See [SS-LAW-28](../BIBLE.md#SS-§5).
+
+### Amara "Stash" Adeyemi-Kowalski — Canonical Loadout
+
+| Item | Brand / Model | Notes |
+|---|---|---|
+| Medical kit | **Sable Industries MedTech field kit** | Fits the Sable-STSH thematic connection; the corp whose cover-up she's trying to expose also made the tools she uses to keep people alive |
+| Personal weapon | **Gray zone reclaim / street custom** | Stash is not a combatant; she does not carry archology-tier hardware |
+| Apparel | **Gray zone reclaim** | Street medic aesthetic; functional; nothing that signals affiliation |
+| The implant | **Sable Industries Nova-7** surgical data capsule (Model Nova-7, MedTech line, 2210) | Already canonized in §1; the brand is Sable Industries, the model is Nova-7 |
+
+### Petra Voss (NCID) — Canonical Loadout
+
+| Item | Brand / Model | Notes |
+|---|---|---|
+| Service weapon | ADS-issue Halcyon NCID sidearm | NCID is Halcyon; Halcyon augmentation-maintenance infrastructure; contractors carry ADS-supplied weapons |
+| Apparel | Halcyon NCID field operative kit; licensed street tier; not conspicuous | Voss wants to be convincing, not threatening, until she is |
+
+### Setting Brand Environment
+
+STSH is set in the Gray Zone (Z-7 district) — ungoverned, sparse neural advertising, scrappy.
+
+- **Sable Industries** is the thematic brand: the corp whose trial records are in the implant, whose medical tools are in Stash's kit, and whose security arm (Scalpel Division) is one of the two kill-teams
+- **Ringo vending machines** appear at zone boundaries — CramIt bars, contractor staples
+- **NCID overlay**: Petra Voss's neuretics auto-identify every piece of Stash's gear and medical kit the moment she enters the room; she already knows exactly who she's dealing with before either of them speaks
+

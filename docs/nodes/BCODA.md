@@ -1318,3 +1318,27 @@ Tracks plants awaiting payoff and payoffs confirmed. Update after each prose cam
 | Finding | Reason dropped | Date |
 |---|---|---|
 | Imani registers "recognition" at 35th & Halsted Schism (Ch10 SK:19000) | No causal grounding; line removed from prose per user decision | 2026-07-10 |
+
+## 15. Brand Environment & Character Loadout {#SS-BCODA-brands}
+
+See [SS-LAW-28](../BIBLE.md#SS-§5). BCODA is complete (V19.docx exported 2026-07-10); this
+section is canonical for all future stories featuring Kyle Mercer.
+
+### Kyle Mercer — Canonical Loadout
+
+| Item | Brand / Model | Notes |
+|---|---|---|
+| Motorcycle | **Aries Viper Predator MDK-2**, Matte Black | Hydrogen cell powered; Aries Performance Vehicles (Pilsen); eigenlift stabilization; no headlights by default |
+| Sword | **Silence** | No brand — just a sword (SS-LAW-10). The absence of branding is the point. |
+| Shotgun | **Carrion Defense Works CDW-RS5 'Chorus'** | Five-shot revolver shotgun; Kyle's personal name for it ("for the sound it makes"). CDW: brutal, functional, no corpo polish. |
+| Neuretics | **Praxis NeoCortex** (Sovereign tier, ungoverned) | No governor — is killing him. Made by Praxis under their cover brand (SS-LAW-21). |
+| Apparel | **Gray zone reclaim** — black duster over technical base layer | No archology brand by choice. Greymark Unseen or street custom. The absence of visible branding IS the brand signal. |
+
+### Setting Brand Environment
+
+BCODA is set primarily in the Loop, Bloom Quarter, and gray zones adjacent to both.
+
+- **The Loop** — Casque & Veil on every executive; Waxwing Neuromedia ad-impressions saturating the overlay; Ringo subsidiary Fine Feasts for expense-account dinners; Arcturus kinetic interceptor systems visible on every rooftop
+- **Gray zone** — Greymark Unseen; CDW weapons; Aries bikes; CramIt bars from Ringo vending machines; street-custom everything else
+- **Mrs. Chen's stall** — unlicensed, unbranded, real food; the one thing in the story that has no commercial origin story
+

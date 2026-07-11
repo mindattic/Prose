@@ -612,3 +612,45 @@ different list of the same person.
 - **H4d** Logic sweep and standalone review pending new prose.
 - **H4e** BIBLE.md requires Ghosting/ECT/Ghost terminology update (SS-A38 already retired
   Rider; add: Exo → Ghost, NSB → ECT/Ghosting, RFO → Ghost). See [[../BIBLE]].
+
+## 14. Brand Environment & Character Loadout {#SS-PXL-brands}
+
+See [SS-LAW-28](../BIBLE.md#SS-§5) and [GLMZ consumer culture](../universes/GLMZ.md#SS-GLMZ-brands).
+
+### Pixel — Fashion Rules (BINDING)
+
+Pixel is a **fashion person**. Her aesthetic: neo-boho / tech e-girl / neon + psychedelic +
+rock. Think: neon hair, electrochromic panels that pulse, layered textures from opposite
+tiers, something that glows. Not a uniform — an expression that changes daily.
+
+**Every scene where Pixel appears must describe what she is wearing.** She does not have a
+default outfit. She changes clothes. Each appearance is a fresh fashion beat.
+
+**Detroit aesthetic (pre-escape, Beats 1–4):**
+Street-level Detroit gray zone. Modified corpo hand-me-downs, reclaimed industrial fabrics,
+neon accents applied post-purchase. Greymark Unseen or street custom. Color palette: oil-black
+base with electrical orange and UV-reactive purple. Everything has been modified from its original purpose.
+
+**GLMZ aesthetic (post-arrival, Beats 5–14):**
+She's in the Glooms now. First week: still Detroit. As she settles: starts acquiring GLMZ
+pieces. Casque & Veil knockoffs from the Bloom Quarter border market. Waxwing-injected brand
+impressions she learned to enjoy and then learned to resent. By the end of the story she has
+built a style that is entirely GLMZ but reads as distinctly her — no archology polish, no gray
+zone austerity. Something in between that didn't exist before she got here.
+
+**Pixel — Canonical Loadout**
+
+| Item | Brand / Model | Notes |
+|---|---|---|
+| Apparel | **Rotates daily** — neo-boho tech e-girl; see fashion rules above | No single outfit; every scene describes a new one |
+| ECT rig | **Pending** — assign brand during prose generation | Her Ghost rig should have a brand; use a gray zone reclaim unit or a Praxis-adjacent device |
+| Drones | See §3 — Drones as Tools | Tool use, not companions; no brand lock yet |
+
+### Setting Brand Environment
+
+PXL opens in Detroit gray zone, moves to GLMZ.
+
+- **Detroit** — stripped brands; everything functional or reclaimed; no neural advertising (neuretics penetration lower); Border Markets with Chicago goods filtering in
+- **GLMZ Gray Zone (arrival)** — Greymark Unseen; Border Market overflow from the Loop; first encounter with neural ad-injection (disorienting)
+- **Bloom Quarter** — body-mod culture; Casque & Veil adjacent (knockoffs and licensed street); Praxis NeoCortex maintenance clinics running under Orison Neuretics cover
+

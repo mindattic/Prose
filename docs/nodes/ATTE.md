@@ -365,3 +365,26 @@ Lure/Counter interposition) — `reread_reward` now cites them. Emotional depth 
 - **ATTE-US-7 ✅** New-systems surgical pass: DocContext (GREY register) + emotional-depth + plant/payoff
   engines used as diagnostics + targeted enrichment (NOT bulk regen). 3 beats rewritten, 4 plant/payoff
   pairs registered. *Evidence: gateway advisory 1→0; beat 18 weakest→strongest; review 89.2/flow 91.7.*
+
+## Brand Environment & Character Loadout {#SS-ATTE-brands}
+
+See [SS-LAW-28](../BIBLE.md#SS-§5).
+
+### Yemina Fola — Canonical Loadout
+
+| Item | Brand / Model | Notes |
+|---|---|---|
+| Vehicle | **Ferrogate Contractor-Issue CI-4** | Gray the way contractor-issue things are gray; not painted gray, designed gray. Assign during prose if not already in beats. |
+| Service weapon | **Arcturus Defense Solutions ARC-P1 'Centurion'** (or contractor-issue ADS sidearm) | Halcyon NCID contractors use ADS-supplied sidearms; confirm against existing beat prose |
+| Food | **CramIt Bran nutribar** (Amber Harvest Foods / Ringo) | Already in prose — preserve. "Tasted like someone had described chocolate to a person who had never eaten food." |
+| Apparel | Halcyon NCID contractor-issue; not personal fashion | Yemina reads through her gear, not her clothes |
+
+### Setting Brand Environment
+
+ATTE is set in Pilsen Veil, contractor gray zone, licensed street tier.
+
+- **Dominant register**: everything is contractor-issue or generic; brands present but uninspiring
+- **The CramIt bar** is the canonical consumer brand in this story — already in prose; do not remove
+- **Neural overlay**: Yemina's neuretics auto-tag everything; her brand literacy is professional-level; she notices what people's gear says about who they work for
+- **Tessaline Foods** — the BCODA antagonist food chain; appears as background signage in Pilsen; hostile regulatory presence against street vendors
+

@@ -372,3 +372,37 @@ relay. The one exception: Koss hands Mona a physical relay device (his crew uses
 operational security — paranoid about neuretic intercept logging).
 
 ---
+
+## Brand Environment & Character Loadout {#SS-RTR-brands}
+
+See [SS-LAW-28](../BIBLE.md#SS-§5).
+
+### Ethan Wolfe — Canonical Loadout
+
+| Item | Brand / Model | Notes |
+|---|---|---|
+| Apparel | Gray zone reclaim — Milwaukee dive bar working clothes | He's embedded in the scene; he dresses to disappear into it |
+| Weapon | Assign during prose generation | Ethan is not primarily a combatant; if armed, it should be understated |
+
+### Faith Larson — Canonical Loadout
+
+| Item | Brand / Model | Notes |
+|---|---|---|
+| Apparel | **Rotates scene to scene** — small, blonde, functional; clothing is signal not fashion | Faith's wardrobe reads her role: nothing flashy, nothing corpo. What she's wearing tells you what she's doing. |
+| No neuretics | Faith is a Read (psionic) — no neuretics (SS-LAW-25 adjacent; Reads perceive schema) | She does NOT auto-identify brands via overlay; she reads people the old way |
+
+### Fenris Band — Setting Brands
+
+The band's gear should have specific brand names when described:
+- Instruments: assign at prose time (no existing band equipment entities seeded)
+- Sound system: gray zone reclaim or Border Market licensed; nothing archology-tier
+- Milwaukee dive bar setting: Ringo-adjacent food/drink suppliers; CramIt in the back; whatever's on tap has a name
+
+### Setting Brand Environment
+
+RTR is set in Milwaukee dive bars and gray zone venues — low-tier, music-first, no corpo polish.
+
+- **No neural advertising** at this tier; the bar's walls are physical, not overlay-enabled; the brands here are physical labels on bottles and hand-painted signage
+- **The absence of overlay advertising** is part of the setting's appeal; people come here precisely because their neuretics stop being bombarded
+- **Faith's brand-blindness** (no neuretics = no auto-ID) makes her read people differently than everyone else in the room; she is the only person who cannot see the label on Ethan's jacket
+

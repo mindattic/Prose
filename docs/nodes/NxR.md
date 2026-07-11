@@ -293,3 +293,12 @@ ss --review-node --slug neon-rust-qwen-019f06eb
 - [x] NRSTQ: **DELETED 2026-06-27** — the Qwen experimental twin was removed; the Claude node was promoted to the canonical node (NodeCode `NxR`, title "Neon & Rust", slug `neon-rust-019f06da`)
 - [ ] Comparative analysis (NOTE: experiment caveat — neither writer used the canonical crew because Stave/Adalemo were unseeded and the returning crew lacked voice depth; entities are now seeded for any future regen. NRSTQ left as the raw experimental record; NRSTC hand-re-cast for canon fidelity.)
 - [ ] Export both (NRSTC V1, NRSTQ V1)
+
+## §9 — Brand Environment {#SS-NxR-brands}
+
+Brand environment shared with the Rook Trilogy — see MxG.md §10 for full loadout table and texture notes.
+
+**NxR-specific insertion points:**
+- Scout's crawler (Gerald) in close-quarters: the chassis manufacturer reads on Rook's overlay when Gerald passes — one line, not a paragraph
+- Rook's apparel changes beat to beat; she does not wear the same thing twice; gray zone reclaim, no archology brand
+- The Bloom Quarter scenes: no neural advertising infrastructure (gray zone); augmented characters notice the silence as much as the texture
