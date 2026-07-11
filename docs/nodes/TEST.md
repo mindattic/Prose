@@ -19,7 +19,8 @@ updated: 2026-07-04
 
 A standalone Bear character study. Someone reopens the Cortland Engagement case (CE-0217).
 Bear has been paying a quiet, sustained rate to sixteen families for eight years — a ledger
-Halcyon Civil Security needs closed. Dual timeline: Bear in the present, taking work that
+Halcyon Civil Security needs closed. Dual timeline: Bear in the present as head of security
+for Cinderfall Logistics (a gray-zone freight operator, Ironbend district), taking work that
 requires nothing of him; Bear in the past at Cortland, the decision that made the ledger.
 
 It ends with a handshake. Brandt salutes. Bear does not return it. He extends his hand.
@@ -115,11 +116,13 @@ The obligation = the root of the whole case. CE-0217 stays classified. The payme
 **Supporting cast:**
 
 **Ironbend:**
-- Bear's gray-zone logistics contact. Seeded in DB (TEST-US-1).
+- Bear's gray-zone logistics contact (a person/handle). Seeded in DB (TEST-US-1).
 - Bear does NOT call Ironbend at SK850 — deliberate choice: calling would let Halcyon trace
   the contact and expose Ironbend's network. The negative instruction at SK850 carries weight
   because Ironbend is a genuine option Bear chooses not to exercise, not an asset he lacks.
   Prose writers: the absence of the call is the beat — Bear goes dark on purpose.
+- Note: "Ironbend" is a codename/handle for a person. Do not confuse with Cinderfall Logistics
+  (Bear's employer) or the Ironbend district (the shared location of both).
 
 ## 4. Narrative locks {#SS-TEST-4}
 
@@ -163,7 +166,8 @@ The obligation = the root of the whole case. CE-0217 stays classified. The payme
 SK350: Hana intake — "You were the only one who kept paying on the twenty-first."
 SK500: Decision beat — the window estimate. "He had been carrying it long enough to trust it."
 SK680: 19-day surveillance logged. Teams pulled back day 14. Bear turned the wrong direction
-  at 1158. Kill order called at 1159. 38 minutes to scramble. Inside the freight bay at 1247.
+  at 1158. Kill order called at 1159. 38 minutes to scramble. Inside the Cinderfall freight
+  bay at 1247.
 
 **Fight 1 (SK685) — Range/broadcast Sunder:**
 Two Atlas II ex-operators in freight service corridor. Bear opens vent arrays. Both down.
@@ -231,8 +235,9 @@ run." / "He left."
 **SK1050 — The Nineteenth:**
 CE-0217 closed six weeks ago. Bear runs the sixteen transfers two days early, on the
 nineteenth, breaking the twenty-first pattern on principle. Sternum touch — no cycle, no
-warmth, frame at rest. Calls the Arrangement's dock line at 0600 and reads the sixteen names
-into the record no court will keep. "It was never mine to carry alone."
+warmth, frame at rest. Returns to the Cinderfall dock; calls the Arrangement's Cinderfall
+line at 0600 and reads the sixteen names into the record no court will keep.
+"It was never mine to carry alone."
 
 ### Past timeline: the Cortland Engagement
 
