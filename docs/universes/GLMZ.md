@@ -348,6 +348,17 @@ In prose: a neuretic-augmented character looking at gear sees the brand. *"Her o
 the jacket: Casque & Veil, current season, Apex Cerulean colorway. Retail Φ8,400."* This is
 not a deliberate scan — it is involuntary perception.
 
+**Diaspora and fashion are the same sentence:**
+In GLMZ 2226, after 200 years of the Ubiquitous Diaspora mixing heritage from combinations that
+would have surprised everyone, fashion is the primary medium through which cultural identity
+is performed. Genetics tells you the long history; clothing tells you what the person chose
+to do with it this morning. A Congolese-Vietnamese woman in archology-tier Casque & Veil reads
+differently than the same woman in gray zone Greymark Unseen, differently again in street custom.
+The neuretic overlay reads both simultaneously — heritage from biometric display, brand tier from
+the auto-ID layer, silhouette and color from vision. Social reading in GLMZ is always both at
+once. Prose that identifies a character's genetics or physical heritage must also identify their
+clothing. They are not separate observations.
+
 **Brand literacy is universal:**
 Everyone in GLMZ can read a brand at a glance — augmented people instantly, unaugmented people
 by eye and experience. The cut of a jacket, the matte finish on a weapon, the hydrogen-cell
@@ -738,8 +749,16 @@ the Schisms — that detail has never mattered to the people doing the discrimin
 - **CorpoNation names are proper nouns** — conjoined-capital on first use, abbreviation after
 - **"bleed" = neuretics data leakage only** — never schism phenomena
 - **Shared neuretic spaces are mundane** — characters don't marvel at them; they're Tuesday
-- **Ubiquitous Diaspora** — mixed heritage is default; no Anglo default; no duplicate first/last
-  names; double-barrel surnames are rare
+- **Ubiquitous Diaspora + fashion are inseparable** — mixed heritage is default; no Anglo
+  default; no duplicate first/last names; double-barrel surnames are rare. Whenever a character's
+  genetics, phenotype, or physical heritage is identified — in a first description, a re-entrance,
+  or a close observation — their clothing and current style must be described in the same beat.
+  The two are the same signal. Genetics tells you where a person came from; clothing tells you
+  what they've chosen to do with it. In GLMZ 2226, fashion is the primary medium through which
+  diaspora identity is performed, filtered through 200 years of global mixing and CorpoNation
+  brand saturation. A Ghanaian-Norwegian woman in a Greymark Unseen jacket reads differently
+  than the same woman in a Casque & Veil season piece. Both read differently from street custom.
+  Describe both. Always.
 - **Brand names are mandatory** — no generic objects; every manufactured item has a manufacturer
   and model (SS-LAW-28); augmented characters auto-identify via overlay
 - **No 2020s slang** — words like "fit", "drip", "rizz", "vibe", "slay", "bussin", "no cap"
