@@ -2,20 +2,24 @@
 StreetSamurai ML orchestration pipeline.
 
 Phases:
-    extract_gripes  → pull reviewer gripes from DB → Parquet cache
-    extract_beats   → pull current beat texts → Parquet cache
-    train_topics    → train BERTopic gripe miner
-    train_register  → train protagonist register classifier
-    audit_gripes    → apply topic model → write Findings
-    audit_register  → apply register classifier → write Findings
+    extract_gripes    → pull reviewer gripes from DB → Parquet cache
+    extract_beats     → pull current beat texts → Parquet cache
+    train_topics      → train BERTopic gripe miner
+    train_register    → train protagonist register classifier
+    audit_gripes      → apply topic model → write Findings
+    audit_register    → apply register classifier → write Findings
+    compute_metrics   → CPU-only per-beat prose quality metrics (BeatProseMetrics table)
+    find_near_dupes   → cross-story near-duplicate detection via sentence-transformers
+    score_correlation → beat score vs prose feature correlation model (GradientBoosting)
 
 Usage:
     python nightly_run.py [--phases all|<phase1>,<phase2>,...] [--strand <slug>]
 
 Examples:
-    python nightly_run.py                              # full pipeline
-    python nightly_run.py --phases train_register      # retrain register only
+    python nightly_run.py                                # full pipeline
+    python nightly_run.py --phases train_register        # retrain register only
     python nightly_run.py --phases audit_register --strand sasha_v
+    python nightly_run.py --phases compute_metrics,find_near_dupes,score_correlation
 """
 import sys
 import os
@@ -35,6 +39,10 @@ PHASES = [
     "train_register",
     "audit_gripes",
     "audit_register",
+    # Canon Audit Suite — CPU-only quality metrics and cross-story analysis.
+    "compute_metrics",
+    "find_near_dupes",
+    "score_correlation",
 ]
 
 
@@ -118,13 +126,45 @@ def phase_audit_register(strand: str | None):
     console.print(f"[green]{len(findings)} register bleed finding(s) written[/green]")
 
 
+def phase_compute_metrics():
+    import subprocess
+    import sys
+    # Call the .NET CLI to compute prose metrics for all beats.
+    # Assumes dotnet is on PATH and the project is built.
+    root = Path(__file__).parent.parent.parent  # v3/
+    cli  = root / "StreetSamurai.Cli" / "StreetSamurai.Cli.csproj"
+    result = subprocess.run(
+        ["dotnet", "run", "--project", str(cli), "--", "--compute-metrics", "--all"],
+        capture_output=True, text=True
+    )
+    if result.stdout:
+        console.print(result.stdout)
+    if result.returncode != 0:
+        console.print(f"[red]compute_metrics exited {result.returncode}[/red]")
+        if result.stderr:
+            console.print(result.stderr[:2000])
+
+
+def phase_find_near_dupes():
+    from find_near_dupes import run as find_run
+    find_run()
+
+
+def phase_score_correlation():
+    from score_correlation import run as corr_run
+    corr_run()
+
+
 PHASE_FNS = {
-    "extract_gripes":  lambda args: phase_extract_gripes(),
-    "extract_beats":   lambda args: phase_extract_beats(),
-    "train_topics":    lambda args: phase_train_topics(),
-    "train_register":  lambda args: phase_train_register(),
-    "audit_gripes":    lambda args: phase_audit_gripes(args.strand),
-    "audit_register":  lambda args: phase_audit_register(args.strand),
+    "extract_gripes":    lambda args: phase_extract_gripes(),
+    "extract_beats":     lambda args: phase_extract_beats(),
+    "train_topics":      lambda args: phase_train_topics(),
+    "train_register":    lambda args: phase_train_register(),
+    "audit_gripes":      lambda args: phase_audit_gripes(args.strand),
+    "audit_register":    lambda args: phase_audit_register(args.strand),
+    "compute_metrics":   lambda args: phase_compute_metrics(),
+    "find_near_dupes":   lambda args: phase_find_near_dupes(),
+    "score_correlation": lambda args: phase_score_correlation(),
 }
 
 

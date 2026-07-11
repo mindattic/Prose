@@ -1087,6 +1087,39 @@ if (args.Contains("--prose-check"))
     return;
 }
 
+// ss --compute-metrics [--slug <slug> | --all]
+// CPU-only per-beat prose quality metrics: word count, sentence count, TTR,
+// MTLD lexical diversity, Flesch-Kincaid readability, dialogue proportion.
+// Upserts into BeatProseMetrics. Safe to re-run nightly. Exit 0 = success.
+if (args.Contains("--compute-metrics"))
+{
+    var sp = BuildCoreServices(args);
+    Environment.ExitCode = await BeatProseMetricsCli.RunAsync(args, sp);
+    return;
+}
+
+// ss --consistency-audit [--since <hours>]
+// Surfaces factual contradictions that span multiple story nodes by querying
+// the existing ContinuityClaims table. CPU-only — no LLM calls.
+// Exit 0 = clean, 1 = conflicts found.
+if (args.Contains("--consistency-audit"))
+{
+    var sp = BuildCoreServices(args);
+    Environment.ExitCode = await CrossStoryConsistencyAuditCli.RunAsync(args, sp);
+    return;
+}
+
+// ss --morning-report [--since <hours>]
+// Aggregates overnight findings: cross-story contradictions, new Findings,
+// prose metrics outliers, near-duplicate alerts, score correlation, leaderboard.
+// Writes HTML to PublishExportDirectory. Default window: 24h. Exit 0 always.
+if (args.Contains("--morning-report"))
+{
+    var sp = BuildCoreServices(args);
+    Environment.ExitCode = await MorningReportCli.RunAsync(args, sp);
+    return;
+}
+
 // ss --prose-health [--slug <nodeSlug>] [--json] [--out <dir>]
 // Zero-cost overnight health scan: surface stats + kNN score prediction +
 // semantic outlier detection using cached ProseEmbeddings. No API calls.

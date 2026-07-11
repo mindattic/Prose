@@ -311,6 +311,14 @@ public static class ServiceCollectionExtensions
         // PeriodicTimer-based BackgroundService — no Quartz/Hangfire dep.
         services.AddSingleton<ContinuityLongSweepService>();
 
+        // Cross-story consistency — surfaces contradictions that span multiple story nodes.
+        // CPU-only query over the existing ContinuityClaims table. Used by ss --consistency-audit.
+        services.AddSingleton<CrossStoryConsistencyService>();
+
+        // Per-beat prose quality metrics — CPU-only nightly compute (sentence stats,
+        // TTR, MTLD, Flesch-Kincaid). Used by ss --compute-metrics and ss --morning-report.
+        services.AddSingleton<BeatProseMetricsService>();
+
         // Universal KV façade over the Settings table — used by every per-book /
         // per-world JSON store that previously wrote to engine_data/*.json.
         services.AddSingleton<SettingsKvStore>();

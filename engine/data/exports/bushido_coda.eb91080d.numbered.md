@@ -5721,12 +5721,6 @@ She looked at him. "I didn't have your number."
 
 "Nobody does."
 
-That sat between them without needing to be examined. Two people in a cooler, one of them the architect and the other the building, and between them a phrase that had no referent outside the space where she'd built it and he'd been made to believe it. He had grieved a man who hadn't existed. He had trained ten thousand hours under an instruction he'd believed came from a voice he'd loved. The skills were real. The hand knew what the hand knew. The grief was also real — he'd paid it out across years, and the interest was still accruing. He wasn't certain yet what that meant and he wasn't going to be certain for a while, but sitting in the cold with the woman who had written the lesson, he understood that she had known exactly what it would cost him to read it, and she had used it anyway because there was nothing else that would have reached him.
-
-He didn't call that trust. He called it exactness. You used the tool that fit the lock.
-
-She had known the lock.
-
 The pressure changed. It wasn't a sound yet — it was a condition, the shift of a fire door opening three floors below and the building's sealed cold-chain corridors registering it as a ghost of atmosphere. His read caught it before his ears did, resolved it in the time between one heartbeat and the next: two bodies, moving with the specific gait of people who had cleared a stairwell before.
 
 Kyle was already rising.
@@ -7469,9 +7463,7 @@ Vong sat down on his prep stool and said nothing for a while. From the sub-two c
 He went upstairs and filed the documentation.
 
 [Beat 327]
-The franchise survived until noon, when Mei opened her awning an inch further left than yesterday and started the other war.
-
-Mei's Dumplings had seventeen years on Vong's franchise, a recipe that allegedly predated the zone restructuring, and a standing position that Franchise #7 was an encroachment on her base, her air rights, and her sense of how the underlevel should smell. Vong answered the awning by nudging his broth pot one inch toward the center line. By 14:00 there was a chalk line on the floor. By 15:30 there were two, with a disputed zone between them and three customers eating in the gap with the posture of people braced to be asked to choose sides.
+By 14:00 there was a chalk line on the floor. By 15:30 there were two, with a disputed zone between them and three customers eating in the gap with the posture of people braced to be asked to choose sides.
 
 Kyle was at Mei's — alternating weeks, six years, both owners aware of it — with a cut cheek and a late lunch when Mrs. Chen arrived, clearly sent for, with the expression of a woman asked to do a thing beneath her competence and above her patience.
 
@@ -7558,10 +7550,6 @@ The relay board showed all three: Zone 4, 4-A, 4-B — small, slow, paths that d
 On Morrison, a woman was walking a dog that kept trying to pull toward the middle of the block, where the 4-A schism was currently resting against the side of a dumpster, a constellation of debris orbiting it at waist height — a tin lid, a bottle cap, a length of copper wire, moving in a slow retrograde. The dog was a compact grey thing with an absolute conviction about where it wanted to go. The woman was not fighting the leash so much as holding it — a distinction Kyle recognized from years of watching people manage things they couldn't explain to a second party. She turned them both south at the corner before they reached the orbit zone.
 
 He logged a timestamp on the 4-A position and kept moving.
-
-This was the city. It had always been the city. You moved through it and it was full of things that the city had decided to absorb without explanation, and the city's absorption was total: the schisms were weather, the weather was weather, and the people on Morrison were just people with a dog on a morning when the dog wanted to go somewhere it couldn't go. Nothing distinguished it from any other Wednesday except the orbit of the tin lid and the specific way the woman held the leash.
-
-He didn't think anything else about it, because there was nothing else to think.
 
 [Beat 333]
 She was already in the lobby, finishing a warm bun from the cart two doors down. Somewhere in her mid-forties, warm-faced, field coat the brown of autumn mud. She finished the bun, brushed crumbs from her lapel, and gave him a handshake that lasted the exact professional fraction of a second — the grip of someone who'd assessed him before he crossed the lobby.
@@ -10367,35 +10355,6 @@ The door to 2W closed behind him. He didn't hold it open or check the latch. The
 He followed her.
 
 [Beat 445]
-Kyle isn't looking at the relay.
-
-The terminal is dark. Cursor blinks. He hasn't opened anything. Outside the window, GLMZ runs its late freight — the Pulse far below carrying the night's cargo at speeds the surface never sees, the low architectural hum that means nothing has gone wrong yet, the cold light of altitude bouncing off the lake basin twelve klicks east. He's on the thirty-second floor. Everything below him is the Low. He's sitting at his terminal in the same posture he'd use to brief a job he doesn't want to take.
-
-He runs the numbers.
-
-What's known: the Marrow program built composites. Sixty-four practitioners — combat architects, cognitive specialists, behavioral theorists — each contributing one domain. The committee averaged the responses and cut a Persona stack. The capstone was the mentor. They gave him a name: Seito. They gave Seito habits, a philosophy, a way of moving through a fight and a room and a conversation. Because a weapon with a conscience self-directs. A weapon that believes in its own moral framework never needs management.
-
-He'd known Seito his whole life.
-
-The mentor can't be installed after the fact. The mentor has to be there from the beginning. Which meant the install had to happen at the beginning.
-
-He stops there. He's at the edge of something.
-
-He touches the scar at the base of his skull with two fingers. It's always been there. He'd asked once, years back, the way you ask about things that stopped registering as strange. Some clinic in the low rings, some procedure he was too young to remember. The answer had always felt thin. He'd filed it as thin.
-
-He looks at the shape of the scar now. Not at the temples — the temple and crown scars are where the neuretic work went in, neat, clinical, old. This one sits at the base of the skull. Rougher than neuretic work. The kind of mark that comes from a different kind of procedure entirely.
-
-He's seen scars at that location. DataEast sim junkies, pulled out of long-run sessions that overran the interface limits. When the simulation and the nervous system lose coherence. When the mesh burns itself clean getting out.
-
-The operative word for what happens to the occupant: vacated.
-
-He runs the timeline. The burn has to be first. The Marrow install requires an empty nervous system — an existing architecture would fight the overlay. You can't install a composite over a person. You need the vessel empty. Ready. Not fighting.
-
-The burn was first.
-
-He takes his hand away from the scar. Across the room, three lumen mice are running the same twelve-inch track in the wall socket they've colonized. They don't notice him. They don't notice anything but the track.
-
-[Beat 446]
 He works it the way he'd work a scene.
 
 Atlas NeoCortex hardware — ungoverned variant, the unit Praxis doesn't sell — installed into a brain-burnt nervous system. That's not a modification. A modification needs a base. You modify a wall by adding a door. You modify a blade by changing the edge. What Praxis had was a nervous system with nothing in it, and they put software in the empty space.
@@ -10428,42 +10387,7 @@ He doesn't know if reliable is enough.
 
 He opens that question and lets it sit.
 
-[Beat 447]
-He tries to reconstruct the escape.
-
-Eleven years ago. Praxis's facility — he doesn't know where; location as control was the first operational principle, the unknown location as containment. He was inside it. And then he wasn't. That's all he has.
-
-He'd always treated the gap as damage. As something the Marrow process did to egress memory — blanking the route as a security measure. Plausible. Filed as plausible.
-
-He runs the gap against what he knows about how the entity works.
-
-He knows the signature. He's been living inside it for eleven years. Doors that open at the wrong moment. Guards with a rotation that doesn't match the schedule. Surveillance with a four-minute gap it didn't have last week. The entity doesn't manufacture these events. It reads the sequence from outside sequential time and positions Kyle at the right point when the dominoes arrive. The coincidences are real. They've been arranged.
-
-He runs the gap.
-
-He can't see the content. The memory is empty and it's going to stay empty — he's not going to get content back from a blank that was designed to be blank. What he can see is the shape. He was inside a facility that Praxis built to contain exactly what he was. Praxis is competent. It built nine Marrow subjects before him. It understood the architecture. And yet he got out.
-
-Through a gap.
-
-A gap the entity could read from 5D.
-
-A gap the entity could have arranged to open at the precise moment the program needed the subject in the field.
-
-He stops there. He has to stop. The evidence doesn't go further without him deciding what he wants it to say, and deciding what you want the evidence to say is the one thing that gets operatives killed. He doesn't know if he escaped. He can't know. The memory is gone, and the gap is exactly the shape of the entity's kind of coincidence, and he ended up in the entity's routing network three weeks after his last confirmed Praxis contact.
-
-Three weeks.
-
-He didn't find the entity. The entity found him.
-
-That's not proof. That's a data point in a system he can't fully audit from inside. The escape may have been the final install — the belief in self-determination, indistinguishable from the real thing, because a deployed weapon with authentic conviction performs better than one that knows it's deployed. He can't rule it out. The accounting doesn't let him rule it out.
-
-He lets both readings sit open.
-
-Escaped. Deployed. He doesn't close either file. The not-knowing is what he has to carry to 35th and Halsted.
-
-He's carried heavier.
-
-[Beat 448]
+[Beat 446]
 He sits with the terminal dark for a long time.
 
 The facts: he is a construction. The escape may have been a deployment. He has been running the entity's contracts for eleven years, and those contracts built him into the specific instrument the entity needed him to be. He carries sixty-four practitioners' best work and a stranger's vacated nervous system and an Atlas NeoCortex that is slowly burning through its host. He can't prove he's a person. He's done the full accounting. The accounting doesn't return a proof.
@@ -10498,7 +10422,7 @@ That's enough to go on.
 
 He clips the holster. He leaves the terminal dark.
 
-[Beat 449]
+[Beat 447]
 She was behind him at the perimeter fence. He had not told her where he was going. He had not told her anything.
 
 He turned.
@@ -10519,7 +10443,7 @@ The beacon. Three months ago, under the battery tray, she had installed it and d
 
 She turned and walked back the way she had come without explaining anything.
 
-[Beat 450]
+[Beat 448]
 The casing was half-buried in gravel at the edge of the exclusion zone, one of three that had rolled under the cordon fencing when whoever dropped it moved on. Kyle crouched. Turned it between two fingers.
 
 His neuretics flagged it before he finished reading the stamp.
@@ -10540,7 +10464,7 @@ He'd been on Able's map since the fledgling chase. Everything he'd moved through
 
 Cacophony was holstered. Silence was clipped. He stood and kept walking.
 
-[Beat 451]
+[Beat 449]
 The exclusion zone had a smell. Not the gray zone's usual diesel and algae, not the carbon residue of Block War, but something older than both — dry, settled, the specific quality of a room that had been sealed before he was born and had not moved its air since. The city was ten minutes behind him. Here the city was a rumor.
 
 Kyle walked in through the perimeter breach point he had catalogued on the way to the first beat and did not hurry. The pavement beneath him ran half a second behind where his eyes said it ought to be — not a parliament fault, not the neuretics failing, just the zone doing what it did to distance and the way surfaces agreed to present themselves to people moving through them. He had been through this cross-section once, involuntarily, at speed, with a child on the pillion behind him and the thing at the center already reading both of them. This time he was here with a job.
@@ -10561,7 +10485,7 @@ He was at the threshold. He had a job.
 
 He kept walking.
 
-[Beat 452]
+[Beat 450]
 They came from two directions. East approach first: three, tight interval spacing, the equipment weight visible in how they handled the gap in the fencing — plate carriers, suppression hardware with the angular profile of high-end military stock, and on each hip, flush-mounted in sealed retention, a neuro-disruptor in a clinical holster. West: two more. Same kit, same interval, the coordination of people who had been briefed on exactly what they were doing and exactly what they were retrieving.
 
 He read the neuro-disruptors and understood the mission.
@@ -10576,7 +10500,7 @@ He had Silence in hand before they finished the crossing. The blade caught no li
 
 They did not leave.
 
-[Beat 453]
+[Beat 451]
 The first one came wide, arms configured for the clinch — taller than the others, a cracked visor lens on the left side. Kyle broke the wrist going in — not breaking it clean, using the joint to redirect — stepped hard left and let the second one's suppression burst discharge into the space where his sternum had been.
 
 The burst hit the first one across the shoulder housing instead. The first one went down from his own partner's equipment.
@@ -10605,7 +10529,7 @@ They walked.
 
 He had been faster. Barely. He had taken damage at the hip and shoulder from the correct form and from the code's preferred line. The parliament ran the accounting without his asking. Both items filed under: paid.
 
-[Beat 454]
+[Beat 452]
 Three more came in from the south. Fresher. A staged entry, reserves held past the perimeter until the first wave reported. He did not know what the first wave had reported. He could read it from the equipment configuration: these three came in with actual weapons up and calibrated for stop, not suppress, which meant the mission parameters had been amended. They had received the two who walked. They had adjusted.
 
 Still not kill orders. He could see it in the calibration. There was a difference in how a weapon was held when the order was terminate and when the order was stop-and-hold. These were stop-and-hold. He filed it and moved.
@@ -10636,7 +10560,7 @@ He had what he had. He had bled in two places he hadn't needed to bleed, and he 
 
 He turned toward the Gingerbread House.
 
-[Beat 455]
+[Beat 453]
 The zone had gone quiet in the way that a room goes quiet when you understand, midway through it, that it has been waiting for you specifically.
 
 The 17-19 Hz signature was not present. Not suppressed — absent. He had carried that frequency as background since the Cinderfall, since the 127 seconds in the Ghost Period when the relay had stopped and the channel had opened and the entity had come to the boundary of what his hardware could handle and told him, in the flattest possible register, the conditions of his situation. The frequency had been in his bones for eleven years. He had stopped noticing it the way you stopped noticing your own heartbeat.
@@ -10659,7 +10583,7 @@ He stepped to the threshold.
 
 He let the channel open.
 
-[Beat 456]
+[Beat 454]
 The first thing that happened was nothing.
 
 Not darkness. Not the absence of sensation. The specific quality of a channel when what is coming is too large for any translation architecture and has abandoned translation for arrival. Kyle felt his parliament stagger — not fail, stagger, the way sixty-four processes lock on the same step simultaneously — and then collect and run harder than it had run since the Cinderfall. Not collapsing. Doing what it was for.
@@ -10710,7 +10634,7 @@ Both. Still both. They had always been both.
 
 He came back. His feet were on the ground. His parliament ran.
 
-[Beat 457]
+[Beat 455]
 The zone went quiet at the edges first.
 
 Not a sound — a cessation. The kind that registers because the nervous system has been tracking something long enough that its absence becomes a presence of its own. Kyle stood where he had stood and the 17-19 Hz signature stepped down through its harmonics the way a struck glass works toward silence — not cut off, not extinguished, arriving at the end of what was sustaining it. He had heard this specific frequency for eleven years. He recognized the last note.
@@ -10735,7 +10659,7 @@ His left hip stiffened on the third step and held stiff. He walked through it. T
 
 He walked into it. He was operational.
 
-[Beat 458]
+[Beat 456]
 The door to 2W was unlocked, which was how he had left it.
 
 Kyle stood inside the threshold and did a room check. Not threat assessment — he knew there was no threat. The kind of check you ran because the body ran it for you, because eleven years had made it automatic before you decided it should be. The results came back the same as they always did, except for the mice.
@@ -10756,7 +10680,7 @@ The room asked nothing from him.
 
 That was almost too much.
 
-[Beat 459]
+[Beat 457]
 One knock. Not twice.
 
 He heard her footsteps before it — through the shared wall, the specific interval he had catalogued without meaning to in the four years she had been across the hall. The step-pause-step of someone who moved through a workspace without looking down because they had memorized the floor plan. The sound of something being set down, and then picked back up. Then her door, the hall, the knock.
