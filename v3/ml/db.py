@@ -21,7 +21,13 @@ def get_connection():
 
 def fetchdf(conn, sql: str, params=()) -> pd.DataFrame:
     """Execute SQL and return a pandas DataFrame."""
-    return pd.read_sql(sql, conn, params=params if params else None)
+    cursor = conn.cursor()
+    if params:
+        cursor.execute(sql, params)
+    else:
+        cursor.execute(sql)
+    cols = [col[0] for col in cursor.description]
+    return pd.DataFrame(cursor.fetchall(), columns=cols)
 
 
 def execute(conn, sql: str, params=()) -> None:
