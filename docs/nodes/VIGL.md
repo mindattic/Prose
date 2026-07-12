@@ -606,13 +606,43 @@ boundary is the same moment seen from inside vs. outside.
 
 ### The Scribe's Thread (4 chapters — concurrent with A-plot) {#SS-VIGL-9c}
 
-**Who she is:** Lyra's younger sister (or cousin — confirm before entity seeding; name TBD,
-Ocipheus-origin). She joined Liturgy service as a canonical Scribe — she copies and notarizes
+**Who she is:** Lyra's younger sister. Name: **Vega** — named for the bright star in the Lyra
+constellation, which is an Ocipheus family thing to do. Ocipheus-origin. Twenty-six years old
+(Lyra is forty-four). She joined Liturgy service as a canonical Scribe — she copies and notarizes
 canonical instruments: the official authorizations that make Liturgy operations legal. She took
 the Scribe's vow because Lyra took the Templar's vow and the Liturgy was the world Lyra
 believed in and the Scribe believed in Lyra.
 
 She is three years into the position. She is good at it. She does not know yet what she has signed.
+
+**The opening scene (Chapter 1, before the theft):**
+
+Vega is at the Ocipheus Station on a routine scribing contract — notarizing the vigil archive's
+annual certification instruments, a two-day job she took partly because it gave her an excuse
+to see her sister. The evening before Lyra leaves for the Sinter Wall emergency, they sit together
+in the station's lower common room — off-duty soldiers' space, not the formal archive, which is
+the point — and drink whatever the station keeps for long-watch nights (something warm, local,
+not good enough to save for occasions). They argue about something trivial and both immediately
+lose track of what. Vega does an impression of the Canon Immaculate's official correspondence
+style that makes Lyra nearly choke. Lyra tells a story from the Schmalburg posting, ten years
+ago, that she has told before and Vega has heard before and neither of them cares.
+
+They do not say anything important. This is the point. They are sisters at the end of an ordinary
+evening before an ordinary emergency posting, and the thing the reader needs to know is that
+this is what they are when nobody is watching: warm, stupid with each other, slightly drunk,
+entirely themselves.
+
+Lyra sets out before dawn. Vega is still asleep. She leaves a note on the scribing table:
+*back in three days, don't eat the station bread*.
+
+She is back in four days. The archive is empty. Three guards are dead. The note is still on the table.
+
+Chapter 1 runs as: evening scene (the sisters; the drink; the impression; the story) → four-day
+ellipsis → dawn return → the dead archive → Orim in the corner.
+
+Vega has already left the station by then — her contract was complete. She is back in the Liturgy's
+central office, two hundred kilometers south, when Lyra finds the archive empty. She will not
+know what happened for three weeks, when S1 puts Lyra's transit suspension paperwork on her desk.
 
 **Her function in the plot:**
 
@@ -677,7 +707,7 @@ in one moment what her sister has understood for weeks.
 
 | Ch | Thread | Title |
 |---|---|---|
-| 1 | LYRA | Three Bodies and an Empty Case |
+| 1 | LYRA | Three Bodies and an Empty Case *(opens: evening with Vega — the sisters, the drink, the note; then dawn, the dead archive)* |
 | 2 | LYRA | The Wall from Outside — Refused |
 | 3 | ROWE | The Mill — Sphere 31 |
 | 4 | SCRIBE | The Authorization |
@@ -740,7 +770,7 @@ in one moment what her sister has understood for weeks.
 ## 11. User Stories {#SS-VIGL-11}
 
 - **VIGL-US-1 ⬜** Core entities seeded: all characters (Lyra as Liturgy Templar, Rowe, Kressida, Tavar as
-  Lacerta spy, Orim, Owain, Prelacze, Ardea, the Scribe — name TBD, Lyra's sister or cousin), places,
+  Lacerta spy, Orim, Owain, Prelacze, Ardea, Vega — Lyra's little sister, Liturgy Scribe), places,
   factions, weapons, armor, pharmaceuticals, flora, fauna, species compendium (~60+).
 - **VIGL-US-2 ✅** StoryNode `VIGL` exists in DB; slug = `the-vigil-s-end-019f5767`; universe = fantasy.
 - **VIGL-US-3 ⬜** ChapterNodes created: 16 Lyra chapters + 7 B-plot chapters (R1, R2, R3, S1, S2, S3, S4)
