@@ -45,26 +45,34 @@ The party assembles as Lyra crosses the Cauld — one member per leg of the jour
 showing the system at work on a specific kind of person.
 
 ### Dame Lyra M-101 — POV {#SS-VIGL-1a}
-- **House:** Ocipheus
-- **Rank:** Knight (designation M-101); three infusions; closing on Paladin
-- **Physical:** ~6'5" currently; lean functional build (not mass, endurance); dark; the
-  Transmutation has been overwhelmingly positive for her — she has no meaningful setback to
-  compare it against. Each infusion was awarded for distinguished service and survived. She
-  does not perform loyalty; she is loyal. This makes her advocacy for Transmutation genuine.
-- **Role:** Transmutation researcher and certified practitioner. Long-watch vigil at the
-  Ocipheus Station membrane boundary.
+- **Institutional affiliation:** The Liturgy — she is a **Templar**, not a House Knight.
+  The Liturgy is the overarching institution (the Church, in rough analogy); the Houses are
+  the nations. Templars serve the Liturgy's mission across House borders. Lyra is stationed
+  at the Ocipheus vigil archive because the Relic is a Liturgy concern, not because her
+  loyalty runs to House Ocipheus. She is Ocipheus-born but the House does not command her.
+  The Canon Immaculate commands her. This is the chain she breaks at the end.
+- **Rank:** Dame (designation M-101); three infusions; closing on Paladin (Liturgy rank ladder)
+- **Physical:** ~6'5"; lean functional build (endurance, not mass); dark complexion; the
+  Transmutation has been overwhelmingly good for her — each infusion was awarded for
+  distinguished service and survived. She does not perform loyalty; she is loyal. This
+  makes her advocacy for Transmutation genuine and therefore devastating when it starts
+  to hollow out.
+- **Role:** Transmutation researcher and certified practitioner; long-watch vigil at the
+  Ocipheus Station membrane boundary — a Liturgy-administered installation.
 - **Register:** Formal and precise. She thinks in research notation. She observes everything.
-  She has a researcher's itch for data that does not honor institutional categories. This
-  is what saves her from pure ideology: she cannot stop noticing things.
-- **The arc:** She begins the book as the most loyal Knight Ocipheus has. She ends it as the
-  most dangerous thing the Liturgy has encountered in a generation: a practitioner who has
-  seen the apparatus clearly and refused its authority.
-- **Weapons:** Dissolution Blade (Ocipheus service weapon — narrow double-edge, Catalyst
-  compound bleeds into wounds, inhibits coagulation); Ocipheus Vigil Shield (round, steel
-  core with a resin-hardened surface treatment that dampens membrane-proximity attunement
-  and resists alchemical splash — vigil practitioners use it as instrument as much as
-  defense). Half-plate, not full. White and Black Tincture field kit; Grey Tincture;
-  Gold Tincture (emergency, one dose, requires annual re-certification to carry).
+  She has a researcher's itch for data that does not honor institutional categories. This is
+  what saves her from pure ideology: she cannot stop noticing things even when noticing is costly.
+- **The arc:** She begins the book as a true believer — not performed loyalty but actual faith.
+  She has built her entire identity on the Liturgy's mission. She ends the book as the most
+  dangerous thing the Liturgy has encountered in a generation: a Templar who has seen the
+  apparatus clearly and refused direct authority from a Canon. She is not yet someone else.
+  She is only no longer who she was. That is sufficient for one book.
+- **Weapons:** Dissolution Blade (Liturgy Templar service weapon — narrow double-edge, Catalyst
+  compound in ceramic channels bleeds into wounds and inhibits coagulation); Vigil Shield (round,
+  steel core with resin-hardened surface treatment that dampens membrane-proximity attunement
+  and resists alchemical splash — vigil operators use it as instrument as much as defense).
+  Half-plate, not full (she left her full Vigil plate at the Station). White and Black Tincture
+  field kit; Grey Tincture; Gold Tincture (one emergency dose, requires annual re-certification).
 
 ### Orim Zebulun — The Minor Scryer {#SS-VIGL-1b}
 - **House:** None. Calyx origin, long-since contract-independent.
@@ -252,17 +260,22 @@ showing the system at work on a specific kind of person.
 ## 2. The Antagonists {#SS-VIGL-2}
 
 ### Canon Immaculate Tomasz Prelacze {#SS-VIGL-2a}
-- **Role:** Liturgy Canon; high administrative rank; technically outranks any Knight in any House.
+- **Role:** Liturgy Canon — Lyra's institutional chain of command. He outranks her. When he
+  issues the writ at the end of the book, he is not exceeding his authority; he has it. She
+  refuses it anyway. This is what the book has been building toward.
 - **His goal:** Obtain the Oculus Memoriae and use it to observe the Sinter Meteor Event of
   Year 1079 — the Relic has been watching since Year 397; it has the event on record. He
-  believes the footage will prove that the Liturgy's founders had foreknowledge of the Meteor
-  Event and chose to let Sinter fall rather than warn them. This knowledge is leverage.
-  What he intends to do with it he has not fully decided.
-- **Why he commissioned the theft rather than a formal request:** A formal request would
-  require disclosing what he wants to look at. He cannot disclose what he wants to look at
-  without implicating the Liturgy's founding records. The theft was the only clean option.
-- **Register:** Institutional and polished. He does not threaten; he cites authority. The
-  authority is real. He is not wrong to cite it. He is wrong about what the authority is for.
+  believes the record will prove that the Liturgy's founders had foreknowledge of the Meteor
+  Event and chose not to warn Sinter. This knowledge is leverage over the current Liturgy
+  leadership. What he intends to do with that leverage he has not fully decided.
+- **Why the theft rather than a formal request:** A formal request would require disclosing
+  what he wants to see. He cannot disclose what he wants to see without implicating the
+  Liturgy's founding records. He could not get the Relic through legitimate channels.
+- **His belief:** He is not wrong that the Liturgy covered something up. He is wrong about
+  what the cover-up means and who it gives him the right to be. He thinks the leverage will
+  fix the institution. He has not considered that the institution might not be fixable.
+- **Register:** Institutional and polished. Does not threaten; cites authority. The authority
+  is real. He is not wrong to cite it. He is wrong about what the authority is for.
 
 ### Owain Caerglas {#SS-VIGL-2b}
 - **Role:** Pallor Knight, theft squad leader. Two infusions. Competent, loyal, doing his job.
@@ -493,40 +506,122 @@ by name or given dialogue.
 
 ## 8. Register and Voice {#SS-VIGL-8}
 
-**Buehlman (*Between Two Fires*), not Gibson.** Medieval-formal register + clinical technical
-notation intrusions (Scry data blocks, alchemy tincture notation, Heloth maintenance logs).
+**Models:** Christopher Buehlman's *The Blacktongue Thief* and *Between Two Fires* — NOT
+Tolkien, NOT GRRM, NOT Kyle's GLMZ voice. Every sentence that reads like noir, heist, or
+modern thriller is wrong. Every sentence that could exist in a book where people pray to
+something that might be listening and probably doesn't care is right.
 
-**Close third, Lyra's POV.** She is a researcher. She observes. She catalogs. She has
-practitioner precision with words and will notice the wrong word when it is used. Her prose
-voice is formal without being stiff — she has warmth, she has humor, but both are her own
-kind, not performed for the room.
+**This is a SCARY world.** The membrane is not wonder — it is a wound that bleeds things that
+cannot survive here. The Sinter zone produces chest-deep wrongness that soldiers describe as
+*the ground paying attention*, not awe. The Eaters of Monsters are what the Liturgy left to
+happen after leaving eleven hundred people to die for three weeks and then executing the
+survivors for their methods. Terrifying. Correctly so.
 
-**The arc of her register:** She begins the book using institutional language without
-thinking about it. By the end, certain words she has always used without thought have become
-visible to her as words, and she notices herself using them and knows that she is choosing to
-use them or choosing not to.
+**What this means for the prose:**
+- Earthy, physical, unglamorous. Characters smell things. Cold is cold; it also makes your
+  fingers stop working. Wounds are described in terms of what the body does with them.
+- Violence is quick and costs more than it resolves. Ardea's death takes thirty seconds.
+- No false heroism. Lyra is formidable but not mythologized. She makes decisions under pressure.
+- Gallows humor is armor, not wit — Orim deploys it; Tavar deploys it. Neither wears it as performance.
+- The dark humor is sparse and specific: one line per situation that earns it, not scattered quips.
 
-**Orim's register:** Dry, observational, full of specifics. He talks about food, exits,
-where the road floods, what the local saying is for rain. He is not sentimental. He is
-genuinely fond of the world he has spent sixty years in. Both things are true.
+**The wrong sentence:** "She was tired in the way that follows sustained attention: not depleted,
+just used up." — this is Kyle. Modern. Compressed. Wrong.
 
-**Rowe's register:** Halting, wrong tenses, occasionally backwards, sometimes brilliant
-when he finds the right Cauld word for something his language handles more elegantly. His
-growing facility with Cauld is tracked across the book: four words by Beat 5, full sentences
-by Beat 10, a proper name (Aldenvast) at the end.
+**The right sentence:** "Four days on the courier had left her with a particular kind of emptiness.
+The machine's gait was designed for ground-eating, not for the body that had to survive it. Her
+hips ached in the specific way that meant the next two days were going to be worse."
 
-**Kressida's register:** Short, functional, Atrament-practical. She calls things what they
-are. She does not use metaphor. She is the most literal person in the party and the one
-who says the most exact things.
+**Close third, Lyra's POV (A-plot).** She thinks in research notation. She observes everything.
+Her voice is formal without stiffness — she has warmth and dry humor, but both are her own kind.
 
-**Tavar's register:** Laconic and pleasurably indirect. He implies rather than states. He
-finds things interesting rather than alarming. He refers to himself in the third person
-occasionally when discussing his own decisions: *Tavar doesn't carry passengers who don't
-know their destination.* Then he carries them.
+**The arc of her register:** She begins using institutional language without awareness. By the
+end, certain words have become visible to her as words she is choosing to use or not use.
+The final scene — vigil room, membrane, watching — is where the register settles into something
+that has no institutional name yet.
+
+**B-plot registers:**
+- **Rowe:** Halting, wrong tenses, occasionally backwards, sometimes startlingly exact when he
+  finds the right Cauld word for something his own language handles more elegantly. His growing
+  Cauld is tracked: four words by Chapter 9, full sentences by Chapter 16, a proper name
+  (Aldenvast) at the final scene. His POV chapters (before he has Cauld) are rendered in his
+  own language's thought-patterns — concrete, sensory, non-abstract, present-tense urgency
+  even in past-tense narration.
+- **Owain:** Close to Lyra's construction (full sentences, elevated) but different weather.
+  Where Lyra is certain and methodical, Owain is watchful and routes his questions inward.
+  His register has a quality of formal accuracy about things he does not fully trust.
+
+**Other party registers:**
+- **Orim:** Dry, observational, specificities of place and exit routes. Genuinely curious,
+  sentimentally attached to nothing. Dark humor as armor.
+- **Kressida:** Short, functional, Atrament-practical. Calls things what they are. No metaphor.
+  The most literal person in the party; says the most exact things.
+- **Tavar:** Laconic, pleasurably indirect. Implies rather than states. Finds things interesting
+  rather than alarming. Refers to himself in third person occasionally: *Tavar doesn't carry
+  passengers who don't know their destination.* Then he carries them.
 
 ---
 
-## 9. Narrative Locks {#SS-VIGL-9}
+## 9. B-Plot Design — Two Threads {#SS-VIGL-9b}
+
+The novel has 21 chapters: 14 Lyra chapters (A-plot) + 3 Rowe chapters + 4 Owain chapters.
+The Rowe and Owain chapters intercut the A-plot in the order defined in the plan file.
+
+### Rowe's Thread (3 chapters — all flashback)
+
+**R1 — The Mill: Sphere 31** (between A-chapters 1–2)
+Sphere 31. The textile city. A Thursday morning in autumn. The chapter establishes his life
+before the Taking — the specific quality of the light, the equipment oil smell, the loom floor
+at full capacity, the walk home past the canal, what he eats for breakfast. Ends on a moment
+of normalcy: he is at the machinery, the morning shift is half-done, nothing is wrong.
+
+**R2 — The Taking** (between A-chapters 3–4)
+Continues directly from R1. The ground stops being the ground. Rendered from inside the
+experience without the interpretive frame: the stone room, the robed figures, the mouth moving
+before he has language for what it is saying. He does not understand what has happened. The
+chapter does not explain it to the reader either — the reader understands; Rowe does not.
+
+**R3 — Seven Months** (between A-chapters 7–8)
+Vierna barracks. Seven months compressed. The bolt-action rifles: he recognizes them as a
+later generation of something his world made. His world built the prototypes. The Cauld uses
+the finished form. The desertion: the crossfire he was ordered into, nobody recognizable on
+either side, nothing he owed allegiance to. He walks out of the battle line.
+**Ends in the grain bin** — exactly where A-chapter 7 (Rowe Found) begins. The chapter
+boundary is the same moment seen from inside vs. outside.
+
+### Owain's Thread (4 chapters — concurrent with A-plot)
+
+**O1 — The Commission** (concurrent with A-chapters 1–2)
+The Prelacze letter arrives at Owain's Pallor posting three weeks before the theft. The
+commission, what he was told vs. what was true, squad assembly, the sea crossing to Ocipheus,
+the theft from inside the operation. He is good at this. The theft goes cleanly. What the reader
+sees: the archive robbery that opened A-chapter 1, rendered from the other side.
+
+**O2 — The Flight** (concurrent with A-chapters 8–10)
+The journey back with the Relic. The Relic does something unexpected: he becomes aware of being
+observed by what he is carrying. Not visions — more like the knowledge that the object has a
+perspective on being carried. He delivers it to a Liturgy factor in Pallor (not to Prelacze
+directly — institutional deniability). He is given orders to hold the moor and intercept pursuit.
+By the end: he knows the Relic is not what he was told, the commission is not a correction,
+and pursuit is coming.
+
+**O3 — Waiting at Caer Glas Moor** (concurrent with A-chapters 11–13)
+Three weeks on the northern coast. The factor has not confirmed receipt. The Long Seat has not
+acknowledged the arrangement. He realizes he has been positioned as the deniable layer — if
+pursuit reaches Pallor, he is what they find. The Canon's name is on nothing. He decides: if he
+is the answer, he will be an accurate one. He will name Prelacze when Lyra has him down.
+
+**O4 — After: The Long Seat** (concurrent with A-chapters 18–19)
+After A-chapter 17 (Lyra defeats him), Owain goes to the Long Seat. The conversation: what he
+tells them, what they already know, what they say. The Long Seat has been watching longer than
+Owain has been alive. They allowed the Canon's operation to proceed because they needed to see
+the full shape of it before acting. Owain is, structurally, their instrument too.
+The chapter ends with him outside the map room, looking at the sea. He does not know yet who
+he is when he is not his commission. That question will take longer than one sitting.
+
+---
+
+## 10. Narrative Locks {#SS-VIGL-9}
 
 1. **Lyra never confirms the membrane is alive.** She notices, accumulates, suspects. The reader sees it.
 2. **Rowe's origin world is Sphere 31** but its geography, culture, and name in his own language
@@ -545,12 +640,12 @@ know their destination.* Then he carries them.
 
 ---
 
-## 10. User Stories {#SS-VIGL-10}
+## 11. User Stories {#SS-VIGL-11}
 
-- **VIGL-US-1 ⬜** Core entities seeded: all characters, places, factions, weapons, armor, pharmaceuticals, flora, fauna.
-- **VIGL-US-2 ✅** StoryNode `VIGL` created in DB; slug = `the-vigil-s-end-019f5767`; universe = fantasy.
-- **VIGL-US-3 ⬜** ChapterNodes created (minimum 14; one per authorial beat).
-- **VIGL-US-4 ⬜** Structural blueprint generated (`ss --generate-blueprint --slug <slug>`).
-- **VIGL-US-5 ⬜** Prose beats written: all 14 authorial beats, ~200 prose beats total, ~100,000 words.
-- **VIGL-US-6 ⬜** Logic sweep clean (0 BLOCKERs).
-- **VIGL-US-7 ⬜** Docx exported.
+- **VIGL-US-1 ⬜** Core entities seeded: all characters (Lyra as Liturgy Templar, Rowe, Kressida, Tavar, Orim, Owain, Prelacze, Ardea), places, factions, weapons, armor, pharmaceuticals, flora, fauna, species compendium (~60+).
+- **VIGL-US-2 ✅** StoryNode `VIGL` exists in DB; slug = `the-vigil-s-end-019f5767`; universe = fantasy.
+- **VIGL-US-3 ⬜** ChapterNodes created: 14 Lyra chapters + 7 B-plot chapters (R1, R2, R3, O1, O2, O3, O4) = 21 total. SortKeys assign correct intercut order.
+- **VIGL-US-4 ⬜** Structural blueprint regenerated after ChapterNodes created.
+- **VIGL-US-5 ⬜** All 21 chapters written in Blacktongue Thief / Between Two Fires register (~100,000 words). Existing 14 Lyra chapters rewritten from Kyle's register.
+- **VIGL-US-6 ⬜** Logic sweep clean (0 BLOCKERs). Lyra identified as Liturgy Templar throughout.
+- **VIGL-US-7 ⬜** V3.docx exported to `R:\Desktop\EPub\MindAttic\Fantasy\The Vigils End\`.
