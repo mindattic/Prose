@@ -126,7 +126,7 @@ public class NodeReviewService
         return new ReviewRoute(
             cloudLlm,
             ReviewProviderIds(allowedProvidersOverride),
-            MaxConcurrency,
+            cfg.MaxConcurrency ?? MaxConcurrency,
             ResolveKey,
             modelFor);
     }

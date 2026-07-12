@@ -1,10 +1,10 @@
 {
   "votingEnabled": false,
-  "voters": ["claude-api"],
-  "judge": "claude-api",
+  "voters": ["claude-team"],
+  "judge": "claude-team",
+  "maxConcurrency": 3,
   "models": {
-    "claude-team": "claude-sonnet-4-6",
-    "claude-api": "claude-sonnet-4-6",
-    "gemini": "gemini-2.5-flash"
+    "claude-team": "claude-sonnet-5",
+    "claude-api": "claude-sonnet-5",
   }
 }
