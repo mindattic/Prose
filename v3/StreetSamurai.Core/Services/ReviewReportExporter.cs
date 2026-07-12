@@ -100,7 +100,8 @@ public sealed class ReviewReportExporter
     {
         if (input.Reviews.Count == 0) return (null, null);
 
-        var json = BuildJson(input);
+        var beatMeta = await FetchBeatMetaAsync(input.NodeId, input.BeatCount, ct);
+        var json = BuildJson(input, beatMeta);
 
         var dir = await NodePublishDirAsync(input.NodeId, input.Title, ct);
         Directory.CreateDirectory(dir);
@@ -116,9 +117,39 @@ public sealed class ReviewReportExporter
         return (jsonPath, htmPath);
     }
 
+    // ── Beat metadata ─────────────────────────────────────────────────────────
+
+    private sealed record BeatMeta(int Number, string? Title);
+
+    /// <summary>Fetches the global beat number + optional title for every enabled beat
+    /// in the node, keyed by 1-based positional index (the same index NodeMarkdownExporter
+    /// uses when generating review prompts). Returns an empty dict on any error so the
+    /// report still exports without beat titles.</summary>
+    private async Task<Dictionary<int, BeatMeta>> FetchBeatMetaAsync(
+        Guid nodeId, int beatCount, CancellationToken ct)
+    {
+        try
+        {
+            await using var db = await dbFactory.CreateDbContextAsync(ct);
+            var rows = await (
+                from bn in db.BeatNodes
+                join b in db.Beats on bn.BeatId equals b.Id
+                where bn.NodeId == nodeId && bn.IsEnabled
+                orderby bn.SortKey
+                select new { b.Number, b.Title }
+            ).ToListAsync(ct);
+
+            var result = new Dictionary<int, BeatMeta>();
+            for (int i = 0; i < rows.Count && i < beatCount; i++)
+                result[i + 1] = new BeatMeta(rows[i].Number, rows[i].Title);
+            return result;
+        }
+        catch { return new Dictionary<int, BeatMeta>(); }
+    }
+
     // ── JSON model ────────────────────────────────────────────────────────────
 
-    private static string BuildJson(ReportInput input)
+    private static string BuildJson(ReportInput input, Dictionary<int, BeatMeta> beatMeta)
     {
         var reviews = input.Reviews;
         int beatCount = input.BeatCount;
@@ -143,9 +174,12 @@ public sealed class ReviewReportExporter
                 .Select(g => g.Average(r => (double)r.BeatScores.First(b => b.BeatNumber == p).Score))
                 .ToList();
             bool contested = byCluster.Count >= 2 && (byCluster.Max() - byCluster.Min()) >= 1.2;
+            beatMeta.TryGetValue(p, out var meta);
             beats.Add(new
             {
                 n = p,
+                num = meta?.Number,       // global Beat.Number shown in the UI
+                title = meta?.Title,      // optional short beat label
                 mean = Math.Round(v.Average(), 2),
                 min = v.Min(),
                 max = v.Max(),
@@ -309,7 +343,7 @@ public sealed class ReviewReportExporter
 </header>
 <main>
   <section class="panel">
-    <h2>Per-beat heat <span class="muted" style="text-transform:none">(mean of 1–5 ballots · red outline = clusters disagree · hover for range)</span></h2>
+    <h2>Per-beat heat <span class="muted" style="text-transform:none">(mean score 1–5 · color = quality · red outline = readers split, not a bad beat · hover for detail)</span></h2>
     <div class="heat" id="heat"></div>
   </section>
   <section class="panel">
@@ -355,9 +389,13 @@ const heatColor = m => { const t=Math.max(0,Math.min(1,(m-1)/4)); const r=Math.r
 })();
 
 // Per-beat heat strip
+const beatByPos={};
+DATA.beats.forEach(b=>{beatByPos[b.n]=b;});
 $('#heat').innerHTML = DATA.beats.map(b=>{
   const c=heatColor(b.mean);
-  return `<div class="cell ${b.contested?'contested':''}" style="background:${c}" title="Beat ${b.n}: mean ${b.mean} (min ${b.min}, max ${b.max}, n=${b.count})${b.contested?' — CONTESTED':''}">${b.n}</div>`;
+  const label=b.num??b.n;
+  const titleLine=b.title?` — ${b.title}`:'';
+  return `<div class="cell ${b.contested?'contested':''}" style="background:${c}" title="Beat ${label}${titleLine}: mean ${b.mean} (min ${b.min}, max ${b.max}, n=${b.count})${b.contested?' · readers split (clusters diverge ≥1.2)':''}">${label}</div>`;
 }).join('') || '<span class="muted">No per-beat scores in this run.</span>';
 
 // Complaint bars
@@ -391,7 +429,7 @@ function render(){
   $('#count').textContent = `${rows.length} of ${DATA.voters.length} voters`;
   $('#rows').innerHTML = rows.map((v,i)=>{
     const beats=Object.entries(v.beatScores||{});
-    const chips=beats.map(([n,s])=>`<span class="chip" style="background:${heatColor(s)}" title="Beat ${n}: ${s}/5">${n}</span>`).join('');
+    const chips=beats.map(([n,s])=>{const bm=beatByPos[+n];const label=bm?.num??n;const tl=bm?.title?` — ${bm.title}`:'';return `<span class="chip" style="background:${heatColor(s)}" title="Beat ${label}${tl}: ${s}/5">${label}</span>`;}).join('');
     const detail=`<tr class="detail" id="d${i}" style="display:none"><td colspan="6">`+
       (v.blurb?`<div class="muted" style="font-style:italic;margin-bottom:.35rem">${esc(v.blurb)}</div>`:'')+
       (v.review?`<div class="rev">${esc(v.review)}</div>`:'')+
