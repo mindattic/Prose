@@ -564,60 +564,144 @@ that has no institutional name yet.
 
 ## 9. B-Plot Design — Two Threads {#SS-VIGL-9b}
 
-The novel has 21 chapters: 14 Lyra chapters (A-plot) + 3 Rowe chapters + 4 Owain chapters.
-The Rowe and Owain chapters intercut the A-plot in the order defined in the plan file.
+**REVISED 2026-07-12.** Owain's thread (4 chapters) replaced with the Scribe's thread.
+The novel now has 23 chapters: 16 Lyra chapters (A-plot, including the steal-the-airship chapter
+and the Sinter zone chapter) + 3 Rowe chapters + 4 Scribe chapters.
+
+**Sinter is the climactic final destination** — not an Act 1 transit point. Prelacze suspended
+Lyra's Wall transit authority when he learned she was in pursuit; she cannot cross through Sinter
+territory on the outward leg. She bypasses west (through Lacerta approaches, then north through
+Atrament and Fjorheim). The return is a race directly into Sinter, driven by the Long Seat's
+eighth theory. All parties converge at the Sinter crater aperture for the climax.
+
+**Tavar redesigned as a Lacerta intelligence operative**, not an airship captain. He knows where
+a Liturgy supply vessel is moored (Wall garrison rotation). The party acquires it by night operation
+— Kressida flies the machine. The stolen vessel becomes the airship they cross the channel in.
+
+---
 
 ### Rowe's Thread (3 chapters — all flashback)
 
-**R1 — The Mill: Sphere 31** (between A-chapters 1–2)
+**R1 — The Mill: Sphere 31** (between A-chapters 3–4)
 Sphere 31. The textile city. A Thursday morning in autumn. The chapter establishes his life
 before the Taking — the specific quality of the light, the equipment oil smell, the loom floor
 at full capacity, the walk home past the canal, what he eats for breakfast. Ends on a moment
 of normalcy: he is at the machinery, the morning shift is half-done, nothing is wrong.
 
-**R2 — The Taking** (between A-chapters 3–4)
+**R2 — The Taking** (between A-chapters 5–6)
 Continues directly from R1. The ground stops being the ground. Rendered from inside the
 experience without the interpretive frame: the stone room, the robed figures, the mouth moving
 before he has language for what it is saying. He does not understand what has happened. The
 chapter does not explain it to the reader either — the reader understands; Rowe does not.
 
-**R3 — Seven Months** (between A-chapters 7–8)
+**R3 — Seven Months** (between A-chapters 9–10)
 Vierna barracks. Seven months compressed. The bolt-action rifles: he recognizes them as a
 later generation of something his world made. His world built the prototypes. The Cauld uses
 the finished form. The desertion: the crossfire he was ordered into, nobody recognizable on
 either side, nothing he owed allegiance to. He walks out of the battle line.
-**Ends in the grain bin** — exactly where A-chapter 7 (Rowe Found) begins. The chapter
+**Ends in the grain bin** — exactly where A-chapter 8 (Rowe Found) begins. The chapter
 boundary is the same moment seen from inside vs. outside.
 
-### Owain's Thread (4 chapters — concurrent with A-plot)
+---
 
-**O1 — The Commission** (concurrent with A-chapters 1–2)
-The Prelacze letter arrives at Owain's Pallor posting three weeks before the theft. The
-commission, what he was told vs. what was true, squad assembly, the sea crossing to Ocipheus,
-the theft from inside the operation. He is good at this. The theft goes cleanly. What the reader
-sees: the archive robbery that opened A-chapter 1, rendered from the other side.
+### The Scribe's Thread (4 chapters — concurrent with A-plot) {#SS-VIGL-9c}
 
-**O2 — The Flight** (concurrent with A-chapters 8–10)
-The journey back with the Relic. The Relic does something unexpected: he becomes aware of being
-observed by what he is carrying. Not visions — more like the knowledge that the object has a
-perspective on being carried. He delivers it to a Liturgy factor in Pallor (not to Prelacze
-directly — institutional deniability). He is given orders to hold the moor and intercept pursuit.
-By the end: he knows the Relic is not what he was told, the commission is not a correction,
-and pursuit is coming.
+**Who she is:** Lyra's younger sister (or cousin — confirm before entity seeding; name TBD,
+Ocipheus-origin). She joined Liturgy service as a canonical Scribe — she copies and notarizes
+canonical instruments: the official authorizations that make Liturgy operations legal. She took
+the Scribe's vow because Lyra took the Templar's vow and the Liturgy was the world Lyra
+believed in and the Scribe believed in Lyra.
 
-**O3 — Waiting at Caer Glas Moor** (concurrent with A-chapters 11–13)
-Three weeks on the northern coast. The factor has not confirmed receipt. The Long Seat has not
-acknowledged the arrangement. He realizes he has been positioned as the deniable layer — if
-pursuit reaches Pallor, he is what they find. The Canon's name is on nothing. He decides: if he
-is the answer, he will be an accurate one. He will name Prelacze when Lyra has him down.
+She is three years into the position. She is good at it. She does not know yet what she has signed.
 
-**O4 — After: The Long Seat** (concurrent with A-chapters 18–19)
-After A-chapter 17 (Lyra defeats him), Owain goes to the Long Seat. The conversation: what he
-tells them, what they already know, what they say. The Long Seat has been watching longer than
-Owain has been alive. They allowed the Canon's operation to proceed because they needed to see
-the full shape of it before acting. Owain is, structurally, their instrument too.
-The chapter ends with him outside the map room, looking at the sea. He does not know yet who
-he is when he is not his commission. That question will take longer than one sitting.
+**Her function in the plot:**
+
+She is processing Prelacze's canonical instruments — the authorization chain that made the
+theft operation legal, that suspended Lyra's transit authority, that is now staging a Liturgy
+military mobilization (war constructs from Great Scrying, Descent Corps columns moving north,
+a contingency reserve release) for something that has no public name yet. She sees all of it.
+She cannot stop any of it. She is furniture. Furniture that remembers everything.
+
+She is also the canonical witness at Sinter. Her notary seal on the account of what happened
+at the crater aperture is the first canonical instrument Prelacze cannot authorize away. This
+is why the senior Scribe sends her north — not to observe, but to BE the record.
+
+**Register:** Same formal VIGL register as Lyra's, different emotional weather. Where Lyra
+is forward-moving and categorizing, the Scribe is accumulative. She lets things settle before
+she judges them. The dark humor is quieter: the specific dryness of someone who has been
+writing "no action indicated" for months and can read the consequences accumulating in the ledger.
+
+**S1 — The Authorization** (between A-chapters 1–2)
+She copies the canonical property recovery instrument — the cover authorization for the theft
+of the Oculus Memoriae, framed as "dispute resolution, Relic provenance review." She also
+copies M-101's transit suspension. She does not know yet whose designation that is.
+In the courtyard below the office window: a Great Scrying operation running at midday — an
+active aperture, apparatus crews in position, a war construct evaluation (WC-Eirene-provisional,
+Sphere 42) being assessed by Descent Corps evaluators. She copies the assessment summary.
+Files it. One entry among many.
+
+**S2 — No Action Indicated** (between A-chapters 7–8)
+The assessment volume has tripled in six weeks. She is copying war-construct evaluation
+summaries that individually are routine but cumulatively map to a staging operation. In the
+courtyard, a chain of WC-Eirene units is moved to a staging hall she has never seen used —
+she knows it has been locked for eleven years because she filed the lock authorization as a
+junior apprentice. It is not locked now.
+She understands, cross-referencing with the transit suspension paperwork, that M-101 is her
+sister. She writes Lyra's name in the margin of her working copy. She crosses it out.
+
+**S3 — The Review Session** (between A-chapters 11–12)
+An emergency Liturgy review session convened for inter-House delegations: Lacerta's delegate
+demanding acknowledgment of western Wall sector deterioration; Carnyx's commander with maps
+showing the eastern sector is measurably larger than fifteen years ago. The Scribe copies
+Prelacze's counter-brief: "within acceptable variation." Files the Carnyx maps under "archived
+without action." Looks at the maps before she puts them away.
+In the hallway outside the session, she sees Descent Corps soldiers she doesn't recognize —
+eastern staging, possibly Carnyx-routed. Their intake instrument crosses her desk. She reads it
+while she waits: "Specialist deployment, Sinter Zone Approach Preparation." First time she has
+seen those words in anything other than a maintenance authorization.
+
+**S4 — She Goes to Sinter** (between A-chapters 18–19)
+A senior Scribe — a woman of seventy who has been copying canonical authorizations since before
+the junior Scribe was born — dispatches her north. The instruction: go, see what happens, write
+it down. The senior Scribe does not say more than this.
+On the road to Sinter she passes three Liturgy military columns moving north. Supply wagons
+marked with the canonical property seal of the contingency reserve — stores that only release
+under a standing order she renewed herself, six months ago, before she understood what she
+was looking at. She arrives at the Wall. She goes through. She is already inside the zone when
+Lyra's party enters. When Lyra looks across the crater and sees her sister, she understands
+in one moment what her sister has understood for weeks.
+
+---
+
+### 23-Chapter Intercutting Order
+
+| Ch | Thread | Title |
+|---|---|---|
+| 1 | LYRA | Three Bodies and an Empty Case |
+| 2 | LYRA | The Wall from Outside — Refused |
+| 3 | ROWE | The Mill — Sphere 31 |
+| 4 | SCRIBE | The Authorization |
+| 5 | ROWE | The Taking |
+| 6 | LYRA | Vierna Entry — The Law Doesn't Apply Here |
+| 7 | SCRIBE | No Action Indicated |
+| 8 | LYRA | Sphere 31 — Rowe Found |
+| 9 | ROWE | Seven Months |
+| 10 | LYRA | The River — Factory / Smoke / Morning / Gone |
+| 11 | LYRA | Atrament — The Forge Kingdom |
+| 12 | SCRIBE | The Review Session |
+| 13 | LYRA | Schmalburg — The Raid; the Eaters; Kressida |
+| 14 | LYRA | The Forge Hearth — What She Recognizes |
+| 15 | LYRA | Sal Vento — Tavar |
+| 16 | LYRA | The Acquisition — Eirene-7 *(steal-the-airship mission)* |
+| 17 | LYRA | The Channel — Rowe Testifies |
+| 18 | LYRA | Pallor Reached — Owain Caerglas |
+| 19 | SCRIBE | She Goes to Sinter |
+| 20 | LYRA | The Relic — What the Eye Has Seen |
+| 21 | LYRA | The Long Seat — The Eighth Theory |
+| 22 | LYRA | The Zone — Entering Sinter |
+| 23 | LYRA | The Aperture — What Loyalty Means *(climax; Prelacze arrives; the Scribe is the witness)* |
+
+*Coda:* Ocipheus Station, vigil room, closing image — absorbed into Ch.23 or brief Ch.24.
 
 ---
 
@@ -629,6 +713,7 @@ he is when he is not his commission. That question will take longer than one sit
    a gift, not information.
 3. **The Long Seat's eighth theory is never disclosed.** It remains operative in Lyra as the book ends.
 4. **The Canon leaves unpunished.** Nothing is resolved. The Liturgy's apparatus is intact.
+   The mobilization Prelacze staged does not unwind. It simply has no target yet.
 5. **Kressida's relationship with the rig is her business.** She can step out of it any time.
    What she chooses to do is not the book's question to answer for her.
 6. **Death is permanent.** (SS-LAW-19.) Ardea does not come back.
@@ -637,15 +722,32 @@ he is when he is not his commission. That question will take longer than one sit
 8. **Alchemy and Transmutation are the same system.** Shown through the shared notation format, not stated.
 9. **The slave labor is present but never named.** Lyra does not think the word. The reader does.
 10. **Orim's scry failure at Forge Hearth is never explained in-text.** Lyra has a theory. She does not say it.
+11. **Lyra was set up to take the fall.** Prelacze chose her specifically: a Templar with a
+    documented thirty-year record of absolute loyalty is useful as cover. If the Relic's evidence
+    surfaces under her authority, she holds it. She understands this at the Sinter aperture when
+    she sees the shape of the authorizations the Scribe is carrying. This recognition is not
+    stated in the prose — it is a snap-to-clarity, filed, acted on. The prose does not explain
+    it because Lyra does not explain things she has already filed.
+12. **The Scribe is the canonical witness.** Whatever she records at the Sinter aperture is the
+    official Liturgy record of what happened. When Lyra hands the Relic to the Keeper rather
+    than to Prelacze, the Scribe's notarized account is the first canonical instrument Prelacze
+    cannot authorize away.
+13. **The Liturgy's mobilization is not resolved.** The book ends with the war constructs staged
+    and the columns in position. The next book is where the mobilization finds its target.
 
 ---
 
 ## 11. User Stories {#SS-VIGL-11}
 
-- **VIGL-US-1 ⬜** Core entities seeded: all characters (Lyra as Liturgy Templar, Rowe, Kressida, Tavar, Orim, Owain, Prelacze, Ardea), places, factions, weapons, armor, pharmaceuticals, flora, fauna, species compendium (~60+).
+- **VIGL-US-1 ⬜** Core entities seeded: all characters (Lyra as Liturgy Templar, Rowe, Kressida, Tavar as
+  Lacerta spy, Orim, Owain, Prelacze, Ardea, the Scribe — name TBD, Lyra's sister or cousin), places,
+  factions, weapons, armor, pharmaceuticals, flora, fauna, species compendium (~60+).
 - **VIGL-US-2 ✅** StoryNode `VIGL` exists in DB; slug = `the-vigil-s-end-019f5767`; universe = fantasy.
-- **VIGL-US-3 ⬜** ChapterNodes created: 14 Lyra chapters + 7 B-plot chapters (R1, R2, R3, O1, O2, O3, O4) = 21 total. SortKeys assign correct intercut order.
+- **VIGL-US-3 ⬜** ChapterNodes created: 16 Lyra chapters + 7 B-plot chapters (R1, R2, R3, S1, S2, S3, S4)
+  = 23 total. SortKeys assign correct intercut order per §9 table.
 - **VIGL-US-4 ⬜** Structural blueprint regenerated after ChapterNodes created.
-- **VIGL-US-5 ⬜** All 21 chapters written in Blacktongue Thief / Between Two Fires register (~100,000 words). Existing 14 Lyra chapters rewritten from Kyle's register.
+- **VIGL-US-5 ⬜** All 23 chapters written in Blacktongue Thief / Between Two Fires register (~110,000 words).
+  Existing Lyra chapters rewritten from Kyle's register. Sinter zone chapters new.
 - **VIGL-US-6 ⬜** Logic sweep clean (0 BLOCKERs). Lyra identified as Liturgy Templar throughout.
+  Sinter as climax; no Wall crossing on outward leg; steal-the-airship chapter present.
 - **VIGL-US-7 ⬜** V3.docx exported to `R:\Desktop\EPub\MindAttic\Fantasy\The Vigils End\`.
