@@ -277,11 +277,11 @@ public class DocxExportService
     // ── builders ─────────────────────────────────────────────────────────────
 
     // KDP paperback trim: 6" × 9" (8640 × 12960 twips).
-    // Gutter = 1080 (0.75" = KDP minimum for 300+ page books); Left/Right = 720 (0.5" outer).
-    // MirrorMargins (set in Settings) flips the gutter to the spine side on verso pages.
+    // Gutter = 1260 (0.875" = KDP minimum for 501–700 page books; safe for all expected output).
+    // Left/Right = 720 (0.5" outer). MirrorMargins (set in Settings) flips gutter to spine side on verso.
     private static SectionProperties SectionProps() => new(
         new PageSize { Width = 8640U, Height = 12960U },
-        new PageMargin { Top = 1440, Bottom = 1440, Left = 720U, Right = 720U, Header = 720U, Footer = 720U, Gutter = 1080U });
+        new PageMargin { Top = 1440, Bottom = 1440, Left = 720U, Right = 720U, Header = 720U, Footer = 720U, Gutter = 1260U });
 
     private static Paragraph BlankLines(int n)
     {
