@@ -255,7 +255,7 @@ updated: 2026-06-25
 
 - **SS-US-H5 ⬜** As the author, *Underclan* (UNDR) is written as a GLMZ contact-tragedy novel: a
   surface child lost at four into the deep strata below GLMZ is raised by the uncontacted **Underclan**
-  (who worship the rogue Leviathan DEEP CURRENT), becomes the Brave **Glim**, is caught on his
+  (who worship the rogue Leviathan DEEP CURRENT), becomes the Reach **Glim**, is caught on his
   manhood-journey **Surfacing** and dragged topside to the mother he remembers only as a smell — and,
   because he surfaced, the surface comes *down*, bringing sport-hunters, a "rescue" mission, and the
   **Bright Fever** the immunologically-naïve clan cannot survive (FernGully / *Jungle 2 Jungle* /
