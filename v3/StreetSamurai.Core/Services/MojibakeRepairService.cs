@@ -172,7 +172,7 @@ public class MojibakeRepairService
                 {
                     if (rdr.IsDBNull(pkCount + i)) continue;
                     var current = rdr.GetString(pkCount + i);
-                    var repaired = TryReverseMojibake(current);
+                    var repaired = TryReverseMojibake(current) ?? RepairMixed(current);
                     if (repaired != null && repaired != current)
                         dirtyCols.Add((t.TextCols[i], repaired));
                     else
@@ -302,6 +302,86 @@ public class MojibakeRepairService
     }
 
     // ── core mojibake reversal ─────────────────────────────────────────────────
+
+    /// <summary>
+    /// Targeted repair for mixed-content strings: scans for consecutive runs of
+    /// CP1252-encodable characters and tries UTF-8 decoding on each run. Works where
+    /// <see cref="TryReverseMojibake"/> fails — strings that contain legitimate
+    /// Unicode code points above U+00FF that are not in the CP1252 0x80–0x9F
+    /// special block (e.g. an already-correct U+2014 or U+00E9 interspersed with
+    /// mojibake). Tries <see cref="TryReverseMojibake"/> first; falls through to the
+    /// run-scan only when that fails.
+    /// </summary>
+    public static string? RepairMixed(string s)
+    {
+        if (!ContainsMojibake(s)) return null;
+
+        // Fast path: pure-mojibake strings decode cleanly in one pass.
+        var fast = TryReverseMojibake(s);
+        if (fast != null) return fast;
+
+        var sb = new StringBuilder(s.Length);
+        bool changed = false;
+        int i = 0;
+
+        while (i < s.Length)
+        {
+            byte? b0 = ToCp1252Byte(s[i]);
+            if (b0 == null || b0.Value < 0x80)
+            {
+                sb.Append(s[i++]);
+                continue;
+            }
+
+            // Collect a run of consecutive CP1252-encodable high characters.
+            int runStart = i;
+            var run = new List<byte>();
+            while (i < s.Length)
+            {
+                byte? rb = ToCp1252Byte(s[i]);
+                if (rb == null) break;
+                run.Add(rb.Value);
+                i++;
+            }
+
+            // Try to decode the run as strict UTF-8.
+            string? decoded = null;
+            try { decoded = Utf8.GetString(run.ToArray()); }
+            catch { /* not valid UTF-8 — leave run as-is */ }
+
+            var original = s.Substring(runStart, i - runStart);
+            if (decoded != null && decoded != original)
+            {
+                sb.Append(decoded);
+                changed = true;
+            }
+            else
+            {
+                sb.Append(original);
+            }
+        }
+
+        return changed ? sb.ToString() : null;
+    }
+
+    /// <summary>Returns the CP1252 byte for <paramref name="ch"/>, or <c>null</c> if the
+    /// character cannot be represented in CP1252 (i.e. > U+00FF and not in the
+    /// 0x80–0x9F special block).</summary>
+    private static byte? ToCp1252Byte(char ch)
+    {
+        if (ch <= '') return (byte)ch;
+        if (ch <= 'ÿ') return (byte)ch;
+        return ch switch
+        {
+            '€' => 0x80, '‚' => 0x82, 'ƒ' => 0x83, '„' => 0x84, '…' => 0x85,
+            '†' => 0x86, '‡' => 0x87, 'ˆ' => 0x88, '‰' => 0x89, 'Š' => 0x8A,
+            '‹' => 0x8B, 'Œ' => 0x8C, 'Ž' => 0x8E,
+            '‘' => 0x91, '’' => 0x92, '“' => 0x93, '”' => 0x94, '•' => 0x95,
+            '–' => 0x96, '—' => 0x97, '˜' => 0x98, '™' => 0x99, 'š' => 0x9A,
+            '›' => 0x9B, 'œ' => 0x9C, 'ž' => 0x9E, 'Ÿ' => 0x9F,
+            _ => null,
+        };
+    }
 
     /// <summary>
     /// Returns the corrected string, or <c>null</c> if no repair applies.

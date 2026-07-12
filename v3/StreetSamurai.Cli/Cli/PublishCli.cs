@@ -90,18 +90,29 @@ public static class PublishCli
                 Console.WriteLine("[publish] ✓ Mojibake check passed.");
 
             // ── description.txt ──────────────────────────────────────────────────
+            // Always repair mojibake in the description before writing to disk,
+            // and persist the fix back to DB so the corruption doesn't recur.
             await using (var db2 = await dbFactory.CreateDbContextAsync())
             {
-                var description = await db2.Nodes
-                    .AsNoTracking()
+                var nodeForDesc = await db2.Nodes
+                    .AsTracking()
                     .Where(n => n.Id == nodeId)
-                    .Select(n => n.Description)
                     .FirstOrDefaultAsync();
 
+                var description = nodeForDesc?.Description;
                 var outDir = Path.GetDirectoryName(docxPath)!;
 
                 if (!string.IsNullOrWhiteSpace(description))
                 {
+                    var repaired = MojibakeRepairService.RepairMixed(description);
+                    if (repaired != null)
+                    {
+                        nodeForDesc!.Description = repaired;
+                        await db2.SaveChangesAsync();
+                        description = repaired;
+                        Console.WriteLine("[publish] ✓ Repaired mojibake in description; DB updated.");
+                    }
+
                     var descPath = Path.Combine(outDir, "description.txt");
                     await File.WriteAllTextAsync(descPath, description.Trim());
                     Console.WriteLine($"[publish] Wrote description: {descPath}");

@@ -187,7 +187,7 @@ public class DocxExportService
             // MirrorMargins makes the gutter (inside margin) alternate left/right for recto/verso
             // pages — required for KDP paperback so the gutter is always on the spine side.
             var settingsPart = main.AddNewPart<DocumentSettingsPart>();
-            settingsPart.Settings = new Settings(new UpdateFieldsOnOpen { Val = false });
+            settingsPart.Settings = new Settings(new UpdateFieldsOnOpen { Val = false }, new MirrorMargins());
             settingsPart.Settings.Save();
 
             var body = main.Document.AppendChild(new Body());
@@ -277,10 +277,11 @@ public class DocxExportService
     // ── builders ─────────────────────────────────────────────────────────────
 
     // KDP paperback trim: 6" × 9" (8640 × 12960 twips).
-    // Margins: top/bottom 1" (1440), left/right 0.75" (1080) symmetric for screen reading.
+    // Gutter = 1080 (0.75" = KDP minimum for 300+ page books); Left/Right = 720 (0.5" outer).
+    // MirrorMargins (set in Settings) flips the gutter to the spine side on verso pages.
     private static SectionProperties SectionProps() => new(
         new PageSize { Width = 8640U, Height = 12960U },
-        new PageMargin { Top = 1440, Bottom = 1440, Left = 1080U, Right = 1080U, Header = 720U, Footer = 720U, Gutter = 0U });
+        new PageMargin { Top = 1440, Bottom = 1440, Left = 720U, Right = 720U, Header = 720U, Footer = 720U, Gutter = 1080U });
 
     private static Paragraph BlankLines(int n)
     {
