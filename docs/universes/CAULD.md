@@ -522,7 +522,7 @@ separated from the mainland by a narrow channel, and an eastern breadbasket that
 steppe. The seven Houses each occupy a distinct geographic zone. They border each other. They
 have always had to.
 
-**The Northern Fjords — Fjornox territory.** Scandinavia analog: long coastlines, cold fjord
+**The Northern Fjords — Fjorheim territory.** Scandinavia analog: long coastlines, cold fjord
 inlets, pine and birch, a culture that went to sea before it went to war. The winters are the
 longest in the Cauld. The people here solved cold and distance before they solved anything
 else. They are not the oldest culture in the Cauld but they have the longest memory of
@@ -847,7 +847,7 @@ Cresset dissolved formally into collective Compact administration. Their site is
 active installation managed directly by the Silence rather than by a named House. The eastern
 cultures that extracted them are not part of the Cauld. The Cauld does not discuss them
 openly. They are the thing the Cauld's historical record goes quiet about in the same way
-Fjornox's record goes quiet about the Blood Century.
+Fjorheim's record goes quiet about the Blood Century.
 
 **What Cresset represents:** The slow theft. The knowledge that has already gone by the time
 you notice the taking.
@@ -1008,9 +1008,9 @@ The practitioners who have gone further than the institution is prepared to foll
 
 ---
 
-#### House Fjornox — The Army That Has No War
+#### House Fjorheim — The Army That Has No War
 
-Fjornox came from the northern fjords — the Scandinavian analog, long winters, sea-raid
+Fjorheim came from the northern fjords — the Scandinavian analog, long winters, sea-raid
 culture, a people who had been running mandatory military service and maritime conscription
 before the membrane was deliberate. The transition to House status was the most frictionless
 of all the Compact parties: they were already organized as a military institution, they
@@ -1026,29 +1026,29 @@ the crossing as part of the capability rather than an obstacle to it. When the m
 became operational, they used it the same way they used the sea. The apparatus was faster
 than longships. The oaths were administered in the same order. The service records opened.
 
-Fjornox is the House that most clearly records what happened in the Blood Century. This is
+Fjorheim is the House that most clearly records what happened in the Blood Century. This is
 not because they were the most honest — they were not — but because their records are
 administrative. Conscription numbers. Deployment logs. Service records opened and closed.
-The administrative record does not disguise; it accumulates. You can read, in Fjornox's
+The administrative record does not disguise; it accumulates. You can read, in Fjorheim's
 service records from the Blood Century, the shape of what happened without anyone ever
 describing it. The numbers tell it.
 
-What the numbers say about the Blood Century, for Fjornox: they processed more people
+What the numbers say about the Blood Century, for Fjorheim: they processed more people
 through their membrane apparatus in a thirty-year period than in any other period before or
 since. They processed them at a rate that, reconstructed, implies the apparatus was running
 almost continuously. The Sphere they were drawing from during this period is not documented.
 The documentation from that period refers to Sphere access only as "the primary draw." No
 Sphere is named. The gap in the record is the record.
 
-Three generations passed before Fjornox was in a situation where voluntary intake was
+Three generations passed before Fjorheim was in a situation where voluntary intake was
 insufficient and the membrane needed to supplement it. When it happened again, they ran the
 same procedures. The oath was administered in the same language. The service records opened.
 But the Warrior King who presided over the second conscription wave was not a person who
 had ever not known what they were doing. She had read the Blood Century record. She had
-understood it. She did it anyway. This is the Fjornox character: not ignorance of what the
+understood it. She did it anyway. This is the Fjorheim character: not ignorance of what the
 institution does, but the decision to do it regardless.
 
-**What Fjornox represents:** The institution that knows what it is and continues to be it.
+**What Fjorheim represents:** The institution that knows what it is and continues to be it.
 Not evil in the way that looks away. Evil in the way that looks directly and chooses.
 
 ---
@@ -1265,7 +1265,7 @@ watching long enough.
 
 ### House Atrament — The Refinery Seat
 **Coalition status:** Coalition anchor · **Domain:** Catalyst refining
-**Territory:** Central continental — Germany analog; Rhine and Danube river valleys; forested interior; volcanic ridge in the west. Borders Vierna to the west, Fjornox to the north, Ocipheus to the south across the Alpine ridge, Calyx to the east along the river line.
+**Territory:** Central continental — Germany analog; Rhine and Danube river valleys; forested interior; volcanic ridge in the west. Borders Vierna to the west, Fjorheim to the north, Ocipheus to the south across the Alpine ridge, Calyx to the east along the river line.
 
 The Forge Hearth — oldest active apparatus in the Cauld. Stretching the membrane at the same
 coordinates for generations. Whether the membrane fully recovers between sessions is not a
@@ -1323,7 +1323,7 @@ does not know. The reports continue. So does she.
 
 ---
 
-### House Fjornox — The Muster Seat
+### House Fjorheim — The Muster Seat
 **Coalition status:** Opposition bloc · **Domain:** Military conscription
 **Territory:** Northern fjords — Scandinavia analog; long fjord coastlines, pine and birch interior, glacial plateau. Borders Atrament to the south; Pallor across the North Sea channel to the west.
 
@@ -1331,7 +1331,7 @@ The Muster Chamber — calibrated specifically for piercing. When volunteer inta
 before planned offensives, when numbers need supplementing, the membrane gets breached and
 soldiers come through. The apparatus here is specialized. The capability is not publicized.
 
-Fjornox holds the largest standing Myrmidon force in the current coalition map. A notable
+Fjorheim holds the largest standing Myrmidon force in the current coalition map. A notable
 fraction arrived through the membrane. The oath is administered after arrival, before the new
 conscript has enough language to understand what they are swearing. The service record opens.
 The name of the origin Sphere is not in it.
@@ -1407,7 +1407,7 @@ Silence has not responded. Yet.
 
 ### House Pallor — The Long Seat
 **Coalition status:** Unaligned — courted by both blocs · **Domain:** Champion affiliation
-**Territory:** The island — Great Britain analog; separated from the mainland by a cold channel. Rocky highland north, softer lowland south, maritime culture throughout. Channel crossing south to Vierna; North Sea crossing east to Fjornox.
+**Territory:** The island — Great Britain analog; separated from the mainland by a cold channel. Rocky highland north, softer lowland south, maritime culture throughout. Channel crossing south to Vierna; North Sea crossing east to Fjorheim.
 
 Pallor Station — mid-tier apparatus. Strategically valuable not for what it can reach through
 the membrane but for who is affiliated with it. Their Warrior King has been at the map table
