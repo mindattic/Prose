@@ -59,9 +59,11 @@ public class DocxExportService
         var nextVersion = node.Version + 1;  // commit to DB only after file is written
         var ordered = await workbench.GetOrderedBeatsAsync(nodeId, ct);
 
-        var baseDir = (settings.PublishExportDirectory ?? string.Empty).Trim().Trim('"', '\'').Trim();
-        if (string.IsNullOrWhiteSpace(baseDir))
-            baseDir = Environment.GetFolderPath(Environment.SpecialFolder.Desktop);
+        var universeSlug = await db.Universes.AsNoTracking()
+            .Where(u => u.Id == node.UniverseId)
+            .Select(u => u.Slug)
+            .FirstOrDefaultAsync(ct);
+        var baseDir = settings.GetExportDirectory(universeSlug);
         var safeTitle = SanitizeTitle(node.Title);
 
         // De-dup: if a sibling node produces the same folder name, prefix with

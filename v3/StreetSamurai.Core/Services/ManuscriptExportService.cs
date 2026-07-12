@@ -89,7 +89,11 @@ public class ManuscriptExportService
             }
         }
 
-        var dir = ResolveExportDir();
+        var universeSlug = await db.Universes.AsNoTracking()
+            .Where(u => u.Id == node.UniverseId)
+            .Select(u => u.Slug)
+            .FirstOrDefaultAsync(ct);
+        var dir = ResolveExportDir(universeSlug);
         Directory.CreateDirectory(dir);
         var path = Path.Combine(dir, $"{node.Slug}.{node.Id.ToString("N")[..8]}.md");
         await File.WriteAllTextAsync(path, md.ToString().TrimEnd() + "\n", new UTF8Encoding(false), ct);
@@ -375,6 +379,10 @@ public class ManuscriptExportService
         await using var db = await dbFactory.CreateDbContextAsync(ct);
         var node = await db.Nodes.AsNoTracking().FirstOrDefaultAsync(s => s.Id == nodeId, ct)
             ?? throw new InvalidOperationException($"Node {nodeId} not found.");
+        var universeSlug = await db.Universes.AsNoTracking()
+            .Where(u => u.Id == node.UniverseId)
+            .Select(u => u.Slug)
+            .FirstOrDefaultAsync(ct);
         var ordered = await workbench.GetOrderedBeatsAsync(nodeId, ct);
 
         var chapters = new List<Chapter>();
@@ -415,7 +423,7 @@ public class ManuscriptExportService
             parentId = parent.ParentNodeId;
         }
 
-        var dir = ResolveExportDir();
+        var dir = ResolveExportDir(universeSlug);
         var safeTitle = SanitizeTitle(node.Title);
 
         // De-dup: if a sibling node produces the same folder name, prefix with
@@ -454,13 +462,8 @@ public class ManuscriptExportService
         return (new Manuscript(node.Title, node.Slug, node.Description, chapters), path);
     }
 
-    private string ResolveExportDir()
-    {
-        var dir = (settings.PublishExportDirectory ?? string.Empty).Trim().Trim('"', '\'').Trim();
-        if (string.IsNullOrWhiteSpace(dir))
-            dir = Environment.GetFolderPath(Environment.SpecialFolder.Desktop);
-        return dir;
-    }
+    private string ResolveExportDir(string? universeSlug = null)
+        => settings.GetExportDirectory(universeSlug);
 
     private static Chapter AddLeadChapter(List<Chapter> chapters)
     {

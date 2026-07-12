@@ -186,6 +186,29 @@ public class SettingsService : IDisposable
         set { data.PublishExportDirectory = value ?? ""; ScheduleSave(); }
     }
 
+    /// <summary>Returns the export base directory for the given universe slug.
+    /// Checks <c>UniverseExportDirectories[slug]</c> first; falls back to
+    /// <c>PublishExportDirectory</c>; falls back to Desktop.</summary>
+    public string GetExportDirectory(string? universeSlug)
+    {
+        if (!string.IsNullOrWhiteSpace(universeSlug)
+            && data.UniverseExportDirectories.TryGetValue(universeSlug, out var universeDir)
+            && !string.IsNullOrWhiteSpace(universeDir))
+            return universeDir.Trim().Trim('"', '\'').Trim();
+
+        var global = (data.PublishExportDirectory ?? string.Empty).Trim().Trim('"', '\'').Trim();
+        return string.IsNullOrWhiteSpace(global)
+            ? Environment.GetFolderPath(Environment.SpecialFolder.Desktop)
+            : global;
+    }
+
+    /// <summary>Persists a universe-specific export directory override.</summary>
+    public void SetUniverseExportDirectory(string slug, string dir)
+    {
+        data.UniverseExportDirectories[slug] = dir ?? "";
+        ScheduleSave();
+    }
+
     // ── Inter-beat silence pacing (combined-audio export) ──────────────────
     // When the per-beat audio files are concatenated into the combined node
     // audio, the NodeWorkbenchService.ExportCombinedAsync injects a brief
@@ -754,6 +777,9 @@ public class SettingsService : IDisposable
         public string PublishOutputDirectory { get; set; } = "";
         /// <summary>Base dir for the manuscript export. Empty = Desktop.</summary>
         public string PublishExportDirectory { get; set; } = "";
+        /// <summary>Per-universe overrides for the manuscript export base dir.
+        /// Key = universe slug (e.g. "glmz", "scry"). Wins over <see cref="PublishExportDirectory"/>.</summary>
+        public Dictionary<string, string> UniverseExportDirectories { get; set; } = new();
         public int TtsPauseSectionMs { get; set; } = 1800;
         public int TtsPauseSceneMs { get; set; } = 1000;
         public int TtsPauseParagraphMs { get; set; } = 400;
