@@ -187,6 +187,26 @@ What they walked out of the site with — the agreement, the three matched blade
 
 ---
 
+#### Eirene the Still-Water, Founder of Sinter (Year 295 — Year 391)
+
+Every founding legend in the Cauld involves a weapon. The founding legend of Sinter involves a mirror.
+
+Eirene was the only child of the alpine valley's senior practitioner family — the people who had lived nearest the valley's membrane network since the First Wave, who had never left, who had watched the membrane's behavior across three generations before they understood it as a membrane rather than a sacred condition of the ground. She grew up knowing the valley's Scrywell network the way other children know the house they grew up in: not as a tool but as an environment, a constant presence with patterns she had learned before she had language for them.
+
+What the valley's membrane showed was different from what every other installation in the Cauld showed. This was not immediately understood. The difference was not in the quality of the Sphere access or the membrane's activity level — both were exceptional, the distributed network producing more simultaneous access points than any single-site installation — but in the character of what the access points opened toward. The Sinter network did not preferentially show Spheres with military technology or industrial processes. It showed Spheres at moments of resolution. Conflicts ending. Agreements being reached. The particular geometry of two people, or two nations, finding the terms they could both live with.
+
+Eirene systematized this in Year 328. She trained her practitioners not in Scrying for military application but in what she called "watching the turn" — the moment in a Sphere's timeline when hostility became negotiation. She catalogued the patterns: what conditions preceded a turn, what language characterized it, what the body did when a person shifted from wanting the other person dead to wanting them to agree. She applied the catalogue.
+
+For sixty years, Eirene and her successors were the people every other proto-House sent for when a dispute needed a resolution they couldn't reach themselves. The Sinter valley was neutral territory — not by proclamation but by geography, surrounded on every side by the approaches of other Houses, reachable only through corridors that would have required declaring war on someone else first. They administered the first agreements. They held the terms. They are the reason the Compact's structure, when Arnault d'Archival finally wrote it down in Year 643, was coherent: the conceptual framework had been developed at Sinter for two centuries before the document existed.
+
+The mirror — *La Pace*, the Peace — was found in the valley's deepest membrane access chamber in Year 331. It is circular, fifty centimeters across, ground from a material with the reflective properties of polished silver but the weight of stone. When you look into it, you see not your own face but the face of the person you are most in conflict with. Not a memory. Not an image. The actual face, as it is right now, in the moment of your looking. How this is possible is the Liturgy's most carefully avoided question. Eirene carried it for sixty years in every negotiation. She said it was the most useful thing she had ever held, because it was impossible to look into it and maintain the fiction that the person you were fighting was not a person.
+
+She died at ninety-six, in the valley, surrounded by the practitioners she had trained. Her service record — Sinter kept service records like Fjorheim, because the diplomatic tradition required documentation — closes at Year 391: *withdrew from practice. Died in the valley. La Pace held at the time of death and recovered from her hands.* The mirror passed to the Sinter institution and was used in every arbitration the House conducted until Year 1079.
+
+The Liturgy has held La Pace since Year 1082. It is the one Relic that passed to the Liturgy rather than remaining with a named House. The Quarantine Administration uses it in formal sessions. What the Silence has seen in it, looking into the mirror's surface during those sessions, has not been disclosed.
+
+---
+
 ## PART III: THE BLOOD CENTURY (Year 512 — Year 643)
 
 ### How the War Began
@@ -273,7 +293,7 @@ The Houses discovered, in the century after formalization, that military allianc
 
 **House Meridian** declined across this entire period, from its peak wealth in Year 700 through the contractor replacement (Year 780–840) to its final dissolution in Year 880. The efficiency calculation proved correct and then fatal: the contracted institution ran the site better, then became the institution with the knowledge, then renegotiated from a position of monopoly. A bad harvest year in Year 873 broke the fee. The contractors changed sides. Meridian's site went dark for twenty years before Vierna brought it back online using Sinter's archived protocols. Vierna now administers it.
 
-**House Sinter** ended itself in Year 1089 — though the process began in Year 1079, when their practitioners first attempted to extend the apparatus's fixed-coordinate access. Eleven days of experimental operation. The membrane at Sinter's ridge site did not return to baseline. The zone around the installation has been producing its persistent low-level wrongness since. The Sinter practitioners who survived dispersed to Vierna and Atrament; Vierna's record of the experiment is more complete than the Liturgy's official account, and Vierna has made the institutional decision to keep it that way.
+**House Sinter** administered its last formal arbitration in Year 1078 — a border dispute between Atrament and Calyx over river-crossing rights that Sinter resolved in four days through what the Calyx chronicle describes as "the mirror and the long silence." A practitioner held La Pace. The two parties looked into it simultaneously. The agreement was reached before noon on the fourth day. There is no record that anyone at that arbitration understood it would be the last.
 
 ---
 
@@ -321,15 +341,81 @@ Brennid Shield-Boy's account of twelve hours inside a sixty-meter ocean creature
 
 ---
 
+## PART V-B: THE SINTER EVENT (Year 1079 — Year 1100)
+
+This section stands between the Long Peace and the Age of Fracture because it belongs to neither. It is the hinge.
+
+### The Impact
+
+No apparatus detected it in advance. The Sinter valley's membrane network was the most sensitive in the Cauld — distributed, continuous, attuned to the finest tremors of Sphere activity across hundreds of access points — and it did not detect the bolide's approach until the final three hours. Eirene's successors had trained the network to look through the membrane, not at the sky above it. The bolide came from above.
+
+Three hours of warning. The valley's communities evacuated toward the mountain passes. Most of the population made it. Most of the practitioners made it, each carrying what they could from the arbitration archive — documents, the Sphere catalogue, the records of two hundred years of resolved disputes. La Pace was carried by the senior practitioner in her arms against her chest, wrapped in her outer robe, across the eastern pass into Calyx territory. The archive's last recorded entry before the impact is dated the morning of the fifth day of winter, Year 1079: *we are leaving the valley. The sky is wrong.*
+
+The bolide struck at midday. The impact was heard at Ocipheus Station. It was heard at the Vierna Deep Archive. Fjorheim's northern coastline communities, six hundred kilometers distant, described feeling the ground move. Atrament's volcanic ridge registered a seismic disturbance that the Forge Hearth's monitoring protocols flagged as the largest non-volcanic ground event in the installation's three-hundred-year record.
+
+In the Sinter valley, the impact punched a crater twelve kilometers wide into the alpine basin's geological foundation. The foundation rock — the same deep-layer geology that had made the valley's membrane network possible, the particular mineral composition that the membrane had been distributed through like water through limestone — fractured along every axis simultaneously. The cracks ran along the membrane's underground distribution paths, because the membrane had been using those paths for three centuries and had changed the geology in doing so. When the rock fractured, the fractures followed the membrane's routes precisely.
+
+The membrane poured through the cracks. Not in any controlled way. Not in the way an apparatus directs and focuses and limits. In the way water pours through a dam that has been struck by something larger than the dam was built to withstand.
+
+### The First Three Years
+
+The magma flows began on the third day, as the impact's heat reached the volcanic-adjacent geology beneath the basin floor. The flows were not dramatic by volcanic standards — no eruption column, no ash cloud, no pyroclastic event. They were slow and permanent: lava moving at walking pace out of the largest cracks, cooling, moving again when new flows pushed behind it. By Year 1082, the valley floor was a mosaic of cooling stone, active seismic venting, and approximately thirty ground-level apertures — the largest crack openings — where the membrane's uncontrolled output was already producing emergence events.
+
+What emerged in the first three years was primarily Gifted matter in unguided concentrations — the raw material of Transmutation without the Liturgy's administration, without a certified practitioner, without any of the protocols that separate the Gifted Ceremony from catastrophic uncontrolled mutation. The soldiers sent by the three nearest Houses to assess the valley in Year 1080 came back changed in ways that the Liturgy's emergency practitioners spent eight months trying to understand. Three of them could not be stabilized. The Liturgy classified them under its existing framework for ungoverned Transmutation outcome and administered the protocol that framework requires. The Atrament chronicle records this as: *three soldiers returned from the assessment mission. Three soldiers were treated for membrane exposure. Three soldiers did not survive treatment.*
+
+The fauna began emerging in Year 1081. Not the Bheur Incursion Predators of the existing record — different creatures, catalogued under emergency Sphere-designation numbers that the Quarantine Administration's restricted ledger holds and the main archive does not. The creatures that emerged from the larger cracks in Year 1081 are the single largest expansion of the Cauld's monster taxonomy in six hundred years. Some of them have been named. Most have not. The ones that made it past the valley's mountain margins before the Wall was in place — approximately forty documented emergence events, Year 1080 to Year 1084 — are the ancestors of the current monster corridor's worst fauna.
+
+### The Quarantine Compact (Year 1082)
+
+In Year 1082, all six surviving Houses signed a single document simultaneously. This has not happened before or since. The Houses that were at war with each other on every other front sat at the same table in the Calyx border city of Rimholt — neutral ground because Calyx's Seat had offered it and nobody had a better option — and produced the Quarantine Compact in four days.
+
+Vierna wrote it. Of course Vierna wrote it. The surviving Sinter practitioners, camped in Calyx with their archive and La Pace, were consulted on every clause. The Sinter tradition of finding the terms both parties could live with informed the document's structure. This was the last formal use of the Sinter arbitration tradition, administered by the people who carried it out of the burning valley, for the institution they had just lost. The Sinter practitioners who were present for the Rimholt signing did not identify themselves as House Sinter. They identified themselves as archivists. The document reflects this: the signatories are the six surviving Houses, the Liturgy, and, in a single notation at the document's end, "the archivists of the record."
+
+The Quarantine Compact's terms:
+
+**The Wall.** Vierna, Ocipheus, and Atrament commit to the physical fortification of the valley's mountain margin approaches — the Quarantine Wall, a continuous barrier at every natural access corridor, staffed at all times, maintained regardless of House coalition alignment. The Wall's construction began in Year 1082 and was substantially complete by Year 1097. Fifteen years of continuous construction through active seismic disruption, periodic emergence events that killed workers, and inter-House politics that never stopped applying pressure to everything except the Wall.
+
+**The Levy.** Pallor, Lacerta, and Calyx commit to quarterly monetary and supply contributions to the Wall's maintenance and emergency response reserve. The Levy is assessed on a sliding scale based on the contributing House's membrane revenue — the richer your Scrying output, the more you pay. This formula was Sinter's. The Sinter practitioners worked it out in two hours at Rimholt. The other Houses have been paying it for six hundred years.
+
+**The Administration.** The Liturgy administers the Quarantine as a separate institutional mandate, distinct from its House-affiliated functions. The Quarantine Administration answers to the Silence, not to any Warrior King or Keeper. This was the most contested clause at Rimholt: every House understood that giving the Liturgy its own standing administrative domain would expand the Liturgy's institutional power permanently. Every House signed anyway, because nobody trusted any of the other Houses to administer it neutrally, and the Liturgy was the only body that had demonstrated that it could be trusted by people who were otherwise committed to destroying each other.
+
+**The Clause of Greater Good.** A single sentence, Clause 14, written by the Sinter archivist who held La Pace during the Rimholt sessions: *The quarantine obligation supersedes all coalition politics, all active war between Houses, and all Compact dispute mechanisms for the duration of any emergence event or Wall breach at any point on the Sinter perimeter.* This means that if Fjorheim and Ocipheus are in active combat on the Channel front, and an emergence event occurs at the Sinter Wall, both Houses immediately redirect whatever resources the Administration requests, for as long as the event continues, before resuming their war.
+
+The Clause of Greater Good has been invoked forty-seven times since Year 1082. It has been honored forty-six times. The forty-seventh is in the restricted ledger.
+
+### The Quarantine Wall
+
+By Year 1700, the Wall is the largest continuous construction project in the Cauld's history. Not a single unbroken structure — the mountain terrain makes that impossible — but a network of fortified positions, sealed corridors, watch-towers, and underground barriers that follows the valley's full perimeter across approximately 280 kilometers of mountain margin.
+
+The Wall is staffed by soldiers from all three Wall Houses in rotating three-month deployments. This means that at any point in the Wall's history, there are soldiers from Houses that are currently at war with each other standing at adjacent posts on the same fortification, bound by the Quarantine Compact not to fight each other while they are there. The Quarantine Administration enforces this. The Giants — the transformed Champions who also serve as escorts on the Vierna-Ocipheus crossing route — hold permanent postings at the Wall's four largest breach-risk locations. They do not rotate. They have been there long enough that some of them predate the current coalition alignment by decades.
+
+What soldiers on Wall rotation say about the posting: the silence is wrong. Not the absence of sound — there is sound, the wind through the mountain passes, the seismic venting from the valley floor below, the periodic low frequency event that the Administration calls a "pressure release" and that Wall veterans call, in their private language, "the valley breathing." The wrongness is something else. It is the quality of attention you feel on the Wall — the sense that something on the other side of the barrier is aware that you are there. Veterans say you get used to it. The ones who get used to it tend to stay for multiple rotations. The Wall Administration has a word for them: they call them the Steady. The Steady are the best soldiers the Wall has. Nobody has investigated what the long exposure does to them.
+
+### The Descents
+
+The valley's cracked geology is the richest concentration of location-specific Sphere access in the Cauld. This has been known since Year 1082. The Descents — controlled expeditions through the Wall's authorized breach points into the valley interior — began in Year 1140, when the Quarantine Administration judged the Wall stable enough to permit supervised entry.
+
+Every Descent requires a Liturgy charter. The charter specifies duration, personnel count, target coordinates, and the Descent's stated purpose (Scrying, Catalyst recovery, emergence cataloguing, or geological survey). No charter covers what the Descent teams actually find, because what they find cannot be specified in advance. The Liturgy's position is that the charter covers the intention; what the intention encounters is the Descent team's responsibility.
+
+Approximately forty percent of chartered Descent teams return with their full personnel. The remaining sixty percent return with fewer people than they left with, or do not return at all. The Liturgy does not publish these numbers. The Houses know them. They keep sending teams.
+
+What the successful Descents return with: Sphere catalogue entries for access points available nowhere else in the Cauld; Catalyst material in concentrations and varieties that no above-ground site has produced; recorded observations of what the valley floor looks like — the cooling lava, the seismic venting, the crater's impact structure still visible at the center, and the thirty-odd aperture sites where the membrane cracks open directly, uncontrolled, into wherever it opens into. Descent operators describe the aperture sites in consistent terms across six centuries of expedition records: *the light is wrong. The air is wrong. Something is paying attention to you, and it has been doing so since before you arrived.*
+
+Three Descent teams over the six centuries have returned with members who cannot account for intervals of their time inside the valley — gaps of hours or days where the team's records show no activity but the team members are unharmed, in good health, and entirely unable to explain where the time went. The Liturgy's restricted ledger covers these cases individually. Whatever those operators saw or experienced in the gap is in the ledger. The ledger is sealed.
+
+The conspiracy version, circulated by Wall veterans on long rotations: the bolide was not natural. Something on the other side of a Sphere threw it through the membrane. What it was trying to do — open a permanent uncontrolled breach, destroy the one neutral House in the Cauld, produce the Quarantine as a mechanism that would give the Liturgy its own standing administration — is the conspiracy that forks in three directions depending on which House the veteran comes from. The Liturgy has no comment. The Liturgy has not commented for six hundred years.
+
+---
+
 ## PART VI: THE AGE OF FRACTURE (Year 1143 — Year 1389)
 
 ### How the Living War Began in Earnest
 
-The Compact's framework had been managing conflict for four hundred years. In Year 1143, the framework failed for the first time at existential scale — not because anyone decided it had failed, but because the accumulated pressures of four centuries of managed conflict had reached a point where the management cost more than the conflict.
+The Compact's framework had been managing conflict for four hundred years. In Year 1143, the framework failed for the first time at existential scale — not because anyone decided it had failed, but because the Sinter Event's long aftermath had finally destabilized the balance the Compact depended on.
 
-The precipitating event: House Sinter's experimental collapse in Year 1089 had produced a membrane disturbance that was slowly expanding. By Year 1143, the disturbance radius had tripled. The Sphere access that three Houses had been dependent on from Sinter's territory was no longer reliable. The coalition alignment that had been stable for forty years re-formed around the question of who would control the Sinter site's remaining viable output. Three Houses wanted it. None of them wanted the other two to have it. The Compact had no mechanism for resolving this.
+The Sinter valley had been the geographic center of the Cauld's political structure — not just as territory but as function. Sinter had been where disputes went to be resolved. With Sinter gone, the Compact had no neutral arbiter below the Liturgy level, and the Liturgy was too invested in the Quarantine Administration to act as a neutral party in inter-House politics simultaneously. For sixty years after the Meteor Event, the Houses managed through the existing structures, increasingly strained. The strain finally broke at a river-crossing dispute between Atrament and Calyx in Year 1143 that would, in Year 1078, have gone to Sinter for resolution in four days. In Year 1143, it went to war.
 
-The first engagement of the formal Living War is recorded as Year 1143, at a membrane installation in Atrament's southern territory. By Year 1200, all seven Houses were committed in one or another coalition configuration.
+The first engagement of the formal Living War is recorded as Year 1143, at a membrane installation in Atrament's southern territory. By Year 1200, all seven Houses were committed in one or another coalition configuration. The Quarantine Compact — the one obligation all Houses maintained regardless — held throughout. It has held since. The Wall is the only front that never changes sides.
 
 ### The Channel War and the Gyldir Shore Accord (Year 1284 — Year 1302)
 
@@ -465,12 +551,13 @@ The Relic weapons are physical objects of Gifted matter origin that have passed 
 | House | Relic | Name | Description | Current Status |
 |---|---|---|---|---|
 | Ocipheus | Oculus Memoriae | The Memory Eye | Twenty-centimeter lens; shows past state of present location; non-controllable temporal resolution; material unidentifiable by local mineralogy | Ocipheus Station archive, restricted access |
-| Calyx | Gyökér | The Root | War-scythe; blade of first eastern-plains iron; handle of unidentified material; detects underground membrane activity by contact; | Seat of Calyx holds ceremonially; used annually at harvest rite |
+| Calyx | Gyökér | The Root | War-scythe; blade of first eastern-plains iron; handle of unidentified material; detects underground membrane activity by contact | Seat of Calyx holds ceremonially; used annually at harvest rite |
 | Atrament | Die Ewige Flamme | The Eternal Flame | Longsword; internally warm; alloy of local elements in non-local crystalline structure; warm to holder, weapon-warm to opponents | Last documented location: Forge Hearth interior, Year 1401; status unconfirmed |
 | Vierna | Le Stylet de Vérité | The Truth Stylus | Writing implement; produces accurate records regardless of writer's intent; material unidentifiable; 20 centimeters | Deep Archive, Year 1441 to present; lost twice previously |
 | Fjorheim | Kaldvinn | Cold-Surrender | Longspear; black iron head; non-corroding; cold regardless of ambient temperature; shaft of non-local wood species | Last held by Malvina Ironflood; lost at sea in Year 1689; not recovered |
 | Pallor | Caer Gwyn | The White Keep | Round shield; polished silver-alloy; boss shaped as closed eye that opens when struck; what it sees is not recorded | Pallor Station; held by Long Seat; opening eye not invoked in current record |
 | Lacerta | Las Tres Navajas | The Three Blades | Three matched short knives; white metal; tarnish in presence of deceit; one per founding line | Lacerta holds all three; testing schedule not public |
+| **Sinter (fallen)** | La Pace | The Peace | Circular mirror, fifty centimeters; shows viewer the face of the person they are most in conflict with, in real time; no weapon use documented in eight founding centuries | Liturgy/Quarantine Administration holds; used in formal sessions; Silence has not described what they see in it |
 
 ---
 

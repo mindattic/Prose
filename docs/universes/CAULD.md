@@ -784,41 +784,124 @@ absorption preserves the residue of what it consumed.
 
 ---
 
-#### House Sinter — The House That Ended Itself
+#### House Sinter — The House That Was Unmade
 
-Sinter held a site in the central Ridge Countries — not one of the major installations but
-an active and reliable one, positioned at a Sphere junction that produced particularly dense
-membrane activity. Dense membrane activity means easier Scrying but also less predictable
-Scrying. The membrane at a Sinter-equivalent site is not quiet. It moves.
+Sinter occupied the central alpine valley — the Switzerland analog, a high enclosed basin
+ringed by mountain ridges, positioned at the geographic center of every other House's
+territory. Atrament bordered them to the north and west. Vierna to the west and south.
+Ocipheus through the southern passes. Calyx across the eastern low range. To attack Sinter
+required crossing someone else's land first. This geographic fact made them the only House
+in the Cauld's history that no other House could reach without permission. They built their
+entire institutional character around the immunity this gave them: they were neutral, not
+because they chose to be peaceful, but because war was structurally unavailable to them.
 
-Sinter's practitioners were experimenters. They were the first institution to seriously
-investigate the question of whether membrane access could be extended beyond fixed coordinates
-— whether an apparatus could be modified to reach a Sphere junction it wasn't built for. The
-question was theoretically interesting and practically enormous: if the answer was yes, the
-geographic monopoly of any fixed-site House could be broken.
+They became the Peacemakers. Sinter arbitrated disputes between Houses before the Liturgy
+formalized that role. They hosted negotiations that no other territory could host without
+one party feeling disadvantaged by location. Their practitioners were trained not in
+Scrying operations but in what they called "membrane reading for resolution" — the
+Sinter apparatus observed Spheres specifically chosen for how those Spheres managed their
+own conflicts. They were the Cauld's only institution whose primary Scrying purpose was
+not military or industrial but diplomatic. This made them invaluable. It also meant they
+had no military force worth naming.
 
-They found what appeared to be an answer. They applied it. The experiment ran for eleven
-days before the apparatus lost coherence in a way that the practitioners had no protocol for.
-The Sphere they were attempting to reach was not reached. The membrane they were working
-with did not return to baseline.
+Their Scrywell network was the densest in the Cauld — not one installation but a distributed
+array of smaller apparatus across the valley floor, exploiting a geology that held the
+membrane thin at hundreds of coordinates simultaneously. The valley produced more Sphere
+access points per square kilometer than any comparable territory. The membrane there moved
+like water moves — continuously, without rest, without the fixed-boundary behavior of other
+sites. Sinter's practitioners had spent three hundred years learning how to work a membrane
+that never stopped.
 
-The zone around Sinter's installation is still wrong. Not dangerous in a legible way —
-nothing kills you immediately — but wrong in the way the vigil operators from Ocipheus
-Station describe when they come back from night watches where they have been at their post
-long enough to see things the apparatus isn't showing them. The ground around Sinter's
-installation produces that sensation permanently, at a low level, across a radius of
-approximately three kilometers. The Liturgy maintains the apparatus at minimum output
-because early attempts to shut it down entirely produced larger effects than leaving it on.
-The Cauld does not know what it is keeping running. It only knows that running it is better
-than not running it.
+**The Meteor Event (Year 1079).** A bolide struck the center of the Sinter valley with no
+warning, in the early morning of the fifth day of winter. The impact did not kill the House.
+It unmade the ground the House stood on.
 
-Sinter's surviving practitioners were absorbed into other Houses. Several ended up in
-Vierna, which is why Vierna's records of the Sinter experiment are more complete than
-the Liturgy's official account. Vierna knows what happened. Vierna has made the
-institutional decision that knowing what happened is more valuable than telling anyone.
+The immediate destruction was catastrophic but survivable — Sinter's valley communities had
+enough warning from the impact's approach-light to evacuate toward the mountain passes. The
+deeper consequence was geological and permanent. The bolide punched through the alpine
+foundation rock at the exact coordinates where the membrane's underground distribution was
+thickest — not one installation's basement, but the geological substrate that the entire
+valley Scrywell array had been anchored to for three hundred years. When the rock fractured,
+the fractures ran along the membrane's underground paths. The membrane did not separate from
+the damaged substrate. It poured through it.
 
-**What Sinter represents:** The question that cannot be safely asked. The experiment that
-answers more than the experimenter wanted to know.
+The magma flows began on the third day. They have not fully stopped. The valley floor is,
+in Year 1700, a landscape of cooling and re-cooling stone interrupted by active seismic
+venting and a dozen persistent lava tubes whose outlets have been moving slowly outward for
+six hundred years. The membrane cracks — the rupture points where the bolide's fracture
+lines broke the Scrywell array's containment — leak uncontrolled Sphere access at
+ground level. No apparatus governs what comes through. No Lector administers what emerges.
+
+What emerges is everything the controlled Scrying process keeps orderly: raw Gifted matter
+in unguided quantities, fauna from Spheres that no catalogue has reached, the unmediated
+output of a membrane that was never quiet even when contained and is now operating without
+containment across a zone thirty kilometers wide and expanding.
+
+**The Great Quarantine.** The six surviving Houses established the joint quarantine within
+three years of the Meteor Event. This is the only act in the Cauld's history that all
+surviving Houses have signed simultaneously, regardless of coalition alignment, regardless
+of active war between them. The Quarantine Compact (Year 1082) established:
+
+- Vierna, Ocipheus, and Atrament maintain the physical fortifications: the Quarantine Wall,
+  a continuous ring of sealed stone and membrane-treated barrier at the valley's mountain
+  margins, with watch-towers, sealing operations, and staffed posts at every natural approach
+- Pallor, Lacerta, and Calyx provide monetary assessment and supply: quarterly contributions
+  to the Wall's maintenance, emergency response reserves, and specialist labor contracts
+- The Liturgy administers the Quarantine as its institutional mandate, separate from its
+  House-affiliated functions; the Quarantine Administration is the Silence's most public role
+
+The Quarantine Wall is the only place in the Cauld where enemies stand adjacent posts without
+fighting. A Fjorheim conscript and a Lacerta intelligence operative may be stationed at
+neighboring watch-towers on the Wall during a period when their Houses are at active war
+on every other front. They do not fight. The Quarantine Compact's terms include a specific
+prohibition on inter-House violence within five hundred meters of the Wall, enforced not by
+any individual House but by the Liturgy's Quarantine Administration. The Giants — the
+transformed Champions who escort Ocipheus ships through Vierna's waters — also hold
+rotational posts on the Wall. They are the only force in the Cauld that the Quarantine
+Administration commands directly.
+
+**The Descents.** The cracked valley is the richest concentration of location-specific Sphere
+access in the Cauld. No other territory holds what the Sinter zone holds. Houses have been
+running controlled expeditions — the Descents — into the zone since Year 1140, when the
+Wall was stable enough to re-enter through. The Liturgy administers permission for every
+Descent. No House enters the zone without a Liturgy-issued charter specifying the expedition's
+duration, personnel, and target coordinates. Most Descents do not return in full. The ones
+that return bring back Sphere access that cannot be reached from any other point in the Cauld,
+Catalyst material in forms no refinery has previously processed, and sometimes people who
+describe, on their return, having perceived the membrane as something that was already watching
+them before they found it.
+
+What comes out of the cracks without being brought out — the uncontrolled emergence events —
+is what the Quarantine Wall exists to contain. The quarantine record documents 1,847 containment
+events between Year 1082 and Year 1700. Of those, 203 resulted in material that escaped the
+Wall before being neutralized. The record is specific about what escaped and vague about what
+happened to it afterward. The Quarantine Administration keeps a separate ledger. The ledger
+is sealed.
+
+**Sinter's surviving people.** Most evacuated through the eastern passes into Calyx territory.
+Their practitioners — the diplomatic membrane-readers, the arbitration specialists — dispersed
+to Vierna primarily, which absorbed the Sinter scribal tradition wholesale and built the
+institutional framework of the Deep Archive partly from Sinter's original dispute-resolution
+records. This is why Vierna's record of the Sinter Event is more complete than the Liturgy's
+official account. Vierna received the survivors. Vierna received the records. Vierna made the
+institutional calculation that knowing what happened at Sinter is worth more than sharing it.
+
+The conspiracy that circulates quietly in taverns near the Wall, among soldiers who have been
+on long Quarantine rotations and have had time to think: the Liturgy knew the bolide was
+coming. They observed it through a Sphere that showed the impact's origin trajectory. They
+did not warn Sinter. When the House of Peacemakers was destroyed, the role of arbiter — the
+neutral administrative function that Sinter had held and the Liturgy had always coveted —
+passed to the Liturgy by default. The Liturgy now administers the Compact disputes Sinter
+once resolved. The Liturgy now runs the Quarantine that was built on Sinter's ruin. The
+Liturgy's Silence gained more from Sinter's fall than from any other single event in the
+Cauld's history.
+
+This is in no formal record. It is said quietly. It has been said quietly for six hundred years.
+
+**What Sinter represents:** The neutral party that cannot protect itself. The peace that was
+unmade not by war but by what fell from outside the war's logic entirely. The conspiracy
+nobody can prove because the people who could prove it are the people who would have to
+admit it.
 
 ---
 
