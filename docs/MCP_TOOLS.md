@@ -11,7 +11,7 @@
 > All tools are MCP-prefixed `mcp__streetsamurai__<name>` by the client. Most return a
 > JSON string; the canon is the SQL database, scoped to the active Universe.
 
-**225 tools** across **33 tool families.**
+**226 tools** across **33 tool families.**
 
 ## Families
 
@@ -48,7 +48,7 @@
 | [Voice](#voice) | 5 |
 | [Workflow Monitor](#workflow-monitor) | 3 |
 | [World Entity Crud](#world-entity-crud) | 5 |
-| [World Modelling](#world-modelling) | 15 |
+| [World Modelling](#world-modelling) | 16 |
 | [Writing](#writing) | 3 |
 
 ## Beat Lens
@@ -1767,6 +1767,12 @@ Returns the sensory detail palette for a character's carried gear. Inject the re
 
 - `characterId` (string, required) — Character entity GUID
 - `asOfDate` (string, optional) — Story-date filter (ISO 8601). Omit for current carry edges.
+
+### `get_character_equipment`
+
+Returns a character's full equipment across all slots: primary/secondary/ranged weapons, armor, tool, signature gear, pharmaceuticals, and carried loot. Use for scene continuity, loot tracking, and loadout management.
+
+- `characterSlug` (string, required) — Character entity slug (e.g. 'kyle_ellen_corbin', 'sasha_vo').
 
 ### `get_character_loadout`
 

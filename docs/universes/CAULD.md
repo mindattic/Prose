@@ -152,6 +152,44 @@ materials — only the design crossed. Nothing physical moves in standard Scryin
 
 ---
 
+### Minor Scryers and Focus Instruments {#CAULD-scrying-rod}
+
+The major Scrying apparatus is an installation — fixed, maintained, and operated by trained
+practitioners under House or Liturgy authorization. But minor Scrying is personal: a gift of
+limited range and shallow depth, requiring no apparatus, only the practitioner and sometimes
+a focus instrument to extend what the gift can reach.
+
+**Scrying Rods** are the most common focus instrument: a dense, membrane-adjacent mineral
+compound — typically a dark stone that holds Catalyst preparation for weeks between uses —
+set in a housing with a grip. They amplify a minor scryer's range from hundreds of meters to
+kilometers, and their depth from hours to days. The cost is unpredictability: the Rod picks
+up what the membrane is holding, not only what the practitioner asked for.
+
+**The Rod's second capability: force-pierce.** A Scrying Rod held by a sufficiently skilled
+minor scryer can do more than observe. By pressing the mineral tip against a location the
+scryer has just Scried, and applying deliberate pressure through the Rod's Catalyst preparation,
+the scryer can force the observation wound open — create a true aperture rather than a
+shallow visual contact. This is not a controlled Piercing. What comes through is whatever
+the pressure gradient on the far side is carrying, and the scryer has no mechanism to control
+duration, volume, or species. The aperture closes when the Catalyst preparation in the Rod
+is expended (typically fifteen to thirty seconds).
+
+The Liturgy classifies this as unauthorized Membrane Perforation if done outside sanctioned
+apparatus. In practice, minor scryers who can force-pierce without dying are rare enough that
+no enforcement precedent exists. The capability is poorly documented because practitioners
+who attempt it without a focus instrument simply tear the membrane with their gift and die
+of vascular failure. With a Rod, the act is survivable. What comes through is not always so.
+
+**What a force-pierce releases:** Whatever was on the far side of the membrane, subject to
+pressure differential. If creatures were pressed against the membrane from their side — drawn
+by something, driven by a predator, massed at a thin-membrane site — they come through. A
+prior scry shows the practitioner what is there. It does not show pressure state. You see
+ten creatures. You force-pierce. Hundreds come through because something behind them was
+driving them toward the membrane that your prior scry had no angle on. This is not failure
+or error. This is the nature of the instrument.
+
+---
+
 ## Piercing the Membrane
 
 **A different act. A rarer capability. A harder thing.**
@@ -1804,8 +1842,10 @@ have always been here.**
 
 Two categories of living thing in the Cauld:
 
-**Animals** — the normal ecology. Sheep, cattle, fish, horses, birds. They behave as living
-things do. They make sense.
+**Animals** — the normal ecology. Sheep, cattle, fish, birds. They behave as living
+things do. They make sense. There are no horses in the Cauld — the Heloth construct replaced
+draft animals before horses could establish. Sphere-origin fauna has filled ecological niches
+horses might have occupied, but none of them are horses.
 
 **Monsters** — always present alongside the natural world. Not recently arrived. Not supernatural.
 Biological, and terrible, and wrong in ways the ecology cannot account for. A child knows the
@@ -1837,7 +1877,7 @@ Does not look too closely at the faces.
 
 The Oathless have the highest Monster Meat exposure rate. This is not coincidence. This is what
 happens to people the system abandons. The same House that administers Xerum 525 to its loyal
-Myrmidons — structured, certified, beautiful at its best — leaves its discarded people to
+Knights — structured, certified, beautiful at its best — leaves its discarded people to
 eat the unguided version. The process is identical. The outcome is not.
 
 **Hard bans:**
@@ -1928,7 +1968,7 @@ No House owns the Old Rite. This is part of why soldiers practice it.
 | **Piercing the membrane** | Tearing through the stretched membrane and taking a physical object or person; the tear appears to close; what it leaves behind is not recorded; the origin Sphere has only the absence |
 | **Sphere** | A parallel Earth; a parallel history |
 | **Colchester naming** | Informal naming for objects acquired by piercing: called by origin-Sphere location and date (e.g., *Colchester 1648*); not catalogued — the name is just what it gets called |
-| **Myrmidon** | Professional soldier; House service record |
+| **Myrmidon** | A person pierced from another Sphere and conscripted into House military service; slave-soldier; the word is the Liturgy's administrative term, not the conscript's own |
 | **Champion** | Soldier fully Transmuted past House designation — named, not designated |
 | **Transmutation** | Analytical term for the biological process; not used in casual in-world speech |
 | **The Gifted Ceremony** | In-world name for Transmutation; sacred rite administered by the Liturgy |
@@ -1961,3 +2001,308 @@ Pneumagration, Reshelled, Grafted (for consciousness), Spliced, Spark State, Loo
 QE Link, The Infusion (as consciousness procedure), Shell (as machine body for a hosted
 consciousness), Myrmidon Shell (as robot chassis), Ungrafted, Unheld, Lanternkin, Guttering,
 Aesir, Vanir.
+
+---
+
+## Myrmidon {#SS-CAULD-MYRMIDON}
+
+A Myrmidon is a person taken from another Sphere by Piercing and conscripted into House military
+service. The word is the Liturgy's administrative term. No conscript chose it. The intake oath
+is administered before language acquisition — before the person can understand what they are
+agreeing to. The Liturgy calls this "efficient processing."
+
+**Key distinctions:**
+- Myrmidons are NOT on the Transmutation rank ladder. They are not rewarded with infusions.
+- Native Cauld soldiers (soldiers, Knights, Paladins, Champions) are NOT Myrmidons.
+- A Myrmidon who deserts has no legal status in any House territory.
+- The Liturgy's catalogue numbers the Spheres from which Myrmidons are sourced (Sphere 1, Sphere
+  14, Sphere 22, Sphere 31, etc.). This catalogue is classified. The numbers go very high.
+
+**Hard bans:**
+- Do not use "Myrmidon" as a synonym for "soldier." A Myrmidon is specifically a conscript
+  from another Sphere.
+- Do not sentimentalize the intake. The oath was designed not to require consent.
+
+---
+
+## Order of the Wall {#SS-CAULD-ORDER-WALL}
+
+The formal administrative body of the Sinter quarantine. A Liturgy sub-organization. Not a House
+military force — the Order draws personnel from all Houses under Liturgy charter, operates under
+the Greater Good compact, and answers to the Canon Immaculate rather than any Warrior King.
+
+**Function:**
+- Staffs and maintains the Quarantine Wall around the Sinter zone
+- Administers the Descent Corps (expeditionaries who enter Sinter)
+- Issues crossing permits for legitimate research and recovery operations
+- Records breach events, creature incursions, and membrane anomalies at the Wall boundary
+
+**Personnel:** Mixed-House soldiers serving on rotation (typically 18-month postings), plus Order
+Specialists (permanent staff with deep Wall knowledge). A Wall veteran's most recognized saying:
+*Sinter remembers even if we don't.*
+
+**The Descent Corps:** Chartered expeditionaries who enter the Sinter zone for recovery, research,
+and containment. Approximately 40% full-return rate. What they find inside is classified at the
+Order level; only summary reports reach the Canon.
+
+**Eirene's Gate:** Primary northern checkpoint. Named for Eirene, the last Sinter champion,
+who died at this location in Year 1081, two years after the Meteor Event. The other Houses built
+the Gate after Sinter became impassable. The naming is a courtesy to a House that no longer
+exists to object.
+
+---
+
+## Heloth Constructs {#SS-CAULD-HELOTH}
+
+Two-legged steam-chemical machines, approximately 3m tall. The dominant non-human labor
+and transport technology of the Cauld. Named for an extinct Southlands draft animal they replaced.
+
+**Power:** Steam-chemical plant in the torso housing. Burns alchemical fuel compounds; vents
+from ports along the rib-analog panels. The exhaust has a distinctive chemical-organic smell.
+Ember-fungi grow on abandoned or poorly-maintained Heloth discharge ports.
+
+**Variants:**
+- **Freight/labor:** Hauling, construction, agriculture (Calyx), Wall maintenance. The workhorse.
+- **Courier:** Single-rider; shoulder housing seating; fast across open terrain; bone-jarring;
+  all-weather capable.
+- **Battle rig (BR-7 class):** Atrament's military variant. Heloth chassis with weapons
+  integration and armor plating. Full pilot-immersive control. Some pilots fuse to their rigs
+  due to medical-surgical injury (see: Kressida Haun, VIGL).
+
+**Behavioral observation:** Freight Heloths exhibit what practitioners describe as "preference" —
+they route around known obstacles they were never explicitly programmed to avoid; they idle toward
+repair stations; they stop at the same intervals. Atrament engineers classify this as mechanical
+conditioning. The question of interiority is not examined in the literature.
+
+**Hard rule:** There are no horses, no beasts of burden in the Cauld. Heloths replaced draft
+animals. Slaves do fine labor Heloths cannot manage. Personal riding is done on Heloth courier
+variants or not at all.
+
+---
+
+## Alchemy and Tinctures {#SS-CAULD-ALCHEMY}
+
+Alchemy is the Cauld's applied science of controlled chemical-catalytic reactions. It shares its
+formal notation with Scrying data blocks — same form, same precision, different subject. The
+notation's appearance in prose signals a shift from narrative to documentation.
+
+**The notation format:**
+```
+PREPARATION: [Name] — [function]
+CATALYST CLASS: [None (locally sourced) | Catalyst-derived | Catalyst-adjacent | Restricted]
+APPLICATION: [method]; onset [time]
+CONTRAINDICATION: [conditions]
+```
+
+**The five tinctures (standard field kit):**
+- **Red Tincture** — Stimulant; Catalyst-derived; onset 2 minutes; increases physical output and
+  mental alertness for 4–6 hours; post-use crash is significant; do not stack doses.
+- **Black Tincture** — Coagulant; locally sourced (no Catalyst component); onset 3–7 minutes;
+  topical application to wound sites; standard military field medicine.
+- **Grey Tincture** — Analgesic; membrane-adjacent compound; onset immediate; deadens pain
+  without impairing function; mild membrane-sensitivity dampening as side effect.
+- **White Tincture** — Antitoxin; broad-spectrum; specifically counteracts Dissolution Blade
+  compound and Sinter zone biological toxins; onset 5 minutes.
+- **Gold Tincture** — Catalyst-adjacent; restricted; Lyra carries one emergency dose; triggers
+  accelerated biological repair at the cost of an uncontrolled micro-infusion; do not use without
+  medical supervision; one dose is the maximum safe exposure outside a certified Ceremony setting.
+
+**Alchemy and Transmutation are the same system at different scales.** The tincture notation and
+the Ceremony notation use identical forms because they emerge from identical underlying science.
+This parallel is never stated in the prose — it is shown through the notation.
+
+---
+
+## Alchemical Weapons {#SS-CAULD-WEAPONS}
+
+Weapons whose damaging effect is produced by a controlled chemical-catalytic reaction. Many
+designs incorporate Scried technology from other Spheres (Atrament Scries weapons-development
+Spheres systematically). The alchemy is the science; the Scrying provides the engineering template.
+
+**Hybrid weapons (blade + chemical or mechanical):**
+
+**Split-Shot** (Atrament): Single-edge short-sword where the blade's spine houses a
+breach-loaded single-shot mechanism firing a Catalyst-accelerant slug. At close quarters: blade
+on the forward motion, fire on the pull-back. The slug produces a distinctive blue flash on
+discharge. Reloading in combat is slow — one shot per engagement, so the blade is primary.
+Kressida Haun carries a Split-Shot mounted to the BR-7's forearm housing.
+
+**Arc Spear** (Fjorheim, Scried): The shaft is a galvanic column — two alchemical compounds in
+separate sealed chambers running the length of the haft. On contact with ferrous metal (armor,
+battle rigs, Heloth chassis), the tip's impact cracks the divider and lets the compounds mix.
+The resulting discharge is electrochemical — a genuine arc. Variable intensity based on how much
+of the shaft's charge has been pre-mixed. Range fighters carry these against Heloth and battle-rig
+targets. Kressida's rig is specifically vulnerable.
+
+**Frost Lance** (Fjorheim cold-chemistry variant): Cryogenic compound instead of galvanic; the
+impact produces a localized freeze effect on contact. Used against flesh and biological targets.
+The Order of the Wall's Descent Corps uses Frost Lances against Sinter zone overflow creatures.
+
+**Dissolution Blade** (Ocipheus): Narrow double-edge treated with a Catalyst-derived etching
+compound held in porous ceramic channels along the blade. On contact, the compound bleeds into
+the wound and inhibits biological coagulation. Slow death if untreated. White Tincture is the
+specific antidote. Dame Lyra's service blade is this pattern.
+
+**Armor:**
+
+**Atrament reaction plate:** Standard Atrament heavy plate with an alchemical bath treatment
+that makes it resistant to Catalyst-adjacent reactions — specifically resistant to Transmutation
+acceleration and to some Eater of Monsters attacks. Battle rigs are plated with this.
+
+**Lacerta layered shell:** Light armor with a shear-thickening compound woven into fabric layers.
+Normal flexibility under slow movement; hardens on sharp impact. Looks like nothing. Tavar wears
+this under his coat.
+
+**Ocipheus vigil plate:** Specifically tuned for long-watch proximity to the membrane. The surface
+treatment dampens the attunement buildup that develops in operators during extended membrane
+proximity. Lyra's standard service kit.
+
+---
+
+## Membrane Tear — Battle Scrying {#SS-CAULD-MEMBRANE-TEAR}
+
+Some battle-Scryers have developed the ability to force-tear the membrane open mid-engagement
+rather than merely observing through it. This is not standard Scrying. It is a weaponized
+rupture: the membrane is torn to full permeability at a combat site, allowing whatever is
+immediately adjacent on the other Sphere's side to flood through.
+
+**What comes through:** Whatever was there. The selection is random — the tear opens on whatever
+Sphere happens to be adjacent at that membrane site, and whatever organisms, materials, or
+atmosphere were at that location on the other side cross in a sudden decompression event. This
+is called a **Flood.**
+
+**The Flood's character:** Witnesses describe a mass crossing event as resembling the simultaneous
+disgorging of an entire ecosystem — creatures from an alien ecology, all suddenly present in Cauld
+air, wet with whatever atmosphere or liquid medium they were just removed from, panicking,
+disoriented, running toward the nearest heat or movement. Most die within minutes in Cauld
+atmosphere. During those minutes they are terrifying. A Flood involving aquatic creatures produces
+a short-lived mass drowning-in-air event. A Flood involving atmospheric creatures (gas-giant
+organisms) produces chemical burns and explosive decompression events. A Flood involving ground
+predators produces a few minutes of uncontrolled multi-species predation before the atmosphere
+kills the crossers. The Cauld soldiers who have seen a Flood do not describe it clearly. They use
+the word *seafood* as slang — a specific kind of wrong that no other word covers.
+
+**Cost:** Tearing the membrane is not the same as wounding it during a controlled Scry. A tear
+at a battle site damages the membrane significantly at that location. Healing is slow. Repeated
+tears can create permanently compromised membrane zones. The Liturgy considers this practice
+a war crime under the Compact — not because of the enemy casualties, but because of what it
+does to the membrane.
+
+**Who uses it:** Rare. Requires sustained high-level Transmutation and years of membrane-proximity
+work at a Scrying installation. Only the most advanced practitioners with institutional access
+have the capability. Its use in open battle is documented in three engagements in the Cauld's
+history. In each case, the practitioner was subsequently censured by the Liturgy.
+
+**Hard ban:** Do not portray Flood events as controlled or predictable. The practitioner does not
+choose what comes through. A Flood is a weapon of desperation and terror, not precision.
+
+---
+
+## Eaters of Monsters {#SS-CAULD-EATERS}
+
+Fjorheim wildmen who undertake self-directed Transmutation outside the Liturgy's sanction. Three
+generations of accumulated practice. No certified practitioner. No controlled Ceremony. They
+obtain Catalyst through Wall-sector raids and black-market acquisition and administer it in
+unsupervised ceremony, accumulating infusions across years in directions no Liturgy research has
+charted.
+
+**Origin:** The Winter of Year 1193 — a Wall breach in the Fjorheim sector allowed a sustained
+overflow event that killed 1,100 people in a village the Order of the Wall's Descent Corps
+reached three weeks after the fact. A group of Fjorheim survivors who had been fighting the
+overflow for those three weeks, without Liturgy sanction, were subsequently tried for conducting
+unsanctioned Transmutation. They were convicted and executed publicly. What the executed said from
+the scaffold became the Eaters' founding text, passed down orally for three generations.
+
+**What they do:** They hunt the things that come through Wall breaches. Sinter Hounds specifically
+(eating Sinter Hound meat produces a specific Transmutation effect the Eaters have refined
+empirically). They also hunt the larger overflow predators that the Order of the Wall cannot
+contain. They are not affiliated with any House or the Liturgy. They operate in the perimeter
+zone independently.
+
+**What they look like:** An Eater of Monsters who has taken many unsanctioned infusions looks
+like what the Gifted Ceremony might produce if administered twenty times without guidance and
+the recipient survived every dose. The Liturgy says this is what failed Transmutation looks like.
+It does not look like failure. It looks like something the Houses cannot contain or designate —
+which is exactly what frightens them about it.
+
+**Thematic function:** The Eaters are what Transmutation is when the Liturgy does not control it.
+They force the question: is the Liturgy's sanction protecting people from Transmutation's danger,
+or protecting Transmutation's power from people?
+
+**Hard bans:**
+- The Eaters are not condemned in prose. They are shown. The Liturgy's verdict is noted; the
+  reader is not told what to think.
+- Do not portray their Transmutation as uniformly successful. Some Eaters have failed. The
+  founding text acknowledges this. Three-generation knowledge has filtered for survival, not
+  for clean outcomes.
+
+---
+
+## Sphere-Origin Ecology — The Contaminated World {#SS-CAULD-SPHERE-ECOLOGY}
+
+The Cauld's ecology has been contaminated by Sphere-origin organisms for 1,700 years. The
+contamination is ongoing. Every Scrying event is a wound in the membrane; every Piercing is a
+tear; every tear allows adjacency of Sphere ecologies that were never meant to coexist.
+
+**What this means in practice:**
+- Every thin-membrane site is ringed by dead things that couldn't survive the crossing.
+- Every long-established Scrying installation has generations of Sphere-origin organisms in its
+  surrounding ecology — some dead, some adapted, some still dying slowly.
+- The Wall perimeter is carpeted. The Forge Hearth zone accumulates dead things in geological
+  layers. Practitioners learn to read the strata.
+- The Cauld's natural historians record new species every generation. Most of them are
+  Sphere-origin. None of them are documented as such in mainstream natural history.
+
+**The Death Stranding layer:** The world is littered with things that didn't make it. Not
+threatening — just present. A field of creatures that died upright and stayed upright. A stone
+face stained in the dissolved outline of something that was never meant to breathe here. The
+smell at old crossing sites that has no origin in Cauld chemistry.
+
+See `docs/nodes/VIGL.md §6` for the full species compendium established in this story.
+
+**Key species established in Cauld canon (see compendium for full descriptions):**
+
+*Living survivors:*
+Sinter Crawler, Wall Tender, Sinter Hound, Pale Marchers, Membrane Lamprey, The Crows,
+Glass Teeth, Deepvine Parasitoid, Sky Eels, The Fork, Channel Drift-Bell, Schmalburg River-Flash,
+Lodestone Grazer, Arc Singer, Atmospheric Bladder Whale (dead), Trench Lattice, Pale Architect,
+Vein Eel, Colony Polyp, Swarm Fragment, The Gape, Ashback, Fruiting Body, The Heavy,
+Membrane Orchid, The Germinate.
+
+*Dead/stranded:*
+Glass Whales, Frost Leviathans, The Still Faces, Singing Spires (standing-dead fields), Bark
+Crawlers, The Drowned, The Standing Dead, Compressed Ghosts, The Soft Things, The Sleepers,
+Crystal Shepherd, Glass Bloom, Radiant Bloom, Deep Bloom, Crown Leviathan, Laminar Sail,
+Drift Jelly, The Burning Herd, Network Nodes, The Still, The Flat, Backward Walker.
+
+*Membrane-adjacent phenomena:*
+The Impression, Membrane Kelp, The Herd (partial-crossing).
+
+---
+
+## Travel — No Horses, No Beasts of Burden {#SS-CAULD-TRAVEL}
+
+The Cauld has no horse analogue. The Heloth construct replaced draft animals before horses could
+establish as a primary transport species. Sphere-origin fauna has filled some ecological niches,
+but none of them are rideable or domesticated.
+
+**Modes of transport:**
+
+| Mode | Speed | Notes |
+|---|---|---|
+| **Airship** (*Meridian* class) | Fast | WW2-Sphere flying-boat hybrid; water-landing capable; Lacerta-registered; requires Scried petroleum fuel |
+| **Atrament rail** | Medium-fast | Fixed Rhine/Danube-analog valley routes; military and civilian mix; Scried 19th-century technology |
+| **Heloth courier** | Medium | Single-rider; shoulder housing; all terrain; bone-jarring; fast in open country |
+| **Heloth-drawn transport cart** | Slow-medium | Road-bound; commercial; several passengers plus freight |
+| **River barge** | Slow | Vierna interior primarily; commercial; primary cover transport |
+| **Sea vessel** | Slow | Pallor and Lacerta coastal operations |
+| **Walking** | Slowest | Universal; mountain pass default |
+
+**Slave labor:** Where Heloths cannot work (fine construction, dockwork, interior hauling,
+domestic service), slaves do it. The Houses call it servitude-under-compact; the Liturgy calls
+it resettlement service; the people doing it cannot name it when they arrive because they have no
+language for it yet. It is the same process as Myrmidon military conscription, routed differently
+at intake.
+
+**Hard rule:** No horses appear in Cauld prose. No beasts of burden. No riding animals. Heloths
+or walking or vehicle or vessel.

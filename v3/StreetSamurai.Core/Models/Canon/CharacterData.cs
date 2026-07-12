@@ -194,6 +194,9 @@ public class CharacterBelongings
     [JsonPropertyName("comm_device")] public string CommDevice { get; set; } = "";
     [JsonPropertyName("signature_gear")] public List<string> SignatureGear { get; set; } = [];
     [JsonPropertyName("pharmaceuticals")] public List<string> Pharmaceuticals { get; set; } = [];
+    [JsonPropertyName("ranged_weapon")] public string RangedWeapon { get; set; } = "";
+    [JsonPropertyName("tool_slot")] public string ToolSlot { get; set; } = "";
+    [JsonPropertyName("carried_loot")] public List<string> CarriedLoot { get; set; } = [];
     [JsonPropertyName("other")] public Dictionary<string, string> Other { get; set; } = new();
 }
 

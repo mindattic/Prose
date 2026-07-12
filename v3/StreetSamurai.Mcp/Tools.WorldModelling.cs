@@ -188,6 +188,56 @@ public class WorldModellingTools(
     }
 
     [McpServerTool, Description(
+        "Returns a character's full equipment across all slots: primary/secondary/ranged weapons, " +
+        "armor, tool, signature gear, pharmaceuticals, and carried loot. " +
+        "Use for scene continuity, loot tracking, and loadout management.")]
+    public async Task<string> GetCharacterEquipment(
+        [Description("Character entity slug (e.g. 'kyle_ellen_corbin', 'sasha_vo').")] string characterSlug)
+    {
+        await using var db = await dbFactory.CreateDbContextAsync();
+
+        var entity = await db.Entities.AsNoTracking()
+            .Where(e => e.EntityType == "character" && e.Slug == characterSlug && e.IsActive)
+            .Select(e => new { e.Id, e.Name })
+            .FirstOrDefaultAsync();
+
+        if (entity == null)
+            return JsonSerializer.Serialize(new { error = "not_found", characterSlug }, CanonTools.JsonOpts);
+
+        var gear = await db.CharacterBelongingsGear.AsNoTracking()
+            .Where(g => g.CharacterId == entity.Id)
+            .OrderBy(g => g.Bucket).ThenBy(g => g.Position)
+            .Select(g => new { g.Bucket, g.Position, g.GearName })
+            .ToListAsync();
+
+        var extras = await db.CharacterBelongingsExtras.AsNoTracking()
+            .Where(x => x.CharacterId == entity.Id)
+            .Select(x => new { x.KeyName, x.Value })
+            .ToListAsync();
+
+        string Primary(string bucket)
+            => gear.Where(g => g.Bucket == bucket).OrderBy(g => g.Position).Select(g => g.GearName).FirstOrDefault() ?? "";
+
+        List<string> List(string bucket)
+            => gear.Where(g => g.Bucket == bucket).OrderBy(g => g.Position).Select(g => g.GearName).ToList();
+
+        return JsonSerializer.Serialize(new
+        {
+            character        = entity.Name,
+            characterSlug,
+            primary_weapon   = Primary("primary_weapon"),
+            secondary_weapon = Primary("secondary_weapon"),
+            ranged_weapon    = Primary("ranged_weapon"),
+            armor            = Primary("armor"),
+            tool_slot        = Primary("tool_slot"),
+            signature_gear   = List("signature_gear"),
+            pharmaceuticals  = List("pharmaceuticals"),
+            carried_loot     = List("carried_loot"),
+            other            = extras.ToDictionary(x => x.KeyName, x => x.Value),
+        }, CanonTools.JsonOpts);
+    }
+
+    [McpServerTool, Description(
         "Returns every beat flagged EntityStale — i.e. a canon entity mentioned in " +
         "the beat was updated after the beat was written. Grouped by node. " +
         "Review each beat and call clear_entity_stale when satisfied.")]

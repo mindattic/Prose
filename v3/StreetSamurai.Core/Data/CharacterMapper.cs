@@ -571,6 +571,10 @@ public static class CharacterMapper
             FavoriteFood    = PrimaryFromBucket("favorite_food"),
             Stimulant       = PrimaryFromBucket("stimulant"),
             CommDevice      = PrimaryFromBucket("comm_device"),
+            RangedWeapon    = PrimaryFromBucket("ranged_weapon"),
+            ToolSlot        = PrimaryFromBucket("tool_slot"),
+            CarriedLoot     = c.BelongingsGear.Where(x => x.Bucket == "carried_loot")
+                                              .OrderBy(x => x.Position).Select(x => x.GearName).ToList(),
             SignatureGear   = c.BelongingsGear.Where(x => x.Bucket == "signature_gear")
                                               .OrderBy(x => x.Position).Select(x => x.GearName).ToList(),
             Pharmaceuticals = c.BelongingsGear.Where(x => x.Bucket == "pharmaceuticals")
