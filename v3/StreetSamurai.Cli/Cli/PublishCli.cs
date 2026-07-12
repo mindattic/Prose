@@ -1,4 +1,4 @@
-﻿using Microsoft.EntityFrameworkCore;
+using Microsoft.EntityFrameworkCore;
 using StreetSamurai.Core.Data;
 using StreetSamurai.Core.Data.Entities;
 using StreetSamurai.Core.Services;
@@ -6,12 +6,13 @@ using StreetSamurai.Core.Services;
 namespace StreetSamurai.Cli;
 
 /// <summary>
-/// <c>ss --publish-docx (--id &lt;guid|prefix&gt; | --slug &lt;slug&gt;) [--author "Name"] [--export-dir &lt;path&gt;]</c>
-/// — render a node to a KDP-ready EPUB + Word .docx + PDF in the configured publish
-/// directory (Desktop fallback). <c>--export-dir</c> overrides and persists
-/// <c>PublishExportDirectory</c> for all three formats.
+/// <c>ss --publish (--id &lt;guid|prefix&gt; | --slug &lt;slug&gt;) [--author "Name"] [--export-dir &lt;path&gt;]</c>
+/// — render a node to .docx + .epub + .pdf + .txt in the configured publish
+/// directory (Desktop fallback). Also writes <c>description.txt</c> when
+/// <c>Node.Description</c> is set. <c>--export-dir</c> overrides and persists
+/// <c>PublishExportDirectory</c> for all formats.
 /// </summary>
-public static class PublishDocxCli
+public static class PublishCli
 {
     public static async Task<int> RunAsync(string[] args, IServiceProvider services)
     {
@@ -28,7 +29,7 @@ public static class PublishDocxCli
         }
         if (string.IsNullOrWhiteSpace(id) && string.IsNullOrWhiteSpace(slug))
         {
-            Console.Error.WriteLine("[publish-docx] One of --id or --slug is required.");
+            Console.Error.WriteLine("[publish] One of --id or --slug is required.");
             return 1;
         }
 
@@ -42,7 +43,7 @@ public static class PublishDocxCli
             var settings = services.GetRequiredService<SettingsService>();
             settings.PublishExportDirectory = exportDir!;
             settings.Flush();
-            Console.WriteLine($"[publish-docx] PublishExportDirectory set to: {exportDir}");
+            Console.WriteLine($"[publish] PublishExportDirectory set to: {exportDir}");
         }
 
         Guid nodeId; string nodeTitle;
@@ -54,7 +55,7 @@ public static class PublishDocxCli
             else if (Guid.TryParse(id, out var g)) node = await q.FirstOrDefaultAsync(s => s.Id == g);
             else node = await q.Where(s => s.Id.ToString().StartsWith(id!.ToLower())).Take(2).ToListAsync() switch
             { { Count: 1 } m => m[0], _ => null };
-            if (node == null) { Console.Error.WriteLine("[publish-docx] Node not found."); return 1; }
+            if (node == null) { Console.Error.WriteLine("[publish] Node not found."); return 1; }
             nodeId = node.Id; nodeTitle = node.Title;
         }
 
@@ -62,73 +63,53 @@ public static class PublishDocxCli
         var detected = await mojiChecker.DetectNodeAsync(nodeId);
         if (detected.BeatsAffected > 0)
         {
-            Console.Error.WriteLine($"[publish-docx] ❌ Mojibake detected in {detected.BeatsAffected} beat(s) — run 'ss --repair --fix-mojibake' to correct before publishing.");
+            Console.Error.WriteLine($"[publish] ❌ Mojibake detected in {detected.BeatsAffected} beat(s) — run 'ss --repair --fix-mojibake' to correct before publishing.");
             foreach (var hit in detected.Hits.Take(5))
                 Console.Error.WriteLine($"  beat {hit.BeatId}: {hit.Excerpt[..Math.Min(80, hit.Excerpt.Length)]}");
             return 1;
         }
 
-        Console.WriteLine($"[publish-docx] Rendering \"{nodeTitle}\" to .docx + .epub + .pdf + .txt…");
+        Console.WriteLine($"[publish] Rendering \"{nodeTitle}\" to .docx + .epub + .pdf + .txt…");
         try
         {
             // docx first — it increments node.Version; epub + pdf + txt then read the same version.
             var docxPath = await docx.ExportNodeAsync(nodeId, author);
-            Console.WriteLine($"[publish-docx] Wrote docx: {docxPath}");
+            Console.WriteLine($"[publish] Wrote docx: {docxPath}");
             var epubPath = await manuscript.ExportEpubAsync(nodeId, author);
-            Console.WriteLine($"[publish-docx] Wrote epub: {epubPath}");
+            Console.WriteLine($"[publish] Wrote epub: {epubPath}");
             var pdfPath = await manuscript.ExportPdfAsync(nodeId, author);
-            Console.WriteLine($"[publish-docx] Wrote pdf:  {pdfPath}");
+            Console.WriteLine($"[publish] Wrote pdf:  {pdfPath}");
             var txtPath = await manuscript.ExportAudioTxtAsync(nodeId, author);
-            Console.WriteLine($"[publish-docx] Wrote txt:  {txtPath}");
+            Console.WriteLine($"[publish] Wrote txt:  {txtPath}");
 
             // ── post-publish mojibake validation ────────────────────────────────
             var docxHits = MojibakeRepairService.CountDocxMojibake(docxPath);
             if (docxHits > 0)
-                Console.Error.WriteLine($"[publish-docx] ⚠  {docxHits} mojibake sequence(s) found in exported .docx — run 'ss --repair --fix-mojibake' then re-export.");
+                Console.Error.WriteLine($"[publish] ⚠  {docxHits} mojibake sequence(s) found in exported .docx — run 'ss --repair --fix-mojibake' then re-export.");
             else
-                Console.WriteLine("[publish-docx] ✓ Mojibake check passed.");
+                Console.WriteLine("[publish] ✓ Mojibake check passed.");
 
-            // ── keywords.txt + synopsis.txt ──────────────────────────────────────
+            // ── description.txt ──────────────────────────────────────────────────
             await using (var db2 = await dbFactory.CreateDbContextAsync())
             {
-                var meta = await db2.Nodes
+                var description = await db2.Nodes
                     .AsNoTracking()
                     .Where(n => n.Id == nodeId)
-                    .Select(n => new { n.Description, n.BackCoverCopy })
+                    .Select(n => n.Description)
                     .FirstOrDefaultAsync();
-
-                var kws = await db2.NodeKeywords
-                    .Where(k => k.NodeId == nodeId)
-                    .OrderBy(k => k.SortOrder)
-                    .Select(k => k.Keyword)
-                    .ToListAsync();
 
                 var outDir = Path.GetDirectoryName(docxPath)!;
 
-                if (kws.Count > 0)
+                if (!string.IsNullOrWhiteSpace(description))
                 {
-                    var kwPath = Path.Combine(outDir, "keywords.txt");
-                    await File.WriteAllLinesAsync(kwPath, kws);
-                    Console.WriteLine($"[publish-docx] Wrote keywords: {kwPath}");
-                }
-
-                if (!string.IsNullOrWhiteSpace(meta?.Description))
-                {
-                    var synPath = Path.Combine(outDir, "synopsis.txt");
-                    await File.WriteAllTextAsync(synPath, meta.Description.Trim());
-                    Console.WriteLine($"[publish-docx] Wrote synopsis: {synPath}");
-                }
-
-                if (!string.IsNullOrWhiteSpace(meta?.BackCoverCopy))
-                {
-                    var bccPath = Path.Combine(outDir, "back-cover-copy.txt");
-                    await File.WriteAllTextAsync(bccPath, meta.BackCoverCopy.Trim());
-                    Console.WriteLine($"[publish-docx] Wrote back cover: {bccPath}");
+                    var descPath = Path.Combine(outDir, "description.txt");
+                    await File.WriteAllTextAsync(descPath, description.Trim());
+                    Console.WriteLine($"[publish] Wrote description: {descPath}");
                 }
             }
 
             return 0;
         }
-        catch (Exception ex) { Console.Error.WriteLine($"[publish-docx] Failed: {ex.Message}"); return 1; }
+        catch (Exception ex) { Console.Error.WriteLine($"[publish] Failed: {ex.Message}"); return 1; }
     }
 }

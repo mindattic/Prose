@@ -154,7 +154,7 @@ Working rules:
    ending style (avalanche, no epilogue), 3-5 intertextual anchors from the entity DB. Mirror the
    decisions into a `## Structural Blueprint` section of `docs/nodes/<CODE>.md`.
 5. **Prose** — Sonnet draft → Opus polish → reflow → logic sweep (see Quality Verification SOP below) → scan entity mentions.
-6. **Export** — `--publish-docx`; flip USER_STORIES to ✅ with evidence.
+6. **Export** — `--publish`; flip USER_STORIES to ✅ with evidence.
 
 Never write prose before steps 0, 1, 2, and 4 are complete.
 

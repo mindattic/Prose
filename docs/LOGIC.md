@@ -19,7 +19,7 @@ updated: 2026-07-04
 
 A logic sweep is REQUIRED:
 - after any beat is written, rewritten, merged, split, re-ordered, or disabled;
-- before any export (`--publish-docx`) or release;
+- before any export (`--publish`) or release;
 - after any bible edit that states story facts (sweep verifies prose agreement);
 - on demand, any time a story "feels off" — the sweep names the failure or clears the story.
 

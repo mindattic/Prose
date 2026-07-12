@@ -665,12 +665,12 @@ if (args.Contains("--seed-keywords"))
     return;
 }
 
-// CLI mode: render a node to a KDP-ready Word .docx in Downloads.
-//   ss --publish-docx (--id <guid|prefix> | --slug <slug>) [--author "Name"]
-if (args.Contains("--publish-docx"))
+// CLI mode: render a node to .docx + .epub + .pdf + .txt.
+//   ss --publish (--id <guid|prefix> | --slug <slug>) [--author "Name"]
+if (args.Contains("--publish"))
 {
     var sp = BuildCoreServices(args);
-    Environment.ExitCode = await PublishDocxCli.RunAsync(args, sp);
+    Environment.ExitCode = await PublishCli.RunAsync(args, sp);
     return;
 }
 
@@ -1409,15 +1409,6 @@ if (args.Contains("--sync-markdown"))
     return;
 }
 
-// CLI mode: two-way sync between synopsis.txt in each node's publish folder
-// and Node.Description in the DB. File wins on conflict.
-//   ss --sync-synopsis [--slug <slug>] [--dry-run]
-if (args.Contains("--sync-synopsis"))
-{
-    var sp = BuildCoreServices(args);
-    Environment.ExitCode = await SyncSynopsisCli.RunAsync(args, sp);
-    return;
-}
 
 // CLI mode: restore .md files from DB back to disk. Supports point-in-time
 // recovery from the MarkdownFiles_History temporal table.

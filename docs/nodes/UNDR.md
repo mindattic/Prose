@@ -19,7 +19,7 @@ updated: 2026-07-02
 ## 0. What this story IS {#SS-UNDR-0}
 
 The story of **Toby** — surface-born, lost at four into the strata below GLMZ — who becomes **Glim**,
-a Reach of the Underclan, and who, on the manhood journey every Reach must take to the surface
+an Ascendant of the Underclan, and who, on the manhood journey every Ascendant must take to the surface
 ("the **Surfacing**"), is caught and dragged up into a world he no longer has the words for. He meets
 the mother whose smell he still carries and cannot place. She tries to tame him. It does not take.
 And because he surfaced, the surface learns the legend is true — and comes **down**.
@@ -32,7 +32,7 @@ It is:
   "wild" boy is competent and whole; it is the **surface** that is impoverished, frightened, and
   unable to read the world. The reader sees the surface the way the boy does — as noise and colour
   and a white that bites the eyes.
-- **A coming-of-age** told in the rhythm of a rumspringa: a Reach must go up, see the Burning Eye,
+- **A coming-of-age** told in the rhythm of a rumspringa: an Ascendant must go up, see the Burning Eye,
   and choose the Deep — or be lost to the light. Most choose the Deep. Glim does not get to choose
   cleanly.
 - **The story of what a person is when the law says you are not one.** The Underclan are not on any
@@ -101,11 +101,11 @@ ages run backward like tree-rings:
 - **the Tartarian Empire** (*the Tartar*, *the Glory*) — the deepest reach: vaulted stone, drowned
   beaux-arts halls, ornate dead grandeur from before anyone's grandfather. **Taboo.** The Underclan
   believe the dead live here. The further down, the finer the ruin, and the worse the fear.
-  **The navigation problem (ongoing mystery — LOCKED):** Reaches who have descended past the Old Deep
+  **The navigation problem (ongoing mystery — LOCKED):** Ascendants who have descended past the Old Deep
   describe it consistently — rooms with heights that make no sense, cornices that cannot be utility
-  conduits, floors that were laid by people who wanted the place to be *beautiful*. Some Reaches have
-  touched the carved stone. Some have brought back fragments. But no Reach who has reached the
-  Tartarian level has been able to lead another Reach back to the same place. The route that worked
+  conduits, floors that were laid by people who wanted the place to be *beautiful*. Some Ascendants have
+  touched the carved stone. Some have brought back fragments. But no Ascendant who has reached the
+  Tartarian level has been able to lead another Ascendant back to the same place. The route that worked
   once does not work twice. The depth is right. The strata indicators are right. The rooms are simply
   not there. Listener Vesh's position: *the Tartarian Empire is real and it is not for the living to
   visit repeatedly. It opens once. You are shown. You return. That is the law of deep places.* See
@@ -196,7 +196,7 @@ actually hears them is never answered** (lock).
 - **The Naming / First Hearing.** A child is not a person until they *hear the Current* — a taught,
   felt initiation. Before that they are *a candle* (a small light that might gutter). After, they
   have a tapped name.
-- **The Surfacing** (the rumspringa beat). Before a Reach is full, they must climb to the **Skin**,
+- **The Surfacing** (the rumspringa beat). Before an Ascendant is full, they must climb to the **Skin**,
   look on the **Burning Eye**, breathe surface air, and **come back down by choice.** The surface is
   the test. Most return. Some are *taken* (caught, killed, or seduced by the light). To return is to
   choose the Deep forever.
@@ -228,16 +228,16 @@ the Current and reads the One Word. Named Glim at his First Hearing. The tribe's
 brake. Believes the surface-touched are *carriers* — of disease and of doubt — and is **right about
 both**, which makes him the hardest kind of antagonist-who-loves-you.
 
-**Knuckle (the Reach-master).** Trains the Reaches; sent Glim on his Surfacing; blames himself when it
+**Knuckle (the Ascendant-master).** Trains the Ascendants; sent Glim on his Surfacing; blames himself when it
 goes wrong. Pragmatic, scarred, tender under the scar tissue. *Obligation, not guilt* — but the line
 is thin.
 
-**Sorrel (peer, foil, heart).** A girl Reach, Glim's closest; surfaced and returned cleanly the year
+**Sorrel (peer, foil, heart).** A girl Ascendant, Glim's closest; surfaced and returned cleanly the year
 before; the proof that the choice can be made. Her body, later, is where the cost becomes
 unbearable — or she is the one who refuses to flee the Tartar. (Hold which; see locks on not
 pre-deciding deaths.)
 
-**Grale (the rival within).** A Reach who distrusts Glim from the start as *surface-stained*; vindicated
+**Grale (the rival within).** An Ascendant who distrusts Glim from the start as *surface-stained*; vindicated
 when Glim carries the Hot Breath down; his rightness curdles into something worse. Not a villain — a
 true believer who would burn the village to save it.
 
@@ -295,7 +295,7 @@ it and rowed. *He gave away his name to come home.*
   not hold. The path Glim swore he remembered from his deepest solitary descent leads to walls, wrong
   pipe configurations, unfamiliar junction geometry. The Works has shifted, or his memory has, or both.
   The maze is the climax's first antagonist: they are fleeing deeper and the deep is not letting them
-  in. Plant this early — a Reach who went as deep as possible and came back wrong about where they had
+  in. Plant this early — an Ascendant who went as deep as possible and came back wrong about where they had
   been; a fragment of carved stone with no mapped source; the Engine Guild's oldest member who says
   there is a depth past which the tunnels stop making sense. Pay the disorientation fully when the clan
   needs the passage to open.
@@ -347,7 +347,7 @@ it and rowed. *He gave away his name to come home.*
 3. **Set-Up (the wound).** Flashback woven low: the crush of the lower transit, a four-year-old's hand
    slipping free, the dark, the black water, the Oarsman, the Fare — the shine given up. We learn how
    Glim came, before he learns it himself.
-4. **Catalyst.** Glim's **Surfacing** is called. To be a full Reach he must climb to the Skin, look on
+4. **Catalyst.** Glim's **Surfacing** is called. To be a full Ascendant he must climb to the Skin, look on
    the Burning Eye, and come back by choice.
 5. **Debate.** Fear of the white that bites; Grale's contempt (*surface-stained, he'll be taken*);
    Sorrel's reassurance (*I went up and came back*); Knuckle's hard blessing. He goes.
@@ -363,11 +363,11 @@ it and rowed. *He gave away his name to come home.*
    to follow him down. Either way the **surface now knows the way down**, and someone is writing it
    down: Sallow, or the Mission, or both.
 10. **Bad Guys Close In.** The descent of the surface — the Lamplighters' safari, the Daylight
-    Mission's "rescue." The **Bright Fever** arrives; the first candle sickens; the first Reach coughs.
+    Mission's "rescue." The **Bright Fever** arrives; the first candle sickens; the first Ascendant coughs.
 11. **All Is Lost.** The Fever scythes the clan. Someone loved is taken (do not pre-decide who; honour
     the wound ledger). Floodlight pours into Homewater. The people flee — toward the one place left:
     the forbidden **Tartarian Empire.** But the Works does not open cleanly. The route Glim swore he
-    knew — the one he mapped in solitary descent, the path no other Reach had gone as deep — does not
+    knew — the one he mapped in solitary descent, the path no other Ascendant had gone as deep — does not
     hold. Wrong junctions. Walls where memory placed passage. The maze has shifted, or Glim has, or
     neither. The clan is deep in the Works, below the known strata, and the ghost-country is not
     where it should be. They keep descending because there is nowhere else to go.

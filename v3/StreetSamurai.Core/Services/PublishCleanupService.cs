@@ -72,7 +72,7 @@ public class PublishCleanupService
         foreach (var pattern in ManuscriptPatterns)
         foreach (var file in Directory.EnumerateFiles(nodeDir, pattern))
         {
-            if (Path.GetFileName(file).Equals("synopsis.txt", StringComparison.OrdinalIgnoreCase)) continue;
+            if (Path.GetFileName(file).Equals("description.txt", StringComparison.OrdinalIgnoreCase)) continue;
             try { File.Delete(file); }
             catch (IOException) { }
             catch (UnauthorizedAccessException) { }

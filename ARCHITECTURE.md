@@ -146,7 +146,7 @@ A full `Character` spans ~25 relational bridge tables; the deep `.Include()` loa
 | P2 | ~28 canon entity types with tolerant `Records.Json` + relational projections | ✅ | Repos + dictionaries per type; `--coverage` lists 28 types |
 | P3 | Embedding index over all active entities (`VECTOR_DISTANCE`) | ✅ | `--coverage`: 11,588 entities, 98% embedded |
 | P4 | Generation pipeline (outline → beats → scene), persona reviews + 1-100 scoring | ✅ | `/generate`, `/strands` Reviews modal, `Strand.Score` |
-| P5 | Audio (one-pass audiobook, v2/v3 TTS) + manuscript export (docx/md/txt/pdf) + tier check | ✅ | `--publish-audiobook`, `--publish-docx/md/txt/pdf`, Settings tier check |
+| P5 | Audio (one-pass audiobook, v2/v3 TTS) + manuscript export (docx/md/txt/pdf) + tier check | ✅ | `--publish-audiobook`, `--publish`, Settings tier check |
 | P6 | Strand list CLI | ✅ | `ss --list-strands` |
 | P7 | **Facet system 100% eradicated** (code + tests + DB), fully backed up | ✅ | 0 `Facet*` tables/columns; `drop_facet_system_20260606.sql`; `CanonEngineTests` regression guards |
 
@@ -206,7 +206,7 @@ A full `Character` spans ~25 relational bridge tables; the deep `.Include()` loa
 | `--harvest-voice (--slug\|--id\|--all-80\|--pending\|--apply <g>\|--reject <g>)` | Voice harvest, propose-then-approve |
 | `--check-canon (--slug\|--id\|--all)` | Contradiction sweep → CANON-CONTRADICTION findings |
 | `--seed-voice-rules` | Codify house-voice rules into `literary_rules`/`tone_bible` (idempotent) |
-| `--publish-audiobook \| --publish-docx \| --publish-md \| --publish-txt \| --publish-pdf` | Render outputs |
+| `--publish-audiobook \| --publish` | Render outputs |
 | `--migrate-sql --schema` / `--sql-export --data` | Schema migrate / full DB dump |
 
 ## 7. Deployment notes

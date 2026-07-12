@@ -443,7 +443,7 @@ public class ManuscriptExportService
         // only the current export (mirrors DocxExportService, which already prunes *.docx).
         foreach (var existing in Directory.EnumerateFiles(nodeDir, $"*.{ext}"))
         {
-            if (Path.GetFileName(existing).Equals("synopsis.txt", StringComparison.OrdinalIgnoreCase)) continue;
+            if (Path.GetFileName(existing).Equals("description.txt", StringComparison.OrdinalIgnoreCase)) continue;
             try { File.Delete(existing); }
             catch (IOException) { }
             catch (UnauthorizedAccessException) { }

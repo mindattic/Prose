@@ -532,11 +532,11 @@ updated: 2026-06-25
 - **SS-US-L1 ✅** As an author, I can run the entire seed-to-export pipeline end-to-end without
   touching code. *Acceptance: starting from a bare strand, the CLI sequence
   `--bible-strand → --expand-beat (×N) → --reflow-strand → --check-canon → --review-strand →
-  --publish-docx` completes with 0 errors and produces a valid .docx in Downloads.
+  --publish` completes with 0 errors and produces a valid .docx in Downloads.
   (verified: all six CLIs exist and are wired in `Program.cs`: `--bible-strand` via `StrandBibleCli`,
   `--expand-beat` via `ExpandBeatCli` [new 2026-06-21], `--reflow-strand` via `ProseReflowCli`,
   `--check-canon` via `CanonCheckCli`, `--review-strand` via `ReviewStrandCli`,
-  `--publish-docx` via `PublishDocxCli`; each is independently exercised; build clean 0 errors;
+  `--publish` via `PublishCli`; each is independently exercised; build clean 0 errors;
   2026-06-21.)*
 
 - **SS-US-L2 ✅** As an operator, `ss --run-corpus --count N` runs the full loop
@@ -555,7 +555,7 @@ updated: 2026-06-25
   that stitches all its `kind=collection` and `kind=chapter` children in reading order.
   *(verified by `StrandWorkbenchService.GetOrderedBeatsAsync` recursive tree-walk
   (`WalkAsync` via `ParentStrandId`); `DocxExportService.ExportStrandAsync` calls it for any strandId;
-  `ss --publish-docx --slug <series-slug>` already stitches all children via existing code; 2026-06-21.)*
+  `ss --publish --slug <series-slug>` already stitches all children via existing code; 2026-06-21.)*
 
 - **SS-US-L4 ✅** As an author, the `WorldTickService` can be enabled and produces at least one
   `EntityStateEvent` per tick per active character without manual intervention (SS-US-F9: Living

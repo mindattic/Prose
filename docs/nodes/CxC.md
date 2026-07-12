@@ -273,7 +273,7 @@ that CxC's finale pays off — it is already in both codas; CxC §14 closes it.
 - [x] Terminology updated 2026-07-04: "Rider" → "Exo" (Scout); "strand"/"strand code" → "story"/"node code" throughout (SS-A43/SS-A38); SS-A26 Helix Biosystems arc canon merged into §2/§4/§5.
 - [x] Terminology updated 2026-07-11: "Exo"/"NSB"/"RFO" → "Ghost"/"ECT"/"ghosting" throughout (SS-LAW-26).
 - [ ] Logic sweep (SS-A44 default QA) — run before next export.
-- [ ] Export (`--publish-docx`); toward-93 polish noted by panel: thicken Vox's prior presence, thin mid-beat ledger exposition, de-dupe Beats 6–7 vs 3–5.
+- [ ] Export (`--publish`); toward-93 polish noted by panel: thicken Vox's prior presence, thin mid-beat ledger exposition, de-dupe Beats 6–7 vs 3–5.
 
 ## §11 — Ghost / ECT Technical Context (SS-LAW-26)
 

@@ -146,7 +146,7 @@ All ~152 handlers are dispatched from `v3/StreetSamurai.Cli/Program.cs`.
 | `ss --examine-emotion --slug <slug>` | 8-dimension per-beat emotional scoring (0–4 per dimension) |
 | `ss --story-audit --slug <slug>` | Audits gateway/sequel commandments for the story |
 | `ss --plant-audit --slug <slug>` | Checks for orphaned plants (planted but never paid off) |
-| `ss --publish-docx [--slug <slug>]` | Exports docx + EPUB + PDF + audio manuscript `.txt`; prunes stale versions; lands in `{Title}/V{N}/` |
+| `ss --publish [--slug <slug>]` | Exports docx + EPUB + PDF + audio manuscript `.txt`; prunes stale versions; lands in `{Title}/V{N}/` |
 | `ss --workflow-status --slug <slug>` | Per-story service coverage matrix showing which pipeline services fired and which are gaps |
 | `ss --workflow-status --all` | Global utilization matrix across all stories |
 | `ss --generate-cover --story-code CODE --generator NAME --prompt "TEXT"` | AI cover generation via ChatGPT / Gemini / Ideogram / Flux; stores prompt in `CoverImagePrompts`, asset in `Assets` |

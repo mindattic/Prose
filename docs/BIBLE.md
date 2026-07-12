@@ -654,7 +654,7 @@ For each chapter, in order:
 ### Step 5 — Export and review
 
 - After all chapters reach draft standard: full-book review panel; target ≥85%.
-- `ss --publish-docx --slug <book-slug>` → KDP-ready .docx.
+- `ss --publish --slug <book-slug>` → KDP-ready .docx.
 - Voice harvest if any chapter scores ≥80%: `ss --harvest-voice --slug <chapter-slug>`.
 - Flip all USER_STORIES.md sub-items to ✅ with evidence in the same commit.
 

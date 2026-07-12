@@ -364,7 +364,7 @@ The novel runs three threads in parallel across Acts I–III, converging in Act 
 - [x] Storyscope audit — 0 BLOCKERs, 3 MODERATEs (flat escalation beats 21-27, beat-mode monoculture, event-type repeats), 2 MINORs (social-network breadth, consensus-clichés) (2026-07-08)
 - [ ] Logic sweep (post-full-draft)
 - [ ] Storyscope MODERATEs — human judgment: splice beats 21-27 plateau or accept as designed
-- [x] Export `--publish-docx` → `R:\Desktop\EPub\MindAttic\GLMZ\Rook\Iron & Silk\Iron & Silk V1.docx/epub/pdf/txt` (2026-07-08)
+- [x] Export `--publish` → `R:\Desktop\EPub\MindAttic\GLMZ\Rook\Iron & Silk\Iron & Silk V1.docx/epub/pdf/txt` (2026-07-08)
 
 ## §11 — Structural Blueprint
 
