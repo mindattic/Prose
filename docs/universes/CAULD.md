@@ -503,6 +503,11 @@ a story.
 
 ## The Long Record — How the Cauld Became What It Is
 
+> **Full chronicle:** `docs/universes/CAULD_HISTORY.md` — 1700 years of history, founding
+> legends for all Seven Houses, Relic weapons, named wars, plagues, famines, diplomatic
+> marriages, and the Gyldir Shore Accord (the Ocipheus-Vierna-Pallor crossing arrangement).
+> This section summarizes the structural history; the chronicle contains the named details.
+
 The Houses did not spring from a founding document. They accumulated. Each one is the residue
 of something older — a tribe, a wound, a marriage of convenience that outlasted everyone who
 arranged it. To understand the current coalition map you have to understand what each House
