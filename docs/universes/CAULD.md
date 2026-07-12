@@ -535,11 +535,11 @@ throughout. The Atrament culture developed in the forest, built along rivers, an
 long before the membrane was deliberate. The old-growth forest is still largely intact; the
 installations and river-crossing towns are clearings in it. Everything connects by water.
 
-**The Vine Country — Comista territory.** France analog: the broad agricultural interior
+**The Vine Country — Vierna territory.** France analog: the broad agricultural interior
 west of the Rhine, Atlantic coast to the west, mountain border to the south, narrow channel
 to the north separating it from the island. Temperate, fertile, well-watered, a culture that
 produced written records before any of its neighbors because surplus produced leisure and
-leisure produced scribes. The Comista installation sits on a river bluff in the interior —
+leisure produced scribes. The Vierna installation sits on a river bluff in the interior —
 accessible from all directions, which was always the point.
 
 **The Island — Pallor territory.** Great Britain analog: separated from the mainland by a
@@ -674,7 +674,7 @@ institutions. They had been fighting each other for forty years over the same st
 agricultural land and the membrane site that sat in the middle of it. None of them had
 won. All of them had lost enough that the mathematics of continuing had become unfavorable.
 
-The first Compact document is preserved in the Comista archive. It is eleven lines. It says:
+The first Compact document is preserved in the Vierna archive. It is eleven lines. It says:
 we will stop raiding each other's sites for two seasons. If the two seasons pass without
 incident we will meet again. That is everything. Eleven lines and the Cauld's permanent
 political structure began.
@@ -743,8 +743,8 @@ A famine year followed. Meridian couldn't pay the contract rate. The contractor 
 sides — offered its services to a neighboring House for a guaranteed rate Meridian couldn't
 match. Meridian's site went dark. A House that can't run its own installation is a House
 with a name but no power. Meridian's remaining members were absorbed into other Houses
-over the next two generations. The site was eventually brought back online by Comista,
-whose Sphere catalogue included Meridian's operational records. Comista now administers it.
+over the next two generations. The site was eventually brought back online by Vierna,
+whose Sphere catalogue included Meridian's operational records. Vierna now administers it.
 
 **What Meridian represents:** The danger of institutional elegance. The efficiency that
 eats the thing it was supposed to serve.
@@ -808,8 +808,8 @@ The Cauld does not know what it is keeping running. It only knows that running i
 than not running it.
 
 Sinter's surviving practitioners were absorbed into other Houses. Several ended up in
-Comista, which is why Comista's records of the Sinter experiment are more complete than
-the Liturgy's official account. Comista knows what happened. Comista has made the
+Vierna, which is why Vierna's records of the Sinter experiment are more complete than
+the Liturgy's official account. Vierna knows what happened. Vierna has made the
 institutional decision that knowing what happened is more valuable than telling anyone.
 
 **What Sinter represents:** The question that cannot be safely asked. The experiment that
@@ -1053,49 +1053,49 @@ Not evil in the way that looks away. Evil in the way that looks directly and cho
 
 ---
 
-#### House Comista — The Archive and the Lock
+#### House Vierna — The Archive and the Lock
 
-Comista sits in the broad interior — the France analog, the vine country, temperate and
+Vierna sits in the broad interior — the France analog, the vine country, temperate and
 fertile and positioned at the geographic center of the Cauld's major institutions. They border
 Atrament to the east, the island nation across a narrow channel to the north, the southern
 peninsula through mountain passes to the southeast, and the western cliff coast along a shared
-southern land border. From Comista territory you can reach every other House. This has always
+southern land border. From Vierna territory you can reach every other House. This has always
 been the point. Their geographic centrality was not accidental. The culture that produced the
 scribes grew where the scribes were most useful: in the middle, where all the roads crossed.
 
-Comista is the reason the Compact exists in its current form. They were the institution
+Vierna is the reason the Compact exists in its current form. They were the institution
 that wrote the agreements — not because they were the most powerful party but because they
 were the most literate, the most organized, and the most willing to handle the administrative
 burden nobody else wanted. They were the scribes of the pre-Compact era. Every tribe with
-a membrane site used Comista's record-keepers because the central country was the only
-territory all parties could reach without crossing an enemy's land. Comista collected this
+a membrane site used Vierna's record-keepers because the central country was the only
+territory all parties could reach without crossing an enemy's land. Vierna collected this
 geographic trust over two centuries and never let go of it.
 
 When they wrote the Compact, they wrote it carefully. Nothing in it was dishonest. But
 the party that writes the contract also writes the defaults — the unspecified conditions,
-the edge cases, the precedents. Comista's Compact specified, among other things, that all
-disputes over Sphere catalogue access would be resolved through Comista arbitration. This
-clause was uncontroversial at the time: Comista had no site of its own and seemed the
+the edge cases, the precedents. Vierna's Compact specified, among other things, that all
+disputes over Sphere catalogue access would be resolved through Vierna arbitration. This
+clause was uncontroversial at the time: Vierna had no site of its own and seemed the
 obvious neutral party. They acquired a site within a generation of the Compact's signing.
 The arbitration clause has never been repealed.
 
-The real ideological question in the Cauld lives at Comista because Comista is the House
+The real ideological question in the Cauld lives at Vierna because Vierna is the House
 where it cannot be suppressed. Their Sphere catalogue — the broadest in the Cauld — is
 documented evidence that the membrane connects to resources that no single House should
-control. Their Keeper knows this. The position that has been circulating within Comista
+control. Their Keeper knows this. The position that has been circulating within Vierna
 for fifty years — that Sphere knowledge should be collectively administered, not held by
-individual Houses — is the position that most directly undermines Comista's own power.
+individual Houses — is the position that most directly undermines Vierna's own power.
 And their Keeper has not suppressed it.
 
 The other Houses have three theories about this. First: the Keeper is genuinely principled
 and believes it. Second: the Keeper is using the position as leverage — an implicit threat
-that if Comista's institutional interests are threatened, they will release the catalogue.
+that if Vierna's institutional interests are threatened, they will release the catalogue.
 Third: the Keeper is running a longer game, building the political coalition that would
-survive a redistribution of membrane access and positioning Comista to administer the
+survive a redistribution of membrane access and positioning Vierna to administer the
 redistribution rather than be subject to it. All three theories are consistent with the
 observable behavior. The Keeper has not clarified.
 
-**What Comista represents:** The custodian who chooses what gets preserved and what gets
+**What Vierna represents:** The custodian who chooses what gets preserved and what gets
 lost. The archivist whose neutrality was always a position.
 
 ---
@@ -1117,7 +1117,7 @@ until it wasn't — until the dependency had been running long enough that the e
 could not produce what it needed without Atrament's infrastructure, at which point the
 arrangement became something else. They became clients before they became anything else.
 
-The Compact gave them formal House status over Atrament's objection. Comista, writing the
+The Compact gave them formal House status over Atrament's objection. Vierna, writing the
 terms, included a clause recognizing the eastern plains culture's institutional standing
 specifically because the Compact needed a food-producing House and the plains culture was the
 only organization with the scale and infrastructure to supply the entire Cauld. Atrament was
@@ -1232,7 +1232,7 @@ in the way institutions are divided when the division predates the institution.
 Pallor is the youngest House in the Compact. They were admitted last — not because their
 site was marginal but because the island's three-way deadlock meant no single leadership
 could present itself as the House's authority. The Compact finally admitted them when all
-three regional leaderships jointly signed the petition. Comista brokered this. Comista
+three regional leaderships jointly signed the petition. Vierna brokered this. Vierna
 brokered most things that required patience.
 
 The secondary history — the destroyed coastal site, the refugee period — comes from the
@@ -1265,7 +1265,7 @@ watching long enough.
 
 ### House Atrament — The Refinery Seat
 **Coalition status:** Coalition anchor · **Domain:** Catalyst refining
-**Territory:** Central continental — Germany analog; Rhine and Danube river valleys; forested interior; volcanic ridge in the west. Borders Comista to the west, Fjornox to the north, Ocipheus to the south across the Alpine ridge, Calyx to the east along the river line.
+**Territory:** Central continental — Germany analog; Rhine and Danube river valleys; forested interior; volcanic ridge in the west. Borders Vierna to the west, Fjornox to the north, Ocipheus to the south across the Alpine ridge, Calyx to the east along the river line.
 
 The Forge Hearth — oldest active apparatus in the Cauld. Stretching the membrane at the same
 coordinates for generations. Whether the membrane fully recovers between sessions is not a
@@ -1286,7 +1286,7 @@ Liturgy has not corrected this. The silence is the arrangement.
 
 ### House Ocipheus — The Vigil Seat
 **Coalition status:** Coalition anchor · **Domain:** Thin-membrane access
-**Territory:** Southern peninsula — Italy analog; Alpine ridge country in the north; warm limestone plateau descending to the inland sea. Borders Atrament to the north, Comista through mountain passes to the northwest, Calyx to the northeast.
+**Territory:** Southern peninsula — Italy analog; Alpine ridge country in the north; warm limestone plateau descending to the inland sea. Borders Atrament to the north, Vierna through mountain passes to the northwest, Calyx to the northeast.
 
 Ocipheus Station — oldest installation in the Cauld. Named in historical record more than any
 other. Long-tenure vigil operators stationed here for decades sometimes describe the membrane
@@ -1345,16 +1345,16 @@ mean explaining why she waited thirty years to tell.
 
 ---
 
-### House Comista — The Archive Seat
+### House Vierna — The Archive Seat
 **Coalition status:** Opposition bloc · **Domain:** Sphere cataloguing
 **Territory:** Vine country — France analog; broad agricultural interior, Atlantic coast to the west, mountain border to the south. Borders Atrament to the east, Lacerta to the southwest, Ocipheus through the southern passes. Channel crossing north to Pallor.
 
 The Deep Archive — broadest Sphere catalogue of any House. More documented access points than
 any installation except Ocipheus Station. Where Ocipheus has depth at specific coordinates,
-Comista has breadth: more Spheres observed, more designs transcribed, more knowledge of what
+Vierna has breadth: more Spheres observed, more designs transcribed, more knowledge of what
 exists across the membrane than any other institution in the Cauld.
 
-**The fault line:** The real theological fault line of the Cauld lives inside Comista. The
+**The fault line:** The real theological fault line of the Cauld lives inside Vierna. The
 position — voiced rarely and dangerously — that Scrying installations should not be privately
 controlled; that the knowledge of all Spheres belongs to everyone. Their Keeper has not
 suppressed it. Whether this is principled tolerance or strategic positioning is the question
@@ -1407,7 +1407,7 @@ Silence has not responded. Yet.
 
 ### House Pallor — The Long Seat
 **Coalition status:** Unaligned — courted by both blocs · **Domain:** Champion affiliation
-**Territory:** The island — Great Britain analog; separated from the mainland by a cold channel. Rocky highland north, softer lowland south, maritime culture throughout. Channel crossing south to Comista; North Sea crossing east to Fjornox.
+**Territory:** The island — Great Britain analog; separated from the mainland by a cold channel. Rocky highland north, softer lowland south, maritime culture throughout. Channel crossing south to Vierna; North Sea crossing east to Fjornox.
 
 Pallor Station — mid-tier apparatus. Strategically valuable not for what it can reach through
 the membrane but for who is affiliated with it. Their Warrior King has been at the map table
