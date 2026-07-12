@@ -47,6 +47,11 @@ public abstract class Node
     /// from the internal Synopsis. Optional.</summary>
     public string? Summary { get; set; }
 
+    /// <summary>Back cover copy — the reader-facing sales text printed on the
+    /// back of the book. Written to sell the story on nothing but the cover
+    /// and this paragraph. Exported as back-cover-copy.txt on every publish.</summary>
+    public string? BackCoverCopy { get; set; }
+
     /// <summary>Free-form category label. Suggested values: "book", "chapter",
     /// "episode", "scene", "saga", "anthology", "vignette". UI groups by
     /// this. Storage doesn't constrain it; the structural truth is the CLR

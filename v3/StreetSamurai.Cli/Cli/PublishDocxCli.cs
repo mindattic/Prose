@@ -94,7 +94,7 @@ public static class PublishDocxCli
                 var meta = await db2.Nodes
                     .AsNoTracking()
                     .Where(n => n.Id == nodeId)
-                    .Select(n => new { n.Description })
+                    .Select(n => new { n.Description, n.BackCoverCopy })
                     .FirstOrDefaultAsync();
 
                 var kws = await db2.NodeKeywords
@@ -117,6 +117,13 @@ public static class PublishDocxCli
                     var synPath = Path.Combine(outDir, "synopsis.txt");
                     await File.WriteAllTextAsync(synPath, meta.Description.Trim());
                     Console.WriteLine($"[publish-docx] Wrote synopsis: {synPath}");
+                }
+
+                if (!string.IsNullOrWhiteSpace(meta?.BackCoverCopy))
+                {
+                    var bccPath = Path.Combine(outDir, "back-cover-copy.txt");
+                    await File.WriteAllTextAsync(bccPath, meta.BackCoverCopy.Trim());
+                    Console.WriteLine($"[publish-docx] Wrote back cover: {bccPath}");
                 }
             }
 
