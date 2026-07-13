@@ -49,7 +49,8 @@ stolen Relic weapon — and losing, along the way, the certainty that made her w
 - **Act 1** (Ch.1–~9): Ocipheus → Narrow Sea → Vierna (Rowe found) → Three Points
   The Relic is four days ahead. Act 1 ends at Three Points.
 - **Act 2** (~Ch.10–21): Three Points → Atrament (Kressida joins; Meridian stolen; Kressida pilots)
-  → Calyx → Pallor / Caer Glas Moor (Blink Thieves intercepted; Esvane and Petra killed;
+  → Calyx (war front; maneuver around skirmishes; no-colors engagement; blood from both sides)
+  → Pallor / Caer Glas Moor (Blink Thieves intercepted; Esvane and Petra killed;
   Wren blinks with the Relic; Wren returns and joins when Orim tells him what the Relic has seen)
 - **Act 3** (~Ch.22–29): Eirene's Gate / The Pass → Sinter (climax) → return to Ocipheus
 
@@ -640,6 +641,28 @@ is on the moor.
 
 ## 3. The Journey Arc {#SS-VIGL-3}
 
+### The war as ambient texture throughout the journey {#SS-VIGL-3a}
+
+The Vierna/Atrament war is not background. It is present in every chapter from Vierna onward.
+
+**What the party maneuvers around (ongoing from Ch.7 through Ch.10):**
+- Vierna: conscript columns on the road; intake stations; the particular quality of a
+  military state where every civilian knows not to be on the road after a certain hour
+- Three Points: war profiteers; both armies' quartermasters working the same market;
+  the reason the town is neutral is that both sides need the market more than the territory
+- Atrament: factory output moving east in continuous convoy; the furnaces are running for
+  the front; Schmalburg is a transfer node disguised as a city
+- Calyx: the front line runs through the eastern plains; smoke columns; the locals read
+  them; the party learns to read them from the Meridian
+
+**The no-colors engagement rule:** The party has no military affiliation either side
+would recognize as friendly. The Vigil crosses borders by canonical authority — that
+authority means nothing to a conscript in a ditch taking fire from three directions.
+Lyra's institutional rank is real and irrelevant simultaneously. The party survives by
+Rowe knowing what a line looks like when it breaks.
+
+---
+
 ### Geography in order:
 1.  Ocipheus Station (start and end) — Lyra departs alone; the Relic is four days ahead
 2.  Channel crossing to Vierna
@@ -652,8 +675,19 @@ is on the moor.
     compound; Kressida pilots the *Meridian* out — she does not announce she can fly it,
     she just gets in. The ground operation becomes an aerial operation without discussion.
 8.  Forge Hearth (aboard the *Meridian*; faster than overland; membrane thin here)
-9.  Calyx — the plains; monster corridors; the Relic's trace grows warmer; Orim reads it
-10. **Pallor / Caer Glas Moor** — the upland moor before the strait; aerial intercept;
+9.  Calyx — the plains; monster corridors; the Relic's trace grows warmer; Orim reads it;
+    **active war front** — the Vierna/Atrament line runs through Calyx's eastern plains;
+    the party maneuvers around it from the Meridian, reading smoke columns to find the gap
+10. **The no-colors engagement (Calyx chapter — exact beat TBD)** — at some point the party
+    lands in the middle of an active skirmish. The Meridian has no House flag. The party
+    has no colors. Both sides open fire indiscriminately. The party kills soldiers from
+    both armies to escape. Nobody in the field checks who you are before shooting.
+    **Rowe's beat:** This is WW1. The specific quality of artillery over open ground, the
+    way conscripts move in a line, the direction flanking fire comes from — he knows all
+    of it before anyone else in the party understands they're in a battle. He does not
+    explain how he knows. He just moves and tells them where to go. They follow him.
+    After: the party has blood from both sides on their boots. No one discusses it.
+11. **Pallor / Caer Glas Moor** — the upland moor before the strait; aerial intercept;
     Esvane and Petra killed; Wren blinks with the Relic; Orim finds Wren alone on the moor;
     Wren returns the Relic and joins the party; Vaen steps out of the dark; party vs. Champion;
     Aldric names Prelacze
@@ -689,7 +723,7 @@ anything he does.
 - **Vierna:** Archival Gate at Bressant (Arnault d'Archival Year 312); Treachery Quarter; *L'Accord* barge; fog off the lowlands
 - **Three Points:** neutral ground since the early Compact; no House stations forces here; the place where three powers agree the only thing worse than sharing is fighting. **Act 1 ends here.** The party learns here that an impounded airship — the *Meridian* — sits at an Atrament garrison east of Schmalburg.
 - **Atrament:** Schmalburg named for the Battle of the Small Fortress Year 701; Ignamund Unburnt's *Ewige Flamme* in the capital; Forge Hearth Hearth-One through Hearth-Eleven. **Wylla Mother of Men** — a Cauld invocation Lyra overhears an officer give to his column before they march south-east toward The Pass. The troops repeat it like a ward: *Wylla Mother of Men.* Not a prayer exactly — more like a name you say out loud to mean *I know where I come from.* Who or what Wylla is is not explained to the reader. That is deliberate. Lyra files it and moves on.
-- **Calyx:** Great plains under wide sky; monster incursion corridors; people who farm the same land they hunt creatures on; Sphere fauna have been escaping into Calyx for generations — what Calyx calls "the monster problem" is what happens when agricultural Scrying goes uncontained
+- **Calyx:** Great plains under wide sky; monster incursion corridors; people who farm the same land they hunt creatures on; Sphere fauna escaping from agricultural Scrying for generations. The war runs through the middle of it — the Vierna/Atrament front line cuts across Calyx's eastern territory; the locals have learned which smoke columns mean artillery and which mean a brush fire. The party maneuvers around engagements for two chapters. Then they stop being able to. The no-colors engagement is here.
 - **Pallor:** Upland moor and fjord coast; fog that comes in fast; the heather that phosphoresces at night; no House insignia anywhere; Caer Glas Moor at the heart of it; the last ungoverned land before the strait
 - **The Pass / Eirene's Gate:** named for Eirene, last Sinter Champion, who died here Year 1081; *Sinter remembers even if we don't*; towers on both banks; the stamp; the departure log on ruled paper; the narrow water between the Cauld and everything else
 - **Sinter:** not a zone. A reckoning.
