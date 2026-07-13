@@ -113,7 +113,7 @@ showing the system at work on a specific kind of person.
   *Archival Gate is named for a man who thought a river could settle a border argument* and
   moves on.
 - **Register:** Dry, observational, full of the particulars of places. He notices exits, food
-  sources, which roads flood in autumn, where the Order of the Wall posts its inspection
+  sources, which roads flood in autumn, where the Order of the Watch posts its inspection
   schedule. He is genuinely curious about everything and sentimentally attached to nothing.
 - **The arc:** He has known about Scrying's cost for forty years. He has taken the contracts
   anyway. Rowe's testimony, delivered in halting Cauld from across the *Meridian*'s cargo
@@ -1017,6 +1017,20 @@ arithmetic. They feel the weight before they understand the reason. Characters d
 or "parse" or think in "ledgers" (unless the ledger is a literal object in their hands). Those
 are Kyle's registers, GLMZ-only. Every Buehlman sentence earns its image in mud and bone.
 
+**Prose exemplar — LSSS:** The standalone short story *Lyra, Sinterspawn Slayer* (`docs/nodes/LSSS.md`,
+NodeCode=LSSS) establishes the action-beat register for VIGL. Every Lyra A-plot pursuit chapter
+should feel like that story: tracking, physical encounter, kill method described specifically, deadpan
+at the return. The Scribe chapters (S1–S4) are intentionally institutional — that contrast is load-bearing.
+The Pallor chapters are observational thriller. The Rowe chapters are sensory and interior. Only the
+Lyra beats need to match LSSS. Any Lyra beat that reads like a filing office is in the wrong register.
+
+**The sword problem:** Every Lyra A-plot chapter should have steel drawn at least once. The pursuit
+chapters (Ch.2, Ch.7, Ch.12, Ch.16, Ch.17, Ch.20, Ch.23, Ch.25, Ch.27) all pass through territory
+where things come out of Scrying cracks. She is a Templar crossing a continent. She fights things.
+Specific weapon vocabulary: the Dissolution Blade is double-edged, narrow, Catalyst compound bleeds
+into wounds. The Vigil Shield is round, steel core, resin surface — she uses it as an instrument as
+much as defense. Write both in use.
+
 **The wrong sentence:** "She was tired in the way that follows sustained attention: not depleted,
 just used up." — this is Kyle. Modern. Compressed. Wrong.
 
@@ -1304,7 +1318,7 @@ She is three years into the position. She is good at it. She does not know yet w
 
 Vega is at the Ocipheus Station on a routine scribing contract — notarizing the vigil archive's
 annual certification instruments, a two-day job she took partly because it gave her an excuse
-to see her sister. The evening before Lyra leaves for the Sinter Wall emergency, they sit together
+to see her sister. The evening before Lyra leaves for the Sinter line emergency, they sit together
 in the station's lower common room — off-duty soldiers' space, not the formal archive, which is
 the point — and drink whatever the station keeps for long-watch nights (something warm, local,
 not good enough to save for occasions). They argue about something trivial and both immediately

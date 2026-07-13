@@ -880,28 +880,29 @@ three years of the Meteor Event. This is the only act in the Cauld's history tha
 surviving Houses have signed simultaneously, regardless of coalition alignment, regardless
 of active war between them. The Quarantine Compact (Year 1082) established:
 
-- Vierna, Ocipheus, and Atrament maintain the physical fortifications: the Quarantine Wall,
-  a continuous ring of sealed stone and membrane-treated barrier at the valley's mountain
-  margins, with watch-towers, sealing operations, and staffed posts at every natural approach
+- Vierna, Ocipheus, and Atrament take primary responsibility for the Quarantine Watch:
+  rotating patrols drawn from soldiers of all Houses that man every natural pass, approach
+  corridor, and descent route around the Sinter mountain margin. The mountains are the
+  barrier; the Watch is the presence at the points where the mountains permit crossing.
 - Pallor, Lacerta, and Calyx provide monetary assessment and supply: quarterly contributions
   to the Wall's maintenance, emergency response reserves, and specialist labor contracts
 - The Liturgy administers the Quarantine as its institutional mandate, separate from its
   House-affiliated functions; the Quarantine Administration is the Silence's most public role
 
-The Quarantine Wall is the only place in the Cauld where enemies stand adjacent posts without
-fighting. A Fjorheim conscript and a Lacerta intelligence operative may be stationed at
-neighboring watch-towers on the Wall during a period when their Houses are at active war
-on every other front. They do not fight. The Quarantine Compact's terms include a specific
-prohibition on inter-House violence within five hundred meters of the Wall, enforced not by
+The Quarantine Watch is the only place in the Cauld where enemies patrol the same mountain
+line without fighting. A Fjorheim conscript and a Lacerta intelligence operative may be
+posted to neighboring pass-points during a period when their Houses are at active war on
+every other front. They do not fight. The Quarantine Compact's terms include a specific
+prohibition on inter-House violence within the Sinter patrol perimeter, enforced not by
 any individual House but by the Liturgy's Quarantine Administration. The Giants — the
 transformed Champions who escort Ocipheus ships through Vierna's waters — also hold
-rotational posts on the Wall. They are the only force in the Cauld that the Quarantine
-Administration commands directly.
+permanent posts at the four largest breach-risk corridors. They are the only force in
+the Cauld that the Quarantine Administration commands directly.
 
 **The Descents.** The cracked valley is the richest concentration of location-specific Sphere
 access in the Cauld. No other territory holds what the Sinter zone holds. Houses have been
 running controlled expeditions — the Descents — into the zone since Year 1140, when the
-Wall was stable enough to re-enter through. The Liturgy administers permission for every
+Watch patrol coverage was sufficient to permit supervised entry. The Liturgy administers permission for every
 Descent. No House enters the zone without a Liturgy-issued charter specifying the expedition's
 duration, personnel, and target coordinates. Most Descents do not return in full. The ones
 that return bring back Sphere access that cannot be reached from any other point in the Cauld,
@@ -910,9 +911,9 @@ describe, on their return, having perceived the membrane as something that was a
 them before they found it.
 
 What comes out of the cracks without being brought out — the uncontrolled emergence events —
-is what the Quarantine Wall exists to contain. The quarantine record documents 1,847 containment
+is what the Quarantine Watch exists to contain. The quarantine record documents 1,847 containment
 events between Year 1082 and Year 1700. Of those, 203 resulted in material that escaped the
-Wall before being neutralized. The record is specific about what escaped and vague about what
+Sinter line before being neutralized. The record is specific about what escaped and vague about what
 happened to it afterward. The Quarantine Administration keeps a separate ledger. The ledger
 is sealed.
 
@@ -2025,20 +2026,20 @@ agreeing to. The Liturgy calls this "efficient processing."
 
 ---
 
-## Order of the Wall {#SS-CAULD-ORDER-WALL}
+## Order of the Watch {#SS-CAULD-ORDER-WATCH}
 
 The formal administrative body of the Sinter quarantine. A Liturgy sub-organization. Not a House
 military force — the Order draws personnel from all Houses under Liturgy charter, operates under
 the Greater Good compact, and answers to the Canon Immaculate rather than any Warrior King.
 
 **Function:**
-- Staffs and maintains the Quarantine Wall around the Sinter zone
+- Staffs and coordinates the Quarantine Watch patrols around the Sinter mountain margin
 - Administers the Descent Corps (expeditionaries who enter Sinter)
 - Issues crossing permits for legitimate research and recovery operations
-- Records breach events, creature incursions, and membrane anomalies at the Wall boundary
+- Records breach events, creature incursions, and membrane anomalies along the Sinter line
 
 **Personnel:** Mixed-House soldiers serving on rotation (typically 18-month postings), plus Order
-Specialists (permanent staff with deep Wall knowledge). A Wall veteran's most recognized saying:
+Specialists (permanent staff with deep Watch knowledge). A Watch veteran's most recognized saying:
 *Sinter remembers even if we don't.*
 
 **The Descent Corps:** Chartered expeditionaries who enter the Sinter zone for recovery, research,
@@ -2136,7 +2137,7 @@ targets. Kressida's rig is specifically vulnerable.
 
 **Frost Lance** (Fjorheim cold-chemistry variant): Cryogenic compound instead of galvanic; the
 impact produces a localized freeze effect on contact. Used against flesh and biological targets.
-The Order of the Wall's Descent Corps uses Frost Lances against Sinter zone overflow creatures.
+The Order of the Watch's Descent Corps uses Frost Lances against Sinter zone overflow creatures.
 
 **Dissolution Blade** (Ocipheus): Narrow double-edge treated with a Catalyst-derived etching
 compound held in porous ceramic channels along the blade. On contact, the compound bleeds into
@@ -2207,7 +2208,7 @@ unsupervised ceremony, accumulating infusions across years in directions no Litu
 charted.
 
 **Origin:** The Winter of Year 1193 — a Wall breach in the Fjorheim sector allowed a sustained
-overflow event that killed 1,100 people in a village the Order of the Wall's Descent Corps
+overflow event that killed 1,100 people in a village the Order of the Watch's Descent Corps
 reached three weeks after the fact. A group of Fjorheim survivors who had been fighting the
 overflow for those three weeks, without Liturgy sanction, were subsequently tried for conducting
 unsanctioned Transmutation. They were convicted and executed publicly. What the executed said from
@@ -2215,7 +2216,7 @@ the scaffold became the Eaters' founding text, passed down orally for three gene
 
 **What they do:** They hunt the things that come through Wall breaches. Sinter Hounds specifically
 (eating Sinter Hound meat produces a specific Transmutation effect the Eaters have refined
-empirically). They also hunt the larger overflow predators that the Order of the Wall cannot
+empirically). They also hunt the larger overflow predators that the Order of the Watch cannot
 contain. They are not affiliated with any House or the Liturgy. They operate in the perimeter
 zone independently.
 

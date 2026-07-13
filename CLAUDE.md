@@ -85,6 +85,7 @@ Node bibles are **loaded on demand**, not injected at session start. Load only w
 - `docs/nodes/GIW.md` — Grafted Into War / M-101/Soren (Fantasy)
 - `docs/nodes/MxG.md` — Magenta & Gunmetal / GLMZ run (GLMZ, planned; Shadowrun-style heist → True Lies finale)
 - `docs/nodes/RTR.md` — Read the Room / Faith Larson & Ethan Wolfe (GLMZ; Fenris band; Faith is a Read; Milwaukee dive club)
+- `docs/nodes/LSSS.md` — Lyra, Sinterspawn Slayer (Fantasy; standalone; COMPLETE; VIGL prose register exemplar; 1 beat)
 - `docs/books/bushido-coda-strands-bible.md` — BCODA (legacy long-form; superseded by BCODA.md above)
 
 ## Codex (how to work with the canon)

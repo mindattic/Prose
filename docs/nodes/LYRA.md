@@ -74,7 +74,7 @@ showing the system at work on a specific kind of person.
   *Archival Gate is named for a man who thought a river could settle a border argument* and
   moves on.
 - **Register:** Dry, observational, full of the particulars of places. He notices exits, food
-  sources, which roads flood in autumn, where the Order of the Wall posts its inspection
+  sources, which roads flood in autumn, where the Order of the Watch posts its inspection
   schedule. He is genuinely curious about everything and sentimentally attached to nothing.
 - **The arc:** He has known about Scrying's cost for forty years. He has taken the contracts
   anyway. Rowe's testimony, delivered in halting Cauld from across the *Meridiana*'s cargo

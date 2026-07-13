@@ -205,7 +205,7 @@ All entities must be seeded before prose begins.
 ### Factions
 | Entity | Type | Notes |
 |---|---|---|
-| Order of the Wall | faction | Liturgy sub-body; staffs/administers the Quarantine Wall and Descents |
+| Order of the Watch | faction | Liturgy sub-body; staffs/coordinates the Quarantine Watch patrols and Descents |
 | The Descent Corps | faction | Expeditionaries into Sinter zone; Liturgy-chartered; ~40% full-return rate |
 | Eaters of Monsters | faction | Fjorheim wildmen; unsanctioned Transmutation; three-generation anti-monster campaign |
 | The Liturgy | faction | Primary religious-administrative institution; administers Scrying, Transmutation, Compact |
@@ -263,7 +263,7 @@ All entities must be seeded before prose begins.
 ## Checklist Before Proceeding
 
 - [x] All 10 sections filled
-- [ ] `docs/universes/CAULD.md` updated with new world facts (Eaters, Sphere numbering, Order of the Wall, alchemy weapons, tincture system, exotic flora/fauna)
+- [ ] `docs/universes/CAULD.md` updated with new world facts (Eaters, Sphere numbering, Order of the Watch, alchemy weapons, tincture system, exotic flora/fauna)
 - [ ] `docs/nodes/VIGL.md` written
 - [ ] Codex doctor passes after all doc edits
 - [ ] Entity seeding complete (MCP)
