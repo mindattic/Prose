@@ -1201,6 +1201,36 @@ actually is. The assumption that every House has a king in armor on a throne is 
   and throwing them. Four infusions would make her something else entirely.
 - Aldric: 2 infusions. Physically inferior to Lyra in direct combat. He knows this.
 
+**What Champion rank actually means — the body at six infusions:**
+Six infusions changes the body's fundamental physics. Bone density approximately triples.
+Muscle architecture reorganizes — the fiber arrangement is no longer human-standard. The
+practitioner grows, slowly, over the years following the sixth infusion: most Champions are
+2–3cm taller than their pre-sixth measurement, broader through the chest, different in the
+quality of how they occupy space. They move at ordinary walking pace and the ground responds
+differently to it.
+
+The combat register is not martial arts. It is applied structural force. A Champion does not
+fight a soldier — she adjusts her grip. The soldier's skeleton makes a decision about whether
+it can survive the adjustment. Usually it cannot. Vaen does not exert herself against Lyra's
+party. She applies measured force and reads what holds and what doesn't.
+
+**Lyra's arc — what Vaen is and what it means:**
+Lyra at 3 infusions is the best Knight the Vigil has. Three more infusions and she becomes
+Vaen. She has never thought about it this way — she thinks about infusions as commendations,
+as recognition of service, as the next rung on a professional ladder. She does not think
+about the destination of the ladder.
+
+Meeting Vaen is the first time she looks at the end of the road she is on.
+
+The book does not resolve this. The final scene — vigil room, membrane, watching — is where
+Lyra is as close to that question as the story gets. What she does next is not written in
+this book. That ambivalence is load-bearing. Do not resolve it.
+
+**Aspiration or horror? Both. The reader should not be certain which.** Vaen picks up a man
+and adjusts her grip. A Champion is a person who became something that isn't quite a person
+anymore in any ordinary sense. Lyra watched her. Lyra has three infusions. She has not
+decided what she thinks about that. The story ends before she has to.
+
 **The Relic — Oculus Memoriae:**
 - A lens, roughly palm-sized, that shows the past state of any location it has been at.
 - It has been at Ocipheus Station since Year 397.
@@ -1381,6 +1411,13 @@ are real.
 - Caer Glas Moor: the ancestral vault is a pre-Compact stone structure with no House
   insignia — older than the Houses. The moor-hound handlers' tent is canvas and modern
   tent-peg. The vault's lock is a two-hundred-year-old mechanism.
+- Ocipheus archive entrance: seven hundred years of carved stone. A metal detector at the
+  door, wired to a bell in the duty office. Both belligerents have sent people through it.
+  The Canon knows this. The bell has rung four times in his tenure.
+- Atrament siege line: catapults still deployed on the old fort walls; laser rangefinder
+  Scried from a military Sphere mounted to the catapult arm's aiming plate. The adjutant
+  reads the distance off the display and calls it to the crew in yards. The crew does not
+  know what yards are. They use the number.
 
 **The prose rule:** Neither element is marked as incongruous. The narrative describes both
 in the same register, the same sentence if they appear in the same breath. Rowe notices it
