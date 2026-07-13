@@ -1216,19 +1216,49 @@ boundary is the same moment seen from inside vs. outside.
 
 ---
 
-### The Pallor Thread (5 chapters — concurrent, running ahead) {#SS-VIGL-9d}
+### The Pallor Thread (6 chapters — opens the novel, then runs ahead) {#SS-VIGL-9d}
 
 **Who they are:** Esvane Mirren (squad leader, Pallor Templar), Petra Dahl (fixer),
 Wren Caerglas (Owain's nephew). Owain is at Caer Glas, waiting — he dispatched them.
 Full profiles in §2c.
 
-**Route:** They cross the Wall directly — Esvane's Pallor Templar credentials pass at the
-checkpoint Lyra is turned back from. They precede Lyra across the same territory: eastern
-Vierna → Atrament → Lacerta (Sal Vento; staged three weeks at the eastern docks before departure) → channel → Caer Glas Moor.
-When the reader follows them, they show us the road ahead of Lyra. The reader knows what
-she's walking into before she gets there.
+**Route:** They steal the Relic from Ocipheus Station (Ch.1 of the novel, before dawn) and
+cross the Watch line directly — Esvane's Pallor Templar credentials pass at the checkpoint
+Lyra is turned back from. They precede Lyra across the same territory: eastern Vierna →
+Atrament → Lacerta (Sal Vento; staged three weeks at the eastern docks before departure) →
+channel → Caer Glas Moor. When the reader follows them, they show the road ahead of Lyra.
+The reader knows what she's walking into before she gets there.
 
-**P1 — East of the Wall — Three Days** (after A-chapter 4 / SCRIBE S1)
+**The Theft — Ocipheus Archive, before dawn (Ch.1 of the novel):**
+
+A fourth operative, **Cathe**, is part of the extraction team. Not a POV character — present
+to die. Fifteen years Pallor service, two infusions, good instincts. His instincts tell him to
+come through the archive door when Esvane is in trouble. His infusion count does not give him
+the clearance to survive the Keeper.
+
+**The Keeper:** The Ocipheus archive's guardian construct. Built in Year 397, the year the Relic
+arrived. Six arms, each articulated at three joints. Iron and canonical stone (Ocipheus headland
+quarry), every surface carved with the founding compact's iconography — the founding Canon spent
+three years on the carving before a single strut was assembled. It is not a war machine. It is a
+devotional object built to face the Oculus and ensure no one takes it. Inside the archive chamber,
+this distinction is irrelevant. It moves slowly everywhere except its lowest rightmost arm, which
+is fast in a specific arc documented in the founding deposition and not widely read. Cathe does
+not read depositions.
+
+**The Pallor fold:** Esvane (3 infusions) and Wren (2 infusions) can briefly phase through the
+membrane and emerge metres away, using a Catalyst preparation dosed two hours before the mission.
+Pallor Templars call this a *fold*. Requires prior line-of-sight or a precise Scrying image of the
+destination. 3–4 folds per preparation dose. Exit angle matters — Wren consistently arrives
+sideways. Each fold leaves a membrane trace readable by a skilled Scryer within 4–6 hours. Petra
+has no infusions; she routes through the physical corridors and meets them at the extraction point.
+
+**P0 — The Theft at Ocipheus** (Ch.1 of the novel)
+Esvane folds into the inner archive. Wren follows, lands wrong. Petra routes through the side
+corridor on schedule. The Keeper opens its eyes when Esvane's hands close on the case. The fight
+is not a fight — the Keeper is the room — and the squad folds out with the case and Cathe's
+absence. Four riders out; three back.
+
+**P1 — East of the Watch — Three Days** (after Ch.6 / SCRIBE S1)
 Three days after the theft. Eastern Vierna. They're ahead and moving fast. The squad establishes
 its dynamics immediately: Esvane navigates and makes every decision, Petra sets pace and argues
 with every decision, Wren watches both of them and keeps his mouth shut. The moor-hounds are
@@ -1314,34 +1344,35 @@ believed in and the Scribe believed in Lyra.
 
 She is three years into the position. She is good at it. She does not know yet what she has signed.
 
-**The opening scene (Chapter 1, before the theft):**
+**The opening (novel structure — Chapters 1–2):**
 
-Vega is at the Ocipheus Station on a routine scribing contract — notarizing the vigil archive's
-annual certification instruments, a two-day job she took partly because it gave her an excuse
-to see her sister. The evening before Lyra leaves for the Sinter line emergency, they sit together
-in the station's lower common room — off-duty soldiers' space, not the formal archive, which is
-the point — and drink whatever the station keeps for long-watch nights (something warm, local,
-not good enough to save for occasions). They argue about something trivial and both immediately
-lose track of what. Vega does an impression of the Canon Immaculate's official correspondence
-style that makes Lyra nearly choke. Lyra tells a story from the Schmalburg posting, ten years
-ago, that she has told before and Vega has heard before and neither of them cares.
+The novel opens on the Pallor theft team at work (Ch.1 — Pallor thread). The reader sees the
+Ocipheus archive before Lyra does. The sister scene plays out afterward, in the aftermath.
 
-They do not say anything important. This is the point. They are sisters at the end of an ordinary
-evening before an ordinary emergency posting, and the thing the reader needs to know is that
-this is what they are when nobody is watching: warm, stupid with each other, slightly drunk,
-entirely themselves.
+**The evening before (off-page):**
+The night before the theft, Lyra and Vega sit together in the station's lower common room —
+off-duty soldiers' space, not the formal archive — and drink whatever the station keeps for
+long-watch nights. They argue about something trivial and lose track of what. Vega does an
+impression of the Canon Immaculate's official correspondence style that makes Lyra nearly choke.
+Lyra tells a story from the Schmalburg posting, ten years ago, that she has told before and Vega
+has heard before and neither of them cares. They do not say anything important. This is the point.
+They are sisters at the end of an ordinary evening.
 
-Lyra sets out before dawn. Vega is still asleep. She leaves a note on the scribing table:
-*back in three days, don't eat the station bread*.
+Lyra leaves a note on the scribing table — *back in three days, don't eat the station bread* —
+and sets out before dawn for the Sinter line emergency. The theft happens while she is gone.
 
-She is back in four days. The archive is empty. Three guards are dead. The note is still on the table.
+**Ch.2 — The morning after (Lyra thread):**
+Lyra returns in two days — the emergence resolved quickly, she rode hard. Vega's scribing contract
+finishes that day; she is still at the station, woken that morning by the commotion, standing in
+the archive doorway when Lyra arrives. Orim is already in the corner with the Rod.
 
-Chapter 1 runs as: evening scene (the sisters; the drink; the impression; the story) → four-day
-ellipsis → dawn return → the dead archive → Orim in the corner.
+Ch.2 runs as: Lyra enters the archive → Orim's debrief (three bodies, fold trace) → sister scene
+in the corridor (Vega cleans the cut; the real conversation; the bread line) → the mandate arrives
+at the sixth hour → Lyra and Orim move.
 
-Vega has already left the station by then — her contract was complete. She is back in the Liturgy's
-central office, two hundred kilometers south, when Lyra finds the archive empty. She will not
-know what happened for a few days after the theft, when S1 puts Lyra's transit suspension paperwork on her desk.
+**After this scene, Vega leaves for the central office.** S1 lands on her desk two days later —
+the cover authorization for the theft, framed as "dispute resolution, Relic provenance review,"
+followed by T-044's field authority suspension. She does not know yet whose designation that is.
 
 **Her function in the plot:**
 
@@ -1360,7 +1391,7 @@ is forward-moving and categorizing, the Scribe is accumulative. She lets things 
 she judges them. The dark humor is quieter: the specific dryness of someone who has been
 writing "no action indicated" into enough folios to understand what the phrase has been describing.
 
-**S1 — The Authorization** (between A-chapters 1–2)
+**S1 — The Authorization** (between A-chapters 2–3; after Three Bodies, before The Wall)
 She copies the canonical property recovery instrument — the cover authorization for the theft
 of the Oculus Memoriae, framed as "dispute resolution, Relic provenance review." She also
 copies T-044's field authority suspension. She does not know yet whose designation that is.
@@ -1369,7 +1400,7 @@ active aperture, apparatus crews in position, a war construct evaluation (WC-Eir
 Sphere 42) being assessed by Descent Corps evaluators. She copies the assessment summary.
 Files it. One entry among many.
 
-**S2 — No Action Indicated** (between A-chapters 7–8)
+**S2 — No Action Indicated** (between A-chapters 8–9; after Vierna Entry, before House Atrament)
 The assessment volume has tripled in six weeks. She is copying war-construct evaluation
 summaries that individually are routine but cumulatively map to a staging operation. In the
 courtyard, a chain of WC-Eirene units is moved to a staging hall she has never seen used —
@@ -1378,9 +1409,9 @@ junior apprentice. It is not locked now.
 She understands, cross-referencing with the suspension paperwork, that T-044 is her
 sister. She writes Lyra's name in the margin of her working copy. She crosses it out.
 
-**S3 — The Review Session** (between A-chapters 11–12)
+**S3 — The Review Session** (between A-chapters 14–15; after Atrament Forge Kingdom, before Schmalburg Adjacent)
 An emergency Liturgy review session convened for inter-House delegations: Lacerta's delegate
-demanding acknowledgment of western Wall sector deterioration; Carnyx's commander with maps
+demanding acknowledgment of western Watch-sector deterioration; Carnyx's commander with maps
 showing the eastern sector is measurably larger than fifteen years ago. The Scribe copies
 Prelacze's counter-brief: "within acceptable variation." Files the Carnyx maps under "archived
 without action." Looks at the maps before she puts them away.
@@ -1389,53 +1420,54 @@ eastern staging, possibly Carnyx-routed. Their intake instrument crosses her des
 while she waits: "Specialist deployment, Sinter Zone Approach Preparation." First time she has
 seen those words in anything other than a maintenance authorization.
 
-**S4 — She Goes to Sinter** (between A-chapters 18–19)
+**S4 — She Goes to Sinter** (between A-chapters 19–20; after Sal Vento, before The Channel)
 A senior Scribe — a woman of seventy who has been copying canonical authorizations since before
 the junior Scribe was born — dispatches her north. The instruction: go, see what happens, write
 it down. The senior Scribe does not say more than this.
 On the road to Sinter she passes three Liturgy military columns moving north. Supply wagons
 marked with the canonical property seal of the contingency reserve — stores that only release
 under a standing order she renewed herself, six months ago, before she understood what she
-was looking at. She arrives at the Wall. She goes through. She is already inside the zone when
+was looking at. She arrives at the Watch line. She goes through. She is already inside the zone when
 Lyra's party enters. When Lyra looks across the crater and sees her sister, she understands
 in one moment what her sister has understood for weeks.
 
 ---
 
-### 28-Chapter Intercutting Order
+### 29-Chapter Intercutting Order
 
 | Ch | Thread | Title |
 |---|---|---|
-| 1 | LYRA | Three Bodies and an Empty Case *(evening with Vega; dawn return; dead archive; Orim)* |
-| 2 | LYRA | The Wall from Outside — Refused |
-| 3 | ROWE | The Mill — Sphere 31 |
-| 4 | SCRIBE | The Authorization |
-| **5** | **PALLOR** | **East of the Wall — Three Days** *(squad in eastern Vierna; Esvane carries the case; Wren's first question)* |
-| 6 | ROWE | The Taking |
-| 7 | LYRA | Vierna Entry — The Law Doesn't Apply Here |
-| 8 | SCRIBE | No Action Indicated |
-| **9** | **PALLOR** | **House Atrament — Everything Properly Filed** *(checkpoint; Esvane's credentials; Petra's second contact; the bickering)* |
-| 10 | LYRA | Sphere 31 — Rowe Found |
-| 11 | ROWE | Seven Months |
-| 12 | LYRA | The River — Factory / Smoke / Morning / Gone |
-| 13 | LYRA | Atrament — The Forge Kingdom |
-| 14 | SCRIBE | The Review Session |
-| **15** | **PALLOR** | **Schmalburg Adjacent — The Atrament Road** *(the road Lyra will walk; Petra routes around trouble; Wren's industry shock)* |
-| 16 | LYRA | Schmalburg — The Raid; the Eaters; Kressida |
-| 17 | LYRA | The Forge Hearth — What She Recognizes |
-| 18 | LYRA | Sal Vento — Tavar |
-| **19** | **PALLOR** | **The Channel — Hours, Not Days** *(Esvane tells Petra the Canon's purpose; Petra reveals she threw the token; the moor-hounds won't settle)* |
-| 20 | LYRA | The Acquisition — Eirene-7 *(steal-the-airship mission)* |
-| 21 | LYRA | The Channel — Rowe Testifies |
-| **22** | **PALLOR** | **Caer Glas — The Hours Before** *(the moor at dawn; Wren and Esvane; the vault; the moor-hounds wake)* |
-| 23 | LYRA | Pallor Reached — Owain Caerglas *(convergence; Pallor squad; Owain names Prelacze; then Vaen steps out of the moor; party vs. Champion boss fight; Vaen withdraws; Wren survives and stays)* |
-| 24 | SCRIBE | She Goes to Sinter |
-| 25 | LYRA | The Relic — What the Eye Has Seen |
-| 26 | LYRA | The Long Seat — The Eighth Theory |
-| 27 | LYRA | The Zone — Entering Sinter |
-| 28 | LYRA | The Aperture — What Loyalty Means *(climax; Prelacze arrives; Scribe is the witness)* |
+| **1** | **PALLOR** | **The Theft at Ocipheus** *(archive before dawn; Esvane's fold; the Keeper; Cathe's death; escape — four riders out, three back)* |
+| 2 | LYRA | Three Bodies and an Empty Case *(dawn return; dead archive; Orim; sisters; task given)* |
+| 3 | LYRA | The Wall from Outside — Refused |
+| 4 | ROWE | The Mill — Sphere 31 |
+| 5 | SCRIBE | The Authorization |
+| **6** | **PALLOR** | **East of the Watch — Three Days** *(squad in eastern Vierna; Esvane carries the case; Wren's first question)* |
+| 7 | ROWE | The Taking |
+| 8 | LYRA | Vierna Entry — The Law Doesn't Apply Here |
+| 9 | SCRIBE | No Action Indicated |
+| **10** | **PALLOR** | **House Atrament — Everything Properly Filed** *(checkpoint; Esvane's credentials; Petra's second contact; the bickering)* |
+| 11 | LYRA | Sphere 31 — Rowe Found |
+| 12 | ROWE | Seven Months |
+| 13 | LYRA | The River — Factory / Smoke / Morning / Gone |
+| 14 | LYRA | Atrament — The Forge Kingdom |
+| 15 | SCRIBE | The Review Session |
+| **16** | **PALLOR** | **Schmalburg Adjacent — The Atrament Road** *(the road Lyra will walk; Petra routes around trouble; Wren's industry shock)* |
+| 17 | LYRA | Schmalburg — The Raid; the Eaters; Kressida |
+| 18 | LYRA | The Forge Hearth — What She Recognizes |
+| 19 | LYRA | Sal Vento — Tavar |
+| **20** | **PALLOR** | **The Channel — Hours, Not Days** *(Esvane tells Petra the Canon's purpose; Petra reveals she threw the token; the moor-hounds won't settle)* |
+| 21 | LYRA | The Acquisition — Eirene-7 *(steal-the-airship mission)* |
+| 22 | LYRA | The Channel — Rowe Testifies |
+| **23** | **PALLOR** | **Caer Glas — The Hours Before** *(the moor at dawn; Wren and Esvane; the vault; the moor-hounds wake)* |
+| 24 | LYRA | Pallor Reached — Owain Caerglas *(convergence; Pallor squad; Owain names Prelacze; then Vaen steps out of the moor; party vs. Champion boss fight; Vaen withdraws; Wren survives and stays)* |
+| 25 | SCRIBE | She Goes to Sinter |
+| 26 | LYRA | The Relic — What the Eye Has Seen |
+| 27 | LYRA | The Long Seat — The Eighth Theory |
+| 28 | LYRA | The Zone — Entering Sinter |
+| 29 | LYRA | The Aperture — What Loyalty Means *(climax; Prelacze arrives; Scribe is the witness)* |
 
-*Coda:* Ocipheus Station, vigil room — absorbed into Ch.28 or brief Ch.29.
+*Coda:* Ocipheus Station, vigil room — absorbed into Ch.29 or brief Ch.30.
 
 ---
 

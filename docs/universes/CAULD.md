@@ -1705,6 +1705,28 @@ put down.
 - In-world, no character calls it "Transmutation" in casual dialogue. It is "the Ceremony,"
   "the dose," "being seen." Transmutation is the analytical term, not the lived vocabulary.
 
+### The Pallor Fold — membrane displacement {#SS-CAULD-FOLD}
+
+At Knight-level infusion count (3+ doses), Transmuted practitioners develop the ability to
+briefly phase through the membrane and emerge metres away — what Pallor Templars call a **fold**.
+Other Houses use different names; most lack a vernacular term because the capability is uncommon
+below Paladin level outside Pallor's combat-calibrated protocols.
+
+**Requirements:**
+- A Catalyst preparation compound, dosed 2 hours before use; 3–4 folds per dose
+- Prior line-of-sight to the destination, or a precise Scrying image held in mind
+- Controlled will — a disoriented or hasty exit emerges at wrong angle; disorienting, rarely fatal
+- Physical cost accumulates across folds; the fourth is reliably rough
+
+**Trace:** Both the entry and exit leave a brief membrane signature detectable by a skilled Scryer
+within 4–6 hours. At vigil installations (membrane-adjacent by design), the trace is sharper than
+in open ground.
+
+**Prose register:** The fold feels like a wound reopening — not painful, but residual. Cold for
+less than a breath, then the room finds you. After many folds, practitioners describe a compound
+accumulation: something the membrane leaves in you each crossing, too small to measure, compound
+interest on a ledger nobody has found yet.
+
 ---
 
 ## Champions
