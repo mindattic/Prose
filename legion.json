@@ -1,10 +1,10 @@
 {
   "votingEnabled": false,
-  "voters": ["claude-team"],
-  "judge": "claude-team",
+  "voters": ["claude-api"],
+  "judge": "claude-api",
   "maxConcurrency": 3,
   "models": {
-    "claude-team": "claude-sonnet-5",
-    "claude-api": "claude-sonnet-5",
+    "claude-team": "claude-sonnet-4-6",
+    "claude-api": "claude-sonnet-4-6"
   }
 }
