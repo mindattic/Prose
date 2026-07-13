@@ -23,7 +23,7 @@ The story of Dame Lyra T-044 of Ocipheus crossing the entire Cauld to recover he
 stolen Relic weapon — and losing, along the way, the certainty that made her who she is.
 
 **Opening structure:**
-1. **Cold open — the theft.** Night. The Ocipheus archive. The **Blink Thieves** — a Calyx-rooted
+1. **Cold open — the theft.** Night. The Ocipheus archive. The **Blink Thieves** — a Loera-rooted
    crew of phase-step operatives — move through the building with the confidence of people who
    have studied the layout for months. They know where the Yggdra box is. They know the rotation.
    They leave through the south coast before the House knows it is gone. **These are the thieves
@@ -46,13 +46,13 @@ stolen Relic weapon — and losing, along the way, the certainty that made her w
 **Three-act structure:**
 - **Act 1** (Ch.1–~9): Ocipheus → Narrow Sea → Vierna (Rowe found) → Three Points
   The Relic is four days ahead. Act 1 ends at Three Points.
-- **Act 2** (~Ch.10–21): Three Points → Atrament (Kressida joins) → Calyx border
-  (Blink Thieves intercepted; Esvane and Petra killed; Wren blinks with the Relic;
+- **Act 2** (~Ch.10–21): Three Points → Atrament (Kressida joins; Meridian stolen; Kressida pilots)
+  → eastern plains (Blink Thieves intercepted; Esvane and Petra killed; Wren blinks with the Relic;
   Wren returns and joins when Orim tells him what the Relic has seen)
 - **Act 3** (~Ch.22–29): The Balkan approach → Eirene's Gate / The Pass → Sinter (climax)
   → return to Ocipheus
 
-Running east ahead of her: the Blink Thieves — Calyx-rooted crew, Pallor backing,
+Running east ahead of her: the Blink Thieves — Loera-rooted crew, Pallor backing,
 carrying the Oculus Memoriae toward a destination the reader is not yet sure of. One
 of them already doubts the mission. That is Wren. He is twenty-two. He has read the
 documentation. The reader will come to understand his doubt before Lyra does.
@@ -94,18 +94,17 @@ Large sweeping vistas. Interpersonal joy and sorrow both fully earned. See §8a�
 
 ## 1. The Party {#SS-VIGL-1}
 
-Seven members — one from every major House in the Cauld. The party assembles as Lyra crosses
-it, one member per leg, each showing the system at work on a different kind of person.
+Six members — assembled one per leg as Lyra crosses the continent east. Each shows the system
+at work on a different kind of person.
 
 | Character | House | Role | Age | Joins |
 |---|---|---|---|---|
 | Dame Lyra T-044 | Ocipheus (Templar) | Tank | Early 30s | Start |
 | Orim Zebulun | Ocipheus (stationed) | Scry Mage | Late 60s | Start |
 | Rowe / M-101 | Vierna (Earth, 1919) | Ranged DPS | Mid-30s | Vierna |
-| Tavar Leal | Loera | Pilot / Spy | 50s | Atrament garrison |
 | Erland | Pallor | Melee DPS | Mid-30s | Three Points |
-| Kressida Haun | Atrament | Support Engineer | Mid-20s | Schmalburg |
-| Wren Caerglas | Calyx | Rogue | 22 | Calyx eastern plains |
+| Kressida Haun | Atrament | Engineer / Pilot | Mid-20s | Schmalburg |
+| Wren Caerglas | Loera | Rogue | 22 | Eastern plains |
 
 ### Dame Lyra T-044 — POV {#SS-VIGL-1a}
 - **Institutional affiliation:** The Liturgy — she is a **Templar**, not a House Knight.
@@ -281,7 +280,7 @@ it, one member per leg, each showing the system at work on a different kind of p
   tell Lyra that his city is called Aldenvast. The testimony is the arc. The name is the gift.
 
 ### Kressida Haun — The Rig Pilot {#SS-VIGL-1d}
-- **House:** Atrament. Battle-rig pilot, BR-7 designation. Deserter.
+- **House:** Atrament. Battle-rig pilot, BR-7 designation. Aeronaut. Deserter.
 - **Physical:** Small. Genuinely small — 5'2", slight, the kind of person people instinctively
   move to protect in a crowd. Dark hair cut short on one side. She dresses like a Schmalburg
   dock worker: functional, worn, nothing that reads as military. She can move through a room
@@ -294,11 +293,9 @@ it, one member per leg, each showing the system at work on a different kind of p
 - **The reveal:** She has done this before. Small woman, apparent distress, someone moves to
   help — then she walks to the rig, and the rig handles the situation, and the someone who
   moved to help is standing in the aftermath trying to reconcile what they saw with what they
-  are looking at now. Tavar Leal experiences this at the Atrament garrison break-out. He has
-  just been freed from the brig. He has fifteen seconds of watching a small woman walk toward
-  a machine larger than a horse in the garrison bay, then watching the machine stand up and
-  walk through the outer wall. He does not speak for a full minute afterward. He files it
-  as: *useful to know.* He takes the run for the nav-override. That is the reason.
+  are looking at now. The garrison break-out is where Lyra and Orim watch this happen for the
+  first time: fifteen seconds from "small woman walks toward a machine larger than a horse"
+  to "the machine stands up and walks through the outer wall."
   **Wren experiences the reveal differently**: from the other side of it. The Meridian's
   approach and the rig dropping onto his crew is the last thing he sees before he blinks.
   He already knows what the rig can do before he speaks a word to the woman inside it.
@@ -343,11 +340,18 @@ it, one member per leg, each showing the system at work on a different kind of p
     and left running while she does something else. She checks it the way a scout checks
     their backtrail. At Sinter, it is the first instrument to register what the aperture
     is doing before any practitioner feels it.
+- **The *Meridian* — pilot role:** The *Meridian* is an Atrament-impounded flying-boat airship
+  (WW2-Sphere hull fitted with a rigid envelope for range extension) seized from an unauthorized
+  route run and sitting in the garrison bay when the party breaks in. Kressida can fly it —
+  Atrament engineers train on every impounded aircraft their military takes. She does not
+  mention this. She just gets in. The party's ground operation becomes an aerial operation
+  without a formal discussion having occurred. She handles the Meridian the way she handles
+  the rig: the right tool, used when it is the right tool, kept fueled and close.
 - **Two-scene entry:** She joins the party at Schmalburg — small woman in the raid chaos,
   the rig appears and handles a threat, nobody asks the right question yet. The reveal
-  happens at the Atrament garrison break-out: Tavar sees the transition live — small woman,
-  fifteen seconds, then the rig standing up in the garrison bay — and the party understands
-  what they have been traveling with. Tavar does not speak for a full minute afterward.
+  happens at the Atrament garrison break-out: Lyra and Orim watch the transition — small
+  woman, fifteen seconds, then the rig standing up in the garrison bay and walking through
+  the outer wall. The party understands what they have been traveling with.
 - **What sets her apart from Erland (the Pallor berserker):** He is biological — infused
   body, held together by will. She is mechanical — the rig is external, controlled,
   devastating at scale. He fights from inside himself. She fights from inside a machine.
@@ -363,56 +367,7 @@ it, one member per leg, each showing the system at work on a different kind of p
   in the station courtyard, asking nobody's permission about what comes next. Wren is
   nearby. Neither of them has said the thing. See Wren entry.
 
-### Capt. Tavardo Leal (Tavar) — Loera Spy / Sky Pirate {#SS-VIGL-1e}
-- **House:** Loera-born. Currently no House affiliation — the *Meridian* is under Liturgy
-  navigation embargo and Tavar flies on his own authority.
-- **Age:** 50s. Second oldest in the party after Orim.
-- **Physical:** Male, 50s, dark, compact, expensively dressed under a weathered coat. Loera
-  layered shell underneath. He moves like someone who has thought carefully about exits for
-  thirty years and now does it without thinking.
-- **The spy layer:** Before the *Meridian*, before the embargo, Tavar ran intelligence for
-  three different clients simultaneously — all of them believing they were his only client.
-  He is very good at this. He is also the reason he does not do it anymore. What happened is
-  not something he volunteers, and nobody in the party asks directly. The shape of the
-  haunting is visible in what he notices: he reads rooms the way Orim reads exits —
-  who is watching whom, who is carrying something they did not bring in, which conversation
-  is meant to be overheard. He does not explain this. He acts on it.
-- **What haunts him:** Something he ran — a route, a document, a person — that he thought
-  was intelligence work and turned out to be something else. He does not know the full shape
-  of what he enabled. He suspects the full shape is worse than what he knows.
-  The nav embargo is partly why he stopped. The rest of why he stopped is what he knows.
-- **The *Meridian*:** WW2-Sphere flying-boat hull — a large, multi-engine aircraft designed
-  for open-water landing — fitted with a rigid airship envelope for range extension. It is
-  the fastest transport in the Cauld for non-fixed routes. It runs on Scried petroleum fuel
-  and Loera alchemy-refined accelerants. Its cargo hold is spacious. Its weapons load
-  consists of whatever Tavar has most recently traded for.
-- **Archetype:** Setzer (FFVI) meets Balthier (FFXII). He treats everything like a story in
-  which he is the most interesting character. This is not vanity — it is operational:
-  confidence reads as authority, and authority opens doors. He has a code. It is not
-  the Liturgy's code, or any House's code. It is his.
-- **Why the nav embargo:** He ran a route the Liturgy wanted run through their chartered
-  channels. He refused. That's the story he tells. There may be more to it.
-- **Weapons:** Loera-manufacture percussion pistol (single-shot, long barrel, Catalyst-
-  accelerant round). One shot. He makes it count. He does not carry a secondary blade —
-  if the pistol has fired and he is still standing, he has already positioned himself
-  somewhere he does not need one.
-- **How he enters:** In Atrament custody at a garrison east of Schmalburg — impounded for
-  running an embargoed route without Liturgy charter. Lyra's party breaks into the garrison
-  to steal the *Meridian*. They find Tavar in the brig. They take him with the airship.
-- **His price:** Lyra's Templar nav-authority overrides the Liturgy nav embargo on the
-  *Meridian* for one transit. This is his stated price. It is also his actual price.
-  The nav embargo has cost him three contracts and two port relationships. He is not
-  doing this out of adventure. He is doing this because the override is genuinely
-  worth the run to him. He understands the terms exactly.
-- **Arc:** He has no faith to collapse — he traded that in a long time ago for something
-  more durable: competence. What changes: the run puts him in proximity to Rowe's testimony
-  (a man who cannot lie yet because he barely has the language), Lyra's refusal of the Canon
-  (institutional certainty collapsing in real time), and the thing at Sinter (which is
-  larger than any intelligence brief he ever ran). By the end he has flown a route that will
-  be in the record whether he likes it or not. He is fifty-three years old and this is the
-  first run where he does not know what the client actually wanted. He finds this clarifying.
-
-### Erland — Pallor Berserker {#SS-VIGL-1f}
+### Erland — Pallor Berserker {#SS-VIGL-1e}
 - **House:** Pallor. A product of the warrior-king culture's most direct tradition: infused
   strength, infused pain suppression, fighting until the body makes the decision your mind
   would not.
@@ -433,7 +388,7 @@ it, one member per leg, each showing the system at work on a different kind of p
   only by will. Kressida is mechanical melee — the rig is external, precise, and three meters
   tall. He respects the rig without entirely understanding why anyone would choose to fight
   from inside a machine when you could fight from inside yourself. He and Kressida have
-  argued about this. Nobody won. Tavar watched both arguments.
+  argued about this. Nobody won. The party watched both arguments.
 - **Weapons:** Giant axe (Pallor forge-pattern; double-edge; three-quarters of Erland's own
   height; no normal person can swing it at speed; he can, because of what the infusions did
   to his shoulder assembly and grip strength). Short seax (knife, worn on the off-hip; for
@@ -521,7 +476,7 @@ it, one member per leg, each showing the system at work on a different kind of p
 
 ---
 
-### The Pallor Squad {#SS-VIGL-2c}
+### The Blink Thieves {#SS-VIGL-2c}
 
 The three who travel ahead of Lyra, four days ahead, carrying the Relic toward home. Aldric
 sent them. They are doing his work — and their own. The reader follows them across the same
@@ -584,7 +539,7 @@ has come to love all three. That is what makes the confrontation tragic rather t
   When she decides not to sell the Relic's location, she does not make it a moral moment. She
   names it a professional decision: the secondary client isn't worth the exposure.
 
-**Wren Caerglas — Aldric's nephew, Pallor soldier; operational alias "The Blink Thief"** {#SS-VIGL-2c-wren}
+**Wren Caerglas — Aldric's nephew; Loera-trained operative; operational alias "The Blink Thief"** {#SS-VIGL-2c-wren}
 - Twenty-two. Assigned to the squad by family obligation. He would have come regardless.
 - He has the Kael family's — Aldric's family's — belief that the Relic belongs to Pallor.
   He got it secondhand, the way you get things from family stories: absolutely certain in
@@ -596,14 +551,15 @@ has come to love all three. That is what makes the confrontation tragic rather t
   Ocipheus's institutional custody. Both things are true and cannot both be satisfied.
 - He has not told Aldric this. He does not know how to tell Aldric this, because Aldric has
   been certain his whole life and Wren does not know what certainty looks like after it breaks.
-- **The Blink:** Wren's Transmutation infusion — one — is unusual. He did not receive standard
-  Knight-track infusion. His is a phase-step ability: for approximately four seconds per use,
-  he can translate his body through solid material up to the thickness of an interior wall.
-  He cannot blink through stone thicker than two meters; he cannot blink through iron; he
-  cannot blink carrying more than he can carry in one hand. The Blink Thieves are named for him.
-  He is why they could leave through the south coast of the Ocipheus archive without triggering
-  a sealed gate. The box was in his arms. He walked through the wall.
-- **At the Calyx intercept:** Lyra's party catches the squad in the eastern plains. Esvane and
+- **The Blink:** Wren's Transmutation infusion — one — is a Loera-tradition phase-step ability.
+  Loera has a long culture of thieving-arts that formalized the phase-step as a practiced
+  infusion technique rather than a military one. Wren obtained it through Loera channels —
+  Aldric used Loera contacts to give him the right tool for the right job. For approximately
+  four seconds per use, he can translate his body through solid material up to two meters
+  thick. He cannot blink through iron; he cannot carry more than one hand's worth. The Blink
+  Thieves are named for him. He is why they could leave through the south coast of the Ocipheus
+  archive without triggering a sealed gate. The box was in his arms. He walked through the wall.
+- **At the eastern plains intercept:** Lyra's party catches the squad in the eastern plains. Esvane and
   Petra go down. Wren blinks — through a stone building, a courtyard wall, into an adjacent
   field — with the Yggdra box in his arms. He is alive. The Relic is with him. He is alone
   for the first time since the theft.
@@ -630,7 +586,7 @@ has come to love all three. That is what makes the confrontation tragic rather t
   He knows the Long Seat's position on Sinter from inside the House that holds it. He is the one
   who can say: *the eighth theory belongs to us too. We grew up with it.* He does not say this
   until Lyra needs to hear it.
-- **Weapons:** Two Calyx-pattern short daggers, worn reversed at the lower back — draw
+- **Weapons:** Two Loera-pattern short daggers, worn reversed at the lower back — draw
   crosses both hands simultaneously. Not throwing daggers; close-work, inside grappling
   range. The blink puts him there. He trains for the moment after the blink, not the
   approach.
@@ -681,29 +637,26 @@ is on the moor.
 1.  Ocipheus Station, the island (start and end) — Lyra departs alone; the Relic is four days ahead
 2.  Channel crossing to Vierna
 3.  Bressant, Vierna (Veil River; Rowe found)
-4.  Three Points neutral ground (Hamburg analog; Act 1 ends here) — **Erland joins** (Pallor
-    berserker, no current employer, available); intel stop; first word that Tavar Leal's
-    airship the *Meridian* has been impounded by Atrament and Tavar is in custody
+4.  Three Points neutral ground (Act 1 ends here) — **Erland joins** (Pallor berserker,
+    no current employer, available); intel: impounded airship (*Meridian*) at Atrament garrison
+    east of Schmalburg
 5.  Vierna-Atrament border / rail
 6.  Schmalburg, Atrament (raid; Kressida joins; Ardea's death)
 7.  **Atrament military base** — mission: steal the *Meridian*; Kressida's rig handles the
-    compound; they find Tavar in a detention block; they break him out; Tavar joins.
-    He watches Kressida walk the rig out of the bay. He does not speak for a full minute.
-    He takes the run. His stated price: Lyra's Templar nav-override authority lifts the
-    Liturgy embargo on the *Meridian* for one transit. His actual reason is standing forty
-    metres away in a machine she can step out of whenever she wants.
-8.  Atrament volcanic ridge / Forge Hearth approach (aboard the *Meridian* now; faster)
-9.  Calyx eastern plains — aerial pursuit; Blink Thieves spotted and intercepted from the air;
+    compound; Kressida pilots the *Meridian* out — she does not announce she can fly it,
+    she just gets in. The ground operation becomes an aerial operation without discussion.
+8.  Atrament volcanic ridge / Forge Hearth approach (aboard the *Meridian*; faster than overland)
+9.  Eastern plains — aerial pursuit; Blink Thieves spotted and intercepted from the air;
     Esvane and Petra killed; Wren blinks with the Relic; Orim finds Wren alone in a field;
     Wren returns the Relic and joins the party
-10. Balkan approaches — the road southeast toward The Pass (Tavar flies them)
+10. Balkan approaches — Kressida flies them southeast toward The Pass
 11. Eirene's Gate / The Pass (Bosphorus) — Vigil checkpoint; Rowe testifies
 12. Sinter zone — the aperture; climax
-12. Return airship run to Ocipheus Station; Canon confrontation
+13. Return airship run to Ocipheus Station; Canon confrontation
 
 ### The living history at each threshold:
 - **Vierna:** Archival Gate at Bressant (Arnault d'Archival Year 312); Treachery Quarter; *L'Accord* barge; fog off the lowlands
-- **Three Points:** neutral ground since the early Compact; no House stations forces here; the place where three powers agree the only thing worse than sharing is fighting. **Act 1 ends here.** Erland is in the common room. The party's intelligence contact here tells them the *Meridian* (Tavar's airship) is impounded at an Atrament garrison east of Schmalburg. Tavar is in the brig.
+- **Three Points:** neutral ground since the early Compact; no House stations forces here; the place where three powers agree the only thing worse than sharing is fighting. **Act 1 ends here.** Erland is in the common room. The party learns here that an impounded airship — the *Meridian* — sits at an Atrament garrison east of Schmalburg.
 - **Atrament:** Schmalburg named for the Battle of the Small Fortress Year 701; Ignamund Unburnt's *Ewige Flamme* in the capital; Forge Hearth Hearth-One through Hearth-Eleven. **Wylla Mother of Men** — a Cauld invocation Lyra overhears an officer give to his column before they march south-east toward The Pass. The troops repeat it like a ward: *Wylla Mother of Men.* Not a prayer exactly — more like a name you say out loud to mean *I know where I come from.* Who or what Wylla is is not explained to the reader. That is deliberate. Lyra files it and moves on.
 - **Calyx:** Danube plains; monster incursion corridors; people who grow food and hunt creatures are frequently the same people; the eastern plains grade toward the Balkan approaches
 - **The Pass / Eirene's Gate:** named for Eirene, last Sinter Champion, who died here Year 1081; *Sinter remembers even if we don't*; towers on both banks; the stamp; the departure log on ruled paper
