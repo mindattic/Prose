@@ -54,8 +54,8 @@ IF NOT EXISTS (SELECT 1 FROM dbo.Universe WHERE Id = '0197e9c9-0001-7000-8000-00
 GO
 IF NOT EXISTS (SELECT 1 FROM dbo.Universe WHERE Id = '0197e9c9-0002-7000-8000-000000000002')
     INSERT INTO dbo.Universe (Id, Slug, Name, Description, Theme, SortKey)
-    VALUES ('0197e9c9-0002-7000-8000-000000000002', 'fantasy-steampunk', 'Fantasy / Steampunk',
-            'Placeholder second universe (fantasy / steampunk). Stood up to prove the engine is universe-agnostic.',
+    VALUES ('0197e9c9-0002-7000-8000-000000000002', 'scry', 'SCRY',
+            'Scry — the Cauld (medieval fantasy world; The Vigil''s End and other Cauld stories).',
             'steampunk', 200);
 GO
 

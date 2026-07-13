@@ -7,7 +7,7 @@ GO
 -- Ruling Family · Political Cabinet · Military Command · Scrying Staff
 -- Domestic Staff · Oathless-Adjacent
 -- Rhine-Danube; Germany analog; industrial and methodical.
--- Universe: fantasy-steampunk (ID 0197E9C9-0002-7000-8000-000000000002)
+-- Universe: scry (ID 0197E9C9-0002-7000-8000-000000000002)
 -- 2026-07-04
 -- ═══════════════════════════════════════════════════════════════════════════════
 

@@ -6,7 +6,7 @@ GO
 -- CAULD UNIVERSE — WORLD EXPANSION SEED
 -- Run: sqlcmd -S "(localdb)\MSSQLLocalDB" -d StreetSamurai -i tools\seed_cauld_expansion.sql
 -- 2026-07-04 | The Seven Houses, their people, places, weapons, and Catalysts
--- Universe: fantasy-steampunk (ID 0197E9C9-0002-7000-8000-000000000002)
+-- Universe: scry (ID 0197E9C9-0002-7000-8000-000000000002)
 -- ═══════════════════════════════════════════════════════════════════════════════
 
 DECLARE '0197E9C9-0002-7000-8000-000000000002' UNIQUEIDENTIFIER = '0197E9C9-0002-7000-8000-000000000002';

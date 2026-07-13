@@ -148,14 +148,14 @@ updated: 2026-06-25
   across 12,096 Entities / 94 Strands / 11 Books after migration; DB backed up first to
   `backups/StreetSamurai_preuniverse_20260615.bak`.)*
 - **SS-US-U3 ✅** As the author, a Fantasy/Steampunk placeholder universe is seeded alongside GLMZ.
-  *(verified by SQL: `Universe` seeded with `glmz` + `fantasy-steampunk`, each with a `WorldPrimer`.)*
+  *(verified by SQL: `Universe` seeded with `glmz` + `scry`, each with a `WorldPrimer`.)*
 - **SS-US-U4 ✅** As the author, I can **SwitchUniverse** — set the current universe independently in
   the UI and in each CLI/MCP process — so I can write GLMZ in one terminal and Fantasy in another at
   the same time. **Selection is per-process / per-session, never a single shared global.** Precedence:
   `--universe <slug>` flag → `SS_UNIVERSE` env var (per terminal) → UI selection → global default
   `current_universe` KV. A UI dropdown (`NavMenu`), CLI flag, and MCP `switch_universe` tool set it;
   an EF global query filter (`IUniverseContext` / `UniverseScope`) scopes every read. *(verified by
-  CLI smoke `--list-strands --universe glmz` → 94 vs `--universe fantasy-steampunk` → 0, the universe
+  CLI smoke `--list-strands --universe glmz` → 94 vs `--universe scry` → 0, the universe
   predicate visible in the generated SQL; `DiRegistrationTests`, `InterfaceRegistrationTests`.)*
 - **SS-US-U5 ✅** As the engine, per-universe config + retrieval + prompts ground prose in the right
   world with **no cross-over** (RFC 0006, fully implemented). (1) `UniverseId` on `Settings` +

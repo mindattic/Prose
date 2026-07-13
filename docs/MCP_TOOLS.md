@@ -1597,7 +1597,7 @@ Set the universal world facts for the current universe. These facts are injected
 
 ### `switch_universe`
 
-Switch the active universe for this session by slug (e.g. 'glmz' or 'fantasy-steampunk'). All subsequent canon/story reads are scoped to it. Returns the new current universe or an error if the slug is unknown.
+Switch the active universe for this session by slug (e.g. 'glmz' or 'scry'). All subsequent canon/story reads are scoped to it. Returns the new current universe or an error if the slug is unknown.
 
 - `slug` (string, required) — Universe slug from list_universes, e.g. 'glmz'.
 

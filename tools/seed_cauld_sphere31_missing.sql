@@ -4,7 +4,7 @@ GO
 
 -- ═══════════════════════════════════════════════════════════════════════════════
 -- CAULD UNIVERSE — SPHERE 31 (EARTH) TAKEN PERSONS
--- Universe: fantasy-steampunk (ID 0197E9C9-0002-7000-8000-000000000002)
+-- Universe: scry (ID 0197E9C9-0002-7000-8000-000000000002)
 -- 2026-07-04
 -- 54 characters; idempotent (IF NOT EXISTS guards on all inserts)
 -- Column order (44 non-system cols, Zora pattern):

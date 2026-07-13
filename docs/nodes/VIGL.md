@@ -1578,4 +1578,4 @@ That is what comes next.
   Existing Lyra chapters rewritten from Kyle's register. Sinter zone chapters new.
 - **VIGL-US-6 ⬜** Logic sweep clean (0 BLOCKERs). Lyra identified as Liturgy Templar throughout.
   Sinter as climax; no Wall crossing on outward leg; steal-the-airship chapter present.
-- **VIGL-US-7 ⬜** V3.docx exported to `R:\Desktop\EPub\MindAttic\Fantasy\The Vigils End\`.
+- **VIGL-US-7 ⬜** V3.docx exported to `R:\Desktop\EPub\MindAttic\Scry\The Vigils End\`.

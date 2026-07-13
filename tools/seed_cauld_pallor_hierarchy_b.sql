@@ -5,7 +5,7 @@ GO
 -- ═══════════════════════════════════════════════════════════════════════════════
 -- CAULD UNIVERSE — HOUSE PALLOR LOWER HIERARCHY (PART B)
 -- Scrying Installation Staff + Domestic Staff + Oathless Adjacent
--- Universe: fantasy-steampunk (ID 0197E9C9-0002-7000-8000-000000000002)
+-- Universe: scry (ID 0197E9C9-0002-7000-8000-000000000002)
 -- 2026-07-04
 -- 26 characters; idempotent (IF NOT EXISTS guards on all inserts)
 -- ═══════════════════════════════════════════════════════════════════════════════

@@ -6,7 +6,7 @@ GO
 -- CAULD UNIVERSE — ZORA MATIĆ
 -- A woman taken from her own Sphere via witnessed pierce arranged by a senior
 -- Corvus figure. She recognizes the weapons. She knows the marks.
--- Universe: fantasy-steampunk (ID 0197E9C9-0002-7000-8000-000000000002)
+-- Universe: scry (ID 0197E9C9-0002-7000-8000-000000000002)
 -- 2026-07-04
 -- ═══════════════════════════════════════════════════════════════════════════════
 

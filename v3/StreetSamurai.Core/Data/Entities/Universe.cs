@@ -1,7 +1,7 @@
 namespace StreetSamurai.Core.Data.Entities;
 
 /// <summary>
-/// A top-level tenant: one self-contained fictional world (GLMZ, Fantasy/Steampunk, …).
+/// A top-level tenant: one self-contained fictional world (GLMZ, Scry, …).
 /// Every universe-scoped root — <see cref="Entity"/>, <see cref="Node"/>, <see cref="Book"/> —
 /// carries a single <c>UniverseId</c> pointing here (1:M). A crossover entity (shared vocabulary)
 /// is DUPLICATED, one row per universe — there is no shared row and no M:M bridge (SS-LAW-15).
@@ -14,10 +14,10 @@ public class Universe
 {
     public Guid Id { get; set; } = Guid.CreateVersion7();
 
-    /// <summary>URL/CLI-safe identifier, e.g. <c>glmz</c>, <c>fantasy-steampunk</c>. Unique.</summary>
+    /// <summary>URL/CLI-safe identifier, e.g. <c>glmz</c>, <c>scry</c>. Unique.</summary>
     public string Slug { get; set; } = "";
 
-    /// <summary>Display name, e.g. "GLMZ", "Fantasy / Steampunk".</summary>
+    /// <summary>Display name, e.g. "GLMZ", "SCRY".</summary>
     public string Name { get; set; } = "";
 
     public string? Description { get; set; }
@@ -51,7 +51,7 @@ public class Universe
     //    add_universe_*_20260615.sql seeds/defaults. ──────────────────────────────
     /// <summary>Universe #1 — GLMZ (the flagship cyberpunk universe / Bushido Coda).</summary>
     public static readonly Guid GlmzId    = new("0197e9c9-0001-7000-8000-000000000001");
-    /// <summary>Universe #2 — Fantasy / Steampunk placeholder.</summary>
+    /// <summary>Universe #2 — Scry (The Cauld; fantasy world).</summary>
     public static readonly Guid FantasyId = new("0197e9c9-0002-7000-8000-000000000002");
 
     /// <summary>

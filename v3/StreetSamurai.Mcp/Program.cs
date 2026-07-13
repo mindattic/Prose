@@ -55,7 +55,7 @@ Log.Logger = new LoggerConfiguration()
     .CreateLogger();
 
 // Multi-universe: honor a `--universe <slug>` arg (and the SS_UNIVERSE env var)
-// so an MCP session can target GLMZ or Fantasy independently of other processes
+// so an MCP session can target GLMZ or Scry independently of other processes
 // (SS-LAW-15). A switch_universe tool can also change it mid-session.
 UniverseBootstrap.RequestedSlug ??= UniverseBootstrap.ParseSlug(args);
 

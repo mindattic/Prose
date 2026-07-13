@@ -275,7 +275,7 @@ narrative-law block here when stood up:**
     the reconstruction. *(GLMZ; applies to all GLMZ stories featuring Kyle. The secret is never
     stated on the page in any story — it is transmitted by accumulation.)*
 
-**Fantasy/Steampunk narrative laws (Universe: fantasy-steampunk — validate any Fantasy/Steampunk rewrite against these). World facts: `docs/universes/CAULD.md`.**
+**Scry narrative laws (Universe: scry — validate any Scry/Cauld rewrite against these). World facts: `docs/universes/CAULD.md`.**
 
 16. **Action beats carry thematic weight; contemplative beats have physical immediacy.** {#SS-LAW-16} An action beat that doesn't advance or complicate the story's central tension is stage business. A contemplative beat without a grounding sensory or physical anchor is abstraction. Both fail. *(Universal beat doctrine — applies to all universes.)*
 17. **Default QA is a logic sweep, not a vote panel.** {#SS-LAW-17} *(SS-A44.)* The canonical QA methodology for any story that changes or needs validation is a **logic & continuity sweep** across six dimensions: (1) causality chain, (2) knowledge states, (3) timeline, (4) plant/payoff ledger, (5) orphan references, (6) bible agreement. Findings are triaged **BLOCKER / MODERATE / MINOR** and fixed with minimal splices. Review panels and Legion votes are expensive — run ONLY when the user explicitly requests a vote/review/score in that conversation. The engine enforces this (voting gate, default OFF; explicit `--allow-votes` / `allowVotes:true` only). Canonical methodology: `docs/LOGIC.md`.

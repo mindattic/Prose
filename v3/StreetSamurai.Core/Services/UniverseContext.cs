@@ -92,7 +92,7 @@ public static class UniverseBootstrap
         return slug?.Trim().ToLowerInvariant() switch
         {
             "glmz" => StreetSamurai.Core.Data.Entities.Universe.GlmzId,
-            "fantasy-steampunk" or "fantasy" or "steampunk" => StreetSamurai.Core.Data.Entities.Universe.FantasyId,
+            "scry" or "fantasy-steampunk" or "fantasy" or "steampunk" => StreetSamurai.Core.Data.Entities.Universe.FantasyId,
             _ => null,
         };
     }
