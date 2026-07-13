@@ -97,15 +97,15 @@ Large sweeping vistas. Interpersonal joy and sorrow both fully earned. See §8a�
 Seven members — one from every major House in the Cauld. The party assembles as Lyra crosses
 it, one member per leg, each showing the system at work on a different kind of person.
 
-| Character | House | Role | Joins |
-|---|---|---|---|
-| Dame Lyra T-044 | Ocipheus (Templar) | Tank | Start |
-| Orim Zebulun | Ocipheus (stationed) | Scry Mage | Start |
-| Rowe / M-101 | Vierna (Earth, 1919) | Ranged DPS | Vierna |
-| Erland | Pallor | Melee DPS | Three Points |
-| Kressida Haun | Atrament | Support Engineer | Schmalburg |
-| Tavar Leal | Loera | Pilot / Gunslinger | Atrament garrison |
-| Wren Caerglas | Calyx | Rogue | Calyx eastern plains |
+| Character | House | Role | Age | Joins |
+|---|---|---|---|---|
+| Dame Lyra T-044 | Ocipheus (Templar) | Tank | Early 30s | Start |
+| Orim Zebulun | Ocipheus (stationed) | Scry Mage | Late 60s | Start |
+| Rowe / M-101 | Vierna (Earth, 1919) | Ranged DPS | Mid-30s | Vierna |
+| Tavar Leal | Loera | Pilot / Spy | 50s | Atrament garrison |
+| Erland | Pallor | Melee DPS | Mid-30s | Three Points |
+| Kressida Haun | Atrament | Support Engineer | Mid-20s | Schmalburg |
+| Wren Caerglas | Calyx | Rogue | 22 | Calyx eastern plains |
 
 ### Dame Lyra T-044 — POV {#SS-VIGL-1a}
 - **Institutional affiliation:** The Liturgy — she is a **Templar**, not a House Knight.
@@ -363,11 +363,24 @@ it, one member per leg, each showing the system at work on a different kind of p
   in the station courtyard, asking nobody's permission about what comes next. Wren is
   nearby. Neither of them has said the thing. See Wren entry.
 
-### Capt. Tavardo Leal (Tavar) — Loera Pirate {#SS-VIGL-1e}
+### Capt. Tavardo Leal (Tavar) — Loera Spy / Sky Pirate {#SS-VIGL-1e}
 - **House:** Loera-born. Currently no House affiliation — the *Meridian* is under Liturgy
   navigation embargo and Tavar flies on his own authority.
-- **Physical:** Male, 40s, dark, compact, expensively dressed under a weathered coat. Loera
-  layered shell underneath. He moves like someone who has thought carefully about exits.
+- **Age:** 50s. Second oldest in the party after Orim.
+- **Physical:** Male, 50s, dark, compact, expensively dressed under a weathered coat. Loera
+  layered shell underneath. He moves like someone who has thought carefully about exits for
+  thirty years and now does it without thinking.
+- **The spy layer:** Before the *Meridian*, before the embargo, Tavar ran intelligence for
+  three different clients simultaneously — all of them believing they were his only client.
+  He is very good at this. He is also the reason he does not do it anymore. What happened is
+  not something he volunteers, and nobody in the party asks directly. The shape of the
+  haunting is visible in what he notices: he reads rooms the way Orim reads exits —
+  who is watching whom, who is carrying something they did not bring in, which conversation
+  is meant to be overheard. He does not explain this. He acts on it.
+- **What haunts him:** Something he ran — a route, a document, a person — that he thought
+  was intelligence work and turned out to be something else. He does not know the full shape
+  of what he enabled. He suspects the full shape is worse than what he knows.
+  The nav embargo is partly why he stopped. The rest of why he stopped is what he knows.
 - **The *Meridian*:** WW2-Sphere flying-boat hull — a large, multi-engine aircraft designed
   for open-water landing — fitted with a rigid airship envelope for range extension. It is
   the fastest transport in the Cauld for non-fixed routes. It runs on Scried petroleum fuel
@@ -391,11 +404,13 @@ it, one member per leg, each showing the system at work on a different kind of p
   The nav embargo has cost him three contracts and two port relationships. He is not
   doing this out of adventure. He is doing this because the override is genuinely
   worth the run to him. He understands the terms exactly.
-- **Arc:** He has no faith to collapse. He has been running on his own code since before
-  Lyra started questioning hers. What changes: by the end of the run he has heard Rowe's
-  testimony, watched Lyra refuse the Canon, and stood at The Pass realizing he has flown
-  a route nobody else would have taken. The story he tells himself about this run will be
-  different from the others. He will not say why it is different. He files that too.
+- **Arc:** He has no faith to collapse — he traded that in a long time ago for something
+  more durable: competence. What changes: the run puts him in proximity to Rowe's testimony
+  (a man who cannot lie yet because he barely has the language), Lyra's refusal of the Canon
+  (institutional certainty collapsing in real time), and the thing at Sinter (which is
+  larger than any intelligence brief he ever ran). By the end he has flown a route that will
+  be in the record whether he likes it or not. He is fifty-three years old and this is the
+  first run where he does not know what the client actually wanted. He finds this clarifying.
 
 ### Erland — Pallor Berserker {#SS-VIGL-1f}
 - **House:** Pallor. A product of the warrior-king culture's most direct tradition: infused
