@@ -109,16 +109,33 @@ showing the system at work on a specific kind of person.
   waits around the next corner. Range: rarely more than a few hundred meters. Depth: hours,
   not days. Images: fragmentary, wet-edged, translucent. He has been doing this for fifty
   years. He is very good at it.
-- **Role:** Archive contractor. Tour guide. Living historical record. The person who says
-  *Archival Gate is named for a man who thought a river could settle a border argument* and
-  moves on.
+- **Role:** The man who saw what is in Sinter and was not believed. He is on this road for
+  one reason: to ensure Lyra and the Relic reach the aperture. He will say whatever is
+  necessary to keep the party moving in that direction. He is not safe. He is not a guide.
+  He is a man with a thirty-year secret and a specific agenda.
 - **Register:** Dry, observational, full of the particulars of places. He notices exits, food
   sources, which roads flood in autumn, where the Order of the Watch posts its inspection
   schedule. He is genuinely curious about everything and sentimentally attached to nothing.
-- **The arc:** He has known about Scrying's cost for forty years. He has taken the contracts
-  anyway. Rowe's testimony, delivered in halting Cauld from across the *Meridian*'s cargo
-  hold, is the first time Orim has heard it said directly rather than implied by intake
-  paperwork. He can no longer say he did not hear it. What he does afterward is open.
+  The dryness is not distance — it is the register of someone who learned long ago that
+  urgency does not persuade institutional ears.
+- **Sinter history:** Approximately thirty years ago, on a private contract no House
+  officially authorized, he pressed the Rod at the Sinter aperture. He saw the depth of it —
+  not a surface crater but a wound rotting downward through rock, the walls converted to
+  something warm and living, the rate of change already accelerating. He came back and told
+  people. The institutional response was "no action indicated." He was not believed by the
+  people who mattered because the people who mattered had already decided not to act —
+  because the Vigil record at Ocipheus had known since Year 397 and had been filing the same
+  notation for generations. He has lived with this since. He is Calyx-born; Calyx sends
+  agents to steal the Relic rather than act on what it shows. He does not discuss this.
+- **The arc:** He cannot tell Lyra what is at Sinter. She will not believe him without
+  standing there — what the aperture shows requires the Relic, the location, and everything
+  she has already assembled to recognize. He knows this because he stood there without the
+  Relic and understood only enough to know he had not understood enough. His job is to get
+  her there with the Relic in her hand. He will not lie about danger. He will lie about
+  almost everything else. Rowe's testimony on the channel crossing is the first time in
+  thirty years that Orim has heard it said plainly rather than implied by intake paperwork.
+  He can no longer say he did not hear it. What he does with that is open — but it does not
+  change where they are going.
 - **Scrying use in book:** Beat 1 (south passage confirmation), Beat 3 (barge direction at
   Veil River junction), Beat 8 (Forge Hearth zone — membrane refuses him; first time in
   fifty years). The third scry is the book's formal threshold into the final act.
