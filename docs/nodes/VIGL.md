@@ -313,10 +313,11 @@ showing the system at work on a specific kind of person.
   thermal/EM pressure gradient — the machine perceives what practitioners perceive but
   understands it differently. At Forge Hearth, she shows Lyra what the machine's display
   logs. Atrament framing: a resource pressure gradient. What it means is something else.
-- **Two-scene entry:** She joins the party at Schmalburg (Beat 7) — small woman in the
-  raid chaos, the rig appears and handles a threat, nobody asks the right question yet.
-  The Sal Vento reveal (Beat 9) is when Tavar sees the transition live and the party
-  realizes they have been traveling with the person who controls that machine.
+- **Two-scene entry:** She joins the party at Schmalburg — small woman in the raid chaos,
+  the rig appears and handles a threat, nobody asks the right question yet. The reveal
+  happens at the Atrament garrison break-out: Tavar sees the transition live — small woman,
+  fifteen seconds, then the rig standing up in the garrison bay — and the party understands
+  what they have been traveling with. Tavar does not speak for a full minute afterward.
 - **Arc:** She has no faith to lose — she left Atrament before they could classify her
   as a logistics problem. What changes: she acquires three people who do not look at the
   rig first and her second. By the end she is in Ocipheus, rig parked in the station
@@ -350,12 +351,17 @@ showing the system at work on a specific kind of person.
   long barrel for accuracy, Catalyst-accelerant round. He opens engagements from
   advantage with it and closes them when the outcome is decided. He does not waste
   rounds on uncertain targets.
-- **His stated price:** Passage through Ocipheus waters — Lyra's standing authority
-  overrides the nav embargo for one transit. He knows exactly what he is asking for.
-- **His actual reason:** Kressida Haun is going on the run. He watched her walk to the
-  rig. He watched the rig solve the problem. He will not say this is the reason. He will
-  never say this is the reason. It is the reason. She is aware of this and finds it
-  functionally useful. Whether she finds it anything else is not yet determined.
+- **How he enters:** In Atrament custody at a garrison east of Schmalburg — impounded for
+  running an embargoed route without Liturgy charter. Lyra's party breaks into the garrison
+  to steal the *Meridian*. They find Tavar in the brig. They take him with the airship.
+  He watches Kressida walk the rig out of the garrison bay. He does not speak for a full minute.
+- **His stated price:** Lyra's Templar nav-authority overrides the Liturgy nav embargo on the
+  *Meridian* for one transit. He knows exactly what he is asking for.
+- **His actual reason:** Kressida Haun is walking away from a Atrament garrison in a 3-metre
+  battle rig she climbed into without hesitation. He watched her walk to the rig. He watched
+  the rig solve the problem. He will not say this is the reason. He will never say this is
+  the reason. It is the reason. She is aware of this and finds it functionally useful.
+  Whether she finds it anything else is not yet determined.
 - **Arc:** He has no faith to collapse. He has been running on his own code since before
   Lyra started questioning hers. What changes: by the end of the run he has heard Rowe's
   testimony, watched Lyra refuse the Canon, and watched Kressida handle three separate
@@ -583,23 +589,31 @@ is on the moor.
 ## 3. The Journey Arc {#SS-VIGL-3}
 
 ### Geography in order:
-1. Ocipheus Station, the island (start and end) — Lyra departs alone; the Relic is four days ahead
-2. Channel crossing to Vierna
-3. Bressant, Vierna (Veil River; Rowe found)
-4. Three Points neutral ground (Vierna/Atrament/Pallor convergence; Tavar joins)
-5. Vierna-Atrament border / rail
-6. Schmalburg, Atrament (raid; Kressida joins; Ardea's death)
-7. Atrament volcanic ridge / Forge Hearth approach
-8. Calyx eastern plains (pursuit; Blink Thieves intercepted; Esvane and Petra killed; Wren blinks
-   with the Relic; Orim finds Wren alone; Wren returns the Relic and joins the party)
-9. Balkan approaches — the road southeast toward The Pass
-10. Eirene's Gate / The Pass (Bosphorus) — Vigil checkpoint; Rowe testifies
-11. Sinter zone — the aperture; climax
+1.  Ocipheus Station, the island (start and end) — Lyra departs alone; the Relic is four days ahead
+2.  Channel crossing to Vierna
+3.  Bressant, Vierna (Veil River; Rowe found)
+4.  Three Points neutral ground (Hamburg analog; Act 1 ends here) — intel stop; first word that
+    Tavar Leal's airship the *Meridian* has been impounded by Atrament and Tavar is in custody
+5.  Vierna-Atrament border / rail
+6.  Schmalburg, Atrament (raid; Kressida joins; Ardea's death)
+7.  **Atrament military base** — mission: steal the *Meridian*; Kressida's rig handles the
+    compound; they find Tavar in a detention block; they break him out; Tavar joins.
+    He watches Kressida walk the rig out of the bay. He does not speak for a full minute.
+    He takes the run. His stated price: Lyra's Templar nav-override authority lifts the
+    Liturgy embargo on the *Meridian* for one transit. His actual reason is standing forty
+    metres away in a machine she can step out of whenever she wants.
+8.  Atrament volcanic ridge / Forge Hearth approach (aboard the *Meridian* now; faster)
+9.  Calyx eastern plains — aerial pursuit; Blink Thieves spotted and intercepted from the air;
+    Esvane and Petra killed; Wren blinks with the Relic; Orim finds Wren alone in a field;
+    Wren returns the Relic and joins the party
+10. Balkan approaches — the road southeast toward The Pass (Tavar flies them)
+11. Eirene's Gate / The Pass (Bosphorus) — Vigil checkpoint; Rowe testifies
+12. Sinter zone — the aperture; climax
 12. Return airship run to Ocipheus Station; Canon confrontation
 
 ### The living history at each threshold:
 - **Vierna:** Archival Gate at Bressant (Arnault d'Archival Year 312); Treachery Quarter; *L'Accord* barge; fog off the lowlands
-- **Three Points:** neutral ground since the early Compact; no House stations forces here; the place where three powers agree the only thing worse than sharing is fighting
+- **Three Points:** neutral ground since the early Compact; no House stations forces here; the place where three powers agree the only thing worse than sharing is fighting. **Act 1 ends here.** The party's intelligence contact here tells them the *Meridian* (Tavar's airship) is impounded at an Atrament garrison east of Schmalburg. Tavar is in the brig.
 - **Atrament:** Schmalburg named for the Battle of the Small Fortress Year 701; Ignamund Unburnt's *Ewige Flamme* in the capital; Forge Hearth Hearth-One through Hearth-Eleven. **Wylla Mother of Men** — a Cauld invocation Lyra overhears an officer give to his column before they march south-east toward The Pass. The troops repeat it like a ward: *Wylla Mother of Men.* Not a prayer exactly — more like a name you say out loud to mean *I know where I come from.* Who or what Wylla is is not explained to the reader. That is deliberate. Lyra files it and moves on.
 - **Calyx:** Danube plains; monster incursion corridors; people who grow food and hunt creatures are frequently the same people; the eastern plains grade toward the Balkan approaches
 - **The Pass / Eirene's Gate:** named for Eirene, last Sinter Champion, who died here Year 1081; *Sinter remembers even if we don't*; towers on both banks; the stamp; the departure log on ruled paper
