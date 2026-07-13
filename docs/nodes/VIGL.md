@@ -142,8 +142,8 @@ showing the system at work on a specific kind of person.
   that pulse once, twice, three times as pressure builds on the far side. The skin bulges
   slightly just before breakthrough. The veins go dark. Then it parts and whatever was behind
   it arrives. When the Catalyst is expended and the membrane heals, the skin deflates, the
-  veins fade, and the aperture seals. Duration fifteen to thirty seconds depending on how much
-  Catalyst preparation the Rod is carrying. He cannot extend it. He cannot close it early.
+  veins fade, and the aperture seals. Duration fifteen to thirty seconds under standard load;
+  up to fifty seconds when the Rod carries a full preparation. He cannot extend it. He cannot close it early.
   He steps back and waits.
   The Liturgy would classify this as unauthorized Membrane Perforation. Orim considers it
   the logical extension of a portable Scrying apparatus pointed at the wrong problem. He has
@@ -345,6 +345,12 @@ showing the system at work on a specific kind of person.
   this perfectly. He is exploiting the architecture, not violating it.
 - **Register:** Institutional and polished. Does not threaten; cites authority. The authority
   is real. He is not wrong to cite it. He is wrong about what the authority is for.
+- **Dual-objective of the theft:** The theft served two simultaneous functions: (1) acquiring
+  the Relic for the leverage scheme; (2) generating a canonical recovery operation whose
+  authorization class (inter-House canonical review, Canon Immaculate countersignature)
+  provided legal cover for staging a Sinter Zone military deployment without inter-House
+  notification. Lyra and Orim identify the second function in Ch13. The two objectives do
+  not conflict — Prelacze needed both.
 
 ### Owain Caerglas — Pallor Knight, Caer Glas Moor {#SS-VIGL-2b}
 - **Role:** Pallor Knight. Two infusions. Mid-forties. He is NOT in the traveling squad.
@@ -368,7 +374,9 @@ showing the system at work on a specific kind of person.
 - **What he knew vs. what Prelacze knew:** He knew WHY — Pallor's prior claim is legitimate.
   He did NOT know what Prelacze actually wanted from the Relic's memory. He believed he was
   conducting a sanctioned retrieval under Pallor's historical property right. He was correct
-  about the right. He was wrong about the Canon's purpose.
+  about the right. He was wrong about the Canon's purpose. Owain knew the Relic required a
+  specific location (the aperture site). He did NOT know Prelacze's purpose for it, nor the
+  leverage scheme.
 - **Why not a villain:** He is who Lyra was before this journey. Loyal. Institutional. Certain
   that the mission and the institution are the same thing. He will discover they are not.
 - **His moment:** When Lyra has him down on the moor, he names the Canon. He says: *I thought
@@ -581,8 +589,9 @@ on the other side can come through.
 - The prior scry shows Orim what is there. It does not show him the pressure state. You
   see ten bats. You pierce. A thousand come through because something behind them
   was driving them toward the membrane and you had no angle on that.
-- Duration: the aperture holds for perhaps fifteen to thirty seconds before the membrane
-  closes the wound. The Rod does not keep it open — the mineral's Catalyst prep is
+- Duration: the aperture holds for fifteen to thirty seconds under standard load; up to fifty
+  seconds when the Rod carries a full preparation — before the membrane closes the wound.
+  The Rod does not keep it open — the mineral's Catalyst prep is
   expended in the act of forcing entry. Orim cannot hold it, expand it, or close it
   himself. He steps back and waits.
 - Range from Orim to the aperture is the same as his scry range — typically hundreds of
@@ -859,6 +868,13 @@ biology is evidence of centuries of membrane puncture.
 - **Pallor moor-hound:** Not canine. Six-legged, low to ground, long-necked. Used by Pallor
   trackers. Native to a heathland Sphere; can follow the thermal trace of a Heloth courier
   for three days. Owain's squad uses them.
+
+**Preserved crossings:** Zone creatures that died emerging through membrane tears at
+high-tear-density aperture sites are crystallized in situ by membrane-proximate mineral
+encapsulation — cellular moisture replaced with a clear, dense mineral compound that holds
+the shape in exact suspension. The Commission's Year 1104 survey documented seventeen
+preserved crossings along the outer wall of the zone. They are the most direct evidence of
+what lives below the membrane.
 
 ---
 
@@ -1311,7 +1327,7 @@ ellipsis → dawn return → the dead archive → Orim in the corner.
 
 Vega has already left the station by then — her contract was complete. She is back in the Liturgy's
 central office, two hundred kilometers south, when Lyra finds the archive empty. She will not
-know what happened for three weeks, when S1 puts Lyra's transit suspension paperwork on her desk.
+know what happened for a few days after the theft, when S1 puts Lyra's transit suspension paperwork on her desk.
 
 **Her function in the plot:**
 
