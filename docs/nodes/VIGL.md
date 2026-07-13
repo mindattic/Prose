@@ -104,8 +104,8 @@ it, one member per leg, each showing the system at work on a different kind of p
 | Rowe / M-101 | Vierna (Earth, 1919) | Ranged DPS | Vierna |
 | Erland | Pallor | Melee DPS | Three Points |
 | Kressida Haun | Atrament | Support Engineer | Schmalburg |
-| Tavar Leal | Loera | Rogue / Pilot | Atrament garrison |
-| Wren Caerglas | Calyx | Infiltrator | Calyx eastern plains |
+| Tavar Leal | Loera | Pilot / Gunslinger | Atrament garrison |
+| Wren Caerglas | Calyx | Rogue | Calyx eastern plains |
 
 ### Dame Lyra T-044 — POV {#SS-VIGL-1a}
 - **Institutional affiliation:** The Liturgy — she is a **Templar**, not a House Knight.
