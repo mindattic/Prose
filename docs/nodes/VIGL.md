@@ -466,7 +466,7 @@ has come to love all three. That is what makes the confrontation tragic rather t
   Ocipheus's institutional custody. Both things are true and cannot both be satisfied.
 - He has not told Owain this. He does not know how to tell Owain this, because Owain has
   been certain his whole life and Wren does not know what certainty looks like after it breaks.
-- **His moment:** Before dawn at Caer Glas Moor, while Owain sleeps, he tells Esvane what he
+- **His moment:** Before dawn at Caer Glas Moor, while Owain is at the vault entrance, he tells Esvane what he
   knows. Esvane says: *I know. I've always known.* He says: *Then why are we here?* She says:
   *Because the claim is real. Because six generations is long enough to wait. And because
   Owain needed to do this to become whoever he is after.* Wren does not know what that means.
