@@ -92,10 +92,20 @@ Large sweeping vistas. Interpersonal joy and sorrow both fully earned. See §8a�
 
 ---
 
-## 1. The Five-Person Party {#SS-VIGL-1}
+## 1. The Party {#SS-VIGL-1}
 
-The party assembles as Lyra crosses the Cauld — one member per leg of the journey, each
-showing the system at work on a specific kind of person.
+Seven members — one from every major House in the Cauld. The party assembles as Lyra crosses
+it, one member per leg, each showing the system at work on a different kind of person.
+
+| Character | House | Joins |
+|---|---|---|
+| Dame Lyra T-044 | Ocipheus (Templar) | Start |
+| Orim Zebulun | Ocipheus (stationed) | Start |
+| Rowe / M-101 | Vierna (Earth, 1919) | Vierna |
+| Erland | Pallor | Three Points |
+| Kressida Haun | Atrament | Schmalburg |
+| Tavar Leal | Loera | Atrament garrison |
+| Wren Caerglas | Calyx | Calyx eastern plains |
 
 ### Dame Lyra T-044 — POV {#SS-VIGL-1a}
 - **Institutional affiliation:** The Liturgy — she is a **Templar**, not a House Knight.
@@ -294,17 +304,18 @@ showing the system at work on a specific kind of person.
   frame to every situation including herself — not self-pity, not complaint, pure logistics.
   "The problem with rig-scale weapons in a room this size is clearance. I'd go through two
   walls. Let me come at it from the street." She is not the person you expect to say this.
-- **Weapons (in rig):** Primary — BR-7 Flail: a purpose-built rig-scale chain flail;
-  the head is a spiked iron ball 40cm across on 1.8m of battle-chain; at full swing the
-  arc clears a 4m radius, devastating to grouped targets; the chain's motion is what
-  makes it dangerous — it moves faster than anything mechanical has a right to, and the
-  rig's arm can change the arc mid-swing. When the head connects with a solid target
-  (stone, iron, Heloth chassis), the chain lock triggers: a spring-loaded collar at the
-  chain's base snaps shut, shortening and stiffening the chain into a rigid shaft,
-  converting the weapon in one-quarter second into a flanged mace — the ball's spikes
-  deployed outward into six flanged ridges, now a precision crushing tool for a
-  follow-through strike. Switching back: pull back and release the collar. The
-  transition is mechanical, not alchemical; she drilled it ten thousand times.
+- **Weapons (in rig):** Primary — BR-7 Great Sword: a rig-scale two-handed blade, 2.4m
+  from cross-guard to point, Atrament forge steel, no taper — the same cross-section tip
+  to hilt, so the full mass is in every cut. Not a finesse weapon. The edge is dressed for
+  shearing, not thrusting. At full extension the arc clears a 3m radius; at short range
+  the pommel is a viable weapon in its own right. She can drive it two-handed overhead or
+  sweep one-handed low — the rig's arm torque is what makes the one-handed sweep possible;
+  a human arm couldn't manage the weight differential. She drilled the change-of-grip
+  ten thousand times.
+  Alternate loadout — BR-7 Flail (still aboard in the cargo bay; her original Atrament
+  service rig weapon): spiked iron ball 40cm across on 1.8m of battle-chain; chain-lock
+  converts to flanged mace. She carries both. She uses the sword on open ground, the flail
+  in confined spaces where the arc matters.
   Secondary — Split-Shot mounted to the left forearm housing (short-sword with
   integrated breach-loaded Catalyst-accelerant slug; blue flash; 40-second reload).
   **Out of rig:** Standard Atrament service knife (25cm, practical). She does not need
@@ -318,6 +329,13 @@ showing the system at work on a specific kind of person.
   happens at the Atrament garrison break-out: Tavar sees the transition live — small woman,
   fifteen seconds, then the rig standing up in the garrison bay — and the party understands
   what they have been traveling with. Tavar does not speak for a full minute afterward.
+- **What sets her apart from Erland (the Pallor berserker):** He is biological — infused
+  body, held together by will. She is mechanical — the rig is external, controlled,
+  devastating at scale. He fights from inside himself. She fights from inside a machine.
+  The distinction: his power is visible from the moment he walks into the room. Hers is
+  not visible at all until the rig stands up. The reveal is the point. She is the only
+  person in the party who fights at rig-scale. That is not the same as the largest
+  person in the party fighting harder.
 - **Arc:** She has no faith to lose — she left Atrament before they could classify her
   as a logistics problem. What changes: she acquires three people who do not look at the
   rig first and her second. By the end she is in Ocipheus, rig parked in the station
@@ -368,6 +386,40 @@ showing the system at work on a specific kind of person.
   situations in ways that keep surprising him. The story he tells himself about this run
   will be different from the others. He will not say why it is different. The reason is
   standing forty meters away in a machine she can step out of whenever she wants.
+
+### Erland — Pallor Berserker {#SS-VIGL-1f}
+- **House:** Pallor. A product of the warrior-king culture's most direct tradition: infused
+  strength, infused pain suppression, fighting until the body makes the decision your mind
+  would not.
+- **Joins at:** Three Points — the neutral ground where three powers agree not to fight.
+  He is not in anyone's employ when Lyra finds him. He has a Pallor weapon, a Pallor scar
+  pattern, and a Pallor name. He has left Pallor for reasons he does not explain in full.
+  He is available. He takes the run.
+- **Infusions:** Two. The first is strength beyond Knight-grade — he can lift Kressida's
+  rig off the ground if the rig is not fighting him. The second is suppression: he does not
+  register pain in combat. Not numbness — the signals arrive, he processes them as information,
+  they do not stop him. Surgeons note afterward that he should not have been standing. He was.
+- **The berserker:** When the suppression infusion is pushed past its operational envelope —
+  sustained heavy engagement, significant blood loss — the suppression breaks down and what
+  replaces it is not pain but an overloaded calm. He does not rage. He becomes very quiet.
+  He becomes very specific. Whatever was in front of him does not remain standing.
+  The party learns to give him room when he goes quiet.
+- **What sets Kressida apart from him:** He is biological melee — infused body, controlled
+  only by will. Kressida is mechanical melee — the rig is external, precise, and three meters
+  tall. He respects the rig without entirely understanding why anyone would choose to fight
+  from inside a machine when you could fight from inside yourself. He and Kressida have
+  argued about this. Nobody won. Tavar watched both arguments.
+- **Weapons:** Giant axe (Pallor forge-pattern; double-edge; three-quarters of Erland's own
+  height; no normal person can swing it at speed; he can, because of what the infusions did
+  to his shoulder assembly and grip strength). Short seax (knife, worn on the off-hip; for
+  when the axe is not the answer, which is rarely). He does not carry a shield — the
+  suppression infusion is the shield.
+- **Register:** Short sentences. No elaboration. He is not inarticulate — he simply does not
+  believe that most situations require more words than they have already been given.
+  When he says something, it is the thing he means. The party learns to listen when he speaks.
+- **Arc:** He left Pallor. He does not say why. By the end he will say why: the Long Seat
+  told him the Sinter situation required patience and institutional process. He had read the
+  briefings. He disagreed with the assessment. He is not wrong.
 
 ---
 
@@ -592,8 +644,9 @@ is on the moor.
 1.  Ocipheus Station, the island (start and end) — Lyra departs alone; the Relic is four days ahead
 2.  Channel crossing to Vierna
 3.  Bressant, Vierna (Veil River; Rowe found)
-4.  Three Points neutral ground (Hamburg analog; Act 1 ends here) — intel stop; first word that
-    Tavar Leal's airship the *Meridian* has been impounded by Atrament and Tavar is in custody
+4.  Three Points neutral ground (Hamburg analog; Act 1 ends here) — **Erland joins** (Pallor
+    berserker, no current employer, available); intel stop; first word that Tavar Leal's
+    airship the *Meridian* has been impounded by Atrament and Tavar is in custody
 5.  Vierna-Atrament border / rail
 6.  Schmalburg, Atrament (raid; Kressida joins; Ardea's death)
 7.  **Atrament military base** — mission: steal the *Meridian*; Kressida's rig handles the
@@ -613,7 +666,7 @@ is on the moor.
 
 ### The living history at each threshold:
 - **Vierna:** Archival Gate at Bressant (Arnault d'Archival Year 312); Treachery Quarter; *L'Accord* barge; fog off the lowlands
-- **Three Points:** neutral ground since the early Compact; no House stations forces here; the place where three powers agree the only thing worse than sharing is fighting. **Act 1 ends here.** The party's intelligence contact here tells them the *Meridian* (Tavar's airship) is impounded at an Atrament garrison east of Schmalburg. Tavar is in the brig.
+- **Three Points:** neutral ground since the early Compact; no House stations forces here; the place where three powers agree the only thing worse than sharing is fighting. **Act 1 ends here.** Erland is in the common room. The party's intelligence contact here tells them the *Meridian* (Tavar's airship) is impounded at an Atrament garrison east of Schmalburg. Tavar is in the brig.
 - **Atrament:** Schmalburg named for the Battle of the Small Fortress Year 701; Ignamund Unburnt's *Ewige Flamme* in the capital; Forge Hearth Hearth-One through Hearth-Eleven. **Wylla Mother of Men** — a Cauld invocation Lyra overhears an officer give to his column before they march south-east toward The Pass. The troops repeat it like a ward: *Wylla Mother of Men.* Not a prayer exactly — more like a name you say out loud to mean *I know where I come from.* Who or what Wylla is is not explained to the reader. That is deliberate. Lyra files it and moves on.
 - **Calyx:** Danube plains; monster incursion corridors; people who grow food and hunt creatures are frequently the same people; the eastern plains grade toward the Balkan approaches
 - **The Pass / Eirene's Gate:** named for Eirene, last Sinter Champion, who died here Year 1081; *Sinter remembers even if we don't*; towers on both banks; the stamp; the departure log on ruled paper
