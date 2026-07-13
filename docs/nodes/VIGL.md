@@ -1112,12 +1112,60 @@ is permanently gone from the source Sphere's material record.
   in quality from his geography recognitions. Deeper. More uncanny. He would know this thing
   should not exist here. It should be rubble in an English church wall.
 
+**The permanent war — the condition the Cauld lives inside:** {#SS-VIGL-6b-war}
+
+Vierna and Atrament have been at war, continuously, for longer than anyone alive can
+remember. Not a series of wars. One war, with truces. The truces average eleven years.
+The current truce is in its ninth year. Everyone who has grown up during it is about to
+find out what the Cauld looks like when it ends.
+
+No one is outside the conflict. Every House has chosen a position — not ideological, economic.
+
+| House | War role | What they get | What it costs them |
+|---|---|---|---|
+| **Vierna** | Belligerent — the army | Mandate to conscript; institutional authority over the Myrmidon intake program | Permanent mobilization; the entire state is a military; no civilian governance separate from the corps |
+| **Atrament** | Belligerent — the forge | Unlimited purchase orders from both Vierna and, quietly, from Atrament's own black-market resale to Vierna's enemies | The Forge Masters have no loyalty to each other beyond the Hearth Table vote; the war keeps them unified because peace would fracture them |
+| **Ocipheus** | Isolationist by doctrine; dragged in by reality | The island wants no part of the war; the Liturgy's canonical authority makes it impossible to stay out — both sides demand adjudication, and refusing to adjudicate means choosing a side | Prelacze has converted Ocipheus's forced participation into personal leverage; the island is isolationist; the Canon Immaculate is not; his power depends on the war continuing at adjudicable levels |
+| **Loera** | Plays both sides — supply and intelligence | Runs cargo for Vierna; runs cargo for Atrament; runs intelligence for both simultaneously; the information differential is the profit | If either side discovers they're doubled, Loera's independence ends; they stay alive by knowing more than either belligerent can verify |
+| **Calyx** | Coerced breadbasket — feeds both sides | Guaranteed purchase contracts, paid in whatever currency the buying army uses | They have no army worth naming; they cannot refuse either side without being occupied; they feed Vierna and Atrament simultaneously and call this neutrality; the monster corridors expand because war economics demand more farmland every generation |
+| **Pallor** | Mercenary Champions — the only thing Pallor exports | Pallor has no industry, no agriculture worth naming, no navy. What it has is a culture that produces highly-infused individual warriors faster than any other House. Both Vierna and Atrament hire them for breakthrough operations, assassination, and situations where an infused Champion turns a battle. The fee is paid in Catalyst, which Pallor uses to infuse the next generation of Champions. | Independence maintained entirely by being too useful to either side to absorb — conquering Pallor would mean the other side gets the Champion pipeline instead. The equilibrium holds. For now. |
+
+**What the war does to the membrane:**
+The arms race is the Scrying program. Vierna needs soldiers from other Spheres because
+the Cauld's own population cannot sustain the intake numbers. Atrament needs ore, materials,
+and weapons technology from other Spheres because native production is insufficient for
+industrial-scale war. The membrane tears widen every decade. The Sinter overflow gradient
+worsens. Nobody connects these because connecting them would require stopping the war, and
+nobody can afford to stop the war.
+
+The bolt-action rifles in Vierna's barracks were not Scried for curiosity. They were
+Scried because the arms race requires the Cauld to steal military technology from Spheres
+where warfare has advanced further. Rowe's world made those rifles. The Cauld tore a hole
+in Rowe's world and took them — and Rowe, because he was standing close enough and knew
+how to use one.
+
+**Rowe's specific horror:**
+He came from the end of one war. He has been conscripted into a war that has no armistice.
+The Cauld does not have a 1918. It has an eleven-year truce that is running out. He knows
+what the next year looks like. He has seen it. Everyone around him who grew up in the
+truce has not.
+
+**Kressida's specific horror:**
+She was a battle-rig pilot in the Vierna campaign before she deserted. She knows which
+side of the line every checkpoint is on. She knows what the Meridian was doing in that
+garrison bay — it was not impounded for an unauthorized route run. It was held for
+reassignment to the next front. She got there first.
+
 **House governance — NOT warrior kings everywhere:** Each House governs according to what it
 actually is. The assumption that every House has a king in armor on a throne is wrong and lazy.
 - **Ocipheus** — governed by the Canon Immaculate (Prelacze). Liturgy institution, not a House
   monarchy. Canonical authority IS governance here. The island; the Arthurian knightly order
   (The Vigil); the weight of seven hundred years of canonical record. The Relic has been at
-  Ocipheus Station since Year 397.
+  Ocipheus Station since Year 397. **Ocipheus is isolationist by temperament and doctrine** —
+  the island wants to keep its canonical authority clean of the war. In practice, both
+  belligerents drag it in by demanding arbitration. Prelacze converted this forced involvement
+  into leverage. The Vigil — Lyra's order — is the canonical enforcement arm; it is supposed
+  to be the institution that stays clean.
 - **Vierna** — military council / general staff. The commanding generals of the Myrmidon intake
   program and the conscript corps collectively hold authority. No single king. The closest thing
   is the Intake Commander — a rotating three-year post elected by the senior corps.
@@ -1126,7 +1174,9 @@ actually is. The assumption that every House has a king in armor on a throne is 
   majority. No king. Significant arguments look like labor disputes.
 - **Loera** — navigator's council / corsair assembly. Captains with independent standing
   convene in the Three-Lantern House at Sal Vento. Authority is earned by route-record and
-  cargo volume.
+  cargo volume. Intelligence is the second trade — every cargo run is also a reconnaissance.
+  The Three-Lantern House knows more about the disposition of both armies than either general
+  staff does. This is not an accident.
 - **Pallor** — the last ungoverned territory before the strait. Upland moor and fjord coast;
   phosphorescent heather at night; fog that arrives without warning. No House governance, no
   Long Seat, no Compact institution. Warrior culture — Champions are acknowledged, not crowned;
