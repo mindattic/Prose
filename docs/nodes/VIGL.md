@@ -1194,7 +1194,7 @@ Full profiles in §2c.
 
 **Route:** They cross the Wall directly — Esvane's Pallor Templar credentials pass at the
 checkpoint Lyra is turned back from. They precede Lyra across the same territory: eastern
-Vierna → Atrament → Lacerta (different port than Sal Vento) → channel → Caer Glas Moor.
+Vierna → Atrament → Lacerta (Sal Vento; staged three weeks at the eastern docks before departure) → channel → Caer Glas Moor.
 When the reader follows them, they show us the road ahead of Lyra. The reader knows what
 she's walking into before she gets there.
 
