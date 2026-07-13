@@ -663,22 +663,25 @@ is on the moor.
 
 ### The membrane at each threshold — what each kingdom Scrys {#SS-VIGL-3b}
 
-**The thematic spine:** Every kingdom uses the membrane. Every kingdom is strip-mining other
-realities. Sinter is not the exception — Sinter is the aperture where the other Spheres push
-back. By the time Lyra reaches the zone, she has seen six versions of what the Cauld actually
-is. The Relic is evidence of all of it.
+**The thematic spine — SUBTEXT ONLY. Never state this in prose.**
+Every kingdom uses the membrane. Every kingdom is strip-mining other realities. Sinter is not
+the exception — Sinter is what happens when the source Spheres push back. By the time Lyra
+reaches the zone, she has crossed six versions of the same thing. She never says this. The
+reader assembles it from what she sees and keeps moving past.
 
-Orim has one dry observation per threshold. He does not editorialize. He notes. It is
-worse that way.
+**Prose discipline:** Lyra observes each image below and files it. She does not connect them.
+She does not editorialize. Orim does not explain. His silences are the tell — he has known
+this for thirty years and has never said it out loud. What he does not say is louder than
+anything he does.
 
-| Kingdom | What they Scry | What Lyra sees | Orim's note |
-|---|---|---|---|
-| **Ocipheus** | Historical moments — Relics | Seven hundred years of stolen history behind glass in the archive | "Every Relic is a theft. The Liturgy prefers the word 'retrieval.'" |
-| **Vierna** | People — Myrmidons conscripted from Spheres | The intake desk; the form; Rowe's world on a ledger | "They get approximately one in ten. The rest don't survive the crossing." |
-| **Atrament** | Materials + creatures — feeds the furnaces | The Heloth yards at night; something that is not slag cooling in the troughs | "Sphere biology processes differently at temperature. They found that out early." |
-| **Calyx** | Flora + fauna — agricultural Scrying | Monster corridors where the farms used to be | "Calyx prefers the term 'managed re-wilding.'" |
-| **Pallor** | Infusion Catalyst + Champions | The moor-hounds facing the Relic; Vaen | "The first infusions came through a Pallor aperture. They never asked what they cost the source Sphere." |
-| **Sinter** | Nothing — Sinter erupts outward | The aperture | "Yes. Now you understand." |
+| Kingdom | What they Scry | Plant in the prose — what Lyra sees and moves past |
+|---|---|---|
+| **Ocipheus** | Historical moments — Relics | The archive register: every Relic has a source Sphere and a retrieval year. The year columns are long. Lyra knows this catalogue. She has never thought about the source side. |
+| **Vierna** | People — Myrmidons conscripted from Spheres | Rowe's intake form in the records office. Standard. One of thousands filed that year. The clerk is bored. |
+| **Atrament** | Materials + creatures — feeds the furnaces | Something in the Heloth yard that is cooling in a trough that is not shaped for slag. Nobody mentions it. The night shift keeps moving. |
+| **Calyx** | Flora + fauna — agricultural Scrying | The monster corridors. A farmer explains the fence-line with the same tone he uses for weather: *They started getting out about sixty years ago. You patch the fence. You hunt what comes through.* |
+| **Pallor** | Infusion Catalyst + Champions | The moor-hounds will not settle near the Relic. Aldric watches them and does not explain why. The infusion Catalyst Orim carries in his preparation kit — Lyra has never asked where it comes from. |
+| **Sinter** | Nothing — Sinter erupts outward | The aperture. The assembled image lands without announcement. No line of dialogue. The reader gets there at the same moment Lyra does. |
 
 ---
 
