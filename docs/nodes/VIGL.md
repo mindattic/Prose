@@ -12,7 +12,7 @@ updated: 2026-07-12
 
 > See [[../BIBLE]] for engine laws; [[../BIBLE#SS-LAW-19]] for death-permanence law;
 > [[../universes/CAULD]] for the Fantasy universe world facts;
-> [[../universes/CAULD_HISTORY]] for the 1,700-year historical record.
+> [[../universes/CAULD_HISTORY]] for the Cauld's historical record.
 > Fantasy Universe (Universe #2). GIW has been deleted. VIGL is the standalone Cauld novel.
 
 ---
@@ -68,7 +68,7 @@ Large sweeping vistas. Interpersonal joy and sorrow both fully earned. See §8a�
 The party assembles as Lyra crosses the Cauld — one member per leg of the journey, each
 showing the system at work on a specific kind of person.
 
-### Dame Lyra M-101 — POV {#SS-VIGL-1a}
+### Dame Lyra T-044 — POV {#SS-VIGL-1a}
 - **Institutional affiliation:** The Liturgy — she is a **Templar**, not a House Knight.
   The Liturgy is the overarching institution (the Church, in rough analogy); the Houses are
   the nations. Templars serve the Liturgy's mission across House borders. Lyra is stationed
@@ -155,7 +155,7 @@ showing the system at work on a specific kind of person.
   thing that happens next. One time in fifty years he pointed the Rod at a known cold-water
   Sphere, pulled the trigger, and three moderately-sized freshwater creatures flopped out
   onto the stone alongside the water and spent their remaining seconds looking deeply
-  wronged. He filed this as a successful outcome. The water was cold. It was what he needed.
+  wronged. He counted it a success. The water was cold. It was what he needed.
 - **Alchemy:** His field kit is more extensive than a soldier's tincture pouch. He carries
   the five standard tinctures (Red, Black, Grey, White, Gold-adjacent) plus two compounds
   of his own preparation: a contact-sensitizer (applied to fingertips, amplifies
@@ -196,10 +196,10 @@ showing the system at work on a specific kind of person.
   does to a geography. When he walks through Vierna's border ruins and Atrament's staged
   military columns, he reads them with that experience underneath — not intellectually, but
   bodily. He knows what it looks like when a country is preparing. He knows what the faces of
-  soldiers in the third year of a campaign look like. He files this and says nothing.
+  soldiers in the third year of a campaign look like. He notes it and says nothing.
 - **The weapons recognition:** The bolt-action rifles the Vierna soldiers carry are a later
   development of what his world was building. His world built the prototype; the Cauld uses the
-  finished military form. He registers this in the barracks before he can say a full sentence in
+  finished military form. He sees this in the barracks before he can say a full sentence in
   Cauld. One line. He notes it. He does not explain it. He moves on.
 - **Myrmidon designation:** M-101 — his Vierna intake designation. The "M" prefix is Myrmidon:
   person Scried from another Sphere and conscripted into House military service.
@@ -352,7 +352,7 @@ showing the system at work on a specific kind of person.
   and has been at Caer Glas Moor for four days by the time the squad arrives — preparing
   the ancestral vault site, managing the moor-hound handlers, making the Relic's return
   real in his mind before it happens. The squad is doing his family's work. He sent them.
-- **Why he doesn't travel:** Three centuries of formal Pallor claim; two infusions. If he is
+- **Why he doesn't travel:** Six generations of formal Pallor claim (Year 972, 166 years ago); two infusions. If he is
   caught in another House's territory carrying the Relic, he is the confirmation of theft.
   Esvane's institutional cover requires that the person with the most to lose stay out of
   range until Pallor soil is under his feet. He agreed with the reasoning. He hated agreeing
@@ -409,10 +409,15 @@ has come to love all three. That is what makes the confrontation tragic rather t
 - Her hope: that the canonical documentation holds. That Pallor's prior claim is upheld in post-
   retrieval review and the record shows she acted within institutional reach. She does not
   believe this will happen. She went anyway.
-- **Her moment:** On the channel crossing, she tells Owain the full shape of what Prelacze wants.
-  Not because she discovered it — she always suspected. Because she can no longer watch him
-  carry a mission he doesn't fully understand. His response to what she tells him: silence.
-  Then: *We still had the right.* She does not say: yes, but that was not the only reason it happened.
+- **Her moment:** On the channel crossing, she tells Petra the full shape of what Prelacze wants —
+  not unburdening herself, but drawing the map before the difficult crossing. She needs Petra to
+  understand that when they reach Pallor, the secondary client arrangement must end. Petra's
+  response is not what she expects: she already threw the token. Two nights ago, outside Sal Vento.
+  Esvane watches Petra not say why. She notes that Petra has been changed by this run in ways she
+  cannot fully account for. Then she looks at Wren, who has been listening. Nobody speaks. The
+  channel is dark. She does not say: the right was real; the Canon's purpose was not. She does
+  not say it because Owain is not on this boat, and she will have to say it to Owain's face, and
+  she has not yet decided in what order the words come out.
 - **Register:** Institutional and precise, with a warmth underneath that only Owain sees. Dark
   humor deployed rarely and exactly. She talks about the law the way Orim talks about exits.
 
@@ -426,17 +431,20 @@ has come to love all three. That is what makes the confrontation tragic rather t
 - Loyal to the coin. Unexpectedly, also loyal to Owain — something about his certainty has gotten
   under her skin in a way she does not find comfortable or useful. She has not examined this carefully.
 - **The betrayal:** Four months into her hire, she took a second payment from a Lacerta intelligence
-  contact who wants to know where the Relic goes after it reaches Pallor. She filed this away as
+  contact who wants to know where the Relic goes after it reaches Pallor. She put it away as
   insurance — not a commitment, just an option. By the time they're on the channel, she has to
   decide whether to follow through. She will not follow through. But deciding not to is harder than
   she expected, because she spent four months telling herself it was nothing, and it is not nothing.
-- **Her bickering with Owain:** He has a code. She has a pragmatics. Every time he chooses the
-  harder right path when a simpler wrong one was available, she argues. He almost always wins
-  the argument and she almost always thinks he was right afterward. This pattern makes her
-  furious. She does not tell him this.
+- **Her bickering (Owain in planning; Esvane on the road):** She has a pragmatics. The people
+  she works with have a code. Every time Esvane chooses the harder right path when a simpler wrong
+  one was available, Petra argues. Esvane almost always wins the argument and Petra almost always
+  thinks she was right afterward. This pattern makes Petra furious. She does not tell Esvane this.
+  With Owain, the same dynamic applied during the six-month planning phase — the original
+  source of the pattern. Owain is at Caer Glas. She is aware she has simply replaced him with
+  his proxy and that this says something about her she does not plan to examine.
 - **Register:** Dry, operational, zero sentiment. She calls things what they are, including herself.
   When she decides not to sell the Relic's location, she does not make it a moral moment. She
-  files it as a professional decision: the secondary client isn't worth the exposure.
+  names it a professional decision: the secondary client isn't worth the exposure.
 
 **Wren Caerglas — Owain's nephew, Pallor soldier** {#SS-VIGL-2c-wren}
 - Twenty-two. Assigned to the squad by family obligation. He would have come regardless.
@@ -523,10 +531,10 @@ is on the moor.
 12. Ocipheus Station (Canon confrontation)
 
 ### The living history at each threshold:
-- **Sinter perimeter:** Eirene's Gate; the Year 1187 breach site; *Sinter remembers even if we don't*
+- **Sinter perimeter:** Eirene's Gate; the Year 1083 breach site; *Sinter remembers even if we don't*
 - **Vierna:** Archival Gate at Bressant (Arnault d'Archival Year 312); Treachery Quarter; *L'Accord* barge
 - **Atrament:** Schmalburg named for the Battle of the Small Fortress Year 701; Ignamund Unburnt's *Ewige Flamme* in the capital; Forge Hearth Hearth-One through Hearth-Eleven
-- **Fjorheim (raid):** Eaters trace to Year 1193 massacre; Kaldvinn lost Year 641 (the insult you don't say to a Giant)
+- **Fjorheim (raid):** Eaters trace to Year 1085 massacre; Kaldvinn lost Year 641 (the insult you don't say to a Giant)
 - **Lacerta:** Las Tres Navajas split between three pirate lines; Year 899 Pallor-Lacerta betrayal carved on cliff; *Meridian* named for the Three Corsairs' midday raid
 - **Pallor:** Caer Glas Moor / Battle of Nine Days; Long Seat's original chair; Twr Brennid (pre-Compact culture, unnamed in House records)
 
@@ -624,7 +632,7 @@ Neither of them makes the other one easier.
   legs, pale as chalk, eyes that reflect light wrong, that moves with the certainty of
   something that has never been prey. It lives for forty-five seconds. In forty-five
   seconds it clears the dockyard corridor the party needs to retreat through. Orim does
-  not watch. He knows the number. He counts.
+  not watch. He turns away and counts under his breath.
 - **Pallor coastal approach (Ch.22 / Vaen fight):** The bat-handed creatures from Sphere-44.
   The catalogue says "dense colonial fauna, membrane-adjacent, hostile." The bats that come
   through have the wingspan of an Atrament kite and hands where their feet should be —
@@ -783,8 +791,7 @@ particular kind of alone. He has never been anywhere he both belongs and doesn't
 **Current year — Year 1138.** The Cauld's calendar counts from the bolide impact (Year 1).
 The Oculus has been at Ocipheus since Year 397; "seven hundred and forty-one years" in Ch.1
 confirms Year 1138 as the story's present. The Battle of Nine Days at Caer Glas Moor was
-Year 972 — 166 years ago, not three centuries (§2b error; correct to "over a century and a
-half" or simply "since Year 972"). Year 1079 = Sinter secondary eruption (59 years ago, within
+Year 972 — 166 years ago. Year 1079 = Sinter secondary eruption (59 years ago, within
 living memory of the oldest soldiers). Year 1104 = Wylla incident (34 years ago).
 
 **Historical period equivalent: High/Late Medieval — 12th to 14th century European level.**
@@ -830,7 +837,7 @@ biology is evidence of centuries of membrane puncture.
   aggressive and have displaced native ground cover entirely in some regions
 - **Silverthorn hedge:** Silver filament leaves catch sound and produce a faint harmonic in
   wind; used as natural perimeter alarms by Vierna border installations; the sound carries
-  information (what direction, how fast) that trained listeners can parse
+  information (what direction, how fast) that trained listeners can read
 - **Forge Hearth ember-fungi:** Orange bioluminescent; feeds on Heloth chemical exhaust and
   Catalyst-adjacent discharge; grows on and around construct maintenance stations; the glow
   makes Schmalburg's machine yards visible from the ridge at night
@@ -1181,8 +1188,9 @@ boundary is the same moment seen from inside vs. outside.
 
 ### The Pallor Thread (5 chapters — concurrent, running ahead) {#SS-VIGL-9d}
 
-**Who they are:** Owain Caerglas (squad leader), Esvane Mirren (Pallor Templar), Petra Dahl
-(fixer), Wren Caerglas (Owain's nephew). Full profiles in §2c.
+**Who they are:** Esvane Mirren (squad leader, Pallor Templar), Petra Dahl (fixer),
+Wren Caerglas (Owain's nephew). Owain is at Caer Glas, waiting — he dispatched them.
+Full profiles in §2c.
 
 **Route:** They cross the Wall directly — Esvane's Pallor Templar credentials pass at the
 checkpoint Lyra is turned back from. They precede Lyra across the same territory: eastern
@@ -1197,29 +1205,31 @@ with every decision, Wren watches both of them and keeps his mouth shut. The moo
 comfortable. They're headed home.
 Esvane carries the Relic's case. She examines it once, in the road-house outside Bressant —
 professionally, checking for transit stress. A palm-sized lens, lighter than she expected, warm
-in a way she notes and files as a known membrane-adjacent phenomenon. She closes the case. She
+in a way she notes and sets aside as a known membrane-adjacent phenomenon. She closes the case. She
 does not look through it. Wren watches her not look through it.
 The chapter ends on a small thing that is not small: Wren asks Esvane what it actually does.
 She says: that's not our concern. It belongs to Pallor. We are returning it. He says: but what
 does it do? She says: it watches. He says: watches what? She says: *keep up.* She doesn't answer
-the question. He files this alongside three months of other things he has not been answered.
+the question. He adds this to three months of things he has not been answered.
 
 **P2 — House Atrament — Everything Properly Filed** (after LYRA Vierna Entry / SCRIBE S2)
 Atrament border checkpoint. Esvane's institutional authority passes them through clean — her
 canonical property review paperwork is correct in every detail. The checkpoint officer reads
 it, signs it, moves on. This is what it looks like to have the law on your side. Afterward,
 in the road town east of the checkpoint, Petra makes contact with her secondary client's
-courier — a brief exchange in a market, a sealed message, coin. She files it as insurance
-and does not think about it again until she has to. Wren sees it happen and says nothing.
-The bickering: Owain wants to keep moving without rest. Petra argues that exhausted people
-make errors. They stop. She is correct. He knows she is correct. He resents it.
+courier — a brief exchange in a market, a sealed message, coin. She puts it away as insurance
+and does not take it out again until she has to. Wren sees it happen and says nothing.
+The bickering: Esvane wants to push through without stopping. Petra argues that tired people
+make errors at checkpoints. They stop. Petra is correct. Esvane knows she is correct. Wren
+keeps his mouth shut, which is also correct.
 
 **P3 — Schmalburg Adjacent — The Atrament Road** (after SCRIBE S3 / LYRA Schmalburg)
 The squad passes through or near Schmalburg days before Lyra's party arrives. The reader
 sees what Lyra will walk into later: the dockyard, the workers, the raid's aftermath (or
 anticipation). The squad doesn't stop long. Petra recognizes the quality of the trouble
-brewing in the area and routes them around it. She is right again. Owain's code almost
-makes him stop to help with something he shouldn't stop for; Esvane redirects him.
+brewing in the area and routes them around it. She is right again. Wren almost slows for
+something he shouldn't slow for — the dockyard workers, the guards, the particular quality
+of the silence. Petra says: *keep walking*. Esvane does not look back either.
 Wren gets his first look at Atrament industry and is briefly stunned into silence —
 the scale of it, the Heloths, the factories that never stop. He says: *Is this what we
 look like to someone from outside?* Nobody answers. Petra says: *Keep walking.*
@@ -1236,7 +1246,7 @@ complete and so is her contract, and the secondary client arrangement needs to d
 Petra's response is not what Esvane expects: she already threw the token. Two nights ago,
 outside Sal Vento. Esvane asks: why? Petra says: professional call. The secondary client
 isn't worth the exposure. What she does not say is that somewhere in three months of travel
-with Owain's certainty and Wren's doubt she stopped being able to file the token as merely
+with Owain's certainty and Wren's doubt she stopped being able to hold the token as merely
 an option. She watched it sink. She went back to sleep. She will not discuss it further.
 Esvane watches Petra not discuss it, and notes that Petra has been changed by this run in
 ways she cannot fully account for. Then she looks at Wren, who has been listening and
@@ -1253,7 +1263,7 @@ does not know what to do with the fact that it feels like nothing yet — just a
 Wren, in the hour before dawn while Owain is at the vault entrance, tells Esvane what he's
 known for weeks: the canonical transfer documentation is not simple. Both claims are real.
 The Relic does not unambiguously belong to them. Esvane says: *I know. I've always known.*
-He says: *Then why?* She says: *Because the claim is real. Because three hundred years is long
+He says: *Then why?* She says: *Because the claim is real. Because six generations is long
 enough. And because Owain needed to do this to become whoever he is after.* Wren does not
 understand what that means yet. He will, in about four hours.
 The moor-hounds wake before anyone else. Not alarm — recognition. They face south and east,
@@ -1323,7 +1333,7 @@ writing "no action indicated" into enough folios to understand what the phrase h
 **S1 — The Authorization** (between A-chapters 1–2)
 She copies the canonical property recovery instrument — the cover authorization for the theft
 of the Oculus Memoriae, framed as "dispute resolution, Relic provenance review." She also
-copies M-101's transit suspension. She does not know yet whose designation that is.
+copies T-044's field authority suspension. She does not know yet whose designation that is.
 In the courtyard below the office window: a Great Scrying operation running at midday — an
 active aperture, apparatus crews in position, a war construct evaluation (WC-Eirene-provisional,
 Sphere 42) being assessed by Descent Corps evaluators. She copies the assessment summary.
@@ -1335,7 +1345,7 @@ summaries that individually are routine but cumulatively map to a staging operat
 courtyard, a chain of WC-Eirene units is moved to a staging hall she has never seen used —
 she knows it has been locked for eleven years because she filed the lock authorization as a
 junior apprentice. It is not locked now.
-She understands, cross-referencing with the transit suspension paperwork, that M-101 is her
+She understands, cross-referencing with the suspension paperwork, that T-044 is her
 sister. She writes Lyra's name in the margin of her working copy. She crosses it out.
 
 **S3 — The Review Session** (between A-chapters 11–12)
@@ -1370,7 +1380,7 @@ in one moment what her sister has understood for weeks.
 | 2 | LYRA | The Wall from Outside — Refused |
 | 3 | ROWE | The Mill — Sphere 31 |
 | 4 | SCRIBE | The Authorization |
-| **5** | **PALLOR** | **East of the Wall — Three Days** *(squad in eastern Vierna; Owain holds the case; Wren's first question)* |
+| **5** | **PALLOR** | **East of the Wall — Three Days** *(squad in eastern Vierna; Esvane carries the case; Wren's first question)* |
 | 6 | ROWE | The Taking |
 | 7 | LYRA | Vierna Entry — The Law Doesn't Apply Here |
 | 8 | SCRIBE | No Action Indicated |
@@ -1384,7 +1394,7 @@ in one moment what her sister has understood for weeks.
 | 16 | LYRA | Schmalburg — The Raid; the Eaters; Kressida |
 | 17 | LYRA | The Forge Hearth — What She Recognizes |
 | 18 | LYRA | Sal Vento — Tavar |
-| **19** | **PALLOR** | **The Channel — Hours, Not Days** *(Esvane tells Owain; Petra throws the token; the moor-hounds won't settle)* |
+| **19** | **PALLOR** | **The Channel — Hours, Not Days** *(Esvane tells Petra the Canon's purpose; Petra reveals she threw the token; the moor-hounds won't settle)* |
 | 20 | LYRA | The Acquisition — Eirene-7 *(steal-the-airship mission)* |
 | 21 | LYRA | The Channel — Rowe Testifies |
 | **22** | **PALLOR** | **Caer Glas — The Hours Before** *(the moor at dawn; Wren and Esvane; the vault; the moor-hounds wake)* |
