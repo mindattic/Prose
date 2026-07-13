@@ -677,7 +677,7 @@ anything he does.
 | Kingdom | What they Scry | Plant in the prose — what Lyra sees and moves past |
 |---|---|---|
 | **Ocipheus** | Historical moments — Relics | The archive register: every Relic has a source Sphere and a retrieval year. The year columns are long. Lyra knows this catalogue. She has never thought about the source side. |
-| **Vierna** | People — Myrmidons conscripted from Spheres | Rowe's intake form in the records office. Standard. One of thousands filed that year. The clerk is bored. |
+| **Vierna** | People — Myrmidons conscripted from Spheres | Rowe's intake form in the records office. Standard. One of thousands filed that year. The clerk is bored. **Vierna documents theirs. The other Houses don't.** |
 | **Atrament** | Materials + creatures — feeds the furnaces | Something in the Heloth yard that is cooling in a trough that is not shaped for slag. Nobody mentions it. The night shift keeps moving. |
 | **Calyx** | Flora + fauna — agricultural Scrying | The monster corridors. A farmer explains the fence-line with the same tone he uses for weather: *They started getting out about sixty years ago. You patch the fence. You hunt what comes through.* |
 | **Pallor** | Infusion Catalyst + Champions | The moor-hounds will not settle near the Relic. Aldric watches them and does not explain why. The infusion Catalyst Orim carries in his preparation kit — Lyra has never asked where it comes from. |
@@ -1023,6 +1023,56 @@ encapsulation — cellular moisture replaced with a clear, dense mineral compoun
 the shape in exact suspension. The Commission's Year 1104 survey documented seventeen
 preserved crossings along the outer wall of the zone. They are the most direct evidence of
 what lives below the membrane.
+
+**The Sinter overflow gradient — SUBTEXT ONLY:** {#SS-VIGL-6-overflow}
+
+Zone creatures don't only emerge at Sinter. They have been bleeding through membrane-thin
+sites across the Cauld for centuries — emerging, surviving, and breeding with local fauna.
+The hybrids this produces are not stable species. They are wrong in specific ways: the
+proportions are off, the biology is internally contradictory, the behavior follows rules
+that do not apply to anything the Cauld evolved natively. They are more frequent and more
+extreme the closer you are to Sinter. The gradient is measurable if you know what to look for.
+
+Most people don't look for it. Most people call the results by local names and treat them as
+local problems.
+
+| Distance from Sinter | What it looks like | What the locals call it |
+|---|---|---|
+| **Ocipheus / Vierna** | Occasionally unusual. Livestock born wrong. A river creature that doesn't behave like its kind. Rare enough to be singular events. | Ill omen. Unlucky birth. That farm's been cursed for years. |
+| **Three Points / Atrament** | More frequent. Something in the maintenance yards that leaves prints no engineer can identify. The ember-fungi growing in configurations that weren't planned. | Sphere leakage. A known hazard. The foremen know which tunnels to avoid at night. |
+| **Calyx** | The monster corridors. Sphere fauna escaped from agricultural Scrying decades ago and crossbred with local predators. The hybrids are large, territorial, and getting larger. The fences are newer every generation. | The monster problem. A management issue. You farm, you fence, you hunt what comes through. |
+| **Pallor** | The moor-hounds were bred specifically to track hybrids — that is the original purpose of the six-legged tracking animal. Pallor's warrior culture exists because something needs to be killed regularly and it takes an infused practitioner to do it reliably. Vaen's six infusions are not prestige. They are necessity. | The creatures of the moor. The old names. The reason the Champion exists. |
+| **The Pass / Eirene's Gate** | The departure log is not bureaucracy. It is a count of who crossed and did not return. The soldiers on rotation know what they're patrolling for. The stamp and the ruled paper are the interface between the Cauld and what is not the Cauld anymore. | The crossing hazard. Vigil rotation. Standard patrol doctrine. |
+| **Sinter** | Origin. Pure zone emergence and seven centuries of offspring. The hybrids here are stable enough to have bred for generations. The Eaters of Monsters hunt the crawlers because crawlers are the most predictable thing in the zone — everything else is worse. | Nothing. Nobody names them. Naming them implies you'll be talking to someone who hasn't seen them. |
+
+**What the Cauld stole and what came back through the holes:**
+The rifles were stolen from other Spheres. The Heloths were stolen. The infusion Catalyst
+was stolen. The moor-hounds were stolen. The Relic was stolen. Every advantage the Cauld
+has came from a wound in another world. Sinter is those worlds answering — not with intent,
+not with malice, not even with awareness. The membrane is tissue. The aperture is a wound
+that went numb and stopped closing. What moves through it now doesn't know it's moving
+through anything at all.
+
+**The slaves — SUBTEXT ONLY:**
+Vierna conscripts Myrmidons and files the paperwork. The other Houses do not file the
+paperwork. Every House in the Compact keeps servants, laborers, and soldiers who came
+through the membrane involuntarily. Vierna is the only House that calls it a system. The
+others call it something else — or nothing at all. The Cauld's labor base, at its lowest
+strata, is people from other realities who did not choose to be here. The peasant shoveling
+slag in an Atrament yard. The woman weaving in a Calyx farmhouse. The soldier who follows
+orders without knowing which orders are real.
+
+Everyone who has ever disappeared without explanation in any Sphere the membrane touches
+is a potential Myrmidon. The Cauld does not have a word for this. It has an intake form —
+in Vierna. Everywhere else it has nothing.
+
+Rowe is one of them. He knows what the intake form means. When he sees others filed the
+same way, he does not comment. The prose does not comment. The weight is in the image:
+the bored clerk, the long ledger, the standard form.
+
+**The Relic has been observing this for 741 years.** Lyra does not have this sentence in
+this book. The vigil room at the end is where she gets close enough to the edge of it that
+the reader arrives there with her.
 
 ---
 
