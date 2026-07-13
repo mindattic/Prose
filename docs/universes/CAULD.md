@@ -629,6 +629,17 @@ House territory. It is administered by the Order of the Watch under Liturgy char
 it in either direction without authorization has not been attempted successfully in living
 memory. The strait is the barrier. Humans patrol it.
 
+**The Southlands — ungoverned territory south of the inland sea.** North African analog:
+the southern shore of the Mediterranean, running from the Atlantic coast east into desert
+and then further east beyond what any House has mapped in detail. No House has ever held
+a permanent installation here — the distance from the nearest Cauld membrane site is too
+great, the territory too hostile in the dry interior, and the coastal populations have
+their own institutions that predate the Cauld's House system by centuries. The Southlands
+is not part of the Vigil. It is not part of the Compact. It is simply there — visible
+across the water from Loera's southern cliffs on a clear day; unreachably far from the
+Liturgy's administrative reach; a reminder that the map the Cauld uses to understand itself
+is not the whole map.
+
 ---
 
 ### The First Age — Membrane as Horror
