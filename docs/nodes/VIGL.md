@@ -97,15 +97,15 @@ Large sweeping vistas. Interpersonal joy and sorrow both fully earned. See §8a�
 Seven members — one from every major House in the Cauld. The party assembles as Lyra crosses
 it, one member per leg, each showing the system at work on a different kind of person.
 
-| Character | House | Joins |
-|---|---|---|
-| Dame Lyra T-044 | Ocipheus (Templar) | Start |
-| Orim Zebulun | Ocipheus (stationed) | Start |
-| Rowe / M-101 | Vierna (Earth, 1919) | Vierna |
-| Erland | Pallor | Three Points |
-| Kressida Haun | Atrament | Schmalburg |
-| Tavar Leal | Loera | Atrament garrison |
-| Wren Caerglas | Calyx | Calyx eastern plains |
+| Character | House | Role | Joins |
+|---|---|---|---|
+| Dame Lyra T-044 | Ocipheus (Templar) | Tank | Start |
+| Orim Zebulun | Ocipheus (stationed) | Scry Mage | Start |
+| Rowe / M-101 | Vierna (Earth, 1919) | Ranged DPS | Vierna |
+| Erland | Pallor | Melee DPS | Three Points |
+| Kressida Haun | Atrament | Support Engineer | Schmalburg |
+| Tavar Leal | Loera | Rogue / Pilot | Atrament garrison |
+| Wren Caerglas | Calyx | Infiltrator | Calyx eastern plains |
 
 ### Dame Lyra T-044 — POV {#SS-VIGL-1a}
 - **Institutional affiliation:** The Liturgy — she is a **Templar**, not a House Knight.
@@ -294,12 +294,12 @@ it, one member per leg, each showing the system at work on a different kind of p
 - **The reveal:** She has done this before. Small woman, apparent distress, someone moves to
   help — then she walks to the rig, and the rig handles the situation, and the someone who
   moved to help is standing in the aftermath trying to reconcile what they saw with what they
-  are looking at now. Tavar Leal experiences this at Sal Vento. He is standing outside the
-  building. The rig is in the adjacent dock bay. He has fifteen seconds of watching a small
-  woman walk toward a machine larger than a horse, then watching the machine stand up and
-  solve the problem with a single arm movement. He does not speak for a full minute afterward.
-  He takes the run. His stated reason is the Ocipheus waters transit. His actual reason is
-  standing forty meters away and probably knows both reasons.
+  are looking at now. Tavar Leal experiences this at the Atrament garrison break-out. He has
+  just been freed from the brig. He has fifteen seconds of watching a small woman walk toward
+  a machine larger than a horse in the garrison bay, then watching the machine stand up and
+  walk through the outer wall. He does not speak for a full minute afterward. He takes the run.
+  His stated reason is the Ocipheus nav-override. His actual reason is standing forty meters
+  away and probably knows both reasons.
 - **Register:** Atrament-practical. Short sentences. She applies Atrament's production-culture
   frame to every situation including herself — not self-pity, not complaint, pure logistics.
   "The problem with rig-scale weapons in a room this size is clearance. I'd go through two
@@ -324,6 +324,23 @@ it, one member per leg, each showing the system at work on a different kind of p
   thermal/EM pressure gradient — the machine perceives what practitioners perceive but
   understands it differently. At Forge Hearth, she shows Lyra what the machine's display
   logs. Atrament framing: a resource pressure gradient. What it means is something else.
+- **Engineer role — terrain control and detection:**
+  The rig is not purely a melee platform. Kressida operates it the way an Atrament
+  production-floor engineer operates a foundry: maximum output from the available tools,
+  minimum waste, always aware of the workspace geometry.
+  - **Pressure traps** (carried in the rig's cargo bay): Atrament-manufacture iron plate
+    traps, trigger-spring loaded, Catalyst-accelerant burst on activation — concussive,
+    not incendiary. She sets three to four before an anticipated engagement. The party
+    learns not to walk behind her without asking which tiles are live.
+  - **Rig sentry mode**: The BR-7 can be locked in a stationary guardian posture — she
+    sets the rig, steps out, and the machine holds a chokepoint on proximity trigger.
+    Limited arc (120 degrees), limited reaction time (a second and a half before it swings),
+    but a 2.4m greatsword on a spring-loaded arm holds a corridor effectively without a
+    pilot inside. She uses this when the party needs her out of the rig for something small.
+  - **Sensor picket**: The rig's EM/thermal display can be positioned facing a direction
+    and left running while she does something else. She checks it the way a scout checks
+    their backtrail. At Sinter, it is the first instrument to register what the aperture
+    is doing before any practitioner feels it.
 - **Two-scene entry:** She joins the party at Schmalburg — small woman in the raid chaos,
   the rig appears and handles a threat, nobody asks the right question yet. The reveal
   happens at the Atrament garrison break-out: Tavar sees the transition live — small woman,
