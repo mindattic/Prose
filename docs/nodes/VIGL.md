@@ -297,9 +297,11 @@ it, one member per leg, each showing the system at work on a different kind of p
   are looking at now. Tavar Leal experiences this at the Atrament garrison break-out. He has
   just been freed from the brig. He has fifteen seconds of watching a small woman walk toward
   a machine larger than a horse in the garrison bay, then watching the machine stand up and
-  walk through the outer wall. He does not speak for a full minute afterward. He takes the run.
-  His stated reason is the Ocipheus nav-override. His actual reason is standing forty meters
-  away and probably knows both reasons.
+  walk through the outer wall. He does not speak for a full minute afterward. He files it
+  as: *useful to know.* He takes the run for the nav-override. That is the reason.
+  **Wren experiences the reveal differently**: from the other side of it. The Meridian's
+  approach and the rig dropping onto his crew is the last thing he sees before he blinks.
+  He already knows what the rig can do before he speaks a word to the woman inside it.
 - **Register:** Atrament-practical. Short sentences. She applies Atrament's production-culture
   frame to every situation including herself — not self-pity, not complaint, pure logistics.
   "The problem with rig-scale weapons in a room this size is clearance. I'd go through two
@@ -354,9 +356,12 @@ it, one member per leg, each showing the system at work on a different kind of p
   person in the party who fights at rig-scale. That is not the same as the largest
   person in the party fighting harder.
 - **Arc:** She has no faith to lose — she left Atrament before they could classify her
-  as a logistics problem. What changes: she acquires three people who do not look at the
-  rig first and her second. By the end she is in Ocipheus, rig parked in the station
-  courtyard, asking nobody's permission about what comes next.
+  as a logistics problem. What changes: she acquires people who do not look at the rig
+  first and her second. Wren in particular — he saw the rig from the other side of it
+  and joined anyway. She has not encountered this specific sequence before and finds it
+  difficult to file under a known category. By the end she is in Ocipheus, rig parked
+  in the station courtyard, asking nobody's permission about what comes next. Wren is
+  nearby. Neither of them has said the thing. See Wren entry.
 
 ### Capt. Tavardo Leal (Tavar) — Loera Pirate {#SS-VIGL-1e}
 - **House:** Loera-born. Currently no House affiliation — the *Meridian* is under Liturgy
@@ -381,20 +386,16 @@ it, one member per leg, each showing the system at work on a different kind of p
 - **How he enters:** In Atrament custody at a garrison east of Schmalburg — impounded for
   running an embargoed route without Liturgy charter. Lyra's party breaks into the garrison
   to steal the *Meridian*. They find Tavar in the brig. They take him with the airship.
-  He watches Kressida walk the rig out of the garrison bay. He does not speak for a full minute.
-- **His stated price:** Lyra's Templar nav-authority overrides the Liturgy nav embargo on the
-  *Meridian* for one transit. He knows exactly what he is asking for.
-- **His actual reason:** Kressida Haun is walking away from a Atrament garrison in a 3-metre
-  battle rig she climbed into without hesitation. He watched her walk to the rig. He watched
-  the rig solve the problem. He will not say this is the reason. He will never say this is
-  the reason. It is the reason. She is aware of this and finds it functionally useful.
-  Whether she finds it anything else is not yet determined.
+- **His price:** Lyra's Templar nav-authority overrides the Liturgy nav embargo on the
+  *Meridian* for one transit. This is his stated price. It is also his actual price.
+  The nav embargo has cost him three contracts and two port relationships. He is not
+  doing this out of adventure. He is doing this because the override is genuinely
+  worth the run to him. He understands the terms exactly.
 - **Arc:** He has no faith to collapse. He has been running on his own code since before
   Lyra started questioning hers. What changes: by the end of the run he has heard Rowe's
-  testimony, watched Lyra refuse the Canon, and watched Kressida handle three separate
-  situations in ways that keep surprising him. The story he tells himself about this run
-  will be different from the others. He will not say why it is different. The reason is
-  standing forty meters away in a machine she can step out of whenever she wants.
+  testimony, watched Lyra refuse the Canon, and stood at The Pass realizing he has flown
+  a route nobody else would have taken. The story he tells himself about this run will be
+  different from the others. He will not say why it is different. He files that too.
 
 ### Erland — Pallor Berserker {#SS-VIGL-1f}
 - **House:** Pallor. A product of the warrior-king culture's most direct tradition: infused
@@ -602,6 +603,14 @@ has come to love all three. That is what makes the confrontation tragic rather t
   nowhere else to go and because the thing he has been trying to understand since he read that
   property transfer documentation is somewhere in that zone. The Pallor claim is real.
   So is this. Both things are true and cannot both be satisfied.
+- **Wren and Kressida:** He already knows what the rig does before he says a word to her —
+  he saw it from the wrong end. She knows what the blink does because it is why he is alive
+  and his crew is not. They start with a precise mutual accounting of what the other one is
+  capable of, and no ceremony about it. What builds between them is not performed — it grows
+  in the operational space, in the beats between decisions: the moment she resets a sentry
+  trap and he watches without being asked; the moment he blinks to an angle that covers her
+  while she is out of the rig and does not mention it. By the end neither of them has said
+  the thing. The reader knows. That is sufficient.
 - **His function in the final act:** He is the Pallor perspective inside Lyra's crew at Sinter.
   He knows the Long Seat's position on Sinter from inside the House that holds it. He is the one
   who can say: *the eighth theory belongs to us too. We grew up with it.* He does not say this
