@@ -23,11 +23,13 @@ The story of Dame Lyra T-044 of Ocipheus crossing the entire Cauld to recover he
 stolen Relic weapon — and losing, along the way, the certainty that made her who she is.
 
 **Opening structure:**
-1. **Cold open — the theft.** Night. The Ocipheus archive. The **Blink Thieves** — a Loera-rooted
-   crew of phase-step operatives — move through the building with the confidence of people who
-   have studied the layout for months. They know where the Yggdra box is. They know the rotation.
-   They leave through the south coast before the House knows it is gone. **These are the thieves
-   Lyra spends the book pursuing.** One of them survives to the end. His name is Wren Caerglas.
+1. **Cold open — the theft (anonymous).** Night. The Ocipheus archive. Three figures —
+   no names, no interiority — move through the building with the confidence of people who
+   have studied the layout for months. They know where the Yggdra box is. They know the
+   rotation. The Keeper wakes. One of the three doesn't come back. Two leave through the
+   south coast with the Relic before the House knows it is gone. The reader sees what
+   happened. The reader does not know who did it. Neither does Lyra. **This is the cold
+   open. The thieves are a mystery until the book earns the reveal.**
 2. **Second scene — the south shore.** The Vierna beach assault lands at dawn: assault boats,
    front-doors down, Myrmidons wading through surf — *reverse Normandy* (see FFVIII Siege of
    Dollet). Lyra is Thrice Infused and leads the beach defense. She picks up armored soldiers
@@ -52,11 +54,10 @@ stolen Relic weapon — and losing, along the way, the certainty that made her w
 - **Act 3** (~Ch.22–29): The Balkan approach → Eirene's Gate / The Pass → Sinter (climax)
   → return to Ocipheus
 
-Running east ahead of her: the Blink Thieves — Loera-rooted crew, Pallor backing,
-carrying the Oculus Memoriae toward a destination the reader is not yet sure of. One
-of them already doubts the mission. That is Wren. He is twenty-two. He has read the
-documentation. The reader will come to understand his doubt before Lyra does.
-That is not the same as sympathy for the cause he is working.
+Running east ahead of her: three thieves with the Oculus Memoriae, four days ahead,
+heading east. Lyra does not know who they are. She knows their number, their direction,
+and one capability — a fold trace in the archive, a wall walked through. She will know
+everything else when she catches them. The reader discovers the thieves when Lyra does.
 
 She is fully loyal at the start. She is fully loyal at the end. But the faith behind the
 loyalty has collapsed and been replaced with something she cannot yet name, that watches the
@@ -94,17 +95,16 @@ Large sweeping vistas. Interpersonal joy and sorrow both fully earned. See §8a�
 
 ## 1. The Party {#SS-VIGL-1}
 
-Six members — assembled one per leg as Lyra crosses the continent east. Each shows the system
+Five members — assembled one per leg as Lyra crosses the continent east. Each shows the system
 at work on a different kind of person.
 
 | Character | House | Role | Age | Joins |
 |---|---|---|---|---|
-| Dame Lyra T-044 | Ocipheus (Templar) | Tank | Early 30s | Start |
-| Orim Zebulun | Ocipheus (stationed) | Scry Mage | Late 60s | Start |
+| Dame Lyra T-044 | Ocipheus (Templar) | Tank / POV | Early 30s | Start |
+| Orim Zebulun | Calyx-born, independent | Scry Mage | Late 60s | Start |
 | Rowe / M-101 | Vierna (Earth, 1919) | Ranged DPS | Mid-30s | Vierna |
-| Erland | Pallor | Melee DPS | Mid-30s | Three Points |
 | Kressida Haun | Atrament | Engineer / Pilot | Mid-20s | Schmalburg |
-| Wren Caerglas | Loera | Rogue | 22 | Eastern plains |
+| Wren Caerglas | Calyx (Loera-trained) | Rogue | 22 | Eastern plains |
 
 ### Dame Lyra T-044 — POV {#SS-VIGL-1a}
 - **Institutional affiliation:** The Liturgy — she is a **Templar**, not a House Knight.
@@ -139,7 +139,7 @@ at work on a different kind of person.
   Half-plate, not full (she left her full Vigil plate at the Station). White and Black Tincture
   field kit; Grey Tincture; Gold Tincture (one emergency dose, requires annual re-certification).
 
-### Orim Zebulun — The Minor Scryer {#SS-VIGL-1b}
+### Orim Zebulun — The Failed Keeper {#SS-VIGL-1b}
 - **House:** None. Calyx origin, long-since contract-independent.
 - **Age:** Late 60s. Looks older.
 - **Gift:** Minor Scrying — no apparatus, no membrane penetration to other Spheres. Local and
@@ -147,10 +147,18 @@ at work on a different kind of person.
   waits around the next corner. Range: rarely more than a few hundred meters. Depth: hours,
   not days. Images: fragmentary, wet-edged, translucent. He has been doing this for fifty
   years. He is very good at it.
-- **Role:** The man who saw what is in Sinter and was not believed. He is on this road for
-  one reason: to ensure Lyra and the Relic reach the aperture. He will say whatever is
-  necessary to keep the party moving in that direction. He is not safe. He is not a guide.
-  He is a man with a thirty-year secret and a specific agenda.
+- **Role:** The contracted Keeper of the Oculus Memoriae — the Liturgy's hired Scrying
+  specialist responsible for monitoring the Relic's security. The Relic was stolen on his
+  watch. He did not detect the fold traces until it was too late. He is old, he was sleeping
+  at the wrong hour, and the most important Relic in the Cauld walked out the door while he
+  was supposed to be watching. The Liturgy's people do not say this to his face. They do not
+  need to. He has been saying it to himself every waking hour since. He joins Lyra's pursuit
+  not because he was ordered to — because there is no other way to make this right, and he
+  knows it, and she does not know yet how much she needs him.
+- **The double shame:** He failed the Relic this season. He failed the Liturgy on Sinter
+  thirty years ago — pressed the Rod at the aperture, saw what was building in the depths,
+  came back and reported it, was disbelieved by people who had already decided not to act.
+  Two failures. Thirty years apart. He is not going to survive a third.
 - **Register:** Dry, observational, full of the particulars of places. He notices exits, food
   sources, which roads flood in autumn, where the Order of the Watch posts its inspection
   schedule. He is genuinely curious about everything and sentimentally attached to nothing.
@@ -174,6 +182,13 @@ at work on a different kind of person.
   thirty years that Orim has heard it said plainly rather than implied by intake paperwork.
   He can no longer say he did not hear it. What he does with that is open — but it does not
   change where they are going.
+- **Redemption shape:** Not dramatic. He does not save anyone in a single gesture. He finds
+  Wren alone in the field after the intercept and shows him the Sinter data — not because
+  the mission requires it, but because Wren is sitting there with the Relic and Orim is old
+  enough to know what a person looks like when they need to be shown something rather than
+  told. At Sinter, he presses the Rod for the third time in fifty years. He steps back and
+  waits for what comes through. That is all. That is enough. He wanted to die having done
+  one right thing. He gets to do several.
 - **Scrying use in book:** Beat 1 (south passage confirmation), Beat 3 (barge direction at
   Veil River junction), Beat 8 (Forge Hearth zone — membrane refuses him; first time in
   fifty years). The third scry is the book's formal threshold into the final act.
@@ -281,24 +296,42 @@ at work on a different kind of person.
 
 ### Kressida Haun — The Rig Pilot {#SS-VIGL-1d}
 - **House:** Atrament. Battle-rig pilot, BR-7 designation. Aeronaut. Deserter.
-- **Physical:** Small. Genuinely small — 5'2", slight, the kind of person people instinctively
-  move to protect in a crowd. Dark hair cut short on one side. She dresses like a Schmalburg
-  dock worker: functional, worn, nothing that reads as military. She can move through a room
-  without anyone's eye following her. This is not an accident. She knows exactly what the
-  assumption of vulnerability is worth in operational terms and she uses it without apology.
-- **The rig:** The BR-7 is 3m, purpose-built Atrament iron, reaction-plate armored, and
-  parked wherever she left it last. She can get in and out freely — standard pilot access
-  hatch, takes fifteen seconds to seal from inside. She does not live in it. She pilots it
-  when it is the right tool. She keeps it fueled, maintained, and close.
-- **The reveal:** She has done this before. Small woman, apparent distress, someone moves to
-  help — then she walks to the rig, and the rig handles the situation, and the someone who
-  moved to help is standing in the aftermath trying to reconcile what they saw with what they
-  are looking at now. The garrison break-out is where Lyra and Orim watch this happen for the
-  first time: fifteen seconds from "small woman walks toward a machine larger than a horse"
-  to "the machine stands up and walks through the outer wall."
-  **Wren experiences the reveal differently**: from the other side of it. The Meridian's
-  approach and the rig dropping onto his crew is the last thing he sees before he blinks.
-  He already knows what the rig can do before he speaks a word to the woman inside it.
+- **Physical:** Small. Genuinely small — 5'2", the kind of body that requires a wheelchair
+  when the rig is unavailable. The cause is not a disease. It is an infusion. A Transmutation
+  infusion administered by Atrament's rig-pilot development program went wrong — the Catalyst
+  compound that was meant to enhance proprioception and reaction bonding instead degraded bone
+  density and skeletal integrity. She can bear her own weight for short transfers — doorways,
+  a few controlled steps. Sustained locomotion without assistance is not possible. Without the
+  rig she is fragile in the literal sense: delicate, deliberate, visibly requiring management.
+  Dark hair cut short on one side. She dresses like a dock worker: functional, worn, nothing
+  military. People instinctively move to protect her in a crowd. They are not wrong to read
+  her this way. They are simply missing the rig.
+- **The infusion history — what Transmutation costs:** Kressida is what a failed Transmutation
+  infusion looks like. The Catalyst bonded incorrectly; the bone-density degradation is
+  permanent. Atrament's solution was the rig — a suitable accommodation from an industrial
+  perspective. This is how they kept their best pilot. She has opinions about this framing
+  that she does not express in Atrament-adjacent company.
+- **The rig:** The BR-7 is 3m, purpose-built Atrament iron, reaction-plate armored. It is
+  the closest thing she has to a functional body at full capacity. Getting in is fifteen
+  seconds and a practiced set of transfers — she has done it ten thousand times; it is not
+  clumsy. Getting out is the same. She does not avoid getting out, but she does not get out
+  casually. When she is in the rig, she moves at its scale, carries its weapons, pilots the
+  Meridian. When she is not, she manages. The party learns the difference. She keeps it
+  fueled, maintained, and within reach at all times — not because she is precious about it,
+  but because at any moment she may need to be the rig instead of the woman who pilots it.
+- **The reveal:** The reveal runs in both directions. Getting IN: she has done this before —
+  small woman, apparent need, someone moves to protect her, then she reaches the rig and gets
+  inside, and fifteen seconds later the machine stands up and the someone who moved to help is
+  standing in the aftermath trying to reconcile what they thought with what they are looking at.
+  Getting OUT: after the fight, the rig opens, and the woman who climbs out is careful and
+  quiet and moves in the particular way of someone managing a body that requires management.
+  The party has just watched the rig do what it does. Now they are watching this. That is also
+  the reveal. The garrison break-out is where Lyra and Orim see the full sequence — both
+  directions — for the first time. It does not require comment.
+  **Wren experiences the IN-reveal from the other side of it**: the Meridian's approach and
+  the rig dropping onto his crew is the last thing he sees before he blinks. When he surfaces
+  from the blink and sees her climb out, he already knows what the rig can do. He has seen her
+  twice now and said nothing to her. She has not explained herself. Neither of them has yet.
 - **Register:** Atrament-practical. Short sentences. She applies Atrament's production-culture
   frame to every situation including herself — not self-pity, not complaint, pure logistics.
   "The problem with rig-scale weapons in a room this size is clearance. I'd go through two
@@ -317,8 +350,9 @@ at work on a different kind of person.
   in confined spaces where the arc matters.
   Secondary — Split-Shot mounted to the left forearm housing (short-sword with
   integrated breach-loaded Catalyst-accelerant slug; blue flash; 40-second reload).
-  **Out of rig:** Standard Atrament service knife (25cm, practical). She does not need
-  more than this. The rig is always nearby.
+  **Out of rig:** Standard Atrament service knife (25cm, practical). She carries it in a
+  reachable spot. The rig is always nearby and her first answer to any threat. The knife is
+  for when she is between transfers.
 - **The rig's sensors:** The rig's instrumentation reads the membrane boundary as a
   thermal/EM pressure gradient — the machine perceives what practitioners perceive but
   understands it differently. At Forge Hearth, she shows Lyra what the machine's display
@@ -352,13 +386,21 @@ at work on a different kind of person.
   happens at the Atrament garrison break-out: Lyra and Orim watch the transition — small
   woman, fifteen seconds, then the rig standing up in the garrison bay and walking through
   the outer wall. The party understands what they have been traveling with.
-- **What sets her apart from Erland (the Pallor berserker):** He is biological — infused
-  body, held together by will. She is mechanical — the rig is external, controlled,
-  devastating at scale. He fights from inside himself. She fights from inside a machine.
-  The distinction: his power is visible from the moment he walks into the room. Hers is
-  not visible at all until the rig stands up. The reveal is the point. She is the only
-  person in the party who fights at rig-scale. That is not the same as the largest
-  person in the party fighting harder.
+- **What sets her apart:** She is the party's melee DPS — not through an infused body but
+  through a machine she requires. The rig is external, devastating at scale, and invisible
+  until it stands up. Outside it, she is the most visibly fragile member of the party.
+  Inside it, she is the most physically dangerous thing in any room. Both of these are true
+  simultaneously. The reveal is the point: she climbs out carefully, moves with deliberate
+  economy, and the party has just seen three meters of walking iron walk through a garrison
+  wall. The same person.
+- **The rig as the closest thing to a home:** She has been inside it longer than she has
+  been anywhere she's slept. It knows her weight distribution and how she shifts before a
+  turn; she has tuned every response curve to her patterns. Getting in is not suiting up.
+  It is closer to standing up.
+- **Development needed:** Her departure from Atrament. Not just "before they classified her
+  as a logistics problem" — what specifically happened. The moment she understands what Sinter
+  means to an Atrament engineer (the machine feels it first, before she does). What she is
+  moving TOWARD, not only what she left.
 - **Arc:** She has no faith to lose — she left Atrament before they could classify her
   as a logistics problem. What changes: she acquires people who do not look at the rig
   first and her second. Wren in particular — he saw the rig from the other side of it
@@ -366,40 +408,6 @@ at work on a different kind of person.
   difficult to file under a known category. By the end she is in Ocipheus, rig parked
   in the station courtyard, asking nobody's permission about what comes next. Wren is
   nearby. Neither of them has said the thing. See Wren entry.
-
-### Erland — Pallor Berserker {#SS-VIGL-1e}
-- **House:** Pallor. A product of the warrior-king culture's most direct tradition: infused
-  strength, infused pain suppression, fighting until the body makes the decision your mind
-  would not.
-- **Joins at:** Three Points — the neutral ground where three powers agree not to fight.
-  He is not in anyone's employ when Lyra finds him. He has a Pallor weapon, a Pallor scar
-  pattern, and a Pallor name. He has left Pallor for reasons he does not explain in full.
-  He is available. He takes the run.
-- **Infusions:** Two. The first is strength beyond Knight-grade — he can lift Kressida's
-  rig off the ground if the rig is not fighting him. The second is suppression: he does not
-  register pain in combat. Not numbness — the signals arrive, he processes them as information,
-  they do not stop him. Surgeons note afterward that he should not have been standing. He was.
-- **The berserker:** When the suppression infusion is pushed past its operational envelope —
-  sustained heavy engagement, significant blood loss — the suppression breaks down and what
-  replaces it is not pain but an overloaded calm. He does not rage. He becomes very quiet.
-  He becomes very specific. Whatever was in front of him does not remain standing.
-  The party learns to give him room when he goes quiet.
-- **What sets Kressida apart from him:** He is biological melee — infused body, controlled
-  only by will. Kressida is mechanical melee — the rig is external, precise, and three meters
-  tall. He respects the rig without entirely understanding why anyone would choose to fight
-  from inside a machine when you could fight from inside yourself. He and Kressida have
-  argued about this. Nobody won. The party watched both arguments.
-- **Weapons:** Giant axe (Pallor forge-pattern; double-edge; three-quarters of Erland's own
-  height; no normal person can swing it at speed; he can, because of what the infusions did
-  to his shoulder assembly and grip strength). Short seax (knife, worn on the off-hip; for
-  when the axe is not the answer, which is rarely). He does not carry a shield — the
-  suppression infusion is the shield.
-- **Register:** Short sentences. No elaboration. He is not inarticulate — he simply does not
-  believe that most situations require more words than they have already been given.
-  When he says something, it is the thing he means. The party learns to listen when he speaks.
-- **Arc:** He left Pallor. He does not say why. By the end he will say why: the Long Seat
-  told him the Sinter situation required patience and institutional process. He had read the
-  briefings. He disagreed with the assessment. He is not wrong.
 
 ---
 
@@ -437,28 +445,28 @@ at work on a different kind of person.
   notification. Lyra and Orim identify the second function in Ch13. The two objectives do
   not conflict — Prelacze needed both.
 
-### Aldric Caerglas — Pallor Knight, Caer Glas Moor {#SS-VIGL-2b}
-- **Role:** Pallor Knight. Two infusions. Mid-forties. He is NOT in the traveling squad.
+### Aldric Caerglas — Calyx Knight, Caer Glas Moor {#SS-VIGL-2b}
+- **Role:** Calyx Knight. Two infusions. Mid-forties. He is NOT in the traveling squad.
   He dispatched Esvane with operational authority, arranged Vaen's parallel deployment,
   and has been at Caer Glas Moor for four days by the time the squad arrives — preparing
   the ancestral vault site, managing the moor-hound handlers, making the Relic's return
   real in his mind before it happens. The squad is doing his family's work. He sent them.
-- **Why he doesn't travel:** Six generations of formal Pallor claim (Year 972, 166 years ago); two infusions. If he is
+- **Why he doesn't travel:** Six generations of formal Calyx claim (Year 972, 166 years ago); two infusions. If he is
   caught in another House's territory carrying the Relic, he is the confirmation of theft.
   Esvane's institutional cover requires that the person with the most to lose stay out of
-  range until Pallor soil is under his feet. He agreed with the reasoning. He hated agreeing
+  range until Calyx soil is under his feet. He agreed with the reasoning. He hated agreeing
   with it.
-- **The Pallor claim:** His family has maintained House Pallor's formal property dispute over
+- **The Calyx claim:** His family has maintained Calyx's formal property dispute over
   the Oculus Memoriae since Year 972 — since the Battle of Nine Days at Caer Glas Moor,
-  where the Pallor Champion fell and the Relic passed out of Pallor custody under the
+  where the Calyx Champion fell and the Relic passed out of Calyx custody under the
   post-battle canonical settlement. The settlement was legally correct. It was also the price
   of a lost battle. He grew up hearing the claim told as fact and obligation in equal measure —
   six generations of the Caerglas family have filed the petition (Year 972 was 166 years ago;
   the claim is real; it has simply never been resolved). When Prelacze approached him, he heard:
   *finally, someone in the Liturgy is willing to right this.*
-- **What he knew vs. what Prelacze knew:** He knew WHY — Pallor's prior claim is legitimate.
+- **What he knew vs. what Prelacze knew:** He knew WHY — Calyx's prior claim is legitimate.
   He did NOT know what Prelacze actually wanted from the Relic's memory. He believed he was
-  conducting a sanctioned retrieval under Pallor's historical property right. He was correct
+  conducting a sanctioned retrieval under Calyx's historical property right. He was correct
   about the right. He was wrong about the Canon's purpose. Aldric knew the Relic required a
   specific location (the aperture site). He did NOT know Prelacze's purpose for it, nor the
   leverage scheme.
@@ -466,7 +474,7 @@ at work on a different kind of person.
   that the mission and the institution are the same thing. He will discover they are not.
 - **His moment:** When Lyra has him down on the moor, he names the Canon. He says: *I thought
   I was doing right. I don't know anymore.* He means it — not the retrieval (that was right),
-  but what the retrieval was in service of. Prelacze used Pallor's genuine six-generation
+  but what the retrieval was in service of. Prelacze used Calyx's genuine six-generation
   grievance as a mechanism for personal leverage. Aldric was the tool. This is what collapses
   his certainty. Not that he was wrong to want the Relic back. That he was used.
 - **After:** Lyra tells him to find the Long Seat and tell them everything. She leaves him alive.
@@ -485,13 +493,13 @@ territory Lyra crosses, one chapter ahead, so we know what she's walking into be
 **The dramatic engine: two hard-committed and one who is not.**
 Esvane believes what she is doing is right. Petra believes nothing except the coin and, against
 her better judgment, Aldric. Wren has read the documentation and knows the truth is more
-complicated than both of them will admit. By the time the squad reaches Pallor, the reader
-has come to love all three. That is what makes the confrontation tragic rather than victorious.
+complicated than both of them will admit. By the time the squad reaches Calyx, the reader
+discovers who all three were. That is what makes the confrontation land.
 
-**Esvane Mirren — Pallor Templar, institutional cover** {#SS-VIGL-2c-esvane}
-- Fifty. Lector rank in the Pallor Templar order. Twenty-three years working canonical transit law.
+**Esvane Mirren — Calyx Lector, institutional cover** {#SS-VIGL-2c-esvane}
+- Fifty. Lector rank in the Calyx canonical order. Twenty-three years working canonical transit law.
 - She designed the legal mechanism that suspended Lyra's field authority — routing it through
-  Prelacze's counter-brief system, using Pallor's on-record property dispute as the basis.
+  Prelacze's counter-brief system, using Calyx's on-record property dispute as the basis.
   It was technically correct. She knew it was technically correct and chose it for that reason.
 - She has known Aldric since he was a young Knight. She watched him grow into the person who
   would be willing to do this. She has a form of love for him that is not romantic and is
@@ -541,13 +549,13 @@ has come to love all three. That is what makes the confrontation tragic rather t
 
 **Wren Caerglas — Aldric's nephew; Loera-trained operative; operational alias "The Blink Thief"** {#SS-VIGL-2c-wren}
 - Twenty-two. Assigned to the squad by family obligation. He would have come regardless.
-- He has the Kael family's — Aldric's family's — belief that the Relic belongs to Pallor.
+- He has the Caerglas family's belief that the Relic belongs to Calyx.
   He got it secondhand, the way you get things from family stories: absolutely certain in
   feeling, less certain in detail.
 - Three months before the retrieval, he read the canonical property transfer documentation
   from Year 972 — the actual instrument that moved the Oculus Memoriae to Ocipheus custody.
   The documentation is not as simple as the family story. The transfer was disputed at the time.
-  It was also processed by a legitimate canonical authority. The Pallor claim is real. So is
+  It was also processed by a legitimate canonical authority. The Calyx claim is real. So is
   Ocipheus's institutional custody. Both things are true and cannot both be satisfied.
 - He has not told Aldric this. He does not know how to tell Aldric this, because Aldric has
   been certain his whole life and Wren does not know what certainty looks like after it breaks.
@@ -582,7 +590,7 @@ has come to love all three. That is what makes the confrontation tragic rather t
   trap and he watches without being asked; the moment he blinks to an angle that covers her
   while she is out of the rig and does not mention it. By the end neither of them has said
   the thing. The reader knows. That is sufficient.
-- **His function in the final act:** He is the Pallor perspective inside Lyra's crew at Sinter.
+- **His function in the final act:** He is the Calyx perspective inside Lyra's crew at Sinter.
   He knows the Long Seat's position on Sinter from inside the House that holds it. He is the one
   who can say: *the eighth theory belongs to us too. We grew up with it.* He does not say this
   until Lyra needs to hear it.
@@ -611,7 +619,7 @@ has come to love all three. That is what makes the confrontation tragic rather t
   makes the other one less true.*
 - **The fight:** Vaen vs. Lyra is not a fight Lyra wins by strength. She cannot — not at this
   infusion differential. The party fights her as a unit: Kressida's rig absorbs the damage
-  Lyra cannot survive alone; Tavar creates angles; Rowe's rifle finds the exact gap that only
+  Lyra cannot survive alone; Wren blinks to angles Vaen cannot track simultaneously; Rowe's rifle finds the exact gap that only
   his WW1-trained marksmanship eye would know to look for. Orim's Rod is the last resort and
   he holds it until the moment it becomes the only option. Vaen is not beaten. She is stopped.
   The distinction matters to her. She knows it when it happens.
@@ -637,9 +645,8 @@ is on the moor.
 1.  Ocipheus Station, the island (start and end) — Lyra departs alone; the Relic is four days ahead
 2.  Channel crossing to Vierna
 3.  Bressant, Vierna (Veil River; Rowe found)
-4.  Three Points neutral ground (Act 1 ends here) — **Erland joins** (Pallor berserker,
-    no current employer, available); intel: impounded airship (*Meridian*) at Atrament garrison
-    east of Schmalburg
+4.  Three Points neutral ground (Act 1 ends here) — intel gathered: impounded airship
+    (*Meridian*) at Atrament garrison east of Schmalburg
 5.  Vierna-Atrament border / rail
 6.  Schmalburg, Atrament (raid; Kressida joins; Ardea's death)
 7.  **Atrament military base** — mission: steal the *Meridian*; Kressida's rig handles the
@@ -656,7 +663,7 @@ is on the moor.
 
 ### The living history at each threshold:
 - **Vierna:** Archival Gate at Bressant (Arnault d'Archival Year 312); Treachery Quarter; *L'Accord* barge; fog off the lowlands
-- **Three Points:** neutral ground since the early Compact; no House stations forces here; the place where three powers agree the only thing worse than sharing is fighting. **Act 1 ends here.** Erland is in the common room. The party learns here that an impounded airship — the *Meridian* — sits at an Atrament garrison east of Schmalburg.
+- **Three Points:** neutral ground since the early Compact; no House stations forces here; the place where three powers agree the only thing worse than sharing is fighting. **Act 1 ends here.** The party learns here that an impounded airship — the *Meridian* — sits at an Atrament garrison east of Schmalburg.
 - **Atrament:** Schmalburg named for the Battle of the Small Fortress Year 701; Ignamund Unburnt's *Ewige Flamme* in the capital; Forge Hearth Hearth-One through Hearth-Eleven. **Wylla Mother of Men** — a Cauld invocation Lyra overhears an officer give to his column before they march south-east toward The Pass. The troops repeat it like a ward: *Wylla Mother of Men.* Not a prayer exactly — more like a name you say out loud to mean *I know where I come from.* Who or what Wylla is is not explained to the reader. That is deliberate. Lyra files it and moves on.
 - **Calyx:** Danube plains; monster incursion corridors; people who grow food and hunt creatures are frequently the same people; the eastern plains grade toward the Balkan approaches
 - **The Pass / Eirene's Gate:** named for Eirene, last Sinter Champion, who died here Year 1081; *Sinter remembers even if we don't*; towers on both banks; the stamp; the departure log on ruled paper
@@ -976,7 +983,7 @@ biology is evidence of centuries of membrane puncture.
   includes a Catalyst-adjacent compound that the Eaters process for self-infusion)
 - **Channel drift-bell:** Marine; translucent bell body; pneumatic chambers produce above-water
   sound during feeding (a low, resonant tone that fishermen call "the tide singing"); edible
-  but require specific preparation; Tavar keeps a processing tool on the *Meridian* for long
+  but require specific preparation; Kressida keeps a processing tool on the *Meridian* for long
   channel crossings
 - **Schmalburg river-flash:** Fish; chromatophore scales from a bioluminescent Sphere; flash
   when startled; established in the Rhine-analog over two centuries; the river yards at night
@@ -1044,12 +1051,12 @@ actually is. The assumption that every House has a king in armor on a throne is 
   majority. No king. Significant arguments look like labor disputes.
 - **Loera** — navigator's council / corsair assembly. Captains with independent standing
   convene in the Three-Lantern House at Sal Vento. Authority is earned by route-record and
-  cargo volume. Tavar has standing here but rarely attends.
-- **Pallor** — warrior-king ruled; Scandinavia analog; fjord country. The Warrior King of Pallor
-  rules by combat lineage confirmed by the Long Seat — the ancient advisory body that remembers
-  every predecessor king. The warrior king acts; the Long Seat remembers. Aldric is a Pallor
-  knight assigned to Ocipheus Station at story-start. The Long Seat's eighth-theory directive
-  comes through Pallor's institutional channel.
+  cargo volume.
+- **Pallor** — ungoverned warrior culture; Scandinavia/Pictish analog; fjord and moor country.
+  No formal kingdom, no Long Seat. Combat lineage governs by custom, not institution. Champions
+  are acknowledged, not crowned. Aldric operates as a Pallor knight but his title is recognition
+  of his line, not a formal appointment. The moor-hounds, the Vaen champion, and the Caer Glas
+  Moor are Pallor territory and culture.
 
 ---
 
@@ -1137,7 +1144,7 @@ survivors for their methods. Terrifying. Correctly so.
   fingers stop working. Wounds are described in terms of what the body does with them.
 - Violence is quick and costs more than it resolves. Ardea's death takes thirty seconds.
 - No false heroism. Lyra is formidable but not mythologized. She makes decisions under pressure.
-- Gallows humor is armor, not wit — Orim deploys it; Tavar deploys it. Neither wears it as performance.
+- Gallows humor is armor, not wit — Orim deploys it. Neither wears it as performance.
 - The dark humor is sparse and specific: one line per situation that earns it, not scattered quips.
 
 **Author touchstone:** Buehlman (*Between Two Fires*, *The Blacktongue Thief*), not Gibson. The
@@ -1196,9 +1203,9 @@ that has no institutional name yet.
   sentimentally attached to nothing. Dark humor as armor.
 - **Kressida:** Short, functional, Atrament-practical. Calls things what they are. No metaphor.
   The most literal person in the party; says the most exact things.
-- **Tavar:** Laconic, pleasurably indirect. Implies rather than states. Finds things interesting
-  rather than alarming. Refers to himself in third person occasionally: *Tavar doesn't carry
-  passengers who don't know their destination.* Then he carries them.
+- **Wren:** Direct, young, periodically right at the worst possible moment. He has the precision
+  of someone who has read everything about a subject and knows he's missing context. His humor
+  is inadvertent — he says the true thing at the wrong time and then waits.
 
 ### 8a. Visual and Aesthetic Doctrine {#SS-VIGL-8a}
 
@@ -1295,8 +1302,6 @@ situations behaving like real people. Primary sources:
 - **Wren after joining Lyra's party** — youngest member, spent three weeks with the wrong crew,
   now in the right one. He has opinions about everything and expresses them at the wrong moment.
   The party finds him useful and occasionally maddening. He is also, frequently, correct.
-- **Tavar** — finds things interesting rather than alarming. Says "interesting" where other
-  people say "oh no." Kressida's response to this is always exactly the right length.
 - **Orim's running commentary** — delivers scry results in the dry specificity of a field report.
   "Six of them. Or possibly eight. Colony signature. I would not recommend standing between them
   and the membrane." Then he points the Rod.
@@ -1317,10 +1322,6 @@ Lyra's Vigil crossing authority when he learned she was in pursuit; she cannot c
 until the story's climax forces it. The full journey runs east across the Cauld — Vierna,
 Three Points, Atrament, Calyx, the Balkan approaches — before converging at Eirene's Gate.
 All parties meet at the Sinter aperture. That is where the Relic does what the Relic does.
-
-**Tavar redesigned as a Loera intelligence operative**, not an airship captain. He knows where
-a Liturgy supply vessel is moored (Wall garrison rotation). The party acquires it by night operation
-— Kressida flies the machine. The stolen vessel becomes the airship they cross the channel in.
 
 ---
 
@@ -1348,120 +1349,25 @@ boundary is the same moment seen from inside vs. outside.
 
 ---
 
-### The Pallor Thread (6 chapters — opens the novel, then runs ahead) {#SS-VIGL-9d}
+### The Thieves — Character Reference (NOT POV; discovered when Lyra discovers them) {#SS-VIGL-9d}
 
-**Who they are:** Esvane Mirren (squad leader, Pallor Templar), Petra Dahl (fixer),
-Wren Caerglas (Aldric's nephew). Aldric is at Caer Glas, waiting — he dispatched them.
-Full profiles in §2c.
+The three who travel ahead of Lyra with the Relic. The reader does not follow them.
+The reader discovers them at the intercept, with Lyra. Full profiles in §2c.
 
-**Route:** They steal the Relic from Ocipheus Station (Ch.1 of the novel, before dawn) and
-cross the Watch line directly — Esvane's Pallor Templar credentials pass at the checkpoint
-Lyra is turned back from. They precede Lyra across the same territory: eastern Vierna →
-Atrament → Loera (Sal Vento; staged three weeks at the eastern docks before departure) →
-channel → Caer Glas Moor. When the reader follows them, they show the road ahead of Lyra.
-The reader knows what she's walking into before she gets there.
+**The Theft — Cold Open, Ch.1 (anonymous):**
+Three figures move through the Ocipheus archive before dawn. No names. No interiority.
+The Keeper wakes. One of them doesn't come back. Two leave through the south coast.
 
-**The Theft — Ocipheus Archive, before dawn (Ch.1 of the novel):**
+**The fold — how the theft was possible:**
+The Blink infusion (Wren's Loera-tradition phase-step) allowed entry and exit through
+the archive's stone walls. The fold trace is readable by a skilled Scryer within 4–6 hours.
+Orim Zebulun was the contracted Keeper. He did not read it in time. This is why he is ashamed.
 
-A fourth operative, **Cathe**, is part of the extraction team. Not a POV character — present
-to die. Fifteen years Pallor service, two infusions, good instincts. His instincts tell him to
-come through the archive door when Esvane is in trouble. His infusion count does not give him
-the clearance to survive the Keeper.
-
-**The Keeper:** The Ocipheus archive's guardian construct. Built in Year 397, the year the Relic
-arrived. Six arms, each articulated at three joints. Iron and canonical stone (Ocipheus headland
-quarry), every surface carved with the founding compact's iconography — the founding Canon spent
-three years on the carving before a single strut was assembled. It is not a war machine. It is a
-devotional object built to face the Oculus and ensure no one takes it. Inside the archive chamber,
-this distinction is irrelevant. It moves slowly everywhere except its lowest rightmost arm, which
-is fast in a specific arc documented in the founding deposition and not widely read. Cathe does
-not read depositions.
-
-**The Pallor fold:** Esvane (3 infusions) and Wren (2 infusions) can briefly phase through the
-membrane and emerge metres away, using a Catalyst preparation dosed two hours before the mission.
-Pallor Templars call this a *fold*. Requires prior line-of-sight or a precise Scrying image of the
-destination. 3–4 folds per preparation dose. Exit angle matters — Wren consistently arrives
-sideways. Each fold leaves a membrane trace readable by a skilled Scryer within 4–6 hours. Petra
-has no infusions; she routes through the physical corridors and meets them at the extraction point.
-
-**P0 — The Theft at Ocipheus** (Ch.1 of the novel)
-Esvane folds into the inner archive. Wren follows, lands wrong. Petra routes through the side
-corridor on schedule. The Keeper opens its eyes when Esvane's hands close on the case. The fight
-is not a fight — the Keeper is the room — and the squad folds out with the case and Cathe's
-absence. Four riders out; three back.
-
-**P1 — East of the Watch — Three Days** (after Ch.6 / SCRIBE S1)
-Three days after the theft. Eastern Vierna. They're ahead and moving fast. The squad establishes
-its dynamics immediately: Esvane navigates and makes every decision, Petra sets pace and argues
-with every decision, Wren watches both of them and keeps his mouth shut. The moor-hounds are
-comfortable. They're headed home.
-Esvane carries the Relic's case. She examines it once, in the road-house outside Bressant —
-professionally, checking for transit stress. A palm-sized lens, lighter than she expected, warm
-in a way she notes and sets aside as a known membrane-adjacent phenomenon. She closes the case. She
-does not look through it. Wren watches her not look through it.
-The chapter ends on a small thing that is not small: Wren asks Esvane what it actually does.
-She says: that's not our concern. It belongs to Pallor. We are returning it. He says: but what
-does it do? She says: it watches. He says: watches what? She says: *keep up.* She doesn't answer
-the question. He adds this to three months of things he has not been answered.
-
-**P2 — House Atrament — Everything Properly Filed** (after LYRA Vierna Entry / SCRIBE S2)
-Atrament border checkpoint. Esvane's institutional authority passes them through clean — her
-canonical property review paperwork is correct in every detail. The checkpoint officer reads
-it, signs it, moves on. This is what it looks like to have the law on your side. Afterward,
-in the road town east of the checkpoint, Petra makes contact with her secondary client's
-courier — a brief exchange in a market, a sealed message, coin. She puts it away as insurance
-and does not take it out again until she has to. Wren sees it happen and says nothing.
-The bickering: Esvane wants to push through without stopping. Petra argues that tired people
-make errors at checkpoints. They stop. Petra is correct. Esvane knows she is correct. Wren
-keeps his mouth shut, which is also correct.
-
-**P3 — Schmalburg Adjacent — The Atrament Road** (after SCRIBE S3 / LYRA Schmalburg)
-The squad passes through or near Schmalburg days before Lyra's party arrives. The reader
-sees what Lyra will walk into later: the dockyard, the workers, the raid's aftermath (or
-anticipation). The squad doesn't stop long. Petra recognizes the quality of the trouble
-brewing in the area and routes them around it. She is right again. Wren almost slows for
-something he shouldn't slow for — the dockyard workers, the guards, the particular quality
-of the silence. Petra says: *keep walking*. Esvane does not look back either.
-Wren gets his first look at Atrament industry and is briefly stunned into silence —
-the scale of it, the Heloths, the factories that never stop. He says: *Is this what we
-look like to someone from outside?* Nobody answers. Petra says: *Keep walking.*
-
-**P4 — The Channel — Hours, Not Days** (after LYRA Forge Hearth / LYRA Sal Vento)
-The squad crosses the channel aboard a Loera trading vessel — a different ship from
-Tavar's world, a commercial cargo line that takes Pallor-canonical transit documents.
-They are now hours ahead of Lyra, not days. The Relic has been in the carry-case for
-two weeks and the moor-hounds have stopped settling around it. They sleep at the far end
-of whatever space the squad occupies and watch the case. Esvane has noticed.
-On the channel, Esvane tells Petra the full shape of Prelacze's purpose — not unburdening herself,
-but drawing the map before the difficult crossing. She needs Petra to understand that when they reach Pallor, the mission is
-complete and so is her contract, and the secondary client arrangement needs to die here.
-Petra's response is not what Esvane expects: she already threw the token. Two nights ago,
-outside Sal Vento. Esvane asks: why? Petra says: professional call. The secondary client
-isn't worth the exposure. What she does not say is that somewhere in three months of travel
-with Aldric's certainty and Wren's doubt she stopped being able to hold the token as merely
-an option. She watched it sink. She went back to sleep. She will not discuss it further.
-Esvane watches Petra not discuss it, and notes that Petra has been changed by this run in
-ways she cannot fully account for. Then she looks at Wren, who has been listening and
-pretending not to. He says nothing. She says nothing. The channel is dark and they are
-hours ahead of a Templar who is going to be very difficult to stay ahead of.
-
-**P5 — Caer Glas — The Hours Before** (just before LYRA Pallor Reached — convergence)
-Caer Glas Moor at dawn. The squad has arrived; Aldric has been here for four days. The
-night-heather is phosphorescent in the last dark, pink-white lit from below. Aldric meets
-them at the field edge — the ancestral vault is forty meters behind him, unsealed, waiting.
-The chapter is the squad's last hours before the handoff. Esvane gives him the case. He
-takes it without ceremony. He has been thinking about this moment for thirty years and he
-does not know what to do with the fact that it feels like nothing yet — just a lens in a case.
-Wren, in the hour before dawn while Aldric is at the vault entrance, tells Esvane what he's
-known for weeks: the canonical transfer documentation is not simple. Both claims are real.
-The Relic does not unambiguously belong to them. Esvane says: *I know. I've always known.*
-He says: *Then why?* She says: *Because the claim is real. Because six generations is long
-enough. And because Aldric needed to do this to become whoever he is after.* Wren does not
-understand what that means yet. He will, in about four hours.
-The moor-hounds wake before anyone else. Not alarm — recognition. They face south and east,
-toward the moor, and are very still. Aldric is watching them from the vault entrance. He has
-worked with moor-hounds for twenty years. He reads them in one look. He closes the vault.
-He picks up the case. He says: *She's on the moor.*
+**At the intercept — what Lyra learns when she catches them:**
+Three members: Esvane (operational commander, Calyx Lector), Petra (fixer), Wren (the Blink).
+Esvane and Petra die in the confrontation. Wren blinks through a stone wall with the Relic.
+Orim finds him in the field. Wren returns the Relic. He joins. He does not explain himself.
+His past is revealed in pieces through the party dynamic over the rest of the book.
 
 ---
 
@@ -1478,8 +1384,9 @@ She is three years into the position. She is good at it. She does not know yet w
 
 **The opening (novel structure — Chapters 1–2):**
 
-The novel opens on the Pallor theft team at work (Ch.1 — Pallor thread). The reader sees the
-Ocipheus archive before Lyra does. The sister scene plays out afterward, in the aftermath.
+The novel opens on the anonymous cold-open theft (Ch.1 — three figures, no names, no interiority).
+The reader sees the Ocipheus archive from outside any named perspective. The sister scene plays
+out afterward, in the aftermath.
 
 **The evening before (off-page):**
 The night before the theft, Lyra and Vega sit together in the station's lower common room —
@@ -1584,14 +1491,14 @@ in one moment what her sister has understood for weeks.
 | 13 | LYRA | The River — Factory / Smoke / Morning / Gone |
 | 14 | LYRA | Atrament — The Forge Kingdom |
 | 15 | SCRIBE | The Review Session |
-| **16** | **PALLOR** | **Schmalburg Adjacent — The Atrament Road** *(the road Lyra will walk; Petra routes around trouble; Wren's industry shock)* |
+| **16** | ~~**PALLOR**~~ | ~~**Schmalburg Adjacent — The Atrament Road**~~ *(P3 — B-PLOT DISABLED; beat IsEnabled=0)* |
 | 17 | LYRA | Schmalburg — The Raid; the Eaters; Kressida |
 | 18 | LYRA | The Forge Hearth — What She Recognizes |
-| 19 | LYRA | Sal Vento — Tavar |
-| **20** | **PALLOR** | **The Channel — Hours, Not Days** *(Esvane tells Petra the Canon's purpose; Petra reveals she threw the token; the moor-hounds won't settle)* |
+| 19 | LYRA | Sal Vento — The Port |
+| **20** | ~~**PALLOR**~~ | ~~**The Channel — Hours, Not Days**~~ *(P4 — B-PLOT DISABLED; beat IsEnabled=0)* |
 | 21 | LYRA | The Acquisition — Eirene-7 *(steal-the-airship mission)* |
 | 22 | LYRA | The Channel — Rowe Testifies |
-| **23** | **PALLOR** | **Caer Glas — The Hours Before** *(the moor at dawn; Wren and Esvane; the vault; the moor-hounds wake)* |
+| **23** | ~~**PALLOR**~~ | ~~**Caer Glas — The Hours Before**~~ *(P5 — B-PLOT DISABLED; beat IsEnabled=0)* |
 | 24 | LYRA | Pallor Reached — Aldric Caerglas *(convergence; Pallor squad; Aldric names Prelacze; then Vaen steps out of the moor; party vs. Champion boss fight; Vaen withdraws; Wren survives and stays)* |
 | 25 | SCRIBE | She Goes to Sinter |
 | 26 | LYRA | The Relic — What the Eye Has Seen |
@@ -1761,9 +1668,10 @@ That is what comes next.
 
 ## 11. User Stories {#SS-VIGL-11}
 
-- **VIGL-US-1 ⬜** Core entities seeded: all characters (Lyra as Liturgy Templar, Rowe, Kressida, Tavar as
-  Loera spy, Orim, Aldric, Prelacze, Ardea, Vega — Lyra's little sister, Liturgy Scribe), places,
-  factions, weapons, armor, pharmaceuticals, flora, fauna, species compendium (~60+).
+- **VIGL-US-1 ⬜** Core entities seeded: all characters (Lyra as Liturgy Templar, Rowe, Kressida,
+  Orim, Wren Caerglas, Aldric Caerglas, Esvane Mirren, Petra Dahl, Prelacze, Ardea, Vega —
+  Lyra's little sister, Liturgy Scribe), places, factions, weapons, armor, pharmaceuticals,
+  flora, fauna, species compendium (~60+). Erland and Tavar are removed; not seeded.
 - **VIGL-US-2 ✅** StoryNode `VIGL` exists in DB; slug = `the-vigil-s-end-019f5767`; universe = fantasy.
 - **VIGL-US-3 ⬜** ChapterNodes created: 16 Lyra chapters + 7 B-plot chapters (R1, R2, R3, S1, S2, S3, S4)
   = 23 total. SortKeys assign correct intercut order per §9 table.
