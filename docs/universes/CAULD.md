@@ -559,18 +559,21 @@ The gaps in the record are as informative as the record itself.
 
 ### The Geography of the Cauld
 
-The Cauld's landmass maps onto a recognizable European shape: a continent with a warm southern
-coast, a cold northern peninsula, a forested industrial center, a western island nation
-separated from the mainland by a narrow channel, and an eastern breadbasket that grades into
-steppe. The seven Houses each occupy a distinct geographic zone. They border each other. They
-have always had to.
+The Cauld's landmass maps onto a recognizable European shape: a continent with a northern
+warrior nation's fjord country, a forested industrial center, a western island nation separated
+from the mainland by a narrow channel, an eastern breadbasket that grades toward a narrow strait,
+and beyond that strait, a vast eastern landmass sealed by the Vigil line. The six surviving
+Houses each occupy a distinct geographic zone. They border each other. They have always had to.
 
-**The Northern Fjords — Fjorheim territory.** Scandinavia analog: long coastlines, cold fjord
-inlets, pine and birch, a culture that went to sea before it went to war. The winters are the
-longest in the Cauld. The people here solved cold and distance before they solved anything
-else. They are not the oldest culture in the Cauld but they have the longest memory of
-maritime raid. Their membrane site sits inland, on a glacial plateau — the only major
-installation that requires a sea crossing to reach from the nearest rival House.
+**The Northern Fjords — Pallor territory.** Scandinavia analog: long fjord coastlines, pine
+and birch interior, a warrior culture that went to sea before it went to war. Pallor is
+warrior-king ruled — the oldest martial succession tradition in the Cauld; the king governs
+by right of combat lineage, confirmed by the Long Seat, the ancient advisory body. The winters
+are the longest in the Cauld. The people here solved cold and distance before they solved
+anything else. Their membrane site sits inland, on a glacial plateau — the only major
+installation that requires a sea crossing to reach from the nearest rival House. Three hundred
+years ago, Pallor absorbed the failing fjord culture to the south that older records call
+Fjorheim; what was two coasts is now one House.
 
 **The Central Forests — Atrament territory.** Germany analog: Rhine and Danube river valleys
 framing a vast forested interior, volcanic ridge country in the west, mineral-rich hills
@@ -585,34 +588,46 @@ produced written records before any of its neighbors because surplus produced le
 leisure produced scribes. The Vierna installation sits on a river bluff in the interior —
 accessible from all directions, which was always the point.
 
-**The Island — Pallor territory.** Great Britain analog: separated from the mainland by a
-cold channel, rocky in the north, softer and greener in the south, a culture shaped by the
-fact that invading it requires boats. The Pallor installation is inland on the island's
-center — a compromise location between the island's three regional cultures that became the
-institution that unified them. The channel is narrow enough to see across on a clear day.
-Wide enough to matter.
+**The Island — Ocipheus territory.** Britain analog: separated from the mainland by a narrow
+channel, rocky in the north, softer and greener in the south, a culture shaped by the sword
+and the covenant. The Vigil — Ocipheus's knightly order — is the oldest active martial
+institution in the Cauld, founded in the Arthurian tradition of sworn service and recognition.
+The Canon Immaculate governs from the ancient seat at the island's center. The channel is
+narrow enough to see across on a clear day. Wide enough that crossing it uninvited has never
+been a casual decision.
 
-**The Southern Peninsula — Ocipheus territory.** Italy analog: Alpine ridge descending into
-a warm peninsula running south into the inland sea, a culture with the longest continuous
-written record in the Cauld, the oldest formal membrane study, the first institution to treat
-Scrying as a discipline rather than a ceremony. The Ocipheus installation sits in the
-northern ridge country where the Alps meet the peninsula — defensible, ancient, watching a
-membrane boundary that has been observed without interruption longer than any other.
+**The Southern Ridge Country — ungoverned margin.** Italy analog: Alpine ridge descending
+into a warm peninsula running south into the inland sea. When Ocipheus consolidated its
+primary installation to the island centuries ago, the old peninsula territory passed
+gradually into contested administration. No House holds formal title here. Atrament controls
+the northern ridge passes; Loera's covert networks operate along the southern coast. It is the
+only major geographic zone without a House. Scholars call it the Margin. Soldiers call it
+nobody's problem until it is everybody's problem.
 
-**The Western Sea Coast — Lacerta territory.** Iberian analog: the Atlantic-facing coast,
+**The Western Sea Coast — Loera territory.** Iberian analog: the Atlantic-facing coast,
 warm and dry in the south, rougher and wetter in the north, cliffs at the western edge where
-the ocean begins. The Lacerta installation is on the southern cliffs — the westernmost point
+the ocean begins. The Loera installation is on the southern cliffs — the westernmost point
 of the Cauld. Beyond it there is only water. No other House can be approached from behind
-here. Lacerta has known this for four hundred years and built its entire institutional
+here. Loera has known this for four hundred years and built its entire institutional
 character around the fact.
 
 **The Eastern Plains — Calyx territory.** Central-eastern European analog: Danube plains
 east of Atrament, broad agricultural lowlands, the Cauld's primary grain supply, a culture
 that was farming organized territory before the Ridge Countries had permanent settlements.
-Calyx borders Atrament to the west, Ocipheus to the southwest across a low mountain range,
-and grades into borderland steppe to the east where the Cauld's authority has always been
-thinner. Their membrane site is in the agricultural heartland — not dramatic ground, not
-defensible, simply the richest food-producing territory the Cauld contains.
+Calyx borders Atrament to the west, the ungoverned southern ridge country to the southwest,
+and grades southeast toward the Balkan approaches and The Pass — the only crossing between
+the Cauld and the Sinter territory beyond. Their membrane site is in the agricultural
+heartland — not dramatic ground, not defensible, simply the richest food-producing territory
+the Cauld contains.
+
+**The Pass — Bosphorus Strait.** The narrow strait — seven hundred meters at its narrowest
+point — that separates the Cauld's eastern boundary from the Sinter territory beyond. The
+only practical crossing between the two continents: fortified towers on the Cauld-side (western)
+bank, naval patrol boats on the water, and Eirene's Gate — the Vigil checkpoint named
+for the last Sinter Champion who died at this location in Year 1081. The Pass is not a
+House territory. It is administered by the Order of the Watch under Liturgy charter. Crossing
+it in either direction without authorization has not been attempted successfully in living
+memory. The strait is the barrier. Humans patrol it.
 
 ---
 
@@ -824,14 +839,17 @@ absorption preserves the residue of what it consumed.
 
 #### House Sinter — The House That Was Unmade
 
-Sinter occupied the central alpine valley — the Switzerland analog, a high enclosed basin
-ringed by mountain ridges, positioned at the geographic center of every other House's
-territory. Atrament bordered them to the north and west. Vierna to the west and south.
-Ocipheus through the southern passes. Calyx across the eastern low range. To attack Sinter
-required crossing someone else's land first. This geographic fact made them the only House
-in the Cauld's history that no other House could reach without permission. They built their
-entire institutional character around the immunity this gave them: they were neutral, not
-because they chose to be peaceful, but because war was structurally unavailable to them.
+Sinter occupied the eastern continental landmass — the Anatolia/Asia Minor analog, a vast
+territory that began at the eastern bank of The Pass and extended southeast for hundreds of
+kilometers. Calyx bordered their western approaches. Every other House reached them only
+through The Pass or not at all. To attack Sinter by land required crossing The Pass first,
+under Sinter's observation from the eastern bank. This geographic fact made them the only
+House in the Cauld's history that no other House could reach without permission. They built
+their entire institutional character around the immunity this gave them: they were neutral,
+not because they chose to be peaceful, but because war was structurally unavailable to them.
+They also held The Pass, which meant every House's eastern trade and military movement
+required their consent. The neutrality was not passive. It was the most sophisticated
+geopolitical tool in the Cauld.
 
 They became the Peacemakers. Sinter arbitrated disputes between Houses before the Liturgy
 formalized that role. They hosted negotiations that no other territory could host without
@@ -850,54 +868,53 @@ like water moves — continuously, without rest, without the fixed-boundary beha
 sites. Sinter's practitioners had spent three hundred years learning how to work a membrane
 that never stopped.
 
-**The Meteor Event (Year 1079).** A bolide struck the center of the Sinter valley with no
-warning, in the early morning of the fifth day of winter. The impact did not kill the House.
-It unmade the ground the House stood on.
+**The Meteor Event (Year 1079).** A bolide descended vertically onto the Sinter heartland —
+not an object that drifted in from the horizon but something that fell straight down, in the
+early morning of the fifth day of winter, like a weight dropped from directly above. No
+approach-light. No warning from the sky's edge. The impact did not kill the House. It unmade
+the ground the House stood on.
 
-The immediate destruction was catastrophic but survivable — Sinter's valley communities had
-enough warning from the impact's approach-light to evacuate toward the mountain passes. The
-deeper consequence was geological and permanent. The bolide punched through the alpine
-foundation rock at the exact coordinates where the membrane's underground distribution was
-thickest — not one installation's basement, but the geological substrate that the entire
-valley Scrywell array had been anchored to for three hundred years. When the rock fractured,
-the fractures ran along the membrane's underground paths. The membrane did not separate from
-the damaged substrate. It poured through it.
+The immediate destruction was catastrophic but survivable — Sinter communities had enough
+time after impact to evacuate westward through The Pass. The deeper consequence was not
+geological but biological and permanent. The bolide did not simply devastate the surface. It
+planted something into the rock itself — alien biology that began metabolizing the stone from
+the impact point downward. Dissolving it. Restructuring it. Eating.
 
-The magma flows began on the third day. They have not fully stopped. The valley floor is,
-in Year 1700, a landscape of cooling and re-cooling stone interrupted by active seismic
-venting and a dozen persistent lava tubes whose outlets have been moving slowly outward for
-six hundred years. The membrane cracks — the rupture points where the bolide's fracture
-lines broke the Scrywell array's containment — leak uncontrolled Sphere access at
-ground level. No apparatus governs what comes through. No Lector administers what emerges.
+The Sinter territory is not a surface scar. It is a wound that has been rotting into the
+earth like a cavity in a tooth, the rock giving way in layers, the walls pulling back and
+darkening and becoming something that is no longer rock. By Year 1138, the cavity is miles
+deep and expanding. The membrane cracks — the rupture points where the impact broke the
+Scrywell array's containment — leak uncontrolled Sphere access at ground level. No apparatus
+governs what comes through. No Lector administers what emerges.
 
 What emerges is everything the controlled Scrying process keeps orderly: raw Gifted matter
 in unguided quantities, fauna from Spheres that no catalogue has reached, the unmediated
 output of a membrane that was never quiet even when contained and is now operating without
-containment across a zone thirty kilometers wide and expanding.
+containment across a territory that grows larger every year.
 
-**The Great Quarantine.** The six surviving Houses established the joint quarantine within
+**The Great Vigil.** The six surviving Houses established the joint Vigil within
 three years of the Meteor Event. This is the only act in the Cauld's history that all
 surviving Houses have signed simultaneously, regardless of coalition alignment, regardless
-of active war between them. The Quarantine Compact (Year 1082) established:
+of active war between them. The Vigil Compact (Year 1082) established:
 
-- Vierna, Ocipheus, and Atrament take primary responsibility for the Quarantine Watch:
-  rotating patrols drawn from soldiers of all Houses that man every natural pass, approach
-  corridor, and descent route around the Sinter mountain margin. The mountains are the
-  barrier; the Watch is the presence at the points where the mountains permit crossing.
-- Pallor, Lacerta, and Calyx provide monetary assessment and supply: quarterly contributions
-  to the Wall's maintenance, emergency response reserves, and specialist labor contracts
+- Vierna, Ocipheus, and Atrament take primary responsibility for the Vigil Watch:
+  fortified positions on both banks of The Pass, naval patrol boats on the strait, and
+  rotating infantry at Eirene's Gate and the secondary crossings. The strait is the barrier;
+  the Watch is the force that holds it.
+- Pallor, Loera, and Calyx provide monetary assessment and supply: quarterly contributions
+  to The Pass's maintenance, emergency response reserves, and specialist labor contracts
 - The Liturgy administers the Quarantine as its institutional mandate, separate from its
-  House-affiliated functions; the Quarantine Administration is the Silence's most public role
+  House-affiliated functions; the Vigil Administration is the Silence's most public role
 
-The Quarantine Watch is the only place in the Cauld where enemies patrol the same mountain
-line without fighting. A Fjorheim conscript and a Lacerta intelligence operative may be
-posted to neighboring pass-points during a period when their Houses are at active war on
-every other front. They do not fight. The Quarantine Compact's terms include a specific
+The Vigil Watch is the only place in the Cauld where enemies hold the same fortified
+line without fighting. A Pallor conscript and a Loera intelligence operative may be posted
+to neighboring stations on The Pass during a period when their Houses are at active war on
+every other front. They do not fight. The Vigil Compact's terms include a specific
 prohibition on inter-House violence within the Sinter patrol perimeter, enforced not by
-any individual House but by the Liturgy's Quarantine Administration. The Giants — the
+any individual House but by the Liturgy's Vigil Administration. The Giants — the
 transformed Champions who escort Ocipheus ships through Vierna's waters — also hold
 permanent posts at the four largest breach-risk corridors. They are the only force in
-the Cauld that the Quarantine Administration commands directly.
+the Cauld that the Vigil Administration commands directly.
 
 **The Descents.** The cracked valley is the richest concentration of location-specific Sphere
 access in the Cauld. No other territory holds what the Sinter zone holds. Houses have been
@@ -911,13 +928,13 @@ describe, on their return, having perceived the membrane as something that was a
 them before they found it.
 
 What comes out of the cracks without being brought out — the uncontrolled emergence events —
-is what the Quarantine Watch exists to contain. The quarantine record documents 1,847 containment
+is what the Vigil Watch exists to contain. The quarantine record documents 1,847 containment
 events between Year 1082 and Year 1700. Of those, 203 resulted in material that escaped the
 Sinter line before being neutralized. The record is specific about what escaped and vague about what
-happened to it afterward. The Quarantine Administration keeps a separate ledger. The ledger
+happened to it afterward. The Vigil Administration keeps a separate ledger. The ledger
 is sealed.
 
-**Sinter's surviving people.** Most evacuated through the eastern passes into Calyx territory.
+**Sinter's surviving people.** Most evacuated westward through The Pass into Calyx territory.
 Their practitioners — the diplomatic membrane-readers, the arbitration specialists — dispersed
 to Vierna primarily, which absorbed the Sinter scribal tradition wholesale and built the
 institutional framework of the Deep Archive partly from Sinter's original dispute-resolution
@@ -925,8 +942,8 @@ records. This is why Vierna's record of the Sinter Event is more complete than t
 official account. Vierna received the survivors. Vierna received the records. Vierna made the
 institutional calculation that knowing what happened at Sinter is worth more than sharing it.
 
-The conspiracy that circulates quietly in taverns near the Wall, among soldiers who have been
-on long Quarantine rotations and have had time to think: the Liturgy knew the bolide was
+The conspiracy that circulates quietly in garrison taverns near The Pass, among soldiers who
+have been on long Quarantine rotations and have had time to think: the Liturgy knew the bolide was
 coming. They observed it through a Sphere that showed the impact's origin trajectory. They
 did not warn Sinter. When the House of Peacemakers was destroyed, the role of arbiter — the
 neutral administrative function that Sinter had held and the Liturgy had always coveted —
@@ -1003,11 +1020,11 @@ the House never reconstituted itself as an independent institution. It became a 
 administrative body — not a named House with a Seat and a Keeper but a managed site under
 shared administration. The Silence absorbed it.
 
-The House that sent nothing during Orvaine's collapse is House Lacerta. This is four hundred
-years old. It is in the record. Lacerta knows it is in the record and has never disputed it
+The House that sent nothing during Orvaine's collapse is House Loera. This is four hundred
+years old. It is in the record. Loera knows it is in the record and has never disputed it
 or apologized for it. Their position, when pressed, is that the record is correct and the
 decision was the correct one at the time: their own resources were insufficient to spare
-and the political calculation argued against exposure. This is Lacerta's institutional
+and the political calculation argued against exposure. This is Loera's institutional
 character in its earliest documented form. It was what they were before they had a name for
 what they were.
 
@@ -1281,15 +1298,15 @@ it. The wound that is known and remains unnamed because naming it would require 
 
 ---
 
-#### House Lacerta — The Paranoid Machine
+#### House Loera — The Paranoid Machine
 
-Lacerta is the westernmost House in the Cauld. Their installation sits on coastal cliffs
+Loera is the westernmost House in the Cauld. Their installation sits on coastal cliffs
 above the Atlantic analog — the great western ocean that the Cauld has no record of anyone
 successfully crossing. The sea is behind them. The rest of the Cauld is ahead of them. This
 geographic position, at the edge of the known map, shaped everything that followed.
 
-Lacerta's founding is the ugliest in the Compact record. They did not send help to Orvaine
-when Orvaine was dying. This is documented. This is known. Lacerta's administration, across
+Loera's founding is the ugliest in the Compact record. They did not send help to Orvaine
+when Orvaine was dying. This is documented. This is known. Loera's administration, across
 four hundred years, has never apologized for it, disputed it, or lost sleep over it in any
 way that left a record.
 
@@ -1308,9 +1325,9 @@ administer together. They did. The institutional capacity for managing people wh
 betray each other while appearing not to — this was the founding skill, developed on the
 inside, applied later to the outside.
 
-The sea-facing position gave Lacerta something no other House had: the knowledge that there
-was nothing behind them. The Cauld ends at the western cliffs. Whatever comes at Lacerta
-comes from one direction only. This is a defensible position and a contained one. Lacerta's
+The sea-facing position gave Loera something no other House had: the knowledge that there
+was nothing behind them. The Cauld ends at the western cliffs. Whatever comes at Loera
+comes from one direction only. This is a defensible position and a contained one. Loera's
 intelligence apparatus has always known exactly where its threats originate. This makes
 them very good at it. It also means the horizon of their imagination ends at the cliff.
 
@@ -1318,7 +1335,7 @@ Managing a coalition of people who do not trust each other teaches specific skil
 learn to have information before you need it. You learn to run multiple working hypotheses
 about what any given person wants. You learn to design systems that function even if any
 individual component is working against the system, because you expect at least one component
-to be doing so at all times. Lacerta became the Cauld's intelligence institution not because
+to be doing so at all times. Loera became the Cauld's intelligence institution not because
 anyone planned it but because these skills — developed internally, for internal purposes —
 turned out to be applicable externally.
 
@@ -1327,52 +1344,47 @@ they use to route tainted supply into enemy supply chains also route their own s
 They have run this operation long enough that provenance is no longer traceable — their
 own people cannot tell a clean batch from a compromised one with certainty. The Lectors
 who flagged this filed reports. The Silence did not respond. Whether the Silence did not
-respond because it agreed with Lacerta's methodology, because it did not understand the
-reports, or because it has made a calculation about what exposing Lacerta would cost —
+respond because it agreed with Loera's methodology, because it did not understand the
+reports, or because it has made a calculation about what exposing Loera would cost —
 this is the question none of the other Houses have been able to answer and all of them
 are trying to.
 
-**What Lacerta represents:** The institution that treats uncertainty as the operating
+**What Loera represents:** The institution that treats uncertainty as the operating
 condition and builds systems for it. The paranoid machine at the edge of the world, watching
 one direction, very good at what it watches for.
 
 ---
 
-#### House Pallor — The Survivors
+#### House Pallor — The Warrior North
 
-Pallor is an island House — the Great Britain analog, separated from the mainland by a cold
-channel narrow enough to see across on a clear day and wide enough that it has defined
-everything about how Pallor thinks. You cannot move an army to them without ships. You cannot
-threaten them from the same direction twice. The island does not prevent attack. It changes the
-cost calculation of attack in a way that has historically kept the number of serious attempts
-low.
+Pallor is a fjord House — the Scandinavia analog. Long fjord coastlines, pine and birch
+interior, glacial plateau, winters that have shaped every institution the House has ever
+built. You cannot threaten them from the same direction twice. The sea and the cold do not
+prevent attack. They change the cost calculation of attack in a way that has historically
+kept the number of serious attempts low.
 
-The island culture was not unified before the Compact. Three regional peoples occupied the
-island — a northern highland culture, a central lowland culture, and a southern maritime
-culture — and they had been contesting the same territory for as long as the record goes.
-Their membrane site, on the island's central upland, was the only thing all three groups
-agreed was worth sharing: too valuable to let one group hold, too dangerous to fight over
-indefinitely. The Compact gave them a framework for that sharing. The framework became the
-House. The House is still internally divided along those three founding lines, quietly,
-in the way institutions are divided when the division predates the institution.
+The Pallor succession is the oldest martial tradition in the Cauld: the Warrior King rules by
+right of combat lineage, confirmed by the Long Seat, the House's ancient advisory body. The
+Long Seat does not command. It remembers. Every warrior king who has ever ruled Pallor is in
+the Long Seat's memory — their victories, their errors, their succession decisions. When the
+Long Seat speaks, it speaks with the weight of everyone who came before. The Warrior King
+acts. The Long Seat ensures those actions are weighed against the record.
 
-Pallor is the youngest House in the Compact. They were admitted last — not because their
-site was marginal but because the island's three-way deadlock meant no single leadership
-could present itself as the House's authority. The Compact finally admitted them when all
-three regional leaderships jointly signed the petition. Vierna brokered this. Vierna
-brokered most things that required patience.
+Three hundred years ago, Pallor absorbed the failing culture to its south — a fjord people
+whose older records called Fjorheim — when that culture's succession fractured beyond repair.
+No Compact amendment. No formal transfer. Pallor's Warrior King rode the contested territory
+with a small force and was not challenged, which was itself a statement. What had been two
+coasts is now one House. Pallor holds the Muster Chamber: the apparatus calibrated for
+piercing, which Fjorheim built and which Pallor has used selectively. The Warrior King
+who made the absorption is three generations dead. The Muster Chamber is not spoken of
+in formal session.
 
-The secondary history — the destroyed coastal site, the refugee period — comes from the
-southern maritime culture within the island, which genuinely did lose an earlier mainland
-site before retreating to the island. This group carried practitioner knowledge from the
-destroyed mainland location and brought it to the island's installation. This is why Pallor's
-apparatus has capabilities no one expected from a mid-tier site. The southern culture brought
-techniques from a richer site. The installation runs better than it should.
-
-Pallor's Warrior King is the longest-serving in the current map because the island culture
-produces people who wait. The channel taught them to wait. Whatever crosses the channel comes
-in view before it arrives. You have time to decide what to do about it if you have already
-been watching.
+Three Points: where the Vierna coast, the Atrament river basin, and Pallor's southern sea
+access converge, approximately where the great river meets the North Sea. Neutral ground by
+longstanding agreement — no House can station military forces there, and all three Houses
+benefit from this arrangement more than they would benefit from any one of them controlling
+it. Pallor's interest at Three Points is primarily maritime: the shipping lanes that connect
+their fjords to Vierna's river ports.
 
 The Champion who is affiliated with Pallor but not sworn to it came there for reasons they
 have not explained. They were elsewhere for a long time. They are here now. The Warrior King
@@ -1380,9 +1392,9 @@ has made the assessment that whatever the Champion is waiting for, it is the sam
 Warrior King is waiting for. They have been at the same map table for eleven years without
 naming what they're both watching.
 
-**What Pallor represents:** The institution that waits without urgency. The island people
-who have survived by knowing that whatever is coming is already visible, if you have been
-watching long enough.
+**What Pallor represents:** The institution that endures. The warrior culture that has
+survived cold, absorption, and watching the Cauld's coalitions cycle through three generations
+by outlasting everything that moved against it.
 
 ---
 
@@ -1392,7 +1404,7 @@ watching long enough.
 
 ### House Atrament — The Refinery Seat
 **Coalition status:** Coalition anchor · **Domain:** Catalyst refining
-**Territory:** Central continental — Germany analog; Rhine and Danube river valleys; forested interior; volcanic ridge in the west. Borders Vierna to the west, Fjorheim to the north, Ocipheus to the south across the Alpine ridge, Calyx to the east along the river line.
+**Territory:** Central continental — Germany analog; Rhine and Danube river valleys; forested interior; volcanic ridge in the west. Borders Vierna to the west, Pallor to the north across the sea channel, the ungoverned southern ridge country to the south, Calyx to the east along the river line.
 
 The Forge Hearth — oldest active apparatus in the Cauld. Stretching the membrane at the same
 coordinates for generations. Whether the membrane fully recovers between sessions is not a
@@ -1413,7 +1425,7 @@ Liturgy has not corrected this. The silence is the arrangement.
 
 ### House Ocipheus — The Vigil Seat
 **Coalition status:** Coalition anchor · **Domain:** Thin-membrane access
-**Territory:** Southern peninsula — Italy analog; Alpine ridge country in the north; warm limestone plateau descending to the inland sea. Borders Atrament to the north, Vierna through mountain passes to the northwest, Calyx to the northeast.
+**Territory:** The island — Britain analog; separated from the mainland by a narrow channel. Rocky highland north, softer lowland south, maritime culture throughout. The Vigil is the knightly order; the Canon Immaculate governs from the ancient seat at the island's center. Channel crossing east to Vierna.
 
 Ocipheus Station — oldest installation in the Cauld. Named in historical record more than any
 other. Long-tenure vigil operators stationed here for decades sometimes describe the membrane
@@ -1450,31 +1462,16 @@ does not know. The reports continue. So does she.
 
 ---
 
-### House Fjorheim — The Muster Seat
-**Coalition status:** Opposition bloc · **Domain:** Military conscription
-**Territory:** Northern fjords — Scandinavia analog; long fjord coastlines, pine and birch interior, glacial plateau. Borders Atrament to the south; Pallor across the North Sea channel to the west.
-
-The Muster Chamber — calibrated specifically for piercing. When volunteer intake falls short,
-before planned offensives, when numbers need supplementing, the membrane gets breached and
-soldiers come through. The apparatus here is specialized. The capability is not publicized.
-
-Fjorheim holds the largest standing Myrmidon force in the current coalition map. A notable
-fraction arrived through the membrane. The oath is administered after arrival, before the new
-conscript has enough language to understand what they are swearing. The service record opens.
-The name of the origin Sphere is not in it.
-
-**The fault line:** Their Warrior King has been watching the same soldiers for thirty years.
-She knows which ones learned Cauld language faster than a person could. She knows the ones
-who, in their first months, looked at the sky the wrong way — not like someone who had always
-known what sky looked like here, but like someone recalibrating. She has not filed anything.
-She has made the calculation that telling costs something. After thirty years, telling would now
-mean explaining why she waited thirty years to tell.
+### House Fjorheim — ABSORBED {#SS-CAULD-FJORHEIM-RETIRED}
+*Fjorheim was absorbed into Pallor three hundred years ago. This entry is retained for
+historical reference only. The Muster Chamber and Fjorheim's conscription apparatus now
+operate under Pallor authority. See House Pallor.*
 
 ---
 
 ### House Vierna — The Archive Seat
 **Coalition status:** Opposition bloc · **Domain:** Sphere cataloguing
-**Territory:** Vine country — France analog; broad agricultural interior, Atlantic coast to the west, mountain border to the south. Borders Atrament to the east, Lacerta to the southwest, Ocipheus through the southern passes. Channel crossing north to Pallor.
+**Territory:** Vine country — France analog; broad agricultural interior, Atlantic coast to the west, mountain border to the south. Borders Atrament to the east, Loera to the southwest, the ungoverned southern ridge country to the southeast. Channel crossing north to Ocipheus.
 
 The Deep Archive — broadest Sphere catalogue of any House. More documented access points than
 any installation except Ocipheus Station. Where Ocipheus has depth at specific coordinates,
@@ -1493,7 +1490,7 @@ map or the most naive. No one has decided which yet.
 
 ### House Calyx — The Granary Seat
 **Coalition status:** Unaligned · **Domain:** Territory and supply
-**Territory:** Eastern plains — Danube basin analog; broad agricultural lowlands east of Atrament, running southeast toward Ocipheus's border; grades into borderland steppe to the east. Borders Atrament to the west along the contested river line, Ocipheus to the southwest across a low range.
+**Territory:** Eastern plains — Danube basin analog; broad agricultural lowlands east of Atrament, running southeast toward The Pass. Borders Atrament to the west along the contested river line, the ungoverned southern ridge country to the southwest, and grades southeast toward the Balkan approaches and Eirene's Gate.
 
 Calyx Station — sits on territory rich in agricultural land and one of the highest
 monster-predator incursion corridors in the Cauld. The Scrying installation here is not the
@@ -1509,11 +1506,11 @@ and no one in the House has been willing to read it.
 
 ---
 
-### House Lacerta — The Cutting Seat
+### House Loera — The Cutting Seat
 **Coalition status:** Opposition bloc · **Domain:** Covert operations
 **Territory:** Western Coastal Reach — Atlantic-facing cliff coast, warm, dry, Iberian analog. The westernmost House; sea at their back.
 
-The Lacerta Chamber — cliff-top installation, stone facing the ocean. Modest membrane apparatus
+The Loera Chamber — cliff-top installation, stone facing the ocean. Modest membrane apparatus
 by House standards; the Sphere junctions accessible from the western coast are real but not the
 richest in the Cauld. Their strategic value is not what they can reach through the membrane but
 what they can move along the ground: information, contaminated supplies, people who are supposed
@@ -1522,11 +1519,11 @@ to be somewhere else. The installation matters less than the networks built arou
 Their operational advantage is not what they can Scry but what they can deny others: tainted
 Catalyst supplies, assassinated Transmuters. A House that loses its senior Transmuters risks
 producing monsters from its own loyal soldiers when the next dose is administered by an
-undertrained practitioner with a compromised supply. Lacerta weaponizes this deliberately.
+undertrained practitioner with a compromised supply. Loera weaponizes this deliberately.
 
 **The fault line:** They have run enough tainted operations that their own Catalyst supply chain
 is compromised. The same methods used to contaminate enemy supplies create the conditions for
-contamination to travel. The provenance of any given Catalyst batch in Lacerta's inventory is no
+contamination to travel. The provenance of any given Catalyst batch in Loera's inventory is no
 longer fully traceable. Their Lectors know. They have flagged it through internal channels. The
 Silence has not responded. Yet.
 
@@ -1534,7 +1531,7 @@ Silence has not responded. Yet.
 
 ### House Pallor — The Long Seat
 **Coalition status:** Unaligned — courted by both blocs · **Domain:** Champion affiliation
-**Territory:** The island — Great Britain analog; separated from the mainland by a cold channel. Rocky highland north, softer lowland south, maritime culture throughout. Channel crossing south to Vierna; North Sea crossing east to Fjorheim.
+**Territory:** Northern fjords — Scandinavia analog; long fjord coastlines, pine and birch interior, glacial plateau; warrior-king ruled. Absorbed Fjorheim territory three centuries ago. Sea channel south to Three Points (Vierna/Atrament border convergence); channel crossing southwest to Ocipheus.
 
 Pallor Station — mid-tier apparatus. Strategically valuable not for what it can reach through
 the membrane but for who is affiliated with it. Their Warrior King has been at the map table
@@ -2050,13 +2047,13 @@ agreeing to. The Liturgy calls this "efficient processing."
 
 ## Order of the Watch {#SS-CAULD-ORDER-WATCH}
 
-The formal administrative body of the Sinter quarantine. A Liturgy sub-organization. Not a House
+The formal administrative body of the Vigil. A Liturgy sub-organization. Not a House
 military force — the Order draws personnel from all Houses under Liturgy charter, operates under
 the Greater Good compact, and answers to the Canon Immaculate rather than any Warrior King.
 
 **Function:**
-- Staffs and coordinates the Quarantine Watch patrols around the Sinter mountain margin
-- Administers the Descent Corps (expeditionaries who enter Sinter)
+- Staffs and coordinates the Vigil Watch at The Pass and secondary crossing points
+- Administers the Descent Corps (expeditionaries who enter Sinter territory)
 - Issues crossing permits for legitimate research and recovery operations
 - Records breach events, creature incursions, and membrane anomalies along the Sinter line
 
@@ -2068,10 +2065,10 @@ Specialists (permanent staff with deep Watch knowledge). A Watch veteran's most 
 and containment. Approximately 40% full-return rate. What they find inside is classified at the
 Order level; only summary reports reach the Canon.
 
-**Eirene's Gate:** Primary northern checkpoint. Named for Eirene, the last Sinter champion,
-who died at this location in Year 1081, two years after the Meteor Event. The other Houses built
-the Gate after Sinter became impassable. The naming is a courtesy to a House that no longer
-exists to object.
+**Eirene's Gate:** The primary checkpoint on the Cauld-side (western) bank of The Pass. Named
+for Eirene, the last Sinter Champion, who died at this location in Year 1081, two years after
+the Meteor Event. The other Houses built the Gate after The Pass became the quarantine line.
+The naming is a courtesy to a House that no longer exists to object.
 
 ---
 
@@ -2172,7 +2169,7 @@ specific antidote. Dame Lyra's service blade is this pattern.
 that makes it resistant to Catalyst-adjacent reactions — specifically resistant to Transmutation
 acceleration and to some Eater of Monsters attacks. Battle rigs are plated with this.
 
-**Lacerta layered shell:** Light armor with a shear-thickening compound woven into fabric layers.
+**Loera layered shell:** Light armor with a shear-thickening compound woven into fabric layers.
 Normal flexibility under slow movement; hardens on sharp impact. Looks like nothing. Tavar wears
 this under his coat.
 
@@ -2313,12 +2310,12 @@ but none of them are rideable or domesticated.
 
 | Mode | Speed | Notes |
 |---|---|---|
-| **Airship** (*Meridian* class) | Fast | WW2-Sphere flying-boat hybrid; water-landing capable; Lacerta-registered; requires Scried petroleum fuel |
+| **Airship** (*Meridian* class) | Fast | WW2-Sphere flying-boat hybrid; water-landing capable; Loera-registered; requires Scried petroleum fuel |
 | **Atrament rail** | Medium-fast | Fixed Rhine/Danube-analog valley routes; military and civilian mix; Scried 19th-century technology |
 | **Heloth courier** | Medium | Single-rider; shoulder housing; all terrain; bone-jarring; fast in open country |
 | **Heloth-drawn transport cart** | Slow-medium | Road-bound; commercial; several passengers plus freight |
 | **River barge** | Slow | Vierna interior primarily; commercial; primary cover transport |
-| **Sea vessel** | Slow | Pallor and Lacerta coastal operations |
+| **Sea vessel** | Slow | Pallor and Loera coastal operations |
 | **Walking** | Slowest | Universal; mountain pass default |
 
 **Slave labor:** Where Heloths cannot work (fine construction, dockwork, interior hauling,
