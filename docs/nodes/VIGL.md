@@ -374,18 +374,10 @@ it, one member per leg, each showing the system at work on a different kind of p
   the Liturgy's code, or any House's code. It is his.
 - **Why the nav embargo:** He ran a route the Liturgy wanted run through their chartered
   channels. He refused. That's the story he tells. There may be more to it.
-- **Weapons:** Two Loera hatchets (short, curved, weighted for throwing OR close-quarters
-  chopping — not an either/or; Loera naval tradition trains both in the same motion).
-  Two Loera daggers (true daggers; point-work, not slashing; worn at the hip). He
-  throws the hatchets to open distance, close distance, or force a cover movement, then
-  follows into the daggers. The transition from thrown weapon to close blade is the core
-  of the technique — he is already inside your reach when you are still tracking the
-  hatchet. He carries spares: two more hatchets in the coat's lining, two more daggers
-  in the boot. He does not run out.
-  For range and finishers: a Loera-manufacture percussion pistol, single-shot,
-  long barrel for accuracy, Catalyst-accelerant round. He opens engagements from
-  advantage with it and closes them when the outcome is decided. He does not waste
-  rounds on uncertain targets.
+- **Weapons:** Loera-manufacture percussion pistol (single-shot, long barrel, Catalyst-
+  accelerant round). One shot. He makes it count. He does not carry a secondary blade —
+  if the pistol has fired and he is still standing, he has already positioned himself
+  somewhere he does not need one.
 - **How he enters:** In Atrament custody at a garrison east of Schmalburg — impounded for
   running an embargoed route without Liturgy charter. Lyra's party breaks into the garrison
   to steal the *Meridian*. They find Tavar in the brig. They take him with the airship.
@@ -614,6 +606,10 @@ has come to love all three. That is what makes the confrontation tragic rather t
   He knows the Long Seat's position on Sinter from inside the House that holds it. He is the one
   who can say: *the eighth theory belongs to us too. We grew up with it.* He does not say this
   until Lyra needs to hear it.
+- **Weapons:** Two Calyx-pattern short daggers, worn reversed at the lower back — draw
+  crosses both hands simultaneously. Not throwing daggers; close-work, inside grappling
+  range. The blink puts him there. He trains for the moment after the blink, not the
+  approach.
 - **Register:** Young, careful, precise in a way that comes from not trusting his first instinct.
   He asks questions. Esvane answers them. Petra tells him to stop asking questions. Aldric
   doesn't notice he's asking them, which is the most revealing thing about Aldric.
