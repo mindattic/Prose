@@ -49,10 +49,9 @@ stolen Relic weapon — and losing, along the way, the certainty that made her w
 - **Act 1** (Ch.1–~9): Ocipheus → Narrow Sea → Vierna (Rowe found) → Three Points
   The Relic is four days ahead. Act 1 ends at Three Points.
 - **Act 2** (~Ch.10–21): Three Points → Atrament (Kressida joins; Meridian stolen; Kressida pilots)
-  → eastern plains (Blink Thieves intercepted; Esvane and Petra killed; Wren blinks with the Relic;
-  Wren returns and joins when Orim tells him what the Relic has seen)
-- **Act 3** (~Ch.22–29): The Balkan approach → Eirene's Gate / The Pass → Sinter (climax)
-  → return to Ocipheus
+  → Calyx → Pallor / Caer Glas Moor (Blink Thieves intercepted; Esvane and Petra killed;
+  Wren blinks with the Relic; Wren returns and joins when Orim tells him what the Relic has seen)
+- **Act 3** (~Ch.22–29): Eirene's Gate / The Pass → Sinter (climax) → return to Ocipheus
 
 Running east ahead of her: three thieves with the Oculus Memoriae, four days ahead,
 heading east. Lyra does not know who they are. She knows their number, their direction,
@@ -567,7 +566,7 @@ discovers who all three were. That is what makes the confrontation land.
   thick. He cannot blink through iron; he cannot carry more than one hand's worth. The Blink
   Thieves are named for him. He is why they could leave through the south coast of the Ocipheus
   archive without triggering a sealed gate. The box was in his arms. He walked through the wall.
-- **At the eastern plains intercept:** Lyra's party catches the squad in the eastern plains. Esvane and
+- **At the Caer Glas intercept:** Lyra's party catches the squad on the Pallor moor. Esvane and
   Petra go down. Wren blinks — through a stone building, a courtyard wall, into an adjacent
   field — with the Yggdra box in his arms. He is alive. The Relic is with him. He is alone
   for the first time since the theft.
@@ -642,31 +641,54 @@ is on the moor.
 ## 3. The Journey Arc {#SS-VIGL-3}
 
 ### Geography in order:
-1.  Ocipheus Station, the island (start and end) — Lyra departs alone; the Relic is four days ahead
+1.  Ocipheus Station (start and end) — Lyra departs alone; the Relic is four days ahead
 2.  Channel crossing to Vierna
 3.  Bressant, Vierna (Veil River; Rowe found)
 4.  Three Points neutral ground (Act 1 ends here) — intel gathered: impounded airship
     (*Meridian*) at Atrament garrison east of Schmalburg
-5.  Vierna-Atrament border / rail
+5.  Vierna-Atrament border
 6.  Schmalburg, Atrament (raid; Kressida joins; Ardea's death)
 7.  **Atrament military base** — mission: steal the *Meridian*; Kressida's rig handles the
     compound; Kressida pilots the *Meridian* out — she does not announce she can fly it,
     she just gets in. The ground operation becomes an aerial operation without discussion.
-8.  Atrament volcanic ridge / Forge Hearth approach (aboard the *Meridian*; faster than overland)
-9.  Eastern plains — aerial pursuit; Blink Thieves spotted and intercepted from the air;
-    Esvane and Petra killed; Wren blinks with the Relic; Orim finds Wren alone in a field;
-    Wren returns the Relic and joins the party
-10. Balkan approaches — Kressida flies them southeast toward The Pass
-11. Eirene's Gate / The Pass (Bosphorus) — Vigil checkpoint; Rowe testifies
+8.  Forge Hearth (aboard the *Meridian*; faster than overland; membrane thin here)
+9.  Calyx — the plains; monster corridors; the Relic's trace grows warmer; Orim reads it
+10. **Pallor / Caer Glas Moor** — the upland moor before the strait; aerial intercept;
+    Esvane and Petra killed; Wren blinks with the Relic; Orim finds Wren alone on the moor;
+    Wren returns the Relic and joins the party; Vaen steps out of the dark; party vs. Champion;
+    Aldric names Prelacze
+11. Eirene's Gate / The Pass — the strait; Vigil checkpoint; Rowe testifies
 12. Sinter zone — the aperture; climax
 13. Return airship run to Ocipheus Station; Canon confrontation
+
+### The membrane at each threshold — what each kingdom Scrys {#SS-VIGL-3b}
+
+**The thematic spine:** Every kingdom uses the membrane. Every kingdom is strip-mining other
+realities. Sinter is not the exception — Sinter is the aperture where the other Spheres push
+back. By the time Lyra reaches the zone, she has seen six versions of what the Cauld actually
+is. The Relic is evidence of all of it.
+
+Orim has one dry observation per threshold. He does not editorialize. He notes. It is
+worse that way.
+
+| Kingdom | What they Scry | What Lyra sees | Orim's note |
+|---|---|---|---|
+| **Ocipheus** | Historical moments — Relics | Seven hundred years of stolen history behind glass in the archive | "Every Relic is a theft. The Liturgy prefers the word 'retrieval.'" |
+| **Vierna** | People — Myrmidons conscripted from Spheres | The intake desk; the form; Rowe's world on a ledger | "They get approximately one in ten. The rest don't survive the crossing." |
+| **Atrament** | Materials + creatures — feeds the furnaces | The Heloth yards at night; something that is not slag cooling in the troughs | "Sphere biology processes differently at temperature. They found that out early." |
+| **Calyx** | Flora + fauna — agricultural Scrying | Monster corridors where the farms used to be | "Calyx prefers the term 'managed re-wilding.'" |
+| **Pallor** | Infusion Catalyst + Champions | The moor-hounds facing the Relic; Vaen | "The first infusions came through a Pallor aperture. They never asked what they cost the source Sphere." |
+| **Sinter** | Nothing — Sinter erupts outward | The aperture | "Yes. Now you understand." |
+
+---
 
 ### The living history at each threshold:
 - **Vierna:** Archival Gate at Bressant (Arnault d'Archival Year 312); Treachery Quarter; *L'Accord* barge; fog off the lowlands
 - **Three Points:** neutral ground since the early Compact; no House stations forces here; the place where three powers agree the only thing worse than sharing is fighting. **Act 1 ends here.** The party learns here that an impounded airship — the *Meridian* — sits at an Atrament garrison east of Schmalburg.
 - **Atrament:** Schmalburg named for the Battle of the Small Fortress Year 701; Ignamund Unburnt's *Ewige Flamme* in the capital; Forge Hearth Hearth-One through Hearth-Eleven. **Wylla Mother of Men** — a Cauld invocation Lyra overhears an officer give to his column before they march south-east toward The Pass. The troops repeat it like a ward: *Wylla Mother of Men.* Not a prayer exactly — more like a name you say out loud to mean *I know where I come from.* Who or what Wylla is is not explained to the reader. That is deliberate. Lyra files it and moves on.
-- **Calyx:** Danube plains; monster incursion corridors; people who grow food and hunt creatures are frequently the same people; the eastern plains grade toward the Balkan approaches
-- **The Pass / Eirene's Gate:** named for Eirene, last Sinter Champion, who died here Year 1081; *Sinter remembers even if we don't*; towers on both banks; the stamp; the departure log on ruled paper
+- **Calyx:** Great plains under wide sky; monster incursion corridors; people who farm the same land they hunt creatures on; Sphere fauna have been escaping into Calyx for generations — what Calyx calls "the monster problem" is what happens when agricultural Scrying goes uncontained
+- **Pallor:** Upland moor and fjord coast; fog that comes in fast; the heather that phosphoresces at night; no House insignia anywhere; Caer Glas Moor at the heart of it; the last ungoverned land before the strait
+- **The Pass / Eirene's Gate:** named for Eirene, last Sinter Champion, who died here Year 1081; *Sinter remembers even if we don't*; towers on both banks; the stamp; the departure log on ruled paper; the narrow water between the Cauld and everything else
 - **Sinter:** not a zone. A reckoning.
 
 ---
@@ -1041,8 +1063,8 @@ is permanently gone from the source Sphere's material record.
 actually is. The assumption that every House has a king in armor on a throne is wrong and lazy.
 - **Ocipheus** — governed by the Canon Immaculate (Prelacze). Liturgy institution, not a House
   monarchy. Canonical authority IS governance here. The island; the Arthurian knightly order
-  (The Vigil); Canterbury-like institutional weight. Caer Glas Moor is in the island's northern
-  highlands — a pre-Compact stone structure older than the Houses.
+  (The Vigil); the weight of seven hundred years of canonical record. The Relic has been at
+  Ocipheus Station since Year 397.
 - **Vierna** — military council / general staff. The commanding generals of the Myrmidon intake
   program and the conscript corps collectively hold authority. No single king. The closest thing
   is the Intake Commander — a rotating three-year post elected by the senior corps.
@@ -1052,11 +1074,13 @@ actually is. The assumption that every House has a king in armor on a throne is 
 - **Loera** — navigator's council / corsair assembly. Captains with independent standing
   convene in the Three-Lantern House at Sal Vento. Authority is earned by route-record and
   cargo volume.
-- **Pallor** — ungoverned warrior culture; Scandinavia/Pictish analog; fjord and moor country.
-  No formal kingdom, no Long Seat. Combat lineage governs by custom, not institution. Champions
-  are acknowledged, not crowned. Aldric operates as a Pallor knight but his title is recognition
-  of his line, not a formal appointment. The moor-hounds, the Vaen champion, and the Caer Glas
-  Moor are Pallor territory and culture.
+- **Pallor** — the last ungoverned territory before the strait. Upland moor and fjord coast;
+  phosphorescent heather at night; fog that arrives without warning. No House governance, no
+  Long Seat, no Compact institution. Warrior culture — Champions are acknowledged, not crowned;
+  combat lineage governs by custom. The Caerglas family and their ancestral vault at Caer Glas
+  Moor are here. The moor-hounds are native to a heathland Sphere Pallor has been Scrying for
+  generations. Vaen — the Pallor Champion — has held this territory for forty years. Pallor
+  does not petition; it sends Vaen.
 
 ---
 
@@ -1211,7 +1235,7 @@ that has no institutional name yet.
 
 **LOCK — The Vigil is The Pass, not a wall:** The Cauld calls it "the Vigil line" and "Vigil
 rotation" and "Vigil checkpoint" the same way soldiers call a border a border. There is no
-encircling structure. The Bosphorus Strait seals the approach — seven hundred meters of water
+encircling structure. The strait seals the approach — seven hundred meters of water
 at the narrowest point, with fortified towers on the Cauld-side bank and naval boats on the
 water. The patrol is the human element: soldiers rotating through the garrison at Eirene's
 Gate, bolt-action rifles on shoulders, ruled-paper departure logs, the stamp. "Crossing the
@@ -1278,7 +1302,8 @@ ending recontextualizes the whole. Each realm should feel like entering a new zo
 - **Vierna** — wintry military state; conscript culture; WW1 rifles in stone barracks; fog off the lowlands
 - **Three Points** — neutral ground; no House insignia on any wall; the smell of river-port commerce and quiet menace
 - **Atrament** — industrial thunder; the Forge Kingdom; factories that never stop; ember-fungi glow on the yards at night
-- **Calyx** — breadbasket and monster corridor; flat plains that offer nowhere to hide; people who farm the same land they hunt creatures on
+- **Calyx** — breadbasket and monster corridor; flat plains that offer nowhere to hide; people who farm the same land they hunt creatures on; the monsters are escaped Scrying imports
+- **Pallor** — the moor before the water; phosphorescent heather; fog that erases landmarks; Caer Glas vault in the dark; Vaen steps out of the moor and the world gets smaller
 - **The Pass** — Eirene's Gate; two fortified towers; the strait between everything safe and everything else; the departure log, the stamp, the walk to the boat
 - **Sinter** — not a zone. A reckoning.
 
