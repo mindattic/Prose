@@ -19,7 +19,7 @@ updated: 2026-07-12
 
 ## 0. What This Story IS {#SS-VIGL-0}
 
-The story of Dame Lyra T-044 of Ocipheus crossing the entire Cauld to recover her House's
+The story of Dame Lyra of Ocipheus crossing the entire Cauld to recover her House's
 stolen Relic weapon — and losing, along the way, the certainty that made her who she is.
 
 **Opening structure:**
@@ -100,23 +100,26 @@ at work on a different kind of person.
 
 | Character | House | Role | Age | Joins |
 |---|---|---|---|---|
-| Dame Lyra T-044 | Ocipheus (Templar) | Tank / POV | Early 30s | Start |
+| Dame Lyra | Ocipheus (Templar) | Tank / POV | Early 30s | Start |
 | Orim Zebulun | Calyx-born, independent | Scry Mage | Late 60s | Start |
-| Rowe / M-101 | Vierna (Earth, 1919) | Ranged DPS | Mid-30s | Vierna |
+| Soren Rowe / M-10882715 | Vierna (Earth, 1919) — a stolen mind in a Myrmidon automaton | Ranged DPS | Mind mid-30s | Vierna |
 | Kressida Haun | Atrament | Engineer / Pilot | Mid-20s | Schmalburg |
 | Wren Caerglas | Calyx (Loera-trained) | Rogue | 22 | Eastern plains |
 
-### Dame Lyra T-044 — POV {#SS-VIGL-1a}
+### Dame Lyra — POV {#SS-VIGL-1a}
 - **Institutional affiliation:** The Liturgy — she is a **Templar**, not a House Knight.
   The Liturgy is the overarching institution (the Church, in rough analogy); the Houses are
   the nations. Templars serve the Liturgy's mission across House borders. Lyra is stationed
   at the Ocipheus vigil archive because the Relic is a Liturgy concern, not because her
   loyalty runs to House Ocipheus. She is Ocipheus-born but the House does not command her.
   The Canon Immaculate commands her. This is the chain she breaks at the end.
-- **Rank:** Dame; three infusions; closing on Paladin (Liturgy rank ladder). Her Templar
-  field designation is **T-044** (Templar, Ocipheus Station, serial 044) — NOT M-prefix.
-  M-prefix designations belong to Myrmidons (conscripted soldiers from other Spheres). Any
-  prose using "M-101" for Lyra is an error; M-101 is Rowe's Myrmidon intake designation.
+- **Rank:** Dame; three infusions; closing on Paladin (Liturgy rank ladder).
+- **NO institutional number — LOCKED:** Dame Lyra has no designation number and never has. She
+  is not from Vierna; Ocipheus does not number its people. **The number is the dehumanization of
+  the stolen minds** — an M-prefix serial brands a Myrmidon (a mind Scried out of a body and put
+  in a machine; e.g. Soren Rowe, M-10882715). Lyra is a respected Templar with a name and faith in
+  her mission. Any prose that assigns Lyra a designation number (T-044, M-108, or any other) is an
+  ERROR. The Liturgy refers to her by name and rank — "Dame Lyra," "the Ocipheus Templar."
 - **Physical:** ~6'5"; lean functional build (endurance, not mass); dark complexion; the
   Transmutation has been overwhelmingly good for her — each infusion was awarded for
   distinguished service and survived. She does not perform loyalty; she is loyal. This
@@ -237,8 +240,25 @@ at work on a different kind of person.
   combinations. He has seen what improvised alchemical combinations produce.
 - **Knife:** A small folding knife for food preparation, which is what he uses it for.
 
-### Rowe (Soren Rowe) — From Sphere 31 {#SS-VIGL-1c}
-- **Origin:** Sphere 31 = **Earth, 1919**. Post-armistice England. A textile city on a canal —
+### Soren Rowe (M-10882715) — The Myrmidon {#SS-VIGL-1c}
+
+- **WHAT HE IS — THE CENTRAL HORROR:** Soren Rowe is not a body the Cauld captured. He is a
+  *mind* the Cauld stole. Vierna Scried his consciousness out of a living man in another Sphere —
+  drew it out of him like a hook drawing a fish out of dark water — and installed it in a
+  **disposable automaton**: a black, jointed chassis with a single oval optical receptor where a
+  face should be. The body he was born in died in his own world the moment he was taken, one more
+  corpse found without a mark on it. What crosses the membrane and marches in Vierna's ranks is
+  the man himself — awake, whole, remembering everything — worn like a tool.
+- **He remembers everything.** There is no blur, no merciful forgetting; his whole life is intact,
+  which is the cruelty of it. (This supersedes any earlier "memory accumulates and blurs" notion —
+  drop it entirely.)
+- **His designation — M-10882715:** *"M One Oh Eight Eight Two Seven One Five. Step forward."* The M is
+  Myrmidon; the number is stamped where a name used to be. Short form: M-108. When Lyra finds him,
+  **"M-108" is the only thing he can say in her language with confidence** — the way a captured
+  soldier gives rank and serial number and nothing else, because it is the one true thing they
+  cannot make him regret saying.
+
+- **Origin (the life they took him out of):** Sphere 31 = **Earth, 1919**. Post-armistice England. A textile city on a canal —
   coal smoke, wet stone, dye works downwind, the particular quiet of a country that has not yet
   decided what peace is supposed to feel like. He has been home from France for eight months when
   the membrane takes him. The Liturgy does not know and does not care what his world calls itself.
@@ -247,8 +267,9 @@ at work on a different kind of person.
   allowed through. No Cauld map will ever carry it.
 - **The split register — THIS IS THE CRITICAL RULE:**
   To the party, Rowe cannot speak. He is nearly mute. He communicates in fragments and gestures
-  and wrong tenses and expressions that arrive backwards. The halting quality is not stupidity —
-  it is translation. His own language is fluent and precise.
+  and wrong tenses and expressions that arrive backwards. The halting quality is not stupidity,
+  and it is not only translation — it is a whole mind speaking through a machine's crude
+  voice-box. His own language is fluent and precise; the tin throat it must pass through is not.
   Inside his POV chapters: he is a fully articulate Englishman from 1919, thinking in the idiom
   of a man who has been to France, has worked in a mill, knows the weight of a rifle and the
   smell of particular kinds of stone and mud. His internal voice is not compressed or simplified.
@@ -272,14 +293,37 @@ at work on a different kind of person.
   development of what his world was building. His world built the prototype; the Cauld uses the
   finished military form. He sees this in the barracks before he can say a full sentence in
   Cauld. One line. He notes it. He does not explain it. He moves on.
-- **Myrmidon designation:** M-101 — his Vierna intake designation. The "M" prefix is Myrmidon:
-  person Scried from another Sphere and conscripted into House military service.
+- **Myrmidon designation:** M-10882715 (short: M-108) — his Vierna intake designation, stamped on
+  the chassis. The "M" is Myrmidon: a mind Scried out of a living person in another Sphere and
+  issued a disposable body. Not a captured man — a stolen consciousness in a machine.
 - **In the Cauld:** Seven months total (three as active Vierna conscript, four as deserter).
   No Cauld language at start. Vocabulary accumulates at a documented pace: four words by
   Chapter 10, full sentences by Chapter 16, Aldenvast at the final scene.
-- **Physical:** Compact, functional, carries the muscle of mill work and Vierna training.
-  Mid-30s. Unremarkable to look at — the intake protocol relies on this; pierced conscripts
-  are not selected for distinction.
+- **The body (the chassis) — small, disposable:** A Vierna military Myrmidon-shell. Black,
+  jointed, and deliberately **small** — a head shorter than the men around it, built to the
+  cheapest disposable-infantry spec — with an oval optical receptor for a face: no expression to
+  read, no eyes to meet. Issued, not born; mass-produced, which is why the intake protocol selects
+  for nothing. It does not tire, bleed, or heal — it dents, and is repaired or scrapped. He runs
+  it on motor-memory: the mill floor, the French trenches, the Vierna drill are all a dead man's
+  body-knowledge driving a machine that never knew any of it. **The doubled tragedy:** a whole
+  man's mind put not merely into a machine but into a *lesser, throwaway* one — the little unit
+  no one bothers to watch.
+- **Wireless transfer — the body-snatcher (his combat identity) {LOCK}:** A Myrmidon's essence —
+  mind, or soul — is **wirelessly transferable between shells.** It is how Vierna installs him in
+  the first place; it becomes, once he learns to do it himself, his one terrible freedom. Soren
+  Rowe can **jump**: cast himself out of the small shell and into another machine body — an
+  unoccupied automaton, a war-chassis, a turret (see the flashback: he *was* Turret #34) — wear
+  it, fight in it, and cast back to his own shell when the work is done. Not a shapeshifter — a
+  **body-snatcher.** Given enough iron, the overlooked little Myrmidon becomes a **steel grizzly
+  with mantis scythes and a scorpion tail**, or worse, then leaves the hull dead and returns to
+  the unremarkable unit nobody was guarding. **LOCKS:** (1) he transfers only into *machine*
+  shells, never living bodies; (2) he must always be able to **return to his own shell** — the
+  small form is home, and being cut off from it is his deepest fear; (3) the horror-and-wonder is
+  that the thing everyone pities can become the most dangerous thing on the field, and then be
+  pitiable again; (4) **COST — every jump gambles the way home:** an abandoned shell can be
+  destroyed, dragged off, or claimed while he is gone, and then he *cannot get it back* and must
+  find a *similar* replacement, wearing a stranger's spec until he can. His own small shell is
+  irreplaceable to him; to be cut off from it is a small death. The power is never free.
 - **What he knows:** In Vierna barracks he met men who called themselves Sphere 22, Sphere 14,
   Sphere 8. He has seen the catalogue notation on intake documents. He knows the numbers go
   past 31. He can say this by Chapter 16.
@@ -293,6 +337,67 @@ at work on a different kind of person.
   before he can explain himself. He cannot yet explain himself for weeks afterward.
 - **Arc:** He begins unable to speak. He ends with enough Cauld to give full testimony and to
   tell Lyra that his city is called Aldenvast. The testimony is the arc. The name is the gift.
+
+#### First-Night Flashback — LOCKED SCENE (the night Lyra finds him; ~SK800) {#SS-VIGL-1c-flashback}
+
+The night Lyra pulls him out of the crossfire and the party makes camp, the reader gets the
+Taking from the inside — his memory, not his speech — intercut with the present-night fire. This
+scene establishes the atrocity that ripples through the rest of the book. Imagery is LOCKED:
+
+- **The pluck.** Not pain first — *displacement*. A spark lifted out of a warm dark medium the way
+  a hook draws a fish up out of black water: the sick sideways yank of being taken out of
+  something you never knew you were suspended in. He was in his body the way a fish is in the sea,
+  and something reached in and lifted him out by the mouth.
+- **The sea of black.** After: a spark floating in a sea of black — no body, no up, no edges — and
+  all around him the **wreckage of his own memories** (the mill, the canal, France, his mother's
+  kitchen), not as pictures but as debris, drifting, some of it turning slowly out of reach.
+- **Waking in an alien body.** Then weight. Wrong weight. He wakes *inside a machine*: the oval
+  receptor opening on a grey Vierna muster-yard; a body that answers his intention a half-beat
+  late and reports nothing back — no warmth, no ache, no breath. He tries to scream and the sound
+  that comes out is not his.
+- **The naming.** The line of them, black and identical. *"M One Oh One Six Triple Eight. Step
+  forward."* He steps forward because the designation is the only thing in this world that is
+  unambiguously his, and he hates that it is.
+- **The airship / Turret #34.** The one action the flashback shows before the cut back to the
+  fire: aboard a Vierna gunship crewed by Myrmidons at the turrets, he is **Turret #34**, and in
+  the engagement **#34 refuses to fire** — the single act of will the chassis will still let him
+  keep. Afterward, the only sense the shell gives him honestly: **burnt ozone**, the firing gear
+  cooking itself — and the knowledge that a refusal, in a disposable body, is only ever *noted*,
+  never punished. You do not court-martial a tool. You scrap it.
+
+**Delivery:** the reader gets the articulate 1919 man; the party gets a black automaton that can
+say two syllables. The gap is the point. **Ripple:** every later beat with a Vierna Myrmidon,
+every "death without cause" mentioned in passing, and every frame Kressida (a body fused to a
+machine) and Rowe (a mind without one) share, should carry this scene underneath without
+restating it.
+
+#### Body-snatch setpieces — design menu (M-108's power across the book) {#SS-VIGL-1c-snatch}
+
+The power earns its keep by escalating and by costing. Recommended deployment:
+
+1. **The reveal — Schmalburg raid (SK1300).** First time the party sees the overlooked little
+   Myrmidon LEAP from his shell into a hulking Atrament war-chassis and become a monster — a
+   **steel grizzly with mantis scythes and a scorpion tail.** This is the beat Kressida joins;
+   the resonance lands hard — she is fused to ONE machine forever, he wears and discards many.
+   Her respect is earned here. First taste of **cost:** his inert little shell is left exposed
+   mid-jump; someone has to stand over it.
+2. **Turn the mortar (a pinned-down beat — Calyx skirmish or Schmalburg).** The team is pinned by
+   an enemy emplacement; M-108 jumps into the **mortar that is killing them** and it goes silent,
+   or turns on its own line. Fast, tactical, quietly horrifying — the enemy's own iron, possessed.
+3. **Become the airship — Eirene-7 acquisition (SK1600).** The masterstroke and the callback: he
+   was **Turret #34** on a Vierna gunship; now, to steal the Eirene-7, **he BECOMES the airship,**
+   flying it from inside its control-mind. Highest **cost/tension** — a hull that large is hard to
+   leave; he risks being stranded as the ship, unable to get home to his small shell.
+4. **The cost pays off (late — Pallor SK1900 / the road to Sinter).** A jump goes wrong: his home
+   shell is destroyed or claimed while he is out, and he must inhabit a **replacement** — a
+   stranger's spec that never fits right. The party feels the loss; something of him does not come
+   back the same. This makes every prior jump retroactively braver.
+5. **Sinter (climax, SK2000–2300).** His final choice mirrors Turret #34 refusing to fire: he
+   either spends his last shell in a sacrifice, or **refuses to jump** and remains the small,
+   overlooked self — choosing which tool to be, the only freedom the Taking left him.
+
+**Escalation of the power:** hidden → reveal (grizzly) → tactical (mortar) → masterstroke
+(airship) → cost/loss → climactic choice. Never a free trick; every jump gambles the way home.
 
 ### Kressida Haun — The Rig Pilot {#SS-VIGL-1d}
 - **House:** Atrament. Battle-rig pilot, BR-7 designation. Aeronaut. Deserter.
@@ -1228,7 +1333,7 @@ actually is. The assumption that every House has a king in armor on a throne is 
 
 **Transmutation rank ladder (relevant to this story):**
 - Soldier (0 infusions; native Cauld) → Knight (1–3 infusions; "Dame" for women) → Paladin (4–6) → Champion
-- **Myrmidon** = a person pierced from another Sphere and conscripted into House military service. NOT on the Transmutation ladder. Rowe is a Myrmidon. Native Cauld soldiers are not Myrmidons.
+- **Myrmidon** = a **mind** Scried out of a living person in another Sphere and installed in a disposable Vierna automaton chassis (black, jointed, an oval optical receptor for a face). NOT a captured body — a captured *consciousness*; the original body dies in its home world, unmarked, one of the countless "deaths without cause." NOT on the Transmutation ladder. Soren Rowe is a Myrmidon. Native Cauld soldiers are not Myrmidons. **House distinction (LOCKED):** *Atrament* steals **people** — whole bodies, in small batches, for skilled labor. *Vierna* steals **minds** and issues them bodies. This is the deeper horror the book uncovers: anywhere in any world, a death without a cause is a possible mind-theft. **Minds are wirelessly transferable between shells** — that transfer IS the mechanism of the Taking, and it is why a skilled Myrmidon (Soren Rowe) can jump machine bodies and return to his own (see §1c body-snatcher LOCK). **The scale is in the serial numbers:** Soren Rowe is M-10882715 — the count has run past ten million, on the order of **10.9 million** stolen minds. (World-level canon — mirror into [[../universes/CAULD]] / BIBLE Scrying section.)
 - Lyra: 3 infusions — "Thrice Infused" (folk term for the 3-infusion ceiling of Knight rank,
   the maximum before Paladin). Each infusion awarded for distinguished service. She is still
   ascending. The ceiling is theoretical. At 3 infusions she is picking up armored soldiers
@@ -1610,7 +1715,7 @@ at the sixth hour → Lyra and Orim move.
 
 **After this scene, Vega leaves for the central office.** S1 lands on her desk two days later —
 the cover authorization for the theft, framed as "dispute resolution, Relic provenance review,"
-followed by T-044's field authority suspension. She does not know yet whose designation that is.
+followed by Dame Lyra's field authority suspension, copied among hundreds. She does not know yet whose name it is.
 
 **Her function in the plot:**
 
@@ -1632,7 +1737,7 @@ writing "no action indicated" into enough folios to understand what the phrase h
 **S1 — The Authorization** (between A-chapters 2–3; after Three Bodies, before The Wall)
 She copies the canonical property recovery instrument — the cover authorization for the theft
 of the Oculus Memoriae, framed as "dispute resolution, Relic provenance review." She also
-copies T-044's field authority suspension. She does not know yet whose designation that is.
+copies Dame Lyra's field authority suspension. She does not know yet whose name it is.
 In the courtyard below the office window: a Great Scrying operation running at midday — an
 active aperture, apparatus crews in position, a war construct evaluation (WC-Eirene-provisional,
 Sphere 42) being assessed by Descent Corps evaluators. She copies the assessment summary.
@@ -1644,7 +1749,7 @@ summaries that individually are routine but cumulatively map to a staging operat
 courtyard, a chain of WC-Eirene units is moved to a staging hall she has never seen used —
 she knows it has been locked for eleven years because she filed the lock authorization as a
 junior apprentice. It is not locked now.
-She understands, cross-referencing with the suspension paperwork, that T-044 is her
+She understands, cross-referencing with the suspension paperwork, that the Dame Lyra named in it is her
 sister. She writes Lyra's name in the margin of her working copy. She crosses it out.
 
 **S3 — The Review Session** (between A-chapters 14–15; after Atrament Forge Kingdom, before Schmalburg Adjacent)
@@ -1875,7 +1980,7 @@ That is what comes next.
 
 **Temporal scheme:** Nonlinear. The story opens at beat 0 with the theft in progress (in medias res, Pallor Knight POV entering the archive), then cuts to beat 24 (Lyra's pre-theft night at the station, the argument about bread, the note left for Vega) before returning to beat 1 (Lyra discovers the aftermath). The Rowe and Vega threads (beats 26, 27, 29, 31, 34, 37, 47) intercut chronologically but are temporally behind the Lyra thread, so the reader knows Rowe's origin before Lyra finds him, and knows Vega has sealed the notary instrument before Lyra arrives at Sinter. The cut at beat 24 withholds the fact that Lyra was present at the station the night before — establishing her as the archive keeper before revealing her as a sister and a person who argued about bread.
 
-**Resolution mode:** Mixed. External success: the Relic is recovered, Vega's notary seal creates a canonical instrument Prelacze cannot erase, and Lyra refuses the writ in front of witnesses — the institutional record exists. Significant cost: Ardea is dead, Lyra's T-044 designation and thirty-year standing are forfeit, Kressida remains fused to her rig, the Liturgy's military mobilization is unresolved. The ending is not peace — it is the first moment of Lyra having no institution behind her.
+**Resolution mode:** Mixed. External success: the Relic is recovered, Vega's notary seal creates a canonical instrument Prelacze cannot erase, and Lyra refuses the writ in front of witnesses — the institutional record exists. Significant cost: Ardea is dead, Lyra's Templar standing and thirty-year record are forfeit, Kressida remains fused to her rig, the Liturgy's military mobilization is unresolved. The ending is not peace — it is the first moment of Lyra having no institution behind her.
 
 **Moral polarity:** Ambivalent.
 
@@ -1889,7 +1994,7 @@ That is what comes next.
 1. *Aerostatic Architecture specification sheet* — Tavar produces a folded copy annotated in a different ink when planning the Eirene-7 acquisition. Lyra reads the annotations, not the document. (Beat 43 / SK1600)
 2. *(Unattributed quote)* — Carved into the lintel of the Twr Brennid vault on Caer Glas Moor — the Long Seat's answer to the Eighth Theory. Lyra reads it aloud, once, in the rain. Orim says he has seen it before and did not understand it the first time either. (Beat 50 / SK2100)
 3. *Kenji Okonkwo-Barrett quote* — Rowe quotes this, haltingly in Cauld that is not yet fluent, during his channel testimony. He doesn't know the author's name. He learned it from another conscript who had it written on the inside of a boot. (Beat 44 / SK1700)
-4. *(Unattributed quote)* — Pinned above Vega's copy desk. She has stopped seeing it. When she recognizes the M-101 designation as her sister's, the camera lingers on the quote for one sentence before she stands up. (Beat 31 / SK1200)
+4. *(Unattributed quote)* — Pinned above Vega's copy desk. She has stopped seeing it. When she recognizes that the name on the transit suspension is her sister's, the camera lingers on the quote for one sentence before she stands up. (Beat 31 / SK1200)
 5. *Kenji Okonkwo-Barrett quote* — Orim cites this to Lyra at the Forge Hearth when she asks why he kept taking the contracts for forty years after he knew about the intake. He does not say it is a quote. She does not ask. (Beat 40 / SK1400)
 
 ---
