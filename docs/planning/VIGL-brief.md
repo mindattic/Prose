@@ -74,7 +74,7 @@ All characters are new to production. Entry states are world-state-derived, not 
 |---|---|
 | Dame Lyra M-101 | Ocipheus Knight, 3 infusions, fully loyal to House and Liturgy; Transmutation researcher with strong institutional trust; has never questioned the intake protocol she has contributed to |
 | Orim Zebulun | Contracted minor scryer, no House, 60 years of working for all Houses; knows Scrying's cost and has chosen complicity; wide-world knowledge; curious |
-| Rowe (Soren Rowe) | Sphere 31 origin; 7 months in Vierna service after piercing; 3 weeks deserting; no Cauld language; carries memories of his origin world but cannot communicate them yet |
+| Rowe (Soren Rowe) | Sphere 31 origin; 7 months in Verlaine service after piercing; 3 weeks deserting; no Cauld language; carries memories of his origin world but cannot communicate them yet |
 | Kressida Haun | Atrament battle-rig pilot, active service, Schmalburg garrison; rig intact; no existential crisis yet — she's a functioning soldier |
 | Capt. Tavar (Tavardo Leal) | Lacerta pirate; *Meridian* under Liturgy navigation embargo; active operations in Sal Vento; has his own code; not ideologically motivated |
 | Sgt. Ardea Marten | Lyra's lead Myrmidon; loyal; competent; not yet dead |
@@ -180,7 +180,7 @@ All entities must be seeded before prose begins.
 |---|---|---|---|
 | Dame Lyra M-101 | character | human | Ocipheus Knight; 3 infusions; female; ~6'5"; Transmutation researcher; POV |
 | Orim Zebulun | character | human | Old man; Calyx origin; minor scryer; no House; contracted |
-| Rowe (Soren Rowe) | character | human | Sphere 31 origin; Vierna deserter; male; no Cauld language at start |
+| Rowe (Soren Rowe) | character | human | Sphere 31 origin; Verlaine deserter; male; no Cauld language at start |
 | Kressida Haun | character | human | Atrament battle-rig pilot; female; fused to BR-7; cannot be removed |
 | Capt. Tavardo Leal (Tavar) | character | human | Lacerta pirate; male; *Meridian* captain; Liturgy nav embargo |
 | Sgt. Ardea Marten | character | human | Ocipheus Myrmidon; female; dies Beat 7 |
@@ -193,13 +193,13 @@ All entities must be seeded before prose begins.
 |---|---|---|---|
 | Ocipheus Station | place | Ocipheus | Vigil installation; archive; where story opens and ends |
 | Eirene's Gate | place | (Wall) | Sinter perimeter checkpoint; named for fallen Sinter champion |
-| Bressant | place | Vierna | River transit city; grain warehouse district; Archival Gate |
+| Bressant | place | Verlaine | River transit city; grain warehouse district; Archival Gate |
 | Schmalburg | place | Atrament | Rhine forge-city; Heloth yards; rail depot; Battle of Small Fortress site |
 | Sal Vento | place | Lacerta | Cliff smuggler city; sea-cave anchorage; *Meridian* mooring |
 | Caer Glas Moor | place | Pallor | Northern Hebrides coast; Owain's position; Twr Brennid nearby |
 | Twr Brennid | place | Pallor | Pre-Compact ruined tower on Caer Glas Moor |
 | The Forge Hearth Zone | place | Atrament | Membrane industrial site; healing abnormally slowly |
-| The Veil River | place | Vierna | Primary N-S commercial river |
+| The Veil River | place | Verlaine | Primary N-S commercial river |
 | Pallor Station | place | Pallor | Long Seat's installation; map room |
 
 ### Factions
@@ -250,7 +250,7 @@ All entities must be seeded before prose begins.
 ### Flora and Fauna (Sphere-origin exotic life — seeds of world strangeness)
 | Entity | Type | Notes |
 |---|---|---|
-| Vierna deepvine | flora | Sphere-origin vine; purple-black leaves; produces wine with blue tinge; established in Vierna wine-country for 400 years |
+| Verlaine deepvine | flora | Sphere-origin vine; purple-black leaves; produces wine with blue tinge; established in Verlaine wine-country for 400 years |
 | Silverthorn hedge | flora | Sphere-origin hedgerow; silver filament leaves catch sound; faint harmonic in wind |
 | Forge Hearth ember-fungi | flora | Atrament; feeds on Heloth chemical exhaust; bioluminescent orange; grows on construct discharge ports |
 | Pallor night-heather | flora | Hybrid of 4 Sphere-origin heather varieties; blooms at night; phosphorescent pink-white |

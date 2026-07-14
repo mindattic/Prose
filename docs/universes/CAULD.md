@@ -543,7 +543,7 @@ a story.
 
 > **Full chronicle:** `docs/universes/CAULD_HISTORY.md` — 1700 years of history, founding
 > legends for all Seven Houses, Relic weapons, named wars, plagues, famines, diplomatic
-> marriages, and the Gyldir Shore Accord (the Ocipheus-Vierna-Pallor crossing arrangement).
+> marriages, and the Gyldir Shore Accord (the Ocipheus-Verlaine-Pallor crossing arrangement).
 > This section summarizes the structural history; the chronicle contains the named details.
 
 The Houses did not spring from a founding document. They accumulated. Each one is the residue
@@ -581,11 +581,11 @@ throughout. The Atrament culture developed in the forest, built along rivers, an
 long before the membrane was deliberate. The old-growth forest is still largely intact; the
 installations and river-crossing towns are clearings in it. Everything connects by water.
 
-**The Vine Country — Vierna territory.** France analog: the broad agricultural interior
+**The Vine Country — Verlaine territory.** France analog: the broad agricultural interior
 west of the Rhine, Atlantic coast to the west, mountain border to the south, narrow channel
 to the north separating it from the island. Temperate, fertile, well-watered, a culture that
 produced written records before any of its neighbors because surplus produced leisure and
-leisure produced scribes. The Vierna installation sits on a river bluff in the interior —
+leisure produced scribes. The Verlaine installation sits on a river bluff in the interior —
 accessible from all directions, which was always the point.
 
 **The Island — Ocipheus territory.** Britain analog: separated from the mainland by a narrow
@@ -743,7 +743,7 @@ institutions. They had been fighting each other for forty years over the same st
 agricultural land and the membrane site that sat in the middle of it. None of them had
 won. All of them had lost enough that the mathematics of continuing had become unfavorable.
 
-The first Compact document is preserved in the Vierna archive. It is eleven lines. It says:
+The first Compact document is preserved in the Verlaine archive. It is eleven lines. It says:
 we will stop raiding each other's sites for two seasons. If the two seasons pass without
 incident we will meet again. That is everything. Eleven lines and the Cauld's permanent
 political structure began.
@@ -812,8 +812,8 @@ A famine year followed. Meridian couldn't pay the contract rate. The contractor 
 sides — offered its services to a neighboring House for a guaranteed rate Meridian couldn't
 match. Meridian's site went dark. A House that can't run its own installation is a House
 with a name but no power. Meridian's remaining members were absorbed into other Houses
-over the next two generations. The site was eventually brought back online by Vierna,
-whose Sphere catalogue included Meridian's operational records. Vierna now administers it.
+over the next two generations. The site was eventually brought back online by Verlaine,
+whose Sphere catalogue included Meridian's operational records. Verlaine now administers it.
 
 **What Meridian represents:** The danger of institutional elegance. The efficiency that
 eats the thing it was supposed to serve.
@@ -908,7 +908,7 @@ three years of the Meteor Event. This is the only act in the Cauld's history tha
 surviving Houses have signed simultaneously, regardless of coalition alignment, regardless
 of active war between them. The Vigil Compact (Year 1082) established:
 
-- Vierna, Ocipheus, and Atrament take primary responsibility for the Vigil Watch:
+- Verlaine, Ocipheus, and Atrament take primary responsibility for the Vigil Watch:
   fortified positions on both banks of The Pass, naval patrol boats on the strait, and
   rotating infantry at Eirene's Gate and the secondary crossings. The strait is the barrier;
   the Watch is the force that holds it.
@@ -923,7 +923,7 @@ to neighboring stations on The Pass during a period when their Houses are at act
 every other front. They do not fight. The Vigil Compact's terms include a specific
 prohibition on inter-House violence within the Sinter patrol perimeter, enforced not by
 any individual House but by the Liturgy's Vigil Administration. The Giants — the
-transformed Champions who escort Ocipheus ships through Vierna's waters — also hold
+transformed Champions who escort Ocipheus ships through Verlaine's waters — also hold
 permanent posts at the four largest breach-risk corridors. They are the only force in
 the Cauld that the Vigil Administration commands directly.
 
@@ -947,10 +947,10 @@ is sealed.
 
 **Sinter's surviving people.** Most evacuated westward through The Pass into Calyx territory.
 Their practitioners — the diplomatic membrane-readers, the arbitration specialists — dispersed
-to Vierna primarily, which absorbed the Sinter scribal tradition wholesale and built the
+to Verlaine primarily, which absorbed the Sinter scribal tradition wholesale and built the
 institutional framework of the Deep Archive partly from Sinter's original dispute-resolution
-records. This is why Vierna's record of the Sinter Event is more complete than the Liturgy's
-official account. Vierna received the survivors. Vierna received the records. Vierna made the
+records. This is why Verlaine's record of the Sinter Event is more complete than the Liturgy's
+official account. Verlaine received the survivors. Verlaine received the records. Verlaine made the
 institutional calculation that knowing what happened at Sinter is worth more than sharing it.
 
 The conspiracy that circulates quietly in garrison taverns near The Pass, among soldiers who
@@ -1208,49 +1208,49 @@ Not evil in the way that looks away. Evil in the way that looks directly and cho
 
 ---
 
-#### House Vierna — The Archive and the Lock
+#### House Verlaine — The Archive and the Lock
 
-Vierna sits in the broad interior — the France analog, the vine country, temperate and
+Verlaine sits in the broad interior — the France analog, the vine country, temperate and
 fertile and positioned at the geographic center of the Cauld's major institutions. They border
 Atrament to the east, the island nation across a narrow channel to the north, the southern
 peninsula through mountain passes to the southeast, and the western cliff coast along a shared
-southern land border. From Vierna territory you can reach every other House. This has always
+southern land border. From Verlaine territory you can reach every other House. This has always
 been the point. Their geographic centrality was not accidental. The culture that produced the
 scribes grew where the scribes were most useful: in the middle, where all the roads crossed.
 
-Vierna is the reason the Compact exists in its current form. They were the institution
+Verlaine is the reason the Compact exists in its current form. They were the institution
 that wrote the agreements — not because they were the most powerful party but because they
 were the most literate, the most organized, and the most willing to handle the administrative
 burden nobody else wanted. They were the scribes of the pre-Compact era. Every tribe with
-a membrane site used Vierna's record-keepers because the central country was the only
-territory all parties could reach without crossing an enemy's land. Vierna collected this
+a membrane site used Verlaine's record-keepers because the central country was the only
+territory all parties could reach without crossing an enemy's land. Verlaine collected this
 geographic trust over two centuries and never let go of it.
 
 When they wrote the Compact, they wrote it carefully. Nothing in it was dishonest. But
 the party that writes the contract also writes the defaults — the unspecified conditions,
-the edge cases, the precedents. Vierna's Compact specified, among other things, that all
-disputes over Sphere catalogue access would be resolved through Vierna arbitration. This
-clause was uncontroversial at the time: Vierna had no site of its own and seemed the
+the edge cases, the precedents. Verlaine's Compact specified, among other things, that all
+disputes over Sphere catalogue access would be resolved through Verlaine arbitration. This
+clause was uncontroversial at the time: Verlaine had no site of its own and seemed the
 obvious neutral party. They acquired a site within a generation of the Compact's signing.
 The arbitration clause has never been repealed.
 
-The real ideological question in the Cauld lives at Vierna because Vierna is the House
+The real ideological question in the Cauld lives at Verlaine because Verlaine is the House
 where it cannot be suppressed. Their Sphere catalogue — the broadest in the Cauld — is
 documented evidence that the membrane connects to resources that no single House should
-control. Their Keeper knows this. The position that has been circulating within Vierna
+control. Their Keeper knows this. The position that has been circulating within Verlaine
 for fifty years — that Sphere knowledge should be collectively administered, not held by
-individual Houses — is the position that most directly undermines Vierna's own power.
+individual Houses — is the position that most directly undermines Verlaine's own power.
 And their Keeper has not suppressed it.
 
 The other Houses have three theories about this. First: the Keeper is genuinely principled
 and believes it. Second: the Keeper is using the position as leverage — an implicit threat
-that if Vierna's institutional interests are threatened, they will release the catalogue.
+that if Verlaine's institutional interests are threatened, they will release the catalogue.
 Third: the Keeper is running a longer game, building the political coalition that would
-survive a redistribution of membrane access and positioning Vierna to administer the
+survive a redistribution of membrane access and positioning Verlaine to administer the
 redistribution rather than be subject to it. All three theories are consistent with the
 observable behavior. The Keeper has not clarified.
 
-**What Vierna represents:** The custodian who chooses what gets preserved and what gets
+**What Verlaine represents:** The custodian who chooses what gets preserved and what gets
 lost. The archivist whose neutrality was always a position.
 
 ---
@@ -1272,7 +1272,7 @@ until it wasn't — until the dependency had been running long enough that the e
 could not produce what it needed without Atrament's infrastructure, at which point the
 arrangement became something else. They became clients before they became anything else.
 
-The Compact gave them formal House status over Atrament's objection. Vierna, writing the
+The Compact gave them formal House status over Atrament's objection. Verlaine, writing the
 terms, included a clause recognizing the eastern plains culture's institutional standing
 specifically because the Compact needed a food-producing House and the plains culture was the
 only organization with the scale and infrastructure to supply the entire Cauld. Atrament was
@@ -1390,12 +1390,12 @@ piercing, which Fjorheim built and which Pallor has used selectively. The Warrio
 who made the absorption is three generations dead. The Muster Chamber is not spoken of
 in formal session.
 
-Three Points: where the Vierna coast, the Atrament river basin, and Pallor's southern sea
+Three Points: where the Verlaine coast, the Atrament river basin, and Pallor's southern sea
 access converge, approximately where the great river meets the North Sea. Neutral ground by
 longstanding agreement — no House can station military forces there, and all three Houses
 benefit from this arrangement more than they would benefit from any one of them controlling
 it. Pallor's interest at Three Points is primarily maritime: the shipping lanes that connect
-their fjords to Vierna's river ports.
+their fjords to Verlaine's river ports.
 
 The Champion who is affiliated with Pallor but not sworn to it came there for reasons they
 have not explained. They were elsewhere for a long time. They are here now. The Warrior King
@@ -1415,7 +1415,7 @@ by outlasting everything that moved against it.
 
 ### House Atrament — The Refinery Seat
 **Coalition status:** Coalition anchor · **Domain:** Catalyst refining
-**Territory:** Central continental — Germany analog; Rhine and Danube river valleys; forested interior; volcanic ridge in the west. Borders Vierna to the west, Pallor to the north across the sea channel, the ungoverned southern ridge country to the south, Calyx to the east along the river line.
+**Territory:** Central continental — Germany analog; Rhine and Danube river valleys; forested interior; volcanic ridge in the west. Borders Verlaine to the west, Pallor to the north across the sea channel, the ungoverned southern ridge country to the south, Calyx to the east along the river line.
 
 The Forge Hearth — oldest active apparatus in the Cauld. Stretching the membrane at the same
 coordinates for generations. Whether the membrane fully recovers between sessions is not a
@@ -1436,7 +1436,7 @@ Liturgy has not corrected this. The silence is the arrangement.
 
 ### House Ocipheus — The Vigil Seat
 **Coalition status:** Coalition anchor · **Domain:** Thin-membrane access
-**Territory:** The island — Britain analog; separated from the mainland by a narrow channel. Rocky highland north, softer lowland south, maritime culture throughout. The Vigil is the knightly order; the Canon Immaculate governs from the ancient seat at the island's center. Channel crossing east to Vierna.
+**Territory:** The island — Britain analog; separated from the mainland by a narrow channel. Rocky highland north, softer lowland south, maritime culture throughout. The Vigil is the knightly order; the Canon Immaculate governs from the ancient seat at the island's center. Channel crossing east to Verlaine.
 
 Ocipheus Station — oldest installation in the Cauld. Named in historical record more than any
 other. Long-tenure vigil operators stationed here for decades sometimes describe the membrane
@@ -1480,16 +1480,16 @@ operate under Pallor authority. See House Pallor.*
 
 ---
 
-### House Vierna — The Archive Seat
+### House Verlaine — The Archive Seat
 **Coalition status:** Opposition bloc · **Domain:** Sphere cataloguing
 **Territory:** Vine country — France analog; broad agricultural interior, Atlantic coast to the west, mountain border to the south. Borders Atrament to the east, Loera to the southwest, the ungoverned southern ridge country to the southeast. Channel crossing north to Ocipheus.
 
 The Deep Archive — broadest Sphere catalogue of any House. More documented access points than
 any installation except Ocipheus Station. Where Ocipheus has depth at specific coordinates,
-Vierna has breadth: more Spheres observed, more designs transcribed, more knowledge of what
+Verlaine has breadth: more Spheres observed, more designs transcribed, more knowledge of what
 exists across the membrane than any other institution in the Cauld.
 
-**The fault line:** The real theological fault line of the Cauld lives inside Vierna. The
+**The fault line:** The real theological fault line of the Cauld lives inside Verlaine. The
 position — voiced rarely and dangerously — that Scrying installations should not be privately
 controlled; that the knowledge of all Spheres belongs to everyone. Their Keeper has not
 suppressed it. Whether this is principled tolerance or strategic positioning is the question
@@ -1542,7 +1542,7 @@ Silence has not responded. Yet.
 
 ### House Pallor — The Long Seat
 **Coalition status:** Unaligned — courted by both blocs · **Domain:** Champion affiliation
-**Territory:** Northern fjords — Scandinavia analog; long fjord coastlines, pine and birch interior, glacial plateau; warrior-king ruled. Absorbed Fjorheim territory three centuries ago. Sea channel south to Three Points (Vierna/Atrament border convergence); channel crossing southwest to Ocipheus.
+**Territory:** Northern fjords — Scandinavia analog; long fjord coastlines, pine and birch interior, glacial plateau; warrior-king ruled. Absorbed Fjorheim territory three centuries ago. Sea channel south to Three Points (Verlaine/Atrament border convergence); channel crossing southwest to Ocipheus.
 
 Pallor Station — mid-tier apparatus. Strategically valuable not for what it can reach through
 the membrane but for who is affiliated with it. Their Warrior King has been at the map table
@@ -2325,7 +2325,7 @@ but none of them are rideable or domesticated.
 | **Atrament rail** | Medium-fast | Fixed Rhine/Danube-analog valley routes; military and civilian mix; Scried 19th-century technology |
 | **Heloth courier** | Medium | Single-rider; shoulder housing; all terrain; bone-jarring; fast in open country |
 | **Heloth-drawn transport cart** | Slow-medium | Road-bound; commercial; several passengers plus freight |
-| **River barge** | Slow | Vierna interior primarily; commercial; primary cover transport |
+| **River barge** | Slow | Verlaine interior primarily; commercial; primary cover transport |
 | **Sea vessel** | Slow | Pallor and Loera coastal operations |
 | **Walking** | Slowest | Universal; mountain pass default |
 

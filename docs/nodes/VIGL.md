@@ -30,11 +30,11 @@ stolen Relic weapon — and losing, along the way, the certainty that made her w
    south coast with the Relic before the House knows it is gone. The reader sees what
    happened. The reader does not know who did it. Neither does Lyra. **This is the cold
    open. The thieves are a mystery until the book earns the reveal.**
-2. **Second scene — the south shore.** The Vierna beach assault lands at dawn: assault boats,
+2. **Second scene — the south shore.** The Verlaine beach assault lands at dawn: assault boats,
    front-doors down, Myrmidons wading through surf — *reverse Normandy* (see FFVIII Siege of
    Dollet). Lyra is Thrice Infused and leads the beach defense. She picks up armored soldiers
    and throws them into the surf. She turns what should have been a beachhead into a rout.
-   This is not coincidence: **the beach assault was Prelacze's cover operation**. The Vierna
+   This is not coincidence: **the beach assault was Prelacze's cover operation**. The Verlaine
    landing was arranged to hold every Ocipheus Templar on the south shore while the Blink
    Thieves walked out the north archive with the Relic.
 3. **Lyra goes home a champion.** Ocipheus Station receives her as the defender of the island.
@@ -46,7 +46,7 @@ stolen Relic weapon — and losing, along the way, the certainty that made her w
    he authorized. Lyra notes this. She crosses the Narrow Sea.
 
 **Three-act structure:**
-- **Act 1** (Ch.1–~9): Ocipheus → Narrow Sea → Vierna (Rowe found) → Three Points
+- **Act 1** (Ch.1–~9): Ocipheus → Narrow Sea → Verlaine (Rowe found) → Three Points
   The Relic is four days ahead. Act 1 ends at Three Points.
 - **Act 2** (~Ch.10–21): Three Points → Atrament → Sal Vento (the Eirene-7 is stolen; M-101
   body-snatches its control-mind and flies it; melee covered by Wren once she joins at Pallor)
@@ -112,7 +112,7 @@ covered by Wren.)*
 |---|---|---|---|---|
 | Dame Lyra | Ocipheus (Templar) | Tank / POV | Early 30s | Start |
 | Orim Zebulun | Calyx-born, independent | Scry Mage | Late 60s | Start |
-| Soren Rowe / M-1018883 | Vierna (Earth, 1919) — a stolen mind in a Myrmidon automaton | Ranged DPS / body-snatcher | Mind mid-30s | Vierna |
+| Soren Rowe / M-1018883 | Verlaine (Earth, 1919) — a stolen mind in a Myrmidon automaton | Ranged DPS / body-snatcher | Mind mid-30s | Verlaine |
 | Wren Caerglas | Calyx (Loera-trained) | Melee DPS (Rogue / Blink); **female** | 22 | Pallor |
 
 ### Dame Lyra — POV {#SS-VIGL-1a}
@@ -129,7 +129,7 @@ covered by Wren.)*
   The Canon Immaculate commands her. This is the chain she breaks at the end.
 - **Rank:** Dame; three infusions; closing on Paladin (Liturgy rank ladder).
 - **NO institutional number — LOCKED:** Dame Lyra has no designation number and never has. She
-  is not from Vierna; Ocipheus does not number its people. **The number is the dehumanization of
+  is not from Verlaine; Ocipheus does not number its people. **The number is the dehumanization of
   the stolen minds** — an M-prefix serial brands a Myrmidon (a mind Scried out of a body and put
   in a machine; e.g. Soren Rowe, M-1018883). Lyra is a respected Templar with a name and faith in
   her mission. Any prose that assigns Lyra a designation number (T-044, M-101, or any other) is an
@@ -156,7 +156,7 @@ covered by Wren.)*
   Half-plate, not full (she left her full Vigil plate at the Station). White and Black Tincture
   field kit; Grey Tincture; Gold Tincture (one emergency dose, requires annual re-certification).
 - **Ardea's rifle — the ranged addition:** At Schmalburg, after Ardea Marten falls, Lyra takes
-  up her fallen comrade's Vierna-issue bolt-action rifle and carries it onward from there — a
+  up her fallen comrade's Verlaine-issue bolt-action rifle and carries it onward from there — a
   fourth option alongside the Dissolution Blade and Vigil Shield, drawn when range serves the
   fight better than the Blade's reach. Soren Rowe, the party's WW1-trained marksman, teaches her
   to lead a moving target and work the bolt without breaking sightline — a small, real thread of
@@ -265,11 +265,11 @@ covered by Wren.)*
 ### Soren Rowe (M-1018883) — The Myrmidon {#SS-VIGL-1c}
 
 - **WHAT HE IS — THE CENTRAL HORROR:** Soren Rowe is not a body the Cauld captured. He is a
-  *mind* the Cauld stole. Vierna Scried his consciousness out of a living man in another Sphere —
+  *mind* the Cauld stole. Verlaine Scried his consciousness out of a living man in another Sphere —
   drew it out of him like a hook drawing a fish out of dark water — and installed it in a
   **disposable automaton**: a black, jointed chassis with a single oval optical receptor where a
   face should be. The body he was born in died in his own world the moment he was taken, one more
-  corpse found without a mark on it. What crosses the membrane and marches in Vierna's ranks is
+  corpse found without a mark on it. What crosses the membrane and marches in Verlaine's ranks is
   the man himself — awake, whole, remembering everything — worn like a tool.
 - **He remembers everything.** There is no blur, no merciful forgetting; his whole life is intact,
   which is the cruelty of it. (This supersedes any earlier "memory accumulates and blurs" notion —
@@ -290,7 +290,7 @@ covered by Wren.)*
   say until now. Whether it is his pronunciation of an English name, the Cauld approximation, or the
   only form the membrane allows through, no Cauld map will ever carry it.
 - **The translation faculty — THIS IS THE CRITICAL RULE:**
-  The Myrmidon shell carries a translation faculty built into its Vierna manufacture: it renders
+  The Myrmidon shell carries a translation faculty built into its Verlaine manufacture: it renders
   whatever he means to say into fluent Cauld, and renders whatever is said to him into words he
   understands, instantly and completely, from the moment the Taking is complete. He is not mute
   and never has been. What the reader gets in his POV chapters and what the party hears out of the
@@ -304,7 +304,7 @@ covered by Wren.)*
   incapacity — and it is weeks before the party gets more than his designation and a soldier's
   account of himself.
 - **He recognizes the geography — and never says so:**
-  The Cauld maps onto a Europe he half-knows. Vierna's river-country bends the way rivers bend
+  The Cauld maps onto a Europe he half-knows. Verlaine's river-country bends the way rivers bend
   in northern France — he was in northern France eight months ago; the specific angle of light
   through rain is the same. The Atrament factories have the soot-and-iron smell of the English
   Midlands at capacity. When the party reaches Ocipheus at the book's end, it hits him like
@@ -314,32 +314,32 @@ covered by Wren.)*
   filed and released. The reader assembles the picture. Rowe does not explain it.
   **The mystery is preserved by brevity. Never more than a line. Always sensory, never analytical.**
 - **Why 1919 matters:** He has been home from France for eight months. He has seen what a war
-  does to a geography. When he walks through Vierna's border ruins and Atrament's staged
+  does to a geography. When he walks through Verlaine's border ruins and Atrament's staged
   military columns, he reads them with that experience underneath — not intellectually, but
   bodily. He knows what it looks like when a country is preparing. He knows what the faces of
   soldiers in the third year of a campaign look like. He notes it and says nothing.
-- **The weapons recognition:** The bolt-action rifles the Vierna soldiers carry are a later
+- **The weapons recognition:** The bolt-action rifles the Verlaine soldiers carry are a later
   development of what his world was building. His world built the prototype; the Cauld uses the
   finished military form. He sees this in the barracks before he can say a full sentence in
   Cauld. One line. He notes it. He does not explain it. He moves on.
-- **Myrmidon designation:** M-1018883 (short: M-101) — his Vierna intake designation, stamped on
+- **Myrmidon designation:** M-1018883 (short: M-101) — his Verlaine intake designation, stamped on
   the chassis. The "M" is Myrmidon: a mind Scried out of a living person in another Sphere and
   issued a disposable body. Not a captured man — a stolen consciousness in a machine.
-- **In the Cauld:** Seven months total (three as active Vierna conscript, four as deserter).
+- **In the Cauld:** Seven months total (three as active Verlaine conscript, four as deserter).
   Fluent in Cauld from the moment the shell activates — the translation faculty is instant, not
   learned. What changes over the seven months is not his vocabulary but his willingness:
   designation only, then clipped answers, then guarded testimony, then, at the very end, Aldenvast.
-- **The body (the chassis) — small, disposable:** A Vierna military Myrmidon-shell. Black,
+- **The body (the chassis) — small, disposable:** A Verlaine military Myrmidon-shell. Black,
   jointed, and deliberately **small** — a head shorter than the men around it, built to the
   cheapest disposable-infantry spec — with an oval optical receptor for a face: no expression to
   read, no eyes to meet. Issued, not born; mass-produced, which is why the intake protocol selects
   for nothing. It does not tire, bleed, or heal — it dents, and is repaired or scrapped. He runs
-  it on motor-memory: the mill floor, the French trenches, the Vierna drill are all a dead man's
+  it on motor-memory: the mill floor, the French trenches, the Verlaine drill are all a dead man's
   body-knowledge driving a machine that never knew any of it. **The doubled tragedy:** a whole
   man's mind put not merely into a machine but into a *lesser, throwaway* one — the little unit
   no one bothers to watch.
 - **Wireless transfer — the body-snatcher (his combat identity) {LOCK}:** A Myrmidon's essence —
-  mind, or soul — is **wirelessly transferable between shells.** It is how Vierna installs him in
+  mind, or soul — is **wirelessly transferable between shells.** It is how Verlaine installs him in
   the first place; it becomes, once he learns to do it himself, his one terrible freedom. Soren
   Rowe can **jump**: cast himself out of the small shell and into another machine body — an
   unoccupied automaton, a war-chassis, a turret (see the flashback: he *was* Turret #34) — wear
@@ -354,7 +354,7 @@ covered by Wren.)*
   destroyed, dragged off, or claimed while he is gone, and then he *cannot get it back* and must
   find a *similar* replacement, wearing a stranger's spec until he can. His own small shell is
   irreplaceable to him; to be cut off from it is a small death. The power is never free.
-  **Living Weapons — the eviction cost {LOCK}:** Much of Vierna/Atrament war materiel is not
+  **Living Weapons — the eviction cost {LOCK}:** Much of Verlaine/Atrament war materiel is not
   empty shell but a **Living Weapon** — a machine or weapon already animated by another bound,
   stolen mind. M-101 can jump freely into anything empty, dormant, or derelict; to take a
   *Living* Weapon he must **kill the resident mind first** — a contested, costly eviction, and
@@ -368,7 +368,7 @@ covered by Wren.)*
   (the flashback) is the origin demonstration of the wireless transfer itself, before he ever
   learns that taking an occupied Living Weapon means taking a life.
 - **Passive scan / appraisal — the intake routine he cannot switch off {LOCK}:** The Myrmidon
-  chassis runs a Vierna military intake/appraisal subroutine baked into the shell itself; M-101
+  chassis runs a Verlaine military intake/appraisal subroutine baked into the shell itself; M-101
   cannot disable it. It fires passively, unbidden, on whatever he studies with intent: gear
   (make, Sphere-source pattern, condition, load) and living things (mass, gait, weak points)
   each print as a short, cold **STAT-BLOCK** in his interior register — tin-precise, clinical,
@@ -391,14 +391,14 @@ covered by Wren.)*
   and always-on, never a voluntary power he chooses to use; scans machines/gear/creatures only,
   never the minds of the party; on Sinterspawn: off-catalogue / no match, every time; can
   interrupt his own fluent speech mid-sentence when it fires unbidden.
-- **What he knows:** In Vierna barracks he met men who called themselves Sphere 22, Sphere 14,
+- **What he knows:** In Verlaine barracks he met men who called themselves Sphere 22, Sphere 14,
   Sphere 8. He has seen the catalogue notation on intake documents. He knows the numbers go
   past 31. He can say this by Chapter 16.
-- **Weapon:** Vierna-issue bolt-action rifle — five rounds, reliable in mud and rain. He kept
+- **Weapon:** Verlaine-issue bolt-action rifle — five rounds, reliable in mud and rain. He kept
   it when he deserted. He knows how to maintain it, how to lead a moving target, what the
   report sounds like in a stone space (wrong; it always sounds wrong in stone). He carries
   a bayonet. He has never used the bayonet. He will.
-- **His military training:** Vierna service is real training layered on top of French service.
+- **His military training:** Verlaine service is real training layered on top of French service.
   He fights effectively when he does not understand the tactical situation. At Schmalburg he
   shoots through a crossfire by reading terrain rather than orders. The party's respect comes
   before he chooses to explain himself — he could speak from the first night, but grief and
@@ -422,13 +422,13 @@ scene establishes the atrocity that ripples through the rest of the book. Imager
   all around him the **wreckage of his own memories** (the mill, the canal, France, his mother's
   kitchen), not as pictures but as debris, drifting, some of it turning slowly out of reach.
 - **Waking in an alien body.** Then weight. Wrong weight. He wakes *inside a machine*: the oval
-  receptor opening on a grey Vierna muster-yard; a body that answers his intention a half-beat
+  receptor opening on a grey Verlaine muster-yard; a body that answers his intention a half-beat
   late and reports nothing back — no warmth, no ache, no breath. He tries to scream and the sound
   that comes out is not his.
 - **The naming.** The line of them, black and identical. *"Em One Oh One Triple Eight. Step forward."* He steps forward because the designation is the only thing in this world that is
   unambiguously his, and he hates that it is.
 - **The airship / Turret #34.** The one action the flashback shows before the cut back to the
-  fire: aboard a Vierna gunship crewed by Myrmidons at the turrets, he is **Turret #34**, and in
+  fire: aboard a Verlaine gunship crewed by Myrmidons at the turrets, he is **Turret #34**, and in
   the engagement **#34 refuses to fire** — the single act of will the chassis will still let him
   keep. Afterward, the only sense the shell gives him honestly: **burnt ozone**, the firing gear
   cooking itself — and the knowledge that a refusal, in a disposable body, is only ever *noted*,
@@ -437,7 +437,7 @@ scene establishes the atrocity that ripples through the rest of the book. Imager
 **Delivery:** the reader and the party both get the same articulate 1919 man — the shell's
 translation faculty means nothing is lost between his mind and his mouth. What survives from the
 old device is the toneless, tin-flat delivery: a fully human voice rendered without warmth or
-inflection, which is its own kind of gap. **Ripple:** every later beat with a Vierna Myrmidon,
+inflection, which is its own kind of gap. **Ripple:** every later beat with a Verlaine Myrmidon,
 every "death without cause" mentioned in passing, should carry this scene underneath without
 restating it.
 
@@ -455,7 +455,7 @@ The power earns its keep by escalating and by costing. Recommended deployment:
    an enemy emplacement; M-101 jumps into the **mortar that is killing them** and it goes silent,
    or turns on its own line. Fast, tactical, quietly horrifying — the enemy's own iron, possessed.
 3. **Become the airship — Eirene-7 acquisition (SK1600).** The masterstroke and the callback: he
-   was **Turret #34** on a Vierna gunship; now, to steal the Eirene-7, **he BECOMES the airship,**
+   was **Turret #34** on a Verlaine gunship; now, to steal the Eirene-7, **he BECOMES the airship,**
    flying it from inside its control-mind. Highest **cost/tension** — a hull that large is hard to
    leave; he risks being stranded as the ship, unable to get home to his small shell. The
    Eirene-7 is a **Living Weapon**: becoming it means killing the mind already bound inside it
@@ -501,7 +501,7 @@ The power earns its keep by escalating and by costing. Recommended deployment:
   Canon's administrative seat, a nominally sovereign House so deeply intertwined with the Liturgy
   that it functions as a puppet state. He does not need military force. He has canonical review,
   transit authorization, and the entire institutional machinery. Ocipheus also serves as the
-  traditional intermediary between Vierna (Myrmidon armies) and Atrament (factory production) —
+  traditional intermediary between Verlaine (Myrmidon armies) and Atrament (factory production) —
   neither House trusts the other, both accept the Liturgy's canonical process. This is what
   gives the Liturgy its actual power: not holiness but indispensability. Prelacze understands
   this perfectly. He is exploiting the architecture, not violating it.
@@ -642,7 +642,7 @@ discovers who all three were. That is what makes the confrontation land.
   for the first time since the theft.
 - **Her moment alone:** She has the Relic. She could still take it north to Pallor. Nobody is
   watching. What happens instead: Orim Zebulun finds her — Orim has been tracking the Relic's
-  scrying residue since Vierna. Orim shows her what the Rod sees at this range from the eastern
+  scrying residue since Verlaine. Orim shows her what the Rod sees at this range from the eastern
   plains. What is moving in the Sinter basin, miles below the surface, moving at the rate of
   change he shows Wren. *How long?* Wren asks. Orim says: *Since Year 1079, at minimum. The
   rate has been accelerating for eleven years.* Wren sits down in the field with the Relic
@@ -712,10 +712,10 @@ is on the moor.
 
 ### The war as ambient texture throughout the journey {#SS-VIGL-3a}
 
-The Vierna/Atrament war is not background. It is present in every chapter from Vierna onward.
+The Verlaine/Atrament war is not background. It is present in every chapter from Verlaine onward.
 
 **What the party maneuvers around (ongoing from Ch.7 through Ch.10):**
-- Vierna: conscript columns on the road; intake stations; the particular quality of a
+- Verlaine: conscript columns on the road; intake stations; the particular quality of a
   military state where every civilian knows not to be on the road after a certain hour
 - Three Points: war profiteers; both armies' quartermasters working the same market;
   the reason the town is neutral is that both sides need the market more than the territory
@@ -734,11 +734,11 @@ Rowe knowing what a line looks like when it breaks.
 
 ### Geography in order:
 1.  Ocipheus Station (start and end) — Lyra departs alone; the Relic is four days ahead
-2.  Channel crossing to Vierna
-3.  Bressant, Vierna (Veil River; Rowe found)
+2.  Channel crossing to Verlaine
+3.  Bressant, Verlaine (Veil River; Rowe found)
 4.  Three Points neutral ground (Act 1 ends here) — intel gathered: impounded airship
     (*Eirene-7*) held at Sal Vento, a Loera cliff-side port
-5.  Vierna-Atrament border
+5.  Verlaine-Atrament border
 6.  Schmalburg, Atrament (raid; Ardea's death)
 7.  **Sal Vento (Loera cliff-side port)** — mission: acquire the *Eirene-7*; the party moves
     through the port's cargo transfer lines to reach the impounded hull; M-101 body-snatches
@@ -746,7 +746,7 @@ Rowe knowing what a line looks like when it breaks.
     operation without a formal discussion having occurred.
 8.  Forge Hearth (aboard the *Eirene-7*; faster than overland; membrane thin here)
 9.  Calyx — the plains; monster corridors; the Relic's trace grows warmer; Orim reads it;
-    **active war front** — the Vierna/Atrament line runs through Calyx's eastern plains;
+    **active war front** — the Verlaine/Atrament line runs through Calyx's eastern plains;
     the party maneuvers around it from the Eirene-7, reading smoke columns to find the gap
 10. **The no-colors engagement (Calyx chapter — exact beat TBD)** — at some point the party
     lands in the middle of an active skirmish. The Eirene-7 has no House flag. The party
@@ -786,7 +786,7 @@ anything he does.
 | Kingdom | What they Scry | Plant in the prose — what Lyra sees and moves past |
 |---|---|---|
 | **Ocipheus** | Historical moments — Relics | The archive register: every Relic has a source Sphere and a retrieval year. The year columns are long. Lyra knows this catalogue. She has never thought about the source side. |
-| **Vierna** | People — Myrmidons conscripted from Spheres | Rowe's intake form in the records office. Standard. One of thousands filed that year. The clerk is bored. **Vierna documents theirs. The other Houses don't.** |
+| **Verlaine** | People — Myrmidons conscripted from Spheres | Rowe's intake form in the records office. Standard. One of thousands filed that year. The clerk is bored. **Verlaine documents theirs. The other Houses don't.** |
 | **Atrament** | Materials + creatures — feeds the furnaces | Something in the Heloth yard that is cooling in a trough that is not shaped for slag. Nobody mentions it. The night shift keeps moving. |
 | **Calyx** | Flora + fauna — agricultural Scrying | The monster corridors. A farmer explains the fence-line with the same tone he uses for weather: *They started getting out about sixty years ago. You patch the fence. You hunt what comes through.* |
 | **Pallor** | Infusion Catalyst + Champions | The moor-hounds will not settle near the Relic. Aldric watches them and does not explain why. The infusion Catalyst Orim carries in his preparation kit — Lyra has never asked where it comes from. |
@@ -795,10 +795,10 @@ anything he does.
 ---
 
 ### The living history at each threshold:
-- **Vierna:** Archival Gate at Bressant (Arnault d'Archival Year 312); Treachery Quarter; *L'Accord* barge; fog off the lowlands
+- **Verlaine:** Archival Gate at Bressant (Arnault d'Archival Year 312); Treachery Quarter; *L'Accord* barge; fog off the lowlands
 - **Three Points:** neutral ground since the early Compact; no House stations forces here; the place where three powers agree the only thing worse than sharing is fighting. **Act 1 ends here.** The party learns here that an impounded airship — the *Eirene-7* — is held at Sal Vento, a Loera cliff-side port.
 - **Atrament:** Schmalburg named for the Battle of the Small Fortress Year 701; Ignamund Unburnt's *Ewige Flamme* in the capital; Forge Hearth Hearth-One through Hearth-Eleven. **Wylla Mother of Men** — a Cauld invocation Lyra overhears an officer give to his column before they march south-east toward The Pass. The troops repeat it like a ward: *Wylla Mother of Men.* Not a prayer exactly — more like a name you say out loud to mean *I know where I come from.* Who or what Wylla is is not explained to the reader. That is deliberate. Lyra files it and moves on.
-- **Calyx:** Great plains under wide sky; monster incursion corridors; people who farm the same land they hunt creatures on; Sphere fauna escaping from agricultural Scrying for generations. The war runs through the middle of it — the Vierna/Atrament front line cuts across Calyx's eastern territory; the locals have learned which smoke columns mean artillery and which mean a brush fire. The party maneuvers around engagements for two chapters. Then they stop being able to. The no-colors engagement is here.
+- **Calyx:** Great plains under wide sky; monster incursion corridors; people who farm the same land they hunt creatures on; Sphere fauna escaping from agricultural Scrying for generations. The war runs through the middle of it — the Verlaine/Atrament front line cuts across Calyx's eastern territory; the locals have learned which smoke columns mean artillery and which mean a brush fire. The party maneuvers around engagements for two chapters. Then they stop being able to. The no-colors engagement is here.
 - **Pallor:** Upland moor and fjord coast; fog that comes in fast; the heather that phosphoresces at night; no House insignia anywhere; Caer Glas Moor at the heart of it; the last ungoverned land before the strait
 - **The Pass / Eirene's Gate:** named for Eirene, last Sinter Champion, who died here Year 1081; *Sinter remembers even if we don't*; towers on both banks; the stamp; the departure log on ruled paper; the narrow water between the Cauld and everything else
 - **Sinter:** not a zone. A reckoning.
@@ -932,9 +932,9 @@ The party has a clear road south.
 
 ---
 
-**The Cold Water Scry — Mountain Passes, Vierna Entry (Ch.7)**
+**The Cold Water Scry — Mountain Passes, Verlaine Entry (Ch.7)**
 
-In the Vierna mountain passes in late autumn, the passes are dry — the seasonal snowmelt
+In the Verlaine mountain passes in late autumn, the passes are dry — the seasonal snowmelt
 has finished and the next snowfall has not yet come. Three days of altitude crossing with
 Heloth couriers and no water source.
 
@@ -1101,11 +1101,11 @@ through — seeds, spores, animals, organisms. Some survived. The strangeness of
 biology is evidence of centuries of membrane puncture.
 
 **Flora (Sphere-origin, established in the Cauld):**
-- **Vierna deepvine:** Purple-black leaves; bioluminescent sap that appears blue-tinted in wine;
+- **Verlaine deepvine:** Purple-black leaves; bioluminescent sap that appears blue-tinted in wine;
   established 400 years in the terraced wine-country; the vines' root systems are unusually
   aggressive and have displaced native ground cover entirely in some regions
 - **Silverthorn hedge:** Silver filament leaves catch sound and produce a faint harmonic in
-  wind; used as natural perimeter alarms by Vierna border installations; the sound carries
+  wind; used as natural perimeter alarms by Verlaine border installations; the sound carries
   information (what direction, how fast) that trained listeners can read
 - **Forge Hearth ember-fungi:** Orange bioluminescent; feeds on Heloth chemical exhaust and
   Catalyst-adjacent discharge; grows on and around construct maintenance stations; the glow
@@ -1206,7 +1206,7 @@ local problems.
 
 | Distance from Sinter | What it looks like | What the locals call it |
 |---|---|---|
-| **Ocipheus / Vierna** | Occasionally unusual. Livestock born wrong. A river creature that doesn't behave like its kind. Rare enough to be singular events. | Ill omen. Unlucky birth. That farm's been cursed for years. |
+| **Ocipheus / Verlaine** | Occasionally unusual. Livestock born wrong. A river creature that doesn't behave like its kind. Rare enough to be singular events. | Ill omen. Unlucky birth. That farm's been cursed for years. |
 | **Three Points / Atrament** | More frequent. Something in the maintenance yards that leaves prints no engineer can identify. The ember-fungi growing in configurations that weren't planned. | Sphere leakage. A known hazard. The foremen know which tunnels to avoid at night. |
 | **Calyx** | The monster corridors. Sphere fauna escaped from agricultural Scrying decades ago and crossbred with local predators. The hybrids are large, territorial, and getting larger. The fences are newer every generation. | The monster problem. A management issue. You farm, you fence, you hunt what comes through. |
 | **Pallor** | The moor-hounds were bred specifically to track hybrids — that is the original purpose of the six-legged tracking animal. Pallor's warrior culture exists because something needs to be killed regularly and it takes an infused practitioner to do it reliably. Vaen's six infusions are not prestige. They are necessity. | The creatures of the moor. The old names. The reason the Champion exists. |
@@ -1222,9 +1222,9 @@ that went numb and stopped closing. What moves through it now doesn't know it's 
 through anything at all.
 
 **The slaves — SUBTEXT ONLY:**
-Vierna conscripts Myrmidons and files the paperwork. The other Houses do not file the
+Verlaine conscripts Myrmidons and files the paperwork. The other Houses do not file the
 paperwork. Every House in the Compact keeps servants, laborers, and soldiers who came
-through the membrane involuntarily. Vierna is the only House that calls it a system. The
+through the membrane involuntarily. Verlaine is the only House that calls it a system. The
 others call it something else — or nothing at all. The Cauld's labor base, at its lowest
 strata, is people from other realities who did not choose to be here. The peasant shoveling
 slag in an Atrament yard. The woman weaving in a Calyx farmhouse. The soldier who follows
@@ -1232,7 +1232,7 @@ orders without knowing which orders are real.
 
 Everyone who has ever disappeared without explanation in any Sphere the membrane touches
 is a potential Myrmidon. The Cauld does not have a word for this. It has an intake form —
-in Vierna. Everywhere else it has nothing.
+in Verlaine. Everywhere else it has nothing.
 
 Rowe is one of them. He knows what the intake form means. When he sees others filed the
 same way, he does not comment. The prose does not comment. The weight is in the image:
@@ -1282,7 +1282,7 @@ is permanently gone from the source Sphere's material record.
 
 **The permanent war — the condition the Cauld lives inside:** {#SS-VIGL-6b-war}
 
-Vierna and Atrament have been at war, continuously, for longer than anyone alive can
+Verlaine and Atrament have been at war, continuously, for longer than anyone alive can
 remember. Not a series of wars. One war, with truces. The truces average eleven years.
 The current truce is in its ninth year. Everyone who has grown up during it is about to
 find out what the Cauld looks like when it ends.
@@ -1291,22 +1291,22 @@ No one is outside the conflict. Every House has chosen a position — not ideolo
 
 | House | War role | What they get | What it costs them |
 |---|---|---|---|
-| **Vierna** | Belligerent — the army | Mandate to conscript; institutional authority over the Myrmidon intake program | Permanent mobilization; the entire state is a military; no civilian governance separate from the corps |
-| **Atrament** | Belligerent — the forge | Unlimited purchase orders from both Vierna and, quietly, from Atrament's own black-market resale to Vierna's enemies | The Forge Masters have no loyalty to each other beyond the Hearth Table vote; the war keeps them unified because peace would fracture them |
+| **Verlaine** | Belligerent — the army | Mandate to conscript; institutional authority over the Myrmidon intake program | Permanent mobilization; the entire state is a military; no civilian governance separate from the corps |
+| **Atrament** | Belligerent — the forge | Unlimited purchase orders from both Verlaine and, quietly, from Atrament's own black-market resale to Verlaine's enemies | The Forge Masters have no loyalty to each other beyond the Hearth Table vote; the war keeps them unified because peace would fracture them |
 | **Ocipheus** | Isolationist by doctrine; dragged in by reality | The island wants no part of the war; the Liturgy's canonical authority makes it impossible to stay out — both sides demand adjudication, and refusing to adjudicate means choosing a side | Prelacze has converted Ocipheus's forced participation into personal leverage; the island is isolationist; the Canon Immaculate is not; his power depends on the war continuing at adjudicable levels |
-| **Loera** | Plays both sides — supply and intelligence | Runs cargo for Vierna; runs cargo for Atrament; runs intelligence for both simultaneously; the information differential is the profit | If either side discovers they're doubled, Loera's independence ends; they stay alive by knowing more than either belligerent can verify |
-| **Calyx** | Coerced breadbasket — feeds both sides | Guaranteed purchase contracts, paid in whatever currency the buying army uses | They have no army worth naming; they cannot refuse either side without being occupied; they feed Vierna and Atrament simultaneously and call this neutrality; the monster corridors expand because war economics demand more farmland every generation |
-| **Pallor** | Mercenary Champions — the only thing Pallor exports | Pallor has no industry, no agriculture worth naming, no navy. What it has is a culture that produces highly-infused individual warriors faster than any other House. Both Vierna and Atrament hire them for breakthrough operations, assassination, and situations where an infused Champion turns a battle. The fee is paid in Catalyst, which Pallor uses to infuse the next generation of Champions. | Independence maintained entirely by being too useful to either side to absorb — conquering Pallor would mean the other side gets the Champion pipeline instead. The equilibrium holds. For now. |
+| **Loera** | Plays both sides — supply and intelligence | Runs cargo for Verlaine; runs cargo for Atrament; runs intelligence for both simultaneously; the information differential is the profit | If either side discovers they're doubled, Loera's independence ends; they stay alive by knowing more than either belligerent can verify |
+| **Calyx** | Coerced breadbasket — feeds both sides | Guaranteed purchase contracts, paid in whatever currency the buying army uses | They have no army worth naming; they cannot refuse either side without being occupied; they feed Verlaine and Atrament simultaneously and call this neutrality; the monster corridors expand because war economics demand more farmland every generation |
+| **Pallor** | Mercenary Champions — the only thing Pallor exports | Pallor has no industry, no agriculture worth naming, no navy. What it has is a culture that produces highly-infused individual warriors faster than any other House. Both Verlaine and Atrament hire them for breakthrough operations, assassination, and situations where an infused Champion turns a battle. The fee is paid in Catalyst, which Pallor uses to infuse the next generation of Champions. | Independence maintained entirely by being too useful to either side to absorb — conquering Pallor would mean the other side gets the Champion pipeline instead. The equilibrium holds. For now. |
 
 **What the war does to the membrane:**
-The arms race is the Scrying program. Vierna needs soldiers from other Spheres because
+The arms race is the Scrying program. Verlaine needs soldiers from other Spheres because
 the Cauld's own population cannot sustain the intake numbers. Atrament needs ore, materials,
 and weapons technology from other Spheres because native production is insufficient for
 industrial-scale war. The membrane tears widen every decade. The Sinter overflow gradient
 worsens. Nobody connects these because connecting them would require stopping the war, and
 nobody can afford to stop the war.
 
-The bolt-action rifles in Vierna's barracks were not Scried for curiosity. They were
+The bolt-action rifles in Verlaine's barracks were not Scried for curiosity. They were
 Scried because the arms race requires the Cauld to steal military technology from Spheres
 where warfare has advanced further. Rowe's world made those rifles. The Cauld tore a hole
 in Rowe's world and took them — and Rowe, because he was standing close enough and knew
@@ -1328,7 +1328,7 @@ actually is. The assumption that every House has a king in armor on a throne is 
   belligerents drag it in by demanding arbitration. Prelacze converted this forced involvement
   into leverage. The Vigil — Lyra's order — is the canonical enforcement arm; it is supposed
   to be the institution that stays clean.
-- **Vierna** — military council / general staff. The commanding generals of the Myrmidon intake
+- **Verlaine** — military council / general staff. The commanding generals of the Myrmidon intake
   program and the conscript corps collectively hold authority. No single king. The closest thing
   is the Intake Commander — a rotating three-year post elected by the senior corps.
 - **Atrament** — production oligarchy. The Forge Masters — the family heads of the eleven major
@@ -1358,7 +1358,7 @@ actually is. The assumption that every House has a king in armor on a throne is 
 
 **Transmutation rank ladder (relevant to this story):**
 - Soldier (0 infusions; native Cauld) → Knight (1–3 infusions; "Dame" for women) → Paladin (4–6) → Champion
-- **Myrmidon** = a **mind** Scried out of a living person in another Sphere and installed in a disposable Vierna automaton chassis (black, jointed, an oval optical receptor for a face). NOT a captured body — a captured *consciousness*; the original body dies in its home world, unmarked, one of the countless "deaths without cause." NOT on the Transmutation ladder. Soren Rowe is a Myrmidon. Native Cauld soldiers are not Myrmidons. **House distinction (LOCKED):** *Atrament* steals **people** — whole bodies, in small batches, for skilled labor. *Vierna* steals **minds** and issues them bodies. This is the deeper horror the book uncovers: anywhere in any world, a death without a cause is a possible mind-theft. **Minds are wirelessly transferable between shells** — that transfer IS the mechanism of the Taking, and it is why a skilled Myrmidon (Soren Rowe) can jump machine bodies and return to his own (see §1c body-snatcher LOCK). **The scale is in the serial numbers:** Soren Rowe is M-1018883 — the count has run past a million, on the order of **1.02 million** stolen minds. (World-level canon — mirror into [[../universes/CAULD]] / BIBLE Scrying section.)
+- **Myrmidon** = a **mind** Scried out of a living person in another Sphere and installed in a disposable Verlaine automaton chassis (black, jointed, an oval optical receptor for a face). NOT a captured body — a captured *consciousness*; the original body dies in its home world, unmarked, one of the countless "deaths without cause." NOT on the Transmutation ladder. Soren Rowe is a Myrmidon. Native Cauld soldiers are not Myrmidons. **House distinction (LOCKED):** *Atrament* steals **people** — whole bodies, in small batches, for skilled labor. *Verlaine* steals **minds** and issues them bodies. This is the deeper horror the book uncovers: anywhere in any world, a death without a cause is a possible mind-theft. **Minds are wirelessly transferable between shells** — that transfer IS the mechanism of the Taking, and it is why a skilled Myrmidon (Soren Rowe) can jump machine bodies and return to his own (see §1c body-snatcher LOCK). **The scale is in the serial numbers:** Soren Rowe is M-1018883 — the count has run past a million, on the order of **1.02 million** stolen minds. (World-level canon — mirror into [[../universes/CAULD]] / BIBLE Scrying section.)
 - Lyra: 3 infusions — "Thrice Infused" (folk term for the 3-infusion ceiling of Knight rank,
   the maximum before Paladin). Each infusion awarded for distinguished service. She is still
   ascending. The ceiling is theoretical. At 3 infusions she is picking up armored soldiers
@@ -1434,7 +1434,7 @@ The shared notation format is not commentary — it is shown in the text. The re
 
 **Travel (no horses, no beasts of burden):**
 - Heloth courier: single-rider; Lyra and Orim ride out from Ocipheus Station; rough but fast
-- Heloth cavalry (Vierna): riders perched on the shoulder housings; the pursuit in Beat 3
+- Heloth cavalry (Verlaine): riders perched on the shoulder housings; the pursuit in Beat 3
 - River barge: commercial; cover; the party hides in the cargo hold
 - Atrament rail: fastest fixed-route transport; mixed military/civilian
 - The *Eirene-7*: fastest non-fixed transport in the Cauld; fuel-limited; water-landing capable
@@ -1563,7 +1563,7 @@ are real.
   the stamp. Ancient stone buildings where the pass infrastructure exists, because someone
   built shelter here centuries ago and the patrol uses what is there. But no wall. The
   barrier is the terrain. The Cauld patrols it the way you patrol a coastline.
-- Vierna's barracks: a great hall that has been converted to conscript bunks. Stone
+- Verlaine's barracks: a great hall that has been converted to conscript bunks. Stone
   arches overhead. Bolt-action rifles stacked in the racks where polearms stood. Myrmidon
   intake paperwork processed at a trestle table under a vaulted ceiling.
 - The Liturgy's canonical office: a cathedral administrative wing — carved stone, high
@@ -1604,7 +1604,7 @@ a small party, one new member per leg of the journey; each House realm is a dist
 with its own climate, visual palette, culture-shock, and threat register; the party travels
 through them in sequence; the MacGuffin turns out to be about more than its retrieval; the
 ending recontextualizes the whole. Each realm should feel like entering a new zone of the game:
-- **Vierna** — wintry military state; conscript culture; WW1 rifles in stone barracks; fog off the lowlands
+- **Verlaine** — wintry military state; conscript culture; WW1 rifles in stone barracks; fog off the lowlands
 - **Three Points** — neutral ground; no House insignia on any wall; the smell of river-port commerce and quiet menace
 - **Atrament** — industrial thunder; the Forge Kingdom; factories that never stop; ember-fungi glow on the yards at night
 - **Calyx** — breadbasket and monster corridor; flat plains that offer nowhere to hide; people who farm the same land they hunt creatures on; the monsters are escaped Scrying imports
@@ -1614,7 +1614,7 @@ ending recontextualizes the whole. Each realm should feel like entering a new zo
 
 **Equipment and progression (litRPG texture):** The party accumulates gear across the journey.
 Not a mechanic — texture. Note what everyone carries, what it costs, what it has done. Track
-changes: Lyra's vigil-glass scope acquired in Vierna (salvaged; reads membrane anomalies at
+changes: Lyra's vigil-glass scope acquired in Verlaine (salvaged; reads membrane anomalies at
 range). Rowe's spare ammunition found in Atrament, his night-loading ability built by Loera.
 Orim's Rod is the party's legendary item — limited Catalyst load,
 unreliable results, never expendable. Its limits are as important as its power. The progression
@@ -1648,7 +1648,7 @@ and the Sinter zone chapter) + 3 Rowe chapters + 4 Scribe chapters.
 
 **Sinter is the climactic final destination** — not a transit point. Prelacze suspended
 Lyra's Vigil crossing authority when he learned she was in pursuit; she cannot cross The Pass
-until the story's climax forces it. The full journey runs east across the Cauld — Vierna,
+until the story's climax forces it. The full journey runs east across the Cauld — Verlaine,
 Three Points, Atrament, Calyx, the Balkan approaches — before converging at Eirene's Gate.
 All parties meet at the Sinter aperture. That is where the Relic does what the Relic does.
 
@@ -1674,7 +1674,7 @@ what has happened. The chapter does not explain it to the reader either — the 
 Rowe does not.
 
 **R3 — Seven Months** (between A-chapters 9–10)
-Vierna barracks. Seven months compressed. The bolt-action rifles: he recognizes them as a
+Verlaine barracks. Seven months compressed. The bolt-action rifles: he recognizes them as a
 later generation of something his world made. His world built the prototypes. The Cauld uses
 the finished form. The desertion: the crossfire he was ordered into, nobody recognizable on
 either side, nothing he owed allegiance to. He walks out of the battle line.
@@ -1775,7 +1775,7 @@ active aperture, apparatus crews in position, a war construct evaluation (WC-Eir
 Sphere 42) being assessed by Descent Corps evaluators. She copies the assessment summary.
 Files it. One entry among many.
 
-**S2 — No Action Indicated** (between A-chapters 8–9; after Vierna Entry, before House Atrament)
+**S2 — No Action Indicated** (between A-chapters 8–9; after Verlaine Entry, before House Atrament)
 The assessment volume has tripled in six weeks. She is copying war-construct evaluation
 summaries that individually are routine but cumulatively map to a staging operation. In the
 courtyard, a chain of WC-Eirene units is moved to a staging hall she has never seen used —
@@ -1817,9 +1817,9 @@ in one moment what her sister has understood for weeks.
 | 3 | LYRA | The Wall from Outside — Refused |
 | 4 | ROWE | The Mill — Sphere 31 |
 | 5 | SCRIBE | The Authorization |
-| **6** | **PALLOR** | **East of the Watch — Three Days** *(squad in eastern Vierna; Esvane carries the case; Wren's first question)* |
+| **6** | **PALLOR** | **East of the Watch — Three Days** *(squad in eastern Verlaine; Esvane carries the case; Wren's first question)* |
 | 7 | ROWE | The Taking |
-| 8 | LYRA | Vierna Entry — The Law Doesn't Apply Here |
+| 8 | LYRA | Verlaine Entry — The Law Doesn't Apply Here |
 | 9 | SCRIBE | No Action Indicated |
 | **10** | **PALLOR** | **House Atrament — Everything Properly Filed** *(checkpoint; Esvane's credentials; Petra's second contact; the bickering)* |
 | 11 | LYRA | Sphere 31 — Rowe Found |
@@ -1961,7 +1961,7 @@ architecture in the walls is not decoration. It is infrastructure.
 
 The Cauld will need to face this. All of it. Every House. The Liturgy. The Long Seat.
 The Eaters of Monsters, who have been at the perimeter since the beginning and who know
-things the canonical record doesn't. Atrament's factories. Vierna's Myrmidon armies.
+things the canonical record doesn't. Atrament's factories. Verlaine's Myrmidon armies.
 Loera's routes and intelligence. And whoever — whatever — is at the bottom of the crater,
 1,138 years of alien development deep, alien biology originating from beyond the stars,
 has been building an army.
@@ -2021,7 +2021,7 @@ That is what comes next.
 
 **Subplot:** Soren Rowe / M-101's body-snatching — a stolen mind who can wear any machine, from an overlooked disposable shell to a war-chassis to the Eirene-7 itself, but who must always find his way back to the small, disposable shell that is the only home the Taking left him. A secondary thread runs alongside it: Orim Zebulun's forty years of complicity — he knew about the Myrmidon intake since his first Sinter contract and kept taking the work anyway. Both men are walking evidence of what institutional machinery costs the individual.
 
-*Thematic parallel:* The A-plot asks "What are you loyal to when you find out what the thing you loved actually is?" The subplot mirrors it from the other side of the same machinery: both Lyra and Rowe were remade by the institution that also unmade them — her Transmutation and the Liturgy that awards it; his Taking and the Vierna intake that stamped a number where his name used to be. Neither can undo what was done to make them useful. Orim's forty years of silence is the same violence at one remove: he knew, and he kept taking the contracts.
+*Thematic parallel:* The A-plot asks "What are you loyal to when you find out what the thing you loved actually is?" The subplot mirrors it from the other side of the same machinery: both Lyra and Rowe were remade by the institution that also unmade them — her Transmutation and the Liturgy that awards it; his Taking and the Verlaine intake that stamped a number where his name used to be. Neither can undo what was done to make them useful. Orim's forty years of silence is the same violence at one remove: he knew, and he kept taking the contracts.
 
 **Temporal scheme:** Nonlinear. The story opens at beat 0 with the theft in progress (in medias res, Pallor Knight POV entering the archive), then cuts to beat 24 (Lyra's pre-theft night at the station, the argument about bread, the note left for Vega) before returning to beat 1 (Lyra discovers the aftermath). The Rowe and Vega threads (beats 26, 27, 29, 31, 34, 37, 47) intercut chronologically but are temporally behind the Lyra thread, so the reader knows Rowe's origin before Lyra finds him, and knows Vega has sealed the notary instrument before Lyra arrives at Sinter. The cut at beat 24 withholds the fact that Lyra was present at the station the night before — establishing her as the archive keeper before revealing her as a sister and a person who argued about bread.
 
@@ -2089,7 +2089,7 @@ That is what comes next.
 | 4 | 5251 | 019F5768-973C-78D3 | The Mill — Sphere 31 | ROWE | Rowe's 1919 pre-Taking life | subplot seed (esc 3) |
 | 5 | 5252 | 019F5768-973C-7AA2 | The Authorization | SCRIBE | Vega notarizes; recognizes her sister's name | form-device (esc 4) |
 | 6 | 5253 | 019F5768-973C-7A19 | The Taking | ROWE | Mind Scried into a shell; Turret #34 refusal | subplot / body-snatch origin (esc 6) |
-| 7 | 5254 | 019F5768-973C-72EF | Vierna Entry | LYRA | Military state; the law doesn't apply | escalation (esc 5) |
+| 7 | 5254 | 019F5768-973C-72EF | Verlaine Entry | LYRA | Military state; the law doesn't apply | escalation (esc 5) |
 | 8 | 5255 | 019F5768-973C-7C21 | No Action Indicated | SCRIBE | The suppressed record; the motif | form-device (esc 4) |
 | 9 | 5256 | 019F5768-973C-7417 | Sphere 31 — Rowe Found | LYRA | Automaton found; stolen mind speaks fluently, gives designation only | subplot (esc 5) |
 | 10 | 5257 | 019F5768-973C-7B77 | Seven Months | ROWE | 3 conscript / 4 deserter; weapons recognition | subplot (esc 5) |
