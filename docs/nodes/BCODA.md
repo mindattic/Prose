@@ -1530,12 +1530,12 @@ BCODA is set primarily in the Loop, Bloom Quarter, and gray zones adjacent to bo
 | 552 | `019e4d4a-a829-7f99-bb38-fbc9d183abbd` | Opening Image | A skilled warrior carries a named blade with a troubled… | 2/arrival | 348c | UNSCORED |
 | 543 | `019e4d4a-a829-7960-9731-e0f93fcee537` | Opening Image | Kyle carries a compact shotgun named Cacophony as a las… | 2/arrival | 699c | UNSCORED |
 | 539 | `019e4d4a-a829-74a6-a6f0-d312c7f3141a` | Opening Image | Kyle enters a room with six augmented fighters and imme… | 2/arrival | 1783c | UNSCORED |
-| 556 | `019e4d4a-a829-7b33-87e3-fff01c1ed367` | Opening Image | A card game among friends turns tense when the stakes o… | 2/arrival | 176c | STUB_PROSE,UNSCORED |
+| 556 | `019e4d4a-a829-7b33-87e3-fff01c1ed367` | Opening Image | A card game among friends turns tense when the stakes o… | 2/arrival | 185c | STUB_PROSE,UNSCORED |
 | 516 | `019e4d4a-a829-7231-a311-822a94e1e7cb` | Opening Image | Kyle's neural implant activates in a tense standoff, gi… | 2/arrival | 1124c | UNSCORED |
 | 534 | `019e4d4a-a82a-7f75-ade6-b85c05303459` | Opening Image | Silence draws his specialized blade and assumes a marti… | 2/arrival | 894c | UNSCORED |
 | 526 | `019e4d4a-a82a-7e5e-95b9-a79763bd61c3` | Opening Image | A skilled operative executes a precisely planned passag… | 2/arrival | 891c | UNSCORED |
 | 474 | `019e4d4a-a82a-785a-b05d-018978f7b7be` | Opening Image | A seasoned fighter's haymaker fails against a younger o… | 2/arrival | 1564c | UNSCORED |
-| 492 | `019e4d4a-a82a-7930-b700-333d096e7b45` | Opening Image | Kyle's subdermal armor saves him from lethal shots but … | 2/arrival | 1559c | UNSCORED |
+| 492 | `019e4d4a-a82a-7930-b700-333d096e7b45` | Opening Image | Kyle's subdermal armor saves him from lethal shots but … | 2/arrival | 1556c | UNSCORED |
 | 553 | `019e4d4a-a82a-7184-83fa-fc8fcba280e2` | Theme Stated | Kyle disables his chrome-armed opponent by exploiting t… | 2/arrival | 1377c | UNSCORED |
 | 481 | `019e4d4a-a82a-7ce0-994d-0d697f454a92` | Theme Stated | Kyle's calculated fourth strike destroys the count's cy… | 2/arrival | 909c | UNSCORED |
 | 476 | `019e4d4a-a82a-7b5d-bd3d-03630b07b7a1` | Theme Stated | Kyle survives a brutal four-second fight against four o… | 2/arrival | 1437c | UNSCORED |
@@ -1555,7 +1555,7 @@ BCODA is set primarily in the Loop, Bloom Quarter, and gray zones adjacent to bo
 | 499 | `019e4d4a-a82a-73d8-b9fe-46b96e26f6e1` | Set-Up | He executes his practiced moves while you adapt to his … | 2/arrival | 88c | STUB_PROSE,UNSCORED |
 | 472 | `019e4d4a-a82a-7bb6-bd26-0128e8947ab9` | Catalyst | Kyle concedes the touch to establish mutual respect wit… | 2/arrival | 1145c | UNSCORED |
 | 514 | `019e4d4a-a82a-7664-b956-7f3d12d4b082` | Catalyst | The boss realizes Kyle is vulnerable after drawing firs… | 2/arrival | 427c | UNSCORED |
-| 484 | `019e4d4a-a82a-746b-a5bf-1d11b392d1ac` | Catalyst | He surrenders to the performance, abandoning observatio… | 2/arrival | 155c | STUB_PROSE,UNSCORED |
+| 484 | `019e4d4a-a82a-746b-a5bf-1d11b392d1ac` | Catalyst | He surrenders to the performance, abandoning observatio… | 2/arrival | 135c | STUB_PROSE,UNSCORED |
 | 505 | `019e4d4a-a82a-7530-8f7e-56ec119a5133` | Catalyst | Kyle seizes a technical opening in the locked blades to… | 2/arrival | 735c | UNSCORED |
 | 501 | `019e4d4a-a82a-763d-89cc-4f8b3afbabf5` | Catalyst | A master swordsman's blade severs an opponent's augment… | 2/arrival | 734c | UNSCORED |
 | 494 | `019e4d4a-a82a-7508-84f4-4028cce08307` | Catalyst | The boss's cyborg enforcer loses his arm to Kyle's blad… | 2/arrival | 901c | UNSCORED |
@@ -1668,14 +1668,14 @@ BCODA is set primarily in the Loop, Bloom Quarter, and gray zones adjacent to bo
 | 4276 | `019ee697-28dd-7ad3-a726-393220e6455f` | Fun and Games | A wounded operative visits his fixer for repairs, and i… | 5/exchange | 2828c | UNSCORED |
 | 4291 | `019ee6b7-fcb2-7214-bfa1-e63366442629` | Fun and Games | Kyle inventories his augmented body's damage and limita… | 5/exchange | 1680c | UNSCORED |
 | 4356 | `7db3b46d-1ed6-4b8e-be23-645d14ccd078` | Fun and Games | Kyle discovers an anomalous tip from a mysterious long-… | 5/exchange | 1254c | UNSCORED |
-| 4357 | `dae5141a-2f74-4ef5-b1a2-05246edad1fc` | Fun and Games | Kyle's bike instinctively draws him to an abandoned car… | 5/exchange | 1434c | UNSCORED |
+| 4357 | `dae5141a-2f74-4ef5-b1a2-05246edad1fc` | Fun and Games | Kyle's bike instinctively draws him to an abandoned car… | 5/exchange | 1429c | UNSCORED |
 | 4358 | `de57b51a-81b7-447e-99f4-07a75cace7ea` | Fun and Games | Kyle discovers that his anonymous handler has been cata… | 5/exchange | 1030c | UNSCORED |
 | 4359 | `f2e361dd-a895-475b-8e7a-e59a9652789f` | Fun and Games | Pixel decodes a mysterious frequency her partner detect… | 5/exchange | 1258c | UNSCORED |
 | 5173 | `019f440b-c6d8-71b2-915e-5741a9d7ef8c` | — | Reveals Kyle's self-sufficiency and emotional guardedne… | 5/exchange | 2323c | UNSCORED |
 | 5329 | `019f5ebb-8f03-7ccf-8ae7-c54b0ba51cc0` | — | Establishes Pixel's care for Kyle as expressed through … | 5/exchange | 1691c | UNSCORED |
 | 5331 | `019f5ebb-a93b-7e92-b164-d246f821ec91` | — | Escalates intimacy through technical proximity, using t… | 5/exchange | 2031c | UNSCORED |
 | 5333 | `019f5ebb-b895-7326-a4c3-ca34435c4498` | — | Deepens the 18.7 Hz anomaly from calibration artifact t… | 5/exchange | 2195c | UNSCORED |
-| 5336 | `019f5ebb-c83b-7016-93b4-895476ca5241` | — | Pays off the anomaly's buildup with a measurable spike … | 5/exchange | 2980c | UNSCORED |
+| 5336 | `019f5ebb-c83b-7016-93b4-895476ca5241` | — | Pays off the anomaly's buildup with a measurable spike … | 5/exchange | 2982c | UNSCORED |
 | 5338 | `019f5ebb-d788-7797-bfe5-afc0f531ba2d` | — | Turns the chapter's emotional axis by having Pixel name… | 5/exchange | 2710c | UNSCORED |
 | 5340 | `019f5ebb-e6b2-7059-bde5-f7809fd915c7` | — | Reveals that the half-step's true cost is not the withd… | 5/exchange | 1591c | UNSCORED |
 | 5182 | `c74cbf0e-cd7d-489a-beb8-226fa664ab8a` | — | Recontextualizes the chapter's earlier calibration scen… | 5/exchange | 3782c | UNSCORED |
@@ -1702,7 +1702,7 @@ BCODA is set primarily in the Loop, Bloom Quarter, and gray zones adjacent to bo
 | 4381 | `71ecfa48-87ef-4cfe-a378-26fd5b75c118` | Fun and Games | The team returns in silence after a successful extracti… | 5/quiet | 1028c | UNSCORED |
 | 4382 | `0cf34413-9526-4642-b1fb-6adec09be573` | Fun and Games | He contacts Mrs. Chen to arrange a meeting, establishin… | 5/quiet | 937c | UNSCORED |
 | 4336 | `019ee6f6-7f39-7946-ae6b-d182b96e2ad4` | Fun and Games | Kyle arrives at an unfamiliar address in a weathered ne… | 5/quiet | 1509c | UNSCORED |
-| 4337 | `019ee6f6-cca1-7231-aec7-a88ef829549d` | Fun and Games | Kyle attends a memorial gathering for a fallen operativ… | 5/quiet | 2098c | UNSCORED |
+| 4337 | `019ee6f6-cca1-7231-aec7-a88ef829549d` | Fun and Games | Kyle attends a memorial gathering for a fallen operativ… | 5/quiet | 2095c | UNSCORED |
 | 4383 | `d84f8528-6af8-4b82-95f2-42babb3eed12` | Fun and Games | A clandestine community of operatives gathers silently … | 5/quiet | 1690c | UNSCORED |
 | 4338 | `019ee6f7-0602-7248-9b3f-7c2f17ef6fb1` | Fun and Games | The Psyk's containment breach forces a moment of mutual… | 5/quiet | 1169c | UNSCORED |
 | 4339 | `019ee6f7-3316-76eb-8d3c-f3541c5dcf3b` | Fun and Games | Kyle sits with a psychically overwhelmed Psyk experienc… | 5/quiet | 1145c | UNSCORED |
@@ -1801,7 +1801,7 @@ BCODA is set primarily in the Loop, Bloom Quarter, and gray zones adjacent to bo
 | 1340 | `019e8b77-9774-7dee-8b27-cc6933f63c0f` | Bad Guys Close In | Kyle and Imani share a moment of genuine connection ami… | 8/crisis | 531c | UNSCORED |
 | 1341 | `019e8b77-9774-7954-a66c-081f4f6dd82f` | All Is Lost | Kyle navigates a collapsed viaduct using a makeshift ra… | 8/crisis | 1407c | UNSCORED |
 | 1342 | `019e8b77-9774-7b53-9639-3a4e0d809f0c` | All Is Lost | A skilled operative with military enhancements defeats … | 8/crisis | 3980c | UNSCORED |
-| 5230 | `019f4f06-0000-7000-8000-000000000007` | — | Establishes Kyle's competent, calibrated relationship w… | 8/crisis | 1212c | UNSCORED |
+| 5230 | `019f4f06-0000-7000-8000-000000000007` | — | Establishes Kyle's competent, calibrated relationship w… | 8/crisis | 1124c | UNSCORED |
 | 1343 | `019e8b77-9774-7587-b4ea-7042f221ae54` | All Is Lost | Kyle and Imani approach an anomalous atmospheric distur… | 8/crisis | 1475c | UNSCORED |
 | 1344 | `019e8b77-9774-743a-b069-b940f10073e4` | All Is Lost | A cop responding to a call encounters a supernatural lo… | 8/crisis | 1268c | UNSCORED |
 | 1345 | `019e8b77-9774-7f75-8eb6-25cc533eaad6` | All Is Lost | Kyle navigates an anomalous zone that defies physics an… | 8/crisis | 1651c | UNSCORED |
@@ -1917,7 +1917,7 @@ BCODA is set primarily in the Loop, Bloom Quarter, and gray zones adjacent to bo
 | 5314 | `019f5eba-a096-7986-a61b-432a444e0b6e` | — | Reveals the principle Seito taught — moving in the gap … | 9/revelation | 3060c | UNSCORED |
 | 5317 | `019f5eba-bf58-77da-af25-c864c879cbf7` | — | Turns Kyle from passive observer to committed actor, an… | 9/revelation | 1974c | UNSCORED |
 | 4407 | `fad108e5-d001-4074-9d14-23cb46096495` | — | Establishes Moss as a precise, cornered professional an… | 9/revelation | 5654c | UNSCORED |
-| 4408 | `9466a781-b178-475b-9f72-682b582ab61a` | — | Deepens the Seito principle by showing Kyle has interna… | 9/revelation | 6135c | UNSCORED |
+| 4408 | `9466a781-b178-475b-9f72-682b582ab61a` | — | Deepens the Seito principle by showing Kyle has interna… | 9/revelation | 6132c | UNSCORED |
 | 4304 | `019ee6d7-66ad-765f-bc05-5f390e8f2150` | — | Escalates stakes by making Kyle's survival contingent o… | 9/revelation | 3394c | UNSCORED |
 | 4305 | `019ee6d7-bd0d-78c1-8884-bf8394846333` | — | Pays off the cardiac-suppression setup as a genuine lif… | 9/revelation | 3078c | UNSCORED |
 | 4306 | `019ee6d8-106a-7766-bc7e-1bdf6753bccf` | — | Delivers the extraction's payoff while introducing Nadi… | 9/revelation | 2997c | UNSCORED |
@@ -2088,7 +2088,7 @@ BCODA is set primarily in the Loop, Bloom Quarter, and gray zones adjacent to bo
 | 3142 | `27847ffc-1650-4909-b0c2-d6563458f0f0` | — | Pays off the D-class's humanity by showing the neighbor… | 9/discovery | 794c | UNSCORED |
 | 3209 | `d8a74c8f-dd50-479d-b86d-74dba681aa67` | — | Establishes the crew's working dynamic and professional… | 9/discovery | 2725c | UNSCORED |
 | 3210 | `da75d5bb-ee5a-4df9-9471-7a5fa5e05a22` | — | Introduces the client's mysterious navigational authori… | 9/discovery | 1445c | UNSCORED |
-| 3211 | `fa4b362c-90af-4d4b-ab5a-0446908408ac` | — | Delivers the reader's first visceral encounter with Beh… | 9/discovery | 1741c | UNSCORED |
+| 3211 | `fa4b362c-90af-4d4b-ab5a-0446908408ac` | — | Delivers the reader's first visceral encounter with Beh… | 9/discovery | 1743c | UNSCORED |
 | 3212 | `113d4857-82e5-4f77-a5e4-44901ea4340a` | — | Humanizes the world through small prairie generosities … | 9/discovery | 1116c | UNSCORED |
 | 3213 | `51be287f-bd4d-4fec-9286-5f3523b8039a` | — | Escalates awe into something physical and shared, payin… | 9/discovery | 1934c | UNSCORED |
 | 3214 | `dc005e62-cb72-4251-bb2d-4f26e66a2cad` | — | Turns the chapter's tone from wonder to threat while re… | 9/discovery | 5118c | UNSCORED |
@@ -2150,7 +2150,7 @@ BCODA is set primarily in the Loop, Bloom Quarter, and gray zones adjacent to bo
 | 5216 | `019f4f04-0000-7000-8000-000000000002` | — | Reveals the enemy's capture-preferred mission parameter… | 10/crisis +subplot | 1754c | UNSCORED |
 | 5217 | `019f4f04-0000-7000-8000-000000000003` | — | Escalates the fight to demonstrate how Kyle's ethical c… | 10/crisis +subplot | 2951c | UNSCORED |
 | 5218 | `019f4f04-0000-7000-8000-000000000004` | — | Turns the tactical situation by showing the enemy adapt… | 10/crisis +subplot | 4749c | UNSCORED |
-| 5219 | `019f4f04-0000-7000-8000-000000000005` | — | Pays off eleven years of embedded dread by replacing th… | 10/crisis | 2971c | UNSCORED |
+| 5219 | `019f4f04-0000-7000-8000-000000000005` | — | Pays off eleven years of embedded dread by replacing th… | 10/crisis | 2963c | UNSCORED |
 | 5220 | `019f4f04-0000-7000-8000-000000000006` | — | Delivers the story's central revelation — that the enti… | 10/crisis | 4402c | UNSCORED |
 | 5221 | `019f4f04-0000-7000-8000-000000000007` | — | Closes the entity's presence by resolving every signal … | 10/crisis | 2968c | UNSCORED |
 

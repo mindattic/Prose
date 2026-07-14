@@ -23,7 +23,7 @@ public static class EditBeatCli
 {
     public static async Task<int> RunAsync(string[] args, IServiceProvider services)
     {
-        string? slug = null, filePath = null;
+        string? slug = null, filePath = null, idStr = null;
         int beatNumber = 0, insertAfter = -1;
         bool insertMode = false;
 
@@ -32,10 +32,52 @@ public static class EditBeatCli
             switch (args[i])
             {
                 case "--slug":         if (i + 1 < args.Length) slug        = args[++i]; break;
+                case "--id":           if (i + 1 < args.Length) idStr       = args[++i]; break;
                 case "--beat-number":  if (i + 1 < args.Length) int.TryParse(args[++i], out beatNumber); break;
                 case "--insert-after": if (i + 1 < args.Length) { insertMode = true; int.TryParse(args[++i], out insertAfter); } break;
                 case "--file":         if (i + 1 < args.Length) filePath    = args[++i]; break;
             }
+        }
+
+        // ── Edit-by-id mode: splice one beat by its exact GUID (position/node agnostic).
+        // Routes through the same workbench path so the edit is logged to the open EditSession.
+        if (!string.IsNullOrWhiteSpace(idStr))
+        {
+            if (!Guid.TryParse(idStr, out var beatId))
+            {
+                Console.Error.WriteLine($"[edit-beat] --id is not a valid GUID: {idStr}");
+                return 1;
+            }
+            if (string.IsNullOrWhiteSpace(filePath) || !File.Exists(filePath))
+            {
+                Console.Error.WriteLine("[edit-beat] --file is required and must exist.");
+                return 1;
+            }
+            var proseById = (await File.ReadAllTextAsync(filePath)).Trim();
+            if (string.IsNullOrWhiteSpace(proseById))
+            {
+                Console.Error.WriteLine("[edit-beat] Prose file is empty.");
+                return 1;
+            }
+            var wb  = services.GetRequiredService<NodeWorkbenchService>();
+            var dbf = services.GetRequiredService<IDbContextFactory<StreetSamuraiDbContext>>();
+            var sessionSvc = services.GetRequiredService<EditSessionService>();
+
+            // Capture prior version/hash so we can log the edit to the session synchronously —
+            // the workbench's own logging is fire-and-forget and gets dropped when the CLI exits.
+            int priorVersion; string? priorHash;
+            await using (var db = await dbf.CreateDbContextAsync())
+            {
+                var b = await db.Beats.AsNoTracking().FirstOrDefaultAsync(x => x.Id == beatId);
+                if (b == null) { Console.Error.WriteLine($"[edit-beat] Beat {beatId} not found."); return 1; }
+                priorVersion = b.Version; priorHash = b.TextHash;
+            }
+
+            Console.Write($"[edit-beat] Updating beat {beatId}… ");
+            await wb.UpdateBeatTextAsync(beatId, proseById, expectedUpdatedAt: null);
+            await sessionSvc.TryLogBeatAsync(beatId, priorVersion, priorHash);   // synchronous — reliably logged
+            Console.WriteLine($"ok ({proseById.Length} chars).");
+            return 0;
         }
 
         if (string.IsNullOrWhiteSpace(slug))
