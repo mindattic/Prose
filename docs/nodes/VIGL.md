@@ -1146,10 +1146,12 @@ passive-scan LOCK, §1c) — the appraisal routine has nothing to file them unde
 - **Sinterspawn Colossus:** the apex body-type — a towering, battlefield-tall shambling humanoid,
   skin drawn tight over an elongated, hunched frame, with **six long arms**; bone-gaunt, ichor-slick.
   Looms over everything beneath it.
-- **The Watcher (faction TBD):** a humanoid in a makeshift environmental suit **sewn from animal and
-  human skin**, a big bulbous head studded with **many randomly-placed glowing eyes**; dead limbs
-  hung about it. The crafted suit implies deliberate making — so it is tool-using: either a
-  higher-order, developed Sinterspawn or an **Eater of Monsters** in zone-gear. *(Confirm which.)*
+- **Sinternauts (a DISTINCT order — not animal Sinterspawn):** humanoid figures in makeshift
+  environmental suits **sewn from animal and human skin**, big bulbous heads studded with **many
+  randomly-placed glowing eyes**, dead limbs hung about them. Tool-using; suited to survive the
+  ichor (Sinter + *-naut*). **The deeply disturbing unknown:** do they go *into* the zone (people
+  who suited up and walked in) or do they *come out* of it (things the zone made, wearing skin)?
+  No one can tell a survivor from a mimic. This uncertainty is the point — never resolve it.
 
 **Preserved crossings:** Zone creatures that died emerging through membrane tears at
 high-tear-density aperture sites are crystallized in situ by membrane-proximate mineral
