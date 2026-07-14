@@ -1734,6 +1734,16 @@ if (args.Contains("--close-all-sessions"))
     return;
 }
 
+// ss --coordinate --slug <slug> [--json <path>] [--no-stamp]
+// Full-coverage bible↔blueprint↔beat coordination: correlate every beat's meaning,
+// construction, and prose; emit JSON + stamp the "## Beat Coordination Index".
+if (args.Contains("--coordinate"))
+{
+    var sp = BuildCoreServices(args);
+    Environment.ExitCode = await CoordinateCli.RunAsync(args, sp);
+    return;
+}
+
 // CLI mode: show running token cost tally for the current process.
 //   ss --cost              print session cost table
 //   ss --cost --json       emit summary as JSON

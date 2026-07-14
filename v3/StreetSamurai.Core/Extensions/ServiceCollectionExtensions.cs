@@ -972,6 +972,7 @@ public static class ServiceCollectionExtensions
         services.AddSingleton<EditSessionService>();
         services.AddSingleton<BibleSyncService>();
         services.AddSingleton<BlueprintSyncService>();
+        services.AddSingleton<BeatCoordinationService>();
         services.AddSingleton<EntityContextStack>();
         services.AddSingleton<EntityContextService>();
         services.AddScoped<EntityMentionService>();
