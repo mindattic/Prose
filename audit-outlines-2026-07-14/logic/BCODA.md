@@ -54,6 +54,34 @@ consistently unresolved (matches the keep-whodunits-open doctrine). Verified: "H
   answered anywhere downstream. Either accept as intentional rogue-AI open thread, or add a payoff /
   soften the query so it doesn't promise an answer. NOT fixed here — a payoff would be invented plot.
 
+## Phase B — GRIPE triage (2026-07-14)
+Verdict GRIPE bucket = 532 (4 BLOCKER / 186 MODERATE / 342 MINOR). Applied **11** fixes:
+- 2 BLOCKER: 1329 present-tense "chimed"→"chimes"; 5322 "Three words"→"Four words" (miscount).
+  The other 2 GRIPE-BLOCKERs (3288, 4271) were **false positives** — my verdict service clips prose
+  at 2600 chars, so the LLM saw a mid-word clip and mis-read it as truncation. Beats are complete.
+- 9 MODERATE (of 22 the triage agent surfaced from 186): POV/omniscience breaks (4393, 1348),
+  authorial intrusion (3217), tautologies (5202, 3143), personification (3117), diction (3271
+  "terminal" rib), comedy metaphor (1344), telling (5347). SKIPPED ~13 as defensible voice /
+  intentional motif — notably "perfect handwriting" (2964) is a canon callback to the entity's
+  kerned-identical text, and "the body accounting for debt" (4410) is Kyle's dissociated-pain motif.
+- 342 MINORs left alone (over-editing the terse register would lower quality).
+
+## Phase D — Ch16 "Ghost Period" structural review (2026-07-14)
+Agent read all 158 beats. Verdict: **not fragmented, not broken** — ~9 well-built case-of-the-week
+vignettes overstuffed around a real escalating A-plot. Applied fixes:
+- **Leaked outline scaffolding — FIXED (8 beats).** Bare `WIN:/COST:/OUTSTANDING:` planning labels had
+  survived into finished prose (2962, 2963, 2965, 2992, 2996, 2999, 3059, 3279). Rewritten into prose
+  in Kyle's ledger voice. 0 labels remaining.
+- **Forward-reference — FIXED (5200).** Beat referenced a "three nights ago… agreed to spend a season"
+  event that (in reading order) happens later at 3124. Softened to a non-committal reflection.
+
+**Deferred structural calls (need your decision — not done unilaterally):**
+- Split 2–3 vignettes (D-class Behemoth, Iowa corridor, Wellness-pendant) into their own interlude
+  chapters to de-bulk Ch16 (~60 of 158 beats are self-contained jobs).
+- Trim/compress the duplicate "lapsed-paperwork" resolution: Vong/Tsui (3201–3208) vs Halvorsen
+  (3276–3282, plot-load-bearing) — disabling ~8 real-prose beats.
+- MINORs: "partner" reveal restated at 3124 (vs 3102); combat-resolution template repeats ~6×.
+
 ## Sibling artifacts
 - Per-beat verdict worklist: `reports/coordination/BCODA.verdict.json`
 - 3-coordinate map: `reports/coordination/BCODA.coordination.json` + `docs/nodes/BCODA.md §SS-BCODA-COORD`
