@@ -1777,7 +1777,7 @@ BCODA is set primarily in the Loop, Bloom Quarter, and gray zones adjacent to bo
 | 5350 | `019f5ebc-47e1-7ae5-9cde-47dcbd7cd8cf` | — | Pays off the assessment's physical dimension by confirm… | 6/confrontation | 2408c | UNSCORED |
 | 5351 | `019f5ebc-567f-73d1-be78-ba8f950e251e` | — | Deepens Silence's mystery and Kyle's relationship to it… | 6/confrontation | 2874c | UNSCORED |
 | 5352 | `019f5ebc-6562-70d6-bf70-29c4a250f1c7` | — | Turns the power dynamic by having Kyle set the terms of… | 6/confrontation | 2779c | UNSCORED |
-| 5353 | `019f5ebc-73ff-701e-ab40-aafffc3d4991` | — | Establishes that an unknown, architecturally sophistica… | 6/confrontation | 1795c | UNSCORED |
+| 5353 | `019f5ebc-73ff-701e-ab40-aafffc3d4991` | — | Establishes that an unknown, architecturally sophistica… | 6/confrontation | 1782c | UNSCORED |
 | 5354 | `019f5ebc-82b8-72c6-95d3-593136c7ed14` | — | Deepens the mystery of the entity's surveillance by rev… | 6/confrontation | 2111c | UNSCORED |
 
 ### Chapter 10: The One Who 
@@ -1953,7 +1953,7 @@ BCODA is set primarily in the Loop, Bloom Quarter, and gray zones adjacent to bo
 | 1313 | `019e8b3e-5b66-7a97-be95-9f1fc3752f28` | Dark Night of the Soul | Two fugitives risk capture by surrendering to intimacy,… | 8/exchange | 1467c | UNSCORED |
 | 1314 | `019e8b3e-5b66-769e-903e-6384ecec1145` | Dark Night of the Soul | After eleven years of emotional distance, he finally al… | 8/exchange | 1217c | UNSCORED |
 | 1315 | `019e8b3e-5b66-7b56-ad31-89fe04cdfd57` | Dark Night of the Soul | After a violent confrontation, two people lie together … | 8/exchange | 1161c | UNSCORED |
-| 1316 | `5731dfa7-e19e-4ffe-b79a-95cbf4231893` | Antagonist Cost | Pixel and Kyle establish distance after consummation | 8/exchange | 798c | UNSCORED |
+| 1316 | `5731dfa7-e19e-4ffe-b79a-95cbf4231893` | Antagonist Cost | Pixel and Kyle establish distance after consummation | 8/exchange | 567c | UNSCORED |
 | 1317 | `019e8b3e-5b66-793d-99b5-6c5ef12d2a34` | Dark Night of the Soul | Kyle insists their encounter cannot repeat while Pixel … | 8/exchange | 727c | UNSCORED |
 | 5165 | `019f43f7-9792-7438-a689-0a2269911edd` | — | Establishes the emotional cost of Kyle's disclosure by … | 8/exchange | 1574c | UNSCORED |
 | 5166 | `019f43f7-c684-75e8-b5e0-0f36afd69d31` | — | Establishes Kyle's emotional discipline as a coping mec… | 8/exchange | 1454c | UNSCORED |
@@ -2089,10 +2089,10 @@ BCODA is set primarily in the Loop, Bloom Quarter, and gray zones adjacent to bo
 | 3209 | `d8a74c8f-dd50-479d-b86d-74dba681aa67` | — | Establishes the crew's working dynamic and professional… | 9/discovery | 2725c | UNSCORED |
 | 3210 | `da75d5bb-ee5a-4df9-9471-7a5fa5e05a22` | — | Introduces the client's mysterious navigational authori… | 9/discovery | 1445c | UNSCORED |
 | 3211 | `fa4b362c-90af-4d4b-ab5a-0446908408ac` | — | Delivers the reader's first visceral encounter with Beh… | 9/discovery | 1743c | UNSCORED |
-| 3212 | `113d4857-82e5-4f77-a5e4-44901ea4340a` | — | Humanizes the world through small prairie generosities … | 9/discovery | 1116c | UNSCORED |
-| 3213 | `51be287f-bd4d-4fec-9286-5f3523b8039a` | — | Escalates awe into something physical and shared, payin… | 9/discovery | 1934c | UNSCORED |
-| 3214 | `dc005e62-cb72-4251-bb2d-4f26e66a2cad` | — | Turns the chapter's tone from wonder to threat while re… | 9/discovery | 5118c | UNSCORED |
-| 3215 | `9d4d69bd-e6a4-4f9a-83bb-07c7a27a82d4` | — | Resolves the Boost confrontation by establishing the pr… | 9/discovery | 2209c | UNSCORED |
+| 3212 | `113d4857-82e5-4f77-a5e4-44901ea4340a` | — | Humanizes the world through small prairie generosities … | 9/discovery | 1118c | UNSCORED |
+| 3213 | `51be287f-bd4d-4fec-9286-5f3523b8039a` | — | Escalates awe into something physical and shared, payin… | 9/discovery | 1935c | UNSCORED |
+| 3214 | `dc005e62-cb72-4251-bb2d-4f26e66a2cad` | — | Turns the chapter's tone from wonder to threat while re… | 9/discovery | 5121c | UNSCORED |
+| 3215 | `9d4d69bd-e6a4-4f9a-83bb-07c7a27a82d4` | — | Resolves the Boost confrontation by establishing the pr… | 9/discovery | 2211c | UNSCORED |
 | 3216 | `4c66fd81-5f79-4e00-9c76-e3df71d79a21` | — | Pays off Boost's risk by having the client formally rec… | 9/discovery | 1412c | UNSCORED |
 | 3217 | `8b0b3fe3-462d-41d5-aa42-60149f00930f` | — | Reveals the client's loneliness through its corresponde… | 9/discovery | 1198c | UNSCORED |
 | 3089 | `37643e11-ad18-4d66-ba2c-33d68adb7ad3` | — | Escalates stakes by revealing the client has a physical… | 9/discovery | 1261c | UNSCORED |
