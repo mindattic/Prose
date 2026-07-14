@@ -14,7 +14,7 @@ updated: 2026-07-04
 > Title is being updated to "Drafted Into War" — see GIW-US-7.
 >
 > See [[../BIBLE]] for engine laws; [[../BIBLE#SS-LAW-19]] for death-permanence law;
-> [[../universes/CAULD]] for the Fantasy universe world facts. Fantasy Universe (Universe #2).
+> [[../universes/CAUL]] for the Fantasy universe world facts. Fantasy Universe (Universe #2).
 
 ## 0. What this story IS {#SS-GIW-0}
 
@@ -64,7 +64,7 @@ Maewen the Threader has a name like that. Soren doesn't yet. That's the arc.
   body warped by the work into something the House can no longer hold or designate.
 - **Each deployment** = one stage of the Magnum Opus.
 
-The alchemy frame is not metaphor. In the Cauld, Transmutation IS alchemy: directed biological
+The alchemy frame is not metaphor. In the Caul, Transmutation IS alchemy: directed biological
 change through Catalyst infusion, administered by certified practitioners, producing controlled
 ascendance over time. Dame Lyra is a researcher in that discipline. Soren is her most interesting
 candidate — anomalous perception at thin-membrane sites before any formal infusion. She wants
@@ -105,7 +105,7 @@ victory is the open question of the series.
   foot, which eye. She has it in her notes. He knows she has it. Neither mentions it.
 
 **Dame Lyra:**
-- **House Ophiuchus.** The Vigil Seat — oldest installation in the Cauld, northern Ridge
+- **House Ophiuchus.** The Vigil Seat — oldest installation in the Caul, northern Ridge
   country, practitioners who have been on the long watch longest.
 - **Rank: Knight, closing on Paladin.** Certified Transmutation researcher and practitioner.
   Title "Dame" is the Knight-rank prefix.
@@ -133,13 +133,13 @@ victory is the open question of the series.
 
 ## 5. World mechanics for this universe {#SS-GIW-5}
 
-> Full world facts live in [[../universes/CAULD]]. This section records story-specific
+> Full world facts live in [[../universes/CAUL]]. This section records story-specific
 > applications and sensory anchors.
 
 **Scrying** = observe a parallel Sphere's technology, copy the design, build it locally.
 Nothing crosses. The engineers of the source Sphere never know. Like pressing a key into a mold.
 
-**The Houses** = the political powers of the Cauld. Organized around control of Scrying
+**The Houses** = the political powers of the Caul. Organized around control of Scrying
 installations — whoever controls observation controls what gets manufactured. The Living War
 is fought over Scrying rights. Seven Houses, operating as 2–3 coalitions at any given moment.
 
@@ -179,7 +179,7 @@ habit. Lyra has it in her notes.
 **Burnt ozone** = the smell at thin-membrane breach events. Physics-wrong air.
 
 **Yggdra smoke** = Soren's most persistent sensory anchor across campaigns. The hardwood is
-everywhere in Cauld — weapon stocks, construction, furniture — but the particular sweet rot of
+everywhere in Caul — weapon stocks, construction, furniture — but the particular sweet rot of
 yggdra smoke is his through-line the way Silence is Kyle's through-line.
 
 **Scrying operators** = long-term installation staff. Decades of experience at specific
@@ -192,7 +192,7 @@ presence. Not dramatic. The nod says everything.
 is permanent and no one returns to report. Some Scrying operators claim to glimpse it in
 visions gone sideways. It is feared. That is enough.
 
-**The Prisoner** = the great mystery of the Cauld. Extracosmic; never confirmed. The four
+**The Prisoner** = the great mystery of the Caul. Extracosmic; never confirmed. The four
 instances where Soren reports something noticing him at the membrane: this is what Lyra's
 seventh theory is about.
 
@@ -200,7 +200,7 @@ seventh theory is about.
 the winners. Bodies warped into battle-ready forms no House can designate or contain. Named,
 not tracked. No House owns them. Houses court them.
 
-**Bheur Incursion Predators** = the enormous bird-things. Native to Cauld. Not from Bheur —
+**Bheur Incursion Predators** = the enormous bird-things. Native to Caul. Not from Bheur —
 physical, biological, wrong. Wingspan measured in stories. They don't choose sides. A battle
 in their territory draws them.
 

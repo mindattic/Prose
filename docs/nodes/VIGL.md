@@ -11,15 +11,15 @@ updated: 2026-07-14
 # STRAND BIBLE — Vigil's End (VIGL) {#SS-VIGL}
 
 > See [[../BIBLE]] for engine laws; [[../BIBLE#SS-LAW-19]] for death-permanence law;
-> [[../universes/CAULD]] for the Fantasy universe world facts;
-> [[../universes/CAULD_HISTORY]] for the Cauld's historical record.
-> Fantasy Universe (Universe #2). GIW has been deleted. VIGL is the standalone Cauld novel.
+> [[../universes/CAUL]] for the Fantasy universe world facts;
+> [[../universes/CAUL_HISTORY]] for the Caul's historical record.
+> Fantasy Universe (Universe #2). GIW has been deleted. VIGL is the standalone Caul novel.
 
 ---
 
 ## 0. What This Story IS {#SS-VIGL-0}
 
-The story of Dame Lyra of Ocipheus crossing the entire Cauld to recover her House's
+The story of Dame Lyra of Ocipheus crossing the entire Caul to recover her House's
 stolen Relic weapon — and losing, along the way, the certainty that made her who she is.
 
 **Opening structure:**
@@ -62,8 +62,9 @@ everything else when she catches them. The reader discovers the thieves when Lyr
 
 She is fully loyal at the start. She is fully loyal at the end. But the faith behind the
 loyalty has collapsed and been replaced with something she cannot yet name, that watches the
-membrane in the vigil room and wonders, not poetically but as a real question, whether it
-watches back.
+membrane in the vigil room and wonders, not poetically but as a real question, whether the world
+is unborn — and if it is, into what, and who is waiting on the far side of the skin for it to be
+(§4b).
 
 **The core question:** What are you loyal to when you find out what the thing you loved actually is?
 
@@ -83,9 +84,9 @@ simply still standing there. She becomes accurate, not sad.
 It is a wound that has been converting itself into architecture for 1,138 years. The bolide
 seeded alien biology; the alien biology has been eating downward into the earth like a cavity
 in a tooth; the crater is now miles deep; and in the depth, things from beyond the stars have
-been building an army. The Cauld has been watching this through the vigil and filing it under
+been building an army. The Caul has been watching this through the vigil and filing it under
 "no action indicated" since Year 397. Ordinary Scrying is a look, seen and lost the moment the
-wound closes (§4); the Relic (§6b) is the one thing in the Cauld that keeps what it sees. What
+wound closes (§4); the Relic (§6b) is the one thing in the Caul that keeps what it sees. What
 the Relic shows Lyra at the aperture is the time-lapse of that accumulation — 741 unbroken
 years of it — and the rate of change in its final frames is faster than
 any prior period. This is the discovery that will eventually require every House, the Liturgy,
@@ -98,7 +99,7 @@ no irony (Taymor's *Titus*, Goold's *Macbeth*). Final Fantasy scope. LitRPG gear
 Legend of the Seeker humor — sincere adventure, absurdist moments, Rod misfires, banter.
 Large sweeping vistas. Interpersonal joy and sorrow both fully earned. See §8a–8b.
 
-**Monster ecology is encountered, not ambient:** the Cauld's Scryed hybrid beasts (creatures
+**Monster ecology is encountered, not ambient:** the Caul's Scryed hybrid beasts (creatures
 that cross through membrane apertures from other Spheres), the Sinterspawn from the crater
 depths, and the bandits/war-deserters along the road are **fought throughout the journey**,
 regularly, the length of the book — not scenery glimpsed in passing. The Legend of the Seeker
@@ -180,7 +181,7 @@ covered by Wren.)*
   behind. Her loadout is not fixed at the outset; it accumulates as the monster fights escalate
   toward Sinter.
 
-### Orim Zebulun — The Failed Keeper {#SS-VIGL-1b}
+### Orim Zebulun — The Failed Keeper, and the One Who Knows {#SS-VIGL-1b}
 - **House:** None. Calyx origin, long-since contract-independent.
 - **Age:** Late 60s. Looks older.
 - **Gift:** Minor Scrying — no apparatus, no membrane penetration to other Spheres. Local and
@@ -191,11 +192,56 @@ covered by Wren.)*
 - **Role:** The contracted Keeper of the Oculus Memoriae — the Liturgy's hired Scrying
   specialist responsible for monitoring the Relic's security. The Relic was stolen on his
   watch. He did not detect the fold traces until it was too late. He is old, he was sleeping
-  at the wrong hour, and the most important Relic in the Cauld walked out the door while he
+  at the wrong hour, and the most important Relic in the Caul walked out the door while he
   was supposed to be watching. The Liturgy's people do not say this to his face. They do not
   need to. He has been saying it to himself every waking hour since. He joins Lyra's pursuit
   not because he was ordered to — because there is no other way to make this right, and he
-  knows it, and she does not know yet how much she needs him.
+  knows it, and she does not know yet how much she needs him. *(That is the reading he lets her
+  have. Whether it is the true one is a question the book keeps open — see below.)*
+- **THE ONE WHO KNOWS — the exception to the whole cosmology.** {#SS-VIGL-1b-knows} Everything the
+  bible files under "canon knows it, the characters do not" — the embryo-truth (each Sphere an
+  unborn world in its own skin, §4b), what the Amnios actually is, what Sinter actually is (a wound
+  in this world's own caul, not a badland, §9b), what the Oculus actually holds and that the Liturgy
+  **hoards** it (§2a, §6b) — **Orim knows, or has guessed close enough to know.** Fifty years of
+  putting his hand through the world's skin by proxy, one private Sinter contract thirty years ago
+  that no House authorized, and a Calyx upbringing that taught him what the Relic is worth: he is the
+  single human exception to "not understood in-world." The knowledge exists in the Caul. It exists
+  in him. And he **withholds it** — feeds it out in fragments, on his own schedule, for reasons he
+  does not explain. He is not the party's guide to a mystery. He is the mystery's custodian, walking
+  beside them, deciding what they get to learn and when.
+- **THE PRIME MOVER — the hidden engine of the plot.** {#SS-VIGL-1b-mover} Strip the surface and it
+  is Orim, not Prelacze and not Lyra, who set these events in train. The expedition east happens
+  because he makes it happen; the party assembles along a route he chose; the timing, the
+  crossings, the recruitment all bear his hand. Even the theft: the Keeper who "failed" to read the
+  fold trace in time was the one man in the Caul who could have read it instantly — and the question
+  of whether an old man genuinely slept through it, or let a door stand open a few hours longer than
+  he had to, is one the book raises and never settles. He presents as the guilty guide making good.
+  He may be the author of the whole affair.
+- **MOTIVE — deliberately unresolved (LOCK).** {#SS-VIGL-1b-motive} His agenda is meant to be
+  questioned, repeatedly, and never fully answered. Competing readings are all kept live to the last
+  page: redemption (he wants to die having been, once, the Keeper he failed to be); still-serving
+  (Calyx, or some faction, still has its hooks in him and this is their operation wearing a guilty
+  old man's face); or something he simply will not name (a private reckoning with the thing at
+  Sinter, or with what he saw thirty years ago, that belongs to him and no one else). The prose
+  never confirms which. Lyra suspects more than one at different points and is never given the
+  satisfaction of being right. **Do not resolve this. His usefulness and his opacity are the same
+  trait.**
+- **THE WITHHOLDING PATTERN — the recurring engine of tension and dark comedy.** {#SS-VIGL-1b-withhold}
+  Crucial, useful information arrives from Orim **one beat after it would have helped.** The gate
+  they just fought through had a softer approach he knew about. The creature they just barely
+  survived is one he could have named on sight. The reason the moor-hounds won't settle is a thing
+  he understood three days ago. Sometimes the delay is plausible — he genuinely did not think it
+  mattered, or did not connect it until the party's own actions surfaced it. Sometimes it is
+  suspicious — the information would have talked them *out* of a commitment he needed them to make,
+  and it arrives only once they are past the point of turning back. The party can never be sure
+  which kind of late they are getting. This is played for real danger and for gallows comedy in the
+  same breath, the length of the book. **Archetypal callout line (Buehlman register — the line the
+  whole party's frustration with Orim echoes):** Wren, after a fight they would not have needed if
+  he had spoken sooner — *"For a man who knows so bloody much, you've a rare gift for leaving out
+  the useful part until we're already up to our necks in it."* Orim does not argue. He rarely does.
+  He files her tone the way he files everything and tells them the next thing a beat too late as
+  well. The prose pass should echo this rhythm — Orim's late reveals as a running structural
+  beat, not a single gag.
 - **The double shame:** He failed the Relic this season. He failed the Liturgy on Sinter
   thirty years ago — pressed the Rod at the aperture, saw what was building in the depths,
   came back and reported it, was disbelieved by people who had already decided not to act.
@@ -214,20 +260,25 @@ covered by Wren.)*
   because the Vigil record at Ocipheus had known since Year 397 and had been filing the same
   notation for generations. He has lived with this since. He is Calyx-born; Calyx sends
   agents to steal the Relic rather than act on what it shows. He does not discuss this.
-- **The arc:** He cannot tell Lyra what is at Sinter. She will not believe him without
-  standing there — what the aperture shows requires the Relic, the location, and everything
-  she has already assembled to recognize. He knows this because he stood there without the
-  Relic and understood only enough to know he had not understood enough. His job is to get
-  her there with the Relic in her hand. He will not lie about danger. He will lie about
-  almost everything else. Rowe's testimony on the channel crossing is the first time in
-  thirty years that Orim has heard it said plainly rather than implied by intake paperwork.
-  He can no longer say he did not hear it. What he does with that is open — but it does not
-  change where they are going.
-- **Redemption shape:** Not dramatic. He does not save anyone in a single gesture. He finds
-  Wren alone in the field after the intercept and shows her the Sinter data — not because
-  the mission requires it, but because Wren is sitting there with the Relic and Orim is old
-  enough to know what a person looks like when they need to be shown something rather than
-  told. At Sinter, he presses the Rod for the third time in fifty years. He steps back and
+- **The arc:** He cannot tell Lyra what is at Sinter — or so he says. His stated reason is sound:
+  she will not believe him without standing there, because what the aperture shows requires the
+  Relic, the location, and everything she has already assembled to recognize. He knows the shape of
+  it — he stood at Sinter thirty years ago and grasped the cosmology, the wound-that-won't-heal,
+  even if he never saw the bottom (nobody has). But "she won't believe me" is also the perfect
+  standing licence for a man who withholds by temperament, and even Orim may not be able to tell
+  where the honest limit ends and the convenient one begins. His job, as he frames it, is to get
+  her there with the Relic in her hand. He will not lie about immediate danger. He will lie, or
+  omit, about almost everything else. Rowe's testimony on the channel crossing is the first time in
+  thirty years that Orim has heard it said plainly rather than implied by intake paperwork. He can
+  no longer say he did not hear it. What he does with that is open — but it does not change where
+  they are going.
+- **Redemption shape — if that is what it is (see the motive LOCK above):** Not dramatic. He does
+  not save anyone in a single gesture. He finds Wren alone in the field after the intercept and
+  shows her the Sinter data — not because the mission requires it, but because Wren is sitting
+  there with the Relic and Orim is old enough to know what a person looks like when they need to be
+  shown something rather than told. (Or: because a converted Wren serves whatever he is actually
+  running. The gesture reads as grace; it also reads as recruitment; the book does not choose for
+  you.) At Sinter, he presses the Rod for the third time in fifty years. He steps back and
   waits for what comes through. That is all. That is enough. He wanted to die having done
   one right thing. He gets to do several.
 - **Scrying use in book:** Beat 1 (south passage confirmation), Beat 3 (barge direction at
@@ -280,8 +331,8 @@ covered by Wren.)*
 
 ### Soren Rowe (M-1018883) — The Myrmidon {#SS-VIGL-1c}
 
-- **WHAT HE IS — THE CENTRAL HORROR:** Soren Rowe is not a body the Cauld captured. He is a
-  *mind* the Cauld stole. Verlaine Scried his consciousness out of a living man in another Sphere —
+- **WHAT HE IS — THE CENTRAL HORROR:** Soren Rowe is not a body the Caul captured. He is a
+  *mind* the Caul stole. Verlaine Scried his consciousness out of a living man in another Sphere —
   drew it out of him like a hook drawing a fish out of dark water — and installed it in a
   **disposable automaton**: a black, jointed chassis with a single oval optical receptor where a
   face should be. The body he was born in died in his own world the moment he was taken, one more
@@ -303,11 +354,11 @@ covered by Wren.)*
   He could say his city's name any time the shell gives him a voice to say it with — he simply does
   not, for most of the book. He gives it to Lyra at the end as *Aldenvast*, spoken aloud for the
   first time since the Taking: not a name he *couldn't* give her before, but the thing he would not
-  say until now. Whether it is his pronunciation of an English name, the Cauld approximation, or the
-  only form the membrane allows through, no Cauld map will ever carry it.
+  say until now. Whether it is his pronunciation of an English name, the Caul approximation, or the
+  only form the membrane allows through, no Caul map will ever carry it.
 - **The translation faculty — THIS IS THE CRITICAL RULE:**
   The Myrmidon shell carries a translation faculty built into its Verlaine manufacture: it renders
-  whatever he means to say into fluent Cauld, and renders whatever is said to him into words he
+  whatever he means to say into fluent Caul, and renders whatever is said to him into words he
   understands, instantly and completely, from the moment the Taking is complete. He is not mute
   and never has been. What the reader gets in his POV chapters and what the party hears out of the
   chassis are the SAME voice — a fully articulate Englishman from 1919, thinking and speaking in
@@ -320,7 +371,7 @@ covered by Wren.)*
   incapacity — and it is weeks before the party gets more than his designation and a soldier's
   account of himself.
 - **He recognizes the geography — and never says so:**
-  The Cauld maps onto a Europe he half-knows. Verlaine's river-country bends the way rivers bend
+  The Caul maps onto a Europe he half-knows. Verlaine's river-country bends the way rivers bend
   in northern France — he was in northern France eight months ago; the specific angle of light
   through rain is the same. The Atrament factories have the soot-and-iron smell of the English
   Midlands at capacity. When the party reaches Ocipheus at the book's end, it hits him like
@@ -335,14 +386,14 @@ covered by Wren.)*
   bodily. He knows what it looks like when a country is preparing. He knows what the faces of
   soldiers in the third year of a campaign look like. He notes it and says nothing.
 - **The weapons recognition:** The bolt-action rifles the Verlaine soldiers carry are a later
-  development of what his world was building. His world built the prototype; the Cauld uses the
+  development of what his world was building. His world built the prototype; the Caul uses the
   finished military form. He sees this in the barracks before he can say a full sentence in
-  Cauld. One line. He notes it. He does not explain it. He moves on.
+  Caul. One line. He notes it. He does not explain it. He moves on.
 - **Myrmidon designation:** M-1018883 (short: M-101) — his Verlaine intake designation, stamped on
   the chassis. The "M" is Myrmidon: a mind Scried out of a living person in another Sphere and
   issued a disposable body. Not a captured man — a stolen consciousness in a machine.
-- **In the Cauld:** Seven months total (three as active Verlaine conscript, four as deserter).
-  Fluent in Cauld from the moment the shell activates — the translation faculty is instant, not
+- **In the Caul:** Seven months total (three as active Verlaine conscript, four as deserter).
+  Fluent in Caul from the moment the shell activates — the translation faculty is instant, not
   learned. What changes over the seven months is not his vocabulary but his willingness:
   designation only, then clipped answers, then guarded testimony, then, at the very end, Aldenvast.
 - **The body (the chassis) — small, disposable:** A Verlaine military Myrmidon-shell. Black,
@@ -520,14 +571,17 @@ The power earns its keep by escalating and by costing. Recommended deployment:
   own, but the posture it exploits predates him and will outlast him: the Liturgy **hoards** the
   Oculus. Not primarily because the Year-430 record is shameful (§9b) — though it is — but
   because the record, once acted on, dissolves the thing that makes the Liturgy necessary. A
-  Cauld that *remembers* what has been accumulating at Sinter cannot go on filing it under "no
+  Caul that *remembers* what has been accumulating at Sinter cannot go on filing it under "no
   action indicated," and an institution whose entire authority rests on being the indispensable
   adjudicator between warring Houses cannot survive being asked to actually adjudicate the one
   thing that matters. The vault at Ocipheus Station is not where the Oculus is kept safe. It is
   where the truth is kept unusable. This is the frame the theft, the pursuit, and the recovery
   all sit inside: the Relic does not belong sealed away from the world it has been watching. It
   belongs where what it shows can be seen, recorded, and acted on — which is precisely what
-  Prelacze, and the Liturgy before him, has spent 741 years making sure it is not.
+  Prelacze, and the Liturgy before him, has spent 741 years making sure it is not. *(The one man
+  who has understood this hoarding for decades — and what the vault is actually keeping unusable —
+  is Orim Zebulun, §1b. He is the human holder of both the embryo-truth and the arc pivot, and he
+  says almost none of it aloud until it is nearly too late.)*
 - **Ocipheus context:** He operates from the Liturgy's home territory — House Ocipheus is the
   Canon's administrative seat, a nominally sovereign House so deeply intertwined with the Liturgy
   that it functions as a puppet state. He does not need military force. He has canonical review,
@@ -623,7 +677,7 @@ discovers who all three were. That is what makes the confrontation land.
   humor deployed rarely and exactly. She talks about the law the way Orim talks about exits.
 
 **Petra Dahl — fixer, routes and crossings** {#SS-VIGL-2c-petra}
-- Forty-four. Has worked the Cauld's border approaches for fifteen years: Loera courier work,
+- Forty-four. Has worked the Caul's border approaches for fifteen years: Loera courier work,
   discretionary document transport, and, less officially, route-finding for clients who prefer that
   their cargo not appear in checkpoint logs.
 - Hired by Esvane six months before the theft. She knows every checkpoint between Ocipheus and
@@ -669,14 +723,14 @@ discovers who all three were. That is what makes the confrontation land.
   start of the book, and she does not fully have the words for it even at Caer Glas Moor. She has
   the shape of it — underneath the family duty she told herself was the whole reason she came.
 - **The Blink — applied Scrying, on herself:** Wren's Transmutation infusion — one — is a
-  Loera-tradition phase-step ability, and what it does is Scry her own body through the membrane
-  (§4, §4b) and back out again a short way off in the same world. Loera has a long culture of
-  thieving-arts that formalized this as a practiced infusion technique rather than a military
-  one. Wren obtained it through Loera channels — Aldric used Loera contacts to give her the right
-  tool for the right job. For approximately four seconds per use, she pushes herself through
-  solid material up to two meters thick — through the membrane, through the Amnios, out the far
-  side — never through iron; the metal resists the membrane the way it resists everything else
-  membrane-adjacent (§4a). She cannot carry more than one hand's worth through with her. The
+  Loera-tradition phase-step ability, and what it does is Scry her own body out through her
+  world's own skin (§4, §4b) and back in through the skin a short way off in the same world.
+  Loera has a long culture of thieving-arts that formalized this as a practiced infusion technique
+  rather than a military one. Wren obtained it through Loera channels — Aldric used Loera contacts
+  to give her the right tool for the right job. For approximately four seconds per use, she pushes
+  herself through solid material up to two meters thick — out through the caul, a heartbeat through
+  the Amnios, back in the far side — never through iron; the metal resists the membrane the way it
+  resists everything else membrane-adjacent (§4a). She cannot carry more than one hand's worth through with her. The
   Blink Thieves are named for her. She is why they could leave through the south coast of the
   Ocipheus archive without triggering a sealed gate. The box was in her arms. She walked through
   the wall.
@@ -868,10 +922,10 @@ anything he does.
 ### The living history at each threshold:
 - **Verlaine:** Archival Gate at Bressant (Arnault d'Archival Year 312); Treachery Quarter; *L'Accord* barge; fog off the lowlands
 - **Three Points:** neutral ground since the early Compact; no House stations forces here; the place where three powers agree the only thing worse than sharing is fighting. **Act 1 ends here.** The party learns here that an impounded airship — the *Eirene-7* — is held at Sal Vento, a Loera cliff-side port.
-- **Atrament:** Schmalburg named for the Battle of the Small Fortress Year 701; Ignamund Unburnt's *Ewige Flamme* in the capital; Forge Hearth Hearth-One through Hearth-Eleven. **Wylla Mother of Men** — a Cauld invocation Lyra overhears an officer give to his column before they march south-east toward The Pass. The troops repeat it like a ward: *Wylla Mother of Men.* Not a prayer exactly — more like a name you say out loud to mean *I know where I come from.* Who or what Wylla is is not explained to the reader. That is deliberate. Lyra files it and moves on.
+- **Atrament:** Schmalburg named for the Battle of the Small Fortress Year 701; Ignamund Unburnt's *Ewige Flamme* in the capital; Forge Hearth Hearth-One through Hearth-Eleven. **Wylla Mother of Men** — a Caul invocation Lyra overhears an officer give to his column before they march south-east toward The Pass. The troops repeat it like a ward: *Wylla Mother of Men.* Not a prayer exactly — more like a name you say out loud to mean *I know where I come from.* Who or what Wylla is is not explained to the reader. That is deliberate. Lyra files it and moves on.
 - **Calyx:** Great plains under wide sky; monster incursion corridors; people who farm the same land they hunt creatures on; Sphere fauna escaping from agricultural Scrying for generations. The war runs through the middle of it — the Verlaine/Atrament front line cuts across Calyx's eastern territory; the locals have learned which smoke columns mean artillery and which mean a brush fire. The party maneuvers around engagements for two chapters. Then they stop being able to. The no-colors engagement is here.
 - **Pallor:** Upland moor and fjord coast; fog that comes in fast; the heather that phosphoresces at night; no House insignia anywhere; Caer Glas Moor at the heart of it; the last ungoverned land before the strait
-- **The Pass / Eirene's Gate:** named for Eirene, last Sinter Champion, who died here Year 1081; *Sinter remembers even if we don't*; towers on both banks; the stamp; the departure log on ruled paper; the narrow water between the Cauld and everything else
+- **The Pass / Eirene's Gate:** named for Eirene, last Sinter Champion, who died here Year 1081; *Sinter remembers even if we don't*; towers on both banks; the stamp; the departure log on ruled paper; the narrow water between the Caul and everything else
 - **Sinter:** not a zone. A reckoning.
 
 ---
@@ -914,20 +968,21 @@ find this comforting. What it means is that the membrane has learned to expect t
 What Orim's Rod parts, what every scry looks through, what the Oculus has been recording for
 741 years, is not a wall, a curtain, or a lens. It is tissue. Fleshy. Warm to the touch where
 an installation's apparatus has worn it thin enough to touch at all. Threaded through with dark
-veins that carry something the Cauld has no name for and that pulse when pressure builds on the
-far side. This is why Orim's fingertips need a Catalyst tincture before a scry works at all — he
-is sensitizing his own skin to read another skin through the touch of it. This is why the Rod's
-aperture is called, plainly, by everyone who has ever stood near one, *the skin* (§4a): because
-that is what it is.
+veins that carry something the Caul has no name for and that pulse when pressure builds on the
+far side. It is **the world's own skin** — the Caul is an embryo sheathed in its own caul (§4b),
+and every scry is a cut into that skin from the inside. This is why Orim's fingertips need a
+Catalyst tincture before a scry works at all — he is sensitizing his own skin to read the world's
+skin through the touch of it. This is why the Rod's aperture is called, plainly, by everyone who
+has ever stood near one, *the skin* (§4a): because that is what it is.
 
-And it **heals**. This is the fact the whole doctrine turns on. A force-pierce is a wound — Orim
-has said as much for fifty years without ever using the word "skin" for what he means. Cut it,
-and it closes. The veins that flared dark at breakthrough fade. The bulge deflates. Within
-hours — sometimes only minutes, at a site the Liturgy has not already worn soft with decades of
-repeated puncture — the tissue scars over and seals, the way a cut palm does, and there is
-nothing left standing to mark where the wound was. Every Scrying installation in the Cauld is
-built on the same working assumption: the membrane will forgive what is done to it. It always
-has.
+And it **heals**. This is the fact the whole doctrine turns on — skin heals. A force-pierce is a
+wound — Orim has said as much for fifty years without ever using the word "skin" for what he
+means. Cut it, and it closes. The veins that flared dark at breakthrough fade. The bulge
+deflates. Within hours — sometimes only minutes, at a site the Liturgy has not already worn soft
+with decades of repeated puncture — the tissue scars over and seals, the way a cut palm does, and
+there is nothing left standing to mark where the wound was. Every Scrying installation in the Caul
+is built on the same working assumption: the world's skin will forgive what is done to it. It
+always has.
 
 Until Sinter (§9b).
 
@@ -979,7 +1034,7 @@ physics does the rest.
 Orim can summon living creatures from other Spheres as combatants. He calls this, privately,
 "opening the wrong door for them." The creatures emerge into a world they cannot survive —
 wrong air, wrong temperature, wrong everything. They live for seconds to minutes in the
-Cauld's atmosphere before their biology fails. In that window, they fight. They fight
+Caul's atmosphere before their biology fails. In that window, they fight. They fight
 everything — they have no concept of ally or enemy, only the disorientation of emergence
 and the instinct to address the immediate threat. Orim takes his forty meters of clearance
 and lets them work.
@@ -1017,13 +1072,13 @@ The Forge Hearth approach runs over exactly the kind of terrain — the bolide's
 scar, geologically unstable, with subsurface thermal venting that the Atrament engineers
 manage through a system of pressure-relief channels.
 
-He scrys through the membrane at the Forge Hearth's eastern thermal vent — not the Cauld
+He scrys through the membrane at the Forge Hearth's eastern thermal vent — not the Caul
 vent, a Sphere-23 volcanic site at active eruption phase, catalogued as "extreme thermal
 output, membrane-adjacent, gas pressure significant." He force-pierces.
 
 What comes through the aperture is not fire exactly. It is the exhalation of a volcano —
 superheated gas, particulate, the thermal pressure of something that has been building
-for a geological timeframe — and when it hits the Cauld's cooler air it ignites. The
+for a geological timeframe — and when it hits the Caul's cooler air it ignites. The
 aperture becomes a directed stream of fire for seventeen seconds. Orim points it at the
 Atrament patrol blocking the southern approach. Then he steps back and the membrane closes
 and he is standing in the smoke, and the mineral tip of the Rod is hot enough to blister
@@ -1063,7 +1118,7 @@ It is the most he has said about the Rod's secondary capability to anyone in fif
 - Cold air from high altitude (emergency cooling; dangerous if the far side pressure is high)
 - Toxic atmosphere from a chemically hostile Sphere (used once in fifty years; he does not
   describe the occasion)
-- Particulate — spores, seeds, biological matter (he will not do this; the Cauld's ecology
+- Particulate — spores, seeds, biological matter (he will not do this; the Caul's ecology
   is already a record of what happens when membrane biology crosses over and establishes)
 - Light from a high-albedo environment (effective blinding; duration fifteen seconds;
   he has used this twice, both times successfully, both times feeling like a cheap trick)
@@ -1080,11 +1135,12 @@ He does not pretend the knowledge makes it clean.
 
 ### 4b. The Amnios — What Lies Behind the Membrane {#SS-VIGL-4b}
 
-**If the membrane is living skin (§4), then reality is gestational.** The Cauld is not a set of
-worlds sitting side by side in a void. It is a **birthing universe** — every Sphere a pocket
-enclosed by living skin, a caul, a womb-lining. And behind that skin, between all the Spheres, is
-the medium every membrane act touches before it reaches anything else: the **Amnios** — the
-amniotic waters, the liminal space of birth, the medium through which all things pass.
+**If the membrane is living skin (§4), then reality is gestational.** The Caul is not a set of
+worlds sitting side by side in a void. It is a **birthing cosmos** — every Sphere an **embryo**,
+a living world sheathed in its own caul, its own skin (see the embryo model below). And behind
+that skin, between all the Spheres, is the medium every membrane act touches before it reaches
+anything else: the **Amnios** — the amniotic waters, the liminal space of birth, the medium
+through which all things pass.
 
 The Amnios is **golden** — a warm amber-gold, the color of light through honey or aged glass.
 Reach for the tavern words and they fit better than the holy ones: it looks like mead, like a
@@ -1092,7 +1148,7 @@ cloudy light beer, like water stirred through with honey — that faintly-yeasty
 amber. Cloudy and faintly turbid, translucent rather than clear, with pale flecks suspended in
 it. It deepens to a dark amber in the still deeps and thins to a green-gold where a Sphere's light
 reaches through the caul. Warm, wet, faintly viscous — it has body; it beads and clings. Not a
-void. Not a darkness. It has no up, no edges, and no time the way the Cauld counts time — but it
+void. Not a darkness. It has no up, no edges, and no time the way the Caul counts time — but it
 is warm and it is wet, and every account of it agrees that it *clings*, the way birth-fluid
 clings. Things cross it, cross through it, are lost in it, gestate in it. It is not a place in the
 sense a room or a road is a place. It is the water a world floats in.
@@ -1126,48 +1182,61 @@ the Amnios:
   book that sends something living into the Amnios and pulls it back out again on purpose. She
   comes out wet.
 
-**Skin implies a body — a womb implies a mother.** {#SS-VIGL-4b-skin} If what borders every Sphere
-is living tissue (§4) and what it encloses is amniotic, then the whole arrangement is a
-gestation, and a gestation is *of* something, *inside* something. This bible does not answer whose
-womb, or what is being carried, or whether "mother" and "body" are even the right words for a
-thing that holds every world at once. Two possibilities are offered here and neither is confirmed:
-that every Sphere is an unborn thing suspended inside one single, vast, living body, the membrane
-its caul and the Amnios its waters; or that there is no body at all, and skin and fluid are only
-what the Amnios forms wherever it comes into contact with a Sphere — the way a caul is not a
-mother, only the shape a birth takes. The Cauld has never had cause to ask, because the skin has
-always healed and the waters have always stayed behind it. Sinter is the first place they haven't
-(§9b).
+**The embryo model — each Sphere is its own unborn world.** {#SS-VIGL-4b-skin} The membrane is not
+the skin of some vast external creature that the Spheres sit inside. It is the world's **own** living
+skin. Each Sphere is itself an **embryo** — a living, growing world — sheathed in its own caul,
+floating in the shared golden Amnios. Reality is not one body with many pockets in it. It is a
+**clutch of embryos** suspended together in a common amniotic sea, each one gestating inside its
+own skin, none of them yet born. The Caul — this world, Lyra's world — is one of them.
 
-**CRITICAL LOCK — the Amnios's ultimate nature is never explained.** Not its origin. Not whether
-it is alive. Not whose womb it is, nor what — if anything — is being gestated in it besides the
-things Verlaine and Sinter have already loosed. This bible describes only what the Amnios *does*
-and what it *feels like* to the handful of people who have touched it: warm, wet, golden,
-formless, no up and no edges, and clinging. Orim does not know what it is after fifty years of putting his
-hand into it by proxy. Rowe does not know what it is after floating in it. Nobody in the Cauld
-knows what it is. That question is not answered in VIGL. It is the series' deepest open mystery,
-and it stays open — and so does its worse cousin: *whose womb, gestating what.* Lyra never confirms
-the membrane is alive (LOCKED, §10.1); but watching a living caul long enough for a career raises
-a question underneath that lock, not poetic but literal, the kind she'd write into a research
-margin: if this is a womb, are we the unborn — and is something else in here gestating alongside
-us. She does not answer this in the book. She writes the question down.
+Everything the bible has described follows from this and needs no further hedging:
+
+- A scry, an aperture, the Rod's force-pierce — all of them cut into **a world's own skin**, and
+  they heal because skin heals (§4). The far side of the wound is not "another place across a gap."
+  It is the Amnios between embryos, and beyond it the caul of some *other* unborn world.
+- **Sinter is the one wound in *this* world's own skin that never closed** (§9b). The Caul's own
+  caul, torn and unhealing, the Amnios leaking in, things gestating in the open cut.
+- **The Taking expels a mind out of its embryo-world into the Amnios between worlds** — Rowe cast
+  out of his own Sphere's skin, unborn again, adrift in the golden waters between the embryos
+  before Verlaine reels him into a shell (§1c).
+- **Wren's Blink** pushes her own body out through her world's skin, a heartbeat through the
+  Amnios, and back in through skin a short way off — she comes up wet with the sea between worlds
+  (§2c).
+
+**CRITICAL LOCK — nobody in the Caul knows they live on an unborn thing.** The embryo model is the
+deep structure of the cosmos; it is **canon, not common knowledge.** The Houses believe they Scry
+"other places" — other locations, other times, across a membrane they treat as a resource boundary.
+No canon office, no vigil order, no Champion has ever framed it as a clutch of gestating worlds,
+because the skin has always healed and the waters have always stayed behind it, and a truth you
+never have cause to test is a truth you never find. What this bible states as structure, the
+characters only ever *brush against* — with one exception: **Orim Zebulun knows, or has guessed
+close enough, and withholds it** (§1b). He is the single human holder of this truth, and he is
+walking with the party the whole time. And the deepest questions stay open even to canon — the
+mystery has not vanished, it has moved past the horizon: **what does an embryo-Sphere gestate
+*into*? Is it ever born, or hatched, or does it only ever ripen? What — if anything — does the
+Amnios answer to, or is watched by, or was made by?** None of this is answered in VIGL. Lyra never
+confirms the membrane is alive (LOCKED, §10.1); but by the vigil room at the end she has felt her
+way to the edge of exactly this — the specific, unpoetic, research-margin sense that **the world is
+unborn**, and she cannot say into what, or who is waiting on the other side of the skin for it to
+be. She does not answer this in the book. She writes the question down.
 
 ---
 
 ## 5. The Normalization Mechanism {#SS-VIGL-5}
 
 The book's horror is that Scrying is not recognized as evil because the frame for evaluating
-it morally has never needed to exist within Cauld institutions. The mechanisms:
+it morally has never needed to exist within Caul institutions. The mechanisms:
 
 1. **Language:** "Pierced conscript." "Resettlement-under-compact." "Membrane-adjacent workforce."
    The intake oath is administered before language acquisition. On purpose.
-2. **Distance:** The Spheres being harvested are other worlds. The people are not Cauld citizens.
+2. **Distance:** The Spheres being harvested are other worlds. The people are not Caul citizens.
 3. **Generational remove:** Current practitioners inherited the system. No one now practicing
    built the intake protocol.
 4. **Economic integration:** The rail, the arc spears, the *Eirene-7*'s hull — all Scried from
    worlds that do not know they are being robbed. People and technology are both resource
    outputs of the same process. Rowe eventually recognizes the weapons he was trained on.
 5. **No feedback:** The source Spheres cannot resist, retaliate, or even know.
-6. **The Liturgy's frame:** Stewardship. The membrane is a resource given to the Cauld. To not
+6. **The Liturgy's frame:** Stewardship. The membrane is a resource given to the Caul. To not
    use it is waste.
 
 **What the book does with this:** Not lecture. Rowe's testimony is the counter-argument,
@@ -1180,30 +1249,30 @@ the word "slave." The reader does.
 
 ## 6. The Exotic World {#SS-VIGL-6}
 
-### 6a. Deep History — Why the Cauld Feels Like Europe {#SS-VIGL-6a}
+### 6a. Deep History — Why the Caul Feels Like Europe {#SS-VIGL-6a}
 
-The Cauld world shares the same early human history as Rowe's world: the same migration out
-of **The Uncharted South** (the continent Cauld scholarship simply calls this, never having
+The Caul world shares the same early human history as Rowe's world: the same migration out
+of **The Uncharted South** (the continent Caul scholarship simply calls this, never having
 mapped it; our analogue = Africa), the same chokepoint in what would be Anatolia/Turkey,
 the same split approximately 1,000 generations ago (≈ 20,000–25,000 years, at generational
 duration): one branch went northeast; one branch went northwest.
 
-The northwestern branch settled what is now the Cauld. One thousand generations of different
+The northwestern branch settled what is now the Caul. One thousand generations of different
 development followed — Scrying, Transmutation, the membrane, the Houses — but the founding
 geography is the same. Same rivers. Same limestone. Same wind pattern off the same sea. The
-Cauld's mountains are the mountains Rowe's people crossed too, in their own deep prehistory,
+Caul's mountains are the mountains Rowe's people crossed too, in their own deep prehistory,
 to get somewhere else.
 
 **What this means for Rowe's recognition:** He is not recognizing coincidental similarity.
 He is recognizing the actual place — the same geology, the same river-bend geometry, the same
-color of stone in the same latitude — because his ancestors and the Cauld's ancestors both
+color of stone in the same latitude — because his ancestors and the Caul's ancestors both
 came from the same migration path and diverged only 1,000 generations back at a fork whose
 downstream consequences produced two different histories on the same ground. When he sees
 a river bend the way the Somme bends, it bends that way because it is the same river, or
 its parallel, formed by the same glacial drainage pattern that shaped both worlds' geographies.
 He cannot know this. He only knows it feels like something he has stood near before.
 
-**What IS shared — physical only:** The Cauld's population is European-looking. Same ancestry,
+**What IS shared — physical only:** The Caul's population is European-looking. Same ancestry,
 same migration, same physical inheritance: the coloring, the features, the builds that you
 would expect from the northwestern branch of that original split. Rowe sees faces he
 half-recognizes. This is real; it is genetic; it is the one thing the 1,000 generations
@@ -1214,7 +1283,7 @@ forms — all evolved independently. The Liturgy is not derived from Christianit
 1,000 generations of a different people's need for institutional spiritual authority produced
 in this geography. The Houses are not Germanic kingdoms or French feudalism; they are what
 independent political development looks like after 20,000 years on the same terrain. The
-Cauld language has no relation to English, French, German, or any of Rowe's languages —
+Caul language has no relation to English, French, German, or any of Rowe's languages —
 which is why, without the Myrmidon shell's translation faculty, he would have been as mute as any
 other stolen mind dropped in a foreign Sphere. The shell renders it fluently, both ways, from the
 moment the Taking is complete; what it cannot translate is everything the language carries. The
@@ -1233,7 +1302,7 @@ shell sees to that. Both of these are true at once, and that gap — full compre
 unbelonging — is what makes his situation feel like a particular kind of alone. He has never been
 anywhere he both belongs and doesn't belong more.
 
-**Current year — Year 1138.** The Cauld's calendar counts from the bolide impact (Year 1).
+**Current year — Year 1138.** The Caul's calendar counts from the bolide impact (Year 1).
 The Oculus has been at Ocipheus since Year 397; "seven hundred and forty-one years" in Ch.1
 confirms Year 1138 as the story's present. The Battle of Nine Days at Caer Glas Moor was
 Year 972 — 166 years ago. Year 1079 = Sinter secondary eruption (59 years ago, within
@@ -1242,41 +1311,41 @@ living memory of the oldest soldiers). Year 1104 = Wylla incident (34 years ago)
 **Historical period equivalent: High/Late Medieval — 12th to 14th century European level.**
 This is NOT early modern. NOT 17th century. Clarifications:
 - Canonical law IS the law. No secular parallel framework yet developing.
-- No printing press equivalent in the Cauld. Everything is hand-copied — which is why Vega
+- No printing press equivalent in the Caul. Everything is hand-copied — which is why Vega
   the Scribe exists and why her notarized account matters so much; she is the record.
 - Cities are dense, walled, small by later standards.
 - Maps are incomplete and often wrong for territory outside the Compact Houses.
 - The Liturgy is at the HEIGHT of its institutional power — not yet challenged, not yet reforming.
 - Medicine is alchemical and herbal. Tincture practice is the closest thing to pharmacology.
 - The bolt-action rifles are even more jarring than they'd be in a 17th-century setting: they
-  appear approximately 500-600 years "early" in the Cauld's own developmental timeline. They are
+  appear approximately 500-600 years "early" in the Caul's own developmental timeline. They are
   not native. They were Scried. Rowe recognizes them because his world made them. Nobody else
-  in the Cauld understands what that means.
+  in the Caul understands what that means.
 - Rowe comes from 1919 and sees a civilization at roughly 12th-13th century development level,
   with 20th-century weapons bolted on top. His cognitive gap is not just cultural — it is
   approximately 700 years of developmental history that this world skipped by stealing.
-- **The two Caulds coexist:** The institutional elite — canonical offices, vigil stations,
+- **The two Cauls coexist:** The institutional elite — canonical offices, vigil stations,
   Atrament's factory halls, the great Houses' keeps — is sophisticated, ancient, organized.
   Below that: peasants in hay-roofed huts. Road villages with one stone building and twenty
   timber ones. Subsistence farming in the shadow of House territory. Enough time to invent
   things; not enough to distribute them. The Heloths move on the roads; the village watches
   them pass and has never ridden one. The rifles exist; the village has never seen one fired.
   The Liturgy's reach is everywhere; the village pays its tithe to a canon it has never met.
-  This gap is the Cauld's true social structure — the institutions are medieval-advanced;
+  This gap is the Caul's true social structure — the institutions are medieval-advanced;
   the population base is early medieval.
 
 **In the prose:** This is never stated. Rowe does not understand it. Lyra has no frame for
-it. The Cauld's historical scholarship about The Uncharted South is limited and pre-scientific
+it. The Caul's historical scholarship about The Uncharted South is limited and pre-scientific
 by our standards. The connection exists in the world's structure; it does not exist as
 in-text exposition.
 
 ---
 
-The Cauld's ecology is contaminated by every Sphere the membrane has touched. Things leaked
-through — seeds, spores, animals, organisms. Some survived. The strangeness of the Cauld's
+The Caul's ecology is contaminated by every Sphere the membrane has touched. Things leaked
+through — seeds, spores, animals, organisms. Some survived. The strangeness of the Caul's
 biology is evidence of centuries of membrane puncture.
 
-**Flora (Sphere-origin, established in the Cauld):**
+**Flora (Sphere-origin, established in the Caul):**
 - **Verlaine deepvine:** Purple-black leaves; bioluminescent sap that appears blue-tinted in wine;
   established 400 years in the terraced wine-country; the vines' root systems are unusually
   aggressive and have displaced native ground cover entirely in some regions
@@ -1289,7 +1358,7 @@ biology is evidence of centuries of membrane puncture.
 - **Pallor night-heather:** Hybrid of four Sphere-origin heather varieties; blooms only after
   dark; phosphorescent pink-white; the moors at night look lit from below
 
-**Fauna (Sphere-origin, established in the Cauld):**
+**Fauna (Sphere-origin, established in the Caul):**
 - **Sinter crawler:** 6-legged; ash-pale; no eyes; bioelectric navigation; pack predator;
   emerges from Sinter zone overflow; the Eaters of Monsters hunt them specifically because
   they are the most reliable source of non-Liturgy Catalyst analog (the crawlers' biology
@@ -1375,10 +1444,10 @@ what lives below the membrane.
 **The Sinter overflow gradient — SUBTEXT ONLY:** {#SS-VIGL-6-overflow}
 
 Zone creatures don't only emerge at Sinter. They have been bleeding through membrane-thin
-sites across the Cauld for centuries — emerging, surviving, and breeding with local fauna.
+sites across the Caul for centuries — emerging, surviving, and breeding with local fauna.
 The hybrids this produces are not stable species. They are wrong in specific ways: the
 proportions are off, the biology is internally contradictory, the behavior follows rules
-that do not apply to anything the Cauld evolved natively. They are more frequent and more
+that do not apply to anything the Caul evolved natively. They are more frequent and more
 extreme the closer you are to Sinter. The gradient is measurable if you know what to look for.
 
 Most people don't look for it. Most people call the results by local names and treat them as
@@ -1390,12 +1459,12 @@ local problems.
 | **Three Points / Atrament** | More frequent. Something in the maintenance yards that leaves prints no engineer can identify. The ember-fungi growing in configurations that weren't planned. | Sphere leakage. A known hazard. The foremen know which tunnels to avoid at night. |
 | **Calyx** | The monster corridors. Sphere fauna escaped from agricultural Scrying decades ago and crossbred with local predators. The hybrids are large, territorial, and getting larger. The fences are newer every generation. | The monster problem. A management issue. You farm, you fence, you hunt what comes through. |
 | **Pallor** | The moor-hounds were bred specifically to track hybrids — that is the original purpose of the six-legged tracking animal. Pallor's warrior culture exists because something needs to be killed regularly and it takes an infused practitioner to do it reliably. Vaen's six infusions are not prestige. They are necessity. | The creatures of the moor. The old names. The reason the Champion exists. |
-| **The Pass / Eirene's Gate** | The departure log is not bureaucracy. It is a count of who crossed and did not return. The soldiers on rotation know what they're patrolling for. The stamp and the ruled paper are the interface between the Cauld and what is not the Cauld anymore. | The crossing hazard. Vigil rotation. Standard patrol doctrine. |
+| **The Pass / Eirene's Gate** | The departure log is not bureaucracy. It is a count of who crossed and did not return. The soldiers on rotation know what they're patrolling for. The stamp and the ruled paper are the interface between the Caul and what is not the Caul anymore. | The crossing hazard. Vigil rotation. Standard patrol doctrine. |
 | **Sinter** | Origin. Pure zone emergence and seven centuries of offspring. The hybrids here are stable enough to have bred for generations. The Eaters of Monsters hunt the crawlers because crawlers are the most predictable thing in the zone — everything else is worse. | Nothing. Nobody names them. Naming them implies you'll be talking to someone who hasn't seen them. |
 
-**What the Cauld stole and what came back through the holes:**
+**What the Caul stole and what came back through the holes:**
 The rifles were stolen from other Spheres. The Heloths were stolen. The infusion Catalyst
-was stolen. The moor-hounds were stolen. The Relic was stolen. Every advantage the Cauld
+was stolen. The moor-hounds were stolen. The Relic was stolen. Every advantage the Caul
 has came from a wound in another world. Sinter is those worlds answering — not with intent,
 not with malice, not even with awareness. The membrane is tissue. The aperture is a wound
 that went numb and stopped closing. What moves through it now doesn't know it's moving
@@ -1405,13 +1474,13 @@ through anything at all.
 Verlaine conscripts Myrmidons and files the paperwork. The other Houses do not file the
 paperwork. Every House in the Compact keeps servants, laborers, and soldiers who came
 through the membrane involuntarily. Verlaine is the only House that calls it a system. The
-others call it something else — or nothing at all. The Cauld's labor base, at its lowest
+others call it something else — or nothing at all. The Caul's labor base, at its lowest
 strata, is people from other realities who did not choose to be here. The peasant shoveling
 slag in an Atrament yard. The woman weaving in a Calyx farmhouse. The soldier who follows
 orders without knowing which orders are real.
 
 Everyone who has ever disappeared without explanation in any Sphere the membrane touches
-is a potential Myrmidon. The Cauld does not have a word for this. It has an intake form —
+is a potential Myrmidon. The Caul does not have a word for this. It has an intake form —
 in Verlaine. Everywhere else it has nothing.
 
 Rowe is one of them. He knows what the intake form means. When he sees others filed the
@@ -1433,26 +1502,26 @@ is a look: transient, wet-edged, gone the moment the wound closes. A Relic is th
 to that transience — the one thing membrane-contact does not simply take back. A Relic is an
 object that was pulled *physically* through the membrane from a specific, historically
 significant moment in another Sphere — not looked at, but **materialized**: dragged bodily out
-of a key event and left standing in the Cauld. This is orders of magnitude harder than an
+of a key event and left standing in the Caul. This is orders of magnitude harder than an
 ordinary scry, harder even than a Rod's force-pierce, because it does not merely open the
 membrane to whatever pressure is behind it — it reaches in and *keeps* something specific. A
 Relic carries membrane-contact from the moment of extraction: the event, the weight of it, the
 specific pressure of that instant in that world's history. It is rare, technically demanding,
 and not fully understood even by the Liturgy's practitioners. The Relic does not simply exist in
-the Cauld; the Cauld stole it from a specific moment, and that moment is permanently gone from
+the Caul; the Caul stole it from a specific moment, and that moment is permanently gone from
 the source Sphere's material record.
 
 **What each major House holds:**
 - **Liturgy / Ocipheus** — *Oculus Memoriae*, the Eye That Remembers: a lens of unknown origin,
   pulled from a moment Lyra's vigil records have never fully resolved. Every other act of
   Scrying is a look — seen and lost, the membrane healing shut behind it. The Oculus is the one
-  instrument in the Cauld that does not lose what it sees. **It retains. Memory made physical.**
+  instrument in the Caul that does not lose what it sees. **It retains. Memory made physical.**
   Fixed to the Sinter vigil at Ocipheus Station since Year 397, it holds **741 unbroken years of
   the crater as a single continuous memory** — not 741 separate lookings stacked up, one memory,
   still accumulating. Deeper than the vigil count, in the lens's oldest, coldest strata — frames
   that predate Year 397, predate the installation, predate any record of how they got there —
   there is a Sinter that is not a crater. Green country. Roads. Rooftops. A sky that isn't dust.
-  **Sinter, before.** No other record of that place survives anywhere in the Cauld; the
+  **Sinter, before.** No other record of that place survives anywhere in the Caul; the
   Sinterspawn have metabolized every other trace of it (§9b). The Oculus is the only surviving
   memory of an erased place, and the only continuous witness to 1,138 years of a slow
   apocalypse.
@@ -1469,14 +1538,14 @@ the source Sphere's material record.
 - **Atrament** — *Humpty Dumpty*: the great cannon from the **1648 Siege of Colchester**,
   Sphere 31 (Earth). Royalist forces mounted it on the church of St Mary-at-the-Walls;
   Parliamentary fire brought down the wall; the cannon fell and could not be reassembled. The
-  Cauld Scried it from the moment of its fall — the specific instant of maximum historical
-  resonance. In the Cauld it was restored and is now Atrament's siege weapon of record: an iron
+  Caul Scried it from the moment of its fall — the specific instant of maximum historical
+  resonance. In the Caul it was restored and is now Atrament's siege weapon of record: an iron
   cannon of 17th-century English manufacture, capable of delivering an iron ball the size of a
   man's head at fortress-wall range, mounted on a purpose-built Atrament iron carriage. It is
-  the most powerful single artillery piece in the Cauld because the Cauld has not yet developed
+  the most powerful single artillery piece in the Caul because the Caul has not yet developed
   native artillery at this scale. Atrament knows it as "the Humpty" — they don't know why it
   was called that in its source world. They named it for its first sound when fired in the
-  Cauld: the drum-hollow *hum* of the cast iron barrel warming.
+  Caul: the drum-hollow *hum* of the cast iron barrel warming.
   **Rowe's recognition (LOCK — use once, carefully):** Rowe knows the Humpty Dumpty rhyme.
   Every English child does. He does not know it as history — it's a nursery rhyme to him; the
   siege cannon origin wasn't common knowledge in 1919. But if he ever stands close enough to
@@ -1484,12 +1553,12 @@ the source Sphere's material record.
   in quality from his geography recognitions. Deeper. More uncanny. He would know this thing
   should not exist here. It should be rubble in an English church wall.
 
-**The permanent war — the condition the Cauld lives inside:** {#SS-VIGL-6b-war}
+**The permanent war — the condition the Caul lives inside:** {#SS-VIGL-6b-war}
 
 Verlaine and Atrament have been at war, continuously, for longer than anyone alive can
 remember. Not a series of wars. One war, with truces. The truces average eleven years.
 The current truce is in its ninth year. Everyone who has grown up during it is about to
-find out what the Cauld looks like when it ends.
+find out what the Caul looks like when it ends.
 
 No one is outside the conflict. Every House has chosen a position — not ideological, economic.
 
@@ -1504,21 +1573,21 @@ No one is outside the conflict. Every House has chosen a position — not ideolo
 
 **What the war does to the membrane:**
 The arms race is the Scrying program. Verlaine needs soldiers from other Spheres because
-the Cauld's own population cannot sustain the intake numbers. Atrament needs ore, materials,
+the Caul's own population cannot sustain the intake numbers. Atrament needs ore, materials,
 and weapons technology from other Spheres because native production is insufficient for
 industrial-scale war. The membrane tears widen every decade. The Sinter overflow gradient
 worsens. Nobody connects these because connecting them would require stopping the war, and
 nobody can afford to stop the war.
 
 The bolt-action rifles in Verlaine's barracks were not Scried for curiosity. They were
-Scried because the arms race requires the Cauld to steal military technology from Spheres
-where warfare has advanced further. Rowe's world made those rifles. The Cauld tore a hole
+Scried because the arms race requires the Caul to steal military technology from Spheres
+where warfare has advanced further. Rowe's world made those rifles. The Caul tore a hole
 in Rowe's world and took them — and Rowe, because he was standing close enough and knew
 how to use one.
 
 **Rowe's specific horror:**
 He came from the end of one war. He has been conscripted into a war that has no armistice.
-The Cauld does not have a 1918. It has an eleven-year truce that is running out. He knows
+The Caul does not have a 1918. It has an eleven-year truce that is running out. He knows
 what the next year looks like. He has seen it. Everyone around him who grew up in the
 truce has not.
 
@@ -1545,7 +1614,7 @@ actually is. The assumption that every House has a king in armor on a throne is 
   staff does. This is not an accident.
 - **Pallor** — the last ungoverned territory before the strait. Upland moor and fjord coast;
   phosphorescent heather at night; fog that arrives without warning. No crowned House governance
-  in the sense the other Houses use — but Pallor holds the **Long Seat**, the Cauld's ancient
+  in the sense the other Houses use — but Pallor holds the **Long Seat**, the Caul's ancient
   advisory body (see Ch.27, "The Long Seat — The Eighth Theory"; lock #3). Warrior culture —
   Champions are acknowledged, not crowned; combat lineage governs by custom, and the Long Seat
   advises rather than rules. The Caerglas family and their ancestral vault at Caer Glas
@@ -1557,12 +1626,12 @@ actually is. The assumption that every House has a king in armor on a throne is 
 
 ## 7. World Mechanics (story-specific applications) {#SS-VIGL-7}
 
-> Full world facts live in [[../universes/CAULD]]. This section records story-specific
+> Full world facts live in [[../universes/CAUL]]. This section records story-specific
 > applications and sensory anchors.
 
 **Transmutation rank ladder (relevant to this story):**
-- Soldier (0 infusions; native Cauld) → Knight (1–3 infusions; "Dame" for women) → Paladin (4–6) → Champion
-- **Myrmidon** = a **mind** Scried out of a living person in another Sphere and installed in a disposable Verlaine automaton chassis (black, jointed, an oval optical receptor for a face). NOT a captured body — a captured *consciousness*; the original body dies in its home world, unmarked, one of the countless "deaths without cause." NOT on the Transmutation ladder. Soren Rowe is a Myrmidon. Native Cauld soldiers are not Myrmidons. **House distinction (LOCKED):** *Atrament* steals **people** — whole bodies, in small batches, for skilled labor. *Verlaine* steals **minds** and issues them bodies. This is the deeper horror the book uncovers: anywhere in any world, a death without a cause is a possible mind-theft. **Minds are wirelessly transferable between shells** — that transfer IS the mechanism of the Taking, and it is why a skilled Myrmidon (Soren Rowe) can jump machine bodies and return to his own (see §1c body-snatcher LOCK). **The scale is in the serial numbers:** Soren Rowe is M-1018883 — the count has run past a million, on the order of **1.02 million** stolen minds. (World-level canon — mirror into [[../universes/CAULD]] / BIBLE Scrying section.)
+- Soldier (0 infusions; native Caul) → Knight (1–3 infusions; "Dame" for women) → Paladin (4–6) → Champion
+- **Myrmidon** = a **mind** Scried out of a living person in another Sphere and installed in a disposable Verlaine automaton chassis (black, jointed, an oval optical receptor for a face). NOT a captured body — a captured *consciousness*; the original body dies in its home world, unmarked, one of the countless "deaths without cause." NOT on the Transmutation ladder. Soren Rowe is a Myrmidon. Native Caul soldiers are not Myrmidons. **House distinction (LOCKED):** *Atrament* steals **people** — whole bodies, in small batches, for skilled labor. *Verlaine* steals **minds** and issues them bodies. This is the deeper horror the book uncovers: anywhere in any world, a death without a cause is a possible mind-theft. **Minds are wirelessly transferable between shells** — that transfer IS the mechanism of the Taking, and it is why a skilled Myrmidon (Soren Rowe) can jump machine bodies and return to his own (see §1c body-snatcher LOCK). **The scale is in the serial numbers:** Soren Rowe is M-1018883 — the count has run past a million, on the order of **1.02 million** stolen minds. (World-level canon — mirror into [[../universes/CAUL]] / BIBLE Scrying section.)
 - Lyra: 3 infusions — "Thrice Infused" (folk term for the 3-infusion ceiling of Knight rank,
   the maximum before Paladin). Each infusion awarded for distinguished service. She is still
   ascending. The ceiling is theoretical. At 3 infusions she is picking up armored soldiers
@@ -1614,7 +1683,7 @@ decided what she thinks about that. The story ends before she has to.
   or sophisticated memory accumulation that resembles perception is not answered in this book.
 
 **The Relic's container — LOCK (grail mystery):**
-The Oculus Memoriae travels inside an oiled **Yggdra** (oak) box — the Cauld's name for
+The Oculus Memoriae travels inside an oiled **Yggdra** (oak) box — the Caul's name for
 the English oak, the world-tree wood, the only acceptable material for a container of this
 kind. The box is sealed with an **Alloy-14** (high-carbon steel) lock. Before the box, the
 Relic is wrapped in undyed silk. No character describes what the Relic looks like. No reader
@@ -1645,7 +1714,7 @@ The shared notation format is not commentary — it is shown in the text. The re
 - Heloth cavalry (Verlaine): riders perched on the shoulder housings; the pursuit in Beat 3
 - River barge: commercial; cover; the party hides in the cargo hold
 - Atrament rail: fastest fixed-route transport; mixed military/civilian
-- The *Eirene-7*: fastest non-fixed transport in the Cauld; fuel-limited; water-landing capable
+- The *Eirene-7*: fastest non-fixed transport in the Caul; fuel-limited; water-landing capable
 
 **Slave labor:**
 Present where it is present. Not named by Lyra. Named by the reader. The Wall checkpoint
@@ -1723,7 +1792,7 @@ that has no institutional name yet.
   it for a slow mind before they learn better. What he withholds, he withholds by choice: terse,
   guarded answers for weeks after Lyra finds him, opening slowly into full testimony. His POV
   chapters are in his own thought-patterns: concrete, sensory, present-tense urgency even in past
-  narration. He maps the Cauld onto a half-familiar Europe — never says so. Two or three
+  narration. He maps the Caul onto a half-familiar Europe — never says so. Two or three
   recognition moments per chapter, sensory and brief, then he moves on. **Never more than a line.
   Never analytical. The mystery is preserved by brevity.**
 - **Aldric:** Close to Lyra's construction (full sentences, elevated) but different weather.
@@ -1739,10 +1808,10 @@ that has no institutional name yet.
 
 ### 8a. Visual and Aesthetic Doctrine {#SS-VIGL-8a}
 
-**LOCK — The Vigil is The Pass, not a wall:** The Cauld calls it "the Vigil line" and "Vigil
+**LOCK — The Vigil is The Pass, not a wall:** The Caul calls it "the Vigil line" and "Vigil
 rotation" and "Vigil checkpoint" the same way soldiers call a border a border. There is no
 encircling structure. The strait seals the approach — seven hundred meters of water
-at the narrowest point, with fortified towers on the Cauld-side bank and naval boats on the
+at the narrowest point, with fortified towers on the Caul-side bank and naval boats on the
 water. The patrol is the human element: soldiers rotating through the garrison at Eirene's
 Gate, bolt-action rifles on shoulders, ruled-paper departure logs, the stamp. "Crossing the
 Vigil" means crossing The Pass under Order authorization. The architecture at Eirene's Gate
@@ -1764,13 +1833,13 @@ kitchens in castle undercrofts. The witches as nurses. The anachronism is deadpa
 it is not anachronism — this is simply how the world is. Both things coexist. Both things
 are real.
 
-**What this means for every location in the Cauld:**
+**What this means for every location in the Caul:**
 - The Sinter perimeter: no wall. The mountains seal it. The patrol is the human element —
   soldiers on rotation through the alpine passes, a checkpoint hut on the road where the
   path narrows, an officer's desk bolted to the floor, the departure log on ruled paper,
   the stamp. Ancient stone buildings where the pass infrastructure exists, because someone
   built shelter here centuries ago and the patrol uses what is there. But no wall. The
-  barrier is the terrain. The Cauld patrols it the way you patrol a coastline.
+  barrier is the terrain. The Caul patrols it the way you patrol a coastline.
 - Verlaine's barracks: a great hall that has been converted to conscript bunks. Stone
   arches overhead. Bolt-action rifles stacked in the racks where polearms stood. Myrmidon
   intake paperwork processed at a trestle table under a vaulted ceiling.
@@ -1856,7 +1925,7 @@ and the Sinter zone chapter) + 3 Rowe chapters + 4 Scribe chapters.
 
 **Sinter is the climactic final destination** — not a transit point. Prelacze suspended
 Lyra's Vigil crossing authority when he learned she was in pursuit; she cannot cross The Pass
-until the story's climax forces it. The full journey runs east across the Cauld — Verlaine,
+until the story's climax forces it. The full journey runs east across the Caul — Verlaine,
 Three Points, Atrament, Calyx, the Balkan approaches — before converging at Eirene's Gate.
 All parties meet at the Sinter aperture. That is where the Relic does what the Relic does.
 
@@ -1885,7 +1954,7 @@ Rowe does not.
 
 **R3 — Seven Months** (between A-chapters 9–10)
 Verlaine barracks. Seven months compressed. The bolt-action rifles: he recognizes them as a
-later generation of something his world made. His world built the prototypes. The Cauld uses
+later generation of something his world made. His world built the prototypes. The Caul uses
 the finished form. The desertion: the crossfire he was ordered into, nobody recognizable on
 either side, nothing he owed allegiance to. He walks out of the battle line.
 **Ends in the grain bin** — exactly where A-chapter 8 (Rowe Found) begins. The chapter
@@ -2076,7 +2145,7 @@ ground ends and the rot begins, and the rot goes down until the distance swallow
 
 Things bred from 1,138 years of alien biology mating with every organism that crossed the
 Sinter perimeter and didn't come back. Generations of hybrids, increasingly alien, increasingly
-removed from anything the Cauld's natural history produced. These are the creatures that
+removed from anything the Caul's natural history produced. These are the creatures that
 occasionally escape into the world — the ones the patrol kills on sight, the ones that produce
 the Wylla incidents, the things the Eaters of Monsters hunt at the perimeter.
 
@@ -2091,14 +2160,16 @@ accumulation. There is something that 1,138 years of unchecked alien biological 
 sealed from outside intervention, with an unlimited food source in the rock and the perimeter
 wildlife and the occasional soldier who got too close, has been building toward.
 
-**This is a womb whose caul tore and never closed.** {#SS-VIGL-9b-skin} Every scry Orim has ever
-taken, every aperture the Rod has ever parted, closed behind him — the skin (§4, §4a) sealed,
-scarred over, forgotten within hours. Sinter is the one tear that never did. What Lyra is looking
-at, in walls that pulse and run warm to instruments and hold a circulatory pattern (the same
-phrase Orim's own field notes would use for a healthy membrane), is not scar tissue holding a
-separate, contained biology at bay. It **is** the membrane — the world's own caul — torn 1,138
-years ago and never given the chance to close, so the Amnios (§4b) has been leaking through the
-tear ever since, keeping it wet, keeping it open, and the membrane-flesh has proliferated into
+**This is the wound in the world's own skin that never closed.** {#SS-VIGL-9b-skin} Every scry
+Orim has ever taken, every aperture the Rod has ever parted, closed behind him — the skin (§4,
+§4a) sealed, scarred over, forgotten within hours. Sinter is the one tear that never did. The
+Caul is an embryo, sheathed in its own caul (§4b); Sinter is the one place that caul was torn
+and never healed. What Lyra is looking at, in walls that pulse and run warm to instruments and
+hold a circulatory pattern (the same phrase Orim's own field notes would use for a healthy
+membrane), is not scar tissue holding a separate, contained biology at bay. It **is** the
+membrane — this world's own caul — torn 1,138 years ago and never given the chance to close, so
+the Amnios (§4b) has been leaking through the tear ever since, keeping it wet, keeping it open,
+and the membrane-flesh has proliferated into
 the wound the way tissue granulates into a cut that will not stop trying to heal: wrong,
 disordered, cancerous, deeper than a wound has any business going. Sinter is a miscarrying world
 gestating in the open.
@@ -2133,9 +2204,9 @@ When Lyra holds the Relic at the crater's edge and looks through it, she sees:
   distributed, primitive. The crater is perhaps two hundred meters deep and chaotic.
 - **Year 600:** The walls have pulled back further. The rock is darker. The depth is now
   more than the Relic can resolve at this observation angle. Things move in the lower levels
-  that are larger than anything in the Cauld's surface fauna.
+  that are larger than anything in the Caul's surface fauna.
 - **Year 900:** The organic layering on the walls is visible from the rim. Warm. Pulsing at
-  a frequency that is not biological in any Cauld sense. The depth is no longer measurable.
+  a frequency that is not biological in any Caul sense. The depth is no longer measurable.
 - **Year 1079:** The eruption. Something in the deep biology reached a threshold and drove
   mass emergence — that is what the eruption actually was. Not volcanic. Biological. The
   pressure of a mass emergence event pushing outward through whatever venting the crater
@@ -2171,7 +2242,7 @@ She gives the Relic to the Station Keeper, not to Prelacze. She tells the Scribe
 down everything she saw through the lens. She refuses the Canon's authority to suppress what
 the vigil has recorded. This is the act the book has been building toward — and it is not
 an act of rebellion. It is an act of accuracy. She is a researcher. The membrane has been
-giving the Cauld data for 741 years. The Cauld has been filing it under "no action indicated."
+giving the Caul data for 741 years. The Caul has been filing it under "no action indicated."
 She is a Templar who can no longer do that.
 
 **The Sinterspawn are not monsters — they are an ecosystem:**
@@ -2188,7 +2259,7 @@ move together. It is trending toward a threshold. A time is coming when the Hous
 worse than any of their wars is **growing in the east**. That reckoning is the spine of the series;
 VIGL is the book where one Templar first writes down that it is coming.
 
-**The series hook — the requirement the Cauld cannot yet face:**
+**The series hook — the requirement the Caul cannot yet face:**
 
 What is in the Sinter crater will eventually come out. Not in individual monsters at the
 perimeter. As an event. The mass emergence of Year 1079 was a biological pressure threshold.
@@ -2196,7 +2267,7 @@ The biology has been building again since then — 59 years of resumed accumulat
 of change the Relic showed Lyra in its final frames was faster than any prior period. The
 architecture in the walls is not decoration. It is infrastructure.
 
-The Cauld will need to face this. All of it. Every House. The Liturgy. The Long Seat.
+The Caul will need to face this. All of it. Every House. The Liturgy. The Long Seat.
 The Eaters of Monsters, who have been at the perimeter since the beginning and who know
 things the canonical record doesn't. Atrament's factories. Verlaine's Myrmidon armies.
 Loera's routes and intelligence. And whoever — whatever — is at the bottom of the crater,
@@ -2204,7 +2275,7 @@ Loera's routes and intelligence. And whoever — whatever — is at the bottom o
 has been building an army.
 
 This is not a spoiler for VIGL. Lyra sees the depth. She understands the scale. She does
-not yet understand what it means for the Cauld because one book is not enough to process
+not yet understand what it means for the Caul because one book is not enough to process
 what 741 years of the vigil has been watching.
 
 That is what comes next.

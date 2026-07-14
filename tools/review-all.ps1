@@ -4,7 +4,7 @@ param(
     [switch]$Delta
 )
 
-# GLMZ universe stories only (GIW is Fantasy/Cauld - separate universe, excluded)
+# GLMZ universe stories only (GIW is Fantasy/Caul - separate universe, excluded)
 # Excluded: BCODA (WIP/redesign), JOY (not cleared), SM1/SM2 (delete-ready), SS/Rook (series roots)
 $codes = @("ATTE","BLST","CxC","DWIACE","IxS","MNEMO","MxG","NxR","PNHL","SPRW","SRZR","STSH","TEST","UNDR","VATD")
 

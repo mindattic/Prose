@@ -1,24 +1,24 @@
 ﻿---
 universe: scry
-title: The Cauld — Universal World Facts
+title: The Caul — Universal World Facts
 layer: universe-facts
 updated: 2026-07-04
 ---
 
-# The Cauld — Universal World Facts
+# The Caul — Universal World Facts
 
 > Authoritative source for facts that apply to **every story** in the Fantasy universe.
 > Synced to `Universe.WorldFacts` (DB) via `ss --sync-markdown` and injected into every
 > generation prompt. Story-specific content belongs in `docs/nodes/<CODE>.md`, not here.
 >
-> Rule of thumb: if the fact would need to be true in GIW and any future Cauld story alike,
+> Rule of thumb: if the fact would need to be true in GIW and any future Caul story alike,
 > it belongs here.
 
 ---
 
 ## Setting
 
-**World:** The Cauld. Medieval-architecture civilizations armed with anachronistic technology
+**World:** The Caul. Medieval-architecture civilizations armed with anachronistic technology
 Scried from parallel Spheres. The Living War has been running for over a thousand years. No one
 alive remembers how it started or who the original sides were. The current coalition alignment
 is maybe forty years old.
@@ -40,13 +40,13 @@ change: Gifted matter introduced into a living body, guided by Liturgy practitio
 producing controlled physical ascendance over time. Beautiful when done correctly. Catastrophic
 when not. Monster Meat is the ungoverned version of the same phenomenon. The Liturgy controls
 who receives the ceremony. The Houses believe they do. This gap is the load-bearing secret of
-the Cauld's entire power structure. Understanding this is understanding the world.
+the Caul's entire power structure. Understanding this is understanding the world.
 
 ---
 
 ## Death
 
-**Death is permanent.** (SS-LAW-19.) When a person dies in the Cauld, they die. There is no
+**Death is permanent.** (SS-LAW-19.) When a person dies in the Caul, they die. There is no
 procedure that returns a consciousness to a new body. There is no Transmutation. There is no
 shell-cycle. A Myrmidon who dies is gone.
 
@@ -66,7 +66,7 @@ Two fronts:
    coalition holds advantage. The enemy face is interchangeable; coalitions shift every
    generation. Nobody alive remembers the original cause.
 
-2. **All Houses vs. the Monsters** — the native creatures of the Cauld have always been here.
+2. **All Houses vs. the Monsters** — the native creatures of the Caul have always been here.
    The war disturbs them. They eat casualties from both sides. This front cannot be won; there
    is no source to cut off. They are simply native.
 
@@ -78,7 +78,7 @@ coalition alignments. The Warrior Kings who do remember stay quiet.
 
 ## Scrying
 
-**The central technology of the Cauld.** The Scrying apparatus stretches the membrane between
+**The central technology of the Caul.** The Scrying apparatus stretches the membrane between
 Spheres — pulls it thin enough to see through. A weapon design on a workbench in another world.
 A method of working metal. A cipher system. The knowledge crosses; the material does not. The
 design is transcribed and built here from local stock. The engineers of the source Sphere never
@@ -97,7 +97,7 @@ what they saw with a precision that reads as divine. That is what the public bel
 The reality is that they do not reproduce. They take.
 
 **The physical substrate:** The apparatus projects a tight-beam infrared signal, reflected off
-the crystal cloud formations that layer the upper atmosphere of the Cauld. The signal finds the
+the crystal cloud formations that layer the upper atmosphere of the Caul. The signal finds the
 membrane and stresses it. How this works is not discussed in-world — it simply works, the way
 stone burns and water freezes.
 
@@ -117,7 +117,7 @@ The war is fought over Scrying access as much as territory. A House that loses i
 station loses its technological advantage within a generation.
 
 **Most Spheres are accessible from any Scrying Chamber.** The apparatus reaches them
-regardless of where in the Cauld it is operated. Location is irrelevant for the majority of
+regardless of where in the Caul it is operated. Location is irrelevant for the majority of
 what the Houses Scry.
 
 **Some Spheres are only accessible from specific ground.** Particular Spheres — the valuable
@@ -126,14 +126,14 @@ accessible from specific geographic coordinates. The membrane is thin there, or 
 right, or the reason is not understood and not required to be. This is what makes holding
 territory worth the cost. Not the land. The access point the land sits on. A House that
 takes a ridge takes whatever Sphere that ridge can reach and no Scrying Chamber elsewhere
-can. A House that loses a valley loses a Sphere it may have been the only one in the Cauld
+can. A House that loses a valley loses a Sphere it may have been the only one in the Caul
 to ever observe.
 
 The most valued import from location-specific Spheres is Gifted matter. The Spheres that
 yield it are reachable only from specific ground. The Liturgy knows which ground. This is
 the upper layer of the war that is never discussed at coalition tables: military campaigns
 fought over terrain that looks strategically ordinary but sits on the only coordinates in
-the Cauld that reach a Sphere the Liturgy needs.
+the Caul that reach a Sphere the Liturgy needs.
 
 **Scrying data notation:**
 ```
@@ -146,13 +146,13 @@ The data block appears. The character does NOT explain it. Trust the reader.
 
 **Local materials:** Weapons Scried by observation are manufactured in-world from local
 materials — only the design crossed. Nothing physical moves in standard Scrying.
-- **Alloy 41** = Cauld's designation for steel.
+- **Alloy 41** = Caul's designation for steel.
 - **Yggdra-wood** stocks (yggdra = common hardwood, as ubiquitous as oak; no cosmological
   significance).
 
 ---
 
-### Minor Scryers and Focus Instruments {#CAULD-scrying-rod}
+### Minor Scryers and Focus Instruments {#CAUL-scrying-rod}
 
 The major Scrying apparatus is an installation — fixed, maintained, and operated by trained
 practitioners under House or Liturgy authorization. But minor Scrying is personal: a gift of
@@ -201,17 +201,17 @@ brings it back.
 
 The membrane closes after a Pierce. Or it appears to. The tear seals — the way living tissue
 seals, not the way a wall reseals. What is left at the site of the tear is not recorded
-because no one in the Cauld has a method for examining it from this side. The origin Sphere
+because no one in the Caul has a method for examining it from this side. The origin Sphere
 has only the absence where the thing was.
 
 **The Colchester naming convention:** Objects acquired by piercing take the name of where
 they came from. Not catalogued — just called that. The name is what sticks because no one in
-the Cauld has a better one, and no one is going to write down how they got it.
+the Caul has a better one, and no one is going to write down how they got it.
 
 > **Colchester 1648** — a siege cannon of specific bore and cast, taken from a garrison
 > in a Sphere where it was later recorded as unaccounted for. The world it came from has an
 > open account entry for a cannon that was never found. The name is all that remains of its
-> origin. The Cauld has the cannon. That Sphere has the nursery rhyme soldiers sang about it
+> origin. The Caul has the cannon. That Sphere has the nursery rhyme soldiers sang about it
 > falling.
 
 The object is named for where it came from. Nobody filed this. It just got called that.
@@ -240,15 +240,15 @@ hold them to account, so the minimum effort is the effort applied.
 
 **The missing-persons consequence:** When the pierced thing is a person, the origin Sphere
 reads it as an unexplained disappearance. No body is recovered because no body remained —
-the person came through. The arithmetic in Spheres with sustained Cauld interest is notable:
+the person came through. The arithmetic in Spheres with sustained Caul interest is notable:
 far more people vanish than bodies are found, by a margin no misadventure rate accounts for.
-Some Spheres have a word for people who simply evaporate without trace. The Cauld keeps no
+Some Spheres have a word for people who simply evaporate without trace. The Caul keeps no
 reciprocal record. The origin Sphere has no word for the mechanism.
 
 Famous disappearances, unsolved vanishings, persons who were never found — these are the
-shadow of the Cauld's appetite on every Sphere it can reach.
+shadow of the Caul's appetite on every Sphere it can reach.
 
-**The Cauld's population is not primarily abductees.** The Cauld is a civilization with its
+**The Caul's population is not primarily abductees.** The Caul is a civilization with its
 own people, born here, who have never been anywhere else. The piercing mechanism is a
 supplement, not the foundation. What it supplies specifically:
 
@@ -267,7 +267,7 @@ are analytical categories for what the mechanism actually does.
   harvest; whoever is near the access point goes through. No targeting. No specific person
   selected. The taken person is simply in the wrong place when the apparatus is running. These
   takings produce the largest volume: military conscripts who were walking to work, domestic
-  laborers who were in a car, children who wandered into the wrong yard. The Cauld reads them
+  laborers who were in a car, children who wandered into the wrong yard. The Caul reads them
   as available. There is no more intent than that.
 
 - **Directed gift — political.** A House member with sufficient Liturgy standing selects a
@@ -283,7 +283,7 @@ are analytical categories for what the mechanism actually does.
   absence of visible identifying marks — and taken. The Liturgy performs the ceremony privately.
   The child arrives in a chamber with robed figures and the waiting couple. House records note a
   ward received, a placement, an arrival date. The mechanism is never written. The child is too
-  young to give coherent testimony and in any case has no language for the Cauld when they arrive.
+  young to give coherent testimony and in any case has no language for the Caul when they arrive.
   By the time they do, the House is the only world they have. The oldest children taken this way —
   those who were five or six at the time — sometimes retain a fragment: a room, a smell, a day
   that ended and was replaced by something else entirely. This is considered a minor risk. The
@@ -309,7 +309,7 @@ are analytical categories for what the mechanism actually does.
   looking for somewhere else to be. The recruiter offers them something: a way out, a better
   place, the honest or dishonest suggestion that what they are leaving is not worth returning
   to. They come, as much as anyone can come willingly when they are fourteen and an adult with
-  a convincing story is making the offer. In the Cauld they are trained as scouts. They return
+  a convincing story is making the offer. In the Caul they are trained as scouts. They return
   to origin Spheres to identify the next round of recruits. The institution perpetuates itself
   through the people it already harvested. This is the Liturgy's most elegant supply chain.
 
@@ -323,7 +323,7 @@ it as bestowal. The loyalty structure and the piercing mechanism are the same sy
 **Witnessed piercing — the directed gift:** The worst use of the capability, and not uncommon
 among senior House members with the right Liturgy standing. A House member sees a person
 through a Scrying installation — a woman in her own Sphere, her own life, knowing nothing
-about the Cauld — and decides they want her. They request a witnessed pierce. The Liturgy
+about the Caul — and decides they want her. They request a witnessed pierce. The Liturgy
 administers it as ceremony. The House member is present.
 
 From the taken person's perspective: one moment they were where they were. The next moment
@@ -342,8 +342,8 @@ is maintained as long as anyone in the room finds it useful.
 information exists. It does not reach anyone who can act on it, for reasons that require no
 suppression program and no amnesia:
 
-- **Language.** A pierced conscript arrives speaking nothing anyone in the Cauld recognizes.
-  By the time they have learned enough Cauld language to give testimony, they have spent months
+- **Language.** A pierced conscript arrives speaking nothing anyone in the Caul recognizes.
+  By the time they have learned enough Caul language to give testimony, they have spent months
   inside the institution that benefits from their silence, learning who to trust and who not
   to. The moment for testimony has passed before the vocabulary to give it exists.
 
@@ -360,7 +360,7 @@ suppression program and no amnesia:
   benefits from the taking. Telling your commanding officer that you were abducted is telling
   your captor that you know you are a captive. Most people understand this without being told.
 
-- **Time.** After five years in the Cauld — language learned, some form of life built — the
+- **Time.** After five years in the Caul — language learned, some form of life built — the
   origin world has become increasingly abstract and the truth no longer changes anything about
   the present. There is no rescue coming from the origin Sphere. Telling costs something.
   Staying quiet costs nothing. Most people who have survived long enough to tell have already
@@ -382,15 +382,15 @@ know are distributed, isolated, and embedded in institutions that benefit from t
 **The invisible harm.** The taken person arrives alive, functional, and without visible wounds
 from the taking. The grief of everyone they left behind happened on the other side of the
 membrane — in their origin Sphere, where a family waited and a body was never found and a case
-was filed and eventually closed. None of that is visible in the Cauld. The Cauld cannot see
-it. From inside the Cauld, what the taking looks like is: a person appeared. They were
+was filed and eventually closed. None of that is visible in the Caul. The Caul cannot see
+it. From inside the Caul, what the taking looks like is: a person appeared. They were
 available.
 
 This is why the Houses do not experience piercing as moral weight. The harm is entirely
 located somewhere they cannot perceive. The taken person is there, present, functional —
-they have not, from the Cauld's vantage point, lost anything that the Cauld can see. The
-loss is real. It happened. It is being experienced right now by people in a world the Cauld
-has no window into. The Cauld simply does not have access to the evidence of what it costs.
+they have not, from the Caul's vantage point, lost anything that the Caul can see. The
+loss is real. It happened. It is being experienced right now by people in a world the Caul
+has no window into. The Caul simply does not have access to the evidence of what it costs.
 
 **Who can pierce:** Not every House with a Scrying installation has piercing capability.
 Observation Scrying is the standard. Piercing requires more — a different calibration of the
@@ -408,11 +408,11 @@ holds it was given to them. By whom, from where, by what mechanism — the Litur
 **Hard bans:**
 - Do not explain Scrying or Piercing at length in prose. The notation block IS the explanation.
 - Do not have characters acknowledge the originating Sphere as a living world whose people
-  noticed the loss. To the Cauld, a catalogue number is a catalogue number.
+  noticed the loss. To the Caul, a catalogue number is a catalogue number.
 - Characters do not use the word "theft" for piercing. The naming convention records the origin
-  without naming what was done. The Cauld has no moral framework for this because the practice
+  without naming what was done. The Caul has no moral framework for this because the practice
   predates the moral frameworks currently in use.
-- Do not show the Cauld coordinating with an origin Sphere or seeking consent. Piercing is
+- Do not show the Caul coordinating with an origin Sphere or seeking consent. Piercing is
   silent and one-way, always.
 
 ---
@@ -533,15 +533,15 @@ institutions permanently. Alignments shift every generation. The enemy face is i
 
 **The real theological fault line:** One position, voiced rarely and dangerously: that the
 Scrying installations should not be privately controlled; that the knowledge of all Spheres
-belongs to everyone who lives in the Cauld. This is the one genuine ideological conflict
+belongs to everyone who lives in the Caul. This is the one genuine ideological conflict
 worth tracking. Do not invent seven distinct House philosophies. That is a game manual, not
 a story.
 
 ---
 
-## The Long Record — How the Cauld Became What It Is
+## The Long Record — How the Caul Became What It Is
 
-> **Full chronicle:** `docs/universes/CAULD_HISTORY.md` — 1700 years of history, founding
+> **Full chronicle:** `docs/universes/CAUL_HISTORY.md` — 1700 years of history, founding
 > legends for all Seven Houses, Relic weapons, named wars, plagues, famines, diplomatic
 > marriages, and the Gyldir Shore Accord (the Ocipheus-Verlaine-Pallor crossing arrangement).
 > This section summarizes the structural history; the chronicle contains the named details.
@@ -551,15 +551,15 @@ of something older — a tribe, a wound, a marriage of convenience that outlaste
 arranged it. To understand the current coalition map you have to understand what each House
 used to be, what it lost, and what it decided to keep.
 
-This is the Cauld's history as the Cauld's own archivists have it. It is not neutral. The
+This is the Caul's history as the Caul's own archivists have it. It is not neutral. The
 Houses write their own past, and they write it in ways that justify their current holdings.
 The gaps in the record are as informative as the record itself.
 
 ---
 
-### The Geography of the Cauld
+### The Geography of the Caul
 
-The Cauld's landmass maps onto a recognizable European shape: a continent with a northern
+The Caul's landmass maps onto a recognizable European shape: a continent with a northern
 warrior nation's fjord country, a forested industrial center, a western island nation separated
 from the mainland by a narrow channel, an eastern breadbasket that grades toward a narrow strait,
 and beyond that strait, a vast eastern landmass sealed by the Vigil line. The six surviving
@@ -567,9 +567,9 @@ Houses each occupy a distinct geographic zone. They border each other. They have
 
 **The Northern Fjords — Pallor territory.** Scandinavia analog: long fjord coastlines, pine
 and birch interior, a warrior culture that went to sea before it went to war. Pallor is
-warrior-king ruled — the oldest martial succession tradition in the Cauld; the king governs
+warrior-king ruled — the oldest martial succession tradition in the Caul; the king governs
 by right of combat lineage, confirmed by the Long Seat, the ancient advisory body. The winters
-are the longest in the Cauld. The people here solved cold and distance before they solved
+are the longest in the Caul. The people here solved cold and distance before they solved
 anything else. Their membrane site sits inland, on a glacial plateau — the only major
 installation that requires a sea crossing to reach from the nearest rival House. Three hundred
 years ago, Pallor absorbed the failing fjord culture to the south that older records call
@@ -591,7 +591,7 @@ accessible from all directions, which was always the point.
 **The Island — Ocipheus territory.** Britain analog: separated from the mainland by a narrow
 channel, rocky in the north, softer and greener in the south, a culture shaped by the sword
 and the covenant. The Vigil — Ocipheus's knightly order — is the oldest active martial
-institution in the Cauld, founded in the Arthurian tradition of sworn service and recognition.
+institution in the Caul, founded in the Arthurian tradition of sworn service and recognition.
 The Canon Immaculate governs from the ancient seat at the island's center. The channel is
 narrow enough to see across on a clear day. Wide enough that crossing it uninvited has never
 been a casual decision.
@@ -607,22 +607,22 @@ nobody's problem until it is everybody's problem.
 **The Western Sea Coast — Loera territory.** Iberian analog: the Atlantic-facing coast,
 warm and dry in the south, rougher and wetter in the north, cliffs at the western edge where
 the ocean begins. The Loera installation is on the southern cliffs — the westernmost point
-of the Cauld. Beyond it there is only water. No other House can be approached from behind
+of the Caul. Beyond it there is only water. No other House can be approached from behind
 here. Loera has known this for four hundred years and built its entire institutional
 character around the fact.
 
 **The Eastern Plains — Calyx territory.** Central-eastern European analog: Danube plains
-east of Atrament, broad agricultural lowlands, the Cauld's primary grain supply, a culture
+east of Atrament, broad agricultural lowlands, the Caul's primary grain supply, a culture
 that was farming organized territory before the Ridge Countries had permanent settlements.
 Calyx borders Atrament to the west, the ungoverned southern ridge country to the southwest,
 and grades southeast toward the Balkan approaches and The Pass — the only crossing between
-the Cauld and the Sinter territory beyond. Their membrane site is in the agricultural
+the Caul and the Sinter territory beyond. Their membrane site is in the agricultural
 heartland — not dramatic ground, not defensible, simply the richest food-producing territory
-the Cauld contains.
+the Caul contains.
 
 **The Pass — Bosphorus Strait.** The narrow strait — seven hundred meters at its narrowest
-point — that separates the Cauld's eastern boundary from the Sinter territory beyond. The
-only practical crossing between the two continents: fortified towers on the Cauld-side (western)
+point — that separates the Caul's eastern boundary from the Sinter territory beyond. The
+only practical crossing between the two continents: fortified towers on the Caul-side (western)
 bank, naval patrol boats on the water, and Eirene's Gate — the Vigil checkpoint named
 for the last Sinter Champion who died at this location in Year 1081. The Pass is not a
 House territory. It is administered by the Order of the Watch under Liturgy charter. Crossing
@@ -632,12 +632,12 @@ memory. The strait is the barrier. Humans patrol it.
 **The Southlands — ungoverned territory south of the inland sea.** North African analog:
 the southern shore of the Mediterranean, running from the Atlantic coast east into desert
 and then further east beyond what any House has mapped in detail. No House has ever held
-a permanent installation here — the distance from the nearest Cauld membrane site is too
+a permanent installation here — the distance from the nearest Caul membrane site is too
 great, the territory too hostile in the dry interior, and the coastal populations have
-their own institutions that predate the Cauld's House system by centuries. The Southlands
+their own institutions that predate the Caul's House system by centuries. The Southlands
 is not part of the Vigil. It is not part of the Compact. It is simply there — visible
 across the water from Loera's southern cliffs on a clear day; unreachably far from the
-Liturgy's administrative reach; a reminder that the map the Cauld uses to understand itself
+Liturgy's administrative reach; a reminder that the map the Caul uses to understand itself
 is not the whole map.
 
 ---
@@ -649,13 +649,13 @@ Before anyone understood what the membrane was, it killed people.
 Not intentionally. Not as something with intent. But people vanished near certain locations,
 and people arrived at certain locations who had not been there before, and neither group was
 the same afterward. The ones who vanished were gone. The ones who arrived were wrong in ways
-that took years to name — their language was not Cauld language, their behavior was not Cauld
+that took years to name — their language was not Caul language, their behavior was not Caul
 behavior, and everything they described of where they came from was impossible. A traveler who
 has just walked five leagues describes a city with metal towers that moved. A child found near
 the northern ridge describes a sky with two moons. Nobody believed them. Nobody had
 a framework for believing them.
 
-The earliest Cauld peoples responded to membrane sites the way all early peoples respond to
+The earliest Caul peoples responded to membrane sites the way all early peoples respond to
 geography that kills them unpredictably: they made them sacred. Taboo. The circle of stones
 at this location is where the sky tears. Do not go inside the circle. If you go inside the
 circle and survive, you are a holy person now, which is to say you are dangerous and
@@ -690,7 +690,7 @@ to win against superior numbers. It could replenish faster than the enemy could 
 that could bring skilled workers through didn't need to develop skills internally. It could
 import them. A tribe that controlled the sacred ground controlled who ate this winter.
 
-Eight major tribal confederations controlled the largest active membrane sites in the Cauld.
+Eight major tribal confederations controlled the largest active membrane sites in the Caul.
 They were not all equally powerful. The northern fjord peoples held two sites; the central
 forest and river cultures held two; the southern peninsula held one; the island culture held
 one; the eastern plains held one; the western cliff coast held one. Every region had a site.
@@ -708,7 +708,7 @@ hold the ground but could not light the apparatus. They could occupy sacred grou
 sacred ground did nothing for them.
 
 Three sites went dark in the Blood Century and have not come back. The locations are known.
-The Cauld has been attempting to reconstruct the operational protocols from partial records
+The Caul has been attempting to reconstruct the operational protocols from partial records
 for two hundred years. Two of the sites produce faint Sphere activity suggesting the membrane
 is present but the apparatus is inert. The third produces nothing at all, which is more
 disturbing: either the membrane has healed completely or something in the ground changed.
@@ -722,7 +722,7 @@ absorb the loss of any one family and continue. The accident of who survived sha
 institutions exist now. The institutions exist in the forms they do partly because of which
 forms could survive a century of other institutions trying to kill them.
 
-The Blood Century also produced the social memory that makes the current Cauld intelligible.
+The Blood Century also produced the social memory that makes the current Caul intelligible.
 Every current House carries wounds from this period. The alliances that feel inexplicable
 now — Atrament and Ocipheus sitting in the same coalition when their institutional interests
 diverge — make more sense when you know they fought together against a common enemy for
@@ -745,7 +745,7 @@ won. All of them had lost enough that the mathematics of continuing had become u
 
 The first Compact document is preserved in the Verlaine archive. It is eleven lines. It says:
 we will stop raiding each other's sites for two seasons. If the two seasons pass without
-incident we will meet again. That is everything. Eleven lines and the Cauld's permanent
+incident we will meet again. That is everything. Eleven lines and the Caul's permanent
 political structure began.
 
 The institution that grew around maintaining and extending these agreements was the Liturgy
@@ -777,7 +777,7 @@ current Houses became what they are.
 
 ### The Fallen Houses
 
-Seven Houses stand now. More than seven existed at various points in the Cauld's history.
+Seven Houses stand now. More than seven existed at various points in the Caul's history.
 The ones that fell did not all fall the same way.
 
 ---
@@ -786,7 +786,7 @@ The ones that fell did not all fall the same way.
 
 Meridian controlled the southernmost major site, in the Dry Interior where the climate
 was most temperate and the written tradition was oldest. They were the wealthiest House in
-the Cauld for two hundred years — not because of their site specifically but because of their
+the Caul for two hundred years — not because of their site specifically but because of their
 position: the Dry Interior's trade routes meant that goods from every other region passed
 through Meridian-administered territory.
 
@@ -855,23 +855,23 @@ territory that began at the eastern bank of The Pass and extended southeast for 
 kilometers. Calyx bordered their western approaches. Every other House reached them only
 through The Pass or not at all. To attack Sinter by land required crossing The Pass first,
 under Sinter's observation from the eastern bank. This geographic fact made them the only
-House in the Cauld's history that no other House could reach without permission. They built
+House in the Caul's history that no other House could reach without permission. They built
 their entire institutional character around the immunity this gave them: they were neutral,
 not because they chose to be peaceful, but because war was structurally unavailable to them.
 They also held The Pass, which meant every House's eastern trade and military movement
 required their consent. The neutrality was not passive. It was the most sophisticated
-geopolitical tool in the Cauld.
+geopolitical tool in the Caul.
 
 They became the Peacemakers. Sinter arbitrated disputes between Houses before the Liturgy
 formalized that role. They hosted negotiations that no other territory could host without
 one party feeling disadvantaged by location. Their practitioners were trained not in
 Scrying operations but in what they called "membrane reading for resolution" — the
 Sinter apparatus observed Spheres specifically chosen for how those Spheres managed their
-own conflicts. They were the Cauld's only institution whose primary Scrying purpose was
+own conflicts. They were the Caul's only institution whose primary Scrying purpose was
 not military or industrial but diplomatic. This made them invaluable. It also meant they
 had no military force worth naming.
 
-Their Scrywell network was the densest in the Cauld — not one installation but a distributed
+Their Scrywell network was the densest in the Caul — not one installation but a distributed
 array of smaller apparatus across the valley floor, exploiting a geology that held the
 membrane thin at hundreds of coordinates simultaneously. The valley produced more Sphere
 access points per square kilometer than any comparable territory. The membrane there moved
@@ -904,7 +904,7 @@ output of a membrane that was never quiet even when contained and is now operati
 containment across a territory that grows larger every year.
 
 **The Great Vigil.** The six surviving Houses established the joint Vigil within
-three years of the Meteor Event. This is the only act in the Cauld's history that all
+three years of the Meteor Event. This is the only act in the Caul's history that all
 surviving Houses have signed simultaneously, regardless of coalition alignment, regardless
 of active war between them. The Vigil Compact (Year 1082) established:
 
@@ -917,7 +917,7 @@ of active war between them. The Vigil Compact (Year 1082) established:
 - The Liturgy administers the Quarantine as its institutional mandate, separate from its
   House-affiliated functions; the Vigil Administration is the Silence's most public role
 
-The Vigil Watch is the only place in the Cauld where enemies hold the same fortified
+The Vigil Watch is the only place in the Caul where enemies hold the same fortified
 line without fighting. A Pallor conscript and a Loera intelligence operative may be posted
 to neighboring stations on The Pass during a period when their Houses are at active war on
 every other front. They do not fight. The Vigil Compact's terms include a specific
@@ -925,15 +925,15 @@ prohibition on inter-House violence within the Sinter patrol perimeter, enforced
 any individual House but by the Liturgy's Vigil Administration. The Giants — the
 transformed Champions who escort Ocipheus ships through Verlaine's waters — also hold
 permanent posts at the four largest breach-risk corridors. They are the only force in
-the Cauld that the Vigil Administration commands directly.
+the Caul that the Vigil Administration commands directly.
 
 **The Descents.** The cracked valley is the richest concentration of location-specific Sphere
-access in the Cauld. No other territory holds what the Sinter zone holds. Houses have been
+access in the Caul. No other territory holds what the Sinter zone holds. Houses have been
 running controlled expeditions — the Descents — into the zone since Year 1140, when the
 Watch patrol coverage was sufficient to permit supervised entry. The Liturgy administers permission for every
 Descent. No House enters the zone without a Liturgy-issued charter specifying the expedition's
 duration, personnel, and target coordinates. Most Descents do not return in full. The ones
-that return bring back Sphere access that cannot be reached from any other point in the Cauld,
+that return bring back Sphere access that cannot be reached from any other point in the Caul,
 Catalyst material in forms no refinery has previously processed, and sometimes people who
 describe, on their return, having perceived the membrane as something that was already watching
 them before they found it.
@@ -961,7 +961,7 @@ neutral administrative function that Sinter had held and the Liturgy had always 
 passed to the Liturgy by default. The Liturgy now administers the Compact disputes Sinter
 once resolved. The Liturgy now runs the Quarantine that was built on Sinter's ruin. The
 Liturgy's Silence gained more from Sinter's fall than from any other single event in the
-Cauld's history.
+Caul's history.
 
 This is in no formal record. It is said quietly. It has been said quietly for six hundred years.
 
@@ -974,10 +974,10 @@ admit it.
 
 #### House Cresset — The House That Was Read to Death
 
-Cresset held the easternmost major site, at the edge of the Eastern Reaches where the Cauld's
+Cresset held the easternmost major site, at the edge of the Eastern Reaches where the Caul's
 authority thinned. East of Cresset, other peoples lived, some of whom had their own membrane
 knowledge — reached independently, through different accumulations, producing different
-operational frameworks that were not compatible with Cauld protocols but were functional.
+operational frameworks that were not compatible with Caul protocols but were functional.
 These eastern membrane cultures had been trading with Cresset through their shared geographic
 margin for generations: not conflict, not alliance, but the pragmatic exchange of people
 living in proximity.
@@ -1000,8 +1000,8 @@ site.
 
 Cresset dissolved formally into collective Compact administration. Their site is now the only
 active installation managed directly by the Silence rather than by a named House. The eastern
-cultures that extracted them are not part of the Cauld. The Cauld does not discuss them
-openly. They are the thing the Cauld's historical record goes quiet about in the same way
+cultures that extracted them are not part of the Caul. The Caul does not discuss them
+openly. They are the thing the Caul's historical record goes quiet about in the same way
 Fjorheim's record goes quiet about the Blood Century.
 
 **What Cresset represents:** The slow theft. The knowledge that has already gone by the time
@@ -1065,7 +1065,7 @@ Their installation sits on a volcanic ridge in the western part of their territo
 of low, ancient volcanoes not dramatic enough to name but geologically active enough that the
 ground stays warmer than the surrounding forest. The geothermal activity and the Sphere
 activity occupy the same coordinates through coincidence. This coincidence has defined
-Atrament for three hundred years. No other installation in the Cauld operates at the
+Atrament for three hundred years. No other installation in the Caul operates at the
 temperatures the Forge Hearth runs at, which means no other institution has developed the
 high-temperature Gifted matter handling protocols that Atrament holds. The technical advantage
 was an accident. The monopoly it produced was not.
@@ -1077,7 +1077,7 @@ through it. They are not Ridge people — they do not build fortresses on height
 on rivers. They control the crossings. Everything else follows from the crossings.
 
 **The Atrament contradiction** is about selection. Their Keeper is the most technically
-demanding role in the Cauld — the Forge Hearth processes more Catalyst than any other
+demanding role in the Caul — the Forge Hearth processes more Catalyst than any other
 installation, at higher temperature tolerances, with smaller error margins. The technical
 requirements for the role are understood and documented. The selection process for the role
 does not use them. The Atrament succession tradition — preserved from the tribal period,
@@ -1104,19 +1104,19 @@ measures would be more dangerous than not knowing.
 #### House Ocipheus — The Oldest Watch
 
 Ocipheus came out of the southern peninsula — the Italy analog, warm limestone ridge
-country descending into an inland sea. Their culture was the first in the Cauld to treat
+country descending into an inland sea. Their culture was the first in the Caul to treat
 the membrane as a subject of study rather than a site of worship. Where northern cultures
 built taboo around their membrane locations, the southern peninsula culture sent observers:
 people whose job was not to perform ceremonies but to sit with the boundary and record what
 they noticed. They were not scientists in any modern sense. But they were the first people
-in the Cauld to separate observation from ritual — to say: watch the membrane and write down
+in the Caul to separate observation from ritual — to say: watch the membrane and write down
 what you see, and separate what you see from what you believe about what you see.
 
 This produced the Ocipheus practitioner tradition: the vigil. Not a ceremony. A watch.
 The watch is maintained continuously. The records are kept. The records are not shared.
 
 Their installation in the northern ridge country — where the Alps meet the peninsula — is
-the oldest continuously documented membrane site in the Cauld. The word "documented" is doing
+the oldest continuously documented membrane site in the Caul. The word "documented" is doing
 work in that sentence: there are older sites that may have been operated earlier, but Ocipheus
 has the written record. They have always had the written record. The record is the thing they
 understood was worth keeping when other cultures were still deciding whether the membrane was
@@ -1131,7 +1131,7 @@ for the membrane when administration is not present: a Venn word, a verb, meanin
 like "the breathing place" or more precisely "it breathes." Ocipheus's current vigil
 operators use it without knowing its origin. This is how the absorbed culture persists.
 
-Ocipheus's vigil operators are the longest-tenured practitioners in the Cauld. Thirty years
+Ocipheus's vigil operators are the longest-tenured practitioners in the Caul. Thirty years
 at a posting is not unusual. Some have been at the same station for their entire adult lives.
 The institution selects for a particular psychological type — patient, low desire for
 recognition, comfortable with long periods of looking at something that may not change —
@@ -1211,7 +1211,7 @@ Not evil in the way that looks away. Evil in the way that looks directly and cho
 #### House Verlaine — The Archive and the Lock
 
 Verlaine sits in the broad interior — the France analog, the vine country, temperate and
-fertile and positioned at the geographic center of the Cauld's major institutions. They border
+fertile and positioned at the geographic center of the Caul's major institutions. They border
 Atrament to the east, the island nation across a narrow channel to the north, the southern
 peninsula through mountain passes to the southeast, and the western cliff coast along a shared
 southern land border. From Verlaine territory you can reach every other House. This has always
@@ -1234,8 +1234,8 @@ clause was uncontroversial at the time: Verlaine had no site of its own and seem
 obvious neutral party. They acquired a site within a generation of the Compact's signing.
 The arbitration clause has never been repealed.
 
-The real ideological question in the Cauld lives at Verlaine because Verlaine is the House
-where it cannot be suppressed. Their Sphere catalogue — the broadest in the Cauld — is
+The real ideological question in the Caul lives at Verlaine because Verlaine is the House
+where it cannot be suppressed. Their Sphere catalogue — the broadest in the Caul — is
 documented evidence that the membrane connects to resources that no single House should
 control. Their Keeper knows this. The position that has been circulating within Verlaine
 for fifty years — that Sphere knowledge should be collectively administered, not held by
@@ -1255,7 +1255,7 @@ lost. The archivist whose neutrality was always a position.
 
 ---
 
-#### House Calyx — The People Who Feed the Cauld
+#### House Calyx — The People Who Feed the Caul
 
 Calyx is older than its name. The eastern plains culture that became House Calyx — the
 Danube basin east of Atrament, the broad agricultural lowlands running toward the steppe — had
@@ -1275,7 +1275,7 @@ arrangement became something else. They became clients before they became anythi
 The Compact gave them formal House status over Atrament's objection. Verlaine, writing the
 terms, included a clause recognizing the eastern plains culture's institutional standing
 specifically because the Compact needed a food-producing House and the plains culture was the
-only organization with the scale and infrastructure to supply the entire Cauld. Atrament was
+only organization with the scale and infrastructure to supply the entire Caul. Atrament was
 overruled. The wound opened. It has not closed. The eastern plains border Atrament along a
 river line that both Houses have fought over in every generation since the Compact, in low-
 intensity ways that neither formally names as war.
@@ -1289,7 +1289,7 @@ underground — reached through a membrane boundary that their practitioners des
 down rather than through. This is unusual. Nobody knows if it is accurate or metaphor.
 
 The territory Calyx controls is simultaneously the most agriculturally productive and the
-most monster-afflicted in the Cauld. The monster corridor runs through their farmland. The
+most monster-afflicted in the Caul. The monster corridor runs through their farmland. The
 people who grow food and the people who hunt monsters coming out of the wood line are
 frequently the same people. Oathless who survive incursions at high Monster Meat exposure
 come back changed. Calyx classifies them as monsters when the change becomes visible enough
@@ -1304,16 +1304,16 @@ produces not different results but the same result through different channels. T
 knows the incursion numbers. The Seat has not asked this question. This is the Calyx
 administration's version of what Ocipheus's administration does with vigil operator reports.
 
-**What Calyx represents:** The people who sustain the Cauld and bear the cost of sustaining
+**What Calyx represents:** The people who sustain the Caul and bear the cost of sustaining
 it. The wound that is known and remains unnamed because naming it would require action.
 
 ---
 
 #### House Loera — The Paranoid Machine
 
-Loera is the westernmost House in the Cauld. Their installation sits on coastal cliffs
-above the Atlantic analog — the great western ocean that the Cauld has no record of anyone
-successfully crossing. The sea is behind them. The rest of the Cauld is ahead of them. This
+Loera is the westernmost House in the Caul. Their installation sits on coastal cliffs
+above the Atlantic analog — the great western ocean that the Caul has no record of anyone
+successfully crossing. The sea is behind them. The rest of the Caul is ahead of them. This
 geographic position, at the edge of the known map, shaped everything that followed.
 
 Loera's founding is the ugliest in the Compact record. They did not send help to Orvaine
@@ -1324,7 +1324,7 @@ way that left a record.
 Their territory was, at the time of the Blood Century, the contested margin between three
 coastal peoples — not one inland group against another but three maritime cultures who had
 arrived along the same coast from different origins and settled the same warm southern
-coastline. The membrane site they all wanted was not the most productive in the Cauld but
+coastline. The membrane site they all wanted was not the most productive in the Caul but
 was the most defensible: cliff ground, stone, the sea at your back. You could hold it with
 fewer soldiers than you needed to take it. Each of the three cultures held it at different
 points. None held it long enough to fully learn it.
@@ -1337,7 +1337,7 @@ betray each other while appearing not to — this was the founding skill, develo
 inside, applied later to the outside.
 
 The sea-facing position gave Loera something no other House had: the knowledge that there
-was nothing behind them. The Cauld ends at the western cliffs. Whatever comes at Loera
+was nothing behind them. The Caul ends at the western cliffs. Whatever comes at Loera
 comes from one direction only. This is a defensible position and a contained one. Loera's
 intelligence apparatus has always known exactly where its threats originate. This makes
 them very good at it. It also means the horizon of their imagination ends at the cliff.
@@ -1346,7 +1346,7 @@ Managing a coalition of people who do not trust each other teaches specific skil
 learn to have information before you need it. You learn to run multiple working hypotheses
 about what any given person wants. You learn to design systems that function even if any
 individual component is working against the system, because you expect at least one component
-to be doing so at all times. Loera became the Cauld's intelligence institution not because
+to be doing so at all times. Loera became the Caul's intelligence institution not because
 anyone planned it but because these skills — developed internally, for internal purposes —
 turned out to be applicable externally.
 
@@ -1374,7 +1374,7 @@ built. You cannot threaten them from the same direction twice. The sea and the c
 prevent attack. They change the cost calculation of attack in a way that has historically
 kept the number of serious attempts low.
 
-The Pallor succession is the oldest martial tradition in the Cauld: the Warrior King rules by
+The Pallor succession is the oldest martial tradition in the Caul: the Warrior King rules by
 right of combat lineage, confirmed by the Long Seat, the House's ancient advisory body. The
 Long Seat does not command. It remembers. Every warrior king who has ever ruled Pallor is in
 the Long Seat's memory — their victories, their errors, their succession decisions. When the
@@ -1404,7 +1404,7 @@ Warrior King is waiting for. They have been at the same map table for eleven yea
 naming what they're both watching.
 
 **What Pallor represents:** The institution that endures. The warrior culture that has
-survived cold, absorption, and watching the Cauld's coalitions cycle through three generations
+survived cold, absorption, and watching the Caul's coalitions cycle through three generations
 by outlasting everything that moved against it.
 
 ---
@@ -1417,7 +1417,7 @@ by outlasting everything that moved against it.
 **Coalition status:** Coalition anchor · **Domain:** Catalyst refining
 **Territory:** Central continental — Germany analog; Rhine and Danube river valleys; forested interior; volcanic ridge in the west. Borders Verlaine to the west, Pallor to the north across the sea channel, the ungoverned southern ridge country to the south, Calyx to the east along the river line.
 
-The Forge Hearth — oldest active apparatus in the Cauld. Stretching the membrane at the same
+The Forge Hearth — oldest active apparatus in the Caul. Stretching the membrane at the same
 coordinates for generations. Whether the membrane fully recovers between sessions is not a
 question House Atrament has authorized anyone to investigate.
 
@@ -1438,7 +1438,7 @@ Liturgy has not corrected this. The silence is the arrangement.
 **Coalition status:** Coalition anchor · **Domain:** Thin-membrane access
 **Territory:** The island — Britain analog; separated from the mainland by a narrow channel. Rocky highland north, softer lowland south, maritime culture throughout. The Vigil is the knightly order; the Canon Immaculate governs from the ancient seat at the island's center. Channel crossing east to Verlaine.
 
-Ocipheus Station — oldest installation in the Cauld. Named in historical record more than any
+Ocipheus Station — oldest installation in the Caul. Named in historical record more than any
 other. Long-tenure vigil operators stationed here for decades sometimes describe the membrane
 as something that breathes. Something that responds to them, not to the apparatus. They say
 this to each other on night watches. They stop saying it when House administration is present.
@@ -1446,7 +1446,7 @@ It is not in any formal record.
 
 Ocipheus controls Sphere access points no other House can reach — the most valued imports from
 location-specific Spheres are Gifted matter Spheres reachable only from specific ground, and
-Ocipheus Station sits on some of the most contested coordinates in the Cauld for this reason.
+Ocipheus Station sits on some of the most contested coordinates in the Caul for this reason.
 
 **The fault line:** Their most valuable operators have been receiving Catalyst infusions tuned
 for observation work, enhancing the perceptual range that makes an exceptional Scrying operator.
@@ -1473,7 +1473,7 @@ does not know. The reports continue. So does she.
 
 ---
 
-### House Fjorheim — ABSORBED {#SS-CAULD-FJORHEIM-RETIRED}
+### House Fjorheim — ABSORBED {#SS-CAUL-FJORHEIM-RETIRED}
 *Fjorheim was absorbed into Pallor three hundred years ago. This entry is retained for
 historical reference only. The Muster Chamber and Fjorheim's conscription apparatus now
 operate under Pallor authority. See House Pallor.*
@@ -1487,9 +1487,9 @@ operate under Pallor authority. See House Pallor.*
 The Deep Archive — broadest Sphere catalogue of any House. More documented access points than
 any installation except Ocipheus Station. Where Ocipheus has depth at specific coordinates,
 Verlaine has breadth: more Spheres observed, more designs transcribed, more knowledge of what
-exists across the membrane than any other institution in the Cauld.
+exists across the membrane than any other institution in the Caul.
 
-**The fault line:** The real theological fault line of the Cauld lives inside Verlaine. The
+**The fault line:** The real theological fault line of the Caul lives inside Verlaine. The
 position — voiced rarely and dangerously — that Scrying installations should not be privately
 controlled; that the knowledge of all Spheres belongs to everyone. Their Keeper has not
 suppressed it. Whether this is principled tolerance or strategic positioning is the question
@@ -1504,7 +1504,7 @@ map or the most naive. No one has decided which yet.
 **Territory:** Eastern plains — Danube basin analog; broad agricultural lowlands east of Atrament, running southeast toward The Pass. Borders Atrament to the west along the contested river line, the ungoverned southern ridge country to the southwest, and grades southeast toward the Balkan approaches and Eirene's Gate.
 
 Calyx Station — sits on territory rich in agricultural land and one of the highest
-monster-predator incursion corridors in the Cauld. The Scrying installation here is not the
+monster-predator incursion corridors in the Caul. The Scrying installation here is not the
 most powerful on the map, but the territory controls a significant portion of food supply for
 the current theater.
 
@@ -1523,7 +1523,7 @@ and no one in the House has been willing to read it.
 
 The Loera Chamber — cliff-top installation, stone facing the ocean. Modest membrane apparatus
 by House standards; the Sphere junctions accessible from the western coast are real but not the
-richest in the Cauld. Their strategic value is not what they can reach through the membrane but
+richest in the Caul. Their strategic value is not what they can reach through the membrane but
 what they can move along the ground: information, contaminated supplies, people who are supposed
 to be somewhere else. The installation matters less than the networks built around it.
 
@@ -1566,7 +1566,7 @@ and current posting. Distinguished from conscripts by their access to Scried wea
 reassignability across fronts, and their eligibility for Transmutation — which conscripts are
 not offered.
 
-**Most Myrmidons are Cauld-born.** The Cauld is a living civilization with its own population
+**Most Myrmidons are Caul-born.** The Caul is a living civilization with its own population
 — people born here, raised here, who swore an oath to a House because that was the life they
 chose or the best option available to them. The majority of Myrmidon service records reflect
 this. The oath is genuine. The loyalty is real.
@@ -1713,7 +1713,7 @@ put down.
 - In-world, no character calls it "Transmutation" in casual dialogue. It is "the Ceremony,"
   "the dose," "being seen." Transmutation is the analytical term, not the lived vocabulary.
 
-### The Pallor Fold — membrane displacement {#SS-CAULD-FOLD}
+### The Pallor Fold — membrane displacement {#SS-CAUL-FOLD}
 
 At Knight-level infusion count (3+ doses), Transmuted practitioners develop the ability to
 briefly phase through the membrane and emerge metres away — what Pallor Templars call a **fold**.
@@ -1769,7 +1769,7 @@ them. They do not negotiate with Houses the way Houses negotiate with each other
 
 Relics are categorically distinct from Scried technology. A Scried weapon is a design copied
 from another Sphere and manufactured here from local materials. A Relic is an object that
-exists — brought into the Cauld by the Liturgy through a mechanism no House has been able to
+exists — brought into the Caul by the Liturgy through a mechanism no House has been able to
 replicate or fully observe. No one manufactures a Relic. No Relic has ever been reverse-engineered.
 The material they are made of does not correspond to any Sphere catalogue entry — observation or
 extraction — any House has ever produced.
@@ -1871,10 +1871,10 @@ path can be directed.
 **The creatures are not from Bheur. There are no tears. There is no membrane. The monsters
 have always been here.**
 
-Two categories of living thing in the Cauld:
+Two categories of living thing in the Caul:
 
 **Animals** — the normal ecology. Sheep, cattle, fish, birds. They behave as living
-things do. They make sense. There are no horses in the Cauld — the Heloth construct replaced
+things do. They make sense. There are no horses in the Caul — the Heloth construct replaced
 draft animals before horses could establish. Sphere-origin fauna has filled ecological niches
 horses might have occupied, but none of them are horses.
 
@@ -1941,7 +1941,7 @@ to investigate this.
 - No hierarchy inside Bheur. No kings, no thrones, no governors.
 - Bheur does not punish. It processes.
 - The bird-things in Bheur accounts are categorically different from the physical monster predators
-  of Cauld. Do not conflate.
+  of Caul. Do not conflate.
 - No character can confirm Bheur as real. It is the unknowable destination.
 - No character returns from Bheur. Death is permanent.
 
@@ -1963,9 +1963,9 @@ commandment.
 
 ## The Prisoner
 
-**The central mystery of the Cauld.**
+**The central mystery of the Caul.**
 
-Something. The Cauld calls it The Prisoner. Nobody knows what it is, what it wants, whether
+Something. The Caul calls it The Prisoner. Nobody knows what it is, what it wants, whether
 it is aware, whether it suffers, whether it made this universe or arrived in it or is something
 else entirely that the available theology is simply wrong about. The name is what stuck.
 
@@ -2024,10 +2024,10 @@ No House owns the Old Rite. This is part of why soldiers practice it.
 | **Bheur** | The afterlife; unknowable; feared |
 | **Monster Meat** | Biological transformation from eating monster flesh; unguided Transmutation |
 | **Old Rite** | Pre-Scrying religion; gesture-based; no House owns it |
-| **Alloy 41** | Cauld's designation for steel |
+| **Alloy 41** | Caul's designation for steel |
 | **Yggdra** | Common hardwood; no cosmological meaning |
 
-**Retired terms — never use in Cauld prose:**
+**Retired terms — never use in Caul prose:**
 Pneumagration, Reshelled, Grafted (for consciousness), Spliced, Spark State, Loose State,
 QE Link, The Infusion (as consciousness procedure), Shell (as machine body for a hosted
 consciousness), Myrmidon Shell (as robot chassis), Ungrafted, Unheld, Lanternkin, Guttering,
@@ -2035,7 +2035,7 @@ Aesir, Vanir.
 
 ---
 
-## Myrmidon {#SS-CAULD-MYRMIDON}
+## Myrmidon {#SS-CAUL-MYRMIDON}
 
 A Myrmidon is a person taken from another Sphere by Piercing and conscripted into House military
 service. The word is the Liturgy's administrative term. No conscript chose it. The intake oath
@@ -2044,7 +2044,7 @@ agreeing to. The Liturgy calls this "efficient processing."
 
 **Key distinctions:**
 - Myrmidons are NOT on the Transmutation rank ladder. They are not rewarded with infusions.
-- Native Cauld soldiers (soldiers, Knights, Paladins, Champions) are NOT Myrmidons.
+- Native Caul soldiers (soldiers, Knights, Paladins, Champions) are NOT Myrmidons.
 - A Myrmidon who deserts has no legal status in any House territory.
 - The Liturgy's catalogue numbers the Spheres from which Myrmidons are sourced (Sphere 1, Sphere
   14, Sphere 22, Sphere 31, etc.). This catalogue is classified. The numbers go very high.
@@ -2056,7 +2056,7 @@ agreeing to. The Liturgy calls this "efficient processing."
 
 ---
 
-## Order of the Watch {#SS-CAULD-ORDER-WATCH}
+## Order of the Watch {#SS-CAUL-ORDER-WATCH}
 
 The formal administrative body of the Vigil. A Liturgy sub-organization. Not a House
 military force — the Order draws personnel from all Houses under Liturgy charter, operates under
@@ -2076,17 +2076,17 @@ Specialists (permanent staff with deep Watch knowledge). A Watch veteran's most 
 and containment. Approximately 40% full-return rate. What they find inside is classified at the
 Order level; only summary reports reach the Canon.
 
-**Eirene's Gate:** The primary checkpoint on the Cauld-side (western) bank of The Pass. Named
+**Eirene's Gate:** The primary checkpoint on the Caul-side (western) bank of The Pass. Named
 for Eirene, the last Sinter Champion, who died at this location in Year 1081, two years after
 the Meteor Event. The other Houses built the Gate after The Pass became the quarantine line.
 The naming is a courtesy to a House that no longer exists to object.
 
 ---
 
-## Heloth Constructs {#SS-CAULD-HELOTH}
+## Heloth Constructs {#SS-CAUL-HELOTH}
 
 Two-legged steam-chemical machines, approximately 3m tall. The dominant non-human labor
-and transport technology of the Cauld. Named for an extinct Southlands draft animal they replaced.
+and transport technology of the Caul. Named for an extinct Southlands draft animal they replaced.
 
 **Power:** Steam-chemical plant in the torso housing. Burns alchemical fuel compounds; vents
 from ports along the rib-analog panels. The exhaust has a distinctive chemical-organic smell.
@@ -2105,15 +2105,15 @@ they route around known obstacles they were never explicitly programmed to avoid
 repair stations; they stop at the same intervals. Atrament engineers classify this as mechanical
 conditioning. The question of interiority is not examined in the literature.
 
-**Hard rule:** There are no horses, no beasts of burden in the Cauld. Heloths replaced draft
+**Hard rule:** There are no horses, no beasts of burden in the Caul. Heloths replaced draft
 animals. Slaves do fine labor Heloths cannot manage. Personal riding is done on Heloth courier
 variants or not at all.
 
 ---
 
-## Alchemy and Tinctures {#SS-CAULD-ALCHEMY}
+## Alchemy and Tinctures {#SS-CAUL-ALCHEMY}
 
-Alchemy is the Cauld's applied science of controlled chemical-catalytic reactions. It shares its
+Alchemy is the Caul's applied science of controlled chemical-catalytic reactions. It shares its
 formal notation with Scrying data blocks — same form, same precision, different subject. The
 notation's appearance in prose signals a shift from narrative to documentation.
 
@@ -2144,7 +2144,7 @@ This parallel is never stated in the prose — it is shown through the notation.
 
 ---
 
-## Alchemical Weapons {#SS-CAULD-WEAPONS}
+## Alchemical Weapons {#SS-CAUL-WEAPONS}
 
 Weapons whose damaging effect is produced by a controlled chemical-catalytic reaction. Many
 designs incorporate Scried technology from other Spheres (Atrament Scries weapons-development
@@ -2190,7 +2190,7 @@ proximity. Lyra's standard service kit.
 
 ---
 
-## Membrane Tear — Battle Scrying {#SS-CAULD-MEMBRANE-TEAR}
+## Membrane Tear — Battle Scrying {#SS-CAUL-MEMBRANE-TEAR}
 
 Some battle-Scryers have developed the ability to force-tear the membrane open mid-engagement
 rather than merely observing through it. This is not standard Scrying. It is a weaponized
@@ -2203,14 +2203,14 @@ atmosphere were at that location on the other side cross in a sudden decompressi
 is called a **Flood.**
 
 **The Flood's character:** Witnesses describe a mass crossing event as resembling the simultaneous
-disgorging of an entire ecosystem — creatures from an alien ecology, all suddenly present in Cauld
+disgorging of an entire ecosystem — creatures from an alien ecology, all suddenly present in Caul
 air, wet with whatever atmosphere or liquid medium they were just removed from, panicking,
-disoriented, running toward the nearest heat or movement. Most die within minutes in Cauld
+disoriented, running toward the nearest heat or movement. Most die within minutes in Caul
 atmosphere. During those minutes they are terrifying. A Flood involving aquatic creatures produces
 a short-lived mass drowning-in-air event. A Flood involving atmospheric creatures (gas-giant
 organisms) produces chemical burns and explosive decompression events. A Flood involving ground
 predators produces a few minutes of uncontrolled multi-species predation before the atmosphere
-kills the crossers. The Cauld soldiers who have seen a Flood do not describe it clearly. They use
+kills the crossers. The Caul soldiers who have seen a Flood do not describe it clearly. They use
 the word *seafood* as slang — a specific kind of wrong that no other word covers.
 
 **Cost:** Tearing the membrane is not the same as wounding it during a controlled Scry. A tear
@@ -2221,7 +2221,7 @@ does to the membrane.
 
 **Who uses it:** Rare. Requires sustained high-level Transmutation and years of membrane-proximity
 work at a Scrying installation. Only the most advanced practitioners with institutional access
-have the capability. Its use in open battle is documented in three engagements in the Cauld's
+have the capability. Its use in open battle is documented in three engagements in the Caul's
 history. In each case, the practitioner was subsequently censured by the Liturgy.
 
 **Hard ban:** Do not portray Flood events as controlled or predictable. The practitioner does not
@@ -2229,7 +2229,7 @@ choose what comes through. A Flood is a weapon of desperation and terror, not pr
 
 ---
 
-## Eaters of Monsters {#SS-CAULD-EATERS}
+## Eaters of Monsters {#SS-CAUL-EATERS}
 
 Fjorheim wildmen who undertake self-directed Transmutation outside the Liturgy's sanction. Three
 generations of accumulated practice. No certified practitioner. No controlled Ceremony. They
@@ -2269,9 +2269,9 @@ or protecting Transmutation's power from people?
 
 ---
 
-## Sphere-Origin Ecology — The Contaminated World {#SS-CAULD-SPHERE-ECOLOGY}
+## Sphere-Origin Ecology — The Contaminated World {#SS-CAUL-SPHERE-ECOLOGY}
 
-The Cauld's ecology has been contaminated by Sphere-origin organisms for 1,700 years. The
+The Caul's ecology has been contaminated by Sphere-origin organisms for 1,700 years. The
 contamination is ongoing. Every Scrying event is a wound in the membrane; every Piercing is a
 tear; every tear allows adjacency of Sphere ecologies that were never meant to coexist.
 
@@ -2281,17 +2281,17 @@ tear; every tear allows adjacency of Sphere ecologies that were never meant to c
   surrounding ecology — some dead, some adapted, some still dying slowly.
 - The Wall perimeter is carpeted. The Forge Hearth zone accumulates dead things in geological
   layers. Practitioners learn to read the strata.
-- The Cauld's natural historians record new species every generation. Most of them are
+- The Caul's natural historians record new species every generation. Most of them are
   Sphere-origin. None of them are documented as such in mainstream natural history.
 
 **The Death Stranding layer:** The world is littered with things that didn't make it. Not
 threatening — just present. A field of creatures that died upright and stayed upright. A stone
 face stained in the dissolved outline of something that was never meant to breathe here. The
-smell at old crossing sites that has no origin in Cauld chemistry.
+smell at old crossing sites that has no origin in Caul chemistry.
 
 See `docs/nodes/VIGL.md §6` for the full species compendium established in this story.
 
-**Key species established in Cauld canon (see compendium for full descriptions):**
+**Key species established in Caul canon (see compendium for full descriptions):**
 
 *Living survivors:*
 Sinter Crawler, Wall Tender, Sinter Hound, Pale Marchers, Membrane Lamprey, The Crows,
@@ -2311,9 +2311,9 @@ The Impression, Membrane Kelp, The Herd (partial-crossing).
 
 ---
 
-## Travel — No Horses, No Beasts of Burden {#SS-CAULD-TRAVEL}
+## Travel — No Horses, No Beasts of Burden {#SS-CAUL-TRAVEL}
 
-The Cauld has no horse analogue. The Heloth construct replaced draft animals before horses could
+The Caul has no horse analogue. The Heloth construct replaced draft animals before horses could
 establish as a primary transport species. Sphere-origin fauna has filled some ecological niches,
 but none of them are rideable or domesticated.
 
@@ -2335,5 +2335,5 @@ it resettlement service; the people doing it cannot name it when they arrive bec
 language for it yet. It is the same process as Myrmidon military conscription, routed differently
 at intake.
 
-**Hard rule:** No horses appear in Cauld prose. No beasts of burden. No riding animals. Heloths
+**Hard rule:** No horses appear in Caul prose. No beasts of burden. No riding animals. Heloths
 or walking or vehicle or vessel.

@@ -10,7 +10,7 @@ updated: 2026-07-13
 
 # STRAND BIBLE — Lyra, Sinterspawn Slayer (LSSS) {#SS-LSSS}
 
-> See [[../BIBLE]] for engine laws; [[../universes/CAULD]] for Fantasy universe world facts.
+> See [[../BIBLE]] for engine laws; [[../universes/CAUL]] for Fantasy universe world facts.
 > Fantasy Universe (Universe #2). Standalone short story; one beat.
 
 ---
@@ -42,7 +42,7 @@ like the event that becomes this story — immediate, physical, specific, deadpa
 
 **Harrower (Sinterspawn classification):**
 - Size: up to 14+ feet at the shoulder; quadruped; quadruped with modified forelegs
-- Hide: membrane-grey/brown, camouflage-effective in Cauld autumn terrain
+- Hide: membrane-grey/brown, camouflage-effective in Caul autumn terrain
 - Joints: extra joints in the forelegs doing work the observer cannot immediately account for
 - Eyes: pale yellow, larger than any eye has a right to be; membrane-glow in the pupils pulses
   like a heartbeat independent of other body movement; this is the worst part
