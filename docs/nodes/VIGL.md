@@ -67,6 +67,18 @@ watches back.
 
 **The core question:** What are you loyal to when you find out what the thing you loved actually is?
 
+**The shape of her arc — conversion, not disillusionment:** {#SS-VIGL-0-conversion} She begins
+the book meaning to retrieve the Relic *for the Liturgy* — for Prelacze, for the Canon's writ,
+for an institution she has never before had cause to distinguish from the mission she serves.
+The journey does not merely disillusion her; it teaches her, data point by data point, what the
+Liturgy actually spends its indispensability on (§2a): not stewardship of the record, but its
+concealment. At the aperture she completes an errand — but not the Canon's. She finishes the one
+the Blink Thieves were carrying when she caught them: the Relic delivered to where what it shows
+can be seen, recorded, and acted on, not returned to the vault it was stolen from. She refuses
+the writ in front of witnesses. It does not feel like treason to her, because her loyalty was
+never to the institution — it was to what the institution told her it stood for, and she is
+simply still standing there. She becomes accurate, not sad.
+
 **The series hook delivered at the end:** The Sinter basin is not a wound that is healing.
 It is a wound that has been converting itself into architecture for 1,138 years. The bolide
 seeded alien biology; the alien biology has been eating downward into the earth like a cavity
@@ -149,7 +161,9 @@ covered by Wren.)*
 - **The arc:** She begins the book as a true believer — not performed loyalty but actual faith.
   She has built her entire identity on the Liturgy's mission. She ends the book as the most
   dangerous thing the Liturgy has encountered in a generation: a Templar who has seen the
-  apparatus clearly and refused direct authority from a Canon. She is not yet someone else.
+  apparatus clearly and refused direct authority from a Canon. What she does at the aperture is
+  not defiance for its own sake — it is the completion of an errand she did not start (§0): the
+  Relic delivered to be seen, not returned to be buried. She is not yet someone else.
   She is only no longer who she was. That is sufficient for one book.
 - **Weapons:** Dissolution Blade (Liturgy Templar service weapon — narrow double-edge, Catalyst
   compound in ceramic channels bleeds into wounds and inhibits coagulation); Vigil Shield (round,
@@ -416,13 +430,16 @@ The night Lyra pulls him out of the crossfire and the party makes camp, the read
 Taking from the inside — his memory, not his speech — intercut with the present-night fire. This
 scene establishes the atrocity that ripples through the rest of the book. Imagery is LOCKED:
 
-- **The pluck.** Not pain first — *displacement*. A spark lifted out of a warm dark medium the way
-  a hook draws a fish up out of black water: the sick sideways yank of being taken out of
+- **The pluck.** Not pain first — *displacement*. A spark lifted out of a warm living medium the
+  way a hook draws a fish up out of deep water: the sick sideways yank of being taken out of
   something you never knew you were suspended in. He was in his body the way a fish is in the sea,
   and something reached in and lifted him out by the mouth.
-- **The sea of black.** After: a spark floating in a sea of black — no body, no up, no edges — and
-  all around him the **wreckage of his own memories** (the mill, the canal, France, his mother's
-  kitchen), not as pictures but as debris, drifting, some of it turning slowly out of reach.
+- **Adrift in the Amnios.** After: a spark suspended in warm golden fluid — cloudy amber-gold, the
+  color of light beer, of water stirred with honey — no body, no up, no edges, no time — unborn
+  again, floating in the same golden waters the Sinterspawn gestate in (§4b, §9b) — and all around
+  him the **wreckage of his own memories** (the mill, the canal, France, his mother's kitchen),
+  not as pictures but as debris, drifting, some of it turning slowly out of reach. (A spark in
+  gold, before the oil-black shell.)
 - **Waking in an alien body.** Then weight. Wrong weight. He wakes *inside a machine*: the oval
   receptor opening on a grey Verlaine muster-yard; a body that answers his intention a half-beat
   late and reports nothing back — no warmth, no ache, no breath. He tries to scream and the sound
@@ -499,6 +516,18 @@ The power earns its keep by escalating and by costing. Recommended deployment:
 - **His belief:** He is not wrong that the Liturgy covered something up. He is wrong about
   what the cover-up means and who it gives him the right to be. He thinks the leverage will
   fix the institution. He has not considered that the institution might not be fixable.
+- **The deeper frame — hoarding, not stewardship:** {#SS-VIGL-2a-hoard} Prelacze's scheme is his
+  own, but the posture it exploits predates him and will outlast him: the Liturgy **hoards** the
+  Oculus. Not primarily because the Year-430 record is shameful (§9b) — though it is — but
+  because the record, once acted on, dissolves the thing that makes the Liturgy necessary. A
+  Cauld that *remembers* what has been accumulating at Sinter cannot go on filing it under "no
+  action indicated," and an institution whose entire authority rests on being the indispensable
+  adjudicator between warring Houses cannot survive being asked to actually adjudicate the one
+  thing that matters. The vault at Ocipheus Station is not where the Oculus is kept safe. It is
+  where the truth is kept unusable. This is the frame the theft, the pursuit, and the recovery
+  all sit inside: the Relic does not belong sealed away from the world it has been watching. It
+  belongs where what it shows can be seen, recorded, and acted on — which is precisely what
+  Prelacze, and the Liturgy before him, has spent 741 years making sure it is not.
 - **Ocipheus context:** He operates from the Liturgy's home territory — House Ocipheus is the
   Canon's administrative seat, a nominally sovereign House so deeply intertwined with the Liturgy
   that it functions as a puppet state. He does not need military force. He has canonical review,
@@ -630,30 +659,45 @@ discovers who all three were. That is what makes the confrontation land.
   Ocipheus's institutional custody. Both things are true and cannot both be satisfied.
 - She has not told Aldric this. She does not know how to tell Aldric this, because Aldric has
   been certain his whole life and Wren does not know what certainty looks like after it breaks.
+- **What she actually grasped — not property, but purpose:** Wren's read of the Year-972
+  documentation does not land as "Calyx's claim is stronger than Ocipheus's." It is stranger and
+  worse than that: neither House's claim is the point. A Relic that carries 741 years of
+  accumulating catastrophe does not belong sealed in an Ocipheus vault under Liturgy custody —
+  and it does not belong sealed in a Calyx ancestral vault under a different lock, either. It
+  belongs somewhere it can be **seen**: read, argued over, brought before the Long Seat or
+  whatever body the Houses can be made to convene. She could not have said this cleanly at the
+  start of the book, and she does not fully have the words for it even at Caer Glas Moor. She has
+  the shape of it — underneath the family duty she told herself was the whole reason she came.
 - **The Blink — applied Scrying, on herself:** Wren's Transmutation infusion — one — is a
   Loera-tradition phase-step ability, and what it does is Scry her own body through the membrane
   (§4, §4b) and back out again a short way off in the same world. Loera has a long culture of
   thieving-arts that formalized this as a practiced infusion technique rather than a military
   one. Wren obtained it through Loera channels — Aldric used Loera contacts to give her the right
   tool for the right job. For approximately four seconds per use, she pushes herself through
-  solid material up to two meters thick — through the membrane, through the black, out the far
+  solid material up to two meters thick — through the membrane, through the Amnios, out the far
   side — never through iron; the metal resists the membrane the way it resists everything else
   membrane-adjacent (§4a). She cannot carry more than one hand's worth through with her. The
   Blink Thieves are named for her. She is why they could leave through the south coast of the
   Ocipheus archive without triggering a sealed gate. The box was in her arms. She walked through
   the wall.
-- **The cost — a heartbeat in the black:** Every blink is not a trick of geometry; it is four
-  seconds spent *inside the black* — cold, formless, no up, no edges, and the specific fear of
-  not finding the "out" before the four seconds run out. This is why blinkers are rare even
-  within Loera's thieving tradition: most who try it do not come back the same, and some do not
-  come back. Wren does not describe this to anyone who has not asked twice.
+- **The cost — a heartbeat in the Amnios, and she comes out wet:** Every blink is not a trick of
+  geometry; it is four seconds spent *inside the Amnios* (§4b) — warm, wet, golden, formless, no
+  up, no edges, and the specific fear of not finding the "out" before the four seconds run out. And
+  she arrives on the far side **slicked in gold**: amber beading off her lashes and jaw, gold
+  running from her hair, clothes clinging, a gold-and-copper smell coming off her, a second lost to
+  blinking the gold from her eyes before she can see. The wet is her signature — the party learns
+  to know a blink just happened by the golden puddle spreading under her boots. This is why
+  blinkers are rare even within Loera's thieving tradition: most who try it do not come back the
+  same, and some do not come back. Wren does not describe what the four seconds feel like to anyone
+  who has not asked twice.
 - **The rhyme with Rowe:** Wren and Soren Rowe are the only two people in the party who know what
-  the black feels like from the inside — she by choice, in heartbeats, over and over; he once,
-  involuntarily, at the Taking, and every time his home shell is threatened with loss (§1c). Both
-  of them move by the membrane. Both of them live with the same fear underneath the different
-  shapes it takes: Rowe's is being cut off from his own shell with the black on the other side of
-  the door; Wren's is being the one who goes into the black and does not find the seam back out.
-  Neither of them says this to the other in so many words. Neither of them has to.
+  the Amnios feels like from the inside — she by choice, in heartbeats, over and over, coming out
+  wet each time; he once, involuntarily, at the Taking, when he floated in it unborn (§1c), and
+  every time his home shell is threatened with loss. Both of them move by the membrane. Both of
+  them live with the same fear underneath the different shapes it takes: Rowe's is being cut off
+  from his own shell with the Amnios on the other side of the door; Wren's is being the one who
+  goes into the Amnios and does not find the seam back out. Neither of them says this to the other
+  in so many words. Neither of them has to.
 - **At the Caer Glas intercept:** Lyra's party catches the squad on the Pallor moor. Esvane and
   Petra go down. Wren blinks — through a stone building, a courtyard wall, into an adjacent
   field — with the Yggdra box in her arms. She is alive. The Relic is with her. She is alone
@@ -669,6 +713,13 @@ discovers who all three were. That is what makes the confrontation land.
   nowhere else to go and because the thing she has been trying to understand since she read that
   property transfer documentation is somewhere in that zone. The Calyx claim is real.
   So is this. Both things are true and cannot both be satisfied.
+  **This is convergence, not defection.** Wren does not abandon Calyx's claim for Lyra's cause,
+  and she does not adopt the Liturgy's mission in its place — she arrives, a chapter later than
+  she expected to, at the place she was already walking toward before Lyra ever caught up with
+  her: not a House vault, hers or anyone's, but somewhere the Relic can be acted on. Lyra is
+  walking there too, by a different road and for reasons she has not yet named (§0). That the
+  two of them meet in the same field is not one converting the other. It is two people who
+  arrive, independently, at the same true thing.
 - **Wren and the party:** She arrives with nowhere else to go and a mission she no longer fully
   believes in. What builds is not performed — it grows in the operational space, in the beats
   between decisions: the moment Lyra trusts her to take an angle without checking it twice; the
@@ -859,6 +910,27 @@ longer access, more operators sharing the perceptual load, the membrane's resist
 down over decades at the installation site until it is soft and responsive. Practitioners
 find this comforting. What it means is that the membrane has learned to expect the intrusion.
 
+**The membrane is skin — literally, not by analogy.** {#SS-VIGL-4-skin}
+What Orim's Rod parts, what every scry looks through, what the Oculus has been recording for
+741 years, is not a wall, a curtain, or a lens. It is tissue. Fleshy. Warm to the touch where
+an installation's apparatus has worn it thin enough to touch at all. Threaded through with dark
+veins that carry something the Cauld has no name for and that pulse when pressure builds on the
+far side. This is why Orim's fingertips need a Catalyst tincture before a scry works at all — he
+is sensitizing his own skin to read another skin through the touch of it. This is why the Rod's
+aperture is called, plainly, by everyone who has ever stood near one, *the skin* (§4a): because
+that is what it is.
+
+And it **heals**. This is the fact the whole doctrine turns on. A force-pierce is a wound — Orim
+has said as much for fifty years without ever using the word "skin" for what he means. Cut it,
+and it closes. The veins that flared dark at breakthrough fade. The bulge deflates. Within
+hours — sometimes only minutes, at a site the Liturgy has not already worn soft with decades of
+repeated puncture — the tissue scars over and seals, the way a cut palm does, and there is
+nothing left standing to mark where the wound was. Every Scrying installation in the Cauld is
+built on the same working assumption: the membrane will forgive what is done to it. It always
+has.
+
+Until Sinter (§9b).
+
 ### 4a. The Rod's Force-Pierce Capability {#SS-VIGL-4a}
 
 The Scrying Rod's secondary function: press the mineral tip against a location you have
@@ -1006,39 +1078,78 @@ He does not pretend the knowledge makes it clean.
 
 ---
 
-### 4b. The Black — What Lies Behind the Membrane {#SS-VIGL-4b}
+### 4b. The Amnios — What Lies Behind the Membrane {#SS-VIGL-4b}
 
-The membrane is not a wall with a picture on the far side. Between the Spheres — behind every
-skin Orim's Rod ever stretched, under every scry, under the Oculus's held images — is a medium
-the Cauld has no better word for than **the black**. No up. No edges. No time the way the Cauld
-counts it. It is not empty — things cross it, cross through it, are lost in it — but it is not a
-place in the sense a room or a road is a place. It is what a membrane act touches before it
-touches anything else.
+**If the membrane is living skin (§4), then reality is gestational.** The Cauld is not a set of
+worlds sitting side by side in a void. It is a **birthing universe** — every Sphere a pocket
+enclosed by living skin, a caul, a womb-lining. And behind that skin, between all the Spheres, is
+the medium every membrane act touches before it reaches anything else: the **Amnios** — the
+amniotic waters, the liminal space of birth, the medium through which all things pass.
 
-Every act described in this bible that reaches through the membrane is a different way of
-touching the black:
+The Amnios is **golden** — a warm amber-gold, the color of light through honey or aged glass.
+Reach for the tavern words and they fit better than the holy ones: it looks like mead, like a
+cloudy light beer, like water stirred through with honey — that faintly-yeasty, warm, drinkable
+amber. Cloudy and faintly turbid, translucent rather than clear, with pale flecks suspended in
+it. It deepens to a dark amber in the still deeps and thins to a green-gold where a Sphere's light
+reaches through the caul. Warm, wet, faintly viscous — it has body; it beads and clings. Not a
+void. Not a darkness. It has no up, no edges, and no time the way the Cauld counts time — but it
+is warm and it is wet, and every account of it agrees that it *clings*, the way birth-fluid
+clings. Things cross it, cross through it, are lost in it, gestate in it. It is not a place in the
+sense a room or a road is a place. It is the water a world floats in.
 
-- **Scrying looks into it** — the wet-edged, translucent quality of what Orim sees is the black
-  seen through the membrane's own tissue, warmed or cooled by the age of what it shows.
-- **The Rod's force-pierce stretches it** — "the skin" (§4a) is the membrane distended by
-  pressure from the black's far side until something crosses out of it.
-- **The Taking Scries a mind out through it.** What Soren Rowe remembers as the sea of black
-  (§1c-flashback) — no body, no up, no edges, the wreckage of his own memories drifting loose
-  around him — is a mind adrift *in the black itself*, between the pluck and the shell, before
-  Verlaine's apparatus catches it and seats it in a chassis.
-- **The Sinterspawn came through it.** The bolide did not merely seed alien biology onto the
-  surface at Sinter — it opened a wound straight through the black, and what has been building
-  in the crater for 1,138 years is biology that crossed *through* the black to get there (§9b).
-- **Wren's Blink passes a body through it, briefly** (§2c) — the only membrane technique in
-  this book that sends something living into the black and pulls it back out again on purpose.
+**COLOR-CONTRAST LOCK — golden waters, black newborn.** The Amnios is **gold**; the Sinterspawn
+and the vernix/ichor they are born coated in are **oil-black** (§6, §9b). The medium and what
+gestates in it are opposite colors, and the prose never blurs them. This is the whole reason the
+old "black" language for the medium was retired: a golden womb and a black newborn cannot be
+confused; a black void and a black-slicked spawn could.
 
-**CRITICAL LOCK — the black's ultimate nature is never explained.** Not its origin. Not whether
-it is alive. Not whether anything dwells in it, waits in it, or is it. This bible describes only
-what the black *does* and what it *feels like* to the handful of people who have touched it:
-cold, formless, no up and no edges, and — every account agrees on this, independently — it
-*clings*. Orim does not know what it is after fifty years of putting his hand into it by proxy.
-Rowe does not know what it is after floating in it. Nobody in the Cauld knows what it is. That
-question is not answered in VIGL. It is the series' deepest open mystery, and it stays open.
+Every act described in this bible that reaches through the membrane is a different way of touching
+the Amnios:
+
+- **Scrying looks through the caul into it** — the wet-edged, translucent quality of what Orim
+  sees is the Amnios seen through the membrane's own tissue, warmed or cooled by the age of what
+  it shows. The wetness in the image was never a metaphor.
+- **The Rod's force-pierce stretches the skin, and the Amnios presses at the wound** — "the skin"
+  (§4a) is the membrane distended from the far side until it parts and what the Amnios has been
+  holding against it crosses out.
+- **The Taking looses a mind into it.** What Soren Rowe remembers (§1c-flashback) — a spark
+  suspended in warm golden fluid, no body, no up, no edges, the wreckage of his own memories
+  drifting loose around him — is a mind adrift *in the Amnios itself*, unborn again, between the
+  pluck and the shell, before Verlaine's apparatus reels it in and seats it in a chassis. He
+  floated in the same golden waters the Sinterspawn gestate in (§9b) — a spark in gold, before the
+  oil-black shell that would become his body.
+- **The Sinterspawn gestate in it and are born, unfinished, through the wound that will not heal
+  (§9b).** The bolide did not merely seed alien biology onto the surface at Sinter — it tore the
+  caul, and the Amnios has been leaking through the tear ever since, keeping the wound wet enough
+  to birth things into the open for 1,138 years.
+- **Wren's Blink passes a body through it, briefly** (§2c) — the only membrane technique in this
+  book that sends something living into the Amnios and pulls it back out again on purpose. She
+  comes out wet.
+
+**Skin implies a body — a womb implies a mother.** {#SS-VIGL-4b-skin} If what borders every Sphere
+is living tissue (§4) and what it encloses is amniotic, then the whole arrangement is a
+gestation, and a gestation is *of* something, *inside* something. This bible does not answer whose
+womb, or what is being carried, or whether "mother" and "body" are even the right words for a
+thing that holds every world at once. Two possibilities are offered here and neither is confirmed:
+that every Sphere is an unborn thing suspended inside one single, vast, living body, the membrane
+its caul and the Amnios its waters; or that there is no body at all, and skin and fluid are only
+what the Amnios forms wherever it comes into contact with a Sphere — the way a caul is not a
+mother, only the shape a birth takes. The Cauld has never had cause to ask, because the skin has
+always healed and the waters have always stayed behind it. Sinter is the first place they haven't
+(§9b).
+
+**CRITICAL LOCK — the Amnios's ultimate nature is never explained.** Not its origin. Not whether
+it is alive. Not whose womb it is, nor what — if anything — is being gestated in it besides the
+things Verlaine and Sinter have already loosed. This bible describes only what the Amnios *does*
+and what it *feels like* to the handful of people who have touched it: warm, wet, golden,
+formless, no up and no edges, and clinging. Orim does not know what it is after fifty years of putting his
+hand into it by proxy. Rowe does not know what it is after floating in it. Nobody in the Cauld
+knows what it is. That question is not answered in VIGL. It is the series' deepest open mystery,
+and it stays open — and so does its worse cousin: *whose womb, gestating what.* Lyra never confirms
+the membrane is alive (LOCKED, §10.1); but watching a living caul long enough for a career raises
+a question underneath that lock, not poetic but literal, the kind she'd write into a research
+margin: if this is a womb, are we the unborn — and is something else in here gestating alongside
+us. She does not answer this in the book. She writes the question down.
 
 ---
 
@@ -1196,8 +1307,12 @@ biology is evidence of centuries of membrane puncture.
 
 **Sinterspawn — appearance LOCK:** Phyrexian-like: black, slick with oil-thick ichor, vaguely
 fetal and underdeveloped — unfinished things that look like they stopped growing partway and
-kept moving anyway. Always draped in the same black ichor they live in; it does not dry, it
-pools. **Off-catalogue:** M-101's passive-scan returns "no match" on them, every time (see the
+kept moving anyway. The fetal look is **literal** — they are things born before they were
+finished, gestated in the Amnios and delivered, arrested, through the wound at Sinter (§4b, §9b).
+The black ichor they are always draped in is not the medium they came from (the Amnios is golden,
+warm, amber-cloudy) — it is **birth-caul residue**, the vernix of a wrong delivery; it does not
+dry, it pools. **Golden waters, black newborn** — never blur the medium's gold with the spawn's
+oil-black (COLOR-CONTRAST LOCK, §4b). **Off-catalogue:** M-101's passive-scan returns "no match" on them, every time (see the
 passive-scan LOCK, §1c) — the appraisal routine has nothing to file them under.
 **Visual key — Zdzisław Beksiński:** render the Sinterspawn and the whole zone in the register of
 Beksiński's paintings — dystopian, decaying, bonescape surrealism; vast wrong architectures of flesh
@@ -1758,8 +1873,10 @@ of normalcy: he is at the machinery, the morning shift is half-done, nothing is 
 **R2 — The Taking** (between A-chapters 5–6)
 Continues directly from R1. The floor stops being a floor. Rendered from inside the experience
 without the interpretive frame, and honoring the LOCKED imagery of [[#SS-VIGL-1c-flashback]]: the
-pluck (a hook drawing him up out of black water — displacement before pain); the sea of black
-with the wreckage of his own memories drifting past; waking *inside a machine* (the oval receptor,
+pluck (a hook drawing him up out of deep water — displacement before pain); adrift in the Amnios,
+warm and golden and cloudy — mead-colored, a spark in gold before the oil-black shell — unborn
+again, with the wreckage of his own memories drifting past;
+waking *inside a machine* (the oval receptor,
 the half-beat-late body, no warmth, no breath); the naming ("Em One Oh One Triple Eight. Step forward."); aboard the gunship he is Turret #34 and #34 refuses to fire; burnt ozone;
 "you do not court-martial a tool — you scrap it." This is a mind Scried out of a living body and
 issued a disposable shell, NOT a body marched into a stone intake room. He does not understand
@@ -1973,6 +2090,30 @@ only measure by inference from what the Relic shows her, there is organization. 
 accumulation. There is something that 1,138 years of unchecked alien biological development,
 sealed from outside intervention, with an unlimited food source in the rock and the perimeter
 wildlife and the occasional soldier who got too close, has been building toward.
+
+**This is a womb whose caul tore and never closed.** {#SS-VIGL-9b-skin} Every scry Orim has ever
+taken, every aperture the Rod has ever parted, closed behind him — the skin (§4, §4a) sealed,
+scarred over, forgotten within hours. Sinter is the one tear that never did. What Lyra is looking
+at, in walls that pulse and run warm to instruments and hold a circulatory pattern (the same
+phrase Orim's own field notes would use for a healthy membrane), is not scar tissue holding a
+separate, contained biology at bay. It **is** the membrane — the world's own caul — torn 1,138
+years ago and never given the chance to close, so the Amnios (§4b) has been leaking through the
+tear ever since, keeping it wet, keeping it open, and the membrane-flesh has proliferated into
+the wound the way tissue granulates into a cut that will not stop trying to heal: wrong,
+disordered, cancerous, deeper than a wound has any business going. Sinter is a miscarrying world
+gestating in the open.
+
+And the Sinterspawn are what it gestates. They are not simply creatures that crossed through a
+hole from somewhere else. They are **born** — gestated in the Amnios and delivered, arrested and
+unfinished, through the one wound in the world that stays wet enough to birth them. Their fetal,
+underdeveloped, half-made look is not a resemblance; it is literal. They are things that came out
+before they were finished. And the black oil-ichor they arrive slick with and never dry off is
+not the Amnios — the Amnios is golden, warm, amber-cloudy (§4b). The ichor is **birth-caul
+residue**, the vernix of a wrong delivery, the film a thing born through torn flesh comes out
+coated in. **Golden waters, black newborn** (COLOR-CONTRAST LOCK, §4b): the medium is gold, the
+Sinterspawn and their vernix are oil-black; the two are not the same substance and are never
+blurred. What crawls out of that crater came out of the world's own womb, unfinished, and it is
+still coming.
 
 It is not done.
 
